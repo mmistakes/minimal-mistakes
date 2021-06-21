@@ -1,7 +1,8 @@
 ---
 title: "ZIO and the Fiber Model"
-date: 2021-06-31 header:
-image: "/images/blog cover.jpg"
+date: 2021-06-31 
+header:
+  image: "/images/blog cover.jpg"
 tags: []
 excerpt: ""
 ---
@@ -118,13 +119,9 @@ trait ZIO[-R, +E, +A] {
 }
 ```
 
-As we can see, the `ZIO.fork` method returns a new effect `URIO[R, Fiber[E, A]]`, which is a simple
-type alias for the type `ZIO[R, Nothing, Fiber[E, A]]` representing an effect that requires an `R`,
-and cannot fail, but can succeed with a `Fiber[E, A]`.
+As we can see, the `ZIO.fork` method returns a new effect `URIO[R, Fiber[E, A]]`, which is a simple type alias for the type `ZIO[R, Nothing, Fiber[E, A]]` representing an effect that requires an `R`, and cannot fail, but can succeed with a `Fiber[E, A]`.
 
-Returning to our example, let's imagine that Bob can boil the water for the coffee and going to the
-bathroom concurrently. We can fork the `bathTime` effect to make it executing on a different thread
-than the effect `boilingWater`:
+Returning to our example, let's imagine that Bob can boil the water for the coffee and going to the bathroom concurrently. We can fork the `bathTime` effect to make it execute on a different thread than the effect `boilingWater`:
 
 ```scala
 def concurrentBathroomTimeAndBoilingWater(): ZIO[Any, Nothing, Unit] = for {
@@ -133,26 +130,20 @@ def concurrentBathroomTimeAndBoilingWater(): ZIO[Any, Nothing, Unit] = for {
 } yield ()
 ```
 
-For sake of simplicity, we forget about the preparation of the coffee for now. Once executed, the
-above method prints the following information:
+For the sake of simplicity, we forget about the preparation of the coffee for now. Once executed, the above method prints the following information:
 
 ```shell
 [zio-default-async-2]: Going to the bathroom
 [zio-default-async-1]: Boiling some water
 ```
 
-As we expect, ZIO executed the two effect concurrently on different thread. Just to remember,
-executing concurrently a set of tasks means that the order in which the runtime executes the tasks
-is not relevant.
+As we expect, ZIO executed the two effects concurrently on different threads. Just to remember, concurrently running a set of tasks means that the order in which the runtime performs them is irrelevant.
 
 ### 6. Synchronizing with a Fiber
 
-The astute reader should have noticed that boiling the water without preparing a good coffee is
-non-sense. However, Bob can't prepare the coffee without the boiled water. Moreover, Bon can't
-prepare the coffee if he's still in the bathroom. So, we need to synchronize the action of preparing
-coffee to the results of the previous two actions.
+The astute reader should have noticed that boiling the water without preparing a good coffee is non-sense. However, Bob can't prepare the coffee without the boiled water. Moreover, Bon can't prepare the coffee if he's still in the bathroom. So, we need to synchronize the action of preparing coffee to the results of the previous two activities.
 
-ZIO fibers provide the `join` method to wait the termination of a fiber:
+ZIO fibers provide the `join` method to wait for the termination of a fiber:
 
 ```scala
 // From ZIO library
@@ -161,8 +152,7 @@ trait Fiber[+E, +A] {
 }
 ```
 
-Through the `join` method, we can wait for the result of a concurrent computation and eventually use
-the result of such computation:
+Through the `join` method, we can wait for the result of concurrent computation and eventually use it:
 
 ```scala
 def concurrentWakeUpRoutine(): ZIO[Any, Nothing, Unit] = for {
@@ -174,16 +164,12 @@ def concurrentWakeUpRoutine(): ZIO[Any, Nothing, Unit] = for {
 } yield ()
 ```
 
-However, in our example, we need to wait for the completion of two concurrent fibers. So, we need to
-combine them first, and then joining the resulting fiber. The `zip` method combines two fibers into
-a single fiber that produces the results of both.
+However, in our example, we need to wait for the completion of two concurrent fibers. So, we need to combine them first and then join the resulting fiber. The `zip` method combines two fibers into a single fiber that produces the results of both.
 
-Joining a fiber lets us to gather also the result of its execution. In the example, the variable
-`result` has type `(String, String)`, and we successfully use it in the next step of the routine. We
-also introduced the `*>` operator, which is an alias for the `zipRight` function, and let us
-concatenate the execution of two effects not depending on each other.
 
-The execution of the `concurrentWakeUpRoutine` function prints exactly what we expect:
+Joining a fiber lets us also gather the result of its execution. In the example, the variable `result` has type `(String, String)`, and we successfully use it in the next step of the routine. We also introduced the `*>` operator, which is an alias for the `zipRight` function, and let us concatenate the execution of two effects not depending on each other.
+
+The execution of the `concurrentWakeUpRoutine` function prints precisely what we expect:
 
 ```shell
 [zio-default-async-2]: Going to the bathroom
@@ -193,25 +179,15 @@ The execution of the `concurrentWakeUpRoutine` function prints exactly what we e
 [zio-default-async-6]: Preparing the coffee
 ```
 
-The fiber that Bob uses to go to the bathroom, and the fiber that boils the water runs concurrently
-on different threads. Then, ZIO executes the fiber used to prepare the coffee in a new thread, only
-after the previous fibers succeeded.
+Bob uses the fiber to go to the bathroom, and the fiber that boils the water runs concurrently on different threads. Then, ZIO executes the fiber used to prepare the coffee in a new thread only after the previous fibers succeeded.
 
-However, what is happening is different from using directly systems threads to represent concurrent
-computation. In fact, ZIO fibers don't block any thread during the waiting associated with the call
-of the `join` method. Just remember, that a `Fiber` represents only a data structure, a blueprint of
-a computation, and not the computation itself.
+However, what is happening is different from using systems threads directly to represent concurrent computation. In fact, ZIO fibers don't block any thread during the waiting associated with the call of the `join` method. Just remember that a `Fiber` represents only a data structure, a blueprint of computation, and not the computation itself.
 
 ### 7. Interrupting a Fiber
 
-The last main feature on fiber that the ZIO library provides is interrupting the execution of a
-fiber. Why should we interrupt a fiber? Well, the main reason is that some action, external to the
-fiber execution, turns the result of the fiber useless. So, to not waste system resources, it's
-better to interrupt the execution of this fiber.
+The last main feature on fiber that the ZIO library provides is interrupting the execution of a fiber. Why should we interrupt a fiber? The main reason is that some action external to the fiber execution turns the fiber useless. So, to not waste system resources, it's better to interrupt the fiber.
 
-Imagine that, while Bob is taking a bath, and the water is waiting to boil, Alice calls him to
-invite to take the breakfast in a Cafe. Then, Bob doesn't need the water to boil anymore. So, we
-should interrupt the associated fiber.
+Imagine that, while Bob is taking a bath, and the water is waiting to boil, Alice calls him to invite him to breakfast in a Cafe. Then, Bob doesn't need the water anymore. So, we should interrupt the associated fiber.
 
 In ZIO, we can interrupt a `Fiber` using the `interrupt` function:
 
@@ -222,10 +198,7 @@ trait Fiber[+E, +A] {
 }
 ```
 
-As we can see, the interruption of a fiber results in an effect that always succeed (`UIO[A]` is
-just a type alias for `ZIO[Any, Nothing, A]`) with an `Exit` value. If the fiber already succeeded
-with its value when interrupted, then ZIO returns an instance of `Exit.Success[A]`, an instance of
-`Exit.Failure[Cause.Interrupt]`.
+As we can see, the interruption of fiber results in an effect that always succeeds (`UIO[A]` is just a type alias for `ZIO[Any, Nothing, A]`) with an `Exit` value. If the fiber already succeeded with its value when interrupted, then ZIO returns an instance of `Exit.Success[A]`, an `Exit.Failure[Cause.Interrupt]` otherwise.
 
 So, without further ado, let's model the calling of Alice with an effect:
 
@@ -233,8 +206,7 @@ So, without further ado, let's model the calling of Alice with an effect:
 val aliceCalling = ZIO.succeed("Alice's call")
 ```
 
-Then, we want to add some delay to the effect associated with the boiling water. So we use the ZIO
-primitive `ZIO.sleep` to create an effect that waits for a interval of time:
+Then, we want to add some delay to the effect associated with the boiling water. So we use the ZIO primitive `ZIO.sleep` to create an effect that waits for a while:
 
 ```scala
 val boilingWaterWithSleep =
@@ -265,26 +237,15 @@ the `concurrentWakeUpRoutineWithAliceCall` method is the following:
 [zio-default-async-5]: Going to the Cafe with Alice
 ```
 
-After the Alice's call, the fiber executing on thread `zio-default-async-2` was interrupted, and the
-console never printed the string `Boiled water ready`. Since the fiber was still executing then
-interrupted, it's value was a `Failure`, specifying with a very big object the cause of failure.
+After Alice's call, the fiber executing on thread `zio-default-async-2` was interrupted, and the console never printed the string `Boiled water ready`. Since the fiber was still running then interrupted, its value was a `Failure`, specifying a huge object the cause of failure.
 
-Unlike interrupting a thread, interrupting a fiber is a common and easy operation. In fact, the
-creation of a new `Fiber` is very lightweight. It doesn't require the creation of complex structures
-in memory, as for threads. Interrupting a fiber simply tells the `Executor` that the fiber must not
-be scheduled anymore.
+Unlike interrupting a thread, interrupting a fiber is a joint and easy operation. In fact, the creation of a new `Fiber` is very lightweight. It doesn't require the creation of complex structures in memory, as for threads. Interrupting a fiber simply tells the `Executor` that the fiber must not be scheduled anymore.
 
-Finally, unlike threads, we can attach _finalizers_ to a fiber. A finalizer will close all the
-resources used by the effect. Moreover, the ZIO library guarantees that if that effect begins
-execution the finalizers will always be run, whether the effect succeeds with a value, fails with an
-error, or is interrupted.
+Finally, unlike threads, we can attach _finalizers_ to a fiber. A finalizer will close all the resources used by the effect. Moreover, the ZIO library guarantees that if that effect begins execution, the finalizers will always be run, whether the effect succeeds with a value, fails with an error, or is interrupted.
 
-Last but not least, we can declare a fiber as `uninterruptible`. As the name suggests, an
-uninterruptible fiber will execute till the end even if it receives an interrupt signal.
+Last but not least, we can declare a fiber as `uninterruptible`. As the name suggests, an uninterruptible fiber will execute till the end even if it receives an interrupt signal.
 
-Returning to Bob, imagine that Alice calls him when he's already preparing the coffee, after the
-water boiled. Probably, Bob will decline the Alice's invitation, and will make breakfast at home.
-Let's model such a scenario. First, we add some delay to the action of preparing coffee:
+Returning to Bob, imagine that Alice calls him when he's already preparing the coffee after the water boiled. Probably, Bob will decline Alice's invitation and will make breakfast at home. Let's model such a scenario. First, we add some delay to the action of preparing coffee:
 
 ```scala
 val preparingCoffeeWithSleep =
@@ -321,14 +282,11 @@ the `interrupt` method on it doesn't do anything, and the above code will have t
 [zio-default-async-5]: Making breakfast at home
 ```
 
-Bob will make breakfast at home, no matter the Alice's call. Sorry, Alice, maybe next time.
+Bob will make breakfast at home, no matter Alice's call. Sorry, Alice, maybe next time.
 
 ## 8. Conclusions
 
-Summing up, in the article we briefly introduced the concept of effect, and how ZIO uses it to
-implement concurrent execution through fibers. Using a simple example, then, we showed how to use
-the three main operations available on fibers: Fork, join, and interrupt.
+In the article, we briefly introduced the concept of effect and how ZIO uses it to implement concurrent execution through fibers. Using a simple example, we showed how to use the three primary operations available on fibers: Fork, join, and interrupt.
 
-Moreover, fibers are the very basic brick of concurrency programming in ZIO. A lot of concepts are
-build upon them, implementing richer and more complex use cases. 
+Moreover, fibers are the actual brick of concurrency programming in ZIO. A lot of concepts are built upon them, implementing richer and more complex use cases. 
 
