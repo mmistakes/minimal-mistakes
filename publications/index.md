@@ -12,12 +12,12 @@
  
 - Senoussi, M., Verbeke, P., Desender, K., De Loof, E., Talsma, D., & Verguts, T. (2020). Theta oscillations shift towards optimal frequency for cognitive control. BioRxiv. [https://doi.org/10.1101/2020.08.30.273706](https://doi.org/10.1101/2020.08.30.273706)
 
-- Verbeke, P., & Verguts, T. (2020). Neural synchrony for adaptive control. PsyArXiv. [https://psyarxiv.com/523x9/](https://psyarxiv.com/523x9/)
-
 
 ## Recent publications
 
 in press:
+
+- Verbeke, P., & Verguts, T. (in press). Neural synchrony for adaptive control. Journal of Cognitive Neuroscience.
 
 - Huycke, P., Verbeke, P., Boehler, C. N., & Verguts, T. (in press). Theta and alpha power across fast and slow timescales in cognitive control. European Journal of Neuroscience.
 
