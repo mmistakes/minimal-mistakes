@@ -361,5 +361,10 @@ Bob will make breakfast at home, no matter the Alice's call. Sorry, Alice, maybe
 
 ## 8. Conclusions
 
-TODO
+Summing up, in the article we briefly introduced the concept of effect, and how ZIO uses it to 
+implement concurrent execution through fibers. Using a simple example, then, we showed how to use
+the three main operations available on fibers: Fork, join, and interrupt. 
+
+Moreover, fibers are the very basic brick of concurrency programming in ZIO. A lot of concepts are
+build upon them, implementing richer and more complex use cases. 
 
