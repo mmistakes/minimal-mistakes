@@ -1,7 +1,7 @@
 ---
 published: true
 layout: single
-title: "[C++] 헤더 파일 상단의 #ifndef #define의 의미"
+title: "헤더 파일 상단의 #ifndef #define의 의미"
 category: cppreference
 tags:
 comments: true
