@@ -1,4 +1,8 @@
-## [4.23.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.23.0)
+## Unreleased
+
+### Enhancements
+
+- Replace custom search icon SVG with Font Awesome icon. [#2774](https://github.com/mmistakes/minimal-mistakes/pull/2774)
 
 ### Enhancements
 
