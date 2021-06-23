@@ -1,5 +1,10 @@
 ## Unreleased
 
+### Bug Fixes
+
+- Fix broken sidebar image in sample post. [#3013](https://github.com/mmistakes/minimal-mistakes/issues/3013)
+- Fix broken links in Upgrading documentation. [#3004](https://github.com/mmistakes/minimal-mistakes/issues/3004)
+
 ### Enhancements
 
 - Remove `h2` from skip links navigation as it is not important for site structure. [#3012](https://github.com/mmistakes/minimal-mistakes/pull/3012)

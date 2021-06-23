@@ -2,11 +2,11 @@
 title: "Upgrading"
 permalink: /docs/upgrading/
 excerpt: "Instructions and suggestions for upgrading the theme."
-last_modified_at: 2018-11-25T19:38:20-05:00
+last_modified_at: 2021-06-23T08:15:34-04:00
 toc: true
 ---
 
-If you're using the [Ruby Gem]({{ "/docs/quick-start-guide/#ruby-gem-method" | relative_url }}) or [remote theme]({{ "/docs/quick-start-guide/#github-pages-method" | relative_url }}) versions of Minimal Mistakes, upgrading is fairly painless.
+If you're using the [Ruby Gem]({{ "/docs/quick-start-guide/#gem-based-method" | relative_url }}) or [remote theme]({{ "/docs/quick-start-guide/#remote-theme-method" | relative_url }}) versions of Minimal Mistakes, upgrading is fairly painless.
 
 To check which version you are currently using, view the source of your built site and you should see something similar to:
 

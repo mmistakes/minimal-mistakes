@@ -5,11 +5,16 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2021-06-23T08:12:46-04:00
+last_modified_at: 2021-06-23T08:17:10-04:00
 toc: false
 ---
 
 ## Unreleased
+
+### Bug Fixes
+
+- Fix broken sidebar image in sample post. [#3013](https://github.com/mmistakes/minimal-mistakes/issues/3013)
+- Fix broken links in Upgrading documentation. [#3004](https://github.com/mmistakes/minimal-mistakes/issues/3004)
 
 ### Enhancements
 
