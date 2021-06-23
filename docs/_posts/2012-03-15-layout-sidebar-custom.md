@@ -1,10 +1,11 @@
 ---
 title: "Layout: Sidebar Custom"
 excerpt: "A post with custom sidebar content."
+last_modified_at: 2021-06-23T07:53:04-04:00
 author_profile: false
 sidebar:
   - title: "Title"
-    image: http://placehold.it/350x250
+    image: "/assets/images/350x250.png"
     image_alt: "image"
     text: "Some text here."
   - title: "Another Title"
@@ -19,7 +20,7 @@ An example of how that YAML could look is:
 ```yaml
 sidebar:
   - title: "Title"
-    image: http://placehold.it/350x250
+    image: "/assets/images/your-image.jpg"
     image_alt: "image"
     text: "Some text here."
   - title: "Another Title"
