@@ -17,7 +17,7 @@ Many libraries implement the effect pattern in the Scala ecosystem: Cats Effect,
 
 We live in a beautiful world where Scala 3 is the actual major release of our loved programming language. Scala 3 and Scala 2.13 will both work with no changes to the code here. Moreover, we will need the dependency from the ZIO library:
 
-```sbt
+```scala
 libraryDependencies += "dev.zio" %% "zio" % "1.0.9"
 ```
 
