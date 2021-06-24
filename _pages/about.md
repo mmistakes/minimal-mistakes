@@ -25,19 +25,25 @@ toc_icon: "cog"
 * Jul. 2017 – Aug. 2017: R&D Intern, DeNA Co., Ltd.
 * Mar. 2017 - Jul. 2017: Algorithm Intern, PKSHA Technology Inc.
 
-## Reviewer
-* EMNLP2021
-* NAACL2021
-* TACL2021 (secondary)
-* ACL2020
-* ACL2019 (secondary)
-
 ## Awards
 * Jun. 2021: JSAI Incentive Award (2020), the Japanese Society for Artificial Intelligence (JSAI)
 * Dec. 2020: Presentation Award, NTCIR-15
 * Mar. 2019: Paper Award, the 25th Annual Meeting of the Association for Natural
 Language Processing
 * Mar. 2019: Half exemption from repayment for particularly outstanding achievements, Japan Student Services Organization (JASSO)
+
+## Talk
+* Mar. 2021: [第19回 NLP Dの会](https://sites.google.com/view/nlptokyod) (in Japanese)
+* Sep. 2020: 最先端NLP勉強会 [[slides](https://github.com/KazutoshiShinoda/slides/blob/master/SNLP2020-A-Systematic-Assessment-of-Syntactic-Generalization-in-Neural-Language-Models.pdf)] (in Japanese)
+* Jun. 2020: NII Open House 2020 (poster session) "Artificial Intelligence to Create Reading Comprehension Questions" [[poster](https://www.nii.ac.jp/event/upload/C04_oh2020.pdf)] (in Japanese)
+* Sep. 2019: 最先端NLP勉強会 [[slides](https://github.com/KazutoshiShinoda/slides/blob/master/SNLP2019-latent-normalizing-flow-for-discrete-sequences.pdf)] (in Japanese)
+
+## Reviewer
+* EMNLP2021
+* NAACL2021
+* TACL2021 (secondary)
+* ACL2020
+* ACL2019 (secondary)
 
 ## Funding
 * Apr. 2017 - Mar. 2018: UTokyo Toyota-Dwango AI scholarship
