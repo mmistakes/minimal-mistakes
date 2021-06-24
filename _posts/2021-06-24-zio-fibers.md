@@ -1,17 +1,21 @@
 ---
-title: "ZIO and the Fiber Model"
-date: 2021-06-31 
+title: "ZIO: Introduction to Fibers"
+date: 2021-06-24
 header:
   image: "/images/blog cover.jpg"
 tags: []
 excerpt: "Many libraries implement the effect pattern in the Scala ecosystem, and every one has its own concurrency model. First, let's introduce the ZIO library and its implementation of the fiber model."
 ---
 
+_Another great round by [Riccardo Cardin](https://github.com/rcardin), a proud student of the [Scala with Cats course](https://rockthejvm.com/p/cats). Riccardo is a senior developer, a teacher and a passionate technical blogger, and now he's neck deep into ZIO._
+
+_Enter Riccardo:_
+
 Many libraries implement the effect pattern in the Scala ecosystem: Cats Effect, Monix, and ZIO, just to list some. Each of these implements its own concurrency model. For example. Cats Effect and ZIO both rely on _fibers_. In the articles [Cats Effect 3 - Introduction to Fibers](https://blog.rockthejvm.com/cats-effect-fibers/) and [Cats Effect 3 - Racing IOs](https://blog.rockthejvm.com/cats-effect-racing-fibers/), we introduced the fiber model adopted by the Cats Effect library. Now, it's time to analyze the ZIO library and its implementation of the fiber model.
 
 ## 1. Background and Setup
 
-We live in a beautiful world where Scala 3 is the actual major release of our loved programming language. So, we will use Scala 3 throughout the article. Moreover, we will need the dependency from the ZIO library:
+We live in a beautiful world where Scala 3 is the actual major release of our loved programming language. Scala 3 and Scala 2.13 will both work with no changes to the code here. Moreover, we will need the dependency from the ZIO library:
 
 ```sbt
 libraryDependencies += "dev.zio" %% "zio" % "1.0.9"
@@ -206,6 +210,8 @@ val aliceCalling = ZIO.succeed("Alice's call")
 Then, we want to add some delay to the effect associated with the boiling water. So we use the ZIO primitive `ZIO.sleep` to create an effect that waits for a while:
 
 ```scala
+import zio.duration._ // 5.seconds is not the Scala standard duration
+
 val boilingWaterWithSleep =
   boilingWater.debug(printThread) *>
     ZIO.sleep(5.seconds) *>
@@ -215,6 +221,8 @@ val boilingWaterWithSleep =
 Finally, we put together all the pieces, and model the whole use case:
 
 ```scala
+import zio.clock._
+
 def concurrentWakeUpRoutineWithAliceCall(): ZIO[Clock, Nothing, Unit] = for {
   _ <- bathTime.debug(printThread)
   boilingFiber <- boilingWaterWithSleep.fork
