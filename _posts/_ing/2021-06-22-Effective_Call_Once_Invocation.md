@@ -27,7 +27,7 @@ class Singleton {
  public:
   static Singleton &getInstance() {
     call_once(Singleton::mOnceFlag, []() {
-      printf("Singleton Instance is created...\n");
+      printf("Singleton Instance is created\n");
       mInstance.reset(new Singleton);
     });
 
