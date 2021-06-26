@@ -14,7 +14,7 @@
     script.setAttribute('data-repo-id', '{{ site.giscus.repo_id }}');
     script.setAttribute('data-category', '{{ site.giscus.category_name }}');
     script.setAttribute('data-category-id', '{{ site.giscus.category_id }}');
-    script.setAttribute('data-mapping', '{{ site.comments.giscus.issue_term | default: "pathname" }}');
+    script.setAttribute('data-mapping', '{{ site.comments.giscus.discussion_term | default: "pathname" }}');
     script.setAttribute('data-reactions-enabled', '{{ site.comments.giscus.reactions_enabled | default: 1 }}'); // TODO: Convert from boolean
     script.setAttribute('data-theme', '{{ site.comments.giscus.theme | default: "light" }}');
     script.setAttribute('crossorigin', 'anonymous');
