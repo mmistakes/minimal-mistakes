@@ -251,7 +251,7 @@ Smooth Scroll is distributed under the terms of the [MIT License](http://opensou
 
 Minimal Mistakes incorporates [Gumshoejs](http://github.com/cferdinandi/gumshoe),
 Copyright (c) 2019 Chris Ferdinandi.
-Smooth Scroll is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+Gumshoejs is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
 Minimal Mistakes incorporates [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/),
 Copyright (c) 2010 "Cowboy" Ben Alman.
