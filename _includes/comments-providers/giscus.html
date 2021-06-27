@@ -10,7 +10,7 @@
 
     var script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
-    script.setAttribute('data-repo', '{{ site.repository }}');
+    script.setAttribute('data-repo', '{{ site.repository | downcase }}');
     script.setAttribute('data-repo-id', '{{ site.comments.giscus.repo_id }}');
     script.setAttribute('data-category', '{{ site.comments.giscus.category_name }}');
     script.setAttribute('data-category-id', '{{ site.comments.giscus.category_id }}');
