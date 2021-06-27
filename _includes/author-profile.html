@@ -1,28 +1,32 @@
 {% assign author = page.author | default: page.authors[0] | default: site.author %}
 {% assign author = site.data.authors[author] | default: author %}
 
-<div itemscope itemtype="https://schema.org/Person">
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  <a class="u-url hidden" rel="me" href="{{ '/' | relative_url }}">
+    Hidden microformat entry for representative h-card
+  </a>
 
   {% if author.avatar %}
     <div class="author__avatar">
       {% if author.home %}
         <a href="{{ author.home | relative_url }}">
-          <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image">
+          <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image" class="u-photo">
         </a>
       {% else %}
-        <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image">
+        <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image" class="u-photo">
       {% endif %}
     </div>
   {% endif %}
 
   <div class="author__content">
     {% if author.home %}
-      <a href="{{ author.home | relative_url }}"><h3 class="author__name" itemprop="name">{{ author.name }}</h3></a>
+      <a href="{{ author.home | relative_url }}" class="u-url"><h3 class="author__name" itemprop="name" class="p-name">{{ author.name }}</h3></a>
     {% else %}
-      <h3 class="author__name" itemprop="name">{{ author.name }}</h3>
+      <h3 class="author__name" itemprop="name" class="p-name">{{ author.name }}</h3>
     {% endif %}
     {% if author.bio %}
-      <div class="author__bio" itemprop="description">
+      <div class="author__bio p-note" itemprop="description">
         {{ author.bio | markdownify }}
       </div>
     {% endif %}
@@ -33,7 +37,7 @@
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">{{ author.location }}</span>
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.location }}</span>
         </li>
       {% endif %}
 
@@ -55,7 +59,7 @@
 
       {% if author.email %}
         <li>
-          <a href="mailto:{{ author.email }}" rel="me">
+          <a href="mailto:{{ author.email }}" rel="me" class="u-email">
             <meta itemprop="email" content="{{ author.email }}" />
             <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span>
           </a>
