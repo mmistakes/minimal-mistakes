@@ -1,5 +1,4 @@
 ---
-title: Projects 2021
 permalink: /projects-2021/probability-and-statistics-from-classical-to-bayesian
 toc: true
 layout: single
