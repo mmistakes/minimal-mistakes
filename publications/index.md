@@ -5,8 +5,6 @@
 - Verbeke P., & Verguts T. (2021). Using top-down gating to optimally balance shared versus separated task representations. [https://doi.org/10.1101/2021.06.02.446735](https://doi.org/10.1101/2021.06.02.446735)
 
 - Calderon, C.B., Verguts, T., & Frank, M. J. (2021). Thunderstruck: The ACDC model of flexible sequences and rhythms in recurrent neural circuits. [https://www.biorxiv.org/content/10.1101/2021.04.07.438842v1](https://www.biorxiv.org/content/10.1101/2021.04.07.438842v1)
-
-- Liu, M., Dong, W., Qin, S.,Verguts, T., & Chen, Q. (2021). Electrophysiological signatures of hierarchical learning. BioRxiv [https://doi.org/10.1101/2021.03.09.434666](https://doi.org/10.1101/2021.03.09.434666)
  
 - Desender, K., Vermeylen, L., & Verguts, T. (2020). Dynamic influences on static measures of metacognition. BioRxiv. [https://doi.org/10.1101/2020.10.29.360453](https://doi.org/10.1101/2020.10.29.360453)
  
@@ -16,6 +14,7 @@
 ## Recent publications
 
 in press:
+- Liu, M., Dong, W., Qin, S.,Verguts, T., & Chen, Q. (in press). Electrophysiological signatures of hierarchical learning. Cerebral Cortex.
 
 - Verbeke, P., & Verguts, T. (in press). Neural synchrony for adaptive control. Journal of Cognitive Neuroscience.
 
@@ -23,18 +22,17 @@ in press:
 
 - Ergo, K., De Vilder, L., De Loof, E., & Verguts, T. (in press). Reward prediction errors drive declarative learning irrespective of agency. Psychonomic Bulletin & Review.
 
-- Shahnazian, D., Senoussi, M., Krebs, R. M., Verguts, T., & Holroyd, C. B. (in press). Neural representations of task context and temporal order during action sequence execution. Topics in Cognitive Science. [https://doi.org/10.1101/2020.09.10.290965](https://doi.org/10.1101/2020.09.10.290965)
-
 - Zhang, S., Verguts, T., Zhang, C., Feng, P., Chen, Q., & Feng, T. (in  press). Outcome value and task aversiveness impact task procrastination through separate neural pathways. Cerebral Cortex.
 
 - Verguts, T. (in press). Introduction to modelling cognitive processes. MIT Press.
 
 - Peng, Z., Xu, C., Ma, N., Yang, Q., Ren, P., Wen, R., … Chen, Q. (in press). White matter alterations of the goal-directed system in obsessive-compulsive disorder patients and their unaffected first-degree relatives. Biological Psychiatry: Cognitive Neuroscience and Neuroimaging.
 
-- Rasoulzadeh, V., Sahan, M., van Dijck, J.P., Abrahamse, E., Marzecova, A., Verguts, T., & Fias, W. (in press). Spatial attention in serial order working memory: an EEG study. Cerebral Cortex. [https://doi.org/10.1093/cercor/bhaa368](https://doi.org/10.1093/cercor/bhaa368)
-
 
 2021:
+- Shahnazian, D., Senoussi, M., Krebs, R. M., Verguts, T., & Holroyd, C. B. (2021). Neural representations of task context and temporal order during action sequence execution. Topics in Cognitive Science. [https://doi.org/10.1101/2020.09.10.290965](https://doi.org/10.1101/2020.09.10.290965)
+
+- Rasoulzadeh, V., Sahan, M., van Dijck, J.P., Abrahamse, E., Marzecova, A., Verguts, T., & Fias, W. (2021). Spatial attention in serial order working memory: an EEG study. Cerebral Cortex, 31, 2482-2493. [https://doi.org/10.1093/cercor/bhaa368](https://doi.org/10.1093/cercor/bhaa368)
 
 - Holroyd, C. B., & Verguts, T. (2021). The best laid plans: Computational principles of ACC. Trends in Cognitive Sciences, 25, 316-329.
 [https://doi.org/10.31234/osf.io/3df8y](https://doi.org/10.31234/osf.io/3df8y)
