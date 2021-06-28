@@ -27,10 +27,10 @@ layout: default
         <header>
           {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
           {% if page.read_time %}
+            <div><img style="width: auto; height: auto;" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fchoiseonjae.github.io{{ page.url }}&count_bg=%23B6B5B0&title_bg=%2348454B&icon=checkmarx.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></div>
         	  <!-- readtime, 작성날짜 표기-->
             <span class="page__date"><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></span>
             <span class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</span>
-            <div><img style="width: auto; height: auto;" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fchoiseonjae.github.io{{ page.url }}&count_bg=%23B6B5B0&title_bg=%2348454B&icon=checkmarx.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></div>
           {% endif %}
         </header>
       {% endunless %}
