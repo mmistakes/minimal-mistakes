@@ -1,22 +1,21 @@
 ---
-title: "BLE (13) - 블루투스 소식: Bluetooth 5.1 and 5.2"
+title: "BLE (13) - 블루투스 소식: Bluetooth 5.1"
 categories:
   - BLE
 tags:
   - Bluetooth 5.1
-  - Bluetooth 5.2
   - Low Energy
 toc: true
 toc_sticky: true
 ---
 
-## 13. Bluetooth 5.1 and 5.2
+## 13. Bluetooth 5.1
 
-이번 포스트에서는 블루투스 5.1, 5.2 에서 추가된 저전력 (LE, Low Energy) 프로토콜 관련 부가 기능들 중 일부를 소개한다
+이번 포스트에서는 블루투스 5.1 에서 추가된 저전력 (LE, Low Energy) 프로토콜 관련 부가 기능들 중 일부를 소개한다
 
 >The Bluetooth SIG presented Bluetooth 5.1 on 21 January 2019.
 
-> On 31 December 2019, the Blueooth SIG published the Bluetooth Core Specification Version 5.2
+<!-- On 31 December 2019, the Blueooth SIG published the Bluetooth Core Specification Version 5.2 -->
 
 ### 13.1 Direction Finding
 
@@ -27,7 +26,7 @@ toc_sticky: true
 * AoA: Angle of Arrival
 * AoD: Angle of Departure
 
-다음의 그림에서 확인할 수 있듯이, 도래각 (AoA) 혹은 송출각 (AoD)을 계산하기 위해서는 두 개의 통신 기기 중 하나는 다수의 안테나를 가지고 있어야 한다. 또한, 단일 안테나를 가지고 있는 송신 (혹은 수신) 타겟 노드에서는 `CTE: Constant Tone Extension` 정보를 추가하거나 샘플링할 수 있어야 한다.
+다음의 그림에서 확인할 수 있듯이, 도래각 (AoA) 혹은 발사각 (AoD)을 계산하기 위해서는 두 개의 통신 기기 중 하나는 다수의 안테나를 가지고 있어야 한다. 또한, 단일 안테나를 가지고 있는 송신 (혹은 수신) 타겟 노드에서는 `CTE: Constant Tone Extension` 정보를 추가하거나 샘플링할 수 있어야 한다.
 
 <figure style="width: 100%" class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-51-fig1.png" alt="">
@@ -52,7 +51,7 @@ CTE 는 기존의 (Adv.) 패킷의 CRC 이후에 위치하는 영역 혹은 값�
 
 ### 13.3 Other functions
 
-그 외에 추가된 기능으로는 다음의 항목들이 있다.
+그 외에 블루투스 5.1 에서 추가된 기능으로는 다음의 항목들이 있다. 더 자세한 사항은 아래의 관련 링크를 참조하자.
 
 * GATT Caching Enhancements: GATT 연결 과정에서의 attribute table 을 보다 효율적으로 관리
 * Periodic Advertising Sync Transfer (PAST): 개선된 방식의 Advertising 주기 동기화 기능 (Scanner 기기에서의 전력 효율 증가)

@@ -36,9 +36,4 @@ toc_ads: true
 * [BLE (10) - 블루투스 메시: Overview of Mesh operation](https://enidanny.github.io/ble/ble-mesh-opeartion/)
 * [BLE (11) - 블루투스 메시: Overview of Mesh concepts](https://enidanny.github.io/ble/ble-mesh-concepts/)
 * [BLE (12) - 블루투스 메시: Advertising Bearer 포맷](https://enidanny.github.io/ble/ble-mesh-message/)
-
-## 포스팅 예정 항목
-<!--* BLE (?) - Nordic BLE chip 개발하기 (1): nRF52-DK 개발환경 구축 nRF52832 chip / Keil compiler / nRF command-line Tool / SDK, softdevice-->
-<!--* BLE (?) - Nordic BLE chip 개발하기 (2): nRF52-DK 프로그래밍 예제 sdk 구성 / softdevice, program upload / custom board upload / GATT 예제 (link)-->
-<!--* BLE (?) - Nordic BLE chip 개발하기 (3): BLE 비콘-->
-<!--* BLE (?) - Nordic BLE chip 개발하기 (4): BLE 비콘 스캐너-->
+* [BLE (13) - 블루투스 소식: Bluetooth 5.1](https://enidanny.github.io/ble/ble-bluetooth-news-51/)
