@@ -1,3 +1,9 @@
+---
+title: "소개"
+layout: categories
+permalink: /about/
+author_profile: true
+---
 # Hello !
 
 안녕하세요.<br>
