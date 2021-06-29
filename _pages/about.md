@@ -1,6 +1,8 @@
 ---
 permalink: /about/
 author_profile: true
+header:
+  image: /assets/image/background.png
 ---
 
 안녕하세요.<br>

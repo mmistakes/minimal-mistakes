@@ -1,6 +1,6 @@
 ---
 title: "코딩"
-layout: categories
+layout: home
 permalink: /coding/
 author_profile: true
 ---
