@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "INMD"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/image/brand.png"
   bio              : "나는야 개발자!"
   location         : "Korea"
   email            :
