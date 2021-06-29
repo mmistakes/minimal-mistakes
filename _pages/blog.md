@@ -1,6 +1,6 @@
 ---
 title: "블로그"
-layout: home
+layout: tags
 permalink: /blog/
 author_profile: true
 ---
