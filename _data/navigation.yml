@@ -3,6 +3,6 @@ main:
    - title: "소개"
      url: /about/
    - title: "블로그"
-     url: /categories/#blog/
+     url: /categories/blog/
    - title: "코딩"
-     url: /categories/#coding/
+     url: /categories/coding/
