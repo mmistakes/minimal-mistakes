@@ -1,6 +1,6 @@
 ---
 title: "코딩"
-permalink: /categories /#coding/
+permalink: /categories/#coding/
 layout: category
 author_profile: true
 taxonomy: 코딩
