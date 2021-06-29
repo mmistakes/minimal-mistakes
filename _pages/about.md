@@ -1,6 +1,4 @@
 ---
-title: "소개"
-layout: categories
 permalink: /about/
 author_profile: true
 ---
