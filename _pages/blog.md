@@ -1,4 +1,3 @@
-# blog-archive.md
 ---
 title: "블로그"
 layout: categories
