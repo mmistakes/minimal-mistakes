@@ -1,6 +1,6 @@
 # main links
 main:
    - title: "블로그"
-     url: https://mmistakes.github.io/minimal-mistakes/about/
+     url: /blog/
    - title: "코딩"
      url: /coding/
