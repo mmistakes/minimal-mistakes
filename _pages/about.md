@@ -2,7 +2,6 @@
 permalink: /about/
 author_profile: true
 ---
-# Hello !
 
 안녕하세요.<br>
 저는 개발자가 되기 위해 노력중인 현 대학교 1학년 입니다. <br>
