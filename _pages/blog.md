@@ -1,9 +1,8 @@
 ---
-title: "블로그"
+title: "Posts by category"
+layout: categories
 permalink: /blog/
-layout: tag
 author_profile: true
-taxonomy: blog
 ---
 
 잡담 아니면 정보를 모은곳입니다.
