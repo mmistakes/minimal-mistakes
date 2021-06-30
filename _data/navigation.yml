@@ -2,5 +2,5 @@
 main:
    - title: "소개"
      url: /about/
-   - title: "블로그"
-     url: /blog/
+   - title: "Posts by category"
+     url: /categories/
