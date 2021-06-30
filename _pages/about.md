@@ -1,5 +1,6 @@
 ---
 permalink: /about/
+layout: single
 author_profile: true
 header:
   image: /assets/image/background.png
