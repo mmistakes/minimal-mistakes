@@ -278,7 +278,6 @@ defaults:
       author_profile: true
       read_time: true
       comments: # 블로그 댓글 기능 true
-      share: true
       related: true
 
   # _pages
@@ -290,5 +289,4 @@ defaults:
       author_profile: true
       read_time: false
       comments: false
-      share: true
       related: false
