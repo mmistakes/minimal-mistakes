@@ -6,5 +6,5 @@ main:
    - title: "Post"
      url: /categories/
 
-   - title: "code"
+   - title: "Tags"
      url: /tags/
