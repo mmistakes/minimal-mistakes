@@ -1,5 +1,5 @@
 ---
-title: "coding test data"
+title: "code"
 permalink: /tags/
 layout: tags
 author_profile: true
