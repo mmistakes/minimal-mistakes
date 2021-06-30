@@ -1,7 +1,7 @@
 ---
 title: "코딩"
 permalink: /coding/
-layout: category
+layout: tag
 author_profile: true
 taxonomy: 코딩
 ---
