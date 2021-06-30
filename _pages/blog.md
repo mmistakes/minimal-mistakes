@@ -1,7 +1,7 @@
 ---
 title: "블로그"
-permalink: /categories/blog/
-layout: category
+permalink: /blog/
+layout: tag
 author_profile: true
 taxonomy: 블로그
 ---
