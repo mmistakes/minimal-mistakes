@@ -2,9 +2,9 @@
 main:
    - title: "about"
      url: /about/
-     
-   - title: "blog"
+
+   - title: "Post"
      url: /categories/
 
-   - title: "coding test"
+   - title: "code"
      url: /categories/coding/
