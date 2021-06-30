@@ -1,7 +1,7 @@
 ---
 title: "블로그"
 permalink: /blog/
-layout: tag
+layout: categories
 author_profile: true
 taxonomy: 블로그
 ---
