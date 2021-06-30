@@ -5,4 +5,4 @@ main:
    - title: "Posts by category"
      url: /categories/
    - title: "coding test"
-     url: /tag/
+     url: /categories/coding/
