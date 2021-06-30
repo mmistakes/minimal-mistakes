@@ -4,5 +4,3 @@ main:
      url: /about/
    - title: "블로그"
      url: /blog/
-   - title: "코딩"
-     url: /categories/#coding/
