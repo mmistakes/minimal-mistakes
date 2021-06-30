@@ -46,7 +46,11 @@ def processListsSameTypeV2[A](la: List[A], lb: List[A]): List[(A, A)] =
   processLists[A,A](la, lb)
 ```
 
-In this way, you won't be able to pass two lists of different types. However, there is a more complex, much less known but more powerful technique. In Scala, the standard library contains the little-known type `=:=[A,B]` &mdash; which can be used infix as `A =:= B` &mdash; which denotes the "equality" of types A and B. The compiler is able to synthesize instances of `=:=[A,A]` wherever we have methods requiring an implicit argument or a `using` clause. In our case, we can write
+In this way, you won't be able to pass two lists of different types. 
+
+However, there is a more complex, much less known, but more powerful technique. 
+
+In Scala, the standard library contains the little-known type `=:=[A,B]` (also usable infix as `A =:= B`) which denotes the "equality" of types A and B. The compiler is able to synthesize instances of `=:=[A,A]` wherever we have methods requiring an implicit argument or a `using` clause. In our case, we can write
 
 ```scala3
 def processListsSameTypeV3[A, B](la: List[A], lb: List[B])(using A =:= B): List[(A, B)] =
