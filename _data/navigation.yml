@@ -1,8 +1,10 @@
 # main links
 main:
-   - title: "소개"
+   - title: "about"
      url: /about/
-   - title: "Posts by category"
+     
+   - title: "blog"
      url: /categories/
+
    - title: "coding test"
      url: /categories/coding/
