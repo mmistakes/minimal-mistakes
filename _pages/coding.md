@@ -1,6 +1,6 @@
 ---
 title: "coding test data"
-permalink: /tags/coding/
+permalink: /tags/
 layout: tags
 author_profile: true
 ---
