@@ -257,6 +257,7 @@ shared_ptr<int []> myShared (new int [10]); // since c++17, 배열 해제 가능
 - ***Effective C++ (Scott Meyers)***
 - ***<https://medium.com/pranayaggarwal25/custom-deleters-with-shared-ptr-and-unique-ptr-524bb7bd7262>***
 - ***<https://stackoverflow.com/questions/21834131/stdshared-ptrowner-before-and-stdowner-less-what-exactly-is-meant-by-own>***
+- ***<https://stackoverflow.com/questions/1403465/what-is-boosts-shared-ptrshared-ptry-const-r-t-p-used-for>***
 
 <body translate="no" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
   <div id="mouse_no" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
