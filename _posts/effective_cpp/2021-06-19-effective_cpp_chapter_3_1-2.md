@@ -233,13 +233,74 @@ ref count : 0
 
 #### weak_ptr\<T>
 ***
-weak_ptr은 shared_ptr이 관리하는 자원을 reference count에 영향 없이 사용할 수 있는 스마트 포인터 입니다.
+weak_ptr은 shared_ptr이 관리하는 자원을 reference count에 영향 없이 사용할 수 있는 스마트 포인터 입니다. weak_ptr의 특징에 대해 알아봅시다.
 
+- weak_ptr은 자원을 할당 받아도 reference count를 증가시키지 않습니다.
+- weak_ptr은 직접적으로 자원을 할당 받을 수 없고, shared_ptr이나 다른 weak_pt의 자원을 Copy Function을 통해서 할당 받아야 합니다.
+- 할당 받은 자원은 lock이라는 함수를 통해 사용해야 하며, lock 함수는 weak_ptr이 참조하고 있는 shared_ptr을 반환합니다.
+- weak_ptr이 자원을 참조할 때마다 weak count가 증가하며 weak count와 자원의 해제와는 아무 연관이 없습니다. weak_ptr이 참조하고 있는 자원이 해제되면 expire 상태가 되며 expire 상태가 되면 더 이상 참조하고 있는 shared_ptr이 없는 상태가 됩니다.  
 
-https://jungwoong.tistory.com/50
+그러면 이번에는 예제를 통해 사용법을 익혀봅시다.
+
+#### 1) 기본 할당
+```c++
+std::shared_ptr<Integer> s_ptr = std::make_shared<Integer>(10);
+std::weak_ptr<Integer> w_ptr1(s_ptr);
+std::cout << "ref count : " << w_ptr1.use_count() << std::endl;
+
+std::weak_ptr<Integer> w_ptr2(s_ptr);
+std::cout << "ref count : " << w_ptr2.use_count() << std::endl;
+---------------------------------------------------------
+ref count : 1
+ref count : 1
+---------------------------------------------------------
+```
+```c++
+std::shared_ptr<Integer> s_ptr = std::make_shared<Integer>(10);
+std::weak_ptr<Integer> w_ptr1 = s_ptr;
+std::cout << "ref count : " << w_ptr1.use_count() << std::endl;
+
+std::weak_ptr<Integer> w_ptr2 = s_ptr;
+std::cout << "ref count : " << w_ptr2.use_count() << std::endl;
+---------------------------------------------------------
+ref count : 1
+ref count : 1
+---------------------------------------------------------
+```
+
+#### 2) lock()
+```c++
+std::shared_ptr<Integer> s_ptr = std::make_shared<Integer>(10);
+std::weak_ptr<Integer> w_ptr = s_ptr;
+
+std::shared_ptr<Integer> s_ptr2 = w_ptr.lock();
+std::cout << "value : " << s_ptr2->GetValue() << std::endl;
+```
+
+이렇게 설계된 이유가 뭘까요? 만약 weak_ptr이 참조하고 있는 shared_ptr이 동작 중에 갑자기 해제되어 버리는 상황 때문입니다. 값을 참조하기 위해 shared_ptr이 최소 1개 보장되므로 해제되지 않겠죠.
+
+#### 3) expired
+
+weak_ptr이 참조하고 있는 shared_ptr이 유효한지 확인하는 함수 입니다. use_count()가 0이면 true를 아니면 false를 반환합니다. 
+
+```c++
+std::shared_ptr<Integer> s_ptr = std::make_shared<Integer>(10);
+std::weak_ptr<Integer> w_ptr = s_ptr;
+
+std::cout << std::boolalpha << "isExpired : " << w_ptr.expired() << std::endl;
+
+s_ptr.reset();
+std::cout << std::boolalpha << "isExpired : " << w_ptr.expired() << std::endl;
+```
+
+그 외에도 기존 스마트 포인터에서 사용할 수 있는 왠만한 함수들은 모두 사용 가능합니다. 자세한 건 c++ reference page를 page를 통해서 공부하도록 합시다.
+
 
 #### 순환 참조
 ***
+weak_ptr의 존재 이유는 바로 순환 참조(circular reference) 때문입니다. 객체 A, B가 있다고 칩시다. 그리고 객체 A, B는 서로를 shared_ptr 멤버로 참조하고 있다고 가정해봅시다. 
+
+먼저 각각의 shared_ptr의 참조 카운트는 몇 일까요?, 당연히 1일 것 입니다. 그렇다면 
 
 #### Custom Deleter
 ***
