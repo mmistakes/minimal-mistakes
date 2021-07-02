@@ -1,5 +1,5 @@
 ---
-title: "nRF5 SDK 개발일지 (1) - nRF52840 칩에서 2개의 UART 모듈 사용하기"
+title: "nRF5 SDK (1) - nRF52840 칩에서 2개의 UART 모듈 사용하기"
 categories:
   - nRF5 SDK
 tags:
