@@ -24,6 +24,7 @@ toc_ads: true
 
 * [nRF5 SDK (1) - nRF52840 칩에서 2개의 UART 모듈 사용하기](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-two-uart/)
 * [nRF5 SDK (2) - nRF52 시리즈 제품별 특징](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-nrf5series/)
+
 ---
 
 ## 포스팅 예정 항목
