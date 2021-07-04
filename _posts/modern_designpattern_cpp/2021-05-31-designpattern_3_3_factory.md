@@ -1,7 +1,7 @@
 ---
 published: true
 layout: single
-title: "[MORDERN C++ DESIGN PATTERN] 3-3 Factory"
+title: "[MORDERN C++ DESIGN PATTERN] 3. Factory Pattern"
 category: designpattern
 tags:
 comments: true
