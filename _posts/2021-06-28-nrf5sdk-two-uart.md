@@ -73,9 +73,32 @@ app_uart1_init(, get, put, close) 등의 함수를 선언했으면, 해당 함�
 
 위의 과정까지 정상적으로 진행되었다면, 마지막으로 프로젝트의 `sdk_config.h` 파일에서 UART 관련 변수를 다음과 같이 설정하자.
 
-<figure style="width: 100%" class="align-center">
+```c
+// <e> UART1_ENABLED - Enable UART1 instance
+//==========================================================
+#ifndef UART1_ENABLED
+#define UART1_ENABLED 1
+#endif
+// </e>
+
+// <e> NRFX_UARTE_ENABLED - nrfx_uarte - UARTE peripheral driver
+//==========================================================
+#ifndef NRFX_UARTE_ENABLED
+#define NRFX_UARTE_ENABLED 1
+#endif
+// <o> NRFX_UARTE0_ENABLED - Enable UARTE0 instance 
+#ifndef NRFX_UARTE0_ENABLED
+#define NRFX_UARTE0_ENABLED 0
+#endif
+
+// <o> NRFX_UARTE1_ENABLED - Enable UARTE1 instance 
+#ifndef NRFX_UARTE1_ENABLED
+#define NRFX_UARTE1_ENABLED 1
+#endif
+```
+<!--figure style="width: 100%" class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/sdk-uart-fig6.png" alt="">
-</figure>
+</figure-->
 
 ---
 
