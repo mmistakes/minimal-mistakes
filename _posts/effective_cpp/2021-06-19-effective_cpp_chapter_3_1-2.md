@@ -2,7 +2,7 @@
 published: true
 layout: single
 title: "[Effective C++] 13. 자원 관리에는 객체가 그만! - 2"
-category: none
+category: effectcpp
 tags:
 comments: true
 sidebar:
@@ -300,18 +300,76 @@ std::cout << std::boolalpha << "isExpired : " << w_ptr.expired() << std::endl;
 ***
 weak_ptr의 존재 이유는 바로 순환 참조(circular reference) 때문입니다. 객체 A, B가 있다고 칩시다. 그리고 객체 A, B는 서로를 shared_ptr 멤버로 참조하고 있다고 가정해봅시다. 
 
-먼저 각각의 shared_ptr의 참조 카운트는 몇 일까요?, 당연히 1일 것 입니다. 그렇다면 
+위의 가정을 코드로 작성해보았습니다. 아래의 shared_ptr의 참조 카운트는 각각 몇 일까요? 
+
+```c++
+class Person
+{
+public:
+  MarryWith(std::shared_ptr<Person>& _partner)
+  {
+    m_partner = _partner;
+  }
+
+private:
+  std::shared_ptr<Person> m_partner;
+}
+```
+```c++
+...
+{
+  std::shared_ptr<Person> ysbaek = std::make_shared<Person>();
+  std::shared_ptr<Person> hjson = std::make_shared<Person>();
+
+  ysbaek->MarryWith(hjson);
+  hjson->MarryWith(ysbaek);
+}
+...
+```
+
+ MarryWith 호출 후 각각의 참조 카운트는 2가 됩니다. 객체 본인이 참조하는 횟수 한 번과 Partner shared_ptr이 가리키는 한 번으로 총 2번을 참조하게 됩니다. 객체 본인이 수명이 다해서 참조를 더 이상 안 하더라도,  Partner에 의해 참조 횟수는 1이 남게 됩니다. 이로 인해 자원은 해제되지 않겠지요. 이러한 경우를 순환 참조라고 합니다. 그리고 이러한 상황에서도 자원을 정상적으로 해제해주기 위해서 weak_ptr이 필요하다는 것은 weak_ptr이 지원하는 기능을 이해하셨다면 쉽게 이해가 될 것 입니다.
 
 #### Custom Deleter
 ***
-https://webnautes.tistory.com/1451
+Smart Pointer는 사용자가 임의로 Deleter를 설정할 수 있는 기능을 지원합니다.
 
+> template< class Y, class Deleter >  
+> shared_ptr( Y* ptr, Deleter d )
+> { ... }
+
+```c++
+// Lambda
+int *buffer = new int[1024];
+std::shared_ptr<int> foo;
+foo.reset(buffer, [](int *p){delete[] p; std::cout << "delete" << std::endl;});
+// std::shared_ptr<int> foo(buffer, [](int *p){delete[] p; std::cout << "delete" << std::endl; });
+```
+
+```c++
+// std::function
+void Deleter(int* x)
+{
+  delete[] x;
+  std::cout << "delete" << std::endl;
+}
+...
+...
+int *buffer = new int[1024];
+std::shared_ptr<int> foo;
+foo.reset(buffer, Deleter);
+// 또는 아래도 가능
+// std::shared_ptr<int> foo(buffer, Deleter);
+```
+<br>
+참고로 c++17 이상부터는 custom deleter로 구현하지 않아도 배열에 대해 자원 해제가 가능합니다.
 ```c++
 shared_ptr<int []> myShared (new int [10]); // since c++17, 배열 해제 가능
 ```
 
 #### ***End Note***
 ***
+- 자원 누출을 막기 위해, 생성자 안에서 자원을 획득하고 소멸자에서 그것을 해제하는 RAII 객체 또는 Smart Pointer를 사용 합시다.
+- c++11 이상에서 지원하는 Smart Pointer를 사용법을 숙지합시다.
 
 #### Reference 
 ***  
