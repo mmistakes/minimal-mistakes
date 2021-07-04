@@ -23,7 +23,7 @@ toc_sticky: true
 * nRF5 SDK 폴더 > examples > ble_peripheral > ble_app_uart 예제 이용: 다른 이름으로 새폴더를 하나 만들고, 원래의 폴더 안의 항목들을 복사 / 붙여넣기 해서 사용
 * 새로 생성한 폴더에서 `Segger Embedded Studio (SES)` 프로젝트 실행
 
-Setup 과정은 이전 포스트와 동일한데, 굳이 ble_app_uart 예제를 반복해서 사용하는 이유는 크게 다음과 같다.
+**Setup 과정은 이전 포스트와 동일한데, 굳이 ble_app_uart 예제를 반복해서 사용하는 이유는 크게 다음과 같다.**
 
 1. printf 함수의 사용 (별도의 debugger 필요 없이 (e.g. J-Link RTT Viewer) terminal 프로그램 이용해서 debugging 가능)
 2. BLE 기능과의 연동성 (peripheral 폴더에 있는 예제는 softdevice 사용하지 않음)
