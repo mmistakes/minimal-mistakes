@@ -72,6 +72,7 @@ int main(void){
 `nRF5 SDK` 에서 TWI 모듈을 초기화하고, `read / write` 하는 코드. 각각의 코드를 이해하기 위해서는 TWI, 즉, I2C 통신에서의 `read / write` 과정에 대해 어느정도 이해하고 있어야 함. 또한, 다음의 코드는 본인이 자주 사용하기 위한 하나의 예시 코드일 뿐, 정해진 코드는 아닐 뿐더러, 실제 개발시에는 관련 어플리케이션에 맞게 사용해야함.
 
 * `twi init`
+
 ```c
 uint32_t err_code;
 static volatile bool  m_xfer_done     = false;
@@ -120,6 +121,7 @@ static void twi_init (void){
 ```
 
 * `twi write`
+
 ```c
 #define MODULE_ADDRESS 0x60 // TWI Slave Address (example)
 
@@ -144,6 +146,7 @@ void twi_write_example(void){
 ```
 
 * `twi read`
+
 ```c
 void twi_read_example(void){
     uint8_t reg_addr = 0x20; // Register Address (example)
@@ -174,6 +177,7 @@ void twi_read_example(void){
     }while (m_xfer_done == false);
 }
 ```
+
 ---
 
 ## 3.5. "sdk_config.h" 수정
