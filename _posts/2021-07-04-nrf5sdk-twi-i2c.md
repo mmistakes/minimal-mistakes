@@ -10,7 +10,7 @@ toc: true
 toc_sticky: true
 ---
 
-# 3. nRF5 SDK (3) - nRF52 시리즈 (SDK 17.0.2) TWI (I2C) 모듈 제어 : TWI (I2C) Master of nRF52 Series using SDK 17.0.2
+# 3. nRF52 시리즈 (SDK 17.0.2) TWI (I2C) 모듈 제어 : TWI (I2C) Master of nRF52 Series using SDK 17.0.2
 
 * `TWI (Two-Wire Interface)` 는 nRF5 SDK 의 I2C 인터페이스의 별칭.
 
@@ -53,7 +53,8 @@ static void timer_timeout_handler(void* p_context){
 
 int main(void){
     // ...
-    err_code = app_timer_create(&user_timer_name, APP_TIMER_MODE_REPEATED, timer_timeout_handler);
+    err_code = app_timer_create(&user_timer_name, APP_TIMER_MODE_REPEATED
+                                                , timer_timeout_handler);
     APP_ERROR_CHECK(err_code);
     app_timer_start(user_timer_name, APP_TIMER_TICKS(1000), NULL);
 
