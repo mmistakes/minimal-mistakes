@@ -429,7 +429,7 @@ comments:
 
 To use giscus you will need to [install the app](https://github.com/apps/giscus) to your GitHub repository.
 
-The next step is to go to <https://giscus.app> and fill out the desired settings. This will generate a javascript, which will provide you with some of the settings you will need to configure things below.
+The next step is to go to <https://giscus.app> and fill out the desired settings. This will generate JavaScript that will provide you with the settings you will need to configure things below.
 
 You'll need to ensure you've added the following to `_config.yml`:
 
