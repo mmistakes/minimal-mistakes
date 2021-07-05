@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2021-07-05T15:51:14-04:00
+last_modified_at: 2021-07-05T15:52:27-04:00
 toc: false
 ---
 
@@ -20,6 +20,7 @@ toc: false
 
 ### Enhancements
 
+- Remove IE9 flexbox fallback. [#3042](https://github.com/mmistakes/minimal-mistakes/pull/3042)
 - Remove `h2` from skip links navigation as it is not important for site structure. [#3012](https://github.com/mmistakes/minimal-mistakes/pull/3012)
 - Loads Font Awesome asynchronously. [#2967](https://github.com/mmistakes/minimal-mistakes/pull/2967)
 - Replace custom search icon SVG with Font Awesome icon. [#2774](https://github.com/mmistakes/minimal-mistakes/pull/2774)
