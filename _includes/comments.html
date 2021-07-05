@@ -153,6 +153,9 @@
     {% when "utterances" %}
       <h4 class="page__comments-title">{{ comments_label }}</h4>
       <section id="utterances-comments"></section>
+    {% when "giscus" %}
+      <h4 class="page__comments-title">{{ comments_label }}</h4>
+      <section id="giscus-comments"></section>
     {% when "custom" %}
       {% include /comments-providers/custom.html %}
   {% endcase %}

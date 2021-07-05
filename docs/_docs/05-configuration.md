@@ -333,7 +333,7 @@ For example,
 
 ### Comments
 
-[**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), [**utterances**](https://utteranc.es/), and static-based commenting via [**Staticman**](https://staticman.net/) are built into the theme. First set the comment provider you'd like to use:
+[**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), [**utterances**](https://utteranc.es/), [**giscus**](https://giscus.app/) and static-based commenting via [**Staticman**](https://staticman.net/) are built into the theme. First set the comment provider you'd like to use:
 
 | Name             | Comment Provider          |
 | ---------------- | ------------------------- |
@@ -343,6 +343,7 @@ For example,
 | **staticman_v2** | Staticman v2 / v3         |
 | **staticman**    | Staticman v1 (deprecated) |
 | **utterances**   | utterances                |
+| **giscus**       | giscus                    |
 | **custom**       | Other                     |
 
 Then add `comments: true` to each document you want comments visible on.
@@ -422,6 +423,35 @@ comments:
   utterances:
     theme: "github-light" # "github-dark"
     issue_term: "pathname"
+```
+
+#### giscus comments
+
+To use giscus you will need to [install the app](https://github.com/apps/giscus) to your GitHub repository.
+
+The next step is to go to <https://giscus.app> and fill out the desired settings. This will generate JavaScript that will provide you with the settings you will need to configure things below.
+
+You'll need to ensure you've added the following to `_config.yml`:
+
+```yaml
+repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+```
+
+**Note:** Make sure the repo is public, otherwise your readers will not be able to view the issues/comments. The [discussions feature](https://docs.github.com/en/discussions) also needs to be active on your repo.
+{: .notice--warning}
+
+To enable giscus on the front end set `comments.provider` and the other additional options.
+
+```yaml
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id              : # Shown during giscus setup at https://giscus.app
+    category_name        : # Full text name of the category
+    category_id          : # Shown during giscus setup at https://giscus.app
+    discussion_term      : # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : # '1' for enabled (default), '0' for disabled
+    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
 ```
 
 #### Static-based comments via Staticman
