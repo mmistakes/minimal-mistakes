@@ -2,6 +2,7 @@
 
 ### Bug Fixes
 
+- Fix README text for Gumshoejs license. [#3024](https://github.com/mmistakes/minimal-mistakes/pull/3024)
 - Remove `tabindex="-1"` from `input` elements in `search.html` layout to allow them to be accessible by keyboard. [#2982](https://github.com/mmistakes/minimal-mistakes/issues/2982)
 - Fix broken sidebar image in sample post. [#3013](https://github.com/mmistakes/minimal-mistakes/issues/3013)
 - Fix broken links in Upgrading documentation. [#3004](https://github.com/mmistakes/minimal-mistakes/issues/3004)
