@@ -8,7 +8,7 @@ comments: true
 sidebar:
   nav: "mainMenu"
 ---  
-*Effective C++ 제 3판 - Chapter 3 - 2*
+*Effective C++ 제 3판 - Chapter 3 - 3*
 * * *
 
 RAII 클래스 설계시에는 RAII가 관리하고 있는 자원에 직접 접근할 수 있는 방법을 마련해주는 것이 좋습니다. 스마트 포인터에서는 get()이라는 명시적 변환을 수행하는 함수가 이미 있습니다. 또는 자원에 바로 접근할 수 있도록 해주는 방법도 괜찮습니다.
