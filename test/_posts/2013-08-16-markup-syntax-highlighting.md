@@ -14,6 +14,41 @@ Syntax highlighting is a feature that displays source code, in different colors 
 
 [^1]: <http://en.wikipedia.org/wiki/Syntax_highlighting>
 
+**Code in headings:**
+
+# Heading 1 is the HTML equivalent of this: `<h1>Heading 1</h1>`
+## Heading 2 is the HTML equivalent of this: `<h2>Heading 2</h2>`
+### Heading 3 is the HTML equivalent of this: `<h3>Heading 3</h3>`
+#### Heading 4 is the HTML equivalent of this: `<h4>Heading 4</h4>`
+##### Heading 5 is the HTML equivalent of this: `<h5>Heading 5</h5>`
+###### Heading 6 is the HTML equivalent of this: `<h6>Heading 6</h6>`
+
+This is regular text. 
+
+**Code in unordered list:**
+
+- this is `code`
+    - this is `code`
+        - this is `code`
+- this is `code`
+    - this is `code`
+        - this is `code`
+
+**Code in ordered list:**
+
+This is regular text. 
+
+1. this is `code`
+    1. this is `code`
+        1. this is `code`
+1. this is `code`
+    1. this is `code`
+        1. this is `code`
+
+**Code in a quote:**
+
+> this is `code`
+
 ### GFM Code Blocks
 
 GitHub Flavored Markdown [fenced code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/) are supported. To modify styling and highlight colors edit `/_sass/syntax.scss`.

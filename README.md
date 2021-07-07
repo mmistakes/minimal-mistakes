@@ -17,6 +17,34 @@ Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building per
 
 **Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll encounter `Unknown tag 'include_cached'` errors at build.
 
+## Table of Contents
+<details>
+<summary><b>(click to expand)</b></summary>
+<!-- MarkdownTOC -->
+
+1. [Screenshots](#screenshots)
+1. [Notable features](#notable-features)
+1. [Skins \(color variations\)](#skins-color-variations)
+1. [Demo pages](#demo-pages)
+1. [Installation](#installation)
+   1. [Gem-based method](#gem-based-method)
+   1. [Remote theme method](#remote-theme-method)
+1. [Usage](#usage)
+1. [Contributing](#contributing)
+   1. [Pull Requests](#pull-requests)
+1. [Development](#development)
+1. [Credits](#credits)
+   1. [Creator](#creator)
+   1. [Icons + Demo Images:](#icons--demo-images)
+   1. [Other:](#other)
+1. [License](#license)
+
+<!-- /MarkdownTOC -->
+</details>
+
+<a id="screenshots"></a>
+## Screenshots
+
 [![Minimal Mistakes live preview][2]][1]
 
 [1]: https://mmistakes.github.io/minimal-mistakes/
@@ -24,6 +52,7 @@ Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building per
 
 ![layout examples](screenshot-layouts.png)
 
+<a id="notable-features"></a>
 ## Notable features
 
 - Bundled as a "theme gem" for easier installation/upgrading.
@@ -37,6 +66,7 @@ Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building per
 - [Google Analytics](https://www.google.com/analytics/) support.
 - UI localized text in English (default), Arabic (عربي), Brazilian Portuguese (Português brasileiro), Catalan, Chinese, Danish, Dutch, Finnish, French (Français), German (Deutsch), Greek, Hebrew, Hindi (हिंदी), Hungarian, Indonesian, Irish (Gaeilge), Italian (Italiano), Japanese, Korean, Malayalam, Myanmar (Burmese), Nepali (Nepalese), Norwegian (Norsk), Persian (فارسی), Polish, Punjabi (ਪੰਜਾਬੀ), Romanian, Russian, Slovak, Spanish (Español), Swedish, Thai, Turkish (Türkçe), and Vietnamese.
 
+<a id="skins-color-variations"></a>
 ## Skins (color variations)
 
 This theme comes in nine different skins (in addition to the default one).
@@ -53,6 +83,7 @@ This theme comes in nine different skins (in addition to the default one).
 | --- | --- | --- |
 | [![aqua skin](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive-large.png) | [![neon skin](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive-large.png) | [![plum skin](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive-large.png) |
 
+<a id="demo-pages"></a>
 ## Demo pages
 
 | Name                                        | Description                                           |
@@ -76,10 +107,12 @@ Additional sample posts are available under [posts archive][year-archive] on the
 [tags-archive]: https://mmistakes.github.io/minimal-mistakes/tags/
 [year-archive]: https://mmistakes.github.io/minimal-mistakes/year-archive/
 
+<a id="installation"></a>
 ## Installation
 
 There are three ways to install: as a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes), as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible), or forking/directly copying all of the theme files into your project.
 
+<a id="gem-based-method"></a>
 ### Gem-based method
 
 With Gem-based themes, directories such as the `assets`, `_layouts`, `_includes`, and `_sass` are stored in the theme’s gem, hidden from your immediate view. Yet all of the necessary directories will be read and processed during Jekyll’s build process.
@@ -106,6 +139,7 @@ This allows for easier installation and updating as you don't have to manage any
 
 To update the theme run `bundle update`.
 
+<a id="remote-theme-method"></a>
 ### Remote theme method
 
 Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
@@ -133,18 +167,21 @@ To install:
 
 **Looking for an example?** Use the [Minimal Mistakes remote theme starter](https://github.com/mmistakes/mm-github-pages-starter/generate) for the quickest method of getting a GitHub Pages hosted site up and running. Generate a new repository from the starter, replace sample content with your own, and configure as needed.
 
+<a id="usage"></a>
 ## Usage
 
 For detailed instructions on how to configure, customize, add/migrate content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
 
 ---
 
+<a id="contributing"></a>
 ## Contributing
 
 Found a typo in the documentation or interested in [fixing a bug](https://github.com/mmistakes/minimal-mistakes/issues)? Then by all means [submit an issue](https://github.com/mmistakes/minimal-mistakes/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
 
 For help with using the theme or general Jekyll support questions, please use the [Jekyll Talk forums](https://talk.jekyllrb.com/).
 
+<a id="pull-requests"></a>
 ### Pull Requests
 
 When submitting a pull request:
@@ -155,16 +192,19 @@ When submitting a pull request:
 
 Theme documentation and demo pages can be found in the [`/docs`](docs) if submitting improvements, typo corrections, etc.
 
+<a id="development"></a>
 ## Development
 
 To set up your environment to develop this theme, run `bundle install`.
 
-To test the theme, run `bundle exec rake preview` and open your browser at `http://localhost:4000/test/`. This starts a Jekyll server using content in the `test/` directory. As modifications are made to the theme and test site, it will regenerate and you should see the changes in the browser after a refresh.
+To test the theme, run `bundle exec rake preview` and open your browser at [`http://localhost:4001/test/`](http://localhost:4001/test/). This starts a Jekyll server using content in the `test/` directory. As modifications are made to the theme and test site, it will regenerate. Note that you will see the changes in your browser only after doing a manual page refresh.
 
 ---
 
+<a id="credits"></a>
 ## Credits
 
+<a id="creator"></a>
 ### Creator
 
 **Michael Rose**
@@ -173,12 +213,14 @@ To test the theme, run `bundle exec rake preview` and open your browser at `http
 - <https://twitter.com/mmistakes>
 - <https://github.com/mmistakes>
 
+<a id="icons--demo-images"></a>
 ### Icons + Demo Images:
 
 - [The Noun Project](https://thenounproject.com) -- Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
 - [Font Awesome](http://fontawesome.io/)
 - [Unsplash](https://unsplash.com/)
 
+<a id="other"></a>
 ### Other:
 
 - [Jekyll](http://jekyllrb.com/)
@@ -195,6 +237,7 @@ To test the theme, run `bundle exec rake preview` and open your browser at `http
 
 ---
 
+<a id="license"></a>
 ## License
 
 The MIT License (MIT)
