@@ -71,7 +71,7 @@ BLE 패킷에서 실제 유효한 데이터는 ATT Payload 영역에 저장된�
 
 ### 5.4 Effective throughput
 
-다음의 수식은 연결 주기($T_{\rm conn \it}$)와 전송 가능한 최대 패킷 수($N_{\rm max \it}$), 그리고 BLE 패킷 전송 시간의 관계를 보여준다. 
+다음의 수식은 연결 주기(`T_conn`)와 전송 가능한 최대 패킷 수(`N_max`), 그리고 BLE 패킷 전송 시간의 관계를 보여준다. 
 
 <figure style="width: 100%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble5-fig-6.png" alt="">
