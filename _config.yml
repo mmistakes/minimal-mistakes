@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Minsung, Kwon"
-  avatar           : "/_images/sam.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "sam.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Tomorrow is another day"
   location         : "Camp Casey, South Korea"
   email            :
