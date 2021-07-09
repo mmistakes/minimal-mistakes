@@ -79,7 +79,8 @@ To place a gallery add the necessary YAML Front Matter.
 
 | Name           | Required     | Description                                                                                                           |
 | -------------- | ------------ | --------------------------------------------------------------------------------------------------------------------- |
-| **url**        | Optional     | URL to link gallery image to (eg. a larger detail image).                                                             |
+| **url**        | Optional     | URL to link gallery image to (eg. a larger detail image or an external link).                                         |
+| **rel**        | Optional     | Makes it possible to specify rel-attribute for the url.                                                               |
 | **image_path** | **Required** | Full path to image eg: `/assets/images/filename.jpg`. Use absolute URLS for those hosted externally.                  |
 | **alt**        | Optional     | Alternate text for image.                                                                                             |
 | **title**      | Optional     | Title text for image. Will display as a caption in a Magnific Popup overlay when linked to a larger image with `url`. |
@@ -134,6 +135,7 @@ To add a feature row containing three content blocks with text and image, add th
 | **title**         | Optional     | Content block title.                                                                                 |                                    |
 | **excerpt**       | Optional     | Content block excerpt text. Markdown is allowed.                                                     |                                    |
 | **url**           | Optional     | URL that the button should link to.                                                                  |                                    |
+| **rel**           | Optional     | Makes it possible to specify rel-attribute for the url.                                              |                                    |
 | **btn_label**     | Optional     | Button text label.                                                                                   | `more_label` in UI Text data file. |
 | **btn_class**     | Optional     | Button style. See [utility classes]({{ "/docs/utility-classes/#buttons"                              | relative_url }}) for options.      | `btn` |
 
