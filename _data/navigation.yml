@@ -3,9 +3,9 @@ main:
   - title: "About"
     url: "/about"
   - title: "Categories"
-    url: "/_pages/categories"
+    url: "/_pages/category-archive"
   - title: "Tags"
-    url: "/tags"
+    url: "/_pages/tag-archive"
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
