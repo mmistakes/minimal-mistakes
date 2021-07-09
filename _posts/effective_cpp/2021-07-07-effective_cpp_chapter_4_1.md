@@ -124,7 +124,7 @@ std::shared_ptr<Investment> createInvestment()
 책에서는 std::tr1::shared_ptr에 대해 설명하고 있는데요. 저는 std::shared_ptr에 대해 설명하도록 하겠습니다.
 먼저 std::shared_ptr은 cross-DLL problem에 대해 안전합니다. cross-DLL problem 즉 교차 DLL 문제는 2개 이상의 동적 링크 라이브러리를 사용하는 상황에서 다른 한쪽의 new를 사용했을 때, 나머지 한쪽에 정의된 delete를 사용하여 할당한 자원을 해제할 때 발생하는 런타임 에러를 지칭하는데요. std::shared_ptr을 사용하면 아주 손쉽게 해결이 가능합니다.  
 
-또 하나 책에서는 boost의 shared_ptr을 사용하면 약간의 오버헤드는 발생하지만 Thread-safety하게 사용할 수 있다고 하는데요. std::shared_ptr은 해당 기능을 제공하지는 않지만 std::atomic을 사용하여 Thread-safety하게 사용할 수 있습니다. std::atomic에 대해서는 따로 정리해보독 하겠습니다.
+또 하나 책에서는 boost의 shared_ptr을 사용하면 약간의 오버헤드는 발생하지만 Thread-safety하게 사용할 수 있다고 하는데요. std::shared_ptr은 해당 기능을 제공하지는 않지만 std::atomic을 사용하여 Thread-safety하게 사용할 수 있습니다. std::atomic에 대해서는 따로 정리해보도록 하겠습니다.
 
 #### ***End Note***
 ***
