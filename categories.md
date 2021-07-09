@@ -1,12 +1,9 @@
 ---
 layout: categories
 title: Categories
-tags: Python, Data structure
+author_profile: true
 ---
 
-
-
-## test
 
 
 
