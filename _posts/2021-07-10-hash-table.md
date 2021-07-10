@@ -68,7 +68,7 @@ print(ord(data1[0]), hash_func(ord(data1[0])))
 
     65 68 84
     65 0
-    
+
 
 #### 3.3.2. 해쉬 테이블에 값 저장 예
 * data:value 와 같이 data와 value를 넣으면 해당 data에 대한 key를 찾아서, 해당 key에 대응하는 해쉬주소에 value를 저장
@@ -200,7 +200,7 @@ print(hash('ALata')%8)
 
     7
     7
-    
+
 
 
 ```python
@@ -285,7 +285,7 @@ print(hash('dj')%8)
 
     5
     5
-    
+
 
 
 ```python
@@ -324,7 +324,7 @@ print(hex_dig)
 ```
 
     a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
-    
+
 
  __SHA-256__
 
@@ -341,7 +341,7 @@ print(hex_dig)
 ```
 
     9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
-    
+
 
 ### 이전 예제의 키 생성 함수를 SHA-256 알고리즘으로 변경
 
@@ -397,7 +397,7 @@ print(get_key('dh')%8)
     1
     2
     2
-    
+
 
 
 ```python
@@ -416,4 +416,10 @@ read_data('dh')
 ### 7. 시간 복잡도
 * 일반적인 경우 (Collision이 없는 경우)는 O(1)
 * 최악의 경우 (Collision이 모두 발생하는 경우) O(n)
-> 해쉬 테이브르이 경우, 일반적인 경우를 기대하고 만들기 때문에, 시간 복잡도는 O(1) 이라고 말할 수 있음.
+> 해쉬 테이블은 일반적인 경우를 기대하고 만들기 때문에, 시간 복잡도는 O(1) 이라고 말할 수 있음.
+
+
+
+
+
+> Ref: https://fun-coding.org/

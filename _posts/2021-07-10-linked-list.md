@@ -224,3 +224,6 @@ linkedlist1.desc()
 ```python
 
 ```
+
+
+> Ref: https://fun-coding.org/
