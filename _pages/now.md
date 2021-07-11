@@ -9,10 +9,19 @@ The now page can get updates throughout the month, based on what I do/the progre
 
 ## Work & Life
 
-I'm changing jobs. After buying a flat, this is the second biggest piece 2021 is bringing me, and it wasn't really planned. But I did need a change, after a wonderful experience, it was just time to continue my career doing something different.
+Busy times with work, lots to ingest, lots to learn, new habits to take in.
 
-Before starting (mid of the month), I've been taking a break. We're still in pandemic times, so I'm not travelling - I stayed around Edinburgh, and it's fantastic. The weather has turned out pretty nicely, it's been sunny all day all days since the start of June and I've been thoroughly enjoying it by staying out a lot!
+## Data vizzing
 
-I've been reading, walking a lot, doing some running and exercising at the park. All in all, I've been enjoying nature and a bit of calm time for myself - which is what I like to do.
+I'm resuming some Tableau. Despite the fact that I'm continuously gasping for free time and general energies to carry out side projects, I want to improve my data vizzing skills beyond doing hand-drawing. Tableau has a great community and who knows, one day I could think of merging up data analysis skills with visual design, as I'm currently weak there.
 
-There's lots of cha these days about doing what matters to you and I have to say I realised what is it that makes me feel good: being a quiet person doing simple things. I'll try to keep this balance alive so to avoid the stress of the past.
+## Reading
+
+I'm on a bunch of things (too many as always), but generally loving these two:
+* Bill Bryson's "Notes from a small island" - it's very fun, really
+* Jules Verne's "20000 leagues under the sea" - classic I'd never read before, it's so good, full of immersive descriptions and a compelling plot!
+
+
+## Running
+
+Running has resumed, without much of a bang. I'm enjoying going for a run every now and then without putting too much importance behind it - meaning, without caring for speed and length. These days I just do it as part of several other activities rather than the one thing, I just decide on the spot (and based on the weather) what I feel like doing. I have to say though, I recently went for a run and it started pouring, I wouldn't have gone if I'd suspected it beforehand, but oh it was so liberating. Loved it.
