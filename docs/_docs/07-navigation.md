@@ -30,6 +30,7 @@ main:
     url: /collection-archive/
   - title: "External Link"
     url: https://google.com
+    target: _blank
 ```
 
 Which will give you a responsive masthead similar to this:
