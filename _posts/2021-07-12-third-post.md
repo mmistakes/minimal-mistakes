@@ -4,21 +4,23 @@ date: 2021-03-23 13:12
 categories: jekyll update
 ---
 
-##개요
+# 개요
+
 일반적인 OpenStack 설치에서, 특히 kolla-anible 또는 openstack-anible을 통해 롤아웃되는 경우 추가 구성없이 작동하는 네트워크 인터페이스가 필요하다. 그런 다음 배포 도구는 open-vswitch 또는 linux-bridge를 이러한 인터페이스에 연결한다. open-vswitch는 물리적 인터페이스가 이후 프로세스에 있는지 확인하지 않는다.(그래서 이것은 kolla에 영향을 미친다)
 
 KVM은 리눅스 커널 기반의 가상화 시스템이다. KVM 을 이용하면 네트워크도 가상화를 해주는데, 이는 KVM 의 네트워크 가상화는 Bridege 네트워크를 이용하도록 되어 있다.
 
-![가상화된 네트워킹 인프라(Ibm develop works 참조)](https://github.com/OC-JSPark/oc-jspark.github.io/blob/master/_img/%EA%B0%80%EC%83%81%ED%99%94%EB%90%9C%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9%20%EC%9D%B8%ED%94%84%EB%9D%BC.jpg)
+![가상화된 네트워킹 인프라(Ibm develop works 참조)](https://github.com/OC-JSPark/oc-jspark.github.io/tree/e3ee5c1f8f66f59fb49dbc8c57c9c5c604a8c889/_img/가상화된 네트워킹 인프라.jpg)
 
 위 그림은 KVM 하이퍼바이저의 가상 네트워킹을 보여준다. 네트워크 가상화를 하이퍼바이저내에서 이루어지다보니 가상 시스템을 모아놓은 상태에서 전체 네트워킹을 설정하고 변경하기가 쉽지가 않게 된다. 가상 네트워킹을 관리하기 좀 더 쉽게 하이퍼바이저내에서 빼내서 가상 네트워킹을 가능하도록 한다면 어떨까. OpenvSwitch 가 이것을 가능하게 해준다.
 
-##설치
-###1. 환경.
+# 설치
+
+## 1. 환경.
 
 - CentOS 7  의 KVM 환경이다. OpenvSwitch 는 2.0 버전이며 이는 OpenStack IceHouse 패키지 저장소에 있는 것을 이용했다.
 
-###2. KVM 가상화 구축.
+## 2. KVM 가상화 구축.
 
 - 다음과 같이 패키지를 설치한다.
 
@@ -86,7 +88,7 @@ KVM은 리눅스 커널 기반의 가상화 시스템이다. KVM 을 이용하�
 	- 보통 NAT 가상화 네트워크를 이용하지 않고 물리 네트워크 인터페이스와 Bridege 시켜서 사용을 한다.
 		 여기서는 NAT 이던 Bridege  던지간에 KVM 하이퍼바이저의 가상 네트워크를 이용하지 않고 OpenvSwitch  를 이용할 것이다.
 
-###3. KVM 가상 네트워크 삭제.
+## 3. KVM 가상 네트워크 삭제.
 
 - 다음과 같이 KVM 가상 네트워크를 삭제해준다.
 
@@ -95,7 +97,7 @@ KVM은 리눅스 커널 기반의 가상화 시스템이다. KVM 을 이용하�
 # virsh net-autostart --disable default //자동 시작으로 default 네트워크를 표시하지 않음
 ```
 
-###4. OpenvSwitch 설치.
+## 4. OpenvSwitch 설치.
 
 - OpenvSwitch 의 RedHat 패키지는 OpenStack Rdo 프로젝트의 저장소를 이용하면 쉽게 설치할 수 있다.
 
@@ -139,7 +141,7 @@ KVM은 리눅스 커널 기반의 가상화 시스템이다. KVM 을 이용하�
 	libcrc32c              12644  2 xfs,openvswitch
 ```
 
-###5. OpenvSwitch 설정.
+## 5. OpenvSwitch 설정.
 
 - OpenvSwitch 의 인터페이스와 물리적인 네트워크 인터페이스를 브릿지 해준다.
 
@@ -254,7 +256,7 @@ ovsbr0.xml 파일을 위와 같이 만들었다면 이것을 virsh 를 이용해
 	 ovsbr0               활성화  예           예
 ```
 
-###6. 사용.
+## 6. 사용.
 
 - virt-install 이나 virt-manager 를 이용해서 Guest 만들때에 네트워크에서 ovsbr0 를 선택하면 된다.
 
