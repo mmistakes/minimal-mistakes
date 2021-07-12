@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko_KR" #"en-US" 
-title                    : "박준성 개발 blog"
+title                    : "junsung Park tech blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "박준성"
-description              : "박준성 개발 blog"
+description              : "jsPark tech blog"
 url                      : "https://oc-jspark.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -69,6 +69,7 @@ bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
 
+"""
 # Social Sharing
 twitter:
   username               :
@@ -77,6 +78,7 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
+"""
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -94,9 +96,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "박준성"
+  name             : "JunSung Park"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Gitbub.io.Blog."
+  bio              : "Oportunity Cost-JS Park.Gitbub.io.Blog."
   location         : "Seoul, Korea"
   email            : "bti8coc@gmail.com"
   links:
@@ -120,6 +122,7 @@ author:
       # url: "https://instagram.com/"
 
 # Site Footer
+
 footer:
   links:
     - label: "Twitter"
