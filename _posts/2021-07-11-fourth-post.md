@@ -5,7 +5,7 @@ categories: jekyll update
 tags: openstack
 ---
 
-#conceptual architecture openstack
+# conceptual architecture openstack
 ![openstack017](/assets/images/017.png)
 
 # 구성도
