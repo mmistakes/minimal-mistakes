@@ -67,11 +67,14 @@ If all goes well, running `npm run build:js` will compress/concatenate `_main.js
 
 ## Debugging
 The minified Javascript is harder to debug in the browser than the raw source. To stop the minification and just bundle all the Javascript as-is; open up `package.json` and edit the value `scripts.uglify` from:
+
 ```json
   "scripts": {
     "uglify": "uglifyjs [...] -c -m -o assets/js/main.min.js",
 ```
+
 to simply concatenating the files:
+
 ```json
   "scripts": {
     "uglify": "cat [...] > assets/js/main.min.js",
