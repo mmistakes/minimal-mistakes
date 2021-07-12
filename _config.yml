@@ -19,7 +19,7 @@ locale                   : "ko_KR" #"en-US"
 title                    : "junsung Park tech blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "박준성"
+name                     : "junsung Park"
 description              : "jsPark tech blog"
 url                      : "https://oc-jspark.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -98,7 +98,7 @@ analytics:
 author:
   name             : "JunSung Park"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Oportunity Cost-JS Park.Gitbub.io.Blog."
+  bio              : "인공지능, devops tech blog"
   location         : "Seoul, Korea"
   email            : "bti8coc@gmail.com"
   links:
