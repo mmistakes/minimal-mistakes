@@ -1,7 +1,11 @@
 ---
 title: "KVM의 Bridege를 OVS-switch로 바꾸기"
 date: 2021-03-23 13:12
-categories: jekyll update
+categories: openstack
+tags:
+  - openstack
+  - open-vswitch
+  - kvm
 ---
 
 # 개요
