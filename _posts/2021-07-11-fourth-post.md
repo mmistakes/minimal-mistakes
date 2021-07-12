@@ -5,6 +5,8 @@ categories: jekyll update
 tags: openstack
 ---
 
+#conceptual architecture openstack
+![openstack017](/assets/images/017.png)
 
 # 구성도
 ##  Contoller Node / Compute Node 하드웨어 구성도
