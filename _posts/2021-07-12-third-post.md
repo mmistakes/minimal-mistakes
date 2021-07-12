@@ -1,5 +1,5 @@
 ---
-title: "KVM의 Bridege를 OVS-switch로 바꾸기!"
+title: "KVM의 Bridege를 OVS-switch로 바꾸기"
 date: 2021-03-23 13:12
 categories: jekyll update
 ---
@@ -8,7 +8,7 @@ categories: jekyll update
 
 KVM은 리눅스 커널 기반의 가상화 시스템이다. KVM 을 이용하면 네트워크도 가상화를 해주는데, 이는 KVM 의 네트워크 가상화는 Bridege 네트워크를 이용하도록 되어 있다.
 
-![가상화된 네트워킹 인프라](./img1/가상화된 네트워킹 인프라.jpg)
+![가상화된 네트워킹 인프라](./img/가상화된 네트워킹 인프라.jpg)
 
 Figure1. 가상화된 네트워킹 인프라.(Ibm develop works 참조)
 
