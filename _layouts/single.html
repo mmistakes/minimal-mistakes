@@ -26,10 +26,6 @@ layout: default
   <ul class="hidden">
     <li>These list items are microformat entries and are hidden from view.</li>
     <li class="u-url">{{ page.url | absolute_url }}</li>
-    {% if author.name %}<li><a class="p-author h-card"><img class="u-photo" src="{{ author.avatar | absolute_url }}">{{ author.name | markdownify | strip_html | strip_newlines | escape_once }}</a></li>{% endif %}
-    {% if page.excerpt %}<li class="p-summary">{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}</li>{% endif %}
-    {% if page.date %}<li class="dt-published">{{ page.date | date_to_xmlschema }}</li>{% endif %}
-    {% if page.last_modified_at %}<li class="dt-updated">{{ page.last_modified_at | date_to_xmlschema }}</li>{% endif %}
   </ul>
 
     <div class="page__inner-wrap">
