@@ -1,5 +1,5 @@
 ---
-title: "kubernetes Architecture"
+title: "kubernetes 설치전 점검 환경"
 date: 2021-01-15 17:12
 categories: jekyll update
 tags: kubernetes
