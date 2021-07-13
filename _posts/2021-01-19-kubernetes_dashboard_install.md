@@ -2,9 +2,10 @@
 layout: post
 title: "kubernetes dashboard install"
 description: "dashboard install"
+comments: true
 date: 2021-01-19 17:12
-categories: kubernetes
-tags: kubernetes
+categories: devops
+tags: kubernetes,devops
 ---
 
 # kubernetes dashboard 설치
