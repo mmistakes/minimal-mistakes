@@ -277,6 +277,8 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+      mathjax: true
+      sidebar_main: true

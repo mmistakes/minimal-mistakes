@@ -1,3 +1,5 @@
+<!--
+
 {% case site.category_archive.type %}
   {% when "liquid" %}
     {% assign path_type = "#" %}
@@ -17,3 +19,9 @@
     </span>
   </p>
 {% endif %}
+
+
+-->
+
+{% assign posts = site.categories.Cpp %}
+{% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
