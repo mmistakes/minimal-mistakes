@@ -68,7 +68,7 @@ layout: default
       <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
       <div class="grid__wrapper">
         {% for post in site.related_posts limit:4 %}
-          {% include archive-single2.html type="grid" %}
+          {% include archive-single.html type="grid" %}
         {% endfor %}
       </div>
     </div>
@@ -81,7 +81,7 @@ layout: default
           {% if post.id == page.id %}
             {% continue %}
           {% endif %}
-          {% include archive-single2.html type="grid" %}
+          {% include archive-single.html type="grid" %}
         {% endfor %}
       </div>
     </div>
