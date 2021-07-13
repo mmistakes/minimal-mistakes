@@ -1,7 +1,7 @@
 ---
 title: "devsatck install in multi node"
 date: 2020-06-29 13:12
-categories: jekyll update
+categories: openstack
 tags: openstack
 ---
 
