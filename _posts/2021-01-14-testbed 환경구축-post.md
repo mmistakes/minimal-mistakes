@@ -1,5 +1,6 @@
 ---
 title: "kubernetes Architecture"
+date: 2021-01-11 13:12
 categories: jekyll update
 tags: kubernetes
 ---
