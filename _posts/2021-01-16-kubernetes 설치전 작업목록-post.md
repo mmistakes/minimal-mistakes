@@ -48,7 +48,7 @@ $ sudo service ntp restart
 $ sudo ntpq -p
 ~~~
 ###	컨테이너 런타임 설치(Docker)
-![CRI 설치](https://kubernetes.io/docs/setup/production-environment/container-runtimes/#docker)
+참조 사이트 : https://kubernetes.io/docs/setup/production-environment/container-runtimes/#docker
 
 ~~~
 # apt가 HTTPS로 리포지터리를 사용하는 것을 허용하기 위한 패키지 설치
