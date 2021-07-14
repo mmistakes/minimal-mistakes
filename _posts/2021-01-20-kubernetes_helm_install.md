@@ -32,26 +32,26 @@ $ ./get_helm.sh
 $ helm version    
 ~~~
 
-![helm_001.png](/assets/images/kubernetes/helm/helm_001.png.png)
+![helm_001](/assets/images/kubernetes/helm/helm_001.png)
 
 ### Helm chart repository 추가
 ~~~
 $ helm repo add stable https://charts.helm.sh/stable
 ~~~
 
-![helm_002.png](/assets/images/kubernetes/helm/helm_002.png.png)
+![helm_002](/assets/images/kubernetes/helm/helm_002.png)
 
 ### Chart list 출력
 ~~~
 $ helm search repo stable
 ~~~
 
-![helm_003.png](/assets/images/kubernetes/helm/helm_003.png.png)
+![helm_003](/assets/images/kubernetes/helm/helm_003.png)
 
 ### Chart update
 ~~~
 $ helm repo update
 ~~~
 
-![helm_004.png](/assets/images/kubernetes/helm/helm_004.png.png)
+![helm_004](/assets/images/kubernetes/helm/helm_004.png)
 
