@@ -1,10 +1,9 @@
 ---
-layout: post
 title: "devsatck install in multi node"
 description: "multi node에 devstack install"
 comments: true
 date: 2020-06-29 13:12
-categories: devops
+categories: openstack
 tags: openstack,devops
 ---
 
