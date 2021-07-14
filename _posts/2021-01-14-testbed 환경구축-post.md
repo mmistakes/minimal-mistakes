@@ -1,8 +1,9 @@
 ---
 title: "kubernetes testbed 환경구축"
 date: 2021-01-11 13:12
-categories: jekyll update
-tags: kubernetes
+categories: kubernetes
+tags: kubernetes,devops
+comments: true
 ---
 
 # Architecture

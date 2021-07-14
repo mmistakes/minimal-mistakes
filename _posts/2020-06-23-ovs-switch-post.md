@@ -3,6 +3,7 @@ title: "KVM의 Bridege를 OVS-switch로 바꾸기"
 date: 2020-06-23 13:12
 categories: openstack
 tags: openstack,devops
+comments: true
 ---
 
 # 개요

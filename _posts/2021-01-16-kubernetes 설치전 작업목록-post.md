@@ -1,8 +1,9 @@
 ---
 title: "kubernetes 설치전 작업목록"
 date: 2021-01-16 17:12
-categories: jekyll update
-tags: kubernetes
+categories: kubernetes
+tags: kubernetes,devops
+comments: true
 ---
 
 # kubernetes 설치전 OS 필수설치 목록

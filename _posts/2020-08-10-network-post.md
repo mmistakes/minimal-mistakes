@@ -1,8 +1,9 @@
 ---
 title: "Cloud에서 알아야할 network"
 date: 2020-08-10 13:12
-categories: jekyll update
-tags: openstack
+categories: openstack
+tags: openstack,devops
+comments: true
 ---
 
 # Fixed Ip Range
