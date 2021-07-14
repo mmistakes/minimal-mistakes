@@ -9,15 +9,9 @@ tags: kubernetes,devops
 ---
 # Prometheus
 
-Helm은 쿠버네티스의 package managing tool이다.
-크게 세가지 컨셉을 가지고 있다
--	Chart : Helm package. app을 실행시키기위한 모든 리소스가 정의되어있다
-  - Ex) Apt dpkg, Yum RPM파일과 비슷
--	Repository : chart들이 공유되는 공간. 
-  - Ex) docker hub
--	Release : 쿠버네티스 클러스터에서 돌아가는 app들은(chart instance) 모두 고유의 release 버전을 가지고 있다
+![prometheus_011](/assets/images/kubernetes/prometheus/prometheus_011.png)
 
-- 정리) helm은 chart를 쿠버네티스에 설치하고, 설치할때마다 release버전이 생성되며, 새로운 chart를 찾을때에는 Helm chart repository에서 찾을 수 있다.
+Prometheus는 시계열 데이터베이스를 기반으로 구축된 오픈 소스 서비스 모니터링 시스템으로, 쿼리, 그래프 및 기본 제공 경고를 지원하는 것 외에도 데이터를 수신하고 저장할 수 있다. HTTP를 통해 지표를 요청하기 위해 대상 엔드포인트에 연결하는 Prometheus는 고유한 시계열의 일부로 식별하는 이름 및/또는 태그로 지표를 정의할 수 있는 다차원 데이터 모델을 제공한다. 오픈 소스 Prometheus 메트릭의 기본 보존 기간은 15일이며, 더 길게 보관하고 싶다면 명령줄에 희망하는 기간을 지정해주거나, 원격 DB에 저장해야 한다. 그런 다음 Prometheus 쿼리 언어(PromQL)를 사용하여 메트릭을 탐색하고 간단한 그래프를 그릴 수 있다.
 
 
 # Prometheus Installation
