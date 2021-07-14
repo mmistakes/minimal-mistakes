@@ -1,5 +1,6 @@
 ---
 title: "OSU XAI After Action Review for AI (AARfAI) - Demo Video"
+url: https://drive.google.com/file/d/1h1F-in-t3T9HCI0akPrVDNXqEdRRvHEf/view?usp=sharing
 excerpt: "Our visual analytics tool, enhanced with an AARfAI workflow, allows domain experts to navigate an AI's reasoning process in a systematic way to quickly find faults and convey actionable information and insights to engineers."
 tags:
   - Analytics
