@@ -6,7 +6,7 @@ tags:
   - Analytics
   - Autonomy
   - Reinforcement Learning
-  - Explanation Framework   
+  - Explanation Framework
 submission_details:
   resources:
     papers:
@@ -20,6 +20,15 @@ submission_details:
         url: http://web.engr.oregonstate.edu/~burnett/Reprints/iui20-AARAI.pdf
       - title:Explaining Reinforcement Learning to Mere Mortals: An Empirical Study
         url: http://web.engr.oregonstate.edu/~burnett/Reprints/ijcai-2019-XAIinRL-cameraReady.pdf
+authors:
+  - Jed Irvine, Anita Ruangrotaskun, Delyar Tabatabai, Zeyad Shureih, Kin-Ho Lam, Jonathan Dodge, Andrew Anderson, Minsuk Kahng, Alan Fern, and Margaret Burnett
+
+organizations:
+  - Oregon State University
+    
+point_of_contact:
+  name: Jed Irvine
+  email: jed.irvine@oregonstate.edu
 ---
 
 ## Overview
