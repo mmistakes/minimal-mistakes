@@ -23,7 +23,7 @@ The path we followed to the end:
 * CNNs: Finally, we saw how does Convolutional Neural Networks work with an example of VGG.
 * Applications: In this part and for final evaluation, mentees were asked to find a problem that they can solve using computer vision algorithms and create a solution.
 
-*Note: Implementation of all the algorithms was done in Python with Numpy.
+Note: Implementation of all the algorithms was done in Python with Numpy.
 
 
 ## Resources
