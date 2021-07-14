@@ -1,7 +1,7 @@
 ---
 title: "SELinux에서 step by step 방식으로 openstack 설치"
 date: 2020-07-13 13:12
-categories: jekyll update
+categories: openstack
 tags: openstack
 ---
 
