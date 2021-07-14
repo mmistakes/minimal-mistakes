@@ -102,12 +102,13 @@ gallery:
 
 And then drop-in the gallery include in the body where you'd like it to appear.
 
-| Include Parameter | Required | Description                                                                                                                                                       | Default                                                                      |
-| ----------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| **id**            | Optional | To add multiple galleries to a document uniquely name them in the YAML Front Matter and reference in `{% raw %}{% include gallery id="gallery_id" %}{% endraw %}` | `gallery`                                                                    |
-| **layout**        | Optional | Layout type. 2 column: `half`, 3 column: `third`, single column: `''` (blank)                                                                                     | Determined by gallery size. Two items: `half`, three or more items: `third`. |
-| **class**         | Optional | Use to add a `class` attribute to the surrounding `<figure>` element for additional styling needs.                                                                |                                                                              |
-| **caption**       | Optional | Gallery caption description. Markdown is allowed.                                                                                                                 |                                                                              |
+| Include Parameter | Required | Description                                                                                                                                                                   | Default                                                                      |
+| ----------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **id**            | Optional | To add multiple galleries to a document uniquely name them in the YAML Front Matter and reference in `{% raw %}{% include gallery id="gallery_id" %}{% endraw %}`             | `gallery`                                                                  |
+| **images**        | Optional | You can also add multiple galleries by supplying an array with images specified in YAML and reference in `{% raw %}{% include gallery images=page.gallery_id %}{% endraw %}`  |                                                                     |
+| **layout**        | Optional | Layout type. 2 column: `half`, 3 column: `third`, single column: `''` (blank)                                                                                                 | Determined by gallery size. Two items: `half`, three or more items: `third`. |
+| **class**         | Optional | Use to add a `class` attribute to the surrounding `<figure>` element for additional styling needs.                                                                            |                                                                              |
+| **caption**       | Optional | Gallery caption description. Markdown is allowed.                                                                                                                             |                                                                              |
 
 ```liquid
 {% raw %}{% include gallery caption="This is a sample gallery with **Markdown support**." %}{% endraw %}
