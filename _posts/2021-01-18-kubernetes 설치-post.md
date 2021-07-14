@@ -1,8 +1,8 @@
 ---
 title: "kubernetes 설치"
 date: 2021-01-18 17:12
-categories: jekyll update
-tags: kubernetes
+categories: kubernetes
+tags: kubernetes,devops
 ---
 
 # kubernetes 설치
