@@ -22,7 +22,8 @@ The path we followed to the end:
 * ML for Vision: Here, we deal with some basic Neural Networks and models like linear Classifiers, Perceptrons, MLP, and talk about convolutions(also covered in image processing part), various Loss Functions, backpropagation algorithm, Gradient Descent(Batch and Stochastic) and their usages in the context of Computer Vision.
 * CNNs: Finally, we saw how does Convolutional Neural Networks work with an example of VGG.
 * Applications: In this part and for final evaluation, mentees were asked to find a problem that they can solve using computer vision algorithms and create a solution.
-Note: Implementation of all the algorithms was done in Python with Numpy.
+
+*Note: Implementation of all the algorithms was done in Python with Numpy.
 
 
 ## Resources
