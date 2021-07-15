@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/50482490/multiple-definition-of-namespace-function
