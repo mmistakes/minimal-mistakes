@@ -1,6 +1,6 @@
 ---
-title: Cross Validated
-permalink: /projects-2021/cross-validated
+title: Topics in Analysis: A Tour of Measure Theory and Functional Analysis
+permalink: /projects-2021/topics-in-analysis
 toc: true
 layout: single
 author_profile: false
