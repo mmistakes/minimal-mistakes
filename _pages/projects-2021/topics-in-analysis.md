@@ -1,5 +1,5 @@
 ---
-title: Topics in Analysis: A Tour of Measure Theory and Functional Analysis
+title: Cross 
 permalink: /projects-2021/topics-in-analysis
 toc: true
 layout: single
