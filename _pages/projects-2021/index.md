@@ -15,6 +15,7 @@ And join the Stamatics discord server, to interact with the mentors and any othe
 The project would be of immense help to many as probability theory has wide applications ranging from its use in the corporate world to the realm of research in almost any field. Familiarity with probability theory helps theoreticians and experimentalists alike.  
 * **Expected Duration :** 2 months  
 * **Expected Weekly Commitment:** 4-5 hours  
+* **Showcase :** [here](https://stamatics.github.io//projects-2021/computer-vision-a-classic-and-modern-approach) 
 
 ## 2 - Communicating Mathematics  
 * **Mentors:** Harshit Bisht (Harshit Bisht#7766)  
