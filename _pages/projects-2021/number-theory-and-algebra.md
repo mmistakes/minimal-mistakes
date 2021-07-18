@@ -12,7 +12,8 @@ The goal of this project is to give a gentle introduction to Modern Number theor
 
 ## Mentors
 * Ajay Prajapati
-* Hargun Preet Singh Bhatia
+* Hargun Preet Singh Bhatia  
+
 ## Learning Roadmap
 1st & 2nd week: We covered the very basics of linear algebra, focussing mainly on the concept of a vector space, basis, dimension, etc.
 
