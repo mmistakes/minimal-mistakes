@@ -16,6 +16,7 @@ The other component would be implementing some of the algorithms in code as we s
 * Yatharth Goswami
 * Vivek Kumar Singh 
 * Rohan Baijal
+
 ## Learning Roadmap
 Number Theory 
 
