@@ -11,7 +11,8 @@ author_profile: false
 The goal of this project was to familiarize the students with the basics of mathematical finance - a field of applied mathematics concerned with the modelling of financial markets. 
 The field of mathematical finance is broadly categorised into two branches :-
 
-1) Risk & Portfolio Management. 
+1) Risk & Portfolio Management
+\
 2) Derivatives Pricing Theory. 
 
 
@@ -28,8 +29,10 @@ Pre-requisites: None
 
 ## Learning Roadmap
 1) Basics - In the first part of the project, the student will learn the basics of statistics and coding with Python which are requisite for learning the further topics in the project.  
+\
 2) Risk & Portfolio Management - The students studied the foundational works of Markowitz and Sharpe here and learnt how to plot the Markowitz efficient 
 frontier for a portfolio of stocks given their historical returns. 
+\
 3) Derivatives Pricing Theory - In the final part of the project, the students learnt about Stochastic processes (particularly Markov chains) and studied how these can be used to model European-style options using the Black-Scholes formula.    
 
 ## Resources
