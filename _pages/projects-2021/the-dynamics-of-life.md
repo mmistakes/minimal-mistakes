@@ -17,6 +17,8 @@ We wish to discover aspects of mathematics widely used in dynamical systems with
 Books:  
   1) Nonlinear Dynamics and Chaos, Steven Strogatz  
   2) Dynamical Systems in Neuroscience, Eugene Izhikevich  
+
+
 Pre Course:  
   1) https://www.youtube.com/watch?v=d0Z8wLLPNE0 (2min)  
   2) https://www.youtube.com/watch?v=fDek6cYijxI (13min)  
