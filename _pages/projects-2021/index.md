@@ -66,6 +66,7 @@ Some arbitrary examples:
   This project expects you to be familiar with some programming language (preferable C++) and a basic knowledge of algorithms.  
 * **Expected Duration :** 2 months  
 * **Expected Weekly Commitment:** 5 hrs  
+* **Showcase :** [here](https://stamatics.github.io/projects-2021/algorithms-based-on-maths)
 
 ## 6 - Mathematical Finance & Stochastic Processes  
 * **Mentors:** Aditya Prakash Singh (adityapi314#1095), Shaurya Jain (shaurya#9116)
