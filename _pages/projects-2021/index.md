@@ -15,7 +15,7 @@ And join the Stamatics discord server, to interact with the mentors and any othe
 The project would be of immense help to many as probability theory has wide applications ranging from its use in the corporate world to the realm of research in almost any field. Familiarity with probability theory helps theoreticians and experimentalists alike.  
 * **Expected Duration :** 2 months  
 * **Expected Weekly Commitment:** 4-5 hours  
-* **Showcase :** [here](https://stamatics.github.io//projects-2021/computer-vision-a-classic-and-modern-approach) 
+* **Showcase :** [here](https://stamatics.github.io/projects-2021/probability-and-statistics-from-classical-to-bayesian) 
 
 ## 2 - Communicating Mathematics  
 * **Mentors:** Harshit Bisht (Harshit Bisht#7766)  
@@ -43,12 +43,14 @@ Some arbitrary examples:
   3. Dynamical Systems in Neuroscience, Eugene Izhikevich  
 * **Expected Duration :** 8 weeks  
 * **Expected Weekly Commitment:** 4  
+* **Showcase :** [here](https://stamatics.github.io/projects-2021/the-dynamics-of-life) 
 
 ## 4 - Number Theory and Algebra  
 * **Mentors:** Ajay Prajapati (Ajay Prajapati#6448), Hargun Preet Singh Bhatia (Hargun#7217)  
 * **Description :** The goal of this project is to give a gentle introduction to Modern Number theory. We will cover basic topics like Divisibility, modular arithmetic, Euler's theorem, fundamental theorem of arithmetic, quadratic residues and Gauss's famous Quadratic reciprocity law. Along the way, we will introduce several key algebraic objects like groups, rings and fields. If time permits, we will talk about some well known problems in the field like Dirichlet's theorem for primes in Arithmetic progressions and the Riemann hypothesis.  
 * **Expected Duration :** 2-3 months  
-* **Expected Weekly Commitment:** 3-4 hours  
+* **Expected Weekly Commitment:** 3-4 hours 
+* **Showcase :** [here](https://stamatics.github.io/projects-2021/number-theory-and-algebra)  
 
 ## 5 - Algorithms based on maths  
 * **Mentors:** Utkarsh Gupta (Pegasus#3765), Nitin Garg (ZeroDeaths#3886), Yash Gidwani (yashg#3927)  
@@ -93,6 +95,7 @@ Some arbitrary examples:
   For implementation, we'll use opencv, numpy in the starting. At later stages we'll include pytorch.    
 * **Expected Duration :** 3 Months  
 * **Expected Weekly Commitment:** 6-7 hrs  
+* **Showcase :** [here](https://stamatics.github.io/projects-2021/computer-vision-a-classic-and-modern-approach) 
 
 ## 8 - Introduction to Fourier Analysis of Boolean Functions  
 * **Mentors:** Mohd Talib Siddiqui (arrow#4554)  
@@ -101,6 +104,7 @@ However, instead of their applications we will analyse the properties boolean fu
 We will be going over Fourier expansion of boolean functions in detail. We will touch upon property testing and introduce the procedure of linearity testing of boolean functions in short. We will mainly discuss on the Fourier support and dimension of boolean functions and see various bounds involving the same. We may include discussions on Parity Decision Trees as well depending on the interest shown by the mentees.
 * **Expected Duration :** 5-8 weeks  
 * **Expected Weekly Commitment :** 2-4  
+* **Showcase :** [here](https://stamatics.github.io/projects-2021/introduction-to-fourier-analysis-of-boolean-functions) 
 
 ## 9 - Counting is fun  
 * **Mentors:** Farzan Byramji (geekotechy#7312)  
@@ -121,6 +125,7 @@ We will be going over Fourier expansion of boolean functions in detail. We will 
 * **Description :** Realistic rendering techniques in computer graphics usually boil down to solving an integral equation called “the rendering equation”, which takes into account various physical properties of light. We’ll present the rendering equation in its original form and introduce radiometry to see how the rendering equation captures most physical phenomena under the assumptions of geometric optics. We’ll then see why finding an analytical solution can be difficult, develop a naive algorithm and finally introduce Monte Carlo methods that modern renderers like Pixar’s RenderMan or Blender’s Cycles are based on.  
 * **Expected Duration :** 6-8 weeks  
 * **Expected Weekly Commitment:** 3-4 hours  
+* **Showcase :** [here](https://stamatics.github.io/projects-2021/physically-based-rendering) 
 
 ## 12 - Introduction to Formal Logic and Computation  
 * **Mentors:** Udit Narayan Pandey (UNP#0155), Dawood Bin Mansoor (rockstar2514#0635), Ayush Kumar  
@@ -128,6 +133,7 @@ We will be going over Fourier expansion of boolean functions in detail. We will 
 We would be covering axiomatisaion, rules of inference, syntactic and semantic consequence, Models of a Theory, Consistency Soundness, Completeness, First Order Theories and after covering Computation a peek into Godel's Incompletness Theorem, for Computation part we will be covering the notion of computability, formal languages, Models of computation(turing machines), Church turing hypothesis, decidability, and brief overview of complexity.  
 * **Expected Duration :** 7 weeks  
 * **Expected Weekly Commitment:** 4-6 Hrs  
+* **Showcase :** [here](https://stamatics.github.io/projects-2021/introduction-to-formal-logic-and-computation) 
 
 ## 13 - Numbers Made Dumber  
 * **Mentors:** Yatharth Goswami (alpha_hacker#3464), Vivek Kumar Singh (bb8#2778), Rohan Baijal (rohanblueboybaijal#5838)  
@@ -138,6 +144,7 @@ We would be covering axiomatisaion, rules of inference, syntactic and semantic c
   The other component would be implementing some of the algorithms in code as we study them. This would give a more hands on feel and an idea about using it in applications.  
 * **Expected Duration :** 3-4 months  
 * **Expected Weekly Commitment:** 6-8 hrs  
+* **Showcase :** [here](https://stamatics.github.io/projects-2021/numbers-made-dumber) 
 
 ## 14 - Generating rational distance sets on a parabola  
 * **Mentors:** Sayak Bhattacharjee (saybha_00#0654)  
@@ -155,12 +162,14 @@ A rational distance set is a set of points with each of its pairwise distances t
   Not strictly necessary pre-requisite knowledge: Parallel computing, real analysis.  
 * **Expected Duration :** about 2 months (min.)  
 * **Expected Weekly Commitment:** 5+  
+* **Showcase :** [here](https://stamatics.github.io/projects-2021/generating-rational-distance-sets-on-a-parabola) 
 
 ## 15 - Quantum Algorithms  
 * **Mentors:** Rishabh Kothary (rishk76#7995)  
 * **Description :** Quantum Algorithms is a hot research area, and quantum algorithms like Shor's factorization algorithm have threatened the current state-of-the-art cryptosystems like the RSA. Shor's algorithm has brought an exponential speedup to the integer factorization problem compared to its classical counterpart. It has forced the cryptography community to build cryptosystems resilient to attacks from quantum computers. Our main aim is to understand the quantum computation model and learn about Shor's factorization algorithm in the project. If time permits, we could explore algorithms like Grover's Search algorithm and Simon's Algorithm and their applications in breaking cryptosystems. Not many pre-requisites are assumed; a basic understanding of Linear Algebra should suffice. However, the pre-requisites are not very strict and can be covered during the project if interested.  
 * **Expected Duration :** 2-3 months  
 * **Expected Weekly Commitment:** 8-10 hrs  
+* **Showcase :** [here](https://stamatics.github.io/projects-2021/quantum-algorithms) 
 
 ## 16 - Introduction to Metric Spaces and Topology  
 * **Mentors:** Kushlam Srivastava (Kuchlam#9851)  
