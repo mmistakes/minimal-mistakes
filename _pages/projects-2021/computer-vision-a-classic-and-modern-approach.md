@@ -27,6 +27,6 @@ Note: Implementation of all the algorithms was done in Python with Numpy.
 
 
 ## Resources
-All the resources we used can be accessed using this link: https://www.notion.so/Computer-Vision-A-Classic-and-Modern-approach-93006fe5d79f49be9948d9d845c4367d
+All the resources we used can be accessed using this link: [here](https://www.notion.so/Computer-Vision-A-Classic-and-Modern-approach-93006fe5d79f49be9948d9d845c4367d)
 
 
