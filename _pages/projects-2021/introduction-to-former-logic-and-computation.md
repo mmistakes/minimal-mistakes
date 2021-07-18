@@ -1,6 +1,6 @@
 ---
-title: Introduction to Former Logic and Computation
-permalink: /projects-2021/introduction-to-former-logic-and-computation
+title: Introduction to Formal Logic and Computation
+permalink: /projects-2021/introduction-to-formal-logic-and-computation
 toc: true
 layout: single
 author_profile: false
