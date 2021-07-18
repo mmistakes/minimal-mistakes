@@ -25,6 +25,7 @@ The participants worked on a combined project report which can be found [here](h
 6.  At the end the concepts of compactness and connectedness in topological spaces were introduced.  
 7.  This was followed by presentations on some specific topics by each of the participants.  
 Their presentation slides can be found [here](https://drive.google.com/drive/folders/1fHoj8SexcNrbNp6_qwBW1Prt69gyQRGg?usp=sharing) and their final project reports can be found [here](https://drive.google.com/drive/folders/1m6l56I2eRax6fTsFuj2p-PWf9OkjIuAR?usp=sharing).
+
 ## Resources
 1. Introduction to Topology and Modern Analysis by G F Simmons.  
 2. M.A. Armstrong - Basic Topology.
