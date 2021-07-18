@@ -36,7 +36,7 @@ References:
 [1] G. Campbell, Points on y = x^2 at rational distance, Math. Comp., 73 (2004), 2093–2108.  
 [2] A. Choudhry, Points at rational distances on a parabola, Rocky Mountain Journal of Mathematics 36 (2006) 413-424.  
 [3] J. Solymosi, F. de Zeeuw, On a question of Erdos and Ulam, Discrete and Computational Geometry 43 (2010) 393-401.  
-[4] T. Tao, The Erdos-Ulam problem, varieties of general type, and the Bombieri-Lang conjecture, [Online]. Available: https://terrytao.wordpress.com/tag/erdos-ulam-problem/, 2015.  
+[4] T. Tao, The Erdos-Ulam problem, varieties of general type, and the Bombieri-Lang conjecture, [Online](https://terrytao.wordpress.com/tag/erdos-ulam-problem/), 2015.  
 [5] E. K. Hinson, On the distribution of Pythagorean triangles, The Fibonacci Quarterly 30 (1992) 335{338.  
 
 
