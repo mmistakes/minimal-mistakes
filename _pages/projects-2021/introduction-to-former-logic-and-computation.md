@@ -39,6 +39,6 @@ In the second half, we started with the basics and went on to study the two clas
 For the logic part we used:The reading material was from Dr. Mohua Bannerjee’s Lectures in the course MTH302.
 For the computation part: We prepared pdf lecture notes and exercises based on the content from the books- Michael Sipser’s Introduction to the Theory of Computation and Arora, Barak’s Computational Complexity: A modern Approach. We also input some ideas of our own.
 
-The resources can be accessed from the resources folder : https://drive.google.com/drive/folders/1DiT3biS2dCILjg97Kty1MNDkCPY45pyE?usp=sharing
+The resources can be accessed from the resources folder : [here](https://drive.google.com/drive/folders/1DiT3biS2dCILjg97Kty1MNDkCPY45pyE?usp=sharing)
 
 
