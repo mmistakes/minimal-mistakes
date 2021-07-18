@@ -36,4 +36,5 @@ frontier for a portfolio of stocks given their historical returns.
 3) Derivatives Pricing Theory - In the final part of the project, the students learnt about Stochastic processes (particularly Markov chains) and studied how these can be used to model European-style options using the Black-Scholes formula.    
 
 ## Resources
-All the learning resources can be found at the following GitHub [link](https://github.com/shau0000/Mathematical-Finance-and-Stochastic-Process)
+All the learning resources can be found at the following [GitHub link](https://github.com/shau0000/Mathematical-Finance-and-Stochastic-Process).
+
