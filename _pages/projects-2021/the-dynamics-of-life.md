@@ -20,11 +20,11 @@ Books:
 
 
 Pre Course:  
-  1) https://www.youtube.com/watch?v=d0Z8wLLPNE0 (2min)  
-  2) https://www.youtube.com/watch?v=fDek6cYijxI (13min)  
-  3) https://www.youtube.com/watch?v=r_5shyQGIeA (5min)  
-  4) https://www.youtube.com/watch?v=gB9n2gHsHN4 (20min) -- optional  
+  1) [2 min](https://www.youtube.com/watch?v=d0Z8wLLPNE0)   
+  2) [13 min](https://www.youtube.com/watch?v=fDek6cYijxI)    
+  3) [5 min](https://www.youtube.com/watch?v=r_5shyQGIeA)  
+  4) [(20min) -- optional](https://www.youtube.com/watch?v=gB9n2gHsHN4)   
 
-Colab for Bifurcation: https://colab.research.google.com/drive/1hU7pG8oMwgG26k5_dz3qUPJKZdDyhn5P?usp=sharing
+[Colab for Bifurcation](https://colab.research.google.com/drive/1hU7pG8oMwgG26k5_dz3qUPJKZdDyhn5P?usp=sharing) 
 
 
