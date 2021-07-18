@@ -39,14 +39,14 @@ We felt it might be good to do some problem solving so that you get a feel about
 
 Here are the links for practice 
 
-https://cp-algorithms.com/algebra/euclid-algorithm.html
-https://cp-algorithms.com/algebra/extended-euclid-algorithm.html
-https://cp-algorithms.com/algebra/linear-diophantine-equation.html
-https://cp-algorithms.com/algebra/fibonacci-numbers.html
-https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html
-https://cp-algorithms.com/algebra/phi-function.html
-https://cp-algorithms.com/algebra/divisors.html
-https://cp-algorithms.com/algebra/chinese-remainder-theorem.html
+https://cp-algorithms.com/algebra/euclid-algorithm.html  
+https://cp-algorithms.com/algebra/extended-euclid-algorithm.html   
+https://cp-algorithms.com/algebra/linear-diophantine-equation.html  
+https://cp-algorithms.com/algebra/fibonacci-numbers.html  
+https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html  
+https://cp-algorithms.com/algebra/phi-function.html  
+https://cp-algorithms.com/algebra/divisors.html  
+https://cp-algorithms.com/algebra/chinese-remainder-theorem.html  
 
 Try to go through the write-up and also try implementing the algorithms on your own. 
 
