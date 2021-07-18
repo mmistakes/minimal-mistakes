@@ -1,5 +1,5 @@
 ---
-title: Computer Vision\: A Classic and Modern Approach
+title: 'Computer Vision: A Classic and Modern Approach'
 permalink: /projects-2021/computer-vision-a-classic-and-modern-approach
 toc: true
 layout: single
