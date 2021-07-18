@@ -14,6 +14,7 @@ It then discussed the Fourier Span and Dimension of a function. Introduced a pro
 
 ## Mentors
 * Mohd Talib Siddiqui - 180426
+
 ## Learning Roadmap
 The first few basic topics were covered by a book on Boolean functions. Later, a summary of the basic topics were given in a form of report prepared by me. For the final lemma of the project, a reference to a paper was provided. Slides prepared by me were also supplied to the mentees on the lemma.
 
