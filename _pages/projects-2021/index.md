@@ -76,6 +76,7 @@ Some arbitrary examples:
   Pre-reqs: None.  
 * **Expected Duration :** 3 months  
 * **Expected Weekly Commitment:** 4-5 hours  
+* **Showcase :** [here](https://stamatics.github.io/projects-2021/mathematical-finance-and-stochastic-processes) 
 
 ## 7 - Computer Vision: A Classic and Modern approach  
 * **Mentors:** Shivanshu Tyagi (spazewalker#5877), Akshay Gupta (gakshay#2382)  
@@ -180,6 +181,7 @@ Since most students are not able to do the course offered on Topology by MTH dep
 This project is mainly intended for Y20 students.  
 * **Expected Duration :** 2 months  
 * **Expected Weekly Commitment:** 5 hours  
+* **Showcase :** [here](https://stamatics.github.io/projects-2021/introduction-to-metric-spaces-and-topology)  
 
 ## 17 - Understanding Graphs with Analysis  
 * **Mentors:** Ayush Basu (abasu#5088)  
