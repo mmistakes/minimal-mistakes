@@ -20,5 +20,5 @@ The first few basic topics were covered by a book on Boolean functions. Later, a
 
 ## Resources
 Analysis Of Boolean Functions - Ryan O’Donnell
-Fourier sparsity, spectral norm, and the Log-rank conjecture - Hing Yin Tsang, Chung Hoi Wong, Ning Xie, Shengyu Zhang ([Lemma 30] (https://arxiv.org/pdf/1304.1245v2.pdf))
+Fourier sparsity, spectral norm, and the Log-rank conjecture - Hing Yin Tsang, Chung Hoi Wong, Ning Xie, Shengyu Zhang ([Lemma 30](https://arxiv.org/pdf/1304.1245v2.pdf))
 
