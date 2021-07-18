@@ -175,7 +175,7 @@ A rational distance set is a set of points with each of its pairwise distances t
 ## 16 - Introduction to Metric Spaces and Topology  
 * **Mentors:** Kushlam Srivastava (Kuchlam#9851)  
 * **Description :** This project is intended to be a brief introduction to Metric Spaces and Topology, an important tool which is very useful in Pure Mathematics and a bit of theoretical Physics as well. 
-If you want a bit of motivation for this topic you can watch the following VSauce video which addresses the famous question ""How many holes does a straw have?"" through topology https://www.youtube.com/watch?v=egEraZP9yXQ
+If you want a bit of motivation for this topic you can watch the following VSauce video which addresses the famous question ""How many holes does a straw have?"" through topology [link](https://www.youtube.com/watch?v=egEraZP9yXQ)  
 We will first cover Metric Spaces which will be based on a lot of the first part of MTH101 and we can then move on topological concepts based on the comfort and understanding of the mentees.
 Since most students are not able to do the course offered on Topology by MTH department before the 5th semester, this can be a great opportunity for you to learn this topic.
 This project is mainly intended for Y20 students.  
