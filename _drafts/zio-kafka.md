@@ -9,7 +9,7 @@ excerpt: ""
 
 Modern distributed applications need a communication system between their components that must be reliable, scalable, and efficient. Synchronous communication based on HTTP is not a choice in such application, due to latency problems, poor resources' management, etc... Hence, we need an asynchronous messaging system, capable of easily scaling, robust to errors, and with low latency.
 
-Apache Kafka is a message broker that in the last years proved to have the above features. What's the best way to interact with such a message broker, if not with the ZIO ecosystem? Hence, ZIO provides an asynchronous, reliable, and scalable programming model, which perfectly fits the feature of Kafka. So, let's proceed without any ado.
+Apache Kafka is a message broker that in the last years proved to have the above features. What's the best way to interact with such a message broker, if not with the ZIO ecosystem? Hence, ZIO provides an asynchronous, reliable, and scalable programming model, which perfectly fits the feature of Kafka. So, let's proceed without further ado.
 
 ## 1. Background
 
@@ -101,3 +101,46 @@ docker exec -it broker bash
 ```
 
 Now that everything is up and running, we can proceed introducing the `zio-kafka` library.
+
+## 3. Consume Messages from Topic
+
+First, we are going to analyze is how to consume messages from a topic. As usual, we create a handy use case to work with.
+
+Image we like football very much, and we want to be always updated with the results of the UEFA European Championship, EURO 2020. For its nerdy fans, the UEFA publishes the updates of the matches on a Kafka topic, called `updates`. So, once the Kafka broker is up and running, we create the topic using the utilities the Kafka container gives. As we just saw, we can connect to the container, and crete the topic using the following command:
+
+```shell
+kafka-topics \
+  --bootstrap-server localhost:9092 \
+  --topic updates \
+  --create
+```
+
+Obviously, the Kafka broker of the UEFA is running on our machine at `localhost`...
+
+Now that we created the topic, we can configure a consumer to read from it. Usually, we configure Kafka consumers using a map of settings. The `zio-kafka` library uses its own types to configure a consumer:
+
+```scala
+val consumerSettings: ConsumerSettings =
+  ConsumerSettings(List("localhost:9092"))
+    .withGroupId("stocks-consumer")
+```
+
+Here we have the minimum configuration needed: The list of Kafka brokers in the cluster, and the _group-id_ of the consumer. As we said, all the consumers sharing the same group-id belong to the same consumer group.
+
+The `ConsumerSettings` it's a _builder-like_ class, that exposes many methods to configure all the properties needed by a consumer. For example, we can give the consumer any known property using the following method:
+
+```scala
+// Zio-kafka library code
+def withProperty(key: String, value: AnyRef): ConsumerSettings =
+  copy(properties = properties + (key -> value))
+```
+
+Or, we can configure the _polling interval_ of the consumer just using the dedicated method:
+
+```scala
+// Zio-kafka library code
+def withPollInterval(interval: Duration): ConsumerSettings =
+  copy(pollInterval = interval)
+```
+
+TODO
