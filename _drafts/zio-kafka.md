@@ -162,7 +162,7 @@ In this particular case, we obtain an instance of an `RManaged`, that in the ZIO
 
 In fact, ZIO internally uses such service to manage the connection pool to the broker for a consumer.
 
-Last but not least, we create a `ZLayer` from the `managedConsumer`, allowing us to provide it as a service to any component depending on it:
+Last but not least, we create a `ZLayer` from the `managedConsumer`, allowing us to provide it as a service to any component depending on it (for a comprehensive introduction to the `ZLayer` type, please refer to the awesome article [Organizing Services with ZIO and ZLayers](https://blog.rockthejvm.com/structuring-services-with-zio-zlayer/)):
 
 ```scala
 val consumer: ZLayer[Clock with Blocking, Throwable, Has[Consumer.Service]] =
