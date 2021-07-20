@@ -143,4 +143,34 @@ def withPollInterval(interval: Duration): ConsumerSettings =
   copy(pollInterval = interval)
 ```
 
+Here we can dive into all the available configuration properties for a Kafka consumer: [Consumer Configurations](https://docs.confluent.io/platform/current/installation/configuration/consumer-configs.html).
+
+Once we created the needed configuration, it's time to create the Kafka consumer. As each consumer own an internal connection pool to connect to the broker, we don't want to leak such pool in case of failure. 
+
+In the ZIO ecosystem (as well as in Cats Effect), a type like these is called a _resource_, and the `ZManaged[R, E, A]` is the type associated with it. `ZManaged[R, E, A]` is a data structure that encapsulates the acquisition, and the release of a resource of type `A` using `R`, and that may fail with an error of type `E`.
+
+So, let's create the resource handling the connection to the Kafka broker:
+
+```scala
+val managedConsumer: RManaged[Clock with Blocking, Consumer.Service] =
+  Consumer.make(consumerSettings)
+```
+
+In this particular case, we obtain an instance of an `RManaged`, that in the ZIO jargon is a resource that cannot fail. Moreover, we see that the consumer depends upon the `Blocking` service. As the documentation says
+
+> The Blocking module provides access to a thread pool that can be used for performing blocking operations.
+
+In fact, ZIO internally uses such service to manage the connection pool to the broker for a consumer.
+
+Last but not least, we create a `ZLayer` from the `managedConsumer`, allowing us to provide it as a service to any component depending on it:
+
+```scala
+val consumer: ZLayer[Clock with Blocking, Throwable, Has[Consumer.Service]] =
+  ZLayer.fromManaged(managedConsumer)
+```
+
+Now that we obtained a managed, injectable consumer, we can proceed by consuming some message from the broker. It's time to introduce `ZStream`.
+
+### 3.1. Consuming Messages as a Stream
+
 TODO
