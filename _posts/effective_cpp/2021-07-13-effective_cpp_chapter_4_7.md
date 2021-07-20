@@ -76,7 +76,7 @@ Rational Class의 operator*는 int와 Rational을 취하지 않습니다. 이미
 class Rational
 {
   ...
-}
+};
 
 const Rational operator*(const Rational& lhs, const Rational& rhs)
 {
