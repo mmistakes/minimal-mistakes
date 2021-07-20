@@ -3,7 +3,7 @@ layout: splash
 permalink: /
 hidden: true
 header:
-  overlay_color: "#3abca0"
+  overlay_color: "#0066CC"
   actions:
     - label: "<i class='fas fa-download'></i> Install now"
       url: "https://github.com/XAITK/xaitk-saliency/blob/master/docs/installation.rst"

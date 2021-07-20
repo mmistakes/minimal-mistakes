@@ -1,8 +1,10 @@
 ---
-permalink: /contribute/
 title: "Contribute"
-last_modified_at: 2021-05-07
+permalink: /contribute/
 classes: wide2
+header:
+  overlay_color: "#0066CC"
+last_modified_at: 2021-05-07
 ---
 
 ## Why Contribute?

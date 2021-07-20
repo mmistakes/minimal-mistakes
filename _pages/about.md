@@ -1,9 +1,10 @@
 ---
-permalink: /about/
 title: "About"
-excerpt: "The XAI Toolkit is a project based on the DARPA XAI program."
-last_modified_at: 2021-05-07
+permalink: /about/
 classes: wide2
+header:
+  overlay_color: "#0066CC"
+last_modified_at: 2021-05-07
 ---
 
 The Explainable AI Toolkit (XAITK) contains a variety of resources and techniques to help users, developers, and researchers understand complex machine learning models. The toolkit combines a searchable repository of independent contributions and a more integrated, common software framework. The toolkit was developed under the [Defense Advanced Research Projects Agency (DARPA) Explainable Artificial Intelligence (XAI) program](https://www.darpa.mil/program/explainable-artificial-intelligence).
