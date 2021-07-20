@@ -13,15 +13,15 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "XAITK"
 title_separator          : "-"
-subtitle                 : "The Explainable AI Toolkit"
+subtitle                 : ""
 name                     : &name "Kitware, Inc" # &name is a YAML anchor which can be *referenced later
 description              : &description "An open source, explainable AI toolkit built for analytics and autonomy applications."
 url                      : https://xaitk.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "XAITK/xaitk.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+logo                     : "/assets/kitware/images/xaitk-wordmark.png"
+masthead_title           : " "
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
