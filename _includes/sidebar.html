@@ -58,8 +58,9 @@
           {{page.submission_details.point_of_contact.name}}
         </a>
     {% endif %}
-
-    {% if page.submission_details.license %}<a class="license-button" href="{{page.submission_details.license}}">License</a>{% endif %}
+    {% if page.submission_details.license %}
+	<p><a class="license-button" href="{{page.submission_details.license}}">License</a></p>
+    {% endif %}
   {% endif %}
   </div>
 {% endif %}
