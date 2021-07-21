@@ -1,6 +1,6 @@
 ---
 title: "Explainable VQA with SOBERT"
-excerpt: "Demo several capabilities of the Spatial-Object Attention BERT (SOBERT) Visual Question Answering (VQA) model with BERT and ErrorCam attention maps. "
+excerpt: "Demo several capabilities of the Spatial-Object Attention BERT (SOBERT) Visual Question Answering (VQA) model with BERT and ErrorCam attention maps."
 tags: 
   - Analytics
   - Computer Vision
@@ -17,9 +17,9 @@ submission_details:
       - title: Explainable VQA with SOBERT
         url: https://github.com/frkl/SOBERT-XVQA-demo
   
-  version: v1.0
+  version: 1.0
   size: 6.5GB
-  license:  https://github.com/frkl/SOBERT-XVQA-demo/blob/main/LICENSE (Apache License 2.0)
+  license: https://github.com/frkl/SOBERT-XVQA-demo/blob/main/LICENSE
    
   authors:
     - Xiao Lin<sup>1</sup>
@@ -40,7 +40,7 @@ submission_details:
 
 ## Overview
 
-This repository provides a web interface to interact with the SOBERT VQA model which
+This repository provides a web interface to interact with the SOBERT VQA model which has the following features:
 - Answers natural language questions about images
 - Built on top of Transformer & image inpainting methods
 - Explanation modalities
@@ -49,25 +49,25 @@ This repository provides a web interface to interact with the SOBERT VQA model w
   - [ErrorCam attention](https://arxiv.org/abs/2103.14712)
 - Interactive counterfactual explanations
 
-To get started, follow steps at https://github.com/frkl/SOBERT-XVQA-demo/blob/main/README.md to build and run a docker environment for the web interface.
+To get started, follow steps in the [README](https://github.com/frkl/SOBERT-XVQA-demo/blob/main/README.md) to build and run a docker environment for the web interface.
 
 ## Intended Use
 
-The SOBERT VQA model not only answers VQA questions, but also provides interactive counterfactual attention map explanations to help the user better understand how much they could trust the VQA system on answering their questions. 
+The SOBERT VQA model not only answers VQA questions, but also provides interactive counterfactual attention map explanations to help the user better understand how much they should trust the VQA system.
 
 ## Model/Data
 
-The SOBERT VQA model takes an image (RGB, normalized to 224x224) and a natural language question (string) as the input, and returns a natural language answer as the output (string, selected from a pool of 3129 common answers). A detailed list of interfaces for developers is provided in the README file of the repository.
+The SOBERT VQA model takes an image (RGB, normalized and resized to 224x224) and a natural language question (string) as the input, and returns a natural language answer as the output (string, selected from a pool of 3129 common answers). A detailed list of interfaces for developers is provided in the README file of the repository.
 
 The [VQA v2.0 dataset](https://visualqa.org/) train split was used for training the SOBERT VQA model.
 
 ## Limitations
 
-The SOBERT VQA model achieves 62% accuracy on VQA v2.0 validation split. The VQA accuracy could improve with further research. In [our user study](https://arxiv.org/abs/2103.14712), ErrorCam attention helps the user to predict the model's correctness on a new image 3% more accurately, from 57% to 60%. Higher-quality attention map may further improve to help the user build a better mental model when applying our system.
+The SOBERT VQA model achieves 62% accuracy on the VQA v2.0 validation split. The VQA accuracy could improve with further research. In [our user study](https://arxiv.org/abs/2103.14712), ErrorCam attention helps the user to predict the model's correctness on a new image 3% more accurately, increasing accuracy from 57% to 60%. Higher-quality attention maps may further improve results and help the user build a better mental model when using our system.
 
 ## References
 
-If you use the SOBERT-VQA attention maps as part of published research, please cite the following paper
+If you use the SOBERT-VQA attention maps as part of published research, please cite the following paper:
 
 ```
 @INPROCEEDINGS{Alipour_2020,
@@ -81,7 +81,7 @@ If you use the SOBERT-VQA attention maps as part of published research, please c
   doi={10.1109/HCCAI49649.2020.00010}}
 ```
 
-If you use the SOBERT-VQA model as part of published research, please acknowledge the following repo
+If you use the SOBERT-VQA model as part of published research, please acknowledge the following repo:
 
 ```
 @misc{SOBERT-XVQA,
@@ -94,7 +94,7 @@ howpublished = {\url{https://github.com/frkl/SOBERT-XVQA-demo}},
 }
 ```
 
-If you use ErrorCam attention maps as part of published research, please cite the following paper
+If you use ErrorCam attention maps as part of published research, please cite the following paper:
 
 ```
 @article{ray2021knowing,
