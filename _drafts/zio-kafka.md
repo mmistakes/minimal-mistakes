@@ -15,7 +15,7 @@ Apache Kafka is a message broker that in the last years proved to have the above
 
 Following this article will require a basic understanding of how Kafka works. Moreover, we should know what the effect pattern is, and how ZIO implements it (refer to [ZIO: Introduction to Fibers](https://blog.rockthejvm.com/zio-fibers/), and to [Organizing Services with ZIO and ZLayers](https://blog.rockthejvm.com/structuring-services-with-zio-zlayer/) for further details).
 
-### 1.1. Apache Kafka 101
+## 2. Apache Kafka 101
 
 Apache Kafka is the `stadard de-facto` within messaging systems. Every Kafka installation has a broker, or a cluster of brokers, which allows its clients to write messages in a structure called _topic_, and to read such messages from topics. The clients writing into topics are called _producers, whereas _consumers_ read information from topics.
 
@@ -31,7 +31,7 @@ Consumers within the same consumer groups share the partitions of a topic. So, A
 
 Using the above information, we should ready to begin out journey.
 
-## 2. Set up
+## 3. Set up
 
 First, we need the dependency from the `zio-kafka` library:
 
@@ -102,7 +102,7 @@ docker exec -it broker bash
 
 Now that everything is up and running, we can proceed introducing the `zio-kafka` library.
 
-## 3. Consume Messages from Topic
+## 4. Creating a Consumer
 
 First, we are going to analyze is how to consume messages from a topic. As usual, we create a handy use case to work with.
 
@@ -171,6 +171,25 @@ val consumer: ZLayer[Clock with Blocking, Throwable, Has[Consumer.Service]] =
 
 Now that we obtained a managed, injectable consumer, we can proceed by consuming some message from the broker. It's time to introduce `ZStream`.
 
-### 3.1. Consuming Messages as a Stream
+### 5. Consuming Messages as a Stream
 
-TODO
+The zio-kafka library allows consuming messages read from a Kafka topic as a stream. Basically, a stream is an abstraction of a possible infinite collection. In ZIO, we model a stream using the type `ZStream[R, E, O]`, which represents an effectual stream requiring an environment `R` to execute, eventually failing with an error of type `E`, and producing values of type `A`. 
+
+We used the _effectual_ adjective because a `ZStream` implements the Effect Pattern: It is a blueprint, or a description, of how to produce values of type `A`.However, the real execution of the code producing them is postponed. In other words, a `ZIO` always succeeds with a single value whereas a `ZStream` succeeds with zero or more values, potentially infinitely many.
+
+Another important feature of `ZStream`s is the implicit chunking. By design, Kafka consumers poll (consume) from a topic a batch of messages (configurable using the [`max.poll.records`](https://docs.confluent.io/platform/current/installation/configuration/consumer-configs.html#consumerconfigs_max.poll.records)). So, each invocation of the `poll` method on the Kafka consumer should return a collection (a `Chunk` in ZIO jargon) o messages.
+
+The `ZStream` type flatten the list of `Chunk`s for us, letting us to treat them as they were a single and continue flux of data.
+
+Creating a stream from the `ZManaged` consumer we just built means to subscribing it to a Kafka topic and to configure how to interpret the bytes of both the key and the value of each messages:
+
+```scala
+val matchesStreams: ZStream[Consumer, Throwable, CommittableRecord[String, String]] = 
+  Consumer.subscribeAnd(Subscription.topics("updates"))
+    .plainStream(Serde.string, Serde.string)
+```
+
+The above code introduces many concepts. So, let's analyze them one at time.
+
+First, a `CommitableRecord[K, V]` is a wrapper around the official Kafka class `ConsumerRecord[K, V]`. Basically, Kafka associated with every message a lot of metadata, represented in a `ConsumerRecord`. Among the other, one important information is the _offset_ of the message, which represent its position inside the topic partition. TODO.
+
