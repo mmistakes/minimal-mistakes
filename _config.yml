@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "끝없는 도전을 위한 블로그"
+title                    : "끝없는 도전을 위한 기록"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "푸침이"
+name                     : "apoptosis1831"
 description              : "네카라쿠배를 꿈꾸는 일개 공겹 직원"
 url                      : "https://apoptosis1831.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -101,9 +101,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "푸침이"
+  name             : "apoptosis1831"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "나는 멋지게 이직해서 **개발자** 로 거듭난다."
+  bio              : " **네카라쿠배** 를 꿈꾸다."
   location         : "Somewhere"
   email            :
   links:
