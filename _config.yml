@@ -16,16 +16,16 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "끝없는 도전을 위한 블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "푸침이"
+description              : "네카라쿠배를 꿈꾸는 일개 공겹 직원"
 url                      : "https://apoptosis1831.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "C:\Users\KwonJiHyeon\apoptosis1831.github.io\images\1" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -101,9 +101,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  name             : "푸침이"
+  avatar           : "C:\Users\KwonJiHyeon\apoptosis1831.github.io\images" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "나는 멋지게 이직해서 **개발자** 로 거듭난다."
   location         : "Somewhere"
   email            :
   links:
