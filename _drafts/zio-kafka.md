@@ -171,7 +171,7 @@ val consumer: ZLayer[Clock with Blocking, Throwable, Has[Consumer.Service]] =
 
 Now that we obtained a managed, injectable consumer, we can proceed by consuming some message from the broker. It's time to introduce `ZStream`.
 
-### 5. Consuming Messages as a Stream
+## 5. Consuming Messages as a Stream
 
 The zio-kafka library allows consuming messages read from a Kafka topic as a stream. Basically, a stream is an abstraction of a possible infinite collection. In ZIO, we model a stream using the type `ZStream[R, E, O]`, which represents an effectual stream requiring an environment `R` to execute, eventually failing with an error of type `E`, and producing values of type `A`. 
 
@@ -181,7 +181,9 @@ Another important feature of `ZStream`s is the implicit chunking. By design, Kaf
 
 The `ZStream` type flatten the list of `Chunk`s for us, letting us to treat them as they were a single and continue flux of data.
 
-Creating a stream from the `ZManaged` consumer we just built means to subscribing it to a Kafka topic and to configure how to interpret the bytes of both the key and the value of each messages:
+### 5.1. Subscription to Topics
+
+Creating a stream from the `ZManaged` consumer we just built means to subscribing it to a Kafka topic, and to configure how to interpret the bytes of both the key and the value of each message:
 
 ```scala
 val matchesStreams: ZStream[Consumer, Throwable, CommittableRecord[String, String]] = 
@@ -191,5 +193,27 @@ val matchesStreams: ZStream[Consumer, Throwable, CommittableRecord[String, Strin
 
 The above code introduces many concepts. So, let's analyze them one at time.
 
-First, a `CommitableRecord[K, V]` is a wrapper around the official Kafka class `ConsumerRecord[K, V]`. Basically, Kafka associated with every message a lot of metadata, represented in a `ConsumerRecord`. Among the other, one important information is the _offset_ of the message, which represent its position inside the topic partition. TODO.
+First, a `CommitableRecord[K, V]` is a wrapper around the official Kafka class `ConsumerRecord[K, V]`. Basically, Kafka associates with every message a lot of metadata, represented as a `ConsumerRecord`:
 
+```scala
+// Zio-kafka library code
+final case class CommittableRecord[K, V](record: ConsumerRecord[K, V], offset: Offset)
+```
+
+Among the other, one important information is the `offset` of the message, which represent its position inside the topic partition. A consumer commit an offset within a consumer group after it successfully processed a message, marking that all the messages with a lower offset were been read yet.
+
+As the subscription object takes a list of topics, a consumer can subscribe to many topics at time. In addition, we can use a pattern to tell the consumer which topics to subscribe. Imagine we have a different topic for the updates of every single match. Hence, the names of the topics should reflect this information, for example using a pattern like `"updates|ITA-ENG"`. If we want to subscribe to all the topics associated with a match of the Italian football team, we can do the following:
+
+```scala
+val itaMatchesStreams =
+  Consumer.subscribeAnd(Subscription.pattern("updates|.*ITA.*".r))
+    .plainStream(Serde.string, Serde.string)
+```
+
+In some weird cases, we would be interested in subscribing a consumer not to random partition of a topic, but to a specific partition of the topic. As Kafka guarantees the ordering of the messages only locally to a partition, a scenario is when we need to preserve such order also in message elaboration. In this case, we can use the dedicated subscription method, and subscribe to the partition 1 of the topic `updates`:
+
+```scala
+val partitionedMatchesStreams =
+  Consumer.subscribeAnd(Subscription.manual("updates", 1))
+    .plainStream(Serde.string, Serde.string)
+```
