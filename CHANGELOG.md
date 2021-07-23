@@ -1,3 +1,9 @@
+## Unreleased
+
+### Bug Fixes
+
+- Remove site.url from first breadcrumb link. [#3051](https://github.com/mmistakes/minimal-mistakes/pull/3051)
+
 ## [4.24.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0)
 
 ### Bug Fixes
