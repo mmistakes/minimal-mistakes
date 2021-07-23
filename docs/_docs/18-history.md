@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2021-07-23T09:31:27-04:00
+last_modified_at: 2021-07-23T14:17:41-04:00
 toc: false
 ---
 
@@ -19,6 +19,7 @@ toc: false
 
 ### Enhancements
 
+- Add Microformats markup. [#3052](https://github.com/mmistakes/minimal-mistakes/pull/3052)
 - Add instructions on how to unminify `main.js` for easier browser debugging. [#3055](https://github.com/mmistakes/minimal-mistakes/pull/3055)
 
 ## [4.24.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0)

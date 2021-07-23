@@ -8,6 +8,7 @@
 
 ### Enhancements
 
+- Add Microformats markup. [#3052](https://github.com/mmistakes/minimal-mistakes/pull/3052)
 - Add instructions on how to unminify `main.js` for easier browser debugging. [#3055](https://github.com/mmistakes/minimal-mistakes/pull/3055)
 
 ## [4.24.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0)
