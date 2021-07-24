@@ -104,7 +104,7 @@ author:
   name             : "Chihun Park"
   avatar           : "/assets/images/m.jpeg"
   bio              : "안녕하세요."
-  location         : #"Somewhere"
+  location         : "Korea"
   email            : #"chihunmanse@gmail.com"
   links:
     - label: "Email"
