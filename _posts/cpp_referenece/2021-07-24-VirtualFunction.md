@@ -1,7 +1,7 @@
 ---
 published: true
 layout: single
-title: "가상 함수 정리"
+title: "c++ 가상 함수 정리 (virutal)"
 category: cppreference
 tags:
 comments: true
