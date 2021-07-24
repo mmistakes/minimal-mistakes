@@ -8,7 +8,6 @@ tags:
   - Git 기초
 toc: true
 toc_label: "목차"
-published: false
 ---
 
 ## 1. 깃 시작하기
