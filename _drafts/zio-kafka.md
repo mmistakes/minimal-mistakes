@@ -205,15 +205,74 @@ Among the other, one important information is the `offset` of the message, which
 As the subscription object takes a list of topics, a consumer can subscribe to many topics at time. In addition, we can use a pattern to tell the consumer which topics to subscribe. Imagine we have a different topic for the updates of every single match. Hence, the names of the topics should reflect this information, for example using a pattern like `"updates|ITA-ENG"`. If we want to subscribe to all the topics associated with a match of the Italian football team, we can do the following:
 
 ```scala
-val itaMatchesStreams =
+val itaMatchesStreams: SubscribedConsumerFromEnvironment =
   Consumer.subscribeAnd(Subscription.pattern("updates|.*ITA.*".r))
-    .plainStream(Serde.string, Serde.string)
 ```
 
 In some weird cases, we would be interested in subscribing a consumer not to random partition of a topic, but to a specific partition of the topic. As Kafka guarantees the ordering of the messages only locally to a partition, a scenario is when we need to preserve such order also in message elaboration. In this case, we can use the dedicated subscription method, and subscribe to the partition 1 of the topic `updates`:
 
 ```scala
-val partitionedMatchesStreams =
+val partitionedMatchesStreams: SubscribedConsumerFromEnvironment =
   Consumer.subscribeAnd(Subscription.manual("updates", 1))
-    .plainStream(Serde.string, Serde.string)
+```
+
+### 5.2. Interpreting Messages: Serialization and Deserialization
+
+Once we subscribed to a topic, we must instruct our consumer how to interpret messages coming from the topic. Apache Kafka introduced the concept of _serde_, which stands for _ser_ializer and _de_serializer. A consumer should interpret both the key and the value of a message. We give the right serde types during the materialization of the read messages into a stream:
+
+```scala
+Consumer.subscribeAnd(Subscription.topics("updates"))
+  .plainStream(Serde.string, Serde.string)
+```
+
+The `plainStream` method takes two serdes as parameters, the first for the key, and the second for the value of a message. Fortunately, the zio-kafka library comes with serdes for common types:
+
+```scala
+// Zio-kafka library code
+private[zio] trait Serdes {
+  lazy val long: Serde[Any, Long]
+  lazy val int: Serde[Any, Int]
+  lazy val short: Serde[Any, Short]
+  lazy val float: Serde[Any, Float]
+  lazy val double: Serde[Any, Double]
+  lazy val string: Serde[Any, String]
+  lazy val byteArray: Serde[Any, Array[Byte]]
+  lazy val byteBuffer: Serde[Any, ByteBuffer]
+  lazy val uuid: Serde[Any, UUID]
+}
+```
+
+In addition, we can use more advanced serialization / deserialization capabilities. For example, we can derive the serde directly from one of the available using the `inmap` family of functions:
+
+```scala
+// Zio-kafka library code
+trait Serde[-R, T] extends Deserializer[R, T] with Serializer[R, T] {
+  def inmap[U](f: T => U)(g: U => T): Serde[R, U]
+  def inmapM[R1 <: R, U](f: T => RIO[R1, U])(g: U => RIO[R1, T]): Serde[R1, U]
+}
+```
+
+Hence, we will use the `inmap` function if the derivation is not effectful, for example if it always succeeds. Otherwise, we will use the `inmapM` if the derivation can produce side effects, such as throwing an exception. For example, we want to read the key of every match updates into the following class:
+
+```scala
+// The key of the message is something like ITA-ENG
+case class Players(p1: String, p2: String)
+```
+
+Since the parsing of the key might fail, we can define a new serde using the `inmapM` function:
+
+```scala
+val playersSerde: Serde[Any, Players] = Serde.string.inmapM { playersAsString =>
+  ZIO.effect {
+    if (!playersAsString.matches("...-...")) {
+      throw new IllegalArgumentException(s"$playersAsString doesn't represents two players")
+    }
+    val split = playersAsString.split("-")
+    Players(split(0), split(1))
+  }
+} { players =>
+  ZIO.succeed {
+    s"${players.p1}-${players.p2}"
+  }
+}
 ```
