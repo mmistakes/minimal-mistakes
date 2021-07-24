@@ -22,6 +22,9 @@ This guide walks through setting up a VPN server (OpenVPN) on a Raspberry Pi usi
 **Note:** These packages change daily. This was built/documented in Fall 2017 so your mileage may vary.
 {: .notice--info}
 
+**Not for Wireguard:** These instructions apply to the openvpn configuration for pivpn. See instructions for wiregaurd here.
+{: .notice--warning}
+
 ## Setup Raspberry Pi
 
 Follow the default [installation instructions](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) to setup Raspbian on a Raspberry Pi. I used the Stretch Lite image and had reasonable success.
