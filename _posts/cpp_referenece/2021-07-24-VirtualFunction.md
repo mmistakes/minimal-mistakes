@@ -84,3 +84,8 @@ PrintTest2 Class
 Base Class
 ----------------------------------------
 ```
+
+<body translate="no" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  <div id="mouse_no" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  </div>
+</body>

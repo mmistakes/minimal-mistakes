@@ -60,3 +60,8 @@ static int test2;
 #### Reference 
 ***
 - ***<https://stackoverflow.com/questions/22769919/what-does-mean-ifndef-define-directive>***
+
+<body translate="no" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  <div id="mouse_no" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  </div>
+</body>
