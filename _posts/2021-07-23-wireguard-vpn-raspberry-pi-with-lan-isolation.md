@@ -110,7 +110,7 @@ If you want to have the iptables configuration load by default, then follow the 
 There are cases where you may want to allow access to the LAN from certain devices. For you example, you may want your laptop to have unrestricted access while limiting any other users.
 
 #### Check the WireGuard defauls
-When you add a new client WireGuard creates a default IP address for each client - this makes this step far easier than [openvpn](https://www.impedancemismatch.io/posts/vpn-on-raspberry-pi-with-lan-isolation/#whitelist-device-for-vpn-lan-access). You can check and modify that address in the following two places (*both need to be modified and reloaded on clients* if you make a change):
+When you add a new client WireGuard creates a default IP address for each client - this makes this step far easier than [openvpn](https://www.impedancemismatch.io/posts/vpn-on-raspberry-pi-with-lan-isolation/#allowlist-device-for-vpn-lan-access). You can check and modify that address in the following two places (*both need to be modified and reloaded on clients* if you make a change):
 - `/etc/wireguard/wg0.conf`
 - `/etc/wireguard/configs/[clientname].conf`
 
