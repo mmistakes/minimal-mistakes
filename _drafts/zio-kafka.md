@@ -117,6 +117,8 @@ kafka-topics \
 
 Obviously, the Kafka broker of the UEFA is running on our machine at `localhost`...
 
+Each message's key is the concatenation of the two teams' nation. For example, the match between Italy and England generates messages with the key `ITA-ENG`. Then, the value of a message is the score of the match in `String` format: `3-2`.
+
 Now that we created the topic, we can configure a consumer to read from it. Usually, we configure Kafka consumers using a map of settings. The `zio-kafka` library uses its own types to configure a consumer:
 
 ```scala
@@ -275,4 +277,12 @@ val playersSerde: Serde[Any, Players] = Serde.string.inmapM { playersAsString =>
     s"${players.p1}-${players.p2}"
   }
 }
+```
+
+Often, the values of Kafka massages represent JSON objects. So, it's possible to serialize / deserialize the JSON object directly into a structured type. The Kafka official library already brings us the serdes to manage JSON objects: [`JsonPOJOSerializer`](https://github.com/apache/kafka/blob/1.0/streams/examples/src/main/java/org/apache/kafka/streams/examples/pageview/JsonPOJOSerializer.java), and [`JsonPOJODeserializer`](https://github.com/apache/kafka/blob/1.0/streams/examples/src/main/java/org/apache/kafka/streams/examples/pageview/JsonPOJODeserializer.java). Since, using one of the many variant of the `apply` method, we can create a ZIO `Serde` also from Kafka serdes or from our preferred JSON library.
+
+// TODO Example
+
+```scala
+
 ```
