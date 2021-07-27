@@ -1,3 +1,4 @@
+{% if page.url == '/' %}
 <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -13,4 +14,5 @@
         "sameAs": {{ site.social.links | jsonify }}{% endif %}
       {% endif %}
     }
-  </script>
+</script>
+{% endif %}
