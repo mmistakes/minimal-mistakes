@@ -4,6 +4,8 @@ permalink: /contribute/
 classes: wide2
 header:
   overlay_color: "#0066CC"
+excerpt: >
+  Help to further advance the field of explainable AI by contributing new capabilities to the toolkit.<br />
 last_modified_at: 2021-07-27
 ---
 

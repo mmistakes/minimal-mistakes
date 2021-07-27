@@ -4,6 +4,8 @@ permalink: /about/
 classes: wide2
 header:
   overlay_color: "#0066CC"
+excerpt: >
+  Learn more about the history of the toolkit and our industry, academic, and government partners.<br />
 last_modified_at: 2021-05-07
 ---
 
