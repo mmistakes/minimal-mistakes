@@ -1,5 +1,11 @@
 <font color='white'>filler text</font>
 
+## Book
+
+- Verguts, T. (in press). Introduction to modelling cognitive processes. [MIT Press.](https://mitpress.mit.edu/books/introduction-modeling-cognitive-processes)
+
+Print date expected in 2022
+
 ## Preprints
 
 - Verbeke P., & Verguts T. (2021). Using top-down gating to optimally balance shared versus separated task representations. [https://doi.org/10.1101/2021.06.02.446735](https://doi.org/10.1101/2021.06.02.446735)
@@ -23,8 +29,6 @@ in press:
 - Ergo, K., De Vilder, L., De Loof, E., & Verguts, T. (in press). Reward prediction errors drive declarative learning irrespective of agency. Psychonomic Bulletin & Review.
 
 - Zhang, S., Verguts, T., Zhang, C., Feng, P., Chen, Q., & Feng, T. (in  press). Outcome value and task aversiveness impact task procrastination through separate neural pathways. Cerebral Cortex.
-
-- Verguts, T. (in press). Introduction to modelling cognitive processes. MIT Press.
 
 - Peng, Z., Xu, C., Ma, N., Yang, Q., Ren, P., Wen, R., … Chen, Q. (in press). White matter alterations of the goal-directed system in obsessive-compulsive disorder patients and their unaffected first-degree relatives. Biological Psychiatry: Cognitive Neuroscience and Neuroimaging.
 
