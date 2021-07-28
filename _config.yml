@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme             : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -20,8 +20,8 @@ title                    : "แทงบอล กับ UFAX24.COM"
 title_separator          : "-"
 subtitle                 : "แทงบอลออนไลน์ กับเว็บทีดีที่สุดอย่าง UFAX24 ที่ขึ้นชื่อได้ว่ามีรายการแทงบอลมากกว่าใครในประเทศ"
 name                     : "PNCK DEV APP"
-description              : " เว็บแทงบอล UFAX24 นอกจากจะเปิดรับการพนันทุกประเภทแล้วนั้น ยังจุดเด่นในเรื่องของการทำธุรกรรมทางการเงินที่รวดเร็ว ซึ่งระบบฝาก – ถอน AUTO ของทางเรานั้น ดำเนินการด้วยระบบ AI อัจฉริยะ รองรับทุกบัญชีธนาคาร ทำงานอย่างว่องไว เพียงฝากเงินเข้าบัญชี รอรับเครดิตได้เลยทันที ไม่ถึง 3 วินาที ไม่มีการขัดข้องหรือระบบล่มแน่นอน"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "เว็บแทงบอล UFAX24 นอกจากจะเปิดรับการพนันทุกประเภทแล้วนั้น ยังจุดเด่นในเรื่องของการทำธุรกรรมทางการเงินที่รวดเร็ว ซึ่งระบบฝาก – ถอน AUTO ของทางเรานั้น ดำเนินการด้วยระบบ AI อัจฉริยะ รองรับทุกบัญชีธนาคาร ทำงานอย่างว่องไว เพียงฝากเงินเข้าบัญชี รอรับเครดิตได้เลยทันที ไม่ถึง 3 วินาที ไม่มีการขัดข้องหรือระบบล่มแน่นอน"
+url                      : "https://ufax24.github.io"
 baseurl                  : "https://ufax24.github.io/UFAX24-SPORTS/"
 repository               : "UFAX24/UFAX24-SPORTS"
 teaser                   : "https://firebasestorage.googleapis.com/v0/b/ufax24-960eb.appspot.com/o/ART_UFAX24%2F1%20copy%209.jpg?alt=media&token=fbc8fb94-f960-4e28-b221-d1da948c40bb"
