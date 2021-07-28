@@ -20,11 +20,11 @@ Can also be found in [Google Scholar](https://scholar.google.co.jp/citations?use
 
 ## Domestic Conferences, Symposia, and Preprints (Unrefreed)
 * **篠田一聡**, 竹澤祐貴, 鈴木雅大, 岩澤有祐, 松尾豊: "Interactive Instruction FollowingのためのNeuro-Symbolic手法による多様な物体と言語指示への頑健性の向上." 人工知能学会第35回全国大会(JSAI2021), オンライン, 2021.
-  * [[abstract](https://confit.atlas.jp/guide/event/jsai2021/subject/2J3-GS-8b-03/tables?cryptoId=)][[slides](https://github.com/KazutoshiShinoda/slides/blob/a429e5e9e95b97a93faa34c5757b39117fbc9855/JSAI2021Shinoda.pdf)]
+  * [[abstract](https://confit.atlas.jp/guide/event/jsai2021/subject/2J3-GS-8b-03/tables?cryptoId=)] [[slides](https://github.com/KazutoshiShinoda/slides/blob/a429e5e9e95b97a93faa34c5757b39117fbc9855/JSAI2021Shinoda.pdf)]
 * 竹澤祐貴, **篠田一聡**, 鈴木雅大, 岩澤有祐, 松尾豊: "Instruction Followingにおける構成的タスク表現の獲得." 人工知能学会第35回全国大会(JSAI2021), オンライン, 2021.
   * [[abstract](https://confit.atlas.jp/guide/event/jsai2021/subject/2J4-GS-8c-01/tables?cryptoId=)]
 * **篠田一聡**, 菅原朔, 相澤彰子: "変分質問回答ペア生成による質問応答モデルの汎化性能と頑健性の向上." 言語処理学会第27回年次大会(NLP2021), オンライン, 2021.
-  * [[paper](https://www.anlp.jp/proceedings/annual_meeting/2021/pdf_dir/P7-21.pdf)][[poster](https://github.com/KazutoshiShinoda/slides/blob/2923b95775cb92628d8ff955a8e2e81c18e078a1/NLP2021-Shinoda-Posterv4.pdf)]
+  * [[paper](https://www.anlp.jp/proceedings/annual_meeting/2021/pdf_dir/P7-21.pdf)] [[poster](https://github.com/KazutoshiShinoda/slides/blob/2923b95775cb92628d8ff955a8e2e81c18e078a1/NLP2021-Shinoda-Posterv4.pdf)]
 * Phuc Nguyen, **Kazutoshi Shinoda**, Taku Sakamoto, Diana Andreea Petrescu, Hung Nghiep Tran, Atsuhiro Takasu, Akiko Aizawa, Hideaki Takeda: "NII Table Linker at the NTCIR-15 Data Search Task: Re-ranking with Pre-trained Contextualized Embeddings, Data Content, Entity-centric, and Cluster-based Approaches." In Proceedings of the 15th NTCIR Conference on Evaluation of Information Access Technologies, Tokyo, Japan, 2020. **Presentation Award**
   * [[paper](http://research.nii.ac.jp/ntcir/workshop/OnlineProceedings15/pdf/ntcir/04-NTCIR15-DATA-NguyenP.pdf)]
 * **篠田一聡**, 竹澤祐貴, 鈴木雅大, 岩澤有祐, 松尾豊: "Instruction Followingにおけるサブタスクへの分割と抽象化された行動の予測による長い行動系列への頑健性の向上." 第16回 人工知能学会 汎用人工知能研究会(SIG-AGI), オンライン, 2020. **研究会優秀賞受賞**
