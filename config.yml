@@ -15,18 +15,18 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "th-TH"
+locale                   : "us-US"
 title                    : "แทงบอล กับ UFAX24.COM"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "แทงบอลออนไลน์ กับเว็บทีดีที่สุดอย่าง UFAX24 ที่ขึ้นชื่อได้ว่ามีรายการแทงบอลมากกว่าใครในประเทศ"
 name                     : "PNCK DEV APP"
-description              : "An amazing website."
+description              : " เว็บแทงบอล UFAX24 นอกจากจะเปิดรับการพนันทุกประเภทแล้วนั้น ยังจุดเด่นในเรื่องของการทำธุรกรรมทางการเงินที่รวดเร็ว ซึ่งระบบฝาก – ถอน AUTO ของทางเรานั้น ดำเนินการด้วยระบบ AI อัจฉริยะ รองรับทุกบัญชีธนาคาร ทำงานอย่างว่องไว เพียงฝากเงินเข้าบัญชี รอรับเครดิตได้เลยทันที ไม่ถึง 3 วินาที ไม่มีการขัดข้องหรือระบบล่มแน่นอน"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+baseurl                  : "https://ufax24.github.io/UFAX24-SPORTS/"
+repository               : "UFAX24/UFAX24-SPORTS"
+teaser                   : "https://firebasestorage.googleapis.com/v0/b/ufax24-960eb.appspot.com/o/ART_UFAX24%2F1%20copy%209.jpg?alt=media&token=fbc8fb94-f960-4e28-b221-d1da948c40bb"
+logo                     : "https://firebasestorage.googleapis.com/v0/b/ufax24-960eb.appspot.com/o/LOGO-UFAx24-X12-1%20(4).png?alt=media&token=74578b6f-1bc7-4a90-a1c2-254dcca9542a"
+masthead_title           : " "
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -37,12 +37,12 @@ comments:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    appid                : "2910681209183952"
+    num_posts            : 5
+    colorscheme          : "light"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
+    theme                : "github-light"
+    issue_term           : "pathname"
   giscus:
     repo_id              : # Shown during giscus setup at https://giscus.app
     category_name        : # Full text name of the category
@@ -51,39 +51,39 @@ comments:
     reactions_enabled    : # '1' for enabled (default), '0' for disabled
     theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
   staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+    branch               : "master"
+    endpoint             : "https://{your Staticman v3 API}/v3/entry/github/"
 reCaptcha:
   siteKey                :
   secret                 :
 atom_feed:
-  path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+  path                   : "feed.xml"
+  hide                   : "false"
+search                   : "true"
+search_full_content      : "true"
+search_provider          : "google"
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
 google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
+  search_engine_id       : "7b8abb47bff7ac70c"
+  instant_search         : "false"
 # SEO Related
-google_site_verification :
+google_site_verification : "5TthfhA6PQiwX7g6BhkbQqzo7ZSCh4PAOLGPegdfmYs"
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "ufax24"
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
+  username               : "ufax249999"
+  app_id                 : "2910681209183952"
+  publisher              : 
+og_image                 : "https://firebasestorage.googleapis.com/v0/b/ufax24-960eb.appspot.com/o/ART_UFAX24%2F1%20copy%207.jpg?alt=media&token=0423f82f-63e0-4b23-80d8-f89cfad9c899"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -93,48 +93,48 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag"
   google:
-    tracking_id          :
+    tracking_id          : "GTM-KG7865K"
     anonymize_ip         : # true, false (default)
 
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "UFAX24"
+  avatar           : "https://firebasestorage.googleapis.com/v0/b/ufax24-960eb.appspot.com/o/LOGO%2FLOGO-UFAx24-X12-1.png?alt=media&token=f1ab549f-afb6-4fa7-948d-2171fee1264b"
+  bio              : "เว็บแทงบอล เว็บใหญ่ แจกหนัก จ่ายจริง จ่ายไม่อั้น"
+  location         : "Thailand"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      # url: "mailto:ufax24@ufa.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      # url: "https://ufax24.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      # url: "https://twitter.com/ufax24"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      # url: "https://facebook.com/ufax249999"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      # url: "https://instagram.com/ufax24"
 
 # Site Footer
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      # url: "https://twitter.com/ufax24"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      # url: "https://facebook.com/ufax249999"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url:
@@ -146,7 +146,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      # url: "https://instagram.com/ufax24"
 
 
 # Reading Files
