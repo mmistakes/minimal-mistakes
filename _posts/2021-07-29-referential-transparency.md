@@ -159,7 +159,7 @@ Let me define a small function to compute the sum of all naturals up to `n`:
 ```scala
 def sumN(n: Int): Int =
     if (n <= 0) 0
-    else n + sumN(n + 1)
+    else n + sumN(n - 1)
 ```
 
 Looking at the code, we quickly understand that this function is referentially transparent: it does nothing else but compute values. No interaction with the world of any kind. If our function is RT, then we can quickly trace its execution:
