@@ -254,7 +254,33 @@ trait Serde[-R, T] extends Deserializer[R, T] with Serializer[R, T] {
 }
 ```
 
-Hence, we will use the `inmap` function if the derivation is not effectful, for example if it always succeeds. Otherwise, we will use the `inmapM` if the derivation can produce side effects, such as throwing an exception. For example, we want to read the key of every match updates into the following class:
+Hence, we will use the `inmap` function if the derivation is not effectful, for example if it always succeeds. Otherwise, we will use the `inmapM` if the derivation can produce side effects, such as throwing an exception. For example, imagine that each Kafka message has a JSON payload, representing a snapshot of a match during the time:
+
+```json
+{
+   players: [
+     {
+       "name": "ITA",
+       "score": 3
+     },
+     {
+       "name": "ENG",
+       "score": 2
+     }
+   ]
+}
+```
+
+Hence, we can represent the same information using Scala classes:
+
+```scala
+case class Player(name: String, score: Int)
+case class Match(players: Array[Player])
+```
+
+So, we need to define a decoder, that is an object that can transform the JSON string representation of a match in an instance of the `Match` class. Luckily, the ZIO ecosystem has a project that can help us: The [zio-json](https://github.com/zio/zio-json) library.
+
+we want to read the key of every match updates into the following class:
 
 ```scala
 // The key of the message is something like ITA-ENG
