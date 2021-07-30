@@ -4,6 +4,8 @@ permalink: /contact-us/
 classes: wide2
 header:
   overlay_color: "#0066CC"
+excerpt: >
+  If you'd like to get in touch with us, please reach out using the contact information below.<br />
 last_modified_at: 2021-05-07
 ---
 
