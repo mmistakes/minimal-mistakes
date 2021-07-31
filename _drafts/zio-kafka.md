@@ -258,7 +258,7 @@ Hence, we will use the `inmap` function if the derivation is not effectful, for 
 
 ```json
 {
-   players: [
+   "players": [
      {
        "name": "ITA",
        "score": 3
@@ -327,3 +327,50 @@ val matchSerde: Serde[Any, Match] = Serde.string.inmapM { matchAsString =>
 The only operation we have done in addition to what we already said is mapping the left value of the `Either` object resulting from the decoding into an exception. In this way, we honor the signature of the `ZIO.fromEither` factory method.
 
 Finally, it's usual to encode Kafka messages' values using some form of binary compression, suca as [Avro](https://avro.apache.org/). In this case, we can create a dedicated `Serde` directly from the raw type `org.apache.kafka.common.serialization.Serde` coming from the official Kafka client library. In fact, there are many implementations of Avro serializers and deserializer, such as [Confluent](https://docs.confluent.io/platform/current/schema-registry/serdes-develop/serdes-avro.html) `KafkaAvroSerializer` and `KafkaAvroDeserializer`.
+
+### 5.3. Consuming messages
+
+We can read typed messages from a Kafka topic. As we said, the library shares the messages with developers using a `ZStream`. In our example, the produced stream has type `ZStream[Consumer, Throwable, CommittableRecord[UUID, Match]]`:
+
+```scala
+val matchesStreams: ZStream[Consumer, Throwable, CommittableRecord[UUID, Match]] =
+  Consumer.subscribeAnd(Subscription.topics("updates"))
+    .plainStream(Serde.uuid, matchSerde)
+```
+
+Now what should we do with them? Well, if we read a message, maybe we want to process it in some way, and ZIO lets us use all the functions available in the `ZStream` type. We might be requested to map each message. ZIO gives use many variants of the `map` function. The main two are the following:
+
+```scala
+def map[O2](f: O => O2): ZStream[R, E, O2]
+def mapM[R1 <: R, E1 >: E, O2](f: O => ZIO[R1, E1, O2]): ZStream[R1, E1, O2]
+```
+
+As we can see, the difference is if the transformation is effectful or not. Let's map the payload of the message in a `String`, suitable for printing:
+
+```scala
+matchesStreams
+  .map(cr => (cr.value.score, cr.offset))
+```
+
+The `map` function uses utility methods we defined on the `Match` and `Player` type:
+
+```scala
+case class Player(name: String, score: Int) {
+  override def toString: String = s"$name: $score"
+}
+case class Match(players: Array[Player]) {
+  def score: String = s"${players(0)} - ${players(1)}"
+}
+```
+
+Moreover, it's always a good idea to forward the `offset` of the message, since we'll use it to commit the message's position inside the partition.
+
+Using the information just transformed, we can now produce some side effect, such as writing the payload to a database or simply to the console. ZIO defines the `tap` method for doing this:
+
+```scala
+matchesStreams
+  .map(cr => (cr.value.score, cr.offset))
+  .tap { case (score, _) => console.putStrLn(s"| $score |") }
+```
+
+TODO
