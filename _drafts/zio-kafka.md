@@ -278,7 +278,24 @@ case class Player(name: String, score: Int)
 case class Match(players: Array[Player])
 ```
 
-So, we need to define a decoder, that is an object that can transform the JSON string representation of a match in an instance of the `Match` class. Luckily, the ZIO ecosystem has a project that can help us: The [zio-json](https://github.com/zio/zio-json) library.
+So, we need to define a decoder, that is an object that can transform the JSON string representation of a match in an instance of the `Match` class. Luckily, the ZIO ecosystem has a project that can help us: The [zio-json](https://github.com/zio/zio-json) library. 
+
+We are not going to go deeper in the zio-json library, since it's not the main focus of the article. However, let's see together the easiest way to declare a decoder and an encoder. So, we start with the decoder. If the class we want to decode has already the fields' names equal to the JSON fields, we can declare a decoder with just one line of code:
+
+```scala
+object Player {
+  implicit val decoder: JsonDecoder[Player] = DeriveJsonDecoder.gen[Player]
+}
+```
+
+The decoder adds to the `String` type the following extension method, which lets us decode a JSON string into a class:
+
+```scala
+// zio-json library code
+def fromJson[A](implicit A: JsonDecoder[A]): Either[String, A]
+```
+
+TODO
 
 we want to read the key of every match updates into the following class:
 
