@@ -271,7 +271,7 @@ Hence, we will use the `inmap` function if the derivation is not effectful, for 
 }
 ```
 
-Hence, we can represent the same information using Scala classes:
+We can represent the same information using Scala classes:
 
 ```scala
 case class Player(name: String, score: Int)
@@ -280,7 +280,7 @@ case class Match(players: Array[Player])
 
 So, we need to define a decoder, that is an object that can transform the JSON string representation of a match in an instance of the `Match` class. Luckily, the ZIO ecosystem has a project that can help us: The [zio-json](https://github.com/zio/zio-json) library. 
 
-We are not going to go deeper in the zio-json library, since it's not the main focus of the article. However, let's see together the easiest way to declare a decoder and an encoder. So, we start with the decoder. If the class we want to decode has already the fields' names equal to the JSON fields, we can declare a decoder with just one line of code:
+We are not going to go deeper in the zio-json library, since it's not the main focus of the article. However, let's see together the easiest way to declare a decoder and an encoder. So, we start with the decoder. If the class we want to decode has already the fields' names equal to the JSON fields, we can declare a `JsonDecoder` type class with just one line of code:
 
 ```scala
 object Player {
@@ -288,44 +288,42 @@ object Player {
 }
 ```
 
-The decoder adds to the `String` type the following extension method, which lets us decode a JSON string into a class:
+The type class adds to the `String` type the following extension method, which lets us decode a JSON string into a class:
 
 ```scala
 // zio-json library code
 def fromJson[A](implicit A: JsonDecoder[A]): Either[String, A]
 ```
 
-TODO
+As we can see, the above function returns an `Either` object mapping a failure as a `String`.
 
-we want to read the key of every match updates into the following class:
-
-```scala
-// The key of the message is something like ITA-ENG
-case class Players(p1: String, p2: String)
-```
-
-Since the parsing of the key might fail, we can define a new serde using the `inmapM` function:
+In the same way, we can declare a `JsonEncoder` type class:
 
 ```scala
-val playersSerde: Serde[Any, Players] = Serde.string.inmapM { playersAsString =>
-  ZIO.effect {
-    if (!playersAsString.matches("...-...")) {
-      throw new IllegalArgumentException(s"$playersAsString doesn't represents two players")
-    }
-    val split = playersAsString.split("-")
-    Players(split(0), split(1))
-  }
-} { players =>
-  ZIO.succeed {
-    s"${players.p1}-${players.p2}"
-  }
+object Player {
+  implicit val encoder: JsonEncoder[Player] = DeriveJsonEncoder.gen[Player]
 }
 ```
 
-Often, the values of Kafka massages represent JSON objects. So, it's possible to serialize / deserialize the JSON object directly into a structured type. The Kafka official library already brings us the serdes to manage JSON objects: [`JsonPOJOSerializer`](https://github.com/apache/kafka/blob/1.0/streams/examples/src/main/java/org/apache/kafka/streams/examples/pageview/JsonPOJOSerializer.java), and [`JsonPOJODeserializer`](https://github.com/apache/kafka/blob/1.0/streams/examples/src/main/java/org/apache/kafka/streams/examples/pageview/JsonPOJODeserializer.java). Since, using one of the many variant of the `apply` method, we can create a ZIO `Serde` also from Kafka serdes or from our preferred JSON library.
-
-// TODO Example
+This time, the type class adds a method to our type that encodes it into a JSON string:
 
 ```scala
-
+// zio-json library code
+def toJson(implicit A: JsonEncoder[A]): String
 ```
+
+Note that it's a best practice to declare the instances of decoder and encoder type classes inside the companion object of a type.
+
+Now, we just assemble all the pieces we just created using the `inmapM` function:
+
+```scala
+val matchSerde: Serde[Any, Match] = Serde.string.inmapM { matchAsString =>
+  ZIO.fromEither(matchAsString.fromJson[Match].left.map(new RuntimeException(_)))
+} { matchAsObj =>
+  ZIO.effect(matchAsObj.toJson)
+}
+```
+
+The only operation we have done in addition to what we already said is mapping the left value of the `Either` object resulting from the decoding into an exception. In this way, we honor the signature of the `ZIO.fromEither` factory method.
+
+Finally, it's usual to encode Kafka messages' values using some form of binary compression, suca as [Avro](https://avro.apache.org/). In this case, we can create a dedicated `Serde` directly from the raw type `org.apache.kafka.common.serialization.Serde` coming from the official Kafka client library. In fact, there are many implementations of Avro serializers and deserializer, such as [Confluent](https://docs.confluent.io/platform/current/schema-registry/serdes-develop/serdes-avro.html) `KafkaAvroSerializer` and `KafkaAvroDeserializer`.
