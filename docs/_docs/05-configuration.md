@@ -934,8 +934,72 @@ The paginator only works on files with name `index.html`. To use pagination in a
 paginate_path: /recent/page:num/
 ```
 
-**Please note:** When using Jekyll's default [pagination plugin](https://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest [**jekyll-paginate-v2**](https://github.com/sverrirs/jekyll-paginate-v2).
+**Please note:** When using Jekyll's default [pagination plugin](https://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest **[jekyll-paginate-v2][jekyll-paginate-v2]**.
 {: .notice--info}
+
+  [jekyll-paginate-v2]: (https://github.com/sverrirs/jekyll-paginate-v2)
+
+### Paginate V2
+
+If you're using [Jekyll Paginate V2][jekyll-paginate-v2], you can enjoy its powerful features by removing `paginate` and `paginate_path` and adding the following configuration to your `_config.yml`:
+
+```yaml
+pagination:
+  enabled: true
+  collection: 'posts'
+  per_page: 5
+  permalink: '/page/:num/'  # Pages are index.html inside this folder (default)
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
+```
+
+Then, create `/posts/index.html` with the following content:
+
+```html
+---
+title: "Posts"
+layout: home
+permalink: /posts/
+pagination:
+  enabled: true
+---
+```
+
+Your posts will be paginated at `/posts/`, `/posts/page/2/` and `/posts/page/3/` etc.
+
+Similarly, if you want to paginate a collection or a tag, you can create another `index.html` at an appropriate location, and add configuration to the `pagination` key in the front matter, like this:
+
+```html
+---
+title: "Lovely pets"
+layout: home
+permalink: /pets/
+pagination:
+  enabled: true
+  collection:
+    - cat
+    - dog
+---
+```
+
+**Note:** There are two more configuration options from Jekyll Paginate V2 that this theme doesn't support yet. Changing them may lead to unexpected results and you're on your own.
+
+```yaml
+pagination:
+
+  # Optional, the default file extension for generated pages (e.g html, json, xml).
+  # Internally this is set to html by default
+  extension: html
+
+  # Optional, the default name of the index file for generated pages (e.g. 'index.html')
+  # Without file extension
+  indexpage: 'index'
+```
 
 ### Timezone
 
