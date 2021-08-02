@@ -368,9 +368,48 @@ Moreover, it's always a good idea to forward the `offset` of the message, since 
 Using the information just transformed, we can now produce some side effect, such as writing the payload to a database or simply to the console. ZIO defines the `tap` method for doing this:
 
 ```scala
+// zio-kafka library code
+def tap[R1 <: R, E1 >: E](f0: O => ZIO[R1, E1, Any]): ZStream[R1, E1, O]
+```
+
+So, after getting a printable string from our Kafka message, we print it to the console:
+
+```scala
 matchesStreams
   .map(cr => (cr.value.score, cr.offset))
   .tap { case (score, _) => console.putStrLn(s"| $score |") }
+```
+
+Once we finished playing with messages, it's time for our consumer to commit the offset of the last read message. In this way, the next poll cycle will read from the assigned partition a new set of information.
+
+The consumers from zio-kafka read messages from topic grouped in `Chunk`s. As we said, the `ZStream` implementation lets us forgetting about chunk during processing. However, to commit the right offset we need the access again to the `Chunk`.
+
+Fortunately, the zio-stream libraries defines a set of transformations that executes on `Chunk` and not on single elements of the stream: They're called _transducers_, and the reference type is `ZTransducer`. The library defines a transducer as:
+
+```scala
+ZTransducer[-R, +E, -I, +O](val push: ZManaged[R, Nothing, Option[Chunk[I]] => ZIO[R, E, Chunk[O]]])
+```
+
+Basically, it's a wrapper around a function that from a resource that might produce a chunks containing values of type `I`, obtains an effect of chunks containing values of type `O`. The size of each chunk may vary during the transformation.
+
+In our case, we are going to apply the `Consumer.offsetBatches` transducer:
+
+```scala
+// zio-kafka library code
+val offsetBatches: ZTransducer[Any, Nothing, Offset, OffsetBatch] =
+      ZTransducer.foldLeft[Offset, OffsetBatch](OffsetBatch.empty)(_ merge _)
+```
+
+Broadly, the transducer merges the input offsets, where the `merge` function implements the classic _max_ function.
+
+So, committing the offset of a `Chunk` our Kafka messages is equal to apply the above transducer to the `offset` value of each message in the stream:
+
+```scala
+matchesStreams
+  .map(cr => (cr.value.score, cr.offset))
+  .tap { case (score, _) => console.putStrLn(s"| $score |") }
+  .map { case (_, offset) => offset }
+  .aggregateAsync(Consumer.offsetBatches)
 ```
 
 TODO
