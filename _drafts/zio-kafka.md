@@ -400,9 +400,9 @@ val offsetBatches: ZTransducer[Any, Nothing, Offset, OffsetBatch] =
       ZTransducer.foldLeft[Offset, OffsetBatch](OffsetBatch.empty)(_ merge _)
 ```
 
-Broadly, the transducer merges the input offsets, where the `merge` function implements the classic _max_ function.
+Broadly, the transducer merges the input offsets, where the `merge` function implements the classic _max_ function in this case.
 
-So, committing the offset of a `Chunk` our Kafka messages is equal to apply the above transducer to the `offset` value of each message in the stream:
+So, after the application of the `offsetBatches` transducer, each chunk of messages is mapped into a chunk containing only one element, which is their maximum offset:
 
 ```scala
 matchesStreams
@@ -412,4 +412,35 @@ matchesStreams
   .aggregateAsync(Consumer.offsetBatches)
 ```
 
-TODO
+In reality, the `OffsetBatch` type is more than just an offset. In fact, the library defines the type as follow:
+
+```scala
+// zio-kafka library code
+sealed trait OffsetBatch {
+  def offsets: Map[TopicPartition, Long]
+  def commit: Task[Unit]
+  def merge(offset: Offset): OffsetBatch
+  def merge(offsets: OffsetBatch): OffsetBatch
+}
+```
+
+In addition to the information we've just describe, the `OffsetBtach` type contains also the function that creates the effect to commits the offset to the broker, i.e. `def commit: Task[Unit]`.
+
+Great. Now we know for every chunk which is the offset to commit. How can we do that? There are many ways of doing this, among which we can use a `ZSink` function. As in many other streaming libraries, sinks represents the consuming function of a stream. After the execution of a sink, the values of the stream are not available to further processing.
+
+The `ZSink` type has many built-in operations, and we are going to use one of the easier, the `foreach` function, which applies an effectful function to all the values emitted by the sink.
+
+So, commit the offsets prepared by the previous transducer is equal to declare a `ZSink` invoking the `commit` function on each `OffsetBatch` it emits:
+
+```scala
+matchesStreams
+  .map(cr => (cr.value.score, cr.offset))
+  .tap { case (score, _) => console.putStrLn(s"| $score |") }
+  .map { case (_, offset) => offset }
+  .aggregateAsync(Consumer.offsetBatches)
+  .run(ZSink.foreach(_.commit))
+```
+
+The result of the application of the above whole pipeline of operation is a `ZIO[Console with Any with Consumer with Clock, Throwable, Unit]`, which means an effect that writes to the console something it read from a Kafka consumer, and can fail with a `Throwable`, and finally produces no value. In somebody asks why we need also a `Clock` to execute the effect, the answer is that the transducer executes operations on chunks directly using `Fiber`s, and so it requires the capability to schedule them properly.
+
+And that's all folks!
