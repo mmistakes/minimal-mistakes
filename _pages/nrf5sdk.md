@@ -25,11 +25,10 @@ toc_ads: true
 * [nRF5 SDK (1) - nRF52840 칩에서 2개의 UART 모듈 사용하기](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-two-uart/)
 * [nRF5 SDK (2) - nRF52 시리즈 제품별 특징](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-nrf5series/)
 * [nRF5 SDK (3) - nRF52 시리즈 (SDK 17.0.2) TWI (I2C) 모듈 제어](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-twi-i2c/)
+* [nRF5 SDK (4) - nRF52 시리즈 (SDK 17.0.2) Adv. 패킷 업데이트](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-adv-data-packet/)
 
 ---
 
 ## 포스팅 예정 항목
 
 * <span style="color:#5F5F5F">nRF5 SDK (*) - 하나 이상의 SA-ADC 제어 시 누설전류 방지하기</span>
-* <span style="color:#5F5F5F">nRF5 SDK (*) - Advertising Packet 업데이트 하기</span>
-* <span style="color:#5F5F5F">nRF5 SDK (*) - Beacon Packet 업데이트 하기</span>

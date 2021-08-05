@@ -14,7 +14,7 @@ toc_sticky: true
 
 ## 4.1 Setup
 
-* Setup 과정은 포스트 참조 (특이사항 없음)
+* Setup 과정은 이전 nRF5SDK 포스트 참조 (특이사항 없음)
 * nRF5 SDK 예제 중 `Adveritisng_init()` 함수 활용, 필요에 따라 Adv. 패킷 포맷 설정
 
 ---
