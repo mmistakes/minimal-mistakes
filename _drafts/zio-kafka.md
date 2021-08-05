@@ -57,8 +57,10 @@ Using the above information, we should ready to begin out journey.
 First, we need the dependency from the `zio-kafka` and `zio-json`:
 
 ```sbt
-"dev.zio" %% "zio-kafka" % "0.15.0",
-"dev.zio" %% "zio-json"    % "0.1.5"
+libraryDependencies ++= Seq(
+  "dev.zio" %% "zio-kafka"   % "0.15.0",
+  "dev.zio" %% "zio-json"    % "0.1.5"
+)
 ```
 
 During the article, all the code will use the following imports:
