@@ -78,7 +78,7 @@ PDU 영역은 다시 `Advertising, Data, Isochronous Physical Channel PDU` 로 �
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/sdk-mtu-fig1.png" alt="">
 </figure>
 
-실험 결과를 정리하기에 앞서 본 예제에서 사용되는 파라미터 중 `ATT_MTU` 와 `Data_length` 대한 개념이 다소 모호하다. `Data_length` 는 Link Layer (LL) Data Packet PDU 의 Payload 영역의 길이를 가리키는 것 같고, `ATT_MTU` 는 `Data_length` 가 가리키는 영역 중에서도 중 `4 bytes` 길이의 L2CAP Header 를 제외한 영역의 길이를 가리키는 것 같은데.. 생각한 것과는 다르게 동작하는 케이스가 있음.
+실험 결과를 정리하기에 앞서 본 예제에서 사용되는 파라미터 중 `ATT_MTU` 와 `Data_length` 대한 개념이 다소 모호하다. `Data_length` 는 Link Layer (LL) Data Packet PDU 의 Payload 영역의 길이를 가리키는 것 같고, `ATT_MTU` 는 `Data_length` 가 가리키는 영역 중에서도 중 `4 bytes` 길이의 L2CAP Header 를 제외한 영역의 길이를 가리키는 것 같은데 예상과는 다르게 동작함..
 
 ### 5.3.1 ATT MTU = 23 bytes, Data length = 27 bytes, 1 Mbps
 
@@ -116,9 +116,9 @@ DLE 기능 사용하지만, 실제 유효한 데이터는 사용 가능한 패�
 
 ## 5.4 Conclusion
 
-* 본 실험을 통해 얻은 결과: `1 Mbps` 조건에서의 Throughput (`DLE` off: 24 KB/s, on: 90 KB/s). `2 Mbps` 조건에서의 Throughput (`DLE` on: 150 KB/s)
-* 한계점: 예제 소스 코드에서 제공해주는 결과가 실제 유효한 데이터를 기반으로 계산된 결과인지 확인이 안 된다. 또한 실제 환경에서는 데이터를 보내는게 끝이 아니라, 정보를 주고받는 두 기기 사이에 정확한 데이터가 수신되었는지 확인하는 절차 필요. (e.g. QoS)
-* 다음 포스트에서 Nordic UART Service 예제 코드를 이용해서, 임의의 GATT Service 데이터를 보낼 때의 최대 Throughput 을 계산해볼 예정.
+* 본 실험을 통해 얻은 결과: `1 Mbps` 조건에서의 Throughput (`DLE` off: **`24 KB/s`**, on: **`90 KB/s`**). `2 Mbps` 조건에서의 Throughput (`DLE` on: **`150 KB/s`**)
+* 한계점: 예제 소스 코드에서 제공해주는 결과가 실제 유효한 데이터를 기반으로 계산된 결과인지 확인이 안 된다. 또한 실제 환경에서는 데이터를 보내는게 끝이 아니라, 정보를 주고받는 두 기기 사이에 정확한 데이터가 수신되었는지 확인하는 절차 필요. (`e.g. QoS`)
+* 다음 포스트에서 Nordic UART Service 예제 코드를 이용해서, 임의의 GATT Service 데이터를 보낼 때 실제 어플리케이션 시나리오를 고려해서 **Throughput** 을 계산해볼 예정.
 
 ---
 
