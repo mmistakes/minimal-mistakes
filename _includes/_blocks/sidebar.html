@@ -1,0 +1,23 @@
+{% case page.layout %}
+{% when 'index' %}
+  {% assign is_post = false %}
+  {% capture sidebar %}{% include _macro/sidebar.html %}{% endcapture %}
+{% when 'post' %}
+  {% assign is_post = true %}
+  {% capture sidebar %}{% include _macro/sidebar.html %}{% endcapture %}
+{% when 'page' %}
+  {% assign is_post = false %}
+  {% capture sidebar %}{% include _macro/sidebar.html %}{% endcapture %}
+{% when 'archive' %}
+  {% assign is_post = false %}
+  {% capture sidebar %}{% include _macro/sidebar.html %}{% endcapture %}
+{% when 'category' %}
+  {% assign is_post = false %}
+  {% capture sidebar %}{% include _macro/sidebar.html %}{% endcapture %}
+{% when 'tag' %}
+  {% assign is_post = false %}
+  {% capture sidebar %}{% include _macro/sidebar.html %}{% endcapture %}
+{% when 'schedule' %}
+  {% assign is_post = false %}
+  {% capture sidebar %}{% include _macro/sidebar.html %}{% endcapture %}
+{% endcase %}

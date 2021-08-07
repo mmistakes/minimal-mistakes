@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-xs-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  padding: 15px;
+}
+
+@media (min-width: 700px) {
+  .col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  z-index: 100;
+  transition: all .33s cubic-bezier(.17,.84,.44,1);
+}
+
+.card:hover { /* when mouse hover over pricing table */
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px gray;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  margin: 5px;
+  font-size: .75rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-duration: 0.15s;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #222222;
+  border-color: #222222;
+}
+
+.text-muted {
+  color: #6c757d!important;
+  margin-top: 0;
+}

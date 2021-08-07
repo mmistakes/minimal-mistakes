@@ -1,0 +1,14 @@
+{% comment %} list_categories(paginator, prev_text, next_text) {% endcomment %}
+{% capture list_categories %}
+  <ul class="category-list">
+    {% for cat_posts in site.categories %}
+    <li class="category-list-item">
+      {% assign cat = cat_posts[0] %}
+      {% assign posts = cat_posts[1] %}
+      {% assign cat_url_encode = cat | url_encode | replace: '+', '%20' %}
+      <a class="category-list-link" href="{{ '/category/#/' | relative_url | append: cat_url_encode }}">{{ cat }}</a>
+      <span class="category-list-count">{{ posts.size }}</span>
+    </i>
+    {% endfor %}
+  </ul>
+{% endcapture %}

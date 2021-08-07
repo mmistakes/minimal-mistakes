@@ -1,0 +1,28 @@
+{% unless site.duoshuo_shortname
+  or site.disqus_shortname
+  or site.hypercomments_id
+  or site.gentie_productKey
+  or site.duoshuo and site.duoshuo.shortname %}
+
+{% if site.gitalk.enable %}
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+      var gitalk = new Gitalk({
+        clientID: '{{ site.gitalk.clientID }}',
+        clientSecret: '{{ site.gitalk.clientSecret }}',
+        repo: '{{ site.gitalk.repo }}',
+        owner: '{{ site.gitalk.owner }}',
+        admin: ['{{ site.gitalk.owner }}'],
+        id: '{{ page.url }}',
+        labels: ['gitalk'],
+        perPage: 50,
+        distractionFreeMode: true
+      });
+      gitalk.render('gitalk-container');
+</script>
+
+{% endif %}
+
+{% endunless %}

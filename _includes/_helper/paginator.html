@@ -1,0 +1,72 @@
+{% comment %} paginator(paginator, prev_text, next_text) {% endcomment %}
+{% capture paginator %}
+  {% assign end_size = 1 %}
+  {% assign mid_size = 1 %}
+  {% assign current =  paginator.page %}
+  {% capture current_page %}
+    <span class="page-number current">{{ current }}</span>
+  {% endcapture %}
+  {% if paginator.previous_page %}
+    <a class="extend prev" rel="prev" href="{{ paginator.previous_page_path | relative_url }}">{{ prev_text }}</a>
+  {% endif %}
+
+  {% assign total = paginator.total_pages %}
+
+  {% assign left_end = end_size %}
+  {% assign right_end = total | minus: end_size | plus: 1 %}
+  {% assign left_mid = current | minus: mid_size %}
+  {% assign right_mid = current | plus: mid_size %}
+
+  {% if left_end >= current %}{% assign left_end = current | minus: 1 %}{% endif %}
+
+  {% assign current_plus_one = current | plus: 1 %}
+  {% if right_end <= current_plus_one %}{% assign right_end = current_plus_one %}{% endif %}
+
+  {% if left_mid <= end_size %}{% assign left_mid = left_mid | plus: end_size %}{% endif %}
+
+  {% assign total_minus_end_size = total | minus: end_size %}
+  {% if right_mid > total_minus_end_size %}{% assign right_mid = right_mid | minus: end_size %}{% endif %}
+
+  {% assign space_html = '<span class="space">&hellip;</span>' %}
+
+  {% for i in (1..left_end) %}
+    {% assign href = site.paginate_path | relative_url | replace: '//', '/' | replace: ':num', i %}
+    {% if i == 1 %}
+      {% assign href = "/" | relative_url %}
+    {% endif %}
+    <a class="page-number" href="{{ href }}">{{ i }}</a>
+  {% endfor %}
+
+  {% assign current_minus_end_size_minus_mid_size = current | minus: end_size | minus: mid_size %}
+  {% if current_minus_end_size_minus_mid_size > 1 %}
+    {{ space_html }}
+  {% endif %}
+
+  {% assign current_minus_one = current | minus: 1 %}
+  {% if left_mid > left_end %}
+    {% for i in (left_mid..current_minus_one) %}
+      <a class="page-number" href="{{ site.paginate_path | relative_url | replace: '//', '/' | replace: ':num', i }}">{{ i }}</a>
+    {% endfor %}
+  {% endif %}
+  {{ current_page }}
+
+  {% if right_mid < right_end %}
+    {% for i in (current_plus_one..right_mid) %}
+      <a class="page-number" href="{{ site.paginate_path | relative_url | replace: '//', '/' | replace: ':num', i }}">{{ i }}</a>
+    {% endfor %}
+  {% endif %}
+
+  {% assign total_minus_end_size_minus_mid_size = total_minus_end_size | minus: mid_size %}
+  {% if total_minus_end_size_minus_mid_size > current %}
+    {{ space_html }}
+  {% endif %}
+
+  {% for i in (right_end..total) %}
+    <a class="page-number" href="{{ site.paginate_path | relative_url | replace: '//', '/' | replace: ':num', i }}">{{ i }}</a>
+  {% endfor %}
+
+  {% if current < total %}
+    <a class="extend prev" rel="next" href="{{ paginator.next_page_path | relative_url }}">{{ next_text }}</a>
+  {% endif %}
+{% endcapture %}
+{% assign paginator = paginator | normalize_whitespace %}

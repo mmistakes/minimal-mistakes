@@ -1,0 +1,80 @@
+<div class="site-brand-wrapper">
+  <div class="site-meta {% if site.custom_logo.enabled %}custom-logo{% endif %}">
+    {% if site.custom_logo.image and site.scheme == 'Muse' %}
+      <div class="site-meta-headline">
+        <a>
+          <img class="custom-logo-image" src="{{ site.custom_logo.image }}"
+               alt="{{ site.title }}"/>
+        </a>
+      </div>
+    {% endif %}
+
+    <div class="custom-logo-site-title">
+      <a href="{{ '/' | relative_url}}"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">{{ site.title }}</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      {% if site.seo %}
+        <h1 class="site-subtitle" itemprop="description">{{ site.subtitle }}</h1>
+      {% else %}
+        <p class="site-subtitle">{{ site.subtitle }}</p>
+      {% endif %}
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  {% if site.swiftype_key or site.algolia_search.enable or site.tinysou_Key or site.local_search.enable %}
+    {% assign hasSearch = true %}
+  {% endif %}
+
+  {% if site.menu %}
+    <ul id="menu" class="menu">
+      {% for name_path in site.menu %}
+        {% assign name = name_path[0] %}
+        {% assign path = name_path[1] %}
+        {% assign itemName = name | downcase %}
+        <li class="menu-item menu-item-{{ itemName }}">
+          <a href="{{ path | relative_url }}" rel="section">
+            {% if site.menu_icons.enable %}
+              <i class="menu-item-icon fa fa-fw fa-{{site.menu_icons[itemName] | default: 'question-circle' | downcase }}"></i> <br />
+            {% endif %}
+            {{ __.menu[name] }}
+          </a>
+        </li>
+      {% endfor %}
+
+      {% if hasSearch %}
+        <li class="menu-item menu-item-search">
+          {% if site.swiftype_key %}
+            <a href="javascript:;" class="st-search-show-outputs">
+          {% elsif site.local_search.enable or site.algolia_search.enable %}
+            <a href="javascript:;" class="popup-trigger">
+          {% endif %}
+            {% if site.menu_icons.enable %}
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            {% endif %}
+            {{ __.menu.search }}
+          </a>
+        </li>
+      {% endif %}
+    </ul>
+  {% endif %}
+
+  {% if hasSearch %}
+    <div class="site-search">
+      {% include _partials/search.html %}
+    </div>
+  {% endif %}
+</nav>
+
+{% include _custom/header.html %}

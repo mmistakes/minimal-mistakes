@@ -1,0 +1,19 @@
+<script>
+  function reverseBody(){
+    let body = document.getElementsByTagName('body')[0];
+    if(body.style.transform == "scaleX(-1)"){
+      body.style.mozTransform = "";
+      body.style.oTransform = "";
+      body.style.webkitTransform = "";
+      body.style.transform = "";
+    }
+    else{
+      body.style.mozTransform = "scaleX(-1)";
+      body.style.oTransform = "scaleX(-1)";
+      body.style.webkitTransform = "scaleX(-1)";
+      body.style.transform = "scaleX(-1)";
+    }
+  }
+</script>
+
+<h1 id="0401" onclick="reverseBody()">Happy April Fool's Day! <U>(Click Here!)</U></h1>

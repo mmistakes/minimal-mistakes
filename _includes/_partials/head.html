@@ -1,0 +1,135 @@
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+{% if site.pace %}
+  {% assign pace_css_uri = site.vendors._internal | append: '/pace/'| append: site.pace_theme | append: '.min.css?v=1.0.2' | relative_url %}
+  {% assign pace_js_uri = site.vendors._internal | append: '/pace/pace.min.js?v=1.0.2' | relative_url %}
+    {% if site.vendors.pace %}
+      {% assign pace_js_uri = site.vendors.pace %}
+    {% endif %}
+    {% if site.vendors.pace_css %}
+      {% assign pace_css_uri = site.vendors.pace_css %}
+    {% endif %}
+  <script src="{{ pace_js_uri }}"></script>
+  <link href="{{ pace_css_uri }}" rel="stylesheet">
+{% endif %}
+
+
+{% if site.han %}
+  {% assign Han_uri = site.vendors._internal | append: '/Han/dist/han.min.css?v=3.3' | relative_url %}
+  {% if site.vendors.Han %}
+    {% assign Han_uri = site.vendors.Han %}
+  {% endif %}
+  <link rel="stylesheet" media="all" href="{{ Han_uri }}">
+{% endif %}
+
+
+{% comment %} #238, Disable Baidu tranformation {% endcomment %}
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+{% if site.google_site_verification %}
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
+{% endif %}
+
+
+{% if site.yandex_site_verification %}
+  <meta name="yandex-verification" content="{{ site.yandex_site_verification }}" />
+{% endif %}
+
+
+{% if site.baidu_site_verification %}
+  <meta name="baidu-site-verification" content="{{ site.baidu_site_verification }}" />
+{% endif %}
+
+
+{% if site.qihu_site_verification %}
+  <meta name="360-site-verification" content="{{ site.qihu_site_verification }}" />
+{% endif %}
+
+
+{% if site.fancybox %}
+  {% assign fancybox_css_uri = site.vendors._internal | append: '/fancybox/source/jquery.fancybox.css?v=2.1.5' | relative_url %}
+  {% if site.vendors.fancybox_css %}
+    {% assign fancybox_css_uri = site.vendors.fancybox_css %}
+  {% endif %}
+  <link href="{{ fancybox_css_uri }}" rel="stylesheet" type="text/css" />
+{% endif %}
+
+{% include _partials/head/external-fonts.html %}
+
+{% assign font_awesome_uri = site.vendors._internal | append: '/font-awesome/css/font-awesome.min.css?v=4.6.2' | relative_url %}
+{% if site.vendors.fontawesome %}
+  {% assign font_awesome_uri = site.vendors.fontawesome %}
+{% endif %}
+<link href="{{ font_awesome_uri }}" rel="stylesheet" type="text/css" />
+
+<link href="{{ site.css | relative_url }}/main.css?v={{ site.version }}" rel="stylesheet" type="text/css" />
+
+{% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}" />
+{% elsif page.tags and page.tags | size != 0 %}
+  <meta name="keywords" content="{% for tag in page.tags %}{{ tag }},{% endfor %}" />
+{% elsif site.keywords %}
+  <meta name="keywords" content="{{ site.keywords }}" />
+{% endif %}
+
+{% assign site_rss = site.rss %}
+{% if site.feed and site.feed.path and site.rss == '' or site.rss == nil %}
+  {% assign site_rss = site.feed.path %}
+{% endif %}
+{% if site_rss %}
+  <link rel="alternate" href="{{ site_rss | relative_url }}" title="{{ site.title }}" type="application/atom+xml" />
+{% endif %}
+
+
+{% if site.favicon %}
+  <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}?v={{ site.version }}" />
+{% endif %}
+
+
+{% if site.facebook_sdk.enable and site.facebook_sdk.webmaster %}
+  <meta property="fb:admins" content="{{ site.facebook_sdk.fb_admin }}" />
+  <meta property="fb:app_id" content="{{ site.facebook_sdk.app_id }}" />
+{% endif %}
+
+
+{% assign twitter_id = site.twitter %}
+{% assign google_plus = site.google_plus %}
+{% assign fb_admins = site.fb_admins %}
+{% assign fb_app_id = site.fb_app_id %}
+{% include _helper/open_graph.html %}
+{{ open_graph }}
+
+{% comment %} Export some HEXO Configurations to Front-End {% endcomment %}
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '{{ site.baseurl }}',
+    scheme: '{{ site.scheme }}',
+    sidebar: {{ site.sidebar | jsonify }},
+    fancybox: {{ site.fancybox }},
+    motion: {{ site.use_motion }},
+    duoshuo: {
+      userId: '{{ site.duoshuo_info.user_id | default: }}',
+      author: '{{ site.duoshuo_info.admin_nickname | default: __.author }}'
+    },
+    algolia: {
+      applicationID: '{{ site.algolia.applicationID }}',
+      apiKey: '{{ site.algolia.apiKey }}',
+      indexName: '{{ site.algolia.indexName }}',
+      hits: {{ site.algolia_search.hits | jsonify }},
+      labels: {{ site.algolia_search.labels | jsonify }}
+    }
+  };
+</script>
+
+{% comment %} Canonical, good for google search engine (SEO) : https://support.google.com/webmasters/answer/139066 {% endcomment %}
+{% if site.canonical %}
+  <link rel="canonical" href="{{ page.canonical_path | replace: 'index.html', '' | absolute_url }}"/>
+{% endif %}
+
+{% include _partials/head/custom-head.html %}

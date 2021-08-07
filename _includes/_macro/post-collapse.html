@@ -1,0 +1,31 @@
+{% comment %} post-collapse(post) {% endcomment %}
+  <article class="post post-type-{{ post.type | default: 'normal' }}" itemscope itemtype="http://schema.org/Article" {% if route %}route="{{ route }}"{% endif %}>
+    <header class="post-header">
+
+      <{% if site.seo %}h3{% else %}h2{% endif %} class="post-title">
+        {% if post.link %}{% comment %} Link posts {% endcomment %}
+          <a class="post-title-link post-title-link-external" target="_blank" href="{{ post.link }}" itemprop="url">
+            {{ post.title | default: post.link }}
+            <i class="fa fa-external-link"></i>
+          </a>
+        {% else %}
+            <a class="post-title-link" href="{{ post.url | relative_url }}" itemprop="url">
+              {% if post.type == 'picture' %}
+                {{ post.content }}
+              {% else %}
+                <span itemprop="name">{{ post.title | default: __.post.untitled }}</span>
+              {% endif %}
+            </a>
+        {% endif %}
+      </{% if site.seo %}h3{% else %}h2{% endif %}>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="{{ post.date | date_to_xmlschema }}"
+              content="{{ post.date | date: site.date_format }}" >
+          {{ post.date | date: '%m-%d' }}
+        </time>
+      </div>
+
+    </header>
+  </article>

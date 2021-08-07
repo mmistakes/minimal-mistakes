@@ -1,0 +1,30 @@
+<div id="posts" class="posts-collapse" hidden>
+  <div class="collection-title">
+    <{% if site.seo %}h2{% else %}h1{% endif %}>
+    {{ page.tag }}
+    <small>{{  __.title.tag  }}</small>
+    </{% if site.seo %}h2{% else %}h1{% endif %}>
+  </div>
+
+  {% assign paginate = site.tag.paginate | default: site.paginate  %}
+  {% assign paginate_path = site.tag.paginate_path | default: site.paginate_path  %}
+
+  {% for tag_posts in site.tags %}
+    {% assign tag = tag_posts[0] | url_encode | replace: '+', '%20' %}
+    {% assign posts = tag_posts[1] %}
+
+    {% for post in posts %}
+      {% if paginate > 0 %}
+        {% assign page_num = forloop.index0 | divided_by: paginate | plus: 1 %}
+        {% assign route = '/' | append: tag %}
+        {% if page_num != 1 %}
+          {% assign route = route | append: paginate_path | replace: ':num', page_num %}
+        {% endif %}
+      {% endif %}
+
+      {% include _macro/post-collapse.html %}
+    {% endfor %}
+  {% endfor %}
+</div>
+
+<nav class="pagination"></nav>

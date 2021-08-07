@@ -1,0 +1,16 @@
+
+<div id="posts" class="posts-expand">
+  {% assign post = page %}
+  {% include _macro/post.html %}
+  <div class="post-spread">
+    {% if site.jiathis %}
+      {% include _partials/share/jiathis.html %}
+    {% elsif site.baidushare %}
+      {% include _partials/share/baidushare.html %}
+    {% elsif site.add_this_id %}
+      {% include _partials/share/add-this.html %}
+    {% elsif site.duoshuo_shortname and site.duoshuo_share %}
+      {% include _partials/share/duoshuo_share.html %}
+    {% endif %}
+  </div>
+</div>

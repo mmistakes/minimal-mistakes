@@ -1,0 +1,18 @@
+{% if site.algolia_search.enable %}
+
+  {% comment %} S: Include Algolia instantsearch.js library {% endcomment %}
+  {% assign algolia_instant_css = site.vendors._internal | append: '/algolia-instant-search/instantsearch.min.css' | relative_url %}
+  {% if site.vendors.algolia_instant_css %}
+    {% assign algolia_instant_css = site.vendors.algolia_instant_css %}
+  {% endif %}
+  <link rel="stylesheet" href="{{ algolia_instant_css }}">
+
+  {% assign algolia_instant_js = site.vendors._internal | append: '/algolia-instant-search/instantsearch.min.js' | relative_url %}
+  {% if site.vendors.algolia_instant_js %}
+    {% assign algolia_instant_js = site.vendors.algolia_instant_js %}
+  {% endif %}
+  <script src="{{ algolia_instant_js }}"></script>
+  {% comment %} E: Include Algolia instantsearch.js library {% endcomment %}
+
+  <script src="{{ site.js | relative_url }}/src/algolia-search.js?v={{ site.version }}"></script>
+{% endif %}

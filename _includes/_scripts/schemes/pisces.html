@@ -1,0 +1,5 @@
+{% assign scripts = 'src/affix.js, src/schemes/pisces.js' | split: ", " %}
+
+{% for script in scripts %}
+  <script type="text/javascript" src="{{ site.js | relative_url }}/{{ script }}?v={{ site.version }}"></script>
+{% endfor %}

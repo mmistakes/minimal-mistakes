@@ -1,0 +1,50 @@
+{% comment %} Reset `window.Promise` when it was not a function. {% endcomment %}
+{% comment %} IE refers the element whose id is `Promise` as `window.Promise`, this causes Velocity throwing an exception {% endcomment %}
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+{% assign js_vendors = '' %}
+{% assign js_vendors = js_vendors | append: ', ' | append: 'jquery: jquery/index.js?v=2.1.3' %}
+{% assign js_vendors = js_vendors | append: ', ' | append: 'fastclick: fastclick/lib/fastclick.min.js?v=1.0.6' %}
+{% assign js_vendors = js_vendors | append: ', ' | append: 'lazyload: jquery_lazyload/jquery.lazyload.js?v=1.9.7' %}
+{% assign js_vendors = js_vendors | append: ', ' | append: 'velocity: velocity/velocity.min.js?v=1.2.1' %}
+{% assign js_vendors = js_vendors | append: ', ' | append: 'velocity_ui: velocity/velocity.ui.min.js?v=1.2.1' %}
+
+{% if site.fancybox %}
+  {% assign js_vendors = js_vendors | append: ', ' | append: 'fancybox: fancybox/source/jquery.fancybox.pack.js?v=2.1.5' %}
+{% endif %}
+{% if site.canvas_nest %}
+  {% assign js_vendors = js_vendors | append: ', ' | append: 'canvas_nest: canvas-nest/canvas-nest.min.js' %}
+{% endif %}
+
+{% if site.three_waves %}
+  {% assign js_vendors = js_vendors | append: ', ' | append: 'three: three/three.min.js' %}
+  {% assign js_vendors = js_vendors | append: ', ' | append: 'three_waves: three/three-waves.min.js' %}
+{% endif %}
+
+{% if site.canvas_lines %}
+  {% assign js_vendors  = js_vendors | append: ', ' | append: 'three: three/three.min.js' %}
+  {% assign js_vendors  = js_vendors | append: ', ' | append: 'canvas_lines: three/canvas_lines.min.js' %}
+{% endif %}
+
+{% if site.canvas_sphere %}
+  {% assign js_vendors = js_vendors | append: ', ' | append: 'three: three/three.min.js' %}
+  {% assign js_vendors = js_vendors | append: ', ' | append: 'canvas_sphere: three/canvas_sphere.min.js' %}
+{% endif %}
+
+{% if site.canvas_ribbon and site.scheme == 'Pisces'%}
+  {% assign js_vendors = js_vendors | append: ', ' | append: 'canvas_ribbon: canvas-ribbon/canvas-ribbon.js' %}
+{% endif %}
+
+{% assign js_vendors = js_vendors | split: ", " | uniq %}
+{% for js_vendor in js_vendors %}
+  {% assign name_internal = js_vendor | strip | split: ": " %}
+  {% if name_internal.size != 2 %} {% continue %} {% endif %}
+  {% assign name = name_internal[0] | strip  %}
+  {% assign internal = name_internal[1] | strip  %}
+  {% assign internal_script = site.vendors._internal | append: '/' | append: internal | relative_url %}
+  <script type="text/javascript" src="{{ site.vendors[name] | default: internal_script }}"></script>
+{% endfor %}

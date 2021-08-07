@@ -1,0 +1,13 @@
+.comments-button {
+  background-color: #b7b7b7;
+  background-image: url(/assets/images/button/fa-pencil-square-o.png); /* 16px x 16px */
+  background-repeat: no-repeat;  /* make the background image appear only once */
+  background-position: 5% 50%;  /* first value is horizontal; second is vertical */
+  border: none;
+  border-radius: .313em;
+  color: white; /* color of text */
+  text-align: center;
+  padding-left: 25px; /* space between text and left-border; here taken the icon into account*/
+  margin: auto;
+  margin-top: 30px; /* space to the top element */
+}

@@ -1,0 +1,26 @@
+<header class="post-header">
+{% case page.layout %}
+{% when 'page' %}
+  {% capture post_title %}
+    {% if page.type == "categories" and page.title == nil %}
+      {{ __.title.categories }}
+    {% elsif page.type == "tags" and page.title == nil %}
+      {{ __.title.tags }}
+    {% elsif page.type == "about" and page.title == nil %}
+      {{ __.title.about }}
+    {% else %}
+      {{ page.title }}
+    {% endif %}
+  {% endcapture %}
+{% when 'schedule' %}
+  {% capture post_title %}{{ __.title.schedule }}{% endcapture %}
+{% endcase %}
+	<{% if site.seo %}h2{% else %}h1{% endif %} class="post-title" itemprop="name headline">{{ post_title }}</{% if site.seo %}h2{% else %}h1{% endif %}>
+
+{% if page.description %}
+	<div class="post-meta">
+		<div class="post-description">{{ page.description }}</div>
+	</div>
+{% endif %}
+
+</header>

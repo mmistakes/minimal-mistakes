@@ -1,0 +1,17 @@
+{% unless site.duoshuo_shortname
+  or site.disqus_shortname
+  or site.hypercomments_id
+  or site.gentie_productKey
+  or site.duoshuo and site.duoshuo.shortname %}
+
+  {% if site.youyan_uid %}
+    {% assign uid = site.youyan_uid %}
+
+    {% if page.comments %}
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid={{uid}}"></script>
+      <!-- UY END -->
+    {% endif %}
+  {% endif %}
+
+{% endunless %}

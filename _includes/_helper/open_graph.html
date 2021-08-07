@@ -1,0 +1,125 @@
+{% comment %} open_graph(twitter_id, google_plus, fb_admins, fb_app_id) {% endcomment %}
+{% capture open_graph %}
+  {% assign default_images = '' | split: '' %}
+  {% assign images = page.photos | default: default_images %}
+  {% assign page_content = page.content %}
+  {% assign description = page.description | default: page.excerpt | default: page_content | default: site.description %}
+
+  {% if page.tags and page.tags.size != 0 %}{% assign page_tags = page.tags | join: ', ' %}{% endif %}
+  {% assign keywords = page.keywords | default: page_tags | default: site.keywords %}
+
+  {% if page.layout == 'post' %}
+    {% assign type = 'article' %}
+  {% else %}
+    {% assign type = 'website' %}
+  {% endif %}
+
+  {% assign url = page.url | absolute_url %}
+  {% assign og_title = page.title | default: site.title %}
+  {% assign site_name = site.title %}
+  {% assign language = page.language | default: site.language %}
+  {% assign updated = page.updated %}
+  {% assign twitter_card = 'summary' %}
+
+  {% if description %}
+    {% assign description = description | strip_html | strip |
+                            replace: '<', '&lt;' |
+                            replace: '>', '&gt;' |
+                            replace: '&', '&amp;' |
+                            replace: '"', '&quot;' |
+                            replace: "'", '&apos;' |
+                            replace: '\n', ' ' %}
+  {% endif %}
+
+  {% if images.size == 0 and page_content %}
+    {% assign imgs = page_content | strip | split: '<img' | shift %}
+    {% for img in imgs %}
+      {% assign tmp = img | strip | split: 'src=' | shfit %}
+      {% assign tmp = tmp | strip | split: '\"' | shift %}
+      {% assign image = tmp[0] | strip %}
+      {% if image %}
+        {% assign images = images | push: image %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if description %}
+    <meta name="description" content="{{ description }}">
+    <!--newline-->
+  {% endif %}
+
+  {% if keywords %}
+    <meta name="keywords" content="{{ keywords | xml_escape }}">
+    <!--newline-->
+  {% endif %}
+
+  <meta property="og:type" content="{{ type | xml_escape }}"><!--newline-->
+  <meta property="og:title" content="{{ og_title | xml_escape }}"><!--newline-->
+  <meta property="og:url" content="{{ url }}"><!--newline-->
+  <meta property="og:site_name" content="{{ site_name | xml_escape }}"><!--newline-->
+
+  {% if description %}
+    <meta property="og:description" content="{{ description }}">
+    <!--newline-->
+  {% endif %}
+
+  {% if language %}
+    <meta property="og:locale" content="{{ language }}">
+    <!--newline-->
+  {% endif %}
+
+  {% for image in images %}
+    <meta property="og:image" content="{{ image }}">
+    <!--newline-->
+  {% endfor %}
+
+  {% if updated %}
+    <meta property="og:updated_time" content="{{ updated | date_to_xmlschema }}">
+    <!--newline-->
+  {% endif %}
+
+  <meta name="twitter:card" content="{{ twitter_card | xml_escape }}"><!--newline-->
+  <meta name="twitter:title" content="{{ og_title | xml_escape }}"><!--newline-->
+
+  {% if description %}
+    <meta name="twitter:description" content="{{ description }}">
+    <!--newline-->
+  {% endif %}
+
+  {% if images.size != 0 %}
+    <meta name="twitter:image" content="{{ images[0] }}">
+    <!--newline-->
+  {% endif %}
+
+  {% if twitter_id %}
+    {% if twitter_id[0] != '@' %}
+      {% assign twitter_id = '@' | append: twitter_id %}
+    {% endif %}
+    <meta name="twitter:creator" content="{{ twitter_id | xml_escape }}">
+    <!--newline-->
+  {% endif %}
+
+  {% if twitter_site %}
+    <meta name="twitter:site" content="{{ twitter_site | xml_escape }}">
+    <!--newline-->
+  {% endif %}
+
+  {% if google_plus %}
+    <link rel="publisher" href="{{ google_plus }}">
+    <!--newline-->
+  {% endif %}
+
+  {% if fb_admins %}
+    <meta property="fb:admins" content="{{ fb_admins | xml_escape }}">
+    <!--newline-->
+  {% endif %}
+
+  {% if fb_app_id %}
+    <meta property="fb:app_id" content="{{ fb_app_id | xml_escape }}">
+    <!--newline-->
+  {% endif %}
+
+{% endcapture %}
+{% assign lines = open_graph | normalize_whitespace | split: '<!--newline-->' %}
+{% capture open_graph %}{% for line in lines %}
+{{ line | strip }}{% endfor %}{% endcapture %}

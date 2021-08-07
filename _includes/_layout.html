@@ -1,0 +1,122 @@
+<!doctype html>
+{% include _blocks/title.html %}
+{% include _blocks/page_class.html %}
+{% include _blocks/sidebar.html %}
+{% include _blocks/script_extra.html %}
+
+{% assign html_class = 'theme-next ' | append: site.scheme %}
+{% if site.use_motion %}
+  {% assign html_class = html_class | append: ' use-motion' %}
+{% endif %}
+
+<html class="{{ html_class | downcase }}" lang="{{ site.language }}">
+<head>
+  {% include _partials/head.html %}
+  <title>{{ title }}</title>
+  {% include _third-party/analytics/index.html %}
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132564697-1"></script>
+  <meta name="naver-site-verification" content="3f23787c70adb8228f3c4667b85e9c3c05403049"/>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-132564697-1');
+  </script>
+  <!-- mathjax -->
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          tex2jax: {
+              inlineMath: [['$','$'], ['\\(','\\)']],
+              processEscapes: true
+          }
+      });
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+  <!-- rainbow text -->
+  <style>
+    .rainbow {
+      background-color: white !important;
+    	animation: rainbow 3s ease-in-out infinite !important;
+    }
+    @keyframes rainbow {
+    	0% {color: #f8be00; !important text-shadow: 0 0 8px rgba(248,190,  0,0.5);}
+    	14% {color: #ff0000; !important text-shadow: 0 0 8px rgba(255,  0,  0,0.5);}
+    	28% {color: #ff009a; !important text-shadow: 0 0 8px rgba(255,  0,154,0.5);}
+    	42% {color: #0000fd; !important text-shadow: 0 0 8px rgba(  0,  0,253,0.5);}
+    	57% {color: #00e7d6; !important text-shadow: 0 0 8px rgba(  0,231,214,0.5);}
+    	71% {color: #b0e700; !important text-shadow: 0 0 8px rgba(176,231,  0,0.5);}
+    	100% {color: #f8be00; !important text-shadow: 0 0 8px rgba(248,190,  0,0.5);}
+    }
+  </style>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang | default: page.language | default: site.language }}">
+
+  {% assign container_class = "container " %}
+  {% if site.sidebar.position %}
+    {% assign container_class = container_class | append: 'sidebar-position-' | append: site.sidebar.position %}
+  {% endif %}
+
+  <div class="{{ container_class }} {{ page_class }} ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> {% include _partials/header.html %} </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            {{ content }}
+          </div>
+          {% include _third-party/duoshuo-hot-articles.html %}
+          {% include _partials/comments.html %}
+        </div>
+        {% if site.sidebar.display != 'remove' %}
+          {{ sidebar }}
+        {% endif %}
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        {% include _partials/footer.html %}
+        {% include _third-party/analytics/busuanzi-counter.html %}
+        {{ footer }}
+      </div>
+    </footer>
+
+    {% unless site.sidebar.b2t %}
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        {% if site.sidebar.scrollpercent %}
+          <span id="scrollpercent"><span>0</span>%</span>
+        {% endif %}
+      </div>
+    {% endunless %}
+
+  </div>
+
+  {% include _scripts/vendors.html %}
+  {% include _scripts/commons.html %}
+
+  {% assign scheme_script = '_scripts/schemes/' | append: site.scheme | downcase | append: '.html' %}
+  {% include {{ scheme_script }} %}
+
+  {{ script_extra }}
+
+  {% include _scripts/boostrap.html %}
+
+  {% include _third-party/comments/index.html %}
+  {% include _third-party/search/index.html %}
+  {% include _third-party/analytics/lean-analytics.html %}
+  {% include _third-party/seo/baidu-push.html %}
+  {% include _third-party/rating.html %}
+  {% include _third-party/mathjax.html %}
+  {% include _third-party/scroll-cookie.html %}
+  {% include _third-party/exturl.html %}
+</body>
+</html>

@@ -1,0 +1,10 @@
+$highlight_theme : jekyll-config("highlight_theme");
+
+@if $highlight_theme == "normal" {
+  $highlight-deletion     : #fdd !global;
+  $highlight-addition     : #dfd !global;
+}
+@else {
+  $highlight-deletion     : #008000 !global;
+  $highlight-addition     : #800000 !global;
+}

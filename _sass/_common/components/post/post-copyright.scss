@@ -1,0 +1,9 @@
+@mixin post-copyright {
+  .post-copyright {
+    margin: map-get($post-copyright, margin);
+    padding: map-get($post-copyright, padding);
+    border-left: map-get(map-get($post-copyright, border), width) map-get(map-get($post-copyright, border), style) map-get(map-get($post-copyright, border), color);
+    background-color: map-get($post-copyright, bg);
+    list-style: none;
+  }
+}

@@ -1,0 +1,97 @@
+$highlight_theme : jekyll-config("highlight_theme");
+
+
+@if $highlight_theme == "normal" {
+  $highlight-background   : #f7f7f7 !global;
+  $highlight-current-line : #efefef !global;
+  $highlight-selection    : #d6d6d6 !global;
+  $highlight-foreground   : #4d4d4c !global;
+  $highlight-comment      : #8e908c !global;
+  $highlight-red          : #c82829 !global;
+  $highlight-orange       : #f5871f !global;
+  $highlight-yellow       : #eab700 !global;
+  $highlight-green        : #718c00 !global;
+  $highlight-aqua         : #3e999f !global;
+  $highlight-blue         : #4271ae !global;
+  $highlight-purple       : #8959a8 !global;
+  $highlight-gutter       : (
+    color: #869194,
+    bg-color: #eff2f3
+  ) !global;
+}
+
+@if $highlight_theme == "night" {
+  $highlight-background   : #1d1f21 !global;
+  $highlight-current-line : #282a2e !global;
+  $highlight-selection    : #373b41 !global;
+  $highlight-foreground   : #c5c8c6 !global;
+  $highlight-comment      : #969896 !global;
+  $highlight-red          : #cc6666 !global;
+  $highlight-orange       : #de935f !global;
+  $highlight-yellow       : #f0c674 !global;
+  $highlight-green        : #b5bd68 !global;
+  $highlight-aqua         : #8abeb7 !global;
+  $highlight-blue         : #81a2be !global;
+  $highlight-purple       : #b294bb !global;
+  $highlight-gutter       : (
+    color: scale-color($highlight-background, $lightness: 50%),
+    bg-color: scale-color($highlight-background, $lightness: -100%)
+  ) !global;
+}
+
+@if $highlight_theme == "night eighties" {
+  $highlight-background   : #2d2d2d !global;
+  $highlight-current-line : #393939 !global;
+  $highlight-selection    : #515151 !global;
+  $highlight-foreground   : #cccccc !global;
+  $highlight-comment      : #999999 !global;
+  $highlight-red          : #f2777a !global;
+  $highlight-orange       : #f99157 !global;
+  $highlight-yellow       : #ffcc66 !global;
+  $highlight-green        : #99cc99 !global;
+  $highlight-aqua         : #66cccc !global;
+  $highlight-blue         : #6699cc !global;
+  $highlight-purple       : #cc99cc !global;
+  $highlight-gutter       : (
+    color: $highlight-comment,
+    bg-color: scale-color($highlight-background, $lightness: -40%)
+  ) !global;
+}
+
+@if $highlight_theme == "night blue" {
+  $highlight-background   : #002451 !global;
+  $highlight-current-line : #00346e !global;
+  $highlight-selection    : #003f8e !global;
+  $highlight-foreground   : #ffffff !global;
+  $highlight-comment      : #7285b7 !global;
+  $highlight-red          : #ff9da4 !global;
+  $highlight-orange       : #ffc58f !global;
+  $highlight-yellow       : #ffeead !global;
+  $highlight-green        : #d1f1a9 !global;
+  $highlight-aqua         : #99ffff !global;
+  $highlight-blue         : #bbdaff !global;
+  $highlight-purple       : #ebbbff !global;
+  $highlight-gutter       : (
+    color: $highlight-comment,
+    bg-color: scale-color($highlight-background, $lightness: -60%)
+  ) !global;
+}
+
+@if $highlight_theme == "night bright" {
+  $highlight-background   : #000000 !global;
+  $highlight-current-line : #2a2a2a !global;
+  $highlight-selection    : #424242 !global;
+  $highlight-foreground   : #eaeaea !global;
+  $highlight-comment      : #969896 !global;
+  $highlight-red          : #d54e53 !global;
+  $highlight-orange       : #e78c45 !global;
+  $highlight-yellow       : #e7c547 !global;
+  $highlight-green        : #b9ca4a !global;
+  $highlight-aqua         : #70c0b1 !global;
+  $highlight-blue         : #7aa6da !global;
+  $highlight-purple       : #c397d8 !global;
+  $highlight-gutter       : (
+    color: scale-color($highlight-background, $lightness: 40%),
+    bg-color: scale-color($highlight-background, $lightness: 16%)
+  ) !global;
+}

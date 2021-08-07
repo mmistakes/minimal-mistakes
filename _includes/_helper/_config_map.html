@@ -1,0 +1,23 @@
+{% comment %} _config_map(include.key, include.value, include.deep, include.key_prefix) {% endcomment %}
+{% capture _config_map %}
+  {% if include.key != '' and include.key != nil and include.deep <= 3 %}
+    {% assign value_type = include.value | jsonify | slice: 0 %}
+    {% if value_type == '{' %}
+      {% for key_value in include.value %}
+        {% assign key = key_value[0] %}
+        {% assign value = key_value[1] %}
+        {% assign deep = include.deep | plus: 1 %}
+        {% capture key_prefix  %}{{ include.key_prefix }}{{ include.key }}.{% endcapture %}
+        {% include _helper/_config_map.html key=key value=value deep=deep key_prefix=key_prefix %}
+        {{ _config_map }}
+      {% endfor %}
+    {% elsif value_type != '[' %}
+      {% assign value = include.value | jsonify %}
+      {% if value != '{}' and value != '[]' %}
+        '{{ include.key_prefix }}{{ include.key }}': {{ value }},
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endcapture %}
+
+{% assign _config_map = _config_map | normalize_whitespace %}

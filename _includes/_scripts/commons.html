@@ -1,0 +1,5 @@
+{% assign js_commons = 'src/utils.js, src/motion.js' | split: ", " %}
+
+{% for common in js_commons %}
+  <script type="text/javascript" src="{{ site.js | relative_url }}/{{ common }}?v={{ site.version }}"></script>
+{% endfor %}

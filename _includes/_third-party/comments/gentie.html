@@ -1,0 +1,16 @@
+{% unless site.disqus_shortname or site.hypercomments_id or site.duoshuo_shortname or  site.duoshuo and site.duoshuo.shortname %}
+
+  {% if site.gentie_productKey %}
+    {% assign gentie_productKey = site.gentie_productKey %}
+    <script>
+      var cloudTieConfig = {
+        url: document.location.href,
+        sourceId: "",
+        productKey: "{{gentie_productKey}}",
+        target: "cloud-tie-wrapper"
+      };
+    </script>
+    <script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
+  {% endif %}
+
+{% endunless %}

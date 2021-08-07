@@ -1,0 +1,103 @@
+{% assign paginate_path = site[page.layout].paginate_path | default: site.paginate_path  %}
+{% assign paginate = site[page.layout].paginate | default: site.paginate  %}
+
+{% if paginate > 0 %}
+  <script type="text/javascript" src="{{ site.js | relative_url }}/src/paginator.js"></script>
+  <script>
+    (function() {
+      // Url route
+      var hash = window.location.hash.substring(1);
+      $(window).on('hashchange', function() {
+        location.reload();
+        $(this).scrollTop(0);
+      });
+
+      if (!hash)
+        hash = "/";
+      $('[route][route!="' + hash + '"]').remove();
+      $('#posts').show();
+
+      // Pagination
+      {% if page.layout == 'category' %}
+        {% assign collections = site.categories %}
+        {% assign redirect = '/categories/' | relative_url %}
+      {% endif %}
+
+      {% if page.layout == 'tag' %}
+        {% assign collections = site.tags %}
+        {% assign redirect = '/tags/' | relative_url %}
+      {% endif %}
+
+      {% if collections %}
+        if (hash == "/")  {
+          window.location = "{{ redirect }}";
+          return;
+        }
+
+        {% capture maps %}
+          {% for name_posts in collections %}
+            '{{ name_posts[0] | url_encode | replace: '+', '%20' }}': {{ name_posts[1].size }},
+          {% endfor %}
+        {% endcapture %}
+        {% assign maps = maps | normalize_whitespace %}
+
+        var maps = { {{ maps }} };
+        var dirs = hash.split("/");
+        var collection = decodeURIComponent(dirs[1]);
+        dirs.splice(0, 2);
+        hash = "/" + dirs.join("/");
+
+        if (!collection) {
+          window.location = "{{ redirect }}";
+          return;
+        }
+
+        $('.collection-title')[0].childNodes[1].childNodes[0].nodeValue = collection;
+        document.title = "{{ __.title[page.layout] }}: " + collection + " | {{ site.title }}";
+
+        var sizes = maps[encodeURIComponent(collection)];
+        var base = "#" + "/" + collection;
+      {% else %}
+        var sizes = {{ site.posts.size }}
+        var base = "#";
+      {% endif %}
+
+      var current = 0;
+
+      if (hash != '/') {
+        {% capture regex %}/(?:{{ paginate_path | replace: ':num', '(\d+)' | replace: '/', '\\/' }})/{% endcapture %}
+
+        var reg = {{ regex }};
+        var res = reg.exec(hash);
+
+        if (res && res[1])
+          current = parseInt(res[1]);
+      }
+      else {
+        current = 1;
+      }
+
+      var total = Math.floor(sizes / {{ paginate }});
+      if (sizes % {{ paginate }} > 0) {
+        total = total + 1;
+      }
+
+      if (total <= 1) {
+        $('nav.pagination').remove();
+      }
+      else {
+        var content = paginator({
+                          prev_text: '<i class="fa fa-angle-left"></i>',
+                          next_text: '<i class="fa fa-angle-right"></i>',
+                          current: current,
+                          total: total,
+                          base: base,
+                          format: "{{ paginate_path | replace: ':num', '%d' }}",
+                          mid_size: 1,
+                          end_size: 1
+                        });
+          $('nav.pagination').html(content);
+      }
+    })();
+  </script>
+{% endif %}

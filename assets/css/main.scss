@@ -1,11 +1,54 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
+// CSS Style Guide: http://codeguide.co/#css
 
-@charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
 
-// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+$scheme    : '{{ site.scheme | default: Muse }}';
+$variables : base $scheme custom;
+$mixins    : base $scheme custom;
+
+
+{% include _helper/config_map.html %}
+$jekyll-config-map : {{ config_map }};
+
+@function jekyll-config($key) {
+  @return map-get($jekyll-config-map, $key);
+}
+
+// Variables Layer
+// --------------------------------------------------
+@import "_variables/base";
+@import "_variables/{{ site.scheme | default: Muse }}";
+@import "_variables/custom";
+
+// Mixins Layer
+// --------------------------------------------------
+@import "_mixins/base";
+@import "_mixins/{{ site.scheme | default: Muse }}";
+@import "_mixins/custom";
+
+
+
+// Common Layer
+// --------------------------------------------------
+
+// Scaffolding
+@import "_common/scaffolding/scaffolding";
+
+// Layout
+@import "_common/outline/outline";
+
+// Components
+@import "_common/components/components";
+
+
+// Schemes Layer
+// --------------------------------------------------
+@import "_schemes/{{ site.scheme | default: Muse }}/index";
+
+
+
+// Custom Layer
+// --------------------------------------------------
+@import "_custom/custom";

@@ -1,0 +1,5 @@
+{% assign boot_scripts = 'src/bootstrap.js' | split: ", " %}
+
+{% for bs in boot_scripts %}
+  <script type="text/javascript" src="{{ site.js | relative_url }}/{{ bs }}?v={{ site.version }}"></script>
+{% endfor %}

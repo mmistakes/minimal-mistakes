@@ -1,0 +1,27 @@
+{% unless site.disqus_shortname or site.duoshuo_shortname or site.duoshuo and site.duoshuo.shortname %}
+
+	{% if site.hypercomments_id %}
+
+		<script type="text/javascript">
+		_hcwp = window._hcwp || [];
+
+		_hcwp.push({widget:"Bloggerstream", widget_id: {{ site.hypercomments_id }}, selector:".hc-comment-count", label: "{\%COUNT%\}" });
+
+		{% if page.comments %}
+		_hcwp.push({widget:"Stream", widget_id: {{ site.hypercomments_id }}, xid: "{{ page.url | relative_url }}"});
+		{% endif %}
+
+		(function() {
+		if("HC_LOAD_INIT" in window)return;
+		HC_LOAD_INIT = true;
+		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/{{ site.hypercomments_id }}/"+lang+"/widget.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hcc, s.nextSibling);
+		})();
+		</script>
+
+	{% endif %}
+
+{% endunless %}

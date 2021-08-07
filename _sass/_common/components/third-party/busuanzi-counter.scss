@@ -1,0 +1,33 @@
+@if jekyll-config("scheme") == Pisces {
+  .busuanzi-count {
+    @include tablet() {
+      width: auto;
+    }
+    @include mobile() {
+      width: auto;
+    }
+  }
+}
+
+.site-uv,
+.site-pv,
+.page-pv {
+  display: inline-block;
+
+  .busuanzi-value {
+    margin: 0 5px;
+  }
+}
+
+
+@if jekyll-config("busuanzi_count.site_pv") and jekyll-config("busuanzi_count.site_uv") {
+  .site-uv
+  {
+    margin-right: 10px;
+
+    &::after {
+      content: "|";
+      padding-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{% if site.wildfire.enable %}
+  <script type="text/javascript">
+    var wildfireConfig = () => ({
+      {% if site.wildfire.useDev %}
+      useDev: {{site.wildfire.useDev}},
+      {% endif %}
+      {% if site.wildfire.version %}
+      version: '{{site.wildfire.version}}',
+      {% endif %}
+      databaseProvider: '{{site.wildfire.databaseProvider}}',
+      databaseConfig: {
+        {% if site.wildfire.databaseProvider == 'firebase' %}
+        apiKey: '{{site.wildfire.firebase.apiKey}}',
+        authDomain: '{{site.wildfire.firebase.authDomain}}',
+        databaseURL: '{{site.wildfire.firebase.databaseURL}}',
+        projectId: '{{site.wildfire.firebase.projectId}}',
+        storageBucket: '{{site.wildfire.firebase.storageBucket}}',
+        messagingSenderId: '{{site.wildfire.firebase.messagingSenderId}}'
+        {% else %}
+        siteId: '{{site.wildfire.wilddog.siteId}}'
+        {% endif %}
+      },
+      pageURL: '{{ page.url | absolute_url }}',
+      pageTitle: '{{ page.title| replace: "'", "\\'" }}',
+      {% if site.wildfire.theme %}
+      theme: '{{site.wildfire.theme}}',
+      {% endif %}
+      {% if site.wildfire.locale %}
+      locale: '{{site.wildfire.locale}}',
+      {% endif %}
+      {% if site.wildfire.defaultAvatarURL %}
+      defaultAvatarURL: '{{site.wildfire.defaultAvatarURL}}'
+      {% endif %}
+    });
+  </script>
+  {% if page.comments %}
+    {% if site.wildfire.loaderVersion %}
+    <script src="https://unpkg.com/wildfire-comment@{{site.wildfire.loaderVersion}}"></script>
+    {% else %}
+    <script src="https://unpkg.com/wildfire-comment"></script>
+    {% endif %}
+  {% endif %}
+  <script src="https://unpkg.com/wf-count"></script>
+{% endif %}

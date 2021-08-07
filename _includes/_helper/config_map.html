@@ -1,0 +1,18 @@
+{% comment %} config_map() {% endcomment %}
+{% capture config_map %}
+(
+  {% assign exclude_keys = 'source, time, data, documents, github, related_posts, posts, pages, static_files, html_pages, html_files, collections, categories, tags, kramdown' | split: ', ' %}
+  {% assign keys = '' | split: '' %}
+  {% for site_key in site %}
+    {% unless exclude_keys contains site_key %}
+      {% assign keys = keys | push: site_key %}
+      {% assign key = site_key %}
+      {% assign value = site[site_key] %}
+      {% include _helper/_config_map.html key=key value=value deep=1 key_prefix='' %}
+      {{ _config_map }}
+    {% endunless %}
+  {% endfor %}
+)
+{% endcapture %}
+
+{% assign config_map = config_map | normalize_whitespace %}

@@ -1,0 +1,69 @@
+defaults:
+  - name: 김준원
+    intro_url: /teach/junie/
+    blog_url: https://junie.land/
+    BOJ: https://www.acmicpc.net/user/junie
+    Codeforces: https://codeforces.com/profile/junie
+    content: 서울대학교 자유전공학부
+    status: 모집 중
+    tags:
+      - 알고리즘 대회
+      - 코딩 테스트
+      
+  - name: 김준겸
+    intro_url: /teach/ryute/
+    blog_url: https://ryute.tistory.com/
+    BOJ: https://www.acmicpc.net/user/ryute
+    Codeforces: https://codeforces.com/profile/ryute
+    content: 고려대학교 컴퓨터학과
+    comment: 알고리즘/올림피아드 상담
+    status: 모집 마감
+    tags:
+      - 정보올림피아드
+      - 상담&컨설팅
+
+  - name: 김석표
+    intro_url: /teach/dsstar/
+    blog_url: https://dsstar.tistory.com/
+    BOJ: https://www.acmicpc.net/user/dennisstar
+    Codeforces: https://codeforces.com/profile/PipelinePunch
+    content: KAIST 새내기과정학부
+    status: 모집 마감
+    tags:
+      - 정보올림피아드
+
+  - name: 이종서
+    intro_url: /teach/leejseo/
+    blog_url: https://blog.leejseo.com/
+    BOJ: https://www.acmicpc.net/user/leejseo
+    Codeforces: https://codeforces.com/profile/leejseo
+    content: KAIST 전산학부
+    comment: 안녕하세요.
+    status: 모집 마감
+    tags:
+      - 정보올림피아드
+      - 그룹 과외
+
+  - name: 나정휘
+    intro_url: /teach/jhnah917/
+    blog_url: /
+    BOJ: https://www.acmicpc.net/user/jhnah917
+    Codeforces: https://codeforces.com/profile/Justice_Hui
+    content: 블로그 운영자
+    comment: 2021년 겨울 이후에 과외를 할 예정입니다.
+    status: 모집 예정
+    tags:
+      - 정보올림피아드
+      - 그룹 과외
+
+tagmap:
+  - tag: 정보올림피아드
+    url: #
+  - tag: 코딩테스트
+    url: #
+  - tag: 그룹 과외
+    url: #
+  - tag: SW 특기자
+    url: #
+  - tag: 상담&컨설팅
+    url: #

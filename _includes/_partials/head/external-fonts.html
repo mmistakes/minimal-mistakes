@@ -1,0 +1,51 @@
+{% if site.font.enable %}
+
+  {% assign font_config = site.font %}
+  {% assign font_families = '' %}
+  {% assign font_styles = ':300,300italic,400,400italic,700,700italic' %}
+  {% assign font_found = false %}
+
+  {% if font_config.global.family and font_config.global.external %}
+    {% assign font_families = font_families | append: font_config.global.family | append: font_styles %}
+    {% assign font_found = true %}
+  {% endif %}
+
+  {% if font_config.headings.family and font_config.headings.external %}
+    {% if font_found %}
+      {% assign font_families = font_families | append: '|' %}
+    {% endif %}
+
+    {% assign font_families = font_families | append: font_config.headings.family | append: font_styles %}
+  {% endif %}
+
+  {% if font_config.posts.family and font_config.posts.external %}
+    {% if font_found %}
+      {% assign font_families = font_families | append: '|' %}
+    {% endif %}
+
+    {% assign font_families = font_families | append: font_config.posts.family | append: font_styles %}
+  {% endif %}
+
+  {% if font_config.logo.family and font_config.logo.external %}
+    {% if font_found %}
+      {% assign font_families = font_families | append: '|' %}
+    {% endif %}
+
+    {% assign font_families = font_families | append: font_config.logo.family | append: font_styles %}
+  {% endif %}
+
+  {% if font_config.codes.family and font_config.codes.external %}
+    {% if font_found %}
+      {% assign font_families = font_families | append: '|' %}
+    {% endif %}
+
+    {% assign font_families = font_families | append: font_config.codes.family | append: font_styles %}
+  {% endif %}
+
+  {% if font_families != '' %}
+    {% assign font_families = font_families | append: '&subset=latin,latin-ext' %}
+    {% assign font_host = font_config.host | default: '//fonts.googleapis.com' %}
+    <link href="{{ font_host }}/css?family={{ font_families }}" rel="stylesheet" type="text/css">
+  {% endif %}
+
+{% endif %}

@@ -1,0 +1,9 @@
+{% if site.algolia_search.enable %}
+  {% include _third-party/search/algolia-search/dom.html %}
+{% elsif site.swiftype_key %}
+  {% include _partials/search/swiftype.html %}
+{% elsif site.tinysou_Key %}
+  {% include _partials/search/tinysou.html %}
+{% elsif site.local_search.enable %}
+  {% include _partials/search/localsearch.html %}
+{% endif %}

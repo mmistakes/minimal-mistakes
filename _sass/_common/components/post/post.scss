@@ -1,0 +1,71 @@
+.post-body {
+  font-family: $font-family-posts;
+  @include mobile() {
+    word-break: break-word;
+  }
+}
+
+.post-body .fancybox img {
+  display: block !important;
+  margin: 0 auto;
+  cursor: pointer;
+  cursor: zoom-in;
+  cursor: -webkit-zoom-in;
+}
+
+.post-body img.emoji {
+  border: 0 !important;
+  display: inline;
+  vertical-align: sub;
+}
+
+.post-body .image-caption, %caption {
+  margin: 10px auto 15px;
+  text-align: center;
+  font-size: $font-size-base;
+  color: $grey-dark;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.post-body .figure .caption {
+  @extend %caption;
+}
+
+.post-sticky-flag {
+  display: inline-block;
+  font-size: 16px;
+  -ms-transform: rotate(30deg);
+  @include transform(rotate(30deg));
+}
+
+@import "post-expand";
+@import "post-collapse";
+@import "post-type";
+@import "post-title";
+@import "post-meta";
+@import "post-button";
+@import "post-tags";
+@import "post-nav";
+@import "post-eof";
+@import "post-gallery";
+
+@import "post-reward";
+@if  jekyll-config('alipay') or jekyll-config('wechatpay') {
+  @include post-reward;
+}
+
+@import "post-copyright";
+@if jekyll-config('post_copyright.enable') {
+  @include post-copyright;
+}
+
+@import "post-wordcount";
+@if not jekyll-config('post_wordcount.separated_meta') {
+  @include post-wordcount;
+}
+
+@import "post-widgets";
+@if (jekyll-config('facebook_sdk.enable') and jekyll-config('facebook_sdk.like_button')) or (jekyll-config('vkontakte_api.enable') and jekyll-config('vkontakte_api.like')) or jekyll-config('rating.enable') {
+  @include post-widgets;
+}

@@ -1,0 +1,49 @@
+.posts-expand .post-meta {
+  margin: 3px 0 60px 0;
+  color: $grey-dark;
+  font-family: $font-family-posts;
+  font-size: 12px;
+  text-align: center;
+
+  .post-category-list {
+    display: inline-block;
+    margin: 0;
+    padding: 3px;
+  }
+  .post-category-list-link { color: $grey-dark; }
+
+  .post-description {
+    font-size: 14px;
+    margin-top: 2px;
+  }
+}
+
+.post-wordcount {
+  display: inline-block;
+}
+
+.post-meta-divider {
+  margin: 0 .5em;
+}
+
+.post-meta-item-icon {
+  margin-right: 3px;
+  @include tablet() {
+    display: inline-block;
+  }
+  @include mobile() {
+    display: inline-block;
+  }
+}
+.post-meta-item-text {
+  @include tablet() {
+    display: none;
+  }
+  @include mobile() {
+    display: none;
+  }
+}
+
+.posts-expand .post-comments-count {
+  @include mobile() { display: none; }
+}

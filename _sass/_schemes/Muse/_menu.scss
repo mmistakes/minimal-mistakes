@@ -1,0 +1,33 @@
+.site-nav {
+  @include mobile() {
+    position: absolute;
+    left: 0;
+    top: 52px;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    background: white;
+    border-bottom: 1px solid $gray-lighter;
+    z-index: 1;
+  }
+}
+
+.menu {
+  @include mobile() { text-align: left; }
+}
+.menu .menu-item {
+  @include mobile() {
+    display: block;
+    margin: 0 10px;
+    vertical-align: top;
+  }
+
+  br {
+    @include mobile() { display: none; }
+  }
+
+  a {
+    @include mobile() { padding: 5px 10px; }
+  }
+  .fa { margin-right: 0; }
+}

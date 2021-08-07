@@ -1,0 +1,23 @@
+{% case page.layout %}
+{% when 'post' %}
+  {% capture script_extra %}{% include _scripts/pages/post-details.html %}{% endcapture %}
+{% when 'archive' %}
+  {% capture script_extra %}
+    {% if site.use_motion %}
+      <script type="text/javascript" id="motion.page.archive">
+        $('.archive-year').velocity('transition.slideLeftIn');
+      </script>
+    {% endif %}
+    {% include _scripts/pages/pagination.html %}
+  {% endcapture %}
+{% when 'category' %}
+  {% capture script_extra %}
+    {% include _scripts/pages/pagination.html %}
+  {% endcapture %}
+{% when 'tag' %}
+  {% capture script_extra %}
+    {% include _scripts/pages/pagination.html %}
+  {% endcapture %}
+{% else %}
+  {% capture script_extra %}{% include _scripts/pages/post-details.html %}{% endcapture %}
+{% endcase %}

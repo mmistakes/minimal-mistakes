@@ -1,0 +1,16 @@
+{% if site.post_copyright.enable %}
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>{{ __.post.copyright.author | append: __.symbol.colon }}</strong>
+      {{ site.author }}
+    </li>
+    <li class="post-copyright-link">
+      <strong>{{ __.post.copyright.link | append: __.symbol.colon }}</strong>
+      <a href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.url | absolute_url }}</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>{{ __.post.copyright.license_title | append: __.symbol.colon }} </strong>
+      {{ __.post.copyright.license_content | replace_first: '%s', site.post_copyright.license_url | replace_first: '%s', site.post_copyright.license }}
+    </li>
+  </ul>
+{% endif %}

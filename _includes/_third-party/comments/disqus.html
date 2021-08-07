@@ -1,0 +1,68 @@
+{% unless site.duoshuo_shortname or site.duoshuo and site.duoshuo.shortname %}
+  {% if site.disqus.enable %}
+
+    {% if site.disqus.count %}
+      <script id="dsq-count-scr" src="https://{{site.disqus.shortname}}.disqus.com/count.js" async></script>
+    {% endif %}
+
+    {% if page.comments %}
+      {% if site.disqus.hide %}
+      <script type="text/javascript">
+          (function () {
+              // ECMSScript 5 Strict Mode
+              'use strict';
+
+              // Global object
+              var App = {};
+
+              // Create button
+              App.commentsButton = document.createElement('button');
+              App.commentsButton.setAttribute('class', 'comments-button');
+              App.commentsButton.setAttribute('data-js', 'comments-button');
+              App.commentsButton.innerHTML = 'Show Comments';
+
+              // Append button to body
+              parent.document.getElementById("post-nav-id").firstElementChild.appendChild(App.commentsButton);
+
+              // Click event handler
+              App.commentsButton.onclick = function () {
+
+                  // Remove button on click
+                  this.parentNode.removeChild(this);
+
+                  // Create comments container
+                  App.disqusContainer = document.createElement('div');
+                  App.disqusContainer.setAttribute('id', 'disqus_thread');
+
+                  // Append container to body
+                  document.body.appendChild( App.disqusContainer );
+
+                  var disqus_config = function () {
+                      this.page.url = '{{ page.url | absolute_url }}';
+                      this.page.identifier = '{{ page.url | relative_url }}';
+                      this.page.title = '{{ page.title| replace: "'", "\\'" }}';
+                  };
+                  var d = document, s = d.createElement('script');
+                  s.src = 'https://{{site.disqus.shortname}}.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', '' + +new Date());
+                  (d.head || d.body).appendChild(s);
+              };
+          })();
+      </script>
+      {% else %}
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = '{{ page.url | absolute_url }}';
+              this.page.identifier = '{{ page.url | relative_url }}';
+              this.page.title = '{{ page.title| replace: "'", "\\'" }}';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://{{site.disqus.shortname}}.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      {% endif %}
+    {% endif %}
+
+  {% endif %}
+{% endunless %}

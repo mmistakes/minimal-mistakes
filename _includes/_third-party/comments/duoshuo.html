@@ -1,0 +1,33 @@
+{% if site.duoshuo_shortname or site.duoshuo and site.duoshuo.shortname %}
+
+  {% if site.duoshuo %}
+    {% assign duoshuo_shortname = site.duoshuo.shortname %}
+  {% else %}
+    {% assign duoshuo_shortname = site.duoshuo_shortname %}
+  {% endif %}
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"{{duoshuo_shortname}}"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  {% if site.duoshuo_info.ua_enable %}
+    {% if site.duoshuo_info.admin_enable %}
+      {% assign ua_parser_internal = site.vendors._internal | append: '/ua-parser-js/dist/ua-parser.min.js?v=0.7.9' | relative_url %}
+      <script src="{{ site.vendors.ua_parser | default: ua_parser_internal }}"></script>
+      <script src="{{ site.js | relative_url }}/src/hook-duoshuo.js?v={{ site.version }}"></script>
+    {% endif %}
+    {% assign ua_parser_internal = site.vendors._internal | append: '/ua-parser-js/dist/ua-parser.min.js?v=0.7.9' | relative_url %}
+    <script src="{{ site.vendors.ua_parser | default: ua_parser_internal }}"></script>
+    <script src="{{ site.js | relative_url }}/src/hook-duoshuo.js"></script>
+  {% endif %}
+
+{% endif %}

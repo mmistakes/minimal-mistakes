@@ -1,0 +1,29 @@
+{% case page.layout %}
+{% when 'index' %}
+  {% capture title %}{{ site.title }}{% if site.index_with_subtitle and site.subtitle %} - {{site.subtitle }}{% endif %}{% endcapture %}
+{% when 'post' %}
+  {% capture title %}{{ page.title }} | {{ site.title }}{% endcapture %}
+{% when 'page' %}
+  {% capture title %}
+    {% assign page_title_suffix = ' | ' | append: site.title %}
+    {% if page.type == "categories" and page.title == nil %}
+      {{ __.title.categories | append: page_title_suffix }}
+    {% elsif page.type == "tags" and page.title == nil %}
+      {{ __.title.tags | append: page_title_suffix }}
+    {% elsif page.type == "about" and page.title == nil %}
+      {{ __.title.about | append: page_title_suffix }}
+    {% else %}
+      {{ page.title | append: page_title_suffix }}
+    {% endif %}
+  {% endcapture %}
+{% when 'archive' %}
+  {% capture title %}{{ __.title.archives }} | {{ site.title }}{% endcapture %}
+{% when 'category' %}
+  {% capture title %}{{ __.title.category }} | {{ site.title }}{% endcapture %}
+{% when 'tag' %}
+  {% capture title %}{{ __.title.tag }} | {{ site.title }}{% endcapture %}
+{% when 'schedule' %}
+  {% capture title %}{{ __.title.schedule }} | {{ site.title }}{% endcapture %}
+{% endcase %}
+
+{% assign title = title | strip_newlines %}

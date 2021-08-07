@@ -1,0 +1,188 @@
+<ul id='profile-list'>
+</ul>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+  let ratings = { 'codeforces':0, 'BOJ':0, "solved":0, 'atcoder':0 };
+  let handles = { 'codeforces':'{{ include.codeforces_id | default: "None" }}', 'BOJ':'{{ include.boj_id | default: "None" }}', 'atcoder':'{{ include.atcoder_id | default: "None" }}' };
+  let url = { 'codeforces':'https://codeforces.com/profile/', 'BOJ':'http://icpc.me/', 'solved':'https://solved.ac/profile/', 'atcoder':'https://atcoder.jp/users/' };
+  let colors = {
+    'codeforces':[
+      { color:'#808080', min:0,    max:1199 },
+      { color:'#008000', min:1200, max:1399 },
+      { color:'#03A89E', min:1400, max:1599 },
+      { color:'#0000FF', min:1600, max:1899 },
+      { color:'#AA00AA', min:1900, max:2099 },
+      { color:'#FF8C00', min:2100, max:2399 },
+      { color:'#FF0000', min:2400, max:9999 }
+    ],
+    'BOJ':[ { color:'#000000', min:0, max:99999 } ],
+    'solved':[
+      { color:'#000000', min:0, max:0 },
+      { color:'#AD5600', min:1, max:5 },
+      { color:'#3F5C78', min:6, max:10 },
+      { color:'#F0AC2F', min:11, max:15 },
+      { color:'#27E2A4', min:16, max:20 },
+      { color:'#32C3FC', min:21, max:25 },
+      { color:'#FF0062', min:26, max:30 },
+      { color:'#b491ff', min:31, max:31 }
+    ],
+    'atcoder':[
+      { color:'#808080', min:0,    max:399  },
+      { color:'#804000', min:400,  max:799  },
+      { color:'#008000', min:800,  max:1199 },
+      { color:'#00C0C0', min:1200, max:1599 },
+      { color:'#0000FF', min:1600, max:1999 },
+      { color:'#C0C000', min:2000, max:2399 },
+      { color:'#FF8000', min:2400, max:2799 },
+      { color:'#FF0000', min:2800, max:9999 }
+    ],
+    'topcoder':[
+      { color:'#999999', min:0,    max:899  },
+      { color:'#00A900', min:900,  max:1199 },
+      { color:'#6666FF', min:1200, max:1499 },
+      { color:'#DDCC00', min:1500, max:2199 },
+      { color:'#EE0000', min:2200, max:9999 }
+    ]
+  };
+  const solved_tier = [
+      "unranked",
+      "Bronze 5",   "Bronze 4",   "Bronze 3",   "Bronze 2",   "Bronze 1",
+      "Silver 5",   "Silver 4",   "Silver 3",   "Silver 2",   "Silver 1",
+        "Gold 5",     "Gold 4",     "Gold 3",     "Gold 2",     "Gold 1",
+    "Platinum 5", "Platinum 4", "Platinum 3", "Platinum 2", "Platinum 1",
+     "Diamond 5",  "Diamond 4",  "Diamond 3",  "Diamond 2",  "Diamond 1",
+        "Ruby 5",     "Ruby 4",     "Ruby 3",     "Ruby 2",     "Ruby 1",
+        "Master"
+  ];
+
+  function setHtml(service, handle) {
+    let cf = document.getElementById(service);
+    for(let i in colors[service]) {
+      let x = colors[service][i];
+      if(x.min <= ratings[service] && ratings[service] <= x.max) cf.style.color = x.color;
+    }
+
+    cf.href = url[service] + handles[service];
+
+    if(service === 'BOJ') cf.innerHTML = `${handles[service]} (${ratings['BOJ'].toString()} solved)`;
+    else if(service === 'solved') cf.innerHTML = `${handles[service]} (${ratings['solved_ac_rating']}, ${solved_tier[ratings[service]]})`;
+    else if(service === 'mx_codeforces') cf.innerHTML = `Max. ${ratings[service]}`;
+    else cf.innerHTML = `${handles[service]} (${ratings[service].toString()})`;
+
+    setRainbow('BOJ');
+  }
+
+  function setRainbow(service) {
+    let cf = document.getElementById(service);
+    cf.innerHTML = '<span class="rainbow" style="animation: rainbow 3s ease-in-out infinite;font-size: 16px">' + cf.innerHTML + '</span>';
+  }
+
+  function setHtmlWithoutColor(service) {
+    let cf = document.getElementById(service);
+    cf.style.color = 'black';
+    cf.href = url[service] + handles[service];
+    cf.innerHTML = handles[service];
+  }
+
+  function getCodeforcesRating() {
+    handles['mx_codeforces'] = handles['codeforces'];
+    url['mx_codeforces'] = url['codeforces'];
+    colors['mx_codeforces'] = colors['codeforces'];
+    $.ajax({
+      type: 'GET',
+      url: 'https://codeforces.com/api/user.info?handles='+handles['codeforces'],
+      dataType: 'json',
+      timeout: 10000,
+      cache: false,
+      success: function(json) {
+        if(json['status'] == 'OK') {
+          ratings['codeforces'] = json['result'][0]['rating'];
+          ratings['mx_codeforces'] = json['result'][0]['maxRating'];
+          setHtml('codeforces');
+          setHtml('mx_codeforces');
+        }
+        else {
+          setHtmlWithoutColor('codeforces');
+          setHtmlWithoutColor('mx_codeforces');
+        }
+      },
+      error: function() {
+        setHtmlWithoutColor('codeforces');
+        setHtmlWithoutColor('mx_codeforces');
+      }
+    });
+  }
+
+  function getBOJInfo() {
+    handles['solved'] = handles['BOJ'];
+    $.ajax({
+      type: 'GET',
+      url: 'https://solved.ac/api/v3/user/show?handle='+handles['BOJ'],
+      dataType: 'json',
+      timeout: 10000,
+      cache: false,
+      success: function(json) {
+        if(json) {
+          ratings['BOJ'] = json['solvedCount'];
+          ratings['solved'] = json['tier'];
+          ratings['solved_ac_rating'] = json['rating'];
+          setHtml('BOJ'); setHtml('solved');
+        }
+        else {
+          setHtmlWithoutColor('BOJ');
+          setHtmlWithoutColor('solved');
+        }
+      },
+      error: function() {
+        setHtmlWithoutColor('BOJ');
+        setHtmlWithoutColor('solved');
+      }
+    });
+  }
+
+  function getAtCoderInfo() {
+    $.ajax({
+      type: 'GET',
+      url: 'https://kyopro-ratings.herokuapp.com/json?atcoder='+handles['atcoder'],
+      dataType: 'json',
+      timeout: 10000,
+      cache: false,
+      success: function(json) {
+        if(json['atcoder']) {
+          ratings['atcoder'] = json['atcoder']['rating'];
+          setHtml('atcoder');
+        }
+        else {
+          setHtmlWithoutColor('atcoder');
+        }
+      },
+      error: function() {
+        setHtmlWithoutColor('atcoder');
+      }
+    });
+  }
+
+  function makeProfileList(){
+    let inner = "";
+    if(handles['BOJ'] !== 'None'){
+      inner += `<li>BOJ: <a id="BOJ" target="_blank" style="text-decoration:none;font-weight:bold;">loading</a></li>\n`;
+      inner += `<li>solvedac: <a id="solved" target="_blank" style="text-decoration:none;font-weight:bold;">loading</a></li>`;
+    }
+    if(handles['codeforces'] !== 'None'){
+      inner += `<li>Codeforces: <a id="codeforces" target="_blank" style="text-decoration:none;font-weight:bold;">loading</a> / <a id="mx_codeforces" target="_blank" style="text-decoration:none;font-weight:bold;">loading</a></li>`;
+    }
+    if(handles['atcoder'] !== 'None'){
+      inner += `<li>atcoder: <a id="atcoder" target="_blank" style="text-decoration:none;font-weight:bold;">loading</a></li>`;
+    }
+
+    let ul = document.getElementById('profile-list');
+    ul.innerHTML = inner;
+
+    if(handles['BOJ'] !== 'None') getBOJInfo();
+    if(handles['codeforces'] !== 'None') getCodeforcesRating();
+    if(handles['atcoder'] !== 'None') getAtCoderInfo();
+  }
+
+  makeProfileList();
+</script>

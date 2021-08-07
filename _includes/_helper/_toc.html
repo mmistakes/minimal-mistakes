@@ -1,0 +1,45 @@
+{% comment %} _toc(class, list_number, include.source, include.level, include.number_prefix) {% endcomment %}
+{% capture _toc %}
+  {% if include.level <= 6 %}
+    {% assign tag_begin = '<h' | append: include.level %}
+    {% assign blocks = include.source | split: tag_begin | shift %}
+
+    {% if blocks.size == 0 %}
+      {% assign level = include.level | plus: 1 %}
+      {% include _helper/_toc.html source=include.source level=level number_prefix=include.number_prefix %}
+      {{ _toc }}
+    {% else %}
+      {% for block in blocks %}
+        {% assign tag_end = '</h' | append: include.level | append: '>'%}
+        {% assign tmp = block | split: tag_end %}
+        {% assign source = tmp[1] | strip %}
+
+        {% assign tmp = tmp[0] | strip | split: '>' %}
+        {% assign toc_title = tmp | shift | join: '>' | strip_html %}
+
+        {% assign tmp = tmp[0] | strip | split: 'id=' %}
+        {% assign id = tmp[1] | strip | replace: '"', '' %}
+
+        <li class="{{ class }}-item {{ class }}-level-{{ include.level }}">
+          <a class="{{ class }}-link" href="#{{ id }}">
+            {% if list_number %}
+              <span class="{{ class }}-number">{{ include.number_prefix }}{{ forloop.index }}</span>
+            {% endif %}
+            <span class="{{ class }}-text">{{ toc_title }}</span>
+          </a>
+
+          {% capture number_prefix %}{{ include.number_prefix }}{{ forloop.index }}.{% endcapture %}
+          {% assign level = include.level | plus: 1 %}
+          {% include _helper/_toc.html source=source level=level number_prefix=number_prefix %}
+          {% if _toc.size != 0 %}
+            <ol class="{{ class }}-child">
+              {{ _toc }}
+            </ol>
+          {% endif %}
+        </li>
+      {% endfor %}
+    {% endif %}
+  {% endif %}
+{% endcapture %}
+
+{% assign _toc = _toc | normalize_whitespace %}

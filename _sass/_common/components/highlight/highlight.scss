@@ -1,0 +1,184 @@
+// https://github.com/chriskempson/tomorrow-theme
+
+@import "theme";
+@import "diff";
+
+// Placeholder: $code-block
+%code-block {
+  overflow: auto;
+  margin: 20px 0;
+  padding: 0;
+  font-size: $code-font-size;
+  color: $highlight-foreground;
+  background: $highlight-background;
+  line-height: $line-height-code-block;
+}
+
+pre, code { font-family: $code-font-family; }
+
+code {
+  padding: 2px 4px;
+  word-wrap: break-word;
+  color: $code-foreground;
+  background: $code-background;
+  border-radius: $code-border-radius;
+  font-size: $code-font-size;
+}
+
+pre {
+  @extend %code-block;
+
+  code {
+    padding: 0;
+    color: $highlight-foreground;
+    background: none;
+    text-shadow: none;
+  }
+}
+
+.highlight {
+  @extend %code-block;
+  border-radius: 1px;
+
+  pre {
+    border: none;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  & > pre {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: $highlight-background;
+  }
+
+  table {
+    margin: -10px;
+    width: auto;
+    border: none;
+  }
+
+  td {
+    border: none;
+    padding: 0;
+  }
+
+  figcaption {
+    @include clearfix();
+    font-size: 1em;
+    color: $highlight-foreground;
+    line-height: 1em;
+    margin-bottom: 1em;
+
+    a {
+      float: right;
+      color: $highlight-foreground;
+
+      &:hover { border-bottom-color: $highlight-foreground; }
+    }
+  }
+
+  .gutter pre {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: map-get($highlight-gutter, color);
+    text-align: right;
+    background-color: map-get($highlight-gutter, bg-color);
+  }
+
+  .code pre {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: $highlight-background;
+  }
+
+  .line { height: 20px; }
+}
+
+
+.gutter {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.gist table {
+  width: auto;
+
+  td { border: none; }
+}
+
+pre.highlight { padding: 10px; }
+
+// For diff highlight
+pre .deletion { background: $highlight-deletion; }
+pre .addition { background: $highlight-addition; }
+pre .meta     { color: $highlight-purple; }
+
+pre {
+
+  .c, .cm, .cp, .c1, .cs { color: $highlight-comment; }
+
+  .nv, .vc, .vg, .vi,
+  .na,
+  .nt,
+  .sr,
+  .ruby .constant,
+  .xml .tag .title,
+  .xml .pi,
+  .xml .doctype,
+  .html .doctype,
+  .css .id,
+  .css .class,
+  .css .pseudo {
+    color: $highlight-red;
+  }
+
+  .m, .mf, .mh, .mi, .il, .mo, .mx, .mb,
+  .cp,
+  .nb, .bp,
+  .l, .ld,
+  .params,
+  .kc,
+  .gp {
+    color: $highlight-orange;
+  }
+
+  .ruby .class .title,
+  .css .rules .attribute,
+  .s, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .s1, .ss,
+  .value,
+  .inheritance,
+  .header,
+  .ruby .symbol,
+  .xml .cdata,
+  .special,
+  .m, .mf, .mh, .mi, .il, .mo, .mx, .mb,
+  .formula {
+    color: $highlight-green;
+  }
+
+  .nc, .nf,
+  .css .hexcolor {
+    color: $highlight-aqua;
+  }
+
+  .nf,
+  .python .decorator,
+  .python .title,
+  .ruby .function .title,
+  .ruby .title .keyword,
+  .perl .sub,
+  .javascript .title,
+  .coffeescript .title {
+    color: $highlight-blue;
+  }
+
+  .k, .kd, .kn, .kp, .kr, .kt,
+  .javascript .function {
+    color: $highlight-purple;
+  }
+
+}

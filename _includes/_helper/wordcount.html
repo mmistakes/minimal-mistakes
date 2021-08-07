@@ -1,0 +1,28 @@
+{% comment %} wordcount(source) {% endcomment %}
+{% assign source = source | strip_html | strip_newlines %}
+{% assign no_english_source = source | upcase %}
+{% assign no_english_source = no_english_source | remove: 'A' | remove: 'B' | remove: 'C' %}
+{% assign no_english_source = no_english_source | remove: 'D' | remove: 'E' | remove: 'F' %}
+{% assign no_english_source = no_english_source | remove: 'G' | remove: 'H' | remove: 'I' %}
+{% assign no_english_source = no_english_source | remove: 'J' | remove: 'K' | remove: 'L' %}
+{% assign no_english_source = no_english_source | remove: 'M' | remove: 'N' | remove: 'O' %}
+{% assign no_english_source = no_english_source | remove: 'P' | remove: 'Q' | remove: 'R' %}
+{% assign no_english_source = no_english_source | remove: 'S' | remove: 'T' | remove: 'U' %}
+{% assign no_english_source = no_english_source | remove: 'V' | remove: 'W' | remove: 'X' %}
+{% assign no_english_source = no_english_source | remove: 'Y' | remove: 'Z' %}
+
+{% assign no_english_source = no_english_source | remove: ' ' | remove: '"' | remove: '.' | remove: ',' %}
+{% assign no_english_source = no_english_source | remove: '?' | remove: ':' | remove: ';' | remove: "'" %}
+{% assign no_english_source = no_english_source | remove: '<' | remove: '>' | remove: '[' | remove: '']' %}
+{% assign no_english_source = no_english_source | remove: '{' | remove: '}' | remove: '\' | remove: '/' %}
+{% assign no_english_source = no_english_source | remove: '(' | remove: ')' | remove: '!' | remove: '-' %}
+
+{% assign no_english_source = no_english_source | remove: '。' | remove: '，' | remove: '？' | remove: '…' %}
+{% assign no_english_source = no_english_source | remove: '“' | remove: '”' | remove: '《' | remove: '》' %}
+{% assign no_english_source = no_english_source | remove: '【' | remove: '】' | remove: '‘' | remove: '’' %}
+{% assign no_english_source = no_english_source | remove: '：' | remove: '；' | remove: '「' | remove: '」' %}
+{% assign no_english_source = no_english_source | remove: '！' | remove: '—' | remove: '、' | remove: '·' %}
+
+{% assign no_english_wordcount = no_english_source | size %}
+{% assign english_wordcount = source | number_of_words %}
+{% assign wordcount = no_english_wordcount | plus: english_wordcount %}

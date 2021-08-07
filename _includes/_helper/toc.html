@@ -1,0 +1,10 @@
+{% comment %} toc(source, class, list_number) {% endcomment %}
+{% include _helper/_toc.html source=source level=1 number_prefix='' %}
+{% assign toc = _toc | normalize_whitespace %}
+{% if toc.size != 0 %}
+  {% capture toc %}
+    <ol class={{ class }}>
+      {{ toc }}
+    </ol>
+  {% endcapture %}
+{% endif %}
