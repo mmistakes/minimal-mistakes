@@ -6,7 +6,7 @@ html_sliders:
   - slider3
 team_title:
 feature_rows:
-  - image_path: /assets/images/hugo.png
+  - image_path: /assets/images/pessoas/hugo.png
     alt: "Hugo Cunha"
     title: "Hugo Cunha"
     excerpt: "**Diretor Executivo - CEO**"
@@ -20,7 +20,7 @@ feature_rows:
       - label: "@nortanprojetos"
         icon: "fab fa-instagram"
         url: "https://www.instagram.com/nortanprojetos/"
-  - image_path: /assets/images/tales.png
+  - image_path: /assets/images/pessoas/tales.png
     alt: "Tales Gomes"
     title: "Tales Gomes"
     excerpt: "**Diretor de Operações**<br />**Coordenador de Sistemas Elétricos**"
@@ -34,7 +34,7 @@ feature_rows:
       - label: "@nortanprojetos"
         icon: "fab fa-instagram"
         url: "https://www.instagram.com/nortanprojetos/"
-  - image_path: /assets/images/jessica.png
+  - image_path: /assets/images/pessoas/jessica.png
     alt: "Jéssica Gonçalves"
     title: "Jéssica Gonçalves"
     excerpt: "**Co-Diretora de Operações**<br />**Diretora de Arquitetura**"
@@ -48,7 +48,7 @@ feature_rows:
       - label: "@nortanprojetos"
         icon: "fab fa-instagram"
         url: "https://www.instagram.com/nortanprojetos/"
-  - image_path: /assets/images/augusto.png
+  - image_path: /assets/images/pessoas/augusto.png
     alt: "Augusto Cunha"
     title: "Augusto Cunha"
     excerpt: "**Diretor de Projetos Complementares**"
@@ -62,7 +62,7 @@ feature_rows:
       - label: "@nortanprojetos"
         icon: "fab fa-instagram"
         url: "https://www.instagram.com/nortanprojetos/"
-  - image_path: /assets/images/icaro.png
+  - image_path: /assets/images/pessoas/icaro.png
     alt: "Augusto Ícaro"
     title: "Augusto Ícaro"
     excerpt: "**Diretor de TI**<br />**Desenvolvedor da Plataforma Nortan**"
@@ -76,7 +76,7 @@ feature_rows:
       - label: "@nortanprojetos"
         icon: "fab fa-instagram"
         url: "https://www.instagram.com/nortanprojetos/"
-  - image_path: /assets/images/gedson.png
+  - image_path: /assets/images/pessoas/gedson.png
     alt: "Gedson Cunha"
     title: "Gedson Cunha"
     excerpt: "**Consultor Associado**<br />**Engº Ambiental e Sanitarista**"
@@ -90,7 +90,7 @@ feature_rows:
       - label: "@nortanprojetos"
         icon: "fab fa-instagram"
         url: "https://www.instagram.com/nortanprojetos/"
-  - image_path: /assets/images/jader.png
+  - image_path: /assets/images/pessoas/jader.png
     alt: "Jáder Pereira"
     title: "Jáder Pereira"
     excerpt: "**Consultor Associado**<br />**Engº Civil**"
@@ -104,7 +104,7 @@ feature_rows:
       - label: "@nortanprojetos"
         icon: "fab fa-instagram"
         url: "https://www.instagram.com/nortanprojetos/"
-  - image_path: /assets/images/lucas.png
+  - image_path: /assets/images/pessoas/lucas.png
     alt: "Lucas Alves"
     title: "Lucas Alves"
     excerpt: "**Consultor Associado**<br />**Engº Civil**"
@@ -118,7 +118,7 @@ feature_rows:
       - label: "@nortanprojetos"
         icon: "fab fa-instagram"
         url: "https://www.instagram.com/nortanprojetos/"
-  - image_path: /assets/images/martha.png
+  - image_path: /assets/images/pessoas/martha.png
     alt: "Martha Miranda"
     title: "Martha Miranda"
     excerpt: "**Consultora Associada**<br />**Arquiteta e Design de Interiores**"
@@ -132,7 +132,7 @@ feature_rows:
       - label: "@nortanprojetos"
         icon: "fab fa-instagram"
         url: "https://www.instagram.com/nortanprojetos/"
-  - image_path: /assets/images/natanael.png
+  - image_path: /assets/images/pessoas/natanael.png
     alt: "Natanael Filho"
     title: "Natanael Filho"
     excerpt: "**Administrador de Empresas**"
@@ -146,7 +146,7 @@ feature_rows:
       - label: "@nortanprojetos"
         icon: "fab fa-instagram"
         url: "https://www.instagram.com/nortanprojetos/"
-  - image_path: /assets/images/nichollas.png
+  - image_path: /assets/images/pessoas/nichollas.png
     alt: "Nichollas Gomes"
     title: "Nichollas Gomes"
     excerpt: "**Consultor Associado**<br />**Engº Ambiental e Sanitarista**"
@@ -160,7 +160,7 @@ feature_rows:
       - label: "@nortanprojetos"
         icon: "fab fa-instagram"
         url: "https://www.instagram.com/nortanprojetos/"
-  - image_path: /assets/images/paulo.png
+  - image_path: /assets/images/pessoas/paulo.png
     alt: "Paulo Cunha"
     title: "Paulo Cunha"
     excerpt: "**Diretor de Engenharia Civil**"
@@ -174,7 +174,7 @@ feature_rows:
       - label: "@nortanprojetos"
         icon: "fab fa-instagram"
         url: "https://www.instagram.com/nortanprojetos/"
-  - image_path: /assets/images/rafaela.png
+  - image_path: /assets/images/pessoas/rafaela.png
     alt: "Rafaela Carvalho"
     title: "Rafaela Carvalho"
     excerpt: "**Consultora Associada**<br />**Arquiteta e Urbanista**"
@@ -188,7 +188,7 @@ feature_rows:
       - label: "@nortanprojetos"
         icon: "fab fa-instagram"
         url: "https://www.instagram.com/nortanprojetos/"
-  - image_path: /assets/images/ramon.png
+  - image_path: /assets/images/pessoas/ramon.png
     alt: "Ramón Lúcio"
     title: "Ramón Lúcio"
     excerpt: "**Consultor Associado**<br />**Engº Civil**"
@@ -202,7 +202,7 @@ feature_rows:
       - label: "@nortanprojetos"
         icon: "fab fa-instagram"
         url: "https://www.instagram.com/nortanprojetos/"
-  - image_path: /assets/images/rodrigo.png
+  - image_path: /assets/images/pessoas/rodrigo.png
     alt: "Rodrigo Paiva"
     title: "Rodrigo Paiva"
     excerpt: "**Consultor Associado**<br />**Engº Ambiental e Sanitarista**"
@@ -216,7 +216,7 @@ feature_rows:
       - label: "@nortanprojetos"
         icon: "fab fa-instagram"
         url: "https://www.instagram.com/nortanprojetos/"
-  - image_path: /assets/images/saulo.png
+  - image_path: /assets/images/pessoas/saulo.png
     alt: "Saulo Aguiar"
     title: "Saulo Aguiar"
     excerpt: "**Consultor Associado**<br />**Engº Civil**"
@@ -230,7 +230,7 @@ feature_rows:
       - label: "@nortanprojetos"
         icon: "fab fa-instagram"
         url: "https://www.instagram.com/nortanprojetos/"
-  - image_path: /assets/images/talita.png
+  - image_path: /assets/images/pessoas/talita.png
     alt: "Talita Marinho"
     title: "Talita Marinho"
     excerpt: "**Diretora de Recursos Hídricos e Meio Ambiente**<br />**Engª Ambiental e Sanitarista**"
