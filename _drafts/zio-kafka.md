@@ -682,3 +682,5 @@ If everything goes well, our zio-kafka consumer should start printing to the con
 | ITA: 1 - ENG: 1 |
 | ITA: 3 - ENG: 2 |
 ```
+
+TODO Add the handling of deserialization problems :/
