@@ -75,7 +75,7 @@
             {% capture f_url2 %}{{ f.url2 | relative_url }}{% endcapture %}
           {% endif %}
           {% if f.url %}
-            <p style="text-align: {{ f.btn_align | default: 'left' }};"><a href="{{ f_url | relative_url }}" class="btn {{ f.btn_class }}">{% if f.icon %}<i class="{{ f.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {% endif %}{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>{% if f.url2 %} <a href="{{ f_url2 | relative_url }}" class="btn {{ f.btn2_class }}">{{ f.btn2_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>{% endif %}</p>
+            <p style="text-indent: 0; text-align: {{ f.btn_align | default: 'left' }};" class="archive__btn"><a href="{{ f_url | relative_url }}" class="btn {{ f.btn_class }}">{% if f.icon %}<i class="{{ f.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {% endif %}{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>{% if f.url2 %}<br /><a href="{{ f_url2 | relative_url }}" class="btn {{ f.btn2_class }}">{{ f.btn2_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>{% endif %}</p>
           {% endif %}
         </div>
       </div>

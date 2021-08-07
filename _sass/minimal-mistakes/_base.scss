@@ -65,6 +65,14 @@ small,
 
 p {
   margin-bottom: 1.3em;
+  text-indent: 2em;
+  .btn {
+    text-indent: 0;
+  }
+}
+
+.btn__holder {
+  text-indent: 0;
 }
 
 u,
@@ -192,6 +200,7 @@ hr {
 ul li,
 ol li {
   margin-bottom: 0.5em;
+  text-align: justify;
 }
 
 li ul,
