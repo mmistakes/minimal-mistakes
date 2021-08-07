@@ -10,8 +10,12 @@ nortan_intro:
   - image_path: /assets/images/logo.svg
     alt: "A NORTAN"
     title: "A NORTAN"
-    excerpt: "A Nortan é uma plataforma que conecta Você à Consultores Técnicos nas áreas de Construção Civil e Meio Ambiente, mantendo a garantia, credibilidade e segurança de uma Empresa. Fundada em 2020 a Nortan carrega uma missão: Impulsionar a vida profissional dos nossos Consultores Técnicos, proporcionando segurança e eficiência para os associados e para nossos clientes.<br /><br />
-    Para isso proporcionamos um ambiente colaborativo de consultores de alta performance voltados para prestação de serviços relacionados à produção, gestão e solução de espaços para construção civil e meio ambiente. A Nortan fornece uma equipe capacitada de Consultores Técnicos para resolver o seu problema e tirar seu sonho do papel. Trabalhe com a Nortan e tenha soluções completas para todo o ciclo do empreendimento.<br /><br />
+    excerpt: "A Nortan é uma plataforma que conecta Você à Consultores Técnicos nas áreas de Construção Civil e Meio Ambiente, mantendo a garantia, credibilidade e segurança de uma Empresa. Fundada em 2020 a Nortan carrega uma missão: Impulsionar a vida profissional dos nossos Consultores Técnicos, proporcionando segurança e eficiência para os associados e para nossos clientes.
+
+
+    Para isso proporcionamos um ambiente colaborativo de consultores de alta performance voltados para prestação de serviços relacionados à produção, gestão e solução de espaços para construção civil e meio ambiente. A Nortan fornece uma equipe capacitada de Consultores Técnicos para resolver o seu problema e tirar seu sonho do papel. Trabalhe com a Nortan e tenha soluções completas para todo o ciclo do empreendimento.
+
+
     Nossa visão é ser a maior rede colaborativa de consultores da construção civil e meio ambiente, sendo uma referência como uma rede de conexões que proporciona múltiplos canais de venda no mercado, segurança, visibilidade e valorização profissional. Conheça a Nortan, e experimente o que é trabalhar com especialistas."
 areas_atuacao:
   - title: "ÁREAS DE ATUAÇÃO"
@@ -68,12 +72,12 @@ contato:
 
 {% include slider.html selector="slider1" %}
 
-{% include feature_row id="nortan_intro" type="left" img_style="padding: 50px;"%}
+{% include feature_row id="nortan_intro" type="left" img_style="padding: 50px;" %}
 
-{% include feature_row id="areas_atuacao" type="wide" title_aligment="text-center" properties='data-aos="fade-left" style="border-bottom: 0px solid;"' %}
+{% include feature_row id="areas_atuacao" type="wide" title_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
-{% include feature_row_slider id="feature_rows" selector="slider2" properties='data-aos="fade-up"' title_size="h4" %}
+{% include feature_row_slider id="feature_rows" selector="slider2" properties='data-aos="fade-left"' title_size="h4" %}
 
-{% include feature_row id="contato" type="center" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
+{% include feature_row id="contato" type="center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
 {% include contact_map.html %}

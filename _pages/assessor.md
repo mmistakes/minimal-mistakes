@@ -63,18 +63,18 @@ assessor_tabela:
     alt: "Tabela de preços"
 ---
 
-{% include feature_row id="assessor" type="right" title="ASSESSOR EXECUTIVO REMOTO" wtitle_aligment="text-center" properties='data-aos="fade-left" style="border-bottom: 0px solid; justify-content: left;"' %}
+{% include feature_row id="assessor" type="right" title="ASSESSOR EXECUTIVO REMOTO" wtitle_aligment="text-center" properties='data-aos="fade-right" style="border-bottom: 0px solid; justify-content: left;"' %}
 
 {% include feature_row id="assessor_contratar" type="wide" title_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
-{% include list id="assessor_beneficios" symbol="+" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
+{% include list id="assessor_beneficios" symbol="+" properties='data-aos="fade-left" style="border-bottom: 0px solid;"' %}
 
 {% include feature_row id="assessor_ca" title_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
-{% include feature_row id="assessor_images" type="penta" title="GANHE MAIS TEMPO E ESQUEÇA BUROCRACIA" wtitle_aligment="text-center" title_aligment="text-center" properties='data-aos="fade-left" style="border-bottom: 0px solid; --bg-color: #b4d9c9"' %}
+{% include feature_row id="assessor_images" type="penta" title="GANHE MAIS TEMPO E ESQUEÇA BUROCRACIA" wtitle_aligment="text-center" title_aligment="text-center" properties='data-aos="fade-right" style="border-bottom: 0px solid; --bg-color: #b4d9c9"' %}
 
 <p style="text-align: center" data-aos="fade-up"><a href="https://wa.me/5582982136209" class="btn btn--success"><i class="far fa-handshake" aria-hidden="true"></i> CONTRATE JÁ</a></p>
 
-{% include feature_row id="assessor_tabela" type="wide" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
+{% include feature_row id="assessor_tabela" type="wide" properties='data-aos="fade-left" style="border-bottom: 0px solid;"' %}
 
 <p style="text-align: center" data-aos="fade-up"><a href="https://wa.me/5582982136209" class="btn btn--success"><i class="far fa-handshake" aria-hidden="true"></i> CONTRATE JÁ</a></p>
