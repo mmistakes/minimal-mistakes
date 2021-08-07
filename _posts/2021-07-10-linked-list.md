@@ -1,6 +1,6 @@
 ---
-layout: single
 title: "Linked List" 
+date: 2021-07-10  
 categories:
   - Python
 tags:
