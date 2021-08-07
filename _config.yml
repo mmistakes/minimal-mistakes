@@ -4,17 +4,17 @@
 # ---------------------------------------------------------------
 
 # Site
-title: JusticeHui가 PS하는 블로그
+title: SGT Kwon is ready for discharged
 subtitle:
 description:
-author: JusticeHui
+author: Kwon, Minsung
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: ko
 date_format: '%Y-%m-%d'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url: 'https://justiceHui.github.io'
+url: 'https://minsung.github.io'
 baseurl: '/'
 permalink: pretty
 
@@ -381,7 +381,7 @@ han: false
 # Disqus
 disqus:
   enable: false
-  shortname: justiceHui
+  shortname: denfor123
   count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
@@ -396,14 +396,14 @@ wildfire:
   version: 0.5.6
   # database config
   databaseProvider: firebase # or wilddog
-  firebase: # your firebase config goes here ↓
+  firebase: # your firebase config goes here �넃
     apiKey:
     authDomain:
     databaseURL:
     projectId:
     storageBucket:
     messagingSenderId:
-  wilddog: # your wilddog config goes here ↓
+  wilddog: # your wilddog config goes here �넃
     siteId:
   # other configs
   theme: light # or dark
