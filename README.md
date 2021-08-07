@@ -27,7 +27,7 @@ bundle
 4. After install dependencies just start to serve the website
 
 ```
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 ```
 
 5. Open a browser with this url: `localhost:4000`
