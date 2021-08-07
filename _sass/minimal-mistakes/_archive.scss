@@ -45,6 +45,33 @@
    ARCHIVE
    ========================================================================== */
 
+.course {
+  .feature__item--right {
+    .archive__item {
+      display: flex;
+      @include breakpoint(max-width $medium - 1px) {
+        flex-direction: column;
+        .archive__item-body {
+          .archive__btn {
+            text-align: center !important;
+          }
+        }
+      }
+      @include breakpoint($medium) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  img {
+    max-height: 200px;
+    max-width: 200px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #012e40;
+  }
+}
+
 .archive {
   margin-top: 1em;
   margin-bottom: 2em;
