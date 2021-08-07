@@ -599,7 +599,34 @@ finally produces no value. In somebody asks why we need also a `Clock` to execut
 answer is that the transducer executes operations on chunks directly using `Fiber`s, and so it
 requires the capability to schedule them properly.
 
-And that's all folks!
+### 5.4. Handling Poison Pills
+
+When we use `ZStream`, we must remember that he default behavior for a consumer stream when encountering a deserialization failure is to fail the stream. Until now, we developed the _happy path_, that is when everything goes fine. However, many errors can rise during messages elaboration.
+
+One of the possibles are deserialization error of the messages. We define as a _poison pill_ a message having a schema that isn't deserializable. If it's not properly manage, the reading of a poison pill message will terminate the whole stream.
+
+Fortunately, zio-kafka let us deserialize the key and the value of a massage in a `Try`, just call the `asTry` method of a `Serde`:
+
+```scala
+Consumer.subscribeAnd(Subscription.topics("updates"))
+  .plainStream(Serde.uuid, matchSerde.asTry)
+```
+
+In this way, if something goes wrong during the deserialization process, the developer can teach to the program how to react, without abruptly terminating the stream:
+
+```scala
+Consumer.subscribeAnd(Subscription.topics("updates"))
+  .plainStream(Serde.uuid, matchSerde.asTry)
+  .map(cr => (cr.value, cr.offset))
+  .tap { case (tryMatch, _) =>
+    tryMatch match {
+      case Success(matchz) => console.putStrLn(s"| ${matchz.score} |")
+      case Failure(ex) => console.putStrLn(s"Poison pill ${ex.getMessage}")
+    }
+  }
+```
+
+Usually, a poison pill message is properly logged as an error and its offset committed as a regular message. 
 
 ## 6. Printing Something to Console
 
