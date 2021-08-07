@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Sommerferien",
-    "title": "Sommerferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NDZtdXFoODVlMjdkazQ2dmYzajFyNHRtaWkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2021-06-24",
-      "date_time": null
-    },
-    "end": {
-      "date": "2021-08-07",
-      "date_time": null
-    },
-    "created": "2020-03-11T12:16:17.000Z",
-    "updated": "2020-03-11T12:16:17.482Z"
-  },
-  {
-    "image_path": null,
     "alt": "Einschulung",
     "title": "Einschulung",
     "excerpt": null,
