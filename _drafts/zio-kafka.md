@@ -238,7 +238,7 @@ please refer to the awesome
 article [Organizing Services with ZIO and ZLayers](https://blog.rockthejvm.com/structuring-services-with-zio-zlayer/)):
 
 ```scala
-val consumer: ZLayer[Clock with Blocking, Throwable, Has[Consumer.Service]] =
+val consumer: ZLayer[Clock with Blocking, Throwable, Consumer] =
   ZLayer.fromManaged(managedConsumer)
 ```
 
@@ -710,4 +710,66 @@ If everything goes well, our zio-kafka consumer should start printing to the con
 | ITA: 3 - ENG: 2 |
 ```
 
-TODO Add the handling of deserialization problems :/
+## 7. Producing Messages
+
+As it should be obvious, the zio-kafka libraries also provides Kafka producers in addition to consumers.
+
+As we made for consumers, if we want to produce some messages to a topic, the first thing to create the resource and the layer associated with a producer:
+
+```scala
+val producerSettings: ProducerSettings = ProducerSettings(List("localhost:9092"))
+
+val producer: ZLayer[Blocking, Throwable, Producer[Any, UUID, Match]] =
+  ZLayer.fromManaged(Producer.make[Any, UUID, Match](producerSettings, Serde.uuid, matchSerde))
+```
+
+The `ProducerSettings` follows the same principles of the `ConsumerSettings` type we've already analyzed. The only difference is that the properties we can provide are those related to producers. Refer to [Producer Configurations](https://docs.confluent.io/platform/current/installation/configuration/producer-configs.html) for further details.
+
+Once we crated a set of settings listing at lease the URI of the broker we are going to send the messages to, we build a `Producer` resource, and we surround inside a `ZLayer`. It's very important that we provide explicit information of types in the `Producer.make` smart constructor: The first parameter refers to the environment used by ZIO to create the two `Serde`, whereas the second and the third parameters refer to the type of the keys and of the values of messages respectively.
+
+To send messages to a topic, we have many choices. In fact, the `Producer` module exposes many  accessor functions to send messages. Among the others we find the following:
+
+```scala
+// zio-kafka library code
+object Producer {
+  def produce[R, K, V](record: ProducerRecord[K, V]): RIO[R with Producer[R, K, V], RecordMetadata]
+  def produce[R, K, V](topic: String, key: K, value: V): RIO[R with Producer[R, K, V], RecordMetadata]
+  def produceChunk[R, K, V](records: Chunk[ProducerRecord[K, V]]): RIO[R with Producer[R, K, V], Chunk[RecordMetadata]]
+}
+```
+
+As we can see, we can produce a single message, or a chunk. Also, we can specify directly the topic, key and value of the message, or we can work directly with the `ProducerRecord` type, which already contains them. In our scenario, for sake of simplicity, we decide to produce a single message:
+
+```scala
+val messagesToSend: ProducerRecord[UUID, Match] =
+  new ProducerRecord(
+    "updates",
+    UUID.fromString("b91a7348-f9f0-4100-989a-cbdd2a198096"),
+    itaEngFinalMatchScore
+  )
+
+val producerEffect: RIO[Producer[Any, UUID, Match], RecordMetadata] =
+  Producer.produce[Any, UUID, Match](messagesToSend)
+```
+
+Also in this case, if we want the Scala compiler to understand right the types of our variable, we have to help him specifying the types requested by the `Producer.produce` function. The types semantic is the same as with the `Producer.make` smart constructor.
+
+Hence, the produced effect requests a `Producer[Any, UUID, Match]` as environment type. To execute the effect, we just provide the producer layer we defined above:
+
+```scala
+producerEffect.provideSomeLayer(producer).exitCode
+```
+
+We can compose the production of the messages and the consumption directly in one program using _fibers_ (see [ZIO: Introduction to Fibers](https://blog.rockthejvm.com/zio-fibers/) for further details on ZIO fibers):
+
+```scala
+val program = for {
+  _ <- matchesStreams.provideSomeLayer(consumer ++ zio.console.Console.live).fork
+  _ <- producerEffect.provideSomeLayer(producer) *> ZIO.sleep(5.seconds)
+} yield ()
+program.exitCode
+```
+
+## 8. Conclusions
+
+TODO
