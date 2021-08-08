@@ -8,6 +8,7 @@
 
 ### Enhancements
 
+- Add ARIA role to search forms. [#3086](https://github.com/mmistakes/minimal-mistakes/pull/3086)
 - Add overflow scroll bar to sticky table of contents that are taller than the viewport's height. [#2874](https://github.com/mmistakes/minimal-mistakes/pull/2874)
 - Add Microformats markup. [#3052](https://github.com/mmistakes/minimal-mistakes/pull/3052)
 - Add instructions on how to unminify `main.js` for easier browser debugging. [#3055](https://github.com/mmistakes/minimal-mistakes/pull/3055)
