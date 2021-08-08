@@ -120,10 +120,10 @@ menu:
   home: /
   about: /about/
   archives: /archives/
-  #categories: /categories/
+  categories: /categories/
   tags: /tags/
-  categories: /navigator/
-  teach: /teach/
+  # categories: /navigator/
+  # teach: /teach/
   #sitemap: /menual/
   #commonweal: /404.html
 
