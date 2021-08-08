@@ -5,7 +5,7 @@
 
 # Site
 title: SGT Kwon is ready for discharged
-subtitle:
+subtitle: Footprint
 description:
 author: Kwon, Minsung
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
@@ -120,8 +120,8 @@ menu:
   home: /
   about: /about/
   archives: /archives/
-  categories: /categories/
   tags: /tags/
+  categories: /categories/
   # categories: /navigator/
   # teach: /teach/
   #sitemap: /menual/
