@@ -1,7 +1,8 @@
 ---
 title: "Zio Kafka: A Practical Example of Zio Streams"
-date: 2021-07-24 header:
-image: "/images/blog cover.jpg"
+date: 2021-07-24 
+header:
+  image: "/images/blog cover.jpg"
 tags: []
 excerpt: ""
 ---
@@ -66,14 +67,20 @@ libraryDependencies ++= Seq(
 During the article, all the code will use the following imports:
 
 ```scala
+import org.apache.kafka.clients.producer._
 import zio._
 import zio.blocking.Blocking
 import zio.clock.Clock
 import zio.console.Console
+import zio.duration.durationInt
 import zio.json._
 import zio.kafka.consumer._
+import zio.kafka.producer._
 import zio.kafka.serde.Serde
 import zio.stream.ZSink
+
+import java.util.UUID
+import scala.util.{Failure, Success}
 ```
 
 Moreover, we need a Kafka broker up and running to allow our producers and consumer to write and
