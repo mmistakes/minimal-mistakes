@@ -75,7 +75,7 @@ import zio.console.Console
 import zio.duration.durationInt
 import zio.json._
 import zio.kafka.consumer._
-import zio.kafka.producer._
+import zio.kafka.producer.{Producer, ProducerSettings}
 import zio.kafka.serde.Serde
 import zio.stream.ZSink
 
