@@ -215,7 +215,7 @@ The `ZStream` type flattened the list of `Chunk`s for us, treating them as they 
 
 ### 5.1. Subscribing to Topics
 
-The creation of the stream from the `ZManaged` consumer we just built consists of subscribing it to a Kafka topic and configuring how to interpret the bytes of both the key and the value of each message:
+The creation of the stream consists of subscribing it to a Kafka topic and configuring how to interpret the bytes of both the key and the value of each message:
 
 ```scala
 val matchesStreams: ZStream[Consumer, Throwable, CommittableRecord[String, String]] =
@@ -251,18 +251,14 @@ val partitionedMatchesStreams: SubscribedConsumerFromEnvironment =
 
 ### 5.2. Interpreting Messages: Serialization and Deserialization
 
-Once we subscribed to a topic, we must instruct our consumer how to interpret messages coming from
-the topic. Apache Kafka introduced the concept of _serde_, which stands for _ser_ializer and _
-de_serializer. A consumer should interpret both the key and the value of a message. We give the
-right serde types during the materialization of the read messages into a stream:
+Once we subscribed to a topic, we must instruct our consumers how to interpret messages coming from the topic. Apache Kafka introduced the concept of _serde_, which stands for _ser_ializer and _de_serializer. A consumer should analyze both the key and the value of a message. We give the suitable `Serde` types during the materialization of the read messages into a stream:
 
 ```scala
 Consumer.subscribeAnd(Subscription.topics("updates"))
   .plainStream(Serde.string, Serde.string)
 ```
 
-The `plainStream` method takes two serdes as parameters, the first for the key, and the second for
-the value of a message. Fortunately, the zio-kafka library comes with serdes for common types:
+The `plainStream` method takes two `Serde` as parameters, the first for the key and the second for the value of a message. Fortunately, the zio-kafka library comes with `Serde` for common types:
 
 ```scala
 // Zio-kafka library code
@@ -279,8 +275,7 @@ private[zio] trait Serdes {
 }
 ```
 
-In addition, we can use more advanced serialization / deserialization capabilities. For example, we
-can derive the serde directly from one of the available using the `inmap` family of functions:
+In addition, we can use more advanced serialization/deserialization capabilities. For example, we can derive the `Serde` directly from another using the `inmap` family of functions:
 
 ```scala
 // Zio-kafka library code
@@ -291,10 +286,7 @@ trait Serde[-R, T] extends Deserializer[R, T] with Serializer[R, T] {
 }
 ```
 
-Hence, we will use the `inmap` function if the derivation is not effectful, for example if it always
-succeeds. Otherwise, we will use the `inmapM` if the derivation can produce side effects, such as
-throwing an exception. For example, imagine that each Kafka message has a JSON payload, representing
-a snapshot of a match during the time:
+Hence, we will use the `inmap` function if the derivation is not effectful, for example, if it always succeeds. Otherwise, we will use the `inmapM` if the derivation can produce side effects, such as throwing an exception. For example, imagine that each Kafka message has a JSON payload, representing a snapshot of a match during the time:
 
 ```json
 {
@@ -319,14 +311,9 @@ case class Player(name: String, score: Int)
 case class Match(players: Array[Player])
 ```
 
-So, we need to define a decoder, that is an object that can transform the JSON string representation
-of a match in an instance of the `Match` class. Luckily, the ZIO ecosystem has a project that can
-help us: The [zio-json](https://github.com/zio/zio-json) library.
+So, we need to define a decoder, an object that can transform the JSON string representation of a match in an instance of the `Match` class. Luckily, the ZIO ecosystem has a project that can help us: The [zio-json](https://github.com/zio/zio-json) library.
 
-We are not going to go deeper in the zio-json library, since it's not the main focus of the article.
-However, let's see together the easiest way to declare a decoder and an encoder. So, we start with
-the decoder. If the class we want to decode has already the fields' names equal to the JSON fields,
-we can declare a `JsonDecoder` type class with just one line of code:
+We will not go deeper into the zio-json library since it's not the article's primary focus. However, let's see together the easiest way to declare a decoder and an encoder. So, we start with the decoder. If the class we want to decode has already the fields' names equal to the JSON fields, we can declare a `JsonDecoder` type class with just one line of code:
 
 ```scala
 object Player {
@@ -334,8 +321,7 @@ object Player {
 }
 ```
 
-The type class adds to the `String` type the following extension method, which lets us decode a JSON
-string into a class:
+The type class adds to the `String` type the following extension method, which lets us decode a JSON string into a class:
 
 ```scala
 // zio-json library code
@@ -359,8 +345,7 @@ This time, the type class adds a method to our type that encodes it into a JSON 
 def toJson(implicit A: JsonEncoder[A]): String
 ```
 
-Note that it's a best practice to declare the instances of decoder and encoder type classes inside
-the companion object of a type.
+Note that it's best to declare the instances of decoder and encoder type classes inside the companion object of a type.
 
 Now, we just assemble all the pieces we just created using the `inmapM` function:
 
@@ -372,22 +357,14 @@ val matchSerde: Serde[Any, Match] = Serde.string.inmapM { matchAsString =>
 }
 ```
 
-The only operation we have done in addition to what we already said is mapping the left value of
-the `Either` object resulting from the decoding into an exception. In this way, we honor the
-signature of the `ZIO.fromEither` factory method.
+The only operation we have done is mapping the left value of the `Either` object resulting from the decoding into an exception. In this way, we honor the signature of the `ZIO.fromEither` factory method.
 
-Finally, it's usual to encode Kafka messages' values using some form of binary compression, suca
-as [Avro](https://avro.apache.org/). In this case, we can create a dedicated `Serde` directly from
-the raw type `org.apache.kafka.common.serialization.Serde` coming from the official Kafka client
-library. In fact, there are many implementations of Avro serializers and deserializer, such
-as [Confluent](https://docs.confluent.io/platform/current/schema-registry/serdes-develop/serdes-avro.html) `KafkaAvroSerializer`
-and `KafkaAvroDeserializer`.
+Finally, it's usual to encode Kafka messages' values using some form of binary compressions, such as [Avro](https://avro.apache.org/). In this case, we can create a dedicated `Serde` directly from the raw type `org.apache.kafka.common.serialization.Serde` coming from the official Kafka client library. In fact, there are many implementations of Avro serializers and deserializer, such as [Confluent](https://docs.confluent.io/platform/current/schema-registry/serdes-develop/serdes-avro.html) `KafkaAvroSerializer` and `KafkaAvroDeserializer`.
 
-### 5.3. Consuming messages
 
-We can read typed messages from a Kafka topic. As we said, the library shares the messages with
-developers using a `ZStream`. In our example, the produced stream has
-type `ZStream[Consumer, Throwable, CommittableRecord[UUID, Match]]`:
+### 5.3. Consuming Messages
+
+We can read typed messages from a Kafka topic. As we said, the library shares the messages with developers using a `ZStream`. In our example, the produced stream has the type `ZStream[Consumer, Throwable, CommittableRecord[UUID, Match]]`:
 
 ```scala
 val matchesStreams: ZStream[Consumer, Throwable, CommittableRecord[UUID, Match]] =
@@ -395,24 +372,21 @@ val matchesStreams: ZStream[Consumer, Throwable, CommittableRecord[UUID, Match]]
     .plainStream(Serde.uuid, matchSerde)
 ```
 
-Now what should we do with them? Well, if we read a message, maybe we want to process it in some
-way, and ZIO lets us use all the functions available in the `ZStream` type. We might be requested to
-map each message. ZIO gives use many variants of the `map` function. The main two are the following:
+Now, what should we do with them? Well, if we read a message, maybe we want to process it somehow, and ZIO lets us use all the functions available in the `ZStream` type. We might be requested to map each message. ZIO gives us many variants of the `map` function. The main two are the following:
 
 ```scala
 def map[O2](f: O => O2): ZStream[R, E, O2]
 def mapM[R1 <: R, E1 >: E, O2](f: O => ZIO[R1, E1, O2]): ZStream[R1, E1, O2]
 ```
 
-As we can see, the difference is if the transformation is effectful or not. Let's map the payload of
-the message in a `String`, suitable for printing:
+As we can see, the difference is if the transformation is effectful or not. Let's map the payload of the message in a `String`, suitable for printing:
 
 ```scala
 matchesStreams
   .map(cr => (cr.value.score, cr.offset))
 ```
 
-The `map` function uses utility methods we defined on the `Match` and `Player` type:
+The `map` function uses utility methods we defined on the `Match` and `Player` types:
 
 ```scala
 case class Player(name: String, score: Int) {
@@ -424,11 +398,9 @@ case class Match(players: Array[Player]) {
 }
 ```
 
-Moreover, it's always a good idea to forward the `offset` of the message, since we'll use it to
-commit the message's position inside the partition.
+Moreover, it's always a good idea to forward the `offset` of the message since we'll use it to commit the message's position inside the partition.
 
-Using the information just transformed, we can now produce some side effect, such as writing the
-payload to a database or simply to the console. ZIO defines the `tap` method for doing this:
+Using the information just transformed, we can now produce some side effects, such as writing the payload to a database or simply to the console. ZIO defines the `tap` method for doing this:
 
 ```scala
 // zio-kafka library code
@@ -443,17 +415,11 @@ matchesStreams
   .tap { case (score, _) => console.putStrLn(s"| $score |") }
 ```
 
-Once we finished playing with messages, it's time for our consumer to commit the offset of the last
-read message. In this way, the next poll cycle will read from the assigned partition a new set of
-information.
+Once we finished playing with messages, it's time for our consumer to commit the offset of the last read message. In this way, the next poll cycle will read a new set of information from the assigned partition.
 
-The consumers from zio-kafka read messages from topic grouped in `Chunk`s. As we said, the `ZStream`
-implementation lets us forgetting about chunk during processing. However, to commit the right offset
-we need the access again to the `Chunk`.
+The consumers from zio-kafka read messages from topics grouped in `Chunk`. As we said, the `ZStream` implementation lets us forgetting about chunks during processing. However, to commit the right offset, we need access again to the `Chunk`.
 
-Fortunately, the zio-stream libraries defines a set of transformations that executes on `Chunk` and
-not on single elements of the stream: They're called _transducers_, and the reference type
-is `ZTransducer`. The library defines a transducer as:
+Fortunately, the zio-stream libraries define a set of transformations that executes on `Chunk` and not on single elements of the stream: They're called _transducers_, and the reference type is `ZTransducer`. The library defines a transducer as:
 
 ```scala
 ZTransducer[- R, + E, - I, + O](
@@ -461,9 +427,7 @@ val push: ZManaged[R, Nothing, Option[Chunk[I]] => ZIO[R, E, Chunk[O]]]
 )
 ```
 
-Basically, it's a wrapper around a function that from a resource that might produce a chunks
-containing values of type `I`, obtains an effect of chunks containing values of type `O`. The size
-of each chunk may vary during the transformation.
+Basically, it's a wrapper around a function that obtains an effect of chunks containing values of type `I` from a resource that might produce a chunk containing values of type `O`. The size of each chunk may vary during the transformation.
 
 In our case, we are going to apply the `Consumer.offsetBatches` transducer:
 
@@ -473,11 +437,9 @@ val offsetBatches: ZTransducer[Any, Nothing, Offset, OffsetBatch] =
   ZTransducer.foldLeft[Offset, OffsetBatch](OffsetBatch.empty)(_ merge _)
 ```
 
-Broadly, the transducer merges the input offsets, where the `merge` function implements the
-classic _max_ function in this case.
+Broadly, the transducer merges the input offsets, where the `merge` function implements the classic _max_ function in this case.
 
-So, after the application of the `offsetBatches` transducer, each chunk of messages is mapped into a
-chunk containing only one element, which is their maximum offset:
+So, after the application of the `offsetBatches` transducer, each chunk of messages is mapped into a chunk containing only one element, which is their maximum offset:
 
 ```scala
 matchesStreams
@@ -487,8 +449,7 @@ matchesStreams
   .aggregateAsync(Consumer.offsetBatches)
 ```
 
-In reality, the `OffsetBatch` type is more than just an offset. In fact, the library defines the
-type as follow:
+In reality, the `OffsetBatch` type is more than just an offset. In fact, the library defines the class as follows:
 
 ```scala
 // zio-kafka library code
@@ -503,19 +464,13 @@ sealed trait OffsetBatch {
 }
 ```
 
-In addition to the information we've just describe, the `OffsetBtach` type contains also the
-function that creates the effect to commits the offset to the broker, i.e. `def commit: Task[Unit]`.
+In addition to the information we've just described, the `OffsetBtach` type also contains the function that creates the effect to commits the offset to the broker, i.e. `def commit: Task[Unit]`.
 
-Great. Now we know for every chunk which is the offset to commit. How can we do that? There are many
-ways of doing this, among which we can use a `ZSink` function. As in many other streaming libraries,
-sinks represents the consuming function of a stream. After the execution of a sink, the values of
-the stream are not available to further processing.
+Great. Now we know for every chunk which is the offset to commit. How can we do that? There are many ways of doing this, among which we can use a `ZSink` function. As in many other streaming libraries, sinks represent the consuming function of a stream. After the execution of a sink, the values of the stream are not available to further processing.
 
-The `ZSink` type has many built-in operations, and we are going to use one of the easier,
-the `foreach` function, which applies an effectful function to all the values emitted by the sink.
+The `ZSink` type has many built-in operations, and we are going to use one of the easier, the `foreach` function, which applies an effectful function to all the values emitted by the sink.
 
-So, commit the offsets prepared by the previous transducer is equal to declare a `ZSink` invoking
-the `commit` function on each `OffsetBatch` it emits:
+So, commit the offsets prepared by the previous transducer is equal to declare a `ZSink` invoking the `commit` function on each `OffsetBatch` it emits:
 
 ```scala
 matchesStreams
@@ -527,17 +482,13 @@ matchesStreams
 ```
 
 The result of the application of the above whole pipeline of operation is
-a `ZIO[Console with Any with Consumer with Clock, Throwable, Unit]`, which means an effect that
-writes to the console something it read from a Kafka consumer, and can fail with a `Throwable`, and
-finally produces no value. In somebody asks why we need also a `Clock` to execute the effect, the
-answer is that the transducer executes operations on chunks directly using `Fiber`s, and so it
-requires the capability to schedule them properly.
+a `ZIO[Console with Any with Consumer with Clock, Throwable, Unit]`, which means an effect that writes to the console something that it read from a Kafka consumer and can fail with a `Throwable`, and finally produces no value. When somebody asks why we also need a `Clock` to execute the effect, the answer is that the transducer runs operations on chunks directly using `Fiber`s, so it requires the ability to schedule them properly.
 
 ### 5.4. Handling Poison Pills
 
-When we use `ZStream`, we must remember that he default behavior for a consumer stream when encountering a deserialization failure is to fail the stream. Until now, we developed the _happy path_, that is when everything goes fine. However, many errors can rise during messages elaboration.
+When we use `ZStream`, we must remember that the default behavior for a consumer stream when encountering a deserialization failure is to fail the stream. Until now, we developed the _happy path_, which is when everything goes fine. However, many errors can arise during messages elaboration.
 
-One of the possibles are deserialization error of the messages. We define as a _poison pill_ a message having a schema that isn't deserializable. If it's not properly manage, the reading of a poison pill message will terminate the whole stream.
+One of the possibles is the deserialization error of the messages. We define as a _poison pill_ a message having a schema that can't be deserialized. If it's not managed correctly, reading a poison pill message will terminate the whole stream.
 
 Fortunately, zio-kafka let us deserialize the key and the value of a massage in a `Try`, just call the `asTry` method of a `Serde`:
 
@@ -546,7 +497,7 @@ Consumer.subscribeAnd(Subscription.topics("updates"))
   .plainStream(Serde.uuid, matchSerde.asTry)
 ```
 
-In this way, if something goes wrong during the deserialization process, the developer can teach to the program how to react, without abruptly terminating the stream:
+In this way, if something goes wrong during the deserialization process, the developer can teach the program how to react without abruptly terminating the stream:
 
 ```scala
 Consumer.subscribeAnd(Subscription.topics("updates"))
@@ -560,7 +511,7 @@ Consumer.subscribeAnd(Subscription.topics("updates"))
   }
 ```
 
-Usually, a poison pill message is properly logged as an error and its offset committed as a regular message. 
+Usually, a poison pill message is correctly logged as an error, and its offset is committed as a regular message.
 
 ## 6. Printing Something to Console
 
