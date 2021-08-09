@@ -42,9 +42,7 @@ and scalability. In fact, every partition stores only a subset of messages, divi
 using the hash of the message's key. Partitions are distributed among the cluster of brokers, and
 they are replicated to guarantee the high availability.
 
-Consumers read the messages from topics they subscribed. A consumer read messages within a partition
-in the same order in which the were produced. In details, we can associate a consumer with a _
-consumer group_.
+Consumers read the messages from topics they subscribed. A consumer read messages within a partition in the same order in which the were produced. In details, we can associate a consumer with a _consumer group_.
 
 ![Kafka's Consumer Groups](/images/kafka%20consumer%20groups.png)
 
