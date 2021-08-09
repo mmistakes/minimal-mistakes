@@ -200,34 +200,22 @@ val consumer: ZLayer[Clock with Blocking, Throwable, Consumer] =
   ZLayer.fromManaged(managedConsumer)
 ```
 
-Now that we obtained a managed, injectable consumer, we can proceed by consuming some message from
-the broker. It's time to introduce `ZStream`.
+Now that we obtained a managed, injectable consumer, we can consume some message from the broker. It's time to introduce `ZStream`.
 
 ## 5. Consuming Messages as a Stream
 
-The zio-kafka library allows consuming messages read from a Kafka topic as a stream. Basically, a
-stream is an abstraction of a possible infinite collection. In ZIO, we model a stream using the
-type `ZStream[R, E, O]`, which represents an effectual stream requiring an environment `R` to
+The zio-kafka library allows consuming messages read from a Kafka topic as a stream. Basically, a stream is an abstraction of a possible infinite collection. In ZIO, we model a stream using the type `ZStream[R, E, O]`, which represents an effectual stream requiring an environment `R` to
 execute, eventually failing with an error of type `E`, and producing values of type `A`.
 
-We used the _effectual_ adjective because a `ZStream` implements the Effect Pattern: It is a
-blueprint, or a description, of how to produce values of type `A`.However, the real execution of the
-code producing them is postponed. In other words, a `ZIO` always succeeds with a single value
-whereas a `ZStream` succeeds with zero or more values, potentially infinitely many.
+We used the _effectual_ adjective because a `ZStream` implements the Effect Pattern: It's a blueprint, or a description, of how to produce values of type `A`. In fact, the actual execution of the code is postponed. In other words, a `ZIO` always succeeds with a single value, whereas a `ZStream` succeeds with zero or more values, potentially infinitely many.
 
-Another important feature of `ZStream`s is the implicit chunking. By design, Kafka consumers poll (
-consume) from a topic a batch of messages (configurable using
-the [`max.poll.records`](https://docs.confluent.io/platform/current/installation/configuration/consumer-configs.html#consumerconfigs_max.poll.records))
-. So, each invocation of the `poll` method on the Kafka consumer should return a collection (
-a `Chunk` in ZIO jargon) o messages.
+Another essential feature of the `ZStream` type is implicit chunking. By design, Kafka consumers poll (consume) from a topic a batch of messages (configurable using the [`max.poll.records`](https://docs.confluent.io/platform/current/installation/configuration/consumer-configs.html#consumerconfigs_max.poll.records)). So, each invocation of the `poll` method on the Kafka consumer should return a collection (a `Chunk` in ZIO jargon) o messages.
 
-The `ZStream` type flatten the list of `Chunk`s for us, letting us to treat them as they were a
-single and continue flux of data.
+The `ZStream` type flattened the list of `Chunk`s for us, treating them as they were a single and continuous flux of data.
 
-### 5.1. Subscription to Topics
+### 5.1. Subscribing to Topics
 
-Creating a stream from the `ZManaged` consumer we just built means to subscribing it to a Kafka
-topic, and to configure how to interpret the bytes of both the key and the value of each message:
+The creation of the stream from the `ZManaged` consumer we just built consists of subscribing it to a Kafka topic and configuring how to interpret the bytes of both the key and the value of each message:
 
 ```scala
 val matchesStreams: ZStream[Consumer, Throwable, CommittableRecord[String, String]] =
@@ -235,38 +223,26 @@ val matchesStreams: ZStream[Consumer, Throwable, CommittableRecord[String, Strin
     .plainStream(Serde.string, Serde.string)
 ```
 
-The above code introduces many concepts. So, let's analyze them one at time.
+The above code introduces many concepts. So, let's analyze them one at a time.
 
-First, a `CommitableRecord[K, V]` is a wrapper around the official Kafka
-class `ConsumerRecord[K, V]`. Basically, Kafka associates with every message a lot of metadata,
-represented as a `ConsumerRecord`:
+First, a `CommitableRecord[K, V]` wraps the official Kafka
+class `ConsumerRecord[K, V]`. Basically, Kafka associates with every message a lot of metadata represented as a `ConsumerRecord`:
 
 ```scala
 // Zio-kafka library code
 final case class CommittableRecord[K, V](record: ConsumerRecord[K, V], offset: Offset)
 ```
 
-Among the other, one important information is the `offset` of the message, which represent its
-position inside the topic partition. A consumer commit an offset within a consumer group after it
-successfully processed a message, marking that all the messages with a lower offset were been read
-yet.
+A critical piece of information is the `offset` of the message, which represents its position inside the topic partition. A consumer commits an offset within a consumer group after it successfully processed a message, marking that all the messages with a lower offset have been read yet.
 
-As the subscription object takes a list of topics, a consumer can subscribe to many topics at time.
-In addition, we can use a pattern to tell the consumer which topics to subscribe. Imagine we have a
-different topic for the updates of every single match. Hence, the names of the topics should reflect
-this information, for example using a pattern like `"updates|ITA-ENG"`. If we want to subscribe to
-all the topics associated with a match of the Italian football team, we can do the following:
+As the subscription object takes a list of topics, a consumer can subscribe to many topics. In addition, we can use a pattern to tell the consumer which topics to subscribe to. Imagine we have a different topic for the updates of every single match. Hence, the names of the topics should reflect this information, for example, using a pattern like `"updates|ITA-ENG"`. If we want to subscribe to all the topics associated with a match of the Italian football team, we can do the following:
 
 ```scala
 val itaMatchesStreams: SubscribedConsumerFromEnvironment =
   Consumer.subscribeAnd(Subscription.pattern("updates|.*ITA.*".r))
 ```
 
-In some weird cases, we would be interested in subscribing a consumer not to random partition of a
-topic, but to a specific partition of the topic. As Kafka guarantees the ordering of the messages
-only locally to a partition, a scenario is when we need to preserve such order also in message
-elaboration. In this case, we can use the dedicated subscription method, and subscribe to the
-partition 1 of the topic `updates`:
+In some weird cases, we would be interested in subscribing a consumer not to a random partition of a topic but to a specific topic partition. As Kafka guarantees the ordering of the messages only locally to a partition, a scenario is when we need to preserve such order also in message elaboration. In this case, we can use the dedicated subscription method and subscribe to partition 1 of the topic `updates`:
 
 ```scala
 val partitionedMatchesStreams: SubscribedConsumerFromEnvironment =
