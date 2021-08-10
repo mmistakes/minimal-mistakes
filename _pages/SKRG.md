@@ -49,8 +49,7 @@ gallery1:
     title: "Jóse Maria Córdova Airport - Rionegro, Colombia for MSFS"
 
 ---
-### **Rionegro, Colombia**  
-
+### **Rionegro, Colombia**
 #### **for Microsoft Flight Simulator**
 
 Available in the MSFS Marketplace  
