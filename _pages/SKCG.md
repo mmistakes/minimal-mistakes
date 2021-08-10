@@ -73,8 +73,8 @@ gallery1:
     title: "Rafael Nuñez Airport - Cartagena, Colombia for MSFS"
 
 ---
-### **Rionegro, Colombia**
-#### **for Microsoft Flight Simulator**
+### **Cartagena, Colombia**
+#### **for Microsoft Flight Simulator**  
 
 Available in the MSFS Marketplace  
 
