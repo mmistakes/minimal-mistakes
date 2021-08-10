@@ -215,7 +215,7 @@ The `ZStream` type flattened the list of `Chunk`s for us, treating them as they 
 
 ### 5.1. Subscribing to Topics
 
-The creation of the stream consists of subscribing it to a Kafka topic and configuring how to interpret the bytes of both the key and the value of each message:
+The creation of the stream consists of subscribing it to a Kafka topic and configuring key and value bytes interpretation:
 
 ```scala
 val matchesStreams: ZStream[Consumer, Throwable, CommittableRecord[String, String]] =
@@ -345,7 +345,7 @@ This time, the type class adds a method to our type that encodes it into a JSON 
 def toJson(implicit A: JsonEncoder[A]): String
 ```
 
-Note that it's best to declare the instances of decoder and encoder type classes inside the companion object of a type.
+Note that it's best to declare the decoder and encoder type classes inside the companion object of a type.
 
 Now, we just assemble all the pieces we just created using the `inmapM` function:
 
@@ -357,7 +357,7 @@ val matchSerde: Serde[Any, Match] = Serde.string.inmapM { matchAsString =>
 }
 ```
 
-The only operation we have done is mapping the left value of the `Either` object resulting from the decoding into an exception. In this way, we honor the signature of the `ZIO.fromEither` factory method.
+We have only mapped the `Either` object's left value resulting from the decoding into an exception. In this way, we honor the signature of the `ZIO.fromEither` factory method.
 
 Finally, it's usual to encode Kafka messages' values using some form of binary compressions, such as [Avro](https://avro.apache.org/). In this case, we can create a dedicated `Serde` directly from the raw type `org.apache.kafka.common.serialization.Serde` coming from the official Kafka client library. In fact, there are many implementations of Avro serializers and deserializer, such as [Confluent](https://docs.confluent.io/platform/current/schema-registry/serdes-develop/serdes-avro.html) `KafkaAvroSerializer` and `KafkaAvroDeserializer`.
 
@@ -372,7 +372,7 @@ val matchesStreams: ZStream[Consumer, Throwable, CommittableRecord[UUID, Match]]
     .plainStream(Serde.uuid, matchSerde)
 ```
 
-Now, what should we do with them? Well, if we read a message, maybe we want to process it somehow, and ZIO lets us use all the functions available in the `ZStream` type. We might be requested to map each message. ZIO gives us many variants of the `map` function. The main two are the following:
+Now, what should we do with them? If we read a message, maybe we want to process it somehow, and ZIO lets us use all the functions available in the `ZStream` type. We might be requested to map each message. ZIO gives us many variants of the `map` function. The main two are the following:
 
 ```scala
 def map[O2](f: O => O2): ZStream[R, E, O2]
@@ -515,8 +515,7 @@ Usually, a poison pill message is correctly logged as an error, and its offset i
 
 ## 6. Printing Something to Console
 
-Now that we have a consumer that can read messages from the `updates` topic, we are ready to execute
-our program and produce some messages. Summing up, the overall program is the following:
+Now that we have a consumer that can read messages from the `updates` topic, we are ready to execute our program and produce some messages. Summing up, the overall program is the following:
 
 ```scala
 object EuroGames extends zio.App {
@@ -569,7 +568,7 @@ object EuroGames extends zio.App {
 }
 ```
 
-Since we've not talk about producers in zio-kafka, we need produce some messages using the `kafka-console-producer` utility. First of all, we have to connect to the `broker` container. Then, we start an interactive producer using the following shell command:
+Since we've not talked about producers in zio-kafka, we need to produce some messages using the `kafka-console-producer` utility. First of all, we have to connect to the `broker` container. Then, we start an interactive producer using the following shell command:
 
 ```shell
 kafka-console-producer \
@@ -579,7 +578,7 @@ kafka-console-producer \
    --property key.separator=,
 ```
 
-As we can see, we are creating a producer that will send messages to the broker listening on port 9092 at localhost, and we will use the `','` character to separate the key from the payload of each message. Once type the command, the shell waits us to type the first message. Let's proceed typing the following messages:
+As we can see, we are creating a producer that will send messages to the broker listening on port 9092 at localhost, and we will use the `','` character to separate the key from the payload of each message. Once type the command, the shell waits for us to type the first message. Let's proceed typing the following messages:
 
 ```shell
 b91a7348-f9f0-4100-989a-cbdd2a198096,{"players":[{"name":"ITA","score":0},{"name":"ENG","score":1}]}
@@ -597,7 +596,7 @@ If everything goes well, our zio-kafka consumer should start printing to the con
 
 ## 7. Producing Messages
 
-As it should be obvious, the zio-kafka libraries also provides Kafka producers in addition to consumers.
+As it should be obvious, the zio-kafka library also provides Kafka producers in addition to consumers.
 
 As we made for consumers, if we want to produce some messages to a topic, the first thing to create the resource and the layer associated with a producer:
 
@@ -610,9 +609,9 @@ val producer: ZLayer[Blocking, Throwable, Producer[Any, UUID, Match]] =
 
 The `ProducerSettings` follows the same principles of the `ConsumerSettings` type we've already analyzed. The only difference is that the properties we can provide are those related to producers. Refer to [Producer Configurations](https://docs.confluent.io/platform/current/installation/configuration/producer-configs.html) for further details.
 
-Once we crated a set of settings listing at lease the URI of the broker we are going to send the messages to, we build a `Producer` resource, and we surround inside a `ZLayer`. It's very important that we provide explicit information of types in the `Producer.make` smart constructor: The first parameter refers to the environment used by ZIO to create the two `Serde`, whereas the second and the third parameters refer to the type of the keys and of the values of messages respectively.
+Once we created a set of settings listing at least the URI of the broker we are going to send the messages to, we build a `Producer` resource, and we surround inside a `ZLayer`. We must provide explicit information of types in the `Producer.make` smart constructor: The first parameter refers to the environment used by ZIO to create the two `Serde`, whereas the second and the third parameters refer to the type of the keys and of the values of messages respectively.
 
-To send messages to a topic, we have many choices. In fact, the `Producer` module exposes many  accessor functions to send messages. Among the others we find the following:
+To send messages to a topic, we have many choices. In fact, the `Producer` module exposes many accessor functions to send messages. Among the others, we find the following:
 
 ```scala
 // zio-kafka library code
@@ -623,7 +622,7 @@ object Producer {
 }
 ```
 
-As we can see, we can produce a single message, or a chunk. Also, we can specify directly the topic, key and value of the message, or we can work directly with the `ProducerRecord` type, which already contains them. In our scenario, for sake of simplicity, we decide to produce a single message:
+As we can see, we can produce a single message or a chunk. Also, we can specify the topic, key, and value of the message directly, or we can work with the `ProducerRecord` type, which already contains them. In our scenario, for the sake of simplicity, we decide to produce a single message:
 
 ```scala
 val messagesToSend: ProducerRecord[UUID, Match] =
@@ -637,7 +636,7 @@ val producerEffect: RIO[Producer[Any, UUID, Match], RecordMetadata] =
   Producer.produce[Any, UUID, Match](messagesToSend)
 ```
 
-Also in this case, if we want the Scala compiler to understand right the types of our variable, we have to help him specifying the types requested by the `Producer.produce` function. The types semantic is the same as with the `Producer.make` smart constructor.
+Also, if we want the Scala compiler to understand the types of our variable correctly, we have to help him specify the types requested by the `Producer.produce` function. The type semantic is the same as with the `Producer.make` smart constructor.
 
 Hence, the produced effect requests a `Producer[Any, UUID, Match]` as environment type. To execute the effect, we just provide the producer layer we defined above:
 
@@ -657,4 +656,4 @@ program.exitCode
 
 ## 8. Conclusions
 
-In this article, we started learning the library zio-kafka introducing the basics of Kafka, and how to set up a working environment using Docker. Then, we focused on the consumer part. After learning how to subscribe to a topic, we talked about serialization and deserialization of messages, going into details of zio-json. The consumption of messages through ZIO stream was the next issue. Finally, we end the article talked about producers, and giving an example merging all the previous topics together. I hope you enjoyed the journey.
+In this article, we started learning the library zio-kafka introducing the basics of Kafka and how to set up a working environment using Docker. Then, we focused on the consumer part, and we learned how to subscribe to a topic. We talked about serialization and deserialization of messages, going into details of zio-json. The consumption of messages through the ZIO stream was the next issue. Finally, the article talked about producers and gave an example merging all the previous topics together. I hope you enjoyed the journey.
