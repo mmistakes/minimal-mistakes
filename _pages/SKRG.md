@@ -48,10 +48,12 @@ gallery1:
     alt: "10"
     title: "Jóse Maria Córdova Airport - Rionegro, Colombia for MSFS"
 
-toc: true
 ---
+**CRionegro, Colombia**
+**for Microsoft Flight Simulator**
 
-SKRG - Jóse Maria Córdova Airport for MSFS
+Available in the MSFS Marketplace
+Disponible en el Marketplace de MSFS
 
 {% include video id="4UE65pxD6AA" provider="youtube" %}
 
