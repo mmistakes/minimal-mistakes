@@ -77,7 +77,7 @@ toc: true
 
 SKCG - Rafael Nuñez Airport for MSFS
 
-{% include video id="4UE65pxD6AA" provider="youtube" %}
+{% include video id="i7TaPNcUuOQ" provider="youtube" %}
 
 {% include gallery id="gallery1" caption="SKCG Rafael Nuñez Airport - Cartagena, Colombia for MSFS" %}
 
