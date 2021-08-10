@@ -3,36 +3,36 @@ permalink: /SKRG/
 title: "SKRG - Jose Maria Cordová Airport - Rionegro, Colombia for Microsoft Flight Simulator 2020"
 layout: single
 gallery1:
-  - url: /assets/images/SKRG/04.png
-    image_path: /assets/images/SKSG/04.png
+  - url: /assets/images/SKRG/01.jpg
+    image_path: /assets/images/SKRG/01.jpg
     alt: "a"
     title: "Jose Maria Cordová Airport - Rionegro, Colombia for MSFS"
-  - url: /assets/images/SKRG/01.png
-    image_path: /assets/images/SKrG/01.png
+  - url: /assets/images/SKRG/01.jpg
+    image_path: /assets/images/SKRG/01.jpg
     alt: "placeholder image 2"
     title: "Jose Maria Cordová Airport - Rionegro, Colombia for MSFS"
-  - url: /assets/images/SKRG/02.png
-    image_path: /assets/images/SKSG/02.png
+  - url: /assets/images/SKRG/02.jpg
+    image_path: /assets/images/SKRG/02.jpg
     alt: "placeholder image 3"
     title: "Jose Maria Cordová Airport - Rionegro, Colombia for MSFS"
-  - url: /assets/images/SKSG/03.png
-    image_path: /assets/images/SKSG/03.png
+  - url: /assets/images/SKRG/03.jpg
+    image_path: /assets/images/SKRG/03.jpg
     alt: "placeholder image 4"
     title: "Jose Maria Cordová Airport - Rionegro, Colombia for MSFS"
-  - url: /assets/images/SKSG/04.png
-    image_path: /assets/images/SKSG/04.png
+  - url: /assets/images/SKRG/04.jpg
+    image_path: /assets/images/SKRG/04.jpg
     alt: "placeholder image 5"
     title: "Jose Maria Cordová Airport - Rionegro, Colombia for MSFS"
-  - url: /assets/images/SKSG/05.png
-    image_path: /assets/images/SKSG/05.png
+  - url: /assets/images/SKRG/05.jpg
+    image_path: /assets/images/SKRG/05.jpg
     alt: "placeholder image 6"
     title: "Jose Maria Cordová Airport - Rionegro, Colombia for MSFS"
-  - url: /assets/images/SKSG/06.png
-    image_path: /assets/images/SKSG/06.png
+  - url: /assets/images/SKRG/06.jpg
+    image_path: /assets/images/SKRG/06.jpg
     alt: "placeholder image 7"
     title: "Jose Maria Cordová Airport - Rionegro, Colombia for MSFS"
-  - url: /assets/images/SKSG/07.png
-    image_path: /assets/images/SKSG/07.png
+  - url: /assets/images/SKRG/07.jpg
+    image_path: /assets/images/SKRG/07.jpg
     alt: "placeholder image 9"
     title: "Jose Maria Cordová Airport - Rionegro, Colombia for MSFS"
 
