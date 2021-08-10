@@ -1,6 +1,6 @@
 ---
 permalink: /SKRG/
-title: "SKRG - Jóse Maria Córdova Airport - Rionegro, Colombia for Microsoft Flight Simulator 2020"
+title: "SKRG - Jóse Maria Córdova Airport"
 layout: single
 gallery1:
   - url: /assets/images/SKRG/01.jpg
@@ -49,8 +49,8 @@ gallery1:
     title: "Jóse Maria Córdova Airport - Rionegro, Colombia for MSFS"
 
 ---
-**CRionegro, Colombia**
-**for Microsoft Flight Simulator**
+### **Rionegro, Colombia**  
+#### **for Microsoft Flight Simulator**
 
 Available in the MSFS Marketplace
 Disponible en el Marketplace de MSFS
