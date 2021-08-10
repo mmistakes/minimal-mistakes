@@ -5,10 +5,6 @@ layout: single
 gallery1:
   - url: /assets/images/SKRG/01.jpg
     image_path: /assets/images/SKRG/01.jpg
-    alt: "a"
-    title: "Jose Maria Cordová Airport - Rionegro, Colombia for MSFS"
-  - url: /assets/images/SKRG/01.jpg
-    image_path: /assets/images/SKRG/01.jpg
     alt: "placeholder image 2"
     title: "Jose Maria Cordová Airport - Rionegro, Colombia for MSFS"
   - url: /assets/images/SKRG/02.jpg
@@ -34,6 +30,18 @@ gallery1:
   - url: /assets/images/SKRG/07.jpg
     image_path: /assets/images/SKRG/07.jpg
     alt: "placeholder image 9"
+    title: "Jose Maria Cordová Airport - Rionegro, Colombia for MSFS"
+  - url: /assets/images/SKRG/08.jpg
+    image_path: /assets/images/SKRG/08.jpg
+    alt: "placeholder image 9"
+    title: "Jose Maria Cordová Airport - Rionegro, Colombia for MSFS"
+  - url: /assets/images/SKRG/09.jpg
+    image_path: /assets/images/SKRG/09.jpg
+    alt: "placeholder image 9"
+    title: "Jose Maria Cordová Airport - Rionegro, Colombia for MSFS"
+  - url: /assets/images/SKRG/10.jpg
+    image_path: /assets/images/SKRG/10.jpg
+    alt: "10"
     title: "Jose Maria Cordová Airport - Rionegro, Colombia for MSFS"
 
 toc: true
