@@ -201,18 +201,17 @@ Now that we obtained a managed, injectable consumer, we can consume some message
 
 ## 5. Consuming Messages as a Stream
 
-The zio-kafka library allows consuming messages read from a Kafka topic as a stream. Basically, a stream is an abstraction of a possible infinite collection. In ZIO, we model a stream using the type `ZStream[R, E, O]`, which represents an effectual stream requiring an environment `R` to
-execute, eventually failing with an error of type `E`, and producing values of type `A`.
+**The `zio-kafka` library allows consuming messages read from a Kafka topic as a stream. Basically, a stream is an abstraction of a possible infinite collection**. In ZIO, we model a stream using the type `ZStream[R, E, O]`, which represents an effectual stream requiring an environment `R` to execute, eventually failing with an error of type `E`, and producing values of type `A`.
 
 We used the _effectual_ adjective because a `ZStream` implements the Effect Pattern: It's a blueprint, or a description, of how to produce values of type `A`. In fact, the actual execution of the code is postponed. In other words, a `ZIO` always succeeds with a single value, whereas a `ZStream` succeeds with zero or more values, potentially infinitely many.
 
-Another essential feature of the `ZStream` type is implicit chunking. By design, Kafka consumers poll (consume) from a topic a batch of messages (configurable using the [`max.poll.records`](https://docs.confluent.io/platform/current/installation/configuration/consumer-configs.html#consumerconfigs_max.poll.records)). So, each invocation of the `poll` method on the Kafka consumer should return a collection (a `Chunk` in ZIO jargon) o messages.
+**Another essential feature of the `ZStream` type is implicit chunking**. By design, Kafka consumers poll (consume) from a topic a batch of messages (configurable using the [`max.poll.records`](https://docs.confluent.io/platform/current/installation/configuration/consumer-configs.html#consumerconfigs_max.poll.records)). So, each invocation of the `poll` method on the Kafka consumer should return a collection (a `Chunk` in ZIO jargon) o messages.
 
 The `ZStream` type flattened the list of `Chunk`s for us, treating them as they were a single and continuous flux of data.
 
 ### 5.1. Subscribing to Topics
 
-The creation of the stream consists of subscribing it to a Kafka topic and configuring key and value bytes interpretation:
+The creation of the stream consists of subscribing a consumer to a Kafka topic and configuring key and value bytes interpretation:
 
 ```scala
 val matchesStreams: ZStream[Consumer, Throwable, CommittableRecord[String, String]] =
@@ -222,15 +221,14 @@ val matchesStreams: ZStream[Consumer, Throwable, CommittableRecord[String, Strin
 
 The above code introduces many concepts. So, let's analyze them one at a time.
 
-First, a `CommitableRecord[K, V]` wraps the official Kafka
-class `ConsumerRecord[K, V]`. Basically, Kafka associates with every message a lot of metadata represented as a `ConsumerRecord`:
+First, a `CommitableRecord[K, V]` wraps the official Kafka class `ConsumerRecord[K, V]`. Basically, Kafka associates with every message a lot of metadata represented as a `ConsumerRecord`:
 
 ```scala
 // Zio-kafka library code
 final case class CommittableRecord[K, V](record: ConsumerRecord[K, V], offset: Offset)
 ```
 
-A critical piece of information is the `offset` of the message, which represents its position inside the topic partition. A consumer commits an offset within a consumer group after it successfully processed a message, marking that all the messages with a lower offset have been read yet.
+A critical piece of information is the `offset` of the message, which represents its position inside the topic partition. **A consumer commits an offset within a consumer group after it successfully processed a message, marking that all the messages with a lower offset have been read yet**.
 
 As the subscription object takes a list of topics, a consumer can subscribe to many topics. In addition, we can use a pattern to tell the consumer which topics to subscribe to. Imagine we have a different topic for the updates of every single match. Hence, the names of the topics should reflect this information, for example, using a pattern like `"updates|ITA-ENG"`. If we want to subscribe to all the topics associated with a match of the Italian football team, we can do the following:
 
@@ -248,14 +246,14 @@ val partitionedMatchesStreams: SubscribedConsumerFromEnvironment =
 
 ### 5.2. Interpreting Messages: Serialization and Deserialization
 
-Once we subscribed to a topic, we must instruct our consumers how to interpret messages coming from the topic. Apache Kafka introduced the concept of _serde_, which stands for _ser_ializer and _de_serializer. A consumer should analyze both the key and the value of a message. We give the suitable `Serde` types during the materialization of the read messages into a stream:
+Once we subscribed to a topic, we must instruct our consumers how to interpret messages coming from it. Apache Kafka introduced the concept of _serde_, which stands for _ser_ializer and _de_serializer. We give the suitable `Serde` types both for messages' keys and values during the materialization of the read messages into a stream:
 
 ```scala
 Consumer.subscribeAnd(Subscription.topics("updates"))
   .plainStream(Serde.string, Serde.string)
 ```
 
-The `plainStream` method takes two `Serde` as parameters, the first for the key and the second for the value of a message. Fortunately, the zio-kafka library comes with `Serde` for common types:
+The `plainStream` method takes two `Serde` as parameters, the first for the key and the second for the value of a message. Fortunately, the `zio-kafka` library comes with `Serde` for common types:
 
 ```scala
 // Zio-kafka library code
@@ -272,7 +270,7 @@ private[zio] trait Serdes {
 }
 ```
 
-In addition, we can use more advanced serialization/deserialization capabilities. For example, we can derive the `Serde` directly from another using the `inmap` family of functions:
+In addition, we can use more advanced serialization/deserialization capabilities. For example, **we can derive a `Serde` directly from another one using the `inmap` family of functions**:
 
 ```scala
 // Zio-kafka library code
