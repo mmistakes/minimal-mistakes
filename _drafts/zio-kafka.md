@@ -9,7 +9,7 @@ excerpt: ""
 
 Modern distributed applications need a communication system between their components that must be reliable, scalable, and efficient. Synchronous communication based on HTTP is not a choice in such applications due to latency problems, insufficient resources' management, etc... Hence, we need an asynchronous messaging system capable of quickly scaling, robust to errors, and low latency.
 
-Apache Kafka is a message broker that in the last years proved to have the above features. What's the best way to interact with such a message broker, if not with the ZIO ecosystem? Hence, ZIO provides an asynchronous, reliable, and scalable programming model, which perfectly fits the feature of Kafka. So, let's proceed without further ado.
+Apache Kafka is a message broker that in the last years proved to have the above features. What's the best way to interact with such a message broker, if not with the ZIO ecosystem? Hence, **ZIO provides an asynchronous, reliable, and scalable programming model, which perfectly fits the feature of Kafka**. So, let's proceed without further ado.
 
 ## 1. Background
 
@@ -17,13 +17,13 @@ Following this article will require a basic understanding of how Kafka works. Mo
 
 ## 2. Apache Kafka 101
 
-Apache Kafka is the standard de-facto within messaging systems. Every Kafka installation has a broker, or a cluster of brokers, which allows its clients to write messages in a structure called _topic_ and to read such messages from topics. The clients writing into topics are called _producers, whereas _consumers_ read information from topics.
+Apache Kafka is the standard de-facto within messaging systems. **Every Kafka installation has a broker, or a cluster of brokers, which allows its clients to write and read messages in a structure called _topic_**. The clients writing into topics are called _producers_, whereas _consumers_ read information from topics.
 
 Kafka treats each message as a sequence of bytes without imposing any structure or schema on the data. It's up to clients to eventually interpret such bytes with a particular schema. Moreover, any message can have an associated _key_. The broker doesn't decrypt the key in any way, as done for the message itself.
 
-Moreover, the broker divides every topic into partitions at the core of Kafka's resiliency and scalability. In fact, every partition stores only a subset of messages, divided by the broker using the hash of the message's key. Partitions are distributed among the cluster of brokers, and they are replicated to guarantee high availability.
+Moreover, **the broker divides every topic into partitions, which are at the core of Kafka's resiliency and scalability**. In fact, every partition stores only a subset of messages, divided by the broker using the hash of the message's key. Partitions are distributed among the cluster of brokers, and they are replicated to guarantee high availability.
 
-Consumers read the messages from topics they subscribed to. A consumer reads messages within a partition in the same order in which they were produced. In detail, we can associate a consumer with a _consumer group_.
+Consumers read the messages from topics they subscribed to. **A consumer reads messages within a partition in the same order in which they were produced**. In detail, we can associate a consumer with a _consumer group_.
 
 ![Kafka's Consumer Groups](/images/kafka%20consumer%20groups.png)
 
@@ -33,7 +33,7 @@ Using the above information, we should be ready to begin our journey.
 
 ## 3. Set up
 
-First, we need the dependency from the `zio-kafka` and `zio-json`:
+First, we need the dependencies from the `zio-kafka` and `zio-json` libraries:
 
 ```sbt
 libraryDependencies ++= Seq(
@@ -142,9 +142,7 @@ kafka-topics \
   --create
 ```
 
-Obviously, the Kafka broker of the UEFA is running on our machine at `localhost`.
-
-Each message's key is the concatenation of the two teams' nation. For example, the match between Italy and England generates messages with the key `ITA-ENG`. Then, the value of a message is the match's score in `String` format: `3-2`.
+(Obviously, the Kafka broker of the UEFA is running on our machine at `localhost`).
 
 Now that we created the topic, we can configure a consumer to read from it. Usually, we configure Kafka consumers using a map of settings. The `zio-kafka` library uses its own types to configure a consumer:
 
@@ -154,7 +152,7 @@ val consumerSettings: ConsumerSettings =
     .withGroupId("stocks-consumer")
 ```
 
-Here we have the minimum configuration needed: The list of Kafka brokers in the cluster and the _group-id_ of the consumer. As we said, all the consumers sharing the same group-id belong to the same consumer group.
+**Here we have the minimum configuration needed: The list of Kafka brokers in the cluster and the _group-id_ of the consumer**. As we said, all the consumers sharing the same group-id belong to the same consumer group.
 
 The `ConsumerSettings` is a _builder-like_ class that exposes many methods to configure all the properties a consumer needs. For example, we can give the consumer any known property using the following procedure:
 
@@ -172,12 +170,11 @@ def withPollInterval(interval: Duration): ConsumerSettings =
   copy(pollInterval = interval)
 ```
 
-Here we can dive into all the available configuration properties for a Kafka
-consumer: [Consumer Configurations](https://docs.confluent.io/platform/current/installation/configuration/consumer-configs.html).
+Here we can dive into all the available configuration properties for a Kafka consumer: [Consumer Configurations](https://docs.confluent.io/platform/current/installation/configuration/consumer-configs.html).
 
-Once we created the needed configuration, it's time to complete the Kafka consumer. As each consumer owns an internal connection pool to connect to the broker, we don't want to leak such a pool in case of failure.
+Once we created the needed configuration, it's time to complete the Kafka consumer. As **each consumer owns an internal connection pool to connect to the broker**, we don't want to leak such a pool in case of failure.
 
-In the ZIO ecosystem, a type like this is called a _resource_ and is called `ZManaged[R, E, A]`. `ZManaged[R, E, A]` is a data structure that encapsulates the acquisition and the release of a resource of type `A` using `R`, and that may fail with an error of type `E`.
+In the ZIO ecosystem, a type like this is called `ZManaged[R, E, A]`. The `ZManaged[R, E, A]` is a data structure that encapsulates the acquisition and the release of a resource of type `A` using `R`, and that may fail with an error of type `E`.
 
 So, let's create the resource handling the connection to the Kafka broker:
 
