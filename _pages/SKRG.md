@@ -50,9 +50,11 @@ gallery1:
 
 ---
 ### **Rionegro, Colombia**  
+
 #### **for Microsoft Flight Simulator**
 
-Available in the MSFS Marketplace
+Available in the MSFS Marketplace  
+
 Disponible en el Marketplace de MSFS
 
 {% include video id="4UE65pxD6AA" provider="youtube" %}
