@@ -1,4 +1,4 @@
- ---
+---
 permalink: /SKRG/
 title: "SKRG - Jose Maria Cordová Airport for Microsoft Flight Simulator 2020"
 layout: single
