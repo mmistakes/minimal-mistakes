@@ -1,6 +1,6 @@
 ---
 permalink: /SKCG/
-title: "SKCG - Rafael Nuñez Airport - Cartagena, Colombia for Microsoft Flight Simulator 2020"
+title: "SKCG - Rafael Nuñez Airport"
 layout: single
 gallery1:
   - url: /assets/images/SKCG/01.jpg
@@ -72,10 +72,13 @@ gallery1:
     alt: "10"
     title: "Rafael Nuñez Airport - Cartagena, Colombia for MSFS"
 
-toc: true
 ---
+### **Rionegro, Colombia**
+#### **for Microsoft Flight Simulator**
 
-SKCG - Rafael Nuñez Airport for MSFS
+Available in the MSFS Marketplace  
+
+Disponible en el Marketplace de MSFS
 
 {% include video id="i7TaPNcUuOQ" provider="youtube" %}
 
