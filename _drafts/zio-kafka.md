@@ -33,7 +33,7 @@ Using the above information, we should be ready to begin our journey.
 
 ## 3. Set up
 
-First, we need the dependencies from the `zio-kafka` and `zio-json` libraries:
+First, we need the dependencies from the zio-kafka and zio-json libraries:
 
 ```sbt
 libraryDependencies ++= Seq(
@@ -126,7 +126,7 @@ Kafka container, we will use the following command:
 docker exec -it broker bash
 ```
 
-Now that everything is up and running, we can proceed with introducing the `zio-kafka` library.
+Now that everything is up and running, we can proceed with introducing the zio-kafka library.
 
 ## 4. Creating a Consumer
 
@@ -144,7 +144,7 @@ kafka-topics \
 
 (Obviously, the Kafka broker of the UEFA is running on our machine at `localhost`).
 
-Now that we created the topic, we can configure a consumer to read from it. Usually, we configure Kafka consumers using a map of settings. The `zio-kafka` library uses its own types to configure a consumer:
+Now that we created the topic, we can configure a consumer to read from it. Usually, we configure Kafka consumers using a map of settings. The zio-kafka library uses its own types to configure a consumer:
 
 ```scala
 val consumerSettings: ConsumerSettings =
@@ -201,7 +201,7 @@ Now that we obtained a managed, injectable consumer, we can consume some message
 
 ## 5. Consuming Messages as a Stream
 
-**The `zio-kafka` library allows consuming messages read from a Kafka topic as a stream. Basically, a stream is an abstraction of a possible infinite collection**. In ZIO, we model a stream using the type `ZStream[R, E, O]`, which represents an effectual stream requiring an environment `R` to execute, eventually failing with an error of type `E`, and producing values of type `A`.
+**The zio-kafka library allows consuming messages read from a Kafka topic as a stream. Basically, a stream is an abstraction of a possible infinite collection**. In ZIO, we model a stream using the type `ZStream[R, E, O]`, which represents an effectual stream requiring an environment `R` to execute, eventually failing with an error of type `E`, and producing values of type `A`.
 
 We used the _effectual_ adjective because a `ZStream` implements the Effect Pattern: It's a blueprint, or a description, of how to produce values of type `A`. In fact, the actual execution of the code is postponed. In other words, a `ZIO` always succeeds with a single value, whereas a `ZStream` succeeds with zero or more values, potentially infinitely many.
 
@@ -253,7 +253,7 @@ Consumer.subscribeAnd(Subscription.topics("updates"))
   .plainStream(Serde.string, Serde.string)
 ```
 
-The `plainStream` method takes two `Serde` as parameters, the first for the key and the second for the value of a message. Fortunately, the `zio-kafka` library comes with `Serde` for common types:
+The `plainStream` method takes two `Serde` as parameters, the first for the key and the second for the value of a message. Fortunately, the zio-kafka library comes with `Serde` for common types:
 
 ```scala
 // Zio-kafka library code
@@ -414,10 +414,11 @@ Once we finished playing with messages, it's time for our consumer to commit the
 
 The consumers from zio-kafka read messages from topics grouped in `Chunk`. As we said, the `ZStream` implementation lets us forgetting about chunks during processing. However, to commit the right offset, we need access again to the `Chunk`.
 
-Fortunately, the zio-stream libraries define a set of transformations that executes on `Chunk` and not on single elements of the stream: They're called _transducers_, and the reference type is `ZTransducer`. The library defines a transducer as:
+Fortunately, **the zio-stream libraries define a set of transformations that executes on `Chunk` and not on single elements of the stream: They're called _transducers_**, and the reference type is `ZTransducer`. The library defines a transducer as:
 
 ```scala
-ZTransducer[- R, + E, - I, + O](
+// zio-kafka library code
+ZTransducer[-R, +E, -I, +O](
 val push: ZManaged[R, Nothing, Option[Chunk[I]] => ZIO[R, E, Chunk[O]]]
 )
 ```
@@ -450,18 +451,15 @@ In reality, the `OffsetBatch` type is more than just an offset. In fact, the lib
 // zio-kafka library code
 sealed trait OffsetBatch {
   def offsets: Map[TopicPartition, Long]
-
   def commit: Task[Unit]
-
   def merge(offset: Offset): OffsetBatch
-
   def merge(offsets: OffsetBatch): OffsetBatch
 }
 ```
 
 In addition to the information we've just described, the `OffsetBtach` type also contains the function that creates the effect to commits the offset to the broker, i.e. `def commit: Task[Unit]`.
 
-Great. Now we know for every chunk which is the offset to commit. How can we do that? There are many ways of doing this, among which we can use a `ZSink` function. As in many other streaming libraries, sinks represent the consuming function of a stream. After the execution of a sink, the values of the stream are not available to further processing.
+Great. Now we know for every chunk which is the offset to commit. How can we do that? There are many ways of doing this, among which we can use a `ZSink` function. **As in many other streaming libraries, sinks represent the consuming function of a stream. After the execution of a sink, the values of the stream are not available to further processing**.
 
 The `ZSink` type has many built-in operations, and we are going to use one of the easier, the `foreach` function, which applies an effectful function to all the values emitted by the sink.
 
@@ -476,16 +474,15 @@ matchesStreams
   .run(ZSink.foreach(_.commit))
 ```
 
-The result of the application of the above whole pipeline of operation is
-a `ZIO[Console with Any with Consumer with Clock, Throwable, Unit]`, which means an effect that writes to the console something that it read from a Kafka consumer and can fail with a `Throwable`, and finally produces no value. When somebody asks why we also need a `Clock` to execute the effect, the answer is that the transducer runs operations on chunks directly using `Fiber`s, so it requires the ability to schedule them properly.
+The result of the application of the above whole pipeline of operation is a `ZIO[Console with Any with Consumer with Clock, Throwable, Unit]`, which means an effect that writes to the console something that it read from a Kafka consumer and can fail with a `Throwable`, and finally produces no value. When somebody asks why we also need a `Clock` to execute the effect, the answer is that the transducer runs operations on chunks directly using `Fiber`s, so it requires the ability to schedule them properly.
 
 ### 5.4. Handling Poison Pills
 
-When we use `ZStream`, we must remember that the default behavior for a consumer stream when encountering a deserialization failure is to fail the stream. Until now, we developed the _happy path_, which is when everything goes fine. However, many errors can arise during messages elaboration.
+When we use `ZStream`, we must remember that **the default behavior for a stream when encountering a failure is to fail the stream**. Until now, we developed the _happy path_, which is when everything goes fine. However, many errors can arise during messages elaboration.
 
 One of the possibles is the deserialization error of the messages. We define as a _poison pill_ a message having a schema that can't be deserialized. If it's not managed correctly, reading a poison pill message will terminate the whole stream.
 
-Fortunately, zio-kafka let us deserialize the key and the value of a massage in a `Try`, just call the `asTry` method of a `Serde`:
+Fortunately, zio-kafka let us deserialize the key and the value of a massage in a `Try`, just calling the `asTry` method of a `Serde`:
 
 ```scala
 Consumer.subscribeAnd(Subscription.topics("updates"))
@@ -563,7 +560,7 @@ object EuroGames extends zio.App {
 }
 ```
 
-Since we've not talked about producers in zio-kafka, we need to produce some messages using the `kafka-console-producer` utility. First of all, we have to connect to the `broker` container. Then, we start an interactive producer using the following shell command:
+Since we've not talked about producers in zio-kafka yet, we need to produce some messages using the `kafka-console-producer` utility. First of all, we have to connect to the `broker` container. Then, we start an interactive producer using the following shell command:
 
 ```shell
 kafka-console-producer \
@@ -573,7 +570,7 @@ kafka-console-producer \
    --property key.separator=,
 ```
 
-As we can see, we are creating a producer that will send messages to the broker listening on port 9092 at localhost, and we will use the `','` character to separate the key from the payload of each message. Once type the command, the shell waits for us to type the first message. Let's proceed typing the following messages:
+As we can see, we are creating a producer that will send messages to the broker listening on port 9092 at localhost, and we will use the `','` character to separate the key from the payload of each message. Once entered the command, the shell waits for us to type the first message. Let's proceed typing the following messages:
 
 ```shell
 b91a7348-f9f0-4100-989a-cbdd2a198096,{"players":[{"name":"ITA","score":0},{"name":"ENG","score":1}]}
