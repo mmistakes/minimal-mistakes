@@ -4,7 +4,7 @@ date: 2021-07-24
 header:
   image: "/images/blog cover.jpg"
 tags: []
-excerpt: ""
+excerpt: "Modern distributed applications need a communication system between their components that must be reliable, scalable, and efficient. Apache Kafka is a message broker that in the last years proved to have these features. What's the best way to interact with such a message broker, if not with the ZIO ecosystem?"
 ---
 
 Modern distributed applications need a communication system between their components that must be reliable, scalable, and efficient. Synchronous communication based on HTTP is not a choice in such applications due to latency problems, insufficient resources' management, etc... Hence, we need an asynchronous messaging system capable of quickly scaling, robust to errors, and low latency.
@@ -157,7 +157,7 @@ val consumerSettings: ConsumerSettings =
 The `ConsumerSettings` is a _builder-like_ class that exposes many methods to configure all the properties a consumer needs. For example, we can give the consumer any known property using the following procedure:
 
 ```scala
-// Zio-kafka library code
+// zio-kafka library code
 def withProperty(key: String, value: AnyRef): ConsumerSettings =
   copy(properties = properties + (key -> value))
 ```
@@ -165,7 +165,7 @@ def withProperty(key: String, value: AnyRef): ConsumerSettings =
 Or, we can configure the _polling interval_ of the consumer just using the reliable method:
 
 ```scala
-// Zio-kafka library code
+// zio-kafka library code
 def withPollInterval(interval: Duration): ConsumerSettings =
   copy(pollInterval = interval)
 ```
@@ -224,7 +224,7 @@ The above code introduces many concepts. So, let's analyze them one at a time.
 First, a `CommitableRecord[K, V]` wraps the official Kafka class `ConsumerRecord[K, V]`. Basically, Kafka associates with every message a lot of metadata represented as a `ConsumerRecord`:
 
 ```scala
-// Zio-kafka library code
+// zio-kafka library code
 final case class CommittableRecord[K, V](record: ConsumerRecord[K, V], offset: Offset)
 ```
 
@@ -256,7 +256,7 @@ Consumer.subscribeAnd(Subscription.topics("updates"))
 The `plainStream` method takes two `Serde` as parameters, the first for the key and the second for the value of a message. Fortunately, the zio-kafka library comes with `Serde` for common types:
 
 ```scala
-// Zio-kafka library code
+// zio-kafka library code
 private[zio] trait Serdes {
   lazy val long: Serde[Any, Long]
   lazy val int: Serde[Any, Int]
@@ -273,7 +273,7 @@ private[zio] trait Serdes {
 In addition, we can use more advanced serialization/deserialization capabilities. For example, **we can derive a `Serde` directly from another one using the `inmap` family of functions**:
 
 ```scala
-// Zio-kafka library code
+// zio-kafka library code
 trait Serde[-R, T] extends Deserializer[R, T] with Serializer[R, T] {
   def inmap[U](f: T => U)(g: U => T): Serde[R, U]
 
@@ -588,9 +588,7 @@ If everything goes well, our zio-kafka consumer should start printing to the con
 
 ## 7. Producing Messages
 
-As it should be obvious, the zio-kafka library also provides Kafka producers in addition to consumers.
-
-As we made for consumers, if we want to produce some messages to a topic, the first thing to create the resource and the layer associated with a producer:
+As it should be obvious, the zio-kafka library also provides Kafka producers in addition to consumers. As we made for consumers, if we want to produce some messages to a topic, the first thing to do is to create the resource and the layer associated with a producer:
 
 ```scala
 val producerSettings: ProducerSettings = ProducerSettings(List("localhost:9092"))
@@ -628,7 +626,7 @@ val producerEffect: RIO[Producer[Any, UUID, Match], RecordMetadata] =
   Producer.produce[Any, UUID, Match](messagesToSend)
 ```
 
-Also, if we want the Scala compiler to understand the types of our variable correctly, we have to help him specify the types requested by the `Producer.produce` function. The type semantic is the same as with the `Producer.make` smart constructor.
+Also, **if we want the Scala compiler to understand the types of our variable correctly, we have to help him, and specify the types requested by the `Producer.produce` function**. The type semantic is the same as with the `Producer.make` smart constructor.
 
 Hence, the produced effect requests a `Producer[Any, UUID, Match]` as environment type. To execute the effect, we just provide the producer layer we defined above:
 
