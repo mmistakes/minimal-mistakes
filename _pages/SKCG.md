@@ -2,6 +2,7 @@
 permalink: /SKCG/
 title: "SKCG - Rafael Nuñez Airport"
 layout: single
+classes: wide
 gallery1:
   - url: /assets/images/SKCG/01.jpg
     image_path: /assets/images/SKCG/01.jpg
