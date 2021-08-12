@@ -10,6 +10,8 @@ sidebar:
 --- 
 * * *
 
+<br>
+
 **numpy ndarray 생성**
 * * *
 ```python
