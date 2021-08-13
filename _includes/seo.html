@@ -7,12 +7,16 @@
 {% assign title_separator = site.title_separator | default: '-' %}
 
 {%- if page.title -%}
-  {%- assign seo_title = page.title | append: " " | append: title_separator | append: " " | append: site.title -%}
+  {%- assign seo_title = page.title | append: " " | append: title_separator | append: " " | append: site.title | replace: '|', '&#124;' -%}
 {%- endif -%}
 
+{{ seo_title }}
+
 {%- if seo_title -%}
-  {%- assign seo_title = seo_title | escape_once -%}
+  {%- assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once -%}
 {%- endif -%}
+
+{{ seo_title }}
 
 {% if page.canonical_url %}
   {%- assign canonical_url = page.canonical_url %}
