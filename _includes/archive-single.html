@@ -10,7 +10,7 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: "list" }}__item">
+<div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
@@ -24,6 +24,7 @@
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
+    {% include page__meta.html type=include.type %}
 <!--
     devinlife comments :
         아키이브 싱글 페이지(ex. 카테고리)에 각 포스트 제목 밑에 Updated 시간 표기
