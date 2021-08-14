@@ -4,24 +4,18 @@ author_profile: true
 permalink: /now/
 ---
 
-_This is the page, updated once a month, where I list what I'm currently up to. This idea has been largely inspired by [Derek Sivers](https://sive.rs/now) and I decided to do a new "now" page every month; the previous month's one will get posted as a post.
-The now page can get updates throughout the month, based on what I do/the progress, it's a living thing - until the next month. The now pages are pretty much written in a stream of consciousness way, I do not edit much - they're meant to convey quick thoughts._
+_This is the page, updated once a ~~month~~ quarter (it appeared to be too much to update it once a month, but the first ones have been done monthly), where I list what I'm currently up to. This idea has been largely inspired by [Derek Sivers](https://sive.rs/now) and I decided to do a new "now" page every ~~month~~ (quarter); the previous ~~month's~~ (quarter's) one will get posted as a post.
+The now page can get updates throughout the ~~month~~ (quarter), based on what I do/the progress, it's a living thing - until the next ~~month~~ quarter. The now pages are pretty much written in a stream of consciousness way, I do not edit much - they're meant to convey quick thoughts._
 
-## Work & Life
+I may not even do this quarterly, I may do it once I feel there's enough to put down as a separate post.
 
-Busy times with work, lots to ingest, lots to learn, new habits to take in.
+# Data vizzing
 
-## Data vizzing
+I've resumed some data vizzing, this time I'm tackling D3 again. I've resuscitated my Observable account and started playing around there. My goal is to become good.
 
-I'm resuming some Tableau. Despite the fact that I'm continuously gasping for free time and general energies to carry out side projects, I want to improve my data vizzing skills beyond doing hand-drawing. Tableau has a great community and who knows, one day I could think of merging up data analysis skills with visual design, as I'm currently weak there.
+# Reading
 
-## Reading
+I'm all on Bill Bryson at the moment. I think I've gradually bought all his books (not that I've read them all, I just read my second of his books so far, but I decided to buy them all) on [WorldOfBooks](https://www.worldofbooks.com/en-gb), which is a way to buy second-hand books, it's pretty convenient and goes in the direction of circular economy, which I really like.
 
-I'm on a bunch of things (too many as always), but generally loving these two:
-* Bill Bryson's "Notes from a small island" - it's very fun, really
-* Jules Verne's "20000 leagues under the sea" - classic I'd never read before, it's so good, full of immersive descriptions and a compelling plot!
+I've also been buying some books about data vizzing, I'm committed - it could be a new career later on, who knows.
 
-
-## Running
-
-Running has resumed, without much of a bang. I'm enjoying going for a run every now and then without putting too much importance behind it - meaning, without caring for speed and length. These days I just do it as part of several other activities rather than the one thing, I just decide on the spot (and based on the weather) what I feel like doing. I have to say though, I recently went for a run and it started pouring, I wouldn't have gone if I'd suspected it beforehand, but oh it was so liberating. Loved it.
