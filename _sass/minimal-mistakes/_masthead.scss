@@ -15,7 +15,9 @@
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
+    /* devinlife : 메뉴바 패딩 조절 */
+    /*padding: 1em;*/
+    padding: 0.4em;
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -24,6 +26,9 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     font-family: $sans-serif-narrow;
+    /* devinlife : 메뉴바 텍스트 설정 */
+    font-size: $type-size-4;
+    font-weight: bold;
 
     @include breakpoint($x-large) {
       max-width: $max-width;
