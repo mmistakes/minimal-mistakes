@@ -18,3 +18,4 @@ I've resumed some data vizzing, this time I'm tackling D3 again. I've resuscitat
 I'm all on Bill Bryson at the moment. I think I've gradually bought all his books (not that I've read them all, I just read my second of his books so far, but I decided to buy them all) on [WorldOfBooks](https://www.worldofbooks.com/en-gb), which is a way to buy second-hand books, it's pretty convenient and goes in the direction of circular economy, which I really like.
 
 I've also been buying some books about data vizzing, I'm committed - it could be a new career later on, who knows.
+
