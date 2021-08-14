@@ -1,3 +1,15 @@
+---
+layout: single
+tags: 
+ - javascript
+toc: true
+title: "wecode 사전스터디 week3 Javascript"
+---
+
+
+
+
+
 - # 객체란 무엇이며 필요한 이유
 
   자바스크립트의 기본 타입(data type)은 객체(object)입니다.
