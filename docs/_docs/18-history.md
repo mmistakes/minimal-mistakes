@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2021-08-08T14:10:38-04:00
+last_modified_at: 2021-08-15T18:57:01-04:00
 toc: false
 ---
 
@@ -20,6 +20,7 @@ toc: false
 
 ### Enhancements
 
+- Bump path-parse from 1.0.6 to 1.0.7. [#3116](https://github.com/mmistakes/minimal-mistakes/pull/3116)
 - Add missing Danish translations. [#3095](https://github.com/mmistakes/minimal-mistakes/pull/3095)
 - Add ARIA role to search forms. [#3086](https://github.com/mmistakes/minimal-mistakes/pull/3086)
 - Add overflow scroll bar to sticky table of contents that are taller than the viewport's height. [#2874](https://github.com/mmistakes/minimal-mistakes/pull/2874)
