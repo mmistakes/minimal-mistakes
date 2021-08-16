@@ -2,7 +2,7 @@
 layout: single
 tags: 
  - javascript
-title: "wecode 사전스터디 week2 Javascript"
+title: "[javascript] wecode 사전스터디 week2"
 ---
 
 
