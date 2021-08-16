@@ -2,6 +2,7 @@
 
 ### Bug Fixes
 
+- Fix `layout: compress` issue with HTML comment in video include. [#3117](https://github.com/mmistakes/minimal-mistakes/pull/3117)
 - Add Magnific Popup class to anchors that only contain an `img` element. [#3111](https://github.com/mmistakes/minimal-mistakes/issues/3111) [#3114](https://github.com/mmistakes/minimal-mistakes/pull/3114)
 - Enable Magnific Popups on anchors only when they wrap an `<img>` element. [#3114](https://github.com/mmistakes/minimal-mistakes/pull/3114)
 - Fix heading level of related posts section from `h4` to `h2` to improve accessibility and SEO. [#3064](https://github.com/mmistakes/minimal-mistakes/pull/3064)
@@ -10,6 +11,7 @@
 
 ### Enhancements
 
+- Bump path-parse from 1.0.6 to 1.0.7. [#3116](https://github.com/mmistakes/minimal-mistakes/pull/3116)
 - Add missing Danish translations. [#3095](https://github.com/mmistakes/minimal-mistakes/pull/3095)
 - Add ARIA role to search forms. [#3086](https://github.com/mmistakes/minimal-mistakes/pull/3086)
 - Add overflow scroll bar to sticky table of contents that are taller than the viewport's height. [#2874](https://github.com/mmistakes/minimal-mistakes/pull/2874)
