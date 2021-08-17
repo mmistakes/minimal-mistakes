@@ -12,7 +12,7 @@ GPA: 4.0/4.0
 Majors: Mathematics, Computer Science   
 Minor: Management   
 
-Curriculum Vita [(pdf)](https://drive.google.com/file/d/1FwReam96jpE1aVDW7KLCyrLtW-wLW1fP/view?usp=sharing)
+Curriculum Vita [(pdf)](https://drive.google.com/file/d/1NWKrwf89pkMxq3yNNgC97yhKYEruzum8/view?usp=sharing)
 
 Research Interests:
 Applied mathematics, computational science, mathematical biology, machine learning, topological
