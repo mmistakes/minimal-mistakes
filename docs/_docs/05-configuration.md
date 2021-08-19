@@ -1035,6 +1035,23 @@ paginate_path: /recent/page:num/
 **Please note:** When using Jekyll's default [pagination plugin](https://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest [**jekyll-paginate-v2**](https://github.com/sverrirs/jekyll-paginate-v2).
 {: .notice--info}
 
+### Related Pages
+
+By default Jekyll sets the `site.related_posts` to the most recent posts. Minimal mistakes selects from these when `site.related_posts.size > 0`, falling back to `site.posts` if not.
+
+The `single` layout can also relate pages by tags and categories. This works across all collections (including posts). Set the `related_threshold` value to the number of matching tags and/or categories required to relate a page. For example, setting `related_threshold: 2` requires 2 matching tags and/or categories to include a page in the related section (2 tags, 2 categories or 1 of each).
+
+By default 4 related posts are included by the module. This can be overridden by setting a `related_limit` value.
+
+Both `related_threshold` and `related_limit` can be defined at the site level, under `defaults:` in `_config.yml` or in an individual page's front matter.
+
+For example:
+
+```yaml
+related_threshold: 2  # Match 2 or more tags and/or categories.
+related_limit: 6      # Include upto 6 related pages (default is 4)
+```
+
 ### Timezone
 
 This sets the timezone environment variable, which Ruby uses to handle time and date creation and manipulation. Any entry from the [IANA Time Zone Database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) is valid. The default is the local time zone, as set by your operating system.

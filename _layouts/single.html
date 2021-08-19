@@ -64,12 +64,46 @@ layout: default
     {% endif %}
   </article>
 
-  {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
-  {% if page.id and page.related and site.related_posts.size > 0 %}
+  {% comment %}<!-- only show tag/category related posts page when `related: true` -->{% endcomment %}
+  {% assign related_limit = page.related_limit | default: site.related_limit | default: 4 %}
+  {% assign related_threshold = page.related_threshold | default: site.related_threshold | default: 0 %}
+  {% if page.id and page.related and related_threshold > 0 %}
     <div class="page__related">
       <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
       <div class="grid__wrapper">
-        {% for post in site.related_posts limit:4 %}
+        {% assign include_count = 0 %}
+        {% assign all = site.documents | concat: site.pages %}
+        {% for post in all %}
+          {% if post.id == page.id %}
+            {% continue %}
+          {% endif %}
+          {% assign related_count = 0 %}
+          {% for tag in post.tags %}
+            {% if page.tag == tag or page.tags contains tag %}
+              {% assign related_count = related_count | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+          {% for cat in post.categories %}
+            {% if page.category == cat or page.categories contains cat %}
+              {% assign related_count = related_count | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+          {% if related_count >= related_threshold %}
+            {% include archive-single.html type="grid" %}
+            {% assign include_count = include_count | plus: 1 %}
+            {% if include_count >= related_limit %}
+              {% break %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
+  {% elsif page.id and page.related and site.related_posts.size > 0 %}
+    <div class="page__related">
+      <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
+      <div class="grid__wrapper">
+        {% for post in site.related_posts limit:related_limit %}
           {% include archive-single.html type="grid" %}
         {% endfor %}
       </div>
@@ -79,7 +113,7 @@ layout: default
     <div class="page__related">
       <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
       <div class="grid__wrapper">
-        {% for post in site.posts limit:4 %}
+        {% for post in site.posts limit:related_limit %}
           {% if post.id == page.id %}
             {% continue %}
           {% endif %}
