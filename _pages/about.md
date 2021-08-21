@@ -15,9 +15,9 @@ Here is my [Curriculum Vitae in PDF format](../files/Minqian_Liu_CV.pdf).
 
 ## Research Interests
 My primary research interests lie in the field of **natural language processing** and **machine learning**. Specifically, I am interested in the following research topics: <br>
-1) Continual learning for NLP
+1) Continual learning and few-shot learning for NLP; <br>
 2) Knowledge-driven information extraction: extracting structured knowledge from text with commonsense reasoning and knowledge-based reasoning; <br>
-3) Natural language generation: text summarization, machine translation, and automatic evaluation for text generation; <br>
+3) Natural language generation: text summarization, machine translation, and automatic evaluation for text generation. <br>
 
 
 
