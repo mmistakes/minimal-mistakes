@@ -3,10 +3,12 @@ title: "Linear Algebra"
 author: "Abdul"
 layout: single
 excerpt: "Linear Algebra"
+category: linear_algebra
 categories:
   - math
-  - linear_algebra
 permalink: /categories/math/linear_algebra/
+header:
+  overlay_image: "/assets/images/categories/main-linear-algebra-2.jpg"
 ---
 ## Welcome to my Attempt at Learning Linear Algebra
 In this category, I will be attempting to go over topics and concepts which relate to linear algebra.
@@ -22,4 +24,4 @@ Check him out, he has some exceptional work.
 [3Blue1Brown](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
 
-{% include main_cat.html %}
+{% include main_categories.html %}

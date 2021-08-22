@@ -3,8 +3,11 @@ title: "Math"
 author: "Abdul"
 layout: single
 excerpt: "Math"
+category: "math"
 categories:
-  - math
+  - primary
 permalink: /categories/math/
+header:
+  overlay_image: "/assets/images/categories/main-math-3.jpg"
 ---
-{% include main_cat.html %}
+{% include main_categories.html %}

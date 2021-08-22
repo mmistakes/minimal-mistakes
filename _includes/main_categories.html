@@ -1,0 +1,152 @@
+{% assign site_category = page.category %}
+{% assign site_articles = site.categories[site_category] %}
+{% assign site_count = 0 %}
+{% assign max_article_count = 3 %}
+
+{% for post in site_articles reversed %}
+# Posts Within {{page.title}}
+All posts for {{page.title}}.
+{% break %}
+{% endfor %}
+
+{% for post in site_articles reversed %}
+*   [{{post.title}}]({{post.url | prepend:site.baseurl }})
+{% endfor %}
+
+
+{% comment %}
+The Above is for main categories
+
+
+The Below is for sub-categories
+{% endcomment %}
+
+
+{% for pages in site.pages %}
+  {% if pages.url contains page.category and pages.permalink != page.permalink %}
+# Sub-Categories
+Subcategories within {{page.title}} and their first few posts.
+  {% break %}
+  {% endif %}
+{% endfor %}
+
+
+  {% for first_sub in site.pages %}
+    {% if first_sub.categories contains page.category %}
+      {% assign first_sub_cat = first_sub.category %}
+      {% assign first_posts = site.categories[first_sub_cat] %}
+
+  *  [{{first_sub.excerpt}}]({{first_sub.url | prepend:site.baseurl }})
+
+      {% assign post_count = 0 %}
+      {% for post in first_posts reversed %}
+        {% assign post_count = post_count | plus: 1 %}
+        {% if post_count <= max_article_count %}
+
+      *  [{{post.title}}]({{post.url | prepend:site.baseurl }})
+
+        {% endif %}
+      {% endfor %}
+
+
+    {% for second_sub in site.pages %}
+      {% if second_sub.categories contains first_sub_cat %}
+        {% assign second_sub_cat = second_sub.category %}
+        {% assign second_posts = site.categories[second_sub_cat] %}
+
+      *  __[{{second_sub.excerpt}}]({{second_sub.url | prepend:site.baseurl }})__
+
+        {% assign post_count = 0 %}
+        {% for post in second_posts reversed %}
+          {% assign post_count = post_count | plus: 1 %}
+          {% if post_count <= max_article_count %}
+
+          *  [{{post.title}}]({{post.url | prepend:site.baseurl }})
+
+          {% endif %}
+        {% endfor %}
+
+
+      {% for third_sub in site.pages %}
+        {% if third_sub.categories contains second_sub_cat %}
+          {% assign third_sub_cat = third_sub.category %}
+          {% assign third_posts = site.categories[third_sub_cat] %}
+
+          *  __[{{third_sub.excerpt}}]({{third_sub.url | prepend:site.baseurl }})__
+
+          {% assign post_count = 0 %}
+          {% for post in third_posts reversed %}
+            {% assign post_count = post_count | plus: 1 %}
+            {% if post_count <= max_article_count %}
+
+            *  [{{post.title}}]({{post.url | prepend:site.baseurl }})
+
+            {% endif %}
+          {% endfor %}
+
+
+        {% for fourth_sub in site.pages %}
+          {% if fourth_sub.categories contains third_sub_cat %}
+             {% assign fourth_sub_cat = fourth_sub.category %}
+             {% assign fourth_posts = site.categories[fourth_sub_cat] %}
+
+            *  __[{{fourth_sub.excerpt}}]({{fourth_sub.url | prepend:site.baseurl }})__
+
+             {% assign post_count = 0 %}
+             {% for post in fourth_posts reversed %}
+               {% assign post_count = post_count | plus: 1 %}
+               {% if post_count <= max_article_count %}
+
+                *  [{{post.title}}]({{post.url | prepend:site.baseurl }})
+
+               {% endif %}
+             {% endfor %}
+
+
+          {% for fifth_sub in site.pages %}
+            {% if fifth_sub.categories contains fourth_sub_cat %}
+              {% assign fifth_sub_cat = fifth_sub.category %}
+              {% assign fifth_posts = site.categories[fifth_sub_cat] %}
+
+                *  __[{{fifth_sub.excerpt}}]({{fifth_sub.url | prepend:site.baseurl }})__
+
+              {% assign post_count = 0 %}
+              {% for post in fifth_posts reversed %}
+                {% assign post_count = post_count | plus: 1 %}
+                {% if post_count <= max_article_count %}
+
+                    *  [{{post.title}}]({{post.url | prepend:site.baseurl }})
+
+                {% endif %}
+              {% endfor %}
+
+            {% for sixth_sub in site.pages %}
+              {% if sixth_sub.categories contains fifth_sub_cat %}
+                {% assign sixth_sub_cat = sixth_sub.category %}
+                {% assign sixth_posts = site.categories[sixth_sub_cat] %}
+
+                    *  __[{{sixth_sub.excerpt}}]({{sixth_sub.url | prepend:site.baseurl }})__
+
+                {% assign post_count = 0 %}
+                {% for post in sixth_posts reversed %}
+                  {% assign post_count = post_count | plus: 1 %}
+                  {% if post_count <= max_article_count %}
+
+                       *  [{{post.title}}]({{post.url | prepend:site.baseurl }})
+
+                  {% endif %}
+                {% endfor %}
+
+
+              {% endif %}
+            {% endfor %}
+            {% endif %}
+          {% endfor %}
+          {% endif %}
+        {% endfor %}
+        {% endif %}
+      {% endfor %}
+      {% endif %}
+    {% endfor %}
+    {% endif %}
+  {% endfor %}

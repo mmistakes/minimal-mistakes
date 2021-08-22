@@ -4,8 +4,6 @@ main:
     url: /about/
   - title: "Categories"
     url: /categories/
-  - title: "Interview Prep"
-    url: /interview_prep/introduction_to_interview_prep
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
@@ -16,14 +14,8 @@ interview_prep:
   - title: "Interview Prep"
     children:
       - title: "Introduction to Interview Prep"
-        url: /interview_prep/introduction_to_interview_prep
+        url: /categories/career/interview_prep/introduction_to_interview_prep
       - title: "What is Interview Prep And Why You Need It"
-        url: /interview_prep/what_is_interview_prep_and_why_you_need_it
-      - title: "Finding The Right Interview Coach"
-        url: /interview_prep/finding_the_right_interview_coach
-      - title: "Services Provided"
-        url: /interview_prep/services_provided
+        url: /categories/career/interview_prep/what_is_interview_prep_and_why_you_need_it
       - title: "How College Fails to Provide Real-World Knowledge"
-        url: /interview_prep/how_college_fails_to_provide_real-world_knowledge
-      - title: "Get in Touch"
-        url: /interview_prep/get_in_touch
+        url: /categories/career/interview_prep/how_college_fails_to_provide_real-world_knowledge

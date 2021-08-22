@@ -101,8 +101,9 @@ analytics:
 author:
   name             : "Abdul Q Rabbani"
   avatar           : "/assets/images/abdul-id-picture-1.jpeg"
-  bio              : "This is a journal capturing the things I love to do."
-  location         : "NYC"
+  #bio              : "This is a journal capturing the things I love to do."
+  bio              : "Engineer, Programmer, Student"
+  location         : "Queens, NY"
   email            : "abdulrabbani00@gmail.com"
   links:
     - label: "Email"
@@ -183,6 +184,8 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - _posts/test/* #When you want to test, commen this out
+  - _pages/test-1/* #When you want to test, commen this out
 keep_files:
   - .git
   - .svn
