@@ -6,11 +6,11 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "Guangzhou-CN"
-title                    : "Minqian Liu (刘敏仟)"
+locale                   : "Blacksburg-US"
+title                    : "Minqian Liu"
 title_separator          : "-"
 name                     : &name "Minqian Liu"
-description              : &description "Undergraduate student at South China University of Technology"
+description              : &description "Ph.D. student at Virginia Tech"
 url                      : https://mqianliu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "mqianliu.github.io"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Minqian Liu"
   avatar           : "profile.jpg"
-  bio              : "Undergraduate student at South China University of Technology"
-  location         : "Guangzhou, China"
+  bio              : "Ph.D. student at Virginia Tech"
+  location         : "Blacksburg, USA"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : #"https://scholar.google.com/citations?user=UebIjuQAAAAJ&hl=zh-CN"
-  email            : "lmqscutcs@gmail.com"
+  googlescholar    : "https://scholar.google.com/citations?user=xCR8nrwAAAAJ&hl=en"
+  email            : "minqianliu@vt.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
