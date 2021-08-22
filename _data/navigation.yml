@@ -19,7 +19,7 @@ main:
   #  url: /year-archive/
     
   - title: "CV"
-    url: ../files/Minqian_Liu_CV.pdf
+    url: https://mqianliu.github.io//files/Minqian_Liu_CV.pdf
     
   #- title: "Guide"
   #  url: /markdown/
