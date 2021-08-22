@@ -10,7 +10,7 @@ author_profile: true
 
 * **Progressive Dialogue State Tracking for Multi-domain Dialogue Systems**<br>
   Jiahao Wang, **Minqian Liu**, Xiaojun Quan<br>
-  To appear at *2021 IEEE International Conference on Acoustics, Speech and Signal Processing* (**ICASSP**) \[[pdf](https://mqianliu.github.io/files/ProDST_ICASSP.pdf)]
+  In *Proceedings of 2021 IEEE International Conference on Acoustics, Speech and Signal Processing* (**ICASSP**) \[[pdf](https://mqianliu.github.io/files/ProDST_ICASSP.pdf)]
 
 * **Dynamic Extension Nets for Few-shot Semantic Segmentation**<br> 
   Lizhao Liu\*, Junyi Cao\*, **Minqian Liu\***, Yong Guo\*, Qi Chen\*, Mingkui Tan<br>
