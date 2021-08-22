@@ -129,6 +129,7 @@ Auto-generated table of contents list for your posts and pages can be enabled by
 | **toc**     | Optional | Show table of contents. (boolean) | `false` |
 | **toc_label** | Optional | Table of contents title. (string) | `toc_label` in UI Text data file. |
 | **toc_icon**  | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fontawesome.com/icons?d=gallery&s=solid&m=free) <i class="fas fa-file-alt"></i> **file-alt** icon. Other FA icons can be used instead. |
+| **toc_sticky** | Optional | Stick table of contents to top of screen.                   | `false` |
 
 **TOC example with custom title and icon**
 
@@ -139,6 +140,31 @@ toc_label: "My Table of Contents"
 toc_icon: "cog"
 ---
 ```
+
+{% capture notice-text %}
+**Note:** You need to use contiguous levels of headings for the TOC to generate properly. For example:
+
+```markdown
+Good headings:
+
+# Heading
+## Heading
+### Heading
+### Heading
+# Heading
+## Heading
+
+Bad headings:
+
+# Heading
+### Heading (skipped H2)
+##### Heading (skipped H4)
+```
+{% endcapture %}
+
+<div class="notice--warning">
+  {{ notice-text | markdownify }}
+</div>
 
 ## Archive layout
 
@@ -249,7 +275,7 @@ This layout displays all documents grouped by a specific collection. It accommod
 collection: # collection name
 entries_layout: # list (default), grid
 show_excerpts: # true (default), false
-sort_by: # date (default) title
+sort_by: # date (default), title or any metadata key added to the collection's documents
 sort_order: # forward (default), reverse
 ```
 
@@ -263,6 +289,11 @@ collection: recipes
 ```
 
 If you want to sort the collection by title add `sort_by: title`. If you want reverse sorting, add `sort_order: reverse`.
+You can also use any metadata key that is present in the documents. For example, you can add `number: <any number>` to your documents and use `number` as the sort key:
+
+```yaml
+sort_by: number
+```
 
 ### `layout: category`
 
@@ -332,7 +363,7 @@ Then adjust the `paginate_path` in **_config.yml** to match.
 
 ```yaml
 paginate_path: /blog/page:num
-``` 
+```
 
 **Note:** Jekyll can only paginate a single `index.html` file. If you'd like to paginate more pages (e.g. category indexes) you'll need the help of a custom plugin. For more pagination related settings check the [**Configuration**]({{ "/docs/configuration/#paginate" | relative_url }}) section.
 {: .notice--info}
@@ -427,13 +458,15 @@ To overlay text on top of a header image you have a few more options:
 | Name                     | Description | Default |
 | ----                     | ----------- | ------- |
 | **overlay_image**        | Header image you'd like to overlay. Same rules as `header.image` from above. | |
-| **overlay_filter**       | Color/opacity to overlay on top of the header image eg: `0.5` or `rgba(255, 0, 0, 0.5)`. |
+| **overlay_filter**       | Color/opacity to overlay on top of the header image. Example: `0.5`, `rgba(255, 0, 0, 0.5)` or [`linear-gradient`][mdn-linear-gradient]. |
 | **show_overlay_excerpt** | Display excerpt in the overlay text | true |
 | **excerpt**              | Auto-generated page excerpt is added to the overlay text or can be overridden. | |
 | **tagline**              | Overrides page excerpt. Useful when header text needs to be different from excerpt in archive views. | |
 | **actions**              | Call to action button links (`actions` array: `label` and `url`). More than one button link can be assigned. | |
 | **cta_label**            | Deprecated, use `actions` instead. Call to action button text label. | `more_label` in UI Text data file |
 | **cta_url**              | Deprecated, use `actions` instead. Call to action button URL. | |
+
+  [mdn-linear-gradient]: https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient()
 
 With this YAML Front Matter:
 
@@ -476,7 +509,7 @@ header:
       url: "https://github.com"
 ```
 
-Or if you want to do more fancy things, go full rgba:
+Or if you feel colorful, use full rgba:
 
 ![transparent red overlay]({{ "/assets/images/mm-header-overlay-red-filter.jpg" | relative_url }})
 
@@ -485,6 +518,21 @@ excerpt: "This post should [...]"
 header:
   overlay_image: /assets/images/unsplash-image-1.jpg
   overlay_filter: rgba(255, 0, 0, 0.5)
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  actions:
+    - label: "Download"
+      url: "https://github.com"
+```
+
+Or if you want to do more fancy things, go all the way to [linear-gradient][mdn-linear-gradient]:
+
+![transparent custom overlay]({{ "/assets/images/mm-header-overlay-custom-filter.jpg" | relative_url }})
+
+```yaml
+excerpt: "This post should [...]"
+header:
+  overlay_image: /assets/images/unsplash-image-1.jpg
+  overlay_filter: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 255, 255, 0.5))
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   actions:
     - label: "Download"
@@ -579,7 +627,7 @@ For example, to color a Reddit icon, simply add a `color` declaration and the co
     color: #ff4500;
   }
 }
-``` 
+```
 
 ![Reddit link in author profile with color]({{ "/assets/images/mm-author-profile-reddit-color.png" | relative_url }})
 
@@ -629,7 +677,7 @@ To start, add a new key to `_data/navigation.yml`. This will be referenced later
 
 **Sample sidebar menu links:**
 
-```yaml 
+```yaml
 docs:
   - title: Getting Started
     children:
@@ -750,3 +798,49 @@ Add the new `.btn--reddit` class to the `<a>` element from earlier, [compile `ma
 ```
 
 ![Reddit social share link button]({{ "/assets/images/mm-social-share-links-reddit-color.png" | relative_url }})
+
+---
+
+## Custom head and footer
+
+The `default` layout includes a number of custom templates, which provide ways for you to directly add content to all your pages.
+
+### Head
+
+`_includes/head/custom.html` is included at the end of the `<head>` tag. An example use of this include is to add custom CSS per page:
+
+Add some Liquid tags for the new configuration to `_includes/head/custom.html`.
+{% raw %}```html
+{% if page.page_css %}
+  {% for stylesheet in page.page_css %}
+    <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
+  {% endfor %}
+{% endif %}
+```{% endraw %}
+
+Next, add `page_css` to any page's YAML Front Matter to have your CSS loaded for that page.
+```yaml
+page_css:
+  - /path/to/your/custom.css
+```
+
+### Footer
+
+`_includes/footer/custom.html` is included at the beginning of the `<footer>` tag. An example use of this include is to add custom JavaScript per page:
+
+Add some Liquid tags for the new configuration to `_includes/footer/custom.html`.
+{% raw %}```html
+{% if page.page_js %}
+  {% for script in page.page_js %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
+```{% endraw %}
+
+Next, add `page_js` to any page's YAML Front Matter to have your CSS loaded for that page.
+```yaml
+page_js:
+  - /path/to/your/custom.css
+```
+
+---
