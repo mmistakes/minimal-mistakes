@@ -39,9 +39,9 @@ comments:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    colorscheme          : "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
+    theme                : github-dark
     issue_term           : # "pathname" (default)
   staticman:
     branch               : # "master"
@@ -94,7 +94,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "OH Min Jeong"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
   location         : "Somewhere"
