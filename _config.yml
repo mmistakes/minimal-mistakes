@@ -96,8 +96,8 @@ analytics:
 author:
   name             : "OH Min Jeong"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "I am studying back-end engineering."
+  location         : "Somewhere Over the Raingbow..."
   email            :
   links:
     - label: "Email"
