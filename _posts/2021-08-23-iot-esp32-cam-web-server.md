@@ -34,5 +34,6 @@ Software
 Reference
 * https://randomnerdtutorials.com/esp32-cam-video-streaming-web-server-camera-home-assistant/
 
-<iframe width="100%" src="https://www.youtube.com/watch?v=oXG6WJnzpsg" frameborder="0" allowfullscreen></iframe>
+{% include youtubeplayer.html id="oXG6WJnzpsg" %}
 
+참고
