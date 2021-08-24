@@ -425,6 +425,14 @@ Just use `return` to output stuff. If you don't output anything it will implicit
 
 Functions have their own scope. Parameters and local variables to that function only exist within that function. They have access to the entire outer scope, however.
 
+### Strict Mode
+
+Add `use-strict` to the top of `.js` files. This will make you declare your variables. This isn't required for modules and classes.
+
+### Hoisting
+
+You can't access variables before you declare them. You CAN access functions before you declare them. This is called **hoisting**. The actual mechanism behind hoisting is that the JavaScript files gets executed after two passes. In the first pass, the JS engine will know there's a function. In the second pass it will actually execute the code and it already knows about the function.
+
 ### Functions to Modify WebPages
 
 You can interact with the DOM
@@ -479,4 +487,23 @@ const button = document.getElementById('click-me')
 button.addEventListener('click', function () {
     console.log('THE USER CLICKED, WE SHOULD DO SOMETHIN')
 })
+```
+
+### Showing and Hiding DOM Elements
+
+
+```html
+
+<a id="see-review" class="btn btn-default">See Review</a>
+
+
+
+<div id="review" class="container d-none">
+    <h4>Review Title...</h3>
+    <p>Review text...</p>
+</div>
+```
+
+```javascript
+
 ```
