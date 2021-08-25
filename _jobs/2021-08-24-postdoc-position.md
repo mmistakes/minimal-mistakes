@@ -11,6 +11,7 @@ tags:
 header:
   teaser: "/assets/images/ivan-timov-138042-unsplash-500x300.jpg"
 ---
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
