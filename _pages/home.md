@@ -26,7 +26,7 @@ feature_row:
     alt: "Join the Lab"
     title: "Join the Lab"
     excerpt: "We are hiring a postdoc to work on modeling microbiome networks"
-    url: "/jobs/"
+    url: "/jobs/2021-08-24-postdoc-position/"
     btn_label: "Learn More"
     btn_class: "btn--info"
     caption: "Photo credit: [*free to use sounds*](https://unsplash.com/photos/kOuCX7fh50U)"
