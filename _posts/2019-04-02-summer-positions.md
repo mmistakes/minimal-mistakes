@@ -5,6 +5,7 @@ categories:
  - posts
 tags:
  - jobs
+ - closed
 header:
   teaser: "/assets/images/clem-onojeghuo-210707.jpg"
 ---

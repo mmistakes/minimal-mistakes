@@ -15,7 +15,6 @@ author_profile: false
   {% endfor %}
 </div>
 
-
 ## Closed positions
 
 

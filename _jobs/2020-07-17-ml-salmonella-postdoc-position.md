@@ -1,5 +1,5 @@
 ---
-title: "Machine learning/computational biology postdoc in bacterial genomics"
+title: "Machine learning/computational biology postdoc in microbiome modeling"
 date: 2020-07-20
 categories:
  - jobs

@@ -38,5 +38,5 @@ Software|description|Page
 ---------|----------------------------|------------
 Reftree  | Software for querying and processing taxonomically structured data.| [link](https://bitbucket.org/berkeleylab/jgi_reftree)
 iTagger | Software for processing amplicon sequencing data at a scale of 10,000 samples per year. | [link](https://bitbucket.org/berkeleylab/jgi_itagger)
-Fidoplankter | An online calculator for designing iron limitation experiments in Phytoplankton, written before I knew about Github :) |[link](http://fidoplankter.uga.edu/)
+Fidoplankter | An online calculator for designing iron limitation experiments in Phytoplankton |[link](https://arivers.github.io/fidoplankter/)
 ----------|----------------------------|------------

@@ -72,23 +72,6 @@ learning methods. Additionally, she is currently performing a comparative
 analysis on the intestinal microbial community composition and antimicrobial
 profile of poultry specimens from the pre- and post-antibiotic eras.
 
-![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/pp_ravin_150.jpg){: .align-left}
-## Ravin Poudel, PhD
-_PhD University of Florida, 2018_
-
-Dr. Poudel is an ARS funded post-doctoral researcher and the Department of
-Microbiology and Cell Science at the University of Florida who works in the
-group. He interested in the ecology of microbial communities, mostly microbial
-assemblies, diversities, interactions, and their community level functions, in
-the natural as well as in the agricultural systems. He is developing software
-and statistical methods to analyze data for high-throughput fitness-profiling
-experiments in the model organism _E. coli_, with the aim to scale it up to other
-microbes in the future. He is also working on methods to model microbial
-communities using [amplicon sequencing, metabolomics, and Bayesian networks](/projects/Ralstonia_dynamic_bayesian/) in
-order to identify key microbial structures and functional signatures to support
-the selection of candidate taxa or microbial-consortia for microbiome-based crop
-productions.  More on his research is [here](https://ravinpoudel.github.io/).
-
 ![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/winders.jpeg){: .align-left}
 ## Jeremy Winders, PhD
 _PhD, Mississippi State University, 2019_
@@ -105,16 +88,27 @@ application of Machine learning methods for genotype and phenotype prediction
 in Salmonella. He is also developing methods for investigating nitrogen fixation in sugar cane. More in his research is [here](https://chrisgaby.github.io/)
 
 
-# Staff
+# Former members
+
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/pp_ravin_150.jpg){: .align-left}
+## Ravin Poudel, PhD
+_PhD University of Florida, 2018_
+
+Dr. Poudel is currently a Bioinformatics Scientist at [Xbiome](https://www.xbiome.com/) in Boston. He was an ARS funded post-doctoral researcher and the Department of
+Microbiology and Cell Science at the University of Florida who worked in the
+group. He is also worked on methods to model microbial
+communities using [amplicon sequencing, metabolomics, and Bayesian networks](/projects/Ralstonia_dynamic_bayesian/) in
+order to identify key microbial structures and functional signatures to support
+the selection of candidate taxa for microbial-consortia to enhance crop
+production.  He also developed [Guidemaker](https://guidemaker.org) Software for the design of CRISPR/Cas Guide RNAs.  More on his research is [here](https://ravinpoudel.github.io/).
+
+
 
 ![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/Leo_website_photo.jpg){: .align-left}
 ## Ryo (Leo) Iwata
 _BS University of Florida, 2018_
 
-Leo is a Python based analyst that is creating bioinformatic workflows for machine learning and data processing. While assisting others with programming and high-performance computing in a research setting.
-
-
-# Former members
+Leo was a Python based analyst that wokred creating bioinformatic workflows for machine learning and data processing.
 
 
 ![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/aswarup.jpg){: .align-left}

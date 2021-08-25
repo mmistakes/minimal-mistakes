@@ -25,7 +25,7 @@ feature_row:
   - image_path: /assets/images/free-to-use-sounds-kOuCX7fh50U-unsplash.jpg
     alt: "Join the Lab"
     title: "Join the Lab"
-    excerpt: "We have no open positions at this time but please contact us if you are interested in future positions."
+    excerpt: "We are hiring a postdoc to work on modeling microbiome networks"
     url: "/jobs/"
     btn_label: "Learn More"
     btn_class: "btn--info"
