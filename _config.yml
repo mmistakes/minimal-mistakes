@@ -109,7 +109,6 @@ author:
   avatar           : "/assets/images/myImage.jpg"
   bio              : "I am an **poor** stack developer."
   location         : "Dongtan in Korea"
-  email            : chanhyuk-tech@kakao.com // pgg6713@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
