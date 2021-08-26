@@ -1,0 +1,65 @@
+.tgl {
+    display: none;
+
+    // add default box-sizing for this scope
+    &,
+    &:after,
+    &:before,
+    & *,
+    & *:after,
+    & *:before,
+    & + .tgl-btn {
+        box-sizing: border-box;
+        &::selection {
+            background: none;
+        }
+    }
+
+    + .tgl-btn {
+        outline: 0;
+        display: block;
+        width: 3em;
+        height: 1.5em;
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+        &:after,
+        &:before {
+            position: relative;
+            display: block;
+            content: "";
+            width: 50%;
+            height: 100%;
+        }
+
+        &:after {
+            left: 0;
+        }
+
+        &:before {
+            display: none;
+        }
+    }
+
+    &:checked + .tgl-btn:after {
+        left: 50%;
+    }
+}
+
+.tgl-light {
+    + .tgl-btn {
+        background: lightgray;
+        border-radius: 1.5em;
+        padding: 2px;
+        transition: all 0.4s ease;
+        &:after {
+            border-radius: 50%;
+            background: white;
+            transition: all 0.2s ease;
+        }
+    }
+
+    &:checked + .tgl-btn {
+        background: gray;
+    }
+}
