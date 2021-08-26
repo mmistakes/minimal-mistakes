@@ -26,4 +26,6 @@ codekit-config.json
 .jekyll-metadata
 .sass-cache
 _asset_bundler_cache
-_site
+_site/*
+/_includes/xaitk-bibliography/_site/*
+!/_includes/xaitk-bibliography/_site/references.html
