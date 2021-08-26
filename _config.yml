@@ -19,7 +19,7 @@ footer_scripts:
   - /assets/js/custom/dark-theme.js
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 title                    : "Chanhyuk-Tech"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
