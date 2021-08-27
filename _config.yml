@@ -36,7 +36,7 @@ words_per_minute         : 200
 comments:
   provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   utterances:
-    theme                : "github-dark" # "github-light" (default), "github-dark"
+    theme                : "dark-blue" # "github-light" (default), "github-dark"
     issue_term           : "pathname" # "pathname" (default)
 reCaptcha:
   siteKey                :
