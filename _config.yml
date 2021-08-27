@@ -107,7 +107,7 @@ analytics:
 author:
   name             : "박 찬혁"
   avatar           : "/assets/images/myImage.jpg"
-  bio              : "I am an **poor** stack developer."
+  bio              : "**poor** stack developer."
   location         : "Dongtan in Korea"
   links:
     - label: "Email"
