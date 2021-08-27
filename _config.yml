@@ -20,7 +20,7 @@ footer_scripts:
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "記憶じゃなくて記録"
+title                    : "記憶じゃなくて**記録**"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "박찬혁"
