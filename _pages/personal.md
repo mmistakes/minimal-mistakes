@@ -21,6 +21,15 @@ Oceananigans.
 
 
 
+## Science communication
+
+I am also interested in communicating science in general. Below is a video that I created
+along with [TED-Ed](https://ed.ted.com/):
+ 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S3i6tJ4XNqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
 ## Pymicra
 
 I created and developed the Python Tool for Micrometeorological Analyses:
@@ -36,15 +45,6 @@ gitlab](https://gitlab.com/tomchor/ocean_cheatsheet/-/wikis/home) that lists and
 some useful equations, relations, etc. in a very brief manner. I created it mainly for
 personal use and it's still a work in progress that I populate as I need, but contributors
 are welcome.
-
-
-
-## Science communication
-
-I am also interested in communicating science in general. Below is a video that I created
-along with [TED-Ed](https://ed.ted.com/):
- 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/S3i6tJ4XNqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Others
