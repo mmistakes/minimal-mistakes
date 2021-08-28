@@ -13,6 +13,8 @@ I've spent the most time in PowerShell so I have a few comparisons sprinkled in.
 
 You should probably checkout [Mozilla's JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) instead of this and I have linked to it a bunch to save myself time in the future.
 
+As I run into other noteworthy things I'll continue to update this as I keep learning. 🙌👀🙌
+
 ## Running JS
 
 ### VS Code
@@ -32,7 +34,24 @@ Code is my bae and I will probably do most things here. You can run and debug st
 - Use [NodeJS](https://nodejs.org/en/). Open up a console, like **PowerShell**, and run `node` to get an interactive experience in yo shell!
   
 - Run JavaScript `.js` files by running `node filename.js`
+- `npm install <packagename>` installs a package
+- `npm install` installs all packages for a nodeJS project including everything in package.json
 
+## NPM - Node Package Manager
+
+Node Package Manager, `npm`, is the package manager for Node JS. Node JS is the way that you can run JavaScript code outside of the browser. NPM comes installed with Node.js so you get both when you get Node.js.
+
+`npm --version` - check your installed version of NPM
+`npm init` - create a new project, basically just a `package.json` file.
+`npm --install` - installs packaages for project
+
+### NVM - Node Version Manager
+
+Sometimes you need to run multiple versions of Node.js. Node version manager allows you to install different versions of Node.js.
+
+- For Linux and MacOS, you want this one: https://github.com/nvm-sh/nvm.
+
+- For Windows, use: https://github.com/coreybutler/nvm-windows.
 ## Types
 
 Everything except for objects are primitive types
