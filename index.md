@@ -7,7 +7,8 @@ layout: single
 
 I'm geophysical fluid dynamicist who is interested in turbulent phenomena. In particular my main
 foci are small- and submeso-scale turbulence, which I investigate with a numerical approach (usually
-large-eddy simulations). 
+large-eddy simulations). I'm also a big believer in community-driven open-source software as a way
+to improve the reproducibility of results in science.
 
 I'm currently working as a postdoctoral researcher at the University of Maryland's Atmospheric and
 Oceanic Science department in [Dr. Jacob Wenegrat](https://wenegrat.github.io/)'s group. 

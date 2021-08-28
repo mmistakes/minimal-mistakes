@@ -5,7 +5,7 @@ header:
 permalink: /personal/
 ---
 
-Here you can find a non-exhaustive list of projects that I pursue on my own. Feel free 
+Here you can find a non-exhaustive list of projects that I pursue mostly on my free time. Feel free
 to reach out if you're interested in any of them.
 
 
@@ -24,8 +24,8 @@ Oceananigans.
 ## Pymicra
 
 I created and developed the Python Tool for Micrometeorological Analyses:
-[Pymicra](https://pymicra.readthedocs.io/en/latest/). This is an open-source
-project hosted on github that you can use of and contribute to.
+[Pymicra](https://pymicra.readthedocs.io/en/latest/). This is an open-source project hosted on
+github that you can use and contribute to.
 
 
 
