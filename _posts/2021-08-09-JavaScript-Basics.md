@@ -36,6 +36,8 @@ Code is my bae and I will probably do most things here. You can run and debug st
 - Run JavaScript `.js` files by running `node filename.js`
 - `npm install <packagename>` installs a package
 - `npm install` installs all packages for a nodeJS project including everything in package.json
+- `npm start` conventional npm script for starting a node.js application 
+- `npm run start:dev` enables live reload of code as you work on it
 
 ## NPM - Node Package Manager
 
