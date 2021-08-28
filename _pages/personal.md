@@ -8,6 +8,19 @@ permalink: /personal/
 Here you can find a non-exhaustive list of projects that I pursue on my own. Feel free 
 to reach out if you're interested in any of them.
 
+
+## Oceananigans
+
+I'm a regular contributor to
+[Oceananigans](https://clima.github.io/OceananigansDocumentation/stable/), a Julia package that
+provides an efficient and user-friendly way to run large-eddy simulations (among other things) on
+[CPUs](https://en.wikipedia.org/wiki/Central_processing_unit) and
+[GPUs](https://en.wikipedia.org/wiki/Graphics_processing_unit). I also created a companion package
+[Oceanostics](https://github.com/tomchor/Oceanostics.jl), which provides easy diagnostics to
+Oceananigans.
+
+
+
 ## Pymicra
 
 I created and developed the Python Tool for Micrometeorological Analyses:
@@ -36,9 +49,8 @@ along with [TED-Ed](https://ed.ted.com/):
 
 ## Others
 
-My other side projects can also be accessed using my [Github
-page](https://github.com/tomchor). Most are for personal use but they are all open-source
-and anyone can use them if they wish to.
+My other side projects can also be accessed using my [Github page](https://github.com/tomchor). Most
+are for personal use but they are all open-source and anyone can use them if they wish to.
 
 
 
