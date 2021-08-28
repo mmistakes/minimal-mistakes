@@ -30,13 +30,6 @@ along with [TED-Ed](https://ed.ted.com/):
 
 
 
-## Pymicra
-
-I created and developed the Python Tool for Micrometeorological Analyses:
-[Pymicra](https://pymicra.readthedocs.io/en/latest/). This is an open-source project hosted on
-github that you can use and contribute to.
-
-
 
 ## Ocean_cheatsheet
 
@@ -45,6 +38,15 @@ gitlab](https://gitlab.com/tomchor/ocean_cheatsheet/-/wikis/home) that lists and
 some useful equations, relations, etc. in a very brief manner. I created it mainly for
 personal use and it's still a work in progress that I populate as I need, but contributors
 are welcome.
+
+
+
+## Pymicra
+
+I created and developed the Python Tool for Micrometeorological Analyses:
+[Pymicra](https://pymicra.readthedocs.io/en/latest/). This is an open-source project hosted on
+github that you can use and contribute to.
+
 
 
 ## Others
