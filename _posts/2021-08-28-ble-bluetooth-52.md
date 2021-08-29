@@ -17,7 +17,7 @@ toc_sticky: true
 
 ### 14.1 Background for LE Isochronous Channels (ISOC)
 
-**Notice :** 다음 내용은 [https://www.bluetooth.com/wp-content/uploads/2020/01/Bluetooth_5.2_Feature_Overview.pdf](https://www.bluetooth.com/wp-content/uploads/2020/01/Bluetooth_5.2_Feature_Overview.pdf) 의 3.1 절 내용을 의역한 것이며, 보다 자세한 내용은 자료 원문 혹은 **Bluetooth Core Specification** 문서를 참조하십시오.
+**Notice :** 다음은 [https://www.bluetooth.com/wp-content/uploads/2020/01/Bluetooth_5.2_Feature_Overview.pdf](https://www.bluetooth.com/wp-content/uploads/2020/01/Bluetooth_5.2_Feature_Overview.pdf) 의 3.1 절 내용을 의역한 것이며, 보다 자세한 내용은 자료 원문 혹은 **Bluetooth Core Specification** 문서를 참조하십시오.
 {: .notice--info}
 
 블루투스 5.2 에서 추가된 `ISOC` 특징을 알아보기 전, 블루투스 5.1 까지 소개된 BLE 프로토콜의 대략적인 채널 특성은 다음과 같다.
