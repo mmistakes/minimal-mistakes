@@ -26,8 +26,8 @@ toc_ads: true
 * [nRF5 SDK (2) - nRF52 시리즈 제품별 특징](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-nrf5series/)
 * [nRF5 SDK (3) - nRF52 시리즈 (SDK 17.0.2) TWI (I2C) 모듈 제어](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-twi-i2c/)
 * [nRF5 SDK (4) - nRF52 시리즈 (SDK 17.0.2) Adv. 패킷 업데이트](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-adv-data-packet/)
-
 * [nRF5 SDK (5) - nRF52 시리즈 (SDK 17.0.2) MTU Throughput 예제](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-mtu_throughput-example/)
+
 ---
 
 ## 포스팅 예정 항목
