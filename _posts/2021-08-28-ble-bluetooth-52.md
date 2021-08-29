@@ -1,5 +1,5 @@
 ---
-title: "BLE (14) - 새로운 무선 오디오 (Wireless Audio) 시장의 시작: Bluetooth 5.2"
+title: "BLE (14) - 새로운 무선 오디오 시장의 시작: Bluetooth 5.2"
 categories:
   - BLE
 tags:
@@ -13,11 +13,11 @@ toc_sticky: true
 ---
 <!--span style="color:#056070"><b>contents</b></span-->
 
-## 14. The New Features of Bluetooth 5.2
+## 14. 새로운 무선 오디오 시장의 시작: Bluetooth 5.2
 
 ### 14.1 Background for LE Isochronous Channels (ISOC)
 
-**Notice :** 본 내용은 [https://www.bluetooth.com/wp-content/uploads/2020/01/Bluetooth_5.2_Feature_Overview.pdf](https://www.bluetooth.com/wp-content/uploads/2020/01/Bluetooth_5.2_Feature_Overview.pdf) 자료의 3.1 내용을 의역한 것이며, 보다 자세한 내용은 원문 자료 혹은 **Bluetooth Core Specification** 문서를 참조하십시오.
+**Notice :** 다음 내용은 [https://www.bluetooth.com/wp-content/uploads/2020/01/Bluetooth_5.2_Feature_Overview.pdf](https://www.bluetooth.com/wp-content/uploads/2020/01/Bluetooth_5.2_Feature_Overview.pdf) 의 3.1 절 내용을 의역한 것이며, 보다 자세한 내용은 자료 원문 혹은 **Bluetooth Core Specification** 문서를 참조하십시오.
 {: .notice--info}
 
 블루투스 5.2 에서 추가된 `ISOC` 특징을 알아보기 전, 블루투스 5.1 까지 소개된 BLE 프로토콜의 대략적인 채널 특성은 다음과 같다.
@@ -85,11 +85,13 @@ toc_sticky: true
 
 그 외에도 여러 적용 분야가 있을 수 있는데, 핵심은 하나의 소스에서 다수의 구별된 그룹에게 동기화된 음원 데이터를 제공하는데 있다.
 
->지금도 최신 iOS 가 탑재된 아이폰은 두 개의 에어팟과 연결이 가능한데, `LE Audio` 어플리케이션을 이용해 이러한 기능을 보다 보편적으로 확장할 수 있게 되지 않을까 싶다.
+>현재 최신 iOS 가 탑재된 아이폰의 경우 두 세트의 에어팟과 연결이 가능한데, `LE Audio` 어플리케이션을 이용해 이런 기능을 다양한 BLE 제품에 대해서도 활용할 수 있게 되지 않을까 싶다.
 
 ---
 
 **Reference**
+
+"블루투스 5.2 특징"
 
 https://www.bluetooth.com/wp-content/uploads/2020/01/Bluetooth_5.2_Feature_Overview.pdf
 
@@ -97,7 +99,11 @@ https://www.novelbits.io/bluetooth-version-5-2-le-audio/
 
 https://www.telink-semi.com/need-to-know-bluetooth-version-5-2/
 
+"LE Audio 소개"
+
 https://www.youtube.com/watch?v=KxI1-NdmHU8&t=225s
+
+"무선 오디오 코덱 (Codec) 이란?"
 
 https://m.blog.naver.com/zzoggopai/221791121828
 
