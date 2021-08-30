@@ -710,7 +710,7 @@ Formerly known as [Google Webmaster Tools](https://www.google.com/webmasters/too
 
 #### Bing Webmaster Tools
 
-There are several ways to [verify site ownership](https://www.bing.com/webmaster/help/how-to-verify-ownership-of-your-site-afcfefc6) --- the easiest adding an authentication code to your config file.
+There are several ways to [verify site ownership](https://www.bing.com/webmasters/help/add-and-verify-site-12184f8b) --- the easiest adding an authentication code to your config file.
 
 Copy and paste the string inside of `content`:
 
