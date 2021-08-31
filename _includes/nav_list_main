@@ -63,6 +63,13 @@
             </ul>
        <span class="nav__sub-title">DATABASE</span>
        <span class="nav__sub-title">ROUTINE</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "awwwards" %}
+                        <li><a href="/categories/awwwards" class="">awwwards ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
       </li>
   </ul>
 </nav>
