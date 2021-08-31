@@ -12,6 +12,24 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    
+    
+    <style> 
+      ::-webkit-scrollbar{width: 9px;
+  background-color: #383838;}
+      ::-webkit-scrollbar-track {border-radius: 10px;
+  background-color: #383838;}
+      ::-webkit-scrollbar-thumb {border-radius: 10px;
+  background-color: #6b6b6b;}
+      ::-webkit-scrollbar-thumb:hover {background: #ffd24c;}
+      ::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment 
+      {
+          width:10px;height:10px;background:transparent;}
+      }  
+
+      
+    </style>
+    
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
