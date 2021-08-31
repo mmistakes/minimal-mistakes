@@ -8,6 +8,7 @@
     - [Jacki Janowich](#jacki-janowich)
     - [Kobe Desender](#kobe-desender)
     - [Mehdi Senoussi](#mehdi-senoussi)
+    - [Irene Cogliati Dezza](#irene-cogliati-dezza)
 3. [PhD students](#phd-students)
     - [Esin Turkakin](#esin-turkakin)
     - [Jonas Simoens](#jonas-simoens)
@@ -111,6 +112,8 @@ My research currently focuses on top-down/cognitive control mechanisms that allo
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://sites.google.com/site/senoussim/home" href="https://sites.google.com/site/senoussim/home" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://sites.google.com/site/senoussim/home</a></div>
 
 # Irene Cogliati Dezza
+
+<img src="/images/profile_pic_Irene.jpg" alt="Irene Cogliati Dezza" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
 I am a postdoctoral researcher founded by the FWO at Gent University (BE) and University College London (UK). I am also associate editor at In-Mind Italy and co-founder of BeBrain . I hold a BA in Biology, a MA in Neurobiology, a university certificate in data science and a PhD in computational cognitive neuroscience. 
 My research focuses on understanding how people decide what they want to know and how they explore novel and unknown courses of action. I conduct my research in adults and children in both healthy and clinical populations. My approach combines state-of-the-art methods from diverse disciplines including psychology, neuroscience and computer science.
