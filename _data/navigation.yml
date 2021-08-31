@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Categories"
-    url: categories
+    url: /categories/
   - title: "Monthly"
     url: /month-archive/
   - title: "About"
