@@ -1,6 +1,6 @@
 
 ---
-title:  "baekjoon review routine" 
+title: "baekjoon review routine" 
 
 categories:
   - baekjoon
