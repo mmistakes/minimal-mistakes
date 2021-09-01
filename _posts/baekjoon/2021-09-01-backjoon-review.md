@@ -1,4 +1,3 @@
-
 ---
 title: "baekjoon review routine" 
 
