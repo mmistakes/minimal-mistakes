@@ -31,6 +31,8 @@ Code is my bae and I will probably do most things here. You can run and debug st
 
 ### NodeJS
 
+https://nodejs.org/en/docs/
+
 - Use [NodeJS](https://nodejs.org/en/). Open up a console, like **PowerShell**, and run `node` to get an interactive experience in yo shell!
   
 - Run JavaScript `.js` files by running `node filename.js`
@@ -46,6 +48,36 @@ Node Package Manager, `npm`, is the package manager for Node JS. Node JS is the 
 `npm --version` - check your installed version of NPM
 `npm init` - create a new project, basically just a `package.json` file.
 `npm --install` - installs packaages for project
+`npm install --only=production` - installs only dependencies that are required in production. This avoids all of the extra stuff that you get as someone who develops on it.
+`npm start` - preferred way to start a project. Make sure that package.json has a start script under the `scripts` field.
+`npm test` - conventional method of running the tests that are in a project
+
+### Live Reload
+
+During development, live reload makes it so our microservice is restarted by nodemon when it detects a change to the code. Nodemon is a package that autoreloads our service. AUTOMATION = 👍
+
+`npm install --save-dev nodemon` - install nodemon as a dev dependency so it doesnt run in prod
+`npx nodemon index.js` - calls the nodemon dependency an runs our project.
+
+Make sure to add a devDependencies part to your package.json
+
+```json
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+```
+
+Borrowing from Ashley Hill, we can add a start:dev script that runs our project in devmode
+
+```json
+{
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  }
+```
+
+That allows us to run npm run start:dev to run our dev script which just calls nodemon.
 
 ### NVM - Node Version Manager
 
