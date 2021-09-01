@@ -1,3 +1,17 @@
+---
+layout: single
+tags: 
+ - javascirpt
+
+toc: true
+toc_sticky: true
+
+title: "[javascript] 삼항연산자, forEach, reduce"
+---
+
+{% raw %}
+
+
 ### **! 삼항연산자**
 
 ```javascript
@@ -124,3 +138,5 @@ result = oneTwoThree.reduce((acc, cur, i) => {
 result; // 6
 ```
 
+
+{% endraw %}
