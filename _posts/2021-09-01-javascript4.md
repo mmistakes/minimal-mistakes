@@ -1,7 +1,7 @@
 ---
 layout: single
 tags: 
- - javascirpt
+ - javascript
 
 toc: true
 toc_sticky: true
