@@ -14,9 +14,88 @@ last_modified_at: 2021-09-01
 ---
 [문제사이트](https://www.acmicpc.net/problem/1010)
 
+# Problem
+
+![image](https://user-images.githubusercontent.com/69495129/131683721-56d49a99-60ed-4d43-8120-808dce664dd2.png)
 
 
-한 학기 동안 컴퓨터 공학과에서 공부를 하며, 적지않은 것들을 배웠다. 방학기간 여러가지 정보를 찾아보며 개발자로서의 삶을 어떻게 그릴지 생각해보는 시간도 가졌다. **개발자**의 길은 수없이 많다. 
-아직 정해지지 않은 그 길을 걷기 위해 가장 **개발자**로서의 기초인 **알고리즘**을 한 문제씩 내 방식대로 풀어보려고한다. **근본**부터 단단해야 미래에 내가 서있을 그 **길**이 단단할 것이기 때문이다.
+
+# Approach
+
+- 다리 끼리 겹쳐지게 배치되면 안된다
+- 한 사이트에는 오로지 한개의 다리만 연결할 수 있다
+
+왼쪽을 Left 오른쪽을 Right 라고 하자 그렇다면 최대한 많은 다리의 개수를 맞추기 위해서는 Left가 Right보다 항상 작거나 같으므로 Left의 숫자가 즉 연결되어지는 다리의 개수이다. 이때 Right의 개수에서 Left의 개수를 선택하면된다. 즉 **''조합 공식''** 을 떠올릴 수 있다 n개에서 r개를 선택하는 문제라면 nCr  기호로 표기할 수 있다. 이때 다리 끼리 서로 겹쳐지면 안되기 때문에 의문점을 품을 수 있다. 그 점은 조합이라는 그 자체로 해결이 된다 . 예를 들어서 (1,3,5,7,9) 에서 (1,5,9) 를뽑으면 (5,9,1) 이나 (1,9,5) 는 모두 같게 처리되는것이 조합의 성질이므로 결국은 1개로 치부되게 된다.
+
+## 사용되는 조합공식
+
+​                                ![image](https://user-images.githubusercontent.com/69495129/131684447-4e2c966f-0f5e-4f02-b387-3ac096d7dcc3.png)\
+
+![image](https://user-images.githubusercontent.com/69495129/131684477-855d0018-8c81-43b2-b020-dcb75106de66.png)
+
+![image](https://user-images.githubusercontent.com/69495129/131684507-bd57818f-17ad-4f0d-923a-81c191add1d1.png)
 
 
+
+​								위와 같은 공식을 파스칼의 성질이라고 한다.
+
+
+
+![image](https://user-images.githubusercontent.com/69495129/131684655-15e2018e-0130-4e20-88a1-f9b32e2b0a84.png)
+
+n개중 0개를뽑던, n개중 n개를뽑던 경우의 수는 1인것은 자명하다.
+
+위 두가지 성질을 이용해서 JAVA로 코딩을 해보았다.
+
+```java
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
+public class sol1010 {
+    static int Left;
+    static int Right;
+    static int D[][];
+
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        D = new int[31][31];
+        for (int i = 0; i < 31; i++) {
+            Arrays.fill(D[i], -1);
+        }
+        int T = Integer.parseInt(br.readLine());
+        String input = null;
+        StringTokenizer st = null;
+        for (int test_case = 0; test_case < T; test_case++) {
+            input = br.readLine();
+            st = new StringTokenizer(input);
+            Left = Integer.valueOf(st.nextToken());
+            Right = Integer.valueOf(st.nextToken());
+            System.out.println(Combination(Right, Left));
+        }
+    }
+
+    private static int Combination(int i, int j) {
+        if (i == j || j == 0) return 1;
+        if (D[i][j] >= 0) return D[i][j];
+        D[i][j] = Combination(i - 1, j) + Combination(i - 1, j - 1);
+        System.out.println(D[i][j]);
+        return D[i][j];
+    }
+}
+
+
+```
+
+
+
+# Summary 
+
+- 조합이라는 사실을 잘 깨달을 수 있는지
+- 과거에 배웠던 조합 공식(파스칼의 성질) 을 떠올릴 수 있는지
+
+🌜 주관적인 견해가 담긴 솔루션입니다. 다양한 의견이 있으실 경우
+    언제든지 댓글 혹은 메일로 지적해주시면 감사하겠습니다! 😄
+
+[맨 위로 이동하기](#){: .btn .btn--primary }{: .align-right}
