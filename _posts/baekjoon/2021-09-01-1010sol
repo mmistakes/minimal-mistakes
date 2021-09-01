@@ -4,7 +4,7 @@ title: "[1010sol]"
 categories:
   - baekjoon
 tags:
-  - [baekjoon, algorithm, recursion]
+  - [baekjoon, algorithm, recursion,백준]
 
 toc: false
 toc_sticky: true
@@ -15,6 +15,7 @@ last_modified_at: 2021-09-01
 [문제사이트](https://www.acmicpc.net/problem/1010)
 
 # Problem
+### 백준 1010번 자바(JAVA) 
 
 ![image](https://user-images.githubusercontent.com/69495129/131683721-56d49a99-60ed-4d43-8120-808dce664dd2.png)
 
