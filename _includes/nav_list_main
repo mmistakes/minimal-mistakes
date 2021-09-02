@@ -62,6 +62,14 @@
                 {% endfor %}
             </ul>
        <span class="nav__sub-title">DATABASE</span>
+       <span class="nav__sub-title">ETC</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "ChunK" %}
+                        <li><a href="/categories/ChunK" class="">ChunK ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
        <span class="nav__sub-title">ROUTINE</span>
             <ul>
                 {% for category in site.categories %}
