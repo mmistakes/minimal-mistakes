@@ -8,6 +8,7 @@
 3. [Visiting researchers](#visiting-researchers)
     - [Fabrice Luyckx](#fabrice-luyckx)
 4. [Internship students](#internship-students)
+    - [Jacopo Bonazzi](#jacopo-bonazzi)
 
 # Post-doctoral researchers
 
