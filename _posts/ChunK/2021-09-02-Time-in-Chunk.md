@@ -37,6 +37,8 @@ time 은 한 포인트를 나타내고 dur 은 시간의 길이를 나타낸다
 ## default durations in ChunK!!
 내장되어 있는 durations 값들이 있으므로 활용하는것이 좋다
 samp는 엄청 작은 단위이고 아래로 갈수록 점점 길이가 길어진다고 생각하면 된다.
+<br>
+<br>
 ![image](https://user-images.githubusercontent.com/69495129/131812074-2a08fee1-a527-483a-90ce-41126d7c8429.png)
 
 ## now의 등장
@@ -45,21 +47,33 @@ now is actually a time
 
 ### Read now
 when read : gives you the current ChunK time
+<br>
+<br>
 ![image](https://user-images.githubusercontent.com/69495129/131812678-7c627a78-026a-4d4f-848a-5944b13f733a.png)
+<br>
+<br>
 ![image](https://user-images.githubusercontent.com/69495129/131812649-708b6c50-14d5-4e67-9a2c-78050f88a77b.png)
 <br>
 <br>
 ![image](https://user-images.githubusercontent.com/69495129/131812832-f38ad608-2347-487f-a80d-4918a6cd773e.png)
+<br>
+<br>
+
 ![image](https://user-images.githubusercontent.com/69495129/131812854-df85e647-4fd5-4439-8a54-2336db8e598e.png)
 
 
 ### Modify now
 when modify : moves time along in Chuck
-![image](https://user-images.githubusercontent.com/69495129/131813106-a14db648-1c18-4f43-919f-450fa784031f.png)##### 이런식으로 now를 움직일 수 있다.
+![image](https://user-images.githubusercontent.com/69495129/131813106-a14db648-1c18-4f43-919f-450fa784031f.png)
 ![image](https://user-images.githubusercontent.com/69495129/131813270-41aaacac-c793-430d-a9a8-d57c17d15b4a.png)
+<br>
+<br>
 5초를 기다린후 NEW now print 문이 실행된다.
 
+<br>
 ![image](https://user-images.githubusercontent.com/69495129/131813593-fca7a1d9-52ec-40d7-9f2b-ad34392101d1.png)
+<br>
+<br>
 ChunK actually knows to automatically suspend code at this point! 알아서 중지시켜준다. 저 시간이 지날 동안 100ms가 지나면 다시 실행된다.
 
 
