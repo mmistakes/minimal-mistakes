@@ -7,7 +7,7 @@
     - [Jacki Janowich](#jacki-janowich)
     - [Mehdi Senoussi](#mehdi-senoussi)
     - [Irene Cogliati Dezza](#irene-cogliati-dezza)
-3. [PhD students](#phd-students)
+3. [PhD researchers](#phd-researchers)
     - [Esin Turkakin](#esin-turkakin)
     - [Jonas Simoens](#jonas-simoens)
     - [Pieter Huycke](#pieter-huycke)
