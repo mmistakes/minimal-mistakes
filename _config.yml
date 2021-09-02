@@ -105,7 +105,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Senior Bioinformatician & Vice Training Coordinator"
   location         : "Stockholm, Sweden"
-  email            : "some_email@email.com
+  email            : "some_email@email.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
