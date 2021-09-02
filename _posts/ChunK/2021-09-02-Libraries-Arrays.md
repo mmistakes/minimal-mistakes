@@ -1,5 +1,5 @@
 ---
-title:  "[ChunK] ChucK Libraries and Intro to Arrays"
+title:  "[ChunK] Libraries and Intro to Arrays"
 
 categories:
    - ChunK
@@ -17,6 +17,7 @@ last_modified_at: 2021-09-02
 평소에 알고 있는 다양한 프로그래밍언어와 비슷한 문법 구조이다.
 
 ## Absolute Values
+
 | METHOD                | OUTPUT | DESCRIPTION                                     |
 | --------------------- | ------ | ----------------------------------------------- |
 | std.abs(int value)    | int    | returns absolute value of integer               |
@@ -24,7 +25,7 @@ last_modified_at: 2021-09-02
 | std.sgn(float value)  | float  | computes sign of the input                      |
 
 
-
+                                                                                                
 
 ## Unit Conversion
 
