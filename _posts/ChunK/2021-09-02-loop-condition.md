@@ -2,9 +2,9 @@
 title:  "[ChunK] If and Else & Loop"
 
 categories:
-- ChunK
+  - ChunK
   tags:
-- [ChunK, Music, Programming,loop,condition]
+  - [ChunK, Music, Programming,loop,condition]
 
 toc: true
 toc_sticky: true
