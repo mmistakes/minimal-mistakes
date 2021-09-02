@@ -46,7 +46,7 @@ My research focuses on how reward and reward prediction errors (i.e., mismatches
 
 # Visiting researchers
 
-# Fabrice Luyckx
+### Fabrice Luyckx
 
 <img src="/images/profile_pic_fabrice.jpg" alt="Fabrice Luyckx" width="25%" align="left" hspace="20" vspace="20">
 
