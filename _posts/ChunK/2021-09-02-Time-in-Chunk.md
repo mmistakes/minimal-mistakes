@@ -44,28 +44,48 @@ samp는 엄청 작은 단위이고 아래로 갈수록 점점 길이가 길어�
 now is actually a time
 
 ### Read now
-#### when read : gives you the current ChunK time
+when read : gives you the current ChunK time
 ![image](https://user-images.githubusercontent.com/69495129/131812678-7c627a78-026a-4d4f-848a-5944b13f733a.png)
 ![image](https://user-images.githubusercontent.com/69495129/131812649-708b6c50-14d5-4e67-9a2c-78050f88a77b.png)
+<br>
+<br>
 ![image](https://user-images.githubusercontent.com/69495129/131812832-f38ad608-2347-487f-a80d-4918a6cd773e.png)
 ![image](https://user-images.githubusercontent.com/69495129/131812854-df85e647-4fd5-4439-8a54-2336db8e598e.png)
 
 
 ### Modify now
-#### when modify : 
-![image](https://user-images.githubusercontent.com/69495129/131813106-a14db648-1c18-4f43-919f-450fa784031f.png)
-##### 이런식으로 now를 움직일 수 있다.
+when modify : moves time along in Chuck
+![image](https://user-images.githubusercontent.com/69495129/131813106-a14db648-1c18-4f43-919f-450fa784031f.png)##### 이런식으로 now를 움직일 수 있다.
 ![image](https://user-images.githubusercontent.com/69495129/131813270-41aaacac-c793-430d-a9a8-d57c17d15b4a.png)
-##### 5초를 기다린후 NEW now print 문이 실행된다.
+5초를 기다린후 NEW now print 문이 실행된다.
+
+![image](https://user-images.githubusercontent.com/69495129/131813593-fca7a1d9-52ec-40d7-9f2b-ad34392101d1.png)
+ChunK actually knows to automatically suspend code at this point! 알아서 중지시켜준다. 저 시간이 지날 동안 100ms가 지나면 다시 실행된다.
 
 
+## Alarm Demo
+```java
+now + 6::second => time later;
 
+while(now < later)
+{
+	// print out
+	<<< "time left:", (later-now)/second >>>;
+	// advance time
+	1::second => now;
+}
+
+<<< "It'S" TIME!!!" >>>;
+SinOsc foo => dac;
+880 => foo.freq;
+2::second => now;
+
+```
 
 
 
 
 ## Summary
-일반적인 프로그래밍 언어와 비슷하다. 단지, 할당할 때 좌우 방향이 달라서 적응하는데 시간이 걸릴 것 같다.
 
 
 
