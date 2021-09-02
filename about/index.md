@@ -161,4 +161,4 @@ Maud will start her internship September 2021. More information will follow soon
 
 ---
 
-Please [get in contact](mailto:Tom.Verguts@UGent.be) if you are interested in a research stay or an internship in our lab. Want to see who used to work at our lab? Find a list of our previous lab members [here](/past/index.md).
+Please [get in contact](mailto:Tom.Verguts@UGent.be) if you are interested in a research stay or an internship in our lab. Want to see who used to work at our lab? Find a list of our previous lab members [here](/past/).
