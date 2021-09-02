@@ -1,4 +1,4 @@
- 팩토리얼
+### 팩토리얼
 ```python
 #10872
 def fact(N):
@@ -19,7 +19,7 @@ print(fact(N))
 ```
 
 
-피보나치 수열
+### 피보나치 수열
 ```python
 #10870 
 def p(n):
@@ -32,7 +32,7 @@ print(p(n))
 ```
 
 
-별찍기
+### 별찍기
 ```python
 #2447 -> 질문 확인
 def draw_star(n) :
@@ -67,7 +67,7 @@ for i in Map :
     print()
 ```
 
-하노이탑
+### 하노이탑
 ```python
 def hanoi(n, a, b):
     if n > 1:
