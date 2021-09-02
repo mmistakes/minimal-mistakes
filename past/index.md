@@ -3,11 +3,11 @@
 1. [Post-doctoral researchers](#post-doctoral-researchers)
     - [Cristian Buc Calderon](#cristian-buc-calderon)
     - [Kobe Desender](#kobe-desender)
-3. [PhD researchers](#phd-researchers)
+2. [PhD researchers](#phd-researchers)
     - [Kate Ergo](#kate-ergo)
-4. [Visiting researchers](#visiting-researchers)
+3. [Visiting researchers](#visiting-researchers)
     - [Fabrice Luyckx](#fabrice-luyckx)
-5. [Internship students](#internship-students)
+4. [Internship students](#internship-students)
 
 # Post-doctoral researchers
 
