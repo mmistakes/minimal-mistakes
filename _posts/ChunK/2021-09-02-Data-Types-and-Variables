@@ -1,0 +1,38 @@
+---
+title:  "[ChunK] Data Types and Variables" 
+
+categories:
+  - ChunK
+tags:
+  - [ChunK, Music, Programming]
+
+toc: true
+toc_sticky: true
+
+date: 2021-09-02
+last_modified_at: 2021-09-02
+---
+
+
+
+
+
+```Chunk
+// Integer Example
+
+
+// define integer
+int a;
+// store 2 in a
+2=> a;
+
+<<< a >>>;
+
+
+```
+
+
+
+
+
+
