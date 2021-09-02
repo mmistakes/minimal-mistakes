@@ -1,0 +1,108 @@
+---
+title:  "[ChunK] Sound File Manipulation in ChucK"
+
+categories:
+- ChunK
+  tags:
+- [ChunK, Music,SoundFile]
+
+toc: true
+toc_sticky: true
+
+date: 2021-09-02
+last_modified_at: 2021-09-02
+---
+
+wav 등 음악파일을 어떻게 ChucK 로 불러와 사용할지에 대한 내용이다.
+
+
+
+## wav 파일 불러오기
+```java
+// sound chain
+SndBuf mySound => dac;
+
+// directory of this file
+me.dir() => string path;
+
+
+//define the filename
+"/audio/snare_01.wav" => string filename;
+path + filename => filename;
+
+// open up soundfile
+filename => mySound.read;
+// simple control
+
+0 => mySound.pos; // sets playhead position
+
+1::second => now;
+```
+
+
+## Sample Management
+```java
+// sample management
+
+// sound chain
+
+SndBuf snare => dac;
+
+// array of strings (paths) array want to insert path
+
+string snare_samples[3];
+
+// load array with file paths
+
+for(1 => int i; i < snare_samples.cap()+1; i++)
+{
+     me.dir() + "/audio/snare_0"+i+".wav" => snare_samples[i-1];
+}
+//me.dir() + "/audio/snare_01.wav" => snare_samples[0];
+//me.dir() + "/audio/snare_02.wav" => snare_samples[1];
+//me.dir() + "/audio/snare_03.wav" => snare_samples[2];
+
+// how many samples?
+<<< snare_samples.cap() >>>;
+
+// infinite loop
+while(true)
+{
+    Math.random2(0,snare_samples.cap()-1) => int which;
+    snare_samples[which] => snare.read;
+    250::ms => now;
+    
+}
+
+```
+
+## Stereo Playback
+
+```java
+// sound chain
+SndBuf2 mySound => dac;
+
+// read the file into string
+me.dir() + "/audio/stereo_fx_01.wav" => string filename;
+//open up soundfile
+filename => mySound.read;
+
+// infinite loop
+while(true)
+{
+    Math.random2f(.6 ,1.0) => mySound.gain;
+    Math.random2f(.2,1.8) => mySound.rate;
+    0 => mySound.pos;
+    5::second => now;
+}
+```
+
+## Modulo
+
+## Summary
+- **folder structure** 가 중요하므로 주의해서 사용한다
+
+
+🌜 주관적인 견해가 담긴 글입니다. 다양한 의견이 있으실 경우
+언제든지 댓글 혹은 메일로 지적해주시면 감사하겠습니다! 😄
+
