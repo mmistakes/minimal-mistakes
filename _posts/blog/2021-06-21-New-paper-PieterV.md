@@ -10,7 +10,7 @@ link:
 date: 2021-06-21
 modified:
 share: true
-author: pieter_verbeke
+author: pieter_huycke
 ---
 
 Congrats to Pieter V and Tom with their new paper that just got accepted in Journal of Cognitive Neuroscience! :boom:
