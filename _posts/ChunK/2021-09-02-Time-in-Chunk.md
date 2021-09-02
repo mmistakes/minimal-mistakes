@@ -86,6 +86,9 @@ SinOsc foo => dac;
 
 
 ## Summary
+- chucking a duration to **now** advances ChunK time precisely by that amount ( while automatically suspending your code and letting sound generate)
+- **now** will never move forward unless / until you manipulate it ===> so until you explicitly advance time, you are actually working at a single point time
+
 
 
 
