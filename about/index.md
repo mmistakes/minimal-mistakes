@@ -99,7 +99,7 @@ My research focuses on understanding how people decide what they want to know an
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://sites.google.com/site/irenecogliatidezza" href="https://sites.google.com/site/irenecogliatidezza" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://sites.google.com/site/irenecogliatidezza</a></div>
 
 
-# PhD students
+# PhD researchers
 
 # Esin Turkakin
 
