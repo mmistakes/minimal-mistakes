@@ -17,6 +17,7 @@
     - [Pieter Verbeke](#pieter-verbeke)
 4. [Visiting researchers](#visiting-researchers)
 5. [Internship students](#internship-students)
+    - [Maud Beeckmans](#maud-beeckmans)
 
 
 # Principal Investigator
@@ -115,7 +116,7 @@ My research currently focuses on top-down/cognitive control mechanisms that allo
 
 <img src="/images/profile_pic_irene.jpg" alt="Irene Cogliati Dezza" max-width="10%" height="auto" align="left" hspace="2" vspace="2">
 
-I am a postdoctoral researcher founded by the FWO-postdoctoral fewlloship at Gent University (BE) and University College London (UK). I am also associate editor at In-Mind Italy (https://it.in-mind.org/) and co-founder of BeBrain (https://bebrainconsultancy.com/). I hold a BA in Biology, a MA in Neurobiology, a university certificate in data science and a PhD in computational cognitive neuroscience. 
+I am a postdoctoral researcher funded by the FWO-postdoctoral fellowship at Ghent University (BE) and University College London (UK). I am also associate editor at [In-Mind Italy](https://it.in-mind.org/) and co-founder of [BeBrain](https://bebrainconsultancy.com/). I hold a BA in Biology, a MA in Neurobiology, a university certificate in data science and a PhD in computational cognitive neuroscience. 
 My research focuses on understanding how people decide what they want to know and how they explore novel and unknown courses of action. I conduct my research in adults and children in both healthy and clinical populations. My approach combines state-of-the-art methods from diverse disciplines including psychology, neuroscience and computer science.
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Irene.CogliatiDezza@UGent.be" href="mailto:Irene.CogliatiDezza@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Irene.CogliatiDezza@UGent.be</a></div>
@@ -196,8 +197,10 @@ Currently, we have no visiting researchers working in our lab.
 
 # Internship students
 
-Currently, we have no internship students working in our lab.    
+# Maud Beeckmans
+
+Maud will start her internship September 2021. More information will follow soon!
 
 ---
 
-Please get in contact if you are interested in a research stay or an internship in our lab.
+Please [get in contact](mailto:Tom.Verguts@UGent.be) if you are interested in a research stay or an internship in our lab.
