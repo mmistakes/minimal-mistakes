@@ -4,9 +4,9 @@
 2. [Post-doctoral researchers](#post-doctoral-researchers)
     - [Anna Marzecova](#anna-marzecova)
     - [Elise Lesage](#elise-lesage)
+    - [Irene Cogliati Dezza](#irene-cogliati-dezza)
     - [Jacki Janowich](#jacki-janowich)
     - [Mehdi Senoussi](#mehdi-senoussi)
-    - [Irene Cogliati Dezza](#irene-cogliati-dezza)
 3. [PhD researchers](#phd-researchers)
     - [Esin Turkakin](#esin-turkakin)
     - [Jonas Simoens](#jonas-simoens)
@@ -19,7 +19,7 @@
 
 # Principal Investigator
 
-# Tom Verguts
+### Tom Verguts
 
 <img src="/images/profile_pic_tom.jpg" alt="Tom Verguts" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
@@ -38,7 +38,7 @@ Although this is a fairly broad topic, there are a few recurring themes, such as
 
 # Post-doctoral researchers
 
-# Anna Marzecova
+### Anna Marzecova
 
 <img src="/images/profile_pic_anna.jpg" alt="Anna Marzecova" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
@@ -53,7 +53,7 @@ My research is supported by an FWO (Research Foundation – Flanders) post-doct
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="http://www.marzecova.com/" href="http://www.marzecova.com/" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">http://www.marzecova.com/</a></div>
 
-# Elise Lesage
+### Elise Lesage
 
 <img src="/images/profile_pic_elise.jpg" alt="Elise Lesage" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
@@ -65,27 +65,7 @@ My Fellowship is funded by the Flanders Fund for Scientific Research (FWO) and t
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Elise.Lesage@UGent.be" href="mailto:Elise.Lesage@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Elise.Lesage@UGent.be</a></div>
 
-# Jacki Janowich
-
-<img src="/images/profile_pic_jacki.jpg" alt="Jacki Janowich" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
-
-Our brains are simultaneously tasked with acting in the present while predicting and preparing for the future. I am interested in how we proactively optimize neural systems ahead of future goal-directed action. In one ongoing line of work, I use EEG/MEG to investigate the neural activities underlying the computation, communication, and maintenance of future goals. In my current work, I focus on how errors in reward prediction shape learning, using computational modeling and MEG/EEG. In particular, I aim to understand how reward prediction (error) is influenced by timing and hierarchical context. My current research is supported by the EOS project MEMODYN, funded by the FWO and F.R.S.–FNRS.
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Jacqueline.JanowichWasserott@UGent.be" href="mailto:jacqueline.janowichwasserott@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Jacqueline.JanowichWasserott@UGent.be</a></div>
-
-# Mehdi Senoussi
-
-<img src="/images/profile_pic_mehdi.jpg" alt="Mehdi Senoussi" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
-
-My research currently focuses on top-down/cognitive control mechanisms that allow us to manipulate and use perceptual and/or mnesic representations. For instance our ability implement a task rule (bind a percept to a motor command), attend to a specific feature, switch between sensory modalities or create and manipulate a mental image. I use Multivariate Pattern Analysis (MVPA) and modeling methods to better understand which and when relevant representations emerge in neural activity. And to know how (and when) such representations are bound together (e.g. perceptual <-> task representations) I use connectivity measures (phase-locking, cross-frequency coupling). In previous work during my PhD at the CerCo lab (Toulouse) I used fMRI, EEG and MVPA to measure the effects of learning on neural representations of visual objects and how it affects perception.
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Mehdi.Senoussi@UGent.be" href="mailto:Mehdi.Senoussi@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Mehdi.Senoussi@UGent.be</a></div>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/cog_senoussi" href="https://twitter.com/cog_senoussi" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@cog_senoussi</a></div>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://sites.google.com/site/senoussim/home" href="https://sites.google.com/site/senoussim/home" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://sites.google.com/site/senoussim/home</a></div>
-
-# Irene Cogliati Dezza
+### Irene Cogliati Dezza
 
 <img src="/images/profile_pic_irene.jpg" alt="Irene Cogliati Dezza" max-width="20%" height="auto" align="left" hspace="10" vspace="10">
 
@@ -98,10 +78,29 @@ My research focuses on understanding how people decide what they want to know an
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://sites.google.com/site/irenecogliatidezza" href="https://sites.google.com/site/irenecogliatidezza" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://sites.google.com/site/irenecogliatidezza</a></div>
 
+### Jacki Janowich
+
+<img src="/images/profile_pic_jacki.jpg" alt="Jacki Janowich" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
+
+Our brains are simultaneously tasked with acting in the present while predicting and preparing for the future. I am interested in how we proactively optimize neural systems ahead of future goal-directed action. In one ongoing line of work, I use EEG/MEG to investigate the neural activities underlying the computation, communication, and maintenance of future goals. In my current work, I focus on how errors in reward prediction shape learning, using computational modeling and MEG/EEG. In particular, I aim to understand how reward prediction (error) is influenced by timing and hierarchical context. My current research is supported by the EOS project MEMODYN, funded by the FWO and F.R.S.–FNRS.
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Jacqueline.JanowichWasserott@UGent.be" href="mailto:jacqueline.janowichwasserott@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Jacqueline.JanowichWasserott@UGent.be</a></div>
+
+### Mehdi Senoussi
+
+<img src="/images/profile_pic_mehdi.jpg" alt="Mehdi Senoussi" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
+
+My research currently focuses on top-down/cognitive control mechanisms that allow us to manipulate and use perceptual and/or mnesic representations. For instance our ability implement a task rule (bind a percept to a motor command), attend to a specific feature, switch between sensory modalities or create and manipulate a mental image. I use Multivariate Pattern Analysis (MVPA) and modeling methods to better understand which and when relevant representations emerge in neural activity. And to know how (and when) such representations are bound together (e.g. perceptual <-> task representations) I use connectivity measures (phase-locking, cross-frequency coupling). In previous work during my PhD at the CerCo lab (Toulouse) I used fMRI, EEG and MVPA to measure the effects of learning on neural representations of visual objects and how it affects perception.
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Mehdi.Senoussi@UGent.be" href="mailto:Mehdi.Senoussi@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Mehdi.Senoussi@UGent.be</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/cog_senoussi" href="https://twitter.com/cog_senoussi" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@cog_senoussi</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://sites.google.com/site/senoussim/home" href="https://sites.google.com/site/senoussim/home" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://sites.google.com/site/senoussim/home</a></div>
 
 # PhD researchers
 
-# Esin Turkakin
+### Esin Turkakin
 
 <img src="/images/profile_pic_esin.jpg" alt="Esin Turkakin" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
@@ -114,7 +113,7 @@ In her research, she mainly focuses on perceptual decision-making, computational
 
 <p style="background-color:white;color:white;">White text</p>
 
-# Jonas Simoens
+### Jonas Simoens
 
 <img src="/images/profile_pic_jonas.jpg" alt="Jonas Simoens" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
@@ -124,7 +123,7 @@ I conduct this research in collaboration with Tom Verguts and Senne Braem, using
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Jonas.Simoens@UGent.be" href="mailto:Jonas.Simoens@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Jonas.Simoens@UGent.be</a></div>
 
-# Pieter Huycke
+### Pieter Huycke
 
 <img src="/images/profile_pic_pieter_h.jpg" alt="Pieter Huycke" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
@@ -138,7 +137,7 @@ The next part of this project will focus on computational modeling.
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-8156-4419" href="https://orcid.org/0000-0002-8156-4419" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-8156-4419</a></div>
 
-# Pieter Verbeke
+### Pieter Verbeke
 
 <img src="/images/profile_pic_pieter_v.jpg" alt="Pieter Verbeke" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
@@ -156,7 +155,7 @@ Currently, we have no visiting researchers working in our lab.
 
 # Internship students
 
-# Maud Beeckmans
+### Maud Beeckmans
 
 Maud will start her internship September 2021. More information will follow soon!
 

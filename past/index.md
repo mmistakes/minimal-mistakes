@@ -12,7 +12,7 @@
 
 # Post-doctoral researchers
 
-# Cristian Buc Calderon
+### Cristian Buc Calderon
 
 <img src="/images/profile_pic_cris.jpg" alt="Cristian 'Cris' Buc Calderon" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
@@ -20,7 +20,7 @@ My research focuses on understanding how humans select one out of many competing
 
 More recently, I have been awarded a FWO postdoctoral fellow where I will investigate how the brain learns the optimal timing of individual actions within a sequence of actions (in collaboration with Michael Frank @ Brown University and Tom Verguts @ Ghent University). To carry out this project, I use computational modeling, behavioral and neural methods. 
 
-# Kobe Desender
+### Kobe Desender
 
 <img src="/images/profile_pic_kobe.jpg" alt="Kobe Desender" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
@@ -32,7 +32,7 @@ In my research, I focus on the question how metacognition is used for further ad
 
 # PhD researchers
 
-# Kate Ergo
+### Kate Ergo
 
 <img src="/images/profile_pic_kate.jpg" alt="Kate Ergo" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
@@ -58,7 +58,7 @@ I am currently in the final stages of my DPhil at Oxford University in the Summe
 
 # Internship students
 
-# Jacopo Bonazzi
+### Jacopo Bonazzi
 
 <img src="/images/profile_pic_jacopo.jpg" alt="Jacopo Bonazzi" width="25%" align="left" hspace="20" vspace="20">
 
