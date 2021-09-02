@@ -15,7 +15,7 @@ last_modified_at: 2021-09-02
 
 
 
-# Theory 
+## Theory 
   **소리**를 조작하기 위해서는 **시간**을 관리할 줄 알아야한다
  
 ## how time works in Chuck
