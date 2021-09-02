@@ -32,4 +32,7 @@
 - title: GitHub
   url: https://github.com/CogComNeuroSci/CogComNeuroSci.github.io
 
+---
+layout: page
 permalink: /past/
+---
