@@ -11,7 +11,7 @@ At the intersection of nanoscience and biology lies the question of precisely ho
 
 In this research area, the use of mathematics has allowed for a better description of movement categorizations and quantitative methods to differentiate between them. We have developed a first-pass statistical dashboard to categorize disparate types of particle trajectories. Based on six statistical measures, a support vector machine was utilized to distinguish between free diffusion, anchored diffusion, directed transport, tracker error, subdiffusion, and skating diffusion. This automated categorization process proved to be successful on data simulated using stochastic differential equations and provided interesting results on the live-cell data.   
 
-I am currently expanding upon this work in both my Mathematics Honors Thesis and Computer Science Capstone, advised by [Prof. Scott A McKinley](https://randommath.net/), [Prof. Michelle Lacey](http://dauns01.math.tulane.edu/~mlacey/), and [Prof. Jihun Hamm](http://www.cs.tulane.edu/~jhamm3/).    
+I expanded upon this work in both my Mathematics Honors Thesis and Computer Science Capstone, advised by [Prof. Scott A McKinley](https://randommath.net/), [Prof. Michelle Lacey](http://dauns01.math.tulane.edu/~mlacey/), and [Prof. Jihun Hamm](http://www.cs.tulane.edu/~jhamm3/).    
 
 **Topological data analysis approaches to uncovering the timing of ring structure onset in filamentous networks**  
 **Collaborators:** [Prof. Maria-Veronica Ciocanel](https://services.math.duke.edu/~ciocanel/), [Prof. Adriana T Dawes](https://people.math.osu.edu/dawes.33/), [Prof. Scott A McKinley](https://randommath.net/)  
