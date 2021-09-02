@@ -1,4 +1,4 @@
-# [백준 2108] 통계학
+### [백준 2108] 통계학
 ```python
 from collections import Counter
 
@@ -36,7 +36,7 @@ print(freq(num))
 print(rng(num))
 ```
 
-## 알게 된 것
+### 알게 된 것
 데이터의 개수를 셀 때 유용한 파이썬의 collections 모듈의 Counter 클래스 
 
 ```python
