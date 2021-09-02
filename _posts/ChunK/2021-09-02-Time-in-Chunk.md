@@ -68,13 +68,13 @@ when modify : moves time along in Chuck
 ![image](https://user-images.githubusercontent.com/69495129/131813270-41aaacac-c793-430d-a9a8-d57c17d15b4a.png)
 <br>
 <br>
-5초를 기다린후 NEW now print 문이 실행된다.
+3초를 기다린후 NEW now print 문이 실행된다.
 
 <br>
 ![image](https://user-images.githubusercontent.com/69495129/131813593-fca7a1d9-52ec-40d7-9f2b-ad34392101d1.png)
 <br>
 <br>
-ChunK actually knows to automatically suspend code at this point! 알아서 중지시켜준다. 저 시간이 지날 동안 100ms가 지나면 다시 실행된다.
+ChunK actually knows to automatically suspend code at this point! 알아서 중지시켜준다. 저 시간이 지날 동안 코드가 중지되고 100ms가 지나면 다시 실행된다.
 
 
 ## Alarm Demo
