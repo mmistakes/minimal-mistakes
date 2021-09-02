@@ -7,6 +7,7 @@
     - [Kate Ergo](#kate-ergo)
 4. [Visiting researchers](#visiting-researchers)
     - [Fabrice Luyckx](#fabrice-luyckx)
+5. [Internship students](#internship-students)
 
 # Post-doctoral researchers
 
@@ -53,3 +54,14 @@ I am currently in the final stages of my DPhil at Oxford University in the Summe
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/FabriceLuyckx" href="https://github.com/FabriceLuyckx" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">@FabriceLuyckx</a></div>
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/NeuroLuyckx" href="https://twitter.com/NeuroLuyckx" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@NeuroLuyckx</a></div>
+
+# Internship students
+
+# Jacopo Bonazzi
+
+<img src="/images/profile_pic_jacopo.jpg" alt="Jacopo Bonazzi" width="25%" align="left" hspace="20" vspace="20">
+
+I'm a master student from Milano Bicocca University  doing the internship in Ghent thanks to the Erasmus+ program.
+In this project I'm trying to understand how uncertainty and variability can influence inferences. We live in a world that is intrinsically chaotic, and uncertainty is omnipresent in every aspect of our life. Learning, choosing and predicting in such an environment requires estimating and computing how variable is the world and how reliable is the mental model used to capture this variability. The current project aims to unravel how these two different sources of uncertainty, namely expected and unexpected, influence visual search performance. I plan to collect behavioral data and test the predictions of different computational models. 
+
+When I'm not troubled by uncertainties, I love to sail (quite uncertain conditions anyway) and hike in the mountains!
