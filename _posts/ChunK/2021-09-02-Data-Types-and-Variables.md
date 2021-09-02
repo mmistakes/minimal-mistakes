@@ -17,7 +17,7 @@ last_modified_at: 2021-09-02
 
 
 ## 변수 선언 및 값 할당,출력
-```Chunk
+```java
 // Integer Example
 
 
@@ -35,7 +35,7 @@ int a;
 ## 변수를 이용한 계산식
 
 
-```Chunk
+```java
 // Integer Example
 
 // define integer
@@ -51,7 +51,7 @@ int a;
 ## float 를 사용하여 주기, 크기 설정
 
 
-```Chunk
+```java
 // sound network
 SinOsc s => dac;
 
