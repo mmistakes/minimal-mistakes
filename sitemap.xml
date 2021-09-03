@@ -1,105 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>https://chanhyukpark-tech.github.io</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/feed.xml</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/page3/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/page2/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/baekjoon/1021sol/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/chunk/Functions-in-ChunK/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/chunk/Sound-File-Manipulation/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/awwwards/Leonid/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/baekjoon/1026sol/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/categories/baekjoon</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/categories/awwwards</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/categories/ChunK</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/month-archive/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/categories/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/awwwards/awwwards-review/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/awwwards/grids/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/baekjoon/1010sol/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/baekjoon/baekjoon-review/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/chunk/Data-Types-and-Variables/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/chunk/Libraries-Arrays/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/chunk/Music-Programming/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/chunk/Time-in-Chunk/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/chunk/loop-condition/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://chanhyukpark-tech.github.io/awwwards/togethxr/</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-</urlset>
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for post in site.posts %}
+    <url>
+        <loc>{{ site.url }}{{ post.url }}</loc>
+        {% if post.lastmod == null %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+        {% else %}
+        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+        {% endif %}
+
+        {% if post.sitemap.changefreq == null %}
+        <changefreq>weekly</changefreq>
+        {% else %}
+        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+        {% endif %}
+
+        {% if post.sitemap.priority == null %}
+        <priority>0.5</priority>
+        {% else %}
+        <priority>{{ post.sitemap.priority }}</priority>
+        {% endif %}
+
+    </url>
+    {% endfor %}
