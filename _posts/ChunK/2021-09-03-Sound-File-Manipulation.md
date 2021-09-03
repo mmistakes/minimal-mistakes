@@ -2,19 +2,25 @@
 title:  "[ChunK] Sound File Manipulation in ChucK"
 
 categories:
-- ChunK
-  tags:
-- [ChunK, Music,SoundFile]
+  - ChunK
+tags:
+  - [ChunK, Music,SoundFile]
 
 toc: true
 toc_sticky: true
 
-date: 2021-09-02
-last_modified_at: 2021-09-02
+date: 2021-09-03
+last_modified_at: 2021-09-03
 ---
 
 wav 등 음악파일을 어떻게 ChucK 로 불러와 사용할지에 대한 내용이다.
+파일 구조가 중요하므로 주의하도록하자
 
+## file structure
+![image](https://user-images.githubusercontent.com/69495129/131868244-ee6f744b-768b-444a-97c1-9dc61a9ec50a.png)
+
+## Sampling Period
+![image](https://user-images.githubusercontent.com/69495129/131868366-46765ca9-9d9d-462b-be57-cd019813bed0.png)
 
 
 ## wav 파일 불러오기
@@ -98,6 +104,9 @@ while(true)
 ```
 
 ## Modulo
+![image](https://user-images.githubusercontent.com/69495129/131868421-921d4012-7ac0-4aeb-a969-db39308bd212.png)
+
+
 
 ## Summary
 - **folder structure** 가 중요하므로 주의해서 사용한다
