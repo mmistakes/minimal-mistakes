@@ -121,7 +121,7 @@ def combine[M[_]](str: M[String])(num: M[Int])(using monad: Monad[M]): M[(String
 Notice that we're not using for-comprehensions as we can't yet (we depend on the monad instance), but the semantics stay the same. Given this new method signature and implementation, we can now safely combine lists:
 
 ```scala3
-println(combine(List("a", "b", "c"))(List(1,2,3))) // [a1, a2, a3, b1, b2, b3, c1, c2, c3]
+println(combine(List("a", "b", "c"))(List(1,2,3))) // [(a,1), (a,2), (a,3), (b,1), (b,2), (b,3), (c,1), (c,2), (c,3)]
 ```
 
 The magical benefit is that if we have a `given Monad[Option]` in scope, we can safely call `combine` on Options as well. Our user-facing API does not require a specific type now, but only the presence of a `given Monad` of that type in scope. You can now combine Options, Try, IOs, States, or whatever other kinds of monads you want.
