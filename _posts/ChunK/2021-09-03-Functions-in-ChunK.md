@@ -2,9 +2,9 @@
 title:  "[ChunK] Functions in ChunK"
 
 categories:
-- ChunK
-  tags:
-- [ChunK, Music,funtion]
+  - ChunK
+tags:
+  - [ChunK, Music,funtion]
 
 toc: true
 toc_sticky: true
@@ -17,99 +17,156 @@ ChunK 에서의 함수를 배워보자, 개인적으로 Java lang 에서의 func
 
 
 ## Introduction to Functions
-![img_1.png](img_1.png)
+![image](https://user-images.githubusercontent.com/69495129/131992570-1e605bd7-0c09-4fb1-83ca-d0b4efb8e6b7.png)
+![image](https://user-images.githubusercontent.com/69495129/131992610-0a5fcb75-c898-4ab2-b65f-6129dee89e39.png)
 
-## Sampling Period
-![image](https://user-images.githubusercontent.com/69495129/131868366-46765ca9-9d9d-462b-be57-cd019813bed0.png)
-
-
-## wav 파일 불러오기
+## Basic Function Examples
 ```java
-// sound chain
-SndBuf mySound => dac;
+// function
+fun int myAdd(int x, int y)
+{
+    // two inputs locally known as x and y
+    // returns an integer
+    
+    int result; // variable to store final answer
+    x+y => result;  // add x + y
+    return result;  // output final answer
+}
 
-// directory of this file
-me.dir() => string path;
+// MAIN PROGRAM
+// call myAdd function
 
+myAdd(8,12) => int answer;
 
-//define the filename
-"/audio/snare_01.wav" => string filename;
-path + filename => filename;
+<<< answer >>> ;    // printed 20 : ( int) 
 
-// open up soundfile
-filename => mySound.read;
-// simple control
+```
 
-0 => mySound.pos; // sets playhead position
-
-1::second => now;
+## Local vs. Global
+```java
+8 => int k;
+fun int myAdd(int x, int y)
+{
+    // two inputs locally known as x and y
+    // returns an integer
+    
+    int result; // variable to store final answer
+    x+y => result;  // add x + y
+    return result;  // output final answer
+}
+myAdd(k,12) => int answer; // it is ok cuz k is global variable
+// <<< result >>> ; // this gave error cuz result is local variable in myAdd function
 ```
 
 
-## Sample Management
+## Functions Through Music
 ```java
-// sample management
+SinOsc s => dac;
+SinOsc t => dac;
+SinOsc u => dac;
 
-// sound chain
 
-SndBuf snare => dac;
-
-// array of strings (paths) array want to insert path
-
-string snare_samples[3];
-
-// load array with file paths
-
-for(1 => int i; i < snare_samples.cap()+1; i++)
+// function
+fun float octave( float originalFreq)
 {
-     me.dir() + "/audio/snare_0"+i+".wav" => snare_samples[i-1];
-}
-//me.dir() + "/audio/snare_01.wav" => snare_samples[0];
-//me.dir() + "/audio/snare_02.wav" => snare_samples[1];
-//me.dir() + "/audio/snare_03.wav" => snare_samples[2];
-
-// how many samples?
-<<< snare_samples.cap() >>>;
-
-// infinite loop
-while(true)
-{
-    Math.random2(0,snare_samples.cap()-1) => int which;
-    snare_samples[which] => snare.read;
-    250::ms => now;
+       // calculate octave of input frequency
+    return originalFreq * 2;
     
 }
 
+
+fun float fifth( float originalFreq)
+{
+       // calculate octave of input frequency
+    return originalFreq * 1.5;
+    
+}
+
+for( 20 => float i ; i < 500 ; i+ .5 => i)
+{
+    i=> s.freq;
+    octave(i) => t.freq;
+    fifth(i) => u.freq;
+    
+    <<< s.freq(),t.freq() >>>;
+    1::ms => now;
+}
+
 ```
 
-## Stereo Playback
+## Functions to make form
 
 ```java
 // sound chain
-SndBuf2 mySound => dac;
+SndBuf click => dac;
+SndBuf kick => dac;
 
-// read the file into string
-me.dir() + "/audio/stereo_fx_01.wav" => string filename;
-//open up soundfile
-filename => mySound.read;
 
-// infinite loop
+// open sound files;
+
+me.dir() + "/audio/kick_01.wav" => kick.read;
+me.dir() + "/audio/snare_03.wav" => click.read;
+
+// tack away playback at initialization
+
+kick.samples() => kick.pos;
+click.samples() => click.pos;
+
+// global
+
+[1,0,0,0,1,0,0,0] @=> int kick_ptrn_1[];
+[0,0,1,0,0,0,1,0] @=> int kick_ptrn_2[];
+[1,0,1,0,1,0,1,0] @=> int click_ptrn_1[];
+[1,1,1,1,1,1,1,1] @=> int click_ptrn_2[];
+
+fun void section (int kickArray[], int clickArray[], float beattime)
+{
+    for(0 => int i; i< kickArray.cap(); i++)
+    {
+        if(kickArray[i] == 1){
+           0 => kick.pos;
+        }
+        if(clickArray[i] == 1){
+           0 => click.pos;
+        }
+        beattime::second => now;
+    }
+    
+}
+
 while(true)
 {
-    Math.random2f(.6 ,1.0) => mySound.gain;
-    Math.random2f(.2,1.8) => mySound.rate;
-    0 => mySound.pos;
-    5::second => now;
+    section(kick_ptrn_1,click_ptrn_1,.2);
+    section(kick_ptrn_2,click_ptrn_2,.2);
+
 }
+
 ```
 
-## Modulo
-![image](https://user-images.githubusercontent.com/69495129/131868421-921d4012-7ac0-4aeb-a969-db39308bd212.png)
+## Recursion 
+다른 프로그래밍 언어와 비슷하다.
+```java
+
+fun int factorial(int x ) 
+{
+  if(x<=1)
+  {
+    return 1;
+  }
+  else
+  {
+    return (x*factorial(x-1));
+  }
+  
+}
+
+<<< factorial(4) >>> ; // printed 24
+```
 
 
 
 ## Summary
-- **folder structure** 가 중요하므로 주의해서 사용한다
+- 서서히 음악파일을 가져와서 beat 를 Array로 지정하고 음악을 재생하는 법을 배웠다. 더 다양한 방법을 배워서 나만의 플레이리스트를 만들고싶다.
 
 
 🌜 주관적인 견해가 담긴 글입니다. 다양한 의견이 있으실 경우
