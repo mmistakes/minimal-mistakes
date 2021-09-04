@@ -86,7 +86,7 @@ env는 현재 만들 가상환경의 이름을 입력하면 됩니다.
 
 > 제 경우에는 아래처럼 Desktop경로에 env라는 가상환경을 생성 하였습니다.
 
-![image-20210904200051988](C:\Users\khsoo\AppData\Roaming\Typora\typora-user-images\image-20210904200051988.png)
+![virtualenv](/images/2021-09-04/virtualenv)
 
 
 
@@ -98,7 +98,7 @@ env\Scripts\activate
 
 > 가상환경이 활성화 되면 (env) [현재 경로]$ 로서 나타나게 됩니다
 
-![image-20210904200639960](C:\Users\khsoo\AppData\Roaming\Typora\typora-user-images\image-20210904200639960.png)
+![activate](/images/2021-09-04/activate)
 
 
 
@@ -118,11 +118,11 @@ Django 프로젝트를 만들어 줍니다.
 django-admin startproject testSite
 ```
 
-![image-20210904201145422](C:\Users\khsoo\AppData\Roaming\Typora\typora-user-images\image-20210904201145422.png)
+![djangoProject](/images/2021-09-04/djangoProject)
 
 > 가상환경과 Django 프로젝트는 같은 Desktop경로에 저장되어 있는걸 확인 할 수 있습니다.
 
-![스크린샷(4)_LI](C:\Users\khsoo\OneDrive\사진\Screenshots\스크린샷(4)_LI.jpg)
+![스크린샷(4)_LI](/images/2021-09-04/스크린샷(4)_LI.jpg)
 
 
 
