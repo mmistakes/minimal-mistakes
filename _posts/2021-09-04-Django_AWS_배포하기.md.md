@@ -27,6 +27,10 @@ typora-copy-images-to: ..\images\2021-09-04
 >
 > 대부분 Django 프로젝트를 배포하는 내용을 담은 블로그 작성자 분들은 대부분 Unix계열 기반의 운영체제에서 배포를 하셔서 Window 운영체제에서 Django 프로젝트를 시작시 배포때 생기는 문제가 없으신거 같아 글을 남겨보려 합니다!
 >
+> 장고의 views, urls 와 같은 요소들의 사용법은 알고 계시다는 가정하에 읽어 주시면 감사하겠습니다 :)
+>
+> (작동 방법이 어렵지 않아서 제가 적어놓은 것만 보셔도 이해 되실꺼라 밑습니다!)
+>
 > **목표**: AWS EC2 서버에 Django 프로젝트를 실행 시키기
 
 
@@ -86,7 +90,7 @@ env는 현재 만들 가상환경의 이름을 입력하면 됩니다.
 
 > 제 경우에는 아래처럼 Desktop경로에 env라는 가상환경을 생성 하였습니다.
 
-![virtualenv](/images/2021-09-04/virtualenv)
+![virtualenv](/images/2021-09-04/virtualenv.jpg)
 
 
 
@@ -98,7 +102,7 @@ env\Scripts\activate
 
 > 가상환경이 활성화 되면 (env) [현재 경로]$ 로서 나타나게 됩니다
 
-![activate](/images/2021-09-04/activate)
+![activate](/images/2021-09-04/activate.jgp)
 
 
 
@@ -132,3 +136,74 @@ django-admin startproject testSite
 cd testSite
 python manage.py startapp testApp
 ```
+
+
+
+앱을 만들었으면 시스템이 앱이 등록되었는지 알아야겠죠?
+
+그래서 testSite/settings.py에 INSTALLED_APPS에 등록해 줍시다.
+
+![installedApp](/images/2021-09-04/installedApp.jpg)
+
+
+
+
+
+배포할때 나타날 화면을 구현하기 위해 해주어야 할 세팅이 있습니다.
+
+우선 testApp 폴더 내부에 templates 폴더와 그 안에 testApp이라는 폴더를 다시 만들어 주세요.
+
+testApp 폴더 안에 index.html 이라는 파일을 만들어 주세요.
+
+
+
+testApp/templates/testApp/index.html
+
+![pageInApp](/images/2021-09-04/pageInApp.jpg)
+
+
+
+이렇게 만든 templates 내부의 파일에 접속하기 위해서 settings.py에서 조금의 수정이 필요합니다.
+
+testSite/settings.py로 들어가서 TEMPLATES 내부의 DIRS 에 경로를 아래처럼 넣어주세요.
+
+(필요한 경우 상단에 import os를 해주세요)
+
+![templatePath](/images/2021-09-04/templatePath.jpg)
+
+
+
+이제 url을 설정해 볼까요?
+
+testSite의 urls.py를 수정해 봅시다.
+
+![projectUrls](/images/2021-09-04/projectUrls.jpg)
+
+프로젝트의 urls 경로를 앱의 urls로 연결시켜 주는 과정입니다.
+
+
+
+그런데 testApp에는 urls.py라는 파일이 없네요? 그래서 만들어 줍시다.
+
+testApp/urls.py 이렇게요. 그다음에 내부는 이렇게 넣어줍니다.
+
+![appUrls](/images/2021-09-04/appUrls.jpg)
+
+이 url이 화면을 띄워주는 views로 연결시켜주는 역할을 합니다.
+
+
+
+이제 views.py에서 화면을 직접 띄워주게 도와주는 index 함수를 설정하러 가봅시다.
+
+![viewDef](/images/2021-09-04/viewDef.jpg)
+
+이 함수가 아까 만들었던 index.html을 화면에 띄워줄꺼예요.
+
+
+
+
+
+
+
+
+
