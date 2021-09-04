@@ -29,7 +29,7 @@ typora-copy-images-to: ..\images\2021-09-04
 >
 > 장고의 views, urls 와 같은 요소들의 사용법은 알고 계시다는 가정하에 읽어 주시면 감사하겠습니다 :)
 >
-> (작동 방법이 어렵지 않아서 제가 적어놓은 것만 보셔도 이해 되실꺼라 밑습니다!)
+> (작동 방법이 어렵지 않아서 제가 적어놓은 것만 보셔도 이해 되실꺼라 믿습니다!)
 >
 > **목표**: AWS EC2 서버에 Django 프로젝트를 실행 시키기
 
@@ -39,7 +39,8 @@ typora-copy-images-to: ..\images\2021-09-04
 
 1. **배포할 Django 프로젝트 준비**
    1. 가상 환경 준비
-   2. requirements.txt 만들기
+   2. Django 프로젝트 만들기
+   3. requirements.txt 만들기
 2. **AWS EC2 Server **
    1. Instance 생성하기
       1. Ubuntu Server 18.04 LTS
@@ -58,11 +59,9 @@ typora-copy-images-to: ..\images\2021-09-04
 
 ---
 
+## 1. 배포할 Django 프로젝트 준비
 
-
-# 1. 배포할 Django 프로젝트 준비
-
-## 1. 가상 환경 준비
+### 1. 가상 환경 준비
 
 
 
@@ -102,7 +101,11 @@ env\Scripts\activate
 
 > 가상환경이 활성화 되면 (env) [현재 경로]$ 로서 나타나게 됩니다
 
-![activate](/images/2021-09-04/activate.jgp)
+![activate](/images/2021-09-04/activate.jpg)
+
+
+
+### 2. Django 프로젝트 만들기
 
 
 
@@ -122,7 +125,7 @@ Django 프로젝트를 만들어 줍니다.
 django-admin startproject testSite
 ```
 
-![djangoProject](/images/2021-09-04/djangoProject)
+![djangoProject](/images/2021-09-04/djangoProject.jpg)
 
 > 가상환경과 Django 프로젝트는 같은 Desktop경로에 저장되어 있는걸 확인 할 수 있습니다.
 
@@ -161,13 +164,15 @@ testApp/templates/testApp/index.html
 
 ![pageInApp](/images/2021-09-04/pageInApp.jpg)
 
+index.html파일의 내부는 아래처럼 간단히 채워줍시다.
+
+![indexContent](/images/2021-09-04/indexContent.jpg)
+
 
 
 이렇게 만든 templates 내부의 파일에 접속하기 위해서 settings.py에서 조금의 수정이 필요합니다.
 
-testSite/settings.py로 들어가서 TEMPLATES 내부의 DIRS 에 경로를 아래처럼 넣어주세요.
-
-(필요한 경우 상단에 import os를 해주세요)
+testSite/settings.py로 들어가서 TEMPLATES 내부의 DIRS 에 경로를 아래처럼 넣어주세요. (필요한 경우 상단에 import os를 해주세요)
 
 ![templatePath](/images/2021-09-04/templatePath.jpg)
 
@@ -201,9 +206,36 @@ testApp/urls.py 이렇게요. 그다음에 내부는 이렇게 넣어줍니다.
 
 
 
+이제 장고 프로젝트는 배포할 준비가 되었어요!
+
+migrate후 runserver를 해주면 우리가 만든 Django 프로젝트가 나타날 꺼예요 :)
+
+```python
+python manage.py makemigrations && python manage.py migrate
+python manage.py runserver
+```
 
 
 
+장고는 처음의 개발서버가 **http://127.0.0.1:8000/**으로 설정이 되어있어요.
+
+여기로 접속하면 아래처럼 화면이 나타납니다.
+
+![djangoScreen](/images/2021-09-04/djangoScreen.jpg)
 
 
+
+### 3. requirements.txt 만들기
+
+지금까지는 local에서만 프로젝트를 실행시킬 수 있어요.
+
+우리는 AWS EC2 서버를 통해서 배포할 예정인데, 지금 local에서 사용중인 패키지를 AWS서버에서도 동일하게 맞춰줘야겠죠? 그러기 위해서 현재 사용중인 피키지들을 확인할 수 있는 리스트가 필요해요.
+
+requirements.txt라는 파일에 만들어 줄께요.
+
+```python
+pip freeze >>requirements.txt
+```
+
+---
 
