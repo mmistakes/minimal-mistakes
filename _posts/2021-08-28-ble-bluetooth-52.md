@@ -11,7 +11,6 @@ tags:
 toc: true
 toc_sticky: true
 ---
-<!--span style="color:#056070"><b>contents</b></span-->
 
 ## 14. 새로운 무선 오디오 시장의 시작: Bluetooth 5.2
 

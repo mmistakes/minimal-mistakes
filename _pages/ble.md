@@ -37,3 +37,4 @@ toc_ads: true
 * [BLE (11) - 블루투스 메시: Overview of Mesh concepts](https://enidanny.github.io/ble/ble-mesh-concepts/)
 * [BLE (12) - 블루투스 메시: Advertising Bearer 포맷](https://enidanny.github.io/ble/ble-mesh-message/)
 * [BLE (13) - 블루투스 소식: Bluetooth 5.1](https://enidanny.github.io/ble/ble-bluetooth-news-51/)
+* [BLE (14) - 새로운 무선 오디오 시장의 시작: Bluetooth 5.2](https://enidanny.github.io/ble/ble-bluetooth-52/)
