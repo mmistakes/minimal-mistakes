@@ -9,7 +9,7 @@ excerpt: "We've talked about monads quite a lot on Rock the JVM. In this article
 
 Much virtual ink has been spilled talking about Monads in Scala. Even here on Rock the JVM, we've talked about Monads in a variety of ways: as a [practical necessity](/monads), or in their the most [abstract possible representation](/monads-are-monoids-in-the-category-of-endofunctors), or as a component of Cats, a popular FP library for Scala that we [teach here on the site](https://rockthejvm.com/p/cats).
 
-In this article, we'll approach the M word from yet another angle: the DRY principle nad how the monad abstraction ends up simplifying our code, while making it more general, more expressive and more powerful at the same time.
+In this article, we'll approach the M word from yet another angle: the DRY principle and how the monad abstraction ends up simplifying our code, while making it more general, more expressive and more powerful at the same time.
 
 The only requirements of this article are
 
