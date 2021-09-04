@@ -1,7 +1,19 @@
 ---
 
 layout: single
+
 title: "Django(장고)기반 애플리케이션 AWS EC2로 배포하는 방법"
+
+date: 2020-09-04
+
+categories:
+
+- Django
+- AWS
+- github
+- uWSGI
+
+typora-copy-images-to: ..\images\2021-09-04
 
 ---
 
@@ -52,7 +64,7 @@ title: "Django(장고)기반 애플리케이션 AWS EC2로 배포하는 방법"
 
 파이썬이 기본적으로 설치 되어있어야 하며
 
-![image-20210904200424232](C:\Users\khsoo\AppData\Roaming\Typora\typora-user-images\image-20210904200424232.png)
+![python-version](/images/2021-09-04/python-version.jpg)
 
 
 
@@ -120,4 +132,3 @@ django-admin startproject testSite
 cd testSite
 python manage.py startapp testApp
 ```
-
