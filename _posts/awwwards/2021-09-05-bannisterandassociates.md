@@ -13,7 +13,7 @@ date: 2021-09-05
 last_modified_at: 2021-09-05
 
 ---
-{% include video id="87fVOPzpylI" provider="youtube" %}
+{% include video id="7IjIZG-lYvg" provider="youtube" %}
 
 # Site of the Day
 [enter site](https://www.bannisterandassociates.com/)
