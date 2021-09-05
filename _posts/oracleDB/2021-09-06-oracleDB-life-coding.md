@@ -1,1 +1,47 @@
+---
+title:  "[20210903] LeonidKostetskyi "
+
+categories:
+  - oracleDB
+tags:
+  - [Vue.js, GSAP,Nuxt.js]
+
+toc: true
+toc_sticky: true
+
+date: 2021-09-06
+last_modified_at: 2021-09-06
+
+---
+{% include video id="Z-I5jV8Hqa0" provider="youtube" %}
+
+# Site of the Day
+[enter site](https://leonidkostetskyi.com/)
+![image](https://user-images.githubusercontent.com/69495129/131963020-3ace76c7-8858-4866-88cd-6a9db2661f10.png)
+## initial Point
+
+Web design front-end developer 의 포트폴리오이다. 처음 사이트를 들어가자마자 차분한 분위기가 느껴졌다. 
+자신이 만든 아카이브를 무분별하게 하지만, 일관되게 사이트에 배치해둔점이 맘에 들었다. 톤다운된 아이보리색의 배경색이 눈을 차분하게해주었다.
+
+
+
+## learning Point
+
+- Hover 에 따른 여러가지 효과가 지루하지 않게 해주었다 (WebGL 을 사용한 글리치효과)
+- 디자인을 하는 프론트엔드 개발자여서 그런지, 디자인적으로는 거의 완벽한것같았다 색의 선택이 이질감이없었다.
+- 카테고리별로 아카이빙 섹션, 스킬 섹션 등 명확하게 분류한점이 좋았다.
+- DARK THEME <==> LIGHT THEME 변환하는 애니메이션이 너무 좋았다. 물감이 뿌려지는듯한 느낌이 들어서 나중에 꼭한번 활용해보고싶다.
+
+## missing Point
+
+- Void
+
+
+***
+<br>
+
+    🌜 주관적인 견해가 담긴 리뷰입니다. 다양한 의견이 있으실 경우
+    언제든지 댓글 혹은 메일로 지적해주시면 감사하겠습니다! 😄
+
+[맨 위로 이동하기](#){: .btn .btn--primary }{: .align-right}
 
