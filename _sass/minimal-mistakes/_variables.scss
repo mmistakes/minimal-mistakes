@@ -14,9 +14,8 @@ $indent-var: 1.3em !default;
 
 /* system typefaces */
 $serif: 'Nunito','Gowun Batang', 'Klee One', sans-serif;
-$sans-serif: -apple-system,"Kaisei Tokumin" ,BlinkMacSystemFont, "Nanum Gothic Coding" ,"Roboto", "Segoe UI",
-  "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$monospace: "Kaisei Tokumin",Monaco, Consolas, "Lucida Console", monospace !default;
+$sans-serif: 'Nunito','Gowun Batang', 'Klee One', sans-serif !default;
+$monospace: 'Nunito','Gowun Batang', 'Klee One', sans-serif !default;
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
