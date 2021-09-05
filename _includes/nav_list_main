@@ -62,6 +62,13 @@
                 {% endfor %}
             </ul>
        <span class="nav__sub-title">DATABASE</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "oracleDB" %}
+                        <li><a href="/categories/oracleDB" class="">oracleDB ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
        <span class="nav__sub-title">ETC</span>
             <ul>
                 {% for category in site.categories %}
