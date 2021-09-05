@@ -249,8 +249,10 @@ defaults:
       comments: true
       share: true
       related: true
-      
- # _pages
+      sidebar_main: true
+
+
+  # _pages
   - scope:
       path: ""
       type: pages
