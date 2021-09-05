@@ -359,14 +359,16 @@ body {
 
 .page__taxonomy-item-category {
   display: inside;
+  font-weight: bold;
+  font-size: 1.1rem;
   margin-right: 5px;
   margin-bottom: 8px;
   padding: 3px 8px;
   text-decoration: none;
   border: 1px solid $background-color;
   border-radius: $border-radius;
-  background-color: mix(#fff, #4D5357, 18%);
-  color: mix(#fff, $primary-color, 20%);;
+  background-color: transparent;
+  color: mix(#fff, $primary-color, 100%);;
 
   &:hover {
     text-decoration: none;
