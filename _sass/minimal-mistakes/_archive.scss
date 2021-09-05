@@ -45,12 +45,13 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.9em;
   font-family: $sans-serif-narrow;
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
-
+  font-family: $serif;
+  font-size: $type-size-4;
   a[rel="permalink"]::before {
     content: '';
     position: absolute;
