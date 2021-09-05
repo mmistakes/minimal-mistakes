@@ -13,7 +13,6 @@ date: 2021-09-06
 last_modified_at: 2021-09-06
 
 ---
-{% include video id="Z-I5jV8Hqa0" provider="youtube" %}
 
 # Oracle DB 기본 정리
 이 포스트는 생활코딩의 Oracle Database 수업을 참조하였습니다.
