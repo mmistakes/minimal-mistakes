@@ -78,8 +78,14 @@ Then, we need to create the topic in the Kafka broker storing navigation informa
 ```shell
 kafka-topics \
   --bootstrap-server localhost:9092 \
-  --topic navigations \
+  --topic navigation \
   --create
+```
+
+To improve the readability of the code we will write, we define also a constant containing the name of the topic:
+
+```scala
+val NavigationTopic = "navigation"
 ```
 
 ## 2. Basics
@@ -101,6 +107,22 @@ In kafka streams jargon, both sources, flows, and sinks are called _stream proce
 TODO: Image of a topology
 
 So, with these bullets in our Kafka gun, let's proceed dive a little deeper in how we can implement our use case using the kafka-streams library.
+
+## 3. Creating the Topology
+
+First thing, we need to define the topology of our streaming application. Fortunately, it's an esy job, as we can use the builder provided by the library:
+
+```scala
+val builder = new StreamsBuilder
+```
+
+Then, we need to define our source processor. The source, will read incoming messages from the Kafka topic `navigations`, we've just defined:
+
+```scala
+val source: KStream[String, Navigation] = builder.stream(NavigationTopic)
+```
+
+Differently from other streaming libraries, such as Akka Streams, the kafka-streams library doesn't define specific types for sources, pipes, and sinks.
 
 
 
