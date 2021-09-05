@@ -13,7 +13,7 @@ $paragraph-indent: false !default; // true, false (default)
 $indent-var: 1.3em !default;
 
 /* system typefaces */
-$serif: "Kaisei Tokumin" , Georgia, Times, serif !default;
+$serif: 'Nunito','Gowun Batang', 'Klee One', sans-serif;
 $sans-serif: -apple-system,"Kaisei Tokumin" ,BlinkMacSystemFont, "Nanum Gothic Coding" ,"Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $monospace: "Kaisei Tokumin",Monaco, Consolas, "Lucida Console", monospace !default;

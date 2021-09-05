@@ -32,11 +32,12 @@
 }
 
 .archive__subtitle {
-  margin: 1.414em 0 0.5em;
+  margin: 0.8em 0 0;
   padding-bottom: 0.5em;
   font-size: $type-size-5;
-  color: $muted-text-color;
+  color: mix(#fff,$primary-color, 40%);
   border-bottom: 1px solid $border-color;
+  font-family: $serif;
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
