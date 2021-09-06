@@ -1,5 +1,5 @@
 ---
-title:  "[Oracle DB] 기본 정리"
+title:  "[Oracle DB] 기본 정리- 뉴렉쳐"
 
 categories:
   - oracleDB
