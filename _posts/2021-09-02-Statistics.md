@@ -1,4 +1,5 @@
 ### [백준 2108] 통계학
+
 ```python
 from collections import Counter
 
