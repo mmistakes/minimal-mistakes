@@ -159,9 +159,163 @@ SELECT SUBSTR(PHONE,5,INSTR(PHONE,'-',1,2) - INSTR(PHONE,'-',1,1)-1) FROM MEMBER
 ![image](https://user-images.githubusercontent.com/69495129/132200941-501d7091-c418-4967-81c4-90b19b0f9fc1.png)
 
 
+## 숫자 함수
+<br>
+
+![image](https://user-images.githubusercontent.com/69495129/132203490-9e780710-d7b9-49b2-97f8-638140ba21ee.png)
+
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132203594-0618fe73-c7e2-44d9-a4ad-ae8829d3e0e0.png)
+
+
+## 날짜 함수
+
+![image](https://user-images.githubusercontent.com/69495129/132203914-1974e189-2c05-4c80-8363-af11b170de43.png)
+
+![image](https://user-images.githubusercontent.com/69495129/132204419-038a39b5-4bdd-4cd9-922e-be52433fbfff.png)
+<br>
+위의 문제에 대한 솔루션이다
+
+``` sql
+SELECT * FROM MEMBER WHERE EXTRACT(MONTH FROM REGDATE) IN (2,3,11,12);
+```
+
+**Member table에서 REGDATE라는 Column에서 Month 만 추출해주고 그것이 만약 2,3,11,12 중 하나라면 그 Row에 대한 정보를 모두 가져와줘**
+
+<br>
+
+![image](https://user-images.githubusercontent.com/69495129/132205134-e6a754c4-63c8-47ce-a85f-77d161f31b4b.png)
+
+NEXT_DAY 에서는 현재날짜를 기준으로 다음요일을 구해준다. 토요일이라고써도되고 토 라고 써도되고 2번째 인자의 7은 토요일을 뜻한다.
+일요일이 1이고 월요일이 2이다........토요일은 7이 자명하다
+
+월의 마지막 일자를 알려주는 함수도 사용하면 그 월의 마지막 일자를 알려준다
+ 
+ 
+
+![image](https://user-images.githubusercontent.com/69495129/132209810-9037a500-37f1-45f5-ab37-d0c4a815431c.png)
+단위별로 잘라서 표현할 수 있다. (CC는 세기 단위이다 100년단위로 반올림이 된다) 년도 , 분기 , 세기 , 주 .. 등등 어느 부분에서 **잘라내고(TRUNC)** 어느부분에서 **반올림(ROUND)**할지 선택할 수 있다.
+
+## 변환 함수
+***
+![image](https://user-images.githubusercontent.com/69495129/132210181-f05fd0a4-bc7c-42bb-89d8-0c8a78ddaeaa.png)
+
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132210276-e5466007-dab3-42b2-8e70-727d2b429757.png)
+
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132210650-af93e256-8150-4b47-9acb-b3f9a5356073.png)
+날짜도 어차피 숫자이고 그것을 어떠한 식으로 뽑아낼지 지정할 수 있다. 
+모든 옵션을 외울필요는 없다. 
+날짜를 문자로 바꿔보자.
+
+``` sql
+SELECT TO_CHAR(SYSDATE, 'YY/MM/DD HH24:MI') FROM DUAL;
+SELECT TO_DATE('2014-03-31 12:23:03','YYYY-MM-DD HH:MI:SS') FROM DUAL;
+```
+단 '' 내부에는 포맷문자만 사용가능하다.
+오류가 나면 포맷까지 설명을 해줘야한다. 시 분 초 까지 설정하고 싶다하면 포맷을 컴퓨터에게 설명해줘야한다.
+
+``` sql
+SELECT NVL(AGE,0) FROM MEMBER;
+```
+MEMBER 로 부터 AGE 를꺼내는데 만약 그 값이 NULL 이라면 그걸 0으로 대체해서 가져와준다. **NVL** 은 엄청 쓸만한 함수이므로 잘 알아두자.
+ 
+<br>
+
+``` sql
+SELECT TRUNC(NVL(AGE,0)/10)*10 FROM MEMBER;
+SELECT NVL2(AGE,TRUNC(AGE/10)*10,0) FROM MEMBER;
+```
+
+위의 쿼리문은 모든 ROW가 연산을 하지만 아래 NVL2를 사용했을땐 NVL2(AGE,AGE가Null이아닐때실행할것,AGE가Null일때 실행할것) 
+으로 나눠서 연산을 수행하기때문에 밑의 쿼리문이 더 퍼포먼스 측면에서 좋다.
+
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132211855-2c6dbf45-04de-4584-b799-9b4fbbc86933.png)
+<br>
+
+
+![image](https://user-images.githubusercontent.com/69495129/132211978-3d06968b-ff54-41f9-997d-1048f4d68208.png)
+
+<br>
+<br>
+**DECODE 사용법**
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132212121-3a919e32-ff93-48da-b93b-7239f9a9805d.png)
+
+## 집계함수 ORDER BY , GROUP BY
+순서가 중요하다! **암기 필수**
+![image](https://user-images.githubusercontent.com/69495129/132212364-bec4aa2a-04fa-4a1c-b5de-404e025b6a21.png)
+![image](https://user-images.githubusercontent.com/69495129/132212430-4bafb8a2-c878-4cf4-97cb-c1e1066a52ba.png)
+
+FROM 에서 격자형 데이터를 준비하고 WHERE 에서 필터링 하고 GROUP BY에서 그것을 집계하고 그 후에 정렬 할 수 있다.
+
+### ORDER BY
+![image](https://user-images.githubusercontent.com/69495129/132212615-20c7fdae-bd7a-44c1-83a0-971f933a41c1.png)
+
+### 집계 함수
+레코드 수를 알고 싶을때 사용하는 방법 COUNT
+- 절대 NULL이 되지 않는 Column을 세는법
+- 모든 Column 을 대상으로조회 (퍼포먼스가 떨어짐)
+
+작성자 별로 쓴 글의 개수를 보고 싶다.
+그리고, 그 글의 개수가 큰것부터 정렬해서 꺼내오고 싶다.
+``` sql
+SELECT WRITER_ID, COUNT(ID) FROM NOTICE GROUP BY WRITER_ID;
+SELECT WRITER_ID, COUNT(ID) COUNT FROM NOTICE GROUP BY WRITER_ID
+ORDER BY COUNT DESC;
+```
+
+실행순서 FROM => CONNECT BY => WHERE => GROUP BY => HAVING => SELECT => ORDER BY
+그러므로 SELECT 에서 지은 별칭을 HAVING 절에서 사용할 수는 없다.
+하지만 위 예제처럼 SELECT 절에서 지은 별칭 COUNT 는 ORDER BY 절에서 사용 가능하다.
+
+### HAVING 
+
+<br>
+회원별 게시글 수를 조회하시오. 단 게시글이 **2이하인** 레코드만 출력하시오
+``` sql
+SELECT WRITER_ID,COUNT(N.ID) FROM NOTICE N
+WHERE COUNT(N.ID) < 2
+GROUP BY WRITER_ID;
+```
+위 코드는 Error 가 나온다 그룹 함수는 허가되지 않습니다.
+FROM,WHERE,GROUP BY,HAVING,ORDER BY ,SELECT 
+<br>
+``` sql
+SELECT WRITER_ID,COUNT(N.ID) FROM NOTICE N
+GROUP BY WRITER_ID;
+HAVING COUNT(N.ID) < 2
+```
+WHERE 절에서는 사용 불가능하지만, WHERE 대신 HAVING 으로 바꿔야한다 (GROUP BY 절에서는)
+
+<br>
+### ROW_NUMBER(), RANK(),DENSE_RANK()
+![image](https://user-images.githubusercontent.com/69495129/132215296-50ae43a4-cf05-45ae-8439-467384b80a1c.png)
+정렬된상태로 일련번호를 붙히고 싶을때 사용하면된다.
+등수를 메기고 싶을때는 RANK()를 사용하면된다.
+
+## 서브쿼리
+구절에 순서를 갖고있는데 구절의 순서를 바꿔야할 경우에 서브쿼리를 사용한다
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132215851-72094422-80a2-4b0a-a435-646a4f15cfe9.png)
+<br>
+
+FROM 절에는 반드시 Table 만 와야하는 것이아니라, 격자형 데이터면 사용가능하다. 소괄호는 서브쿼리를 나타내는 중요한 키워드이다.
+소괄호는 먼저 계산하겠습니다. 소괄호를 계산하면 격자형 데이터집합이 만들어지고 그것을 FROM 절으로 사용가능하다.
+
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132216128-18229035-920e-4a8f-b155-6398854eabc8.png)
+<br>
+평균나이를 구한뒤 그것을 이용해서 원하는 결과를 도출해낸다. 현재 회원이 갖고있는 평균나이를 구하고 그 후에 작업시행
+먼저 어떤 작업을해서 그결과를 남기고 그 결과를 이용해서 다른쿼리를 실행하려면 **서브쿼리** 를 떠올리자.
+
+## INNER 조인(JOIN)
 
 
 
+ 
 ***
 <br>
 
