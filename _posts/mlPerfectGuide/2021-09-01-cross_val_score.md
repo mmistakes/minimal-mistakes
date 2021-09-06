@@ -8,6 +8,7 @@ comments: true
 sidebar:
   nav: "mainMenu"
 --- 
+* * * 
 
 #### 하이퍼 파라미터 튜닝이란
 * * *
