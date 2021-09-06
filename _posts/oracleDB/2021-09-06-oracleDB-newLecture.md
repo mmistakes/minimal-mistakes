@@ -17,6 +17,8 @@ last_modified_at: 2021-09-06
 # Oracle DB 기본 정리
 이 포스트는 뉴렉쳐의 Oracle Database 수업을 참조하였습니다.
 개인적으로 공부하면서 참조하려고 만든 포스트입니다.
+<br>
+
 [뉴렉쳐 Oracle DB 바로가기](https://www.youtube.com/playlist?list=PLq8wAnVUcTFVq7RD1kuUwkdWabxvDGzfu)
 
 
@@ -71,10 +73,12 @@ SELECT * FROM NOTICE WHERE REGEXP_LIKE(TITLE, '\D\w*@\D\w*.(org|net|com)');
 ``` sql
 SELECT * FROM MEMBER WHERE ROWNUM BETWEEN 6 AND 10
 ```
+<br>
 위와 같은 코드를 작성하면 될까? Answer => 안된다.
 왜냐하면 ROWNUM 1이 가져와지고 이것이 위 조건에 안맞기때문에 홍길동은 제외된다. 그 후 유재석이 ROWNUM 1이 되고 다시 조건이 안맞기때문에 없어지고 강호동이 ROWNUM 1이되고.. 계속 반복 된다 그러므로 
 ROWNUM 6 까지 갈 수 조차 없다는것이다. 그렇다면 어떻게 해결해야할것인가? 이 이유는 ROWNUM 이 결과집합이 만들어질때 만들어지는 수 이기 때문이다.
 이것이 아니라 원래 일련번호를 가지고 있었다면 될 것이다. 즉 미리 만들어놓으면 된다
+<br>
 <br>
 ![image](https://user-images.githubusercontent.com/69495129/132194143-dc729df8-5e79-44dc-9de4-466d8322e63c.png)
 <br>
@@ -145,8 +149,14 @@ SELECT * FROM MEMBER WHERE PHONE IS NULL AND SUBSTR(BIRTHDAY,6,2) IN ('07','08',
   SELECT RPAD(NAME,6,'_') FROM MEMBER -- 한글일땐 이처럼 *2 를 해줘야하는것을 주의하자.
 ```
 
+![image](https://user-images.githubusercontent.com/69495129/132200721-a45de332-6488-4622-a7e5-d533b46cbe4d.png)
 
+위 문제에서 가운데 번호를 뽑으라고 하였다 그 번호는 4자리이거나 3자리이거나 가변적이므로 그 부분도 함수로 처리해주어야한다.
+``` sql
+SELECT SUBSTR(PHONE,5,INSTR(PHONE,'-',1,2) - INSTR(PHONE,'-',1,1)-1) FROM MEMBER;
+```
 
+![image](https://user-images.githubusercontent.com/69495129/132200941-501d7091-c418-4967-81c4-90b19b0f9fc1.png)
 
 
 
