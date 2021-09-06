@@ -93,6 +93,62 @@ WHERE NUM BETWEEN 6 AND 10;
 ![image](https://user-images.githubusercontent.com/69495129/132195701-07eb4196-235b-423a-baed-6d4f07cc6c3c.png)
 
 
+## 함수
+여러가지 함수가 있다. 문자열 함수가 가장 많이 사용된다.
+
+![image](https://user-images.githubusercontent.com/69495129/132196122-7255c403-1a97-4a30-8847-534ed05c600e.png)
+
+## 문자열 함수
+
+``` sql
+    SELECT SUBSTR('HELLO',2) FROM MEMBER; -- 처음부터 2개만큼 짤라주세요 
+    SELECT SUBSTR('HELLO',1,3) FROM MEMBER; --1번 인덱스부터 3개잘라주세요
+    SELECT SUBSTRB('HELLO',3) FROM DUAL; -- 바이트 단위
+```
+![image](https://user-images.githubusercontent.com/69495129/132197023-3b5a1496-e9a2-4119-bb6c-5fa20ebfd41c.png)
+내가 행을 필터링해야하는지, 열을 필터링해야하는지 잘 알아야한다.
+조건절에 함수를 사용하는것보다 패턴절을 사용하는게 연산에 더 효율적이다.
+
+**회원 중에서 생년 월이 7,8,9월인 회원의 모든 정보를 출력하시오**
+``` sql
+SELECT * FROM MEMBER WHERE SUBSTR(BIRTHDAY,6,2) IN ('07','08','09');
+```
+<br>
+
+**전화번호를 등록하지 않은 회원 중에서 생년 월이 7,8,9월인 회원의 모든 정보를 출력하시오**
+``` sql
+SELECT * FROM MEMBER WHERE PHONE IS NULL AND SUBSTR(BIRTHDAY,6,2) IN ('07','08','09');
+```
+
+![image](https://user-images.githubusercontent.com/69495129/132197929-4f8d0763-3c84-4e82-8244-e7d94bd5b81a.png)
+위에서 + 는 숫자를 연산할때 사용하고 문자를 더할때에는 || 기호를 사용한다 물론 CONCAT 도 있지만 함수보다는 연산자가 더 퍼포먼스에 좋기 때문에 연산자 || 를 사용하여 문자열을 더 하는 쪽을 택하는것이 좋을 것 같다.
+
+<br>
+
+![image](https://user-images.githubusercontent.com/69495129/132198362-08c074da-8a5a-4c6b-9bae-83609a41b3be.png)
+![image](https://user-images.githubusercontent.com/69495129/132198326-1138a728-fb5d-49ee-a012-bd0b1e7b8c5e.png)
+소대문자를 안가리고 검색하고 싶을때 유용하다
+
+<br>
+
+![image](https://user-images.githubusercontent.com/69495129/132198500-ebe5d35e-e1f9-4289-b9b1-f3744bbcc22d.png)
+위의 REPLACE 는 'WE' 가 통째로 'YOU'로 대체 된다. 하지만 밑의 TRANSLATE같은 경우에는 'W' => 'Y' 'E' => 'O' void => 'U' 이렇게 하나하나 Character 기준으로 대치가 된다. 위의 TRANSLATE SQL문을 실행한 결과는 **YHORO YO ARO** 이 될 것이다.
+
+![image](https://user-images.githubusercontent.com/69495129/132198829-b2f65642-67c0-496f-8db6-a912e90f5e48.png)
+
+
+![image](https://user-images.githubusercontent.com/69495129/132199496-10c0b5d6-2653-4400-9f58-193473bebc05.png)
+
+위의 문제에 대한 답이다.
+``` sql
+  SELECT RPAD(NAME,3,'_') FROM MEMBER -- 이렇게 하면 안된다 영문일때 가능
+  SELECT RPAD(NAME,6,'_') FROM MEMBER -- 한글일땐 이처럼 *2 를 해줘야하는것을 주의하자.
+```
+
+
+
+
+
 
 
 
