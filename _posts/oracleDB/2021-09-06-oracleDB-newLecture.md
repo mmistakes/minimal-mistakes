@@ -311,11 +311,157 @@ FROM 절에는 반드시 Table 만 와야하는 것이아니라, 격자형 데�
 평균나이를 구한뒤 그것을 이용해서 원하는 결과를 도출해낸다. 현재 회원이 갖고있는 평균나이를 구하고 그 후에 작업시행
 먼저 어떤 작업을해서 그결과를 남기고 그 결과를 이용해서 다른쿼리를 실행하려면 **서브쿼리** 를 떠올리자.
 
-## INNER 조인(JOIN)
+## JOIN 조인
+### INNER 조인(JOIN)
+여러개의 참조하고있는 테이블을 합치는 작업.
+저장할때 중복되는것을 제거하고 저장하기 때문에. 퍼포먼스 적으로 하나의테이블로 관리하는것보다 좋다.
+IO작업을 줄이는게 전체적인 성능을 줄일때 많이 영향을 미친다.
+
+``` sql
+SELECT * FROM MEMBER INNER JOIN NOTICE ON MEMBER.ID = NOTICE.WRITER_ID;
+```
+JOIN 할때는 ON 이라는것이 뒤따르면서 어떠한 컬럼과 어떠한 컬럼이 관계가 있다라는 점을 명확히 명시해줘야한다.
+
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132218415-864e34af-d360-42de-b3ee-6cd5e9258751.png)
+양쪽 outer 를 제거한 상태에서 INNER JOIN 을했을때 총 레코드의 개수 3개입니다. 
+이것은 표준방식으로 JOIN 한 것이다.
+
+### OUTER JOIN
+<br>
+두개 테이블을 조인할때 서로 관계가 없는 레코드는 OUTER 라고 한다 왼쪽테이블에는 OUTER가 3개 오른쪽에는 2개가 있다. 
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132218729-ff1d45fd-fc5f-4688-a0c5-472d49fad001.png)
+<br>
+LEFT JOIN 을 하면 왼쪽의 OUTER는 포함한다 그 후 합친다. 그 후 오른쪽에는 NULL 을 채워준다 (왼쪽 OUTER와 맞추기위해서)
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132218883-0ffc2860-ba60-447a-b6e6-7de10e7935c6.png)
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132219106-03ad26a0-e715-4629-92bb-81947f4588c3.png)
+<br>
+3 + 2 총 5개의 레코드가 만들어 질 것이다. 오른쪽의 Outer 가 남는다.
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132219158-4b406973-f623-439a-a4e6-36bd1a84c8fe.png)
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132219201-32459e0d-b021-4902-b26e-fe259265693c.png)
+<br>
+3+3+2 = 8 => 8개의 레코드가 만들어 지게 된다.
+거의 무조건 OUTER JOIN 을 많이 사용한다 ( INNER JOIN 보다 ) 
+업무를 다루다보면 거의 한가지 테이블을 주인공으로 하고 그 테이블을 기준으로 OUTER JOIN 을 많이 한다.
+
+### SELF JOIN
+자기가 자기와 합쳐진다. 테이블 하나가 두개인것처럼 자기와 자기가 합쳐지는것이다.
+확장하고 싶은 Coulmn이 있는데 그 Column 이 다른 Table 에 있는것이아니라. 바로 자기 자신 테이블에 있는 경우.
+
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132220753-28836a2b-2048-4866-a371-acb66268f837.png)
+<br>
+왼쪽은 사원 오른쪽을 보스라는 개념으로 사용한다 보스의 아이디를 맴버가 가지고있는 보스의 아이디와 비교하여 보스의 정보를 가져온다.
+SELECT 맴버의 모든 테이블을 가져오고 + B.NAME을 가져온다.
+SELF JOIN 은 잘 사용된다. 댓글이 댓글을 참조하는 경우, 혹은 카테고리가 카테고리를 참조하는경우 많이 사용된다.
+
+### 오라클 OLD JOIN
+
+![image](https://user-images.githubusercontent.com/69495129/132225316-bebba4c4-f685-48be-8cfc-4e721d83e99c.png)
+오라클은 ANSI 와 달리 WHERE절에서 ON 처럼 처리한다.
+
+![image](https://user-images.githubusercontent.com/69495129/132225526-04c4ed97-33cc-4d5c-9f15-af9d993a3251.png)
+오라클에서의 Outer JOIN 이것은 ANSI 방식을따라가는것이 편할 것 같다. ORACLE OUTER JOIN 은 좀 모호한 부분이 있는것 같다.
+
+혹시라도 오라클 문법을 쓴 과거의 문장을 볼 수 있기 떄문에 이런것이 있다 정도로만 알고 있으면 될 것 같다.
+
+## UNION 
+컬럼이 늘어나는것이 아닌, 레코드를 합치는 작업. 관련이 없어도 된다. 컬럼의 갯수와 컬럼의 자료형만 맞춰주면 합칠 수 있다.
+게시판이 3종류가 있고 그 3종류가 별도의 테이블이라면 그 3개를 통합하여 통합검색을 할때 사용할 수 있다.
+결과물 혹은 레코드를 합칠때 유니온을 사용가능
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132225812-aec6b597-47a7-4e37-909e-c4011decdcb6.png)
+<br>
+
+``` sql
+SELECT ID, NAME FROM MEMBER
+  UNION
+SELECT WRITER_ID, TITLE FROM NOTICE;
+```
+``` sql
+SELECT ID, NAME FROM MEMBER
+  UNION ALL
+SELECT WRITER_ID, TITLE FROM NOTICE;
+```
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132226004-895d0e46-8212-4f12-b5e2-be0e6e1629a6.png)
+UNION 을 하면 6개의 레코드가 얻어질 것이라고 생각하기 쉽지만, 그것은 UNION ALL 이고 일반적인 UNION을 실행하면 5개의 레코드가 얻어진다 중복된것은 1개로 치부된다.
+
+## View(뷰)의 의미와 생성방법
+
+![image](https://user-images.githubusercontent.com/69495129/132226732-27c26ab2-ca25-40fe-87a0-5f300c708571.png)
+<br>
+뷰를 만들어두고 언제든지 꺼내 쓸 수 있다. 자주쓰는것들은 뷰로 만들어두면 좋다.
+목록을 볼때 일반적으로 한테이블을 보지않고 여러개를 합쳐쓰기때문에 그것을 뷰로 미리 만들어두고 사용하면 편리하다.
+
+## 데이터 딕셔너리
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132227040-e601e2ab-8466-40f3-8125-2b6c64c935c1.png)
+<br>
+
+과거의 콘솔형태의 클라이언트 도구를 사용할때에는 데이터 딕셔너리를 이용하여 여러가지 정보를 얻을 수 있었지만, 요즘 GUI Tool 을 사용하면 그 GUI 환경에서 모든것이 확인 가능하다.
+
+## 도메인 제약조건
+제약이 없으면 유효하지않은 데이터들이 가득 채워질 위험이 있다.
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132227971-cf47d41a-90a9-48f1-b2f9-d8e2c96a8117.png)
+<br>
+도메인을 만족하면 형식으로 봤을때는 유효한 값이다. 컬럼단위
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132228347-01a9e4f3-628e-4e1c-909c-9ebe64515386.png)
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132228369-4fd1be3b-8dd5-419a-a9db-934f29f5fbf6.png)
+<br>
+
+### 체크 제약 조건
+값의 범위나 형식이 알맞지 않으면 값이 들어가지 않도록 한다. 
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132228887-0600b165-736d-4ac8-977d-97e9f85d51cd.png)
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132228962-b540aca5-4cf0-4374-a6fa-fd9a1b9b7d98.png)
+<br>
+정한 규칙에 위배되면 오류가 발생한다.
+
+#### 정규식을 이용한 체크 제약조건
+체크 제약 조건을 더 정밀하게 다루기 위해서 정규식을 사용한다.
+
+``` sql
+PHONE LIKE '010-____-____'
+
+REGEXP_LIKE(PHONE,'010-\d{3,4}-\d{4}')
+```
+위 쿼리문보다 아래 쿼리문이 더 엄격한 제한조건을 걸 수 있는 방법이다. 정규식을 사용했기 때문에.
+
+## Entity 제약조건
+테이블 전체에서 봤을때 레코드를 식별할 수 있는 뭔가가 있어야한다. 식별 컬럼 식별 키를 갖고있는 컬럼 이 필요하다.
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132230759-fb662b66-90fd-4826-ab8b-f8cbc3ee477a.png)
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132230936-f20619ec-793d-4b71-b67a-ee6372d96633.png)
+<br>
+이미 테이블이 만들어져있다면 수정을 택한다
+<br>
+![image](https://user-images.githubusercontent.com/69495129/132230959-6b12f086-5b1d-4792-a5bd-931c1aee8510.png)
+<br>
+
+## 시퀀스 (Sequence)
+일련번호, 일련번호를 계속 뽑아야한다. 중복이 되면안되고 계속계속 번호가 증가되어야한다. 내가 몇번의 일련번호를 집어넣어야한다?
+ID 열에 다음값을 쉽게 얻을 수 있도록 해주는 도구가 있으면 좋을 것 같다.
+시퀀스 => 새 시퀀스 => 이름 : NOTICE_ID_SEQ  다음으로 시작 : 1  증분 : 1 캐시: 캐시 크기 20 (성능 개선) 
+
+**사용방법**
+``` sql
+INSERT INTO NOTICE(ID, TITLE, WRITER_ID)
+VALUES(NOTICE_ID_SEQ.NEXTVAL,'Oracle','chanhyuk');
+```
 
 
 
- 
 ***
 <br>
 
