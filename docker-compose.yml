@@ -4,7 +4,7 @@ services:
 
   jekyll:
     container_name: jekyll
-    image: jekyll/jekyll:4.0
+    image: jekyll/jekyll:4.2.0
     volumes:
       - ./:/srv/jekyll:z
     ports:

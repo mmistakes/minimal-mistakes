@@ -2,7 +2,17 @@
   role: PHP Developer
   time: October 2020 - present
   company: Bumble, London
-  details: ""
+  details: "
+<p>My experience at Bumble has been quite different from what I have been doing before. This is mainly due to the
+tech-stack, code practices and cultural shift at Bumble.</p>
+<p>I am part of the Integrity team, looking after the Antispam, Data Integrity, Photo Moderation and other components,
+and in this role I</p>
+<ul>
+<li>worked on a project to implement legislative requirements for a foreign market</li>
+<li>improved interfaces used by Moderators for a quicker and more reliable moderation process</li>
+<li>gathered and analysed data about bots prevention and auto-moderation</li>
+</ul>
+<p>I have also been able to introduce Retrospective meetings as part of the journey to Agile</p>"
 - experience:
   role: Applications Developer
   time: October 2018 - October 2020
@@ -12,7 +22,7 @@
 able to pursue it.</p>
 <p>I have helped the Scrum Master setting up meetings, making sure we stay focused on the agenda and have actionable items
 at the end. This sparked my interest in Scrum Mastery.</p>
-<p>In the past six months, I have been involved in the reshaping of our Support team and processes, which I enjoyed.</p>
+<p>In the last six months at Shopworks, I was involved in the reshaping of our Support team and processes, which I enjoyed.</p>
 <p>In my capacity as \"Product Owner\", I was able to</p>
 <ul>
 <li>rationalise the way tickets were triaged, refined and worked on</li>
