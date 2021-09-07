@@ -41,7 +41,7 @@ If you prefer you could use docker to create a container which will build and se
 docker run --rm \
 --volume="$PWD:/srv/jekyll" \
 -p 4000:4000 \
--it jekyll/jekyll:4.0 \
+-it jekyll/jekyll:4.2.0 \
 jekyll serve --watch --force_polling --drafts --unpublished --incremental
 ```
 
