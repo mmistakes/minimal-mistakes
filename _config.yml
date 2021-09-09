@@ -16,11 +16,11 @@ minimal_mistakes_skin    :  # "air", "aqua", "contrast", "dark", "dirt", "neon",
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Today Chihun learned"
+title                    : "Chihun Park"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Chihun Park"
-description              : "Today Chihun learned"
+description              : "Chihun Park"
 url                      : "https://chihunmanse.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "chihunmanse/chihunmanse.github.io"
