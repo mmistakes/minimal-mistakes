@@ -5,33 +5,50 @@ title : Experience
 ---
 ### Educational Experience
 
-- #### Intern - [CSRD laboratory](http://petro.snu.ac.kr/) (Expected)
-    - Jan. 2021 ~ Feb. 2021
+- #### Intern - [KEI Consulting](https://keicltd.com/)
+    - 2021.09 ~ 12
+
+- #### Intern - [Posco International](https://www.poscointl.com/kor/index.do)
+    - 2021.08
+    - Reservoir Evaluation Section
+
+- #### Intern - [CSRD laboratory](http://petro.snu.ac.kr/)
+    - 2021.01 ~ 02 , 07 ~ 12
+    - Center of Subsurface Resources Development
 
 - #### Tutor - Energy Environment Technological Business
-    - Sep. 2020 ~ Dec. 2020
+    - 2020.09 ~ 12
 
 ---
 ### Social Experience
 
+- #### Member of [Soundream](https://www.facebook.com/snu.soundream/)
+    - 2021.07 ~ Now
+    - Music Composition Club of SNU
+    - <https://youtu.be/VWTXbO3Z19Q>
+
+- #### Member of FastFailer (5th)
+    - 2021.07
+    - Start-up Study Group
+
 - #### Member of Impact
-    - Sep. 2020 ~ Feb. 2021
+    - 2020.09 ~ 2021.06
     - Tennis Club of SNU
 
 - #### Part-time job at CGV in Yong-in
-    - Nov. 2019 ~ Feb. 2020
+    - 2019.11 ~ 2020.02 
 
 - #### Military Service in Republic of Korea Auxiliary Police
-    - Feb. 2018 ~ Oct. 2019
+    - 2018.02 ~ 2019.10 
 
 - #### Member of [KASTTC](http://kasttc.kr)
-    - Jul. 2016 ~ Feb. 2018
+    - 2016.07 ~ 2018.02
     - Table Tennis Club of SNU
     - Winner of Freshman's Single and Double at Lee Ailesa Table Tennis Competition(Jan 7~8, 2017).
 
 - #### Member of [HHH](https://ko-kr.facebook.com/snuhhh/)
-    - Mar. 2016 ~ Feb. 2017
+    - 2016.03 ~ 2017.02
     - Classic Guitar Club of SNU
 
 - #### Mentor of [Megastudy](http://www.megastudy.net/)
-    - Mar. 2016 ~ Feb. 2017
+    - 2016.03 ~ 2017. 02
