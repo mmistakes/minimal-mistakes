@@ -317,6 +317,14 @@ figure.highlight {
   }
 }
 
+.highlight [data-lang]::before {
+  content: attr(data-lang);
+  float: right;
+  background-color: gray;
+  padding: 0 0.5em;
+}
+
+
 .gist {
   th, td {
     border-bottom: 0;
