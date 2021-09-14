@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "Categories"
-    url: /categories/
   - title: "About"
     url: /about/
   - title: "Experience"
     url: /categories/career/technical_experience/technical_experience_overview
+  - title: "Categories"
+    url: /categories/
 interview_prep:
   - title: "Interview Prep"
     children:
