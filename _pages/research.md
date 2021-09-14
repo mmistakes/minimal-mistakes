@@ -6,7 +6,9 @@ permalink: /research/
 
 **A first-pass statistical dashboard for categorizing diverse particle movement patterns**  
 **Collaborators:** [Prof. Scott A McKinley](https://randommath.net/), [Prof. Christine K Payne](http://payne.pratt.duke.edu/)      
-**Try out the dashboard [here](https://stochastics-lab.shinyapps.io/spt_dashboard/)!** More details to come upon submission of associated manuscript.      
+**Try out the dashboard [here](https://stochastics-lab.shinyapps.io/spt_dashboard/)!** More details to come upon submission of associated manuscript.   
+**Read my undergraduate honors thesis [here](https://drive.google.com/file/d/10dDfMuyvUEKdIa-x2lA7hdfnU0vXFv-N/view?usp=sharing)!**     
+
 At the intersection of nanoscience and biology lies the question of precisely how particles move within cells. Recent developments in imaging, including quantum dots and semiconductor nanoparticles, have made it possible for researchers to peek beneath the surface of living cells, tracking individual particles over significant timescales. In contrast to in vitro particle tracking experiments, wherein there are great controls on particle and environmental homogeneity, live-cell tracking features tremendous diversity in particle movement.     
 
 In this research area, the use of mathematics has allowed for a better description of movement categorizations and quantitative methods to differentiate between them. We have developed a first-pass statistical dashboard to categorize disparate types of particle trajectories. Based on six statistical measures, a support vector machine was utilized to distinguish between free diffusion, anchored diffusion, directed transport, tracker error, subdiffusion, and skating diffusion. This automated categorization process proved to be successful on data simulated using stochastic differential equations and provided interesting results on the live-cell data.   
