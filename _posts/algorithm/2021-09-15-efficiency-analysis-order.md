@@ -32,19 +32,23 @@ we must specify a general step-by-step procedure for producing the solution to e
 **Inputs(parameters)** : positive integer n , array of keys S indexed from 1 to n, and a key x.
 **Outputs** : location, the location of x in S (0 if x is not in S)
 
-```pseudocode
-void seqsearch(int n,
-				const keytype S[],
-				keytype x,
-				index& location)
-		{
-			location = 1;
-			while (location <= n && S[location] != x)
-				location++;
-			if(location > n)
-				location = 0;
-		}
+```c++
+void matrixmult (int  n, 
+		const number A[] [][][],
+		const number B[] [],
+		number C[][])
+{ 
+	index i,j,k;
+	for (i=1;i<=n;i++)
+		for(j=1;j<=n;j++)
+			C[i][j] = 0;
+				for(k=1; k<=n; k++)
+					C[i][j] = C[i][j] + A[i][k] * B[k][j]
+}
+
 ```
+
+
 
 The notation S[2..n] means an array S indexed from 2 to n is strictly pseudocode.
 
@@ -52,7 +56,7 @@ The notation S[2..n] means an array S indexed from 2 to n is strictly pseudocode
 **Problem** : Add all the numbers in the array S of n numbers
 **Inputs(parameters)** : positive integer n, array of numbers S indexed from 1 to n.
 **Outputs** : sum, the sum of the numbers in S.
-```pseudocode
+```c++
 number sum (int n, const number S[ ])
 {
 	index i;
@@ -70,7 +74,7 @@ number sum (int n, const number S[ ])
 **Inputs(parameters)** : positive integer n, array of keys S indexed from 1 to n.
 **Outputs** : the array S containing the keys in nondecreasing order.
 
-```pseudocode
+```c++
 void exchangesort (int n, keytype S[])
 {
 	index i,j;
@@ -86,7 +90,7 @@ void exchangesort (int n, keytype S[])
 **Inputs(parameters)** : a positive integer n, two-dimensional arrays of numbers A and B, each of which has both its rows and columns indexed from 1 to n.
 **Outputs** : a two-dimensional array of numbers C, which has both its rows and columns indexed from 1 to n, containing the product of A and B.
 
-```pseudocode
+```c++
 void matrixmult (int  n, 
 		const number A[] [][][],
 		const number B[] [],
