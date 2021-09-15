@@ -53,6 +53,9 @@ any linear-time algorithm is eventually more efficient than any quadratic-time a
 비슷하지만, Big O 에서의 c는 some constant 인 반면, Small o 에서의 c 는 For **every** positive real constant c 인 상황에서 조건을 만족해야한다
 만약 g(n) 이 o(f(n))에 포함되어있다면 g(n) is eventually **much better** than f(n) f(n) 이 더 그래프에서 위를 차지한다는 것이므로 시간 복잡도(계산 성능) 에 대해서는 g(n) 의 알고리즘이 더 좋다고 할 수 있다.
 
+## Properties of Order:
+![image](https://user-images.githubusercontent.com/69495129/133480878-e24808fd-84ca-4afa-abdd-b5a271c970c2.png)
+![image](https://user-images.githubusercontent.com/69495129/133480900-113df28d-f697-462d-b4b9-7d84607821f3.png)
 
 
 
