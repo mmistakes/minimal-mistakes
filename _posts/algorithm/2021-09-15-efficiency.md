@@ -1,10 +1,10 @@
 ---
-title:  "[Algorithm] Efficiency, Analysis, and Order " 
+title:  "[Algorithm] Efficiency " 
 
 categories:
   - algorithm
 tags:
-  - [efficiency,analysis,order]
+  - [efficiency]
 
 toc: true
 toc_sticky: true
@@ -170,6 +170,60 @@ Suppose we double the size of the array so that it contains 64 items. Binary Sea
 <br>
 In Chapter 2, We will return to Binary Search as an example of the divide-and-conquer approach, which is the focus of that chapter. At that time we will consider arrays whose
 sizes can be any positive integer.
+
+
+
+### The Finonacci Sequence
+
+**Problem** : Determine the nth term in the Fibonacci sequence.
+<br>
+**Inputs(parameters)** : a nonnegative integer n.
+<br>
+**Outputs** : fib, the nth term of the Fibonacci sequence.
+
+```c++
+int fib (int n)
+{
+    if ( n <= 1)
+        return n;
+    else 
+        return fib(n-1) + fib(n-2);
+}
+```
+
+Although the algorithm was easy to create and is understandable, it is extremely inefficient.
+
+![image](https://user-images.githubusercontent.com/69495129/133460391-716156bc-f950-4160-a156-818611489209.png)
+
+let's develop an efficient algorithm for computing the nth Fibonacci term. Recall that the problem with the recursive algorithm is that the same value is computed **over** and **over**.
+
+new version finonacci algorithm (more efficiency)
+**Problem** : Determine the nth term in the Fibonacci sequence.
+<br>
+**Inputs(parameters)** : a nonnegative integer n.
+<br>
+**Outputs** : fib2, the nth term of the Fibonacci sequence.
+
+```c++
+int fib2 (int n)
+{
+    index i;
+    int f[0..n];
+    
+    f[0] = 0;
+    if(n > 0)
+        f[1] = 1;
+    		for( i=2; i<=n; i++)
+                f[i] = f[i-1] + f[i-2];
+    return f[n];
+}
+```
+
+fib2 algorithm can be written without using the array f because only the two most recent terms are needed in each iteration of the loop.
+
+![image](https://user-images.githubusercontent.com/69495129/133461366-6adeb0de-9088-4da9-9be1-969aac958526.png)
+
+This comparision shows why the efficiency of an algorithm remains an important consideration regarless of how fast computers become.
 
 ***
 <br>
