@@ -66,6 +66,35 @@ i = n-1 : n-(n-1) times
 
 T(n) = (n-1) + (n-2) + ... + 1 = (n-1)n / 2
 
+### Worst-case analysis
+#### Sequential search
+- Basic operation : (S[location] != x)
+- Input size : the number of items in an array , n
+- Worst case happens if **x** is in the last element of S[n]
+- Therefore, W(n) = n.
+- Every-case analysis is **not** possible for sequential search ( 상황에 따라 복잡도가 다를 수 있기 때문에)
+
+Although the worst-case analysis informs us of the absolute maximum amount of time consumed, in some cases we may be more interested in knowing how the algorithm performs on the average.
+
+### Average-case analysis
+![image](https://user-images.githubusercontent.com/69495129/133468241-b9840227-eda8-4730-860a-b672f862b83d.png)
+![image](https://user-images.githubusercontent.com/69495129/133468262-97213dd1-21ce-4e47-9be5-f246762f6391.png)
+Case1인 경우는 x가 항상 배열안에 있다고 가정한 것이다. Case2는 x가 배열안에 있을 확률 p 를 도입한다.
+즉 Case2 같은 경우는 x가 배열안에 있을 확률 p 에따라서 시간복잡도가 달라진다.
+
+***
+Before proceeding, we offer a word of caution about the average. Although an average is often referred to as a typical occurrence, one must be careful in interpreting the average in this manner. Recall in the previous analysis that A(n) is (n + 1)/2 when it is known that x is in the array. This is not the typical search time, because all search times between 1 and n are equally typical. Such considerations are important in algorithms that deal with response time. For example, consider a system that monitors a nuclear power plant. If even a single instance has a bad response time, the results could be catastrophic. It is therefore important to know whether the average response time is 3 seconds because all response times are around 3 seconds or because most are 1 second and some are 60 seconds.
+A final type of time complexity analysis is the determination of the smallest number of times the basic operation is done. For a given algorithm, B(n) is defined as the minimum number of times the algorithm will ever do its basic operation for an input size of n. So B(n) is called the best-case time complexity of the algorithm, and the determination of B(n) is called a best-case time complexity analysis.
+
+***
+### Best-case analysis
+#### Sequential search
+- Basic operation : (S[location] != x)
+- Input size : the number of items in an array , n
+- Best case happens if x is the first element of S[n], i.e. S[1] or S[0]
+- Therefore, B(n) = 1.
+
+
 
 
 *** 
