@@ -22,10 +22,9 @@ any linear-time algorithm is eventually more efficient than any quadratic-time a
 **we are interested in eventual behavior**
 
 
-|            | big O                                                        | big Omega | big Theta | small o |
-| ---------- | ------------------------------------------------------------ | --------- | --------- | ------- |
-| Definition | For a given complexity function f(n), O(f(n)) is the set of complexity functions g(n) for which there exists some positive real constant c and some nonnegative integer N such that for all n >= N |           |           |         |
-| Expression | $$<br/>g(n) \leq c * f(n)<br/>$$                             |           |           |         |
+|            | big O                                                        | big Omega                                                    | big Theta                                                    | small o                                                      |
+| ---------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Definition | For a given complexity function f(n), O(f(n)) is the set of complexity functions g(n) for which there exists some positive real constant c and some nonnegative integer N such that for all n >= N | For a given complexity function f(n), Ω(f(n)) is the set of complexity functions g(n) for which there exists some positive real constant c and some nonnegative integer N such that, for all n >= N | For a given complexity function f(n) This means that θ(f(n)) is the set of complexity functions g(n) for which there exists some positive real constants c and d and some nonnegative integer N such that, for all n >= N | For a given complexity function f(n), o(f(n)) is the set of all complexity functions g(n) satisfying the following : For every positive real constant c there exists a nonnegative integer N such that, for all n>= N |
 
 
 
