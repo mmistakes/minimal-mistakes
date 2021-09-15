@@ -11,6 +11,14 @@
             📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
       </li>
       <li>
+        <span class="nav__sub-title">THEORY</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "algorithm" %}
+                        <li><a href="/categories/algorithm" class="">algorithm ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
         <span class="nav__sub-title">FRONT END</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
