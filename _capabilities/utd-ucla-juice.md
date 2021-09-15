@@ -9,7 +9,7 @@ tags:
 submission_details:
   resources: 
     papers:
-      - title: Juice: A Julia Package for Logic and Probabilistic Circuits
+      - title: "Juice: A Julia Package for Logic and Probabilistic Circuits"
         url: http://starai.cs.ucla.edu/papers/DangAAAI21.pdf
       - title: Probabilistic Sufficient Explanations
         url: http://starai.cs.ucla.edu/papers/WangIJCAI21.pdf
