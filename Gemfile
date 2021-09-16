@@ -3,6 +3,7 @@ source "https://rubygems.org"
 gem "jekyll"
 gem "minimal-mistakes-jekyll"
 gem "jekyll-remote-theme"
+gem "nokogiri"
 
 group :jekyll_plugins do
   gem "jekyll-feed"
@@ -12,3 +13,5 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
 end
+
+gem "webrick", "~> 1.7"

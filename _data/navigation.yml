@@ -2,14 +2,10 @@
 main:
   - title: "About"
     url: /about/
+  - title: "Experience"
+    url: /categories/career/technical_experience/technical_experience_overview
   - title: "Categories"
     url: /categories/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
 interview_prep:
   - title: "Interview Prep"
     children:
@@ -19,3 +15,20 @@ interview_prep:
         url: /categories/career/interview_prep/what_is_interview_prep_and_why_you_need_it
       - title: "How College Fails to Provide Real-World Knowledge"
         url: /categories/career/interview_prep/how_college_fails_to_provide_real-world_knowledge
+technical_experience:
+  - title: "General"
+    children:
+      - title: "Overview"
+        url: /categories/career/technical_experience/technical_experience_overview
+      - title: "DevOps Tools"
+        url: /categories/career/technical_experience/devops_tools
+      - title: "Programming Languages"
+        url: /categories/career/technical_experience/programming_languages
+      - title: "Core Knowledge"
+        url: /categories/career/technical_experience/core_knowledge
+  - title: "Featured Projects"
+    children:
+      - title: "Internal Trading Market"
+        url: categories/career/technical_experience/internal_trading_market
+      - title: "Microwave"
+        url: /categories/career/technical_experience/microwave
