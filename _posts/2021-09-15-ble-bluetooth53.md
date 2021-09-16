@@ -1,5 +1,5 @@
 ---
-title: "BLE (15) - Bluetooth 5.3"
+title: "BLE (15) - Bluetooth 5.3 에서 개선 및 추가된 BLE 기능"
 categories:
   - BLE
 tags:
@@ -11,7 +11,7 @@ toc: true
 toc_sticky: true
 ---
 
-# 15. Bluetooth 5.3
+# 15. Bluetooth 5.3 에서 개선 및 추가된 BLE 기능 (Enhancement and Added feaures of BLE protocol in Bluetooth 5.3)
 
 이번 포스트에서는 Bluetooth 5.3 (`Released July 2021`)에서 추가된 저전력 블루투스 (`BLE`) 기능에 대해 간략하게 소개한다. 본 내용은 `nordic semiconductor` 관련 포럼 사이트 (**`devzone.nordicsemi.com`**) 에 포스팅 된 페이지의 내용을 간단한게 정리한 것이며, 보다 자세한 내용은 아래 원문 혹은 Bluetooth 공식 홈페이지의 표준 문서를 참조하길 바란다.
 
