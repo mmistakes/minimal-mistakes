@@ -24,7 +24,7 @@ header:
 
 # Overview
 
-This section of my website is meant to serve as a deep dive into my experience with certain tools, past projects, and roles. For a high-level overview, please  [refer to my resume](https://s3.amazonaws.com/www.abdulrabbani.com/Abdul_Rabbani_resume_20210915.pdf).
+This section of my website is meant to serve as a deep dive into my experience with certain tools, past projects, and roles. For a high-level overview, please  [refer to my resume](https://s3.amazonaws.com/www.abdulrabbani.com/Abdul_Rabbani_resume_20210916.pdf).
 
 # Tech Insight
 
