@@ -33,6 +33,11 @@ BLE 에서 **`central` 장치** <span style="color:#50a0a0"><b>(e.g. 스마트�
 
 무선 연결 과정에서는 37 개의 주파수 채널 중 현재 상태가 양호한 데이터 채널 일부를 선정해 어떤 순서로 주파수를 변경해가면서 (`e.g. "0 -> 12 -> 30 -> 24 -> 0 -> ... "`) 데이터를 보낼 것인지에 대한 정보; 일명 `channel map` 을 결정하게 되는데, 현재까지 BLE 프로토콜에서는 이 과정을 `central` 장치에서 주도적으로 진행했다.
 
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-53-fig1.png" alt="">
+  <figcaption>그림 출처: https://devzone.nordicsemi.com/nordic/nordic-blog/b/blog/posts/bluetooth-5-3</figcaption>
+</figure>
+
 Bluetooth 5.3 에서는 `central` 과 `peripheral` 주변의 무선 환경이 차이가 나는 경우에도 `channel map` 이 최대한 이상적인 조건으로 생성되도록 두 장치의 채널 정보를 토대로 `channel map` 을 결정하도록 개선되었다.
 
 ---
