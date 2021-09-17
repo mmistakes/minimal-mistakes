@@ -18,7 +18,7 @@ toc_sticky: true
 * 한 동안 `nRF5 SDK` 의 최신 버전은 `17.0.2` 였는데, 최근 몇몇 에러가 수정된 `17.1.0` 이 배포됨.
 * 그런데, 현재 `nordic` 에서는 BLE 이외에도 `Zigbee` 나 `Bluetooth Mesh` 개발을 위한 별도의 `SDK` 를 제공해왔고, 이제는 LTE-M 프로토콜을 지원하는 nRF91 제품군을 위한 `SDK` 도 제공이 되어야 함. (*최근에는 WiFi application 도 개발하려고 하는 것 같다*)
 
-<figure style="width: 70%" class="align-center">
+<figure style="width: 80%" class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/sdk-connect-fig1.png" alt="">
 </figure>
 
@@ -36,11 +36,15 @@ toc_sticky: true
 * 지원 프로토콜: Blueooth LE, Bluetooth mesh, Zigbee, Thread, LTE-M/NB-IoT, GPS.
 * 주요 특징: **`Zephyer RTOS`** 기반, application 및 network protocol 관련 예제-라이브러리 제공, Bootloader 및 각종 hardware driver 제공.
 
-주요 통합 개발 환경을 `nRF Connect SDK` 로 하려고 하는 이유는 아무래도 그동안 지원해주는 프로토콜마다 `SDK` 와 `SoftDevice` 버전을 일일이 분류하는 대신 이를 하나의 플랫폼으로 통합하기 위함이 큰 것 같다.
+주요 통합 개발 환경을 `nRF Connect SDK` 로 하려고 하는 이유는 아무래도 그동안 지원해주는 프로토콜마다 `SDK` 와 `SoftDevice` 버전을 일일이 분류하는 대신 이를 하나의 플랫폼으로 통합하기 위함이 큰 것 같다 🔰.
 
 BLE 프로토콜 기능을 제공해주는 BLE stack 은 크게 `Host` 와 `Controller` 영역으로 구분할 수 있는데, `nRF Connect SDK` 에서는 `Host` 계층에서 `Zephyr Bluetooth host` 를 이용하고, `Controller` 계층의 경우 `SoftDevice controller` 혹은 `Zephyer controller` 중 하나를 이용할 수 있다.
 
 >nRF91, nRF53 같은 새로운 nordic chip 이 개발되고, 제품 제조 현장에서 보다 빠르고 편리하게 nordic chip 을 개발할 수 있도록 하기 위해 RTOS 기반의 SDK 개발에 초점을 맞추게 된 것 같다.
+
+<figure style="width: 80%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/sdk-connect-fig2.png" alt="">
+</figure>
 
 또한, 아래 링크를 보면 Visual Studio Code 에서 `nRF Connect SDK` 를 이용 가능하도록 준비중에 있고, 이미 베타 버전은 이용이 가능한 것 같기도 하다.
 
