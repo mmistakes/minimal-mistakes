@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Chihun Park"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Chihun Park"
+name                     : "안녕하세요."
 description              : "Chihun Park"
 url                      : "https://chihunmanse.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
