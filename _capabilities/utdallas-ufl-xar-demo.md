@@ -1,37 +1,46 @@
 ---
 title: "Explainable Video Activity Recognition Demo"
 excerpt: "Demo of our XAI system built to detect activities in videos with post-hoc explanations for its predictions."
-tags: 
-- Analytics
-- Computer Vision
-- Visual Question Answering (VQA)
-- Human-Machine Teaming
-- Explanation Framework
-
+tags: # Select from this set
+  - Analytics
+  - Computer Vision
+  - Visual Question Answering (VQA)
+  - Human-Machine Teaming
+  - Explanation Framework
+   
 submission_details:
-resources: 
-papers: 
-- title: Don’t Explain without Verifying Veracity: An Evaluation of Explainable AI with Video Activity Recognition
-url: https://arxiv.org/abs/2005.02335
-software:
-- title: Explainable Video Activity Recognition Demo
-url: https://github.com/MahsanNourani/XAI-Video-Explanation
-
-
-
-authors:
-- Mahsan Nourani <sup>2</sup>
-- Chiradeep Roy <sup>1</sup>
-- Tahrima Rahman <sup>1</sup>
-- Eric Ragan <sup>2</sup>
-- Nicholas Ruozzi <sup>1</sup>
-- Vibhav Gogate  <sup>1</sup>
-organizations:
-- 1. The University of Texas at Dallas
-- 2. University of Florida
-point_of_contact:
-name: Eric Ragan
-email: eragan@ufl.edu
+  resources: # List any resources associated with the contribution. Not all sections are required
+    papers:
+      - title: Don't Explain without Verifying Veracity An Evaluation of Explainable AI with Video Activity Recognition
+        url: https://arxiv.org/abs/2005.02335
+    software:
+      - title: Explainable Video Activity Recognition Visual Interface
+        url: https://github.com/MahsanNourani/XAI-Video-Explanation
+    demos:
+      - title: Explainable Video Activity Recognition demo
+        url: https://indie.cise.ufl.edu/QCumber/index.html
+    data:
+      - title: TACoS Multi-Level corpus Cooking Videos
+        url: https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/vision-and-language/tacos-multi-level-corpus
+   
+  # Optional information describing artifact. Leave blank if unused
+  version: 
+  size: 
+  license: https://opensource.org/licenses/MIT
+   
+  authors:
+    - Mahsan Nourani<sup>2</sup>
+    - Chiradeep Roy<sup>1</sup>
+    - Tahrima Rahman<sup>1</sup>
+    - Eric Ragan<sup>2</sup>
+    - Nicholas Ruozzi<sup>1</sup>
+    - Vibhav Gogate<sup>1</sup>
+  organizations:
+    - 1. The University of Texas at Dallas
+    - 2. University of Florida
+  point_of_contact:
+    name: Eric Ragan
+    email: eragan@ufl.edu
 ---
 
 ## Overview
@@ -48,20 +57,15 @@ Only works with pre-defined questions and videos.
 
 
 ## References
-
+{% raw %}
 ```
 @article{nourani2020,
-	author    = {Mahsan Nourani and
-		Chiradeep Roy and
-		Tahrima Rahman and
-		Eric D. Ragan and
-		Nicholas Ruozzi and
-		Vibhav Gogate},
-	title     = {Don't Explain without Verifying Veracity: An Evaluation of Explainable
-		{AI} with Video Activity Recognition},
+	author    = {Mahsan Nourani and Chiradeep Roy and Tahrima Rahman and Eric D. Ragan and Nicholas Ruozzi and Vibhav Gogate},
+	title     = {Don't Explain without Verifying Veracity: An Evaluation of Explainable {AI} with Video Activity Recognition},
 	journal   = {CoRR},
 	volume    = {abs/2005.02335},
 	year      = {2020},
 	url       = {https://arxiv.org/abs/2005.02335},
 }
 ```
+{% endraw %}
