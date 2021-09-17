@@ -137,8 +137,9 @@ Pull request를 허가한뒤 merge를 하면 실제 서버에 반영이 되므�
 
 * GUI 도구를 이용한 병합
 1. GitHub 페이지에서 "Pull requests" 버튼을 누른 후, File changed 탭에서 변경 내용을 확인한다.
-2. Conversation 탭으로 이동하여 "Confirm merge"를 하면 중앙 원격 코드 베이스에 merge 된다.
-3. 충돌이 일어난 경우는 팀원들고 합의 하에 충돌 내용을 수정한 후 병합을 진행한다. (충돌이 일어났다고 당황하지 않고, 로그를 보며 천천히 해결한다)
+2. 초록색 버튼인 merge pull requests 를 누르면, confirm merge 버튼이 생긴다
+3. Conversation 탭으로 이동하여 "Confirm merge"를 하면 중앙 원격 코드 베이스에 merge 된다.(충분히 고민한 후 버튼을 클릭한다.)
+4. 충돌이 일어난 경우는 팀원들고 합의 하에 충돌 내용을 수정한 후 병합을 진행한다. (충돌이 일어났다고 당황하지 않고, 로그를 보며 천천히 해결한다)
 <br>
 
 ![image](https://user-images.githubusercontent.com/69495129/133833957-fc56730f-d7a2-428b-a69f-26a54eb0ffa9.png)
