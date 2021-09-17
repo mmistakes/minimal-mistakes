@@ -2,38 +2,41 @@
 title: "Explainable Video Activity Search Tool"
 excerpt: "Demo of our explainable query-building tool to search activities within a collection of videos."
 tags: 
-- Analytics
-- Computer Vision
-- Visual Question Answering (VQA)
-- Human-Machine Teaming
-- Explanation Framework
+  - Analytics
+  - Computer Vision
+  - Visual Question Answering (VQA)
+  - Human-Machine Teaming
+  - Explanation Framework
 
 submission_details:
-resources: 
-papers: 
-- title: Anchoring Bias Affects Mental Model Formation and User Reliance in Explainable AI Systems
-url: https://doi.org/10.1145/3397481.3450639
-software:
-- title: Explainable Video Activity Search Demo
-url: https://github.com/MahsanNourani/XAI-Video-Explanation/tree/user-study-v2
-- title: Online Video Activity Search
-url: https://indie.cise.ufl.edu/Pineapple/complex.html
+  resources: 
+    papers: 
+      - title: Anchoring Bias Affects Mental Model Formation and User Reliance in Explainable AI Systems
+        url: https://doi.org/10.1145/3397481.3450639
+    software:
+      - title: Explainable Video Activity Search Demo
+        url: https://github.com/MahsanNourani/XAI-Video-Explanation/tree/user-study-v2
+    demos:
+      - title: Online Video Activity Search
+        url: https://indie.cise.ufl.edu/Pineapple/complex.html
 
-
-authors:
-- Mahsan Nourani <sup>2</sup>
-- Chiradeep Roy <sup>1</sup>
-- Jeremy Block <sup>2</sup>
-- Donald R. Honeycut <sup>2</sup>
-- Tahrima Rahman <sup>1</sup>
-- Eric Ragan <sup>2</sup>
-- Vibhav Gogate  <sup>1</sup>
-organizations:
-- 1. The University of Texas at Dallas
-- 2. University of Florida
-point_of_contact:
-name: Eric Ragan
-email: eragan@ufl.edu
+  version: 
+  size: 
+  license: https://opensource.org/licenses/MIT
+  authors:
+    - Mahsan Nourani<sup>2</sup>
+    - Chiradeep Roy<sup>1</sup>
+    - Jeremy Block<sup>2</sup>
+    - Donald R. Honeycut<sup>2</sup>
+    - Tahrima Rahman<sup>1</sup>
+    - Eric Ragan<sup>2</sup>
+    - Vibhav Gogate<sup>1</sup>
+  organizations:
+    - 1. The University of Texas at Dallas
+    - 2. University of Florida
+  point_of_contact:
+    name: Eric Ragan
+    email: eragan@ufl.edu
 ---
 
 ## Overview
@@ -48,28 +51,16 @@ Only works with pre-defined questions and videos.
 
 
 ## References
-
+{% raw %}
 ```
 @inproceedings{nourani21,
-	author    = {Mahsan Nourani and
-		Chiradeep Roy and
-		Jeremy E. Block and
-		Donald R. Honeycutt and
-		Tahrima Rahman and
-		Eric D. Ragan and
-		Vibhav Gogate},
-	editor    = {Tracy Hammond and
-		Katrien Verbert and
-		Dennis Parra and
-		Bart P. Knijnenburg and
-		John O'Donovan and
-		Paul Teale},
-	title     = {Anchoring Bias Affects Mental Model Formation and User Reliance in
-		Explainable {AI} Systems},
-	booktitle = {{IUI} '21: 26th International Conference on Intelligent User Interfaces,
-		College Station, TX, USA, April 13-17, 2021},
-	pages     = {340--350},
-	publisher = {{ACM}},
-	year      = {2021}
+      author    = {Mahsan Nourani and Chiradeep Roy and Jeremy E. Block and Donald R. Honeycutt and Tahrima Rahman and Eric D. Ragan and Vibhav Gogate},
+      editor    = {Tracy Hammond and Katrien Verbert andDennis Parra and Bart P. Knijnenburg and John O'Donovan and Paul Teale},
+      title     = {Anchoring Bias Affects Mental Model Formation and User Reliance in Explainable {AI} Systems},
+      booktitle = {{IUI} '21: 26th International Conference on Intelligent User Interfaces, College Station, TX, USA, April 13-17, 2021},
+      pages     = {340--350},
+      publisher = {{ACM}},
+      year      = {2021}
 }
 ```
+{% endraw %}
