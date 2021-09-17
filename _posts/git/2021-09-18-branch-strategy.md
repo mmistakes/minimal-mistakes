@@ -69,7 +69,7 @@ $ git fetch origin master
 ### 브랜치 생성
 새로운 기능 개발을 위해서 기능에 알맞는 브랜치를 생성한다.
 
-![image](https://user-images.githubusercontent.com/69495129/133831452-af0dc84d-e583-4070-b386-5beecc49f4c4.png
+![image](https://user-images.githubusercontent.com/69495129/133831452-af0dc84d-e583-4070-b386-5beecc49f4c4.png)
 <br>
 **Feature Branch Workflow** 방법은 어떠한 목적에 따라서 브랜치를 생성하면서 시작된다. 예를들어 footer 기능을 개발한다면 feature/footer , 버그를 고치는 브랜치라면
 bugFix 등 브랜치의 이름을 통해서 기능의 의도를 명확하게 보여주는 것이 매우 중요하다.
