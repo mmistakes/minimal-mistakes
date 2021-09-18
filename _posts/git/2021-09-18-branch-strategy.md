@@ -107,6 +107,7 @@ $ git push origin feature/footer
 
 #### Git에서의 세 가지 상태
 Git 은 파일을 Committed,Modified,Staged 이렇게 세 가지 상태로 관리한다.
+
 | State     | mean                                                         |
 | --------- | ------------------------------------------------------------ |
 | Committed | 데이터가 로컬 데이터베이스에 안전하게 저장되었다는것을 의미한다. |
