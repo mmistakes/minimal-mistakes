@@ -8,13 +8,13 @@ excerpt: "Apache Pulsar is a cloud-native, distributed messaging and streaming p
 ---
 
 
-In today's modern data era there is an ever increasing demand for delivering data insights as fast as possible. What happens “now”, might be irrelevant a few minutes or even seconds later and so there is an ever increasing need for events to be ingested and processed as fast as possible, whether it is to improve a business and make it more competitive in a demanding market or make a system grow and adapt itself based on environment stimulations it operates.
+In today's modern data era there is an ever increasing demand for delivering data insights as fast as possible. What happens “now”, might be irrelevant a few minutes or even seconds later and so there is an ever increasing need for events to be ingested and processed as fast as possible, whether it is to improve a business and make it more competitive in a demanding market or make a system grow and adapt itself based on the environment stimulations it receives.
 
 Along with that and the evolution of containers and cloud infrastructure companies seek ways to leverage and adopt cloud-native approaches. 
 Moving to the cloud and adopting containers for our system means we are most likely leveraging technologies like Kubernetes for all of it’s amazing features. 
 Having our infrastructure on the cloud and adopting cloud-native solutions means we also want our messaging and streaming solutions to be in-line with these principles.
 
-In this blog post we will go through how you we implement Cloud Native event stream processing with Apache Pulsar and Scala. We will review what Apache Pulsar has to offer in this modern data era, what makes it stand out and how you can get started with it by creating some simple Producers and Consumers using Scala and the pulsar4s library.
+In this blog post we will go through how you can implement Cloud Native event stream processing with Apache Pulsar and Scala. We will review what Apache Pulsar has to offer in this modern data era, what makes it stand out and how you can get started with it by creating some simple Producers and Consumers using Scala and the pulsar4s library.
 
 ## 1. What Is Apache Pulsar
 
@@ -22,7 +22,7 @@ As described in the documentation
 ```
 Apache Pulsar is a cloud-native, distributed messaging and streaming platform that manages hundreds of billions of events per day.
 ```
-It was originally created at Yahoo back in the days to meet their enormous scaling needs - the engineering team also reviewed solutions like Apache Kafka at the time, but didn’t quite meet their needs - and so Apache Pulsar was born. 
+It was originally created at Yahoo back in the days to meet their enormous scaling requirements - the engineering team also reviewed solutions like Apache Kafka at the time, but didn’t quite meet their needs - and so Apache Pulsar was born. 
 Let’s take a closer look at what makes it stand out.
 1. **Unified Messaging and Streaming:** The first thing you should note about Apache Pulsar is that it serves as a unified platform for both messaging and streaming. These two terms are ofter confused to be the same, but there are fundamental differences. For example in a messaging use case you wanna consume a message as soon as it arrives and then the message will be deleted. On the other hand for a streaming use case you might want to keep your messages around and be able to replay them. 
 2. **Multi-Tenancy:** It was designed from the ground up as a multi-tenant system. Pulsar’s Logical Architecture consists of tenants, namespaces and topics. A namespace is a logical grouping of topics that live within the tenants. You can easily map your organization’s needs with a defined hierarchy and provide isolation, authentication, authorization, quotas as well as apply different policies on the namespace and topic levels. 
