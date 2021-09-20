@@ -1,3 +1,8 @@
+## Fundstück: Leserbrief
+
+Ich habe heute auf meiner alten Festplatte einen Kommentar gefunden, den ich für die örtliche Lokalzeitung verfasst habe.
+
+
 # Betrifft: „Fridays for Future“
 
 Mit großem Interesse habe ich Anfang diesen Monats Ihren Artikel über die „deutsche Greta Thunberg“ Lusia Neubauer gelesen.
