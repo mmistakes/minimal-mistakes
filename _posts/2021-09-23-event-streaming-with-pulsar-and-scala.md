@@ -94,7 +94,7 @@ Here we provide the topic name, a name for our producer, we enable batching and 
 By enabling batching, pulsar is going to use an internal queue to keep messages (default value is 1000) and send them over to the brokers as a batch after the queue gets full. 
 As you can see on the sample code we are using the `.sendAsync()` method to send the messages to Pulsar. This will send the message without waiting for an acknowledgement and since we buffer messages to the queue this can overwhelm the client. 
 Using the option `blockIfQueueFull` applies backpressure and informs the producer to wait before sending more messages.
-Finally we are create the message to send. Here we specify the sensorId as the key of the message, the value of sensorEvent and we also provide the eventTime i.e the time the event was produced.
+Finally are create the message to send. Here we specify the `sensorId` as the key of the message, the value of `sensorEvent` and we also provide the `eventTime` i.e the time the event was produced.
 
 At this point we have our producer in place to start sending messages to Pulsar. A complete implementation can be found [here](https://github.com/polyzos/pulsar-scala-streams/blob/main/src/main/scala/io/ipolyzos/producers/SensorEventProducer.scala)
 
