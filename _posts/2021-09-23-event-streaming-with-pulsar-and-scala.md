@@ -16,7 +16,7 @@ Having our infrastructure on the cloud and adopting cloud-native solutions means
 
 In this blog post we will go through how you we implement Cloud Native event stream processing with Apache Pulsar and Scala. We will review what Apache Pulsar has to offer in this modern data era, what makes it stand out and how you can get started with it by creating some simple Producers and Consumers using Scala and the pulsar4s library.
 
-##1. What Is Apache Pulsar
+## 1. What Is Apache Pulsar
 
 As described in the documentation
 ```
@@ -32,7 +32,7 @@ Let’s take a closer look at what makes it stand out.
 6. **Pulsar Functions** Pulsar Functions are a lightweight serverless compute framework that allow you to deploy your own stream processing logic in a very simple way. Being lightweight it also makes it an excellent choice for iot edge analytics use cases. Combined with Function Mesh (https://functionmesh.io/) a new project recently open sourced by Streamnative (https://streamnative.io/) is what makes event stream processing truly cloud native by deploying everything as part of a mesh and leveraging native kubernetes features like autoscaling. 
 There are more features of Apache Pulsar like a built-in Schema Registry, support for transactions and Pulsar SQL, but at this point lets see how you can actually get Pulsar up and running and create our very first Producers and Consumers in Scala.
 
-##2. Example Use Case and Cluster Setup
+## 2. Example Use Case and Cluster Setup
 As a simple example use case we will create a Producer that simulates sensor event readings, sends them over to a topic and then on the other end create a consumer that subscribes to that topic and just reads the incoming events. We will be using the [pulsar4s](https://github.com/sksamuel/pulsar4s) scala library for our implementation and we will run a Pulsar cluster using docker. In order to start a Pulsar cluster in standalone mode, run the following command within your terminal:
 ```shell
 docker run -it \
@@ -45,7 +45,7 @@ docker run -it \
 
 This command will start pulsar and bind the necessary ports to your local machine. With our cluster up and running, let's start creating our producers and consumers.
 
-##3. Apache Pulsar Producers
+## 3. Apache Pulsar Producers
 First, we need the dependencies for the pulsar4s-core and pulsar4s-circe:
 ```scala
 val pulsar4sVersion = "2.7.3"
@@ -97,7 +97,7 @@ Finally we are create the message to send. Here we specify the sensorId as the k
 
 At this point we have our producer in place to start sending messages to Pulsar. A complete implementation can be found [here](https://github.com/polyzos/pulsar-scala-streams/blob/main/src/main/scala/io/ipolyzos/producers/SensorEventProducer.scala)
 
-##4. Apache Pulsar Consumers
+## 4. Apache Pulsar Consumers
 Now let’s switch our focus to the consuming side. Much like we did with the producing side, the consuming side needs to have a Pulsar Client in scope.
 ```scala
 val consumerConfig = ConsumerConfig(
@@ -129,7 +129,7 @@ Note here that when a new message is received you need to acknowledge it back to
 With our consuming implementation in place we have a working publish-subscribe application that generates sensor events to a pulsar topic and a consumer that subscribes to it and consumes those messages.
 A complete implementation of the consumer can be found [here](https://github.com/polyzos/pulsar-scala-streams/blob/main/src/main/scala/io/ipolyzos/consumers/SensorEventConsumer.scala)
 
-##5. Apache Pulsar Subscription Types
+## 5. Apache Pulsar Subscription Types
 As mentioned during the blog post, Apache Pulsar provides unification of both messaging and streaming patterns and it does so, by providing different subscription types. 
 We have the following subscription types:
 * **Exclusive Subscription:** only one consumer is allowed to read messages using the subscription at any point in time 
@@ -141,6 +141,6 @@ We have the following subscription types:
 
 Different Subscription types are used for different use cases. For example in order to implement a typical fanout messaging pattern you can use the exclusive or failover subscription types. For message queueing and work queues a good candidate is Shared Subscription in order to share the work among multiple consumers. On the other hand for streaming use cases and/or key-based stream processing the Failover and KeyShared subscriptions can be a good candidate that can allow for ordered consumption or scale your processing based on some key.
 
-##6. Conclusion and Further Reading
+## 6. Conclusion and Further Reading
 In this blog post we made a brief introduction at what Apache Pulsar is, what makes it stand out as a new messaging and streaming platform alternative, how you can create some really simple producing and consuming applications and finally we highlighted how it unified messaging and streaming through different subscription modes. 
 If this overview sparked your interest and want to learn more, I encourage you to take a look at [Pulsar IO](https://pulsar.apache.org/docs/en/io-overview/) (moves data in and out of Pulsar easily), [Pulsar Functions](http://pulsar.apache.org/docs/en/functions-overview/) (Pulsar’s serverless and lightweight compute framework), which you can use to apply your processing logic on your Pulsar topics, reduce all the boilerplate code needed for producing and consuming applications and combined with [Function Mesh](https://functionmesh.io/) make your event streaming truly cloud-native, by leveraging kubernetes native futures like deployments and auto-scaling.
