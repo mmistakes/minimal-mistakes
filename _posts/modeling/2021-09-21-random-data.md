@@ -2,9 +2,9 @@
 title:  "[DB modeling] 랜덤 데이터 생성"
 
 categories:
-- modeling
-  tags:
-- [RDBMS, DB,modeling]
+  - modeling
+tags:
+  - [RDBMS, DB,modeling]
 
 toc: true
 toc_sticky: true
