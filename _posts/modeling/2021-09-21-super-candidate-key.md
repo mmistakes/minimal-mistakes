@@ -13,7 +13,7 @@ toc_sticky: true
 ---
 
 # 키(Keys)
-![img.png](img.png)
+![image](https://user-images.githubusercontent.com/69495129/134125541-cb837ee7-6507-43d6-933f-1fc2cf6a47c3.png)
 <br>
 
 - 키(K)는 속성들의 집합 
