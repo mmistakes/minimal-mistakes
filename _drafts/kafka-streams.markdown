@@ -15,15 +15,20 @@ Because the kafka-streams library is very large and quite complex, this article 
 
 ## 1. Set up
 
-As we said, the Kafka streams are implemented using a set of client libraries. Using Scala as the language to make some experiments, we have to declare the following dependencies in the `build.sbt` file:
+As we said, the Kafka streams are implemented using a set of client libraries. In addition, we will use the Circe library to deal with JSON messages. Using Scala as the language to make some experiments, we have to declare the following dependencies in the `build.sbt` file:
 
 ```sbt
 libraryDependencies ++= Seq(
   "org.apache.kafka" %  "kafka-clients"        % "2.8.0",
   "org.apache.kafka" %  "kafka-streams"        % "2.8.0",
-  "org.apache.kafka" %% "kafka-streams-scala"  % "2.8.0"
+  "org.apache.kafka" %% "kafka-streams-scala"  % "2.8.0",
+  "io.circe"         %% "circe-core"           % "0.14.1",
+  "io.circe"         %% "circe-generic"        % "0.14.1",
+  "io.circe"         %% "circe-parser"         % "0.14.1"
 )
 ```
+
+Among the dependencies, we find the `kafka-streams-scala` libraries, which is a Scala wrapper built around the Java `kafka-streams` library. In fact, using implicit resolution, the tailored Scala library avoid some boilerplate code.
 
 We will use version 2.8.0, of Kafka, the latest stable version at the moment. As we've done in the article [ZIO Kafka: A Practical Streaming Tutorial](https://blog.rockthejvm.com/zio-kafka/), we will start the Kafka broker using a Docker container. So, the `docker-compose.yml` file describing the container is the following:
 
@@ -65,28 +70,32 @@ services:
 
 Please, refer to the above article for further details on starting the Kafka broker inside Docker.
 
-As usual, we need a use case to work with. Imagine we have an e-commerce site and want to count how many times a user visit its pages. Since this information will use Kafka messages and topics, we need to set up our application.
-
-First, we define the model containing users' visiting information:
+As usual, we need a use case to work with. Imagine we have an e-commerce site and want to use Kafka to implement some part of the orders' workflow:
 
 ```scala
-case class Navigation(user: String, page: String, millis: Long)
+type UserId = String
+type Product = String
+type OrderId = String
+
+case class Order(orderId: OrderId, user: UserId, products: List[Product], amount: Double)
 ```
 
-Then, we need to create the topic in the Kafka broker storing navigation information. We call the topic `navigations`. As we did for the article "ZIO Kafka: A Practical Streaming Tutorial", we use the clients libraries contained in the Docker image:
+Since this information will use Kafka messages and topics, we need to set up our application, creating the topic in the Kafka broker storing orders. We call the topic `orders-by-user`. As we did for the article "ZIO Kafka: A Practical Streaming Tutorial", we use the clients libraries contained in the Docker image:
 
 ```shell
 kafka-topics \
   --bootstrap-server localhost:9092 \
-  --topic navigation \
+  --topic orders-by-user \
   --create
 ```
 
 To improve the readability of the code we will write, we define also a constant containing the name of the topic:
 
 ```scala
-val NavigationTopic = "navigation"
+final val OrdersByUserTopic = "orders-by-user"
 ```
+
+As the name of the topic suggests, its messages will have the `UserId` as keys. 
 
 ## 2. Basics
 
@@ -116,14 +125,12 @@ First thing, we need to define the topology of our streaming application. Fortun
 val builder = new StreamsBuilder
 ```
 
-Then, we need to define our source processor. The source, will read incoming messages from the Kafka topic `navigations`, we've just defined:
+Then, we need to define our source processor. The source, will read incoming messages from the Kafka topic `orders-by-user`, we've just defined. Differently from other streaming libraries, such as Akka Streams, the kafka-streams library doesn't define specific types for sources, pipes, and sinks:
 
 ```scala
-val source: KStream[String, Navigation] = builder.stream(NavigationTopic)
+val usersOrdersStreams: KStream[UserId, Order] = builder.stream[UserId, Order](OrdersByUserTopic)
 ```
 
-Differently from other streaming libraries, such as Akka Streams, the kafka-streams library doesn't define specific types for sources, pipes, and sinks.
-
-
+TODO
 
 
