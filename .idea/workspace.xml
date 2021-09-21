@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cec5a988-c885-4d67-bac0-f457795daa99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/_posts/modeling/2021-09-21-random-data.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/modeling/2021-09-21-super-candidate-key.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/modeling/img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +69,7 @@
       <workItem from="1631158793742" duration="6000" />
       <workItem from="1631696555168" duration="521000" />
       <workItem from="1631874767796" duration="17000" />
-      <workItem from="1632202136626" duration="697000" />
+      <workItem from="1632202136626" duration="3750000" />
     </task>
     <servers />
   </component>
