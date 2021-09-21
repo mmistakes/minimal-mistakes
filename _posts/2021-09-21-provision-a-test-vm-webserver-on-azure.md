@@ -1,12 +1,12 @@
 ---
-title: How quickly deply a test web server on an Azure VM
+title: How to quickly deploy a test web server on an Azure VM
 date: 2021-09-21 10:00
 author: nicold
 comments: false
 tags: [Azure, Virtual Machine, Portal, web server, custom script extension]
 ---
 
-For my Labs, I often need to create and build virtual machines. **Many virtual machines** :-). One of the most "popular" machine recently is for me the web server. The requirement for my needs is often very simple: **create a web server that responds on port 80, that is able to make me understand "what machine I’m interacting with"**, so, the ideal response message to the request *http://my-machine-ip* should be "*myMachineName*".
+For my **Labs**, I often need to create and build virtual machines. **Many virtual machines** :-). One of the most "popular" machine recently is for me the web server. The requirement for my needs is often very simple: **create a web server that responds on port 80, that is able to make me understand "what machine I’m interacting with"**, so, the ideal response message to the request *http://my-machine-ip* should be "*myMachineName*".
 
 From Azure portal is quick enough to create a virtual machines. In particular I use as the starting image "**windows 2019 datacenter gen1**".
 
