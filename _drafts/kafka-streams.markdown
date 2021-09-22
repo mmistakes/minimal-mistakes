@@ -131,6 +131,79 @@ Then, we need to define our source processor. The source, will read incoming mes
 val usersOrdersStreams: KStream[UserId, Order] = builder.stream[UserId, Order](OrdersByUserTopic)
 ```
 
-TODO
+There are a lot of things going on the above code. First, we introduced the first notable citizen of the kafka stream library: the `KStream[K, V]` type. We can imagine a `KStream` as a regular stream of Kafka messages. Each message as a key of type `K` and a value of type `V`. 
 
+Moreover, the API to build a new stream seems to be very straightforward because there are a lot of "implicit magic" under the hood. In fact, the complete signature of the methods is
 
+```scala
+// Scala kafka-stream library
+def stream[K, V](topic: String)(implicit consumed: Consumed[K, V]): KStream[K, V]
+```
+
+You may wonder what the heck is a `Consumed[K, V]` is. Well, it's the Java way to provide to the stream a `Serde` for the key and for the value of the Kafka message. And, what's a `Serde`? The `Serde` word stands for `Serializer` and `Deserializer` and an instance of a `Serde` provides the logic to read and write a message from and to a Kafka topic.
+
+So, if we have a `Serde[R]` instance, we can deserialize and serialize messages of the type `R`. In this article we will use JSON format for the payload of Kafka messages. In Scala, one of the most used libraries to marshall and unmarshall JSON into objects is Circe. We already talk about Circe in the post [Unleashing the Power of HTTP Apis: The Http4s Library](https://blog.rockthejvm.com/http4s-tutorial/), when we used it together with the Http4s library.
+
+This time, we use Circe to create a `Serde` instance. The Scala kafka streams library comes with a lot of `Serde` instances for all the primitive types:
+
+```scala
+// Scala kafka-stream library
+object Serdes {
+  implicit def stringSerde: Serde[String]
+  implicit def longSerde: Serde[Long]
+  implicit def javaLongSerde: Serde[java.lang.Long]
+  implicit def byteArraySerde: Serde[Array[Byte]]
+  implicit def bytesSerde: Serde[org.apache.kafka.common.utils.Bytes]
+  implicit def byteBufferSerde: Serde[ByteBuffer]
+  implicit def shortSerde: Serde[Short]
+  implicit def javaShortSerde: Serde[java.lang.Short]
+  implicit def floatSerde: Serde[Float]
+  implicit def javaFloatSerde: Serde[java.lang.Float]
+  implicit def doubleSerde: Serde[Double]
+  implicit def javaDoubleSerde: Serde[java.lang.Double]
+  implicit def intSerde: Serde[Int]
+  implicit def javaIntegerSerde: Serde[java.lang.Integer]
+  implicit def uuidSerde: Serde[UUID] = JSerdes.UUID()
+  // ...
+}
+```
+
+In addition, the `Serdes` object defines the function `fromFn`, which we can use to build our custom instance of `Serde`:
+
+```scala
+// Scala kafka-stream library
+def fromFn[T >: Null](serializer: T => Array[Byte], deserializer: Array[Byte] => Option[T]): Serde[T]
+```
+
+Wiring all the information together, we can use the above function to create a `Serde` using Circe:
+
+```scala
+def serde[A >: Null : Decoder : Encoder]: Serde[A] = {
+  val serializer = (a: A) => a.asJson.noSpaces.getBytes
+  val deserializer = (aAsBytes: Array[Byte]) => {
+    val aAsString = new String(aAsBytes)
+    val aOrError = decode[A](aAsString)
+    aOrError match {
+      case Right(a) => Option(a)
+      case Left(error) =>
+        println(s"There was an error converting the message $aOrError, $error")
+        Option.empty
+    }
+  }
+  Serdes.fromFn[A](serializer, deserializer)
+}
+```
+
+The `serde` function constraints the type `A` to have Circe `Decoder` and `Encoder` implicitly defined in the scope. Then, it uses the type class `Encoder[A]` to create a JSON string: 
+
+```scala
+a.asJson
+``` 
+
+Moreover, the function uses the type class `Decoder[A]` to parse a JSON string into an object:
+
+```scala
+decode[A](aAsString)
+```
+
+Fortunately, we can autogenerate Circe `Encoder` and `Decoder` type classes using the import of the resource `import io.circe.generic.auto._`.
