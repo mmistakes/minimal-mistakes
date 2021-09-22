@@ -22,14 +22,16 @@ As described in the documentation
 ```
 Apache Pulsar is a cloud-native, distributed messaging and streaming platform that manages hundreds of billions of events per day.
 ```
-It was originally created at Yahoo back in the days to meet their enormous scaling requirements - the engineering team also reviewed solutions like Apache Kafka at the time, but didn’t quite meet their needs - and so Apache Pulsar was born. 
+It was originally created at Yahoo in 2013 to meet their enormous scaling requirements - the engineering team also reviewed solutions like Apache Kafka at the time (although those systems have grown a lot since), but didn’t quite meet their needs.
+They were missing features like geo-replication, multi-tenancy and offset management along with performance under message backlog conditions - and so Apache Pulsar was born. 
 Let’s take a closer look at what makes it stand out.
-1. **Unified Messaging and Streaming:** The first thing you should note about Apache Pulsar is that it serves as a unified platform for both messaging and streaming. These two terms are ofter confused to be the same, but there are fundamental differences. For example in a messaging use case you wanna consume a message as soon as it arrives and then the message will be deleted. On the other hand for a streaming use case you might want to keep your messages around and be able to replay them. 
-2. **Multi-Tenancy:** It was designed from the ground up as a multi-tenant system. Pulsar’s Logical Architecture consists of tenants, namespaces and topics. A namespace is a logical grouping of topics that live within the tenants. You can easily map your organization’s needs with a defined hierarchy and provide isolation, authentication, authorization, quotas as well as apply different policies on the namespace and topic levels. 
-3. **Geo-replication:** Apache Pulsar provides Geo-replication out of the box without the need of external tools. Alternatives like Apache Kafka rely on 3rd party solutions - i.e MirrorMaker - for such use cases which are also known to be problematic. With Pulsar you can overcome these issues with strong built-in Geo-replication and design disaster recovery solutions that meet your needs. 
-4. **Horizontally Scalable** Apache Pulsar’s Architecture is composed of three components. Pulsar Brokers is a stateless serving layer, Apache BookKeeper (bookie servers) serves as the storage layer and finally Apache Zookeeper as the metadata layer - although 2.8.0 release introduced the metadata layer as an alternative (reference: https://github.com/apache/pulsar/wiki/PIP-45%3A-Pluggable-metadata-interface). All of the different layers are decoupled from each other and this means that you can scale each component independently based on your needs. Apache BookKeeper uses the concept of distributed ledgers instead of a log-based abstraction which makes it really easy to scale, without the need for rebalancing. This makes Apache Pulsar a perfect fit for a cloud-native environments. 
-5. **Tiered Storage** As you process enormous volumes of data your topic might grow large without limit, which can become quite expensive over time. Apache Pulsar offers tiered storage and so as your topics grow, you can offload older data to some cheaper storage like Amazon S3, while your clients can still access the data and continue serving it as if nothing had changed. 
-6. **Pulsar Functions** Pulsar Functions are a lightweight serverless compute framework that allow you to deploy your own stream processing logic in a very simple way. Being lightweight it also makes it an excellent choice for iot edge analytics use cases. Combined with Function Mesh (https://functionmesh.io/) a new project recently open sourced by Streamnative (https://streamnative.io/) is what makes event stream processing truly cloud native by deploying everything as part of a mesh and leveraging native kubernetes features like autoscaling. 
+1. **Unified Messaging and Streaming:** The first thing you should note about Apache Pulsar is that it serves as a unified platform for both messaging and streaming. These two terms are ofter confused to be the same, but there are fundamental differences. For example in a messaging use case you want to consume a message as soon as it arrives and then the message will be deleted. On the other hand for a streaming use case you might want to keep your messages around and be able to replay them. 
+2. **Multi-Tenancy:** It was designed from the ground up as a multi-tenant system. You can think of multi-tenancy like different user groups, each operating in it's own isolated environment. Pulsar’s Logical Architecture consists of tenants, namespaces and topics. A namespace is a logical grouping of topics that live within the tenants. You can easily map your organization’s needs with a defined hierarchy and provide isolation, authentication, authorization, quotas as well as apply different policies on the namespace and topic levels. An example of multi-tenancy for an e-commerce business can be as follows, having different departments like WebBanking and Marketing as tenants and then those department members can operate within the tenant.
+![Alt text](../images/multitenancy.png "Multitenancy")
+4. **Geo-replication:** Geo-replication is all about providing disaster tolerance by having different clusters with copies of your data across geographically distributed data centers. Apache Pulsar provides Geo-replication out of the box without the need of external tools. Alternatives like Apache Kafka rely on 3rd party solutions - i.e MirrorMaker - for such use cases which are also known to be problematic. With Pulsar you can overcome these issues with strong built-in Geo-replication and design disaster recovery solutions that meet your needs. 
+5. **Horizontally Scalable** Apache Pulsar’s Architecture is composed of three components. Pulsar Brokers is a stateless serving layer, Apache BookKeeper (bookie servers) serves as the storage layer and finally Apache Zookeeper as the metadata layer - although 2.8.0 release introduced the metadata layer as an alternative (reference: https://github.com/apache/pulsar/wiki/PIP-45%3A-Pluggable-metadata-interface). All of the different layers are decoupled from each other and this means that you can scale each component independently based on your needs. Apache BookKeeper uses the concept of distributed ledgers instead of a log-based abstraction which makes it really easy to scale, without the need for rebalancing. This makes Apache Pulsar a perfect fit for a cloud-native environments. 
+6. **Tiered Storage** As you process enormous volumes of data your topic might grow large without limit, which can become quite expensive over time. Apache Pulsar offers tiered storage and so as your topics grow, you can offload older data to some cheaper storage like Amazon S3, while your clients can still access the data and continue serving it as if nothing had changed. 
+7. **Pulsar Functions** Pulsar Functions are a lightweight serverless compute framework that allow you to deploy your own stream processing logic in a very simple way. Being lightweight it also makes it an excellent choice for iot edge analytics use cases. Combined with Function Mesh (https://functionmesh.io/) a new project recently open sourced by Streamnative (https://streamnative.io/) is what makes event stream processing truly cloud native by deploying everything as part of a mesh and leveraging native kubernetes features like autoscaling. 
 
 There are more features of Apache Pulsar like a built-in Schema Registry, support for transactions and Pulsar SQL, but at this point lets see how you can actually get Pulsar up and running and create our very first Producers and Consumers in Scala.
 
@@ -59,6 +61,26 @@ libraryDependencies ++= Seq(
 )
 ```
 
+Then we will define the message payload for a sensor event as follows:
+```scala
+case class SensorEvent(sensorId: String,
+                         status: String,
+                         startupTime: Long,
+                         eventTime: Long,
+                         reading: Double)
+```
+
+We also need the following imports in scope:
+```scala
+import com.sksamuel.pulsar4s.{DefaultProducerMessage, EventTime, ProducerConfig, PulsarClient, Topic}
+import io.ipolyzos.models.SensorDomain
+import io.ipolyzos.models.SensorDomain.SensorEvent
+import io.circe.generic.auto._
+import com.sksamuel.pulsar4s.circe._
+import scala.concurrent.ExecutionContext.Implicits.global
+```
+
+
 The main entry point for all producing and consuming applications is the Pulsar Client, which handles the connection to the brokers. From within the Pulsar client you can also set up the authentication to your cluster as well as other important tuning configurations such as timeout settings and connection pools. You can simply instantiate the client by providing the service url you want to connect to.
 
 ```scala
@@ -85,16 +107,16 @@ val eventProducer = pulsarClient.producer[SensorEvent](ProducerConfig(
     sensorEvent, 
     eventTime = Some(EventTime(sensorEvent.eventTime)))
   
-  eventProducer.sendAsync(message) // user the async method to sent the message
+  eventProducer.sendAsync(message) // use the async method to sent the message
 }
 ```
 There are a few things to note here. 
 We create our producer by providing the necessary configuration - both producers and consumers are highly configurable and we can configure based on what makes sense for our use case.
-Here we provide the topic name, a name for our producer, we enable batching and say to the producer to block if the queue is full.
-By enabling batching, pulsar is going to use an internal queue to keep messages (default value is 1000) and send them over to the brokers as a batch after the queue gets full. 
+Here we provide the topic name, a name for our producer, we enable batching and tell the producer to block if the queue is full.
+By enabling batching, Pulsar is going to use an internal queue to keep messages (default value is 1000) and send them over to the brokers as a batch after the queue gets full. 
 As you can see on the sample code we are using the `.sendAsync()` method to send the messages to Pulsar. This will send the message without waiting for an acknowledgement and since we buffer messages to the queue this can overwhelm the client. 
 Using the option `blockIfQueueFull` applies backpressure and informs the producer to wait before sending more messages.
-Finally are create the message to send. Here we specify the `sensorId` as the key of the message, the value of `sensorEvent` and we also provide the `eventTime` i.e the time the event was produced.
+Finally we create the message to send. Here we specify the `sensorId` as the key of the message, the value of `sensorEvent` and we also provide the `eventTime` i.e the time the event was produced.
 
 At this point we have our producer in place to start sending messages to Pulsar. A complete implementation can be found [here](https://github.com/polyzos/pulsar-scala-streams/blob/main/src/main/scala/io/ipolyzos/producers/SensorEventProducer.scala)
 
