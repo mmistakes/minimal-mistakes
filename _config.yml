@@ -25,7 +25,7 @@ name                     : "Bowen Wilder"
 description              : "A collection of my photography portfolio over the years"
 url                      : "https://www.bowenwilder.com"
 baseurl                  : "/photography"
-repository               : Boborodono
+repository               : "boborodono/bowenwilder.com"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -108,9 +108,9 @@ analytics:
 # Site Author
 author:
   name             : "Bowen Wilder"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/bowenwilder.com/biopics/smokebowen.jpg"
   bio              : "I do what I can"
-  location         : "Austin,TX"
+  location         : "Austin, TX"
   email            : "bowen.wilder@gmail.com"
   links:
     - label: "Email"
