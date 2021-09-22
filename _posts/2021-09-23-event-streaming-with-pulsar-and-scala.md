@@ -4,7 +4,7 @@ date: 2021-09-23
 header:
     image: "/images/blog cover.jpg"
 tags: []
-excerpt: "Apache Pulsar is a cloud-native, distributed messaging and streaming platform that manages hundreds of billions of events per day. We'll learn what makes it a strong competitor to other solutions and use Scala along with the pulsar4s to interact with it."
+excerpt: "Apache Pulsar is a cloud-native, distributed messaging and streaming platform that manages hundreds of billions of events per day. We'll learn what makes it a strong competitor to other solutions and use Scala along with the pulsar4s client library to interact with it."
 ---
 
 
@@ -33,10 +33,10 @@ Let’s take a closer look at what makes it stand out.
 6. **Tiered Storage** As you process enormous volumes of data your topic might grow large without limit, which can become quite expensive over time. Apache Pulsar offers tiered storage and so as your topics grow, you can offload older data to some cheaper storage like Amazon S3, while your clients can still access the data and continue serving it as if nothing had changed. 
 7. **Pulsar Functions** Pulsar Functions are a lightweight serverless compute framework that allow you to deploy your own stream processing logic in a very simple way. Being lightweight it also makes it an excellent choice for iot edge analytics use cases. Combined with Function Mesh (https://functionmesh.io/) a new project recently open sourced by Streamnative (https://streamnative.io/) is what makes event stream processing truly cloud native by deploying everything as part of a mesh and leveraging native kubernetes features like autoscaling. 
 
-There are more features of Apache Pulsar like a built-in Schema Registry, support for transactions and Pulsar SQL, but at this point lets see how you can actually get Pulsar up and running and create our very first Producers and Consumers in Scala.
+There are more features of Apache Pulsar like a built-in Schema Registry, support for transactions and Pulsar SQL, but at this point let's see how you can actually get Pulsar up and running and create our very first Producers and Consumers in Scala.
 
 ## 2. Example Use Case and Cluster Setup
-As a simple example use case we will create a Producer that simulates sensor event readings, sends them over to a topic and then on the other end create a consumer that subscribes to that topic and just reads the incoming events. We will be using the [pulsar4s](https://github.com/sksamuel/pulsar4s) scala library for our implementation and we will run a Pulsar cluster using docker. In order to start a Pulsar cluster in standalone mode, run the following command within your terminal:
+As a simple example use case we will create a Producer that simulates sensor event readings, sends them over to a topic and then on the other end create a consumer that subscribes to that topic and just reads the incoming events. We will be using the [pulsar4s](https://github.com/sksamuel/pulsar4s) client library for our implementation and we will run a Pulsar cluster using [docker](https://www.docker.com/). In order to start a Pulsar cluster in standalone mode, run the following command within your terminal:
 ```shell
 docker run -it \
   -p 6650:6650 \
@@ -46,10 +46,10 @@ docker run -it \
   bin/pulsar standalone
 ```
 
-This command will start pulsar and bind the necessary ports to your local machine. With our cluster up and running, let's start creating our producers and consumers.
+This command will start Pulsar and bind the necessary ports to your local machine. With our cluster up and running, let's start creating our producers and consumers.
 
 ## 3. Apache Pulsar Producers
-First, we need the dependencies for the pulsar4s-core and pulsar4s-circe:
+First, we need the dependencies for the pulsar4s-core and pulsar4s-circe - so let's add the following to our `build.sbt` file:
 ```scala
 val pulsar4sVersion = "2.7.3"
 
