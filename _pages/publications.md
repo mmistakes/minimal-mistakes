@@ -9,6 +9,9 @@ toc_icon: "cog"
 Can also be found in [Google Scholar](https://scholar.google.co.jp/citations?user=CKzpArsAAAAJ&hl=ja) and [dblp](https://dblp.uni-trier.de/pers/hd/s/Shinoda:Kazutoshi)
 
 ## Conference/Workshop Papers (Refreed)
+* **Kazutoshi Shinoda**, Saku Sugawara, Akiko Aizawa: "Can Question Generation Debias Question Answering models?
+A Case Study on Question-Context Lexical Overlap" In Proceedings of the 3rd Workshop on Machine Reading for Question Answering, 2021. (to appear)
+  * [paper] [arXiv] [[data](https://github.com/KazutoshiShinoda/Synonym-Replacement)]
 * **Kazutoshi Shinoda**, Saku Sugawara, Akiko Aizawa: "Improving the Robustness of QA Models to Challenge Sets with Variational Question-Answer Pair Generation." In Proceedings of the ACL-IJCNLP 2021 Student Research Workshop, pages 197–214, Online, 2021. (acceptance rate = 39%)
   * [[paper](https://aclanthology.org/2021.acl-srw.21/)] [[arXiv](https://arxiv.org/abs/2004.03238)] [[code&data](https://github.com/KazutoshiShinoda/VQAG)] [[slides](https://github.com/KazutoshiShinoda/slides/blob/4c2bea8cf46953dd800b646c01cbdca5ccc9e640/ACL2021SRW.pdf)]
 * Kyosuke Nishida, Itsumi Saito, Kosuke Nishida, **Kazutoshi Shinoda**, Atsushi Otsuka, Hisako Asano, Junji Tomita: "Multi-style Generative Reading Comprehension". In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL), pages 2273–2284, Florence, Italy, 2019. (acceptance rate = 26%)
