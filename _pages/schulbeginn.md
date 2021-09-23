@@ -26,7 +26,7 @@ Die wichtigsten Daten zum Schuljahr **2022/23** in einem Überblick.
 | | Ihr Kind wurde im Zeitraum vom 1. Oktober 2015 bis zum 30. September 2016 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
 | Montag, 27.09.2021 bis Freitag, 08.10.2021  | [<i class="fa fa-file-text-o">&nbsp;</i>**Anmeldung**](#anmeldung) der Schulanfänger*innen im Sekretariat. |
 |  | **Hospitation:** Sie können in der Schule hospitieren und sich mit den Abläufen vertraut machen. Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren Sie hierzu einen Termin im Sekretariat. |
-| Dienstag, 31.07.2022 | Melden Sie Ihr Kind rechtzeitig zur [<i class="fa fa-child">&nbsp;</i>**Hortbetreuung (eFöB)**](#hort) an, so dass Ihr Kind am 01.08.2021 von unserem Hort betreut werden kann.  |
+| Dienstag, 31.07.2022 | Melden Sie Ihr Kind rechtzeitig zur [<i class="fa fa-child">&nbsp;</i>**Hortbetreuung (eFöB)**](#hort) an, so dass Ihr Kind am 01.08.2022 von unserem Hort betreut werden kann.  |
 | Samstag, 27.08.2022 | Endlich! Wir feiern die Einschulung in der Sporthalle |
 | Montag, 29.08.2022 | Der **erste Schultag.** |
 
