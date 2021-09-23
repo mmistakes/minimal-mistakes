@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "🌽 옥수수 개발 노트"
+title                    : "옥수수 개발 노트"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "옥수수🌽"
-description              : "쓸만한 옥수수를 수확하는 그 날까지"
+name                     : "Your Name"
+description              : "An amazing website."
 url                      : "https://oksusu-note.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -101,10 +101,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "옥수수🌽"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "쓸만한 옥수수를 수확하는 그 날까지"
+  location         : # "Somewhere"
   email            :
   links:
     - label: "Email"
