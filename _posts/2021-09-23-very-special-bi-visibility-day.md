@@ -7,7 +7,7 @@ Happy Bi Visibility Day 💖💜💙
 
 [Register](https://events.zoom.us/e/view/uRODlDU3TW2PtXCi_QQN5A) for my speech on Saturday, September 25 at 11:30am Pacific Time!
 
-This year, this day is especially important to me for two reasons. First, my dear friend Jan Bambach offered me the opportunity to be a guest writer this year for their celebration of Bi Visibility Day in Darmstadt, Germany. This is their first year hanging up the bi flag and celebrating Bi+ pride. Second, in just two days I will be speaking at the [International Bisexual Research Conference](https://www.bisexualresearch.com/conference) about my work on the Bisexual Pride Flag Emoji, followed by a breakout session. These two events culminate the past year's worth of my activism and I am so excited to share it with the rest of the world.
+This year, this day is especially important to me for two reasons. First, my dear friend Jan Bambach offered me the opportunity to be a guest writer this year for their celebration of Bi Visibility Day in Darmstadt, Germany. This is their first year hanging up the bi flag and celebrating Bi+ pride. Second, in just two days I will be speaking at the [International Bisexual Research Conference](https://www.bisexualresearch.com/conference) about my work on the Bisexual Pride Flag Emoji, followed by a breakout session. These two events culminate the [past year's](https://tannermarino.com/2020/bisexual-pride-flag-emoji-proposal/) worth of my activism and I am so excited to share it with the rest of the world.
 
 Here is my post in celebration of bi visibility day:
 
