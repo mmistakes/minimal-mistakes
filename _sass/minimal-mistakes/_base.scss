@@ -169,8 +169,9 @@ td > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
   font-size: 0.8em;
-  background: $code-background-color;
+  background: #263238;
   border-radius: $border-radius;
+  border: 2px solid #4884C7;
 
   &:before,
   &:after {
