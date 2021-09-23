@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Minsik Kim"
-  avatar           : "/assets/민식이미지.jpg"
+  avatar           : # "/assets/민식이미지.jpg"
   bio              : "I am a person who loves ML and DL"
   location         : "Pohang"
   email            : "studyfirston@naver.com"
