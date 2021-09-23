@@ -238,7 +238,7 @@ Let's say, instead, that we want to extract a stream of all the ordered products
 `UserId` a the message key. Since we want to map only the values of the Kafka messages, we can use the `mapValue` function:
 
 ```scala
-val purchasedListOfProductsStream: KStream[UserId, List[Product]] = usersOrdersStreams.mapValues { order =>
+val purchasedListOfProductsStream: KStream[UserId, List[Product]] = usersOrdersStreams.mapValues { order => 
   order.products
 }
 ```
@@ -250,3 +250,37 @@ val purchasedProductsStream: KStream[UserId, Product] = usersOrdersStreams.flatM
   order.products
 }
 ```
+
+Returning to our topology, we can represent each function we applied to the above `KStream` as an edge connecting the source `KStream` and the resulting `KStream`. So, until now, we saw an example of source processor, i.e. the `KStream` created directly using the `StreamBuilder`, and many examples of stream processor. Now, it's time to introduce sink processors.
+
+As the name said, a sink processor represents a terminal node of our stream topology. We can apply no other function to the stream after a sink is reached. Two examples of sink processors are the `foreach` and `to` methods.
+
+The `foreach` method applies to a stream a given function:
+
+```scala
+// Scala kafka-stream library
+def foreach(action: (K, V) => Unit): Unit
+```
+
+As an example, imagine we want to print all the product purchased by a user. We can call the ` foreach` method directly on the `purchasedProductsStream` stream:
+
+```scala
+purchasedProductsStream.foreach { (userId, product) => 
+  println(s"The user $userId purchased the product $product")
+}
+```
+
+Another interesting sink processor is the `to` method, which persist the messages of the stream into a new topic:
+
+```scala
+expensiveOrders.to("suspicious-orders")
+```
+
+In the above example, we are writing all the order with an amount greater than 1,000 Euro in a dedicated topic, probably to perform some kind of fraud analysis on them. Also, this time the Scala kafka stream library saves us to type a lot of code. In fact, the complete signature of the `to` method is the following:
+
+```scala
+// Scala kafka-stream library
+def to(topic: String)(implicit produced: Produced[K, V]): Unit
+```
+
+Again, the implicit instance of the `Produced` type, which is a wrapper around key and value `Serde` is produced automatically by the functions in the `ImplicitConversions` object, plus our `serde` implcit function.
