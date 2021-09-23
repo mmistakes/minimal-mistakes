@@ -105,11 +105,11 @@ author:
   avatar           : # "/assets/민식이미지.jpg"
   bio              : "I am a person who loves ML and DL"
   location         : "Pohang"
-  email            : "studyfirston@naver.com"
+  email            : studyfirston@naver.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your.studyfirston@naver.com"
+      # url: "mailto:your.studyfirston@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
