@@ -17,18 +17,18 @@ sidebar:
 # <i class="fa fa-calendar"></i> Termine rund um die Einschulung
 {: #termine}
 
-{% include outdated.md %}
+<!-- {% include outdated.md %} -->
 
-Die wichtigsten Daten zum Schuljahr **2021/22** in einem Überblick.
+Die wichtigsten Daten zum Schuljahr **2022/23** in einem Überblick.
 
 | Termine |  Veranstaltung |
 |---|---|
-| | Ihr Kind wurde im Zeitraum vom 1. Oktober 2014 bis zum 30. September 2015 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
-| Montag, 28.09.2020 bis Freitag, 09.10.2020  | [<i class="fa fa-file-text-o">&nbsp;</i>**Anmeldung**](#anmeldung) der Schulanfänger*innen im Sekretariat. |
+| | Ihr Kind wurde im Zeitraum vom 1. Oktober 2015 bis zum 30. September 2016 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
+| Montag, 27.09.2021 bis Freitag, 08.10.2021  | [<i class="fa fa-file-text-o">&nbsp;</i>**Anmeldung**](#anmeldung) der Schulanfänger*innen im Sekretariat. |
 |  | **Hospitation:** Sie können in der Schule hospitieren und sich mit den Abläufen vertraut machen. Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren Sie hierzu einen Termin im Sekretariat. |
-| Dienstag, 31.07.2021 | Melden Sie Ihr Kind rechtzeitig zur [<i class="fa fa-child">&nbsp;</i>**Hortbetreuung (eFöB)**](#hort) an, so dass Ihr Kind am 01.08.2021 von unserem Hort betreut werden kann.  |
-| Samstag, 14.08.2021 | Endlich! Wir feiern die Einschulung in der Sporthalle |
-| Montag, 16.08.2021 | Der **erste Schultag.** |
+| Dienstag, 31.07.2022 | Melden Sie Ihr Kind rechtzeitig zur [<i class="fa fa-child">&nbsp;</i>**Hortbetreuung (eFöB)**](#hort) an, so dass Ihr Kind am 01.08.2021 von unserem Hort betreut werden kann.  |
+| Samstag, 27.08.2022 | Endlich! Wir feiern die Einschulung in der Sporthalle |
+| Montag, 29.08.2022 | Der **erste Schultag.** |
 
 {{comment}}<!--
 **TODO**:
@@ -51,8 +51,8 @@ werden kann - können Sie direkt auf der Seite der [Senatsverwaltung für Bildun
 Jugend und Familie
 ](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/)
 nachsehen.<br/><br/>
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Info zur Anmeldung der Schulanfänger 2021/22](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/plakat_schulanmeldung_fuer_2021.pdf){: .btn .btn--success}
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Umfangreiche Informationen zum Schulbeginn 2021/22](https://www.berlin.de/sen/bildung/fachkraefte/einstellungen/nichtpaedagogisches-personal/schulanmeldung_so_gehts_2021.pdf){: .btn .btn--success}
+<!-- [<i class="fa fa-download">&nbsp;&nbsp;</i>Info zur Anmeldung der Schulanfänger 2021/22](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/plakat_schulanmeldung_fuer_2021.pdf){: .btn .btn--success} -->
+[<i class="fa fa-download">&nbsp;&nbsp;</i>Umfangreiche Informationen zum Schulbeginn 2022/23](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/2021_schulanmeldung.pdf){: .btn .btn--success}
 {: .notice--info}
 
 ---
@@ -102,7 +102,7 @@ und 54% Schüler haben, die von 13 Erziehern und 24 Lehrkräften betreut werden
 
 <!-- {% include outdated.md %} -->
 
-In der Zeit vom 28. September bis 09. Oktober 2019 melden Sie ihr
+In der Zeit vom 27. September bis 08. Oktober 2021 melden Sie ihr
 schulpflichtiges Kind in der [für Sie zuständigen
 Grundschule](https://www.bildung.berlin.de/Umkreissuche/) an.
 
