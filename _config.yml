@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "옥수수 개발 노트"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : ""
 description              : "An amazing website."
 url                      : "https://oksusu-note.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
