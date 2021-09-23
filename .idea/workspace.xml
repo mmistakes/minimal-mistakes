@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cec5a988-c885-4d67-bac0-f457795daa99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/_posts/ChunK/2021-09-23-실습2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +29,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../test/README" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../test/dbmovietest/DataBase_cinema" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -70,7 +69,9 @@
       <workItem from="1631874767796" duration="17000" />
       <workItem from="1632202136626" duration="3750000" />
       <workItem from="1632335057691" duration="317000" />
-      <workItem from="1632360716210" duration="4291000" />
+      <workItem from="1632360716210" duration="4849000" />
+      <workItem from="1632382898696" duration="131000" />
+      <workItem from="1632394192005" duration="437000" />
     </task>
     <servers />
   </component>
