@@ -10,6 +10,4 @@ title:  "첫번 째 블로그입니다!"
 I hope you like it!
 ㅋㅋ
 
-
-
-doksfpdk![teddynote_final](../images/2021-05-10-first-posting/teddynote_final.png)
+간단하죠? ㅎ
