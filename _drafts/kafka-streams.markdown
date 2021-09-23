@@ -206,4 +206,47 @@ Moreover, the function uses the type class `Decoder[A]` to parse a JSON string i
 decode[A](aAsString)
 ```
 
-Fortunately, we can autogenerate Circe `Encoder` and `Decoder` type classes using the import of the resource `import io.circe.generic.auto._`.
+Fortunately, we can autogenerate Circe `Encoder` and `Decoder` type classes importing `io.circe.generic.auto._`.
+
+Now that we defined the `serde` function, we can build a `Serde` for our `Order` class in a straightforward way. We usually put such classes in the companion object:
+
+```scala
+object Order {
+  implicit val orderSerde: Serde[Order] = serde[Order]
+}
+```
+
+We can go even further on the implicit generation of the `Serde` class. In fact, if we define the previous `serde` function as `implicit`, the Scala compiler will generate automatically the `orderSerde`, since the `Order` class fulfills all the needed context bounds.
+
+So, just as a recap, the following implicit resolution takes place:
+
+```
+Order => Decoder[Order] / Encoder[Order] => Serde[Order] => Consume[Order]
+```
+
+Why do we need `Serde` types to be implicit? The main reason is that the Scala kafka stream provides the object `ImplicitConversions`. Inside this `object`, we find a lot of useful conversion functions that, given `Serde` objects for the key and the values of a Kafka message, let us define a lot of other types, such as the above `Consumed`. Again, all these conversions save us writing a lot of boilerplate code, which we should have written in Java, for example.
+
+After the definition of the needed `Serde` types we can return to the definition of our streams. As we said, a `KStream[K, V]` represents a stream of Kafka messages. This type defines many useful functions on it, such as `filter`, `map`, `flatMap`, etc. Say, for example, that we want to filter all the orders with an amount greater than 1,000.00 euro. We can use the `filter` function (the library also provides a useful function `filterNot`):
+
+```scala
+val expensiveOrders: KStream[UserId, Order] = usersOrdersStreams.filter { (userId, order) =>
+  order.amount >= 1000
+}
+```
+
+Let's say, instead, that we want to extract a stream of all the ordered products, maintaining the
+`UserId` a the message key. Since we want to map only the values of the Kafka messages, we can use the `mapValue` function:
+
+```scala
+val purchasedListOfProductsStream: KStream[UserId, List[Product]] = usersOrdersStreams.mapValues { order =>
+  order.products
+}
+```
+
+Going further, we can obtain a `KStream[UserId, Product]` instead, just using the `flatMapValues` function:
+
+```scala
+val purchasedProductsStream: KStream[UserId, Product] = usersOrdersStreams.flatMapValues { order =>
+  order.products
+}
+```
