@@ -60,7 +60,7 @@ nachsehen.<br/><br/>
 # <i class="fa fa-picture-o"></i> Kurzporträt unserer Schule
 {: #portrait}
 
-{% include outdated.md %}
+<!-- {% include outdated.md %} -->
 
 Wir sind eine zweizügige, [verlässliche Halbtagsgrundschule](/hortbetreuung/#vhg)
 in Spandau mit rund 300 Kindern, die von 28
