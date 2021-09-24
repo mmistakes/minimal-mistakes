@@ -157,7 +157,11 @@ Currently, we have no visiting researchers working in our lab.
 
 ### Maud Beeckmans
 
-Maud will start her internship September 2021. More information will follow soon!
+<img src="/images/profile_pic_maud.jpg" alt="Maud Beeckmans" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
+
+Since I am fascinated by both computational modelling and statistics, I am happy to be able to do my research internship in this lab. The project I am working on relates to the estimation of free parameters, such as the learning rate, in computational models. More specifically, we investigate whether exact free parameter estimation is always necessary and how this varying need can be implemented in power estimations. The goal is to find the optimal balance between high power studies and a parsimonious design in different research contexts. In addition, I hope to learn much and acquire new skills during this research internship.
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Maud.Beeckmans@UGent.be" href="mailto:Maud.Beeckmans@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Maud.Beeckmans@UGent.be</a></div>
 
 ---
 
