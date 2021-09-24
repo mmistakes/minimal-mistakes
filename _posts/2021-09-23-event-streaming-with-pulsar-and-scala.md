@@ -7,7 +7,7 @@ tags: []
 excerpt: "Apache Pulsar is a cloud-native, distributed messaging and streaming platform that manages hundreds of billions of events per day. We'll learn what makes it a strong competitor to other solutions and use Scala along with the pulsar4s client library to interact with it."
 ---
 
-_This article is brought to you by [Giannis Polyzos](https://github.com/ipolyzos), one of the earliest students of Rock the JVM back in 2017. He's now a senior engineer working on Apache Pulsar, a promising new toolkit for high performance data streaming. In this article, he'll give an overview of what Pulsar is and why it's so good, and then walk you through a quick tutorial to get you started._
+_This article is brought to you by [Giannis Polyzos](https://github.com/polyzos), one of the earliest students of Rock the JVM back in 2017. He's now a senior engineer working on Apache Pulsar, a promising new toolkit for high performance data streaming. In this article, he'll give an overview of what Pulsar is and why it's so good, and then walk you through a quick tutorial to get you started._
 
 _Enter Giannis:_
 
