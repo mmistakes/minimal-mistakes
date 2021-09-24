@@ -2,9 +2,9 @@
 title: "[Git] git rebase --onto command"
 
 categories:
-
-- git tags:
-- [git,branch,rebase]
+  - git 
+tags:
+  - [git,branch,rebase]
 
 toc: true toc_sticky: true
 
