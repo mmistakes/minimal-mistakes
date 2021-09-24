@@ -283,4 +283,35 @@ In the above example, we are writing all the order with an amount greater than 1
 def to(topic: String)(implicit produced: Produced[K, V]): Unit
 ```
 
-Again, the implicit instance of the `Produced` type, which is a wrapper around key and value `Serde` is produced automatically by the functions in the `ImplicitConversions` object, plus our `serde` implcit function.
+Again, the implicit instance of the `Produced` type, which is a wrapper around key and value `Serde` is produced automatically by the functions in the `ImplicitConversions` object, plus our `serde` implicit function.
+
+The Kafka stream libraries offers two more kind of processors: `KTable`, and `GlobalKTable`. We build both processors on top of a _compacted topic_. We can think of a compacted topic as a table, indexed by the messages' key. Messages are not deleted by the broker using a time to live policy. Every time a new message arrives, a "row" it's added to the "table" if the key were not present, or the value associated with the key is updated otherwise. To delete a "row" from the "table", we just send to the topic a `null` value associated with the selected key.
+
+To make a topic compacted, we need to specify it during its creation:
+
+```shell
+kafka-topics \
+  --bootstrap-server localhost:9092 \
+  --topic discount-profiles-by-user \
+  --create \
+  --config "cleanup.policy=compact"
+```
+
+The above topic will be the starting point to extend our Kafka stream application. In fact, the messages in it has a `UserId` as key, and a discount profile as value. A discount profile tells for each user which is the discount the e-commerce site could apply to the orders of a user. For sake of simplicity, we represent profiles as simple `String`:
+
+```scala
+type Profile = String
+```
+
+Which is the difference between the two? Well, the difference is that a `KTable` is partitioned between the nodes of the Kafka cluster. However, every node of the cluster receive a full copy of the messages of a `GlobalKTable`. So, be careful with `GlobalKTable`.
+
+Creating a `KTable` or a `GlobalKTable` it's easy. As an example, let's create a `KTable` on top of the `discount-profiles-by-user` topic. As the users' number of our e-commerce might be high, we need to partition the information among the nodes of the Kafka cluster. So, let's create the `KTable`:
+
+```scala
+final val DiscountProfilesByUserTopic = "discount-profiles-by-user"
+
+val userProfilesTable: KTable[UserId, Profile] =
+  builder.table[UserId, Profile](DiscountProfilesByUserTopic)
+```
+
+TODO
