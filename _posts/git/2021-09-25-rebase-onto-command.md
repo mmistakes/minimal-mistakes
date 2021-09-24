@@ -6,8 +6,8 @@ categories:
 tags:
   - [git,branch,rebase]
 
-toc: true toc_sticky: true
-
+toc: true
+toc_sticky: true
 
 ---
 
