@@ -32,6 +32,7 @@ onto it is good to know what are the possible behaviors for both
 commands. Git rebase allow us to move our commits on top of the
 selected branch
 
+![image](https://user-images.githubusercontent.com/69495129/134707748-f7bca28d-3eae-4c4a-8ad4-ddf0978f6281.png)
 
 
 `git rebase –onto` is more **precises**. It allows us to choose `specific
