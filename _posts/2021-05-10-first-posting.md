@@ -1,7 +1,6 @@
 ---
 layout: single
 title:  "첫번 째 블로그입니다!"
-comment: true
 ---
 
 # 와우~
