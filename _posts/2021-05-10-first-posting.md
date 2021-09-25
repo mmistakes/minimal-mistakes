@@ -4,14 +4,36 @@ title:  "첫번 째 블로그입니다!"
 categories: coding
 tag: [python, blog, jekyll]
 toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
 ---
 
+**[공지사항]** [지킬블로그 신규 업데이트 안내 드립니다.](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
+{: .notice--danger}
+
+<div class="notice--success">
+<h4>공지사항입니다.</h4>
+<ul>
+    <li>공지사항 순서 1</li>
+    <li>공지사항 순서 2</li>
+    <li>공지사항 순서 3</li>
+</ul>
+</div>
+
+
+[버튼입니다](https://google.com){: .btn .btn--danger}
+
+
+{% include video id="ACzFIAOsfpM" provider="youtube" %}
 
 
 # 와우~
 
 **Hello world**, this is my first Jekyll blog post.
 
+**I hope you like it!**
+I hope you like it!
 I hope you like it!
 ㅋㅋ
 
@@ -65,16 +87,13 @@ class <className>:
 
 ### 이미지 세부 목차2
 
-이미지입니다.
+이미지입니다.{: .notice}
 
 ### 이미지 세부 목차3
 
 이미지입니다.
 
-간단하죠? ㅎ
-
-![샘플 이미지 입니다.](../images/2021-05-10-first-posting/teddynote.png)
-
+![샘플 이미지 입니다.](https://images.unsplash.com/photo-1579353977828-2a4eab540b9a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2FtcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80)
 
 
 # 와우2
