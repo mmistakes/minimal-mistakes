@@ -238,7 +238,11 @@ Order => Decoder[Order] / Encoder[Order] => Serde[Order] => Consume[Order]
 
 Why do we need `Serde` types to be implicit? The main reason is that the Scala kafka stream provides the object `ImplicitConversions`. Inside this `object`, we find a lot of useful conversion functions that, given `Serde` objects for the key and the values of a Kafka message, let us define a lot of other types, such as the above `Consumed`. Again, all these conversions save us writing a lot of boilerplate code, which we should have written in Java, for example.
 
-After the definition of the needed `Serde` types we can return to the definition of our streams. As we said, a `KStream[K, V]` represents a stream of Kafka messages. This type defines many useful functions on it, such as `filter`, `map`, `flatMap`, etc. Say, for example, that we want to filter all the orders with an amount greater than 1,000.00 euro. We can use the `filter` function (the library also provides a useful function `filterNot`):
+After the definition of the needed `Serde` types we can return to the definition of our streams. As we said, a `KStream[K, V]` represents a stream of Kafka messages. This type defines many useful functions on it, which can grouped into two different families: stateless transformations, and stateful transformation. While the former use only in memory data structures, the latter require to save some information inside the so called _state store_.
+
+#### 4.1.1. Stateless Transformations
+
+In the group of stateless transformation we find the classic function defined on streams, such as `filter`, `map`, `flatMap`, etc. Say, for example, that we want to filter all the orders with an amount greater than 1,000.00 euro. We can use the `filter` function (the library also provides a useful function `filterNot`):
 
 ```scala
 val expensiveOrders: KStream[UserId, Order] = usersOrdersStreams.filter { (userId, order) =>
@@ -263,9 +267,7 @@ val purchasedProductsStream: KStream[UserId, Product] = usersOrdersStreams.flatM
 }
 ```
 
-Returning to our topology, we can represent each function we applied to the above `KStream` as an edge connecting the source `KStream` and the resulting `KStream`. So, until now, we saw an example of source processor, i.e. the `KStream` created directly using the `StreamBuilder`, and many examples of stream processor. Now, it's time to introduce sink processors.
-
-As the name said, a sink processor represents a terminal node of our stream topology. We can apply no other function to the stream after a sink is reached. Two examples of sink processors are the `foreach` and `to` methods.
+Moreover, we also considered stateless transformations terminal operations or sinks. They represent a terminal node of our stream topology. We can apply no other function to the stream after a sink is reached. Two examples of sink processors are the `foreach` and `to` methods.
 
 The `foreach` method applies to a stream a given function:
 
@@ -296,6 +298,27 @@ def to(topic: String)(implicit produced: Produced[K, V]): Unit
 ```
 
 Again, the implicit instance of the `Produced` type, which is a wrapper around key and value `Serde` is produced automatically by the functions in the `ImplicitConversions` object, plus our `serde` implicit function.
+
+Last but not least, we have grouping, which groups different values under the same key or a different key. We group values maintaining the original key using the `groupByKey` transformation:
+
+```scala
+// Scala kafka-stream library
+def groupByKey(implicit grouped: Grouped[K, V]): KGroupedStream[K, V]
+```
+
+As usual, the `Grouped` object carries the `Serde` types for keys and values, and it's automatically derived by the compiler is we use the Scala Kafka stream library. 
+
+As an example, imagine we want to group the `purchasedProductsStream` so that we can perform some aggregated operation later. In detail, we want to group each user with the products she purchased:
+
+```scala
+val productsPurchasedByUsers: KGroupedStream[UserId, Product] = purchasedProductsStream.groupByKey
+```
+
+As we may notice, we introduced a new type of stream, the `KGroupedStream`. This type defines only stateful transformation on it. So, for this reason we say that grouping is the precondition to stateless transformations.
+
+However, if we want to change the key of the grouped information, we can call use the `groupBy` transformation:
+
+// TODO
 
 ### 4.2. Building `KTable` and `GlobalKTable` Processors
 
