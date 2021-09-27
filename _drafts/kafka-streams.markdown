@@ -329,6 +329,32 @@ In the above example, we are grouping products by the first letter of the `userI
 
 So, if the marked stream will be materialized in a topic or in a state store (more to come on state stores) by a next transformation, the contained messages will be potentially moved to another node of the Kafka cluster, which owns the partition containing the messages with the new key. Re-partitioning is an operation that should be done with caution, because it could generate a heavy network load.
 
+#### 4.1.2. Stateful Transformations
+
+As the name of this type of transformations suggested, the Kafka stream library needs to maintain some kind of state to manage them, and it's called _state store_. The state store, which is automatically managed by the library if we use the Stream DSL, can be an in memory hashmap or an instance of [RocksDB](http://rocksdb.org/), or any other convenient data structure.
+
+Each state store is local to the node containing the instance of the stream application, and refers to the messages concerning the partitions owned by the node. So, the global state of a stream application is the sum of all the state of the single nodes. Kafka Streams offers fault-tolerance and automatic recovery for local state stores.
+
+Now that we know about the existence of state stores, we can start talking of stateful transformations. There many types of them, such as:
+
+ - Aggregations
+ - Aggregations using windowing
+ - Joins
+
+We will treat joins in a dedicated section. However, we can make some examples of aggregations. As we saw, we previously obtained a `KGroupedStream` containing the products purchased by each user:
+
+```scala
+val productsPurchasedByUsers: KGroupedStream[UserId, Product] = purchasedProductsStream.groupByKey
+```
+
+Now we can count how many products purchased each user, by calling the `count` transformation:
+
+```scala
+val numberOfProductsByUser: KTable[UserId, Long] = productsPurchasedByUsers.count()
+```
+
+TODO
+
 ### 4.2. Building `KTable` and `GlobalKTable` Processors
 
 The Kafka stream libraries offers two more kind of processors: `KTable`, and `GlobalKTable`. We build both processors on top of a _compacted topic_. We can think of a compacted topic as a table, indexed by the messages' key. Messages are not deleted by the broker using a time to live policy. Every time a new message arrives, a "row" it's added to the "table" if the key were not present, or the value associated with the key is updated otherwise. To delete a "row" from the "table", we just send to the topic a `null` value associated with the selected key.
