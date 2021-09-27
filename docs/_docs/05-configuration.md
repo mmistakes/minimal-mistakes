@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2020-08-04T11:26:21-04:00
+last_modified_at: 2021-05-11T10:40:42-04:00
 toc: true
 ---
 
@@ -131,7 +131,7 @@ You also have the option of customizing the separation character used in SEO-fri
 
 _Example:_ `title_separator: "|"` would produce page titles like `Sample Page | My Awesome Site`.
 
-**Note:** Long site titles have been known to break the masthead layout. Avoid adding a long "tagline" to the title prevent this from happening eg. `My Awesome Site is the Best Because I Say So".
+**Note:** Long site titles have been known to break the masthead layout. Avoid adding a long "tagline" to the title prevent this from happening eg. `My Awesome Site is the Best Because I Say So`.
 {: .notice--warning}
 
 ### Site subtitle
@@ -161,7 +161,7 @@ The base hostname and protocol for your site. If you're hosting with GitHub Page
 
 GitHub Pages now [forces `https://` for new sites](https://help.github.com/articles/securing-your-github-pages-site-with-https/) so be mindful of that when setting your URL to avoid mixed-content warnings.
 
-**Note:** Jekyll 3.3 overrides this value with `url: http://localhost:4000` when running `jekyll serve` locally in development. If you want to avoid this behavior set `JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
+**Note:** Jekyll 3.3 overrides this value with `url: http://localhost:4000` when running `jekyll serve` locally in development. If you want to avoid this behavior set `JEKYLL_ENV=production` to [force the environment](https://jekyllrb.com/docs/configuration/environments/) to production.
 {: .notice--warning}
 
 ### Site base URL
@@ -285,6 +285,12 @@ defaults:
 
 To disable post date for a post, add `show_date: false` to its YAML Front Matter, overriding what was set in `_config.yml`.
 
+When dates are shown on blog posts or pages, a date format will be chosen to format the date string. The default format is `"%B %-d, %Y"`, which will be displayed like "February 24, 2016". You can choose your date format by referencing this [cheat sheet](https://www.shortcutfoo.com/app/dojos/ruby-date-format-strftime/cheatsheet). For example, use your date format in `_config.yml`.
+
+```yaml
+date_format: "%Y-%m-%d"
+```
+
 ### Reading time
 
 Enable estimated reading time snippets with `read_time: true` in YAML Front Matter. `200` has been set as the default words per minute value --- which can be changed by adjusting `words_per_minute:` in `_config.yml`.
@@ -327,16 +333,17 @@ For example,
 
 ### Comments
 
-[**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), [**utterances**](https://utteranc.es/), and static-based commenting via [**Staticman**](https://staticman.net/) are built into the theme. First set the comment provider you'd like to use:
+[**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), [**utterances**](https://utteranc.es/), [**giscus**](https://giscus.app/) and static-based commenting via [**Staticman**](https://staticman.net/) are built into the theme. First set the comment provider you'd like to use:
 
 | Name             | Comment Provider          |
 | ---------------- | ------------------------- |
 | **disqus**       | Disqus                    |
 | **discourse**    | Discourse                 |
 | **facebook**     | Facebook Comments         |
-| **staticman_v2** | Staticman v2              |
+| **staticman_v2** | Staticman v2 / v3         |
 | **staticman**    | Staticman v1 (deprecated) |
 | **utterances**   | utterances                |
+| **giscus**       | giscus                    |
 | **custom**       | Other                     |
 
 Then add `comments: true` to each document you want comments visible on.
@@ -418,6 +425,35 @@ comments:
     issue_term: "pathname"
 ```
 
+#### giscus comments
+
+To use giscus you will need to [install the app](https://github.com/apps/giscus) to your GitHub repository.
+
+The next step is to go to <https://giscus.app> and fill out the desired settings. This will generate JavaScript that will provide you with the settings you will need to configure things below.
+
+You'll need to ensure you've added the following to `_config.yml`:
+
+```yaml
+repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+```
+
+**Note:** Make sure the repo is public, otherwise your readers will not be able to view the issues/comments. The [discussions feature](https://docs.github.com/en/discussions) also needs to be active on your repo.
+{: .notice--warning}
+
+To enable giscus on the front end set `comments.provider` and the other additional options.
+
+```yaml
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id              : # Shown during giscus setup at https://giscus.app
+    category_name        : # Full text name of the category
+    category_id          : # Shown during giscus setup at https://giscus.app
+    discussion_term      : # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : # '1' for enabled (default), '0' for disabled
+    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+```
+
 #### Static-based comments via Staticman
 
 Transform user comments into `_data` files that live inside of your GitHub repository by enabling Staticman.
@@ -425,13 +461,16 @@ Transform user comments into `_data` files that live inside of your GitHub repos
 **Note:** Looking to migrate comments from a WordPress based site? Give [this tool](https://github.com/arthurlacoste/wordpress-comments-jekyll-staticman) a try.
 {: .notice--info}
 
-**Note:** Please note that as of September 2018, Staticman is reaching GitHub API limits due to its popularity, and it is recommended by its maintainer that users deploy their own instances for production (use `site.staticman.endpoint`).
+**Note:** Please note that as of September 2018, Staticman is reaching GitHub API limits due to its popularity, and it is recommended by its maintainer that users deploy their own instances for production (use `site.staticman.endpoint`).  Consult the Staticman "[Get Started](https://staticman.net/docs/index.html)" guide for more info.
 {: .notice--warning}
 
-##### Add Staticman as a collaborator
+##### Add Staticman as a collaborator on GitHub (legacy)
 
-1. Allow Staticman push access to your GitHub repository by clicking on **Settings**, then the **Collaborators** tab and adding `staticmanapp` as a collaborator.
-2. To accept the pending invitation visit: `https://api.staticman.net/v2/connect/{your GitHub username}/{your repository name}`. Consult the Staticman "[Get Started](https://staticman.net/docs/index.html)" guide for more info.
+1. Allow Staticman push access to your GitHub repository by clicking on **Settings**, then the **Collaborators** tab and adding your GitHub bot as a collaborator.
+2. To accept the pending invitation visit: `https://{your Staticman v2/3 API}/v[2|3]/connect/{your GitHub username}/{your repository name}`.
+
+**Note:** The new GitHub App authentication method is recommended for GitHub repositories to avoid the API rate limit.
+{: .notice--info}
 
 ##### Configure Staticman
 
@@ -524,7 +563,7 @@ By default comment moderation is enabled in `staticman.yml`. As new comments are
 
 To skip this moderation step simply set `moderation: false`.
 
-**ProTip:** Create a GitHub webhook that sends a `POST` request to the following payload URL `https://api.staticman.net/v2/webhook` and triggers a "Pull request" event to delete Staticman branches on merge.
+**ProTip:** Create a GitHub webhook that sends a `POST` request to the following payload URL `https://{your Staticman API URL}/v2/webhook` and triggers a "Pull request" event to delete Staticman branches on merge.
 {: .notice--info}
 
 ![pull-request webhook]({{ "/assets/images/mm-staticman-pr-webhook.jpg" | relative_url }})
@@ -713,6 +752,22 @@ Into `_config.yml`
 
 ```yaml
 yandex_site_verification: "2132801JL"
+```
+
+#### Baidu
+
+There are several ways to verify site ownership — the easiest is adding an authentication code to your config file.
+
+Copy and paste the string inside of `content`:
+
+```html
+<meta name="baidu-site-verification" content="code-iA0wScWXN1" />
+```
+
+Into `_config.yml`
+
+```yaml
+baidu_site_verification: "code-iA0wScWXN1"
 ```
 
 #### Twitter Cards and Facebook Open Graph

@@ -16,7 +16,7 @@
 {% endcapture %}
 {% assign video_src = video_src | strip %}
 
-<!-- Courtesy of embedresponsively.com //-->
+<!-- Courtesy of embedresponsively.com -->
 {% unless video_src == "" %}
   <div class="responsive-video-container">
     <iframe src="{{ video_src }}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
