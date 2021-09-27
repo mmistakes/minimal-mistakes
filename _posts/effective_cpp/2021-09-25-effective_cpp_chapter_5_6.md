@@ -43,7 +43,7 @@ private:
 #### 클래스 전방선언
 * * *
 
-클래스 전방 선언이라는 개념에 대해 알아보겠습니다. 클래스 전방 선언은 불필요한 #include를 대체하는 방법입니다. 아래 예제를 통해 알아봅시다.
+클래스 전방 선언이라는 개념에 대해 알아보겠습니다. 클래스 전방 선언은 불필요한 컴파일 의존성을 줄일 수 있는 방법입니다. 아래 예제를 통해 알아봅시다.
 
 ```c++
 /*
@@ -146,7 +146,7 @@ public:
 
 ```
 
-이렇게 설계해두며느 Person 클래스에 대한 구현 클래스 부분은 언제든지 마음대로 고칠 수 있고, Person의 사용자 쪽에서는 컴파일을 다시할 필요가 없습니다. 게다가 Person이 어떻게 구현되어 있는지를 들여다볼 수 없기 때문에, 구현 세부 사항에 발을 걸치는 코드를 작성할 여지가 사라집니다. 그야말로 인터페이스와 구현이 뼈와 살이 분리되듯 떨어지는 것 입니다.  
+이렇게 설계해두며느 Person 클래스에 대한 구현 클래스 부분은 언제든지 마음대로 고칠 수 있고, Person의 사용자 쪽에서는 컴파일을 다시할 필요가 없습니다. 게다가 Person이 어떻게 구현되어 있는지를 들여다볼 수 없기 때문에, 구현 세부 사항에 발을 걸치는 코드를 작성할 여지가 사라집니다. 그야말로 인터페이스와 구현이 뼈와 살이 분리되듯 떨어지는 것 입니다. 이와 같은 클래스 구현 방식을 handle 클래스라고 합니다.
 
 이렇게 인터페이스와 구현을 둘로 나누는 열쇠는 정의부에 대한 의존성을 선언부에 대한 의존성으로 바꾸어 놓는데 있습니다.
 **객체 참조자 및 포인터로 충분한 경우에는 객체를 직접 쓰지 않습니다**
@@ -156,15 +156,82 @@ public:
 
 #### 인터페이스 클래스(Interface Class) / Factory 함수.
 * * *
+handle 클래스 방식이 아닌 다른 방법 중에는 인터페이스 클래스를 사용하는 방법이 있습니다. 아래와 같이 Factory 패턴으로 구현하는 방법인데요. 코드를 보시면 어떻게 사용하는 방식인지 바로 아실 수 있습니다.
+
 ```c++
+/*
+* 선언부
+*/
+class Person
+{
+public:
+    virtual ~Person();
+    virtual std::string name() const = 0;
+    virtual std::string birthDate() const = 0;
+    virtual std::string address() const = 0;
+    ...
+    static std::shared_ptr<Person> create(const std::string& name, const Date& birthday, const Address& addr);
+    ...
+};
+```
+```c++
+/*
+* 정의부 - 1
+*/
+class RealPerson : public Person
+{
+public:
+    RealPerson(const std::string& name, const Date& birthday, const Address& addr)
+    : theName(name), theBirthDate(birthday), theAddress(addr)
+    {}
+
+    virtual ~RealPerson() {}
+    std::string name() const;
+    std::string birthDate() const;
+    std::string address() const;
+
+private:
+    std::string theName;
+    Date theBirthDate;
+    Address theAddress;
+}
 ```
 
-#### export 키워드
-* * *
+```c++
+/*
+* 정의부 - 2
+*/
+std::shared_ptr<Person> Person::create(const std::string& name, const Date& birthday, const Address& addr)
+{
+    return std::shared_ptr<Person>(new RealPerson(name, birthday, addr));
+}
+```
+```c++
+...
+...
+std::string name;
+Date dateOfBirth;
+Address address;
 
-export 키워드 본문.
+std::shared_ptr<Person> person(Person::create(name, dateOfBirth, address));
+std::cout << person->name() << std::endl;
+std::cout << person->birthDate() << std::endl;
+std::cout << person->address() << std::endl; 
+...
+...
+// 위에서 생성한 객체는 person이 유효범위를 벗어나면 자동으로 delete 됩니다.
+```
 
-#### 정의부가 아닌 선언부에 대해 의존성을 갖도록 만들자
-* * *
-- 객체 참조자 및 포인터로 충분한 경우에는 객체를 직접 사용하지 않습니다.
-- 할 수 있으면 클래스 정의 대신 클래스 선언에 최대한 의존하도록 만듭니다.
+#### ***End Note***
+***
+- 컴파일 의존성을 최소화하는 작업의 배경이 되는 가장 기본적인 아이디어는 '정의' 대신에 '선언'에 의존하게 만들자는 것입니다. 이 아이디어에 기반한 두 가지 접근 방법은 핸들 클래스와 인터페이스 클래스입니다.
+- 라이브러리 헤더는 그 자체로 모든 것을 갖추어야 하며 선언부만 갖고 있는 형태여야 합니다. 이 규칙은 템플릿이 쓰이거나 쓰이지 않거나 동일하게 적용합니다.
+
+#### Reference 
+***  
+- ***Effective C++ (Scott Meyers)***
+
+<body translate="no" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  <div id="mouse_no" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  </div>
+</body>
