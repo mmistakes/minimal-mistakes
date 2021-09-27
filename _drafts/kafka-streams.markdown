@@ -316,9 +316,18 @@ val productsPurchasedByUsers: KGroupedStream[UserId, Product] = purchasedProduct
 
 As we may notice, we introduced a new type of stream, the `KGroupedStream`. This type defines only stateful transformation on it. So, for this reason we say that grouping is the precondition to stateless transformations.
 
-However, if we want to change the key of the grouped information, we can call use the `groupBy` transformation:
+However, if we want to change the key of the grouped information, we can use the `groupBy` transformation:
 
-// TODO
+```scala
+val purchasedByFirstLetter: KGroupedStream[String, Product] =
+  purchasedProductsStream.groupBy[String] { (userId, products) =>
+    userId.charAt(0).toLower.toString
+  }
+```
+
+In the above example, we are grouping products by the first letter of the `userId` of the user who purchased them. From the code, it seems a harmless operation, as we are only changing the key of the stream. However, since Kafka partitioned topics by key, we are marking the stream for re-partitioning. 
+
+So, if the marked stream will be materialized in a topic or in a state store (more to come on state stores) by a next transformation, the contained messages will be potentially moved to another node of the Kafka cluster, which owns the partition containing the messages with the new key. Re-partitioning is an operation that should be done with caution, because it could generate a heavy network load.
 
 ### 4.2. Building `KTable` and `GlobalKTable` Processors
 
