@@ -17,13 +17,13 @@ html {
   @include breakpoint($large) {
 //     font-size: 20px;
     font-size: 18px;
-    
+
   }
 
   @include breakpoint($x-large) {
 //     font-size: 22px;
     font-size: 18px;
-    
+
   }
 
   -webkit-text-size-adjust: 100%;
@@ -124,6 +124,8 @@ img {
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
+  border: 3px solid $base01;
+  border-radius: 4px;
 }
 
 /* Prevent max-width from affecting Google Maps */
