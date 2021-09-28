@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Sandra Nguemto"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/idphoto2.jpg"
   bio              : "Mathematics PhD Candidate"
   location         : "Knoxville, Tennessee"
   email            : 
