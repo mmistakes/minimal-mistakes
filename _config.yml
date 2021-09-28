@@ -16,7 +16,7 @@ minimal_mistakes_skin    :  "contrast" # "air", "aqua", "dark", "dirt", "neon", 
 
 # Site Settings
 locale                   : "en-US"
-title                    : " "
+title                    : "Sandra Nguemto "
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Sandra Nguemto"
@@ -101,7 +101,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Sandra Nguemto"
+  name             : " "
   avatar           : "assets/images/idphoto2.PNG" 
   bio              : "Mathematics PhD Candidate"
   location         : "Knoxville, Tennessee"
