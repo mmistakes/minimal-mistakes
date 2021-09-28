@@ -240,7 +240,80 @@ Why do we need `Serde` types to be implicit? The main reason is that the Scala k
 
 After the definition of the needed `Serde` types we can return to the definition of our streams. As we said, a `KStream[K, V]` represents a stream of Kafka messages. This type defines many useful functions on it, which can grouped into two different families: stateless transformations, and stateful transformation. While the former use only in memory data structures, the latter require to save some information inside the so called _state store_.
 
-#### 4.1.1. Stateless Transformations
+### 4.2. Building `KTable` and `GlobalKTable`
+
+The Kafka stream libraries offers two more kind of processors: `KTable`, and `GlobalKTable`. We build both processors on top of a _compacted topic_. We can think of a compacted topic as a table, indexed by the messages' key. Messages are not deleted by the broker using a time to live policy. Every time a new message arrives, a "row" it's added to the "table" if the key were not present, or the value associated with the key is updated otherwise. To delete a "row" from the "table", we just send to the topic a `null` value associated with the selected key.
+
+To make a topic compacted, we need to specify it during its creation:
+
+```shell
+kafka-topics \
+  --bootstrap-server localhost:9092 \
+  --topic discount-profiles-by-user \
+  --create \
+  --config "cleanup.policy=compact"
+```
+
+The above topic will be the starting point to extend our Kafka stream application. In fact, the messages in it has a `UserId` as key, and a discount profile as value. A discount profile tells for each user which is the discount the e-commerce site could apply to the orders of a user. For sake of simplicity, we represent profiles as simple `String`:
+
+```scala
+type Profile = String
+```
+
+Which is the difference between the two? Well, the difference is that a `KTable` is partitioned between the nodes of the Kafka cluster. However, every node of the cluster receive a full copy of the messages of a `GlobalKTable`. So, be careful with `GlobalKTable`.
+
+Creating a `KTable` or a `GlobalKTable` it's easy. As an example, let's create a `KTable` on top of the `discount-profiles-by-user` topic. Returning to our example, as the users' number of our e-commerce might be high, we need to partition the information among the nodes of the Kafka cluster. So, let's create the `KTable`:
+
+```scala
+final val DiscountProfilesByUserTopic = "discount-profiles-by-user"
+
+val userProfilesTable: KTable[UserId, Profile] =
+  builder.table[UserId, Profile](DiscountProfilesByUserTopic)
+```
+
+As you can imagine, there is more behind the scene than what we can see. Again, using the chain of implicit conversions, the Scala Kafka stream library is creating for us an instance of the `Consumed` class, which is mainly used to pass `Serde` instances around. In this particular case, we are using the `Serdes.stringSerde` implicit object, both for the key and for the value of the topic.
+
+The methods defined on the `KTable` type are more or less the same as those defined on a `KStream`. In addition, a `KTable` can be easily converted into a `KStream` using the following method (or one of its variants):
+
+```scala
+// Scala kafka-stream library
+def toStream: KStream[K, V]
+```
+
+As we can imagine, creating a `GlobalKTable` is easy as well, we only need a compacted topic containing a number of keys that is affordable for each the cluster node:
+
+```shell
+kafka-topics \
+  --bootstrap-server localhost:9092 \
+  --topic discounts \
+  --create \
+  --config "cleanup.policy=compact"
+```
+
+We can think the  number of different instances of discount `Profile` is very low. So. let's create a `GlobalKTable` on top of a topic mapping each discount profile to an effective discount. First, we define the type modelling a discount:
+
+```scala
+final val DiscountsTopic = "discounts"
+
+case class Discount(profile: Profile, amount: Double)
+```
+
+Then, we can create an instance of the needed `GlobalKTable`:
+
+```scala
+val discountProfilesGTable: GlobalKTable[Profile, Discount] = 
+  builder.globalTable[Profile, Discount](DiscountsTopic)
+```
+
+Again, under the hood, an instance of a `Consumed` object is created by the library.
+
+The `GlobalKTable` type doesn't define any interesting method. So, why should we ever create an instance of a `GlobalKTable`? The answer is in the word "joins". But first, we need to introduce streams transformations.
+
+## 5. Streams Transformations
+
+Once obtained a `KStream` or a `KTable`, we can transform the information they contain using _transformations_. The Kafka stream library offers two kind of transformations: stateless, and stateful. While the former executes only in memory, the latter requires managing a state to perform. 
+
+#### 5.1. Stateless Transformations
 
 In the group of stateless transformation we find the classic function defined on streams, such as `filter`, `map`, `flatMap`, etc. Say, for example, that we want to filter all the orders with an amount greater than 1,000.00 euro. We can use the `filter` function (the library also provides a useful function `filterNot`):
 
@@ -329,7 +402,7 @@ In the above example, we are grouping products by the first letter of the `userI
 
 So, if the marked stream will be materialized in a topic or in a state store (more to come on state stores) by a next transformation, the contained messages will be potentially moved to another node of the Kafka cluster, which owns the partition containing the messages with the new key. Re-partitioning is an operation that should be done with caution, because it could generate a heavy network load.
 
-#### 4.1.2. Stateful Transformations
+#### 5.2. Stateful Transformations
 
 As the name of this type of transformations suggested, the Kafka stream library needs to maintain some kind of state to manage them, and it's called _state store_. The state store, which is automatically managed by the library if we use the Stream DSL, can be an in memory hashmap or an instance of [RocksDB](http://rocksdb.org/), or any other convenient data structure.
 
@@ -370,75 +443,34 @@ The `count` transformation is not the only type of aggregation in the Kafka stre
 
 In detail, the Kafka stream library lets us aggregating messages using a time window. All the messages arrived inside the window are eligible for being aggregated. Clearly, we are talking about a sliding window through time. The library allows us to aggregate using different types of windows, each one with its own features. Since [windowing](https://docs.confluent.io/platform/current/streams/developer-guide/dsl-api.html#streams-developer-guide-dsl-windowing) is a complex issue, we will not go deeper into it in this article.
 
-TODO
-
-### 4.2. Building `KTable` and `GlobalKTable` Processors
-
-The Kafka stream libraries offers two more kind of processors: `KTable`, and `GlobalKTable`. We build both processors on top of a _compacted topic_. We can think of a compacted topic as a table, indexed by the messages' key. Messages are not deleted by the broker using a time to live policy. Every time a new message arrives, a "row" it's added to the "table" if the key were not present, or the value associated with the key is updated otherwise. To delete a "row" from the "table", we just send to the topic a `null` value associated with the selected key.
-
-To make a topic compacted, we need to specify it during its creation:
-
-```shell
-kafka-topics \
-  --bootstrap-server localhost:9092 \
-  --topic discount-profiles-by-user \
-  --create \
-  --config "cleanup.policy=compact"
-```
-
-The above topic will be the starting point to extend our Kafka stream application. In fact, the messages in it has a `UserId` as key, and a discount profile as value. A discount profile tells for each user which is the discount the e-commerce site could apply to the orders of a user. For sake of simplicity, we represent profiles as simple `String`:
+For our example we will use _Tumbling time windows_. They model fixed-size, non-overlapping, gap-less windows. In detail, we want to know how many products our users purchased every ten seconds. First, we need to create the window representation:
 
 ```scala
-type Profile = String
+val everyTenSeconds: TimeWindows = TimeWindows.of(10.second.toJava)
 ```
 
-Which is the difference between the two? Well, the difference is that a `KTable` is partitioned between the nodes of the Kafka cluster. However, every node of the cluster receive a full copy of the messages of a `GlobalKTable`. So, be careful with `GlobalKTable`.
-
-Creating a `KTable` or a `GlobalKTable` it's easy. As an example, let's create a `KTable` on top of the `discount-profiles-by-user` topic. Returning to our example, as the users' number of our e-commerce might be high, we need to partition the information among the nodes of the Kafka cluster. So, let's create the `KTable`:
+Then, we use it to define our windowed aggregation:
 
 ```scala
-final val DiscountProfilesByUserTopic = "discount-profiles-by-user"
-
-val userProfilesTable: KTable[UserId, Profile] =
-  builder.table[UserId, Profile](DiscountProfilesByUserTopic)
+val numberOfProductsByUserEveryTenSeconds: KTable[Windowed[UserId], Long] =
+  productsPurchasedByUsers.windowedBy(everyTenSeconds)
+    .aggregate[Long](0L) { (userId, product, counter) => 
+      counter + 1
+    }
 ```
 
-As you can imagine, there is more behind the scene than what we can see. Again, using the chain of implicit conversions, the Scala Kafka stream library is creating for us an instance of the `Consumed` class, which is mainly used to pass `Serde` instances around. In this particular case, we are using the `Serdes.stringSerde` implicit object, both for the key and for the value of the topic.
+As for the `count` transformation, the final result is a `Ktable`. However, this time we have a `Windowed[UserId]` as key type, which is a convenient type containing both the key and the lower and upper bound of the window.
 
-The methods defined on the `KTable` type are more or less the same as those defined on a `KStream`. In addition, a `KTable` can be easily converted into a `KStream` using the following method (or one of its variants):
+The Scala Kafka stream library defines the `aggregate` transformation as the Scala language defines the `foldLeft` method on sequences. The first parameter is the starting accumulation point, and the second is the folding function. Finally, an implicit instance of a `Materialized[K, V, S]` object is automatically derived by the compiler:
 
 ```scala
 // Scala kafka-stream library
-def toStream: KStream[K, V]
+def aggregate[VR](initializer: => VR)(aggregator: (K, V, VR) => VR)(
+    implicit materialized: Materialized[K, VR, ByteArrayWindowStore]
+  ): KTable[Windowed[K], VR]
 ```
 
-As we can imagine, creating a `GlobalKTable` is easy as well, we only need a compacted topic containing a number of keys that is affordable for each the cluster node:
+## 6. Joining Streams
 
-```shell
-kafka-topics \
-  --bootstrap-server localhost:9092 \
-  --topic discounts \
-  --create \
-  --config "cleanup.policy=compact"
-```
-
-We can think the  number of different instances of discount `Profile` is very low. So. let's create a `GlobalKTable` on top of a topic mapping each discount profile to an effective discount. First, we define the type modelling a discount:
-
-```scala
-final val DiscountsTopic = "discounts"
-
-case class Discount(profile: Profile, amount: Double)
-```
-
-Then, we can create an instance of the needed `GlobalKTable`:
-
-```scala
-val discountProfilesGTable: GlobalKTable[Profile, Discount] = 
-  builder.globalTable[Profile, Discount](DiscountsTopic)
-```
-
-Again, under the hood, an instance of a `Consumed` object is created by the library.
-
-The `GlobalKTable` type doesn't define any interesting method. So, why should we ever create an instance of a `GlobalKTable`? The answer to this legitimate question allows us to introduce the next big feature of Kafka stream: Joins.
-
+TODO
 
