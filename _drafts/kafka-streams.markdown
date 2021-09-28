@@ -341,7 +341,9 @@ Now that we know about the existence of state stores, we can start talking of st
  - Aggregations using windowing
  - Joins
 
-We will treat joins in a dedicated section. However, we can make some examples of aggregations. As we saw, we previously obtained a `KGroupedStream` containing the products purchased by each user:
+We will treat joins in a dedicated section. However, we can make some examples of aggregations. Aggregations are key-based operations, which means that they always operate over records of the same key. 
+
+As we saw, we previously obtained a `KGroupedStream` containing the products purchased by each user:
 
 ```scala
 val productsPurchasedByUsers: KGroupedStream[UserId, Product] = purchasedProductsStream.groupByKey
@@ -352,6 +354,21 @@ Now we can count how many products purchased each user, by calling the `count` t
 ```scala
 val numberOfProductsByUser: KTable[UserId, Long] = productsPurchasedByUsers.count()
 ```
+
+Since the number of products purchased by users updates every time a new messages is available, the result of the `count` transformation is a `KTable`, which will update during time accordingly.
+
+The `count` transformation uses the implicit parameters' resolution we just saw. In fact, it's signature is the following:
+
+```scala
+// Scala kafka-stream library
+def count()(implicit materialized: Materialized[K, Long, ByteArrayKeyValueStore]): KTable[K, Long]
+```
+
+As for the `Consumed` implicit objects, the implicit `Materialized[K, V, S]` instance is derived by the compiler directly from the available implicit instances of key and value `Serde`.
+
+The `count` transformation is not the only type of aggregation in the Kafka stream library, which also offers generic aggregations. Since simple aggregations are very similar to the example we associated with the `count` transformation, we introduce instead _windowed aggregations_.
+
+In detail, the Kafka stream library lets us aggregating messages using a time window. All the messages arrived inside the window are eligible for being aggregated. Clearly, we are talking about a sliding window through time. The library allows us to aggregate using different types of windows, each one with its own features. Since [windowing](https://docs.confluent.io/platform/current/streams/developer-guide/dsl-api.html#streams-developer-guide-dsl-windowing) is a complex issue, we will not go deeper into it in this article.
 
 TODO
 
