@@ -472,5 +472,32 @@ def aggregate[VR](initializer: => VR)(aggregator: (K, V, VR) => VR)(
 
 ## 6. Joining Streams
 
-TODO
+In my opinion, the most important feature of the Kafka stream library is joining streams. The Kafka team strongly supports the [duality between streams and database tables](https://docs.confluent.io/platform/current/streams/concepts.html#duality-of-streams-and-tables). To keep it simple, we can view a stream as the changelog of a database table, which primary keys are equal to the keys of the Kafka messages.
+
+Following this duality, we can think about records in a `KStream` as they are INSERT operations on a table. For the nature of a `KStream`, every message is different from any previous message. Instead, a `KTable` is an abstraction of a changelog stream, where each record represents an UPSERT: if the key is not present in the table, the record is equal to an INSERT, and UPDATE otherwise.
+
+With these concepts in mind, it's easier for us to accept the existence of a join operation between Kafka streams.
+
+Joins are stateful operation, which means they require a state store to execute.
+
+The easiest kind of join is between a `KStream` and a `KTable`. The join operation is on the keys of the messages. Returning to our main example, imagine we want to join the orders stream, which is indexed by `UserId`, with the table containing the discount profile of each user:
+
+```scala
+val ordersWithUserProfileStream: KStream[UserId, (Order, Profile)] =
+  usersOrdersStreams.join[Profile, (Order, Profile)](userProfilesTable) { (order, profile) =>
+    (order, profile)
+  }
+```
+
+As we have seen in many cases, the Scala Kafka stream library saves us to digit a lot of boilerplate code, implicitly deriving the type that carries the `Serde` information:
+
+```scala
+// Scala kafka-stream library
+def join[VT, VR](table: KTable[K, VT])(joiner: (V, VT) => VR)(implicit joined: Joined[K, V, VT]): KStream[K, VR]
+```
+
+As we notice, we associate the type parameters of the join function with the type of the values inside the `KTable` and the type of the values in the resulting stream. The first method parameter is clearly the `KTable`, whereas the second is a function that given the pair of the joined values, returns a new value of any type.
+
+In our use case, the join produces a stream containing all the orders of each user, added with the discount profile information.
+
 
