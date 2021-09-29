@@ -313,7 +313,7 @@ The `GlobalKTable` type doesn't define any interesting method. So, why should we
 
 Once obtained a `KStream` or a `KTable`, we can transform the information they contain using _transformations_. The Kafka stream library offers two kind of transformations: stateless, and stateful. While the former executes only in memory, the latter requires managing a state to perform. 
 
-#### 5.1. Stateless Transformations
+### 5.1. Stateless Transformations
 
 In the group of stateless transformation we find the classic function defined on streams, such as `filter`, `map`, `flatMap`, etc. Say, for example, that we want to filter all the orders with an amount greater than 1,000.00 euro. We can use the `filter` function (the library also provides a useful function `filterNot`):
 
@@ -402,7 +402,7 @@ In the above example, we are grouping products by the first letter of the `userI
 
 So, if the marked stream will be materialized in a topic or in a state store (more to come on state stores) by a next transformation, the contained messages will be potentially moved to another node of the Kafka cluster, which owns the partition containing the messages with the new key. Re-partitioning is an operation that should be done with caution, because it could generate a heavy network load.
 
-#### 5.2. Stateful Transformations
+### 5.2. Stateful Transformations
 
 As the name of this type of transformations suggested, the Kafka stream library needs to maintain some kind of state to manage them, and it's called _state store_. The state store, which is automatically managed by the library if we use the Stream DSL, can be an in memory hashmap or an instance of [RocksDB](http://rocksdb.org/), or any other convenient data structure.
 
