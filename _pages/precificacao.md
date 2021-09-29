@@ -25,9 +25,9 @@ speaker:
 detail:
   - excerpt: "- __Carga Horária:__ O curso terá carga horária de 12 horas
 
-    - __Data de Realização:__ 30, 31 de agosto e 01 e 03 de setembro​
+    - __Data de Realização:__ A definir
 
-    - __Horário:__ das 19h às 22h​
+    - __Horário:__ A definir
 
     - __Local:__ aulas remotas  - (online/ao vivo) - Zoom​
 
@@ -68,10 +68,10 @@ summary:
 
 {% include feature_row id="speaker" type="right" title="Ministrantes" wtitle_aligment="text-center" properties='class="course" data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
-<p style="text-align: center; margin-top: 10px" data-aos="fade-left" class="btn__holder"><a href="https://www.sympla.com.br/precificacao-de-servicos-de-arquitetura-como-cobrar-por-hora-de-trabalho__1286923" class="btn btn--success">INCREVA-SE</a></p>
+<p style="text-align: center; margin-top: 10px" data-aos="fade-left" class="btn__holder"><a href="https://docs.google.com/forms/d/1PEQjN_ZR-OzKxCo-O4Pnx9zQJ-1p2sDkohXyViTUaIY" class="btn btn--success">LISTA DE ESPERA</a></p>
 
 {% include feature_row id="detail" type="dual" title="Detalhes do Curso" wtitle_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
 {% include feature_row id="summary" type="dual" title="Conteúdo Programático" wtitle_aligment="text-center" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
 
-<p style="text-align: center" data-aos="fade-up" class="btn__holder"><a href="https://www.sympla.com.br/precificacao-de-servicos-de-arquitetura-como-cobrar-por-hora-de-trabalho__1286923" class="btn btn--success"> INCREVA-SE</a></p>
+<p style="text-align: center" data-aos="fade-up" class="btn__holder"><a href="https://docs.google.com/forms/d/1PEQjN_ZR-OzKxCo-O4Pnx9zQJ-1p2sDkohXyViTUaIY" class="btn btn--success"> LISTA DE ESPERA</a></p>

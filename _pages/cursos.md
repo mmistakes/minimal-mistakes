@@ -22,14 +22,14 @@ cursos:
     btn2_align: "center"
   - title: "Precificação de Serviços de Arquitetura"
     icon: "far fa-info"
-    image_path: /assets/images/cursos/precificação.png
+    image_path: /assets/images/cursos/precificacao.jpeg
     url: "/cursos/precificacao"
     btn_class: "btn--info"
     btn_label: "MAIS INFORMAÇÕES"
     btn_align: "center"
-    url2: "https://www.sympla.com.br/precificacao-de-servicos-de-arquitetura-como-cobrar-por-hora-de-trabalho__1286923"
+    url2: "https://docs.google.com/forms/d/1PEQjN_ZR-OzKxCo-O4Pnx9zQJ-1p2sDkohXyViTUaIY"
     btn2_class: "btn--success"
-    btn2_label: "INCREVA-SE"
+    btn2_label: "LISTA DE ESPERA"
     btn2_align: "center"
   - title: "Outorga na Prática"
     icon: "far fa-info"
