@@ -18,9 +18,9 @@ speaker:
 detail:
   - excerpt: "- __Carga Horária:__ O curso terá dois dias de imersão de 4h cada e mais uma reunião online de 2h, após uma semana, para dúvidas, além de assessoria contínua no grupo fechado por 12 meses, onde ajudaremos a dar seus primeiros passos.
 
-    - __Data de Realização:__ 03 e 04 de setembro + live no dia 11 de setembro​
+    - __Data de Realização:__ A definir
 
-    - __Horário:__ das 18:30h às 22:30h (sexta) – 8:00 as 12:00 (sábado)​
+    - __Horário:__ A definir
 
     - __Local:__ Norcon Empresarial, sala 28 na sede da Nortan​"
   - excerpt: "- __Organização:__ Hugo Cunha e Rafaela Carvalho​​​​
@@ -63,10 +63,10 @@ summary:
 
 {% include feature_row id="speaker" type="right" title="Ministrante" wtitle_aligment="text-center" properties='class="course" data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
-<p style="text-align: center; margin-top: 10px" data-aos="fade-left"><a href="https://docs.google.com/forms/d/19mQ3p7ervo9VGgstvsZjIO7_7bqpEgMIODDAhUIu2F0" class="btn btn--success">INCREVA-SE</a></p>
+<p style="text-align: center; margin-top: 10px" data-aos="fade-left"><a href="https://docs.google.com/forms/d/1LewxMsdAub9N3rknW4YifBZg--nUWhU1db8c36aX4YI" class="btn btn--success">LISTA DE ESPERA</a></p>
 
 {% include feature_row id="detail" type="dual" title="Detalhes do Curso" wtitle_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
 {% include feature_row id="summary" type="dual" title="Conteúdo Programático" wtitle_aligment="text-center" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
 
-<p style="text-align: center" data-aos="fade-up"><a href="https://docs.google.com/forms/d/19mQ3p7ervo9VGgstvsZjIO7_7bqpEgMIODDAhUIu2F0" class="btn btn--success"> INCREVA-SE</a></p>
+<p style="text-align: center" data-aos="fade-up"><a href="https://docs.google.com/forms/d/1LewxMsdAub9N3rknW4YifBZg--nUWhU1db8c36aX4YI" class="btn btn--success"> LISTA DE ESPERA</a></p>
