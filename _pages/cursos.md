@@ -9,6 +9,17 @@ intro:
 
     Um profissional capacitado tende a ser mais produtivo e motivado para alcançar metas e objetivos mais desafiadores. __Venha aprender com a gente__."
 cursos:
+  - title: "Skechup + Vray: Imagens Externas"
+    icon: "far fa-info"
+    image_path: /assets/images/cursos/vray-externo.png
+    url: "/cursos/vray-externo"
+    btn_class: "btn--info"
+    btn_label: "MAIS INFORMAÇÕES"
+    btn_align: "center"
+    url2: "https://docs.google.com/forms/d/1_StlSGk7e2V7TYlayCm2OtKi5zn0jWvqWHFfYruvxng"
+    btn2_class: "btn--success"
+    btn2_label: "INCREVA-SE"
+    btn2_align: "center"
   - title: "Skechup + Vray: Imagens Internas"
     icon: "far fa-info"
     image_path: /assets/images/cursos/vray-interno.png
