@@ -25,7 +25,7 @@ url                      : "https://alswjd0605.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : GitHub alswjd0605/"StudyRecord"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/88x88.png"
+logo                     : #"/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -38,7 +38,7 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5 (default)
+    num_posts            : 10
     colorscheme          : "dark"
   utterances:
     theme                : github-dark
@@ -104,7 +104,7 @@ author:
   name             : "OH Min Jeong"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am studying back-end engineering."
-  location         : "Somewhere Over the Raingbow..."
+  location         : 
   email            :
   links:
     - label: "Email"
