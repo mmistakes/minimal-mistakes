@@ -1,9 +1,9 @@
 ---
 title: " "
 layout: splash
-permalink: /cursos/vray
+permalink: /cursos/vray-interno
 about:
-  - title: "Skechup + Vray:<br />Melhorando a sua Modelagem e seu Render"
+  - title: "Skechup + Vray:<br />Imagens Internas"
     excerpt: "Esse curso é para estudantes de arquitetura, engenharia, designers de interiores, profissionais atuantes na área e demais interessados em entender o software sketchup afim de elaborar maquetes 3D. Esse conteúdo é uma ferramenta extremamente importante para quem trabalha com a construção civil. __Se você busca melhorar suas apresentações de projeto e ter uma fonte de renda extra, esse curso é para você!__​​"
 speaker:
   - title: "Martha Miranda"
@@ -17,7 +17,7 @@ speaker:
 detail:
   - excerpt: "- __Carga Horária:__ O curso terá carga horária de 8 horas
 
-    - __Data de Realização:__ 21 e 28 de agosto​
+    - __Data de Realização:__ personalizado
 
     - __Horário:__ das 8h ás 12h​
 
@@ -30,13 +30,12 @@ detail:
 
     - __Certificado:__ ❌
 
-    - __Valor por pessoa:__ R$: 150,00 ​​"
+    - __Valor por pessoa:__ R$: 200,00 ​​"
 summary:
   - title: "MÓDULO 1: INTRODUÇÃO E ORGANIZAÇÃO​"
     excerpt: "- INTRODUÇÃO AS FERRAMENTAS PRINCIPAIS DO SOFTWARE\n
     \ \ - Interface do Software​\n
     \ \ - Ferramentas principais​​\n
-    \ \ - Como importar imagens do CAD​​​\n
     - NAVEGAÇÃO\n
     \ \ - Como manusear sua modelagem​​\n
     \ \ - Uso de ferramentas de navegação\n
@@ -57,21 +56,22 @@ summary:
     \ \ - Como dar realismo ao blocos​​\n
     \ \ - Como Texturizar os blocos\n
     - CRIANDO UMA CENA​\n
-    \ \ - Como Aplicar e configurar texturas​​\n
-    \ \ - Uso de ferramentas de texturização\n
+    \ \ - Como criar e renomear uma cena​​\n
+    \ \ - Como ajustar as configurações de uma cena\n
     - RENDER​\n
     \ \ - Como configurar uma cena básica no Vray​​\n
-    \ \ - Como gerar um render"
+    \ \ - Como gerar um render\n
+    \ \ - Como otimizar um render"
 ---
 
 {% include feature_row id="about" type="wide" title_aligment="text-center" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
 
 {% include feature_row id="speaker" type="right" title="Ministrante" wtitle_aligment="text-center" properties='class="course" data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
-<p style="text-align: center; margin-top: 10px" data-aos="fade-left"><a href="https://docs.google.com/forms/d/1AC_nSmmV_TdUkKQ8VGrwqfDX6797F8GTTOpCvcWcRWA" class="btn btn--success">INCREVA-SE</a></p>
+<p style="text-align: center; margin-top: 10px" data-aos="fade-left"><a href="https://docs.google.com/forms/d/1B-1SXJi7uLR7utjtl14Sz0Umhl848wfKGjTX6U5xya4" class="btn btn--success">INCREVA-SE</a></p>
 
 {% include feature_row id="detail" type="dual" title="Detalhes do Curso" wtitle_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
 {% include feature_row id="summary" type="dual" title="Conteúdo Programático" wtitle_aligment="text-center" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
 
-<p style="text-align: center" data-aos="fade-up"><a href="https://docs.google.com/forms/d/1AC_nSmmV_TdUkKQ8VGrwqfDX6797F8GTTOpCvcWcRWA" class="btn btn--success"> INCREVA-SE</a></p>
+<p style="text-align: center" data-aos="fade-up"><a href="https://docs.google.com/forms/d/1B-1SXJi7uLR7utjtl14Sz0Umhl848wfKGjTX6U5xya4" class="btn btn--success"> INCREVA-SE</a></p>
