@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cec5a988-c885-4d67-bac0-f457795daa99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/_posts/ChunK/2021-09-28-ChunK에서의-배열.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +78,8 @@
       <workItem from="1632404248817" duration="313000" />
       <workItem from="1632556814396" duration="534000" />
       <workItem from="1632757829105" duration="805000" />
-      <workItem from="1632787363876" duration="3961000" />
+      <workItem from="1632787363876" duration="4685000" />
+      <workItem from="1632815317046" duration="5000" />
     </task>
     <servers />
   </component>
