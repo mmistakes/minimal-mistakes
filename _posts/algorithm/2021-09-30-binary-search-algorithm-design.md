@@ -1,5 +1,5 @@
 ---
-title:  "[Algorithm] Divide and Conquer " 
+title:  "[Algorithm] Binary Search(Divide and conquer) " 
 
 categories:
   - algorithm
