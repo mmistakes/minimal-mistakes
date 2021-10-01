@@ -4,6 +4,8 @@ main:
     url: /
   - title: "Capabilities"
     url: /capabilities/
+  - title: "Bibliography"
+    url: /bibliography
   - title: "Contribute"
     url: /contribute/
   - title: "About"
