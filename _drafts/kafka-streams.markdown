@@ -480,7 +480,9 @@ With these concepts in mind, it's easier for us to accept the existence of a joi
 
 Joins are stateful operation, which means they require a state store to execute.
 
-The easiest kind of join is between a `KStream` and a `KTable`. The join operation is on the keys of the messages. Returning to our main example, imagine we want to join the orders stream, which is indexed by `UserId`, with the table containing the discount profile of each user:
+The easiest kind of join is between a `KStream` and a `KTable`. The join operation is on the keys of the messages, because the broker has to ensure that the data is co-partitioned. To go deeper into co-partitioning, please refer to [Joining](https://docs.confluent.io/platform/current/streams/developer-guide/dsl-api.html#joining). Summarizing, if data of two topics are co-partitioned, than the Kafka broker can ensure the joining message resides on the same node of the broker.
+
+Returning to our main example, imagine we want to join the orders stream, which is indexed by `UserId`, with the table containing the discount profile of each user:
 
 ```scala
 val ordersWithUserProfileStream: KStream[UserId, (Order, Profile)] =
@@ -498,6 +500,32 @@ def join[VT, VR](table: KTable[K, VT])(joiner: (V, VT) => VR)(implicit joined: J
 
 As we notice, we associate the type parameters of the join function with the type of the values inside the `KTable` and the type of the values in the resulting stream. The first method parameter is clearly the `KTable`, whereas the second is a function that given the pair of the joined values, returns a new value of any type.
 
-In our use case, the join produces a stream containing all the orders of each user, added with the discount profile information.
+In our use case, the join produces a stream containing all the orders of each user, added with the discount profile information. So, the result of a join is a set of messages having the same key as the originals, and a transformation of the joined messages' payloads as value.
+
+Another type of join is between a `KStream` (or a `KTable`) and a `GlobalKTable`. As we said, the broker replicates in each node of the cluster the information of a `GlobalKTable`. So, we don't need anymore the co-partitioning property, because the broker ensure locality of `GlobalKTable` messages for all the nodes.
+
+In fact, the signature of this `join` transformation is different from the previous:
+
+```scala
+// Scala kafka-stream library
+def join[GK, GV, RV](globalKTable: GlobalKTable[GK, GV])(
+        keyValueMapper: (K, V) => GK,
+        joiner: (V, GV) => RV,
+): KStream[K, RV]
+```
+
+The `keyValueMapper` input function maps the information of the stream in the key `GK` of `GlobalKTable`. As we can see, in this case we can use any useful information in the message, both the key and the payload. Otherwise, the transformation uses `joiner` function to extract the new payload from the values of both sides of the join.
+
+In our example, we can use a join between the stream `ordersWithUserProfileStream` and the global table `discountProfilesGTable` to obtain a new stream with the amount of the order discounted using the discount associated with the discount profile of a `UserId`:
+
+```scala
+val discountedOrdersStream: KStream[UserId, Order] =
+  ordersWithUserProfileStream.join[Profile, Discount, Order](discountProfilesGTable)(
+    { case (_, (_, profile)) => profile }, // Joining key
+    { case ((order, _), discount) => order.copy(amount = order.amount * discount.amount) }
+  )
+```
+
+TODO
 
 
