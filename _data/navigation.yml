@@ -1,6 +1,4 @@
 # main links
 main:
-  \- title: "Home"
+  - title: "Home"
     url: https://guiltycoding.github.io/
-  \- title: "Category"
-    url: https://guiltycoding.github.io/categories/  
