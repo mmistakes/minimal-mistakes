@@ -16,7 +16,7 @@ tables. Implementing such concepts, Kafka streams provides us many useful operat
 
 Because the Kafka streams library is quite complex, this article will introduce only its main features, such as the architecture, the Stream DSL with its basic types `KStream`, `KTable`, and `GlobalKTable`, and the transformations defined on them.
 
-## 1. Set up
+## 1. Set Up
 
 As we said, the Kafka streams library is implemented using a set of client libraries. In addition, we will
 use the Circe library to deal with JSON messages. Using Scala as the language to make some
@@ -196,26 +196,16 @@ So, with these bullets in our Kafka gun, let's proceed diving a little deeper in
 
 ## 3. Messages Serialization and Deserialization
 
-If we want to create any structure on top of Kafka topics, such as stream, we need a standard way to
-serialize objects into a topic, and to deserialize messages from topic to objects. While the Kafka
-library defines serializers and deserializers as different types, the Kafka stream library uses the
-so call `Serde` type.
+If we want to create any structure on top of Kafka topics, such as stream, we need a standard way to serialize objects into a topic, and to deserialize messages from topic to objects. While the Kafka library defines serializers and deserializers as different types, the Kafka stream library uses the so call `Serde` type.
 
-what's a `Serde`? The `Serde` word stands for `Serializer` and `Deserializer` and an instance of
-a `Serde` provides the logic to read and write a message from and to a Kafka topic.
+What's a `Serde`? The `Serde` word stands for `Serializer` and `Deserializer` and an instance of a `Serde` provides the logic to read and write a message from and to a Kafka topic.
 
-So, if we have a `Serde[R]` instance, we can deserialize and serialize messages of the type `R`. In
-this article we will use JSON format for the payload of Kafka messages. In Scala, one of the most
-used libraries to marshall and unmarshall JSON into objects is Circe. We already talk about Circe in
-the
-post [Unleashing the Power of HTTP Apis: The Http4s Library](https://blog.rockthejvm.com/http4s-tutorial/)
-, when we used it together with the Http4s library.
+So, if we have a `Serde[R]` instance, we can deserialize and serialize objects of the type `R`. In this article we will use JSON format for the payload of Kafka messages. In Scala, one of the most used libraries to marshall and unmarshall JSON into objects is Circe. We already talk about Circe in the post [Unleashing the Power of HTTP Apis: The Http4s Library](https://blog.rockthejvm.com/http4s-tutorial/), when we used it together with the Http4s library.
 
-This time, we use Circe to create a `Serde` instance. The Scala kafka streams library comes with a
-lot of `Serde` instances for all the primitive types:
+This time, we use Circe to create `Serde` instances. The Scala Kafka streams library comes with a lot of `Serde` instances for all the primitive types:
 
 ```scala
-// Scala kafka-stream library
+// Scala Kafka stream library
 object Serdes {
   implicit def stringSerde: Serde[String]
 
@@ -250,18 +240,17 @@ object Serdes {
 }
 ```
 
-In addition, the `Serdes` object defines the function `fromFn`, which we can use to build our custom
-instance of `Serde`:
+In addition, the `Serdes` object defines the function `fromFn`, which we can use to build our custom instance of a `Serde`:
 
 ```scala
-// Scala kafka-stream library
+// Scala Kafka stream library
 def fromFn[T >: Null](serializer: T => Array[Byte], deserializer: Array[Byte] => Option[T]): Serde[T]
 ```
 
 Wiring all the information together, we can use the above function to create a `Serde` using Circe:
 
 ```scala
-def serde[A >: Null : Decoder : Encoder]: Serde[A] = {
+implicit def serde[A >: Null : Decoder : Encoder]: Serde[A] = {
   val serializer = (a: A) => a.asJson.noSpaces.getBytes
   val deserializer = (aAsBytes: Array[Byte]) => {
     val aAsString = new String(aAsBytes)
@@ -277,8 +266,7 @@ def serde[A >: Null : Decoder : Encoder]: Serde[A] = {
 }
 ```
 
-The `serde` function constraints the type `A` to have Circe `Decoder` and `Encoder` implicitly
-defined in the scope. Then, it uses the type class `Encoder[A]` to create a JSON string:
+The `serde` function constraints the type `A` to have a Circe `Decoder` and a `Encoder` implicitly defined in the scope. Then, it uses the type class `Encoder[A]` to create a JSON string:
 
 ```scala
 a.asJson
@@ -290,57 +278,42 @@ Moreover, the function uses the type class `Decoder[A]` to parse a JSON string i
 decode[A](aAsString)
 ```
 
-Fortunately, we can autogenerate Circe `Encoder` and `Decoder` type classes
-importing `io.circe.generic.auto._`.
+Fortunately, we can autogenerate Circe `Encoder` and `Decoder` type classes importing `io.circe.generic.auto._`.
 
-Now that we understand the types the library uses to write and read from a Kafka topic, and that we
-create some utility functions to deal with such types, we can go on and understand how to build our
-first stream topology.
+Now that we presented the types the library uses to write and read from Kafka topics, and that we create some utility functions to deal with such types, we can go on and understand how to build our first stream topology.
 
 ## 4. Creating the Topology
 
-First thing, we need to define the topology of our streaming application. We will use the _Stream
-DSL` to define it. This DSL, built on top of the low
-level [Processor API](https://docs.confluent.io/platform/current/streams/developer-guide/processor-api.html#streams-developer-guide-processor-api)
-, is easier to use and master, having a declarative approach. Using the Stream DSL we don't have to
-deal with stream processor nodes directly. The Kafka stream library will create the best processors'
-topology reflecting the operation with need.
+First, we need to define the topology of our streaming application. We will use the _Stream DSL`. This DSL, built on top of the low level [Processor API](https://docs.confluent.io/platform/current/streams/developer-guide/processor-api.html#streams-developer-guide-processor-api), is easier to use and master, having a declarative approach. Using the Stream DSL we don't have to deal with stream processor nodes directly. The Kafka stream library will create for us the best processors' topology reflecting the operation with need.
 
-So, first, we need an instance of the builder type provided by the library:
+To create a topology we need an instance of the builder type provided by the library:
 
 ```scala
 val builder = new StreamsBuilder
 ```
 
-The builder lets us creating the basic type of the Stream DSL, which are the`KStream`, `Ktable`,
-and `GlobalKTable` types. Let's see how.
+The builder lets us creating the basic type of the Stream DSL, which are the`KStream`, `Ktable`, and `GlobalKTable` types. Let's see how.
 
 ### 4.1. Building a `KStream`
 
-First, we need to define our source. The source, will read incoming messages from the Kafka
-topic `orders-by-user`, we've just defined. Differently from other streaming libraries, such as Akka
-Streams, the kafka-streams library doesn't define specific types for sources, pipes, and sinks:
+To start, we need to define a source, which will read incoming messages from the Kafka
+topic `orders-by-user` we created. Differently from other streaming libraries, such as Akka
+Streams, the Kafka streams library doesn't define any specific type for sources, pipes, and sinks:
 
 ```scala
 val usersOrdersStreams: KStream[UserId, Order] = builder.stream[UserId, Order](OrdersByUserTopic)
 ```
 
-There are a lot of things going on the above code. First, we introduced the first notable citizen of
-the kafka stream library: the `KStream[K, V]` type. We can imagine a `KStream` as a regular stream
-of Kafka messages. Each message as a key of type `K` and a value of type `V`.
+There are a lot of things going on the above code. We introduced the first notable citizen of the Kafka stream library: the `KStream[K, V]` type. We can imagine a `KStream` as a regular stream of Kafka messages. Each message as a key of type `K` and a value of type `V`.
 
-Moreover, the API to build a new stream seems to be very straightforward because there are a lot
-of "implicit magic" under the hood. In fact, the complete signature of the methods is
+Moreover, the API to build a new stream seems to be very straightforward because there are a lot of "implicit magic" under the hood. In fact, the complete signature of the `stream` methods is the following:
 
 ```scala
-// Scala kafka-stream library
+// Scala Kafka stream library
 def stream[K, V](topic: String)(implicit consumed: Consumed[K, V]): KStream[K, V]
 ```
 
-You may wonder what the heck is a `Consumed[K, V]` is. Well, it's the Java way to provide to the
-stream a `Serde` for the key and for the value of the Kafka message. Having previously defined
-the `serde` function, we can build a `Serde` for our `Order` class in a straightforward way. We
-usually put such classes in the companion object:
+You may wonder what the heck a `Consumed[K, V]` is. Well, it's the Java way to provide to the stream a `Serde` for the keys and values of Kafka messages. Having previously defined the `serde` function, we can build a `Serde` for our `Order` class in a straightforward way. We usually put such classes in the companion object:
 
 ```scala
 object Order {
@@ -348,38 +321,23 @@ object Order {
 }
 ```
 
-We can go even further on the implicit generation of the `Serde` class. In fact, if we define the
-previous `serde` function as `implicit`, the Scala compiler will generate automatically
-the `orderSerde`, since the `Order` class fulfills all the needed context bounds.
+However, we can go even further with the implicit generation of the `Serde` class. In fact, if we define the previous `serde` function as `implicit`, the Scala compiler will generate automatically the `orderSerde`, since the `Order` class fulfills all the needed context bounds.
 
-So, just as a recap, the following implicit resolution takes place:
+So, just as a recap, the following implicit resolution took place:
 
 ```
 Order => Decoder[Order] / Encoder[Order] => Serde[Order] => Consume[Order]
 ```
 
-Why do we need `Serde` types to be implicit? The main reason is that the Scala kafka stream provides
-the object `ImplicitConversions`. Inside this `object`, we find a lot of useful conversion functions
-that, given `Serde` objects for the key and the values of a Kafka message, let us define a lot of
-other types, such as the above `Consumed`. Again, all these conversions save us writing a lot of
-boilerplate code, which we should have written in Java, for example.
+Why do we need `Serde` types to be implicit? The main reason is that the Scala Kafka stream provides the object `ImplicitConversions`. Inside this `object`, we find a lot of useful conversion functions that, given `Serde` objects let us define a lot of other types, such as the above `Consumed`. Again, all these conversions save us writing a lot of boilerplate code, which we should have written in Java, for example.
 
-After the definition of the needed `Serde` types we can return to the definition of our streams. As
-we said, a `KStream[K, V]` represents a stream of Kafka messages. This type defines many useful
-functions on it, which can grouped into two different families: stateless transformations, and
-stateful transformation. While the former use only in memory data structures, the latter require to
-save some information inside the so called _state store_.
+As we said, a `KStream[K, V]` represents a stream of Kafka messages. This type defines many useful functions on it, which we can group into two different families: stateless transformations, and stateful transformation. While the former use only in memory data structures, the latter require to save some information inside the so called _state store_. We will look at transformation in a minute. But first, we need to introduce the other two basic type of the Stream DSL.
 
 ### 4.2. Building `KTable` and `GlobalKTable`
 
-The Kafka stream libraries offers two more kind of processors: `KTable`, and `GlobalKTable`. We
-build both processors on top of a _compacted topic_. We can think of a compacted topic as a table,
-indexed by the messages' key. Messages are not deleted by the broker using a time to live policy.
-Every time a new message arrives, a "row" it's added to the "table" if the key were not present, or
-the value associated with the key is updated otherwise. To delete a "row" from the "table", we just
-send to the topic a `null` value associated with the selected key.
+The Kafka stream libraries offers two more kind of types: `KTable`, and `GlobalKTable`. We build both on top of a _compacted topic_. We can think of a compacted topic as a table, indexed by the messages' key. The broker doesn't delete messages in a compacted topic using a time to live policy. Every time a new message arrives, a "row" it's added to the "table" if the key were not present, or the value associated with the key is updated otherwise. To delete a "row" from the "table", we just send to the topic a `null` value associated with the selected key.
 
-To make a topic compacted, we need to specify it during its creation:
+As we said in section 1, to make a topic compacted, we need to specify it during its creation:
 
 ```shell
 kafka-topics \
@@ -389,23 +347,13 @@ kafka-topics \
   --config "cleanup.policy=compact"
 ```
 
-The above topic will be the starting point to extend our Kafka stream application. In fact, the
-messages in it has a `UserId` as key, and a discount profile as value. A discount profile tells for
-each user which is the discount the e-commerce site could apply to the orders of a user. For sake of
-simplicity, we represent profiles as simple `String`:
+The above topic will be the starting point to extend our Kafka stream application. In fact, the messages in it has a `UserId` as key, and a discount profile as value. A discount profile tells for each user which is the discount the e-commerce site could apply to the orders of a user. For sake of simplicity, we represent profiles as simple `String`:
 
 ```scala
 type Profile = String
 ```
 
-Which is the difference between the two? Well, the difference is that a `KTable` is partitioned
-between the nodes of the Kafka cluster. However, every node of the cluster receive a full copy of
-the messages of a `GlobalKTable`. So, be careful with `GlobalKTable`.
-
-Creating a `KTable` or a `GlobalKTable` it's easy. As an example, let's create a `KTable` on top of
-the `discount-profiles-by-user` topic. Returning to our example, as the users' number of our
-e-commerce might be high, we need to partition the information among the nodes of the Kafka cluster.
-So, let's create the `KTable`:
+Creating a `KTable` it's easy. As an example, let's create a `KTable` on top of the `discount-profiles-by-user` topic. Returning to our example, as the users' number of our e-commerce might be high, we need to partition the information among the nodes of the Kafka cluster. So, let's create the `KTable`:
 
 ```scala
 final val DiscountProfilesByUserTopic = "discount-profiles-by-user"
@@ -414,23 +362,16 @@ val userProfilesTable: KTable[UserId, Profile] =
   builder.table[UserId, Profile](DiscountProfilesByUserTopic)
 ```
 
-As you can imagine, there is more behind the scene than what we can see. Again, using the chain of
-implicit conversions, the Scala Kafka stream library is creating for us an instance of
-the `Consumed` class, which is mainly used to pass `Serde` instances around. In this particular
-case, we are using the `Serdes.stringSerde` implicit object, both for the key and for the value of
-the topic.
+As you can imagine, there is more behind the scene than what we can see. Again, using the chain of implicit conversions, the Scala Kafka stream library is creating for us an instance of the `Consumed` class, which is mainly used to pass `Serde` instances around. In this particular case, we are using the `Serdes.stringSerde` implicit object, both for the key and for the value of the topic.
 
-The methods defined on the `KTable` type are more or less the same as those defined on a `KStream`.
-In addition, a `KTable` can be easily converted into a `KStream` using the following method (or one
-of its variants):
+The methods defined on the `KTable` type are more or less the same as those defined on a `KStream`. In addition, a `KTable` can be easily converted into a `KStream` using the following method (or one of its variants):
 
 ```scala
-// Scala kafka-stream library
+// Scala Kafka stream library
 def toStream: KStream[K, V]
 ```
 
-As we can imagine, creating a `GlobalKTable` is easy as well, we only need a compacted topic
-containing a number of keys that is affordable for each the cluster node:
+As we can imagine, creating a `GlobalKTable` is easy as well, we only need a compacted topic containing a number of keys that is affordable for each the cluster node:
 
 ```shell
 kafka-topics \
@@ -440,9 +381,7 @@ kafka-topics \
   --config "cleanup.policy=compact"
 ```
 
-We can think the number of different instances of discount `Profile` is very low. So. let's create
-a `GlobalKTable` on top of a topic mapping each discount profile to an effective discount. First, we
-define the type modelling a discount:
+We can think the number of different instances of discount `Profile` is very low. So. let's create a `GlobalKTable` on top of a topic mapping each discount profile to an effective discount. First, we define the type modelling a discount:
 
 ```scala
 final val DiscountsTopic = "discounts"
@@ -459,9 +398,9 @@ val discountProfilesGTable: GlobalKTable[Profile, Discount] =
 
 Again, under the hood, an instance of a `Consumed` object is created by the library.
 
-The `GlobalKTable` type doesn't define any interesting method. So, why should we ever create an
-instance of a `GlobalKTable`? The answer is in the word "joins". But first, we need to introduce
-streams transformations.
+So, which is the difference between a `KTable` and a `GlobalKTable`? Well, the difference is that a `KTable` is partitioned between the nodes of the Kafka cluster. However, every node of the cluster receive a full copy of the messages of a `GlobalKTable`. So, be careful with `GlobalKTable`.
+
+The `GlobalKTable` type doesn't define any interesting method. So, why should we ever create an instance of a `GlobalKTable`? The answer is in the word "joins". But first, we need to introduce streams transformations.
 
 ## 5. Streams Transformations
 
