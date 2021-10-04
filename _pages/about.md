@@ -4,12 +4,16 @@ permalink: /about/
 classes: wide2
 header:
   overlay_color: "#0066CC"
-last_modified_at: 2021-05-07
+excerpt: >
+  Learn more about the history of the toolkit and our industry, academic, and government partners.<br />
+last_modified_at: 2021-09-09
 ---
 
-The Explainable AI Toolkit (XAITK) contains a variety of resources and techniques to help users, developers, and researchers understand complex machine learning models. The toolkit combines a searchable repository of independent contributions and a more integrated, common software framework. The toolkit was developed under the [Defense Advanced Research Projects Agency (DARPA) Explainable Artificial Intelligence (XAI) program](https://www.darpa.mil/program/explainable-artificial-intelligence).
+DARPA formulated the [Explainable Artificial Intelligence (XAI) program](https://www.darpa.mil/program/explainable-artificial-intelligence) in 2015 with the goal to enable end users to better understand, trust, and effectively manage artificially intelligent systems. The four-year XAI research program began in 2017 and ended in 2021, and included multiple teams from academia and industry.
 
-![Levels of Integration](/assets/kitware/images/xai-levels-of-integration.png)
+The program was organized into three major technical areas as illustrated below: (1) the development of new explainable models and explanation interfaces for generating effective explanations; (2) understanding the psychology of explanation by summarizing, extending and applying psychological models of explanation; and (3) evaluation of the new XAI techniques in two challenge problem areas: data analytics and autonomy.
+
+{% include xai_teams.html %}
 
 ## Notable Features
   - [Analytics](/capabilities/#analytics)

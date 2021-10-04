@@ -4,7 +4,9 @@ permalink: /contribute/
 classes: wide2
 header:
   overlay_color: "#0066CC"
-last_modified_at: 2021-05-07
+excerpt: >
+  Help to further advance the field of explainable AI by contributing new capabilities to the toolkit.<br />
+last_modified_at: 2021-07-27
 ---
 
 ## Why Contribute?
@@ -14,13 +16,13 @@ last_modified_at: 2021-05-07
 
 * Go from research to production through possible transition to industry and government partners
 
-> ### Please note that at this time, we are only accepting publically released contributions.
+> ### Please note that at this time, we are only accepting publicly released contributions.
 
 ## How to contribute a new capability
 
 1. Navigate to the `_capabilities` folder in the [xaitk website repository](https://github.com/XAITK/xaitk.github.io/)
 
-2. Click "Add file" -> "Create new file"
+2. Click "Add file" &#8594; "Create new file" (please use the **.md** file extension)
 
 3. Give the file an appropriate name (e.g. `fakesal.md`), and copy the following template there
 
@@ -90,16 +92,16 @@ last_modified_at: 2021-05-07
    [comment]: <> (If the model was learned/trained, what data was used for training/testing?)
    
    ## Limitations
-   [comment]: <> (Are there any additional limitations/ethical considerations for use of this contribution?)
-   
    [comment]: <> (Are there known failure modes?)
+
+   [comment]: <> (Are there any additional limitations/ethical considerations for use of this contribution?)
    
    ## References
    [comment]: <> (Any additional information, e.g. papers \(cited with bibtex\) related to this contribution.)
    ```
 
-4. Fill out this template with the information relevant to your contribution, deleting the commented text and replacing it with your own. If you are new to Markdown, please see the guide [here](https://guides.github.com/features/mastering-markdown/). An example submission can be found at `_capabilities/fakesal.md`
+4. Fill out this template with the information relevant to your contribution, deleting the existing commented text and replacing it with your own. If you are new to Markdown, please see the guide [here](https://guides.github.com/features/mastering-markdown/). An example submission can be found at `_capabilities/fakesal.md`
 
-5. You can preview your submission at any time by clicking on the "Preview" tab. When ready, submit a pull request to the XAITK repository with these changes. Please give the pull request a meaningful name, e.g. `dev/add-fakesal-description`
+5. You can preview your submission at any time by clicking on the "Preview" tab. When ready, submit a pull request to the XAITK repository with these changes. **Please give the branch a meaningful name, e.g.** `dev/add-fakesal-description`
 
 6. If you encounter any problems with submitting your contribution, please reach out to us at <xaitk@kitware.com>
