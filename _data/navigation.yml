@@ -4,10 +4,10 @@ main:
     url: /
   - title: "Capabilities"
     url: /capabilities/
-  - title: "Bibliography"
-    url: /bibliography
   - title: "Contribute"
     url: /contribute/
+  - title: "Publications"
+    url: /publications/
   - title: "About"
     url: /about/
   - title: "Contact Us"

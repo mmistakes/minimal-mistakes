@@ -5,7 +5,9 @@ plugins: ['jekyll/scholar']
 
 scholar:
   style: modern-language-association
-  sort_by: pub_year 
+  sort_by: author
+  group_by: year
+  group_order: descending
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
