@@ -8,20 +8,17 @@ excerpt: ""
 
 Apache Kafka nowadays is clearly the leading technology concerning message brokers. It's scalable,
 resilient, and easy to use. Moreover, it leverages a bunch of interesting client libraries that
-offer a vast set of additional feature. One of this libraries is _kafka-streams_.
+offer a vast set of additional feature. One of these libraries is _Kafka streams_.
 
 Kafka streams brings a completely full stateful streaming system based directly on top of Kafka.
 Moreover, it introduces many interesting concepts, like the duality between topics and database
-tables. Implementing such concepts, kafka streams provide us many useful operation on topics, such
-as joining messages, grouping capabilities, and so on.
+tables. Implementing such concepts, Kafka streams provides us many useful operations on topics, such as joins, grouping capabilities, and so on.
 
-Because the kafka-streams library is very large and quite complex, this article will introduce only
-its main features, such use the architecture, the types `KStream`, `KTable`, and `GlobalKTable`, and
-some information about the _state store_.
+Because the Kafka streams library is quite complex, this article will introduce only its main features, such as the architecture, the Stream DSL with its basic types `KStream`, `KTable`, and `GlobalKTable`, and the transformations defined on them.
 
 ## 1. Set up
 
-As we said, the Kafka streams are implemented using a set of client libraries. In addition, we will
+As we said, the Kafka streams library is implemented using a set of client libraries. In addition, we will
 use the Circe library to deal with JSON messages. Using Scala as the language to make some
 experiments, we have to declare the following dependencies in the `build.sbt` file:
 
@@ -38,7 +35,7 @@ libraryDependencies ++= Seq(
 
 Among the dependencies, we find the `kafka-streams-scala` libraries, which is a Scala wrapper built
 around the Java `kafka-streams` library. In fact, using implicit resolution, the tailored Scala
-library avoid some boilerplate code.
+library avoids some boilerplate code.
 
 All the examples we'll use share the following imports:
 
@@ -63,10 +60,8 @@ import scala.concurrent.duration.DurationInt
 import scala.jdk.DurationConverters._
 ```
 
-We will use version 2.8.0, of Kafka, the latest stable version at the moment. As we've done in the
-article [ZIO Kafka: A Practical Streaming Tutorial](https://blog.rockthejvm.com/zio-kafka/), we will
-start the Kafka broker using a Docker container. So, the `docker-compose.yml` file describing the
-container is the following:
+We will use version 2.8.0, of Kafka. As we've done in the
+article [ZIO Kafka: A Practical Streaming Tutorial](https://blog.rockthejvm.com/zio-kafka/), we will start the Kafka broker using a Docker container, declared through a `docker-compose.yml` file:
 
 ```yaml
 version: '2'
@@ -106,42 +101,74 @@ services:
 
 Please, refer to the above article for further details on starting the Kafka broker inside Docker.
 
-As usual, we need a use case to work with. Imagine we have an e-commerce site and want to use Kafka
-to implement some part of the orders' workflow:
+As usual, we need a use case to work with. We'll try to model some functions concerning the management of orders in an e-commerce site. During the process, we will use the following types:
 
 ```scala
 type UserId = String
+type Profile = String
 type Product = String
 type OrderId = String
 
 case class Order(orderId: OrderId, user: UserId, products: List[Product], amount: Double)
+
+case class Discount(profile: Profile, amount: Double)
+
+case class Payment(orderId: OrderId, status: String)
 ```
 
-Since this information will use Kafka messages and topics, we need to set up our application,
-creating the topic in the Kafka broker storing orders. We call the topic `orders-by-user`. As we did
-for the article "ZIO Kafka: A Practical Streaming Tutorial", we use the clients libraries contained
-in the Docker image:
+To set up the application, we need also to create the Kafka topics we will use. In Scala, we represent the topics' names as constants:
+
+```scala
+final val OrdersByUserTopic = "orders-by-user"
+final val DiscountProfilesByUserTopic = "discount-profiles-by-user"
+final val DiscountsTopic = "discounts"
+final val OrdersTopic = "orders"
+final val PaymentsTopic = "payments"
+final val PaidOrdersTopic = "paid-orders"
+```
+
+To create such topics in the broker, we use directly the Kafka clients libraries contained in the Docker image:
 
 ```shell
 kafka-topics \
   --bootstrap-server localhost:9092 \
   --topic orders-by-user \
   --create
+  
+kafka-topics \
+  --bootstrap-server localhost:9092 \
+  --topic discount-profiles-by-user \
+  --create \
+  --config "cleanup.policy=compact"
+  
+kafka-topics \
+  --bootstrap-server localhost:9092 \
+  --topic discounts \
+  --create \
+  --config "cleanup.policy=compact"
+  
+kafka-topics \
+  --bootstrap-server localhost:9092 \
+  --topic orders \
+  --create
+  
+kafka-topics \
+  --bootstrap-server localhost:9092 \
+  --topic payments \
+  --create
+  
+kafka-topics \
+  --bootstrap-server localhost:9092 \
+  --topic paid-orders \
+  --create
 ```
 
-To improve the readability of the code we will write, we define also a constant containing the name
-of the topic:
-
-```scala
-final val OrdersByUserTopic = "orders-by-user"
-```
-
-As the name of the topic suggests, its messages will have the `UserId` as keys.
+As we can see, we defined some topics as `compact`. They are a special type of topics, and we will introduce them deeper during the article.
 
 ## 2. Basics
 
-As we said, the kafka streams library is a client library, and it allows handling workflows that
-read from a topic and write to another topic as a stream.
+As we said, the Kafka streams library is a client library, and it manages streams of messages
+reading them from topics and writing the results to different topics.
 
 As we should know, we build streaming applications around three concepts: sources, flows (or pipes),
 and sinks. Often, we represent streams as a series of token, generated by a source, transformed by
@@ -149,24 +176,23 @@ flows and consumed by sinks:
 
 TODO: Insert a graphic representation of a stream
 
-A source is where the execution starts, and information is created. Sources generate token, and in
-kafka streams they are represented by a topic receiving messages.
+A source is where the execution starts, and information is created. Sources generate tokens, and in
+Kafka streams they are represented by the messages read from topic.
 
 A flow is nothing more than a transformation applied to every token. In functional programming, we
-represent flows using function such as `map`, `filter`, `flatMap`, and so on.
+represent flows using functions such as `map`, `filter`, `flatMap`, and so on.
 
-Last but not least, a sink is where the token are consumed. After a sink, the token doesn't exist
-anymore. In kafka streams, sinks can consume token to a Kafka topics, or use anything other
+Last but not least, a sink is where tokens are consumed. After a sink, tokens don't exist
+anymore. In Kafka streams, sinks can consume tokens to a Kafka topics, or use anything other
 technology to consume them (i.e., the standard output, a database, etc.)
 
-In kafka streams jargon, both sources, flows, and sinks are called _stream processors_. A streaming
+In Kafka streams jargon, both sources, flows, and sinks are called _stream processors_. A streaming
 application is nothing more than a graph where each node is a processor, and edges are called _
 streams_. We can call such graph a _topology_.
 
 TODO: Image of a topology
 
-So, with these bullets in our Kafka gun, let's proceed dive a little deeper in how we can implement
-our use case using the kafka-streams library.
+So, with these bullets in our Kafka gun, let's proceed diving a little deeper in how we can implement some functionalities of our use case scenario using the Kafka streams library.
 
 ## 3. Messages Serialization and Deserialization
 
