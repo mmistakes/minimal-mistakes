@@ -404,16 +404,11 @@ The `GlobalKTable` type doesn't define any interesting method. So, why should we
 
 ## 5. Streams Transformations
 
-Once obtained a `KStream` or a `KTable`, we can transform the information they contain using _
-transformations_. The Kafka stream library offers two kind of transformations: stateless, and
-stateful. While the former executes only in memory, the latter requires managing a state to perform.
+Once obtained a `KStream` or a `KTable`, we can transform the information they contain using _transformations_. The Kafka stream library offers two kind of transformations: stateless, and stateful. While the former executes only in memory, the latter requires managing a state to perform.
 
 ### 5.1. Stateless Transformations
 
-In the group of stateless transformation we find the classic function defined on streams, such
-as `filter`, `map`, `flatMap`, etc. Say, for example, that we want to filter all the orders with an
-amount greater than 1,000.00 euro. We can use the `filter` function (the library also provides a
-useful function `filterNot`):
+In the group of stateless transformation we find the classic functions defined on streams, such as `filter`, `map`, `flatMap`, etc. Say, for example, that we want to filter all the orders with an amount greater than 1,000.00 Euro. We can use the `filter` function (the library also provides a useful function `filterNot`):
 
 ```scala
 val expensiveOrders: KStream[UserId, Order] = usersOrdersStreams.filter { (userId, order) =>
@@ -421,9 +416,7 @@ val expensiveOrders: KStream[UserId, Order] = usersOrdersStreams.filter { (userI
 }
 ```
 
-Let's say, instead, that we want to extract a stream of all the ordered products, maintaining the
-`UserId` a the message key. Since we want to map only the values of the Kafka messages, we can use
-the `mapValue` function:
+Let's say, instead, that we want to extract a stream of all the purchased products, maintaining the `UserId` as the message key. Since we want to map only the values of the Kafka messages, we can use the `mapValue` function:
 
 ```scala
 val purchasedListOfProductsStream: KStream[UserId, List[Product]] = usersOrdersStreams.mapValues { order =>
@@ -431,8 +424,7 @@ val purchasedListOfProductsStream: KStream[UserId, List[Product]] = usersOrdersS
 }
 ```
 
-Going further, we can obtain a `KStream[UserId, Product]` instead, just using the `flatMapValues`
-function:
+Going further, we can obtain a `KStream[UserId, Product]` instead, just using the `flatMapValues` function:
 
 ```scala
 val purchasedProductsStream: KStream[UserId, Product] = usersOrdersStreams.flatMapValues { order =>
@@ -440,19 +432,16 @@ val purchasedProductsStream: KStream[UserId, Product] = usersOrdersStreams.flatM
 }
 ```
 
-Moreover, we also considered stateless transformations terminal operations or sinks. They represent
-a terminal node of our stream topology. We can apply no other function to the stream after a sink is
-reached. Two examples of sink processors are the `foreach` and `to` methods.
+Moreover, the library contains also stateless terminal transformations, also called sinks. They represent a terminal node of our stream topology. We can apply no further function to the stream after a sink is reached. Two examples of sink processors are the `foreach` and `to` methods.
 
 The `foreach` method applies to a stream a given function:
 
 ```scala
-// Scala kafka-stream library
+// Scala Kafka stream library
 def foreach(action: (K, V) => Unit): Unit
 ```
 
-As an example, imagine we want to print all the product purchased by a user. We can call
-the ` foreach` method directly on the `purchasedProductsStream` stream:
+As an example, imagine we want to print all the product purchased by a user. We can call the ` foreach` method directly on the `purchasedProductsStream` stream:
 
 ```scala
 purchasedProductsStream.foreach { (userId, product) =>
@@ -460,40 +449,32 @@ purchasedProductsStream.foreach { (userId, product) =>
 }
 ```
 
-Another interesting sink processor is the `to` method, which persist the messages of the stream into
-a new topic:
+Another interesting sink processor is the `to` method, which persists the messages of the stream into a new topic:
 
 ```scala
 expensiveOrders.to("suspicious-orders")
 ```
 
-In the above example, we are writing all the order with an amount greater than 1,000 Euro in a
-dedicated topic, probably to perform some kind of fraud analysis on them. Also, this time the Scala
-kafka stream library saves us to type a lot of code. In fact, the complete signature of the `to`
-method is the following:
+In the above example, we are writing all the order with an amount greater than 1,000.00 Euro in a dedicated topic, probably to perform some kind of fraud analysis on them. Again, the Scala Kafka stream library saves us to type a lot of code. In fact, the complete signature of the `to` method is the following:
 
 ```scala
-// Scala kafka-stream library
+// Scala Kafka stream library
 def to(topic: String)(implicit produced: Produced[K, V]): Unit
 ```
 
-Again, the implicit instance of the `Produced` type, which is a wrapper around key and value `Serde`
-is produced automatically by the functions in the `ImplicitConversions` object, plus our `serde`
-implicit function.
+The implicit instance of the `Produced` type, which is a wrapper around key and value `Serde`, is produced automatically by the functions in the `ImplicitConversions` object, plus our `serde` implicit function.
 
-Last but not least, we have grouping, which groups different values under the same key or a
-different key. We group values maintaining the original key using the `groupByKey` transformation:
+Last but not least, we have grouping, which groups different values under the same key or a different key. We group values maintaining the original key using the `groupByKey` transformation:
 
 ```scala
-// Scala kafka-stream library
+// Scala Kafka stream library
 def groupByKey(implicit grouped: Grouped[K, V]): KGroupedStream[K, V]
 ```
 
-As usual, the `Grouped` object carries the `Serde` types for keys and values, and it's automatically
-derived by the compiler is we use the Scala Kafka stream library.
+As usual, the `Grouped` object carries the `Serde` types for keys and values, and it's automatically derived by the compiler is we use the Scala Kafka stream library.
 
 As an example, imagine we want to group the `purchasedProductsStream` so that we can perform some
-aggregated operation later. In detail, we want to group each user with the products she purchased:
+aggregated operation later. In detail, we want to group each user with the purchased products:
 
 ```scala
 val productsPurchasedByUsers: KGroupedStream[UserId, Product] = purchasedProductsStream.groupByKey
@@ -501,10 +482,9 @@ val productsPurchasedByUsers: KGroupedStream[UserId, Product] = purchasedProduct
 
 As we may notice, we introduced a new type of stream, the `KGroupedStream`. This type defines only
 stateful transformation on it. So, for this reason we say that grouping is the precondition to
-stateless transformations.
+stateful transformations.
 
-However, if we want to change the key of the grouped information, we can use the `groupBy`
-transformation:
+Moreover, if we want to group a stream using an information other than the messages' keys, we can use the `groupBy` transformation:
 
 ```scala
 val purchasedByFirstLetter: KGroupedStream[String, Product] =
@@ -513,16 +493,9 @@ val purchasedByFirstLetter: KGroupedStream[String, Product] =
   }
 ```
 
-In the above example, we are grouping products by the first letter of the `userId` of the user who
-purchased them. From the code, it seems a harmless operation, as we are only changing the key of the
-stream. However, since Kafka partitioned topics by key, we are marking the stream for
-re-partitioning.
+In the above example, we are grouping products by the first letter of the `UserId` of the user who purchased them. From the code, it seems a harmless operation, as we are only changing the key of the stream. However, since Kafka partitioned topics by key, the change of the key marks the topic for re-partitioning.
 
-So, if the marked stream will be materialized in a topic or in a state store (more to come on state
-stores) by a next transformation, the contained messages will be potentially moved to another node
-of the Kafka cluster, which owns the partition containing the messages with the new key.
-Re-partitioning is an operation that should be done with caution, because it could generate a heavy
-network load.
+So, if the marked stream will be materialized in a topic or in a state store (more to come on state stores) by a next transformation, the contained messages will be potentially moved to another node of the Kafka cluster. Re-partitioning is an operation that should be done with caution, because it could generate a heavy network load.
 
 ### 5.2. Stateful Transformations
 
