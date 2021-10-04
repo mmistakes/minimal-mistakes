@@ -7,7 +7,7 @@ toc_icon: "cog"
 ---
 
 ## Education
-* 2019 - Present: Doctor of Computer Science (expected)
+* 2019 - present: Doctor of Computer Science (expected)
   * Graduate School of Information Science and Technology, The University of Tokyo
 * 2017 - 2019: Master of Computer Science
   * Graduate School of Information Science and Technology, The University of Tokyo
@@ -33,6 +33,7 @@ Language Processing
 * Mar. 2019: Half exemption from repayment for particularly outstanding achievements, Japan Student Services Organization (JASSO)
 
 ## Talk
+* Sep. 2021: 最先端NLP勉強会 [[slides](https://github.com/KazutoshiShinoda/slides/blob/master/SNLP2021-IntrinsicDimensionalityExplainstheEffectivenessofLanguageModelFineTuning.pdf)] (in Japanese)
 * Mar. 2021: [第19回 NLP Dの会](https://sites.google.com/view/nlptokyod) (in Japanese)
 * Sep. 2020: 最先端NLP勉強会 [[slides](https://github.com/KazutoshiShinoda/slides/blob/master/SNLP2020-A-Systematic-Assessment-of-Syntactic-Generalization-in-Neural-Language-Models.pdf)] (in Japanese)
 * Jun. 2020: NII Open House 2020 (poster session) "Artificial Intelligence to Create Reading Comprehension Questions" [[poster](https://www.nii.ac.jp/event/upload/C04_oh2020.pdf)] (in Japanese)
