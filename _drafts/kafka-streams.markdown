@@ -634,51 +634,29 @@ Obtaining the joining key it's easy: We just select the `Profile` information co
 Last but not least, we have another type of join transformation, maybe the most interesting. We're
 talking about the join between two streams.
 
-In the joins we've seen so far, one of the two joining operands represents a table, which means
-durable form of information. Once a key enters the table, it will present into it, until someone
-removes it. So, Joining with a table reduces to make a lookup in table's keys for every message in
-the stream.
+In the joins we've seen so far, one of the two joining operands always represented a table, which means a persistent form of information. Once a key enters the table, it will be present into it, until someone removes it. So, Joining with a table reduces to make a lookup in table's keys for every message in the stream.
 
-However, streams are a continuously changing piece of information. So, how can we join such volatile
-data? Once again, windowing comes into help. The join transformation between two streams joins
-messages by key. Moreover, messages must arrive in the topics within a sliding window of time.
-Besides, as for the join between `KStream` and `KTable`, the data must be co-partitioned.
+However, streams are a continuously changing piece of information. So, how can we join such volatile data? Once again, windowing comes into help. The join transformation between two streams joins messages by key. Moreover, messages must arrive in the topics within a sliding window of time. Besides, as for the join between `KStream` and `KTable`, the data must be co-partitioned.
 
-Also, since joining are stateful transformation, we must window the join between two stream,
-otherwise the underlining state store would grow indefinitely.
+Since joining are stateful transformation, we must window the join between two stream, otherwise the underlining state store would grow indefinitely.
 
-Moreover, the semantics of stream-stream join is that a new input record on one side will produce a
-join output for each matching record on the other side, and there can be multiple such matching
-records in a given join window.
+Moreover, the semantics of stream-stream join is that a new input record on one side will produce a join output for each matching record on the other side, and there can be multiple such matching records in a given join window.
 
-Talking about purchased orders, imaging we want to join the stream of discounted orders with a
-stream listing orders that received a payment, obtaining a stream of paid orders. First, we need to
-define the latter stream built upon the topic called `payments`. Moreover, we define the  `Payment`
-type, that associate each `OrderId` with its payment status:
+Talking about purchased orders, imagine we want to join the stream of discounted orders with a stream listing orders that received a payment, obtaining a stream of paid orders. First, we need to define the latter stream built upon the topic called `payments`. Moreover, we define the  `Payment` type, that associate each `OrderId` with its payment status:
 
 ```scala
-final val PaymentsTopic = "payments"
-
-case class Payment(orderId: OrderId, status: String)
-
 val paymentsStream: KStream[OrderId, Payment] = builder.stream[OrderId, Payment](PaymentsTopic)
 ```
 
-It's reasonable that the payment of an order arrives at most some minutes after the order itself.
-So, it seems that we have a perfect use case to apply the join between streams. But first, we need
-to change the key of the `discountedOrdersStream` to an `OrderId`. Fortunately, the library offers
-the transformation `selectKey`:
+It's reasonable that the payment of an order arrives at most some minutes after the order itself. So, it seems that we have a perfect use case to apply the join between streams. But first, we need to change the key of the `discountedOrdersStream` to an `OrderId`. Fortunately, the library offers the transformation called `selectKey`:
 
 ```scala
 val ordersStream: KStream[OrderId, Order] = discountedOrdersStream.selectKey { (_, order) => order.orderId }
 ```
 
-We have to pay attention when we change the key of a stream. In fact, the broker needs to move the
-messages among nodes, to ensure the co-partitioning constraint. This operation is called shuffling,
-and its very time and resource consuming.
+We have to pay attention when we change the key of a stream. In fact, the broker needs to move the messages among nodes to ensure the co-partitioning constraint. This operation is called shuffling, and it's very time and resource consuming.
 
-The `ordersStream` stream represents the same information as the `discountedOrdersStream`, but
-indexed by `OrderId`. Now, we've met the preconditions to join our streams:
+The `ordersStream` stream represents the same information as the `discountedOrdersStream`, but indexed by `OrderId`. Now, we've met the preconditions to join our streams:
 
 ```scala
 val paidOrders: KStream[OrderId, Order] = {
@@ -694,19 +672,15 @@ val paidOrders: KStream[OrderId, Order] = {
 ```
 
 The final stream, `paidOrders`, contains all the orders that were paid at most five minutes after
-they arrived to the application. As we can see, we applied a joining sliding window of five minutes:
+their arrival into the application. As we can see, we applied a joining sliding window of five minutes:
 
 ```scala
 val joinWindow = JoinWindows.of(Duration.of(5, ChronoUnit.MINUTES))
 ```
 
-As the stream-stream join uses the key of the messages during the joining, we only need to provide
-the mapping function of the joined values, other than the joining window.
+As the stream-stream join uses the key of the messages during the joining, we only need to provide the mapping function of the joined values, other than the joining window.
 
-To explain the semantic of the join, we can look at the following table. The first two columns
-represents the values of the messages in the two starting streams. For sake o simplicity, the key,
-aka the `OrderId`, is the same for all the messages. Moreover, the table represents the five minutes
-window, starting from the arrival of the first message:
+To explain the semantic of the join, we can look at the following table. The first column mimics the passing of time, while the next two columns represent the values of the messages in the two starting streams. For sake o simplicity, the key, aka the `OrderId`, is the same for all the messages. Moreover, the table represents a five minutes window, starting from the arrival of the first message:
 
 | Timestamp | `ordersStream`    | `paymentsStream`       | Joined value   |
 |-----------|-------------------|------------------------|----------------|
@@ -715,24 +689,19 @@ window, starting from the arrival of the first message:
 | 3         |                   | `Payment("ISSUED")`    | `Option.empty` |
 | 4         |                   | `Payment("PAID")`      | `Some(Order)`  |
 
-The _Timestamp_ column ticks the time. At time 1, we receive the discounted order with id `order1`.
-From time 2 to 4, we receive three messages into the `paymentsStream` for the same order,
-representing three different statuses of the payment. All the three messages will join the order,
-since we received them inside the defined window.
+At time 1, we receive the discounted order with id `order1`. From time 2 to 4, we receive three messages into the `paymentsStream` for the same order, representing three different statuses of the payment. All the three messages will join the order, since we received them inside the defined window.
+
+The three types of join transformation we presented so far represent only the basic examples of the joins available in the Kafka Stream library. In fact, the library offers to developers also left join and outer joins, but their description is far beyond the introductory scope of this article.
 
 ## 7. The Kafka Stream Application
 
-Once we defined the desired topology for our application, it's time to materialize and execute it.
-Materializing the topology is easy, since we only have to call the `build` method on the instance of
-the `StreamBuilder`:
+Once we defined the desired topology for our application, it's time to materialize and execute it. Materializing the topology is easy, since we only have to call the `build` method on the instance of the `StreamBuilder` we used so far:
 
 ```scala
 val topology: Topology = builder.build()
 ```
 
-The object of type `Topology` represents the whole set of transformations we defined so far. It's
-interesting that we can also print the topology simply calling the `describe` method on it, and
-obtaining a `TopologyDescription` description object that is suitable for printing:
+The object of type `Topology` represents the whole set of transformations we defined. It's interesting that we can also print the topology simply calling the `describe` method on it, and obtaining a `TopologyDescription` description object that is suitable for printing:
 
 ```scala
 println(topology.describe())
@@ -798,20 +767,13 @@ Topologies:
       <-- KSTREAM-FLATMAPVALUES-0000000019
 ```
 
-Fortunately, there is an open source project that creates a visual graph the topology, starting from
-the above output. The project is
-called [`kafka-stream-viz`](https://zz85.github.io/kafka-streams-viz/). The generated visual graph
-fo our topology is the following:
+Fortunately, there is an open source project that creates a visual graph the topology, starting from the above output. The project is called [`kafka-stream-viz`](https://zz85.github.io/kafka-streams-viz/), and the generated visual graph fo our topology is the following:
 
 ![Topology's graph](/images/kafka-stream-orders-topology.png)
 
-This graphical representation allows us to follow the sequences of transformations in an easier way
-than the text form. In addition, it's very easy to understand which transformation is stateful, and
-so requires a state store.
+This graphical representation allows us to follow the sequences of transformations in an easier way than the text form. In addition, it becomes straightforward to understand which transformation is stateful, and so requires a state store.
 
-Once we materialize the topology, we can effectively run the Kafka Streams application. First, we
-have to set some property, such as the url to connect to the Kafka cluster, and the name of the
-application:
+Once we materialize the topology, we can effectively run the Kafka Streams application. First, we have to set some property, such as the url to connect to the Kafka cluster, and the name of the application:
 
 ```scala
 val props = new Properties
@@ -932,7 +894,7 @@ And, that's all about the Kafka Streams library, folks!
 
 ## 8. Conclusions
 
-In this article we tried to introduce the Kafka Streams library, a Kafka client library based on top of the Kafka consumers and producers API. In detail, we focused on the Stream DSL part of the library, which lets us to represents stream's topology at a higher level of abstraction. After the introduction of the basic building blocks of the DSL, `KStream`, `KTable`, and `GlobalKTable`, we showed the main operations defined on them, both stateless and stateful. Then, we talked about joins, one of the most relevant features of Kafka Streams. Finally, we wired all together, and we learnt how to start a Kafka Streams application.
+In this article we tried to introduce the Kafka Streams library, a Kafka client library based on top of the Kafka consumers and producers API. In detail, we focused on the Stream DSL part of the library, which lets us represent stream's topology at a higher level of abstraction. After the introduction of the basic building blocks of the DSL, `KStream`, `KTable`, and `GlobalKTable`, we showed the main operations defined on them, both the stateless and the stateful ones. Then, we talked about joins, one of the most relevant features of Kafka Streams. Finally, we wired all together, and we learnt how to start a Kafka Streams application.
 
 The Kafka Streams library is very wide, and it offers many more features than we saw. For example, we've not talked about the Processor API, and how it's possible to query directly a state store. However, the given information should be sufficient to have a solid base to learn the advanced feature of the awesome and useful library.
 
