@@ -782,16 +782,14 @@ props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
 props.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.stringSerde.getClass)
 ```
 
-In our example, we also configured the default `Serde` type for keys. Then, the last step is to
-create the `KafkaStream` application, and start it:
+In our example, we also configured the default `Serde` type for keys. Then, the last step is to create the `KafkaStream` application, and start it:
 
 ```scala
 val application: KafkaStreams = new KafkaStreams(topology, props)
 application.start()
 ```
 
-Finally, the complete application for the main example of our article, which leads to paid orders,
-is the following:
+Finally, the complete application for the main example of our article, which leads to paid orders, is the following:
 
 ```scala
 object KafkaStreamsApp {
