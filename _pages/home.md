@@ -1,8 +1,7 @@
 ---
-layout: single
+layout: splash
 permalink: /
-title: Test Title
-strip_title: true
+title: Home
 author_profile: true
 header:
   overlay_color: "#5e616c"
