@@ -1,10 +1,10 @@
 ---
-layout: single
+layout: home
 permalink: /
-title: About
 author_profile: true
 header:
-    overlay_image: /assets/website_banner.png
+  overlay_color: "#5e616c"
+  overlay_image: /assets/website_banner.png
 classes: wide
 ---
 
