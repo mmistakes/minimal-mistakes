@@ -1,10 +1,13 @@
 ---
 layout: home
 permalink: /
+title: Home
 author_profile: true
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/website_banner.png
+excerpt: >
+  Inverse problems in geophysics using optimisation tools.<br />
 classes: wide
 ---
 
