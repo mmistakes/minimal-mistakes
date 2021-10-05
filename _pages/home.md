@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /
-title:
+title: Test Title
 author_profile: true
 header:
   overlay_color: "#5e616c"
@@ -10,10 +10,6 @@ excerpt: >
   Inverse problems in geophysics using optimisation tools.<br />
 classes: wide
 ---
-
-<figure style="width: 30%" class="align-right">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/hawaii.jpg" alt="">
-</figure> 
 
 I am currently in career transition from applied research to Data Science. `Cross-validated` is my personal blog to keep track of my projects and different HOWTOs related to Data Science and tech.
 
