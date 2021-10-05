@@ -1,7 +1,7 @@
 ---
 layout: home
 permalink: /
-title: Home
+title:
 author_profile: true
 header:
   overlay_color: "#5e616c"
