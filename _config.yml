@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Jacob Morrison"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Jacob Morrison"
 description              : "An amazing website."
 url                      : "https://jacob-morrison.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
