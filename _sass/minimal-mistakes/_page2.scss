@@ -68,20 +68,6 @@ body {
   }
 }
 
-.page2__title {
-  margin-top: 0;
-  line-height: 1;
-
-  a {
-    color: $text-color;
-    text-decoration: none;
-  }
-
-  & + .page2__meta {
-    margin-top: -0.5em;
-  }
-}
-
 .page2__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;
