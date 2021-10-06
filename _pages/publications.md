@@ -11,18 +11,20 @@ classes: wide
 intro: 
   - excerpt: 'Ph.D. Publications'
 
-feature_row1:
+paper2:
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
     title: "An augmented Lagrangian algorithm for recovery of ice thickness in unidirectional flow using the Shallow Ice Approximation"
-    excerpt: 'Abstract'
+    text: 'Abstract'
     url: "https://arxiv.org/abs/2108.00854"
     btn_label: "Arvix"
     btn_class: "btn--primary"
 
-feature_row2:
-  - title: "Bedrock reconstruction from free surface data for unidirectional glacier flow with basal slip"
-    excerpt: 'Abstract'
+paper1:
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+    title: "Bedrock reconstruction from free surface data for unidirectional glacier flow with basal slip"
+    text: 'Abstract'
     url: "https://link.springer.com/article/10.1007/s00707-020-02845-x"
     btn_label: "Acta Mechanica"
     btn_class: "btn--primary"
@@ -45,8 +47,8 @@ feature_row1-1:
 
 {% include feature_row id="intro" type="center" %}
 
-{% include feature_row id="feature_row2" type="left" %}
+{% include feature_row id="paper1" type="left" %}
 
-{% include feature_row id="feature_row1" type="left" %}
+{% include feature_row id="paper2" type="left" %}
 
 {% include feature_row id="feature_row1-1" type="left" %}
