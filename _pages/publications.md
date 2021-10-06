@@ -43,6 +43,10 @@ feature_row1-1:
     url2: "/Starbucks-Rewards-Program/"
     btn_label2: "Technical Report"
     btn_class: "btn--primary"
+    tags: 
+        - Marketing
+        - Segmentation
+        - k-means clustering
 ---
 
 {% include feature_row id="intro" type="center" %}
@@ -51,4 +55,6 @@ feature_row1-1:
 
 {% include feature_row id="paper2" type="left" %}
 
+&nbsp;
 {% include feature_row id="feature_row1-1" type="left" %}
+<a name="Marketing-Analytics"></a> 
