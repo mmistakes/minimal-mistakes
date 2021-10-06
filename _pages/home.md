@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: singlev2
 permalink: /
 title: Home
 author_profile: true
@@ -10,8 +10,6 @@ excerpt: >
   Inverse problems in geophysics using optimisation tools.<br />
 classes: wide
 ---
-
-# Title override
 
 I am currently in career transition from applied research to Data Science. `Cross-validated` is my personal blog to keep track of my projects and different HOWTOs related to Data Science and tech.
 
