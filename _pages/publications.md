@@ -16,7 +16,7 @@ feature_row1:
     alt: "placeholder image 2"
     title: "Bedrock reconstruction from free surface data for unidirectional glacier flow with basal slip"
     excerpt: 'Abstract'
-    url: "#test-link"
+    url: "https://arxiv.org/abs/2006.13310"
     btn_label: "Read on Arvix"
     btn_class: "btn--primary"
 
