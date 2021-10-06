@@ -4,7 +4,7 @@ title: "Portfolio"
 permalink: /portfolio/
 header:
     overlay_color: "#5e616c"
-    overlay_image: /assets/images/website_banner.png
+    overlay_image: /assets/website_banner.png
 author_profile: true
 classes: wide
 ---
