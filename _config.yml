@@ -119,9 +119,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/e-mcgeorge"
-	  - label: "ORCID"
-	    icon: "fab fa-orcid"
-	    url: "https://orcid.org/my-orcid?orcid=0000-0001-5707-640X"
+    - label: "ORCID"
+      icon: "fab fa-orcid"
+      url: "https://orcid.org/my-orcid?orcid=0000-0001-5707-640X"
       
 
 # Site Footer
