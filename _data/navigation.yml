@@ -1,9 +1,7 @@
 # main links
 main:
-  - title: "Home"
-    url: /
   - title: "About"
-    url: /about/
+    url: /
   - title: "CV"
     url: /assets/docs/cv.pdf  
   - title: "Publications"
