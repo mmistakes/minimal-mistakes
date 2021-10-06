@@ -196,7 +196,7 @@ body {
     }
 
     .page2__title {
-      font-size: $type-size-2;
+      font-size: 0;
 
       @include breakpoint($small) {
         font-size: $type-size-1;
