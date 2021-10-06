@@ -1,12 +1,12 @@
 ---
 title: "Publications"
-layout: splash
+layout: single
 permalink: /publications/
 author_profile: true
 header:
   overlay_color: "#5e616c"
-  overlay_filter: 0.5
   overlay_image: /assets/website_banner.png
+
 intro: 
   - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin.'
 feature_row1:
