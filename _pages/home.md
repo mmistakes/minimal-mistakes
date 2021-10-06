@@ -1,7 +1,7 @@
 ---
 layout: singlev2
 permalink: /
-title: Home
+title: About
 author_profile: true
 header:
   overlay_color: "#5e616c"
