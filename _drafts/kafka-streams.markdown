@@ -434,7 +434,7 @@ Another interesting sink processor is the `to` method, which persists the messag
 expensiveOrders.to("suspicious-orders")
 ```
 
-In the above example, we are writing all the orders greater than 1,000.00 Euro in a dedicated topic, probably to perform some kind of fraud analysis on them. Again, the Scala Kafka Streams library saves us from typing a lot of code. In fact, the full signature of the `to` method is the following:
+In the above example, we are writing all the orders greater than 1,000.00 Euro in a dedicated topic, probably performing some kind of fraud analysis. Again, the Scala Kafka Streams library saves us from typing a lot of code. In fact, the full signature of the `to` method is the following:
 
 ```scala
 // Scala Kafka Streams library
@@ -469,17 +469,17 @@ val purchasedByFirstLetter: KGroupedStream[String, Product] =
   }
 ```
 
-In the above example, we group products by the first letter of the `UserId` of the user who purchased them. From the code, it seems a harmless operation, as we are only changing the stream's key. However, since Kafka partitioned topics by key, the change of the key marks the topic for re-partitioning.
+In the above example, we group products by the first letter of the `UserId` of the user who purchased them. It seems a harmless operation from the code, as we are only changing the stream's key. However, since Kafka partitioned topics by key, the change of the key marks the topic for re-partitioning.
 
 So, suppose the marked stream will be materialized in a topic or in a state store (more to come on state stores) by the following transformation. In that case, the contained messages will be potentially moved to another node of the Kafka cluster. Re-partitioning is an operation that should be done with caution because it could generate a heavy network load.
 
 ### 5.2. Stateful Transformations
 
-As the name of this type of transformations suggested, the Kafka Streams library needs to maintain some kind of state to manage them, and it's called _state store_. The state store, which is automatically managed by the library if we use the Stream DSL, can be an in memory hashmap or an instance of [RocksDB](http://rocksdb.org/), or any other convenient data structure.
+As the name of these types of transformations suggested, the Kafka Streams library needs to maintain some kind of state to manage them, and it's called _state store_. The state store, which is automatically controlled by the library if we use the Stream DSL, can be an in-memory hashmap or an instance of [RocksDB](http://rocksdb.org/), or any other convenient data structure.
 
-Each state store is local to the node containing the instance of the stream application, and refers to the messages concerning the partitions owned by the node. So, the global state of a stream application is the sum of all the state of the single nodes. Kafka Streams offers fault-tolerance and automatic recovery for local state stores.
+Each state store is local to the node containing the instance of the stream application and refers to the messages concerning the partitions owned by the node. So, the global state of a stream application is the sum of all the states of the single node. Kafka Streams offers fault-tolerance and automatic recovery for local state stores.
 
-Now that we know about the existence of state stores, we can start talking of stateful transformations. There many of them, such as:
+Now that we know about the existence of state stores, we can start talking about stateful transformations. There are many of them, such as:
 
 - Aggregations
 - Aggregations using windowing
@@ -493,28 +493,28 @@ As we saw, we previously obtained a `KGroupedStream` containing the products pur
 val productsPurchasedByUsers: KGroupedStream[UserId, Product] = purchasedProductsStream.groupByKey
 ```
 
-Now, we can count how many products each user purchased, by calling the `count` transformation:
+Now, we can count how many products each user purchased by calling the `count` transformation:
 
 ```scala
 val numberOfProductsByUser: KTable[UserId, Long] = productsPurchasedByUsers.count()
 ```
 
-Since the number of purchased products by users updates every time a new messages is available, the result of the `count` transformation is a `KTable`, which will update during time accordingly.
+Since the number of purchased products by users updates every time a new message is available, the result of the `count` transformation is a `KTable`, which will update during time accordingly.
 
-The `count` transformation uses the implicit parameters' resolution we just saw. In fact, it's signature is the following:
+The `count` transformation uses the implicit parameters' resolution we just saw. In fact, its signature is the following:
 
 ```scala
 // Scala Kafka Stream library
 def count()(implicit materialized: Materialized[K, Long, ByteArrayKeyValueStore]): KTable[K, Long]
 ```
 
-As for the `Consumed` implicit objects, the implicit `Materialized[K, V, S]` instance is directly derived by the compiler  from the available implicit instances of key and value `Serde`.
+As for the `Consumed` implicit objects, the implicit `Materialized[K, V, S]` instance is directly derived by the compiler from the available implicit instances of key and value `Serde`.
 
-The `count` transformation is not the only type of aggregation in the Kafka Streams library, which also offers generic aggregations. Since simple aggregations are very similar to the example we associated with the `count` transformation, we now introduce instead _windowed aggregations_.
+The `count` transformation is not the only type of aggregation in the Kafka Streams library, offering generic aggregations. Since simple aggregations are very similar to the example we associated with the `count` transformation, we now introduce _windowed aggregations_ instead.
 
-In detail, the Kafka Streams library lets us aggregating messages using a time window. All the messages arrived inside the window are eligible for being aggregated. Clearly, we are talking about a sliding window through time. The library allows us to aggregate using different types of windows, each one with its own features. Since [windowing](https://docs.confluent.io/platform/current/streams/developer-guide/dsl-api.html#streams-developer-guide-dsl-windowing) is a complex issue, we will not go deeper into it in this article.
+In detail, the Kafka Streams library lets us aggregate messages using a time window. All the messages that arrived inside the window are eligible for being aggregated. Clearly, we are talking about a sliding window through time. The library allows us to aggregate using different types of windows, each one with its own features. Since [windowing](https://docs.confluent.io/platform/current/streams/developer-guide/dsl-api.html#streams-developer-guide-dsl-windowing) is a complex issue, we will not go deeper into it in this article.
 
-For our example we will use _Tumbling time windows_. They model fixed-size, non-overlapping, gap-less windows. In detail, we want to know how many products our users purchased every ten seconds. First, we need to create the window representation:
+For our example, we will use _Tumbling time windows_. They model fixed-size, non-overlapping, gap-less windows. In detail, we want to know how many products our users purchase every ten seconds. First, we need to create the window representation:
 
 ```scala
 val everyTenSeconds: TimeWindows = TimeWindows.of(10.second.toJava)
@@ -530,7 +530,7 @@ val numberOfProductsByUserEveryTenSeconds: KTable[Windowed[UserId], Long] =
     }
 ```
 
-As for the `count` transformation, the final result is a `Ktable`. However, this time we have a `Windowed[UserId]` as key type, which is a convenient type containing both the key and the lower and upper bound of the window.
+As for the `count` transformation, the final result is a `Ktable`. However, this time we have a `Windowed[UserId]` as the key type, a convenient type containing both the key and the lower and upper bound of the window.
 
 The Scala Kafka Streams library defines the `aggregate` transformation as the Scala language defines the `foldLeft` method on sequences. The first parameter is the starting accumulation point, and the second is the folding function. Finally, an implicit instance of a `Materialized[K, V, S]` object is automatically derived by the compiler:
 
@@ -541,23 +541,23 @@ def aggregate[VR](initializer: => VR)(aggregator: (K, V, VR) => VR)(
 ): KTable[Windowed[K], VR]
 ```
 
-The library defines many other stateful transformations. Please, refer to the [official documentation](https://kafka.apache.org/28/documentation/streams/developer-guide/dsl-api.html#stateful-transformations) that lists all of them. 
+The library defines many other stateful transformations. Please, refer to the [official documentation](https://kafka.apache.org/28/documentation/streams/developer-guide/dsl-api.html#stateful-transformations) that lists all of them.
 
 ## 6. Joining Streams
 
-In my opinion, the most important feature of the Kafka Streams library is the ability to join streams. The Kafka team strongly supports the [duality between streams and database tables](https://docs.confluent.io/platform/current/streams/concepts.html#duality-of-streams-and-tables). To keep it simple, we can view a stream as the changelog of a database table, which primary keys are equal to the keys of the Kafka messages.
+In my opinion, the most essential feature of the Kafka Streams library is the ability to join streams. The Kafka team strongly supports the [duality between streams and database tables](https://docs.confluent.io/platform/current/streams/concepts.html#duality-of-streams-and-tables). To keep it simple, we can view a stream as the changelog of a database table, which primary keys are equal to the keys of the Kafka messages.
 
 Following this duality, we can think about records in a `KStream` as they are INSERT operations on a table. In fact, for the nature of a `KStream`, every message is different from any previous message. Instead, a `KTable` is an abstraction of a changelog stream, where each record represents an UPSERT: If the key is not present in the table, the record is equal to an INSERT, and an UPDATE otherwise.
 
-With these concepts in mind, it's easier for us to accept the existence of a join operation between Kafka Streams.
+With these concepts in mind, it's easier for us to accept the existence of joins between Kafka Streams.
 
-As we already said, joins are stateful operation, which means they require a state store to execute.
+As we already said, joins are stateful operations, requiring a state store to execute.
 
 ### 6.1. Joining a `KStream` and a `KTable`
 
-The easiest kind of joins is between a `KStream` and a `KTable`. The join operation is on the keys of the messages. The broker has to ensure that the data is co-partitioned. To go deeper into co-partitioning, please refer to [Joining](https://docs.confluent.io/platform/current/streams/developer-guide/dsl-api.html#joining). To put it simply, if data of two topics are co-partitioned, than the Kafka broker can ensure the joining message resides on the same node of the cluster, avoiding shuffling of messages between nodes.
+The most accessible kind of join is between a `KStream` and a `KTable`. The join operation is on the keys of the messages. The broker has to ensure that the data is co-partitioned. To go deeper into co-partitioning, please refer to [Joining](https://docs.confluent.io/platform/current/streams/developer-guide/dsl-api.html#joining). To put it simply, if data of two topics are co-partitioned, then the Kafka broker can ensure the joining message resides on the same node of the cluster, avoiding shuffling of messages between nodes.
 
-Returning to our main example, imagine we want to join the orders stream, which is indexed by `UserId`, with the table containing the discount profile of each user:
+Returning to our leading example, imagine we want to join the orders stream, which is indexed by `UserId`, with the table containing the discount profile of each user:
 
 ```scala
 val ordersWithUserProfileStream: KStream[UserId, (Order, Profile)] =
@@ -566,20 +566,20 @@ val ordersWithUserProfileStream: KStream[UserId, (Order, Profile)] =
   }
 ```
 
-As we have seen in many cases, the Scala Kafka Streams library saves us to digit a lot of boilerplate code, implicitly deriving the type that carries the `Serde` information:
+As we have seen in many cases, the Scala Kafka Streams library saves us from digiting a lot of boilerplate code, implicitly deriving the type that carries the `Serde` information:
 
 ```scala
 // Scala Kafka Stream library
 def join[VT, VR](table: KTable[K, VT])(joiner: (V, VT) => VR)(implicit joined: Joined[K, V, VT]): KStream[K, VR]
 ```
 
-The first method's parameter is the `KTable`, whereas the second is a function that, given the pair of the joined values, returns a new value of any type.
+The first method's parameter is the `KTable`, whereas the second is a function that returns a new value of any type given the pair of the joined values.
 
-In our use case, the join produces a stream containing all the orders purchased by each user, added with the discount profile information. So, the result of a join is a set of messages having the same key as the originals, and a transformation of the joined messages' payloads as value.
+In our use case, the join produces a stream containing all the orders purchased by each user, added with the discount profile information. So, the result of a join is a set of messages having the same key as the originals and a transformation of the joined messages' payloads as value.
 
 ### 6.2. Joining with a `GlobalKTable`
 
-Another type of join is between a `KStream` (or a `KTable`) and a `GlobalKTable`. As we said, the broker replicates in each node of the cluster the information of a `GlobalKTable`. So, we don't need anymore the co-partitioning property, because the broker ensure locality of `GlobalKTable` messages for all the nodes.
+Another type of join is between a `KStream` (or a `KTable`) and a `GlobalKTable`. As we said, the broker replicates the information of a `GlobalKTable` in each node of the cluster. So, we don't need the co-partitioning property anymore because the broker ensures the locality of `GlobalKTable` messages for all the nodes.
 
 In fact, the signature of this type of `join` transformation is different from the previous:
 
@@ -591,7 +591,7 @@ def join[GK, GV, RV](globalKTable: GlobalKTable[GK, GV])(
 ): KStream[K, RV]
 ```
 
-The `keyValueMapper` input function maps the information of the stream in the key `GK` of `GlobalKTable`. In this case, we can use any useful information in the message, both the key and the payload. The transformation uses the `joiner` function to extract the new payload from the values of both sides of the join, instead.
+The `keyValueMapper` input function maps the information of the stream in the key `GK` of `GlobalKTable`. In this case, we can use any helpful information in the message, both the key and the payload. Instead, the transformation uses the `joiner` function to extract the new payload.
 
 In our example, we can use a join between the stream `ordersWithUserProfileStream` and the global table `discountProfilesGTable` to obtain a new stream with the amount of the discounted order,  using the discount associated with the profile of a `UserId`:
 
@@ -603,36 +603,35 @@ val discountedOrdersStream: KStream[UserId, Order] =
   )
 ```
 
-Obtaining the joining key it's easy: We just select the `Profile` information contained in the messages' payload of the stream `ordersWithUserProfileStream`. Then, the new value of each message is the discounted amount.
+Obtaining the joining key, it's easy: We just select the `Profile` information contained in the messages' payload of the stream `ordersWithUserProfileStream`. Then, the new value of each message is the discounted amount.
 
 ### 6.3. Joining `KStreams`
 
-Last but not least, we have another type of join transformation, maybe the most interesting. We're
-talking about the join between two streams.
+Last but not least, we have another type of join transformation, maybe the most interesting. We're talking about the join between two streams.
 
-In the joins we've seen so far, one of the two joining operands always represented a table, which means a persistent form of information. Once a key enters the table, it will be present into it, until someone removes it. So, Joining with a table reduces to make a lookup in table's keys for every message in the stream.
+In the joins we've seen so far, one of the two joining operands always represented a table, which means a persistent form of information. Once a key enters the table, it will be present in it until someone removes it. So, Joining with a table reduces to make a lookup in table's keys for every message in the stream.
 
-However, streams are a continuously changing piece of information. So, how can we join such volatile data? Once again, windowing comes into help. The join transformation between two streams joins messages by key. Moreover, messages must arrive in the topics within a sliding window of time. Besides, as for the join between `KStream` and `KTable`, the data must be co-partitioned.
+However, streams are continuously changing pieces of information. So, how can we join such volatile data? Once again, windowing comes into help. The join transformation between two streams joins messages by key. Moreover, messages must arrive at the topics within a sliding window of time. Besides, the data must be co-partitioned for the join between `KStream` and `KTable`.
 
-Since joining are stateful transformation, we must window the join between two stream, otherwise the underlining state store would grow indefinitely.
+Since joins are stateful transformations, we must window the join between two streams; otherwise, the underlining state store would grow indefinitely.
 
 Moreover, the semantics of stream-stream join is that a new input record on one side will produce a join output for each matching record on the other side, and there can be multiple such matching records in a given join window.
 
-Talking about purchased orders, imagine we want to join the stream of discounted orders with a stream listing orders that received a payment, obtaining a stream of paid orders. First, we need to define the latter stream built upon the topic called `payments`. Moreover, we define the  `Payment` type, that associate each `OrderId` with its payment status:
+Talking about purchased orders, imagine we want to join the stream of discounted orders with stream listing orders that received payment, obtaining a stream of paid orders. First, we need to define the latter stream built upon the topic called `payments`. Moreover, we define the  `Payment` type that associates each `OrderId` with its payment status:
 
 ```scala
 val paymentsStream: KStream[OrderId, Payment] = builder.stream[OrderId, Payment](PaymentsTopic)
 ```
 
-It's reasonable that the payment of an order arrives at most some minutes after the order itself. So, it seems that we have a perfect use case to apply the join between streams. But first, we need to change the key of the `discountedOrdersStream` to an `OrderId`. Fortunately, the library offers the transformation called `selectKey`:
+It's reasonable that the payment of the order arrives at most some minutes after the order itself. So, it seems that we have a perfect use case to apply the join between streams. But first, we need to change the key of the `discountedOrdersStream` to an `OrderId`. Fortunately, the library offers the transformation called `selectKey`:
 
 ```scala
 val ordersStream: KStream[OrderId, Order] = discountedOrdersStream.selectKey { (_, order) => order.orderId }
 ```
 
-We have to pay attention when we change the key of a stream. In fact, the broker needs to move the messages among nodes to ensure the co-partitioning constraint. This operation is called shuffling, and it's very time and resource consuming.
+We have to pay attention when we change the key of a stream. In fact, the broker needs to move the messages among nodes to ensure the co-partitioning constraint. This operation is called shuffling, and it's very time and resource-consuming.
 
-The `ordersStream` stream represents the same information as the `discountedOrdersStream`, but indexed by `OrderId`. Now, we've met the preconditions to join our streams:
+The `ordersStream` stream represents the same information as the `discountedOrdersStream`, but is indexed by `OrderId`. Now, we've met the preconditions to join our streams:
 
 ```scala
 val paidOrders: KStream[OrderId, Order] = {
@@ -647,16 +646,15 @@ val paidOrders: KStream[OrderId, Order] = {
 }
 ```
 
-The final stream, `paidOrders`, contains all the orders that were paid at most five minutes after
-their arrival into the application. As we can see, we applied a joining sliding window of five minutes:
+The final stream, `paidOrders`, contains all the orders paid at most five minutes after their arrival into the application. As we can see, we applied a joining sliding window of five minutes:
 
 ```scala
 val joinWindow = JoinWindows.of(Duration.of(5, ChronoUnit.MINUTES))
 ```
 
-As the stream-stream join uses the key of the messages during the joining, we only need to provide the mapping function of the joined values, other than the joining window.
+As the stream-stream join uses the key of the messages, we only need to provide the mapping function of the joined values, other than the joining window.
 
-To explain the semantic of the join, we can look at the following table. The first column mimics the passing of time, while the next two columns represent the values of the messages in the two starting streams. For sake o simplicity, the key, aka the `OrderId`, is the same for all the messages. Moreover, the table represents a five minutes window, starting from the arrival of the first message:
+To explain the semantic of the join, we can look at the following table. The first column mimics the passing of time, while the following two columns represent the values of the messages in the two starting streams. For the sake o simplicity, the key, aka the `OrderId`, is the same for all the messages. Moreover, the table represents a five minutes window, starting from the arrival of the first message:
 
 | Timestamp | `ordersStream`    | `paymentsStream`       | Joined value   |
 |-----------|-------------------|------------------------|----------------|
@@ -665,25 +663,26 @@ To explain the semantic of the join, we can look at the following table. The fir
 | 3         |                   | `Payment("ISSUED")`    | `Option.empty` |
 | 4         |                   | `Payment("PAID")`      | `Some(Order)`  |
 
-At time 1, we receive the discounted order with id `order1`. From time 2 to 4, we receive three messages into the `paymentsStream` for the same order, representing three different statuses of the payment. All the three messages will join the order, since we received them inside the defined window.
 
-The three types of join transformation we presented so far represent only the basic examples of the joins available in the Kafka Stream library. In fact, the library offers to developers also left join and outer joins, but their description is far beyond the introductory scope of this article.
+At time 1, we receive the discounted order with id `order1`. From time 2 to 4, we get three messages into the `paymentsStream` for the same order, representing three different payment statuses. All three messages will join the order since we received them inside the defined window.
 
-## 7. The Kafka Stream Application
+The three types of join transformation we presented represent only the primary examples of the joins available in the Kafka Streams library. In fact, the library offers to developers also left join and outer joins, but their description is far beyond the scope of this article.
 
-Once we defined the desired topology for our application, it's time to materialize and execute it. Materializing the topology is easy, since we only have to call the `build` method on the instance of the `StreamBuilder` we used so far:
+## 7. The Kafka Streams Application
+
+Once we defined the desired topology for our application, it's time to materialize and execute it. Materializing the topology is easy since we only have to call the `build` method on the instance of the `StreamBuilder` we have used so far:
 
 ```scala
 val topology: Topology = builder.build()
 ```
 
-The object of type `Topology` represents the whole set of transformations we defined. It's interesting that we can also print the topology simply calling the `describe` method on it, and obtaining a `TopologyDescription` description object that is suitable for printing:
+The object of type `Topology` represents the whole set of transformations we defined. Interestingly, we can also print the topology simply calling the `describe` method on it and obtaining a `TopologyDescription` description object that is suitable for printing:
 
 ```scala
 println(topology.describe())
 ```
 
-The printed topology of our main example is the following:
+The printed topology of our leading example is the following:
 
 ```
 Topologies:
@@ -743,13 +742,13 @@ Topologies:
       <-- KSTREAM-FLATMAPVALUES-0000000019
 ```
 
-Fortunately, there is an open source project that creates a visual graph the topology, starting from the above output. The project is called [`kafka-stream-viz`](https://zz85.github.io/kafka-streams-viz/), and the generated visual graph fo our topology is the following:
+Fortunately, an open-source project creates a visual graph of the topology, starting from the above output. The project is called [`kafka-stream-viz`](https://zz85.github.io/kafka-streams-viz/), and the generated visual graph for our topology is the following:
 
 ![Topology's graph](/images/kafka-stream-orders-topology.png)
 
-This graphical representation allows us to follow the sequences of transformations in an easier way than the text form. In addition, it becomes straightforward to understand which transformation is stateful, and so requires a state store.
+This graphical representation allows us to follow the sequences of transformations easier than the text form. In addition, it becomes straightforward to understand which transformation is stateful and so requires a state store.
 
-Once we materialize the topology, we can effectively run the Kafka Streams application. First, we have to set some property, such as the url to connect to the Kafka cluster, and the name of the application:
+Once we materialize the topology, we can effectively run the Kafka Streams application. First, we have to set the url to connect to the Kafka cluster, and the name of the application:
 
 ```scala
 val props = new Properties
@@ -758,14 +757,14 @@ props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
 props.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.stringSerde.getClass)
 ```
 
-In our example, we also configured the default `Serde` type for keys. Then, the last step is to create the `KafkaStream` application, and start it:
+In our example, we also configured the default `Serde` type for keys. Then, the last step is to create the `KafkaStream` application and start it:
 
 ```scala
 val application: KafkaStreams = new KafkaStreams(topology, props)
 application.start()
 ```
 
-Finally, the complete application for the main example of our article, which leads to paid orders, is the following:
+Finally, the complete application for the leading example of our article, which leads to paid orders, is the following:
 
 ```scala
 object KafkaStreamsApp {
@@ -868,7 +867,7 @@ And, that's all about the Kafka Streams library, folks!
 
 ## 8. Conclusions
 
-In this article we tried to introduce the Kafka Streams library, a Kafka client library based on top of the Kafka consumers and producers API. In detail, we focused on the Stream DSL part of the library, which lets us represent stream's topology at a higher level of abstraction. After the introduction of the basic building blocks of the DSL, `KStream`, `KTable`, and `GlobalKTable`, we showed the main operations defined on them, both the stateless and the stateful ones. Then, we talked about joins, one of the most relevant features of Kafka Streams. Finally, we wired all together, and we learnt how to start a Kafka Streams application.
+This article tried to introduce the Kafka Streams library, a Kafka client library based on top of the Kafka consumers and producers API. In detail, we focused on the Stream DSL part of the library, which lets us represent the stream's topology at a higher level of abstraction. After introducing the basic building blocks of the DSL, `KStream`, `KTable`, and `GlobalKTable`, we showed the primary operations defined on them, both the stateless and the stateful ones. Then, we talked about joins, one of the most relevant features of Kafka Streams. Finally, we wired all together, and we learned how to start a Kafka Streams application.
 
-The Kafka Streams library is very wide, and it offers many more features than we saw. For example, we've not talked about the Processor API, and how it's possible to query directly a state store. However, the given information should be sufficient to have a solid base to learn the advanced feature of the awesome and useful library.
+The Kafka Streams library is vast, and it offers many more features than we saw. For example, we've not talked about the Processor API and how it's possible to query a state store directly. However, the given information should be sufficient to have a solid base to learn the advanced feature of the excellent and helpful library.
 
