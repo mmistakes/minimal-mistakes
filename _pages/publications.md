@@ -8,7 +8,7 @@ header:
 author_profile: true
 classes: wide
 
-paper1:
+feature_row1-1:
   - image_path: assets/images/posts/starbucks-cluster-conversion-rates.png
     alt: "Clusterisation results based on Conversion Rates"
     title: "Bedrock reconstruction from free surface data for unidirectional glacier flow with basal slip"
@@ -149,7 +149,7 @@ feature_row4:
 ## Publications
 
 &nbsp;
-{% include feature_row id="paper1" type="left" %}
+{% include feature_row id="feature_row1-1" type="left" %}
 <a name="Marketing-Analytics"></a> 
 {% include feature_row id="feature_row1-2" type="left" %}
 <a name="Purchase-Analytics"></a> 
