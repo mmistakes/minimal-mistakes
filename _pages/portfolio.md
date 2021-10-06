@@ -8,6 +8,7 @@ header:
 author_profile: true
 classes: wide
 ---
+Updated: 12:12PM 
 
 ## Skills
 **Tools**: MATLAB, Python, Git, Command Line, Excel
