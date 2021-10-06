@@ -3,7 +3,7 @@ main:
   - title: "About"
     url: /
   - title: "CV"
-    url: /assets/docs/cv.pdf  
+    url: /assets/cv.pdf  
   - title: "Publications"
     url: /publications/
   - title: "Presentations"
