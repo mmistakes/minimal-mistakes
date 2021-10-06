@@ -1,0 +1,91 @@
+---
+layout: default
+---
+
+{% if page2.header.overlay_color or page2.header.overlay_image or page2.header.image %}
+  {% include page2__hero.html %}
+{% elsif page2.header.video.id and page2.header.video.provider %}
+  {% include page2__hero_video.html %}
+{% endif %}
+
+{% if page2.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article class="page2 h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <!-- {% if page2.title %}<meta itemprop="headline" content="{{ page2.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %} -->
+    {% if page2.excerpt %}<meta itemprop="description" content="{{ page2.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page2.date %}<meta itemprop="datePublished" content="{{ page2.date | date_to_xmlschema }}">{% endif %}
+    {% if page2.last_modified_at %}<meta itemprop="dateModified" content="{{ page2.last_modified_at | date_to_xmlschema }}">{% endif %}
+
+    <div class="page2__inner-wrap">
+      {% unless page2.header.overlay_color or page2.header.overlay_image %}
+        <header>
+          <!-- {% if page2.title %}<h1 id="page2-title" class="page2__title p-name" itemprop="headline">
+            <a href="{{ page2.url | absolute_url }}" class="u-url" itemprop="url">{{ page2.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
+          </h1>{% endif %} -->
+          {% include page2__meta.html %}
+        </header>
+      {% endunless %}
+
+      <section class="page2__content e-content" itemprop="text">
+        {% if page2.toc %}
+          <aside class="sidebar__right {% if page2.toc_sticky %}sticky{% endif %}">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-{{ page2.toc_icon | default: 'file-alt' }}"></i> {{ page2.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page2" }}</h4></header>
+              {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
+            </nav>
+          </aside>
+        {% endif %}
+        {{ content }}
+        {% if page2.link %}<div><a href="{{ page2.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+      </section>
+
+      <footer class="page2__meta">
+        {% if site.data.ui-text[site.locale].meta_label %}
+          <h4 class="page2__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        {% endif %}
+        {% include page2__taxonomy.html %}
+        {% include page2__date.html %}
+      </footer>
+
+      {% if page2.share %}{% include social-share.html %}{% endif %}
+
+      {% include post_pagination.html %}
+    </div>
+
+    {% if jekyll.environment == 'production' and site.comments.provider and page2.comments %}
+      {% include comments.html %}
+    {% endif %}
+  </article>
+
+  {% comment %}<!-- only show related on a post page2 when `related: true` -->{% endcomment %}
+  {% if page2.id and page2.related and site.related_posts.size > 0 %}
+    <div class="page2__related">
+      <h2 class="page2__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
+      <div class="grid__wrapper">
+        {% for post in site.related_posts limit:4 %}
+          {% include archive-single.html type="grid" %}
+        {% endfor %}
+      </div>
+    </div>
+  {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
+  {% elsif page2.id and page2.related %}
+    <div class="page2__related">
+      <h2 class="page2__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
+      <div class="grid__wrapper">
+        {% for post in site.posts limit:4 %}
+          {% if post.id == page2.id %}
+            {% continue %}
+          {% endif %}
+          {% include archive-single.html type="grid" %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+</div>
