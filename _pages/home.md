@@ -4,7 +4,7 @@ permalink: /
 title: About
 author_profile: true
 header:
-  overlay_color: "#5e616c"
+  overlay_color: "#A7C7E7"
   overlay_image: /assets/website_banner.png
 classes: wide
 ---
