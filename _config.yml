@@ -103,13 +103,13 @@ analytics:
 author:
   name             : "Elizabeth K. McGeorge"
   avatar           : "/assets/prof_pic_cropped2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Ph.D. candidate in applied mathematics."
+  bio              : "Ph.D. candidate in applied mathematics at the University of Canterbury."
   location         : "Christchurch, New Zealand"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:liz.mcgeorge@pg.canterbury.ac.nz"
+      url: "mailto:liz.mcgeorge@pg.canterbury.ac.nz"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -121,7 +121,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/e-mcgeorge"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
