@@ -4,14 +4,5 @@ main:
     url: /
   - title: "CV"
     url: /assets/cv.pdf  
-  - title: "Publications"
-    url: /publications/
-  - title: "Presentations"
-    url: /presentations/
-  - title: "Projects"
-    url: /projects/
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Portfolio"
+    url: /portfolio/
