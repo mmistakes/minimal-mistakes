@@ -1,9 +1,10 @@
 ---
 title: "Kafka Streams 101"
-date: 2021-09-15 header:
-image: "/images/blog cover.jpg"
+date: 2021-09-15 
+header:
+  image: "/images/blog cover.jpg"
 tags: []
-excerpt: ""
+excerpt: "Apache Kafka is clearly the leading technology concerning message brokers, and Kafka Streams brings a complete stateful streaming system based directly on top of it. Let's see its primary features."
 ---
 
 Apache Kafka nowadays is clearly the leading technology concerning message brokers. It's scalable, resilient, and easy to use. Moreover, it leverages a bunch of exciting client libraries that offer a vast set of additional features. One of these libraries is _Kafka Streams_.
