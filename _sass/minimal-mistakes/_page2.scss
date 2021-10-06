@@ -1,91 +1,564 @@
----
-layout: default
----
+/* ==========================================================================
+   SINGLE page2/POST
+   ========================================================================== */
 
-{% if page2.header.overlay_color or page2.header.overlay_image or page2.header.image %}
-  {% include page2__hero.html %}
-{% elsif page2.header.video.id and page2.header.video.provider %}
-  {% include page2__hero_video.html %}
-{% endif %}
+#main {
+  @include clearfix;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  -webkit-animation: $intro-transition;
+  animation: $intro-transition;
+  max-width: 100%;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
 
-{% if page2.url != "/" and site.breadcrumbs %}
-  {% unless paginator %}
-    {% include breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
+  @include breakpoint($x-large) {
+    max-width: $max-width;
+  }
+}
 
-<div id="main" role="main">
-  {% include sidebar.html %}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+          flex-direction: column;
+}
 
-  <article class="page2 h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <!-- {% if page2.title %}<meta itemprop="headline" content="{{ page2.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %} -->
-    {% if page2.excerpt %}<meta itemprop="description" content="{{ page2.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page2.date %}<meta itemprop="datePublished" content="{{ page2.date | date_to_xmlschema }}">{% endif %}
-    {% if page2.last_modified_at %}<meta itemprop="dateModified" content="{{ page2.last_modified_at | date_to_xmlschema }}">{% endif %}
+.initial-content,
+.search-content {
+  flex: 1 0 auto;
+}
 
-    <div class="page2__inner-wrap">
-      {% unless page2.header.overlay_color or page2.header.overlay_image %}
-        <header>
-          <!-- {% if page2.title %}<h1 id="page2-title" class="page2__title p-name" itemprop="headline">
-            <a href="{{ page2.url | absolute_url }}" class="u-url" itemprop="url">{{ page2.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
-          </h1>{% endif %} -->
-          {% include page2__meta.html %}
-        </header>
-      {% endunless %}
+.page2 {
+  @include breakpoint($large) {
+    float: right;
+    width: calc(100% - #{$right-sidebar-width-narrow});
+    padding-right: $right-sidebar-width-narrow;
+  }
 
-      <section class="page2__content e-content" itemprop="text">
-        {% if page2.toc %}
-          <aside class="sidebar__right {% if page2.toc_sticky %}sticky{% endif %}">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-{{ page2.toc_icon | default: 'file-alt' }}"></i> {{ page2.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page2" }}</h4></header>
-              {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
-            </nav>
-          </aside>
-        {% endif %}
-        {{ content }}
-        {% if page2.link %}<div><a href="{{ page2.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-      </section>
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
+    padding-right: $right-sidebar-width;
+  }
 
-      <footer class="page2__meta">
-        {% if site.data.ui-text[site.locale].meta_label %}
-          <h4 class="page2__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
-        {% endif %}
-        {% include page2__taxonomy.html %}
-        {% include page2__date.html %}
-      </footer>
+  .page2__inner-wrap {
+    float: left;
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    clear: both;
 
-      {% if page2.share %}{% include social-share.html %}{% endif %}
+    .page2__content,
+    .page2__meta,
+    .page2__share {
+      position: relative;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+      clear: both;
+    }
+  }
+}
 
-      {% include post_pagination.html %}
-    </div>
+.page2__title {
+  margin-top: 0;
+  line-height: 1;
 
-    {% if jekyll.environment == 'production' and site.comments.provider and page2.comments %}
-      {% include comments.html %}
-    {% endif %}
-  </article>
+  a {
+    color: $text-color;
+    text-decoration: none;
+  }
 
-  {% comment %}<!-- only show related on a post page2 when `related: true` -->{% endcomment %}
-  {% if page2.id and page2.related and site.related_posts.size > 0 %}
-    <div class="page2__related">
-      <h2 class="page2__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
-      <div class="grid__wrapper">
-        {% for post in site.related_posts limit:4 %}
-          {% include archive-single.html type="grid" %}
-        {% endfor %}
-      </div>
-    </div>
-  {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
-  {% elsif page2.id and page2.related %}
-    <div class="page2__related">
-      <h2 class="page2__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
-      <div class="grid__wrapper">
-        {% for post in site.posts limit:4 %}
-          {% if post.id == page2.id %}
-            {% continue %}
-          {% endif %}
-          {% include archive-single.html type="grid" %}
-        {% endfor %}
-      </div>
-    </div>
-  {% endif %}
-</div>
+  & + .page2__meta {
+    margin-top: -0.5em;
+  }
+}
+
+.page2__lead {
+  font-family: $global-font-family;
+  font-size: $type-size-4;
+}
+
+.page2__content {
+  h2 {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid $border-color;
+  }
+
+	h1, h2, h3, h4, h5, h6 {
+		.header-link {
+			position: relative;
+			left: 0.5em;
+			opacity: 0;
+			font-size: 0.8em;
+			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
+			-moz-transition: opacity 0.2s ease-in-out 0.1s;
+			-o-transition: opacity 0.2s ease-in-out 0.1s;
+			transition: opacity 0.2s ease-in-out 0.1s;
+		}
+
+		&:hover .header-link {
+			opacity: 1;
+		}
+	}
+
+  p,
+  li,
+  dl {
+    font-size: 1em;
+  }
+
+  /* paragraph indents */
+  p {
+    margin: 0 0 $indent-var;
+
+    /* sibling indentation*/
+    @if $paragraph-indent == true {
+      & + p {
+        text-indent: $indent-var;
+        margin-top: -($indent-var);
+      }
+    }
+  }
+
+  a:not(.btn) {
+    &:hover {
+      text-decoration: underline;
+
+      img {
+        box-shadow: 0 0 10px rgba(#000, 0.25);
+      }
+    }
+  }
+
+  dt {
+    margin-top: 1em;
+    font-family: $sans-serif;
+    font-weight: bold;
+  }
+
+  dd {
+    margin-left: 1em;
+    font-family: $sans-serif;
+    font-size: $type-size-6;
+  }
+
+  .small {
+    font-size: $type-size-6;
+  }
+
+  /* blockquote citations */
+  blockquote + .small {
+    margin-top: -1.5em;
+    padding-left: 1.25rem;
+  }
+}
+
+.page2__hero {
+  position: relative;
+  margin-bottom: 2em;
+  @include clearfix;
+  -webkit-animation: $intro-transition;
+  animation: $intro-transition;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+
+  &--overlay {
+    position: relative;
+    margin-bottom: 2em;
+    padding: 3em 0;
+    @include clearfix;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-animation: $intro-transition;
+    animation: $intro-transition;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+
+    a {
+      color: #fff;
+    }
+
+    .wrapper {
+      padding-left: 1em;
+      padding-right: 1em;
+
+      @include breakpoint($x-large) {
+        max-width: $x-large;
+      }
+    }
+
+    .page2__title,
+    .page2__meta,
+    .page2__lead,
+    .btn {
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(#000, 0.5);
+    }
+
+    .page2__lead {
+      max-width: $medium;
+    }
+
+    .page2__title {
+      font-size: $type-size-2;
+
+      @include breakpoint($small) {
+        font-size: $type-size-1;
+      }
+    }
+  }
+}
+
+.page2__hero-image {
+  width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+.page2__hero-caption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 2px 5px;
+  color: #fff;
+  font-family: $caption-font-family;
+  font-size: $type-size-7;
+  background: #000;
+  text-align: right;
+  z-index: 5;
+  opacity: 0.5;
+  border-radius: $border-radius 0 0 0;
+
+  @include breakpoint($large) {
+    padding: 5px 10px;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/*
+   Social sharing
+   ========================================================================== */
+
+.page2__share {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid $border-color;
+
+  @include breakpoint(max-width $small) {
+    .btn span {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+  }
+}
+
+.page2__share-title {
+  margin-bottom: 10px;
+  font-size: $type-size-6;
+  text-transform: uppercase;
+}
+
+/*
+   page2 meta
+   ========================================================================== */
+
+.page2__meta {
+  margin-top: 2em;
+  color: $muted-text-color;
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.page2__meta-title {
+  margin-bottom: 10px;
+  font-size: $type-size-6;
+  text-transform: uppercase;
+}
+
+.page2__meta-sep::before {
+  content: "\2022";
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+/*
+   page2 taxonomy
+   ========================================================================== */
+
+.page2__taxonomy {
+  .sep {
+    display: none;
+  }
+
+  strong {
+    margin-right: 10px;
+  }
+}
+
+.page2__taxonomy-item {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 1px solid mix(#000, $border-color, 25%);
+  border-radius: $border-radius;
+
+  &:hover {
+    text-decoration: none;
+    color: $link-color-hover;
+  }
+}
+
+.taxonomy__section {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+
+  &:not(:last-child) {
+    border-bottom: solid 1px $border-color;
+  }
+
+  .archive__item-title {
+    margin-top: 0;
+  }
+
+  .archive__subtitle {
+    clear: both;
+    border: 0;
+  }
+
+  + .taxonomy__section {
+    margin-top: 2em;
+  }
+}
+
+.taxonomy__title {
+  margin-bottom: 0.5em;
+  color: $muted-text-color;
+}
+
+.taxonomy__count {
+  color: $muted-text-color;
+}
+
+.taxonomy__index {
+  display: grid;
+  grid-column-gap: 2em;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1.414em 0;
+  padding: 0;
+  font-size: 0.75em;
+  list-style: none;
+
+  @include breakpoint($large) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.25em 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.back-to-top {
+  display: block;
+  clear: both;
+  color: $muted-text-color;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  text-align: right;
+  text-decoration: none;
+}
+
+/*
+   Comments
+   ========================================================================== */
+
+.page2__comments {
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  clear: both;
+}
+
+.page2__comments-title {
+  margin-top: 2rem;
+  margin-bottom: 10px;
+  padding-top: 2rem;
+  font-size: $type-size-6;
+  border-top: 1px solid $border-color;
+  text-transform: uppercase;
+}
+
+.page2__comments-form {
+  -webkit-transition: $global-transition;
+  transition: $global-transition;
+
+  &.disabled {
+    input,
+    button,
+    textarea,
+    label {
+      pointer-events: none;
+      cursor: not-allowed;
+      filter: alpha(opacity=65);
+      box-shadow: none;
+      opacity: 0.65;
+    }
+  }
+}
+
+.comment {
+  @include clearfix();
+  margin: 1em 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.comment__avatar-wrapper {
+  float: left;
+  width: 60px;
+  height: 60px;
+
+  @include breakpoint($large) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.comment__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  @include breakpoint($large) {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    border: 1px solid $border-color;
+  }
+}
+
+.comment__content-wrapper {
+  float: right;
+  width: calc(100% - 60px);
+
+  @include breakpoint($large) {
+    width: calc(100% - 100px);
+  }
+}
+
+.comment__author {
+  margin: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.comment__date {
+  @extend .page2__meta;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/*
+   Related
+   ========================================================================== */
+
+.page2__related {
+  @include clearfix();
+  float: left;
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid $border-color;
+
+  @include breakpoint($large) {
+    float: right;
+    width: calc(100% - #{$right-sidebar-width-narrow});
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.page2__related-title {
+  margin-bottom: 10px;
+  font-size: $type-size-6;
+  text-transform: uppercase;
+}
+
+/*
+   Wide page2s
+   ========================================================================== */
+
+.wide {
+  .page2 {
+    @include breakpoint($large) {
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-right: 0;
+    }
+  }
+
+  .page2__related {
+    @include breakpoint($large) {
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-right: 0;
+    }
+  }
+}
