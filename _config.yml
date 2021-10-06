@@ -20,7 +20,7 @@ title                    : E. K. McGeorge # "Site title"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Elizabeth K. McGeorge"
-description              : "An amazing website."
+description              : "My personal websote."
 url                      : "https://e-mcgeorge.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -110,9 +110,6 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:liz.mcgeorge@pg.canterbury.ac.nz"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://e-mcgeorge.github.io/"
     - label: "University of Canterbury"
       icon: "fas fa-graduation-cap"
       url: "https://www.canterbury.ac.nz/engineering/schools/mathematics-statistics/postgraduate-study-and-research/accordion-3/thesis-students/elizabeth-mcgeorge.html"
@@ -121,7 +118,7 @@ author:
       url: "https://github.com/e-mcgeorge"
     - label: "ORCID"
       icon: "fab fa-orcid"
-      url: "https://orcid.org/my-orcid?orcid=0000-0001-5707-640X"
+      url: "https://orcid.org/0000-0001-5707-640X"
       
 
 # Site Footer
