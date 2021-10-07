@@ -43,10 +43,13 @@ A key parameter in ice flow modelling is basal slipping at the ice-bed interface
 
 [arXiv](https://arxiv.org/abs/2108.00854){: .btn .btn--warning}
 
-## Other projects
+## Personal projects
 
 ### Women in STEM
 
 ### Fluid mechanics in art
 
 ### Modelling dendritic growth
+
+## Selected undergraduate projects
+
