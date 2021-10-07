@@ -102,8 +102,8 @@ gallery3:
 
 toc: true
 ---
-<h2>V Pilot Designs en el Marketplace de MSFS</h2>
-<p>Ya se encuentran disponibles</p>
+**V Pilot Designs en el Marketplace de MSFS**
+*Ya se encuentran disponibles*
 
 # Colombia
 	
