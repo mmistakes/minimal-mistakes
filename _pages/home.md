@@ -51,6 +51,6 @@ Born overseas but raised in rural Canterbury, I have had the priviledge to call 
 </figure>
 
 My hobbies are mainly outdoors pursuits including
-- **Trail running/Tramping/Rogaining** - hobbies that take me to places less travelled and challenge me both mentally and physically.
+- **Trail running and tramping** - hobbies that take me to places less travelled and challenge me both mentally and physically.
 - **Skiing** - description
 - **Sailing** - description
