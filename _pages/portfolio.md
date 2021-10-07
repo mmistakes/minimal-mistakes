@@ -7,7 +7,8 @@ header:
     overlay_image: /assets/website_banner.png
 author_profile: true
 toc: true
-toc_title: "Navigation"
+toc_label: "Navigation"
+toc_icon: " "
 ---
 
 ## Skills
