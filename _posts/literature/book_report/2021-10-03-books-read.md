@@ -1,13 +1,13 @@
 ---
-title: "Books Read"
+title: "Reading List"
 layout: single
 categories:
   - book_report
-permalink: /categories/literature/book_report/books_read
+permalink: /categories/literature/book_report/reading_list
 toc: true
 classes: wide
 header:
-  overlay_image: "/assets/images/categories/literature/book_reports/books_read_2.jpg"
+  overlay_image: "/assets/images/categories/literature/book_reports/reading_list_1.jpg"
 ---
 
 # Overview
