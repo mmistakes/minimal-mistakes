@@ -47,7 +47,7 @@ Aside from my current doctoral research
   <img src="{{ site.url }}{{ site.baseurl }}/assets/sailing.jpeg" alt="">
 </figure>
 
-&nbsp  
+
 Born overseas but raised in rural Canterbury, I have had the priviledge to call New Zealand home for most of my life. It is, I think, to this upbringing that I owe my interest in environmental science. The onset of high school made the move to Christchurch necessary for schooling, and it was here that a few dedicated teachers sparked my enjoyment for mathematics.
 {: .text-justify}
 
