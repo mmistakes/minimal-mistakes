@@ -105,7 +105,6 @@ toc: true
 <h2>V Pilot Designs en el Marketplace de MSFS</h2>
 <p>Ya se encuentran disponibles</p><br>
   <br>
-
 # Colombia
 	
 ## SKRG
@@ -114,12 +113,12 @@ toc: true
   <br>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/4UE65pxD6AA" title="SKRG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><br></iframe>
   <br></p>
-##SKCG  
+## SKCG  
 <p><a href="https://vpilotdesigns.github.io/SKCG/"><strong>SKCG - Rafael Nuñez Airport - Cartagena, Colombia</strong></a><br>
   <br>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/i7TaPNcUuOQ" title="SKCG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><br></iframe><br>
   <br></p>
-##SKMD  
+## SKMD  
 <p>SKMD - Olaya Herrera - Medellin, Colombia<br>
   <br>
   ....Pronto SKBO - El Dorado Intl - Bogota, Colombia<br></p>
