@@ -102,6 +102,25 @@ gallery3:
 
 toc: true
 ---
+<h2>V Pilot Designs en el Marketplace de MSFS</h2>
+<p>Ya se encuentran disponibles<br>
+  <br>
+  <a href="https://vpilotdesigns.github.io/SKRG/"><strong>SKRG - Jose Maria Cordová Airport - Rionegro, Colombia</strong></a><br>
+  <br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/4UE65pxD6AA" title="SKRG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><br></iframe>
+  <br>
+  <a href="https://vpilotdesigns.github.io/SKCG/"><strong>SKCG - Rafael Nuñez Airport - Cartagena, Colombia</strong></a><br>
+  <br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/i7TaPNcUuOQ" title="SKCG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><br></iframe><br>
+  <br>
+  SKMD - Olaya Herrera - Medellin, Colombia<br>
+  <br>
+  ....Pronto SKBO - El Dorado Intl - Bogota, Colombia<br></p>
+
+<img src="/assets/images/marketplace.png" alt="Trulli" width="100%" height="333">
+<br>
+<br>
+
 En esta sección encontraras Aeropuertos y Arreglos para Microsoft Flight Simulator 2020
 
 In this section you will find Airports and Fixes for Microsoft Flight Simulator 2020
