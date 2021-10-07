@@ -3,15 +3,11 @@ main:
   - title: "About"
     url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "DataScience"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
+    url: /datascience/
   - title: "Python"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
+    url: /python/
   - title: "Web"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
+    url: /web/
   - title: "Essay"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Category"
-    url: /categories/
-  - title: "Tag"
-    url: /tags/
+    url: /essay/
   
