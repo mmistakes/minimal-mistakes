@@ -102,9 +102,9 @@ gallery3:
 
 toc: true
 ---
-#Colombia
+# Colombia
 	
-##SKRG
+# #SKRG
 
 <h2>V Pilot Designs en el Marketplace de MSFS</h2>
 <p>Ya se encuentran disponibles</p><br>
