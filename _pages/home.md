@@ -21,12 +21,12 @@ My initial interest in pursuing further studies in applied mathematics was drive
 - interest in environmental science
 - interest in interdisciplinary research
 
-While many problems in mathematics can be approched from a theoretical standpoint, there are many more which may never be answered without the power of computation. I wanted to use computation as a tool to explore problems which do not have solutions in theory. In particular, I am interested in the use of open-source software and packages to help explore phenomena in the physical world. This led me to the field of computational fluid dynamics which is the umbrella underwhich my doctoral research fits.
+While many problems in mathematics can be approched from a theoretical standpoint, there are many more which may never be answered without the power of computation. I wanted to use computational methods as a tool to explore problems which do not have solutions in theory. In particular, I am interested in the use of open-source software and packages to help explore phenomena in the physical world. This led me to the field of computational fluid dynamics, which is the umbrella under which my doctoral research fits.
 
 In geophysical flows, often the only measurements available are macroscopic ones from the free surface, such as velocity or elevation. Therefore, to accurately model the flow, methods are needed to estimate those parameters which cannot be measured but are necessary. The blanket term for this type of parameter estimation problem is an *inverse problems*. These inverse problems, as related to geophysical flows, are the focus for my research.
 {: .text-justify}
 
-I consider science communication to be a core skill that all students should be honing. Due to the applied nature of my research, I have had many opprtunites to present to interdisciplenary groups. These opportunities to practice science communication have been vital me as a young scientist. Due to the complexity of present and future problems facing society, it is increasingly important to be able to work in interdisciplinary research groups and communicate our capabilities, limitations, and conclusions.
+Finally, I consider science communication to be a core skill that all students should be honing. Due to the applied nature of my research, I have had many opprtunites to present to interdisciplenary groups. These opportunities to practice science communication have been vital me as a young scientist. Due to the complexity of present and future problems facing society, it is increasingly important to be able to work in interdisciplinary research groups and communicate our capabilities, limitations, and conclusions.
 {: .text-justify}
 
 Throughout my PhD candiature, I have acquired experience in:
@@ -37,6 +37,7 @@ Throughout my PhD candiature, I have acquired experience in:
 
 ## Other research interests
 
+Aside from my current doctoral research
 
 
 ## Personal background
