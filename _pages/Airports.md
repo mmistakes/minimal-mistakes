@@ -1,5 +1,5 @@
 ---
-permalink: /airports/
+permalink: /Airports/
 title: "Escenarios/Sceneries"
 layout: single
 gallery1:
