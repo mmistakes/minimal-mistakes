@@ -1,6 +1,6 @@
 ---
 permalink: /sceneries/
-title: "Escenarios/Sceneries"
+title: "Free Addons"
 layout: single
 gallery1:
   - url: /assets/images/SKSG/04.png
