@@ -20,6 +20,8 @@ toc_icon: " "
 
 ### Bedrock reconstruction from free surface data for unidirectional glacier flow with basal slip
 
+[arXiv]("https://arxiv.org/abs/2006.13310"){: .btn .btn--warning}
+
 ### An augmented Lagrangian algorithm for recovery of ice thickness in unidirectional flow using the Shallow Ice Approximation
 
 ## Other projects
