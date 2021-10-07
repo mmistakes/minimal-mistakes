@@ -11,5 +11,7 @@ main:
   - title: "Essay"
     url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Category"
-    url: /Categories/
+    url: /categories/
+  - title: "Tag"
+    url: /tags/
   
