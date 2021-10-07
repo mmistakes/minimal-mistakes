@@ -47,10 +47,10 @@ Aside from my current doctoral research
   <img src="{{ site.url }}{{ site.baseurl }}/assets/sailing.jpeg" alt="">
 </figure>
 
-Born overseas but raised in rural Canterbury, I have had the priviledge to call New Zealand home for most of my life. 
+Born overseas but raised in rural Canterbury, I have had the priviledge to call New Zealand home for most of my life. It is, I think, to this upbringing that I owe my interest in environmental science. The onset of high school made the move to Christchurch necessary for schooling, and it was here that a few dedicated teachers sparked my enjoyment for mathematics.
 {: .text-justify}
 
-My hobbies are mainly outdoors pursuits that take me to places less travelled. I enjoy that they challenge me both mentally and physically.
+My hobbies are mainly outdoors pursuits that take me to places less travelled. I enjoy the challenge they present, both mentally and physically.
 - Trail running and tramping
 - Skiing
 - Sailing
