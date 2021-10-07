@@ -35,7 +35,7 @@ Glacier ice flow is shaped and defined by several properties, including the bedr
 
 *McGeorge, E. K., Sellier, M., Moyers-Gonzalez, M., Wilson, P. L.*
 
-Submitted for review.
+Submitted for review 28 July, 2021.
 
 **Abstract**
 
