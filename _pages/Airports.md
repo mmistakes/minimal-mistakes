@@ -102,13 +102,12 @@ gallery3:
 
 toc: true
 ---
-# Colombia
-	
-# #SKRG
-
 <h2>V Pilot Designs en el Marketplace de MSFS</h2>
 <p>Ya se encuentran disponibles</p><br>
   <br>
+# Colombia
+	
+## SKRG
 
 <p><a href="https://vpilotdesigns.github.io/SKRG/"><strong>SKRG - Jose Maria Cordová Airport - Rionegro, Colombia</strong></a><br>
   <br>
