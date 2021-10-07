@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "Escenarios/Sceneries"
+  - title: "Payware Airports"
+    url: /Airports/
+  - title: "Free Addons"
     url: /sceneries/
-  - title: "Bush Trips/Missions"
-    url: /missions/
   - title: "Videos"
     url: /video-archive/
   - title: "Utilities/Links"
