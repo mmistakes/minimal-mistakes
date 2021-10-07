@@ -121,12 +121,12 @@ toc: true
   <br></p>
   
 ## SKMD  
-<p>SKMD - Olaya Herrera - Medellin, Colombia<br>
+<p>SKMD - Olaya Herrera - Medellin, Colombia</p>
   
 ## SKBO
-  ....Pronto SKBO - El Dorado Intl - Bogota, Colombia<br></p>
+  <p>....Pronto SKBO - El Dorado Intl - Bogota, Colombia<br></p>
 
-#Como conseguirlos/How to find
+# Como conseguirlos/How to find
 <img src="/assets/images/marketplace.png" alt="Trulli" width="100%" height="333">
 <br>
 <br>
