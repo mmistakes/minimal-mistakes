@@ -10,4 +10,5 @@ main:
     url: /web/
   - title: "Essay"
     url: /essay/
-  
+  - title: "Category"
+    url: /categories/
