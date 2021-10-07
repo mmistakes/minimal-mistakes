@@ -47,10 +47,8 @@ Born overseas but raised in rural Canterbury, I have had the priviledge to call 
 
 <figure style="width: 30%" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/canada.jpg" alt="">
-</figure>
-<figure style="width: 30%" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/sailing.jpeg" alt="">
-</figure> 
+</figure>
 
 My hobbies are mainly outdoors pursuits including
 - **Trail running/Tramping/Rogaining** - hobbies that take me to places less travelled and challenge me both mentally and physically.
