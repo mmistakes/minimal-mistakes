@@ -97,14 +97,34 @@ gallery3:
     image_path: /assets/images/SQSY/SQSY 07.png
     alt: "Aeropuerto El Espino, Boyacá, Colombia"
     title: "Aeropuerto El Espino, Boyacá, Colombia"
-  
+gallery4:
+  - url: /assets/bushtolima/00.jpg
+    image_path: /assets/bushtolima/00.jpg
+    alt: "Bush Trips por Colombia Parte 1 - Tolima"
+    title: "Bush Trips por Colombia Parte 1 - Tolima"
+  - url: /assets/bushtolima/01.png
+    image_path: /assets/bushtolima/01.png
+    alt: "Bush Trips por Colombia Parte 1 - Tolima"
+    title: "Bush Trips por Colombia Parte 1 - Tolima"
+  - url: /assets/bushtolima/04.png
+    image_path: /assets/bushtolima/04.png
+    alt: "Bush Trips por Colombia Parte 1 - Tolima"
+    title: "Bush Trips por Colombia Parte 1 - Tolima"
+  - url: /assets/bushtolima/02.png
+    image_path: /assets/bushtolima/02.png
+    alt: "Bush Trips por Colombia Parte 1 - Tolima"
+    title: "Bush Trips por Colombia Parte 1 - Tolima"
+  - url: /assets/bushtolima/03.png
+    image_path: /assets/bushtolima/03.png
+    alt: "Bush Trips por Colombia Parte 1 - Tolima"
+    title: "Bush Trips por Colombia Parte 1 - Tolima"
     
 
 toc: true
 ---
-En esta sección encontraras Aeropuertos y Arreglos para Microsoft Flight Simulator 2020
+En esta sección encontraras Aeropuertos, Arreglos y Bush Trips para Microsoft Flight Simulator 2020
 
-In this section you will find Airports and Fixes for Microsoft Flight Simulator 2020
+In this section you will find Airports, Fixes and Bush trips for Microsoft Flight Simulator 2020
 
 Considera apoyarme con una donación para continuar creando contenido.
 
@@ -149,6 +169,26 @@ Please consider supporting me to continue creating more content.
 
 {% include gallery id="gallery3" caption="Aeropuerto El Espino, Boyacá, Colombia" %}
 [Descargar/Download](https://vpilotdesigns.github.io/assets/vpilotdesigns-sqsy.zip)
+
+Bush Trips por Colombia
+
+Considera apoyarme con una donación para continuar creando contenido.
+
+Please consider supporting me to continue creating more content.
+
+<a href="https://www.buymeacoffee.com/vpilot"><img src="https://img.buymeacoffee.com/button-api/?text=Gastame una pizza&emoji=🍕&slug=vpilot&button_colour=79D6B5&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"></a>
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6T46LTPJDBWKY)
+
+
+# Bush Trips/Missions/Misiones
+
+## Colombia
+
+### Parte 1 - Tolima
+
+{% include gallery id="gallery4" caption="Bush Trips por Colombia Parte 1 - Tolima" %}
+[Descargar/Download](https://vpilotdesigns.github.io/assets/coltolima.zip)
 
 <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="vpilot" data-description="Apoyame comprandome un Café!" data-message="Gracias por descargar. Ahora puedes invitarme a un Café!" data-color="#79D6B5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
