@@ -10,6 +10,6 @@ main:
     url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Essay"
     url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title:
+  - title: "Category"
     url: /Category/
   
