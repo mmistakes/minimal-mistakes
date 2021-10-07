@@ -2,6 +2,8 @@
 main:
   - title: "About"
     url: /about/
+  - title: "Category"
+    url: /categories/
   - title: "DataScience"
     url: /datascience/
   - title: "Python"
