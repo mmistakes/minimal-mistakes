@@ -42,15 +42,15 @@ Aside from my current doctoral research
 
 ## Personal background
 
-Born overseas but raised in rural Canterbury, I have had the priviledge to call New Zealand home for most of my life. 
-{: .text-justify}
-
 <figure style="width: 30%" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/canada.jpg" alt="">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/sailing.jpeg" alt="">
 </figure>
 
-My hobbies are mainly outdoors pursuits including
-- **Trail running and tramping** - hobbies that take me to places less travelled and challenge me both mentally and physically.
-- **Skiing** - description
-- **Sailing** - description
+Born overseas but raised in rural Canterbury, I have had the priviledge to call New Zealand home for most of my life. 
+{: .text-justify}
+
+My hobbies are mainly outdoors pursuits that take me to places less travelled. I enjoy that they challenge me both mentally and physically.
+- Trail running and tramping
+- Skiing
+- Sailing
