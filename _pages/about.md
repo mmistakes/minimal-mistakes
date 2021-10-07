@@ -1,11 +1,10 @@
 ---
 title: "About"
 permalink: /about/
-excerpt: "about.md"
+layout: single
 toc: true
 toc_sticky: true
 toc_label: "MYSELF"
-tags: [About]
 ---
 
 Introduce
