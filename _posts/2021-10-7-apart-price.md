@@ -50,7 +50,7 @@ df.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -132,11 +132,12 @@ df.tail()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
 </style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -247,7 +248,7 @@ df.info()
      4   분양가격(제곱미터)  5564 non-null   object
     dtypes: int64(2), object(3)
     memory usage: 235.9+ KB
-    
+
 
 
 ```python
@@ -271,7 +272,7 @@ df.info()
      5   분양가격        5548 non-null   float64
     dtypes: float64(1), int64(2), object(3)
     memory usage: 283.0+ KB
-    
+
 
 
 ```python
@@ -323,7 +324,7 @@ df.info()
      6   전용면적        6035 non-null   object 
     dtypes: float64(1), int64(2), object(4)
     memory usage: 330.2+ KB
-    
+
 
 
 ```python
@@ -343,7 +344,7 @@ df
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -472,14 +473,7 @@ g.plot()
 
     <AxesSubplot:xlabel='지역명'>
 
-
-
-
-    
-![png](output_17_1.png)
-    
-
-
+![output_17_1](../images/2021-10-7-apart-price/output_17_1.png)
 
 ```python
 # 전용면적으로 분양가격의 평균을 구하고 시각화
@@ -492,14 +486,7 @@ df.groupby(["전용면적"])["분양가격"].mean().plot.bar(rot=0)
 
     <AxesSubplot:xlabel='전용면적'>
 
-
-
-
-    
-![png](output_18_1.png)
-    
-
-
+![output_18_1](../images/2021-10-7-apart-price/output_18_1.png)
 
 ```python
 # 지역명, 전용면적으로 분양가격의 평균을 구하기
@@ -574,7 +561,7 @@ df.pivot_table(index="지역명", values="분양가격")
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -685,7 +672,7 @@ df.pivot_table(index="전용면적", values="분양가격")
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -745,7 +732,7 @@ df.groupby(["전용면적", "지역명"])["분양가격"].mean().unstack().round
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -922,7 +909,7 @@ df.pivot_table(index="전용면적", columns="지역명", values="분양가격",
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1097,7 +1084,7 @@ df.pivot_table(index="연도", columns="지역명", values="분양가격", aggfu
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1310,10 +1297,8 @@ df.groupby(["지역명"])["분양가격"].mean().plot()
 
 
 
-
-    
-![png](output_29_1.png)
-    
+​    ![output_29_1](../images/2021-10-7-apart-price/output_29_1.png)
+​    
 
 
 
@@ -1328,11 +1313,7 @@ df.groupby(["지역명"])["분양가격"].mean().plot.bar(rot=30)
 
     <AxesSubplot:xlabel='지역명'>
 
-
-
-
-    
-![png](output_30_1.png)
+![output_30_1](../images/2021-10-7-apart-price/output_30_1.png)
     
 
 
@@ -1350,12 +1331,7 @@ df.groupby(["전용면적"])["분양가격"].mean().plot.bar(rot=30)
 
     <AxesSubplot:xlabel='전용면적'>
 
-
-
-
-    
-![png](output_32_1.png)
-    
+![output_32_1](../images/2021-10-7-apart-price/output_32_1.png)
 
 
 
@@ -1370,11 +1346,10 @@ df.pivot_table(index="연도", values="분양가격", aggfunc="mean").plot.bar(r
 
     <AxesSubplot:xlabel='연도'>
 
+![output_33_1](../images/2021-10-7-apart-price/output_33_1.png)
 
 
 
-    
-![png](output_33_1.png)
     
 
 
@@ -1411,12 +1386,7 @@ df.pivot_table(index="월", columns="연도", values="분양가격").plot.box()
 
     <AxesSubplot:>
 
-
-
-
-    
-![png](output_35_1.png)
-    
+![output_35_1](../images/2021-10-7-apart-price/output_35_1.png)
 
 
 
@@ -1436,14 +1406,8 @@ df.pivot_table(index="월", columns=["연도", "전용면적"], values="분양�
 
     <AxesSubplot:>
 
-
-
-
+![output_37_1](../images/2021-10-7-apart-price/output_37_1.png)
     
-![png](output_37_1.png)
-    
-
-
 
 ```python
 # index를 월, columns 를 지역명으로 구하고 분양가격 으로 pivot_table 을 구하고 선그래프를 그립니다.
@@ -1457,11 +1421,7 @@ df.pivot_table(index="월", columns="지역명", values="분양가격").plot()
 
     <AxesSubplot:xlabel='월'>
 
-
-
-
-    
-![png](output_38_1.png)
+![output_38_1](../images/2021-10-7-apart-price/output_38_1.png)
     
 
 
@@ -1484,7 +1444,7 @@ df.head(1)
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1528,11 +1488,7 @@ sns.barplot(data=df, x="지역명", y="분양가격", ci=None)
 
     <AxesSubplot:xlabel='지역명', ylabel='분양가격'>
 
-
-
-
-    
-![png](output_41_1.png)
+![output_41_1](../images/2021-10-7-apart-price/output_41_1.png)
     
 
 
@@ -1549,12 +1505,7 @@ sns.barplot(data=df, x="연도", y="분양가격", ci=None)
 
     <AxesSubplot:xlabel='연도', ylabel='분양가격'>
 
-
-
-
-    
-![png](output_42_1.png)
-    
+![output_42_1](../images/2021-10-7-apart-price/output_42_1.png)
 
 
 
@@ -1575,11 +1526,7 @@ sns.catplot(data=df, x="지역명", y="분양가격", ci=None)
 
     <Figure size 576x432 with 0 Axes>
 
-
-
-    
-![png](output_43_2.png)
-    
+![output_43_2](../images/2021-10-7-apart-price/output_43_2.png)
 
 
 https://stackoverflow.com/questions/30490740/move-legend-outside-figure-in-seaborn-tsplot
@@ -1597,14 +1544,7 @@ sns.lineplot(data=df, x="연도", y="분양가격", hue="지역명")
 
     <AxesSubplot:xlabel='연도', ylabel='분양가격'>
 
-
-
-
-    
-![png](output_45_1.png)
-    
-
-
+![output_45_1](../images/2021-10-7-apart-price/output_45_1.png)
 
 ```python
 # relplot 으로 서브플롯 그리기
@@ -1617,12 +1557,7 @@ sns.relplot(data=df, x="연도", y="분양가격", hue="지역명")
 
     <seaborn.axisgrid.FacetGrid at 0x1b8fc529a90>
 
-
-
-
-    
-![png](output_46_1.png)
-    
+![output_46_1](../images/2021-10-7-apart-price/output_46_1.png)
 
 
 ### boxplot과 violinplot
@@ -1644,12 +1579,7 @@ sns.boxplot(data=df, x="연도", y="분양가격")
 
     <AxesSubplot:xlabel='연도', ylabel='분양가격'>
 
-
-
-
-    
-![png](output_48_1.png)
-    
+![output_48_1](../images/2021-10-7-apart-price/output_48_1.png)
 
 
 
@@ -1665,14 +1595,7 @@ sns.boxplot(data=df, x="연도", y="분양가격", hue="전용면적")
 
     <AxesSubplot:xlabel='연도', ylabel='분양가격'>
 
-
-
-
-    
-![png](output_49_1.png)
-    
-
-
+![output_49_1](../images/2021-10-7-apart-price/output_49_1.png)
 
 ```python
 # 연도별 평당분양가격을 violinplot으로 그려봅니다.
@@ -1685,12 +1608,7 @@ sns.violinplot(data=df, x="연도", y="분양가격")
 
     <AxesSubplot:xlabel='연도', ylabel='분양가격'>
 
-
-
-
-    
-![png](output_50_1.png)
-    
+![output_50_1](../images/2021-10-7-apart-price/output_50_1.png)
 
 
 ### lmplot과 swarmplot 
@@ -1708,14 +1626,7 @@ sns.lmplot(data=df, x="연도", y="분양가격", hue="전용면적")
 
     <seaborn.axisgrid.FacetGrid at 0x1b8833a5850>
 
-
-
-
-    
-![png](output_52_1.png)
-    
-
-
+![output_52_1](../images/2021-10-7-apart-price/output_52_1.png)
 
 ```python
 # 연도별 평당분양가격을 swarmplot 으로 그려봅니다. 
@@ -1738,19 +1649,12 @@ sns.swarmplot(data=df, x="연도", y="분양가격", hue="전용면적")
       warnings.warn(msg, UserWarning)
     C:\ProgramData\Anaconda3\lib\site-packages\seaborn\categorical.py:1296: UserWarning: 75.3% of the points cannot be placed; you may want to decrease the size of the markers or use stripplot.
       warnings.warn(msg, UserWarning)
-    
-
 
 
 
     <AxesSubplot:xlabel='연도', ylabel='분양가격'>
 
-
-
-
-    
-![png](output_53_2.png)
-    
+![output_53_2](../images/2021-10-7-apart-price/output_53_2.png)
 
 
 ### 이상치 보기
@@ -1830,19 +1734,14 @@ sns.distplot(price)
 
     C:\ProgramData\Anaconda3\lib\site-packages\seaborn\distributions.py:2557: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
       warnings.warn(msg, FutureWarning)
-    
+
 
 
 
 
     <AxesSubplot:xlabel='분양가격', ylabel='Density'>
 
-
-
-
-    
-![png](output_60_2.png)
-    
+![output_60_2](../images/2021-10-7-apart-price/output_60_2.png)
 
 
 
@@ -1856,21 +1755,14 @@ sns.distplot(price, hist=False, rug=True)
       warnings.warn(msg, FutureWarning)
     C:\ProgramData\Anaconda3\lib\site-packages\seaborn\distributions.py:2056: FutureWarning: The `axis` variable is no longer used and will be removed. Instead, assign variables directly to `x` or `y`.
       warnings.warn(msg, FutureWarning)
-    
+
 
 
 
 
     <AxesSubplot:xlabel='분양가격', ylabel='Density'>
 
-
-
-
-    
-![png](output_61_2.png)
-    
-
-
+![output_61_2](../images/2021-10-7-apart-price/output_61_2.png)
 
 ```python
 sns.kdeplot(price, cumulative=True)
@@ -1881,12 +1773,10 @@ sns.kdeplot(price, cumulative=True)
 
     <AxesSubplot:xlabel='분양가격', ylabel='Density'>
 
+![output_62_1](../images/2021-10-7-apart-price/output_62_1.png)
 
 
 
-    
-![png](output_62_1.png)
-    
 
 
 * distplot을 산마루 형태의 ridge plot으로 그리기
@@ -1969,19 +1859,14 @@ g.map(sns.distplot, "분양가격", hist=False, rug=True)
       warnings.warn(msg, FutureWarning)
     C:\ProgramData\Anaconda3\lib\site-packages\seaborn\distributions.py:2056: FutureWarning: The `axis` variable is no longer used and will be removed. Instead, assign variables directly to `x` or `y`.
       warnings.warn(msg, FutureWarning)
-    
+
 
 
 
 
     <seaborn.axisgrid.FacetGrid at 0x1b88797f4c0>
 
-
-
-
-    
-![png](output_64_2.png)
-    
+![output_64_2](../images/2021-10-7-apart-price/output_64_2.png)
 
 
 
@@ -1997,12 +1882,7 @@ sns.pairplot(df_notnull, hue="지역명")
 
     <seaborn.axisgrid.PairGrid at 0x1b8f2297130>
 
-
-
-
-    
-![png](output_65_1.png)
-    
+![output_65_1](../images/2021-10-7-apart-price/output_65_1.png)
 
 
 
