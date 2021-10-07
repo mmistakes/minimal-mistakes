@@ -105,15 +105,19 @@ toc: true
 <h2>V Pilot Designs en el Marketplace de MSFS</h2>
 <p>Ya se encuentran disponibles<br>
   <br>
-  <a href="https://vpilotdesigns.github.io/SKRG/"><strong>SKRG - Jose Maria Cordová Airport - Rionegro, Colombia</strong></a><br>
+# Colombia
+##SKRG
+<a href="https://vpilotdesigns.github.io/SKRG/"><strong>SKRG - Jose Maria Cordová Airport - Rionegro, Colombia</strong></a><br>
   <br>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/4UE65pxD6AA" title="SKRG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><br></iframe>
   <br>
-  <a href="https://vpilotdesigns.github.io/SKCG/"><strong>SKCG - Rafael Nuñez Airport - Cartagena, Colombia</strong></a><br>
+##SKCG  
+<a href="https://vpilotdesigns.github.io/SKCG/"><strong>SKCG - Rafael Nuñez Airport - Cartagena, Colombia</strong></a><br>
   <br>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/i7TaPNcUuOQ" title="SKCG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><br></iframe><br>
   <br>
-  SKMD - Olaya Herrera - Medellin, Colombia<br>
+##SKMD  
+SKMD - Olaya Herrera - Medellin, Colombia<br>
   <br>
   ....Pronto SKBO - El Dorado Intl - Bogota, Colombia<br></p>
 
@@ -133,12 +137,6 @@ Please consider supporting me to continue creating more content.
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6T46LTPJDBWKY)
 
-
-# Aeropuertos
-
-## Colombia
-
-### San Gil SKSG
 
 {% include video id="jftRM0STYKo" provider="youtube" %}
 
@@ -160,11 +158,11 @@ Please consider supporting me to continue creating more content.
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-### Nuquí SKNQ
+
 
 {% include gallery id="gallery2" caption="Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia" %}
 [Descargar/Download](https://vpilotdesigns.github.io/assets/vpilotdesigns-airport-sknq.zip)
-### El Espino SQSY
+El Espino SQSY
 
 {% include gallery id="gallery3" caption="Aeropuerto El Espino, Boyacá, Colombia" %}
 [Descargar/Download](https://vpilotdesigns.github.io/assets/vpilotdesigns-sqsy.zip)
