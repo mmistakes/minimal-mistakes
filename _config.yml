@@ -113,28 +113,28 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url : "https://twitter.com/m_alexrods"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
+    - label: "Linkedin"
+      icon : "fab fa-fw fa-linkedin"
+      url  : "https://www.linkedin.com/in/malexrodsan/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url : "https://github.com/alexrods/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-    - label: "Linkedin"
-      icon : "fab fa-fw fa-linkedin"
-      url  : "https://www.linkedin.com/in/malexrodsan/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url : "https://twitter.com/m_alexrods"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url : "https://twitter.com/m_alexrods"
+    - label: "Linkedin"
+      icon : "fab fa-fw fa-linkedin"
+      url  : "https://www.linkedin.com/in/malexrodsan/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
@@ -149,10 +149,10 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
-    - label: "Linkedin"
-      icon : "fab fa-fw fa-linkedin"
-      url  : "https://www.linkedin.com/in/malexrodsan/"
+      # url:    
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url : "https://twitter.com/m_alexrods"
 
 
 # Reading Files
