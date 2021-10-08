@@ -101,13 +101,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Taehwan Kim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Process Monitoring of Additive Manufacturing"
+  location         : "SKKU"
+  email            : "kth960116@gmail.com"
   links:
-    - label: "Email"
+    - label: "kth960116@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
     - label: "Website"
