@@ -38,7 +38,11 @@ Throughout my PhD candiature, I have acquired experience in:
 
 ## Other research interests
 
-Aside from my current doctoral research
+Aside from my current doctoral research I am interested in:
+- science communication,
+- diversity in STEM,
+- application of my current algorithms and ideas to other fluid flows, such as lava,
+- use of neural networks in parameter estimations in differential equations (this is a relatively new field of research),
 
 
 ## Personal background
