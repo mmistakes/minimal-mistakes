@@ -21,18 +21,18 @@ My initial interest in pursuing further studies in applied mathematics was drive
 - interest in environmental science
 - interest in interdisciplinary research
 
-While many problems in mathematics can be approched from a theoretical standpoint, there are many more which may never be answered without the power of computation. I wanted to use computational methods as a tool to explore problems which do not have solutions in theory. In particular, I am interested in the use of open-source software and packages to help explore phenomena in the physical world. This led me to the field of computational fluid dynamics, which is the umbrella under which my doctoral research fits.
+While many problems in mathematics can be approached from a theoretical standpoint, there are many more which may never be answered without the power of computation. I wanted to use computational methods as a tool to explore problems which do not have solutions in theory. In particular, I am interested in the use of open-source software and packages to help explore phenomena in the physical world. This led me to the field of computational fluid dynamics, which is the umbrella under which my doctoral research fits.
 {: .text-justify}
 
 In geophysical flows, often the only measurements available are macroscopic ones from the free surface, such as velocity or elevation. Therefore, to accurately model the flow, methods are needed to estimate those parameters which cannot be measured but are necessary. The blanket term for this type of parameter estimation problem is an *inverse problems*. These inverse problems, as related to geophysical flows, are the focus for my research.
 {: .text-justify}
 
-Finally, I consider science communication to be a core skill that all students should be honing. Due to the applied nature of my research, I have had many opprtunites to present to interdisciplenary groups. These opportunities to practice science communication have been vital me as a young scientist. Due to the complexity of present and future problems facing society, it is increasingly important to be able to work in interdisciplinary research groups and communicate our capabilities, limitations, and conclusions.
+Finally, I consider science communication to be a core skill that all students should be honing. Due to the applied nature of my research, I have had many opportunities to present to interdisciplinary groups. These opportunities to practice science communication have been vital me as a young scientist. Due to the complexity of present and future problems facing society, it is increasingly important to be able to work in interdisciplinary research groups and communicate our capabilities, limitations, and conclusions.
 {: .text-justify}
 
-Throughout my PhD candiature, I have acquired experience in:
+Throughout my PhD candidature, I have acquired experience in:
 - Applying algorithms and models from literature
-- Writing and coding optimisation aglortihms for use with Python libraries (FEniCS, dolfin-adjoint)
+- Writing and coding optimisation algorithms for use with Python libraries (FEniCS, dolfin-adjoint)
 - Cleaning, filtering transforming data with Python libraries (numpy, scipy)
 - Data visualisation (matplotlib, Paraview)
 
@@ -51,7 +51,7 @@ Aside from my current doctoral research I am interested in:
   <img src="{{ site.url }}{{ site.baseurl }}/assets/sailing.jpeg" alt="">
 </figure>
   
-Born overseas but raised in rural Canterbury, I have had the priviledge to call New Zealand home for most of my life. It is, I think, to this upbringing that I owe my interest in environmental science. The onset of high school made the move to Christchurch necessary for schooling, and it was here that a few dedicated teachers sparked my enjoyment for mathematics.
+Born overseas but raised in rural Canterbury, I have had the privilege to call New Zealand home for most of my life. It is, I think, to this upbringing that I owe my interest in environmental science. The onset of high school made the move to Christchurch necessary for schooling, and it was here that a few dedicated teachers sparked my enjoyment for mathematics.
 {: .text-justify}
 
 My hobbies are mainly outdoors pursuits that take me to places less travelled. I enjoy the challenge they present, both mentally and physically.
