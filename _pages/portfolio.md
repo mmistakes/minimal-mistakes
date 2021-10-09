@@ -12,9 +12,9 @@ toc_icon: " "
 ---
 
 ## Skills
-**Tools**: MATLAB, Python, Git, Command Line, Excel
+**Tools**: MATLAB, Python, Sagemath, Git, Command Line, Excel, R
 
-**Libraries**: FEniCS, dolfin-adjoint, NumPy, matplotlib, pandas
+**Libraries**: FEniCS, dolfin-adjoint, NumPy, matplotlib, SciPy, pandas
 
 ## Publications
 
@@ -43,6 +43,7 @@ A key parameter in ice flow modelling is basal slipping at the ice-bed interface
 
 [arXiv](https://arxiv.org/abs/2108.00854){: .btn .btn--warning}
 
+<!--
 ## Personal projects
 
 ### Women in STEM
@@ -52,4 +53,5 @@ A key parameter in ice flow modelling is basal slipping at the ice-bed interface
 ### Modelling dendritic growth
 
 ## Selected undergraduate projects
+-->
 
