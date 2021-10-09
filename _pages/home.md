@@ -22,6 +22,7 @@ My initial interest in pursuing further studies in applied mathematics was drive
 - interest in interdisciplinary research
 
 While many problems in mathematics can be approched from a theoretical standpoint, there are many more which may never be answered without the power of computation. I wanted to use computational methods as a tool to explore problems which do not have solutions in theory. In particular, I am interested in the use of open-source software and packages to help explore phenomena in the physical world. This led me to the field of computational fluid dynamics, which is the umbrella under which my doctoral research fits.
+{: .text-justify}
 
 In geophysical flows, often the only measurements available are macroscopic ones from the free surface, such as velocity or elevation. Therefore, to accurately model the flow, methods are needed to estimate those parameters which cannot be measured but are necessary. The blanket term for this type of parameter estimation problem is an *inverse problems*. These inverse problems, as related to geophysical flows, are the focus for my research.
 {: .text-justify}
