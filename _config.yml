@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Matthew Prinz"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /assets/images/me.jpg
   bio              : "I graduated from UT Austin in 2021. I work at L3Harris."
   location         : "Greenville, TX"
   email            :
