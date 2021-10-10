@@ -1,7 +1,7 @@
 ---
 published: true
 layout: single
-title: "[Effective C++] 36. 어떤 함수에 대해서도 상속받은 기본 매개변수 값은 절대로 재정의하지 말자"
+title: "[Effective C++] 36. 상속 받은 비가상 함수를 파생 클래스에서 재정의하는 것은 금물!"
 category: effectcpp
 tags:
 comments: true
@@ -10,122 +10,56 @@ sidebar:
 ---  
 * * *
 
-우선 앞서 배운 내용으로 주제를 축소 시켜보겠습니다. 
-비가상 함수는 어떠한 경우에도 재정의하면 안되므로, 
-이번 주제는 기본 매개변수 값을 가진 가상함수를 상속하는 경우로 범위를 좁히겠습니다.
-
-그러면 가상 함수의 기본 매개변수를 재정의하는 것은 왜 하면 안될까요? 이유는 가상 함수는 동적으로 바인딩되지만, 기본 매개변수 값은 정적으로 바인딩되기 때문입니다. 우선 아래의 예를 보겠습니다.
+D라는 이름의 클래스가 B라는 이름의 클래스로부터 public 상속에 의해 파생되었고, B 클래스에는 mf라는 이름의 public 멤버 함수가 정의되어 있다고 가정합시다. 
 
 ```c++
-class Shape
+class B
 {
 public:
-    enum ShapeColor { Red, Green, Blue };
-
-    virtual void raw(ShapeColor color = Red) const = 0;
-    ...
+  void mf();
+  ...
 };
 
-class Rectangle : public Shape
-{
-public:
-    // 기본 매개변수 값이 달라진 부분을 놓치지 마세요. 큰일 났습니다.!
-    virtual void draw(ShapeColor color = Green) const;
-    ...
-};
-
-class Circle : public Shape
-{
-public:
-    virtual void draw(ShapeColor color) const;
-    ...
-};
+class D : public B { ... };
 ```
-<br>
-이번에는 위의 클래스를 사용해서 포인터를 사용해보겠습니다.
+
+B나 D, 혹은 mf에 대해 전혀 모르는 상태에서 D 타입의 객체인 x가 다음처럼 있다고 할 때, 두 개의 mf()가 동일하게 동작하는 것은 당연하겠지요.
 
 ```c++
-Shape *ps;                     // 정적 타입 Shape*
-Shape *pc = new Circle;        // 정적 타입 Shape*
-Shape *pr = new Rectangle;     // 정적 타입 Shape*
+D x; // x는 D 타입으로 생성된 객체입니다.
+
+B *pb = &x;
+pB->mf();
 ```
 
-이 객체의 정적 타입은 모두 Shape*입니다. 그렇다면 동적 타입은 무엇일까요?. 동적 타입은 현재 그 객체가 진짜로 무엇이냐에 따라 결정되는 타입입니다. pc의 동적 타입은 Circle*이고, pr의 동적 타입은 Rectangle*입니다. ps의 경우엔 동적 타입이 없습니다.  
+```
+D *pb = &x;
+pD->mf();
+```
 
-동적 타입은 이름에서 풍기는 느낌 그대로 프로그램이 실행되는 도중에 바뀔 수 있습니다.
+하지만, mf가 비가상 함수이고, D 클래스가 자체적으로 mf 함수를 또 정의하고 있으면 아래와 같이 동작할 것 입니다.
 
 ```c++
-ps = pc; // ps 동적 타입은 이제 Circle*가 됩니다.
-ps = pr; // ps 동적 타입은 이제 Rectangle*가 됩니다.
-```
-
-여기까지는 한번쯤은 공부하신 C++ 책에서도 나온 내용일 것 입니다. 가상 함수도 무엇인지 대부분 알고 계시겠지요. 그런데 기본 매개변수 값이 정해진 가상 함수로 오게 되면 뭔가 꼬이기 시작합니다.  
-
-이유는 앞서 말씀드렸듯이, 가상 함수는 동적으로 바인딩되어 있지만, 기본 매개변수는 정적으로 바인딩되어 있기 때문입니다. 그러니깐 **파생 클래스에서 정의된 가상 함수를 호출하면서 기본 클래스에 정의된 기본 매개변수 값을 사용해 버릴 수 있다는 이야기 입니다.** 기본 클래스의 가상 함수의 기본 매개 변수를 파생 클래스에서 재정의하는 것은 말이 안된다는 것이지요.
-
-```c++
-// Shape::draw의 기본 매개변수는 Red
-// Rectangle::draw의 기본 매개변수는 Green
-pr->draw(); // Rectangle* 객체가 Rectangle::draw(Green)이 아닌 
-            // Rectangle::draw(Red)를 호출합니다!!!
-```
-
-즉, 예제를 확인해보면 위와 같은 말도 안되는 동작이 발생해버립니다. 그러면 결국 우리는 기본 클래스의 가상함수의 매개변수와 파생 클래스에서 재정의된 함수의 매개변수를 항상 동일하게 맞춰주어야 하겠지요. 아래 예제를 같이 확인해봅시다.
-
-```c++
-class Shape
+class D : public B
 {
 public:
-    enum ShapeColor { Red, Green, Blue };
-    virtual void draw(ShapeColor color = Red) const = 0;
-    ...
+  void mf();
+  ...
 };
 
-class Rectangle : public Shape
-{
-public:
-    virtual void draw(ShapeColor color = Red) const;
-    ...
-};
+pB->mf(); // B::mf를 호출합니다.
+pD->mf(); // D::mf를 호출합니다.
 ```
 
-이것으로 된 걸까요? 중복 코드는 물론이거니와 Shape 기본 클래스의 기본 매개 변수를 변경해야하는 상황이 오면 모든 파생 클래스의 매개 변수도 모두 수정해야하는 번거로움이 생깁니다. 물론 사용자가 수정 누락을 하지 않는다는 보장도 없구요. 더 아름다운 방법이 없을까요? 우리는 방법이 있습니다. 바로 NVI 관용구를 사용할 수 있습니다. 예제를 통해 알아봅시다.
+ B::mf 및  D::mf 등의 비가상 함수는 정적 바인딩으로 묶이기 때문입니다. 무슨 뜻인고 하니, pDB는 B에 대한 포인터타입으로 선언되었기 때문에, pB를 통해 호출되는 비가상 함수는 항상 B클래스에 정의되어 있을 것이라고 결정해 버린다는 말입니다. 심지어 B에서 파생된 객체를 pB가 가리키고 있다 해도 해도 마찬가지입니다.  
 
-#### Non-Virtual Interface (NVI) 관용구
-* * *
+ 반면 가상 함수의 경우엔 동적 바인딩으로 묶입니다. 만약 여러분이 D 클래스를 만드는 도중에 B 클래스로부터 물려받은 비가상 함수인 mf를 재정의해 버리면, D 클래스는 일관성 없는 동작을 보이는 이상한 클래스가 됩니다. 특히, 분명히 D 객체인데도, 이 객체에서 mf 함수를 호출하면 B와 D 중 어디로 뛸지 모르는 길지자 행보를 보인다는 것입니다. 게다가 B냐 D냐를 좌우하는 요인이 해당 객체 자신이 아니라 그 객체를 가리키는 포인터의 타입이라는 점이 심각하게 이상해보입니다.
 
-```c++
-class Shape
-{
-public:
-    enum ShapeColor { Red, Green, Blue };
-    void draw(ShapeColor color = Red) const // 이제는 비가상 함수 입니다.
-    {
-        // doDraw는 기본 매개변수를 가질 수 없습니다.
-        // draw를 통해서 항상 매개 변수가 들어가기 때문이지요.
-        doDraw(color); // 가상 함수를 호출 합니다.
-    }
-    ...
-private:
-    virtual void doDraw(ShapeColor color) const = 0; // 실제 동작은 여기서 이루어 집니다.
-};
+ 지금 말씀드린 내용이 다형성을 부여한 기본 클래스의 소멸자를 반드시 가상함수로 만들어야하는 이유와도 일맥상통합니다. 즉 상속받은 비가상 함수를 재정의하는 일은 절대로 하지 맙시다.
 
-
-class Rectangle : public Shape
-{
-public:
-    ...
-private:
-    virtual void doDraw(ShapeColor color) const; // 매개변수 값이 없습니다.
-    ...
-};
-```
-
-비가상 함수는 파생 클래스에서 오버라이드 되면 안 되기 때문에 위와 같이 설계하면 draw 함수의 color 매개변수에 기본값을 깔끔하게 Red로 고정시킬 수 있습니다.
-
-#### ***End Note***
+ #### ***End Note***
 ***
-- 상속받은 기본 매개변수 값은 절대로 재정의해서는 안됩니다. 왜냐하면 기본 매개변수 값은 정적으로 바인딩되는 반면, 가상 함수는 동적으로 바인딩 되기 때문입니다.
+- 상속받은 비가상 함수를 재정의하는 일은 절대로 하지맙시다.
 
 #### Reference 
 ***  
