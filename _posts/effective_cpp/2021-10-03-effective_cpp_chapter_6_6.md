@@ -1,7 +1,7 @@
 ---
 published: true
 layout: single
-title: "[Effective C++] 37. \"has-a\" 혹은 \"is-implemented-in-terms-of\"를 모형화할 때는 객체 합성을 사용하자"
+title: "[Effective C++] 37. 어떤 함수에 대해서도 상속받은 기본 매개변수 값은 절대로 재정의하지 말자"
 category: effectcpp
 tags:
 comments: true
@@ -10,93 +10,122 @@ sidebar:
 ---  
 * * *
 
-합성이란, 어떤 타입의 객체들이 그와 다른 타입의 객체들을 포함하고 있을 경우에 성립하는 그 타입들 사이의 관계를 일컫습니다. 포함된 객체들을 모아서 이들을 포함한 다른 객체를 합성한다는 뜻인데, 이를 테면 다음과 같은 경우에 해당합니다.  
+우선 앞서 배운 내용으로 주제를 축소 시켜보겠습니다. 
+비가상 함수는 어떠한 경우에도 재정의하면 안되므로, 
+이번 주제는 기본 매개변수 값을 가진 가상함수를 상속하는 경우로 범위를 좁히겠습니다.
+
+그러면 가상 함수의 기본 매개변수를 재정의하는 것은 왜 하면 안될까요? 이유는 가상 함수는 동적으로 바인딩되지만, 기본 매개변수 값은 정적으로 바인딩되기 때문입니다. 우선 아래의 예를 보겠습니다.
 
 ```c++
-class Address {...};
-
-class PhoneNumber {...};
-
-class Person 
+class Shape
 {
 public:
-  ...
+    enum ShapeColor { Red, Green, Blue };
 
-private:
-  std::string name;
-  Address address;
-  PhoneNumber voiceNumber;
-  PhoneNumber faxNumber;
+    virtual void raw(ShapeColor color = Red) const = 0;
+    ...
+};
+
+class Rectangle : public Shape
+{
+public:
+    // 기본 매개변수 값이 달라진 부분을 놓치지 마세요. 큰일 났습니다.!
+    virtual void draw(ShapeColor color = Green) const;
+    ...
+};
+
+class Circle : public Shape
+{
+public:
+    virtual void draw(ShapeColor color) const;
+    ...
+};
+```
+<br>
+이번에는 위의 클래스를 사용해서 포인터를 사용해보겠습니다.
+
+```c++
+Shape *ps;                     // 정적 타입 Shape*
+Shape *pc = new Circle;        // 정적 타입 Shape*
+Shape *pr = new Rectangle;     // 정적 타입 Shape*
+```
+
+이 객체의 정적 타입은 모두 Shape*입니다. 그렇다면 동적 타입은 무엇일까요?. 동적 타입은 현재 그 객체가 진짜로 무엇이냐에 따라 결정되는 타입입니다. pc의 동적 타입은 Circle*이고, pr의 동적 타입은 Rectangle*입니다. ps의 경우엔 동적 타입이 없습니다.  
+
+동적 타입은 이름에서 풍기는 느낌 그대로 프로그램이 실행되는 도중에 바뀔 수 있습니다.
+
+```c++
+ps = pc; // ps 동적 타입은 이제 Circle*가 됩니다.
+ps = pr; // ps 동적 타입은 이제 Rectangle*가 됩니다.
+```
+
+여기까지는 한번쯤은 공부하신 C++ 책에서도 나온 내용일 것 입니다. 가상 함수도 무엇인지 대부분 알고 계시겠지요. 그런데 기본 매개변수 값이 정해진 가상 함수로 오게 되면 뭔가 꼬이기 시작합니다.  
+
+이유는 앞서 말씀드렸듯이, 가상 함수는 동적으로 바인딩되어 있지만, 기본 매개변수는 정적으로 바인딩되어 있기 때문입니다. 그러니깐 **파생 클래스에서 정의된 가상 함수를 호출하면서 기본 클래스에 정의된 기본 매개변수 값을 사용해 버릴 수 있다는 이야기 입니다.** 기본 클래스의 가상 함수의 기본 매개 변수를 파생 클래스에서 재정의하는 것은 말이 안된다는 것이지요.
+
+```c++
+// Shape::draw의 기본 매개변수는 Red
+// Rectangle::draw의 기본 매개변수는 Green
+pr->draw(); // Rectangle* 객체가 Rectangle::draw(Green)이 아닌 
+            // Rectangle::draw(Red)를 호출합니다!!!
+```
+
+즉, 예제를 확인해보면 위와 같은 말도 안되는 동작이 발생해버립니다. 그러면 결국 우리는 기본 클래스의 가상함수의 매개변수와 파생 클래스에서 재정의된 함수의 매개변수를 항상 동일하게 맞춰주어야 하겠지요. 아래 예제를 같이 확인해봅시다.
+
+```c++
+class Shape
+{
+public:
+    enum ShapeColor { Red, Green, Blue };
+    virtual void draw(ShapeColor color = Red) const = 0;
+    ...
+};
+
+class Rectangle : public Shape
+{
+public:
+    virtual void draw(ShapeColor color = Red) const;
+    ...
 };
 ```
 
-항목 32에서 public 상속의 의미는 is-a라는 의미를 갖고 있다고 말씀드렸습니다. 객체 합성의 경우에도 의미가 있습니다. has-a 또는 is-implemented-in-terms-if가 바로 그것입니다. 이렇게 뜻이 두 개인 이유는 소프트웨어 개발에서 여러분이 대하는 영역(domain)이 두 가지이기 때문입니다.  
+이것으로 된 걸까요? 중복 코드는 물론이거니와 Shape 기본 클래스의 기본 매개 변수를 변경해야하는 상황이 오면 모든 파생 클래스의 매개 변수도 모두 수정해야하는 번거로움이 생깁니다. 물론 사용자가 수정 누락을 하지 않는다는 보장도 없구요. 더 아름다운 방법이 없을까요? 우리는 방법이 있습니다. 바로 NVI 관용구를 사용할 수 있습니다. 예제를 통해 알아봅시다.
 
-우리가 일상생활에서 흔히 볼 수 있는 사물을 본 뜻 것들, 이를 테면 사람, 이동수단, 비디오 프레임 등의 객체는 응용 영역에 속합니다. 응용 영역에 속하지 않는 나머지들은 버퍼, 뮤텍스, 탐색 트리 등은 구현 영역에 해당합니다. 여기서 객체 합성이 응용 영역의 객체들 사이에서 일어나면 has-a 관계 입니다. 구현 영역에서 일어나면 is-implemented-in-terms-of 인 것입니다.
-
-위의 예제에서 Person 클래스가 나타내는 관계는 has-a 관계에 해당합니다. 위의 예제에서 is-a 관계와 has-a 관계의 역할을 헷갈리는 경우는 없습니다. 상대적으로 헷갈리는 부분이 is-a와 is-implemented-in-terms-of 관계의 차이점 입니다.  
-
-차이점을 알기 위해서 상황을 가정해봅시다. 여러분이 std::list를 재활용하여 std::set보다 메모리 사용에 효율적인 Set 클래스를 직접 구현하게 되었다고 말입니다.
+#### Non-Virtual Interface (NVI) 관용구
+* * *
 
 ```c++
- template<typename T>
- class Set : public std::list<T> { ... };
-```
-
-모든 것이 순조롭게 흘러갈것 같지만 전혀 그렇지 않습니다. public 상속의 경우 is-a 관계가 성립하면 기본 클래스의 모든 것을 파생 클래스가 가지게 됩니다. 그렇게 되면 list는 중복 원소를 가질 수 있으므로 Set이 list라는 is-a 관계는 절대 성립하지 못합니다. 즉 Set 객체는 list 객체를 써서 구현되는 is implemented in terms of의 형태의 설계가 가능하다는 사실을 잡아내는 것 입니다.
-
-```c++
-template<class T>
-class Set
+class Shape
 {
 public:
-  bool member(const T& item) const;
-  void insert(const T& item);
-  void remove(const T& item);
-  
-  std::size_t size() const;
-
+    enum ShapeColor { Red, Green, Blue };
+    void draw(ShapeColor color = Red) const // 이제는 비가상 함수 입니다.
+    {
+        // doDraw는 기본 매개변수를 가질 수 없습니다.
+        // draw를 통해서 항상 매개 변수가 들어가기 때문이지요.
+        doDraw(color); // 가상 함수를 호출 합니다.
+    }
+    ...
 private:
-  std::list<T> rep;
+    virtual void doDraw(ShapeColor color) const = 0; // 실제 동작은 여기서 이루어 집니다.
+};
+
+
+class Rectangle : public Shape
+{
+public:
+    ...
+private:
+    virtual void doDraw(ShapeColor color) const; // 매개변수 값이 없습니다.
+    ...
 };
 ```
 
-```c++
-template<typename T>
-bool Set<T>::member(const T& item) const
-{
-  return std::find(rep.begin(), rep.end(), item) != rep.end();
-}
-
-template<typename T>
-void Set<T>::insert(const T& item)
-{
-  if (!member(item)) rep.push_back(item);
-}
-
-template<typename T>
-void Set<T>::remove(const T& item)
-{
-  typename std::list<T>::iterator it =
-    std::find(rep.begin(), rep.end(), item);
-
-  if (it != rep.end()) rep.erase(it);
-}
-
-template<typename T>
-std::size_t Set<T>::size() const
-{
-  return rep.size();
-}
-```
-
-보시다 시피 너무 간단해서 인라인 함수로 만들어도 될 정도의 구현 입니다. 물론 인라인 함수로 만드는 것은 진지하게 고민해보아야할 사항이겠지만요. 결국 Set 클래스에서 중요한 것은 주렁주렁 인터페이스가 아니라 list와의 관계라는 것입니다. 이 관계는 is-a가 아니라 is-implemented-in-terms-of라는 것이지요.
+비가상 함수는 파생 클래스에서 오버라이드 되면 안 되기 때문에 위와 같이 설계하면 draw 함수의 color 매개변수에 기본값을 깔끔하게 Red로 고정시킬 수 있습니다.
 
 #### ***End Note***
 ***
-- 객체 합성의 의미는 public 상속이 가진 의미와 완전히 다릅니다.
-- 응용 영역에서 객체 합성의 의미는 has-a 입니다. 구현 영역에서는 is-implemented-in-terms-of 입니다.
-
+- 상속받은 기본 매개변수 값은 절대로 재정의해서는 안됩니다. 왜냐하면 기본 매개변수 값은 정적으로 바인딩되는 반면, 가상 함수는 동적으로 바인딩 되기 때문입니다.
 
 #### Reference 
 ***  
