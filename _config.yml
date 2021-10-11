@@ -20,7 +20,7 @@ title                    : "Life is on u"
 title_separator          : "|"
 subtitle                 : "Just let me in"
 name                     : "don99yu"
-description              : "Engineering student who plays the guitar"
+description              : "기타치는 공대생입니다~"
 url                      : "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "on99yu"
   avatar           : "/images/me.jpg"
-  bio              : "Roma is not built in a day"
+  bio              : "기타치는 공대생"
   location         : "South korea"
   email            : onhn1019@naver.com
   links:
