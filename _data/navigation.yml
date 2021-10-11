@@ -4,11 +4,11 @@ main:
     url: /about/
   - title: "Category"
     url: /categories/
-  - title: "DataScience"
-    url: /datascience/
-  - title: "Python"
-    url: /python/
-  - title: "Web"
-    url: /web/
-  - title: "Essay"
-    url: /essay/
+  #- title: "DataScience"
+  #  url: /datascience/
+  #- title: "Python"
+  #  url: /python/
+  #- title: "Web"
+  #  url: /web/
+  #- title: "Essay"
+  #  url: /essay/
