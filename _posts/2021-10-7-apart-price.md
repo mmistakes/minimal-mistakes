@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "study-apart-price"
 categories: study
 tag: [pandas, seaborn]
