@@ -3,7 +3,9 @@ layout: single
 title:  "study-apart-price"
 categories: study
 tag: [pandas, seaborn]
+toc_label: "Contents"
 toc: true
+toc_sticky: true
 ---
 
 # 전국 신규 민간 아파트 분양가격 동향
