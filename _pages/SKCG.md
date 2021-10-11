@@ -24,10 +24,6 @@ gallery1:
     image_path: /assets/images/SKCG/12.jpg
     alt: "10"
     title: "Rafael Nuñez Airport - Cartagena, Colombia for MSFS"
-  - url: /assets/images/SKCG/13.jpg
-    image_path: /assets/images/SKCG/13.jpg
-    alt: "13"
-    title: "Rafael Nuñez Airport - Cartagena, Colombia for MSFS"
   - url: /assets/images/SKCG/15.jpg
     image_path: /assets/images/SKCG/15.jpg
     alt: "10"
