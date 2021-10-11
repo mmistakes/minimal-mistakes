@@ -20,7 +20,7 @@ title                    : "Robert-min Note"
 title_separator          : "|"
 subtitle                 : "Stay Hungry, Stay Foolish"
 name                     : "Robertmin"
-description              : "Robert-min의 Blog 입니다."
+description              : "Robert-min의 Blog입니다."
 url                      : "https://robert-min.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -101,11 +101,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Robert-min"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Robert-min의 Blog입니다."
+  location         : "Seongdong-gu, Seoul, Republic of Korea"
+  email            : "robertmin522@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
