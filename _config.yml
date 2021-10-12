@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KR"
+locale                   : "en-US"
 title                    : "NEXT DEVELOPMENTS"
 title_separator          : "|"
 subtitle                 : "My Learning Journey" # site tagline that appears below site title in masthead
@@ -273,6 +273,11 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -288,5 +293,17 @@ defaults:
       share: true
       related: true
       show_date: true
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "docs"
 
 date_format: "%Y-%m-%d" 
