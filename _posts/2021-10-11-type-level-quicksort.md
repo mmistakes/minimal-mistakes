@@ -95,13 +95,13 @@ The axioms of concatenation are as follows:
 Written as `given`s, the first axiom allows the compiler to generate any `Concat[HNil, L, L]` for any list type `L`
 
 ```scala3
-    given basicEmpty[L <: HList]: Concat[HNil, L, L] with {}
+  given basicEmpty[L <: HList]: Concat[HNil, L, L] with {}
 ```
 
 and the second axiom allows the compiler to _rely on_ an existing (recursive) concatenation before it can synthesize a concatenation for our original lists:
 
 ```scala3
-    given inductive[N <: Nat, HA <: HList, HB <: HList, O <: HList](using Concat[HA, HB, O]): Concat[N :: HA, HB, N :: O] with {}
+  given inductive[N <: Nat, HA <: HList, HB <: HList, O <: HList](using Concat[HA, HB, O]): Concat[N :: HA, HB, N :: O] with {}
 ```
 
 Putting all pieces together, along with a `summon`-like `apply` method in the companion of `Concat`, we'll get this:
@@ -153,29 +153,29 @@ The axioms of partitioning are as follows:
 Axioms 1 and 2 are more easily translatable to givens. The first axiom creates a given for a Partition where the original list is HNil and the "left" and "right" side of the split are both HNil.
 
 ```scala3
-    given basic: Partition[HNil, HNil, HNil] with {}
+  given basic: Partition[HNil, HNil, HNil] with {}
 ```
 
 The second axiom creates a given for any one-element list: the "left" side will be the list itself, while the "right" side is empty.
 
 ```scala3
-    given basic2[N <: Nat]: Partition[N :: HNil, N :: HNil, HNil] with {}
+  given basic2[N <: Nat]: Partition[N :: HNil, N :: HNil, HNil] with {}
 ```
 
 The third axiom has two parts, so we will implement each "branch" separately. We will assume a list with at least two elements, `P :: N :: T`, where P is the pivot, N is a "number" and T is the tail of the list. If we can somehow split T into `L` and `R`, then if `P <= N`, then `N` will stay in the right. The encoding is a bit more complex:
 
 ```scala3
-    given inductive[P <: Nat, N <: Nat, T <: HList, L <: HList, R <: HList]
-    (using P <= N, Partition[P :: T, P :: L, R]):
-      Partition[P :: N :: T, P :: L, N :: R] with {}
+  given inductive[P <: Nat, N <: Nat, T <: HList, L <: HList, R <: HList]
+  (using P <= N, Partition[P :: T, P :: L, R]):
+    Partition[P :: N :: T, P :: L, N :: R] with {}
 ```
 
 The other branch is similar, but we'll assume `N < P` this time, which means `N` will stay on the "left":
 
 ```scala3
-    given inductive2[P <: Nat, N <: Nat, T <: HList, L <: HList, R <: HList]
-    (using N < P, Partition[P :: T, P :: L, R]):
-      Partition[P :: N :: T, P :: N  :: L, R] with {}
+  given inductive2[P <: Nat, N <: Nat, T <: HList, L <: HList, R <: HList]
+  (using N < P, Partition[P :: T, P :: L, R]):
+    Partition[P :: N :: T, P :: N  :: L, R] with {}
 ```
 
 That, plus an `apply` method to summon the relevant given, will make `Partition` look like this:
@@ -217,13 +217,13 @@ This code compiles because the compiler:
 Note: there are alternative partitioning schemes which the compiler will not be able to validate. This partitioning does not work, for example, although it's perfectly valid.
 
 ```scala3
-    val partitionAlsoValid = Partition[_2 :: _3 :: _1 :: _4 :: HNil, _2 :: _1 :: HNil, _4 :: _3 :: HNil]
+  val partitionAlsoValid = Partition[_2 :: _3 :: _1 :: _4 :: HNil, _2 :: _1 :: HNil, _4 :: _3 :: HNil]
 ```
 
 But the following does (the `_3` comes before the `_4`)
 
 ```scala3
-val partitionAlsoValid = Partition[_2 :: _3 :: _1 :: _4 :: HNil, _2 :: _1 :: HNil, _3 :: _4 :: HNil] // works
+  val partitionAlsoValid = Partition[_2 :: _3 :: _1 :: _4 :: HNil, _2 :: _1 :: HNil, _3 :: _4 :: HNil] // works
 ```
 
 because the relative order of the elements in the list is kept. For the normal quicksort, the relative order of elements inside each partition is not required.
@@ -247,20 +247,20 @@ The sorting axioms are as follows:
 The first axiom is similar to the basic axioms of the other operations:
 
 ```scala3
-    given basicEmpty: QSort[HNil, HNil] with {}
+  given basicEmpty: QSort[HNil, HNil] with {}
 ```
 
 The second axiom is the juice of this entire article.
 
 ```scala3
-    given inductive[N <: Nat, T <: HList, L <: HList, R <: HList, SL <: HList, SR <: HList, O <: HList]
-      (
-        using
-        Partition[N :: T, N :: L, R],
-        QSort[L, SL],
-        QSort[R, SR],
-        Concat[SL, N :: SR, O]
-      ): QSort[N :: T, O] with {}
+  given inductive[N <: Nat, T <: HList, L <: HList, R <: HList, SL <: HList, SR <: HList, O <: HList]
+    (
+      using
+      Partition[N :: T, N :: L, R],
+      QSort[L, SL],
+      QSort[R, SR],
+      Concat[SL, N :: SR, O]
+    ): QSort[N :: T, O] with {}
 ```
 
 As before, the complete sorting looks like this:
@@ -311,7 +311,7 @@ Notice we eliminated the second generic type argument, and added the abstract ty
 In the companion of `Sort`, we'll define a type alias for a sorting operation which looks similar to the `QSort` above.
 
 ```scala3
-    type QSort[HL <: HList, O <: HList] = Sort[HL] { type Result = O }
+  type QSort[HL <: HList, O <: HList] = Sort[HL] { type Result = O }
 ```
 
 Why did I do that? In the process of finding the right `given`s, the compiler does type inference anyway. So we can make the compiler infer the generic types automatically in the process of `given` resolution, AND in the meantime write the abstract type argument in `Sort`. Here's how we'll rewrite the axioms.
@@ -319,7 +319,7 @@ Why did I do that? In the process of finding the right `given`s, the compiler do
 The first axiom is for sorting an empty list:
 
 ```scala3
-    given basicEmpty: QSort[HNil, HNil] = new Sort[HNil] { type Result = HNil }
+  given basicEmpty: QSort[HNil, HNil] = new Sort[HNil] { type Result = HNil }
 ```
 
 Notice the difference? Instead of creating a `QSort[HNil, HNil] with {}` &mdash; which we can't do with abstract type members &mdash; we're instead _providing_ the type signature of the `given` (for later resolutions) and instead we use a `Sort[HNil]` with the right type member.
@@ -327,13 +327,13 @@ Notice the difference? Instead of creating a `QSort[HNil, HNil] with {}` &mdash;
 The inductive axiom is more complex, as expected:
 
 ```scala3
-    given inductive[N <: Nat, T <: HList, L <: HList, R <: HList, SL <: HList, SR <: HList, O <: HList] (
-      using
-      Partition[N :: T, N :: L, R],
-      QSort[L, SL],
-      QSort[R, SR],
-      Concat[SL, N :: SR, O]
-    ): QSort[N :: T, O] = new Sort[N :: T] { type Result = O }
+  given inductive[N <: Nat, T <: HList, L <: HList, R <: HList, SL <: HList, SR <: HList, O <: HList] (
+    using
+    Partition[N :: T, N :: L, R],
+    QSort[L, SL],
+    QSort[R, SR],
+    Concat[SL, N :: SR, O]
+  ): QSort[N :: T, O] = new Sort[N :: T] { type Result = O }
 ```
 
 Again, the only thing that's changed here is how the `QSort` instance is actually created: as an instance of `Sort` with the right types.
@@ -362,7 +362,7 @@ In total, the new auto-inferred sort looks like this:
 Now we can safely test it...
 
 ```scala3
-   val qsort = Sort.apply[_4 :: _3 :: _5 :: _1 :: _2 :: HNil]
+  val qsort = Sort.apply[_4 :: _3 :: _5 :: _1 :: _2 :: HNil]
 ```
 
 ... or can we?
@@ -386,17 +386,17 @@ and with a helper method on my part
 we can safely print
 
 ```scala3
-    printType(qsort).replaceAll("com.rockthejvm.blog.typelevelprogramming.TypeLevelProgramming.", "") // remove fully qualified type name prefixes
+  printType(qsort).replaceAll("com.rockthejvm.blog.typelevelprogramming.TypeLevelProgramming.", "") // remove fully qualified type name prefixes
 ```
 
 And lo and behold:
 
 ```scala3
-Sort[::[_4, ::[_3, ::[_5, ::[_1, ::[_2, HNil]]]]]] {
-  type Result >: 
-    ::[Succ[_0], ::[Succ[_1], ::[Succ[_2], ::[Succ[_3], ::[Succ[_4], HNil]]]]] 
-  <: ::[Succ[_0], ::[Succ[_1], ::[Succ[_2], ::[Succ[_3], ::[Succ[_4], HNil]]]]]
-}
+  Sort[::[_4, ::[_3, ::[_5, ::[_1, ::[_2, HNil]]]]]] {
+    type Result >: 
+      ::[Succ[_0], ::[Succ[_1], ::[Succ[_2], ::[Succ[_3], ::[Succ[_4], HNil]]]]] 
+    <: ::[Succ[_0], ::[Succ[_1], ::[Succ[_2], ::[Succ[_3], ::[Succ[_4], HNil]]]]]
+  }
 ```
 
 In other words, the result type is `::[Succ[_0], ::[Succ[_1], ::[Succ[_2], ::[Succ[_3], ::[Succ[_4], HNil]]]]]` or `_1 :: _2 :: _4 :: _3 :: _5 :: HNil`!
