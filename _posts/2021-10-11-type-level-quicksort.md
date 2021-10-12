@@ -1,6 +1,6 @@
 ---
 title: "Type-Level Programming in Scala 3, Part 2: A Quicksort on Types"
-date: 2021-10-03
+date: 2021-10-11
 header:
     image: "/images/blog cover.jpg"
 tags: []
