@@ -96,27 +96,31 @@ Please, refer to the above article for further details on starting the Kafka bro
 As usual, we need a use case to work with. We'll try to model some functions concerning the management of orders in an e-commerce site. During the process, we will use the following types:
 
 ```scala
-type UserId = String
-type Profile = String
-type Product = String
-type OrderId = String
+object Domain {
+  type UserId = String
+  type Profile = String
+  type Product = String
+  type OrderId = String
 
-case class Order(orderId: OrderId, user: UserId, products: List[Product], amount: Double)
+  case class Order(orderId: OrderId, user: UserId, products: List[Product], amount: Double)
 
-case class Discount(profile: Profile, amount: Double)
+  case class Discount(profile: Profile, amount: Double)
 
-case class Payment(orderId: OrderId, status: String)
+  case class Payment(orderId: OrderId, status: String)
+}
 ```
 
 To set up the application, we also need to create the Kafka topics we will use. In Scala, we represent the topics' names as constants:
 
 ```scala
-final val OrdersByUserTopic = "orders-by-user"
-final val DiscountProfilesByUserTopic = "discount-profiles-by-user"
-final val DiscountsTopic = "discounts"
-final val OrdersTopic = "orders"
-final val PaymentsTopic = "payments"
-final val PaidOrdersTopic = "paid-orders"
+object Topics {
+  final val OrdersByUserTopic = "orders-by-user"
+  final val DiscountProfilesByUserTopic = "discount-profiles-by-user"
+  final val DiscountsTopic = "discounts"
+  final val OrdersTopic = "orders"
+  final val PaymentsTopic = "payments"
+  final val PaidOrdersTopic = "paid-orders"
+}
 ```
 
 To create such topics in the broker, we use directly the Kafka clients libraries contained in the Docker image:
@@ -165,11 +169,11 @@ As we should know, we build streaming applications around three concepts: source
 
 ![Stream naive representation](/images/stream-representation.png)
 
-A source is where the execution starts, and information is created. Sources generate tokens, and in Kafka Streams, they are represented by the messages read from the topic.
+A sources generate the elements that are handled in the stream - here they are the messages read from the topic.
 
 A flow is nothing more than a transformation applied to every token. In functional programming, we represent flows using functions such as `map`, `filter`, `flatMap`, and so on.
 
-Last but not least, a sink is where tokens are consumed. After a sink, tokens don't exist anymore. In Kafka Streams, sinks can consume tokens to a Kafka topic or use anything other technology (i.e., the standard output, a database, etc.)
+Last but not least, a sink is where messages are consumed. After a sink, they don't exist anymore. In Kafka Streams, sinks can consume messages to a Kafka topic or use anything other technology (i.e., the standard output, a database, etc.)
 
 In Kafka Stream's jargon, both source, flow, and sink are called _stream processors_. A streaming application is nothing more than a graph where each node is a processor, and edges are called _streams_. We can call such a graph a _topology_.
 
@@ -193,30 +197,7 @@ object Serdes {
   implicit def longSerde: Serde[Long]
 
   implicit def javaLongSerde: Serde[java.lang.Long]
-
-  implicit def byteArraySerde: Serde[Array[Byte]]
-
-  implicit def bytesSerde: Serde[org.apache.kafka.common.utils.Bytes]
-
-  implicit def byteBufferSerde: Serde[ByteBuffer]
-
-  implicit def shortSerde: Serde[Short]
-
-  implicit def javaShortSerde: Serde[java.lang.Short]
-
-  implicit def floatSerde: Serde[Float]
-
-  implicit def javaFloatSerde: Serde[java.lang.Float]
-
-  implicit def doubleSerde: Serde[Double]
-
-  implicit def javaDoubleSerde: Serde[java.lang.Double]
-
-  implicit def intSerde: Serde[Int]
-
-  implicit def javaIntegerSerde: Serde[java.lang.Integer]
-
-  implicit def uuidSerde: Serde[UUID] = JSerdes.UUID()
+  
   // ...
 }
 ```
@@ -231,19 +212,21 @@ def fromFn[T >: Null](serializer: T => Array[Byte], deserializer: Array[Byte] =>
 Wiring all the information together, we can use the above function to create a `Serde` using Circe:
 
 ```scala
-implicit def serde[A >: Null : Decoder : Encoder]: Serde[A] = {
-  val serializer = (a: A) => a.asJson.noSpaces.getBytes
-  val deserializer = (aAsBytes: Array[Byte]) => {
-    val aAsString = new String(aAsBytes)
-    val aOrError = decode[A](aAsString)
-    aOrError match {
-      case Right(a) => Option(a)
-      case Left(error) =>
-        println(s"There was an error converting the message $aOrError, $error")
-        Option.empty
+object Implicits {
+  implicit def serde[A >: Null : Decoder : Encoder]: Serde[A] = {
+    val serializer = (a: A) => a.asJson.noSpaces.getBytes
+    val deserializer = (aAsBytes: Array[Byte]) => {
+      val aAsString = new String(aAsBytes)
+      val aOrError = decode[A](aAsString)
+      aOrError match {
+        case Right(a) => Option(a)
+        case Left(error) =>
+          println(s"There was an error converting the message $aOrError, $error")
+          Option.empty
+      }
     }
+    Serdes.fromFn[A](serializer, deserializer)
   }
-  Serdes.fromFn[A](serializer, deserializer)
 }
 ```
 
@@ -277,7 +260,7 @@ The builder lets us create the Stream DSL's primary types, which are the`KStream
 
 ### 4.1. Building a `KStream`
 
-To start, we need to define a source, which will read incoming messages from the Kafka topic `orders-by-user` we created. Differently from other streaming libraries, such as Akka Streams, the Kafka Streams library doesn't define any specific type for sources, pipes, and sinks:
+To start, we need to define a source, which will read incoming messages from the Kafka topic `orders-by-user` we created. Unlike other streaming libraries, such as Akka Streams, the Kafka Streams library doesn't define any specific type for sources, pipes, and sinks:
 
 ```scala
 val usersOrdersStreams: KStream[UserId, Order] = builder.stream[UserId, Order](OrdersByUserTopic)
@@ -314,7 +297,7 @@ As we said, a `KStream[K, V]` represents a stream of Kafka messages. This type d
 
 ### 4.2. Building `KTable` and `GlobalKTable`
 
-The Kafka Streams library also offers `KTable` and `GlobalKTable`, built both on top of a _compacted topic_. We can think of a compacted topic as a table, indexed by the messages' key. The broker doesn't delete messages in a compacted topic using a time to live policy. Every time a new message arrives, a "row" it's added to the "table" if the key was not present, or the value associated with the key is updated otherwise. To delete a "row" from the "table", we just send to the topic a `null` value associated with the selected key.
+The Kafka Streams library also offers `KTable` and `GlobalKTable`, built both on top of a _compacted topic_. We can think of a compacted topic as a table, indexed by the messages' key. The broker doesn't delete messages in a compacted topic using a time to live policy. Every time a new message arrives, a "row" is added to the "table" if the key was not present, or the value associated with the key is updated otherwise. To delete a "row" from the "table", we just send to the topic a `null` value associated with the selected key.
 
 As we said in section 1, to make a topic compacted, we need to specify it during its creation:
 
@@ -332,7 +315,7 @@ The above topic will be the starting point to extend our Kafka Streams applicati
 type Profile = String
 ```
 
-Creating a `KTable` it's easy. For example, let's make a `KTable` on top of the `discount-profiles-by-user` topic. Returning to our example, as the users' number of our e-commerce might be high, we need to partition the information among the nodes of the Kafka cluster. So, let's create the `KTable`:
+Creating a `KTable` is easy. For example, let's make a `KTable` on top of the `discount-profiles-by-user` topic. Returning to our example, as the users' number of our e-commerce might be high, we need to partition the information among the nodes of the Kafka cluster. So, let's create the `KTable`:
 
 ```scala
 final val DiscountProfilesByUserTopic = "discount-profiles-by-user"
@@ -350,7 +333,7 @@ The methods defined on the `KTable` type are more or less the same as those on a
 def toStream: KStream[K, V]
 ```
 
-As we can imagine, creating a `GlobalKTable` is easy as well. We only need a compacted topic containing a cardinality of keys that is affordable for each cluster node:
+As we can imagine, creating a `GlobalKTable` is easy as well. We only need a compacted topic containing a number of keys that is affordable for each cluster node:
 
 ```shell
 kafka-topics \
@@ -395,7 +378,7 @@ val expensiveOrders: KStream[UserId, Order] = usersOrdersStreams.filter { (userI
 }
 ```
 
-Instead, let's say that we want to extract a stream of all the purchased products, maintaining the `UserId` as the message key. Since we want to map only the values of the Kafka messages, we can use the `mapValue` function:
+Instead, let's say that we want to extract a stream of all the purchased products, maintaining the `UserId` as the message key. Since we want to map only the values of the Kafka messages, we can use the `mapValues` function:
 
 ```scala
 val purchasedListOfProductsStream: KStream[UserId, List[Product]] = usersOrdersStreams.mapValues { order =>
@@ -545,7 +528,7 @@ The library defines many other stateful transformations. Please, refer to the [o
 
 ## 6. Joining Streams
 
-In my opinion, the most essential feature of the Kafka Streams library is the ability to join streams. The Kafka team strongly supports the [duality between streams and database tables](https://docs.confluent.io/platform/current/streams/concepts.html#duality-of-streams-and-tables). To keep it simple, we can view a stream as the changelog of a database table, which primary keys are equal to the keys of the Kafka messages.
+In my opinion, the most essential feature of the Kafka Streams library is the ability to join streams. The Kafka team strongly supports the [duality between streams and database tables](https://docs.confluent.io/platform/current/streams/concepts.html#duality-of-streams-and-tables). To keep it simple, we can view a stream as the changelog of a database table, whose primary keys are equal to the keys of the Kafka messages.
 
 Following this duality, we can think about records in a `KStream` as they are INSERT operations on a table. In fact, for the nature of a `KStream`, every message is different from any previous message. Instead, a `KTable` is an abstraction of a changelog stream, where each record represents an UPSERT: If the key is not present in the table, the record is equal to an INSERT, and an UPDATE otherwise.
 
@@ -566,7 +549,7 @@ val ordersWithUserProfileStream: KStream[UserId, (Order, Profile)] =
   }
 ```
 
-As we have seen in many cases, the Scala Kafka Streams library saves us from digiting a lot of boilerplate code, implicitly deriving the type that carries the `Serde` information:
+As we have seen in many cases, the Scala Kafka Streams library saves us from typing a lot of boilerplate code, implicitly deriving the type that carries the `Serde` information:
 
 ```scala
 // Scala Kafka Stream library
@@ -603,7 +586,7 @@ val discountedOrdersStream: KStream[UserId, Order] =
   )
 ```
 
-Obtaining the joining key, it's easy: We just select the `Profile` information contained in the messages' payload of the stream `ordersWithUserProfileStream`. Then, the new value of each message is the discounted amount.
+Obtaining the joining key is easy: We just select the `Profile` information contained in the messages' payload of the stream `ordersWithUserProfileStream`. Then, the new value of each message is the discounted amount.
 
 ### 6.3. Joining `KStreams`
 
@@ -742,7 +725,7 @@ Topologies:
       <-- KSTREAM-FLATMAPVALUES-0000000019
 ```
 
-Fortunately, an open-source project creates a visual graph of the topology, starting from the above output. The project is called [`kafka-stream-viz`](https://zz85.github.io/kafka-streams-viz/), and the generated visual graph for our topology is the following:
+The above text representation is a bit hard to read -- fortunately, there's an open-source project which can create a visual graph of the topology, starting from the above output. The project is called [`kafka-stream-viz`](https://zz85.github.io/kafka-streams-viz/), and the generated visual graph for our topology is the following:
 
 ![Topology's graph](/images/kafka-stream-orders-topology.png)
 
@@ -867,7 +850,7 @@ And, that's all about the Kafka Streams library, folks!
 
 ## 8. Conclusions
 
-This article tried to introduce the Kafka Streams library, a Kafka client library based on top of the Kafka consumers and producers API. In detail, we focused on the Stream DSL part of the library, which lets us represent the stream's topology at a higher level of abstraction. After introducing the basic building blocks of the DSL, `KStream`, `KTable`, and `GlobalKTable`, we showed the primary operations defined on them, both the stateless and the stateful ones. Then, we talked about joins, one of the most relevant features of Kafka Streams. Finally, we wired all together, and we learned how to start a Kafka Streams application.
+This article introduced the Kafka Streams library, a Kafka client library based on top of the Kafka consumers and producers API. In detail, we focused on the Stream DSL part of the library, which lets us represent the stream's topology at a higher level of abstraction. After introducing the basic building blocks of the DSL, `KStream`, `KTable`, and `GlobalKTable`, we showed the primary operations defined on them, both the stateless and the stateful ones. Then, we talked about joins, one of the most relevant features of Kafka Streams. Finally, we wired all together, and we learned how to start a Kafka Streams application.
 
 The Kafka Streams library is vast, and it offers many more features than we saw. For example, we've not talked about the Processor API and how it's possible to query a state store directly. However, the given information should be sufficient to have a solid base to learn the advanced feature of the excellent and helpful library.
 
