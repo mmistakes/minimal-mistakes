@@ -104,12 +104,12 @@ author:
   name             : "on99yu"
   avatar           : "/images/me.jpg"
   bio              : "기타치는 공대생"
-  location         : "South korea"
-  email            : onhn1019@naver.com
+  location         : false
+  email            : false
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "onhn1019@naver.com"
+    #- label: "Email"
+    #  icon: "fas fa-fw fa-envelope-square"
+    #  url: "onhn1019@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com""
