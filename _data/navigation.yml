@@ -3,9 +3,11 @@ main:
   - title: "About me"
     url: /about_me/
   - title: "CV"
-    url: /cv/
+    url: https://NikitaFedik/nikitafedik.github.io\assets\CV_Nikita_Fedik_09_20_21.pdf
   - title: "Publications"
     url: /publications/
+
+
   # - title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
