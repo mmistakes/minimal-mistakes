@@ -13,6 +13,12 @@ toc: true
 * SCPC - Samsung Collegiate Programming Competition
 * 국민대학교 교내 알고리즘 경진대회
 
+## 2021
+
+| 대회명                                | 팀명 | 팀 멤버 | #              |
+| ------------------------------------- | ---- | ------- | -------------- |
+| [ICPC Seoul Regional Preliminary Contest](http://static.icpckorea.net/2021/scoreboard_preliminary/)     | Taste Why Frame v2 | [김상홍](http://boj.kr/u/bconfiden2), [서형빈](http://boj.kr/u/antifly55), [윤상건](http://boj.kr/u/ggj06281) | 45 / 301 (국민대 참가팀 중: 1 / 7) |
+
 ## 2020
 
 | 대회명                                | 팀명 | 팀 멤버 | #              |
