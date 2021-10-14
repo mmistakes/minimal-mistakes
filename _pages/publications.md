@@ -12,15 +12,13 @@ author_profile: true
 .cit {
   color: dimgray;
   line-height: 1.4;
-  font-size: 18px;
-  display: block;
+  font-size: 0.8em;
 }
 
 .title {
   color: black;
   font: BahnShrift;
-  font-size: 22px;
-  display: block;
+  font-size: 1em;
 }
 </style>
 
