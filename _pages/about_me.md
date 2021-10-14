@@ -4,15 +4,28 @@ classes:
  - wide 
 
 permalink: /about_me/
-title: "About Me"
+box: "About Me"
 author_profile: true
 ---
 <style>
-  p1 {color:black;
-    background-color:WhiteSmoke;}
+  .box {color:black;
+       text-align: center;
+       line-height: 5.0;
+       vertical-align: middle;
+       border: 1.5px solid gray;
+       box-sizing: border-box;
+       width: 110px;
+       padding: 8px; 
+       display: grid;
+       background-color:WhiteSmoke;}
+    
 </style>
 
 ## Skills
 ### Computational chemistry: 
-<p1> - thermodynamics, kinetics, molecular dynamics</p1>
-- <span style="background-color:WhiteSmoke"; padding: 10px; border: 2px solid red;>Gaussian</span>  ORCA  Psi4  VASP  MolPro  AdNDP  MultiWfn  AimAll</span>
+- thermodynamics, kinetics, molecular dynamics<br/>
+- chemical bonding, wave function stability<br/>
+- sampling of configurational space<br/>
+
+
+
