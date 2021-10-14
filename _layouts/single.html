@@ -29,7 +29,15 @@ layout: default
           {% if page.title %}<h1 id="page-title" class="page__title p-name" itemprop="headline">
             <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
           </h1>{% endif %}
-          {% include page__meta.html %}
+          {% if page.read_time %}
+          <!--
+                      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+                      devinlife comments :
+                          싱글 페이지(포스트)에 제목 밑에 Updated 시간 표기
+                          기존에는 read_time이 표기. read_time -> date 변경
+          -->
+                      <p class="page__date"><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }} <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+                      {% endif %}
         </header>
       {% endunless %}
 
