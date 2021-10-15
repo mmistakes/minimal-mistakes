@@ -171,17 +171,17 @@ Character classes are strings (case-sensitive) that define certain things in a p
 
 | character  | description  | example (True)   |
 |---|---|--------|
-| \w  | word character [a-zA-Z_0-9]  | `'hi123' -match '\w'`
-| \W  |  non-word character [^a-zA-Z_0-9] | `'...' -match '\W'`
-| \d  | Digit [0-9]  | `'1' -match '\d'`
-|  \D | non-digit [^0-9]  | `'word' -match '\D'`
-| \n  | new line  |  "`n" -match "\n"
-| \r  | carriage return  | "`r" -match "\r"
+| \w  | word character [a-zA-Z_0-9]  | `'hi123' -match '\w'` |
+| \W  |  non-word character [^a-zA-Z_0-9] | `'...' -match '\W'` |
+| \d  | Digit [0-9]  | `'1' -match '\d'` |
+|  \D | non-digit [^0-9]  | `'word' -match '\D'` |
+| \n  | new line  |  "`n" -match "\n" |
+| \r  | carriage return  | "`r" -match "\r" |
 |\t	| tabulation  | "`t" -match "\t" |
-|\s	| white space  | `' ' -match '\s'`
-|\S	| non-white space  | `'abc' -match '\S'`
-|\A	| beginning of the string (multi-line match)  | "bob" -match "\Ab"
-|\Z	| end of the string (multi-line match)  | "bob" -match "b\Z"
+|\s	| white space  | `' ' -match '\s'` |
+|\S	| non-white space  | `'abc' -match '\S'` |
+|\A	| beginning of the string (multi-line match)  | "bob" -match "\Ab" |
+|\Z	| end of the string (multi-line match)  | "bob" -match "b\Z" |
 |\b	| word boundary, boundary between \w and \W  |
 |\B	| not a word boundary  |
 |\<	| beginning of a word  |
