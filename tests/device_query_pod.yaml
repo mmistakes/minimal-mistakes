@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: devicequery
+spec:
+  containers:
+  - name: nvidia
+    image: xift/jetson_devicequery:r32.5.0
+    command: [ "./deviceQuery" ]
+  nodeSelector:
+    gpu: nvidia
