@@ -1,0 +1,17 @@
+---
+layout：single
+title：10-15号记录
+---
+
+# 判断文件格式
+
+```
+if(pic.toLowerCase().indexOf('jpg')!=-1){
+                    $("#picmsg").html("");
+                    return true;
+
+                }
+```
+
+通过查询添加的名称来判断
+
