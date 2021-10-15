@@ -8,7 +8,7 @@ header:
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
-# Howto Guide: Home Kubernetes Cluster
+# How to Guide: Home Kubernetes Cluster
 
 ```yaml
 Title: Setting up K3s on Raspberry Pi's and Jetson Nano's
@@ -84,10 +84,10 @@ You can determine the storage speeds using the `dd` command, as so:
 
 **Read**:  
 
-```shell
+{% highlight bash %}
 dd if=./speedTestFile of=/dev/zero bs=20M count=5 oflag=dsync # for SD card
 dd if=/mnt/storage/speedTestFile of=/dev/zero bs=20M count=5 oflag=dsync # for SSD
-```
+{% endhighlight %}
 
 **Write**:  
 
