@@ -11,18 +11,17 @@ author_profile: true
 <style>
 .cit {
   color: dimgray;
-  line-height: 1.4;
-  font-size: 0.8em;
+  line-height: 1.5em;
+  font-size: 0.9em;
+  display: block;
 }
 
 .title {
-  color: black;
-  font: BahnShrift;
   font-size: 1em;
 }
 </style>
-
-If you are intrested in any of the papers, DM on [ResearchGate](https://www.researchgate.net/profile/Nikita-Fedik) to get a private copy. 
+{: .notice--info}
+If you are intrested in any of the papers, DM me on [ResearchGate](https://www.researchgate.net/profile/Nikita-Fedik) to get a private copy.<br/> 
 
 1. <span class="title">The Rise of Neural Networks for Materials and Chemical Dynamics<br>
     <span class="cit">M. Kulichenko, J. Smith, B. Nebgen, Y. W. Li, **N. Fedik**, A. I. Boldyrev, N. Lubbers, K. Barros, S. Tretiak<br/>
@@ -163,3 +162,4 @@ If you are intrested in any of the papers, DM on [ResearchGate](https://www.rese
  <span class="cit">P. G. Morozov, S. V. Kurbatov, Yu. P. Semenyuk, O. N. Burov, М. Е. Kletskii, **N. Fedik**, K. F. Suzdalev<br/>
     *Chemistry of Heterocylic Compounds*, **2015**, 51(10), 903-912.<br/> 
     [On Publisher Site](http://hgs.osi.lv/index.php/hgs/article/view/2710)
+{: reversed="reversed"}

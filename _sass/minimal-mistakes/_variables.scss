@@ -6,6 +6,7 @@
    Typography
    ========================================================================== */
 
+
 $doc-font-size: 16 !default;
 
 /* paragraph indention */
@@ -30,7 +31,7 @@ $bodoni: "Bodoni MT", serif !default;
 $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
 
-$global-font-family: $new_font !default;
+$global-font-family: $sans-serif !default;
 $header-font-family: $sans-serif !default;
 $caption-font-family: $serif !default;
 

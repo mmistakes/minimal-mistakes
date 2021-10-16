@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Nikita Fedik Personal Page (under construction)"
+title                    : "Personal Page"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Nikita Fedik"
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Nikita Fedik"
   avatar           :  /assets/images/bio-photo.jpg
-  bio              : "Computational chemist completing PhD and trying to dive into machine learning and data science"
+  bio              : "Computational chemist exploring machine learning and data science"
   location         : Logan, Utah
   email            :
   links:

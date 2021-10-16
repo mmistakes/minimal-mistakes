@@ -6,6 +6,8 @@ main:
     url: https://raw.githubusercontent.com/NikitaFedik/nikitafedik.github.io/master/assets/CV_Nikita_Fedik_09_20_21.pdf
   - title: "Publications"
     url: /publications/
+  - title: "Awards"
+    url: /awards/
 
 
   # - title: "Quick-Start Guide"
