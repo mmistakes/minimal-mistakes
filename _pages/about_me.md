@@ -18,6 +18,18 @@ classes:
   font-size: 0.8em;  
 }
 
+.box1 {
+  display: grid;
+  grid-template-columns: 6em 15em 6em;
+  gap: 0.2em 0.2em;
+  font-size: 0.9em;  
+}
+
+.box_item1 {
+  text-align: left;
+  font-weight: 600;
+}
+
 .sp {
    white-space: pre;
      font-weight: 600;
@@ -40,24 +52,32 @@ table  {
  tr, td {
     border: none;
 }
-  .red {
-    color:red;
-  }
 
 
 </style>
 
+
+
+
+
 ### Education
 
-<span class="sp">PhD                                                             Utah State University                       2018-present</span>
-<span style="white-space: pre; font-size: 0.9em">
-Physical/Computational Chemistry
-Professor:  Alexander I. Boldyrev 
-</span><br/>
- <span class="sp">Specialist                                                     Southern Federal University            2012-2017</span>
-<span style="white-space: pre; font-size: 0.9em">
-Fundamental and Applied Chemistry
-</span>
+<div class="box1">
+  <div class="box_item1">PhD</div>
+  <div class="box_item1">Utah State University</div>
+  <div class="box_item1">2018-present</div>
+</div>
+Physical/Computational Chemistry<br/>
+Professor:  Alexander I. Boldyrev<br/> 
+
+<div class="box1">
+  <div class="box_item1">Specialist</div>
+  <div class="box_item1">Southern Federal University</div>
+  <div class="box_item1"> 2012-2017</div>
+</div>
+Fundamental and Applied Chemistry<br/>
+
+
 
 ### Skills
 <span class="sp">Computational chemistry</span><br/>
@@ -67,7 +87,7 @@ Fundamental and Applied Chemistry
 
 <div class="box">
   <div class="box_item">Gaussian</div>
-  <div class="box_item">Orca</div>
+  <div class="box_item">ORCA</div>
   <div class="box_item">Psi4</div>
   <div class="box_item">VASP</div>
   <div class="box_item">AdNDP</div>
