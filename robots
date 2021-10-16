@@ -1,3 +1,4 @@
- User-agent: *
- Allow: /
- Sitemap: {{ '/sitemap.xml' | relative_url | prepend: site.url }}
+User-agent: *
+Allow: /
+
+Sitemap: https://chihunmanse.github.io/sitemap2.xml
