@@ -3,11 +3,11 @@ title: "Reading List"
 layout: single
 categories:
   - book_report
-permalink: /categories/literature/book_report/reading_list
+permalink: /categories/learning/book_report/reading_list
 toc: true
 classes: wide
 header:
-  overlay_image: "/assets/images/categories/literature/book_reports/reading_list_1.jpg"
+  overlay_image: "/assets/images/categories/learning/book_reports/reading_list_1.jpg"
 ---
 
 # Overview
@@ -74,7 +74,7 @@ This post will capture the books I have read over the years starting from 2019.
     
     a.  NA - 06/08/2021
         
-3.  _**The Mastery of Love**_ by Don Miguel Ruiz
+3.  [_**The Mastery of Love**_](https://github.com/aztfmod/terraform-azurerm-caf/pull/719) by Don Miguel Ruiz
     
     a.  05/26/21 - 09/30/21
         

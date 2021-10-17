@@ -2,8 +2,8 @@
 title: "The Art of Negotiation"
 layout: single
 categories:
-  - free_writing
-permalink: /categories/literature/free_writing/art_of_negotation
+  - masterclass
+permalink: /categories/learning/masterclass/art_of_negotation
 toc: true
 ---
 In this post, I will be taking note of Chris Voss's

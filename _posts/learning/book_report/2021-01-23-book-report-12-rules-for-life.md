@@ -1,9 +1,9 @@
 ---
-title: "12 Rules For Life"
+title: "Book Report - 12 Rules For Life"
 layout: single
 categories:
   - book_report
-permalink: /categories/literature/book_report/12_rules_for_life
+permalink: /categories/learning/book_report/12_rules_for_life
 toc: true
 classes: wide
 ---
@@ -12,11 +12,17 @@ classes: wide
 
 Here I will capture some of the key points and lessons for “12 Rules for Life” by Jordan Peterson. The purpose of this book report is to remind my future self of the lessons I have learned. I will attempt to stay away from bullet notes and instead try to tie together the various lessons I have learned. I hope you enjoy it and feel free to leave comments with your thoughts, interpretations, ideas, and whatever else comes to mind.
 
-# Chapter 1: Stand Up Straight With Your Shoulder Back
+# Notes Per Chapter
+
+I started off by capturing a review for each chapter, but as I kept reading the book keeping up with the chapter summary became more difficult. I also caught myself not wanting to read because I didn’t want to write detailed chapter summaries.
+
+I will keep the chapter summaries that I have written, and once I have completed the book, I will have an overall review.
+
+## Chapter 1: Stand Up Straight With Your Shoulder Back
 
 Peterson started strong with his first chapter. This chapter speaks of human and animal nature and provides real-world examples to back his claim. The argument is well thought out and explained in great detail. The thought process is linear and well mapped out. This chapter spoke to me very deeply and I am hoping other chapters in this book will bring out similar emotions.
 
-## The Lobsters
+### The Lobsters
 
 In this chapter, Jordan Peterson starts by talking of lobsters, and the way they compete for dominance. The most dominant lobsters win the best territory, which provides them with the best food sources, keeps them safe from predators, and brings in all of the ladies. To be the most dominant lobster, lobsters must assert their dominance over each other. The most dominant lobsters rise to the top, and live life comfortably, while the least dominant lobsters stay at the bottom.
 
@@ -26,7 +32,7 @@ Peterson talks further on the lasting effects of the losing lobsters. Now that t
 
 In this way, lobsters establish a hierarchy. They determine who they can push around and messed with, and who is going to stand their ground and fight. The ladies know who they want to mate with. The lobsters at the top of the hierarchy get more than those at the bottom.
 
-## Nature Selects Fitness
+### Nature Selects Fitness
 
 Peterson speaks of Yin and Yang. He does so in the concept of order and chaos, and how they are circling each other. He states “This is because order and chaos are interchangeable, as well as eternally juxtaposed. There is nothing so certain that it cannot vary.”
 
@@ -34,11 +40,11 @@ Peterson does a wonderful job at explaining the reality of natural selection. A 
 
 The environment of nature itself is _constantly_ changing, meaning that species have to evolve to the flow and current of nature. As nature changes, the features that a species needs to be successful within it must also change. In this way, creatures are in a dance with nature, as nature changes, so must they, just to survive. Peterson quotes the Red Queen from Alice in Wonderland, “you have to run as fast as you can just to stay in the same place.” In essence, nature changes, as it changes, it selects the fit who can adapt to its changes.
 
-### Layers Of Nature
+#### Layers Of Nature
 
 Peterson also reminds us that nature is not simply dynamic either. Some things change faster than others. He gives a beautiful example to capture this, “Leaves change more quickly than trees, and trees more quickly than forests.” He then goes on to explain the importance of this. “If it wasn’t this way, then the conservatism of evolution would not work, as the basic morphology of arms and hands would have to change as fast as the length of arm bones and the function of fingers.” He explains, “chaos, within order within chaos, within a higher order. The order that is most real is the order that is most unchanging-and that is not necessarily the order that is most easily seen.” He wraps up the concept and touches on his main point perfectly with, “The leaf, when perceived, might blind the observer of the tree. The tree can blind him to the forest. And some things that are most real (such as the ever-present dominance hierarchy) cannot be seen.
 
-### Romanticizing Nature
+#### Romanticizing Nature
 
 Oftentimes we find ourselves romanticizing nature by focusing solely on its beauty. But in reality, the environment of nature can be very ugly. Peterson says, “Unfortunately, ‘the environment’ is also elephantiasis and guinea worms (don’t ask), anopheles mosquitoes and malaria, starvation-level droughts, AIDS and the Black Plague.” He explains that not only do we not fantasize about these things, but due to these things, we have modified our surroundings, have built cities, transportation, grow food and generate power. “If Mother Nature wasn’t so hell-bent on our destruction it would be easier for us to exist in simple harmony with her dictates.”
 
@@ -46,17 +52,17 @@ This brings Peterson to his main point of nature, “that nature is something st
 
 Peterson believes and explains how the dominance hierarchy is not something that we have made up through culture or society. Instead, it is something that has been within us (us, as in life), for a very long time. He claims that “Dominance hierarchies are older than trees”. Due to this, the part of our brain which calculates where we fit into this dominance hierarchy is “ancient and fundamental.”
 
-### How This Translates to Us
+#### How This Translates to Us
 
 Like our fellow lobsters, the dominance hierarchy has very similar effects in our lives. When we feel defeated we have traits similar to the lobsters who have lost a fight. “Our posture droops. We face the ground. We feel threatened, hurt, anxious, and weak.” In situations like this, we are not able to fight back against life, which can lead to anxiety and depression. It can led to use being easy targets for “harder-shelled bullies.”
 
 For low-ranking human beings, low serotonin has negative effects. It means lower self-confidence, less happiness, more pain, anxiety, illness, and usually a lower life span. When you’re low, it's easier to stay low and harder to build yourself back up.
 
-## Our Dominance Calculator
+### Our Dominance Calculator
 
 As stated, we all have an ancient counter in our brains which calculates where we stand on the dominance hierarchy. Peterson does so by having a scale from 1-10, 1 being most dominant, 10 being least. Our brain has various ways of calculating where we stand on the hierarchy. One way is by noticing how you are treated by others. If others respect you and treat you well, then it increases your self-confidence, and your brain positions you at a higher level.
 
-### The Effects of Being at the Bottom
+#### The Effects of Being at the Bottom
 
 On the other hand, if you are not treated well by your peers, your brain will put you at the lower end of the scale. This will lead your brain to release less serotonin, which will negatively impact you. When you’re at the bottom of the scale, you are more susceptible to reacting to the smallest of unexpected emergencies, which can happen more often at the bottom.
 
@@ -66,11 +72,11 @@ This ancient counter can even shut down your immune system if it believes it nee
 
 He closes off the thought by stating how those at the top of the scale act very differently. Peterson says, “It (the counter) thinks the chances that something will damage you is low and can be safely discounted. Change might be opportunity, instead of a disaster.” You have a higher level of serotonin, which renders you calm and collected during stressful situations, which will help you resolve them in a better manner. You are confident and less alert than your lower-standing counterparts. Since your future is secure your more likely to think of the long term, delay gratification, and ultimately are a reliable and thoughtful person.
 
-### The Counter Malfunctioning
+#### The Counter Malfunctioning
 
 The counter within us is also able to malfunction, and various things can cause this. Poor eating and sleeping patterns can negatively affect its functionality. He speaks of the importance of routine, and how routine turns the things we do into habits, and how these habits help to shape the best versions of ourselves.
 
-#### Feedback Loops
+##### Feedback Loops
 
 Perhaps one of the most fascinating parts of the chapter was the one of the feedback loop. Peterson explains the general concept of a feedback loop as such, “A positive feedback loop requires an input detector, an amplified, and some form of output. Imagine a signal picked up by the input detector, amplified, and then emitted, in amplified form…. The trouble starts when the input detector detects the output, and runs it through the system again, amplifying and emitting it again. A few rounds of intensification and things get dangerously out of control.”
 
@@ -84,7 +90,7 @@ He also touches upon bully-victims and the lasting effect this has on their coun
 
 In some cases, when a person constantly feels scared, threatened, anxious and subordinate, they carry themselves with a slouched posture, they avoid direct eye contact. This can attract people who were once bullies to them, and cause the bullying to happen again. Although it might not be physical anymore and verbal instead, the effect is the same, it lowers the victim's perception of their position in the dominance hierarchy. With this low belief in self, accompanied by the way they carry themselves, it doesn’t matter if they relocate or change jobs, they will always attract bullies, which will keep them at the bottom of the hierarchy.
 
-## Rising Up
+### Rising Up
 
 Peterson talks about the difference between those who _can’t_ fight back, and those who _won’t_ fight back. Those who can’t fight back might be smaller in size and weaker than their opponents. But those who _won’t_ fight back can be people who are very compassionate and self-sacrificing. It can also be by people who have decided that all forms of aggression are wrong. These people can suppress their aggression due to their overt compassion and self-sacrificing beliefs, which are naive and exploitable.
 
@@ -92,7 +98,7 @@ Those who say no early in the cycle of oppression, limit the extent of oppressio
 
 Those who have the naive belief that aggression is wrong have a few basic beliefs, “People are basically good; no one really wants to hurt anyone else, the threat (and, certainly, the use) of force, physical or otherwise, is wrong.” Those who have this naive conception of the world oftentimes invite the malevolent. Those who are looking to harm others have developed a sensor for those who will allow it.
 
-### Finding Your Aggression
+#### Finding Your Aggression
 
 Peterson talks of the things he does in his clinical practice to combat this. He shows those with this naive belief of the resentment and anger they are capable of. He then helps them redirect it into standing up for themselves.
 
@@ -100,13 +106,13 @@ He states that in some cases, people are shocked by this, sometimes severely. He
 
 Once people realize the aggression they are capable of, they start to stand up for themselves, **demand** respect, and in turn, develop self-respect. They walk around with more confidence, they ditch their hunched posture which they previously shared with the defeated lobster. They have realized that if they don't stand up for themselves, they will resent themselves, and feed into self-destruction. Peterson believes, “There is very little difference between the capacity for mayhem and destruction, integrated, and strength of character. This is one of the most difficult lessons of life.”
 
-### How to Stand Up Tall
+#### How to Stand Up Tall
 
 You might realize that you’re a loser, or that you have bad traits or a collection of bad traits, that doesn’t mean that you have to stay that way. You must realize this within yourself, that is the first step of overcoming and changing. “If you slump around, with the same bearing that characterizes a defeated lobster, people will assign you a lower status, and the older counter that you share with crustaceans, sitting at the very base of your brain, will assign you a low dominance number.” This will affect your levels of serotonin, will stop you from standing up for yourself, and ultimately cripple your chances of living life in the best circumstances.
 
 As feedback loops can negatively affect your life, you can also develop feedback loops that do the opposite. A good example is by fixing your posture and facing the world with your chest out and chin up. “If your posture is poor, for example - if you slump, shoulders forward and rounded, chest tucked in, head down, looking small, defeated and ineffectual - then you will feel small, defeated and ineffectual.” If you present yourself as defeated, then the world will perceive you as such. “If you straighten up, then people will look at and treat you differently.”
 
-#### More Than Just Physically
+##### More Than Just Physically
 
 Having good posture might not be the solution to all your problems, and it might not get you out of the bottom of the dominance hierarchy. Peterson states, “But standing up straight with your shoulder back is not something that is only physical, because you’re not only a body. _You’re a spirit_, so to speak - a psyche - as well. Standing up physically also implies and invokes and demands standing up metaphysically. Standing up means voluntarily accepting the burden of Being. Your nervous system responds in an entirely different manner when you face the demands of life voluntarily. You respond to a challenge, instead of bracing for a catastrophe. You see the gold the dragon hoards, instead of shrinking in terror from the all-too-real fact of the dragon. You step forward to take your place in the dominance hierarchy, and occupy your territory, manifesting your willingness to defend, expand and transform it. That can all occur practically or symbolically, as a physical or as a conceptual restructuring…. To stand up straight with your shoulders back is to accept the terrible responsibility of life, with eyes wide open.”
 
@@ -120,11 +126,11 @@ When adversity does strike, it won’t send you into a spiral, you will be able 
 
 It is your right to live the best life possible. You are capable of doing great things and having the best in life. The best territory, the best food, and the best mate. You are deserving, all you must do is stand tall, and get it. Muster up the strength and courage to approach the world with your eye on the prize. Peterson closes off the chapter with, “Look for your inspiration to the victorious lobster, with its 350 million years of practical wisdom. Stand up straight, with your shoulders back.”
 
-# Chapter 2: Treat Yourself Like Someone You Are Responsible For Helping
+## Chapter 2: Treat Yourself Like Someone You Are Responsible For Helping
 
 I should preface the summary of this chapter with the fact that I did not enjoy this chapter as much as chapter 1. Although the chapter is well written, some of the examples used here are more “theoretical” and reference the bible as the source to back up some of the arguments made. This chapter also didn’t speak to me as personally as the first chapter did. Nonetheless, I still found the knowledge in this chapter valuable, and I think it's an important chapter. I also believe that this chapter probably hit home to many readers. I by no means disagree with the information in the chapter.
 
-## Taking your Medication
+### Taking your Medication
 
 Peterson starts the chapter off by discussing how most people do not take their medication. He describes that a third of people who are prescribed a medication won’t fill their prescription, and the rest are likely to make errors while taking the medication. They either miss doses, they take them at the wrong time, and overall, many people are not very attentive to taking their medication. Most doctors blame their patients for this, and their argument tends to, “Why are these people not taking their medication? Don’t they want to get better?”
 
@@ -132,7 +138,7 @@ Peterson discusses how most psychiatrists like to take a different stance on thi
 
 Peterson ends the section off by explaining how most people who are not on top of taking their medication, seldom miss administering medication for their pets. Most people will go out of their way to make sure their pets don’t miss a single dose, and at the same time will neglect their health. To further understand this, Peterson takes us back to Genesis.
 
-## The Oldest Story
+### The Oldest Story
 
 Peterson discusses various origin stories from different cultures throughout history. He then discusses how scientific discoveries changed the way we viewed things. Although science is wonderful and has allowed us to understand the world around us, it has also made us close-minded in a sense. We believe that science holds all answers and that it is difficult for us to understand that there are other ways of seeing things. Peterson believes that our ancestors were far more concerned “with actions that dictated survival than with anything approximating that we now understand as objective truth.”
 
@@ -140,7 +146,7 @@ Peterson then discusses that our ancestors viewed _Being_ as a place of action, 
 
 Peterson closes out his thought with the following, “In any case, _that which we subjectively experience_ can be likened much more to a novel or a movie than to a scientific description of physical reality.” I believe he is trying to plant the seed that our lives are more than simple structure and the occurrence of events. Instead, our lives are more like movies and dramas, where we are the protagonist. There is far more emotion and personality involved with the latter than with the former.
 
-## Order, Chaos and the Transition
+### Order, Chaos and the Transition
 
 Peterson once again dives into order, chaos, and the transition between the two. He describes “Chaos” as “the domain of ignorance itself. It’s _unexplored territory_.” He describes in great detail things that take the shape of chaos, such as “the monster underneath the bed,… the hidden anger of your mother, and the sickness of your child.” Chaos takes the shape of what we don't know, what brings us unrest, and the things we don’t know how to react or handle with ease.
 
@@ -154,7 +160,7 @@ Peterson also describes the chaos that women can cause to men in a sexual sense 
 
 Peterson ends his thoughts with the idea that order and chaos are both vital in our existence. With only order, we never grow, we never change, we never evolve. With only chaos, we are always overwhelmed and never able to ground ourselves. Peterson says, “Thus you need to place one foot in what you have mastered and understood and the other in what you are currently exploring and mastering. Then you have positioned yourself where the terror of existence is under control and you are secure, but where you are also alert and engaged. That is where there is something new to master and some way that you can be improved. That is where meaning to be found.”
 
-## The Garden of Eden
+### The Garden of Eden
 
 Peterson then takes a **deep** dive into the Garden of Eden, as depicted in the bible. He connects his ideas with the occurrences in the bible. Peterson explains Eden as a place of order, and the serpent as chaos. Peterson also makes note that chaos will always creep in. God in his infinite wisdom created Eden knowing that chaos would ensue. So instead of trying to keep chaos at bay, it is better to acknowledge that it will appear and be able to handle it when it does. Furthermore, keeping chaos at bay is a terrible way to live, “How could the nature of man ever reach its full potential without challenge and danger?”
 
@@ -162,7 +168,7 @@ Peterson goes onto discussing how the serpent chose to target Eve and manipulate
 
 As Adam and Eve wake up, they realize that they’re naked. Peterson walks us through what this means.
 
-### The Naked Ape
+#### The Naked Ape
 
 “Naked means vulnerable and easily damaged. Naked means subject to judgment for beauty and health. Naked means unprotected and unarmed in the jungle of nature and man. Adam and Eve realized this and therefore rushed to cover themselves. They hide in the presence of God, and when God calls for Adam, he slowly reveals himself, ashamed. He tells God that he is naked and ashamed, which makes God realize that he ate the apple. He asked Adam if he ate something he wasn't supposed to and Adam folds like a lawn chair.
 
@@ -170,7 +176,7 @@ He points at Eve and snitches to God that she made him eat the apple, he then bl
 
 Peterson talks of the curse that God bring to woman and man. Women are cursed to bear children, oftentimes for men that they repulse, who may have control over them. As for men, they will have to work, they will have to sacrifice the present for the future. They will have to suffer so that they may provide. Then God banished Adam and Eve, from the comfort of Order found in Eden, to the depth of Chaos found on Earth.
 
-### Our Unworthiness
+#### Our Unworthiness
 
 Peterson brings the idea back to why we don't take our medication:
 
@@ -182,13 +188,13 @@ Peterson talks of animals, and how they hunt and kill to survive. We don’t loo
 
 This “lust” for cruelty, this action that we have collectively taken can help explain why we take care of our dogs better than ourselves. A dog is not capable of being cruel, it simply does what it knows. We, on the other hand, perform acts of cruelty all the time. Why should we take care of ourselves when we can be so cruel and damaging to each other. We are not worthy of care.
 
-## Walking With God
+### Walking With God
 
 Peterson discusses how most of us interpret our worth when considering our faults and blemishes. But Peterson states, “Perhaps it is not simply the emergence of self-consciousness and the rise of our moral knowledge of Death and the Fall that besets us and makes us doubt our worth. Perhaps it is instead our unwillingness – reflected in Adam’s shamed hiding – to walk with God, despite our fragility and propensity for evil.” I believe this idea is extremely important. Many of us see our flaws, and therefore we value ourselves less, and in this shame and nakedness, we are unwilling to walk with God.
 
 “If we wish to take care of ourselves properly, we have to respect ourselves – but we don't, because we are – not least in our own eyes – fallen creatures. If we lived in Truth; if we spoke the Truth – then we could walk with God once again.” This concept is so important. In my life, I try to live in the light. I try to live in a way that I am proud of, so that I may “walk with God”, so that I can do so without shame. Although Peterson is explaining how we fail to walk with God due to our faults, I urge you all to live your life in a way that you are unashamed. Although we will all have our flaws and blemished, live your life with honor, own your faults and mistakes, so that you are never afraid to walk with God, or anyone else, least of all, yourself.
 
-### Allowing Yourself to be Bullied
+#### Allowing Yourself to be Bullied
 
 Peterson then goes on to explain how we can oftentimes think of humans as narcissistic, selfish, and always looking out for themselves. But many of us are the exact opposite, “they shoulder intolerable burdens of self-disgust, self-contempt, shame, and self-consciousness. Thus, instead of narcissistically inflating their importance, they don't value themselves at all, and they don't take care of themselves with attention and skill.
 
@@ -200,7 +206,7 @@ Peterson goes onto quote Carl Jung, “doing unto others as you would have them 
 
 “If I am someone’s friend, family member, or lover, then I am morally obligated to bargain as hard on my behalf as they are on theirs. If I fail to do so, I will end up a slave, and the other person a tyrant. What good is that? It is much better for any relationship when both partners are strong. Furthermore, there is little difference between standing up and speaking for yourself and speaking for someone else. As Jung points out, this means embracing and loving the sinner who is yourself, as much as forgiving and aiding someone else who is stumbling and imperfect.”
 
-### Give Credit Where It is Due
+#### Give Credit Where It is Due
 
 Peterson highlights the significance of giving credit to yourself and others for the things that we do day-to-day. We all put in the work to keep ourselves, our family, and our society running every single day. That's pretty amazing. Give yourself credit for the good that you do, unto yourself and unto others. We must balance our acceptance of our blemishes, faults, cruelty, and nakedness with the gratitude, kindness, and positive acts we commit for ourselves and others.
 
@@ -208,7 +214,7 @@ We deserve to be respected, all of us. We all play a role in our lives, in each 
 
 To treat yourself as someone you are responsible for helping doesn’t mean that you have to do what makes you happy. Instead, you need to do what’s good for yourself. “Every time you give a child something sweet you make that child happy. That does not mean that you should do anything for children except feed them candy. “Happy is by no means synonymous with “good.” You must learn to care for yourself with the same attention that you would for a child. There is no other way around it.
 
-### Having a Sense of Direction
+#### Having a Sense of Direction
 
 Peterson closes off the chapter by articulating the need of knowing where you’re heading, and the significance of it. “You must determine where you are going so that you can bargain for yourself so that you don’t end up resentful, vengeful, and cruel. You have to articulate your principles so that you can defend yourself against others' taking inappropriate advantage of your, and so that you are secure and safe while you work and play…. You must keep the promises you make to yourself, and reward yourself so that you can trust and motivate yourself.”
 
