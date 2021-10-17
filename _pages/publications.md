@@ -10,7 +10,7 @@ Can also be found in [Google Scholar](https://scholar.google.co.jp/citations?use
 
 ## Conference/Workshop Papers (Refreed)
 * **Kazutoshi Shinoda**, Yuki Takezawa, Masahiro Suzuki, Yusuke Iwasawa, Yutaka Matsuo: "Improving the Robustness to Variations of Objects and Instructions with A Neuro-Symbolic Approach for Interactive Instruction Following." In Proceedings of the 1st Workshop on Novel Ideas in Learning-to-Learn through Interaction (NILLI) at EMNLP 2021, 2021. (to appear)
-  * [paper] [arXiv]
+  * [paper] [[arXiv](https://arxiv.org/abs/2110.07031)]
 * **Kazutoshi Shinoda**, Saku Sugawara, Akiko Aizawa: "Can Question Generation Debias Question Answering Models?
 A Case Study on Question-Context Lexical Overlap." In Proceedings of the 3rd Workshop on Machine Reading for Question Answering (MRQA) at EMNLP 2021, 2021. (to appear)
   * [paper] [[arXiv](https://arxiv.org/abs/2109.11256)] [[data](https://github.com/KazutoshiShinoda/Synonym-Replacement)]
