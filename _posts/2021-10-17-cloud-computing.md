@@ -82,7 +82,7 @@ title:  "Infra Basics [Week 1]: Cloud Computing"
 
 ### DAS
 
-<img src='/assets/images/cloud/week1_3.png' style="margin-bottom:10px">
+<img src='/assets/images/cloud/week1_3.PNG' style="margin-bottom:10px">
 
 **DAS(Direct Attached Storage)** 는 내부 케이블을 통해 시스템(예: PC 또는 서버)에 직접 연결되는 디지털 스토리지이다. DAS 시스템은 HBA(호스트 버스 어댑터)를 통해 시스템에 직접 연결된 단일 인클로저에 여러 개의 하드 디스크 드라이브를 보유한다. 이러한 디스크 드라이브 사이에는 네트워크 장치(예: 스위치, 허브, 라우터 또는 네트워크 케이블)가 없다. 개인 PC 사용자의 경우 시스템의 하드 디스크는 DAS의 표준 형태이다. 그러나 기업이나 기업에서는 한 서버에 있는 별도의 디스크 드라이브와 해당 서버 외부에 있는 드라이브를 직접 연결하거나 SCSI(Small Computer System Interface), SATA(Serial Advanced Technology Attachment) 또는 SAS(Serial Attached SCSI)를 통해 연결한다.). DAS의 또 다른 한계는 데이터를 다른 서버나 사용자와 공유할 수 없다.
 
@@ -104,7 +104,7 @@ title:  "Infra Basics [Week 1]: Cloud Computing"
 ### NAN
 
 
-<img src='/assets/images/cloud/week1_4.png' style="margin-bottom:10px">
+<img src='/assets/images/cloud/week1_4.PNG' style="margin-bottom:10px">
 
 
 **네트워크 연결 스토리지(Network-Attached Storage)** 는 컴퓨터 네트워크에 연결된 파일 수준의 컴퓨터 데이터 스토리지 서버이다. 중앙 위치에서 권한이 부여된 여러 네트워크 사용자 및 기타 클라이언트 그룹에 데이터에 대한 액세스 및 저장을 제공한다. 이러한 시스템은 일반적으로 엔지니어링 소프트웨어 빌드, 데이터 로깅, 이메일 시스템, 비디오 녹화 및 편집, 비즈니스 분석, 재무 기록, 유전체학 데이터 세트 등을 포함한 공유 애플리케이션을 지원하는 데 사용된다.
@@ -126,7 +126,7 @@ title:  "Infra Basics [Week 1]: Cloud Computing"
   
 ### SAN
 
-<img src='/assets/images/cloud/week1_5.png' style="margin-bottom:10px">
+<img src='/assets/images/cloud/week1_5.PNG' style="margin-bottom:10px">
 
 **스토리지 영역 네트워크(Storage Area Network)** 은 파일 시스템을 제어해야 하는 호스트에 대해 블록 수준 액세스를 제공한다. SAN이 개발되기 전에는 서버가 내부 디스크를 로컬 파일 시스템을 활용하는 블록 장치로 사용됐지만 스토리지는 서버 내부에서만 확장될 수 있었다. SAN은 이 문제를 피하고 네트워크를 통해 블록 장치를 제공합니다. NAS와 달리 SAN은 서버의 성능을 유지하기 위해 복잡한 기술이 필요한 네트워크 스토리지 시스템이다. 구성 요소에는 게이트웨이 장치, 전용 스위치(또는 공유 네트워크의 VLAN), 테이프 백업 장치, 컨트롤러 노드 및 디스크 선반이 포함될 수 있다. SAN 시스템은 SCSI, iSCSI 및 파이버 채널과 같은 프로토콜을 사용한다.
 
