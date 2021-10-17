@@ -77,7 +77,7 @@ title:  "Infra Basics [Week 1]: Cloud Computing"
 - Private Cloud를 주로 사용하되 예상치 못한 수준의 트래픽이 몰리는 경우 Public Cloud로 확장
 - 최근 기업들이 가장 관심 갖는 형태
 
----
+
 ## 
 
 
