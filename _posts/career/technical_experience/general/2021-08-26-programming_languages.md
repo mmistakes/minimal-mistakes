@@ -84,6 +84,26 @@ C’s simplicity is what makes it stand out to me and millions of other develope
 -   I would love to write a library in C and utilize it in Python.
 -   I would like the opportunity to write production-level applications in C.
 
+# Go
+
+Go is a new language for me, and one that I am enjoying thoroughly. As someone who enjoys the complexity of low-level applications and languages, yet likes the simple syntax of high-level languages, Go was a must learn. Through books and simple practice, I have been learning Go and learning the best practices of the language.
+
+Although I am new to Go, I can see myself working as a Go developer in the future. There are lots of features and concepts within Go that I am a fan of. In the coming weeks and months, I will be focused on learning Go, and the information in the coming section will more than likely  need to be updated.
+
+**I have worked with** _**Go**_ **in the following capacity:**
+-   I have utilized applications in Go such as Terraform and understand them at a deep level. This understanding gives me some insight into the capabilities and functionalities of Go.
+-   I have worked through the [“Go By Example”](https://gobyexample.com/) syllabus.
+    
+-   I have written code in Go to grasps all of its built-in features.
+
+**I know** _**Go**_ **to the following level:**
+-   I understand _many_ best practices within Go, as well as the general concepts within the language.
+-   I understand when to use specific Go features to conform to best practices and maximize efficiency.
+-   I understand how to write clean, efficient code, test it, compile it, and deploy it.
+
+**This is how I would like to continue my growth and understanding of** _**Go:**_
+-   I would like the opportunity to write production-level code in Go down the road.
+
 # Bash
 
 Good old Bash, thank you for saving us all countless hours. Although it is not considered a programming language, Bash has saved programmers lots of time. I have used Bash in many ways, and I am  grateful for its existence.
@@ -111,21 +131,3 @@ Lua is a gem hidden deep within the glorious application known as NGINX and some
 
 **This is how I would like to continue my growth and understanding of** _**Lua:**_
 -   Like Bash, I simply want to keep using this powerful language to make my life easier.
-
-# GO
-
-Go is a new language for me, and one that I am enjoying thoroughly. As someone who enjoys the complexity of low-level applications and languages, yet likes the simple syntax of high-level languages, Go was a must learn. Through books and simple practice, I have been learning Go and learning the best practices of the language.
-
-Although I am new to Go, I can see myself working as a Go developer in the future. There are lots of features and concepts within Go that I am a fan of. In the coming weeks and months, I will be focused on learning Go, and the information in the coming section will more than likely  need to be updated.
-
-**I have worked with** _**Go**_ **in the following capacity:**
--   I have written a few basic programs and applications in Go to understand its basic functionality.
--   I have utilized applications in Go such as Terraform and understand them at a deep level. This understanding gives me some insight into the capabilities and functionalities of Go.
-
-**I know** _**Go**_ **to the following level:**
--   I understand _some_ best practices within Go, as well as the general concepts within the language.
--   I know enough about Go to appreciate its wide set of features and use cases.
-
-**This is how I would like to continue my growth and understanding of** _**Go:**_
--   I will be spending plenty of time in the coming weeks to learn Go as well as I know Python, C, and C++.
--   I would like the opportunity to write production-level code in Go down the road.
