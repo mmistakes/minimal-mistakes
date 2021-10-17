@@ -105,7 +105,7 @@ author:
   avatar           : "/assets/images/img1.PNG"
   bio              : "Welcome"
   location         : "Seoul"
-  email            : "ithing43@gmail.com"
+  #email            : "ithing43@gmail.com"
   links:
     #- label: "Email"
     #  icon: "fas fa-fw fa-envelope-square"
