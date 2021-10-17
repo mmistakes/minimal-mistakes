@@ -1,3 +1,8 @@
+---
+layout: single
+title:  "Infra Basics [Week 1]: Cloud Computing"
+---
+
 # Infra Basics [Week 1]: Cloud Computing
 
 #### Contents
