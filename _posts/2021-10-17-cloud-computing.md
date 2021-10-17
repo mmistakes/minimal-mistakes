@@ -63,7 +63,7 @@ title:  "Infra Basics [Week 1]: Cloud Computing"
 - Cloud 사업자가 IT 자원을 서비스로 제공
 
 <div>
-<img src='/assets/images/cloud/week1_2.png' style="margin-top:10px">
+<img src='/assets/images/cloud/week1_2.PNG' style="margin-top:10px">
 <span style="display: inline-block; width: 95%; text-align: center;">전 세계적으로 널리 사용되는 제공업체들은 다음과 같다.
 </span>
 </div>
