@@ -848,7 +848,81 @@ object KafkaStreamsApp {
 
 And, that's all about the Kafka Streams library, folks!
 
-## 8. Conclusions
+## 8. Let's Run It
+
+At this point, we defined a full working Kafka application, which uses many transformations and join operations. Now, it's time to test the topology we've developed, sending some messages to the various Kafka topics.
+
+First, let's fill the tables, starting from the topic `discounts`. We have to send some messages associating a profile to an effective discount:
+
+```shell
+kafka-console-producer \
+   --topic discounts \
+   --broker-list localhost:9092 \
+   --property parse.key=true \
+   --property key.separator=,
+<Hit Enter>
+profile1,{ "profile": "profile1", "amount": 50.0 }
+profile2,{ "profile": "profile2", "amount": 25.0 }
+profile3,{ "profile": "profile3", "amount": 15.0 }
+```
+
+In the above command we created three profiles associated with a discount of the 50%, 25%, and 15% respectively. 
+
+Next step is to create some users and associated them with a discount profile in the topic `discount-profiles-by-user`:
+
+```shell
+kafka-console-producer \
+   --topic discount-profiles-by-user \
+   --broker-list localhost:9092 \
+   --property parse.key=true \
+   --property key.separator=,
+<Hit Enter>
+Daniel,profile1
+Riccardo,profile2
+```
+
+We are ready to insert our first order into the system, using the topic `orders-by-user`. As the name of the topic said, the keys of the following messages are user-ids:
+
+```shell
+kafka-console-producer \
+   --topic orders-by-user \
+   --broker-list localhost:9092 \
+   --property parse.key=true \
+   --property key.separator=,
+<Hit Enter>
+Daniel,{ "orderId": "order1", "user": "Daniel", "products": [ "iPhone 13", "MacBook Pro 15" ], "amount": 4000.0 }
+Riccardo,{ "orderId": "order2", "user": "Riccardo", "products": [ "iPhone 11"], "amount": 800.0 }
+```
+
+We must pay the above orders. So, we need to send the messages representing the payment transaction. The topic storing such messages is called `payments`:
+
+```shell
+kafka-console-producer \
+   --topic payments \
+   --broker-list localhost:9092 \
+   --property parse.key=true \
+   --property key.separator=,
+<Hit Enter>
+order1,{ "orderId": "order1", "status": "PAID" }
+order2,{ "orderId": "order2", "status": "PENDING" }
+```
+
+If everything goes right, into the topic `paid-orders` we should find a message containing the paid order of the user `"Daniel"`, containing an `"iPhone 13"` and a `"MacBook Pro 15"`, and worth 2,000.0 Euro. We can read the messages of the topic using the `kafka-console-consumer.sh` shell command:
+
+```shell
+kafka-console-consumer \
+    --bootstrap-server localhost:9092 \
+    --topic paid-orders \
+    --from-beginning
+```
+
+The above command will read the following message, concluding our journey in the Kafka Streams library:
+
+```
+TODO
+```
+
+## 9. Conclusions
 
 This article introduced the Kafka Streams library, a Kafka client library based on top of the Kafka consumers and producers API. In detail, we focused on the Stream DSL part of the library, which lets us represent the stream's topology at a higher level of abstraction. After introducing the basic building blocks of the DSL, `KStream`, `KTable`, and `GlobalKTable`, we showed the primary operations defined on them, both the stateless and the stateful ones. Then, we talked about joins, one of the most relevant features of Kafka Streams. Finally, we wired all together, and we learned how to start a Kafka Streams application.
 
