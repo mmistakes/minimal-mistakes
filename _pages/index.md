@@ -4,7 +4,7 @@ layout: home
 author_profile: true
 ---
 
-I am a 2nd-year PhD student in the Computer Science Department of the University of Tokyo.
+I am a 3rd-year PhD student in the Computer Science Department of the University of Tokyo.
 
 My adviser is Prof. Akiko Aizawa. [[link](https://www-al.nii.ac.jp/)]
 
