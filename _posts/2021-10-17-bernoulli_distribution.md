@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Bernoulli Distribution"
+title:  "Probability Distribution [0]:Bernoulli Distribution"
 ---
 
 # 베르누이 분포 (Bernoulli Distribution)
