@@ -423,6 +423,7 @@ comments:
   utterances:
     theme: "github-light" # "github-dark"
     issue_term: "pathname"
+    label: "comment" # Optional - must be existing label.
 ```
 
 #### giscus comments
