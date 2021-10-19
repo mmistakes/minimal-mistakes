@@ -81,7 +81,7 @@ The night sky in Arizona was so clear that I could see and feel the universe. Wh
 
 At the time, throughout my journey, I thought the connection I was feeling to all the places, sights, and moments was the connection between myself and them. But now I can characterize it differently. The reason these moments were so significant to me is that for the first time in my life, the life within me felt a clear connection with the life all around me. The life of the Earth through the Buck Canyon, the life of the universe through the stars, the life of the people around me through our shared experience. I felt so extremely bonded and connected, for the first time, I felt the true strength of this force called life, without even knowing it.
 
-![Buck Canyon](assets/images/categories/learning/book_reports/buck_canyon_1.jpg)
+![Buck Canyon](/assets/images/categories/learning/book_reports/buck_canyon_1.jpg)
 
 ## Finding God Within Ourselves
 
