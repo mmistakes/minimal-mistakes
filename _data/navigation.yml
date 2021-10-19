@@ -4,6 +4,21 @@ main:
     url: /about/
   - title: "Category"
     url: /categories/
+  - title: "Search"
+    url: /search
+
+docs:
+  - title: "Category"
+    children:
+     - title: "Datascience"
+       url: /datascience/ 
+     - title: "Python"
+       url: /python/ 
+     - title: "Web"
+       url: /web/
+     - title: "Essay"
+       url: /essay/
+      
   #- title: "DataScience"
   #  url: /datascience/
   #- title: "Python"
