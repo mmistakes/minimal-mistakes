@@ -18,6 +18,7 @@ toc: true
 | 대회명                                | 팀명 | 팀 멤버 | #              |
 | ------------------------------------- | ---- | ------- | -------------- |
 | [ICPC Seoul Regional Preliminary Contest](http://static.icpckorea.net/2021/scoreboard_preliminary/)     | Taste Why Frame v2 | [김상홍](http://boj.kr/u/bconfiden2), [서형빈](http://boj.kr/u/antifly55), [윤상건](http://boj.kr/u/ggj06281) | 45 / 301 (국민대 참가팀 중: 1 / 7) |
+| [ICPC Seoul Regional Preliminary Contest](http://static.icpckorea.net/2021/scoreboard_preliminary/)     | Persea Gratissima | [임준혁](http://boj.kr/u/onejajae), [최호경](http://boj.kr/u/herdson), [한정택](http://boj.kr/u/singularis7) | 52 / 301 (국민대 참가팀 중: 2 / 7) |
 
 ## 2020
 
