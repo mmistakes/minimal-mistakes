@@ -25,6 +25,8 @@ Ruiz presents many concepts that might be new to his readers. His unique writing
 
 One of my favorite concepts by Ruiz is that of the magical kitchen. The magical kitchen is a kitchen where you have access to all the food in the world. It has the best food in the world and it's never-ending. You can invite all your family, friends, neighbors, and whoever else you want into your magical kitchen to eat as much as they want, as long as they respect the kitchen.
 
+![Magical Kitchen](/assets/images/categories/learning/book_reports/magical-kitchen-1.jpg)
+
 Now consider you have this magical kitchen and you hear your doorbell ringing. A pizza man arrives with a pie and tries to sell it to you, the cost? The pizza man will give you this pie if you allow him to control and manipulate you. Now if you have a magical kitchen, obviously you will turn down his ridiculous offer, and you might even be inclined to invite him into your magical kitchen.
 
 Now let's assume that you don’t have a magical kitchen, and you’re starving. It’s been days, weeks and now months without anything to eat and the same pizza man is at the door. Will you take his deal?
@@ -79,7 +81,7 @@ The night sky in Arizona was so clear that I could see and feel the universe. Wh
 
 At the time, throughout my journey, I thought the connection I was feeling to all the places, sights, and moments was the connection between myself and them. But now I can characterize it differently. The reason these moments were so significant to me is that for the first time in my life, the life within me felt a clear connection with the life all around me. The life of the Earth through the Buck Canyon, the life of the universe through the stars, the life of the people around me through our shared experience. I felt so extremely bonded and connected, for the first time, I felt the true strength of this force called life, without even knowing it.
 
-![Buck Canyon](/assets/images/categories/learning/book_reports/buck_canyon_1.jpg)
+![Buck Canyon](assets/images/categories/learning/book_reports/buck_canyon_1.jpg)
 
 ## Finding God Within Ourselves
 
