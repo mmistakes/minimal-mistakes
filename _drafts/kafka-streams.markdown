@@ -417,7 +417,7 @@ Another interesting sink processor is the `to` method, which persists the messag
 expensiveOrders.to("suspicious-orders")
 ```
 
-In the above example, we are writing all the orders greater than 1,000.00 Euro in a dedicated topic, probably performing some kind of fraud analysis. Again, the Scala Kafka Streams library saves us from typing a lot of code. In fact, the full signature of the `to` method is the following:
+In the above example, we are writing all the orders greater than 1,000.00 Euro in a dedicated topic, probably performing fraud analysis. Again, the Scala Kafka Streams library saves us from typing a lot of code. In fact, the full signature of the `to` method is the following:
 
 ```scala
 // Scala Kafka Streams library
@@ -493,7 +493,7 @@ def count()(implicit materialized: Materialized[K, Long, ByteArrayKeyValueStore]
 
 As for the `Consumed` implicit objects, the implicit `Materialized[K, V, S]` instance is directly derived by the compiler from the available implicit instances of key and value `Serde`.
 
-The `count` transformation is not the only type of aggregation in the Kafka Streams library, offering generic aggregations. Since simple aggregations are very similar to the example we associated with the `count` transformation, we now introduce _windowed aggregations_ instead.
+The `count` transformation is not the only aggregation type in the Kafka Streams library, offering generic aggregations. Since simple aggregations are very similar to the example we associated with the `count` transformation, we now introduce _windowed aggregations_ instead.
 
 In detail, the Kafka Streams library lets us aggregate messages using a time window. All the messages that arrived inside the window are eligible for being aggregated. Clearly, we are talking about a sliding window through time. The library allows us to aggregate using different types of windows, each one with its own features. Since [windowing](https://docs.confluent.io/platform/current/streams/developer-guide/dsl-api.html#streams-developer-guide-dsl-windowing) is a complex issue, we will not go deeper into it in this article.
 
@@ -562,7 +562,7 @@ In our use case, the join produces a stream containing all the orders purchased 
 
 ### 6.2. Joining with a `GlobalKTable`
 
-Another type of join is between a `KStream` (or a `KTable`) and a `GlobalKTable`. As we said, the broker replicates the information of a `GlobalKTable` in each node of the cluster. So, we don't need the co-partitioning property anymore because the broker ensures the locality of `GlobalKTable` messages for all the nodes.
+Another type of join is between a `KStream` (or a `KTable`) and a `GlobalKTable`. As we said, the broker replicates the information of a `GlobalKTable` in each cluster node. So, we don't need the co-partitioning property anymore because the broker ensures the locality of `GlobalKTable` messages for all the nodes.
 
 In fact, the signature of this type of `join` transformation is different from the previous:
 
@@ -653,7 +653,7 @@ The three types of join transformation we presented represent only the primary e
 
 ## 7. The Kafka Streams Application
 
-Once we defined the desired topology for our application, it's time to materialize and execute it. Materializing the topology is easy since we only have to call the `build` method on the instance of the `StreamBuilder` we have used so far:
+Once we have defined the desired topology for our application, it's time to materialize and execute it. Materializing the topology is easy since we only have to call the `build` method on the instance of the `StreamBuilder` we have used so far:
 
 ```scala
 val topology: Topology = builder.build()
@@ -850,9 +850,9 @@ And, that's all about the Kafka Streams library, folks!
 
 ## 8. Let's Run It
 
-At this point, we defined a full working Kafka application, which uses many transformations and join operations. Now, it's time to test the topology we've developed, sending some messages to the various Kafka topics.
+At this point, we defined a complete working Kafka application, which uses many transformations and joins. Now, it's time to test the developed topology, sending messages to the various Kafka topics.
 
-First, let's fill the tables, starting from the topic `discounts`. We have to send some messages associating a profile to an effective discount:
+First, let's fill the tables, starting from the topic `discounts`. We have to send some messages associating a profile with a discount:
 
 ```shell
 kafka-console-producer \
@@ -861,14 +861,14 @@ kafka-console-producer \
    --property parse.key=true \
    --property key.separator=,
 <Hit Enter>
-profile1,{ "profile": "profile1", "amount": 50.0 }
-profile2,{ "profile": "profile2", "amount": 25.0 }
-profile3,{ "profile": "profile3", "amount": 15.0 }
+profile1,{"profile":"profile1","amount":0.5 }
+profile2,{"profile":"profile2","amount":0.25 }
+profile3,{"profile":"profile3","amount":0.15 }
 ```
 
-In the above command we created three profiles associated with a discount of the 50%, 25%, and 15% respectively. 
+We created three profiles in the above command with a discount of 50%, 25%, and 15%, respectively.
 
-Next step is to create some users and associated them with a discount profile in the topic `discount-profiles-by-user`:
+The next step is to create some users and associated them with a discount profile in the topic `discount-profiles-by-user`:
 
 ```shell
 kafka-console-producer \
@@ -890,11 +890,11 @@ kafka-console-producer \
    --property parse.key=true \
    --property key.separator=,
 <Hit Enter>
-Daniel,{ "orderId": "order1", "user": "Daniel", "products": [ "iPhone 13", "MacBook Pro 15" ], "amount": 4000.0 }
-Riccardo,{ "orderId": "order2", "user": "Riccardo", "products": [ "iPhone 11"], "amount": 800.0 }
+Daniel,{"orderId":"order1","user":"Daniel","products":[ "iPhone 13","MacBook Pro 15"],"amount":4000.0 }
+Riccardo,{"orderId":"order2","user":"Riccardo","products":["iPhone 11"],"amount":800.0}
 ```
 
-We must pay the above orders. So, we need to send the messages representing the payment transaction. The topic storing such messages is called `payments`:
+Now, we must pay the above orders. So, we send the messages representing the payment transaction. The topic storing such messages is called `payments`:
 
 ```shell
 kafka-console-producer \
@@ -903,8 +903,8 @@ kafka-console-producer \
    --property parse.key=true \
    --property key.separator=,
 <Hit Enter>
-order1,{ "orderId": "order1", "status": "PAID" }
-order2,{ "orderId": "order2", "status": "PENDING" }
+order1,{"orderId":"order1","status":"PAID"}
+order2,{"orderId":"order2","status":"PENDING"}
 ```
 
 If everything goes right, into the topic `paid-orders` we should find a message containing the paid order of the user `"Daniel"`, containing an `"iPhone 13"` and a `"MacBook Pro 15"`, and worth 2,000.0 Euro. We can read the messages of the topic using the `kafka-console-consumer.sh` shell command:
@@ -919,7 +919,7 @@ kafka-console-consumer \
 The above command will read the following message, concluding our journey in the Kafka Streams library:
 
 ```
-TODO
+{"orderId":"order1","user":"Daniel","products":["iPhone 13","MacBook Pro 15"],"amount":2000.0}
 ```
 
 ## 9. Conclusions
