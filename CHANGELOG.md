@@ -2,6 +2,7 @@
 
 ### Bug Fixes
 
+- Fix sort order of Staticman comments when data files aren't named alphabetically. [#3184](https://github.com/mmistakes/minimal-mistakes/pull/3184)
 - Fix `layout: compress` issue with HTML comment in video include. [#3117](https://github.com/mmistakes/minimal-mistakes/pull/3117)
 - Add Magnific Popup class to anchors that only contain an `img` element. [#3111](https://github.com/mmistakes/minimal-mistakes/issues/3111) [#3114](https://github.com/mmistakes/minimal-mistakes/pull/3114)
 - Enable Magnific Popups on anchors only when they wrap an `<img>` element. [#3114](https://github.com/mmistakes/minimal-mistakes/pull/3114)
@@ -11,6 +12,8 @@
 
 ### Enhancements
 
+- Add link to documentation clarifying how to add plugins. [#3181](https://github.com/mmistakes/minimal-mistakes/pull/3181)
+- Add optional label attribute for utterances comments. [#3128](https://github.com/mmistakes/minimal-mistakes/pull/3128)
 - Bump path-parse from 1.0.6 to 1.0.7. [#3116](https://github.com/mmistakes/minimal-mistakes/pull/3116)
 - Add missing Danish translations. [#3095](https://github.com/mmistakes/minimal-mistakes/pull/3095)
 - Add ARIA role to search forms. [#3086](https://github.com/mmistakes/minimal-mistakes/pull/3086)
