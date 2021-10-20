@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Python Deep Dive[0]: Python Module"
+title:  "Python Deep Dive [0]: Python Module"
 ---
 
 # 파이썬 모듈
