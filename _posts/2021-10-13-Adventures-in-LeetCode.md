@@ -1,3 +1,13 @@
+---
+title: "Adventures in Leetcode: PowerShell + Leetcode"
+excerpt: "Selection of problems and solutions from leetcode and interviewbit."
+tags:
+- PowerShell
+- Leetcode
+classes: wide
+toc: true
+---
+
 # Adventures in Leet Code: PowerShell Twist
 
 I've been looking into new challenges recently and decided to give LeetCode a shot. I quickly realized that I haven't been working on this kind of problem since I took a couple programming classes where I didn't learn much. Leetcode doesn't support PowerShell, so I'm going to post these here and if anyone has any constructive feedback I'd appreciate it if you shared it in the comments below.
