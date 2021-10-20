@@ -70,6 +70,7 @@ print(sys.path)
 - C언어로 만들어진 built-in 바이너리 모듈
     - 소스코드는 github에서 확인 가능
     - [https://github.com/python/cpython/tree/main/Modules](https://github.com/python/cpython/tree/main/Modules)
+    - 내장 함수 dir() 은 모듈이 정의하는 이름들을 찾는 데 사용된다.
   ```
   print(dir())
   ['__annotations__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__']
