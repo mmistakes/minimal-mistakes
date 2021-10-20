@@ -3,19 +3,31 @@ layout: single
 title:  "Python Deep Dive [0]: Python Module"
 ---
 
+#### Contents
 
+- 모듈이란?
+- 모듈의 기능
+- 모듈의 경로
+- 패키지와 모듈 만들어보기
+- `__init__.py`의 기능
+- `__all__`의 기능 
+
+---
+
+
+<div style="display: block; width: 60%; margin: 0px auto;">
+<img src="../assets/images/python/module/img1.png">
+</div>
+
+<br>
 일반적으로 대규모 시스템은 여러개의 애플리케이션으로 구성되며 애플리케이션 내부에는 여러 컴포넌트가 있다. 컴포넌트 코드는 모듈이나 패키지와 같은 하위 컴포넌트로 나뉘며 모듈은 클래스나 함수로 나눌 수 있다. 
 
 
-<img src="../assets/images/python/module/img1.png">
-
-<span style="display: inline-block; width: 60%; text-align: center; font-size:13px"><그림1></span>
-
-#### 모듈이란?
+### 모듈이란?
 
 모듈은 파이썬 정의와 문장들을 담고 있는 파일이다. 파일의 이름은 모듈 이름에 확장자 .py 를 붙이면 된다. 모듈 내에서, 모듈의 이름은 전역 변수 `__name__` 으로 제공된다. 
 
-#### 패키지란?
+### 패키지란?
 파이썬 패키지는 간단하게 파이썬 모듈들의 집합체 라고 할 수 있다. 여기서 파이썬 모듈은 간단히 하나의 파이썬 파일이다.
 
 ```
@@ -28,11 +40,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-#### 모듈의 기능
+### 모듈의 기능
 Module이란 변수나 함수, 클래스 등을 모아놓은 파일로, 다른 파일에서 재 사용이 가능하게 하기 위한 목적도 있고, 전체 코드가 너무 커져 여러 파일로 나누고자 하는 니즈가 있을 때 사용하기도 합니다.
 
 
-#### 모듈의 검색 경로
+### 모듈의 검색 경로
 
 
 ```
@@ -52,7 +64,7 @@ print(sys.path)
 
 
 
-#### 스탠다드 라이브러리
+### 스탠다드 라이브러리
 - C언어로 만들어진 built-in 바이너리 모듈
     - 소스코드는 github에서 확인 가능
     - https://github.com/python/cpython/tree/main/Modules
@@ -92,11 +104,13 @@ print(sys.path)
   
 ---
 
-#### 간단한 패키지와 모듈 만들어보기
+### 패키지와 모듈 만들어보기
+<br>
+<div style="display: block; width: 60%; margin: 0px auto;">
+<img src="../assets/images/python/module/img2.png">
+</div>
 
-<img style="display: inline-block; width: 50%; text-align: center" src="../assets/images/python/module/img2.png">
-<span style="display: inline-block; width: 50%; text-align: center; font-size:13px"><그림2></span>
-
+<br>
 ```
 # 디렉토리 구조
 .
