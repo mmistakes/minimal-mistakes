@@ -17,7 +17,6 @@ title:  "Python Deep Dive [0]: Python Module"
 **대규모 시스템**은 여러개의 애플리케이션으로 구성되며 애플리케이션 내부에는 여러 컴포넌트가 있다. 컴포넌트 코드는 `모듈`이나 `패키지`와 같은 하위 컴포넌트로 나뉘며 모듈은 클래스나 함수로 나눌 수 있다. 
 
 <br>
-<br>
 <div style="display: block; width: 60%; margin: 0px auto;">
 <img src="../assets/images/python/module/img1.png">
 </div>
@@ -127,10 +126,11 @@ print(sys.path)
 │   └── rectangle.py
 └── main.py
 ```
-<div style="margin-top:10px; margin-bottom:10px">
-패키지와 모듈의 개념을 이해하기 위해 간단한 예시를 들어보자. 디렉토리의 구조를 보면 `figure` 폴더에 `circle.py`, `rectangle.py`, `__init__.py`를 생성하고 `main.py`에서 `figure` 패키지를 `import`하여 기능을 사용하는 구조이다. 
-</div>
+<br>
 
+패키지와 모듈의 개념을 이해하기 위해 간단한 예시를 들어보자. 디렉토리의 구조를 보면 `figure` 폴더에 `circle.py`, `rectangle.py`, `__init__.py`를 생성하고 `main.py`에서 `figure` 패키지를 `import`하여 기능을 사용하는 구조이다. 
+
+<br>
 ```
 # figure/circle.py
 
@@ -173,13 +173,15 @@ from .rectangle import Rectangle
 # from figure.circle import Circle
 # from figure.rectangle import Rectangle 
 ```
-<div style="margin-top:10px; margin-bottom:10px">
+<br>
+
 - `__init__.py` 파일은 해당 디렉터리가 패키지의 일부임을 알려주는 역할을 한다.
 - 디렉터리에 `__init__.py` 파일이 없다면 패키지로 인식되지 않을 수 있다.
     - [Python으로 개발하던 과정에서 패키지가 다른 경우 참조하지 못하는 문제](https://nesoy.github.io/articles/2018-07/Python-init-all)
 - 상대경로 혹은 절대경로로 모듈에서 `import`할 기능을 설정할 수 있다.
 - `figure` 디렉토리가 하나의 패키지로써 기능할 수 있도록 한다.
 </div>
+<br>
 
 ```
 """
