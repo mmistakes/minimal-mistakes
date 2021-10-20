@@ -7,7 +7,7 @@ title:  "Python Deep Dive [0]: Python Module"
 일반적으로 대규모 시스템은 여러개의 애플리케이션으로 구성되며 애플리케이션 내부에는 여러 컴포넌트가 있다. 컴포넌트 코드는 모듈이나 패키지와 같은 하위 컴포넌트로 나뉘며 모듈은 클래스나 함수로 나눌 수 있다. 
 
 
-<img src="assets/images/../../../assets/images/python/module/img1.png">
+<img src="../assets/images/python/module/img1.png">
 
 <span style="display: inline-block; width: 60%; text-align: center; font-size:13px"><그림1></span>
 
@@ -94,7 +94,7 @@ print(sys.path)
 
 #### 간단한 패키지와 모듈 만들어보기
 
-<img style="display: inline-block; width: 50%; text-align: center" src="assets/images/../../../assets/images/python/module/img2.png">
+<img style="display: inline-block; width: 50%; text-align: center" src="../assets/images/python/module/img2.png">
 <span style="display: inline-block; width: 50%; text-align: center; font-size:13px"><그림2></span>
 
 ```
