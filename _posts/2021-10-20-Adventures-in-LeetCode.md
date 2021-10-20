@@ -14,9 +14,27 @@ I've been looking into new challenges recently and decided to give LeetCode a sh
 
 I found that I was having to look up things that I haven't encountered much while using PowerShell. I really enjoy how these are pushing me to grow. This blog post aims to share some problems and solutions that I've worked on.
 
-# Examples
+# Useful Constructs
 
-## Problem 1
+## For Loops
+
+A `For` loop is a great way to iterate on a subset of a collection of items. Oftentimes, `foreach` is more appropriate, but I've found the for loop to be useful in a lot of leetcode questions.
+
+```powershell
+# Reverse a string with a for loop
+$string = 'Jill loves cars.'
+
+# make sure to use the length property instead of count when dealing with manipulating characters in a string
+$output = for ($i = 1 ; $i -le $string.length; $i++) {
+    $string[-$i] # output each character, starting at the back
+}
+# $output is an array, rather than a string. We need to -join them back together again <3
+$output -join ''
+```
+
+# Problems
+
+## Add Binary Strings
 Given two binary strings a and b, return their sum as a binary string.
 
 Example 1:
@@ -24,7 +42,7 @@ Example 1:
 Input: a = "11", b = "1"
 Output: "100"
 
-### My Solution
+#### My Solution
 
 ```powershell
 function Convert-BinaryStringtoInteger {
@@ -44,7 +62,7 @@ function Convert-BinaryStringtoInteger {
 }
 ```
 
-### Test it
+#### Test it
 
 ```powershell
 Convert-BinaryStringtoInteger -a 11 -b 1
@@ -56,7 +74,7 @@ Convert-BinaryStringtoInteger -a 1010 -b 1011
 
 ## 2 - Remove All Adjacent Duplicates In String
 
-### Problem
+#### Problem
 
 [https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)
 
@@ -66,7 +84,7 @@ We repeatedly make duplicate removals on s until we no longer can.
 
 Return the final string after all such duplicate removals have been made. It can be proven that the answer is unique.
 
-### My Solution
+#### My Solution
 
 ```powershell
 function Remove-AdjacentDuplicates {
@@ -94,7 +112,7 @@ function Remove-AdjacentDuplicates {
 }
 ```
 
-### Test it
+#### Test it
 
 ```powershell
 Remove-AdjacentDuplicates -s abbaca
@@ -113,7 +131,7 @@ Given a string word and an abbreviation abbr, return whether the string matches 
 
 A substring is a contiguous non-empty sequence of characters within a string.
 
-### My Solution
+#### My Solution
 
 ```powershell
 function Test-ValidWordAbbreviation {
@@ -156,7 +174,7 @@ function Test-ValidWordAbbreviation {
 ```
 
 
-### Test it
+#### Test it
 
 ```powershell
 Test-ValidWordAbbreviation -Word internationalization -Abbr i12iz4n
@@ -173,7 +191,7 @@ False
 
 Given a string s, return true if the s can be palindrome after deleting at most one character from it.
 
-### My Solution
+#### My Solution
 
  ```powershell
 function Test-ValidPalindromeII {
@@ -224,7 +242,7 @@ function Test-ValidPalindromeII {
  ```
 
 
-### Test it
+#### Test it
 
 ```powershell
 Test-ValidPalindromeII -s 'aba'
@@ -267,7 +285,7 @@ function Get-ValidPhoneNumber {
 }
 ```
 
-### Test It
+#### Test It
 
 ```powershell
 $numbers = "987-123-4567", "123 456 7890","(123) 456-7890"
@@ -296,7 +314,7 @@ function Get-LinesinGivenRange {
 }
 ```
 
-### Test It
+#### Test It
 
 ```powershell
 $content = "10 15
@@ -342,7 +360,7 @@ Your script should output the following:
 Thiss the sunny day
 It is the sunny day we can go out
 
-### My Solution
+#### My Solution
 
 ```powershell
 function Remove-Punctuation {
@@ -360,7 +378,7 @@ function Remove-Punctuation {
 }
 ```
 
-### Test it
+#### Test it
 
 ```powershell
 $string = "This's the sunny day.
@@ -384,7 +402,7 @@ Example :
 Input : [2, 1, 2]
 Return  : 2 which occurs 2 times which is greater than 3/2.
 
-### My solution
+#### My solution
 
 ```powershell
 function Get-Solution {
@@ -396,7 +414,7 @@ function Get-Solution {
 }
 ```
 
-### Test It
+#### Test It
 
 ```powershell
 Get-Solution -Numbers 2,1,2
@@ -415,7 +433,7 @@ Return a string of the words in reverse order concatenated by a single space.
 
 Note that s may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.
 
-### My Solution
+#### My Solution
 
 ```powershell
     function Reverse-WordsinString {
@@ -435,7 +453,7 @@ Note that s may contain leading or trailing spaces or multiple spaces between tw
 }
 ```
 
-### Test It
+#### Test It
 
 ```powershell
 Reverse-WordsinString -S "the skye is blue"
@@ -474,7 +492,7 @@ Example 3:
 Input: s = "catsandog", wordDict = ["cats","dog","sand","and","cat"]
 Output: false
 
-### My Solution
+#### My Solution
 
 ```powershell
 function Test-WordBreak {
@@ -501,7 +519,7 @@ function Test-WordBreak {
 }
 ```
 
-### Test it
+#### Test it
 
 ```powershell
 
