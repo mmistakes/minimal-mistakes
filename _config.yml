@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Woongineer's Lab"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Woongjoon Alexander Park"
+name                     : "Alexander Park"
 description              : "Working Place..."
 url                      : "https://woongineer11.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -94,9 +94,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Woongjoon Alexander Park"
+  name             : "Alexander Park"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Growing step by step"
+  bio              : "조금씩 성장하는 통"
   location         : "Seoul"
   email            :
   links:
