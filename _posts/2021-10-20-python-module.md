@@ -128,7 +128,9 @@ print(sys.path)
 ```
 <br>
 
-패키지와 모듈의 개념을 이해하기 위해 간단한 예시를 들어보자. 디렉토리의 구조를 보면 `figure` 폴더에 `circle.py`, `rectangle.py`, `__init__.py`를 생성하고 `main.py`에서 `figure` 패키지를 `import`하여 기능을 사용하는 구조이다. 
+패키지와 모듈의 개념을 이해하기 위해 간단한 예시를 들어보자.
+
+ 디렉토리의 구조를 보면 `figure` 폴더에 `circle.py`, `rectangle.py`, `__init__.py`를 생성하고 `main.py`에서 `figure` 패키지를 `import`하여 기능을 사용하는 구조이다. 
 
 <br>
 ```
@@ -180,7 +182,7 @@ from .rectangle import Rectangle
     - [Python으로 개발하던 과정에서 패키지가 다른 경우 참조하지 못하는 문제](https://nesoy.github.io/articles/2018-07/Python-init-all)
 - 상대경로 혹은 절대경로로 모듈에서 `import`할 기능을 설정할 수 있다.
 - `figure` 디렉토리가 하나의 패키지로써 기능할 수 있도록 한다.
-</div>
+
 <br>
 
 ```
