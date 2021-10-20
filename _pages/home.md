@@ -9,7 +9,7 @@ header:
       url: "https://github.com/XAITK/xaitk-saliency/blob/master/docs/installation.rst"
 excerpt: >
   An open-source, explainable AI toolkit built for analytics and autonomy applications.<br />
-  <small><a href="https://github.com/XAITK/xaitk-saliency/releases/tag/v0.3.0">Latest release v0.3.0</a></small>
+  <small><a href="https://github.com/XAITK/xaitk-saliency/releases/tag/v0.4.0">Latest release v0.4.0</a></small>
 feature_row:
   - image_path: /assets/kitware/images/graphic-arrow-svgrepo-com.png
     alt: "analytics"
