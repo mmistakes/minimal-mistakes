@@ -14,13 +14,15 @@ title:  "Python Deep Dive [0]: Python Module"
 
 ---
 
+**대규모 시스템**은 여러개의 애플리케이션으로 구성되며 애플리케이션 내부에는 여러 컴포넌트가 있다. 컴포넌트 코드는 `모듈`이나 `패키지`와 같은 하위 컴포넌트로 나뉘며 모듈은 클래스나 함수로 나눌 수 있다. 
 
+<br>
+<br>
 <div style="display: block; width: 60%; margin: 0px auto;">
 <img src="../assets/images/python/module/img1.png">
 </div>
 
 <br>
-일반적으로 대규모 시스템은 여러개의 애플리케이션으로 구성되며 애플리케이션 내부에는 여러 컴포넌트가 있다. 컴포넌트 코드는 모듈이나 패키지와 같은 하위 컴포넌트로 나뉘며 모듈은 클래스나 함수로 나눌 수 있다. 
 
 
 ### 모듈이란?
@@ -41,7 +43,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 ### 모듈의 기능
-Module이란 변수나 함수, 클래스 등을 모아놓은 파일로, 다른 파일에서 재 사용이 가능하게 하기 위한 목적도 있고, 전체 코드가 너무 커져 여러 파일로 나누고자 하는 니즈가 있을 때 사용하기도 합니다.
+모듈은 프로그램을 구성하는 기능 중에서 `독립적`으로 구별할 수 있는 것을 모아 분리해 둔 것이다. 프로그램을 모듈로 나누면, 많은 기능을 담은 프로그램이라도 만들고 `관리하기가 수월`해진다. 그리고 나누어 둔 모듈은 그 모듈의 기능이 필요한 다른 프로그램을 만들 때 `재사용`할 수도 있다.
 
 
 ### 모듈의 검색 경로
@@ -67,7 +69,7 @@ print(sys.path)
 ### 스탠다드 라이브러리
 - C언어로 만들어진 built-in 바이너리 모듈
     - 소스코드는 github에서 확인 가능
-    - https://github.com/python/cpython/tree/main/Modules
+    - [https://github.com/python/cpython/tree/main/Modules](https://github.com/python/cpython/tree/main/Modules)
   ```
   print(dir())
   ['__annotations__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__']
@@ -106,7 +108,7 @@ print(sys.path)
 
 ### 패키지와 모듈 만들어보기
 <br>
-<div style="display: block; width: 60%; margin: 0px auto;">
+<div style="display: block; width: 60%;">
 <img src="../assets/images/python/module/img2.png">
 </div>
 
