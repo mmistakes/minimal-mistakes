@@ -229,8 +229,7 @@ hoon@ubuntu:~/Desktop/make_package$ python main.py
 - 외부에서 해당 패키지(`figure`)를 import 할 경우 패키지의 하위 디렉토리의 경로를 모두 입력하지 않고 간단하게 사용할 기능만 import 할 수 있다.
 - 만약 figure 폴더에 `__init__.py`에 `import`할 기능을 설정하지 않았다면 `Circle`을 사용하기 위해 다음과 같이 접근해야한다. 만약 어플리케이션이 복잡해져서 하위 디렉토리와 사용할 기능이 많아진다면 이렇게 절대경로로 모듈을 `import`할 경우 코드가 상당히 복잡해질 수 있다.
     
-    <br>
-    
+
     ```
     # from figure.circle import Circle
     # import figure.circle.Circle
@@ -238,4 +237,5 @@ hoon@ubuntu:~/Desktop/make_package$ python main.py
 
 
 ### `__all__`의 기능
+---
 
