@@ -5,12 +5,12 @@ title:  "Python Deep Dive [0]: Python Module"
 
 #### Contents
 
-- 모듈이란?
-- 모듈의 기능
-- 모듈의 경로
-- 패키지와 모듈 만들어보기
-- `__init__.py`의 기능
-- `__all__`의 기능 
+1. 모듈이란?
+2. 모듈의 기능
+3. 모듈의 경로
+4. 패키지와 모듈 만들어보기
+5. `__init__.py`의 기능
+6. `__all__`의 기능 
 
 ---
 
@@ -24,7 +24,7 @@ title:  "Python Deep Dive [0]: Python Module"
 <br>
 
 
-### 모듈이란?
+### 1. 모듈이란?
 ---
 
 모듈은 파이썬 정의와 문장들을 담고 있는 파일이다. 파일의 이름은 모듈 이름에 확장자 .py 를 붙이면 된다. 모듈 내에서, 모듈의 이름은 전역 변수 `__name__` 으로 제공된다. 
@@ -43,12 +43,12 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-### 모듈의 기능
+### 2. 모듈의 기능
 ---
 모듈은 프로그램을 구성하는 기능 중에서 `독립적`으로 구별할 수 있는 것을 모아 분리해 둔 것이다. 프로그램을 모듈로 나누면, 많은 기능을 담은 프로그램이라도 만들고 `관리하기가 수월`해진다. 그리고 나누어 둔 모듈은 그 모듈의 기능이 필요한 다른 프로그램을 만들 때 `재사용`할 수도 있다.
 
 
-### 모듈의 검색 경로
+### 3. 모듈의 검색 경로
 ---
 
 ```
@@ -110,7 +110,7 @@ print(sys.path)
   
 ---
 
-### 패키지와 모듈 만들어보기
+### 4. 패키지와 모듈 만들어보기
 ---
 <div style="display: block; width: 60%;">
 <img src="../assets/images/python/module/img2.png">
@@ -236,6 +236,6 @@ hoon@ubuntu:~/Desktop/make_package$ python main.py
     ``` 
 
 
-### `__all__`의 기능
+### 6. `__all__`의 기능
 ---
 
