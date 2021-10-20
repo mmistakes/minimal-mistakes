@@ -1,5 +1,5 @@
 ---
-title: "The Art of Negotiation"
+title: "Masterclass - The Art of Negotiation"
 layout: single
 categories:
   - masterclass

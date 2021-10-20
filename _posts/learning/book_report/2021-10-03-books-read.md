@@ -5,7 +5,6 @@ categories:
   - book_report
 permalink: /categories/learning/book_report/reading_list
 toc: true
-classes: wide
 header:
   overlay_image: "/assets/images/categories/learning/book_reports/reading_list_1.jpg"
 ---
