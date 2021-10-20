@@ -3,16 +3,13 @@ layout: single
 title:  "Python Deep Dive [0]: Python Module"
 ---
 
-# 파이썬 모듈
 
-일반적으로 대규모 시스템은 여러개의 애플리케이션으로 구성되며 애플리케이션 내부에는 여러 컴포넌트가 있다. 컴포넌트 코드는 모듈이나 패키지와 같은 하위 컴포넌트로 나뉘며 모듈은 클래스나 함수로, 클래스는 다시 메서드로 나눌 수 있다. 
+일반적으로 대규모 시스템은 여러개의 애플리케이션으로 구성되며 애플리케이션 내부에는 여러 컴포넌트가 있다. 컴포넌트 코드는 모듈이나 패키지와 같은 하위 컴포넌트로 나뉘며 모듈은 클래스나 함수로 나눌 수 있다. 
 
 
-<div>
 <img src="assets/images/../../../assets/images/python/module/img1.png">
 
 <span style="display: inline-block; width: 60%; text-align: center; font-size:13px"><그림1></span>
-</div>
 
 #### 모듈이란?
 
@@ -47,11 +44,11 @@ print(sys.path)
 
 `circle` 라는 이름의 모듈이 임포트될 때, 인터프리터는 먼저 그 이름의 내장 모듈을 찾는다. 발견되지 않으면, 변수 sys.path 로 주어지는 디렉터리들에서 `circle.py` 라는 이름의 파일을 찾습니다. `sys.path` 는 이 위치들로 초기화됩니다:
 
-- 입력 스크립트를 포함하는 디렉터리 (또는 파일이 지정되지 않았을 때는 현재 디렉터리).
+- 현재 실행파일이 있는 폴더
 
-- PYTHONPATH (디렉터리 이름들의 목록, 셸 변수 PATH 와 같은 문법).
+- `PYTHONPATH` 환경변수 안의 경로
 
-- The installation-dependent default (by convention including a site-packages directory, handled by the site module).
+- 파이썬 설치 경로 (by convention including a site-packages directory, handled by the site module).
 
 
 
@@ -97,10 +94,8 @@ print(sys.path)
 
 #### 간단한 패키지와 모듈 만들어보기
 
-<div>
 <img style="display: inline-block; width: 50%; text-align: center" src="assets/images/../../../assets/images/python/module/img2.png">
 <span style="display: inline-block; width: 50%; text-align: center; font-size:13px"><그림2></span>
-</div>
 
 ```
 # 디렉토리 구조
