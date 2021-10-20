@@ -26,10 +26,12 @@ title:  "Python Deep Dive [0]: Python Module"
 
 
 ### 모듈이란?
+---
 
 모듈은 파이썬 정의와 문장들을 담고 있는 파일이다. 파일의 이름은 모듈 이름에 확장자 .py 를 붙이면 된다. 모듈 내에서, 모듈의 이름은 전역 변수 `__name__` 으로 제공된다. 
 
 ### 패키지란?
+---
 파이썬 패키지는 간단하게 파이썬 모듈들의 집합체 라고 할 수 있다. 여기서 파이썬 모듈은 간단히 하나의 파이썬 파일이다.
 
 ```
@@ -43,11 +45,12 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 ### 모듈의 기능
+---
 모듈은 프로그램을 구성하는 기능 중에서 `독립적`으로 구별할 수 있는 것을 모아 분리해 둔 것이다. 프로그램을 모듈로 나누면, 많은 기능을 담은 프로그램이라도 만들고 `관리하기가 수월`해진다. 그리고 나누어 둔 모듈은 그 모듈의 기능이 필요한 다른 프로그램을 만들 때 `재사용`할 수도 있다.
 
 
 ### 모듈의 검색 경로
-
+---
 
 ```
 import sys
@@ -67,6 +70,7 @@ print(sys.path)
 
 
 ### 스탠다드 라이브러리
+---
 - C언어로 만들어진 built-in 바이너리 모듈
     - 소스코드는 github에서 확인 가능
     - [https://github.com/python/cpython/tree/main/Modules](https://github.com/python/cpython/tree/main/Modules)
@@ -108,7 +112,7 @@ print(sys.path)
 ---
 
 ### 패키지와 모듈 만들어보기
-<br>
+---
 <div style="display: block; width: 60%;">
 <img src="../assets/images/python/module/img2.png">
 </div>
@@ -123,7 +127,9 @@ print(sys.path)
 │   └── rectangle.py
 └── main.py
 ```
+<div style="margin-top:10px; margin-bottom:10px">
 패키지와 모듈의 개념을 이해하기 위해 간단한 예시를 들어보자. 디렉토리의 구조를 보면 `figure` 폴더에 `circle.py`, `rectangle.py`, `__init__.py`를 생성하고 `main.py`에서 `figure` 패키지를 `import`하여 기능을 사용하는 구조이다. 
+</div>
 
 ```
 # figure/circle.py
@@ -167,11 +173,13 @@ from .rectangle import Rectangle
 # from figure.circle import Circle
 # from figure.rectangle import Rectangle 
 ```
+<div style="margin-top:10px; margin-bottom:10px">
 - `__init__.py` 파일은 해당 디렉터리가 패키지의 일부임을 알려주는 역할을 한다.
 - 디렉터리에 `__init__.py` 파일이 없다면 패키지로 인식되지 않을 수 있다.
     - [Python으로 개발하던 과정에서 패키지가 다른 경우 참조하지 못하는 문제](https://nesoy.github.io/articles/2018-07/Python-init-all)
 - 상대경로 혹은 절대경로로 모듈에서 `import`할 기능을 설정할 수 있다.
 - `figure` 디렉토리가 하나의 패키지로써 기능할 수 있도록 한다.
+</div>
 
 ```
 """
@@ -216,6 +224,7 @@ hoon@ubuntu:~/Desktop/make_package$ python main.py
 ```
 - 외부에서 해당 패키지(`figure`)를 import 할 경우 패키지의 하위 디렉토리의 경로를 모두 입력하지 않고 간단하게 사용할 기능만 import 할 수 있다.
 - 만약 figure 폴더에 `__init__.py`에 `import`할 기능을 설정하지 않았다면 `Circle`을 사용하기 위해 다음과 같이 접근해야한다. 만약 어플리케이션이 복잡해져서 하위 디렉토리와 사용할 기능이 많아진다면 이렇게 절대경로로 모듈을 `import`할 경우 코드가 상당히 복잡해질 수 있다.
+    <br>
     ```
     # from figure.circle import Circle
     # import figure.circle.Circle
