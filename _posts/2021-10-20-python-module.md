@@ -126,13 +126,13 @@ print(sys.path)
 │   └── rectangle.py
 └── main.py
 ```
-<br>
+
 
 패키지와 모듈의 개념을 이해하기 위해 간단한 예시를 들어보자.
 
  디렉토리의 구조를 보면 `figure` 폴더에 `circle.py`, `rectangle.py`, `__init__.py`를 생성하고 `main.py`에서 `figure` 패키지를 `import`하여 기능을 사용하는 구조이다. 
 
-<br>
+
 ```
 # figure/circle.py
 
