@@ -10,45 +10,73 @@ toc: true
 
 # Regular Expressions
 
-Regular Expressions, shortened as regex, is a sequence of characters that defines a *search pattern*. We can use these search patterns to find strings. This blog aims to capture some of what I've learned about Regex. I learned Regex by watching Thomas Rayner speak at some PowerShell usergroups:
+Regular Expressions, shortened as regex, are sequences of characters that defines a *search pattern*. We can use these search patterns to find strings. This blog aims to capture some of what I've learned about Regex. I learned Regex by watching Thomas Rayner speak at some PowerShell usergroups:
 
 - [Regex for N00bs with Thomas Rayner - YouTube](https://www.youtube.com/watch?v=EcASUAi1B0k)
 - [Regex for Rockstars - YouTube](https://www.youtube.com/watch?v=nC6ylcggHBU)
+- [https://regex101.com/](https://regex101.com/)
 
-These are great presentations and were recommended to me by multiple people. This blog aims to capture some of what I've learned.
-
-## Quick Reference
+These are great presentations and were recommended to me by multiple people.
 
 ## Regex Applied in PowerShell
 
-Many examples are used directly from Thomas Rayner, thank you for this.
+RegEx is fine on it's own, but it's much better when it's applied and used.
 
 ### `Select-String`
 
-`Select-String` can be used to search for regular expressions. * is implied for this, so using simple strings works fine.
+`Select-String` can be used to search for regular expressions. * is implied for this, so using simple strings works fine. This is PowerShell's alternative for `grep`, kinda sorta.
+
+There is a useful parameter, `-context`, which allows you to specify the lines before and after the match.
 
 ```powershell
-
+$path = (Get-PSReadLineOption).HistorySavePath
+Select-String -path $path -Pattern 'password|asplaintext|token|key|secret' -context 1,1 # grab 1 line before and after
 ```
 
 ### `Switch -Regex ($string)`
 
+PowerShell's `Switch` statement has a regex flag that you can specify. This allows you to match the variable to a bunch of different regex conditions and execute code 
 
+```powershell
+$PhoneNumber = '911'
 
+Switch -Regex ($PhoneNumber) {
+    '^911$' { Write-Host 'Emergency Number' }
+    '\d{3}.\d{3}.\d{4}' { Write-Host 'Standard number' }
+}
+
+```
+
+```
+Emergency Number
+```
 ### Filter an Array with Where-Object and -Match
 
-This example shows a simple filter using `Where-Object` and `-Match`. This is fairly common
+This example shows a simple filter using`-Match`. When comparing an array with `-Match`, it returns the values that match the pattern. If 1 item is compared with -match it only returns a true or false
+
+### Compare an array with -match
 
 ```powershell
 $array = @('somethingone', 'somethingtwo', 'noway')
-$array | Where-Object { $_ -match 'something' }
+$array -match 'something'
 ```
 
-Output  
-
 ```
+
 somethingone
 somethingtwo
+```
+
+#### Compare an item with -match
+
+This returns a boolean.
+
+```powershell
+'lego' -match 'faygo'
+```
+
+```
+False
 ```
 
 ### Boolean `-match`ing
@@ -76,16 +104,26 @@ To replace, we can make use of the `-replace` operator. This operator accepts 2 
 Here is a string that got something replaced.
 ```
 
-### Parameter Validation
+### Parameter/Variable Validation
 
-Using regex to validate parameters is possible with `[ValidatePattern('<pattern>')]`
+Using regex to validate parameters is possible with `[ValidatePattern('<pattern>')]`. This can be put into a parameter block of a script or function, but it can also be used on variables. Once a variable is declared with the ValidatePattern attribute the value of the variable must always match the pattern specified or else it will throw an error.
 
-`[ValidateScript]
+``` powershell
 
+[ValidatePattern('^fan$')]$Appliance = 'fan
+
+$Appliance = 'icemaker'
+```
+
+An error is thrown
+```
+MetadataError: The variable cannot be validated because the value icemaker is not a valid value for the Appliance variable.
+```
 
 ### [Regex] Class
 
 The `[Regex]` class has some useful methods for dealing with regex
+
 
 #### [regex]::Match()
 
@@ -98,7 +136,7 @@ James Bond
 
 #### [regex]::Matches()
 
-The matches method searches an input string for all occurrences of a regular expression and returns **all** of the matches. This is different than
+The matches method searches an input string for all occurrences of a regular expression and returns **all** of the matches, unlike the match() method.
 
 This example searches the specified input string for all occurrences of a specified regular expression. The specified regular expression is looking for `\w+` which is one or more word character, followed by a `$`, which represents hte end of the line.
 
@@ -112,6 +150,8 @@ Searches the specified input string for all occurrences of a specified regular e
 username
 ```
 ### -Match
+
+`-Match` and it's oppsite, `-NotMatch` are used to compare a string to a regular expression.
 
 ```powershell
 'Bond. James Bond.' -match  '(James)\s(Bond)'
@@ -128,9 +168,7 @@ Name                           Value
 0                              James Bond
 ```
 
-## Quantifiers
-
-Quantifiers allow you to save time and space in regex.
+## RegEx Basics
 
 ### * Character
 
@@ -159,7 +197,7 @@ False
 True
 ```
 
-## Special Symbols
+### Special Symbols
 
 ### The Magic Wand
 
@@ -203,7 +241,7 @@ Specify how *many* of times to match on.
 
 | character  | description  | example (True)   |
 |---|---|--------|
-|{n} | matches exactly n times  | 
+|{n} | matches exactly n times  | `'aa' -match 'a{2}'`
 |{n,}	| matches a minimum of n times  |
 |{x,y}	| matches a min of x and max of y  |
 |*	    | matches 0 or more times  | 'abc' -match '*a'
@@ -215,15 +253,11 @@ Specify how *many* of times to match on.
 
 ### Quick Reference
 
-Here is a quick list of special characters and a handle example that evaluates to `$true`.
 | character  | description  | example (True)   |
 |---|---|--------|
-
 |  \ | escape character  
 |^	| beginning of a line  | "bob" -match "^b"
 |$	| end of a line  | "bob" -match "b$"
-
-
 |(a\|b)	| ‘a’ or ‘b’  | 'aaa' -match '(a|b)'
 
 
@@ -261,7 +295,7 @@ True
 ```
 
 
-## Named Capturing Groups
+### Named Capturing Groups
 
 The `<>` characters can be used to assign tags to groups
 
