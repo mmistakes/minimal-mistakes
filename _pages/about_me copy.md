@@ -19,7 +19,7 @@ author_profile: true
 .box1 {
   display: grid;
   grid-template-columns: 8em 16em 5em;
-  gap: 3em;
+  gap: 0.2em 0.2em;
   font-size: 0.9em;  
 }
 
@@ -32,7 +32,7 @@ author_profile: true
 
 .box_w_d {
   display: grid;
-  grid-template-columns: 38em;
+  grid-template-columns: 37em;
   font-size: 0.9em;  
   text-align: justify;
 }
@@ -80,14 +80,20 @@ table  {
   padding: 0.3em 0.0em 0.3em 0.4em;
 }
 
+.hb {
+  display: flex;
+  width: 29em;
+  font-size: 1.2em;  
+  font-weight: 600;
+  color: white;
+  background-color:slategray;
+  padding: 0.3em 0.0em 0.3em 0.4em;
+}
+
+
+
 </style>
 
-
-<span class="box_w_d">
-My name is Nikita Fedik and I am completing my PhD degree in Computational Chemistry. My current research is supported by Los Alamos National Lab, and I am involved in application of machine learning for parametrization/augmentation of classical computational chemistry. 
-I am also a member of Alexaner Boldyrev research lab at Utah State University where my research focuses on chemical bonding in novel molecules, clusters and materials.<br/>
-<br/>
-Even though I am trained as a chemist, I feel great passion for computers and computing clusters (which I had a chance to assemble on my own). I also try to constantly learn new directions, and now I am diving into machine learning and data science. 
 
 
 
@@ -98,11 +104,10 @@ Even though I am trained as a chemist, I feel great passion for computers and co
   <div class="box_item1">2020-present</div>
 </div>
 
-<span class="box_w_d"> Dr. Tretiak Group (T-1) 
-\- machine learning and data science for computational chemistry augmentation:<br/>
-\- machine learning parametrization of semi-empirical quantum chemistry<br/>
-\- incorporation of long-range electrostatics in machine learning interatomic potentials<br/>
-\- data generation at quantum-chemical level<br/>
+<span class="box_w_d"> Dr. Tretiak Group (T-1). Machine learning and data science for computational chemistry augmentation:<br/>
+\> ML parametrization of semi-empirical quantum chemistry<br/>
+\> incorporation of long-range electrostatics in ML interatomic potentials<br/>
+\> data generation at QM level<br/>
 
 
 <div class="box_ed">
@@ -110,10 +115,7 @@ Even though I am trained as a chemist, I feel great passion for computers and co
   <div class="box_item1">Utah State University, USA</div>
   <div class="box_item1">2018-<br/>2020</div>
 </div>
-<span class="box_w_d">
-\- chemical bonidng in clusters and materials<br/>
-\- simulation of spectra to match experimental results from collaborators<br/>
-\- advancement of computing infrastracture.<br/>
+<span class="box_w_d">Chemical bonidng deciphering in clusters and materials; advancement of computing infrastracture.<br/>
 
 <div class="box_ed">
   <div class="box_item1">Research<br/> Assistant</div>
@@ -121,7 +123,6 @@ Even though I am trained as a chemist, I feel great passion for computers and co
   <div class="box_item1">summer 2020</div>
 </div>
 <span class="box_w_d">Summer Internship in Machine Learning at Center for Non-Linear Studies<br/>
-\- data generation for parametrization of semi-empirical quantum chemistry
 
 <div class="box_ed">
   <div class="box_item1">Research<br/> Assistant</div>
@@ -129,7 +130,6 @@ Even though I am trained as a chemist, I feel great passion for computers and co
   <div class="box_item1">summer 2019, 2018</div>
 </div>
 <span class="box_w_d">Summer Internship in Desing of Polyfunctional Materials<br/>
-\- design, bonding and dynamics in 2D matrials
 
 <div class="box_ed">
   <div class="box_item1">Undergraduate<br/> Research Assistant </div>
@@ -137,8 +137,7 @@ Even though I am trained as a chemist, I feel great passion for computers and co
   <div class="box_item1">2012-2017</div>
 </div>
 <span class="box_w_d">Laboratory of Medicinal Chemistry<br/>
-\- theoretical study of NO release from synhesized bioactive molecules<br/>
-\- study of reaction mechanisms in alkaloids
+
 
 <span class="hb"> Education
 
