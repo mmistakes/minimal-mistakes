@@ -7,6 +7,8 @@ tags: []
 excerpt: "Apache Kafka is clearly the leading technology concerning message brokers, and Kafka Streams brings a complete stateful streaming system based directly on top of it. Let's see its primary features."
 ---
 
+_Another great round by [Riccardo Cardin](https://github.com/rcardin), now a frequent contributor to the Rock the JVM blog. Riccardo is a senior developer, a teacher and a passionate technical blogger. He's well versed with Apache Kafka; he recently published an article on [how to integrate ZIO and Kafka](/zio-kafka). So now he rolled up his sleeves in the quest of writing the most compact comprehensive tutorial on Kafka Streams. We hope you enjoy it! Enter Riccardo:_
+
 Apache Kafka nowadays is clearly the leading technology concerning message brokers. It's scalable, resilient, and easy to use. Moreover, it leverages a bunch of exciting client libraries that offer a vast set of additional features. One of these libraries is _Kafka Streams_.
 
 Kafka Streams brings a complete stateful streaming system based directly on top of Kafka. Moreover, it introduces many exciting concepts, like the duality between topics and database tables. Implementing such ideas, Kafka Streams provides us many valuable operations on topics, such as joins, grouping capabilities, and so on.
@@ -17,7 +19,7 @@ Because the Kafka Streams library is quite complex, this article will introduce 
 
 As we said, the Kafka Streams library is implemented using a set of client libraries. In addition, we will use the Circe library to deal with JSON messages. Using Scala as the language to do some experiments, we have to declare the following dependencies in the `build.sbt` file:
 
-```sbt
+```scala
 libraryDependencies ++= Seq(
   "org.apache.kafka" % "kafka-clients" % "2.8.0",
   "org.apache.kafka" % "kafka-streams" % "2.8.0",
@@ -49,8 +51,7 @@ import org.apache.kafka.streams.{KafkaStreams, StreamsConfig, Topology}
 import java.time.Duration
 import java.time.temporal.ChronoUnit
 import java.util.Properties
-import scala.concurrent.duration.DurationInt
-import scala.jdk.DurationConverters._
+import scala.concurrent.duration._
 ```
 
 We will use version 2.8.0 of Kafka. As we've done in the article [ZIO Kafka: A Practical Streaming Tutorial](https://blog.rockthejvm.com/zio-kafka/), we will start the Kafka broker using a Docker container, declared through a `docker-compose.yml` file:
@@ -103,9 +104,7 @@ object Domain {
   type OrderId = String
 
   case class Order(orderId: OrderId, user: UserId, products: List[Product], amount: Double)
-
-  case class Discount(profile: Profile, amount: Double)
-
+  case class Discount(profile: Profile, amount: Double) // in percentage points
   case class Payment(orderId: OrderId, status: String)
 }
 ```

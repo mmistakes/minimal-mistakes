@@ -405,7 +405,7 @@ In other words, the result type is `::[Succ[_0], ::[Succ[_1], ::[Succ[_2], ::[Su
 
 If this is not the most badass quicksort you've ever seen in Scala, you can't be human.
 
-Scala rocks, folks. 
+Scala rocks, folks.
 
 
 
