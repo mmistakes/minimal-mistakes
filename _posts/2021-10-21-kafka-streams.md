@@ -7,7 +7,7 @@ tags: []
 excerpt: "Apache Kafka is clearly the leading technology concerning message brokers, and Kafka Streams brings a complete stateful streaming system based directly on top of it. Let's see its primary features."
 ---
 
-_Another great round by [Riccardo Cardin](https://github.com/rcardin), now a frequent contributor to the Rock the JVM blog. Riccardo is a senior developer, a teacher and a passionate technical blogger. He's well versed with Apache Kafka; he recently published an article on [how to integrate ZIO and Kafka](/zio-kafka). So now he rolled up his sleeves in the quest of writing *the ultimate end-to-end tutorial on Kafka Streams*. We hope you enjoy it! Enter Riccardo:_
+_Another great round by [Riccardo Cardin](https://github.com/rcardin), now a frequent contributor to the Rock the JVM blog. Riccardo is a senior developer, a teacher and a passionate technical blogger. He's well versed with Apache Kafka; he recently published an article on [how to integrate ZIO and Kafka](/zio-kafka). So now he rolled up his sleeves in the quest of writing **the ultimate end-to-end tutorial on Kafka Streams**. We hope you enjoy it! Enter Riccardo:_
 
 Apache Kafka nowadays is clearly the leading technology concerning message brokers. It's scalable, resilient, and easy to use. Moreover, it leverages a bunch of exciting client libraries that offer a vast set of additional features. One of these libraries is _Kafka Streams_.
 
