@@ -25,6 +25,14 @@ mainMenu:
           url: /categories/mlkaggle
         - title: "Paper"
           url: /categories/mlpaper
-    - title: algorithm
+    - title: Algorithm
+      children:
+        - title: "basic"
+          url: /categories/algo_basic
+        - title: "BOJ"
+          url: /categories/boj
     - title: LINUX
     - title: Computer Science
+      children:
+        - title: "Data Structure"
+          url: /categories/datastructure
