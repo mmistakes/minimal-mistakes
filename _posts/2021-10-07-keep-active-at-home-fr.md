@@ -69,101 +69,62 @@ la défouler. C'est trop bien cette complicité, c'est devenu un membre de la fa
 
 Ensuite, je me suis dit qu'il faudrait que j'intègre une activité physique courte et simple n'imposant pas de 
 contraintes particulières afin de pouvoir l'installer sur le long terme. Alors je me suis mis à faire 2-3 min de gainage
-et d'étirements tous les jours. C'est court et sur le long terme ça permet d'entretenir ses muscles et l'elasticité
+et d'étirements tous les jours. C'est court et sur le long terme ça permet d'entretenir ses muscles et l'élasticité
 de son corps. Pour avoir une bonne condition physique il faut de la régularité et de la progressivité. Certains diront
-2-3 min ce n'est pas suffisant... moi je dis ça dépend pour quel objectif.
+2-3 min ce n'est pas suffisant... moi je dis ça dépend pour quel objectif. Si c'est pour faire 3 semaines intensives
+avec 3-4 sessions de 45 mins et puis tout arrêter pour finalement revenir en quelques semaines au point de départ,
+cela n'a aucun intérêt. Il n'y a pas de progressivité, la barre est mise trop haute et très vite on s'attend à
+des résultats, la contrainte est forte et petit à petit perte de motivation voir même une blessure...
+La progressivité et la régularité sont les clés pour avoir un réel impact. Il sera donc 
+largement préférable de faire 2-3 min par jour régulièrement. La contrainte est faible ce qui permet de s'installer 
+sur le long terme. Pour un sportif, il faudrait en effet coupler 3 semaines intensives pour progresser puis entretenir 
+avec les 2-3 min le reste du temps. Pour un sédentaire les 2-3 min suffiront et auront un impact positif sur sa condition
+physique. Je peux vous dire que ça marche, je n'ai même pas besoin de dire qu'il faut que je m'accroche, qu'il faut 
+passer des paliers... il n'y a pas de contraintes s'est devenu depuis des mois
+mon rituel quotidien. J'ai un rappel tous les jours à 11h parfois je décale dans la journée selon les disponibilités 
+pas de soucis. il y a tellement d'exercices possibles, on peut varier ou faire du spécifique avec le besoin de chacun. 
+Quelques minutes après je suis de retour sur ma chaise et la journée continue.
 {: .text-justify}
 
-
-
-
-
-Comme toute bonne résolution de nouvelle année, 
-allez je fais régime, je me mets au sport... 90% du temps ça dure quelques semaines car on met la barre trop haute , on veut des
-résultats direct et petit à petit la contrainte est trop forte, perte de motivation et parfois une blessure et on perd
-en quelques semaines les acquis pour revenir au point de départ. Alors entre faire 3 semaines de gainage intensif 
-puis arrêté pendant 6 mois, il sera largement préférable de faire 2-3min par jour 5 jour sur 7. Ce 
-qui permet de garder les acquis sur le long terme, la contrainte est faible et sur le long terme des résultats. Certes,
-pour avoir un progressivité il faudrait coupler des cycles de 3 semaines avec des séances pour stresser le corps et 
-continuer à entretenir le reste du temps mais c'est un sujet pour les sportifs. Mais pour un sédentaire rien que 
-faire de l'entretien sera  très bénéfique tout dépend de l'objectif de chacun.
-Enfin bref, moi je peux vous dire que ça marche sur moi, j'ai même pas besoin
-de dire: il faut s'accrocher , il faut passer des paliers... Il n'y a pas de contraintes, c'est devenu depuis des mois 
-mon  rituel quotidien mon agenda sonne à 11h et me dit "minutes de gainage"! je me mets en planche à 
-côté du bureau sous l'oeil du chien qui ne comprend pas
-ce que fais son maître et c'est parti. On peut varier les exos tous les jours il y en a des dizaines... le tout c'est 
-2-3min pas plus et on retourne sur sa chaise et la journée continue.
+Le gainage et les étirements sont bénéfiques mais il manque quelque chose qui fait travailler le cardio et fait brûler
+des calories. Il faudrait que je puisse faire l'équivalent de 30 à 60 min de marche. L'idéal serait de pouvoir le 
+faire en parallèle de mon temps de travail. Je me suis tourné vers les tapis et vélos bureau. Très vite j'ai 
+constaté que c'était cher et qu'il n'y avait pas vraiment de retour d'expérience. Du coup, j'ai commencé à réfléchir
+pour m'en faire un. Je me suis dit, si je mets un vélo d'appartement sous le bureau, en lui enlèvant le guidon et en
+ajustant le bureau assis/debout ça devrait le faire ! J'ai rapidement trouvé mon bonheur, on voit bien que les gens
+veulent s'en débarrasser (encore une résolution qui n'a pas durée...). J'ai trouvé pour 10 euros !! exactement ce qu'il
+me fallait, un vélo d'appartement avec une roue afin que je puisse lui mettre un capteur de vitesse. Ainsi avec ma
+montre connecté, j'enregistre: temps, distance, calories et fréquence cardiaque. Alors là, on sent le mec qui aime la
+donnée mais on est évidemment pas obligé d'avoir tout ça, le principal et de pouvoir pédaler. Evidemment esthétiquement
+ça ne vaut pas celui à 500 euros mais le besoin avant tout ! Donner une seconde vie à du vieux matos c'est tout de 
+même une bonne pratique et puis je vais pouvoir un peu le retravailler au niveau peinture et enlevant tous ce qui sert
+à rien. Enfin bref, je l'ai nettoyé, je lui enlevé le guidon, remplacer les pédales, je lui
+ai installé un capteur de vitesse et enfin je l'ai placé sous le bureau. Je pratique 1h à 1h30 ce qui me permet de 
+faire l'équivalent d'une marche au niveau cardio et en parallèle je travaille. Je suis bien installé tant bien que 
+j'oublie que je pédale.
 {: .text-justify}
 
-Alors j'ai intégré c'est 2-3min mais au final c'est pas ça qui va faire travailler le cardio et ni brulée des calories.
-Il faut rajouter un ingrédient dans la recette pour trouver son équilibre. Et je suis tombé sur les tapis et vélo 
-bureau, je me suis dit c'est parfait pour être moins statique durant la journée. ça permet  d'optimiser 
-en faisant travailler en parallèle le cerveau et le cardio. Faire 
-1h-1h30 de vélo bureau par jour car encore une fois le but est pas de passer la journée dessus sinon
-on va en faire pendant 3 semaines et puis ce sera mis de côté. Mais quand j'ai vu les prix entre 300-500 euros... Je
-me suis dit ça vaut-il le coup d'investir sans avoir de retour d'expérience sur le long terme sur les biens faits.
+J'ai aujourd'hui retrouvé mon équilibre en m'adaptant à la situation mais pour au final avoir une meilleure qualité
+de vie qu'auparavant. Je suis convaincu que c'est à nous humain de nous adapter et les petites choses ont un grand 
+impact sur le long terme. Et puis s'adapter c'est pas forcément une regression au contraire !
+C'est juste se poser les bonnes questions, se concentrer sur l'essentiel et le besoin avant tout ! Et puis je trouve 
+important de ne jamais rester sur ses acquis et de vouloir toujours faire mieux.
+En tout cas, j'espère que mon expérience pourra donner envie à d'autres de tenter l'expérience !
 {: .text-justify}
 
-Et donc je me suis dit attends au final c'est un vélo d'apppartement sous le bureau.
-Un vélo d'appartement je lui enlève le guidon et puis hop il passe sous le bureau et ça tombe bien avec le bureau 
-assis/debout je peux ajuster parfaitement la taille pour bien être installé.
-Alors j'ai commencé à chercher sur leboncoin... il me faut une vélo d'appartement avec une roue , pourquoi car à 
-300-500 euros vous avez tout de même un vélo connecté c'est -à dire 
-avec la distance parcourue, les calories, le cardio... moi je me suis dit si j'ai une roue je peux mettre un capteur de 
-vitesse bluetooth avec un aimant. Comme j'ai une montre connecté je récupère les données cardiaques, la vitesse et 
-les calories et je peux enregistrer les données dans mon suivi d'activité. ALors là on sent bien le mec qui aime la data et 
-c'est un peu mon dada on n'est évidemment pas obligé d'avoir ces capteurs le principal et de pouvoir pédaler. 
-Et j'ai trouver un vélo d'appart parfait avec une roue pour 10 euros !!!! Alors esthétiquement c'est pas celui à 500 balles
-mais franchement le besoin avant tout ! Donner une seconde vie à du vieux matos en plus. 
-Alors j'ai pris ce vélo d'appartement: je l'ai nettoyé, je lui enlevé le guidon, remplacer les pédales et je lui 
-ai installé un capteur de vitesse que j'avais déjà , enfin je l'ai placé sous le bureau et bim je pédale. Au 
-moment où j'écris cet article je pédale depuis 1h17 et j'ai fait 12km, 267 calories. ET j'ai dit bingo c'est exactement ce 
-qu'il me fallait au niveau cardio c'est l'équivalent que quand
-je marche. Donc je code et je marche parfait !!! Mon rêve ultime serait de pouvoir récupérer l'énergie pour charger 
-la batterie du portable :-) Mais ça marche , je suis bien installé et on oubli qu'on pédale c'est trop bien.
-{: .text-justify}
+# Pour résumé ma recette
 
-Je suis convaincu que c'est à nous humain de nous adapter et les petites choses  font les grandes 
-choses sur le long terme. Mon but est d'evangéliser pour montrer des retours d'expérience. Pour aller plus loin et encore s'adapter
-j'ai acheté un vieux vélo pour aller à la piscine ou au stade et d'éviter de prendre la voiture. Je travaille sur 
-une remorque pour aller chercher le drive à vélo. C'est à nous de nous adapter. Et puis s'adapter c'est pas forcément
-une regression au contraire je suis aujourdh'ui plus heureux et plus en forme qui hier ! J'ai donc éliminer les 
-inconvénient du TT. J'espère que mon expérience pourra donner des idées à au moins une personne !
-{: .text-justify}
-
-Ma recette qui marche pour moi tout est optionnel biensûr c'est ça qui est bien pas de contrainte:
+Ma recette qui marche pour moi tout est optionnel bien-sûr à chacun de trouver son équilibre:
 
 - Un bureau assis/debout
 - Avoir un chien
 - 2-3 min de gainage par jour
-- Un vélo d'appart à 10 balles
-- Utiliser au maximum son vélo dans le quotidien
+- Un vélo d'appartement à 10 balles !
+- Utiliser au maximum son vélo dans le quotidien (Projet en cours: aller faire les courses avec une remorque)
 
-Pour un équilibre famille/passion/pro 
+Pour un équilibre famille/passion/travail
 Pour un équilibre activité/sommeil/nourriture
 Pour emettre le moins de CO2 en s'adaptant.
 
 Metro/boulot/dodo -> Passion/boulot/Famille/dodo
-
-C'est pas une question de volonté, c'est juste se poser les bonnes questions, se concentrer sur l'essentiel et le besoin
-avant tout. Pour moi s'adapter c'est pas faire des compromis. Ca permet de jamais rester sur ces acquis vouloir faire 
-mieux et ça passe par des petites choses.
-{: .text-justify}
-
-
-En éliminant le temps du trajet maison/travail:
-- j'émet moins de CO2
-- je gagne du temps pour moi
-- je suis moins stressé
-- j'ai plus de sommeil
-- je fais des économies (moins d'essence, frais autoroute, usure véhicule...)
-- Et puis le temps gagné dans les transports me permettent comme je le dis à ma femme d'être un peu "Tony dans
-Madame est servie". En effet, le ménage, les lessives, les courses sont fait au final pendant ce temps avant utiliser
-pour émettre du CO2 et attendre dans les bouchons. Alors qu'avant ces tâches empietait sur le weekend. Mais quel
-bonheur de pouvoir avoir un vrai weekend sans tâches ménagères!
-De plus, je mange mieux avec la proximité de sa propre cuisine.
-Egalement, je passe plus de temps avec ma famille. Je fais plus d'activités avec mes enfants en pouvant les amener
-et les rechercher sans passer par la garderie.
-Mais aussi plus de flexibilité en ce qui concerne la prise de rendez-vous, récupérer un colis...
-{: .text-justify}
 
