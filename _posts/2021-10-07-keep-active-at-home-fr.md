@@ -51,6 +51,8 @@ Alors je me suis posé la question suivante: comment je peux redevenir aussi act
 les avantages du Télétravail ?
 {: .text-justify}
 
+# Un bureau assis-debout
+
 J'ai tout d'abord été séduit par le concept du bureau assis/debout.
 Alterner avec une position debout est forcément bénéfique pour le corps mais au fil du temps je me suis rendu que je
 ne l'utilisais que 10-15 min par jour en moyenne. En effet, je l'utilise naturellement quand je fais un meeting et que 
