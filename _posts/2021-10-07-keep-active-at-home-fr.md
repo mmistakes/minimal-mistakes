@@ -41,6 +41,8 @@ est à mon avis une très bonne chose. Tous ceux qui le pratique le savent, le t
 que ce soit en terme de qualité de vie, d'économie ou encore d'écologie.
 {: .text-justify}
 
+# Télétravail = couch potatoes ?
+
 Malgré tous ces avantages dans le quotidien, j'ai constaté rapidement le manque d'activité et de lien social.
 En ce qui concerne le lien social, le problème a été assez vite résolu. En effet, il y a bien plus de télétravailleur
 autour de chez moi qu'auparavant ce qui m'a permis de construire de nouveaux liens sociaux. Alors pour ma part cela se
