@@ -110,6 +110,8 @@ faire l'équivalent d'une marche au niveau cardio et en parallèle je travaille.
 j'oublie que je pédale.
 {: .text-justify}
 
+# Conclusion
+
 J'ai aujourd'hui retrouvé mon équilibre en m'adaptant à la situation mais pour au final avoir une meilleure qualité
 de vie qu'auparavant. Je suis convaincu que c'est à nous humain de nous adapter et les petites choses ont un grand 
 impact sur le long terme. Et puis s'adapter c'est pas forcément une regression au contraire !
