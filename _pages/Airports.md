@@ -30,18 +30,19 @@ toc: true
 ## SKBO - El Dorado Intl Airport - Bogota, Colombia
   <p>....Pronto SKBO - El Dorado Intl - Bogota, Colombia<br></p>
 
-# Como conseguirlos/How to find
-<img src="/assets/images/marketplace.png" alt="Trulli" width="100%" height="333">
-<br>
-<br>
-
 # Panama
 	
 ## [MPTO - Tocumen Intl Airport - Panama, Panama](https://vpilotdesigns.github.io/MPTO/)
 
 <p><a href="https://vpilotdesigns.github.io/MPTO/"><strong>Galeria/Gallery</strong></a><br>
   <br></p>
-{% include figure image_path="/assets/images/MPTO/mpto_block_06.jpg" alt="mpto" caption="Tocumen Intl Airport - Panama, Panama for MSFS" %}/assets/images/MPTO/mpto_block_06.jpg
+{% include figure image_path="/assets/images/MPTO/mpto_block_06.jpg" alt="mpto" caption="Tocumen Intl Airport - Panama, Panama for MSFS" %}
+
+# Como conseguirlos/How to find
+<img src="/assets/images/marketplace.png" alt="Trulli" width="100%" height="333">
+<br>
+<br>
+
   
 <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="vpilot" data-description="Apoyame comprandome un Café!" data-message="Gracias por descargar. Ahora puedes invitarme a un Café!" data-color="#79D6B5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
