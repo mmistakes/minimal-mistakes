@@ -100,7 +100,7 @@ pour m'en faire un. Je me suis dit, si je mets un vélo d'appartement sous le bu
 ajustant le bureau assis/debout ça devrait le faire ! J'ai rapidement trouvé mon bonheur, on voit bien que les gens
 veulent s'en débarrasser (encore une résolution qui n'a pas durée...). J'ai trouvé pour 10 euros !! exactement ce qu'il
 me fallait, un vélo d'appartement avec une roue afin que je puisse lui mettre un capteur de vitesse. Ainsi avec ma
-montre connecté, j'enregistre: temps, distance, calories et fréquence cardiaque. Alors là, on sent le mec qui aime la
+montre connectée, j'enregistre: temps, distance, calories et fréquence cardiaque. Alors là, on sent le mec qui aime la
 donnée mais on est évidemment pas obligé d'avoir tout ça, le principal et de pouvoir pédaler. Evidemment esthétiquement
 ça ne vaut pas celui à 500 euros mais le besoin avant tout ! Donner une seconde vie à du vieux matos c'est tout de 
 même une bonne pratique et puis je vais pouvoir un peu le retravailler au niveau peinture et enlevant tous ce qui sert
