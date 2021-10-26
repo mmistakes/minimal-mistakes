@@ -33,7 +33,7 @@ l'avantage de pouvoir profiter de ce temps: pour lire, faire du Babbel ou tout s
 social en discutant avec d'autres passagers. En 2017, j'ai rejoint Sierra Wireless qui était à l'époque précurseur 
 en matière de télétravail. En effet, tous ceux qu'ils le souhaitaient, pouvaient ponctuellement faire 2 à 3 jours de 
 télétravail par semaine. J'ai adopté ce mode de fonctionnement et très rapidement prendre ma voiture est devenu presque
-ponctuelle. À l'époque, je ne me voyais pas tous les jours en télétravail. Car évidemment le lieu de travail apportait
+ponctuel. À l'époque, je ne me voyais pas tous les jours en télétravail. Car évidemment le lieu de travail apportait
 un lien social dans le quotidien et pour moi cela se traduisait en partageant avec les collègues: un footing, une séance 
 natation ou un déjeuner. Mais le contexte a fait que nous avons dû (pour ceux dont le métier le permettait) pratiquer 
 le télétravail tous les jours. En moins d'un an, on a dû faire un bond de 10 ans sur le développement du télétravail ce qui 
