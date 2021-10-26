@@ -20,6 +20,8 @@ est de partager certaines pratiques qui ont fonctionnées pour moi afin de motiv
 à tenter l'expérience.
 {: .text-justify}
 
+# Basculement en télétravail
+
 Il y a encore à peine 10 ans, en arrivant dans la région toulousaine, j'ai très vite pratiqué le 
 déplacement à vélo pour me rendre sur mon lieu de travail. Parfois à vélo ou à vélo+train selon l'agenda et la météo... 
 Ce qui me permettait d'être très actif. Mais il fallait une certaine logistique: vêtements de rechange, se lever 
