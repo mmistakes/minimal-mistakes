@@ -26,7 +26,8 @@ toc: true
 <!---## [SKMD - Olaya Herrera - Medellin, Colombia](https://vpilotdesigns.github.io/SKMD/)
 <p>SKMD - Olaya Herrera - Medellin, Colombia</p>
   --->
-## SKBO
+  
+## SKBO - El Dorado Intl Airport - Bogota, Colombia
   <p>....Pronto SKBO - El Dorado Intl - Bogota, Colombia<br></p>
 
 # Como conseguirlos/How to find
