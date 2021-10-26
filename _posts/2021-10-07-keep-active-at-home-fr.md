@@ -3,11 +3,11 @@ title: "Rester actif en télétravail"
 related: true
 toc: true
 header:
-  overlay_image: /assets/images/wheel-building/cover.jpg
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  teaser: /assets/images/wheel-building/cover.jpg
+  overlay_image: /assets/images/keep-active-at-home/splash_office.jpg
+  caption:
+  teaser: /assets/images/keep-active-at-home/velo_bureau.jpg
 categories:
-  - Sport
+  - remote-working
 tags:
   - Remote working
 ---
@@ -25,7 +25,7 @@ est de partager certaines pratiques qui ont fonctionnées pour moi afin de motiv
 Il y a encore à peine 10 ans, en arrivant dans la région toulousaine, j'ai très vite pratiqué le 
 déplacement à vélo pour me rendre sur mon lieu de travail. Parfois à vélo ou à vélo+train selon l'agenda et la météo... 
 Ce qui me permettait d'être très actif. Mais il fallait une certaine logistique: vêtements de rechange, se lever 
-tôt, rentrer tard, être optimiste avec le train...etc. Bref cela avait un impact sur: le temps passer en famille, 
+tôt, rentrer tard et être optimiste avec le train. Bref cela avait un impact sur: le temps passer en famille, 
 le sommeil ou encore le stress. Mais j'étais très actif. Puis j'ai eu des enfants et j'ai dû m'adapter. Finalement, 
 l'indéterminisme du train n'était plus jouable et je n'avais plus vraiment le temps de pouvoir partir à 7h du matin à 
 vélo. Et donc j'ai commencé à perdre plus d'une heure par jour dans ma voiture. En train, j'avais 
@@ -59,10 +59,14 @@ les avantages du Télétravail ?
 
 J'ai tout d'abord été séduit par le concept du bureau assis/debout.
 Alterner avec une position debout est forcément bénéfique pour le corps mais au fil du temps je me suis rendu que je
-ne l'utilisais que 10-15 min par jour en moyenne. En effet, je l'utilise naturellement quand je fais un meeting et que 
-j'ai besoin d'écrire sur mon tableau ou quand je fais des allers retours cuisine/bureau pendant que je me prépare à 
+ne l'utilisais que 10 à 15 min par jour en moyenne. En effet, je l'utilise naturellement quand je fais un meeting et 
+que j'ai besoin d'écrire sur mon tableau ou quand je fais des allers retours cuisine/bureau pendant que je me prépare à 
 manger. C'est toujours mieux que rien mais on ne peut pas dire que ça va me rendre plus actif.
 {: .text-justify}
+
+![Assis](/assets/images/keep-active-at-home/assis.jpg){:height="320px" width="320px"}
+![Debout](/assets/images/keep-active-at-home/debout.jpg){:height="320px" width="320px"}
+
 
 # Un chien
 
@@ -72,18 +76,17 @@ Un chien est vraiment un compagnon, ils apportent tellement... ils leur manquent
 Je ne suis plus seul, il m'oblige à sortir de mon bureau parce qu'il est en train de faire une bêtise ou pour aller
 jouer avec lui quelques minutes dans le jardin (c'est un peu ma pause-café). Je le prends quand le temps le permet pour
 aller chercher les enfants à l'école ce qui me permet de marcher et bien sûr je vais aussi courir avec pour vraiment
-la défouler. C'est trop bien cette complicité, c'est devenu un membre de la famille.
+la défouler. C'est trop bien cette complicité, Java est devenu un membre de la famille.
 {: .text-justify}
 
 ![Java et moi](/assets/images/keep-active-at-home/moi_et_java.jpg){: .align-center :height="320px" width="320px"}
-
 
 # Peu, mais tous les jours !
 
 Ensuite, je me suis dit qu'il faudrait que j'intègre une activité physique courte et simple n'imposant pas de 
 contraintes particulières afin de pouvoir l'installer sur le long terme. Alors je me suis mis à faire 2-3 min de gainage
 et d'étirements tous les jours. C'est court et sur le long terme ça permet d'entretenir ses muscles et l'élasticité
-de son corps. Pour avoir une bonne condition physique il faut de la régularité et de la progressivité. Certains diront
+de son corps. Pour avoir une bonne condition physique, il faut de la régularité et de la progressivité. Certains diront
 2-3 min ce n'est pas suffisant... moi je dis ça dépend pour quel objectif. Si c'est pour faire 3 semaines intensives
 avec 3-4 sessions de 45 mins et puis tout arrêter pour finalement revenir en quelques semaines au point de départ,
 cela n'a aucun intérêt. Il n'y a pas de progressivité, la barre est mise trop haute et très vite on s'attend à
@@ -98,6 +101,9 @@ mon rituel quotidien. J'ai un rappel tous les jours à 11h parfois je décale da
 Pas de soucis ! Il y a tellement d'exercices possibles, on peut varier ou faire du spécifique avec le besoin de chacun. 
 Quelques minutes après je suis de retour sur ma chaise et la journée continue.
 {: .text-justify}
+
+![Gainage](/assets/images/keep-active-at-home/gainage.jpg){: .align-center :height="320px" width="320px"}
+
 
 # Pédaler en travaillant
 
@@ -119,35 +125,39 @@ faire l'équivalent d'une marche au niveau cardio et en parallèle je travaille.
 j'oublie que je pédale.
 {: .text-justify}
 
-![Vélo d'appart](/assets/images/keep-active-at-home/velo_appart.jpg){: .align-center :height="320px" width="320px"}
-![Capteur de vitesse](/assets/images/keep-active-at-home/speed_sensor.jpg){: .align-center :height="320px" 
-width="320px"}
-![Diamètre de roue](/assets/images/keep-active-at-home/mesure_diameter.jpg){: .align-center :height="320px" 
-width="320px"}
+![Vélo d'appart](/assets/images/keep-active-at-home/velo_appart.jpg){:height="320px" width="320px"}
+![Capteur de vitesse](/assets/images/keep-active-at-home/speed_sensor.jpg){:height="320px" width="320px"}
+![Mesure diamètre de roue](/assets/images/keep-active-at-home/mesure_diameter.jpg){:height="320px" width="320px"}
+![Diamètre de roue](/assets/images/keep-active-at-home/wheel_diameter.jpg){:height="320px" width="320px"}
+
+
+![Activity report](/assets/images/keep-active-at-home/activity_report.jpg)
+
+![Vélo bureau](/assets/images/keep-active-at-home/velo_bureau.jpg){: .align-center :height="320px" width="320px"}
+
 
 # Conclusion
 
 J'ai aujourd'hui retrouvé mon équilibre en m'adaptant à la situation mais pour au final avoir une meilleure qualité
 de vie qu'auparavant. Je suis convaincu que c'est à nous humain de nous adapter et les petites choses ont un grand 
-impact sur le long terme. Et puis s'adapter c'est pas forcément une regression au contraire !
-C'est juste se poser les bonnes questions, se concentrer sur l'essentiel et le besoin avant tout ! Et puis je trouve 
+impact sur le long terme. Et puis s'adapter c'est pas forcément une regression au contraire!
+C'est juste se poser les bonnes questions, se concentrer sur l'essentiel et le besoin avant tout! Et puis je trouve 
 important de ne jamais rester sur ses acquis et de vouloir toujours faire mieux.
-En tout cas, j'espère que mon expérience pourra donner envie à d'autres de tenter l'expérience !
+En tout cas, j'espère que mon expérience pourra donner envie à d'autres de tenter l'expérience!
 {: .text-justify}
 
 # Pour résumé ma recette
 
 Ma recette qui marche pour moi tout est optionnel bien sûr à chacun de trouver son équilibre:
 
-- Un bureau assis/debout
-- Avoir un chien
-- 2-3 min de gainage par jour
-- Un vélo d'appartement à 10 balles !
-- Utiliser au maximum son vélo dans le quotidien (Projet en cours: aller faire les courses avec une remorque)
+- <strong>Un bureau assis/debout</strong>
+- <strong>Avoir un chien</strong>
+- <strong>2-3 min de gainage par jour</strong>
+- <strong>Un vélo d'appartement à 10 balles!</strong>
+- <strong>Utiliser au maximum son vélo dans le quotidien (Projet en cours: aller faire les courses avec une remorque)</strong>
 
-Pour un équilibre famille/passion/travail
-Pour un équilibre activité/sommeil/nourriture
-Pour émettre le moins de CO2 en s'adaptant.
+- <strong>Pour un équilibre famille/passion/travail</strong>
+- <strong>Pour un équilibre activité/sommeil/alimentation</strong>
+- <strong>Pour émettre le moins de CO2 en s'adaptant</strong>
 
-Métro/Boulot/Dodo -> Passion/Boulot/Famille/Dodo
-
+<strong>Métro/Boulot/Dodo -> Famille/Passion/Boulot/Dodo</strong>
