@@ -35,7 +35,7 @@ en matière de télétravail. En effet, tous ceux qu'ils le souhaitaient, pouvai
 télétravail par semaine. J'ai adopté ce mode de fonctionnement et très rapidement prendre ma voiture est devenu presque
 ponctuelle. À l'époque, je ne me voyais pas tous les jours en télétravail. Car évidemment le lieu de travail apportait
 un lien social dans le quotidien et pour moi cela se traduisait en partageant avec les collègues: un footing, une séance 
-natation ou un déjeuné. Mais le contexte a fait que nous avons dû (pour ceux dont le métier le permettait) pratiquer 
+natation ou un déjeuner. Mais le contexte a fait que nous avons dû (pour ceux dont le métier le permettait) pratiquer 
 le télétravail tous les jours. En moins d'un an, on a dû faire un bond de 10 ans sur le développement du télétravail ce qui 
 est à mon avis une très bonne chose. Tous ceux qui le pratique le savent, le télétravail apporte beaucoup d'avantages
 que ce soit en terme de qualité de vie, d'économie ou encore d'écologie.
