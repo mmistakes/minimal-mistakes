@@ -75,6 +75,9 @@ aller chercher les enfants à l'école ce qui me permet de marcher et bien sûr 
 la défouler. C'est trop bien cette complicité, c'est devenu un membre de la famille.
 {: .text-justify}
 
+![Java et moi](/assets/images/keep-active-at-home/moi_et_java.jpg){: .align-center :height="320px" width="320px"}
+
+
 # Peu, mais tous les jours !
 
 Ensuite, je me suis dit qu'il faudrait que j'intègre une activité physique courte et simple n'imposant pas de 
@@ -110,11 +113,17 @@ montre connectée, j'enregistre: temps, distance, calories et fréquence cardiaq
 donnée mais on est évidemment pas obligé d'avoir tout ça, le principal et de pouvoir pédaler. Evidemment esthétiquement
 ça ne vaut pas celui à 500 euros mais le besoin avant tout ! Donner une seconde vie à du vieux matos c'est tout de 
 même une bonne pratique et puis je vais pouvoir un peu le retravailler au niveau peinture et enlevant tous ce qui sert
-à rien. Enfin bref, je l'ai nettoyé, je lui enlevé le guidon, remplacer les pédales, je lui
+à rien. Enfin bref, je l'ai nettoyé, je lui ai enlevé le guidon, remplacer les pédales, je lui
 ai installé un capteur de vitesse et enfin je l'ai placé sous le bureau. Je pratique 1h à 1h30 ce qui me permet de 
 faire l'équivalent d'une marche au niveau cardio et en parallèle je travaille. Je suis bien installé tant bien que 
 j'oublie que je pédale.
 {: .text-justify}
+
+![Vélo d'appart](/assets/images/keep-active-at-home/velo_appart.jpg){: .align-center :height="320px" width="320px"}
+![Capteur de vitesse](/assets/images/keep-active-at-home/speed_sensor.jpg){: .align-center :height="320px" 
+width="320px"}
+![Diamètre de roue](/assets/images/keep-active-at-home/mesure_diameter.jpg){: .align-center :height="320px" 
+width="320px"}
 
 # Conclusion
 
@@ -128,7 +137,7 @@ En tout cas, j'espère que mon expérience pourra donner envie à d'autres de te
 
 # Pour résumé ma recette
 
-Ma recette qui marche pour moi tout est optionnel bien-sûr à chacun de trouver son équilibre:
+Ma recette qui marche pour moi tout est optionnel bien sûr à chacun de trouver son équilibre:
 
 - Un bureau assis/debout
 - Avoir un chien
@@ -138,7 +147,7 @@ Ma recette qui marche pour moi tout est optionnel bien-sûr à chacun de trouver
 
 Pour un équilibre famille/passion/travail
 Pour un équilibre activité/sommeil/nourriture
-Pour emettre le moins de CO2 en s'adaptant.
+Pour émettre le moins de CO2 en s'adaptant.
 
-Metro/boulot/dodo -> Passion/boulot/Famille/dodo
+Métro/Boulot/Dodo -> Passion/Boulot/Famille/Dodo
 
