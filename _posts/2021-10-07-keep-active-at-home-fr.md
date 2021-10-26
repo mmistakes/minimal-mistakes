@@ -62,6 +62,8 @@ j'ai besoin d'écrire sur mon tableau ou quand je fais des allers retours cuisin
 manger. C'est toujours mieux que rien mais on ne peut pas dire que ça va me rendre plus actif.
 {: .text-justify}
 
+# Un chien
+
 En parallèle, j'ai pris un chien. J'ai toujours eu des chiens dans ma jeunesse et là c'était le bon moment car je 
 savais que je pourrai m'en occuper en étant toujours à la maison. 
 Un chien est vraiment un compagnon, ils apportent tellement... ils leur manquent la parole comme on dit... 
