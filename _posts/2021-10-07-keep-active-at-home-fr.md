@@ -94,6 +94,8 @@ Pas de soucis ! Il y a tellement d'exercices possibles, on peut varier ou faire 
 Quelques minutes après je suis de retour sur ma chaise et la journée continue.
 {: .text-justify}
 
+# Pédaler en travaillant
+
 Le gainage et les étirements sont bénéfiques mais il manque quelque chose qui fait travailler le cardio et fait brûler
 des calories. Il faudrait que je puisse faire l'équivalent de 30 à 60 min de marche. L'idéal serait de pouvoir le 
 faire en parallèle de mon temps de travail. Je me suis tourné vers les tapis et vélos bureau. Très vite j'ai 
