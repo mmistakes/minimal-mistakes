@@ -118,7 +118,7 @@ gallery1:
     title: "Westchester County Airport, White Plains, NY USA for MSFS"
     
 ---
-### **Panama, Panamaa**
+### **White Plains, NY USA**
 #### **for Microsoft Flight Simulator**  
 
 Available in the MSFS Marketplace  
