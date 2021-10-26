@@ -40,7 +40,7 @@ toc: true
 # United States
 	
 ## [KHPN - Westchester County Airport - White Plains, NY](https://vpilotdesigns.github.io/KHPN/)
-<p><a href="https://vpilotdesigns.github.io/MPTO/"><strong>Galeria/Gallery</strong></a><br>
+<p><a href="https://vpilotdesigns.github.io/KHPN/"><strong>Galeria/Gallery</strong></a><br>
   <br></p>
 {% include figure image_path="/assets/images/KHPN/Block_10.jpg" alt="mpto" caption="Westchester County Airport - White Plains, NY for MSFS" %}
 
