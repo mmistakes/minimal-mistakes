@@ -5,7 +5,7 @@ layout: single
 classes: wide
 gallery1:  
   - url: /assets/images/MPTO/mpto_block_03.jpg
-    image_path: /assets/images/MPTO/mpto_block_01.jpg
+    image_path: /assets/images/MPTO/mpto_block_03.jpg
     alt: "placeholder image 2"
     title: "Tocumen Intl Airport - Panama, Panama for MSFS"
   - url: /assets/images/MPTO/mpto_block_04.jpg
