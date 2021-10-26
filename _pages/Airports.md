@@ -42,7 +42,7 @@ toc: true
 ## [KHPN - Westchester County Airport - White Plains, NY](https://vpilotdesigns.github.io/KHPN/)
 <p><a href="https://vpilotdesigns.github.io/MPTO/"><strong>Galeria/Gallery</strong></a><br>
   <br></p>
-{% include figure image_path="/assets/images/KHPN/Block_10.jpg" alt="mpto" caption="Tocumen Intl Airport - Panama, Panama for MSFS" %}
+{% include figure image_path="/assets/images/KHPN/Block_10.jpg" alt="mpto" caption="Westchester County Airport - White Plains, NY for MSFS" %}
 
 # Como conseguirlos/How to find
 <img src="/assets/images/marketplace.png" alt="Trulli" width="100%" height="333">
