@@ -1257,13 +1257,11 @@ montages (moyeu Straight Pull) et pourquoi pas monter un vélo complet.
 ![moyeu](/assets/images/wheel-building/result2.jpg){:height="240px" width="240px"} 
 ![moyeu](/assets/images/wheel-building/result4.jpg){:height="240px" width="240px"} 
 
-
 # Références
 
 - [Professionnal Guide to Wheel Building](https://www.wheelpro.co.uk/wheelbuilding/book.php) - Roger Musson
 - [Bicycle Wheel](http://caravan.hobby.ru/materiel/Bicycle_Wheel_-_Jobst_Brandt.pdf) - Jobst Brandt
 - [Le montage de roues](http://mgagnon.net/velo/roue_montage.fr.php) - Sheldon Brown et John Allen
-
 
 
 
