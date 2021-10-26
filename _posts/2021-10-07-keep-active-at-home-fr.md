@@ -73,6 +73,8 @@ aller chercher les enfants à l'école ce qui me permet de marcher et bien sûr 
 la défouler. C'est trop bien cette complicité, c'est devenu un membre de la famille.
 {: .text-justify}
 
+# Peu, mais tous les jours !
+
 Ensuite, je me suis dit qu'il faudrait que j'intègre une activité physique courte et simple n'imposant pas de 
 contraintes particulières afin de pouvoir l'installer sur le long terme. Alors je me suis mis à faire 2-3 min de gainage
 et d'étirements tous les jours. C'est court et sur le long terme ça permet d'entretenir ses muscles et l'élasticité
