@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: default
 title:  "자주 쓰는 pandas"
 ---
 
