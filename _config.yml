@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Dylan's _code" # "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Dylan's _code"
+name                     : "Dev_Dylan" # "your name"
 description              : "An amazing website."
 url                      : "https://Dylan-yoon.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
