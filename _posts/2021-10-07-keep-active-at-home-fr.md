@@ -86,7 +86,7 @@ largement préférable de faire 2-3 min par jour régulièrement. La contrainte 
 sur le long terme. Pour un sportif, il faudrait en effet coupler 3 semaines intensives pour progresser puis entretenir 
 avec les 2-3 min le reste du temps. Pour un sédentaire les 2-3 min suffiront et auront un impact positif sur sa condition
 physique. Je peux vous dire que ça marche, je n'ai même pas besoin de dire qu'il faut que je m'accroche, qu'il faut 
-passer des paliers... il n'y a pas de contraintes s'est devenu depuis des mois
+passer des paliers... Il n'y a pas de contraintes, c'est devenu depuis des mois
 mon rituel quotidien. J'ai un rappel tous les jours à 11h parfois je décale dans la journée selon les disponibilités 
 pas de soucis. il y a tellement d'exercices possibles, on peut varier ou faire du spécifique avec le besoin de chacun. 
 Quelques minutes après je suis de retour sur ma chaise et la journée continue.
