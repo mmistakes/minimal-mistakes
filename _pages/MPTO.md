@@ -55,7 +55,7 @@ Disponible en el Marketplace de MSFS
 
 {% include figure image_path="/assets/images/MPTO/thumbnail2.jpg" alt="mpto" caption="Tocumen Intl Airport - Panama, Panama for MSFS" %}
 
-{% include gallery id="gallery1" caption="SKCG Rafael Nuñez Airport - Cartagena, Colombia for MSFS" %}
+{% include gallery id="gallery1" caption="Tocumen Intl Airport - Panama, Panama for MSFS" %}
 
 <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="vpilot" data-description="Apoyame comprandome un Café!" data-message="Gracias por descargar. Ahora puedes invitarme a un Café!" data-color="#79D6B5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
