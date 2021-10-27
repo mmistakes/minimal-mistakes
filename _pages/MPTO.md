@@ -59,16 +59,16 @@ Panama, Panama
 
 Created by Arka506 and V Pilot Designs
 
-Features
--Realistic 3D Models
--Old and New Terminals
--Parkings
--Fire Station
--Copa and DHL Hangars
--Fuel Area\n-Heliport
--Rommel Fernández Gutiérrez Stadium
--Ship added near Panama Canal
--Lights added to city buildings
+Features  
+-Realistic 3D Models  
+-Old and New Terminals  
+-Parkings  
+-Fire Station  
+-Copa and DHL Hangars  
+-Fuel Area\n-Heliport  
+-Rommel Fernández Gutiérrez Stadium  
+-Ship added near Panama Canal  
+-Lights added to city buildings  
 {% include gallery id="gallery1" caption="Tocumen Intl Airport - Panama, Panama for MSFS" %}
 
 <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="vpilot" data-description="Apoyame comprandome un Café!" data-message="Gracias por descargar. Ahora puedes invitarme a un Café!" data-color="#79D6B5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
