@@ -128,6 +128,8 @@ Disponible en el Marketplace de MSFS
 {% include figure image_path="/assets/images/KHPN/Block_20.jpg" alt="mpto" caption="Westchester County Airport, White Plains, NY USA for MSFS" %}
 Westchester County Airport
 
+Created by Arka506 and V Pilot Designs
+
 Features
 
 -3D Modeled Buildings, Terminals and Hangars
