@@ -27,7 +27,7 @@ toc_icon: "cog"
 * Mar. 2017 - Jul. 2017: Algorithm Intern, PKSHA Technology Inc.
 
 ## Funding
-* Apr. 2022 - Mar. 2024: JSPS Fellowship (DC2)
+* Apr. 2022 - Mar. 2024: JSPS Research Fellowship (DC2)
 * Apr. 2017 - Mar. 2018: UTokyo Toyota-Dwango AI scholarship
 
 ## Awards
