@@ -65,7 +65,8 @@ Features
 -Parkings  
 -Fire Station  
 -Copa and DHL Hangars  
--Fuel Area\n-Heliport  
+-Fuel Area  
+-Heliport  
 -Rommel Fernández Gutiérrez Stadium  
 -Ship added near Panama Canal  
 -Lights added to city buildings  
