@@ -132,16 +132,16 @@ Created by Arka506 and V Pilot Designs
 
 Features
 
--3D Modeled Buildings, Terminals and Hangars
--Taxiway and Parking Markings
--Lighting
--T33 Monument
--Antennas
--Parking Garage
--Fuel Areas with Tanks
--Control Towers
--Million Air, Netjets, Flexjets and Signature Flights Hangars
--Frame Rate Friendly
+-3D Modeled Buildings, Terminals and Hangars  
+-Taxiway and Parking Markings  
+-Lighting  
+-T33 Monument  
+-Antennas  
+-Parking Garage  
+-Fuel Areas with Tanks  
+-Control Towers  
+-Million Air, Netjets, Flexjets and Signature Flights Hangars  
+-Frame Rate Friendly  
 {% include gallery id="gallery1" caption="KHPN - Westchester County Airport, White Plains, NY USA" %}
 
 <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="vpilot" data-description="Apoyame comprandome un Café!" data-message="Gracias por descargar. Ahora puedes invitarme a un Café!" data-color="#79D6B5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
