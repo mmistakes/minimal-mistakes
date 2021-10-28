@@ -87,17 +87,23 @@ This post will capture the books I have read over the years starting from 2019.
     
     1.  10/06/21 - 10/17/21
         
-6.  [_12 Rules for Life_](/categories/learning/book_report/12_rules_for_life)  by Jordan Peterson - **[In Progress]**
+6.  _Endurance: Shackleton's Incredible Voyage_ by Alfred Lansing
+    
+    1.  10/18/21 - 10/27/21
+        
+    2.  A phenomenal story that seems almost unreal. I listened to the audiobook and I was taken away. The story requires some time to build up, but halfway through you can truly see, feel and emphasize what the sailors are experiencing. It has moments that will make your stomach turn and make you yell at God for his cruelty. It also has moments of satisfaction where you’re laughing and giggling. Overall, this is truly an extraordinary book that I would highly recommend.
+        
+7.  [_12 Rules for Life_](/categories/learning/book_report/12_rules_for_life)  by Jordan Peterson - **[In Progress]**
     
     1.  01/19/21 - TBD
         
-7.  _The Outsider_ by S. E. Hinton - **[In Progress]**
+8.  _The Outsider_ by S. E. Hinton - **[In Progress]**
     
     1.  Pass
         
-8.  _Endurance: Shackleton's Incredible Voyage_ by Alfred Lansing - **[In Progress]**
+9.  _An Astronaut's Guide to Life on Earth: What Going to Space Taught Me About Ingenuity, Determination, and Being Prepared for Anything_ by Chris Hadfield - **[In Progress]**
     
-    1.  Pass
+    1.  10/28/21 - TBD
         
 
 # Books to Read
@@ -110,12 +116,8 @@ This post will capture the books I have read over the years starting from 2019.
     
 4.  So Good They Can't Ignore Me
     
-5.  An Astronaut's Guide to Life on Earth: What Going to Space Taught Me About Ingenuity, Determination, and Being Prepared for Anything
+5.  Theodore Roosevelt, An Autobiography
     
-6.  Endurance: Shackleton's Incredible Voyage
+6.  The War of Art
     
-7.  Theodore Roosevelt, An Autobiography
-    
-8.  The War of Art
-    
-9.  The Holy Quran, English Translation
+7.  The Holy Quran, English Translation
