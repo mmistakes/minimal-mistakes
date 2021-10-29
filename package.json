@@ -1,7 +1,13 @@
 {
   "name": "minimal-mistakes",
+<<<<<<< HEAD
   "version": "3.4.2",
   "description": "Minimal Mistakes Jekyll theme npm build scripts",
+=======
+  "private": true,
+  "version": "4.24.0",
+  "description": "Minimal Mistakes 2 column Jekyll theme.",
+>>>>>>> 9ab55b6c5487a770ac18410423e47a6f976dc098
   "repository": {
     "type": "git",
     "url": "git://github.com/mmistakes/minimal-mistakes.git"

@@ -51,6 +51,9 @@ $(document).ready(function(){
   $(
     "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']"
   ).has("> img").addClass("image-popup");
+<<<<<<< HEAD
+>>>>>>> 9ab55b6c5487a770ac18410423e47a6f976dc098
+=======
 >>>>>>> 9ab55b6c5487a770ac18410423e47a6f976dc098
 
   // Magnific-Popup options
