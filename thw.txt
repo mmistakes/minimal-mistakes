@@ -1,0 +1,84 @@
+Navigating bash and UNIX
+Machine learning with Neural Networks using Keras.io
+Git and GitHub
+Data Tidying in RR & Python
+Ensemble (Machine) Learning with Super Learner and H2O in RR 
+RRStudio 
+Thanksgiving 
+Machine learning with scikit-learn
+Matplotlib 
+Physical Computing 
+The Python Olympics 
+Parallelization in Python 
+Natural Language Processing for Python with NLTK 
+Git and Github 
+Github Pages and Jekyll 
+Machine Learning for Kaggle Competitions with RR 
+The Bash Olympics 
+What To Learn and Teach 
+D3.js 
+Tableau 
+Build Systems 
+Cython 
+Python For Plotting Timeseries & 3D Data 
+matplotlib 
+Handling and Visualizing Geospatial Data 
+Python Metaprogramming & Conversion to Python 3 
+Julia 
+Scraping Wikipedia Data 
+Pandas 
+LaTeX 
+High Performance Python 
+scikit-learn
+scikit-learn
+Advanced Python 
+GPUs and Parallelization 
+Webscraping 
+Free-form hacking
+Pandas 
+Spark and Hadoop 
+Visualization 
+Advanced Git and GitHub 
+Introductory Git and GitHub 
+Shiny 
+Make 
+C++ and Object Orientation 
+Microcontrollers 
+Julia 
+RR 
+Computer Architectures 
+Testing 
+Matplotlib and Seaborn 
+IPython 
+Advanced Git 
+Text Editors 
+Parallel Programming 
+The Shell and The Filesystem Hierarchy Standard 
+What Do You Want To Learn and What Can You Teach 
+Nuclear Data and Advanced Cython 
+ORIGEN and Open Source
+Cython and the Python C/API 
+Jekyll 
+MocDown and Pyne Install 
+MocDown and Python Threading 
+Numpy Vectorization and Python Logging 
+HPC Module Installation and Plotting Tools 
+PARCS and RadWatch (without the physics) 
+When and Where Survey
+Serpent and LaTeX 
+CRAM and imagemagick 
+Computational Nuclear Engineering Overview & Bash 
+LaTeX 
+So You Have A Software
+Packaging and Distribution 
+Emailing with Python 
+Raspberry Pi Hacking 
+Testing Part II 
+Testing 
+IPython 
+Makefiles 
+Self Documenting Code 
+Intro to Git Part II 
+Intro to Git 
+GPUs and CUDA 
+Bash  

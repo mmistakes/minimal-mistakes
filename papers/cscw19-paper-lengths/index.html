@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>CSCW paper lengths, 2000-2018</title>
+</head>
+<body>
+
+<h2>Supplemental interactive graphs and data tables for <i>The Rise and Fall of the Note: Changing Paper Lengths in ACM CSCW, 2000-2018</i></h2>
+<p><i>Now with bonus 2019 data!</i></p>
+<h3>By R. Stuart Geiger, UC-Berkeley Institute for Data Science</h3>
+<p>This is a supplement to <a href="https://arxiv.org/abs/1908.10808">a paper</a> to appear in <i>Proceedings of the ACM on Human-Computer Interaction</i> (PACMHCI) as part of the ACM's 2019 conference on Computer-Supported Cooperative Work (CSCW)</p>
+<p>You can see more data, code, and documentation on <a href="https://github.com/staeiou/cscw19-paper-lengths">this paper's GitHub repo</a>, but this page is for graphs and figures that require fancy javascript magic to render, hence the separate site.</p>
+
+    <h2>Data</h2>
+</ul>
+    <li><a href="web_table.html">Interactive data table</a> (note: takes some time to load & search)</li>
+    <li><a href="cscw19_geiger_data.csv">Data in CSV format</a></li>
+    <li><a href="data_dictionary.html">Data dictionary / variable descriptions</a></li>
+</ul>
+    
+    <h2>Interactive figures</h3>
+<p>Note: Hover over a data point to show more info, although there is no way to make a label stick. These figures are dynamically resizable based on your browser window. You can interact with the graph to zoom and pan by drawing boxes and dragging the graph, as well as through the buttons at the top-right.</p>
+
+    <h4>Box+swarmplots by year</h4>
+<p>Note: all plots have a combined boxplot (showing 95th, 75th, 50th, 25th, and 5th percentiles) and swarmplot (plotting each individual paper as a point) by publication year.</p>
+<ul>
+<li><a href="figures/body_len_words_nopunct_by_year.html">Main body length (no references/appendices) of all papers in words (nopunct method)</a>.</li>
+<p class="tab">This is the main graph that shows the rise and fall of the note. This is the "nopunct" method, which replaces all punctuation with spaces before doing word counts. This was not in the original paper, but it better controls for big tables of numbers.</p>
+
+<li><a href="figures/body_len_words_nopunct_nonnotes_by_year.html">Main body length of non-notes (>4 pages) in words (nopunct method)</a>.</li>
+    <p class="tab">This is the same graph as above, but removes notes. This way, the boxplots better show the rising growth of non-note papers.</p>
+    
+    <li><a href="figures/page_len_by_year.html">Length of papers in pages</a>.</li>
+    <p class="tab">This shows the raw number of pages in each PDF per year. This method is the easiest, but it is not able to separate out the main body from references and appendices, nor does it account to the shift in words per page from the double-column to single-column format (see below). </p>
+ 
+    <li><a href="figures/words_per_page_nopunct_by_year.html">Words per page (nopunct method)</a>.</li>
+    <p class="tab">This clearly shows how the shift from the two-column to one-column format resulted in substantially fewer words per page.</p>
+
+    <li><a href="figures/ref_count_approx_by_year.html">Number of references (approximate)</a>.</li>
+    <p class="tab">This is an attempt to count the number of references cited, which is generally accurate to within 1-3 references. It shows the substantial growth of references over time.</p>
+
+<li><a href="figures/body_len_words_punct_by_year.html">Main body length (no references/appendices) of all papers in words (punct method)</a>.</li>
+    <p class="tab">This is the same plot as the first one, but with the original "punct" method presented in the paper, which does not replace punctuation with spaces before doing a word count. Among other issues, this method results in papers with tables having substantially higher word counts. </p>
+</ul>
+    
+    <h4>Scatterplots</h4>
+    <ul>
+        <li><a href="figures/scatter_ref_count_by_body_len_words_nopunct.html">Number of references by main body length in words (nopunct)</a>.</li>
+        <p class="tab">In other words, how proportional is the number of references to the length of the main section? There is a cluster of notes that is clearly visible in this plot.</p>
+        <li><a href="figures/scatter_words_nopunct_per_page_by_len_words_nopunct.html">Words per page (nopunct) by main body length in words (nopunct).</a>
+            <p class="tab">A few interesting patterns can be seen here: the 2017.5/2018 single-column PACMHCI papers are a visible cluster; classic notes are a long line at the bottom; classic 10-pagers are a parallel line in the middle; 2013-2017 papers >10 pages fan out above this line. </p>
+     </ul>
+    
+    
+<h3>Software used</h3>
+<p>In addition to the many software tools described in the paper, these web visualizations are made possible using the specific libraries (and their extensive dependencies):</p>
+<ul>
+<li><a href="https://plot.ly">plot.ly</a></li>
+<li><a href="https://datatables.net"</a>datatables</li>
+</ul>
+
+    </body>
+</html>

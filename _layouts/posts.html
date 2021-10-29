@@ -21,6 +21,9 @@ layout: archive
   <section id="{{ year.name }}" class="taxonomy__section">
     <h2 class="archive__subtitle">{{ year.name }}</h2>
     <div class="entries-{{ entries_layout }}">
+    {% for category in site.categories %}
+          {{ category | first }}
+      {% endfor %}
       {% for post in year.items %}
         {% include archive-single.html type=entries_layout %}
       {% endfor %}

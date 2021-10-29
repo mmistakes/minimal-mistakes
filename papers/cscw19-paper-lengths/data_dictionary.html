@@ -1,0 +1,105 @@
+<html>
+<body>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-1wig">filename</th>
+    <th class="tg-0lax">The original PDF filename from the ACM Digital Library</th>
+  </tr>
+  <tr>
+    <td class="tg-1wig">year</td>
+    <td class="tg-0lax">The year of publication, CSCW 2018 online-first edition of PACMHCI is 2017.5</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">title_from_text</td>
+    <td class="tg-0lax">The paper title derived from the paper text, this may be incomplete or also include author names.</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">lead_author</td>
+    <td class="tg-0lax">The lead author of the paper, based on the filename from the ACM DL</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">num_pages</td>
+    <td class="tg-0lax">Number of pages in the PDF</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">total_words</td>
+    <td class="tg-0lax">Total number of words in the paper, defined as tokens between any contiguious space</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">total_words_nopunct</td>
+    <td class="tg-0lax">Total number of words after replacing all punctuation with spaces.</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">body_len_words</td>
+    <td class="tg-0lax">Number of words in the paper's front matter and body, no references and appendices. Calculated with `total_words` method.</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">body_len_words_nopunct</td>
+    <td class="tg-0lax">Number of words in the paper's front matter and body, no references and appendices. Calculated with `total_words_nopunct` method.</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">body_len_chars</td>
+    <td class="tg-0lax">Number of characters in the paper's front matter and body, no references and appendices.</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">ref_len_chars</td>
+    <td class="tg-0lax">Number of characters in the paper's reference section.</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">ref_len_words</td>
+    <td class="tg-0lax">Number of words in the paper's reference section. Calculated with `total_words` method.</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">ref_len_words_nopunct</td>
+    <td class="tg-0lax">Number of words in the paper's reference section. Calculated with `total_words_nopunct` method.</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">appx_len_chars</td>
+    <td class="tg-0lax">Number of characters in the paper's appendix section. Value is nan if no appendix was found.</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">appx_len_words</td>
+    <td class="tg-0lax">Number of words in the paper's appendix section. Calculated with `total_words` method.</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">appx_len_words_nopunct</td>
+    <td class="tg-0lax">Number of words in the paper's appendix section. Calculated with `total_words_nopunct` method.</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">ref_count_approx</td>
+    <td class="tg-0lax">Approximate number of references cited.</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">words_per_page</td>
+    <td class="tg-0lax">Averge number of words (`total_words` method) per page</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">words_nopunct_per_page</td>
+    <td class="tg-0lax">Average number of words (`total_words_nopunct` method) per page</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">chars_per_word</td>
+    <td class="tg-0lax">Average number of characters per word (`total_words` method)</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">chars_per_word_nopunct</td>
+    <td class="tg-0lax">Average number of characters per word (`total_words_nopunct` method)</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">body_words_nopunct_per_ref_count</td>
+    <td class="tg-0lax">Average number of words in the paper per number of references cited.</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">title_has_quote</td>
+    <td class="tg-0lax">1 if title has a single or double quotation mark, 0 if not</td>
+  </tr>
+</table>
+</body>
+</html>

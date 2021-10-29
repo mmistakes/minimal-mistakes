@@ -1,0 +1,132 @@
+body {
+font-family: helvetica;
+	margin: 0px; 
+	padding: 0px;
+	min-height: 100%;
+background: url(/web/20110716155257im_/http://stuartgeiger.com/blueprints/header.png) no-repeat top left; 
+background: #00007f;
+color:#FFF;
+overflow-x: hidden; 
+}
+
+a {
+color:#fff000;
+}
+
+a:visited {
+color:#888888;
+}
+
+#container {
+background: url(/web/20110716155257im_/http://stuartgeiger.com/blueprints/left-border-background.png); 
+background-repeat:repeat-y;
+margin-left:69px;
+margin-top:338px;
+padding-left:53px;
+
+}
+
+#intro h3 {
+font-family: 'Lithos Pro', arial, sans-serif;
+font-size:24px;
+line-height:25px;
+text-align:center;
+}
+
+#supportingText h3 {
+font-family: 'Lithos Pro', arial, sans-serif;
+font-size:24px;
+line-height:25px;
+text-align:center;
+}
+
+
+#quickSummary p.p1 span {
+display:none;
+}
+#quickSummary p.p2{
+position:absolute;
+top:280px;
+left:200px;
+width:450px;
+font-size:16px;
+z-index:10;
+}
+
+
+#intro {
+padding-top:5px;
+width:480px;
+text-align:justify;
+}
+
+#supportingText {
+padding-top:10px;
+width:480px;
+text-align:justify;
+}
+
+#linkList {
+
+background: url(/web/20110716155257im_/http://stuartgeiger.com/blueprints/right-link-background.png);
+background-repeat:repeat-y;
+position:absolute;
+top:338px;
+left:623px;
+width:500px;
+padding-left:35px;
+z-index:1;
+height:57em;
+}
+
+
+
+
+#linkList2 {
+background: url(/web/20110716155257im_/http://stuartgeiger.com/blueprints/linkbar-bottom.png) no-repeat bottom right;
+position:relative;
+margin-left:-50px;
+height:auto;
+width:351px;
+z-index:2;
+min-height:80em;
+
+}
+
+#lselect {
+padding-left:50px;
+width:165px;
+}
+#larchives {
+padding-left:50px;
+width:165px;
+}
+#lresources {
+padding-left:50px;
+width:165px;
+}
+
+#pageHeader span {
+display:none;
+}
+
+#footer {
+
+background: url(/web/20110716155257im_/http://stuartgeiger.com/blueprints/footer.png) no-repeat;
+margin-left:-54px;
+height:344px;
+width:572px;
+padding-left:300px;
+padding-top:170px;
+
+}
+
+#extraDiv1 {
+position:absolute;
+top:0;
+left:0;
+background: url(/web/20110716155257im_/http://stuartgeiger.com/blueprints/header.png) no-repeat top left; 
+height:340px;
+width:1000px;
+
+}

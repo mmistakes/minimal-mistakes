@@ -1,0 +1,17 @@
+---
+title: "Operationalizing conflict and cooperation between automated software agents in Wikipedia: A replication and expansion of 'Even Good Bots Fight'"
+category: articles
+permalink: /articles/2017-09-12-conflict-bots-cscw/ 
+excerpt: "A mixed-method trace ethnographic analysis of issues around the governance of automated software agents in Wikipedia, focusing on how to interpret cases where bots reverted each other's edits."
+date: 2017-09-12
+venue: 'Proceedings of the ACM on Human-Compter Interaction'
+citation: 'R. Stuart Geiger and Aaron Halfaker. 2017. “Operationalizing conflict and cooperation between automated software agents in Wikipedia: A replication and expansion of Even Good Bots Fight." Proceedings of the ACM on Human-Computer Interaction (Nov 2017 issue, CSCW 2018 Online First) 1, 2, Article 49. DOI:https://doi.org/10.1145/3134684. https://commons.wikimedia.org/wiki/File:conflict-bots-wp-cscw.pdf.'
+---
+
+This is an article by me and [Aaron Halfaker](https://meta.wikimedia.org/wiki/User:Halfak_(WMF)), which will be officially published this November in _Proceedings of the ACM on Human-Computer Interaction_ -- the new home for peer-reviewed papers in the [CSCW](http://cscw.acm.org/2018) conference.
+
+<a href='https://upload.wikimedia.org/wikipedia/commons/f/f4/Operationalizing-conflict-bots-wikipedia-cscw-preprint.pdf'>Download PDF here</a> and [see our GitHub repository here](https://github.com/halfak/are-the-bots-really-fighting)
+
+Abstract: This paper replicates, extends, and refutes conclusions made in a study published in PLoS ONE (“Even Good Bots Fight”), which claimed to identify substantial levels of conflict between automated software agents (or bots) in Wikipedia using purely quantitative methods. By applying an integrative mixed-methods approach drawing on trace ethnography, we place these alleged cases of bot-bot conflict into context and arrive at a better understanding of these interactions. We found that overwhelmingly, the interactions previously characterized as problematic instances of conflict are typically better characterized as routine, productive, even collaborative work. These results challenge past work and show the importance of qualitative/quantitative collaboration. In our paper, we present quantitative metrics and qualitative heuristics for operationalizing bot-bot conflict. We give thick descriptions of kinds of events that present as bot-bot reverts, helping distinguish conflict from non-conflict. We computationally classify these kinds of events through patterns in edit summaries. By interpreting found/trace data in the socio-technical contexts in which people give that data meaning, we gain more from quantitative measurements, drawing deeper understandings about the governance of algorithmic systems in Wikipedia. We have also released our data collection, processing, and analysis pipeline, to facilitate computational reproducibility of our findings and to help other researchers interested in conducting similar mixed-method scholarship in other platforms and contexts.
+
+Recommended citation: R. Stuart Geiger and Aaron Halfaker. 2017. “Operationalizing conflict and cooperation between automated software agents in Wikipedia: A replication and expansion of Even Good Bots Fight." __Proceedings of the ACM on Human-Computer Interaction__ (Nov 2017 issue, CSCW 2018 Online First) 1, 2, Article 49. DOI:https://doi.org/10.1145/3134684. https://commons.wikimedia.org/wiki/File:conflict-bots-wp-cscw.pdf.
