@@ -59,10 +59,10 @@ Travis Air Force Base
 
 Created by Arka506 and V Pilot Designs
 
-Features
--Realistic 3D Models
--Parkings
--Military Plane Models
+Features  
+-Realistic 3D Models  
+-Parkings  
+-Military Plane Models  
 {% include gallery id="gallery1" caption="KSUU - Westchester County Airport, White Plains, NY USA" %}
 
 <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="vpilot" data-description="Apoyame comprandome un Café!" data-message="Gracias por descargar. Ahora puedes invitarme a un Café!" data-color="#79D6B5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
