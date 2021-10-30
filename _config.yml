@@ -16,13 +16,13 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "보안 공부 블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "HanA"
+description              : ""
 url                      : "https://wpsl2848.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "https://www.notion.so/hanakang/23dcbbf2a8d54a65841bf5349953cd76?v=3d2339c25cf845f09cf7f91d1c07fb05"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
