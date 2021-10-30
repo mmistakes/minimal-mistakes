@@ -292,3 +292,4 @@ defaults:
       related: true
       show_date: true
       
+include: ["_pages"]
