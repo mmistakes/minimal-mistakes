@@ -17,10 +17,14 @@ Education
 
 Work experience
 ======
-* Summer 2021: Research Assistant
+* 2021: Graduate Research Assistant
   * Oak Ridge National Laboratory
   * Project: Data Driven Quantum Circuit Learning for the Solution of Stochastic Differential Equations.
   * Supervisor: Vicente Leyton-Ortega
+
+* 2017: Financial Analyst
+  * BMW of North America
+   
 
 
 Skills
