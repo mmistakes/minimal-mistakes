@@ -208,6 +208,9 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+
+
+
 # Defaults
 defaults:
   # _posts
@@ -218,9 +221,10 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: # true
       share: true
       related: true
+      show_date: true
   # _pages
   - scope:
       path: ""
@@ -332,19 +336,6 @@ compress_html:
     envs: development
 
 
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
-      show_date: true
+
       
 include: ["_pages"]
