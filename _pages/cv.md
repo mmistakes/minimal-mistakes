@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Mathematics, University of Buea, 2014
+* M.S. in Applied Mathematics, Columbia University in the City of New York, 2016
+* Ph.D in Mathematics, University of Tennessee Knoxville, (Ongoing)
 
 Work experience
 ======
