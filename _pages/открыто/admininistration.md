@@ -1,4 +1,6 @@
 ---
+title: "Адміністрація школи"
+<iframe src="https://drive.google.com/file/d/1o7YGpVwFuJeYEd9dhN2OSr9Ewt4dGCvm/preview" width="640" height="480" allow="autoplay"></iframe>
 layout: single
 title: "Адміністрація школи"
 permalink: /open/administration/
