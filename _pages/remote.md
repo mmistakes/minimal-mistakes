@@ -11,7 +11,7 @@ sidebar:
 Учні 1-4 класів навчаються у звичайному режимі.
 
 РОЗКЛАД УРОКІВ
-<iframe src="https://drive.google.com/file/d/1-RWFJeV7PeBR6yAVpPxooMV8Q_58jAWK/preview" width="640" height="480"></iframe>
+<iframe src="https://drive.google.com/file/d/1gjqQebanU5J_OPCU1u7gbJrkv03JMtDp/preview" width="640" height="480" allow="autoplay"></iframe>
 
 
 
