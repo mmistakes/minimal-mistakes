@@ -26,7 +26,7 @@ sidebar:
 18. [Мови освітнього процесу](/open/languages/)
 19. [Інформація про вакансії](/open/vacancies/)
 20. Матеріально-технічне забезпечення закладу
-- [Кабінети початкової школи](/open/provision/pre-school/)
+- [Кабінети початкової школи](/open/provision/pre-school/
 - [Кабінет української мови](/open/provision/ukrainian)
 - [Кабінет біології, хімії](/open/provision/biology)
 - [Кабінет математики](/open/provision/math)
@@ -49,5 +49,3 @@ sidebar:
 28. [Кошторис закладу](/open/estimate/)
 29. [Фінансовий звіт](https://docs.google.com/spreadsheets/d/1bUdMxZAl-Lgllxh1Pz0WEKhV_WbI2w420UIuQfAu850/edit#gid=780042493)
 30. [Конкурсний відбір на посаду директора НВК №125](/announcement/)
-
-<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 85.0847%;"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQkvmLKzxKORuFa337EiGbU-cw2NXc-hpLPnHZN1oQwwZsRG2_R_Geo0Z1-nzovnucKuTm9WLpjzwWM/pubhtml?widget=true&amp;headers=false" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>
