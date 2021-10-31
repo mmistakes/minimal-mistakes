@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Hana Kang"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/images.jpg"
   bio              : "I am an **amazing** person."
   location         : "Somewhere"
   email            :
