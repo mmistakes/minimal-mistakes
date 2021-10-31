@@ -47,7 +47,7 @@ sidebar:
 26. [Умови доступності закладу освіти для навчання осіб з особливими потребами](/open/rules-special)
 27. [Перелік додаткових освітніх та інших послуг, їх вартість](/open/prices)
 28. [Кошторис закладу](/open/estimate/)
-29. [Фінансовий звіт](https://docs.google.com/spreadsheets/d/1bUdMxZAl-Lgllxh1Pz0WEKhV_WbI2w420UIuQfAu850/edit#gid=780042493)
+29. [Фінансовий звіт](/open/finance/)
 30. [Конкурсний відбір на посаду директора НВК №125](/announcement/)
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 85.0847%;"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQkvmLKzxKORuFa337EiGbU-cw2NXc-hpLPnHZN1oQwwZsRG2_R_Geo0Z1-nzovnucKuTm9WLpjzwWM/pubhtml?widget=true&amp;headers=false" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>
