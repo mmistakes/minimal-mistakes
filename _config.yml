@@ -25,7 +25,7 @@ url                      : "https://marcosmargu.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/rafiki.png"
-logo                     : "/assets/images/500x300.png"
+logo                     : "/assets/images/rafikiloco.png"
 masthead_title           : "Hacking Blog"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -94,9 +94,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : false " # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : 
     anonymize_ip         : # true, false (default)
 
 
