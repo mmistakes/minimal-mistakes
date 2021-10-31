@@ -19,7 +19,7 @@ The **Lorenz-96** model is a simple dynamical system, of tunable dimension, that
 
 It is given by: 
 
-$$ \dfrac{dv_k}{dt} = v_{k-1}(v_{k+1}- v_{k-2}) - v_k + F, \hspace{2 mm} k \in \{1, \cdots, K\}    \hspace{3 mm} (1) $$
+\\ \dfrac{dv_k}{dt} = v_{k-1}(v_{k+1}- v_{k-2}) - v_k + F, \hspace{2 mm} k \in \{1, \cdots, K\}    \hspace{3 mm} (1) \\
 $$ v_0 = v_K, \space v_{K+1} = v_1, \space v_{-1} = v_{K-1} \hspace{3 mm} (2)$$
 
 Here $v_k$ is the state of the system and $F$ is the forcing constant.
