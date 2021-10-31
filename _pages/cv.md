@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+
 
 Education
 ======
@@ -34,17 +34,7 @@ Skills
 * R
    
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
+
   
 
   
