@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Онлайн реєстрація до ДНЗ"
+title: "Онлайн реєстрація до ЗДО"
 permalink: /dnz/registration/
 sidebar:
   nav: "dnz-menu"
