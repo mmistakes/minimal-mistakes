@@ -605,7 +605,7 @@ ko: &DEFAULT_KO
   breadcrumb_separator       : "/"
   menu_label                 : "토글 메뉴"
   search_label               :
-  toc_label                  : "On This Page"
+  toc_label                  : "Index"
   ext_link_label             : "직접 링크"
   less_than                  : "최대"
   minute_read                : "분 소요"
