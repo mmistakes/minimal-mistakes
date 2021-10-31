@@ -13,7 +13,7 @@ sidebar:
 5. [Статут КЗО "НВК №125" ДМР](/open/statut/)
 6. [Свідоцтво про державну реєстрацію юридичної особи](/open/registration-certificate/)
 7. [Довідка з єдиного державного реєстру підприємств](/open/state-certificate/)
-8. [Свідоцтво про атестацію/Ліцензія](/open/attestation-certificate/)
+8. [Ліцензія/Свідоцтво про атестацію](/open/attestation-certificate/)
 9. [Структура та органи управління закладом](/open/management-structure/)
 10. [Адміністрація закладу](/open/administration/)
 11. [Графік чергування](/open/schedule/)
@@ -42,12 +42,10 @@ sidebar:
 - [Проведення ДПА в основній школі](/open/monitor/main-school/)
 22. [Навчальний план](/open/plan)
 23. [Річний звіт про діяльність закладу](/open/report)
-24. [Правила прийому вихованців в ДНЗ НВК](/open/rules-dnz/)
+24. [Правила прийому вихованців в ЗДО НВК](/open/rules-dnz)
 25. [Правила прийому учнів до закладу освіти](/open/rules-school)
 26. [Умови доступності закладу освіти для навчання осіб з особливими потребами](/open/rules-special)
 27. [Перелік додаткових освітніх та інших послуг, їх вартість](/open/prices)
 28. [Кошторис закладу](/open/estimate/)
 29. [Фінансовий звіт](/open/finance/)
 30. [Конкурсний відбір на посаду директора НВК №125](/announcement/)
-
-<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 85.0847%;"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQkvmLKzxKORuFa337EiGbU-cw2NXc-hpLPnHZN1oQwwZsRG2_R_Geo0Z1-nzovnucKuTm9WLpjzwWM/pubhtml?widget=true&amp;headers=false" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>

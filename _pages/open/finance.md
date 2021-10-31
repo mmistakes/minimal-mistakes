@@ -5,5 +5,3 @@ sidebar:
   nav: "sidebar-menu"
 ---
 <iframe src="https://drive.google.com/file/d/1BaQ63TF2AH1I-rJlVY8Y0jRdHwSPNUpB/preview" width="640" height="480" allow="autoplay"></iframe>
-
-
