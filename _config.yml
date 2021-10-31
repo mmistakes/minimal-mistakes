@@ -96,13 +96,13 @@ social:
 analytics:
   provider               : "google" #false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : 
     anonymize_ip         : # true, false (default)
 
 
 # Site Author
 author:
-  name             : "Hana Kang"
+  name             : "공부하는 중입니다"
   avatar           : "/assets/images/images.jpg"
   bio              : "I am an **amazing** person."
   location         : "Seoul, South Korea"
@@ -262,6 +262,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
