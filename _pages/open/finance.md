@@ -4,5 +4,3 @@ permalink: /open/finance/
 sidebar:
   nav: "sidebar-menu"
 ---
-
-				

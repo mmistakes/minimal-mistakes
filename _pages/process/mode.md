@@ -6,10 +6,6 @@ sidebar:
   nav: "sidebar-menu"
 ---
 
-- **Урок 1**: 08:30
-- **Урок 2**: 09:30
-- **Урок 3**: 10:30
-- **Урок 4**: 11:35
-- **Урок 5**: 12:30
-- **Урок 6**: 13:25
-- **Урок 7**: 14:15
+<iframe src="https://drive.google.com/file/d/1q2gNlhUY9mjaOkLKr9A_DwDHiITyphJj/preview" width="640" height="480" allow="autoplay"></iframe>
+
+<iframe src="https://drive.google.com/file/d/1xl23S9XDUkZwrLKy02H8q0pHJsSmpcrg/preview" width="640" height="480" allow="autoplay"></iframe>

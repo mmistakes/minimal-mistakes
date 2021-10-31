@@ -6,6 +6,5 @@ sidebar:
   nav: "sidebar-menu"
 ---
 
-Проектна потужність - **225 осіб.**
-
-Фактична кількість осіб, які навчаються в школі, на 20.12.2019 р. становить **207 осіб.**
+Проектна потужність - **400 осіб**
+<iframe src="https://drive.google.com/file/d/1UxTzOqiutWO8GGr-AuuxLjvtoslNbKGz/preview" width="640" height="480"></iframe>
