@@ -1,6 +1,6 @@
 /* ==========================================================================
    Variables
-   ========================================================================== */
+   ========================================================================== */ 
 
 /*
    Typography
@@ -16,7 +16,7 @@ $indent-var: 1.3em !default;
 $serif: Georgia, Times, serif !default;
 $sans-serif: "RIDIBatang", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$monospace: Monaco, Consolas, "Lucida Console", monospace !default;
+$monospace: "Nanum Gothic Coding", Monaco, Consolas, "Lucida Console", monospace !default;
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
@@ -123,7 +123,7 @@ $notice-background-mix: 80% !default;
 $code-notice-background-mix: 90% !default;
 
 /* syntax highlighting (base16) */
-$base00: #263238 !default;
+$base00: #44494D !default;
 $base01: #2e3c43 !default;
 $base02: #314549 !default;
 $base03: #546e7a !default;
