@@ -51,35 +51,4 @@
         width:12px;height:12px;background:transparent;}
     } 
   </style>
-
-
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-    {% include_cached skip-links.html %}
-    {% include_cached browser-upgrade.html %}
-    {% include_cached masthead.html %}
-
-    <div class="initial-content">
-      {{ content }}
-    </div>
-
-    {% if site.search == true %}
-      <div class="search-content">
-        {% include_cached search/search_form.html %}
-      </div>
-    {% endif %}
-
-    <div id="footer" class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include_cached footer.html %}
-      </footer>
-    </div>
-
-    <aside class="sidebar__top">
-      <a href="#site-nav"> <i class="fas fa-angle-double-up fa-2x"></i></a>
-    </aside>
-
-    {% include scripts.html %}
-
-  </body>
 </html>
