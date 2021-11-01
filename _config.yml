@@ -134,6 +134,7 @@ exclude:
   - README
   - tmp
   - _capabilities/template.md
+  - _capabilities/fakesal.md
 keep_files:
   - .git
   - .svn
