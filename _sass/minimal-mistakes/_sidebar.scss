@@ -58,7 +58,7 @@
   li {
     font-family: $sans-serif;
     font-size: $type-size-6;
-    line-height: 1.5;
+    line-height: 1.3;
   }
 
   img {
@@ -89,20 +89,21 @@
       position: sticky;
       top: 2em;
       float: right;
-
-      .toc {
-        .toc__menu {
-          overflow-y: auto;
-          max-height: calc(100vh - 7em);
-        }
-      }
     }
   }
+
 
   @include breakpoint($x-large) {
     width: $right-sidebar-width;
     margin-right: -1 * $right-sidebar-width;
   }
+}
+
+.sidebar__top {
+  position: fixed;
+  bottom: 1.5em;
+  right: 2em;
+  z-index: 10;
 }
 
 .splash .sidebar__right {
@@ -134,12 +135,11 @@
   }
 
   img {
-    max-width: 110px;
-    border-radius: 50%;
+    max-width: 240px;
+    border-radius: 10%;
 
     @include breakpoint($large) {
       padding: 5px;
-      border: 1px solid $border-color;
     }
   }
 }
@@ -169,9 +169,10 @@
 
   @include breakpoint($large) {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 }
+
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
@@ -186,12 +187,21 @@
   }
 }
 
+
+  p {
+    font-family: $cute;
+    margin-top: 1.6px;
+    margin-bottom: 3px;
+  }
+}
+
 .author__urls-wrapper {
   position: relative;
   display: table-cell;
   vertical-align: middle;
   font-family: $sans-serif;
   z-index: 20;
+  position: relative;
   cursor: pointer;
 
   li:last-child {
@@ -243,7 +253,8 @@
   position: absolute;
   right: 0;
   margin-top: 15px;
-  padding: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
   list-style-type: none;
   border: 1px solid $border-color;
   border-radius: $border-radius;
@@ -310,9 +321,9 @@
 
   a {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     padding-right: 5px;
-    padding-top: 2px;
+    padding-top: 0px;
     padding-bottom: 2px;
     color: inherit;
     font-size: $type-size-5;
@@ -350,4 +361,3 @@
     margin-right: initial;
   }
 }
-
