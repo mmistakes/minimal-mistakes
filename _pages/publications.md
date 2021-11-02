@@ -7,6 +7,10 @@ author_profile: true
 
 (* indicates equal contribution)
 
+* **Co-attention Network with Label Embedding for Text Classification**<br>
+  **Minqian Liu**, Lizhao Liu, Junyi Cao, Qing Du<br>
+  To appear at ***Neurocomputing***, 2021.
+
 
 * **Progressive Dialogue State Tracking for Multi-domain Dialogue Systems**<br>
   Jiahao Wang, **Minqian Liu**, Xiaojun Quan<br>
