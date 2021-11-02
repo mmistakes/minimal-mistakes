@@ -17,7 +17,7 @@ Education
 
 Work experience
 ======
-* 2021: Graduate Research Assistant
+* 2021: Graduate Research Intern, Quantum Computational Sciences
   * Oak Ridge National Laboratory
   * Project: Data Driven Quantum Circuit Learning for the Solution of Stochastic Differential Equations.
   * Supervisor: Vicente Leyton-Ortega
