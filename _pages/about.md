@@ -28,6 +28,7 @@ toc_icon: "cog"
 
 ## Funding
 * Apr. 2022 - Mar. 2024: JSPS Research Fellowship (DC2)
+* Oct. 2021 - Mar. 2022: JST SPRING GX
 * Apr. 2017 - Mar. 2018: UTokyo Toyota-Dwango AI scholarship
 
 ## Awards
