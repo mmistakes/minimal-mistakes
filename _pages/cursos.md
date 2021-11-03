@@ -9,6 +9,17 @@ intro:
 
     Um profissional capacitado tende a ser mais produtivo e motivado para alcançar metas e objetivos mais desafiadores. __Venha aprender com a gente__."
 cursos:
+  - title: "Impermeabilização na Construção Civil"
+    icon: "far fa-info"
+    image_path: /assets/images/cursos/impermeabilizacao.png
+    url: "/cursos/impermeabilizacao"
+    btn_class: "btn--info"
+    btn_label: "MAIS INFORMAÇÕES"
+    btn_align: "center"
+    url2: "https://www.sympla.com.br/curso-impermeabilizacao-na-construcao-civil__1386215"
+    btn2_class: "btn--success"
+    btn2_label: "INSCREVA-SE"
+    btn2_align: "center"
   - title: "Skechup + Vray: Imagens Externas"
     icon: "far fa-info"
     image_path: /assets/images/cursos/vray-externo.png
@@ -18,7 +29,7 @@ cursos:
     btn_align: "center"
     url2: "https://docs.google.com/forms/d/1_StlSGk7e2V7TYlayCm2OtKi5zn0jWvqWHFfYruvxng"
     btn2_class: "btn--success"
-    btn2_label: "INCREVA-SE"
+    btn2_label: "INSCREVA-SE"
     btn2_align: "center"
   - title: "Skechup + Vray: Imagens Internas"
     icon: "far fa-info"
@@ -29,7 +40,7 @@ cursos:
     btn_align: "center"
     url2: "https://docs.google.com/forms/d/1B-1SXJi7uLR7utjtl14Sz0Umhl848wfKGjTX6U5xya4"
     btn2_class: "btn--success"
-    btn2_label: "INCREVA-SE"
+    btn2_label: "INSCREVA-SE"
     btn2_align: "center"
   - title: "Precificação de Serviços de Arquitetura"
     icon: "far fa-info"

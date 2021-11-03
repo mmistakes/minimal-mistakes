@@ -68,10 +68,10 @@ summary:
 
 {% include feature_row id="speaker" type="right" title="Ministrante" wtitle_aligment="text-center" properties='class="course" data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
-<p style="text-align: center; margin-top: 10px" data-aos="fade-left"><a href="https://docs.google.com/forms/d/1_StlSGk7e2V7TYlayCm2OtKi5zn0jWvqWHFfYruvxng" class="btn btn--success">INCREVA-SE</a></p>
+<p style="text-align: center; margin-top: 10px" data-aos="fade-left"><a href="https://docs.google.com/forms/d/1_StlSGk7e2V7TYlayCm2OtKi5zn0jWvqWHFfYruvxng" class="btn btn--success">INSCREVA-SE</a></p>
 
 {% include feature_row id="detail" type="dual" title="Detalhes do Curso" wtitle_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
 {% include feature_row id="summary" type="dual" title="Conteúdo Programático" wtitle_aligment="text-center" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
 
-<p style="text-align: center" data-aos="fade-up"><a href="https://docs.google.com/forms/d/1_StlSGk7e2V7TYlayCm2OtKi5zn0jWvqWHFfYruvxng" class="btn btn--success"> INCREVA-SE</a></p>
+<p style="text-align: center" data-aos="fade-up"><a href="https://docs.google.com/forms/d/1_StlSGk7e2V7TYlayCm2OtKi5zn0jWvqWHFfYruvxng" class="btn btn--success"> INSCREVA-SE</a></p>
