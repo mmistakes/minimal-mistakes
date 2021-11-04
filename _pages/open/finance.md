@@ -4,6 +4,9 @@ permalink: /open/finance/
 sidebar:
   nav: "sidebar-menu"
 ---
+Наказ про благодійні внески
+<iframe src="https://drive.google.com/file/d/15j9V50fqqhq2Ku8DVJIVSpkgjbs8uujd/preview" width="640" height="480" allow="autoplay"></iframe>
+
 Фінансовий звіт
 <iframe src="https://drive.google.com/file/d/1BaQ63TF2AH1I-rJlVY8Y0jRdHwSPNUpB/preview" width="640" height="480" allow="autoplay"></iframe>
 
