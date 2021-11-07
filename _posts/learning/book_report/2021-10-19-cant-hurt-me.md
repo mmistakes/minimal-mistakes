@@ -11,7 +11,7 @@ header:
 
 # A Unique Perspective
 
-David Goggins is an ultra-marathon runner, a former Navy Seal, a public speaker, a survivor of child abuse, and one hard motherfucker (I don’t usually curse in my posts, but this one demands its). Goggins’s book, “_Can't Hurt Me_”, is a memoir as well as a collection of tools for readers to utilize. Goggins has 10 challenges throughout the book for readers to partake in, these challenges are designed to help readers be the best versions of themselves.
+David Goggins is an ultra-marathon runner, a former Navy Seal, a public speaker, a survivor of child abuse, and one hard motherfucker (I don’t usually curse in my posts, but this one demands its). Goggins’s book, _Can't Hurt Me_, is a memoir as well as a collection of tools for readers to utilize. Goggins has 10 challenges throughout the book for readers to partake in, these challenges are designed to help readers be the best versions of themselves.
 
 I’ve read many psychological, behavioral, and self-help books in my life, and they’ve all had a magnitude of influence on me. But this book, written by a man who read at a 3rd grade level at the age of 18 might be the most influential one of them. It is blunt, honest, and impactful. Unlike many books written by academics, it doesn’t get into theory, it’s strictly practical.
 

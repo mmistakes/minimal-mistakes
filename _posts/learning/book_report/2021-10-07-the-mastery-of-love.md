@@ -11,7 +11,7 @@ header:
 
 # Quick Take
 
-Don Miguel Ruiz is a terrific author who has done a marvelous job with “The Mastery of Love”. Ruiz starts the book off by explaining key concepts, like emotional wounds, emotional poison, personal dreams, self-love, and fear.
+Don Miguel Ruiz is a terrific author who has done a marvelous job with _The Mastery of Love_. Ruiz starts the book off by explaining key concepts, like emotional wounds, emotional poison, personal dreams, self-love, and fear.
 
 Once the reader has a grasp of these concepts he gets to work. He ties the ideas beautifully to explain the magical kitchen, our dreams, accepting others and ourselves, focusing on **our** **half**, control and manipulation, hunting, healing, the **force called life**, and finally, the **God within you**.
 
