@@ -22,7 +22,7 @@ Type Parameters.
 Non-type Parameters
 - Pointers
 - References
-- Integral constant expressions (컴파일 타임에 판단할 수 있는 상수식)
+- 정수 상수식(Integral constant expression)
 
 * * *
 
@@ -121,3 +121,4 @@ struct Vector<4> {
 #### Reference 
 ***  
 - ***<https://stackoverflow.com/questions/499106/what-does-template-unsigned-int-n-mean>***
+- ***<https://modoocode.com/293>***
