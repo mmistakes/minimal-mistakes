@@ -25,7 +25,7 @@ libraryDependencies ++= Seq(
 )
 ```
 
-As we said, Doobie is a library that lives in the Cats ecosystem. However, the dependencies to Cats and Cats Effects are already contained in the Doobie library.
+As we said, Doobie is a library that lives in the Cats ecosystem. However, the dependencies to Cats and Cats Effects are already contained in the Doobie library. Version 1.0.0-RC1 of Doobie uses the Cats Effect version 3.
 
 Since we chose to use Postgres as our database, we need to spin up a Postgres instance. We will use the [Postgres Docker image](https://hub.docker.com/r/postgres/postgres/) to do this. To simplify the process, we define the Postgres image in a docker-compose.yml file:
 
@@ -188,4 +188,12 @@ val xa: Transactor[IO] = Transactor.fromDriverManager[IO](
 
 This approach is the simplest and the most straightforward, but it is not the most efficient. The reason is that the JDBC driver manager will try to load the driver for each connection, which can be quite expensive. Moreover, the driver manager has no upper bound on the number of connections it will create. However, to experimenting and testing Doobie features, this approach works quite well. 
 
+As we said in the introduction, Doobie is just a wrapper over the JDBC specification in Java, and it uses the Cats Effect library under the hood. Since JDBC provides only a blocking interface to interact with SQL databases, we should be careful to also use the blocking facilities available in Cats Effect. Fortunately, Doobie takes care of using the `Blocking` BLABLA for us:
 
+```scala
+// Doobie library's code
+// The ev variable is an instance of Async[IO]
+val acquire = ev.blocking{ Class.forName(driver); conn() }
+```
+
+In production code, as we said, we don't want ot use an instance of `Transactor` coming directly from the JDBC driver manager. Instead, we will use a `Transactor` that will create a connection pool. This is done by using the `Transactor.fromDataSource` method.
