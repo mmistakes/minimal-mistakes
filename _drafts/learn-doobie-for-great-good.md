@@ -141,7 +141,7 @@ VALUES ('5e5a39bb-a497-4432-93e8-7322f16ac0b2', 6);
 COMMIT;
 ```
 
-Finally, in Scala, we will use the following classes to define the domain objects:
+In Scala, we will use the following classes to define the domain objects:
 
 ```scala
 case class Actor(id: Int, name: String)
@@ -159,5 +159,33 @@ class Director(_name: String, _lastName: String) {
 
 If you're asking why we did not use a `case class` for the `Director` type, the reason will be clear in the rest of the article.
 
-So, with the the above solid background, we can now enter the world of Doobie.
+Finally, all the examples contained in the article will use the following imports:
+
+```scala
+import cats.effect._
+import cats.implicits.catsSyntaxApplicativeId
+import doobie._
+import doobie.implicits._
+import doobie.postgres._
+import doobie.postgres.implicits._
+import doobie.util.transactor.Transactor._
+```
+
+So, with the above solid background, we can now enter the world of Doobie.
+
+## 2. Getting a Connection
+
+The first thing we need to work with a database is retrieving a connection. In Doobie, the type handling the connection for us is the `doobie.util.transactor.Transactor`. There are many ways to create an instance of a `Transactor`. The easiest is to use the `Transactor.fromDriverManager` method, which will create a `Transactor` from a JDBC driver manager:
+
+```scala
+val xa: Transactor[IO] = Transactor.fromDriverManager[IO](
+  "org.postgresql.Driver",
+  "jdbc:postgresql:myimdb",
+  "postgres",
+  "example"
+)
+```
+
+This approach is the simplest and the most straightforward, but it is not the most efficient. The reason is that the JDBC driver manager will try to load the driver for each connection, which can be quite expensive. Moreover, the driver manager has no upper bound on the number of connections it will create. However, to experimenting and testing Doobie features, this approach works quite well. 
+
 
