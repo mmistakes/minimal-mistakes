@@ -8,6 +8,8 @@ Print date expected in Feb 2022.
 
 ## Preprints
 
+- Lesage, E., & Verguts, T. (2021). Contextual overtraining accelerates habit formation in new stimuli. PsyArXiv.[https://psyarxiv.com/7m6bh/](https://psyarxiv.com/7m6bh/)
+
 - Verbeke P., & Verguts T. (2021). Using top-down gating to optimally balance shared versus separated task representations. BioRxiv. [https://doi.org/10.1101/2021.06.02.446735](https://doi.org/10.1101/2021.06.02.446735)
 
 - Calderon, C.B., Verguts, T., & Frank, M. J. (2021). Thunderstruck: The ACDC model of flexible sequences and rhythms in recurrent neural circuits. BioRxiv. [https://www.biorxiv.org/content/10.1101/2021.04.07.438842v1](https://www.biorxiv.org/content/10.1101/2021.04.07.438842v1)
