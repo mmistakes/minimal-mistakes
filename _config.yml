@@ -258,7 +258,7 @@ tag_archive:
 jekyll-archives:
   enabled:
    - categories
-    - tags
+   - tags
   layouts:
     category: archive-taxonomy
     tag: archive-taxonomy
