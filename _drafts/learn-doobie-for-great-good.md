@@ -182,13 +182,13 @@ val xa: Transactor[IO] = Transactor.fromDriverManager[IO](
   "org.postgresql.Driver",
   "jdbc:postgresql:myimdb",
   "postgres",
-  "example"
+  "example"   // The password
 )
 ```
 
 This approach is the simplest and the most straightforward, but it is not the most efficient. The reason is that the JDBC driver manager will try to load the driver for each connection, which can be quite expensive. Moreover, the driver manager has no upper bound on the number of connections it will create. However, to experimenting and testing Doobie features, this approach works quite well. 
 
-As we said in the introduction, Doobie is just a wrapper over the JDBC specification in Java, and it uses the Cats Effect library under the hood. Since JDBC provides only a blocking interface to interact with SQL databases, we should be careful to also use the blocking facilities available in Cats Effect. Fortunately, Doobie takes care of using the `Blocking` BLABLA for us:
+As we said in the introduction, Doobie is just a wrapper over the JDBC specification in Java, and it uses the Cats Effect library under the hood. Since JDBC provides only a blocking interface to interact with SQL databases, we should be careful to also use the blocking facilities available in Cats Effect. Fortunately, Doobie takes care of using the `Blocking` context for us:
 
 ```scala
 // Doobie library's code
@@ -196,4 +196,23 @@ As we said in the introduction, Doobie is just a wrapper over the JDBC specifica
 val acquire = ev.blocking{ Class.forName(driver); conn() }
 ```
 
-In production code, as we said, we don't want ot use an instance of `Transactor` coming directly from the JDBC driver manager. Instead, we will use a `Transactor` that will create a connection pool. This is done by using the `Transactor.fromDataSource` method.
+In production code, as we said, we don't want ot use an instance of `Transactor` coming directly from the JDBC driver manager. Instead, we will use a `Transactor` that is backed by a connection pool. Doobie integrates well with the [HikariCP](https://github.com/brettwooldridge/HikariCP) connection pool library, through the `doobie-hikari` module. Since a connection pool is a resource with its own lifecycle, we will use the Cats Effect `Resource` type to manage it:
+
+```scala
+val postgres: Resource[IO, HikariTransactor[IO]] = for {
+  ce <- ExecutionContexts.fixedThreadPool[IO](32)
+  xa <- HikariTransactor.newHikariTransactor[IO](
+    "org.postgresql.Driver",
+    "jdbc:postgresql:myimdb",
+    "postgres",
+    "example",    // The password
+    ce
+  )
+} yield xa
+```
+
+In the vast majority of the examples in the article, we will use directly the `Transactor` coming from the JDBC driver manager. Instead, in the last part, we will focus on using the `Resource` type to manage the connection pool.
+
+## 3. Querying the Database
+
+
