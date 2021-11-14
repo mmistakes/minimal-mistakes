@@ -215,4 +215,16 @@ In the vast majority of the examples in the article, we will use directly the `T
 
 ## 3. Querying the Database
 
+Now that we learnt how to connect to a database, we can start querying it. The easiest query we can do, is to retrieve all actors names in the database, since the query doesn't request any input parameter, and extract only a column:
 
+```scala
+def findAllActorsNamesProgram: IO[List[String]] = {
+  val findAllActorsQuery: doobie.Query0[String] = sql"select name from actors".query[String]
+  val findAllActors: doobie.ConnectionIO[List[String]] = findAllActorsQuery.to[List]
+  findAllActors.transact(xa)
+}
+```
+
+As it's the first query we make, the code is really verbose. However, we can analyze every aspect of a query, in this way.
+
+First, the `sql` interpolator allow us to create SQL statement fragments (more to come). Next, the method `query` lets us creating a type that maps the single row result of the query in a Scala type. To accumulate results into a list, we use the `to[List]` method. TODO
