@@ -1,5 +1,5 @@
 ---
-layout: splash
+layout: single
 title: "Información del autor"
 permalink: /about/
 date: 2021-11-12
