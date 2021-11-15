@@ -239,9 +239,9 @@ TODO Image describing the relation between the Doobie types and JDBC's ones
 
 Although the description and deep comprehension of the free monad is behind the scope of this article, we can say that a program with type `ConnectionIO[A]` represents a computation that, given a `Connection`, will generate a value of type `IO[A]`.
 
-Every free monad is only a description of a program. It's not executable at all, since it requires an interpreter. The interpreter, in this case, is the `Transactor` we created. Its role is to interpret the description of the program, into a `Kleisli[IO, Connection, A]`. As we should remember from the course on [Cats](https://rockthejvm.com/p/cats), the above `Kleisli` is another representation of the function `Connection => IO[A]`.
+Every free monad is only a description of a program. It's not executable at all, since it requires an interpreter. The interpreter, in this case, is the `Transactor` we created. Its role is to compile the program into a `Kleisli[IO, Connection, A]`. As we should remember from the course on [Cats](https://rockthejvm.com/p/cats), the above `Kleisli` is another representation of the function `Connection => IO[A]`.
 
-So, given an instance of `IO[Connection]` to the `Kleisli` through the `transact` method, we can obtain the desired `IO[A]`, and then execute it using the Cats Effect library:
+So, given an instance of `IO[Connection]` to the `Kleisli` through the `transact` method, we can execute the compiled program into the desired `IO[A]`, and then execute it using the Cats Effect library:
 
 ```scala
 object DoobieApp extends IOApp {
