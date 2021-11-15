@@ -8,5 +8,7 @@ main:
     url: /categories/
   - title: "Etiquetas"
     url: /tags/
+  - title: "Portafolios"
+    url: /portfolio/  
   - title: "Sobre Mi"
     url: /about/
