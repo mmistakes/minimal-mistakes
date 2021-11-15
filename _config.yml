@@ -103,9 +103,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Höfundar"
+  name             : "Höfundar **amazing** person."
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "I am\n\nan **amazing** person."
   location         : "Somewhere"
   email            :
   links:
