@@ -2,6 +2,8 @@
 main:
   - title: "Home"
     url: /
+  - title: "Buscador"
+    url: /buscador/
   - title: "Articulos"
     url: /year-archive/
   - title: "Categorias"

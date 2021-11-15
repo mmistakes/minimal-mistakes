@@ -1,6 +1,6 @@
 ---
-title: "Sobre mi"
 layout: slapsh
+title: "Sobre mi"
 permalink: /about/
 date: 2021-11-12
 ---
