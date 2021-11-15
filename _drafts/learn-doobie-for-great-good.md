@@ -213,6 +213,10 @@ val postgres: Resource[IO, HikariTransactor[IO]] = for {
 
 In the vast majority of the examples in the article, we will use directly the `Transactor` coming from the JDBC driver manager. Instead, in the last part, we will focus on using the `Resource` type to manage the connection pool.
 
+### 2.1. The YOLO Mode
+
+TODO
+
 ## 3. Querying the Database
 
 Now that we learnt how to connect to a database, we can start querying it. The easiest query we can do, is to retrieve all actors names in the database, since the query doesn't request any input parameter, and extract only a column:
@@ -227,4 +231,40 @@ def findAllActorsNamesProgram: IO[List[String]] = {
 
 As it's the first query we make, the code is really verbose. However, we can analyze every aspect of a query, in this way.
 
-First, the `sql` interpolator allow us to create SQL statement fragments (more to come). Next, the method `query` lets us creating a type that maps the single row result of the query in a Scala type. To accumulate results into a list, we use the `to[List]` method. TODO
+First, the `sql` interpolator allow us to create SQL statement fragments (more to come). Next, the method `query` lets us creating a type that maps the single row result of the query in a Scala type. The type is called `Query0[A]`. To accumulate results into a list, we use the `to[List]` method, which creates a `ConnectionIO[List[String]]`.
+
+The `ConnectionIO[A]` type is very interesting, since it introduces a common pattern used in the Doobie library. In fact, Doobie defines all its most important type as instances of the [`Free`  monad](https://typelevel.org/cats/datatypes/freemonad.html):
+
+TODO Image describing the relation between the Doobie types and JDBC's ones
+
+Although the description and deep comprehension of the free monad is behind the scope of this article, we can say that a program with type `ConnectionIO[A]` represents a computation that, given a `Connection`, will generate a value of type `IO[A]`.
+
+Every free monad is only a description of a program. It's not executable at all, since it requires an interpreter. The interpreter, in this case, is the `Transactor` we created. Its role is to interpret the description of the program, into a `Kleisli[IO, Connection, A]`. As we should remember from the course on [Cats](https://rockthejvm.com/p/cats), the above `Kleisli` is another representation of the function `Connection => IO[A]`.
+
+So, given an instance of `IO[Connection]` to the `Kleisli` through the `transact` method, we can obtain the desired `IO[A]`, and then execute it using the Cats Effect library:
+
+```scala
+object DoobieApp extends IOApp {
+
+  val xa: Transactor[IO] = Transactor.fromDriverManager[IO](
+    "org.postgresql.Driver",
+    "jdbc:postgresql:myimdb",
+    "postgres",
+    "example"
+  )
+  
+  override def run(args: List[String]): IO[ExitCode] = {
+    findAllActorsNamesProgram
+      .map(println)
+      .as(ExitCode.Success)
+  }
+}
+```
+
+Given the information we initially stored in the database, the above code produces the following output:
+
+```
+List(Henry Cavill, Gal Godot, Ezra Miller, Ben Affleck, Ray Fisher, Jason Momoa)
+```
+
+TODO
