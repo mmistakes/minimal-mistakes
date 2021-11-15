@@ -103,9 +103,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Höfundar **amazing** person."
+  name             : "Ágúst\nBryndís\n\nÍsak\nHöfundar **amazing** person."
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am\n\nan **amazing** person."
+  bio              : "I am\n\nan **amazing** person.\nHér eru dregnar saman upplýsingar um umfang reksturs samvinnufélaga á Íslandi og þróun síðustu áratuga."
   location         : "Somewhere"
   email            :
   links:
