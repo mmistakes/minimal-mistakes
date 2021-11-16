@@ -267,4 +267,21 @@ Given the information we initially stored in the database, the above code produc
 List(Henry Cavill, Gal Godot, Ezra Miller, Ben Affleck, Ray Fisher, Jason Momoa)
 ```
 
-TODO
+Although extracting actors in a `List[String]` seems legit at first sight, it's not safe in a real world application. In fact, the number of extracted rows could be very large to not fit inside the memory allocated to the application. For this reason, we should use a `Stream` instead of a `List`. Doobie integrates smoothly with the functional streaming library [fs2](https://fs2.io). Again, describing how fs2 works is behind the scope of this article, and we just focus on how to use it with doobie.
+
+For example, let's change the above example to use the streaming API:
+
+```scala
+val actorsNamesStream: fs2.Stream[doobie.ConnectionIO, String] = 
+  sql"select name from actors".query[String].stream
+```
+
+The `stream` method on the type `Query0` returns a `Stream[ConnectionIO, A]` which means a stream containing instances of type `A`, wrapped in an effect of type `ConnectionIO` (for a brief explanation of the Effect pattern, please refer to [The Effect Pattern](https://blog.rockthejvm.com/zio-fibers/#2-the-effect-pattern)).
+
+Once we obtained an instance of a `Stream`, we can decide to return it to the caller as it is, or to compile it into a finite type, such as `List[String]` or `Vector[String]`:
+
+```scala
+val actorsNamesList: IO[List[String]] = actorsNamesStream.compile.toList.transact(xa)
+```
+
+
