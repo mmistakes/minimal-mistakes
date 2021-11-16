@@ -284,4 +284,40 @@ Once we obtained an instance of a `Stream`, we can decide to return it to the ca
 val actorsNamesList: IO[List[String]] = actorsNamesStream.compile.toList.transact(xa)
 ```
 
+Clearly, there is more than single column queries. In fact, Doobie can handle multi-column query as well. For example, let's query the ids and names of all the actors and return them as a tuple:
 
+```scala
+def findAllActorsIdsAndNamesProgram: IO[List[(Int, String)]] = {
+  val query: doobie.Query0[(Int, String)] = sql"select id, name from actors".query[(Int, String)]
+  val findAllActors: doobie.ConnectionIO[List[(Int, String)]] = query.to[List]
+  findAllActors.transact(xa)
+}
+```
+
+We can map the result of a query inside an instance of a `HList` or inside a `Option`. However, as we can image, the most useful mapping of returned columns is directly into a class. Let's say we want to store the information of extracted actors directly into instances of the class `Actor` class:
+
+```scala
+def findAllActorsProgram: IO[List[Actor]] = {
+  val findAllActors: fs2.Stream[doobie.ConnectionIO, Actor] =
+    sql"select id, name from actors".query[Actor].stream
+  findAllActors.compile.toList.transact(xa)
+}
+```
+
+Doobie can map the tuple of extracted columns directly into a `case class`. For now, let's say that the mapping between the extracted tuple and the properties of the case class must be one to one. In the last part of the article, we will introduce the type classes that allow the conversion of a tuple into a case class.
+
+The last aspect we left about selecting information from a table is to parameterize the query with parameters. Fortunately, the `sql` interpolator works smoothly with parameters, using the same mechanism used by Scala native `String` interpolation:
+
+```scala
+def findActorsByNameInitialLetterProgram(initialLetter: String): IO[List[Actor]] = {
+  val findActors: fs2.Stream[doobie.ConnectionIO, Actor] =
+    sql"select id, name from actors where LEFT(name, 1) = $initialLetter".query[Actor].stream
+  findActors.compile.toList.transact(xa)
+}
+```
+
+The above program extract from the table `actors` all the actors whose name starts with the given initial letter. As we can see, passing a parameter to a query is as simple as passing it to an interpolated string.
+
+// TODO Low level API
+
+// TODO Case classes
