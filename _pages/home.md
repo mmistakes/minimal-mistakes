@@ -65,9 +65,32 @@ feature_rows:
     alt: "Administração"
     title: "Administração"
     excerpt: "Esta perdendo muito tempo com atividades burocráticas e perdendo oportunidades? Oferecemos o serviço de Assessor Executivo Remoto com soluções especializadas, a fim de facilitar a sua rotina, atender suas demandas profissionais e proporcionar qualidade de vida e ganhos financeiros."
-contato:
-  - title: "CONTATO"
-    excerpt: "Av. Comendador Gustavo Paiva, Sala 28, Mezanino, Norcon Empresarial, 2789, Mangabeiras, Maceió, Alagoas, 57037-532<br>contato@nortanprojetos.com<br>(82) 99916-4578"
+advantages_title: 
+  - title: "POR QUE CONTRATAR UM ESPECIALISTA NORTAN?"
+advantages:
+  - title: "TUDO EM UM SÓ LUGAR"
+    excerpt: "A procura acabou! Temos especialistas de diversas áreas, trabalhando em equipe para tirar seu sonho do papel."
+  - title: "GANHOS FINANCEIROS"
+    excerpt: "Entregamos eficiência e economia na construção dos seus sonhos."
+  - title: "SEGURANÇA"
+    excerpt: "Investir no seu sonho custa dinheiro e coragem, planeje ele com uma equipe de alto nível."
+  - title: "GESTÃO DO CONTRATO"
+    excerpt: "Monte seu pacote de serviços e projetos e você terá um Gestor do Contrato e uma equipe multidisciplinar para você, não se preocupe com mais nada."
+  - title: "EVITE BUROCRACIA"
+    excerpt: "Alvará, licença, viabilidade técnica, é muito papel para uma obra. Deixe isso para seu Especialista."
+  - title: "COMUNICAÇÃO"
+    excerpt: "Seu especialista está a uma mensagem de distância, acompanhe seu contrato."
+  - title: "PERSONALIZADO"
+    excerpt: "Sabemos que todo sonho tem sua particularidade, seu Especialista irá te guiar pelo melhor caminho para chegar aonde você quer."
+  - title: "QUALIDADE DE VIDA E TEMPO"
+    excerpt: "Para você usar como quiser. Deixe seu Especialista se preocupar com os detalhes."
+request_quote:
+  - title: ''
+    url: "mailto:contato@nortanprojetos.com"
+    icon: "fas fa-envelope"  
+    btn_class: "btn--success"
+    btn_label: "SOLICITE UM ORÇAMENTO"
+    btn_align: "center"
 ---
 
 {% include slider.html selector="slider1" %}
@@ -78,6 +101,8 @@ contato:
 
 {% include feature_row_slider id="feature_rows" selector="slider2" properties='data-aos="fade-left"' title_size="h4" %}
 
-{% include feature_row id="contato" type="center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
+{% include feature_row id="advantages_title" type="center" selector="advantages_title_row" properties='style="border-bottom: 0px solid;"' title_size="h2" %}
 
-{% include contact_map.html %}
+{% include feature_row id="advantages" type="dual" selector="advantages_row" properties='data-aos="fade-left"' title_size="h4" %}
+
+{% include feature_row id="request_quote" type="center" selector="request_quote_row" properties='style="border-bottom: 0px solid;"' %}

@@ -37,7 +37,7 @@ feature_rows:
   - image_path: /assets/images/pessoas/jessica.png
     alt: "Jéssica Gonçalves"
     title: "Jéssica Gonçalves"
-    excerpt: "**Co-Diretora de Operações**<br />**Diretora de Arquitetura**"
+    excerpt: "**Diretora de Arquitetura**"
     links:
       - label: "82 999529699"
         icon: "fab fa-whatsapp"
@@ -65,7 +65,7 @@ feature_rows:
   - image_path: /assets/images/pessoas/icaro.png
     alt: "Augusto Ícaro"
     title: "Augusto Ícaro"
-    excerpt: "**Diretor de TI**<br />**Desenvolvedor da Plataforma Nortan**"
+    excerpt: "**Diretor Geral**<br />**Gestor de Projetos e Coordenador de Recursos Hídricos**"
     links:
       - label: "21 980818184"
         icon: "fab fa-whatsapp"
@@ -107,7 +107,7 @@ feature_rows:
   - image_path: /assets/images/pessoas/lucas.png
     alt: "Lucas Alves"
     title: "Lucas Alves"
-    excerpt: "**Consultor Associado**<br />**Engº Civil**"
+    excerpt: "**Associado - Coordenação de Sistemas Elétricos**"
     links:
       - label: "82 999492445"
         icon: "fab fa-whatsapp"
@@ -121,7 +121,7 @@ feature_rows:
   - image_path: /assets/images/pessoas/martha.png
     alt: "Martha Miranda"
     title: "Martha Miranda"
-    excerpt: "**Consultora Associada**<br />**Arquiteta e Design de Interiores**"
+    excerpt: "**Coordenadora de Design de Interiores**"
     links:
       - label: "82 996878451"
         icon: "fab fa-whatsapp"
@@ -149,7 +149,7 @@ feature_rows:
   - image_path: /assets/images/pessoas/nichollas.png
     alt: "Nichollas Gomes"
     title: "Nichollas Gomes"
-    excerpt: "**Consultor Associado**<br />**Engº Ambiental e Sanitarista**"
+    excerpt: "**Associado - Coordenação de Meio Ambiente**"
     links:
       - label: "82 996598809"
         icon: "fab fa-whatsapp"
@@ -163,7 +163,7 @@ feature_rows:
   - image_path: /assets/images/pessoas/paulo.png
     alt: "Paulo Cunha"
     title: "Paulo Cunha"
-    excerpt: "**Diretor de Engenharia Civil**"
+    excerpt: "**Diretor de Impermeabilização**"
     links:
       - label: "82 96450236"
         icon: "fab fa-whatsapp"
@@ -177,7 +177,7 @@ feature_rows:
   - image_path: /assets/images/pessoas/rafaela.png
     alt: "Rafaela Carvalho"
     title: "Rafaela Carvalho"
-    excerpt: "**Consultora Associada**<br />**Arquiteta e Urbanista**"
+    excerpt: "**Coordenadora de Arquitetura**<br />**Líder da Nortan Cursos**"
     links:
       - label: "82 999485183"
         icon: "fab fa-whatsapp"
@@ -191,7 +191,7 @@ feature_rows:
   - image_path: /assets/images/pessoas/ramon.png
     alt: "Ramón Lúcio"
     title: "Ramón Lúcio"
-    excerpt: "**Consultor Associado**<br />**Engº Civil**"
+    excerpt: "**Associado - Coordenação de Sistemas Estruturais**"
     links:
       - label: "82 988288885"
         icon: "fab fa-whatsapp"
@@ -205,7 +205,7 @@ feature_rows:
   - image_path: /assets/images/pessoas/rodrigo.png
     alt: "Rodrigo Paiva"
     title: "Rodrigo Paiva"
-    excerpt: "**Consultor Associado**<br />**Engº Ambiental e Sanitarista**"
+    excerpt: "**Coordenador de Meio Ambiente**"
     links:
       - label: "82 996136934"
         icon: "fab fa-whatsapp"
@@ -219,7 +219,7 @@ feature_rows:
   - image_path: /assets/images/pessoas/saulo.png
     alt: "Saulo Aguiar"
     title: "Saulo Aguiar"
-    excerpt: "**Consultor Associado**<br />**Engº Civil**"
+    excerpt: "**Diretor de Construção Civil**"
     links:
       - label: "82 991222681"
         icon: "fab fa-whatsapp"
@@ -233,7 +233,7 @@ feature_rows:
   - image_path: /assets/images/pessoas/talita.png
     alt: "Talita Marinho"
     title: "Talita Marinho"
-    excerpt: "**Diretora de Recursos Hídricos e Meio Ambiente**<br />**Engª Ambiental e Sanitarista**"
+    excerpt: "**Associada - Coordenação de Meio Ambiente**"
     links:
       - label: "82 981770187"
         icon: "fab fa-whatsapp"
@@ -244,6 +244,36 @@ feature_rows:
       - label: "@nortanprojetos"
         icon: "fab fa-instagram"
         url: "https://www.instagram.com/nortanprojetos/"
+  - image_path: /assets/images/pessoas/elio.png
+    alt: "Élio Medeiros"
+    title: "Élio Medeiros"
+    excerpt: "**Coordenador de Sistemas Estruturais**"
+    links:
+      - label: "82 999647913"
+        icon: "fab fa-whatsapp"
+        url: "https://wa.me/5521980818184"
+      - label: "eliomedeiros@nortanprojetos.com"
+        icon: "fas fa-envelope"
+        url: "mailto:eliomedeiros@nortanprojetos.com"
+      - label: "@nortanprojetos"
+        icon: "fab fa-instagram"
+        url: "https://www.instagram.com/nortanprojetos/"
+  - image_path: /assets/images/pessoas/gean.png
+    alt: "Gean Franco Cabral"
+    title: "Gean Franco Cabral"
+    excerpt: "**Coordenador de Sistemas de Combate à Incêndio**"
+    links:
+      - label: "82 987313803"
+        icon: "fab fa-whatsapp"
+        url: "https://wa.me/5521980818184"
+      - label: "geancabral@nortanprojetos.com"
+        icon: "fas fa-envelope"
+        url: "mailto:geancabral@nortanprojetos.com"
+      - label: "@nortanprojetos"
+        icon: "fab fa-instagram"
+        url: "https://www.instagram.com/nortanprojetos/"
+
+
 ---
 
 {% include feature_row id="team_title" title="Equipe Nortan" type="wide" title_aligment="text-center" properties='style="border-bottom: 0px solid;"' %}

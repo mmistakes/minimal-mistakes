@@ -322,6 +322,32 @@
   justify-content: center;
 }
 
+.team__urls {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  list-style-type: none;
+
+  li {
+    white-space: nowrap;
+    margin-bottom: 0px;
+  }
+
+  a {
+    display: block;
+    color: inherit;
+    font-size: $type-size-8;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 .feature__item--team {
   position: relative;
   margin-bottom: 2em;
@@ -369,32 +395,6 @@
     display: inline-block;
     border-radius: 50%;
     border: 1px solid $border-color;
-  }
-
-  .team__urls {
-    display: block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    list-style-type: none;
-
-    li {
-      white-space: nowrap;
-      margin-bottom: 0px;
-    }
-
-    a {
-      display: block;
-      color: inherit;
-      font-size: $type-size-8;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
   }
 }
 
