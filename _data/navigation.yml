@@ -10,7 +10,9 @@ main:
     url: /categories/
   - title: "Etiquetas"
     url: /tags/
+  - title: "Colecciones de Post"
+    url: /collection-archive/
   - title: "Portafolios"
     url: /portfolio/  
-  - title: "Sobre Mi"
-    url: /about/
+  # - title: "Sobre Mi"
+  #   url: /about/
