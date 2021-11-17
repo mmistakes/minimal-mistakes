@@ -20,6 +20,7 @@
     {% include_cached masthead.html %}
 
     <div class="initial-content">
+      <!-- Parte del Contenido -->
       {{ content }}
     </div>
 
@@ -28,7 +29,8 @@
         {% include_cached search/search_form.html %}
       </div>
     {% endif %}
-
+    
+    <!-- Etiquetas Personalizadas : archivo _footer.scss -->
     <div id="footer" class="page__footer">
       <footer>
         {% include footer/custom.html %}
@@ -36,6 +38,7 @@
       </footer>
     </div>
 
+    <!-- Fragmento (Snippet) de código desde el directorio _include -->
     {% include scripts.html %}
 
   </body>
