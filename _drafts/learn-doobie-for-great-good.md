@@ -318,6 +318,87 @@ def findActorsByNameInitialLetterProgram(initialLetter: String): IO[List[Actor]]
 
 The above program extract from the table `actors` all the actors whose name starts with the given initial letter. As we can see, passing a parameter to a query is as simple as passing it to an interpolated string.
 
+### 3.1. Fragments
+
+Until now, we used the `sql` interpolator to build our queries. Indeed, the `sql` interpolator is just an alias for the `fr` interpolator, which name stand for `Fragment`. A fragment is piece of an SQL statement that we can use combine with any other fragment to build a valid SQL instruction.
+
+Imagine we want to build dynamically the query extracting the list of actors whose names start with a given initial letter. Using fragments, we can do it as follows:
+
+```scala
+def findActorsByInitialLetterUsingFragments(initialLetter: String): IO[List[Actor]] = {
+  val select: Fragment = fr"select id, name"
+  val from: Fragment = fr"from actors"
+  val where: Fragment = fr"where LEFT(name, 1) = $initialLetter"
+  
+  val statement = select ++ from ++ where
+  
+  statement.query[Actor].stream.compile.toList.transact(xa)
+}
+```
+
+In the example above, we build the three parts of the SQL statements, and then we combine them to build the final query using the `++` operator. It's not easy to understand why `Fragment` is also a `Monoid`, since it's possible to use the `++` operator to define the `combine` function of monoids:
+
+```scala
+// Doobie library's code
+object fragment {
+  implicit val FragmentMonoid: Monoid[Fragment] =
+    new Monoid[Fragment] {
+      val empty = Fragment.empty
+
+      def combine(a: Fragment, b: Fragment) = a ++ b
+    }
+}
+```
+
+So, if we want to use the combination operator, `|+|` made available by the monoid instance, we can rewrite the previous example as follows:
+
+```scala
+def findActorsByInitialLetterUsingFragmentsAndMonoids(initialLetter: String): IO[List[Actor]] = {
+  import cats.syntax.monoid._
+  
+  val select: Fragment = fr"select id, name"
+  val from: Fragment = fr"from actors"
+  val where: Fragment = fr"where LEFT(name, 1) = $initialLetter"
+  
+  val statement = select |+| from |+| where
+  
+  statement.query[Actor].stream.compile.toList.transact(xa)
+}
+```
+
+As we say, fragments are very useful to build queries dynamically. One popular use case is to build a query that uses the `IN` operator, since JDBC does not give any built-in support for this kind of operator. Fortunately, Doobie does it, providing a dedicated method in the `Fragments` object:
+
+```scala
+def findActorsByNames(actorNames: NonEmptyList[String]): IO[List[Actor]] = {
+  val sqlStatement: Fragment =
+    fr"select id, name from actors where " ++ Fragments.in(fr"name", actorNames) // name IN (...)
+  
+  sqlStatement.query[Actor].stream.compile.toList.transact(xa)
+}
+```
+
+The `Fragments` object contains a lot of useful functions to implement a many recurring SQL queries patterns:
+
+```scala
+// Doobie library's code
+object fragments {
+  /** Returns `(f1) AND (f2) AND ... (fn)`. */
+  def and(fs: Fragment*): Fragment = ???
+
+  /** Returns `(f1) OR (f2) OR ... (fn)`. */
+  def or(fs: Fragment*): Fragment = ???
+
+  /** Returns `WHERE (f1) AND (f2) AND ... (fn)` or the empty fragment if `fs` is empty. */
+  def whereAnd(fs: Fragment*): Fragment = ???
+
+  /** Returns `WHERE (f1) OR (f2) OR ... (fn)` or the empty fragment if `fs` is empty. */
+  def whereOr(fs: Fragment*): Fragment = ???
+    
+  // And many more... 
+}
+```
+
+
 // TODO Low level API
 
 // TODO Case classes
