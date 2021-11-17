@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "JIN HyunSeung"
-  avatar           : "jinhyunseung.github.io/assets/profile.jpg"
+  avatar           : ""/assets/profile.jpg""
   bio              : "진현승의 포트폴리오 블로그입니다."
   location         : "Busan"
   email            : 
