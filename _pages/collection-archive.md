@@ -1,9 +1,11 @@
 ---
 layout: archive
-title: "Post por Colecciones"
+title: "Posts by Collection"
 permalink: /collection-archive/
 author_profile: true
 ---
+
+<!-- https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_pages/portfolio-archive.md -->
 
 {% capture written_label %}'None'{% endcapture %}
 

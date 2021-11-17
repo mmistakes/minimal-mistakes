@@ -30,7 +30,7 @@ permalink: /404.html
 
 La plantilla `layout: single` esta en el directorio `_layout` el cual se utiliza para crear los diseños y las estructuras básicas de ambito genérico para el sitio web.
 
-Contenido del archivo: 
+Contenido del archivo:
 
 `layout: single`
 
