@@ -1,0 +1,7 @@
+_id: 0ef265d0-d1c8-11e6-b0a9-efc179b06d97
+message: "Got a little problem here,\r\n\r\nIf I'm using Github pages, should I delete those Theme files?\r\n\r\nbecause after I `bundle update`, they didn't generated as expected, or I've misunderstanding.\r\n\r\nOr, I should follow the instruction in Installation:\r\n> To maintain a local Jekyll environment in sync with GitHub Pages replace the gem \"jekyll\" line with gem \"github-pages\", group: :jekyll_plugins and run the following:\r\n\r\nThanks : )"
+name: Specialvict
+email: e568a82db250c5130842f4fa42d5cacf
+url: 'https://oaleeapp.info'
+hidden: ''
+date: '2017-01-03T15:19:46.590Z'
