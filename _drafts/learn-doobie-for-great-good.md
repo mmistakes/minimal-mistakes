@@ -318,6 +318,42 @@ def findActorsByNameInitialLetterProgram(initialLetter: String): IO[List[Actor]]
 
 The above program extract from the table `actors` all the actors whose name starts with the given initial letter. As we can see, passing a parameter to a query is as simple as passing it to an interpolated string.
 
+### 3.1. The `HC` Module
+
+The interpolator `sql` is a very handful syntax for writing SQL queries. However, it is not the only way to write queries. In fact, it's just syntactic sugar to access functions available in the `doobie.hi.connection` module, aliased as `HC`.
+
+So, let's take the first program we developed above, the `findAllActorsNamesProgram`, and desugar it using the `HC` module:
+
+```scala
+def findActorByNameUsingHCApi(actorName: String): IO[Option[Actor]] = {
+  val query = "select id, name from actors where name = ?"
+  HC.stream[Actor](
+    query,
+    HPS.set(actorName),   // Parameters start from index 1 by default
+    512
+  ).compile
+    .toList
+    .map(_.headOption)
+    .transact(xa)
+}
+```
+
+First, the query becomes a plain `String` containing `?` wildcards. The `sql` interpolator is really just syntactic sugar for the `HC.stream[A]` method. Leaving the comprehension of the first parameter to the reader, the second parameter of type `PreparedStatementIO[B]`. As for the `ConnectionIO[A]` type, a `PreparedStatementIO` is and instance of the free monad pattern. In this case, it describes how to inject parameters into the query. So, the  interpreter of the monad, `HC`, builds internally a `Kleisli[IO, PreparedStatement, A]`, which is exactly a function that given a `PreparedStatement` returns an `IO[A]`.
+
+The third parameter is the maximum number of rows to be fetched at a time. In fact, Doobie read rows in chunks.
+
+If the query has more than one parameter, we have many choices on the syntax to use:
+
+```scala
+// Set parameters as (Int, String)
+HPS.set((1, "Henry Cavill"))
+
+// Set parameters individually
+HPS.set(1, 1) *> HPS.set(2, "Henry Cavill")
+
+// ...and many others!
+```
+
 ### 3.1. Fragments
 
 Until now, we used the `sql` interpolator to build our queries. Indeed, the `sql` interpolator is just an alias for the `fr` interpolator, which name stand for `Fragment`. A fragment is piece of an SQL statement that we can use combine with any other fragment to build a valid SQL instruction.
