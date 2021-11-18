@@ -434,6 +434,22 @@ object fragments {
 }
 ```
 
+## 4. Not Only Queries: Changing the Database
+
+The other side of the moon of the database world is mutating the tables and the data they contain. Doobie offers not only support for DDL operations, but also for DML operations. 
+
+It should not surprise that inserting follows the same pattern of selecting rows from tables. For example, let's save a new actor inside the `actors` table:
+
+```scala
+def saveActor(name: String): IO[Int] = {
+  val saveActor: doobie.ConnectionIO[Int] =
+  sql"insert into actors (name) values ($name)"
+    .update.withUniqueGeneratedKeys[Int]("id")
+  saveActor.transact(xa)
+}
+```
+
+As we can see, we continue to use the `sql` interpolator and its capabilities of dealing with parameters...TODO 
 
 // TODO Low level API
 
