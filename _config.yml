@@ -291,8 +291,7 @@ defaults:
       comments:   true
       share: true
       related: true
-
-# Sidebar Menu Links
+      # Sidebar Menu Links
 docs:
   - title: Getting Started
     children:
