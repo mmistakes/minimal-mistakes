@@ -1,14 +1,14 @@
-<!-- ---
+---
 layout: collection
-title: "Ejemplo Portfolio"
-collection: portfolio
+title: Portfolio Eje
 permalink: /portfolio/
-author_profile: true
+collection: portfolio
 entries_layout: grid
+header:
+  teaser: /assets/images/bio-photo.jpg
 excerpt: "Un ejemplo sencillo de Portfolio"
-classes: wide
 ---
 
-Ejemplo básico de Portfolio colección 1 -->
+Portfolio Archive
 
 <!-- [Ejemplo]: <https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_pages/portfolio-archive.md> -->
