@@ -1,3 +1,6 @@
+
+vendor/bundle
+
 # Vim
 *~
 *.sw[p_]
