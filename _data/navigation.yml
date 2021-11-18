@@ -16,8 +16,6 @@ main:
     url: /portfolio/  
   - title: "Pagina Splash"
     url: /splash-page/  
-  - title: "Recipes"
-    url: /recipes/  
   # - title: "Sobre Mi"
   #   url: /about/
 
