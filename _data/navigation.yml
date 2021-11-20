@@ -8,7 +8,7 @@ main:
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  - title: "PublicationsZ"
+  - title: "Publications"
     url: /publications/
   - title: "CV"
     url: /assets/CV.pdf
