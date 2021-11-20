@@ -9,6 +9,8 @@ permalink: /publications/
 
 <!-- ## Publications          -->
 
+***
+
 ### 2021
 
 * Jungo Kasai, Keisuke Sakaguchi, Lavinia Dunagan, **Jacob Morrison**, Ronan Le Bras, Yejin Choi, Noah A. Smith                  
