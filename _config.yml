@@ -15,8 +15,13 @@
 minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
+<<<<<<< HEAD
 locale                   : "ko-KR"
 title                    : "hjim 코드 저장소"
+=======
+locale                   : "en-US"
+title                    : "Site Title"
+>>>>>>> parent of 7eb3bd85 (Update _config.yml)
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "hjim"
