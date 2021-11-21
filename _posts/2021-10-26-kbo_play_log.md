@@ -1,6 +1,7 @@
 ---
 layout: single
 title:  "kbo play log"
+categories : Python
 tags : [python, 크롤링, 야구]
 ---
 
