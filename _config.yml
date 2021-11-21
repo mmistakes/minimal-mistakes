@@ -15,9 +15,9 @@ remote_theme             : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 title                    : "hjim 코드 저장소"
-title_separator          : " "
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "hjim"
 description              : "문과생의 코드"
