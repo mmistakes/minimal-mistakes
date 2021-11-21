@@ -11,7 +11,7 @@ Hi! Glad you popped up here.
 
 ## The short history
 
-As the little things on the side <--- says, I love way too many things, and I try to understand them. This blog is an attempt to make some order, and share.
+As the little thing on the side <--- says, I love way too many things, and I try to understand them. This blog is an attempt to make some order, and share.
 
 ## The longer version
 

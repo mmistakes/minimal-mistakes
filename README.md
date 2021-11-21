@@ -41,13 +41,13 @@ I've edited the `_layouts/archive-single.html` to display the date of creation o
 * MathJax is used to display LateX-style maths (added in `head.html`) in `_includes`. Add maths into double dollars.
 * There's buttons for sharing a post on socials configured in `_includes/social-share.html`: the twitter one will work fine from local as well, the Facebook and LinkedIn ones will only work when deployed
 
-## Categories and tags
+## Categories and tags
 
 I'm using categories and tags for posts - see the Jekyll [docs](https://jekyllrb.com/docs/posts/#categories-and-tags). There's pages for the archive of each of them (using the existing layouts with counts of items), respectively at `/categories/` and `/tags/` and each single one is accessible by clicking on it under each post.
 
 So far, I'm separating posts regarding tech and data things into their own categories (see the navigation).
 
-Tags are many, there's a little `tags.py` script to look at them - note you can also use the `/tags/` page. The idea is not to make duplicates/variations and keep them controlled. "italian" is a kinf of a special tag for all posts written in Italian. Note you can surface any tag if desired in the same way as the category.
+Tags are many, there's a little `tags.py` script to look at them - note you can also use the `/tags/` page. The idea is not to make duplicates/variations and keep them controlled. "italian" is a kind of a special tag for all posts written in Italian. Note you can surface any tag if desired in the same way as the category.
 
 
 ---
