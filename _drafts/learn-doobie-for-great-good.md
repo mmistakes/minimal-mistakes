@@ -532,10 +532,24 @@ def saveActorsAndReturnThem(actors: NonEmptyList[String]): IO[List[Actor]] = {
 }
 ```
 
-Updating information in the database is the same affair to inserting. There are no substantial differences between the two.
+Updating information in the database is the same affair of inserting. There are no substantial differences between the two. Imagine we want to fix the year of production of the movie "Zack Snyder's Justice League". Here it is how we can do it:
+
+```scala
+def updateJLYearOfProduction(): IO[Int] = {
+  val year = 2021
+  val id = "5e5a39bb-a497-4432-93e8-7322f16ac0b2"
+  sql"update movies set year_of_production = $year where id = $id".update.run.transact(xa)
+}
+```
+
+Finally, the deletion follows the same pattern. Just use the keyword `delete` instead of `insert` or `update` inside the `sql` interpolator.
+
+## 5. Doobie's Type Classes
+
+So far, we have seen many examples of usages of the `sql` interpolator, which magically can convert Scala types into JDBC types when reading input parameters, and vice versa when concerning to mapping values extracted from the database.
+
+As we can imagine, there is no magic whatsoever. As skilled Scala developers, we should have known by now that whenever someone talks about magic, there is some kind of Type Classes behind it.
+
+In fact, Doobie basically uses four type classes for the conversion between Scala and JDBC types: `Get[A]`,`Put[A]`, `Read[A]` and `Write[A]`.
 
 TODO
-
-// TODO Low level API
-
-// TODO Case classes
