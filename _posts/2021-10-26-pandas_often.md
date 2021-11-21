@@ -1,6 +1,8 @@
 ---
 layout: single
 title:  "자주 쓰는 pandas"
+categories : Python
+tags : [python, pandas]
 ---
 
 
