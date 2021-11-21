@@ -477,7 +477,34 @@ def saveAndGetActor(name: String): IO[Actor] = {
 }
 ```
 
-Updating information in the database is similar to inserting. TODO
+Here, we are using the fact that the type `ConnectionIO[A]` is a _monad_, which means that we can chain operations on it through a sequence of calls to `flatMap` and `map` methods.
+
+Doobie allows us to insert more than one row at a time. However, to do so, we have to desugar the the `sql` interpolator and the subsequent call to the `run` method. So, let's first remove the syntactic sugar:
+
+```scala
+val name = "John Travolta"
+
+// This statement...
+sql"insert into actors (name) values ($name)".update.run
+
+// ...is equivalent to this one:
+val stmt = "insert into actors (name) values (?)"
+Update[String](stmt).run(name)
+```
+
+Now, we can use the desugared version of the `sql` interpolator to insert multiple rows. As an example, we can insert a list of actors into the database:
+
+```scala
+def saveActors(actors: NonEmptyList[String]): IO[List[Int]] = {
+  val insertStmt: String = "insert into actors (name) values (?)"
+  val actorsIds = Update[String](insertStmt).updateManyWithGeneratedKeys[Int]("id")(actors.toList)
+  actorsIds.compile.toList.transact(xa)
+}
+```
+
+
+
+Updating information in the database is similar to inserting. The only difference is that we potentially update more than one row.
 
 
 // TODO Low level API
