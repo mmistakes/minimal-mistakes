@@ -3,9 +3,12 @@ layout: archive
 ---
 
 {{ content }}
+
 {% if page.tags %}
   {% for tag in page.tags %}
-    <span class="tag">{{ tag }}</span>
+    {% if site.data.tags contains tag %}
+      <span class="tag">{{ tag }}</span>
+    {% endif %}
   {% endfor %}
 {% endif %}
 
