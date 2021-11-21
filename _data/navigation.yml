@@ -2,9 +2,9 @@
 main:
   - title: "Category"
     url: /categories/
-  - title: "Tag"
+  - title: "Tags"
     url: /tags/
-  - title: "About"
-    url: /about/
-  - title: "연도별 포스트"
-    url: /posts/
+  # - title: "About"
+  #   url: /about/
+  # - title: "연도별 포스트"
+  #   url: /posts/
