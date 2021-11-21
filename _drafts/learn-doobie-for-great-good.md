@@ -267,6 +267,26 @@ Given the information we initially stored in the database, the above code produc
 List(Henry Cavill, Gal Godot, Ezra Miller, Ben Affleck, Ray Fisher, Jason Momoa)
 ```
 
+If we know for sure that the query will return exactly one row, we can use the `unique` method to extract the value from the result:
+
+```scala
+def findActorById(id: Int): IO[Actor] = {
+  val findActorById: doobie.ConnectionIO[Actor] =
+    sql"select id, name from actors where id = $id".query[Actor].unique
+  findActorById.transact(xa)
+}
+```
+
+However, if the query doesn't return exactly one row, we will get an exception. So, we can safely use the `option` method, and let the program returning an `Option[Actor]`:
+
+```scala
+def findActorById(id: Int): IO[Option[Actor]] = {
+  val findActorById: doobie.ConnectionIO[Option[Actor]] =
+    sql"select id, name from actors where id = $id".query[Actor].option
+  findActorById.transact(xa)
+}
+```
+
 Although extracting actors in a `List[String]` seems legit at first sight, it's not safe in a real world application. In fact, the number of extracted rows could be very large to not fit inside the memory allocated to the application. For this reason, we should use a `Stream` instead of a `List`. Doobie integrates smoothly with the functional streaming library [fs2](https://fs2.io). Again, describing how fs2 works is behind the scope of this article, and we just focus on how to use it with doobie.
 
 For example, let's change the above example to use the streaming API:
@@ -463,7 +483,7 @@ def saveActorAndGetId(name: String): IO[Int] = {
 }
 ```
 
-Be careful, since the method `withUniqueGeneratedKeys`  will fail if the modified rows are greater than one.
+Be careful: Only some databases natively implements this features, such as H2 or Postgres. Moreover, the method `withUniqueGeneratedKeys`  will fail if the modified rows are greater than one.
 
 Now that we know how to insert and retrieve information from a table, we can create a program that to both insert and retrieve an actor in sequence:
 
@@ -495,17 +515,26 @@ Update[String](stmt).run(name)
 Now, we can use the desugared version of the `sql` interpolator to insert multiple rows. As an example, we can insert a list of actors into the database:
 
 ```scala
-def saveActors(actors: NonEmptyList[String]): IO[List[Int]] = {
+def saveActors(actors: NonEmptyList[String]): IO[Int] = {
   val insertStmt: String = "insert into actors (name) values (?)"
-  val actorsIds = Update[String](insertStmt).updateManyWithGeneratedKeys[Int]("id")(actors.toList)
+  val numberOfRows: doobie.ConnectionIO[Int] = Update[String](insertStmt).updateMany(actors.toList)
+  numberOfRows.transact(xa)
+}
+```
+
+As we can see, Doobie gives us a dedicated method, `updateMany`, to execute a batch insertion. The method takes a list of parameters and returns the number of rows inserted. Some databases, such as Postgres, can return a list of columns values of the rows just inserted. In this case we can use the method `updateManyWithGeneratedKeys`, taking as input a list of column names:
+
+```scala
+def saveActorsAndReturnThem(actors: NonEmptyList[String]): IO[List[Actor]] = {
+  val insertStmt: String = "insert into actors (name) values (?)"
+  val actorsIds = Update[String](insertStmt).updateManyWithGeneratedKeys[Actor]("id", "name")(actors.toList)
   actorsIds.compile.toList.transact(xa)
 }
 ```
 
+Updating information in the database is the same affair to inserting. There are no substantial differences between the two.
 
-
-Updating information in the database is similar to inserting. The only difference is that we potentially update more than one row.
-
+TODO
 
 // TODO Low level API
 
