@@ -1,3 +1,10 @@
+---
+layout: single
+title:  "kbo play log"
+tags : [python, 크롤링, 야구]
+---
+
+
 ```python
 #datelist 라는 엑셀 파일에
 #yyyy-mm-dd  형식으로 날짜 리스트 준비
