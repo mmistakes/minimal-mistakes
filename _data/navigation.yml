@@ -3,14 +3,14 @@ main:
   - title: "About & Projects"
     url: /about/
 
-  - title: "Now"
-    url: /now/
+  # - title: "Sights & Things"
+  #   url: categories/#places/
 
-  - title: "Data stuff"
-    url: "categories/#data/"
+  - title: "Data Tidbits"
+    url: "categories/#data"
 
-  - title: "Tech writing"
-    url: "categories/#tech/"
+  - title: "Tech Tidbits"
+    url: "categories/#tech"
 
-  - title: "TSD"
+  - title: "GitBook on Data Science"
     url: "https://martinapugliese.gitbook.io/tales-of-science-and-data/"
