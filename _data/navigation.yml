@@ -14,8 +14,14 @@ main:
     url: /collection-archive/
   - title: "Portafolios"
     url: /portfolio/  
-  - title: "Pagina Splash"
-    url: /splash-page/  
+  # - title: "Pagina Splash"
+  #   url: /splash-page/  
+  - title: "Políticas Privacidad"
+    url: /politica-de-privacidad/
+  - title: "Políticas de Cookies"
+    url: /politica-de-cookies/
+  - title: "Aviso Legal"
+    url: /aviso-legal/
   # - title: "Sobre Mi"
   #   url: /about/
 
