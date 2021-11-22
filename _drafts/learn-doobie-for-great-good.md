@@ -552,4 +552,17 @@ As we can imagine, there is no magic whatsoever. As skilled Scala developers, we
 
 In fact, Doobie basically uses four type classes for the conversion between Scala and JDBC types: `Get[A]`,`Put[A]`, `Read[A]` and `Write[A]`.
 
-TODO
+The `Get[A]` describes how to create the Scala type `A` from a non-nullable schema type. We can also apply the same type class to obtain an instance of type `Option[A]`. So, Doobie uses an instance of `Get[A]` in mapping the results of a query into Scala. 
+
+Whereas, the `Put[A]` type class describes how translate a Scala type `A` into a non-nullable schema type. As for the `Get[A]` type class, we can automatically use the same type class also to obtain an read an instance of type `Option[A]`.
+
+Doobie defines the instances of the above type classes for the following types (directly from the [Doobie documentation](https://tpolecat.github.io/doobie/docs/12-Custom-Mappings.html)):
+
+* JVM numeric types `Byte`, `Short`, `Int`, `Long`, `Float`, and `Double`;
+* `BigDecimal` (both Java and Scala versions);
+* `Boolean`, `String`, and `Array[Byte]`;
+* `Date`, `Time`, and `Timestamp` from the `java.sql` package;
+* `Date` from the `java.util` package;
+* `Instant`, `LocalDate`, `LocalTime`, `LocalDateTime`, `OffsetTime`, `OffsetDateTime` and `ZonedDateTime` from the `java.time` package; and
+* single-element case classes wrapping one of the above types.
+
