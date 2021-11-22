@@ -27,6 +27,8 @@ gradle에서 spring boot 프로젝트 만드는 방법을 익힌다.
 ![image](https://user-images.githubusercontent.com/86642180/142904457-12272a37-811d-4963-af4f-21ad96c85634.png)
 
 build.gradle 가장 위에 있을 코드다.  
+<br>
+### ext
 <b>ext</b>는 gradle의 전역변수 설정 키워드다.  
 springBootVersion 전역변수 생성 뒤 그 값을 2.6.0.RELEASE로 하겠다는 것이다.  
 💡 스프링부트 그레이들 플러그인의 2.6.0.RELEASE를 의존성으로 쓰겠다는 뜻
@@ -36,12 +38,20 @@ springBootVersion 전역변수 생성 뒤 그 값을 2.6.0.RELEASE로 하겠다�
 나중에 무슨 에러가 생길지 몰라도 하고 본다.  
 
 <br>
-역시나 에러가 생긴다 2022년 2월 1일부터 jcenter()라는 함수가 사용이 안되나보다.  
-<b>jCenter is the public repository hosted at bintray that is free</b> to use for open source library publishers.  
-It is the largest repository in the world for Java and Android OSS libraries, packages and components  
+### plugin 의존성 적용
+![image](https://user-images.githubusercontent.com/86642180/142906000-88cb411c-ca65-4f25-a189-b8549c3f8caf.png)
+마지막은 스프링 부트 의존성 관리 플러그인이므로 빠지면 안된다.
 
 <br>
-참고 jcenter()의 역할
+### jcenter와 mavenCentral
+
+역시나 에러가 생긴다 2022년 2월 1일부터 jcenter()라는 함수가 사용이 안되나보다.  <br>
+버전 낮춰서 2.1.7로 해도 어쨌든 jcenter() 문제가 생긴다.  <br>
+<b>jCenter is the public repository hosted at bintray that is free</b> to use for open source library publishers.  <br>
+It is the largest repository in the world for Java and Android OSS libraries, packages and components  <br>
+
+<br>
+- jcenter()의 역할<br>
 <b>jcenter delivers library through CDN which means improvements in CI and developer builds.</b>  
 jcenter is the largest Java Repository on earth.  
 This means that whatever is available on Maven Central is available on jcenter as well.  
@@ -58,7 +68,7 @@ mavenCentral에도 업로드가 가능해서 였다.
 
 <br>
 하지만 지금은 jcenter()를 검색하면 replacement가 세번째 추천 검색어다.  
-
+어쨌든 나는 jcenter대신에 mavenCentral만 사용하게 될 것이다.
 
 
 
