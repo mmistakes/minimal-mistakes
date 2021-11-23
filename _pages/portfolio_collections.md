@@ -1,14 +1,15 @@
-<!-- ---
-layout: collection
+<!-- 
+---
 title: "Ejemplo Portfolio"
-collection: portfolio
+excerpt: "Un ejemplo sencillo de Portfolio"
 permalink: /portfolio/
+layout: collection
+collection: portfolio
 author_profile: true
 entries_layout: grid
-excerpt: "Un ejemplo sencillo de Portfolio"
 classes: wide
 ---
 
-Ejemplo básico de Portfolio colección 1 -->
+Ejemplo básico de Portfolio Colección 1  
 
 <!-- [Ejemplo]: <https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_pages/portfolio-archive.md> -->

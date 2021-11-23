@@ -1,7 +1,10 @@
 # Welcome to Jekyll!
-#
+# Archivo de Configuración a nivel general del Blog
+# Configura tanto : post , page , portfolio , layout , gallery , etc 
+
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
+
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
@@ -16,7 +19,7 @@ minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "es-ES"
-title                    : "RVS Blog"
+title                    : "Blog 101"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "RVS"
@@ -100,7 +103,6 @@ analytics:
     tracking_id          : "G-7DKV75VT5P"
     anonymize_ip         : # true, false (default)
 
-
 # Site Author
 author:
   name             : "RVSWeb"
@@ -151,7 +153,6 @@ footer:
       icon: "fab fa-fw fa-instagram"
       # url:
 
-
 # Reading Files
 include:
   - .htaccess
@@ -189,14 +190,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -209,6 +208,56 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# Collections - Borrar
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+  recipes:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults
+defaults:
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+
+  # recipes
+  - scope:
+      path: ""
+      type: recipes
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
 
 # Sass/SCSS
 sass:
@@ -217,12 +266,11 @@ sass:
 
 
 # Outputting
-# permalink: /:categories/:title/
-permalink: /:title/
+# permalink: /:title/
+permalink: /:categories/:title/
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
+timezone: Europe/Madrid # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
 plugins:
@@ -240,7 +288,6 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
 
-
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
@@ -251,12 +298,14 @@ whitelist:
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path>/my-awesome-category/index.html ~> path: /
+
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
+
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -277,63 +326,49 @@ compress_html:
   ignore:
     envs: development
 
+# Sidebar Menu Links
+# docs:
+#   - title: Getting Started
+#     children:
+#       - title: "Quick-Start Guide"
+#         url: /docs/quick-start-guide/
+#       - title: "Structure"
+#         url: /docs/structure/
+#       - title: "Installation"
+#         url: /docs/installation/
+#       - title: "Upgrading"
+#         url: /docs/upgrading/
 
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-      # Sidebar Menu Links
-docs:
-  - title: Getting Started
-    children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
+#   - title: Customization
+#     children:
+#       - title: "Configuration"
+#         url: /docs/configuration/
+#       - title: "Navigation"
+#         url: /docs/navigation/
+#       - title: "UI Text"
+#         url: /docs/ui-text/
+#       - title: "Authors"
+#         url: /docs/authors/
+#       - title: "Layouts"
+#         url: /docs/layouts/
 
-  - title: Customization
-    children:
-      - title: "Configuration"
-        url: /docs/configuration/
-      - title: "Navigation"
-        url: /docs/navigation/
-      - title: "UI Text"
-        url: /docs/ui-text/
-      - title: "Authors"
-        url: /docs/authors/
-      - title: "Layouts"
-        url: /docs/layouts/
+#   - title: Content
+#     children:
+#       - title: "Working with Posts"
+#         url: /docs/posts/
+#       - title: "Working with Pages"
+#         url: /docs/pages/
+#       - title: "Working with Collections"
+#         url: /docs/collections/
+#       - title: "Helpers"
+#         url: /docs/helpers/
+#       - title: "Utility Classes"
+#         url: /docs/utility-classes/
 
-  - title: Content
-    children:
-      - title: "Working with Posts"
-        url: /docs/posts/
-      - title: "Working with Pages"
-        url: /docs/pages/
-      - title: "Working with Collections"
-        url: /docs/collections/
-      - title: "Helpers"
-        url: /docs/helpers/
-      - title: "Utility Classes"
-        url: /docs/utility-classes/
-
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
-      - title: "JavaScript"
-        url: /docs/javascript/
-        
+# # Extras
+#   - title: Extras
+#     children:
+#       - title: "Stylesheets"
+#         url: /docs/stylesheets/
+#       - title: "JavaScript"
+#         url: /docs/javascript/

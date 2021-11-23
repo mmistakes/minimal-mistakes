@@ -10,18 +10,21 @@ main:
     url: /categories/
   - title: "Etiquetas"
     url: /tags/
-  - title: "Colecciones de Post"
-    url: /collection-archive/
   - title: "Portafolios"
     url: /portfolio/  
+  - title: "Recipes"
+    url: /recipes/  
+
   # - title: "Pagina Splash"
   #   url: /splash-page/  
-  - title: "Políticas Privacidad"
-    url: /politica-de-privacidad/
-  - title: "Políticas de Cookies"
-    url: /politica-de-cookies/
-  - title: "Aviso Legal"
-    url: /aviso-legal/
+  # - title: "Políticas Privacidad"
+  #   url: /politica-de-privacidad/
+  # - title: "Políticas de Cookies"
+  #   url: /politica-de-cookies/
+  # - title: "Aviso Legal"
+  #   url: /aviso-legal/
+  # - title: "Colecciones de Post"
+  #   url: /collection-archive/
   # - title: "Sobre Mi"
   #   url: /about/
 
