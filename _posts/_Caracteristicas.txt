@@ -1,0 +1,11 @@
+
+- Crear un menu que tenga por referencia cada titulo del articulo.
+
+# Caja con enlaces a los titulos
+toc: true
+toc_label: "My table of Contents"
+toc_icon: "arrows-alt"
+
+# Definir elementos mediante CSS
+page_css: 
+  - /assets/css/mi-css.css

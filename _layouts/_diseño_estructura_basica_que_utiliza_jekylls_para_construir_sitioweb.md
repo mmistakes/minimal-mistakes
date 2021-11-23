@@ -1,16 +1,15 @@
-
 # Layouts
 
 Cuando se crea un archivo **markdown** para confeccionar un documento dentro de los directorios:
 
 * `_pages`
-* `_portfolio`
 * `_post`
+* `_portfolio`
 * `_about`
 
 Se le asigna de cabecera una plantilla mediante el tag → `layout` ; como por ejemplo:
 
- `layout: single`
+  `layout: single`
 
 El cual definirá el estilo de la página que estemos creando que en este caso se llama:
 
@@ -28,7 +27,8 @@ permalink: /404.html
 ---
 ```
 
-La plantilla `layout: single` esta en el directorio `_layout` el cual se utiliza para crear los diseños y las estructuras básicas de ambito genérico para el sitio web.
+La plantilla `layout: single` esta en el directorio `_layout` el cual se utiliza para
+crear los diseños y las estructuras básicas de ambito genérico para el sitio web.
 
 Contenido del archivo:
 
@@ -52,9 +52,11 @@ layout: default
     {% endif %}
 ```
 
-Cada archivo dentro del directorio `_layout` tienen una o más estructuras básicas en codigo `HTML` y `Ruby` que se añaden a las paginas que se van creando mediante el tag `layout`
+Cada archivo dentro del directorio `_layout` tienen una o más estructuras básicas en
+codigo `HTML` y `Ruby` que se añaden a las paginas que se van creando mediante el tag `layout`
 
-Los archivos del directorio `_layout` tiene **snippet** de código **Ruby** del directorio `_include` que se insertan automáticamente cuando se invocan.
+Los archivos del directorio `_layout` tiene **snippet** de código **Ruby** del
+directorio `_include` que se insertan automáticamente cuando se invocan.
 
 Ejemplo de Código
 

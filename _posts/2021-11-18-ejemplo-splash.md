@@ -1,17 +1,14 @@
 ---
-layout: splash
-title: Ejemplo Pagina Presentación
+layout: single
+title: Ejemplos
 date: 2021-11-18
 classes: wide
 header:
   teaser: /assets/images/llama.jpg
 categories:
-  - ejemplo-splash
-  - presentación
+  - git
 tags:
-  - ejemplo
-  - splash
-  - presentación
+  - basico
 ---
 
-### Pagina completa para presentación "splash"
+# Ejemplo C

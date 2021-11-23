@@ -29,9 +29,10 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 repository               : "/RVSWeb/Blog101"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "assets/images/llama.jpg"
+# logo                     : "assets/images/a.jpg"
+logo                     : "assets/images/yin-80x80.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : true # true, false (default)
+breadcrumbs              : true # true, false (default) 
 words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -106,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "RVSWeb"
-  avatar           : "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/llama.jpg"
   bio              : "Desarrollador Junior Full Stack"
   home             : # null (default)
   location         : "Spain"
@@ -230,6 +231,7 @@ defaults:
       layout: single
       author_profile: false
       share: true
+      
   # _posts
   - scope:
       path: ""
@@ -264,9 +266,7 @@ sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-
 # Outputting
-# permalink: /:title/
 permalink: /:categories/:title/
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/
@@ -326,7 +326,7 @@ compress_html:
   ignore:
     envs: development
 
-# Sidebar Menu Links
+# Menu Lateral - Sidebar Menu Links
 # docs:
 #   - title: Getting Started
 #     children:

@@ -1,0 +1,7 @@
+
+- Imagen lateral izquierda : 
+    image: http://placehold.it/350x250
+
+- Ruta para el enlace
+    url: /assets/images/unsplash-gallery-image-1.jpg
+    image_path: assets/images/llama.jpg
