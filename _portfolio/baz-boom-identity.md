@@ -31,7 +31,7 @@ gallery:
     alt: "placeholder image 3"
 ---
 
-Mensaje
+Mensaje 1
 
 <!-- Añadir leyenda a las imagenes -->
 {% include gallery caption="Esta es una galería de muestra para acompañar este estudio de caso." %}
