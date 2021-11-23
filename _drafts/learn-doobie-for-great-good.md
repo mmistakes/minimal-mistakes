@@ -566,3 +566,64 @@ Doobie defines the instances of the above type classes for the following types (
 * `Instant`, `LocalDate`, `LocalTime`, `LocalDateTime`, `OffsetTime`, `OffsetDateTime` and `ZonedDateTime` from the `java.time` package; and
 * single-element case classes wrapping one of the above types.
 
+Deriving the `Get` and `Put` type classes for types that don't fit into one of the above categories is quite easy. To create a concrete example, we introduce in our project the [estatico/scala-newtype](https://github.com/estatico/scala-newtype), which allows to create a new type that is a subtype of the original type, but with a different name. The description of newtypes is far beyond the scope of this article, but you can find a good introduction on [Value Classes in Scala](https://blog.rockthejvm.com/value-classes/).
+
+First let's create a newtype wrapper around an actor name:
+
+```scala
+@newtype case class ActorName(value: String)
+```
+
+Now, we can try to use the newtype to map the result of a query:
+
+```scala
+def findAllActorNames(): IO[List[ActorName]] = {
+  sql"select name from actors".query[ActorName].to[List].transact(xa)
+}
+```
+
+As we can expect, when we try to compile the above code, we get an error, since the compiler cannot find any suitable type classes instances for the `ActorName` type:
+
+```
+[error] Cannot find or construct a Read instance for type:
+[error] 
+[error]   DoobieApp.ActorName
+[error] 
+[error] This can happen for a few reasons, but the most common case is that a data
+[error] member somewhere within this type doesn't have a Get instance in scope. Here are
+[error] some debugging hints:
+[error] 
+[error] - For Option types, ensure that a Read instance is in scope for the non-Option
+[error]   version.
+[error] - For types you expect to map to a single column ensure that a Get instance is
+[error]   in scope.
+[error] - For case classes, HLists, and shapeless records ensure that each element
+[error]   has a Read instance in scope.
+[error] - Lather, rinse, repeat, recursively until you find the problematic bit.
+[error] 
+[error] You can check that an instance exists for Read in the REPL or in your code:
+[error] 
+[error]   scala> Read[Foo]
+[error] 
+[error] and similarly with Get:
+[error] 
+[error]   scala> Get[Foo]
+[error] 
+[error] And find the missing instance and construct it as needed. Refer to Chapter 12
+[error] of the book of doobie for more information.
+[error]     sql"select name from actors".query[ActorName].to[List].transact(xa)
+```
+
+Fortunately, Doobie gives us all the tools to easily create such type classes. The first method we can use is to derive the `Get[ActorName]` and `Put[ActorName]` type classes from the same defined for the `String` type:
+
+```scala
+object ActorName {
+  implicit val actorNameGet: Get[ActorName] = Get[String].map(ActorName(_))
+  implicit val actorNamePut: Put[ActorName] = Put[String].contramap(actorName => actorName.value)
+}
+```
+
+As we may imagine, the `map` method is defined in the `Functor[Get]` type class, whereas the `contramap` method is defined in the `Contravariant[Put]` type class.
+
+
+The above rules and type classes applies only with single column a statements.
