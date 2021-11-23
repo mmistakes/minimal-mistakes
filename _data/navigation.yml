@@ -10,10 +10,10 @@ main:
     url: /categories/
   - title: "Etiquetas"
     url: /tags/
-  - title: "Portafolios"
-    url: /portfolio/  
-  - title: "Recipes"
-    url: /recipes/  
+  # - title: "Portafolios"
+  #   url: /portfolio/  
+  # - title: "Recipes"
+  #   url: /recipes/  
 
   # - title: "Pagina Splash"
   #   url: /splash-page/  
