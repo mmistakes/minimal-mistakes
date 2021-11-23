@@ -5,3 +5,8 @@
 - Ruta para el enlace
     url: /assets/images/unsplash-gallery-image-1.jpg
     image_path: assets/images/llama.jpg
+
+- Imagen de cabecera encima del breadcrumb de 1200px y si la imagen es menor la estira.
+header:
+  # image: /assets/images/masthead.jpg
+  # teaser: assets/images/masthead.jpg
