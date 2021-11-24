@@ -623,7 +623,43 @@ object ActorName {
 }
 ```
 
-As we may imagine, the `map` method is defined in the `Functor[Get]` type class, whereas the `contramap` method is defined in the `Contravariant[Put]` type class.
+As we may imagine, the `map` method is defined in the `Functor[Get]` type class, whereas the `contramap` method is defined in the `Contravariant[Put]` type class:
 
+```scala
+// Doobie library's code
+trait GetInstances extends GetPlatform {
+  implicit val FunctorGet: Functor[Get] =
+    new Functor[Get] {
+      def map[A, B](fa: Get[A])(f: A => B): Get[B] =
+        fa.map(f)
+    }
+}
 
-The above rules and type classes applies only with single column a statements.
+trait PutInstances extends PutPlatform {
+  implicit val ContravariantPut: Contravariant[Put] =
+    new Contravariant[Put] {
+      def contramap[A, B](fa: Put[A])(f: B => A): Put[B] =
+        fa.contramap(f)
+    }
+}
+```
+
+Moreover, in case of newtypes, we can simplify the definition of the `Get` and `Put` type classes, using the `deriving` method available in the `newtype` library:
+
+```scala
+@newtype case class ActorName(value: String)
+object ActorName {
+  implicit val actorNameGet: Get[ActorName] = deriving
+  implicit val actorNamePut: Put[ActorName] = deriving
+}
+```
+
+TODO Add the Meta.
+
+However, Doobie uses the `Get` and `Put` type classes applies only to manage single-column schema types. In general, we need to map more than one column directly into a Scala class or into a tuple. For this reason, Doobie defines two more type classes, `Read[A]` and `Write[A]`, which can handle heterogeneous collections of columns.
+
+The `Read[A]` allows us to map a vector of schema types inside a Scala type. Vice versa, the `Write[A]` allows us to map a Scala type into a vector of schema types.
+
+Logically, the `Read` and `Write` type classes are defined as a composition of `Get` and `Put`on the attributes of the referenced type. In detail, the type can be an `HList` a record (tuple), or a product type (a case class).
+
+In any other case, we must define a custom mapping, as we have previously done.
