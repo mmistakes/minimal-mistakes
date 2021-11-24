@@ -34,12 +34,14 @@ Licencia de distribución del proyecto:
 * **lib**: directorio con las librerías de software utilizadas
 * **test**: directorio con las pruebas de funcionamiento correcto
 
-Gestor de versiones
+Gestor de versiones:
 
 * Directorio **.git**: contiene el grafo de cambios entre versiones del proyecto
 * Fichero **.gitignore**: indica los ficheros a ignorar
 
-Estructura básica del comando Git
+Estructura básica del comando Git:
+
+Ejecutando el comando : ``git --help``
 
 ```git
  [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
