@@ -30,7 +30,7 @@ El Mensaje que sera almacenado en el log del árbol de commit del repositorio de
 
 ## Branch (Rama)
 
-* La rama por defecto se llama **master** y se crea de forma automática por el sistema ``git``
+* La rama por defecto se llama **master** y se crea de forma automática por el sistema ``git`` con el primer commit
 * Los nuevos commits se añaden al final de la rama
 * Los commits de las ramas están ordenados por fecha
 * Se pueden crear , eliminar tantas ramas como se necesiten
