@@ -17,16 +17,119 @@ tags:
   - git-branch
 ---
 
-## Commit
+## Commit (Confirmar​)
 
-    Instantánea/Captura de todos los archivos en el momento de ejecutar el comando:
+* Instantánea/Captura (snapshot) de todos los archivos en el momento de ejecutar el comando
+* Siempre pertenecen a una rama (branch) predeterminada
 
 Ejemplo:
 
-```
-git commit -m "mensaje que sera almacenado en el log del árbol de commit del repositorio del proyecto"
-```
+    git commit -m "mensaje"
 
-## Branch
+El Mensaje que sera almacenado en el log del árbol de commit del repositorio del proyecto
 
-    Instantánea/Captura de todos los archivos en el momento de ejecutar el comando
+## Branch (Rama)
+
+* La rama por defecto se llama **master** y se crea de forma automática por el sistema ``git``
+* Los nuevos commits se añaden al final de la rama
+* Los commits de las ramas están ordenados por fecha
+* Se pueden crear , eliminar tantas ramas como se necesiten
+
+Comando para mostrar las ramas que tiene disponible el proyecto
+
+    git branch 
+
+**Salida:**
+
+    develop
+    * master
+
+Crear una nueva rama
+
+    git branch nueva-rama-proyecto
+
+**Salida:**
+
+    develop
+    * master
+    nueva-rama-proyecto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
