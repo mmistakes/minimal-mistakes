@@ -18,9 +18,9 @@ tags:
 
 ## Arbol de Trabajo (Working Tree)
 
-* Directorio (Espejo) del __\[Repositorio Local\]__ donde se almacena los archivos y directorios del proyecto.
+* Es un directorio **(Espejo)** del **\[Repositorio Local\]** donde se almacena los archivos y directorios con los que vamos a trabajar.
 
-* Son una copía de los archivos que tiene el __\[Repositorio Local\]__ y que se utilizan para trabajar con ellos sin modificar los archivos originales que se descargaron desde el __\||Repositorio Remoto\||__ y se almacenaron en el __\[Repositorio Local\]__ que es el directorio **.git/** el cual entre todos sus directorios contiene **(BD/Objetos/Snapshot)** que utiliza el proyecto.
+* Copía los archivos que tiene el __\[Repositorio Local\]__ y que se utilizan para trabajar con ellos sin modificar los archivos originales que se descargaron desde el __\|Repositorio Remoto\|__ y se almacenaron en el directorio del __\[Repositorio Local\]__ que es el directorio **.git/** el cual entre todos sus directorios contiene **(BD/Objetos/Snapshot)** que utiliza el proyecto para poder utilizarse.
 
 Resumen:
 
@@ -29,3 +29,14 @@ Resumen:
 ## Directorio de trabajo (Working Directory)
 
 * Lugar donde se ejecuta el comando ``git status`` para comprobar el estado de los archivos y subdirectorios del proyecto , esta dentro del **(Working Tree)** ; lugar donde se almacenan los archivos que se están ejecutando o utilizando.
+
+Resumen:
+
+> Son los archivos que editas, los nuevos que añades y los que se eliminan cuando no son necesarios
+
+> Cualquier cambio en el **(Working Tree)** es anotado por el *{Indice}* → **Fase Temporal** del **{Stage}** (Se mostrará como archivo modificado) después de hacer ``git add <archivo>`` y ``git commit -m "mensaje" `` se pasa al estado *{UnModified}* del **{Staged}** 
+
+> Sí por algún casual se modifica el contenido del archivo pasará al estado *{Modified}* del **{Staged}** y necesitará realizar otra vez ``git add <archivo>`` para pasar al estado *{UnModified}*
+
+
+

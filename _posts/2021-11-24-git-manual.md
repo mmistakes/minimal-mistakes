@@ -34,14 +34,12 @@ Configurar usuario y correo para subir cambios al repositorio principal
 
 `git config --list`
 
-```git
-user.name=usuario
-user.email=email@example.com
-color.ui=true
-```
+    user.name=usuario
+    user.email=email@example.com
+    color.ui=true
 
 ## Consultar el valor de forma individual del usuario
 
-`git config user.name` -> usuario establecido
+`git config user.name` -> Usuario establecido
 
-`git config user.email` -> correo establecido
+`git config user.email` -> Correo establecido
