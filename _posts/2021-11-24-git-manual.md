@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Git Manual 
+title: Git Configuración Básica
 date: 2021-11-24
 classes: wide
 # Caja con enlaces a los titulos
@@ -12,8 +12,8 @@ header:
 categories:
   - git
 tags:
-  - basico
-  - manual
+  - git-basico
+  - git-manual
 ---
 
 # Git Manual Básico
@@ -40,6 +40,9 @@ user.email=email@example.com
 color.ui=true
 ```
 
-## Consultar el valor de forma individual
+## Consultar el valor de forma individual del usuario
 
-git `config user.name`
+git `config user.name` -> usuario establecido
+
+git `config user.email` -> correo establecido
+

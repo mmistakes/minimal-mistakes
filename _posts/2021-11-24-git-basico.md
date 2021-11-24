@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Git Basico
+title: Git Conceptos Básicos
 date: 2021-11-24
 classes: wide
 header:
@@ -9,15 +9,15 @@ comments : true
 categories:
   - git
 tags:
-  - basico
-  - estructura
+  - git-basico
+  - git-manual
 page_css: 
   - /assets/css/mi-css.css
 ---
 
-# Git Basico
+## Git Basico
 
-## Estructura de directorio
+### Estructura de directorio
 
 **README.md** fichero resumen (formato GitHub markdown)
 
