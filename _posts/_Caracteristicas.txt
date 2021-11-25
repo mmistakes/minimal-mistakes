@@ -1,5 +1,5 @@
 
-CONSEJOS PARA EDITAR y CREAR CONTENIDO
+[CONSEJOS PARA EDITAR y CREAR CONTENIDO]
 
 - Crear un menu que tenga por referencia cada titulo del articulo.
 
