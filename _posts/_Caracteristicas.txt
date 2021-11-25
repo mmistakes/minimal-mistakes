@@ -1,3 +1,4 @@
+CONSEJOS PARA EDITAR y CREAR CONTENIDO
 
 - Crear un menu que tenga por referencia cada titulo del articulo.
 
@@ -9,7 +10,6 @@ toc_icon: "arrows-alt"
 # Definir elementos mediante CSS
 page_css: 
   - /assets/css/mi-css.css
-
 
 # Divide en 2 el contenido escrito 
 || Divide en 2 el contenido escrito ||
