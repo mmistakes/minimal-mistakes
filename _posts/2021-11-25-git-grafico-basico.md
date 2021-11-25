@@ -7,22 +7,11 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-working directory
-  - git-working tree
-  - git-staged
-  - git-remote
-  - git-local
+  - git-grafico
   - git-comandos
 tags:
   - git-basico
-  - git-grafico
   - git-manual
-  - git-working tree
-  - git-working directory
-  - git-unmodified
-  - git-modified
-  - git-untracked
-  - git-stash
 ---
 
 ## Gráfico Básico del sistema de gestión de GIT

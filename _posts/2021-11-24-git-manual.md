@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Git Configuración Básica
+title: Git - Configuración Básica
 date: 2021-11-24
 classes: wide
 # Caja con enlaces a los titulos

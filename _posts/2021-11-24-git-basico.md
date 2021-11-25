@@ -1,11 +1,10 @@
 ---
 layout: single
-title: Git Conceptos Básicos
+title: Git - Conceptos Básicos
 date: 2021-11-24
 classes: wide
 header:
   teaser: /assets/images/llama.jpg
-comments : true  
 categories:
   - git
 tags:

@@ -1,10 +1,11 @@
 ---
 layout: single
-title: Git Commit & Branch - Conceptos Básicos
+title: Git - Commit & Branch (Conceptos Básicos)
 date: 2021-11-24
 classes: wide
 header:
   teaser: /assets/images/llama.jpg
+  comments : true
 categories:
   - git
   - commit

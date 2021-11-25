@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Git Branch - Concepto Ampliado
+title: Git - Branch (Concepto Ampliado)
 date: 2021-11-25
 classes: wide
 header:
@@ -40,7 +40,7 @@ Crear una nueva rama
     * master
     nueva-rama-proyecto
 
-
+## 
 
 
 
