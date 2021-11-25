@@ -654,12 +654,58 @@ object ActorName {
 }
 ```
 
-TODO Add the Meta.
+Since it's very common to derive both type classes for a type, Doobie also defines the `Meta[A]` type class, which allows us to define with a single statement both the `Get` and the `Put`type classes for a type:
 
-However, Doobie uses the `Get` and `Put` type classes applies only to manage single-column schema types. In general, we need to map more than one column directly into a Scala class or into a tuple. For this reason, Doobie defines two more type classes, `Read[A]` and `Write[A]`, which can handle heterogeneous collections of columns.
+```scala
+implicit val actorNameMeta: Meta[ActorName] = Meta[String].imap(ActorName(_))(_.value)
+```
+
+The first parameter of the `imap` method is the function that defines the `Get` instance, whereas the second parameter is the function that defines the `Put` instance. The `imap` function comes from the `Invariant[Meta]` type class defined in the Cats library.
+
+Again, since the newtype library defines the `deriving` method, we can simplify the definition of the `Meta` type class:
+
+```scala
+implicit val actorNameMeta: Meta[ActorName] = deriving
+```
+
+Doobie uses the `Get` and `Put` type classes applies only to manage single-column schema types. In general, we need to map more than one column directly into a Scala class or into a tuple. For this reason, Doobie defines two more type classes, `Read[A]` and `Write[A]`, which can handle heterogeneous collections of columns.
 
 The `Read[A]` allows us to map a vector of schema types inside a Scala type. Vice versa, the `Write[A]` allows us to map a Scala type into a vector of schema types.
 
-Logically, the `Read` and `Write` type classes are defined as a composition of `Get` and `Put`on the attributes of the referenced type. In detail, the type can be an `HList` a record (tuple), or a product type (a case class).
+Logically, the `Read` and `Write` type classes are defined as a composition of `Get` and `Put`on the attributes of the referenced type. In detail, the type can be an `HList` a record (tuple), or a product type (a case class). In addition, we Doobie adds its own the mapping of the type `Option[A]`.
 
-In any other case, we must define a custom mapping, as we have previously done.
+In any other case, we must define a custom mapping, as we have previously done. Starting from the definition of `Read` and `Write` for a well known a type, we use the `map` and `contramap` function to derive the needed type classes. Speaking about our movies' database, imagine we want to read from the `directors` table. We can define the Scala type `Director` representing a single row of the table:
+
+```scala
+@newtype case class DirectorId(id: Int)
+@newtype case class DirectorName(name: String)
+@newtype case class DirectorLastName(lastName: String)
+case class Director(id: DirectorId, name: DirectorName, lastName: DirectorLastName)
+```
+
+Since we are well grounded Scala developers, we defined a newtype wrapping every native type. Now, we want to get all the directors stored in the table:
+
+```scala
+def findAllDirectors(): IO[List[Director]] = {
+  val findAllDirectors: fs2.Stream[doobie.ConnectionIO, Director] =
+    sql"select id, name, last_name from directors".query[Director].stream
+  findAllDirectors.compile.toList.transact(xa)
+}
+```
+
+However, as we may expect, running the above program generates an error, since the compiler cannot find any type class instance for `Read[Director]`. So, let's define the missing type class instances:
+
+```scala
+object Director {
+  implicit val directorRead: Read[Director] =
+    Read[(Int, String, String)].map { case (id, name, lastname) =>
+      new Director(DirectorId(id), DirectorName(name), DirectorLastName(lastname))
+    }
+  implicit val directorWrite: Write[Director] =
+    Write[(Int, String, String)].contramap { director =>
+      (director.id.id, director.name.name, director.lastName.lastName)
+    }
+}
+```
+
+_Et voilà_, now the program runs without any error.
