@@ -93,17 +93,25 @@ This post will capture the books I have read over the years starting from 2019.
         
     2.  A phenomenal story that seems almost unreal. I listened to the audiobook and I was taken away. The story requires some time to build up, but halfway through you can truly see, feel and emphasize what the sailors are experiencing. It has moments that will make your stomach turn and make you yell at God for his cruelty. It also has moments of satisfaction where you’re laughing and giggling. Overall, this is truly an extraordinary book that I would highly recommend.
         
-7.  [_12 Rules for Life_](/categories/learning/book_report/12_rules_for_life)  by Jordan Peterson - **[In Progress]**
+7.  _The Outsider_ by S. E. Hinton
     
-    1.  01/19/21 - TBD
+    1.  NA - 10/31/2021
         
-8.  _The Outsider_ by S. E. Hinton - **[In Progress]**
+8.  [_12 Rules for Life_](/categories/learning/book_report/12_rules_for_life)  by Jordan Peterson
     
-    1.  Pass
+    1.  01/19/21 - 11/03/21
         
-9.  _An Astronaut's Guide to Life on Earth: What Going to Space Taught Me About Ingenuity, Determination, and Being Prepared for Anything_ by Chris Hadfield - **[In Progress]**
+9.  _An Astronaut's Guide to Life on Earth: What Going to Space Taught Me About Ingenuity, Determination, and Being Prepared for Anything_ by Chris Hadfield
     
-    1.  10/28/21 - TBD
+    1.  10/28/21 - 11/09/21
+        
+10.  _The Daily Laws: 366 Meditations on Power, Seduction, Mastery, Strategy, and Human Nature_ by Robert Greene - **[In Progress]**
+    
+    1.  11/01/21 - TBD
+        
+11.  _Oedipus_ the King by Sophocles - **[In Progress]**
+    
+    1.  11/04/21 - TBD
         
 
 # Books to Read
