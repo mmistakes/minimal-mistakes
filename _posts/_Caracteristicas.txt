@@ -1,6 +1,6 @@
 
+→ ↑ ← ↓
                                 [CABECERAS]
-
 ---
 layout: single
 title: Git Configuración Básica

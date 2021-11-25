@@ -5,12 +5,11 @@ date: 2021-11-24
 classes: wide
 header:
   teaser: /assets/images/llama.jpg
-  comments : true
 categories:
   - git
-  - commit
-  - branch
-  - working directory
+  - git-commit
+  - git-branch
+  - git-working directory
 tags:
   - git-basico
   - git-manual

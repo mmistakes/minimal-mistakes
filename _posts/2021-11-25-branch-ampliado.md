@@ -7,7 +7,7 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - branch
+  - git-branch
 tags:
   - git-basico
   - git-manual
@@ -40,82 +40,46 @@ Crear una nueva rama
     * master
     nueva-rama-proyecto
 
-## 
+## Ramas necesarias para un proyecto
 
+* * *
 
+Para ciertos tipos de proyectos existen unas ramas básicas:
 
+* **master** → Rama Principal , predefinida y estandar **(No tocar)**
 
+  * Sobre esta **rama** nunca se trabajará ya que es donde se van a integrar todos los cambios las demas ramas que vayamos haciendo en el proyecto
 
+  * Es la rama de sólo y para **Producción**
 
+  * Lo recomendable a la hora de trabajar con nuestro proyecto es crear una rama a partir de esta rama llamada __master__ como puede ser la rama _developer_ y fusionarle los cambios que sean correcto a la rama __master__ mediante un __pull request__
 
 
+* **developer** → Rama Secundaria **[Rama Padre : Master]**
 
+  * Creada a partir de la rama **master** en la mayoria de lo casos
 
+  * En la mayoria de los casos tiene las funcionalidades de la aplicación , website , no es aconsejable hacer **commits** desde esta rama, solo para pequeños cambios; ejemplo : Cambiar el texto. 
 
 
+* **release** → Rama Terciaria **[Rama Padre : Master]**
 
+  * Se utiliza para entregar en __Producción__ , su propósito es habilitar pruebas de clientes con ellas , cuando se terminen las pruebas y estén correctas dichas pruebas se fusionarán con la **rama master**  
 
 
+* **hotfix** → Rama Terciaria **[Rama Padre : Master]**
 
+  * Esta rama se crea por solución de un incidente sobre todo en ambientes de producción para resolver incidentes.
 
 
+* **feature** → Rama Terciaria **[Rama Padre : Developer]**
 
+  * Es la rama donde se crean nuevas funcionalidades para la aplicación con la que estemos trabajando , una vez terminada y comprobada que funciona correctamente se fusiona con la rama developer y se elimina mediante el comando
 
+    * ``git branch -d <feature>``
 
 
+> Lo comentado en esta sección no es una obligación pero si entra en las buenas prácticas a la hora de gestionar un proyecto de ambito general con __GIT__ y __GITHUB__ además de que es flexible a las necesidades de cada caso o proyecto.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+> Considerarse como unas pautas básicas libres de seguir pero importante a tener en cuenta ya que cada empresa , equipo de desarrollo o ambito profesional tendrán sus propias reglas , estandar de desarrollo y demás condiciones de uso. 
 
