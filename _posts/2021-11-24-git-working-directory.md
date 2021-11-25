@@ -18,9 +18,11 @@ tags:
 
 ## Arbol de Trabajo (Working Tree)
 
-* Es un directorio **(Espejo)** del **\[Repositorio Local\]** donde se almacena los archivos y directorios con los que vamos a trabajar.
+* Los archivos descargados desde el **\[Repositorio Local\]** y que no han sido modificados o alterados desde su origen se encuentra en el estado **Untracked** esperando a ser modificados o eliminados.  
 
-* Copía los archivos que tiene el __\[Repositorio Local\]__ y que se utilizan para trabajar con ellos sin modificar los archivos originales que se descargaron desde el __\|Repositorio Remoto\|__ y se almacenaron en el directorio del __\[Repositorio Local\]__ que es el directorio **.git/** el cual entre todos sus directorios contiene **(BD/Objetos/Snapshot)** que utiliza el proyecto para poder utilizarse.
+* **(Working Tree)** es como un directorio **(Espejo)** del **\[Repositorio Local\]** donde se almacena los archivos y directorios con los que vamos a trabajar.
+
+* Este directorio copía los archivos que tiene el __\[Repositorio Local\]__ y que se utilizan para trabajar con ellos sin modificar los archivos originales que se descargaron desde el __\|Repositorio Remoto\|__ y se almacenaron en el directorio del __\[Repositorio Local\]__ que es el directorio **.git/** el cual entre todos sus directorios contiene **(BD/Objetos/Snapshot)** que utiliza el proyecto para poder utilizarse.
 
 Resumen:
 
