@@ -1,0 +1,32 @@
+---
+layout: single
+title: Git - Gráfico Básico 
+date: 2021-11-25
+classes: wide
+header:
+  teaser: /assets/images/llama.jpg
+categories:
+  - git
+  - git-working directory
+  - git-working tree
+  - git-staged
+  - git-remote
+  - git-local
+  - git-comandos
+tags:
+  - git-basico
+  - git-grafico
+  - git-manual
+  - git-working tree
+  - git-working directory
+  - git-unmodified
+  - git-modified
+  - git-untracked
+  - git-stash
+---
+
+## Gráfico Básico del sistema de gestión de GIT
+
+Este es un pequeño resumen de los comandos más usados dentro del sistema de control de versiones.
+
+{% include figure image_path="/assets/images/Grafico_Basico.jpg" alt="Sencillo gráfico del sistema de gestión de archivos git" caption="Sencillo gráfico del sistema de gestión de archivos git" %}
