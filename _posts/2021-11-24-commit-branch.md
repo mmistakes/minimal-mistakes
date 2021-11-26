@@ -3,6 +3,9 @@ layout: single
 title: Git - Commit & Branch (Conceptos Básicos)
 date: 2021-11-24
 classes: wide
+toc: true
+toc_label: "Tabla de contenido"
+toc_icon: "clipboard-list"
 header:
   teaser: /assets/images/llama.jpg
 categories:

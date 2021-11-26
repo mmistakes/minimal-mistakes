@@ -3,6 +3,9 @@ layout: single
 title: Git - Working Tree 
 date: 2021-11-25
 classes: wide
+toc: true
+toc_label: "Tabla de contenido"
+toc_icon: "clipboard-list"
 header:
   teaser: /assets/images/llama.jpg
 categories:
@@ -31,3 +34,17 @@ tags:
 Resumen:
 
 > Directorio del proyecto (archivos/carpetas) contiene reflejo del [Repositorio Local]
+
+---
+
+Datos Ampliados:
+
+* **Codebase**
+
+        El codebase de un proyecto esta típicamente almacenado en un repositorio de control de fuentes.
+
+        Un repositorio del código fuente es un lugar en donde son guardadas grandes cantidades de código fuente, tanto públicamente como privada. 
+        
+        Son frecuentemente usados por proyectos de multi-desarrolladores para manejar, de una manera organizada, varias versiones y los conflictos que se presentan con los desarrolladores sometiendo modificaciones conflictivas. 
+        
+        Subversion y Mercurial son herramientas populares usadas para manejar este flujo de trabajo, y son comunes en proyectos de fuente abierta.

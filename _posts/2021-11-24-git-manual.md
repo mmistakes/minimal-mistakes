@@ -3,7 +3,6 @@ layout: single
 title: Git - Configuración Básica
 date: 2021-11-24
 classes: wide
-# Caja con enlaces a los titulos
 toc: true
 toc_label: "Tabla de contenido"
 toc_icon: "clipboard-list"
