@@ -677,10 +677,13 @@ Logically, the `Read` and `Write` type classes are defined as a composition of `
 In any other case, we must define a custom mapping, as we have previously done. Starting from the definition of `Read` and `Write` for a well known a type, we use the `map` and `contramap` function to derive the needed type classes. Speaking about our movies' database, imagine we want to read from the `directors` table. We can define the Scala type `Director` representing a single row of the table:
 
 ```scala
-@newtype case class DirectorId(id: Int)
-@newtype case class DirectorName(name: String)
-@newtype case class DirectorLastName(lastName: String)
-case class Director(id: DirectorId, name: DirectorName, lastName: DirectorLastName)
+object domain {
+  @newtype case class DirectorId(id: Int)
+  @newtype case class DirectorName(name: String)
+  @newtype case class DirectorLastName(lastName: String)
+  
+  case class Director(id: DirectorId, name: DirectorName, lastName: DirectorLastName)
+}
 ```
 
 Since we are well grounded Scala developers, we defined a newtype wrapping every native type. Now, we want to get all the directors stored in the table:
@@ -709,3 +712,68 @@ object Director {
 ```
 
 _Et voilà_, now the program runs without any error.
+
+## 6. Putting Pieces Together: A Tagless Final Approach
+
+Now that we know all the pieces of a program that connects to a database using Doobie, we can create a more complex example. For this purpose, we will use the _tagless final_ approach. Again, the details of tagless final approach are far beyond the scope of this tutorial. However, it's sufficient to know that it is a technique that allows us to manage dependencies between our components, and to abstract away the details of the concrete effect implementation.
+
+In a tagless final approach, we first define an _algebra_ as a `trait`, storing all the functions we want to implement for a type. If we take the `Director` type, we can define the following algebra:
+
+```scala
+trait Directors[F[_]] {
+  def findById(id: Int): F[Option[Director]]
+  def findAll: F[List[Director]]
+  def create(name: String, lastName: String): F[Int]
+}
+```
+
+As we can see, we abstract away from the concrete effect implementation, replacing it with a type constructor `F[_]`. 
+
+Then. we need an _interpreter_ of the algebra, that is a concrete implementation of the functions defined in the algebra:
+
+```scala
+object Directors {
+  def make[F[_]: MonadCancelThrow](postgres: Resource[F, Transactor[F]]): Directors[F] = {
+    new Directors[F] {
+      import DirectorSQL._
+
+      def findById(id: Int): F[Option[Director]] =
+        postgres.use { xa =>
+          sql"SELECT name, last_name FROM directors WHERE id = $id".query[Director].option.transact(xa)
+        }
+
+      def findAll: F[List[Director]] =
+        postgres.use { xa =>
+          sql"SELECT name, last_name FROM directors".query[Director].to[List].transact(xa)
+        }
+
+      def create(name: String, lastName: String): F[Int] =
+        postgres.use { xa =>
+          sql"INSERT INTO directors (name, last_name) VALUES ($name, $lastName)".update.withUniqueGeneratedKeys[Int]("id").transact(xa)
+        }
+    }
+  }
+}
+```
+
+Following the approach suggested by Gabriel Volpe in his excellent book, [Practical FP in Scala: A hands-on approach](https://leanpub.com/pfp-scala), we use a _smart constructor_ to create an instance of the interpreter, that we maintain private to the rest of the world. The implementation of every single function should not surprise us at this point. It's just the same Doobie code we've seen so far.
+
+The only difference is how the interpreter declares the dependency from the `Transactor` type. Since a `Transactor` is a resource which creation and destruction must be properly managed, we wrap it in a `Resource` and pass it to the smart constructor.
+
+As we should remember, since we've defined the `Director` type through the use of many newtypes, we need to create a custom mapping using the `Read` and `Write` type classes. We can put the type classes definition inside a dedicated object:
+
+```scala
+private object DirectorSQL {
+  implicit val directorRead: Read[Director] =
+    Read[(Int, String, String)].map { case (id, name, lastname) =>
+      new Director(DirectorId(id), DirectorName(name), DirectorLastName(lastname))
+    }
+
+  implicit val directorWrite: Write[Director] =
+    Write[(Int, String, String)].contramap { director =>
+      (director.id.id, director.name.name, director.lastName.lastName)
+    }
+}
+```
+
+TODO
