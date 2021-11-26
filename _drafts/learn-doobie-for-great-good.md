@@ -702,7 +702,7 @@ However, as we may expect, running the above program generates an error, since t
 object Director {
   implicit val directorRead: Read[Director] =
     Read[(Int, String, String)].map { case (id, name, lastname) =>
-      new Director(DirectorId(id), DirectorName(name), DirectorLastName(lastname))
+      Director(DirectorId(id), DirectorName(name), DirectorLastName(lastname))
     }
   implicit val directorWrite: Write[Director] =
     Write[(Int, String, String)].contramap { director =>
@@ -766,7 +766,7 @@ As we should remember, since we've defined the `Director` type through the use o
 private object DirectorSQL {
   implicit val directorRead: Read[Director] =
     Read[(Int, String, String)].map { case (id, name, lastname) =>
-      new Director(DirectorId(id), DirectorName(name), DirectorLastName(lastname))
+      Director(DirectorId(id), DirectorName(name), DirectorLastName(lastname))
     }
 
   implicit val directorWrite: Write[Director] =
