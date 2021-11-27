@@ -36,7 +36,7 @@ The cryptocurrency space has been booming over the last few years. While most of
 
 # The Technology
 
-As a developer, engineer, and mathematician, the crypto space appeals to all of my interests. Some of the tools, technologies, and concepts I am learning to provide value to the area are:
+As a developer, engineer, and mathematician, the crypto space appeals to all of my interests. Some of the tools, technologies, and concepts I am learning/have learned to provide value to the area are:
 
 -   **Rust** - A powerful programming language.
     
@@ -54,6 +54,7 @@ As a developer, engineer, and mathematician, the crypto space appeals to all of 
         
 -   [**Etheruem Virtual Machine (EVM)**](https://ethereum.org/en/developers/docs/evm/)  - "It's the environment in which all Ethereum accounts and smart contracts live."
     
+-   Merkle Tree’s
 
 # My Intention
 
