@@ -104,41 +104,41 @@ analytics:
 author:
   name             : "장운서"
   avatar           : /assets/images/profile/poto.jpg # 프로필 이미지
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "방향성을 찾고싶은 프론트엔드 개발자입니다. <br> 블로그 포스트 글에서 잘못된 부분이나 수정했으면 하는 부분, 적극적으로 댓글 남겨주신다면 감사하겠습니다."
+  location         : "Republic of Korea"
+  email            : "qqbck123@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      # url : qqbck123@naver.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://un_seeeeeeeo.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://www.facebook.com/unseo.jang"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://seoJang.github.io"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://www.instagram.com/seeeeeeo.un/"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
+    - label: "Email"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url : qqbck123@naver.com
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://www.facebook.com/unseo.jang"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://seoJang.github.io"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
