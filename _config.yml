@@ -12,22 +12,22 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # 태마 색 설정 "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise" 
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-US"
-title                    : "unseo의 개발블로그" # Meta 태그에 들어가는 영역 , masthead_title등이 없으면 기본값으로 나온다.
-title_separator          : "&#124;"
-subtitle                 : "copyright by.unseoJang" # site tagline that appears below site title in masthead
-name                     : "unseo Jang" # 맨 하단에 찍히는 이름
+locale                   : "en-US"
+title                    : "Site Title"
+title_separator          : "-"
+subtitle                 : # site tagline that appears below site title in masthead
+name                     : "Your Name"
 description              : "An amazing website."
-url                      : "https://seoJang.github.io"  # GitBlog 호스트 주소
-baseurl                  : "/" # subPath https://seoJang.github.io라고 하고 싶을 시 "/blog" 라고 적는다.
-repository               : seoJang/seoJang.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+url                      : "https://unseoJang.github.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "방향성을 찾고싶은 프론트엔드개발자" # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : true # 브래드크럼 사용 여부 true, false (default) , _data/ui-text.yml에 다국어 지원 가능합니다.
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+# breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -102,43 +102,43 @@ analytics:
 
 # Site Author
 author:
-  name             : "장운서"
-  avatar           : /assets/images/profile/poto.jpg # 프로필 이미지
-  bio              : "방향성을 찾고싶은 프론트엔드 개발자입니다. <br> 블로그 포스트 글에서 잘못된 부분이나 수정했으면 하는 부분, 적극적으로 댓글 남겨주신다면 감사하겠습니다."
-  location         : "Republic of Korea"
-  email            : "qqbck123@gmail.com"
+  name             : "Your Name"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I am an **amazing** person."
+  location         : "Somewhere"
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url : qqbck123@naver.com
+      # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://un_seeeeeeeo.com"
+      # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/unseo.jang"
+      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://seoJang.github.io"
+      # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/seeeeeeo.un/"
+      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
   links:
-    - label: "Email"
+    - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url : qqbck123@naver.com
+      # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/unseo.jang"
+      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://seoJang.github.io"
+      # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
