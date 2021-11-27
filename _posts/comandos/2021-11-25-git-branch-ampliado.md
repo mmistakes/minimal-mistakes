@@ -11,10 +11,10 @@ header:
 categories:
   - git
   - git-branch
+  - git-comandos
 tags:
   - git-basico
   - git-manual
-  - git-branch
 ---
 
 ## Branch (Rama)

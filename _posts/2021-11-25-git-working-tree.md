@@ -10,11 +10,10 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - working tree
+  - git-working tree
 tags:
   - git-basico
   - git-manual
-  - working tree
 ---
 
 ## Arbol de Trabajo (Working Tree)

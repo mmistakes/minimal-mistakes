@@ -15,8 +15,6 @@ categories:
 tags:
   - git-basico
   - git-manual
-  - git-working tree
-  - git-working directory
 ---
 
 ## Arbol de Trabajo (Working Tree)

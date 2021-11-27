@@ -10,8 +10,8 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-Index
-  - git-Staging Area
+  - git-index
+  - git-staging area
 tags:
   - git-basico
   - git-manual
