@@ -713,7 +713,40 @@ object Director {
 
 _Et voilà_, now the program runs without any error.
 
-## 6. Putting Pieces Together: A Tagless Final Approach
+## 7. Handling Joins
+
+Until now, we presented some very straightforward examples of queries. However, we can also handle joins. The good news is that Doobie handles joins between tables in a very natural way.
+
+Let's say we want to find a movie by its name. We want to retrieve also the director information and the list of actors that played in the movie. Using the ER model we presented at the beginning of the article, we have to join three table: the `movies` table, the `directors` table, and the `actors` table. Here it is how we can implement it in Doobie:
+
+```scala
+def findMovieByName(movieName: String): IO[Option[Movie]] = {
+  val query = sql"""
+       |SELECT m.id,
+       |       m.title,
+       |       m.year_of_production,
+       |       array_agg(a.name) as actors,
+       |       d.name
+       |FROM movies m
+       |JOIN movies_actors ma ON m.id = ma.movie_id
+       |JOIN actors a ON ma.actor_id = a.id
+       |JOIN directors d ON m.director_id = d.id
+       |WHERE m.title = $movieName
+       |GROUP BY (m.id,
+       |          m.title,
+       |          m.year_of_production,
+       |          d.name,
+       |          d.last_name)
+       |""".stripMargin
+    .query[Movie]
+    .option
+  query.transact(xa)
+}
+```
+
+TODO
+
+## 8. Putting Pieces Together: A Tagless Final Approach
 
 Now that we know all the pieces of a program that connects to a database using Doobie, we can create a more complex example. For this purpose, we will use the _tagless final_ approach. Again, the details of tagless final approach are far beyond the scope of this tutorial. However, it's sufficient to know that it is a technique that allows us to manage dependencies between our components, and to abstract away the details of the concrete effect implementation.
 
@@ -760,6 +793,14 @@ Following the approach suggested by Gabriel Volpe in his excellent book, [Practi
 
 The only difference is how the interpreter declares the dependency from the `Transactor` type. Since a `Transactor` is a resource which creation and destruction must be properly managed, we wrap it in a `Resource` and pass it to the smart constructor.
 
+Since the `Transactor` is something our interpreter depends on, and it's not related to any feature that the effect `F[_]`must have, we can safely pass it as an explicit parameter of the smart constructor.
+
+Whereas, the `Transactor` type has a hard constraint on the effect `F[_]`. In fact, the effect should be an instance of at least a `MonadCancelThrow, which is a monad that can effectively handle errors, and is cancellable. The last property allow the monad to safely cancel executions and release / close resources. 
+
+The constraints on the effect `F[_]` should be enforced defining context-bounds directly on `F`. 
+
+Finally, we can create a `Directors` instance using the smart constructor:
+
 As we should remember, since we've defined the `Director` type through the use of many newtypes, we need to create a custom mapping using the `Read` and `Write` type classes. We can put the type classes definition inside a dedicated object:
 
 ```scala
@@ -776,4 +817,63 @@ private object DirectorSQL {
 }
 ```
 
+Now, if we want ot create a concrete instance of our interpreter, we need to create an instance of the `Transactor` resource. As we saw at the beginning of this article, we can use the Hikary extension for Doobie:
+
+```scala
+val postgres: Resource[IO, HikariTransactor[IO]] = for {
+  ce <- ExecutionContexts.fixedThreadPool[IO](32)
+  xa <- HikariTransactor.newHikariTransactor[IO](
+    "org.postgresql.Driver",
+    "jdbc:postgresql:myimdb",
+    "postgres",
+    "example",
+    ce
+  )
+} yield xa
+```
+
+Then, we can define the last part of the tagless final approach: a program using the interpreter. For example, let's define a program that inserts the director of Jurassic Park into the database, and then retrieve it:
+
+```scala
+val program: IO[Unit] = for {
+  id <- directors.create("Steven", "Spielberg")
+  spielberg <- directors.findById(id)
+  _ <- IO.println(s"The director of Jurassic Park is: $spielberg")
+} yield ()
+```
+
+We can then put all the parts into a single `IOApp` and run the program:
+
+```scala
+object TaglessApp extends IOApp {
+  override def run(args: List[String]): IO[ExitCode] = {
+    val postgres: Resource[IO, HikariTransactor[IO]] = for {
+      ce <- ExecutionContexts.fixedThreadPool[IO](32)
+      xa <- HikariTransactor.newHikariTransactor[IO](
+        "org.postgresql.Driver",
+        "jdbc:postgresql:myimdb",
+        "postgres",
+        "example",
+        ce
+      )
+    } yield xa
+
+    val directors: Directors[IO] = Directors.make(postgres)
+
+    val program: IO[Unit] = for {
+      id <- directors.create("Steven", "Spielberg")
+      spielberg <- directors.findById(id)
+      _ <- IO.println(s"The director of Jurassic Park is: $spielberg")
+    } yield ()
+
+    program.as(ExitCode.Success)
+  }
+}
+```
+
+And that's it!
+
+## 9. Conclusions
+
 TODO
+
