@@ -106,7 +106,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "EE Ph.d candidate."
   location         : "KAIST"
-  email            : wj.kim@kaist.ac.kr
+  email            : "wj.kim@kaist.ac.kr"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
