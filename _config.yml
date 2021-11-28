@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "Med Taher BEN SALEM"
   avatar           : "/images/profile/profile.jpg"
-  bio              : "Just a DevOps engineer sharing his knowledge and passion"
+  bio              : "A DevOps engineer sharing his knowledge and passion"
   location         : "Canada"
   email            :
   links:
@@ -295,6 +295,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: false
       share: true
       related: true
