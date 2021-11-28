@@ -15,8 +15,8 @@ sidebar:
     image: /assets/images/porfolio/portafolio-peliculas/portada-peliculas.png
     image_alt: "portada"
     text: "Diseño Web + Responsive Web , Front-End Básico"
-  - title: "Películas"
-    text: "Pequeño ejemplo de una pagina responsive sobre películas"
+  - title: "Resumen"
+    text: "Pequeño ejemplo de una pagina web responsive sobre cine"
 
 # Imagenes centrales
 gallery:
