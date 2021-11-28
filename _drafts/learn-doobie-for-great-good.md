@@ -744,7 +744,47 @@ def findMovieByName(movieName: String): IO[Option[Movie]] = {
 }
 ```
 
-TODO
+Since the join with the `actor` table extract potentially many rows for every movie, we used a `GROUP BY` operation, and the `array_agg` Postgres function, which create an array from the names of the actors. 
+
+However, tha array type is not SQL standard. So, in order to let Doobie map the array type to a Scala `List`, we need to import the `doobie.postgres._` and `doobie.postgres.implicits._` packages, belonging to the `doobie-postgres` library.
+
+```scala
+def findMovieByNameWithoutSqlJoin(movieName: String): IO[Option[Movie]] = {
+  val query = for {
+    maybeMovie <-
+      sql"""
+           | select id, title, year_of_production, director_id 
+           | from movies 
+           | where title = $movieName"""
+        .query[(UUID, String, Int, Int)].option
+    directors <- maybeMovie match {
+      case Some((_, _, _, directorId)) =>
+        sql"select name, last_name from directors where id = $directorId"
+          .query[(String, String)].to[List]
+      case None => List.empty[(String, String)].pure[ConnectionIO]
+    }
+    actors <- maybeMovie match {
+      case Some((movieId, _, _, _)) =>
+        sql"""
+             | select a.name
+             | from actors a
+             | join movies_actors ma on a.id = ma.actor_id
+             | where ma.movie_id = $movieId
+             |""".stripMargin
+          .query[String]
+          .to[List]
+      case None => List.empty[String].pure[ConnectionIO]
+    }
+  } yield {
+    maybeMovie.map { case (id, title, year, _) =>
+      val directorName = directors.head._1
+      val directorLastName = directors.head._2
+      Movie(id.toString, title, year, actors, s"$directorName $directorLastName")
+    }
+  }
+  query.transact(xa)
+}
+```
 
 ## 8. Putting Pieces Together: A Tagless Final Approach
 
