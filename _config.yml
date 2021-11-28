@@ -103,8 +103,8 @@ analytics:
 # Site Author
 author:
   name             : "chulyeon Kim"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Just Do It"
+  avatar           : "/assets/images/IMG_7897.jpg"
+  bio              : "A makeup artist💄 who became a developer💻"
   location         : "South Korea, Seoul"
   email            : 
   links:
