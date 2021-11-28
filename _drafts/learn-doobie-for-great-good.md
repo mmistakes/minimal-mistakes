@@ -215,7 +215,13 @@ In the vast majority of the examples in the article, we will use directly the `T
 
 ### 2.1. The YOLO Mode
 
+While experimenting with the library, it could seem a little overwhelming to have to pass the `Transactor` instance around. Moreover, the syntax `transact(xa)` is a bit cumbersome. Adding that during experiments it's very common to print out the results of the program to the console, the library will help us to do that. Please, welcome the YOLO mode!
+
+First we need a stable reference to the `Transactor` instance. Then we can import the `yolo` module:
+
+```scala
 TODO
+```
 
 ## 3. Querying the Database
 
@@ -746,33 +752,42 @@ def findMovieByName(movieName: String): IO[Option[Movie]] = {
 
 Since the join with the `actor` table extract potentially many rows for every movie, we used a `GROUP BY` operation, and the `array_agg` Postgres function, which create an array from the names of the actors. 
 
-However, tha array type is not SQL standard. So, in order to let Doobie map the array type to a Scala `List`, we need to import the `doobie.postgres._` and `doobie.postgres.implicits._` packages, belonging to the `doobie-postgres` library.
+However, tha array type is not SQL standard. So, in order to let Doobie map the array type to a Scala `List`, we need to import the `doobie.postgres._` and `doobie.postgres.implicits._` packages, belonging to the `doobie-postgres` librar
+
+As we said, the array type is not standard, and it could happen to implement the above program in a database that doesn't support arrays. In this case, the only solution left is to perform the join manually, which means splitting the original query in three different queries, and join the data programmatically:
 
 ```scala
 def findMovieByNameWithoutSqlJoin(movieName: String): IO[Option[Movie]] = {
+  
+  def findMovieByTitle() =
+    sql"""
+         | select id, title, year_of_production, director_id
+         | from movies
+         | where title = $movieName"""
+      .query[(UUID, String, Int, Int)].option
+      
+  def findDirectorById(directorId: Int) =
+    sql"select name, last_name from directors where id = $directorId"
+      .query[(String, String)].to[List]
+      
+  def findActorsByMovieId(movieId: UUID) =
+    sql"""
+         | select a.name
+         | from actors a
+         | join movies_actors ma on a.id = ma.actor_id
+         | where ma.movie_id = $movieId
+         |""".stripMargin
+      .query[String]
+      .to[List]
+      
   val query = for {
-    maybeMovie <-
-      sql"""
-           | select id, title, year_of_production, director_id 
-           | from movies 
-           | where title = $movieName"""
-        .query[(UUID, String, Int, Int)].option
+    maybeMovie <- findMovieByTitle()
     directors <- maybeMovie match {
-      case Some((_, _, _, directorId)) =>
-        sql"select name, last_name from directors where id = $directorId"
-          .query[(String, String)].to[List]
+      case Some((_, _, _, directorId)) => findDirectorById(directorId)
       case None => List.empty[(String, String)].pure[ConnectionIO]
     }
     actors <- maybeMovie match {
-      case Some((movieId, _, _, _)) =>
-        sql"""
-             | select a.name
-             | from actors a
-             | join movies_actors ma on a.id = ma.actor_id
-             | where ma.movie_id = $movieId
-             |""".stripMargin
-          .query[String]
-          .to[List]
+      case Some((movieId, _, _, _)) => findActorsByMovieId(movieId)
       case None => List.empty[String].pure[ConnectionIO]
     }
   } yield {
@@ -785,6 +800,8 @@ def findMovieByNameWithoutSqlJoin(movieName: String): IO[Option[Movie]] = {
   query.transact(xa)
 }
 ```
+
+In the above code, we extracted information from the `movies` table, the `directors` table, and the `actors` table in sequence, and then we mapped the data to a `Movie` object. As the `ConnectionIO` type is a monad, we can compose the queries in a sequence using the _for-comprehension_ construct. Even though it's not the main focus of this code, as we said, the three queries are executed in a single database transaction.
 
 ## 8. Putting Pieces Together: A Tagless Final Approach
 
@@ -915,5 +932,7 @@ And that's it!
 
 ## 9. Conclusions
 
-TODO
+It's time to sum up what we've learned so far. We introduced Doobie, a JDBC functional wrapper library, built upon the Cats Effect library. After defining some domain models to work with, we learnt how to create a `Transactor` object to execute instructions in the database. Then, we saw ho to implement queries, both without and with input parameters, and how to map their results back to our domain models. So, we saw how to insert and update rows in a table, and then which are the available implementation when we need a join. Since Doobie uses some type classes to map Scala type from and to schema types, we introduced them. Finally, with all the pieces in the right places, we describe how to use Doobie in a tagless final context. 
+
+Clearly, the article is not exhaustive, but it's a good start to understand how to use Doobie. We left out some advanced features, like testing, error handling, type-checking, and logging. But, it's a good start to understand how to use Doobie. If you want to deepen your knowledge concerning the Doobie library, you can take a look at the [official documentation](https://tpolecat.github.io/doobie/).
 
