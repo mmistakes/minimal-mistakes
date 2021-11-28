@@ -121,7 +121,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/hamalse__/?hl=ko"
 
-Site Footer
+# Site Footer
 footer:
   links:
     - label: "Facebook"
