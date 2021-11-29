@@ -2,7 +2,7 @@
 published: true
 layout: single
 title: "[C++] call_once, once_flag를 활용한 Sigletone Pattern 구현"
-category: none
+category: cppreference
 tags:
 comments: true
 sidebar:
