@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "RecordK"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "데이터 사이언티스트(진)."
   location         : "Somewhere"
   email            :
   links:
