@@ -17,11 +17,13 @@ As usual, we'll start by importing the libraries we need in the SBT file. We wil
 
 ```sbt
 val DoobieVersion = "1.0.0-RC1"
+val NewTypeVersion = "0.4.4"
 
 libraryDependencies ++= Seq(
   "org.tpolecat" %% "doobie-core"     % DoobieVersion,
   "org.tpolecat" %% "doobie-postgres" % DoobieVersion,
-  "org.tpolecat" %% "doobie-hikari"   % DoobieVersion
+  "org.tpolecat" %% "doobie-hikari"   % DoobieVersion,
+  "io.estatico"  %% "newtype"         % NewTypeVersion
 )
 ```
 
@@ -148,24 +150,20 @@ case class Actor(id: Int, name: String)
 
 case class Movie(id: String, title: String, year: Int, actors: List[String], director: String)
 
-class Director(_name: String, _lastName: String) {
-  def name: String = _name
-
-  def lastName: String = _lastName
-
-  override def toString: String = s"$name $lastName"
-}
+// We will define the Director class lately in the article. NO SPOILER!
 ```
-
-If you're asking why we did not use a `case class` for the `Director` type, the reason will be clear in the rest of the article.
 
 Finally, all the examples contained in the article will use the following imports:
 
 ```scala
+import cats.data.NonEmptyList
 import cats.effect._
 import cats.implicits.catsSyntaxApplicativeId
 import doobie._
 import doobie.implicits._
+import io.estatico.newtype.macros.newtype
+import java.util.UUID
+// Very important to deal with arrays
 import doobie.postgres._
 import doobie.postgres.implicits._
 import doobie.util.transactor.Transactor._
@@ -212,16 +210,6 @@ val postgres: Resource[IO, HikariTransactor[IO]] = for {
 ```
 
 In the vast majority of the examples in the article, we will use directly the `Transactor` coming from the JDBC driver manager. Instead, in the last part, we will focus on using the `Resource` type to manage the connection pool.
-
-### 2.1. The YOLO Mode
-
-While experimenting with the library, it could seem a little overwhelming to have to pass the `Transactor` instance around. Moreover, the syntax `transact(xa)` is a bit cumbersome. Adding that during experiments it's very common to print out the results of the program to the console, the library will help us to do that. Please, welcome the YOLO mode!
-
-First we need a stable reference to the `Transactor` instance. Then we can import the `yolo` module:
-
-```scala
-TODO
-```
 
 ## 3. Querying the Database
 
@@ -460,7 +448,44 @@ object fragments {
 }
 ```
 
-## 4. Not Only Queries: Changing the Database
+## 4. The YOLO Mode
+
+While experimenting with the library, it could seem a little overwhelming to have to pass the `Transactor` instance around. Moreover, the syntax `transact(xa)` is a bit cumbersome. Adding that during experiments it's very common to print out the results of the program to the console, the library will help us to do that. Please, welcome the YOLO mode!
+
+First we need a stable reference to the `Transactor` instance. Then we can import the `yolo` module:
+
+```scala
+val y = xa.yolo
+import y._
+```
+
+Then, imagine we want to find all actors in the database and print them out. Using the `yolo` syntax, we can write the following program:
+
+```scala
+object YoloApp extends App {
+
+  import cats.effect.unsafe.implicits.global
+
+  val xa: Transactor[IO] = Transactor.fromDriverManager[IO](
+    "org.postgresql.Driver",
+    "jdbc:postgresql:myimdb",
+    "postgres",
+    "example"
+  )
+
+  val y = xa.yolo
+  import y._
+
+  val query = sql"select name from actors".query[String].to[List]
+  query.quick.unsafeRunSync()
+}
+```
+
+As we can see, the program doesn't need an `IOApp` to execute. Then, the `quick` method is syntactic sugar for calling the `transact` method, which is a bit more verbose, and then sinking the stream to standard output.
+
+Remember, You Only Live Once!
+
+## 5. Not Only Queries: Changing the Database
 
 The other side of the moon of the database world is mutating the tables and the data they contain. Doobie offers not only support for DDL operations, but also for DML operations. 
 
@@ -550,7 +575,7 @@ def updateJLYearOfProduction(): IO[Int] = {
 
 Finally, the deletion follows the same pattern. Just use the keyword `delete` instead of `insert` or `update` inside the `sql` interpolator.
 
-## 5. Doobie's Type Classes
+## 6. Doobie's Type Classes
 
 So far, we have seen many examples of usages of the `sql` interpolator, which magically can convert Scala types into JDBC types when reading input parameters, and vice versa when concerning to mapping values extracted from the database.
 
