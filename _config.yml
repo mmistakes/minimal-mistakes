@@ -1,4 +1,5 @@
 # Welcome to Jekyll!
+
 # Archivo de Configuración a nivel general del Blog
 # Configura tanto : post , page , portfolio , layout , gallery , etc 
 
@@ -15,6 +16,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
+
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -22,16 +24,15 @@ locale                   : "es-ES"
 title                    : "Blog 101"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "RVS"
-description              : "Blog sobre Programación e Informática"
+name                     : &name "RVS"
+description              : &description "Blog sobre Programación e Informática"
 url                      : "https://rvsweb.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 repository               : "/RVSWeb/Blog101"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# logo                     : "assets/images/a.jpg"
+# teaser                 : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+# logo                   : "assets/images/a.jpg"
 logo                     : "assets/images/yin-80x80.jpg"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+# masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default) 
 words_per_minute         : 200
 comments:
@@ -124,7 +125,7 @@ author:
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://www.facebook.com/rad.wulf.5439/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/RVSWeb"
@@ -140,7 +141,7 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: https://www.facebook.com/rad.wulf.5439/
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/RVSWeb"
@@ -209,7 +210,7 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# Collections - Borrar
+# Collections
 collections:
   docs:
     output: true
@@ -223,15 +224,7 @@ collections:
 
 # Defaults
 defaults:
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: false
-      share: true
-      
+
   # _posts
   - scope:
       path: ""
@@ -250,6 +243,15 @@ defaults:
       type: pages
     values:
       layout: single
+
+# _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
   # recipes
   - scope:

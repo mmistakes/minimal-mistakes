@@ -33,7 +33,7 @@ gallery:
     alt: "Película - Cadena Perpetua"
 ---
 
-Este es un pequeño ejemplo cuya finalidad fue aprender y diseñar un website responsivo para
+Este es un pequeño ejemplo de una pagina web cuya finalidad era aprender a diseñar un website responsivo para
 las distintas resoluciones de las pantallas que existen en el mercado de la tecnología
 
 Puedes visitar la pagina en este enlace: [The Movies Home!](https://rvsweb.github.io/flexbox-saint-grial)
