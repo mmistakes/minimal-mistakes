@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@drucej 
-XAITK
-/
-xaitk.github.io
-Public
-forked from mmistakes/minimal-mistakes
-1
-4
-17k
-Code
-Pull requests
-Actions
-Projects
-Security
-Insights
-xaitk.github.io/_capabilities/template.md
-@brianhhu
-brianhhu Reword description of link title and url fields
-Latest commit e77f6f8 on Jun 1
- History
- 1 contributor
-71 lines (60 sloc)  1.96 KB
-   
 ---
 title: "Counterfactual Explanations for Enhancing Human-Machine Teaming"
 excerpt: "This contribution provides a framework for generating counterfactual explanations for AI agents in the domain of StarCraft2."
@@ -42,19 +12,16 @@ tags: # Select from this set
 submission_details:
   resources: # List any resources associated with the contribution. Not all sections are required
     papers:
-      - title: Paper link text
-        url: Paper link url
+      - title: Brittle AI, Causal Confusion, and Bad Mental Models: Challenges and Successes in the XAI Program
+        url: https://arxiv.org/abs/2106.05506
     software:
-      - title: Software link text
-        url: Software link url
+      - title: CAMEL Software
+        url:  https://data.kitware.com/api/v1/item/6179b5a22fa25629b9bc8daf/download
       - title: Another software link text
         url: Another software link url
     demos:
-      - title: Demo link text
-        url: Demo link url
-    data:
-      - title: Data link text
-        url: Data link url
+      - title: Demo video
+        url: https://cra.com/xai/
    
   # Optional information describing artifact. Leave blank if unused
   version: Version Number
@@ -62,16 +29,16 @@ submission_details:
   license: Link to license
    
   authors:
-    - Author Name
+    - Jeff Druce, James Niehaus, Joseph Campolongo
     # Optional for multiple authors and organizations
     - Author Name <sup>1</sup>
   organizations:
-    - Organization
+    - Charles River Analytics
     # Optional for multiple authors and organizations
     - 1. Organization
   point_of_contact:
-    name: PoC Name
-    email: email
+    name: Jeff Druce
+    email: jdruce@cra.com 
 ---
    
 ## Overview
