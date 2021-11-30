@@ -10,14 +10,19 @@
 -->
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
+     <meta charset="utf-8">
     {% include head.html %}
     {% include head/custom.html %}
+
+    <title>{{ page.title }}</title>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
     {% include_cached skip-links.html %}
     {% include_cached browser-upgrade.html %}
     {% include_cached masthead.html %}
+      {% include navigation.html %}
+
 
     <div class="initial-content">
       {{ content }}
