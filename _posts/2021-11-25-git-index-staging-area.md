@@ -19,6 +19,8 @@ tags:
 
 ## Git Index o Staging Area
 
+Es una especie de zona virtual donde se almacenan los archivos después de ejecutar ``git add <archive>`` y que están a la espera de ser confirmados mediante ``git commit -m "Mensaje"`` para luego se enviados al **»Repositorio Remoto«** con el comando ``git push``
+
 * {**INDEX** = Indice} o {**Staging Area** = Área de cambios}
   
   * Son los registros de cambios del (**Working Directory / Workspace**) que tendrá el __proximo commit__
