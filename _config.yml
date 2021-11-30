@@ -138,7 +138,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url:"https://github.com/RecordK"
+      url: "https://github.com/RecordK"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -147,7 +147,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url:"https://www.instagram.com/rec.cck/"
+      url: "https://www.instagram.com/rec.cck/"
 
 
 # Reading Files
