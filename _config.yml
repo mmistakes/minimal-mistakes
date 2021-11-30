@@ -108,9 +108,9 @@ author:
   location         : "Seoul, Republic Of Korea"
   email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-       url: "alfmalfm11@kakao.com"
+      - label: "Email"
+        icon: "fas fa-fw fa-envelope-square"
+        url: "alfmalfm11@kakao.com"
 #     - label: "Website"
 #       icon: "fas fa-fw fa-link"
 #       # url: "https://your-website.com"
