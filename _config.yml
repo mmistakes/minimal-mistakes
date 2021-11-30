@@ -21,8 +21,8 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Kirok Kim"
 description              : "데이터 사이언티스트(진)"
-url                      : 
-baseurl                  :  "https://RecordK.github.io"
+url                      : "https://RecordK.github.io"
+baseurl                  :  
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -78,10 +78,10 @@ yandex_site_verification :
 baidu_site_verification  :
 
 # Social Sharing
-# twitter:
-#   username               :
-# instagram:
-#   username               :rec.cck
+twitter:
+   username               :
+   facebook:
+   username               :
 #   app_id                 :
 #   publisher              :
 # og_image                 : # Open Graph/Twitter default site image
