@@ -65,15 +65,3 @@ The model which provides explanation is graphical causal model. In effect, it is
    
 ## References
 [comment]: <> (Any additional information, e.g. papers \(cited with bibtex\) related to this contribution.)
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
