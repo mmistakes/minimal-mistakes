@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 머신러닝 디자인 패턴 톺아보기 - 머신러닝 기본용어, 배경지식
 excerpt: "머신러닝 디자인 패턴의 챕터1을 공부했다."
 categories:
