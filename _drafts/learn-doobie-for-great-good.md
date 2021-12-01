@@ -279,7 +279,7 @@ def findActorById(id: Int): IO[Option[Actor]] = {
 }
 ```
 
-Although extracting actors in a `List[String]` seems legit at first sight, it's not safe in a real-world application. In fact, the number of extracted rows could be huge to not fit inside the memory allocated to the application. For this reason, we should use a `Stream` instead of a `List`. Doobie integrates smoothly with the functional streaming library [fs2](https://fs2.io). Again, describing how fs2 works is behind the scope of this article, and we just focus on how to use it with Doobie.
+Although extracting actors in a `List[String]` seems legit at first sight, it's not safe in a real-world scenario. In fact, the number of extracted rows could be huge to not fit inside the memory allocated to the application. For this reason, we should use a `Stream` instead of a `List`. **Doobie integrates smoothly with the functional streaming library [fs2](https://fs2.io)**. Again, describing how fs2 works is behind the scope of this article, and we just focus on how to use it with Doobie.
 
 For example, let's change the above example to use the streaming API:
 
@@ -316,7 +316,7 @@ def findAllActorsProgram: IO[List[Actor]] = {
 }
 ```
 
-Doobie can map the tuple of extracted columns directly into a `case class`. For now, let's say that the mapping between the extracted tuple and the properties of the case class must be one-to-one. In the last part of the article, we will introduce the type classes that allow the conversion of a tuple into a case class.
+**Doobie can map the tuple of extracted columns directly into a `case class`**. For now, let's say that the mapping between the extracted tuple and the properties of the case class must be one-to-one. In the last part of the article, we will introduce the type classes that allow the conversion of a tuple into a case class.
 
 The last aspect we left about selecting information from a table is to parameterize the query with parameters. Fortunately, the `sql` interpolator works smoothly with parameters, using the exact mechanism used by Scala native `String` interpolation:
 
@@ -332,7 +332,7 @@ The above program extracts all `actors` from the table whose names start with th
 
 ### 3.1. The `HC` Module
 
-The interpolator `sql` is a very handful syntax for writing SQL queries. However, it is not the only way to write queries. In fact, it's just syntactic sugar to access functions available in the `doobie.hi.connection` module, aliased as `HC`.
+The interpolator `sql` is a very handful syntax for writing SQL queries. However, it's not the only way to write queries. In fact, it's just syntactic sugar to access functions available in the `doobie.hi.connection` module, aliased as `HC`.
 
 So, let's take the first program we developed above, the `findAllActorsNamesProgram`, and desugar it using the `HC` module:
 
@@ -350,7 +350,7 @@ def findActorByNameUsingHCApi(actorName: String): IO[Option[Actor]] = {
 }
 ```
 
-First, the query becomes a plain `String` containing `?` wildcards. The `sql` interpolator is just syntactic sugar for the `HC.stream[A]` method. Leaving the comprehension of the first parameter to the reader, the second parameter of type `PreparedStatementIO[B]`. As for the `ConnectionIO[A]` type, a `PreparedStatementIO` is an instance of the free monad pattern. In this case, it describes how to inject parameters into the query. So, the interpreter of the monad, `HC`, builds a `Kleisli[IO, PreparedStatement, A]`, which is precisely a function given a `PreparedStatement` returns an `IO[A]`.
+First, the query becomes a plain `String` containing `?` wildcards. The `sql` interpolator is just syntactic sugar for the `HC.stream[A]` method. Leaving the comprehension of the first parameter to the reader, the second parameter has type `PreparedStatementIO[B]`. As for the `ConnectionIO[A]` type, a `PreparedStatementIO` is an instance of the free monad pattern. In this case, it describes how to inject parameters into the query. So, the interpreter of the monad, `HC`, builds a `Kleisli[IO, PreparedStatement, A]`, which is precisely a function returning an `IO[A]` given a `PreparedStatement`.
 
 The third parameter is the maximum number of rows to be fetched at a time. In fact, Doobie read rows in chunks.
 
@@ -368,7 +368,7 @@ HPS.set(1, 1) *> HPS.set(2, "Henry Cavill")
 
 ### 3.1. Fragments
 
-Until now, we used the `sql` interpolator to build our queries. Indeed, the `sql` interpolator is just an alias for the `fr` interpolator, which name stands for `Fragment`. A fragment is a piece of an SQL statement that we can combine with any other fragment to build a proper SQL instruction.
+Until now, we used the `sql` interpolator to build our queries. Indeed, the `sql` interpolator is just an alias for the `fr` interpolator, which name stands for `Fragment`. **A fragment is a piece of an SQL statement that we can combine with any other fragment to build a proper SQL instruction**.
 
 Imagine building the query at runtime, extracting the list of actors whose names start with a given initial letter. Using fragments, we can do it as follows:
 
@@ -384,7 +384,7 @@ def findActorsByInitialLetterUsingFragments(initialLetter: String): IO[List[Acto
 }
 ```
 
-In the example above, we build the three parts of the SQL statements, and then we combine them to produce the final query using the `++` operator. It's not easy to understand why `Fragment` is also a `Monoid` since it's possible to use the `++` operator to define the `combine` function of monoids:
+In the example above, we build the three parts of the SQL statements, and then we combine them to produce the final query using the `++` operator. It's easy to understand why `Fragment` is also a `Monoid` since it's possible to use the `++` operator to define the `combine` function of monoids:
 
 ```scala
 // Doobie library's code
@@ -398,7 +398,7 @@ object fragment {
 }
 ```
 
-So, if we want to use the combination operator, `|+|` made available by the monoid instance, we can rewrite the previous example as follows:
+So, if we want to use the combination operator `|+|`, made available by the monoid instance, we can rewrite the previous example as follows:
 
 ```scala
 def findActorsByInitialLetterUsingFragmentsAndMonoids(initialLetter: String): IO[List[Actor]] = {
@@ -414,7 +414,7 @@ def findActorsByInitialLetterUsingFragmentsAndMonoids(initialLetter: String): IO
 }
 ```
 
-As we say, fragments are helpful to build queries dynamically. One widespread use case is to create a query that uses the `IN` operator since JDBC does not give any built-in support for this kind of operator. Fortunately, Doobie does it, providing a reliable method in the `Fragments` object:
+As we say, fragments are helpful to build queries dynamically. One widespread use case is to create a query that uses the `IN` operator since JDBC doesn't give any built-in support for this kind of operator. Fortunately, Doobie does it, providing a reliable method in the `Fragments` object:
 
 ```scala
 def findActorsByNames(actorNames: NonEmptyList[String]): IO[List[Actor]] = {
@@ -425,7 +425,7 @@ def findActorsByNames(actorNames: NonEmptyList[String]): IO[List[Actor]] = {
 }
 ```
 
-The `Fragments` object contains a lot of valuable functions to implement many recurring SQL queries patterns:
+Indeed, the `Fragments` object contains a lot of valuable functions to implement many recurring SQL queries patterns:
 
 ```scala
 // Doobie library's code
