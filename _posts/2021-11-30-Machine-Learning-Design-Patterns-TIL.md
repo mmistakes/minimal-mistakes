@@ -1,5 +1,5 @@
 ---
-title:  "머신러닝 기본 용어, 품질 "
+title:  "머신러닝 기본 용어, 데이터의 "
 excerpt: "머신러닝 디자인 패턴 챕터1을 공부하고 정리한 내용입니다."
 toc: true
 toc_sticky: true
