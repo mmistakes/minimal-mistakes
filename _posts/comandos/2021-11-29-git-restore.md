@@ -24,5 +24,12 @@ Descarta los cambios que se hicieron en los archivos cuando se enviaron al {Stag
 Comando :
 
 ```git
-git restore <file> 
+git restore <archivo> 
 ```
+
+* Puede revertir solo en el **{INDEX}** pero no en el **{Working Tree}** al **último commit** mediante
+
+```git
+git restore --staged <archivo> → Revierte el git add <archivo> 
+```
+

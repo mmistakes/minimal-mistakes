@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Git - Working Tree & Working Directory 
+title: Git - Working Directory / Workspace
 date: 2021-11-24
 classes: wide
 toc: true
@@ -17,21 +17,13 @@ tags:
   - git-manual
 ---
 
-## Arbol de Trabajo (Working Tree)
-
-* Los archivos descargados desde el **\[Repositorio Local\]** y que no han sido modificados o alterados desde su origen se encuentra en el estado **Untracked** esperando a ser modificados o eliminados.  
-
-* **(Working Tree)** es como un directorio **(Espejo)** del **\[Repositorio Local\]** donde se almacena los archivos y directorios con los que vamos a trabajar.
-
-* Este directorio copía los archivos que tiene el __\[Repositorio Local\]__ y que se utilizan para trabajar con ellos sin modificar los archivos originales que se descargaron desde el __\|Repositorio Remoto\|__ y se almacenaron en el directorio del __\[Repositorio Local\]__ que es el directorio **.git/** el cual entre todos sus directorios contiene **(BD/Objetos/Snapshot)** que utiliza el proyecto para poder utilizarse.
-
-Resumen:
-
-> Directorio del proyecto (archivos/carpetas) contiene reflejo del [Repositorio Local]
-
-## Directorio de trabajo (Working Directory)
+## Directorio de trabajo (Working Directory/Workspace)
 
 * Lugar donde se ejecuta el comando ``git status`` para comprobar el estado de los archivos y subdirectorios del proyecto, esta dentro del **(Working Tree)** ; lugar donde se almacenan los archivos que se están ejecutando o utilizando.
+
+## Workspace
+
+Espacio de Trabajo; archivos locales posicionados en una rama
 
 Resumen:
 

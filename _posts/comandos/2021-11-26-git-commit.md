@@ -19,6 +19,8 @@ tags:
 
 ## Git Commit
 
+Genera un **nuevo commit** con lo registrado en el **{INDEX}**
+
 > Cuando se ejecuta un commit se le añade automáticamente un identificador hexadecimal de 40 dígitos generado a través de una clave Hash `SHA-1 (Secure Hash Algorithm)`
 
 ```git
@@ -35,20 +37,19 @@ El codigo `Hash SHA-1` nos sirven para identificarlo en el historial del proyect
 
 * En el caso de existir ``2 commits`` tendría el mismo contenido.
 
-* Cada nuevo ``commit`` se genera por modificación del ``commit anterior`` como si fuera un nuevo peldaño de la misma escalera.
+* Un nuevo ``commit`` se genera por modificación , eliminación o añadiendo contenido del ``commit anterior`` si no se modifica , elimina o añade nuevo contenido del ``commit anterior`` lo añadirá al ``nuevo commit`` por defecto.
 
-    > Significa que es una evolución del contenido anterior
+    > Significa que siempre irá modificando el último commit que hayas creado
 
-## Git Log
+![Alt hacer git restore](/assets/images/commit/commit.jpg/ "hacer git restore --staged <archivo>")
 
-``git log`` → Nos mostrará un **(Log / Registro)** de todos los commits confirmados que hayamos ido haciendo a lo largo del desarrollo de nuestro proyecto.
 
-``git log --online --graph --decorate`` → Mostrara una versión gráfica detallada de todas las ramas , bifurcaciones , comentarios , codigos resumidos `Hash SHA-1` que hayamos ido haciendo a nuestro proyecto.
+## Ejemplos de Commit
 
-> Cada opción añade una nueva caracteristica:
+``git commit`` → Guarda un **nuevo commit** y abre un editor para crear el mensaje
 
-``--online`` : Muestra la descripción del commit en una sola línea sin el nombre del autor y su correo.
+``git commit -m "Mensaje"`` → Guarda un **nuevo commit** con un mensaje que defina los cambios a realizar en el proyecto
 
-``--graph`` : Crea un gráfico en codigo ASCII muy fácil de interpretar con las ramas , bifurcaciones y demás contenidos del proyecto.
+``git commit --amend -m "Mensaje"`` → Modifica el **último commit** con lo registrado en el **{INDEX}** , hay que tener en cuenta de que cambia el contenido del **commit**
 
-``--decorate`` : Imprime los nombres de las referencia de los **commits** que se muestran.
+* Sustituimos el ``commit anterior`` que tenía el **{INDEX}** por otro nuevo commit para corregir lo que se nos olvido añadir o arreglar el mensaje antes de pasarlo al **[Repositorio Local]**
