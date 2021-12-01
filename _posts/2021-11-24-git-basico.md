@@ -19,6 +19,10 @@ page_css:
 
 ## Git Basico
 
+El origen de la palabra española **«Repositorio»** deriva del latín «repositorium»
+Que significa **armario** o **alacena**.
+Este término está recogido en el Diccionario de la Real Academia donde se define como el «lugar donde se guarda algo».
+
 ### Estructura básica del directorio de un proyecto
 
     README.md : fichero resumen (formato GitHub markdown)
@@ -53,7 +57,7 @@ Comando básico para ver las ayudas.
 
 Estructura básica del comando Git:
 
-```
+```git
 
     [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
               [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]

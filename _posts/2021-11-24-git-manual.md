@@ -42,3 +42,8 @@ Configurar usuario y correo para subir cambios al repositorio principal
 `git config user.name` -> Usuario establecido
 
 `git config user.email` -> Correo establecido
+
+## Cambiar color a la salida de los datos de la terminal
+
+``git config color.ui true``
+

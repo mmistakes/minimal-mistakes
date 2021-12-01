@@ -17,15 +17,19 @@ tags:
   - git-manual
 ---
 
-## Git Index o Staging Area
+## Git {INDEX} → Indice o {Staging Area} → Area de Cambios / Preparación
+
+El **{INDEX}** o **{Staging Area}** contiene una **(captura / instantánea)** del contenido del **(Arbol de Trabajo/Working Tree)**, esta **(captura / instantánea)** representa a los contenidos del **próximo commit**
 
 Es una especie de zona virtual donde se almacenan los archivos después de ejecutar ``git add <archive>`` y que están a la espera de ser confirmados mediante ``git commit -m "Mensaje"`` para luego se enviados al **»Repositorio Remoto«** con el comando ``git push``
+
+Es una especie de árbol que monitoriza los cambios en el (Working Directory) que se ha aplicado con ``git add`` , es un árbol con un mecanismo de almacenamiento de cache interno.
 
 * {**INDEX** = Indice} o {**Staging Area** = Área de cambios}
   
   * Son los registros de cambios del (**Working Directory / Workspace**) que tendrá el __proximo commit__
 
-  * Los ficheros no modificados del commit anterior permanecen en el siguiente commit.
+  * Los ficheros no modificados del commit anterior permanecerán a la espera en el **siguiente commit**.
 
 > Los cambios no registrados en el {INDEX} no se incluyen al genera un nuevo commit
 
@@ -42,11 +46,21 @@ Comandos básicos:
 
 ### Git reset
 
-> `git reset` → Extrae los ficheros del __{INDEX o Staging Area}__ al __(WorkSpace/Working Directory)__
+> `git reset` → Se utiliza para deshacer cambios
+
+* `git reset` → Extrae los ficheros del __{INDEX o Staging Area}__ al __(WorkSpace/Working Directory)__
 
 * `git reset <archivo>` → Extrae el ``<archivo>`` de __{INDEX}__ para enviarlo al estado **(Working Directory)**
 
 * `git reset .` → Extrae del __{INDEX}__ todos los ficheros para enviarlo al estado **(Working Directory)**
+
+Dependiendo de los argumentos que le añadamos puede afectar al
+
+* [Arbol de Commit / Commit Tree (HEAD)]
+
+* {INDEX / Staging Area}
+
+* (Directorio de Trabajo / Working Directory)
 
 ### Git commit
 

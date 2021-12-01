@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Git - Terminología básica
-date: 2021-11-24
+date: 2021-11-29
 classes: wide
 toc: true
 toc_label: "Tabla de contenido"

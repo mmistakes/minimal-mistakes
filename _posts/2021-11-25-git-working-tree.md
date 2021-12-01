@@ -11,6 +11,7 @@ header:
 categories:
   - git
   - git-working tree
+  - git-working directory
 tags:
   - git-basico
   - git-manual
@@ -18,7 +19,19 @@ tags:
 
 ## Arbol de Trabajo (Working Tree)
 
-* Directorio donde se crean las versiones del proyecto : codigo fuente, datos , archivos del proyecto y etc. 
+* Los archivos descargados desde el **\[Repositorio Local\]** y que no han sido modificados o alterados desde su origen se encuentra en el estado **Untracked** esperando a ser modificados o eliminados.  
+
+* **(Working Tree)** es como un directorio **(Espejo)** del **\[Repositorio Local\]** donde se almacena los archivos y directorios con los que vamos a trabajar.
+
+* Este directorio copía los archivos que tiene el __\[Repositorio Local\]__ y que se utilizan para trabajar con ellos sin modificar los archivos originales que se descargaron desde el __\|Repositorio Remoto\|__ y se almacenaron en el directorio del __\[Repositorio Local\]__ que es el directorio **.git/** el cual entre todos sus directorios contiene **(BD/Objetos/Snapshot)** que utiliza el proyecto para poder utilizarse.
+
+Resumen:
+
+> Directorio del proyecto (archivos/carpetas) contiene reflejo del [Repositorio Local]
+
+* * *
+
+* Directorio donde se crean las versiones del proyecto : codigo fuente, datos , archivos del proyecto y etc.
 
 * **(Workspace)** : Se le conoce como __área__ o __espacio de trabajo__
 
