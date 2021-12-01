@@ -2,7 +2,7 @@
 main:
   - title: "Home"
     url: https://DoIn-Sin.github.io
-  - title: "About"
+  - title: "About Me"
     url: /about/
   - title: "Categories"
     url: /categories/
