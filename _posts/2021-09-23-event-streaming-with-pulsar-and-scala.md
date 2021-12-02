@@ -3,7 +3,7 @@ title: "Event Streaming with Apache Pulsar and Scala"
 date: 2021-09-23
 header:
     image: "/images/blog cover.jpg"
-tags: []
+tags: [pulsar]
 excerpt: "Apache Pulsar is a cloud-native, distributed messaging and streaming platform that manages hundreds of billions of events per day. We'll learn what makes it a strong competitor to other solutions and use Scala along with the pulsar4s client library to interact with it."
 ---
 

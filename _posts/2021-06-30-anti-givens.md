@@ -3,7 +3,7 @@ title: "Scala 3: Anti-Givens"
 date: 2021-06-30
 header:
   image: "/images/blog cover.jpg"
-tags: []
+tags: [scala 3]
 excerpt: "Showing a Scala 3 trick that few developers know: exploiting the _absence_ of a given instance to enforce type relationships."
 ---
 

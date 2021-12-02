@@ -3,7 +3,7 @@ title: "Kafka Streams 101"
 date: 2021-10-21 
 header:
   image: "/images/blog cover.jpg"
-tags: []
+tags: [kafka]
 excerpt: "Apache Kafka is clearly the leading technology concerning message brokers, and Kafka Streams brings a complete stateful streaming system based directly on top of it. Let's see its primary features."
 ---
 

@@ -3,7 +3,7 @@ title: "ZIO: Introduction to Fibers"
 date: 2021-06-24
 header:
   image: "/images/blog cover.jpg"
-tags: []
+tags: [zio]
 excerpt: "Many libraries implement the effect pattern in the Scala ecosystem, and every one has its own concurrency model. First, let's introduce the ZIO library and its implementation of the fiber model."
 ---
 
