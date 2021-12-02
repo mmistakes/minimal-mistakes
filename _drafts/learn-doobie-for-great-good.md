@@ -487,7 +487,7 @@ Remember, You Only Live Once!
 
 The other side of the moon of the database world is mutating the tables and the data they contain. Doobie offers support not only for DDL operations but also for DML operations.
 
-It should not surprise that inserting follows the same pattern of selecting rows from tables. For example, let's save a new actor inside the `actors` table:
+It should not surprise that **inserting follows the same pattern of selecting rows from tables**. For example, let's save a new actor inside the `actors` table:
 
 ```scala
 def saveActor(name: String): IO[Int] = {
@@ -577,7 +577,7 @@ Finally, the deletion follows the same pattern. Use the keyword `delete` instead
 
 So far, we have seen many examples of usages of the `sql` interpolator, which magically can convert Scala types into JDBC types when reading input parameters, and vice versa when concerning mapping values extracted from the database.
 
-As we can imagine, there is no magic whatsoever. As skilled Scala developers, we should have known that there are some type classes behind it whenever someone talks about magic.
+As we can imagine, there is no magic whatsoever. As skilled Scala developers, we should have known that **there are some type classes behind it whenever someone talks about magic**.
 
 In fact, Doobie basically uses four type classes for the conversion between Scala and JDBC types: `Get[A]`, `Put[A]`, `Read[A]` and `Write[A]`.
 
@@ -643,7 +643,7 @@ As we can expect, when we try to compile the above code, we get an error since t
 [error]     sql"select name from actors".query[ActorName].to[List].transact(xa)
 ```
 
-Fortunately, Doobie gives us all the tools to quickly create such type classes. The first method we can use is to derive the `Get[ActorName]` and `Put[ActorName]` type classes from the same defined for the `String` type:
+Fortunately, Doobie gives us all the tools to quickly create such type classes. The first method we can use is to **derive the `Get[ActorName]` and `Put[ActorName]` type classes from the same defined for the `String` type**:
 
 ```scala
 object ActorName {
@@ -673,7 +673,7 @@ trait PutInstances extends PutPlatform {
 }
 ```
 
-Moreover, in the case of newtypes, we can simplify the definition of the `Get` and `Put` type classes, using the `deriving` method available in the `newtype` library:
+Moreover, in the case of newtypes, we can simplify the definition of the `Get` and `Put` type classes, using the `deriving` method available in the newtype library:
 
 ```scala
 @newtype case class ActorName(value: String)
@@ -697,11 +697,11 @@ Again, since the newtype library defines the `deriving` method, we can simplify 
 implicit val actorNameMeta: Meta[ActorName] = deriving
 ```
 
-Doobie uses the `Get` and `Put` type classes only to manage single-column schema types. In general, we need to map more than one column directly into a Scala class or into a tuple. For this reason, Doobie defines two more type classes, `Read[A]` and `Write[A]`, which can handle heterogeneous collections of columns.
+**Doobie uses the `Get` and `Put` type classes only to manage single-column schema types**. In general, we need to map more than one column directly into a Scala class or into a tuple. For this reason, Doobie defines two more type classes, `Read[A]` and `Write[A]`, which can handle heterogeneous collections of columns.
 
 The `Read[A]` allows us to map a vector of schema types inside a Scala type. Vice versa, the `Write[A]` will enable us to map a Scala type into a vector of schema types.
 
-Logically, the `Read` and `Write` type classes are defined as a composition of `Get` and `Put` on the attributes of the referenced type. In detail, the type can be an `HList`, a record (tuple), or a product type (a case class). In addition, Doobie adds the mapping of `Option[A]`.
+Logically, **the `Read` and `Write` type classes are defined as a composition of `Get` and `Put` on the attributes of the referenced type**. In detail, the type can be an `HList`, a record (tuple), or a product type (a case class). In addition, Doobie adds the mapping of `Option[A]`.
 
 In any other case, we must define a custom mapping, as we have previously done. Starting from the definition of `Read` and `Write` for a well-known type, we use the `map` and `contramap` functions to derive the needed type classes. Speaking about our movies' database, imagine we want to read from the `directors` table. We can define the Scala type `Director` representing a single row of the table:
 
