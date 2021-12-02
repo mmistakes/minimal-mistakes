@@ -4,7 +4,7 @@ date: 2021-11-25
 header:
     image: "/images/blog cover.jpg"
 tags: []
-excerpt: ""
+excerpt: "We rely on the JDBC specification if we need to connect to SQL databases in the JVM ecosystem. However, JDBC is not a good fit if we use functional programming since the library performs a lot of side effects. A library called Doobie provides a higher-level API on top of JDBC, using an effectful style through the Cats and Cats Effect libraries."
 ---
 
 The vast majority of applications today connect with some form of a persistent layer, and, sooner or later, every developer faces the challenge of connecting to a database. We rely on the JDBC specification if we need to connect to SQL databases in the JVM ecosystem. However, JDBC is not a good fit if we use functional programming since the library performs a lot of side effects. Fortunately, a library called [Doobie](https://tpolecat.github.io/doobie/) provides a higher-level API on top of JDBC, using an effectful style through the Cats and Cats Effect libraries.
