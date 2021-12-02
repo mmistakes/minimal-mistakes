@@ -5,4 +5,4 @@ permalink: /contact
 author_profile: false
 ---
 
-<h3>Contact</h3>
+<h2>Contact</h2>

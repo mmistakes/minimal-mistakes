@@ -5,15 +5,19 @@
     <center>
       <img src="{{ site.url }}{{ site.baseurl }}{{ author.avatar }}" style="width: 150px; height: 150px;" />
 
-      <!-- <h4 class="author__name p-name" itemprop="name">
-      {{ author.firstname }} {{ author.surname }}{% if author.title %}, {{ author.title }} {% endif %}
-    </h4> -->
-
       <h2 class="archive__item-title no_toc" itemprop="headline">
         {{ author.firstname }} {{ author.surname }}{% if author.title %}, {{ author.title }} {% endif %}
       </h2>
 
       {% include page__meta.html type=include.type %}
+      {% if author.links %}
+      {% for link in author.links %}
+      {% if link.label and link.url %}
+      <a href="{{ link.url }}" rel="nofollow noopener noreferrer me"><i class="{{ link.icon | default: 'fas fa-link' }}"
+          aria-hidden="true"></i></a>
+      {% endif %}
+      {% endfor %}
+      {% endif %}
       {% if author.bio %}<p class="archive__item-excerpt" itemprop="description">{{ author.bio | markdownify |
         strip_html }}</p>{% endif %}
     </center>
