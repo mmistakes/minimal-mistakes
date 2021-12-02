@@ -9,6 +9,7 @@ header:
   overlay_image: "/assets/images/categories/learning/book_reports/reading_list_1.jpg"
 ---
 
+
 # Overview
 
 This post will capture the books I have read over the years starting from 2019.
@@ -47,7 +48,7 @@ This post will capture the books I have read over the years starting from 2019.
     
 13.  _**Coming Out of the Ice: An Unexpected Life**_ by Victor Herman
     
-    1.  One of the most powerful and moving books I have ever read. Victor Herman might be the toughest person to have ever lived. We can all find inspiration through him.
+	    1.  One of the most powerful and moving books I have ever read. Victor Herman might be the toughest person to have ever lived. We can all find inspiration through him.
         
 
 ## 2020
@@ -107,11 +108,17 @@ This post will capture the books I have read over the years starting from 2019.
         
 10.  _The Daily Laws: 366 Meditations on Power, Seduction, Mastery, Strategy, and Human Nature_ by Robert Greene - **[In Progress]**
     
-    1.  11/01/21 - TBD
+	    1.  11/01/21 - TBD
         
-11.  _Oedipus_ the King by Sophocles - **[In Progress]**
+11.  _Oedipus_ the King by Sophocles
     
-    1.  11/04/21 - TBD
+	    1.  11/04/21 - 11/15/21
+        
+12.  The President and the Freedom Fighter
+    
+	    1.  A moving book about the life and work of Abraham Lincoln and Fredrick Douglas. Two unlikely friends in a critical time of American History. An accurate account of the two men, not glorifying them, instead truthfully outlining their actions, feelings, and views at various points in their lives. I was honestly more touched and moved by the life of Fredrick Douglas, a man who was born a slave, yet died a legend.
+        
+	    2.  11/10/21 - 11/23/21
         
 
 # Books to Read

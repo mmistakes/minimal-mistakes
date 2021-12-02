@@ -60,7 +60,7 @@ As a developer, engineer, and mathematician, the crypto space appeals to all of 
 
 My goal is to provide positive value to the people, the projects, and the ideas in the crypto space. I plan to contribute as an engineer, a student, an educator, a validator, and a creative. I would love it if you were part of my journey!
 
--   Please take a look a some of my posts related to crypto and blockchain technologies.
+-   Please take a look a some of my posts related to crypto and blockchain technologies (coming soon).
     
 -   Comment on any posts that you find interesting.
     
