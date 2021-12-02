@@ -7,9 +7,9 @@ header:
   teaser: /assets/images/bio-photo-keyboard-teaser.jpg
 
 categories:
-  - Blog
+  - TIL
 tags:
-  - Blog
+  - ML, ML-Term, TIL
 last_modified_at: 2021-11-30
 ---
 
