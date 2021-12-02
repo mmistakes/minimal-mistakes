@@ -4,7 +4,7 @@ excerpt: "머신러닝 디자인 패턴 챕터1을 공부하고 정리한 내용
 toc: true
 toc_sticky: true
 header:
-  teaser: /assets/images/bio-photo-.jpg
+  teaser: /assets/images/bio-photo-mldp.jpg
 
 categories:
   - TIL
