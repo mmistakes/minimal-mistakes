@@ -1,0 +1,70 @@
+# /_data/authors.yml
+
+ptak-bartosz:
+  firstname   : "Bartosz"
+  surname     : "Ptak"
+  title       : #
+  bio         : "Ph.D. student, interested in GPUs, EDGE devices, deep learning and image processing."
+  avatar      : "/assets/images/bio/bartoszptak.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:bartosz.ptak@doctorate.put.poznan.pl"
+    - label: "Github"
+      icon: "fab fa-fw fa-github-square"
+      url: "https://github.com/bartoszptak"
+
+aszkowski-przemyslaw:
+  firstname   : "Przemysław"
+  surname     : "Aszkowski"
+  title       : #
+  bio         : "Ph.D. student ...."
+  avatar      : "/assets/images/bio/przemekaszkowski.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:przemyslaw.aszkowski@doctorate.put.poznan.pl"
+
+pieczynski-dominik:  
+  firstname   : "Dominik"
+  surname     : "Pieczyński"
+  title       : #
+  bio         : "Pieski how how"
+  avatar      : "/assets/images/bio/dominikpieczynski.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:dominik.pieczynski@put.poznan.pl"
+
+kraft-marek:  
+  firstname   : "Marek"
+  surname     : "Kraft"
+  title       : 'Ph.D.'
+  bio         : "So far so good"
+  avatar      : "/assets/images/bio/marekkraft.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:marek.kraft@put.poznan.pl"
+
+piechocki-mateusz:  
+  firstname   : "Mateusz"
+  surname     : "Piechocki"
+  title       : #
+  bio         : "Tum tum tum"
+  avatar      : "/assets/images/bio/mateuszpiechocki.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:mateusz.piechocki@doctorate.put.poznan.pl"
+
+fularz-michal:  
+  firstname   : "Michał"
+  surname     : "Fularz"
+  title       : 'Ph.D.'
+  bio         : "Bike, LEGO and food"
+  avatar      : "/assets/images/bio/michalfularz.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:michal.fularz@put.poznan.pl"

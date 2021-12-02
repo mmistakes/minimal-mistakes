@@ -1,0 +1,16 @@
+# /_data/partners.yml
+
+put:
+  name   : "Poznań University of Technology"
+  url    : "https://www.put.poznan.pl/"
+  logo   : "/assets/images/partners/put.png"
+
+xilinx:
+  name   : "Xilinx Inc."
+  url    : "https://www.xilinx.com/"
+  logo   : "/assets/images/partners/xilinx.png"
+
+proporcja:
+  name   : "Proporcja"
+  url    : "#"
+  logo   : "/assets/images/partners/proporcja.png"
