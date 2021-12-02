@@ -103,7 +103,7 @@ ADD FOREIGN KEY (actor_id) REFERENCES actors (id);
 
 The ER diagram associated with the above tables' definition is the following:
 
-TODO: Add image of the ER
+![MyIMDB ER-diagram](/images/myimdb-er-diagram.png)
 
 Then, we need to populate the above tables with some data. As in the previous article, we renew our love for the movie "Zack Snyder's Justice League":
 
