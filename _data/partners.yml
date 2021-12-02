@@ -9,3 +9,8 @@ xilinx:
   name   : "Xilinx Inc."
   url    : "https://www.xilinx.com/"
   logo   : "/assets/images/partners/xilinx.png"
+
+nvidia:
+  name   : "NVidia Corporation"
+  url    : "https://www.nvidia.com/en-us/"
+  logo   : "/assets/images/partners/nvidia.png"
