@@ -8,6 +8,7 @@ comments: true
 sidebar:
   nav: "mainMenu"
 ---  
+* * *
 
 설명은 아래 예제 코드로 대체 합니다.
 
@@ -21,7 +22,7 @@ sidebar:
 
 using namespace std;
 
-class Singleton {
+class Singleton {qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
  public:
   static Singleton &getInstance() {
     call_once(Singleton::mOnceFlag, []() {
