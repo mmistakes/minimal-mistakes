@@ -41,16 +41,16 @@ Directorios principales del proyecto
 
 ## Git - Opciones
 
-* origin → Representa la URL del **«Repositorio Remoto»** que apunta al proyecto dentro de la plataforma **GITHUB**
+* **origin** → Representa la URL del **«Repositorio Remoto»** que apunta al proyecto dentro de la plataforma **GITHUB**
   * Se refiere también al **«Repositorio Remoto»** desde donde se clonó.
-  * Se utiliza entre otras muchas opciones para sincronizar el __proyecto local__ con el proyecto dentro de la **plataforma GITHUB**
-    * origin ←→ https://github.com/RVSWeb/Blog101
+  * Se utiliza entre otras muchas opciones para sincronizar el **proyecto local** con el proyecto dentro de la **plataforma GITHUB**
+    * **origin** ←→ https://github.com/RVSWeb/Blog101
 
-## HEAD
+## HEAD - [Repo.Local]
 
 * Es una referencia al ``último commit`` en la rama actualmente comprobada o revisada
 
-## Partes de un Repositorio
+## Partes de un [Repo.Local]
 
 ### • Commit - (Snapshot) - Instantánea/Captura
 
