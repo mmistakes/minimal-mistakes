@@ -19,11 +19,13 @@ tags:
 
 ## Git {INDEX} → Indice o {Staging Area} → Area de Cambios / Preparación
 
-El **{INDEX}** o **{Staging Area}** contiene una **(captura / instantánea)** del contenido del **(Arbol de Trabajo/Working Tree)**, esta **(captura / instantánea)** representa a los contenidos del **próximo commit**
+Los cambios realizados dentro del **{Staged}** son muy parecidos a los cambios **{UnStaged}** , excepto que se han marcado para ser **confirmados** la próxima vez que ejecute ``git commit``
 
-Es una especie de zona virtual donde se almacenan los archivos después de ejecutar ``git add <archive>`` y que están a la espera de ser confirmados mediante ``git commit -m "Mensaje"`` para luego se enviados al **»Repositorio Remoto«** con el comando ``git push``
+El **{INDEX}** o **{Staging Area}** contiene una **(captura / instantánea)** del contenido del **(Arbol de Trabajo/Working Tree)**, esta **(captura / instantánea)** representa a los contenidos que se cambiaron y que tendrá el **próximo commit**
 
-Es una especie de árbol que monitoriza los cambios en el (Working Directory) que se ha aplicado con ``git add`` , es un árbol con un mecanismo de almacenamiento de cache interno.
+Es una especie de zona virtual donde se almacenan los archivos después de ejecutar ``git add <archive>`` y que están a la espera de ser confirmados mediante ``git commit -m "Mensaje"`` para almacenarse de forma temporal dentro del **[Repositorio Local]** par luego enviarlos al **»Repositorio Remoto«** con el comando ``git push``
+
+Es una especie de árbol que monitoriza todos los cambios en el (Working Directory) que se ha aplicado con ``git add`` , es un árbol con un mecanismo de almacenamiento de cache interno.
 
 * {**INDEX** = Indice} o {**Staging Area** = Área de cambios}
   
@@ -34,6 +36,7 @@ Es una especie de árbol que monitoriza los cambios en el (Working Directory) qu
 > Los cambios no registrados en el {INDEX} no se incluyen al genera un nuevo commit
 
 ***
+
 Comandos básicos:
 
 ### Git add
