@@ -5,6 +5,9 @@ title : Experience
 ---
 ### Educational Experience
 
+- #### Consultant - [KEI Consulting](https://keicltd.com/)
+    - 2022.01 ~
+
 - #### Intern - [KEI Consulting](https://keicltd.com/)
     - 2021.09 ~ 12
 
@@ -15,6 +18,9 @@ title : Experience
 - #### Intern - [CSRD laboratory](http://petro.snu.ac.kr/)
     - 2021.01 ~ 02 , 07 ~ 12
     - Center of Subsurface Resources Development
+    - **Awards** : [Geo-data AI Constest](http://www.geodata-con.kr/notice_view.php?idx=30) **Encouragement Prize** (2021.09)
+    <br>
+    [Title : Fast Prediction of 3-Dimensional Facies Models in Seoul using Generative Adversarial Network]
 
 - #### Tutor - Energy Environment Technological Business
     - 2020.09 ~ 12
