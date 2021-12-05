@@ -7,10 +7,6 @@ tag : [python, pandas, 크롤링]
 
 
 
-url_1 : https://play.google.com/store/apps/collection/cluster?clp=0g4YChYKEHRvcGdyb3NzaW5nX0dBTUUQBxgD:S:ANO1ljLhYwQ&gsr=ChvSDhgKFgoQdG9wZ3Jvc3NpbmdfR0FNRRAHGAM%3D:S:ANO1ljIKta8&hl=ko&gl=KR
-
-url_2 : https://play.google.com/store/apps/collection/cluster?clp=0g4cChoKFHRvcHNlbGxpbmdfZnJlZV9HQU1FEAcYAw%3D%3D:S:ANO1ljJ_Y5U&gsr=Ch_SDhwKGgoUdG9wc2VsbGluZ19mcmVlX0dBTUUQBxgD:S:ANO1ljL4b8c&hl=ko&gl=KR
-
 
 
 ```python
@@ -25,7 +21,7 @@ url = 'url_1'
 
 driver = webdriver.Chrome()
 
-driver.get(url)
+driver.get('https://play.google.com/store/apps/collection/cluster?clp=0g4YChYKEHRvcGdyb3NzaW5nX0dBTUUQBxgD:S:ANO1ljLhYwQ&gsr=ChvSDhgKFgoQdG9wZ3Jvc3NpbmdfR0FNRRAHGAM%3D:S:ANO1ljIKta8&hl=ko&gl=KR')
 
 result_html = driver.page_source
 result_soup = BeautifulSoup(result_html, 'html.parser')
@@ -50,7 +46,7 @@ driver.close()
 
 
 #인기 순위 크롤링
-popular_url = 'url_2'
+popular_url = ' https://play.google.com/store/apps/collection/cluster?clp=0g4cChoKFHRvcHNlbGxpbmdfZnJlZV9HQU1FEAcYAw%3D%3D:S:ANO1ljJ_Y5U&gsr=Ch_SDhwKGgoUdG9wc2VsbGluZ19mcmVlX0dBTUUQBxgD:S:ANO1ljL4b8c&hl=ko&gl=KR'
 
 web_driver = webdriver.Chrome()
 
@@ -108,3 +104,9 @@ hj_bot이라는 슬랙봇 미리 만들어 두고
 hj_bot의 슬랙 토큰 사용
 
 ![image-20211205194346763](../../img/2021-12-05-google_play/image-20211205194346763.png)
+
+
+
+
+
+p.s. 21년12월에 구글 플레이 UI 변경으로 코드 수정 필요
