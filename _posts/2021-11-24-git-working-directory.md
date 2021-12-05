@@ -19,6 +19,12 @@ tags:
 
 ## Directorio de trabajo (Working Directory/Workspace)
 
+Ruta del directorio
+
+``project/``
+
+* * *
+
 * Lugar donde se ejecuta el comando ``git status`` para comprobar el estado de los archivos y subdirectorios del proyecto, esta dentro del **(Working Tree)** ; lugar donde se almacenan los archivos que se están ejecutando o utilizando.
 
 ## Workspace

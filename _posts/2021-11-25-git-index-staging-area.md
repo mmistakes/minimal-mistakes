@@ -19,6 +19,12 @@ tags:
 
 ## Git {INDEX} → Indice o {Staging Area} → Area de Cambios / Preparación
 
+Ruta del directorio
+
+``project/.git/index``
+
+* * *
+
 Los cambios realizados dentro del **{Staged}** son muy parecidos a los cambios **{UnStaged}** , excepto que se han marcado para ser **confirmados** la próxima vez que ejecute ``git commit``
 
 El **{INDEX}** o **{Staging Area}** contiene una **(captura / instantánea)** del contenido del **(Arbol de Trabajo/Working Tree)**, esta **(captura / instantánea)** representa a los contenidos que se cambiaron y que tendrá el **próximo commit**
@@ -78,3 +84,6 @@ Dependiendo de los argumentos que le añadamos puede afectar al
   * Hay que tener en cuenta que modifica el **último** commit.
 
     * ``amend`` → Sustituimos el **commit actual** por lo que teniamos el **commit anterior** a este y le añadimos lo que teniamos registrado en el __{INDEX}__ de forma que podamos corregir lo que se nos olvido añadir o arreglarlo antes de pasarlo al **[Repositorio Local]**
+
+## Gráfico de ejemplo
+

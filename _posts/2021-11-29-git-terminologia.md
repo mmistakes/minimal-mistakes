@@ -35,9 +35,11 @@ Directorios principales del proyecto
 *  *  *
 
 * Fichero **.gitignore**:
-  * indica los ficheros a ignorar cada vez que lanzamos el comando ``git push``
+  * Indica los ficheros a ignorar cada vez que lanzamos el comando ``git push``
 
 *  *  *
+
+* Issues → **Propuestas**
 
 ## Git - Opciones
 
