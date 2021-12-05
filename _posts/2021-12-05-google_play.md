@@ -17,11 +17,11 @@ from datetime import datetime, timedelta
 
 
 #최고 매출 순위 크롤링
-url = 'url_1'
+url = 'https://play.google.com/store/apps/collection/cluster?clp=0g4YChYKEHRvcGdyb3NzaW5nX0dBTUUQBxgD:S:ANO1ljLhYwQ&gsr=ChvSDhgKFgoQdG9wZ3Jvc3NpbmdfR0FNRRAHGAM%3D:S:ANO1ljIKta8&hl=ko&gl=KR'
 
 driver = webdriver.Chrome()
 
-driver.get('https://play.google.com/store/apps/collection/cluster?clp=0g4YChYKEHRvcGdyb3NzaW5nX0dBTUUQBxgD:S:ANO1ljLhYwQ&gsr=ChvSDhgKFgoQdG9wZ3Jvc3NpbmdfR0FNRRAHGAM%3D:S:ANO1ljIKta8&hl=ko&gl=KR')
+driver.get(url)
 
 result_html = driver.page_source
 result_soup = BeautifulSoup(result_html, 'html.parser')
