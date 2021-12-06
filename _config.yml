@@ -105,10 +105,13 @@ analytics:
 # Site Author
 author:
   name             : "ifizzyou"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : "**Front-end** developer
+> React
+> Typescript"
+  location         : "Seoul"
+  email            : "eric7213@naver.com
+  github           : "https://github.com/ifizzyou"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
