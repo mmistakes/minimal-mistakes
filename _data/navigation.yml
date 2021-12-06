@@ -13,6 +13,8 @@ mainMenu:
         url: /categories/designpattern
       - title: "C++ Reference"
         url: /categories/cppreference
+      - title: "CMake"
+        url: /categories/cmake
     - title: Python
       children:
       - title: "Effective Python 2nd"
