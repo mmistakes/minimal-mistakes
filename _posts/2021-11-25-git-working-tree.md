@@ -19,11 +19,11 @@ tags:
 
 ## Arbol de Trabajo (Working Tree)
 
-* Los archivos descargados desde el **\[Repositorio Local\]** y que no han sido modificados o alterados desde su origen se encuentra en el estado **Untracked** esperando a ser modificados o eliminados.  
+* Los archivos descargados desde el **[Repositorio Local]** y que no han sido modificados o alterados desde su origen se encuentra en el estado **Untracked** esperando a ser modificados o eliminados.  
 
-* **(Working Tree)** es como un directorio **(Espejo)** del **\[Repositorio Local\]** donde se almacena los archivos y directorios con los que vamos a trabajar.
+* **(Working Tree)** es como un directorio **(Espejo)** del **[Repositorio Local]** donde se almacena los archivos y directorios con los que vamos a trabajar.
 
-* Este directorio copía los archivos que tiene el __\[Repositorio Local\]__ y que se utilizan para trabajar con ellos sin modificar los archivos originales que se descargaron desde el __\|Repositorio Remoto\|__ y se almacenaron en el directorio del __\[Repositorio Local\]__ que es el directorio **.git/** el cual entre todos sus directorios contiene **(BD/Objetos/Snapshot)** que utiliza el proyecto para poder utilizarse.
+* Este directorio copia los archivos que tiene el **[Repositorio Local]** y que se utilizan para trabajar con ellos sin modificar los archivos originales que se descargaron desde el **«Repositorio Remoto»** y se almacenaron en el directorio del **[Repositorio Local]** que es el directorio **.git/** el cual entre todos sus directorios contiene **(BD/Objetos/Snapshot)** que utiliza el proyecto para poder utilizarse.
 
 Resumen:
 
@@ -33,21 +33,21 @@ Resumen:
 
 * Directorio donde se crean las versiones del proyecto : codigo fuente, datos , archivos del proyecto y etc.
 
-* **(Workspace)** : Se le conoce como __área__ o __espacio de trabajo__
+* **(Workspace)** : Se le conoce como **Working Directory** o **espacio de trabajo**
 
-* **(Codebase)** : Conocido como __base de codigo__ el cual es una colección completa de _código fuente_ usada para construir una aplicación o componente particular
+* **(Codebase)** : Conocido como **base de codigo** el cual es una colección completa de _código fuente_ usada para construir una aplicación o componente particular
 
-* Los archivos descargados desde el **\[Repositorio Local\]** y que no han sido modificados o alterados desde su origen se encuentra en el estado **Untracked** esperando a ser modificados o eliminados.  
+* Los archivos descargados desde el **[Repositorio Local]** y que no han sido modificados o alterados desde su origen se encuentra en el estado **Untracked** esperando a ser modificados o eliminados.  
 
-* **(Working Tree)** es como un directorio **(Espejo)** del **\[Repositorio Local\]** donde se almacena los archivos y directorios con los que vamos a trabajar.
+* **(Working Tree)** es como un directorio **(Espejo)** del **[Repositorio Local]** donde se almacena los archivos y directorios con los que vamos a trabajar.
 
-* Este directorio copía los archivos que tiene el __\[Repositorio Local\]__ y que se utilizan para trabajar con ellos sin modificar los archivos originales que se descargaron desde el __\|Repositorio Remoto\|__ y se almacenaron en el directorio del __\[Repositorio Local\]__ que es el directorio **.git/** el cual entre todos sus directorios contiene **(BD/Objetos/Snapshot)** que utiliza el proyecto para poder utilizarse.
+* Este directorio copia los archivos que tiene el **[Repositorio Local]** y que se utilizan para trabajar con ellos sin modificar los archivos originales que se descargaron desde el **«Repositorio Remoto»** y se almacenaron en el directorio del **[Repositorio Local]** que es el directorio **.git/** el cual entre todos sus directorios contiene **(BD/Objetos/Snapshot)** que utiliza el proyecto para poder utilizarse.
 
 Resumen:
 
 > Directorio del proyecto (archivos/carpetas) contiene reflejo del [Repositorio Local]
 
----
+* * *
 
 Datos Ampliados:
 

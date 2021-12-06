@@ -65,6 +65,10 @@ Crear una nueva ``rama``
 
 Para ciertos tipos de proyectos existen unas ``ramas`` básicas:
 
+Como son las ramas típicas : **master** , **feature** , **developer** , **hotfix** , **release** que se puede ir creando dependiendo de las necesidades del proyecto
+
+## Descripción de las Ramas
+
 * **master** → Rama Principal , predefinida y estandar **(No tocar)**
 
   * Sobre esta **rama** nunca se trabajará ya que es donde se van a integrar todos los cambios las demas ``ramas`` que vayamos haciendo en el proyecto

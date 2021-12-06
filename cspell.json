@@ -13,5 +13,6 @@
     ],
     "words": [],
     "ignoreWords": [],
-    "import": []
+    "import": [],
+    "language": "en,es,es-ES"
 }

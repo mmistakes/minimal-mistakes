@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Git - Terminología básica
+title: Git - Terminologia basica
 date: 2021-11-29
 classes: wide
 toc: true
@@ -18,7 +18,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Git - Terminología básica
+## Git - Terminologia basica
 
 Directorios principales del proyecto
 
@@ -35,9 +35,36 @@ Directorios principales del proyecto
 *  *  *
 
 * Fichero **.gitignore**:
-  * indica los ficheros a ignorar cada vez que lanzamos el comando ``git push``
+  * Indica los ficheros a ignorar cada vez que lanzamos el comando ``git push``
 
 *  *  *
+
+* Issues → **Propuestas**
+
+## Git - Estados
+
+* **Commit** (Confirmado) : Datos están almacenados en la base de datos local
+
+* **Modified** (Modificado) : Has cambiado el contenido del archivo pero todavía no lo has confirmado **(Commit)** en tu base de datos local
+
+* **Staged** (Preparado) : Significa que has marcado un archivo modificado **(Modified)** en su versión actual para que vaya en tu próxima confirmación **(Commit)**
+
+## Git - Secciones
+
+* **(Working Directory - Directorio de TRABAJO)**
+  * Es una copia de una versión del proyecto
+  * Archivos son sacados de la base de datos comprimida del directorio de GIT y se almacenan en el directorio para ser usados y modificados
+    * Ruta : ``/project/``
+
+* **(Staging Area - Area de PREPARACION / INDEX)**
+  * Archivo almacenado en el directorio GIT **[Repo.Local]** que almacena información acerca de lo que va ir en tu ``próximo commit``
+  * También se llama ``{INDEX}`` pero se esta convirtiendo en estandar llamarlo {Area de Preparación}
+    * Ruta : ``/project/.git/index``
+
+* **(Git Directory - Directorio GIT o Repositorio Local)**
+  * Donde se almacenan los **metadatos** y la **base de datos** de los objetos del proyecto
+  * Parte más importante de GIT porque es donde se copia los archivos cuando clonas un **»Repositorio Remoto«** dentro de tu ordenador
+    * Ruta : ``/project/.git/objects``
 
 ## Git - Opciones
 
