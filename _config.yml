@@ -104,9 +104,7 @@ analytics:
 author:
   name             : "ifizzyou"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "**Front-end** developer
-> React
-> Typescript"
+  bio              : "**Front-end** developer"
   location         : "Seoul"
   email            : "eric7213@naver.com
   github           : "https://github.com/ifizzyou"
