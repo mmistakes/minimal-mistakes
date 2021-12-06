@@ -25,12 +25,27 @@ Ruta del directorio
 
 * * *
 
-* Cada archivo del **Working Directory** puede tener 2 estados :
+* Cada archivo del **(Working Directory)** puede tener 2 estados :
 
-  * **{Tracked}** → Archivos rastreados son archivos que están en la última instantánea **(snapshot)** , así como cualquier archivo recientemente preparado **{Staged}** como pueden ser **{Unmodified-No Modificados}**, **{Modified-Sin Modificar}** y **{Staged-Preparados}**
-    * En resumen : Los archivos rastreados **{Tracked File}** son los archivos que están dentro del **{Staging Area/Index}**
+### {Tracked}
 
-  * **(Untracked)** → Cualquier archivo en su **(Working Directory)** que no estuviera en su última instantánea
+* Archivos rastreados son archivos que están en la última instantánea **(snapshot)** , así como cualquier archivo recientemente preparado **{Staged}** como pueden ser **{Unmodified-No Modificados}**, **{Modified-Sin Modificar}** y **{Staged-Preparados}**
+
+  * En resumen : Los archivos rastreados **{Tracked File}** son los archivos que están dentro del **{Staging Area/Index}**
+
+### (Untracked)
+
+* Cualquier archivo en su **(Working Directory)** que no estuviera en su última instantánea **(snapshot)** y no se encuentra en tu **{Staging Area/Index}**
+
+  * Cuando clonas un **[Repositorio]** por primera vez todos sus archivos serán rastreados **(Tracked)** y no modificados **{UnModified}** , Git los comprobará y no editará ninguno
+
+  * Cuando editas archivos, Git los ve como modificados **{Modified}**, porque los has cambiado desde su **"confirmación"** o  **último commit** ; mientras trabajas , se preparan ``git add`` estos archivos modificados **{Modified}** y luego se confirman ``git commit`` con todos esos cambios preparados dentro del **{Staging Area/INDEX}**
+
+    {% include figure image_path="assets/images/graficos/ciclo-archivo-rastreado.jpg" alt="Sencillo gráfico del sistema de gestión de archivos git" caption="Sencillo gráfico del sistema de gestión de archivos git" %}
+
+* * *
+
+## Working Directory
 
 * Lugar donde se ejecuta el comando ``git status`` para comprobar el estado de los archivos y subdirectorios del proyecto, esta dentro del **(Working Tree)** ; lugar donde se almacenan los archivos que se están ejecutando o utilizando.
 
