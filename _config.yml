@@ -101,7 +101,7 @@ analytics:
 
 
 # Site Author
-author: "yeomjh00"
+author:
   name             : "JaeY"
   avatar           : /images/polite_cat.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Don't Stop<br>Keep Going"
