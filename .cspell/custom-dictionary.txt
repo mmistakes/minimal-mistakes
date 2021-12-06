@@ -1,1 +1,3 @@
 # Custom Dictionary Words
+subdirectorio
+subdirectorios

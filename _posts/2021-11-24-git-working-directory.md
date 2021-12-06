@@ -25,6 +25,13 @@ Ruta del directorio
 
 * * *
 
+* Cada archivo del **Working Directory** puede tener 2 estados :
+
+  * **{Tracked}** → Archivos rastreados son archivos que están en la última instantánea **(snapshot)** , así como cualquier archivo recientemente preparado **{Staged}** como pueden ser **{Unmodified-No Modificados}**, **{Modified-Sin Modificar}** y **{Staged-Preparados}**
+    * En resumen : Los archivos rastreados **{Tracked File}** son los archivos que están dentro del **{Staging Area/Index}**
+
+  * **(Untracked)** → Cualquier archivo en su **(Working Directory)** que no estuviera en su última instantánea
+
 * Lugar donde se ejecuta el comando ``git status`` para comprobar el estado de los archivos y subdirectorios del proyecto, esta dentro del **(Working Tree)** ; lugar donde se almacenan los archivos que se están ejecutando o utilizando.
 
 ## Workspace
