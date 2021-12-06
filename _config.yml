@@ -20,9 +20,7 @@ title                    : "Develop life"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "박재현(ifizzyou)"
-description              : "Front-end developer
-> React
-> Typescript"
+description              : "Front-end developer"
 url                      : "https://ifizzyou.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
