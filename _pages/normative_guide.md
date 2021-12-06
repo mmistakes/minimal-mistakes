@@ -13,3 +13,5 @@ sidebar:
 5. [Освітній процесс](/normative_guide/educational_process/)
 6. [Психологічна служба](/normative_guide/psychological_service/)
 7. [Безпека життєдіяльності](/normative_guide/civil_defense/)
+8. [Дія. Цифрова Освіта](/normative_guide/action/)
+9. [Всеукраїнська школа онлайн](/normative_guide/school_online/)
