@@ -34,8 +34,8 @@ $ Accuracy = \frac{TN + TP}{TN + FP + FN + TP}$
 $Precision = \frac{TP}{FP + TP}$
 - 재현율 공식 : 
 $Recall = \frac{TP}{FN + TP}$
-- 정밀도는 TP를 높이고 FP를 낮추는데 초점을 둔다. 즉 Positive를 Negative로 잘못 판단하는 경우를 줄이는 것이 목표.
-- 재현율은 TP를 높이고 FN을 낮추는데 초점을 둔다. 즉 Negative를 Positive로 잘못 판단하는 경우를 줄이는 것이 목표.
+- 정밀도는 TP를 높이고 FP를 낮추는데 초점을 둔다. 즉 Negative를 Positive로 잘못 판단하는 경우를 줄이는 것이 목표.
+- 재현율은 TP를 높이고 FN을 낮추는데 초점을 둔다. 즉 Positive를 Negative로 잘못 판단하는 경우를 줄이는 것이 목표.
 
 #### sklearn function
 - 정확도 : accuracy_score
