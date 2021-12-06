@@ -5,8 +5,8 @@ main:
   - title: "Tag"
     url: /tags/
   - title: "Doc"
-    url: /docs/
-    
+    url: /minimal-mistakes/docs/quick-start-guide/
+
  # - title: "About"
  #   url: https://mmistakes.github.io/minimal-mistakes/about/
  # - title: "Sample Posts"
