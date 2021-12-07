@@ -5,14 +5,15 @@ layout: single
 toc: true
 author_profile: true
 excerpt: "Cryptocurrency and the Blockchain"
-category: crypto
+category: "cryptocurrency_and_the_blockchain"
 categories:
-  - primary
+  - primary 
 permalink: /categories/cryptocurrency_and_the_blockchain/
 header:
   overlay_image: "/assets/images/categories/crypto_main.jpeg"
 ---
 
+{% include main_categories.html %}
 # The Space
 
 The cryptocurrency space has been booming over the last few years. While most of the general population only thinks of Bitcoin and Ethereum when considering the crypto space, there's so much more to it. Some exciting projects in the crypto space include:
