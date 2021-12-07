@@ -274,6 +274,7 @@ compress_html:
   ignore:
     envs: development
 
+google_maps_javascript_api_key: "AIzaSyCeO0NILcS6ikRA9tfRWzfxSdzyqegRubg" 
 
 # Defaults
 defaults:
