@@ -16,4 +16,4 @@ set_property(TARGET ${PROJECT_NAME} PROPERTY VS_DOTNET_TARGET_FRAMEWORK_VERSION 
 ```
 #### Reference 
 ***
- ***[DOTNET_TARGET_FRAMEWORK_VERSION CMake Reference ](https://cmake.org/cmake/help/latest/prop_tgt/DOTNET_TARGET_FRAMEWORK_VERSION.html#prop_tgt:DOTNET_TARGET_FRAMEWORK_VERSION)***
+ - ***[DOTNET_TARGET_FRAMEWORK_VERSION CMake Reference ](https://cmake.org/cmake/help/latest/prop_tgt/DOTNET_TARGET_FRAMEWORK_VERSION.html#prop_tgt:DOTNET_TARGET_FRAMEWORK_VERSION)***
