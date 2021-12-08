@@ -102,11 +102,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "전동준(Dongjun Jeon)"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "취미, 공부 등 **일상**"
+  location         : "경기도 안양시"
+  email            : "513ehdwnsl@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
