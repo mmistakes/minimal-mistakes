@@ -2,19 +2,26 @@
 main:
   - title: "INÍCIO"
     url: /
-  - title: "A EMPRESA"
+  - title: "A NORTAN ENGENHARIA"
     url: /sobre/
     sublinks:
-    - title: "FAQ"
+    - title: "A Nortan"
+      url: /sobre/
+    - title: "Nossa História"
       url: /
-    - title: "Teste"
+    - title: "A Equipe"
+      url: /equipe/
+    - title: "Arquitetura"
       url: /
-  - title: "SERVIÇOS"
-    url: /servicos/
-    sublinks:
-    - title: "FAQ"
+    - title: "Projetos Complementares"
       url: /
-    - title: "Teste"
+    - title: "Construção Civil"
+      url: /
+    - title: "Impermeabilização"
+      url: /
+    - title: "Instalações Elétricas"
+      url: /
+    - title: "Recursos Hídricos e Meio Ambiente"
       url: /
   - title: "CONTATO"
     url: /contato/
@@ -22,5 +29,3 @@ main:
     url: /cursos/
   - title: "ENTRAR"
     url: http://plataforma.nortanengenharia.com
-
-
