@@ -4,6 +4,7 @@ layout: archive
 
 {{ content }}
 
+{% assign entries_layout = page.entries_layout | default: 'list' %}
 {% assign postsByYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
 {% for year in postsByYear %}
   <section id="{{ year.name }}" class="taxonomy__section">
@@ -13,7 +14,7 @@ layout: archive
         {% for cat in post.category %}
         {% if page.category contains cat %} 
           <p>
-            {% include archive-single.html type=page.entries_layout %}
+            {% include archive-single.html type=entries_layout %}
           </p>
         {% endif %}
       {% endfor %}

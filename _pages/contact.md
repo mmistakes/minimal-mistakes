@@ -21,11 +21,13 @@ author_profile: false
 
         <div class="archive__item-excerpt">
         
-            Poznań University of Technology<BR>
-            Faculty of Automatic Control, Robotics and Electrical Engineering<BR>
-            Intstitute of Robotics and Machine Intelligence<BR>
-            <BR>
-            <a href="mailto:vision@put.poznan.pl" >vision@put.poznan.pl</a>
+            <p>
+                Poznań University of Technology<BR>
+                Faculty of Automatic Control, Robotics and Electrical Engineering<BR>
+                Intstitute of Robotics and Machine Intelligence<BR>
+                <BR>
+                <a href="mailto:vision@put.poznan.pl" >vision@put.poznan.pl</a>
+            </p>
         </div>
     </div>
     </div>

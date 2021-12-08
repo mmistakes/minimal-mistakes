@@ -8,11 +8,14 @@ ptak-bartosz:
   avatar      : "/assets/images/bio/bartoszptak.jpg"
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fa fa-envelope"
       url: "mailto:bartosz.ptak@doctorate.put.poznan.pl"
     - label: "Github"
-      icon: "fab fa-fw fa-github-square"
+      icon: "fa fa-github-square"
       url: "https://github.com/bartoszptak"
+    - label: "Linkedin"
+      icon: "fa fa-linkedin-square"
+      url: "https://www.linkedin.com/in/bartoszptak/"
 
 aszkowski-przemyslaw:
   firstname   : "Przemysław"
@@ -22,7 +25,7 @@ aszkowski-przemyslaw:
   avatar      : "/assets/images/bio/przemekaszkowski.jpg"
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fa fa-envelope"
       url: "mailto:przemyslaw.aszkowski@doctorate.put.poznan.pl"
 
 pieczynski-dominik:  
@@ -33,7 +36,7 @@ pieczynski-dominik:
   avatar      : "/assets/images/bio/dominikpieczynski.jpg"
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fa fa-envelope"
       url: "mailto:dominik.pieczynski@put.poznan.pl"
 
 kraft-marek:  
@@ -44,7 +47,7 @@ kraft-marek:
   avatar      : "/assets/images/bio/marekkraft.jpg"
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fa fa-envelope"
       url: "mailto:marek.kraft@put.poznan.pl"
 
 piechocki-mateusz:  
@@ -55,7 +58,7 @@ piechocki-mateusz:
   avatar      : "/assets/images/bio/mateuszpiechocki.jpg"
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fa fa-envelope"
       url: "mailto:mateusz.piechocki@doctorate.put.poznan.pl"
 
 fularz-michal:  
@@ -66,5 +69,5 @@ fularz-michal:
   avatar      : "/assets/images/bio/michalfularz.jpg"
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fa fa-envelope"
       url: "mailto:michal.fularz@put.poznan.pl"
