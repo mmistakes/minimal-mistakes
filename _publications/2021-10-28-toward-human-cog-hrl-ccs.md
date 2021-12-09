@@ -10,7 +10,7 @@ tags:
   - World Models
   - Implementation
   - Research
-  - Graphical Models
+  - Graphical Model
 comments: true
 classes: wide
 ---

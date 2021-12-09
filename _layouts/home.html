@@ -29,9 +29,12 @@ layout: archive
   {% assign projects = site.projects %}
 {% endif %}
 
+{% assign project_entries_layout = projects.entries_layout | default: 'gridview' %}
+<div class="entries-{{ project_entries_layout }}">
 {% for project in projects %}
   {% include archive-single-project.html %}
 {% endfor %}
+</div>
 
 {% include paginator.html %}
 
