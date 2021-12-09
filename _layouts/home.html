@@ -34,3 +34,20 @@ layout: archive
 {% endfor %}
 
 {% include paginator.html %}
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_publications | default: "Recent Publications" }}</h3>
+
+{% if publications_paginator %}
+  {% assign publications = publications_paginator.publications %}
+{% else %}
+  {% assign publications = site.publications %}
+{% endif %}
+
+{% assign publication_entries_layout = publication.entries_layout | default: 'list' %}
+<div class="entries-{{ publication_entries_layout }}">
+{% for publication in publications %}
+  {% include archive-single-publication.html %}
+{% endfor %}
+</div>
+
+{% include paginator.html %}

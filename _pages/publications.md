@@ -1,6 +1,8 @@
 ---
 title: "Publications"
+layout: collection
 permalink: /publications/
-layout: single
+collection: publications
+# classes: wide
 author_profile: true
 ---
