@@ -109,3 +109,7 @@ Cada vez que realizamos un ``git commit -m "Mensaje"`` se crea un nuevo circulo 
 Es el sistema básico que recomienda usar **GIT** sobre como trabajar de forma estandarizada y correcta
 
 ![Alt texto](/assets/images/graficos/snapshot-4.jpg "Concepto de Repositorio")
+
+## Working Tree Clean
+
+* Significa que tienes limpio el **(Working Directory)** , ninguno de sus archivos rastreados **(Tracked)** están modificados **{Modified}**, tampoco ve ningún archivo no rastreado **(UnTracked)** aparecería o estaría listado aquí

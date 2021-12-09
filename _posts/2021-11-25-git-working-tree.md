@@ -53,10 +53,10 @@ Datos Ampliados:
 
 * **Codebase**
 
-        El codebase de un proyecto esta típicamente almacenado en un repositorio de control de fuentes.
+El codebase de un proyecto esta típicamente almacenado en un repositorio de control de fuentes.
 
-        Un repositorio del código fuente es un lugar en donde son guardadas grandes cantidades de código fuente, tanto públicamente como privada. 
-        
-        Son frecuentemente usados por proyectos de multi-desarrolladores para manejar, de una manera organizada, varias versiones y los conflictos que se presentan con los desarrolladores sometiendo modificaciones conflictivas. 
-        
-        Subversion y Mercurial son herramientas populares usadas para manejar este flujo de trabajo, y son comunes en proyectos de fuente abierta.
+Un repositorio del código fuente es un lugar en donde son guardadas grandes cantidades de código fuente, tanto públicamente como privada.
+
+Son frecuentemente usados por proyectos de multi-desarrolladores para manejar, de una manera organizada, varias versiones y los conflictos que se presentan con los desarrolladores sometiendo modificaciones conflictivas.
+
+Subversion y Mercurial son herramientas populares usadas para manejar este flujo de trabajo, y son comunes en proyectos de fuente abierta.

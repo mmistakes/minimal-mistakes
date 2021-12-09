@@ -19,27 +19,29 @@ tags:
 
 ## Directorio de trabajo (Working Directory/Workspace)
 
-Ruta del directorio
+Ruta del directorio :
 
 ``project/``
 
 * * *
 
-* Cada archivo del **(Working Directory)** puede tener 2 estados :
+* IMPORTANTE : Cada **"Archivo"** del **Working Directory** puede tener 2 estados :
 
 ### {Tracked}
 
-* Archivos rastreados son archivos que están en la última instantánea **(snapshot)** , así como cualquier archivo recientemente preparado **{Staged}** como pueden ser **{Unmodified-No Modificados}**, **{Modified-Sin Modificar}** y **{Staged-Preparados}**
+* Archivos rastreados son archivos que están en la última instantánea **(snapshot)** , así como cualquier archivo recientemente **Preparados** como pueden ser **{Unmodified-No Modificados}**, **{Modified-Sin Modificar}** y **{Staged-Preparados}**
 
-  * En resumen : Los archivos rastreados **{Tracked File}** son los archivos que están dentro del **{Staging Area/Index}**
+  * En resumen : Los archivos rastreados **{Tracked File}** son los archivos que están dentro del **{Staging Area/Index}** y que **GIT** tiene **monitorizado** , **"rastreado"** o que **conoce**
 
 ### (Untracked)
 
-* Cualquier archivo en su **(Working Directory)** que no estuviera en su última instantánea **(snapshot)** y no se encuentra en tu **{Staging Area/Index}**
+* Archivos no rastreados **(Untracked)** es cualquier archivo del **(Working Directory)** que no estuviera en su última instantánea **(snapshot)** y no se encuentra en tu **{Staging Area/Index}**
 
-  * Cuando clonas un **[Repositorio]** por primera vez todos sus archivos serán rastreados **(Tracked)** y no modificados **{UnModified}** , Git los comprobará y no editará ninguno
+  * Cuando clonas un **[Repositorio]** por primera vez todos sus archivos serán rastreados **(Tracked)** y no modificados **{UnModified}** porque **GIT** acaba de comprobarlos y no has editado ninguno todavía
 
-  * Cuando editas archivos, Git los ve como modificados **{Modified}**, porque los has cambiado desde su **"confirmación"** o  **último commit** ; mientras trabajas , se preparan ``git add`` estos archivos modificados **{Modified}** y luego se confirman ``git commit`` con todos esos cambios preparados dentro del **{Staging Area/INDEX}**
+  * Cuando editas los archivos, **GIT** los ve como modificados **{Modified}**, porque los has cambiado desde su **"confirmación"** o  **último commit**.
+  
+    * A medida mientras trabajas con ellos , se preparan **{Staged}** selectivamente estos archivos modificados **{Modified}** mediante el comando ``git add`` y luego se confirman ``git commit`` con todos esos cambios preparados dentro del **{Staging Area/INDEX}**
 
     {% include figure image_path="assets/images/graficos/ciclo-archivo-rastreado.jpg" alt="Sencillo gráfico del sistema de gestión de archivos git" caption="Sencillo gráfico del sistema de gestión de archivos git" %}
 

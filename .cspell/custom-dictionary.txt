@@ -1,3 +1,4 @@
 # Custom Dictionary Words
+monitorizado
 subdirectorio
 subdirectorios
