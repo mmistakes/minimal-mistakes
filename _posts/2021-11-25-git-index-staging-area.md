@@ -86,4 +86,3 @@ Dependiendo de los argumentos que le añadamos puede afectar al
     * ``amend`` → Sustituimos el **commit actual** por lo que teniamos el **commit anterior** a este y le añadimos lo que teniamos registrado en el __{INDEX}__ de forma que podamos corregir lo que se nos olvido añadir o arreglarlo antes de pasarlo al **[Repositorio Local]**
 
 ## Gráfico de ejemplo
-
