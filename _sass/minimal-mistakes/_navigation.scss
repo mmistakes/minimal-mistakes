@@ -177,7 +177,7 @@
   -ms-flex-align: center;
   align-items: center;
   min-height: $nav-height;
-  // background: $background-color;
+
 
   a {
     display: block;
@@ -267,7 +267,7 @@
     padding: 5px;
     border: 1px solid $border-color;
     border-radius: $border-radius;
-    background: $background-color;
+    background: white;
     -webkit-box-shadow: 0 2px 4px 0 rgba(#000, 0.16),
       0 2px 10px 0 rgba(#000, 0.12);
     box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
@@ -308,7 +308,7 @@
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
-      border-color: $background-color transparent;
+      border-color: $background-color;
       display: block;
       z-index: 1;
     }

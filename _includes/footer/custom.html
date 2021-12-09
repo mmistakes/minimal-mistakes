@@ -4,9 +4,13 @@
 
 <H4>Our partners:</H4>
 
+<div class="page__footer-follow">
+    <ul class="social-icons">
 {% for partner in partners %}
     {% assign p = partner[1] %}
-    <a href="{{ p.url }}"><img src="{{ p.logo }}" alt="{{ p.name }}" height="125px" /></a>
+    <li><a href="{{ p.url }}"><img src="{{ p.logo }}" alt="{{ p.name }}" height="125px" /></a></li>
+
 {% endfor %}
 <BR><br>
+    </ul></div>
 <!-- end custom footer snippets -->

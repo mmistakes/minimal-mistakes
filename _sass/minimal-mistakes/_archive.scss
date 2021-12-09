@@ -220,7 +220,7 @@
   }
 
   .archive__item-excerpt {
-    display: none;
+    // display: none;
 
     @include breakpoint($medium) {
       display: block;
