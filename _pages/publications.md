@@ -3,7 +3,7 @@ classes: wide
 layout: single
 author_profile: true
 title: Publications
-date:   2021-11-20 00:00:00 -0800
+date:   2021-12-09 00:00:00 -0800
 permalink: /publications/
 ---   
 
