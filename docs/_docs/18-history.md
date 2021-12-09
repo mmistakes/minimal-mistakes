@@ -5,9 +5,153 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-06-06T11:48:13-04:00
+last_modified_at: 2021-10-19T11:26:15-04:00
 toc: false
 ---
+
+## Unreleased
+
+### Bug Fixes
+
+- Fix sort order of Staticman comments when data files aren't named alphabetically. [#3184](https://github.com/mmistakes/minimal-mistakes/pull/3184)
+- Fix broken documentation link and add Baidu site verification to `_config.yml` files. [#3139](https://github.com/mmistakes/minimal-mistakes/pull/3139)
+- Fix `layout: compress` issue with HTML comment in video include. [#3117](https://github.com/mmistakes/minimal-mistakes/pull/3117)
+- Add Magnific Popup class to anchors that only contain an `img` element. [#3111](https://github.com/mmistakes/minimal-mistakes/issues/3111) [#3114](https://github.com/mmistakes/minimal-mistakes/pull/3114)
+- Fix heading level of related posts section from `h4` to `h2` to improve accessibility and SEO. [#3064](https://github.com/mmistakes/minimal-mistakes/pull/3064)
+- Fix grammar error in German localized UI text string. [#3063](https://github.com/mmistakes/minimal-mistakes/pull/3063)
+- Remove site.url from first breadcrumb link. [#3051](https://github.com/mmistakes/minimal-mistakes/pull/3051)
+
+### Enhancements
+
+- Update and add missing Brazilian Portuguese translations. [#3204](https://github.com/mmistakes/minimal-mistakes/pull/3204)
+- Add link to documentation clarifying how to add plugins. [#3181](https://github.com/mmistakes/minimal-mistakes/pull/3181)
+- Add optional label attribute for utterances comments. [#3128](https://github.com/mmistakes/minimal-mistakes/pull/3128)
+- Bump path-parse from 1.0.6 to 1.0.7. [#3116](https://github.com/mmistakes/minimal-mistakes/pull/3116)
+- Add missing Danish translations. [#3095](https://github.com/mmistakes/minimal-mistakes/pull/3095)
+- Add ARIA role to search forms. [#3086](https://github.com/mmistakes/minimal-mistakes/pull/3086)
+- Add overflow scroll bar to sticky table of contents that are taller than the viewport's height. [#2874](https://github.com/mmistakes/minimal-mistakes/pull/2874)
+- Add Microformats markup. [#3052](https://github.com/mmistakes/minimal-mistakes/pull/3052)
+- Add instructions on how to unminify `main.js` for easier browser debugging. [#3055](https://github.com/mmistakes/minimal-mistakes/pull/3055)
+
+## [4.24.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0)
+
+### Bug Fixes
+
+- Fix README text for Gumshoejs license. [#3024](https://github.com/mmistakes/minimal-mistakes/pull/3024)
+- Remove `tabindex="-1"` from `input` elements in `search.html` layout to allow them to be accessible by keyboard. [#2982](https://github.com/mmistakes/minimal-mistakes/issues/2982)
+- Fix broken sidebar image in sample post. [#3013](https://github.com/mmistakes/minimal-mistakes/issues/3013)
+- Fix broken links in Upgrading documentation. [#3004](https://github.com/mmistakes/minimal-mistakes/issues/3004)
+
+### Enhancements
+
+- Remove IE9 flexbox fallback. [#3042](https://github.com/mmistakes/minimal-mistakes/pull/3042)
+- Remove `h2` from skip links navigation as it is not important for site structure. [#3012](https://github.com/mmistakes/minimal-mistakes/pull/3012)
+- Loads Font Awesome asynchronously. [#2967](https://github.com/mmistakes/minimal-mistakes/pull/2967)
+- Replace custom search icon SVG with Font Awesome icon. [#2774](https://github.com/mmistakes/minimal-mistakes/pull/2774)
+- Adds support for giscus comments. [#3022](https://github.com/mmistakes/minimal-mistakes/pull/3022)
+
+## [4.23.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.23.0)
+
+### Enhancements
+
+- Add Arabic (عربي) localized UI text strings. [#2936](https://github.com/mmistakes/minimal-mistakes/pull/2936)
+- Update onchange and uglify-js dependencies.
+- Document head and footer `custom.html` includes. [#2815](https://github.com/mmistakes/minimal-mistakes/pull/2815)
+- Color notices based on skin colors instead of fixed values. [#2887](https://github.com/mmistakes/minimal-mistakes/pull/2887)
+- Add configurable datetime format. [#2844](https://github.com/mmistakes/minimal-mistakes/pull/2844)
+- Add Baidu site verification [#2830](https://github.com/mmistakes/minimal-mistakes/pull/2830)
+- Add `alt` attribute to site logo. [#2529](https://github.com/mmistakes/minimal-mistakes/issues/2529) [#2824](https://github.com/mmistakes/minimal-mistakes/issues/2824)
+
+### Bug Fixes
+
+- Fix menu toggle to properly show close icon when open.
+- Fix Jekyll environment note in configuration documentation. [#2912](https://github.com/mmistakes/minimal-mistakes/issues/2912)
+- Fix typo in Helpers documentation. [#2940](https://github.com/mmistakes/minimal-mistakes/pull/2940)
+- Remove all references to official public Staticman API instance. [#2818](https://github.com/mmistakes/minimal-mistakes/issues/2818) [#2831](https://github.com/mmistakes/minimal-mistakes/pull/2831)
+- Remove Google Search CSS. [#2852](https://github.com/mmistakes/minimal-mistakes/issues/2852) [#2855](https://github.com/mmistakes/minimal-mistakes/pull/2855)
+
+## [4.22.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.22.0)
+
+### Bug Fixes
+
+- Remove Google Search script from `404.md`. [#2597](https://github.com/mmistakes/minimal-mistakes/issues/2597) [#2737](https://github.com/mmistakes/minimal-mistakes/pull/2737) [#2789](https://github.com/mmistakes/minimal-mistakes/pull/2789)
+- Fix Font Awesome icon color in `contrast`, `dark`, `mint`, `neon`, `plum`, and `sunrise` skins. [#2724](https://github.com/mmistakes/minimal-mistakes/issues/2724)
+
+### Enhancements
+
+- Allow custom sorting for collections. [#2723](https://github.com/mmistakes/minimal-mistakes/pull/2723)
+- Use `sort_natural` instead of custom Liquid logic to sort tags and categories. [#2756](https://github.com/mmistakes/minimal-mistakes/pull/2756)
+- Add configuration option to toggle off RSS feed link in `<head>` and site footer. [#2787](https://github.com/mmistakes/minimal-mistakes/pull/2787)
+- Upgrade Lunrjs to 2.3.9 and switch to `relative_url`. [#2805](https://github.com/mmistakes/minimal-mistakes/pull/2805)
+- Adds `.webp` to list of supported image extensions for the image popup lightbox. [#2788](https://github.com/mmistakes/minimal-mistakes/pull/2788)
+- Add Hebrew localized UI text strings. [#2760](https://github.com/mmistakes/minimal-mistakes/pull/2760)
+- Update documentation to include `toc_sticky` parameter's description. [#2741](https://github.com/mmistakes/minimal-mistakes/pull/2741)
+- Update Indonesian localized UI text strings. [#2731](https://github.com/mmistakes/minimal-mistakes/pull/2731)
+- Update remote theme documentation. [#2734](https://github.com/mmistakes/minimal-mistakes/pull/2734)
+- Update allejo/jekyll-toc to v1.1.0, skip headings without an ID. [#2752](https://github.com/mmistakes/minimal-mistakes/pull/2752)
+- Allow custom gradient for page header overlay. [#2806](https://github.com/mmistakes/minimal-mistakes/pull/2806)
+
+## [4.21.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.21.0)
+
+### Bug Fixes
+
+- Fix greedy navigation by improving reliability of remaining space for visible links. [#2664](https://github.com/mmistakes/minimal-mistakes/issues/2664)
+- Collapse white-space in `figure` helper to fix issues when used in Markdown ordered and unordered lists. [#2697](https://github.com/mmistakes/minimal-mistakes/pull/2697)
+- Fix dead link to CI services in documentation. [#2635](https://github.com/mmistakes/minimal-mistakes/issues/2635) [#2692](https://github.com/mmistakes/minimal-mistakes/pull/2692)
+- Fix a small typo in documentation. [#2718](https://github.com/mmistakes/minimal-mistakes/pull/2718)
+
+### Enhancements
+
+- Update jQuery to 3.5.1. [#2713](https://github.com/mmistakes/minimal-mistakes/pull/2713)
+- Add Indonesian localized UI text strings. [#2725](https://github.com/mmistakes/minimal-mistakes/pull/2725)
+- Update Vietnamese localized UI text strings. [#2722](https://github.com/mmistakes/minimal-mistakes/pull/2722)
+- Add Norwegian (Norsk) localized UI text strings. [#2702](https://github.com/mmistakes/minimal-mistakes/pull/2702)
+- Update allejo/jekyll-toc to v1.0.14 [#2700](https://github.com/mmistakes/minimal-mistakes/pull/2700)
+
+## [4.20.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.20.2)
+
+### Bug Fixes
+
+- Fix broken link in documentation. [#2677](https://github.com/mmistakes/minimal-mistakes/issues/2677)
+- Fix typo in documentation. [#2678](https://github.com/mmistakes/minimal-mistakes/issues/2678)
+- Remove duplicate CSS definitions. [#2666](https://github.com/mmistakes/minimal-mistakes/pull/2666)
+- Fix `entries_layout: grid` in various layouts. [#2639](https://github.com/mmistakes/minimal-mistakes/issues/2639)
+- Change `fa` to `fas` for Font Awesome 5. [#2649](https://github.com/mmistakes/minimal-mistakes/pull/2649)
+
+### Enhancements
+
+- Refactor page meta include. [#2641](https://github.com/mmistakes/minimal-mistakes/pull/2641)
+- Add `article:author` Open Graph markup. [#2670](https://github.com/mmistakes/minimal-mistakes/pull/2670)
+
+## [4.20.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.20.1)
+
+### Bug Fixes
+
+- Fix grid `entries_layout` in home.html. [#2616](https://github.com/mmistakes/minimal-mistakes/pull/2616)
+
+## [4.20.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.20.0)
+
+### Bug Fixes
+
+- Add `relative_url` filter to author home link [#2575](https://github.com/mmistakes/minimal-mistakes/pull/2575)
+- Fix `analytics.provider` config comment to list all analytics providers. [#2607](https://github.com/mmistakes/minimal-mistakes/pull/2607)
+- Fix typo in installation documentation. [#2570](https://github.com/mmistakes/minimal-mistakes/pull/2570)
+- Fix broken Lunr search with Jekyll v4.1.0. [#2617](https://github.com/mmistakes/minimal-mistakes/pull/2617)
+
+### Enhancements
+
+- Add an optional date alongside the reading time. To enable set `show_date: true` similar to how reading time is. [#2526](https://github.com/mmistakes/minimal-mistakes/pull/2526)
+- Remove hidden posts from posts.html layout. [#2625](https://github.com/mmistakes/minimal-mistakes/pull/2625)
+- Add entry layout configuration for `list` (default) or `grid` views on `layout: home`. [#2616](https://github.com/mmistakes/minimal-mistakes/pull/2616)
+- Add missing Chinese translations. [#2576](https://github.com/mmistakes/minimal-mistakes/pull/2576)
+- Improve Chinese translations. [#2626](https://github.com/mmistakes/minimal-mistakes/pull/2626)
+- Add `line-height` to `h4` element in notice helper. [#2602](https://github.com/mmistakes/minimal-mistakes/pull/2602)
+- Improve Algolia search. [#2572](https://github.com/mmistakes/minimal-mistakes/pull/2572)
+- Update link to wtfpl license in README. [#2571](https://github.com/mmistakes/minimal-mistakes/pull/2571)
+- Ignore teaser headline in table of contents when including posts list in another page. [#2558](https://github.com/mmistakes/minimal-mistakes/pull/2558)
+- Replace Font Awesome Kits with CSS from jsDelivr CDN. [#2583](https://github.com/mmistakes/minimal-mistakes/pull/2583)
+- Add `danmaku` option to Bilibili video provider and add corresponding documentation/ [#2599](https://github.com/mmistakes/minimal-mistakes/pull/2599)
+- Update documentation about loading l10n data file from the theme-gem. [#2621](https://github.com/mmistakes/minimal-mistakes/issues/2621) [#2624](https://github.com/mmistakes/minimal-mistakes/pull/2624)
 
 ## [4.19.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.3)
 

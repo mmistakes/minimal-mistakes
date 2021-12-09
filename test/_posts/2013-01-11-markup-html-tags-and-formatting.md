@@ -11,6 +11,7 @@ tags:
   - html
   - markup
 toc: true
+toc_sticky: true
 ---
 
 A variety of common markup showing how the theme styles them.

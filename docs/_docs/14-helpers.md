@@ -129,7 +129,7 @@ To add a feature row containing three content blocks with text and image, add th
 | Name              | Required     | Description                                                                                          | Default                            |
 | ----------------- | ------------ | ---------------------------------------------------------------------------------------------------- | ---------------------------------- |
 | **image_path**    | **Required** | Full path to image eg: `/assets/images/filename.jpg`. Use absolute URLS for those hosted externally. |                                    |
-| **image_caption** | Optional     | Caption for image, Markdown is supported eg: `"Image from [Unsplash](https://unsplash.com)"          |
+| **image_caption** | Optional     | Caption for image, Markdown is supported eg: `"Image from [Unsplash](https://unsplash.com)"`         |
 | **alt**           | Optional     | Alternate text for image.                                                                            |                                    |
 | **title**         | Optional     | Content block title.                                                                                 |                                    |
 | **excerpt**       | Optional     | Content block excerpt text. Markdown is allowed.                                                     |                                    |
@@ -179,6 +179,7 @@ Embed a video from YouTube, Vimeo, Google Drive, or bilibili that responsively s
 | ---------- | ------------ | ---------------------------------------------------------- |
 | `id`       | **Required** | ID of the video                                            |
 | `provider` | **Required** | Hosting provider of the video: `youtube`, `vimeo`, `google-drive`, or `bilibili` |
+| `danmaku`  | Optional     | Bilibili only, [details below](#Bilibili)                  |
 
 ### YouTube
 
@@ -240,6 +241,30 @@ header:
     provider: google-drive
 ```
 
+### Bilibili
+
+To embed the following Bilibili video at url `https://www.bilibili.com/video/BV1E7411e7hC` into a post or page's main content you'd use:
+
+```liquid
+{% raw %}{% include video id="BV1E7411e7hC" provider="bilibili" %}{% endraw %}
+```
+
+If you want to enable danmaku (弹幕) for the embedded video, which is disabled by default, you can supply an additional parameter `danmaku="1"` as shown below:
+
+```liquid
+{% raw %}{% include video id="BV1E7411e7hC" provider="bilibili" danmaku="1" %}{% endraw %}
+```
+
+To embed it as a video header you'd use the following YAML Front Matter:
+
+```yaml
+header:
+  video:
+    id: BV1E7411e7hC
+    provider: bilibili
+    danmaku: 1
+```
+
 ## Table of contents
 
 Auto-generated table of contents list for your posts and pages can be enabled using two methods.
@@ -269,6 +294,31 @@ toc_icon: "cog"
 
 **Note:** using both methods will have unintended results. Be sure to remove `{% raw %}{% include toc %}{% endraw %}` placed table of contents from your content when using `toc: true`.
 {: .notice--warning }
+
+{% capture notice-text %}
+**Note:** You need to use contiguous levels of headings for the TOC to generate properly. For example:
+
+```markdown
+Good headings:
+
+# Heading
+## Heading
+### Heading
+### Heading
+# Heading
+## Heading
+
+Bad headings:
+
+# Heading
+### Heading (skipped H2)
+##### Heading (skipped H4)
+```
+{% endcapture %}
+
+<div class="notice--warning">
+  {{ notice-text | markdownify }}
+</div>
 
 ### Enabled via `toc` include (deprecated)
 

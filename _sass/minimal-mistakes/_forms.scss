@@ -357,37 +357,3 @@ select:focus {
   left: 50%;
   z-index: 11;
 }
-
-/*
-     Google search form
-     ========================================================================== */
-
-#goog-fixurl {
-  ul {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-    li {
-      list-style-type: none;
-    }
-  }
-}
-
-#goog-wm-qt {
-  width: auto;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  padding: 8px 20px;
-  display: inline-block;
-  font-size: $type-size-6;
-  background-color: #fff;
-  color: #000;
-  border-width: 2px !important;
-  border-style: solid !important;
-  border-color: $border-color;
-  border-radius: $border-radius;
-}
-
-#goog-wm-sb {
-  @extend .btn;
-}

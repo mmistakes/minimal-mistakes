@@ -2,7 +2,7 @@
 title: "JavaScript"
 permalink: /docs/javascript/
 excerpt: "Instructions for customizing and building the theme's scripts."
-last_modified_at: 2019-05-02T08:55:27-04:00
+last_modified_at: 2021-07-23T09:33:35-04:00
 ---
 
 The theme's `assets/js/main.min.js` script is built from several vendor, jQuery plugins, and other scripts found in [`assets/js/`](https://github.com/mmistakes/minimal-mistakes/tree/master/assets/js).
@@ -20,7 +20,7 @@ minimal mistakes
 |  |  |   └── smooth-scroll.js               # make same-page links scroll smoothly
 |  |  ├── vendor
 |  |  |   └── jquery
-|  |  |       └── jquery-3.4.1.js
+|  |  |       └── jquery-3.5.1.js
 |  |  ├── _main.js                           # jQuery plugin settings and other scripts
 |  |  └── main.min.js                        # concatenated and minified theme script
 ```
@@ -64,3 +64,19 @@ To get started:
 {: .notice--warning}
 
 If all goes well, running `npm run build:js` will compress/concatenate `_main.js` and all plugin scripts into `main.min.js`.
+
+## Debugging
+
+The minified JavaScript is harder to debug in the browser than the raw source. To stop the minification and bundle all the JavaScript as-is --- open up `package.json` and edit the value `scripts.uglify` from:
+
+```json
+  "scripts": {
+    "uglify": "uglifyjs [...] -c -m -o assets/js/main.min.js",
+```
+
+To the following:
+
+```json
+  "scripts": {
+    "uglify": "cat [...] > assets/js/main.min.js",
+```
