@@ -17,7 +17,7 @@ tags:
   - git-manual
 ---
 
-## Git - status
+## Git - Status
 
 Muestra el estado de los ficheros del **(Directorio de Trabajo - Working Directory)**
 
@@ -30,6 +30,8 @@ Muestra el estado de los ficheros del **(Directorio de Trabajo - Working Directo
 * **Staged** : Archivos y directorios registrados para el ``próximo commit``
 
 ```markdown
+                          [Directory Working]
+                                  ↓                          
     (Untracked) ||| {UnModified} ||| {Modified} ||| {INDEX-Staged}
                          |               |               |
 ø git add <file> ----------------------------------------> 
@@ -44,7 +46,7 @@ Muestra el estado de los ficheros del **(Directorio de Trabajo - Working Directo
                          |               |               |
                          |<--------- git commit---------ø|
                          |               |               |
-```
+g```
 
 ## Git - status -s
 
@@ -54,12 +56,11 @@ Muestra el estado en formato más conciso y una serie de claves que nos ayuda a 
 git status -s
 ```
 
-Los campos incluyendo -> están separados desde cada otro por un simple espacio 
-Si un nombre de archivo contiene espacio o no tiene un caracter.
+* Columna de la **izquierda** indica el status del **{Staging Area}**
 
-Para rutas con conflictos de fusión 'X' e 'Y' muestra el estado modificado de cada lado de la fusión
+* Columna de la **derecha** indica el status **(Working Tree)**
 
-Para rutas que no tienen conflictos 'X' muestra el estado del Indice 'Y' mostrando el estado del 'árbol de trabajo = Working Tree' para caminos no explorados 'XY' que son '??'.
+Los campos están separados del otro por un simple espacio
 
 Otros códigos de estado pueden interpretarse como el siguiente :  
 
@@ -71,5 +72,13 @@ D  = Deleted
 R  = Renamed
 C  = Copied
 U  = Updated but UnMerged 
+?? = Aren´t Tracked
+↓↓→→→→ [Working Directory]
+↓
+↓→→→→{Staging Area}
 ```
 
+<!-- 
+Para rutas con conflictos de fusión 'X' e 'Y' muestra el estado modificado de cada lado de la fusión
+Para rutas que no tienen conflictos 'X' muestra el estado del Indice 'Y' mostrando el estado del 'árbol de trabajo = Working Tree' para caminos no explorados 'XY' que son '??'.
+-->
