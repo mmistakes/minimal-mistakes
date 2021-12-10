@@ -2,7 +2,7 @@
 published: true
 layout: single
 title: "이름이 명시되지 않은 변수를 함수 파라미터로 사용하는 이유"
-category: none
+category: cppreference
 tags:
 comments: true
 sidebar:
