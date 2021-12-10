@@ -38,6 +38,14 @@
       text-decoration: none;
     }
   }
+
+  &__sticky {
+    @include breakpoint($medium) {
+      position: sticky;
+      top: 0;
+      background: $background-color;  
+    }
+  }
 }
 
 .site-logo img {
