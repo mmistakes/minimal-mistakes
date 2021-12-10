@@ -2,7 +2,7 @@
 published: true
 layout: single
 title: "C++ constexpr"
-category: none
+category: cppreference
 tags:
 comments: true
 sidebar:
