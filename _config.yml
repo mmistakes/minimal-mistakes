@@ -105,7 +105,7 @@ author:
   name             : "노경민"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "주니어 개발자"
-  location         : "서울"
+  location         : "Seoul"
   email            :
   links:
     - label: "Email"
