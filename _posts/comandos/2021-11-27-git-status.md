@@ -19,15 +19,27 @@ tags:
 
 ## Git - Status
 
-Muestra el estado de los ficheros del **(Directorio de Trabajo - Working Directory)**
+Muestra el estado de los ficheros dentro del **(Directorio de Trabajo - Working Directory)** el cual engloba tanto la parte **(Untracked)** como **{Tracked}**
 
-* **Untracked** : No existe seguimiento del archivo **``git commit``** dentro del **(Working Directory)**
+> Recuerda : <br>
+> Git siempre compara los archivos del **último commit** con los archivos que tienes tanto en el **(Untracked)** como en las demás etapas del sistema **GIT** como son **{UnModified}** / **{Modified}** / **{Staging Area}** para ver las diferencias entre ellos y así saber si han habido cambios en el código del **[Repositorio]** del proyecto o no.
+
+```git
+←←←←←[Working Directory]→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→
+            ||
+(Untracked) ||   {Tracked}      {Tracked}          {Tracked}           {Tracked}    
+            ||  {UnModified}    {Modified}   {Staging Area / INDEX}   |Repo.Local|
+            ||
+            ||
+```
+
+* **Untracked** : No existe seguimiento del archivo **``git commit``** dentro del **(Working Directory)** con respecto al **último commit** del **[Repositorio]** descargado.
 
 * **UnModified** : Después de hacer ``git add <archivo>`` el archivo queda guardado y esperando a ser enviado mediante ``git commit -m "mensaje"`` y ``git push`` al **»Repositorio Remoto«**
 
 * **Modified** : Los archivos **UnModified** han sido modificados respecto al ``commit anterior`` lo que significa que para poder enviarse al **»Repositorio Remoto«** se debe de hacer otra vez ``git add <archive>`` y ``git commit -m "mensaje"``
 
-* **Staged** : Archivos y directorios registrados para el ``próximo commit``
+* **Staged** : Archivos y directorios registrados para el **``próximo commit``**
 
 ```markdown
                           [Directory Working]
@@ -41,12 +53,12 @@ Muestra el estado de los ficheros del **(Directorio de Trabajo - Working Directo
                          |               |               |               
                          |               |ø Staged file->|               
                          |               |               |
-  remove <file> <---------------------------------------ø|
+  remove <file> <--git reset <file> --------------------ø|
                          |               |               |
                          |               |               |
                          |<--------- git commit---------ø|
                          |               |               |
-g```
+```
 
 ## Git - status -s
 
