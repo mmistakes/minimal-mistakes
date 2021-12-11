@@ -1,7 +1,9 @@
 
 # Git & GitHub friendly ☺
 
-Visiteme en : [Mi blog 101](https://rvsweb.github.io/Git-Github/)
+Visiteme en :
+
+[Mi blog 101](https://rvsweb.github.io/Git-Github/)
 
 > Blog orientado al aprendizaje de los distintos campos del desarrollo de software mediante GIT & GITHUB y además otros temas relacionados con la informática y la programación en general.
 
