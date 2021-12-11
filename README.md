@@ -11,4 +11,4 @@ Espero que os ayude en vuestro camino
 
 * * *
 
-![Categorias](https://rvsweb.github.io/Git-Github/categories/)
+[Categorias](https://rvsweb.github.io/Git-Github/categories/)
