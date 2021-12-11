@@ -1,7 +1,7 @@
 ---
 published: true
 layout: single
-title: "C++ constexpr"
+title: "[C++] constexpr"
 category: cppreference
 tags:
 comments: true
