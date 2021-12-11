@@ -12,7 +12,6 @@ El principal objetivo de este blog es añadir contenido sobre mi continuo aprend
 Espero que os ayude en vuestro camino
 
 * * *
-
 Sección : [Home Principal](https://rvsweb.github.io/Git-Github/ "Home")
 
 Sección : [Mi Buscador](https://rvsweb.github.io/Git-Github/buscador/ "Mi Buscador")
