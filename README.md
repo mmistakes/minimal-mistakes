@@ -11,4 +11,16 @@ Espero que os ayude en vuestro camino
 
 * * *
 
-![Categorias](https://rvsweb.github.io/Git-Github/categories/ "Mis Categorias")
+Sección : [Home Principal](https://rvsweb.github.io/Git-Github/ "Home")
+
+Sección : [Mi Buscador](https://rvsweb.github.io/Git-Github/buscador/ "Mi Buscador")
+
+Sección : [Articulos](https://rvsweb.github.io/Git-Github/year-archive/ "Mis Articulos Creados")
+
+Sección : [Categorias](https://rvsweb.github.io/Git-Github/categories/ "Categorias")
+
+Sección : [Etiquetas](https://rvsweb.github.io/Git-Github/tags/ "Etiquetas")
+
+Sección : [Portafolios](https://rvsweb.github.io/Git-Github/portfolio/ "Portafolios")
+
+* * *
