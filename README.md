@@ -1,5 +1,5 @@
 
-# Git & GitHub pá los amigos.
+# Git & GitHub friendly 
 
 Visiteme en : [Mi blog 101](https://rvsweb.github.io/Git-Github/)
 
