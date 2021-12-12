@@ -1,5 +1,5 @@
 
-# Git & GITHUB
+# Git & Github friendly
 
 Visiteme en :
 
@@ -12,21 +12,22 @@ El principal objetivo de este blog es añadir contenido sobre mi continuo aprend
 Espero que os ayude en vuestro camino
 
 * * *
-Sección : [Home Principal](https://rvsweb.github.io/git-github/ "Home")
 
-Sección : [Mi Buscador](https://rvsweb.github.io/git-github/buscador/ "Mi Buscador")
+[Home Principal](https://rvsweb.github.io/git-github/)
 
-Sección : [Articulos](https://rvsweb.github.io/git-github/year-archive/ "Mis Articulos Creados")
+[Mi Buscador](https://rvsweb.github.io/git-github/buscador/)
 
-Sección : [Categorias](https://rvsweb.github.io/git-github/categories/ "Categorias")
+[Articulos](https://rvsweb.github.io/git-github/year-archive/)
 
-Sección : [Etiquetas](https://rvsweb.github.io/git-github/tags/ "Etiquetas")
+[Categorias](https://rvsweb.github.io/git-github/categories/)
 
-Sección : [Portafolios](https://rvsweb.github.io/git-github/portfolio/ "Portafolios")
+[Etiquetas](https://rvsweb.github.io/git-github/tags/)
+
+[Mi Portafolios](https://rvsweb.github.io/git-github/portfolio/)
 
 * * *
 
-1º Pasos :
+1º Pasos en Git :
 
 [Crea tu 1º Repositorio Local](https://rvsweb.github.io/git-github/git/git-init/git-comandos/git-init/)
 
