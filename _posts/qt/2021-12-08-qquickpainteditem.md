@@ -2,7 +2,7 @@
 published: true
 layout: single
 title: "[QT] QQuickPaintedItem 정리"
-category: designpattern
+category: qt
 tags:
 comments: true
 sidebar:
