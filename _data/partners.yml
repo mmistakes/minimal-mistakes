@@ -3,14 +3,14 @@
 put:
   name   : "Poznań University of Technology"
   url    : "https://www.put.poznan.pl/"
-  logo   : "/assets/images/partners/put.png"
+  logo   : "/assets/images/partners/put.webp"
 
 xilinx:
   name   : "Xilinx Inc."
   url    : "https://www.xilinx.com/"
-  logo   : "/assets/images/partners/xilinx.png"
+  logo   : "/assets/images/partners/xilinx.webp"
 
 nvidia:
   name   : "NVidia Corporation"
   url    : "https://www.nvidia.com/en-us/"
-  logo   : "/assets/images/partners/nvidia.png"
+  logo   : "/assets/images/partners/nvidia.webp"

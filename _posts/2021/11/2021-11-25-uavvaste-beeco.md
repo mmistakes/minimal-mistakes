@@ -5,11 +5,11 @@ author: [ptak-bartosz, piechocki-mateusz]
 modified: 2021-04-04
 tags: [uav, object detection, conference]
 category: [conference]
-teaser: "/assets/images/posts/2021/11/cropped-logo-beeco.jpg"
+teaser: "/assets/images/posts/2021/11/cropped-logo-beeco.webp"
 ---
 
 <p align="center">
-    <img src="/assets/images/posts/2021/11/beeco.jpg" height="300px" />
+    <img src="/assets/images/posts/2021/11/beeco.webp" height="300px" />
 </p>
 
 Last week, Bartosz and Mateusz participated [Be Eco with Us 2021 conference](https://beecowithus.usz.edu.pl/work/konferencja/). Be Eco with Us is an international scientific conference on ecology and nature protection held at the University of Szczecin.
@@ -21,7 +21,7 @@ During the conference, the participants listened to lectures on green technology
 ## Our presentation
 
 <p align="center">
-    <img src="/assets/images/posts/2021/11/uavvaste.jpg" height="300px" />
+    <img src="/assets/images/posts/2021/11/uavvaste.webp" height="300px" />
 </p>
 
 Bartosz and Mateusz presented their UAVVaste project, which uses drones to detect litter in the natural environment and reports it to a database. They talked about how the dataset and algorithm were built and then demonstrated how they developed a prototype of the device. The prototype also enabled them to win 3rd place at the international technology competition Teknofest 2021, Turkey in the UAV free mission category.

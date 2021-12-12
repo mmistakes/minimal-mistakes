@@ -5,7 +5,7 @@ author: [fularz-michal, kraft-marek]
 modified: 2014-01-24
 tags: [rgbd, navigation, database]
 category: [database]
-teaser: "/assets/images/posts/2014/01/wifibot.png"
+teaser: "/assets/images/posts/2014/01/wifibot.webp"
 ---
 
 <BR>

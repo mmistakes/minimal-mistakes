@@ -5,7 +5,7 @@ ptak-bartosz:
   surname     : "Ptak"
   title       : #
   bio         : "Ph.D. student, interested in GPUs, EDGE devices, deep learning and image processing."
-  avatar      : "/assets/images/bio/bartoszptak.jpg"
+  avatar      : "/assets/images/bio/bartoszptak.webp"
   links:
     - label: "Email"
       icon: "fa fa-envelope"
@@ -22,7 +22,7 @@ aszkowski-przemyslaw:
   surname     : "Aszkowski"
   title       : #
   bio         : "Ph.D. student ...."
-  avatar      : "/assets/images/bio/przemekaszkowski.jpg"
+  avatar      : "/assets/images/bio/przemekaszkowski.webp"
   links:
     - label: "Email"
       icon: "fa fa-envelope"
@@ -33,7 +33,7 @@ pieczynski-dominik:
   surname     : "Pieczyński"
   title       : #
   bio         : "Pieski how how"
-  avatar      : "/assets/images/bio/dominikpieczynski.jpg"
+  avatar      : "/assets/images/bio/dominikpieczynski.webp"
   links:
     - label: "Email"
       icon: "fa fa-envelope"
@@ -44,7 +44,7 @@ kraft-marek:
   surname     : "Kraft"
   title       : 'Ph.D.'
   bio         : "So far so good"
-  avatar      : "/assets/images/bio/marekkraft.jpg"
+  avatar      : "/assets/images/bio/marekkraft.webp"
   links:
     - label: "Email"
       icon: "fa fa-envelope"
@@ -55,7 +55,7 @@ piechocki-mateusz:
   surname     : "Piechocki"
   title       : #
   bio         : "Tum tum tum"
-  avatar      : "/assets/images/bio/mateuszpiechocki.jpg"
+  avatar      : "/assets/images/bio/mateuszpiechocki.webp"
   links:
     - label: "Email"
       icon: "fa fa-envelope"
@@ -66,7 +66,7 @@ fularz-michal:
   surname     : "Fularz"
   title       : 'Ph.D.'
   bio         : "Bike, LEGO and food"
-  avatar      : "/assets/images/bio/michalfularz.jpg"
+  avatar      : "/assets/images/bio/michalfularz.webp"
   links:
     - label: "Email"
       icon: "fa fa-envelope"

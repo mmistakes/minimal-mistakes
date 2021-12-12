@@ -5,11 +5,11 @@ author: [kraft-marek, piechocki-mateusz, ptak-bartosz]
 modified: 2021-04-04
 tags: [uav, object detection]
 category: [publication]
-teaser: "/assets/images/posts/2021/04/uav-litter.png"
+teaser: "/assets/images/posts/2021/04/uav-litter.webp"
 ---
 
 <p align="center">
-    <img src="/assets/images/posts/2021/04/uav-litter-abstract.png" height="300px" />
+    <img src="/assets/images/posts/2021/04/uav-litter-abstract.webp" height="300px" />
 </p>
 
 ## Abstract:

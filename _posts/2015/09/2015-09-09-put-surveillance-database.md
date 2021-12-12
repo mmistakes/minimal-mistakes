@@ -5,7 +5,7 @@ author: [fularz-michal]
 modified: 2015-09-09
 tags: [object tracking, database]
 category: [database]
-teaser: "/assets/images/posts/2015/09/surv.jpg"
+teaser: "/assets/images/posts/2015/09/surv.webp"
 ---
 
 

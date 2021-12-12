@@ -5,11 +5,11 @@ author: [pieczynski-dominik, kraft-marek, fularz-michal]
 modified: 2019-06-28
 tags: [re-identification, segmentation]
 category: [publication]
-teaser: "/assets/images/posts/2019/06/reident.png"
+teaser: "/assets/images/posts/2019/06/reident.webp"
 ---
 
 <p align="center">
-    <img src="/assets/images/posts/2019/06/reident-alot.png" height="300px" />
+    <img src="/assets/images/posts/2019/06/reident-alot.webp" height="300px" />
 </p>
 
 ## Abstract:

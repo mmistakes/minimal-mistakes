@@ -5,11 +5,11 @@ author: [kraft-marek]
 modified: 2021-06-24
 tags: [harness, classification]
 category: [publication]
-teaser: "/assets/images/posts/2021/06/harness.png"
+teaser: "/assets/images/posts/2021/06/harness.webp"
 ---
 
 <p align="center">
-    <img src="/assets/images/posts/2021/06/harness-plot.png" height="300px" />
+    <img src="/assets/images/posts/2021/06/harness-plot.webp" height="300px" />
 </p>
 
 ## Abstract:
