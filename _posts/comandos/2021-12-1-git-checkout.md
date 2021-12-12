@@ -19,6 +19,8 @@ tags:
 
 ## Git - Checkout
 
-Reemplazar los cambios locales en caso de cometer un error
+Cambia **[HEAD]** en si mismo de lugar al que apunta
+
+Reemplazar los cambios locales 
 
 ``git checkout -- <archivo>`` → Reemplaza los cambios del **(Working Directory)** con el último contenido del **[HEAD]** , los cambios que ya han sido agregados al **{INDEX}** como los nuevos archivos , se mantendrán sin cambios

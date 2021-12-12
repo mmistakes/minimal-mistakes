@@ -19,7 +19,11 @@ tags:
 
 ## Git - Reset
 
-Deshacer los cambios locales y los **commits** trayendo la última versión del servidor y apuntar a la copia local principal
+* Comando que mueve la **rama** según le indique el puntero **[HEAD]**
+
+  * Si **[HEAD]** esta apuntando a la **rama master** y ejecutamos el comando ``git reset <identificador commit anterior>`` hara que la **rama master** apunte al **commit** que le hayamos indicado dentro de su **[Repo.Local]**
+
+* Deshacer los cambios locales y los **commits** trayendo la última versión del servidor y apuntar a la copia local principal
 
 ``git reset --hard origin/master``
 

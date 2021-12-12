@@ -58,6 +58,10 @@ Git administra el contenido del **[Repositorio]** con 3 árboles diferentes
 
 #### (Working Directory / Workspace)
 
-* Lugar donde se descomprime los archivos descargados del **»Repositorio Remoto«** para editarlos o donde se crean los nuevos archivos que se van a añadir al proyecto
+Tiene 2 funciones :
 
-  * Se asemeja como si fuera un **(SandBox / Caja de Pruebas)** donde puedes probar a realizar pruebas o cambios en los archivos antes de enviarlos al **{Index / Staging Area}** y al **[HEAD]** con el historial de **commits**
+* Lugar donde se descomprime los archivos descargados del **»Repositorio Remoto«** para editarlos o modificarlos
+
+* Espacio donde se almacenan los archivos creados que se van a añadir al proyecto del **[Repo.local]**
+
+  * Se asemeja a una especie de **(SandBox / Caja de Pruebas)** donde puedes realizar pruebas de código o cambios en los archivos antes de enviarlos al **{Index / Staging Area}** y al **[HEAD]** con el historial de **commits**
