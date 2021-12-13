@@ -44,11 +44,11 @@ search: ture
 
 - 화면 정의서는 다음과 같이 page를 분류해서 구성하였다.
 
-![login](../images/2021-12-13-bootCampOneWeek/login.PNG)
+![login](../../images/2021-12-13-bootCampOneWeek/login.PNG)
 
-![select](../images/2021-12-13-bootCampOneWeek/select.PNG)
+![select](../../images/2021-12-13-bootCampOneWeek/select.PNG)
 
-![totalSave](../images/2021-12-13-bootCampOneWeek/totalSave.PNG)
+![totalSave](../../images/2021-12-13-bootCampOneWeek/totalSave.PNG)
 
-![total](../images/2021-12-13-bootCampOneWeek/total.PNG)
+![total](../../images/2021-12-13-bootCampOneWeek/total.PNG)
 
