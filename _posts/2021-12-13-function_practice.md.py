@@ -22,3 +22,5 @@ balance = deposit(balance, 1000)
 # balance = withdraw_night(balance, 200)
 commission, balance = withdraw_night(balance, 500)
 print("수수료 {} 원이며, 잔액은 {} 원입니다".format(commission, balance))
+
+함수 ,,def 제목():
