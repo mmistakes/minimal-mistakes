@@ -131,7 +131,7 @@ Notice that the result of joining a fiber is not a value, but something that wra
 
 A fiber can terminate in one of 3 states:
 
-- successfully, with a value (see example above)
+- successfully, with a value (wrapped in IO, see example above)
 - as a failure, wrapping an exception
 - cancelled, which is neither
 
