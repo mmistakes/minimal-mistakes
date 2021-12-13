@@ -36,7 +36,7 @@ search: ture
 
    
 
-![프로세스](../images/2021-12-13-직무부트캠프 1주차/프로세스.png)
+![process](../images/2021-12-13-bootCampOneWeek/process.PNG)
 
 
 
@@ -44,12 +44,11 @@ search: ture
 
 - 화면 정의서는 다음과 같이 page를 분류해서 구성하였다.
 
+![login](../images/2021-12-13-bootCampOneWeek/login.PNG)
 
+![select](../images/2021-12-13-bootCampOneWeek/select.PNG)
 
-![로그인](../images/2021-12-13-직무부트캠프 1주차/로그인.png)
+![totalSave](../images/2021-12-13-bootCampOneWeek/totalSave.PNG)
 
-![버튼](../images/2021-12-13-직무부트캠프 1주차/버튼.png)
+![total](../images/2021-12-13-bootCampOneWeek/total.PNG)
 
-![매출액입력](../images/2021-12-13-직무부트캠프 1주차/매출액입력.png)
-
-![매출액조회](../images/2021-12-13-직무부트캠프 1주차/매출액조회.png)
