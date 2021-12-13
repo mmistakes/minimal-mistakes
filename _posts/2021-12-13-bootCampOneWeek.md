@@ -36,7 +36,7 @@ search: ture
 
    
 
-![process](../images/2021-12-13-bootCampOneWeek/process.PNG)
+![process](../../images/2021-12-13-bootCampOneWeek/process.PNG)
 
 
 
