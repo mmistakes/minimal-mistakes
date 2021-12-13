@@ -19,15 +19,23 @@ tags:
 
 ## Branch (Rama)
 
-> Es una especie de línea de tiempo que va marcando los distintos cambios que le vamos haciendo al proyecto a través de los ``git commit -m "Mensaje"`` que vamos ejecutando sobre él
+> Representa una especie de línea de tiempo que va marcando los distintos cambios que le vamos haciendo a los archivos del proyecto a través de los ``git add <archive>`` y los ``git commit -m "Mensaje"`` que vamos ejecutando sobre el repositorio principal
 
-* Solo se creará nuestra **primera linea de tiempo funcional** cuando hagamos nuestro **primer commit** la cual estará establecida en la rama ``master``
+* Solo se creará nuestra **primera linea de tiempo funcional** cuando hagamos nuestro **primer commit** la cual estará establecida en la rama ``master`` si no hemos creado una rama distinta y nos hemos cambiado a ella mediante ``git checkout <nombre de la rama>``
   
-* Si intentamos cambiar de ``rama`` mediante el comando ``git checkout <rama>`` nos aparecerá el siguiente mensaje :
+* Si intentamos cambiarnos de ``rama/branch`` mediante el comando ``git checkout <rama>`` sin que esta ``rama/branch`` exista; nos aparecerá el siguiente mensaje :
 
 > fatal: error: pathspec 'rama-x' did not match any file(s) known to git
 
-Aunque si hacemos un ``git status`` nos dirá en cual ``rama`` estamos situados
+Para saber en que ``rama/branch`` nos encontramos podemos ejecutar los comandos :
+
+``git status`` → On branch master
+
+```git
+git branch
+* master → Indica la rama en la que nos encontramos
+  nueva-rama-proyecto
+```
 
 * * *
 
@@ -42,22 +50,40 @@ Aunque si hacemos un ``git status`` nos dirá en cual ``rama`` estamos situados
 
 Comando para mostrar las ``ramas`` que tienen disponible el proyecto
 
-    git branch 
+``git branch``
 
 **Salida:**
 
+```git
     develop
     * master
+```
 
 Crear una nueva ``rama``
 
-    git branch nueva-rama-proyecto
+```git
+git branch nueva-rama-proyecto
+```
 
 **Salida:**
 
-    develop
-    * master
-    nueva-rama-proyecto
+```git
+develop
+* master
+nueva-rama-proyecto
+```
+
+Eliminar la una nueva rama
+
+```git
+git branch -d nueva-rama-proyecto
+```
+
+**Salida:**
+
+```git
+Deleted branch nueva-rama-proyecto (was 5c2b6a9)
+```
 
 ## Ramas necesarias para un proyecto
 
@@ -111,10 +137,20 @@ Como son las ramas típicas : **master** , **feature** , **developer** , **hotfi
 
 ![Alt texto](/assets/images/graficos/snapshot-2.jpg "Concepto de Repositorio")
 
-## Aclaraciones
+### Aclaraciones
 
-> Lo comentado en esta sección no es una obligación pero si entra en las buenas prácticas a la hora de gestionar un proyecto de ambito general con __GIT__ y __GITHUB__ además de que es flexible a las necesidades de cada caso o proyecto.
+> Lo comentado en esta sección no es una obligación pero si entra en las buenas prácticas a la hora de gestionar un proyecto de ambito general con **GIT** y **GITHUB** además de que es flexible a las necesidades de cada caso o proyecto.
 
 * * *
 
 > Considerarse como unas pautas básicas libres de seguir pero importante a tener en cuenta ya que cada empresa , equipo de desarrollo o ambito profesional tendrán sus propias reglas , estandar de desarrollo y demás condiciones de uso en este ambito del desarrollo de software.
+
+### Breve Resumen Final (Rama/Branch)
+
+* La rama por defecto es la llamada rama **master** ; se crea de forma automática por el sistema ``git`` pero se configurar para que no sea así
+
+* Los **nuevos commits** se añaden al final del **historial de commits** de la rama en la que nos encontremos trabajando
+
+* Los **commits** de las ramas siempre están ordenados por fecha
+
+* Se pueden crear y eliminar tantas **ramas** como se necesiten para cada momento del desarrollo del proyecto

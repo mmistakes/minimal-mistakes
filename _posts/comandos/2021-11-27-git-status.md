@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Git - Status 
+title: Git - Status
 date: 2021-11-27
 classes: wide
 toc: true
@@ -25,24 +25,24 @@ Muestra el estado de los ficheros dentro del **(Directorio de Trabajo - Working 
 > Git siempre compara los archivos del **último commit** con los archivos que tienes tanto en el **(Untracked)** como en las demás etapas del sistema **GIT** como son **{UnModified}** / **{Modified}** / **{Staging Area}** para ver las diferencias entre ellos y así saber si han habido cambios en el código del **[Repositorio]** del proyecto o no.
 
 ```git
-←←←←←[Working Directory]→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→
+←←←←←← [Repositorio] →→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→
             ||
-(Untracked) ||   {Tracked}      {Tracked}          {Tracked}           {Tracked}    
-            ||  {UnModified}    {Modified}   {Staging Area / INDEX}   |Repo.Local|
-            ||
-            ||
+(Untracked) ||   {Tracked}   |   {Tracked}   |       {Tracked}         |    {Tracked}     |    
+(Workspace) ||  {UnModified} |   {Modified}  |  {Staging Area / INDEX} |  ||Repo.Local||  |
+            ||               |               |                         |                  |
+            ||               |               |                         |                  |
 ```
 
-* **Untracked** : No existe seguimiento del archivo **``git commit``** dentro del **(Working Directory)** con respecto al **último commit** del **[Repositorio]** descargado.
+* **(Untracked)** : No existe seguimiento del archivo **``git commit``** dentro del **(Working Directory)** con respecto al **último commit** del **[Repositorio]** descargado.
 
-* **UnModified** : Después de hacer ``git add <archivo>`` el archivo queda guardado y esperando a ser enviado mediante ``git commit -m "mensaje"`` y ``git push`` al **»Repositorio Remoto«**
+* **{UnModified}** : Después de hacer ``git add <archivo>`` el archivo queda guardado y esperando a ser enviado mediante ``git commit -m "mensaje"`` y ``git push`` al **»Repositorio Remoto«**
 
-* **Modified** : Los archivos **UnModified** han sido modificados respecto al ``commit anterior`` lo que significa que para poder enviarse al **»Repositorio Remoto«** se debe de hacer otra vez ``git add <archive>`` y ``git commit -m "mensaje"``
+* **{Modified}** : Los archivos **UnModified** han sido modificados respecto al ``commit anterior`` lo que significa que para poder enviarse al **»Repositorio Remoto«** se debe de hacer otra vez ``git add <archive>`` y ``git commit -m "mensaje"``
 
-* **Staged** : Archivos y directorios registrados para el **``próximo commit``**
+* **{Staged}** : Archivos y directorios registrados para el **``próximo commit``**
 
 ```markdown
-                          [Directory Working]
+                             [Repository]
                                   ↓                          
     (Untracked) ||| {UnModified} ||| {Modified} ||| {INDEX-Staged}
                          |               |               |
@@ -77,18 +77,18 @@ Los campos están separados del otro por un simple espacio
 Otros códigos de estado pueden interpretarse como el siguiente :  
 
 ```markdown
-'' = UnModified
-M  = Modified
-A  = Added
-D  = Deleted
-R  = Renamed
-C  = Copied
-U  = Updated but UnMerged 
-?? = Aren´t Tracked
-↓↓→→→→ [Working Directory]
-↓
-↓→→→→{Staging Area}
+                            ' ' = UnModified
+                            M|  = Modified
+                            A|  = Added
+                            D|  = Deleted
+                            R|  = Renamed
+                            C|  = Copied
+                            U|  = Updated but UnMerged 
+                            ?|? = Aren´t Tracked
+        {Staging Area}←←←←←←↓ ↓→→→→ (Working Directory)
 ```
+
+* Nota : la barra vertical ``|`` simplemente se muestra como separador entre las distintas opciones pero no se incluye en el codigo ni se necesita poner , solo esta para ayudar a comprender mejor el ejemplo.
 
 <!-- 
 Para rutas con conflictos de fusión 'X' e 'Y' muestra el estado modificado de cada lado de la fusión
