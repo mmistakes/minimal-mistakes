@@ -41,7 +41,7 @@ Es una especie de árbol que monitoriza todos los cambios en el (Working Directo
 
 > Los cambios no registrados en el {INDEX} no se incluyen al genera un nuevo commit
 
-***
+* * *
 
 Comandos básicos:
 

@@ -18,11 +18,15 @@ tags:
   - git-working directory
 ---
 
-## Commit (Confirmar​)
+## Git - commit (confirmar)
 
-* Instantánea/Captura (snapshot) de todos los archivos o ficheros de un proyecto guardado en un respositorio en el momento de ejecutar el propio comando
-* Siempre pertenecen a una rama (branch) predeterminada
-* Los commit pueden restaurarse dentro del directorio del proyecto para inspeccionarse o reutilizarse
+### Commit
+
+* Instantánea/Captura **(snapshot)** del estado o modificaciones de los archivos del proyecto que se guardan en el **[Repositorio Local]** a la espera de ser enviados al »Repositorio Remoto« para fusionarse con el resto de archivos del proyecto.
+
+  * Siempre pertenecen a una (rama/branch)
+  
+  * Los commit pueden restaurarse dentro del [Repositorio Local] para inspeccionarse o reutilizarse
 
 Ejemplo:
 

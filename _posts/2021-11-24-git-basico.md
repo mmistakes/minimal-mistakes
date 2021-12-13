@@ -21,19 +21,25 @@ page_css:
 
 > El objetivo de GIT es registrar instantáneas/commits del proyecto en los distintos estados mediante la manipulación de los 3 arboles
 
-Los 3 arboles son
+## Los 3 arboles son
 
-* (Directorio de Trabajo / Workspace)
-  * Zona donde se almacen los archivos creados del proyecto para añadírselos y que no están rastreados **(UNTRACKED)**
+### (Directorio de Trabajo / Workspace)
 
-* {Staging Area / INDEX}
-  * *Técnicamente no es una estructura árbol sino un manifiesto*
-    * **manifiesto** : "archivo con los metadatos de un grupo de archivos adjuntos que forman parte de un conjunto o unidad coherente"
+* Zona donde se almacen los archivos creados del proyecto para añadírselos y que no están rastreados **(UNTRACKED)**
+
+### {Staging Area / INDEX}
+
+* *Técnicamente no es una estructura árbol sino un manifiesto*
+  * **manifiesto** : "archivo con los metadatos de un grupo de archivos adjuntos que forman parte de un conjunto o unidad coherente"
 
   * Zona intermedia donde se almacena los archivos descargados desde el **»Repositorio Remoto«** y que están a la espera de ser modificados o eliminados
 
-* [HEAD] / [Repo.Local]
-  * Zona donde se guardan los archivos creados o modificados a la espera de ser integrados con el resto de archivos del proyecto en el **»Repositorio Remoto«**
+### [Repo.Local]
+
+* Zona donde se guardan los archivos creados o modificados a la espera de ser integrados con el resto de archivos del proyecto en el **»Repositorio Remoto«**
+
+* **[HEAD]**
+  * Es un puntero que señala siempre la rama en la que nos encontramos.
 
 ### Estructura básica del directorio de un proyecto
 
@@ -70,7 +76,6 @@ Comando básico para ver las ayudas.
 Estructura básica del comando Git:
 
 ```git
-
     [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
               [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
               [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
@@ -115,5 +120,4 @@ collaborate (see also: git help workflows)
 concept guides. See 'git help <command>' or 'git help <concept>'
 to read about a specific subcommand or concept.
 See 'git help git' for an overview of the system.
-
 ```

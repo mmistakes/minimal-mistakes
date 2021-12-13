@@ -19,7 +19,9 @@ tags:
 
 ## Git - restore
 
-Descarta los cambios que se hicieron en los archivos cuando se enviaron al {Staging Area/INDEX} mediante `` git add <archive> `` y ``git commit -m "Mensaje"`` para almacenarlos de nuevo en el **(Working Directory)** con el contenido que tenía el archivo de un principio antes de ejecutar los comandos anteriores
+> Revierte el comando git add <archivo> 
+
+Descarta los cambios que se hicieron en los archivos cuando se enviaron al **{Staging Area/Index}** mediante ``git add <archive>`` y ``git commit -m "Mensaje"`` para almacenarlos de nuevo en el **(Working Directory)** con el contenido que tenía el archivo de un principio antes de ejecutar los comandos anteriores
 
 Comando :
 
@@ -27,9 +29,10 @@ Comando :
 git restore <archivo> 
 ```
 
-* Puede revertir solo en el **{INDEX}** pero no en el **{Working Tree}** al **último commit** mediante
+* Restaura solo los archivos en el **{Staging Area/Index}** pero no los archivos dentro del **{Working Directory}** del **último commit** mediante
 
 ```git
-git restore --staged <archivo> → Revierte el git add <archivo> 
+git restore --staged <archivo> 
 ```
 
+Significa que Git coge el archivo y lo devuelve al estado **(Working Directory)** y lo marca como **(Sin Seguimiento/Untracked)** dentro del **[Repositorio]**
