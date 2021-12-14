@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "github page(jekyll)"
+title                    : "Nock blog (github page - jekyll)"
 title_separator          : "|"
-subtitle                 : "small positive action" # site tagline that appears below site title in masthead
-name                     : "nocknock"
-description              : "gitgub page practice"
+subtitle                 : "progressive overload" # site tagline that appears below site title in masthead
+name                     : "Nock"
+description              : "github page practice"
 url                      : "https://k5275645.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "k5275645/k5275645.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Nock"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "github page pratice blog"
+  bio              : "github page blog"
   location         : "South Korea"
   email            : 
   links:
