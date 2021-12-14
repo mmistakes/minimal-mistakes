@@ -9,20 +9,20 @@ toc_icon: "clipboard-list"
 header:
   teaser: /assets/images/llama.jpg
 categories:
-  - git
-  - git-status
-  - git-comandos
+  - Git
+  - Git-status
+  - Git-comandos
 tags:
-  - git-basico
-  - git-manual
+  - Git-basico
+  - Git-manual
 ---
 
-## Git - Status
+## Git - status
 
 Muestra el estado de los ficheros dentro del **(Directorio de Trabajo - Working Directory)** el cual engloba tanto la parte **(Untracked)** como **{Tracked}**
 
 > Recuerda : <br>
-> Git siempre compara los archivos del **último commit** con los archivos que tienes tanto en el **(Untracked)** como en las demás etapas del sistema **GIT** como son **{UnModified}** / **{Modified}** / **{Staging Area}** para ver las diferencias entre ellos y así saber si han habido cambios en el código del **[Repositorio]** del proyecto o no.
+> Git siempre compara los archivos del **último commit** con los archivos que tienes tanto en el **(Untracked)** como en las demás etapas del sistema **Git** como son **{UnModified}** / **{Modified}** / **{Staging Area}** para ver las diferencias entre ellos y así saber si han habido cambios en el código del **[Repositorio]** del proyecto o no.
 
 ```git
 ←←←←←← [Repositorio] →→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→
@@ -33,11 +33,11 @@ Muestra el estado de los ficheros dentro del **(Directorio de Trabajo - Working 
             ||               |               |                         |                  |
 ```
 
-* **(Untracked)** : No existe seguimiento del archivo **``git commit``** dentro del **(Working Directory)** con respecto al **último commit** del **[Repositorio]** descargado.
+* **(Untracked)** : No existe seguimiento del archivo **``Git commit``** dentro del **(Working Directory)** con respecto al **último commit** del **[Repositorio]** descargado.
 
-* **{UnModified}** : Después de hacer ``git add <archivo>`` el archivo queda guardado y esperando a ser enviado mediante ``git commit -m "mensaje"`` y ``git push`` al **»Repositorio Remoto«**
+* **{UnModified}** : Después de hacer ``Git add <archivo>`` el archivo queda guardado y esperando a ser enviado mediante ``Git commit -m "mensaje"`` y ``Git push`` al **»Repositorio Remoto«**
 
-* **{Modified}** : Los archivos **UnModified** han sido modificados respecto al ``commit anterior`` lo que significa que para poder enviarse al **»Repositorio Remoto«** se debe de hacer otra vez ``git add <archive>`` y ``git commit -m "mensaje"``
+* **{Modified}** : Los archivos **UnModified** han sido modificados respecto al ``commit anterior`` lo que significa que para poder enviarse al **»Repositorio Remoto«** se debe de hacer otra vez ``Git add <archive>`` y ``Git commit -m "mensaje"``
 
 * **{Staged}** : Archivos y directorios registrados para el **``próximo commit``**
 
@@ -46,17 +46,17 @@ Muestra el estado de los ficheros dentro del **(Directorio de Trabajo - Working 
                                   ↓                          
     (Untracked) ||| {UnModified} ||| {Modified} ||| {INDEX-Staged}
                          |               |               |
-ø git add <file> ----------------------------------------> 
+ø Git add <file> ----------------------------------------> 
                          |               |               |               
                          |ø Edit file -->|               |
                          |               |               |               
                          |               |               |               
                          |               |ø Staged file->|               
                          |               |               |
-  remove <file> <--git reset <file> --------------------ø|
+  remove <file> <--Git reset <file> --------------------ø|
                          |               |               |
                          |               |               |
-                         |<--------- git commit---------ø|
+                         |<--------- Git commit---------ø|
                          |               |               |
 ```
 
@@ -64,8 +64,8 @@ Muestra el estado de los ficheros dentro del **(Directorio de Trabajo - Working 
 
 Muestra el estado en formato más conciso y una serie de claves que nos ayuda a comprender mejor el estado de los archivos
 
-```git
-git status -s
+```Git
+Git status -s
 ```
 
 * Columna de la **izquierda** indica el status del **{Staging Area}**

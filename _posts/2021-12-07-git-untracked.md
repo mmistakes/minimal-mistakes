@@ -22,14 +22,15 @@ page_css:
 
 ### (Untracked)
 
-* Archivos no rastreados **(Untracked)** es cualquier archivo del **(Working Directory)** que no estuviera en su última instantánea **(snapshot)** y no se encuentra en tu **{Staging Area/Index}**
+> Un archivo dentro de estado (Untracked) del (Working Directory) se puede modificar tantas veces que se quieran sin tener que ejecutar ningun comando de preparación (git add) o confirmacion (git commit)
+
+* Archivos no rastreados **(Untracked)** es cualquier archivo del **(Working Directory)** no se encuentra en en el estado **{Staging Area/Index}** ni en su última instantánea **(snapshot/commit)**
 
   * Cuando clonas un **[Repositorio]** por primera vez todos sus archivos serán rastreados **(Tracked)** y no modificados **{UnModified}** porque **GIT** acaba de comprobarlos y no has editado ninguno todavía
 
   * Cuando editas los archivos, **GIT** los ve como modificados **{Modified}**, porque los has cambiado desde su **"confirmación"** o  **último commit**.
   
     * A medida mientras trabajas con ellos , se preparan **{Staged}** selectivamente estos archivos modificados **{Modified}** mediante el comando ``git add`` y luego se confirman ``git commit`` con todos esos cambios preparados dentro del **{Staging Area/INDEX}**
-
 
     {% include figure image_path="assets/images/graficos/ciclo-archivo-rastreado.jpg" alt="Sencillo gráfico del sistema de gestión de archivos git" caption="Sencillo gráfico del sistema de gestión de archivos git" %}
 
