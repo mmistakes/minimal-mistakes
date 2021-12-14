@@ -20,7 +20,7 @@ title                    : "굿전의 필기노트"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "전동준"
-description              : "공부, 취미, 일상"
+description              : "공부한 것을 적기 위한 "
 url                      : "https://GoodJeon.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
