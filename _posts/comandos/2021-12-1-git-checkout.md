@@ -17,7 +17,7 @@ tags:
   - git-manual
 ---
 
-## Git - Checkout
+## Git - checkout
 
 Cambia **[HEAD]** en si mismo de lugar al que apunta
 

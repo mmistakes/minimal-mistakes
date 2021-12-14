@@ -17,7 +17,7 @@ tags:
   - git-manual
 ---
 
-## Git - Clone
+## Git - clone
 
 * Se utiliza para descargarse una copia completa del proyecto , datos del servidor e historial que esté almacenado libremente en el **Repositorio** de GITHUB
 

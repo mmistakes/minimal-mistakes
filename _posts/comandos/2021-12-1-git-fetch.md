@@ -17,7 +17,7 @@ tags:
   - git-manual
 ---
 
-## Git - Fetch
+## Git - fetch
 
 Deshacer los cambios locales y los commits trayendo la última versión del servidor y apuntar a la copia local principal
 

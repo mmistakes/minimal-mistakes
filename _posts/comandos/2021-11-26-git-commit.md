@@ -17,7 +17,7 @@ tags:
   - git-manual
 ---
 
-## Git Commit
+## Git - commit
 
 Genera un **nuevo commit** con lo registrado en el **{INDEX}**
 
