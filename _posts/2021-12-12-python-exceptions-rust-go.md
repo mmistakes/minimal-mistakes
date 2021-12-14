@@ -79,7 +79,7 @@ match divide(x, y) {
 
 // handle via a method on Result that will return the value is successful or
 // panic if there was an error
-let value = divide(x, y).unwrap()
+let value = divide(x, y).unwrap();
 ```
 
 There are many many other ways to handle this and don't worry about the syntax
@@ -129,7 +129,7 @@ fmt.Println("Dividend is:", value)
 ```
 Just like with Rust, the user will explicitly know that this function can fail, just by
 the fact that it returns a value an a possible error. This check of `if err != nil` is
-ubiquitous in Go code and is the main way to check for errors. One different with Rust
+ubiquitous in Go code and is the main way to check for errors. One difference with Rust
 is that a user could still go ahead and use the `value` even if there is an error but
 that wouldn't be very smart and is not recommended.
 
