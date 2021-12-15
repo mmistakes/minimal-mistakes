@@ -9,12 +9,12 @@ toc_icon: "clipboard-list"
 header:
   teaser: /assets/images/llama.jpg
 categories:
-  - Git
-  - Git-status
-  - Git-comandos
+  - git
+  - git-status
+  - git-comandos
 tags:
-  - Git-basico
-  - Git-manual
+  - git-basico
+  - git-manual
 ---
 
 ## Git - status
@@ -64,7 +64,7 @@ Muestra el estado de los ficheros dentro del **(Directorio de Trabajo - Working 
 
 Muestra el estado en formato más conciso y una serie de claves que nos ayuda a comprender mejor el estado de los archivos
 
-```Git
+```git
 Git status -s
 ```
 

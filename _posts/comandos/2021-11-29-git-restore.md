@@ -19,7 +19,9 @@ tags:
 
 ## Git - restore
 
-> Restablece el contenido del archivo que tenía después de ejecutar los comandos "git add" y "git commit"
+> Descarta todos los cambios que le hayamos hecho a los archivos dentro del (Working Directory)
+
+Restablece el contenido del archivo que tenía después de ejecutar los comandos "git add" y "git commit"
 
 * Creamos un archivo y lo añadimos al estado **{Staging Area/Index}** mediante el comando ``git add <archive>``
 
