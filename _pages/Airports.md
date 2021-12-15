@@ -23,6 +23,11 @@ toc: true
   <iframe width="560" height="315" src="https://www.youtube.com/embed/i7TaPNcUuOQ" title="SKCG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><br></iframe><br>
   <br></p>
   
+## [SKAR - El Eden Airport - Armenia, Colombia](https://vpilotdesigns.github.io/SKAR/)
+<p><a href="https://vpilotdesigns.github.io/SKAR/"><strong>Galeria/Gallery</strong></a><br>
+  <br></p>
+{% include figure image_path="/assets/images/SKAR/Block_01.jpg" alt="mpto" caption="El Eden Intl Airport - Armenia, Colombia for MSFS" %}
+  
 <!---## [SKMD - Olaya Herrera - Medellin, Colombia](https://vpilotdesigns.github.io/SKMD/)
 <p>SKMD - Olaya Herrera - Medellin, Colombia</p>
   --->
@@ -35,7 +40,12 @@ toc: true
 ## [MPTO - Tocumen Intl Airport - Panama, Panama](https://vpilotdesigns.github.io/MPTO/)
 <p><a href="https://vpilotdesigns.github.io/MPTO/"><strong>Galeria/Gallery</strong></a><br>
   <br></p>
-{% include figure image_path="/assets/images/MPTO/mpto_block_06.jpg" alt="mpto" caption="Tocumen Intl Airport - Panama, Panama for MSFS" %}
+{% include figure image_path="/assets/images/MPTO/mpto_block_06.jpg" alt="mpto" caption="Tocumen Intl Airport - Panama, Panama for MSFS" %}  
+
+## [MPBO - Bocas del Toro Airport - Bocas del Toro, Panama](https://vpilotdesigns.github.io/MPBO/)
+<p><a href="https://vpilotdesigns.github.io/MPBO/"><strong>Galeria/Gallery</strong></a><br>
+  <br></p>
+{% include figure image_path="/assets/images/MPBO/BLOCK_06.jpg" alt="mpbo" caption="Bocas del Toro Intl Airport - Bocas del Toro, Panama for MSFS" %}
 
 # Spain
 	
