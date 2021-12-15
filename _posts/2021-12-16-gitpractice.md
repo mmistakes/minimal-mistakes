@@ -1,3 +1,6 @@
+![gitbash](https://user-images.githubusercontent.com/75322297/146225990-7e5ab4ff-b75c-489d-8b0c-88906b6f4c27.png)
+![Github](https://user-images.githubusercontent.com/75322297/146225993-5dcdd8f6-5d5f-4be9-96ca-8d94956ef6f9.png)
+![success](https://user-images.githubusercontent.com/75322297/146225996-9fc92ad1-bb4f-4d7e-80a4-1082c5a30285.png)
 ---
 layout: post
 title:  "깃 기초 연습"
