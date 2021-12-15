@@ -52,7 +52,7 @@ toc: true
 ## [LEJR - Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia, Spain](https://vpilotdesigns.github.io/LEJR/)
 <p><a href="https://vpilotdesigns.github.io/LEJR/"><strong>Galeria/Gallery</strong></a><br>
   <br></p>
-{% include figure image_path="/assets/images/LEJR/Block_10.jpg" alt="lejr" caption="Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia, Spain for MSFS" %}  
+{% include figure image_path="/assets/images/LEJR/Block_03.jpg" alt="lejr" caption="Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia, Spain for MSFS" %}  
 
 # United States
 	
