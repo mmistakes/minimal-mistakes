@@ -3,6 +3,8 @@ source "https://rubygems.org"
 gem "jekyll", "~> 3.5"
 gem "minimal-mistakes-jekyll"
 gem 'jekyll-seo-tag'
+gem "kramdown-parser-gfm"
+gem "jekyll-include-cache", group: :jekyll_plugins
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
