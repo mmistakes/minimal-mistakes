@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Gabriel Araujo"
-  avatar           : "/images/avatar.jpg"
+  avatar           : "/images/avatar3.jpg"
   bio              : "In the road to be a roboticist."
   location         : "Brasilia, Brazil"
   email            : "gabriel.fp.araujo@gmail.com"
@@ -253,7 +253,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
   - jekyll-seo-tag
 
 # mimic GitHub Pages with --safe
