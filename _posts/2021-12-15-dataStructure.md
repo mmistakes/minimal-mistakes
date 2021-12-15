@@ -9,15 +9,13 @@ sidebar:
 search: ture
 ---
 
-## 자료구조-배열(array)
+# 자료구조-배열(array)
 
-
-
-#### 배열이란? 
+## 배열이란? 
 
 - 데이터를 하나의 변수에 나열해서 저장하고 인덱스를 활용해 구성한 데이터 구조
 
-#### 배열의 장/단점
+## 배열의 장/단점
 
 - 장점
   - 빠른 접근이 가능하다
@@ -31,7 +29,7 @@ search: ture
 
 
 
-## List와 ArrayList
+# List와 ArrayList
 
 - 공부를 하다보면 다음과 같은 형태 두가지를 자주 만날 수 있다.
 
@@ -47,9 +45,11 @@ List<Integer> list1 = new ArrayList<>();
 list1 = new LinkedList<>();
 ```
 
-#### List
+## List
 
-##### 선언
+
+
+### 선언
 
 - 리스트의 선언은 다음과 같이 한다.
 
@@ -59,7 +59,7 @@ Integer [] list1 = {1,3,4,5,6};
 
 - 이것 외에도 다양한 선언 방식이 있지만 그것들은 여기서 다루지 않겠다.
 
-##### 출력
+### 출력
 
 - 출력은 다음과 같이 인덱스를 사용한다.
 
@@ -70,15 +70,17 @@ System.out.println(list1[0]);
 
 ![출력결과](../../images/2021-12-15-dataStructure/출력결과.PNG)
 
-##### 형태
+### 형태
 
 - 자바의 배열의 형태를 보면 왜 이렇게 출력되는지 쉽게 이해할 수 있다. 이는 java에서 확인하자
 
 
 
-#### ArrayList
+## ArrayList
 
-##### 선언
+
+
+### 선언
 
 - arrayList의 선언은 앞에서 언급한 것과 같이 다음과 같다
 
@@ -87,7 +89,7 @@ List<Integer> list1 = new ArrayList<>();
 ArrayList<Integer> list2 = new ArrayList<>();
 ```
 
-##### 입력
+### 입력
 
 - 입력은 [리스트명].add(값); 의 형태로 입력하면 순차적으로 입력된다.
 
@@ -106,7 +108,7 @@ System.out.println(list1.size());
 
 ![사이즈출력](../../images/2021-12-15-dataStructure/사이즈출력.PNG)
 
-##### 출력
+### 출력
 
 - 출력은 [리스트명].get(인덱스);이며 해당 인덱스에 저장되어 있는 값을 반환한다.
 
@@ -116,7 +118,7 @@ System.out.println(list1.get(4));
 
 ![인덱스](../../images/2021-12-15-dataStructure/인덱스.PNG)
 
-##### 변경
+### 변경
 
 - arrayList는 값을 변경 할 수 있다.
   - [리스트명].set(index, 값);
@@ -129,7 +131,7 @@ System.out.println(list1.get(2));
 
 ![변경](../../images/2021-12-15-dataStructure/변경.PNG)
 
-##### 삭제
+### 삭제
 
 - arrayList는 인덱스 삭제 시 자동으로 줄어든다
 
