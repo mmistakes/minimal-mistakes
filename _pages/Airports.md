@@ -26,7 +26,7 @@ toc: true
 ## [SKAR - El Eden Airport - Armenia, Colombia](https://vpilotdesigns.github.io/SKAR/)
 <p><a href="https://vpilotdesigns.github.io/SKAR/"><strong>Galeria/Gallery</strong></a><br>
   <br></p>
-{% include figure image_path="/assets/images/SKAR/Block_01.jpg" alt="mpto" caption="El Eden Intl Airport - Armenia, Colombia for MSFS" %}
+{% include figure image_path="/assets/images/SKAR/Block_06.jpg" alt="mpto" caption="El Eden Intl Airport - Armenia, Colombia for MSFS" %}
   
 <!---## [SKMD - Olaya Herrera - Medellin, Colombia](https://vpilotdesigns.github.io/SKMD/)
 <p>SKMD - Olaya Herrera - Medellin, Colombia</p>
@@ -45,7 +45,7 @@ toc: true
 ## [MPBO - Bocas del Toro Airport - Bocas del Toro, Panama](https://vpilotdesigns.github.io/MPBO/)
 <p><a href="https://vpilotdesigns.github.io/MPBO/"><strong>Galeria/Gallery</strong></a><br>
   <br></p>
-{% include figure image_path="/assets/images/MPBO/BLOCK_06.jpg" alt="mpbo" caption="Bocas del Toro Intl Airport - Bocas del Toro, Panama for MSFS" %}
+{% include figure image_path="/assets/images/MPBO/BLOCK_03.jpg" alt="mpbo" caption="Bocas del Toro Intl Airport - Bocas del Toro, Panama for MSFS" %}
 
 # Spain
 	
