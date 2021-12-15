@@ -110,35 +110,23 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "513ehdwnsl@gmail.com"
+      url: "mailto:513ehdwnsl@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://goodjeon.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/GoodJeon"
+      url: "https://github.com/GoodJeon"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/j_with_the_flow/"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/GoodJeon"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -147,7 +135,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://instagram.com/j_with_the_flow/"
 
 
 # Reading Files
@@ -216,9 +204,9 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 8 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -255,16 +243,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
