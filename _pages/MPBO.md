@@ -68,13 +68,11 @@ Bocas del Toro
 Created by Arka506 and V Pilot Designs
 
 Features 
--3D Modeled Buildings, Terminals and Hangars
--Taxiway and Parking Markings
--Lighting-Antennas
--Car Parking Lots
--Fuel Areas with Tanks
--Control Towers 
--INAER Hangars-Frame Rate Friendly 
+- 3D Modeled Buildings  
+- Terminal  
+- Improved Lighting  
+- Nerby Vacation Villas and Cottages  
+- Frame Rate Friendly  
 
 {% include gallery id="gallery1" caption="Bocas del Toro, Bocas del Toro, Panama" %}
 
