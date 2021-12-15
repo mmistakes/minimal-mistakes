@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Git과 GitHub의 기초"
+title:  "[Git]Git과 GitHub의 기초"
 ---
 
 
