@@ -19,6 +19,10 @@ tags:
 
 ## Directorio de trabajo (Working Directory/Workspace)
 
+> Conocido como (SandBox - Caja de Arena) o (Caja de pruebas)
+
+Zona donde se descomprimen los archivos del **[Repositorio]** para poder editarlos , modificarlos antes de enviarlos al **{Staging Area/Index}** y luego almacenarlos dentro del **historial de commits** mediante ``git commit``
+
 Ruta del directorio :
 
 ``project/``

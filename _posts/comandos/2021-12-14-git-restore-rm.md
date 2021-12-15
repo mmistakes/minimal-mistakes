@@ -10,9 +10,9 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
+  - git-comandos
   - git-restore
   - git-rm
-  - git-comandos
 tags:
   - git-basico
   - git-manual

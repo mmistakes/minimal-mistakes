@@ -1,5 +1,5 @@
 
-# Git & Github Spain
+# Git & Github Friendly
 
 Visiteme en :
 

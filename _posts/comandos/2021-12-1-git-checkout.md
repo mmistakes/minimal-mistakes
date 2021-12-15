@@ -19,8 +19,15 @@ tags:
 
 ## Git - checkout
 
+> Todo los cambios que hagamos sobre un archivo que esta **{Tracked/Rastreado}** se realizan desde el **(Working Directory)**
+
+* ``git checkout <file>`` → Elimina los cambios de ``<file>`` que pasan de **{Modified}** a **{Unmodified}**
+  * Los cambios que se hagan en **{Modified}** cuando se ejecute este comando se perderán
+
+* ``git checkout .`` → Elimina los cambios de todos los ficheros **{Modified}** desde el estado **(Working Directory)** que pasan a **{Unmodified}** dentro del **{Staging Area/Index}**
+
 Cambia **[HEAD]** en si mismo de lugar al que apunta
 
-Reemplazar los cambios locales 
+Reemplazar los cambios locales
 
-``git checkout -- <archivo>`` → Reemplaza los cambios del **(Working Directory)** con el último contenido del **[HEAD]** , los cambios que ya han sido agregados al **{INDEX}** como los nuevos archivos , se mantendrán sin cambios
+``git checkout -- <archivo>`` → Reemplaza los cambios del **(Working Directory)** con el último contenido del **[HEAD]** , los cambios que ya han sido agregados al **{Staging Area/Index}** como los nuevos archivos , se mantendrán sin cambios

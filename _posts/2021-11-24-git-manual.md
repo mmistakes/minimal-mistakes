@@ -46,4 +46,3 @@ Configurar usuario y correo para subir cambios al repositorio principal
 ## Cambiar color a la salida de los datos de la terminal
 
 ``git config color.ui true``
-

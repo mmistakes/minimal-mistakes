@@ -11,8 +11,8 @@ header:
 categories:
   - git
   - git-grafico
-  - git-comandos
 tags:
+  - git-comandos
   - git-basico
   - git-manual
 ---
