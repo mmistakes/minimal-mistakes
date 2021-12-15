@@ -1,4 +1,5 @@
 # Custom Dictionary Words
+deshacerlos
 monitorizado
 subdirectorio
 subdirectorios

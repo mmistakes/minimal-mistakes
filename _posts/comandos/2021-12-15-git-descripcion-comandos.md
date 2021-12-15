@@ -1,7 +1,7 @@
 ---
 layout: single
-title: Git - Stash
-date: 2021-12-02
+title: Git - Descripción comandos
+date: 2021-12-15
 classes: wide
 toc: true
 toc_label: "Tabla de contenido"
@@ -10,7 +10,7 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-stash
+  - git-index
 tags:
   - git-basico
   - git-manual
@@ -18,6 +18,10 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Git Stash
+## Git - Ver descripción comandos
 
-Es una zona virtual donde se almacena los archivos de forma temporal mientras se trabaja en otros archivos del proyecto como una especie de copias de seguridad
+Desde la terminal de comandos de cualquier sistema de Linux :
+
+```git
+apropos git
+```

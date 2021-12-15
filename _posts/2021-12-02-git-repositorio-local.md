@@ -26,7 +26,7 @@ Ruta del directorio
 
 * * *
 
-Es un ``directorio oculto`` llamado **.git** que contiene todos los archivos necesarios para que funcione el sistema **GIT**
+Es un ``directorio oculto`` llamado **.git** que contiene todos los archivos necesarios para que funcione el sistema **Git**
 
 * Es la zona donde se almacenan todos los archivos que se añadieron ``git add`` desde el **{Staging Area}** al [Repo.Local] cuando ejecutamos el comando ``git commit``
 
