@@ -17,7 +17,8 @@
 - first-git-use 라는 저장소를 생성했다.
 - 되도록 Public으로 생성(남들이 소스코드를 볼 수 있도록)
 
-![Github.png](attachment:Github.png)
+![Github](https://user-images.githubusercontent.com/75322297/146227463-ce400874-94fb-417b-a221-1a2a1c299079.png)
+
 
 ### 2. Git 명령어를 사용하기 위해 Git을 다운로드
 - 구글에 Git을 검색 후 다운로드
@@ -31,7 +32,8 @@
 1. git config --list 으로 설정이 잘 잡혔는지 확인  
   (여러가지 설명이 나오나 마지막 이름과 이메일이 잘 들어가 있나 확인)
   
->![gitbash.png](attachment:gitbash.png)
+>![gitbash](https://user-images.githubusercontent.com/75322297/146227334-5852c735-19f1-4114-b820-f4cb777cf2ba.png)
+
 
 ### 4. 내 프로젝트 올리기
 - 올릴 소스코드 준비
@@ -107,7 +109,7 @@ To github.com:GoodJeon/first-git-use.git
 ```
 
 > 성공적으로 올라갔다.
-![success.png](attachment:success.png)
+![success](https://user-images.githubusercontent.com/75322297/146227550-7b2d6dae-48f6-49fa-9f57-2d62a421f033.png)
 
 # 공부 후 느낀 점
 1. 버전을 관리하는 점에 있어서 매우 좋을 것 같다.(더 배워야 겠지만)
