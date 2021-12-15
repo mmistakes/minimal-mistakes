@@ -48,10 +48,6 @@ gallery1:
     image_path: /assets/images/MPBO/BLOCK_11.jpg
     alt: "placeholder image 7"
     title: "Bocas del Toro, Bocas del Toro, Panama"
-  - url: /assets/images/MPBO/BLOCK_12.jpg
-    image_path: /assets/images/MPBO/BLOCK_12.jpg
-    alt: "placeholder image 7"
-    title: "Bocas del Toro, Bocas del Toro, Panama"
   - url: /assets/images/MPBO/BLOCK_13.jpg
     image_path: /assets/images/MPBO/BLOCK_13.jpg
     alt: "placeholder image 7"
