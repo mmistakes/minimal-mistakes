@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "[Git과 GitHub의 기초"
+---
+
+
+
 # Git과 Git Hub 기초 사용법
 
  > 코딩 외에 실무적인 문제를 해결해주는 방법으로 쓰이는 깃과 깃허브.  
