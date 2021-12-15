@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "[Git]Git과 GitHub의 기초"
 ---
 
@@ -99,7 +99,7 @@ and the repository exists.
   git은 SSH 또는 http 기반으로 사용을 하게 되는데 SSH key로 접속해서 사용하는 경우는 PC마다 SSH key를 등록해 주어야 한다고 한다.  
   기존 저장내용을 pull로 불러와 다시 시도하니 잘 되었다. 
   [해결방법 참조 블로그](https://maliceit.tistory.com/51)  
-  [해결방법 참조 블로그2](https://waaan.tistory.com/13)
+  [해결방법 참조 블로그2](https://waaan.tistory.com/13)  
 
 
 ```python
