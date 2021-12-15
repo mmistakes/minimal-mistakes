@@ -37,6 +37,13 @@ toc: true
   <br></p>
 {% include figure image_path="/assets/images/MPTO/mpto_block_06.jpg" alt="mpto" caption="Tocumen Intl Airport - Panama, Panama for MSFS" %}
 
+# Spain
+	
+## [LEJR - Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia, Spain](https://vpilotdesigns.github.io/LEJR/)
+<p><a href="https://vpilotdesigns.github.io/LEJR/"><strong>Galeria/Gallery</strong></a><br>
+  <br></p>
+{% include figure image_path="/assets/images/LEJR/Block_10.jpg" alt="lejr" caption="Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia, Spain for MSFS" %}  
+
 # United States
 	
 ## [KHPN - Westchester County Airport - White Plains, NY](https://vpilotdesigns.github.io/KHPN/)
