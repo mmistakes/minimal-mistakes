@@ -4,12 +4,12 @@ title: "LEJR - Jerez Airport"
 layout: single
 classes: wide
 gallery1:  
-  - url: /assets/images/LEJR/Block_02.jpg
-    image_path: /assets/images/LEJR/Block_02.jpg
-    alt: "placeholder image 2"
-    title: "Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain"
   - url: /assets/images/LEJR/Block_01.jpg
     image_path: /assets/images/LEJR/Block_01.jpg
+    alt: "placeholder image 2"
+    title: "Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain"
+  - url: /assets/images/LEJR/Block_02.jpg
+    image_path: /assets/images/LEJR/Block_02.jpg
     alt: "placeholder image 5"
     title: "Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain"
   - url: /assets/images/LEJR/Block_03.jpg
@@ -42,6 +42,38 @@ gallery1:
     title: "Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain"
   - url: /assets/images/LEJR/Block_10.jpg
     image_path: /assets/images/LEJR/Block_10.jpg
+    alt: "placeholder image 7"
+    title: "Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain"
+  - url: /assets/images/LEJR/Block_11.jpg
+    image_path: /assets/images/LEJR/Block_11.jpg
+    alt: "placeholder image 7"
+    title: "Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain"
+  - url: /assets/images/LEJR/Block_12.jpg
+    image_path: /assets/images/LEJR/Block_12.jpg
+    alt: "placeholder image 7"
+    title: "Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain"
+  - url: /assets/images/LEJR/Block_13.jpg
+    image_path: /assets/images/LEJR/Block_13.jpg
+    alt: "placeholder image 7"
+    title: "Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain"
+  - url: /assets/images/LEJR/Block_14.jpg
+    image_path: /assets/images/LEJR/Block_14.jpg
+    alt: "placeholder image 7"
+    title: "Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain"
+  - url: /assets/images/LEJR/Block_15.jpg
+    image_path: /assets/images/LEJR/Block_15.jpg
+    alt: "placeholder image 7"
+    title: "Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain"
+  - url: /assets/images/LEJR/Block_16.jpg
+    image_path: /assets/images/LEJR/Block_16.jpg
+    alt: "placeholder image 7"
+    title: "Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain"
+  - url: /assets/images/LEJR/Block_17.jpg
+    image_path: /assets/images/LEJR/Block_17.jpg
+    alt: "placeholder image 7"
+    title: "Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain"
+  - url: /assets/images/LEJR/Block_18.jpg
+    image_path: /assets/images/LEJR/Block_18.jpg
     alt: "placeholder image 7"
     title: "Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain"
   
