@@ -92,13 +92,13 @@ Jerez Airport
 Created by Arka506 and V Pilot Designs
 
 Features 
--3D Modeled Buildings, Terminals and Hangars
--Taxiway and Parking Markings
--Lighting-Antennas
--Car Parking Lots
--Fuel Areas with Tanks
--Control Towers 
--INAER Hangars-Frame Rate Friendly 
+-3D Modeled Buildings, Terminals and Hangars  
+-Taxiway and Parking Markings  
+-Lighting-Antennas  
+-Car Parking Lots  
+-Fuel Areas with Tanks  
+-Control Towers   
+-INAER Hangars-Frame Rate Friendly   
 
 {% include gallery id="gallery1" caption="Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain" %}
 
