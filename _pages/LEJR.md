@@ -75,7 +75,7 @@ gallery1:
   - url: /assets/images/LEJR/BLOCK_18.jpg
     image_path: /assets/images/LEJR/BLOCK_18.jpg
     alt: "placeholder image 7"
-    title: "Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain"
+    title: "Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain "
   
     
 ---
