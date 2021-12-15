@@ -86,7 +86,7 @@ Available in the MSFS Marketplace
 
 Disponible en el Marketplace de MSFS
 
-{% include figure image_path="/assets/images/LEJR/BLOCK_02.jpg" alt="lejr" caption="Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain" %}
+{% include figure image_path="/assets/images/LEJR/BLOCK_03.jpg" alt="lejr" caption="Jerez Airport, Jerez de la Frontera (Cadiz) - Andalucia - Spain" %}
 Jerez Airport
 
 Created by Arka506 and V Pilot Designs
