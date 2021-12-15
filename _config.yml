@@ -138,10 +138,13 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/PUTvision/"
+      url: "https://github.com/PUTvision"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-      # url:
+      url: "https://gitlab.com/PUTVision"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/channel/UC1WAfGoDvvqhK3QIk8bNM5w"
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
