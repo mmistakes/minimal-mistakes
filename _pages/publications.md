@@ -1,5 +1,5 @@
 ---
-title: "Our last publications"
+title: "Our recent publications"
 layout: mycategory
 permalink: /publications
 author_profile: false
