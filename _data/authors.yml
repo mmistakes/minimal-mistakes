@@ -32,7 +32,7 @@ pieczynski-dominik:
   firstname   : "Dominik"
   surname     : "Pieczyński"
   title       : #
-  bio         : "Pieski how how"
+  bio         : "Research assistant. Interested in applied deep learning, especially in medical fields."
   avatar      : "/assets/images/bio/dominikpieczynski.webp"
   links:
     - label: "Email"
