@@ -2,7 +2,7 @@
 layout: default
 title:  "[Git]Git과 GitHub의 기초"
 categories: Git
-
+comments: true
 ---
 
 
