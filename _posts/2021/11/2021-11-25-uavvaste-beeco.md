@@ -2,7 +2,7 @@
 layout: single
 title: "Be Eco with Us 2021 - the ecology conference"
 author: [ptak-bartosz, piechocki-mateusz]
-modified: 2021-04-04
+modified: 2021-11-25
 tags: [uav, object detection, conference]
 category: [conference]
 teaser: "/assets/images/posts/2021/11/cropped-logo-beeco.webp"
