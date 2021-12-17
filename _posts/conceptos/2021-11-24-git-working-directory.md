@@ -19,7 +19,15 @@ tags:
 
 ## Directorio de trabajo (Working Directory/Workspace)
 
-> Conocido como (SandBox - Caja de Arena) o (Caja de pruebas)
+> Importante : En Unix/Linux el terminal de comandos siempre tiene un (Directorio de Trabajo) traducido al español se refiere (Working Directory) o (wd)
+
+```bash
+ls # Lista ficheros del (wd → Working Directory) 
+```
+
+**(Directorio de Trabajo)** → **Working Directory** o **wd**
+
+> En Git se le conoce como (SandBox - Caja de Arena) o (Caja de pruebas)
 
 Zona donde se descomprimen los archivos del **[Repositorio]** para poder editarlos , modificarlos antes de enviarlos al **{Staging Area/Index}** y luego almacenarlos dentro del **historial de commits** mediante ``git commit``
 

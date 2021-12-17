@@ -1,4 +1,5 @@
 # Custom Dictionary Words
+chgrp
 deshacerlos
 monitorizado
 subdirectorio
