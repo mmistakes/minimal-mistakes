@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "GoodJeon's DevLog"
+title                    : "GoodJeon's Log"
 title_separator          : "|"
 subtitle                 : "Go with the Flow."
 name                     : "GoodJeon"
-description              : "공부한 것을 적기 위한 블로그"
+description              : "공부와 일상 블로그"
 url                      : "https://GoodJeon.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -32,7 +32,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : "goodjeons-devlog"
+    shortname            : "goodjeonslog"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -102,7 +102,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jeon Dongjun"
+  name             : "🐷전동준(Jeon DongJun)"
   avatar           : "/assets/images/jdj.jpg"
   bio              : "**Want to be a Good**"
   location         : "South Korea/Anyang"
