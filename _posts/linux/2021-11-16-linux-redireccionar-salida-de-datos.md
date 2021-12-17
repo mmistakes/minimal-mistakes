@@ -7,11 +7,11 @@ toc: true
 toc_label: "Tabla de contenido"
 toc_icon: "clipboard-list"
 header:
-  teaser: /assets/images/linux/tux.png
+  teaser: /assets/images/linux/tux.jpg
 categories:
   - linux
-tags:
   - linux-manual
+tags:
   - linux-metacaracteres
   - linux-entrada
   - linux-salida
@@ -19,16 +19,15 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Metacaracteres Entrada / Salida
+## Metacaracteres de Entrada / Salida
 
 ### Standard input (stdin)
 
-* Redirecciona la entrada del comando para leer el fichero.
-  * Todo lo que contenga el fichero se vera por la terminal
-
 ```bash
-comando < fichero 
+comando < fichero # Redirecciona la entrada del comando para leer el fichero.
 ```
+
+> Todo lo que contenga el fichero se vera por la terminal
 
 * Ejemplo
 
@@ -38,10 +37,8 @@ cat < file.txt # Todo el contenido se muestra por pantalla
 
 ### Standard output (stdout)
 
-* Redirecciona la salida del comando para que todo lo que se escriba quede almacenado en el archivo
-
 ```bash
-comando > fichero 
+comando > fichero # Redirecciona la salida del comando para que todo lo que se escriba quede almacenado en el archivo 
 ```
 
 * Ejemplo
@@ -50,10 +47,8 @@ comando > fichero
 cat > file.txt # Todo lo que escriba quedará almacenado dentro del archivo 
 ```
 
-### Ejecutar programa en el 'background'
-
-Programa puede ser ejecutado **de fondo** por añadiendo el simbolo **&** a la línea de comandos
+### Ejecutar programa en el 'background' o en 2º plano
 
 ```bash
-gv doc.ps &
+gv doc.ps & # Programa puede ser ejecutado **de fondo** o en 2º plano añadiendo el simbolo **&** a la línea de comandos
 ```

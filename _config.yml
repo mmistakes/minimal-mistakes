@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "RVSWeb"
-  avatar           : "/assets/images/llama.jpg"
+  avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Desarrollador Junior Full Stack"
   home             : # null (default)
   location         : "Spain"

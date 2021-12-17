@@ -4,12 +4,12 @@ main:
     url: /
   - title: "Buscador"
     url: /buscador/
+  - title: "Articulos por años"
+    url: /year-archive/
   - title: "Categorias"
     url: /categories/
   - title: "Etiquetas"
     url: /tags/
-  - title: "Articulos"
-    url: /year-archive/
   - title: "Portafolios"
     url: /portfolio/
   - title: "Políticas Privacidad"
