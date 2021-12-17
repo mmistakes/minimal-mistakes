@@ -1,15 +1,15 @@
 
 # Git & Github Friendly
 
-Visiteme en :
+Visitame en :
 
 [Mi blog 101](https://rvsweb.github.io/git-github/)
 
-> Blog orientado al aprendizaje de los distintos campos del desarrollo de software mediante GIT & GITHUB y además otros temas relacionadas con la informática y la programación en general.
+> Blog orientado al aprendizaje en los distintos campos del desarrollo de software utilizando las herramientas GIT & GITHUB principalmente y también tratando otros aspectos relacionados con la informática en general y la programación .
 
-El principal objetivo de este blog es añadir contenido sobre mi continuo aprendizaje y conocimiento a modo de **Cuaderno de bitácora** para que otros usuarios que se están iniciando en este mundo le puedan servir también de aprendizaje, recordatorio y complemento en sus estudios
+El principal objetivo en este **humilde blog** es añadir contenido sobre mi continuo aprendizaje y así mejorar mi conocimiento como si se tratará de un **cuaderno de Bitácora**
 
-Espero que os ayude en vuestro camino
+Espero que otros usuarios que se estén iniciando en el mundo de la informática le puedan servir de aprendizaje, recordatorio y complemento en sus estudios este blog
 
 * * *
 
@@ -26,7 +26,3 @@ Espero que os ayude en vuestro camino
 [Mi Portafolios](https://rvsweb.github.io/git-github/portfolio/)
 
 * * *
-
-1º Pasos en Git :
-
-[Crea tu 1º Repositorio Local](https://rvsweb.github.io/git-github/git/git-init/git-comandos/git-init/)
