@@ -9,7 +9,7 @@ sidebar:
 search: ture
 ---
 
-# 자료구조 Queue
+# 자료구조 - Queue
 
 ## 큐의 구조
 

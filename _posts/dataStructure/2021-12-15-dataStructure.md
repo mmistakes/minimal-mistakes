@@ -9,7 +9,7 @@ sidebar:
 search: ture
 ---
 
-# 자료구조-배열(array)
+# 자료구조 - List
 
 ## 배열이란? 
 
