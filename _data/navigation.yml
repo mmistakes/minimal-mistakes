@@ -8,20 +8,24 @@ main:
     url: /posts/
 
 sidebar_main:
-  - title: "Category"
-    url: /categories/
-  - title: "Tag"
-    url: /tags/
-  - title: "Posts"
-    url: /posts/
-    
+  - title: "Javascript"
+    url: categories/javascript
+  - title: "react"
+    url: /categories/react
+  - title: "node"
+    url: /categories/node
+  - title: "SQL"
+    url: /categories/sql
+  - title: "Algorithm"
+    url: /categories/algorithm
+
 docs:
-  - title : "대목차"
-    children : 
+  - title: "대목차"
+    children:
       - title: "Category"
         url: /categories/
-      - title : "Tag"
-        url : /tags/
+      - title: "Tag"
+        url: /tags/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/

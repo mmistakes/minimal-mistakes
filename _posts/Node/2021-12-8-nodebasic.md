@@ -1,12 +1,12 @@
 ---
 layout: single
 title: "서버 Req, Res 등등"
-categories: coding
-tag: ["server", "Javascript"]
+categories: "node"
+tag: ["server", "Javascript","Node"]
 toc: true
 
 sidebar:
-  nav: "main"
+  nav: "sidebar_main"
 tagline: " "
 header:
   overlay_image: /assets/images/DSCF3606.JPG
