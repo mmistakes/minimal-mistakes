@@ -7,7 +7,7 @@ toc: true
 toc_label: "Tabla de contenido"
 toc_icon: "clipboard-list"
 header:
-  teaser: /assets/images/linux/tux.png
+  teaser: /assets/images/linux/tux.jpg
 categories:
   - linux
   - linux-manual
