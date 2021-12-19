@@ -524,10 +524,10 @@
   padding: 0;
   width: 100%;
   list-style: none;
-  font-size: $type-size-6;
+  font-size: $type-size-8;
 
   @include breakpoint($large) {
-    font-size: $type-size-7;
+    font-size: $type-size-8;
   }
 
   a {
@@ -537,6 +537,7 @@
     font-weight: bold;
     line-height: 1.5;
     border-bottom: 1px solid $border-color;
+    font-size: $type-size-7;
 
     &:hover {
       color: $text-color;
