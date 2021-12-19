@@ -175,9 +175,9 @@ The output should look something like the following
 +-------------------+-------------------+---------+------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
 ```
 Note here that we are using session windows.
-> A Session window sizes dynamically based on the window length, depending on the inputs.
-> A Session window starts with an input, and expands itself if the following input is received within gap duration.
-> For static gap duration, a session window closes when there’s no input received within gap duration after receiving the latest input.
+- A Session window sizes dynamically based on the window length, depending on the inputs.
+- A Session window starts with an input, and expands itself if the following input is received within gap duration.
+- For static gap duration, a session window closes when there’s no input received within gap duration after receiving the latest input.
 
 By using session windows and grouping on the user sessions, we can easily see if a user has a cart event type, but no purchase event. This makes it easy to filter the events we consider as **abandoned cart** and forward them to a downstream topic for further processing; like sending out a reminder notification to the users after some period of time, like one hour.
 
