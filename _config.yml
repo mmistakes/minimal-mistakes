@@ -3,8 +3,8 @@
 ## SITE SETTINGS
 
 # Theme and skin
-theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"    # can be used in place of theme, see docs
+#theme                  : "minimal-mistakes-jekyll"
+remote_theme           : "mmistakes/minimal-mistakes"    # can be used in place of theme, see docs
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Meta fields
