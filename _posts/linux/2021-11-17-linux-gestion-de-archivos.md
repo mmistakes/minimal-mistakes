@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Linux - Gestion de archivos
+title: Linux - Gestion de Archivos
 date: 2021-12-17
 classes: wide
 toc: true
@@ -12,12 +12,16 @@ categories:
   - linux
   - linux-manual
 tags:
-  - linux-gestion
+  - linux-comunicacion
 page_css: 
   - /assets/css/mi-css.css
 ---
 
 ## Comandos
+
+### cat
+
+* Concatenar cadenas de texto o mostrar archivos de texto 
 
 ```bash
 cat # Concatenar cadenas de texto o mostrar archivos de texto 
@@ -26,42 +30,49 @@ cat # Concatenar cadenas de texto o mostrar archivos de texto
 Ejemplo:
 
 ```bash
-cat abecedario-hexa.txt
-a-97 
-b-98 
-c-99 
-d-100 
-e-101 
-f-102 
-g-103 
-h-104 
-i-105 
-j-106 
-k-107 
-l-108 
-m-109 
-n-110 
-o-111 
-p-112 
-q-113 
-r-114 
-s-115 
-t-116 
-u-117 
-v-118 
-w-119 
-x-120 
-y-121 
-z-122 
+cat abecedario.txt
+a-97
+ b-98
+ c-99
+ d-100
+ e-101
+ f-102
+ g-103
+ h-104
+ i-105
+ j-106
+ k-107
+ l-108
+ m-109
+ n-110
+ o-111
+ p-112
+ q-113
+ r-114
+ s-115
+ t-116
+ u-117
+ v-118
+ w-119
+ x-120
+ y-121
+ z-122
 ```
 
+### cd
+
+* Cambiar a otro directorio
+
 ```bash
-cd # Cambiar a otro directorio 
 cd ~ # Volver al directorio 'home' del usuario
 cd - # Muestra la ruta absoluta
 cd -- # Te envia al directorio 'home'
 cd ../../ # Bajan 2 niveles desde el directorio padre del sistema de archivos
 ```
+
+### addgroup
+
+* Crea un grupos
 
 ```bash
 addgroup # Crea un grupo llamado 'migrupo'
@@ -74,6 +85,10 @@ sudo addgroup migrupo # Crea un grupo llamado 'migrupo'
 Adding group `migrupo' (GID 1000) ...                                           
 Done. 
 ```
+
+### chgrp
+
+* Cambiar el acceso a grupo al que pertenece un archivo
 
 ```bash
 chgrp # Cambiar el acceso a grupo al que pertenece un archivo
@@ -90,6 +105,10 @@ chgrp migrupo archivo.txt # Cambia la propiedad del grupo de un archivo
 -rw-rw-r-- 1 sysadmin migrupo      0 Dec 17 13:43 archivo.txt    
 ```
 
+### chmod
+
+* Cambiar el modo de acceso  
+
 ```bash
 chmod # Cambiar el modo de acceso  
 ```
@@ -99,6 +118,10 @@ Ejemplo :
 ```bash
 chmod go-rwx file1 # Hace visible a otros usuarios
 ```
+
+### chown
+
+* Cambia el propietario del archivo
 
 ```bash
 chown # Cambia el propietario del archivo
@@ -111,6 +134,10 @@ chown root archivo.txt
 -rw-rw-r-- 1 root     migrupo      0 Dec 17 13:43 archivo.txt
 ```
 
+### cp
+
+* Copia el archivo
+
 ```bash
 cp # Copia el archivo
 ```
@@ -120,6 +147,10 @@ Ejemplo :
 ```bash
 cp archivo1 archivo2
 ```
+
+### hd
+
+* Vuelca el contenido de un archivo mostrando las versiones hexadecimal y ASCII
 
 ```bash
 hd # Volcar el contenido de un archivo mostrando las versiones hexadecimal y ASCII
@@ -139,6 +170,10 @@ hd list.txt # Volcar el contenido de un archivo mostrando las versiones hexadeci
 000000b3
 ```
 
+### head  
+
+* Mostrar las primeras líneas de un archivo
+
 ```bash
 head # Mostrar las primeras líneas de un archivo
 ```
@@ -154,20 +189,36 @@ for i in $(seq 97 122); do
 done   
 ```
 
+### less
+
+* Mostrar un archivo por pagina
+
 ```bash
 less # Mostrar un archivo por pagina
 ls -lha | less # Utilizar este comando acompañado de otros que se usen para listar directorios o archivos 
 ```
+
+### ln
+
+* Crea un enlace simbolico hacia el archivo al que apunte 'ambos elementos comparten el mismo contenido'
 
 ```bash
 ln # Crea un enlace simbolico hacia el archivo al que se referencie 'ambos elementos comparten el mismo contenido'
 ln abecedario.txt otro-abecedario.txt # Ahora "otro-abecedario.txt" apuntará al mismo contenido que "abecedario.txt"
 ```
 
+### mkdir
+
+* Crear un directorio
+
 ```bash
 mkdir # Crear un directorio
 mkdir nuevo_directorio
 ```
+
+### mv
+
+* Mover y Renombrar archivo
 
 ```bash
 mv # Mover y Renombrar archivo
@@ -175,58 +226,19 @@ mv archivo1 ../ # Subir un nivel desde el directorio padre en el sistema de arch
 mv archivo1 archivo2 # Renombrar el archivo1 al nombre del archivo2
 ```
 
+### pwd
+
+* Mostrar la ruta absoluta de donde me encuentro en el directorio de trabajo (Working Directory)
+
 ```bash
 pwd # Mostrar la ruta absoluta de donde me encuentro en el directorio de trabajo (Working Directory)
-/home/sysadmin/Documents 
 ```
+
+### rm
+
+* Eliminar archivos
 
 ```bash
 rm # Eliminar archivos
 rm -fr archivo # Borra de forma recursiva y forzada un archivo
-```
-
-```bash
-rmdir # Eliminar un directory
-```
-
-```bash
-tail # Muestra la últimas líneas de un archivo
-tail animals.txt                                
-11 retriever                                                                     
-12 badger                                                                        
-13 2bat                                                                           
-14 wolf                                                                          
-15 eagle
-```
-
-```bash
-wc # Acrónimo "Word count - Recuento de palabras" también el recuento de líneas y caracteres
-wc abecedario-hexa.txt 
-a-97 
-b-98 
-c-99 
-d-100 
-e-101 
-f-102 
-g-103 
-h-104 
-i-105 
-j-106 
-k-107 
-l-108 
-m-109 
-n-110 
-o-111 
-p-112 
-q-113 
-r-114 
-s-115 
-t-116 
-u-117 
-v-118 
-w-119 
-x-120 
-y-121 
-z-122 
- 26  26 179 abecedario-hexa.txt
 ```
