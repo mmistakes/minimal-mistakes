@@ -4,18 +4,17 @@ date: 2021-12-20
 header:
 image: "/images/blog cover.jpg"
 tags: [pulsar, spark, spark structured streaming]
-excerpt: "It is often common to use more advanced stream computing engines like Apache Spark and Apache Flink along with Pulsar. We'll discuss the role Apache Pulsar plays in the event streaming and computing landscape, the use cases you can implement with Pulsar and when more advanced computing engines should be integrated to perform more advanced stream computing tasks."
+excerpt: "We'll discuss the role Apache Pulsar plays in the event streaming and computing landscape, the use cases you can implement with Pulsar and when more advanced computing engines should be integrated to implement more advanced stream processing use cases."
 ---
 
 
-Stream processing is one of the most important requirements in modern data infrastructure. It's crucial for a business to leverage its full potential, in order to create a competitive advantage over its competitors
-and provide better services of greater quality to its customer by analyzing their data in realtime. Stream computing engines like Apache Spark and Apache Flink are common players there and
-modern data needs that require unification of Batch and Streaming - which is what these compute engines support - and modern cloud deployments make Apache Pulsar an excellent candidate to support
-the needs of these compute engines to it's fullest.
-
+Stream processing is one of the most important requirements in modern data infrastructure. Typically streaming data pipelines require a streaming storage layer like Apache Pulsar or Apache Kafka
+and then you in order to perform more advanced stream processing tasks you would use stream compute engines like Apache Flink and Spark Structured Streaming.
+Modern data requiring unified batch processing and streaming in cloud deployments makes Apache Pulsar an excellent candidate to support the needs of these compute engines.
+Apache Pulsar is designed for cloud-native infrastructure as well as a unified batch and stream data strategy in mind.
 
 ## The Role of Apache Pulsar in Streaming Data Pipelines
-> Apache Pulsar excels at storing data streams, it's a great fit for long term storage of data and can also be used to store results to some downstream applications.
+> Apache Pulsar excels at storing event streams and performing lightweight stream computing tasks. It's a great fit for long term storage of data and can also be used to store results to some downstream applications.
 
 A unified batch and stream processing engine requires the support from a unified data messaging and storage layer to achieve its full potential. In other words, the messaging system needs to not only move data in the pipelines, but to store data in streams for long periods of time and serves as the single source-of-truth for the processing engine.
 
