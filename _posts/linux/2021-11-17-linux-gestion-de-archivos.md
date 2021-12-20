@@ -21,7 +21,7 @@ page_css:
 
 ### cat
 
-* Concatenar cadenas de texto o mostrar archivos de texto 
+* Concatenar cadenas de texto o mostrar archivos de texto
 
 ```bash
 cat # Concatenar cadenas de texto o mostrar archivos de texto 
