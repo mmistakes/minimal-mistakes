@@ -138,13 +138,18 @@ You can check the full list of the available configuration options on connector 
 
 With the connection in place now let's see an example implementation
 ```scala
-val checkoutEvents = clickEventsDF
-        .select("brand", "categoryCode", "categoryId", "eventTime", "eventType", "price", "productId", "userId", "userSession")
-        .withColumn("eventTime", from_unixtime(col("eventTime")).cast("timestamp")  )
+      val checkoutEvents = parsedEvents
         .withWatermark("eventTime", "30 minutes")
-        .groupBy(col("userSession"), col("userId"),  session_window(col("eventTime"), "60 minutes"))
+        .groupBy(col("userSession"), col("userId"),  session_window(col("eventTime"), "80 minutes"))
         .agg(collect_list("eventType").`as`("eventTypes"))
         .filter(array_contains(col("eventTypes"),"cart"))
+        .select(
+          col("session_window.start").`as`("sessionWindowStart"),
+          col("session_window.end").`as`("sessionWindowEnd"),
+          col("userId"),
+          col("userSession"),
+          col("eventTypes")
+        )
 ```
 
 The output should look something like the following
