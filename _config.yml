@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "ko-KR, en-US"
 title                    : "Devtella"
 title_separator          : "-"
-subtitle                 : a future web developer
+subtitle                 : Stella's devlog
 name                     : "Stella Kim"
 description              : 
 url                      : "https://subtitle1.github.io"
