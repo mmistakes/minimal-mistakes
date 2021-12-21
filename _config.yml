@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "ko-KR, en-US"
 title                    : "Devtella"
-title_separator          : "-"
+title_separator          : "a future web developer"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Stella Kim"
 description              : 
