@@ -54,18 +54,24 @@ piechocki-mateusz:
   firstname   : "Mateusz"
   surname     : "Piechocki"
   title       : #
-  bio         : "Tum tum tum"
+  bio         : "Ph.D. student."
   avatar      : "/assets/images/bio/mateuszpiechocki.webp"
   links:
     - label: "Email"
       icon: "fa fa-envelope"
       url: "mailto:mateusz.piechocki@doctorate.put.poznan.pl"
+    - label: "Github"
+      icon: "fa fa-github-square"
+      url: "https://github.com/MatPiech"
+    - label: "Linkedin"
+      icon: "fa fa-linkedin-square"
+      url: "https://www.linkedin.com/in/mateusz-piechocki-68b517192"
 
 fularz-michal:  
   firstname   : "Michał"
   surname     : "Fularz"
   title       : 'Ph.D.'
-  bio         : "Bike, LEGO and food"
+  bio         : "Bike, LEGO and food."
   avatar      : "/assets/images/bio/michalfularz.webp"
   links:
     - label: "Email"
