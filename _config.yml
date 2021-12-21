@@ -17,8 +17,8 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "ko-KR, en-US"
 title                    : "Devtella"
-title_separator          : "a future web developer"
-subtitle                 : # site tagline that appears below site title in masthead
+title_separator          : "-"
+subtitle                 : a future web developer
 name                     : "Stella Kim"
 description              : 
 url                      : "https://subtitle1.github.io"
@@ -113,7 +113,7 @@ author:
       url: "mailto:stella.kim.96211@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://subtitle1.github.io"
+      # url: "https://subtitle1.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
