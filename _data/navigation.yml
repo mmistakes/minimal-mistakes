@@ -1,7 +1,15 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Home"
+    url: https://nyamin9.github.io/
+  - title : "Category"
+    url : /categories/
+  - title : "Tag"
+    url : /tags/
+  - title : "Posts"
+    url : /year-archive/
+    
+    
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
