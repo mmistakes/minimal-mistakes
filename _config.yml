@@ -105,12 +105,12 @@ author:
   name             : "Stella Kim"
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Welcome to my devlog!"
-  location         : "Somewhere"
+  location         : "Republic of Korea, Seoul"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "stella.kim.96211@gmail.com"
+      url: "stella.kim.96211@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -122,10 +122,10 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/subtitle1/"
+      url: "https://github.com/subtitle1/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/kxoul0211/"
+      url: "https://instagram.com/kxoul0211/"
 
 # Site Footer
 footer:
