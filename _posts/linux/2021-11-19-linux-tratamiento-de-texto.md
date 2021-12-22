@@ -17,9 +17,9 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-### Tratamiento de textos
+## Comandos - Tratamiento de textos
 
-#### awk / gawk
+### awk / gawk
 
 * awk y gawk son lo mismo : GNU + awk → gawk
 * Lenguaje de procesamiento de patrones y tratamiento de textos
@@ -31,7 +31,7 @@ gawk [ POSIX or GNU style options ] -f program-file [ -- ] file ...
 gawk [ POSIX or GNU style options ] [ -- ] program-text file ...
 ```
 
-##### Opciones
+#### Opciones
 
 * -F fs # --field-separator (Separador de patrones)
   * Se usa para la separación de entrada de patrones (El valor de la fs predefinido por la variable)
@@ -107,19 +107,19 @@ news
 proxy
 ```
 
-##### Utilizando Múltiples Comandos
+#### Utilizando Múltiples Comandos
 
 ```bash
 echo "Hola Amigo" | awk '{$2="Compañero"; print $0}'
 Hola Compañero # Cambio el 2º parametro de 'Amigo' por 'Compañero'
 ```
 
-#### cut
+### cut
 
 * Eliminar secciones de cada línea de archivos
 
 ```bash
- cut OPTION... [FILE]...
+ cut option... [file]...
 ```
 
 Las opciones que tiene ``cut`` si usa un delimitador, una posición de ``byte`` o un ``carácter`` para cortar las partes seleccionadas de las líneas:
@@ -130,7 +130,7 @@ Las opciones que tiene ``cut`` si usa un delimitador, una posición de ``byte`` 
 -c (--characters=LIST) # Selecciona por un caracter especifico , un establecido caracter o un rango  
 ```
 
-##### Ejemplo
+#### Ejemplo
 
 ```bash
 cat test.txt  # Archivo original
@@ -145,14 +145,16 @@ cut test.txt -f 1,3 # Seleccionamos los campos que queremos cortar y mostrar
 535:763 4987    Sales
 ```
 
-#### sort
+### sort
 
 * Ordenar y fusionar archivos
 
 ```bash
-sort [OPTION]... [FILE]...
-sort [OPTION]... --files0-from=F
+sort [option]... [file]...
+sort [option]... --files0-from=F
 ```
+
+#### Ejemplo
 
 ```bash
 cat abecedario-hexa.txt
@@ -188,21 +190,19 @@ z-122
 sort -rn abecedario-hexa.txt 
 ```
 
-##### Ejemplo
-
-#### sed
+### sed
 
 * (Stream Editor)
   * Permite realizar muchas funciones en archivos como buscar, reemplazar, insertar o eliminar.
   * Principalmente reemplazar el texto en un archivo
 
-```sed [OPTION]... {script-only-if-no-other-script} [input-file]...```
+```sed [option]... {script-only-if-no-other-script} [input-file]...```
 
 ```bash
 sort abecedario.txt
 ```
 
-##### Ejemplo
+#### Ejemplo
 
 ```bash
 cat fichero.txt
@@ -223,9 +223,13 @@ Salida :
 que es la parte que me interesa"
 ```
 
-#### dos2unix / mac2unix
+### dos2unix / mac2unix / unix2dos
 
-* Convertidor de archivos de texto de formato DOS/Mac a Unix y viceversa
+* dos2unix - Convertidor de archivos de texto de formato DOS a Unix y viceversa
+
+* mac2unix - Convertidor de archivos de texto de formato Mac a Unix y viceversa
+
+* unix2dos - Convertidor de archivos de texto de formato Unix a DOS y viceversa
 
 ```bash
 dos2unix a.txt b.txt # Convierte y reemplaza a.txt
@@ -240,14 +244,84 @@ unix2mac a.txt
 dos2unix -k -n a.txt e.txt
 ```
 
+### tr
+
+* Para convertir y eliminar caracteres
+  * Puedes usarlo para convertir **mayúsculas** a **minúsculas**, juntar caracteres repetidos y borrar caracteres.
+  * Requiere dos conjuntos de caracteres para las transformaciones y también se puede usar con otros comandos usando **tuberías** Unix para comandos avanzados.
+
 ```bash
-tr Translate (redefine or delete) characters, e.g. tr -d ',' < fil > fil2
+tr # Convertir (redefine o elimina) caracteres 
+tr [options] "set1" "set2" # Donde los set son un grupo de caracteres. 
+                           # Utiliza secuencias interpretadas, enumeró algunas de ellas
+
+NNN -> carácter con valor octal NNN (1 a 3 dígitos octales)
+\ -> barra invertida
+n -> nueva línea
+r -> return / volver 
+t -> pestaña horizontal
+[:alnum:] -> todas las letras y dígitos
+[:alpha:] -> todas las letras
+[:blank:] -> todos los espacios en blanco horizontales
+[:cntrl:] -> todos los caracteres de control
+[:digit:] -> todos los dígitos
+[:lower:] -> todas las letras minúsculas
+[:upper:] -> todas las letras mayúsculas
+```
+
+#### Sintaxis básica
+
+-c , -C , --complement -> Complementa el conjunto de caracteres en ‘set1'
+
+-d , --delete -> Elimina los caracteres en set1.
+
+-s , --squeeze-repeats -> Reemplace cada secuencia de entrada de un carácter repetido que se enumera en set1 con
+una sola aparición de ese carácter
+
+#### Opciones
+
+```bash
+echo "something to translate" | tr "set1" "set2"
 ```
 
 ```bash
-unix2dos Deal with the DOS vs Unix newline difference
+tr "set1" "set2" < file-to-translate
 ```
 
 ```bash
-vi Classic text editor
+tr "set1" "set2" < file-to-translate > file-output
+```
+
+#### Ejemplo
+
+* Convertir minúsculas a mayúsculas
+
+```bash
+echo "ejemplo de cambiar las minusculas por mayusculas" | tr [:lower:] [:upper:]
+EJEMPLO DE CAMBIAR LAS MINUSCULAS POR MAYUSCULAS
+
+tr "a-z" "A-Z" < ejemplo-letras.txt # Cambia el tamaño de las letras a mayusculas pero no lo almacena
+EJEMPLO DE CAMBIAR LAS MINUSCULAS POR MAYUSCULAS
+tr "a-z" "A-Z" < ejemplo-letras.txt > archivo-almacenar.txt # Para almacenar el contenido en un archivo
+```
+
+```bash
+tr -d ',' <archivo-1> archivo-2 # Ejemplo de sintaxis para eliminar caracteres
+cat ejemplo-letras.txt  | tr -d "came?" # Le indicamos al comando que muestre el archivo y elimine todos los caracteres entre comillas dobles
+jplo d bir ls inusuls por yusuls # Salida del comando eliminado todos los caracteres indicando entre comillas
+```
+
+### vi
+
+* Clásico editor de texto
+
+```bash
+vi # Abre el programa
+```
+
+```bash
+:q # Para salir del editor
+:!q # Para salir forzosamente del editor
+:wq # Para guardar y salir forzosamente del editor
+:!wq # Para guardar y salir forzosamente del editor
 ```

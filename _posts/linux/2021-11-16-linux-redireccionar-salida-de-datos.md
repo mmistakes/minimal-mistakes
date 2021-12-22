@@ -19,7 +19,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Metacaracteres de Entrada / Salida
+## Comandos - Metacaracteres de Entrada / Salida
 
 ### Standard input (stdin)
 
@@ -29,7 +29,7 @@ comando < fichero # Redirecciona la entrada del comando para leer el fichero.
 
 > Todo lo que contenga el fichero se vera por la terminal
 
-* Ejemplo
+#### Ejemplo
 
 ```bash
 cat < file.txt # Todo el contenido se muestra por pantalla 
@@ -41,13 +41,15 @@ cat < file.txt # Todo el contenido se muestra por pantalla
 comando > fichero # Redirecciona la salida del comando para que todo lo que se escriba quede almacenado en el archivo 
 ```
 
-* Ejemplo
+#### Ejemplo
 
 ```bash
 cat > file.txt # Todo lo que escriba quedará almacenado dentro del archivo 
 ```
 
-### Ejecutar programa en el 'background' o en6 2º plano
+### gv
+
+* Ejecutar programa en el 'background' o en6 2º plano
 
 ```bash
 gv doc.ps & # Programa puede ser ejecutado **de fondo** o en 2º plano añadiendo el simbolo **&** a la línea de comandos
