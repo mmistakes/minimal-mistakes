@@ -1,6 +1,12 @@
 ---
 layout: single
 title: "[TIL] JWT / API"
+categories: web
+tag: [API, 로그인, JWT, Session]
+toc: true
+author_profile: true
+sidebar:
+  nav: "docs"
 ---
 
 local에서 구동 : github.io 폴더에서 powershell 열어서 bundle exec jekyll serve
