@@ -57,15 +57,73 @@ server.port=8000
 테스트에 사용할 category 테이블  
 ![image](https://user-images.githubusercontent.com/86642180/146962467-5fb1e3c4-e13e-46a5-a08b-9aec99e85750.png)  
 <br>
-먼저 Domain Package 생성 뒤 Category.java 클래스 파일 생성한다.  
-본격적으로 클래스 파일을 Entity로 사용하기 위해 Annotation을 추가한다.  
-<br>
+(1) 먼저 Domain Package 생성 뒤 Category.java 클래스 파일 생성한다.  
+(2) 본격적으로 클래스 파일을 Entity로 사용하기 위해 Annotation을 추가한다.  
 `@Entity` DB에 있는 테이블과 1:1 매칭되게 함.  
 `@Table(name="테이블명")` 맵핑할 테이블 지정. DB에 있는 테이블 명과 동일하게 입력  
 `@Id` primary key값 JPA가 객체를 관리할때 쓴다(식별하기 위해)  
 `@GeneratedValue(strategy = GenerationType.원하는 타입설정)`  
-GenerationType.타입 4가지
+GenerationType.타입 4가지  
 - AUTO(default):JPA 구현체가 자동으로 생성 전략을 결정   
 - IDENTITY : 기본키 생성을 데이터베이스에 위임. 예를 들어 MySQL의 경우 AUTOINCREMENT를 사용하여 기본키를 생성(난 안씀)  
 - SEQUENCE: 데이터베이스의 특별한 오브젝트 시퀀스를 사용하여 기본키를 생성  
 - TABLE_: 데이터베이스에 키 생성 전용 테이블을 하나 만들고 이를 사용하여 기본키를 생성  
+`@Column(name="칼럼명")` 해당 멤버 변수와 테이블에 있는 칼럼을 매핑시킴  
+
+<br>
+
+(3) @Column으로 멤버 변수 생성 뒤 테이블에 있는 칼럼들과 매핑
+<br>
+
+(4) 인스턴스에 할당된 변수 초기화를 위해 생성자 형성<br>
+```
+	public Category() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+  
+	public Category(int category_code, String category_name, String cateogory_color) {
+		super();
+		this.category_code = category_code;
+		this.category_name = category_name;
+		this.cateogory_color = cateogory_color;
+	}
+```
+<br>
+(5) getter, setter 생성  
+데이터 가져오기(getter), 데이터 설정(setter)  
+<br>
+```
+	public int getCategory_code() {
+		return category_code;
+	}
+
+	public void setCategory_code(int category_code) {
+		this.category_code = category_code;
+	}
+
+	public String getCategory_name() {
+		return category_name;
+	}
+
+	public void setCategory_name(String category_name) {
+		this.category_name = category_name;
+	}
+
+	public String getCateogory_color() {
+		return cateogory_color;
+	}
+
+	public void setCateogory_color(String cateogory_color) {
+		this.cateogory_color = cateogory_color;
+	}
+```
+<br>
+(6) toString() 생성  
+```
+	@Override
+	public String toString() {
+		return "Category [category_code=" + category_code + ", category_name=" + category_name + ", cateogory_color="
+				+ cateogory_color + "]";
+	}
+```
