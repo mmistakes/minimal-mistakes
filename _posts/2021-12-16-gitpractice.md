@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: default
+comments: true
 title:  "[Git]Git과 GitHub의 기초"
 categories: Programming
 tag: Git
