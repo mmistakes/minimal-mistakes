@@ -2,6 +2,7 @@
 chgrp
 deshacerlos
 monitorizado
+renice
 subdirectorio
 subdirectorios
 tabulación

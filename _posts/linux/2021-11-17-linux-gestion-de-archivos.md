@@ -27,7 +27,7 @@ page_css:
 cat # Concatenar cadenas de texto o mostrar archivos de texto 
 ```
 
-Ejemplo:
+#### Ejemplo
 
 ```bash
 cat abecedario.txt
@@ -78,7 +78,7 @@ cd ../../ # Bajan 2 niveles desde el directorio padre del sistema de archivos
 addgroup # Crea un grupo llamado 'migrupo'
 ```
 
-Ejemplo :
+#### Ejemplo
 
 ```bash
 sudo addgroup migrupo # Crea un grupo llamado 'migrupo'
@@ -98,7 +98,7 @@ chgrp migrupo archivo.txt # Cambia la propiedad del grupo de un archivo
 -rw-rw-r-- 1 sysadmin migrupo      0 Dec 17 13:43 archivo.txt    
 ```
 
-Ejemplo :
+#### Ejemplo
 
 ```bash
 chgrp migrupo archivo.txt # Cambia la propiedad del grupo de un archivo
@@ -113,7 +113,7 @@ chgrp migrupo archivo.txt # Cambia la propiedad del grupo de un archivo
 chmod # Cambiar el modo de acceso  
 ```
 
-Ejemplo :
+#### Ejemplo
 
 ```bash
 chmod go-rwx file1 # Hace visible a otros usuarios
@@ -127,7 +127,7 @@ chmod go-rwx file1 # Hace visible a otros usuarios
 chown # Cambia el propietario del archivo
 ```
 
-Ejemplo :
+#### Ejemplo
 
 ```bash
 chown root archivo.txt
@@ -142,7 +142,7 @@ chown root archivo.txt
 cp # Copia el archivo
 ```
 
-Ejemplo :
+#### Ejemplo
 
 ```bash
 cp archivo1 archivo2
@@ -178,7 +178,7 @@ hd list.txt # Volcar el contenido de un archivo mostrando las versiones hexadeci
 head # Mostrar las primeras líneas de un archivo
 ```
 
-Ejemplo :
+#### Ejemplo
 
 ```bash
 head abecedario.sh                              

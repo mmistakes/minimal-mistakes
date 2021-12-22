@@ -19,7 +19,9 @@ page_css:
 
 ### Transferir archivos
 
-### scp - (Secure Copy Protocol)
+### scp
+
+* Protocolo de seguridad - (Secure Copy Protocol)
 
 * Protocolo de transferencia de archivos en red que permite la transferencia de archivos fácil y segura entre un host remoto y uno local, o entre dos ubicaciones remotas.
 * Sus funciones de autenticación y cifrado sin requerir servicios de alojamiento de terceros
@@ -44,7 +46,9 @@ scp [OPCION] [usuario@]SRC_HOST:]archivo1 [usuario@] HOST_DESTINO:]archivo2
 scp -p root@162.168.1.1:/media/archivo.txt ubuntu@162.168.1.2:/desktop/destination
 ```
 
-### sftp - (Secure file copy - Secure File Transfer Protocol)
+### sftp
+
+* (Secure file copy - Secure File Transfer Protocol)
 
 * Copia segura local-remota, remota-remota; manipulación de sistemas de archivos remotos
 * Permite operaciones sobre archivos remotos.
@@ -61,7 +65,9 @@ sftp user@server_ipaddress
 sftp user@remotehost_domainname
 ```
 
-### ssh - Secure SHell : Protocolo administración remota para controlar servidores remotos a través de Internet mediante mecanismo de autenticación
+### ssh
+
+* Secure SHell : Protocolo administración remota para controlar servidores remotos a través de Internet mediante mecanismo de autenticación
 
 #### Contiene
 
@@ -86,7 +92,7 @@ sftp user@remotehost_domainname
 
 ![Alt diagrama-ssh](/assets/images/linux/ssh/ssh-eje-1.jpg)
 
-### Técnicas de Criptografía
+#### Técnicas de Criptografía
 
 * Para realizar comunicaciones seguras el **protocolo SSH** tiene un cifrado seguro para transferir información entre el **host** y el **cliente**
 
@@ -123,7 +129,7 @@ sftp user@remotehost_domainname
 
 * Utiliza dos claves separadas para el cifrado y el descifrado , se conocen como la clave pública (public key) y la clave privada (private key). estas 2 claves juntas forman un par de claves pública-privada conocidas como **(public -private key pair)**
 
-* Clave pública se distribuye abiertamente, se comparte por todos los clientes y está vinculada con la clave privada 
+* Clave pública se distribuye abiertamente, se comparte por todos los clientes y está vinculada con la clave privada
 
 * Clave privada no se puede calcular matemáticamente desde la clave pública.
   
