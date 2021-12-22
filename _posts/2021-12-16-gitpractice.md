@@ -5,6 +5,8 @@ title:  "[Git]Git과 GitHub의 기초"
 categories: Programming
 tag: Git
 toc: true
+toc_sticky: true
+toc_label : 'Contents'
 ---
 
 
@@ -29,6 +31,8 @@ toc: true
 - 되도록 Public으로 생성(남들이 소스코드를 볼 수 있도록)
 
 ![Github](https://user-images.githubusercontent.com/75322297/146227463-ce400874-94fb-417b-a221-1a2a1c299079.png)
+{: .align-center}
+
 
 
 ### 2. Git 명령어를 사용하기 위해 Git을 다운로드
@@ -44,6 +48,7 @@ toc: true
   (여러가지 설명이 나오나 마지막 이름과 이메일이 잘 들어가 있나 확인)
   
 >![gitbash](https://user-images.githubusercontent.com/75322297/146227334-5852c735-19f1-4114-b820-f4cb777cf2ba.png)
+{: .align-center}
 
 
 ### 4. 내 프로젝트 올리기

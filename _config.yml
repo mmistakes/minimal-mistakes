@@ -12,21 +12,21 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KR"
-title                    : "GoodJeon's Log"
-title_separator          : "|"
-subtitle                 : "Go with the Flow."
-name                     : "GoodJeon"
-description              : "공부와 일상 블로그"
-url                      : "https://GoodJeon.github.io"
+locale                   : "ko-KR" # 블로그 주요 언어
+title                    : "GoodJeon's Log" # 사이트 탭에서 보이는 이름
+title_separator          : "|" # 사이트 탭에서 보이는 구분 기호
+subtitle                 : "Go with the Flow." # title 소제목
+name                     : "GoodJeon" # 화면 하단 영역의 이름
+description              : "공부와 일상 블로그" # 어디에 적용되는지 모르겠..
+url                      : "https://GoodJeon.github.io" # 현재 url
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/gjlogo.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "취준생" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -204,7 +204,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 8 # amount of posts to show
+paginate: 15 # amount of posts to show / defaults : 5
 paginate_path: /page:num/
 timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -279,3 +279,12 @@ defaults:
       show_date: true
 
 date_format: "%Y-%m-%d"
+
+
+#_pages        : 새로 추가한 영역
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
