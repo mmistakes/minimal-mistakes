@@ -63,4 +63,9 @@ server.port=8000
 `@Entity` DB에 있는 테이블과 1:1 매칭되게 함.  
 `@Table(name="테이블명")` 맵핑할 테이블 지정. DB에 있는 테이블 명과 동일하게 입력  
 `@Id` primary key값 JPA가 객체를 관리할때 쓴다(식별하기 위해)  
-`@GeneratedValue(strategy = GenerationType.원하는 타입설정)`
+`@GeneratedValue(strategy = GenerationType.원하는 타입설정)`  
+GenerationType.타입 4가지
+- AUTO(default):JPA 구현체가 자동으로 생성 전략을 결정   
+- IDENTITY : 기본키 생성을 데이터베이스에 위임. 예를 들어 MySQL의 경우 AUTOINCREMENT를 사용하여 기본키를 생성(난 안씀)  
+- SEQUENCE: 데이터베이스의 특별한 오브젝트 시퀀스를 사용하여 기본키를 생성  
+- TABLE_: 데이터베이스에 키 생성 전용 테이블을 하나 만들고 이를 사용하여 기본키를 생성  
