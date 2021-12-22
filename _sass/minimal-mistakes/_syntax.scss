@@ -6,8 +6,8 @@ div.highlighter-rouge,
 figure.highlight {
   position: relative;
   margin-bottom: 1em;
-  background: $base00;
-  color: $base05;
+  background: #f1f3f5;
+  color: $base03;
   font-family: $monospace;
   font-size: $type-size-6;
   line-height: 1.8;
@@ -38,6 +38,13 @@ figure.highlight {
       color: $base04;
       border-right: 1px solid $base04;
       text-align: right;
+      // 라인이 복사되지 않게 한다.
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
 
     /* code */
@@ -78,11 +85,11 @@ figure.highlight {
   }
   .n {
     /* Name */
-    color: $base05;
+    color: $base03;
   }
   .o {
     /* Operator */
-    color: $base0c;
+    color: #9575cd;
   }
   .p {
     /* Punctuation */
@@ -229,7 +236,7 @@ figure.highlight {
   }
   .ow {
     /* Operator.Word */
-    color: $base0c;
+    color: #9575cd;
   }
   .w {
     /* Text.Whitespace */

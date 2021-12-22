@@ -190,10 +190,13 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Conversion
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
+#lsi: false
+# excerpt_separator: "\n\n"
+# incremental: false
 
 
 # Markdown Processing

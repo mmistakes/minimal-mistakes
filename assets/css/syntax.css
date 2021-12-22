@@ -1,0 +1,35 @@
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #444444;
+}
+.highlight .cp {
+  color: #CC00A3;
+}
+.highlight .cs {
+  color: #CC00A3;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1 {
+  color: #FF0000;
+}
+.highlight .kc {
+  color: #C34E00;
+}
+.highlight .kd {
+  color: #0000FF;
+}
+.highlight .kr {
+  color: #007575;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kt, .highlight .kv {
+  color: #0000FF;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss {
+  color: #009C00;
+}
+.highlight .sa {
+  color: #0000FF;
+}
+.highlight .nb, .highlight .bp {
+  color: #C34E00;
+}
