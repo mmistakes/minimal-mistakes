@@ -92,7 +92,7 @@ GenerationType.타입 4가지
 <br>
 (5) getter, setter 생성  
 데이터 가져오기(getter), 데이터 설정(setter)  
-<br>
+
 ```
 	public int getCategory_code() {
 		return category_code;
@@ -118,7 +118,7 @@ GenerationType.타입 4가지
 		this.cateogory_color = cateogory_color;
 	}
 ```
-<br>
+
 (6) toString() 생성  
 ```
 	@Override
