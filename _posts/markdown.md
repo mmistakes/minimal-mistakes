@@ -1,8 +1,7 @@
 ---
 layout: single
 title: "마크다운 기초"
-categories:
-    - markdown
+categories: "markdown"
 ---
 
 # 마크다운 기초 설명 
