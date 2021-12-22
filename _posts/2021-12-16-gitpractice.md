@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Git]Git과 GitHub의 기초"
-categories: Computer
+categories: Programming
 tag: Git
 toc: true
 ---
