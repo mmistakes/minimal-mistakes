@@ -279,7 +279,7 @@ defaults:
       show_date: true
 
 date_format: "%Y-%m-%d"
-
+future: true
 
 #_pages        : 새로 추가한 영역
   - scope:
