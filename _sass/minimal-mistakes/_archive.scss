@@ -50,7 +50,9 @@
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
-
+  font-family: $cute;
+  font-size: $type-size-4;
+  
   a[rel="permalink"]::before {
     content: '';
     position: absolute;
