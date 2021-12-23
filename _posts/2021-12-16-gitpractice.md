@@ -6,8 +6,8 @@ categories: Programming
 tag: Git
 toc: true
 toc_sticky: true
-toc_label : 'Contents'
-author_profile: false
+date: 2021-12-16
+last_modified_at: 2021-12-23
 ---
 
 
@@ -132,3 +132,5 @@ To github.com:GoodJeon/first-git-use.git
 1. 버전을 관리하는 점에 있어서 매우 좋을 것 같다.(더 배워야 겠지만)
 1. 처음 시도 했을 때와는 다르게 에러가 생겨서 해결 방법을 찾는 연습이 됐다.(시간을 많이 썼지만.)
 1. 나중에 실제 회사에서 어떻게 사용하는지 배워보고 싶다.
+
+[맨 위로 이동하기](#){: .btn .btn--primary }{: .align-right}
