@@ -7,6 +7,7 @@ tag: Git
 toc: true
 toc_sticky: true
 toc_label : 'Contents'
+author_profile: false
 ---
 
 
