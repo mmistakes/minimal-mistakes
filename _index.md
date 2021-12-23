@@ -15,14 +15,14 @@ Check out some of the personal projects that I am currently working on. I am foc
 I am currently taking some time to learn new things.
 
 -   I have been vigorously learning as much as I can about the [crypto space](/categories/cryptocurrency_and_the_blockchain/). It is incredibly fascinating. I genuinely believe the future of technology will be heavily influenced by the blockchain.
-    
+
 -   I have been doing a lot of [reading](/categories/learning/book_report/reading_list), and I’ve also written a few [book reports](/categories/learning/book_report/).
-    
+
 -   I’m also learning [Albanian](/categories/learning/languages/learning_albanian), so I can better communicate with my future in-laws.
-    
+
 -   I’ve also been taking a few [masterclasses](/categories/learning/masterclass/) along the way.
-    
+
 
 ## Programming Languages
 
-I have been picking up a few new [programming languages](/categories/career/technical_experience/programming_languages) as well. Currently, I am learning **Rust** and **Solidity**.
+I have been picking up a few new [programming languages](/categories/career/technical_experience/programming_languages) as well.
