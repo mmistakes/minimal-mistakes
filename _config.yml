@@ -12,7 +12,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/gjlogo.png"
-masthead_title           : "취준생" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "취준생 블로그" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -88,7 +88,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "🐷전동준(Jeon DongJun)"
+  name             : "🐷전동준|(Jeon DongJun)"
   avatar           : "/assets/images/jdj.jpg"
   bio              : "**Want to be a Good**"
   location         : "South Korea/Anyang"
