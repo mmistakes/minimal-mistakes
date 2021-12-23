@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Projects"
-    url: "/projects"
+  - title: "Research"
+    url: "/research"
   - title: "People"
     url: "/people"
   #- title: "Quick-Start Guide"
@@ -14,3 +14,11 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+research:
+  - title: "Research"
+    children:
+      - title: "Projects"
+        url: "/research/projects"
+      - title: "Publications"
+        url: "/research/publications"

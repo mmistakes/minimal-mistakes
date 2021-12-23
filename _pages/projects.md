@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Research Projects
-permalink: /projects
+permalink: /research/projects
 lang: en
 lang-ref: projects
 toc: true
