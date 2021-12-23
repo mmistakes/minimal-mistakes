@@ -150,6 +150,7 @@
   padding-left: 15px;
   padding-right: 25px;
   line-height: 1;
+  font-family: $cute;
 
   @include breakpoint($large) {
     display: block;
@@ -173,16 +174,22 @@
   }
 }
 .sidebar .author__name {
-  font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-family: $cute;
+  font-size: $type-size-4;
 }
 
 .author__bio {
   margin: 0;
+  font-family: $cute;
+  font-size: $type-size-4;
 
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 20px;
+  }
+
+  p {
+    font-family: $cute;
   }
 }
 

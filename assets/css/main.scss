@@ -6,3 +6,39 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// "Cafe24Oneprettynight"
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//"Nanum Gothic Coding"
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding');
+
+// "Noto Serif KR"
+//@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+
+// "RIDIBatang"
+/*
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+// "Iropke Batang" 
+@import url('https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
+
+// "Indie Flower"
+//@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Serif+KR&family=Ubuntu:wght@300&display=swap');
+
+// "Gloria Hallelujah"
+//@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+// "Coming Soon"
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
