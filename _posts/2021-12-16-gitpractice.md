@@ -10,6 +10,8 @@ date: 2021-12-16
 last_modified_at: 2021-12-23
 ---
 
+**[noitce!!]**고쳐야할 점이나 질문 사항은 항상 배우려는 자세로 답해드리겠습니다.
+{: .notice--info}
 
 
 # Git과 Git Hub 기초 사용법
