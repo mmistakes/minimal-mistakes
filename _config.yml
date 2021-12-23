@@ -4,7 +4,7 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "ko-KR" # 블로그 주요 언어
 title                    : "GoodJeon's Log" # 사이트 탭에서 보이는 이름
 title_separator          : "|" # 사이트 탭에서 보이는 구분 기호
-subtitle                 : "Go with the Flow." # title 소제목
+subtitle                 : "GoodJeon's Log" # title 소제목
 name                     : "GoodJeon" # 화면 하단 영역의 이름
 description              : "공부와 일상 블로그" # 어디에 적용되는지 모르겠..
 url                      : "https://GoodJeon.github.io" # 현재 url
@@ -90,7 +90,7 @@ analytics:
 author:
   name             : "🐷전동준(Jeon DongJun)"
   avatar           : "/assets/images/jdj.jpg"
-  bio              : "**Want to be a Good**"
+  bio              : "**Go with the flow**"
   location         : "South Korea/Anyang"
   email            : "513ehdwnsl@gmail.com"
   links:
