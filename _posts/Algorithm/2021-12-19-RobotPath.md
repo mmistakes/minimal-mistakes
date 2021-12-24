@@ -2,6 +2,7 @@
 layout: single
 title: "RobotPath"
 categories: "Algorithm"
+excerpt: "로봇이 목표물까지 도착하는 최소 경우의 수."
 
 tag: ["BFS", "재귀"]
 
@@ -11,10 +12,7 @@ tagline: " "
 header:
   overlay_image: /assets/images/DSCF3606.JPG
   overlay_filter: 0.5
-
 ---
-
-
 
 ## 문제
 
