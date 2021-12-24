@@ -16,19 +16,21 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "es-ES"
-title                    : "Script Kiddie"
-title_separator          : "-"
-subtitle                 : ""
-name                     : "Marcos Martín Gutiérrez"
+title                    : "Hacking Blog"
+title_separator          : "|"
+subtitle                 : "Marcos Martín"
+name                     : "Marcos Martín"
 description              : "Asanta sana squash banana"
-url                      : "https://marcosmargu.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : "https://github.com/r4fiki"
+baseurl                  : #"/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/rafiki.png"
 logo                     : "/assets/images/rafikiloco.png"
 masthead_title           : "Hacking Blog"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
+
+
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
@@ -58,7 +60,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
+  hide                   : true
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
@@ -66,7 +68,7 @@ algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
+  powered_by             : false
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
@@ -79,7 +81,7 @@ baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : r4f1k1hacks
 facebook:
   username               :
   app_id                 :
@@ -104,28 +106,28 @@ analytics:
 author:
   name             : "Marcos Martín Gutiérrez"
   avatar           : "/assets/images/logoMarcos.png"
-  bio              : ""
+  bio              : "Application Security Engineer"
   location         : "Somewhere"
   email            : "marcosmartingutierrez89@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      #url: "marcosmartingutierrez89@gmail"
+    - label: "Try Hack Me"
+      icon: "fab fa-cloudversify"
+      url: #"https://tryhackme.com/badge/445073"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://twitter.com/r4f1k1hacks"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/marcos-martin-gutierrez/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/marcosmargu"
+      url: "https://github.com/r4fiki"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      #url: "https://instagram.com/"
     - label: "Hack The Box"
       icon: "fa fa-fw fa-cube"
       url: "https://app.hackthebox.com/profile/430489"
@@ -134,13 +136,13 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://twitter.com/r4f1k1hacks"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      # url: "https://twitter.com/r4f1k1hacks"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: https://github.com/r4fiki
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -150,13 +152,16 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/marcos-martin-gutierrez/"
 
 # Reading Files
 include:
   - .htaccess
-  - _pages
+
 exclude:
+  - _pages
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
@@ -289,8 +294,11 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      words_per_minute: 250
       share: true
       related: true
       show_date: true
       date_format: "%d-%m-%Y"
+      
+page_css:
+  - /_includes/head/custom.css
