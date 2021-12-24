@@ -1,7 +1,7 @@
 ---
 title: "SQL"
 layout: archive
-permalink: categories/SQL
+permalink: categories/sql
 author_profile: true
 sidebar_main: true
 
