@@ -498,6 +498,35 @@
   text-transform: uppercase;
   border-bottom: 1px solid $border-color;
 }
+/*****************/
+
+.page__taxonomy-item-category {
+  display: inside;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  padding: 1px 8px;
+  text-decoration: none;
+  border: 1px solid #373C3F;
+  border-radius: 4px;
+  background-color: #4D5357;
+  font-family: "Coming Soon",Georgia,Times,serif;
+  color: #d3d3d3;
+}
+
+.page__taxonomy-item-tag {
+  display: inside;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  padding: 1px 8px;
+  text-decoration: none;
+  border: 1px solid #373C3F;
+  border-radius: 4px;
+  background-color: #ebebeb;
+  font-family: "Coming Soon",Georgia,Times,serif;
+  color: #4D5357;
+}
+
+/****************************/
 
 /*
      Table of contents navigation
