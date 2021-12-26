@@ -4,6 +4,8 @@ main:
     url: "/research"
   - title: "People"
     url: "/people"
+  - title: "Artifacts"
+    url: "/artifacts"
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
