@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hello,JS😘</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <form id="login-form" class="hidden" >
+            <input 
+             required maxlength="15"
+             type="text" 
+             placeholder="What's your ID?"
+             />
+            <input type="submit" value="Log In" class="submit-form"/>
+        </form>
+        <h2 id="clock" class="clock-font">00:00</h2>
+        <h1 id="greeting" class="hidden"></h1>
+        <h2></h2>
+        <form id="todo-form">
+            <input type="text" placeholder="    Write Your schedule" required/>
+        </form>
+        <ul id="todo-list"></ul>
+        <div id="quote" class="quote-font">
+            <span></span>
+            <span></span>
+        </div>
+        <div id="weather" class="weather-font">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="background-cover"></div>
+        <script src="js/greetings.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/weather.js"></script>
+        
+    </body>
+</html>
