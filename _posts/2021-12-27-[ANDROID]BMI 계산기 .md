@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[ANDROID]BMI 계산기"
-categories: Android Studio
+categories: AndroidStudio
 tag: [androidstudio, java, kotlin]
 toc: true
 author_profile: true
