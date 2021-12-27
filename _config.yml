@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "nyamin9"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : 
   bio              : "의공학도의 끼적끼적"
   location         : "South Korea"
   email            :

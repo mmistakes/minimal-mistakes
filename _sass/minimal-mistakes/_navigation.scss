@@ -503,27 +503,28 @@
 .page__taxonomy-item-category {
   display: inside;
   margin-right: 3px;
-  margin-bottom: 8px;
-  padding: 1px 1px;
+  margin-bottom: 5px;
+  padding: 1px 3px;
   text-decoration: none;
-  border: 1px solid #373C3F;
-  border-radius: 4px;
-  background-color: #4D5357;
-  font-family: "Helvetica Neue",Georgia,Times,serif;
-  color: #d3d3d3;
+  border: 1px solid #b0d894;
+  border-radius: 3px;
+  background-color: #b0d894;
+  font-family: "Segoe UI",Georgia,Times,serif;
+  color: #444c38;
 }
 
 .page__taxonomy-item-tag {
   display: inside;
   margin-right: 3px;
-  margin-bottom: 8px;
-  padding: 1px 1px;
+
+  margin-bottom: 5px;
+  padding: 1px 3px;
   text-decoration: none;
-  border: 1px solid #373C3F;
-  border-radius: 4px;
-  background-color: #ebebeb;
-  font-family: "Helvetica Neue"",Georgia,Times,serif;
-  color: #4D5357;
+  border: 1px solid #d6eccc;
+  border-radius: 3px;
+  background-color: #d6eccc;
+  font-family: "Segoe UI",Georgia,Times,serif;
+  color: #444c38;
 }
 
 /****************************/
