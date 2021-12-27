@@ -1,0 +1,143 @@
+/*
+@font-face {
+    font-family: 'BMJUA';
+    src: url('C:\Users\공용 컴퓨터\Documents\momentum\font\BMJUA_ttf.ttf') format('truetype');
+}
+*/
+.hidden {
+	display: none;
+}
+
+.background {
+	margin: 0 auto;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.background-cover {
+	margin: 0 auto;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 1;
+}
+
+body {
+	/*font-family: 'BMJUA';*/
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+}
+
+input[type='text'] {
+	width: 150px;
+	height: 25px;
+	border: 3px solid whitesmoke;
+	border-radius: 5px;
+}
+
+input[type='text']:focus {
+	width: 150px;
+	height: 25px;
+	border: 3px solid whitesmoke;
+	border-radius: 5px;
+}
+
+.button-name {
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.button-name:hover {
+	border: none;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#todo-form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	text-align: center;
+	font-size: 10px;
+	color: whitesmoke;
+	opacity: 60%;
+}
+
+#todo-list {
+	/*white-space: nowrap;*/
+	position: absolute;
+	top: 90%;
+	left: 90%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	text-align: center;
+	font-size: 15px;
+	color: whitesmoke;
+	opacity: 60%;
+}
+
+#login-form {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	text-align: center;
+	font-size: 15px;
+	color: whitesmoke;
+	opacity: 60%;
+}
+#greeting {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	text-align: center;
+	font-size: 30px;
+	color: whitesmoke;
+	opacity: 60%;
+}
+
+.clock-font {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	text-align: center;
+	font-size: 90px;
+	color: whitesmoke;
+	opacity: 60%;
+}
+.quote-font {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	text-align: center;
+	font-size: 15x;
+	color: whitesmoke;
+	opacity: 60%;
+}
+.weather-font {
+	position: absolute;
+	top: 10%;
+	left: 90%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	text-align: center;
+	font-size: 15px;
+	color: whitesmoke;
+	opacity: 60%;
+}
