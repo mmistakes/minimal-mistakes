@@ -7,7 +7,7 @@ on:
 jobs:
   close-pr:
     runs-on: ubuntu-latest
-    if: "contains(github.event.pull_request.body, 'CHECK_PR_DID_NOT_CONFIRM')"
+    if: "contains(github.event.pull_request.body, 'CHECK_PR_DID_NOT_CONFIRM') || github.event.pull_request.body == ''"
     steps:
       - uses: superbrothers/close-pull-request@v3
         with:
