@@ -123,6 +123,8 @@ atomic design 기반 디렉토리 구조
 
 그래서 일단은 생각 나는대로 큰 컴포넌트 대로 나누고, 그 안에 필요한 원자들을 나누어 추가하였다.
 
+<img src='./assets/images/211228_directory.JPG' />
+
 #### 할 것
 
 styled-component 추가 스타일링 하면서 진행
