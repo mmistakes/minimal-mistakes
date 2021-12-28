@@ -10,10 +10,6 @@ Print date expected in Feb 2022.
 
 - Lesage, E., & Verguts, T. (2021). Contextual overtraining accelerates habit formation in new stimuli. PsyArXiv.[https://psyarxiv.com/7m6bh/](https://psyarxiv.com/7m6bh/)
 
-- Senoussi, M., Verbeke, P., & Verguts, T. (2021). Time-based binding as a solution to and a limitation for flexible cognition. BioRxiv. [https://www.biorxiv.org/content/10.1101/2021.10.09.463761v2](https://www.biorxiv.org/content/10.1101/2021.10.09.463761v2) 
- 
-- Verbeke P., & Verguts T. (2021). Using top-down gating to optimally balance shared versus separated task representations. BioRxiv. [https://doi.org/10.1101/2021.06.02.446735](https://doi.org/10.1101/2021.06.02.446735)
-
 - Calderon, C.B., Verguts, T., & Frank, M. J. (2021). Thunderstruck: The ACDC model of flexible sequences and rhythms in recurrent neural circuits. BioRxiv. [https://www.biorxiv.org/content/10.1101/2021.04.07.438842v1](https://www.biorxiv.org/content/10.1101/2021.04.07.438842v1)
  
 - Desender, K., Vermeylen, L., & Verguts, T. (2020). Dynamic influences on static measures of metacognition. BioRxiv. [https://doi.org/10.1101/2020.10.29.360453](https://doi.org/10.1101/2020.10.29.360453)
@@ -24,14 +20,18 @@ Print date expected in Feb 2022.
 ## Recent publications
 
 in press:
-- Peng, Z., Yang, X., Xu, C., Wu, X., Yang, Q., Wei, Z., … Chen, Q. (in press). Aberrant Rich Club Organization in Patients with Obsessive-Compulsive Disorder and Their Unaffected First-Degree Relatives. NeuroImage : Clinical.
+- Senoussi, M., Verbeke, P., & Verguts, T. (in press). Time-based binding as a solution to and a limitation for flexible cognition. Frontiers in Psychology. BioRxiv version: [https://www.biorxiv.org/content/10.1101/2021.10.09.463761v2](https://www.biorxiv.org/content/10.1101/2021.10.09.463761v2) 
 
-- Verbeke, P., & Verguts, T. (in press). Neural synchrony for adaptive control. Journal of Cognitive Neuroscience.
-
-- Peng, Z., Xu, C., Ma, N., Yang, Q., Ren, P., Wen, R., … Chen, Q. (in press). White matter alterations of the goal-directed system in obsessive-compulsive disorder patients and their unaffected first-degree relatives. Biological Psychiatry: Cognitive Neuroscience and Neuroimaging.
-
+2022: 
+- Verbeke P., & Verguts T. (2022). Using top-down gating to optimally balance shared versus separated task representations. Neural Networks. [https://doi.org/10.1016/j.neunet.2021.11.030](https://doi.org/10.1016/j.neunet.2021.11.030)
 
 2021:
+- Verbeke, P., & Verguts, T. (2021). Neural synchrony for adaptive control. Journal of Cognitive Neuroscience, 33, 2394-2412.
+
+- Peng, Z., Yang, X., Xu, C., Wu, X., Yang, Q., Wei, Z., … Chen, Q. (2021). Aberrant Rich Club Organization in Patients with Obsessive-Compulsive Disorder and Their Unaffected First-Degree Relatives. NeuroImage : Clinical.
+
+- Peng, Z., Xu, C., Ma, N., Yang, Q., Ren, P., Wen, R., … Chen, Q. (2021). White matter alterations of the goal-directed system in obsessive-compulsive disorder patients and their unaffected first-degree relatives. Biological Psychiatry: Cognitive Neuroscience and Neuroimaging.
+
 - Liu, M., Dong, W., Qin, S.,Verguts, T., & Chen, Q. (2021). Electrophysiological signatures of hierarchical learning. Cerebral Cortex. [https://doi.org/10.1093/cercor/bhab245](https://doi.org/10.1093/cercor/bhab245)
 
 - Zhang, S., Verguts, T., Zhang, C., Feng, P., Chen, Q., & Feng, T. (2021). Outcome value and task aversiveness impact task procrastination through separate neural pathways. Cerebral Cortex, 31, 3846-3855. [https://doi.org/10.1093/cercor/bhab053](https://doi.org/10.1093/cercor/bhab053)
