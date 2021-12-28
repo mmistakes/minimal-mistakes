@@ -22,4 +22,6 @@
   {% for script in site.head_scripts %}
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
+  {% if page.use_math %}
+  {% include mathjax_support.html %}
 {% endif %}
