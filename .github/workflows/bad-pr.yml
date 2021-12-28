@@ -1,0 +1,15 @@
+name: Cleanup bad PR
+
+on:
+  pull_request_target:
+    types: [opened, reopened]
+
+jobs:
+  close-pr:
+    runs-on: ubuntu-latest
+    if: "contains(github.event.pull_request.body, 'CHECK_PR_DID_NOT_CONFIRM')"
+    steps:
+      - uses: superbrothers/close-pull-request@v3
+        with:
+          # Optional. Post an issue comment just before closing a pull request.
+          comment: "This PR is not valid for inclusion. Please check again if you're submitting improvements for *the theme*."
