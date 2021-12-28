@@ -13,7 +13,7 @@ classes: wide
 
 __Group Head__
 
-Petr Křemen Petr Křemen získal Ph.D. v roce 2012 v oboru Umělá inteligence a biokybernetika po obhajobě disertační práce
+Petr Křemen získal Ph.D. v roce 2012 v oboru Umělá inteligence a biokybernetika po obhajobě disertační práce
 "Building Ontology-Based Information Systems". Mezi jeho odborné zájmy patří návrh ontologií a ontologických informačních systémů,
 sémantický web, Linked Data a automatické uvažování a dotazování do deskripčních logik. 
 Je autorem či spoluautorem několika impaktovaných časopiseckých publikací, knižních kapitol a více než čtyřiceti konferenčních příspěvků.
@@ -42,9 +42,9 @@ TODO Placeholder text for Michal.
 
 ![martin-photo](https://cs.fel.cvut.cz/upload/persons/b7676e1352cdf3dfe020926eb402da5e4ec7d177.jpg){: .align-left .profile-photo}
 
-Martin Ledvinka získal titul v oboru Umělá inteligence a biokybernetika na FEL ČVUT v Praze v roce 2021 obhajobou dizertační práce
+Martin Ledvinka získal titul Ph.D. v oboru Umělá inteligence a biokybernetika na FEL ČVUT v Praze v roce 2021 obhajobou dizertační práce
 s tématem "Leveraging Semantic Web Technologies in Domain-specific Information Systems". Mezi jeho odborné zájmy patří aplikační přístup k ontologiím,
-návrh informačních systémů založených na ontologiích obecně a automatizace testování softwarových systémů.
+návrh informačních systémů založených na sémantických technologiích obecně a automatizace testování softwarových systémů.
 Kromě výzkumné činnosti se podílel či podílí na výuce předmětů A7B39WPA (Webové a podnikové aplikace) a B6B36EAR (Enterprise architektury) 
 na FEL ČVUT v Praze a BI-ATS (Automatizované testování software) na FIT ČVUT v Praze.
 

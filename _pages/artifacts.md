@@ -6,6 +6,7 @@ lang: en
 lang-ref: artifacts
 toc: true
 toc_sticky: true
+author_profile: true
 ---
 
 This page contains some of the research artifacts produced by the group.
@@ -80,7 +81,7 @@ TermIt is a SKOS-compatible terminology manager and editor.
 ##### Links
 
 - [TermIt Website](https://kbss-cvut.github.io/termit-web/)
-- Source code([backend](https://github.com/kbss-cvut/termit) and [frontend](https://github.com/kbss-cvut/termit-ui))
+- Source code ([backend](https://github.com/kbss-cvut/termit) and [frontend](https://github.com/kbss-cvut/termit-ui))
 
 #### OntoMind
 
