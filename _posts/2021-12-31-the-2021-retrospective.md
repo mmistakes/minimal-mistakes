@@ -53,7 +53,7 @@ All in all, the site now contains more than 200 hours of content and 20000+ line
 
 I was quite bummed with the pace this year, as I hoped I would double last year's performance. People have been asking for Akka Typed for more than a year, for example, and I always had to postpone it. Same with a lot of other requests.
 
-Hopes for next year: fill the gaps (e.g. Akka Typed), expand breadth (e.g. courses on data engineering) and cover ZIO 2.0 and (most of) its ecosystem after it's out.
+Hopes for next year: fill the gaps (e.g. Akka Typed), expand breadth (e.g. courses on data engineering) and cover more of the Scala library ecosystem (ZIO anyone?).
 
 ## 5. Corporate Training
 
