@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "인스타 "
+title:  "인스타 크롤링 "
 ---
 
 ## 인스타 크롤러
