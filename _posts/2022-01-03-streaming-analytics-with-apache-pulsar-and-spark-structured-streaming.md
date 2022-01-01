@@ -4,19 +4,27 @@ date: 2021-12-20
 header:
 image: "/images/blog cover.jpg"
 tags: [pulsar, spark, spark structured streaming]
-excerpt: "We'll discuss the role Apache Pulsar plays in the event streaming and computing landscape, the use cases you can implement with Pulsar and when more advanced computing engines should be integrated to implement more advanced stream processing use cases."
+excerpt: "We'll discuss the role Apache Pulsar plays in the event streaming and computing landscape, the use cases you can implement with Pulsar and when more advanced computing engines should be integrated to implement more sophisticated stream processing use cases."
 ---
 
+Stream processing is an important requirements in modern data infrastructure. 
+Companies nowadays aim to leverage the power of streaming and real-time analytics in order to provide results faster to their users 
+in order to enhance the user experience and drive business value, by taking action and analyzing what is happening right now.
+Think of an online service that wants to provide user recommendations based on the interactions the user makes while on the webpage. 
+Or an IoT company that wants to monitor the sensor readings and in order to react on potential malfunctions,
+computer vision systems that need to analyze realtime video feeds or fraud detection in banking systems - and the list
+goes on and on.
 
-Stream processing is one of the most important requirements in modern data infrastructure. Typically streaming data pipelines require a streaming storage layer like Apache Pulsar or Apache Kafka
-and then you in order to perform more advanced stream processing tasks you would use stream compute engines like Apache Flink and Spark Structured Streaming.
+Typically streaming data pipelines require a streaming storage layer like Apache Pulsar or Apache Kafka
+and then in order to perform more sophisticated stream processing tasks require stream compute engines like Apache Flink and Spark Structured Streaming.
 Modern data requiring unified batch processing and streaming in cloud deployments makes Apache Pulsar an excellent candidate to support the needs of these compute engines.
 Apache Pulsar is designed for cloud-native infrastructure as well as a unified batch and stream data strategy in mind.
 
 ## The Role of Apache Pulsar in Streaming Data Pipelines
 > Apache Pulsar excels at storing event streams and performing lightweight stream computing tasks. It's a great fit for long term storage of data and can also be used to store results to some downstream applications.
 
-A unified batch and stream processing engine requires the support from a unified data messaging and storage layer to achieve its full potential. In other words, the messaging system needs to not only move data in the pipelines, but to store data in streams for long periods of time and serves as the single source-of-truth for the processing engine.
+A unified batch and stream processing engine requires the support from a unified batch and stream storage layer to achieve its full feature set. 
+In other words, the streaming system needs to not only move data in the pipelines, but to store data in streams for long periods of time and serves as the single source-of-truth for the processing engine.
 
 Apache Pulsar’s tiered storage architecture enables it to store data streams indefinitely.
 
@@ -82,15 +90,19 @@ In order to integrate Apache Pulsar and Apache Spark, we will use the [pulsar-sp
 
 The first thing we need to do is setup the dependencies within our project - so let's add the following to our `build.sbt` file:
 ```shell
-lazy val root = (project in file("."))
-  .settings(
-    name := "pulsar-spark-streaming-analytics",
+lazy val sparkVersion       = "3.2.0"
+lazy val circeVersion       = "0.14.1"
+lazy val pulsarSparkVersion = "3.1.1.3"
+```
 
-    libraryDependencies ++= Seq(
-      "org.apache.spark" %% "spark-sql" % "3.2.0",
-      "io.streamnative.connectors" % "pulsar-spark-connector_2.12" % "3.1.1.3"
-    )
-  )
+```shell
+val analysisDependencies = Seq(
+  "io.circe"                    %%  "circe-core"                  % circeVersion,
+  "io.circe"                    %%  "circe-generic"               % circeVersion,
+  "io.circe"                    %%  "circe-parser"                % circeVersion,
+  "org.apache.spark"            %%  "spark-sql"                   % sparkVersion,
+  "io.streamnative.connectors"  %   "pulsar-spark-connector_2.12" % pulsarSparkVersion
+)
 ```
 
 Imagine we have the following click events inside Pulsar:
