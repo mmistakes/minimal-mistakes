@@ -6,30 +6,54 @@ main:
     url: /tags/
   - title: "Search"
     url: /search/
-docs:
-  - title: "대목차"
-    children:
-      - title: "category"
-        url: /categories/
-      - title: "tag"
-        url: /tags/
-  - title: "대목차2"
-    children:
-      - title: "category"
-        url: /categories/
-      - title: "tag"
-        url: /tags/
-  - title: "대목차3"
-    children:
-      - title: "category"
-        url: /categories/
-      - title: "tag"
-        url: /tags/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+# docs:
+#   - title: "Web"
+#     children:
+#       - title: "HTTP"
+#         url: /http/
+#       - title: "Docker"
+#         url: /docker/
+
+#   - title: "Spring"
+#     children:
+#       - title: "JPA"
+#         url: /jpa/
+
+#   - title: "TDD"
+#     children:
+#       - title: "JUnit"
+#         url: /junit/
+
+#   - title: "Java"
+#     children:
+#       - title: "Java Basic"
+#         url: /javabasic/
+
+#   - title: "Git"
+#     children:
+#       - title: "Git"
+#         url: /git/
+
+#   - title: "Algorithm"
+#     children:
+#       - title: "DataStructure"
+#         url: /datastructure/
+
+#   - title: "Elastic Stack"
+#     children:
+#       - title: "ELK 통합로그시스템 구축과 활용"
+#         url: /elasticsearch/
+
+#   - title: "Etc"
+#     children:
+#       - title: "Other Information"
+#         url: /otherinfo/
+
+# - title: "About"
+#   url: https://mmistakes.github.io/minimal-mistakes/about/
+# - title: "Sample Posts"
+#   url: /year-archive/
+# - title: "Sample Collections"
+#   url: /collection-archive/
+# - title: "Sitemap"
+#   url: /sitemap/
