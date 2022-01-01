@@ -12,11 +12,11 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale: "ko-KR"
-title: "개발하는 라이언"
+title: "공부하고 정리하는 공간"
 title_separator: "|"
 subtitle: "Time is moving on"
 name: "YOUNGMINKIM"
@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name: "YOUNGMINKIM"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar: /assets/images/김영민_야경.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: ""
   location: "South Korea"
   email:
