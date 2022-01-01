@@ -12,20 +12,20 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale: "ko-KR"
-title: "YOUNGMINKIM(Tech-Blog)"
-title_separator: " | "
+title: "개발하는 라이언"
+title_separator: "|"
 subtitle: "Time is moving on"
 name: "YOUNGMINKIM"
-description: "지식 정리 공간"
+description: "라이언의 개발노트"
 url: "https://ym1085.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: "/assets/images/마다가스카펭귄.jpg"
+logo: "/assets/images/lion.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: true # true, false (default)
 words_per_minute: 200
@@ -103,7 +103,7 @@ analytics:
 author:
   name: "YOUNGMINKIM"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "✍ 한 단계씩 천천히"
+  bio: ""
   location: "South Korea"
   email:
   links:
