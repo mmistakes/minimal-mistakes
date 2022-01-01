@@ -4,7 +4,7 @@ title: "[Git] Git 인텔리제이 연동"
 categories: Git
 tag: [Git, Version Control]
 toc: true
-author_profile: false
+author_profile: true
 # sidebar:
 #   nav: "docs"
 ---

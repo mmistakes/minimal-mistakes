@@ -4,7 +4,7 @@ title: "[Git] Git reset, revert"
 categories: Git
 tag: [Git, Version Control]
 toc: true
-author_profile: false
+author_profile: true
 # sidebar:
 #   nav: "docs"
 ---

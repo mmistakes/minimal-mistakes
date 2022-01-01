@@ -4,7 +4,7 @@ title: "[Java] OpenJDK 설치"
 categories: Java
 tag: [Java, Enviroment, Version]
 toc: true
-author_profile: false
+author_profile: true
 # sidebar:
 #   nav: "docs"
 ---

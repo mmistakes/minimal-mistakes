@@ -4,7 +4,7 @@ title: "[Java] OpenJDK, OracleJDK 정리"
 categories: Java
 tag: [Java, Enviroment, Version]
 toc: true
-author_profile: false
+author_profile: true
 # sidebar:
 #   nav: "docs"
 ---

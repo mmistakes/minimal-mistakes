@@ -4,7 +4,7 @@ title: "[Java] JDK, JRE, JVM 정리"
 categories: Java
 tag: [Java, Enviroment]
 toc: true
-author_profile: false
+author_profile: true
 # sidebar:
 #   nav: "docs"
 ---

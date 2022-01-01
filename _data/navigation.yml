@@ -11,44 +11,39 @@ main:
 #     children:
 #       - title: "HTTP"
 #         url: /http/
+#         category: "http"
 #       - title: "Docker"
 #         url: /docker/
-
+#         category: "docker"
 #   - title: "Spring"
 #     children:
 #       - title: "JPA"
 #         url: /jpa/
-
+#         category: "jpa"
 #   - title: "TDD"
 #     children:
 #       - title: "JUnit"
 #         url: /junit/
-
+#         category: "junit"
 #   - title: "Java"
 #     children:
 #       - title: "Java Basic"
-#         url: /javabasic/
-
+#         url: /java/
+#         category: "java"
 #   - title: "Git"
 #     children:
 #       - title: "Git"
 #         url: /git/
-
-#   - title: "Algorithm"
+#         category: "git"
+#   - title: "ElasticStack"
 #     children:
-#       - title: "DataStructure"
-#         url: /datastructure/
-
-#   - title: "Elastic Stack"
-#     children:
-#       - title: "ELK 통합로그시스템 구축과 활용"
-#         url: /elasticsearch/
-
+#       - title: "ELK"
+#         url: /elasticStack/
+#         category: "elasticStack"
 #   - title: "Etc"
 #     children:
-#       - title: "Other Information"
-#         url: /otherinfo/
-
+#       - title: "etc"
+#         url: /etc/
 # - title: "About"
 #   url: https://mmistakes.github.io/minimal-mistakes/about/
 # - title: "Sample Posts"

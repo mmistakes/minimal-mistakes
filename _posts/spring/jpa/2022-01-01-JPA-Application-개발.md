@@ -4,7 +4,7 @@ title: "[JPA] Application 개발"
 categories: JPA
 tag: [JPA, hibernate]
 toc: true
-author_profile: false
+author_profile: true
 # sidebar:
 #   nav: "docs"
 ---

@@ -4,7 +4,7 @@ title: "[HTTP] PORT와 DNS란?"
 categories: HTTP
 tag: [HTTP, network]
 toc: true
-author_profile: false
+author_profile: true
 # sidebar:
 #   nav: "docs"
 ---

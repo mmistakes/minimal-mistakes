@@ -4,7 +4,7 @@ title: "[Elasticsearch] Elastic Stack 개요와 설치"
 categories: Elasticsearch
 tag: [Elasticsearch, Kibana, Logstash]
 toc: true
-author_profile: false
+author_profile: true
 # sidebar:
 #   nav: "docs"
 ---

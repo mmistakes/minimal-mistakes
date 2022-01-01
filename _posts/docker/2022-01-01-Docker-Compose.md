@@ -4,7 +4,7 @@ title: "[Docker] Docker Compose 적용기"
 categories: Docker
 tag: [Docker, Cloud, Container]
 toc: true
-author_profile: false
+author_profile: true
 # sidebar:
 #   nav: "docs"
 ---

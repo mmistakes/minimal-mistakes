@@ -4,7 +4,7 @@ title: "[LoadMap] 개발 로드맵 및 방향성"
 categories: Loadmap
 tag: [Loadmap, Develop]
 toc: true
-author_profile: false
+author_profile: true
 # sidebar:
 #   nav: "docs"
 ---
