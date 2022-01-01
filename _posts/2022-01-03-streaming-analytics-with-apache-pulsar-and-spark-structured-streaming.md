@@ -132,7 +132,7 @@ Spark Structured Streaming as a stream computing engine provides more advanced f
 3. watermarking support - allows for late event handling.
 4. filtering on complex data types - filter rows based on a list filtering predicate.
 
-With our dependencies in place, let's first connect to Pulsar and start reading events from out **click-events** topic.
+With our dependencies in place, let's first connect to Pulsar and start reading events from our **click-events** topic.
 ```scala
  val clickEventsDF = spark
         .readStream
