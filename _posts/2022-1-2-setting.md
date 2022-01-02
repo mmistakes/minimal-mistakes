@@ -26,7 +26,7 @@ toc: true
 
 ### 2. 설치경로 설정
 
-![image.png](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\images\2022-1-2-setting\1.png)
+<img src="C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\images\2022-1-2-setting\1.png" alt="image.png" style="zoom:50%;" /> 
 
 C: 용량이 크지 않으니 D:에 설치.     
 경로에 한글이 섞이면 에러날 수 있으니 섞이지 않도록 조심.
@@ -35,7 +35,7 @@ C: 용량이 크지 않으니 D:에 설치.
 
 ### 3. 환경변수 설정
 
-![2](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\images\2022-1-2-setting\2.png)
+<img src="C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\images\2022-1-2-setting\2.png" alt="2" style="zoom:50%;" />
 
 아나콘다가 파이썬을 얼마나 장악?할지 물어보는건데..    
 일단 둘 다 체크! 
@@ -49,7 +49,7 @@ C: 용량이 크지 않으니 D:에 설치.
 
 ### 4. 설치완료 후 jupyter notebook 실행
 
-![3](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\images\2022-1-2-setting\3.png)
+<img src="C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\images\2022-1-2-setting\3.png" alt="3" style="zoom:50%;" />
 
 설치하는데 꽤나 오래 걸려요.   
 설치가 완료되면 주피터 노트북을 실행합니다.  
