@@ -36,7 +36,7 @@ Elasticsearch는 클러스터와 상호 작용하는데 사용할 수 있는 RES
   }
   ```
   - 리소스 (URI)
-  - [메서드](https://github.com/ym1085/TIL/wiki/HTTP-%EB%A9%94%EC%84%9C%EB%93%9C) (POST)
+  - 메서드 (POST)
   - 메시지 (위 코드 전체를 표현)
 
 ### 클러스터 상태(Health)
