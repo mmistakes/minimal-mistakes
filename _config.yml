@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name: "YOUNGMINKIM"
-  avatar: /assets/images/김영민_야경.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar: /assets/images/깃헙_블로그_프로필.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: ""
   location: "South Korea"
   email:
