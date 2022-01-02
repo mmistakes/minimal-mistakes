@@ -16,34 +16,26 @@ toc: true
   (충돌문제가 있을 수 있어요)
 
 
-```python
-
-```
 
 ### 1. 아나콘다 설치 파일 다운로드 및 실행
+
 - https://www.anaconda.com/products/individual 
 - Individual Edition 다운로드 후 실행
 
 
-```python
-
-```
 
 ### 2. 설치경로 설정
 
-![image.png](attachment:image.png)
+![image.png](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\images\2022-1-2-setting\1.png)
 
 C: 용량이 크지 않으니 D:에 설치.     
 경로에 한글이 섞이면 에러날 수 있으니 섞이지 않도록 조심.
 
 
-```python
-
-```
 
 ### 3. 환경변수 설정
 
-![image-2.png](attachment:image-2.png)
+![2](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\images\2022-1-2-setting\2.png)
 
 아나콘다가 파이썬을 얼마나 장악?할지 물어보는건데..    
 일단 둘 다 체크! 
@@ -54,13 +46,10 @@ C: 용량이 크지 않으니 D:에 설치.
 아래 꺼는 아나콘다3를 기본값으로 등록하겠냐고 묻는 것임.  
 
 
-```python
-
-```
 
 ### 4. 설치완료 후 jupyter notebook 실행
 
-![image.png](attachment:image.png)
+![3](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\images\2022-1-2-setting\3.png)
 
 설치하는데 꽤나 오래 걸려요.   
 설치가 완료되면 주피터 노트북을 실행합니다.  
