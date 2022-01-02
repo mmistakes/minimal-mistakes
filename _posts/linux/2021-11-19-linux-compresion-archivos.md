@@ -130,5 +130,3 @@ c # create - crear el archivo
 v # verbose - detalles de la creación
 f # file - 
 ```
-
-
