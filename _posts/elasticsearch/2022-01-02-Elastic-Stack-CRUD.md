@@ -1,9 +1,9 @@
 ---
 layout: single
-title: "[Elasticsearch] Elastic Stack CRUD"
+title: "[Elasticsearch] Elasticsearch CRUD"
 date: "2022-01-02 13:08:43"
 categories: Elasticsearch
-tag: [Elasticsearch, Kibana, Logstash]
+tag: [Elasticsearch, Kibana]
 toc: true
 author_profile: true
 # sidebar:
@@ -27,14 +27,16 @@ Elasticsearch는 클러스터와 상호 작용하는데 사용할 수 있는 RES
 - 웹의 창시자(HTTP) 중의 한 사람 RoyFelling 2000년 논문에 의해 소개
   - 웹의 장점을 최대한 활용할 수 있는 네트워크 기반의 아키텍쳐
 - 구성요소 3가지
+
   ```bash
   HTTP POST, http://myweb/users/
   {
-  	"users":{
-  		"name": "gasbugs"
-  	}
+   "users":{
+    "name": "gasbugs"
+   }
   }
   ```
+
   - 리소스 (URI)
   - 메서드 (POST)
   - 메시지 (위 코드 전체를 표현)
