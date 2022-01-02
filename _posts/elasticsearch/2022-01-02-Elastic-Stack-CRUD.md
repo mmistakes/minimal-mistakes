@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "[Elasticsearch] Elastic Stack CRUD"
+date: "2022-01-02 13:08:43"
 categories: Elasticsearch
 tag: [Elasticsearch, Kibana, Logstash]
 toc: true

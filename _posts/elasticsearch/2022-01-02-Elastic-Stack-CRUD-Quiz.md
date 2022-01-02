@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "[Elasticsearch] Elastic Stack CRUD Quiz"
+date: "2022-01-02 13:08:47"
 categories: Elasticsearch
 tag: [Elasticsearch, Kibana, Logstash, ELK RESTFul API]
 toc: true

@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "[Java] JDK, JRE, JVM 정리"
+date: "2022-01-01 15:30:20"
 categories: Java
 tag: [Java, Enviroment]
 toc: true

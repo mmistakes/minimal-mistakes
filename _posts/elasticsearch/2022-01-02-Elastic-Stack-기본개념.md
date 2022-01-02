@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "[Elasticsearch] Elastic Stack 기본 개념"
+date: "2022-01-02 13:08:21"
 categories: Elasticsearch
 tag: [Elasticsearch, Kibana, Logstash]
 toc: true

@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "[HTTP] PORT와 DNS란?"
+date: "2022-01-01 13:52:50"
 categories: HTTP
 tag: [HTTP, network]
 toc: true

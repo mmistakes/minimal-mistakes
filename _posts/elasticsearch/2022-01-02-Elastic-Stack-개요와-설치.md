@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "[Elasticsearch] Elastic Stack 개요와 설치"
+date: "2022-01-02 13:08:36"
 categories: Elasticsearch
 tag: [Elasticsearch, Kibana, Logstash]
 toc: true

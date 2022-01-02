@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "[Git] Git init, add, commit"
+date: "2022-01-01 15:12:00"
 categories: Git
 tag: [Git, Version Control]
 toc: true

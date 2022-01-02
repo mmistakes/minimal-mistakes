@@ -1,6 +1,7 @@
 ---
 layout: single
-title: "[HTTP] IP(Internet Protocol)"
+title: "[HTTP] TCP/UDP란?"
+date: "2022-01-01 13:52:40"
 categories: HTTP
 tag: [HTTP, network]
 toc: true

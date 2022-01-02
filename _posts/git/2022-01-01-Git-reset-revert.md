@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "[Git] Git reset, revert"
+date: "2022-01-01 15:13:30"
 categories: Git
 tag: [Git, Version Control]
 toc: true

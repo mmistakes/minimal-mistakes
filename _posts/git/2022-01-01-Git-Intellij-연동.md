@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "[Git] Git 인텔리제이 연동"
+date: "2022-01-01 15:11:20"
 categories: Git
 tag: [Git, Version Control]
 toc: true

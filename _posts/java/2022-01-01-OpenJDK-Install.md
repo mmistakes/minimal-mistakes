@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "[Java] OpenJDK 설치"
+date: "2022-01-01 15:30:30"
 categories: Java
 tag: [Java, Enviroment, Version]
 toc: true

@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "[JPA] Application 개발"
+date: "2022-01-01 15:31:40"
 categories: JPA
 tag: [JPA, hibernate]
 toc: true

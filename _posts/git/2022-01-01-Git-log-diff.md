@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "[Git] Git log, diff"
+date: "2022-01-01 15:13:00"
 categories: Git
 tag: [Git, Version Control]
 toc: true

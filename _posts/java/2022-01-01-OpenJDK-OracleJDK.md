@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "[Java] OpenJDK, OracleJDK 정리"
+date: "2022-01-01 15:30:40"
 categories: Java
 tag: [Java, Enviroment, Version]
 toc: true

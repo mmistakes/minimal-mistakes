@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "[HTTP] HTTP 메서드란?"
+date: "2022-01-01 13:54:00"
 categories: HTTP
 tag: [HTTP, network]
 toc: true

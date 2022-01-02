@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "[Docker] Docker Compose 적용기"
+date: "2022-01-01 15:31:00"
 categories: Docker
 tag: [Docker, Cloud, Container]
 toc: true
