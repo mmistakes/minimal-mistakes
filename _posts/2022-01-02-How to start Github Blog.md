@@ -33,5 +33,3 @@ Now, the whole repository is copied under your account.
 4. Find `url :`  and change it to `url : "https://your_username.github.io"` 
 
 Now you are good to go! To check if it is working, go to `[https://your_username.github.io](https://your_username.github.io)` (it might take a few seconds to be updated).
-
-commit test
