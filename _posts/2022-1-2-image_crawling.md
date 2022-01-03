@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "google search image crawling"
+title:  "google image crawling"
 categories: Start
 tag: [python,crawling,blog,github,image,크롤링,파이썬,입문,기초]
 toc: true
