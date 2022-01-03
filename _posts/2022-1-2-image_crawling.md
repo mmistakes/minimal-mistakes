@@ -1,9 +1,10 @@
 ---
 layout: single
 title:  "google image crawling"
-categories: Start
+categories: Crawling
 tag: [python,crawling,blog,github,image,크롤링,파이썬,입문,기초]
 toc: true
+author_profile: false
 ---
 
 ## 이미지 크롤링 
