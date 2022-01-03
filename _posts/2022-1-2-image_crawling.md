@@ -5,6 +5,9 @@ categories: Crawling
 tag: [python,crawling,blog,github,image,크롤링,파이썬,입문,기초]
 toc: true
 author_profile: false
+sidebar:
+    nav: "docs"
+# search: false 
 ---
 
 ## 이미지 크롤링 
