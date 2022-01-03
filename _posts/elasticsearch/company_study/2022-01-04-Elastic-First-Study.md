@@ -125,13 +125,13 @@ author_profile: true
   - 테이블
   - 지도 등
 
-<img src="https://user-images.githubusercontent.com/53969142/147950459-84a574c8-5939-4525-b20b-b5e96ae0251b.PNG" width=100% height="380" />
+![https://user-images.githubusercontent.com/53969142/147950459-84a574c8-5939-4525-b20b-b5e96ae0251b.PNG](https://user-images.githubusercontent.com/53969142/147950459-84a574c8-5939-4525-b20b-b5e96ae0251b.PNG)
 
 ### ✔ 로그스태시: 이벤트 수집 및 정제
 
 > 대량의 데이터를 검색하기 위해 가장 먼저 해야할 부분은 데이터 적재
 
-<img src="https://user-images.githubusercontent.com/53969142/147950644-c6ba338c-30af-4f40-95e9-9dca63eeb537.PNG" width=100% height=300 />
+![https://user-images.githubusercontent.com/53969142/147950644-c6ba338c-30af-4f40-95e9-9dca63eeb537.PNG](https://user-images.githubusercontent.com/53969142/147950644-c6ba338c-30af-4f40-95e9-9dca63eeb537.PNG)
 
 - 위 사진은 로그 스태시의 동작 방식과 구성요소
 - 다양한 소스(DataBase, csv 파일 등)의 <u>로그 또는 트랜잭션 데이터 수집</u>  
@@ -146,7 +146,7 @@ author_profile: true
 
 ### ✔ 비츠: 엣지단에서 동작하는 경량 수집 도구
 
-<img src="https://user-images.githubusercontent.com/53969142/147951426-8818e7f2-078b-46c7-bfb6-884680188087.PNG" width=100% height=300 />
+![https://user-images.githubusercontent.com/53969142/147951426-8818e7f2-078b-46c7-bfb6-884680188087.PNG](https://user-images.githubusercontent.com/53969142/147951426-8818e7f2-078b-46c7-bfb6-884680188087.PNG)
 
 > 로그스태시의 기능은 충분히 강력하다. 하지만 무겁다  
 > 그래서 경량 수집기인 파일비트, 메트릭비트을 사용
@@ -175,13 +175,13 @@ author_profile: true
 - 만약에 그렇지 않다면?
 - <u>도큐먼트가 100000개라면?</u>
 
-<img src="https://user-images.githubusercontent.com/53969142/147952248-7bab03f1-269f-4b5f-86e2-9f16bba7a09a.jpg" width=35% height=200 />
+![https://user-images.githubusercontent.com/53969142/147952248-7bab03f1-269f-4b5f-86e2-9f16bba7a09a.jpg](https://user-images.githubusercontent.com/53969142/147952248-7bab03f1-269f-4b5f-86e2-9f16bba7a09a.jpg)
 
 - 위 같은 이유로 인해 빠르고 정확한 검색을 지원하는 엘라스틱 서치 사용을 지양하는것을 권장
 
 ### ✔ 로그 통합 분석
 
-<img src="https://user-images.githubusercontent.com/53969142/147952785-18a10e54-dca8-48e0-93f6-0da9541f8ddd.PNG" width=100%% height=400 />
+![https://user-images.githubusercontent.com/53969142/147952785-18a10e54-dca8-48e0-93f6-0da9541f8ddd.PNG](https://user-images.githubusercontent.com/53969142/147952785-18a10e54-dca8-48e0-93f6-0da9541f8ddd.PNG)
 
 - 복수의 서비스가 연계되어 동작하는 상황에서 로그의 발생 위치를 모두 기억해야 한다면?
   - 해당 서비스 로그(Log)를 일일이 찾아서 확인해야한다
@@ -192,13 +192,13 @@ author_profile: true
 
 ### ✔ 보안 이벤트 분석
 
-<img src="https://user-images.githubusercontent.com/53969142/147953512-cd593845-e695-4f92-b7dd-1f952e3c80b8.PNG" width=100%% height=400 />
+![https://user-images.githubusercontent.com/53969142/147953512-cd593845-e695-4f92-b7dd-1f952e3c80b8.PNG](https://user-images.githubusercontent.com/53969142/147953512-cd593845-e695-4f92-b7dd-1f952e3c80b8.PNG)
 
 - 조직 내의 다양한 장비들로부터 보안 이벤트 수집 및 분석
 
 ### ✔ 애플리케이션 성능 분석
 
-<img src="https://user-images.githubusercontent.com/53969142/147953998-c3745f52-7b2b-4cb3-8c0e-e96386734ce3.PNG" width=100%% height=400 />
+![https://user-images.githubusercontent.com/53969142/147953998-c3745f52-7b2b-4cb3-8c0e-e96386734ce3.PNG](https://user-images.githubusercontent.com/53969142/147953998-c3745f52-7b2b-4cb3-8c0e-e96386734ce3.PNG)
 
 - 애플리케이션을 운영하는 데 있어 가장 중요한 것 중 하나는 안정적인 서비스 운영
 - 이를 위해 필연적으로 단순히 하나가 아닌 여러개의 애플리케이션의 상태를 모니터링 해야 한다
@@ -223,7 +223,7 @@ author_profile: true
 - 카프카와 엘라스틱 스택은 데이터 수집 시점에서 많이 연계되어 사용이 된다
 - 아래 예시를 통해 살펴보자
 
-<img src="https://user-images.githubusercontent.com/53969142/147955344-8e554bdb-f6fe-420d-adee-c581aa6e978b.PNG" width=100%% height=400 />
+![https://user-images.githubusercontent.com/53969142/147955344-8e554bdb-f6fe-420d-adee-c581aa6e978b.PNG](https://user-images.githubusercontent.com/53969142/147955344-8e554bdb-f6fe-420d-adee-c581aa6e978b.PNG)
 
 1. 비츠에서 수집한 각 장비의 이벤트를 카프카로 전송
 2. 로그스태시가 해당 정보를 다시 읽어들인다
@@ -231,7 +231,7 @@ author_profile: true
 
 ### ✔ 관계형 데이터베이스와의 연동
 
-<img src="https://user-images.githubusercontent.com/53969142/147956220-e4484ce4-daea-43e3-80ed-8234fb7d6431.PNG" width=100%% height=400 />
+![https://user-images.githubusercontent.com/53969142/147956220-e4484ce4-daea-43e3-80ed-8234fb7d6431.PNG](https://user-images.githubusercontent.com/53969142/147956220-e4484ce4-daea-43e3-80ed-8234fb7d6431.PNG)
 
 - 로그스태시는 JDBC 입력 플러그인, 필터 등 RDB와 연계할 수 있는 다양한 방법 제공
 - 기존 RDB에 저장된 데이터를 인덱싱하거나 입력받는 이벤트 정보 주입 용도로 사용
@@ -271,7 +271,7 @@ author_profile: true
 - 서로 다른 클러스터는 **독립적인 시스템**으로 유지, 데이터 접근 및 교환이 불가능
 - 여러대의 서버가 하나의 클러스터 구성 가능, 하나의 서버가 여러개의 클러스터 구성 가능
 
-### ✔ [노드 ( node )](https://esbook.kimjmin.net/03-cluster/3.3-master-and-data-nodes)
+### ✔ [노드(node)](https://esbook.kimjmin.net/03-cluster/3.3-master-and-data-nodes)
 
 - 클러스터 내에 존재하는 **노드(서버)**
 - Elasticsearch를 구성하는 **하나의 단위 프로세스**를 의미
