@@ -4,6 +4,8 @@ title:  "Setting"
 categories: Start
 tag: [python, crawling, blog, github, image, 크롤링, 파이썬, 입문, 기초, 개발환경, 세팅]
 toc: true
+sidebar:
+    nav: "docs"
 ---
 
 ## 개발환경 세팅
