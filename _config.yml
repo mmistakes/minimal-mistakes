@@ -194,9 +194,9 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 highlighter: rouge
-#lsi: false
-# excerpt_separator: "\n\n"
-# incremental: false
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
 
 # Markdown Processing
@@ -292,4 +292,5 @@ defaults:
       share: true
       related: true
       mathjax: true
+      mathjax_autoNumber: true
       sidebar_main: true
