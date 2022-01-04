@@ -100,3 +100,39 @@ public interface CategoryService {
 # 12. ServiceImpl class
 인터페이스로 기본 동작을 스케치 정도만 했다면  
 상속 받은 클래스로 비즈니스 로직을 구체화 한다.  
+
+<br>
+
+```
+package com.project.smallbeginjava11.serviceImpl;
+
+import com.project.smallbeginjava11.DTO.Category;
+import com.project.smallbeginjava11.mapper.CategoryMapper;
+import com.project.smallbeginjava11.service.CategoryService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+@RequiredArgsConstructor
+public class CategoryServiceImpl implements CategoryService {
+    private final CategoryMapper categoryMapper;
+
+    @Override
+    public List<Category> getAllCategory(){
+        return categoryMapper.getAllCategory();
+    }
+}
+```
+
+<br>
+
+categoryMapper 변수는 어차피 CategoryMapper 타입이며 Read only에 수정될 일 없으므로  
+final 선언  
+`@RequiredArgsConstructor`를 통해 categoryMapper에 CategoryMapper에 대한 의존성을 생성자를 통해 주입  
+인터페이스에서 선언한 추상 메소드 getAllCategory 구체화  
+
+<br>
+
+# 13. Controller  
