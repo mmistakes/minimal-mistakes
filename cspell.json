@@ -11,7 +11,9 @@
     "dictionaries": [
         "custom-dictionary"
     ],
-    "words": [],
+    "words": [
+        "zcvf"
+    ],
     "ignoreWords": [],
     "import": [],
     "language": "en,es,es-ES"
