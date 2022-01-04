@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Job_Info_Crawling"
-categories: Start
+categories: Selenium
 tag: [python,crawling,blog,github,채용정보, 사람인, 크롤링,파이썬,입문,기초]
 toc: true
 sidebar:
