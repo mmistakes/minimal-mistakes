@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Book_bestseller_Crawling"
-categories: Crawling
+categories: Selenium
 tag: [python,crawling,blog,github,책정보, 교보문고, 크롤링,파이썬,입문,기초]
 toc: true
 sidebar:
