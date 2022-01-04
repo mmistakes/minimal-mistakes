@@ -8,6 +8,10 @@ category: [article]
 teaser: "/assets/images/posts/2021/12/table.webp"
 ---
 
+<p align="center">
+    <img src="/assets/images/posts/2021/12/jet-head.webp" height="300px" />
+</p>
+
 ## ONNXRuntime
 
 [ONNXRuntime](https://onnxruntime.ai/) is a framework based on the onnx model type and allows neural network inference on a few lines. Recently, it has been developed very dynamically towards different inference engines. The table below shows the sample providers and target platforms (you can find the whole and the up-to-date version [here](https://onnxruntime.ai/docs/execution-providers/#summary-of-supported-execution-providers)).
