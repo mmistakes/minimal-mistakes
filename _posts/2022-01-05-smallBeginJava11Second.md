@@ -54,4 +54,49 @@ public interface CategoryMapper {
 }
 ```
 List 타입으로 DB 데이터를 객체화 시킬 것이다.  
-`@Mapper`
+`@Mapper`가 있어야 Mapper인걸 스프링부트에서 인지하니 필요하다.  
+그리고 Mapper가 직접 데이터에 접근하는 DAO 역할을 하므로 `@Repository`도 필요하다.  
+메소드 명은 xml 쿼리에서 작성한 id 값과 무조건 동일하게 한다.  
+
+<br>
+매퍼 인것도 인지 되고 id와 메소드 명이 일치하므로  
+정상적으로 mybatis 연결이 된다.  
+
+<br>
+
+참고  
+@Repository = DAO 역할을 하는 클래스에 사용  
+
+<br>
+
+# 11. Service Interface  
+매퍼에서 repository와 SQL을 매핑 시켜줬으니  
+사용자의 요구를 처리하기 위한 비즈니스 로직을 구현해야 한다.(비즈니스 레이어 ⊃ 서비스)  
+항상 service 개념 헛갈리면  
+https://www.kurien.net/post/view/24  
+다시 정독하자..  
+
+<br>
+
+위에서 매퍼 인터페이스는 DAO 대신 데이터 접근 뒤 DTO에 넣어줬다.  
+저 데이터를 가져오기 위해서 Service Interface 작성  
+
+<br>
+
+```
+package com.project.smallbeginjava11.service;
+
+import java.util.List;
+
+import com.project.smallbeginjava11.DTO.Category;
+
+public interface CategoryService {
+    public List<Category> getAllCategory();
+}
+```
+
+<br>
+
+# 12. ServiceImpl class
+인터페이스로 기본 동작을 스케치 정도만 했다면  
+상속 받은 클래스로 비즈니스 로직을 구체화 한다.  
