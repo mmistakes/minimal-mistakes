@@ -13,7 +13,7 @@ tag: pytorch, deeplearning, linux, gpu
 
 먼저 터미널에서 nvidia-smi 입력하여 현재 gpu가 잘 인식이 되고있는지 확인한다.
 
-![post1](C:\Users\isack\Documents\GitHub\leeisack.github.io\images\2022-1-5.multi_gpu\post1.PNG)
+![post1](C:\Users\isack\Documents\GitHub\leeisack.github.io\images\2022-1-5-multi_gpu\post1.PNG)
 
 필자의 경우에는 0,1 두개의 gpu가 인식이 되고있음을 알 수 있다. (학습을 돌리는중이라 사용량이 크게 나오는중이다.)
 
@@ -25,30 +25,35 @@ tag: pytorch, deeplearning, linux, gpu
 
 기존의 학습 수행  command가 python train.py 라면 
 
+--------------------------------
+
 0번 gpu를 사용할 경우 
 
 <pre><code>
 CUDA_VISIBLE_DEVICES=0 python train.py
 </code></pre>
+------------------------------------
 
 1번 gpu를 사용할 경우
 
 <pre><code>
 CUDA_VISIBLE_DEVICES=1 python train.py
 </code></pre>
+--------------------------
 
 100번 gpu를 사용할 경우
 
 <pre><code>
 CUDA_VISIBLE_DEVICES=100 python train.py
 </code></pre>
+-----------------------------------------------
 
 이런식으로 CUDA_VISIBLE_DEVICES 뒤에 원하는 gpu number를 입력해주면된다.
 
 필자는 0번을 사용했고 
 
-![post2](C:\Users\isack\Desktop\post2.PNG)
+![post2](C:\Users\isack\Documents\GitHub\leeisack.github.io\images\2022-1-5-multi_gpu\post2.PNG)
 
 잘동작한다는 것을 확인 할 수 있다.
 
-![post3](C:\Users\isack\Documents\GitHub\leeisack.github.io\images\2022-1-5.multi_gpu\post3.PNG)
+![post3](C:\Users\isack\Documents\GitHub\leeisack.github.io\images\2022-1-5-multi_gpu\post3.PNG)
