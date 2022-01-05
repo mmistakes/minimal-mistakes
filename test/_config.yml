@@ -9,7 +9,7 @@ theme                    : "minimal-mistakes-jekyll"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "euc-kor"
 title                    : "Minimal Mistakes"
 title_separator          : "-"
 subtitle                 : "Development Test Site"
