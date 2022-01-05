@@ -2,6 +2,7 @@
 
 ### Bug Fixes
 
+- Fix Keybase icon in author sidebar. [#3221](https://github.com/mmistakes/minimal-mistakes/pull/3221)
 - Fix sort order of Staticman comments when data files aren't named alphabetically. [#3184](https://github.com/mmistakes/minimal-mistakes/pull/3184)
 - Fix `layout: compress` issue with HTML comment in video include. [#3117](https://github.com/mmistakes/minimal-mistakes/pull/3117)
 - Add Magnific Popup class to anchors that only contain an `img` element. [#3111](https://github.com/mmistakes/minimal-mistakes/issues/3111) [#3114](https://github.com/mmistakes/minimal-mistakes/pull/3114)
