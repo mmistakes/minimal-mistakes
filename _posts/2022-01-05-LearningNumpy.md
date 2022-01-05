@@ -1,0 +1,606 @@
+```python
+import numpy as np
+```
+
+
+```python
+# numpy의 배열 생성
+list1 = [1,2,3,4,5]
+list2 = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+
+arr1 = np.array(list1) # 1차원 배열
+arr1
+```
+
+
+
+
+    array([1, 2, 3, 4, 5])
+
+
+
+
+```python
+arr2 = np.array(list2) # 2차원 배열
+arr2
+```
+
+
+
+
+    array([[ 1,  2,  3,  4],
+           [ 5,  6,  7,  8],
+           [ 9, 10, 11, 12]])
+
+
+
+
+```python
+# 배열의 크기 확인
+print(arr1.shape)
+print(arr2.shape)
+```
+
+    (5,)
+    (3, 4)
+
+
+
+```python
+# size는 배열 내의 요소 개수
+print(arr1.size)
+print(arr2.size)
+```
+
+    5
+    12
+
+
+
+```python
+# 배열의 데이터 타입 확인
+print(arr1.dtype)
+print(arr2.dtype)
+```
+
+    int64
+    int64
+
+
+
+```python
+# 배열의 차원 확인
+print(arr1.ndim)
+print(arr2.ndim)
+```
+
+    1
+    2
+
+
+
+```python
+# 배열 초기화
+arr_zero = np.zeros((3,3))
+print(arr_zero)
+print(arr_zero.dtype)
+
+arr_one = np.ones((2,3))
+print(arr_one)
+```
+
+    [[0. 0. 0.]
+     [0. 0. 0.]
+     [0. 0. 0.]]
+    float64
+    [[1. 1. 1.]
+     [1. 1. 1.]]
+
+
+
+```python
+# 특정 값으로 배열 초기화
+# np.full(차원, 데이터)
+
+arr_full = np.full((4,3), 'z')
+print(arr_full)
+```
+
+    [['z' 'z' 'z']
+     ['z' 'z' 'z']
+     ['z' 'z' 'z']
+     ['z' 'z' 'z']]
+
+
+
+```python
+# 범위를 지정해서 배열 생성
+# arange(시작점, 끝점+1, 데이터 폭)
+arr = np.arange(1,51,5)
+print(arr)
+print(arr.shape)
+print(arr.size)
+```
+
+    [ 1  6 11 16 21 26 31 36 41 46]
+    (10,)
+    10
+
+
+
+```python
+# 배열 생성 시 타입 지정
+arr_type = np.array([1,2,2,5,3,4], dtype=np.str0)
+
+print(arr_type)
+
+# 타입 변경
+arr_type = arr_type.astype('int64')
+print(arr_type)
+```
+
+    ['1' '2' '2' '5' '3' '4']
+    [1 2 2 5 3 4]
+
+
+
+```python
+# 랜덤 값으로 배열 생성
+# np.random.rand(차원 수) : 랜덤 실수값
+arr_random = np.random.rand(2,3)
+print(arr_random)
+```
+
+    [[0.069824   0.56538797 0.08239869]
+     [0.05746204 0.47192185 0.65286904]]
+
+
+
+```python
+# np.random.randint(시작점, 끝점, size=(차원 수)) : 시작점부터 끝점-1 까지의 랜덤 정수 값
+arr_random2 = np.random.randint(1,11, size=(3,3))
+arr_random2
+```
+
+
+
+
+    array([[ 3, 10,  5],
+           [ 1,  3,  8],
+           [ 9,  9,  8]])
+
+
+
+
+```python
+# array 연산
+array1 = np.array([1,2,3])
+array2 = np.array([4,5,6])
+
+print(array1+array2)
+print(array1 / array2)
+print(array1 // array2)
+print(array1 % array2)
+```
+
+    [5 7 9]
+    [0.25 0.4  0.5 ]
+    [0 0 0]
+    [1 2 3]
+
+
+- BMI 지수 구하기
+
+
+```python
+# txt파일 불러오기
+data = np.loadtxt('/Users/min-yungi/Desktop/20210905pr/data/height_weight.txt', delimiter = ',')
+print(data)
+print(data.shape)
+print(data[1,0])
+```
+
+    [[175.2 180.3 175.  169.2 185.2 188.  177.6 178.2 177.  179. ]
+     [ 65.6  88.   79.2  69.3  55.   71.2  73.   68.9  74.   82. ]]
+    (2, 10)
+    65.6
+
+
+
+```python
+height = data[0] * 0.01
+print(height)
+```
+
+    [1.752 1.803 1.75  1.692 1.852 1.88  1.776 1.782 1.77  1.79 ]
+
+
+
+```python
+weight = data[1]
+print(weight)
+```
+
+    [65.6 88.  79.2 69.3 55.  71.2 73.  68.9 74.  82. ]
+
+
+
+```python
+bmi = weight/(height**2)
+print(bmi)
+```
+
+    [21.37153104 27.07018468 25.86122449 24.20652885 16.03543423 20.14486193
+     23.14392095 21.69720651 23.62028791 25.59220998]
+
+
+ - Indexing & Slicing
+
+
+```python
+array7 = np.arange(10)
+print(array7)
+
+print(array7[3:8])
+
+array7[3:8] = 10
+print(array7)
+```
+
+    [0 1 2 3 4 5 6 7 8 9]
+    [3 4 5 6 7]
+    [ 0  1  2 10 10 10 10 10  8  9]
+
+
+
+```python
+# 2차원 배열 생성
+array8 = np.arange(50).reshape(5,10)
+print(array8)
+print(array8.shape)
+
+# 2차원 배열 슬라이싱
+print(array8[1:4,4:9])
+```
+
+    [[ 0  1  2  3  4  5  6  7  8  9]
+     [10 11 12 13 14 15 16 17 18 19]
+     [20 21 22 23 24 25 26 27 28 29]
+     [30 31 32 33 34 35 36 37 38 39]
+     [40 41 42 43 44 45 46 47 48 49]]
+    (5, 10)
+    [[14 15 16 17 18]
+     [24 25 26 27 28]
+     [34 35 36 37 38]]
+
+
+- Boolean 색인
+
+
+```python
+name = np.array(['윤기','석준','원빈','은수','태헌'])
+name
+```
+
+
+
+
+    array(['윤기', '석준', '원빈', '은수', '태헌'], dtype='<U2')
+
+
+
+
+```python
+arr_bool = np.array([True,False,False,True,True])
+arr_bool
+```
+
+
+
+
+    array([ True, False, False,  True,  True])
+
+
+
+
+```python
+# boolean데이터의 array이용한 인덱싱
+name[arr_bool]
+```
+
+
+
+
+    array(['윤기', '은수', '태헌'], dtype='<U2')
+
+
+
+
+```python
+name_score = np.array([[60,60],[70,70],[80,80],[90,90],[50,50]])
+name_score
+```
+
+
+
+
+    array([[60, 60],
+           [70, 70],
+           [80, 80],
+           [90, 90],
+           [50, 50]])
+
+
+
+
+```python
+name_score[name=='석준']
+```
+
+
+
+
+    array([[70, 70]])
+
+
+
+
+```python
+name_score[arr_bool]
+```
+
+
+
+
+    array([[60, 60],
+           [90, 90],
+           [50, 50]])
+
+
+
+- sum함수
+
+
+```python
+arr = np.random.randint(1,10, size=(2,2))
+arr
+```
+
+
+
+
+    array([[4, 1],
+           [6, 6]])
+
+
+
+
+```python
+print(arr.sum())
+print(np.sum(arr))
+```
+
+    17
+    17
+
+
+- mean함수
+
+
+```python
+arr = np.random.randint(1,10, size=(2,2))
+arr
+```
+
+
+
+
+    array([[7, 6],
+           [3, 1]])
+
+
+
+
+```python
+print(arr.mean())
+print(np.mean(arr))
+```
+
+    4.25
+    4.25
+
+
+- 영화 평점 분석
+
+
+```python
+data = np.loadtxt('/Users/min-yungi/Desktop/20210905pr/data/ratings.dat', delimiter='::',
+                 dtype='int64')
+data
+```
+
+
+
+
+    array([[        1,      1193,         5, 978300760],
+           [        1,       661,         3, 978302109],
+           [        1,       914,         3, 978301968],
+           ...,
+           [     6040,       562,         5, 956704746],
+           [     6040,      1096,         4, 956715648],
+           [     6040,      1097,         4, 956715569]])
+
+
+
+
+```python
+print(data.ndim)
+print(data.shape)
+```
+
+    2
+    (1000209, 4)
+
+
+
+```python
+# 모든 평점의 평균 구하기
+rating_all_mean = data[:,2].mean()
+rating_all_mean
+```
+
+
+
+
+    3.581564453029317
+
+
+
+
+```python
+# 각 사용자별 평점 평균 구하기
+userID = np.unique(data[:,0])
+print(userID)
+print(userID.shape)
+```
+
+    [   1    2    3 ... 6038 6039 6040]
+    (6040,)
+
+
+
+```python
+# 사용자 id가 1인 사람의 데이터
+print(data[data[:,0]==1].shape)
+```
+
+    (53, 4)
+
+
+
+```python
+# 사용자 id가 1인 사람의 평점 데이터
+print(data[data[:,0]==1,2])
+```
+
+    [5 3 3 4 5 3 5 5 4 4 5 4 4 4 5 4 3 4 5 4 3 3 5 5 3 5 4 4 4 3 4 4 4 4 4 4 5
+     5 4 5 5 5 4 4 4 5 5 4 5 4 4 4 4]
+
+
+
+```python
+# 사용자 id가 1인 사람의 평균 평점
+print(data[data[:,0]==1,2].mean())
+```
+
+    4.188679245283019
+
+
+
+```python
+user_means = []
+for ID in userID:
+    user_mean = data[data[:,0]==ID,2].mean()
+    user_means.append([ID,user_mean])
+user_means[:5]
+```
+
+
+
+
+    [[1, 4.188679245283019],
+     [2, 3.7131782945736433],
+     [3, 3.9019607843137254],
+     [4, 4.190476190476191],
+     [5, 3.1464646464646466]]
+
+
+
+
+```python
+# csv파일로 저장
+np.savetxt('/Users/min-yungi/Desktop/20210905pr/data/movie_id_mean.csv', user_means,
+          delimiter=',' ,fmt='%3f')
+```
+
+
+```python
+# 사용자 id가 2인 사람의 평균 평점
+user_means[1]
+```
+
+
+
+
+    [2, 3.7131782945736433]
+
+
+
+
+```python
+data
+```
+
+
+
+
+    array([[        1,      1193,         5, 978300760],
+           [        1,       661,         3, 978302109],
+           [        1,       914,         3, 978301968],
+           ...,
+           [     6040,       562,         5, 956704746],
+           [     6040,      1096,         4, 956715648],
+           [     6040,      1097,         4, 956715569]])
+
+
+
+
+```python
+# 평균 평점이 4.5이상인 사용자id 구하기
+arr_means = np.array(user_means)
+over4 = arr_means[arr_means[:,1]>=4.5,0].astype('int')
+over4
+```
+
+
+
+
+    array([  91,  101,  215,  233,  266,  283,  288,  307,  372,  446,  447,
+            451,  567,  661,  682,  761,  764,  951,  953,  989, 1021, 1131,
+           1315, 1349, 1378, 1437, 1569, 1670, 1702, 1856, 1863, 1940, 1959,
+           1986, 2118, 2155, 2243, 2339, 2363, 2497, 2510, 2574, 2593, 2694,
+           2726, 2791, 2838, 2849, 2922, 2964, 3036, 3073, 3210, 3282, 3287,
+           3306, 3324, 3437, 3461, 3596, 3604, 3699, 3738, 3864, 3902, 4136,
+           4176, 4187, 4189, 4273, 4518, 4584, 4589, 4595, 4634, 4649, 4755,
+           4801, 4904, 4925, 4982, 5003, 5069, 5073, 5102, 5165, 5212, 5255,
+           5343, 5427, 5499, 5542, 5582, 5609, 5696, 5768, 5839, 5862, 5936,
+           5984])
+
+
+
+
+```python
+# 최고 평균 평점 구하기
+max_mean = arr_means[:,1].max()
+max_mean
+```
+
+
+
+
+    4.962962962962963
+
+
+
+
+```python
+# 최고 평점 구하기
+data[:,2].max()
+```
+
+
+
+
+    5
+
+
