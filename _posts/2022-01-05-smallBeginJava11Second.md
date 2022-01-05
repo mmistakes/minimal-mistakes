@@ -131,8 +131,4 @@ public class CategoryServiceImpl implements CategoryService {
 categoryMapper 변수는 어차피 CategoryMapper 타입이며 Read only에 수정될 일 없으므로  
 final 선언  
 `@RequiredArgsConstructor`를 통해 categoryMapper에 CategoryMapper에 대한 의존성을 생성자를 통해 주입  
-인터페이스에서 선언한 추상 메소드 getAllCategory 구체화  
-
-<br>
-
-# 13. Controller  
+인터페이스에서 선언한 추상 메소드 getAllCategory 구체화
