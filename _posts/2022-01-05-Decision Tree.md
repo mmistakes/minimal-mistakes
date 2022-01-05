@@ -14,9 +14,9 @@ title:  "Decision Tree"
 
 >  가정
 >
-> 1. Train Data : $${(x_1, y_1), (x_2, y_2), (x_3, y_3), ..., (x_n, y_n)}$$
-> 2. $$x_i$$ : $$k$$개의 feature가 있는 $$i$$ 번째 데이터 샘플
-> 3. $$y_i$$ : $$i$$ 번째 데이터 샘플의 클래스
+> 1. Train Data : ${(x_1, y_1), (x_2, y_2), (x_3, y_3), ..., (x_n, y_n)}$
+> 2. $x_i$ : $k$개의 feature가 있는 $i$ 번째 데이터 샘플
+> 3. $y_i$ : $i$ 번째 데이터 샘플의 클래스
 
 **Step 1. 분기 전 Entropy, 분기 후보의 Entropy 계산**
 
