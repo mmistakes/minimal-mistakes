@@ -1,3 +1,8 @@
+---
+layout: single
+title:  "Decision Tree"
+---
+
 # 1. Decision Tree
 
 - Supervised Learning 알고리즘 중 하나이다.
