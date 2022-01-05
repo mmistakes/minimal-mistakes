@@ -1,7 +1,9 @@
 # Custom Dictionary Words
 chgrp
+comprimirlos
 deshacerlos
 jcfp
+jxvf
 monitorizado
 renice
 subdirectorio
@@ -9,3 +11,4 @@ subdirectorios
 tabulación
 zcfp
 zxfp
+zxvf
