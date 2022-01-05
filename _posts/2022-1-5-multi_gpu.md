@@ -3,6 +3,7 @@ layout: single
 title: 멀티 GPU
 categories: 딥러닝환경설정
 tag: pytorch, deeplearning, linux, gpu
+typora-root-url: ../
 ---
 
 
@@ -13,7 +14,7 @@ tag: pytorch, deeplearning, linux, gpu
 
 먼저 터미널에서 nvidia-smi 입력하여 현재 gpu가 잘 인식이 되고있는지 확인한다.
 
-![post1](C:\Users\isack\Documents\GitHub\leeisack.github.io\images\2022-1-5-multi_gpu\post1.PNG)
+<img src="/images/2022-1-5-multi_gpu/post1.PNG" alt="post1" style="zoom:150%;" />
 
 필자의 경우에는 0,1 두개의 gpu가 인식이 되고있음을 알 수 있다. (학습을 돌리는중이라 사용량이 크게 나오는중이다.)
 
@@ -52,8 +53,8 @@ CUDA_VISIBLE_DEVICES=100 python train.py
 
 필자는 0번을 사용했고 
 
-![post2](C:\Users\isack\Documents\GitHub\leeisack.github.io\images\2022-1-5-multi_gpu\post2.PNG)
+![post2](/images/2022-1-5-multi_gpu/post2.PNG)
 
 잘동작한다는 것을 확인 할 수 있다.
 
-![post3](C:\Users\isack\Documents\GitHub\leeisack.github.io\images\2022-1-5-multi_gpu\post3.PNG)
+![post3](/images/2022-1-5-multi_gpu/post3.PNG)
