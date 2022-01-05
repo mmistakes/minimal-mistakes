@@ -11,7 +11,7 @@ tags:
   - title
 ---
 
-## Title should not overflow the content area
+## should not overflow the content area
 
 A few things to check for:
 
