@@ -27,27 +27,21 @@ tag: pytorch, deeplearning, linux, gpu
 
 0번 gpu를 사용할 경우 
 
-'''bash
-
+<pre><code>
 CUDA_VISIBLE_DEVICES=0 python train.py
-
-'''
+</code></pre>
 
 1번 gpu를 사용할 경우
 
-'''bash 
-
+<pre><code>
 CUDA_VISIBLE_DEVICES=1 python train.py
-
-'''
+</code></pre>
 
 100번 gpu를 사용할 경우
 
-'''bash 
-
+<pre><code>
 CUDA_VISIBLE_DEVICES=100 python train.py
-
-'''
+</code></pre>
 
 이런식으로 CUDA_VISIBLE_DEVICES 뒤에 원하는 gpu number를 입력해주면된다.
 
