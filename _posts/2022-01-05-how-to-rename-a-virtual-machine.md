@@ -1,20 +1,20 @@
 ---
-title: NICOLTIPxxx How to rename a virtual machine
-date: 2021-05-05 10:00
+title: NICOLTIP033 How to rename a virtual machine on Azure
+date: 2022-01-05 10:00
 author: nicold
 comments: false
 tags: [Azure, Virtual Machine, IaaS, Powershell]
 ---
 
-
-
+It is not possible to rename a VM on azure. the only viable solution is to delete and re-create the machine.
+This is the script I use to execute this task.
 
 ```powershell
 #Set variables
-$resourceGroup="nicoldomain-azure"
+$resourceGroup="my-resource-group"
 
-$oldvmName="azsrv01-2"
-$newvmName="azSrv01"
+$oldvmName="old-machine-name"
+$newvmName="new-machine-name"
 
 #Get the details of the VM
 $originalVM = Get-AzVM -ResourceGroupName $resourceGroup -Name $oldvmName
