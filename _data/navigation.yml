@@ -10,3 +10,19 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  docs:
+  - title: Tech
+    children:
+      - title: "Oracle"
+        url: oracle/
+        category: "oracle"
+  - title: Insight
+    children:
+      - title: "Ubuntu"
+        url: ubuntu/
+        category: "ubuntu"
+  - title: Etc
+    children:
+      - title: "Jekyll"
+        url: jekyll/
+        category: "jekyll"
