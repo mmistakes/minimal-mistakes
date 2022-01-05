@@ -2,7 +2,7 @@
 
 ### Bug Fixes
 
-- Fix documentation typo. [#3232](https://github.com/mmistakes/minimal-mistakes/pull/3232)
+- Fix documentation typos. [#3232](https://github.com/mmistakes/minimal-mistakes/pull/3232) [#3318](https://github.com/mmistakes/minimal-mistakes/pull/3318)
 - Fix Keybase icon in author sidebar. [#3221](https://github.com/mmistakes/minimal-mistakes/pull/3221)
 - Fix sort order of Staticman comments when data files aren't named alphabetically. [#3184](https://github.com/mmistakes/minimal-mistakes/pull/3184)
 - Fix `layout: compress` issue with HTML comment in video include. [#3117](https://github.com/mmistakes/minimal-mistakes/pull/3117)

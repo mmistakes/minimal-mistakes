@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2022-01-05T10:33:05-05:00
+last_modified_at: 2022-01-05T10:34:20-05:00
 toc: false
 ---
 
@@ -13,7 +13,7 @@ toc: false
 
 ### Bug Fixes
 
-- Fix documentation typo. [#3232](https://github.com/mmistakes/minimal-mistakes/pull/3232)
+- Fix documentation typos. [#3232](https://github.com/mmistakes/minimal-mistakes/pull/3232) [#3318](https://github.com/mmistakes/minimal-mistakes/pull/3318)
 - Fix Keybase icon in author sidebar. [#3221](https://github.com/mmistakes/minimal-mistakes/pull/3221)
 - Fix sort order of Staticman comments when data files aren't named alphabetically. [#3184](https://github.com/mmistakes/minimal-mistakes/pull/3184)
 - Fix broken documentation link and add Baidu site verification to `_config.yml` files. [#3139](https://github.com/mmistakes/minimal-mistakes/pull/3139)
