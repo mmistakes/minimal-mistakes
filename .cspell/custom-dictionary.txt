@@ -1,4 +1,5 @@
 # Custom Dictionary Words
+añadiendole
 chgrp
 comprimirlos
 deshacerlos

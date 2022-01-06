@@ -75,6 +75,24 @@ find / -type f ! -perm 777 # Busca todos los archivos con permiso distintos a 77
 grep [opciones] [expresiones regulares] [archivos]
 ```
 
+### Ejemplo - Buscar un patrón dentro de archivo
+
+```bash
+grep [patrón] [archivos]
+```
+
+### Ejemplo - Buscar recursivamente un patrón dentro de archivo
+
+```bash
+grep -r [patrón] [archivos]
+```
+
+### Ejemplo - Buscar desde el patrón en la salida del comando
+
+```bash
+command | grep patrón
+```
+
 #### [Expresiones Regulares] - BRE
 
 ```bash
@@ -132,28 +150,15 @@ $ # Coincidir al final de la linea
 locate [OPTION] PATTERN...
 ```
 
-```bash
-locate .bashrc
-/etc/bash.bashrc
-/etc/skel/.bashrc
-/home/linuxize/.bashrc
-/usr/share/base-files/dot.bashrc
-/usr/share/doc/adduser/examples/adduser.local.conf.examples/bash.bashrc
-/usr/share/doc/adduser/examples/adduser.local.conf.examples/skel/dot.bashrc
-```
+#### Ejemplos basicos
 
 ```bash
+locate <archivo> # Busca todas las instancias del archivo
 locate *.md # Busca todos los archivos terminados con la extension .md
 locate -n 10 *.md # Busca los 10 primeros archivos terminados con la extension .md
 locate -c 10 *.md # Busca y cuenta las coincidencias
 locate -e *.json # Busca y muestra los archivos que existen en el momento de ejecutar este comando
 locate --regex -i "(\|.extension|\.extension)" # Busca todos los archivos dentro del sistema ignorando mayusculas o minusculas
-```
-
-* Ejemplo
-
-```bash
-locate --regex -i "(\|.json|\.md)" # Busca todos los archivos json o md ignorando mayusculas o minusculas
 ```
 
 ### whereis
