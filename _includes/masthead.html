@@ -12,28 +12,11 @@
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
         </a>
         <ul class="visible-links">
-            {%- for link in site.data.navigation.main -%}
-                {% assign class = nil %}
-                {% if page.url contains link.url %}
-                    {% assign class = 'active' %}
-                {% endif %}
-                {% if link.sublinks %}
-                    <li class="dropdown {{ class }}">
-                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }}</a>
-                        <ul class="dropdown-content">
-                            {% for sublink in link.sublinks %}
-                                <li>
-                                    <a class="sublink" href="{{ site.baseurl }}{{ sublink.url }}">    {{ sublink.title }}</a>
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    </li>
-                {% else %}
-                    <li class="masthead__menu-item">
-                        <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
-                    </li>
-                {% endif %}
-            {% endfor %}
+          {%- for link in site.data.navigation.main -%}
+            <li class="masthead__menu-item">
+              <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+            </li>
+          {%- endfor -%}
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
