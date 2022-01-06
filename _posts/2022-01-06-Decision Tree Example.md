@@ -1,3 +1,8 @@
+---
+layout: single
+title:  "Decision Tree Example"
+---
+
 # Import Library
 
 
