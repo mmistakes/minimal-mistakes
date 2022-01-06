@@ -7,3 +7,10 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR');
+
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('/assets/fonts/RIDIBatang.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
