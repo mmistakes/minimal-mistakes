@@ -19,6 +19,7 @@ tag:
     기초,
     개발환경,
     세팅,
+    삭제,
   ]
 toc: true
 sidebar:
