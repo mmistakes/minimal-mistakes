@@ -4,11 +4,6 @@ source "https://rubygems.org"
 gem "minimal-mistakes-jekyll", path: "../"
 group :jekyll_plugins do
   gem 'jekyll-algolia', '~> 1.0'
-  gem 'tzinfo'
-  gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 end
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
-
-gem 'tzinfo'
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
