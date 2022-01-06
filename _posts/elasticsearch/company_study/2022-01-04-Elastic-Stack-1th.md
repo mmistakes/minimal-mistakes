@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Elasticsearch] Elastic Stack Study"
+title: "[Elasticsearch] Elastic Stack Study 1th"
 date: "2022-01-04 02:08:43"
 categories: Elastic Stack
 tag: [Elastic Stack, Company Study]
