@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Linux - Sistema
+title: Linux - Información del Sistema
 date: 2021-12-17
 classes: wide
 toc: true
@@ -19,7 +19,7 @@ page_css:
 
 ## Comandos de sistema
 
-* Ver caracteristicas del sistema
+### Ver caracteristicas del sistema GNU/Linux que se esta utilizando
 
 ```bash
 cat /etc/*release
@@ -42,6 +42,22 @@ VERSION_CODENAME=focal
 UBUNTU_CODENAME=focal
 ```
 
+### Información CPU
+
+```bash
+cat /proc/cpuinfo
+```
+
+### Información Memoria
+
+```bash
+cat /proc/memoinfo
+```
+
+
+
+### Versión de la distribución de GNU/Linux que se esta utilizando
+
 ```bash
 lsb_release -a
 
@@ -52,7 +68,39 @@ Release:        20.04
 Codename:       focal
 ```
 
+### Información del Kernel
+
+```bash
+uname -a
+Linux ubuntu 5.11.0-44-generic #48~20.04.2-Ubuntu SMP Tue Dec 14 15:36:44 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+```
+
 ```bash
 uname -r
 5.11.0-43-generic
 ```
+
+### Muestra el uso del espacio en disco
+
+```bash
+df
+```
+
+### Muestra memoria y espacio 'swap'
+
+```bash
+free
+```
+
+### Muestra las posibles rutas donde se ubica la app/software/comando que ejecutemos
+
+```bash
+whereis <app/sw/comando>
+```
+
+### Muestra cual app/software/comando se ejecutara
+
+```bash
+which <app/sw/comando>
+```
+

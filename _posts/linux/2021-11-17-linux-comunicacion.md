@@ -92,6 +92,24 @@ sftp user@remotehost_domainname
 
 ![Alt diagrama-ssh](/assets/images/linux/ssh/ssh-eje-1.jpg)
 
+##### Ejemplo - Conectar al host como usuario
+
+```bash
+ssh user@host 
+```
+
+##### Ejemplo - Conectar al host mediante un puerto especifico
+
+```bash
+ssh -p port user@host
+```
+
+##### Ejemplo - Añadir su 'clave-key' al host para que el usuario habilite una entrada (keyed-sin llave) o sin contraseña (passwordless-login)
+
+```bash
+ssh-copy-id user@host
+```
+
 #### Técnicas de Criptografía
 
 * Para realizar comunicaciones seguras el **protocolo SSH** tiene un cifrado seguro para transferir información entre el **host** y el **cliente**
