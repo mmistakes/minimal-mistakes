@@ -18,6 +18,10 @@ $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
 $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 
+/* notices */
+$notice-background-mix: 90% !default;
+$code-notice-background-mix: 95% !default;
+
 /* neon syntax highlighting (base16) */
 $base00: #ffffff !default;
 $base01: #e0e0e0 !default;
@@ -36,8 +40,10 @@ $base0d: #3777e6 !default;
 $base0e: #ad00a1 !default;
 $base0f: #cc6633 !default;
 
+.author__urls.social-icons i,
 .author__urls.social-icons .svg-inline--fa,
-.page__footer-follow .social-icons .svg-inline--fa {
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa  {
   color: inherit;
 }
 
@@ -50,4 +56,8 @@ $base0f: #cc6633 !default;
   &:visited {
     color: $text-color;
   }
+}
+
+.ais-search-box .ais-search-box--input {
+  background-color: $form-background-color;
 }
