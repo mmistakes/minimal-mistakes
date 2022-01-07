@@ -36,11 +36,11 @@ data.head()
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
-
+    
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -141,7 +141,7 @@ data.head()
       flex-wrap:wrap;
       gap: 12px;
     }
-
+    
     .colab-df-convert {
       background-color: #E8F0FE;
       border: none;
@@ -153,18 +153,18 @@ data.head()
       padding: 0 0 0 0;
       width: 32px;
     }
-
+    
     .colab-df-convert:hover {
       background-color: #E2EBFA;
       box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
       fill: #174EA6;
     }
-
+    
     [theme=dark] .colab-df-convert {
       background-color: #3B4455;
       fill: #D2E3FC;
     }
-
+    
     [theme=dark] .colab-df-convert:hover {
       background-color: #434B5C;
       box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
@@ -178,14 +178,14 @@ data.head()
           document.querySelector('#df-25192586-3a28-415e-82cc-5184810f8ab5 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
-
+    
         async function convertToInteractive(key) {
           const element = document.querySelector('#df-25192586-3a28-415e-82cc-5184810f8ab5');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
           if (!dataTable) return;
-
+    
           const docLinkHtml = 'Like what you see? Visit the ' +
             '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
             + ' to learn more about interactive tables.';
@@ -219,7 +219,7 @@ print(col_names[-1])
 ```
 
     Outcome
-    
+​    
 
 # Data Exploration
 
@@ -306,11 +306,11 @@ x_train.head(3)
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
-
+    
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -383,7 +383,7 @@ x_train.head(3)
       flex-wrap:wrap;
       gap: 12px;
     }
-
+    
     .colab-df-convert {
       background-color: #E8F0FE;
       border: none;
@@ -395,18 +395,18 @@ x_train.head(3)
       padding: 0 0 0 0;
       width: 32px;
     }
-
+    
     .colab-df-convert:hover {
       background-color: #E2EBFA;
       box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
       fill: #174EA6;
     }
-
+    
     [theme=dark] .colab-df-convert {
       background-color: #3B4455;
       fill: #D2E3FC;
     }
-
+    
     [theme=dark] .colab-df-convert:hover {
       background-color: #434B5C;
       box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
@@ -420,14 +420,14 @@ x_train.head(3)
           document.querySelector('#df-ef4fac68-e8b8-4dd3-843d-69f86ffb2c5d button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
-
+    
         async function convertToInteractive(key) {
           const element = document.querySelector('#df-ef4fac68-e8b8-4dd3-843d-69f86ffb2c5d');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
           if (!dataTable) return;
-
+    
           const docLinkHtml = 'Like what you see? Visit the ' +
             '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
             + ' to learn more about interactive tables.';
@@ -488,7 +488,7 @@ print('accuracy : ', metrics.accuracy_score(y_test, y_pred))
 ```
 
     accuracy :  0.670995670995671
-    
+​    
 
 # Model Visualization
 
@@ -512,10 +512,9 @@ graph = graphviz.Source(dot_data, format="png")
 graph
 ```
 
+![output_26_0](../images/output_26_0.svg)
 
 
-
-![svg](output_26_0.svg)
 
 
 
@@ -544,14 +543,12 @@ viz
     findfont: Font family ['Arial'] not found. Falling back to DejaVu Sans.
     findfont: Font family ['Arial'] not found. Falling back to DejaVu Sans.
     findfont: Font family ['Arial'] not found. Falling back to DejaVu Sans.
-    
 
 
 
 
-![svg](output_28_1.svg)
 
-
+![output_28_1](../images/output_28_1.svg)
 
 
 ```python
