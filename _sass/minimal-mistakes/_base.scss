@@ -35,27 +35,27 @@ h6 {
 
 h1 {
   margin-top: 0;
-  font-size: $type-size-3;
+  font-size: $h-size-1;
 }
 
 h2 {
-  font-size: $type-size-4;
+  font-size: $h-size-2;
 }
 
 h3 {
-  font-size: $type-size-5;
+  font-size: $h-size-3;
 }
 
 h4 {
-  font-size: $type-size-6;
+  font-size: $h-size-4;
 }
 
 h5 {
-  font-size: $type-size-6;
+  font-size: $h-size-5;
 }
 
 h6 {
-  font-size: $type-size-6;
+  font-size: $h-size-6;
 }
 
 small,
@@ -130,14 +130,13 @@ a {
     @extend %tab-focus;
   }
 
-  &:hover,
-  &:active {
-    color: $link-color-hover;
-    outline: 0;
-  }
-
   &:visited {
     color: $link-color-visited;
+  }
+
+  &:hover {
+    color: $link-color-hover;
+    outline: 0;
   }
 }
 
@@ -168,7 +167,7 @@ figcaption > code,
 td > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
-  font-size: $type-size-6;
+  font-size: 0.8em;
   background: $code-background-color;
   border-radius: $border-radius;
 
