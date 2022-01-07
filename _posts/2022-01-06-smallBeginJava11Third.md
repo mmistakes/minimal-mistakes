@@ -78,8 +78,6 @@ public class CategoryController {
 
 <br>
 
-# 15. Thymeleaf 사용
-
 
 
 <br>
