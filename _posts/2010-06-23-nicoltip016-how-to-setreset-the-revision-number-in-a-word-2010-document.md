@@ -1,6 +1,6 @@
 ---
 title: NicolTIP#016- How to Set Reset the revision number in a Word 2010 document
-tags: [2010, DOCX, NicolTIP, Revision Number, Word, ZIP]
+tags: [docx, NicolTIP, Revision Number, Word, ZIP]
 ---
 When I work for a customer, can happen that I use a document as "template" to build a new one (copy –&gt; paste –&gt; rename –&gt; delete some chapter and start writing).
 
