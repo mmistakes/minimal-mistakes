@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Visual Code 설정 / HTML기초"
-categories: foundation
+categories: HTML
 tag: [foundation, HTML, Visual Studio Code]
 toc: true
 author_profile: false
@@ -134,9 +134,3 @@ typora-root-url: ../
   <!-- 외부링크 -->
   <a href="https://www.google.com" target="_blank">구글로 이동</a>
   ```
-
-
-+ 1
-+ 1
-+ 1
-+ 1
