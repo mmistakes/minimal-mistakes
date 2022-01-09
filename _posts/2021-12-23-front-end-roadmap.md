@@ -6,10 +6,9 @@ categories:
   - Develop
 tags:
   - front-end
-last_modified_at: 2022-01-04
+last_modified_at: 2022-01-09
 ---
 
-프론트엔드 개발자가 되기 위해서 어떤 경험을 준비해두어야 하는지 정리해보려고 한다. 
 - React, Vue, Angular 등 SPA 프레임워크 사용에 능숙한
 - HTML, CSS, JavaScript에 대해 이해가 깊은
 - UI/UX에 대해 높은 가치를 두는 
@@ -29,7 +28,7 @@ last_modified_at: 2022-01-04
 - CSS Animation/media query/flex/grid
 - AWS 이용 서비스? AWS란? 왜 핫한지 ?
 - Node란? Node.js
-- MongoDB, MySQL 지피지기에서 썼었나?
+- MongoDB, MySQL 지피지기에서 썼었나? (지피지기에서 쓴 기술들 이력서에 일단 정리해고 내거로 만들기)
 - 웹팩? HTTP/HTTPS란? 웹 접근성? SEO ?
 
 ### 프론트엔드 로드맵
@@ -53,7 +52,8 @@ ES6 + syntax(자바스크립트 문법)와 브라우저 API(DOM manipulation, ev
 타입스크립트** - OOP - 교집합 그림으로 찾아보기/이해하기 
 자바스크립트 프레임워크 - React, Vue, Angular
 
-----------single page application(SPA) 를 위한, 즉 브라우저에서 동작하기 위한 것들 - 배우고 나면 seo에 취약한 부분이 있네? 사용자가 웹페이지를 보는데 시간이 오래걸리네? 등의 문제를 만나게 될텐데 그때 배우는 프레임 워크들은,
+----------
+single page application(SPA) 를 위한, 즉 브라우저에서 동작하기 위한 것들 - 배우고 나면 seo에 취약한 부분이 있네? 사용자가 웹페이지를 보는데 시간이 오래걸리네? 등의 문제를 만나게 될텐데 그때 배우는 프레임 워크들은,
 
 Static site generators(SSG) - Gatsby (React), GridSome(Vue)
 서버에서 사이트를 미리 만들어 두는 
@@ -78,10 +78,7 @@ CI/CD (취업 후에..자세히보고 지금은 간단하게만 알아보기 SI/
 +) 네트워크, 데이터베이스 백엔드와 연결되는 것들 공부해야.
 
 ## 추가로 알게된 내용
-- RestAPI
-백엔드와 통신할 때 
 
-- Cross Platform 내가 만든 웹 어플리케이션을 다른 플랫폼에서 구동시켜보고 싶다면? 
 desktop - electron 웹 어플리케이션을 데스크탑에 설치가능한 형태로 만들고 싶다면 
 mobile - React Native, PWA, Cordova.. 
 
