@@ -10,13 +10,13 @@ author_profile: true
 #   nav: "docs"
 ---
 
-# 🤷‍♂️ 엘라스틱 스택의 엘라스틱서치
+## 🤷‍♂️ 엘라스틱 스택의 엘라스틱서치
 
 ![https://user-images.githubusercontent.com/53969142/148667204-608e4d80-4c71-43f3-87b8-ca3abf976966.jpg](https://user-images.githubusercontent.com/53969142/148667204-608e4d80-4c71-43f3-87b8-ca3abf976966.jpg)
 
 > 엘라스틱 스택의 핵심 기술인 엘라스틱 서치를 제대로 분석
 
-# 📌 목차
+## 📌 목차
 
 - **엘라스틱서치: 검색**
   - 쿼리 컨텍스트와 필터 컨텍스트
@@ -30,7 +30,7 @@ author_profile: true
   - 집계의 조합
   - 파이프라인 집계
 
-# ✔ 엘라스틱서치: 검색
+## ✔ 엘라스틱서치: 검색
 
 > 🚀 엘라스틱서치는 전문 검색 기능을 시작으로 꾸준히 성장해 왔으며
 > 다양한 검색 쿼리를 지원하고 있다.
@@ -41,7 +41,7 @@ author_profile: true
 > 🚀 스코어링 알고리즘을 적용해 연관성이 높은 결과에 대한 제어가 가능하므로
 > 대량의 데이터를 대상으로 빠르고 정확한 검색이 가능하다.
 
-# ✔ 쿼리 컨텍스트와 필터 컨텍스트
+## ✔ 쿼리 컨텍스트와 필터 컨텍스트
 
 정확한 검색이 아닌 유사 검색은 query context, 정확한 검색은 filter context 사용
 
@@ -53,7 +53,7 @@ author_profile: true
 
 **유사도**를 계산하지 않고 **일치 여부**에 따른 결과만을 반환
 
-# ✔ 쿼리 컨텍스트와 필터 컨텍스트
+## ✔ 쿼리 컨텍스트와 필터 컨텍스트
 
 ![https://user-images.githubusercontent.com/53969142/148668240-98e3ef3b-1ab3-4c0c-b3c7-4e44b0e9fce2.PNG](https://user-images.githubusercontent.com/53969142/148668240-98e3ef3b-1ab3-4c0c-b3c7-4e44b0e9fce2.PNG)
 
@@ -62,7 +62,7 @@ author_profile: true
 - **필터 컨텍스트**는 쿼리 스코어링을 생략하기 전체적인 쿼리 속도 향상 가능.
 - 또한 **캐시**를 이용할 수 있다. (엘라스틱는 기본적으로 힙 메모리의 10% 캐시 사용)
 
-## ✅ 쿼리 컨텍스트 실행
+### 쿼리 컨텍스트 실행
 
 ```
 GET kibana_sample_data_ecommerce/_search
@@ -78,7 +78,7 @@ GET kibana_sample_data_ecommerce/_search
 
 - category 필드에 clothing로 매칭되는 document를 반환 해달라.
 
-## ✅ 쿼리 컨텍스트 실행 후
+### 쿼리 컨텍스트 실행 후
 
 - hits.totla
   - 인덱스에서 3927개의 도큐먼트를 찾음을 의미.
@@ -86,7 +86,7 @@ GET kibana_sample_data_ecommerce/_search
 - `유사도 계산 알고리즘에 의해 가장 연관성 높은 도큐먼트 조회`
 - score 값이 클 수록 유사도가 높은 도큐먼트.
 
-## ✅ 필터 컨텍스트 실행
+### 필터 컨텍스트 실행
 
 ```
 GET kibana_sample_data_ecommerce/_search
@@ -108,7 +108,7 @@ GET kibana_sample_data_ecommerce/_search
 - **과거 1.x** 버전에서는 **용어 검색**, **용어 필터** 처럼 필터 컨텍스트 구분, 현재는 구분 x
 - 즉, 쿼리/필터 컨텍스트를 혼합해 사용하는 추세.
 
-# ✔ 쿼리 스트링과 쿼리 DSL: 쿼리 스트링
+## ✔ 쿼리 스트링과 쿼리 DSL: 쿼리 스트링
 
 엘라스틱 서치에서 쿼리 사용방식은 쿼리 스트링과 쿼리 DSL 존재
 
@@ -123,7 +123,7 @@ GET kibana_sample_data_ecommerce/_search?q=customer_full_name:Mary
 - 간단한 쿼리를 한 줄에 작성하기에 가독성 :+1:
 - 반대로 복잡한 쿼리는 가독성 :-1:
 
-# ✔ 쿼리 스트링과 쿼리 DSL: 쿼리 DSL
+## ✔ 쿼리 스트링과 쿼리 DSL: 쿼리 DSL
 
 ### query DSL
 
@@ -143,7 +143,7 @@ GET kibana_sample_data_ecommerce/_search
 - 엘라스틱 서치의 모든 쿼리 스펙 지원, 복잡한 쿼리 구현 가능
 - 단순한 쿼리는 굳이 Query DSL 사용할 필요가 없다. :sunglasses:
 
-# ✔ 유사도 스코어
+## ✔ 유사도 스코어
 
 질의문과 도큐먼트의 유사도를 계산 표현하는 값, 스코어가 높을수록 :+1:
 
@@ -151,7 +151,7 @@ GET kibana_sample_data_ecommerce/_search
 - 대표적으로는 **BM25 알고리즘**을 이요해 유사도 스코어 계산.
 - **explain keyword**를 통해 어떤식으로 계산이 되었는지 확인 가능
 
-## ✅ 설명(explain)이 포함된 쿼리 컨텍스트의 실행
+### 설명(explain)이 포함된 쿼리 컨텍스트의 실행
 
 > 위 쿼리는 Kibana console 창에서 직접 실행
 
@@ -174,15 +174,14 @@ GET kibana_sample_data_ecommerce/_search
 - 어떤 경로를 통해 검색이 되었는가?
 - 어떤 기준으로 스코어가 계산되었는가?
 
-## ✅ 스코어 알고리즘(BM25) 이해하기
+## ✔ 스코어 알고리즘(BM25) 이해하기
 
 **스코어**는 도큐먼트와 쿼리 간의 **연관성 수치**로, 값이 클수록 연관성이 높다는 것을
 의미한다. 이 스코어를 계산하기 위해 사용되는 알고리즘이 **BM25 알고리즘**이다.
 
-<br>
-
 Elasticsearch **5.x 버전 이전에는 TF-IDF** 알고리즘을 사용 했으나 **5.x 버전**부터 BM25
-알고리즘을 기본으로 사용한다.
+알고리즘을 기본으로  
+사용한다.
 
 ### BM25 ( 척도 || 근거 )
 
@@ -190,7 +189,7 @@ Elasticsearch **5.x 버전 이전에는 TF-IDF** 알고리즘을 사용 했으�
 - 검색어가 문서에 **얼마나 자주 나타나는지**
 - 검색어가 문서에서 **얼마나 중요한 내용**인지
 
-## ✅ IDF 계산 ( Inverse Document Frequency )
+### IDF 계산 ( Inverse Document Frequency )
 
 - **특정 용어**가 얼마나 **자주 등장했는지**를 의미하는 지표.
 - 관사('to', 'the'), 접속부사('그리고', '그러나') 같은 용어는 실제 의미가 없는 단어
@@ -205,7 +204,7 @@ Elasticsearch **5.x 버전 이전에는 TF-IDF** 알고리즘을 사용 했으�
 
 - 변수 `N`, `n`만 알면 IDF를 구할 수 있다
 
-## ✅ IDF 계산 ( Inverse Document Frequency )
+### IDF 계산 ( Inverse Document Frequency )
 
 ```
 {
@@ -230,7 +229,7 @@ Elasticsearch **5.x 버전 이전에는 TF-IDF** 알고리즘을 사용 했으�
 - **n** : 검색했던 용어가 몇개의 도큐먼트에 있는가?
 - **N** : 해당 인덱스의 전체 도큐먼트 수 (kibana_sample_data_ecommerce)
 
-## ✅ TF 계산( Term Frequency )
+### TF 계산( Term Frequency )
 
 - **특정 용어**가 얼마나 **많이 등장했는지**를 의미하는 지표.
 - IDF와는 반대로 특정 용어가 많이 나오면 중요한 용어로 인식하고 가중치 :point_up:
@@ -270,7 +269,7 @@ Elasticsearch **5.x 버전 이전에는 TF-IDF** 알고리즘을 사용 했으�
 - **dl**: 필드 길이
 - **avgdl**: 전체 도큐먼트 평균 길이
 
-## ✅ 최종 스코어 계산식
+### 최종 스코어 계산식
 
 ```
 "description": "score(freq=1.0), computed as boost * idf * tf from:",
@@ -284,9 +283,9 @@ Elasticsearch **5.x 버전 이전에는 TF-IDF** 알고리즘을 사용 했으�
 
 ```
 
-- 최종 스코어는 boost(고정값=2.2) _ idf _ tf 다.
+- 최종 스코어는 boost(고정값=2.2) _idf_ tf 다.
 
-# ✔ 쿼리 ( 엘라스틱 서치는 검색을 위한 쿼리를 지원 )
+## ✔ 쿼리 ( 엘라스틱 서치는 검색을 위한 쿼리를 지원 )
 
 ### 리프 쿼리
 
@@ -302,9 +301,9 @@ Elasticsearch **5.x 버전 이전에는 TF-IDF** 알고리즘을 사용 했으�
 
 - 논리(**bool**)쿼리
 
-🔥🔥 리프 쿼리 중 `전문 쿼리`(full text query)와 `용어 수준 쿼리`(term level query) 비교
+🔥 리프 쿼리 중 `전문 쿼리`(full text query)와 `용어 수준 쿼리`(term level query) 비교
 
-## ✅ 리프 쿼리 - 전문 쿼리, 용어 수준 쿼리
+## ✔ 리프 쿼리 - 전문 쿼리, 용어 수준 쿼리
 
 ### 전문 쿼리
 
@@ -319,7 +318,7 @@ Elasticsearch **5.x 버전 이전에는 TF-IDF** 알고리즘을 사용 했으�
 - 인덱스 매핑 시 필드를 [키워드 타입](https://esbook.kimjmin.net/07-settings-and-mappings/7.2-mappings/7.2.1#keyword)으로 매핑해야 한다.
 - 위 부분은 권장 사항이다
 
-## ✅ 전문 쿼리 동작 방식
+### 전문 쿼리 동작 방식
 
 ![https://user-images.githubusercontent.com/53969142/148671521-cfcbbff8-7b3a-40d4-b2fd-5461f24efbcb.PNG](https://user-images.githubusercontent.com/53969142/148671521-cfcbbff8-7b3a-40d4-b2fd-5461f24efbcb.PNG)
 
@@ -327,7 +326,7 @@ Elasticsearch **5.x 버전 이전에는 TF-IDF** 알고리즘을 사용 했으�
 - **전문 쿼리**는 **구글**, **네이버**에서 검색어를 이용해 검색하는 방식을 연상
 - **종류**: **`매치쿼리`**, **`매치 프레이즈 쿼리`**, **`멀티 매치 쿼리`**, **`쿼리 스트링 쿼리`** 존재
 
-## ✅ 용어 수준 쿼리 동작 방식
+### 용어 수준 쿼리 동작 방식
 
 ![https://user-images.githubusercontent.com/53969142/148671790-2fddbf43-fd8b-4c29-a2f8-ed811be9457b.PNG](https://user-images.githubusercontent.com/53969142/148671790-2fddbf43-fd8b-4c29-a2f8-ed811be9457b.PNG)
 
@@ -336,14 +335,14 @@ Elasticsearch **5.x 버전 이전에는 TF-IDF** 알고리즘을 사용 했으�
 - 날짜, 숫자, 범주 형 데이터를 정확하게 검색할 시 사용, RDB의 WHERE절과 비슷
 - **종류**: **`용어 쿼리`**, **`용어들 쿼리`**, **`퍼지쿼리`** 존재
 
-# ✔ 전문 쿼리 - 매치 쿼리
+## ✔ 전문 쿼리 - 매치 쿼리
 
 - 전문 쿼리의 가장 기본이 되는, 대표적인 전문 쿼리
 - **전체 텍스트** 중 특정 **용어**(Term)이나 **용어들**(Terms)을 검색 시 사용
 - 매치 쿼리를 사용 하려면, 검색하고 싶은 필드를 알아야 한다.
 - \_mapping api 사용
 
-## ✅ 하나의 용어 검색하는 매치 쿼리 예제
+### 하나의 용어 검색하는 매치 쿼리 예제
 
 ```
 GET kibana_sample_data_ecommerce/_search
@@ -362,7 +361,7 @@ GET kibana_sample_data_ecommerce/_search
 - 일반적인 분석기라면 => `Mary` => `mary`로 토큰화
 - mary가 포함된 모든 Document :mag:
 
-## ✅ 복수 개의 용어 검색하는 매치 쿼리 예제
+### 복수 개의 용어 검색하는 매치 쿼리 예제
 
 ```
 GET kibana_sample_data_ecommerce/_search
@@ -388,7 +387,7 @@ GET kibana_sample_data_ecommerce/_search
 - 분석기에 의해 ['mary', 'bailey']로 토큰화 된다.
 - 매치 쿼리에서 용어들 간 공백은 **OR**로 인식
 
-## ✅ 그 외의 매치 쿼리 및 용어 쿼리 설명
+## ✔ 그 외의 매치 쿼리 및 용어 쿼리 설명
 
 ### 매치 프레이즈 쿼리
 
@@ -399,7 +398,7 @@ GET kibana_sample_data_ecommerce/_search
 - 용어 수준의 대표적인 쿼리
 - 분석기에 의해 토큰화가 안된다. 대소문자까지 정확하게 맞아야 검색.
 
-## ✅ 그 외의 매치 쿼리 및 용어 쿼리 설명
+## ✔ 그 외의 매치 쿼리 및 용어 쿼리 설명
 
 ### 범위 쿼리
 
