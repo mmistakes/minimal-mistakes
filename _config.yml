@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "en-US"
-title                    : "nyamin9_Bio/Data"
+title                    : "프로그래밍구_Bio/Data"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "nyamin9"
+name                     : "프로그래밍구"
 description              : "🧬생명정보학 / 📊데이터분석 공부 블로그💻💻"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -102,7 +102,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "nyamin9"
+  name             : "Programin9"
   avatar           : 
   bio              : "의공학도의 끼적끼적"
   location         : "South Korea"
