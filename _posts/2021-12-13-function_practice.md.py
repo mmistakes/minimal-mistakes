@@ -1,5 +1,6 @@
-def open_account():
-    print("새로운 계좌가 개설되었습니다")
+def open_account():/n
+  
+    print("새로운 계좌가 개설되었습니다")\n
     
 
 def deposit(balance, money):
