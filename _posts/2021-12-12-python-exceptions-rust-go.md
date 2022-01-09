@@ -221,7 +221,7 @@ where `T` and `E` are generic types. One could then implement methods on this en
  In Python things don't quite work that way, so to mimic the `Result` type we will
 instead define two generic classes `Ok[T,E]` and `Err[T, E]` and use a type alias of `Union` to make a `Result[T, E]`. In the end we will have a Rust-like error handling system with a small subset of the Rust functionality. Lets start with the `Ok` class
 ```python
-from typing import Any, Callable, Generic TypeVar
+from typing import Any, Callable, Generic, TypeVar
 
 T = TypeVar("T")
 E = TypeVar("E", bound=BaseException)
