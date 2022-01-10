@@ -265,7 +265,8 @@ plt.legend(loc=(0.7, 0.5));
     # 영화(1.2억) vs 먹방(0.8억)
 ```
 
-![png](output_25_0.png)
+![output_25_0](https://user-images.githubusercontent.com/67591105/148709540-4547f8a3-80f7-42f0-94f4-691a1927920a.png)
+
 
 ```python
 # 워드클라우드 IMPORT
@@ -346,7 +347,7 @@ plt.tight_layout(pad=0)
 plt.axis('off')
 plt.show()
 ```
-
+![output_36_0](https://user-images.githubusercontent.com/67591105/148709547-94cf92b0-d1ae-4b49-b3f3-12e1173cd76b.png)
 ![png](output_36_0.png)
 
 ```python
