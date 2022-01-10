@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2022-01-05T10:34:20-05:00
+last_modified_at: 2022-01-10T07:59:46-05:00
 toc: false
 ---
 
@@ -25,6 +25,7 @@ toc: false
 
 ### Enhancements
 
+- Automatically close invalid PRs using GitHub Actions. [#3313](https://github.com/mmistakes/minimal-mistakes/pull/3313)
 - Update and add missing Brazilian Portuguese translations. [#3204](https://github.com/mmistakes/minimal-mistakes/pull/3204)
 - Add link to documentation clarifying how to add plugins. [#3181](https://github.com/mmistakes/minimal-mistakes/pull/3181)
 - Add optional label attribute for utterances comments. [#3128](https://github.com/mmistakes/minimal-mistakes/pull/3128)
