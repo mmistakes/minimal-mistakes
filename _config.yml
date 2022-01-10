@@ -24,8 +24,8 @@ description              : "An amazing website."
 url                      : "https://leo-ywkim.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "leo-ywkim/leo-ywkim.github.io.git"
-teaser                   : "/assets/images/500x300.png"
-logo                     : "/assets/images/88x88.png"
+teaser                   : "/assets/images/Leo_navy.png"
+logo                     : "/assets/images/Leo_navy.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
