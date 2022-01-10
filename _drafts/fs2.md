@@ -66,7 +66,40 @@ import cats.effect.{ExitCode, IO, IOApp}
 import fs2.{Chunk, INothing, Pipe, Pull, Pure, Stream}
 ```
 
+## 2. Building a Stream
 
+As the official page of the of fs2 stream library reports, its main feature are:
+ 
+ - Functional
+ - Effectful
+ - Concurrent
+ - I/O (networking, files) computations in constant memory 
+ - Stateful transformations 
+ - Resource safety and effect evaluation
+
+Despite all the above features , the main type defined by the library is only one, `Stream[F, O]`. This type represents a stream that can pull values of type `O` using an effect of type `F`. The last part of this sentence will be clear in a moment.
+
+The easiest way to create a `Stream` is to use directly its constructor. Say that we want to create a `Stream` containing the actors in the Justice League. We can do it like this:
+
+```scala
+val jlActors: Stream[Pure, Actor] = Stream(
+  henryCavil,
+  galGodot,
+  ezraMiller,
+  benFisher,
+  rayHardy,
+  jasonMomoa
+)
+```
+
+Since we don't use any effect to compute (or pull) the elements of the stream, we can use the `Pure` effect. In other words, using the `Pure` effect means that pulling the elements from the stream cannot fail.
+
+Since no effect is used at all, it's possible to convert _pure streams_ into Scala `List` of `Vector` using the convenient methods provided by the library:
+
+```scala
+val jlActorList: List[Actor] = jlActors.toList
+val jlActorVector: Vector[Actor] = jlActors.toVector
+```
 
 
  
