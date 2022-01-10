@@ -1,8 +1,8 @@
 ---
 layout: single
 title: numpy append error
-categories: numpy 라이브러리쿡북
-tag: deeplearning numpy
+categories: numpy 라이브러리쿡북 error
+tag: deeplearning numpy error
 typora-root-url: ../
 ---
 
