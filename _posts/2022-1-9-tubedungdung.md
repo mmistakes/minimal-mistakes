@@ -332,14 +332,11 @@ len(count)
 ```python
 # 빈도수 상위 50개 까지 딕셔너리 형태로 자료 변환 {'noun':'key'}
 word = dict(count.most_common(50))
-
-spwords = set(STOPWORDS)
-spwords.add('먹방') # 제외하고 싶은 단어 추가
 ```
 
 ```python
 #wordcloud 만들기
-wc = WordCloud(max_font_size=200, stopwords=spwords, font_path = 'C:\Windows\Fonts\malgun.ttf',background_color="white",width=2000, height=500).generate_from_frequencies(word) # font 경로 개별적으로 설정해야함
+wc = WordCloud(max_font_size=200, font_path = 'C:\Windows\Fonts\malgun.ttf',background_color="white",width=2000, height=500).generate_from_frequencies(word) # font 경로 개별적으로 설정해야함
 
 plt.figure(figsize = (40,40))
 plt.imshow(wc)
