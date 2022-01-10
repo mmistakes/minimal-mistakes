@@ -348,7 +348,6 @@ plt.axis('off')
 plt.show()
 ```
 ![output_36_0](https://user-images.githubusercontent.com/67591105/148709547-94cf92b0-d1ae-4b49-b3f3-12e1173cd76b.png)
-![png](output_36_0.png)
 
 ```python
 dt[1]
