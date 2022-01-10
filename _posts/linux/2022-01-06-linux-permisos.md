@@ -19,11 +19,37 @@ page_css:
 
 ## Permisos de Archivos
 
+### chmod - Permisos de ficheros
+
 * Cambiar los permisos de los archivos al sistema **'octal'**
   * Los cual son separadamente :
     * usuario - **(owner)**
     * grupo - **(group)**
     * otros - **(others)**
+
+* Añadir permisos de lectura al fichero archivo.ext para todos (usuario,grupos,otro)
+
+```bash
+chmod u+r archivo.ext
+```
+
+* Añadir permisos de escritura solamente al grupo
+
+```bash
+chmod g+w archivo.ext
+```
+
+* Eliminar el permiso de ejecución del fichero para el propietario
+
+```bash
+chmod u-x archivo.ext
+```
+
+* Añade permisos de lectura,escritura y ejecución del fichero para el usuario y elimina todos los permisos para los miembros del grupo y otros (mediante permisos octales)
+
+```bash
+chmod 700 archivo.ext
+```
 
 * Asignar permisos mediante numeración
 

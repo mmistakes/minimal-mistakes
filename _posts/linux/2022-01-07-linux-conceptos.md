@@ -17,7 +17,23 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Conceptos
+## Conceptos Básicos de UNIX/Linux
+
+### Tipo de Fichero
+
+Se establece cuando se crea el **fichero/archivo** y no se puede cambiar
+
+* Fichero normal **(-)**
+
+* Directorio **(d)**
+
+* Fichero pipe **(p)**
+
+* Enlace simbólico **(|)**
+
+* Dispositivo de almacenamiento por caracteres **(c)**
+
+* Dispositivo de almacenamiento por bloques **(b)**
 
 ### Sintaxis de comandos de Shell de Unix/Linux
 
@@ -44,10 +60,61 @@ comando # Programa/Software/App a ejecutar
 ```
 
 ```bash
-<recursos> # 
+<recursos> # Elementos o información complementaria para la ejecución del comando
 ```
 
+### Manual
 
+* Muestra información del manual de referencia sobre el comando solicitado
+
+```bash
+man [opciones] [[sección]temas]
+```
+
+### Manual - Introducción general
+
+* Ver pequeño manual sobre conceptos básicos de los comandos
+
+```bash
+man intro 
+```
+
+### Manual - Información sobre el comando man
+
+* Ver pequeño manual sobre conceptos básicos de los comandos
+
+```bash
+man man
+```
+
+### Manual - Opción
+
+* Muestra entradas del manual donde aparecen las palabras claves del comandoq
+
+```bash
+man -k 
+```
+
+#### Manual - Conceptos Básicos sobre Sockets
+
+* Muestra conceptos básicos sobre **Sockets**
+
+```bash
+man -k socket
+```
+
+#### Ejemplo
+
+```bash
+man -k cal
+_Exit (2)            - terminate the calling process
+_exit (2)            - terminate the calling process
+_syscall (2)         - invoking a system call without library support (OBSOLETE)
+aclocal (1)          - manual page for aclocal 1.16.1
+aclocal-1.16 (1)     - manual page for aclocal 1.16.1
+afs_syscall (2)      - unimplemented system calls
+### La salida del comando continua ###
+```
 
 ### Directorio de trabajo (Working Directory / wd)
 
@@ -81,13 +148,48 @@ echo $PATH
 printenv
 ```
 
-### Información usuario
+### Información usuario - Pública
 
 * Unix/Linux mantiene la información básica de los usuarios autorizados en los ficheros públicos
 
 ```bash
 /etc/passwd
+```
+
+#### Ejemplo de Información Pública
+
+```bash
+/etc/passwd
+bin:x:2:2:bin:/bin:/usr/sbin/nologin                                            
+sys:x:3:3:sys:/dev:/usr/sbin/nologin                                            
+sync:x:4:65534:sync:/bin:/bin/sync                                              
+games:x:5:60:games:/usr/games:/usr/sbin/nologin                                 
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin   
+```
+
+* Sintaxis
+
+```bash
+<usuario>:<password>:<uid>:<gid>:<nombre>:<home>:<shell>
+```
+
+### Información usuario - Con Contraseña Cifrada
+
+* Unix/Linux mantiene la información Contraseña cifrada de los usuarios autorizados
+
+```bash
 /etc/shadow
+```
+
+#### Ejemplo de Información Pública
+
+```bash
+/etc/shadow
+bin:*:17507:0:99999:7:::                                                        
+sys:*:17507:0:99999:7:::                                                        
+sync:*:17507:0:99999:7:::                                                       
+games:*:17507:0:99999:7:::                                                      
+man:*:17507:0:99999:7:::   
 ```
 
 * Sintaxis
@@ -106,4 +208,55 @@ sync:*:17507:0:99999:7:::
 games:*:17507:0:99999:7:::                                                      
 man:*:17507:0:99999:7:::                                                        
 lp:*:17507:0:99999:7:::
+```
+
+### Árbol de Directorios
+
+* Directorio raiz 'root' donde sistema mantiene todos los componentes que permite el funcionamiento del sistema operativo
+
+```bash
+/ 
+```
+
+* Administración del sistema
+  * Directorio donde se almacena los archivos de configuración del sistema operativo , programas , componentes y aplicaciones
+  * Solo debe tener archivos de configuración
+  * No debe contener archivos binario
+
+```bash
+/etc 
+```
+
+* Directorio temporal que almacena los archivos del sistema operativo y demas  aplicaciones
+
+```bash
+/tmp
+```
+
+* Directorio donde se almacenan los comandos básicos del sistema
+  * Contiene los archivos binarios que permite el correcto funcionamiento del sistema a cualquier nivel de ejecución
+
+ ```bash
+/bin
+# Alternativa
+/usr/bin
+```
+
+* Contiene todo los dispositivos conectados al sistema sean discos duros , tarjeta de red , particiones , CD-ROM , USB de memoria y que pueda entenderlo como un volumen lógico de almacenamiento
+  * Cualquier volumen (partición o dispositivo externo) que este conectado al sistema tendrá asociado el directorio ``/dev``
+
+```bash
+/dev
+```
+
+* Contiene los puntos de montaje pero no la información real de los volúmenes montado
+
+```bash
+/media
+```
+
+* Directorio donde se almacena los comandos propios de la instalación local
+
+```bash
+/usr/local
 ```

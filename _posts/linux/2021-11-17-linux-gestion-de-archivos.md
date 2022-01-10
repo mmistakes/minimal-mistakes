@@ -119,6 +119,14 @@ chmod # Cambiar el modo de acceso
 chmod go-rwx file1 # Hace visible a otros usuarios
 ```
 
+### stat
+
+* Para mostrar toda la información del nodo-i de un archivo
+
+```bash
+stat archivo.ext
+```
+
 ### chown
 
 * Cambia el propietario del archivo

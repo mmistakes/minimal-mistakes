@@ -19,6 +19,14 @@ page_css:
 
 ## Comandos de sistema
 
+### Ver Nombre de usuario dentro del sistema
+
+```bash
+whoami # Identificador de usuario
+who am i # Identificador de usuario más detallados
+```
+
+
 ### Ver caracteristicas del sistema GNU/Linux que se esta utilizando
 
 ```bash
@@ -80,10 +88,16 @@ uname -r
 5.11.0-43-generic
 ```
 
-### Muestra el uso del espacio en disco
+### Muestra el uso del espacio disponible en disco duro
 
 ```bash
 df
+```
+
+### Muestra el uso espacio ocupado por el subarbol del sistema de archivos
+
+```bash
+du
 ```
 
 ### Muestra memoria y espacio 'swap'
@@ -102,5 +116,11 @@ whereis <app/sw/comando>
 
 ```bash
 which <app/sw/comando>
+```
+
+### Nombre del anfitrión 'host'
+
+```bash
+hostname # Nombre del anfitrión en el que estoy trabajando 
 ```
 
