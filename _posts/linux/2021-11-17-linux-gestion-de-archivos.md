@@ -65,8 +65,8 @@ a-97
 
 ```bash
 cd ~ # Volver al directorio 'home' del usuario
-cd - # Muestra la ruta absoluta
-cd -- # Te envia al directorio 'home'
+cd - # Vuelve a la anterior ruta en la que nos encontrábamos antes de cambiarla
+cd -- # Te envía al directorio 'home'
 cd ../../ # Bajan 2 niveles desde el directorio padre del sistema de archivos
 ```
 

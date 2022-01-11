@@ -19,6 +19,43 @@ page_css:
 
 ## Comandos de sistema
 
+### Gestión Básica de paquetes
+
+> Distribución Ubuntu 20.04
+
+* Actualizar el sistema
+
+```bash
+sudo apt update -y
+```
+
+* Actualizar la listar todos los posibles paquetes que se instalaran en el sistema
+
+```bash
+sudo apt list
+```
+
+* Después de ver la lista de los posibles paquetes que podemos instalar , los instalamos mediante el comando
+  * **Atención** : Antes de instalar los paquetes actualizados **SE TIENE QUE HACER UNA INVESTIGACIÓN SOBRE QUE PAQUETES NOS INTERESA INSTALAR** dependiendo de las características de nuestro sistema y necesidad para **EVITAR PROBLEMAS DE INCOMPATIBILIDADES CON EL SISTEMA**
+
+```bash
+sudo apt dist-upgrade -y
+```
+
+* Eliminar los paquetes no necesario de las actualizaciones
+  * **Atención** : Antes de instalar los paquetes actualizados **SE TIENE QUE HACER UNA INVESTIGACIÓN SOBRE QUE PAQUETES NOS INTERESA ELIMINAR** dependiendo de las características de nuestro sistema y necesidad para **EVITAR PROBLEMAS DE INCOMPATIBILIDADES CON EL SISTEMA**
+
+```bash
+sudo apt autoremove
+apt-get remove --auto-remove <package-name>
+```
+
+* Indicar que paquete se desea eliminar
+
+```bash
+apt-get remove --auto-remove <package-name>
+```
+
 ### Ver Nombre de usuario dentro del sistema
 
 ```bash
