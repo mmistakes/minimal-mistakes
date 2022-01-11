@@ -278,7 +278,7 @@ plt.text(x[29], y2[-1:] + 0.25, '%d' %y2[-1:], ha='center', va='bottom', size=12
     # 영화(4.6천만) vs 먹방(3.2천만)
 ```
 
-![png](output_27_0.png)
+![output_27_0](https://user-images.githubusercontent.com/67591105/148876994-67baeae8-ce5e-481f-8770-217161884766.png)
 
 ```python
 # 워드클라우드 IMPORT
@@ -358,7 +358,7 @@ plt.axis('off')
 plt.show()
 ```
 
-![png](output_38_0.png)
+![output_38_0](https://user-images.githubusercontent.com/67591105/148876988-ac3545d5-d9da-4357-8daf-8ebfb2f40475.png)
 
 ```python
 dt[1]
@@ -422,7 +422,7 @@ word2= dict(count.most_common(10)) # 빈도 수 상위 10개로 word2 생성
 showGraph(word2)
 ```
 
-![png](output_45_0.png)
+![output_45_0](https://user-images.githubusercontent.com/67591105/148876984-a5418b74-b6bb-447e-9385-853a646ced15.png)
 
 ```python
 
