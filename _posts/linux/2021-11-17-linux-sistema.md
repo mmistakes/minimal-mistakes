@@ -47,7 +47,6 @@ sudo apt dist-upgrade -y
 
 ```bash
 sudo apt autoremove
-apt-get remove --auto-remove <package-name>
 ```
 
 * Indicar que paquete se desea eliminar
@@ -56,13 +55,20 @@ apt-get remove --auto-remove <package-name>
 apt-get remove --auto-remove <package-name>
 ```
 
+* Indicar específicamente que paquete instalar
+
+```bash
+apt-get install <package name>=<version>
+# Ejemplo
+sudo apt-get install apache2=2.3.35-4ubuntu1
+```
+
 ### Ver Nombre de usuario dentro del sistema
 
 ```bash
 whoami # Identificador de usuario
 who am i # Identificador de usuario más detallados
 ```
-
 
 ### Ver caracteristicas del sistema GNU/Linux que se esta utilizando
 
@@ -99,8 +105,6 @@ cat /proc/cpuinfo
 cat /proc/memoinfo
 ```
 
-
-
 ### Versión de la distribución de GNU/Linux que se esta utilizando
 
 ```bash
@@ -111,6 +115,20 @@ Distributor ID: Ubuntu
 Description:    Ubuntu 20.04.3 LTS
 Release:        20.04
 Codename:       focal
+```
+
+### Historial del sistema
+
+* Ver el historial de comando ejecutados en el sistema
+
+```bash
+history
+```
+
+* Eliminar el historial de comando ejecutados en el sistema
+
+```bash
+history -c
 ```
 
 ### Información del Kernel

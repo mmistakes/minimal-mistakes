@@ -92,22 +92,28 @@ sftp user@remotehost_domainname
 
 ![Alt diagrama-ssh](/assets/images/linux/ssh/ssh-eje-1.jpg)
 
-##### Ejemplo - Conectar al host como usuario
+##### Conectar al host como usuario
 
 ```bash
 ssh user@host 
 ```
 
-##### Ejemplo - Conectar al host mediante un puerto especifico
+##### Conectar al host mediante un puerto especifico
 
 ```bash
 ssh -p port user@host
 ```
 
-##### Ejemplo - Añadir su 'clave-key' al host para que el usuario habilite una entrada (keyed-sin llave) o sin contraseña (passwordless-login)
+##### Añadir su 'clave-key' al host para que el usuario habilite una entrada (keyed-sin llave) o sin contraseña (passwordless-login)
 
 ```bash
 ssh-copy-id user@host
+```
+
+##### Crear claves RSA asociadas a su dirección de correo:
+
+```bash
+ssh-keygen -t rsa -C <your_email@hostname.domain>
 ```
 
 #### Técnicas de Criptografía
@@ -173,15 +179,9 @@ ssh-copy-id user@host
 
 * Generan un valor de **longitud fija** para cada entrada que no muestra que pueda explotarse lo que lo hace imposibles de revertir
 
-#### hostname
+#### rsync
 
-* Se usa para ver o establecer el nombre del sistema 'host' anfitrion``
-
-```bash
-hostname # 
-```
-
-* Ofrece transmisión eficiente de datos incrementales, también opera con datos comprimidos y cifrados
+* Ofrece transmisión eficiente de datos incrementados, también opera con datos comprimidos y cifrados
 
 ```bash
 rsync # 

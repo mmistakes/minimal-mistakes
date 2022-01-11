@@ -19,6 +19,46 @@ page_css:
 
 ## Usuarios
 
+### Crear usuario - adduser
+
+* Crear un usuario mediante el script de Perl
+  * Sistema sencillo y rápido
+  * Usar para usuarios estándar que no requiere de una profunda configuración
+
+```bash
+adduser <nombre-usuario>
+```
+
+### Crear usuario - useradd
+
+* Crear un usuario mediante los binarios del sistema
+  * Sistema básica , completa y compleja
+  * Usar para usuarios específicos y más completos dentro del sistema
+
+```bash
+useradd
+```
+
+Opciones : ``-m``
+
+* Le asignará la **shell** por defecto que es **/bin/sh**
+
+* Le asignará y creará el directorio de inicio **/home/nombre-usuario** copian los **directorios** y **archivos** contenidos en el **skeleton directory**
+
+* Creara el grupo **nombre-usuario** y lo asigna al mismo
+
+* No crea contraseña para **nombre-usuario**
+
+```bash
+useradd -m <nombre-usuario>
+```
+
+* Asignar un password al nuevo usuario
+
+```bash
+passwd <nombre-usuario>
+```
+
 ### id
 
 * Comando para mostrar UID/GID/GROUP y demás permisos del usuario actual dentro del sistema **UNIX/Linux** en el que se este trabajando
