@@ -47,3 +47,9 @@ category.xxx는 DTO의 멤버변수 이름과 맞아야 잘 가져와진다.
  
   결과  
   ![image](https://user-images.githubusercontent.com/86642180/148891528-9f7a23b5-780c-42ab-8c5d-06d093ceb415.png)
+
+  <br>
+  
+  참고자료  
+  https://dkyou.tistory.com/98  
+  https://sujinhope.github.io/2021/03/27/Thymeleaf-3.-Spring-Boot-+-Thymeleaf-CRUD-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0.html#title1
