@@ -3,7 +3,16 @@ layout: post
 title: "small begin 폼 완성"
 ---
 
+1. form 태그 완성  
+(1) js로 미니멈, 맥시멈 일자 설정  
+(2) js로 기간 달/주/매일 관련해서 view에서 다르게 보이게 하는거 설정  
+
+2. navbar HTML가져올 때 load 함수 써서 모든 페이지에 적용하기  
+
+<br>
+
 14:40pm category(DTO)에서 카테고리명 만 select 태그 안에 보이게 하는거까지 완료  
+
 <br>
 
 ## <option>에 th:each로 반복 하는 방법
