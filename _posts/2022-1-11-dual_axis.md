@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "파이썬 시각화 2. 파레토차트"
-categories: Selenium
+categories: boston_data
 tag:
   [
     python,
