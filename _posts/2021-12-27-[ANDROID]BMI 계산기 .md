@@ -88,3 +88,22 @@ startActivity(intent)
 val bmi = intent.getDoubleExtra("result", 0.0)
 // 데이터 수신
 ```
+
+## 오류
+
+- 26, 27라인에서 NumberFormatException이 발생
+- 원인 : textview를 사용(textview의 text를 사용해야 함)
+
+```kotlin
+val height : Double = binding.height.toString().toDouble()
+val kg : Double = binding.kg.toString().toDouble()
+```
+
+![](../images/2021-12-27-[ANDROID]BMI%20계산기/error.png)
+
+- 해결 : textview의 text를 사용한 후, 형변환하여 사용
+
+```kotlin
+val height : Double = binding.height.text.toString().toDouble()
+val kg : Double = binding.kg.text.toString().toDouble()
+```
