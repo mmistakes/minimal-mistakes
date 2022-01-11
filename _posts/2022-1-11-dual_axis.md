@@ -212,6 +212,6 @@ barChart.set_ylabel('Number of runner', fontdict={'size':16})
 plt.title('Number of runner by Age', fontsize = 20);
 ```
 
-![png](output_9_0.png)
+https://github.com/wltn39/wltn39.github.io/blob/blog/_posts/output_9_0.png
 
 -> 파레토 차트로 상위 그룹을 직관적으로 확인할 수 있다
