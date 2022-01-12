@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Linux - Conceptos
+title: Linux - Conceptos Básicos
 date: 2022-01-07
 classes: wide
 toc: true
@@ -19,7 +19,7 @@ page_css:
 
 ## Conceptos Básicos de UNIX/Linux
 
-### Tipo de Fichero
+### Tipos de Fichero
 
 Se establece cuando se crea el **fichero/archivo** y no se puede cambiar
 
@@ -35,92 +35,11 @@ Se establece cuando se crea el **fichero/archivo** y no se puede cambiar
 
 * Dispositivo de almacenamiento por bloques **(b)**
 
-### Sintaxis de comandos de Shell de Unix/Linux
-
-```bash
-$ comando [argumentos...] [opciones...] <recursos>
-```
-
-```bash
-$ # Prompt - Caracter en la línea de comandos para indicar que está esperando órdenes.
-```
-
-```bash
-comando # Programa/Software/App a ejecutar
-```
-
-```bash
-[argumentos...] # Modificadores o datos de entrada 
-                # Se usa para especificar algo sobre lo que el comando debe actuar
-```
-
-```bash
-[opciones...] # Modificadores o datos de entrada 
-              # Se usa para modificar el comportamiento de un comando.
-```
-
-```bash
-<recursos> # Elementos o información complementaria para la ejecución del comando
-```
-
-### Manual
-
-* Muestra información del manual de referencia sobre el comando solicitado
-
-```bash
-man [opciones] [[sección]temas]
-```
-
-### Manual - Introducción general
-
-* Ver pequeño manual sobre conceptos básicos de los comandos
-
-```bash
-man intro 
-```
-
-### Manual - Información sobre el comando man
-
-* Ver pequeño manual sobre conceptos básicos de los comandos
-
-```bash
-man man
-```
-
-### Manual - Opción
-
-* Muestra entradas del manual donde aparecen las palabras claves del comandoq
-
-```bash
-man -k 
-```
-
-#### Manual - Conceptos Básicos sobre Sockets
-
-* Muestra conceptos básicos sobre **Sockets**
-
-```bash
-man -k socket
-```
-
-#### Ejemplo
-
-```bash
-man -k cal
-_Exit (2)            - terminate the calling process
-_exit (2)            - terminate the calling process
-_syscall (2)         - invoking a system call without library support (OBSOLETE)
-aclocal (1)          - manual page for aclocal 1.16.1
-aclocal-1.16 (1)     - manual page for aclocal 1.16.1
-afs_syscall (2)      - unimplemented system calls
-### La salida del comando continua ###
-```
-
 ### Directorio de trabajo (Working Directory / wd)
 
 > Directorio sobre el cual se ejecutan los comandos indicado por simbolo $ de la terminal de UNIX/LINUX
 
-#### Ejemplo (Working Directory / wd)
+#### Ejemplo ( Working Directory / wd )
 
 ```bash
 $ ls # Lista todos los ficheros del (Working Directory / Directorio de Trabajo)
@@ -173,7 +92,7 @@ man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
 <usuario>:<password>:<uid>:<gid>:<nombre>:<home>:<shell>
 ```
 
-### Información usuario - Con Contraseña Cifrada
+### Información Usuario - Con Contraseña Cifrada
 
 * Unix/Linux mantiene la información Contraseña cifrada de los usuarios autorizados
 
@@ -212,7 +131,7 @@ lp:*:17507:0:99999:7:::
 
 ### Árbol de Directorios
 
-* Directorio raiz 'root' donde sistema mantiene todos los componentes que permite el funcionamiento del sistema operativo
+* Directorio raíz 'root' donde sistema mantiene todos los componentes que permite el funcionamiento del sistema operativo
 
 ```bash
 / 
