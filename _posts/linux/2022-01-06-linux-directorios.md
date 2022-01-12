@@ -19,6 +19,8 @@ page_css:
 
 ### Crear directorio
 
+* Creamos un directorio
+
 ```bash
 mkdir <nombre-directorio>
 ```
@@ -31,6 +33,48 @@ mkdir -p <nombre-directorio>
 
 ### Crear directorio con permisos
 
+* Creamos un directorio y le agregamos los todos los permisos a (usuario,grupo,otros)
+
 ```bash
 mkir -m 777 /directorio/subdirectorio
+```
+
+### Listar Directorios
+
+* Listar ficheros contenidos en el directorio actual o nombrados explicítamente como argumentos
+
+* Sintaxis básica
+
+```bash
+ls [opciones] [ficheros]
+```
+
+#### Opciones
+
+* Listado en formato largo , incluye permisos , propietario , tamaño , última modificación
+
+```bash
+ls -l 
+```
+
+* Listar por orden de fecha/hora de la última modificación , el primero al más creciente
+
+```bash
+ls -t
+```
+
+* Listar en orden inverso
+
+```bash
+ls -r 
+```
+
+* Lista que incluye el número del nodo-i
+
+```bash
+ls -a 
+```
+
+```bash
+ls -i 
 ```

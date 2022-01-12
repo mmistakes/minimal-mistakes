@@ -19,6 +19,57 @@ page_css:
 
 ## Comandos de sistema
 
+### Gestión Básica de paquetes
+
+> Distribución Ubuntu 20.04
+
+* Actualizar el sistema
+
+```bash
+sudo apt update -y
+```
+
+* Actualizar la listar todos los posibles paquetes que se instalaran en el sistema
+
+```bash
+sudo apt list
+```
+
+* Después de ver la lista de los posibles paquetes que podemos instalar , los instalamos mediante el comando
+  * **Atención** : Antes de instalar los paquetes actualizados **SE TIENE QUE HACER UNA INVESTIGACIÓN SOBRE QUE PAQUETES NOS INTERESA INSTALAR** dependiendo de las características de nuestro sistema y necesidad para **EVITAR PROBLEMAS DE INCOMPATIBILIDADES CON EL SISTEMA**
+
+```bash
+sudo apt dist-upgrade -y
+```
+
+* Eliminar los paquetes no necesario de las actualizaciones
+  * **Atención** : Antes de instalar los paquetes actualizados **SE TIENE QUE HACER UNA INVESTIGACIÓN SOBRE QUE PAQUETES NOS INTERESA ELIMINAR** dependiendo de las características de nuestro sistema y necesidad para **EVITAR PROBLEMAS DE INCOMPATIBILIDADES CON EL SISTEMA**
+
+```bash
+sudo apt autoremove
+```
+
+* Indicar que paquete se desea eliminar
+
+```bash
+apt-get remove --auto-remove <package-name>
+```
+
+* Indicar específicamente que paquete instalar
+
+```bash
+apt-get install <package name>=<version>
+# Ejemplo
+sudo apt-get install apache2=2.3.35-4ubuntu1
+```
+
+### Ver Nombre de usuario dentro del sistema
+
+```bash
+whoami # Identificador de usuario
+who am i # Identificador de usuario más detallados
+```
+
 ### Ver caracteristicas del sistema GNU/Linux que se esta utilizando
 
 ```bash
@@ -54,8 +105,6 @@ cat /proc/cpuinfo
 cat /proc/memoinfo
 ```
 
-
-
 ### Versión de la distribución de GNU/Linux que se esta utilizando
 
 ```bash
@@ -66,6 +115,20 @@ Distributor ID: Ubuntu
 Description:    Ubuntu 20.04.3 LTS
 Release:        20.04
 Codename:       focal
+```
+
+### Historial del sistema
+
+* Ver el historial de comando ejecutados en el sistema
+
+```bash
+history
+```
+
+* Eliminar el historial de comando ejecutados en el sistema
+
+```bash
+history -c
 ```
 
 ### Información del Kernel
@@ -80,10 +143,16 @@ uname -r
 5.11.0-43-generic
 ```
 
-### Muestra el uso del espacio en disco
+### Muestra el uso del espacio disponible en disco duro
 
 ```bash
 df
+```
+
+### Muestra el uso espacio ocupado por el subarbol del sistema de archivos
+
+```bash
+du
 ```
 
 ### Muestra memoria y espacio 'swap'
@@ -102,5 +171,11 @@ whereis <app/sw/comando>
 
 ```bash
 which <app/sw/comando>
+```
+
+### Nombre del anfitrión 'host'
+
+```bash
+hostname # Nombre del anfitrión en el que estoy trabajando 
 ```
 

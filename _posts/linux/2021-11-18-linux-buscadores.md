@@ -65,6 +65,23 @@ find . -type f -name "*.extension" # Busca en el directorio actual todos los arc
 find . -type f -perm 0777 -print # Busca todos los archivos con permiso 777 (permisos de usuario , grupo , otros)
 
 find / -type f ! -perm 777 # Busca todos los archivos con permiso distintos a 777
+
+find ~ -atime -4 # Busca todos los archivos con acceso '~' en los últimos 4 días
+
+find ~ -mtime -4 # Busca todos los archivos modificados '~' en los últimos 4 días
+
+find ~/docs -name '*.tex' | xargs grep -n 'archive' # Identificar un subconjunto de archivos terminados '*.tex' dentro algún directorio (~/docs) y todos subdirectorios y busca dentro este subconjunto de archivos para una cadena indicada entre comillas
+
+find ./progs ./tex -ctime -75 -type f # Todos los archivos bajo ./progs y ./tex que han sido creados, modificados o cuyo estado ha cambiado en los últimos 75 días
+
+find ./progs ./tex -ctime -75 -type f \ 
+-o -path ./progs/corejsf -prune \ # Lo mismo, pero excluyendo dos subdirectorios
+-o -path ./progs/jeda/build -prune
+
+find ./progs ./tex -ctime -75 -type f \
+-o -path ./progs/corejsf -prune \
+-o -path ./progs/jeda/build -prune \ # Lo mismo, pero además agrupando los archivos como backup.tar
+| xargs tar cvf backup.tar
 ```
 
 ### grep
