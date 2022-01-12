@@ -361,36 +361,6 @@ plt.show()
 ![output_38_0](https://user-images.githubusercontent.com/67591105/148876988-ac3545d5-d9da-4357-8daf-8ebfb2f40475.png)
 
 ```python
-dt[1]
-```
-
-    '[만칼로리먹방] 다이어트 시작하기 전에 먹고 싶은 거 다~~먹기😍불닭+타코야끼,뿌링클,콘소메이징,스초생,글레이즈드도넛,육개장,청년피자 에그콘+매드쉬림프피자,엽떡,딸기초코케이크 게시자: 살빼조DietJo 2일 전 36분 조회수 803,932회'
-
-```python
-content = dt[0].split(' 게시자: ')
-title = content[0]
-title
-```
-
-    '[ENG]사장님 "어머 유튜버 OO보다 많이 먹었어!!" 가뿐하게 부산가서 신기록 세우고 왔습니다..^^ 떡볶이꼬치 최대 몇개까지 먹어봤니?'
-
-```python
-t_remain = content[1].split(' ')
-t_remain
-```
-
-    ['웅이woongei', '22시간', '전', '13분', '24초', '조회수', '344,543회']
-
-```python
-view_cnt = t_remain[-1] # 마지막인덱스
-view_cnt = view_cnt.replace('회','')   # '회'글자 제거
-view_cnt = view_cnt.replace(',','')    # 중간 ',' 제거
-print(view_cnt, type(int(view_cnt)))  # 리스트에 추가할 땐 int로 추가할 것임
-```
-
-    344543 <class 'int'>
-
-```python
 # bar 차트 그리기
 
 def showGraph(wordInfo):
