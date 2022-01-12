@@ -53,3 +53,7 @@ category.xxx는 DTO의 멤버변수 이름과 맞아야 잘 가져와진다.
   참고자료  
   https://dkyou.tistory.com/98  
   https://sujinhope.github.io/2021/03/27/Thymeleaf-3.-Spring-Boot-+-Thymeleaf-CRUD-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0.html#title1
+
+  <br>
+  
+  javascript 까먹은게 너무 많아서 기초부터 다시 보는중... 하...
