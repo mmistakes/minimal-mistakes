@@ -110,7 +110,11 @@ val repeatedJLActorsList: List[Actor] = infiniteJlActors.take(12).toList
 
 The `repeat` method does exactly what its name suggests, it repeats the stream infinitely. Since we cannot put an infinite stream into a list, we take the first _n_ elements of the stream and convert them into a list as we've done before.
 
-However, the most of the time, the `Pure` effect is not sufficient to pull new elements from a stream. In detail, the operation can fail, or it must interact with some external resource or with some code performing _side effects_. In this case, we need to use some effect library, such as Cats-effect, and it's effect type called `IO[A]`. 
+However, the most of the time, the `Pure` effect is not sufficient to pull new elements from a stream. In detail, the operation can fail, or it must interact with some external resource or with some code performing _side effects_. In this case, we need to use some effect library, such as Cats-effect, and it's effect type called `IO[A]`.
+
+This is the "functional" and "effectful" part of the library. As we will see in a moment, all the streams' definitions are referentially transparent and remains pure, since no side effects are performed.
+
+
 
 
 
