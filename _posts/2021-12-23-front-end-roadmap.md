@@ -9,7 +9,7 @@ tags:
 last_modified_at: 2022-01-09
 ---
 
-- React, Vue, Angular 등 SPA 프레임워크 사용에 능숙한
+- **React, Vue**, Angular 등 SPA 프레임워크 사용에 능숙한
 - HTML, CSS, JavaScript에 대해 이해가 깊은
 - UI/UX에 대해 높은 가치를 두는 
 - Git 등의 분산 버전 관리 시스템 이용에 능숙한
@@ -46,7 +46,7 @@ css 프레임워크
 - 부트스트랩, Tailwind CSS, Material UI - 짜놓은 UI 컴포넌트를 가져다가 쓰는 개념
 - PostCSS(CSS 파일 정의?), styled-Components(자바스크립트의 CSS를 정의? 동적으로 스타일 변경 가능한 장점, 성능/유지보수 면에서 지저분한 단점) - 스타일을 커스터마이즈 가능 
 
-JavaScript
+JavaScript - runtime 롼경
 ES6 + syntax(자바스크립트 문법)와 브라우저 API(DOM manipulation, events, fetch API) 구분하며 공부하기** - 지피지기에서 헷갈렸던 부분들 
 심화)
 타입스크립트** - OOP - 교집합 그림으로 찾아보기/이해하기 
@@ -58,7 +58,7 @@ single page application(SPA) 를 위한, 즉 브라우저에서 동작하기 위
 Static site generators(SSG) - Gatsby (React), GridSome(Vue)
 서버에서 사이트를 미리 만들어 두는 
 
-Server Side Rendering (SSR) - Next.js (React)**, Nuxt.js(Vue), Universal(Angular)
+Server Side Rendering (SSR) - **Next.js (React)**, Nuxt.js(Vue), Universal(Angular)
 클라이언트의 요청이 있을 때! 서버에서 실시간으로 사이트를 미리 만들어 두는 
 
 
@@ -79,10 +79,27 @@ CI/CD (취업 후에..자세히보고 지금은 간단하게만 알아보기 SI/
 
 ## 추가로 알게된 내용
 
-desktop - electron 웹 어플리케이션을 데스크탑에 설치가능한 형태로 만들고 싶다면 
-mobile - React Native, PWA, Cordova.. 
+desktop - electron (자바스크립트 html, css로 데스크탑 앱을 만들 수 있게 해줌 )웹 어플리케이션을 데스크탑에 설치가능한 형태로 만들고 싶다면. 얘로 vs code, 슬랙 만듦
 
-- web 3.0 ??
+mobile - React Native(자바스크립트만으로 안드로이드와 ios앱만들 수 있음  React Native skia - 그래픽 라이브러리), PWA, Cordova.. 
+
+- web 3.0과 블록체인
+  
+  블록체인은 자료구조
+  블록 + 체인 블록들이 모여있는 체인 
+
+  블록체인은 쿨한 데이터베이스 
+  1. append만 가능한(편집은 불가능한) 데이터베이스
+  2. 분산된 데이터베이스 - 블록체인은 탈중앙화가 가능함 - 특정 개인이 DB를 관리할 수 없다는 얘기 - 모두가 DB의 복제본을 가지고 있음 
+
+  블록이 정보를 DB에 추가하는 방법임 - 데이터를 적어서 추가하는 게 아닌, 블록 자체를 추가함 
+  이 블록에 있는 중요한 정보들 - 블록의 해시, 이전 블록의 해시, 데이터
+
+  블록체인은 그 무엇이든(결혼증명서, 대학교학위..)의 DB라서 그 무엇이 데이터임. 비트코인의 경우 데이터는 트랜잭션(거래내역)임
+
+  해시는 수학함수. input이 있으면 output이 있는데, 포인트는 일방향 함수이고 결정론적임. 결정론적이란 말은 어떤 인풋의 아웃풋은 항상 같은 것으로 정해져있다는 뜻(조금만 변경해도 아웃풋이 아예 다름 ), 일방향 함수란 말은 어떤 인풋의 아웃풋을 가지고, 해당 인풋을 얻을 순 없다는 뜻 
+
+  내 데이터와 이전 블록의 해시를 해시하면 나만의 해시가 됨 - 모두 다 이전 해시랑 결합하고, 모두 다 이와 같은 방법으로 체인이 결성됨, 덕분에 누구도 변경할 수 없게됨 
 
 - HTML + CSS 정적인 반응형 웹사이트
 - JavaScript 동적인 웹사이트 - node.js를 이용해서 백엔드 구축?
@@ -90,6 +107,37 @@ mobile - React Native, PWA, Cordova..
 
 - 리액트 테크 트리
   리액트 - nodeJS- express - mongoDB (노마드)
+
+- 브라우저 101? 
+  
+- 스프링 공부 
+- Svlete 
+리액트와 뷰처럼 UI 인터페이스를 만드는 툴 
+
+- flutter 
+  리액트 JS보다 경험이 좋았다던데,,
+  그리고 리액트와 리액트 JS의 차이점
+
+- HTML + CSS 정적인 반응형 웹사이트
+  - 언제 접속을 해도 같은 리소스를 주는 웹사이트
+    이미 파일들을 클라이언트 브라우저에 전달해서, 서버에서 접속 시 매번 가공해서 전송하는 것이 아닌, HTML + CSS + Javascript 코드들이 그대로 전달되는 것
+
+  - IDs & Classes (드림 엘리 로드맵보고 다시 고치기)
+    HTML Tags
+    Semantic & non-semantic tags
+    Box Model
+    Inline, Block, inline-block
+    CSS Position
+    Flexbox
+    Selectors
+    Pseudo Selectors
+    Transitions
+    Animations
+    Media Queries
+
+- JavaScript 동적인 웹사이트 - node.js를 이용해서 백엔드 구축?
+  - 서버에서 접속시 매번 가공해서 제공하는 웹사이트
+    데이터베이스에서 값을 읽어 접속할 때마다 최신 정보를 주는 것
 
 ---
 UI/UX에 대해 높은 가치를 두어야 한다
@@ -129,7 +177,7 @@ UI/UX에 대해 높은 가치를 두어야 한다
 
 <br>
 
-크로스 플랫폼의 또 다른 예시인 구글의 플러터는 <br>
+크로스 플랫폼의 또 다른 예시인 구글의 플러터 flutter는 <br>
 dart 프로그래밍언어를 배워야 하지만 안드로이드, 아이폰, 웹, 리눅스나 윈도우에서 동작하는 데스크탑 어플리케이션을 만들 수 있다. 
 
 <br>
