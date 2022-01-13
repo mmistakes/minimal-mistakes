@@ -25,7 +25,7 @@ page_css:
     * Salida estándar **(Pantalla de la terminal)**
     * Salida estándar de errores **(Pantalla de la terminal)**
 
-        ![Argumento](/assets/images/linux/argumentos/argumentos_comando_shell.png)
+  ![Argumento](/assets/images/linux/argumentos/argumentos_comando_shell.png)
 
   * **Cadena de caracteres** que indican a la **shell** de **UNIX/Linux** la ejecución de una **acción específica**
 
@@ -51,7 +51,7 @@ $ comando  [opciones...]  [argumentos...]   <recursos>
 
 * **[Opciones]**
 
-  * Modificadores de la acción básica realizada por el comando
+  * Modificadores de la acción o compartimiento básico realizado por el comando
     * Vienen precedidas de :
       * Un guión: ``-``
       * Un carácter: ``-a``
@@ -63,9 +63,16 @@ $ comando  [opciones...]  [argumentos...]   <recursos>
 
 * **[Argumentos]**
 
-  * Suele indicar fuente de información de entrada ( o el destino de los resultados de salida )
+  * Se utiliza para especificarle al comando sobre donde y que actuar
+    * Suele indicar la fuente de información de entrada o de destino de los resultados de salida del comando
 
-  * Complementos que mejoran la acción de los comandos los cuales pueden ser **ficheros , directorios , usuarios , nombres de dispositivos o hosts , datos de conexiones**
+  * Complementos que mejoran la acción de los comandos los cuales pueden ser :
+    * **ficheros**
+    * **Directorios**
+    * **Usuarios**
+    * **Nombres de dispositivos**
+    * **Hosts**
+    * **Datos de conexiones**
 
   * Ejemplos de **[Argumentos]** :
   

@@ -19,6 +19,25 @@ page_css:
 
 ## Conceptos Básicos de UNIX/Linux
 
+### Shell (Concepto)
+
+* **Programa informático** : 
+  * Interpreta **ordenes/comandos** a través de una interfaz de usuario para proporcionar al usuario y a otros programas los **servicios** del S.O
+
+#### Shell (Historia)
+
+* 1º shell en crearse fue la ``shell`` de **Ken Thompson** para las **versiones 1 hasta la 6** de **Unix** llamada ``sh → shell``en 1971 y 1975 en los laboratorios de **Bell Labs**
+
+* **Stephen Bourne** creo otra shell para la **versión de 7** de **Unix** llamada ``Bourne shell → sh`` distribuida en 1979 y la cual añadía muchas más mejoras y conceptos nuevos
+
+* **Brian Fox** creo la **Bourne-Again shell** ``(bash)``como parte del **proyecto GNU** la cual proporcionaba un mayor subconjunto de funcionalidades que la anterior ``Bourne shell → sh`` y la cual fue instalada por defecto en muchos sistemas **Linux**
+
+### Shell Bash
+
+* Programa informático el cual es :
+  * **Interfaz de usuario** de **línea de comandos**
+  * **Lenguaje de scripting**
+
 ### Tipos de Fichero
 
 Se establece cuando se crea el **fichero/archivo** y no se puede cambiar
