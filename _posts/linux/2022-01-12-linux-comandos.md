@@ -25,9 +25,9 @@ page_css:
     * Salida estándar **(Pantalla de la terminal)**
     * Salida estándar de errores **(Pantalla de la terminal)**
 
-  ![Argumento](/assets/images/linux/argumentos/argumentos_comando_shell.png)
+![argumento](/assets/images/linux/argumentos/argumentos_comando_shell.jpg)
 
-  * **Cadena de caracteres** que indican a la **shell** de **UNIX/Linux** la ejecución de una **acción específica**
+* **Cadena de caracteres** que indican a la **shell** de **UNIX/Linux** la ejecución de una **acción específica**
 
   * La **acción** es la búsqueda de un **programa/software** o **shell script** en el sistema de archivos y su ejecución o interpretación
 
@@ -64,7 +64,7 @@ $ comando  [opciones...]  [argumentos...]   <recursos>
 * **[Argumentos]**
 
   * Se utiliza para especificarle al comando sobre donde y que actuar
-    * Suele indicar la fuente de información de entrada o de destino de los resultados de salida del comando
+    * Suele indicarle la fuente de información de entrada o de destino de los resultados de salida del comando
 
   * Complementos que mejoran la acción de los comandos los cuales pueden ser :
     * **ficheros**
