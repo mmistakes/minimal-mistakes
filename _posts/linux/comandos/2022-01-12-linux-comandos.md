@@ -152,55 +152,12 @@ comando # Programa/Software/App a ejecutar
 <recursos> # Elementos o información complementaria para la ejecución del comando
 ```
 
-### Comando Básico - Manual
+#### Composición de comandos
 
-* Muestra información del manual de referencia sobre el comando solicitado
+* Secuencia de comandos
+  ``comando1 ; comando2``
+  ``date ; who``
 
-```bash
-man [opciones] [[sección]temas]
-```
-
-### Manual - Introducción general
-
-* Ver pequeño manual sobre conceptos básicos de los comandos
-
-```bash
-man intro 
-```
-
-### Manual - Información sobre el comando man
-
-* Ver pequeño manual sobre conceptos básicos de los comandos
-
-```bash
-man man
-```
-
-### Manual - Opción
-
-* Muestra entradas del manual donde aparecen las palabras claves del comandoq
-
-```bash
-man -k 
-```
-
-#### Manual - Conceptos Básicos sobre Sockets
-
-* Muestra conceptos básicos sobre **Sockets**
-
-```bash
-man -k socket
-```
-
-#### Ejemplo
-
-```bash
-man -k cal
-_Exit (2)            - terminate the calling process
-_exit (2)            - terminate the calling process
-_syscall (2)         - invoking a system call without library support (OBSOLETE)
-aclocal (1)          - manual page for aclocal 1.16.1
-aclocal-1.16 (1)     - manual page for aclocal 1.16.1
-afs_syscall (2)      - unimplemented system calls
-### La salida del comando continua ###
-```
+* Encadenamiento de comandos con un solo flujo de información (pipeline)
+  ``comando1 | comando2``
+  ``ls -lha | less ``
