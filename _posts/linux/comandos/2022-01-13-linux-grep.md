@@ -1,0 +1,54 @@
+---
+layout: single
+title: Linux - Comando wc
+date: 2022-01-12
+classes: wide
+toc: true
+toc_label: "Tabla de contenido"
+toc_icon: "clipboard-list"
+header:
+  teaser: /assets/images/linux/tux.jpg
+categories:
+  - linux
+  - linux-comando
+  - linux-wc
+tags:
+  - linux-concepto-de-comandos
+page_css: 
+  - /assets/css/mi-css.css
+---
+
+## Comando - wc
+
+* Imprimir en número de líneas , palabras y bytes para cada archivo dividido en tres columnas
+
+### Opciones
+
+``-l``
+
+* Imprime el total de líneas que contiene un archivo
+
+```bash
+# Ejemplo 
+cal > calendario
+```
+
+```bash
+cat calendario
+# Salida
+    January 2022
+Su Mo Tu We Th Fr Sa
+                   1
+ 2  3  4  5  6  7  8
+ 9 10 11 12 13 14 15
+16 17 18 19 20 21 22
+23 24 25 26 27 28 29
+30 31
+```
+
+```bash
+# Ejemplo 
+wc -l calendario
+# Salida
+8
+```
