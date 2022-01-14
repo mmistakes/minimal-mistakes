@@ -1,7 +1,7 @@
 ---
 layout: single
 title: numpy array와 asarray의 차이점
-categories: numpy 라이브러리쿡북, error
+categories: numpy 라이브러리쿡북 error
 tag: deeplearning numpy error
 typora-root-url: ../
 ---

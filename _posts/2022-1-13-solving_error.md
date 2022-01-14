@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "에러해결: Expected object of scalar type Float but got" scalar type Double for argument
+title: 에러해결: Expected object of scalar type Float..
 categories: error
 tag: deeplearning, error
 typora-root-url: ../
