@@ -114,6 +114,37 @@ However, the most of the time, the `Pure` effect is not sufficient to pull new e
 
 This is the "functional" and "effectful" part of the library. As we will see in a moment, all the streams' definitions are referentially transparent and remains pure, since no side effects are performed.
 
+Starting from the stream we already defined, we can create a new effectful stream "lifting" the pure values inside a `IO` effect using the `covary[F]` method:
+
+```scala
+val liftedJlActors: Stream[IO, Actor] = jlActors.covary[IO]
+```
+
+TODO: Why is it called covary???
+Pure[Actor] => IO[Actor] ???
+
+In this case, the original values are simply enclosed inside an `IO`, very much like if we use the `IO.pure(value)` method. However, in most cases, we want to create a stream directly evaluating some statement that may produce side effects. So, for example, let's try to persist an actor through a stream:
+
+```scala
+val savingTomHolland: Stream[IO, Unit] = Stream.eval {
+  IO {
+    val tomHolland = Actor(13, "Tom", "Holland")
+    println(s"Saving actor $tomHolland")
+    Thread.sleep(1000)
+    println("Finished")
+  }
+}
+```
+
+The fs2 library gives us the method `eval` that takes a `IO` effect and returns a `Stream` that will evaluate the `IO` effect when pulled. Now, a question arises: how do we pull the values from an effectful stream? We cannot convert such a stream into a Scala collection using the `toList` function, and if we try, the compiler soundly yells at us:
+
+```shell
+[error] 95 |  savingTomHolland.toList
+[error]    |  ^^^^^^^^^^^^^^^^^^^^^^^
+[error]    |value toList is not a member of fs2.Stream[cats.effect.IO, Unit], but could be made available as an extension method.
+```
+
+TODO...
 
 
 
