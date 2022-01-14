@@ -3,9 +3,13 @@ añadiendole
 chgrp
 comprimirlos
 deshacerlos
+inicialización
 jcfp
 jxvf
+metacaracteres
 monitorizado
+posicionales
+Redirección
 renice
 subdirectorio
 subdirectorios

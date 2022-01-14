@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Linux - Comando wc
-date: 2022-01-12
+date: 2022-01-13
 classes: wide
 toc: true
 toc_label: "Tabla de contenido"
