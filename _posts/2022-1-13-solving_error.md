@@ -1,12 +1,10 @@
 ---
 layout: single
-title: 에러해결: Expected object of scalar type Float but got scalar type Double for argument
+title: "에러해결: Expected object of scalar type Float but got" scalar type Double for argument
 categories: error
 tag: deeplearning, error
 typora-root-url: ../
 ---
-
-
 
 딥러닝 모델에 사용하는 데이터, 혹은 사용후 데이터를 처리할 때 종종 보게되는 error이다. 앞전에 포스팅한 numpy -> tensor, tensor -> numpy와 같이 형변환을 수행하다보면 만나는 여럿 error중 하나이다. `RuntimeError: Expected object of scalar type Float but got scalar type Double for argument.. `
 
