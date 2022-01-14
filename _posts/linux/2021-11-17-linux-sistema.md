@@ -179,3 +179,8 @@ which <app/sw/comando>
 hostname # Nombre del anfitrión en el que estoy trabajando 
 ```
 
+### Imprime el valor de las variables especificadas del entorno
+
+```bash
+printenv
+```

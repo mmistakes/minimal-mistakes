@@ -49,8 +49,11 @@ cal > calendario
     30 31
 ```
 
-* Redirigir y añadir salida a un fichero preexistente
-  * Realiza la misma tarea que ``>`` pero sin reescribir los datos que tenía y añadiendo lo que ejecuta el comando a continuación
+* Redirigir y añadir la salida a un fichero preexistente
+  
+  * Crea un nuevo archivo si no existe
+  
+  * Añade el contenido a continuación del anterior contenido en el caso de que el fichero existiera
 
 ```bash
 comando >> fichero
@@ -104,3 +107,20 @@ echo "Error" >&2
 |             |                |      existe     |              |
 -----------------------------------------------------------------
 ```
+
+#### Salida con Valor de Retorno a la shell
+
+* Por defecto el valor ``0`` significa ejecución con éxito
+
+  * Cualquier valor mayor que ``0`` significa **Error**
+
+    * El comando **exit** equivale a ``0``
+
+#### Redirección de Entrada/Salida
+
+* Canales de  **(entrada-stdin)/(salida-stdout)** estándar de un comando se asocian a la **terminal de usuario** pero puede asociarse a cualquier fichero (redirección de **entrada/salida**)
+
+##### Pipeline
+
+* La salida estándar de un comando puede enviarse con la entrada estándar de otro comando para obtener resultados diferentes o más completos
+  * Ejemplo : ``ls -lha | less``

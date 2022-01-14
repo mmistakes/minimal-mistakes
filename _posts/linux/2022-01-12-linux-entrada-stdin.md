@@ -50,8 +50,8 @@ cancelar # Si escribes esta palabra se termina la ejecución del comando
 ```bash
 # Ejemplo: 
 wc < fin
-Comprobación de la entrada estándar
-por teclado de un comando 
+Comprobación de la entrada estándar # Texto añadido 1
+por teclado de un comando # Texto añadido 2
 fin # Si escribes esta palabra se termina la ejecución del comando 
 ```
 
