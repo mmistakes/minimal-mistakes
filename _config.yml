@@ -102,11 +102,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "James Philip"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Information architect and software engineering undergraduate."
+  location         : "UK"
+  email            : jad_phil@yahoo.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
