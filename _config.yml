@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "CHOMINJOO"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/image1.jpg"
   bio              : "좋아하는 것들을 공부하고 기록하는 블로그 입니다."
   location         : "South Korea"
   email            :
