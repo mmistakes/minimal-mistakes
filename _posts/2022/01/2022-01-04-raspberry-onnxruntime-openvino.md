@@ -59,7 +59,11 @@ The final step is to build ONNXRuntime from sources for system requirements and 
 # clone the repository and build onnxruntimme (for me it took about 2.5 hours)
 git clone -b v1.10.0 --recurse-submodules https://github.com/microsoft/onnxruntime.git
 cd onnxruntime/
-./build.sh --update --build --build_shared_lib --arm --config Release --use_openmp --use_openvino MYRIAD_FP16 --parallel --enable_pybind --build_wheel
+./build.sh --update --build --build_shared_lib --arm --config Release --use_openmp --use_openvino MYRIAD_FP16 --parallel --enable_pybind --build_wheel  --cmake_extra_defines CMAKE_INSTALL_PREFIX=/usr
+
+# install onnxruntime on system
+cd ./build/Linux/Release
+sudo make install
 
 # add onnxruntime to python3
 cd ./build/Linux/Release/dist/
