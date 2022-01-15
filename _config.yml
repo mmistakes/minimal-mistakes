@@ -106,11 +106,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Technical author and software engineering undergaduate."
   location         : "UK"
-  email            : #"jad_phil@yahoo.com"
+  email            : "jad_phil@yahoo.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: "jad_phil@yahoo.com"
+       url: #"jad_phil@yahoo.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
