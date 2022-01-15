@@ -56,6 +56,10 @@ object Data {
   val markRuffalo: Actor = Actor(9, "Mark", "Ruffalo")
   val chrisHemsworth: Actor = Actor(10, "Chris", "Hemsworth")
   val jeremyRenner: Actor = Actor(11, "Jeremy", "Renner")
+
+  val tomHolland: Actor = Actor(13, "Tom", "Holland")
+  val tobeyMaguire: Actor = Actor(14, "Tobey", "Maguire")
+  val andrewGarfield: Actor = Actor(15, "Andrew", "Garfield")
 }
 ```
 
@@ -94,7 +98,18 @@ val jlActors: Stream[Pure, Actor] = Stream(
 
 Since we don't use any effect to compute (or pull) the elements of the stream, we can use the `Pure` effect. In other words, using the `Pure` effect means that pulling the elements from the stream cannot fail.
 
-Since no effect is used at all, it's possible to convert _pure streams_ into Scala `List` of `Vector` using the convenient methods provided by the library:
+In a similar way, we can create pure streams using smart constructors, instead of using the `Stream` constructor. Among the others, we have `emit`and `emits`, which create a pure stream with only one element or with a sequence of elements respectively:
+
+```scala
+val tomHollandStream: Stream[Pure, Actor] = Stream.emit(tomHolland)
+val spiderMen: Stream[Pure, Actor] = Stream.emits(List(
+  tomHolland, 
+  tobeyMaguire, 
+  andrewGarfield
+))
+```
+
+As no effect is used at all, it's possible to convert _pure streams_ into Scala `List` of `Vector` using the convenient methods provided by the library:
 
 ```scala
 val jlActorList: List[Actor] = jlActors.toList
@@ -139,7 +154,6 @@ However, in most cases, we want to create a stream directly evaluating some stat
 ```scala
 val savingTomHolland: Stream[IO, Unit] = Stream.eval {
   IO {
-    val tomHolland = Actor(13, "Tom", "Holland")
     println(s"Saving actor $tomHolland")
     Thread.sleep(1000)
     println("Finished")
@@ -184,6 +198,53 @@ object Fs2Tutorial extends IOApp {
   }
 }
 ```
+
+### 2.1. Chunks
+
+Inside, every stream is made of _chunks_. A `Chunk[O]` is a finite sequence of stream elements of type `O` stored inside a structure that is optimized for indexed based lookup of elements. We can create a stream directly through the `Stream.chunk` method, which accepts a sequence of `Chunk`:
+
+```scala
+val avengersActors: Stream[Pure, Actor] = Stream.chunk(Chunk.array(Array(
+  scarlettJohansson,
+  robertDowneyJr,
+  chrisEvans,
+  markRuffalo,
+  chrisHemsworth,
+  jeremyRenner
+)))
+```
+
+The fs2 library defines a lot of smart constructors for the `Chunk` type, letting us create a `Chunk` from an `Option`, a `Seq`, a `Queue`, and so on.
+
+Most of the functions defined on streams are `Chunk`-aware, which means that we don't have to worry about chunks while we are working with them.
+
+## 3. Transforming a Stream
+
+Once we've built a Stream, we can transform its values more or less as we make to regular Scala collections. For example, let's create a stream containing all the actors which hero belongs from the Justice League or the Avengers. We can use the `++` operator, which concatenates two streams:
+
+```scala
+val dcAndMarvelSuperheroes: Stream[Pure, Actor] = jlActors ++ avengersActors
+```
+
+So, the `dcAndMarvelSuperheroes` stream will emit all the actors from the Justice League and then the Avengers.
+
+The `Stream` type forms a monad on the `O` type parameter. This means that a `flatMap` method is available on streams, and we can use it to concatenate operations concerning the output values of the stream.
+
+For example, a typical pattern to print to the console the elements of a stream is through the use of the `flatMap` method:
+
+```scala
+val printedJlActors: Stream[IO, Unit] = jlActors.flatMap { actor =>
+  Stream.eval(IO.println(actor))
+}
+```
+
+The pattern of calling the function `Stream.eval` inside a `flatMap` is so common that fs2 provides a shortcut for it through the `evalMap` method:
+
+```scala
+jlActors.evalMap(IO.println)
+```
+
+TODO Say that are all constant in time
 
 
 
