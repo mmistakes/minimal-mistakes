@@ -53,7 +53,7 @@ author_profile: true
 
 - 엘라스틱 서치는 집계를 위한 특별한 API 제공 ❌, **aggs 파라미터**를 이용한다
 
-```JSON
+```json
 GET <인덱스명>/_search
 {
 	"aggs": {
