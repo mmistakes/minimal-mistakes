@@ -83,7 +83,7 @@ GET <인덱스명>/_search
 | **min**          | 필드의 최솟값 계산                                                   |
 | **max**          | 필드의 최대값 계산                                                   |
 | **sum**          | 필드의 총합 계산                                                     |
-| **perceties**    | 필드의 백분위값 계산                                                 |
+| **percentiles**  | 필드의 백분위값 계산                                                 |
 | **stats**        | 필드의 min, max, sum, avg, count(도큐먼트 개수)를 한 번에 볼 수 있다 |
 | **cardinality**  | 필드의 유니크한 값 개수 계산                                         |
 | **geo-centroid** | 필드 내부의 위치 정보의 중심점 개선                                  |
@@ -148,7 +148,7 @@ GET kibana_sample_data_ecommerce/_search
  "size": 0,
  "aggs": { // 집계 표현
   "stats_aggs": { // 사용자가 지정한 집계명
-   "precenties": { // 백분위 요청 타입
+   "percentiles": { // 백분위 요청 타입
     "field": "products.base_price",
     "percents": [ // 25% ~ 50%에 해당하는 데이터를 요청
      25,
@@ -161,7 +161,7 @@ GET kibana_sample_data_ecommerce/_search
 ```
 
 - **products_base_price** 필드의 **백분위값**을 구하는 요청
-- 집계타입이 **avg**가 아닌, **perceties**로 정의했다는 차이가 있다
+- 집계타입이 **avg**가 아닌, **percentiles**로 정의했다는 차이가 있다
 
 ## ✔ 3-6 메트릭 집계: 중간값
 
