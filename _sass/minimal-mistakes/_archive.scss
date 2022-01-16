@@ -28,6 +28,7 @@
 
   a[rel="permalink"] {
     position: static;
+    color: inherit;
   }
 }
 
@@ -75,6 +76,7 @@
 .archive__item-excerpt {
   margin-top: 0;
   font-size: $type-size-6;
+  display: none;
 
   & + p {
     text-indent: 0;
@@ -216,7 +218,6 @@
 
   .archive__item-excerpt {
     display: none;
-    color: red;
 
     @include breakpoint($medium) {
       display: block;
