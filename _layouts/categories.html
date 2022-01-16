@@ -34,7 +34,7 @@ layout: archive
         <h2 class="archive__subtitle">{{ category[0] }}</h2>
         <div class="entries-{{ entries_layout }}">
           {% for post in category.last %}
-            {% include archive-single.html type=entries_layout %}
+            {% include archive-single2.html type=entries_layout %}
           {% endfor %}
         </div>
         <a href="#page-title"><i class="fas fa-chevron-circle-up"></i></a>
