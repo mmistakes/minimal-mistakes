@@ -56,13 +56,13 @@ author_profile: true
 ```json
 GET <인덱스명>/_search
 {
-	"aggs": {
-		"my_aggs": {
-			"agg_type": {
-				...
-			}
-		}
-	}
+ "aggs": {
+  "my_aggs": {
+   "agg_type": {
+    ...
+   }
+  }
+ }
 }
 ```
 
@@ -105,14 +105,14 @@ GET <인덱스명>/_search
 ```json
 GET kibana_sample_data_ecommerce/_search
 {
-	"size": 0,
-	"aggs": { 						// 집계 표현
-		"stats_aggs": { 				// 사용자가 지정한 집계명
-			"avg": { 				// 집계 타입
-				"field": "products_base_price"
-			}
-		}
-	}
+ "size": 0,
+ "aggs": {       // 집계 표현
+  "stats_aggs": {     // 사용자가 지정한 집계명
+   "avg": {     // 집계 타입
+    "field": "products_base_price"
+   }
+  }
+ }
 }
 ```
 
@@ -145,18 +145,18 @@ GET kibana_sample_data_ecommerce/_search
 ```json
 GET kibana_sample_data_ecommerce/_search
 {
-	"size": 0,
-	"aggs": { // 집계 표현
-		"stats_aggs": { // 사용자가 지정한 집계명
-			"precenties": { // 백분위 요청 타입
-				"field": "products.base_price",
-				"percents": [ // 25% ~ 50%에 해당하는 데이터를 요청
-					25,
-					50
-				]
-			}
-		}
-	}
+ "size": 0,
+ "aggs": { // 집계 표현
+  "stats_aggs": { // 사용자가 지정한 집계명
+   "precenties": { // 백분위 요청 타입
+    "field": "products.base_price",
+    "percents": [ // 25% ~ 50%에 해당하는 데이터를 요청
+     25,
+     50
+    ]
+   }
+  }
+ }
 }
 ```
 
@@ -202,15 +202,15 @@ GET kibana_sample_data_ecommerce/_search
 ```json
 GET kibana_sample_data_ecommerce/_search
 {
-	"size": 0,
-	"aggs": { // 집계 표시
-		"cardi_aggs": { // 집계명
-			"cardinality": {
-				"field": "day_of_week",
-				"precision_threshold": 100 // 기본값: 3000, 최대 40000까지
-			}
-		}
-	}
+ "size": 0,
+ "aggs": { // 집계 표시
+  "cardi_aggs": { // 집계명
+   "cardinality": {
+    "field": "day_of_week",
+    "precision_threshold": 100 // 기본값: 3000, 최대 40000까지
+   }
+  }
+ }
 }
 ```
 
@@ -249,14 +249,14 @@ GET kibana_sample_data_ecommerce/_search
 ```json
 GET kibana_sample_data_ecommerce/_search
 {
-	"size": 0,
-	"aggs": {
-		"cardi_aggs": {
-			"terms": {
-				"field": "day_of_week"
-			}
-		}
-	}
+ "size": 0,
+ "aggs": {
+  "cardi_aggs": {
+   "terms": {
+    "field": "day_of_week"
+   }
+  }
+ }
 }
 ```
 
@@ -671,7 +671,7 @@ GET kibana_sample_data_ecommerce/_search
 
 > 다음 예제를 통해 어떤 위치의 차이가 있는지 확인 해보자
 
-#### 부모 집계
+### 부모 집계
 
 ```json
 {
@@ -684,7 +684,7 @@ GET kibana_sample_data_ecommerce/_search
 }
 ```
 
-#### 형제 집계
+### 형제 집계
 
 ```json
 {
@@ -696,6 +696,8 @@ GET kibana_sample_data_ecommerce/_search
   }
 }
 ```
+
+## ✔ 7-1 파이프라인 옵션
 
 ![pip_aggregation](https://user-images.githubusercontent.com/53969142/149651289-08e5c689-30c6-409c-93b9-eb1a75b15c5d.PNG)
 
@@ -737,6 +739,8 @@ GET kibana_sample_data_ecommerce/_search
   }
 }
 ```
+
+s
 
 ## ✔ 7-4 형제 집계: 실행
 
