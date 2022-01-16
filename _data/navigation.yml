@@ -10,8 +10,6 @@ docs:
     children:
       - title : "Category"
         url : /categories/
-      - title : "tag"
-        url : /tags/
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
   #   url: /year-archive/
