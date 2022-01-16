@@ -397,11 +397,12 @@ body {
   }
 }
 
-.back-to-top {
-  display: block;
-  clear: both;
-  color: $muted-text-color;
-  font-size: 0.6em;
+.fa-chevron-circle-up{
+   position: fixed;
+   bottom: 150px;
+   right: 50px;
+  color:$base0d;
+  font-size: 2em;
   text-transform: uppercase;
   text-align: right;
   text-decoration: none;
