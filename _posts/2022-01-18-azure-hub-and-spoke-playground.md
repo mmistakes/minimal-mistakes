@@ -5,6 +5,7 @@ author: nicold
 comments: false
 tags: [Azure, Networking, GitHub, Playground, Sample, ARM-template]
 
+excerpt: "an handy hub-and-spoke playground for your experiments, on Azure."
 header:
   overlay_image: https://live.staticflickr.com/65535/51694307361_f9240dfb59_k.jpg
   overlay_filter: rgba(128, 0, 0, 0.5)
