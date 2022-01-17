@@ -8,8 +8,8 @@ tags: [Azure, Networking, GitHub, Playground, Sample, ARM-template]
 excerpt: "an handy hub-and-spoke playground for your experiments, on Azure."
 header:
   overlay_image: https://live.staticflickr.com/65535/51694307361_f9240dfb59_k.jpg
-  overlay_filter: rgba(100, 32, 32, 0.5)
-  caption: "Photo credit: [**nicola since 1972**](https://www.flickr.com/photos/15216811@N06/)"
+  overlay_filter: rgba(255, 32, 32, 0.5)
+  caption: "Photo credit: [**nicola since 1972**](https://www.flickr.com/photos/15216811@N06/51694307361)"
 
 ---
 
