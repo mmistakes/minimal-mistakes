@@ -332,6 +332,7 @@ val errorHandledSavedJlActors: Stream[IO, AnyVal] =
 In above example, we react to an error by returning a stream that prints the error to the console. As we can notice, the type of the elements contained in the stream is `AnyVal`, and not `Unit`. This is because of the definition of the `handleErrorWith`:
 
 ```scala
+// fs2 library code
 def handleErrorWith[F2[x] >: F[x], O2 >: O](h: Throwable => Stream[F2, O2]): Stream[F2, O2] = ???
 ```
 
