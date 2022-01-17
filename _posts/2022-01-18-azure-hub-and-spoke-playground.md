@@ -41,6 +41,6 @@ more will be implemented in the future.
 
 As any worthwhile alive repo on github, you can **star** it, **fork** it and use it as you like. If you want more scenarios implemented, or if you find an error, open an issue in Github or write mr. If you want to collaborate adding **YOU** more scenarios, fork the repo and do a **pull request**, I'll be happy to review it and add your contribution to the repo.
 
-* Here the link woth the repo [https://github.com/nicolgit/hub-and-spoke-playground](https://github.com/nicolgit/hub-and-spoke-playground)
+* Here the repo link [https://github.com/nicolgit/hub-and-spoke-playground](https://github.com/nicolgit/hub-and-spoke-playground)
 
 Thank you!
