@@ -1,8 +1,6 @@
 ---
 title: Azure - Hub and Spoke - Playground
 date: 2022-01-12 10:00
-author: nicold
-comments: false
 tags: [Azure, Networking, GitHub, Playground, Sample, ARM-template]
 
 excerpt: "an handy hub-and-spoke playground for your experiments, on Azure."
