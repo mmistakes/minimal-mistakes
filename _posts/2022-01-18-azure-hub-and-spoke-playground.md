@@ -7,11 +7,11 @@ tags: [Azure, Networking, GitHub, Playground, Sample, ARM-template]
 
 header:
   overlay_image: https://live.staticflickr.com/65535/51694307361_f9240dfb59_k.jpg
-  overlay_filter: rgba(255, 0, 0, 0.5)
+  overlay_filter: rgba(128, 0, 0, 0.5)
   caption: "Photo credit: [**nicola since 1972**](https://www.flickr.com/photos/15216811@N06/)"
   actions:
     - label: "More Info"
-      url: "https://www.flickr.com/photos/15216811@N06/"
+      url: "https://www.flickr.com/photos/15216811@N06/ù"
 ---
 
 For my current job, often I have to do tests and/or double-checks on network configurations.
