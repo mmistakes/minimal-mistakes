@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Linux - Comando wc
+title: Linux - Comando grep
 date: 2022-01-13
 classes: wide
 toc: true
@@ -11,44 +11,55 @@ header:
 categories:
   - linux
   - linux-comando
-  - linux-wc
+  - linux-grep
 tags:
   - linux-concepto-de-comandos
 page_css: 
   - /assets/css/mi-css.css
 ---
 
-## Comando - wc
+## Comando - grep
 
-* Imprimir en número de líneas , palabras y bytes para cada archivo dividido en tres columnas
+* Busca en un cadena de palabras el patrón que le pasemos como argumentos al comando
+
+* Tenemos un archivo textos llamado ``textos``
+
+```bash
+Soy un archivo de texto 
+con un conjunto de palabras
+que se utilizan como prueba
+en este sistema
+```
+
+* Ejecuto el comando
+
+```bash
+grep "pala" textos
+# Sale en rojo la palabra "pala" pero lo puse entrecomillas para que se entienda mejor pero en un sistema real no se muestra así
+con un conjunto de "pala"bras 
+```
 
 ### Opciones
 
-``-l``
+``-w``
 
-* Imprime el total de líneas que contiene un archivo
+* Selecciona sólo aquellas líneas que coincida exactamente que formen las palabras enteras.
+  * La coincidencia de la cadena correspondiente debe estar al principio de la línea,  o precedida por un carácter constituyente no-palabra.
+  * Debe ser al final de la línea o seguido por un carácter constituyente por una no-palabra.  
+  * Los caracteres constitutivos de palabra son letras, dígitos y guiones bajos.
+  * Esta opción no tiene efecto si también se especifica ``-x``
 
 ```bash
-# Ejemplo 
-cal > calendario
+# Ejemplo :
+grep -w "palabra" fichero.txt
+# Aparece la linea donde aparece la coincidencia
+con un conjunto de "palabras" # Las comillas no aparece por defecto , se han añadido para que el ejemplo se vea más claro
 ```
 
-```bash
-cat calendario
-# Salida
-    January 2022
-Su Mo Tu We Th Fr Sa
-                   1
- 2  3  4  5  6  7  8
- 9 10 11 12 13 14 15
-16 17 18 19 20 21 22
-23 24 25 26 27 28 29
-30 31
-```
+* Combinación de 2 comandos para buscar y mostrar el numero de líneas que aparece la palabra
 
 ```bash
-# Ejemplo 
-wc -l calendario
-# Salida
-8
+# Ejemplo :
+grep -w "palabra" fichero.txt | wc -l
+1 # Aparece una vez
 ```

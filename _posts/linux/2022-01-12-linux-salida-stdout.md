@@ -30,7 +30,7 @@ page_css:
 
   * ( Por defecto la pantalla )
 
-* Redirigir la salida estándar
+* ``>`` - Redirigir la salida estándar
 
   ``comando > fichero``
   
@@ -49,11 +49,21 @@ cal > calendario
     30 31
 ```
 
-* Redirigir y añadir la salida a un fichero preexistente
+* ``>>`` - Redirigir y añadir la salida a un fichero preexistente
   
   * Crea un nuevo archivo si no existe
   
   * Añade el contenido a continuación del anterior contenido en el caso de que el fichero existiera
+
+```bash
+echo "Mensaje 1" > texto # Crea un nuevo archivo con el mensaje "Mensaje 1"
+cat texto # Ejecutamos cat para el contenido del mensaje 
+Mensaje 1 # Muestra este texto
+echo "Mensaje 2" >> texto # Ejecutamos los 2 >> para añadir otro texto más al fichero
+cat texto # Ejecutamos cat para el contenido del mensaje 
+Mensaje 1 # Muestra en anterior texto
+Mensaje 2 # Y además muestra a continuación el nuevo contenido 
+```
 
 ```bash
 comando >> fichero
@@ -77,6 +87,8 @@ cal >> calendario
     23 24 25 26 27 28 29  
     30 31
 ```
+
+
 
 * Redirigir salida estándar **(stdout)** a salida de error **(stderr)**
   * Comando ``>&2``

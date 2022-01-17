@@ -21,8 +21,8 @@ page_css:
 
 ### Shell (Concepto)
 
-* **Programa informático** : 
-  * Interpreta **ordenes/comandos** a través de una interfaz de usuario para proporcionar al usuario y a otros programas los **servicios** del S.O
+* **Programa informático**
+  * Interpreta **ordenes/comandos** a través de una interfaz de usuario para proporcionar al usuario y a otros programas los **servicios** del S.O  
 
 #### Shell (Historia)
 
@@ -185,7 +185,7 @@ lp:*:17507:0:99999:7:::
 
 ```bash
 /dev
-```
+```Concepto de Comandos 
 
 * Contiene los puntos de montaje pero no la información real de los volúmenes montado
 
