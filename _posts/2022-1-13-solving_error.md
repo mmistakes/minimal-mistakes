@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 에러해결: Expected object of scalar type Float..
+title: 에러해결-Expected object of scalar type Float..
 categories: error
 tag: deeplearning, error
 typora-root-url: ../
@@ -10,7 +10,7 @@ typora-root-url: ../
 
 
 
-내용을 살펴보면 float type의 객체가 들어올 줄 알았는데 double type의 객체가 들어왔다는 error다.
+내용을 살펴보면 float type의 객체가 들어올 줄 알았s는데 double type의 객체가 들어왔다는 error다.
 
 필자의 경우 numpy 에서 tensor로 변경중에 발생했고.  이렇게 해결했다.
 
