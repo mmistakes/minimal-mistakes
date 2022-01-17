@@ -290,6 +290,53 @@ val stringNamesOfJlActors: Stream[IO, Unit] =
 
 We have the the `jlActors` stream represents the _source_, whereas the `fromActorToStringPipe` represents a pipe, and the `toConsole` represents the _sink_. We can conclude that a pipe is pretty much a map/flatMap type functional operation but the pipe concept fits nicely into the mental model of a Stream.
 
+## 4. Error Handling in Streams
+
+What if pulling a value from a stream fails raising an exception? For example, let's introduce a repository persisting an `Actor`:
+
+```scala
+object ActorRepository {
+  def save(actor: Actor): IO[Int] = IO {
+    println(s"Saving actor: $actor")
+    if (Random.nextInt() % 2 == 0) {
+      throw new RuntimeException("Something went wrong during the communication with the persistence layer")
+    }
+    println(s"Saved.")
+    actor.id
+  }
+}
+```
+
+To simulate a random error during the communication with the persistent layer, the `save` method throws an exception when a random generated number is even. Then, we can use the above repository to persist a stream of actors:
+
+```scala
+val savedJlActors: Stream[IO, Int] = jlActors.evalMap(ActorRepository.save)
+```
+
+If we run the above stream, it's very likely that we will see the following output:
+
+```
+Saving actor: Actor(0,Henry,Cavill)
+java.lang.RuntimeException: Something went wrong during the communication with the persistence layer
+```
+
+As we can see, the stream is interrupted by the exception. In the above execution it doesn't persist even the first actor. So, every time an exception occurs during pulling elements from a stream, the stream execution ends.
+
+However, fs2 gives us many choices to handle the error. First, we can handle an error returning a new stream using the `handleErrorWith` method:
+
+```scala
+val errorHandledSavedJlActors: Stream[IO, AnyVal] =
+  savedJlActors.handleErrorWith(error => Stream.eval(IO.println(s"Error: $error")))
+```
+
+In above example, we react to an error by returning a stream that prints the error to the console. As we can notice, the type of the elements contained in the stream is `AnyVal`, and not `Unit`. This is because of the definition of the `handleErrorWith`:
+
+```scala
+def handleErrorWith[F2[x] >: F[x], O2 >: O](h: Throwable => Stream[F2, O2]): Stream[F2, O2] = ???
+```
+
+In fact, the `O2` type must be a super type of the original type `O`. Since both `Int` and `Unit` are subtypes of `AnyVal`, we can use the `AnyVal` type to represent the resulting stream. 
+
 
 
 
