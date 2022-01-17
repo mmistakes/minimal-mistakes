@@ -1,5 +1,5 @@
 ---
-title: Service Logic: RuleEngineDeploymentNotDeployedException
+title: Service Logic - RuleEngineDeploymentNotDeployedException
 tags: [Connected Services Framework]
 ---
 in this case "TestProduct3_Policy" is published and not deployed or it is not present at all. Use business rules composer interface to publish and deploy the rule. 
