@@ -1,5 +1,5 @@
 ---
-title : "⚙ 4. 비용 최소화"
+title : "⚙ 5. 비용 최소화 구현 - 코드"
 
 categories:
     - Machinelearning
@@ -10,8 +10,8 @@ toc : true
 toc_sticky : true
 use_math : true
 
-date: 2022-01-16
-last_modified_at: 2022-01-16
+date: 2022-01-17
+last_modified_at: 2022-01-17
 ---  
 
 * * *

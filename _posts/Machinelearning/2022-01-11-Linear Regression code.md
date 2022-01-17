@@ -1,5 +1,5 @@
 ---
-title : "⚙ 3. 선형회귀 구현"
+title : "⚙ 3. 선형회귀 구현 - 코드"
 
 categories:
     - Machinelearning
