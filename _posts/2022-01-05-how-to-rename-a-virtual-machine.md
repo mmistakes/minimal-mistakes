@@ -1,8 +1,6 @@
 ---
 title: NICOLTIP033 How to rename a virtual machine on Azure
 date: 2022-01-05 10:00
-author: nicold
-comments: false
 tags: [Azure, Virtual Machine, IaaS, Powershell]
 ---
 

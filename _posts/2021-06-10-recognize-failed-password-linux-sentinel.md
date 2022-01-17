@@ -1,8 +1,6 @@
 ---
 title: How to recognize an ssh login attempt on a Linux machine with Sentinel
 date: 2021-05-05 10:00
-author: nicold
-comments: false
 tags: [Linux, Azure Sentinel, KUSTO, SIEM]
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: NICOLTIP032 - How can I authorize someone to turn on-off a Virtual Machine on Azure?
 date: 2020-11-26 18:00
-author: nicold
-comments: false
 tags: [Azure, RBAC, custom role, Virtual Machine, IaaS, NICOLTIP]
 ---
 
