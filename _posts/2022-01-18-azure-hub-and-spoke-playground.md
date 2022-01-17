@@ -34,13 +34,13 @@ at this time I have already implemented the following scenarios:
 1. how to allow machines in any spoke to communicate with any machine in any other spoke
 2. how to filter HTTP(S) outbound traffic 
 3. how to expose machines IP via the Azure Firewall
-4. how to configure Site to Site VPN via V-Net 2 V-Net connection and IPSec
+4. how to configure Site to Site VPN via vNet connection and IPSec
 5. how to enable cross on-premise communication and routing
 
 more will be implemented in the future.
 
 As any worthwhile alive repo on github, you can **star** it, **fork** it and use it as you like. If you want more scenarios implemented, or if you find an error, open an issue in Github or write mr. If you want to collaborate adding **YOU** more scenarios, fork the repo and do a **pull request**, I'll be happy to review it and add your contribution to the repo.
 
-* HERE the link: https://github.com/nicolgit/hub-and-spoke-playground 
+* Here the link woth the repo [https://github.com/nicolgit/hub-and-spoke-playground](https://github.com/nicolgit/hub-and-spoke-playground)
 
 Thank you!
