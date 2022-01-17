@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Linux - Información del Sistema
+title: Linux - Comandos de Sistema
 date: 2021-12-17
 classes: wide
 toc: true
@@ -18,6 +18,10 @@ page_css:
 ---
 
 ## Comandos de sistema
+
+* Todo **comando** o **shell script** que se encuentre en el directorio ``bin`` del sistema **GNU/Linux**
+
+  * Si creamos un **shell script** o un **comando** y no se encuentra en la variable de directorio **PATH** del sistema el comando no se podrá ejecutar para eso tenemos que incluirla en el directorio ``bin``
 
 ### Gestión Básica de paquetes
 
@@ -179,8 +183,59 @@ which <app/sw/comando>
 hostname # Nombre del anfitrión en el que estoy trabajando 
 ```
 
-### Imprime el valor de las variables especificadas del entorno
+### Imprime todas las variables ejecutadas en un programa de un entorno modificado
 
 ```bash
 printenv
+```
+
+* Otra opción
+
+```bash
+env
+```
+
+* Ejemplo - Mostrar la lista de directorios y filtrar mediante el comando PATH  
+
+```bash
+printenv | grep -w PATH 
+PATH=/home/sysadmin/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:
+/bin:/usr/games:/usr/local/games    
+```
+
+### Comando Export
+
+* Se utiliza para indicarle al sistema que la nueva variable llamada VARIABLE estará disponible en todo el sistema y en otras ``shell`` del sistema
+
+```bash
+export VARIABLE=VALOR
+```
+
+* Exportar un ``shell script`` o un comando a la ``PATH`` del sistema para que se pueda ejecutar en cualquier directorio distinto al **directorio de binarios** ``/bin/`` del sistema
+
+  1. Creamos el **script básico** en un directorio distinto al directorio ``/bin/``
+
+```bash
+usuario@ubuntu:~/directorio-comun$ touch script-basico
+```
+
+  2. Agregamos el código al ``shell script`` para su ejecución
+
+```bash
+#!/bin/bash
+echo "Mensaje de Bienvenida"
+```
+
+  3. Añadimos el archivo ``shell script`` a la ``PATH`` para que se pueda ejecutar en cualquier **directorio del sistema**
+
+```bash
+PATH=$PATH:/home/usuario/directorio-comun$
+```
+
+### Comando - xterm
+
+* Se utiliza para lanzar una 2º ``shell`` y mediante el simbolo ``&`` le indicamos que se ejecutará en el background de forma que la nueva ``shell`` devolverá el ``Prompt`` y ejecutará en un 2º proceso
+
+```bash
+xterm &
 ```

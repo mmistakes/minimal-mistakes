@@ -72,7 +72,7 @@ ZZ # Guardar y Salir
 dd 
 ```
 
-* Deshacer último cambio
+* Deshacer último cambio **(Undo)**
 
 ```bash
 u 

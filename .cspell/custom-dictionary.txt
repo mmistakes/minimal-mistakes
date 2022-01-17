@@ -11,6 +11,8 @@ monitorizado
 posicionales
 Redirección
 renice
+secuencialmente
+subcomando
 subdirectorio
 subdirectorios
 tabulación
