@@ -6,7 +6,7 @@ locale                   : "en-US"
 title                    : "devshon_vlog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "devshon"
+name                     : # "devshon"
 description              : "Today I Learned"
 url                      : "https://devshon.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
