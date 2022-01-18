@@ -1,6 +1,6 @@
 ---
-layout:single
-title: "today learned"
----
+layout:post
+title:"today learned"
 
-#Today I Learned
+
+# Today I Learned
