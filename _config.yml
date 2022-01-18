@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "XeNco의 Dev-log"
+title                    : "XeNco Dev-log"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Xenco82"
-description              : "back-enc.portfolio"
+description              : "back-end portfolio"
 url                      : "https://xenco82.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -112,7 +112,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
        url: "mailto:xenco82@gmail.com"
     - label: "Website"
-      icon: "fas fa-fw fa-link"
+      icon: ".fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
