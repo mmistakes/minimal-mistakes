@@ -103,7 +103,7 @@ analytics:
 author:
   name: "지영서"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "학습한 내용을 기록하고 있는 블로그 입니다."
+  bio: "코드스테이츠 부트캠프 참여중이며, 학습한 내용을 조금씩 기록하고 있습니다."
   location: "South Korea"
   email:
   links:
