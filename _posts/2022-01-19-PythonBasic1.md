@@ -1,3 +1,8 @@
+---
+layout: single
+title:  "Python 기초1"
+---
+
 #### *Jupyter notebook 명령어
 [Command Mode] <br>
 A : **위쪽에 셀 삽입** <br>
