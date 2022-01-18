@@ -109,9 +109,6 @@ author:
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:nicola.delfino@outlook.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/nicoltwit"
