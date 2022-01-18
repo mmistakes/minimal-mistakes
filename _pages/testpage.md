@@ -1,5 +1,5 @@
 ---
-title: my-nicold-page
+title: my-nicold-test-page
 defaults:
   # _pages
   - scope:
