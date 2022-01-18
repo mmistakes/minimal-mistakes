@@ -1,7 +1,6 @@
----
-layout:post
-title:"Week1-javascript"
+----
+layout: single
+title: "Week1_javascript"
+----
 
----
-
-# Today I Learned - javascript
+# Today I Learned > javascript
