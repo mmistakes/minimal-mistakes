@@ -338,7 +338,7 @@ def handleErrorWith[F2[x] >: F[x], O2 >: O](h: Throwable => Stream[F2, O2]): Str
 
 In fact, the `O2` type must be a super type of the original type `O`. Since both `Int` and `Unit` are subtypes of `AnyVal`, we can use the `AnyVal` type (the least common super type) to represent the resulting stream. 
 
-Another useful available method to handle error in streams is `attempt`. The method works using the `scala.Either` type, and it returns a stream of `Either` elements. The resulting stream pulls elements wrapped in a `Right` instance, until the first error occurs, which is wrapped in a `Left` instance:
+Another useful available method to handle error in streams is `attempt`. The method works using the `scala.Either` type, and it returns a stream of `Either` elements. The resulting stream pulls elements wrapped in a `Right` instance, until the first error occurs, which is nothing more than an instance of a `Throwable` wrapped in a `Left`:
 
 ```scala
 val attemptedSavedJlActors: Stream[IO, Either[Throwable, Int]] = savedJlActors.attempt
@@ -358,7 +358,54 @@ def attempt: Stream[F, Either[Throwable, O]] =
 
 ## 5. Resource Management
 
+As the official documentation says, we don't have to use the `handleErrorWith` method to eventually manage the release of resources used by the stream. Instead, the fs2 library implements the _bracket_ pattern to manage resources.
 
+The bracket pattern is a resource management pattern developed in functional programming domain many years ago. The pattern defines two functions: the first is used to acquire a resource, and the second is guaranteed to be called when the resource is no longer needed, also in case of error during its usage.
+
+The fs2 library implements the bracket pattern through the `bracket` method:
+
+```scala
+// fs2 library code
+def bracket[F[x] >: Pure[x], R](acquire: F[R])(release: R => F[Unit]): Stream[F, R] = ???
+```
+
+The function `acquire` is used to acquire a resource, and the function `release` is used to release the resource. The resulting stream is a stream of elements of type `R`, and it is guaranteed that the resource is released when the stream is terminated, both in case of success and in case of error. Notice that both the `acquire` and `release` functions returns an effect, since they can throw exceptions during the acquisition or release of resources.
+
+Let's make an example. We want to use a resource during the persistence of the stream containing the actors of the JLA. First, we define a value class representing a connection to a database:
+
+```scala
+case class DatabaseConnection(connection: String) extends AnyVal
+```
+
+We will use the `DatabaseConnection` as the resource that we want to acquire and release through the bracket pattern. Then, the acquiring and releasing function:
+
+```scala
+val acquire = IO {
+  val conn = DatabaseConnection("jlaConnection")
+  println(s"Acquiring connection to the database: $conn")
+  conn
+}
+val release = (conn: DatabaseConnection) => 
+  IO.println(s"Releasing connection to the database: $conn")
+```
+
+Finally, we use them to call the `bracket` method, and then save the actors in the stream:
+
+```scala
+val managedJlActors: Stream[IO, Int] = 
+  Stream.bracket(acquire)(release).flatMap(conn => savedJlActors)
+```
+
+Since the `savedJlActors` we defined some time ago throws an exception when the stream is evaluated, the `managedJlActors` stream will be terminated with an error. The `release` function is called, and the `conn` value is released. The execution output of the `managedJlActors` stream should be something similar to the following:
+
+```
+Acquiring connection to the database: DatabaseConnection(jlaConnection)
+Saving actor: Actor(0,Henry,Cavill)
+Releasing connection to the database: DatabaseConnection(jlaConnection)
+java.lang.RuntimeException: Something went wrong during the communication with the persistence layer
+```
+
+As we can see, the resource we created was released, even if the stream was terminated with an error. That's awesome!
 
 
 
