@@ -105,14 +105,14 @@ author:
   name             : "xenco82"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "dev **xenco82** portfolio."
-  location         : "https://www.instagram.com/xolidity/?hl=ko"
+  location         : "seooom"
   email            : "xenco82@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
        url: "mailto:xenco82@gmail.com"
     - label: "Website"
-      icon: ".fa-fw fa-link"
+      icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -124,7 +124,7 @@ author:
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
     - label: "Instagram"
-      icon: "fa-fw fa-instagram"
+      icon: "fab fa-fw fa-instagram"
        url: "https://www.instagram.com/xolidity/?hl=ko"
 
 # Site Footer
