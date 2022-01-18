@@ -1,9 +1,9 @@
 ---
 layout: single
 author_profile: true
-header:
+<!-- header:
   image: /assets/posts_images/victoria-park-autumn2021.png
-  caption: Victoria Park, Edinburgh, fall 2021
+  caption: Victoria Park, Edinburgh, fall 2021 -->
 permalink: /about/
 ---
 
