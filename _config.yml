@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "s"
+title                    : "xenco의 back-end"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "s"
@@ -102,10 +102,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Xenco82"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "back-end **xenco**portfolio."
+  location         : "in korea"
   email            :
   links:
     - label: "Email"
