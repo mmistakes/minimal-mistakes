@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "neon"
+minimal_mistakes_skin    : "dark"
 # Site Settings
 locale                   : "ko-KR"
 title                    : "xenco의 back-end"
