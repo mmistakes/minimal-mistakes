@@ -336,7 +336,29 @@ In above example, we react to an error by returning a stream that prints the err
 def handleErrorWith[F2[x] >: F[x], O2 >: O](h: Throwable => Stream[F2, O2]): Stream[F2, O2] = ???
 ```
 
-In fact, the `O2` type must be a super type of the original type `O`. Since both `Int` and `Unit` are subtypes of `AnyVal`, we can use the `AnyVal` type to represent the resulting stream. 
+In fact, the `O2` type must be a super type of the original type `O`. Since both `Int` and `Unit` are subtypes of `AnyVal`, we can use the `AnyVal` type (the least common super type) to represent the resulting stream. 
+
+Another useful available method to handle error in streams is `attempt`. The method works using the `scala.Either` type, and it returns a stream of `Either` elements. The resulting stream pulls elements wrapped in a `Right` instance, until the first error occurs, which is wrapped in a `Left` instance:
+
+```scala
+val attemptedSavedJlActors: Stream[IO, Either[Throwable, Int]] = savedJlActors.attempt
+attemptedSavedJlActors.evalMap {
+  case Left(error) => IO.println(s"Error: $error")
+  case Right(id) => IO.println(s"Saved actor with id: $id")
+}
+```
+
+For sake of completeness, let's say that the `attempt` method is implemented internally using the `handleErrorWith` in the most straightforward way:
+
+```scala
+// fs2 library code
+def attempt: Stream[F, Either[Throwable, O]] =
+  map(Right(_): Either[Throwable, O]).handleErrorWith(e => Stream.emit(Left(e)))
+```
+
+## 5. Resource Management
+
+
 
 
 
