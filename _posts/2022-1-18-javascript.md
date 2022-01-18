@@ -1,6 +1,7 @@
 ---
 layout:post
-title:"today learned"
+title:"Week1-javascript"
 
+---
 
 # Today I Learned
