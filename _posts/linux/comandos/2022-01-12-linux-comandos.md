@@ -30,7 +30,7 @@ page_css:
     * Salida estándar **(Pantalla de la terminal)**
     * Salida estándar de errores **(Pantalla de la terminal)**
 
-![argumento](/assets/images/linux/argumentos/argumentos_comando_shell.jpg)
+![Argumento](/assets/images/linux/argumentos/argumentos_comando_shell.jpg/ "Ejemplo de comandos")
 
 * **Cadena de caracteres** que indican a la **shell** de **UNIX/Linux** la ejecución de una **acción específica**
 
