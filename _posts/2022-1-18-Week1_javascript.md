@@ -1,2 +1,2 @@
-# TIL javascript
+# TIL. Javascript
 
