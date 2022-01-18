@@ -13,6 +13,7 @@ $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: $text-color !default;
 $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 
+
 /* contrast syntax highlighting (base16) */
 $base00: #000000 !default;
 $base01: #242422 !default;
@@ -49,4 +50,7 @@ $base0f: #b18a3d !default;
 .page__footer-follow .social-icons i,
 .page__footer-follow .social-icons .svg-inline--fa  {
   color: inherit;
+}
+.page__title{
+  color: $link-color;
 }
