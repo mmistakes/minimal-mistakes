@@ -32,11 +32,11 @@ sort 정렬 메소드 안쓴다면?
             console.log(solution(4, 3, 1));
 					
             // 내 코드 2) 정렬 메소드 쓸 경우 
-			    function solution(a, b, c){
+						function solution(a, b, c){
                 // sort 메소드 오름차순 정렬 식을 사용하면 [1, 2, 5]
                 let arr = [a,b,c].sort((a,b) => a-b)
                 // arr.slice(0.1) 0번쨰 인덱스 값만 잘라 리턴한다. 오름차순이니 가장 작은 값
-    					  return arr.slice(0,1)   // 1
+								return arr.slice(0,1)   // 1
             }
             console.log(solution(4, 3, 1));
 
