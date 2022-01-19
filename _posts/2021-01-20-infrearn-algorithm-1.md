@@ -3,9 +3,6 @@ layout: single
 title: "인프런 강의) 알고리즘 기본 1 - 가장 작은 값"
 categories: algorithm-1 
 tag: [JavaScript, algorithm]
-toc: true 
-toc_label: "Point"
-toc_sticky: true
 ---
 
 문제 : 100이하의 자연수 A, B, C를 입력받아 세 수 중 가장 작은 값을 출력해라. (정렬 메소드 쓰지말고 해보라 하심)\
