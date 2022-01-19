@@ -1,13 +1,13 @@
 ---
-title:  "API, Library, Framework 개념과 차이점"
-excerpt: ""
+title:  "API vs Framework vs Library"
+excerpt: "API, Framework, Library의 간단한 개념과 차이점"
 
 categories:
 - Develop
 tags:
-- front-end
+- 면접질문
 - 
-last_modified_at: 2022-01-05
+last_modified_at: 2022-01-15
 ---
 
 #### API vs Framework vs Library
