@@ -70,6 +70,7 @@ algolia:
 google:
   search_engine_id: # YOUR_SEARCH_ENGINE_ID
   instant_search: # false (default), true
+
 # SEO Related
 google_site_verification:
 bing_site_verification:
@@ -102,10 +103,10 @@ analytics:
 # Site Author
 author:
   name: "지영서"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar: "/assets/images/ys.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "코드스테이츠 부트캠프 참여중이며, 학습한 내용을 조금씩 기록하고 있습니다."
   location: "South Korea"
-  email:
+  # email:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -260,3 +261,14 @@ defaults:
       show_date: true
 
 date_format: "%Y-%m-%d"
+# Defaults
+
+defaults:
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      sidebar:
+        nav: "docs"
+
