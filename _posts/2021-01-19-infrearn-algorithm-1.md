@@ -1,56 +1,16 @@
 ---
 layout: single
-title: "인프런 강의) 알고리즘 기본 1 - 가장 작은 값"
-categories: algorithm-1 
+title: "[알고리즘] 인프런 강의, 알고리즘을 배워보자!"
+categories: Algorithm-1
 tag: [JavaScript, algorithm]
 ---
 
-문제 : 100이하의 자연수 A, B, C를 입력받아 세 수 중 가장 작은 값을 출력해라. (정렬 메소드 쓰지말고 해보라 하심)\
+현재 학습하는 코드스테이츠에서 알고리즘 문제에 어려움을 크게 느꼈다.. ㅜㅜ
+버거움에 알고리즘 관련 강의가 있나 찾아보던 중 인프런에 강의가 있어서 살펴보는데
 
-sort 정렬 메소드 안쓴다면?
+해당 강의는 먼저 문제를 풀어본 후에 선생님은 어떻게 접근했을까 나의 코드와 비교해보고, 
+이런 문제는 어떻게 접근하는 것이 좋은지 효율적인 방법을 설명해주시는 강의였다!!
 
-1) 가장 작은 값을 담는 변수 min 선언 (값을 비교하기 위해서 )
-2) Math.min() 메소드로 a,b,c에 들어올 값 중 가장 작은 값 걸러주기 
-3) 조건문) min 가장 작은 값과  a , b, c 중 같은 값을 찾는다.
-4) 찾은 가장 작은 값을 answer 결과 변수에 해당 값을 담아주고 리턴한다.
+현재 애매하게 자바스크립트 문법은 알지만, 활용을 잘 못하는 나에게 딱 맞는 강의하고 생각해서 듣기로 결정했다!
 
-```js
-// 내 코드
-function solution(a, b, c){
-	let result;
-  let min = Math.min(a,b,c);
-  if(min === a) {
-  	result = a
-  } else if (min === b){
-    result = b
-  } else  if (min === c) {
-    result = c
-  }
-  return result;
-  }
-					
-// 내 코드 2) 정렬 메소드 쓸 경우 
-function solution(a, b, c){
-// sort 메소드 오름차순 정렬 식을 사용하면 [1, 2, 5]
-  let arr = [a,b,c].sort((a,b) => a-b)
-  // arr.slice(0.1) 0번쨰 인덱스 값만 잘라 리턴한다. 오름차순이니 가장 작은 값
-	return arr.slice(0,1)   // 1
-}
-  console.log(solution(4, 3, 1));
-// 레퍼런스 코드! if문으로만 구성하는 기본을 알려주고 싶으셨다.
-function solution2(a, b, c){
-	// 2, 5, 1 
-  let result
-  // a,b 둘부터 비교 a,b 둘 중에 작은값 담기
-  // 2 < 5 true =>  a
-  if(a<b) result = a;
-  else result = b;
-  // c 1 < a 2   => c
-  if(c < result) result = c;
-  return result; // c / 1
-  }
-```
-
-
-
-​           
+게을러지지말고 끝까지 다 풀어보자!
