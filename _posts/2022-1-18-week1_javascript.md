@@ -1,3 +1,24 @@
-# TIL
-javascript
+## 1. 변수가 필요한 이유
+
+week1에 가장 첫번째로 변수에 대해 알아보았다.
+
+변수가 필요한 이유를 이해하는것은 중요하다 생각하며
+
+크게 세가지 정도로 생각하고있다.
+
+1. 코드의 재활용
+2. 중복값 방지
+3. 유지보수 용이
+
+##### 코드의 재활용
+
+![스크린샷 2022-01-19 오후 3.25.58](/Users/sonseongho/Library/Application Support/typora-user-images/스크린샷 2022-01-19 오후 3.51.07.png)
+
+##### 중복값 방지
+
+##### ![스크린샷 2022-01-19 오후 4.01.32](/Users/sonseongho/Library/Application Support/typora-user-images/스크린샷 2022-01-19 오후 4.01.32.png)
+
+##### 유지보수 용이
+
+![스크린샷 2022-01-19 오후 3.51.36](/Users/sonseongho/Library/Application Support/typora-user-images/스크린샷 2022-01-19 오후 3.51.36.png)
 
