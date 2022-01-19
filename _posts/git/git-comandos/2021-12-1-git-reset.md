@@ -19,11 +19,14 @@ tags:
 
 ## Git - reset
 
-* Comando que mueve la **rama** según le indique el puntero **[HEAD]**
+* Extrae los ficheros del {Indice/Index}
+  * Reinvierte el ``git add <archive>``
 
-  * Si **[HEAD]** esta apuntando a la **rama master** y ejecutamos el comando ``git reset <identificador commit anterior>`` hara que la **rama master** apunte al **commit** que le hayamos indicado dentro de su **[Repo.Local]**
+* Este comando mueve la **rama** según le indique el puntero **[HEAD]**
 
-* Deshacer los cambios locales y los **commits** trayendo la última versión del servidor y apuntar a la copia local principal
+  * Si **[HEAD]** esta apuntando a la **rama master** y ejecutamos el comando ``git reset <identificador commit anterior>`` hará que la **rama master** apunte al **commit** que le hayamos indicado dentro de su **[Repo.Local]**
+
+* Deshacer los **cambios locales** y los **commits** trayendo la última versión del servidor **GITHUB** y apuntar a la copia local principal
 
   ``git reset --hard origin/master``
 
@@ -58,4 +61,4 @@ Dependiendo de los argumentos que le añadamos puede afectar al :
 
     * Deja el archivo en su estado original antes de que fuera **modificado** , **agregado** mediante **``git add``** y confirmado con el comando **``git commit``** al historial de **commits**
 
-    * **Este es el comando más peligroso ya que en caso de error no se podra recuperar los cambios o commits sobre los archivos**
+    * **Este es el comando más peligroso ya que en caso de error no se podrá recuperar los cambios o commits sobre los archivos**

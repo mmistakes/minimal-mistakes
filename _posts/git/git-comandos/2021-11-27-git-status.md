@@ -19,10 +19,12 @@ tags:
 
 ## Git - status
 
-Muestra el estado de los ficheros dentro del **(Directorio de Trabajo - Working Directory)** el cual engloba tanto la parte **(Untracked)** como **{Tracked}**
+* Muestra el estado de los ficheros dentro del **(Directorio de Trabajo/Working Directory-wd)** la cual engloba la parte **(Untracked)** como del **{Tracked}**
 
 > Recuerda : <br>
 > Git siempre compara los archivos del **último commit** con los archivos que tienes tanto en el **(Untracked)** como en las demás etapas del sistema **Git** como son **{UnModified}** / **{Modified}** / **{Staging Area}** para ver las diferencias entre ellos y así saber si han habido cambios en el código del **[Repositorio]** del proyecto o no.
+
+### Estado de los Ficheros
 
 ```git
 ←←←←←← [Repositorio] →→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→
@@ -33,13 +35,19 @@ Muestra el estado de los ficheros dentro del **(Directorio de Trabajo - Working 
             ||               |               |                         |                  |
 ```
 
-* **(Untracked)** : No existe seguimiento del archivo **``Git commit``** dentro del **(Working Directory)** con respecto al **último commit** del **[Repositorio]** descargado.
+* **(Untracked)**
+  * Archivos no existentes en el commit anterior
+  * No existe seguimiento del archivo **``Git commit``** dentro del **(Working Directory)** con respecto al **último commit** del **[Repositorio]** descargado.
 
-* **{UnModified}** : Después de hacer ``Git add <archivo>`` el archivo queda guardado y esperando a ser enviado mediante ``Git commit -m "mensaje"`` y ``Git push`` al **»Repositorio Remoto«**
+* **{UnModified}**
+  * Después de hacer ``Git add <archivo>`` el archivo queda guardado y esperando a ser enviado mediante ``Git commit -m "mensaje"`` y ``Git push`` al **»Repositorio Remoto«**
 
-* **{Modified}** : Los archivos **UnModified** han sido modificados respecto al ``commit anterior`` lo que significa que para poder enviarse al **»Repositorio Remoto«** se debe de hacer otra vez ``Git add <archive>`` y ``Git commit -m "mensaje"``
+* **{Modified}**
+  * Modificados con respecto al commit anterior
+  * Los archivos **UnModified** han sido modificados respecto al ``commit anterior`` lo que significa que para poder enviarse al **»Repositorio Remoto«** se debe de hacer otra vez ``Git add <archive>`` y ``Git commit -m "mensaje"``
 
-* **{Staged}** : Archivos y directorios registrados para el **``próximo commit``**
+* **{Staged}**
+  * Archivos y directorios registrados para el **``próximo commit``**
 
 ```markdown
                              [Repository]
@@ -62,7 +70,7 @@ Muestra el estado de los ficheros dentro del **(Directorio de Trabajo - Working 
 
 ## Git - status -s
 
-Muestra el estado en formato más conciso y una serie de claves que nos ayuda a comprender mejor el estado de los archivos
+* Muestra el estado en formato más conciso y una serie de claves que nos ayuda a comprender mejor el estado de los archivos
 
 ```git
 Git status -s

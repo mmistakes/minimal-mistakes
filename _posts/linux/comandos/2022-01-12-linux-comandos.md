@@ -69,7 +69,7 @@ $ comando  [opciones...]  [argumentos...]   <recursos>
 
 #### [Parametros]
 
-* Es un **[Argumento]** que proporciona información al **comando** o a una de sus **opciones**
+* Es un **[Argumento]** que proporciona información al **comando** o a algunas de sus **opciones**
   * Ejemplo : ``-o file``
 
 ```bash
