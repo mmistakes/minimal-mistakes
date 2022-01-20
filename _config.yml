@@ -14,6 +14,8 @@
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "dark"
 # Site Settings
+disqus_url: https://xenco82.disqus.com/
+disqus_id: xenco82
 locale                   : "ko-KR"
 title                    : "xenco의 back-end"
 title_separator          : "-"
