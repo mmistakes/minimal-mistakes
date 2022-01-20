@@ -407,6 +407,16 @@ java.lang.RuntimeException: Something went wrong during the communication with t
 
 As we can see, the resource we created was released, even if the stream was terminated with an error. That's awesome!
 
+## 6. The `Pull` Type
+
+As we said more than once, the fs2 defines streams as a _pull_ type, which means that the next element of the stream is effectively computed by the stream just in time.
+
+To honor this kind of behavior, under the hood, the library implements the functions of the `Stream` type using the `Pull` type. This type, which is available also as a public API, lets us implementing stream modelling them as the pull model we've just described.
+
+The `Pull[F[_], O, R]` type represents a program that can pull output values of type `O`, while computing a result of type `R`, while using amn effect of type `F`. As we can see, the type introduces the new type variable `R` that is not available in the `Stream` type.
+
+Basically, the result of type `R` of a `Pull` represents the information available after the emission of the element of type `O` that should be used to emit the next value of a stream. For this reason, using `Pull` directly means to develop recursive programs. Ok, one step at time. Let's analyze the `Pull` type and its methods first. 
+
 
 
 
