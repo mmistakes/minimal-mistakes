@@ -19,6 +19,9 @@ tags:
 
 ## Git - checkout
 
+* **Switch branches or restore working tree files**
+  * Cambiar de rama o restaurar archivos de **(árbol de trabajo-working tree files)**
+
 > Todo los cambios que hagamos sobre un archivo que esta **{Tracked/Rastreado}** se realizan desde el **(Working Directory)**
 
 * Elimina los cambios de ``<file>`` que pasan de **{Modified}** a **{Unmodified}**
@@ -37,7 +40,11 @@ Reemplazar los cambios locales
 * Reemplaza los cambios del **(Working Directory/wd)** con el último contenido del **[HEAD]** , los cambios que ya han sido agregados al **{Staging Area/Index}** como los nuevos archivos , se mantendrán sin cambios
 
 ```bash
-            flag
+            flag = Parecida a las opciones pero no posee argumentos en si mismo
+              ↓    Actúan como valores boolean (true / false) 
+              ↓    Al añadirlo se activa o se desactivan cierta acciones del 
+              ↓    comando (por defecto : false) 
+              ↓    Ej: --verbose, --output , -name , -c
               ↓    
 git checkout -- <archivo>
 ```

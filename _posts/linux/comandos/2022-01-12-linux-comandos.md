@@ -67,6 +67,16 @@ $ comando  [opciones...]  [argumentos...]   <recursos>
 
 * Nota : Cuando se pone **[elementos...]** se indica que puede ir más **elementos** del mismo tipo dentro de los corchetes
 
+#### [Flags]
+
+* Parecida a las **opciones** pero no posee **argumentos** en si mismo
+  * Actúan como valores **boolean** (**true** / **false**)
+  * Al añadirlos a un comando se activa o se desactivan cierta **acciones/funciones** de los comandos
+  * Generalmente no toman **argumentos**
+    * **(Por defecto : false)**
+  
+  * Ejemplos : ``--verbose``, ``--output`` , ``-name`` , ``-c``
+
 #### [Parametros]
 
 * Es un **[Argumento]** que proporciona información al **comando** o a algunas de sus **opciones**
@@ -134,8 +144,6 @@ status # Subcomando
 
     * Ejemplo : El formato para la expansión aritmética es:
       ``$(( expression ))``
-
-
 
 #### [Argumentos]
 
@@ -271,6 +279,13 @@ comando
 # Modificadores o datos de entrada 
 # Se usa para modificar el comportamiento de un comando.
 [opciones...] 
+```
+
+```bash
+# Activa o desactiva funciones/acciones de los comandos 
+# Generalmente no toman argumentos
+# Por defecto tienen el valor false
+[flags...] 
 ```
 
 ```bash
