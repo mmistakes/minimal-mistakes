@@ -1,15 +1,15 @@
 ---
 layout: single
-title:  "Job_Info_Crawling"
-categories: Crawliing
-tag: [python,crawling,blog,github,채용정보, 사람인, 크롤링,파이썬,입문,기초]
+title: "Job_Info_Crawling"
+categories: Crawling
+tag:
+  [python, crawling, blog, github, 채용정보, 사람인, 크롤링, 파이썬, 입문, 기초]
 toc: true
 sidebar:
-    nav: "docs"
+  nav: "docs"
 ---
 
 ## 사람인 크롤링
-
 
 ```python
 import time
@@ -26,11 +26,9 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 ```
 
-
 ```python
 search = "데이터 분석 파이썬"
 ```
-
 
 ```python
 # 사람인 페이지 진입
@@ -40,13 +38,11 @@ driver.get("http://www.saramin.co.kr")
 time.sleep(2)
 ```
 
-
 ```python
 # 검색창 클릭
 driver.find_element_by_css_selector(".btn_search").click( )
 time.sleep(2)
 ```
-
 
 ```python
 # 검색버튼 한번 더 접근 후 검색 시작
@@ -55,7 +51,6 @@ element.send_keys(search)
 driver.find_element_by_id("btn_search_recruit").click( )
 time.sleep(2)
 ```
-
 
 ```python
 # 채용정보 더보기 클릭
@@ -70,12 +65,10 @@ except:
     pass
 ```
 
-
 ```python
 # 반복횟수 정하기 (1페이지에  40개니까 320개 정도 추출)
 repeat = 8
 ```
-
 
 ```python
 # 빈리스트 만들기
@@ -83,7 +76,6 @@ title_list = []
 condition_list = []
 url_list = []
 ```
-
 
 ```python
 for i in tqdm_notebook(range(2, repeat+2)):
@@ -123,12 +115,10 @@ for i in tqdm_notebook(range(2, repeat+2)):
         break
 ```
 
-
 ```python
 print(len(title_list), len(url_list), len(condition_list))
     # 리스트 길이가 같아야 엑셀로 변환 가능하니 한번 확인
 ```
-
 
 ```python
 df = pd.DataFrame({'title':title_list, 'condition':condition_list, 'url':url_list})

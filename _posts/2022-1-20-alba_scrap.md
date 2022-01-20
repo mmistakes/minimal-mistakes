@@ -1,29 +1,31 @@
 ---
 layout: single
 title: "알바천국 스크래퍼"
-categories: Crawiling
+categories: Crawling
 tag:
-  [
-    python,
-    머신러닝,
-    blog,
-    github,
-    알바천국,
-    스크래퍼,
-    크롤링,
-    멀티캠퍼스,
-    국비지원,
-    교육,
-    분석,
-    데이터,
-    파이썬,
-  ]
- ---
+[
+python,
+머신러닝,
+blog,
+github,
+알바천국,
+스크래퍼,
+크롤링,
+멀티캠퍼스,
+국비지원,
+교육,
+분석,
+데이터,
+파이썬,
+]
+toc: true
+sidebar:
+    nav: "docs"
+---
 
 ## 알바천국 스크래퍼
 
 ### 필요모듈 import
-
 
 ```python
 import os
@@ -33,7 +35,6 @@ from bs4 import BeautifulSoup
 ```
 
 ### 데이터 저장하는 함수 정의
-
 
 ```python
 # 실행시 콘솔 초기화
@@ -52,7 +53,6 @@ def write_data(company):
         writer.writerow(list(job.values()))
 ```
 
-
 ```python
 alba_url = "http://www.alba.co.kr"
 
@@ -64,7 +64,6 @@ brands = main.find_all("li",{"class": "impact"})
 # 알바천국에 슈퍼 브랜드로 분류된 브랜드들의 정보를 가져옴
 # request & bs4 이용해 정보를 담고 있는 태그를 통해 값을 가져옴
 ```
-
 
 ```python
 # 개별 브랜드 정보 스크래핑
@@ -87,7 +86,6 @@ for brand in brands:
         tbody = jobs_soup.find("div", {"id":"NormalInfo"}).find("tbody")
 
 ```
-
 
 ```python
         # class 명이 'divide'인 tr태그와 클래스가 없는 tr태그를 모두 가져옴
