@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Book_bestseller_Crawling"
-categories: Selenium
+categories: Crawling
 tag: [python,crawling,blog,github,책정보, 교보문고, 크롤링,파이썬,입문,기초]
 toc: true
 sidebar:
@@ -11,19 +11,19 @@ sidebar:
 ## 교보문고 크롤링
 
 ```python
-import sys 
-import os 
-import time   
+import sys
+import os
+import time
 import warnings
-warnings.filterwarnings('ignore') 
+warnings.filterwarnings('ignore')
 
-import pandas as pd 
-import numpy as np 
-from tqdm import tqdm_notebook  
+import pandas as pd
+import numpy as np
+from tqdm import tqdm_notebook
 import chromedriver_autoinstaller
 
-from bs4 import BeautifulSoup   
-from selenium import webdriver 
+from bs4 import BeautifulSoup
+from selenium import webdriver
 ```
 
 
@@ -51,36 +51,36 @@ price_list = []
 
 ```python
 for i in tqdm_notebook(range(2, 11)):
-    # 예외발생하면 멈추기 위해 try, except 활용 
-    try: 
+    # 예외발생하면 멈추기 위해 try, except 활용
+    try:
         articles = "div.detail > div.title > a" # title의 위치
         article_raw = driver.find_elements_by_css_selector(articles)
-            # 한페이지의 title 정보를 가진 article_raw 데이터 추출 
-            
+            # 한페이지의 title 정보를 가진 article_raw 데이터 추출
+
         for article in article_raw:
             title = article.text         # article.text로 제목 하나 가져오기
             title_list.append(title)     # title_list에 더해주기
-                   
-        authors = "div.detail > div.author" # author 위치 
-        authors_raw = driver.find_elements_by_css_selector(authors)    
-        
+
+        authors = "div.detail > div.author" # author 위치
+        authors_raw = driver.find_elements_by_css_selector(authors)
+
         for author in authors_raw:
             auth = author.text
             info_list.append(auth)
-                   
-        price_lo = "div.detail > div.price > strong" # price 위치 
-        price_raw = driver.find_elements_by_css_selector(price_lo)    
-            
+
+        price_lo = "div.detail > div.price > strong" # price 위치
+        price_raw = driver.find_elements_by_css_selector(price_lo)
+
         for price in price_raw:
             pri = price.text
             price_list.append(pri)
-        
+
         print(i-1, title)
         time.sleep(1)
-        
+
         # 다음 페이지로 넘어가기
         driver.find_element_by_link_text(str(i)).click( )
-        
+
     except:
         break
 ```

@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Job_Info_Crawling"
-categories: Selenium
+categories: Crawliing
 tag: [python,crawling,blog,github,채용정보, 사람인, 크롤링,파이썬,입문,기초]
 toc: true
 sidebar:
@@ -12,18 +12,18 @@ sidebar:
 
 
 ```python
-import time   
-import warnings  
-warnings.filterwarnings('ignore')  
-    # 경고무시 
+import time
+import warnings
+warnings.filterwarnings('ignore')
+    # 경고무시
 
-import pandas as pd  
-import numpy as np  
-from tqdm import tqdm_notebook  
-import chromedriver_autoinstaller  
+import pandas as pd
+import numpy as np
+from tqdm import tqdm_notebook
+import chromedriver_autoinstaller
 
-from bs4 import BeautifulSoup  
-from selenium import webdriver  
+from bs4 import BeautifulSoup
+from selenium import webdriver
 ```
 
 
@@ -49,7 +49,7 @@ time.sleep(2)
 
 
 ```python
-# 검색버튼 한번 더 접근 후 검색 시작 
+# 검색버튼 한번 더 접근 후 검색 시작
 element = driver.find_element_by_id("ipt_keyword_recruit")
 element.send_keys(search)
 driver.find_element_by_id("btn_search_recruit").click( )
@@ -87,11 +87,11 @@ url_list = []
 
 ```python
 for i in tqdm_notebook(range(2, repeat+2)):
-  
-    try: 
+
+    try:
         articles = "div.area_job > h2 > a" # url과 css정보를 담고 있는 a tag 특정
         article_raw = driver.find_elements_by_css_selector(articles)
-        
+
         # for문을 통해 한페이지(40개)의 title과 url의 정보를 하나씩 추출해서 리스트로 저장
         for article in article_raw:
             title = article.get_attribute('title')
@@ -99,26 +99,26 @@ for i in tqdm_notebook(range(2, repeat+2)):
             url = article.get_attribute('href')
             url_list.append(url)
         time.sleep(1)
-      
+
         infos = "div.area_job > div.job_condition" # condition정보를 담고 있는 div 클래스 특정
         infos_raw = driver.find_elements_by_css_selector(infos)
-        
+
         # for문을 통해 condition 정보를 하나씩 추출
         for info in infos_raw:
             condition = info.text
             condition = condition.replace("\n","/")
             condition_list.append(condition)
         time.sleep(1)
-        
+
         print(i-1, title)
-        
+
         ## 10페이지 이후엔 "다음"버튼을 눌려야하므로 if문 활용
-        if i % 10 == 1: 
+        if i % 10 == 1:
             driver.find_element_by_link_text("다음").click( )
-        else:    
+        else:
             driver.find_element_by_link_text(str(i)).click( )
         time.sleep(1)
-        
+
     except:
         break
 ```
