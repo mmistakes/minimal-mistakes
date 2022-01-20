@@ -3,24 +3,24 @@ layout: single
 title: "알바천국 스크래퍼"
 categories: Crawling
 tag:
-[
-python,
-머신러닝,
-blog,
-github,
-알바천국,
-스크래퍼,
-크롤링,
-멀티캠퍼스,
-국비지원,
-교육,
-분석,
-데이터,
-파이썬,
-]
+  [
+    python,
+    머신러닝,
+    blog,
+    github,
+    알바천국,
+    스크래퍼,
+    크롤링,
+    멀티캠퍼스,
+    국비지원,
+    교육,
+    분석,
+    데이터,
+    파이썬,
+  ]
 toc: true
 sidebar:
-    nav: "docs"
+  nav: "docs"
 ---
 
 ## 알바천국 스크래퍼
