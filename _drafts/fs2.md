@@ -415,9 +415,38 @@ To honor this kind of behavior, under the hood, the library implements the funct
 
 The `Pull[F[_], O, R]` type represents a program that can pull output values of type `O`, while computing a result of type `R`, while using amn effect of type `F`. As we can see, the type introduces the new type variable `R` that is not available in the `Stream` type.
 
-Basically, the result of type `R` of a `Pull` represents the information available after the emission of the element of type `O` that should be used to emit the next value of a stream. For this reason, using `Pull` directly means to develop recursive programs. Ok, one step at time. Let's analyze the `Pull` type and its methods first. 
+Basically, the result of type `R` of a `Pull` represents the information available after the emission of the element of type `O` that should be used to emit the next value of a stream. For this reason, using `Pull` directly means to develop recursive programs. Ok, one step at time. Let's analyze the `Pull` type and its methods first.
 
+Think to the `Pull` type as a way to represent a stream as a _head_ and a _tail_, much like we can represent a list. The element of type `O` emitted by the `Pull` represents the head. However, since a stream is a possible infinite data structure, we cannot represent it with a finite one. So, we return a type `R`, that is all the information that we need to compute the tail of the stream.
 
+Without further ado, let's look at the methods of the `Pull` type. The first method we encounter is the smart constructor `output1`, which creates a `Pull` that emits a single value of type `O` and then completes.
+
+```scala
+val tomHollandActorPull: Pull[Pure, Actor, Unit] = Pull.output1(tomHolland)
+```
+
+We can convert a `Pull` having the `R` type variable bound to `Unit` directly to a `Stream` by using the `stream` method:
+
+```scala
+val tomHollandActorStream: Stream[Pure, Actor] = tomHollandActorPull.stream
+```
+
+In fact, revamping the analogy with the finite collection, a `Pull` that returns `Unit` is like a `List` with a head and empty tail.
+
+Unlike the `Stream` type, which defines a monad instance on the type variable `O`, a `Pull` forms a monad instance on the type variable `R`. If we think, it's logical: All we want is to concatenate the information that allow us to compute the tail of the stream. So, if we want to create a sequence of `Pull` containing all the actors that play Spider Man, we can do the following:
+
+```scala
+val spiderMenActorPull: Pull[Pure, Actor, Unit] = 
+  tomHollandActorPull >> Pull.output1(tobeyMaguire) >> Pull.output1(andrewGarfield)
+```
+
+Conversely, we can convert a `Stream` into a `Pull` using the `echo` method:
+
+```scala
+val avengersActorsPull: Pull[Pure, Actor, Unit] = avengersActors.pull.echo
+```
+
+TODO
 
 
 
