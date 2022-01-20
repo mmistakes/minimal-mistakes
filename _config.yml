@@ -28,6 +28,7 @@ logo                     : # path of logo image to display in the masthead, e.g.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
+future                   : true
 comments:
   provider               : #"disqus"
   disqus: #"https://xenco82.disqus.com/admin"   
