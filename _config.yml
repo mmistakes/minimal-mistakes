@@ -14,12 +14,10 @@
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "dark"
 # Site Settings
-disqus_url: https://xenco82.disqus.com/
-disqus_id: co_xen
 locale                   : "ko-KR"
 title                    : "xenco의 back-end"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title_separator          : "|"
+subtitle                 : "xenco"
 name                     : "xenco"
 description              : "dev-xenco"
 url                      : "https://xenco82.github.io"
@@ -28,13 +26,13 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 future                   : true
 comments:
-  provider               : #"disqus"
+  provider               : "disqus"
   disqus: #"https://xenco82.disqus.com/admin"   
-    shortname            :  #"xenco82"
+    shortname            : "xencoweb"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -105,10 +103,10 @@ analytics:
 # Site Author
 author:
   name             : "Xenco82"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/logo.jpg"
   bio              : "back-end **xenco** portfolio."
-  location         : "in korea"
-  email            :
+  location         : "in south korea"
+  email            : "xenco82@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -124,7 +122,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+       #url: #"https://github.com/Xenco82"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -290,3 +288,6 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
+
+date_format: "%Y-%m-%d"
