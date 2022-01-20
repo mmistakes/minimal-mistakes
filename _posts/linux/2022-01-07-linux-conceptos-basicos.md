@@ -119,7 +119,7 @@ man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
 /etc/shadow
 ```
 
-#### Ejemplo de Información Pública
+#### Ejemplo - Información Pública
 
 ```bash
 /etc/shadow

@@ -24,9 +24,9 @@ Ruta del directorio
 
 ``project/.git/objects``
 
-* * *
+### Directorio .git
 
-Es un ``directorio oculto`` llamado **.git** que contiene todos los archivos necesarios para que funcione el sistema **Git**
+* Es un ``directorio oculto`` llamado **.git** que contiene todos los archivos necesarios para que funcione el sistema **Git**
 
 * Es la zona donde se almacenan todos los archivos que se añadieron ``git add`` desde el **{Staging Area}** al [Repo.Local] cuando ejecutamos el comando ``git commit``
 
@@ -36,8 +36,10 @@ Es un ``directorio oculto`` llamado **.git** que contiene todos los archivos nec
 
 Resumen :
 
-  > Utiliza los commits del {Staging Area} y del último commit registrado del [Repo.Local] como punto de control y así poder ver las diferencias entre ambos archivos
+> Utiliza los commits del {Staging Area} y del último commit registrado del [Repo.Local] como punto de control y así poder ver las diferencias entre ambos archivos
 
 * En su interior abarca una estructura básica de archivos y directorios que permite el buen funcionamiento del mismo
 
-        .git/ → Directorio (Repositorio)
+```bash
+.git/ → Directorio (Repositorio)
+```

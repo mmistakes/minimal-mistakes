@@ -17,7 +17,7 @@ tags:
   - git-manual
 ---
 
-## Branch (Rama)
+## Git branch (Rama)
 
 > Representa una especie de línea de tiempo que va marcando los distintos cambios que le vamos haciendo a los archivos del proyecto a través de los ``git add <archive>`` y los ``git commit -m "Mensaje"`` que vamos ejecutando sobre el repositorio principal
 
@@ -37,8 +37,6 @@ git branch
   nueva-rama-proyecto
 ```
 
-* * *
-
 * En esta imagen podemos ver un ejemplo del funcionamiento y desarrollo de las ``ramas``
 
 ![Alt texto](/assets/images/graficos/snapshot-3.jpg "Concepto de Repositorio")
@@ -48,7 +46,19 @@ git branch
 * Los ``commits`` de las ramas están ordenados por fecha
 * Se pueden ``crear`` , ``eliminar`` tantas ``ramas`` como se necesiten para cada momento
 
-Comando para mostrar las ``ramas`` que tienen disponible el proyecto
+### Opciones del comando branch
+
+#### Opción ``-M``
+
+* Ejecuta 2 opciones en 1
+  * Por un lado ejecuta la opción ``--force``
+    * Que restablece una ``<rama>`` a un ``<punto de partida/startpoint>`` incluso si existe
+  * Por el otro lado ejecuta la opción ``--move``
+    * Permite cambiar el nombre de la ``<rama>`` incluso si la nueva ``<rama>`` ya existe
+
+* Ejemplo : ``git branch -M <rama>``
+
+### Comando para mostrar las ``ramas`` que tienen disponible el proyecto
 
 ``git branch``
 
@@ -87,17 +97,15 @@ Deleted branch nueva-rama-proyecto (was 5c2b6a9)
 
 ## Ramas necesarias para un proyecto
 
-* * *
+* Para ciertos tipos de proyectos existen unas ``ramas`` básicas:
 
-Para ciertos tipos de proyectos existen unas ``ramas`` básicas:
-
-Como son las ramas típicas : **master** , **feature** , **developer** , **hotfix** , **release** que se puede ir creando dependiendo de las necesidades del proyecto
+* Como son las ramas típicas : **master** , **feature** , **developer** , **hotfix** , **release** que se puede ir creando dependiendo de las necesidades del proyecto
 
 ## Descripción de las Ramas
 
-* **master** → Rama Principal , predefinida y estandar **(No tocar)**
+* **master** → Rama Principal , predefinida y estándar **(No tocar)**
 
-  * Sobre esta **rama** nunca se trabajará ya que es donde se van a integrar todos los cambios las demas ``ramas`` que vayamos haciendo en el proyecto
+  * Sobre esta **rama** nunca se trabajará ya que es donde se van a integrar todos los cambios las demás ``ramas`` que vayamos haciendo en el proyecto
 
   * Es la rama de sólo y para **Producción**
 

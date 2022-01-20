@@ -10,12 +10,14 @@ metacaracteres
 monitorizado
 posicionales
 Redirección
+referenciado
 renice
 secuencialmente
 subcomando
 subdirectorio
 subdirectorios
 tabulación
+tldr
 zcfp
 zxfp
 zxvf
