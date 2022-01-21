@@ -19,8 +19,6 @@ toc_sticky: true
 데이터베이스(Database)는 "데이터의 집합"이라고 한다.
 데이터 베이스에는 일상생활의 대부분의 정보가 저장되고 관리된다.
 
----
-
 ## DBMS ? (DB의 소프트웨어)
 
 DBMS (Database management System)는  **"데이터 베이스를 관리하고 운영하는 소프트웨어" ** 이다.
@@ -42,8 +40,6 @@ DBMS (Database management System)는  **"데이터 베이스를 관리하고 운
 대표적인 관계형 데이터베이스의 소프트웨어는 [MySQL](https://www.mysql.com/), [Oracle](https://www.oracle.com/database/), [SQLite](https://www.sqlite.org/index.html), [PostgresSQL](https://www.postgresql.org/), [MariaDB](https://mariadb.org/) 등이 있다.
 (이 중 가장 실무에서 많이 쓰는 **"MySQL"**을 사용하기로 결정 유튜브에서 추천해주신)
 
----
-
 ### DBMS 분류(유형)
 
 계층형, 망형, 관계형, 객체지향형, 객체관계형 등이 있다. 
@@ -63,8 +59,6 @@ DBMS (Database management System)는  **"데이터 베이스를 관리하고 운
 # SQL 이란? : DBMS에서 사용되는 언어
 
 SQL 을 배워야 DBMS(데이터베이스 소프트웨어)를 잘 다룰 수 있고,  DBMS 안의 데이터베이스를 조작 할 수 있다. 그러므로 SQL에 대해 알아본다!
-
----
 
 **SQL(Structured Query Language)은 이러한 DBMS에 데이터를 구축, 관리하고 활용하기 위해서 사용되는 언어가 "SQL" 이다. ** 간단히 말해서 **"SQL"은 데이터베이스 용 프로그래밍 언어**이다.
 SQL은  구조화된 쿼리 언어이며, **데이터베이스에 쿼리를 보내 원하는 데이터를 가져오거나 삽입**할 수 있다.  
