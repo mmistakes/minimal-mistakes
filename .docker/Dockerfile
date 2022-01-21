@@ -8,6 +8,7 @@ COPY . .
 # Install missing packages in ubuntu docker container
 RUN apt-get update && apt-get install -y --no-install-recommends \
     vim \
+    git \
     ruby-full \
     build-essential \
     zlib1g-dev \
@@ -15,6 +16,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 RUN gem install jekyll bundler:2.3.5
+
+RUN bundle init
 
 RUN bundle
 
