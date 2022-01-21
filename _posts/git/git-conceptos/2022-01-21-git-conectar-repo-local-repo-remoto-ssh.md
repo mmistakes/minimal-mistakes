@@ -85,7 +85,7 @@ page_css:
 
 * Para ello vamos al apartado de la plataforma llamada ``Settings``
 
-![Imagen Github](/assets/images/config1-rsa.jpg)
+![Imagen Github](https://github.com/rvsweb/guia-basica-git-github/blob/master/assets/images/config1-rsa.jpg?raw=true)
 
 * Seleccionamos la sección ``SSH and GPG Keys``
 
