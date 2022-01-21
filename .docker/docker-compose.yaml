@@ -1,0 +1,31 @@
+version: '3.2'
+
+services:
+  # this builds current ros/librealsense on top of ubuntu
+  website:
+    image: website
+    build:
+      context: ../
+      dockerfile: .docker/Dockerfile
+    environment:
+      - DISPLAY=$DISPLAY
+    container_name: website
+    tty: true # docker run -t
+    stdin_open: true # docker run -i
+    privileged: true
+    network_mode: host
+    ports:
+      - "4000:4000"
+    #user: 1000:1000
+    working_dir: /website
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ~/.Xauthority:/root/.Xauthority
+      - type: bind
+        source: ../
+        target: /website
+        #- /etc/group:/etc/group:ro
+        #- /etc/passwd:/etc/passwd:ro
+        #- /etc/shadow:/etc/shadow:ro
+        #- /etc/sudoers.d:/etc/sudoers.d:ro
+
