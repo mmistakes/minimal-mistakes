@@ -126,7 +126,17 @@ provide shell access.
 
 ![Imagen Github](/assets/images/git/config-rsa/config5-rsa.jpg)
 
+![Imagen Github](/assets/images/git/config-rsa/config5-rsa.png)
+
+![Imagen Github](/assets/images/git/config-rsa/config5-rsa.gif)
+
+<img src="/assets/images/filename.jpg" alt="" class="full">
+
 <img src="/assets/images/git/config-rsa/config5-rsa.jpg" alt="imagen github">
+
+<img src="/assets/images/git/config-rsa/config5-rsa.jpg" alt="imagen github">
+
+![imagen prueba](/assets/images/git/config-rsa/config5-rsa.jpg)
 
 7. Desde la terminal de **UNIX/Linux** ejecutamos el comando ``git clone`` pero añadiendo la URL del tipo **ssh**
 
