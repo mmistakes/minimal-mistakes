@@ -2,6 +2,8 @@
 main:
   - title: "donate"
     url: "https://toss.me/xenco"
+  - title: "Category"
+    url: /categories/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
