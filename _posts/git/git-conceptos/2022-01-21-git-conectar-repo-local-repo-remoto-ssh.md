@@ -96,7 +96,7 @@ page_css:
 {% include figure image_path="/assets/images/git/config-rsa/config3-rsa.jpg" alt="grafico github %}
 
 * Dentro de la sección ``SSH Keys/Add new``
-  * Agreamos un titulo para referenciarlo en la sección ``Title``
+  * Agregamos un titulo para referenciarlo en la sección ``Title``
   * Le añadimos el código que obtuvimos de la ``id.rsa.pub`` que nos genero el comando
     ``ssh-keygen -t rsa -C correo@host.dominio``
   * Al terminar pulsamos el botón ``Add SSH Key``
