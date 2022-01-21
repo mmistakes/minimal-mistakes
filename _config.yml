@@ -21,6 +21,8 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Chris Schindlbeck"
 description              : "roboticide."
+port                     : 4000
+host                     : "0.0.0.0"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -111,13 +113,13 @@ analytics:
 author:
   name             : "Chris Schindlbeck"
   avatar           : "/assets/images/bio_photo.jpg"
-  bio              : "Software Developer for Robotics and autonomous Systems"
+  bio              : "Software Developer for Robotics"
   location         : "Germany"
   email            :
   links:
     # - label: "Email"
     #   icon: "fas fa-fw fa-envelope-square"
-    #   url: "mailto:chris.schindlbeck@gmail.com"
+    #   url: "mailto:xxx@gmail.com"
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://www.imr.uni-hannover.de/schindlbeck.html"
@@ -276,6 +278,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      #comments: # true
       share: true
       related: true
