@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Git - Conectar mediante SSH un Repositorio local con la plataforma GITHUB
+title: Git - Conectar mediante ssh un Repositorio local con la plataforma GITHUB
 date: 2022-01-21
 classes: wide
 toc: true
@@ -85,15 +85,15 @@ page_css:
 
 * Para ello vamos al apartado de la plataforma llamada ``Settings``
 
-![Imagen Github](/assets/images/git/config-rsa/config1-rsa.jpg)
+![Imagen Github](/assets/images/config1-rsa.jpg)
 
 * Seleccionamos la sección ``SSH and GPG Keys``
 
-![Imagen Github](/assets/images/git/config-rsa/config2-rsa.jpg)
+![Imagen Github](/assets/images/config2-rsa.jpg)
 
 * Seleccionamos la sección ``SSH Keys`` y el botón ``New SSH Key``
 
-![Imagen Github](/assets/images/git/config-rsa/config3-rsa.jpg)
+![Imagen Github](/assets/images/config3-rsa.jpg)
 
 * Dentro de la sección ``SSH Keys/Add new``
   * Agregamos un titulo para referenciarlo en la sección ``Title``
@@ -101,7 +101,7 @@ page_css:
     ``ssh-keygen -t rsa -C correo@host.dominio``
   * Al terminar pulsamos el botón ``Add SSH Key``
 
-![Imagen Github](/assets/images/git/config-rsa/config4-rsa.jpg)
+![Imagen Github](/assets/images/config4-rsa.jpg)
 
 5. Comprobar que la conexión se ha establecido entre tu sistema **UNIX/Linux** y la plataforma **GITHUB** ejecutamos el siguiente comando
 
@@ -124,24 +124,7 @@ provide shell access.
 
 6. Ahora nos dirigimos a la plataforma y elegimos el **Repositorio Remoto** que queremos clonar en nuestro **[Repo.Local]** y así poder continuar trabajando
 
-![Imagen Github](/assets/images/git/config-rsa/config5-rsa.jpg)
-
-![Imagen Github](/assets/images/git/config-rsa/config5-rsa.png)
-
-![Imagen Github](/assets/images/git/config-rsa/config5-rsa.gif)
-
-<img src="/assets/images/filename.jpg" alt="" class="full">
-
-<img src="/assets/images/git/config-rsa/config5-rsa.jpg" alt="imagen github">
-
-![Alt texto](/assets/images/git/config-rsa/config5-rsa.jpg "Concepto de Repositorio")
-
-![Alt texto](/assets/images/graficos/snapshot-1.jpg "Concepto de Repositorio")
-
-![imagen prueba](/assets/images/git/config-rsa/config5-rsa.jpg)
-
-![Alt texto](https://docs.github.com/assets/cb-17145/images/help/settings/settings-sidebar-ssh-keys.png "Concepto de Repositorio")
-
+![Imagen Github](/assets/images/config5-rsa.jpg)
 
 7. Desde la terminal de **UNIX/Linux** ejecutamos el comando ``git clone`` pero añadiendo la URL del tipo **ssh**
 
