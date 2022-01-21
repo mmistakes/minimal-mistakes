@@ -1,8 +1,6 @@
 ---
-[comment]: <> (layout: single)
+layout: single
 title:  "Scientific Publications"
-[comment]: <> (date:   2018-04-04 13:16:01 +0100)
-[comment]: <> (categories: jekyll update)
 categories: wide
 ---
 
