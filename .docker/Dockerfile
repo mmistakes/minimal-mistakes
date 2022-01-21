@@ -17,8 +17,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN gem install jekyll bundler:2.3.5
 
-RUN bundle init
-
 RUN bundle
 
 CMD ["jekyll", "serve"]
