@@ -105,8 +105,8 @@ author:
   name             : "SeungHyunLee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "🔥"
-  location         : "Republic of Koreak"
-  email            : "oak20005@naver.com"
+  location         : "Republic of Korea"
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
