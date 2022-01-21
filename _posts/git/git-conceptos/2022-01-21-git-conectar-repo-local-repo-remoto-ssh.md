@@ -140,6 +140,9 @@ provide shell access.
 
 ![imagen prueba](/assets/images/git/config-rsa/config5-rsa.jpg)
 
+![Alt texto](https://docs.github.com/assets/cb-17145/images/help/settings/settings-sidebar-ssh-keys.png "Concepto de Repositorio")
+
+
 7. Desde la terminal de **UNIX/Linux** ejecutamos el comando ``git clone`` pero añadiendo la URL del tipo **ssh**
 
 ```bash

@@ -81,7 +81,9 @@ Directorios principales del proyecto
 
 ### • Commit - (Snapshot) - Instantánea/Captura
 
-![Alt texto](/assets/images/graficos/snapshot-1.jpg "Concepto de Repositorio") → Commit - Instantánea/Captura (Snapshot) de los archivos / directorios
+![Alt texto](/assets/images/graficos/snapshot-1.jpg "Concepto de Repositorio")
+
+Commit - Instantánea/Captura (Snapshot) de los archivos / directorios
 
 * Cada vez que se ejecuta un ``git commit -m "Mensaje"`` se crea un nuevo circulo **○** que contiene los ultimos cambios que hayamos hecho en el proyecto  
 
