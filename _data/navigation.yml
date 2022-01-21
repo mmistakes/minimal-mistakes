@@ -2,6 +2,8 @@
 main:
   #- title: "Home"
   #  url: "/"
+  - title: "Archive"
+    url: /year-archive/
   - title: "Introduce"
     url: /about/
   - title: "Category"
