@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Git - Conectar mediante SSH un Repositorio local con la plataforma GITHUB
+title: Git - Conectar mediante ssh un Repositorio local con la plataforma GITHUB
 date: 2022-01-21
 classes: wide
 toc: true
