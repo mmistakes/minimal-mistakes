@@ -279,7 +279,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: false
-      comments: # true
+      comments: true
       share: true
       related: true
       
