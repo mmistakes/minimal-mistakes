@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Git - Conectar Repo.Local con Repo.Remoto mediante SSH
+title: Git - Conectar mediante SSH un Repositorio local con la plataforma GITHUB
 date: 2022-01-19
 classes: wide
 toc: true
@@ -10,7 +10,9 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-repositorio-bare
+  - git-ssh
+  - git-ssh-keygen
+  - git-github
 tags:
   - git-basico
   - git-manual
@@ -18,7 +20,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Conectar Repo.local con Repo.Remoto mediante SSH
+## Conectar mediante SSH un Repositorio local con la plataforma GITHUB
 
 * Para conectar nuestro proyecto local desde el **[Repo.Local]** con el proyecto del **»Repo.Remoto«** de la plataforma **GITHUB** necesitamos configurar nuestro servicio **ssh** desde nuestro sistema **UNIX/Linux** y sincronizarlo con el sistema de la plataforma **GITHUB**, con ello podremos realizar operaciones de envió y recibimiento de información
 
@@ -27,6 +29,7 @@ page_css:
     * Dentro del **(Directorio de Trabajo/Working Directory/wd)** y con el usuario de **UNIX/Linux** con el que vayamos a utilizar ejecutamos los siguientes comandos :
 
     ``git config --global --user.name "nombre-usuario-git"``
+
     ``git config --global --user.email email-asociado-git@nombre.dominio``
 
 2. Una vez creada la cuenta tenemos que generar las **claves ssh** para poder sincronizar tanto el **[Repo.Local]** de nuestro sistema con el **»Repo.Remoto«** de la plataforma **GITHUB** mediante los siguientes comandos
@@ -82,15 +85,15 @@ page_css:
 
 * Para ello vamos al apartado de la plataforma llamada ``Settings``
 
-![Configuracion](/assets/images/git/config-rsa/config1-rsa.jpg/ "Configuración")
+![Configuracion](/assets/images/git/config-rsa/config1-rsa.jpg)
 
 * Seleccionamos la sección ``SSH and GPG Keys``
 
-![Configuracion](/assets/images/git/config-rsa/config2-rsa.jpg/ "Configuración")
+![Configuracion](/assets/images/git/config-rsa/config2-rsa.jpg)
 
 * Seleccionamos la sección ``SSH Keys`` y el botón ``New SSH Key``
 
-![Configuracion](/assets/images/git/config-rsa/config3-rsa.jpg/ "Configuración")
+![Configuracion](/assets/images/git/config-rsa/config3-rsa.jpg)
 
 * Dentro de la sección ``SSH Keys/Add new``
   * Agreamos un titulo para referenciarlo en la sección ``Title``
@@ -98,7 +101,7 @@ page_css:
     ``ssh-keygen -t rsa -C correo@host.dominio``
   * Al terminar pulsamos el botón ``Add SSH Key``
 
-![Configuracion](/assets/images/git/config-rsa/config4-rsa.jpg/ "Configuración")
+![Configuracion](/assets/images/git/config-rsa/config4-rsa.jpg)
 
 5. Comprobar que la conexión se ha establecido entre tu sistema **UNIX/Linux** y la plataforma **GITHUB** ejecutamos el siguiente comando
 
@@ -121,7 +124,7 @@ provide shell access.
 
 6. Ahora nos dirigimos a la plataforma y elegimos el **Repositorio Remoto** que queremos clonar en nuestro **[Repo.Local]** y así poder continuar trabajando
 
-![Configuracion](/assets/images/git/config-rsa/config5-rsa.jpg/ "Configuración")
+![Configuracion](/assets/images/git/config-rsa/config5-rsa.jpg)
 
 7. Desde la terminal de **UNIX/Linux** ejecutamos el comando ``git clone`` pero añadiendo la URL del tipo **ssh**
 
