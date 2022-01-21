@@ -9,7 +9,10 @@ toc_label: "Point"
 toc_sticky: true
 ---
 
-SQL이 뭐지? 하면서 유튜브를 한 분이 추천해주셔서 
+코드스테이츠 섹션3를 시작한지 3일차에 SQL이라는 언어를 배우게되었고, 해매고있을때 스터디장님이 유튜브를 추천해주셔서 해당 영상을 보고 개념과, 다루는 방법을 배워보기로 하였다. (감사해요!!)
+[해당 강의유튜브](https://www.youtube.com/watch?v=0cRhit1EJM0&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl8Pm&index=1)
+
+---
 
 # 데이터베이스(DB)
 
@@ -77,5 +80,7 @@ SQL을 사용할 수 있는 데이터베이스와 달리, 데이터의 구조가
 
 
 
-
+>출처
+>[강의유튜브](https://www.youtube.com/watch?v=0cRhit1EJM0&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl8Pm&index=1)
+>코드스테이츠
 
