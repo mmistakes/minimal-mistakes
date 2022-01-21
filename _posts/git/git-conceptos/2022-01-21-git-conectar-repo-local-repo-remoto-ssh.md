@@ -134,7 +134,9 @@ provide shell access.
 
 <img src="/assets/images/git/config-rsa/config5-rsa.jpg" alt="imagen github">
 
-<img src="/assets/images/git/config-rsa/config5-rsa.jpg" alt="imagen github">
+![Alt texto](/assets/images/git/config-rsa/config5-rsa.jpg "Concepto de Repositorio")
+
+![Alt texto](/assets/images/graficos/snapshot-1.jpg "Concepto de Repositorio")
 
 ![imagen prueba](/assets/images/git/config-rsa/config5-rsa.jpg)
 
