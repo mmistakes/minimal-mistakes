@@ -446,8 +446,45 @@ Conversely, we can convert a `Stream` into a `Pull` using the `echo` method:
 val avengersActorsPull: Pull[Pure, Actor, Unit] = avengersActors.pull.echo
 ```
 
-TODO
+In the above example, the first invoked function is `pull`, which returns a `ToPull[F, O]` type. This last type is a wrapper around the `Stream` type, which aim is to group all functions concerning the conversion into a `Pull` instance:
 
+```scala
+// fs2 library code
+final class ToPull[F[_], O] private[Stream] (
+  private val self: Stream[F, O]) extends AnyVal
+```
+
+Then, the `echo` function makes the conversion. It's interesting to look at the implementation of the `echo` method, since it make no conversion at all:
+
+```scala
+// fs2 library code
+def echo: Pull[F, O, Unit] = self.underlying
+```
+
+In fact, the `echo` mode just returns the internal representation of the `Stream`, called `underlying`, since a stream is represents as a pull internally:
+
+```scala
+// fs2 library code
+final class Stream[+F[_], +O] private[fs2] (private[fs2] val underlying: Pull[F, O, Unit])
+```
+
+Another way to convert a `Stream` into a `Pull` is to use the `uncons` function, that returns a `Pull` pulling a tuple containing the head chunk of the stream and its tail. For example, we can call `uncons` the `avengersActors` stream:
+
+```scala
+val unconsAvengersActors: Pull[Pure, INothing, Option[(Chunk[Actor], Stream[Pure, Actor])]] =  
+  avengersActors.pull.uncons
+```
+
+Wow! It's a very intricate type. Let's describe it step by step. First, since the original stream uses the `Pure` effect, also the resulting `Pull` uses the same effect. Then, since the `Pull` deconstructs the original stream, it cannot emit any value, and so the output type is `INothing` (a type alias for scala `Nothing`). It follows the value returned by the `Pull`, i.e. the deconstruction of the original `Stream`.
+
+The returned value is an `Option` because the `Stream` may be empty: If there is no more value in the original `Stream`, then we will have a `None`. Otherwise, we will have the head of the stream as a `Chunk`, and a `Stream` representing the tail of the original stream.
+
+There is also a variant of the original `uncons` method returning not the first `Chunk` of the stream, but the first element of stream. It's called `uncons1`:
+
+```scala
+val uncons1AvengersActors: Pull[Pure, INothing, Option[(Actor, Stream[Pure, Actor])]] = 
+  avengersActors.pull.uncons1
+```
 
 
 
