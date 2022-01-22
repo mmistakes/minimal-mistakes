@@ -486,8 +486,104 @@ val uncons1AvengersActors: Pull[Pure, INothing, Option[(Actor, Stream[Pure, Acto
   avengersActors.pull.uncons1
 ```
 
+With these bullet in our gun, it's time to write down some functions that uses the `Pull` type. As we said, due to the structure of the type, the functions implemented using the `Pull` type are often recursive.
 
+For example, without using the `Stream.filter` method, we can write a pipe filtering from a stream of actors all them with a given first name:
 
+```scala
+def takeByName(name: String): Pipe[IO, Actor, Actor] =
+  def go(s: Stream[IO, Actor], name: String): Pull[IO, Actor, Unit] =
+    s.pull.uncons1.flatMap {
+      case Some((hd, tl)) =>
+        if (hd.firstName == name) Pull.output1(hd) >> go(tl, name)
+        else go(tl, name)
+      case None => Pull.done
+    }
+  in => go(in, name).stream
+```
 
+First, we need to accumulate the actors in the stream that fulfill the filtering condition. So, we apply a typical pattern of functional programming, and we define an inner function that we use to recur. Let's call this function `go`.
 
- 
+Then, we deconstruct the stream using `uncons1` to retrieve its first element. Since the `Pull` type forms a monad on the `R` type, we can use the `flatMap` method to recur:
+
+```scala
+s.pull.uncons1.flatMap {
+```
+
+If we have a `None` value, then we're done, and terminate the recursion using the `Pull.done` method, returning a `Pull[Pure, INothing, Unit]` instance:
+
+```scala
+case None => Pull.done
+```
+
+Otherwise, we pattern match the `Some` value:
+
+```scala
+case Some((hd, tl)) =>
+```
+
+If the first name of the actor representing the head of the stream has the given first name, we output the actor and recur with the tail of the stream. Otherwise, we recur with the tail of the stream:
+
+```scala
+if (hd.firstName == name) Pull.output1(hd) >> go(tl, name)
+else go(tl, name)
+```
+
+Finally, we define the whole `Pipe` calling the `go` function properly, and use the `stream` method to convert the `Pull` instance into a `Stream` instance:
+
+```scala
+in => go(in, name).stream
+```
+
+Now, we can use the pipe we just defined to filter the avengers stream, getting only the actors with the "Chris" as first name:
+
+```scala
+val avengersActorsCalledChris: Stream[IO, Unit] = 
+  avengersActors.through(takeByName("Chris")).through(toConsole)
+```
+
+## 7. Using Concurrency in Streams
+
+One of the most used fs2 features is the ability to use concurrency in streams. In fact, it's possible to implement many of the concurrency patterns using the primitives provided by the `Stream` type.
+
+The first function we will analyze is `merge`, which lets us running two streams concurrently, collecting the results in a single stream as they are produced. The execution halts when both streams have halted. For example, we can merge JLA and Avengers concurrently, adding some sleep to the execution of each stream:
+
+```scala
+val concurrentJlActors: Stream[IO, Actor] = liftedJlActors.evalMap(actor => IO {
+  Thread.sleep(400)
+  actor
+})
+
+val liftedAvengersActors: Stream[IO, Actor] = avengersActors.covary[IO]
+val concurrentAvengersActors: Stream[IO, Actor] = liftedAvengersActors.evalMap(actor => IO {
+  Thread.sleep(200)
+  actor
+})
+
+val mergedHeroesActors: Stream[IO, Unit] =
+  concurrentJlActors.merge(concurrentAvengersActors).through(toConsole)
+```
+
+The output to the console of the above program is something similar to the following:
+
+```
+Actor(7,Scarlett,Johansson)
+Actor(0,Henry,Cavill)
+Actor(8,Robert,Downey Jr.)
+Actor(9,Chris,Evans)
+Actor(1,Gal,Godot)
+Actor(10,Mark,Ruffalo)
+Actor(11,Chris,Hemsworth)
+Actor(2,Ezra,Miller)
+Actor(12,Jeremy,Renner)
+Actor(3,Ben,Fisher)
+Actor(4,Ray,Hardy)
+Actor(5,Jason,Momoa)
+``` 
+
+As we may expect, the stream contains an actor of the JLA more or less every two actors of the Avengers. Once the Avengers actors are finished, the JLA actors fulfill the rest of the stream.
+
+If we don't care about the results of the second stream running concurrently, we can use the  `concurrently method instead. This method is very useful when we need to run concurrently two process there are independent of each other . Imagine that we have a microservice that needs to save actors into a database, and send to a broker and event concerning the creation of a new actor.
+
+TODO
+
