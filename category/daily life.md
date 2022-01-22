@@ -1,0 +1,8 @@
+---
+
+layout: category
+
+title: Daily
+
+---
+
