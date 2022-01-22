@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[JPA] Application 개발"
-date: "2022-01-01 15:31:40"
+date: " 2022-01-22 15:45:07"
 categories: JPA
 tag: [JPA, hibernate]
 toc: true
@@ -12,7 +12,7 @@ author_profile: true
 
 ## ✔ JPA 구동 방식
 
-![jpa구동방식](https://user-images.githubusercontent.com/53969142/150360123-48c4138c-bb5d-4021-8afc-9b6e416aee67.PNG)
+<img src="https://user-images.githubusercontent.com/53969142/150360123-48c4138c-bb5d-4021-8afc-9b6e416aee67.PNG" alt="JPA 구동 방식" width="500" height="300">
 
 1. 설정 정보 조회
 2. Persistence 객체를 통해 EntityManagerFactory 객체를 얻는다
