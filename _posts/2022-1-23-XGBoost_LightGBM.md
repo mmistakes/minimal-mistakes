@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "XGBoost 산데르센 고객 데이터"
+title: "XGBoost 산탄데르 고객 데이터"
 categories: Data_ML
 tag:
   [
@@ -13,6 +13,8 @@ tag:
     이상치,
     제거,
     xgboost, 
+    santander,
+    산탄데르
     lightgbm,
     산데르센,
     멀티캠퍼스,
@@ -30,7 +32,7 @@ sidebar:
 ## XGBoost, LightGBM 분류학습
 - 머신러닝 분류 성능을 높이는 두가지 방법?  
 - 이상치 제거 vs 하이퍼 파라미터 튜닝  
-- 산데르덴은행 고객 데이터를 활용
+- 산탄데르은행 고객 데이터를 활용
 
 ### 1. 데이터 전처리
 
