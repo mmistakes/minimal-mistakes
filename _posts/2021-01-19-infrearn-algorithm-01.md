@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[알고리즘] 인프런 강의, 알고리즘을 배워보자!"
-categories: Algorithm-1
+categories: Algorithm
 tag: [JavaScript, algorithm]
 ---
 
@@ -14,3 +14,4 @@ tag: [JavaScript, algorithm]
 현재 애매하게 자바스크립트 문법은 알지만, 활용을 잘 못하는 나에게 딱 맞는 강의하고 생각해서 듣기로 결정했다!
 
 게을러지지말고 끝까지 다 풀어보자!
+
