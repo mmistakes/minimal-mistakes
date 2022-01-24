@@ -1,3 +1,14 @@
+---
+title: 'how-to-write-by-markdown'
+categories:
+  - Markdown
+tags:
+  - Markdown
+toc: true
+toc_sticky: true
+toc_label: 'Markdown'
+---
+
 # [공통] 마크다운 markdown 작성법
 
 # 1. 마크다운에 관하여
@@ -37,8 +48,7 @@
   =============
   ```
 
-  This is an H1
-  =============
+  # This is an H1
 
 - 작은제목: 문서 부제목
 
