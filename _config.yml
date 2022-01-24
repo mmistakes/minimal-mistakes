@@ -107,7 +107,9 @@ author:
   bio              : "Started on **2022-01-24~**"
   location         : "South Korea"
   email            : "djfldrhkdeo97@naver.com"
-  facebook         : "facebook.com"
+  Facebook         : "https://www.facebook.com/profile.php?id=100007252669118"
+  GitHub           : "https://github.com/lilclown97"
+  Instagram        : "https://www.instagram.com/yu_nys/"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -130,6 +132,9 @@ author:
 
 # Site Footer
 footer:
+  Facebook         : "https://www.facebook.com/profile.php?id=100007252669118"
+  GitHub           : "https://github.com/lilclown97"
+  Instagram        : "https://www.instagram.com/yu_nys/"
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -148,7 +153,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:오후 7:38 2022-01-24
+      # url:
 
 
 # Reading Files
