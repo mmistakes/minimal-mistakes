@@ -110,7 +110,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: "djfldrhkdeo97@naver.com"
+      # url: "djfldrhkdeo97@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -119,13 +119,13 @@ author:
       # url: "https://twitter.com/"
     - label: "Facebook"
        icon: "fab fa-fw fa-facebook-square"
-        url: "https://www.facebook.com/profile.php?id=100007252669118"
+      #  url: "https://www.facebook.com/profile.php?id=100007252669118"
     - label: "GitHub"
        icon: "fab fa-fw fa-github"
-        url: "https://github.com/lilclown97"
+      #  url: "https://github.com/lilclown97"
     - label: "Instagram"
        icon: "fab fa-fw fa-instagram"
-        url: "https://www.instagram.com/yu_nys/"
+      #  url: "https://www.instagram.com/yu_nys/"
 
 # Site Footer
 footer:
@@ -135,10 +135,10 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-       url: "https://www.facebook.com/profile.php?id=100007252669118"
+      # url: "https://www.facebook.com/profile.php?id=100007252669118"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/lilclown97"
+      # url: "https://github.com/lilclown97"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -147,7 +147,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       url: "https://www.instagram.com/yu_nys/"
+      # url: "https://www.instagram.com/yu_nys/"
 
 
 # Reading Files
