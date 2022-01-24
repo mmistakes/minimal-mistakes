@@ -107,7 +107,7 @@ author:
   bio              : "Started on **2022-01-24~**"
   location         : "South Korea"
   email            : "djfldrhkdeo97@naver.com"
-  facebook         : ""
+  facebook         : "naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -120,7 +120,7 @@ author:
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-       url: "naver.com"
+      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
