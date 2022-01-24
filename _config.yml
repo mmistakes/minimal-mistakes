@@ -24,7 +24,7 @@ subtitle                 : # site tagline that appears below site title in masth
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : https://live.staticflickr.com/3186/3038508265_850d4f3573_k.jpg
+teaser                   : # https://live.staticflickr.com/3186/3038508265_850d4f3573_k.jpg
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
