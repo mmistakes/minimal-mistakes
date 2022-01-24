@@ -75,7 +75,7 @@ $ comando  [opciones...]  [argumentos...]   <recursos>
   * Generalmente no toman **argumentos**
     * **(Por defecto : false)**
   
-  * Ejemplos : ``--verbose``, ``--output`` , ``-name`` , ``-c``
+  * Ejemplos : ``--verbose``, ``--output`` , ``-ngame`` , ``-c``
 
 #### [Parametros]
 
