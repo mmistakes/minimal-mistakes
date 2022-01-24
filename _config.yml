@@ -107,18 +107,15 @@ author:
   bio              : "I am an **amazing** person."
   location         : "Seoul, Republic of Koreahere"
   email            :
-#   links:
-#     - label: "Email"
-#       icon: "fas fa-fw fa-envelope-square"
-#       url: "mailto:asdm159@gmail.com"
-#     - label: "Website"
-#       icon: "fas fa-fw fa-link"
-#       # url: "https://your-website.com"
-#     - label: "GitHub"
-#       icon: "fab fa-fw fa-github"
-#       url: "https://github.com/Kyuhan1230"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:asdm159@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Kyuhan1230"
 
-# Site Footer
+Site Footer
 footer:
   links:
     - label: "GitHub"
