@@ -30,7 +30,7 @@ page_css:
     * Salida estándar **(Pantalla de la terminal)**
     * Salida estándar de errores **(Pantalla de la terminal)**
 
-![Argumento](/assets/images/linux/argumentos/argumentos_comando_shell.jpg/ "Ejemplo de comandos")
+![Argumento](https://github.com/rvsweb/guia-basica-git-github/blob/master/assets/images/linux/argumentos/argumentos_comando_shell.jpg?raw=true "Ejemplo de comandos")
 
 * **Cadena de caracteres** que indican a la **shell** de **UNIX/Linux** la ejecución de una **acción específica**
 
@@ -75,7 +75,7 @@ $ comando  [opciones...]  [argumentos...]   <recursos>
   * Generalmente no toman **argumentos**
     * **(Por defecto : false)**
   
-  * Ejemplos : ``--verbose``, ``--output`` , ``-name`` , ``-c``
+  * Ejemplos : ``--verbose``, ``--output`` , ``-ngame`` , ``-c``
 
 #### [Parametros]
 
