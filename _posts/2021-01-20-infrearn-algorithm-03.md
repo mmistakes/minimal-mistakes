@@ -5,8 +5,6 @@ categories: Algorithm
 tag: [JavaScript, algorithm]
 title: "[알고리즘] 인프런강의 알고리즘, 수 1-5문제 - 최솟값(...문법, sort(), 난쟁이 키합(조합) splice활용!"
 
-
-
 > **문제 :   영어단어가 입력되면  단어에 포함된 ‘A'를 모두 ’#‘으로 바꾸어 출력해라**
 
 풀이) 
