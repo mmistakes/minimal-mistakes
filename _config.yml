@@ -118,14 +118,14 @@ author:
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
     - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-       url: "https://www.facebook.com/profile.php?id=100007252669118"
+       icon: "fab fa-fw fa-facebook-square"
+        url: "https://www.facebook.com/profile.php?id=100007252669118"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-       url: "https://github.com/lilclown97"
+       icon: "fab fa-fw fa-github"
+        url: "https://github.com/lilclown97"
     - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-       url: "https://www.instagram.com/yu_nys/"
+       icon: "fab fa-fw fa-instagram"
+        url: "https://www.instagram.com/yu_nys/"
 
 # Site Footer
 footer:
