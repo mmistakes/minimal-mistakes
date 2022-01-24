@@ -116,14 +116,14 @@ author:
       # url: "https://your-website.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/Kyuhan1230"
 
 # Site Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/Kyuhan1230"
 
 
 # Reading Files
