@@ -103,7 +103,7 @@ analytics:
 author:
   name: "KIM YEONGWAN"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "TID Blog"
+  bio: "Today I Learned"
   location: "South Korea"
   email:
   links:
