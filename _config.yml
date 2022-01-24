@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "lilclown97's circus"
+title                    : "lilclown97's Circus"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "lilclown97"
@@ -110,7 +110,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: "mailto:djfldrhkdeo97@naver.com"
+      # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -118,14 +118,14 @@ author:
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
     - label: "Facebook"
-       icon: "fab fa-fw fa-facebook-square"
-        url: "https://www.facebook.com/profile.php?id=100007252669118"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
     - label: "GitHub"
-       icon: "fab fa-fw fa-github"
-        url: "https://github.com/lilclown97"
+      icon: "fab fa-fw fa-github"
+      # url: "https://github.com/"
     - label: "Instagram"
-       icon: "fab fa-fw fa-instagram"
-        url: "https://www.instagram.com/yu_nys/"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
@@ -135,10 +135,10 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-       url: "https://www.facebook.com/profile.php?id=100007252669118"
+      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/lilclown97"
+      # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -147,7 +147,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       url: "https://www.instagram.com/yu_nys/"
+      # url:오후 7:38 2022-01-24
 
 
 # Reading Files
