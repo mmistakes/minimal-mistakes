@@ -583,7 +583,56 @@ Actor(5,Jason,Momoa)
 
 As we may expect, the stream contains an actor of the JLA more or less every two actors of the Avengers. Once the Avengers actors are finished, the JLA actors fulfill the rest of the stream.
 
-If we don't care about the results of the second stream running concurrently, we can use the  `concurrently method instead. This method is very useful when we need to run concurrently two process there are independent of each other . Imagine that we have a microservice that needs to save actors into a database, and send to a broker and event concerning the creation of a new actor.
+If we don't care about the results of the second stream running concurrently, we can use the  `concurrently` method instead. A common use case for this method is the implementation of a producer-consumer pattern. For example, we can implement program with a producer that uses a `cats.effect.std.Queue` to share JLA actors with a consumer, which simply prints them to the console:
+
+```scala
+val queue: IO[Queue[IO, Actor]] = Queue.bounded[IO, Actor](10)
+
+val concurrentlyStreams: Stream[IO, Unit] = Stream.eval(queue).flatMap { q =>
+  val producer: Stream[IO, Unit] =
+    liftedJlActors.evalMap(q.offer).metered(1.second)
+  val consumer: Stream[IO, Unit] =
+    Stream.fromQueueUnterminated(q).evalMap(actor => IO.println(s"Consumer $actor"))
+    
+  producer.concurrently(consumer)
+}
+```
+
+The first line declares a `Queue` of `Actor`s of size 10. Then, we use streams transform the effect containing the queue. In detail, we declared a `producer` stream, which scans the JLA actors and adds them to the queue:
+
+```scala
+val producer: Stream[IO, Unit] =
+  liftedJlActors.evalMap(q.offer).metered(1.second)
+```
+
+The `metered` method allows to wait a given time between two consecutive pulls. We decide to wait 1 second.
+
+Then, we declare a `consumer` stream, which pulls an actor from the queue and prints it to the console:
+
+```scala
+val consumer: Stream[IO, Unit] =
+  Stream.fromQueueUnterminated(q).evalMap(actor => IO.println(s"Consumer $actor"))
+```
+
+Finally, we run both the producer and the consumer concurrently:
+
+```scala
+producer.concurrently(consumer)
+```
+
+One important feature of the running two streams through the `concurrently` method is that the second stream halts when the first stream is finished.
+
+Moreover, using streams we can also run concurrently a set of streams, deciding the degree of concurrency _a priori_. The method `parJoin` does exactly this. Contrary to the `concurrently` method, the results of the streams are merged in a single stream, and no assumption is made on streams' termination.
+
+We can try to print the actors playing superheroes of the JLA, the Avengers and Sprider Man concurrently:
+
+```scala
+val parJoinedActors: Stream[IO, Unit] =
+  Stream(
+    jlActors.through(toConsole),
+    avengersActors.through(toConsole),
+    spiderMen.through(toConsole)
+  ).parJoin(4)
+```
 
 TODO
-
