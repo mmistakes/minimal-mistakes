@@ -107,9 +107,7 @@ author:
   bio              : "Started on **2022-01-24~**"
   location         : "South Korea"
   email            : "djfldrhkdeo97@naver.com"
-  Facebook         : "https://www.facebook.com/profile.php?id=100007252669118"
-  GitHub           : "https://github.com/lilclown97"
-  Instagram        : "https://www.instagram.com/yu_nys/"
+  Facebook         : ""
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
