@@ -106,11 +106,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Started form **2022-01-24~**"
   location         : "Somewhere"
-  email            :
+  email            : "djfldrhkdeo97@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      # url: "djfldrhkdeo97@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -119,7 +119,7 @@ author:
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      # url: "https://www.facebook.com/profile.php?id=100007252669118"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
