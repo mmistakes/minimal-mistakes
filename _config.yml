@@ -105,7 +105,7 @@ author:
   name             : "lilclown97"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Started form **2022-01-24~**"
-  location         : "Somewhere"
+  location         : "South Korea"
   email            : "djfldrhkdeo97@naver.com"
   links:
     - label: "Email"
@@ -122,10 +122,10 @@ author:
       # url: "https://www.facebook.com/profile.php?id=100007252669118"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      # url: "https://github.com/lilclown97"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      # url: "https://www.instagram.com/yu_nys/"
 
 # Site Footer
 footer:
@@ -135,10 +135,10 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      # url:https://www.facebook.com/profile.php?id=100007252669118
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      # url:https://github.com/lilclown97
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -147,7 +147,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      # url:https://www.instagram.com/yu_nys/
 
 
 # Reading Files
