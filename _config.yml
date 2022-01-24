@@ -110,17 +110,17 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:asdm159@gmail.com"
+      # url: "mailto:asdm159@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/Kyuhan1230/"
+      # url: "https://github.com/Kyuhan1230/"
 
 Site Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/Kyuhan1230"
+      # url: "https://github.com/Kyuhan1230"
 
 
 # Reading Files
