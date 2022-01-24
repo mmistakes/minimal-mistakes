@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "JS's DEVLOG"
+title                    : "JS's DEVLOG :computer: " 
 title_separator          : "-"
 subtitle                 : "Don't Give Up" # site tagline that appears below site title in masthead
-name                     : "Kim Ji Soo"
+name                     : "Kim Ji Soo "
 description              : "JS's Development BLOG"
 url                      : "https://us13579.github.io"  # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -102,7 +102,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Kim Ji Soo"
+  name             : "Kim Ji Soo :blush: "
   avatar           : /assets/images/js2.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "JS's Development BLOG"
   location         : "Korea/Daegu"
@@ -210,6 +210,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -288,6 +289,6 @@ defaults:
       author_profie: true
       toc: true
       sidebar:
-         nav: "docs"
-
+          nav: "docs"
+      sidebar_main: true
 date_format: "%y-%m-%d"

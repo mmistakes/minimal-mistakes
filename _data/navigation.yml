@@ -7,22 +7,30 @@ main:
 
 
 docs:
-  - title: Getting Started
+  - title: "RECORD"
     children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
+      - title: "TIL"
+        url: /categories/TIL/
+      - title: "BLOG"
+        url: /categories/BLOG/
+  - title: "Languages"    
+    children: 
+    - title: "JAVA"
+      url: /categories/JAVA/
+    - title: "HTML"
+      url: /categories/HTML/
+    - title: "CSS"
+      url: /categories/CSS/
+    - title: "JAVA SCRIPT"
+      url: /categories/JAVASCRIPT/
+  - title: "Coding Test"
+    children:
+      - title: "BOJ"
+        url: /categories/BOJ/
+      - title: "SWEA"
+        url: /categories/SWEA/
+      - title: "PROGRAMMERS"
+        url: /categories/PROGRAMMERS/
+
+ 
         
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
