@@ -590,28 +590,35 @@ val queue: IO[Queue[IO, Actor]] = Queue.bounded[IO, Actor](10)
 
 val concurrentlyStreams: Stream[IO, Unit] = Stream.eval(queue).flatMap { q =>
   val producer: Stream[IO, Unit] =
-    liftedJlActors.evalMap(q.offer).metered(1.second)
+    liftedJlActors
+      .evalTap(actor => IO.println(s"[${Thread.currentThread().getName}] produced $actor"))
+      .evalMap(q.offer)
+      .metered(1.second)
   val consumer: Stream[IO, Unit] =
-    Stream.fromQueueUnterminated(q).evalMap(actor => IO.println(s"Consumer $actor"))
-    
+    Stream.fromQueueUnterminated(q)
+      .evalMap(actor => IO.println(s"[${Thread.currentThread().getName}] consumed $actor"))
   producer.concurrently(consumer)
 }
 ```
 
-The first line declares a `Queue` of `Actor`s of size 10. Then, we use streams transform the effect containing the queue. In detail, we declared a `producer` stream, which scans the JLA actors and adds them to the queue:
+The first line declares a `Queue` of `Actor`s of size 10. Then, we use streams to transform the effect containing the queue. In detail, we declared a `producer` stream, which scans the JLA actors and adds them to the queue. To understand what's going on, we also add a print statement to the console, which shows the thread name and the actor that was produced:
 
 ```scala
 val producer: Stream[IO, Unit] =
-  liftedJlActors.evalMap(q.offer).metered(1.second)
+  liftedJlActors
+    .evalTap(actor => IO.println(s"[${Thread.currentThread().getName}] produced 
+    .evalMap(q.offer)
+    .metered(1.second)
 ```
 
 The `metered` method allows to wait a given time between two consecutive pulls. We decide to wait 1 second.
 
-Then, we declare a `consumer` stream, which pulls an actor from the queue and prints it to the console:
+Then, we declare a `consumer` stream, which pulls an actor from the queue and prints it to the console with the thread name:
 
 ```scala
 val consumer: Stream[IO, Unit] =
-  Stream.fromQueueUnterminated(q).evalMap(actor => IO.println(s"Consumer $actor"))
+  Stream.fromQueueUnterminated(q)
+    .evalMap(actor => IO.println(s"[${Thread.currentThread().getName}] consumed $actor"))
 ```
 
 Finally, we run both the producer and the consumer concurrently:
@@ -620,19 +627,47 @@ Finally, we run both the producer and the consumer concurrently:
 producer.concurrently(consumer)
 ```
 
+Running the above program produces an output similar to the following:
+
+```
+[io-compute-2] produced Actor(0,Henry,Cavill)
+[io-compute-3] consumed Actor(0,Henry,Cavill)
+[io-compute-2] produced Actor(1,Gal,Godot)
+[io-compute-0] consumed Actor(1,Gal,Godot)
+[io-compute-0] produced Actor(2,Ezra,Miller)
+[io-compute-3] consumed Actor(2,Ezra,Miller)
+[io-compute-1] produced Actor(3,Ben,Fisher)
+[io-compute-3] consumed Actor(3,Ben,Fisher)
+[io-compute-1] produced Actor(4,Ray,Hardy)
+[io-compute-0] consumed Actor(4,Ray,Hardy)
+[io-compute-1] produced Actor(5,Jason,Momoa)
+[io-compute-2] consumed Actor(5,Jason,Momoa)
+```
+
+As we can see, the producer and consumer are indeed running concurrently.
+
 One important feature of the running two streams through the `concurrently` method is that the second stream halts when the first stream is finished.
 
 Moreover, using streams we can also run concurrently a set of streams, deciding the degree of concurrency _a priori_. The method `parJoin` does exactly this. Contrary to the `concurrently` method, the results of the streams are merged in a single stream, and no assumption is made on streams' termination.
 
-We can try to print the actors playing superheroes of the JLA, the Avengers and Sprider Man concurrently:
+We can try to print the actors playing superheroes of the JLA, the Avengers and Spider-Man concurrently. First, we define a `Pipe` printing the thread name and the actor being processed:
+
+```scala
+val toConsoleWithThread: Pipe[IO, Actor, Unit] = in =>
+  in.evalMap(actor => IO.println(s"[${Thread.currentThread().getName}] consumed $actor"))
+```
+
+Then, we can define the stream using the `parJoin` method:
 
 ```scala
 val parJoinedActors: Stream[IO, Unit] =
   Stream(
-    jlActors.through(toConsole),
-    avengersActors.through(toConsole),
-    spiderMen.through(toConsole)
+    jlActors.through(toConsoleWithThread),
+    avengersActors.through(toConsoleWithThread),
+    spiderMen.through(toConsoleWithThread)
   ).parJoin(4)
 ```
+
+As we can see, the method is available only on `Stream[F, Stream[F, O]]`. In fact, the method processes each stream concurrently.
 
 TODO
