@@ -31,9 +31,13 @@ sidebar:
 
 # CSS 연습(1) _정답&해설
 
-
+dsfadf
 
 ## 1. 구현화면
+
+![image-20220125211248895](C:\Users\wltn3\AppData\Roaming\Typora\typora-user-images\image-20220125211248895.png)
+
+![image-20220125211304484](C:\Users\wltn3\AppData\Roaming\Typora\typora-user-images\image-20220125211304484.png)
 
 ![image-20220125160258773](https://user-images.githubusercontent.com/67591105/150957963-ef5b48b4-4915-4a7f-a194-fc17e04a440c.png)
 
