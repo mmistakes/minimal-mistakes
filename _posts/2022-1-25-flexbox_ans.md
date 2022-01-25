@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "CSS 연습(1)"
+title: "CSS 연습(1)_정답&해설"
 categories: HTML&CSS
 tag:
   [
@@ -29,13 +29,13 @@ sidebar:
   nav: "docs"
 ---
 
-# CSS 연습(1) - 정답코드 
+# CSS 연습(1) _정답&해설
 
 
 
 ## 1. 구현화면
 
-![image-20220125160258773](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\image-20220125160258773.png)
+![image-20220125160258773](https://user-images.githubusercontent.com/67591105/150957963-ef5b48b4-4915-4a7f-a194-fc17e04a440c.png)
 
 ## 2. HTML 코드 
 
