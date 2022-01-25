@@ -288,7 +288,5 @@ defaults:
       layout: single
       author_profie: true
       toc: true
-      sidebar:
-          nav: "docs"
       sidebar_main: true
 date_format: "%y-%m-%d"
