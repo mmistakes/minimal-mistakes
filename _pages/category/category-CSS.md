@@ -1,6 +1,6 @@
 ---
 title: "CSS"
-layout: category
+layout: archive
 categories: CSS
 permalink: /category/CSS/
 author_profile: true
