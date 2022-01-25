@@ -1,0 +1,36 @@
+---
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+title:  "GitHub blog, Day 2"
+---
+
+
+# 이미지 추가, 업데이트 내역 실시간 확인 
+
+
+**블로그 생성**
+
+1. github minimal-mistakes fork
+2. _config.yml 파일 수정으로 블로그 메인 변경(개인적으로 sns 계정 추가 성공)
+
+github jekyll-theme : https://github.com/topics/jekyll-theme
+minimal-mistakes-quick start guide : https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+
+
+
+**이미지 추가**
+
+1. typora (Mark Down) github.io 폴더 열기
+2. 설정 변경 : 이미지 - copy image to custom folder - ../images/${filename}
+3. 이미지 추가 후 저장
+4. github desktop - commit to master - push to origin
