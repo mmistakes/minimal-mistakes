@@ -1,7 +1,7 @@
 ---
 title: "BLOG"
 layout: category
-permalink: /category/BLOG
+permalink: /BLOG/
 author_profile: true
 sidebar:
     nav: "docs"

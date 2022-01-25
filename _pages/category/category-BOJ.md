@@ -1,7 +1,7 @@
 ---
 title: "BOJ"
 layout: category
-permalink: /category/BOJ
+permalink: BOJ
 author_profile: true
 sidebar:
     nav: "docs"

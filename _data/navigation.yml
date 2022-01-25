@@ -10,27 +10,36 @@ docs:
   - title: "RECORD"
     children:
       - title: "TIL"
-        url: /category/TIL/
+        url: /TIL/
+        category: "TIL"
       - title: "BLOG"
-        url: /category/BLOG/
-  - title: "Languages"    
+        url: /BLOG/
+        category: "BLOG"
+  - title: "LANGUAGES"    
     children: 
     - title: "JAVA"
-      url: /category/JAVA/
+      url: /JAVA/
+      category: "JAVA"
     - title: "HTML"
-      url: /category/HTML/
+      url: /HTML/
+      category: "HTML"
     - title: "CSS"
-      url: /category/CSS/
+      url: /CSS/
+      category: "CSS"
     - title: "JAVA SCRIPT"
-      url: /category/JAVASCRIPT/
+      url: /JAVASCRIPT/
+      category: "JAVASCRIPT"
   - title: "Coding Test"
     children:
       - title: "BOJ"
-        url: /category/BOJ/
+        url: /BOJ/
+        category: "BOJ"
       - title: "SWEA"
-        url: /category/SWEA/
+        url: /SWEA/
+        category: "SWEA"
       - title: "PROGRAMMERS"
-        url: /category/PROGRAMMERS/
+        url: /PROGRAMMERS/
+        category: "PROGRAMMERS"
 
  
         
