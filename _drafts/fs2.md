@@ -149,6 +149,8 @@ Since the `Pure` effect is defined as an alias of the Scala bottom type `Nothing
 // Pure <: IO => Stream[Pure, O] <: Stream[IO, O]
 ```
 
+It's not mandatory to use the `IO` effect. We can use any other effect library that supports type classes defined in the `cats-effect` library. As an example,
+
 However, in most cases, we want to create a stream directly evaluating some statement that may produce side effects. So, for example, let's try to persist an actor through a stream:
 
 ```scala
@@ -668,6 +670,46 @@ val parJoinedActors: Stream[IO, Unit] =
   ).parJoin(4)
 ```
 
-As we can see, the method is available only on `Stream[F, Stream[F, O]]`. In fact, the method processes each stream concurrently.
+The method is available only on streams of type `Stream[F, Stream[F, O]]`. In fact, it's not part directly of the `Stream` API, but it's added by an implicit conversion as an _extension method_:
 
-TODO
+```scala
+// fs2 library code
+implicit final class NestedStreamOps[F[_], O](private val outer: Stream[F, Stream[F, O]])
+      extends AnyVal {
+  def parJoin(maxOpen: Int)(implicit F: Concurrent[F]): Stream[F, O] = ???  
+}
+```
+
+Each stream is traversed concurrently, and the maximum degree of concurrency is given in input as the parameter `maxOpen`. As we can see, the effect used to handle concurrency must satisfy the `Concurrent` bound, which is required anywhere concurrency is used in the library. 
+
+In our example, we want 4 thread to pull concurrently values from the 3 stream. In fact, running the program produces an output similar to the following:
+
+```
+[io-compute-3] consumed Actor(7,Scarlett,Johansson)
+[io-compute-1] consumed Actor(0,Henry,Cavill)
+[io-compute-0] consumed Actor(13,Tom,Holland)
+[io-compute-2] consumed Actor(8,Robert,Downey Jr.)
+[io-compute-1] consumed Actor(1,Gal,Godot)
+[io-compute-2] consumed Actor(9,Chris,Evans)
+[io-compute-1] consumed Actor(14,Tobey,Maguire)
+[io-compute-1] consumed Actor(10,Mark,Ruffalo)
+[io-compute-2] consumed Actor(2,Ezra,Miller)
+[io-compute-2] consumed Actor(15,Andrew,Garfield)
+[io-compute-0] consumed Actor(3,Ben,Fisher)
+[io-compute-1] consumed Actor(11,Chris,Hemsworth)
+[io-compute-3] consumed Actor(12,Jeremy,Renner)
+[io-compute-0] consumed Actor(4,Ray,Hardy)
+[io-compute-2] consumed Actor(5,Jason,Momoa)
+```
+
+As we can see, the thread used by the runtime are exactly 4.
+
+There are many other method available in the fs2 library concerning concurrency, such as `either`, `mergeHaltBoth`. Please, refer to the [documentation](https://oss.sonatype.org/service/local/repositories/releases/archive/co/fs2/fs2-core_2.13/3.2.0/fs2-core_2.13-3.2.0-javadoc.jar/!/fs2/index.html) for more details.
+
+## 8. Conclusions
+
+Our long journey through the main features of the fs2 library comes to an end. During the path, we introduced the concepts of `Stream` and how to declare them, both using pure values and in an effectful way. We analyzed streams internals, such as `Chunk`s and `Pull`s. We saw how to handle errors, and how a stream can safely acquire and release a resource. Finally, we focused on concurrency, and how streams can use to deal with concurrent programming. 
+
+However, fs2 is more than this. We didn't speak about how to interact with the external world, for example reading and writing files. We didn't see ho to interrupt the execution of a stream. Moreover, we didn't cite any of the many libraries that decided to build on top of fs2, such as `doobie`, `http4s`, just to cite some. However, the [documentation](https://fs2.io/#/) of fs2 is very comprehensive, and we can refer to it for more details.
+
+
