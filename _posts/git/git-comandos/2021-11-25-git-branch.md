@@ -71,6 +71,8 @@ git branch -v
 
 ### Comando para mostrar las ``ramas`` que tienen disponible el proyecto
 
+* Ejecutar el siguiente comando
+
 ```bash
 git branch
 ```
@@ -82,7 +84,7 @@ git branch
     * master
 ```
 
-Crear una nueva ``rama``
+* Crear una nueva ``rama``
 
 ```bash
 git branch nueva-rama-proyecto
@@ -96,7 +98,7 @@ develop
 nueva-rama-proyecto
 ```
 
-Eliminar la una nueva rama
+* Eliminar la una nueva rama
 
 ```bash
 git branch -d nueva-rama-proyecto
@@ -106,6 +108,15 @@ git branch -d nueva-rama-proyecto
 
 ```bash
 Deleted branch nueva-rama-proyecto (was 5c2b6a9)
+```
+
+* Crear una nueva rama desde un commit alojado en otra rama
+
+```bash
+#          Nombre de la rama que voy a crear
+#            ↓     Commit de la rama por ejemplo master que quiero agregar 
+#            ↓        ↓
+git branch rama_x  56324fg8 
 ```
 
 ## Ramas necesarias para un proyecto
