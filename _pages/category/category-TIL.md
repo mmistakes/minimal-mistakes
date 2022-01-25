@@ -1,6 +1,6 @@
 ---
 title: "TIL"
-layout: category
+layout: archive
 categories: TIL
 permalink: /category/TIL/
 author_profile: true

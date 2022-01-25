@@ -1,6 +1,6 @@
 ---
 title: "PROGRAMMERS"
-layout: category
+layout: archive
 categories: PROGRAMMERS
 permalink: /category/PROGRAMMERS/
 author_profile: true

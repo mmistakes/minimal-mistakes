@@ -1,6 +1,6 @@
 ---
 title: "JAVA_SCRIPT"
-layout: category
+layout: archive
 categories: JAVASCRIPT
 permalink: /category/JAVASCRIPT/
 author_profile: true

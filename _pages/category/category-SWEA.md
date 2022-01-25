@@ -1,6 +1,6 @@
 ---
 title: "SWEA"
-layout: category
+layout: archive
 categories: SWEA
 permalink: /category/SWEA/
 author_profile: true

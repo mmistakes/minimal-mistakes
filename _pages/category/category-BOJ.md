@@ -1,6 +1,6 @@
 ---
 title: "BOJ"
-layout: category
+layout: archive
 categories: BOG
 permalink: /category/BOJ/
 author_profile: true

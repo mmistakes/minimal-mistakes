@@ -1,6 +1,6 @@
 ---
 title: "HTML"
-layout: category
+layout: archive
 categories: HTML
 permalink: /category/HTML/
 author_profile: true
