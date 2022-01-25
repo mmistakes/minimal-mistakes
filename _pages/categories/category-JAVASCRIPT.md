@@ -1,7 +1,8 @@
 ---
 title: "JAVA_SCRIPT"
-layout: archive
+layout: category
 permalink: /category/JAVASCRIPT
 author_profile: true
 sidebar_main: true
+taxonomy: JAVASCRIPT
 ---

@@ -1,7 +1,8 @@
 ---
 title: "BOJ"
-layout: archive
+layout: category
 permalink: /category/BOJ
 author_profile: true
 sidebar_main: true
+taxonomy: BOJ
 ---

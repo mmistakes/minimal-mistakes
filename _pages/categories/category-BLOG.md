@@ -1,10 +1,8 @@
 ---
 title: "BLOG"
-layout: archive
+layout: category
 permalink: /category/BLOG
 author_profile: true
 sidebar_main: true
+taxonomy: BLOG
 ---
-
-{% assign posts = site.category.BLOG %}
-{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
