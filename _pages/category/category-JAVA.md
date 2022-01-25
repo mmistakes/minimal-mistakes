@@ -1,7 +1,8 @@
 ---
 title: "JAVA"
 layout: category
-permalink: /category/JAVA
+categories: JAVA
+permalink: /JAVA/
 author_profile: true
 sidebar:
     nav: "docs"

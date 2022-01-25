@@ -1,7 +1,8 @@
 ---
 title: "HTML"
 layout: category
-permalink: /category/HTML
+categories: HTML
+permalink: /HTML/
 author_profile: true
 sidebar:
     nav: "docs"

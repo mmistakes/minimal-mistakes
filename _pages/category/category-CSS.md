@@ -1,7 +1,8 @@
 ---
 title: "CSS"
 layout: category
-permalink: CSS
+categories: CSS
+permalink: /CSS/
 author_profile: true
 sidebar:
     nav: "docs"

@@ -1,7 +1,8 @@
 ---
 title: "SWEA"
 layout: category
-permalink: /category/SWEA
+categories: SWEA
+permalink: /SWEA/
 author_profile: true
 sidebar:
     nav: "docs"

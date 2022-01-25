@@ -1,7 +1,8 @@
 ---
 title: "PROGRAMMERS"
 layout: category
-permalink: /category/PROGRAMMERS
+categories: PROGRAMMERS
+permalink: PROGRAMMERS/
 author_profile: true
 sidebar:
     nav: "docs"

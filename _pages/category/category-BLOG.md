@@ -1,6 +1,7 @@
 ---
 title: "BLOG"
 layout: category
+categories: BLOG
 permalink: /BLOG/
 author_profile: true
 sidebar:
