@@ -1,5 +1,5 @@
 ---
-title: "History"
+title: "Historsy"
 classes: wide
 permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
