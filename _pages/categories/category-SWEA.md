@@ -1,7 +1,7 @@
 ---
 title: "SWEA"
 layout: archive
-permalink: /categories/SWEA
+permalink: /category/SWEA
 author_profile: true
 sidebar_main: true
 ---

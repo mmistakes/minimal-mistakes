@@ -1,7 +1,7 @@
 ---
 title: "Tag"
 layout: tags
-permalink: /tags/
+permalink: /tag/
 author_profile: true
 sidebar_main: true
 ---
