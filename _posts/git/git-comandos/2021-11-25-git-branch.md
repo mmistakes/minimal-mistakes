@@ -48,6 +48,17 @@ git branch
 
 ### Opciones del comando branch
 
+#### Opción ``-v``
+
+* Muestra información de las ramas que tengas y el último commit en el que se encuentre
+
+```bash
+git branch -v
+  develop   e1d6b344 Merge pull request #65 from rvsweb/feature-a
+* feature-a e1d6b344 Merge pull request #65 from rvsweb/feature-a
+  master    e1d6b344 Merge pull request #65 from rvsweb/feature-a
+```
+
 #### Opción ``-M``
 
 * Ejecuta 2 opciones en 1
@@ -60,24 +71,26 @@ git branch
 
 ### Comando para mostrar las ``ramas`` que tienen disponible el proyecto
 
-``git branch``
+```bash
+git branch
+```
 
 **Salida:**
 
-```git
+```bash
     develop
     * master
 ```
 
 Crear una nueva ``rama``
 
-```git
+```bash
 git branch nueva-rama-proyecto
 ```
 
 **Salida:**
 
-```git
+```bash
 develop
 * master
 nueva-rama-proyecto
@@ -85,13 +98,13 @@ nueva-rama-proyecto
 
 Eliminar la una nueva rama
 
-```git
+```bash
 git branch -d nueva-rama-proyecto
 ```
 
 **Salida:**
 
-```git
+```bash
 Deleted branch nueva-rama-proyecto (was 5c2b6a9)
 ```
 
@@ -113,29 +126,31 @@ Deleted branch nueva-rama-proyecto (was 5c2b6a9)
 
 * **developer** → Rama Secundaria **[Rama Padre : Master]**
 
-  * Creada a partir de la rama **master** en la mayoria de lo casos
+  * Creada a partir de la rama **master** en la mayoría de lo casos
 
-  * En la mayoria de los casos tiene las funcionalidades de la aplicación , website , no es aconsejable hacer **commits** desde esta rama, solo para pequeños cambios; ejemplo : Cambiar el texto
+  * En la mayoría de los casos tiene las funcionalidades de la aplicación , website , no es aconsejable hacer **commits** desde esta rama, solo para pequeños cambios; ejemplo : Cambiar el texto
 
 * **release** → Rama Terciaria **[Rama Padre : Master]**
 
-  * Creada a partir de la rama **master** en la mayoria de lo casos
+  * Creada a partir de la rama **master** en la mayoría de lo casos
 
   * Se utiliza para entregar en __Producción__ , su propósito es habilitar pruebas de clientes con ellas , cuando se terminen las pruebas y estén correctas dichas pruebas se fusionarán con la **rama master**  
 
 * **hotfix** → Rama Terciaria **[Rama Padre : Master]**
 
-  * Creada a partir de la rama **master** en la mayoria de lo casos
+  * Creada a partir de la rama **master** en la mayoría de lo casos
 
   * Esta rama se usa para la solución de incidentes urgentes sobre todo en ambientes de producción que necesitan una rápida respuesta.
 
 * **feature** → Rama Terciaria **[Rama Padre : Developer]**
 
-  * Creada a partir de la rama **developer** en la mayoria de lo casos
+  * Creada a partir de la rama **developer** en la mayoría de lo casos
 
   * Es la rama donde se crean nuevas funcionalidades para la aplicación con la que estemos trabajando , una vez terminada y comprobada que funciona correctamente se fusiona con la rama developer y se elimina mediante el comando
 
-    * ``git branch -d <feature>``
+   ```bash
+    git -d <feature>
+   ```
 
   * A la vez pueden existir varias ramas que iremos llamando :
 
@@ -149,13 +164,11 @@ Deleted branch nueva-rama-proyecto (was 5c2b6a9)
 
 > Lo comentado en esta sección no es una obligación pero si entra en las buenas prácticas a la hora de gestionar un proyecto de ambito general con **GIT** y **GITHUB** además de que es flexible a las necesidades de cada caso o proyecto.
 
-* * *
-
 > Considerarse como unas pautas básicas libres de seguir pero importante a tener en cuenta ya que cada empresa , equipo de desarrollo o ambito profesional tendrán sus propias reglas , estandar de desarrollo y demás condiciones de uso en este ambito del desarrollo de software.
 
 ### Breve Resumen Final (Rama/Branch)
 
-* La rama por defecto es la llamada rama **master** ; se crea de forma automática por el sistema ``git`` pero se configurar para que no sea así
+* La rama por defecto es la llamada rama **master** ; se crea de forma automática por el sistema ``bash`` pero se configurar para que no sea así
 
 * Los **nuevos commits** se añaden al final del **historial de commits** de la rama en la que nos encontremos trabajando
 
