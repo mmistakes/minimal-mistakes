@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "[인공지능]fashion mnist데이터를 활용한 인공신경망 이해하기"
+title:  "[인공지능]인공신경망 정리, fashion mnist"
 categories: AI
 tag: [python, keras, 파이썬, 머신러닝, 딥러닝, fashion mnist, 인공신경망, 다중 분류, 예측]
 toc: true
