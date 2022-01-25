@@ -1,5 +1,5 @@
 ---
-title: '2022-01-25-Java-Practice3-question3'
+title: 'Java - Practice3 - question3'
 categories:
   - Java
 tags:
