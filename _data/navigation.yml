@@ -1,36 +1,36 @@
 # main links
 main:
   - title: "Category"
-    url: /category/
+    url: /categories/
   - title: "Tag"
-    url: /tag/
+    url: /tags/
 
 
 docs:
   - title: "RECORD"
     children:
       - title: "TIL"
-        url: /category/TIL/
+        url: /categories/TIL/
       - title: "BLOG"
-        url: /category/BLOG/
+        url: /categories/BLOG/
   - title: "Languages"    
     children: 
     - title: "JAVA"
-      url: /category/JAVA/
+      url: /categories/JAVA/
     - title: "HTML"
-      url: /category/HTML/
+      url: /categories/HTML/
     - title: "CSS"
-      url: /category/CSS/
+      url: /categories/CSS/
     - title: "JAVA SCRIPT"
-      url: /category/JAVASCRIPT/
+      url: /categories/JAVASCRIPT/
   - title: "Coding Test"
     children:
       - title: "BOJ"
-        url: /category/BOJ/
+        url: /categories/BOJ/
       - title: "SWEA"
-        url: /category/SWEA/
+        url: /categories/SWEA/
       - title: "PROGRAMMERS"
-        url: /category/PROGRAMMERS/
+        url: /categories/PROGRAMMERS/
 
  
         

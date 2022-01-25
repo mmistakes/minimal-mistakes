@@ -1,7 +1,7 @@
 ---
 title: "BLOG"
 layout: category
-permalink: /category/BLOG
+permalink: /categories/BLOG
 author_profile: true
 sidebar_main: true
 taxonomy: BLOG
