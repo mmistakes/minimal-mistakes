@@ -1,17 +1,13 @@
 ---
 title: "BLOG"
-layout: category
+layout: archive
 categories: BLOG
-permalink: /BLOG/
+permalink: /category/BLOG/
 author_profile: true
 sidebar:
     nav: "docs"
 taxonomy: BLOG
 ---
 
-
-
-{% assign posts = site.category.BLOG %}
-{% for post in posts %}
-  {% include custom-archive-single.html type=entries_layout %}
-{% endfor %}
+{% assign posts = site.categories.BLOG %}
+{% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
