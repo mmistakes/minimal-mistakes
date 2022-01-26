@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Git - remote
-date: 2022-01-20
+date: 2021-12-20
 classes: wide
 toc: true
 toc_label: "Tabla de contenido"
