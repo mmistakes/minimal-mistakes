@@ -5,7 +5,7 @@ folder: "JAVA"
 categories: 
     - JAVA
 tags: 
-    - [JAVA, STUDY]
+    - [2022-01, JAVA, STUDY]
 sidebar:
     nav: "docs"
 ---
@@ -137,3 +137,7 @@ Main문이 있는 VehicleTest 클래스이다.<br>
 추상 클래스의 목적 !<br>
 <b><a style="color:red">구현의 강제를 통해 프로그램 안정성을 향상 시키기 위함을 기억하자</a></b> 🤗
 
+<br><br><br><br>
+참조<br>
+<a href="https://limkydev.tistory.com/188" target=_blank>https://limkydev.tistory.com/188</a><br>
+<a href="http://www.tcpschool.com/java/java_polymorphism_abstract" target=_blank>http://www.tcpschool.com/java/java_polymorphism_abstract</a>
