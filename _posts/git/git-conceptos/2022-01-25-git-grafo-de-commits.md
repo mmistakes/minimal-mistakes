@@ -22,15 +22,15 @@ page_css:
 
 ## Grafo de Commits del Repositorio
 
-* Grafo con la relación de todos los **commits** generados en un **[Repo.Local]**
+* Grafo con la relación de todos los **commits** generados en un **[Repositorio Local]**
 
 ### Flechas - Integración o Modificación
 
 * Las flechas de salida de los **commits** indican la relación que tiene con sus anteriores **commits**
 
-  * Una flecha : **commit** generado por **modificación** del **commit anterior**
+  * Una flecha / palitos : **commit** generado por **modificación** del **commit anterior**
 
-  * Dos flecha : **commit** generado por **integración** de una **rama** o con el **commit anterior**
+  * Dos flecha / palitos : **commit** generado por **integración** de una **rama** o con el **commit anterior**
 
 ```bash
 *   01150a8d Merge branch 'master' # INTEGRACION de una rama
@@ -49,7 +49,7 @@ page_css:
 
 * Representado por el símbolo ``~`` significa que es el **ancestro** del historial de **commit**
 
-* El número (n = posiciones) indica cuantas posiciones avanzas hacia atrás en el historial de **commits**
+* El número **(n = posiciones)** indica cuantas posiciones avanzas hacia atrás en el historial de **commits**
 
 ```bash
 # Concepto 
@@ -58,7 +58,7 @@ page_css:
 
 ## Concepto de Padres "^" de los commits - Modificación
 
-* Representado por el símbolo ``^`` significa que es el padre de un commit
+* Representado por el símbolo ``^`` significa que es el **padre** de un **commit**
 
 * Indica el número de **(n = posiciones)** de **padre de un commit** de **integración**
 
@@ -69,13 +69,13 @@ page_css:
 
 ## Grafo de Commits
 
-* Gráfico para explicar el funcionamiento
+* Gráfico para explicar el funcionamiento de los **commits** a través del **grafo de commits**
 
 ![Grafo de commits](/assets/images/grafo_commits/grafo_commits.jpg "Grafo de Commits")
 
 ### Ejemplo de Ancestro ~ de un commit
 
-* Suponiendo que nos encontramos en el último commit de la rama master
+* Suponiendo que nos encontramos en el **último commit** de la **rama master**
 
 ```bash
 # Concepto 
@@ -116,7 +116,7 @@ master^1=g699g8
 
 * En esta acción haría retroceder **2 commit** hacia atrás en la **rama master**
   
-  * Como hubo una ``integración`` entre los **commits** ``ah78j9`` y ``g699g8`` de distinta **rama** como son ``teamone/master`` y la **ramas** ``master`` , nos situarnos en el ``commit C4'`` que fue el **2º commit** en la **integración** del ``último commit``
+  * Como hubo una ``integración`` entre los **commits** ``ah78j9`` y ``g699g8`` de las distintas **ramas** como son la ramas ``teamone/master`` y la **rama** ``master`` , nos situarnos en el ``commit C4'`` que fue el **2º commit** en la **integración** del ``último commit``
 
 ```bash
 master^2=ah78j9
