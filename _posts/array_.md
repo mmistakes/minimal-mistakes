@@ -73,4 +73,4 @@ search: true
 ###  1 번 moveZeros
 
 
-
+moveZero의 내용을 먼저 보시면 
