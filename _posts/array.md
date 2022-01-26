@@ -2,7 +2,7 @@
 layout: single
 title:  "배열관련 문제 "
 categories: Array
-tag: [c++,python,LeetCode,Array]
+tag: [c++,python,LeetCode,array]
 toc: true
 author_profile: false
 sidebar:

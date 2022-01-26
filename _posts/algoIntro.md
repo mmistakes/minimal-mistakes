@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "알고리즘 소개 및 방향"
-categories: intro
+categories: introduction
 tag : Algorithm
 toc: true
 author_profile: false
