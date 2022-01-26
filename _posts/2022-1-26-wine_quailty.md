@@ -1,4 +1,5 @@
 ---
+
 layout: single
 title: "와인품질분류"
 categories: DACON
@@ -31,8 +32,8 @@ sidebar:
 ## 와인 품질 분류 
 
 - 정확도 높이는 방법?  
-    1) 예측모델을 변경한다 
-    2) 독립변수 삭제 or 가중치 부여 (와인 품질에 어떤 특성이 중요?  
+    1) 예측모델을 변경한다   
+    2) 독립변수 삭제 or 가중치 부여 (와인 품질에 어떤 특성이 중요?)    
     3) 하이퍼 파라미터 튜닝? 
 
 
@@ -254,15 +255,15 @@ train.info()  # 다행히 결측치는 없다
 
 
 ```python
-# train 데이터셋 변수간 상관관계 (train)
+# train 데이터셋 변수간 상관관계(train) 보기 - heatmap
 plt.figure(figsize=(12,12))
 sns.heatmap(data = train.corr(), annot=True);
 ```
 
-![output_8_0](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\output_8_0.png)
+![output_8_0](https://user-images.githubusercontent.com/67591105/151116625-c01279f6-618d-4e6f-986e-d0e4e76fff52.png)
 
 ```python
-# train의 각 변수별 분포 확인
+# train의 각 변수별 분포 확인 (subplot)
 plt.figure(figsize=(12,12))
 for i in range(1,13):
     plt.subplot(3,4,i)
@@ -273,10 +274,10 @@ plt.tight_layout();
 ```
 
 
-​     ![output_9_0](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\output_9_0.png)
+​     ![output_9_0](https://user-images.githubusercontent.com/67591105/151116436-4b1aeebb-438a-4552-8fdf-b050f7c0abde.png)
 
 ```python
-# train 에서 각 변수와 quality 변수 사이 분포 확인
+# quality 변수를 기준 다른 피처들의 분포 확인 (barplot)
 for i in range(11):
     fig = plt.figure(figsize = (12,6))
     sns.barplot(x= 'quality', y = train.columns[i+2], data = train)
@@ -285,31 +286,21 @@ for i in range(11):
     # 오차막대(?) - 분산?
 ```
 
-​       
+![output_10_0](https://user-images.githubusercontent.com/67591105/151116438-b967049c-0cae-4892-ba51-bb6b6cc96611.png)
+![output_10_1](https://user-images.githubusercontent.com/67591105/151116439-e7930d31-9ebe-46b4-b2b1-5cbb46babca8.png)
+![output_10_2](https://user-images.githubusercontent.com/67591105/151116441-126100e1-61b4-444e-b468-582126dd2ed6.png)
+![output_10_3](https://user-images.githubusercontent.com/67591105/151116443-6b8270dd-faa2-4f2a-a1b0-c0a76460bf37.png)
+![output_10_4](https://user-images.githubusercontent.com/67591105/151116446-0c9d033c-f20d-4035-8380-7eca31c37b37.png)
 
-![output_10_0](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\output_10_0.png)
+![output_10_5](https://user-images.githubusercontent.com/67591105/151117188-dcaf7e8e-27b6-4ea1-a087-d897fb9c81b5.png)
 
-![output_10_1](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\output_10_1.png)
+![output_10_6](https://user-images.githubusercontent.com/67591105/151116449-f705e04c-7ef6-43fe-af40-973d39fd6462.png)
 
-![output_10_2](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\output_10_2.png)
+![output_10_7](https://user-images.githubusercontent.com/67591105/151116451-23c194bd-14e2-4238-8c47-a7f809f00dc1.png)
 
-![output_10_3](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\output_10_3.png)
-
-![output_10_4](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\output_10_4.png)
-
-![output_10_5](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\output_10_5.png)
-
-![output_10_6](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\output_10_6.png)
-
-![output_10_7](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\output_10_7.png)
-
-![output_10_8](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\output_10_8.png)
-
-![output_10_9](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\output_10_9.png)
-
-![output_10_10](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\output_10_10.png)
-
-
+![output_10_8](https://user-images.githubusercontent.com/67591105/151116453-38129264-075c-48d4-b872-8d95a9e9eae4.png)
+![output_10_9](https://user-images.githubusercontent.com/67591105/151116456-0a86ee72-4451-4acf-96f6-b2caeb284b7c.png)
+![output_10_10](https://user-images.githubusercontent.com/67591105/151116459-38bde0db-a893-49c0-bf44-a69bcfe308c0.png)
 
 
 ### 2. 데이터 전처리
