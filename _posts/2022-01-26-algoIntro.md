@@ -15,7 +15,7 @@ search: true
 제가 공부한 내용을 정리하는 포스팅입니다. 
 
 공부 진행할때 "코드없는 프로그래밍" 유튜브를 참고하면서 공부했습니다. 
-**[유튜브링크]** (https://www.youtube.com/channel/UCHcG02L6TSS-StkSbqVy6Fg)
+**[유튜브링크]** [https://www.youtube.com/channel/UCHcG02L6TSS-StkSbqVy6Fg]
 {: .notice--danger}
 
 개인적으로 많은 도움이 되었던 유튜버님이기 때문에 작게나마 홍보 했습니다. 
