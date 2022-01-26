@@ -37,11 +37,16 @@ git remote [-v]
 
 * Este comando se utiliza para sincronizar un **[Repositorio local]** con otro **»Repositorio Remoto«** dentro de la plataforma **GITHUB**
 
+  * Por regla general se llamará ``origin`` pero se puede añadir cualquier otro nombre
+
 ```git
 #             Almacena toda la URL del »Repo.Remoto« para su sincronización
 #                ↓
 #                ↓
 git remote add origin https://github.com/usuario/nombre_repositorio.git
+#             Otro nombre
+                 ↓
+git remote add teamone https://github.com/usuario/nombre_repositorio.git
 ```
 
 * Borra la ``<rama>`` que sincroniza el **[Repositorio Local]** con la rama **»Repositorio Remoto«**

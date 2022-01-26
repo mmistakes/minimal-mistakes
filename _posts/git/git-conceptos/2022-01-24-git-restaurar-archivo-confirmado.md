@@ -108,7 +108,9 @@ git log --oneline
 28b2592 (origin/main, origin/HEAD) Initial commit
 ```
 
-* Ejecutamos el comando ``git reset --soft HEAD~1`` para eliminar el último commit que hemos creado
+* Ejecutamos el comando ``git reset --soft HEAD~1`` para eliminar el último commit que hemos en la rama en la que nos encontremos
+  * Atención : **SIEMPRE QUE ESTE COMMIT PERTENEZCA A UN PADRE o ANCESTRO** anterior
+    * Si el **commit** que queremos deshacer no tiene un **commit padre o ancestro** o es el primero de los ejecutados este sistema no funcionara , se tendrá que usar otras vías
 
   * Para eliminar el **último commit** creado lo hacemos desde su ancestro `HEAD~1` ya que es el **último commit** que ejecutamos
 
