@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title:  "알고리즘 소개 및 방향"
 categories: introduction
 toc: true
