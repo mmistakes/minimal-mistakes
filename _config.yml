@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "MinJun Choi"
-  avatar           : "/assets/images/minjun.png"
+  avatar           : #"/assets/images/minjun.png"
   bio              : "A **growing** developer."
   location         : "Incheon, South Korea"
   email            : 
