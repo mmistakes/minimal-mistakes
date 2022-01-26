@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "CSS flex & position"
+title: "CSS 연습(1)_정답&해설"
 categories: HTML&CSS
 tag:
   [
@@ -28,6 +28,8 @@ toc: true
 sidebar:
   nav: "docs"
 ---
+
+# CSS 연습(1) _정답&해설
 
 ## 1. 구현화면
 
