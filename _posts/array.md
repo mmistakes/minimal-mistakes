@@ -1,6 +1,6 @@
 ---
-layout: single
-title:  "알고리즘 소개 및 방향"
+layout: post
+title:  "배열관련 문제 "
 categories: Array
 tag: [c++,python,LeetCode,Array,moveZeros,Find pivot index,Minimum size subarray sum,Merge sorted Array,Find peak element,Merge intervals ,Shortest Unsorted continuout subArray ,Find duplicate number ,Two sum,Rotate Image 2D array ,search 2D matrix
 ]
