@@ -11,6 +11,8 @@ header:
 categories:
   - git
   - git-grafo-de-commits
+  - git-grafo
+  - git-commits
 tags:
   - git-basico
   - git-manual
@@ -54,13 +56,6 @@ page_css:
 <commit>~n 
 ```
 
-### Ejemplo de Ancestro ~ de un commit
-
-```bash
-# Concepto 
-<commit>~1=<commit> 
-```
-
 ## Concepto de Padres "^" de los commits - Modificación
 
 * Representado por el símbolo ``^`` significa que es el padre de un commit
@@ -72,25 +67,60 @@ page_css:
 <commit>^n 
 ```
 
-### Ejemplo de Padre ^ de un commit
+## Grafo de Commits
 
-* Suponiendo que nos encontramos en el último commit de la rama master
+* Gráfico para explicar el funcionamiento
 
-```bash
-# Esta acción haría retroceder 1 commit desde la rama master
-master^1=g699g8 
-# Esta acción haría retroceder 2 commit desde la rama master
-master^2=ah78j9
-```
+![Grafo de commits](/assets/images/grafo_commits/grafo_commits.jpg "Grafo de Commits")
 
 ### Ejemplo de Ancestro ~ de un commit
 
 * Suponiendo que nos encontramos en el último commit de la rama master
 
 ```bash
-# Esta acción haría retroceder 1 commit desde la rama master
+# Concepto 
+<commit>~1=<commit> 
+```
+
+* Situados en la **rama master** avanzamos una posición hacía atrás en el **historial de commits** del gráfico
+
+```bash
+# Retrocede 1 commit en el gráfico de commits
+46g8g8~1=dd12f9  
+```
+
+![Grafo de commits](/assets/images/grafo_commits/ancestro1.jpg "Grafo de Commits")
+
+* Situados en la **rama master** avanzamos una posición hacía atrás en el **historial de commits** del gráfico
+
+```bash
+# Retrocede 2 commit en el gráfico de commits
+master~2=46g8g8 
+```
+
+![Grafo de commits](/assets/images/grafo_commits/ancestro2.jpg "Grafo de Commits")
+
+### Ejemplo de Padre ^ de un commit
+
+* Suponiendo que nos encontramos en el **último commit** de la **rama master**
+
+* Desde la **rama master** avanzamos **una posición** hacía atrás en el **historial de commits** del gráfico
+
+* Esta acción haría retroceder **1 commit** hacia atrás en la **rama master**
+
+```bash
 master^1=g699g8 
-# Esta acción haría retroceder 2 commit desde la rama master
+```
+
+![Grafo de commits](/assets/images/grafo_commits/padre1.jpg "Grafo de Commits")
+
+* En esta acción haría retroceder **2 commit** hacia atrás en la **rama master**
+  
+  * Como hubo una ``integración`` entre los **commits** ``ah78j9`` y ``g699g8`` de distinta **rama** como son ``teamone/master`` y la **ramas** ``master`` , nos situarnos en el ``commit C4'`` que fue el **2º commit** en la **integración** del ``último commit``
+
+```bash
 master^2=ah78j9
 ```
+
+![Grafo de commits](/assets/images/grafo_commits/padre2.jpg "Grafo de Commits")
 
