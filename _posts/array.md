@@ -1,9 +1,8 @@
 ---
-layout: post
+layout: single
 title:  "배열관련 문제 "
 categories: Array
-tag: [c++,python,LeetCode,Array,moveZeros,Find pivot index,Minimum size subarray sum,Merge sorted Array,Find peak element,Merge intervals ,Shortest Unsorted continuout subArray ,Find duplicate number ,Two sum,Rotate Image 2D array ,search 2D matrix
-]
+tag: [c++,python,LeetCode,Array,moveZeros,Find_pivot_index,Minimum_size_subarray_sum,Merge_sorted_Array,Find_peak_element,Merge_intervals,Shortest_Unsorted_continuout_subArray,Find_duplicate_number,Two_sum,Rotate_Image_2D_array,search_2D_matrix]
 toc: true
 author_profile: false
 sidebar:
