@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ec60e2bf-96bd-434a-8118-3207860c4555" name="Changes" comment="Rebuild the blog">
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="조형준 &lt;hyeongjun@johyeongjuns-macbook-air.local&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectId" id="248cC78u0VTGza9os4xdMDNV3kB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec60e2bf-96bd-434a-8118-3207860c4555" name="Changes" comment="" />
+      <created>1643015524418</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643015524418</updated>
+      <workItem from="1643015526694" duration="1620000" />
+      <workItem from="1643162477151" duration="9000" />
+      <workItem from="1643162591609" duration="1000" />
+      <workItem from="1643195607641" duration="977000" />
+      <workItem from="1643197152004" duration="13714000" />
+      <workItem from="1643252148624" duration="684000" />
+    </task>
+    <task id="LOCAL-00001" summary="first posting">
+      <created>1643016166924</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1643016166924</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first posting">
+      <created>1643016524105</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1643016524105</updated>
+    </task>
+    <task id="LOCAL-00003" summary="first posting">
+      <created>1643016742674</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1643016742674</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Take note of what I studied on January 26th">
+      <created>1643196369858</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1643196369858</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Take note of what I studied on January 26th">
+      <created>1643196501356</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1643196501356</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Take note of what I studied on January 26th">
+      <created>1643197189875</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1643197189875</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Take note of what I studied on January 26th">
+      <created>1643199915730</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1643199915730</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Take note of what I studied on January 26th">
+      <created>1643200237155</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1643200237155</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Change blog setting">
+      <created>1643201333139</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1643201333139</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Register profile">
+      <created>1643201902245</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1643201902245</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Rebuild the blog">
+      <created>1643202931320</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1643202931320</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Rebuild the blog">
+      <created>1643203379675</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1643203379675</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Rebuild the blog">
+      <created>1643206565633</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1643206565634</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="first_Commit" />
+    <MESSAGE value="first posting" />
+    <MESSAGE value="Take note of what I studied on January 26th" />
+    <MESSAGE value="Change blog setting" />
+    <MESSAGE value="Register profile" />
+    <MESSAGE value="Rebuild the blog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rebuild the blog" />
+  </component>
+</project>
