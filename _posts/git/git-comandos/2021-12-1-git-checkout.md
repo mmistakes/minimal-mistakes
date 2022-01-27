@@ -48,3 +48,9 @@ Reemplazar los cambios locales
               ↓    
 git checkout -- <archivo>
 ```
+
+* Para restaurar los cambios de un archivo que esta en **{Modified}** a **{Unmodified}** dentro de **{Staged}** utilizar
+
+```bash
+git checkout -- <file>
+```

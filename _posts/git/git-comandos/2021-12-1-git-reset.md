@@ -19,7 +19,9 @@ tags:
 
 ## Git - reset
 
-* Extrae los ficheros del {Indice/Index}
+* **Rehace** y **Elimina** los cambios dependiendo del ``commit`` que le indiquemos dentro del árbol de ``commits`` del **[Repositorio Local]**
+
+* Extrae los ficheros del **{Staging Area/Staged/Indice/Index}**
   * Reinvierte el ``git add <archive>``
 
 * Este comando mueve la **rama** según le indique el puntero **[HEAD]**

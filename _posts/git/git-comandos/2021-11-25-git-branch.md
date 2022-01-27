@@ -19,9 +19,13 @@ tags:
 
 ## Git branch (Rama)
 
+* Puntero que siempre señala la rama 'branch' que le indiquemos
+
+  * Por defecto apunta a la rama : ``master/main`` dependiendo de la configuración inicial que tengamos por defecto en **GIT** al instalarlo en el sistema
+
 > Representa una especie de línea de tiempo que va marcando los distintos cambios que le vamos haciendo a los archivos del proyecto a través de los ``git add <archive>`` y los ``git commit -m "Mensaje"`` que vamos ejecutando sobre el repositorio principal
 
-* Solo se creará nuestra **primera linea de tiempo funcional** cuando hagamos nuestro **primer commit** la cual estará establecida en la rama ``master`` si no hemos creado una rama distinta y nos hemos cambiado a ella mediante ``git checkout <nombre de la rama>``
+* **Importante** : Solo se creará nuestra **primera linea de tiempo funcional** cuando hagamos nuestro **primer commit** la cual estará establecida en la rama ``master`` si no hemos creado una rama distinta y nos hemos cambiado a ella mediante ``git checkout <nombre de la rama>``
   
 * Si intentamos cambiarnos de ``rama/branch`` mediante el comando ``git checkout <rama>`` sin que esta ``rama/branch`` exista; nos aparecerá el siguiente mensaje :
 
@@ -31,9 +35,10 @@ Para saber en que ``rama/branch`` nos encontramos podemos ejecutar los comandos 
 
 ``git status`` → On branch master
 
-```git
+```bash
 git branch
-* master → Indica la rama en la que nos encontramos
+# El ASTERISCO * al comienzo de la rama 'master' indica que HEAD esta apuntando a esa rama
+* master → Indica la rama en la que nos encontramos # HEAD esta apuntando a esta rama
   nueva-rama-proyecto
 ```
 
@@ -42,11 +47,16 @@ git branch
 ![Alt texto](/assets/images/graficos/snapshot-3.jpg "Concepto de Repositorio")
 
 * La rama por defecto se llama ``master`` y se crea de forma automática por el sistema ``git`` con el primer ``commit``
+
 * Los nuevos ``commits`` se añaden al final de la rama
+
 * Los ``commits`` de las ramas están ordenados por fecha
+
 * Se pueden ``crear`` , ``eliminar`` tantas ``ramas`` como se necesiten para cada momento
 
 ### Opciones del comando branch
+
+* Listado básico de algunas de las opciones más importantes
 
 #### Opción ``-v``
 
@@ -117,6 +127,18 @@ Deleted branch nueva-rama-proyecto (was 5c2b6a9)
 #            ↓     Commit de la rama por ejemplo master que quiero agregar 
 #            ↓        ↓
 git branch rama_x  56324fg8 
+```
+
+* Crear una nueva **rama** desde un **commit** que seleccionemos desde el **grafo de commits** del proyecto
+
+```bash
+git branch <nombre-rama> <id-commit>
+# Ejemplo
+git branch rama-alternativa b0e63ad
+# Otra forma alternativa de ejecutar el comando
+git checkout -b <nombre-rama> <id-commit>
+# Ejemplo
+git checkout -b rama-alternativa b0e63ad
 ```
 
 ## Ramas necesarias para un proyecto
