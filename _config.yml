@@ -271,5 +271,8 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: ture
+      toc_sticky: true
+      toc_label: "Contents"
 
 date_format: "%Y-%m-%d"

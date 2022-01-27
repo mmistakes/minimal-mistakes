@@ -18,7 +18,6 @@ tag:
     화면 가운데 위치,
     justify-content,
     align-items,
-    ,
     속성,
     attribute,
     type,
