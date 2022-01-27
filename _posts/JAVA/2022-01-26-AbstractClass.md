@@ -1,7 +1,6 @@
 ---
 layout: single
 title:  "Abstract Class ( 추상 클래스 )"
-folder: "JAVA"
 categories: 
     - JAVA
 tags: 
@@ -12,13 +11,13 @@ sidebar:
 
 # <a style="color:#00adb5">Abstract Class</a>
 
-## 추상 클래스가 무엇인가 ?
-<b><a style="color:#00adb5">Abstract Class...</a></b><br>
+## 추상 클래스란 무엇인가 ?
+### <b><a style="color:#00adb5">Abstract Class</a></b><br>
 추상 클래스는 상속 전용의 클래스이다.<br>
 추상 클래스는 실체클래스의 공통적인 부분(변수, 메서드)을 추출하여 선언한 클래스이다. <br>
 객체를 생성할 수 없는 클래스라는 의미로 <b><a style="color:red">'abstract'</a></b> 키워드를 클래스 선언부에 추가한다.<br>
 
-<b><a style="color:#00adb5">Abstract Method...</a></b><br>
+### <b><a style="color:#00adb5">Abstract Method</a></b><br>
 추상 메서드는 자손 클래스에서 반드시 <b><a style="color:red">재정의(overriding)</a></b>하여 사용하여야 하기 때문에 조상 클래스에서의 구현이 무의미한 메서드이다.<br>
 구현부가 없다는 의미로  <b><a style="color:red">'abstract'</a></b> 키워드를 메서드 선언부에 추가한다.<br>
 구현부는 없으므로 세미콜론(;)으로 대체한다.<br>
@@ -27,7 +26,7 @@ sidebar:
 추상 클래스도 추상 메서드를 포함하고 있다는 것만 제외하면 일반 클래스와 다른 것이 없다.<br> 그래서 생성자, 일반 메서드 등등을 작성할 수 있다.<br>
 <br>
 
-클래스 안에 구현부 (body) 가 없는 메서드가 있어서 <b><a style="color:red"></b>객체를 생성할 수 없는 클래스</a>이다. <br>하지만 상위 클래스 타입으로써 자식은 참조할 수 있다.<br>
+클래스 안에 구현부 (body) 가 없는 메서드가 있어서 <b><a style="color:red">객체를 생성할 수 없는 클래스</a></b>이다. <br>하지만 상위 클래스 타입으로써 자식은 참조할 수 있다.<br>
 
 <br>
 ★ 만약 조상 클래스에서 상속받은 <b><a style="color:red">abstract 메서드를 재정의 하지 않은 경우</a></b><br>☆자식 클래스도  <b><a style="color:red">abstract 클래스</a></b>로 선언 되어야 한다.<br><br>
