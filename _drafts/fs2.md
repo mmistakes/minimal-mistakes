@@ -7,7 +7,7 @@ tags: []
 excerpt: ""
 ---
 
-Reading from a huge file and processing information or handling continuous data from the network as WebSockets or from a message broker. Streams are the way to go in such situations, and Scala provides its own streams implementation.
+Nowadays, modern applications are often built on top of streaming data: Reading from a huge file and processing information or handling continuous data from the network as WebSockets or from a message broker. Streams are the way to go in such situations, and Scala provides its own streams implementation.
 
 However, streams in the standard library are not as powerful as they could be and don't offer concurrency, throttling, or backpressure features.
 
@@ -144,7 +144,7 @@ The name is called `covary` because of the covariance of the `Stream` type in th
 final class Stream[+F[_], +O]
 ```
 
-Since the `Pure` effect is defined as an alias of the Scala bottom type `Nothing`, the `covary` method just take advantage of this fact change the effect type to `IO`:
+Since the `Pure` effect is defined as an alias of the Scala bottom type `Nothing`, the `covary` method takes advantage of this fact changes the effect type to `IO`:
 
 ```scala
 // Covariance in F means that 
@@ -153,7 +153,7 @@ Since the `Pure` effect is defined as an alias of the Scala bottom type `Nothing
 
 It's not mandatory to use the `IO` effect. We can use any other effect library that supports type classes defined in the `cats-effect` library. As an example,
 
-However, in most cases, we want to create a stream directly evaluating some statement that may produce side effects. So, for example, let's try to persist an actor through a stream:
+However, we want to create a stream directly evaluating some statements that may produce side effects in most cases. So, for example, let's try to persist an actor through a stream:
 
 ```scala
 val savingTomHolland: Stream[IO, Unit] = Stream.eval {
@@ -165,7 +165,7 @@ val savingTomHolland: Stream[IO, Unit] = Stream.eval {
 }
 ```
 
-The fs2 library gives us the method `eval` that takes a `IO` effect and returns a `Stream` that will evaluate the `IO` effect when pulled. Now, a question arises: How do we pull the values from an effectful stream? We cannot convert such a stream into a Scala collection using the `toList` function, and if we try, the compiler soundly yells at us:
+The fs2 library gives us the method `eval` that takes an `IO` effect and returns a `Stream` that will evaluate the `IO` effect when pulled. A question arises: How do we pull the values from an effectful stream? We cannot convert such a stream into a Scala collection using the `toList` function, and if we try, the compiler soundly yells at us:
 
 ```shell
 [error] 95 |  savingTomHolland.toList
@@ -179,7 +179,7 @@ In fs2 jargon, we need to _compile_ the stream into a single instance of the eff
 val compiledStream: IO[Unit] = savingTomHolland.compile.drain
 ```
 
-In this case, we also applied the `drain` method, which discards the any output of the effect. However, once compiled, we return to have many choices. For example, we can transform the compiled stream into an effect containing a `List`:
+In this case, we also applied the `drain` method, which discards any effect output. However, once compiled, we return to have many choices. For example, we can transform the compiled stream into an effect containing a `List`:
 
 ```scala
 val jlActorsEffectfulList: IO[List[Actor]] = liftedJlActors.compile.toList
@@ -193,7 +193,7 @@ import cats.effect.unsafe.implicits.global
 savingTomHolland.compile.drain.unsafeRunSync()
 ```
 
-Otherwise, we can run our application as a `IOApp` (preferred way):
+Otherwise, we can run our application as an `IOApp` (preferred way):
 
 ```scala
 object Fs2Tutorial extends IOApp {
@@ -205,7 +205,7 @@ object Fs2Tutorial extends IOApp {
 
 ### 2.1. Chunks
 
-Inside, every stream is made of _chunks_. A `Chunk[O]` is a finite sequence of stream elements of type `O` stored inside a structure that is optimized for indexed based lookup of elements. We can create a stream directly through the `Stream.chunk` method, which accepts a sequence of `Chunk`:
+Inside, every stream is made of _chunks_. A `Chunk[O]` is a finite sequence of stream elements of type `O` stored inside a structure optimized for indexed based lookup of elements. We can create a stream directly through the `Stream.chunk` method, which accepts a sequence of `Chunk`:
 
 ```scala
 val avengersActors: Stream[Pure, Actor] = Stream.chunk(Chunk.array(Array(
@@ -218,13 +218,13 @@ val avengersActors: Stream[Pure, Actor] = Stream.chunk(Chunk.array(Array(
 )))
 ```
 
-The fs2 library defines a lot of smart constructors for the `Chunk` type, letting us create a `Chunk` from an `Option`, a `Seq`, a `Queue`, and so on.
+The fs2 library defines a lot of smart-constructors for the `Chunk` type, letting us create a `Chunk` from an `Option`, a `Seq`, a `Queue`, and so on.
 
-Most of the functions defined on streams are `Chunk`-aware, which means that we don't have to worry about chunks while we are working with them.
+Most of the functions defined on streams are `Chunk`- aware, so we don't have to worry about chunks while working with them.
 
 ## 3. Transforming a Stream
 
-Once we've built a Stream, we can transform its values more or less as we make to regular Scala collections. For example, let's create a stream containing all the actors which hero belongs from the Justice League or the Avengers. We can use the `++` operator, which concatenates two streams:
+Once we've built a Stream, we can transform its values more or less as we make in regular Scala collections. For example, let's create a stream containing all the actors whose hero belongs from the Justice League or the Avengers. We can use the `++` operator, which concatenates two streams:
 
 ```scala
 val dcAndMarvelSuperheroes: Stream[Pure, Actor] = jlActors ++ avengersActors
@@ -232,9 +232,9 @@ val dcAndMarvelSuperheroes: Stream[Pure, Actor] = jlActors ++ avengersActors
 
 So, the `dcAndMarvelSuperheroes` stream will emit all the actors from the Justice League and then the Avengers.
 
-The `Stream` type forms a monad on the `O` type parameter. This means that a `flatMap` method is available on streams, and we can use it to concatenate operations concerning the output values of the stream.
+The `Stream` type forms a monad on the `O` type parameter, which means that a `flatMap` method is available on streams, and we can use it to concatenate operations concerning the output values of the stream.
 
-For example, a typical pattern to print to the console the elements of a stream is through the use of the `flatMap` method:
+For example, printing to the console the elements of a stream uses the `flatMap` method:
 
 ```scala
 val printedJlActors: Stream[IO, Unit] = jlActors.flatMap { actor =>
@@ -248,17 +248,17 @@ The pattern of calling the function `Stream.eval` inside a `flatMap` is so commo
 val evalMappedJlActors: Stream[IO, Unit] = jlActors.evalMap(IO.println)
 ```
 
-In the case we need to perform some effects on the stream, but we don't want to change the type of the stream, we can use the `evalTap` method:
+In this case, we need to perform some effects on the stream, but we don't want to change the type of the stream; We can use the `evalTap` method:
 
 ```scala
 val evalTappedJlActors: Stream[IO, Actor] = jlActors.evalTap(IO.println)
 ```
 
-As we can notice, the difference between the last to statement is that the first mapped the stream to a `Unit` and the second didn't perform any mapping at all.
+As we can notice, the difference between the last statement is that the first mapped the stream to a `Unit` and the second didn't perform any mapping.
 
-An important feature of fs2 streams is that the functions defined on them takes constant time, regardless the structure of the stream itself. So, concatenating two streams is a constant time operation, whether the streams contain a bunch of elements or if they are infinite. As we will see in the rest of the article this feature concerns the internal representation of a stream, which is implemented as a _pull-based_ structure.
+An essential feature of fs2 streams is that their functions take constant time, regardless of the structure of the stream itself. So, concatenating two streams is a constant time operation, whether the streams contain many elements or infinite. As we will see in the rest of the article, this feature concerns the internal representation, which is implemented as a _pull-based_ structure.
 
-Since the functions defined on streams are a lot, we will make only few examples. Say that we want to group the Avengers by the name of the actor playing them. We can do it using the `fold` method:
+Since the functions defined on streams are many, we will make only a few examples. Say that we want to group the Avengers by the actor's name playing them. We can do it using the `fold` method:
 
 ```scala
 val avengersActorsByFirstName: Stream[Pure, Map[String, List[Actor]]] = avengersActors.fold(Map.empty[String, List[Actor]]) { (map, actor) =>
@@ -268,18 +268,18 @@ val avengersActorsByFirstName: Stream[Pure, Map[String, List[Actor]]] = avengers
 
 As we can see, the `fold` method works exactly as its Scala counterpart.
 
-Many other streaming libraries defines streams and transformation on them in terms of _sources_, _pipes_, and _sinks_. The elements of a stream are generated by a source, then transformed through a sequence of stages or pipes, and finally consumed by a sink. For example, the Akka Stream library has specific types modelling these concepts.
+Many other streaming libraries define streams and transformation in terms of _sources_, _pipes_, and _sinks_. A source generates the elements of a stream, then transformed through a sequence of stages or pipes, and finally consumed by a sink. For example, the Akka Stream library has specific types modeling these concepts.
 
-In fs2, the only available type modelling the above streaming concepts is `Pipe[F[_], -I, +O]`. To be frank, `Pipe`s are only a type alias for the function `Stream[F, I] => Stream[F, O]`. So, a `Pipe[F[_], I, O]` represents nothing more that a function between two streams, the first emitting elements of type `I`, and the second emitting elements of type `O`.
+In fs2, the only available type modeling the above streaming concepts is `Pipe[F[_], -I, +O]`. `Pipe`s are only a type alias for the function `Stream[F, I] => Stream[F, O]`. So, a `Pipe[F[_], I, O]` represents nothing more than a function between two streams, the first emitting elements of type `I`, and the second emitting elements of type `O`.
 
-Using pipes we can make look fs2 streams definition like the definitions of streams in other libraries, representing transformations on streams as a sequence of stages. The `through` method applies a pipe to a stream. Its internal implementation is really straightforward, since it applies the function defined by the pipe to the stream:
+Using pipes, we can look at fs2 streams definition like the definitions of streams in other libraries, representing transformations on streams as a sequence of stages. The `through` method applies a pipe to a stream. Its internal implementation is straightforward since it involves the function defined by the pipe to the stream:
 
 ```scala
 // fs2 library code
 def through[F2[x] >: F[x], O2](f: Stream[F, O] => Stream[F2, O2]): Stream[F2, O2] = f(this)
 ```
 
-For example, lets transform the `jlActors` streams into a stream containing only the first names of the actors, and finally print them to the console:
+For example, let's transform the `jlActors` streams into a stream containing only the first names of the actors and finally print them to the console:
 
 ```scala
 val fromActorToStringPipe: Pipe[IO, Actor, String] = in =>
@@ -292,11 +292,11 @@ val stringNamesOfJlActors: Stream[IO, Unit] =
   jlActors.through(fromActorToStringPipe).through(toConsole)
 ```
 
-We have the the `jlActors` stream represents the _source_, whereas the `fromActorToStringPipe` represents a pipe, and the `toConsole` represents the _sink_. We can conclude that a pipe is pretty much a map/flatMap type functional operation but the pipe concept fits nicely into the mental model of a Stream.
+The `jlActors` stream represents the _source_, whereas the `fromActorToStringPipe` represents a pipe, and the `toConsole` represents the _sink_. We can conclude that a pipe is pretty much a map/flatMap type functional operation, but the pipe concept fits nicely into the mental model of a Stream.
 
 ## 4. Error Handling in Streams
 
-What if pulling a value from a stream fails raising an exception? For example, let's introduce a repository persisting an `Actor`:
+What if pulling a value from a stream fails with an exception? For example, let's introduce a repository persisting an `Actor`:
 
 ```scala
 object ActorRepository {
@@ -311,20 +311,20 @@ object ActorRepository {
 }
 ```
 
-To simulate a random error during the communication with the persistent layer, the `save` method throws an exception when a random generated number is even. Then, we can use the above repository to persist a stream of actors:
+The `save` method throws an exception when a randomly generated number is even, simulating a random error during the communication with the persistent layer. Then, we can use the above repository to persist a stream of actors:
 
 ```scala
 val savedJlActors: Stream[IO, Int] = jlActors.evalMap(ActorRepository.save)
 ```
 
-If we run the above stream, it's very likely that we will see the following output:
+If we run the above stream, we will likely see the following output:
 
 ```
 Saving actor: Actor(0,Henry,Cavill)
 java.lang.RuntimeException: Something went wrong during the communication with the persistence layer
 ```
 
-As we can see, the stream is interrupted by the exception. In the above execution it doesn't persist even the first actor. So, every time an exception occurs during pulling elements from a stream, the stream execution ends.
+As we can see, the stream is interrupted by the exception. In the above execution, it doesn't persist even the first actor. So, every time an exception occurs during pulling elements from a stream, the stream execution ends.
 
 However, fs2 gives us many choices to handle the error. First, we can handle an error returning a new stream using the `handleErrorWith` method:
 
@@ -333,16 +333,16 @@ val errorHandledSavedJlActors: Stream[IO, AnyVal] =
   savedJlActors.handleErrorWith(error => Stream.eval(IO.println(s"Error: $error")))
 ```
 
-In above example, we react to an error by returning a stream that prints the error to the console. As we can notice, the type of the elements contained in the stream is `AnyVal`, and not `Unit`. This is because of the definition of the `handleErrorWith`:
+In the above example, we react to an error by returning a stream that prints the error to the console. As we can notice, the elements contained in the stream are `AnyVal` and not `Unit` because of the definition of the `handleErrorWith`:
 
 ```scala
 // fs2 library code
 def handleErrorWith[F2[x] >: F[x], O2 >: O](h: Throwable => Stream[F2, O2]): Stream[F2, O2] = ???
 ```
 
-In fact, the `O2` type must be a super type of the original type `O`. Since both `Int` and `Unit` are subtypes of `AnyVal`, we can use the `AnyVal` type (the least common super type) to represent the resulting stream. 
+The `O2` type must be a supertype of `O`'s original type. Since both `Int` and `Unit` are subtypes of `AnyVal`, we can use the `AnyVal` type (the least common supertype) to represent the resulting stream.
 
-Another useful available method to handle error in streams is `attempt`. The method works using the `scala.Either` type, and it returns a stream of `Either` elements. The resulting stream pulls elements wrapped in a `Right` instance, until the first error occurs, which is nothing more than an instance of a `Throwable` wrapped in a `Left`:
+Another available method to handle errors in streams is `attempt`. The method works using the `scala.Either` type, which returns a stream of `Either` elements. The resulting stream pulls elements wrapped in a `Right` instance until the first error occurs, which is nothing more than an instance of a `Throwable` wrapped in a `Left`:
 
 ```scala
 val attemptedSavedJlActors: Stream[IO, Either[Throwable, Int]] = savedJlActors.attempt
@@ -352,7 +352,7 @@ attemptedSavedJlActors.evalMap {
 }
 ```
 
-For sake of completeness, let's say that the `attempt` method is implemented internally using the `handleErrorWith` in the most straightforward way:
+For the sake of completeness, let's say that the `attempt` method is implemented internally using the `handleErrorWith` most straightforwardly:
 
 ```scala
 // fs2 library code
