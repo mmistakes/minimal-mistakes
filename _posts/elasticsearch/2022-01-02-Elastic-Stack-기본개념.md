@@ -27,7 +27,7 @@ author_profile: true
 - 데이터가 검색될 수 있는 구조로 변경
 - 원본 문서를 검색어 토큰들로 변환하여 저장하는 일련의 과정
 
-### 인덱스 (Index, Indexies)
+### 인덱스 (Index, Indecies)
 
 - 색인 과정을 거친 결과물 또는 색인된 데이터가 저장되는 저장소.
 - 도큐먼트(Document)의 논리적인 집합을 표현하는 단위
@@ -38,7 +38,7 @@ author_profile: true
 
 ### 질의 (Query)
 
-- 사용자가 원하는 문서를 찾거나 집계 결과를 알기 위해 사용하는 검색어 또는 검색 조건
+- 사용자가 원하는 문서를 찾거나 집계 결과를 알기 위해 사용하는 **검색어 또는 검색 조건**
 
 ## ✔ ELK Stack?
 
@@ -75,13 +75,13 @@ author_profile: true
 
 ### ✔ 클러스터 ( cluseter )
 
-- 최소 하나 이상의 **노드(서버)**로 구성된 **시스템 단위**
-- 서로 다른 클러스터는 **독립적인 시스템**으로 유지, 데이터 접근 및 교환이 불가능
+- 최소 하나 이상의 **노드**(서버)로 구성된 **시스템 단위**
+- **서로 다른 클러스터**는 **독립적인 시스템**으로 유지, 데이터 접근 및 교환이 불가능
 - 여러대의 서버가 하나의 클러스터 구성 가능, 하나의 서버가 여러개의 클러스터 구성 가능
 
 ### ✔ [노드 ( node )](https://esbook.kimjmin.net/03-cluster/3.3-master-and-data-nodes)
 
-- 클러스터 내에 존재하는 **노드(서버)**
+- 클러스터 내에 존재하는 **노드**(서버)
 - Elasticsearch를 구성하는 **하나의 단위 프로세스**를 의미
 - 노드는 역할에 따라 구분이 된다, 아래 내용을 살펴보자
 
@@ -161,11 +161,11 @@ author_profile: true
 2. 서로 다른 클러스터로 구성되어 계속 동작하는 경우 발생
 3. 이 상태에서 각자의 클러스터에 데이터 추가 및 변경
 4. 네트워크가 복구 되고 하나의 클러스터로 합쳐졌을 때 **데이터 정합성** 및 **무결성 문제** 발생
-5. 위 같은 문제를 Split Branin이라 지칭
+5. 위 같은 문제를 Split Brain이라 지칭
 
 ### Split Brain 방지
 
-> Split Branin의 방지를 위해서는 마스터 후보 노드를 3개로 두고 클러  
+> Split Brain의 방지를 위해서는 마스터 후보 노드를 3개로 두고 클러  
 > 스터에 마스터 후보 노드가 최소 2개 이상 존재하고 있을 때에만 클러  
 > 스터가 동작하고 그렇지 않은 경우 클러스터는 동작을 멈추도록 해야 한다.
 
@@ -200,19 +200,20 @@ cluster.initial_master_nodes: [ 'node-1' , 'node-2' ]
 
 ```bash
 # elasticsearch.yml
-1 node.master: false
-2 node.voting_only: false
-3 node.data: false
-4 node.ingest: true # node ingest 설정
-5 node.ml: false
-6 node.transform: false
+1. node.master: false
+2. node.voting_only: false
+3. node.data: false
+4. node.ingest: true # node ingest 설정
+5. node.ml: false
+6. node.transform: false
 7. node.remote_cluster_client: false
 ```
 
-> 현재는 Elasticsearch의 큰 틀을 잡아야 하기에, 상단 링크를 참고하여 추후 정리하겠습니다
+인제스트 노드는 엘라스틱서치에서 데이터를 인덱싱하기 전에 다양한 전처리를 할  
+수 있는 메커니즘을 제공 하기에 실운영 환경에서 아주 중요한 노드 타입이다.
 
-- 다양한 프로세서(Processors)로 `파이프라인`을 구성
-- 순차적으로 데이터를 처리한 후 Elasticsearch에 `인덱싱`하도록 해준다
+- 다양한 프로세서(Processors)로 **파이프라인**을 구성
+- 순차적으로 데이터를 처리한 후 Elasticsearch에 **인덱싱**하도록 해준다
 
 ### ✔ [Index / Shard / Replica](https://esbook.kimjmin.net/03-cluster/3.2-index-and-shards)
 
@@ -233,10 +234,8 @@ cluster.initial_master_nodes: [ 'node-1' , 'node-2' ]
 
 ### 프라이머리 샤드(Primary Shard) 와 복제본 (Replica)
 
-> 중간 점검 : 클러스터 > 노드(Node) > 인덱스(Index) → 분리 → 샤드(Shard) > 도큐먼트(Document)
-
-- 인덱스 생성 시 별도의 설정이 없을 경우 7.0 부터는 디폴트로 1개의 샤드로 인덱스 구성
-- 6.x 이하 버전에서는 디폴트로 5개의 샤드로 인덱스 구성
+- 인덱스 생성 시 별도의 설정이 없을 경우 **7.0** 부터는 **디폴트로 1개의 샤드**로 인덱스 구성
+- **6.x** **이하 버전**에서는 **디폴트로 5개의 샤드**로 인덱스 구성
 - 클러스터에 노드 추가 시 샤드들이 각 노드들로 분산되고 디폴트로 1개의 복제본 생성
 - 위 같은 상황에서 `처음 생성된 샤드`를 `프라이머리 샤드`, 복제본은 `리플리카`라 지징한다.
 - `클러스터`가 `4개의 노드`로 구성, 하나의 `인덱스`가 `5개의 샤드`로 구성,
@@ -244,10 +243,9 @@ cluster.initial_master_nodes: [ 'node-1' , 'node-2' ]
 
 ![https://user-images.githubusercontent.com/53969142/147402547-1248f0fe-269d-4d31-a17b-01056631d8e6.PNG](https://user-images.githubusercontent.com/53969142/147402547-1248f0fe-269d-4d31-a17b-01056631d8e6.PNG)
 
-> 노드가 1개만 있는 경우 프라이머리 샤드만 존재하고 복제  
-> 본은 생성되지 않는다. 또한 Elasticsearch는 아무리 작은 클  
-> 러스트라도 데이터 가용성과 무결성을 위해 최소 3개의 노드로  
-> 구성 할 것을 권장하고 있다.
+노드가 1개만 있는 경우 프라이머리 샤드만 존재하고 복제본은 생성되지 않는다.  
+또한 Elasticsearch는 아무리 작은 클러스트라도 데이터 가용성과 무결성을 위해 최소  
+3개의 노드로 구성 할 것을 권장하고 있다.
 
 - 같은 샤드와 복제본은 동일한 데이터를 담고 있으며, 반드시 서로 다른 노드에 저장된다.
 - 데이터 유실을 막기 위해 위 같은 방법을 사용
@@ -268,9 +266,9 @@ cluster.initial_master_nodes: [ 'node-1' , 'node-2' ]
 
 - Json 문서를 통해 데이터 검색을 수행하므로 스키마 개념이 존재하지 않는다
 
-### **Restful**
+### **RESTful**
 
-- 데이터 CRUD 작업은 HTTP Restful API를 통해 수행한다
+- 데이터 CRUD 작업은 HTTP RERTful API를 통해 수행한다
 - curl
 - kibana devtool
 

@@ -26,7 +26,7 @@ author_profile: true
 > 한 번의 API 요청으로 대량으로 document를 추가하고 조회하는 방법
 
 - \_bulk API를 사용하여 위의 작업을 일괄적으로 수행 할 수 있는 기능
-- \_bulk API로 index, create, update, delete 수행이 가능하다
+- \_bulk API로 index -> create, update, delete 수행이 가능하다
 - delete문을 제외하고는 **명령문**과 **데이터문**을 한 줄씩 입력해야 한다
 - 최대한 적은 네트워크 왕복으로 가능한 빠르게 여러 작업을 수행할 수 있는 메커니즘 제공
 - 네트워크 오버헤드를 방지하기위함
@@ -46,7 +46,6 @@ POST /customer/type1/_bulk?pretty
 
 ```json
 # Batch Process id auto increment
-GET /customers/user/_search?pretty
 POST /customers/user/_bulk
 { "index" : {} }
 { "name"  : "test_auto_generate_id" }
@@ -78,7 +77,7 @@ POST /customer/type1/_bulk?pretty
 ### 🔥 Batch Processing
 
 - **Bulk API**는 하나의 작업이 실패하여도 작업을 중단하지 않는다
-- 즉, 하나의 행동일 실패하여도 나머지 행동을 계속해서 처리한다
+- 즉, 하나의 행동이 실패 하여도 나머지 행동을 계속해서 처리한다
 - 대량 API가 반환되는 경우
   - 각 액션에 대한 상태가 전송 된 순서대로 제공된다
   - 위 같은 이유를 통해 어떤 액션이 실패했는지 확인이 가능하다

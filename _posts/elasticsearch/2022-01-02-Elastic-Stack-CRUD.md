@@ -31,9 +31,9 @@ Elasticsearch는 클러스터와 상호 작용하는데 사용할 수 있는 RES
   ```bash
   HTTP POST, http://myweb/users/
   {
-   "users":{
-    "name": "gasbugs"
-   }
+      "users" : {
+          "name": "gasbugs"
+      }
   }
   ```
 
@@ -80,7 +80,7 @@ GET /_cat/indices?v
 
 ### 엘라스틱 데이터베이스의 인덱싱 방식
 
-<img width=400 height=250 src="https://user-images.githubusercontent.com/53969142/147403262-cf6db104-bc4c-4af9-9862-763629f0fad4.PNG" />
+<img width=450 height=280 src="https://user-images.githubusercontent.com/53969142/147403262-cf6db104-bc4c-4af9-9862-763629f0fad4.PNG" />
 
 **Index(DataBase)**
 
@@ -101,7 +101,8 @@ GET /_cat/indices?v
 | flower | Doc3                   |
 | sun    | Doc1                   |
 
-- 검색어는 해당 단어가 어느 문서(Document)에 포함이 되어있는지 확인
+- 엘라스틱 서치는 데이터를 **역색인**하여 저장한다.
+- **검색어**는 **해당 단어**가 어느 문서(Document)에 포함이 되어있는지 확인한다.
 - blue라는 단어를 검색 시 Doc1, Doc2, Doc3 문서를 가르킨다.
 - 데이터의 양이 많아진다는 단점이 있지만, 데이터 검색 속도가 증가한다.
 
