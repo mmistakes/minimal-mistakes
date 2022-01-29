@@ -69,7 +69,7 @@ Esto significa que **Git** coge el archivo y lo devuelve al estado **(Working Di
 
 ### Resumen
 
-* ``git restore <file>`` → Se usa para deshacer los cambios que se realizaron al archivo el cual después de estar almacenado en el **historial de commits** mediante los comandos ``git add`` y ``git commit`` están a la espera de ser enviado al **»Repo.Remoto«**
+* ``git restore <file>`` → Se usa para deshacer los cambios que se realizaron al archivo el cual después de estar almacenado en el **historial de commits** mediante los comandos ``git add`` y ``git commit`` están a la espera de ser enviado al **|Repo.Remoto|**
 
   * El archivo en el **[HEAD/último commit]** , modificara su contenido desde el **(Working Directory)** del archivo dejandolo en el estado **{Modified}** del **{Staging Area/Index}** y a la espera de volver a añadir los cambios ejecutando otra vez ejecutando el comando ``git add`` o deshaciendolos mediante este comando
 

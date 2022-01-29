@@ -36,7 +36,7 @@ page_css:
 
 * * *
 
-Es un estado donde los archivos están **(Sin Seguimiento / Untracked)** , a la espera de ser agregado ``git add <archive>`` y confirmados ``git commit -m "Mensaje"`` para fusionarlos a los archivos del **»Repositorio Remoto«**
+Es un estado donde los archivos están **(Sin Seguimiento / Untracked)** , a la espera de ser agregado ``git add <archive>`` y confirmados ``git commit -m "Mensaje"`` para fusionarlos a los archivos del **|Repositorio Remoto|**
 
 Para saber GIT si un archivo esta **(Tracked)** o no rastreado **(Untracked)** los compará con los archivos que tiene descargados desde el **[Repositorio Remoto]** ; si ese archivo no esta entre los archivos **{Modified}** , **{UnModified}** , **{Staged/Preparado}** de su **último snapshot / captura** entonces lo considera **(Untracked)**
 

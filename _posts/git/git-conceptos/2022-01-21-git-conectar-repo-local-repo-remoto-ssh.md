@@ -22,7 +22,7 @@ page_css:
 
 ## Conectar mediante SSH un Repositorio local con la plataforma GITHUB
 
-* Para conectar nuestro proyecto local desde el **[Repo.Local]** con el proyecto del **»Repo.Remoto«** de la plataforma **GITHUB** necesitamos configurar nuestro servicio **ssh** desde nuestro sistema **UNIX/Linux** y sincronizarlo con el sistema de la plataforma **GITHUB**, con ello podremos realizar operaciones de envió y recibimiento de información
+* Para conectar nuestro proyecto local desde el **[Repo.Local]** con el proyecto del **|Repo.Remoto|** de la plataforma **GITHUB** necesitamos configurar nuestro servicio **ssh** desde nuestro sistema **UNIX/Linux** y sincronizarlo con el sistema de la plataforma **GITHUB**, con ello podremos realizar operaciones de envió y recibimiento de información
 
 1. Configuramos nuestra cuenta de usuario y correo electrónico con el que vamos a trabajar
 
@@ -32,7 +32,7 @@ page_css:
 
     ``git config --global --user.email email-asociado-git@nombre.dominio``
 
-2. Una vez creada la cuenta tenemos que generar las **claves ssh** para poder sincronizar tanto el **[Repo.Local]** de nuestro sistema con el **»Repo.Remoto«** de la plataforma **GITHUB** mediante los siguientes comandos
+2. Una vez creada la cuenta tenemos que generar las **claves ssh** para poder sincronizar tanto el **[Repo.Local]** de nuestro sistema con el **|Repo.Remoto|** de la plataforma **GITHUB** mediante los siguientes comandos
 
     * Desde la terminal de **UNIX/Linux** y dentro del directorio ``home`` o  ``~/`` ejecutamos el siguiente comando para comprobar si ya tenemos las claves creadas anteriormente
 

@@ -63,13 +63,13 @@ Directorios principales del proyecto
 
 * **(Git Directory - Directorio GIT o Repositorio Local)**
   * Donde se almacenan los **metadatos** y la **base de datos** de los objetos del proyecto
-  * Parte más importante de GIT porque es donde se copia los archivos cuando clonas un **»Repositorio Remoto«** dentro de tu ordenador
+  * Parte más importante de GIT porque es donde se copia los archivos cuando clonas un **|Repositorio Remoto|** dentro de tu ordenador
     * Ruta : ``/project/.git/objects``
 
 ## Git - Opciones
 
-* **origin** → Representa la URL del **«Repositorio Remoto»** que apunta al proyecto dentro de la plataforma **GITHUB**
-  * Se refiere también al **«Repositorio Remoto»** desde donde se clonó.
+* **origin** → Representa la URL del **|Repositorio Remoto|** que apunta al proyecto dentro de la plataforma **GITHUB**
+  * Se refiere también al **|Repositorio Remoto|** desde donde se clonó.
   * Se utiliza entre otras muchas opciones para sincronizar el **proyecto local** con el proyecto dentro de la **plataforma GITHUB**
     * **origin** ←→ https://github.com/RVSWeb/Blog101
 

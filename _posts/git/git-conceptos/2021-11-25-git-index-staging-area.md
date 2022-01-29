@@ -29,7 +29,7 @@ Los cambios realizados dentro del **{Staged}** son muy parecidos a los cambios *
 
 El **{INDEX}** o **{Staging Area}** contiene una **(captura / instantánea)** del contenido del **(Arbol de Trabajo/Working Tree)**, esta **(captura / instantánea)** representa a los contenidos que se cambiaron y que tendrá el **próximo commit**
 
-Es una especie de zona virtual donde se almacenan los archivos después de ejecutar ``git add <archive>`` y que están a la espera de ser confirmados mediante ``git commit -m "Mensaje"`` para almacenarse de forma temporal dentro del **[Repositorio Local]** par luego enviarlos al **»Repositorio Remoto«** con el comando ``git push``
+Es una especie de zona virtual donde se almacenan los archivos después de ejecutar ``git add <archive>`` y que están a la espera de ser confirmados mediante ``git commit -m "Mensaje"`` para almacenarse de forma temporal dentro del **[Repositorio Local]** par luego enviarlos al **|Repositorio Remoto|** con el comando ``git push``
 
 Es una especie de árbol que monitoriza todos los cambios en el (Working Directory) que se ha aplicado con ``git add`` , es un árbol con un mecanismo de almacenamiento de cache interno.
 

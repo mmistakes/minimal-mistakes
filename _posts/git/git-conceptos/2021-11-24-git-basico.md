@@ -32,11 +32,11 @@ page_css:
 * *Técnicamente no es una estructura árbol sino un manifiesto*
   * **manifiesto** : "archivo con los metadatos de un grupo de archivos adjuntos que forman parte de un conjunto o unidad coherente"
 
-  * Zona intermedia donde se almacena los archivos descargados desde el **»Repositorio Remoto«** y que están a la espera de ser modificados o eliminados
+  * Zona intermedia donde se almacena los archivos descargados desde el **|Repositorio Remoto|** y que están a la espera de ser modificados o eliminados
 
 ### [Repo.Local]
 
-* Zona donde se guardan los archivos creados o modificados a la espera de ser integrados con el resto de archivos del proyecto en el **»Repositorio Remoto«**
+* Zona donde se guardan los archivos creados o modificados a la espera de ser integrados con el resto de archivos del proyecto en el **|Repositorio Remoto|**
 
 * **[HEAD]**
   * Es un puntero que señala siempre la rama en la que nos encontramos.

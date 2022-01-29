@@ -60,7 +60,7 @@ Git administra el contenido del **[Repositorio]** con 3 árboles diferentes
 
 Tiene 2 funciones :
 
-* Lugar donde se descomprime los archivos descargados del **»Repositorio Remoto«** para editarlos o modificarlos
+* Lugar donde se descomprime los archivos descargados del **|Repositorio Remoto|** para editarlos o modificarlos
 
 * Espacio donde se almacenan los archivos creados que se van a añadir al proyecto del **[Repo.local]**
 

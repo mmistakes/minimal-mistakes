@@ -40,11 +40,11 @@ tags:
   * No existe seguimiento del archivo **``Git commit``** dentro del **(Working Directory)** con respecto al **último commit** del **[Repositorio]** descargado.
 
 * **{UnModified}**
-  * Después de hacer ``Git add <archivo>`` el archivo queda guardado y esperando a ser enviado mediante ``Git commit -m "mensaje"`` y ``Git push`` al **»Repositorio Remoto«**
+  * Después de hacer ``Git add <archivo>`` el archivo queda guardado y esperando a ser enviado mediante ``Git commit -m "mensaje"`` y ``Git push`` al **|Repositorio Remoto|**
 
 * **{Modified}**
   * Modificados con respecto al commit anterior
-  * Los archivos **UnModified** han sido modificados respecto al ``commit anterior`` lo que significa que para poder enviarse al **»Repositorio Remoto«** se debe de hacer otra vez ``Git add <archive>`` y ``Git commit -m "mensaje"``
+  * Los archivos **UnModified** han sido modificados respecto al ``commit anterior`` lo que significa que para poder enviarse al **|Repositorio Remoto|** se debe de hacer otra vez ``Git add <archive>`` y ``Git commit -m "mensaje"``
 
 * **{Staged}**
   * Archivos y directorios registrados para el **``próximo commit``**
