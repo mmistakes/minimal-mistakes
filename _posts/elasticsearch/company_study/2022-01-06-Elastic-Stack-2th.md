@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Elastic Stack] Elastic Stack Study 2th"
+title: "[Elasticsearch] 사내 스터디: 엘라스틱서치 CRUD/색인/분석기 2th"
 date: "2022-01-06 23:42:21"
 categories: Elasticsearch
 tag: [Elastic Stack, Company Study, Indexing, Analyzer]

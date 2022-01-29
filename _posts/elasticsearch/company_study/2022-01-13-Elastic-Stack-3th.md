@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Elastic Stack] Elastic Stack Study 3th"
+title: "[Elasticsearch] 사내 스터디: 엘라스틱서치 검색 3th"
 date: "2022-01-09 17:55:18"
 categories: Elasticsearch
 tag: [Elastic Stack, Company Study, Searching]
