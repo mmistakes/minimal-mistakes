@@ -288,6 +288,8 @@ defaults:
       layout: single
       author_profie: true
       toc: true
+      toc_sticky: true
+      toc_label: "페이지의 목차"  
       sidebar:
         nav: "docs"
 date_format: "%y-%m-%d"
