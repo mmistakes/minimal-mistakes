@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Elasticsearch] Elastic Stack JSON을 이용한 검색 요청"
-date: "2022-01-28 06:00:00"
+date: "2022-01-29 04:37:05"
 categories: Elasticsearch
 tag: [Elasticsearch, Kibana, JSON]
 toc: true
@@ -74,11 +74,11 @@ GET /bank/_search
 {
   "query": {
     "match_all" : {},
-      "sort": [
-        {
-                "account_number": "asc"
-        }
-      ]
+    "sort": [
+      {
+              "account_number": "asc"
+      }
+    ]
   }
 }
 ```
