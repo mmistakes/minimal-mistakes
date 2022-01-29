@@ -21,7 +21,7 @@ author_profile: true
 
 | 질의                                        | 질의문                                      |
 | ------------------------------------------- | ------------------------------------------- |
-| **books 인덱스, book 타입에서 hemlet 검색** | localhost:9200/books/book/\_search?q=hamlet |
+| **books 인덱스, book 타입에서 hamlet 검색** | localhost:9200/books/book/\_search?q=hamlet |
 | **books 인덱스에서 hamlet 검색**            | localhost:9200/books/\_search?q=hamlet      |
 | **전체 인덱스에서 time 검색**               | localhost:9200/\_search?q=time              |
 
