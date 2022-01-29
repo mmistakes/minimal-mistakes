@@ -256,9 +256,9 @@ val evalTappedJlActors: Stream[IO, Actor] = jlActors.evalTap(IO.println)
 
 As we can notice, the difference between the last statement is that the first mapped the stream to a `Unit` and the second didn't perform any mapping.
 
-An essential feature of fs2 streams is that their functions take constant time, regardless of the structure of the stream itself. So, concatenating two streams is a constant time operation, whether the streams contain many elements or infinite. As we will see in the rest of the article, this feature concerns the internal representation, which is implemented as a _pull-based_ structure.
+An essential feature of fs2 streams is that their functions take constant time, regardless of the structure of the stream itself. So, concatenating two streams is a constant time operation, whether the streams contain many elements or are infinite. As we will see in the rest of the article, this feature concerns the internal representation, which is implemented as a _pull-based_ structure.
 
-Since the functions defined on streams are many, we will make only a few examples. Say that we want to group the Avengers by the actor's name playing them. We can do it using the `fold` method:
+Since the functions defined on streams are many, we will make only a few examples. We want to group the Avengers by the actor's name playing them. We can do it using the `fold` method:
 
 ```scala
 val avengersActorsByFirstName: Stream[Pure, Map[String, List[Actor]]] = avengersActors.fold(Map.empty[String, List[Actor]]) { (map, actor) =>
@@ -272,7 +272,7 @@ Many other streaming libraries define streams and transformation in terms of _so
 
 In fs2, the only available type modeling the above streaming concepts is `Pipe[F[_], -I, +O]`. `Pipe`s are only a type alias for the function `Stream[F, I] => Stream[F, O]`. So, a `Pipe[F[_], I, O]` represents nothing more than a function between two streams, the first emitting elements of type `I`, and the second emitting elements of type `O`.
 
-Using pipes, we can look at fs2 streams definition like the definitions of streams in other libraries, representing transformations on streams as a sequence of stages. The `through` method applies a pipe to a stream. Its internal implementation is straightforward since it involves the function defined by the pipe to the stream:
+Using pipes, we can look at the definition of fs2 streams, like the definitions of streams in other libraries, representing transformations on streams as a sequence of stages. The `through` method applies a pipe to a stream. Its internal implementation is straightforward since it involves the function defined by the pipe to the stream:
 
 ```scala
 // fs2 library code
@@ -362,9 +362,9 @@ def attempt: Stream[F, Either[Throwable, O]] =
 
 ## 5. Resource Management
 
-As the official documentation says, we don't have to use the `handleErrorWith` method to eventually manage the release of resources used by the stream. Instead, the fs2 library implements the _bracket_ pattern to manage resources.
+As the official documentation says, we don't have to use the `handleErrorWith` method to manage the release of resources used by the stream eventually. Instead, the fs2 library implements the _bracket_ pattern to manage resources.
 
-The bracket pattern is a resource management pattern developed in functional programming domain many years ago. The pattern defines two functions: the first is used to acquire a resource, and the second is guaranteed to be called when the resource is no longer needed, also in case of error during its usage.
+The bracket pattern is a resource management pattern developed in the functional programming domain many years ago. The pattern defines two functions: The first is used to acquire a resource; The second is guaranteed to be called when the resource is no longer needed.
 
 The fs2 library implements the bracket pattern through the `bracket` method:
 
@@ -373,7 +373,7 @@ The fs2 library implements the bracket pattern through the `bracket` method:
 def bracket[F[x] >: Pure[x], R](acquire: F[R])(release: R => F[Unit]): Stream[F, R] = ???
 ```
 
-The function `acquire` is used to acquire a resource, and the function `release` is used to release the resource. The resulting stream is a stream of elements of type `R`, and it is guaranteed that the resource is released when the stream is terminated, both in case of success and in case of error. Notice that both the `acquire` and `release` functions returns an effect, since they can throw exceptions during the acquisition or release of resources.
+The function `acquire` is used to acquire a resource, and the function `release` is used to release the resource. The resulting stream has elements of type `R`. Moreover, the resource is released at the end, both in case of success and in case of error. Notice that both the `acquire` and `release` functions returns an effect since they can throw exceptions during the acquisition or release of resources.
 
 Let's make an example. We want to use a resource during the persistence of the stream containing the actors of the JLA. First, we define a value class representing a connection to a database:
 
@@ -381,7 +381,7 @@ Let's make an example. We want to use a resource during the persistence of the s
 case class DatabaseConnection(connection: String) extends AnyVal
 ```
 
-We will use the `DatabaseConnection` as the resource that we want to acquire and release through the bracket pattern. Then, the acquiring and releasing function:
+We will use the `DatabaseConnection` as the resource we want to acquire and release through the bracket pattern. Then, the acquiring and releasing function:
 
 ```scala
 val acquire = IO {
@@ -393,14 +393,14 @@ val release = (conn: DatabaseConnection) =>
   IO.println(s"Releasing connection to the database: $conn")
 ```
 
-Finally, we use them to call the `bracket` method, and then save the actors in the stream:
+Finally, we use them to call the `bracket` method and then save the actors in the stream:
 
 ```scala
 val managedJlActors: Stream[IO, Int] = 
   Stream.bracket(acquire)(release).flatMap(conn => savedJlActors)
 ```
 
-Since the `savedJlActors` we defined some time ago throws an exception when the stream is evaluated, the `managedJlActors` stream will be terminated with an error. The `release` function is called, and the `conn` value is released. The execution output of the `managedJlActors` stream should be something similar to the following:
+Since the `savedJlActors` we defined some time ago throws an exception when the stream is evaluated, the `managedJlActors` stream will terminate with an error. The `release` function is called, and the `conn` value is released. The execution output of the `managedJlActors` stream should be something similar to the following:
 
 ```
 Acquiring connection to the database: DatabaseConnection(jlaConnection)
@@ -409,21 +409,21 @@ Releasing connection to the database: DatabaseConnection(jlaConnection)
 java.lang.RuntimeException: Something went wrong during the communication with the persistence layer
 ```
 
-As we can see, the resource we created was released, even if the stream was terminated with an error. That's awesome!
+As we can see, the resource we created was released, even if the stream had terminated with an error. That's awesome!
 
 ## 6. The `Pull` Type
 
-As we said more than once, the fs2 defines streams as a _pull_ type, which means that the next element of the stream is effectively computed by the stream just in time.
+As we said more than once, the fs2 defines streams as a _pull_ type, which means that the stream effectively computes the next stream element just in time.
 
-To honor this kind of behavior, under the hood, the library implements the functions of the `Stream` type using the `Pull` type. This type, which is available also as a public API, lets us implementing stream modelling them as the pull model we've just described.
+Under the hood, the library implements the `Stream` type functions using the `Pull` type to honor this behavior. This type, also available as a public API, lets us implement stream modeling using the pull model.
 
-The `Pull[F[_], O, R]` type represents a program that can pull output values of type `O`, while computing a result of type `R`, while using amn effect of type `F`. As we can see, the type introduces the new type variable `R` that is not available in the `Stream` type.
+The `Pull[F[_], O, R]` type represents a program that can pull output values of type `O` while computing a result of type `R` while using an effect of type `F`. As we can see, the type introduces the new type variable `R` that is not available in the `Stream` type.
 
-Basically, the result of type `R` of a `Pull` represents the information available after the emission of the element of type `O` that should be used to emit the next value of a stream. For this reason, using `Pull` directly means to develop recursive programs. Ok, one step at time. Let's analyze the `Pull` type and its methods first.
+The result of type `R` of a `Pull` represents the information available after the emission of the element of type `O` that should be used to emit the next value of a stream. For this reason, using `Pull` directly means to develop recursive programs. Ok, one step at a time. Let's analyze the `Pull` type and its methods first.
 
-Think to the `Pull` type as a way to represent a stream as a _head_ and a _tail_, much like we can represent a list. The element of type `O` emitted by the `Pull` represents the head. However, since a stream is a possible infinite data structure, we cannot represent it with a finite one. So, we return a type `R`, that is all the information that we need to compute the tail of the stream.
+`Pull` type represents a stream as a _head_ and a _tail_, much like we can describe a list. The element of type `O` emitted by the `Pull` represents the head. However, since a stream is a possible infinite data structure, we cannot express it with a finite one. So, we return a type `R`, which is all the information that we need to compute the tail of the stream.
 
-Without further ado, let's look at the methods of the `Pull` type. The first method we encounter is the smart constructor `output1`, which creates a `Pull` that emits a single value of type `O` and then completes.
+Let's look at the `Pull` type methods without further ado. The first method we encounter is the smart constructor `output1`, which creates a `Pull` that emits a single value of type `O` and then completes.
 
 ```scala
 val tomHollandActorPull: Pull[Pure, Actor, Unit] = Pull.output1(tomHolland)
@@ -435,9 +435,9 @@ We can convert a `Pull` having the `R` type variable bound to `Unit` directly to
 val tomHollandActorStream: Stream[Pure, Actor] = tomHollandActorPull.stream
 ```
 
-In fact, revamping the analogy with the finite collection, a `Pull` that returns `Unit` is like a `List` with a head and empty tail.
+Revamping the analogy with the finite collection, a `Pull` that returns `Unit` is like a `List` with a head and empty tail.
 
-Unlike the `Stream` type, which defines a monad instance on the type variable `O`, a `Pull` forms a monad instance on the type variable `R`. If we think, it's logical: All we want is to concatenate the information that allow us to compute the tail of the stream. So, if we want to create a sequence of `Pull` containing all the actors that play Spider Man, we can do the following:
+Unlike the `Stream` type, which defines a monad instance on the type variable `O`, a `Pull` forms a monad instance on `R`. If we think, it's logical: All we want is to concatenate the information that allows us to compute the tail of the stream. So, if we want to create a sequence of `Pull` containing all the actors that play Spider-Man, we can do the following:
 
 ```scala
 val spiderMenActorPull: Pull[Pure, Actor, Unit] = 
@@ -458,41 +458,41 @@ final class ToPull[F[_], O] private[Stream] (
   private val self: Stream[F, O]) extends AnyVal
 ```
 
-Then, the `echo` function makes the conversion. It's interesting to look at the implementation of the `echo` method, since it make no conversion at all:
+Then, the `echo` function makes the conversion. It's interesting to look at the implementation of the `echo` method since it makes no conversion at all:
 
 ```scala
 // fs2 library code
 def echo: Pull[F, O, Unit] = self.underlying
 ```
 
-In fact, the `echo` mode just returns the internal representation of the `Stream`, called `underlying`, since a stream is represents as a pull internally:
+The `echo` mode returns the internal representation of the `Stream`, called `underlying` since a stream is represented as a pull internally:
 
 ```scala
 // fs2 library code
 final class Stream[+F[_], +O] private[fs2] (private[fs2] val underlying: Pull[F, O, Unit])
 ```
 
-Another way to convert a `Stream` into a `Pull` is to use the `uncons` function, that returns a `Pull` pulling a tuple containing the head chunk of the stream and its tail. For example, we can call `uncons` the `avengersActors` stream:
+Another way to convert a `Stream` into a `Pull` is to use the `uncons` function, which returns a `Pull` pulling a tuple containing the head chunk of the stream and its tail. For example, we can call `uncons` the `avengersActors` stream:
 
 ```scala
 val unconsAvengersActors: Pull[Pure, INothing, Option[(Chunk[Actor], Stream[Pure, Actor])]] =  
   avengersActors.pull.uncons
 ```
 
-Wow! It's a very intricate type. Let's describe it step by step. First, since the original stream uses the `Pure` effect, also the resulting `Pull` uses the same effect. Then, since the `Pull` deconstructs the original stream, it cannot emit any value, and so the output type is `INothing` (a type alias for scala `Nothing`). It follows the value returned by the `Pull`, i.e. the deconstruction of the original `Stream`.
+Wow! It's a very intricate type. Let's describe it step by step. First, since the original stream uses the `Pure` effect, the resulting `Pull` also uses the same effect. Then, since the `Pull` deconstructs the original stream, it cannot emit any value, and so the output type is `INothing` (type alias for scala `Nothing`). It follows the value returned by the `Pull`, i.e., the deconstruction of the original `Stream`.
 
-The returned value is an `Option` because the `Stream` may be empty: If there is no more value in the original `Stream`, then we will have a `None`. Otherwise, we will have the head of the stream as a `Chunk`, and a `Stream` representing the tail of the original stream.
+The returned value is an `Option` because the `Stream` may be empty: If there is no more value in the original `Stream`, we will have a `None`. Otherwise, we will have the head of the stream as a `Chunk` and a `Stream` representing the tail of the original stream.
 
-There is also a variant of the original `uncons` method returning not the first `Chunk` of the stream, but the first element of stream. It's called `uncons1`:
+A variant of the original `uncons` method returns not the first `Chunk` but the first stream element. It's called `uncons1`:
 
 ```scala
 val uncons1AvengersActors: Pull[Pure, INothing, Option[(Actor, Stream[Pure, Actor])]] = 
   avengersActors.pull.uncons1
 ```
 
-With these bullet in our gun, it's time to write down some functions that uses the `Pull` type. As we said, due to the structure of the type, the functions implemented using the `Pull` type are often recursive.
+With these bullets in our gun, it's time to write down some functions that use the `Pull` type. Due to the structure of the type, the functions implemented using the `Pull` type are often recursive.
 
-For example, without using the `Stream.filter` method, we can write a pipe filtering from a stream of actors all them with a given first name:
+For example, without using the `Stream.filter` method, we can write a pipe filtering from a stream of actors, all of them with a given first name:
 
 ```scala
 def takeByName(name: String): Pipe[IO, Actor, Actor] =
@@ -506,7 +506,7 @@ def takeByName(name: String): Pipe[IO, Actor, Actor] =
   in => go(in, name).stream
 ```
 
-First, we need to accumulate the actors in the stream that fulfill the filtering condition. So, we apply a typical pattern of functional programming, and we define an inner function that we use to recur. Let's call this function `go`.
+First, we need to accumulate the actors in the stream that fulfill the filtering condition. So, we apply a typical functional programming pattern and define an inner function that we use to recur. Let's call this function `go`.
 
 Then, we deconstruct the stream using `uncons1` to retrieve its first element. Since the `Pull` type forms a monad on the `R` type, we can use the `flatMap` method to recur:
 
@@ -520,26 +520,26 @@ If we have a `None` value, then we're done, and terminate the recursion using th
 case None => Pull.done
 ```
 
-Otherwise, we pattern match the `Some` value:
+Otherwise, we pattern-match the `Some` value:
 
 ```scala
 case Some((hd, tl)) =>
 ```
 
-If the first name of the actor representing the head of the stream has the given first name, we output the actor and recur with the tail of the stream. Otherwise, we recur with the tail of the stream:
+If the actor's first name representing the head of the stream has the given first name, we output the actor and recur with the tail of the stream. Otherwise, we recur with the tail of the stream:
 
 ```scala
 if (hd.firstName == name) Pull.output1(hd) >> go(tl, name)
 else go(tl, name)
 ```
 
-Finally, we define the whole `Pipe` calling the `go` function properly, and use the `stream` method to convert the `Pull` instance into a `Stream` instance:
+Finally, we define the whole `Pipe` calling the `go` function and use the `stream` method to convert the `Pull` instance into a `Stream` instance:
 
 ```scala
 in => go(in, name).stream
 ```
 
-Now, we can use the pipe we just defined to filter the avengers stream, getting only the actors with the "Chris" as first name:
+Now, we can use the pipe we just defined to filter the avengers' stream, getting only the actors with the string "Chris" as the first name:
 
 ```scala
 val avengersActorsCalledChris: Stream[IO, Unit] = 
@@ -548,9 +548,9 @@ val avengersActorsCalledChris: Stream[IO, Unit] =
 
 ## 7. Using Concurrency in Streams
 
-One of the most used fs2 features is the ability to use concurrency in streams. In fact, it's possible to implement many of the concurrency patterns using the primitives provided by the `Stream` type.
+One of the most used fs2 features is using concurrency in streams. It's possible to implement many concurrency patterns using the primitives provided by the `Stream` type.
 
-The first function we will analyze is `merge`, which lets us running two streams concurrently, collecting the results in a single stream as they are produced. The execution halts when both streams have halted. For example, we can merge JLA and Avengers concurrently, adding some sleep to the execution of each stream:
+The first function we will analyze is `merge`, which lets us run two streams concurrently, collecting the results in a single stream as they are produced. The execution halts when both streams have halted. For example, we can merge JLA and Avengers concurrently, adding some sleep to the execution of each stream:
 
 ```scala
 val concurrentJlActors: Stream[IO, Actor] = liftedJlActors.evalMap(actor => IO {
@@ -587,7 +587,7 @@ Actor(5,Jason,Momoa)
 
 As we may expect, the stream contains an actor of the JLA more or less every two actors of the Avengers. Once the Avengers actors are finished, the JLA actors fulfill the rest of the stream.
 
-If we don't care about the results of the second stream running concurrently, we can use the  `concurrently` method instead. A common use case for this method is the implementation of a producer-consumer pattern. For example, we can implement program with a producer that uses a `cats.effect.std.Queue` to share JLA actors with a consumer, which simply prints them to the console:
+If we don't care about the results of the second stream running concurrently, we can use the  `concurrently` method instead. An everyday use case for this method is implementing a producer-consumer pattern. For example, we can implement a program with a producer that uses a `cats.effect.std.Queue` to share JLA actors with a consumer, which prints them to the console:
 
 ```scala
 val queue: IO[Queue[IO, Actor]] = Queue.bounded[IO, Actor](10)
@@ -605,7 +605,7 @@ val concurrentlyStreams: Stream[IO, Unit] = Stream.eval(queue).flatMap { q =>
 }
 ```
 
-The first line declares a `Queue` of `Actor`s of size 10. Then, we use streams to transform the effect containing the queue. In detail, we declared a `producer` stream, which scans the JLA actors and adds them to the queue. To understand what's going on, we also add a print statement to the console, which shows the thread name and the actor that was produced:
+The first line declares a `Queue` of `Actor` of size 10. Then, we use streams to transform the effect containing the queue. In detail, we declared a `producer` stream, which scans the JLA actors and adds them to the queue. We also add a print statement to the console showing the thread name and the actor:
 
 ```scala
 val producer: Stream[IO, Unit] =
@@ -615,7 +615,7 @@ val producer: Stream[IO, Unit] =
     .metered(1.second)
 ```
 
-The `metered` method allows to wait a given time between two consecutive pulls. We decide to wait 1 second.
+The `metered` method allows waiting a given time between two consecutive pulls. We decided to wait 1 second.
 
 Then, we declare a `consumer` stream, which pulls an actor from the queue and prints it to the console with the thread name:
 
@@ -650,11 +650,11 @@ Running the above program produces an output similar to the following:
 
 As we can see, the producer and consumer are indeed running concurrently.
 
-One important feature of the running two streams through the `concurrently` method is that the second stream halts when the first stream is finished.
+A critical feature of running two streams through the `concurrently` method is that the second stream halts when the first stream is finished.
 
-Moreover, using streams we can also run concurrently a set of streams, deciding the degree of concurrency _a priori_. The method `parJoin` does exactly this. Contrary to the `concurrently` method, the results of the streams are merged in a single stream, and no assumption is made on streams' termination.
+Moreover, we can run a set of streams concurrently, deciding the degree of concurrency _a priori_ using streams. The method `parJoin` does precisely this. Contrary to the `concurrently` method, the results of the streams are merged in a single stream, and no assumption is made on streams' termination.
 
-We can try to print the actors playing superheroes of the JLA, the Avengers and Spider-Man concurrently. First, we define a `Pipe` printing the thread name and the actor being processed:
+We can try to print the actors playing superheroes of the JLA, the Avengers, and Spider-Man concurrently. First, we define a `Pipe` printing the thread name and the actor being processed:
 
 ```scala
 val toConsoleWithThread: Pipe[IO, Actor, Unit] = in =>
@@ -672,7 +672,7 @@ val parJoinedActors: Stream[IO, Unit] =
   ).parJoin(4)
 ```
 
-The method is available only on streams of type `Stream[F, Stream[F, O]]`. In fact, it's not part directly of the `Stream` API, but it's added by an implicit conversion as an _extension method_:
+The method is available only on streams of type `Stream[F, Stream[F, O]]`. It's not part directly of the `Stream` API, but an implicit conversion adds it as an _extension method_:
 
 ```scala
 // fs2 library code
@@ -682,9 +682,9 @@ implicit final class NestedStreamOps[F[_], O](private val outer: Stream[F, Strea
 }
 ```
 
-Each stream is traversed concurrently, and the maximum degree of concurrency is given in input as the parameter `maxOpen`. As we can see, the effect used to handle concurrency must satisfy the `Concurrent` bound, which is required anywhere concurrency is used in the library. 
+Each stream is traversed concurrently, and the maximum degree of concurrency is given in input as the parameter `maxOpen`. As we can see, the effect used to handle concurrency must satisfy the `Concurrent` bound, which is required anywhere concurrency is used in the library.
 
-In our example, we want 4 thread to pull concurrently values from the 3 stream. In fact, running the program produces an output similar to the following:
+We want four threads to pull concurrent values from the three streams in our example. Running the program produces an output similar to the following:
 
 ```
 [io-compute-3] consumed Actor(7,Scarlett,Johansson)
@@ -704,14 +704,14 @@ In our example, we want 4 thread to pull concurrently values from the 3 stream. 
 [io-compute-2] consumed Actor(5,Jason,Momoa)
 ```
 
-As we can see, the thread used by the runtime are exactly 4.
+As we can see, the threads used by the runtime are precisely four.
 
-There are many other method available in the fs2 library concerning concurrency, such as `either`, `mergeHaltBoth`. Please, refer to the [documentation](https://oss.sonatype.org/service/local/repositories/releases/archive/co/fs2/fs2-core_2.13/3.2.0/fs2-core_2.13-3.2.0-javadoc.jar/!/fs2/index.html) for more details.
+Many other methods are available in the fs2 library concerning concurrency, such as `either` and `mergeHaltBoth`. Please, refer to the [documentation](https://oss.sonatype.org/service/local/repositories/releases/archive/co/fs2/fs2-core_2.13/3.2.0/fs2-core_2.13-3.2.0-javadoc.jar/!/fs2/index.html) for more details.
 
 ## 8. Conclusions
 
-Our long journey through the main features of the fs2 library comes to an end. During the path, we introduced the concepts of `Stream` and how to declare them, both using pure values and in an effectful way. We analyzed streams internals, such as `Chunk`s and `Pull`s. We saw how to handle errors, and how a stream can safely acquire and release a resource. Finally, we focused on concurrency, and how streams can use to deal with concurrent programming. 
+Our long journey through the main features of the fs2 library comes to an end. During the path, we introduced the concepts of `Stream` and how to declare them, both using pure values and in an effectful way. We analyzed streams internals, such as `Chunk`s and `Pull`. We saw how to handle errors and how a stream can safely acquire and release a resource. Finally, we focused on concurrency and how streams can deal with concurrent programming.
 
-However, fs2 is more than this. We didn't speak about how to interact with the external world, for example reading and writing files. We didn't see ho to interrupt the execution of a stream. Moreover, we didn't cite any of the many libraries that decided to build on top of fs2, such as `doobie`, `http4s`, just to cite some. However, the [documentation](https://fs2.io/#/) of fs2 is very comprehensive, and we can refer to it for more details.
+However, fs2 is more than this. We didn't speak about how to interact with the external world, for example, reading and writing files. We didn't see how to interrupt the execution of a stream. Moreover, to mention some, we didn't cite the many libraries built on top of fs2, such as `doobie` or `http4s`. However, the [documentation](https://fs2.io/#/) of fs2 is very comprehensive, and we can refer to it for more details.
 
 
