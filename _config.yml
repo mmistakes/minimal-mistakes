@@ -102,23 +102,23 @@ analytics:
 # Site Author
 author:
   name: "YOUNGMINKIM"
-  avatar: /assets/images/lion_정색.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: ""
-  location: "South Korea"
+  avatar: /assets/images/coding_lion.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: "안녕하세요 코딩하는 라이언 입니다 😎"
+  # location: "Korea Seoul"
   email:
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:youngmin1085@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://bit.ly/3F8bjh0"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "mailto:youngmin1085@gmail.com"
+    # - label: "Resume"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://bit.ly/3F8bjh0"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ym1085"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/93.08.23_/?hl=ko"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://www.instagram.com/93.08.23_/?hl=ko"
 
 # Site Footer
 footer:
@@ -138,9 +138,9 @@ footer:
     # - label: "Bitbucket"
     #   icon: "fab fa-fw fa-bitbucket"
     #   # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: https://www.instagram.com/93.08.23_/?hl=ko
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: https://www.instagram.com/93.08.23_/?hl=ko
 
 # Reading Files
 include:
@@ -273,5 +273,6 @@ defaults:
       share: true
       related: true
       show_date: true
+      sidebar_main: true
 
 date_format: "%Y-%m-%d"

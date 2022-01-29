@@ -2,7 +2,7 @@
 layout: single
 title: "[Elasticsearch] Elastic Stack Study 1th"
 date: "2022-01-04 02:08:43"
-categories: Elastic Stack
+categories: Elasticsearch
 tag: [Elastic Stack, Company Study]
 toc: true
 author_profile: true
