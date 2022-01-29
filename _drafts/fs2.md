@@ -11,7 +11,7 @@ Nowadays, modern applications are often built on top of streaming data: Reading 
 
 However, streams in the standard library are not as powerful as they could be and don't offer concurrency, throttling, or backpressure features.
 
-Fortunately, some libraries offer more robust implementation of streams. One of these is the fs2 library, built on top of the Cats and Cats-effect libraries. Moreover, fs2 provides an entirely functional approach to stream processing. So, without further ado, let's dive into the details of fs2.
+Fortunately, some libraries offer more robust implementation of streams. One of these is the fs2 library, built on top of the Cats and Cats-effect libraries. Moreover, **fs2 provides an entirely functional approach to stream processing**. So, without further ado, let's dive into the details of fs2.
 
 ## 1. Set Up
 
@@ -19,15 +19,14 @@ The fs2 library is available both for Scala 2 and for Scala 3. The following cod
 
 ```scala
 val Fs2Version = "3.2.4"
-
 libraryDependencies += "co.fs2" %% "fs2-core" % Fs2Version
 ```
 
-As we said, the fs2 streaming library is built on top of the Cats and Cats-effect libraries. However, we don't need to specify them as direct dependencies in the sbt file since the two libraries are already contained in fs2.
+As we said, **the fs2 streaming library is built on top of the Cats and Cats-effect libraries**. However, we don't need to specify them as direct dependencies in the sbt file since the two libraries are already contained in fs2.
 
-The `fs2-core` library provides the core functionality of the library. Many other plugins add more features: Reading from and writing to file, from the network, and so on. Moreover, there are a lot of projects using fs2 under the hood, such as `http4s`, `doobie`, `skunk`, to name a few. Please, refer to the [fs2 documentation](https://fs2.io/#/ecosystem) for more information.
+The `fs2-core` library provides the core functionalities of the library. Many other plugins add more features: Reading from and writing to file, from the network, and so on. Moreover, there are a lot of projects using fs2 under the hood, such as `http4s`, `doobie`, `skunk`, to name a few. Please, refer to the [fs2 documentation](https://fs2.io/#/ecosystem) for more information.
 
-It's usual for us at RockTheJvm to build the examples around a concrete scenario. We can continue to refer to the _myimdb_ project that we used both in the article on [http4s](https://blog.rockthejvm.com/http4s-tutorial/) and on [doobie](https://blog.rockthejvm.com/doobie/).
+It's usual for us at RockTheJvm to build the examples around a concrete scenario. We can continue to refer to the _myimdb_ project that we used both in the articles on [http4s](https://blog.rockthejvm.com/http4s-tutorial/) and on [doobie](https://blog.rockthejvm.com/doobie/).
 
 So, we define the Scala class that represents an actor inside a hypothetical movie database:
 
@@ -83,7 +82,7 @@ As the official page of the fs2 stream library reports, its main features are:
  - Stateful transformations
  - Resource safety and effect evaluation
 
-Despite all the above features, the primary type defined by the library is only one, `Stream[F, O]`. This type represents a stream that can pull values of type `O` using an effect of type `F`. The last part of this sentence will be evident in a moment.
+Despite all the above features, **the primary type defined by the library is only one, `Stream[F, O]`. This type represents a stream that can pull values of type `O` using an effect of type `F`**. The last part of this sentence will be evident in a moment.
 
 The easiest way to create a `Stream` is to use its constructor directly. Say that we want to create a `Stream` containing the actors in the Justice League. We can do it like this:
 
@@ -98,7 +97,7 @@ val jlActors: Stream[Pure, Actor] = Stream(
 )
 ```
 
-Since we don't use any effect to compute (or pull) the elements of the stream, we can use the `Pure` effect. In other words, using the `Pure` effect means that pulling the elements from the stream cannot fail.
+Since we don't use any effect to compute (or pull) the elements of the stream, we can use the `Pure` effect. In other words, **using the `Pure` effect means that pulling the elements from the stream cannot fail**.
 
 Similarly, we can create pure streams using smart constructors instead of the `Stream` constructor. Among the others, we have `emit` and `emits`, which create a pure stream with only one element or with a sequence of elements, respectively:
 
@@ -127,9 +126,9 @@ val repeatedJLActorsList: List[Actor] = infiniteJlActors.take(12).toList
 
 The `repeat` method does what its name suggests; it repeats the stream infinitely. Since we cannot put an infinite stream into a list, we take the stream's first _n_ elements and convert them into a list as we've done before.
 
-However, the `Pure` effect is not sufficient to pull new elements from a stream most of the time. In detail, the operation can fail, or it must interact with some external resource or with some code performing _side effects_. In this case, we need to use some effect library, such as Cats-effect, and its effect type, called `IO[A]`.
+However, the `Pure` effect is not sufficient to pull new elements from a stream most of the time. In detail, **the operation can fail, or it must interact with some external resource or with some code performing _side effects_**. In this case, we need to use some effect library, such as Cats-effect, and its effect type, called `IO[A]`.
 
-The above are the "functional" and "effectful" parts. As we will see in a moment, all the streams' definitions are referentially transparent and remain pure since no side effects are performed.
+The above are the "functional" and "effectful" parts. As we will see in a moment, **all the streams' definitions are referentially transparent** and remain pure since no side effects are performed.
 
 Starting from the stream we already defined, we can create a new effectful stream mapping the `Pure` effect in an `IO` effect using the `covary[F]` method:
 
@@ -137,23 +136,25 @@ Starting from the stream we already defined, we can create a new effectful strea
 val liftedJlActors: Stream[IO, Actor] = jlActors.covary[IO]
 ```
 
-The name is called `covary` because of the covariance of the `Stream` type in the `F` type parameter:
+The method is called `covary` because of the covariance of the `Stream` type in the `F` type parameter:
 
 ```scala
 // fs2 library code
 final class Stream[+F[_], +O]
 ```
 
-Since the `Pure` effect is defined as an alias of the Scala bottom type `Nothing`, the `covary` method takes advantage of this fact changes the effect type to `IO`:
+Since the `Pure` effect is defined as an alias of the Scala bottom type `Nothing`, the `covary` method takes advantage of this fact and changes the effect type to `IO`:
 
 ```scala
 // Covariance in F means that 
 // Pure <: IO => Stream[Pure, O] <: Stream[IO, O]
 ```
 
-It's not mandatory to use the `IO` effect. We can use any other effect library that supports type classes defined in the `cats-effect` library. As an example,
+It's not mandatory to use the `IO` effect. **We can use any other effect library** that supports type classes defined in the `cats-effect` library. As an example,
 
-However, we want to create a stream directly evaluating some statements that may produce side effects in most cases. So, for example, let's try to persist an actor through a stream:
+TODO
+
+In most cases, we want to create a stream directly evaluating some statements that may produce side effects. So, for example, let's try to persist an actor through a stream:
 
 ```scala
 val savingTomHolland: Stream[IO, Unit] = Stream.eval {
@@ -185,7 +186,7 @@ In this case, we also applied the `drain` method, which discards any effect outp
 val jlActorsEffectfulList: IO[List[Actor]] = liftedJlActors.compile.toList
 ```
 
-In the end, compiling a stream always produce an effect of the type declared in the `Stream` first type parameter. If we are using the `IO` effect, we can call the `unsafeRunSync` to run the effect:
+In the end, **compiling a stream always produce an effect of the type declared in the `Stream` first type parameter**. If we are using the `IO` effect, we can call the `unsafeRunSync` to run the effect:
 
 ```scala
 import cats.effect.unsafe.implicits.global
