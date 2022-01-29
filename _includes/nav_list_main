@@ -12,14 +12,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "HTTP" %}
-                        <li style="color:#fff2cc; font-size: 0.8em;"><a href="/categories/HTTP" class="">HTTP ({{category[1].size}})</a></li>
+                        <li style="color:#fff2cc; font-size: 0.8em;"><a href="/categories/http" class="">HTTP ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Docker" %}
-                        <li style="color:#fff2cc; font-size: 0.8em;"><a href="/categories/Docker" class="">Docker ({{category[1].size}})</a></li>
+                        <li style="color:#fff2cc; font-size: 0.8em;"><a href="/categories/docker" class="">Docker ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -27,7 +27,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Elasticsearch" %}
-                        <li style="color:#fff2cc; font-size: 0.8em;"><a href="/categories/Elasticsearch" class="">Elasticearch ({{category[1].size}})</a></li>
+                        <li style="color:#fff2cc; font-size: 0.8em;"><a href="/categories/elasticsearch" class="">Elasticearch ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -35,14 +35,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "JPA" %}
-                        <li style="color:#fff2cc; font-size: 0.8em;"><a href="/categories/JPA" class="">JPA ({{category[1].size}})</a></li>
+                        <li style="color:#fff2cc; font-size: 0.8em;"><a href="/categories/jpa" class="">JPA ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Java" %}
-                        <li style="color:#fff2cc; font-size: 0.8em;"><a href="/categories/Java" class="">Java ({{category[1].size}})</a></li>
+                        <li style="color:#fff2cc; font-size: 0.8em;"><a href="/categories/java" class="">Java ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -50,7 +50,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Git" %}
-                        <li style="color:#fff2cc; font-size: 0.8em;"><a href="/categories/Git" class="">Git ({{category[1].size}})</a></li>
+                        <li style="color:#fff2cc; font-size: 0.8em;"><a href="/categories/git" class="">Git ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -58,7 +58,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "TDD" %}
-                        <li style="color:#fff2cc; font-size: 0.8em;"><a href="/categories/TDD" class="">TDD With JUnit ({{category[1].size}})</a></li>
+                        <li style="color:#fff2cc; font-size: 0.8em;"><a href="/categories/tdd" class="">TDD With JUnit ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -66,7 +66,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Etc" %}
-                        <li style="color:#fff2cc; font-size: 0.8em;"><a href="/categories/Etc" class="">Etc ({{category[1].size}})</a></li>
+                        <li style="color:#fff2cc; font-size: 0.8em;"><a href="/categories/etc" class="">Etc ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
