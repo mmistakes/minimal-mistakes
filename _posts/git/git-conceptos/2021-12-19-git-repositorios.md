@@ -58,7 +58,7 @@ page_css:
 
     * Por defecto es ``origin`` pero se puede cambiar
 
-* Muestra todos los **»Repositorio Remoto«** que podemos ejecutar el siguiente comando
+* Muestra todos los **|Repositorio Remoto|** que podemos ejecutar el siguiente comando
 
 ```bash
 git remote  [-v]
@@ -70,7 +70,7 @@ git remote  [-v]
   origin      https://github.com/usuario/PROYECTO (push)
 ```
 
-* Define la **URL** con la que sincronizaremos nuestro ``[Repo.Local]`` con el ``»Servidor Remoto«`` para subir los cambios que hagamos desde nuestro **(Directorio de trabajo/Working Directory)**
+* Define la **URL** con la que sincronizaremos nuestro ``[Repo.Local]`` con el ``|Servidor Remoto|`` para subir los cambios que hagamos desde nuestro **(Directorio de trabajo/Working Directory)**
 
 ```bash
 git remote add <nombre-remoto>
@@ -80,7 +80,7 @@ git remote add <nombre-remoto>
   origin      https://github.com/usuario/PROYECTO (push)
 ```
 
-* Borra el ``<remote-nombre>`` del ``»Repositorio Remoto«`` del ``[Repo.Local]``
+* Borra el ``<remote-nombre>`` del ``|Repositorio Remoto|`` del ``[Repo.Local]``
 
 ```bash
 git remote remove <nombre-remoto>

@@ -24,7 +24,7 @@ tags:
 
 ### Commit
 
-* Instantánea/Captura **(snapshot)** del **estado** o **modificaciones** de los archivos del proyecto que se guardan en el **[Repositorio Local]** a la espera de ser enviados al **»Repositorio Remoto«** para fusionarse con el resto de archivos del proyecto.
+* Instantánea/Captura **(snapshot)** del **estado** o **modificaciones** de los archivos del proyecto que se guardan en el **[Repositorio Local]** a la espera de ser enviados al **|Repositorio Remoto|** para fusionarse con el resto de archivos del proyecto.
 
   * Siempre pertenecen a una **(rama/branch)**
   
@@ -32,7 +32,7 @@ tags:
 
 #### Ejemplo
 
-* Guardar un nuevo commit que sera almacenado en el **log del árbol** de **commits** del **»Repositorio Remoto«** del proyecto y abre un editor para añadirle un mensaje
+* Guardar un nuevo commit que sera almacenado en el **log del árbol** de **commits** del **|Repositorio Remoto|** del proyecto y abre un editor para añadirle un mensaje
 
 ``git commit -m "mensaje"``
 

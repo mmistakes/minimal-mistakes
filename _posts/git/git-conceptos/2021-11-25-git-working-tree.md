@@ -27,7 +27,7 @@ tags:
 
 * **(Working Tree)** es como un directorio **(Espejo)** del **[Repositorio Local]** donde se almacena todos los archivos y directorios con los que vamos a trabajar pero cuyo contenido esta **(Untracked/Sin Rastrear)** y están a la espera de ser rastreado **{Tracked/Rastreado}** mediante el comando ``git add <archive>``
 
-* Este **sección o area** copia los archivos que tiene el **[Repositorio Local]** y los utilizan para trabajar con ellos sin modificar los archivos originales que se descargaron desde el **«Repositorio Remoto»** y se almacenaron en el directorio del **[Repositorio Local]** que esta dentro del directorio **.git/** el cual entre todos sus directorios contiene **(BD/Objetos/Snapshot)** que utiliza el proyecto para poder utilizarse.
+* Este **sección o area** copia los archivos que tiene el **[Repositorio Local]** y los utilizan para trabajar con ellos sin modificar los archivos originales que se descargaron desde el **|Repositorio Remoto|** y se almacenaron en el directorio del **[Repositorio Local]** que esta dentro del directorio **.git/** el cual entre todos sus directorios contiene **(BD/Objetos/Snapshot)** que utiliza el proyecto para poder utilizarse.
 
 Resumen:
 
@@ -43,7 +43,7 @@ Resumen:
 
 * Los archivos descargados desde el **[Repositorio Local]** y que no han sido modificados o alterados desde su origen se encuentra en el estado o area de **(Untracked)** esperando a ser modificados o eliminados.  
 
-* Este directorio copia los archivos que tiene el **[Repositorio Local]** y que se utilizan para trabajar con ellos sin modificar los archivos originales que se descargaron desde el **«Repositorio Remoto»** y se almacenaron en el directorio del **[Repositorio Local]** que es el directorio **.git/** el cual entre todos sus directorios contiene **(BD/Objetos/Snapshot)** que utiliza el proyecto para poder utilizarse.
+* Este directorio copia los archivos que tiene el **[Repositorio Local]** y que se utilizan para trabajar con ellos sin modificar los archivos originales que se descargaron desde el **|Repositorio Remoto|** y se almacenaron en el directorio del **[Repositorio Local]** que es el directorio **.git/** el cual entre todos sus directorios contiene **(BD/Objetos/Snapshot)** que utiliza el proyecto para poder utilizarse.
 
 Resumen:
 

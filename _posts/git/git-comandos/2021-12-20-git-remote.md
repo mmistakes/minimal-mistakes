@@ -23,11 +23,11 @@ page_css:
 
 * Se utiliza para
 
-  * Subir al **»Repositorio Remoto«** todos cambios que se han hecho al proyecto desde el **directorio de trabajo (Working Directory)** y que fueron registrado en los **commits** que se fueron creando mediante el comando ``git commit -m "Mensaje"``
+  * Subir al **|Repositorio Remoto|** todos cambios que se han hecho al proyecto desde el **directorio de trabajo (Working Directory)** y que fueron registrado en los **commits** que se fueron creando mediante el comando ``git commit -m "Mensaje"``
 
-  * Sincronizar la rama del **[Repositorio local]** con la rama del **»Repositorio Remoto«**
+  * Sincronizar la rama del **[Repositorio local]** con la rama del **|Repositorio Remoto|**
 
-* Muestra los **»Repositorio Remotos«** definidos en un **[Repositorio Local]**
+* Muestra los **|Repositorio Remotos|** definidos en un **[Repositorio Local]**
 
 ```git
 #         Elemento Opcional
@@ -35,12 +35,12 @@ page_css:
 git remote [-v]
 ```
 
-* Este comando se utiliza para sincronizar un **[Repositorio local]** con otro **»Repositorio Remoto«** dentro de la plataforma **GITHUB**
+* Este comando se utiliza para sincronizar un **[Repositorio local]** con otro **|Repositorio Remoto|** dentro de la plataforma **GITHUB**
 
   * Por regla general se llamará ``origin`` pero se puede añadir cualquier otro nombre
 
 ```git
-#             Almacena toda la URL del »Repo.Remoto« para su sincronización
+#             Almacena toda la URL del **|Repo.Remoto|** para su sincronización
 #                ↓
 #                ↓
 git remote add origin https://github.com/usuario/nombre_repositorio.git
@@ -49,18 +49,18 @@ git remote add origin https://github.com/usuario/nombre_repositorio.git
 git remote add teamone https://github.com/usuario/nombre_repositorio.git
 ```
 
-* Borra la ``<rama>`` que sincroniza el **[Repositorio Local]** con la rama **»Repositorio Remoto«**
+* Borra la ``<rama>`` que sincroniza el **[Repositorio Local]** con la rama **|Repositorio Remoto|**
 
 ```git
 #                 Rama utilizada para sincronización entre 
-#                   ↓  **[Repo.Local]** y **»Repo.Remoto«** 
+#                   ↓  **[Repo.Local]** y **|Repo.Remoto|** 
 #                   ↓
 #                   ↓
 #                   ↓
 git remote remove <rama>
 ```
 
-* Ver las ramas locales que están sincronizadas con las **»Ramas Remotas«** y demás datos sobre las ramas **[Remote-Tracking-Branches]**
+* Ver las ramas locales que están sincronizadas con las **|Ramas Remotas|** y demás datos sobre las ramas **[Remote-Tracking-Branches]**
 
 ```bash
 git remote show origin

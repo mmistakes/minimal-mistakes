@@ -23,7 +23,7 @@ page_css:
 
 ## Restaurar un archivo después de ejecutar git commit (confirmarlo)
 
-* Tenemos un archivo en el **(Working Directory)** descargado del **«Repo.Remoto»** en la  ``rama master`` llamado **README.md** el cual tiene el siguiente contenido definido
+* Tenemos un archivo en el **(Working Directory)** descargado del **|Repo.Remoto|** en la  ``rama master`` llamado **README.md** el cual tiene el siguiente contenido definido
 
 ```bash
 # mi-git-para-pruebas
@@ -88,7 +88,7 @@ git restore --staged <file>..." to unstage
 
 > Pero para este ejemplo confirmaremos los cambios realizados en el archivo
 
-* Ejecutamos el comando ``git commit -m "Mensaje"`` para crear la **instantánea/snapshot** y así enviar los cambios al ``»Repo.Remoto«`` mediante el comando ``git push``
+* Ejecutamos el comando ``git commit -m "Mensaje"`` para crear la **instantánea/snapshot** y así enviar los cambios al ``|Repo.Remoto|`` mediante el comando ``git push``
 
   * Antes comprobamos el historial de ``git commit`` que ejecutamos anteriormente
 
@@ -96,7 +96,7 @@ git restore --staged <file>..." to unstage
 # Vemos el último commit que tenemos en el historial de commit
 git log --oneline 
 28b2592 (origin/main, origin/HEAD) Initial commit
-# Creamos la confirmación para guardar los cambios del archivo para ser enviados al »Repo.Remoto«
+# Creamos la confirmación para guardar los cambios del archivo para ser enviados al |Repo.Remoto|
 git commit -m "1º commit ejecutado"
 ```
 
