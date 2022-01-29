@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Elasticsearch] Elastic Stack URL을 이용한 검색 요청"
-date: "2022-01-29 06:05:00"
+date: "2022-01-28 06:05:00"
 categories: Elasticsearch
 tag: [Elasticsearch, Kibana, Search, ELK Query DSL]
 toc: true
