@@ -1,9 +1,9 @@
 ---
 layout: single
-title: "[Elasticsearch] Elastic Stack JSON 검색 요청"
+title: "[Elasticsearch] Elastic Stack JSON을 이용한 검색 요청"
 date: "2022-01-29 09:51:51"
 categories: Elasticsearch
-tag: [Elasticsearch, Kibana, Search]
+tag: [Elasticsearch, Kibana, Search, ELK Query DSL]
 toc: true
 author_profile: true
 # sidebar:
