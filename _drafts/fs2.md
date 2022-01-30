@@ -24,9 +24,9 @@ libraryDependencies += "co.fs2" %% "fs2-core" % Fs2Version
 
 As we said, **the fs2 streaming library is built on top of the Cats and Cats-effect libraries**. However, we don't need to specify them as direct dependencies in the sbt file since the two libraries are already contained in fs2.
 
-The `fs2-core` library provides the core functionalities of the library. Many other plugins add more features: Reading from and writing to file, from the network, and so on. Moreover, there are a lot of projects using fs2 under the hood, such as `http4s`, `doobie`, `skunk`, to name a few. Please, refer to the [fs2 documentation](https://fs2.io/#/ecosystem) for more information.
+The `fs2-core` library provides the core functionalities of the library. Many other plugins add more features: Reading from and writing to file, from the network, and so on. Moreover, there are a lot of projects using fs2 under the hood, such as _http4s_, _doobie_, _skunk_, to name a few. Please, refer to the [fs2 documentation](https://fs2.io/#/ecosystem) for more information.
 
-It's usual for us at RockTheJvm to build the examples around a concrete scenario. We can continue to refer to the _myimdb_ project that we used both in the articles on [http4s](https://blog.rockthejvm.com/http4s-tutorial/) and on [doobie](https://blog.rockthejvm.com/doobie/).
+It's usual for us at RockTheJvm to build the examples around a concrete scenario. We can continue to refer to the _myimdb_ project that we used both in the articles on [_http4s_](https://blog.rockthejvm.com/http4s-tutorial/) and on [_doobie_](https://blog.rockthejvm.com/doobie/).
 
 So, we define the Scala class that represents an actor inside a hypothetical movie database:
 
@@ -150,9 +150,13 @@ Since the `Pure` effect is defined as an alias of the Scala bottom type `Nothing
 // Pure <: IO => Stream[Pure, O] <: Stream[IO, O]
 ```
 
-It's not mandatory to use the `IO` effect. **We can use any other effect library** that supports type classes defined in the `cats-effect` library. As an example,
+It's not mandatory to use the `IO` effect. **We can use any other effect library** that supports type classes defined in the `cats-effect` library. As an example, let's use the `covary` method using a generic effect type:
 
-TODO
+```scala
+def jlActorStream[F[_]: MonadThrow]: Stream[F, Actor] = jlActors.covary[F]
+```
+
+In this case, we chose to use the `MonadThrow` type class from the `cats-effect` library, which allows us to concatenate effects using the `flatMap` method and handle exceptions natively.
 
 In most cases, we want to create a stream directly evaluating some statements that may produce side effects. So, for example, let's try to persist an actor through a stream:
 
@@ -233,7 +237,7 @@ val dcAndMarvelSuperheroes: Stream[Pure, Actor] = jlActors ++ avengersActors
 
 So, the `dcAndMarvelSuperheroes` stream will emit all the actors from the Justice League and then the Avengers.
 
-The `Stream` type forms a monad on the `O` type parameter, which means that a `flatMap` method is available on streams, and we can use it to concatenate operations concerning the output values of the stream.
+**The `Stream` type forms a monad on the `O` type parameter**, which means that a `flatMap` method is available on streams, and we can use it to concatenate operations concerning the output values of the stream.
 
 For example, printing to the console the elements of a stream uses the `flatMap` method:
 
@@ -249,13 +253,13 @@ The pattern of calling the function `Stream.eval` inside a `flatMap` is so commo
 val evalMappedJlActors: Stream[IO, Unit] = jlActors.evalMap(IO.println)
 ```
 
-In this case, we need to perform some effects on the stream, but we don't want to change the type of the stream; We can use the `evalTap` method:
+If we need to perform some effects on the stream, but we don't want to change the type of the stream, we can use the `evalTap` method:
 
 ```scala
 val evalTappedJlActors: Stream[IO, Actor] = jlActors.evalTap(IO.println)
 ```
 
-As we can notice, the difference between the last statement is that the first mapped the stream to a `Unit` and the second didn't perform any mapping.
+As we can notice, the difference is that the `evalMap` function mapped the stream to a `Unit`, whereas the `evalTap` didn't perform any mapping.
 
 An essential feature of fs2 streams is that their functions take constant time, regardless of the structure of the stream itself. So, concatenating two streams is a constant time operation, whether the streams contain many elements or are infinite. As we will see in the rest of the article, this feature concerns the internal representation, which is implemented as a _pull-based_ structure.
 
@@ -269,11 +273,11 @@ val avengersActorsByFirstName: Stream[Pure, Map[String, List[Actor]]] = avengers
 
 As we can see, the `fold` method works exactly as its Scala counterpart.
 
-Many other streaming libraries define streams and transformation in terms of _sources_, _pipes_, and _sinks_. A source generates the elements of a stream, then transformed through a sequence of stages or pipes, and finally consumed by a sink. For example, the Akka Stream library has specific types modeling these concepts.
+**Many other streaming libraries define streams and transformation in terms of _sources_, _pipes_, and _sinks_**. A source generates the elements of a stream, then transformed through a sequence of stages or pipes, and finally consumed by a sink. For example, the Akka Stream library has specific types modeling these concepts.
 
-In fs2, the only available type modeling the above streaming concepts is `Pipe[F[_], -I, +O]`. `Pipe`s are only a type alias for the function `Stream[F, I] => Stream[F, O]`. So, a `Pipe[F[_], I, O]` represents nothing more than a function between two streams, the first emitting elements of type `I`, and the second emitting elements of type `O`.
+In fs2, the only available type modeling the above streaming concepts is `Pipe[F[_], -I, +O]`. `Pipe` is a type alias for the function `Stream[F, I] => Stream[F, O]`. So, a `Pipe[F[_], I, O]` represents nothing more than a function between two streams, the first emitting elements of type `I`, and the second emitting elements of type `O`.
 
-Using pipes, we can look at the definition of fs2 streams, like the definitions of streams in other libraries, representing transformations on streams as a sequence of stages. The `through` method applies a pipe to a stream. Its internal implementation is straightforward since it involves the function defined by the pipe to the stream:
+Using pipes, we can look at the definition of fs2 streams, like the definitions of streams in other libraries, representing transformations on streams as a sequence of stages. The `through` method applies a pipe to a stream. Its internal implementation is straightforward since it applies the function defined by the pipe to the stream:
 
 ```scala
 // fs2 library code
@@ -293,7 +297,7 @@ val stringNamesOfJlActors: Stream[IO, Unit] =
   jlActors.through(fromActorToStringPipe).through(toConsole)
 ```
 
-The `jlActors` stream represents the _source_, whereas the `fromActorToStringPipe` represents a pipe, and the `toConsole` represents the _sink_. We can conclude that a pipe is pretty much a map/flatMap type functional operation, but the pipe concept fits nicely into the mental model of a Stream.
+The `jlActors` stream represents the _source_, whereas the `fromActorToStringPipe` represents a pipe, and the `toConsole` represents the _sink_. We can conclude that a pipe is pretty much a _map_/_flatMap_ type functional operation, but the pipe concept fits nicely into the mental model of a Stream.
 
 ## 4. Error Handling in Streams
 
@@ -325,7 +329,7 @@ Saving actor: Actor(0,Henry,Cavill)
 java.lang.RuntimeException: Something went wrong during the communication with the persistence layer
 ```
 
-As we can see, the stream is interrupted by the exception. In the above execution, it doesn't persist even the first actor. So, every time an exception occurs during pulling elements from a stream, the stream execution ends.
+As we can see, **the stream is interrupted by the exception**. In the above execution, it doesn't persist even the first actor. So, every time an exception occurs during pulling elements from a stream, the stream execution ends.
 
 However, fs2 gives us many choices to handle the error. First, we can handle an error returning a new stream using the `handleErrorWith` method:
 
@@ -363,7 +367,7 @@ def attempt: Stream[F, Either[Throwable, O]] =
 
 ## 5. Resource Management
 
-As the official documentation says, we don't have to use the `handleErrorWith` method to manage the release of resources used by the stream eventually. Instead, the fs2 library implements the _bracket_ pattern to manage resources.
+As the official documentation says, we don't have to use the `handleErrorWith` method to manage the release of resources used by the stream eventually. Instead, **the fs2 library implements the _bracket_ pattern to manage resources**.
 
 The bracket pattern is a resource management pattern developed in the functional programming domain many years ago. The pattern defines two functions: The first is used to acquire a resource; The second is guaranteed to be called when the resource is no longer needed.
 
@@ -374,7 +378,7 @@ The fs2 library implements the bracket pattern through the `bracket` method:
 def bracket[F[x] >: Pure[x], R](acquire: F[R])(release: R => F[Unit]): Stream[F, R] = ???
 ```
 
-The function `acquire` is used to acquire a resource, and the function `release` is used to release the resource. The resulting stream has elements of type `R`. Moreover, the resource is released at the end, both in case of success and in case of error. Notice that both the `acquire` and `release` functions returns an effect since they can throw exceptions during the acquisition or release of resources.
+The function `acquire` is used to acquire a resource, and the function `release` is used to release the resource. The resulting stream has elements of type `R`. Moreover, **the resource is released at the end, both in case of success and in case of error**. Notice that both the `acquire` and `release` functions returns an effect since they can throw exceptions during the acquisition or release of resources.
 
 Let's make an example. We want to use a resource during the persistence of the stream containing the actors of the JLA. First, we define a value class representing a connection to a database:
 
@@ -414,15 +418,15 @@ As we can see, the resource we created was released, even if the stream had term
 
 ## 6. The `Pull` Type
 
-As we said more than once, the fs2 defines streams as a _pull_ type, which means that the stream effectively computes the next stream element just in time.
+As we said more than once, the fs2 defines streams as a _pull_ type, which means that the **stream effectively computes the next stream element just in time**.
 
-Under the hood, the library implements the `Stream` type functions using the `Pull` type to honor this behavior. This type, also available as a public API, lets us implement stream modeling using the pull model.
+Under the hood, the library implements the `Stream` type functions using the `Pull` type to honor this behavior. This type, also available as a public API, lets us implement streams using the pull model.
 
 The `Pull[F[_], O, R]` type represents a program that can pull output values of type `O` while computing a result of type `R` while using an effect of type `F`. As we can see, the type introduces the new type variable `R` that is not available in the `Stream` type.
 
-The result of type `R` of a `Pull` represents the information available after the emission of the element of type `O` that should be used to emit the next value of a stream. For this reason, using `Pull` directly means to develop recursive programs. Ok, one step at a time. Let's analyze the `Pull` type and its methods first.
+The result `R` represents the information available after the emission of the element of type `O` that should be used to emit the next value of a stream. For this reason, using `Pull` directly means to develop recursive programs. Ok, one step at a time. Let's analyze the `Pull` type and its methods first.
 
-`Pull` type represents a stream as a _head_ and a _tail_, much like we can describe a list. The element of type `O` emitted by the `Pull` represents the head. However, since a stream is a possible infinite data structure, we cannot express it with a finite one. So, we return a type `R`, which is all the information that we need to compute the tail of the stream.
+**The `Pull` type represents a stream as a _head_ and a _tail_**, much like we can describe a list. The element of type `O` emitted by the `Pull` represents the head. However, since a stream is a possible infinite data structure, we cannot express it with a finite one. So, we return a type `R`, which is all the information that we need to compute the tail of the stream.
 
 Let's look at the `Pull` type methods without further ado. The first method we encounter is the smart constructor `output1`, which creates a `Pull` that emits a single value of type `O` and then completes.
 
@@ -466,7 +470,7 @@ Then, the `echo` function makes the conversion. It's interesting to look at the 
 def echo: Pull[F, O, Unit] = self.underlying
 ```
 
-The `echo` mode returns the internal representation of the `Stream`, called `underlying` since a stream is represented as a pull internally:
+The `echo` function returns the internal representation of the `Stream`, called `underlying` since a stream is represented as a pull internally:
 
 ```scala
 // fs2 library code
@@ -527,7 +531,7 @@ Otherwise, we pattern-match the `Some` value:
 case Some((hd, tl)) =>
 ```
 
-If the actor's first name representing the head of the stream has the given first name, we output the actor and recur with the tail of the stream. Otherwise, we recur with the tail of the stream:
+If the actor's first name representing the head of the stream has the right first name, we output the actor and recur with the tail of the stream. Otherwise, we recur with the tail of the stream:
 
 ```scala
 if (hd.firstName == name) Pull.output1(hd) >> go(tl, name)
@@ -551,7 +555,7 @@ val avengersActorsCalledChris: Stream[IO, Unit] =
 
 One of the most used fs2 features is using concurrency in streams. It's possible to implement many concurrency patterns using the primitives provided by the `Stream` type.
 
-The first function we will analyze is `merge`, which lets us run two streams concurrently, collecting the results in a single stream as they are produced. The execution halts when both streams have halted. For example, we can merge JLA and Avengers concurrently, adding some sleep to the execution of each stream:
+The first function we will analyze is `merge`, which lets us run two streams concurrently, collecting the results in a single stream as they are produced. **The execution halts when both streams have halted**. For example, we can merge JLA and Avengers concurrently, adding some sleep to the execution of each stream:
 
 ```scala
 val concurrentJlActors: Stream[IO, Actor] = liftedJlActors.evalMap(actor => IO {
@@ -606,7 +610,7 @@ val concurrentlyStreams: Stream[IO, Unit] = Stream.eval(queue).flatMap { q =>
 }
 ```
 
-The first line declares a `Queue` of `Actor` of size 10. Then, we use streams to transform the effect containing the queue. In detail, we declared a `producer` stream, which scans the JLA actors and adds them to the queue. We also add a print statement to the console showing the thread name and the actor:
+The first line declares a `Queue` of `Actor` of size ten. Then, we use streams to transform the effect containing the queue. In detail, we declared a `producer` stream, which scans the JLA actors and adds them to the queue. We also add a print statement to the console showing the thread name and the actor:
 
 ```scala
 val producer: Stream[IO, Unit] =
@@ -616,7 +620,7 @@ val producer: Stream[IO, Unit] =
     .metered(1.second)
 ```
 
-The `metered` method allows waiting a given time between two consecutive pulls. We decided to wait 1 second.
+The `metered` method allows waiting a given time between two consecutive pulls. We decided to wait one second.
 
 Then, we declare a `consumer` stream, which pulls an actor from the queue and prints it to the console with the thread name:
 
@@ -651,7 +655,7 @@ Running the above program produces an output similar to the following:
 
 As we can see, the producer and consumer are indeed running concurrently.
 
-A critical feature of running two streams through the `concurrently` method is that the second stream halts when the first stream is finished.
+A critical feature of running two streams through the `concurrently` method is that **the second stream halts when the first stream is finished**.
 
 Moreover, we can run a set of streams concurrently, deciding the degree of concurrency _a priori_ using streams. The method `parJoin` does precisely this. Contrary to the `concurrently` method, the results of the streams are merged in a single stream, and no assumption is made on streams' termination.
 
@@ -683,7 +687,7 @@ implicit final class NestedStreamOps[F[_], O](private val outer: Stream[F, Strea
 }
 ```
 
-Each stream is traversed concurrently, and the maximum degree of concurrency is given in input as the parameter `maxOpen`. As we can see, the effect used to handle concurrency must satisfy the `Concurrent` bound, which is required anywhere concurrency is used in the library.
+Each stream is traversed concurrently, and the maximum degree of concurrency is given in input as the parameter `maxOpen`. **As we can see, the effect used to handle concurrency must satisfy the `Concurrent` bound, which is required anywhere concurrency is used in the library**.
 
 We want four threads to pull concurrent values from the three streams in our example. Running the program produces an output similar to the following:
 
@@ -711,8 +715,8 @@ Many other methods are available in the fs2 library concerning concurrency, such
 
 ## 8. Conclusions
 
-Our long journey through the main features of the fs2 library comes to an end. During the path, we introduced the concepts of `Stream` and how to declare them, both using pure values and in an effectful way. We analyzed streams internals, such as `Chunk`s and `Pull`. We saw how to handle errors and how a stream can safely acquire and release a resource. Finally, we focused on concurrency and how streams can deal with concurrent programming.
+Our long journey through the main features of the fs2 library comes to an end. During the path, we introduced the concepts of `Stream` and how to declare them, both using pure values and in an effectful way. We analyzed streams internals, such as `Chunk`s and `Pull` types. We saw how to handle errors and how a stream can safely acquire and release a resource. Finally, we focused on concurrency and how streams can deal with concurrent programming.
 
-However, fs2 is more than this. We didn't speak about how to interact with the external world, for example, reading and writing files. We didn't see how to interrupt the execution of a stream. Moreover, to mention some, we didn't cite the many libraries built on top of fs2, such as `doobie` or `http4s`. However, the [documentation](https://fs2.io/#/) of fs2 is very comprehensive, and we can refer to it for more details.
+However, fs2 is more than this. We didn't speak about how to interact with the external world, for example, reading and writing files. We didn't see how to interrupt the execution of a stream. Moreover, to mention some, we didn't cite the many libraries built on top of fs2, such as _doobie_ or _http4s_. However, the [documentation](https://fs2.io/#/) of fs2 is very comprehensive, and we can refer to it for more details.
 
 
