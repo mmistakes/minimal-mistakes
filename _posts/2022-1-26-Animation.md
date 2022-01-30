@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "CSS Animation"
-categories: HTML&CSS
+categories: HTML & CSS
 tag:
   [
     HTML,
@@ -32,17 +32,18 @@ sidebar:
 
 ![SuVjwwv](https://user-images.githubusercontent.com/67591105/151110135-d81f4fe7-6aed-4330-bfc1-466d48d0d57a.gif)
 
-## 2. HTML 코드 
+## 2. HTML 코드
 
-###  태그 정리하기 (위에서부터 순서대로 )
-	- body 
-	- div class='dots'(1) : 3개의 dots을 가진 div(block)
-	- span class='dot'(3) : 1개의 dot을 가진 span(inline) 
-	- div class='lines' 와 span class='line' 도 위와 같음
+### 태그 정리하기 (위에서부터 순서대로 )
 
-### 코드 
+    - body
+    - div class='dots'(1) : 3개의 dots을 가진 div(block)
+    - span class='dot'(3) : 1개의 dot을 가진 span(inline)
+    - div class='lines' 와 span class='line' 도 위와 같음
 
-```python 
+### 코드
+
+```python
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,7 +69,7 @@ sidebar:
 
 ```
 
-## 3. CSS 
+## 3. CSS
 
 ### 내용정리
 
@@ -77,13 +78,13 @@ sidebar:
   display: flex;				flex-direction: column;
   justify-content: center;		 align-items: center;
 
-2. animation 만들기 
-- @keyframes {{}} 안의 내용은 코드 참고 
+2. animation 만들기
+- @keyframes {{}} 안의 내용은 코드 참고
 
-3. 태그마다 따로 animation-delay 등으로 효과를 다채롭게 표현 가능 
+3. 태그마다 따로 animation-delay 등으로 효과를 다채롭게 표현 가능
 ```
 
-### 코드 
+### 코드
 
 ```css
 html,
@@ -115,7 +116,6 @@ body {
   animation: dotAnim 1s ease-in-out infinite;
 }
 
-
 .dot {
   background-color: white;
   width: 20px;
@@ -125,17 +125,17 @@ body {
 
 .lines {
   width: 150px;
-  margin-top:200px;
+  margin-top: 200px;
   display: flex;
   justify-content: space-around;
 }
 
 /* 각각의 line에 animation 주기 */
 .line {
-  width: 20px; 
+  width: 20px;
   height: 80px;
   background-color: white;
-  animation: LineAnim 1s ease-in-out infinite; 
+  animation: LineAnim 1s ease-in-out infinite;
 }
 
 /* 
@@ -158,7 +158,7 @@ none 설정으로 크기 고정시켜야 깔끔하게 나옴
     transform: none;
   }
   25% {
-    transform: scaleY(2)
+    transform: scaleY(2);
   }
   50%,
   100% {
@@ -183,4 +183,3 @@ none 설정으로 크기 고정시켜야 깔끔하게 나옴
   animation-delay: 0.4s;
 }
 ```
-

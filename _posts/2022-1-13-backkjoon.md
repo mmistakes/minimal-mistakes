@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "백준 python50(1 ~ 저작권)"
-categories: Algorithm
+categories: 코딩 문제풀이
 tag: [python, 문제, blog, github, 파이썬, 알고리즘, 백준, python50, 풀이, 답]
 toc: true
 sidebar:

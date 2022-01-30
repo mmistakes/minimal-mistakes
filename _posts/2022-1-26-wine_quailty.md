@@ -1,8 +1,7 @@
 ---
-
 layout: single
 title: "와인품질분류"
-categories: DACON
+categories: 데이콘 도전
 tag:
   [
     python,
@@ -13,8 +12,8 @@ tag:
     사이킥런,
     이상치,
     제거,
-    xgboost, 
-    데이콘, 
+    xgboost,
+    데이콘,
     와인,
     품질 분류,
     lightgbm,
@@ -29,23 +28,22 @@ toc: true
 sidebar:
   nav: "docs"
 ---
-## 와인 품질 분류 
 
-- 정확도 높이는 방법?  
-    1) 예측모델을 변경한다   
-    2) 독립변수 삭제 or 가중치 부여 (와인 품질에 어떤 특성이 중요?)    
-    3) 하이퍼 파라미터 튜닝? 
+## 와인 품질 분류
 
+- 정확도 높이는 방법?
+  1. 예측모델을 변경한다
+  2. 독립변수 삭제 or 가중치 부여 (와인 품질에 어떤 특성이 중요?)
+  3. 하이퍼 파라미터 튜닝?
 
 ```python
 import pandas as pd
 %matplotlib inline
-import matplotlib.pyplot as plt 
-import seaborn as sns 
+import matplotlib.pyplot as plt
+import seaborn as sns
 import warnings
 warnings.filterwarnings(action='ignore')
 ```
-
 
 ```python
 train = pd.read_csv('data/train.csv')
@@ -54,21 +52,15 @@ test = pd.read_csv('data/test.csv')
 
 ### 1. 간단한 EDA
 
-
 ```python
 print(train.shape, test.shape)
 ```
 
     (5497, 14) (1000, 13)
 
-
-
 ```python
-train.head(2) 
+train.head(2)
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -79,10 +71,11 @@ train.head(2)
     .dataframe tbody tr th {
         vertical-align: top;
     }
-    
+
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -143,15 +136,9 @@ train.head(2)
 </table>
 </div>
 
-
-
-
 ```python
 test.head(2) # quality 변수가 없네.. quality가 target?
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -162,10 +149,11 @@ test.head(2) # quality 변수가 없네.. quality가 target?
     .dataframe tbody tr th {
         vertical-align: top;
     }
-    
+
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -223,9 +211,6 @@ test.head(2) # quality 변수가 없네.. quality가 target?
 </table>
 </div>
 
-
-
-
 ```python
 train.info()  # 다행히 결측치는 없다
 ```
@@ -233,10 +218,10 @@ train.info()  # 다행히 결측치는 없다
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 5497 entries, 0 to 5496
     Data columns (total 14 columns):
-     #   Column                Non-Null Count  Dtype  
-    ---  ------                --------------  -----  
-     0   index                 5497 non-null   int64  
-     1   quality               5497 non-null   int64  
+     #   Column                Non-Null Count  Dtype
+    ---  ------                --------------  -----
+     0   index                 5497 non-null   int64
+     1   quality               5497 non-null   int64
      2   fixed acidity         5497 non-null   float64
      3   volatile acidity      5497 non-null   float64
      4   citric acid           5497 non-null   float64
@@ -248,11 +233,9 @@ train.info()  # 다행히 결측치는 없다
      10  pH                    5497 non-null   float64
      11  sulphates             5497 non-null   float64
      12  alcohol               5497 non-null   float64
-     13  type                  5497 non-null   object 
+     13  type                  5497 non-null   object
     dtypes: float64(11), int64(2), object(1)
     memory usage: 601.4+ KB
-
-
 
 ```python
 # train 데이터셋 변수간 상관관계(train) 보기 - heatmap
@@ -268,20 +251,19 @@ plt.figure(figsize=(12,12))
 for i in range(1,13):
     plt.subplot(3,4,i)
     sns.distplot(train.iloc[:,i])
-plt.tight_layout(); 
+plt.tight_layout();
     # density 값은 왜 다르지?
     # 확률밀도함수의 y축이 density, 저 함수의 값을 적분하면 값이 1
 ```
 
-
-​     ![output_9_0](https://user-images.githubusercontent.com/67591105/151116436-4b1aeebb-438a-4552-8fdf-b050f7c0abde.png)
+​ ![output_9_0](https://user-images.githubusercontent.com/67591105/151116436-4b1aeebb-438a-4552-8fdf-b050f7c0abde.png)
 
 ```python
 # quality 변수를 기준 다른 피처들의 분포 확인 (barplot)
 for i in range(11):
     fig = plt.figure(figsize = (12,6))
     sns.barplot(x= 'quality', y = train.columns[i+2], data = train)
-    
+
     # 막대그래프는 평균? or 최빈값? , 가운데 선은 편차?
     # 오차막대(?) - 분산?
 ```
@@ -302,9 +284,7 @@ for i in range(11):
 ![output_10_9](https://user-images.githubusercontent.com/67591105/151116456-0a86ee72-4451-4acf-96f6-b2caeb284b7c.png)
 ![output_10_10](https://user-images.githubusercontent.com/67591105/151116459-38bde0db-a893-49c0-bf44-a69bcfe308c0.png)
 
-
 ### 2. 데이터 전처리
-
 
 ```python
 # type은 white와 red 두 종류인데 각각 0과 1로 변환
@@ -316,13 +296,9 @@ train['type'] = enc.transform(train['type'])
 test['type'] = enc.transform(test['type'])
 ```
 
-
 ```python
 train.head(2)
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -333,10 +309,11 @@ train.head(2)
     .dataframe tbody tr th {
         vertical-align: top;
     }
-    
+
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -397,15 +374,9 @@ train.head(2)
 </table>
 </div>
 
-
-
-
 ```python
 train.describe()
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -416,10 +387,11 @@ train.describe()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-    
+
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -582,31 +554,21 @@ train.describe()
 </table>
 </div>
 
-
-
-
 ```python
-# 데이터 분리 및 불필요한 변수 제거 
-    # 독립변수 중 제거해도 좋은 변수가 있을까? 있다면 어떻게 알 수 있을까? 
+# 데이터 분리 및 불필요한 변수 제거
+    # 독립변수 중 제거해도 좋은 변수가 있을까? 있다면 어떻게 알 수 있을까?
 train_x = train.drop(['index','quality'], axis = 1)
 train_y = train['quality']
 test_x = test.drop('index', axis = 1)
 ```
 
-
 ```python
 train_x.shape, train_y.shape, test_x.shape
 ```
 
-
-
-
     ((5497, 12), (5497,), (1000, 12))
 
-
-
 ### 3. 모델링 진행
-
 
 ```python
 # from sklearn.ensemble import RandomForestClassifier
@@ -617,13 +579,7 @@ train_x.shape, train_y.shape, test_x.shape
 # model.fit(train_x, train_y)
 ```
 
-
-
-
     RandomForestClassifier()
-
-
-
 
 ```python
 from xgboost import XGBClassifier
@@ -632,7 +588,7 @@ from sklearn.metrics import roc_auc_score
 # XGBClassifier 객체 생성
 model = XGBClassifier(n_estimators=500, random_state=156) # 100 -> 500 (0.03 늘어남..)
 
-# 학습 : 성능 평가 지표를 auc로 설정하고 학습 수행. 
+# 학습 : 성능 평가 지표를 auc로 설정하고 학습 수행.
 model.fit(train_x, train_y)
 ```
 
@@ -653,32 +609,23 @@ model.fit(train_x, train_y)
                   scale_pos_weight=None, subsample=1, tree_method='exact',
                   validate_parameters=1, verbosity=None)
 
-
-
-
 ```python
 # 학습된 모델로 test 데이터 예측
 y_pred = model.predict(test_x)
 ```
-
 
 ```python
 # 제출파일 생성
 submission = pd.read_csv('data/sample_submission.csv')
 ```
 
-
 ```python
 submission['quality'] = y_pred
 ```
 
-
 ```python
 submission.head(2)
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -689,10 +636,11 @@ submission.head(2)
     .dataframe tbody tr th {
         vertical-align: top;
     }
-    
+
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -716,9 +664,6 @@ submission.head(2)
   </tbody>
 </table>
 </div>
-
-
-
 
 ```python
 submission.to_csv('data/wine_quality_2.csv',index=False)

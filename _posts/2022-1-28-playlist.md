@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Playlist"
-categories: HTML&CSS
+categories: HTML & CSS
 tag:
   [
     HTML,
@@ -32,9 +32,9 @@ sidebar:
 
 ![playlist](https://user-images.githubusercontent.com/67591105/151466618-37efa194-05be-467c-81d6-7d7fda535c32.png)
 
-## 2. HTML 코드 
+## 2. HTML 코드
 
-```python 
+```python
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,7 +64,7 @@ sidebar:
   </div>
   </header>
 
-  
+
   <div class="command-icons">
     <span class="play-icon">
       <i class="fas fa-play"> Play</i>
@@ -83,7 +83,7 @@ sidebar:
         <span class="song-title">Matargasti</span>
         <span class="song-singer">Mohit Chauhan</span>
     </div>
-    
+
     <div class="info">
       <span class="song-color"></span>
       <span class="song-title">Attitude</span>
@@ -105,7 +105,7 @@ sidebar:
 </html>
 ```
 
-## 3. CSS 
+## 3. CSS
 
 ### 내용정리
 
@@ -114,19 +114,19 @@ sidebar:
   display: flex;				flex-direction: column;
   justify-content: center;		 align-items: center;
 
-2. animation 만들기 
-- @keyframes {{}} 안의 내용은 코드 참고 
+2. animation 만들기
+- @keyframes {{}} 안의 내용은 코드 참고
 
-3. 태그마다 따로 animation-delay 등으로 효과를 다채롭게 표현 가능 
+3. 태그마다 따로 animation-delay 등으로 효과를 다채롭게 표현 가능
 ```
 
-### 코드 
+### 코드
 
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 
 body {
-  font-family: 'Jua', sans-serif;
+  font-family: "Jua", sans-serif;
 }
 .border {
   padding: 30px 25px;
@@ -136,9 +136,8 @@ body {
   border-radius: 30px;
 }
 
-
 .status-bar {
-  display:flex;
+  display: flex;
   margin-bottom: 50px;
   font-size: 30px;
 }
@@ -148,22 +147,20 @@ body {
   margin-left: 15px;
 }
 
-
-
 .thumb-info {
   display: flex;
 }
 
-.thumb { 
+.thumb {
   padding-top: 5px;
-  padding-left: 20px
+  padding-left: 20px;
 }
 
-.thumb-icon{
-  height:120px;
-  width:120px;
-  background-color: #FFBD11;
-  display:flex;
+.thumb-icon {
+  height: 120px;
+  width: 120px;
+  background-color: #ffbd11;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 15%;
@@ -172,7 +169,7 @@ body {
 
 .fa-image {
   font-size: 35px;
-  color:white;
+  color: white;
 }
 
 .thumb.title {
@@ -214,7 +211,7 @@ body {
 }
 
 .info {
-  display:flex;
+  display: flex;
   flex-direction: column;
   position: relative;
   justify-content: space-around;
@@ -230,7 +227,7 @@ body {
 }
 
 .song-title {
-  position:absolute;
+  position: absolute;
   margin-left: 70px;
   margin-right: 50px;
   margin-bottom: 15px;
@@ -238,7 +235,7 @@ body {
 }
 
 .song-singer {
-  position:absolute;
+  position: absolute;
   margin-top: 40px;
   margin-left: 70px;
   margin-bottom: 15px;
@@ -261,4 +258,3 @@ body {
   background-color: teal;
 }
 ```
-

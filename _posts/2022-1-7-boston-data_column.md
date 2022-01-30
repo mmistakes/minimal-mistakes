@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "보스톤_컬럼차트"
-categories: boston_data
+categories: 데이터 시각화
 tag:
   [
     python,
