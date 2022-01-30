@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "정부민원 RPA"
-categories: python
+categories: Python
 tag: [python, crawling, blog, github, 정부24, 가족관계, 민원서류, RPA, 파이썬]
 toc: true
 sidebar:

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Setting"
-categories: python
+categories: Python
 tag:
   [
     python,
