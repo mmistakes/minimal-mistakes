@@ -102,14 +102,14 @@ analytics:
 # Site Author
 author:
   name: "YOUNGMINKIM"
-  avatar: /assets/images/coding_lion.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "안녕하세요 코딩하는 라이언 입니다 😎"
+  avatar: /assets/images/깃헙_블로그_프로필.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: "안녕하세요 😄"
   # location: "Korea Seoul"
   email:
   links:
-    # - label: "Email"
-    #   icon: "fas fa-fw fa-envelope-square"
-    #   url: "mailto:youngmin1085@gmail.com"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:youngmin1085@gmail.com"
     # - label: "Resume"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://bit.ly/3F8bjh0"

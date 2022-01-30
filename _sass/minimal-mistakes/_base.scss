@@ -14,11 +14,19 @@ body {
   color: $text-color;
   font-family: $global-font-family;
   line-height: 1.5;
+  background-color: #373c3f;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
     overflow: hidden;
   }
+}
+
+/* 2022-01-30 border-bottom custom */
+.custom-border-bottom {
+  text-decoration: none;
+  border-bottom: 1px solid rgb(238, 238, 70);
+  padding-bottom: 0px;
 }
 
 h1,

@@ -177,7 +177,8 @@
   -ms-flex-align: center;
   align-items: center;
   min-height: $nav-height;
-  background: $background-color;
+  // background: $background-color;
+  background-color: #373c3f; /* 2022-01-30 네브바 색상 강제로 변경 */
 
   a {
     display: block;
@@ -568,6 +569,6 @@
   }
 
   li ul li ul li ul li ul li ul > li a {
-    padding-left: 3.25rem
+    padding-left: 3.25rem;
   }
 }
