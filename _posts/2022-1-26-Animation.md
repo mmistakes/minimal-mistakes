@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "CSS Animation"
-categories: HTML & CSS
+categories: HTML&CSS
 tag:
   [
     HTML,

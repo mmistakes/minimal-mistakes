@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "경사하강법(중급)"
-categories: 머신러닝 개념
+categories: 머신러닝_개념
 tag:
   [
     python,

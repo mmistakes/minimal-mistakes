@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "XGBoost 산탄데르 고객 데이터"
-categories: 데이터 분석
+categories: 데이터_분석
 tag: [
     python,
     머신러닝,

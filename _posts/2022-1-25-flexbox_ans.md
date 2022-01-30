@@ -33,18 +33,19 @@ sidebar:
 
 ![image-20220125160258773](https://user-images.githubusercontent.com/67591105/150957963-ef5b48b4-4915-4a7f-a194-fc17e04a440c.png)
 
-## 2. HTML 코드 
+## 2. HTML 코드
 
-###  태그 정리하기 (위에서부터 순서대로 )
-	- body 
-	- section(1) : width:50%; 으로 화면을 2개로 나누기 (div 좌우로 나누기)
-	- article(4) : 페이지에 독립적으로 구성할 수 있는 태그 
-	- div class='bg'(4) : 배경색을 가진 div
-	- div class='info'(4) : 텍스트박스를 가진 div
+### 태그 정리하기 (위에서부터 순서대로 )
 
-### 코드 
+    - body
+    - section(1) : width:50%; 으로 화면을 2개로 나누기 (div 좌우로 나누기)
+    - article(4) : 페이지에 독립적으로 구성할 수 있는 태그
+    - div class='bg'(4) : 배경색을 가진 div
+    - div class='info'(4) : 텍스트박스를 가진 div
 
-```python 
+### 코드
+
+```python
 <!DOCTYPE html>
 <html>
   <head>
@@ -89,13 +90,13 @@ sidebar:
 </html>
 ```
 
-## 3. CSS 
+## 3. CSS
 
 ### 내용정리
 
 ```
 1. flex
-- flex가 바로 위 부모에 적용되야 자식태그에 flex 가 적용 
+- flex가 바로 위 부모에 적용되야 자식태그에 flex 가 적용
 - flex 에선 태그들의 위치와 정렬, 간격 등을 훨씬 유연하게 조정가능
 	> padding, margin, flex-direction, align-items, justify-content 등
 
@@ -106,13 +107,13 @@ sidebar:
 3. position
 - absolute : 가장 상위 태그(body)를 기준으로 위치를 조정
 	단, 상위 태그에 relative가 잡혀있으면 그 태그 기준으로 조정됨
-	
-4. padding vs margin 
+
+4. padding vs margin
 - margin: 경계선 외부의 여백
-- padding: 경계선 안쪽의 여백 
+- padding: 경계선 안쪽의 여백
 ```
 
-### 코드 
+### 코드
 
 ```css
 /* 
@@ -124,7 +125,7 @@ sidebar:
 */
 
 body {
-  height:100vh;
+  height: 100vh;
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -144,8 +145,8 @@ h1 {
 */
 
 section {
-  width:50%;
-  margin:0 auto;
+  width: 50%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -179,7 +180,7 @@ section {
 }
 
 .color:last-child .color__bg {
-  background-color:thistle;
+  background-color: thistle;
 }
 
 /* 
@@ -188,7 +189,7 @@ border(경계선)
 */
 .color__bg {
   height: 300px;
-  border:5px solid white;
+  border: 5px solid white;
 }
 
 /* 
@@ -197,11 +198,10 @@ box-sizing:border-box; 로 패딩으로 삐져나온 div 조정해줌
 */
 .color__info {
   position: absolute;
-  width:100%;
-  background-color:white;
-  top:20px;
-  padding:0px 10px;
+  width: 100%;
+  background-color: white;
+  top: 20px;
+  padding: 0px 10px;
   box-sizing: border-box;
 }
 ```
-

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "보스턴 주택가격 예측"
-categories: 데이터 분석
+categories: 데이터_분석
 tag:
   [
     python,

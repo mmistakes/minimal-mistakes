@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "보스톤_데이타 처리"
-categories: 데이터 분석
+categories: 데이터_분석
 tag:
   [
     python,

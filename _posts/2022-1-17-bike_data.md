@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "미관측 데이터 회귀분석으로 채워넣기"
-categories: 데이터 분석
+categories: 데이터_분석
 tag:
   [
     python,

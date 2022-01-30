@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "와인품질분류"
-categories: 데이콘 도전
+categories: 데이콘_도전
 tag:
   [
     python,
