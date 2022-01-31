@@ -24,7 +24,7 @@ header:
 
 # Overview
 
-This section of my website is meant to serve as a deep dive into my experience with certain tools, past projects, and roles. For a high-level overview, please  [refer to my resume](https://s3.amazonaws.com/www.abdulrabbani.com/Abdul_Rabbani_resume_20210916.pdf).
+This section of my website is meant to serve as a deep dive into my experience with certain tools, past projects, and roles. For a high-level overview, please  [refer to my resume](https://s3.amazonaws.com/www.abdulrabbani.com/Abdul_Rabbani_resume_20210901.pdf).
 
 # Tech Insight
 
@@ -48,15 +48,17 @@ Throughout my career in tech, I have had the pleasure of having many teachers an
         
     -   **C** - A beautiful language that I _simply_ love. C provides elegancy and simplicity, which has made me an ardent supporter. A language I am happy I learned.
         
+    -   **Go** - A new favorite language. I appreciate the similarities to C while providing easy syntax like Python.
+        
+    -   **Scala** - A language I picked up so that I may understand functional programming. I have also learned to work with Spark in Scala.
+        
     -   **Lua** - A language that I learned when writing NGINX custom modules.
         
     -   **Bash** - A powerful scripting language that I continuously return to.
         
-    -   **Go** - An interesting language that I am currently learning and hoping to do some further development in.
-        
 -   [**Core Knowledge**](/categories/career/technical_experience/core_knowledge)  - A post capturing my knowledge on fundamental technologies, ideas, and concepts.
     
-    -   **Linux Kernel Internals** - Emphasizing my deep appreciation of Linux, and I how learned to understand the true beauty behind it.
+    -   **Linux Kernel Internals** - Emphasizing my deep appreciation of Linux, and I now learned to understand the true beauty behind it.
         
     -   **Core Internet Protocols** - Emphasizing my understanding of core internet protocols at a development level, instead of simply understanding them at a user level.
         

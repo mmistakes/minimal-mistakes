@@ -6,6 +6,8 @@ main:
     url: /categories/career/technical_experience/technical_experience_overview
   - title: "Categories"
     url: /categories/
+  - title: "Crypto"
+    url: /categories/cryptocurrency_and_the_blockchain/
 interview_prep:
   - title: "Interview Prep"
     children:
