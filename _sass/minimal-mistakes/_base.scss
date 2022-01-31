@@ -14,7 +14,7 @@ body {
   color: $text-color;
   font-family: $global-font-family;
   line-height: 1.5;
-  background-color: #353638;
+  // background-color: #353638;
   // background-color: #373c3f;
 
   &.overflow--hidden {
@@ -26,7 +26,7 @@ body {
 /* 2022-01-30 border-bottom custom */
 .custom-border-bottom {
   text-decoration: none;
-  border-bottom: 1px solid rgb(238, 238, 70);
+  border-bottom: 1px solid rgb(238, 238, 86);
   padding-bottom: 0px;
 }
 
