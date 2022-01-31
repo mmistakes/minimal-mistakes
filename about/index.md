@@ -24,7 +24,7 @@
 <img src="/images/profile_pic_tom.jpg" alt="Tom Verguts" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
 __Personal statement__   
-Humans are biological beings. Thus, behavior is generally adaptive, meaning that it aims to optimise some goal function (e.g., to minimise error or to maximise reward). At the same time, humans live in rapidly changing environments, so this ideal will often not be reached.
+Humans are biological agents. Thus, behavior is generally adaptive, meaning that it aims to optimise some goal function (e.g., to minimise error or to maximise reward). At the same time, humans live in rapidly changing environments, so this ideal will often not be reached.
 
 From this perspective, human behavior is often not optimal, but humans learn to gradually achieve their goal (function). In summary, humans learn adaptive behavior, and this defines the topic of our research group.
 
