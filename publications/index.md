@@ -2,15 +2,12 @@
 
 ## Book
 
-- Verguts, T. (in press). Introduction to modelling cognitive processes. [MIT Press.](https://mitpress.mit.edu/books/introduction-modeling-cognitive-processes)
+- Verguts, T. (2022). Introduction to modeling cognitive processes. [MIT Press.](https://mitpress.mit.edu/books/introduction-modeling-cognitive-processes)
 
-Print date expected in Feb 2022.
 
 ## Preprints
 
 - Lesage, E., & Verguts, T. (2021). Contextual overtraining accelerates habit formation in new stimuli. PsyArXiv.[https://psyarxiv.com/7m6bh/](https://psyarxiv.com/7m6bh/)
-
-- Calderon, C.B., Verguts, T., & Frank, M. J. (2021). Thunderstruck: The ACDC model of flexible sequences and rhythms in recurrent neural circuits. BioRxiv. [https://www.biorxiv.org/content/10.1101/2021.04.07.438842v1](https://www.biorxiv.org/content/10.1101/2021.04.07.438842v1)
  
 - Desender, K., Vermeylen, L., & Verguts, T. (2020). Dynamic influences on static measures of metacognition. BioRxiv. [https://doi.org/10.1101/2020.10.29.360453](https://doi.org/10.1101/2020.10.29.360453)
  
@@ -20,9 +17,12 @@ Print date expected in Feb 2022.
 ## Recent publications
 
 in press:
-- Senoussi, M., Verbeke, P., & Verguts, T. (in press). Time-based binding as a solution to and a limitation for flexible cognition. Frontiers in Psychology. BioRxiv version: [https://www.biorxiv.org/content/10.1101/2021.10.09.463761v2](https://www.biorxiv.org/content/10.1101/2021.10.09.463761v2) 
+- Calderon, C.B., Verguts, T., & Frank, M. J. (in press). Thunderstruck: The ACDC model of flexible sequences and rhythms in recurrent neural circuits. PLoS: Computational Biology. BioRxiv version: [https://www.biorxiv.org/content/10.1101/2021.04.07.438842v1](https://www.biorxiv.org/content/10.1101/2021.04.07.438842v1)
+
 
 2022: 
+- Senoussi, M., Verbeke, P., & Verguts, T. (2022). Time-based binding as a solution to and a limitation for flexible cognition. Frontiers in Psychology[https://www.frontiersin.org/articles/10.3389/fpsyg.2021.798061/full] 
+
 - Verbeke P., & Verguts T. (2022). Using top-down gating to optimally balance shared versus separated task representations. Neural Networks. [https://doi.org/10.1016/j.neunet.2021.11.030](https://doi.org/10.1016/j.neunet.2021.11.030)
 
 2021:
