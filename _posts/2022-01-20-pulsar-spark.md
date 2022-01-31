@@ -18,7 +18,7 @@ Typically, streaming data pipelines require a streaming storage layer like Apach
 
 The requirement of unified batch processing and streaming in cloud deployments makes Apache Pulsar an excellent candidate to support the needs of these compute engines. Apache Pulsar is designed for cloud-native infrastructure as well as a unified batch and stream data strategy in mind.
 
-## The Role of Apache Pulsar in Streaming Data Pipelines
+## 1. The Role of Apache Pulsar in Streaming Data Pipelines
 
 > Apache Pulsar excels at storing event streams and performing lightweight stream computing tasks. It's a great fit for long term storage of data and can also be used to store results to some downstream applications.
 
@@ -53,7 +53,7 @@ With Pulsar Functions you can implement common use cases on streaming data, like
     - Content filtering
 - Realtime Machine Learning model deployment and scoring
 
-'Lightweight' also means that Apache Pulsar is an excellent candidate for _edge analytics_ &mdash; with limited resources, devices can benefit from such a framework and analytics which can truly be taken right to the data collection for simple analytical tasks like univariate/multivariate time series analysis.
+'Lightweight' also means that Apache Pulsar is an excellent candidate for _edge analytics_ &mdash; with limited resources, devices can benefit from such a framework and analytics can truly be taken right to the data collection for simple analytical tasks like univariate/multivariate time series analysis.
 
 But for use cases that require more sophisticated computations such as
 
@@ -86,7 +86,7 @@ We are only interested in the latest values of those records and a compacted top
 
 In this scenario, a Pulsar Function that reads the records and performs a lookup in the external system to grab the necessary user and product information could be a better solution.
 
-## Using the Apache Pulsar/Spark Connector
+## 3. Using the Apache Pulsar/Spark Connector
 
 Let's take our example use case and zoom-in the abandoned cart implementation by combining Apache Pulsar and Spark Structured Streaming.
 
@@ -159,7 +159,7 @@ For our simple example implementation, we will consider a cart as _abandoned_, i
 
 Let's take them in turn.
 
-### Producer: Pulsar
+### 3.1. Producer: Pulsar
 
 We'll simulate these events as we described in the [Pulsar intro](/event-streaming-with-pulsar-and-scala/) article. First, we'll set up a Docker container that will run Pulsar:
 
@@ -179,7 +179,7 @@ docker exec -it pulsar bash
 bin/pulsar-admin topics create events 
 ```
 
-Now, in our Scala application, we need to set up a Pulsar producer. Assuming we can [parse our data easily](#7-parsing-events) (in this case from a file with randomized, realistic data), we'll need to set up the necessary Pulsar scaffolding:
+Now, in our Scala application, we need to set up a Pulsar producer. Assuming we can [parse our data easily](#33-parsing-events) (in this case from a file with randomized, realistic data), we'll need to set up the necessary Pulsar scaffolding:
 
 ```scala
 lazy val topicName      = "events"
@@ -244,7 +244,7 @@ Future.sequence(messageIdFutures) // turn the Seq[Future[...]] into Future[Seq[.
   }
 ```
 
-### Consumer: Spark Structured Streaming
+### 3.2. Consumer: Spark Structured Streaming
 
 Spark Structured Streaming &mdash; which we teach [here at Rock the JVM](https://rockthejvm.com/p/spark-streaming) &mdash; is a stream computing engine provides more advanced features that are helpful to our use case:
 
@@ -344,7 +344,7 @@ Some notes on session windows:
 
 By using session windows and grouping on the user sessions, we can easily see if a user has a cart event type, but no purchase event. This makes it easy to filter the events we consider as **abandoned cart** and forward them to a downstream topic for further processing. An example action could be to send out a reminder notification (via smartphone app if available, or via email) to the users after some period of time, e.g. an hour.
 
-### Parsing Events
+### 3.3. Parsing Events
 
 This bit should not be the front and center of the article as the focus is on Pulsar and Spark, so for your convenience, this is the simple code we used to parse the events in [this csv file](https://raw.githubusercontent.com/polyzos/pulsar-spark-structured-streaming/main/data/events.csv).
 
@@ -393,7 +393,7 @@ This bit should not be the front and center of the article as the focus is on Pu
   }
 ```
 
-## Conclusion
+## 4. Conclusion
 
 In this article we discussed the role of Apache Pulsar as a backbone of a modern data infrastructure, the streaming use cases Pulsar can support, and how you can use it along with Spark Structured Streaming to implement some more advanced stream processing use cases by leveraging the Pulsar Spark Connector.
 
