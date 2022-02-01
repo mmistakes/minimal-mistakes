@@ -4,7 +4,7 @@
 
 - Verguts, T. (2022). Introduction to modeling cognitive processes. [MIT Press.](https://mitpress.mit.edu/books/introduction-modeling-cognitive-processes)
 
-<img src="/images/MCP_cover.jpg" alt="MCP book cover" max-width="25%" height="auto" align="left" hspace="10" vspace="10">
+<img src="/images/MCP_cover.jpg" alt="MCP book cover" max-width="10%" height="auto" align="left" hspace="10" vspace="10">
 
 
 ## Preprints
