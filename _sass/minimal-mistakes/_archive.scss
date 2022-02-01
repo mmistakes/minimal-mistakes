@@ -137,6 +137,18 @@
     text-decoration: none;
     color: inherit;
   }
+  small{
+    .page__taxonomy{
+      display: inline-block;
+      a{
+        display: inline-block;
+        margin-right: 5px;
+        padding: 4px 4px;
+        background-color: gainsboro;
+        border-radius: 5px;
+      }
+    }
+  }
 }
 
 /*
