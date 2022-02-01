@@ -5,7 +5,7 @@
 - Verguts, T. (2022). Introduction to modeling cognitive processes. [MIT Press.](https://mitpress.mit.edu/books/introduction-modeling-cognitive-processes)
 
 <img src="/images/MCP_cover.jpg" alt="MCP book cover" class="center" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
-
+    
 ## Preprints
 
 - Lesage, E., & Verguts, T. (2021). Contextual overtraining accelerates habit formation in new stimuli. PsyArXiv.[https://psyarxiv.com/7m6bh/](https://psyarxiv.com/7m6bh/)
