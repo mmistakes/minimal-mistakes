@@ -18,4 +18,4 @@ Congrats to Pieter H, Pieter V and Tom with their new paper that just got accept
 In this work we investigated whether alpha and theta oscillations, both important for learning and cognitive control, operate at similar timescales. In this EEG study, we collected behavioral and electrophysiological data on fast (across trials) and slow (across blocks) timescales. We observed alpha changes in the fast (but not the slow) timescale; and theta changes in the slow (but not the fast) timescale. Thus, we showed that alpha and theta are both involved in learning, but on distinct timescales.
 
 Reference:
-- Huycke, P., Verbeke, P., Boehler, C. N., & Verguts, T. (in press). Theta and alpha power across fast and slow timescales in cognitive control. European Journal of Neuroscience.
+- Huycke, P., Verbeke, P., Boehler, C. N., & Verguts, T. (2021). Theta and alpha power across fast and slow timescales in cognitive control. European Journal of Neuroscience, 54(2), 4581-4594.

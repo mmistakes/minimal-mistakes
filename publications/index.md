@@ -8,7 +8,7 @@
     
 ## Preprints
 
-- Lesage, E., & Verguts, T. (2021). Contextual overtraining accelerates habit formation in new stimuli. PsyArXiv.[https://doi.org/10.31234/osf.io/7m6bh](https://doi.org/10.31234/osf.io/7m6bh)
+- Lesage, E., & Verguts, T. (2021). Contextual overtraining accelerates habit formation in new stimuli. PsyArXiv. [https://doi.org/10.31234/osf.io/7m6bh](https://doi.org/10.31234/osf.io/7m6bh)
  
 - Desender, K., Vermeylen, L., & Verguts, T. (2020). Dynamic influences on static measures of metacognition. BioRxiv. [https://doi.org/10.1101/2020.10.29.360453](https://doi.org/10.1101/2020.10.29.360453)
  
@@ -26,7 +26,7 @@ In press:
 - Verbeke P., & Verguts T. (2022). Using top-down gating to optimally balance shared versus separated task representations. Neural Networks. [https://doi.org/10.1016/j.neunet.2021.11.030](https://doi.org/10.1016/j.neunet.2021.11.030)
 
 2021:
-- Verbeke, P., & Verguts, T. (2021). Neural synchrony for adaptive control. Journal of Cognitive Neuroscience, 33, 2394-2412.[https://doi.org/10.1162/jocn_a_01766](https://doi.org/10.1162/jocn_a_01766)
+- Verbeke, P., & Verguts, T. (2021). Neural synchrony for adaptive control. Journal of Cognitive Neuroscience, 33, 2394-2412. [https://doi.org/10.1162/jocn_a_01766](https://doi.org/10.1162/jocn_a_01766)
 
 - Peng, Z., Yang, X., Xu, C., Wu, X., Yang, Q., Wei, Z., … Chen, Q. (2021). Aberrant Rich Club Organization in Patients with Obsessive-Compulsive Disorder and Their Unaffected First-Degree Relatives. NeuroImage : Clinical. [https://doi.org/10.1016/j.nicl.2021.102808](https://doi.org/10.1016/j.nicl.2021.102808)
 
