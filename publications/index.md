@@ -4,7 +4,7 @@
 
 - Verguts, T. (2022). Introduction to modeling cognitive processes. [MIT Press.](https://mitpress.mit.edu/books/introduction-modeling-cognitive-processes)
 
-<img src="/images/MCP_cover.pdf" alt="MCP" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
+<img src="/images/MCP_cover.jpg" alt="MCP book cover" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
 
 ## Preprints
@@ -18,7 +18,7 @@
 
 ## Recent publications
 
-in press:
+In press:
 - Calderon, C.B., Verguts, T., & Frank, M. J. (in press). Thunderstruck: The ACDC model of flexible sequences and rhythms in recurrent neural circuits. PLoS: Computational Biology. BioRxiv version: [https://www.biorxiv.org/content/10.1101/2021.04.07.438842v1](https://www.biorxiv.org/content/10.1101/2021.04.07.438842v1)
 
 
