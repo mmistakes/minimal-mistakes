@@ -26,7 +26,7 @@ As we said, **the fs2 streaming library is built on top of the Cats and Cats-eff
 
 The `fs2-core` library provides the core functionalities of the library. Many other plugins add more features: Reading from and writing to file, from the network, and so on. Moreover, there are a lot of projects using fs2 under the hood, such as _http4s_, _doobie_, _skunk_, to name a few. Please, refer to the [fs2 documentation](https://fs2.io/#/ecosystem) for more information.
 
-It's usual for us at RockTheJvm to build the examples around a concrete scenario. We can continue to refer to the _myimdb_ project that we used both in the articles on [_http4s_](https://blog.rockthejvm.com/http4s-tutorial/) and on [_doobie_](https://blog.rockthejvm.com/doobie/).
+It's usual for us at Rock the JVM to build the examples around a concrete scenario. We can continue to refer to the _myimdb_ project that we used both in the articles on [_http4s_](https://blog.rockthejvm.com/http4s-tutorial/) and on [_doobie_](https://blog.rockthejvm.com/doobie/).
 
 So, we define the Scala class that represents an actor inside a hypothetical movie database:
 
@@ -42,7 +42,7 @@ As we adore movies based on comics, we define some actors that are famous for pl
 object Data {
   // Justice League
   val henryCavil: Actor = Actor(0, "Henry", "Cavill")
-  val galGodot: Actor = Actor(1, "Gal", "Godot")
+  val galGadot: Actor = Actor(1, "Gal", "Gadot")
   val ezraMiller: Actor = Actor(2, "Ezra", "Miller")
   val benFisher: Actor = Actor(3, "Ben", "Fisher")
   val rayHardy: Actor = Actor(4, "Ray", "Hardy")
@@ -89,7 +89,7 @@ The easiest way to create a `Stream` is to use its constructor directly. Say tha
 ```scala
 val jlActors: Stream[Pure, Actor] = Stream(
   henryCavil,
-  galGodot,
+  galGadot,
   ezraMiller,
   benFisher,
   rayHardy,
@@ -124,11 +124,11 @@ val infiniteJlActors: Stream[Pure, Actor] = jlActors.repeat
 val repeatedJLActorsList: List[Actor] = infiniteJlActors.take(12).toList
 ```
 
-The `repeat` method does what its name suggests; it repeats the stream infinitely. Since we cannot put an infinite stream into a list, we take the stream's first _n_ elements and convert them into a list as we've done before.
+The `repeat` method does what its name suggests; it repeats the stream indefinitely. Since we cannot put an infinite stream into a list, we take the stream's first _n_ elements and convert them into a list as we've done before.
 
 However, the `Pure` effect is not sufficient to pull new elements from a stream most of the time. In detail, **the operation can fail, or it must interact with some external resource or with some code performing _side effects_**. In this case, we need to use some effect library, such as Cats-effect, and its effect type, called `IO[A]`.
 
-The above are the "functional" and "effectful" parts. As we will see in a moment, **all the streams' definitions are referentially transparent** and remain pure since no side effects are performed.
+The above are the "functional" and "effectful" parts. As we will see in a moment, **all the streams' definitions are [referentially transparent](https://blog.rockthejvm.com/referential-transparency/)** and remain pure since no side effects are performed.
 
 Starting from the stream we already defined, we can create a new effectful stream mapping the `Pure` effect in an `IO` effect using the `covary[F]` method:
 
@@ -273,7 +273,7 @@ val avengersActorsByFirstName: Stream[Pure, Map[String, List[Actor]]] = avengers
 
 As we can see, the `fold` method works exactly as its Scala counterpart.
 
-**Many other streaming libraries define streams and transformation in terms of _sources_, _pipes_, and _sinks_**. A source generates the elements of a stream, then transformed through a sequence of stages or pipes, and finally consumed by a sink. For example, the Akka Stream library has specific types modeling these concepts.
+**Many other streaming libraries define streams and transformation in terms of _sources_, _pipes_, and _sinks_**. A source generates the elements of a stream, then transformed through a sequence of stages or pipes, and finally consumed by a sink. For example, the Akka Streams library has specific types modeling these concepts.
 
 In fs2, the only available type modeling the above streaming concepts is `Pipe[F[_], -I, +O]`. `Pipe` is a type alias for the function `Stream[F, I] => Stream[F, O]`. So, a `Pipe[F[_], I, O]` represents nothing more than a function between two streams, the first emitting elements of type `I`, and the second emitting elements of type `O`.
 
@@ -383,7 +383,7 @@ The function `acquire` is used to acquire a resource, and the function `release`
 Let's make an example. We want to use a resource during the persistence of the stream containing the actors of the JLA. First, we define a value class representing a connection to a database:
 
 ```scala
-case class DatabaseConnection(connection: String) extends AnyVal
+case class DatabaseConnection(connection: String)
 ```
 
 We will use the `DatabaseConnection` as the resource we want to acquire and release through the bracket pattern. Then, the acquiring and releasing function:
@@ -422,7 +422,9 @@ As we said more than once, the fs2 defines streams as a _pull_ type, which means
 
 Under the hood, the library implements the `Stream` type functions using the `Pull` type to honor this behavior. This type, also available as a public API, lets us implement streams using the pull model.
 
-The `Pull[F[_], O, R]` type represents a program that can pull output values of type `O` while computing a result of type `R` while using an effect of type `F`. As we can see, the type introduces the new type variable `R` that is not available in the `Stream` type.
+The `Pull[F[_], O, R]` type is a low-level construct that allows us to manually manage an element of type O from a stream, under an effect type F, resulting in a type R which we can then recursively use to manage the next elements in the stream.
+
+With `Pull`, we can describe in minute detail how elements in a stream are produced.
 
 The result `R` represents the information available after the emission of the element of type `O` that should be used to emit the next value of a stream. For this reason, using `Pull` directly means to develop recursive programs. Ok, one step at a time. Let's analyze the `Pull` type and its methods first.
 
