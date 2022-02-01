@@ -182,6 +182,13 @@ bin/pulsar-admin topics create events
 Now, in our Scala application, we need to set up a Pulsar producer. Assuming we can [parse our data easily](#33-parsing-events) (in this case from a file with randomized, realistic data), we'll need to set up the necessary Pulsar scaffolding:
 
 ```scala
+import com.sksamuel.pulsar4s.{DefaultProducerMessage, EventTime, MessageId, ProducerConfig, PulsarClient, Topic}
+import com.sksamuel.pulsar4s.circe._
+import io.circe.generic.auto._
+import io.circe.{Decoder, Encoder, Json, Printer}
+import org.apache.pulsar.client.api.Schema
+import org.apache.pulsar.common.schema.{SchemaInfo, SchemaType}
+
 lazy val topicName      = "events"
 lazy val eventsFilePath = "src/main/resources/events.csv"
 lazy val serviceUrl     = "pulsar://localhost:6650"
@@ -256,7 +263,11 @@ Spark Structured Streaming &mdash; which we teach [here at Rock the JVM](https:/
 With our dependencies in place, let's first connect to Pulsar and start reading events from our `events` topic.
 
 ```scala
- val clickEventsDF = spark
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.functions._
+import org.apache.spark.sql.streaming.OutputMode
+
+val clickEventsDF = spark
         .readStream
         .format("pulsar")
         .option("service.url", "pulsar://localhost:6650")
@@ -349,48 +360,54 @@ By using session windows and grouping on the user sessions, we can easily see if
 This bit should not be the front and center of the article as the focus is on Pulsar and Spark, so for your convenience, this is the simple code we used to parse the events in [this csv file](https://raw.githubusercontent.com/polyzos/pulsar-spark-structured-streaming/main/data/events.csv).
 
 ```scala
-  def loadEvents(path: String, withHeader: Boolean = false): List[Event] = {
-    val r = Try(scala.io.Source.fromFile(path))
-      .map(source => sourceHandler(source, withHeader))
-      .fold(_ => List.empty, identity)
+import java.sql.Timestamp
+import java.util.concurrent.{ExecutorService, Executors}
+import scala.concurrent.{ExecutionContext, Future}
+import scala.io.BufferedSource
+import scala.util.{Failure, Success, Try}
 
-    val result = Try(scala.io.Source.fromFile(path)) match {
-      case Success(source) =>
-        Some(sourceHandler(source, withHeader))
-      case Failure(exception) =>
-        println(s"Failed to read file '$path' - Reason: $exception")
-        None
-    }
+def loadEvents(path: String, withHeader: Boolean = false): List[Event] = {
+  val r = Try(scala.io.Source.fromFile(path))
+    .map(source => sourceHandler(source, withHeader))
+    .fold(_ => List.empty, identity)
 
-    result.getOrElse(List.empty)
+  val result = Try(scala.io.Source.fromFile(path)) match {
+    case Success(source) =>
+      Some(sourceHandler(source, withHeader))
+    case Failure(exception) =>
+      println(s"Failed to read file '$path' - Reason: $exception")
+      None
   }
 
-  private def sourceHandler(source: BufferedSource, withHeader: Boolean): List[Event] = {
-    val events: List[Event] = source.getLines()
-      .map(toEvent)
-      .toList
+  result.getOrElse(List.empty)
+}
 
-    if (withHeader) events.drop(1) else events
-  }
+private def sourceHandler(source: BufferedSource, withHeader: Boolean): List[Event] = {
+  val events: List[Event] = source.getLines()
+    .map(toEvent)
+    .toList
 
-  private def toEvent(line: String): Event = {
-    Try {
-      val tokens = line.split(",")
-      val eventTime = Timestamp.valueOf(tokens(0).replace(" UTC", ""))
+  if (withHeader) events.drop(1) else events
+}
 
-      Event(
-        tokens(7),
-        eventTime.getTime,
-        tokens(1),
-        tokens(2),
-        tokens(3),
-        tokens(4),
-        tokens(5),
-        tokens(6).toDouble,
-        tokens(8)
-      )
-    }.getOrElse(Event.empty())
-  }
+private def toEvent(line: String): Event = {
+  Try {
+    val tokens = line.split(",")
+    val eventTime = Timestamp.valueOf(tokens(0).replace(" UTC", ""))
+
+    Event(
+      tokens(7),
+      eventTime.getTime,
+      tokens(1),
+      tokens(2),
+      tokens(3),
+      tokens(4),
+      tokens(5),
+      tokens(6).toDouble,
+      tokens(8)
+    )
+  }.getOrElse(Event.empty())
+}
 ```
 
 ## 4. Conclusion
