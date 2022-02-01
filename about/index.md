@@ -2,10 +2,9 @@
 
 1. [Principal investigator](#principal-investigator)
 2. [Post-doctoral researchers](#post-doctoral-researchers)
-    - [Anna Marzecova](#anna-marzecova)
+    - [Anna Marzecová](#anna-marzecová)
     - [Elise Lesage](#elise-lesage)
     - [Irene Cogliati Dezza](#irene-cogliati-dezza)
-    - [Jacki Janowich](#jacki-janowich)
     - [Mehdi Senoussi](#mehdi-senoussi)
 3. [PhD researchers](#phd-researchers)
     - [Esin Turkakin](#esin-turkakin)
@@ -36,9 +35,11 @@ Although this is a fairly broad topic, there are a few recurring themes, such as
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="users.ugent.be/~tverguts" href="https://users.ugent.be/~tverguts/Site/Home.html" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">users.ugent.be/~tverguts</a></div>
 
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-7783-4754" href="https://orcid.org/0000-0002-7783-4754" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0002-7783-4754</a></div>
+
 # Post-doctoral researchers
 
-### Anna Marzecova
+### Anna Marzecová
 
 <img src="/images/profile_pic_anna.jpg" alt="Anna Marzecova" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
@@ -53,6 +54,8 @@ My research is supported by an FWO (Research Foundation – Flanders) post-doct
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="http://www.marzecova.com/" href="http://www.marzecova.com/" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">http://www.marzecova.com/</a></div>
 
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-2914-0766" href="https://orcid.org/0000-0002-2914-0766" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0002-2914-0766</a></div>
+
 ### Elise Lesage
 
 <img src="/images/profile_pic_elise.jpg" alt="Elise Lesage" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
@@ -64,6 +67,8 @@ My broader research interests are pretty varied and can be described as: finding
 My Fellowship is funded by the Flanders Fund for Scientific Research (FWO) and the European Commission’s Marie Curie Actions through the Pegasus scheme.
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Elise.Lesage@UGent.be" href="mailto:Elise.Lesage@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Elise.Lesage@UGent.be</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-5517-6965" href="https://orcid.org/0000-0002-5517-6965" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0002-5517-6965</a></div>
 
 ### Irene Cogliati Dezza
 
@@ -78,13 +83,7 @@ My research focuses on understanding how people decide what they want to know an
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://sites.google.com/site/irenecogliatidezza" href="https://sites.google.com/site/irenecogliatidezza" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://sites.google.com/site/irenecogliatidezza</a></div>
 
-### Jacki Janowich
-
-<img src="/images/profile_pic_jacki.jpg" alt="Jacki Janowich" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
-
-Our brains are simultaneously tasked with acting in the present while predicting and preparing for the future. I am interested in how we proactively optimize neural systems ahead of future goal-directed action. In one ongoing line of work, I use EEG/MEG to investigate the neural activities underlying the computation, communication, and maintenance of future goals. In my current work, I focus on how errors in reward prediction shape learning, using computational modeling and MEG/EEG. In particular, I aim to understand how reward prediction (error) is influenced by timing and hierarchical context. My current research is supported by the EOS project MEMODYN, funded by the FWO and F.R.S.–FNRS.
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Jacqueline.JanowichWasserott@UGent.be" href="mailto:jacqueline.janowichwasserott@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Jacqueline.JanowichWasserott@UGent.be</a></div>
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-1212-4751" href="https://orcid.org/0000-0002-1212-4751" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0002-1212-4751</a></div>
 
 ### Mehdi Senoussi
 
@@ -97,6 +96,8 @@ My research currently focuses on top-down/cognitive control mechanisms that allo
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/cog_senoussi" href="https://twitter.com/cog_senoussi" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@cog_senoussi</a></div>
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://sites.google.com/site/senoussim/home" href="https://sites.google.com/site/senoussim/home" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://sites.google.com/site/senoussim/home</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0001-9896-4235" href="https://orcid.org/0000-0001-9896-4235" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0001-9896-4235</a></div>
 
 # PhD researchers
 
@@ -111,6 +112,8 @@ In her research, she mainly focuses on perceptual decision-making, computational
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://esintu.github.io" href="https://esintu.github.io" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://esintu.github.io</a></div>
 
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0003-3379-3986" href="https://orcid.org/0000-0003-3379-3986" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0003-3379-3986</a></div>
+
 <p style="background-color:white;color:white;">White text</p>
 
 ### Jonas Simoens
@@ -122,6 +125,8 @@ Psychologists tend to be interested not only in understanding, but also in impro
 I conduct this research in collaboration with Tom Verguts and Senne Braem, using a combination of computational modeling, behavioural and neuroimaging techniques.
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Jonas.Simoens@UGent.be" href="mailto:Jonas.Simoens@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Jonas.Simoens@UGent.be</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-0497-7287" href="https://orcid.org/0000-0002-0497-7287" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0002-0497-7287</a></div>
 
 ### Pieter Huycke
 
@@ -135,7 +140,7 @@ The next part of this project will focus on computational modeling.
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/phuycke" href="https://github.com/phuycke" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">@phuycke</a></div>
 
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-8156-4419" href="https://orcid.org/0000-0002-8156-4419" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-8156-4419</a></div>
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-8156-4419" href="https://orcid.org/0000-0002-8156-4419" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0002-8156-4419</a></div>
 
 ### Pieter Verbeke
 
@@ -148,6 +153,8 @@ Previous studies of human cognition at different time scales have reported two m
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/PieterVerbeke" href="https://github.com/PieterVerbeke" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">@PieterVerbeke</a></div>
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/PieterVerbeke4" href="https://twitter.com/PieterVerbeke4" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@PieterVerbeke4</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0003-2919-1528" href="https://orcid.org/0000-0003-2919-1528" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0003-2919-1528</a></div>
 
 # Visiting researchers
 
