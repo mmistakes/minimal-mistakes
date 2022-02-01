@@ -1,6 +1,12 @@
 ---
 title: Cross (micro) services authentication with Azure B2C
 tags: [AzureAD, AzureB2C, microservices, OAUTH2, OpenIDConnect, dotnetcore, xamarin]
+
+excerpt: "a playground to test cross API call authenticated via Azurew B2C"
+header:
+  overlay_image: https://live.staticflickr.com/65535/51810822593_fb4f9a7872_h.jpg
+  overlay_filter: rgba(32, 255, 32, 0.5)
+  caption: "Photo credit: [**nicola since 1972**](https://www.flickr.com/photos/15216811@N06/51810822593)"
 ---
 
 
