@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Git - Revert
-date: 2022-01-26
+date: 2022-01-31
 classes: wide
 toc: true
 toc_label: "Tabla de contenido"
@@ -10,7 +10,7 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-show
+  - git-revert
 tags:
   - git-basico
   - git-manual
