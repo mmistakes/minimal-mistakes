@@ -19,48 +19,118 @@ tags:
 
 ## Git - reset
 
-* **Rehace** y **Elimina** los cambios dependiendo del ``commit`` que le indiquemos dentro del árbol de ``commits`` del **[Repositorio Local]**
+* **Rehace** o **Elimina** los cambios dependiendo del ``commit`` que le indiquemos dentro del **árbol de grafos** de ``commits`` dentro del **[Repositorio Local]**
 
 * Extrae los ficheros del **{Staging Area/Staged/Indice/Index}**
-  * Reinvierte el ``git add <archive>``
 
-* Este comando mueve la **rama** según le indique el puntero **[HEAD]**
+  * Revierte el ``git add <archive>``
 
-  * Si **[HEAD]** esta apuntando a la **rama master** y ejecutamos el comando ``git reset <identificador commit anterior>`` hará que la **rama master** apunte al **commit** que le hayamos indicado dentro de su **[Repo.Local]**
+* Este comando mueve la **rama** y el **commit** según le indique el puntero **[HEAD]**
 
-* Deshacer los **cambios locales** y los **commits** trayendo la última versión del servidor **GITHUB** y apuntar a la copia local principal
+  * Si **[HEAD]** esta apuntando a la **rama master** y ejecutamos el comando
+  
+```bash
+git reset <identificador commit anterior>
+```
 
-  ``git reset --hard origin/master``
+* Hará que la **rama master** apunte al **commit** que le hayamos indicado dentro de su **[Repo.Local]**
 
-> `git reset` → Se utiliza para deshacer cambios
+* Deshacer los **cambios locales** y de los **commits** trayendo la **última versión** del servidor **GITHUB** y apuntar a la copia local principal
 
-* `git reset` → Extrae los ficheros del **{Staging Area/Index}** al __(WorkSpace/Working Directory)__
+```bash
+git reset
+```
 
-* `git reset <archivo>` → Extrae el ``<archivo>`` de **{Staging Area/Index}** para enviarlo al estado **(Working Directory)**
+* Se utiliza para deshacer cambios sobre archivo
 
-* `git reset .` → Extrae del **{Staging Area/Index}** todos los ficheros para enviarlo al estado **(Working Directory)**
+```bash
+git reset --hard origin/master
+```
+
+* Extrae los ficheros del **{Staging Area/Index}** al **(WorkSpace/Working Directory)**
+
+```bash
+git reset
+```
+
+* Extrae el ``<archivo>`` de **{Staging Area/Index}** para enviarlo al estado **(Working Directory)**
+
+```bash
+git reset <archivo>
+```
+
+* Extrae del **{Staging Area/Index}** todos los ficheros para enviarlo al estado **(Working Directory)**
+
+```bash
+git reset .
+```
+
+* Extraer archivos del **{Staging Area/Staged/Index}** para enviarlos de nuevo al **(Working Directory)**
+  * Los cambios que has hecho seguirán en el archivo , el comando solo saca los archivos del **{Staging Area/Staged/Index}**
+
+```bash
+git reset HEAD <archivos>
+```
 
 Dependiendo de los argumentos que le añadamos puede afectar al :
 
-* [Arbol de Commit / Commit Tree (HEAD)]
+* **[Árbol de Commit / Commit Tree (HEAD)]**
 
-  * ``git reset --soft HEAD~`` → Deshace el **último commit** posicionando la rama actual y con el [HEAD] en el commit anterior a este modificando la versión de los archivo que pudiera tener.
+  * Deshace el **último commit** posicionando la rama actual y con el **[HEAD]** en el commit anterior a este modificando la versión de los archivo que pudiera tener.
 
-    * "Es un paso atrás en el historial de commit"
+```bash
+git reset --soft HEAD~
+```
 
-    * **En caso de error se puede recuperar el commit deshecho**
+* "Es un paso atrás en el historial de commit"
+  * **En caso de error se puede recuperar el commit deshecho**
 
-* {Staging Area/Index}
+### Opciones de reset
 
-  * ``git reset [--mixed] HEAD~`` → Deshace los cambios hechos en el archivo desde su **último commit** hasta el **{Unstaged}** lo que significa que deshará los cambios realizados en el archivos después del ``git add``
+* Restablecer una rama a un commit anterior
 
-    * "Vuelve el archivo al estado antes de hacerle ``git add``"
+```bash
+git reset <opciones> <COMMIT>
+```
 
-    * **En caso de error se puede recuperar el commit deshecho**
+Podemos añadirle las siguientes opciones al comando anterior
 
-* (Directorio de Trabajo / Working Directory)
-  * ``git reset --hard HEAD~`` → Deshace todos los cambios hechos en los archivos desde su **último commit** hasta el **(Working Directory/Workspace)**
+* --soft : No restablece el fichero **{Index}** o del árbol de trabajo , pero restablece [HEAD] para commit
 
-    * Deja el archivo en su estado original antes de que fuera **modificado** , **agregado** mediante **``git add``** y confirmado con el comando **``git commit``** al historial de **commits**
+  * Cambia todos los archivos a "Cambios a ser commited*
 
-    * **Este es el comando más peligroso ya que en caso de error no se podrá recuperar los cambios o commits sobre los archivos**
+* --mixed : Restablece el **{Index}** pero no el árbol de trabajo e informa de lo que no se ha actualizado
+
+* --hard : Restablece el ``commit`` , **{Index}** y el ``directorio de trabajo``
+
+  * Cualquier cambio en los archivos rastreados en el árbol de trabajo desde el commit son descartados
+
+* --merge : Restablece el **{Index}** y actualiza los archivos en el arbol de trabajo que son diferentes entre le commit y HEAD pero mantiene los que son diferentes entre el **{Index}**
+
+* --keep : Restablece las entradas del **{Index}** , actualiza los archivos en el árbol de trabajo que son diferentes entre ``commit`` y **[HEAD]**
+
+  * Si un archivo que es diferente entre un ``commit`` y el [HEAD] tiene cambios locales , el reinicio se aborta
+
+**(Directorio de Trabajo / Working Directory)**
+
+* Deshace todos los cambios hechos en los archivos desde su **último commit** hasta el **(Working Directory/Workspace)**
+
+```bash
+git reset --hard HEAD~
+```
+
+* Deja el archivo en su estado original antes de que fuera **modificado** , **agregado** mediante **``git add``** y confirmado con el comando **``git commit``** al historial de **commits**
+  
+  * Este es el comando más peligroso ya que en caso de error no se podrá recuperar los cambios o commits sobre los archivos**
+
+**{Staging Area/Staged/Index}**
+
+* Deshace los cambios hechos en el archivo desde su **último commit** hasta el **{Unstaged}** lo que significa que deshará los cambios realizados en el archivos después del ``git add``
+  
+```bash
+git reset [--mixed] HEAD~
+```
+
+* "Vuelve el archivo al estado antes de hacerle ``git add``"
+
+* **En caso de error se puede recuperar el commit deshecho**
