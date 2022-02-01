@@ -27,6 +27,7 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/logo.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+future                   : true
 breadcrumbs            : true
 words_per_minute         : 200
 comments:
@@ -262,6 +263,5 @@ defaults:
       related: true
       show_date: true
       sidebar_main: true
-      future: true
 
 date_format: "%Y-%m-%d"
