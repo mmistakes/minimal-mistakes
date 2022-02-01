@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 locale                   : "ko-KR"
 title                    : "잡동사니 블로그"
 title_separator          : "|"
-subtitle                 : "365일 공부하며 기록하는 blog | 코딩공부 부동산 영어"
+subtitle                 : "365일 공부하며 기록하는 blog | 코딩공부"
 name                     : "CHOMINJOO"
 description              : "An amazing website."
 url                      : "https://minjoo95.github.io"
