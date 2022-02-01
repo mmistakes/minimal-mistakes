@@ -4,6 +4,24 @@ main:
     url: /categories/
   - title: "Tag"
     url: /tags/
+  - title: "Search"
+    url: /search/
+docs:
+  - title: JAVA
+    children:
+      - title: "객체지향 개념 정리(OOP) 1편"
+        url: /oop1/
+      - title: "객체지향 개념 정리(OOP) 2편"
+        url: /oop2/
+      - title: "객체지향 개념 정리(OOP) 3편"
+        url: /oop3/
+      - title: "에러 처리"
+        url: /error/
+  - title: Servlet/JSP
+    children:
+      - title: "짧게 정리(이론 위주)"
+        url: /jsp1/
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
