@@ -15,7 +15,6 @@
 5. [Internship students](#internship-students)
     - [Maud Beeckmans](#maud-beeckmans)
 
-
 # Principal Investigator
 
 ### Tom Verguts
@@ -172,7 +171,7 @@ Since I am fascinated by both computational modelling and statistics, I am happy
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Maud.Beeckmans@UGent.be" href="mailto:Maud.Beeckmans@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Maud.Beeckmans@UGent.be</a></div>
 
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/MaudBeeckmans/" href="https://github.com/MaudBeeckmans/" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">@MaudBeeckmans/</a></div>
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/MaudBeeckmans/" href="https://github.com/MaudBeeckmans/" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">@MaudBeeckmans</a></div>
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/maud_beeckmans" href="https://twitter.com/maud_beeckmans" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@maud_beeckmans</a></div>
 
