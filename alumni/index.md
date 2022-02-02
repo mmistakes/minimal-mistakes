@@ -1,23 +1,24 @@
-## Previous lab members
-
 # Post-doctoral researchers
 
-### Aben, Bart   
+#### Aben, Bart   
 
-At the moment of writing, working as Consultant Research & Development at HumanTotalCare
+Bart is currently working as Consultant Research & Development at HumanTotalCare.
 
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://nl.linkedin.com/in/bart-aben" href="https://nl.linkedin.com/in/bart-aben" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/linkedin_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">Bart Aben's Linkedin</a></div>
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://nl.linkedin.com/in/bart-aben" href="https://nl.linkedin.com/in/bart-aben" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/linkedin.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">Linkedin</a></div>
 
-### Buc Calderon, Cristian
+#### Buc Calderon, Cristian
 
+Cristian currently works as a post-doctoral researcher 
 
-### De Loof, Esther
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0001-8325-2059" href="https://orcid.org/0000-0001-8325-2059" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0001-8325-2059</a></div>
 
-### Desender, Kobe
+#### De Loof, Esther
 
-### Janowich, Jacki
+#### Desender, Kobe
 
-### De Raeve, James
+#### Janowich, Jacki
+
+#### De Raeve, James
 
 
 # PhD researchers
@@ -26,7 +27,7 @@ At the moment of writing, working as Consultant Research & Development at HumanT
 
 # Visiting researchers
 
-### Luyckx, Fabrice
+#### Luyckx, Fabrice
 
 # Internship students
 
