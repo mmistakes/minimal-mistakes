@@ -41,3 +41,7 @@ James currently works as a Data Engineer at [Partena Ziekenfond](https://www.hel
 ###  Ergo, Kate
 
 Kate currently works as a Senior Application Developer (AI Healthcare) at [Nuance Belgium](https://www.nuance.com/nl-be/index.html).
+
+<hr class="dashed">
+ 
+**Note**: the information listed here is subject to change, and is only updated periodically. If you wish to contact one of our alumni, we encourage you to look up contact information online to ensure correctness. 
