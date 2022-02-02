@@ -68,6 +68,8 @@ My Fellowship is funded by the Flanders Fund for Scientific Research (FWO) and t
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Elise.Lesage@UGent.be" href="mailto:Elise.Lesage@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Elise.Lesage@UGent.be</a></div>
 
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/elise_lesage" href="https://twitter.com/elise_lesage" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@elise_lesage</a></div>
+
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-5517-6965" href="https://orcid.org/0000-0002-5517-6965" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0002-5517-6965</a></div>
 
 ### Irene Cogliati Dezza
@@ -138,6 +140,8 @@ My PhD project focuses mostly on the impact of extensive learning on both behavi
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/phuycke" href="https://github.com/phuycke" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">@phuycke</a></div>
 
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/PieterHuycke" href="https://twitter.com/PieterHuycke" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@PieterHuycke</a></div>
+
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-8156-4419" href="https://orcid.org/0000-0002-8156-4419" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0002-8156-4419</a></div>
 
 ### Pieter Verbeke
@@ -167,6 +171,8 @@ Currently, we have no visiting researchers working in our lab.
 Since I am fascinated by both computational modelling and statistics, I am happy to be able to do my research internship in this lab. The project I am working on relates to the estimation of free parameters, such as the learning rate, in computational models. More specifically, we investigate whether exact free parameter estimation is always necessary and how this varying need can be implemented in power estimations. The goal is to find the optimal balance between high power studies and a parsimonious design in different research contexts. In addition, I hope to learn much and acquire new skills during this research internship.
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Maud.Beeckmans@UGent.be" href="mailto:Maud.Beeckmans@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Maud.Beeckmans@UGent.be</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/maud_beeckmans" href="https://twitter.com/maud_beeckmans" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@maud_beeckmans</a></div>
 
 ---
 
