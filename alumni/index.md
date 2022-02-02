@@ -1,6 +1,6 @@
-### Our alumni
+# Our alumni
 
-# Post-doctoral researchers
+## Post-doctoral researchers
 
 ### Aben, Bart   
 
@@ -32,11 +32,11 @@ Kobe currently works as a research professor at the Brain and Cognition research
 
 Jacki currently works as a medical writer at [Evidera](https://www.evidera.com/who-we-are/about-us/).
 
+## PhD researchers
+
 ### De Raeve, James
 
 James currently works as a Data Engineer at [Partena Ziekenfond](https://www.helan.be/nl/).
-
-# PhD researchers
 
 ###  Ergo, Kate
 
