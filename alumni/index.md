@@ -32,15 +32,21 @@ Kobe currently works as a research professor at the Brain and Cognition research
 
 Jacki currently works as a medical writer at [Evidera](https://www.evidera.com/who-we-are/about-us/).
 
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://be.linkedin.com/in/jackijanowich" href="https://be.linkedin.com/in/jackijanowich" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/linkedin.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">in/jackijanowich</a></div>
+
 ## PhD researchers
 
 ### De Raeve, James
 
 James currently works as a Data Engineer at [Partena Ziekenfond](https://www.helan.be/nl/).
 
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://www.linkedin.com/in/james-deraeve-0561881a2/" href="https://www.linkedin.com/in/james-deraeve-0561881a2/" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/linkedin.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">in/james-deraeve-0561881a2/</a></div>
+
 ###  Ergo, Kate
 
 Kate currently works as a Senior Application Developer (AI Healthcare) at [Nuance Belgium](https://www.nuance.com/nl-be/index.html).
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://www.linkedin.com/in/kate-ergo-phd-044959a7/" href="https://www.linkedin.com/in/kate-ergo-phd-044959a7/" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/linkedin.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">in/kate-ergo-phd-044959a7/</a></div>
 
 <hr class="dashed">
  
