@@ -23,6 +23,10 @@ docs:
     children:
       - title: "짧게 정리(이론 위주)"
         url: /jsp1/
+  - title: Algorithm
+    children:
+      - title: "백준 알고리즘 1단계"
+        url: /algorithm1/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
