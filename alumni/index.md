@@ -1,4 +1,14 @@
-# Our alumni
+#### Our alumni
+
+1. [Post-doctoral researchers](#post-doctoral-researchers)
+    - [Aben, Bart](#aben,-bart)
+    - [Buc Calderon, Cristian](#buc-calderon,-cristian)
+    - [De Loof, Esther](#de-loof,-esther)
+    - [Desender, Kobe](#desender,-kobe)
+    - [Janowich, Jacki](#janowich,-jacki)
+2. [PhD researchers](#phd-researchers)
+    - [Deraeve, James](#deraeve,-james)
+    - [Ergo, Kate](#ergo,-kate)
 
 ## Post-doctoral researchers
 
@@ -36,7 +46,7 @@ Jacki currently works as a medical writer at [Evidera](https://www.evidera.com/w
 
 ## PhD researchers
 
-### De Raeve, James
+### Deraeve, James
 
 James currently works as a Data Engineer at [Partena Ziekenfond](https://www.helan.be/nl/).
 
