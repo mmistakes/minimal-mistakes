@@ -8,20 +8,25 @@ At the moment of writing, working as Consultant Research & Development at HumanT
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://nl.linkedin.com/in/bart-aben" href="https://nl.linkedin.com/in/bart-aben" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/linkedin_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">Bart Aben's Linkedin</a></div>
 
-- Buc Calderon, Cristian
-    - 
-- De Loof, Esther
-- Desender, Kobe
-- Janowich, Jacki
-- De Raeve, James
+### Buc Calderon, Cristian
+
+
+### De Loof, Esther
+
+### Desender, Kobe
+
+### Janowich, Jacki
+
+### De Raeve, James
+
 
 # PhD researchers
 
-- Ergo, Kate
+###  Ergo, Kate
 
 # Visiting researchers
 
-- Luyckx, Fabrice
+### Luyckx, Fabrice
 
 # Internship students
 
