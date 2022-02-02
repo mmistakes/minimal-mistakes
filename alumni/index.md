@@ -1,22 +1,16 @@
 #### Our alumni
 
 1. [Post-doctoral researchers](#post-doctoral-researchers)
-    - [Aben Bart](#aben-bart)
     - [Buc Calderon Cristian](#buc-calderon-cristian)
     - [De Loof Esther](#de-loof-esther)
     - [Desender Kobe](#desender-kobe)
     - [Janowich Jacki](#janowich-jacki)
 2. [PhD researchers](#phd-researchers)
+    - [Aben Bart](#aben-bart)
     - [Deraeve James](#deraeve-james)
     - [Ergo Kate](#ergo-kate)
 
 ## Post-doctoral researchers
-
-### Aben Bart   
-
-Bart currently works as Consultant Research & Development at [HumanTotalCare](https://www.humantotalcare.nl/).
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://nl.linkedin.com/in/bart-aben" href="https://nl.linkedin.com/in/bart-aben" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/linkedin.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">in/bart-aben</a></div>
 
 ### Buc Calderon Cristian
 
@@ -45,6 +39,12 @@ Jacki currently works as a medical writer at [Evidera](https://www.evidera.com/w
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://be.linkedin.com/in/jackijanowich" href="https://be.linkedin.com/in/jackijanowich" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/linkedin.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">in/jackijanowich</a></div>
 
 ## PhD researchers
+
+### Aben Bart   
+
+Bart currently works as Consultant Research & Development at [HumanTotalCare](https://www.humantotalcare.nl/).
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://nl.linkedin.com/in/bart-aben" href="https://nl.linkedin.com/in/bart-aben" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/linkedin.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">in/bart-aben</a></div>
 
 ### Deraeve James
 
