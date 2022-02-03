@@ -13,6 +13,6 @@ share: true
 author: pieter_huycke
 ---
 
-Jacki has now left her postdoc positions for other opportunities. 
+Jacki has now left her postdoc position for other opportunities. 
 
 We wish her best of luck in her future career endeavors! :clap:
