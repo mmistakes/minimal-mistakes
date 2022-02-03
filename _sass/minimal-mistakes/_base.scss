@@ -126,6 +126,8 @@ blockquote {
 /* links */
 
 a {
+  text-decoration: none;
+
   &:focus {
     @extend %tab-focus;
   }
@@ -311,7 +313,8 @@ nav {
   }
 
   a {
-    text-decoration: none;
+    
+    text-decoration-line: none;
   }
 
   /* override white-space for nested lists */
