@@ -1,6 +1,7 @@
 # [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
 
-bundle exec jekyll serve
+## Open Local liveserver  
+개발 블로그 폴더 shift+우클릭 -> Windows 터미널에서 열기 -> bundle exec jekyll serve
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
