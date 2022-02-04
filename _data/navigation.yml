@@ -23,6 +23,8 @@ docs:
     children:
       - title: "짧게 정리(이론 위주)"
         url: /jsp1/
+      - title: "JSP 기초 1번째"
+        url: /jsp2/
   - title: Algorithm
     children:
       - title: "백준 알고리즘 1단계"
