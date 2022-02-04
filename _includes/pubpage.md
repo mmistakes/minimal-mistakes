@@ -5,7 +5,6 @@ bibliography:
 nocite: |
     @chor.ea2022a; @chor.ea2021a; @chor.ea2020a; @chamecki.ea2019; @chor.ea2019a; @diasjunior.ea2019; 
     @chor.ea2018b; @chor.ea2018a;
-    @chor.ea2013
 linestretch: 1.5
 fontsize: 12pt
 output:
