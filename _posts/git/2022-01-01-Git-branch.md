@@ -24,7 +24,7 @@ author_profile: true
 ### 브랜치 검색
 
 ```bash
-$ > git branch
+git branch
 
 # 결과
 * master
@@ -38,13 +38,13 @@ $ > git branch
 ### 브랜치 생성
 
 ```bash
-$ > git branch exp #생성
+git branch exp #생성
 ```
 
 ### 브랜치 변경
 
 ```bash
-$ > git checkout exp #브랜치 변경
+git checkout exp #브랜치 변경
 ```
 
 - **브랜치 생성시** 이전 브랜치와 동일한 상태를 가짐
@@ -55,12 +55,12 @@ $ > git checkout exp #브랜치 변경
 
 ### 모든 브랜치 정보 확인
 
-<img width="887" alt="스크린샷 2021-07-06 오후 5 02 16" src="https://user-images.githubusercontent.com/53969142/124564376-f5233100-de7b-11eb-9184-478477034c9e.png">
+<img width="887" src="https://user-images.githubusercontent.com/53969142/124564376-f5233100-de7b-11eb-9184-478477034c9e.png">
 
 ```bash
-$ > git log --branched --decorate
-$ > git log --branched --decorate --graph
-$ > git log --branches --decorate --graph --oneline
+git log --branched --decorate
+git log --branched --decorate --graph
+git log --branches --decorate --graph --oneline
 ```
 
 - 서로의 커밋 상태가 각자의 길을 걷고 있는 경우 확연하게 차이를 확인할 수 있다
@@ -69,17 +69,17 @@ $ > git log --branches --decorate --graph --oneline
 ### 버전과 버전간의 차이점 확인
 
 ```bash
-$ > git log master..exp  #exp에는 있고 master에는 없는 것
-$ > git log exp..master  #master에는 있고 exp에는 없는 것
+git log master..exp  #exp에는 있고 master에는 없는 것
+git log exp..master  #master에는 있고 exp에는 없는 것
 ```
 
 ### 브랜치 병합
 
 ```bash
-$ > git merge exp #master 브랜치에서 수행해야 한다
+git merge exp #master 브랜치에서 수행해야 한다
 ```
 
-- `exp`에서 `master`로 `병합`을 하려면 master 브랜치에서 `merge` 명령어를 수행
+- exp에서 master로 병합을 하려면 master 브랜치에서 merge 명령어를 수행
 
 ### 참고 자료
 

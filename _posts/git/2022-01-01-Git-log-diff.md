@@ -15,8 +15,8 @@ author_profile: true
 - git log의 기본적인 문법은 아래와 같다
 
 ```bash
-$ > git log [<option>] [<revision range>] [[--] <path>]
-$ > git log # 커밋 내용 확인
+git log [<option>] [<revision range>] [[--] <path>]
+git log # 커밋 내용 확인
 
 commit d32e90af0a1a72df99f67f4d464c04f6e78bf61f (HEAD -> master)
 Author: youngminkim <youngmin1085@gmail.com>
@@ -46,7 +46,7 @@ Date:   Sat Jul 3 19:02:38 2021 +0900
 - log 명령어를 통해 커밋된 파일 내역 확인
 
 ```bash
-$ > git log -p
+git log -p
 
 commit d32e90af0a1a72df99f67f4d464c04f6e78bf61f (HEAD -> master)
 Author: youngminkim <youngmin1085@gmail.com>
