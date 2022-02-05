@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Elasticsearch] Elastic Stack 검색 문제와 해설"
-date: "2022-02-05 12:25:27"
+date: "2022-02-05 03:00:00"
 categories: Elasticsearch
 tag: [Elasticsearch, Kibana]
 toc: true
