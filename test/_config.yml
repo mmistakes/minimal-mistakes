@@ -10,18 +10,18 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Minimal Mistakes"
-title_separator          : "-"
-subtitle                 : "Development Test Site"
-name                     : "Your Name"
-description              : "Minimal Mistakes theme test."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+title                    : "기록저장소"
+title_separator          : "/"
+subtitle                 : "development blog"
+name                     : "record storage"
+description              : seohyunz"
+url                      : "https://seohyunz.github.io"
 baseurl                  : "/test"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/apple-touch-icon.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/connect (1).png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "Custom Title" # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+ breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "utterances", "giscus", "custom"
@@ -89,10 +89,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "조서현"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Jo Seo Hyun"
+  location         : "South Korea"
+  email            : joseohyun0201@gmail.com
   links:
     - label: "Your Website"
       icon: "fas fa-fw fa-link"
@@ -304,3 +305,4 @@ defaults:
       layout: single
       author_profile: false
       share: true
+      show_date: true
