@@ -6,15 +6,27 @@ permalink: /research/
 ---
 
 
-*Overview:* I have started my career doing theoretical and field work in my Undergrad and  Master's education, and
-progresssed torwards numerical research in my PhD. I've worked on Hydrology, Atmospheric
-turbulence (boundary layer meteorology) and Oceanic flows (submesoscale phenomena and
-boundary layer processes).
+*Overview:* I have started my career doing theoretical and field work in my Undergrad and  Master's
+education, and progresssed torwards numerical research in my PhD. I've worked on Hydrology,
+Atmospheric turbulence (boundary layer meteorology) and Oceanic flows (submesoscale phenomena and
+boundary layer processes). Currently my research is mainly based on numerical tools such as [Large
+eddy simulations](https://en.wikipedia.org/wiki/Large_eddy_simulation).
+
+
 
 
 ## Submesoscale instabilities in the ocean bottom boundary layer
 
-Coming soon!
+
+![CSI paper](/assets/images/JPO2022_CSI.png)
+
+I use Large-eddy simulations to investigate the impact of submesoscale dynamics in bottom boundary
+layer flows. I've given specific focus to Centrifugal-Symmetric instabilities, which are thought to
+be especially active in the submesoscale range of the spectrum.
+
+You can find a preprint of a publication that's under review for JPO
+[here](https://eartharxiv.org/repository/view/2851/).
+
 
 
 
@@ -22,11 +34,9 @@ Coming soon!
 
 ![GRL paper](/assets/images/GRL2019-panels.png)
 
-I've been using [Large eddy
-simulations](https://en.wikipedia.org/wiki/Large_eddy_simulation) to explore small scale
-turbulence in the Oceanic mixed layer. Focus is given to the transport of passive scalars
-(such as oil, microplastic and nutrients) and parameterizations that help us predict such
-transport.
+I use Large-eddy simulations to explore small
+scale turbulence in the Oceanic mixed layer. Focus is given to the transport of passive scalars
+(such as oil, microplastic and nutrients) and parameterizations that help us predict such transport.
 
 Some relevant publications can be found
 [here](https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.3.064501),
