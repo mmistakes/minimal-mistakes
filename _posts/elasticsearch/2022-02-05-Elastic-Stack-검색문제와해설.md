@@ -24,20 +24,20 @@ author_profile: true
 ### ✅ term
 
 ```sql
-# term는 SQL의 equals 절과 유사하다
+--term는 SQL의 equals 절과 유사하다
 SELECT * FROM TB_USER WHERE 컬럼명 = "컬럼명"
 ```
 
 <u class="custom-border-bottom">term은 색인이 나눠지면서 형태소로 나누어지는 저장되는 토큰등을 term이라고 한다.</u>  
-또한 **term 쿼리**는 주어진 질의문과 저장된 텀과 **정확히 일치하는 문장**을 찾는다.
+또한 **term 쿼리**는 주어진 질의문과 저장된 텀이 **정확히 일치하는 문장**을 찾는다.
 
-term으로 "name" : "cjung gglee" 라고 입력하게 되는경우에는 "cjung gglee"라는 하나의  
-term을 찾기 때문에 결과가 나오지 않는다. 만약 2개 이상의 term을 같이 검색하고 싶을 때는 terms 쿼리를 이용해야 한다.
+<u class="custom-border-bottom">term으로 "name" : "cjung gglee" 라고 입력하게 되는경우에는 "cjung gglee"라는 하나의  
+term을 찾기 때문에 결과가 나오지 않는다.</u> 만약 2개 이상의 term을 같이 검색하고 싶을 때는 terms 쿼리를 이용해야 한다.
 
 ### ✅ match
 
 ```sql
-# match는 SQL의 LIKE 절과 유사하다
+--match는 SQL의 LIKE 절과 유사하다
 SELECT 컬럼명 FROM 테이블 WHERE 컬럼명 LIKE '%A%'
 ```
 
