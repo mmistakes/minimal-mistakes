@@ -23,7 +23,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title" style="font-weight: bold; font-size: 1.1em; color: #ffd559">DB/Elastic Stack</span>
+        <span class="nav__sub-title" style="font-weight: bold; font-size: 1.1em; color: #ffd559">Elastic Stack</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Elasticsearch" %}
@@ -31,7 +31,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title" style="font-weight: bold; font-size: 1.1em; color: #ffd559">Java</span>
+        <span class="nav__sub-title" style="font-weight: bold; font-size: 1.1em; color: #ffd559">Spring</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "JPA" %}
@@ -39,6 +39,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        <span class="nav__sub-title" style="font-weight: bold; font-size: 1.1em; color: #ffd559">Java</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Java" %}
