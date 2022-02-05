@@ -27,6 +27,8 @@ docs:
         url: /jsp1/
       - title: "JSP 기초 1번째"
         url: /jsp2/
+      - title: "JSP 내장객체"
+        url: /jsp3/
   - title: Algorithm
     children:
       - title: "백준 알고리즘 1단계"
