@@ -104,12 +104,12 @@ analytics:
 author:
   name             : "조서현"
 
-  avatar           : "/assets/images/me01.jpg"
+ # avatar           : "/assets/images/me01.jpg"
   bio              : "Jo Seo Hyun"
   location         : "South Korea"
   email            : 
 
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           :  "/assets/images/me01.jpg"
   bio              : "Jo Seo Hyun"
   location         : "South Korea"
   #email            : joseohyun0201@gmail.com
