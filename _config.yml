@@ -22,7 +22,7 @@ subtitle                 : "Let's focus on increasing the diameter of the circle
 name                     : "geunskoo note"
 description              : "근이의 공부기록 입니다!"
 url                      : "https://geunskoo.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/보라카이.jpg"
