@@ -94,7 +94,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          :
     anonymize_ip         : # true, false (default)
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "조서현"
   avatar           : "/assets/images/me01.jpg"
-  bio              : "Jo Seo Hyun"
+  bio              : "코린이의 블로그"
   location         : "South Korea"
   email            : 
 
