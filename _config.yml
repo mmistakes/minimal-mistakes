@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "custom" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -104,13 +104,13 @@ analytics:
 author:
   name             : "조서현"
   avatar           : "/assets/images/me01.jpg"
-  bio              : "코린이의 블로그"
-  location         : "South Korea"
+  #bio              : "코린이의 블로그"
+  location         : "Seoul, Korea"
   email            : 
 
   #avatar           :  "/assets/images/me01.jpg"
-  bio              : "Jo Seo Hyun"
-  location         : "South Korea"
+ # bio              : "Jo Seo Hyun"
+  location         : "Seoul, Korea"
   #email            : joseohyun0201@gmail.com
 
   links:
@@ -246,17 +246,19 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+
+jekyll-archives:
+   enabled:
+     - categories
+     - tags
+   layouts:
+     category: archive-taxonomy
+     tag: archive-taxonomy
+   permalinks:
+     category: /categories/:name/
+     tag: /tags/:name/
 
 
 # HTML Compression
