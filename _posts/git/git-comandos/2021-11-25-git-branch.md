@@ -19,11 +19,17 @@ tags:
 
 ## Git branch (Rama)
 
-* Puntero que siempre señala la rama 'branch' que le indiquemos
+* Se puede considera como un **[Puntero]** que siempre señala la rama 'branch' que le indiquemos o nos encontremos
 
   * Por defecto apunta a la rama : ``master/main`` dependiendo de la configuración inicial que tengamos por defecto en **GIT** al instalarlo en el sistema
 
 > Representa una especie de línea de tiempo que va marcando los distintos cambios que le vamos haciendo a los archivos del proyecto a través de los ``git add <archive>`` y los ``git commit -m "Mensaje"`` que vamos ejecutando sobre el repositorio principal
+
+* Según en la rama en la que nos encontremos puede tener un desarrollo igual o distinto a otra del proyecto
+
+* Una rama puede empezar en cualquier **commit** del **repositorio** del **proyecto principal**
+
+* Los **nuevos commits** siempre se añaden al final del **grafo del historial** de **commits** del proyecto
 
 * **Importante** : Solo se creará nuestra **primera linea de tiempo funcional** cuando hagamos nuestro **primer commit** la cual estará establecida en la rama ``master`` si no hemos creado una rama distinta y nos hemos cambiado a ella mediante ``git checkout <nombre de la rama>``
   
@@ -123,8 +129,17 @@ Deleted branch nueva-rama-proyecto (was 5c2b6a9)
 * Crear una nueva rama desde un commit alojado en otra rama
 
 ```bash
-#          Nombre de la rama que voy a crear
-#            ↓     Commit de la rama por ejemplo master que quiero agregar 
+#          Nombre de la nueva rama 
+#          que voy a crear 
+#          para almacenar el contenido
+#          del commit de la rama máster
+#            ↓      
+#            ↓     Commit de la rama por ejemplo 'master' 
+#            ↓     que utilizo para copiar los archivos que 
+#            ↓     tiene ese commit dentro de la 
+#            ↓     rama master y así añadírselo al commit 
+#            ↓     de la nueva 'rama_x' que acabo de crear
+#            ↓        ↓    
 #            ↓        ↓
 git branch rama_x  56324fg8 
 ```
@@ -145,7 +160,14 @@ git checkout -b rama-alternativa b0e63ad
 
 * Para ciertos tipos de proyectos existen unas ``ramas`` básicas:
 
-* Como son las ramas típicas : **master** , **feature** , **developer** , **hotfix** , **release** que se puede ir creando dependiendo de las necesidades del proyecto
+* Las ramas típicas son :
+**master**
+**feature**
+**developer**
+**hotfix**
+**release**
+
+Estas ramas se puede ir creando dependiendo de las necesidades del proyecto
 
 ## Descripción de las Ramas
 
@@ -155,7 +177,7 @@ git checkout -b rama-alternativa b0e63ad
 
   * Es la rama de sólo y para **Producción**
 
-  * Lo recomendable a la hora de trabajar con nuestro proyecto es crear una ``rama`` a partir de esta ``rama`` llamada __master__ como puede ser la ``rama developer`` y fusionarle los cambios que sean correcto a la ``rama master`` mediante un ``pull request``
+  * Lo recomendable a la hora de trabajar con nuestro proyecto es crear una ``rama`` a partir de esta ``rama`` llamada **master** como puede ser la ``rama developer`` y fusionarle los cambios que sean correcto a la ``rama master`` mediante un ``pull request``
 
 * **developer** → Rama Secundaria **[Rama Padre : Master]**
 
@@ -167,7 +189,7 @@ git checkout -b rama-alternativa b0e63ad
 
   * Creada a partir de la rama **master** en la mayoría de lo casos
 
-  * Se utiliza para entregar en __Producción__ , su propósito es habilitar pruebas de clientes con ellas , cuando se terminen las pruebas y estén correctas dichas pruebas se fusionarán con la **rama master**  
+  * Se utiliza para entregar en **Producción** , su propósito es habilitar pruebas de clientes con ellas , cuando se terminen las pruebas y estén correctas dichas pruebas se fusionarán con la **rama master**  
 
 * **hotfix** → Rama Terciaria **[Rama Padre : Master]**
 
