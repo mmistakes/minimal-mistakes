@@ -29,6 +29,8 @@ docs:
         url: /jsp2/
       - title: "JSP 내장객체"
         url: /jsp3/
+      - title: "JSP 액션태그1"
+        url: /jsp4/
   - title: Algorithm
     children:
       - title: "백준 알고리즘 1단계"
