@@ -49,11 +49,11 @@ body {
 
   .page__inner-wrap {
     float: left;
-    margin-top: 1em;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
     clear: both;
+
 
     .page__content,
     .page__meta,
@@ -113,7 +113,7 @@ body {
   p,
   li,
   dl {
-    font-size: 1em;
+    font-size: 0.em;
   }
 
   /* paragraph indents */
@@ -545,7 +545,7 @@ body {
 .wide {
   .page {
     @include breakpoint($large) {
-      padding-right: 0;
+      padding-right: 200px;
     }
 
     @include breakpoint($x-large) {
