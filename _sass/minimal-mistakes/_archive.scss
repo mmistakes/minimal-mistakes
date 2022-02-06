@@ -28,27 +28,30 @@
 
   a[rel="permalink"] {
     position: static;
+    color: inherit;
   }
 }
 
 .archive__subtitle {
   margin: 1.414em 0 0.5em;
   padding-bottom: 0.5em;
-  font-size: $type-size-5;
-  color: $muted-text-color;
+  font-size: $type-size-2;
+  color: #96cbfe;
   border-bottom: 1px solid $border-color;
+
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
+    
   }
 }
 
 .archive__item-title {
   margin-bottom: 0.25em;
-  font-family: $sans-serif-narrow;
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
+
 
   a[rel="permalink"]::before {
     content: '';
@@ -75,6 +78,7 @@
 .archive__item-excerpt {
   margin-top: 0;
   font-size: $type-size-6;
+  display: none;
 
   & + p {
     text-indent: 0;
@@ -128,6 +132,22 @@
   .page__meta {
     margin: 0 0 4px;
     font-size: 0.6em;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  small{
+    .page__taxonomy{
+      display: inline-block;
+      a{
+        display: inline-block;
+        margin-right: 5px;
+        padding: 4px 4px;
+        background-color: gainsboro;
+        border-radius: 5px;
+      }
+    }
   }
 }
 

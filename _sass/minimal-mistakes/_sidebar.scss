@@ -134,12 +134,14 @@
   }
 
   img {
-    max-width: 110px;
+    max-width: 140px;
     border-radius: 50%;
 
     @include breakpoint($large) {
       padding: 5px;
-      border: 1px solid $border-color;
+      border: 1px solid #000;
+        display: block;
+    margin: 0 auto;
     }
   }
 }
@@ -170,6 +172,7 @@
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;
+    text-align: center;
   }
 }
 .sidebar .author__name {
