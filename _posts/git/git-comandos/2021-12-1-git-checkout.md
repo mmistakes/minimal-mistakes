@@ -56,7 +56,7 @@ git checkout -- <archivo>
 
 ## Checkout para (Padre^N) y (Ancestros^N)
 
-* Repasamos
+* Repasamos conceptos
 
 Una Flecha ( Modificación del ``commit`` anterior )
 
@@ -103,49 +103,47 @@ git checkout <commit>^n
   * ``rama_x~1`` → **C5**
   * ``rama_x~2`` → **C4** hasta el **C1**
 
-## RESOLUCION
+## Resumen de conceptos
 
-* Los **PADRES** : El siguiente ``commit`` por debajo del último **(Antepenúltimo)**
-  * Indicado con **2 flechas**
-    * Los ``2 commits`` que se producen de la **INTEGRACIÓN** de ``2 ramas`` distintas (``master`` y ``teamone``)
+* Los commits **PADRES**
+  * El siguiente ``commit`` **(Antepenúltimo)** por debajo del **último commit** del grafo de **commits**
+  * Indicado con **2 flechas** que apunta a un **commit** concreto
+    * Los ``2 commits`` que se producen de la **INTEGRACIÓN** de ``2 ramas`` distintas (``master`` y ``teamone``) se unen en un solo commit de una de las ramas como por ejemplo : ``rama master``
 
-* Los **ANCESTROS** : Todos los ``commits`` que van detrás del ``último commit``
+```bash
+ (C4') → rama teamone (2º Padre)
+    ↖
+      ↖
+        ↖
+          ↖ 
+            ↖
+              ↖
+                ↖
+  (C7) ← ← ← ← ← (C8) ← "Commit de Integración" dentro de la rama master
+    ↓              
+# rama master (1º Padre)   
+```
+
+* Los commits **ANCESTROS**
+  * Todos los ``commits`` que van detrás del ``último commit`` de la rama en la que nos encontremos
   * Indicado con **1 flecha**
-    * Rama ``master`` hacia abajo hasta el **primer commit**
-      * Desde la 1º linea del **último commit** ``C8`` hasta el primer ``commit C1``
-
-* 1º **PADRE** siempre será el 1º **ANCESTRO** y viceversa (1º **ANCESTRO** siempre será el 1º **PADRE**) pero el 2º **ANCESTRO** no sera el 2º **PADRE** ( recuerda que el 2º **ANCESTRO** siempre sigue la linea del 1º **PADRE** pero el 2º **PADRE** es la 2º linea de la **FLECHA DE INTEGRACIÓN**)
-
-### MODIFICACIÓN de los commits
+    * Ejemplo : Rama ``master`` siguiendo una línea recta desde el **primer commit**
+      * La 1º linea del **último commit** ``C8`` hasta el primer ``commit C1``
 
 ```bash
-(C8) → Rama master - Último commit                          
-  ↓                   
-  ↓
-  ↓
-(C7) → 1º PADRE & 1º ANCESTRO de la rama master
-  ↓
-  ↓
-  ↓
-(C6) → 2º ANCESTRO
+# Cada commit es una modificación 
+# con respeto al anterior commit siguiendo
+# una linea recta con recto a su 
+# rama principal en este caso 'rama master'
+#
+#                             
+(C5) ← ←  (C6) ← ← (C7) ← ← (C8) # Commit de Modificación dentro de la "rama master"
+#                    ↓                         
+#           (Padre^1 y Ancestro^1)              
 ```
 
-### INTEGRACIÓN de los commits
+* Recuerda:
 
-```bash
-Rama master - Último commit                          
-  ↓
-(C8)
-  | \ 
-  |  \ 
-  |   \ 
-  |    \ 
-  |     \ 
-  |      \ 
-  |       \ 
-  |        \       
-  |         \      
-  |        (C4')→ 2º PADRE                          
-  |                    
-(C7)→1º PADRE 
-```
+* 1º **PADRE** siempre será el 1º **ANCESTRO** y viceversa
+  * 1º **ANCESTRO** siempre será el 1º **PADRE** pero el 2º **ANCESTRO** no sera el 2º **PADRE**
+  * ( Recuerda que el 2º **ANCESTRO** siempre sigue la linea del 1º **PADRE** pero el 2º **PADRE** es la 2º linea de la **FLECHA DE INTEGRACIÓN**)
