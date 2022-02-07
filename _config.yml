@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Geun's note"
+title                    : "GEUN's NOTE"
 title_separator          : "|"
 subtitle                 : "Let's focus on increasing the diameter of the circle!"
 name                     : "geunskoo note"
