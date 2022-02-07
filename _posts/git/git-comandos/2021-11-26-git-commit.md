@@ -37,9 +37,9 @@ Date:   Thu Nov 25 19:35:57 2021 +0100
 
 * Para evitar la dificultad de leer el código se seleccionan los 7 primeros números del `Hash SHA-1 → 83141d89`
 
-El código `Hash SHA-1` nos sirven para identificarlo en el historial del proyecto mediante el uso de ciertos comandos como pueden ser:
+El código ``Hash SHA-1`` nos sirven para identificarlo en el historial del proyecto mediante el uso de ciertos comandos como pueden ser:
 
-* Cada código `Hash SHA-1` es único y no puede haber 2 o más commits con el mismo identificador.
+* Cada código ``Hash SHA-1`` es único y no puede haber 2 o más commits con el mismo identificador.
 
 * En el caso de existir ``2 commits`` tendría el mismo contenido.
 
@@ -51,22 +51,59 @@ El código `Hash SHA-1` nos sirven para identificarlo en el historial del proyec
 
 ## Ejemplos de Commit
 
-``git commit`` → Guarda un **nuevo commit** y abre un editor para crear el mensaje
+* Guarda un **nuevo commit** y abre un editor para crear el mensaje
 
-``git commit -m "Mensaje"`` → Guarda un **nuevo commit** con un mensaje que defina los cambios a realizar en el proyecto
+```bash
+git commit
+```
 
-``git commit --amend -m "Mensaje"`` → Modifica el **último commit** con lo registrado en el **{INDEX}** , hay que tener en cuenta de que cambia el contenido del **commit**
+* Guarda un **nuevo commit** con un mensaje que defina los cambios a realizar en el proyecto
 
-* Sustituimos el ``commit anterior`` que tenía el **{INDEX}** por otro nuevo commit para corregir lo que se nos olvido añadir o arreglar el mensaje antes de pasarlo al **[Repositorio Local]**
+```bash
+git commit -m "Mensaje"
+```
 
-* `git commit` → Crea una nueva ``instantánea/registro`` y abre un editor de texto para crear el mensaje donde se refleje la intención de este registro y que luego se podrá ver en el log del proyecto.  
+* Modifica el **último commit** con lo registrado en el **{Staging Area/INDEX}** hay que tener en cuenta de que cambia el contenido del **commit**
 
-* `git commit -m "Mensaje"` → Guarda la ``instantánea/registro`` con un mensaje que hayamos escrito en el que indiquemos el propósito del mismo y que luego se podrá ver en el log del proyecto.
+```bash
+git commit --amend -m "Mensaje"
+```
 
-* `git commit --amend -m` → Modifica el último commit que hayamos ejecutado sobre el __{INDEX}__
+* Sustituimos el ``commit anterior`` que tenía el **{Staging Area/INDEX}** por otro nuevo commit para corregir lo que se nos olvido añadir o arreglar el mensaje antes de pasarlo al **[Repositorio Local]**
 
-  * Hay que tener en cuenta que modifica el **último** commit.
+* Crea una nueva ``instantánea/registro`` y abre un editor de texto para crear el mensaje donde se refleje la intención de este registro y que luego se podrá ver en el log del proyecto.  
 
-    * ``amend`` → Sustituimos el **commit actual** por lo que teníamos el **commit anterior** a este y le añadimos lo que teníamos registrado en el __{INDEX}__ de forma que podamos corregir lo que se nos olvido añadir o arreglarlo antes de pasarlo al **[Repositorio Local]**
+```bash
+git commit
+```
 
-> `git commit` → Genera un nuevo **registro/instantánea** de todos los archivos que tengamos y se almacenarán dentro del __{INDEX}__ esperando a ser enviados al **Repositorio Remoto**
+* Guarda la ``instantánea/registro`` con un mensaje que hayamos escrito en el que indiquemos el propósito del mismo y que luego se podrá ver en el log del proyecto.
+
+```bash
+git commit -m "Mensaje"
+```
+
+* Modifica el último commit que hayamos ejecutado sobre el **{Staging Area/INDEX}**
+
+```bash
+git commit --amend -m
+```
+
+* Hay que tener en cuenta que modifica el **último** commit.
+
+* ``amend`` → Sustituimos el **commit actual** por lo que teníamos el **commit anterior** a este y le añadimos lo que teníamos registrado en el **{INDEX}** de forma que podamos corregir lo que se nos olvido añadir o arreglarlo antes de pasarlo al **[Repositorio Local]**
+
+> `git commit` → Genera un nuevo **registro/instantánea** de todos los archivos que tengamos y se almacenarán dentro del **{INDEX}** esperando a ser enviados al **|Repositorio Remoto|**
+
+* Ver información especifica de un ``commit`` indicando su **SHA-1**
+
+```bash
+git cat-file commit <SHA-1>
+# Ejemplo
+git cat-file commit 799a599
+tree e3a88d16249aacbac0fefc8bc3caf726699b9679
+parent a05eba6d8e9486fce5537bfa7eaa11d58b43066f
+parent a46936d6258508d7d89500be8e04848e2d506e60
+author usuario <usuario@gmail.com> 1644004665 +0100
+committer usuario <usuario@gmail.com> 1644004665 +0100
+```
