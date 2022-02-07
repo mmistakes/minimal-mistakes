@@ -18,7 +18,7 @@ tags:
   - git-working directory
 ---
 
-## Git - commit (confirmar)
+## Git - commit - (confirmar)
 
 * Genera un **nuevo commit** con el contenido registrado en el **{Indice/Index}**
 

@@ -17,7 +17,7 @@ tags:
   - git-manual
 ---
 
-## Git branch (Rama)
+## Git branch - (Rama)
 
 * Se puede considera como un **[Puntero]** que siempre señala la rama 'branch' que le indiquemos o nos encontremos
 

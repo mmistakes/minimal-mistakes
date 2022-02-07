@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Git - Index o Staging Area
+title: Git - Index/Staging Area
 date: 2021-11-25
 classes: wide
 toc: true
