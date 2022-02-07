@@ -35,6 +35,10 @@ docs:
     children:
       - title: "백준 알고리즘 1단계"
         url: /algorithm1/
+  - title: HTML
+    children:
+      - title: "HTML 기초 다시보기 1편(내가 햇갈린것 정리)"
+        url: /html/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
