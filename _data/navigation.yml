@@ -40,3 +40,6 @@ mainMenu:
       children:
         - title: "Data Structure"
           url: /categories/datastructure
+    - title: Seminar
+      url: /categories/seminar
+        
