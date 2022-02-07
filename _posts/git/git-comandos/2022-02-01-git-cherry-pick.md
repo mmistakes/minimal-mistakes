@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Git - Revert
+title: Git - Cherry-pick
 date: 2022-02-01
 classes: wide
 toc: true
@@ -18,7 +18,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Git cherry-pick
+## Git Cherry-pick
 
 * Este comando se utiliza para copiar un commit especifico de una rama especifica mediante su identificador hash SHA-1
 
