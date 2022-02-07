@@ -1,0 +1,54 @@
+---
+layout: single
+published: true
+title:  "REST API와 JAX-RS"
+categories : Jsp
+tag : 
+toc : true
+toc_sticky: true
+author_profile: true
+sidebar :
+    nav : "docs"
+---
+
+
+
+**[공지사항]** HTTP와 JSON을 함께 사용해서 Open API를 구현하는 형태로 쓰이는 REST!
+{: .notice--danger}
+
+
+
+# REST API란?
+
+### REST란 ?
+
+* 네트워크에서 클라이언트와 서버 사이의 통신을 주고 받기 위해 구현하는 방법 중 하나로, 
+
+  <u>데이터를 전달하기 위한 응답 형태</u>
+
+* HTTP의 기본 응답이 HTML이고, 데이터를 주고 받기 위한 API 서비스 형태를 사용하여 접근한 것
+
+* json, xml, text, rss 등 
+
+* 특정 언어나 컨테이너를 요구하지 않는다. -> 다양한 언어와 서버 소프트웨어를 통해 구현 가능
+
+  
+
+1. RESTful이란?
+
+	- REST의 원칙을 따르는 시스템
+	
+	  
+	
+2. JAX-RS란?
+
+    - REST API 개발을 위한 서버 프로그램의 표준 규격 (즉,REST API 를 규현하는 방법  )
+    - REST API를 구현하는 방법에는 <u>JAX-RS </u>와 스프링 프레임워크의  <u>RestController</u>이 있음
+
+  
+
+
+
+  
+
+  
