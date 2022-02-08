@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "와인품질분류"
-categories: 데이콘_도전
+categories: 데이콘_분석
 tag:
   [
     python,
@@ -71,7 +71,7 @@ train.head(2)
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -149,7 +149,7 @@ test.head(2) # quality 변수가 없네.. quality가 target?
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -256,7 +256,7 @@ plt.tight_layout();
     # 확률밀도함수의 y축이 density, 저 함수의 값을 적분하면 값이 1
 ```
 
-​ ![output_9_0](https://user-images.githubusercontent.com/67591105/151116436-4b1aeebb-438a-4552-8fdf-b050f7c0abde.png)
+ ![output_9_0](https://user-images.githubusercontent.com/67591105/151116436-4b1aeebb-438a-4552-8fdf-b050f7c0abde.png)
 
 ```python
 # quality 변수를 기준 다른 피처들의 분포 확인 (barplot)
@@ -309,7 +309,7 @@ train.head(2)
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -387,7 +387,7 @@ train.describe()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -636,7 +636,7 @@ submission.head(2)
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }

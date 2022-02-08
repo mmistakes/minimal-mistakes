@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "경사하강법(중급)"
-categories: 머신러닝_개념
+categories: 데이터_개념
 tag:
   [
     python,
@@ -183,7 +183,7 @@ print('Gradient Descent Total Cost:{0:.4f}'.format(get_cost(y, y_pred)))
 ```
 
     w1: 3.968 w0: 6.222151
-
+    
     Gradient Descent Total Cost:0.9924
 
 ```python
