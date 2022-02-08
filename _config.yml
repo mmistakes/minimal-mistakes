@@ -15,12 +15,12 @@
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Road to be a Infulential Data Scientist"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+locale                   : "ko-KR"
+title                    : "RIDS"
+title_separator          : "|"
+subtitle                 : "Road to be an Infulential Data Scientist"
 name                     : "Changsu Jeong"
-description              : "An amazing website."
+description              : "데이터 사이언티스트를 위한 정보를 공유합니다."
 url                      : "https://JeongChangsu.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -102,11 +102,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Changsu Jeong"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "for Data Science"
+  location         : "South Korea"
+  email            : "wjdckdtn11@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
