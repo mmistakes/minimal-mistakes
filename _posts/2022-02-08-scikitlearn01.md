@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "사이킷런(scikit-learn) - 01. 사이킷런 소개"
+comments: true
 ---
 
 안녕하세요.
