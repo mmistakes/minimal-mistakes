@@ -143,9 +143,7 @@ https://wltn39.github.io/playlist/
 </html>
 ```
 
-## 3. CSS
-
-### 코드
+## 3. CSS 코드
 
 ```css
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
