@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "대부와 유사한 영화 10개 추천 (CBF 기반)"
+title: "유저 맞춤 영화추천 (CF 기반)"
 categories: 데이터_분석
 tag: [
     python,
