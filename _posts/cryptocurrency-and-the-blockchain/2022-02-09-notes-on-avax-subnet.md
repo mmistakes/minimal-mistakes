@@ -1,5 +1,5 @@
 ---
-title: " Notes Avalanche's Subnets"
+title: " Notes on Avalanche's Subnets"
 layout: single
 categories:
   - "cryptocurrency_and_the_blockchain"
