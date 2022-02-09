@@ -7,6 +7,14 @@ author_profile: true
 [Google Scholar](https://scholar.google.com/citations?user=gAMVsrkAAAAJ&hl=en)
 
 ## Articles, Posters and Talks (in chronological order)
+### 2022
+2 - Akbarzadeh, Saeed, Roozbeh Farhoodi, Tianchan Lyu, Muhammad Awais, Xian Zhao, Saadullah Farooq Abbasi, and Wei Chen. "Predicting Feeding Conditions of Premature InfantsThrough Non-Nutritive Sucking Skills Using a Sensitized Pacifier" IEEE Transactions on Biomedical Engineering
+
+
+### 2021
+1 - Geometry of Neuron Morphologies, University of California San Francisco (UCSF), May 2021
+
+2 - Khashayar Filom* , Konrad Kording and Roozbeh Farhoodi, "On PDE Characterization of Smooth Hierarchical Functions Computed by Neural Networks." [arXiv:2005.08859](https://direct.mit.edu/neco/article/33/12/3204/107674).
 
 ### 2020
 4 - Roozbeh Farhoodi*, Eva L. Dyer, Julian Yarkony, Shaofei Wang, and Konrad P. Kording. "Reconstructing the morphology of neurons from sparse noisy observations."
