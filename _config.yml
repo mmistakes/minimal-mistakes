@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "CS's RIDS"
+title                    : "RIDS"
 title_separator          : "|"
 subtitle                 : "ChangSu's Road to be an Infulential Data Scientist"
 name                     : "Changsu Jeong"
