@@ -15,8 +15,11 @@ docs:
       - title: "BLOG"
         url: /category/BLOG/
         category: "BLOG"
-  - title: "LANGUAGES"    
+  - title: "STUDY"    
     children: 
+    - title: "ALGORITHM"
+      url: /category/ALGORITHM/
+      category: "ALGORITHM"
     - title: "JAVA"
       url: /category/JAVA/
       category: "JAVA"
