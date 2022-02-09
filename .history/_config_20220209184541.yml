@@ -20,7 +20,7 @@ title: "My Development Blog"
 title_separator: "|"
 subtitle: "WebProgramming & CodingTest" # site tagline that appears below site title in masthead
 name: "SeongJun Shin"
-description: "웹프로그래밍과 코딩테스트를 위한 블로그"
+description: "자바스크립트와 코딩테스트를 위한 블로그"
 url: "https://shinsj4653.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -103,7 +103,7 @@ analytics:
 author:
   name: "SeongJun Shin"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "WebProgramming & CodingTest"
+  bio: "JavaScript & CodingTest"
   location: "South Korea"
   email:
   links:

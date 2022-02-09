@@ -103,7 +103,7 @@ analytics:
 author:
   name: "SeongJun Shin"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "WebProgramming & CodingTest"
+  bio: "JavaScript & CodingTest"
   location: "South Korea"
   email:
   links:
