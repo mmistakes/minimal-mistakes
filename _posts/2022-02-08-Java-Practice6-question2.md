@@ -121,6 +121,7 @@ public class Tv {
 		System.out.println("전원이 off 되었습니다.");
 	}
 }
+
 ```
 
 - test2.java
@@ -155,4 +156,5 @@ public class test2 {
 		} while (!input.equals("exit"));
 	}
 }
+
 ```

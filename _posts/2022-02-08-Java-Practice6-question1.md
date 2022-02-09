@@ -94,4 +94,5 @@ public class Car {
 		System.out.println("자동차는 총 " + car_num + "대가 있습니다.");
 	}
 }
+
 ```

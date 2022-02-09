@@ -52,4 +52,5 @@ public class question3_1 {
 		System.out.println("문자 개수는 " + result + "개입니다.");
 	}
 }
+
 ```

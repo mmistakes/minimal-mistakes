@@ -105,4 +105,5 @@ public class test3 {
 		Arr.avr(a1,a2);
 	}
 }
+
 ```
