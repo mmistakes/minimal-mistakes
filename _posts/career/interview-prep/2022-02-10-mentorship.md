@@ -4,7 +4,7 @@ layout: single
 categories:
   - interview_prep
   - career
-permalink: /categories/interview_prep/mentorship_program
+permalink: /categories/career/mentorship_program
 toc: true
 tags:
   - get-started-in-tech
