@@ -53,3 +53,55 @@ days table 생성 동일(단 date_list_code 없음)
 <br>
 
 잘 모르겠다..
+
+<br>
+
+# 일단 적용
+해결방안 1을 한번 시도해보자  
+- 그전에 내가 헷갈리는 거  
+hash map에서 value는 전부 string인데 mapper에서 입력할 때는 타입 에러 없네?  
+
+<br>
+
+(1) temp 테이블 생성  
+![image](https://user-images.githubusercontent.com/86642180/153473587-4de52ffc-bd73-4f28-95d3-a07d62f8e10f.png)
+월수금, 매일 체크 데이터 있음  
+
+<br>
+
+(2) controller, service, serviceImpl, mapper에 메소드 선언  
+💻 mapper
+```
+    String dateListTest(Map<String, String> params);
+```
+💻 serviceImpl  
+```
+private final DateListMapper dateListMapper;
+    @Override
+    public String dateListTest(Map<String, String> params) throws ParseException{
+        return dateListMapper.dateListTest(params);
+    }
+```
+💻service
+```
+    String dateListTest(Map<String, String> params) throws  ParseException;
+```
+💻controller
+```
+    iniService.dateListTest(params);
+```
+<br>
+
+(3) 쿼리 작성  
+```
+    <select id="dateListTest" parameterType="hashMap" resultType="String">
+        SELECT day_code from temp
+        where mon = IFNULL(#{mon}, 0) AND
+              tue = IFNULL(#{tue}, 0) AND
+              wed = IFNULL(#{wed}, 0) AND
+              thu = IFNULL(#{thu}, 0) AND
+              fri = IFNULL(#{fri}, 0) AND
+              sat = IFNULL(#{sat}, 0) AND
+              sun = IFNULL(#{sun}, 0);
+    </select>
+```
