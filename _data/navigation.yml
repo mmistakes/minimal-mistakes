@@ -23,6 +23,8 @@ docs:
         url: /collection2/
       - title: "ArrayList 메서드"
         url: /Arraylist-1/
+      - title: "Array"
+        url: /Array-1/
   - title: Servlet/JSP
     children:
       - title: "짧게 정리(이론 위주)"
