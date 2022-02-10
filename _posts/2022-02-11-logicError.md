@@ -27,7 +27,7 @@ initiative_code가 date_list 테이블에서도 중요한거라 NULL 넣는것�
 <br>
 
 # 해결방안 1 (??)
-days table 생성
+days table 생성  
 ![image](https://user-images.githubusercontent.com/86642180/153460403-616be1b3-7e51-47a3-89b0-2a84a51cee95.png)
 😜 : date 외 데이터 전달  
 💻 : (1) 클라이언트가 준 데이터 받음  
@@ -37,4 +37,19 @@ days table 생성
 👉 이러면 컨트롤러 + service layer쪽 코드가 아주 길어질거같다...  
 그리고 days에 2^7에 해당하는 데이터 입력 必  
 
+<br>
+
 # 해결방안 2 (??)
+days table 생성 동일  
+😜 : date 외 데이터 전달  
+💻 : (1) 클라이언트가 준 데이터 받음  
+(2) date 목록을 days에 저장  
+(3) days에서 가장 최근에 저장된 목록 코드 컨트롤러까지 가져옴  
+(4) ini insert 진행  
+👉 요일 목록이 과도하게 많이 생성될수도 있음  
+가장 최근에 저장된 목록 코드를 가져올 때  
+- A와 B가 작업을 진행할 때 작업을 먼저한 A의 코드 대신 B의 코드가 들어와서 혼선 생길수도?  
+
+<br>
+
+잘 모르겠다..
