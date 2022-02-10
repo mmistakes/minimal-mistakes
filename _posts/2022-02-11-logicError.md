@@ -63,13 +63,13 @@ hash map에서 value는 전부 string인데 mapper에서 입력할 때는 타입
 
 <br>
 
-(1) temp 테이블 생성  
+### (1) temp 테이블 생성  
 ![image](https://user-images.githubusercontent.com/86642180/153473587-4de52ffc-bd73-4f28-95d3-a07d62f8e10f.png)
 월수금, 매일 체크 데이터 있음  
 
 <br>
 
-(2) controller, service, serviceImpl, mapper에 메소드 선언  
+### (2) controller, service, serviceImpl, mapper에 메소드 선언  
 💻 mapper
 ```
     String dateListTest(Map<String, String> params);
@@ -92,7 +92,7 @@ private final DateListMapper dateListMapper;
 ```
 <br>
 
-(3) 쿼리 작성  
+### (3) 쿼리 작성  
 ```
     <select id="dateListTest" parameterType="hashMap" resultType="String">
         SELECT day_code from temp
@@ -105,3 +105,48 @@ private final DateListMapper dateListMapper;
               sun = IFNULL(#{sun}, 0);
     </select>
 ```
+<br>
+
+### (4) controller에서 값 받기  
+```
+        String dateListCode = iniService.dateListTest(params);
+        System.out.println("dateList 결과");
+        System.out.println(dateListCode);
+```
+![image](https://user-images.githubusercontent.com/86642180/153478574-be17ae43-975b-4a11-8016-35971068f245.png)
+![image](https://user-images.githubusercontent.com/86642180/153478619-7af3a851-1a5c-4357-b7bb-9115292b6ce8.png)
+일단 여기까지는 성공!  
+
+<br>
+
+### (5) insert initiative
+현재 client에서 전달 받은 파라미터에 (4)의 값 추가  
+`params.put("dateListCode", dateListCode);`  
+쿼리 수정 뒤 실행하면  
+![image](https://user-images.githubusercontent.com/86642180/153479413-dfb04ffc-5a1a-4a93-be87-cfca5bf01ce8.png)
+그럼 그렇지 한번에 될 일이 없다  
+
+<br>
+
+엉뚱한 값이 들어가서 (3)의 쿼리를 insert 부분 서브쿼리로 활용해서 다시 실행  
+
+<br>
+🤦‍♀️ 30분 동안 삽질했는데 dateList를 duration쪽에 넣어서 값이 이상하게 들어감..  
+실제로는 잘 작동한다!  
+
+<br><br>
+
+# 최종 결론
+(1) temp 테이블 생성 - 요일에 대한 조합 데이터를 가지고 있음 128개ㅎ  
+(2) 서브쿼리를 통해 사용자가 선택한 요일에 해당하는 코드 찾고 insert  
+```
+SELECT day_code from temp
+                 where mon = IFNULL(#{mon}, 0) AND
+                     tue = IFNULL(#{tue}, 0) AND
+                     wed = IFNULL(#{wed}, 0) AND
+                     thu = IFNULL(#{thu}, 0) AND
+                     fri = IFNULL(#{fri}, 0) AND
+                     sat = IFNULL(#{sat}, 0) AND
+                     sun = IFNULL(#{sun}, 0)
+```
+가장 큰 문제 : 128개 조합 데이터 
