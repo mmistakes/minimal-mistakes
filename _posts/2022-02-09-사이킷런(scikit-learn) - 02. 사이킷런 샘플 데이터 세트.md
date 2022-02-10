@@ -1,8 +1,3 @@
----
-layout: post
-title: "사이킷런(scikit-learn) - 02. 사이킷런 샘플 데이터 세트"
----
-
 ----
 
 안녕하세요.
