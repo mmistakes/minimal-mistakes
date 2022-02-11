@@ -23,7 +23,7 @@ Can also be found in [Google Scholar](https://scholar.google.co.jp/citations?use
   * [[paper](http://ceur-ws.org/Vol-1888/paper6.pdf)]
 
 ## Domestic Conferences, Symposia, and Preprints (Unrefreed)
-* **篠田一聡**, 菅原朔, 相澤彰子: "抽出型質問応答における相対位置バイアスの除去." 言語処理学会第28回年次大会(NLP2022), オンライン, 2021. (to appear)
+* **篠田一聡**, 菅原朔, 相澤彰子: "抽出型質問応答における相対位置バイアスの除去." 言語処理学会第28回年次大会(NLP2022), オンライン, 2021. (to appear) 
   * [paper] [slides]
 * **篠田一聡**, 竹澤祐貴, 鈴木雅大, 岩澤有祐, 松尾豊: "Interactive Instruction FollowingのためのNeuro-Symbolic手法による多様な物体と言語指示への頑健性の向上." 人工知能学会第35回全国大会(JSAI2021), オンライン, 2021.
   * [[paper](https://www.jstage.jst.go.jp/article/pjsai/JSAI2021/0/JSAI2021_2J3GS8b03/_article/-char/ja/)] [[slides](https://github.com/KazutoshiShinoda/slides/blob/a429e5e9e95b97a93faa34c5757b39117fbc9855/JSAI2021Shinoda.pdf)]
