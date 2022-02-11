@@ -1,7 +1,36 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "About"
+    url: /about
+  - title: "Category"
+    url: /categories
+  - title: "Search"
+    url: /search
+
+docs:
+  - title: "Category"
+    children:
+      - title: "Study"
+        url: /categories/study
+      - title: "TIL"
+        url: /categories/TIL
+
+study:
+  - title: "Category"
+    url: /categories
+
+  - title: "Study"
+    children:
+      - title: "JavaScript"
+        url: /categories/study/javascript
+
+TIL:
+  - title: "Category"
+    url: /categories
+
+  - title: "TIL"
+  # - title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
