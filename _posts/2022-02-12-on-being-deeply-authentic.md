@@ -5,9 +5,12 @@ tag: ["Meditation", “CBT”]
 toc: true
 ---
 
+
+If you have ever practiced yoga and meditation, which are central to Hinduism, Buddhism, or Jainism, you are probably familiar with the concept of a mantra. Mantras are defined as sounds, words, or groups of words that have spiritual significance.
+
 # 1. Magnetic north
 
-If you have ever practiced yoga and meditation, which are central to Hinduism, Buddhism, or Jainism, you are probably familiar with the concept of a mantra. Mantras are defined as sounds, words, or groups of words that have spiritual significance. My interpretation is that mantras are patterns that, if repeated repeatedly, become resonating mental reflexes that may assist you in controlling your emotions and finding inner peace. In that sense, it has some commonality with prayers in Judaism, Christianity, or Islam - but perhaps a shorter less defined meaning. When you repeat a prayer or mantra for days, weeks, months, or even years, it becomes like the magnetic north on a compass. So it's important to choose carefully.
+My interpretation is that mantras are patterns that, if repeated repeatedly, become resonating mental reflexes that may assist you in controlling your emotions and finding inner peace. In that sense, it has some commonality with prayers in Judaism, Christianity, or Islam - but perhaps a shorter less defined meaning. When you repeat a prayer or mantra for days, weeks, months, or even years, it becomes like the magnetic north on a compass. So it's important to choose carefully.
 
 Do not lie, do not steal, and do not be lazy is a good starter kit for what not to do. While you're at it, you should probably love one another, take good care of your health, and pay your taxes. Those are probably all good mantras and prayers. Deep authenticity is a mantra that is important to me, which I interpret as being true to the cumulative advice of my mentors. This makes me a better person for my family, my colleagues, my clients, my investors, and everyone else.
 
