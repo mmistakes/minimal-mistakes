@@ -1,7 +1,7 @@
 ---
-title: On beeing deeply authentic
+title: On being deeply authentic
 category: "Communication"
-tag: ["Meditation", “CBT”, “ML”]
+tag: ["Meditation", “CBT”]
 toc: true
 ---
 
