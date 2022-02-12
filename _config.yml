@@ -12,14 +12,14 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Alex의 기술블로그"
 title_separator          : "-"
 subtitle                 : "평소 공부한 내용 정리 및 복습용입니다."
-name                     : "Min Seok"
+name                     : "Alex Choi"
 description              : "Alex의 기술블로그"
 url                      : "https://alexms0316.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -102,7 +102,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Min Seok"
+  name             : "Alex"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "아직 많이 부족하지만 꾸준히 노력하고 있습니다. "
   location         : "Somewhere"
