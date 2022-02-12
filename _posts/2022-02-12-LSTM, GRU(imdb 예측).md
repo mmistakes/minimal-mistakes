@@ -115,7 +115,7 @@ LSTM의 출력으로 사용되는 것은 은닉 상태, 셀 상태는 셀 안에
 
 
 
-![LSTM구조](./images/LSTM구조.png)
+![LSTM구조](/assets/images/LSTM구조.png)
 
 <이미지 출처 : https://imgur.com/jKodJ1u>  
 
@@ -133,7 +133,7 @@ LSTM의 출력으로 사용되는 것은 은닉 상태, 셀 상태는 셀 안에
 
 
 
-![LSTM순전파](./images/LSTM기호.png)  
+![LSTM순전파](/assets/images/LSTM기호.png)  
 
 노란색 박스는 학습된 neural network layer이고, 분홍색 동그라미는 vector 연산과 같은 pointwise operation을 나타냅니다.  
 
@@ -145,7 +145,7 @@ LSTM의 출력으로 사용되는 것은 은닉 상태, 셀 상태는 셀 안에
 
 
 
-![LSTM순전파](./images/LSTM_cell상태.png)  
+![LSTM순전파](/assets/images/LSTM_cell상태.png)  
 
 
 
@@ -161,7 +161,7 @@ LSTM은 Cell state에 뭔가를 더하거나 없애는 과정을 반복합니다
 
 
 
-![LSTM순전파](./images/LSTM_forget게이트.png)  
+![LSTM순전파](/assets/images/LSTM_forget게이트.png)  
 
 
 
@@ -177,7 +177,7 @@ ht-1과 xt를 받아 시그모이드를 취해(0 ~ 1값) ct-1에 보내줍니다
 
 
 
-![LSTM순전파](./images/LSTM_input게이트.png)  
+![LSTM순전파](/assets/images/LSTM_input게이트.png)  
 
 
 
@@ -193,7 +193,7 @@ ht-1과 xt를 받아 시그모이드를 취해(0 ~ 1값) ct-1에 보내줍니다
 
 
 
-![LSTM순전파](./images/LSTM_cell_update.png)  
+![LSTM순전파](/assets/images/LSTM_cell_update.png)  
 
 
 
@@ -207,7 +207,7 @@ ht-1과 xt를 받아 시그모이드를 취해(0 ~ 1값) ct-1에 보내줍니다
 
 
 
-![LSTM순전파](./images/LSTM_output게이트.png)  
+![LSTM순전파](/assets/images/LSTM_output게이트.png)  
 
 
 
@@ -236,7 +236,7 @@ LSTM 셀에 존재하는 cell state와 hidden state가 하나로 합쳐집니다
 
 
 
-![GRU](./images/GRU셀.png)
+![GRU](/assets/images/GRU셀.png)
 
 
 
