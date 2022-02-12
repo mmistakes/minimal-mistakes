@@ -5,7 +5,7 @@ tag: ["Research", “CBT”, “ML”]
 toc: true
 ---
 
-Below is my original statement of purpose for my PhD. One day, I hope to have the time to conduct more academic research. Contact me (or send an email to jobs@bld.ai ) if you are interested in this topic.
+Below is my original statement of purpose for my PhD. One day, I hope to have the time to conduct more academic research. Contact me (or send an email to research@bld.ai) if you are interested in this topic.
 
 <span><audio id="myAudio" controls>
     <source src="/assets/audio/CBT-and-RL-in-adult-learning.ogg" type="audio/ogg">
