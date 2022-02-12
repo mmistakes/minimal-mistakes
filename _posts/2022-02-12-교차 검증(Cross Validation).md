@@ -95,6 +95,13 @@ K-Fold Cross validation은 학습이 여러 번 이루어지는 관계로 반복
 
 예시로 폴드를 5개로 나누었을 때의 K-Fold Cross Validation을 도식화해 보면 다음과 같습니다.
 
+<<<<<<< Updated upstream
+=======
+![스크린샷 2022-02-12 오후 12.51.17](../images/2022-02-12-교차 검증(Cross Validation)/스크린샷 2022-02-12 오후 12.51.17-4637992.png)
+
+----
+
+>>>>>>> Stashed changes
 # 2. LOOCV(Leave One Out Cross Validation)
 
 LOOCV는 K-Fold Cross Validation과 같은 방식을 취하는데 폴드를 데이터의 개수만큼 지정하는 방식을 의미합니다.
