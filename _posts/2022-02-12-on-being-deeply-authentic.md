@@ -5,24 +5,24 @@ tag: ["Meditation", “CBT”]
 toc: true
 ---
 
-
-If you have ever practiced yoga and meditation, which are central to Hinduism, Buddhism, or Jainism, you are probably familiar with the concept of a mantra. Mantras are defined as sounds, words, or groups of words that have spiritual significance.
+If you have ever practiced yoga and meditation, which are central to Hinduism, Buddhism, or Jainism, you are probably familiar with the concept of a [mantra](
+https://en.wikipedia.org/wiki/Mantra)). Mantras are defined as sounds, words, or groups of words that have spiritual significance.
 
 # 1. Magnetic north
 
 My interpretation is that mantras are patterns that, if repeated repeatedly, become resonating mental reflexes that may assist you in controlling your emotions and finding inner peace. In that sense, it has some commonality with prayers in Judaism, Christianity, or Islam - but perhaps a shorter less defined meaning. When you repeat a prayer or mantra for days, weeks, months, or even years, it becomes like the magnetic north on a compass. So it's important to choose carefully.
 
-Do not lie, do not steal, and do not be lazy is a good starter kit for what not to do. While you're at it, you should probably love one another, take good care of your health, and pay your taxes. Those are probably all good mantras and prayers. Deep authenticity is a mantra that is important to me, which I interpret as being true to the cumulative advice of my mentors. This makes me a better person for my family, my colleagues, my clients, my investors, and everyone else.
+Do not lie, do not steal, and do not be lazy is a good starter kit for what not to do. While you're at it, you should probably love one another, take good care of your health, and pay your taxes. Those are probably all good mantras and prayers. "Deep [authenticity](https://www.merriam-webster.com/dictionary/authentic)" is a mantra that is important to me, which I interpret as being true to the cumulative advice of my mentors. This makes me a better person for my family, my colleagues, my clients, my investors, and everyone else.
 
 # 2. How to change your mind
 
-Michael Pollan has a book called "How to change your mind" about consciousness, addiction, depression, and the effects of psilocybin. He describes how people may experience life-changing experiences when they do a guided session. It is related to the idea of a mantra in the sense that people looking for a mental unlock can use chemicals to change or give up old habits.
+Michael Pollan has a book called "[How to change your mind](https://en.wikipedia.org/wiki/How_to_Change_Your_Mind#:~:text=8%20.P65%202018-,How%20to%20Change%20Your%20Mind%3A%20What%20the%20New%20Science%20of,New%20York%20Times%20best%2Dseller.)" about consciousness, addiction, depression, and the effects of psilocybin. He describes how people may experience life-changing experiences when they do a guided session. It is related to the idea of a mantra in the sense that people looking for a mental unlock can use chemicals to change or give up old habits.
 
 
-My interest is not so much in the drug itself, but in this idea that you can use a drug to change recurring thoughts that lock you in an undesired pattern of behavior. A third way of accomplishing this is with cognitive-behavioral therapy, a research topic of interest to me. You can read more about how machine learning and cognitive behavioral therapy can potentially help adults learn faster in my blog posts.
+My interest is not so much in the drug itself, but in this idea that you can use a drug to change recurring thoughts that lock you in an undesired pattern of behavior. A third way of accomplishing this is with cognitive-behavioral therapy, a research topic of interest to me. You can read more about how machine learning and cognitive behavioral therapy can potentially help adults learn faster in [this blog post](https://blog.dannycastonguay.com/research/CBT-and-ML-to-speed-up-adult-learning/).
 
 
-UC Berkeley professor of psychology, Alison Gopnik, published a book called The Philosophical Baby in which she distinguishes between adults' spotlight consciousness and children's lantern consciousness. The lantern consciousness is expensive, the spotlight, narrow. This spotlight consciousness is formed by these recurring thoughts, this cognitive resonance, and it can be incredibly hard to change. Drug treatment and therapy might be a solution for some, but meditation is a more gentle and sustainable approach for me. The general principle is to rise up to the lantern level episodically in order to refocus.
+UC Berkeley professor of psychology, [Alison Gopnik](https://en.wikipedia.org/wiki/Alison_Gopnik), published a book called The Philosophical Baby in which she distinguishes between adults' spotlight consciousness and children's lantern consciousness. The lantern consciousness is expensive, the spotlight, narrow. This spotlight consciousness is formed by these recurring thoughts, this cognitive resonance, and it can be incredibly hard to change. Drug treatment and therapy might be a solution for some, but meditation is a more gentle and sustainable approach for me. The general principle is to rise up to the lantern level episodically in order to refocus.
 
 # 3. Deeply authentic
 
