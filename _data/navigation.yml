@@ -41,6 +41,8 @@ docs:
         url: /algorithm1/
       - title: "백준 알고리즘 2단계"
         url: /algorithm2/
+      - title: "백준 알고리즘 3단계"
+        url: /algorithm3/
   - title: HTML
     children:
       - title: "HTML 기초 다시보기 1편(내가 햇갈린것 정리)"
