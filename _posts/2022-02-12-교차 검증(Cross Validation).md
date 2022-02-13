@@ -1,7 +1,6 @@
 ----
 
-안녕하세요.
-데이터 사이언티스트를 위한 정보를 공유하고 있습니다.
+안녕하세요. 데이터 사이언티스트를 위한 정보를 공유하고 있습니다.
 
 M1 Macbook Air를 사용하고 있으며, 블로그의 모든 글은 Mac을 기준으로 작성된 점 참고해주세요.
 
@@ -93,13 +92,7 @@ K-Fold Cross validation은 학습이 여러 번 이루어지는 관계로 반복
 
 ----
 
-예시로 폴드를 5개로 나누었을 때의 K-Fold Cross Validation을 도식화해 보면 다음과 같습니다.
-
-<<<<<<< Updated upstream
-![스크린샷 2022-02-12 오후 12.51.17](../images/2022-02-12-교차 검증(Cross Validation)/스크린샷 2022-02-12 오후 12.51.17-4637992.png)
-=======
-![스크린샷 2022-02-12 오후 12.51.17](../images/2022-02-12-교차 검증(Cross Validation)/스크린샷 2022-02-12 오후 12.51.17.png)
->>>>>>> Stashed changes
+예시로 폴드를 5개로 나누었을 때의 K-Fold Cross Validation을 도식화해 보면 다음과 같습니다.![스크린샷 2022-02-12 오후 12.51.17](../images/2022-02-12-교차 검증(Cross Validation)/스크린샷 2022-02-12 오후 12.51.17-4717860.png)
 
 ----
 
@@ -120,7 +113,6 @@ LOOCV는 K-Fold Cross Validation과 같은 방식을 취하는데 폴드를 데�
 보통 학습 데이터의 양이 극심히 적을 때 사용되는 방식입니다.
 
 ----
-
 # 3. Stratified K-Fold Cross Validation
 
 Stratified K-Fold Cross Validation 방식은 각 레이블 별로 데이터 분포가 불균형할(imbalanced) 때 사용되는 방식입니다.
@@ -163,11 +155,8 @@ K번 학습과 검증이 반복될 때마다 도출되는 각각의 결과의 �
 
 이번에도 역시 붓꽃 데이터를 사용하겠습니다.
 
-<<<<<<< Updated upstream
-=======
 In:
 
->>>>>>> Stashed changes
 
 ```python
 from sklearn.tree import DecisionTreeClassifier
@@ -189,13 +178,11 @@ print(f"교차 검증별 정확도: {np.round(scores, 4)}")
 print(f"평균 검증 정확도: {np.round(np.mean(scores), 4)}")
 ```
 
-<<<<<<< Updated upstream
-=======
 Out:
 
->>>>>>> Stashed changes
     교차 검증별 정확도: [0.9667 0.9667 0.9    1.     1.    ]
     평균 검증 정확도: 0.9667
+
 
 cross_val_score()의 주요 파라미터를 살펴보겠습니다.
 
