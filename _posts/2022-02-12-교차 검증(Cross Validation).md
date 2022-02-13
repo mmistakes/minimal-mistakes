@@ -95,13 +95,10 @@ K-Fold Cross validation은 학습이 여러 번 이루어지는 관계로 반복
 
 예시로 폴드를 5개로 나누었을 때의 K-Fold Cross Validation을 도식화해 보면 다음과 같습니다.
 
-<<<<<<< Updated upstream
-=======
 ![스크린샷 2022-02-12 오후 12.51.17](../images/2022-02-12-교차 검증(Cross Validation)/스크린샷 2022-02-12 오후 12.51.17-4637992.png)
 
 ----
 
->>>>>>> Stashed changes
 # 2. LOOCV(Leave One Out Cross Validation)
 
 LOOCV는 K-Fold Cross Validation과 같은 방식을 취하는데 폴드를 데이터의 개수만큼 지정하는 방식을 의미합니다.
@@ -117,6 +114,8 @@ LOOCV는 K-Fold Cross Validation과 같은 방식을 취하는데 폴드를 데�
 그렇기에 이로부터 나온 결과의 신뢰도는 높을 수 없습니다.
 
 보통 학습 데이터의 양이 극심히 적을 때 사용되는 방식입니다.
+
+----
 
 # 3. Stratified K-Fold Cross Validation
 
@@ -145,6 +144,66 @@ K번 학습과 검증이 반복될 때마다 도출되는 각각의 결과의 �
 분류에서는 타겟값이 이산적인 레이블로 나타나는 반면,
 
 회귀에서는 타겟값이 연속적인 숫자값으로 나타나기 때문에 데이터의 분포도가 의미가 없기 때문입니다.
+
+----
+
+# cross_val_score()
+
+그럼 교차 검증이 실제로 어떻게 쓰이는지 예시를 보겠습니다.
+
+사실 model_selection 모듈에는 KFold()와 StratifiedKFold() 메소드가 있습니다.
+
+교차 검증을 위한 메소드이긴 하지만 코드 작성 시 복잡해지는 경향이 있습니다.
+
+그래서 저는 간편하게 한 줄의 코드로 교차 검증을 할 수 있게 도와주는 cross_val_score()를 사용할 것입니다.
+
+이번에도 역시 붓꽃 데이터를 사용하겠습니다.
+
+
+```python
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import cross_val_score
+from sklearn.datasets import load_iris
+
+import numpy as np
+
+iris_data = load_iris()
+# 붓꽃 데이터 가져오기
+dt = DecisionTreeClassifier(random_state = 1)
+# Decision Tree 분류기를 dt라는 이름으로 생성
+
+scores = cross_val_score(dt, iris_data.data, iris_data.target, scoring = "accuracy", cv = 5)
+# 5개의 폴드로 나누어 교차 검증
+# 결과는 교차 검증별 accuracy로 반환
+
+print(f"교차 검증별 정확도: {np.round(scores, 4)}")
+print(f"평균 검증 정확도: {np.round(np.mean(scores), 4)}")
+```
+
+    교차 검증별 정확도: [0.9667 0.9667 0.9    1.     1.    ]
+    평균 검증 정확도: 0.9667
+
+cross_val_score()의 주요 파라미터를 살펴보겠습니다.
+
+첫 번째 파라미터에는 **estimator**, 즉 분류 모델 또는 회귀 모델이 입력되고,
+
+두 번째 파라미터에는 **피처** 데이터 세트, 세 번째 파라미터에는 **레이블** 데이터 세트가 입력되어야 합니다.
+
+**scoring**: 예측 성능 평가 지표를 결정합니다.
+
+**cv**: 폴드의 수를 결정합니다.
+
+cross_val_score()를 호출하면 자체적으로 학습(fit), 예측(predict), 평가를 진행하여
+
+**각 교차 검증별 정확도가 배열의 형태**로 반환됩니다.
+
+또한, 분류 모델이 입력되면 자동으로 Stratified K-Fold Cross Validation이 적용되고,
+
+회귀 모델이 입력되면 K-Fold Cross Validation이 적용됩니다.
+
+cross_val_score() 외에도 cross_validate()도 있는데
+
+이는 여러 개의 성능 평가 지표를 반환할 수 있다는 장점이 있습니다.
 
 ----
 
