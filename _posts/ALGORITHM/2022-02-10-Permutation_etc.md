@@ -31,7 +31,7 @@ nPr = n * ( n-1 ) * ( n-2 ) * .. * ( n-r-1 )<br><br>
 <b><a style="color:red">nPn = n!</a></b><br>
 n! = n * ( n-1 ) * ( n-2 ) * .. 2 * 1<br><br>
 
-### 상속 실습 해보즈아 !
+### 순열 실습 해보즈아 !
 ```java
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -210,7 +210,7 @@ public class CombinationPractice {
 <b><a style="color:red">2^n</a></b><br>
 n이 원소 개수<br><br>
 
-### 조합 실습 해보즈아 !
+### 부분 집합 실습 해보즈아 !
 ```java
 import java.io.BufferedReader;
 import java.io.IOException;
