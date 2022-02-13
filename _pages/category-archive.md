@@ -4,6 +4,7 @@ author: "Abdul"
 layout: single
 excerpt: "Categories Include"
 permalink: /categories/
+toc: true
 header:
   overlay_image: "/assets/images/categories/main-category-3.jpg"
 ---
