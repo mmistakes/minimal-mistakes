@@ -1,3 +1,11 @@
+---
+layout: post
+title: "교차 검증(Cross Validation)"
+---
+
+
+
+
 ----
 
 안녕하세요. 데이터 사이언티스트를 위한 정보를 공유하고 있습니다.
@@ -93,8 +101,7 @@ K-Fold Cross validation은 학습이 여러 번 이루어지는 관계로 반복
 ----
 
 예시로 폴드를 5개로 나누었을 때의 K-Fold Cross Validation을 도식화해 보면 다음과 같습니다.
-
-![교차검증](../images/2022-02-12-교차 검증(Cross Validation)/교차검증.jpg)
+<img src="../images/2022-02-12-교차 검증(Cross Validation)/교차검증.jpg" alt="교차검증" style="zoom:100%;" />
 
 ----
 
@@ -157,8 +164,6 @@ K번 학습과 검증이 반복될 때마다 도출되는 각각의 결과의 �
 
 이번에도 역시 붓꽃 데이터를 사용하겠습니다.
 
-In:
-
 
 ```python
 from sklearn.tree import DecisionTreeClassifier
@@ -179,8 +184,6 @@ scores = cross_val_score(dt, iris_data.data, iris_data.target, scoring = "accura
 print(f"교차 검증별 정확도: {np.round(scores, 4)}")
 print(f"평균 검증 정확도: {np.round(np.mean(scores), 4)}")
 ```
-
-Out:
 
     교차 검증별 정확도: [0.9667 0.9667 0.9    1.     1.    ]
     평균 검증 정확도: 0.9667

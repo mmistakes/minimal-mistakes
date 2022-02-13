@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "GridSearchCV()"
+title: "GridSearchCV()"
 ---
-
 
 
 
