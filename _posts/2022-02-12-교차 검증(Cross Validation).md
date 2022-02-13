@@ -211,7 +211,7 @@ cross_val_score()를 호출하면 자체적으로 학습(fit), 예측(predict), 
 
 **각 교차 검증별 정확도가 배열의 형태**로 반환됩니다.
 
-또한, 분류 모델이 입력되면 자동으로 Stratified K-Fold Cross Validation이 적용되고,
+또한 분류 모델이 입력되면 자동으로 Stratified K-Fold Cross Validation이 적용되고,
 
 회귀 모델이 입력되면 K-Fold Cross Validation이 적용됩니다.
 
