@@ -101,7 +101,7 @@ K-Fold Cross validation은 학습이 여러 번 이루어지는 관계로 반복
 ----
 
 예시로 폴드를 5개로 나누었을 때의 K-Fold Cross Validation을 도식화해 보면 다음과 같습니다.
-<img src="../images/2022-02-12-교차 검증(Cross Validation)/교차검증.jpg" alt="교차검증" style="zoom:100%;" />
+<img src="../images/2022-02-12-교차 검증(Cross Validation)/교차검증.jpg" alt="교차검증" style="zoom:50%;" />
 
 ----
 
