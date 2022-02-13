@@ -1,6 +1,7 @@
 ----
 
-안녕하세요. 데이터 사이언티스트를 위한 정보를 공유하고 있습니다.
+안녕하세요.
+데이터 사이언티스트를 위한 정보를 공유하고 있습니다.
 
 M1 Macbook Air를 사용하고 있으며, 블로그의 모든 글은 Mac을 기준으로 작성된 점 참고해주세요.
 
@@ -17,6 +18,8 @@ GridSearchCV는 말 그대로 여러 가지의 하이퍼 파라미터를 격자�
 하나하나 순차적으로 모델의 하이퍼 파라미터로서 적용해 보면서 교차 검증을 통해 최적의 하이퍼 파라미터 값을 찾아주는 방식입니다.
 
 GridSearchCV가 어떻게 사용되는지 예시를 통해 먼저 살펴보겠습니다.
+
+In:
 
 
 ```python
@@ -50,26 +53,8 @@ scores[["params", "mean_test_score", "rank_test_score", "split0_test_score", "sp
 # 결과값 중 8개의 열만 추출하여 보여줌
 ```
 
+Out:
 
-
-
-
-  <div id="df-6aed4009-75dd-49c3-8df8-c9bf0f1fdd42">
-    <div class="colab-df-container">
-      <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-    
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -207,11 +192,15 @@ GridSearchCV()의 주요 파라미터를 살펴보겠습니다.
 
 **best_score_**: 최적의 하이퍼 파라미터를 적용하였을 때의 검증 결과를 나타냅니다.
 
+In:
+
 
 ```python
 print(f"GridSearchCV 최적 파라미터: {grid_dt.best_params_}")
 print(f"GridSearchCV 최고 정확도: {grid_dt.best_score_:.4f}")
 ```
+
+Out:
 
     GridSearchCV 최적 파라미터: {'max_depth': 3, 'min_samples_split': 2}
     GridSearchCV 최고 정확도: 0.9750
@@ -223,6 +212,8 @@ print(f"GridSearchCV 최고 정확도: {grid_dt.best_score_:.4f}")
 
 해당 최적의 모델을 테스트 데이터 세트로 테스트를, 즉 최종 성능 평가를 진행해 보겠습니다.
 
+In:
+
 
 ```python
 estimator = grid_dt.best_estimator_
@@ -231,6 +222,8 @@ estimator = grid_dt.best_estimator_
 y_pred = estimator.predict(X_test)
 print(f"예측 정확도: {accuracy_score(y_test, y_pred):.4f}")
 ```
+
+Out:
 
     예측 정확도: 0.9667
 
