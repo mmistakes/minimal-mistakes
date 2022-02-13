@@ -1,10 +1,6 @@
 ---
-layout: post
 title: "GridSearchCV()"
 ---
-
-
-
 ----
 
 안녕하세요.
