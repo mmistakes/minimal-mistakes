@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "학습 데이터와 테스트 데이터의 분리(train_test_split())"
+---
+
+
+
+
 ----
 
 안녕하세요.
