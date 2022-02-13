@@ -53,7 +53,7 @@ grid_dt.fit(X_train, y_train)
 scores = pd.DataFrame(grid_dt.cv_results_)
 # 학습 및 검증 결과를 판다스 데이터 프레임의 형태로 받기
 scores[["params", "mean_test_score", "rank_test_score", "split0_test_score", "split1_test_score", "split2_test_score", "split3_test_score", "split4_test_score"]]
-# 결과값 중 8개의 열만 추출하여 보여줌
+# 결과값 중 8개의 칼럼만 추출하여 보여줌
 ```
 
 Out:
