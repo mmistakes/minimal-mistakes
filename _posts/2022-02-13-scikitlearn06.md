@@ -18,9 +18,9 @@ M1 Macbook Air를 사용하고 있으며, 블로그의 모든 글은 Mac을 기�
 
 대표적인 세 가지의 인코딩 방식이 있습니다.
 
-1. Label encoding
-2. One-Hot encoding
-3. Mean encoding
+1. **Label encoding**
+2. **One-Hot encoding**
+3. **Mean encoding**
 
 Mean encoding은 내용이 상대적으로 많기 때문에 다음 포스팅에서 다루기로 하고,
 
