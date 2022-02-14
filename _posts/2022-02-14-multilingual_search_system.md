@@ -23,7 +23,7 @@ title:  "내 언어로 글로벌 검색 서비스 제공하기"
 
 |<b>사용자가 컨텐츠를 등록할 때<b>|
 |:-:|
-![upload_idea](/assets/MultilingualSearchSystemDemo/upload_idea.PNG)
+![upload_idea](/assets/upload_idea.png)
     1. 사용자의 dominant 언어를 detect한다.
     2. detect된 사용자의 언어를 영어로 변경한다.
     3. 자연어 처리를 통해 키워드들을 선정한다.
@@ -31,7 +31,7 @@ title:  "내 언어로 글로벌 검색 서비스 제공하기"
 
 |<b>사용자가 컨텐츠를 검색할 때<b>|
 |:-:|
-![search_idea](/assets/MultilingualSearchSystemDemo/search_idea.PNG)
+![search_idea](/assets/search_idea.png)
     1. 사용자가 자신의 언어로 검색을 시도한다.
     2. 사용자의 dominant 언어를 detect한다.
     3. detect된 사용자의 언어를 영어로 변경한다.
@@ -60,7 +60,7 @@ title:  "내 언어로 글로벌 검색 서비스 제공하기"
 
 ### Upload System
 
-![search_idea](upload_arch.PNG)
+![search_idea](/assets/upload_arch.png)
 
 AWS의 소프트웨어로 candidate idea를 구체화한 upload system이다. 
 
