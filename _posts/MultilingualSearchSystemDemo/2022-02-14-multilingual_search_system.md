@@ -18,7 +18,7 @@
 
 |<b>사용자가 컨텐츠를 등록할 때<b>|
 |:-:|
-![upload_idea](/_posts/MultilingualSearchSystemDemo/upload_idea.PNG)
+![upload_idea](./upload_idea.PNG)
     1. 사용자의 dominant 언어를 detect한다.
     2. detect된 사용자의 언어를 영어로 변경한다.
     3. 자연어 처리를 통해 키워드들을 선정한다.
