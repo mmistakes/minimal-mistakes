@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Interview Prep"
-permalink: /categories/career/interview_prep/introduction_to_interview_prep
+permalink: /categories/career/interview_prep/
 layout: single
 author_profile: false
 sidebar:
@@ -35,7 +35,6 @@ Many people are finding that the job market is saturated with many great candida
 As with anything, it is more beneficial to work smarter, not harder. By prepping for your interviews, you can improve your interviewing skills and make your way to the top of any candidate pool, for any company. [Learn more](/categories/career/interview_prep/what_is_interview_prep_and_why_you_need_it) about the benefits of interview prep, why you need it, and the best way to go about doing it.
 
 ![checklist](/assets/images/checklist.jpg)
-
 
 # A Note for College Grads
 

@@ -1,6 +1,6 @@
 ---
 title: "Technical Experience Overview"
-permalink: /categories/career/technical_experience/technical_experience_overview
+permalink: /categories/career/technical_experience/
 layout: single
 author_profile: false
 sidebar:
@@ -24,53 +24,51 @@ header:
 
 # Overview
 
-This section of my website is meant to serve as a deep dive into my experience with certain tools, past projects, and roles. For a high-level overview, please  [refer to my resume](https://s3.amazonaws.com/www.abdulrabbani.com/Abdul_Rabbani_resume_20210901.pdf).
+This section of my website is meant to serve as a deep dive into my experience with certain tools, past projects, and roles. For a high-level overview, please [refer to my resume](https://s3.amazonaws.com/www.abdulrabbani.com/Abdul_Rabbani_resume_20210901.pdf).
 
 # Tech Insight
 
 Throughout my career in tech, I have had the pleasure of having many teachers and learning many things. Some of my teachers have been books, videos, online courses, and best of all, people. Below, I have summarized and linked the posts that capture my experience with prominent tools. To read any of the posts and to see my experiences in more detail, please click on the appropriate link.
 
--   [**DevOps Tools**](/categories/career/technical_experience/devops_tools) - A post capturing my experience with the tools and technologies I learned as a DevOps engineer.
-    
-    -   **CI/CD Tools** - Created pipelines with **Jenkins**, **Travis**, and **GitHub Actions**.
-        
-    -   **Terraform** - Wrote Terraform modules and contributed to multiple **Microsoft open source** repositories.
-        
-    -   **Ansible** - Wrote hundreds of playbooks and roles in one of my  favorite tools.
-        
-    -   **Containers** - Utilized **Docker** and **Kubernetes** for development, deployment, and more.
-        
--   [**Programming Languages**](/categories/career/technical_experience/programming_languages) - A post capturing the languages I learned to _speak_ and write in, as well as my point of view on them.
-    
-    -   **Python** - My first and favorite programming language that I have used to write various scripts and applications.
-        
-    -   **C++** - A language I  enjoy writing code in and learned to understand at a deep level from an application perspective. I have configured, monitored, optimized, and tested many C++ applications.
-        
-    -   **C** - A beautiful language that I _simply_ love. C provides elegancy and simplicity, which has made me an ardent supporter. A language I am happy I learned.
-        
-    -   **Go** - A new favorite language. I appreciate the similarities to C while providing easy syntax like Python.
-        
-    -   **Scala** - A language I picked up so that I may understand functional programming. I have also learned to work with Spark in Scala.
-        
-    -   **Lua** - A language that I learned when writing NGINX custom modules.
-        
-    -   **Bash** - A powerful scripting language that I continuously return to.
-        
--   [**Core Knowledge**](/categories/career/technical_experience/core_knowledge)  - A post capturing my knowledge on fundamental technologies, ideas, and concepts.
-    
-    -   **Linux Kernel Internals** - Emphasizing my deep appreciation of Linux, and I now learned to understand the true beauty behind it.
-        
-    -   **Core Internet Protocols** - Emphasizing my understanding of core internet protocols at a development level, instead of simply understanding them at a user level.
-        
+- [**DevOps Tools**](/categories/career/technical_experience/devops_tools) - A post capturing my experience with the tools and technologies I learned as a DevOps engineer.
+
+  - **CI/CD Tools** - Created pipelines with **Jenkins**, **Travis**, and **GitHub Actions**.
+
+  - **Terraform** - Wrote Terraform modules and contributed to multiple **Microsoft open source** repositories.
+
+  - **Ansible** - Wrote hundreds of playbooks and roles in one of my favorite tools.
+
+  - **Containers** - Utilized **Docker** and **Kubernetes** for development, deployment, and more.
+
+- [**Programming Languages**](/categories/career/technical_experience/programming_languages) - A post capturing the languages I learned to _speak_ and write in, as well as my point of view on them.
+
+  - **Python** - My first and favorite programming language that I have used to write various scripts and applications.
+
+  - **C++** - A language I enjoy writing code in and learned to understand at a deep level from an application perspective. I have configured, monitored, optimized, and tested many C++ applications.
+
+  - **C** - A beautiful language that I _simply_ love. C provides elegancy and simplicity, which has made me an ardent supporter. A language I am happy I learned.
+
+  - **Go** - A new favorite language. I appreciate the similarities to C while providing easy syntax like Python.
+
+  - **Scala** - A language I picked up so that I may understand functional programming. I have also learned to work with Spark in Scala.
+
+  - **Lua** - A language that I learned when writing NGINX custom modules.
+
+  - **Bash** - A powerful scripting language that I continuously return to.
+
+- [**Core Knowledge**](/categories/career/technical_experience/core_knowledge) - A post capturing my knowledge on fundamental technologies, ideas, and concepts.
+
+  - **Linux Kernel Internals** - Emphasizing my deep appreciation of Linux, and I now learned to understand the true beauty behind it.
+
+  - **Core Internet Protocols** - Emphasizing my understanding of core internet protocols at a development level, instead of simply understanding them at a user level.
 
 # Featured Projects
 
 The following links highlight a few projects that I’ve worked on in some of my previous roles. Fair warning, I will mostly capture my experience working in finance, as most of my experience working in tech can be captured within the “DevOps Tools” section.
 
--   [**Internal Trading Market**](/categories/career/technical_experience/internal_trading_market)  - At Societe General, I was responsible for creating an “internal market” that external clients would be able to route orders to. Learn about my experience with **Python**, **Pandas**, **market data**, **order entry**, and **smart order routing (SOR)** [here](/categories/career/technical_experience/internal_trading_market).
-    
--   [**Microwave**](/categories/career/technical_experience/microwave) - At Societe General, I worked very closely with our Microwave instances. Learn about my experience configuring, analyzing, testing, upgrading, and architecting solutions for Microwaves [here](/categories/career/technical_experience/internal_trading_market).
-    
+- [**Internal Trading Market**](/categories/career/technical_experience/internal_trading_market) - At Societe General, I was responsible for creating an “internal market” that external clients would be able to route orders to. Learn about my experience with **Python**, **Pandas**, **market data**, **order entry**, and **smart order routing (SOR)** [here](/categories/career/technical_experience/internal_trading_market).
+
+- [**Microwave**](/categories/career/technical_experience/microwave) - At Societe General, I worked very closely with our Microwave instances. Learn about my experience configuring, analyzing, testing, upgrading, and architecting solutions for Microwaves [here](/categories/career/technical_experience/internal_trading_market).
 
 # Past Experience
 
@@ -92,7 +90,7 @@ From 2019-2021 I was a DevOps Engineer at a start-up called PromoteIQ, which is 
 
 Part of being a good DevOps Engineer is making sure you are not doing the same work twice. Infrastructure, applications, networks, servers, and other pieces of technology constantly need to be replicated and changed. Technology is great because if you work smarter, you can program it to do a lot for you. Some of the tools that I leveraged to make my life easier were _**Ansible**,_ **Python**_,_ **Terraform**_, and_ **Jenkins**.
 
-Like many companies, PromoteIQ lives on the cloud and not just one. To meet client needs, PromotIQ has applications on **AWS**_,_ **GCP**_,_ **Azure**_,_ **Rackspace**_, and_ **Digital Ocean**. Because of strong leadership and smart engineers,  we were able to serve clients out of various clouds with ease. Through PromoteIQ and its focus on automation and growth, I was able to understand what it takes to run a smart, sleek, and truly advanced shop in today's day and age.
+Like many companies, PromoteIQ lives on the cloud and not just one. To meet client needs, PromotIQ has applications on **AWS**_,_ **GCP**_,_ **Azure**_,_ **Rackspace**_, and_ **Digital Ocean**. Because of strong leadership and smart engineers, we were able to serve clients out of various clouds with ease. Through PromoteIQ and its focus on automation and growth, I was able to understand what it takes to run a smart, sleek, and truly advanced shop in today's day and age.
 
 I want to take the lessons learned here and apply them in my next role. Being part of a “tight ship” has shown me where most companies make mistakes in culture, collaboration, and innovation. I now understand the small, individual components that must work together for the crew to work better and can attempt to improve these components in my next role.
 
