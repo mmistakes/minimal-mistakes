@@ -16,18 +16,17 @@
 
 기본 아이디어는 다음과 같이 두개로 나눌 수 있다.
 
-|<b>사용자가 컨텐츠를 등록할 때<b>|
-|:-:|
-|![upload_idea](/images/MultilingualSearchSystemDemo/upload_idea.png)|
+<b>사용자가 컨텐츠를 등록할 때<b>
+![upload_idea](/images/MultilingualSearchSystemDemo/upload_idea.png)
   
     1. 사용자의 dominant 언어를 detect한다.
     2. detect된 사용자의 언어를 영어로 변경한다.
     3. 자연어 처리를 통해 키워드들을 선정한다.
     4. 선정된 키워드를 데이터베이스에 기록한다.
 
-|<b>사용자가 컨텐츠를 검색할 때<b>|
-|:-:|
-![search_idea](search_idea.PNG)
+<b>사용자가 컨텐츠를 검색할 때<b>
+![search_idea](/images/MultilingualSearchSystemDemo/search_idea.PNG)
+  
     1. 사용자가 자신의 언어로 검색을 시도한다.
     2. 사용자의 dominant 언어를 detect한다.
     3. detect된 사용자의 언어를 영어로 변경한다.
