@@ -50,7 +50,7 @@ title:  "내 언어로 글로벌 검색 서비스 제공하기"
 언어를 탐색하고, 번역하고, 분석하는 일은 분명 매력적인 일이 될 것이다. 하지만, 한 사람의 개발자가 혹은, 소규모의 팀이 진행하기에 확실히 효율적이지 못하다. 그래서 클라우드 기반의 소프트웨어를 찾아보는 것은 우리에게 좋은 옵션이 될 것이다.
 
 |Translation|Natural Language Processing|Search Engine|
-|:---:|:---:|:---:|
+|:------------------:|:------------------:|:------------------:|
 | `AWS Translate` | `AWS Comprehend` | `OpenSearch` |
 
 사실 위의 기능을 다루는 다양한 플랫폼의 적절한 솔루션들이 존재한다. 그러나 이 글에서는 편의상 AWS에서 제공하는 소프트웨어들을 기반으로 살펴 보고자 한다.
@@ -76,7 +76,7 @@ AWS의 소프트웨어로 candidate idea를 구체화한 upload system이다.
 Name: UploadSystem
 
 |Path|Type|Lambda|
-|:---:|:---:|:---:|
+|:------------------:|:------------------:|:------------------:|
 | `/upload-batch-projects` | `POST` | [upload-batch-projects](https://github.com/KineMasterCorp/MultilingualSearch-sample/tree/main/lambda/upload-projects/upload-batch-projects) |
 
 AWS API Gateway를 적절한 이름으로 생성해보자. (여기에서는  UploadSystem 란 이름으로 생성) API Gateway에 Call이 온다면 실행시켜줄 lambda 함수를 연결한다. 
@@ -110,7 +110,7 @@ DynamoDB의 내보내기 기능을 사용하면 DynamoDB의 변경사항이 있�
 4.  Lambda for indexing to Search Engine
 
 |Type|Lambda|
-|:---:|:---:|
+|:------------------:|:------------------:|
 | `Python` | [index-project](https://github.com/KineMasterCorp/MultilingualSearch-sample/tree/main/lambda/index-project)
 
 > Python code 를 lambda packaging 하는 방법
