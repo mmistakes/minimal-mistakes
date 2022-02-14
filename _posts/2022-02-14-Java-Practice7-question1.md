@@ -47,11 +47,13 @@ Hmme~
 - Animal.java
 
 ```java
+
 package practice7;
 
 abstract class Animal {
 	public abstract void bark();
 }
+
 ```
 
 - Cat.java
