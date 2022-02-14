@@ -1,0 +1,6 @@
+{% assign username = include.username %}
+{% unless username %}
+{% assign username = site.codepen_username %}
+{% endunless %}
+<p data-height="300" data-theme-id="2" data-slug-hash="{{ include.hash }}" data-default-tab="js,result" data-user="{{ username }}" class='codepen'>See the Pen <a href='https://codepen.io/{{ username }}/pen/{{ include.hash }}/'>{{ include.title }}</a> by {{ username }} (<a href='https://codepen.io/{{ username }}'>@{{ username }}</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
