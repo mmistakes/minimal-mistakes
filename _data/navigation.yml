@@ -23,12 +23,15 @@ study:
     children:
       - title: "JavaScript"
         url: /categories/study/javascript
+      - title: "TDD"
+        url: /categories/study/TDD
 
 TIL:
   - title: "Category"
     url: /categories
 
   - title: "TIL"
+    url: /categories/TIL
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
