@@ -1,6 +1,8 @@
 ---
 layout: single
 title:  "내 언어로 글로벌 검색 서비스 제공하기"
+header:
+  image: /assets/images/background.jpg
 ---
 
 세계의 여러 나라에서 이용하는 서비스가 있다고 해보자. 
