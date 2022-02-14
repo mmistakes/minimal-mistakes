@@ -3,8 +3,6 @@ layout: single
 title:  "내 언어로 글로벌 검색 서비스 제공하기"
 ---
 
-# 내 언어로 글로벌 검색 서비스 제공하기
-
 세계의 여러 나라에서 이용하는 서비스가 있다고 해보자. 
 
 마침 그 서비스는 내가 만든 컨텐츠를 공유하고, 다른 사람들의 것들도 검색하여 그 컨텐츠들을 즐길 수 있다. 
@@ -106,7 +104,7 @@ AWS API Gateway를 적절한 이름으로 생성해보자. (여기에서는  Upl
 3. Notify that info rmation has been saved
 
 DynamoDB의 내보내기 기능을 사용하면 DynamoDB의 변경사항이 있을 때마다 변경된 데이터와 함께 notification을 받을 수 있습니다.
-![DynamoDB-Stream](DynamoDB-Stream.png)
+![DynamoDB-Stream](/assets/DynamoDB-Stream.png)
 
 4.  Lambda for indexing to Search Engine
 
