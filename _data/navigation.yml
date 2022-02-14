@@ -35,6 +35,10 @@ docs:
         url: /jsp3/
       - title: "JSP 액션태그1"
         url: /jsp4/
+  - title: JAVASCRIPT
+    children:
+      - title: "자바스크립트 기초(모르는 것) 1편"
+        url: /javascript-base1/
   - title: Algorithm
     children:
       - title: "백준 알고리즘 1단계"
