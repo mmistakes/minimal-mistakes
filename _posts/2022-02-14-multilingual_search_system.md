@@ -23,13 +23,8 @@ title:  "내 언어로 글로벌 검색 서비스 제공하기"
 ![upload_idea](/assets/upload_idea.png)
   
 
-{% include callout.html content="1. 사용자의 dominant 언어를 detect한다. 2. detect된 사용자의 언어를 영어로 변경한다. 3. 자연어 처리를 통해 키워드들을 선정한다. 4. 선정된 키워드를 데이터베이스에 기록한다." type="primary" %} 
-  
-  
-<b>사용자가 컨텐츠를 검색할 때<b>
-![search_idea](/assets/search_idea.png)
-  
-{% include callout.html content=" 1. 사용자가 자신의 언어로 검색을 시도한다. 2. 사용자의 dominant 언어를 detect한다. 3. detect된 사용자의 언어를 영어로 변경한다. 4. 자연어 처리를 통해 키워드들을 선정한다. 5. 선정된 키워드들을 이용하여 데이터베이스에 쿼리한다. type="primary" %}
+{% include callout.html content="This is my callout. It has a border on the left whose color you define by passing a type parameter. I typically use this style of callout when I have more information that I want to share, often spanning multiple paragraphs. " type="primary" %} 
+ 
 
 위의 두가지 Usecase 에 맞춰 필요한 기능은 먼저 **_사용자의 언어를 파악할 수 있어야 한다._** 인지 할 수 없는 언어는 아쉽게도 지원대상이 될 수 없다. 
 
