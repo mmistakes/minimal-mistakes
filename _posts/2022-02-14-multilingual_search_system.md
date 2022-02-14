@@ -22,23 +22,20 @@ title:  "내 언어로 글로벌 검색 서비스 제공하기"
 <b>사용자가 컨텐츠를 등록할 때<b>
 ![upload_idea](/assets/upload_idea.png)
   
-  1. 사용자의 dominant 언어를 detect한다. 
-  2. detect된 사용자의 언어를 영어로 변경한다.
-  3. 자연어 처리를 통해 키워드들을 선정한다. 
-  4. 선정된 키워드를 데이터베이스에 기록한다.
-  {: .notice--info}
+> 1. 사용자의 dominant 언어를 detect한다. 
+> 2. detect된 사용자의 언어를 영어로 변경한다.
+> 3. 자연어 처리를 통해 키워드들을 선정한다. 
+> 4. 선정된 키워드를 데이터베이스에 기록한다.
   
 <b>사용자가 컨텐츠를 검색할 때<b>
 ![search_idea](/assets/search_idea.png)
   
-  1. 사용자가 자신의 언어로 검색을 시도한다. 
-  2. 사용자의 dominant 언어를 detect한다. 
-  3. detect된 사용자의 언어를 영어로 변경한다.
-  4. 자연어 처리를 통해 키워드들을 선정한다.
-  5. 선정된 키워드들을 이용하여 데이터베이스에 쿼리한다.
-  {: .notice--info}
+> 1. 사용자가 자신의 언어로 검색을 시도한다. 
+> 2. 사용자의 dominant 언어를 detect한다. 
+> 3. detect된 사용자의 언어를 영어로 변경한다.
+> 4. 자연어 처리를 통해 키워드들을 선정한다.
+> 5. 선정된 키워드들을 이용하여 데이터베이스에 쿼리한다.
  
-
 위의 두가지 Usecase 에 맞춰 필요한 기능은 먼저 **_사용자의 언어를 파악할 수 있어야 한다._** 인지 할 수 없는 언어는 아쉽게도 지원대상이 될 수 없다. 
 
 그렇게  **_파악된 언어를 영어로 번역할 수 있어야 한다._** 우리의 목적은 특정 언어로 기록된 컨텐츠만 검색되는 문제를 해결하는 것에 있다. 이를 위해 업로드 된 컨텐츠의 정보를 영어로 번역하고, 검색어 또한 연어로 번역한다. 이렇게 검색 환경을 통일함으로써 사용자에게 적절한 검색 결과를 제공할 준비를 한다.
@@ -65,11 +62,11 @@ title:  "내 언어로 글로벌 검색 서비스 제공하기"
 
 AWS의 소프트웨어로 candidate idea를 구체화한 upload system이다. 
 
-    1. 사용자가 컨텐츠와 정보를 AWS의 API Gateway를 통해 sever에 전달한다. 
-    2. 전달된 데이터 중, 컨텐츠는 S3저장소에 저장시키고 metadata는 database인 dynamoDB에 저장한다.
-    3. DynamoDB의 Stream 을 통해 정보가 저장되었다는 notification을 받은 후, metadata를 영어로 번역한다.
-    4. 번역된 키워드들을 ElasticSearch/OpenSearch로 Indexing 시킨다.
-    5. Indexing이 실패한다면, AWS SQS에 해당 작업이 성공할 때까지 Loop 코드를 실행한다. DB와 Search Engine간 data 동기화가 될 수 있도록 한다.
+> 1. 사용자가 컨텐츠와 정보를 AWS의 API Gateway를 통해 sever에 전달한다. 
+> 2. 전달된 데이터 중, 컨텐츠는 S3저장소에 저장시키고 metadata는 database인 dynamoDB에 저장한다.
+> 3. DynamoDB의 Stream 을 통해 정보가 저장되었다는 notification을 받은 후, metadata를 영어로 번역한다.
+> 4. 번역된 키워드들을 ElasticSearch/OpenSearch로 Indexing 시킨다.
+> 5. Indexing이 실패한다면, AWS SQS에 해당 작업이 성공할 때까지 Loop 코드를 실행한다. DB와 Search Engine간 data 동기화가 될 수 있도록 한다.
    
 #### Upload System 구성하기
 
@@ -89,7 +86,7 @@ AWS API Gateway를 적절한 이름으로 생성해보자. (여기에서는  Upl
 
 이제 아래의 JSON과 같은 포맷으로 API Call을 하게 되면 DynamoDB에 정보가 삽입 될 것이다.
 
-```JSON
+```json
 [
     {
        "title":"바다",
