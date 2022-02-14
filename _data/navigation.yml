@@ -3,7 +3,7 @@ main:
   - title: "About"
     url: /about/
   - title: "Experience"
-    url: /categories/career/technical_experience/technical_experience_overview
+    url: /categories/career/technical_experience
   - title: "Categories"
     url: /categories/
   - title: "Crypto"
@@ -12,7 +12,7 @@ interview_prep:
   - title: "Interview Prep"
     children:
       - title: "Introduction to Interview Prep"
-        url: /categories/career/interview_prep/introduction_to_interview_prep
+        url: /categories/career/interview_prep
       - title: "What is Interview Prep And Why You Need It"
         url: /categories/career/interview_prep/what_is_interview_prep_and_why_you_need_it
       - title: "How College Fails to Provide Real-World Knowledge"
@@ -21,7 +21,7 @@ technical_experience:
   - title: "General"
     children:
       - title: "Overview"
-        url: /categories/career/technical_experience/technical_experience_overview
+        url: /categories/career/technical_experience
       - title: "DevOps Tools"
         url: /categories/career/technical_experience/devops_tools
       - title: "Programming Languages"
