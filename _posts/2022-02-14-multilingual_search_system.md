@@ -1,7 +1,6 @@
 ---
 layout: single
 title:  "내 언어로 글로벌 검색 서비스 제공하기"
-tagline: "This is a custom tagline content which overrides the default page excerpt."
 header:
   overlay_image: /assets/images/background-2.jpg  
   
