@@ -132,3 +132,36 @@ https://developers.google.com/fonts/docs/material_icons
         })
 ```
 if문으로 조건 달아서 hidden 처리한거 보여주는 방식으로 변경
+
+<br>
+
+7. ajax  
+```
+        $('#obClick').click(function(){
+            readForm('#obForm','/readOBForm');
+        })
+```
+![image](https://user-images.githubusercontent.com/86642180/154021799-64f5f69d-0415-4900-bf62-4fab8b3f37bc.png)
+클라이언트에서 받은 값 컨트롤러에 전달까지 👌  
+
+<br>
+
+8. DB에 값 저장 및 initiative 페이지로 이동  
+```
+    @Transactional
+    @RequestMapping(value="/readOBForm", produces="text/html;charset=UTF-8")
+    @ResponseBody
+    @PostMapping
+    public ModelAndView obAdd(@RequestParam Map<String, String> params) throws ParseException {
+
+        System.out.println("obAdd Controller");
+        for(String key : params.keySet()){
+            System.out.println(key + " : "+params.get(key));
+        }
+
+        ModelAndView modelAndView = new ModelAndView("ini");
+        //modelAndView.addObject("objective", code4Ob);
+        return modelAndView;
+    }
+```
+ini html을 보여주게 하려는데 안됨  
