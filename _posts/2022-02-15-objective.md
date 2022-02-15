@@ -29,3 +29,85 @@ https://github.com/allogrooming/allogrooming.github.io/blob/gh-pages/_posts/2022
 15일 추가작업   
 (1) 측정값 최대 3개  
 (2) 측정값 input에 5글자 이상 들어가면 자동으로 + 버튼 생성  
+(3) 날짜  
+
+<br>
+
+### 측정값 관련
+1. 추가 아이콘 구글폰트에서 선택  
+https://developers.google.com/fonts/docs/material_icons  
+
+<br>
+
+2. 적용할 HTML 파일에 `<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">` 추가  
+
+<br>
+3. CSS 파일에 (common.css)  
+```
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons, .material-icons-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+```
+⭐⭐ 아이콘 클래스명과 css에 기술된 클래스명 다르면 적용 안됨  
+
+<br>
+
+4. 아이콘 HTML에 추가  
+`<span class="material-icons-outlined" id="krAddBtn">add</span>`  
+
+<br>
+
+5. 5글자 이상 input에 입력되면 자동으로 + 버튼 옆에 보이게 하기  
+```
+    $('.keyResult').keyup(function(){
+        var keyResult = $(this).val();
+        if(keyResult.length > 4){
+            btnShow();
+        }
+    })
+```
+
+<br>
+
+6. + 버튼 누를때마다 input, button 생성  
+```
+    $('.material-icons-outlined').click(function(){
+        var krInput = document.getElementsByClassName('.keyResult');
+        var krbtn = document.getElementsByClassName('material-icons-outlined');
+        $('#krAdd').append(krInput);
+        $('#krAdd').append(krbtn);
+    })
+```
+그런데 이렇게하면 최대 3개까지인게 안지켜진다..  
