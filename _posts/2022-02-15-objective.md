@@ -11,6 +11,7 @@ title: "입력 페이지 관련"
 ![image](https://user-images.githubusercontent.com/86642180/153994981-e6b499d2-0959-4aac-8054-ee4e12a258c4.png)
 selectAllCategory로 모든 카테고리 가져옴  
 ajax로 컨트롤러에 카테고리 정보 보내줄까 하다가 request 파라미터로 보내줬다  
+앞으로 가운데 정렬, 사용자지정(할지 않할지 모름), 카테고리별 색상 지정을 해야함  
 https://github.com/allogrooming/allogrooming.github.io/blob/gh-pages/_posts/2022-02-14-SpringElError.md  
 
 <br>
