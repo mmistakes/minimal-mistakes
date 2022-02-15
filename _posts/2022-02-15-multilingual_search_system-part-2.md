@@ -10,6 +10,8 @@ typora-copy-images-to: /assets/images
 
 
 
+앞선 글에서 언급한 SaaS 솔루션들을 활용하여 간단한 샘플을 만들어 보자.
+
 
 
 ## 📐 Architecture
@@ -30,6 +32,8 @@ AWS의 소프트웨어로 [Candidate Idea](#candidate-idea)를 구체화한 uplo
 
 
 
+---
+
 #### Upload System 구성하기
 
 
@@ -47,6 +51,8 @@ API Gateway에서의 목적은 upload 에 해당하는 API call이 호출되면 
 우선 적절한 이름으로 AWS의 API Gateway를 생성해보자. 생성이 되었다면, 위의 테이블 항목과 같이 API Gateway의 Path를 POST 타입으로 생성하자. 이제 실제 Call이 왔을 때 실행시켜줄 lambda 함수와 연결할 준비를 하면 된다.
 
 
+
+---
 
 ##### Lambda for uploading projects
 
@@ -95,6 +101,8 @@ API Gateway에서의 목적은 upload 에 해당하는 API call이 호출되면 
 
 
 
+---
+
 ##### Database with DynamoDB
 
 
@@ -112,6 +120,8 @@ API Gateway에서의 목적은 upload 에 해당하는 API call이 호출되면 
 이제 DynamoDB에서 변경이 있을 때마다 index-project 로 해당 정보가 notification 된다.
 
 
+
+---
 
 ##### Lambda for indexing to Search Engine
 
@@ -197,6 +207,8 @@ index-project lambda 함수 또한, IAM 권한을 부여해야 한다.
 > 참고: 이 권한에 필요한 것보다 더 넓은 범위를 사용하고 있습니다. 구현에 필요한 최소한의 보안 권한을 사용하는 것을 고려하십시오.
 
 
+
+---
 
 ##### OpenSearch 설정
 

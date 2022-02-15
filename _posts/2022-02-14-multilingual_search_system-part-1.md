@@ -60,6 +60,8 @@ typora-copy-images-to: /assets/images
 
 
 
+---
+
 ## Tools with SaaS
 
 언어를 탐색하고, 번역하고, 분석하는 일은 분명 매력적인 일이 될 것이다. 하지만, 한 사람의 개발자가 혹은, 소규모의 팀이 진행하기에 확실히 효율적이지 못하다. 그래서 클라우드 기반의 소프트웨어를 찾아보는 것은 우리에게 좋은 옵션이 될 것이다.
@@ -72,5 +74,5 @@ typora-copy-images-to: /assets/images
 
 
 
-👉 Part -2 에서 계속
+👉 [Part -2 에서 계속](https://ethan-baek.github.io/multilingual_search_system-part-2/)
 
