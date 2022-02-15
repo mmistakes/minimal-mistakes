@@ -19,6 +19,11 @@ tags:
 
 ## Git - commit
 
+* Son los archivos que están representados dentro una **instantánea/snapshot/commits** almacenada
+  * Contienen **metadatos** adicionales que almacenan el contenido de los cambios que le hicimos a nuestros archivo y datos
+
+* **[Commits/Instantáneas/Snapshots]** son sinónimos en este caso en concreto
+
 * Comando ``git commit`` asigna un identificador único a cada nuevo commit que realice
 
   * Actuá como referencia única del ``commit``

@@ -21,6 +21,8 @@ tags:
 
 * **Rehace** o **Elimina** los cambios dependiendo del ``commit`` que le indiquemos dentro del **árbol de grafos** de ``commits`` dentro del **[Repositorio Local]**
 
+  * Elimina el commit que le indiquemos y también los commits que haya por delante al que le indiquemos 
+
 * Extrae los ficheros del **{Staging Area/Staged/Indice/Index}**
 
   * Revierte el ``git add <archive>``

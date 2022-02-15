@@ -20,7 +20,9 @@ page_css:
 
 ## Git Revert
 
-* Deshace los commits realizados por un **commit anterior** creando un **commit** completamente nuevo sin alterar el **historial de commits**
+* Crea un **nuevo commit** indicándole por parámetro un **commit anterior** al que nos encontremos y lo añade como **último commit** de la misma **rama** donde se ejecuto el comando sin alterar el historial de **commit** al grafo de **commits**
+
+<!-- * Deshace los commits realizados por un **commit anterior** creando un **commit** completamente nuevo sin alterar el **historial de commits** -->
 
 ```bash
 git revert [--[no-]edit] [-n] [-m parent-number] [-s] [-S[<keyid>]] <commit>…
