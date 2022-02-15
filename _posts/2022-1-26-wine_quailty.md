@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "와인품질분류"
-categories: 데이콘_분석
+categories: 데이터_분석
 tag:
   [
     python,
