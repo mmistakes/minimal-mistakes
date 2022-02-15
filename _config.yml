@@ -107,7 +107,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Think solidly and broadly."
   location         : "South Korea"
-  email            : "ticani0610@gmail.com"
+  email            : #"ticani0610@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
