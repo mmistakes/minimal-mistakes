@@ -1,5 +1,5 @@
 ---
-title: "데이터 인코딩 - Mean target encoding"
+title: "데이터 스케일링"
 ---
 ----
 
