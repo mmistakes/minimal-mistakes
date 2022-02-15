@@ -22,7 +22,7 @@ typora-copy-images-to: /assets/images
 
 
 
-## [Candidate Idea](#candidate-idea)
+## Candidate Idea
 
 위의 상황을 해결해 줄 수 있는 여러 방법들이 존재할 수 있겠지만, 여기에서는 우리가 생각하는 간단하고 효율적인 방법 하나를 소개하고자 한다.
 
@@ -74,5 +74,5 @@ typora-copy-images-to: /assets/images
 
 
 
-👉 [Part -2 에서 계속](https://ethan-baek.github.io/multilingual_search_system-part-2/)
+👉 [Part -2 에서 계속](https://ethan-baek.github.io/multilingual_search_system-part-2)
 

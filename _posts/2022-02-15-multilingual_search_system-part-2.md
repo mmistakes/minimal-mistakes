@@ -22,7 +22,7 @@ typora-copy-images-to: /assets/images
 
 ![upload_arch](../assets/images/upload_arch.png)
 
-AWS의 소프트웨어로 [Candidate Idea](#candidate-idea)를 구체화한 upload system이다. 
+AWS의 소프트웨어로 Candidate Idea를 구체화한 upload system이다. 
 
 > 1. 사용자가 컨텐츠와 정보를 AWS의 API Gateway를 통해 sever에 전달한다. 
 > 2. 전달된 데이터 중, 컨텐츠는 S3저장소에 저장시키고 metadata는 database인 DynamoDB에 저장한다.
