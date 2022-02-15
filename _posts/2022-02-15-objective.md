@@ -42,6 +42,7 @@ https://developers.google.com/fonts/docs/material_icons
 2. 적용할 HTML 파일에 `<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">` 추가  
 
 <br>
+
 3. CSS 파일에 (common.css)  
 ```
 @font-face {
@@ -80,6 +81,7 @@ https://developers.google.com/fonts/docs/material_icons
     font-feature-settings: 'liga';
 }
 ```
+
 ⭐⭐ 아이콘 클래스명과 css에 기술된 클래스명 다르면 적용 안됨  
 
 <br>
@@ -101,7 +103,7 @@ https://developers.google.com/fonts/docs/material_icons
 
 <br>
 
-6. + 버튼 누를때마다 input, button 생성  
+6. `+` 버튼 누를때마다 input, button 생성  
 ```
     $('.material-icons-outlined').click(function(){
         var krInput = document.getElementsByClassName('.keyResult');
@@ -111,3 +113,22 @@ https://developers.google.com/fonts/docs/material_icons
     })
 ```
 그런데 이렇게하면 최대 3개까지인게 안지켜진다..  
+
+<br>
+
+```
+        $('#krbtn1').click(function(){
+            $('#krAdd2').show();
+            $('#krbtn2').hide();
+        })
+
+        $('#krbtn2').click(function(){
+            $('#krAdd3').show();
+            $('#krbtn3').hide();
+        })
+
+        $('#krbtn3').click(function(){
+            alert("목표값은 최대 3개까지 작성 가능합니다")
+        })
+```
+if문으로 조건 달아서 hidden 처리한거 보여주는 방식으로 변경
