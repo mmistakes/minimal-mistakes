@@ -7,6 +7,7 @@ permalink: /categories/learning/book_report/reading_list
 toc: true
 header:
   overlay_image: "/assets/images/categories/learning/book_reports/reading_list_1.jpg"
+  teaser: "/assets/images/categories/learning/book_reports/reading_list_1.jpg"
 ---
 
 # Overview
@@ -39,16 +40,15 @@ This post will capture the books I have read over the years starting from 2019.
 
 9.  _The Last Lecture_ by Randy Pausch
 
-10.  _**Finding Flow: The Psychology of Engagement with Everyday Life**_ by Mihaly Csikszentmihalyi
+10. _**Finding Flow: The Psychology of Engagement with Everyday Life**_ by Mihaly Csikszentmihalyi
 
-11.  _**The Laws of Human Nature**_ by Robert Greene
+11. _**The Laws of Human Nature**_ by Robert Greene
 
-12.  _Eats, Shoots & Leaves: The Zero Tolerance Approach to Punctuation_ by Lynne Truss
+12. _Eats, Shoots & Leaves: The Zero Tolerance Approach to Punctuation_ by Lynne Truss
 
-13.  _**Coming Out of the Ice: An Unexpected Life**_ by Victor Herman
+13. _**Coming Out of the Ice: An Unexpected Life**_ by Victor Herman
 
-	    1.  One of the most powerful and moving books I have ever read. Victor Herman might be the toughest person to have ever lived. We can all find inspiration through him.
-
+    1.  One of the most powerful and moving books I have ever read. Victor Herman might be the toughest person to have ever lived. We can all find inspiration through him.
 
 ## 2020
 
@@ -63,7 +63,6 @@ This post will capture the books I have read over the years starting from 2019.
 4.  _The Spook Who Sat by the Door_ by Sam Greenlee
 
 5.  _Just Mercy_ by Bryan Stevenson
-
 
 ## 2021
 
@@ -105,38 +104,37 @@ This post will capture the books I have read over the years starting from 2019.
 
     1.  10/28/21 - 11/09/21
 
-10.  _The Daily Laws: 366 Meditations on Power, Seduction, Mastery, Strategy, and Human Nature_ by Robert Greene - **[In Progress]**
+10. _The Daily Laws: 366 Meditations on Power, Seduction, Mastery, Strategy, and Human Nature_ by Robert Greene - **[In Progress]**
 
-	    1.  11/01/21 - TBD
+    1.  11/01/21 - TBD
 
-11.  _Oedipus_ the King by Sophocles
+11. _Oedipus_ the King by Sophocles
 
-	    1.  11/04/21 - 11/15/21
+    1.  11/04/21 - 11/15/21
 
-12.  _The President and the Freedom Fighter_ by Brian Kilmeade
+12. _The President and the Freedom Fighter_ by Brian Kilmeade
 
-	    1.  A moving book about the life and work of Abraham Lincoln and Fredrick Douglas. Two unlikely friends in a critical time of American History. An accurate account of the two men, not glorifying them, instead truthfully outlining their actions, feelings, and views at various points in their lives. I was honestly more touched and moved by the life of Fredrick Douglas, a man who was born a slave, yet died a legend.
+    1.  A moving book about the life and work of Abraham Lincoln and Fredrick Douglas. Two unlikely friends in a critical time of American History. An accurate account of the two men, not glorifying them, instead truthfully outlining their actions, feelings, and views at various points in their lives. I was honestly more touched and moved by the life of Fredrick Douglas, a man who was born a slave, yet died a legend.
 
-	    2.  11/10/21 - 11/23/21
+    2.  11/10/21 - 11/23/21
 
-13.  _Mastery_ by Robert Greene - **[In Progress]**
+13. _Mastery_ by Robert Greene - **[In Progress]**
 
-	    1.  Rereading this book for the second time
+    1.  Rereading this book for the second time
 
-	    2.  11/27/21 - TBD
+    2.  11/27/21 - TBD
 
-14.  _Uniquely Human: A Different Way of Seeing Autism_ by Barry M. Prizant - **[In Progress]**
+14. _Uniquely Human: A Different Way of Seeing Autism_ by Barry M. Prizant - **[In Progress]**
 
-	    1.  12/03/21 - TBD
+    1.  12/03/21 - TBD
 
-15.  _The Book of Five Rings_ by Miyamoto Musashi - **[In Progress]**
+15. _The Book of Five Rings_ by Miyamoto Musashi - **[In Progress]**
 
-	    1.  12/15/21 - TBD
+    1.  12/15/21 - TBD
 
-16.  _Meditations_ by Marcus Aurelius - **[In Progress]**
+16. _Meditations_ by Marcus Aurelius - **[In Progress]**
 
-	    1.  N/A - TBD
-
+    1.  N/A - TBD
 
 # Books to Read
 
@@ -158,4 +156,4 @@ This post will capture the books I have read over the years starting from 2019.
 
 9.  A New World by Eckhart Tolle
 
-10.  Macroeconomics: Principles, Applications, and Tools
+10. Macroeconomics: Principles, Applications, and Tools

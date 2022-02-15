@@ -18,6 +18,7 @@ tag:
   - Job Search
 header:
   overlay_image: "/assets/images/what-is-interview-prep-1.jpg"
+  teaser: "/assets/images/what-is-interview-prep-1.jpg"
 ---
 
 # Problems With the Interviewing Process
@@ -34,12 +35,11 @@ So what are the right questions? These are questions that allow the candidate to
 
 In these situations, it's your responsibility to find a way to display your superb engineering skills. The challenge may be daunting, but there are several ways to display your skills, even when being asked bad questions. To help the flow of the interview, you can :
 
--   Ask the interviewer to elaborate
+- Ask the interviewer to elaborate
 
--   Guide the questions to a familiar topic
+- Guide the questions to a familiar topic
 
--   Steer the conversation to questions of mutual interest.
-
+- Steer the conversation to questions of mutual interest.
 
 Techniques like these push the interviewer to ask you questions that allow you to display your arsenal of skills. Even if you have a bad interviewer, with the right techniques, you can still have a good interview.
 
@@ -113,7 +113,6 @@ While interviewing, make sure you are keeping the following in mind.
 
 5.  **Smile**. When I am focusing I have the angriest face in the world. When someone is meeting you for the first time, make sure you put on a smile frequently. Not smiling shouldn’t negatively impact you, but being friendly will only positively impact your chances of getting the job.
 
-
 ## How To Prepare
 
 ### 1. Mock Interviews With a Qualified Interviewer
@@ -121,7 +120,6 @@ While interviewing, make sure you are keeping the following in mind.
 1.  Find someone in the technical space who might have experience conducting interviews. You’re going to want someone who has worked or hired for the position you are currently pursuing.
 
 2.  Mock interviews will help candidates get some jitters out of the way, along with gaining practice for interviews in an environment that won’t negatively affect their employment chances.
-
 
 ### 2. Going over Real And Mock Interviews
 
@@ -134,7 +132,6 @@ While interviewing, make sure you are keeping the following in mind.
 4.  Finding these weaknesses in your game is necessary. **Do not** go into the next interview until you have fixed the mistakes from your previous interviews.
 
     1.  It is better to spend more time in practice, getting better, gaining confidence and improving, than it is to go into multiple interviews making the same mistakes, and failing every time.
-
 
 ### 3. Figuring out What Skills and Technologies You Need to Work On
 

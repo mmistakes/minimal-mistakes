@@ -18,6 +18,7 @@ tag:
   - Job Search
 header:
   overlay_image: "/assets/images/how-college-fails-1.jpg"
+  teaser: "/assets/images/how-college-fails-1.jpg"
 ---
 
 # Where College Fails Students

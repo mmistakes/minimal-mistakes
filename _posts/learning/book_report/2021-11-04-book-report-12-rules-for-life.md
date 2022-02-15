@@ -7,6 +7,7 @@ permalink: /categories/learning/book_report/12_rules_for_life
 toc: true
 header:
   image: "/assets/images/categories/learning/book_reports/12-rules-for-life.jpg"
+  teaser: "/assets/images/categories/learning/book_reports/12-rules-for-life.jpg"
 ---
 
 # A Quick Glance
@@ -18,11 +19,10 @@ Jordan Peterson is a wonderful author who has many great points. Throughout his 
 Peterson utilizes various scriptures such as the Bible to make his point. In a few cases, the long, complex, and sometimes draw out points pack a punch, but more often than not, they leave the reader lost and confused. When Peterson attempts to provide a thorough explanation of his rationale for his readers, usually, one of three things happens.
 
 1.  He explains a real-world occurrence and highlights its implications for his message (Rule 1: Stand up straight with your shoulders back).
-    
+
 2.  He goes off on a tangent trying to let the readers into his genius, which can leave the reader lost or confused (Rule 7: Pursue what is meaningful (not what is expedient)).
-    
+
 3.  He makes bold claims, highlights the studies that support his claims in his index, and asks the readers to trust his rationale (Rule 11: Do not bother children when they are skateboarding).
-    
 
 Personally, I am quite alright with the 1st and 3rd styles of explanation. Although on some occasions, the data and studies he references are out of date (more on that later). My issue oftentimes was with the 2nd style of explanation. I would often find myself 30 pages into the chapter, and unable to understand how this deep dive into a specific part of the bible had relevance to the theme of the chapter.
 
@@ -31,13 +31,12 @@ Personally, I am quite alright with the 1st and 3rd styles of explanation. Altho
 Although comparisons can oftentimes be counterproductive, I learned something about Peterson’s style, and about my favorite author, Robert Greene’s style while reading this book. I am a great fan of Greene’s work, partly because of its simplicity. In most cases, Greene does the following when making a point:
 
 1.  He picks out a real-world event that the reader can easily grasp (often a story throughout history, something that actually happened), and goes through it in vivid detail.
-    
+
 2.  He makes his point.
-    
+
 3.  He ties his point to the story you just read.
-    
+
 4.  He captures the point, its implementation, its use cases, its rebuttals, and any other thoughts.
-    
 
 In this way, all the information someone needs to grasp Greene’s point is right in that chapter. The real-world examples he gives, their detailed analysis, his honest critiques and edge-cases to his point, and his overall simplicity are part of what makes Greene such a great author. His logic is airtight, clearly explained, evident, and easy to digest. _Greene writes for the everyday person._
 
@@ -65,12 +64,11 @@ Although Peterson makes great points, and overall, I agree with each of his rule
 
 Peterson talks about various topics (which I often found difficult to relate to his main topic) and claims that “men are more interested in things, while women are more interested in people.” He leverages studies done in Scandanavian countries to make his point. But the issue is, those studies have been strongly opposed by the scientific community, and furthermore, the data used in those studies was also misleading and inaccurate. I won’t go into great detail about the issues in the study, instead, you can reference the following articles:
 
--   [Vox](https://www.vox.com/2017/8/11/16127992/google-engineer-memo-research-science-women-biology-tech-james-damore)
-    
--   [Buzzfeed News](https://www.buzzfeednews.com/article/stephaniemlee/women-stem-gender-equality-paradox-correction)
-    
--   [Slate](https://slate.com/technology/2020/02/women-stem-innate-disinterest-debunked.html)
-    
+- [Vox](https://www.vox.com/2017/8/11/16127992/google-engineer-memo-research-science-women-biology-tech-james-damore)
+
+- [Buzzfeed News](https://www.buzzfeednews.com/article/stephaniemlee/women-stem-gender-equality-paradox-correction)
+
+- [Slate](https://slate.com/technology/2020/02/women-stem-innate-disinterest-debunked.html)
 
 ## The Patriarchy
 
@@ -86,22 +84,21 @@ He then goes on to knit-pick a few examples where men have invented products to 
 
 It’s easy to look at a few examples of men who did great things for women and society, obviously, there are thousands of other examples of this. But I am fairly confident that for each example you find of men (and in western culture, white men) doing great things for women and society, you will find at least 2 examples of men putting other groups down for their personal gains. Shall we begin:
 
--   Oppression towards people of color (there aren’t many examples of this, huh?)
-    
-    -   Slavery
-        
-    -   Jim Crow
-        
-    -   Criminalization
-        
--   Oppression towards women
-    
-    -   Not allowing them to vote (Until 1920)
-        
-    -   Not allowing them to file for divorce (Until 1937)
-        
-    -   [Wage Gap](https://www.investopedia.com/history-gender-wage-gap-america-5074898)
-        
+- Oppression towards people of color (there aren’t many examples of this, huh?)
+
+  - Slavery
+
+  - Jim Crow
+
+  - Criminalization
+
+- Oppression towards women
+
+  - Not allowing them to vote (Until 1920)
+
+  - Not allowing them to file for divorce (Until 1937)
+
+  - [Wage Gap](https://www.investopedia.com/history-gender-wage-gap-america-5074898)
 
 To argue that white men didn’t enslave and put down people of color from the inception of this country until very recently (and arguably, until this day), is preposterous. From slave labor to filling prisons up with people of color for cheap labor, white men have gained power, wealth, and status.
 
@@ -121,12 +118,11 @@ The _12 Rules for Life_ aren’t simply a collection of rules that we must follo
 
 The purpose of this great book can be captured by the first three questions he asked and answers:
 
--   “_What shall I do tomorrow?… The most good possible in the shortest period of time.”_
-    
--   _“What shall I do next year? Try to ensure that the good I do then will be exceeded only the by the good I do the year after that.”_
-    
--   _“What shall I do with my life? Aim for Paradise, and concentrate on today.”_
-    
+- “_What shall I do tomorrow?… The most good possible in the shortest period of time.”_
+
+- _“What shall I do next year? Try to ensure that the good I do then will be exceeded only the by the good I do the year after that.”_
+
+- _“What shall I do with my life? Aim for Paradise, and concentrate on today.”_
 
 The lessons that I have learned from Peterson will stay with me. I hope to be the light, and live my life in it. The lessons learned from Peterson will allow me to make the world better in my own way, just as he intended.
 

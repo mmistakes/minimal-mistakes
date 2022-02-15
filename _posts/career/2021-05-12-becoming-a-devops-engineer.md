@@ -12,6 +12,7 @@ tag:
   - Job Search
 header:
   image: "/assets/images/iot-1.png"
+  teaser: "/assets/images/iot-1.png"
 ---
 
 # Want to Work in Tech?
@@ -22,16 +23,15 @@ If you are looking to start a career in tech, look no further. Tech is a very br
 
 A DevOps engineer is an engineer that is crucial in any tech team. They often wear many hats. A DevOps engineer can be responsible for the following:
 
--   Creating a companies technical infrastructure on the cloud (AWS, Azure, GCP, etc).
+- Creating a companies technical infrastructure on the cloud (AWS, Azure, GCP, etc).
 
--   Write scripts to automate repetitive tasks (Bash, Python).
+- Write scripts to automate repetitive tasks (Bash, Python).
 
--   Helping engineering teams create CI/CD pipelines so that they may have an easy time testing and deploying their applications.
+- Helping engineering teams create CI/CD pipelines so that they may have an easy time testing and deploying their applications.
 
--   Containerizing applications for uniformity (Docker, Kubernetes).
+- Containerizing applications for uniformity (Docker, Kubernetes).
 
--   Creating cloud infrastructure in an automated fashion (Terraform, Ansible).
-
+- Creating cloud infrastructure in an automated fashion (Terraform, Ansible).
 
 Overall a DevOps engineer works with various engineering teams. Their goal is to create a healthy ecosystem for all of the companies applications, pipelines, processes, and anything else that may be technically related. They should also develop tools to free of the time of individual engineering teams. These tools should be self-servicing and allow the engineering teams to be more efficient. DevOps engineers are essentially the backbone of the engineering team, they are the glue that holds everything together.
 
@@ -53,16 +53,15 @@ A great way to learn Python is through Corey Shafer’s YouTube channel. He is a
 
 A few libraries that new Python programmers should consider learning are:
 
--   Requests
+- Requests
 
--   Logging
+- Logging
 
--   Sys or OS
+- Sys or OS
 
--   Pandas
+- Pandas
 
--   NumPy
-
+- NumPy
 
 ### Jupyter Notebook
 
@@ -84,42 +83,41 @@ I would advise most new engineers to start by learning AWS. In my opinion, it is
 
 Here are a few crucial technologies to learn:
 
--   Users and Permissions
+- Users and Permissions
 
-    -   IAM Policies and Roles
+  - IAM Policies and Roles
 
--   Computing
+- Computing
 
-    -   EC2
+  - EC2
 
-    -   Volumes
+  - Volumes
 
-    -   Snapshots
+  - Snapshots
 
-    -   AMI’s
+  - AMI’s
 
-    -   Securite Groups
+  - Securite Groups
 
-    -   Load Balancing
+  - Load Balancing
 
--   Cloud Storage
+- Cloud Storage
 
-    -   S3
+  - S3
 
--   Networking
+- Networking
 
-    -   Route53
+  - Route53
 
-    -   VPC
+  - VPC
 
--   Serverless
+- Serverless
 
-    -   Lambda Functions
+  - Lambda Functions
 
--   Monitoring
+- Monitoring
 
-    -   Cloud Watch
-
+  - Cloud Watch
 
 # Popular Ideologies and Related Technologies
 
@@ -154,12 +152,11 @@ Ansible is a wonderful tool that is used for server configuration and automation
 
 Feel free to check out these technologies as well:
 
--   NGINX - Networking
+- NGINX - Networking
 
--   ELK - Data Visualization
+- ELK - Data Visualization
 
--   Zabbix - Server health/monitoring
-
+- Zabbix - Server health/monitoring
 
 # Career Moves
 

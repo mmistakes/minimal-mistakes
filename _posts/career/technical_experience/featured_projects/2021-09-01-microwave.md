@@ -14,18 +14,19 @@ tag:
   - personal
   - python
   - C++
-  - C 
+  - C
   - market_data
   - trading
   - Microwave
   - low_latency
 header:
   overlay_image: "/assets/images/categories/career/technical_experience/featured_projects/microwave_1.jpg"
+  teaser: "/assets/images/categories/career/technical_experience/featured_projects/microwave_1.jpg"
 ---
 
 # Communicating Not Heating
 
-While Microwaves are most commonly associated with heating your food, that is not the only capacity that I have worked with Microwaves.  In trading, Microwaves are commonly used to send network packets. In most cases, they are faster than sending packets over a fiber optic cable (let's call it “the wire”).
+While Microwaves are most commonly associated with heating your food, that is not the only capacity that I have worked with Microwaves. In trading, Microwaves are commonly used to send network packets. In most cases, they are faster than sending packets over a fiber optic cable (let's call it “the wire”).
 
 Microwaves are like Ferraris and the wire is like a minivan. Microwaves are faster but you’re only going to be able to send a small amount of data; the wire is slower but allows for you to send more data (throughput vs latency).
 
@@ -39,7 +40,7 @@ In my experience with Microwaves, I have closely studied and understood the inte
 
 While writing the code for the communication of microwave instances is critical, so is the infrastructure set up of these instances. My role was to configure the instances and analyze the infrastructure to ensure reliability, performance, and visibility.
 
-Under the leadership of our senior microwave developers, I learned an incredible amount regarding the network architecture related to microwaves. I was taught how to test the instances with various configurations and understand the network architecture deeply. After testing new configurations with various versions of our applications, I  automated the deployment of the instances. I utilized **Ansible** to deploy the instances and validate communication between instances.
+Under the leadership of our senior microwave developers, I learned an incredible amount regarding the network architecture related to microwaves. I was taught how to test the instances with various configurations and understand the network architecture deeply. After testing new configurations with various versions of our applications, I automated the deployment of the instances. I utilized **Ansible** to deploy the instances and validate communication between instances.
 
 ## Performance Tuning
 
@@ -47,6 +48,6 @@ Unlike many other applications, it is very difficult to replicate microwaves due
 
 While there is performance tuning that occurs directly in the application, there is also performance tuning that occurs at an infrastructure level. I would use tools like **Corvil** to analyze network packets and study patterns to understand the behaviors that the doctor was explaining. While the doctor worked directly on the application, my impact was on the core infrastructure that connected the applications.
 
-Working on low latency applications and infrastructure from a networking perspective was extremely complex, rewarding, and insightful. It required me to pay great attention to detail  and to have the willingness to jump headfirst into rabbit holes without knowing what I would find (if anything). The knowledge I gained from working on such a complex and sensitive network is immeasurable, and in my next role, I would love to write the application code for a network-sensitive application, whether it be for microwaves or something just as complex and intriguing.
+Working on low latency applications and infrastructure from a networking perspective was extremely complex, rewarding, and insightful. It required me to pay great attention to detail and to have the willingness to jump headfirst into rabbit holes without knowing what I would find (if anything). The knowledge I gained from working on such a complex and sensitive network is immeasurable, and in my next role, I would love to write the application code for a network-sensitive application, whether it be for microwaves or something just as complex and intriguing.
 
 [^acknowledgment]: I would like to thank Dr. Nguyen for mentoring me during my time at Societe Generale. He was a wonderful teacher who was patient, kind, and encouraging. I learned a great deal about networking, programming, microwaves, technology, and above all, the impact you can have on your colleagues.

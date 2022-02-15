@@ -14,6 +14,7 @@ tags:
   - scaling
 header:
   overlay_image: "/assets/images/categories/cryptocurrency_and_the_blockchain/avax-subnet-1.jpeg"
+  teaser: "/assets/images/categories/cryptocurrency_and_the_blockchain/avax-subnet-1.jpeg"
   caption: Photo by **[John Robert-Nicoud](https://www.pexels.com/@john-robert-nicoud-5556?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)** from **[Pexels](https://www.pexels.com/photo/man-performing-snowboard-stunts-38242/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)**
   actions:
     - label: "Link to Podcast"

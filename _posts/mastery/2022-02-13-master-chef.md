@@ -12,6 +12,7 @@ tags:
   - master_chef
 header:
   image: "/assets/images/categories/mastery/chef-kitchen.jpeg"
+  teaser: "/assets/images/categories/mastery/chef-kitchen.jpeg"
   caption: "Photo by **[Adrien Olichon](https://www.pexels.com/@adrien-olichon-1257089?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)** from **[Pexels](https://www.pexels.com/photo/man-preparing-seafood-2537606/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)**"
 ---
 

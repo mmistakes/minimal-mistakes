@@ -14,9 +14,10 @@ tag:
   - personal
   - python
   - C++
-  - C 
+  - C
 header:
   overlay_image: "/assets/images/categories/career/technical_experience/general/programming_languages_1.jpg"
+  teaser: "/assets/images/categories/career/technical_experience/general/programming_languages_1.jpg"
 ---
 
 # Overview
@@ -33,24 +34,21 @@ Python holds a special place in my heart as its the first programming language I
 
 **I have worked with** _**Python**_ **in the following capacity:**
 
--   I have used Python to write code in Production. Some of the libraries I leveraged were Pandas, NumPy, JSON, Requests, and Logging.
-    
--   I have used Python for ETL, data engineering, monitoring, general scripting, automation, releases, and many other ways.
-    
+- I have used Python to write code in Production. Some of the libraries I leveraged were Pandas, NumPy, JSON, Requests, and Logging.
+
+- I have used Python for ETL, data engineering, monitoring, general scripting, automation, releases, and many other ways.
 
 **I know** _**Python**_ **to the following level:**
 
--   I understand the core fundamentals of Python and utilize them to write simple, clean, and efficient code.
-    
--   I can easily express my ideas in Python without having to refer to external resources (AKA Google).
-    
+- I understand the core fundamentals of Python and utilize them to write simple, clean, and efficient code.
+
+- I can easily express my ideas in Python without having to refer to external resources (AKA Google).
 
 **This is how I would like to continue my growth and understanding of** _**Python:**_
 
--   I love to write a library in C and utilize it in my Python code.
-    
--   I would love to contribute to an open-source library like Pandas or Request.
-    
+- I love to write a library in C and utilize it in my Python code.
+
+- I would love to contribute to an open-source library like Pandas or Request.
 
 # C++
 
@@ -60,57 +58,51 @@ Learning C++ as a developer and an operation engineer really opened my eyes to t
 
 **I have worked with** _**C++**_ **in the following capacity:**
 
--   I have supported, configured, monitored, deployed, optimized, and tested low-latency trading applications written in C++.
-    
--   I have written C++ code in a controlled environment to ensure I understand its core fundamentals and vast features.
-    
+- I have supported, configured, monitored, deployed, optimized, and tested low-latency trading applications written in C++.
+
+- I have written C++ code in a controlled environment to ensure I understand its core fundamentals and vast features.
 
 **I know** _**C++**_ **to the following level:**
 
--   I understand the dependencies, features, components, and use cases of C++.
-    
--   I can write code in C++, leverage a make file for compilation, and test my application for efficiency and performance.
-    
+- I understand the dependencies, features, components, and use cases of C++.
+
+- I can write code in C++, leverage a make file for compilation, and test my application for efficiency and performance.
 
 **This is how I would like to continue my growth and understanding of** _**C++:**_
 
--   I would love the opportunity to write C++ code in production.
-    
--   I would like to utilize popular C++ libraries in my code (STL, POCO, Boost, etc).
-    
+- I would love the opportunity to write C++ code in production.
+
+- I would like to utilize popular C++ libraries in my code (STL, POCO, Boost, etc).
 
 # C
 
-I often find people categorizing C++ and C  but only talking about C++. C deserves its own recognition. In fact, I prefer C over C++. I often find myself (and others) writing unnecessarily complex code in C++ that can be written more simply by leveraging C.
+I often find people categorizing C++ and C but only talking about C++. C deserves its own recognition. In fact, I prefer C over C++. I often find myself (and others) writing unnecessarily complex code in C++ that can be written more simply by leveraging C.
 
-After learning C++, I decided to learn C thinking it would “be the same thing.” I was pleasantly surprised when it wasn’t. I thoroughly enjoy the design of C and its implementation, and I wish more people wrote C code in C++  and only used objects and templates where needed.
+After learning C++, I decided to learn C thinking it would “be the same thing.” I was pleasantly surprised when it wasn’t. I thoroughly enjoy the design of C and its implementation, and I wish more people wrote C code in C++ and only used objects and templates where needed.
 
 C’s simplicity is what makes it stand out to me and millions of other developers. It is no surprise that this easy-to-use language was utilized to build the world's most powerful operating system.
 
 **I have worked with** _**C**_ **in the following capacity:**
 
--   I have spent many hours reading Linux Kernel Code in C and tinkering with it. By playing around with the kernel, I was able to learn more about Linux and C together (two things that I love).
-    
--   I have written C code in a controlled environment to ensure I understand its core fundamentals and vast features.
-    
--   I learned coding best practices when learning C, and I learned to write clean, simple code because of it.
-    
+- I have spent many hours reading Linux Kernel Code in C and tinkering with it. By playing around with the kernel, I was able to learn more about Linux and C together (two things that I love).
+
+- I have written C code in a controlled environment to ensure I understand its core fundamentals and vast features.
+
+- I learned coding best practices when learning C, and I learned to write clean, simple code because of it.
 
 **I know** _**C**_ **to the following level:**
 
--   I understand the ideologies and best practices of C and learned to keep my code simple in other languages because of it.
-    
--   I can write code in C, leverage a make file for compilation, and test my application for efficiency and performance.
-    
+- I understand the ideologies and best practices of C and learned to keep my code simple in other languages because of it.
+
+- I can write code in C, leverage a make file for compilation, and test my application for efficiency and performance.
 
 **This is how I would like to continue my growth and understanding of** _**C:**_
 
--   It is a career goal of mine to contribute  _meaningful_ code to the Linux Kernel.
-    
--   I would love to write a library in C and utilize it in Python.
-    
--   I would like the opportunity to write production-level applications in C.
-    
+- It is a career goal of mine to contribute _meaningful_ code to the Linux Kernel.
+
+- I would love to write a library in C and utilize it in Python.
+
+- I would like the opportunity to write production-level applications in C.
 
 # Go
 
@@ -120,26 +112,23 @@ Although I am new to Go, I can see myself working as a Go developer in the futur
 
 **I have worked with** _**Go**_ **in the following capacity:**
 
--   I have utilized applications in Go such as Terraform and understand them at a deep level. This understanding gives me some insight into the capabilities and functionalities of Go.
-    
--   I have worked through the [“Go By Example”](https://gobyexample.com/) syllabus.
-    
--   I have written code in Go to grasps all of its built-in features.
-    
+- I have utilized applications in Go such as Terraform and understand them at a deep level. This understanding gives me some insight into the capabilities and functionalities of Go.
+
+- I have worked through the [“Go By Example”](https://gobyexample.com/) syllabus.
+
+- I have written code in Go to grasps all of its built-in features.
 
 **I know** _**Go**_ **to the following level:**
 
--   I understand _many_ best practices within Go, as well as the general concepts within the language.
-    
--   I understand when to use specific Go features to conform to best practices and maximize efficiency.
-    
--   I understand how to write clean, efficient code, test it, compile it, and deploy it.
-    
+- I understand _many_ best practices within Go, as well as the general concepts within the language.
+
+- I understand when to use specific Go features to conform to best practices and maximize efficiency.
+
+- I understand how to write clean, efficient code, test it, compile it, and deploy it.
 
 **This is how I would like to continue my growth and understanding of** _**Go:**_
 
--   I would like the opportunity to write production-level code in Go down the road.
-    
+- I would like the opportunity to write production-level code in Go down the road.
 
 # Scala
 
@@ -151,51 +140,45 @@ I have enjoyed learning functional programming concepts and ideologies. I hope t
 
 **I have worked with** _**Scala**_ **in the following capacity:**
 
--   I have leveraged both OOP and functional programming in Scala.
-    
--   I have utilized SBT for package management, configuration, and runtime.
-    
--   I have written code in Scala to grasp all of its built-in features.
-    
+- I have leveraged both OOP and functional programming in Scala.
+
+- I have utilized SBT for package management, configuration, and runtime.
+
+- I have written code in Scala to grasp all of its built-in features.
 
 **I know** _**Scala**_ **to the following level:**
 
--   I understand best practices as they relate to functional programming within Scala.
-    
--   I understand how to integrate OOP and functional programming to get the best of both worlds.
-    
--   I understand how to write clean, efficient code, test it, compile it, and deploy it.
-    
+- I understand best practices as they relate to functional programming within Scala.
+
+- I understand how to integrate OOP and functional programming to get the best of both worlds.
+
+- I understand how to write clean, efficient code, test it, compile it, and deploy it.
 
 **This is how I would like to continue my growth and understanding of** _**Scala:**_
 
--   I would love to write production code for a data pipeline using Scala.
-    
--   I would like to familiarize myself with popular Scala frameworks and libraries.
-    
+- I would love to write production code for a data pipeline using Scala.
+
+- I would like to familiarize myself with popular Scala frameworks and libraries.
 
 # Bash
 
-Good old Bash, thank you for saving us all countless hours. Although it is not considered a programming language, Bash has saved programmers lots of time. I have used Bash in many ways, and I am  grateful for its existence.
+Good old Bash, thank you for saving us all countless hours. Although it is not considered a programming language, Bash has saved programmers lots of time. I have used Bash in many ways, and I am grateful for its existence.
 
 **I have worked with** _**Bash**_ **in the following capacity:**
 
--   I have written hundreds of scripts in Bash for basic tasks, validation, and deployment.
-    
--   I have worked with complex Bash scripts written internally and by the open-source community.
-    
+- I have written hundreds of scripts in Bash for basic tasks, validation, and deployment.
+
+- I have worked with complex Bash scripts written internally and by the open-source community.
 
 **I know** _**Bash**_ **to the following level:**
 
--   I can write Bash code with relative ease (I still need Google).
-    
--   I am aware of hidden features and certain gotcha’s.
-    
+- I can write Bash code with relative ease (I still need Google).
+
+- I am aware of hidden features and certain gotcha’s.
 
 **This is how I would like to continue my growth and understanding of** _**Bash:**_
 
--   I simply want to keep using this powerful tool to make my life easier.
-    
+- I simply want to keep using this powerful tool to make my life easier.
 
 # Lua
 
@@ -203,14 +186,12 @@ Lua is a gem hidden deep within the glorious application known as NGINX and some
 
 **I have worked with** _**Lua**_ **in the following capacity:**
 
--   I have written a few Lua scripts to add custom functionality within NGINX.
-    
+- I have written a few Lua scripts to add custom functionality within NGINX.
 
 **I know** _**Lua**_ **to the following level:**
 
--   I know the basic features of LUA and process the knowledge to use those basic features to make NGINX more robust.
-    
+- I know the basic features of LUA and process the knowledge to use those basic features to make NGINX more robust.
 
 **This is how I would like to continue my growth and understanding of** _**Lua:**_
 
--   Like Bash, I simply want to keep using this powerful language to make my life easier.
+- Like Bash, I simply want to keep using this powerful language to make my life easier.

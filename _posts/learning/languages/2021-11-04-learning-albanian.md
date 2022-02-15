@@ -7,8 +7,8 @@ permalink: /categories/learning/languages/learning_albanian
 toc: true
 header:
   image: "/assets/images/categories/learning/languages/albania-1.png"
+  teaser: "/assets/images/categories/learning/languages/albania-1.png"
 ---
-
 
 # Overview
 
@@ -22,163 +22,155 @@ A section capturing specific topics.
 
 ### To Be - Folja Jam
 
--   Une Jam - I am
+- Une Jam - I am
 
--   Ti Je - You are
+- Ti Je - You are
 
--   AI/ajo Eshte: He/She/ It is
+- AI/ajo Eshte: He/She/ It is
 
--   Ne Jemi - We are
+- Ne Jemi - We are
 
--   Ju Jeni - You are
+- Ju Jeni - You are
 
--   Ata/ato Jane - They Are (masculine, femanine)
-
+- Ata/ato Jane - They Are (masculine, femanine)
 
 ### To Have - Folja Kam
 
--   Une Kam - I have
+- Une Kam - I have
 
--   Ti Ke (Singular) - You have
+- Ti Ke (Singular) - You have
 
--   Ai/ajo ka - He/She/It has
+- Ai/ajo ka - He/She/It has
 
--   Ne Kemi - We have
+- Ne Kemi - We have
 
--   Ju Keni (Plural) - You have
+- Ju Keni (Plural) - You have
 
--   Ata/Ato Kane - They have
-
+- Ata/Ato Kane - They have
 
 ### Conjugation of Most Albanian Verbs
 
 Present Tense:
 
--   For singular: -j, -n, -n
+- For singular: -j, -n, -n
 
--   For Plural: -jme, -ni, -jne
+- For Plural: -jme, -ni, -jne
 
--   to learn - mesoj
+- to learn - mesoj
 
--   Singular:
+- Singular:
 
-    -   Une meso-j ...
+  - Une meso-j ...
 
-    -   Ti meso-n ...
+  - Ti meso-n ...
 
-    -   Ai Ajo meso-n
+  - Ai Ajo meso-n
 
--   Plural
+- Plural
 
-    -   Ne meso-jme
+  - Ne meso-jme
 
-    -   Ju meso-ni
+  - Ju meso-ni
 
-    -   Ata/Ato meso-jne
-
+  - Ata/Ato meso-jne
 
 ### Rules of Conjugation
 
--   Une studioj
+- Une studioj
 
--   Ti Studion
+- Ti Studion
 
--   Ai/ajo studion
+- Ai/ajo studion
 
--   Ne studiojme
+- Ne studiojme
 
--   Ju studioni
+- Ju studioni
 
--   Ata/Ato studiojne
+- Ata/Ato studiojne
 
--   Une Jam Abdul
+- Une Jam Abdul
 
--   Une Kam nje qen (dog) dhe (and) nje mace (cat), une punoj (work) dhe studioj (study) nje France.
-
+- Une Kam nje qen (dog) dhe (and) nje mace (cat), une punoj (work) dhe studioj (study) nje France.
 
 ### Conjugation of Verb To Go - Shkoj
 
--   Common Verbs:
+- Common Verbs:
 
-    -   To be - jam
+  - To be - jam
 
-    -   To have - Kam
+  - To have - Kam
 
-    -   To go - Shkoj
+  - To go - Shkoj
 
-    -   To learn - mesoj
+  - To learn - mesoj
 
-    -   To study - studioj
+  - To study - studioj
 
-    -   To work - punoj
+  - To work - punoj
 
-    -   To accept - pranoj
+  - To accept - pranoj
 
--   To Go - Shkoj
+- To Go - Shkoj
 
-    -   Une shkoj ne Paris neser (tomorrow)
+  - Une shkoj ne Paris neser (tomorrow)
 
-    -   Ti shkon ne Londer neser.
+  - Ti shkon ne Londer neser.
 
-    -   Ai/Ajo shkon ne Gjeneve sot (today).
+  - Ai/Ajo shkon ne Gjeneve sot (today).
 
-    -   Ne shkojme ne shkolle (school) sot.
+  - Ne shkojme ne shkolle (school) sot.
 
-    -   Ju shkoni ne Shqiperi (Albania) neser? Po une shkoj ne shqiperi.
+  - Ju shkoni ne Shqiperi (Albania) neser? Po une shkoj ne shqiperi.
 
-    -   Ata/Ato shkojne ne France.
-
+  - Ata/Ato shkojne ne France.
 
 ### Negation in Albanian
 
 Negation can be put by putting jo before the verb.
 
--   Jo - No
+- Jo - No
 
--   Nuk/ s' - Not
+- Nuk/ s' - Not
 
--   I don't like it - Nuk e dua
+- I don't like it - Nuk e dua
 
--   I can't go there - Nuk mund (can) ta shkoj atje
+- I can't go there - Nuk mund (can) ta shkoj atje
 
--   She is not there - Ajo nuk ashte (it is) atje (there)
+- She is not there - Ajo nuk ashte (it is) atje (there)
 
--   This is not yours - Kjo nuk eshte e jotje
+- This is not yours - Kjo nuk eshte e jotje
 
--   I don't go - Une nuk shkoj
+- I don't go - Une nuk shkoj
 
--   He isn't here - Ai nuk eshte ketu
+- He isn't here - Ai nuk eshte ketu
 
--   I don't speak - une nuk flas
+- I don't speak - une nuk flas
 
--   She doesn't love - Ajo nuk dashuron
-
+- She doesn't love - Ajo nuk dashuron
 
 Orders can be giving using mos-
 
--   Don't smoke - mos pi duhan
+- Don't smoke - mos pi duhan
 
--   Don't go there - Mos shko atje
+- Don't go there - Mos shko atje
 
--   Do not enter - mos hyr
-
+- Do not enter - mos hyr
 
 ## Questions
 
 ### Basic Questions
 
--   What? - Cfare?
+- What? - Cfare?
 
--   How - Si?
+- How - Si?
 
--   Who? - Kush?
+- Who? - Kush?
 
--   Where? - Ku?
+- Where? - Ku?
 
--   When? - Kur?
+- When? - Kur?
 
--   Why? - Pse?
-
+- Why? - Pse?
 
 Pronoun + verb or verb + pronoun
 
@@ -186,32 +178,31 @@ Use "A" at the start of an interrogative sentence? A slet Shqip ti?
 
 ### Generic Questions
 
--   Kush jemi ne? - Who are we?
+- Kush jemi ne? - Who are we?
 
--   Kush eshte ajo? - Who is she?
+- Kush eshte ajo? - Who is she?
 
--   Kush je ti (sing)? - Who are you?
+- Kush je ti (sing)? - Who are you?
 
--   Kush jeni ju (Pl) ? - Who are you?
+- Kush jeni ju (Pl) ? - Who are you?
 
--   Si je ti (sing) - How are you?
+- Si je ti (sing) - How are you?
 
--   Si jeni ju (Pl)? How are you?
+- Si jeni ju (Pl)? How are you?
 
--   Where is she? Ku eshte ajo?
+- Where is she? Ku eshte ajo?
 
--   What is this? cfare eshte kjo (this)?
+- What is this? cfare eshte kjo (this)?
 
--   Why is this? Pse esthe kjo?
+- Why is this? Pse esthe kjo?
 
--   Where do you live? Ku jeton ti?
+- Where do you live? Ku jeton ti?
 
--   What time is it? Sa eshte ora?
+- What time is it? Sa eshte ora?
 
--   Where are you? Ku je ti?
+- Where are you? Ku je ti?
 
--   Can I help you? mund t'ju ndhimoj (help)?
-
+- Can I help you? mund t'ju ndhimoj (help)?
 
 Asking yes or no questions (Po, jo):
 
@@ -221,14 +212,13 @@ Does he have a new car? - Ka ai makine te re?
 
 ### Answering Questions
 
--   Ku jetoni ju? - Where do you live you? New York
+- Ku jetoni ju? - Where do you live you? New York
 
--   Si quheni ju? - How _ you?
+- Si quheni ju? - How \_ you?
 
--   A studion ai? Do he study? Jo
+- A studion ai? Do he study? Jo
 
--   A punon ajo? Do she work? Po
-
+- A punon ajo? Do she work? Po
 
 ## Albanian Articles and Prepositions
 
@@ -237,127 +227,119 @@ Does he have a new car? - Ka ai makine te re?
 Albanian Articles:
 Albanian doesn't have the word "the". They don't put anything before a noun, it has endings for nouns.
 
--   i (masc, sing.) - libri (the book), lapsi (the pen)
+- i (masc, sing.) - libri (the book), lapsi (the pen)
 
--   u (masc, sing) - shoku (the friend)
+- u (masc, sing) - shoku (the friend)
 
--   a (fem, sing) - vajza (the girl)
+- a (fem, sing) - vajza (the girl)
 
--   ja (fem, sing) - lulja (the flower).
-
+- ja (fem, sing) - lulja (the flower).
 
 ### Indefinite Articles in Albanian
 
 A, an in English - nje, disa(ca) in Albanina
 
--   nje (masc. sing) - nje telefon (a phone), nje makine (a car)
+- nje (masc. sing) - nje telefon (a phone), nje makine (a car)
 
--   Disa/ca (masc, pl) - disa or ca - disa/ca telefone (some phone)
+- Disa/ca (masc, pl) - disa or ca - disa/ca telefone (some phone)
 
--   Disa/ca (fem, pl) - disa/ca makina
-
+- Disa/ca (fem, pl) - disa/ca makina
 
 ### List of Albanian Articles
 
 Article List
 
--   a/ an - nje - nnje liber
+- a/ an - nje - nnje liber
 
--   some - disa/ca - disa libra
+- some - disa/ca - disa libra
 
--   of - e - nje liber e tij
-
+- of - e - nje liber e tij
 
 Masculine:
 
--   Singular - Nje shqiptar (an Albanian) /Nje Shok (a friend) - shqiptari/shoku
+- Singular - Nje shqiptar (an Albanian) /Nje Shok (a friend) - shqiptari/shoku
 
--   Plural - Disa/ca shqiptar (some Albanians) / Disa/ca shoke (some friends) - shqiptaret/shoket
-
+- Plural - Disa/ca shqiptar (some Albanians) / Disa/ca shoke (some friends) - shqiptaret/shoket
 
 Feminine:
 
--   Singular - Nje shqiptare, Nje Shoqe - shqiptarja/shoqja
+- Singular - Nje shqiptare, Nje Shoqe - shqiptarja/shoqja
 
--   Plural - Disa/ca shqiptare, Disa/ca shoque - shqiptaret/shoqet
-
+- Plural - Disa/ca shqiptare, Disa/ca shoque - shqiptaret/shoqet
 
 ### Using Albanian Prepositions
 
--   under: nen - nen makine, libre eshte nen tavoline (The book is under the table)
+- under: nen - nen makine, libre eshte nen tavoline (The book is under the table)
 
--   outside the house - jashte - Une jam jasthe shtepise (I am outside the house)
+- outside the house - jashte - Une jam jasthe shtepise (I am outside the house)
 
--   without me - pa - pa me
+- without me - pa - pa me
 
--   near - afer: Une shkoj afer Kew Gardens
+- near - afer: Une shkoj afer Kew Gardens
 
--   far - larg: Ne jemi larg nja Shqipëria
+- far - larg: Ne jemi larg nja Shqipëria
 
--   is - esthe: ajo esthe nje lule
+- is - esthe: ajo esthe nje lule
 
--   from - nja: Ato jane nja Pakistani
+- from - nja: Ato jane nja Pakistani
 
--   against - kunder: Kush esthe kunder ca punojate?
+- against - kunder: Kush esthe kunder ca punojate?
 
--   between - midis: Cfare esthe midis Paris dhe London?
+- between - midis: Cfare esthe midis Paris dhe London?
 
--   beyond - pertej: Mos shok pertej atje
+- beyond - pertej: Mos shok pertej atje
 
--   But - por: Por pse? pos pse nuk?
+- But - por: Por pse? pos pse nuk?
 
--   in - ne: Ti je ne zemer ime
+- in - ne: Ti je ne zemer ime
 
--   on - mbi:
+- on - mbi:
 
--   round - perreth
+- round - perreth
 
--   since - qysh
+- since - qysh
 
--   until - deri
+- until - deri
 
--   as - si
-
+- as - si
 
 ## Nouns and Adjectives
 
 ### Understanding Albanian Nouns
 
--   One woman - nje grua
+- One woman - nje grua
 
--   black monkey - majmun i zi
+- black monkey - majmun i zi
 
--   my school - shkolla ime
+- my school - shkolla ime
 
--   buy a pen - blej nje stilolaps
+- buy a pen - blej nje stilolaps
 
--   first love - dashuria e pare
+- first love - dashuria e pare
 
--   a computer - nje kompjuter
+- a computer - nje kompjuter
 
--   a bicycle - nje biciklete
+- a bicycle - nje biciklete
 
--   an apple - nje molle
+- an apple - nje molle
 
--   some computers - disa kompjutra
+- some computers - disa kompjutra
 
--   some bicycle - disa bicikleta
+- some bicycle - disa bicikleta
 
--   some apples - disa molla
-
+- some apples - disa molla
 
 In Albanian, there are 5 cases of nouns.
 
-1.  Emorore - Nominative* - Designation (it names the subject in a sentence)
+1.  Emorore - Nominative\* - Designation (it names the subject in a sentence)
 
-2.  Gjinore - Genitive* - Description (it qualifies the word it modifies, possession)
+2.  Gjinore - Genitive\* - Description (it qualifies the word it modifies, possession)
 
-3.  Dhanore - Dative* - Reception (it expresses the indirect object of the verb)
+3.  Dhanore - Dative\* - Reception (it expresses the indirect object of the verb)
 
-4.  Kallzore - Accusative* Limitation (the action extends to and its limited to the object)
+4.  Kallzore - Accusative\* Limitation (the action extends to and its limited to the object)
 
-5.  Rrjedhore - Ablative* Separation (is used after certain prepositions: pre-from, by)
-
+5.  Rrjedhore - Ablative\* Separation (is used after certain prepositions: pre-from, by)
 
 ### Table of Nouns
 
@@ -371,109 +353,103 @@ In Albanian, there are 5 cases of nouns.
 
 3.  Rrjedhore - Fsharari vjen prej malit (the villager comes from the mountain)
 
-
 ### Understanding Albanian Adjectives
 
 An adjective must agree with the gender of the noun.
 
--   Masculine to feminine gender
+- Masculine to feminine gender
 
-    -   Ky eshte eqni Im **i** vogel (This is my little dog)
+  - Ky eshte eqni Im **i** vogel (This is my little dog)
 
-    -   Kjo eshte pula im **e** vogel (This is my little hen)
+  - Kjo eshte pula im **e** vogel (This is my little hen)
 
--   ky (masc) - kjo (fem)
+- ky (masc) - kjo (fem)
 
--   im (masc) - ime (fem)
-
+- im (masc) - ime (fem)
 
 The adjective comes after the noun and also requires the same gender with the noun.
 
--   Singular to Plural
+- Singular to Plural
 
-    -   Kjo eshte shtepia ime e bardhe (this is my white-colored house)
+  - Kjo eshte shtepia ime e bardhe (this is my white-colored house)
 
-    -   Keto jane shtepite e mia te bardha (these are my white-colored houses).
-
+  - Keto jane shtepite e mia te bardha (these are my white-colored houses).
 
 ### Table of Albanian Adjectives
 
--   A white car - nje makine e bardhe
+- A white car - nje makine e bardhe
 
--   a high tree - nje peme e larte
+- a high tree - nje peme e larte
 
--   an old book - nje liber i vjeter
+- an old book - nje liber i vjeter
 
--   the old rood - catia e vjeter
+- the old rood - catia e vjeter
 
--   a pretty girl - nje vajze e bukur
+- a pretty girl - nje vajze e bukur
 
--   a cold winter - nje dimer i ftohte (masc, singular)
+- a cold winter - nje dimer i ftohte (masc, singular)
 
--   (some) cold winters - disa dimra te fthota (masc, plural)
+- (some) cold winters - disa dimra te fthota (masc, plural)
 
--   A freezing hand - nje dore e ftohte (fem, sing)
+- A freezing hand - nje dore e ftohte (fem, sing)
 
--   (some) freezing hands - disa dora te ftohta (fem, plural)
-
+- (some) freezing hands - disa dora te ftohta (fem, plural)
 
 List of adjectives:
 
--   Colors
+- Colors
 
-    -   Black - i zi (masc); e zeze (fem)
+  - Black - i zi (masc); e zeze (fem)
 
-    -   Blue - i kalter (masc); e kalter (fem)
+  - Blue - i kalter (masc); e kalter (fem)
 
-    -   Gray - i hirte (masc); e hirte (fem)
+  - Gray - i hirte (masc); e hirte (fem)
 
-    -   Green - i gjelber (masc); e gjelber (fem)
+  - Green - i gjelber (masc); e gjelber (fem)
 
-    -   Orange - ngjyre portokalli
+  - Orange - ngjyre portokalli
 
-    -   Purple - i purpurte (masc); e purpurte (fem)
+  - Purple - i purpurte (masc); e purpurte (fem)
 
-    -   Red - i kuq (masc); e kuqe (fem)
+  - Red - i kuq (masc); e kuqe (fem)
 
-    -   White - i bardhe (masc); e bardhe (masc)
+  - White - i bardhe (masc); e bardhe (masc)
 
-    -   Yellow - i verdhe (masc); e verdhe (fem)
+  - Yellow - i verdhe (masc); e verdhe (fem)
 
--   I am - Une jam i(masc)/e(fem)
+- I am - Une jam i(masc)/e(fem)
 
-    -   hungry - uritur
+  - hungry - uritur
 
-    -   full - ngopur
+  - full - ngopur
 
-    -   thirsty - i/e etur
+  - thirsty - i/e etur
 
-    -   busy - i/e zene
+  - busy - i/e zene
 
-    -   free - i/e lire
+  - free - i/e lire
 
-    -   tired - i/e lodhur
+  - tired - i/e lodhur
 
-    -   sick - i/e semure
+  - sick - i/e semure
 
-    -   happy - i/e lumtur
+  - happy - i/e lumtur
 
-    -   sad - i/e trishtuar
+  - sad - i/e trishtuar
 
-    -   glad - i/e gezuar
+  - glad - i/e gezuar
 
-    -   angry - i/e zemeruar
-
+  - angry - i/e zemeruar
 
 ### Practice
 
--   I think you are beautiful - Une mendon ti je bukur
+- I think you are beautiful - Une mendon ti je bukur
 
--   I am not hungry - Nuk une jam e uritur
+- I am not hungry - Nuk une jam e uritur
 
--   This is my mountain - Ky eshte mali ime
+- This is my mountain - Ky eshte mali ime
 
-    -   This is a cold mountain - Ky eshte a mal i fthota
-
+  - This is a cold mountain - Ky eshte a mal i fthota
 
 ## Pronouns and Adverbs
 
@@ -483,72 +459,67 @@ Singular - une (I), ti (you), ai (he), ajo (she)
 
 Plural - ne (we), ju (you, pl), ata (they masc), ato (they fem)
 
--   I think - Une mendoj
+- I think - Une mendoj
 
--   You think - Ti mendon
+- You think - Ti mendon
 
--   He thinks - Ai mendon
+- He thinks - Ai mendon
 
--   She thinks - Ajo mendon
+- She thinks - Ajo mendon
 
--   We think - Ne mendojme
+- We think - Ne mendojme
 
--   You think (plural) - Ju mendoni (pl)
+- You think (plural) - Ju mendoni (pl)
 
--   They think - Ata/ato mendojne
-
+- They think - Ata/ato mendojne
 
 Demonstrative prononuns:
 
--   This - Ky (masc); Kjo (fem)
+- This - Ky (masc); Kjo (fem)
 
--   These - Keta (masc); Keto (fem)
+- These - Keta (masc); Keto (fem)
 
--   That - Ai (masc); Ajo (fem)
+- That - Ai (masc); Ajo (fem)
 
--   Those - Ata (masc); Ato (fem)
-
+- Those - Ata (masc); Ato (fem)
 
 ### Possessive and Indefinite Pronouns
 
 #### Possessive Pronouns
 
--   Possessive masculine pronoun ending:
+- Possessive masculine pronoun ending:
 
-    -   Singular - i, e - imi, yni, yti
+  - Singular - i, e - imi, yni, yti
 
-    -   Plural - t(e)
+  - Plural - t(e)
 
--   Possessive feminine pronoun ending:
+- Possessive feminine pronoun ending:
 
-    -   Singular - a - imja, jotja, e tija, e saja, e jona
+  - Singular - a - imja, jotja, e tija, e saja, e jona
 
-    -   Plural - t
-
+  - Plural - t
 
 Masc/Fem (Singular) ; Masc/Fem (Plural)
 
--   Mine = imi / imja; te mite / te miat
+- Mine = imi / imja; te mite / te miat
 
--   Yours = yti / jotja; te tute / te tuat
+- Yours = yti / jotja; te tute / te tuat
 
--   His = i tiji / e tija; te tijte / te tijat
+- His = i tiji / e tija; te tijte / te tijat
 
--   Hers = I sajji / e saja; te sajte / te sajat
+- Hers = I sajji / e saja; te sajte / te sajat
 
--   Ours = yni / jona; tanet / tonat
+- Ours = yni / jona; tanet / tonat
 
--   Yours = juaji / juaja; tuajt / tuajat
+- Yours = juaji / juaja; tuajt / tuajat
 
--   Theirs = I tyre / e tyrja; te tyre/ te tyret
-
+- Theirs = I tyre / e tyrja; te tyre/ te tyret
 
 Example:
 
--   Singular - Where is my handkerchief? - Ku eshte shamia ime?
+- Singular - Where is my handkerchief? - Ku eshte shamia ime?
 
--   Plural - This is my pencil - Ky eshte lapse im
-
+- Plural - This is my pencil - Ky eshte lapse im
 
 #### Indefinite Pronouns
 
@@ -556,49 +527,45 @@ An indefinite quantity of things
 
 Example:
 
--   Someone - Dikush
+- Someone - Dikush
 
--   Anyone - Ndonje
+- Anyone - Ndonje
 
--   Nobody - Askush
+- Nobody - Askush
 
--   Everyone - Kushdo
+- Everyone - Kushdo
 
--   Nothing - Asgje
+- Nothing - Asgje
 
--   Something - Dicka
+- Something - Dicka
 
--   A lot - Shume
+- A lot - Shume
 
--   A little - Pak
-
+- A little - Pak
 
 Formed with: do-
 
--   Cilido - Any
+- Cilido - Any
 
--   Cfaredo - What do you want?
+- Cfaredo - What do you want?
 
--   Kushdo - Everyone
-
+- Kushdo - Everyone
 
 Formed with: di-
 
--   Someone - Dikush
+- Someone - Dikush
 
--   Something - Dicka
+- Something - Dicka
 
--   Some - Disa
-
+- Some - Disa
 
 Formed with: as-
 
--   No one - Askush
+- No one - Askush
 
--   Nothing - Asgje
+- Nothing - Asgje
 
--   Nobody - Asnjeri
-
+- Nobody - Asnjeri
 
 ### Possessive Adjectives
 
@@ -606,453 +573,435 @@ Masculine and Feminine Genders are used if the defined nouns are respectively ma
 
 Examples:
 
--   Ky esthe libri ime - This is my book (Masc Sing)
+- Ky esthe libri ime - This is my book (Masc Sing)
 
--   Kjo esthe makina e saj - This is her fact (Fem Sing)
+- Kjo esthe makina e saj - This is her fact (Fem Sing)
 
--   Kete jane librat e mi - These are my books (Masc Plural)
+- Kete jane librat e mi - These are my books (Masc Plural)
 
--   Ato jane makinat e mia - Those are my cars ( Fem Plural)
-
+- Ato jane makinat e mia - Those are my cars ( Fem Plural)
 
 Masc nouns in singular and plural
 
--   My - im (sing); e mi (pl)
+- My - im (sing); e mi (pl)
 
--   Your (sing) - ty; e tu
+- Your (sing) - ty; e tu
 
--   His - i tij; e tij
+- His - i tij; e tij
 
--   Her - e saj; e saj
+- Her - e saj; e saj
 
--   Its - i tij (masc); i saj (fem)
+- Its - i tij (masc); i saj (fem)
 
--   Our - yne (sing); tane (pl)
+- Our - yne (sing); tane (pl)
 
--   Your (pl) - juaj(pl); tauj(pl)
+- Your (pl) - juaj(pl); tauj(pl)
 
--   They - i tye(masc pl); e tyre (pl); e tyre (fem pl)
-
+- They - i tye(masc pl); e tyre (pl); e tyre (fem pl)
 
 Example:
 
--   This is his phone - Ky eshte telefoni i tij
+- This is his phone - Ky eshte telefoni i tij
 
--   I am a man and this is my book - Une jam burre dhe ky esthe libri im
+- I am a man and this is my book - Une jam burre dhe ky esthe libri im
 
--   We are teachers and this is our book - Ne jemi mesues dhe ky esthe libri yne
-
+- We are teachers and this is our book - Ne jemi mesues dhe ky esthe libri yne
 
 Fem nouns in singular and plural
 
--   My - ime (sing); e mia (pl)
+- My - ime (sing); e mia (pl)
 
--   Your (sing) - jote; e tua
+- Your (sing) - jote; e tua
 
--   His - e tij; e tij
+- His - e tij; e tij
 
--   Her - e saj; e saj
+- Her - e saj; e saj
 
--   Its - e tij (masc); e saj (fem)
+- Its - e tij (masc); e saj (fem)
 
--   Our - jone, tona
+- Our - jone, tona
 
--   Your (pl) - juaj (pl); tuaja (pl)
+- Your (pl) - juaj (pl); tuaja (pl)
 
--   They - e tyre(masc pl); e tyre (fem pl)
-
+- They - e tyre(masc pl); e tyre (fem pl)
 
 Examples
 
--   This is my car - Kjo esthe makina ime
+- This is my car - Kjo esthe makina ime
 
--   This is my sister and these are her dolls - Kjo esthe motra ime dhe keto jane kukullat e saj.
+- This is my sister and these are her dolls - Kjo esthe motra ime dhe keto jane kukullat e saj.
 
--   These are my cars - Keto jane makinat e mia
-
+- These are my cars - Keto jane makinat e mia
 
 ### Adverbs in Albanian
 
 In english we add (-ly) to adjectives, in Albanian it’s -shem (sing, fem). But its not always the case
 
--   i/e ngadalte (slow) - ngadalshem (slowly)
+- i/e ngadalte (slow) - ngadalshem (slowly)
 
--   i/e lire (free) - lirshem (freely)
-
+- i/e lire (free) - lirshem (freely)
 
 Examples:
 
--   I watch TV sometimes - Une shikoj TV **ndojehere**
+- I watch TV sometimes - Une shikoj TV **ndojehere**
 
--   I will never eat pork - Une **kurre** nuk do te ha derr
+- I will never eat pork - Une **kurre** nuk do te ha derr
 
--   Are you alone? Je **vetem**?
-
+- Are you alone? Je **vetem**?
 
 More Examples
 
--   Adverbs of time
+- Adverbs of time
 
-    -   today - sot
+  - today - sot
 
-    -   tomorrow - neser
+  - tomorrow - neser
 
-    -   yesterday - dje
+  - yesterday - dje
 
--   Adverbs of place
+- Adverbs of place
 
-    -   here - ketu
+  - here - ketu
 
-    -   there - atje
+  - there - atje
 
-    -   outside - jashte
+  - outside - jashte
 
--   Adverbs of manner
+- Adverbs of manner
 
-    -   very - shume
+  - very - shume
 
-    -   quickly - shpejt
+  - quickly - shpejt
 
-    -   well - mire
+  - well - mire
 
--   Adverbs of frequency
+- Adverbs of frequency
 
-    -   always - gjithmone
+  - always - gjithmone
 
-    -   rarely - rralle
+  - rarely - rralle
 
-    -   usually - zakonisht
-
+  - usually - zakonisht
 
 ## Useful Phrases & Directions in Albanian
 
 ### Useful Phrases
 
--   Where are you from? - Nga jeni ju?
+- Where are you from? - Nga jeni ju?
 
--   I am from the United States - Une jam nga (from) Amerika.
+- I am from the United States - Une jam nga (from) Amerika.
 
--   I am American - Une Jam amerikan.
+- I am American - Une Jam amerikan.
 
--   Where do you live? - Ku banoni ju?
+- Where do you live? - Ku banoni ju?
 
--   I live in .. - Une banoj ne….
+- I live in .. - Une banoj ne….
 
--   How are you? Ci jeni ju?
+- How are you? Ci jeni ju?
 
--   Fine thanks! - Mire, faleminderit!
+- Fine thanks! - Mire, faleminderit!
 
--   What do you do? - Cfare pune(work) beni(do) ju?
+- What do you do? - Cfare pune(work) beni(do) ju?
 
--   I am a volunteer - Une jam vullnetar
+- I am a volunteer - Une jam vullnetar
 
--   I speak only english - Une flas vetem (only) anglisht
+- I speak only english - Une flas vetem (only) anglisht
 
--   I don't speak Albanian - Une nuk flas (mire) shqip
+- I don't speak Albanian - Une nuk flas (mire) shqip
 
--   What time is it? Sa esthe ora?
+- What time is it? Sa esthe ora?
 
--   Please speak more slowly - Flisni me ngadale (slowly), je lutem
+- Please speak more slowly - Flisni me ngadale (slowly), je lutem
 
--   Please speak more loudly - Flisni me ze me te larte, ju lutem
+- Please speak more loudly - Flisni me ze me te larte, ju lutem
 
--   I understand - Une kuptoj ….
+- I understand - Une kuptoj ….
 
--   I don’t understand - Une nuk kuptoj …
+- I don’t understand - Une nuk kuptoj …
 
--   Repeat it, please - Perseriteni, je lutem.
+- Repeat it, please - Perseriteni, je lutem.
 
--   Write it down, please - Shkruajeni, ju lutem.
-
+- Write it down, please - Shkruajeni, ju lutem.
 
 ### Useful Phrases in a Restaurant
 
--   I want a coffee - (Une) Dua(want) nje kafe
+- I want a coffee - (Une) Dua(want) nje kafe
 
--   I don't want.. - (Une) nuk dua…
+- I don't want.. - (Une) nuk dua…
 
--   I want to eat - (Une) Due te ha
+- I want to eat - (Une) Due te ha
 
--   I want to drink - (Une) dua te pi.
+- I want to drink - (Une) dua te pi.
 
--   I don't want to eat/drink - (Une) nuk dua te ha/pi.
+- I don't want to eat/drink - (Une) nuk dua te ha/pi.
 
--   I like it - Me pelqen
+- I like it - Me pelqen
 
--   I don’t like it - Nuk me pelqen
+- I don’t like it - Nuk me pelqen
 
--   This is good - Ky/kjo eshte e mire
+- This is good - Ky/kjo eshte e mire
 
--   This is not good - Ky/kjo nuk eshte e mire
+- This is not good - Ky/kjo nuk eshte e mire
 
--   How much is this? - Sa kushton kjo?
-
+- How much is this? - Sa kushton kjo?
 
 ### Phrases and Directions
 
--   I need help - (Une) Dua ndihme
+- I need help - (Une) Dua ndihme
 
--   Look out! - Kujdes!
+- Look out! - Kujdes!
 
--   Listen - Degjoni!
+- Listen - Degjoni!
 
--   Can you help me? - Mund te me ndihmoni?
+- Can you help me? - Mund te me ndihmoni?
 
--   Can you tell me? - Mund te me tregoni?
+- Can you tell me? - Mund te me tregoni?
 
--   I am looking for… - Po kerkoj…
+- I am looking for… - Po kerkoj…
 
--   I want to go… - Une dua te shkoj…
+- I want to go… - Une dua te shkoj…
 
--   I know - (Une) E di.
+- I know - (Une) E di.
 
--   I don’t know - (Une) nuk e di.
+- I don’t know - (Une) nuk e di.
 
--   I think so - (Une) Mendoj keshtu
+- I think so - (Une) Mendoj keshtu
 
--   I don’t think so - (Une) Nuk mendoj keshtu
+- I don’t think so - (Une) Nuk mendoj keshtu
 
--   I believe, yes - (Une) Besoj se po.
+- I believe, yes - (Une) Besoj se po.
 
--   I don’t believe - (Une) Nuk besoj
+- I don’t believe - (Une) Nuk besoj
 
--   Where is the..? Ku eshte..?
+- Where is the..? Ku eshte..?
 
--   On the left - Ne te majte
+- On the left - Ne te majte
 
--   On the right - Ne te djathe
+- On the right - Ne te djathe
 
--   Straight-ahead - Drejt
+- Straight-ahead - Drejt
 
--   Near by - Ketu Afer
+- Near by - Ketu Afer
 
--   Not far from here - Jo larg nga ketu
+- Not far from here - Jo larg nga ketu
 
--   Above - Siper
+- Above - Siper
 
--   Down the village - Poshte fshatit
+- Down the village - Poshte fshatit
 
--   Behind - Prapa
-
+- Behind - Prapa
 
 ### Places
 
--   Village - Fshat
+- Village - Fshat
 
--   Town - Qytet
+- Town - Qytet
 
--   Shop - Dyqan
+- Shop - Dyqan
 
--   Street - Rruge
+- Street - Rruge
 
--   Building - Ndertese
+- Building - Ndertese
 
--   Flat - Pallat
+- Flat - Pallat
 
--   Library - Bibloteke
+- Library - Bibloteke
 
--   Restaurant - Restorant
+- Restaurant - Restorant
 
--   School - Shkolle
+- School - Shkolle
 
--   Student - nxenes/student
+- Student - nxenes/student
 
--   Cultural Palace - Pallati I kultures
+- Cultural Palace - Pallati I kultures
 
--   Municipality - bashki
+- Municipality - bashki
 
--   Commune - Komune
+- Commune - Komune
 
--   Office - Zyre
-
+- Office - Zyre
 
 ## Home Items, Colors, Clothing, Food, and Drinks, Fruits
 
 ### Home Items
 
--   Glass - gote
+- Glass - gote
 
--   cup - filxhan
+- cup - filxhan
 
--   spoon - luge
+- spoon - luge
 
--   fork - pirun
+- fork - pirun
 
--   knife - thike
+- knife - thike
 
--   plate - pjate
+- plate - pjate
 
--   table - tavoline
+- table - tavoline
 
--   chair - karrige
+- chair - karrige
 
--   door - dere
+- door - dere
 
--   window - dritate
+- window - dritate
 
--   bed - krevat
+- bed - krevat
 
--   bed sheet - carcaf
+- bed sheet - carcaf
 
--   pillow - jastek
+- pillow - jastek
 
--   home - shtepi
+- home - shtepi
 
--   hotel - hotel
+- hotel - hotel
 
--   floor - kat
+- floor - kat
 
--   room - dhome
+- room - dhome
 
--   bathroom - banje
+- bathroom - banje
 
--   toilet - banje
+- toilet - banje
 
--   toilet paper - leter higjenike
+- toilet paper - leter higjenike
 
--   soap - sapun
+- soap - sapun
 
--   towel - peshqir
+- towel - peshqir
 
--   shampoo - shampo
+- shampoo - shampo
 
--   kitchen - guzhine
+- kitchen - guzhine
 
--   bedroom - dhome gjumi
+- bedroom - dhome gjumi
 
--   dining room/ sitting room - dhome ngrenje / dhome
-
+- dining room/ sitting room - dhome ngrenje / dhome
 
 ### Colors in Albanian - Ngjyrat
 
--   red - i/e kuqe
+- red - i/e kuqe
 
--   white - i/e bardhe
+- white - i/e bardhe
 
--   black - i/e zeze
+- black - i/e zeze
 
--   yellow - i/e verdhe
+- yellow - i/e verdhe
 
--   green - i/e gjelber
+- green - i/e gjelber
 
--   dark blue - blu
+- dark blue - blu
 
--   sky blue - i/e kalter
+- sky blue - i/e kalter
 
--   grey - gri
+- grey - gri
 
--   brown - kafe
-
+- brown - kafe
 
 ### Clothing
 
--   pants - pantallona
+- pants - pantallona
 
--   blouse - bluze
+- blouse - bluze
 
--   shirt - kemishe
+- shirt - kemishe
 
--   dress - futsan
+- dress - futsan
 
--   skirt - fund
+- skirt - fund
 
--   shoes - kepuce
+- shoes - kepuce
 
--   sandals - sandale
+- sandals - sandale
 
--   slippers - shapka
+- slippers - shapka
 
--   boots - cizme
+- boots - cizme
 
--   jacket - xhakete
+- jacket - xhakete
 
--   coat - pallto
-
+- coat - pallto
 
 ### Food and Drinks
 
--   water - uje
+- water - uje
 
--   coffee - kafe
+- coffee - kafe
 
--   tea - caj
+- tea - caj
 
--   milk - qumesht
+- milk - qumesht
 
--   juice, lemonade - limonate
+- juice, lemonade - limonate
 
--   mineral water - uje mineral
+- mineral water - uje mineral
 
--   wine - vere
+- wine - vere
 
--   beer - birre
+- beer - birre
 
--   raki - raki
+- raki - raki
 
--   sugar - sheqer
+- sugar - sheqer
 
--   salt - kripe
+- salt - kripe
 
--   bread - buke
+- bread - buke
 
--   salad - sallate
+- salad - sallate
 
--   meat - mish
+- meat - mish
 
--   cheese - djathe
+- cheese - djathe
 
--   butter - gjalpe
+- butter - gjalpe
 
--   egg - veze
-
+- egg - veze
 
 ### Fruits
 
--   grape - rrush
+- grape - rrush
 
--   fig - fik
+- fig - fik
 
--   watermelon - shalqi
+- watermelon - shalqi
 
--   melon - pjeper
+- melon - pjeper
 
--   peach - pjeshke
+- peach - pjeshke
 
--   pear - dardhe
-
+- pear - dardhe
 
 ## Family Relations - Date - Numbers
 
 ### Family Members
 
--   mother - nene
+- mother - nene
 
--   father - baba
+- father - baba
 
--   sister - moter
+- sister - moter
 
--   brother - vella
+- brother - vella
 
--   daughter - e bija
+- daughter - e bija
 
--   son - I biri
+- son - I biri
 
--   grandmother - gjyshja
+- grandmother - gjyshja
 
--   grandfather - gjyshi
+- grandfather - gjyshi
 
--   niece - mbesa
+- niece - mbesa
 
--   nephew - nipi
+- nephew - nipi
 
--   mother-in-law - vjehrra
+- mother-in-law - vjehrra
 
--   father-in-law - jherri
+- father-in-law - jherri
 
--   sister-in-law - kunata
+- sister-in-law - kunata
 
--   brother-in-law - kunati
-
+- brother-in-law - kunati
 
 ### Plural Nouns
 
@@ -1060,176 +1009,168 @@ Plural endings in Albanian following the following: -e, -a, -e, -er, -ra, -t, -n
 
 For example:
 
--   punetor-e (workers)
+- punetor-e (workers)
 
--   dardh-a (pears)
+- dardh-a (pears)
 
--   mal-e (mountains)
+- mal-e (mountains)
 
--   prind-er (parents)
+- prind-er (parents)
 
--   fshat-ra (villages)
+- fshat-ra (villages)
 
--   flori-nj (golds)
-
+- flori-nj (golds)
 
 Also changing the stem of the noun, from -k to -q; from -a to -e, from -g to -gj
 
--   plak (old man) - pleq (old men)
+- plak (old man) - pleq (old men)
 
--   mik (guest) - miq ( guests)
+- mik (guest) - miq ( guests)
 
--   nate (night) - net (nights)
+- nate (night) - net (nights)
 
--   zog (bird) - zogj (birds)
-
+- zog (bird) - zogj (birds)
 
 Some nouns are only used in singular
 
--   rini-a (youth)
+- rini-a (youth)
 
--   popullsi-a (population),
+- popullsi-a (population),
 
--   arsim-i (education)
-
+- arsim-i (education)
 
 Some nouns are written with a capital
 
--   Shqiperi-a (Albania)
+- Shqiperi-a (Albania)
 
--   Adriatik-u (Adriatic sea)
-
+- Adriatik-u (Adriatic sea)
 
 Also we have some other nouns that are only used in plural.
 
--   pantallona-t (pants)
+- pantallona-t (pants)
 
--   syze-t (glasses)
-
+- syze-t (glasses)
 
 If a singular noun is masculine but is changed with the -e ending when it is in its plural form, it becomes feminine.
 
--   My phone - telefoni im
+- My phone - telefoni im
 
--   My phones - telefonet e mi
+- My phones - telefonet e mi
 
--   our daughter - vajza jone
+- our daughter - vajza jone
 
--   first love - dashuria e pare
-
+- first love - dashuria e pare
 
 ### Days of the Week - Ditet e Javes
 
--   Monday - E hene
+- Monday - E hene
 
--   Tuesday - E marte
+- Tuesday - E marte
 
--   Wednesday - E merkure
+- Wednesday - E merkure
 
--   Thursday - E enjte
+- Thursday - E enjte
 
--   Friday - E premte
+- Friday - E premte
 
--   Saturday - E shtune
+- Saturday - E shtune
 
--   Sunday - E diel
+- Sunday - E diel
 
--   Weekend - peshume
-
+- Weekend - peshume
 
 ### Months of the Year
 
--   Months - Muajt
+- Months - Muajt
 
--   January - Janar
+- January - Janar
 
--   February - Shkuurt
+- February - Shkuurt
 
--   March - Mars
+- March - Mars
 
--   April - Prill
+- April - Prill
 
--   May - Maj
+- May - Maj
 
--   June - Qershor
+- June - Qershor
 
--   July - Korrik
+- July - Korrik
 
--   August - Gusht
+- August - Gusht
 
--   September - Shtator
+- September - Shtator
 
--   October - Tetor
+- October - Tetor
 
--   November - Nentor
+- November - Nentor
 
--   December - Dhjetor
-
+- December - Dhjetor
 
 ## Numbers - Numrat
 
--   0 - Zero
+- 0 - Zero
 
--   1 - Nje
+- 1 - Nje
 
--   2 - dy
+- 2 - dy
 
--   3 - tre
+- 3 - tre
 
--   4 - kater
+- 4 - kater
 
--   5 - pese
+- 5 - pese
 
--   6 - gjashte
+- 6 - gjashte
 
--   7 - shtate
+- 7 - shtate
 
--   8 - tete
+- 8 - tete
 
--   9 - nente
+- 9 - nente
 
--   10 - dhjete
+- 10 - dhjete
 
--   11 - nje-mbedhjete
+- 11 - nje-mbedhjete
 
--   12 - dy-mbedhjete
+- 12 - dy-mbedhjete
 
--   13 - tre-mbedhjete
+- 13 - tre-mbedhjete
 
--   14 - kater-mbedhjete
+- 14 - kater-mbedhjete
 
--   15 - pses-mbedhjete
+- 15 - pses-mbedhjete
 
--   16 - gjashte-mbedhjete
+- 16 - gjashte-mbedhjete
 
--   17 - shtate-mbedhjete
+- 17 - shtate-mbedhjete
 
--   18 - tete-mbedhjete
+- 18 - tete-mbedhjete
 
--   19 - nentembedhjete
+- 19 - nentembedhjete
 
--   20 - njezete
+- 20 - njezete
 
--   30- tridhjete
+- 30- tridhjete
 
--   40 - dyzete
+- 40 - dyzete
 
--   50 - pesedhjete
+- 50 - pesedhjete
 
--   60 - gjashtdhjete
+- 60 - gjashtdhjete
 
--   70 - shtatedhjete
+- 70 - shtatedhjete
 
-    -   71 - shtatedhejete - nje
+  - 71 - shtatedhejete - nje
 
--   80 - tetedhjete
+- 80 - tetedhjete
 
--   90 - nentedhjete
+- 90 - nentedhjete
 
--   100 - nje qind
+- 100 - nje qind
 
--   200 - dy qind
+- 200 - dy qind
 
--   1000 - nje mije
+- 1000 - nje mije
 
--   1,000,000 - million
+- 1,000,000 - million

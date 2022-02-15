@@ -12,6 +12,7 @@ tags:
   - spiders_web
 header:
   image: "/assets/images/categories/mastery/spider.jpeg"
+  teaser: "/assets/images/categories/mastery/spider.jpeg"
   caption: "Photo by **[Pixabay](https://www.pexels.com/@pixabay?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)** from **[Pexels](https://www.pexels.com/photo/pink-and-orange-spider-near-black-and-yellow-insect-on-a-spider-web-during-daytime-65276/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)**"
 ---
 

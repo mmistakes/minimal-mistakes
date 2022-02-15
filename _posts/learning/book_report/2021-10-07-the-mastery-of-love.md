@@ -7,6 +7,7 @@ permalink: /categories/learning/book_report/the_mastery_of_love
 toc: true
 header:
   overlay_image: "/assets/images/categories/learning/book_reports/type_writer.jpg"
+  teaser: "/assets/images/categories/learning/book_reports/type_writer.jpg"
 ---
 
 # Quick Take

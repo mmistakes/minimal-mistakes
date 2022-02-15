@@ -13,6 +13,7 @@ tags:
   - harvard_medicine
 header:
   overlay_image: "/assets/images/categories/learning/podcast/lifespan/episode-5.jpeg"
+  teaser: "/assets/images/categories/learning/podcast/lifespan/episode-5.jpeg"
   caption: "Photo by **[Chokniti Khongchum](https://www.pexels.com/@chokniti-khongchum-1197604?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)** from **[Pexels](https://www.pexels.com/photo/person-holding-laboratory-flask-2280571/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)**"
   actions:
     - label: "Link to Podcast"

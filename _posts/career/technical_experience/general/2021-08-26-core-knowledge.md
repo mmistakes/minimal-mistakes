@@ -13,12 +13,14 @@ tag:
   - tech
   - personal
   - Linux
-  - C 
+  - C
   - Kernel
   - Networking
 header:
   overlay_image: "/assets/images/categories/career/technical_experience/general/core_knowledge_1.jpg"
+  teaser: "/assets/images/categories/career/technical_experience/general/core_knowledge_1.jpg"
 ---
+
 # Overview
 
 Throughout my career as a software engineer, I have acquired skills with various frameworks, technologies, and languages. Underneath all the high-level technology lies the core foundational components that make creating our applications, infrastructure, and tech stacks possible. While high-level technology is vast and far-reaching, it all relies on the foundation.
@@ -33,7 +35,7 @@ I decided that I wanted to be able to have productive conversations with the sen
 
 ## Understanding Kernel Space
 
-I quickly learned many interesting topics from the book  such as **process management, memory management, interrupt handlers, system calls, locks, time management**, and much more. By learning these core kernel components, I was able to provide productive insight and ideas in conversations with the senior developers. I applied my newfound knowledge to applications and systems that use **kernel bypass** (via Solar Flare NICs), **network interrupts,** **time-stamping, system calls,** and **device drivers**.
+I quickly learned many interesting topics from the book such as **process management, memory management, interrupt handlers, system calls, locks, time management**, and much more. By learning these core kernel components, I was able to provide productive insight and ideas in conversations with the senior developers. I applied my newfound knowledge to applications and systems that use **kernel bypass** (via Solar Flare NICs), **network interrupts,** **time-stamping, system calls,** and **device drivers**.
 
 Out of all the technical books I have read, Robert Love’s “[Linux Kernel Development, 3rd Edition](https://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468/ref=as_li_ss_tl?ie=UTF8&tag=roblov-20 "https://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468/ref=as_li_ss_tl?ie=UTF8&tag=roblov-20")” was by far the most important. It allowed me to look at every new application and system from the perspective of the kernel. Wearing my kernel glasses helped me find flaws in a system, as well as robust solutions that would play nice with the kernel. By understanding what goes on in _kernel space,_ I was able to envision and create a better _user space._
 
