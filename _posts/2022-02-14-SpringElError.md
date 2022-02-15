@@ -30,7 +30,9 @@ List타입은 맞지 않음
 기타 문제 해결을 위해 찾아본 자료  
 - form없이 컨트롤러에 데이터 넘기기(자바스크립트에서 form hidden 생성뒤 넘겨줌)  
 https://amongthestar.tistory.com/178  
+<br>
 - 타임리프 @{링크}설정 방법  
 https://developer-rooney.tistory.com/181  
+<br>
 - 스프링부트 파라미터 전달법(스프링과 큰 차이는 없음)  
 https://youngjinmo.github.io/2021/01/spring-request-parameter/  
