@@ -5,6 +5,7 @@ title: "입력 페이지 관련"
 
 회의때와 다르게 또 생각난게 ob를 입력받기 전 category 지정이 선행되어야한다!  
 그래서 category 👉 objective 👉 initiative 수정 👉 calendar 순으로 페이지 구성  
++ ⭐Mypage에서 ob, ini, kr 수정 어떻게 되는지 구상  
 
 <br>
 
