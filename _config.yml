@@ -102,7 +102,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "ST Team"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "This is the ST's tech blog"
   location         : "Seoul"
