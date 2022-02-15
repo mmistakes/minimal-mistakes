@@ -1,5 +1,6 @@
 ---
 layout: single
+classes: wide
 title:  "내 언어로 글로벌 검색 서비스 제공하기"
 tagline: "Providing global search services in your language"
 header:
