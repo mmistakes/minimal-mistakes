@@ -4,7 +4,7 @@ classes: wide
 title:  "내 언어로 글로벌 검색 서비스 제공하기 종합 가이드 - PART 1"
 tagline: "Providing global search services in your language"
 header:
-  overlay_image: /assets/images/background-2.jpg  
+  overlay_image: /assets/images/background-1.jpg  
 ---
 
 
@@ -28,7 +28,7 @@ header:
 기본 아이디어는 다음과 같이 두개로 나눌 수 있다.
 
 ### 사용자가 컨텐츠를 등록할 때
-![upload_idea](./assets/upload_idea.png)
+![upload_idea](/assets/upload_idea.png)
 
 > 1. 사용자의 dominant 언어를 detect한다. 
 > 2. detect된 사용자의 언어를 영어로 변경한다.
@@ -39,7 +39,7 @@ header:
 
 ### 사용자가 컨텐츠를 검색할 때
 
-![search_idea](./assets/search_idea.png)
+![search_idea](/assets/search_idea.png)
 
 > 1. 사용자가 자신의 언어로 검색을 시도한다. 
 > 2. 사용자의 dominant 언어를 detect한다. 
