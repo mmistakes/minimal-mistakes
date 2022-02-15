@@ -1,5 +1,6 @@
 ---
 layout: single
+classes: wide
 title:  "내 언어로 글로벌 검색 서비스 제공하기 종합 가이드 - PART 2"
 tagline: "Providing global search services in your language"
 header:
@@ -122,6 +123,8 @@ API Gateway에서의 목적은 upload 에 해당하는 API call이 호출되면 
 
 이제 컨텐츠 정보가 담길 DynamoDB를 생성하자.  여기에서는 table 이름을 project로, 파티션 키는 유니크한 값을 가질 수 있는 project id 값으로, 정렬 키는 title로 설정했다. 
 
+
+
 <img src="../assets/images/dynamodb-create.png" alt="dynamodb-create" style="zoom: 50%;" />
 
 
@@ -189,7 +192,9 @@ zip -g deploy_package.zip lambda_function.py
 
 
 
-index-project lambda 코드에서는 dynamoDB로 부터 전달된 메타데이터(title/tags) 정보를 검색엔진에 indexing 한다. 눈여겨 봐야할 점은 사용자의 검색어 그대로 indexing 하는 것이 아니라, 서두에 언급한 바와 같이 검색어를 영어로 변경하여 indexing 해야 하는 점이다.
+index-project lambda 코드에서는 dynamoDB로 부터 전달된 메타데이터(title/tags) 정보를 검색엔진에 indexing 한다.
+
+눈여겨 봐야할 점은 사용자의 검색어 그대로 indexing 하는 것이 아니라, 서두에 언급한 바와 같이 검색어를 영어로 변경하여 indexing 해야 하는 점이다.
 
 
 
@@ -220,7 +225,9 @@ index-project lambda 코드에서는 dynamoDB로 부터 전달된 메타데이�
 
 
 
-index-project 코드 중 일부이다. AWS python SDK(Boto3)를 사용하여 translate 기능을 수행한다. translate_text의 인자인 SourceLanguageCode에 'auto' 값이 아닌 정확한 target을 지정한다면 조금 더 좋은 번역 품질을 기대할 수 있다. 
+index-project 코드 중 일부이다. AWS python SDK(Boto3)를 사용하여 translate 기능을 수행한다.
+
+translate_text의 인자인 SourceLanguageCode에 'auto' 값이 아닌 정확한 target을 지정한다면 조금 더 좋은 번역 품질을 기대할 수 있다. 
 
 
 
@@ -237,7 +244,7 @@ index-project lambda 함수 또한, IAM 권한을 부여해야 한다.
 
 <img src="../assets/images/index-project-iam.png" alt="index-project-iam" style="zoom:50%;" />
 
-> 참고: 이 권한에 필요한 것보다 더 넓은 범위를 사용하고 있습니다. 구현에 필요한 최소한의 보안 권한을 사용하는 것을 고려하십시오.
+> 참고: 이 권한에 필요한 것보다 더 넓은 범위를 사용하고 있다. 구현에 필요한 최소한의 보안 권한을 사용하는 것을 고려해야한다.
 
 
 
