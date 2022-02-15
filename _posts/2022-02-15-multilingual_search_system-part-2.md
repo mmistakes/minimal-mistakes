@@ -5,6 +5,7 @@ title:  "내 언어로 글로벌 검색 서비스 제공하기 종합 가이드 
 tagline: "Providing global search services in your language"
 header:
   overlay_image: /assets/images/background-2.jpg
+typora-copy-images-to: /assets/images
 ---
 
 
@@ -17,7 +18,7 @@ header:
 
 ### Upload System
 
-![upload_arch](/assets/images/upload_arch.png)
+![upload_arch](../assets/images/upload_arch.png)
 
 AWS의 소프트웨어로 [Candidate Idea](#candidate-idea)를 구체화한 upload system이다. 
 
@@ -55,7 +56,7 @@ API Gateway에서의 목적은 upload 에 해당하는 API call이 호출되면 
 
 👉 serverless framework를 통해 패키지를 구성하여 배포해도 된다. 
 
-![uploading-labmda](/assets/images/upload-batch-projects-lambda.png)
+![uploading-labmda](../assets/images/upload-batch-projects-lambda.png)
 
 
 
@@ -71,7 +72,7 @@ API Gateway에서의 목적은 upload 에 해당하는 API call이 호출되면 
 
 
 
-![upload-batch-projects-iam](/assets/images/upload-batch-projects-iam.png)
+![upload-batch-projects-iam](../assets/images/upload-batch-projects-iam.png)
 
 
 
@@ -100,13 +101,13 @@ API Gateway에서의 목적은 upload 에 해당하는 API call이 호출되면 
 
 이제 컨텐츠 정보가 담길 DynamoDB를 생성하자.  여기에서는 table 이름을 project로, 파티션 키는 유니크한 값을 가질 수 있는 project id 값으로, 정렬 키는 title로 설정했다. 
 
-<img src="/assets/images/dynamodb-create.png" alt="dynamodb-create" style="zoom: 50%;" />
+<img src="../assets/images/dynamodb-create.png" alt="dynamodb-create" style="zoom: 50%;" />
 
 
 
 또한, 검색 엔진과 data 동기화가 되어야 하기 때문에 DynamoDB에 삽입/삭제와 같은 변경이 생긴다면 이를 알려주는 트리거 기능 또한 설정해야한다. 
 
-<img src="/assets/images/dynamodb-trigger.png" alt="dynamodb-trigger" style="zoom:50%;" />
+<img src="../assets/images/dynamodb-trigger.png" alt="dynamodb-trigger" style="zoom:50%;" />
 
 이제 DynamoDB에서 변경이 있을 때마다 index-project 로 해당 정보가 notification 된다.
 
@@ -191,7 +192,7 @@ index-project lambda 함수 또한, IAM 권한을 부여해야 한다.
 
 
 
-<img src="/assets/index-project-iam.png" alt="index-project-iam" style="zoom:50%;" />
+<img src="../assets/images/index-project-iam.png" alt="index-project-iam" style="zoom:50%;" />
 
 > 참고: 이 권한에 필요한 것보다 더 넓은 범위를 사용하고 있습니다. 구현에 필요한 최소한의 보안 권한을 사용하는 것을 고려하십시오.
 
