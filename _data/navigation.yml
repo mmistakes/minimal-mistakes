@@ -39,6 +39,8 @@ docs:
     children:
       - title: "자바스크립트 기초(모르는 것) 1편"
         url: /javascript-base1/
+      - title: "자바스크립트 기초(모르는 것) 2편"
+        url: /javascript-base2/
   - title: Algorithm
     children:
       - title: "백준 알고리즘 1단계"
