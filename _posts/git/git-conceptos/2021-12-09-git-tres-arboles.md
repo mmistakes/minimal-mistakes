@@ -42,7 +42,7 @@ Git administra el contenido del **[Repositorio]** con 3 árboles diferentes
   * [HEAD] → Será posiblemente el próximo commit que se genere con los cambios en los archivos del [Repositorio].
   * Resumen : [HEAD] → como instantanea/snapshot de tu último commit
 
-#### {Index/Staging Area} 
+#### {Index/Staging Area}
 
 > Almacena contenido dentro del directorio .git/
 

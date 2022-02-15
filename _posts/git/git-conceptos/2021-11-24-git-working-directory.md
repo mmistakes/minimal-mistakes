@@ -19,6 +19,8 @@ tags:
 
 ## Directorio de trabajo (Working Directory/Workspace)
 
+* Conjunto de archivos y carpetas que está presente en el sistema y comprende los archivos reales con lo que se crea , edita y trabaja
+
 > Importante : En Unix/Linux el terminal de comandos siempre tiene un (Directorio de Trabajo) traducido al español se refiere (Working Directory) o (wd)
 
 ```bash

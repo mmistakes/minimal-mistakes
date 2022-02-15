@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Git - Index o Staging Area
+title: Git - Index/Staging Area
 date: 2021-11-25
 classes: wide
 toc: true
@@ -17,11 +17,25 @@ tags:
   - git-manual
 ---
 
-## Git {INDEX} → Indice o {Staging Area} → Area de Cambios / Preparación
+## Git {Staging Area}
 
-Ruta del directorio
+* Sinónimos **{ Staging Area - Area de Cambios }** son
+  * Otro posible nombres que se le pueden dar
+    * **{Staged} → {Preparado}**
+    * **{INDEX} → {Indice}**
 
-``project/.git/index``
+* Cuando se añade un archivo por primera vez al **{Staging Area}** se añade un **copia completa** de ese archivo al **{Staging Area}** *(no solo las diferencias del archivo como en otros sistemas de versiones)*
+
+* Actuá como una especie de instantánea sobre el aspecto que tendrá el **[Repositorio Local]** una vez que los cambios hayan sido **confirmados/commit**
+  * También actuá como un **buffer** entre los archivos del **(Working Directory)** y el **[Repositorio Local / copia real de los archivos]** **(cambios confirmados/commits)**
+
+* Es un **archivo oculto** que contiene **metadatos** sobre los archivos que se incluirán en la siguiente instantánea o **(commit)**
+
+* Ruta del directorio donde se almacenan los metadatos
+
+```bash
+project/.git/index
+```
 
 * * *
 
@@ -35,7 +49,7 @@ Es una especie de árbol que monitoriza todos los cambios en el (Working Directo
 
 * {**INDEX** = Indice} o {**Staging Area** = Área de cambios}
   
-  * Son los registros de cambios del (**Working Directory / Workspace**) que tendrá el __proximo commit__
+  * Son los registros de cambios del (**Working Directory / Workspace**) que tendrá el **proximo commit**
 
   * Los ficheros no modificados del commit anterior permanecerán a la espera en el **siguiente commit**.
 
@@ -47,21 +61,21 @@ Comandos básicos:
 
 ### Git add
 
-> `git add` → Registra en el __{INDEX}__ los ficheros indicados
+> `git add` → Registra en el **{INDEX}** los ficheros indicados
 
-* `git add README.md LICENSE` → Registra en el __{INDEX}__ estos ficheros sean nuevos o esten en el estado/fase modificados __{Modified}__
+* `git add README.md LICENSE` → Registra en el **{INDEX}** estos ficheros sean nuevos o esten en el estado/fase modificados **{Modified}**
 
-* `git add .` → Registran en el __{INDEX}__ todos los ficheros nuevos o los que se hayan pasado al estado/fase modificados __{Modified}__ anteriormente.
+* `git add .` → Registran en el **{INDEX}** todos los ficheros nuevos o los que se hayan pasado al estado/fase modificados **{Modified}** anteriormente.
 
 ### Git reset
 
 > `git reset` → Se utiliza para deshacer cambios
 
-* `git reset` → Extrae los ficheros del __{INDEX o Staging Area}__ al __(WorkSpace/Working Directory)__
+* `git reset` → Extrae los ficheros del **{INDEX o Staging Area}** al **(WorkSpace/Working Directory)**
 
-* `git reset <archivo>` → Extrae el ``<archivo>`` de __{INDEX}__ para enviarlo al estado **(Working Directory)**
+* `git reset <archivo>` → Extrae el ``<archivo>`` de **{INDEX}** para enviarlo al estado **(Working Directory)**
 
-* `git reset .` → Extrae del __{INDEX}__ todos los ficheros para enviarlo al estado **(Working Directory)**
+* `git reset .` → Extrae del **{INDEX}** todos los ficheros para enviarlo al estado **(Working Directory)**
 
 Dependiendo de los argumentos que le añadamos puede afectar al
 
@@ -73,16 +87,16 @@ Dependiendo de los argumentos que le añadamos puede afectar al
 
 ### Git commit
 
-> `git commit` → Genera un nuevo **registro/instantánea** de todos los archivos que tengamos y se almacenarán dentro del __{INDEX}__ esperando a ser enviados al **Repositorio Remoto**
+> `git commit` → Genera un nuevo **registro/instantánea** de todos los archivos que tengamos y se almacenarán dentro del **{INDEX}** esperando a ser enviados al **Repositorio Remoto**
 
 * `git commit` → Crea una nueva ``instantánea/registro`` y abre un editor de texto para crear el mensaje donde se refleje la intención de este registro y que luego se podra ver en el log del proyecto.  
 
 * `git commit -m "Mensaje"` → Guarda la ``instantánea/registro`` con un mensaje que hayamos escrito en el que indiquemos el proposito del mismo y que luego se podrá ver en el log del proyecto.
 
-* `git commit --amend -m` → Modifica el último commit que hayamos ejecutado sobre el __{INDEX}__
+* `git commit --amend -m` → Modifica el último commit que hayamos ejecutado sobre el **{INDEX}**
 
   * Hay que tener en cuenta que modifica el **último** commit.
 
-    * ``amend`` → Sustituimos el **commit actual** por lo que teniamos el **commit anterior** a este y le añadimos lo que teniamos registrado en el __{INDEX}__ de forma que podamos corregir lo que se nos olvido añadir o arreglarlo antes de pasarlo al **[Repositorio Local]**
+    * ``amend`` → Sustituimos el **commit actual** por lo que teniamos el **commit anterior** a este y le añadimos lo que teniamos registrado en el **{INDEX}** de forma que podamos corregir lo que se nos olvido añadir o arreglarlo antes de pasarlo al **[Repositorio Local]**
 
 ## Gráfico de ejemplo

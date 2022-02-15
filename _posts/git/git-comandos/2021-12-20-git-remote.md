@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Git - remote
+title: Git - Remote
 date: 2021-12-20
 classes: wide
 toc: true

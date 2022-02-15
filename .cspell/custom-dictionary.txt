@@ -18,6 +18,7 @@ subcomando
 subdirectorio
 subdirectorios
 tabulación
+Terminologia
 tldr
 zcfp
 zxfp

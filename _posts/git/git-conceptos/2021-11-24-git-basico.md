@@ -21,13 +21,13 @@ page_css:
 
 > El objetivo de GIT es registrar instantáneas/commits del proyecto en los distintos estados mediante la manipulación de los 3 arboles
 
-## Los 3 arboles son
+## 3 Secciones de GIT
 
-### (Directorio de Trabajo / Workspace)
+### (Directorio de Trabajo / Workspace / Working Directory)
 
 * Zona donde se almacen los archivos creados del proyecto para añadírselos y que no están rastreados **(UNTRACKED)**
 
-### {Staging Area / INDEX}
+### {Staging Area / INDEX / Staged}
 
 * *Técnicamente no es una estructura árbol sino un manifiesto*
   * **manifiesto** : "archivo con los metadatos de un grupo de archivos adjuntos que forman parte de un conjunto o unidad coherente"
@@ -43,39 +43,39 @@ page_css:
 
 ### Estructura básica del directorio de un proyecto
 
-    README.md : fichero resumen (formato GitHub markdown)
-    LICENSE : fichero con licencia de distribución del proyecto:
+```bash
+README.md : fichero resumen (formato GitHub markdown)
+LICENSE : fichero con licencia de distribución del proyecto:
+```
 
-Directorios principales
+* Directorios principales
 
+```bash
     public: Directorio donde almacenar recursos Web
     bin:    Directorio donde almacenar programas ejecutables
     lib:    Directorio con las librerías de software utilizadas
     test:   Directorio con las pruebas de funcionamiento correcto
-
-*  *  *
+```
 
 * Directorio oculto:  **.git**:
   * Contiene los directorios y archivos más importantes del software del control de versiones entre ellos el grafo de cambios entre las distintas versiones del proyecto
 
-*  *  *
-
 * Fichero **.gitignore**:
-  * indica los ficheros a ignorar cada vez que lanzamos el comando ``git push``
+  * indica los ficheros a ignorar cada vez que lanzamos el comando ```git push```
 
-*  *  *
+* Comando básico para ver las ayudas.
 
-Comando básico para ver las ayudas.
-
+```bash
     git
     git --help
     man git
+```
 
 **Salida:**
 
-Estructura básica del comando Git:
+* Estructura básica del comando Git:
 
-```git
+```bash
     [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
               [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
               [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
