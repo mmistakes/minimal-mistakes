@@ -1,6 +1,5 @@
 ---
 layout: single
-classes: wide
 title:  "내 언어로 글로벌 검색 서비스 제공하기 종합 가이드 - PART 2"
 tagline: "Providing global search services in your language"
 header:
@@ -34,6 +33,8 @@ AWS의 소프트웨어로 Candidate Idea를 구체화한 upload system이다.
 
 ---
 
+
+
 #### Upload System 구성하기
 
 
@@ -52,7 +53,13 @@ API Gateway에서의 목적은 upload 에 해당하는 API call이 호출되면 
 
 
 
+
+
+
+
 ---
+
+
 
 ##### Lambda for uploading projects
 
@@ -61,6 +68,8 @@ API Gateway에서의 목적은 upload 에 해당하는 API call이 호출되면 
 [upload-batch-projects](https://github.com/KineMasterCorp/MultilingualSearch-sample/tree/main/lambda/upload-projects/upload-batch-projects) lambda 코드로 lambda 함수를 만들고 API Gateway와 연결하자. 
 
 👉 serverless framework를 통해 패키지를 구성하여 배포해도 된다. 
+
+
 
 ![uploading-labmda](../assets/images/upload-batch-projects-lambda.png)
 
@@ -73,10 +82,10 @@ API Gateway에서의 목적은 upload 에 해당하는 API call이 호출되면 
 - AmazonDynamoDBFullAccess
 
   
+  
+  
 
 👉 편의상 컨텐츠에 해당하는 데이터를 S3와 같은 저장소에 삽입하는 코드는 생략했다. 필요하다면 저장소 권한도 부여해야 한다.
-
-
 
 ![upload-batch-projects-iam](../assets/images/upload-batch-projects-iam.png)
 
@@ -101,7 +110,11 @@ API Gateway에서의 목적은 upload 에 해당하는 API call이 호출되면 
 
 
 
+
+
 ---
+
+
 
 ##### Database with DynamoDB
 
@@ -113,15 +126,25 @@ API Gateway에서의 목적은 upload 에 해당하는 API call이 호출되면 
 
 
 
+
+
 또한, 검색 엔진과 data 동기화가 되어야 하기 때문에 DynamoDB에 삽입/삭제와 같은 변경이 생긴다면 이를 알려주는 트리거 기능 또한 설정해야한다. 
 
+
+
 <img src="../assets/images/dynamodb-trigger.png" alt="dynamodb-trigger" style="zoom:50%;" />
+
+
 
 이제 DynamoDB에서 변경이 있을 때마다 index-project 로 해당 정보가 notification 된다.
 
 
 
+
+
 ---
+
+
 
 ##### Lambda for indexing to Search Engine
 
@@ -130,6 +153,10 @@ API Gateway에서의 목적은 upload 에 해당하는 API call이 호출되면 
 |                            Lambda                            | Lambda Language |
 | :----------------------------------------------------------: | :-------------: |
 | [index-project](https://github.com/KineMasterCorp/MultilingualSearch-sample/tree/main/lambda/index-project) |    `Python`     |
+
+
+
+
 
 이번에는 python으로 되어있는 코드를 packaging하여 lambda 함수로 배포해보자. 
 
@@ -164,6 +191,8 @@ zip -g deploy_package.zip lambda_function.py
 
 index-project lambda 코드에서는 dynamoDB로 부터 전달된 메타데이터(title/tags) 정보를 검색엔진에 indexing 한다. 눈여겨 봐야할 점은 사용자의 검색어 그대로 indexing 하는 것이 아니라, 서두에 언급한 바와 같이 검색어를 영어로 변경하여 indexing 해야 하는 점이다.
 
+
+
 ```python
 	try:
         # The Lambda function calls the TranslateText operation and passes the 
@@ -189,6 +218,8 @@ index-project lambda 코드에서는 dynamoDB로 부터 전달된 메타데이�
             translated_tags.append(tag) # Put the original tag string when translation failed.
 ```
 
+
+
 index-project 코드 중 일부이다. AWS python SDK(Boto3)를 사용하여 translate 기능을 수행한다. translate_text의 인자인 SourceLanguageCode에 'auto' 값이 아닌 정확한 target을 지정한다면 조금 더 좋은 번역 품질을 기대할 수 있다. 
 
 
@@ -199,6 +230,8 @@ index-project lambda 함수 또한, IAM 권한을 부여해야 한다.
 * TranslateReadOnly
 * AmazonOpenSearchServiceFullAccess
 * AWSXRayDaemonWriteAccess
+
+
 
 
 
