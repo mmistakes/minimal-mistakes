@@ -9,9 +9,7 @@ sidebar:
 ---
 
 # 백준 python 50
-- https://www.acmicpc.net/workbook/view/459
-
-## 14번 화성수학 ~ 24번 주사위 세개
+문제사이트 : https://www.acmicpc.net/workbook/view/459
 
 
 ### 14번 화성수학
