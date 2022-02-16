@@ -9,7 +9,7 @@ sidebar:
     nav: "docs"
 ---
 
-# <a style="color:#00adb5">순열 / 조합 / 부분 집합 응용</a>
+# <a style="color:#00adb5">순열 응용</a>
 
 ## <a style="color:#00adb5">순열 ( Permutation ) </a>이란 무엇인가 ?
 <b><a style="color:red">서로 다른 것들 중 몇 개를 뽑아서 한 줄로 나열하는 것</a></b><br>
@@ -318,3 +318,14 @@ XOR 연산 ( 같으면 0, 다르면 1 )
 #### 알고리즘
 배열을 오름차순으로 정렬한 후 시작한다.
 아래 과정을 반복하여 사전 순으로 다음으로 큰 순열을 생성한다 ( 가장 큰 내림차순 순열을 만들 때까지 반복한다. )
+
+
+
+# <a style="color:#00adb5">조합 응용</a>
+
+## <a style="color:#00adb5">조합 ( Combination ) </a>이란 무엇인가 ?
+
+
+# <a style="color:#00adb5">부분 집합 응용</a>
+
+## <a style="color:#00adb5">부분 집합  </a>이란 무엇인가 ?
