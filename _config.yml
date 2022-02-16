@@ -104,12 +104,12 @@ analytics:
 author:
   name             : "Hannah Seong"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "small efforts will **pay off**"
+  bio              : "**Small Efforts** will pay off"
   location         : "South Korea"
   links:
-    - label: "Email"
+    - label: "Email : iamhmin09@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
-      url: "iamhmin09@gmail.com"
+      # url: "iamhmin09@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
