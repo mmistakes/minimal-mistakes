@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "백준 python50(1 ~ 저작권)"
+title: "백준 python50(화성수학 ~ 주사위 세개)"
 categories: 알고리즘,기타
-tag: [python, 문제, blog, github, 파이썬, 알고리즘, 화성수학, 소음, 시험성적, 세 수 중 두번째로 큰 수, 문자열 반복, 소인수 분해, 수들의 합, 윤년, 평균점수, 최소공배수, 백준, python50, 풀이, 답]
+tag: [python, 문제, blog, github, 파이썬, 알고리즘, 화성수학, 소음, 시험성적, 세 수 중 두번째로 큰 수, 문자열 반복, 소인수 분해, 수들의 합, 윤년, 평균점수, 최소공배수, 주사위 세개, 백준, python50, 풀이, 답]
 toc: true
 sidebar:
   nav: "docs"
