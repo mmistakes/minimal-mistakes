@@ -1,4 +1,3 @@
-today I learned week 2
 
 - 목차
 
