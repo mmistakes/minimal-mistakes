@@ -106,10 +106,11 @@ author:
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "**Small Efforts** will pay off"
   location         : "South Korea"
+  Email : "iamhmin09@gmail.com"
   links:
-    - label: "Email : iamhmin09@gmail.com"
+    - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "iamhmin09@gmail.com"
+      #url: "iamhmin09@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
