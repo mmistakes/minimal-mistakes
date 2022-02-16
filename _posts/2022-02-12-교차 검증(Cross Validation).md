@@ -133,7 +133,7 @@ Stratified K-Fold Cross Validation 방식은 각 레이블 별로 데이터 분�
 
 K번 학습과 검증이 반복될 때마다 도출되는 각각의 결과의 편차가 크게 될 것입니다.
 
-그렇게 되면 일반화된 모델을 얻기 어려운 문제가 있습니다.
+그렇게 되면 일반화된 모델을 얻는 데 방해가 되겠죠.
 
 이를 해결하기 위해 Stratified K_Fold Cross Validation을 사용하게 되면
 
