@@ -1,4 +1,4 @@
-# [CSS] Block vs Inline
+# [CSS] Block & Inline
 
 대부분의 HTML element(이하 요소)는 block 요소입니다.
 
