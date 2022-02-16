@@ -17,17 +17,17 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "ko-KR, en-US"
 title                    : "Ha-mmer"
-title_separator          : "-"
+title_separator          : "|"
 subtitle                 : "always strive to be better"
 name                     : "Hannah Seong"
-description              : "An amazing website."
+description              : "Hannah's blog"
 url                      : "https://iamhmin.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/20220216_181228"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -104,8 +104,8 @@ analytics:
 author:
   name             : "Hannah Seong"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "Always Strive to be **Better**"
-  location         : "Somewhere"
+  bio              : "small efforts will **pay off**"
+  location         : "South Korea"
   email            : "iamhmin09@gmail.com"
   links:
     - label: "Email"
@@ -289,3 +289,4 @@ defaults:
       share: true
       related: true
       show_date: true
+date_format: "%Y-%m-%d"      
