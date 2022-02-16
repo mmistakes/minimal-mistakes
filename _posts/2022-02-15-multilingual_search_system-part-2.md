@@ -252,4 +252,102 @@ index-project lambda 함수 또한, IAM 권한을 부여해야 한다.
 
 ##### OpenSearch 설정
 
-이제 마지막으로 OpenSearch를 설정하면 upload system의 구성을 완료 할 있다.
+이제 마지막으로 OpenSearch를 설정하면 upload system의 구성을 완료 할 수 있다.
+
+###### OpenSearch Instance 생성
+1. AWS Console 의 OpenSearch 에서 Create Domain 클릭
+2. Domain name 입력 (예: multilingual-search-sample)
+3. Deployment type 은 "Development and testing" 으로 선택하고 version 은 latest 로 선택한다.
+4. Auto-Tune 섹션은 default 로 그대로 둔다.
+5. Data nodes 섹션에서 Instance type 을 "t3.small.search" 로 선택한다. 우리는 테스트 용도로 사용할 것이기 때문에 가장 작은 인스턴스로도 충분하다. 컴퓨팅 파워가 높은 instance 를 선택할 경우 비용이 청구될 수도 있으므로 주의하자. 이 섹션의 다른 부분은 default 그대로 두면 된다.
+6. Dedicated master nodes 섹션은 default 로 그대로 둔다. (Disable 상태)
+7. Warm and cold data storage 와 Snapshot configuration 섹션도 그대로 둔다.
+8. Network 섹션에서 Network 는 Public access 로 선택한다.
+9. Fine-grained access control 을 Enable 하고 Create master user 를 선택해서 username 과 password 를 입력해 master user 를 생성하자. 이 master user 는 OpenSearch dashboard 에 접속할 때 사용한다.
+10. SAML 과 Amazon Cognito authentication 섹션은 그대로 둔다.
+11. Access policy 섹션에서 "Only use fine-grained access control" 을 선택한다.
+12. 나머지는 그대로 두고 Create 버튼을 눌러 Domain 을 생성하자. Domain 생성이 완료 되기 까지 약간의 시간이 걸릴 수 있다. Domain 생성이 완료 되면 Domain 의 status 가 Active 로 바뀔 것이다.
+
+###### OpenSearch Index 생성
+
+OpenSearch Domain 생성이 완료 되면 실제 검색에 필요한 인덱스를 생성해야 한다. DynamoDB 에 문서가 Upload 될 때 index-project Lambda 가 호출될 것이고, 이 Lambda 에서 OpenSearch 로 Upload 된 문서의 meta data 를 indexing 하는데 이 정보를 저장할 Index 를 생성하는 것이다.
+
+우리는 OpenSearch dashboard 의 Dev Tool 을 이용해 Index 를 생성해 볼 것이다. 물론 DEV Tool 에서 실행하는 request 를 Domain 의 endpoint 로 보내는 방법을 이용해서도 동일한 index 생성이 가능하다.
+OpenSearch Domain 의 Name 을 클릭하면 상세 정보가 나오는데 이 화면의 우측 상단의 OpenSearch Dashboards URL 을 클릭하면 OpenSearch dash bodard 로 접속할 수 있다. 앞서 생성한 master user 의 username 과 password 를 입력해서 접속하자.
+좌측 상단의 OpenSearch Dashboards 로고 아래에 있는 메뉴를 클릭해서 나오는 창에서 Management 섹션의 Dev Tools 를 클릭하면 OpenSearch 명령어를 쓸 수 있는 Console 이 나타난다.
+여기에서 아래 명령어를 입력하고 우측 실행 버튼을 클릭해서 실행하면 Index 가 생성된다.
+
+```
+PUT projects
+{
+  "mappings": {
+    "properties": {
+      "projectID": {
+        "type": "keyword",
+        "index": false
+      },
+      "title": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "title_translated": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "english": {
+            "type": "text",
+            "analyzer": "english"
+          }
+        }
+      },
+      "tags": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "tags_translated": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "english": {
+            "type": "text",
+            "analyzer": "english"
+          }
+        }
+      },
+      "imageURL": {
+        "type": "keyword",
+        "index": false
+      }
+    }
+  }
+}
+```
+
+위의 코드는 projectID, title, title_translated, tags, tags_translated, imageURL 필드를 가지는 Index 를 생성하는 것이다. 각 필드의 설명은 아래 테이블을 참조하자.
+
+| : Field : | Description |
+| :--------------------: | :-------------: |
+| projectID | 고유한 문서의 id 값 |
+| title | 문서의 제목 |
+| title_translated | 영어로 번역된 title |
+| tags | 문서의 tag 들 |
+| tags_translated | 영어로 번역된 tags |
+| imageURL | 문서 데이터 |
+
+title_translated 필드와 tags_translated 필드는 multiple field 로 english field 를 가지는데 여기에는 english analyzer 로 분석한 결과가 자동으로 들어가게 된다. 이는 형태소 분석을 통해 완전히 일치하지 않는 키워드도 검색을 가능하게 하도록 함이다.
