@@ -1,5 +1,3 @@
-today I learned week 1
-
 - 목차
 
 1. 변수가 필요한 이유
