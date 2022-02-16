@@ -1,6 +1,8 @@
 ---
-title: "교차 검증(Cross Validation)"
+title: "교차 검증(Cross Validation) 1"
 ---
+K-Fold CV, LOOCV, Stratified CV
+
 ----
 
 안녕하세요. 데이터 사이언티스트를 위한 정보를 공유하고 있습니다.

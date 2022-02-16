@@ -1,6 +1,8 @@
 ---
-title: "데이터 스케일링"
+title: "데이터 스케일링(Data Scaling)"
 ---
+StandardScaler, MinMaxScaler, MaxAbsScaler, RobustScaler
+
 ----
 
 안녕하세요.

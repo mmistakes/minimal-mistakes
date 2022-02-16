@@ -1,6 +1,8 @@
 ---
-title: "학습 데이터와 테스트 데이터의 분리(train_test_split())"
+title: "학습 데이터와 테스트 데이터의 분리"
 ---
+train_test_split(): train data / test data
+
 ----
 
 안녕하세요.

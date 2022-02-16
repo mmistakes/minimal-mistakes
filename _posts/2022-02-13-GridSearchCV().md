@@ -1,6 +1,8 @@
 ---
-title: "GridSearchCV()"
+title: "교차 검증(Cross Validation) 2"
 ---
+GridSearch CV
+
 ----
 
 안녕하세요.
