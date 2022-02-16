@@ -23,7 +23,7 @@ Georgia, "Times New Roman", Times, serif 라는 값을 해석해보자면,
 
 사용자가 어떤 브라우저를 사용할지 모르기 때문에 font-family 값에는 보통 여러가지 폰트를 나열합니다. 가장 뒤에 위치한 serif같은 폰트는 모든 브라우저에서 지원하는 폰트입니다.
 
-
+---
 
 ### 02. font size
 
@@ -35,7 +35,7 @@ Georgia, "Times New Roman", Times, serif 라는 값을 해석해보자면,
 
 `h1~h5` 태그는 heading(제목)을 주로 작성하는 태그입니다. 1에서 5로 숫자가 커질수록 글씨크기가 점점 작아집니다. 하지만 css에서 폰트크기를 바꿀 수 있습니다.
 
-
+---
 
 ### 03. font weight
 
@@ -50,7 +50,7 @@ Georgia, "Times New Roman", Times, serif 라는 값을 해석해보자면,
 - 숫자 700과 bold는 같은 두께입니다.
 - 보통은 두껍거나 or 아니거나 두가지 경우면 되므로 간편하게 bold 값을 지정합니다.
 
-
+---
 
 ### 04. font style
 
@@ -60,7 +60,7 @@ a {
 
 `font-style` 을 이용하여 글씨 스타일을 바꿀 수 있습니다. italic이라는 값을 지정하면 *이탤릭체*로 변하게 됩니다.
 
-
+---
 
 ### 05. color
 
@@ -93,3 +93,6 @@ h1 {
 h1 {
  color: hsl(4, 82%, 57%);
 }
+
+
+
