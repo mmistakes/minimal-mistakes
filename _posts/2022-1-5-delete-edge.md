@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "자꾸 귀찮게 하는 엣지 삭제법"
-categories: 알고리즘,기타
+categories: Etc
 tag:
   [
     python,

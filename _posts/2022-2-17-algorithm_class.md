@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "알고리즘 - 팰린드룸, run, min-max, 전기버스 "
-categories: 알고리즘,기타
+categories: 알고리즘
 tag: [python, 문제, blog, github, 파이썬, 알고리즘, 기본, 기초, 팰린드룸, run, min-max, 전기버스, 멀티캠퍼스, swea, sw acdemy]
 toc: true
 sidebar:

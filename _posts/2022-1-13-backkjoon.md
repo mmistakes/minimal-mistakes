@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "백준 python50(1 ~ 저작권)"
-categories: 알고리즘,기타
+categories: 알고리즘
 tag: [python, 문제, blog, github, 파이썬, 알고리즘, 사칙연산, 나머지, 초콜릿, 자르기, 오늘 날짜, 등록, 오븐, 인공지능, 시계, 저작권, 백준, python50, 풀이, 답]
 toc: true
 sidebar:
