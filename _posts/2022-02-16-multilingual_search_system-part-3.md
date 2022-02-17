@@ -246,6 +246,10 @@ return response
 
 
 
+---
+
+
+
 ##### DynamoDB to store the results of translation / syntax parsing
 
 
@@ -259,6 +263,20 @@ return response
 
 
 
+
+---
+
+
+
+Conclusion
+
+
+
+이제까지 Multilingual Search System 을 구성하는 방법을 가이드 해 드렸다. 위에 열거한 방법만으로도 적절한 선에서 내 언어로 global search를 하도록 도와줄 것이다.
+
+그러나 사용자가 검색한 문구에 동음이의어가 존재했을 경우 어떻게 효과적으로 처리해야 하는지, 혹은 사용자의 검색 문구에 조금 더 효과적으로 가중치를 부여할 것인지 등과 같이 몇가지 과제도 여전히 남아있다. 
+
+하지만 중요한 것은 사용자에게 이전보다 조금 더 좋은 검색 경험을 제공해 줄 수 있다는 점이며, 현재보다 조금 더 발전할 여지가 있다는 것이다.
 
 
 
