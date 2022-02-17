@@ -6,57 +6,6 @@ main:
     url: /tags/
   - title: "Search"
     url: /search/
-docs:
-  - title: JAVA
-    children:
-      - title: "객체지향 개념 정리(OOP) 1편"
-        url: /oop1/
-      - title: "객체지향 개념 정리(OOP) 2편"
-        url: /oop2/
-      - title: "객체지향 개념 정리(OOP) 3편"
-        url: /oop3/
-      - title: "에러 처리"
-        url: /error/
-      - title: "컬렌션 프레임워크(Collection Framework) 1편"
-        url: /collection1/
-      - title: "컬렌션 프레임워크(Collection Framework) 2편"
-        url: /collection2/
-      - title: "ArrayList 메서드"
-        url: /Arraylist-1/
-      - title: "Array"
-        url: /Array-1/
-  - title: Servlet/JSP
-    children:
-      - title: "짧게 정리(이론 위주)"
-        url: /jsp1/
-      - title: "JSP 기초 1번째"
-        url: /jsp2/
-      - title: "JSP 내장객체"
-        url: /jsp3/
-      - title: "JSP 액션태그1"
-        url: /jsp4/
-  - title: JAVASCRIPT
-    children:
-      - title: "자바스크립트 기초(모르는 것) 1편"
-        url: /javascript-base1/
-      - title: "자바스크립트 기초(모르는 것) 2편"
-        url: /javascript-base2/
-      - title: "자바스크립트 기초(모르는 것) 3편"
-        url: /javascript-base3/
-      - title: "자바스크립트 기초(모르는 것) 4편"
-        url: /javascript-base4/
-  - title: Algorithm
-    children:
-      - title: "백준 알고리즘 1단계"
-        url: /algorithm1/
-      - title: "백준 알고리즘 2단계"
-        url: /algorithm2/
-      - title: "백준 알고리즘 3단계"
-        url: /algorithm3/
-  - title: HTML
-    children:
-      - title: "HTML 기초 다시보기 1편(내가 햇갈린것 정리)"
-        url: /html/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
