@@ -28,4 +28,8 @@ page_css:
 
 * Periódicamente **GIT** realiza la **recolección de basura** en el [Repositorio] , este proceso de rempaquetar los objetos en un solo objeto que comprende solo los **'BLOB'** originales y sus deltas posteriores **(partes internas del funcionamiento del GIT)**
 
-* Para ganar eficiencia , el proceso de recolección de basura **(garbage collection)** y se puede forzar a realizar en cualquier momento
+* Para ganar eficiencia , el proceso de recolección de basura **(garbage collection)** y se puede forzar a realizar en cualquier momento mediante el siguiente comando
+
+```bash
+git gc
+```
