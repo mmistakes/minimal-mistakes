@@ -17,10 +17,14 @@ tags:
   - git-manual
 ---
 
-## Git - commit
+## Git - Commit
 
-* Son los archivos que están representados dentro una **instantánea/snapshot/commits** almacenada
+* Son los archivos que están representados dentro una **instantánea/snapshot/commits** almacenada en el **[Repositorio Local]**
+
   * Contienen **metadatos** adicionales que almacenan el contenido de los cambios que le hicimos a nuestros archivo y datos
+
+* Cuando se crea un **commit** , este apunta a un **tree** que a su vez apunta al **blob** que representa los **archivos** , **directorios** o elementos que hayamos **agregado** o **modificado** al proyecto con el que estemos trabajando así como los **metadatos** más importantes como por ejemplo quién y cuando se hizo el **commit**
+  * El **commit** lleva implícito un **SHA-1 checksum**
 
 * **[Commits/Instantáneas/Snapshots]** son sinónimos en este caso en concreto
 

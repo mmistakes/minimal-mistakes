@@ -26,25 +26,40 @@ page_css:
 git cat-file --opción <commit>
 ```
 
-* Mostrar el tipo de objeto que es
+* Mostrar el tipo de objeto que es indicando el **SHA-1** del **commit**
 
 ```bash
 git cat-file -t d6c6521
 commit
 ```
 
-* Mostrar el tamaño del objeto
+* Mostrar el tamaño del objeto indicando el **SHA-1** del **commit**
 
 ```bash
  git cat-file -s d6c6521
 173
 ```
 
-* Mostrar todo el contenido del objeto
+* Mostrar la información del commit indicando su **SHA-1** del **commit**
+
+```bash
+git cat-file commit d6c6521
+tree 169b460b1d9a7d1275c24bd75dbe8868cfeb5042
+author usuario <correo@gmail.com> 1644928954 +0100
+committer usuario <correo@gmail.com> 1644928954 +0100
+```
+
+* Mostrar todo el contenido de un objeto indicado el **SHA-1** del **commit**
 
 ```bash
 git cat-file -p d6c6521
 tree 169b460b1d9a7d1275c24bd75dbe8868cfeb5042
 author usuario <correo@gmail.com> 1644928954 +0100
 committer usuario <correo@gmail.com> 1644928954 +0100
+```
+
+* Mostrar datos de los objetos 'blob' y arboles 'tree' de un historial de commits
+
+```bash
+git cat-file -p HEAD^{tree}
 ```
