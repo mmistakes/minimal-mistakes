@@ -48,7 +48,7 @@ class TreeNode {
 		TreeNode right;  // 오른쪽 자식 노드 
 ```
 
-![이진트리.png](/assets/images/posts/2022-02-04/이진트리.png)
+![이진트리.png](/assets/images/posts/2022-02-04/1.png)
 
 ## 이진 탐색 트리(binary search tree)
 
