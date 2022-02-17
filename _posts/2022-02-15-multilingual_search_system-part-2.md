@@ -44,13 +44,13 @@ AWS의 소프트웨어로 Candidate Idea를 구체화한 upload system이다.
 
 
 
-|           Path           |  Type  |                            Lambda                            |
-| :----------------------: | :----: | :----------------------------------------------------------: |
-| `/upload-batch-projects` | `POST` | [upload-batch-projects](https://github.com/KineMasterCorp/MultilingualSearch-sample/tree/main/lambda/upload-projects/upload-batch-projects) with `NodeJS` |
+|    Path    |  Type  |                            Lambda                            |
+| :--------: | :----: | :----------------------------------------------------------: |
+| `/project` | `POST` | [upload-batch-projects](https://github.com/KineMasterCorp/MultilingualSearch-sample/tree/main/lambda/upload-projects/upload-batch-projects) with `NodeJS` |
 
 API Gateway에서의 목적은 upload 에 해당하는 API call이 호출되면 AWS lambda를 이용하여 컨텐츠는 저장소에, title과 tags와 같은 메타데이터는 database에 저장하는 것이다.
 
-우선 적절한 이름으로 AWS의 API Gateway를 생성해보자. 생성이 되었다면, 위의 테이블 항목과 같이 API Gateway의 Path를 POST 타입으로 생성하자. 이제 실제 Call이 왔을 때 실행시켜줄 lambda 함수와 연결할 준비를 하면 된다.
+우선 적절한 이름으로 AWS의 API Gateway를 생성해보자. 생성이 되었다면, 위의 테이블 항목과 같이 API Gateway의 Path를 POST 타입으로 생성하자.  이제 실제 Call이 왔을 때 실행시켜줄 lambda 함수와 연결할 준비를 하면 된다.
 
 
 
@@ -121,9 +121,7 @@ API Gateway에서의 목적은 upload 에 해당하는 API call이 호출되면 
 
 
 
-이제 컨텐츠 정보가 담길 DynamoDB를 생성하자.  여기에서는 table 이름을 project로, 파티션 키는 유니크한 값을 가질 수 있는 project id 값으로, 정렬 키는 title로 설정했다. 
-
-
+이제 컨텐츠 정보가 담길 DynamoDB를 생성하자.  여기에서는 table 이름을 project로, 파티션 키는 유니크한 값을 가질 수 있는 project id 값으로, 정렬 키는 선택 사항이므로 여기에서는 임의의 항목으로 설정해주었다.
 
 <img src="../assets/images/dynamodb-create.png" alt="dynamodb-create" style="zoom: 50%;" />
 
@@ -252,4 +250,7 @@ index-project lambda 함수 또한, IAM 권한을 부여해야 한다.
 
 ##### OpenSearch 설정
 
-이제 마지막으로 OpenSearch를 설정하면 upload system의 구성을 완료 할 있다.
+이제 마지막으로 OpenSearch를 설정하면 upload system의 구성을 완료 할 수 있다.
+
+
+
