@@ -73,7 +73,6 @@ for i in range(len(counts)-2):
 
 
 ```python
-# 풀이를 작성해 주세요
 # max - min
 
 # 계산반복횟수 'r' 
@@ -91,9 +90,9 @@ for i in range(1, r+1):
 
     # max , min 구하는 for문
     for num in nums[1:]:
-        if max < num:
-            max = num
-        if num < min:
+        if max < num: # max 보다 num이 크면
+            max = num 
+        if min > num: # min 보다 num이 작으면
             min = num
 
     result = max - min
