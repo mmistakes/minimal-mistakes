@@ -4,6 +4,7 @@ title:  "ArrayList 메서드"
 categories: JAVA 
 tag: [JAVA, ArrayList]
 toc: true
+toc_sticky: true
 author_profile: false
 sidebar:
   nav: "docs"

@@ -4,6 +4,7 @@ title:  "컬렉션 프레임워크(Collection Framework) 2편"
 categories: JAVA 
 tag: [JAVA, 컬렉션프레임워크, HashSet, TreeSet, 자바의 정석, 이진트리, HashMap]
 toc: true
+toc_sticky: true
 author_profile: false
 sidebar:
   nav: "docs"
