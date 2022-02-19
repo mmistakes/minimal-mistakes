@@ -9,6 +9,7 @@ sidebar:
     nav: "docs"
 
 ---
+# <a style="color:#00adb5">오버라이딩 ( Overriding ) vs 오버로딩 ( Overloading )</a>
 
 ## <a style="color:#00adb5">오버라이딩 ( Overriding )</a>
 
@@ -28,6 +29,8 @@ sidebar:
 - 메서드 이름은 같아야 한다.
 - 매개변수의 개수, 순서, 타입이 같아야 한다.
 - 리턴 타입도 동일해야 한다.
+- 접근 재한자는 부모 보다 범위가 넓거나 같아야 한다.
+- 조상보다 더 큰 예외는 던질 수 없다.
 
 ### <a style="color:#00adb5">Overriding</a> 의 장점
 - 메서드 하나로 여러 객체를 다루고 객체마다 다른 기능을 사용할 수 있다.
