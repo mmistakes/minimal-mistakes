@@ -1,6 +1,6 @@
 # User interface text and labels
 
-# English (default)
+Korean
 # -----------------
 en: &DEFAULT_EN
   skip_links                 : "Skip links"

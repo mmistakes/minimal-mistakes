@@ -105,14 +105,14 @@ author:
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "잉코딩의 블로그입니다."
   location: "South Korea"
-  # email            : "jjs39@kakao.com"
+  email: "wltn39@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:wltn39@gmail.com"
-    - label: "Website"
+    - label: "Blog"
       icon: "fas fa-fw fa-link"
-      url: "https://wltn39.github.io/"
+      url: "https://blog.naver.com/esperanza_7"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/wltn39"
@@ -192,7 +192,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 3 # amount of posts to show
+paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
