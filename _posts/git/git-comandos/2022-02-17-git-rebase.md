@@ -20,11 +20,11 @@ page_css:
 
 ## Git - Rebase
 
-* Revierte todos los **commits** desde que la **rama actual** la cual se separó de su ``|Repositorio Remoto|`` desde el **upstream** y luego los vuelve a aplicar uno por uno sobre los **commits** del **[HEAD]** de **upstream**
+* Este comando que se utiliza para cambiar la **base** de una rama determinada , así permitir la **integración de un commit** en desarrollo con otro **commit** y fusionar sus contenidos una vez solucionados los posibles conflictos entre ambos **commits** mediante un editor de código
 
-```bash
-git rebase upstream
-```
+  * Cambiar la base de una **rama** permite integrar desarrollos lineales pero **elimina** la **historia** de las **ramas** utilizadas e integradas
+
+  * Se suele utilizar como punto de unión el **último commit** de la **rama** para hacer la fusión de los **commits**
 
 ### Ejemplos prácticos
 
@@ -32,7 +32,7 @@ git rebase upstream
 
   * Elegimos un **commit** que se encuentre por debajo del **commit** que nos interese
 
-  * Para este ejemplo eliminaremos el **commit b11da63** el cual tiene un archivo con unos datos específicos que son diferente respecto al commit que le sigue
+  * Para este ejemplo eliminaremos el **commit b11da63** el cual tiene un archivo con unos datos específicos que son diferente respecto al **commit** que le sigue
 
 ```bash
 * 66fe18b (HEAD -> master)(origin/master, origin/HEAD) x^2 button A
