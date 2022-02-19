@@ -1,14 +1,12 @@
 ---
 layout: single
-title: "알고리즘 - 팰린드룸, run, min-max, 전기버스 "
+title: "알고리즘-팰린드룸,run,min.max,전기버스"
 categories: 알고리즘
 tag: [python, 문제, blog, github, 파이썬, 알고리즘, 기본, 기초, 팰린드룸, run, min-max, 전기버스, 멀티캠퍼스, swea, sw acdemy]
 toc: true
 sidebar:
   nav: "docs"
 ---
-
-알고리즘 :현실의 문제를 컴퓨터가 해결하는 과정 (어떻게 해결할지 사람이 입력)
 
 ### 1. 팰린드룸
 
@@ -30,7 +28,7 @@ else:
     뒤에서부터 읽어도 같아요.
 
 
-### 2. run 구현 (ft. baby-ji 게임)
+### 2. run 구현 (ft. baby-ji n게임)
 
 
 ```python

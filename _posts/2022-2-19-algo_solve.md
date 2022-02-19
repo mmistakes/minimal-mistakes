@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "알고리즘 - SWEA 색칠하기, 부분집합 "
+title: "알고리즘 - SWEA 색칠하기, 부분집합"
 categories: 알고리즘
 tag: [python, 문제, blog, github, 파이썬, 알고리즘, 비트연산자, 색칠하기, &, <<, 부분집합의 합, swea, sw acdemy]
 toc: true
