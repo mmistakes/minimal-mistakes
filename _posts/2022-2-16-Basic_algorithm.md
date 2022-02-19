@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "알고리즘 기초 - 스택&큐 , DFS&BFS"
+title: "알고리즘 - 스택&큐 , DFS&BFS"
 categories: 알고리즘
 tag: [python, 문제, blog, github, 파이썬, 알고리즘, 기본, 기초, 스택, 큐, DFS, BFS]
 toc: true
