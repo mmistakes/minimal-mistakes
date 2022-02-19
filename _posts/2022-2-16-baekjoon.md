@@ -8,8 +8,7 @@ sidebar:
   nav: "docs"
 ---
 
-# 백준 python 50
-문제사이트 : https://www.acmicpc.net/workbook/view/459
+[문제출처 :백준 python 50](https://www.acmicpc.net/workbook/view/459)
 
 
 ### 14번 화성수학
