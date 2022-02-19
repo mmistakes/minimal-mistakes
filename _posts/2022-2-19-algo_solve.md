@@ -64,7 +64,7 @@ for tc in range(1, T+1):
                 sub_sum.append(nums[i]) 
                 # sub_sum에 nums[i]을 리스트로 추가하고 
                 sum_value += nums[i] # sum_value 에도 num[i] 값 추가 
-        if len(sub_sum) == n and sum_value = k:
+        if len(sub_sum) == n and sum_value == k:
             # 부분집합 원소갯수가 n개 이고 부분집합의 합이 k 면 cnt 증가
             cnt += 1 
      
