@@ -8,7 +8,7 @@ sidebar:
   nav: "docs"
 ---
 
-## SWEA LIST_2 문제풀이 (색칠하기, 부분집합의 합)
+## SWEA - LIST_2 
 
 [문제 출처 : SW Expert Academy](https://swexpertacademy.com/main/learn/course/subjectDetail.do?courseId=AVuPDN86AAXw5UW6&subjectId=AWOVF-WqqecDFAWg)
 
