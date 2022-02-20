@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "ssallem Tech Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Seong Ju Kim"
+name                     : "Seong Ju Kim2"
 description              : "ssallem's personal tech blog"
 url                      : "https://github.com/ssallem"
 baseurl                  : # the subpath of your site, e.g. "/blog"
