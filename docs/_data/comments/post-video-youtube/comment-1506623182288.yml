@@ -1,7 +1,0 @@
-_id: 87276200-a47a-11e7-adb3-e700074bdbd8
-message: "Thanks for an awesome theme. I've really enjoyed getting to use it.\r\n\r\nI'm not sure if this is the right place to ask but I'm trying to get a magnific popup working for a youtube iframe.\r\n\r\nNeither the [magnific  youtube popup](http://dimsemenov.com/plugins/magnific-popup/) example nor the [code pen example](https://codepen.io/dimsemenov/pen/zjtbr) work for me.\r\n\r\nI added them directly to a markdown page with the javascript wrapped in script tags.\r\n\r\nI've tried adding the javascript as a file using head_scripts too.\r\n\r\nAny help much appreciated!"
-name: siva
-email: 3a5235fe982bc1289695aa54e7274b51
-url: 'https://www.spiraltaiji.com'
-hidden: ''
-date: '2017-09-28T18:26:22.283Z'
