@@ -42,12 +42,13 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 ```
 
-### 1. 정부24 (건축물대장)
+### 1. 정부24 (주민등록, 지방세)
 
 - child(i) i만 바꾸면 다른 서비스 연결
+- 등본, 건축물 대장 등 
 
 ```python
-# 자동로그인
+# 자동로그인 구현 
     # 접속자의 id와 pw을 넣어주세요
 
 my_id = " "
@@ -85,9 +86,11 @@ driver.find_element_by_id("applyBtn").click()
 
 
 
-### 2. 법원 가족관계 증명
+### 2. 법원 (가족관계 관련)
 
 - 여기도 child(i) i만 바꾸면 다른 서비스 연결 
+
+  ![image-20220221001323477](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\image-20220221001323477.png)
 
 ```python
 # 가족관계 페이지 진입
@@ -100,11 +103,37 @@ time.sleep(2)
 driver.find_element_by_css_selector('ul.innerContent > li:nth-child(1)').click()
 ```
 
-### 3. 홈택스 - 연말정산
+### 3. 홈택스 (국세 관련 )
+
+- 여기도 child 안의 숫자 바꿔주면 됨
 
 ```python
 path = chromedriver_autoinstaller.install()
 driver = webdriver.Chrome(path)
 driver.get("https://www.hometax.go.kr/")
 time.sleep(2)
+driver.find_element_by_link_text("로그인").click( )
+time.sleep(2)
+driver.find_element_by_link_text("아이디 로그인").click( )
+
+idform = driver.find_element_by_id("iptUserId")
+pwform = driver.find_element_by_id("iptUserPw")
+
+idform.send_keys(my_id)
+pwform.send_keys(my_pw)
+
+time.sleep(2)
+
+# 로그인하면 1번은 마이홈택스로 바뀜
+driver.find_element_by_css_selector('#group8861269 > li:nth-child(2)').click()
 ```
+
+![image-20220221002526378](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\image-20220221002526378.png)
+
+```
+가장 자주 찾을만한 3개 사이트를 연결하며 살짝 구현해보았습니다.  
+하나의 사이트에서 대부분의 서류발급 페이지 연결됐으면 합니다.
+그리고 사람들이 자주하는 업무(대출, 부동산 등기 등)을 기준으로  
+필요한 서류들이 안내되고 한 눈에 정리되면 어떨까? 생각해봅니다. 
+```
+
