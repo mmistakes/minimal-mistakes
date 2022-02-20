@@ -45,7 +45,6 @@ from selenium import webdriver
 ### 1. 정부24 (주민등록, 지방세)
 
 - child(i) i만 바꾸면 다른 서비스 연결
-- 등본, 건축물 대장 등 
 
 ```python
 # 자동로그인 구현 
@@ -54,6 +53,8 @@ from selenium import webdriver
 my_id = " "
 my_pw = " "
 ```
+
+![Untitled](https://user-images.githubusercontent.com/67591105/154850924-29179f26-0d71-4584-97ac-042a8632f3b5.png)
 
 ```python
 # 정부24 페이지 진입
@@ -84,13 +85,12 @@ driver.find_element_by_css_selector('li.item.swiper-slide1.swiper-slide.swiper-s
 driver.find_element_by_id("applyBtn").click()
 ```
 
-
+![image-20220221001131996](https://user-images.githubusercontent.com/67591105/154850739-893ba7bc-0d79-478e-8d0e-e5fd1a2ae68b.png)
 
 ### 2. 법원 (가족관계 관련)
 
 - 여기도 child(i) i만 바꾸면 다른 서비스 연결 
 
-  ![image-20220221001323477](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\image-20220221001323477.png)
 
 ```python
 # 가족관계 페이지 진입
@@ -102,6 +102,8 @@ time.sleep(2)
 # 가족관계 증명서 클릭
 driver.find_element_by_css_selector('ul.innerContent > li:nth-child(1)').click()
 ```
+
+![image-20220221001323477](https://user-images.githubusercontent.com/67591105/154850797-53fd1190-d425-4c93-a18a-3c248305169f.png)
 
 ### 3. 홈택스 (국세 관련 )
 
@@ -124,11 +126,11 @@ pwform.send_keys(my_pw)
 
 time.sleep(2)
 
-# 로그인하면 1번은 마이홈택스로 바뀜
+# 로그인하면 child(1)은 My홈택스로 바뀌니 child(2)로 지정
 driver.find_element_by_css_selector('#group8861269 > li:nth-child(2)').click()
 ```
 
-![image-20220221002526378](C:\Users\wltn3\OneDrive\Desktop\project\wltn39-github-blog\wltn39.github.io\_posts\image\image-20220221002526378.png)
+![image-20220221002526378 - 복사본](https://user-images.githubusercontent.com/67591105/154850825-c0baf860-e59c-4d26-9e09-7b3f9e3ce29e.png)
 
 ```
 가장 자주 찾을만한 3개 사이트를 연결하며 살짝 구현해보았습니다.  
