@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "ssallem Tech Blog"
+title                    : "ssallem Tech Blog2"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Seong Ju Kim2"
-description              : "ssallem's personal tech blog"
+description              : "ssallem's personal tech blog2"
 url                      : "https://github.com/ssallem"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://ssallem.github.io"
@@ -102,9 +102,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Seong Ju Kim"
-  avatar           : logo.png
-  bio              : "I am an ssallem"
+  name             : "Seong Ju Kim2"
+  avatar           : /logo.png
+  bio              : "I am an ssallem2"
   location         : "Korea"
   email            :
   links:
