@@ -54,6 +54,8 @@ my_id = " "
 my_pw = " "
 ```
 
+- CSS Selector 찾는 과정 살짝 넣어봤습니다 🤣
+
 ![Untitled](https://user-images.githubusercontent.com/67591105/154850924-29179f26-0d71-4584-97ac-042a8632f3b5.png)
 
 ```python
@@ -85,6 +87,8 @@ driver.find_element_by_css_selector('li.item.swiper-slide1.swiper-slide.swiper-s
 driver.find_element_by_id("applyBtn").click()
 ```
 
+- 등본 발급화면 연결!! 😆
+
 ![image-20220221001131996](https://user-images.githubusercontent.com/67591105/154850739-893ba7bc-0d79-478e-8d0e-e5fd1a2ae68b.png)
 
 ### 2. 법원 (가족관계 관련)
@@ -102,6 +106,8 @@ time.sleep(2)
 # 가족관계 증명서 클릭
 driver.find_element_by_css_selector('ul.innerContent > li:nth-child(1)').click()
 ```
+
+- 가족관계등록부 종류 ( i값은 가족 - 기본 - 혼인 순으로 변경)
 
 ![image-20220221001323477](https://user-images.githubusercontent.com/67591105/154850797-53fd1190-d425-4c93-a18a-3c248305169f.png)
 
@@ -129,6 +135,8 @@ time.sleep(2)
 # 로그인하면 child(1)은 My홈택스로 바뀌니 child(2)로 지정
 driver.find_element_by_css_selector('#group8861269 > li:nth-child(2)').click()
 ```
+
+- 홈택스 로그인한 뒤 자주 찾는 메뉴인데.. 20개가 넘네요..😥)
 
 ![image-20220221002526378 - 복사본](https://user-images.githubusercontent.com/67591105/154850825-c0baf860-e59c-4d26-9e09-7b3f9e3ce29e.png)
 
