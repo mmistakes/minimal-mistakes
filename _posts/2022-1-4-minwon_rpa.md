@@ -42,7 +42,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 ```
 
-### 1. 정부24 (등본)
+### 1. 정부24 (건축물대장)
 
 - child(i) i만 바꾸면 다른 서비스 연결
 
@@ -75,7 +75,7 @@ pwform.send_keys(my_pw)
 driver.find_element_by_id("genLogin").click()
 time.sleep(1)
 
-# 건축물대장 클릭
+# 등본 클릭
 
 driver.find_element_by_css_selector('li.item.swiper-slide1.swiper-slide.swiper-slide-active > div > a:nth-child(1)').click()
 
@@ -83,9 +83,11 @@ driver.find_element_by_css_selector('li.item.swiper-slide1.swiper-slide.swiper-s
 driver.find_element_by_id("applyBtn").click()
 ```
 
-### 2. 법원 가족관계 - 가족관계증명
 
-- child(i) i만 바꾸면 다른 서비스 연결
+
+### 2. 법원 가족관계 증명
+
+- 여기도 child(i) i만 바꾸면 다른 서비스 연결 
 
 ```python
 # 가족관계 페이지 진입
