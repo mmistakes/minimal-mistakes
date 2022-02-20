@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Seong Ju Kim"
 description              : "ssallem's personal tech blog"
-url                      : "https://github/ssallem"
+url                      : "https://github.com/ssallem"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://ssallem.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Seong Ju Kim"
-  avatar           : logo.png"
+  avatar           : "logo.png"
   bio              : "I am an ssallem"
   location         : "Korea"
   email            :
