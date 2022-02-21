@@ -1,5 +1,5 @@
 
-# Git & Github Friendly
+# Git & Github Básico
 
 Visíteme en :
 
