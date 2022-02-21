@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Git - Terminologia basica
+title: Git - Terminologia básica
 date: 2021-11-29
 classes: wide
 toc: true
