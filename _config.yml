@@ -110,7 +110,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:kinesis@zer.kro.kr"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://kinesis19.github.io"
@@ -268,7 +268,7 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
-      share: true
+      share: false
       related: true
       show_date : true
 
