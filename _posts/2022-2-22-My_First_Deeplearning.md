@@ -95,13 +95,15 @@ X = Data_set[:, 0:17]
 Y = Data_set[:, 17]
 ```
 
-### 딥러닝 실행 (활성함수 - sigmond)
+### 딥러닝 실행 
 
 ```python
-# 딥러닝 구조를 결정합니다(모델을 설정하고 실행하는 부분입니다).
+# 딥러닝 구조를 결정합니다(모델을 설정하고 실행하는 부분)
 model = Sequential()
+# relu & sigmond 활성화함수
+# (입력된 데이터의 가중합 -> 출력신호로 변환)
 model.add(Dense(30, input_dim=17, activation='relu'))  # 입력층 노드 17개
-                                                       # 은닉층1 노드 30개
+                                                      # 은닉층1 노드 30개
 model.add(Dense(1, activation='sigmoid'))              # 출력층 노드 1개
 ```
 
@@ -316,15 +318,5 @@ model.fit(X, Y, epochs=100, batch_size=10)
     Epoch 100/100
     47/47 [==============================] - 0s 1ms/step - loss: 0.3832 - accuracy: 0.8468
 
-
-
-
-
     <keras.callbacks.History at 0x228b41c49a0>
 
-
-
-
-```python
-
-```
