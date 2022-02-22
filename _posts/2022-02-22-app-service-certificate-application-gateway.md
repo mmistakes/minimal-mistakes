@@ -1,6 +1,6 @@
 ---
 title: Azure App Service Certificate tips and how to use itwith Application Gateway
-date: 2022-01-05 10:00
+date: 2022-02-22 10:00
 tags: [Azure, Application Gateway, Certificates Management, IaaS, Powershell, az CLI, App Service Certificate]
 
 excerpt: "notes on how to use App Svc Certificates"
@@ -12,7 +12,8 @@ header:
 Azure [App Service Certificate](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.CertificateRegistration%2FcertificateOrders) can be used also for other Azure services and not just App Service Web App. The list include Virtual Machines and Azure Application Gateway.
 
 In order to use the certificate outside Azure, you can export it from the UI.
-Just select 
+
+Just select:
 * Settings
 * Export Certificate
 * Open Key Vault Select
@@ -20,7 +21,7 @@ Just select
 
 The pfx created by the above command will not include certificates from the chain. Services like Azure App Services expect the certificates that are being uploaded to have all the certificates in the chain included as part of the pfx file. To get the certificates of the chain to be part of the pfx, you will need to install the exported certificate on your machine. In this step **Make sure you mark the certificate as exportable**.
 
-  * https://azure.github.io/AppService/2017/02/24/Creating-a-local-PFX-copy-of-App-Service-Certificate.html
+  * <https://azure.github.io/AppService/2017/02/24/Creating-a-local-PFX-copy-of-App-Service-Certificate.html>
 
 It is possible to use App Cervice Certificate on Application Gateway, [here there is the setup guide](https://docs.microsoft.com/en-us/azure/application-gateway/key-vault-certs#supported-certificates). 
 
@@ -31,4 +32,4 @@ Things to be noted:
 * in order to use a certificate in **secrets** section **az cli** or **powershell** must be used (see link above)
 * if you configure Application Gateway to use a certificate under Secrets **you can benefit of the autorenew feature of the Azure App Service Certificate**.
 
-Here insted you can find a guide to manually renew an Application Gateway Certificate: https://docs.microsoft.com/en-us/azure/application-gateway/renew-certificates
+Here insted you can find a guide to manually renew an Application Gateway Certificate: <https://docs.microsoft.com/en-us/azure/application-gateway/renew-certificates>
