@@ -19,8 +19,9 @@ sidebar:
 1) 시작점과 끝점을 설정하고 중앙값을 기준으로 검색 시작  
 2) 검색을 반복할 때마다 count를 증가시켜, 더 적은 쪽이 승리!
 ```
+### 이진탐색 함수정의
 ```python
-# 이진탐색 함수 정의 (target은 찾을 페이지) 
+# page는 끝페이지, target은 찾을 페이지 
 def binary_search(page, target):
     start = 1     # 시작점 
     end = page    # 끝점
@@ -40,11 +41,11 @@ def binary_search(page, target):
             count += 1
 ```
 
-
+### 함수 실행
 ```python
 T = int(input())
 for tc in range(1, T + 1):
-    # 책의 끝페이지, a가 찾을 페이지, b가 찾을 페이지
+    # 책 끝페이지, a가 찾을 페이지, b가 찾을 페이지
     page, a, b = map(int, input().split())
     
     count_a = binary_search(page, a) 
@@ -59,9 +60,7 @@ for tc in range(1, T + 1):
     
     print(f'#{tc} {result}')
 ```
-
      1
      400 300 350
-
 
     #1 A
