@@ -12,9 +12,10 @@ sidebar:
 
 [문제 출처 : SW Expert Academy](https://swexpertacademy.com/main/learn/course/subjectDetail.do?courseId=AVuPDN86AAXw5UW6&subjectId=AWOVF-WqqecDFAWg)
 
+```
 1) 시작점과 끝점을 설정하고 중앙값을 기준으로 검색 시작  
 2) 검색을 반복할 때마다 count를 증가시켜, 더 적은 쪽을 이기는 걸로.. 
-
+```
 
 ```python
 # 이진탐색 함수 정의 
