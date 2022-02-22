@@ -11,14 +11,16 @@ sidebar:
 ## SWEA LIST_2 이진탐색
 
 [문제 출처 : SW Expert Academy](https://swexpertacademy.com/main/learn/course/subjectDetail.do?courseId=AVuPDN86AAXw5UW6&subjectId=AWOVF-WqqecDFAWg)
-
+```
+문제 - A, B에서 이진탐색 게임을 시킨다 
+끝페이지(page), 각각 찾을 페이지(a,b) 를 주고 누가 먼저 찾는지?
+```
 ```
 1) 시작점과 끝점을 설정하고 중앙값을 기준으로 검색 시작  
 2) 검색을 반복할 때마다 count를 증가시켜, 더 적은 쪽을 이기는 걸로.. 
 ```
-
 ```python
-# 이진탐색 함수 정의 
+# 이진탐색 함수 정의 (target은 찾을 페이지) 
 def binary_search(page, target):
     start = 1     # 시작점 
     end = page    # 끝점
