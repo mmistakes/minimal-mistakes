@@ -7,11 +7,12 @@ toc: true
 sidebar:
   nav: "docs"
 ---
-## 딥러닝 (1) - 텐서플로우 & 케라스
+## 딥러닝 - 텐서플로 & 케라스
 
 
 [코드출처 : 모두의 딥러닝](https://book.naver.com/bookdb/book_detail.nhn?bid=16215446)
 
+### 머신러닝 < 딥러닝 
 ```
 딥러닝은 머신러닝 방법 중 하나로 최근 가장 각광받고 있음
 
@@ -25,7 +26,7 @@ sidebar:
 # !pip install keras
 ```
 
-
+### 텐서플로, 케라스 함수호출
 ```python
 # 텐서플로 : 다수의 머신러닝과 딥러닝 알고리즘을 결합한 라이브러리
 import tensorflow 
@@ -52,6 +53,8 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 ```
 
+### 딥러닝 준비
+
 ```python
 # 필요한 라이브러리를 불러옵니다.
 import numpy as np
@@ -74,7 +77,7 @@ Data_set
 
     <class 'numpy.ndarray'>
     (470, 18)
-
+    
     array([[293.  ,   1.  ,   3.8 , ...,   0.  ,  62.  ,   0.  ],
            [  1.  ,   2.  ,   2.88, ...,   0.  ,  60.  ,   0.  ],
            [  8.  ,   2.  ,   3.19, ...,   0.  ,  66.  ,   1.  ],
@@ -92,6 +95,7 @@ X = Data_set[:, 0:17]
 Y = Data_set[:, 17]
 ```
 
+### 딥러닝 실행 (활성함수 - sigmond)
 
 ```python
 # 딥러닝 구조를 결정합니다(모델을 설정하고 실행하는 부분입니다).
@@ -100,6 +104,7 @@ model.add(Dense(30, input_dim=17, activation='relu'))  # 입력층 노드 17개
                                                        # 은닉층1 노드 30개
 model.add(Dense(1, activation='sigmoid'))              # 출력층 노드 1개
 ```
+
 
 
 ```python
