@@ -39,13 +39,9 @@ python으로 스크래핑을 하기 위해 대부분 beautifulSoup과 selenium�
 - javascript 코드가 들어간 동적 웹이라서 beautifulSoup, selenium 모두 사용해야 한다.
 - 플레이 스토어에서 일부 어플만 노출시켰기 때문에 최종적으로 스크래핑한 어플의 갯수는 얼마 되지 않는다.
 
-<br>
-
 ---
 
-<br>
-
-### 클론 코딩하며 연습한 코드 
+### 인기 앱 페이지에서 연습한 코드 
 
 ```python
 import requests
@@ -88,7 +84,7 @@ with open("app.html", "w", encoding="utf-8") as file:
 
 ### 스크롤 처리 
 
-스크래핑 할 [메인 페이지](https://play.google.com/store/apps?hl=ko&gl=US)에서 모든 어플에 대한 데이터를 긁어오기 위해 Selenium을 사용해서 스크롤하는 코드이다.
+스크래핑 할 [페이지](https://play.google.com/store/apps?hl=ko&gl=US)에서 모든 어플에 대한 데이터를 긁어오기 위해 Selenium을 사용해서 스크롤하는 코드이다.
 
 ```python
 from selenium import webdriver
@@ -124,7 +120,8 @@ while True:
 
 <br>
 
-### 더보기 버튼을 눌러 해당 카테고리 페이지로 넘어가서 스크래핑하기 
+### 더보기 버튼 자동 클릭 처리 
+더보기 버튼을 클릭 시 나오는 카테고리 페이지에서 스크래핑하기 위함 
 ```python
 # 추가예정
 ```
@@ -138,5 +135,5 @@ while True:
 
 ## 참고 
 - 클론 코딩: [인프런 나도코딩 웹 스크래핑](https://www.inflearn.com/course/파이썬-웹-스크래핑/dashboard)
-- Github: https://github.com/ssbinn/google-store-scraper
-- google-play-scraper 오픈소스: https://github.com/facundoolano/google-play-scraper
+- Github: <https://github.com/ssbinn/google-store-scraper>
+- google-play-scraper 오픈소스: <https://github.com/facundoolano/google-play-scraper>
