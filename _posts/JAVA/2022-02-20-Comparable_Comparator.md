@@ -118,7 +118,7 @@ Comparator에서 사용할 메서드는 <a style="color:red"><b>compare()</b></a
 Comparator은 <a style="color:red"><b>'import java.util.Comparator'</b></a> 가 꼭 있어야 한다 !
 
 
-### <a style="color:#00adb5">Comparable</a> 의 기본 구조
+### <a style="color:#00adb5">Comparator</a> 의 기본 구조
 ```java
 import java.util.Comparator             //import 필요
 public class ClassName implements Comparator<Type>{
@@ -136,7 +136,7 @@ public class ClassName implements Comparator<Type>{
 }
 ```
 
-### <a style="color:#00adb5">Comparable</a> 실습해보즈아!
+### <a style="color:#00adb5">Comparator</a> 실습해보즈아!
 
 ```java
 import java.util.Comparator;
@@ -193,7 +193,7 @@ Comparable과 구조는 거의 비슷하다.<br>
 <hr>
 
 ## <a style="color:#00adb5">Comparable & Comparator</a> 와 정렬과의 관계
-a style="color:red"><b>JAVA에서의 정렬은 특별한 정의가 되어 있지 않는 한 '오름 차순' 기준</b></a>으로 한다.<br>
+<a style="color:red"><b>JAVA에서의 정렬은 특별한 정의가 되어 있지 않는 한 '오름 차순' 기준</b></a>으로 한다.<br>
 두 수의 비교 결과가
 - 음수일 경우 : 두 원소의 위치를 교환 안 함
 - 양수일 경우 : 두 원소의 위치를 교환 함
@@ -206,8 +206,18 @@ a style="color:red"><b>JAVA에서의 정렬은 특별한 정의가 되어 있지
 
 
 ## <a style="color:#00adb5">Comparable & Comparator</a> 마무리
+Comparable과 Comparator은 객체들을 비교하고자 한다면 필수요소이다.<br>
+이제 프로그램을 개발하고자 하면 객체를 중심으로 파일을 나누고 기능을 분리하여 클래스를 따로 만드는 등 객체지향 코딩을 해야하는 경우가 허다할 것이다.<br>
+그 과정에서 객체의 비교를 정의하는 것은 반드시 알아두어야 한다 !!<br>
+
+그리고 사실 여러 비교하는 메서드에서도 Comparable이나 Comparator가 사용되는 것으로 알고 있다. 그 뜻은 계속 사용하고 있었다는 것이다.<br>
+그리고 특히 정렬할 때 많이 쓰인다. 제일 대표적인 정렬하는 메서드인 sort()도 Comparable로 구성되어 있다.<br>
+만약 sort()기능 뿐만 아니라 더 나아가 사용자가 원하는 정렬 조건을 주고 싶을 때도 구조를 알아야 알맞게 줄 수 있다.<br>
+그리고 배열이나 list를 정렬할 때도 종종 쓰이곤 한다.<br>
+그러므로 확실하게 개념과 구조를 알고 직접 구현할 수도 있어야 생각한다.<br>
 
 
+그리고 마지막 한 가지 주의할 점은 Comparable 과 Comparator 를 구현할 때 Overflow와 Underflow를 꼭 고려하여야 한다 !!
 
 <br><br><br><br>
 참조<br>
