@@ -8,7 +8,7 @@ sidebar:
   nav: "docs"
 ---
 
-## 딥러닝 - 텐서플로 & 케라스
+## 딥러닝 - 텐서플로, 케라스
 
 
 [코드출처 : 모두의 딥러닝](https://book.naver.com/bookdb/book_detail.nhn?bid=16215446)
