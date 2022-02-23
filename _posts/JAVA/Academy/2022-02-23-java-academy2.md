@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  " 자바 국비지원 포스팅 시작"
+title:  " DAY-01. 자바 국비지원 오리엔테이션"
 categories: JAVA-academy
 tag: [JAVA, 국비지원]
 toc: true
@@ -10,7 +10,10 @@ sidebar:
   nav: "docs"
 ---
 
-## ✍ 첫 국비 포스팅 
+## 📌 자바 국비 첫날
 
 <!--Quote-->
 > 2022-02-23 국비 시작 
+
+- 오리엔테이션(수업 계획, 팀 선별) 
+- JDK설치(openjdk11)
