@@ -1,5 +1,5 @@
 ---
-title: Azure App Service Certificate tips and how to use itwith Application Gateway
+title: Azure App Service Certificate
 date: 2022-02-22 10:00
 tags: [Azure, Application Gateway, Certificates Management, IaaS, Powershell, az CLI, App Service Certificate]
 
