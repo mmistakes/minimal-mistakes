@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "알고리즘 - SWEA 이진탐색"
+title: "알고리즘 - SWEA 특별한 정렬"
 categories: 알고리즘
 tag: [python, 문제, blog, github, 파이썬, 알고리즘, 특별한 정렬, 4843,  swea, sw acdemy]
 toc: true
