@@ -2,7 +2,7 @@
 layout: single
 title: "딥러닝 입문"
 categories: 머신러닝,딥러닝
-tag: [python, 문제, blog, github, 파이썬, 알고리즘, 머신러닝, 딥러닝,  모두의, sw 텐서플로, 케라스, 개념, tensorflow, keras]
+tag: [python, 문제, blog, github, 파이썬, 알고리즘, 머신러닝, 딥러닝,  모두의, 텐서플로, 케라스, 개념, tensorflow, keras]
 toc: true
 sidebar:
   nav: "docs"
@@ -13,7 +13,7 @@ sidebar:
 
 [코드출처 : 모두의 딥러닝](https://book.naver.com/bookdb/book_detail.nhn?bid=16215446)
 
-### 머신러닝 < 딥러닝 
+### 머신러닝과 딥러닝 
 ```
 딥러닝은 머신러닝 방법 중 하나로 최근 가장 각광받고 있음
 
