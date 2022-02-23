@@ -100,3 +100,8 @@ console.log(add('1', '2')); // compile error
 
 * package.json 파일에 scripts 내용을 추가하여 빌드(build)와 실행(run) 명령을 스크립트로 실행되도록 설정합니다. 
 
+![ts 사진캡처](../images/2022-02-23-TypeScript/ts 사진캡처.png)
+
+![타입스크립트 설정](../images/2022-02-23-TypeScript/타입스크립트 설정.png)
+
+![타입스크립트 설정1](../images/2022-02-23-TypeScript/타입스크립트 설정1.png)
