@@ -1,4 +1,12 @@
-
+---
+layout: single
+title: "딥러닝 입문"
+categories: 머신러닝&딥러닝
+tag: [python, 문제, blog, github, 파이썬, 알고리즘, 머신러닝, 딥러닝,  모두의, sw 텐서플로, 케라스, 개념, tensorflow, keras]
+toc: true
+sidebar:
+  nav: "docs"
+---
 
 ## 딥러닝 - 텐서플로 & 케라스
 
