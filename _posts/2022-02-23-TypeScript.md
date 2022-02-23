@@ -105,3 +105,89 @@ console.log(add('1', '2')); // compile error
 ![타입스크립트 설정](../images/2022-02-23-TypeScript/타입스크립트 설정.png)
 
 ![타입스크립트 설정1](../images/2022-02-23-TypeScript/타입스크립트 설정1.png)
+
+## Type Annotaltlons - Varlables, Object Literal Annotatlons
+
+* 정적 타입을 기본으로 하는 C, Java와 마찬가지로 변수 선언에 타입을 지정할 수 있습니다.
+
+* 변수에 대한 타입을 지정하면 해당 변수에 다른 타입의 값을 대입(assign) 할 수 없습니다.
+
+* 변수에 정의한 타입과 다른 타입의 값을 대입하는 코드는 TypeScript 컴파일러에 의해 컴파일 오류가 발생됩니다.
+
+* 객체 리터럴에 대한 타입 정의는 해당 리터럴 객체가 갖는 각각의 프로퍼티에 대한 타입을 나열하는 형태로 정의합니다.
+
+  ```tsx
+  // primitive types
+  let name: string = "kim";
+  let age: number = 20;
+  let hasName: boolean = true;
+  
+  let nullValue: null = null;
+  let nothing: undefined = undefined;
+  
+  // built in objects
+  let now: Date = new Date();
+  
+  // Array
+  let colors: string[] = ['red', 'yellow', 'blue'];
+  let numbers: number[] = [1, 2, 3, 4, 5];
+  
+  // Class
+  class Person {}
+  let person: person = new Person();
+  
+  // Object literal
+  let point: { x: number, y: number } = {
+  	x: 10,
+  	y: 20
+  };
+  ```
+
+
+
+## Type Annotaltlons - Functions
+
+* 함수를 정의할 때 파라미터와 반환값에 타입을 지정합니다.
+
+* 함수의 종류(선언적 함수, 익명함수, 람다 함수)에 따라 타입 지정에 대한 표현에는 차이가 있습니다.
+
+* 함수의 파라미터를 정의할 때 선택적 매개변수(Optional Parameter)를 지정할 수 있습니다.
+
+  ``` tsx
+  // 선언적 함수
+  function add(n1: number, n2: number): number {
+  	return n1 + n2;
+  }
+  
+  // 익명 함수
+  const add = function(n1: number, n2: number): number{
+  	return n1 + n2;
+  }
+  
+  // 람다 함수
+  const add:(n1: number, n2: number) => number = (n1: number, n2: number) : number => {
+  	return n1 + n2;
+  }
+  ```
+
+* JavaScript는 기본적으로 가변인자를 통한 함수 호출이 가능했지만 TypeScript는 가변인자를 지원하지 않습니다.
+
+* 대신 TypeScript는 함수의 오버로딩(Function overloading)을 통해 가변인자와 같은 효과를 구현할 수 있습니다.
+
+* 선택적 매개변수는 함수 호출시 전달인자를 선택적으로 보낼 수 있는 기능의 매개변수 입니다.
+
+* 이외에도 ES6 버전부터 지원하는 기본 매개변수(Default Parameter), 나머지 매개변수(Rest Parameter)가 있습니다.
+
+  ```tsx
+  function add(firstParam: string, secondParam: string): string;
+  function add(firstParam: number, secondParam: number): number;
+  
+  function add(firstParam: any, secondParam: any): any {
+  	console.log(firstParam + secondParam);
+  }
+  
+  add(10, 20);
+  add('10', '20');
+  ```
+
+  
