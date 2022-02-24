@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "map, filter, reduce 익혀보기"
-categories: [JavaScript]
-tag: [JS, map, filter, reduce]
+title: "TypeScript 알아보기"
+categories: [JavaScript] [TypeScript]
+tag: [JS, TS]
 toc: true
 author_profile: false
 sidebar:
@@ -10,7 +10,6 @@ sidebar:
 ---
 
 # TypeScript
-
 
 
 ## What is TypeScript?
