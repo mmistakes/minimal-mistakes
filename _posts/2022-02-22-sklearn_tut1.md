@@ -178,7 +178,6 @@ digits.target   # 첫 번째 숫자는 0, 두 번째 숫자는 1을 의미합니
 array([0, 1, 2, ..., 8, 9, 8])
 </pre>
 <div style='background-color: #EEEEEE'><strong>데이터 세트의 차원</strong>
-
 <br>데이터는 항상 (샘플의 갯수, 특성의 갯수)의 2차원 배열이지만, 원래 데이터는 차원이 다를 수 있습니다. digits의 경우 각 원래 데이터는 (8, 8)인 이미지이고 이렇게 접근할 수 있습니다:
 
 <div style='background-color: #D3D3D3'>
