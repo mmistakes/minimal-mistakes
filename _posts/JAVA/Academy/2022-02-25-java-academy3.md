@@ -354,10 +354,52 @@ public class Exam01_Scanner {
 		
 		// 4. 사용자의 이름 + 나이 + 직업을 한번에 출력 
 		System.out.println("이름 :" + name + " 나이 : " + age + " 직업 : " + job);
+
+	}
+}
+```
+- 항목 하나하나 입력을 받을 때는 nextLine() 사용
+
+### Scanner 연습2
+```java
+import java.util.Scanner;
+
+public class Exam01_Scanner {
+	public static void main(String[] args) {
+		// 사용자에게 숫자 그대로를 입력받기 위한 방법 2가지
+		// 1. nextInt() 사용
+		// 명시적인 자료형을 이용한 next 기능을 사용할 때 주의해야하는 점 
+		System.out.println("나이를 입력하세요");
+		int input = sc.nextInt();
+		System.out.println("input : " + input);
+		
+		sc.nextLine();
+		System.out.println("직업을 입력하세요");
+		String job = sc.nextLine();
+		System.out.println("직업 : " + job);
+		
+		
+		// 2. nextLine() 사용 → String → 형변환해서 사용 
+		// nextLine()을 이용해 String → int
+		System.out.println("나이를 입력하세요");
+		int input = Integer.parseInt(sc.nextLine()); // String 값을 int로 변환
+		System.out.println("age : " + input);
+		
+		
+		// nextLine()을 이용해 String → boolean
+		System.out.println("true 혹은 false를 입력하세요");
+		boolean b = Boolean.parseBoolean(sc.nextLine());
+		System.out.println("input2 : " + b);
+		
+		// nextLine()을 이용해 String → char
+		System.out.println("성별을 입력하세요");
+		char c = sc.nextLine().charAt(0); // 인덱스가 0인 부분을 받아옴 ex)남자 입력시
+		System.out.println("c : " + c); // 남 출력
+
 	}
 }
 ```
 
-- 항목 하나하나 입력을 받을 때는 nextLine() 사용
+
 
 
