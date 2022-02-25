@@ -23,6 +23,8 @@ page_css:
 
 * Se utiliza para
 
+  * Permite asociar un identificador a una **URL**
+
   * Subir al **|Repositorio Remoto|** todos cambios que se han hecho al proyecto desde el **directorio de trabajo (Working Directory)** y que fueron registrado en los **commits** que se fueron creando mediante el comando ``git commit -m "Mensaje"``
 
   * Sincronizar la rama del **[Repositorio local]** con la rama del **|Repositorio Remoto|**
@@ -60,7 +62,7 @@ git remote add teamone https://github.com/usuario/nombre_repositorio.git
 git remote remove <rama>
 ```
 
-* Ver las ramas locales que están sincronizadas con las **|Ramas Remotas|** y demás datos sobre las ramas **[Remote-Tracking-Branches]**
+* Para poder ver las **[Ramas Locales]** que están sincronizadas con las **|Ramas Remotas|** y demás datos sobre las ramas **[Remote-Tracking-Branches]**
 
 ```bash
 git remote show origin

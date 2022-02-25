@@ -156,6 +156,14 @@ git checkout -b <nombre-rama> <id-commit>
 git checkout -b rama-alternativa b0e63ad
 ```
 
+* Cambiar el nombre de una rama creada
+  * Tenemos que están dentro de la rama que queremos cambiarle el nombre
+  * Cuando usas el comando ``git -m`` . **Git** también actualiza tu **rama de seguimiento/tracking branch** con el nuevo nombre.
+
+```bash
+git branch -m <nuevo-nombre-rama>
+```
+
 ## Ramas necesarias para un proyecto
 
 * Para ciertos tipos de proyectos existen unas ``ramas`` básicas:

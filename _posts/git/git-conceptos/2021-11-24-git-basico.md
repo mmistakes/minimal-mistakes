@@ -17,7 +17,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Git Basico
+## Git Básico
 
 > El objetivo de GIT es registrar instantáneas/commits del proyecto en los distintos estados mediante la manipulación de los 3 arboles
 
