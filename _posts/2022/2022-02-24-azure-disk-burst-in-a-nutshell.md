@@ -1,12 +1,11 @@
 ---
 title: Azure Disk Burst in a nutshell
-date: 2022-02-27 10:00
+date: 2022-02-24 10:00
 tags: [Azure, Disk, Burst]
 
-
 header:
-  overlay_image: https://live.staticflickr.com/65535/51810822593_fb4f9a7872_h.jpg
-  caption: "Photo credit: [**nicola since 1972**](https://www.flickr.com/photos/15216811@N06/51811446245)"
+  overlay_image: https://live.staticflickr.com/65535/51367762625_ea4a871300_h.jpg
+  caption: "Photo credit: [**nicola since 1972**](https://www.flickr.com/photos/15216811@N06/51367762625)"
 ---
 
 Azure offers the ability to boost disk storage **IOPS** and MB/s (**throughput**) performance. Currently, there are two managed disk types that can burst, premium SSDs, and standard SSDs. Other disk types cannot currently burst.
