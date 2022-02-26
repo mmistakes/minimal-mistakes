@@ -37,7 +37,7 @@ Note that **also Azure virtual machines have a max IOPS and max throughput**, so
 # Burstable Virtual Machines
 The concept of the burst can be applied also to Azure Virtual Machines. B-series machines have a base CPU performance and a max CPU performance. When the machine have CPU below the **base** value, collects credits to spend in performance bursts when necessary. 
 
-* https://azure.microsoft.com/en-us/pricing/details/managed-disks/ 
-* https://docs.microsoft.com/en-us/azure/virtual-machines/disks-enable-bursting?tabs=azure-powershell
-* https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-b-series-burstable
+* <https://azure.microsoft.com/en-us/pricing/details/managed-disks/>
+* <https://docs.microsoft.com/en-us/azure/virtual-machines/disks-enable-bursting?tabs=azure-powershell>
+* <https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-b-series-burstable>
 
