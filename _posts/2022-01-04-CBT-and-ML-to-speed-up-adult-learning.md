@@ -1,7 +1,7 @@
 ---
 title: Cognitive behavioral therapy and machine learning to speed up adult learning
 category: "Research"
-tag: ["Research", “CBT”, “ML”]
+tag: [Research, CBT, ML]
 toc: true
 ---
 

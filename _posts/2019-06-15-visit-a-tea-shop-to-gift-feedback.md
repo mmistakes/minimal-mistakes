@@ -1,7 +1,7 @@
 ---
 title: Gifting Feedback from a Tea Shop
 category: "Team health"
-tag: ["Feedback"]
+tag: [Feedback]
 toc: true
 ---
 
@@ -13,7 +13,7 @@ Giving good feedback to people around you (both at work and in your private life
   </audio>
   <button class="btn btn--small" id="video-player-playback-rate-control" style="border-color=none !important;border-collapse: separate !important;">Speed: <span id="current-rate">1</span>x</button></span>
 
-# How to give and receive feedback 
+# How to give and receive feedback
 
 ## Five guiding principles for good feedback
 
@@ -41,7 +41,7 @@ This template is easy to remember and can be used with anyone. It also forces yo
 
 # Foundational skill framework
 
-When thinking about a colleague's strengths, I tend to be biased towards the most recent, and most salient events. But by using a more generic and complete framework, I'm able to be more systematic and exhaustive. One design principle of the framework is that it be memorable. 
+When thinking about a colleague's strengths, I tend to be biased towards the most recent, and most salient events. But by using a more generic and complete framework, I'm able to be more systematic and exhaustive. One design principle of the framework is that it be memorable.
 
 The acronym for it is "a tea shops". Additionally, instead of coming up with names for the strengths, I came up with professions and the strengths that these personas tend to represent.
 
@@ -61,7 +61,7 @@ Here's the framework. As a team member of a team, I aim to be a/an:
 
 ## Personas explained
 
-An **Athlete** lives healthy - they will care about getting sufficient sleep, will eat nutritious food in moderate quantity, will exercise moderately but frequently, and will take the time to relax, decompress and meditate. 
+An **Athlete** lives healthy - they will care about getting sufficient sleep, will eat nutritious food in moderate quantity, will exercise moderately but frequently, and will take the time to relax, decompress and meditate.
 
 A **Teacher** selflessly helps and mentors others - they will think with empathy about those around them, nurture their curiosity and share with them insightful advice.
 
@@ -89,7 +89,7 @@ For example, a real (sanitized) feedback I have given to someone I reported to o
 
 > *I have observed that you have selected the most optimistic scenarios to present to the senior client, and have excluded the more conservative ones. I heard you state the importance to show encouraging results, and I too want to build momentum with the client. However, I find this situation uncomfortable for two reasons: 1) the team has used the words "selection bias" and have confidentially voiced concerns about not being fairly represented, 2) I'm afraid that we may condition our client to expect inflated results, and lose their trust a little. One idea to improve this would be to write down on the page that these are the most optimistic scenarios, and add the rest of the scenarios in the appendix.*
 
-Effectively, I was reminding my boss to be a **scientist**, and I was myself exhibiting both the **teacher** and the **owner** traits. I hope you find this useful, please don't hesitate to give me feedback. 
+Effectively, I was reminding my boss to be a **scientist**, and I was myself exhibiting both the **teacher** and the **owner** traits. I hope you find this useful, please don't hesitate to give me feedback.
 
 ## Further related reading and videos I found inspiring
 

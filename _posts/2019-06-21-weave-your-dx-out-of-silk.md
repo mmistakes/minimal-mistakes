@@ -1,11 +1,11 @@
 ---
 title: Weave your Digital Transformations out of Silk
 category: "Digital Transformation"
-tag: ["Organization", "Agile", "Design Sprints", "Conway's law"]
+tag: [Organization, Agile, Design Sprints, Conway's law]
 toc: true
 ---
 
-Aside from the tech giants, established corporations have achieved success without ever depending on their ability to write (good, user-centered) software fast and efficiently. And even seemingly very technologically competent and customer-centric organizations such as Sony, Blackberry, and Nokia have failed in good part due to poor delivery of digital products. They did deliver products, but not ones that met the user experience demanded by the market. 
+Aside from the tech giants, established corporations have achieved success without ever depending on their ability to write (good, user-centered) software fast and efficiently. And even seemingly very technologically competent and customer-centric organizations such as Sony, Blackberry, and Nokia have failed in good part due to poor delivery of digital products. They did deliver products, but not ones that met the user experience demanded by the market.
 
 <span><audio id="myAudio" controls>
     <source src="/assets/audio/weave-silk-dx.ogg" type="audio/ogg">
@@ -18,12 +18,12 @@ Enters the [Digital Transformation (DX)](https://en.wikipedia.org/wiki/Digital_t
 
 I'm not going to rehash here the many [tips](https://www.cio.com/article/3211428/what-is-digital-transformation-a-necessary-disruption.html) and [roadmaps](https://www.mckinsey.com/industries/financial-services/our-insights/a-roadmap-for-a-digital-transformation) created by the likes of CIO magazines and McKinsey & Company respectively. Rather, I'm going to be more prescriptive and propose a simple approach to begin a DX, one that is infused from the start with the inevitability of having re-organizational changes down the road. To make the name memorable, I found the word SILK to be appropriate. Here are the four steps of the approach:
 
-1. **S**etup a VC Model 
+1. **S**etup a VC Model
 2. **I**dentify problems worth solving
 3. **L**aunch to production early
 4. **K**ill the dogs, and accelerate the stars
 
-The main driver behind this approach is the realization that building digital products (whether data science is involved or not) is filled with uncertainties, but also very rich in opportunities to capture savings, generate revenue, and be better corporate citizens for the environment. 
+The main driver behind this approach is the realization that building digital products (whether data science is involved or not) is filled with uncertainties, but also very rich in opportunities to capture savings, generate revenue, and be better corporate citizens for the environment.
 
 # 1. Setup the VC Model
 
@@ -48,9 +48,9 @@ Start picking a problem in the upper right corner of the feasibility vs. upside 
 
 ## 2.1 Visualize the future
 
-Paint a picture of what future success would look like. It’s easy to skip over this step, but it is integral to the selection of the problem space. By creating a clear, crisp picture (or even a video), it is easier to communicate to the affected organization and to the people joining the team what the future looks like. Make it real and involve stakeholders. Equipped with this picture, seek out a seasoned practitioner who will give you the right time of day and who will be overseeing the work from a critical vantage point. I highly recommend that you seek outside help and bring this person as a contractor/advisor. 
+Paint a picture of what future success would look like. It’s easy to skip over this step, but it is integral to the selection of the problem space. By creating a clear, crisp picture (or even a video), it is easier to communicate to the affected organization and to the people joining the team what the future looks like. Make it real and involve stakeholders. Equipped with this picture, seek out a seasoned practitioner who will give you the right time of day and who will be overseeing the work from a critical vantage point. I highly recommend that you seek outside help and bring this person as a contractor/advisor.
 
-A good practitioner could be a successful company founder or a University professor. Avoid advisors or consultants who never got their hands dirty before - they are too high level to be relevant and ask the right questions. A note on consultants: you can use them as a source of inspiration for an optimistic future. 
+A good practitioner could be a successful company founder or a University professor. Avoid advisors or consultants who never got their hands dirty before - they are too high level to be relevant and ask the right questions. A note on consultants: you can use them as a source of inspiration for an optimistic future.
 
 One added benefit of having a credible practitioner is recruiting. It will be significantly easier to get the very best talent to want to commit to working with you, and it will mitigate the downside risks for everyone.
 
@@ -60,9 +60,9 @@ I recommend that you head over to [Alex Jupiter's post](https://medium.theuxblog
 
 # 3. Launch to production early
 
-Your primary goal is to find so called "product market fit" (as originally defined, I believe, by [Marc Andreesen in 2007](https://web.stanford.edu/class/ee204/ProductMarketFit.html)), or in other words find the "stars" in the [growth share matrix](https://en.wikipedia.org/wiki/Growth%E2%80%93share_matrix) (also known as the BCG matrix). 
+Your primary goal is to find so called "product market fit" (as originally defined, I believe, by [Marc Andreesen in 2007](https://web.stanford.edu/class/ee204/ProductMarketFit.html)), or in other words find the "stars" in the [growth share matrix](https://en.wikipedia.org/wiki/Growth%E2%80%93share_matrix) (also known as the BCG matrix).
 
-Engage the relevant stakeholder and do something quick and dirty at first. Pull a small data set and test. The key here is to focus on doing one thing that will move the metric as defined in Step 2. Also continuously review and improve on the User Experience and Communication developed earlier. Don't build a massive data pipeline unless your product has traction with end users. Sometimes just a great real-time visual might capture 80% of the value. 
+Engage the relevant stakeholder and do something quick and dirty at first. Pull a small data set and test. The key here is to focus on doing one thing that will move the metric as defined in Step 2. Also continuously review and improve on the User Experience and Communication developed earlier. Don't build a massive data pipeline unless your product has traction with end users. Sometimes just a great real-time visual might capture 80% of the value.
 
 ## 3.1 Agile, Devops, and Products
 

@@ -1,7 +1,7 @@
 ---
 title: Deploy a Digital Twin in 6 Months for $1M USD
 category: "Digital Twin"
-tag: ["Machine Learning", "Data Science", "Digital Twin"]
+tag: [Machine Learning, Data Science, Digital Twin]
 toc: true
 ---
 
@@ -16,7 +16,7 @@ Whether you manage a fleet of cruise ships, an upstream oil & gas supply chain, 
 In this post, I will:
 
 1. define what a Digital Twin is;
-2. discuss its many benefits; 
+2. discuss its many benefits;
 3. explain at length how to build some of the parts; and
 4. estimate how much it should cost you to build and maintain.
 
@@ -24,7 +24,7 @@ In this post, I will:
 
 So what’s a Digital Twin (DT) and how is it different from a plain old simulator? A DT is a simulator, but one that is connected to real-time data feeds for up-to-date representations of your assets, and one that is accessible through user centered web and mobile interfaces by your operations, planning, and risk teams. Example assets you can make a DT for include: a plant, a truck, or even a person (e.g., a customer).
 
-At one end of the spectrum, a single asset can have multiple plain DTs associated with it. Alternatively, a single complicated DT can represent clusters of millions of heterogeneous fixed, mobile and organic assets. In all cases, a DT will have five main parts: 
+At one end of the spectrum, a single asset can have multiple plain DTs associated with it. Alternatively, a single complicated DT can represent clusters of millions of heterogeneous fixed, mobile and organic assets. In all cases, a DT will have five main parts:
 
 1. At the front, you have the web and mobile interfaces for your team to operate the DT.
 2. At the back, are connections to real time data feeds and assumptions.
@@ -32,7 +32,7 @@ At one end of the spectrum, a single asset can have multiple plain DTs associate
 4. On top, you have a set of algorithms that you can pass to your assets to make autonomous or semi-autonomous decisions within the simulator.
 5. On the bottom, you have a module to generate disruption scenarios to pass to your simulator.
 
-What matters is not that you be scientifically accurate - it isn’t an academic exercise. As Albert Einstein said, “everything should be made as simple as possible, but not simpler.” You need the right type, and just enough accuracy and precision of information such that your teams can make better decisions. That LIDAR data feed might or might not be an overkill for your DT. 
+What matters is not that you be scientifically accurate - it isn’t an academic exercise. As Albert Einstein said, “everything should be made as simple as possible, but not simpler.” You need the right type, and just enough accuracy and precision of information such that your teams can make better decisions. That LIDAR data feed might or might not be an overkill for your DT.
 
 # 2. Benefits to operations, planning, and risk teams
 
@@ -50,19 +50,19 @@ A digital twin is one of the most valuable classes of products to launch as part
 
 The foundation for any good product starts with an understanding of the motivation of a user, desired features, and pain points along the journey. For example, a truck dispatcher at a large construction site wants to constantly remove bottlenecks from the operation to increase overall construction speed and reduce injury risks. A desired feature might be a real time map with the location of all the trucks. A pain point might be that all of the truck icons are the same, forcing the dispatcher to mouse over every truck icon to identify the cement mixer trucks. A different set of icons for each truck type would reduce the cognitive load on the operator and enable for better, faster decision making. A DT could further help the operator predict and identify future bottlenecks before they happen so that schedule changes can be made several minutes (or even hours) in advance.
 
-By focussing on the user experience, operation, planning and risk teams will do less tedious, repetitive work and focus more on making intelligent decisions. I will not discuss UX much further here, and instead refer you to a post I made on how to [build a great product proposal](https://blog.dannycastonguay.com/product%20management/make-a-great-product-out-of-your-product-proposal/), which includes a section on user experience design. 
+By focussing on the user experience, operation, planning and risk teams will do less tedious, repetitive work and focus more on making intelligent decisions. I will not discuss UX much further here, and instead refer you to a post I made on how to [build a great product proposal](https://blog.dannycastonguay.com/product%20management/make-a-great-product-out-of-your-product-proposal/), which includes a section on user experience design.
 
 ## 3.2 Feed your Digital Twin with good data
 
-There is a joke that data engineers do the work, while data scientists get the fame. The reality is that a significant portion of building a DT involves performing unglamorous data piping work. 
+There is a joke that data engineers do the work, while data scientists get the fame. The reality is that a significant portion of building a DT involves performing unglamorous data piping work.
 
 ### 3.2.1 Start by increasing the granularity and freshness of existing data
 
 Your DT is only as good as the data that you put into it. Increasing granularity means removing aggregation of data when not needed. If it’s not too large, leave the data in raw format and have your IT team make use of auto scaling features for dealing with large data sets. [Infrastructure as Code (IaC)](https://amzn.to/2YaDtn2) now makes auto scaling resources easier than before and a single DevOps professional can support a handful of [two-pizza teams](http://blog.idonethis.com/two-pizza-team/).
- 
+
 Avoid boiling the ocean with a consolidated data platform. A good starting point, to narrow down the scope of data, is to observe the information that your teams are using today. Let’s introduce a semi-fictitious case. Consider a locomotive planning director who is responsible for managing the fleet of locomotives for a large railroad (thousands of locomotives, each costing around $2M to purchase, and much more to maintain over its useful life). In Q2 2019, the director might look at 2018 average monthly ton-miles on the network by train type, the average historical maintenance schedule, and many other 2018 averages. Since the director only gets this data refreshed once a year, and only knows the averages, the plan will need to be most conservative and will likely result in excess capacity/low asset utilization. So the 2020 plan is based on 2018 data. Sounds sub-optimal but it’s the right answer given the information available.
 
-On the other hand, if the director had access to these data points the day it happens, and could not only look at averages but at the entire distribution, the director could make more aggressive plans with confidence, and could adjust the plans every day of the year and make more nimble tradeoffs (e.g., between decommissioning an older engine this week or next week). 
+On the other hand, if the director had access to these data points the day it happens, and could not only look at averages but at the entire distribution, the director could make more aggressive plans with confidence, and could adjust the plans every day of the year and make more nimble tradeoffs (e.g., between decommissioning an older engine this week or next week).
 
 ### 3.2.2 Augment your data, both internally and externally
 
@@ -87,7 +87,7 @@ n = noaa.NOAA().get_forecasts('11365', 'US', True)
 
 ## 3.3 Build the simulator to represent the world
 
-The core of the DT is the simulator - a black box that takes as input a state of the world (or a relevant part of the world you are interested in), and returns a future state of the world. If you are a retailer, an interesting state of the world could be the inventory at any given store. 
+The core of the DT is the simulator - a black box that takes as input a state of the world (or a relevant part of the world you are interested in), and returns a future state of the world. If you are a retailer, an interesting state of the world could be the inventory at any given store.
 
 ### 3.3.1 Consider what you need to build
 
@@ -107,13 +107,13 @@ For instance, suppose that the digital twin will be used for predictive maintena
 3. You are trying to predict the remaining useful life of dozens of valves on hundreds of pumps at hundreds of sites, but you also want to classify the types of failure.
 4. You need to be able to explain how the model responds to changes in certain variables.
 
-The performance of the DT in this context will help you predict failures in  advance and thus reduce downtime, help plan parts inventory, and improve maintenance planning. 
+The performance of the DT in this context will help you predict failures in  advance and thus reduce downtime, help plan parts inventory, and improve maintenance planning.
 
 ### 3.3.2 Build a baseline model
 
 You might want to consider first building a “simple” base model (e.g., differential equations) if you don’t already have one. This model should serve as the benchmark, and in some cases might be very difficult to improve upon. The benefit of this baseline model is that it is explainable, and usually requires very little data (or at least, data that is probably already captured). Here are some examples of basic models you could use in different industries:
 
-+ In finance Capital Asset Pricing Model, or the Black Scholes Model for option pricing. 
++ In finance Capital Asset Pricing Model, or the Black Scholes Model for option pricing.
 + In retail, Auto Regressive Integrated Moving Average for inventory forecasting.
 + In engineering, a Kalman Filter for motion planning and control.
 
@@ -129,20 +129,20 @@ reg = RidgeCV(alphas=np.logspace(-6, 6, 13)).fit(X, Y)
 
 ### 3.3.4 Evaluate the performance of your models
 
-Your data scientist will have set aside a test set (e.g., uniformly sampled) with data points that are excluded from the training set. Note that if your data set is a time series, ensure that your test set is “in the future”, otherwise you are effectively cheating. 
+Your data scientist will have set aside a test set (e.g., uniformly sampled) with data points that are excluded from the training set. Note that if your data set is a time series, ensure that your test set is “in the future”, otherwise you are effectively cheating.
 
-The two most likely method you will encounter for evaluating the performance of the models are Root Mean Squared Error (RMSE) for regressions, and the Precision-Recall (or F1) for classification problems. 
+The two most likely method you will encounter for evaluating the performance of the models are Root Mean Squared Error (RMSE) for regressions, and the Precision-Recall (or F1) for classification problems.
 
-You can think of the RMSE as a measure of how far away the test set’s actual values are from the predicted values. A lower RMSE is better. While there is no right answer for what constitutes a universally good score for RMSE, given two algorithms that are otherwise equal, you would choose the one with the lower RMSE. 
+You can think of the RMSE as a measure of how far away the test set’s actual values are from the predicted values. A lower RMSE is better. While there is no right answer for what constitutes a universally good score for RMSE, given two algorithms that are otherwise equal, you would choose the one with the lower RMSE.
 
-An easy way to remember the meaning of Precision-Recall is to think of this example: 
+An easy way to remember the meaning of Precision-Recall is to think of this example:
 
-1. Imagine that you attend a dinner party of 100 people, and 88 of them are complete strangers. 
-2. During the course of the evening, you will get to meet every single person, and you will attempt to determine whether you have met this person before. 
-3. Suppose that you claim to have met 10 of those people before, and that 8 of them were indeed correct. 
-4. We would say that your precision is 80% (8/10), and that your recall is 66.7% (8/12). 
+1. Imagine that you attend a dinner party of 100 people, and 88 of them are complete strangers.
+2. During the course of the evening, you will get to meet every single person, and you will attempt to determine whether you have met this person before.
+3. Suppose that you claim to have met 10 of those people before, and that 8 of them were indeed correct.
+4. We would say that your precision is 80% (8/10), and that your recall is 66.7% (8/12).
 
-By tuning your algorithms, you might be able to achieve performance characteristics that are more desirable for your business needs. For instance, you may want to tradeoff having a lower recall for a higher precision by increasing the minimum threshold of certainty before classifying someone as “met before” (e.g., you must also remember their name and the place where you met them). 
+By tuning your algorithms, you might be able to achieve performance characteristics that are more desirable for your business needs. For instance, you may want to tradeoff having a lower recall for a higher precision by increasing the minimum threshold of certainty before classifying someone as “met before” (e.g., you must also remember their name and the place where you met them).
 
 ## 3.4 Autonomous Algorithms
 
@@ -160,7 +160,7 @@ Some recent development in integer programming includes the development of robus
 
 ### 3.4.2 Simulation Based Optimization
 
-When the problem is too difficult to express as an MILP, then [simulation based optmization](https://en.wikipedia.org/wiki/Simulation-based_optimization) is the preferred approach. One popular such technique for when an agent’s decisions are made in stages is called [Dynamic Programming](https://en.wikipedia.org/wiki/Dynamic_programming) (DP). DP has been used extensively across many domains (e.g., protein folding in bioinformatics), and for planning a few steps ahead in simple games (e.g., Rubik’s Cube). 
+When the problem is too difficult to express as an MILP, then [simulation based optmization](https://en.wikipedia.org/wiki/Simulation-based_optimization) is the preferred approach. One popular such technique for when an agent’s decisions are made in stages is called [Dynamic Programming](https://en.wikipedia.org/wiki/Dynamic_programming) (DP). DP has been used extensively across many domains (e.g., protein folding in bioinformatics), and for planning a few steps ahead in simple games (e.g., Rubik’s Cube).
 
 ### 3.4.3 (Deep) Reinforcement Learning
 
@@ -208,7 +208,7 @@ Expect your team to have the following deliverables over time:
 4. In less than 4 months, you should have a DT that can model disruptions for risk mitigation and operations.
 5. In less than 6 months, you should have a DT that is connected live to your data set, and is continuously deployed and improved on.
 
-It may seem academic to write a white paper, but there is a very pragmatic reason for it. By forcing your operations research/modelling/data scientist team to write down the math, you ensure that there is one source of truth, you make it easier to communicate the models to non-programmers, and you reduce the chance of bugs. The white paper is a cornerstone documentation for the inner functioning of the kernel of your DT. 
+It may seem academic to write a white paper, but there is a very pragmatic reason for it. By forcing your operations research/modelling/data scientist team to write down the math, you ensure that there is one source of truth, you make it easier to communicate the models to non-programmers, and you reduce the chance of bugs. The white paper is a cornerstone documentation for the inner functioning of the kernel of your DT.
 
 ## 4.2 Additional considerations
 

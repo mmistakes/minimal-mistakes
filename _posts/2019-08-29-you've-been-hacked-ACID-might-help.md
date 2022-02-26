@@ -1,11 +1,11 @@
 ---
 title: ACID can protect against computer hacking
 category: "Digital Transformation"
-tag: ["Cybersecurity", "Product", "Data"]
+tag: [Cybersecurity, Product]
 toc: true
 ---
 
-It is hard to feel sympathy for [black hat hackers](https://en.wikipedia.org/wiki/Black_hat_(computer_security)) who violate computer security with impunity for personal gain or malice. Their action (data breach, manipulation, and destruction) exposes victims to impersonation/fraud, financial damage, loss of privacy, and even life threatening situations. While some grey hat hackers (and whistleblowers) have noble goals (see “[Hacktivism](https://en.wikipedia.org/wiki/Hacktivism)”), the consequences of their illegal actions can take a toll on [their quality of life](https://en.wikipedia.org/wiki/Aaron_Swartz) and their friends and families have to pay the price. 
+It is hard to feel sympathy for [black hat hackers](https://en.wikipedia.org/wiki/Black_hat_(computer_security)) who violate computer security with impunity for personal gain or malice. Their action (data breach, manipulation, and destruction) exposes victims to impersonation/fraud, financial damage, loss of privacy, and even life threatening situations. While some grey hat hackers (and whistleblowers) have noble goals (see “[Hacktivism](https://en.wikipedia.org/wiki/Hacktivism)”), the consequences of their illegal actions can take a toll on [their quality of life](https://en.wikipedia.org/wiki/Aaron_Swartz) and their friends and families have to pay the price.
 
 <span><audio id="myAudio" controls>
     <source src="/assets/audio/ACID-framework.ogg" type="audio/ogg">
@@ -15,14 +15,14 @@ It is hard to feel sympathy for [black hat hackers](https://en.wikipedia.org/wik
 
 But should some of that ire against hackers be directed at the corporations and governments who hoard this data but sometimes fail to adequately protect it? In some cases, it’s hard not to feel let down by important organizations that will publicly expose their customers’ personal information. For example, look no further than AT&T and Apple, who publicly exposed all of the email addresses of all the people logged in to their 3G network with an iPad - [no hack required](https://www.computerworld.com/article/2518818/-brute-force--script-snatched-ipad-e-mail-addresses.html).
 
-This snafu on the part of AT&T with iPads is already almost 10 years old. Since then, have corporations and governments generally learned how to thoroughly and unequivocally protect data they collect? 
+This snafu on the part of AT&T with iPads is already almost 10 years old. Since then, have corporations and governments generally learned how to thoroughly and unequivocally protect data they collect?
 
 In section 1, I’m going to argue that your organization may already have been hacked, and likely will be hacked in the future. I’ll then compute statistics that suggest that the data breach problems are actually getting significantly worse. And I will conclude that your organization will need to seriously consider revising your standard for authenticating users. In section 2, I’m going to attempt to explain and illustrate why cybersecurity is so hard. And finally, in section 3, I’m going to propose the ACID framework, which are four steps to attenuate your cybersecurity business risks. As a leader of your organization, you should:
 
 1. **A**ssume that you have been hacked
 2. **C**hange what you need to protect
 3. **I**nvest in security policies, threat models, and mechanisms
-4. **D**rive a protection first culture 
+4. **D**rive a protection first culture
 
 # 1. You’ve probably been hacked, and you will be hacked again
 
@@ -34,15 +34,15 @@ I’m not one for conspiracy theories, but when there is a will, there is a way 
 
 As of August 2019, a Wikipedia entry lists [17 reported data breaches](https://en.wikipedia.org/wiki/List_of_data_breaches#cite_note-318), totaling over 2 billion records. The reality might be much worse according to [Consumer Affairs](https://www.consumeraffairs.com/news/nearly-4000-data-breaches-have-exposed-41-billion-consumer-records-so-far-in-2019-082119.html). It affects everyone: well-funded unicorn startups, major banks, and even highly sophisticated tech giants. For instance, if you have a [Canva account](https://www.canva.com/), a Capital One credit card, a Facebook account, or if you closed a real estate deal since 2003 (e.g., bought a house), some data you shared with those organizations might have been made public. That last one concerned American Financial Corp, which according to [Brian Krebs](https://krebsonsecurity.com/2019/05/first-american-financial-corp-leaked-hundreds-of-millions-of-title-insurance-records/) exposed data such as:
 
-+ Bank account numbers 
++ Bank account numbers
 + Bank statements
 + Mortgage documents
 + Tax records
 + Social Security numbers
 + Wire transaction receipts
-+ Drivers license images 
++ Drivers license images
 
-We just don’t know for certain, and people who gain access likely have incentives to keep it private. If you want to stay up to date about the many security breaches that are discovered every month, I recommend Brian Krebs as a primary source. If you haven’t heard of him, know that he is an investigative reporter, and is considered an [authority on cybersecurity](https://en.wikipedia.org/wiki/Brian_Krebs) and his [blog](https://krebsonsecurity.com/) is top notch. 
+We just don’t know for certain, and people who gain access likely have incentives to keep it private. If you want to stay up to date about the many security breaches that are discovered every month, I recommend Brian Krebs as a primary source. If you haven’t heard of him, know that he is an investigative reporter, and is considered an [authority on cybersecurity](https://en.wikipedia.org/wiki/Brian_Krebs) and his [blog](https://krebsonsecurity.com/) is top notch.
 
 ## 1.2 The growth rate is exponential, at 30% per year
 
@@ -68,7 +68,7 @@ Worse, in some cases, the mechanics of the software work exactly as intended, bu
 
 ## 2.1 Your data exists in multiple forms
 
-You need to have a clear understanding that your data exists in multiple forms. On the one hand, you might have a single source of truth in a database somewhere. But copies of subsets of that data most likely are also present in the form of memory (in your RAM and inside the registers of your CPU), packets getting sent over the internet, backups, buffers, and on the client side (web browsers and mobile phones). All of the copies of your data exist independent of each other, and while most systems will generate logs of what happens to your data, it’s impossible to log and monitor everything. 
+You need to have a clear understanding that your data exists in multiple forms. On the one hand, you might have a single source of truth in a database somewhere. But copies of subsets of that data most likely are also present in the form of memory (in your RAM and inside the registers of your CPU), packets getting sent over the internet, backups, buffers, and on the client side (web browsers and mobile phones). All of the copies of your data exist independent of each other, and while most systems will generate logs of what happens to your data, it’s impossible to log and monitor everything.
 
 ## 2.2 Encrypted does not equal secure
 
@@ -93,7 +93,7 @@ This first step is a mindset shift and a habit. Imagine for a moment that you ha
 3. Confidential documents (e.g., forecasts and roadmaps)
 4. Secret IP (e.g., deep neural net weights that drive your AI)
 
-How does the breach affect your ability to continue to sell your products and services? What’s the worst thing that could happen? 
+How does the breach affect your ability to continue to sell your products and services? What’s the worst thing that could happen?
 
 ### 3.1.1 Qualify and quantify the negative impact of a full breach
 
@@ -106,11 +106,11 @@ There are at least four ways that a data breach may affect your organization:
 
 For instance, a network of hospitals could lose a lot of customers after a breach exposes all their patients’ confidential information. Additionally, in the future, the hospital network could have more difficulty getting new patients, and could face a hefty class action lawsuit. That would be devastating in at least three of the four ways mentioned above.
 
-In terms of loss of a competitive edge, imagine that you are in the business of extracting natural resources and you’ve invested tens of millions of dollars building a deep neural net to quickly and accurately assess the value of an asset given core sample data. Or imagine that you are Tesla and finally have the neural net that achieves [Full Self Driving](https://www.tesla.com/autopilot). A data breach could expose the weights of your neural nets and source code (including the [SystemVerilog source code files](https://en.wikipedia.org/wiki/SystemVerilog), that are the blueprint for your custom hardware chip) which would effectively reveal your secret sauce. In such a case, you would have lost the intelligence asymmetry advantage you’ve invested so many resources in building. 
+In terms of loss of a competitive edge, imagine that you are in the business of extracting natural resources and you’ve invested tens of millions of dollars building a deep neural net to quickly and accurately assess the value of an asset given core sample data. Or imagine that you are Tesla and finally have the neural net that achieves [Full Self Driving](https://www.tesla.com/autopilot). A data breach could expose the weights of your neural nets and source code (including the [SystemVerilog source code files](https://en.wikipedia.org/wiki/SystemVerilog), that are the blueprint for your custom hardware chip) which would effectively reveal your secret sauce. In such a case, you would have lost the intelligence asymmetry advantage you’ve invested so many resources in building.
 
-### 3.1.2 Data is both an asset and a liability 
+### 3.1.2 Data is both an asset and a liability
 
-While data can be extremely valuable, you need to be aware that it is also a liability. With the mindset that everything is public, you will be better prepared mentally to the eventuality of a breach and avoid unnecessary risks because when it comes to cybersecurity, hypochondriacs survive. 
+While data can be extremely valuable, you need to be aware that it is also a liability. With the mindset that everything is public, you will be better prepared mentally to the eventuality of a breach and avoid unnecessary risks because when it comes to cybersecurity, hypochondriacs survive.
 
 ## 3.2 Change what you need to protect
 
@@ -132,7 +132,7 @@ Even if you assume that you’ve been hacked and minimize the data that you coll
 
 ## 3.3. Invest in security policies, threat models, and mechanisms
 
-As taught by [Prof. Nickolai Zeldovich](https://people.csail.mit.edu/nickolai/#bio,teaching,contact,pubs) in [6-858](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-858-computer-systems-security-fall-2014/), you want to secure your data from a potential data breach by specifying a policy, threats, and mechanisms: 
+As taught by [Prof. Nickolai Zeldovich](https://people.csail.mit.edu/nickolai/#bio,teaching,contact,pubs) in [6-858](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-858-computer-systems-security-fall-2014/), you want to secure your data from a potential data breach by specifying a policy, threats, and mechanisms:
 
 1. **Policy**: a specification of desired behavior of the system (e.g., confidentiality, integrity, availability).
 2. **Threats**: a set of assumptions about adversaries (e.g., do they have physical access and have the password?).
@@ -148,7 +148,7 @@ Beware of policies that are security theatres. For instance, requiring employees
 
 If your enterprise is serious about data security, which it is, you could consider augmenting passwords with a security key such as [Yubico 5 NFC](https://amzn.to/2ZWHa4T) and start adopting virtual credit cards with a different [controlled payment number](https://en.wikipedia.org/wiki/Controlled_payment_number), at least for every service / vendor combination.
 
-### 3.3.2 Threats 
+### 3.3.2 Threats
 
 While threats can come from anywhere, not everything is equally likely, because advanced attacks may require a substantial amount of coordinated resources and efforts. The first class of threats to model are about human behavior and hardly requires any programming skills on the part of the attacker. Included in that will be easy to guess passwords, social engineering, and plain old downloading data that is left unprotected and publicly available to all.
 
@@ -162,11 +162,11 @@ The last class of threat models comes from hardware bugs and backdoors. This is 
 
 > If a target person, agency or company orders a new computer or related accessories, for example, TAO can divert the shipping delivery to its own secret workshops. The NSA calls this method interdiction. At these so-called "load stations," agents carefully open the package in order to load malware onto the electronics, or even install hardware components that can provide backdoor access for the intelligence agencies.
 
-Much like computing and space exploration once were only the business of governments, in the future, corporations and even individuals will be able to accomplish hardware hacks more easily. For instance, researchers from [Google’s Project Zero](https://googleprojectzero.blogspot.com/) have discovered security vulnerabilities in chips such as [Specter](https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)) and [Meltdown](https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)). More recently, as of September 2019, researchers have demonstrated the ability to steal encrypted SSH keystrokes by [leveraging a weakness in intel chips](https://arstechnica.com/information-technology/2019/09/weakness-in-intel-chips-lets-researchers-steal-encrypted-ssh-keystrokes/). 
+Much like computing and space exploration once were only the business of governments, in the future, corporations and even individuals will be able to accomplish hardware hacks more easily. For instance, researchers from [Google’s Project Zero](https://googleprojectzero.blogspot.com/) have discovered security vulnerabilities in chips such as [Specter](https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)) and [Meltdown](https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)). More recently, as of September 2019, researchers have demonstrated the ability to steal encrypted SSH keystrokes by [leveraging a weakness in intel chips](https://arstechnica.com/information-technology/2019/09/weakness-in-intel-chips-lets-researchers-steal-encrypted-ssh-keystrokes/).
 
-### 3.3.3 Mechanisms 
+### 3.3.3 Mechanisms
 
-When it comes to mechanisms, pretty dramatic consequences can happen from the smallest mistakes. Even with good policies and good understanding of threat models, mechanisms of large software systems most certainly will have bugs. For instance, in 2014 Apple iCloud’s policy was to limit how many times a password check may be attempted before locking the account. Once locked in one app, a user would be locked everywhere. The mechanism was properly implemented in all (e.g., Photos, Files) but one service (“Find My iPhone”). As a result, someone could have attempted to [brute force their way into iCloud](https://github.com/hackappcom/ibrute) via “Find My iPhone”, and the iCloud API would have happily complied. 
+When it comes to mechanisms, pretty dramatic consequences can happen from the smallest mistakes. Even with good policies and good understanding of threat models, mechanisms of large software systems most certainly will have bugs. For instance, in 2014 Apple iCloud’s policy was to limit how many times a password check may be attempted before locking the account. Once locked in one app, a user would be locked everywhere. The mechanism was properly implemented in all (e.g., Photos, Files) but one service (“Find My iPhone”). As a result, someone could have attempted to [brute force their way into iCloud](https://github.com/hackappcom/ibrute) via “Find My iPhone”, and the iCloud API would have happily complied.
 
 While the iCloud “Find My iPhone” bug might have been avoided with only one more line of code, the defect could also have been found by having a DevOps pipeline with lines of code that would test that indeed the policy was enforced. For general system administration, a good list of mechanisms to have in place is [NSA’s top ten cybersecurity mitigation strategies](https://www.nsa.gov/Portals/70/documents/what-we-do/cybersecurity/professional-resources/csi-nsas-top10-cybersecurity-mitigation-strategies.pdf). When building software, the following four practices could be added to NSA’s list:
 
@@ -177,17 +177,17 @@ While the iCloud “Find My iPhone” bug might have been avoided with only one 
 
 ## 3.4. Drive a protection first culture
 
-Alphabet, Apple, Amazon, Microsoft, Facebook, Alibaba, and Tencent are all tech companies and form seven of the ten [largest companies by market cap in the world](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization). We are now firmly in the age of software, where all major corporations are tech companies with tens of thousands of people in their ranks involved in creating software products. Many of the largest 5,000 organizations on Earth need to play catch up when looking for talent and training people on cybersecurity - both at the most junior ranks, but also at the most senior ranks. Not only do they need to play catch up in human resources but also in systems, protocols, and culture. As we have seen in this post, one person can topple a company’s security infrastructure with simple negligence and errors. 
+Alphabet, Apple, Amazon, Microsoft, Facebook, Alibaba, and Tencent are all tech companies and form seven of the ten [largest companies by market cap in the world](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization). We are now firmly in the age of software, where all major corporations are tech companies with tens of thousands of people in their ranks involved in creating software products. Many of the largest 5,000 organizations on Earth need to play catch up when looking for talent and training people on cybersecurity - both at the most junior ranks, but also at the most senior ranks. Not only do they need to play catch up in human resources but also in systems, protocols, and culture. As we have seen in this post, one person can topple a company’s security infrastructure with simple negligence and errors.
 
 In 1913, Henry Ford installed the [first moving assembly line](https://www.history.com/this-day-in-history/fords-assembly-line-starts-rolling) for the mass production of an entire automobile. From then on, no single person in the entire organization, not even Henry himself, could have made an error that would have gone unnoticed and would have resulted in the disruption of all the Ford car produced that year and all the years before.
 
 ### 3.4.1 Cybersec is everyone’s responsibility
 
-Cybersec professionals are to cybersec what professionals are to health, environment and safety. They write policies, train people, and measure impact, but they cannot be everywhere at all times. The people in operations need to adopt behaviors that keep them healthy and safe, and protect the environment via their actions. In effect, the general manager of a mine or a plant has much more direct influence over the number of injuries than the person in charge of HSE. The same is true for cybersecurity: everyone, starting from the CEO down, and from the interns up, need to participate in forging a culture that promotes cybersecurity. 
+Cybersec professionals are to cybersec what professionals are to health, environment and safety. They write policies, train people, and measure impact, but they cannot be everywhere at all times. The people in operations need to adopt behaviors that keep them healthy and safe, and protect the environment via their actions. In effect, the general manager of a mine or a plant has much more direct influence over the number of injuries than the person in charge of HSE. The same is true for cybersecurity: everyone, starting from the CEO down, and from the interns up, need to participate in forging a culture that promotes cybersecurity.
 
 ### 3.4.2 Learning from the US Navy
 
-Since everyone makes mistakes, organizations need to ensure that there is a fail-safe behind everyone: employees, shareholders, board members, contractors, partners, and suppliers. But it is not the first time that humans have to deal with extremely complicated systems that absolutely can’t go wrong. I believe leaders today can learn from the people that have been running US nuclear submarines for decades. [SUBSAFE](https://www.usni.org/magazines/proceedings/2014/june/pillars-submarine-safety) is a certification that was established by the US Navy following the loss of 16 submarines in non-combat related incidents between 1915 and 1963, including the USS Thresher in 1963. No SUBSAFE certified submarine has been lost ever since. If you have the time, I recommend that you read the [statement by Rear Admiral Paul E. Sullivan about SUBSAFE](https://www.navy.mil/navydata/testimony/safety/sullivan031029.txt) given before the House Science Committee in October 2003. 
+Since everyone makes mistakes, organizations need to ensure that there is a fail-safe behind everyone: employees, shareholders, board members, contractors, partners, and suppliers. But it is not the first time that humans have to deal with extremely complicated systems that absolutely can’t go wrong. I believe leaders today can learn from the people that have been running US nuclear submarines for decades. [SUBSAFE](https://www.usni.org/magazines/proceedings/2014/june/pillars-submarine-safety) is a certification that was established by the US Navy following the loss of 16 submarines in non-combat related incidents between 1915 and 1963, including the USS Thresher in 1963. No SUBSAFE certified submarine has been lost ever since. If you have the time, I recommend that you read the [statement by Rear Admiral Paul E. Sullivan about SUBSAFE](https://www.navy.mil/navydata/testimony/safety/sullivan031029.txt) given before the House Science Committee in October 2003.
 
 The success of SUBSAFE has been so remarkable that after the loss of the space shuttle Columbia, NASA incorporated SUBSAFE in a [proposal](https://history.nasa.gov/columbia/Troxell/Columbia%20Web%20Site/Documents/Congress/House/OCTOBE~1/hearing_charter.html) for the restructuring of its organization with a big focus on safety. I now propose "CYBERSAFE" as a similar program for modern day organizations dealing with data.
 

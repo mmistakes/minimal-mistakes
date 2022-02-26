@@ -1,12 +1,12 @@
 ---
 title: On being deeply authentic
 category: "Communication"
-tag: ["Meditation", “CBT”]
+tag: [Meditation, CBT]
 toc: true
 ---
 
 If you have ever practiced yoga and meditation, which are central to Hinduism, Buddhism, or Jainism, you are probably familiar with the concept of a [mantra](
-https://en.wikipedia.org/wiki/Mantra)). Mantras are defined as sounds, words, or groups of words that have spiritual significance.
+https://en.wikipedia.org/wiki/Mantra). Mantras are defined as sounds, words, or groups of words that have spiritual significance.
 
 # 1. Magnetic north
 

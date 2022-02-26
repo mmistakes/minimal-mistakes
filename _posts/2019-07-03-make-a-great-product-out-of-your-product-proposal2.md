@@ -1,7 +1,6 @@
 ---
 title: Make a Great Product out of your Product Proposal - Part II
 category: "Product Management"
-tag: ["Template", "Product", "Letter of Proposal"]
 toc: true
 ---
 
@@ -47,7 +46,7 @@ A framework alone isn't very useful so I'm giving you sanitized examples from pr
 
 *`<list the questions or most important user journey stories>`*
 
-### 2.3 Resolution 
+### 2.3 Resolution
 
 *By building `<list of features>`, we can address the customer needs `<list of benefits>`. I estimate that it will take `<a few weeks/months>` for a team of `<2-10>` people to deliver those features for a cost of `<estimate>`.*
 
@@ -108,7 +107,7 @@ A framework alone isn't very useful so I'm giving you sanitized examples from pr
 
 *While we are flexible on technology underlying your architecture, our understanding is that you have existing infrastructure in `<Azure, AWS, GCP>`. The Architecture below is a starting point for addressing the implementation of your product.*
 
-*`<insert relevant diagrams, like an architecture diagram, data pipelines, etc.>`*   
+*`<insert relevant diagrams, like an architecture diagram, data pipelines, etc.>`*
 
 *At the core is `<e.g., the simulator engine>`, written in `<e.g., Python>` and utilizing `<e.g., AWS Lambda>`. On top are the `<e.g., Command Line Interface (CLI) application and an API that calls the engine>`. The functionality of `<e.g., the simulator engine>` will be exposed via `<e.g., the API Management service to both the CLI and Web applications>`.*
 
@@ -125,17 +124,17 @@ A framework alone isn't very useful so I'm giving you sanitized examples from pr
 
 ## 6. Cost estimates
 
-Here I provide you with a commentary instead of sample paragraphs. I propose three ways to estimate the costs. 
+Here I provide you with a commentary instead of sample paragraphs. I propose three ways to estimate the costs.
 
 ### 6.1 Time and material estimate
 
-First is the time and material estimate. Expect that a product team will have between 1 to 10 people at any given time. Anything more than 10 is becoming at risk of too much communication overhead. It is probably wiser to reduce the team size and reduce the set of features. If that's not possible, then consider splitting the product into two products. 
+First is the time and material estimate. Expect that a product team will have between 1 to 10 people at any given time. Anything more than 10 is becoming at risk of too much communication overhead. It is probably wiser to reduce the team size and reduce the set of features. If that's not possible, then consider splitting the product into two products.
 
 Blended market hourly rates for outsourced people in India, Philippines, or Eastern Europe will range from $20 to $80. If the work is performed on site in US/Canada/Europe, expect to pay $60 to $250. Anything more than that you are most likely paying overhead costs to the staffing agency/consulting company. For instance, it is not unheard of to see hourly rates in the $1,000+ range for partners in prestigious consulting firms (similar to top law firms).
 
 ### 6.2 Fixed cost estimate
 
-The main advantage of a fixed cost estimate (e.g., broken down by phase) is its simplicity. The main drawback is that building a product is akin to doing research - the outcomes are always uncertain. While the time and material estimate is biased in favor of the people doing the work (because more time means more money), the fixed cost estimate is biased in favor of the company purchasing the product building services, as long as the bar on quality is maintained (which unfortunately is often not the case). 
+The main advantage of a fixed cost estimate (e.g., broken down by phase) is its simplicity. The main drawback is that building a product is akin to doing research - the outcomes are always uncertain. While the time and material estimate is biased in favor of the people doing the work (because more time means more money), the fixed cost estimate is biased in favor of the company purchasing the product building services, as long as the bar on quality is maintained (which unfortunately is often not the case).
 
 ### 6.3 Target and cap cost
 
@@ -168,11 +167,11 @@ Team member profiles should be short and to the point. Ideally you should includ
 
 ### 7.2 QA and testing
 
-*Quality assurance, automation and testing are crucial to the process of implementing software with a high degree of quality and reliability. This process validates and ensures functioning of software by going through phases such as smoke tests (validating main functionality), comprehensive tests (manual detailed testing and verification for low volume edge cases and mission critical components), and regression tests (validating that older parts of the software still work when the new part is introduced). Finally QA defines the processes and tooling for testing and deployment automation to ensure an auditable release process.*	
+*Quality assurance, automation and testing are crucial to the process of implementing software with a high degree of quality and reliability. This process validates and ensures functioning of software by going through phases such as smoke tests (validating main functionality), comprehensive tests (manual detailed testing and verification for low volume edge cases and mission critical components), and regression tests (validating that older parts of the software still work when the new part is introduced). Finally QA defines the processes and tooling for testing and deployment automation to ensure an auditable release process.*
 
 ### 7.3 Cyber security
 
-*This is to be completed based on `<company>` Cyber Security requirements/processes (sanitized, best in class examples from other clients are available).* 
+*This is to be completed based on `<company>` Cyber Security requirements/processes (sanitized, best in class examples from other clients are available).*
 
 *Best practice is to leverage the help of an expert consultant who is separate from `<the development team>` and provides an audit of the system independent of the implementation.*
 
