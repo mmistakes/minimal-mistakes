@@ -13,8 +13,8 @@ categories:
 
 ## 통계학 빌딩블락
 
-- 삼위일체 : 평균 + 분산 + 공분산
-- 양대산맥
+- 삼위일체 : 평균 * 분산 * 공분산 = 기대값
+- 두 기둥
   - 대수의 법칙(Law of Large Numbers)
   - 중심극한정리(Central Limit Theorem)
 
