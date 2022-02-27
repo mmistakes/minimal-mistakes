@@ -98,7 +98,7 @@ public class Intro {
 		System.out.println("a" + "b" + 5 + 10); //ab510 출력
 		// +는 왼쪽에서 오른쪽으로 더해짐 
 		// 1. a + b = ab 
-		// 2. ab + b = ab5
+		// 2. ab + 5 = ab5
 		// 3. ab5 + 10 = ab510
 
 		System.out.println(5 + 10 + "a" + "b"); // 
