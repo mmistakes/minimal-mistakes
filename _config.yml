@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR" # "en-US"
-title                    : "anyThink" # "Site Title"
+title                    : "아무생각" # "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "sehoon kwon" # "Your Name"
