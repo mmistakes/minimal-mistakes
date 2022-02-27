@@ -31,7 +31,11 @@ $\quad y_i = X_i \beta + \epsilon_i \quad : \quad \epsilon \sim (0, \Omega) $
 - $\quad y_i = \alpha + \beta x_i + \epsilon_i$  
 
   - Cross Sectional : 아버지 키($x$)가 아들 키($y$)에 미치는 영향
-    - 평균으로의 회귀(regression)
+    - 평균으로의 회귀(regression to the mean)
+    - 오차항 : 어머니 키나 영양 등 통제하지 못한 요인들 포함
+      - 중심극한정리 : 충분히 많은 요인들을 합치면 정규분포 성질
+      - 단, 특정 요인의 영향(변동성)이 다른 요인들을 압도하면 곤란
+      - 따라서 주요 요인들을 통제하는 것이 필요함
 
 - $\quad R_{it} = \alpha_i + \beta_i R_{mt} + \epsilon_{it}$
 
