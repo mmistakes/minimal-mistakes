@@ -13,7 +13,9 @@ layout: archive
 
 <ul class="taxonomy__index">
   {% for i in (1..tags_max) reversed %}
-    {% for tag in site.tags %}
+    <!-- sort 기능 추가 위해 아래 두 줄 코드 수정함 -->
+    {% assign sorted_tags = site.tags | sort %}  
+    {% for tag in sorted_tags %}     
       {% if tag[1].size == i %}
         <li>
           <a href="#{{ tag[0] | slugify }}">
