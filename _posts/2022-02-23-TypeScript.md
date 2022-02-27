@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "TypeScript 알아보기"
-categories: [JavaScript] [TypeScript]
+categories: [JavaScript, TypeScript]
 tag: [JS, TS]
 toc: true
 author_profile: false
