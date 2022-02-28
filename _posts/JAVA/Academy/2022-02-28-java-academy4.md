@@ -218,4 +218,73 @@ public class If {
 }
 ```
 
-##
+### 6. switch / case
+
+```java
+public class Switch {
+	public static void main(String[] args) {
+		/*
+		 * switch : 조건문은 if문과 유사 
+		 * 
+		 * switch(값){
+		 * 	case 조건 : 실행코드
+		 * 	case 조건 : 실행코드
+		 * 	case 조건 : 실행코드
+		 * 	case 조건 : 실행코드
+		 * }
+		 * 
+		 * */
+		
+		switch("사과") {
+		case "바나나" :
+			System.out.println("바나나 입니다");
+			break;
+		case "사과" :
+			System.out.println("사과 입니다");
+			break;
+		case "파인애플" :
+			System.out.println("파인애플 입니다");
+			break;
+		}
+		
+	}
+
+}
+```
+
+- break가 없다면 아래와 같은 결과가 나온다 case가 사과 일때 실행되고 그 뒤에 코드도 실행이된다(파인애플)
+    
+    ![1.png](/assets/images/posts/2022-02-28/1.png)
+    
+- 뒤의 코드를 실행시키지 않기 위해서는 break; 를 해줘야한다
+    - break를 만나는 순간 코드는 멈춘다
+    
+    ![2.png](/assets/images/posts/2022-02-28/2.png)
+
+
+```java
+public class Switch {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자를 입력하세요 ");
+		int num = Integer.parseInt(sc.nextLine());
+		sc.close();
+		switch(num) {
+		case 1 : 
+			System.out.println("1을 입력했다");
+			break;
+		case 2 :
+			System.out.println("2를 입력했다");
+			break;
+		case 3 :
+			System.out.println("3을 입력했다");
+			break;
+		default : 
+			System.out.println("잘못 입력했습니다"); // 1,2,3을 제외한 숫자를 입력시
+			break;
+		}
+	}
+}
+```
+- 입력을 받아 해당하는 case의 코드 실행
+- default는 if 조건문의 else역할
