@@ -28,7 +28,7 @@ theme: minimal-mistakes-jekyll
 Easily change the color scheme of the theme using one of the provided "skins":
 
 ```yaml
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 ```
 
 **Note:** If you have made edits to the theme's CSS files be sure to update [`/assets/css/main.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) to include `@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin` before the `minimal-mistakes` import.
@@ -333,7 +333,7 @@ For example,
 
 ### Comments
 
-[**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), [**utterances**](https://utteranc.es/), and static-based commenting via [**Staticman**](https://staticman.net/) are built into the theme. First set the comment provider you'd like to use:
+[**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), [**utterances**](https://utteranc.es/), [**giscus**](https://giscus.app/) and static-based commenting via [**Staticman**](https://staticman.net/) are built into the theme. First set the comment provider you'd like to use:
 
 | Name             | Comment Provider          |
 | ---------------- | ------------------------- |
@@ -343,6 +343,7 @@ For example,
 | **staticman_v2** | Staticman v2 / v3         |
 | **staticman**    | Staticman v1 (deprecated) |
 | **utterances**   | utterances                |
+| **giscus**       | giscus                    |
 | **custom**       | Other                     |
 
 Then add `comments: true` to each document you want comments visible on.
@@ -422,6 +423,36 @@ comments:
   utterances:
     theme: "github-light" # "github-dark"
     issue_term: "pathname"
+    label: "comment" # Optional - must be existing label.
+```
+
+#### giscus comments
+
+To use giscus you will need to [install the app](https://github.com/apps/giscus) to your GitHub repository.
+
+The next step is to go to <https://giscus.app> and fill out the desired settings. This will generate JavaScript that will provide you with the settings you will need to configure things below.
+
+You'll need to ensure you've added the following to `_config.yml`:
+
+```yaml
+repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+```
+
+**Note:** Make sure the repo is public, otherwise your readers will not be able to view the issues/comments. The [discussions feature](https://docs.github.com/en/discussions) also needs to be active on your repo.
+{: .notice--warning}
+
+To enable giscus on the front end set `comments.provider` and the other additional options.
+
+```yaml
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id              : # Shown during giscus setup at https://giscus.app
+    category_name        : # Full text name of the category
+    category_id          : # Shown during giscus setup at https://giscus.app
+    discussion_term      : # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : # '1' for enabled (default), '0' for disabled
+    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
 ```
 
 #### Static-based comments via Staticman
@@ -680,7 +711,7 @@ Formerly known as [Google Webmaster Tools](https://www.google.com/webmasters/too
 
 #### Bing Webmaster Tools
 
-There are several ways to [verify site ownership](https://www.bing.com/webmaster/help/how-to-verify-ownership-of-your-site-afcfefc6) --- the easiest adding an authentication code to your config file.
+There are several ways to [verify site ownership](https://www.bing.com/webmasters/help/add-and-verify-site-12184f8b) --- the easiest adding an authentication code to your config file.
 
 Copy and paste the string inside of `content`:
 
@@ -777,12 +808,12 @@ facebook:
   username: "michaelrose"  # https://www.facebook.com/michaelrose
 ```
 
-**ProTip:** To debug Open Graph data use [this tool](https://developers.facebook.com/tools/debug/og/object?q=https%3A%2F%2Fmademistakes.com) to test your pages. If content changes aren't reflected you will probably have to hit the **Fetch new scrape information** button to refresh.
+**ProTip:** To debug Open Graph data use [this tool](https://developers.facebook.com/tools/debug/) to test your pages. If content changes aren't reflected you will probably have to hit the **Scrape Again** button to refresh.
 {: .notice--info}
 
 ##### Open Graph default image
 
-For pages that don't have a `header.image` assigned in their YAML Front Matter, `site.og_image` will be used as a fallback. Use your logo, icon, avatar or something else that is meaningful. Just make sure it is place in the `/assets/images/` folder, a minimum size of 120px by 120px, and less than 1MB in file size.
+For pages that don't have a `header.image` assigned in their YAML Front Matter, `site.og_image` will be used as a fallback. Use your logo, icon, avatar or something else that is meaningful. Just make sure it is placed in the `/assets/images/` folder, has a minimum size of 120px by 120px, and is less than 1MB in file size.
 
 ```yaml
 og_image: /assets/images/site-logo.png
