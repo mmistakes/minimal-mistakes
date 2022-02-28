@@ -7,10 +7,13 @@ tags:
  - Microbiomes
  - neural relational inference
  - Bayesian networks
- - open
+ - closed
 header:
   teaser: "/assets/images/ivan-timov-138042-unsplash-500x300.jpg"
 ---
+
+This position has been filled, it is visible for archival purposes.
+{: .notice--warning}
 
 <script type="application/ld+json">
 {

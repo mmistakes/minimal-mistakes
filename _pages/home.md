@@ -25,8 +25,8 @@ feature_row:
   - image_path: /assets/images/free-to-use-sounds-kOuCX7fh50U-unsplash.jpg
     alt: "Join the Lab"
     title: "Join the Lab"
-    excerpt: "We are hiring a postdoc to work on modeling microbiome networks"
-    url: "/jobs/2021-08-24-postdoc-position/"
+    excerpt: "We are hiring two computatioanl biology postdocs"
+    url: "/jobs/"
     btn_label: "Learn More"
     btn_class: "btn--info"
     caption: "Photo credit: [*free to use sounds*](https://unsplash.com/photos/kOuCX7fh50U)"
