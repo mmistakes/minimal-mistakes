@@ -27,16 +27,16 @@ author_profile: false
       font-weight: bold;
       padding: 8px;
     }
-
+    
     table.dataframe td {
       text-align: center;
       padding: 8px;
     }
-
+    
     table.dataframe tr:hover {
       background: #b8d1f3; 
     }
-
+    
     .output_prompt {
       overflow: auto;
       font-size: 0.9rem;
@@ -92,15 +92,6 @@ author_profile: false
 
 다음 plot은 처음 2개의 특성을 사용해서 나타냈습니다. 이 데이터 세트에 대한 자세한 정보를 보고 싶으면 [여기](https://en.wikipedia.org/wiki/Iris_flower_data_set)를 보세요.
 
-
-
-```python
-np.unique(y)
-```
-
-<pre>
-array([0, 1, 2])
-</pre>
 
 ```python
 # Code source: Gaël Varoquaux
