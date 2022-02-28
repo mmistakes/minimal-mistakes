@@ -16,13 +16,13 @@ layout: archive
     <!-- sort 기능 추가 위해 아래 두 줄 코드 수정함 -->
     {% assign sorted_tags = site.tags | sort %}  
     {% for tag in sorted_tags %}     
-      {% if tag[1].size == i %}
+      <!-- {% if tag[1].size == i %} -->
         <li>
           <a href="#{{ tag[0] | slugify }}">
             <strong>{{ tag[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
           </a>
         </li>
-      {% endif %}
+      <!-- {% endif %} -->
     {% endfor %}
   <!-- {% endfor %} -->
 </ul>
