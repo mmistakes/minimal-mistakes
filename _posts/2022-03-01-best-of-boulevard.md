@@ -29,4 +29,4 @@ Manchmal reicht auch schon das Grafikdesign um sich in dieser Liste zu verewigen
 ![Ectasy 3](../assets/images/bob/02-2022/schampus3.PNG)
 ![Ectasy 2](../assets/images/bob/02-2022/schampus2.PNG)
 ![Hank](../assets/images/bob/02-2022/hank.png)
-![Zucker](../assets/images/bob/02-2022/ben.png)
+![Zucker](../assets/images/bob/02-2022/ben.PNG)
