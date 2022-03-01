@@ -16,6 +16,7 @@ Manchmal reicht auch schon das Grafikdesign um sich in dieser Liste zu verewigen
 ## #3
 ![Novanix](../assets/images/bob/02-2022/nova.PNG)
 
+
 ## #2
 ![Trump](../assets/images/bob/02-2022/trump.PNG)
 
