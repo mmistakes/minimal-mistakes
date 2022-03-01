@@ -9,8 +9,9 @@
 # Ruby Gem
 *.gem
 .bundle
-Gemfile_origin
+Gemfile
 Gemfile.lock
+minimal-mistakes-jekyll.gemspec
 **/vendor/bundle
 
 # Node.js and NPM
