@@ -23,7 +23,7 @@ It was again my girlfriend who pointed me to the [ON Running The Roger Advantage
 
 **PLACEHOLDER IMAGE here**
 <figure>
-    <img alt="The ROGER Advantage" src="path/to/image">
+    <img alt="The ROGER Advantage" src="/assets/images/email-1.png">
     <figcaption><i>What a beauty</i></figcaption>
 </figure>
 
