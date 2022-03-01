@@ -8,6 +8,7 @@ tags:
 - GLS
 - FGLS
 - endogeneity
+date: 2022-02-17 10:00:02
 ---
 
 ## 회귀식 Regression Equation

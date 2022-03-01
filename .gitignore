@@ -9,6 +9,7 @@
 # Ruby Gem
 *.gem
 .bundle
+Gemfile_origin
 Gemfile.lock
 **/vendor/bundle
 

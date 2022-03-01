@@ -5,6 +5,7 @@ tags:
 categories:
 - Programming
 title: WSL2(우분투)에 dropbox 설치
+date: 2022-02-15 10:00:01
 ---
 
 > WSL2 우분투(20.04)는 GUI 환경이 원활하지 않으므로  

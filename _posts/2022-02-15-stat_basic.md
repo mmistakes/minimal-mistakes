@@ -9,6 +9,7 @@ tags:
 - standard error
 categories:
 - Statistics
+date: 2022-02-17 10:00:01
 ---
 
 ## 통계학 빌딩블락
