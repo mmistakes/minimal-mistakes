@@ -67,3 +67,23 @@ git remote remove <rama>
 ```bash
 git remote show origin
 ```
+
+* Eliminar las **ramas remotas** dentro del **[Repo.Local]**
+
+```bash
+git push --delete <nombre-referencia> <nombre-rama-remota>
+```
+
+* Eliminar las **ramas remotas** dentro del **[Repo.Local]**
+  * Ejemplo básico
+
+```bash
+git branch --all
+  develop
+* feature-a
+  master
+  remotes/origin/feature-a
+  remotes/origin/master
+# Para eliminar la rama remota "feature-a"  
+git push --delete origin feature-a
+```

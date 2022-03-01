@@ -75,6 +75,12 @@ git branch -v
   master    e1d6b344 Merge pull request #65 from rvsweb/feature-a
 ```
 
+* Muestran todas las **ramas locales** , **rama remotas** y **ramas tracking** con sus **ramas remotas** asociadas y su estado
+
+```bash
+git branch -vva 
+```
+
 #### Opción ``-M``
 
 * Ejecuta 2 opciones en 1
@@ -162,6 +168,27 @@ git checkout -b rama-alternativa b0e63ad
 
 ```bash
 git branch -m <nuevo-nombre-rama>
+```
+
+### Ramas Tracking
+
+* Crear ramas tracking asociadas a una rama remota mediante los comandos
+  * La opción ``-b`` crea una rama
+
+```bash
+git branch -b <nombre-rama-local> <rama-tracking>/<rama-repo.remoto>
+# Ejemplo
+git branch -b rama-alternativa origin/rama-alternativa
+
+git branch --track <rama-tracking>/<rama-repo.remoto>
+# Ejemplo
+git branch --track origin/rama-alternativa
+
+git branch --track <rama-tracking>/<rama-repo.remoto>
+# Ejemplo
+git branch --track rama-aux origin/master
+
+
 ```
 
 ## Ramas necesarias para un proyecto
