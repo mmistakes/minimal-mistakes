@@ -2,11 +2,7 @@
 
 This website collects my various interests, projects, services, reports, learning experiences, and much more. Check out the [categories](/categories/) section to see the topics I have written about. You can also find more information [about](/about/) the purpose of my website.
 
-# Looking for an Engineer?
-
-I am currently looking to work as a developer in the [blockchain](/categories/cryptocurrency_and_the_blockchain/) space. If you are looking to hire a skillful and versatile software engineer, look through my [experiences](/categories/career/technical_experience) and determine if I am a good fit for your search. Feel free to contact me via [email](mailto:abdulrabbani00@gmail.com).
-
-# Bi-Weekly Updates: 02/15/22 - 03/01/22
+# Bi-Weekly Updates: 03/01/22 - 03/15/22
 
 These last few weeks have been quite interesting for me. I've been interviewing at a few places, learning new things, reading, and focusing on my health.
 
@@ -14,21 +10,15 @@ These last few weeks have been quite interesting for me. I've been interviewing 
 
 A few _professional_ updates:
 
-- **Mastery -** I have finished re-reading one of my favorite books, _Mastery_ by Robert Greene. The last chapter has strung a chord with me. I am creating various posts on [_Mastery_](/categories/mastery) to further explore its meaning and implications on my own life.
-
-  - "The intuitive mind is a sacred gift and the rational mind is a faithful servant. We have created a society that honors the servant and has forgotten the gift." - Albert Einstein.
+- [**Mastery**](/categories/mastery) **-** I have finished re-reading one of my favorite books, _Mastery_ by Robert Greene. The last chapter has strung a chord with me. I am creating various posts on [_Mastery_](/categories/mastery) to further explore its meaning and implications on my own life.
 
 - [**Mentorship Program**](/categories/career/mentorship_program) - I've started a **free** mentorship program to help people start or further develop their careers in tech. If you know anyone interested, please give them my contact information.
 
-- **Learning React** - I am learning how to create front-end websites using React. I am happy to get exposure to front-end development.
-
-- **Interviews** - I have been interviewing with some outstanding organizations over the last few weeks. I am doing my best to be incredibly mindful during this process. I want to build a home for myself in my next role.
+- **New Role -** I have taken up a new role in the blockchain space. I will be working on a new layer two blockchain. I am incredibly excited about this opportunity.
 
 ## Personal
 
 A few personal updates:
-
-- **My Parents Became U.S Citizens** - After 15 long years, my parents are finally U.S citizens. They left their life in Saudi Arabia on September 9th, 2001, and came to the West. After being pushed around from the U.S → Canada → U.S, they have finally gained their citizenship. They studied day and night for the civics, reading, and writing tests. I am so grateful for their sacrifices for my siblings and me. I love my parents very much, and I am forever in their debt.
 
 - **Health and wellness -** I have immersed myself in the "human" sciences over the last few weeks. Two podcasts that have been particularly interesting to me have been the ["Lifespan" podcast by Dr. Sinclair](https://www.abdulrabbani.com/categories/learning/podcast/lifespan) and the ["Huberman Lab" podcast by Dr. Huberman](https://www.abdulrabbani.com/categories/learning/podcast/huberman_lab).
 
