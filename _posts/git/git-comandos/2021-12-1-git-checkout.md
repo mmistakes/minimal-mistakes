@@ -19,10 +19,17 @@ tags:
 
 ## Git - checkout
 
-* Cambiar de **rama** o **restaurar archivos** de **(árbol de trabajo-Working Tree Files)**
-  * **Switch branches or restore working tree files**
+### Posibles Usos
 
-> Todo los cambios que hagamos sobre un archivo que estén **{Tracked/Rastreado}** se realizan desde el **(Working Directory)**
+* Cambiar de **rama** o **restaurar archivos** del **(Àrbol de Trabajo/Working-Tree Files)**
+  * **Cambiar de ramas local**
+  * **Restaurar los archivos del (Working Tree)**
+
+* Cambia **[HEAD]** en si mismo de lugar al que apunta
+
+* Copiar el contenido de una **rama remota** dentro de una **rama tracking local** y crear *(en el caso que no exista)* o actualizar *(en el caso que exista)* en el **[Repositorio Local]** una **rama** con el mismo nombre que poseía la **rama tracking local** que apunta a la **rama remota** del **|Repositorio Remoto|**
+
+> Todo los cambios que hagamos sobre un archivo que estén **{Tracked/Rastreado}** afectan al **(Working Directory/Directorio de Trabajo)**
 
 * Elimina los cambios de ``<file>`` que pasan de **{Modified}** a **{Unmodified}**
   * Los cambios que se hagan en **{Modified}** cuando se ejecute este comando se perderán
@@ -33,9 +40,19 @@ tags:
 
 ``git checkout .``
 
-Cambia **[HEAD]** en si mismo de lugar al que apunta
+* Copia en una **rama remota** una **rama local de tracking** y crea una **rama local** con el mismo nombre ( en el caso de que no exista )
+  * Crea y sincroniza la **rama local tracking** asociada a una ``<rama remota>/<rama>`` como puede ser ``<origin/rama-remota>`` del **[Repositorio Remoto]**
 
-Reemplazar los cambios locales
+``git checkout <rama-tracking-apuntando-a-remota>``
+
+* Restaura y actualiza el puntero **[HEAD]** a una **rama remota** en modo ``Detached HEAD`` el cual no esta asociada a ninguna rama ``Puntero Descabezado``
+
+``git checkout origin/<rama-remota>``
+
+* Importante :
+  * Mueve el puntero de la **rama tracking local** hacia ``origin/rama-remota`` para hacer pruebas con el **commit** que tendrá y el cual tiene dentro todos los archivos , después de hacer las pruebas podemos guardarlo mediante el comando ``git switch -c <nombre-rama>`` o deshacerlo mediante ``git switch -``
+
+### Reemplazar los cambios locales
 
 * Reemplaza los cambios del **(Working Directory/wd)** con el **último contenido** del **[HEAD]** , los cambios que ya han sido agregados al **{Staging Area/Index/Staged}** como los nuevos archivos , se mantendrán sin cambios
 
