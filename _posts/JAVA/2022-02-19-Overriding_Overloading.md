@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "오버라이딩 ( Overriding ) vs 오버로딩 ( Overloading )"
+title:  "Overriding vs Overloading"
 categories: 
     - JAVA
 tags: 
