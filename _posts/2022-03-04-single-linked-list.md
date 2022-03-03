@@ -19,7 +19,7 @@ void addFirst(struct node* head) {
 	scanf("%d", &input_data);
 	newNode->data = input_data;
 	if (head->next == NULL)	newNode->next = NULL;
-	else					newNode->next = head->next;
+	else newNode->next = head->next;
 	head->next = newNode;
 }
 void print(struct node* head) {
