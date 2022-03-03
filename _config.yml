@@ -135,7 +135,7 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:"https://www.facebook.com/profile.php?id=100003563542832"
+      url:"https://www.facebook.com/profile.php?id=100003563542832"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url:
