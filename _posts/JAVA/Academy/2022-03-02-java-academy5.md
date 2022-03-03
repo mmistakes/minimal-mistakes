@@ -121,13 +121,21 @@ public class Exam02_For {
 		int input = Integer.parseInt(sc.nextLine());
 		int sum = 0 ;
 		for(int i = 1; i <= input; i++) {
+			//1. int sum = 0이 여기있다면(지역변수 이기에)
 			sum += i;
-		}System.out.println(sum);
+		}System.out.println(sum); // 2. 이곳에서 sum이 컴파일 에러가 난다
 		
 	}
 
 }
 ```
+- 지역변수 sum 확인
+<details>
+<summary>👈지역변수 </summary>
+<div markdown="1">       
+반복문 / 조건문 혹은 메서드(기능)의 {} 안 범위에서만 사용할 수 있는 변수
+</div>
+</details> 
 
 ### 2. while
 
