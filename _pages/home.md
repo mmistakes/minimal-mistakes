@@ -37,7 +37,6 @@ Throughout my PhD candidature, I have acquired experience in:
 - Data visualisation (matplotlib, Paraview)
 
 ## Other research interests
-TEST
 Aside from my current doctoral research I am interested in:
 - science communication,
 - diversity in STEM,
