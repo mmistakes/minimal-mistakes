@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -108,9 +108,9 @@ author:
   location         : "Somewhere"
   email            : "yeongjin2573@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:yeongjin2573@gmail.com"
+   #- label: "Email"
+   #  icon: "fas fa-fw fa-envelope-square"
+   #  url: "mailto:yeongjin2573@gmail.com"
    #- label: "Website"
    #  icon: "fas fa-fw fa-link"
    #  url: "https://your-website.com"
@@ -132,7 +132,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: https://www.naver.com/
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
