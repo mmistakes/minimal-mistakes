@@ -104,8 +104,8 @@ analytics:
 author:
   name             : "Yeongjin Kim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "영진의 샘플 블로그입니다."
+  location         : "South korea"
   email            : "yeongjin2573@gmail.com"
   links:
    #- label: "Email"
