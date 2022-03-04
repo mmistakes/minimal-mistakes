@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "The first post."
+categories: anything
 ---
 
 # Hello World!
