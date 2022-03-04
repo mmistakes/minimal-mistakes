@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Single Linked List."
+categories: coding
 ---
 
 ```c
