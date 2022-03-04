@@ -2,7 +2,7 @@
 layout: single
 title: "Single Linked List."
 categories: coding
-tag: [C, SLL, linked list, 연결리스트]
+tag: [C, SLL, linked list]
 ---
 
 ```c
