@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Single Linked List."
-categories: coding
+categories: Development note
 tag: [C, linked list, SLL]
 ---
 
