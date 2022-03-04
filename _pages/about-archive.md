@@ -1,5 +1,5 @@
 ---
-title: "BE Developer YeChan"
+title: "YeChan Kwak"
 layout: category
 permalink: /about
 author_profile: false

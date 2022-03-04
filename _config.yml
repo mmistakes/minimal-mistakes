@@ -16,7 +16,7 @@ minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon
 
 # Site Settings
 locale: "ko-KR"
-title: "BE Developer YeChan"
+title: "YeChan"
 title_separator: "|"
 subtitle: # site tagline that appears below site title in masthead
 name: "YeChan Kwak"
@@ -103,7 +103,7 @@ analytics:
 author:
   name: "YeChan Kwak"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "백엔드 개발자 곽예찬"
+  bio: "하루하루 성장하는 삶을 살자!"
   location: "Seoul"
   email: "rhkr4080@gmail.com"
   links:
