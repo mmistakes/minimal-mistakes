@@ -104,7 +104,7 @@ public class VendingMachine {
 		Scanner sc = new Scanner(System.in);
 		int balance = 3000; 
 		
-		vening : while(true) {
+		vending : while(true) {
 		System.out.println("=====자판기 시뮬레이터=====");
 		System.out.println("음료수를 선택하세요.");
 		System.out.println("1. 콜라(1000) 2. (사이다) 3. 매실차(1500) [0.소지품 확인] 10. 자판기 종료");
