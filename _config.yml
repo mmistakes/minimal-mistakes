@@ -15,24 +15,31 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
+locale                   : "ko-KR"
+title                    : "JinBlog"
+title_separator          : "|"
+subtitle                 : "Gonna be my Best Part"
+name                     : "최진실"
+description              : "작업 내용 올리는 중.."
+=======
 locale                   : "en-US"
-title                    : "Jinsil Blog"
+title                    : "JinBlog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "최진실"
-description              : "개발과 작업을 기록하는 중"
+name                     : "Jinsil"
+description              : "작업 내용 올리는 중"
 url                      : "https://chlwlstlf.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/jinsillogo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "chlwlstlf"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -102,11 +109,21 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "최진실"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+<<<<<<< HEAD
+<<<<<<< HEAD
+  bio              : "Sejong Univ. DataScience"
+  location         : "South Korea"
+  email            : "jinsil378900@gmail.com"
+=======
+  bio              : "Sejong Univ. Datascience"
+  location         : "Osan, South Korea"
+  email            : "jinisl378900@gmail.com"
+=======
+  bio              : "Sejong Univ. Datascience"
+  location         : "Osan, South Korea"
+  email            : "jinisl378900@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -285,6 +302,9 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+      show_date: true
+
+date_format: "%Y-%m-%d"
