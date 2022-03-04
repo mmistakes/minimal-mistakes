@@ -2,7 +2,6 @@
 layout: single
 title: "Single Linked List."
 categories: coding
-tag: [C, SLL, linked list]
 ---
 
 ```c

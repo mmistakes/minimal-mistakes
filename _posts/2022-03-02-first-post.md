@@ -2,7 +2,6 @@
 layout: single
 title: "The first post."
 categories: anything
-tag: [blog, jekyll]
 ---
 
 # Hello World!
