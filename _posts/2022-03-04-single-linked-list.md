@@ -69,6 +69,7 @@ int main(void) {
 }
 ```
 
-외않되
+
 
 ![cat](../images/2022-03-04-single-linked-list/cat.jpg)
+
