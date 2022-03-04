@@ -68,3 +68,7 @@ int main(void) {
 	return 0;
 }
 ```
+
+
+
+![cat](../images/2022-03-04-single-linked-list/cat.jpg)
