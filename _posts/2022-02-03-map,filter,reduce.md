@@ -88,8 +88,8 @@ animals.forEach(function(animal, index) {
   const smallAnimal = animals.filter(function(item) {
   	return item.size === 'small';
   })
-  console.log(smallAnimal); // {name: 'cat', size: 'small', isAggressive: true, weight: 10}
-                            // {name: 'rabbit', size: 'small', isAggressive: true, weight: 2}
+  console.log(smallAnimal); // [ {name: 'cat', size: 'small', isAggressive: true, weight: 10},
+                            // {name: 'rabbit', size: 'small', isAggressive: true, weight: 2} ]
   ```
 
 
