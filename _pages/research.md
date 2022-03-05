@@ -6,7 +6,7 @@ permalink: /research/
 ---
 
 
-*Overview:* I have started my career doing theoretical and field work in my Undergrad and  Master's
+*Overview:* I have started my career doing theoretical and field work in my Undergrad and Master's
 education, and progresssed torwards numerical research in my PhD. I've worked on Hydrology,
 Atmospheric turbulence (boundary layer meteorology) and Oceanic flows (submesoscale phenomena and
 boundary layer processes). Currently my research is mainly based on numerical tools such as [Large
@@ -45,9 +45,10 @@ and [here](https://journals.ametsoc.org/jas/article-abstract/77/10/3479/353916/D
 
 
 
+## Past work
 
 
-## Turbulent fluxes or greenhouse gases over grasslands, lakes and forests
+### Turbulent fluxes or greenhouse gases over grasslands, lakes and forests
 
 ![](/assets/images/AFM-phi.png)
 
@@ -65,7 +66,7 @@ and
 
 
 
-## Groundwater transport in porous aquifers
+### Groundwater transport in porous aquifers
 
 ![](/assets/images/WRR-aquifer.png)
 
