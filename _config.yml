@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "custom" # "air", "aqua", "contrast", "dark", "dirt",
 locale                   : "en-US"
 title                    : "기록저장소"
 title_separator          : "-"
-subtitle                 : "development blog"
+subtitle                 : "development/daily_life blog"
 name                     : "record storage"
 description              : "seohyunz"
 url                      : "https://seohyunz.github.io"
