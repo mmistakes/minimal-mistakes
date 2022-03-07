@@ -9,6 +9,7 @@ toc: true
 
 | 년도        | 이름   | 직책     | BOJ핸들                                         |
 | ----------- | ------ | -------- | ----------------------------------------------- |
-| 2021 - 현재 | 윤상건 | 동아리장 | [ggj06281](https://www.acmicpc.net/user/ggj06281) |
+| 2022 - 현재 | 박정현, 윤상건 | 공동 동아리장 | [pjh9996](https://www.acmicpc.net/user/pjh9996), [ggj06281](https://www.acmicpc.net/user/ggj06281) |
+| 2021 - 2021 | 윤상건 | 동아리장 | [ggj06281](https://www.acmicpc.net/user/ggj06281) |
 | 2020 - 2020 | 박정현 | 동아리장 | [pjh9996](https://www.acmicpc.net/user/pjh9996) |
 
