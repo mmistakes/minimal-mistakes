@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "개발자로 성장하는 사람"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Park min gyu"
 description              : "An amazing website."
 url                      : "https://benz9411.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
