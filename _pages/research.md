@@ -25,7 +25,8 @@ layer flows. I've given specific focus to Centrifugal-Symmetric instabilities, w
 be especially active in the submesoscale range of the spectrum.
 
 You can find a preprint of a publication that's under review for JPO
-[here](https://eartharxiv.org/repository/view/2851/).
+[here](https://eartharxiv.org/repository/view/2851/) and watch my presentation on the topic
+[here](https://youtu.be/F2RVCqTOF5o).
 
 
 
