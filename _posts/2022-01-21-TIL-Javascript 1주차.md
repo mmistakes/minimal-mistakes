@@ -1,12 +1,3 @@
----
-
-title: Javascript 1주차
-comments: true
-categories: [TIL,Javascript]
-tags: []
-
----
-
 - 목차
 
 1. 변수가 필요한 이유
