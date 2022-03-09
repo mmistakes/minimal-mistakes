@@ -64,7 +64,7 @@ sidebar:
     
     ```
 
-    ![r1](../images/2022-03-08-prototype/r1.png)
+    ![r1](https://user-images.githubusercontent.com/81172451/157412574-97dc0143-120c-43a5-9fd1-1a4956843456.png)
 
   - Animal 프로토타입 객체는 tiger, lion 과 같은 객체들의 원형이 되는 객체입니다.
 
@@ -78,8 +78,10 @@ sidebar:
     console.log(lion.aniRun()); // 동물이 뛴다.
     ```
 
-    ![r2](../images/2022-03-08-prototype/r2.png)
+    ![r2](https://user-images.githubusercontent.com/81172451/157412590-b894cd40-30d6-4d41-b0e9-eb8dda494c74.png)
 
   - 어떤 함수(Animal)의 "(Animal) 프로토타입 객체"는 객체의 생성을 위한 부모격의 원형이 되는 객체입니다.
+  
   - 이 프로토타입(원형)으로 생성된 객체들은 모두 이 "프로토타입 객체"의 멤버들에 접근이 가능하고 사용할 수 있습니다. (생성된 객체들과 공유)
+  
   - 새롭게 생성된 객체에서 원형의 메서드를 다시 재정의해서 사용할 수도 있습니다.
