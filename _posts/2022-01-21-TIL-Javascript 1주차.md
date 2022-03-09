@@ -1,6 +1,6 @@
 ---
 
-layout: post
+layout: default
 title: Javascript 1주차
 comments: true
 categories: [TIL,Javascript]
