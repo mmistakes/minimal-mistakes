@@ -105,9 +105,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "moonjunyong"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "junyong's blog."
   location         : "Somewhere"
   email            :
   links:
