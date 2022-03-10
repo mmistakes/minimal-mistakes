@@ -111,7 +111,7 @@ author:
   location         : "Somewhere"
   email            :
   links:
-    - label: "Email"
+    - label: "mn1121mn@naver.com"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
     - label: "Website"
