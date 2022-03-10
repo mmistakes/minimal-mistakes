@@ -2,6 +2,7 @@
 layout: single
 title: "Javascript week 1"
 categories: TIL
+tag: javascript
 ---
 
 - 목차
