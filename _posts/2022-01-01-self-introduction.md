@@ -1,9 +1,10 @@
 ---
-layout: single
+# layout: single
 title: "Introduction"
 categories: Myself
 ---
 
+<img src="../images/스크린샷 2022-02-16 오후 1.17.21.png"/>
 ![스크린샷 2022-02-16 오후 1.17.06](../assets/images/스크린샷 2022-02-16 오후 1.17.06.png)
 
 ![스크린샷 2022-02-16 오후 1.17.06](../assets/스크린샷 2022-02-16 오후 1.17.06.png)
