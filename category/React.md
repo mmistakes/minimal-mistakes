@@ -1,7 +1,0 @@
----
-
-layout: category
-
-title: React
-
----
