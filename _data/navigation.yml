@@ -11,5 +11,5 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   - title: "Category"
-    url: "/categories/"
+    url: "/category/"
    
