@@ -1,4 +1,9 @@
-# Code Kata Day2
+---
+layout: single
+title: "Code Kata Day2"
+categories: CodeKata
+tag: [TIL, Javascript, Algorithm]
+---
 
 ### 문제
 
@@ -12,27 +17,24 @@ x: -1234 return: -4321
 
 x: 1230 return: 321
 
-
-
 ---
-
-
 
 ### 해결
 
 ```js
-const reverse = x => {
-  
-  return parseInt(
-    x
-    .toString() // -1234
-    .split('')  // ['-','1','2','3','4']
-    .reverse()  // ['4','3','2','1','-']
-    .join('')   // 4321-
-  ) * Math.sign(x) 
-}
+const reverse = (x) => {
+  return (
+    parseInt(
+      x
+        .toString() // -1234
+        .split("") // ['-','1','2','3','4']
+        .reverse() // ['4','3','2','1','-']
+        .join("") // 4321-
+    ) * Math.sign(x)
+  );
+};
 
-console.log(reverse(-1234))
+console.log(reverse(-1234));
 ```
 
 1. reverse 함수의 인자값으로 숫자 `-1234` 가 들어온다.

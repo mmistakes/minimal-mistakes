@@ -1,12 +1,15 @@
-# [CSS] Block & Inline
+---
+layout: single
+title: "Block & Inline?"
+categories: CSS
+tag: [CSS, HTML, TIL]
+---
 
 대부분의 HTML element(이하 요소)는 block 요소입니다.
 
 예를 들어, `<header>`, `<footer>`, `<p>`, `<li>`, `<table>`, `<div>`, `<h1>` 등이 모두 block 요소에 해당하는 태그들입니다.
 
 block 요소의 의미는, 이 요소 바로 **옆(좌우측)에 다른 요소를 붙여넣을 수 없다**는 뜻입니다.
-
-
 
 block 요소와 성질이 반대인 inline 요소도 있습니다.
 

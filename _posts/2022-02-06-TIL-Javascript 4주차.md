@@ -2,7 +2,7 @@
 layout: single
 title: "Javascript week 4"
 categories: TIL
-tag: [HTML, CSS, TIL]
+tag: [HTML, CSS, Javascript, TIL]
 ---
 
 - 목차

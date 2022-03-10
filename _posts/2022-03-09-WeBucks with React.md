@@ -1,4 +1,9 @@
-# WeBucks with React
+---
+layout: single
+title: "WeBucks with React"
+categories: Project
+tag: [TIL, Project, React]
+---
 
 ### 01. 파일구조
 

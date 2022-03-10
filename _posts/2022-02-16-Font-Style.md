@@ -1,6 +1,9 @@
-# Font Style
-
-
+---
+layout: single
+title: "Font Style"
+categories: CSS
+tag: [CSS, HTML, TIL]
+---
 
 ### 01. font family
 
@@ -28,10 +31,10 @@ Georgia, "Times New Roman", Times, serif 라는 값을 해석해보자면,
 ### 02. font size
 
 .big-size-font {
-  font-size: 50px;
+font-size: 50px;
 }
 
-`font-size` 는 폰트의 크기를 지정해 줍니다. 폰트 크기 단위는 'px', 'em', 'pt'등 여러가지 있습니다. 
+`font-size` 는 폰트의 크기를 지정해 줍니다. 폰트 크기 단위는 'px', 'em', 'pt'등 여러가지 있습니다.
 
 `h1~h5` 태그는 heading(제목)을 주로 작성하는 태그입니다. 1에서 5로 숫자가 커질수록 글씨크기가 점점 작아집니다. 하지만 css에서 폰트크기를 바꿀 수 있습니다.
 
@@ -40,7 +43,7 @@ Georgia, "Times New Roman", Times, serif 라는 값을 해석해보자면,
 ### 03. font weight
 
 .bold-font {
-  font-weight: bold;
+font-weight: bold;
 }
 
 `font-weight` 는 글씨 두께를 조절하는 property입니다.
@@ -55,7 +58,7 @@ Georgia, "Times New Roman", Times, serif 라는 값을 해석해보자면,
 ### 04. font style
 
 a {
-  font-style: italic;
+font-style: italic;
 }
 
 `font-style` 을 이용하여 글씨 스타일을 바꿀 수 있습니다. italic이라는 값을 지정하면 *이탤릭체*로 변하게 됩니다.
@@ -65,10 +68,10 @@ a {
 ### 05. color
 
 .pink {
-  color: pink;
+color: pink;
 }
 .yellow {
-  color: yellow;
+color: yellow;
 }
 
 `color`라는 property는 글씨 색깔을 변경해줍니다.
@@ -80,19 +83,16 @@ a {
 
 - hex 색상코드: 여섯자리로 표현 - #eb4639
 - rgb 값: 빨강, 초록, 파랑으로 표현 - rgb(235, 70, 57),
-- hsl: 색상, 채도, 명도*(hue*, *saturation*, *lightness)*로 표현 - hsl(4, 82%, 57%)
+- hsl: 색상, 채도, 명도*(hue*, _saturation_, *lightness)*로 표현 - hsl(4, 82%, 57%)
 
 아래 세가지는 모두 같은 색입니다.
 
 h1 {
- color: #eb4639;
+color: #eb4639;
 }
 h1 {
- color: rgb(235, 70, 57);
+color: rgb(235, 70, 57);
 }
 h1 {
- color: hsl(4, 82%, 57%);
+color: hsl(4, 82%, 57%);
 }
-
-
-

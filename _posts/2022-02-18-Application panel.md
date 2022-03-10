@@ -1,4 +1,9 @@
-# Application Panel
+---
+layout: single
+title: "Application Panel"
+categories: Reference
+tag: [TIL, Web]
+---
 
 ### 01. Application 패널의 기능은?
 

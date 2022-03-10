@@ -1,6 +1,9 @@
-# useEffect
-
-
+---
+layout: single
+title: "useEffect"
+categories: React
+tag: [TIL, React]
+---
 
 ### 01. Side Effect
 
@@ -12,8 +15,6 @@ React에서 함수 컴포넌트의 `rendering`이란 state, props를 기반으�
 
 이를 달리 표현하면 `state, props = UI` 라고도 표현할 수 있다.
 
-
-
 #### 01-2. Side Effect란?
 
 side effect는 부작용, 부수 효과라고 부른다.
@@ -21,12 +22,13 @@ side effect는 부작용, 부수 효과라고 부른다.
 함수가 어떤 동작을 할 때 **input-output 이외의 다른 값을 조작한다면** 이 함수는 side effect 가 있다고 표현한다.
 
 ```js
-let count = 0
+let count = 0;
 
-function greetWithSideEffect(name) { // Input
-	count = count + 1 // Side Effect!
+function greetWithSideEffect(name) {
+  // Input
+  count = count + 1; // Side Effect!
 
-	return `${name}님 안녕하세요!` // Output
+  return `${name}님 안녕하세요!`; // Output
 }
 ```
 
@@ -34,11 +36,7 @@ function greetWithSideEffect(name) { // Input
 
 만일 `greetWithSideEffect` 함수 인자를 count 도 받아온다면 전역변수인 `count` 를 건들이지 않게되고, `input-output`으로만 동작을 하며 그것을 **순수함수**라고 말한다.
 
-
-
 ---
-
-
 
 ### 02. useEffect
 
@@ -75,11 +73,7 @@ useEffect(() => {
 
 위 코드는 useEffect를 활용한 3가지 방식이다. useEffect의 사용 문법을 확인하고, 함수의 첫번째 인자는 **실행시킬 동작**, 두번째 인자는 **의존성 배열(Dependancy Array)** 이다. 짧게 말해 `deps`라고 부른다.
 
-
-
 ---
-
-
 
 ### 03. Clean up Effect
 
@@ -89,11 +83,11 @@ useEffect(() => {
 
 ```js
 useEffect(() => {
-	function handleScroll() {
-		console.log(window.scrollY)
-	}
-	document.addEventListener("scroll", handleScroll)
-}, [])
+  function handleScroll() {
+    console.log(window.scrollY);
+  }
+  document.addEventListener("scroll", handleScroll);
+}, []);
 ```
 
 위 코드를 보면 이벤트리스너를 선언한다. 페이지에 스크롤 이벤트가 일어날 때마다 console에 현재 스크롤 위치한 좌표를 출력한다.
@@ -102,22 +96,20 @@ useEffect 안에서 사용되고 이벤트는 한번만 등록하면 되기 때�
 
 **하지만** 이 페이지를 벗어났을 때 등록한 이벤트 리스너는 더 이상 필요가 없어질 수 있다. 이 경우에 일으켰던 Effect를 정리해줘야 한다.
 
-
-
 ```js
 useEffect(() => {
-	function handleScroll() {
-		console.log(window.scrollY)
-	}
+  function handleScroll() {
+    console.log(window.scrollY);
+  }
 
-	document.addEventListener("scroll", handleScroll)
-	return () => {
-		document.removeEventLisnter("scroll", handleScroll)
-	}
-}, [])
+  document.addEventListener("scroll", handleScroll);
+  return () => {
+    document.removeEventLisnter("scroll", handleScroll);
+  };
+}, []);
 ```
 
-위 코드의 로직을 보면 useEffect 함수 내부에 이벤트 리스너를 선언하였고 콜백함수인 `return` 함수를 선언하고 내부에 **리무브 이벤트 리스너**를 선언하였다. 
+위 코드의 로직을 보면 useEffect 함수 내부에 이벤트 리스너를 선언하였고 콜백함수인 `return` 함수를 선언하고 내부에 **리무브 이벤트 리스너**를 선언하였다.
 
 그러므로 인하여 해당 컴포넌트가 사라졌을 때 이벤트 리스너를 다시 회수할 수 있게된다.
 
