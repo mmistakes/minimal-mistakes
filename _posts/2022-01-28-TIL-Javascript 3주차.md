@@ -1,4 +1,9 @@
-today I learned week 3
+---
+layout: single
+title: "Javascript week 3"
+categories: TIL
+tag: [Javascript, TIL]
+---
 
 - 목차
 

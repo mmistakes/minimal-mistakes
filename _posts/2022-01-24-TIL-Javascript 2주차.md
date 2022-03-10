@@ -1,3 +1,10 @@
+---
+layout: single
+title: "Javascript week 2"
+categories: TIL
+tag: [Javascript, TIL]
+---
+
 - 목차
 
 1. 배열이 필요한 이유와 선언하는 방법
