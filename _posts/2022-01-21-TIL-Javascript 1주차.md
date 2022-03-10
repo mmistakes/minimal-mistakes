@@ -1,3 +1,12 @@
+---
+title:  "Javascript week 1"
+categories:
+  - TIL
+tags:
+  - Javascript
+  - TIL
+---
+
 - 목차
 
 1. 변수가 필요한 이유
