@@ -17,7 +17,7 @@ block 요소와 성질이 반대인 inline 요소도 있습니다.
 
 inline이라는 말 그대로 inline 요소는 요소끼리 서로 한 줄에, 바로 옆에 위치할 수 있다는 뜻입니다.
 
-![스크린샷2022-02-16오후1.29.41](/Users/sonseongho/Library/Application Support/typora-user-images/스크린샷2022-02-16오후1.29.41.png)
+![2022-02-161.29.41](/Users/sonseongho/Library/Application Support/typora-user-images/2022-02-161.29.41.png)
 
 첫번째 부터 네번째 까지는 `<p>` 태그와 같은 **block 요소**입니다.
 
