@@ -1,9 +1,8 @@
 ---
 layout: single
 title: "Code Kata Day4"
-categories: CodeKata
+categories: Algorithm
 tag: [TIL, Javascript, Algorithm]
-
 ---
 
 ### 문제
@@ -23,19 +22,12 @@ num = 10 return false => 뒤집은 모양이 01 이기 때문
 ### 해결
 
 ```js
-const sameReverse = num => {
+const sameReverse = (num) => {
+  return Number(num.toString().split("").reverse().join("")) === num;
+};
 
-  return Number(
-    num.toString()
-    .split("")
-    .reverse()
-    .join("")
-  ) === num
-}
-
-console.log("result >> ",sameReverse(-121))
+console.log("result >> ", sameReverse(-121));
 module.exports = { sameReverse };
-
 ```
 
 `num` 인자로부터 `-121` 을 받았다.
@@ -43,8 +35,3 @@ module.exports = { sameReverse };
 인자를 스트링으로 변경한 후 배열로 각각 나누고 그 배열을 뒤집었다.
 
 뒤집은 배열을 다시 스트링으로 합친 후 `Number()` 로 숫자로 변경한 후 인자값과 비교해서 값을 반환했다. `-` 부호 경우 `Number()` 함수를 거치면 어처피 `NaN` 이 나오기 떄문에 `false` 를 반환하게 된다.
-
-
-
-
-

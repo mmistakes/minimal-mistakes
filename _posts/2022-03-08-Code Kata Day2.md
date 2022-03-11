@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Code Kata Day2"
-categories: CodeKata
+categories: Algorithm
 tag: [TIL, Javascript, Algorithm]
 ---
 
