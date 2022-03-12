@@ -1,6 +1,6 @@
 ---
 published: true
-title: "2022-03-13-DataStructure-Week6-실습1"
+title: "2022-03-13-DataStructure-Week6-실습2"
 categories:
   - C
 tags:
@@ -10,14 +10,38 @@ toc_sticky: true
 toc_label: "C"
 ---
 
-# Linked_Queue 구현
+# Queue_simulation
 
-- 문자들의 Linked Queue 를 테스트하는 프로그램 구현
-- 명령어  
-  +<c> : AddQ  
-  --: DeleteQ  
-  S : Show  
-  Q : Quit
+- 프린터 작업에 대한 simulation  
+  Linked Queue 로 프린터 큐 구현
+- 시뮬레이션 방식  
+   current_time 을 증가시키면서 매 시각 가상의 프린트 job 을 처리
+  ```C++
+  while(current_time < MAX_SIMUL_TIME) {
+  	... ++current_time;
+  }
+  ```
+- job  
+  id - job 의 ID  
+  arrival time - job이 도착한 시간  
+  duration - job의 프린트 시간
+
+- 새로운 job 의 도착 (is_job_arrived())  
+  random() 을 호출 반환값이 정해진 값보다 작으면 도착한 것으로 간주  
+  -> 새 job 을 큐에 삽입 insert_job_into_queue (id, arrival_time, duration)
+
+  - 새 job 의 프린트 시간 (duration) = random() \* MAX_PRINTING_TIME + 1
+
+- 프린트 완료 (is_printer_idle())  
+  남은 프린트 시간이 0 이하면 완료된 것임  
+  큐에서 다음 job 을 가져와 실행 process_next_job()
+
+  - current_job_id = job.id
+  - remaining_time = job.duration
+
+- job을 프린트 하기  
+  프린트 시간을 매 시각 하나씩 감소시키는 것을 프린트가 되는 것으로 간주
+  - 매 시각 : remaining_time
 
 > **실행 예**
 
