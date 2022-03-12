@@ -1,6 +1,6 @@
 ---
 published: true
-title: "2022-03-13-DataStructure-Week5-실습2"
+title: "2022-03-13-DataStructure-Week6-실습1"
 categories:
   - C
 tags:
@@ -10,13 +10,12 @@ toc_sticky: true
 toc_label: "C"
 ---
 
-# linked_list
+# Linked_Queue 구현
 
-- 문자들의 리스트를 linked_list로 구현
+- 문자들의 Linked Queue 를 테스트하는 프로그램 구현
 - 명령어  
-  +<c> : Insert c  
-  -<c> : Delete c  
-  ?<c> : Search c  
+  +<c> : AddQ  
+  --: DeleteQ  
   S : Show  
   Q : Quit
 
