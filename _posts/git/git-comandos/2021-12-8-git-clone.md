@@ -17,7 +17,7 @@ tags:
   - git-manual
 ---
 
-## Git - clone
+## Git - Clone
 
 * Se utiliza para descargarse una copia completa del proyecto , datos del servidor e historial que esté almacenado libremente en el **Repositorio** de GITHUB
 
@@ -28,3 +28,17 @@ tags:
 ``git clone https://github.com/RVSWeb/Blog101.git`` **mi-nuevo-proyecto**
 
 * Cuando clonas 1º vez todos los archivos estarán **{Tracked/Rastreados}** y **{Unmodified/No Modificados}** porque **GIT** los acaba de comprobar y no has editado nada sobre ellos
+
+---
+
+* También se puede clonar proyectos que se encuentra en el directorio de trabajo de sistema operativo
+
+```bash
+git clone <ruta completa hasta el directorio del proyecto git>
+```
+
+* Ejemplo
+
+```bash
+git clone /home/usuario/Documents/proyectos-git/repositorio
+```
