@@ -1,6 +1,6 @@
 ---
 published: true
-title: "2022-03-13-DataStructure-Week3-실습2"
+title: "2022-03-13-DataStructure-Week4-실습1"
 categories:
   - C
 tags:
@@ -10,14 +10,12 @@ toc_sticky: true
 toc_label: "C"
 ---
 
-# Matrix
+# Stack 구현
 
-- 행렬 연산 함수 구현
-- A, B, C 가 3 x 3 행렬일 때  
-  C = A + B  
-  C = A x B  
-  C = A^T  
-  C 출력
+- 문자들의 스택을 테스트하는 프로그램 구현
+- 명령어
+  push(+< 문자 >), pop(-)  
+  스택 내용을 출력(S)
 
 > **실행 예**
 
