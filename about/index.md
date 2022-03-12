@@ -19,5 +19,6 @@ typora-root-url: ../
 
 ## Education
 
-Undergraduate in **Electronic & Electric Eng** , Dankook Univ. \n
+Undergraduate in **Electronic & Electric Eng** , Dankook Univ.
+
 Research worker in [ICMLab](http://icmlab.co.kr/index.html)
