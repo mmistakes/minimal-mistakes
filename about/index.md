@@ -5,9 +5,9 @@ title: Introduce
 typora-root-url: ../
 ---
 
-# Kim Jae Won</center>
+# Kim Jae Won </center>
 
-> Seoul, South Korea</center>
+> Seoul, South Korea </center>
 
 
 
@@ -16,8 +16,8 @@ typora-root-url: ../
 
 
 
-## Education
+## Education </center>
 
-Undergraduate in **Electronic & Electric Eng** , Dankook Univ.
+Undergraduate in **Electronic & Electric Eng** , Dankook Univ. </center>
 
-Research worker in [ICMLab](http://icmlab.co.kr/index.html)
+Research worker in [ICMLab](http://icmlab.co.kr/index.html) </center>
