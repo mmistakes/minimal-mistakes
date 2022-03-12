@@ -86,7 +86,7 @@ void write_record(const char* fname);
 - 실습1.cpp
 
 ```C++
-##include<stdio.h>
+#include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
 #include<conio.h>
