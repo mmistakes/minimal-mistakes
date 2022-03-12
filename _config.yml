@@ -24,8 +24,8 @@ description              : "An amazing website."
 url                      : "https://kjw9899.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/tiger.jpg"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+teaser                   : # "/assets/images/tiger.jpg"
+logo                     : "/assets/images/tiger.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
