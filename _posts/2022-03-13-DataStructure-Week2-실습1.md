@@ -20,63 +20,144 @@ toc_label: "C"
 
 > **실행 예**
 
+![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-2%EC%9E%A5-%EC%8B%A4%EC%8A%B51-2.png?raw=true)
+
+<br>
+
+![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-2%EC%9E%A5-%EC%8B%A4%EC%8A%B51-3.png?raw=true)
+
+> **자료구조 및 함수 구성**
+
+![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-2%EC%9E%A5-%EC%8B%A4%EC%8A%B51-3.png?raw=true)
+
 > **Source**
 
+실습1.h
+
 ```C++
-#include<stdio.h>
+#pragma once
+#define MAX 100
+
+typedef struct {
+	char name[10];
+	int id;
+	char grade[4];
+}StudentRecord;
+
+StudentRecord r[MAX];
+int num_record = 0;
+const char* fname = "grade.txt";
+
+void read_record(const char* fname);
+void print_record();
+void search_record();
+void change_record();
+void write_record(const char* fname);
+```
+
+실습1.cpp
+
+```C++
+##include<stdio.h>
 #include<stdlib.h>
-#include<time.h>
+#include<string.h>
+#include<conio.h>
+#include<ctype.h>
+#include"실습1.h"
 
-#define LOTTO_MAX 10
-#define LOTTO_VALUE 1000
-#define LOTTO_PRIZE 10000000
-
-int main(void) {
-	srand(time(NULL));
-	int num;
-	bool flag = true;
-	int freq = 0;
-	char input = 'A';
-	printf("로또를 1등 당첨이 될 떄까지 구매하시겠습니까?\n");
-	printf("[Y/N or Other keys] > ");
-
-	scanf("%c", &input);
-
-	if (input == 'Y') {
-		while (flag) {
-			int a = rand() % LOTTO_MAX,
-				b = rand() % LOTTO_MAX,
-				c = rand() % LOTTO_MAX,
-				d = rand() % LOTTO_MAX,
-				e = rand() % LOTTO_MAX,
-				f = rand() % LOTTO_MAX,
-				g = rand() % LOTTO_MAX,
-				h = rand() % LOTTO_MAX;
-			freq++;
-			num = 0;
-			printf("[%d번째 시도] = 사용한 금액 %d원\n", freq, LOTTO_VALUE * freq);
-			printf("자동 생성기로 돌린 나의 로또 번호는 %d번, %d번, %d번, %d번이다.\n", a, b, c, d);
-			if (a == e && b == f && c == g && d == h) {
-				printf("> 총 맞춘 번호는 4개이다. 드디어 1등에 당첨되었다..\n");
-				flag = false;
-			}
-			else {
-				if (a == e)
-					num++;
-				if (b == f)
-					num++;
-				if (c == g)
-					num++;
-				if (d == h)
-					num++;
-				printf("> 총 맞춘 번호는 %d개이다. 아직 1등에 당첨되지 못했다.\n", num);
-			}
-		}
-		printf("\n[결과]\n%d원 이득 봤다.\n", LOTTO_PRIZE - LOTTO_VALUE * freq);
+void read_record(const char* fname) {
+	FILE* fp;
+	fp = fopen(fname, "r");
+	while (!feof(fp)) {
+		fscanf(fp, "%s %d %s", r[num_record].name, &r[num_record].id, r[num_record].grade);
+		num_record++;
 	}
-	else
-		return 0;
 
-	return 0;
+	fclose(fp);
+}
+void print_record() {
+	printf("\n");
+
+	for (int i = 0; i < num_record; i++)
+		printf("%s %d %s\n", r[i].name, r[i].id, r[i].grade);
+}
+void search_record() {
+	char name[10];
+	printf("\nSearch Name: ");
+	scanf("%s", name);
+
+	for (int i = 0; i < num_record; i++) {
+		if (strcmp(name, r[i].name) == 0)
+			printf("Name: %s\nID: %d\nGrade: %s\n", r[i].name, r[i].id, r[i].grade);
+	}
+}
+void change_record() {
+	char name[10];
+	char grade[4];
+	printf("\nName: ");
+	scanf("%s", name);
+
+	printf("Grade: ");
+	scanf("%s", grade);
+
+	for (int i = 0; i < num_record; i++) {
+		if (strcmp(name, r[i].name) == 0) {
+			strcpy(r[i].grade, grade);
+			printf("Record Changed!\n");
+		}
+	}
+}
+void write_record(const char* fname) {
+	FILE* fp;
+	fp = fopen(fname, "w");
+	for (int i = 0; i < num_record; i++)
+		fprintf(fp, "%s %d %s\n", r[i].name, r[i].id, r[i].grade);
+
+	printf("\n%d record(s) have written to grade.txt\n", num_record);
+
+	fclose(fp);
+}
+
+void main() {
+	char c;
+
+	read_record(fname);
+
+	printf("**********명령어**********\n");
+	printf("P: Print all records \n");
+	printf("S: Search record \n");
+	printf("C: Change record \n");
+	printf("W: Write record \n");
+	printf("Q: Save and quit \n");
+	printf("**************************\n");
+
+	while (1) {
+		printf("\nCommand> ");
+		c = getch();
+		putch(c);
+		c = toupper(c);
+
+		switch (c) {
+		case'P':
+			print_record();
+			break;
+		case'S':
+			search_record();
+			break;
+		case'C':
+			change_record();
+			break;
+		case'W':
+			write_record(fname);
+			break;
+		case'Q':
+			printf("\n");
+			exit(1);
+			break;
+		default:
+			printf("\nUnknown command!\n");
+			break;
+		}
+	}
 }
 ```
