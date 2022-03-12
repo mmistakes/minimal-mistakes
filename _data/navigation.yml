@@ -4,7 +4,7 @@ main:
     url: /about/
   - title: "Category"
     url: /catecories/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+  - title: "Tags"
+    url: /tags/
   # - title: "Sitemap"
   #   url: /sitemap/
