@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "AIFilmography"
+title                    : "AI Filmography"
 title_separator          : "|"
 subtitle                 : "Eat Computer Vision & AI and Draw future"
 name                     : "Kim Jae Won"
-description              : "An amazing website."
+description              : "Study All days"
 url                      : "https://kjw9899.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
