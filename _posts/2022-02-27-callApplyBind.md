@@ -79,7 +79,7 @@ sidebar:
   console.log(mike); // {name: "Mike", birthYear: 1999, occupation:"singer"}
   ```
 
-  ```;
+  ```js
   const nums = [3, 10, 1, 6, 4];
   const minNum = Math.min(...nums);
   const maxNum = Math.max(...nums);
