@@ -12,32 +12,13 @@ toc_label: "C"
 
 # 학생 성적 관리
 
-파일로부터 성적을 읽어 명령을 처리  
-![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EA%B8%B0%EC%B4%88%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%207%EC%9E%A5%20%EC%8B%A4%EC%8A%B5-%EB%AC%B8%EC%A0%9C18.png?raw=true)
+- 파일로부터 성적을 읽어 명령을 처리  
+  ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-2%EC%9E%A5-%EC%8B%A4%EC%8A%B51.png?raw=true)
 
-> **조건**
+- 명령어
+  성적 출력(P), 성적 찾기(S), 성적 수정(C), 파일에 저장(W)
 
-- 입력 값은 'Y' 또는 'N'을 포함한 그 외의 문자로, 프로그램에서 요구하는 내용을 실행할지 안할지 선택한다.
-- 로또의 번호 범위(LOTTO_MAX)와 로또 1회당 값어치(LOTTO_VALUE) 그리고 로또 1등 당첨금(LOTTO_PRIZE) 상수(#define)으로 설정한다.
-- 로또의 번호는 총 4개로, 번호 4개를 맞추었을 경우, 1등 당첨이다. 또한, 모든 번호는 다른 번째의 번호와 중복될 수 있다.
-- 로또 번호 4개는 난수 값으로 초기화를 시킨 후, 이에 대응하는 구매자(맞추고자 하는) 번호 4개를 같은 범위로 난수 값을 초기화한다.
-- 이후, 대응되는 각 번호끼리 비교하여 같은 값일 경우, 로또 번호 1개를 맞춘 것으로 본다.
-- 사용자 번호는 로또 번호를 모두 맞출 때(1등의 당첨될 때)까지 무한적으로 반복하며, 매 반복마다 몇 번째 시도인지, 사용한 (누적)금액이 얼마인지 출력한다.
-- 예를 들어, 첫 번째 로또 번호는 첫 번째 구매자 번호하고 대응되며, 두 번째 구매자 번호와는 동일한 값이라고해도 다르게 본다.
-
-> **입력 예**
-
-Y  
-N
-
-> **출력 예**
-
-...  
-[결과]  
-653000원 이득 봤다!ㅎ  
-계속하려면 아무 키나...
-
-![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EA%B8%B0%EC%B4%88%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%207%EC%9E%A5%20%EC%8B%A4%EC%8A%B5-%EB%AC%B8%EC%A0%9C18.png?raw=true)
+> **실행 예**
 
 > **Source**
 
