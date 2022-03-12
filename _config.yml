@@ -112,7 +112,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: "wodnjs284@naver.com"
     - label: "Youtube"
-      icon: "fa-brands fa-youtube"
+      icon: "fa fa-youtube-play"
       url: "https://www.youtube.com/channel/UCWWrL41NmOpmyjhsalMqe4A"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
