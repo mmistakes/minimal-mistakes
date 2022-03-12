@@ -1,6 +1,6 @@
 ---
 published: true
-title: "2022-03-13-DataStructure-Week2-실습1"
+title: "2022-03-13-DataStructure-Week3-실습1"
 categories:
   - C
 tags:
@@ -10,13 +10,26 @@ toc_sticky: true
 toc_label: "C"
 ---
 
-# 학생 성적 관리
+# List 현
 
-- 파일로부터 성적을 읽어 명령을 처리  
-  ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-2%EC%9E%A5-%EC%8B%A4%EC%8A%B51-1.png?raw=true)
+- 문자들을 원소로 하는 리스트 프로그램 구현
 
 - 명령어
-  성적 출력(P), 성적 찾기(S), 성적 수정(C), 파일에 저장(W)
+  원소 삽입(+문자), 원소 삭제(-문자)  
+  리스트가 비어있는지 확인(E)  
+  리스트가 꽉 차있는지 확인(F)  
+  리스트 내용 출력(S)
+
+- Objects  
+  List  
+  문자들의 리스트, 사이즈 = MaxSize
+
+- Functions  
+  list_insert(c): 리스트에 문자 c 삽입  
+  list_delete(c): 리스트에서 문자 c 삭제  
+  list_full(): 리스트가 full이면 true  
+  list_empty(): 리스트가 empty이면 true  
+  list_show(): 리스트의 내용을 출력
 
 > **실행 예**
 
