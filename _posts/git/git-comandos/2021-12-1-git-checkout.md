@@ -19,23 +19,64 @@ tags:
 
 ## Git - checkout
 
-* Cambiar de **rama** o **restaurar archivos** de **(árbol de trabajo-Working Tree Files)**
-  * **Switch branches or restore working tree files**
+* Cambiar de **rama** o **restaurar archivos** del **(Àrbol de Trabajo/Working-Tree Files)**
+  * **Cambiar de ramas local**
+  * **Restaurar los archivos del (Working Tree)**
 
-> Todo los cambios que hagamos sobre un archivo que estén **{Tracked/Rastreado}** se realizan desde el **(Working Directory)**
+* Cambia **[HEAD]** en si mismo de lugar al que apunta
 
-* Elimina los cambios de ``<file>`` que pasan de **{Modified}** a **{Unmodified}**
-  * Los cambios que se hagan en **{Modified}** cuando se ejecute este comando se perderán
+* Copiar el contenido de una **rama remota** dentro de una **rama tracking local** y crear *(en el caso que no exista)* o actualizar *(en el caso que exista)* en el **[Repositorio Local]** una **rama** con el mismo nombre que poseía la **rama tracking local** que apunta a la **rama remota** del **|Repositorio Remoto|**
+
+> Todo los cambios que hagamos sobre un archivo que estén **{Tracked/Rastreado}** afectan al **(Working Directory/Directorio de Trabajo)**
+
+* Elimina todos los cambios de ``<file>`` pasando del estado **{Modified}** al estado **{Unmodified}**
+  * Los cambios que se produzcan en el estado **{Modified}** al ejecutar este comando se perderán
+
+  * También deshace los cambios que se hayan producido en el estado **{ Staged / Staging Area }**
 
 ``git checkout <file>``
+
+* El mismo ejemplo que el anterior utilizando la **flag** ``--``
+
+``git checkout -- <file>``
 
 * Elimina los cambios de todos los ficheros **{Modified}** desde el estado **(Working Directory)** y que pasan a **{Unmodified}** dentro del **{Staging Area/Index}**
 
 ``git checkout .``
 
-Cambia **[HEAD]** en si mismo de lugar al que apunta
+* Podemos crear una rama con todos sus commits a la vez que te cambias a ella mediante el comando
 
-Reemplazar los cambios locales
+``git checkout -b <rama>``
+
+* No podemos cambiarnos directamente de **rama** cuando en la **rama** en la que nos encontremos estos tengan cambios **"sin confirmar / hacer commit"** o guardarlos en el **{ Staging Area / Staged / Index }** pero si podemos forzarlo a hacer aunque esta acción elimine los cambios que hicimos y que no hayamos guardado con ``git add`` o confirmado con ``git commit`` en la rama en la que nos encontremos
+
+```bash
+# Si ejecutamos este comando se perderan los cambios en la rama en la que nos encontremos
+git checkout -f <rama-a-la-que-dirigirnos>
+```
+
+* Copia en una **rama remota** una **rama local de tracking** y crea una **rama local** con el mismo nombre ( en el caso de que no exista )
+  * Crea y sincroniza la **rama local tracking** asociada a una ``<rama remota>/<rama>`` como puede ser ``<origin/rama-remota>`` del **[Repositorio Remoto]**
+
+``git checkout <rama-tracking-apuntando-a-remota>``
+
+* Restaura y actualiza el puntero **[HEAD]** a una **rama remota** en modo ``Detached HEAD`` el cual no esta asociada a ninguna rama ``Puntero Descabezado``
+
+``git checkout origin/<rama-remota>``
+
+* Importante :by
+  * Mueve el puntero de la **rama tracking local** hacia ``origin/rama-remota`` para hacer pruebas con el **commit** que tendrá y el cual tiene dentro todos los archivos , después de hacer las pruebas podemos guardarlo mediante el comando ``git switch -c <nombre-rama>`` o deshacerlo mediante ``git switch -``
+
+* Fusionar los cambios desde una **rama alternativa** sobre otra **rama principal** "en este caso" dando la oportunidad de corregir los conflictos que existan en ambas **ramas** usando cualquier editor de código
+  * Nos encontramos en una **rama alternativa**
+
+```bash
+git checkout -m <rama-a-la-que-queremos-fusionar-los-cambios>
+# En este caso nuestra rama principal sería
+git checkout -m master
+```
+
+### Reemplazar los cambios locales
 
 * Reemplaza los cambios del **(Working Directory/wd)** con el **último contenido** del **[HEAD]** , los cambios que ya han sido agregados al **{Staging Area/Index/Staged}** como los nuevos archivos , se mantendrán sin cambios
 

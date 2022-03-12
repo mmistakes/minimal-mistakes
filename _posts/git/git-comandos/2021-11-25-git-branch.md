@@ -75,6 +75,12 @@ git branch -v
   master    e1d6b344 Merge pull request #65 from rvsweb/feature-a
 ```
 
+* Muestran todas las **ramas locales** , **rama remotas** y **ramas tracking** con sus **ramas remotas** asociadas y su estado
+
+```bash
+git branch -vva 
+```
+
 #### Opción ``-M``
 
 * Ejecuta 2 opciones en 1
@@ -84,6 +90,57 @@ git branch -v
     * Permite cambiar el nombre de la ``<rama>`` incluso si la nueva ``<rama>`` ya existe
 
 * Ejemplo : ``git branch -M <rama>``
+
+#### Opción ``-r``
+
+* Muestra todas las **ramas remotas**
+
+```bash
+git branch -r
+# Resultado
+origin/HEAD -> origin/master
+  origin/develop
+  origin/feature-a
+  origin/master
+```
+
+#### Opción ``-a``
+
+* Muestra todas las **locales / tracking / ramas remotas** del **|Repositorio Remoto|**
+
+```bash
+git branch -a
+# Resultado
+  develop
+* feature-a
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/develop
+  remotes/origin/feature-a
+  remotes/origin/master
+```
+
+#### Opción ``--merged``
+
+* Muestra todas las ramas que se han fusionado con la rama en la que nos encontremos
+
+```bash
+git branch --merged
+# Resultado
+  develop
+* feature-a
+  master
+```
+
+#### Opción ``--no-merge``
+
+* Muestra todas las **ramas** no fusionadas con la rama en la que nos encontremos
+
+```bash
+git branch --no-merge
+# Resultado
+  testing
+```
 
 ### Comando para mostrar las ``ramas`` que tienen disponible el proyecto
 
@@ -162,6 +219,25 @@ git checkout -b rama-alternativa b0e63ad
 
 ```bash
 git branch -m <nuevo-nombre-rama>
+```
+
+### Ramas Tracking
+
+* Crear ramas tracking asociadas a una rama remota mediante los comandos
+  * La opción ``-b`` crea una rama
+
+```bash
+git branch -b <nombre-rama-local> <rama-tracking>/<rama-repo.remoto>
+# Ejemplo
+git branch -b rama-alternativa origin/rama-alternativa
+
+git branch --track <rama-tracking>/<rama-repo.remoto>
+# Ejemplo
+git branch --track origin/rama-alternativa
+
+git branch --track <rama-tracking>/<rama-repo.remoto>
+# Ejemplo
+git branch --track rama-aux origin/master
 ```
 
 ## Ramas necesarias para un proyecto
