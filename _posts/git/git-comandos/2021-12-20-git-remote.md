@@ -31,7 +31,7 @@ page_css:
 
 * Muestra los **|Repositorio Remotos|** definidos en un **[Repositorio Local]**
 
-```git
+```bash
 #         Elemento Opcional
 #            ↓
 git remote [-v]
@@ -41,7 +41,7 @@ git remote [-v]
 
   * Por regla general se llamará ``origin`` pero se puede añadir cualquier otro nombre
 
-```git
+```bash
 #             Almacena toda la URL del **|Repo.Remoto|** para su sincronización
 #                ↓
 #                ↓
@@ -51,15 +51,33 @@ git remote add origin https://github.com/usuario/nombre_repositorio.git
 git remote add teamone https://github.com/usuario/nombre_repositorio.git
 ```
 
+* Renombrar una referencia **remota** desde el **|Repositorio Remoto|**
+
+```bash
+git remote rename <nombre-remote> <nuevo-nombre-remote>
+# Ejemplo
+git remote rename rama-antigua rama-nueva
+```
+
+* Actualizar la información de las ramas remotas almacenadas en el **|Repo.Remoto|**
+
+```bash
+git remote update
+```
+
 * Borra la ``<rama>`` que sincroniza el **[Repositorio Local]** con la rama **|Repositorio Remoto|**
 
-```git
+```bash
 #                 Rama utilizada para sincronización entre 
 #                   ↓  **[Repo.Local]** y **|Repo.Remoto|** 
 #                   ↓
-#                   ↓
-#                   ↓
 git remote remove <rama>
+```
+
+* Otra forma de borrar una ``<rama>`` que se sincroniza con otra rama del **|Repositorio Remoto|** es mediante el argumento ``rm``
+
+```bash
+git remote rm <rama>
 ```
 
 * Para poder ver las **[Ramas Locales]** que están sincronizadas con las **|Ramas Remotas|** y demás datos sobre las ramas **[Remote-Tracking-Branches]**
@@ -86,4 +104,10 @@ git branch --all
   remotes/origin/master
 # Para eliminar la rama remota "feature-a"  
 git push --delete origin feature-a
+```
+
+* Eliminar las ramas que ya no existen en el |Repo.Remote|
+
+```bash
+git remote prune <rama>
 ```
