@@ -5,7 +5,7 @@ title: Introduce
 typora-root-url: ../
 ---
 
-<center># Kim Jae Won<center>
+<center># Kim Jae Won</center>
 
 > Seoul, South Korea
 
