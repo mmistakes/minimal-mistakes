@@ -1,6 +1,6 @@
 ---
 published: true
-title: "2022-03-13-DataStructure-Week5-실습1"
+title: "2022-03-13-DataStructure-Week5-실습2"
 categories:
   - C
 tags:
@@ -10,14 +10,15 @@ toc_sticky: true
 toc_label: "C"
 ---
 
-# Array Queue 구현
+# linked_list
 
-- 문자들의 Queue 를 테스트하는 프로그램 구현
+- 문자들의 리스트를 linked_list로 구현
 - 명령어  
-  +<c>: AddQ  
-  -: DeleteQ  
-  S: Show  
-  Q: Quit
+  +<c> : Insert c  
+  -<c> : Delete c  
+  ?<c> : Search c  
+  S : Show  
+  Q : Quit
 
 > **실행 예**
 
