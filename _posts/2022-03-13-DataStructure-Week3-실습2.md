@@ -63,7 +63,7 @@ void matrix_trans(int a[ROW][COL], int b[ROW][COL]);
 void matrix_print(int a[ROW][COL]);
 ```
 
-- 실습1.cpp
+- 실습2.cpp
 
 ```C++
 #include <stdio.h>
