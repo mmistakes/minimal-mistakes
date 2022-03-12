@@ -6,6 +6,7 @@ typora-root-url: ../
 ---
 
 # Kim Jae Won
+--
 
 > Seoul, South Korea
 
@@ -18,5 +19,5 @@ typora-root-url: ../
 
 ## Education
 
-Undergraduate in **Electronic & Electric Eng** , Dankook Univ.
+Undergraduate in **Electronic & Electric Eng** , Dankook Univ. \n
 Research worker in [ICMLab](http://icmlab.co.kr/index.html)
