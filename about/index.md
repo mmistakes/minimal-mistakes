@@ -11,8 +11,8 @@ typora-root-url: ../
 
 
 <center>
-<p align="center"><img src="/assets/images/profile1.jpg" alt="Photo of me" style="zoom:20%;border=none;border:50%;box-shadow: 0px 20px 40px" />
-</center>  
+<p align="center"><img src="/assets/images/profile1.jpg" alt="Photo of me" style="zoom:20%;border=none;border:50%;box-shadow: 0px 20px 40px" /> </center>  
+
 
 .  
 .  
