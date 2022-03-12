@@ -3,7 +3,7 @@ main:
   - title: "About"
     url: /about/
   - title: "Category"
-    url: /catecories/
+    url: /cateories/
   - title: "Tags"
     url: /tags/
   # - title: "Sitemap"
