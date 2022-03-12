@@ -14,8 +14,8 @@ typora-root-url: ../
 <p align="center"><img src="/assets/images/profile1.jpg" alt="Photo of me" style="zoom:20%;border=none;border:50%;box-shadow: 0px 20px 40px" />
 </center>  
 
-.
-.
+.  
+.  
 
 
 ## <center>Education</center>
