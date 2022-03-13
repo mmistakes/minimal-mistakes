@@ -26,7 +26,8 @@ masthead_title: # overrides the website title displayed in the masthead, use " "
 words_per_minute: 200
 comments:
   provider: "disqus" # false (default), "disqus", "discourse", "facebook", "staticman_v2", "staticman", "utterances", "giscus", "custom"
-  disqus: shortname            : "dyongchan"
+  disqus:
+    shortname: "dyongchan"
   discourse:
     server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -222,7 +223,7 @@ defaults:
       read_time: false
       author_profile: false
       share: false
-      comments: true
+      comments: false
       sidebar:
         nav: "docs"
   # _recipes
