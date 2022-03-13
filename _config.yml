@@ -16,7 +16,9 @@ minimal_mistakes_skin: "contrast" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 published: true
+
 locale: "ko-KR"
+
 title: "Dyongchan"
 
 title_separator: "|"
