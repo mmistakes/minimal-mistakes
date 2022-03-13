@@ -17,10 +17,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 published                : true
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Dyongchan"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Cho Yong Chan"
 description              : "An amazing website."
 url                      : "https://dyongchan.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Cho Yong Chan"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "I want to be passionable person in all mooment"
+  location         : "Hankuk University of Foreign Studies"
+  email            : yongchan46@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
