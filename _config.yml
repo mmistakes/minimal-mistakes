@@ -16,9 +16,13 @@ minimal_mistakes_skin: "contrast" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 published: true
+
 locale: "ko-KR"
+
 title: "Dyongchan"
+
 title_separator: "|"
+
 subtitle: "small positive action"
 name: "ChoYongChan"
 description: "조용찬의 블로그입니다."
