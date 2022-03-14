@@ -1,8 +1,9 @@
 # main links
 main:
-  - title: "Blockchain"
-    url: /_pages/blockchain/
-  - title: "My Research"
+  - title: "CV"
+    url: /_pages/cv/
+  - title: "Publications"
     url: /_pages/research/
   - title: "Contact"
     url: /_pages/contact/
+

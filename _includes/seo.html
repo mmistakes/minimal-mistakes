@@ -22,7 +22,7 @@
 
 {%- assign seo_description = page.description | default: page.excerpt | default: site.description -%}
 {%- if seo_description -%}
-  {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once -%}
+  {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip -%}
 {%- endif -%}
 
 {%- assign author = page.author | default: page.authors[0] | default: site.author -%}
@@ -52,6 +52,9 @@
 
 {% if author.name %}
   <meta name="author" content="{{ author.name | default: author }}">
+  {% if og_type == "article" %}
+  <meta property="article:author" content="{{ author.name | default: author }}">
+  {% endif %}
 {% endif %}
 
 <meta property="og:type" content="{{ og_type }}">
@@ -148,5 +151,8 @@
 {% endif %}
 {% if site.naver_site_verification %}
   <meta name="naver-site-verification" content="{{ site.naver_site_verification }}">
+{% endif %}
+{% if site.baidu_site_verification %}
+  <meta name="baidu-site-verification" content="{{ site.baidu_site_verification }}">
 {% endif %}
 <!-- end _includes/seo.html -->

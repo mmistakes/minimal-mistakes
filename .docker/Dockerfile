@@ -8,6 +8,10 @@ COPY . .
 # Install missing packages in ubuntu docker container
 RUN apt-get update && apt-get install -y --no-install-recommends \
     vim \
+<<<<<<< HEAD
+=======
+    git \
+>>>>>>> main2
     ruby-full \
     build-essential \
     zlib1g-dev \

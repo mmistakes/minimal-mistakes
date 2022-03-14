@@ -1,7 +1,11 @@
 version: '3.2'
 
 services:
+<<<<<<< HEAD
   # this builds current ros/librealsense on top of ubuntu
+=======
+  # this spawns the local github page
+>>>>>>> main2
   website:
     image: website
     build:
@@ -24,8 +28,11 @@ services:
       - type: bind
         source: ../
         target: /website
+<<<<<<< HEAD
         #- /etc/group:/etc/group:ro
         #- /etc/passwd:/etc/passwd:ro
         #- /etc/shadow:/etc/shadow:ro
         #- /etc/sudoers.d:/etc/sudoers.d:ro
 
+=======
+>>>>>>> main2
