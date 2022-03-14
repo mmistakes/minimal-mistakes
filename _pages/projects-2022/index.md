@@ -37,6 +37,7 @@ Join the Stamatics discord server to interact with the mentors and for any other
 * **Expected Weekly Commitment :** 5-6 hours  
 <!--- * **Showcase :** [here](https://stamatics.github.io/projects-2022/mathematical-tools-for-data-science) 
 -->
+
 ## 3 - Statistical Analysis  
 * **Mentors :** Sandipan Mitra (Aeti#0020)
 * **Project Area :** Statistics  
@@ -48,6 +49,7 @@ Application of all these via an applied project.
 * **Expected Weekly Commitment :** 4-5 hours  
 <!--- * **Showcase :** [here](https://stamatics.github.io/projects-2022/statistical-analysis) 
 -->
+
 ## 4 - Number Theory and Cryptography  
 * **Mentors :** Priya Gole (Priyaa#6917), Abhishek Shree (killBird#5626) 
 * **Project Area :** Number Theory, Cryptography
@@ -58,6 +60,7 @@ Application of all these via an applied project.
 * **Expected Weekly Commitment :** 6-8 hours 
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/number-theory-and-cryptography)  
 -->
+
 ## 5 - Geometric Mechanics  
 * **Mentors :** Mohammad Saad (Saad#9798) 
 * **Project Area :** Mathematical Physics 
@@ -68,6 +71,7 @@ Application of all these via an applied project.
 * **Expected Weekly Commitment :** 3-4 hrs  
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/geometric-mechanics)
 -->
+
 ## 6 - An Invitation to Functional Analysis  
 * **Mentors :** Rahul Sethi (the-last-knight#4011)
 * **Project Area :** Analysis
@@ -92,6 +96,7 @@ Additionally, you will be required to prepare a report in LaTeX, and proficiency
 * **Expected Weekly Commitment :** At least 12 hours per week (involves significant self study and exercises).   
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/an-invitation-to-functional-analysis) 
 -->
+
 ## 7 - Statistical Simulation  
 * **Mentors :** Ananyae Kumar Bhartari (ananye24#4537), Naveen kumar Mathur (Navi_Kane)  
 
@@ -106,6 +111,7 @@ Additionally, you will be required to prepare a report in LaTeX, and proficiency
 * **Expected Weekly Commitment :** 4 hours  
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/statistical-simulation) 
 -->
+
 ## 8 - Introduction to Proof Complexity
 * **Mentors :** Farzan Byramji (geekotechy#7312)
 * **Project Area :** Complexity Theory
@@ -116,6 +122,7 @@ Additionally, you will be required to prepare a report in LaTeX, and proficiency
 * **Expected Weekly Commitment :** 2-4 hours  
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/introduction-to-proof-complexity) 
 -->
+
 ## 9 - Insolvability of Quintic Equations 
 * **Mentors :** Ajay Prajapati (Ajay Prajapati#6448)  
 * **Project Area :** Abstract Algebra
@@ -126,6 +133,7 @@ Additionally, you will be required to prepare a report in LaTeX, and proficiency
 * **Expected Weekly Commitment :** 5-6 hours  
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/insolvability-of-quintic-equations)
 -->
+
 ## 10 - Rational Points on Elliptic Curves  
 * **Mentors :** Dawood Bin Mansoor (rockstar2514#0635), Udit Narayan Pandey (UNP#0155)  
 
@@ -140,6 +148,7 @@ Additionally, you will be required to prepare a report in LaTeX, and proficiency
 * **Expected Weekly Commitment :** 7-20 hours  
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/rational-points-on-elliptic-curves)
 -->
+
 ## 11 - Algo101x  
 * **Mentors :** Satyam Kumar Roy (stack#8156), Shorya Kumar (shoryak#4571), Kunwar Preet Singh (kpS#9551)   
 
@@ -154,6 +163,7 @@ Additionally, you will be required to prepare a report in LaTeX, and proficiency
 * **Expected Weekly Commitment :** 4 hrs
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/algo101x)
 -->
+
 ## 12 - Machine Learning : Behind the Curtain
 * **Mentors :** Hitesh Anand (hitesh#5074), Arnav Gupta (VaderEvader#8554), Sunreet Khanna (skhanna23#9868) 
 
@@ -185,6 +195,7 @@ Additionally, you will be required to prepare a report in LaTeX, and proficiency
 * **Expected Weekly Commitment :** 5-6 Hrs 
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/machine-learning-behind-the-curtain) 
 -->
+
 ## 13 - Introduction to Deep Learning and Applications  
 * **Mentors:**  Ashutosh Sharma (ASH#7887), Prateek Sogra (LightSpeed#2728), Vineet Kumar (Vineetk20#3065)
 
@@ -208,6 +219,7 @@ Additionally, you will be required to prepare a report in LaTeX, and proficiency
 * **Expected Weekly Commitment:** 8-10 hrs   
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/introduction-to-deep-learning-and-applications)
 -->
+
 ## 14 - Decrypting Technical Indicators
 * **Mentors:** Sujal Harkut (DeadTree#9882), Sheetal Gupta (sheetalg20), Sarah Kapoor (psychocrat#3620), Kushagra Sharma (Mr. Defenestrator#2115)
 
@@ -224,6 +236,7 @@ Additionally, you will be required to prepare a report in LaTeX, and proficiency
 * **Expected Weekly Commitment:** 5-7 hrs
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/decrypting-technical-indicators)  
 -->
+
 ## 15 - Connecting the First Search  
 * **Mentors:** Utkarsh Jain (JB996#5074), Patil Aditya Bharat (aditya_patil#1265), Saaransh Aggarwal (Saaransh Aggarwal#7225)  
 
@@ -238,6 +251,7 @@ Additionally, you will be required to prepare a report in LaTeX, and proficiency
 * **Expected Weekly Commitment:** 5-7 hours   
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/connecting-the-first-search)
 -->
+
 ## 16 - Number Theory and Cryptography  
 * **Mentors:**  Piyush Beegala (FranticAlien#7151), Sujal Harkut (DeadTree#9882), Bipplav Kumar Tiwari (Bipplav Tiwari#6662)
 
@@ -252,6 +266,7 @@ Additionally, you will be required to prepare a report in LaTeX, and proficiency
 * **Expected Weekly Commitment:** 4-6 hrs
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/number-theory-and-cryptography)
 -->
+
 ## 17 - MCMC Methods in Julia  
 * **Mentors:** Vansh Bansal (Vansh#7537), Pramodh Gopalan (Pramodh Gopalan#7422)
 
@@ -276,6 +291,7 @@ The tentative list of topics that we want to cover is as follows:
 * **Expected Weekly Commitment:** 8-10 hours 
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/mcmc-methods-in-julia)
 -->
+
 ## 18 -  Quantum Theories and Fundamentals
 * **Mentors:** Bhoomi Choudhary (Bhoomi#8271)
 
