@@ -12,18 +12,22 @@
  
 - Desender, K., Vermeylen, L., & Verguts, T. (2020). Dynamic influences on static measures of metacognition. BioRxiv. [https://doi.org/10.1101/2020.10.29.360453](https://doi.org/10.1101/2020.10.29.360453)
  
-- Senoussi, M., Verbeke, P., Desender, K., De Loof, E., Talsma, D., & Verguts, T. (2020). Theta oscillations shift towards optimal frequency for cognitive control. BioRxiv. [https://doi.org/10.1101/2020.08.30.273706](https://doi.org/10.1101/2020.08.30.273706)
-
 
 ## Recent publications
 
 In press:
-- Calderon, C.B., Verguts, T., & Frank, M. J. (in press). Thunderstruck: The ACDC model of flexible sequences and rhythms in recurrent neural circuits. PLoS: Computational Biology. BioRxiv version: [https://doi.org/10.1101/2021.04.07.438842](https://doi.org/10.1101/2021.04.07.438842)
+- Senoussi, M., Verbeke, P., Desender, K., De Loof, E., Talsma, D., & Verguts, T. (2022). Theta oscillations shift towards optimal frequency for cognitive control. Nature Human Behaviour. BioRxiv version: [https://doi.org/10.1101/2020.08.30.273706](https://doi.org/10.1101/2020.08.30.273706)
+
 
 2022: 
+- Calderon, C.B., Verguts, T., & Frank, M. J. (2022). Thunderstruck: The ACDC model of flexible sequences and rhythms in recurrent neural circuits. [PLoS: Computational Biology.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009854) 
+
 - Senoussi, M., Verbeke, P., & Verguts, T. (2022). Time-based binding as a solution to and a limitation for flexible cognition. Frontiers in Psychology. [http://dx.doi.org/10.3389/fpsyg.2021.798061](http://dx.doi.org/10.3389/fpsyg.2021.798061)
 
 - Verbeke P., & Verguts T. (2022). Using top-down gating to optimally balance shared versus separated task representations. Neural Networks. [https://doi.org/10.1016/j.neunet.2021.11.030](https://doi.org/10.1016/j.neunet.2021.11.030)
+
+- Liu, M., Dong, W., Qin, S.,Verguts, T., & Chen, Q. (2022). Electrophysiological signatures of hierarchical learning. Cerebral Cortex. [https://doi.org/10.1093/cercor/bhab245](https://doi.org/10.1093/cercor/bhab245)
+
 
 2021:
 - Verbeke, P., & Verguts, T. (2021). Neural synchrony for adaptive control. Journal of Cognitive Neuroscience, 33, 2394-2412. [https://doi.org/10.1162/jocn_a_01766](https://doi.org/10.1162/jocn_a_01766)
@@ -31,8 +35,6 @@ In press:
 - Peng, Z., Yang, X., Xu, C., Wu, X., Yang, Q., Wei, Z., … Chen, Q. (2021). Aberrant Rich Club Organization in Patients with Obsessive-Compulsive Disorder and Their Unaffected First-Degree Relatives. NeuroImage : Clinical. [https://doi.org/10.1016/j.nicl.2021.102808](https://doi.org/10.1016/j.nicl.2021.102808)
 
 - Peng, Z., Xu, C., Ma, N., Yang, Q., Ren, P., Wen, R., … Chen, Q. (2021). White matter alterations of the goal-directed system in obsessive-compulsive disorder patients and their unaffected first-degree relatives. Biological Psychiatry: Cognitive Neuroscience and Neuroimaging. [https://doi.org/10.1016/j.bpsc.2020.12.004](https://doi.org/10.1016/j.bpsc.2020.12.004)
-
-- Liu, M., Dong, W., Qin, S.,Verguts, T., & Chen, Q. (2021). Electrophysiological signatures of hierarchical learning. Cerebral Cortex. [https://doi.org/10.1093/cercor/bhab245](https://doi.org/10.1093/cercor/bhab245)
 
 - Zhang, S., Verguts, T., Zhang, C., Feng, P., Chen, Q., & Feng, T. (2021). Outcome value and task aversiveness impact task procrastination through separate neural pathways. Cerebral Cortex, 31, 3846-3855. [https://doi.org/10.1093/cercor/bhab053](https://doi.org/10.1093/cercor/bhab053)
 
