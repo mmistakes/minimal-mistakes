@@ -29,8 +29,7 @@ Prereq: MTH102 (Linear Algebra), ESC101 (Intro To CS)
 
 * **Expected Duration :** 2 months 
 * **Expected Weekly Commitment:** 5-6 hours  
-<!--- 
-* **Showcase :** [here](https://stamatics.github.io/projects-2022/mathematical-tools-for-data-science) 
+<!--- * **Showcase :** [here](https://stamatics.github.io/projects-2022/mathematical-tools-for-data-science) 
 -->
 ## 3 - Statistical Analysis  
 * **Mentors:** Sandipan Mitra (Aeti#0020)
