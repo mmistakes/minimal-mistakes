@@ -202,15 +202,12 @@ Additionally, you will be required to prepare a report in LaTeX, and proficiency
 * **Project Area :** Linear Algebra , Neural Networks , Introduction to Computer Vision
 
 * **Description :** 
-  1.Basics of Linear Algebra required for neural networks
-
-  2.Python and its libraries(numpy pandas matplotlib)
   
-  3.Intro to Tensorflow
-
-  4.Topics from Deep learning
-
-  5.Computer Vision basics and applications
+  1. Basics of Linear Algebra required for neural networks
+  2. Python and its libraries(numpy pandas matplotlib)
+  3. Intro to Tensorflow
+  4. Topics from Deep learning
+  5. Computer Vision basics and applications
    
   Prerequisites : Programming basics(Basically Python) and Mathematical Aptitude
 
@@ -275,12 +272,12 @@ Additionally, you will be required to prepare a report in LaTeX, and proficiency
 * **Description :** This project will mainly focus on Markov Chain Monte Carlo techniques. Markov Chain Monte Carlo sampling provides a class of algorithms for systematic random sampling from high-dimensional probability distributions. MCMC techniques often solve integration and optimization problems in large dimensional spaces. These two types of problems play a fundamental role in machine learning.
 Just going over the theory is boring. This project will also involve a substantial computational aspect, and you will be asked to implement various algorithms, preferably in Julia.
 The tentative list of topics that we want to cover is as follows:
-1. Sampling Methods and general Monte Carlo methods
-2. Rejection Sampling and Importance Sampling
-3. Markov Chain and Measure Theory basics
-4. Metropolis-Hastings Algorithm
-5. Accelerating MCMC Algorithms
-6. MCMC Algorithms for Intractable Posteriors
+  1. Sampling Methods and general Monte Carlo methods
+  2. Rejection Sampling and Importance Sampling
+  3. Markov Chain and Measure Theory basics
+  4. Metropolis-Hastings Algorithm
+  5. Accelerating MCMC Algorithms
+  6. MCMC Algorithms for Intractable Posteriors
 
     Prerequisites : This advanced project requires a good grasp of probability and statistics basics.
 
