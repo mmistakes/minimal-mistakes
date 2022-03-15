@@ -104,13 +104,13 @@ analytics:
 author:
   name             : "Hi! I'm myne:)"
   avatar           : "/assets/myne.jpg"
-  bio              : "I have a dream"
+  bio              : "front-end developer"
   location         : "Incheon"
   email            : "alsgp9898@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "alsgp9898@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
