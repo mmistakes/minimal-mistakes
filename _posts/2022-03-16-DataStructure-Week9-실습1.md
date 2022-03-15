@@ -33,12 +33,16 @@ typedef struct node{
 tree_pointer root;
 ```
 
-![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-7%EC%9E%A5-%EC%8B%A4%EC%8A%B51-1.png?raw=true)
+![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-9%EC%9E%A5-%EC%8B%A4%EC%8A%B51-1.png?raw=true)
 
 - void bst insert (int key, char data)  
   key 값에 따라 BST 에 (key, 를 삽입  
-  ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-7%EC%9E%A5-%EC%8B%A4%EC%8A%B51-2.png?raw=true)  
-  n1~n9 의 tree_pointer 와 malloc 사용
+  ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-9%EC%9E%A5-%EC%8B%A4%EC%8A%B51-2.png?raw=true)
+
+- char bst_search(int key)  
+  트리에서 키값이 key 인 자료를 검색, data 를 반환
+  Ex> bst_search(105) -> 'C'
+  ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-7%EC%9E%A5-%EC%8B%A4%EC%8A%B51-3.png?raw=true)
 
 - int bt_count(tree_pointer ptr)  
    트리의 노드수를 계산
