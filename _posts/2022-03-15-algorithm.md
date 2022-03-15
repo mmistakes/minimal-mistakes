@@ -41,4 +41,6 @@ convolution을 통해 image로부터 sharp, smooth, gradient의 이미지 정보
 ------------------------------------------------------
 # reference
 
-(https://wewinserv.tistory.com/85)
+**[공지사항]**수정 예정 ![](https://wewinserv.tistory.com/85)
+{: .notice--danger}
+
