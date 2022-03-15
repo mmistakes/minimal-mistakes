@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Code Kata Day4"
+title: "Code Kata Week1 Day4"
 categories: Algorithm
 tag: [TIL, Javascript, Algorithm]
 ---
