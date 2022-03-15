@@ -1,6 +1,6 @@
 ---
 published: true
-title: "2022-03-16-DataStructure-Week9-실습1"
+title: "2022-03-16-DataStructure-Week9-실습2"
 categories:
   - C
 tags:
@@ -12,13 +12,14 @@ toc_label: "C"
 
 # BST
 
-- BST: id 를 key 로 하는 트리. grade data 도 기록
-- BST 삽입 , 탐색 함수 구현
+- BST: 영어단어를 key 로 하는 트리. 국어단어도 기록
 - 명령어  
-  I : Insert data - <id, grade> 삽입 (key: id)  
-  S : Search data id 를 탐색, grade 를 반환  
+  R : Read data dic.txt 파일을 읽어 영어단어를 key로 BST를 구성  
+  S : Search data 영어단어를 탐색, 국어단어를 반환  
   P : Print inorder  
   Q : Quit
+
+![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-9%EC%9E%A5-%EC%8B%A4%EC%8A%B51-1.png?raw=true)
 
 > **자료구조 및 함수 구성**
 
