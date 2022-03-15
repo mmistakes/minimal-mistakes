@@ -1,9 +1,10 @@
 # main links
 main:
+  - title: "About"
+    url: /_pages/about/
   - title: "CV"
-    url: /_pages/cv/
+    url: /assets/dummy_cv.pdf
   - title: "Publications"
     url: /_pages/research/
   - title: "Contact"
     url: /_pages/contact/
-

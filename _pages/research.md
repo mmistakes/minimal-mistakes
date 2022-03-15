@@ -1,8 +1,9 @@
 ---
 layout: single
-title:  "Publications"
+title:  "Research"
 author_profile: true
-categories: wide
+date:   2021-05-29 16:00:00 +0100
+categories: jekyll update
 ---
 
 My publications can also be found on <a href="https://scholar.google.de/citations?user=MkoDxQkAAAAJ&hl=en" target="_blank">Google Scholar</a> or <a href="https://www.researchgate.net/profile/Christopher-Schindlbeck" target="_blank">Researchgate</a>
