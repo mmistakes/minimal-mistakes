@@ -34,7 +34,7 @@ typedef struct node{
 tree_pointer root;
 ```
 
-![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-9%EC%9E%A5-%EC%8B%A4%EC%8A%B51-1.png?raw=true)
+![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-9%EC%9E%A5-%EC%8B%A4%EC%8A%B52-2.png?raw=true)
 
 - int build_dictionary(char \*fname)  
    파일에서 단어들을 읽어 bst_insert 를 이용, 이진탐색트리 구성
@@ -48,7 +48,7 @@ tree_pointer root;
 - char * bst_search(char *w1)
   트리에서 키값이 w1 인 자료를 검색, w2 를 반환
 
-![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-9%EC%9E%A5-%EC%8B%A4%EC%8A%B51-4.png?raw=true)
+![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-9%EC%9E%A5-%EC%8B%A4%EC%8A%B52-3.png?raw=true)
 
 > **실행 예**
 
