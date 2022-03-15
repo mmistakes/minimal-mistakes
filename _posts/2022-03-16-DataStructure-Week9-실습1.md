@@ -42,24 +42,11 @@ tree_pointer root;
 - char bst_search(int key)  
   트리에서 키값이 key 인 자료를 검색, data 를 반환
   Ex> bst_search(105) -> 'C'
-  ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-7%EC%9E%A5-%EC%8B%A4%EC%8A%B51-3.png?raw=true)
+  ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-9%EC%9E%A5-%EC%8B%A4%EC%8A%B51-3.png?raw=true)
 
-- int bt_count(tree_pointer ptr)  
-   트리의 노드수를 계산
-  <br>
-- int bt_sum(tree_pointer ptr)  
-   트리의 데이터 합을 계산
-  <br>
-- int bt_height(tree_pointer ptr)  
-   트리의 높이를 계산
-  <br>
-- void bt_show_preorder(tree_pointer ptr)  
-   트리의 내용을 preorder 로 출력
-  <br>
-- void bt_free(tree_pointer ptr)  
-   트리의 모든 노드를 시스템에 반환(free)
-  <br>
-- int Max(int i, int j)
+- void bst_show_inorder(tree_pointer ptr)  
+  트리의 자료들을 inorder 로 출력  
+  left tree -> root -> right tree
 
 > **실행 예**
 
