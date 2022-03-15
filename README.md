@@ -15,7 +15,7 @@ docker-compose build website
 
 Adding a new site might require a new build via 
 
-### Local# Local homepage
+### Local homepage
 
 Spawn local homepage with
 
