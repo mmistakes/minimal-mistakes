@@ -19,15 +19,15 @@ toc_label: "C"
   P : Print inorder  
   Q : Quit
 
-![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-9%EC%9E%A5-%EC%8B%A4%EC%8A%B51-1.png?raw=true)
+![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-9%EC%9E%A5-%EC%8B%A4%EC%8A%B52-1.png?raw=true)
 
 > **자료구조 및 함수 구성**
 
 ```C++
 typedef struct node *tree_pointer;
 typedef struct node{
-	int key;
-	char data;
+	char w1[100];
+	char w2[100];
 	tree_pointer left;
 	tree_pointer right;
 };
@@ -36,17 +36,19 @@ tree_pointer root;
 
 ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-9%EC%9E%A5-%EC%8B%A4%EC%8A%B51-1.png?raw=true)
 
-- void bst insert (int key, char data)  
-  key 값에 따라 BST 에 (key, data)를 삽입  
-  ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-9%EC%9E%A5-%EC%8B%A4%EC%8A%B51-2.png?raw=true)
-
-- char bst_search(int key)  
-  트리에서 키값이 key 인 자료를 검색, data 를 반환  
-  Ex> bst_search(105) -> 'C'
-
+- int build_dictionary(char \*fname)  
+   파일에서 단어들을 읽어 bst_insert 를 이용, 이진탐색트리 구성
+  <br>
 - void bst_show_inorder(tree_pointer ptr)  
-  트리의 자료들을 inorder 로 출력  
-  left tree -> root -> right tree
+   트리의 단어들을 inorder로 출력
+  <br>
+- void bst_insert(char *w1, char *w2)  
+   트리에 (w1, w2) 자료 삽입 (key: w1)
+  <br>
+- char * bst_search(char *w1)
+  트리에서 키값이 w1 인 자료를 검색, w2 를 반환
+
+![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-9%EC%9E%A5-%EC%8B%A4%EC%8A%B51-4.png?raw=true)
 
 > **실행 예**
 
