@@ -1,6 +1,6 @@
 ---
 published: true
-title: "2022-03-16-DataStructure-Week7-실습1"
+title: "2022-03-16-DataStructure-Week9-실습1"
 categories:
   - C
 tags:
@@ -10,32 +10,33 @@ toc_sticky: true
 toc_label: "C"
 ---
 
-# binary_tree 구현
+# BST
 
-- binary_tree 관련 프로그램 구현
+- BST: id 를 key 로 하는 트리. grade data 도 기록
+- BST 삽입 , 탐색 함수 구현
 - 명령어  
-  C: Count tree  
-  A: Sum tree data  
-  H: Height of tree  
-  S: Show tree (preorder)  
-  F: Free tree  
-  Q: Quit
+  I : Insert data - <id, grade> 삽입 (key: id)  
+  S : Search data id 를 탐색, grade 를 반환  
+  P : Print inorder  
+  Q : Quit
 
 > **자료구조 및 함수 구성**
 
 ```C++
 typedef struct node *tree_pointer;
 typedef struct node{
-	Element data;
-	tree_pointer left_child;
-	tree_pointer right_child;
+	int key;
+	char data;
+	tree_pointer left;
+	tree_pointer right;
 };
+tree_pointer root;
 ```
 
 ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-7%EC%9E%A5-%EC%8B%A4%EC%8A%B51-1.png?raw=true)
 
-- tree_pointer build_simple_tree()  
-  다음과 같은 이진 트리를 생성  
+- void bst insert (int key, char data)  
+  key 값에 따라 BST 에 (key, 를 삽입  
   ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-7%EC%9E%A5-%EC%8B%A4%EC%8A%B51-2.png?raw=true)  
   n1~n9 의 tree_pointer 와 malloc 사용
 
