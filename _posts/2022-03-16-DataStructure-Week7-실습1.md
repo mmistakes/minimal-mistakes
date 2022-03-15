@@ -32,18 +32,33 @@ typedef struct node{
 };
 ```
 
-![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-6%EC%9E%A5-%EC%8B%A4%EC%8A%B52-1.png?raw=true)
+![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-7%EC%9E%A5-%EC%8B%A4%EC%8A%B51-1.png?raw=true)
 
 - tree_pointer build_simple_tree()  
   다음과 같은 이진 트리를 생성  
-  ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-6%EC%9E%A5-%EC%8B%A4%EC%8A%B52-1.png?raw=true)
+  ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-7%EC%9E%A5-%EC%8B%A4%EC%8A%B51-2.png?raw=true)  
   n1~n9 의 tree_pointer 와 malloc 사용
+
+- int bt_count(tree_pointer ptr)  
+   트리의 노드수를 계산
+  <br>
+- int bt_sum(tree_pointer ptr)  
+   트리의 데이터 합을 계산
+  <br>
+- int bt_height(tree_pointer ptr)  
+   트리의 높이를 계산
+  <br>
+- void bt_show_preorder(tree_pointer ptr)  
+   트리의 내용을 preorder 로 출력
+  <br>
+- void bt_free(tree_pointer ptr)  
+   트리의 모든 노드를 시스템에 반환(free)
+  <br>
+- int Max(int i, int j)
 
 > **실행 예**
 
 ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-6%EC%9E%A5-%EC%8B%A4%EC%8A%B52-1.png?raw=true)
-
-![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-6%EC%9E%A5-%EC%8B%A4%EC%8A%B52-2.png?raw=true)
 
 > **Source**
 
