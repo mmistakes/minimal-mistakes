@@ -34,30 +34,21 @@ typedef struct {
 element hash_table[TABLE_SIZE];
 ```
 
-- void build_simple_graph()  
-  샘플 그래프의 생성
+![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-12%EC%9E%A5-%EC%8B%A4%EC%8A%B51-2.png?raw=true)
 
-![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-11%EC%9E%A5-%EC%8B%A4%EC%8A%B52-1.png?raw=true)
+- char * hash_search(char *key)  
+  해시테이블에서 키값이 key인 자료를 검색, data를 반환  
+  <br>
+- int hash(char \*key)  
+  해시 함수(folding + division)  
+  <br>
+- int transform(char \*key)  
+  folding (key의 각 character 값을 더함)  
+  <br>
+- void hash_show()  
+  해시테이블의 key들을 차례로 출력
 
-- void insert_edge(int v, int w)  
-  vertex v 와 w 를 연결하는 edge 를 2 차원 배열에 표현  
-  <br>
-- void dfs(int v)  
-  v 에서 DFS 수행  
-  <br>
-- void bfs(int v)  
-  v 에서 BFS 수행
-  <br>
-- void addq(Element e)  
-  새 노드 생성  
-  큐의 맨 뒤에 삽입  
-  <br>
-- Element deleteq()  
-  큐의 맨 앞 노드 삭제  
-  <br>
-- boolean is_queue_empty()
-
-  > **실행 예**
+> **실행 예**
 
 ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-11%EC%9E%A5-%EC%8B%A4%EC%8A%B52-2.png?raw=true)
 
