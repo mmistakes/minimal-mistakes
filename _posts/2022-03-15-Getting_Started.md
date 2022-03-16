@@ -27,16 +27,16 @@ author_profile: false
       font-weight: bold;
       padding: 8px;
     }
-
+    
     table.dataframe td {
       text-align: center;
       padding: 8px;
     }
-
+    
     table.dataframe tr:hover {
       background: #b8d1f3; 
     }
-
+    
     .output_prompt {
       overflow: auto;
       font-size: 0.9rem;
@@ -240,9 +240,7 @@ result['test_score']  # 데이터 세트가 쉬워서 결정계수 점수가 높
 ```
 
 <pre>
-{'fit_time': array([0.01843166, 0.03219676, 0.0267272 , 0.02029562, 0.01756144]),
- 'score_time': array([0.00071025, 0.00445962, 0.00075221, 0.0052402 , 0.00121593]),
- 'test_score': array([1., 1., 1., 1., 1.])}
+array([1., 1., 1., 1., 1.])
 </pre>
 ## <span style='background-color: #BED4EB'>자동으로 적절한 파라미터 찾기</span>
 
