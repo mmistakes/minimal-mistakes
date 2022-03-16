@@ -1,6 +1,6 @@
 ---
 published: true
-title: "2022-03-16-DataStructure-Week11-실습2"
+title: "2022-03-16-DataStructure-Week12-실습1"
 categories:
   - DataStructure
 tags:
@@ -10,13 +10,19 @@ toc_sticky: true
 toc_label: "DataStructure"
 ---
 
-# adj_matrix
+# hash_dictionary
 
-- DFS와 BFS의 구현
+- Hashing(linear probing) 구현
 - 명령어  
-  D: DFS  
-  B: BFS  
-  Q: Quit
+  R: Read data
+  - 파일에서 <key data>들을 읽어 차례로 해시테이블에 insert
+- S: Search data
+  - key 값을 받아서 (영어단어), 해시테이블을 search, data값을 반환 (국어단어)
+- P: Print hash table
+  - 현재 해시테이블의 내용을 출력
+- Q: Quit
+
+![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-11%EC%9E%A5-%EC%8B%A4%EC%8A%B52-1.png?raw=true)
 
 > **자료구조 및 함수 구성**
 
