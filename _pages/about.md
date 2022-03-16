@@ -5,12 +5,8 @@ author_profile: true
 date:   2021-05-29 16:00:00 +0100
 categories: jekyll update
 ---
-I am a software developer 
 
+I am a software development engineer with a passion for automatization. 
 
-
-focusing on DevOps
-
-
-My application domains range from robotics to cryptocurrencies
+My application domains range from robotics, artificial intelligence to cryptocurrencies.
 
