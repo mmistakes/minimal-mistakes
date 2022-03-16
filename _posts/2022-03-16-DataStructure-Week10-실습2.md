@@ -1,6 +1,6 @@
 ---
 published: true
-title: "2022-03-16-DataStructure-Week10-실습1"
+title: "2022-03-16-DataStructure-Week10-실습2"
 categories:
   - DataStructure
 tags:
@@ -10,41 +10,36 @@ toc_sticky: true
 toc_label: "DataStructure"
 ---
 
-# Max_heap
+# priority_queue_simulation
 
-- Heap : key와 data를 가진 max heap 구현
-- Heap 삽입, 삭제 함수 구현
-- 명령어  
-  I: Insert data - <key, data>  
-  D: Delete max data  
-  P: Print heap  
-  Q: Quit
+- Priority_queue_simulation의 구현
+- Min heap  
+  key 값(duration)이 작을수록 우선 순위가 높음
 
 > **자료구조 및 함수 구성**
 
 ```C++
 typedef struct {
-	int key;
-	char data;
-} element;
-element heap[MAX_DATA];
+int key;	// Priority queue 의 키 값(duration)
+...
+} Job;
+typedef Job Element;
+Element PQ[MAX_PQ_SIZE]; //min heap
+int PQ_size = 0;
 ```
 
 ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-10%EC%9E%A5-%EC%8B%A4%EC%8A%B51-1.png?raw=true)
 
-- void insert_max_heap(Element item)  
-  히프에 item(key, data) 삽입  
-  예 (3,1,7,9,5) 삽입
-
-![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-10%EC%9E%A5-%EC%8B%A4%EC%8A%B51-2.png?raw=true)
-
-- Element delete_max_heap()  
-  히프에서 max item ( 루트 ) 삭제 및 반환
-
-- void max_heap_show()  
-  히프의 자료들을 차례로 출력
-
-- boolean is_heap_empty()
+- void insert_PQ(Element item)  
+   PQ 에 job 삽입
+  <br>
+- Element delete_PQ()  
+   PQ 에서 min item(루트) 삭제 및 반환
+  <br>
+- void PQ_show()  
+   PQ 의 job 들의 key와 id를 차례로 출력
+  <br>
+- boolean is_PQ_empty()
 
 > **실행 예**
 
