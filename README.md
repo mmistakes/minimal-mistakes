@@ -13,8 +13,6 @@ cd .docker
 docker-compose build website
 ```
 
-Adding a new site might require a new build via 
-
 ### Local homepage
 
 Spawn local homepage with
