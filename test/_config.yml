@@ -61,7 +61,8 @@ algolia:
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-yandex_site_verification :
+yandex_site_verification
+naver_site_verification : "be1c474fe9de0dd585becd49ed3cb2f466b771d1"
 
 # Social Sharing
 twitter:
