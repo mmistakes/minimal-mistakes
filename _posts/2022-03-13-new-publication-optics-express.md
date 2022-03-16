@@ -1,9 +1,8 @@
 ---
 title: "New publication in Optics Express"
 toc: false
-tags:
-  - gif
-
+#tags:
+  #- gif
 date: March 13, 2022
 #header:
   #teaser: /assets/images/thumbnails/joel-filipe-thumb-400.jpg

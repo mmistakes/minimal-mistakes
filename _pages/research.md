@@ -5,7 +5,19 @@ author_profile: true
 categories: wide
 ---
 
-My publications can also be found on <a href="https://scholar.google.de/citations?user=MkoDxQkAAAAJ&hl=en" target="_blank">Google Scholar</a> or <a href="https://www.researchgate.net/profile/Christopher-Schindlbeck" target="_blank">Researchgate</a>
+My publications can also be found on <a href="https://scholar.google.de/citations?user=MkoDxQkAAAAJ&hl=en" target="_blank">Google Scholar</a> or <a href="https://www.researchgate.net/profile/Christopher-Schindlbeck" target="_blank">Researchgate</a>.
+
+## Journals
+
+* **Increasing Optical Pose Estimation Accuracy via Freeform Design and its Application to Hand-Eye Calibration**
+  Nils Melchert,
+  Lennart Hinz,
+  Chris Schindlbeck,
+  Eduard Reithmeier.
+  _Optics Express_
+   2022 \\
+  [paper](todo){: .btn .btn--primary .btn--small}
+
 ## Theses
 
 * **A Predictor-Corrector Framework for the Robot-Assisted and Automated Assembly of Optical Systems.**
