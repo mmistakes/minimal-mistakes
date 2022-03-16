@@ -336,3 +336,16 @@ The project would mostly involve reading and evaluation would be done on the bas
 * **Expected Duration :** 2 months
 
 * **Expected Weekly Commitment:** 4-5 hours
+
+## 20 -  Introduction to Automata Theory
+* **Mentors:** Nupur Jain (Nupur Jain#8918)
+
+* **Project Area :** Theory of Computation, Logic
+
+* **Description :** Automata are mathematical models of computation. We will cover the basics of automata theory, including finite automata, pushdown automata, and Turing machines, and the languages they represent. If time permits, we can also explore cellular automata, basics of complexity theory, or current literature in the field, depending on the interest of the mentees. 
+
+* **Intended Audience :** Y21 and Y20
+
+* **Expected Duration :** 3 months
+
+* **Expected Weekly Commitment:** 4-5 hours
