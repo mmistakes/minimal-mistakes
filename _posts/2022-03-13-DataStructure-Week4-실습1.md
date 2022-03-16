@@ -2,12 +2,12 @@
 published: true
 title: "2022-03-13-DataStructure-Week4-실습1"
 categories:
-  - C
+  - DataStructure
 tags:
-  - C
+  - DataStructure
 toc: true
 toc_sticky: true
-toc_label: "C"
+toc_label: "DataStructure"
 ---
 
 # Stack 구현

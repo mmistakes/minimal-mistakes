@@ -2,12 +2,12 @@
 published: true
 title: "2022-03-13-DataStructure-Week2-실습1"
 categories:
-  - C
+  - DataStructure
 tags:
-  - C
+  - DataStructure
 toc: true
 toc_sticky: true
-toc_label: "C"
+toc_label: "DataStructure"
 ---
 
 # 학생 성적 관리

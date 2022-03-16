@@ -2,12 +2,12 @@
 published: true
 title: "2022-03-16-DataStructure-Week9-실습1"
 categories:
-  - C
+  - DataStructure
 tags:
-  - C
+  - DataStructure
 toc: true
 toc_sticky: true
-toc_label: "C"
+toc_label: "DataStructure"
 ---
 
 # BST
