@@ -34,7 +34,7 @@ element heap[MAX_DATA];
 
 - void insert_max_heap(Element item)  
   히프에 item(key, data) 삽입  
-  예 (3,1,7,9,5) 삽입
+  예) (3,1,7,9,5) 삽입
 
 ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-10%EC%9E%A5-%EC%8B%A4%EC%8A%B51-2.png?raw=true)
 

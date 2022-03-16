@@ -1,6 +1,6 @@
 ---
 published: true
-title: "2022-03-16-DataStructure-Week10-실습2"
+title: "2022-03-16-DataStructure-Week11-실습1"
 categories:
   - DataStructure
 tags:
@@ -10,38 +10,52 @@ toc_sticky: true
 toc_label: "DataStructure"
 ---
 
-# priority_queue_simulation
+# adj_list
 
-- Priority_queue_simulation의 구현
-- Min heap  
-  key 값(duration)이 작을수록 우선 순위가 높음
+- DFS와 BFS의 구현
+- 명령어  
+  D: DFS  
+  B: BFS  
+  Q: Quit
 
 > **자료구조 및 함수 구성**
 
 ```C++
-typedef struct {
-int key;	// Priority queue 의 키 값(duration)
-...
-} Job;
-typedef Job Element;
-Element PQ[MAX_PQ_SIZE]; //min heap
-int PQ_size = 0;
+typedef struct node *node_pointer;
+typedef struct node {
+	int vertex;
+	node_pointer link;
+} node;
+// Adjacency lists for a graph
+node_pointer adj[MAX_VERTICES];
 ```
 
 ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-10%EC%9E%A5-%EC%8B%A4%EC%8A%B52-1.png?raw=true)
 
-- void insert_PQ(Element item)  
-   PQ 에 job 삽입  
-  <br>
-- Element delete_PQ()  
-   PQ 에서 min item(루트) 삭제 및 반환  
-  <br>
-- void PQ_show()  
-   PQ 의 job 들의 key와 id를 차례로 출력  
-  <br>
-- boolean is_PQ_empty()
+- void build_simple_graph()  
+  샘플 그래프의 생성
 
-> **실행 예**
+![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-10%EC%9E%A5-%EC%8B%A4%EC%8A%B52-1.png?raw=true)
+
+- void insert_edge(int v, int w)  
+   vertex v와 w를 연결하는 edge 삽입  
+  <br>
+- void dfs(int v)  
+  v에서 DFS 수행  
+  <br>
+- void bfs(int v)  
+   v에서 BFS 수행  
+   <br>
+- void addq(Element e)  
+  새 노드 생성  
+  큐의 맨 뒤에 삽입  
+  <br>
+- Element deleteq()  
+  큐의 맨 앞 노드 삭제  
+  <br>
+- boolean is_queue_empty()
+
+  > **실행 예**
 
 ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-10%EC%9E%A5-%EC%8B%A4%EC%8A%B52-2.png?raw=true)
 
