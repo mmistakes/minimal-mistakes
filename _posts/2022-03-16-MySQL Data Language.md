@@ -53,7 +53,7 @@ SHOW tables; # 현재 데이터베이스 안에 저장되어있는 테이블들�
 
 아티스트는 여러개의 곡을 갖고 있지만 곡은 한명의 아티스트 곡이라는 가정을 한다.
 
-<u>**artists 테이블 생성하기**</u>
+**<u>artists 테이블 생성하기</u>**
 
 `id` 컬럼을 정수, `NULL` 을 허락하지 않으며 값을 **자동증가**하게 설정한다.
 
@@ -70,7 +70,7 @@ CREATE TABLE artists
 );
 ```
 
-<u>**테이블 확인 명령어**</u>
+**<u>테이블 확인 명령어</u>**
 
 **Description** 을 축약해 놓은 명령어로써, 테이블의 정보를 보여준다.
 
@@ -80,7 +80,7 @@ DESC artists;
 
 ![screencapture-7399593](/images/screencapture-7399593.png)
 
-<u>**songs 테이블 생성하기**</u>
+**<u>songs 테이블 생성하기</u>**
 
 **외래키(FOREIGN KEY)**를 걸어줄 컬럼과 참조할 테이블과 컬럼을 순서대로 적어준다.
 
@@ -215,7 +215,7 @@ SELECT * FROM songs;
 SELECT songs.title, songs.lyrics FROM songs;
 ```
 
-<u>**WHERE 조건문**</u>
+**<u>WHERE 조건문</u>**
 
 다양한 쿼리문을 사용하기 위해 사용한다.
 
@@ -225,7 +225,7 @@ SELECT songs.title, songs.lyrics FROM songs;
 SELECT songs.lyrics FROM songs WHERE songs.title ="파도";
 ```
 
-<u>**WHERE + LIKE 조건문**</u>
+**<u>WHERE + LIKE 조건문</u>**
 
 `LIKE` 문을 사용하면 **문자열 검색이** 수월해진다.
 

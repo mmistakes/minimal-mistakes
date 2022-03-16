@@ -19,11 +19,11 @@ tag: [TIL, SQL, Database, JOIN, DQL]
 
 **artists Table**
 
-![screencapture-7401626](/Users/sonseongho/Library/Application Support/typora-user-images/screencapture-7401626.png)
+![screencapture-7401626](/images/screencapture-7401626.png)
 
 **songs Table**
 
-![screencapture-7401634](/Users/sonseongho/Library/Application Support/typora-user-images/screencapture-7401634.png)
+![screencapture-7401634](/images/screencapture-7401634.png)
 
 **명령문으로 두개의 쿼리를 결합해보자**
 
