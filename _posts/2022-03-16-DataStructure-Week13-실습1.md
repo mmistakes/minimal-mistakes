@@ -1,6 +1,6 @@
 ---
 published: true
-title: "2022-03-16-DataStructure-Week12-실습1"
+title: "2022-03-16-DataStructure-Week13-실습1"
 categories:
   - DataStructure
 tags:
@@ -10,43 +10,33 @@ toc_sticky: true
 toc_label: "DataStructure"
 ---
 
-# hash_dictionary
+# Sorting
 
-- Hashing(linear probing) 구현
-- 명령어  
-  R: Read data
-  - 파일에서 <key data>들을 읽어 차례로 해시테이블에 insert
-- S: Search data
-  - key 값을 받아서 (영어단어), 해시테이블을 search, data값을 반환 (국어단어)
-- P: Print hash table
-  - 현재 해시테이블의 내용을 출력
-- Q: Quit
-
-![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-12%EC%9E%A5-%EC%8B%A4%EC%8A%B51-1.png?raw=true)
+- Sorting 함수의 구현  
+  Insertion Sort  
+  Quick Sort  
+  Merge Sort  
+  키 비교 회수를 출력
 
 > **자료구조 및 함수 구성**
 
-```C++
-typedef struct {
-	char key[100];
-	char data[100];
-} element;
-element hash_table[TABLE_SIZE];
-```
-
-![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-12%EC%9E%A5-%EC%8B%A4%EC%8A%B51-2.png?raw=true)
-
-- char * hash_search(char *key)  
-  해시테이블에서 키값이 key인 자료를 검색, data를 반환  
+- void insertion_sort(int list[], int n)  
+  insertion sort. 중간 단계와 키 비교 수 출력  
   <br>
-- int hash(char \*key)  
-  해시 함수(folding + division)  
+- void quick_sort(int list[], int left, int right)  
+  quick sort. 중간 단계와 키 비교 수 출력  
   <br>
-- int transform(char \*key)  
-  folding (key의 각 character 값을 더함)  
+- void merge_sort(int list[], int left, int right)  
+  merge sort. 중간 단계와 키 비교 수 출력  
   <br>
-- void hash_show()  
-  해시테이블의 key들을 차례로 출력
+- void merge(int list[], int left, int mid, int right)  
+  정렬되어 있는 list[left..mid]와 list[mid+1..right]를 합병  
+  <br>
+- void copy_list(int original[], int list[], int n)  
+  original을 list에 복사  
+  <br>
+- void print_list(int list[], int left, int right)  
+  list를 left에서 right까지만 출력
 
 > **실행 예**
 
