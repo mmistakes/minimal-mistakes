@@ -2,7 +2,7 @@
 layout: single
 title: "Application Panel"
 categories: Reference
-tag: [TIL, Web]
+tag: [TIL, Web, Reference]
 ---
 
 ### 01. Application 패널의 기능은?

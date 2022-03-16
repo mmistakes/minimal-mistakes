@@ -2,7 +2,7 @@
 layout: single
 title: "Mock Data"
 categories: React
-tag: [TIL, Javascript, React]
+tag: [TIL, Javascript, React, Reference]
 ---
 
 프론트엔드 개발을 하다보면 UI 구성에 필요한 데이터가 필요하다. 대부분 데이터는 서버에서 받아오는데 백앤드에서 아직 데이터를 가공하지 못하였다면, **임의의 데이터를 만들어 api 호출 형식으로 불러오는 데이터이다.**

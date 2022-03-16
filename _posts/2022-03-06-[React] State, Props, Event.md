@@ -2,7 +2,7 @@
 layout: single
 title: "State, Props, Event"
 categories: React
-tag: [TIL, React]
+tag: [TIL, React, Javascript]
 ---
 
 ### 01. Hooks?

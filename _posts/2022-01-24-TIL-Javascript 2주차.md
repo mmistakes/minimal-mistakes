@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Javascript week 2"
-categories: TIL
+categories: Javascript
 tag: [Javascript, TIL]
 ---
 

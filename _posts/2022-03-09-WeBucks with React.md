@@ -2,7 +2,7 @@
 layout: single
 title: "WeBucks with React"
 categories: Project
-tag: [TIL, Project, React]
+tag: [TIL, Project, React, Javascript]
 ---
 
 ### 01. 파일구조
