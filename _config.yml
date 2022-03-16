@@ -161,6 +161,7 @@ include:
   - .htaccess
   - _pages
 exclude:
+  - './README.md'
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
