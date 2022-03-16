@@ -4,14 +4,10 @@ WORKDIR /website
 
 COPY . .
 
-
 # Install missing packages in ubuntu docker container
 RUN apt-get update && apt-get install -y --no-install-recommends \
     vim \
-<<<<<<< HEAD
-=======
     git \
->>>>>>> main2
     ruby-full \
     build-essential \
     zlib1g-dev \
@@ -20,7 +16,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN gem install jekyll bundler:2.3.5
 
+#RUN bundle exec
 RUN bundle
 
-CMD ["jekyll", "serve"]
+#CMD ["jekyll", "serve"]
 #CMD ["/bin/bash"]

@@ -24,3 +24,5 @@ services:
       - type: bind
         source: ../
         target: /website
+    #command: "/bin/bash"
+    command: "bundle exec jekyll serve"
