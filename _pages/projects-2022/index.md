@@ -62,7 +62,7 @@ Join the Stamatics discord server to interact with the mentors and for any other
 -->
 
 ## 4 - Number Theory and Applications  
-* **Mentors :** Priya Gole (Priyaa#6917), Abhishek Shree (killBird#5626) 
+* **Mentors :** Priya Gole (Priyaa#6917), Abhishek Shree (killBird#5626), S Pradeep (spradeep#2529)
 * **Project Area :** Number Theory and Abstract Algebra
 * **Description :** This project aims to introduce the mentees to the basic concepts of number theory and abstract algebra.
 
