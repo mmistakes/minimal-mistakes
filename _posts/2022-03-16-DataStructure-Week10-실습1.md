@@ -30,13 +30,21 @@ typedef struct {
 element heap[MAX_DATA];
 ```
 
-![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-9%EC%9E%A5-%EC%8B%A4%EC%8A%B52-2.png?raw=true)
+![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-10%EC%9E%A5-%EC%8B%A4%EC%8A%B51-1.png?raw=true)
 
 - void insert_max_heap(Element item)  
   히프에 item(key, data) 삽입  
   예 (3,1,7,9,5) 삽입
 
-![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-9%EC%9E%A5-%EC%8B%A4%EC%8A%B52-3.png?raw=true)
+![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-10%EC%9E%A5-%EC%8B%A4%EC%8A%B51-2.png?raw=true)
+
+- Element delete_max_heap()  
+  히프에서 max item ( 루트 ) 삭제 및 반환
+
+- void max_heap_show()  
+  히프의 자료들을 차례로 출력
+
+- boolean is_heap_empty()
 
 > **실행 예**
 
