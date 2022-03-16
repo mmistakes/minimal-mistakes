@@ -14,11 +14,14 @@ Join the Stamatics discord server to interact with the mentors and for any other
 ## 1 - Quantum Algorithms 
 * **Project Area :** Linear algebra, Logical Thinking
 * **Mentors :** Fahad Sheikh (Mando#5308)
-* **Description :** I have done a similar project last year, where I have done problems from Quantum Computing Nielson and Chung. Some parts of this project will be the same, but at the end of the project I would like for mentees to present a literature review on a set of topics I will give them. I would mainly focus on Nielson and Chung for understanding the basics, and would like to introduce more algorithms other than Shor's Algorithm and Grover's algorithm. The mentees have to present a paper on a topic, so that it can make me sure what have they understood in the project.  
+* **Description :** I have done a similar project last year, where I have done problems from Quantum Computing Nielson and Chung. Some parts of this project will be the same, but at the end of the project I would like for mentees to present a literature review on a set of topics I will give them. I would mainly focus on Nielson and Chung for understanding the basics, and would like to introduce more algorithms other than Shor’s Algorithm and Grover’s algorithm. The mentees have to present a paper on a topic, so that it can make me sure what have they understood in the project. Having a good grip of python is a requirement, as in the later part of the project we will dive into Qiskit, an open-source python module by IBM.  
 
   Prerequisites: MTH102 (Linear Algebra), ESC101 (Intro To CS)
+  
+* **Intended Audience :** Y20-21s
 
-* **Expected Duration :** This project will be held for 12 weeks, discluding the time for preparation of Endsems and Endsems week  
+* **Expected Duration :** 2-3 months  
+
 * **Expected Weekly Commitment :** 6-8 hours 
 <!--- * **Showcase :** [here](https://stamatics.github.io/projects-2022/quantum-algorithms) 
 -->
@@ -38,25 +41,28 @@ Join the Stamatics discord server to interact with the mentors and for any other
 <!--- * **Showcase :** [here](https://stamatics.github.io/projects-2022/mathematical-tools-for-data-science) 
 -->
 
-## 3 - Statistical Analysis  
-* **Mentors :** Sandipan Mitra (Aeti#0020)
+## 3 - Regression Analysis  
+* **Mentors :** Sandipan Mitra (Aeti#0020), Rohan Kumar (Meursault#6295)
 * **Project Area :** Statistics  
-* **Description :** Covering on linear regression, multiple regression, probability, hypothesis testing, and other important statistical tools like expectation, skewness kurtosis, correlation, joint probability distribution, OLS, R2. If time is there we can cover time series. 
-Application of all these via an applied project. 
+* **Description :** Students taking this project will get to learn about data analysis and model building through popular statistical tools, the base of which being regression. Initially basics of probability and statistics will be covered after which we move into linear regression, our focus of concern being with multiple analysis. There will be an applied project based on the same and students will be required to build models and interpret the results as a real-life frame. We will move into complex topics like panel-data and time-series regression followed by another applied project. If time permits we can cover non-linear regression too. 
 
 * **Intended Audience :** Y20 and Y21
-* **Expected Duration :** 7-8 weeks  
-* **Expected Weekly Commitment :** 4-5 hours  
+* **Expected Duration :** 9-10 weeks  
+* **Expected Weekly Commitment :** 2-3 hours  
 <!--- * **Showcase :** [here](https://stamatics.github.io/projects-2022/statistical-analysis) 
 -->
 
-## 4 - Number Theory and Cryptography  
+## 4 - Algebraic Number Theory  
 * **Mentors :** Priya Gole (Priyaa#6917), Abhishek Shree (killBird#5626) 
-* **Project Area :** Number Theory, Cryptography
-* **Description :** Will start with basic concepts of modular arithmetic, divisibility, and prime numbers. Then diving into group theory. Later we will cover the motivation and ideas behind cryptography, and introduce the mentees to RSA, Diffie Hellman, Discrete Log, etc. 
+* **Project Area :** Number Theory and Abstract Algebra
+* **Description :** This project aims to introduce the mentees to the basic concepts of number theory and abstract algebra.
+
+  The first part of the project is theoretical, wherein concepts related to number theory and group theory will be introduced, and we would spend our time scratching our heads while trying out problems.
+
+  The other component would be the application of the concepts learned in areas like cryptography, random number generation, hash functions, etc.
 
 * **Intended Audience :** Y20 and Y21
-* **Expected Duration :** 8-10 weeks 
+* **Expected Duration :** 2 months 
 * **Expected Weekly Commitment :** 6-8 hours 
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/number-theory-and-cryptography)  
 -->
@@ -64,11 +70,13 @@ Application of all these via an applied project.
 ## 5 - Geometric Mechanics  
 * **Mentors :** Mohammad Saad (Saad#9798) 
 * **Project Area :** Mathematical Physics 
-* **Description :** The geometrical foundations of classical mechanics
+* **Description :** "The reading project aims to serve the classical mechanics in a mathematical fashion, unlike the manner in which it is taught mostly in a semester long course. We would not cover the wider contents of a typical mechanics course (like PHY102 or PHY401), instead focus on the mathematics, specially geometry, of the involved physical framework. For example, it would include how the dynamics of a system takes place on a configuration manifold, the geometries of the Lagrangian and Hamiltonian formalism, so on and so forth. We would not be solving funky pully-cart or rotation problems. The project would also have an underlying theme of appreciating the history and philosophy of mathematics and physics, by occasionally visiting some interesting anecdotes wherever required. (Basically, I would try to serve the project the way I wish classical mechanics should have been taught to me.)
 
-* **Intended Audience :** Y20s interested in theoretical mechanics
-* **Expected Duration :** 2 months  
-* **Expected Weekly Commitment :** 3-4 hrs  
+  For the evaluation, a common ground can be decided once the project commences. As of now, a final combined group report (ofcourse in LaTeX) or a short presentation would suffice for evaluation."
+
+* **Intended Audience :** UG Y20 and Y21 with basic familiarity of classical mechanics. As per the Stamatics theme, the project would be somewhat mathematically involved. If you're motivated enough to read books and learn, do apply. 
+* **Expected Duration :** 6 weeks
+* **Expected Weekly Commitment :** 2-4 hrs  
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/geometric-mechanics)
 -->
 
@@ -139,13 +147,13 @@ Additionally, you will be required to prepare a report in LaTeX, and proficiency
 
 * **Project Area :** Algebra and Geometry
 
-* **Description :** We will be studying the structure of points on algebraic curves that have both coordinates rational. We will start with degree 2 curves, then go on to study degree 3 curves as well.  
+* **Description :** During the course of the project we will be studying rational points (both coordinates rational) on algebraic curves. We will define a very geometric binary operation on this set. We will show that the binary operations makes the set of rational points a group. More interestingly, we will show how this group is finitely generated. Further, if time permits we will study other specific types of points on elliptic curves. As part of thee end term report, a presentation will be required and weekly assignments may be given which may be of programming in nature.  
 
-* **Intended Audience :** 2nd year or higher
+* **Intended Audience :** 2nd year or higher, other necessary concepts(like groups etc.) will be taught in duration of the project.
 
-* **Expected Duration :** 2 months  
+* **Expected Duration :** 1.5 - 2 months 
 
-* **Expected Weekly Commitment :** 7-20 hours  
+* **Expected Weekly Commitment :** May range between 2-20 hours depending on mentee's other involvements.  
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/rational-points-on-elliptic-curves)
 -->
 
@@ -154,9 +162,10 @@ Additionally, you will be required to prepare a report in LaTeX, and proficiency
 
 * **Project Area :** Combinatorics, Number Theory, Probability 
 
-* **Description :**  We plan to cover following topics (which are used frequently in Competitive Programming) - chinese remainder theorem, matrix exponentiation, application of gcd, hashing, dynamic programming, constructive problems, graph algorithms, generating functions, fft 
+* **Description :**  We plan to cover following topics (which are frequently used in Competitive Programming) - application of gcd, hashing,  constructive problems, chinese remainder theorem, mobius inversion, matrix exponentiation, dynamic programming, graph algorithms, generating functions and fft
 
-* **Intended Audience :** Intended audience should be comfortable in C++(or any programming language) and interested in solving problems related to combinatorics and number theory(cp style problems and puzles) 
+* **Intended Audience :** Intended audience should be familiar with some programming language(preferably C++).
+They should be able to analyse time complexity of simple codes. 
 
 * **Expected Duration :** 3 months 
 
@@ -170,18 +179,18 @@ Additionally, you will be required to prepare a report in LaTeX, and proficiency
 * **Project Area :** Machine Learning and Neural Networks
 
 * **Description :** This project will cover in some detail the mathematical aspects of different ML algorithms. We will start with the basics and touch some of the advanced algorithms as we proceed. The topics that would be covered include:
-1. Linear Algebra
-2. Simple, Multiple, Polynomial Linear Regression
-3. Evaluation of Regression models
-4. Logistic Regression
-5. Clustering algorithms
-6. Associate Rule Learning(Apriori, Eclat)
-7. Optimization techniques like gradient descent, adam, RMSProp, etc.
-8. Loss functions like crossentropy, huber loss, etc.
-9. Introduction to Neural Networks
-10. Convolutional Neural Networks
-11. Neural Style Transfer
-12. Recurrent Neural Networks
+  1. Linear Algebra
+  2. Simple, Multiple, Polynomial Linear Regression
+  3. Evaluation of Regression models
+  4. Logistic Regression
+  5. Clustering algorithms
+  6. Associate Rule Learning(Apriori, Eclat)
+  7. Optimization techniques like gradient descent, adam, RMSProp, etc.
+  8. Loss functions like crossentropy, huber loss, etc.
+  9. Introduction to Neural Networks
+  10. Convolutional Neural Networks
+  11. Neural Style Transfer
+  12. Recurrent Neural Networks
 
     The assignments will include implementation of some of these algorithms from scratch(without using any libraries) in python. Hence, familiarity with basic level python is recommended.   
 
@@ -289,17 +298,23 @@ The tentative list of topics that we want to cover is as follows:
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/mcmc-methods-in-julia)
 -->
 
-## 18 -  Quantum Theories and Fundamentals
+## 18 -  Quantum Theories and Applications
 * **Mentors:** Bhoomi Choudhary (Bhoomi#8271)
 
-* **Project Area :** Mathematics and Quantum Theory Basics
+* **Project Area :** Mathematics, Quantum Theory Basics, Coding
 
-* **Description :** Starting with some basics of quantum mechanics move on to classical computing and compare it then introduce some basics of mathematics required(linear algebra, complex numbers, vectors etc)
-moving on to some theorems and gates then a bit of quantum programming and algorithms like deutsch algorithm
+* **Description :** Understand the basics of classical computing.
+  Obtain an informal understanding of quantum mechanics.
+  Rigorously understand the basics of quantum computing.
+  Discover and understand some of the most counterintuitive features of quantum computing, like interference and entanglement, through a number of simple and fascinating applications.
+  Understand and be able to code simple quantum computing algorithms using IBM's Python library, Qiskit.
 
-    Prerequisites : Basic understanding of algebra and classical computing
+  We will be referring to Nielsen, M. A., & Chuang, I. (2002). Quantum computation and quantum information.
 
-* **Intended Audience :** Anyone comfortable with probability and vectors
+  And solving some interesting cryptographic applications alongside
+  
+* **Intended Audience :** Anyone with basic understanding of linear algebra and classical computing
+(Though these aren't strict pre-requisites and can be covered along the project.)
 
 * **Expected Duration :** 2-3 months 
 
