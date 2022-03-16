@@ -307,7 +307,7 @@ moving on to some theorems and gates then a bit of quantum programming and algor
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/quantum-theories-and-fundamentals)
 -->
 
-## 18 -  Introduction to Game Theory and Auctions
+## 19 -  Introduction to Game Theory and Auctions
 * **Mentors:** Panshul Rastogi (Panshul Rastogi#6165)
 
 * **Project Area :** Game Theory & Mechanism Design

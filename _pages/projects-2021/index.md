@@ -1,223 +1,323 @@
 ---
-title: Projects 2021
-permalink: /projects-2021/
+title: Projects 2022
+permalink: /projects-2022/
 toc: true
 layout: single
 author_profile: false
 
 ---
+<!---
 To register, fill this form latest by 27th March, 11:59 PM - [here](https://forms.gle/GhxVtSKegc2FhMvk8)
-And join the Stamatics discord server, to interact with the mentors and any other communication- [invite link](https://discord.gg/A6VuSzRfZd)
+-->
+Join the Stamatics discord server to interact with the mentors and for any other communication- [invite link](https://discord.gg/A6VuSzRfZd)
 
-## 1 - Probability and Statistics : From Classical to Bayesian  
-* **Mentors:** Aniket Kumar (aniki#8797), Pranay Agarwal (Pranzer#5431), Munish Gupta (Alexios#2464)  
-* **Description :** This Project will guide you through the basics of Probability Theory, data generation , decision theory , Bayesian Analysis and then application of Bayesian to real world problems.
-The project would be of immense help to many as probability theory has wide applications ranging from its use in the corporate world to the realm of research in almost any field. Familiarity with probability theory helps theoreticians and experimentalists alike.  
+## 1 - Quantum Algorithms 
+* **Project Area :** Linear algebra, Logical Thinking
+* **Mentors :** Fahad Sheikh (Mando#5308)
+* **Description :** I have done a similar project last year, where I have done problems from Quantum Computing Nielson and Chung. Some parts of this project will be the same, but at the end of the project I would like for mentees to present a literature review on a set of topics I will give them. I would mainly focus on Nielson and Chung for understanding the basics, and would like to introduce more algorithms other than Shor's Algorithm and Grover's algorithm. The mentees have to present a paper on a topic, so that it can make me sure what have they understood in the project.  
+
+  Prerequisites: MTH102 (Linear Algebra), ESC101 (Intro To CS)
+
+* **Expected Duration :** This project will be held for 12 weeks, discluding the time for preparation of Endsems and Endsems week  
+* **Expected Weekly Commitment :** 6-8 hours 
+<!--- * **Showcase :** [here](https://stamatics.github.io/projects-2022/quantum-algorithms) 
+-->
+
+## 2 - Mathematical Tools for Data Science  
+* **Mentors :** Shreya Bhattacharya (shreyab20#4813), Pranshu Gaur (pran#1011)  
+
+* **Project Area :** Probability and Statistics,  Basics of Data Science, Machine Learning
+
+* **Description :** We will be covering the basics of probability and statistics which are used in machine learning algorithms. Some of the topics we might cover are descriptive statistics, inferential statistics, types of probabilities, probability distribution, conditional probability, Bayes theorem. We will also cover python libraries like matplotlib, pandas, and seaborn which help in data analysis. If time permits, we might discuss some concepts like Decision Trees, Naive Bayes algorithms to demonstrate the application of the learned topics.
+
+* **Intended Audience :** Y21s(Preferred)  and Y20s
+
+* **Expected Duration :** 2 months 
+
+* **Expected Weekly Commitment :** 5-6 hours  
+<!--- * **Showcase :** [here](https://stamatics.github.io/projects-2022/mathematical-tools-for-data-science) 
+-->
+
+## 3 - Statistical Analysis  
+* **Mentors :** Sandipan Mitra (Aeti#0020)
+* **Project Area :** Statistics  
+* **Description :** Covering on linear regression, multiple regression, probability, hypothesis testing, and other important statistical tools like expectation, skewness kurtosis, correlation, joint probability distribution, OLS, R2. If time is there we can cover time series. 
+Application of all these via an applied project. 
+
+* **Intended Audience :** Y20 and Y21
+* **Expected Duration :** 7-8 weeks  
+* **Expected Weekly Commitment :** 4-5 hours  
+<!--- * **Showcase :** [here](https://stamatics.github.io/projects-2022/statistical-analysis) 
+-->
+
+## 4 - Number Theory and Cryptography  
+* **Mentors :** Priya Gole (Priyaa#6917), Abhishek Shree (killBird#5626) 
+* **Project Area :** Number Theory, Cryptography
+* **Description :** Will start with basic concepts of modular arithmetic, divisibility, and prime numbers. Then diving into group theory. Later we will cover the motivation and ideas behind cryptography, and introduce the mentees to RSA, Diffie Hellman, Discrete Log, etc. 
+
+* **Intended Audience :** Y20 and Y21
+* **Expected Duration :** 8-10 weeks 
+* **Expected Weekly Commitment :** 6-8 hours 
+<!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/number-theory-and-cryptography)  
+-->
+
+## 5 - Geometric Mechanics  
+* **Mentors :** Mohammad Saad (Saad#9798) 
+* **Project Area :** Mathematical Physics 
+* **Description :** The geometrical foundations of classical mechanics
+
+* **Intended Audience :** Y20s interested in theoretical mechanics
 * **Expected Duration :** 2 months  
-* **Expected Weekly Commitment:** 4-5 hours  
-* **Showcase :** [here](https://stamatics.github.io/projects-2021/probability-and-statistics-from-classical-to-bayesian) 
+* **Expected Weekly Commitment :** 3-4 hrs  
+<!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/geometric-mechanics)
+-->
 
-## 2 - Communicating Mathematics  
-* **Mentors:** Harshit Bisht (Harshit Bisht#7766)  
-* **Description :** Disclaimer: This project will very likely be useless for both jobs and MS/PhD admissions. You have been warned.
-Mathematical concepts are often disconnected from people's reality, people don't relate to statistics shared by politicians, economists, public organizations, and other domains that are relevant to everyday life. The project would aim to create examples, counterexamples, simulations, and games to connect math concepts to their relevance to the world at large.
-Some arbitrary examples:
+## 6 - An Invitation to Functional Analysis  
+* **Mentors :** Rahul Sethi (the-last-knight#4011)
+* **Project Area :** Analysis
+* **Description :** The directed reading project serves as an introduction to Functional Analysis. In the first half, we will develop some general techniques in Functional Analysis, and in the latter half, the focus will primarily be on Hilbert Space Theory. If time permits, we may look at selected topics in Operator Theory, including exposure to research-level problems.
 
-  - Law of large numbers and population statistics : A biased coin that lands H 99% of the time feels like it would never land tails, but if you flip it enough the sample distribution would converge to the true distribution. This is similar to if a country/society takes a 1% individual risk together, in a country of 1B more than 10M are affected.
-  - Basic reproduction number (R0) and how to understand contagiousness of a disease.
-  - Why do people talk about dummy candidates in elections? Are there election systems where no one has incentive to start dummy candidates (and what are the flaws of such systems?)
+    This project will help students develop not only an understanding of Functional Analysis but also inculcate an attitude of mathematical inquiry in general. There will be an emphasis (and no compromise) on mathematical rigor. The pace of the project will be dictated by the mathematical maturity of the group.
 
-  Since this will a project of interest/love more than technical depth, the participating group can be decided based on how many people want to do this. Please note that unfortunately, this will be a project where your communication skills might be barrier, but please don't shy away from applying if you feel interested.  
-* **Expected Duration :** 2-3 months  
-* **Expected Weekly Commitment:** 5 hours  
+    Prerequisites:
+(i) MTH301A* (A First Course in Real Analysis) or equivalent. 
 
-## 3 - The Dynamics of Life  
-* **Mentors:** Mohit Kulkarni (returnofhairy#1384)  
-* **Description :** In this course we wish to discover aspects of mathematics widely used in dynamical systems with application to biology. Nature has beautiful patterns as well as chaos, we wish to understand how dynamical systems work particularly in the brain. Initial weeks would cover basic biology and basic mathematics required thereafter. Here we will try to get an intuituon on why mathematics and biology aren't completely different areas. Later, we will understand what a network, what chaos is and why dynamics is important. We will look into one/two dimensional dynamical systems(would also include the dynamics of a neuron). Later topics will depend on you and may include RNN's, large-scale neural models, attractor dynamics etc. 
+    (ii) General Topology (specifically Ch. 2,3 of Munkres' Topology).
 
-  Maths may be difficult to understand, so we will take the help of cool visualisations. Programming knowledge(any language) is a plus but not required.
+   (iii) Introductory Measure Theory (including Riesz Representation Theorem, Radon Measures, etc.)
+Additionally, you will be required to prepare a report in LaTeX, and proficiency in the same is a must. 
 
-  Some books we may refer to (Tentative)
-  1. Mathematics of Life, Ian Stewart,
-  2. Nonlinear dynamics and chaos, Steven Strogatz
-  3. Dynamical Systems in Neuroscience, Eugene Izhikevich  
-* **Expected Duration :** 8 weeks  
-* **Expected Weekly Commitment:** 4  
-* **Showcase :** [here](https://stamatics.github.io/projects-2021/the-dynamics-of-life) 
+    (ii) and (iii) are desirable but not necessary. If you are not sure whether you meet the prerequisites for this project, please get in touch with the mentor directly.
 
-## 4 - Number Theory and Algebra  
-* **Mentors:** Ajay Prajapati (Ajay Prajapati#6448), Hargun Preet Singh Bhatia (Hargun#7217)  
-* **Description :** The goal of this project is to give a gentle introduction to Modern Number theory. We will cover basic topics like Divisibility, modular arithmetic, Euler's theorem, fundamental theorem of arithmetic, quadratic residues and Gauss's famous Quadratic reciprocity law. Along the way, we will introduce several key algebraic objects like groups, rings and fields. If time permits, we will talk about some well known problems in the field like Dirichlet's theorem for primes in Arithmetic progressions and the Riemann hypothesis.  
-* **Expected Duration :** 2-3 months  
-* **Expected Weekly Commitment:** 3-4 hours 
-* **Showcase :** [here](https://stamatics.github.io/projects-2021/number-theory-and-algebra)  
+    *You may register for this project even if you are taking MTH301A in the 2021-22 II semester.
 
-## 5 - Algorithms based on maths  
-* **Mentors:** Utkarsh Gupta (Pegasus#3765), Nitin Garg (ZeroDeaths#3886), Yash Gidwani (yashg#3927)  
-* **Description :** This project is intended to analyse algorithms that are based on maths and discover their applications. We will mainly cover the following algorithms/ techniques:  
-  1. Hashing: It is mainly used to store big arrays/ strings compactly and is thus used for pattern matching/sub-array equality, etc. in an optimal way.
-  2. Linear Diophantine Equations: We will discuss the conditions for solutions to exist and look for optimal ways to find them explicitly.
-  3. Gaussian Elimination: It is mainly used for solving linear equations but it has many other tricky applications like finding all xor subsets, etc. which will be discussed explicitly.
-  4. Probability Theory: We will look at some applications of Linearity of Expectation and formulating recursive relations for calculation of various parameters.
-  5. Generating Functions: We will learn to solve recursive relations in an optimal way like Fibonacci, etc.
-  6. FF: A very widely used algorithm to multiply polynomials/n-bit numbers optimally.
-  
-  These are the algorithms which will be discussed in the project. More algorithms may be introduced depending on the timeline.
-  This project expects you to be familiar with some programming language (preferable C++) and a basic knowledge of algorithms.  
-* **Expected Duration :** 2 months  
-* **Expected Weekly Commitment:** 5 hrs  
-* **Showcase :** [here](https://stamatics.github.io/projects-2021/algorithms-based-on-maths)
+* **Intended Audience :** Only UG students. Though anyone fulfilling the prerequisites may request to register, the project will mainly be of interest to Y20 MTH and PHY UGs. Y21s should not apply unless they have sufficient (and provable) mathematical background.
+* **Expected Duration :** 4-5 months  
+* **Expected Weekly Commitment :** At least 12 hours per week (involves significant self study and exercises).   
+<!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/an-invitation-to-functional-analysis) 
+-->
 
-## 6 - Mathematical Finance & Stochastic Processes  
-* **Mentors:** Aditya Prakash Singh (adityapi314#1095), Shaurya Jain (shaurya#9116)
-* **Description :** We will first study some basic financial concepts such as time value of money, arbitrage and risk & return. Further, we will study the most basic derivatives prevalent in the market and finally we will learn how these derivates are priced and hopefully derive the celebrated Black-Scholes equation.
+## 7 - Statistical Simulation  
+* **Mentors :** Ananyae Kumar Bhartari (ananye24#4537), Naveen kumar Mathur (Navi_Kane)  
 
-  Disclaimer - This project will NOT teach you how to trade in the market. It will definitely help you to understand the market and its instruments better.
+* **Project Area :** Probability and Statistics 
 
-  Pre-reqs: None.  
-* **Expected Duration :** 3 months  
-* **Expected Weekly Commitment:** 4-5 hours  
-* **Showcase :** [here](https://stamatics.github.io/projects-2021/mathematical-finance-and-stochastic-processes) 
+* **Description :** Simulation of random variables from discrete, continuous, multivariate distributions and stochastic processes, Monte-Carlo methods. Use of RNVP to model complex distribution and special attention GMM algorithms. 
 
-## 7 - Computer Vision: A Classic and Modern approach  
-* **Mentors:** Shivanshu Tyagi (spazewalker#5877), Akshay Gupta (gakshay#2382)  
-* **Description :** This project will cover the basics of computer Vision, then dive into some classic computer vision algorithms and then finally will cover the modern Deep Learning approaches in CV. 
+* **Intended Audience :** Open to every one who is interested to learn about simulation . 
 
-  The proposed project would roughly have the following structure:
-  1. Introduction: an introduction of Computer Vision and some basic Linear Algebra and numpy required for the later parts of the project.
-  2. Image processing: This portion will start with color spaces and conversions,Image Transformations(rotation, scaling, translation, etc.), then cover filters and kernels (noise removal, blurring, image thresholding) and finally conclude with hough transform, Edge detection(Canny Edge Detection) and contour detection algorithms(Watershed). Can also cover feature detection, depending upon the response.
-  3. ML for Vision: Here, we'll deal with some basics of Deep Neural Networks and talk about convolutions(also covered in image processing part), various optimizers, backpropagation algorithm, Gradient Descent, SGD various Loss functions and their usages in CV context, Regularizations and Bias-Variance trade off.
-  4. Applications: In this part we'll talk about some famous algorithms for some basic computer vision tasks.
-        - Image Classification: Inception, VGG and Resnet.
-        - Object detection: SSD, YOLO
-        - Face Detection: HAAR cascades
-
-  We'll accompany each lecture with a fun CTF type assignment along with some further readings.
-
-  For implementation, we'll use opencv, numpy in the starting. At later stages we'll include pytorch.    
-* **Expected Duration :** 3 Months  
-* **Expected Weekly Commitment:** 6-7 hrs  
-* **Showcase :** [here](https://stamatics.github.io/projects-2021/computer-vision-a-classic-and-modern-approach) 
-
-## 8 - Introduction to Fourier Analysis of Boolean Functions  
-* **Mentors:** Mohd Talib Siddiqui (arrow#4554)  
-* **Description :** We will start with discussing various kinds of boolean functions and their examples. Boolean functions are involved in various domains such as combinatorics and voting theories.
-However, instead of their applications we will analyse the properties boolean functions in themselves exhibit. We start with a very relaxed domain of functions on binary strings and will look at the properties that change when we restrict the domain to boolean values.
-We will be going over Fourier expansion of boolean functions in detail. We will touch upon property testing and introduce the procedure of linearity testing of boolean functions in short. We will mainly discuss on the Fourier support and dimension of boolean functions and see various bounds involving the same. We may include discussions on Parity Decision Trees as well depending on the interest shown by the mentees.
-* **Expected Duration :** 5-8 weeks  
-* **Expected Weekly Commitment :** 2-4  
-* **Showcase :** [here](https://stamatics.github.io/projects-2021/introduction-to-fourier-analysis-of-boolean-functions) 
-
-## 9 - Counting is fun  
-* **Mentors:** Farzan Byramji (geekotechy#7312)  
-* **Description :** Enumeration of combinatorial structures will mainly be what we will be doing. This can involve some very elegant arguments (like nice bijections) as well as    some relatively mundane tools (like manipulating algebraic expressions, 'manipulatorics' in the words of Zeilberger).
-
-  Depending on the interests and background of people, we can start by looking at standard things. If algebra is of interest, ideas from algebraic combinatorics can be explored.   For those who wish to focus on some specific sub-topic, one of various classes of objects like pattern-avoiding permutations, lattice paths, plane partitions, hyperplane   arrangements, etc. can be picked up. Computations using computer algebra have been very useful in this area, so that can also be a component.  
-* **Expected Duration :** 1-1.5 months  
-* **Expected Weekly Commitment:** 2-4  
-
-## 10 - Cross Validated  
-* **Mentors:** Kushagra Gupta (kushagra#9379), Ayush Agarwal (mclaren#1275), Medha Agarwal (Medha#6652)  
-* **Description :** We plan on covering fundamental statistical algorithms that will serve as a bridge to advanced statistical concepts. We will focus on hands-on implementation with real-life problems. The project will expect students to be familiar with basic linear algebra and have adequate coding skills. The end goal of the project is to equip students with a basic understanding of statistical science while offering flexibility of choice in sub-areas like regression, optimization, sampling, etc.  
-* **Expected Duration :** 2 months  
-* **Expected Weekly Commitment:** 5-6 hours  
-
-## 11 - Physically-Based Rendering  
-* **Mentors:** Mayant Mukul (wabadump#4634)  
-* **Description :** Realistic rendering techniques in computer graphics usually boil down to solving an integral equation called “the rendering equation”, which takes into account various physical properties of light. We’ll present the rendering equation in its original form and introduce radiometry to see how the rendering equation captures most physical phenomena under the assumptions of geometric optics. We’ll then see why finding an analytical solution can be difficult, develop a naive algorithm and finally introduce Monte Carlo methods that modern renderers like Pixar’s RenderMan or Blender’s Cycles are based on.  
 * **Expected Duration :** 6-8 weeks  
-* **Expected Weekly Commitment:** 3-4 hours  
-* **Showcase :** [here](https://stamatics.github.io/projects-2021/physically-based-rendering) 
 
-## 12 - Introduction to Formal Logic and Computation  
-* **Mentors:** Udit Narayan Pandey (UNP#0155), Dawood Bin Mansoor (rockstar2514#0635), Ayush Kumar  
-* **Description :** The goal of the project would be to introduce the mentees to formal logic first order and propositional logic and basic ideas of Computation.
-We would be covering axiomatisaion, rules of inference, syntactic and semantic consequence, Models of a Theory, Consistency Soundness, Completeness, First Order Theories and after covering Computation a peek into Godel's Incompletness Theorem, for Computation part we will be covering the notion of computability, formal languages, Models of computation(turing machines), Church turing hypothesis, decidability, and brief overview of complexity.  
-* **Expected Duration :** 7 weeks  
-* **Expected Weekly Commitment:** 4-6 Hrs  
-* **Showcase :** [here](https://stamatics.github.io/projects-2021/introduction-to-formal-logic-and-computation) 
+* **Expected Weekly Commitment :** 4 hours  
+<!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/statistical-simulation) 
+-->
 
-## 13 - Numbers Made Dumber  
-* **Mentors:** Yatharth Goswami (alpha_hacker#3464), Vivek Kumar Singh (bb8#2778), Rohan Baijal (rohanblueboybaijal#5838)  
-* **Description :** This project will serve as an introduction to Number Theory and some of its cool real world application like in Cryptography!
-
-  One component (the obvious one) is theoretical where the idea would be to cover theory (some Olympiad related and some algebra related) and tickle the brain cells by solving   some problems.
-
-  The other component would be implementing some of the algorithms in code as we study them. This would give a more hands on feel and an idea about using it in applications.  
-* **Expected Duration :** 3-4 months  
-* **Expected Weekly Commitment:** 6-8 hrs  
-* **Showcase :** [here](https://stamatics.github.io/projects-2021/numbers-made-dumber) 
-
-## 14 - Generating rational distance sets on a parabola  
-* **Mentors:** Sayak Bhattacharjee (saybha_00#0654)  
-* **Description :** Introduction:
-A rational distance set is a set of points with each of its pairwise distances to be rational. We study the problem of finding N-point rational distance sets on the parabola y = x^2. An open problem is to find the largest N for which a rational distance set exists on the parabola. While we know that N is finite, we do not yet know if even a 6-point rational distance set on the parabola exists!
-
-  Reference: G. Campbell, Points on y = x^2 at rational distance, Math. Comp., 73 (2004), 2093–2108.
-
-  Outline of project:
-  1. Introduction to existing literature; explore a correspondence of the problem with Pythagorean triplets, and study existence and nature of the solutions for general N from a   linear algebraic point-of-view. 
-  2. Primary goal: Attempt to obtain solutions computationally for N=4 and N=5 by building on techniques available for N=3. This will involve building time/space efficient   algorithms to efficiently search for solutions.
-  3. Possible extension: Attempt to understand density of the solutions on the parabola for small N using real analysis.  
-
-  Necessary pre-requisite knowledge: Linear algebra, basic combinatorics, Python/C.
-  Not strictly necessary pre-requisite knowledge: Parallel computing, real analysis.  
-* **Expected Duration :** about 2 months (min.)  
-* **Expected Weekly Commitment:** 5+  
-* **Showcase :** [here](https://stamatics.github.io/projects-2021/generating-rational-distance-sets-on-a-parabola) 
-
-## 15 - Quantum Algorithms  
-* **Mentors:** Rishabh Kothary (rishk76#7995)  
-* **Description :** Quantum Algorithms is a hot research area, and quantum algorithms like Shor's factorization algorithm have threatened the current state-of-the-art cryptosystems like the RSA. Shor's algorithm has brought an exponential speedup to the integer factorization problem compared to its classical counterpart. It has forced the cryptography community to build cryptosystems resilient to attacks from quantum computers. Our main aim is to understand the quantum computation model and learn about Shor's factorization algorithm in the project. If time permits, we could explore algorithms like Grover's Search algorithm and Simon's Algorithm and their applications in breaking cryptosystems. Not many pre-requisites are assumed; a basic understanding of Linear Algebra should suffice. However, the pre-requisites are not very strict and can be covered during the project if interested.  
-* **Expected Duration :** 2-3 months  
-* **Expected Weekly Commitment:** 8-10 hrs  
-* **Showcase :** [here](https://stamatics.github.io/projects-2021/quantum-algorithms) 
-
-## 16 - Introduction to Metric Spaces and Topology  
-* **Mentors:** Kushlam Srivastava (Kuchlam#9851)  
-* **Description :** This project is intended to be a brief introduction to Metric Spaces and Topology, an important tool which is very useful in Pure Mathematics and a bit of theoretical Physics as well. 
-If you want a bit of motivation for this topic you can watch the following VSauce video which addresses the famous question ""How many holes does a straw have?"" through topology [link](https://www.youtube.com/watch?v=egEraZP9yXQ)  
-We will first cover Metric Spaces which will be based on a lot of the first part of MTH101 and we can then move on topological concepts based on the comfort and understanding of the mentees.
-Since most students are not able to do the course offered on Topology by MTH department before the 5th semester, this can be a great opportunity for you to learn this topic.
-This project is mainly intended for Y20 students.  
+## 8 - Introduction to Proof Complexity
+* **Mentors :** Farzan Byramji (geekotechy#7312)
+* **Project Area :** Complexity Theory
+* **Description :** The broad aim will be to look at some of the main results in proof complexity and see some of the many connections with other things in complexity theory such as circuit complexity, communication complexity, TFNP problems, etc. starting from the basics.
+    
+* **Intended Audience :** The project is mainly targeted at people interested in logic and/or complexity theory. Some familiarity with propositional logic and very basic complexity theory will be essential. These prerequisites are not too hard to pick up since there are readable introductory texts such as Sipser that are sufficient. A stronger background in logic and/or complexity theory will, of course, be useful. Optionally, if one is interested in algebra and wishes to learn about algebraic proof systems, then knowing stuff about polynomial rings, say at the level of Cox, Little, O'Shea's excellent text Ideals, Varieties and Algorithms, would be helpful.
 * **Expected Duration :** 2 months  
-* **Expected Weekly Commitment:** 5 hours  
-* **Showcase :** [here](https://stamatics.github.io/projects-2021/introduction-to-metric-spaces-and-topology)  
+* **Expected Weekly Commitment :** 2-4 hours  
+<!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/introduction-to-proof-complexity) 
+-->
 
-## 17 - Understanding Graphs with Analysis  
-* **Mentors:** Ayush Basu (abasu#5088)  
-* **Description :** What are some nice ways to understand the handshake lemma? How many triangles does a tripartite graph contain? How can we count the number of subgraphs of a particular kind in a complete graph (or a random graph)? How can we define quasirandomness in graphs? How can we extend these notions to hypergraphs? 
+## 9 - Insolvability of Quintic Equations 
+* **Mentors :** Ajay Prajapati (Ajay Prajapati#6448)  
+* **Project Area :** Abstract Algebra
+* **Description :** The goal of this project is to understand one of the major achievements of early 19th century mathematics: Insolvability of Quintic Equations. That you can't have a formula to find roots of a degree 5 polynomial like you have for quadratic equations. The ideas that went into solving this problem paved the way to modern mathematics. Along the way, we will see some really cool stuff like construction of a regular 17-gon, impossibility of trisecting a general angle with ruler and compass.
+     
+* **Intended Audience :** This project is intended for 2nd year Mathematics and Computer Science students (and those who are familiar basic abstract algebra).
+* **Expected Duration :** 3 months  
+* **Expected Weekly Commitment :** 5-6 hours  
+<!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/insolvability-of-quintic-equations)
+-->
 
-  We will try and answer some of these questions in the project exploring counting techniques one can use for graphs and look at some of the famous conjectures of extremal graph   theory, a field primarily developed by Paul Erdös, one of the most prolific problem solvers to grace mathematics. 
+## 10 - Rational Points on Elliptic Curves  
+* **Mentors :** Dawood Bin Mansoor (rockstar2514#0635), Udit Narayan Pandey (UNP#0155)  
 
-  We will also focus on the theme of the dichotomy between structure and randomness and look at examples throughout our project that lead to a better understanding of these ideas. 
+* **Project Area :** Algebra and Geometry
 
-  Later on we may explore some advanced results in this field like the complete proof of Szemeredi's theorem and regularity Lemma.  
-* **Expected Duration :** 2.5 months  
-* **Expected Weekly Commitment:** 6  
+* **Description :** We will be studying the structure of points on algebraic curves that have both coordinates rational. We will start with degree 2 curves, then go on to study degree 3 curves as well.  
 
-## 18 - Topics in Analysis: A Tour of Measure Theory and Functional Analysis  
-* **Mentors:** Aniket Das (Aniket#9998)  
-* **Description :** This is a project on intermediate-level mathematical analysis intended for highly motivated Y18s and Y19s (and exceptional Y20s) who are interested in analysis, probability theory and machine learning theory. I intend to cover a broad range of topics in measure theory and functional analysis and discuss their applications in areas such as probability theory, machine learning theory and quantum mechanics 
+* **Intended Audience :** 2nd year or higher
 
-  Pre-requisites: Mathematical maturity and a high level of comfort with basic calculus (MTH101) and Linear Algebra (MTH102). 
+* **Expected Duration :** 2 months  
 
-  Topics: The exact syllabus will depend on the mathematical maturity of the group. Ideally, with a passionate and proficient group, I will be able to cover the following:
+* **Expected Weekly Commitment :** 7-20 hours  
+<!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/rational-points-on-elliptic-curves)
+-->
 
-  1. Topology and Analysis Preliminaries: Metric Spaces, Open and Closed Sets, Completeness, Connectedness and Compactness
-  2. A Fast Paced Linear Algebra Refresher on Normed Spaces, Inner Product Spaces and Linear Operators. Introduction to Matrix Norms and Singular Value Decomposition
-  3. Basics of Hilbert Space Theory: Basic properties, Jordan von Neumann Theorem, Orthonormality, Applications to Fourier Analysis and Approximation Theory
-  4. Bounded Linear Operators and Functionals on Hilbert Spaces: Definitions, Reisz Representation Theorem, Hilbert Adjoint
-  5. Self Adjoint Linear Operators, Compact Operators, Spectral Theorem. Applications to Polar Decomposition and Singular Value Decomposition in Hilbert Spaces
-  6. (Optional) Basics of Banach Space Theory: Hahn Banach Theorem, Open Mapping and Closed Graph Theorem, Banach Fixed Point Theorem and its Applications
-  7. (Optional) Application of Functional Analysis in Basic Quantum Mechanics
-  8. Measure Theory: Definition and Basic Results on Measures, Outer Measures, Borel Regularity with a special focus on Lebesgue Measure
-  9. Measure Theory II: Simple Functions, Measurable Functions and Measure Theoretic Notions of Convergence
-  10. Integration Theory I: Measurable Functions, Definition and Properties of Integral with special focus on Lebesgue Integrals
-  11. Integration Theory II: Fundamental Theorems: Monotone Convergence Theorem, Fatou's Lemma, Dominated Convergence Theorem, Multiple Integrals and Fubini's Theorem
-  12. Lp spaces: Development of functional analysis on Lp spaces, integral operators, kernels. 
-  13. (Optional) Applications to Probability Theory: Measure Theoeretic Probability, Expectation and Convergence Theorems in Probability. Weak Law of Large Numbers and Central Limit Theorem
-  14. (Optional) Advanced Calculus on Banach Spaces: Metric Derivatives, Frechet and Gateaux Derivatives
-  15. (Optional) Connections to Kernel Methods in Machine Learning: Reproducing Kernel Hilbert Spaces and some more Fourier Analysis (Bochner's Theorem and related results)
-* **Expected Duration :** 3-4 months on full syllabus. 1-2 months on a reduced syllabus  
-* **Expected Weekly Commitment:** 8-10 hours (involves significant self study and possible exercises)  
+## 11 - Algo101x  
+* **Mentors :** Satyam Kumar Roy (stack#8156), Shorya Kumar (shoryak#4571), Kunwar Preet Singh (kpS#9551)   
+
+* **Project Area :** Combinatorics, Number Theory, Probability 
+
+* **Description :**  We plan to cover following topics (which are used frequently in Competitive Programming) - chinese remainder theorem, matrix exponentiation, application of gcd, hashing, dynamic programming, constructive problems, graph algorithms, generating functions, fft 
+
+* **Intended Audience :** Intended audience should be comfortable in C++(or any programming language) and interested in solving problems related to combinatorics and number theory(cp style problems and puzles) 
+
+* **Expected Duration :** 3 months 
+
+* **Expected Weekly Commitment :** 4 hrs
+<!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/algo101x)
+-->
+
+## 12 - Machine Learning : Behind the Curtain
+* **Mentors :** Hitesh Anand (hitesh#5074), Arnav Gupta (VaderEvader#8554), Sunreet Khanna (skhanna23#9868) 
+
+* **Project Area :** Machine Learning and Neural Networks
+
+* **Description :** This project will cover in some detail the mathematical aspects of different ML algorithms. We will start with the basics and touch some of the advanced algorithms as we proceed. The topics that would be covered include:
+1. Linear Algebra
+2. Simple, Multiple, Polynomial Linear Regression
+3. Evaluation of Regression models
+4. Logistic Regression
+5. Clustering algorithms
+6. Associate Rule Learning(Apriori, Eclat)
+7. Optimization techniques like gradient descent, adam, RMSProp, etc.
+8. Loss functions like crossentropy, huber loss, etc.
+9. Introduction to Neural Networks
+10. Convolutional Neural Networks
+11. Neural Style Transfer
+12. Recurrent Neural Networks
+
+    The assignments will include implementation of some of these algorithms from scratch(without using any libraries) in python. Hence, familiarity with basic level python is recommended.   
+
+    Prerequisites : Basic level linear algebra(operations on matrices)
+    Recommended : Familiarity with arrays, libraries, functions in python (for assignments)
+
+* **Intended Audience :** The project is preferable for UG Y21, although students from other batches can enroll too, if interested in the topics mentioned above.
+
+* **Expected Duration :** 2 months
+
+* **Expected Weekly Commitment :** 5-6 Hrs 
+<!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/machine-learning-behind-the-curtain) 
+-->
+
+## 13 - Introduction to Deep Learning and Applications  
+* **Mentors:**  Ashutosh Sharma (ASH#7887), Prateek Sogra (LightSpeed#2728), Vineet Kumar (Vineetk20#3065)
+
+* **Project Area :** Linear Algebra , Neural Networks , Introduction to Computer Vision
+
+* **Description :** 
+  
+  1. Basics of Linear Algebra required for neural networks
+  2. Python and its libraries(numpy pandas matplotlib)
+  3. Intro to Tensorflow
+  4. Topics from Deep learning
+  5. Computer Vision basics and applications
+   
+  Prerequisites : Programming basics(Basically Python) and Mathematical Aptitude
+
+* **Expected Duration :** 3-4 months  
+
+* **Expected Weekly Commitment:** 8-10 hrs   
+<!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/introduction-to-deep-learning-and-applications)
+-->
+
+## 14 - Decrypting Technical Indicators
+* **Mentors:** Sujal Harkut (DeadTree#9882), Sheetal Gupta (sheetalg20), Sarah Kapoor (psychocrat#3620), Kushagra Sharma (Mr. Defenestrator#2115)
+
+* **Project Area :** Maths behind Technical Indicators
+
+* **Description :** Basically we will dive into the mathematical part of technical indicators and will clear the concepts pertaining to the usage of specific values of parameters such as time period, multiplier for standard deviation or bands, RSI Index.                                                                                                    In the beginning, we intend to cover some basic and standard technical indicators like SMA(Small Moving Average) ,EMA(Exponential Moving Average),MACD(Moving average convergence divergence), Bollinger Bands and others. Then we will move ahead onto changing parameters in formulae, or using EMA instead of the default SMA in Bollinger. 
+
+  Lastly, we would be covering combinations of this and Backtest on standard Stock Exchanges and Crypto Exchanges and give the result with the highest Sharpe ratio.
+
+* **Intended Audience :** Y21, Y20
+
+* **Expected Duration :** 8 weeks
+
+* **Expected Weekly Commitment:** 5-7 hrs
+<!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/decrypting-technical-indicators)  
+-->
+
+## 15 - Connecting the First Search  
+* **Mentors:** Utkarsh Jain (JB996#5074), Patil Aditya Bharat (aditya_patil#1265), Saaransh Aggarwal (Saaransh Aggarwal#7225)  
+
+* **Project Area :** Graph theory and Algorithms
+
+* **Description :** Graph traversal algorithms, shortest path algorithms, Tree algorithms, Advanced graph algorithms. 
+ 
+    Prerequisites : ESC101/Familiarity with C/C++
+
+* **Expected Duration :** 2 months  
+
+* **Expected Weekly Commitment:** 5-7 hours   
+<!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/connecting-the-first-search)
+-->
+
+## 16 - Number Theory and Cryptography  
+* **Mentors:**  Piyush Beegala (FranticAlien#7151), Sujal Harkut (DeadTree#9882), Bipplav Kumar Tiwari (Bipplav Tiwari#6662)
+
+* **Project Area :** Number Theory and Cryptography
+
+* **Description :** Beginning with Euclid's algorithm and Bezout's Identity, we progress to Fermat's little theorem, Euler's theorem, Totient Function, Congruences, and Diophantine equations. In the second half, we'd like to concentrate on cryptographic applications such as hashing techniques, primality testing, public key algorithms (such as Diffie–Hellman and RSA), and cryptanalysis. We will also go over the fundamentals of ECC (Elliptic Curve Cryptography).
+
+* **Intended Audience :** Y21
+
+* **Expected Duration :**  2-2.5 months
+
+* **Expected Weekly Commitment:** 4-6 hrs
+<!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/number-theory-and-cryptography)
+-->
+
+## 17 - MCMC Methods in Julia  
+* **Mentors:** Vansh Bansal (Vansh#7537), Pramodh Gopalan (Pramodh Gopalan#7422)
+
+* **Project Area :** Computational Statistics
+
+* **Description :** This project will mainly focus on Markov Chain Monte Carlo techniques. Markov Chain Monte Carlo sampling provides a class of algorithms for systematic random sampling from high-dimensional probability distributions. MCMC techniques often solve integration and optimization problems in large dimensional spaces. These two types of problems play a fundamental role in machine learning.
+Just going over the theory is boring. This project will also involve a substantial computational aspect, and you will be asked to implement various algorithms, preferably in Julia.
+The tentative list of topics that we want to cover is as follows:
+  1. Sampling Methods and general Monte Carlo methods
+  2. Rejection Sampling and Importance Sampling
+  3. Markov Chain and Measure Theory basics
+  4. Metropolis-Hastings Algorithm
+  5. Accelerating MCMC Algorithms
+  6. MCMC Algorithms for Intractable Posteriors
+
+    Prerequisites : This advanced project requires a good grasp of probability and statistics basics.
+
+* **Intended Audience :** Anyone well-acquainted with the contents of MSO201 / CS203 or any other equivalent course.
+
+* **Expected Duration :** 14 weeks  
+
+* **Expected Weekly Commitment:** 8-10 hours 
+<!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/mcmc-methods-in-julia)
+-->
+
+## 18 -  Quantum Theories and Fundamentals
+* **Mentors:** Bhoomi Choudhary (Bhoomi#8271)
+
+* **Project Area :** Mathematics and Quantum Theory Basics
+
+* **Description :** Starting with some basics of quantum mechanics move on to classical computing and compare it then introduce some basics of mathematics required(linear algebra, complex numbers, vectors etc)
+moving on to some theorems and gates then a bit of quantum programming and algorithms like deutsch algorithm
+
+    Prerequisites : Basic understanding of algebra and classical computing
+
+* **Intended Audience :** Anyone comfortable with probability and vectors
+
+* **Expected Duration :** 2-3 months 
+
+* **Expected Weekly Commitment:** 7-10 hours
+<!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/quantum-theories-and-fundamentals)
+-->
+
+## 19 -  Introduction to Game Theory and Auctions
+* **Mentors:** Panshul Rastogi (Panshul Rastogi#6165)
+
+* **Project Area :** Game Theory & Mechanism Design
+
+* **Description :** The project would be divided into 2 parts. The first half will introduce students to strategic-form games, concepts of Nash Equilibrium & Dominant Strategy Equilibrium. Further, we'll also explore Mixed Strategy Nash Equilibrium and see related examples and its application in Economics. 
+In the secong half, we'll explore auctions: First price, Second Price Auctions, the underlying assumptions and the Revenue Equivalence Theorem. For independent private values, we'll study Myerson Optimal Auction. If time permits, we'll look at the existing literature on correlated Private values and Ronen Lookahead Auctions. 
+The project would mostly involve reading and evaluation would be done on the basis of 2-3 assignments.
+
+* **Intended Audience :** Y21 (preferable), Y20 
+
+* **Expected Duration :** 2 months
+
+* **Expected Weekly Commitment:** 4-5 hours
