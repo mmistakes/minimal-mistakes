@@ -1,6 +1,6 @@
 ---
 published: true
-title: "2022-03-16-DataStructure-Week11-실습1"
+title: "2022-03-16-DataStructure-Week11-실습2"
 categories:
   - DataStructure
 tags:
@@ -10,7 +10,7 @@ toc_sticky: true
 toc_label: "DataStructure"
 ---
 
-# adj_list
+# adj_matrix
 
 - DFS와 BFS의 구현
 - 명령어  
@@ -21,16 +21,9 @@ toc_label: "DataStructure"
 > **자료구조 및 함수 구성**
 
 ```C++
-typedef struct node *node_pointer;
-typedef struct node {
-	int vertex;
-	node_pointer link;
-} node;
-// Adjacency lists for a graph
-node_pointer adj[MAX_VERTICES];
+// Adjacency matrix for a graph
+int adj[MAX_VERTICES][MAX_VERTICES];
 ```
-
-![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-11%EC%9E%A5-%EC%8B%A4%EC%8A%B51-1.png?raw=true)
 
 - void build_simple_graph()  
   샘플 그래프의 생성
