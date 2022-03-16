@@ -306,3 +306,18 @@ moving on to some theorems and gates then a bit of quantum programming and algor
 * **Expected Weekly Commitment:** 7-10 hours
 <!---* **Showcase :** [here](https://stamatics.github.io/projects-2022/quantum-theories-and-fundamentals)
 -->
+
+## 18 -  Introduction to Game Theory and Auctions
+* **Mentors:** Panshul Rastogi (Panshul Rastogi#6165)
+
+* **Project Area :** Game Theory & Mechanism Design
+
+* **Description :** The project would be divided into 2 parts. The first half will introduce students to strategic-form games, concepts of Nash Equilibrium & Dominant Strategy Equilibrium. Further, we'll also explore Mixed Strategy Nash Equilibrium and see related examples and its application in Economics. 
+In the secong half, we'll explore auctions: First price, Second Price Auctions, the underlying assumptions and the Revenue Equivalence Theorem. For independent private values, we'll study Myerson Optimal Auction. If time permits, we'll look at the existing literature on correlated Private values and Ronen Lookahead Auctions. 
+The project would mostly involve reading and evaluation would be done on the basis of 2-3 assignments.
+
+* **Intended Audience :** Y21 (preferable), Y20 
+
+* **Expected Duration :** 2 months
+
+* **Expected Weekly Commitment:** 4-5 hours
