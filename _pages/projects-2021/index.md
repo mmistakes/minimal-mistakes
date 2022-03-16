@@ -1,6 +1,6 @@
 ---
 title: Projects 2022
-permalink: /projects-2022/
+permalink: /projects-2021/
 toc: true
 layout: single
 author_profile: false
@@ -68,11 +68,11 @@ Join the Stamatics discord server to interact with the mentors and for any other
 -->
 
 ## 5 - Geometric Mechanics  
-* **Mentors :** Mohammad Saad (Saad#9798) 
+* **Mentors :** Mohammad Saad (Saad#9798), Annadur Rahul Kesavan (luharnavasek#5344)
 * **Project Area :** Mathematical Physics 
-* **Description :** "The reading project aims to serve the classical mechanics in a mathematical fashion, unlike the manner in which it is taught mostly in a semester long course. We would not cover the wider contents of a typical mechanics course (like PHY102 or PHY401), instead focus on the mathematics, specially geometry, of the involved physical framework. For example, it would include how the dynamics of a system takes place on a configuration manifold, the geometries of the Lagrangian and Hamiltonian formalism, so on and so forth. We would not be solving funky pully-cart or rotation problems. The project would also have an underlying theme of appreciating the history and philosophy of mathematics and physics, by occasionally visiting some interesting anecdotes wherever required. (Basically, I would try to serve the project the way I wish classical mechanics should have been taught to me.)
+* **Description :** The reading project aims to serve the classical mechanics in a mathematical fashion, unlike the manner in which it is taught mostly in a semester long course. We would not cover the wider contents of a typical mechanics course (like PHY102 or PHY401), instead focus on the mathematics, specially geometry, of the involved physical framework. For example, it would include how the dynamics of a system takes place on a configuration manifold, the geometries of the Lagrangian and Hamiltonian formalism, so on and so forth. We would not be solving funky pully-cart or rotation problems. The project would also have an underlying theme of appreciating the history and philosophy of mathematics and physics, by occasionally visiting some interesting anecdotes wherever required. (Basically, I would try to serve the project the way I wish classical mechanics should have been taught to me.)
 
-  For the evaluation, a common ground can be decided once the project commences. As of now, a final combined group report (ofcourse in LaTeX) or a short presentation would suffice for evaluation."
+  For the evaluation, a common ground can be decided once the project commences. As of now, a final combined group report (ofcourse in LaTeX) or a short presentation would suffice for evaluation.
 
 * **Intended Audience :** UG Y20 and Y21 with basic familiarity of classical mechanics. As per the Stamatics theme, the project would be somewhat mathematically involved. If you're motivated enough to read books and learn, do apply. 
 * **Expected Duration :** 6 weeks
