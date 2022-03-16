@@ -22,13 +22,16 @@ toc_label: "DataStructure"
   - 현재 해시테이블의 내용을 출력
 - Q: Quit
 
-![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-11%EC%9E%A5-%EC%8B%A4%EC%8A%B52-1.png?raw=true)
+![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-12%EC%9E%A5-%EC%8B%A4%EC%8A%B51-1.png?raw=true)
 
 > **자료구조 및 함수 구성**
 
 ```C++
-// Adjacency matrix for a graph
-int adj[MAX_VERTICES][MAX_VERTICES];
+typedef struct {
+	char key[100];
+	char data[100];
+} element;
+element hash_table[TABLE_SIZE];
 ```
 
 - void build_simple_graph()  
