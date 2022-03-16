@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Introduction"
-categories: Profile
+title: "Profile"
+categories: [Profile, Introduction]
 ---
 
 ![intro1](/images/intro1.png)
