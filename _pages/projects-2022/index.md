@@ -62,7 +62,7 @@ Join the Stamatics discord server to interact with the mentors and for any other
 -->
 
 ## 4 - Number Theory and Applications  
-* **Mentors :** Priya Gole (Priyaa#6917), Abhishek Shree (killBird#5626), S Pradeep (spradeep#2529)
+* **Mentors :** Priya Gole (Priyaa#6917), Abhishek Shree (killBird#5626)
 * **Project Area :** Number Theory and Abstract Algebra
 * **Description :** This project aims to introduce the mentees to the basic concepts of number theory and abstract algebra.
 
@@ -344,7 +344,7 @@ The project would mostly involve reading and evaluation would be done on the bas
 
 * **Expected Duration :** 2 months
 
-* **Expected Weekly Commitment:** 4-5 hours
+* **Expected Weekly Commitment:** 6-8 hours
 
 ## 20 -  Introduction to Automata Theory
 * **Mentors:** Nupur Jain (Nupur Jain#8918)
