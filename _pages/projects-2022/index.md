@@ -31,13 +31,22 @@ Join the Stamatics discord server to interact with the mentors and for any other
 
 * **Project Area :** Probability and Statistics,  Basics of Data Science, Machine Learning
 
-* **Description :** We will be covering the basics of probability and statistics which are used in machine learning algorithms. Some of the topics we might cover are descriptive statistics, inferential statistics, types of probabilities, probability distribution, conditional probability, Bayes theorem. We will also cover python libraries like matplotlib, pandas, and seaborn which help in data analysis. If time permits, we might discuss some concepts like Decision Trees, Naive Bayes algorithms to demonstrate the application of the learned topics.
+* **Description :** We will be covering the basics of probability and statistics which are used in machine learning algorithms alongwith some relevant libraries and algorithms. Some of the topics we plan to cover are :
+  1. Introduction to Data Science
+  2. Discussion on AI vs Data Science vs ML
+  3. Categories of Data, Statistical Terminologies, Sampling Techniques, Probability Terminologies
+  4. Descriptive Statistics, Inferential Statistics, Probability Distribution, Point Estimation, Interval Estimate, Margin of Error, Hypothesis Testing
+  5. We will also cover Python libraries like numpy, pandas, matplotlib and seaborn which help in Data Analysis. 
+  6. We also plan to cover algorithms like Regression, Decision Tree, Random Forest, Naive Bayes to demonstrate the application of the learned topics. 
+     An application based project will also be done.
+     
+     Prerequisites : None, it all depends on the enthusiasm of the mentees.
 
-* **Intended Audience :** Y21s(Preferred)  and Y20s
+* **Intended Audience :** Y20 and Y21
 
 * **Expected Duration :** 2 months 
 
-* **Expected Weekly Commitment :** 5-6 hours  
+* **Expected Weekly Commitment :** 6-8 hours  
 <!--- * **Showcase :** [here](https://stamatics.github.io/projects-2022/mathematical-tools-for-data-science) 
 -->
 
@@ -52,8 +61,8 @@ Join the Stamatics discord server to interact with the mentors and for any other
 <!--- * **Showcase :** [here](https://stamatics.github.io/projects-2022/statistical-analysis) 
 -->
 
-## 4 - Algebraic Number Theory  
-* **Mentors :** Priya Gole (Priyaa#6917), Abhishek Shree (killBird#5626) 
+## 4 - Number Theory and Applications  
+* **Mentors :** Priya Gole (Priyaa#6917), Abhishek Shree (killBird#5626)
 * **Project Area :** Number Theory and Abstract Algebra
 * **Description :** This project aims to introduce the mentees to the basic concepts of number theory and abstract algebra.
 
@@ -335,7 +344,7 @@ The project would mostly involve reading and evaluation would be done on the bas
 
 * **Expected Duration :** 2 months
 
-* **Expected Weekly Commitment:** 4-5 hours
+* **Expected Weekly Commitment:** 6-8 hours
 
 ## 20 -  Introduction to Automata Theory
 * **Mentors:** Nupur Jain (Nupur Jain#8918)
