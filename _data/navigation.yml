@@ -3,7 +3,7 @@ main:
   - title: "About"
     url: /_pages/about/
   - title: "CV"
-    url: /assets/dummy_cv.pdf
+    url: /_pages/cv/
   - title: "Publications"
     url: /_pages/research/
   - title: "Contact"
