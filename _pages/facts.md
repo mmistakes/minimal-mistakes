@@ -11,4 +11,4 @@ author_profile: true
 
 {{ page.excerpt | markdownify }}
 
-<iframe src="/facts/FactsTrue.pdf" width="100%" height="100%"></iframe>
+<iframe src="/facts/FactsTrue.pdf" width="100%" height="800px"></iframe>
