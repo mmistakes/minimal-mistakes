@@ -1,6 +1,9 @@
-Code Kata Week2 Day3
-
-
+---
+layout: single
+title: "Code Kata Week2 Day3"
+categories: Algorithm
+tag: [TIL, Javascript, Algorithm]
+---
 
 ## 문제
 
@@ -11,49 +14,41 @@ s는 여러 괄호들로 이루어진 String 인자입니다. s가 유효한 표
 예를 들어 아래와 같습니다.
 
 ```js
-s = "()"
-return true
+s = "()";
+return true;
 
-s = "()[]{}"
-return true
+s = "()[]{}";
+return true;
 
-s = "(]"
-return false
+s = "(]";
+return false;
 
-s = "([)]"
-return false
+s = "([)]";
+return false;
 
-s = "{[]}"
-return true
+s = "{[]}";
+return true;
 ```
-
-
-
-
 
 ## 해결
 
 ```js
 function isValid(s) {
-  
-  for(let i = 0; i < s.length; i++){
-    if(s.includes("()") || 
-       s.includes("{}") || 
-       s.includes("[]"))  
-    {
+  for (let i = 0; i < s.length; i++) {
+    if (s.includes("()") || s.includes("{}") || s.includes("[]")) {
       s = s.replace("()", "");
       s = s.replace("[]", "");
       s = s.replace("{}", "");
     }
-    if(s === ""){
-      return true
+    if (s === "") {
+      return true;
     }
   } // for문 end
-  return false  
+  return false;
 }
 
-let input = "[{}]"
-console.log(isValid(input))
+let input = "[{}]";
+console.log(isValid(input));
 
 module.exports = { isValid };
 ```
