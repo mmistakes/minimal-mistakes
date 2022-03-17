@@ -11,6 +11,4 @@ author_profile: true
 
 {{ page.excerpt | markdownify }}
 
-Are your facts really true?
-
 <iframe src="/facts/FactsTrue.pdf" width="100%" height="100%"></iframe>
