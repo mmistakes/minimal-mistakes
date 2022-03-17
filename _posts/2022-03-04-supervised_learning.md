@@ -79,6 +79,10 @@ author_profile: false
   </style>
 </head>
 
+원본 사이트: <a href='https://scikit-learn.org/stable/tutorial/statistical_inference/supervised_learning.html' blank='target'> https://scikit-learn.org/stable/tutorial/statistical_inference/supervised_learning.html</a>
+
+<br>
+
 
 # <span style='background-color: #CDE8EF'> 지도 학습: 고차원 관측치로부터 결과값 예측하기 </span>
 

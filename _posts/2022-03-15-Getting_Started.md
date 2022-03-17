@@ -78,6 +78,10 @@ author_profile: false
   </style>
 </head>
 
+원본 사이트: <a href='https://scikit-learn.org/stable/getting_started.html' blank='target'> https://scikit-learn.org/stable/getting_started.html</a>
+
+<br>
+
 
 # <span style='background-color: #CDE8EF'> 시작하기 </span>
 

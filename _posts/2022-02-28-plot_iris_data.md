@@ -78,6 +78,10 @@ author_profile: false
   </style>
 </head>
 
+원본 사이트: <a href='https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html' target='blank'>https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html</a>
+
+<br>
+
 
 <h1 style='background-color: #CDE8EF'> Iris 데이터 세트</h1>
 

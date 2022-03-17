@@ -27,16 +27,16 @@ author_profile: false
       font-weight: bold;
       padding: 8px;
     }
-
+    
     table.dataframe td {
       text-align: center;
       padding: 8px;
     }
-
+    
     table.dataframe tr:hover {
       background: #b8d1f3; 
     }
-
+    
     .output_prompt {
       overflow: auto;
       font-size: 0.9rem;
@@ -78,8 +78,9 @@ author_profile: false
   </style>
 </head>
 
+원본 사이트: <a href='https://scikit-learn.org/stable/auto_examples/neighbors/plot_classification.html' target='blank'>https://scikit-learn.org/stable/auto_examples/neighbors/plot_classification.html</a>
 
-[scikit-learn 문서](https://scikit-learn.org/stable/auto_examples/neighbors/plot_classification.html)를 해석하고 정리하였음을 알립니다.
+<br>
 
 
 <h1 style='background-color: #CDE8EF'>최근접 이웃 분류</h1>

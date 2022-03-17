@@ -78,12 +78,12 @@ author_profile: false
   </style>
 </head>
 
+원본 사이트: <a href='https://scikit-learn.org/stable/tutorial/basic/tutorial.html' target='blank'>https://scikit-learn.org/stable/tutorial/basic/tutorial.html</a>
+
+<br>
+
 
 # <span style='background-color: #CDE8EF'>scikit-learn으로 배우는 머신러닝의 개요</span>
-
-
-
-<span style="color: red">이 문서는 https://scikit-learn.org/stable/tutorial/basic/tutorial.html 의 내용을 개인적으로 공부한 후 정리한 것임을 밝힙니다.</span>
 
 
 <div style='background-color: #EEEEEE'>이 문서는 scikit-learn의 전반에 걸쳐 <a href='https://en.wikipedia.org/wiki/Machine_learning' target='blank'>머신러닝</a>의 용어를 소개하고 학습의 예시를 제공합니다.</div>
