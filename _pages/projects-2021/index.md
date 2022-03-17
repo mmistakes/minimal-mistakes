@@ -6,10 +6,12 @@ layout: single
 author_profile: false
 
 ---
-<!---
-To register, fill this form latest by 27th March, 11:59 PM - [here](https://forms.gle/GhxVtSKegc2FhMvk8)
--->
-Join the Stamatics discord server to interact with the mentors and for any other communication- [invite link](https://discord.gg/A6VuSzRfZd)
+-
+To register, fill the form latest by 21st March, 11:59 PM [here](https://forms.gle/gKrs8VKhVo8xcyAw7)
+
+Join the Stamatics discord server to interact with the mentors and for any other communication: [invite link](https://discord.gg/yBUrhfcs)
+
+The recording of the projects introductory session can be found [here](https://youtu.be/vsM8uEKik_A)
 
 ## 1 - Quantum Algorithms 
 * **Project Area :** Linear algebra, Logical Thinking

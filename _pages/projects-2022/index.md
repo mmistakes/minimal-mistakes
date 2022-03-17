@@ -6,10 +6,12 @@ layout: single
 author_profile: false
 
 ---
-<!---
-To register, fill this form latest by 27th March, 11:59 PM - [here](https://forms.gle/GhxVtSKegc2FhMvk8)
--->
-Join the Stamatics discord server to interact with the mentors and for any other communication- [invite link](https://discord.gg/A6VuSzRfZd)
+-
+To register, fill the form latest by 21st March, 11:59 PM [here](https://forms.gle/gKrs8VKhVo8xcyAw7)
+
+Join the Stamatics discord server to interact with the mentors and for any other communication: [invite link](https://discord.gg/yBUrhfcs)
+
+The recording of the projects introductory session can be found [here](https://youtu.be/vsM8uEKik_A)
 
 ## 1 - Quantum Algorithms 
 * **Project Area :** Linear algebra, Logical Thinking
@@ -61,7 +63,7 @@ Join the Stamatics discord server to interact with the mentors and for any other
 <!--- * **Showcase :** [here](https://stamatics.github.io/projects-2022/statistical-analysis) 
 -->
 
-## 4 - Number Theory and Applications  
+## 4 - Number Theory and Applications
 * **Mentors :** Priya Gole (Priyaa#6917), Abhishek Shree (killBird#5626)
 * **Project Area :** Number Theory and Abstract Algebra
 * **Description :** This project aims to introduce the mentees to the basic concepts of number theory and abstract algebra.
