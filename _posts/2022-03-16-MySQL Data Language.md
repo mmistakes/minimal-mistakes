@@ -239,4 +239,5 @@ SELECT songs.title, songs.lyrics FROM songs WHERE songs.lyrics LIKE '%넘실넘�
 
 _DQL은 데이터를 출력할때 사용하는 명령어이다._
 
-**DQL의 JOIN문을 알고싶다면 아래링크 클릭** (두개의 테이블을 결합하여 출력해주는 명령문)
+**DQL의 JOIN문(두개의 테이블을 결합하여 출력해주는 명령문)을 알고싶다면 아래링크 클릭**
+https://devshon.github.io/sql/SQL-JOIN(DQL)/
