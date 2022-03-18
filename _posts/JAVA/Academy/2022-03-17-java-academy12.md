@@ -61,6 +61,13 @@ public class Product {
 	public Product() {
 		
 	}
+
+	public Product(String product_no, String name, int price) {
+		this.product_no = product_no;
+		this.name = name;
+		this.price = price;
+	}
+	
 	public String getProduct_no() {
 		return product_no;
 	}
