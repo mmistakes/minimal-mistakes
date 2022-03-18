@@ -1,1 +1,1 @@
-Are Your "Facts" Really True?
+Index page can be found at _pages/facts.md.
