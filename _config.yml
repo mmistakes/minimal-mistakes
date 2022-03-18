@@ -15,17 +15,17 @@
 minimal_mistakes_skin    : "air" # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+locale                   : "ko-KR"
+title                    : "Gibson's Blog"
+title_separator          : "|"
+subtitle                 : "작은 움직임"
 name                     : "Gibson"
-description              : "An basic website."
+description              : "Gibson의 작은 움직임입니다."
 url                      : "https://Gibson1211.github.io"
 baseurl                  : ""
 repository               : "Gibson1211/Gibson1211.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/gibson_logo_square.jpg" # path of logo image to display in the masthead, e.g.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Gibson Kim"
-  avatar           : "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/gibson_logo.jpg"
   bio              : "기억보단 기록을"
   location         : "South Korea"
   email            : "gmkim71@gmail.com"
@@ -290,6 +290,7 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
 
   # _pages
   - scope:
@@ -298,3 +299,5 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+date_format: "%Y-%m-%d"
