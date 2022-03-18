@@ -7,7 +7,7 @@ title : "캘린더 전체프로세스"
 1. 사용자가 캘린더 페이지 접속  
 2. JS에서 자동으로 오늘 날짜 보여주고 ajax로 오늘 날짜 컨트롤러에 전달
 3. DB에서 to_do, ini에서 오늘 날짜 조회 뒤 맞는 데이터 select
-4. 브라우저에 데이터가 보일 수 있게 데이터 전송  
+4. 브라우저에 데이터가 보일 수 있게 thymeleaf 출력   
 
 <br>
 
@@ -94,3 +94,5 @@ Map으로 리턴 타입 바꾸니까 안되서 다시 List<CalendarDTO>로 리�
 ![image](https://user-images.githubusercontent.com/86642180/158947763-05ceb15b-f343-43bc-9d71-54f7cd187b81.png)
   
 <br>
+
+# 4. 
