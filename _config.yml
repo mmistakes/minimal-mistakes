@@ -99,7 +99,7 @@ analytics:
   provider               : "google-gtag"  # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : "G-5XXMQN361N"
-    anonymize_ip         : # true, false (default)
+    anonymize_ip         : false (default)
 
 
 # Site Author
@@ -112,7 +112,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:gmkim71@gmail.com"
+      url: "mailto:gmkim71@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -124,7 +124,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/Gibson1211"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -140,7 +140,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/Gibson1211"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -269,6 +269,8 @@ tag_archive:
 #     tag: /tags/:name/
 
 
+
+
 # HTML Compression
 # - https://jch.penibelst.de/
 compress_html:
@@ -300,4 +302,4 @@ defaults:
       layout: single
       author_profile: true
 
-date_format: "%Y-%m-%d"
+#date_format: "%Y-%m-%d"
