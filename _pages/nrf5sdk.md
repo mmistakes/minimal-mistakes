@@ -28,6 +28,8 @@ toc_ads: true
 * [nRF5 SDK (4) - nRF52 시리즈 (SDK 17.0.2) Adv. 패킷 업데이트](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-adv-data-packet/)
 * [nRF5 SDK (5) - nRF52 시리즈 (SDK 17.0.2) MTU Throughput 예제](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-mtu_throughput-example/)
 * [nRF5 SDK (6) - nordic product 통합 개발환경: nRF Connect SDK](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-nrfconnectsdk/)
+* [nRF5 SDK (7) - 3.2 inch (ILI9341 SPI module) LCD 개발 <1>](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-ili9341/)
+* [nRF5 SDK (8) - 3.2 inch (ILI9341 SPI module) LCD 개발 <2>](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-ili9341-2/)
 
 <!---
 ## 포스팅 예정 항목
