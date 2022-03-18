@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Gibson1211.github.io/sitemap.xml
