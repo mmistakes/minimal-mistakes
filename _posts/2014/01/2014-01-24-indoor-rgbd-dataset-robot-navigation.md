@@ -25,7 +25,7 @@ The acquisition of the data was  supported by the Polish National Science Centre
 
 * [A short manual](http://fpga.cie.put.poznan.pl/PUT_RGBD_database/PUT_RGBD_database.pdf)
 * [trajectory_1](http://fpga.cie.put.poznan.pl/PUT_RGBD_database/trajectory_1.zip)
-* [trajectory_2]http://fpga.cie.put.poznan.pl/PUT_RGBD_database/trajectory_2.zip)
-* [trajectory_3]http://fpga.cie.put.poznan.pl/PUT_RGBD_database/trajectory_3.zip)
-* [trajectory_4]http://fpga.cie.put.poznan.pl/PUT_RGBD_database/trajectory_4.zip)
+* [trajectory_2](http://fpga.cie.put.poznan.pl/PUT_RGBD_database/trajectory_2.zip)
+* [trajectory_3](http://fpga.cie.put.poznan.pl/PUT_RGBD_database/trajectory_3.zip)
+* [trajectory_4](http://fpga.cie.put.poznan.pl/PUT_RGBD_database/trajectory_4.zip)
 * [The camera parameters](http://fpga.cie.put.poznan.pl/PUT_RGBD_database/camera_data.txt)
