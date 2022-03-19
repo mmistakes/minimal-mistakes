@@ -428,6 +428,7 @@ public class MemberServiceImpl implements MemberService {
     }
 }
 ```
+###### 상기 코드 중 이 부분(String savePath = "F:\\~~~~~")은 각자의 PC에 저장되는 폴더의 full 주소에  역슬래쉬(\\) 두개를 추가한 후 + memberFilename을 붙이는 형식으로 작성하면 된다. 
 
 ###### entity package 內 MemberEntity를 class 형식으로 생성한다.
 ![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/MemberEntity.JPG?raw=true)
