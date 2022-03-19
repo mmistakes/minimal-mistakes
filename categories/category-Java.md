@@ -1,7 +1,7 @@
 ---
-title: 'DataStructure'
-layout: archive
-permalink: categories/DataStructure
+title: 'Java'
+layout: category
+permalink: categories/CodeUp
 author_profile: true
 sidebar_main: true
 ---
