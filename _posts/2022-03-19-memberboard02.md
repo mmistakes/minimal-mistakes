@@ -150,7 +150,7 @@ spring:
 ###### 회원가입 폼을 아래와 같이 구성해본다.(비밀번호 재입력 확인란과 Email 중북여부 기능을 포함한다.)
 ![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberSaveForm.JPG?raw=true)
 
-###### 위의 폼에 맞게 tempalate 밑 member 폴더 밑에 save.html을 만들어준다.
+###### 위의 폼에 맞게 template 밑 member 폴더 밑에 save.html을 만들어준다.
 ###### save.html
 ```html
 <!DOCTYPE html>
