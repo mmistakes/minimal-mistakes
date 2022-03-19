@@ -427,3 +427,66 @@ public class MemberServiceImpl implements MemberService {
 ```
 
 ###### entity package 內 MemberEntity를 class 형식으로 생성한다.
+![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/MemberEntity.JPG?raw=true)
+
+###### MemberEntity를 작성해준다.
+```java 
+package com.ex.test01.entity;
+
+import com.ex.test01.dto.MemberSaveDTO;
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.*;
+import java.sql.Date;
+
+
+@Entity
+@Getter
+@Setter
+@Table(name = "member_table")
+public class MemberEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="member_id")
+    private Long memberId;
+
+    @Column
+    private String memberName;
+
+    @Column
+    private String memberPw;
+
+    @Column
+    private String memberEmail;
+
+    @Column
+    private String memberAddr;
+
+    @Column
+    private String memberPhone;
+
+    @Column
+    private Date memberDate;
+
+    @Column
+    private String memberFilename;
+
+    public static MemberEntity saveMember(MemberSaveDTO memberSaveDTO) {
+        MemberEntity memberEntity = new MemberEntity();
+        memberEntity.setMemberName(memberSaveDTO.getMemberName());
+        memberEntity.setMemberPw(memberSaveDTO.getMemberPw());
+        memberEntity.setMemberEmail(memberSaveDTO.getMemberEmail());
+        memberEntity.setMemberAddr(memberSaveDTO.getMemberAddr());
+        memberEntity.setMemberPhone(memberSaveDTO.getMemberPhone());
+        memberEntity.setMemberDate(memberSaveDTO.getMemberDate());
+        memberEntity.setMemberFilename(memberSaveDTO.getMemberFilename());
+        return memberEntity;
+    }
+
+}
+
+```
+
+###### repository package 內 MemberRepository를 interface형식으로 생성한다.
