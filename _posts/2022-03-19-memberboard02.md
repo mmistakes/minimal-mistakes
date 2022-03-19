@@ -67,7 +67,23 @@ dependencies {
 ```
 
 ###### 패키지를 아래와 같이 모두 생성해준다.(dto, service, entity, repository)
-<img src="C:\Gibson1211.github.io\assets\images\002_001_projectStructure.JPG"> 
+![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/002_001_projectStructure.JPG?raw=true)
 
-######
+###### index 페이지를 아래와 같이 작성한다.
+```html
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index.html</title>
+</head>
+<body>
+
+  <div th:align="center">
+      <h2>index.html</h2><br><br>
+      <a href="member/save">회원가입</a><br><br>
+
+</body>
+</html>
+```
 
