@@ -69,6 +69,19 @@ dependencies {
 ###### 패키지를 아래와 같이 모두 생성해준다.(dto, service, entity, repository)
 ![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/002_001_projectStructure.JPG?raw=true)
 
+
+## DB 설정
+###### Mysql에 db와 user, 비밀번호를 생성하고 관련 권한을 부여한다.
+
+```sql
+create database 디비이름;
+create user 사용할 아이디@localhost identified by '사용할 비밀번호';
+grant all privileges on 디비이름.* to 사용할 아이디@localhost;
+```
+
+
+
+# 회원가입
 ###### index 페이지를 아래와 같이 작성한다.
 ```html
 <!DOCTYPE html>
@@ -86,4 +99,35 @@ dependencies {
 </body>
 </html>
 ```
+###### 화면에 회원가입 링크가 생성되었다.
+![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberSave.JPG?raw=true)
 
+###### controller 내 MemberController를 생성한 후 아래와 같이 작성한다.
+```java
+package com.ex.test01.controller;
+
+import com.ex.test01.dto.*;
+import com.ex.test01.service.MemberService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
+
+
+@Controller
+@RequiredArgsConstructor
+@RequestMapping("/member")
+public class MemberController {
+
+    private final MemberService ms;
+
+    // 회원가입 화면 보여주기
+    @GetMapping("/save")
+    public String saveForm(Model model) {
+        model.addAttribute("member", new MemberSaveDTO());
+        return "member/save";
+    }
+    
+  }
+```
