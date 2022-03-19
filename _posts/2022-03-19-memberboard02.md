@@ -386,7 +386,7 @@ public class MemberSaveDTO {
 package com.ex.test01.service;
 
 import com.ex.test01.dto.*;
-import org.springframework.stereotype.Service;
+import java.io.IOException;
 
 
 public interface MemberService {
