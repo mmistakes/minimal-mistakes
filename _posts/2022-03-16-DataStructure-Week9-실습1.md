@@ -1,13 +1,13 @@
 ---
 published: true
-title: "2022-03-16-DataStructure-Week9-실습1"
+title: '2022-03-16-DataStructure-Week9-실습1'
 categories:
   - DataStructure
 tags:
   - DataStructure
 toc: true
 toc_sticky: true
-toc_label: "DataStructure"
+toc_label: 'DataStructure'
 ---
 
 # BST
@@ -22,7 +22,7 @@ toc_label: "DataStructure"
 
 > **자료구조 및 함수 구성**
 
-```C++
+```C
 typedef struct node *tree_pointer;
 typedef struct node{
 	int key;
@@ -55,7 +55,7 @@ tree_pointer root;
 
 - 실습1.h
 
-```C++
+```C
 #pragma once
 typedef struct tree_node* tree_pointer;
 typedef struct tree_node {
@@ -75,7 +75,7 @@ void bst_show_inorder(tree_pointer ptr);
 
 - 실습1.cpp
 
-```C++
+```C
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>

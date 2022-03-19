@@ -1,13 +1,13 @@
 ---
 published: true
-title: "2022-03-13-DataStructure-Week4-실습2"
+title: '2022-03-13-DataStructure-Week4-실습2'
 categories:
   - DataStructure
 tags:
   - DataStructure
 toc: true
 toc_sticky: true
-toc_label: "DataStructure"
+toc_label: 'DataStructure'
 ---
 
 # postfix evaluation
@@ -25,7 +25,7 @@ toc_label: "DataStructure"
 
 -
 
-```C++
+```C
 int stack[MAX_SIZE];
 int top = -1;
 ```
@@ -41,7 +41,7 @@ int top = -1;
 
 - 실습2.h
 
-```C++
+```C
 #pragma once
 #define MAX_SIZE 100
 #define boolean unsigned char
@@ -61,7 +61,7 @@ int is_op(char c);
 
 - 실습2.cpp
 
-```C++
+```C
 #include<stdio.h>
 #include<stdlib.h>
 #include<ctype.h>

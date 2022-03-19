@@ -1,13 +1,13 @@
 ---
 published: true
-title: "2022-03-16-DataStructure-Week13-실습1"
+title: '2022-03-16-DataStructure-Week13-실습1'
 categories:
   - DataStructure
 tags:
   - DataStructure
 toc: true
 toc_sticky: true
-toc_label: "DataStructure"
+toc_label: 'DataStructure'
 ---
 
 # Sorting
@@ -46,7 +46,7 @@ toc_label: "DataStructure"
 
 - 실습1.h
 
-```C++
+```C
 #pragma once
 #define MAX_SIZE 10
 #define boolean unsigned char
@@ -67,7 +67,7 @@ void print_list(int list[], int left, int right);
 
 - 실습1.cpp
 
-```C++
+```C
 #include<stdio.h>
 #include"실습1.h"
 

@@ -1,13 +1,13 @@
 ---
 published: true
-title: "2022-03-13-DataStructure-Week6-실습2"
+title: '2022-03-13-DataStructure-Week6-실습2'
 categories:
   - DataStructure
 tags:
   - DataStructure
 toc: true
 toc_sticky: true
-toc_label: "DataStructure"
+toc_label: 'DataStructure'
 ---
 
 # Queue_simulation
@@ -16,7 +16,7 @@ toc_label: "DataStructure"
   Linked Queue 로 프린터 큐 구현
 - 시뮬레이션 방식  
    current_time 을 증가시키면서 매 시각 가상의 프린트 job 을 처리
-  ```C++
+  ```C
   while(current_time < MAX_SIMUL_TIME) {
   	... ++current_time;
   }
@@ -53,7 +53,7 @@ toc_label: "DataStructure"
 
 - Job
 
-```C++
+```C
 typedef struct {
 	int id;	// Job 의 ID
 	int arrival_time;	// Job 이 요청된 도착한 ) 시간
@@ -91,7 +91,7 @@ typedef struct {
 
 - 실습2.h
 
-```C++
+```C
 #pragma once
 //시뮬레이션 설정 상수
 #define MAX_SIMUL_TIME 20		//시뮬레이션 진행 시간
@@ -147,7 +147,7 @@ void queue_show();	//현재 큐에 있는 job의 id들을 프린트
 
 - 실습2.cpp
 
-```C++
+```C
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>

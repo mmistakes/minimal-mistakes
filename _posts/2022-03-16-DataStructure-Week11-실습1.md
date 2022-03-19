@@ -1,13 +1,13 @@
 ---
 published: true
-title: "2022-03-16-DataStructure-Week11-실습1"
+title: '2022-03-16-DataStructure-Week11-실습1'
 categories:
   - DataStructure
 tags:
   - DataStructure
 toc: true
 toc_sticky: true
-toc_label: "DataStructure"
+toc_label: 'DataStructure'
 ---
 
 # adj_list
@@ -20,7 +20,7 @@ toc_label: "DataStructure"
 
 > **자료구조 및 함수 구성**
 
-```C++
+```C
 typedef struct node *node_pointer;
 typedef struct node {
 	int vertex;
@@ -63,7 +63,7 @@ node_pointer adj[MAX_VERTICES];
 
 - 실습1.h
 
-```C++
+```C
 #pragma once
 #define boolean unsigned char
 #define MAX_VERTICES 100
@@ -99,7 +99,7 @@ boolean is_queue_empty();
 
 - 실습1.cpp
 
-```C++
+```C
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>

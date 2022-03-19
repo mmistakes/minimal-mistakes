@@ -1,13 +1,13 @@
 ---
 published: true
-title: "2022-03-13-DataStructure-Week3-실습2"
+title: '2022-03-13-DataStructure-Week3-실습2'
 categories:
   - DataStructure
 tags:
   - DataStructure
 toc: true
 toc_sticky: true
-toc_label: "DataStructure"
+toc_label: 'DataStructure'
 ---
 
 # Matrix
@@ -27,7 +27,7 @@ toc_label: "DataStructure"
 
 -
 
-```C++
+```C
 int a[ROW][COL]={ {1,0,0},{1,0,0},{1,0,0} };
 int b[ROW][COL]={ {1,1,1},{0,0,0},{0,0,0} };
 ```
@@ -51,7 +51,7 @@ int b[ROW][COL]={ {1,1,1},{0,0,0},{0,0,0} };
 
 - 실습2.h
 
-```C++
+```C
 #pragma once
 #define ROW 3
 #define COL 3
@@ -65,7 +65,7 @@ void matrix_print(int a[ROW][COL]);
 
 - 실습2.cpp
 
-```C++
+```C
 #include <stdio.h>
 #include "실습2.h"
 

@@ -1,13 +1,13 @@
 ---
 published: true
-title: "2022-03-16-DataStructure-Week10-실습2"
+title: '2022-03-16-DataStructure-Week10-실습2'
 categories:
   - DataStructure
 tags:
   - DataStructure
 toc: true
 toc_sticky: true
-toc_label: "DataStructure"
+toc_label: 'DataStructure'
 ---
 
 # priority_queue_simulation
@@ -18,7 +18,7 @@ toc_label: "DataStructure"
 
 > **자료구조 및 함수 구성**
 
-```C++
+```C
 typedef struct {
 int key;	// Priority queue 의 키 값(duration)
 ...
@@ -51,7 +51,7 @@ int PQ_size = 0;
 
 - 실습2.h
 
-```C++
+```C
 #pragma once
 #define MAX_SIMUL_TIME 20
 #define MAX_PRINTING_TIME 10
@@ -98,7 +98,7 @@ boolean is_PQ_empty();
 
 - 실습2.cpp
 
-```C++
+```C
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>

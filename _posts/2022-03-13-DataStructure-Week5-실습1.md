@@ -1,13 +1,13 @@
 ---
 published: true
-title: "2022-03-13-DataStructure-Week5-실습1"
+title: '2022-03-13-DataStructure-Week5-실습1'
 categories:
   - DataStructure
 tags:
   - DataStructure
 toc: true
 toc_sticky: true
-toc_label: "DataStructure"
+toc_label: 'DataStructure'
 ---
 
 # Array Queue 구현
@@ -40,7 +40,7 @@ toc_label: "DataStructure"
 
 - 실습1.h
 
-```C++
+```C
 #pragma once
 #define MAX_SIZE 10
 #define boolean unsigned char
@@ -60,7 +60,7 @@ void queue_show();
 
 - 실습1.cpp
 
-```C++
+```C
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>

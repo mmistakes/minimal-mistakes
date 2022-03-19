@@ -1,13 +1,13 @@
 ---
 published: true
-title: "2022-03-16-DataStructure-Week7-실습1"
+title: '2022-03-16-DataStructure-Week7-실습1'
 categories:
   - DataStructure
 tags:
   - DataStructure
 toc: true
 toc_sticky: true
-toc_label: "DataStructure"
+toc_label: 'DataStructure'
 ---
 
 # binary_tree 구현
@@ -23,7 +23,7 @@ toc_label: "DataStructure"
 
 > **자료구조 및 함수 구성**
 
-```C++
+```C
 typedef struct node *tree_pointer;
 typedef struct node{
 	Element data;
@@ -64,7 +64,7 @@ typedef struct node{
 
 - 실습1.h
 
-```C++
+```C
 #pragma once
 #define boolean unsigned char
 #define true 1
@@ -90,7 +90,7 @@ int max(int i, int, j);
 
 - 실습1.cpp
 
-```C++
+```C
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>

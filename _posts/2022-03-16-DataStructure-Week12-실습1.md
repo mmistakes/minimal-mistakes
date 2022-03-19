@@ -1,13 +1,13 @@
 ---
 published: true
-title: "2022-03-16-DataStructure-Week12-실습1"
+title: '2022-03-16-DataStructure-Week12-실습1'
 categories:
   - DataStructure
 tags:
   - DataStructure
 toc: true
 toc_sticky: true
-toc_label: "DataStructure"
+toc_label: 'DataStructure'
 ---
 
 # hash_dictionary
@@ -26,7 +26,7 @@ toc_label: "DataStructure"
 
 > **자료구조 및 함수 구성**
 
-```C++
+```C
 typedef struct {
 	char key[100];
 	char data[100];
@@ -56,7 +56,7 @@ element hash_table[TABLE_SIZE];
 
 - 실습1.h
 
-```C++
+```C
 #pragma once
 #define TABLE_SIZE 13
 #define boolean unsigned char
@@ -81,7 +81,7 @@ int transform(char* key);
 
 - 실습1.cpp
 
-```C++
+```C
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>

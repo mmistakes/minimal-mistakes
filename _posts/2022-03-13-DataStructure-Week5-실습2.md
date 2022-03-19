@@ -1,13 +1,13 @@
 ---
 published: true
-title: "2022-03-13-DataStructure-Week5-실습2"
+title: '2022-03-13-DataStructure-Week5-실습2'
 categories:
   - DataStructure
 tags:
   - DataStructure
 toc: true
 toc_sticky: true
-toc_label: "DataStructure"
+toc_label: 'DataStructure'
 ---
 
 # linked_list
@@ -45,7 +45,7 @@ toc_label: "DataStructure"
 
 - 실습2.h
 
-```C++
+```C
 #pragma once
 #define Element char
 #define bool unsigned char
@@ -67,7 +67,7 @@ void list_show(list_pointer head);
 
 - 실습2.cpp
 
-```C++
+```C
 #include<stdio.h>
 #include<conio.h>
 #include<ctype.h>

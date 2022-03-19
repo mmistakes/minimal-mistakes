@@ -1,13 +1,13 @@
 ---
 published: true
-title: "2022-03-13-DataStructure-Week2-실습1"
+title: '2022-03-13-DataStructure-Week2-실습1'
 categories:
   - DataStructure
 tags:
   - DataStructure
 toc: true
 toc_sticky: true
-toc_label: "DataStructure"
+toc_label: 'DataStructure'
 ---
 
 # 학생 성적 관리
@@ -30,7 +30,7 @@ toc_label: "DataStructure"
 
 ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80%EC%8B%A4%EC%8A%B5-2%EC%9E%A5-%EC%8B%A4%EC%8A%B51-4.png?raw=true)
 
-```C++
+```C
 typedef struct {
 	char name[10];
 	int id;
@@ -62,7 +62,7 @@ typedef struct {
 
 - 실습1.h
 
-```C++
+```C
 #pragma once
 #define MAX 100
 
@@ -85,7 +85,7 @@ void write_record(const char* fname);
 
 - 실습1.cpp
 
-```C++
+```C
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>

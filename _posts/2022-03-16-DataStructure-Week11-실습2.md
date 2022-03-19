@@ -1,13 +1,13 @@
 ---
 published: true
-title: "2022-03-16-DataStructure-Week11-실습2"
+title: '2022-03-16-DataStructure-Week11-실습2'
 categories:
   - DataStructure
 tags:
   - DataStructure
 toc: true
 toc_sticky: true
-toc_label: "DataStructure"
+toc_label: 'DataStructure'
 ---
 
 # adj_matrix
@@ -20,7 +20,7 @@ toc_label: "DataStructure"
 
 > **자료구조 및 함수 구성**
 
-```C++
+```C
 // Adjacency matrix for a graph
 int adj[MAX_VERTICES][MAX_VERTICES];
 ```
@@ -56,7 +56,7 @@ int adj[MAX_VERTICES][MAX_VERTICES];
 
 - 실습2.h
 
-```C++
+```C
 #pragma once
 #define MAX_VERTICES 100
 #define boolean unsigned char
@@ -86,7 +86,7 @@ boolean is_queue_empty();
 
 - 실습2.cpp
 
-```C++
+```C
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>

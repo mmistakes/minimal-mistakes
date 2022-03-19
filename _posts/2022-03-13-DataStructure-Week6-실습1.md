@@ -1,13 +1,13 @@
 ---
 published: true
-title: "2022-03-13-DataStructure-Week6-실습1"
+title: '2022-03-13-DataStructure-Week6-실습1'
 categories:
   - DataStructure
 tags:
   - DataStructure
 toc: true
 toc_sticky: true
-toc_label: "DataStructure"
+toc_label: 'DataStructure'
 ---
 
 # Linked_Queue 구현
@@ -25,7 +25,7 @@ toc_label: "DataStructure"
 
 > **자료구조 및 함수 구성**
 
-```C++
+```C
 typedef struct queue queue_pointer;
 typedef struct queue {
 	Element item;
@@ -51,7 +51,7 @@ queue_pointer front, rear;
 
 - 실습1.h
 
-```C++
+```C
 #pragma once
 #define boolean unsigned char
 #define true 1
@@ -73,7 +73,7 @@ boolean is_queue_empty();
 
 - 실습1.cpp
 
-```C++
+```C
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
