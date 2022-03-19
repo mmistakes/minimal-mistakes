@@ -296,7 +296,7 @@ public class MemberController {
     
   }
 ```
-###### @RequestMapping는 /member의 주소로 오는 모든 요청(get, post, put, update, delete등)을 받아줄 수 있는 어노테이션으로 이 이후 컨트롤러에서 작성되어지는 브라우저 주소에서 member 하단의 주소만 기입하면 된다. 
+###### @RequestMapping는 /member의 주소로 오는 모든 요청(get, post, put, update, delete등)을 받아줄 수 있는 어노테이션으로 이 이후 컨트롤러에서 작성되어지는 브라우저 주소 부분(만일 작성해야 할 주소가  "/member/save"라면)은  member를 생략한 하단의 주소("/save")만 기입하면 된다. 
 ###### Templates  폴더 내  member 폴더를 만든 후 save.html을 만든다.
 
 ###### dto 패키지 內 MemberSaveDTO를 class형식으로 만들어준다.
