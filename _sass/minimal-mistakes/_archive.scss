@@ -26,7 +26,7 @@
     z-index: 10;
   }
 
-  a[rel='permalink'] {
+  a[rel="permalink"] {
     position: static;
   }
 }
@@ -45,12 +45,12 @@
 
 .archive__item-title {
   margin-bottom: 0.25em;
-  font-family: Cafe24Oneprettynight;
+  font-family: $sans-serif-narrow;
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
 
-  a[rel='permalink']::before {
+  a[rel="permalink"]::before {
     content: '';
     position: absolute;
     left: 0;
@@ -442,7 +442,7 @@
    Wide Pages
    ========================================================================== */
 
-.wide {
+  .wide {
   .archive {
     @include breakpoint($large) {
       padding-right: 0;
@@ -457,7 +457,7 @@
 /* Place inside a single layout */
 
 .layout--single {
-  .feature__wrapper {
-    display: inline-block;
-  }
+	.feature__wrapper {
+		display: inline-block;
+	}
 }
