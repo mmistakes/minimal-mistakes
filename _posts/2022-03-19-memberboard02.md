@@ -374,6 +374,56 @@ public class MemberSaveDTO {
 ```
 
 ###### service package 內 MemberService를 interface 형식으로 만들어준다.
+![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/MemberServiceInterface.JPG?raw=true)
+###### service package 內 MemberServiceImpl을 class 형식으로 만들어준다.
+![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/MemberServiceImpl.JPG?raw=true)
+
+###### MemberService에 코드를 추가해준다.
+```java
+package com.ex.test01.service;
+
+import com.ex.test01.dto.*;
+import org.springframework.stereotype.Service;
 
 
+public interface MemberService {
+    Long save(MemberSaveDTO memberSaveDTO) throws IOException; 
+}
+```
+###### MemberServiceImpl에 코드를 추가해준다.
+```java 
+package com.ex.test01.service;
+import com.ex.test01.dto.*;
+import com.ex.test01.entity.MemberEntity;
+import com.ex.test01.repository.MemberRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
+
+@Service
+@RequiredArgsConstructor
+public class MemberServiceImpl implements MemberService {
+
+    private final MemberRepository mr;
+
+    // 회원 가입 저장
+    @Override
+    public Long save(MemberSaveDTO memberSaveDTO) throws IOException {
+        MultipartFile memberFile = memberSaveDTO.getMemberFile();
+        String memberFilename = memberFile.getOriginalFilename();
+        memberFilename = System.currentTimeMillis() + "-" + memberFilename;
+        String savePath = "F:\\Development_F\\source\\springboot\\test01\\src\\main\\resources\\templates\\img\\" + memberFilename;
+        if (!memberFile.isEmpty()) {
+            memberFile.transferTo(new File(savePath));
+        }
+        memberSaveDTO.setMemberFilename(memberFilename);
+        MemberEntity memberEntity = MemberEntity.saveMember(memberSaveDTO);
+        System.out.println("MemberServiceImpl.save");
+        return mr.save(memberEntity).getMemberId();
+    }
+}
+```
+
+###### entity package 內 MemberEntity를 class 형식으로 생성한다.
