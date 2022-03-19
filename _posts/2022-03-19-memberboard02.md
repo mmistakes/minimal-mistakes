@@ -299,7 +299,10 @@ public class MemberController {
 ###### @RequestMapping는 /member의 주소로 오는 모든 요청(get, post, put, update, delete등)을 받아줄 수 있는 어노테이션으로 이 이후 컨트롤러에서 작성되어지는 브라우저 주소에서 member 하단의 주소만 기입하면 된다. 
 ###### Templates  폴더 내  member 폴더를 만든 후 save.html을 만든다.
 
-###### dto 패키지 內 MemberSaveDTO를 만들어준다.
+###### dto 패키지 內 MemberSaveDTO를 class형식으로 만들어준다.
+![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/MemberSaveDTO.JPG?raw=true)
+
+###### MemberSaveDTO에 코드를 작성해준다.
 ```java
 package com.ex.test01.dto;
 
