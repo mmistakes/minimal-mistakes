@@ -505,3 +505,6 @@ public interface MemberRepository extends JpaRepository<MemberEntity, Long> {
 ```
 
 ###### 여기까지 작성 완료 후 서버를 가동한 후 회원가입을 실제 진행해본다. mysql db에서 select * from member_table;로 가입한 회원정보가 정상적으로 들어왔다면 회원가입은 정상적으로 이뤄진 것이다.
+![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/MemberSaveDB.JPG?raw=true)
+
+### 회원가입 끝
