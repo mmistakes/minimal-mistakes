@@ -71,7 +71,7 @@ dependencies {
 
 
 ## DB 설정
-###### Mysql에 db와 user, 비밀번호를 생성하고 관련 권한을 부여한다.
+###### Mysql에 db와 user, 비밀번호를 생성하고 관련 권한을 부여한다.(Ctrl+Enter)
 ![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlRoot.JPG?raw=true)
 <br><br>
 ![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlRootConnection.JPG?raw=true)
@@ -84,7 +84,11 @@ create user 사용할 아이디@localhost identified by '사용할 비밀번호'
 grant all privileges on 디비이름.* to 사용할 아이디@localhost;
 ```
 <br><br>
-![]()
+![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlTest01connection.JPG?raw=true)
+###### test01 커넥션을 열고 아래와 같이 입력 후 Ctrl + Enter를 눌러준다.
+```sql
+use test01;
+```
 
 
 # 회원가입
