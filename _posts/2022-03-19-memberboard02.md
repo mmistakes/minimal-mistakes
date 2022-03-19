@@ -431,7 +431,7 @@ public class MemberServiceImpl implements MemberService {
 
 ###### entity package 內 MemberEntity를 class 형식으로 생성한다.
 ![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/MemberEntity.JPG?raw=true)
-
+<br>
 ###### MemberEntity를 작성해준다.
 ```java 
 package com.ex.test01.entity;
