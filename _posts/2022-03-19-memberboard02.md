@@ -72,13 +72,19 @@ dependencies {
 
 ## DB 설정
 ###### Mysql에 db와 user, 비밀번호를 생성하고 관련 권한을 부여한다.
-
+![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlRoot.JPG?raw=true)
+<br><br>
+![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlRootConnection.JPG?raw=true)
+<br><br>
+![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlRootConnectionTest.JPG?raw=true)
+<br><br>
 ```sql
 create database 디비이름;
 create user 사용할 아이디@localhost identified by '사용할 비밀번호';
 grant all privileges on 디비이름.* to 사용할 아이디@localhost;
 ```
-
+<br><br>
+![]()
 
 
 # 회원가입
