@@ -493,7 +493,7 @@ public class MemberEntity {
 ```
 
 ###### repository package 內 MemberRepository를 interface형식으로 생성한다.
-![]https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/MemberEntity.JPG?raw=true)
+![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/MemberEntity.JPG?raw=true)
 
 ###### MemberRepository에 코드를 작성한다.
 ``` java 
