@@ -51,7 +51,7 @@
   h5,
   h6 {
     margin-bottom: 0;
-    font-family: $sans-serif-narrow;
+    font-family: Cafe24Oneprettynight;
   }
 
   p,
@@ -267,7 +267,7 @@
 
   &:before {
     display: block;
-    content: "";
+    content: '';
     position: absolute;
     top: -11px;
     left: calc(50% - 10px);
@@ -284,7 +284,7 @@
 
   &:after {
     display: block;
-    content: "";
+    content: '';
     position: absolute;
     top: -10px;
     left: calc(50% - 10px);
@@ -350,4 +350,3 @@
     margin-right: initial;
   }
 }
-
