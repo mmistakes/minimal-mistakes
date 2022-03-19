@@ -32,7 +32,7 @@ search: true
 ![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F52794626-56d2-403a-b5d3-256d6b8f42cd%2FUntitled.png?table=block&id=5a3a6053-9fcf-4d05-a205-523f17d00ef5&spaceId=7cb441ef-e066-4225-8a36-74fcd90a280b&width=2000&userId=2263adcd-10f2-4a60-bb39-3b4fa73b1b68&cache=v2)
 <br>
 ###### 프로젝트 부분을 펼쳐보면 Main Method를 확인할 수 있다.
-![](/assets/images/mainmethod.jpg)
+![](/assets/images/mainmethod.png)
 
 <br>
 ###### resource  폴더는 static과 template로 구성되어 있다. static은 정적자원이며 css, javascript, image 파일 등 변경이 이뤄지지 않는 것들을 정적자원이라고 한다. template은 화면용 파일로 html 파일이 들어간다. spring의 views폴더와 기능이 유사하다.
