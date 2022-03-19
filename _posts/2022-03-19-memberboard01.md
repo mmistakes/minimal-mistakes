@@ -166,3 +166,5 @@ public class MainController {
 
 ###### 위와 같이 Hello World가 뜨면 정상적으로 작동한 것이다. 또한 콘솔창에서도 아래와 같이  찍혔는지도 확인해본다.
 ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/06f184d0-fe2d-4e23-839e-3f3e1f081365/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220319%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220319T095742Z&X-Amz-Expires=86400&X-Amz-Signature=36d9dc95f5688539a937ff99726e115be229e7b2c1c14edbceaf457719a2cc76&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+
+### index 페이지를 띄우는 방법 완료!!
