@@ -66,9 +66,6 @@ dependencies {
     }
 ```
 
-###### 패키지를 아래와 같이 모두 생성해준다.(dto, service, entity, repository)
-![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/002_001_projectStructure.JPG?raw=true)
-
 
 ## DB 설정
 ###### Mysql에 db와 user, 비밀번호를 생성하고 관련 권한을 부여한다.(Ctrl+Enter)
@@ -89,9 +86,47 @@ grant all privileges on 디비이름.* to 사용할 아이디@localhost;
 ```sql
 use test01;
 ```
+###### 정상적으로 db 사용이 가능함을 확인한다.
+![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlTest01UseDb.JPG?raw=true)
+<br><br>
+
+###### application.yml 파일을 열어 DB 접속 추가정보를 작성해준다.
+```yaml
+# 서버포트, DB 연결정보
+server:
+  port: 8096
+  #포트번호는 각자 세팅이 다르기 때문에 꼭 확인해보세요.
+
+#DB 접속 정보
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test01?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: 디비아이디
+    password: 디비비밀번호
+  thymeleaf:
+    cache: false
+    
+  #JPA 관련 설정(Spring에 속해있는 설정으로 맨 앞칸에서 쓰면 안되고 위의 datasource와 같은 수준의 칸에서 써야 함.
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+#     위의 ddl-auto: create은 시작할때 마다 다시 시작하는 의미
+#     DB에 데이터를 한번 만든 경우 create을 update로 변경하여 사용
+#		  데이터를 계속 추가하고자 하는 경우 update라는 명령어로 코딩
+#      ddl: data definition language
+#      Entity를 수정하는 경우에는  create으로 db를 다시 시작하는게 좋음
+```
+<br><br>
+###### 패키지를 아래와 같이 모두 생성해준다.(dto, service, entity, repository)
+![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/002_001_projectStructure.JPG?raw=true)
 
 
+<br><br><br>
 # 회원가입
+
 ###### index 페이지를 아래와 같이 작성한다.
 ```html
 <!DOCTYPE html>
@@ -109,6 +144,13 @@ use test01;
 </body>
 </html>
 ```
+###### 회원가입 폼을 아래와 같이 구성해본다.(비밀번호 재입력 확인란과 Email 중북여부 기능을 포함한다.)
+![]()
+
+
+
+
+
 ###### 화면에 회원가입 링크가 생성되었다.
 ![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberSave.JPG?raw=true)
 
@@ -140,4 +182,120 @@ public class MemberController {
     }
     
   }
+```
+###### @RequestMapping는 /member의 주소로 오는 모든 요청(get, post, put, update, delete등)을 받아줄 수 있는 어노테이션으로 이 이후 컨트롤러에서 작성되어지는 브라우저 주소에서 member 하단의 주소만 기입하면 된다. 
+###### Templates  폴더 내  member 폴더를 만든 후 save.html을 만든다.
+
+###### save.html
+```html
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:font-size="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>save.html</title>
+
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+  <style>
+    .field-error {
+      color:red;
+    }
+  </style>
+
+  <script>
+    /* 아이디 입력을 하는 동안에 idDuplicate() 함수를 호출하고 입력된 값을 콘솔에 출력 */
+    function emailDp() {
+      const id = document.getElementById('memberEmail').value;
+      console.log(id);
+      const checkResult = document.getElementById('emailCheck');
+      $.ajax({
+        type: 'post', // 전송방식(get, post, put 등)
+        url: '/member/emailDp', // 요청주소(controller로 요청하는 주소)
+        data: {'memberEmail': id},  // 전송할 데이터
+        dataType: 'text', // 요청 후 리턴받을 때의 데이터 형식
+        success: function (result) { // 요청이 성공적으로 처리됐을때 실행 할 함수
+          console.log('ajax 성공');
+          console.log(result); // MemberController에서 넘어온 result값 찍어보기(ok or no)
+          if (result == "ok") {
+            checkResult.style.color = 'green';
+            checkResult.innerHTML = '멋진 아이디네요!!';
+          } else {
+            checkResult.style.color = 'red';
+            checkResult.innerHTML = '이미 사용중인 아이디입니다.';
+          }
+        },
+        error: function () { // 요청이 실패했을때 실행 할 함수
+          console.log('오타 찾으세요.');
+        }
+      });
+    }
+  </script>
+
+  <script type="text/javascript">
+    $(function(){
+      $("#alert-success").hide();
+      $("#alert-danger").hide();
+      $("input").keyup(function(){
+        var pwd1=$("#pwd1").val();
+        var pwd2=$("#pwd2").val();
+        if(pwd1 != "" || pwd2 != ""){
+          if(pwd1 == pwd2){
+            $("#alert-success").show();
+            $("#alert-danger").hide();
+            $("#submit").removeAttr("disabled");
+          }else{
+            $("#alert-success").hide();
+            $("#alert-danger").show();
+            $("#submit").attr("disabled", "disabled");
+          }
+        }
+      });
+    });
+  </script>
+
+</head>
+<body>
+<div th:align="center">
+  <span style=" font-size:1.5em; color: black;" th:align="center" >회원 가입</span><br><br>
+  <form action="/member/save" method="post" enctype="multipart/form-data" th:object="${member}">
+    <div th:if="${#fields.hasGlobalErrors()}">
+      <p class="field-error" th:each="err: ${#fields.globalErrors()}" th:text="${err}">글로벌오류</p>
+    </div>
+    이름<br>
+    <input type="text" th:field="*{memberName}"   placeholder="이름: 2~50자로 입력해주세요">
+    <p th:if="${#fields.hasErrors('memberName')}" th:errors="*{memberName}" th:errorclass="field-error"></p><br><br>
+
+    비밀번호<br>
+    <input type="password" th:field="*{memberPw}" id="pwd1" placeholder="비밀번호: 5~20자로 입력해주세요." required>
+    <p th:if="${#fields.hasErrors('memberPw')}" th:errors="*{memberPw}" th:errorclass="field-error"></p><br>
+    비밀번호 확인<br>
+    <input type="password" id="pwd2" placeholder="비밀번호 확인: 비밀번호를 다시 입력해주세요." required><br><br>
+    <div class="alert alert-success" style="color: green" id="alert-success">비밀번호가 일치합니다.</div><br>
+    <div class="alert alert-danger" style="color: red" id="alert-danger">비밀번호가 일치하지 않습니다.</div>
+
+    이메일<br>
+    <input type="email" th:field="*{memberEmail}"  onblur="emailDp()" placeholder="이메일: 5~50자로 입력해주세요"><br>
+    <span id="emailCheck"></span>
+    <p th:if="${#fields.hasErrors('memberEmail')}" th:errors="*{memberEmail}" th:errorclass="field-error"></p><br><br>
+
+    주소<br>
+    <input type="text" th:field="*{memberAddr}"  placeholder="주소">
+    <p th:if="${#fields.hasErrors('memberAddr')}" th:errors="*{memberAddr}" th:errorclass="field-error"></p><br><br>
+
+    핸드폰 번호<br>
+    <input type="text" th:field="*{memberPhone}"  placeholder="핸드폰번호: 10~11자로 숫자만 입력해주세요">
+    <p th:if="${#fields.hasErrors('memberPhone')}" th:errors="*{memberPhone}" th:errorclass="field-error"></p><br><br>
+
+    생년월일<br>
+    <input type="date" th:field="*{memberDate}"  placeholder="생년월일"><br><br>
+    <span style=" font-size:0.8em; color: black;" th:align="center" >프로필 사진</span><br>
+    <input type="file" th:field="*{memberFile}" placeholder="프로필 사진"><br><br>
+    <input type="submit"  value="회원가입">
+
+  </form>
+</div>
+
+</body>
+</html>
+
 ```

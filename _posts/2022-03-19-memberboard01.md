@@ -104,7 +104,7 @@ dependencies {
 ```yaml
 # 서버포트, DB 연결정보
 server:
-  port: 8091
+  port: 8096
 ```
 
 ###### controller package를 생성해준다.
