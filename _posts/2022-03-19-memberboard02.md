@@ -144,48 +144,13 @@ spring:
 </body>
 </html>
 ```
-###### 회원가입 폼을 아래와 같이 구성해본다.(비밀번호 재입력 확인란과 Email 중북여부 기능을 포함한다.)
-![]()
-
-
-
-
-
 ###### 화면에 회원가입 링크가 생성되었다.
 ![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberSave.JPG?raw=true)
 
-###### controller 내 MemberController를 생성한 후 아래와 같이 작성한다.
-```java
-package com.ex.test01.controller;
+###### 회원가입 폼을 아래와 같이 구성해본다.(비밀번호 재입력 확인란과 Email 중북여부 기능을 포함한다.)
+![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberSaveForm.JPG?raw=true)
 
-import com.ex.test01.dto.*;
-import com.ex.test01.service.MemberService;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.*;
-
-
-@Controller
-@RequiredArgsConstructor
-@RequestMapping("/member")
-public class MemberController {
-
-    private final MemberService ms;
-
-    // 회원가입 화면 보여주기
-    @GetMapping("/save")
-    public String saveForm(Model model) {
-        model.addAttribute("member", new MemberSaveDTO());
-        return "member/save";
-    }
-    
-  }
-```
-###### @RequestMapping는 /member의 주소로 오는 모든 요청(get, post, put, update, delete등)을 받아줄 수 있는 어노테이션으로 이 이후 컨트롤러에서 작성되어지는 브라우저 주소에서 member 하단의 주소만 기입하면 된다. 
-###### Templates  폴더 내  member 폴더를 만든 후 save.html을 만든다.
-
+###### 위의 폼에 맞게 tempalate 밑 member 폴더 밑에 save.html을 만들어준다.
 ###### save.html
 ```html
 <!DOCTYPE html>
@@ -299,3 +264,116 @@ public class MemberController {
 </html>
 
 ```
+<br><br>
+
+
+###### controller 내 MemberController를 생성한 후 아래와 같이 작성한다.
+```java
+package com.ex.test01.controller;
+
+import com.ex.test01.dto.*;
+import com.ex.test01.service.MemberService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
+
+
+@Controller
+@RequiredArgsConstructor
+@RequestMapping("/member")
+public class MemberController {
+
+    private final MemberService ms;
+
+    // 회원가입 화면 보여주기
+    @GetMapping("/save")
+    public String saveForm(Model model) {
+        model.addAttribute("member", new MemberSaveDTO());
+        return "member/save";
+    }
+    
+  }
+```
+###### @RequestMapping는 /member의 주소로 오는 모든 요청(get, post, put, update, delete등)을 받아줄 수 있는 어노테이션으로 이 이후 컨트롤러에서 작성되어지는 브라우저 주소에서 member 하단의 주소만 기입하면 된다. 
+###### Templates  폴더 내  member 폴더를 만든 후 save.html을 만든다.
+
+###### dto 패키지 內 MemberSaveDTO를 만들어준다.
+```java
+package com.ex.test01.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.Length;
+import org.springframework.web.multipart.MultipartFile;
+
+import javax.validation.constraints.NotBlank;
+import java.sql.Date;
+
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class MemberSaveDTO {
+
+    @NotBlank(message = "이름은 필수입니다.")
+    @Length(min = 2, max = 50, message = "2~50자로 입력해주세요")
+    private String memberName;
+
+    @NotBlank
+    @Length(min = 5, max = 20, message = "5~20자로 입력해주세요")
+    private String memberPw;
+
+    @NotBlank(message = "Email은 필수입니다.")
+    @Length(min = 5, max = 50, message = "5~50자로 입력해주세요")
+    private String memberEmail;
+
+//    @NotBlank(message = "주소는 필수입니다.")
+//    @Length(min = 10, max = 50, message = "10~50자로 입력해주세요")
+    private String memberAddr;
+
+    @NotBlank(message = "핸드폰 번호는 필수입니다.")
+    @Length(min = 10, max = 11, message = "10~11자로 숫자만 입력해주세요")
+    private String memberPhone;
+
+
+    private Date memberDate;
+
+
+    private MultipartFile memberFile;
+
+
+    private String memberFilename;
+
+}
+
+```
+
+###### 여기까지 작성이 되면 회원가입 화면(saveForm)이 정상적으로 뜨게 된다.
+<br><br>
+###### 이제는 화면가입에 기입된 정보가 정상적으로 DB에까지 저장되는 프로세스를 구축해본다.
+###### MemberController에 관련 코드를 추가해준다.
+```java
+    // 회원가입 저장
+    @PostMapping("/save")
+    public String save(@Validated @ModelAttribute("member") MemberSaveDTO memberSaveDTO, BindingResult bindingResult) {
+        System.out.println("MemberController.save =" + memberSaveDTO);
+        if (bindingResult.hasErrors()) {
+            return "member/save";
+        }
+        try {
+            Long memberId = ms.save(memberSaveDTO);
+        } catch (IllegalStateException | IOException e) {
+            bindingResult.reject("emailCheck", e.getMessage());
+            return "member/save";
+        }
+        return "redirect:/";
+    }
+```
+
+###### service package 內 MemberService를 interface 형식으로 만들어준다.
+
+
+
