@@ -56,6 +56,7 @@ test {
     useJUnitPlatform()
 }
 ```
+
 ###### 위에서 추가된 내용은 추려보았다.
 
 ```java
@@ -69,25 +70,34 @@ dependencies {
 
 ## DB 설정
 ###### Mysql에 db와 user, 비밀번호를 생성하고 관련 권한을 부여한다.(Ctrl+Enter)
-![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlRoot.JPG?raw=true)
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlRoot.JPG?raw=true" width="700px">
 <br><br>
-![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlRootConnection.JPG?raw=true)
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlRootConnection.JPG?raw=true" width="200px">
 <br><br>
-![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlRootConnectionTest.JPG?raw=true)
-<br><br>
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlRootConnectionTest.JPG?raw=true" width="275px">
+</div>
+<br>
+
 ```sql
 create database 디비이름;
 create user 사용할 아이디@localhost identified by '사용할 비밀번호';
 grant all privileges on 디비이름.* to 사용할 아이디@localhost;
 ```
 <br><br>
-![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlTest01connection.JPG?raw=true)
+
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlTest01connection.JPG?raw=true" width="700px">
+</div>
+
 ###### test01 커넥션을 열고 아래와 같이 입력 후 Ctrl + Enter를 눌러준다.
 ```sql
 use test01;
 ```
 ###### 정상적으로 db 사용이 가능함을 확인한다.
-![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlTest01UseDb.JPG?raw=true)
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlTest01UseDb.JPG?raw=true" width="700px">
+</div>
 <br><br>
 
 ###### application.yml 파일을 열어 DB 접속 추가정보를 작성해준다.
@@ -121,13 +131,15 @@ spring:
 ```
 <br><br>
 ###### 패키지를 아래와 같이 모두 생성해준다.(dto, service, entity, repository)
-![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/002_001_projectStructure.JPG?raw=true)
-
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/002_001_projectStructure.JPG?raw=true" width="350px">
+</div>
 
 <br><br><br>
-# 회원가입
+<center> <h1> 회원가입 </h1></center>
 
-###### index 페이지를 아래와 같이 작성한다.
+<center><h6>index 페이지를 아래와 같이 작성한다.</h6></center>
+
 ```html
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
@@ -144,14 +156,20 @@ spring:
 </body>
 </html>
 ```
-###### 화면에 회원가입 링크가 생성되었다.
-<img src = "https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberSave.JPG?raw=true">
+<br>
+<center><h6>화면에 회원가입 링크가 생성되었다.</h6></center>
+<div align="center">
+<img src = "https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberSave.JPG?raw=true" width="200"></div>
+<br><br>
+<center><h6>회원가입 폼을 아래와 같이 구성해본다.(비밀번호 재입력 확인란과 Email 중북여부 기능을 포함한다.)</h6></center>
+<div align="center">
+<img src= "https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberSaveForm.JPG?raw=true" width="550px" height="700px"></div>
+<br><br><br><br>
 
-###### 회원가입 폼을 아래와 같이 구성해본다.(비밀번호 재입력 확인란과 Email 중북여부 기능을 포함한다.)
-<img src= "https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberSaveForm.JPG?raw=true" width="550px" height="700px">
+<center><h6>위의 폼에 맞게 template 밑 member 폴더 밑에 save.html을 만들어준다.</h6></center>
 
-###### 위의 폼에 맞게 template 밑 member 폴더 밑에 save.html을 만들어준다.
-###### save.html
+<center><h6>[save.html]</h6></center>
+
 ```html
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:font-size="http://www.w3.org/1999/xhtml">
