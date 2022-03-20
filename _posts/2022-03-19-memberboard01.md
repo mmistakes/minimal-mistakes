@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "01-회원제 게시판 만들기_SpringBoot와 JPA "
+title:  "01-회원제 게시판 만들기_SpringBoot와 JPA "
 categories: memberboard
 tag: [springbot, jpa]
 toc: true

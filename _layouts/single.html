@@ -26,11 +26,11 @@ layout: default
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.title %}<h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
-          </h1>{% endif %}
-          {% include page__meta.html %}
           <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2FGibson1211.github.io/how%20to/HITS/&count_bg=%23000003&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" style="width:70px; height:20px;"/></a>
+          {% if page.title %}<h1 id="page-title" class="page__title p-name" itemprop="headline">
+          <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
+        </h1>{% endif %}
+          {% include page__meta.html %}
         </header>
       {% endunless %}
 

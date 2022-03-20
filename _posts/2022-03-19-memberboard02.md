@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "02-회원제 게시판 만들기_SpringBoot와 JPA "
+title: "02-회원제 게시판 만들기_SpringBoot와 JPA"
 categories: memberboard
 tag: [springbot, jpa]
 toc: true
@@ -11,11 +11,12 @@ sidebar:
 search: true
 ---
 
-**[공지사항]** <strong> [개인적인 공부를 위한 내용입니다. 오류가 있을 수 있습니다.] </strong>
+<center>**[공지사항]** <strong> [개인적인 공부를 위한 내용입니다. 오류가 있을 수 있습니다.] </strong></center>
 {: .notice--success}
 
-### 02-기본환경 설정 - SpringBoot
-###### DB와의 연동과 Validation을 위해 build.gradle 파일에 내용을 추가해준다.
+<center><h3>02-기본환경 설정 - SpringBoot</h3></center>
+<center><h6>DB와의 연동과 Validation을 위해 build.gradle 파일에 내용을 추가해준다.</h6></center>
+
 ```java
 plugins {
     id 'org.springframework.boot' version '2.6.2'
@@ -57,7 +58,7 @@ test {
 }
 ```
 
-###### 위에서 추가된 내용은 추려보았다.
+<center><h6>위에서 추가된 내용은 추려보았다.</h6></center>
 
 ```java
 dependencies {
@@ -67,9 +68,9 @@ dependencies {
     }
 ```
 
-
-## DB 설정
-###### Mysql에 db와 user, 비밀번호를 생성하고 관련 권한을 부여한다.(Ctrl+Enter)
+<br>
+<center><h2>DB 설정</h2></center>
+<center><h6>Mysql에 db와 user, 비밀번호를 생성하고 관련 권한을 부여한다.(Ctrl+Enter)</h6></center>
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mysqlRoot.JPG?raw=true" width="700px">
 <br><br>
@@ -101,6 +102,7 @@ use test01;
 <br><br>
 
 ###### application.yml 파일을 열어 DB 접속 추가정보를 작성해준다.
+
 ```yaml
 # 서버포트, DB 연결정보
 server:
@@ -129,8 +131,9 @@ spring:
 #      ddl: data definition language
 #      Entity를 수정하는 경우에는  create으로 db를 다시 시작하는게 좋음
 ```
+
 <br><br>
-###### 패키지를 아래와 같이 모두 생성해준다.(dto, service, entity, repository)
+<center><h6> 패키지를 아래와 같이 모두 생성해준다.(dto, service, entity, repository)</h6></center>
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/002_001_projectStructure.JPG?raw=true" width="350px">
 </div>
@@ -284,9 +287,10 @@ spring:
 ```
 <br><br>
 
+<center><h6>controller 내 MemberController를 생성한 후 아래와 같이 작성한다.</h6></center>
 
-###### controller 내 MemberController를 생성한 후 아래와 같이 작성한다.
-```java
+
+``` java 
 package com.ex.test01.controller;
 
 import com.ex.test01.dto.*;
@@ -314,13 +318,14 @@ public class MemberController {
     
   }
 ```
-###### @RequestMapping는 /member의 주소로 오는 모든 요청(get, post, put, update, delete등)을 받아줄 수 있는 어노테이션으로 이 이후 컨트롤러에서 작성되어지는 브라우저 주소 부분(만일 작성해야 할 주소가  "/member/save"라면)은  member를 생략한 하단의 주소("/save")만 기입하면 된다. 
-###### Templates  폴더 내  member 폴더를 만든 후 save.html을 만든다.
+<h6> @RequestMapping는 /member의 주소로 오는 모든 요청(get, post, put, update, delete등)을 받아줄 수 있는 어노테이션으로 이 이후 컨트롤러에서 작성되어지는 브라우저 주소 부분(만일 작성해야 할 주소가  "/member/save"라면)은  member를 생략한 하단의 주소("/save")만 기입하면 된다.</h6>
 
-###### dto 패키지 內 MemberSaveDTO를 class형식으로 만들어준다.
+<center><h6>dto 패키지 內 MemberSaveDTO를 class형식으로 만들어준다.</h6></center>
+
 ![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/MemberSaveDTO.JPG?raw=true)
 
-###### MemberSaveDTO에 코드를 작성해준다.
+<center><h6>MemberSaveDTO에 코드를 작성해준다.</h6></center>
+
 ```java
 package com.ex.test01.dto;
 
