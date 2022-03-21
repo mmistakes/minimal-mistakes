@@ -9,7 +9,7 @@ author_profile: false
 -
 To register, fill the form latest by 21st March, 11:59 PM [here](https://forms.gle/gKrs8VKhVo8xcyAw7)
 
-Join the Stamatics discord server to interact with the mentors and for any other communication: [invite link](https://discord.gg/yBUrhfcs)
+Join the Stamatics discord server to interact with the mentors and for any other communication: [invite link](https://discord.gg/QUpWzWKm)
 
 The recording of the projects introductory session can be found [here](https://youtu.be/vsM8uEKik_A)
 
