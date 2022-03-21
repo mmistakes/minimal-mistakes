@@ -16,7 +16,7 @@ search: true
 
 <center><h2>02-회원(member)파트 - SpringBoot</h2></center>
 
-<center><h2>[수정화면에 바로 나의 정보조회를 표시]</h2></center><br>
+<center><h2>[수정화면에 바로 내정보 수정(update)를 표시]</h2></center><br>
 
 <center><h6>내정보 수정(update) 링크를 index.html에  추가해준다.</h6></center>
 <div align="center">
