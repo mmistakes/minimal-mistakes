@@ -22,6 +22,7 @@ search: true
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/myinfo_findById.jpg?raw=true" width="160">
 </div>
+<br>
 
 ```html
     <a href="member/mypage">나의정보 조회</a><br><br>
@@ -31,7 +32,7 @@ search: true
 <center><h6>나의 정보를 보여주는 페이지를 만들기 위해 resources/member 폴더 內 mypage.html을 만들어준다.</h6></center>
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mypageForm_findById.JPG?raw=true" width="450">
-</div>
+</div><br>
 
 ```html
 <!DOCTYPE html>
@@ -110,7 +111,7 @@ public class MemberDetailDTO {
 <br>
 <center><h6>여기까지 작성 후 서버를 실행한다. 그리고 로그인 후 나의 정보조회 링크를 클릭 해 아래와 같이 정보가 조회되면 정상이다. </h6></center>
 <div align="center">
-<img src="">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mypageResult.JPG?raw=true" width="450">
 </div>
 
 
