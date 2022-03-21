@@ -20,8 +20,16 @@ search: true
 
 <center><h6>나의 정보조회 링크를 index.html에  추가해준다.</h6></center>
 <div align="center">
-<img src=""
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/myinfo_findById.jpg?raw=true" width="160">
 </div>
+
+```html
+    <a href="member/mypage">나의정보 조회</a><br><br>
+```
+<br>
+
+<center><h6>나의 정보를 보여주는 페이지를 만들기 위해 resources/member 폴더 內 mypage.html을 만들어준다.</h6></center>
+
 
 
 <center><h2>나의 정보조회 끝</h2></center>
