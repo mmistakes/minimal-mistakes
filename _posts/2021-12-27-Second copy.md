@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Second Posting!"
-categories: commits
+categories: study
 ---
 
 Good day Fellas!
