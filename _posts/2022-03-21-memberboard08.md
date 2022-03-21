@@ -142,48 +142,63 @@ public class AdminController {
 <br>
 <center><h6>여기까지 작성 후 admin@aaa.com으로 로그인하여 회원목록을 조회해 아래와 같이 조회되는지 확인한다. </h6></center>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberList.jpg?raw=true" width="300">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberList_jpg.jpg?raw=true" width="300">
 
 <br><br>
+
+<center><h6>회원목록에서 회원이름을 클릭하면  member/3(회원번호)로 된 새창을 띄워 회원 상세정보를 보여주게끔 resources/member 폴더에 findById.html을 만들어준다.  </h6></center>
+
+
 
 ```html
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:font-size="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>회원탈퇴</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script>
-        const deleteById = (memberId) => {
-
-            console.log(memberId);
-            const reqUrl = "/member/"+memberId;
-            $.ajax({
-                type: 'delete',
-                url:reqUrl,
-                success: function (){
-                    location.href="/";
-                },
-                error: function (){
-
-                }
-            });
-        }
-    </script>
-</head>
+  <meta charset="UTF-8">
+  <title>회원 상세정보</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <body>
-    <div th:align="center">
-        <h2>회원 탈퇴</h2>
-        <br><br><br>
-        회원을 탈퇴하시겠습니까?<br><br><br><br>
-        <div>
-            <input type="hidden" id="memberId" name="memberId" th:value="${member.memberId}">
-            <button th:type="button" th:onclick="deleteById([[${member.memberId}]])">확인</button>
-            <button th:type="button" onclick="location.href='/member/update'">취소</button>
-        </div>
-    </div><br><br>
-    세션값 이메일: <p th:text="${session['loginEmail']}"></p>
+<div th:align="center">
+  <h2>회원 상세정보</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>번호</th>
+      <th>이름</th>
+      <!--            <th>비밀번호</th>-->
+      <th>이메일</th>
+      <th>주소</th>
+      <th>핸드폰 번호</th>
+      <th>생년월일</th>
+      <!--            <th>파일</th>-->
+      <th>파일명</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td th:text="${member.memberId}"></td>
+      <td th:text="${member.memberName}"></td>
+      <td th:hidden="${member.memberPw}"></td>
+      <td th:text="${member.memberEmail}"></td>
+      <td th:text="${member.memberAddr}"></td>
+      <td th:text="${member.memberPhone}"></td>
+      <td th:text="${member.memberDate}"></td>
+      <!--            <td th:file="${member.memberFile}"></td>-->
+      <td th:text="${member.memberFilename}"></td>
+    </tr>
+    </tbody>
+  </table>
+  <br><br><br><br><br>
+  <a href="member/mypage">마이페이지</a><br><br>
+  <a href="member/update">마이페이지(update)</a><br><br>
+  <a href="/member?page=1">페이징</a><br><br>
+  <a href="/board/save">글쓰기</a><br><br>
+  <a href="/board/findAll">글목록</a><br><br>
+  <a href="member/logout">로그아웃</a><br><br>
 
+  세션값 이메일: <p th:text="${session['loginEmail']}"></p>
+
+</div>
 </body>
 </html>
 ```
