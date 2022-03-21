@@ -109,6 +109,34 @@ public class MemberDetailDTO {
     }
 ```
 <br>
+<center><h6>ms.findByMemberEmail을 클릭하면 MemberService에 해당 내용이 추가된다.</h6></center>
+
+```java 
+  MemberDetailDTO findByMemberEmail(String memberEmail);
+```
+<br>
+<center><h6>MemberServiceImpl에 내용을 추가해준다.</h6></center>
+
+```java 
+    // 수정화면 보여주기
+    @Override
+    public MemberDetailDTO findByMemberEmail(String memberEmail) {
+        MemberEntity memberEntity = mr.findByMemberEmail(memberEmail);
+        MemberDetailDTO memberDetailDTO = MemberDetailDTO.toMemberDetailDTO(memberEntity);
+        return memberDetailDTO;
+    }
+```
+<br>
+
+<center><h6>MemberServiceImpl 內 빨간색으로 처리된 mr.findByMemberEmail을 클릭하면 MemberRepository에 내용이 추가된다.</h6></center>
+
+```java 
+public interface MemberRepository extends JpaRepository<MemberEntity, Long> {
+    MemberEntity findByMemberEmail(String memberEmail);
+    }
+```
+
+<br>
 <center><h6>여기까지 작성 후 서버를 실행한다. 그리고 로그인 후 나의 정보조회 링크를 클릭 해 아래와 같이 정보가 조회되면 정상이다. </h6></center>
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mypageResult.JPG?raw=true" width="450">

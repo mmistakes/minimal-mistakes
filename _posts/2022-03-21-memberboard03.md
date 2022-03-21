@@ -161,6 +161,7 @@ public class MemberLoginDTO {
     }
 ```
 <br>
+
 <center><h6>여기까지 작성 후 index 페이지에서 회원가입 후 해당 아이디로 login이 정상적으로 작동하는지 확인하기 위해 login 후 login session값을 보여주는 작업을 진행한다.</h6></center>
 <br><br><br>
 
