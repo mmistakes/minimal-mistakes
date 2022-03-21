@@ -21,43 +21,64 @@ search: true
 <center><h6>index.html 하단에 로그인 이메일이 admin인 경우에만 보이는 회원목록 링크를 하나 추가한다..</h6></center>
 
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberwithdrawal.JPG?raw=true" width="340">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/adminMemberList.jpg?raw=true" width="200">
 </div>
 <br>
 
 ```html
-        <a href="/member/delete">회원 탈퇴</a>
+  <span th:if="(${session.loginEmail}=='admin@aaa.com')">
+     <div>
+         <h3>관리자 메뉴</h3><br>
+     <a class="nav-link" href="/admin/memberList" style="font-size: 15px">회원 목록</a><br><br>
+     </div></span>
+
+</div>
 ```
 <br>
 
-<center><h6>회원탈퇴 링크는 member/delete로 링크되며 resources/member 폴더에 delete.html을 만든다.</h6></center>
+<center><h6>회원목록은 admin/memberList로 링크되며 resources 폴더에 admin 폴더를 만들고 그 밑에 memberList.html을 만든다. </h6></center>
 
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberWithdrawalForm.JPG?raw=true" width="350">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/adminMemberList.jpg?raw=true" width="200">
 </div>
 <br>
 
 ```html
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:font-size="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+  
   <meta charset="UTF-8">
-  <title>회원탈퇴</title>
+  <title>memberList</title>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
+  
 </head>
+
 <body>
-<div th:align="center">
-  <h2>회원 탈퇴</h2>
-  <br><br><br>
-  회원을 탈퇴하시겠습니까?<br><br><br><br>
-  <div>
-    <input type="hidden" id="memberId" name="memberId" th:value="${member.memberId}">
-    <button th:type="button" th:onclick="deleteById([[${member.memberId}]])">확인</button>
-    <button th:type="button" onclick="location.href='/member/update'">취소</button>
-  </div>
-</div><br><br>
-세션값 이메일: <p th:text="${session['loginEmail']}"></p>
+
+<table>
+  
+  <thead>
+  <tr>
+    <th>회원번호</th>
+    <th>이름</th>
+    <!--        <th>비밀번호</th>-->
+    <th>이메일</th>
+  </tr>
+  </thead>
+  
+  <tbody>
+  <tr th:each="member: ${memberList}">
+    <td th:text="${member.memberId}"></td>
+    <td><a th:href="@{|/member/${member.memberId}|}">
+      <span th:text="${member.memberName}"></span></a></td>
+    <td th:hidden="${member.memberPw}"></td>
+    <td th:text="${member.memberEmail}"></td>
+  </tr>
+  </tbody>
+  
+</table>
+<div id="member-detail"></div>
 
 </body>
 </html>
