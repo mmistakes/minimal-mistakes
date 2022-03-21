@@ -16,7 +16,7 @@ search: true
 
 <center><h2>02-회원(member)파트 - SpringBoot</h2></center>
 
-<center><h2>[회원 탈퇴]</h2></center><br>
+<center><h2>[회원탈퇴]</h2></center><br>
 
 <center><h6>update.html 하단에 회원탈퇴 링크를 하나 추가한다.</h6></center>
 
@@ -160,13 +160,25 @@ search: true
 <center><h6>여기까지 작성한 후 회원명 zzzzz를 회원탈퇴를 하면 회원은 logout이 되고 index페이지를 띄우게된다.<br>
 DB에서 zzzzz의 데이터가 삭제되었다면 회원탈퇴가 정상적으로 처리된 것이다.  </h6></center>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/myinfo_UpdateForm.JPG?raw=true" width="320">
-</div>
-<br>
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberDeleteEx01.JPG?raw=true" width="200">
 
-
-
+<br><br>
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberDeleteEx02.JPG?raw=true" width="300">
 
 <br><br>
 
-<center><h2>나의 정보수정 끝</h2></center>
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberDeleteEx03.JPG?raw=true" width="600">
+
+<br><br>
+
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberDeleteEx05.JPG?raw=true" width="280">
+
+<br><br>
+
+<center><h6>DB에서 zzzzz의 데이터가 삭제되었음을 확인할 수 있다.</h6></center>
+
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberDeleteEx06.JPG?raw=true" width="600">
+
+<br><br>
+
+<center><h2>회원탈퇴 끝</h2></center>
