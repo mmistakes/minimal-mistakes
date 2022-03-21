@@ -14,7 +14,7 @@ search: true
 <center>**[공지사항]** <strong> [개인적인 공부를 위한 내용입니다. 오류가 있을 수 있습니다.] </strong></center>
 {: .notice--success}
 
-<center><h3>02-기본환경 설정 - SpringBoot</h3></center>
+<center><h3>02-회원(member) 파트 - SpringBoot</h3></center>
 <center><h6>DB와의 연동과 Validation을 위해 build.gradle 파일에 내용을 추가해준다.</h6></center>
 
 ```java

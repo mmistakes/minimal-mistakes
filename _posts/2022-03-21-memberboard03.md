@@ -14,7 +14,7 @@ search: true
 <center>**[공지사항]** <strong> [개인적인 공부를 위한 내용입니다. 오류가 있을 수 있습니다.] </strong></center>
 {: .notice--success}
 
-<center><h2>02-기본환경 설정 - SpringBoot</h2></center>
+<center><h2>02-회원(member)파트 - SpringBoot</h2></center>
 
 <center><h2>[로그인과 로그아웃]</h2></center><br>
 
