@@ -7,6 +7,11 @@ categories: wide
 
 My publications can also be found on <a href="https://scholar.google.de/citations?user=MkoDxQkAAAAJ&hl=en" target="_blank">Google Scholar</a> or <a href="https://www.researchgate.net/profile/Christopher-Schindlbeck" target="_blank">Researchgate</a>.
 
+# Table Of Contents 
+1. [Journals](#journals) 
+2. [Theses](#theses)
+3. [Conference Proceedings](#conferenceproceedings)
+
 ## Journals
 
 * **Process-integrated state estimation of optical systems with macro–micro manipulators based on wavefront filtering**\\
