@@ -86,7 +86,7 @@ public class MemberLoginDTO {
 
 <center><h6>여기까지 작성하면 사용자에게 로그인 화면은 정상적으로 보여지게 된다.</h6></center><br><br>
 
-<center><h>로그인 처리</h></center>
+<center><h3>로그인 처리</h3></center>
 <center><h6>로그인 처리를 위해 MemberController에 코드를 추가해준다. 내용은 정상적으로 로그인 한 경우에는 index 페이지를 띄워주고 로그인 정보가 잘못된 경우에는 "로그인 정보가 잘못되었습니다."라는 알림창을 띄워주고 사용자가 확인을 누를 경우 다시 login창을 띄워주도록 구성한다. 이 알림창을 띄우기 위해서는 resources 폴더 內 message.html을 만들어준다. </h6></center>
 
 ```java 
@@ -161,11 +161,18 @@ public class MemberLoginDTO {
     }
 ```
 <br>
-<center><h6>여기까지 작성 후 index 페이지에서 회원가입 후 해당 아이디로 login이 정상적으로 작동하는지 확인한다.</h6></center>
+<center><h6>여기까지 작성 후 index 페이지에서 회원가입 후 해당 아이디로 login이 정상적으로 작동하는지 확인하기 위해 login 후 login session값을 보여주는 작업을 진행한다.</h6></center>
 <br><br><br>
 
 <center><h3>login Session값 보여주기</h3></center>
 <center><h6>사용자가 정상적으로 로그인 한 경우 해당 세션값을 index 페이지 內 보여주기 위한 코드를 작성해준다.</h6></center>
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/loginSession.jpg?raw=true" width="180">
+</div>
+
+```html
+세션값 이메일: <p th:text="${session['loginEmail']}"></p>
+```
 
 
 
