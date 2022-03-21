@@ -431,7 +431,114 @@ public class MemberDetailDTO {
 
 <center><h3>회원 삭제</h3></center>
 <center><h6>회원목록(memberList.html)에 삭제 관련 script를 header영역에 추가해주고 body에도 삭제 버튼 관련 내용을 추가한다.  </h6></center>
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberListDeleteForm.JPG?raw=true" width="320"></div><br><br>
 
+```html
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>memberList</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script>
+        // function detail(boardId){
+        const detail = (memberId) => {
+            console.log(memberId);
+            const reqUrl = "/member/" + memberId;
+            $.ajax({
+                type: 'post',
+                url: reqUrl,
+                dataType: 'json',
+                success: function(result) {
+                    console.log(result);
+                    let output = "";
+                    output += "<table>\n" +
+                        "    <thead>\n" +
+                        "    <tr>\n" +
+                        "        <th>번호</th>\n" +
+                        "        <th>이름</th>\n" +
+                        "        <th>이메일</th>\n" +
+                        "        <th>주소</th>\n" +
+                        "        <th>전화번호</th>\n" +
+                        "        <th>생년월일</th>\n" +
+                        "        <th>파일이름</th>\n" +
+                        "    </tr>\n" +
+                        "    </thead>\n" +
+                        "    <tbody>\n" +
+                        "        <tr>\n" +
+                        "            <td>"+result.memberId + "</td>\n" +
+                        "            <td>"+result.memberName + "</td>\n" +
+                        "            <td>"+result.memberEmail+ "</td>\n" +
+                        "            <td>"+result.memberAddr+ "</td>\n" +
+                        "            <td>"+result.memberPhone + " </td>\n" +
+                        "            <td>"+result.memberDate + " </td>\n" +
+                        "            <td>"+result.memberFilename + " </td>\n" +
+                        "        </tr>\n" +
+                        "    </tbody>\n" +
+                        "</table>"
+                    document.getElementById("member-detail").innerHTML = output;
+                },
+                error: function() {
+                    alert('ajax 실패');
+                }
+            });
+        }
+    </script>
+
+    <script>
+        const deleteById = (memberId) => {
+
+            console.log(memberId);
+            const reqUrl = "/member/"+memberId;
+            $.ajax({
+                type: 'delete',
+                url:reqUrl,
+                success: function (){
+                    location.href="/";
+                },
+                error: function (){
+
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+<table>
+  <thead>
+    <tr>
+        <th>회원번호</th>
+        <th>이름</th>
+<!--        <th>비밀번호</th>-->
+        <th>이메일</th>
+        <th>회원 조회</th>
+        <th>회원 삭제</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr th:each="member: ${memberList}">
+          <td th:text="${member.memberId}"></td>
+          <td><a th:href="@{|/member/${member.memberId}|}">
+              <span th:text="${member.memberName}"></span></a></td>
+          <td th:hidden="${member.memberPw}"></td>
+          <td th:text="${member.memberEmail}"></td>
+          <td><button th:onclick="detail([[${member.memberId}]])">조회(Ajax)</button></td>
+          <td><button th:onclick="deleteById([[${member.memberId}]])">삭제(Ajax)</button></td>
+
+      </tr>
+  </tbody>
+</table>
+<br><br><br>
+    <div id="member-detail"></div>
+
+</body>
+</html>
+```
+<br>
+<center><h6>MemberController와 MemberService 그리고 MemberServiceImpl에서는<br> 기작성되어 있는 delete 메서드를 통해 작업이 진행되기에 별도의 작업이 필요없다.  </h6></center>
 
 <br>
 <center><h2>관리자(Admin)파트 끝</h2></center>
