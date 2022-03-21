@@ -91,7 +91,8 @@ search: true
 ```java 
   MemberDetailDTO findByMemberEmail(String memberEmail);
 ```
-<br><center><h6>MemberServiceImpl에도 기 작성한 내용이 있기에 확인만 해본다.</h6></center>
+<br>
+<center><h6>MemberServiceImpl에도 기 작성한 내용이 있기에 확인만 해본다.</h6></center>
 
 ```java
     // 수정화면 보여주기
@@ -103,6 +104,7 @@ search: true
     }
 ```
 <br>
+
 <center><h6>MemberRepository에 이미 내용이 추가되어있어 확인만 해본다.</h6></center>
 
 ```java 
