@@ -16,9 +16,9 @@ search: true
 
 <center><h2>02-회원(member)파트 - SpringBoot</h2></center>
 
-<center><h2>[나의 정보 수정하기]</h2></center><br>
+<center><h2>[회원 탈퇴]</h2></center><br>
 
-<center><h6>이미 만들어 놓은 update.html에서는 이름, 주소, 전화번호의 변경이 가능하고 나머지는 조회만 가능하도록 readonly로 설정하였다. 변경이 가능한 항목에 대해서는 PUT방식으로 처리하기 위해 (header)영역에 (script)를 추가해준다.</h6></center>
+<center><h6>update.html 하단에 회원탈퇴 링크를 하나 추가한다.</h6></center>
 
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/myinfo_UpdateForm.JPG?raw=true" width="320">
