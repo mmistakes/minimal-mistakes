@@ -29,7 +29,7 @@ search: true
 ```
 <br>
 
-<h6>로그인을 위한 html을 resources/member 폴더 내 생성해준다, 그리고 아래와 같은 화면을 보여주기 위한 코드를 login.html에 작성해준다. 로그인 창은 form을 사용했고 post를 컨트롤러에 전달한다. </h6>
+<h6>로그인을 위한 html을 resources/member 폴더 내 생성해준다, 그리고 아래와 같은 화면을 보여주기 위한 코드를 login.html에 작성해준다. 로그인 창은 form을 사용했고 post로 컨트롤러에 전달한다. </h6>
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/loginForm.JPG?raw=true" width="300"><br><br>
 </div>
@@ -87,7 +87,7 @@ public class MemberLoginDTO {
 <center><h6>여기까지 작성하면 사용자에게 로그인 화면은 정상적으로 보여지게 된다.</h6></center><br><br>
 
 <center><h>로그인 처리</h></center>
-<center><h6>로그인 처리를 위해 MemberController에 코드를 추가해준다. 내용은 정상적으로 로그인 한 경우에는 index 페이지를 띄워주고 로그인 정보가 잘못된 경우에는 "로그인 정보가 잘못되었습니다."라는 알림창을 띄워주고 사용자가 확인을 누를 경우 다시 login창을 띄워주도록 구성한다. 이 알림창을 띄우기 위해서는 resources 폴더 內 message.html을 만들어준다. </h6></center><br><br>
+<center><h6>로그인 처리를 위해 MemberController에 코드를 추가해준다. 내용은 정상적으로 로그인 한 경우에는 index 페이지를 띄워주고 로그인 정보가 잘못된 경우에는 "로그인 정보가 잘못되었습니다."라는 알림창을 띄워주고 사용자가 확인을 누를 경우 다시 login창을 띄워주도록 구성한다. 이 알림창을 띄우기 위해서는 resources 폴더 內 message.html을 만들어준다. </h6></center>
 
 ```java 
     // 로그인 처리
@@ -131,7 +131,11 @@ public class MemberLoginDTO {
 </body>
 </html>
 ```
-<br><br>
+<br>
+<center><h6>로그인 정보 오류시 알림 창</h6></center>
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/loginAlert.JPG?raw=true" width="400"></div><br><br>
+
 <center><h6>빨간색 처리 된 ms.login을 클릭하면 MemberService에 아래 메서드가 자동으로 추가된다.</h6></center>
 
 ```java 
@@ -158,4 +162,9 @@ public class MemberLoginDTO {
 ```
 <br>
 <center><h6>여기까지 작성 후 index 페이지에서 회원가입 후 해당 아이디로 login이 정상적으로 작동하는지 확인한다.</h6></center>
-<center><h2>회원가입 끝</h2></center>
+<br><br><br>
+
+<center><h3>로그아웃</h3></center>
+<center><h6>로그인 된 사용자의 로그아웃을 위해 index 페이지 內 로그아웃 링크를 하나 만들어 준다.</h6></center>
+
+<center><h2>로그인 & 로그아웃 끝</h2></center>
