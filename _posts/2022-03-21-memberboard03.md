@@ -20,14 +20,19 @@ search: true
 
 <center><h6>아래와 같은 화면을 보여주기 위해 index.html 內 로그인을 위한 링크를 추가해준다.</h6></center>
 
-<center><img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/login_index.JPG?raw=true" style=""width="250"></center>
+
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/login_index.JPG?raw=true" width="300"></div>>
 
 ```html
    <a href="member/login">로그인</a><br><br>
 ```
 <br>
 
-<h6>로그인을 위한 html을 resources/member 폴더 내 생성해준다, 그리고 해당 코드를 작성해준다. 로그인 창은 form을 사용했고 post를 컨트롤러에 전달한다. </h6>
+<h6>로그인을 위한 html을 resources/member 폴더 내 생성해준다, 그리고 아래와 같은 화면을 보여주기 위한 코드를 login.html에 작성해준다. 로그인 창은 form을 사용했고 post를 컨트롤러에 전달한다. </h6>
+<div align="center">
+<img src=""
+</div>
 
 ```html
 <!DOCTYPE html>
@@ -46,6 +51,28 @@ search: true
 </html>
 ```
 <br>
+<h6>로그인을 위해서는 memberEmail과 memberPassword가 필요하기에 MemberLoginDTO를 만들고 거기에 해당항목을 추가해준다.</h6>
+
+```java 
+package com.ex.test01.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.validation.constraints.NotBlank;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class MemberLoginDTO {
+
+
+    private String memberEmail;
+    private String memberPw;
+}
+```
+<br>
 <center><h6>MemberController에서는 로그인 창을 사용자에게 보여주기 위해 아래와 같이 코드를 작성한다.</h6></center>
 
 ```java 
@@ -57,6 +84,51 @@ search: true
     }
 ```
 
-<center><h6>여기까지 작성하면 사용자에게 로그인 화면은 정상적으로 보여지게 된다.</h6></center>
+<center><h6>여기까지 작성하면 사용자에게 로그인 화면은 정상적으로 보여지게 된다.</h6></center><br><br>
 
+<center><h>로그인 처리</h></center>
+<center><h6>로그인 처리를 위해 MemberController에 코드를 추가해준다.</h6></center><br><br>
+
+```java 
+    // 로그인 처리
+    @PostMapping("/login")
+    public String login(@ModelAttribute("login") MemberLoginDTO memberLoginDTO, Model model, HttpSession session) {
+        boolean loginResult = ms.login(memberLoginDTO);
+        if (loginResult) {
+            session.setAttribute("loginEmail", memberLoginDTO.getMemberEmail());
+            return "redirect:/";
+        } else {
+            model.addAttribute("message", "로그인 정보가 잘못되었습니다.");
+            model.addAttribute("searchUrl", "/member/login");
+            return "member/message";
+        }
+    }
+```
+<br>
+<center><h6>빨간색 처리 된 ms.login을 클릭하면 MemberService에 아래 메서드가 자동으로 추가된다.</h6></center>
+
+```java 
+    boolean login(MemberLoginDTO memberLoginDTO);
+```
+<br>
+<center><h6>MemberServiceImpl에 메서드가 추가되고 거기에 로그인 관련 코드를 추가 삽입한다.</h6></center>
+
+```java 
+    // 로그인 처리
+    @Override
+    public boolean login(MemberLoginDTO memberLoginDTO) {
+        MemberEntity memberEntity = mr.findByMemberEmail(memberLoginDTO.getMemberEmail());
+        if (memberEntity != null) {
+            if (memberEntity.getMemberPw().equals(memberLoginDTO.getMemberPw())) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
+```
+<br>
+<center><h6>여기까지 작성 후 index 페이지에서 회원가입 후 해당 아이디로 login이 정상적으로 작동하는지 확인한다.</h6></center>
 <center><h2>회원가입 끝</h2></center>
