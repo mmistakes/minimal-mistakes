@@ -140,101 +140,6 @@ public class AdminController {
     }
 ```
 <br>
-<center><h6>여기까지 작성 후 admin@aaa.com으로 로그인하여 회원목록을 조회해 아래와 같이 조회되는지 확인한다. </h6></center>
-<div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberList_jpg.jpg?raw=true" width="300">
-
-<br><br>
-
-<center><h6>회원목록에서 회원이름을 클릭하면  member/3(회원번호)로 된 새창을 띄워 회원 상세정보를 보여주게끔 resources/member 폴더에 findById.html을 만들어준다.</h6></center>
-
-<div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberFindbyIdForm.JPG?raw=true" width="400"></div><br>
-
-```html
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:font-size="http://www.w3.org/1999/xhtml">
-<head>
-  <meta charset="UTF-8">
-  <title>회원 상세정보</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<body>
-<div th:align="center">
-  <h2>회원 상세정보</h2>
-  <table>
-    <thead>
-    <tr>
-      <th>번호</th>
-      <th>이름</th>
-      <!--            <th>비밀번호</th>-->
-      <th>이메일</th>
-      <th>주소</th>
-      <th>핸드폰 번호</th>
-      <th>생년월일</th>
-      <!--            <th>파일</th>-->
-      <th>파일명</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td th:text="${member.memberId}"></td>
-      <td th:text="${member.memberName}"></td>
-      <td th:hidden="${member.memberPw}"></td>
-      <td th:text="${member.memberEmail}"></td>
-      <td th:text="${member.memberAddr}"></td>
-      <td th:text="${member.memberPhone}"></td>
-      <td th:text="${member.memberDate}"></td>
-      <!--            <td th:file="${member.memberFile}"></td>-->
-      <td th:text="${member.memberFilename}"></td>
-    </tr>
-    </tbody>
-  </table>
-  <br><br>
-
-  세션값 이메일: <p th:text="${session['loginEmail']}"></p>
-
-</div>
-</body>
-</html>
-```
-<br>
-
-<center><h6>MemberControllerl에 회원상세조회 관련 내용을 추가한다.</h6></center>
-
-```java 
-    // 회원 상세화면 보여주기(GET & findById)는 member/3(회원번호)로 된 새창을 띄워 보여줌
-    @GetMapping("/{memberId}")
-    public String findById(@PathVariable("memberId") Long memberId, Model model) {
-        MemberDetailDTO memberDetailDTO = ms.findById(memberId);
-        model.addAttribute("member", memberDetailDTO);
-        return "/member/findById";
-    }
-```
-<br>
-<center><h6>MemberController에 ms.findById를 클릭하면 MemberService에 관련 내용이 추가된다.</h6></center>
-
-```java 
-  MemberDetailDTO findById(Long memberId);
-```
-<br>
-<center><h6>MemberServiceImpl에 회원 상세조회 관련 내용을 추가한다.</h6></center>
-
-```java 
-    // 회원 상세화면 보여주기(GET & findById)
-    @Override
-    @Transactional
-    public MemberDetailDTO findById(Long memberId) {
-        Optional<MemberEntity> optionalMemberEntity = mr.findById(memberId);
-        MemberDetailDTO memberDetailDTO = null;
-        if (optionalMemberEntity.isPresent()) {
-            MemberEntity memberEntity = optionalMemberEntity.get();
-            memberDetailDTO = MemberDetailDTO.toMemberDetailDTO(memberEntity);
-        }
-        return memberDetailDTO;
-    }
-```
-<br>
-
 <center><h6>여기까지 작성한 후 MemberDetailDTO에 toMemberDetailDTO 항목을 작성해준다.</h6></center>
 
 ```java 
@@ -282,30 +187,120 @@ public class MemberDetailDTO {
     }
 }
 ```
-<br>
+<br><br>
+<center><h6>여기까지 작성 후 admin@aaa.com으로 로그인하여 회원목록을 조회해 아래와 같이 조회되는지 확인한다. </h6></center>
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberList_jpg.jpg?raw=true" width="300"></div>
 
-<center><h6>서버를 실행한 후 admin으로 로그인 하고 회원목록에서 해당회원의 이름을 클릭하여 회원 상세정보가 정상적으로 조회되는지 확인한다.</h6></center>
+<br><br>
+
+<center><h6>회원목록에서 회원이름을 클릭하면  member/3(회원번호)로 된 새창을 띄워 회원 상세정보를 보여주게끔 resources/member 폴더에 findById.html을 만들어준다.</h6></center><br>
 
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberDeleteEx01.JPG?raw=true" width="200">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberFindbyIdForm.JPG?raw=true" width="400"></div><br>
 
-<br><br>
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberDeleteEx02.JPG?raw=true" width="300">
+<center><h6>findById.html은 아래와 같이 코딩해준다.</h6></center>
 
-<br><br>
+```html
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:font-size="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>회원 상세정보</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+<div th:align="center">
+    <h2>회원 상세정보</h2>
+<table>
+    <thead>
+    <tr>
+        <th>번호</th>
+        <th>이름</th>
+        <!--            <th>비밀번호</th>-->
+        <th>이메일</th>
+        <th>주소</th>
+        <th>핸드폰 번호</th>
+        <th>생년월일</th>
+        <!--            <th>파일</th>-->
+        <th>파일명</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td th:text="${member.memberId}"></td>
+        <td th:text="${member.memberName}"></td>
+        <td th:hidden="${member.memberPw}"></td>
+        <td th:text="${member.memberEmail}"></td>
+        <td th:text="${member.memberAddr}"></td>
+        <td th:text="${member.memberPhone}"></td>
+        <td th:text="${member.memberDate}"></td>
+        <!--            <td th:file="${member.memberFile}"></td>-->
+        <td th:text="${member.memberFilename}"></td>
+    </tr>
+    </tbody>
+</table>
+<br><br><br><br><br>
+<a href="member/mypage">마이페이지</a><br><br>
+<a href="member/update">마이페이지(update)</a><br><br>
+<a href="/member?page=1">페이징</a><br><br>
+<a href="/board/save">글쓰기</a><br><br>
+<a href="/board/findAll">글목록</a><br><br>
+<a href="member/logout">로그아웃</a><br><br>
 
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberDeleteEx03.JPG?raw=true" width="600">
+세션값 이메일: <p th:text="${session['loginEmail']}"></p>
 
-<br><br>
+</div>
+</body>
+</html>
+```
+<br>
 
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberDeleteEx05.JPG?raw=true" width="280">
+<center><h6>MemberControllerl에 회원상세조회 관련 내용을 추가한다.</h6></center>
 
-<br><br>
+```java 
+    // 회원 상세화면 보여주기(GET & findById)는 member/3(회원번호)로 된 새창을 띄워 보여줌
+    @GetMapping("/{memberId}")
+    public String findById(@PathVariable("memberId") Long memberId, Model model) {
+        MemberDetailDTO memberDetailDTO = ms.findById(memberId);
+        model.addAttribute("member", memberDetailDTO);
+        return "/member/findById";
+    }
+```
+<br>
+<center><h6>MemberController에 ms.findById를 클릭하면 MemberService에 관련 내용이 추가된다.</h6></center>
 
-<center><h6>DB에서 zzzzz의 데이터가 삭제되었음을 확인할 수 있다.</h6></center>
+```java 
+  MemberDetailDTO findById(Long memberId);
+```
+<br>
+<center><h6>MemberServiceImpl에 회원 상세조회 관련 내용을 추가한다.</h6></center>
 
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberDeleteEx06.JPG?raw=true" width="600">
+```java 
+    // 회원 상세화면 보여주기(GET & findById)
+    @Override
+    @Transactional
+    public MemberDetailDTO findById(Long memberId) {
+        Optional<MemberEntity> optionalMemberEntity = mr.findById(memberId);
+        MemberDetailDTO memberDetailDTO = null;
+        if (optionalMemberEntity.isPresent()) {
+            MemberEntity memberEntity = optionalMemberEntity.get();
+            memberDetailDTO = MemberDetailDTO.toMemberDetailDTO(memberEntity);
+        }
+        return memberDetailDTO;
+    }
+```
+<br>
 
-<br><br>
+<center><h6>이제 서버를 실행하여 admin으로 로그인 후 회원목록에서 회원의 이름을 클릭했을때 회원 상세정보가 정상적으로 나오는지 확인한다.</h6></center>
+
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberFindbyIdOk.JPG?raw=true" width="450"></div><br>
+
+<br><br><br>
+
+<center><h3>회원리스트(findAll)에 회원 상세정보를 화면 하단에 실시간으로 보여주는 기능 구현(Ajax)</h3></center>
+
+
 
 <center><h2>회원탈퇴 끝</h2></center>
