@@ -1,0 +1,94 @@
+{
+  "main": {
+    "id": "ee5fc29fbfe2e611",
+    "type": "split",
+    "children": [
+      {
+        "id": "f3eea4ef4e8277f6",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_posts/2022-03-21-nineth.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f4fa495c0d21751b",
+    "type": "split",
+    "children": [
+      {
+        "id": "6912a5bfbe989542",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "81d3c94274fe0b53",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "0b4efb4e1dd9e5f2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0bfd8d1c59d08bd8",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b5735e133df8ad0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8cc66b60eafc0d7b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/2022-03-21-nineth.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "f3eea4ef4e8277f6",
+  "lastOpenFiles": [
+    "_posts/2022-03-21-nineth.md",
+    "_posts/2022-03-20-eighth.md"
+  ]
+}
