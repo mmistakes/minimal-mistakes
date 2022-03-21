@@ -21,100 +21,20 @@ search: true
 <center><h6>update.html 하단에 회원탈퇴 링크를 하나 추가한다.</h6></center>
 
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/myinfo_UpdateForm.JPG?raw=true" width="320">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberwithdrawal.JPG?raw=true" width="340">
 </div>
 <br>
 
 ```html
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:font-size="http://www.w3.org/1999/xhtml">
-<head>
-  <meta charset="UTF-8">
-  <title>update.html</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
-  <script>
-    const ajaxUp = () => {
-
-      const id = document.getElementById('memberId').value;
-      const name = document.getElementById('memberName').value;
-      const pw = document.getElementById('memberPw').value;
-      const email = document.getElementById('memberEmail').value;
-      const addr = document.getElementById('memberAddr').value;
-      const phone = document.getElementById('memberPhone').value;
-      const date = document.getElementById('memberDate').value;
-      // const date = $('memberDate').val();
-      const fileName = document.getElementById('memberFilename').value;
-
-      console.log(memberId, memberName, memberPw, memberEmail, memberAddr, memberPhone, memberDate, memberFilename);
-
-      const updateData=JSON.stringify({
-        memberId: id,
-        memberName: name,
-        memberPw: pw,
-        memberEmail: email,
-        memberAddr: addr,
-        memberPhone: phone,
-        memberDate: date,
-        memberFilename: fileName
-      });
-
-      const reqUrl = "/member/"+id;
-      console.log(updateData);
-
-      $.ajax({
-        type: 'put',
-        // enctype: 'multipart/form-data',
-        data: updateData,
-        url:reqUrl,
-        processData: false,
-        contentType: 'application/json', //json으로 보낼때 꼭 써야 함.
-        cache: false,
-        timeout: 600000,
-        success: function(){
-          console.log("???")
-          location.href="/member/update";
-          // location.href="/member/update" + id;
-        },
-        error: function (){
-          alert("Ajax 실패")
-        }
-      });
-      document.updateForm.submit();
-    }
-  </script>
-  
-</head>
-<body>
-<div th:align="center">
-  <h2>회원정보 수정</h2><br>
-  <form id="memberUp" name="updateForm">
-    번호<br>
-    <input type="text" th:name="memberId" id="memberId" th:value="${member.memberId}" readonly><br>
-    이름<br>
-    <input type="text" th:name="memberName" id="memberName" th:value="${member.memberName}"><br>
-    비밀번호<br>
-    <input type="password" th:name="memberPw" id="memberPw" th:value="${member.memberPw}" readonly><br>
-    이메일<br>
-    <input type="email" th:name="memberEmail" id="memberEmail" th:value="${member.memberEmail}" readonly><br>
-    주소<br>
-    <input type="text" th:name="memberAddr" id="memberAddr" th:value="${member.memberAddr}"><br>
-    핸드폰번호<br>
-    <input type="text" th:name="memberPhone" id="memberPhone" th:value="${member.memberPhone}"><br>
-    생년월일<br>
-    <input type="text" th:name="memberDate" id="memberDate" th:value="${member.memberDate}"><br><br>
-    파일네임<br>
-    <input type="text" th:name="memberFilename" id="memberFilename" th:value="${member.memberFilename}"><br><br>
-    <button type="button" th:onclick="ajaxUp()">정보 수정</button>
-  </form><br><br>
-</div>
-
-</body>
-</html>
+        <a href="/member/delete">회원 탈퇴</a>
 ```
 <br>
 
-<center><h6>Update에 사용할 MemberUpdateDTO를 dto pacakage에 만든다.</h6></center>
+<center><h6>회원탈퇴 링크는 member/delete로 링크되며 resources/member 폴더에 delete.html을 만든다.</h6></center>
+
+<div align="center">
+<img src="">
+</div>
 
 
 ```java 
