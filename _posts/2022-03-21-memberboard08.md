@@ -540,5 +540,7 @@ public class MemberDetailDTO {
 <br>
 <center><h6>MemberController와 MemberService 그리고 MemberServiceImpl에서는<br> 기작성되어 있는 delete 메서드를 통해 작업이 진행되기에 별도의 작업이 필요없다.  </h6></center>
 
+<center><h6>여기까지 작업 후 서버를 실행하고 admin으로 로그인하여 회원목록에서 해당 회원의 삭제버튼을 눌러 정상적으로 삭제가 이뤄지는지 확인해본다.  </h6></center>
+
 <br>
 <center><h2>관리자(Admin)파트 끝</h2></center>
