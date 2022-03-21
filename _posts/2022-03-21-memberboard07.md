@@ -33,98 +33,140 @@ search: true
 <center><h6>회원탈퇴 링크는 member/delete로 링크되며 resources/member 폴더에 delete.html을 만든다.</h6></center>
 
 <div align="center">
-<img src="">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberWithdrawalForm.JPG?raw=true" width="350">
 </div>
+<br>
 
+```html
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:font-size="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>회원탈퇴</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
-```java 
-package com.ex.test01.dto;
+</head>
+<body>
+<div th:align="center">
+  <h2>회원 탈퇴</h2>
+  <br><br><br>
+  회원을 탈퇴하시겠습니까?<br><br><br><br>
+  <div>
+    <input type="hidden" id="memberId" name="memberId" th:value="${member.memberId}">
+    <button th:type="button" th:onclick="deleteById([[${member.memberId}]])">확인</button>
+    <button th:type="button" onclick="location.href='/member/update'">취소</button>
+  </div>
+</div><br><br>
+세션값 이메일: <p th:text="${session['loginEmail']}"></p>
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.web.multipart.MultipartFile;
-
-import java.sql.Date;
-
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class MemberUpdateDTO {
-
-    private Long memberId;
-    private String memberName;
-    private String memberPw;
-    private String memberEmail;
-    private String memberAddr;
-    private String memberPhone;
-    private Date memberDate;
-//    private MultipartFile memberFile;
-    private String memberFilename;
-}
+</body>
+</html>
 ```
 <br>
 
-<center><h6>MemberController에 정보 수정을 위한 메서드를 추가해준다.</h6></center>
+<center><h6>MemberController에 회원 탈퇴 화면을 보여주기 위한 메서드를 추가해준다.</h6></center>
 
 ```java 
-    // 수정 처리(PUT)
-    @PutMapping("/{memberId}")
-    public ResponseEntity update(@RequestBody MemberUpdateDTO memberUpdateDTO) throws IllegalStateException, IOException {
-        System.out.println(memberUpdateDTO);
-        ms.update(memberUpdateDTO);
+    // 회원 탈퇴 화면 보여주기
+    @GetMapping("/delete")
+    public String delete(Model model, HttpSession session){
+        String member = (String) session.getAttribute("loginEmail");
+        MemberDetailDTO memberDetailDTO = ms.findByMemberEmail(member);
+        model.addAttribute("member", memberDetailDTO);
+        return "member/delete";
+    }
+```
+<br>
+<center><h6>서버를 실행해서 회원 탈퇴화면이 정상적으로 사용자에게 보여지는지 확인한다.</h6></center>
+<br>
+
+<center><h2>[회원탈퇴 처리 ]</h2></center><br>
+<br>
+<center><h6>delete.html에 회원탈퇴(삭제)를 위한 (script)를 (header)영역에 추가해준다.</h6></center>
+
+```html
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:font-size="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>회원탈퇴</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        const deleteById = (memberId) => {
+
+            console.log(memberId);
+            const reqUrl = "/member/"+memberId;
+            $.ajax({
+                type: 'delete',
+                url:reqUrl,
+                success: function (){
+                    location.href="/";
+                },
+                error: function (){
+
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div th:align="center">
+        <h2>회원 탈퇴</h2>
+        <br><br><br>
+        회원을 탈퇴하시겠습니까?<br><br><br><br>
+        <div>
+            <input type="hidden" id="memberId" name="memberId" th:value="${member.memberId}">
+            <button th:type="button" th:onclick="deleteById([[${member.memberId}]])">확인</button>
+            <button th:type="button" onclick="location.href='/member/update'">취소</button>
+        </div>
+    </div><br><br>
+    세션값 이메일: <p th:text="${session['loginEmail']}"></p>
+
+</body>
+</html>
+```
+<br>
+
+<center><h6>MemberControllerl에 delete 관련 내용을 추가한다.</h6></center>
+
+```java 
+    // 회원 탈퇴 처리하기
+    @DeleteMapping("/{memberId}")
+    public ResponseEntity deleteById(HttpSession session, @PathVariable("memberId") Long memberId) {
+        ms.deleteById(memberId);
+        session.invalidate();
         return new ResponseEntity(HttpStatus.OK);
     }
+
 ```
 <br>
-<center><h6>MemberController 內 ms.update를 클릭하면 MemberService에 내용이 추가된다.</h6></center>
+<center><h6>MemberController에 ms.deleteById를 클릭하면 MemberService에 관련 내용이 추가된다.</h6></center>
 
 ```java 
-Long update(MemberUpdateDTO memberUpdateDTO) throws IllegalStateException, IOException;
+    void deleteById(Long memberId);
 ```
 <br>
-
-<center><h6>MemberServiceImpl에 update 관련 내용을 추가한다.</h6></center>
+<center><h6>MemberServiceImpl에 회원 삭제 관련 내용을 추가한다.</h6></center>
 
 ```java 
-    // 회원 수정
+    // 회원 삭제
     @Override
-    public Long update(MemberUpdateDTO memberUpdateDTO) throws IllegalStateException, IOException {
-        MemberEntity memberEntity = MemberEntity.updateMember(memberUpdateDTO);
-        return mr.save(memberEntity).getMemberId();
+    public void deleteById(Long memberId) {
+        mr.deleteById(memberId);
     }
 ```
 <br>
-<center><h6>MemberEntity에 updateMember 관련 내용을 추가한다.</h6></center>
 
-```java 
-    public static MemberEntity updateMember(MemberUpdateDTO memberUpdateDTO) {
-        MemberEntity memberEntity = new MemberEntity();
-        memberEntity.setMemberId(memberUpdateDTO.getMemberId());
-        memberEntity.setMemberName(memberUpdateDTO.getMemberName());
-        memberEntity.setMemberPw(memberUpdateDTO.getMemberPw());
-        memberEntity.setMemberEmail(memberUpdateDTO.getMemberEmail());
-        memberEntity.setMemberAddr(memberUpdateDTO.getMemberAddr());
-        memberEntity.setMemberPhone(memberUpdateDTO.getMemberPhone());
-        memberEntity.setMemberDate(memberUpdateDTO.getMemberDate());
-//        memberEntity.setMemberFilename(memberUpdateDTO.getMemberFilename());
-        return memberEntity;
-    }
-```
-
-<br>
-<center><h6>여기까지 작성한 후 서버를 실행한다. 로그인을 하고 index에서 내정보 수정(update)을 클릭 후 이름, 주소, 핸드폰번호, 생년월일을 수정해본다. </h6></center>
+<center><h6>여기까지 작성한 후 회원명 zzzzz를 회원탈퇴를 하면 회원은 logout이 되고 index페이지를 띄우게된다.<br>
+DB에서 zzzzz의 데이터가 삭제되었다면 회원탈퇴가 정상적으로 처리된 것이다.  </h6></center>
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/myinfo_UpdateForm.JPG?raw=true" width="320">
 </div>
 <br>
-<center><h6>aaaaa인 주소를 aaaaabbbbb로 수정했다.</h6></center>
-<div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/updateComplete.JPG?raw=true" width="400">
-<br><br>
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/updateDb.JPG?raw=true" width="600">
-</div>
+
+
+
+
 <br><br>
 
 <center><h2>나의 정보수정 끝</h2></center>
