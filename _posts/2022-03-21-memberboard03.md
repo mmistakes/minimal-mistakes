@@ -164,7 +164,33 @@ public class MemberLoginDTO {
 <center><h6>여기까지 작성 후 index 페이지에서 회원가입 후 해당 아이디로 login이 정상적으로 작동하는지 확인한다.</h6></center>
 <br><br><br>
 
+<center><h3>login Session값 보여주기</h3></center>
+<center><h6>사용자가 정상적으로 로그인 한 경우 해당 세션값을 index 페이지 內 보여주기 위한 코드를 작성해준다.</h6></center>
+
+
+
+
 <center><h3>로그아웃</h3></center>
 <center><h6>로그인 된 사용자의 로그아웃을 위해 index 페이지 內 로그아웃 링크를 하나 만들어 준다.</h6></center>
+
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/logoutIndex.jpg?raw=true" width="180">
+</div>
+
+```html
+    <a href="member/logout">로그아웃</a>
+```
+<br><br>
+<center><h6>MemberController에 logout 관련 코드를 추가해준다. 사용자가 로그아웃을 클릭하면 로그아웃이 이뤄지고 index 페이지를 띄워준다.</h6></center>
+
+```java 
+    // 로그아웃
+    @GetMapping("logout")
+    public String logout(HttpSession session){
+        session.invalidate();
+        return "redirect:/";
+    }
+```
+
 
 <center><h2>로그인 & 로그아웃 끝</h2></center>
