@@ -167,15 +167,18 @@ public class MemberLoginDTO {
 <center><h3>login Session값 보여주기</h3></center>
 <center><h6>사용자가 정상적으로 로그인 한 경우 해당 세션값을 index 페이지 內 보여주기 위한 코드를 작성해준다.</h6></center>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/loginSession.jpg?raw=true" width="180">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/loginEmail.jpg?raw=true" width="150">
 </div>
 
 ```html
 세션값 이메일: <p th:text="${session['loginEmail']}"></p>
 ```
-
-
-
+<br>
+<center><h6>아이디와 패스워드를 정상적으로 입력하여 로그인이 되면 로그인 한 Email정보(Session값)을 볼 수 있다. </h6></center>
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/loginSession.jpg?raw=true" width="180">
+</div>
+<br>
 
 <center><h3>로그아웃</h3></center>
 <center><h6>로그인 된 사용자의 로그아웃을 위해 index 페이지 內 로그아웃 링크를 하나 만들어 준다.</h6></center>
