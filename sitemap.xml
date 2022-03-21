@@ -1,5 +1,5 @@
 ---
-layout: null
+
 ---
   <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -13,16 +13,19 @@ layout: null
     {% else %}
     <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
     {% endif %}
+
     {% if post.sitemap.changefreq == null %}
     <changefreq>weekly</changefreq>
     {% else %}
     <changefreq>{{ post.sitemap.changefreq }}</changefreq>
     {% endif %}
+
     {% if post.sitemap.priority == null %}
     <priority>0.5</priority>
     {% else %}
     <priority>{{ post.sitemap.priority }}</priority>
     {% endif %}
+
   </url>
   {% endfor %}
 </urlset>
