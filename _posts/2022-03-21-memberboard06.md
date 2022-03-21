@@ -200,7 +200,10 @@ Long update(MemberUpdateDTO memberUpdateDTO) throws IllegalStateException, IOExc
 <br>
 <center><h6>aaaaa인 주소를 aaaaabbbbb로 수정했다.</h6></center>
 <div align="center">
-<img src="">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/updateComplete.JPG?raw=true" width="400">
+<br>
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/updateDb.JPG?raw=true" width="600">
 </div>
+<br><br>
 
-<center><h2>나의 정보조회 끝</h2></center>
+<center><h2>나의 정보수정 끝</h2></center>
