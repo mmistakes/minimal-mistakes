@@ -427,5 +427,11 @@ public class MemberDetailDTO {
 <br><br>
 <center><h6>이 후 서버 실행 및 admin 로그인 후 회원목록의 해당회원의 조회(Ajax) 버튼을 클릭해서 해당 페이지의 아래에 상세정보가 출력되는지 확인한다.</h6></center>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberDetailAjaxok.JPG?raw=true" width="400"></div><br><br><br>
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberDetailAjaxok.JPG?raw=true" width="400"></div><br><br>
+
+<center><h3>회원 삭제</h3></center>
+<center><h6>회원목록(memberList.html)에 삭제 관련 script를 header영역에 추가해주고 body에도 삭제 버튼 관련 내용을 추가한다.  </h6></center>
+
+
+<br>
 <center><h2>관리자(Admin)파트 끝</h2></center>

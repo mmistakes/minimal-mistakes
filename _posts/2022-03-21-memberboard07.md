@@ -130,14 +130,13 @@ search: true
 <center><h6>MemberControllerl에 delete 관련 내용을 추가한다.</h6></center>
 
 ```java 
-    // 회원 탈퇴 처리하기
+    // 회원 삭제처리(Amdin/MemberList에서 관리자가 Ajax로 삭제)
     @DeleteMapping("/{memberId}")
-    public ResponseEntity deleteById(HttpSession session, @PathVariable("memberId") Long memberId) {
+    public ResponseEntity delete(HttpSession session, @PathVariable("memberId") Long memberId) {
         ms.deleteById(memberId);
         session.invalidate();
         return new ResponseEntity(HttpStatus.OK);
     }
-
 ```
 <br>
 <center><h6>MemberController에 ms.deleteById를 클릭하면 MemberService에 관련 내용이 추가된다.</h6></center>
