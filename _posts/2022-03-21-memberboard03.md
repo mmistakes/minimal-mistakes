@@ -15,9 +15,12 @@ search: true
 {: .notice--success}
 
 <center><h2>02-기본환경 설정 - SpringBoot</h2></center>
-<center><h2>로그인 관련 내용</h2></center><br>
+
+<center><h2>[로그인과 로그아웃]</h2></center><br>
+
 <center><h6>아래와 같은 화면을 보여주기 위해 index.html 內 로그인을 위한 링크를 추가해준다.</h6></center>
-<img src=""
+
+<center><img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/login_index.JPG?raw=true" style=""width="250"></center>
 
 ```html
    <a href="member/login">로그인</a><br><br>
