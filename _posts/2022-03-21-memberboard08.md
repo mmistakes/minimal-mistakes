@@ -39,7 +39,7 @@ search: true
 <center><h6>회원목록은 admin/memberList로 링크되며 resources 폴더에 admin 폴더를 만들고 그 밑에 memberList.html을 만든다. </h6></center>
 
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberList.jpg?raw=true" width="300">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberList_1.jpg?raw=true" width="300">
 </div>
 <br>
 
@@ -85,25 +85,66 @@ search: true
 ```
 <br>
 
-<center><h6>MemberController에 회원 탈퇴 화면을 보여주기 위한 메서드를 추가해준다.</h6></center>
+<center><h6>controller package 內 AdminController를 생성하고 메서드를 추가해준다.</h6></center>
 
 ```java 
-    // 회원 탈퇴 화면 보여주기
-    @GetMapping("/delete")
-    public String delete(Model model, HttpSession session){
-        String member = (String) session.getAttribute("loginEmail");
-        MemberDetailDTO memberDetailDTO = ms.findByMemberEmail(member);
-        model.addAttribute("member", memberDetailDTO);
-        return "member/delete";
+package com.ex.test01.controller;
+
+import com.ex.test01.dto.MemberDetailDTO;
+import com.ex.test01.service.MemberService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpSession;
+import java.util.List;
+
+import static com.ex.test01.common.PagingConst.BLOCK_LIMIT;
+
+@Controller
+@RequiredArgsConstructor
+@RequestMapping("/admin")
+public class AdminController {
+
+    private final MemberService ms;
+
+    @GetMapping("/memberList")
+    public String memberList(Model model, HttpSession session) {
+            List<MemberDetailDTO> memberList = ms.findAll();
+            model.addAttribute("memberList", memberList);
+            return "admin/memberList";
+        }
+```
+<br>
+<center><h6>AdminController 內 ms.findAll을 클릭하면 MemberService에 내용이 추가된다.</h6></center>
+
+```java 
+    List<MemberDetailDTO> findAll();
+```
+<br>
+
+<center><h6>MemberServiceImpl에 관련 내용을 추가한다.</h6></center>
+
+```java 
+    // 회원 목록
+    @Override
+    public List<MemberDetailDTO> findAll() {
+        List<MemberEntity> memberEntityList = mr.findAll();
+        List<MemberDetailDTO> memberList = new ArrayList<>();
+        for (MemberEntity e : memberEntityList) {
+            memberList.add(MemberDetailDTO.toMemberDetailDTO(e));
+        }
+        return memberList;
     }
 ```
 <br>
-<center><h6>서버를 실행해서 회원 탈퇴화면이 정상적으로 사용자에게 보여지는지 확인한다.</h6></center>
-<br>
+<center><h6>여기까지 작성 후 admin@aaa.com으로 로그인하여 회원목록을 조회해 아래와 같이 조회되는지 확인한다. </h6></center>
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberList.jpg?raw=true" width="300">
 
-<center><h2>[회원탈퇴 처리 ]</h2></center><br>
-<br>
-<center><h6>delete.html에 회원탈퇴(삭제)를 위한 (script)를 (header)영역에 추가해준다.</h6></center>
+<br><br>
 
 ```html
 <!DOCTYPE html>
