@@ -426,4 +426,6 @@ public class MemberDetailDTO {
 ```
 <br><br>
 <center><h6>이 후 서버 실행 및 admin 로그인 후 회원목록의 해당회원의 조회(Ajax) 버튼을 클릭해서 해당 페이지의 아래에 상세정보가 출력되는지 확인한다.</h6></center>
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberDetailAjaxok.JPG?raw=true" width="400"></div><br><br><br>
 <center><h2>관리자(Admin)파트 끝</h2></center>
