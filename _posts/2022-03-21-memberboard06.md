@@ -158,7 +158,7 @@ public class MemberUpdateDTO {
     }
 ```
 <br>
-<center><center>MemberController 內 ms.update를 클릭하면 MemberService에 내용이 추가된다.</center></h6>
+<center><h6>MemberController 內 ms.update를 클릭하면 MemberService에 내용이 추가된다.</h6></center>
 
 ```java 
 Long update(MemberUpdateDTO memberUpdateDTO) throws IllegalStateException, IOException;
@@ -178,7 +178,7 @@ Long update(MemberUpdateDTO memberUpdateDTO) throws IllegalStateException, IOExc
 <br>
 <center><h6>MemberEntity에 updateMember 관련 내용을 추가한다.</h6></center>
 
-``` java 
+```java 
     public static MemberEntity updateMember(MemberUpdateDTO memberUpdateDTO) {
         MemberEntity memberEntity = new MemberEntity();
         memberEntity.setMemberId(memberUpdateDTO.getMemberId());
@@ -192,6 +192,7 @@ Long update(MemberUpdateDTO memberUpdateDTO) throws IllegalStateException, IOExc
         return memberEntity;
     }
 ```
+
 <br>
 <center><h6>여기까지 작성한 후 서버를 실행한다. 로그인을 하고 index에서 내정보 수정(update)을 클릭 후 이름, 주소, 핸드폰번호, 생년월일을 수정해본다. </h6></center>
 <div align="center">
