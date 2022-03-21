@@ -5,12 +5,14 @@ author_profile: true
 categories: wide
 ---
 
-My publications can also be found on <a href="https://scholar.google.de/citations?user=MkoDxQkAAAAJ&hl=en" target="_blank">Google Scholar</a> or <a href="https://www.researchgate.net/profile/Christopher-Schindlbeck" target="_blank">Researchgate</a>.
+A list of my publications, categorized into 
 
-# Table Of Contents 
-1. [Journals](#journals) 
-2. [Theses](#theses)
-3. [Conference Proceedings](#conference-proceedings)
+- [Journals](#journals) 
+- [Theses](#theses)
+- [Conference Proceedings](#conference-proceedings)
+
+which can also be found on <a href="https://scholar.google.de/citations?user=MkoDxQkAAAAJ&hl=en" target="_blank">Google Scholar</a> or <a href="https://www.researchgate.net/profile/Christopher-Schindlbeck" target="_blank">ResearchGate</a>.
+
 
 ## Journals
 
