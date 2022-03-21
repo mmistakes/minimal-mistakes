@@ -112,9 +112,10 @@ public interface MemberRepository extends JpaRepository<MemberEntity, Long> {
 ```
 <br>
 
-<center><h6>여기까지 작성 후 서버를 실행한다. 그리고 로그인 후 index 페이지 내 내정보 수정(update) 링크를 클릭 해 아래와 같이 정보가 조회되면 정상이다. </h6></center>
+<center><h6>여기까지 작성 후 서버를 실행한다.</h6></center>
+<center><h6>로그인 후 index 페이지 내 내정보 수정(update) 링크를 클릭 해 아래와 같이 정보가 조회되면 정상이다. </h6></center>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mypageResult.JPG?raw=true" width="450">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/myinfo_UpdateForm.JPG?raw=true" width="320">
 </div>
 
 <center><h2>나의 정보조회 끝</h2></center>
