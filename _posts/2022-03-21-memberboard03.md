@@ -31,7 +31,7 @@ search: true
 
 <h6>로그인을 위한 html을 resources/member 폴더 내 생성해준다, 그리고 아래와 같은 화면을 보여주기 위한 코드를 login.html에 작성해준다. 로그인 창은 form을 사용했고 post를 컨트롤러에 전달한다. </h6>
 <div align="center">
-<img src=""
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/loginForm.JPG?raw=true" width="300"><br><br>
 </div>
 
 ```html
@@ -51,7 +51,7 @@ search: true
 </html>
 ```
 <br>
-<h6>로그인을 위해서는 memberEmail과 memberPassword가 필요하기에 MemberLoginDTO를 만들고 거기에 해당항목을 추가해준다.</h6>
+<h6>로그인을 위해서는 Email과 Password가 필요하기에 dto pacakage 內 MemberLoginDTO를 만들고 해당항목을 추가해준다.</h6>
 
 ```java 
 package com.ex.test01.dto;
@@ -87,7 +87,7 @@ public class MemberLoginDTO {
 <center><h6>여기까지 작성하면 사용자에게 로그인 화면은 정상적으로 보여지게 된다.</h6></center><br><br>
 
 <center><h>로그인 처리</h></center>
-<center><h6>로그인 처리를 위해 MemberController에 코드를 추가해준다.</h6></center><br><br>
+<center><h6>로그인 처리를 위해 MemberController에 코드를 추가해준다. 내용은 정상적으로 로그인 한 경우에는 index 페이지를 띄워주고 로그인 정보가 잘못된 경우에는 "로그인 정보가 잘못되었습니다."라는 알림창을 띄워주고 사용자가 확인을 누를 경우 다시 login창을 띄워주도록 구성한다. 이 알림창을 띄우기 위해서는 resources 폴더 內 message.html을 만들어준다. </h6></center><br><br>
 
 ```java 
     // 로그인 처리
@@ -105,6 +105,33 @@ public class MemberLoginDTO {
     }
 ```
 <br>
+<center><h6>message.html</h6></center>
+
+```html
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <script th:inline="javascript">
+
+    /*<![CDATA[*/
+    var message = [[${message}]];
+    alert(message);
+
+    location.replace([[${searchUrl}]]);
+    /*]]>*/
+
+  </script>
+
+</head>
+<body>
+
+</body>
+</html>
+```
+<br><br>
 <center><h6>빨간색 처리 된 ms.login을 클릭하면 MemberService에 아래 메서드가 자동으로 추가된다.</h6></center>
 
 ```java 
