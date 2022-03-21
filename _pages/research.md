@@ -10,7 +10,7 @@ My publications can also be found on <a href="https://scholar.google.de/citation
 # Table Of Contents 
 1. [Journals](#journals) 
 2. [Theses](#theses)
-3. [Conference Proceedings](#conferenceproceedings)
+3. [Conference Proceedings](#conference-proceedings)
 
 ## Journals
 
