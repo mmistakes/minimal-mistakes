@@ -299,8 +299,95 @@ public class MemberDetailDTO {
 
 <br><br><br>
 
-<center><h3>회원리스트(findAll)에 회원 상세정보를 화면 하단에 실시간으로 보여주는 기능 구현(Ajax)</h3></center>
+<center><h3>회원리스트(memberList)에 회원 상세정보를 화면 하단에 실시간으로 보여주는 기능 구현(Ajax)</h3></center><br>
+
+<center><h6>회원목록(memberList)에서 ajax로 회원 상세정보를 화면 하단에 보여주는 버튼과 Ajax script를 작성한다.</h6></center>
+
+```html
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>memberList</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script>
+        // function detail(boardId){
+        const detail = (memberId) => {
+            console.log(memberId);
+            const reqUrl = "/member/" + memberId;
+            $.ajax({
+                type: 'post',
+                url: reqUrl,
+                dataType: 'json',
+                success: function(result) {
+                    console.log(result);
+                    let output = "";
+                    output += "<table>\n" +
+                        "    <thead>\n" +
+                        "    <tr>\n" +
+                        "        <th>번호</th>\n" +
+                        "        <th>이름</th>\n" +
+                        "        <th>이메일</th>\n" +
+                        "        <th>주소</th>\n" +
+                        "        <th>전화번호</th>\n" +
+                        "        <th>생년월일</th>\n" +
+                        "        <th>파일이름</th>\n" +
+                        "    </tr>\n" +
+                        "    </thead>\n" +
+                        "    <tbody>\n" +
+                        "        <tr>\n" +
+                        "            <td>"+result.memberId + "</td>\n" +
+                        "            <td>"+result.memberName + "</td>\n" +
+                        "            <td>"+result.memberEmail+ "</td>\n" +
+                        "            <td>"+result.memberAddr+ "</td>\n" +
+                        "            <td>"+result.memberPhone + " </td>\n" +
+                        "            <td>"+result.memberDate + " </td>\n" +
+                        "            <td>"+result.memberFilename + " </td>\n" +
+                        "        </tr>\n" +
+                        "    </tbody>\n" +
+                        "</table>"
+                    document.getElementById("member-detail").innerHTML = output;
+                },
+                error: function() {
+                    alert('ajax 실패');
+                }
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+
+<table>
+  <thead>
+    <tr>
+        <th>회원번호</th>
+        <th>이름</th>
+<!--        <th>비밀번호</th>-->
+        <th>이메일</th>
+        <th>회원 조회</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr th:each="member: ${memberList}">
+          <td th:text="${member.memberId}"></td>
+          <td><a th:href="@{|/member/${member.memberId}|}">
+              <span th:text="${member.memberName}"></span></a></td>
+          <td th:hidden="${member.memberPw}"></td>
+          <td th:text="${member.memberEmail}"></td>
+          <td><button th:onclick="detail([[${member.memberId}]])">조회(Ajax)</button></td>
+      </tr>
+  </tbody>
+</table>
+<br><br><br>
+    <div id="member-detail"></div>
+
+</body>
+</html>
+```
+<br><br>
 
 
 
-<center><h2>회원탈퇴 끝</h2></center>
+<center><h2>관리자(Admin)파트 끝</h2></center>
