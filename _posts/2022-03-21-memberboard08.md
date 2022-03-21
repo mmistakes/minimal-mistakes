@@ -39,7 +39,7 @@ search: true
 <center><h6>회원목록은 admin/memberList로 링크되며 resources 폴더에 admin 폴더를 만들고 그 밑에 memberList.html을 만든다. </h6></center>
 
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/adminMemberList.jpg?raw=true" width="200">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberList.jpg?raw=true" width="300">
 </div>
 <br>
 
