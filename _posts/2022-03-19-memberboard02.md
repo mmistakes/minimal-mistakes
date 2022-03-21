@@ -188,57 +188,6 @@ spring:
     }
   </style>
 
-  <script>
-    /* 아이디 입력을 하는 동안에 idDuplicate() 함수를 호출하고 입력된 값을 콘솔에 출력 */
-    function emailDp() {
-      const id = document.getElementById('memberEmail').value;
-      console.log(id);
-      const checkResult = document.getElementById('emailCheck');
-      $.ajax({
-        type: 'post', // 전송방식(get, post, put 등)
-        url: '/member/emailDp', // 요청주소(controller로 요청하는 주소)
-        data: {'memberEmail': id},  // 전송할 데이터
-        dataType: 'text', // 요청 후 리턴받을 때의 데이터 형식
-        success: function (result) { // 요청이 성공적으로 처리됐을때 실행 할 함수
-          console.log('ajax 성공');
-          console.log(result); // MemberController에서 넘어온 result값 찍어보기(ok or no)
-          if (result == "ok") {
-            checkResult.style.color = 'green';
-            checkResult.innerHTML = '멋진 아이디네요!!';
-          } else {
-            checkResult.style.color = 'red';
-            checkResult.innerHTML = '이미 사용중인 아이디입니다.';
-          }
-        },
-        error: function () { // 요청이 실패했을때 실행 할 함수
-          console.log('오타 찾으세요.');
-        }
-      });
-    }
-  </script>
-
-  <script type="text/javascript">
-    $(function(){
-      $("#alert-success").hide();
-      $("#alert-danger").hide();
-      $("input").keyup(function(){
-        var pwd1=$("#pwd1").val();
-        var pwd2=$("#pwd2").val();
-        if(pwd1 != "" || pwd2 != ""){
-          if(pwd1 == pwd2){
-            $("#alert-success").show();
-            $("#alert-danger").hide();
-            $("#submit").removeAttr("disabled");
-          }else{
-            $("#alert-success").hide();
-            $("#alert-danger").show();
-            $("#submit").attr("disabled", "disabled");
-          }
-        }
-      });
-    });
-  </script>
-
 </head>
 <body>
 <div th:align="center">
@@ -534,4 +483,256 @@ public interface MemberRepository extends JpaRepository<MemberEntity, Long> {
 ###### 여기까지 작성 완료 후 서버를 가동한 후 회원가입을 실제 진행해본다. mysql db에서 select * from member_table;로 가입한 회원정보가 정상적으로 들어왔다면 회원가입은 정상적으로 이뤄진 것이다.
 ![](https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/MemberSaveDB.JPG?raw=true)
 
-### 회원가입 끝
+
+<center><h6>사용자에게 비밀번호를 재입력받아 비밀번호 일치 여부를 확인해주는 코드를 작성한다. save.html 內 header 영역에 아래와 같이 scrpit를 작성한다. </h6></center>
+
+```html
+  <script type="text/javascript">
+    $(function(){
+      $("#alert-success").hide();
+      $("#alert-danger").hide();
+      $("input").keyup(function(){
+        var pwd1=$("#pwd1").val();
+        var pwd2=$("#pwd2").val();
+        if(pwd1 != "" || pwd2 != ""){
+          if(pwd1 == pwd2){
+            $("#alert-success").show();
+            $("#alert-danger").hide();
+            $("#submit").removeAttr("disabled");
+          }else{
+            $("#alert-success").hide();
+            $("#alert-danger").show();
+            $("#submit").attr("disabled", "disabled");
+          }
+        }
+      });
+    });
+  </script>
+```
+
+<center><h6> save.html 본문 內 비밀번호 관련 파트는 아래와 같이 작성한다. </h6></center>
+
+```html
+    비밀번호<br>
+    <input type="password" th:field="*{memberPw}" id="pwd1" placeholder="비밀번호: 5~20자로 입력해주세요." required>
+      <p th:if="${#fields.hasErrors('memberPw')}" th:errors="*{memberPw}" th:errorclass="field-error"></p><br>
+    비밀번호 확인<br>
+    <input type="password" id="pwd2" placeholder="비밀번호 확인: 비밀번호를 다시 입력해주세요." required><br><br>
+      <div class="alert alert-success" style="color: green" id="alert-success">비밀번호가 일치합니다.</div><br>
+      <div class="alert alert-danger" style="color: red" id="alert-danger">비밀번호가 일치하지 않습니다.</div>
+```
+
+<center><h4> Email 중복 여부 체크 </h4></center>
+<center><h6> Email 중복 여부 체크 기능 구현을 위해 save.html 內 header 영역에 아래와 같이 작성한다. </h6></center>
+
+```html
+  <script>
+  /* 아이디 입력을 하는 동안에 idDuplicate() 함수를 호출하고 입력된 값을 콘솔에 출력 */
+  function emailDp() {
+    const id = document.getElementById('memberEmail').value;
+    console.log(id);
+    const checkResult = document.getElementById('emailCheck');
+    $.ajax({
+      type: 'post', // 전송방식(get, post, put 등)
+      url: '/member/emailDp', // 요청주소(controller로 요청하는 주소)
+      data: {'memberEmail': id},  // 전송할 데이터
+      dataType: 'text', // 요청 후 리턴받을 때의 데이터 형식
+      success: function (result) { // 요청이 성공적으로 처리됐을때 실행 할 함수
+        console.log('ajax 성공');
+        console.log(result); // MemberController에서 넘어온 result값 찍어보기(ok or no)
+        if (result == "ok") {
+          checkResult.style.color = 'green';
+          checkResult.innerHTML = '멋진 아이디네요!!';
+        } else {
+          checkResult.style.color = 'red';
+          checkResult.innerHTML = '이미 사용중인 아이디입니다.';
+        }
+      },
+      error: function () { // 요청이 실패했을때 실행 할 함수
+        console.log('오타 찾으세요.');
+      }
+    });
+  }
+</script>
+
+```
+
+<center><h6> Email 중복 여부 체크 기능 구현을 위해 save.html 內 본문 영역에 아래와 같이 작성한다. </h6></center>
+
+```html
+    이메일<br>
+    <input type="email" th:field="*{memberEmail}"  onblur="emailDp()" placeholder="이메일: 5~50자로 입력해주세요"><br>
+    <span id="emailCheck"></span>
+      <p th:if="${#fields.hasErrors('memberEmail')}" th:errors="*{memberEmail}" th:errorclass="field-error"></p><br><br>
+```
+
+<center><h6> 여기까지 작성 후 MemberController에 아래와 같이 작성한다. </h6></center>
+
+```java 
+    // 이메일 중복 체크
+    @PostMapping("/emailDp")
+    @ResponseBody
+    public String emailDp(@RequestParam("memberEmail") String memberEmail) {
+        System.out.println("MemberController.emailDp :" + memberEmail);
+        String result = ms.emailDp(memberEmail);
+        return result;
+    }
+```
+
+<center><h6> 위와 같이 작성을 하면 emailDp 부분이 빨간색으로 뜨고 그 부분을 클릭하면 MemberService에 아래와 같이 메서드가 자동으로 작성되어진다. </h6></center>
+
+```java 
+public interface MemberService {
+    String emailDp(String memberEmail);
+    }
+```
+
+<center><h6> 위 항목에서 또 emailDp 부분이 빨간색으로 뜨고 그 부분을 클릭하면 MemberServiceImpl에 아래와 같이 메서드가 자동으로 작성되어지고 거기에 코드를 추가해준다. </h6></center>
+
+```java 
+    // 이메일 중복
+    @Override
+    public String emailDp(String memberEmail) {
+        MemberEntity result = mr.findByMemberEmail(memberEmail);
+        if (result == null)
+            return "ok";
+        else
+            return "no";
+    }
+```
+<center><h6> 위 항목에서 mr.findByMemberEmail 부분이 빨간색으로 뜨고 그 부분을 클릭하면 MemberRepository에 아래와 같이 메서드가 자동으로 작성되어진다. 여기까지 했으면 email 중복 체크 여부 기능이  회원가입 시 Email을 기입하자 마자 나타나는 결과메세지로 정상적으로 작동되는지 확인할 수 있다. </h6></center>
+
+```java 
+public interface MemberRepository extends JpaRepository<MemberEntity, Long> {
+    MemberEntity findByMemberEmail(String memberEmail);
+    }
+```
+
+<center><h6> 아래는 위의 내용이 모두 포함된 save.html의 전체 코드이다. </h6></center>
+
+```html
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:font-size="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>save.html</title>
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+  <style>
+    .field-error {
+      color:red;
+    }
+  </style>
+
+  <script>
+    /* 아이디 입력을 하는 동안에 idDuplicate() 함수를 호출하고 입력된 값을 콘솔에 출력 */
+    function emailDp() {
+      const id = document.getElementById('memberEmail').value;
+      console.log(id);
+      const checkResult = document.getElementById('emailCheck');
+      $.ajax({
+        type: 'post', // 전송방식(get, post, put 등)
+        url: '/member/emailDp', // 요청주소(controller로 요청하는 주소)
+        data: {'memberEmail': id},  // 전송할 데이터
+        dataType: 'text', // 요청 후 리턴받을 때의 데이터 형식
+        success: function (result) { // 요청이 성공적으로 처리됐을때 실행 할 함수
+          console.log('ajax 성공');
+          console.log(result); // MemberController에서 넘어온 result값 찍어보기(ok or no)
+          if (result == "ok") {
+            checkResult.style.color = 'green';
+            checkResult.innerHTML = '멋진 아이디네요!!';
+          } else {
+            checkResult.style.color = 'red';
+            checkResult.innerHTML = '이미 사용중인 아이디입니다.';
+          }
+        },
+        error: function () { // 요청이 실패했을때 실행 할 함수
+          console.log('오타 찾으세요.');
+        }
+      });
+    }
+  </script>
+
+    <script type="text/javascript">
+        $(function(){
+            $("#alert-success").hide();
+            $("#alert-danger").hide();
+            $("input").keyup(function(){
+                var pwd1=$("#pwd1").val();
+                var pwd2=$("#pwd2").val();
+                if(pwd1 != "" || pwd2 != ""){
+                    if(pwd1 == pwd2){
+                        $("#alert-success").show();
+                        $("#alert-danger").hide();
+                        $("#submit").removeAttr("disabled");
+                    }else{
+                        $("#alert-success").hide();
+                        $("#alert-danger").show();
+                        $("#submit").attr("disabled", "disabled");
+                    }
+                }
+            });
+        });
+    </script>
+
+</head>
+<body>
+  <div th:align="center">
+      <span style=" font-size:1.5em; color: black;" th:align="center" >회원 가입</span><br><br>
+  <form action="/member/save" method="post" enctype="multipart/form-data" th:object="${member}">
+    <div th:if="${#fields.hasGlobalErrors()}">
+      <p class="field-error" th:each="err: ${#fields.globalErrors()}" th:text="${err}">글로벌오류</p>
+    </div>
+    이름<br>
+    <input type="text" th:field="*{memberName}"   placeholder="이름: 2~50자로 입력해주세요">
+      <p th:if="${#fields.hasErrors('memberName')}" th:errors="*{memberName}" th:errorclass="field-error"></p><br><br>
+
+    비밀번호<br>
+    <input type="password" th:field="*{memberPw}" id="pwd1" placeholder="비밀번호: 5~20자로 입력해주세요." required>
+      <p th:if="${#fields.hasErrors('memberPw')}" th:errors="*{memberPw}" th:errorclass="field-error"></p><br>
+    비밀번호 확인<br>
+    <input type="password" id="pwd2" placeholder="비밀번호 확인: 비밀번호를 다시 입력해주세요." required><br><br>
+      <div class="alert alert-success" style="color: green" id="alert-success">비밀번호가 일치합니다.</div><br>
+      <div class="alert alert-danger" style="color: red" id="alert-danger">비밀번호가 일치하지 않습니다.</div>
+
+    이메일<br>
+    <input type="email" th:field="*{memberEmail}"  onblur="emailDp()" placeholder="이메일: 5~50자로 입력해주세요"><br>
+    <span id="emailCheck"></span>
+      <p th:if="${#fields.hasErrors('memberEmail')}" th:errors="*{memberEmail}" th:errorclass="field-error"></p><br><br>
+
+    주소<br>
+    <input type="text" th:field="*{memberAddr}"  placeholder="주소">
+      <p th:if="${#fields.hasErrors('memberAddr')}" th:errors="*{memberAddr}" th:errorclass="field-error"></p><br><br>
+
+    핸드폰 번호<br>
+    <input type="text" th:field="*{memberPhone}"  placeholder="핸드폰번호: 10~11자로 숫자만 입력해주세요">
+      <p th:if="${#fields.hasErrors('memberPhone')}" th:errors="*{memberPhone}" th:errorclass="field-error"></p><br><br>
+
+    생년월일<br>
+    <input type="date" th:field="*{memberDate}"  placeholder="생년월일"><br><br>
+      <span style=" font-size:0.8em; color: black;" th:align="center" >프로필 사진</span><br>
+      <input type="file" th:field="*{memberFile}" placeholder="프로필 사진"><br><br>
+    <input type="submit"  value="회원가입">
+
+  </form>
+  </div>
+
+</body>
+</html>
+
+```
+
+<center><h6>위 내용을 보면 알 수 있듯이 thymeleaf와 ajax 사용을 위해 jquery도 선언을 하였다.</h6></center>
+
+```html
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:font-size="http://www.w3.org/1999/xhtml">
+```
+
+```html
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+```
+
+<center><h6>save.html 내용 중 글로벌오류 관련 내용은 향 후 추가토록 하겠다.</h6></center>
+
+<center><h2>회원가입 끝</h2></center>
