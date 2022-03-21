@@ -18,17 +18,18 @@ search: true
 
 <center><h2>[수정화면에 바로 나의 정보조회를 표시]</h2></center><br>
 
-<center><h6>나의 정보조회 링크를 index.html에  추가해준다.</h6></center>
+<center><h6>내정보 수정(update) 링크를 index.html에  추가해준다.</h6></center>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/myinfo_findById.jpg?raw=true" width="160">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/mypage_upadte.jpg?raw=true" width="170">
 </div>
 <br>
 
 ```html
-    <a href="member/mypage">나의정보 조회</a><br><br>
+    <a href="member/update">내정보 수정(update)</a><br><br>
 ```
 <br>
 
+<center><h6>내정보 수정(update)를 보여주기 위한 update.html을 resources/member 폴더 內에 만들어준다.</h6></center>
 
 
 <center><h2>나의 정보조회 끝</h2></center>
