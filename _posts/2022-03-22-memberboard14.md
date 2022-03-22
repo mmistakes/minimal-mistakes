@@ -74,6 +74,74 @@ search: true
         <input type="text" name="commentContents" id="commentContents" placeholder="내용"><br>
         <button id="comment-write-btn">댓글등록</button>
       </div>
+      <div>
+      <h3>-------------------------------------------------------------------------------------</h3>
+      <div id="comment-area">
+        <table>
+          <thead>
+          <tr>
+            <th>댓글번호</th>
+            <th>내용</th>
+            <th>작성자</th>
+            <th>작성시간</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr th:each="comment: ${commentList}">
+            <td th:text="${comment.commentId}" id="commentId"></td>
+            <td th:text="${comment.commentContents}"></td>
+            <td th:text="${comment.commentWriter}"></td>
+            <td th:text="${comment.createTime}"></td>
+            <td><input type="button" th:if="${comment.commentWriter}==${session.loginEmail}" th:onclick="deleteById([[${comment.commentId}]])" value="삭제"></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    </body>
+
+    <script>
+      $("#comment-write-btn").click(function (){
+        console.log('댓글등록 버튼 클릭');
+        const commentWriter = $("#commentWriter").val();
+        const commentContents = $("#commentContents").val();
+        const boardId = '[[${board.boardId}]]';
+        console.log(commentWriter, commentContents, boardId);
+        $.ajax({
+          type: 'post',
+          url: '/comment/save',
+          data:{
+            'commentWriter': commentWriter,
+            'commentContents': commentContents,
+            'boardId': boardId
+          },
+          dataType: 'json',
+          success: function (result){
+            let output = "<table>";
+            output += "<tr><th>댓글번호</th>";
+            output += "<th>작성자</th>";
+            output += "<th>내용</th>";
+            output += "<th>작성시간</th></tr>";
+            for ( let i in result) {
+              output += "<tr>";
+              output += "<td>" + result[i].commentId + "</td>";
+              output += "<td>" + result[i].commentWriter + "</td>";
+              output += "<td>" + result[i].commentContents + "</td>";
+              output += "<td>" + result[i].createTime + "</td>";
+              output += "</tr>";
+            }
+            output += "</table>";
+            document.getElementById('comment-area').innerHTML = output;
+            document.getElementById('commentContents').value = '';
+            location.reload();
+          },
+          error: function (){
+            alert('ajax 실패');
+          }
+        });
+      });
+    </script>
     </body>
     </html>
 ```
@@ -323,11 +391,11 @@ public class CommentServiceImpl implements CommentService{
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentSaveTry.jpg?raw=true" width="500"><br><br>
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentListOk.JPG?raw=true" width="500"><br><br>
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardDeleteDB.JPG?raw=true" width="700">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentSaveDb.JPG?raw=true" width="700">
 </div>
 <br>
-<center><h6>상기와 같이 글삭제가 정상적으로 반영이 되었다면 Ajax를 이용한 글삭제 구현은 완료되었다.</h6></center><br>
+<center><h6>상기와 같이 댓글이 정상적으로 저장이 되고 댓글 목록이 출력되었다면 해당 기능은 정상적으로 구현되었다.</h6></center><br>
 
 <br>
 
-<center><h2>게시판 글삭제(board/delete) 파트 끝</h2></center>
+<center><h2>댓글 등록(comment/save) & 댓글 목록(comment/findAll) 파트 끝</h2></center>
