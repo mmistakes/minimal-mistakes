@@ -63,4 +63,4 @@ nRF Command Line Tool (이하 <span style="color:#50A0A0"><b>nRF Tool</b></span>
 
 * **[https://infocenter.nordicsemi.com/index.jsp?topic=%2Fug_nrf_cltools%2FUG%2Fcltools%2Fnrf_command_line_tools_lpage.html](https://infocenter.nordicsemi.com/index.jsp?topic=%2Fug_nrf_cltools%2FUG%2Fcltools%2Fnrf_command_line_tools_lpage.html)**
 
->위 링크의 명령어들 중 실제로 자주 사용할만한 명령어 및 실제 사용 예시에 대해서도 소개하려고 했는데, 생각보다 글이 길어지는 것 같아서 다음 포스트에 이어서 설명할 예정이다.
+>위 링크의 명령어들 중 실제로 자주 사용할만한 명령어와 사용 예시에 대해서도 소개하려고 했는데, 생각보다 글이 길어지는 것 같아서 다음 포스트에 이어서 설명할 예정이다.
