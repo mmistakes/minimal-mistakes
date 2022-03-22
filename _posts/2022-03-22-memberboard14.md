@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "13-회원제 게시판 만들기_SpringBoot와 JPA"
+title: "14-회원제 게시판 만들기_SpringBoot와 JPA"
 categories: memberboard
 tag: [springbot, jpa]
 toc: true
@@ -16,13 +16,12 @@ search: true
 
 <center><h2>04-게시판(board)파트 - SpringBoot</h2></center>
 
-<center><h2>[게시판-글삭제]</h2></center><br>
+<center><h2>[게시판-댓글]</h2></center><br>
 
-<center><h3>[첫번재-글삭제 화면 보여주기]</h3></center><br>
+<center><h3>[첫번재-댓글등록 화면 보여주기]</h3></center><br>
 
-<center><h6>글 상세정보 조회화면(findById.html)에 회원이 로그인해서 쓴 글 중 <br>
-            자신이 쓴 글에 대해서는 삭제 링크가 보이게 내용을 추가한다.<br> 
-            삭제 링크를 클릭하면 글 삭제화면(delete.html)으로 이동되도록 한다.<br>
+<center><h6>글목록(findAll)에서 조회하고자 하는 글을 클릭하여 글상세화면(findById)으로 들어가<br>
+            해당 글의 하단에 댓글을 쓸 수 있는 양식을 작성한다. 로그인을 하지 않은 경우에는 
             </h6></center>
 
 <div align="center">
@@ -31,49 +30,51 @@ search: true
 <br>
 
 ```html
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-</head>
-<body>
-<div th:align="center">
-  <h2>상세글</h2>
-
-  <table>
-    <thead>
-    <tr>
-      <td>번호</td>
-      <td>제목</td>
-      <td>작성자</td>
-      <td>내용</td>
-      <!--        <td>프로필 사진</td>-->
-      <td>조회수</td>
-      <td>작성일자</td>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td th:text="${board.boardId}"></td>
-      <td th:text="${board.boardTitle}"></td>
-      <td th:text="${board.boardWriter}"></td>
-      <td th:text="${board.boardContents}"></td>
-      <!--        <td><img th:src="@{/boardImg/}+${board.boardFilename}" alt="프로필사진"></td>-->
-      <td th:text="${board.boardHits}"> </td>
-      <td th:text="${board.boardDate}"></td>
-      <td><a th:if="${session.loginEmail}==${board.boardWriter}" th:href="@{|/board/update/${board.boardId}|}">수정</a></td>
-      <td><a th:if="${session.loginEmail}==${board.boardWriter}" th:href="@{|/board/delete/${board.boardId}|}">삭제</a></td>      
-    </tr>
-    </tbody>
-  </table>
-  <br><br><br>
-  <div id="comment-write">
-  </div>
-</div>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    </head>
+    <body>
+    <div th:align="center">
+      <h2>상세글</h2>
+    
+      <table>
+        <thead>
+        <tr>
+          <td>번호</td>
+          <td>제목</td>
+          <td>작성자</td>
+          <td>내용</td>
+          <!--        <td>프로필 사진</td>-->
+          <td>조회수</td>
+          <td>작성일자</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td th:text="${board.boardId}"></td>
+          <td th:text="${board.boardTitle}"></td>
+          <td th:text="${board.boardWriter}"></td>
+          <td th:text="${board.boardContents}"></td>
+          <!--        <td><img th:src="@{/boardImg/}+${board.boardFilename}" alt="프로필사진"></td>-->
+          <td th:text="${board.boardHits}"> </td>
+          <td th:text="${board.boardDate}"></td>
+          <td><a th:if="${session.loginEmail}==${board.boardWriter}" th:href="@{|/board/update/${board.boardId}|}">수정</a></td>
+          <td><a th:if="${session.loginEmail}==${board.boardWriter}" th:href="@{|/board/delete/${board.boardId}|}">삭제</a></td>
+        </tr>
+        </tbody>
+      </table>
+      <br><br><br>
+      <div id="comment-write">
+        <input type="text" name="commentWriter" id="commentWriter" th:value="${session.loginEmail}" readonly><br>
+        <input type="text" name="commentContents" id="commentContents" placeholder="내용"><br>
+        <button id="comment-write-btn">댓글등록</button>
+      </div>
+    </body>
+    </html>
 ```
 <br>
 
