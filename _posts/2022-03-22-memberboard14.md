@@ -400,9 +400,12 @@ public class CommentServiceImpl implements CommentService{
 
 <center><h3>[댓글 삭제 기능 구현]</h3></center><br>
 
-<center><h6>글상세조회 화면(findById.html) 하단에 삭제 버튼을 생성하고 삭제버튼을 누를 경우<br>
-            실행될 Ajax Script를 작성한다.</h6></center><br>
+<center><h6>글상세조회 화면(findById.html) 하단에 자신이 작성한 댓글에만 보여지는 삭제 버튼을 생성하고<br>
+            삭제버튼을 누를 경우 실행될 Ajax Script를 작성한다.</h6></center><br>
 <br>
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentDeleteButton.JPG?raw=true" width="500"><br><br>
+</div>
 
 ```html
 <h3>-------------------------------------------------------------------------------------</h3>
@@ -447,5 +450,44 @@ public class CommentServiceImpl implements CommentService{
 
 
 ```
+<br>
+<center><h6>CommentController에 댓글 삭제 관련 메서드를 추가한다.</h6></center>
+
+```java 
+  // 댓글 삭제
+    @DeleteMapping("/{commentId}")
+    public ResponseEntity deleteById(@PathVariable("commentId") Long commentId){
+        cs.deleteById(commentId);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+```
+<br>
+<center><h6>CommentController 內 cs.deleteById를 클릭하면 자동으로 CommentService에 내용이 추가된다.</h6></center>
+
+```java 
+  // 댓글 삭제
+    void deleteById(Long commentId);
+```
+<br>
+<center><h6>CommentServiceImpl에 댓글 삭제 관련 내용을 추가한다.</h6></center>
+
+```java 
+  // 댓글 삭제
+    @Override
+    public void deleteById(Long commentId) {
+        cr.deleteById(commentId);
+    }
+```
+<br>
+<center><h6>여기까지 작성 후 자신이 작성한 댓글을 삭제해본다.</h6></center>
+<center><h6>삭제 前</h6></center>
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentDeleteButton.JPG?raw=true" width="500"><br><br>
+</div><br>
+<center><h6>삭제 後</h6></center>
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentDeleteButton.JPG?raw=true" width="500"><br><br>
+</div>
+
 
 <center><h2>댓글(등록, 삭제, 목록)  파트 끝</h2></center>
