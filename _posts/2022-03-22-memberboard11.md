@@ -220,7 +220,7 @@ public class BoardDetailDTO {
 
 <center><h6>findAll.html에 글상세조회 버튼을(/board/findById)를 추가한다.<br> 
             단 글상세조회는 글상세조회 버튼을 클릭 시 글목록 하단에 글의 상세정보가 나타나며<br>
-            로그인 여부와 관계없이 보이도록 한다.<br>아래의 이미지를 참고하자.
+            로그인 여부와 관계없이 보이도록 한다.<br> 주소형식은 "board/글번호"로 상단의 구현방식과 동일하다.<br>아래의 이미지를 참고하자.
             </h6></center>
 
 <div align="center">
@@ -400,9 +400,16 @@ public class BoardDetailDTO {
 
 <center><h6>여기까지 확인 후 글목록에서 글상세정보(Ajax) 버튼을 클릭하여 하단에 정상적으로 내용이 나오는지 확인한다.</h6></center>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/findAll_ajaxForFindById.JPG?raw=true" width="450">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/findByIdAjaxOk.JPG?raw=true" width="450">
+</div>
+<br>
+<center><h6>상기와 같이 글상세내용이 정상적으로 보여진다면 Ajax를 이용한 글상세내용 조회기능 구현은 완료되었다.</h6></center><br>
+<center><h6>정상적으로 조회된 페이지소스를 브라우저 기능을 이용하여 확인해보면<br>
+            실제 화면에는 4번째 글번호만 출력이 되었지만<br>
+            페이지소스에는 모든 글의 상세정보가 딸려왔음을 확인할 수 있다.</h6></center><br>
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/findByIdAjaxOk.JPG?raw=true" width="450">
 </div>
 <br>
 
-
-<center><h2>게시판 글목록(board/findAll) 파트 끝</h2></center>
+<center><h2>게시판 글상세조회(board/findById) 파트 끝</h2></center>
