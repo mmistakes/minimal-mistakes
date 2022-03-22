@@ -15,7 +15,7 @@ toc_sticky: true
 
 **nRF Command Line Tool** 은 **`nordic`** 사 제품을 개발하고 디버깅하는데 활용되는 소프트웨어로, 처음에 개발환경 셋팅하다보면 같이 설치하게 될 것이다. 초기에 `Keil` 컴파일러 이용해서 개발을 할 당시만해도 softDevice 파일을 업로드하거나 내부 메모리를 초기화 시킬 때는 nRF Command Line Tool 을 이용하기 위해 `nrfjprog` 명령어를 일부 사용했는데, `SEGGER Embedded Studio` 로 개발 플랫폼을 옮긴 뒤부터는 거의 직접적으로는 사용하지 않는 것 같다.
 
-그럼에도 nRF Command Line Tool 이 유용하다고 생각될 때가 있는데.. 아래 포스트에서 볼 수 있듯이 nRF Command Line Tool 을 이용하면 빌드 후에 생성된 최종 소스코드 파일 (예: `.hex` 파일)을 업로드할 수 있는 배치 파일 (`.bat`)을 생성하는데 활용할 수 있다. ⛏️
+그럼에도 nRF Command Line Tool 이 유용하다고 생각될 때가 있는데..⛏️ 아래 포스트에서 볼 수 있듯이 nRF Command Line Tool 을 이용하면 빌드 후에 생성된 최종 소스코드 파일 (예: `.hex` 파일)을 업로드할 수 있는 배치 파일 (`.bat`)을 생성하는데 활용할 수 있다.
 
 * **[https://m.blog.naver.com/chandong83/221771456844](https://m.blog.naver.com/chandong83/221771456844)**
 
