@@ -94,5 +94,10 @@ Map으로 리턴 타입 바꾸니까 안되서 다시 List<CalendarDTO>로 리�
 ![image](https://user-images.githubusercontent.com/86642180/158947763-05ceb15b-f343-43bc-9d71-54f7cd187b81.png)
   
 <br>
+  
+# 추가 - 스프링부트 리다이렉트 방법
+  `return new RedirectView("url");`
+  
+  <br>
 
 # 4. 브라우저에 thymeleaf로 
