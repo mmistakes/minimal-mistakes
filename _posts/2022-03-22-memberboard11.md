@@ -218,9 +218,17 @@ public class BoardDetailDTO {
 <center><h6>상기와 같이 글 상세내용이 정상적으로 보여진다면<br> 새로운 페이지를 띄워 글상세화면을 보여주는 기능구현은 완료되었다.</h6></center><br>
 <br><br>
 
-<center><h3>[두번재-Ajax를 이용하여 글목록 하단에 글상세조회 화면 보여주기]</h3></center><br>
+<center><h3>[두번째-Ajax를 이용하여 글목록 하단에 글상세조회 화면 보여주기]</h3></center><br>
 
+<center><h6>findAll.html에 글상세조회 버튼을(/board/findById)를 추가한다.<br> 
+            단 글상세조회는 글상세조회 버튼을 클릭 시 글목록 하단에 글의 상세정보가 나타나며<br>
+            로그인 여부와 관계없이 보이도록 한다.<br>아래의 이미지를 참고하자.
+            </h6></center>
 
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardFindAllLinkTitle.JPG?raw=true" width="420">
+</div>
+<br>
 
 
 
