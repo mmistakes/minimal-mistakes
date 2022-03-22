@@ -119,6 +119,37 @@ search: true
 </html>
 ```
 <br>
+
+<br>
+<center><h6>해당 필드값으로 구성된 BoardDetailDTO를 dto package에 만들어준다.</h6></center>
+
+```java 
+package com.ex.test01.dto;
+
+import com.ex.test01.entity.BoardEntity;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.sql.Date;
+import java.time.LocalDateTime;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class BoardDetailDTO {
+
+    private Long boardId;
+    private Long memberId;
+    private String boardWriter;
+    private String boardTitle;
+    private String boardContents;
+    private String boardFilename;
+    private LocalDateTime boardDate;
+    private int boardHits;
+    }
+```
+<br>
 <center><h6>BoardController에 글목록을 보여주기 위한 메서드(findAll)를 작성한다.</h6></center>
 
 ```java 
