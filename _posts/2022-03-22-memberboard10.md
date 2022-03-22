@@ -190,9 +190,9 @@ public interface BoardRepository extends JpaRepository<BoardEntity, Long> {
 
 <center><h6>여기까지 작성 후 index화면에서 글목록을 눌러 기작성되어 있던 글들의 목록이 보여지는지 확인한다. </h6></center>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardSaveDb.jpg?raw=true" width="700"></div>
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardFindAllOk.JPG?raw=true" width="370"></div>
 
-<center><h6>상기와 같이 작성한 글이 DB에 정상적으로 저장이 되었다면 글쓰기 기능구현은 완료되었다.</h6></center><br>
+<center><h6>상기와 같이 글목록이 정상적으로 보여진다면 글목록 기능구현은 완료되었다.</h6></center><br>
 
 
-<center><h2>게시판 글쓰기(board/save) 파트 끝</h2></center>
+<center><h2>게시판 글목록(board/findAll) 파트 끝</h2></center>
