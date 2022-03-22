@@ -24,7 +24,7 @@ search: true
             </h6></center>
 
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardFindAll.JPG?raw=true" width="140">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardFindAllLinkTitle.JPG?raw=true" width="420">
 </div>
 <br>
 
