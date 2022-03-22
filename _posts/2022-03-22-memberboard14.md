@@ -21,11 +21,12 @@ search: true
 <center><h3>[첫번재-댓글등록 화면 보여주기]</h3></center><br>
 
 <center><h6>글목록(findAll)에서 조회하고자 하는 글을 클릭하여 글상세화면(findById)으로 들어가<br>
-            해당 글의 하단에 댓글을 쓸 수 있는 양식을 작성한다. 로그인을 하지 않은 경우에는 
+            해당 글의 하단에 댓글을 쓸 수 있는 폼을 만든다. 로그인을 하지 않은 경우에는 작성자란이 비활성화되고<br>
+            로그인한 상태에서 작성이 가능하게 구현한다.
             </h6></center>
 
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardDeleteLink.JPG?raw=true" width="450">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentForm.JPG?raw=true" width="550">
 </div>
 <br>
 
@@ -78,141 +79,247 @@ search: true
 ```
 <br>
 
-<center><h6>resources/board 폴더에 글삭제화면(delete.html)을 생성하고 아래와 같이 작성한다.</h6></center>
-
-<div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardDeleteForm.JPG?raw=true" width="350">
-</div>
-
-```html
-    <!DOCTYPE html>
-    <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:font-size="http://www.w3.org/1999/xhtml">
-    <head>
-      <meta charset="UTF-8">
-      <title>글 삭제</title>
-      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    </head>
-    <body>
-    <div th:align="center">
-      <h2>글 삭제</h2>
-      <br><br><br>
-      글을 삭제하시겠습니까?<br><br><br><br>
-      <div>
-        <input type="hidden" id="boardId" name="boardId" th:value="${board.boardId}">
-        <button th:type="button" th:onclick="deleteById([[${board.boardId}]])">확인</button>
-        <button th:type="button" onclick="location.href='/board/findAll'">취소</button>
-      </div>
-    </div><br><br>
-    
-    </body>
-    </html>
-```
-<br>
-<center><h6>BoardController에 글삭제 화면을 보여주기 위한 메서드(update(GetMapping))를 작성한다.<br>
-            주소형식은 "board/delete/글번호"로 작성해준다.<br>
-            글삭제를 취소할 경우 글목록(findAll)화면을 보여준다.</h6></center>
+<center><h6>controller package에 CommentController를 만들고 댓글을 입력하면 댓글이 저장되고<br>
+            기존에 작성된 댓글을 보여주기 위한 메서드(save(PostMapping))를 작성한다.<br>
+            @RequestMapping("/comment")라는 코드를 추가하면 브라우저에서/comment로 들어오는 주소에 대해 <br>
+            controller 內 주소 작성 시 /comment의 주소 뒷부분만 작성하면 되게 만들어준다.</h6></center>
 
 ```java 
-    // 글 삭제 화면 보여주기(/board/delete/5)
-    @GetMapping("/delete/{boardId}")
-    public String delete(Model model, @PathVariable Long boardId){
-        BoardDetailDTO board = bs.findById(boardId);
-        model.addAttribute("board", board);
-        return "/board/delete";
-    }
-```
-<br>
-<center><h6>이 이후부터는 BoardService, BoardServiceImpl의 findById의 프로세스와 동일하기에 이전 글을 참조하면 된다.</h6></center><br>
-
-
-<center><h6>여기까지 작성 후 글 상세조회화면에서 글삭제 링크를 눌러 글 삭제화면이<br> 
-            delete.html에 정상적으로 보여지는지 확인한다. </h6></center>
-<div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardDeleteForm.JPG?raw=true" width="350">
-</div><br>
-
-<center><h6>상기와 같이 글 삭제화면이 정상적으로 보여진다면<br> 글삭제 페이지를 보여주는 기능구현은 완료되었다.</h6></center><br>
-<br><br>
-
-<center><h3>[두번째-Ajax를 이용하여 글 삭제 처리하기]</h3></center><br>
-
-<center><h6>글 삭제화면(delete.html)에서 ajax로 삭제 요청을 Controller로 전달하는 스크립트를 작성한다.</h6></center>
-
-```html
-    <!DOCTYPE html>
-    <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:font-size="http://www.w3.org/1999/xhtml">
-    <head>
-      <meta charset="UTF-8">
-      <title>글 삭제</title>
-      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-      <script>
-        const deleteById = (boardId) => {
+    // 댓글 화면 저장 및 댓글 목록 보여주기
+    package com.ex.test01.controller;
     
-          console.log(boardId);
-          const reqUrl = "/board/"+boardId;
-          $.ajax({
-            type: 'delete',
-            url:reqUrl,
-            success: function (){
-              location.href="/board/findAll";
-            },
-            error: function (){
+    import com.ex.test01.dto.CommentDetailDTO;
+    import com.ex.test01.dto.CommentSaveDTO;
+    import com.ex.test01.service.CommentService;
+    import lombok.RequiredArgsConstructor;
+    import org.springframework.http.HttpStatus;
+    import org.springframework.http.ResponseEntity;
+    import org.springframework.stereotype.Controller;
+    import org.springframework.web.bind.annotation.*;
     
-            }
-          });
+    import java.util.List;
+    
+    @Controller
+    @RequiredArgsConstructor
+    @RequestMapping("/comment")
+    public class CommentController {
+    
+        private final CommentService cs;
+    
+      // 댓글 저장과 댓글 목록 보여주기
+        @PostMapping("/save")
+        public @ResponseBody
+        List<CommentDetailDTO> save(@ModelAttribute CommentSaveDTO commentSaveDTO){
+            cs.save(commentSaveDTO);
+            List<CommentDetailDTO> commentList = cs.findAll(commentSaveDTO.getBoardId());
+            return commentList;
         }
-      </script>
-    </head>
-    <body>
-    <div th:align="center">
-      <h2>글 삭제</h2>
-      <br><br><br>
-      글을 삭제하시겠습니까?<br><br><br><br>
-      <div>
-        <input type="hidden" id="boardId" name="boardId" th:value="${board.boardId}">
-        <button th:type="button" th:onclick="deleteById([[${board.boardId}]])">확인</button>
-        <button th:type="button" onclick="location.href='/board/findAll'">취소</button>
-      </div>
-    </div><br><br>
+    }
+```
+<br>
+<center><h6>상기의 필드로 구성된 CommentSaveDTO와 CommentDetailDTO를 dto package에 만들어준다.</h6></center><br>
+<center><h6>CommentSaveDTO</h6></center><br>
+
+```java 
+    package com.ex.test01.dto;
     
-    </body>
-    </html>
-```
-<br>
-
-<br>
-<center><h6>BoardController에서 글삭제처리(delete(Delete Mapping)) 메서드를 추가해준다.</h6></center>
-
-```java 
-    // Ajax를 이용한 글 삭제 처리
-    @DeleteMapping("/{boardId}")
-    public ResponseEntity deleteById(HttpSession session, @PathVariable("boardId") Long boardId) {
-        bs.deleteById(boardId);
-        return new ResponseEntity(HttpStatus.OK);
+    import lombok.AllArgsConstructor;
+    import lombok.Data;
+    import lombok.NoArgsConstructor;
+    
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public class CommentSaveDTO {
+    
+        private Long commentId;
+        private Long memberId;
+        private Long boardId;
+        private String commentWriter;
+        private String commentContents;
+    
     }
 ```
 <br>
-<center><h6>BoardController에서 빨간줄이 있는 bs.deleteById를 클릭하면 BoardService 하단의 내용이 자동으로 생성된다.</h6></center>
+<center><h6>CommentDetailDTO</h6></center>
 
 ```java 
-    // 글 삭제처리
-    void deleteById(Long boardId);
+package com.ex.test01.dto;
+
+import com.ex.test01.entity.CommentEntity;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+
+public class CommentDetailDTO {
+
+    private Long commentId;
+    private Long memberId;
+    private Long boardId;
+    private String commentWriter;
+    private String commentContents;
+    private LocalDateTime createTime;
+    private LocalDateTime updateTime;
+
+    public static CommentDetailDTO toCommentDetailDTO(CommentEntity c) {
+        CommentDetailDTO commentDetailDTO = new CommentDetailDTO();
+        commentDetailDTO.setCommentId(c.getCommentId());
+        commentDetailDTO.setCommentWriter(c.getCommentWriter());
+        commentDetailDTO.setCommentContents(c.getCommentContents());
+        commentDetailDTO.setCreateTime(c.getCreateTime());
+        commentDetailDTO.setUpdateTime(c.getUpdateTime());
+        commentDetailDTO.setMemberId(c.getMemberEntity().getMemberId());
+        commentDetailDTO.setBoardId(c.getBoardEntity().getBoardId());
+        return commentDetailDTO;
+    }
+}
 ```
 <br>
-<center><h6>BoardServiceImpl에 글삭제 관련 내용을 추가한다.</h6></center>
+
+<center><h6>entity package에 CommentEntity를 생성하고 아래와 같이 작성한다.</h6></center>
 
 ```java 
-    // 글 삭제처리
+package com.ex.test01.entity;
+
+import com.ex.test01.dto.CommentSaveDTO;
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.*;
+import java.lang.reflect.Member;
+
+@Entity
+@Getter
+@Setter
+@Table(name="comment_table")
+public class CommentEntity extends BaseEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="commentId")
+    private Long commentId;
+
+    @Column
+    private String commentWriter;
+
+    @Column
+    private String commentContents;
+
+    
+    // 댓글과 게시글의 관계(하나의 게시글에 여러개의 댓글을 달 수 있음)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="boardId")
+    private BoardEntity boardEntity;
+
+    // 댓글과 회원의 관계(한명의 회원이 여러개의 댓글을 달 수 있음)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="memberId")
+    private MemberEntity memberEntity;
+
+
+    public static CommentEntity toSaveComment(CommentSaveDTO commentSaveDTO, MemberEntity memberEntity, BoardEntity boardEntity) {
+    CommentEntity commentEntity = new CommentEntity();
+    commentEntity.setCommentWriter(memberEntity.getMemberEmail());
+    commentEntity.setCommentContents(commentSaveDTO.getCommentContents());
+    commentEntity.setMemberEntity(memberEntity);
+    commentEntity.setBoardEntity(boardEntity);
+    return commentEntity;
+    }
+}
+
+```
+<br>
+
+<center><h6>service package에 CommentService를 interface 형식으로 CommentServiceImpl을 class 형식으로 만들어준다.<br>
+            CommentController에서 빨간 밑줄이 생긴 cs.save와 cs.findAll을 클릭하면 자동으로 CommentService에 <br>
+            해당 내용이 생성된다.</h6></center>
+
+<center><h6>CommentService</h6></center>
+
+```java 
+    // 댓글 저장
+    Long save(CommentSaveDTO commentSaveDTO);
+    
+    // 댓글 목록
+    List<CommentDetailDTO> findAll(Long boardId);
+```
+<br>
+
+<center><h6>CommentServiceImpl에 댓글저장과 댓글목록 관련 내용을 추가한다.</h6></center>
+
+```java 
+package com.ex.test01.service;
+
+import com.ex.test01.dto.CommentDetailDTO;
+import com.ex.test01.dto.CommentSaveDTO;
+import com.ex.test01.entity.BoardEntity;
+import com.ex.test01.entity.CommentEntity;
+import com.ex.test01.entity.MemberEntity;
+import com.ex.test01.repository.BoardRepository;
+import com.ex.test01.repository.CommentRepository;
+import com.ex.test01.repository.MemberRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Service
+@RequiredArgsConstructor
+public class CommentServiceImpl implements CommentService{
+
+    private final CommentRepository cr;
+    private final MemberRepository mr;
+    private final BoardRepository br;
+
+    // 댓글 저장
     @Override
-    public void deleteById(Long boardId) {
-        br.deleteById(boardId);
+    public Long save(CommentSaveDTO commentSaveDTO) {
+        BoardEntity boardEntity = br.findById(commentSaveDTO.getBoardId()).get();
+        MemberEntity memberEntity = mr.findByMemberEmail(commentSaveDTO.getCommentWriter());
+        CommentEntity commentEntity = CommentEntity.toSaveComment(commentSaveDTO, memberEntity, boardEntity);
+        return cr.save(commentEntity).getCommentId();
     }
+
+    // 댓글 목록
+    @Override
+    public List<CommentDetailDTO> findAll(Long boardId) {
+        BoardEntity boardEntity = br.findById(boardId).get();
+        List<CommentEntity> commentEntityList = boardEntity.getCommentEntityList();
+        List<CommentDetailDTO> commentList = new ArrayList<>();
+        for(CommentEntity c:commentEntityList) {
+            CommentDetailDTO commentDetailDTO = CommentDetailDTO.toCommentDetailDTO(c);
+            commentList.add(commentDetailDTO);
+        }
+        return commentList;
+    }
+}
 ```
 <br>
 
-<center><h6>여기까지 확인 후 글삭제 화면에서 확인 버튼을 클릭하여 글 삭제가 이뤄지는지와<br>
-            글삭제 후 글목록 화면이 보여지는지와 글목록에 해당글이 안보이는지 확인한다.<br>
-            또한 DB에서도 해당 글이 삭제되었는지 확인이 가능하다.</h6></center>
+<center><h6>repository package에 CommentRepository를 interface 형식으로 생성한 후 아래와 같이 작성한다.</h6></center>
+
+```java 
+  package com.ex.test01.repository;
+  
+  import com.ex.test01.entity.CommentEntity;
+  import org.springframework.data.jpa.repository.JpaRepository;
+  
+  public interface CommentRepository extends JpaRepository<CommentEntity, Long> {
+  
+  }
+
+```
+<br>
+
+<center><h6>여기까지 작성 후 댓글을 작성 후 저장이 정상적으로 이뤄지는지와<br>
+            댓글 목록이 정상적으로 화면에 보여지는지 확인한다.</h6></center>
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardDeleteTry.JPG?raw=true" width="400"><br><br>
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardDeleteOk.JPG?raw=true" width="550"><br><br>
