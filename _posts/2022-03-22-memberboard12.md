@@ -368,17 +368,12 @@ public class BoardDetailDTO {
 <center><h6>여기까지 확인 후 글수정 화면에서 원하는 항목을 수정 후 버튼을 클릭하여 글 수정이 이뤄지는지와<br>
             글상세정보(findById.html)에도 변경된 정보로 보여지는지 확인한다.</h6></center>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardUpdateTry.JPG?raw=true" width="250"><br>
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardUpdateTry.JPG?raw=true" width="250">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardUpdateTry.JPG?raw=true" width="250"><br><br>
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardUpdateOk.JPG?raw=true" width="550">
 </div>
 <br>
-<center><h6>상기와 같이 글상세내용이 정상적으로 보여진다면 Ajax를 이용한 글상세내용 조회기능 구현은 완료되었다.</h6></center><br>
-<center><h6>정상적으로 조회된 페이지소스를 브라우저 기능을 이용하여 확인해보면<br>
-            실제 화면에는 4번째 글번호만 출력이 되었지만<br>
-            페이지소스에는 모든 글의 상세정보가 딸려왔음을 확인할 수 있다.</h6></center><br>
-<div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/findByIdAjaxOk_PageSource.JPG?raw=true" width="550">
-</div>
+<center><h6>상기와 같이 글수정내용이 정상적으로 반영이 되었다면 Ajax를 이용한 글수정 구현은 완료되었다.</h6></center><br>
+
 <br>
 
-<center><h2>게시판 글상세조회(board/findById) 파트 끝</h2></center>
+<center><h2>게시판 글수정(board/update) 파트 끝</h2></center>
