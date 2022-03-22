@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "10-회원제 게시판 만들기_SpringBoot와 JPA"
+title: "11-회원제 게시판 만들기_SpringBoot와 JPA"
 categories: memberboard
 tag: [springbot, jpa]
 toc: true
@@ -16,9 +16,12 @@ search: true
 
 <center><h2>04-게시판(board)파트 - SpringBoot</h2></center>
 
-<center><h2>[게시판-글목록]</h2></center><br>
+<center><h2>[게시판-글 상세조회]</h2></center><br>
 
-<center><h6>index.html에 글목록 링크(/board/findAll)를 추가한다. 단 글목록은 로그인 여부와 관계없이 보이도록 한다.</h6></center>
+<center><h6>findAll.html에 글상세조회 링크(/board/findById)를 추가한다.<br> 
+            단 글상세조회는 글제목을 클릭 시 글상세조회 페이지로 이동하게 하고<br>
+            로그인 여부와 관계없이 보이도록 한다.<br>
+            </h6></center>
 
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardFindAll.JPG?raw=true" width="140">
@@ -26,39 +29,49 @@ search: true
 <br>
 
 ```html
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+
   <meta charset="UTF-8">
-  <title>index.html</title>
+  <title>글목록</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
 </head>
+
 <body>
+
 <div th:align="center">
-  <h2>index.html</h2><br><br>
-  <a href="member/save">회원가입</a><br><br>
-  <a href="member/login">로그인</a><br><br>
-  <a href="/board/findAll">글목록</a><br><br>
-  <a href="member/logout">로그아웃</a><br><br>
+  <h2>글 목록</h2>
+  <table>
+    <thead>
+    <tr>
+      <!--        <th>회원번호</th>-->
+      <th>글번호</th>
+      <th>작성자명</th>
+      <!--        <th>비밀번호</th>-->
+      <th>제목</th>
+      <th>조회수</th>
+      <th>작성일자</th>
+      <th>회원번호</th>
+      <th>글 상세조회</th>
+    </tr>
+    </thead>
 
-  세션값 이메일: <p th:text="${session['loginEmail']}"></p>
+    <tbody>
+    <tr th:each="board: ${boardList}">
+      <td th:text="${board.boardId}"></td>
+      <td th:text="${board.boardWriter}"></td>
+      <td><a th:href="@{|/board/${board.boardId}|}">
+        <span th:text="${board.boardTitle}"></span></a></td>
+      <td th:text="${board.boardHits}"></td>
+      <td th:text="${board.boardDate}"></td>
+      <td th:text="${board.memberId}"></td>
+    </tr>
+    </tbody><br><br>
 
-  <span th:if="(${session.loginEmail}!=null)">
-     <div>
-     <a class="nav-link" href="/board/save" style="font-size: 15px">글쓰기</a><br><br>
-    <a href="member/mypage">나의정보 조회</a><br><br>
-    <a href="member/update">내정보 수정(update)</a><br><br>
-     </div></span><br><br>
-
-
-  <span th:if="(${session.loginEmail}=='admin@aaa.com')">
-     <div>
-         <h3>관리자 메뉴</h3><br>
-     <a class="nav-link" href="/admin/memberList" style="font-size: 15px">회원 목록</a><br><br>
-     <a href="/member?page=1">페이징</a><br><br>
-     </div></span>
-
+  </table>
 </div>
-<br><br><br><br><br>
 
 </body>
 </html>
@@ -105,7 +118,8 @@ search: true
       <tr th:each="board: ${boardList}">
         <td th:text="${board.boardId}"></td>
         <td th:text="${board.boardWriter}"></td>
-        <td th:text="${board.boardTitle}"></td>
+        <td><a th:href="@{|/board/${board.boardId}|}">
+          <span th:text="${board.boardTitle}"></span></a></td>
         <td th:text="${board.boardHits}"></td>
         <td th:text="${board.boardDate}"></td>
         <td th:text="${board.memberId}"></td>
