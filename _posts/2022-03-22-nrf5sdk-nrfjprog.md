@@ -59,7 +59,7 @@ nRF Command Line Tool (이하 <span style="color:#50A0A0"><b>nRF Tool</b></span>
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/sdk-nrfjprog-fig3.png" alt="">
 </figure>
 
-그림에서 `--ids` 가 normal form, `-i` 가 shorthand form 이라고 보면 된다. 위의 **9.2** 항목에 있는 그림에서 볼 수 있듯이, 명령어 (cmd) 창에 `nrfjprog` 를 입력해보면 nRF Command Line Tool 에서 사용가능한 명령어 형식과 해당 명령어에 대한 설명들을 볼 수 있다. 보다 자세한 내용은 다음의 링크를 참고할 것..!
+그림에서 `--ids` 가 normal form, `-i` 가 shorthand form 이라고 보면 된다. 위의 **9.2** 항목에 있는 그림에서 볼 수 있듯이, 명령어 (cmd) 창에 `nrfjprog` 를 입력해보면 nRF Command Line Tool 에서 사용가능한 명령어 형식과 해당 명령어에 대한 설명들을 볼 수 있다. 보다 자세한 내용은 다음의 링크를 참고할 것..❕
 
 * **[https://infocenter.nordicsemi.com/index.jsp?topic=%2Fug_nrf_cltools%2FUG%2Fcltools%2Fnrf_command_line_tools_lpage.html](https://infocenter.nordicsemi.com/index.jsp?topic=%2Fug_nrf_cltools%2FUG%2Fcltools%2Fnrf_command_line_tools_lpage.html)**
 

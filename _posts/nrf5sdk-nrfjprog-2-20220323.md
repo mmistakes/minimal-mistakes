@@ -1,4 +1,14 @@
-<!--
+---
+title: "nRF5 SDK (10) - nRF Command Line Tool 소개 및 설치방법"
+categories:
+  - nRF5 SDK
+tags:
+  - nRF Command Line Tool
+  - nrfjprog
+toc: true
+toc_sticky: true
+---
+
 🍯
 
 ### 9.3.1 메모리 초기화
@@ -24,7 +34,7 @@
 메모리 초기화 매개변수로 `--sectorerase`, `--chiperase`, `--sectoranduicrerase`, `--qspisectorerase`, `--qspichiperase` 정도가 있는데... 일단 개인적으로 테스트 했을 때는 `--sectorerase` 매개변수를 이용해서 업로드를 할 경우에 flash 메모리 영역의 데이터는 지워지지 않는 것을 확인했다 (~~경우에 따라서 아닐수도 있음.~~)
 
 앞어 이야기했듯이, `--program` 키워드를 이용하면 배치 파일 (`.bat`)을 생성해서 소스코드 파일을 쉽게 업로드 할 수 있다. 배치 파일은 다음의 코드와 같이 메모장 (`notepad`)에 nrfjprog 명령어를 입력한 뒤, 저장할때 `.txt` 대신 `.bat` 형식으로 저장하는 것만으로도 쉽게 생성할 수 있을 것이다.
-
+⚙️
 ```
 nrfjprog -f nrf52 --program D:\nRF5_SDK_17.1.0_ddde560\examples\peripheral\gfx\pca10056\blank\ses\Output\Release\Exe\gfx_pca10056.hex --sectorerase --verify
 
@@ -42,4 +52,3 @@ nrfjprog -f nrf52 --reset
 <figure style="width: 100%" class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/sdk-nrfjprog-fig5.png" alt="">
 </figure>
--->
