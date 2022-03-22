@@ -408,7 +408,7 @@ public class BoardDetailDTO {
             실제 화면에는 4번째 글번호만 출력이 되었지만<br>
             페이지소스에는 모든 글의 상세정보가 딸려왔음을 확인할 수 있다.</h6></center><br>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/findByIdAjaxOk.JPG?raw=true" width="450">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/findByIdAjaxOk_PageSource.JPG?raw=true" width="550">
 </div>
 <br>
 
