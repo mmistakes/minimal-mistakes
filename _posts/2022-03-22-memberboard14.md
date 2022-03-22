@@ -486,8 +486,9 @@ public class CommentServiceImpl implements CommentService{
 </div><br>
 <center><h6>삭제 後</h6></center>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentDeleteButton.JPG?raw=true" width="500"><br><br>
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentDeleteOk.JPG?raw=true" width="500"><br><br>
 </div>
-
+<center><h6>16번 댓글이 삭제됨을 확인할 수 있다.</h6></center>
+<center><h6>여기까지 확인이 되면 댓글 삭제기능 구현은 정상적으로 구현되었다. </h6></center>
 
 <center><h2>댓글(등록, 삭제, 목록)  파트 끝</h2></center>
