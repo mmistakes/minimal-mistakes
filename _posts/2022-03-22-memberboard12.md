@@ -368,7 +368,8 @@ public class BoardDetailDTO {
 <center><h6>여기까지 확인 후 글수정 화면에서 원하는 항목을 수정 후 버튼을 클릭하여 글 수정이 이뤄지는지와<br>
             글상세정보(findById.html)에도 변경된 정보로 보여지는지 확인한다.</h6></center>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/findByIdAjaxOk.JPG?raw=true" width="450">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardUpdateTry.JPG?raw=true" width="250"><br>
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardUpdateTry.JPG?raw=true" width="250">
 </div>
 <br>
 <center><h6>상기와 같이 글상세내용이 정상적으로 보여진다면 Ajax를 이용한 글상세내용 조회기능 구현은 완료되었다.</h6></center><br>
