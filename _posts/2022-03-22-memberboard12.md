@@ -26,61 +26,57 @@ search: true
             </h6></center>
 
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardFindAllLinkTitle.JPG?raw=true" width="420">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardUpdateLink.JPG?raw=true" width="450">
 </div>
 <br>
 
 ```html
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-
   <meta charset="UTF-8">
-  <title>글목록</title>
+  <title>Title</title>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
 </head>
-
 <body>
-
 <div th:align="center">
-  <h2>글 목록</h2>
+  <h2>상세글</h2>
+
   <table>
     <thead>
     <tr>
-      <!--        <th>회원번호</th>-->
-      <th>글번호</th>
-      <th>작성자명</th>
-      <!--        <th>비밀번호</th>-->
-      <th>제목</th>
-      <th>조회수</th>
-      <th>작성일자</th>
-      <th>회원번호</th>
-      <th>글 상세조회</th>
+      <td>번호</td>
+      <td>제목</td>
+      <td>작성자</td>
+      <td>내용</td>
+      <!--        <td>프로필 사진</td>-->
+      <td>조회수</td>
+      <td>작성일자</td>
     </tr>
     </thead>
-
     <tbody>
-    <tr th:each="board: ${boardList}">
+    <tr>
       <td th:text="${board.boardId}"></td>
+      <td th:text="${board.boardTitle}"></td>
       <td th:text="${board.boardWriter}"></td>
-      <td><a th:href="@{|/board/${board.boardId}|}">
-        <span th:text="${board.boardTitle}"></span></a></td>
-      <td th:text="${board.boardHits}"></td>
+      <td th:text="${board.boardContents}"></td>
+      <!--        <td><img th:src="@{/boardImg/}+${board.boardFilename}" alt="프로필사진"></td>-->
+      <td th:text="${board.boardHits}"> </td>
       <td th:text="${board.boardDate}"></td>
-      <td th:text="${board.memberId}"></td>
+      <td><a th:if="${session.loginEmail}==${board.boardWriter}" th:href="@{|/board/update/${board.boardId}|}">수정</a></td>
     </tr>
-    </tbody><br><br>
-
+    </tbody>
   </table>
+  <br><br><br>
+  <div id="comment-write">
+  </div>
 </div>
-
 </body>
 </html>
 ```
 <br>
 
-<center><h6>resources/board 폴더에 findById.html로 글상세화면을 아래와 같이 보이는 형식으로 만든다.</h6></center>
+<center><h6>resources/board 폴더에 글수정화면(update.html)을 생성하고 아래와 같이 작성한다..</h6></center>
 
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardFindById.JPG?raw=true" width="400">
