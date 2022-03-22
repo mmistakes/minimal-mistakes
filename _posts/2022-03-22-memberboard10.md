@@ -21,7 +21,7 @@ search: true
 <center><h6>index.html에 글목록 링크(/board/findAll)를 추가한다. 단 글목록은 로그인 여부와 관계없이 보이도록 한다.</h6></center>
 
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardSave_index.jpg?raw=true" width="200">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardFindAll.JPG?raw=true" width="140">
 </div>
 <br>
 
@@ -37,6 +37,7 @@ search: true
   <h2>index.html</h2><br><br>
   <a href="member/save">회원가입</a><br><br>
   <a href="member/login">로그인</a><br><br>
+  <a href="/board/findAll">글목록</a><br><br>
   <a href="member/logout">로그아웃</a><br><br>
 
   세션값 이메일: <p th:text="${session['loginEmail']}"></p>
@@ -53,6 +54,7 @@ search: true
      <div>
          <h3>관리자 메뉴</h3><br>
      <a class="nav-link" href="/admin/memberList" style="font-size: 15px">회원 목록</a><br><br>
+     <a href="/member?page=1">페이징</a><br><br>
      </div></span>
 
 </div>
@@ -63,7 +65,7 @@ search: true
 ```
 <br>
 
-<center><h6>resources 폴더에 board 폴더를 생성한 후 save.html로 글쓰기 화면을 만든다.</h6></center>
+<center><h6>resources 폴더에 board 폴더를 생성한 후 findAll.html로 글목록 화면을 만든다.</h6></center>
 
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardSave.JPG?raw=true" width="250">
