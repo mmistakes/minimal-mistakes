@@ -395,7 +395,57 @@ public class CommentServiceImpl implements CommentService{
 </div>
 <br>
 <center><h6>상기와 같이 댓글이 정상적으로 저장이 되고 댓글 목록이 출력되었다면 해당 기능은 정상적으로 구현되었다.</h6></center><br>
-
 <br>
 
-<center><h2>댓글 등록(comment/save) & 댓글 목록(comment/findAll) 파트 끝</h2></center>
+
+<center><h3>[댓글 삭제 기능 구현]</h3></center><br>
+
+<center><h6>글상세조회 화면(findById.html) 하단에 삭제 버튼을 생성하고 삭제버튼을 누를 경우<br>
+            실행될 Ajax Script를 작성한다.</h6></center><br>
+<br>
+
+```html
+<h3>-------------------------------------------------------------------------------------</h3>
+    <div id="comment-area">
+        <table>
+            <thead>
+            <tr>
+                <th>댓글번호</th>
+                <th>내용</th>
+                <th>작성자</th>
+                <th>작성시간</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="comment: ${commentList}">
+                <td th:text="${comment.commentId}" id="commentId"></td>
+                <td th:text="${comment.commentContents}"></td>
+                <td th:text="${comment.commentWriter}"></td>
+                <td th:text="${comment.createTime}"></td>
+                <td><input type="button" th:if="${comment.commentWriter}==${session.loginEmail}" th:onclick="deleteById([[${comment.commentId}]])" value="삭제"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </body>
+    <script>
+      const deleteById = (commentId) => {    
+        const reqUrl = "/comment/"+commentId;
+        $.ajax({
+          type: 'delete',
+          url:reqUrl,
+          success: function (){
+            location.reload();
+          },
+          error: function (){
+          }
+        });
+      }
+    </script> 
+</html>
+
+
+```
+
+<center><h2>댓글(등록, 삭제, 목록)  파트 끝</h2></center>
