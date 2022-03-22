@@ -68,7 +68,7 @@ search: true
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardSave.JPG?raw=true" width="250">
 </div>
-<center><h6>작성자는 로그인한 Email이 자동으로 표기되도록 한다. 또한 어느 회원이 쓴 글인지에 대한 정보도 같이 가지고 있어야 하기에 회원번호(memberId)는 hidden으로 서버에 같이 저장이 되게끔 만든다.</h6></center>
+<center><h6>작성자는 로그인한 Email이 자동으로 표기되도록 한다. 또한 어느 회원이 쓴 글인지에 대한 정보도 같이 가지고 있어야 하기에<br> 회원번호(memberId)는 hidden으로 서버에 같이 저장이 되게끔 만든다.</h6></center>
 <br>
 
 ```html
@@ -102,7 +102,7 @@ search: true
 </html>
 ```
 <br>
-<center><h6>위의 정의된 필드로 구성 DTO 파일을 dto package에 BoardSaveDTO라는 이름으로 만들어준다.</h6></center>
+<center><h6>위의 정의된 필드로 구성된 DTO 파일을 dto package에 BoardSaveDTO라는 이름에 class형식으로 만들어준다.</h6></center>
 
 ```java 
 package com.ex.test01.dto;
@@ -132,7 +132,7 @@ public class BoardSaveDTO {
 ```
 
 <br>
-<center><h6>controller package에 BoardController를 만들어준다.<br>그리고 BoardController에 글작성 화면이 보이게하는 메서드를 작성해준다.</h6></center>
+<center><h6>controller package에 BoardController를 class형식으로 만들어준다.<br>그리고 BoardController에 글작성 화면이 보이게하는 메서드(save)를 작성해준다.<br>@RequestMapping("/board")라는 코드를 추가하면 브라우저에서/board로 들어오는 주소에 대해 <br>controller 內 주소 작성 시 /board의 주소 뒷부분만 작성하면 되게 만들어준다.  </h6></center>
 
 ```java 
 package com.ex.test01.controller;
@@ -183,7 +183,7 @@ public interface BoardService {
 ```
 <br>
 
-<center><h6>MemberServiceImpl에 관련 내용을 추가한다.</h6></center>
+<center><h6>BoardServiceImpl에 관련 내용을 추가한다.</h6></center>
 
 ```java 
 package com.ex.test01.service;
@@ -268,7 +268,7 @@ public class BoardEntity extends BaseEntity {
     @JoinColumn(name = "memberId")
     private MemberEntity memberEntity;
 
-
+  // 글저장
     public static BoardEntity saveBoard(BoardSaveDTO boardSaveDTO, MemberEntity memberEntity) {
 //    public static BoardEntity saveBoard(BoardSaveDTO boardSaveDTO) {
         BoardEntity boardEntity = new BoardEntity();
@@ -293,11 +293,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface BoardRepository extends JpaRepository<BoardEntity, Long> {
 
-}
+} 
 ```
 <br>
 
-<center><h6>글작성 시 글작성시간과 글 수정 시 글수정시간을 보여주기 위해서는 이에 대한 필드를 entity에서 선언해놔야 한다.<br>
+<center><h6>글작성 시 글 작성시간과 글 수정 시 글 수정시간을 보여주기 위해서는 이에 대한 필드를 entity에서 선언해야 한다.<br>
 entity package에 BaseEntity를 class 형식으로 만든 후 아래와 같이 작성한다.</h6></center>
 
 ```java 
@@ -330,7 +330,7 @@ public class BaseEntity {
 ```
 
 <br><br>
-<center><h6>여기까지 작성 후 회원으로 로그인하여 글쓰기페이지(/board/save.html)에서 글작성 후 글등록 버튼을 눌러<br> 작성한 글이 저장이 잘 되었는지를 db화면에서 확인해본다. 또한 브라우저에는 index화면이 뜨는지도 확인한다. </h6></center>
+<center><h6>여기까지 작성 후 회원으로 로그인하여 글쓰기페이지(/board/save.html)에서 글작성 및 글등록 버튼을 눌러<br> 작성한 글이 저장이 잘 되었는지를 db화면에서 확인해본다. 또한 브라우저에는 index화면이 뜨는지도 확인한다. </h6></center>
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardSaveDb.jpg?raw=true" width="700"></div>
 
