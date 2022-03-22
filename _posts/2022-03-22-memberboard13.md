@@ -213,12 +213,13 @@ search: true
             글삭제 후 글목록 화면이 보여지는지와 글목록에 해당글이 안보이는지 확인한다.<br>
             또한 DB에서도 해당 글이 삭제되었는지 확인이 가능하다.</h6></center>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardUpdateTry.JPG?raw=true" width="250"><br><br>
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardUpdateOk.JPG?raw=true" width="550">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardDeleteTry.JPG?raw=true" width="400"><br><br>
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardDeleteOk.JPG?raw=true" width="550"><br><br>
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardDeleteDB.JPG?raw=true" width="700">
 </div>
 <br>
-<center><h6>상기와 같이 글수정내용이 정상적으로 반영이 되었다면 Ajax를 이용한 글수정 구현은 완료되었다.</h6></center><br>
+<center><h6>상기와 같이 글삭제가 정상적으로 반영이 되었다면 Ajax를 이용한 글삭제 구현은 완료되었다.</h6></center><br>
 
 <br>
 
-<center><h2>게시판 글수정(board/update) 파트 끝</h2></center>
+<center><h2>게시판 글삭제(board/delete) 파트 끝</h2></center>
