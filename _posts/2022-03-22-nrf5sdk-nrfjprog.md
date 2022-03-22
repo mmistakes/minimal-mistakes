@@ -44,7 +44,7 @@ nRF Command Line Tool (이하 <span style="color:#50A0A0"><b>nRF Tool</b></span>
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/sdk-nrfjprog-fig2.png" alt="">
 </figure>
 
-<span style="color:#50A0A0"><b>nRF Tool</b></span> 을 설치하다보면 SEGGER J-Link 도 함께 설치될텐데 (~~아닐수도 있음~~), 설치 팝업이 뜨면 기본 설정 (default)으로 설치하면된다. 본 포스트를 작성하면서 테스트한 PC 의 프로그램 버전은 다음과 같다.
+<span style="color:#50A0A0"><b>nRF Tool</b></span> 을 설치하다보면 SEGGER J-Link 도 함께 설치될텐데 (~~아닐수도 있음~~), 설치 팝업이 뜨면 기본 설정 (default)으로 설치하면된다. 본 포스트를 작성하면서 테스트한 PC 의 각 프로그램 버전은 다음과 같다.
 
 * `nRF Command Line Tool` version: 10.15.2 external
 * `JLinkARM.dll` version: 7.58b
