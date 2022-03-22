@@ -26,7 +26,7 @@ search: true
             </h6></center>
 
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardUpdateLink.JPG?raw=true" width="450">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardDeleteLink.JPG?raw=true" width="450">
 </div>
 <br>
 
@@ -64,6 +64,7 @@ search: true
       <td th:text="${board.boardHits}"> </td>
       <td th:text="${board.boardDate}"></td>
       <td><a th:if="${session.loginEmail}==${board.boardWriter}" th:href="@{|/board/update/${board.boardId}|}">수정</a></td>
+      <td><a th:if="${session.loginEmail}==${board.boardWriter}" th:href="@{|/board/delete/${board.boardId}|}">삭제</a></td>      
     </tr>
     </tbody>
   </table>
@@ -76,7 +77,7 @@ search: true
 ```
 <br>
 
-<center><h6>resources/board 폴더에 글수정화면(update.html)을 생성하고 아래와 같이 작성한다..</h6></center>
+<center><h6>resources/board 폴더에 글삭제화면(delete.html)을 생성하고 아래와 같이 작성한다.</h6></center>
 
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardUpdateForm.JPG?raw=true" width="350">
