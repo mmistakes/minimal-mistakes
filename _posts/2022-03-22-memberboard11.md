@@ -133,10 +133,8 @@ search: true
     @GetMapping("/{boardId}")
     public String findById(@PathVariable("boardId") Long boardId, Model model, HttpSession session) {
         BoardDetailDTO boardDetailDTO = bs.findById(boardId);
-        List<CommentDetailDTO> commentList = cs.findAll(boardId);
         bs.hits(boardId);
         model.addAttribute("board", boardDetailDTO);
-        model.addAttribute("commentList", commentList);
         return "/board/findById";
     }
 ```
@@ -226,11 +224,185 @@ public class BoardDetailDTO {
             </h6></center>
 
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardFindAllLinkTitle.JPG?raw=true" width="420">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/findAll_ajaxForFindById.JPG?raw=true" width="450">
 </div>
 <br>
 
+```html
+    <!DOCTYPE html>
+    <html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>글목록</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            // function detail(boardId){
+            const detail = (boardId) => {
+                console.log(boardId);
+                const reqUrl = "/board/" + boardId;
+                $.ajax({
+                    type: 'post',
+                    url: reqUrl,
+                    dataType: 'json',
+                    success: function(result) {
+                        console.log(result);
+                        let output = "";
+                        output += "<table>\n" +
+                            "    <thead>\n" +
+                            "    <tr>\n" +
+                            "        <th>글번호</th>\n" +
+                            "        <th>작성자명</th>\n" +
+                            "        <th>제목</th>\n" +
+                            "        <th>조회수</th>\n" +
+                            "        <th>작성일자</th>\n" +
+                            "        <th>회원번호</th>\n" +
+                            "    </tr>\n" +
+                            "    </thead>\n" +
+                            "    <tbody>\n" +
+                            "        <tr>\n" +
+                            "            <td>"+result.boardId + "</td>\n" +
+                            "            <td>"+result.boardWriter + "</td>\n" +
+                            "            <td>"+result.boardTitle+ "</td>\n" +
+                            "            <td>"+result.boardHits+ "</td>\n" +
+                            "            <td>"+result.boardDate + " </td>\n" +
+                            "            <td>"+result.memberId + " </td>\n" +
+                            "        </tr>\n" +
+                            "    </tbody>\n" +
+                            "</table>"
+                        document.getElementById("board-detail").innerHTML = output;
+                    },
+                    error: function() {
+                        alert('ajax 실패');
+                    }
+                });
+            }
+        </script>
+</head>
+<body>
+<div th:align="center">
+    <h2>글 목록</h2>
+<table>
+    <thead>
+    <tr>
+<!--        <th>회원번호</th>-->
+        <th>글번호</th>
+        <th>작성자명</th>
+        <!--        <th>비밀번호</th>-->
+        <th>제목</th>
+        <th>조회수</th>
+        <th>작성일자</th>
+        <th>회원번호</th>
+        <th>글 상세조회</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="board: ${boardList}">
+        <td th:text="${board.boardId}"></td>
+        <td th:text="${board.boardWriter}"></td>
+        <td><a th:href="@{|/board/${board.boardId}|}">
+            <span th:text="${board.boardTitle}"></span></a></td>
+        <td th:text="${board.boardHits}"></td>
+        <td th:text="${board.boardDate}"></td>
+        <td th:text="${board.memberId}"></td>
+        <td><button th:onclick="detail([[${board.boardId}]])">글 상세조회(Ajax)</button></td>
+    </tr>
+    </tbody><br><br>
+</table>
+    <br><br><br>
+    <div id="board-detail"></div>
+</div>
+</body>
+</html>
 
+```
+<br>
+<center><h6>BoardController에 Ajax로 글상세내용을 보여주는 메서드를 추가한다.</h6></center>
+
+```java 
+    // Ajax를 이용하여 글 상세화면을 글목록 하단에 보여주기
+
+    @PostMapping("/{boardId}")
+    public @ResponseBody BoardDetailDTO detail(@PathVariable Long boardId) {
+        BoardDetailDTO board = bs.findById(boardId);
+        return board;
+    }
+```
+<br>
+<center><h6>이 이후부터는 상단에 썼던 "새창을 띄워 글상세정보 보기"의 BoardService, BoardServiceImpl <br>
+그리고 BoardEntity와 동일하기에 추가로 작성할 필요가 없다.<br>다만 이해를 위해 상단의 내용을 다시 한번 써본다..</h6></center>
+
+<center><h6>BoardService</h6></center>
+
+```java 
+    // 글 상세화면
+    BoardDetailDTO findById(Long boardId);
+```
+<br>
+
+<center><h6>BoardServiceImpl</h6></center>
+
+```java 
+    // 글 상세화면 보여주기
+    @Override
+    public BoardDetailDTO findById(Long boardId) {
+        BoardDetailDTO board = BoardDetailDTO.toBoardDetailDTO(br.findById(boardId).get());
+        return board;
+        }
+```
+<br>
+<center><h6>BoardEntity</h6></center>
+
+```java 
+package com.ex.test01.dto;
+
+import com.ex.test01.entity.BoardEntity;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.sql.Date;
+import java.time.LocalDateTime;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class BoardDetailDTO {
+
+    private Long boardId;
+    private Long memberId;
+    private String boardWriter;
+    private String boardTitle;
+    private String boardContents;
+    private String boardFilename;
+    private LocalDateTime boardDate;
+    private int boardHits;
+
+
+    public static BoardDetailDTO toBoardDetailDTO(BoardEntity boardEntity) {
+        BoardDetailDTO boardDetailDTO = new BoardDetailDTO();
+        boardDetailDTO.setBoardId(boardEntity.getBoardId());
+        boardDetailDTO.setBoardWriter(boardEntity.getBoardWriter());
+        boardDetailDTO.setBoardTitle(boardEntity.getBoardTitle());
+        boardDetailDTO.setBoardContents(boardEntity.getBoardContents());
+        boardDetailDTO.setBoardFilename(boardEntity.getBoardFilename());
+        if (boardEntity.getUpdateTime()==null) {
+            boardDetailDTO.setBoardDate(boardEntity.getCreateTime());
+        } else {
+            boardDetailDTO.setBoardDate(boardEntity.getUpdateTime());
+        }
+        boardDetailDTO.setBoardHits(boardEntity.getBoardHits());
+        boardDetailDTO.setMemberId(boardEntity.getBoardId());
+        return boardDetailDTO;
+    }
+}
+```
+<br>
+
+<center><h6>여기까지 확인 후 글목록에서 글상세정보(Ajax) 버튼을 클릭하여 하단에 정상적으로 내용이 나오는지 확인한다.</h6></center>
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/findAll_ajaxForFindById.JPG?raw=true" width="450">
+</div>
+<br>
 
 
 <center><h2>게시판 글목록(board/findAll) 파트 끝</h2></center>
