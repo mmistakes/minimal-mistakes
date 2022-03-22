@@ -321,8 +321,8 @@ public class CommentServiceImpl implements CommentService{
 <center><h6>여기까지 작성 후 댓글을 작성 후 저장이 정상적으로 이뤄지는지와<br>
             댓글 목록이 정상적으로 화면에 보여지는지 확인한다.</h6></center>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardDeleteTry.JPG?raw=true" width="400"><br><br>
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardDeleteOk.JPG?raw=true" width="550"><br><br>
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentSaveTry.jpg?raw=true" width="500"><br><br>
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentListOk.JPG?raw=true" width="500"><br><br>
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardDeleteDB.JPG?raw=true" width="700">
 </div>
 <br>
