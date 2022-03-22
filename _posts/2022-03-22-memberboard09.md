@@ -21,11 +21,34 @@ search: true
 <center><h6>index.html에 글쓰기 링크(/board/save)를 추가한다. 단 글쓰기는 로그인을 할 경우에만 보이도록 한다.</h6></center>
 
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/adminMemberList.jpg?raw=true" width="200">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/boardSave_index.jpg?raw=true" width="200">
 </div>
 <br>
 
 ```html
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>index.html</title>
+</head>
+<body>
+<div th:align="center">
+  <h2>index.html</h2><br><br>
+  <a href="member/save">회원가입</a><br><br>
+  <a href="member/login">로그인</a><br><br>
+  <a href="member/logout">로그아웃</a><br><br>
+
+  세션값 이메일: <p th:text="${session['loginEmail']}"></p>
+
+  <span th:if="(${session.loginEmail}!=null)">
+     <div>
+     <a class="nav-link" href="/board/save" style="font-size: 15px">글쓰기</a><br><br>
+    <a href="member/mypage">나의정보 조회</a><br><br>
+    <a href="member/update">내정보 수정(update)</a><br><br>
+     </div></span><br><br>
+
+
   <span th:if="(${session.loginEmail}=='admin@aaa.com')">
      <div>
          <h3>관리자 메뉴</h3><br>
@@ -33,10 +56,14 @@ search: true
      </div></span>
 
 </div>
+<br><br><br><br><br>
+
+</body>
+</html>
 ```
 <br>
 
-<center><h6>회원목록은 admin/memberList로 링크되며 resources 폴더에 admin 폴더를 만들고 그 밑에 memberList.html을 만든다. </h6></center>
+<center><h6>resources 폴더에 board 폴더를 생성한 후 save.html로 글쓰기 화면을 만든다.</h6></center>
 
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberList_1.jpg?raw=true" width="300">
