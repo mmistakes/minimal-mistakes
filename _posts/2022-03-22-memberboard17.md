@@ -318,8 +318,8 @@ search: true
 
 <center><h6>여기까지 작성 후 서버를 실행하여 아래와 같이 페이징형태로 회원목록(findAll.html)이 보여지는지 확인한다.</h6></center>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberPagingOk.JPG?raw=true" width="650">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberPagingOk1.JPG?raw=true" width="650">
 </div>
-<center><h6>여기까지 확인이 되면 글목록의 Paging 구현은 정상적으로 구현되었다. </h6></center>
+<center><h6>여기까지 확인이 되면 회원목록의 Paging 구현은 정상적으로 구현되었다. </h6></center>
 
-<center><h2>[ 글목록 Paging 파트 끝 ]</h2></center>
+<center><h2>[ 회원목록 Paging 파트 끝 ]</h2></center>
