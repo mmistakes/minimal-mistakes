@@ -23,54 +23,52 @@ search: true
 <center><h6>index 페이지에 admin@admin.com으로 로그인해야 볼 수 있는 회원목록(페이징처리)라는 링크를 만들어준다.</h6></center>
 
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/pagingLink_index.JPG?raw=true" width="300">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberPagingLinkOfIndex.jpg?raw=true" width="320">
 </div>
 <br>
 
 ```html
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-  <meta charset="UTF-8">
-  <title>index.html</title>
-</head>
-<body>
-<div th:align="center">
-  <h2>index.html</h2><br><br>
-  <a href="member/save">회원가입</a><br><br>
-  <a href="member/login">로그인</a><br><br>
-  <a href="/board/findAll">글목록(페이징 적용으로 사용불가)</a><br><br>
-  <a href="/board?page=1">글목록(페이징처리)</a><br><br>
-  <a href="member/logout">로그아웃</a><br><br>
-
-  세션값 이메일: <p th:text="${session['loginEmail']}"></p>
-
-  <span th:if="(${session.loginEmail}!=null)">
-     <div>
-     <a class="nav-link" href="/board/save" style="font-size: 15px">글쓰기</a><br><br>
-    <a href="member/mypage">나의정보 조회</a><br><br>
-    <a href="member/update">내정보 수정(update)</a><br><br>
-     </div></span><br><br>
-
-
-  <span th:if="(${session.loginEmail}=='admin@aaa.com')">
-     <div>
-         <h3>관리자 메뉴</h3><br>
-     <a class="nav-link" href="/admin/memberList" style="font-size: 15px">회원 목록</a><br><br>
-     </div></span>
-
-</div>
-<br><br><br><br><br>
-
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+      <meta charset="UTF-8">
+      <title>index.html</title>
+    </head>
+    <body>
+    <div th:align="center">
+      <h2>index.html</h2><br><br>
+      <a href="member/save">회원가입</a><br><br>
+      <a href="member/login">로그인</a><br><br>
+      <a href="/board/findAll">글목록(페이징 적용으로 사용불가)</a><br><br>
+      <a href="/board?page=1">글목록(페이징처리)</a><br><br>
+      <a href="member/logout">로그아웃</a><br><br>
+    
+      세션값 이메일: <p th:text="${session['loginEmail']}"></p>
+    
+      <span th:if="(${session.loginEmail}!=null)">
+         <div>
+         <a class="nav-link" href="/board/save" style="font-size: 15px">글쓰기</a><br><br>
+        <a href="member/mypage">나의정보 조회</a><br><br>
+        <a href="member/update">내정보 수정(update)</a><br><br>
+         </div></span><br><br>
+    
+    
+      <span th:if="(${session.loginEmail}=='admin@aaa.com')">
+         <div>
+             <h3>관리자 메뉴</h3><br>
+         <a class="nav-link" href="/member?page=1" style="font-size: 15px">회원 목록(페이징처리)</a><br><br>
+         <a href="/member?page=1">페이징</a><br><br>         </div></span> 
+    </div>
+    <br><br><br><br><br>
+    
+    </body>
+    </html>
 ```
 <br>
-
-<center><h3>[BoardController, BoardService, BoardService 내용 수정]<br><br>
-        기존 글목록(페이징이 되어있지 않은)과 글목록 페이지에 새로 만들고자 하는 Paging을 <br><br> 동시에 사용하게 되면
+<center><h3>[MemberController, MemberService, MemberServiceImpl 내용 수정]<br><br>
+        기존 회원목록(페이징이 되어있지 않은)과 회원목록 페이지에<br><br> 새로 만들고자 하는 Paging을 동시에 사용하게 되면<br><br>
         BoardController 내 findAll 메서드, BoardService<br><br> 그리고 BoardServiceImpl 內 findAll 관련 항목과<br><br>
-        충돌이 일어나 오류가 발생하게 된다.<br><br> 이러한 문제를 방지하기 위해 위의 내용들을 먼저 주석으로 처리해야<br><br>
+        충돌이 일어나 오류가 발생하게 된다.<br><br> 이러한 문제를 방지하기 위해 위의 해당 항목들을 먼저 주석으로 처리해야<br><br>
         정상적으로 Paging 기능이 작동한다/.</h3></center><br><br>
 
 <center><h6>글목록(findAll) 하단에 페이지에 대한 부분을 아래와 같이 보여주기 위해 findAll.html에 그 내용을 추가한다.<br>

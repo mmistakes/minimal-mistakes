@@ -67,7 +67,7 @@ search: true
 ```
 <br>
 
-<center><h3>[BoardController, BoardService, BoardService 내용 수정]<br><br>
+<center><h3>[BoardController, BoardService, BoardServiceImpl 내용 수정]<br><br>
         기존 글목록(페이징이 되어있지 않은)과 글목록 페이지에 새로 만들고자 하는 Paging을 <br><br> 동시에 사용하게 되면
         BoardController 내 findAll 메서드, BoardService<br><br> 그리고 BoardServiceImpl 內 findAll 관련 항목과<br><br>
         충돌이 일어나 오류가 발생하게 된다.<br><br> 이러한 문제를 방지하기 위해 위의 내용들을 먼저 주석으로 처리해야<br><br>
