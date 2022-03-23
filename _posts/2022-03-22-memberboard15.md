@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "14-회원제 게시판 만들기_SpringBoot와 JPA"
+title: "15-회원제 게시판 만들기_SpringBoot와 JPA"
 categories: memberboard
 tag: [springbot, jpa]
 toc: true
@@ -14,16 +14,13 @@ search: true
 <center>**[공지사항]** <strong> [개인적인 공부를 위한 내용입니다. 오류가 있을 수 있습니다.] </strong></center>
 {: .notice--success}
 
-<center><h2>05-댓글(comment)파트 - SpringBoot</h2></center>
+<center><h2>04-게시판(board)파트 - SpringBoot</h2></center>
 
-<center><h2>[게시판-댓글]</h2></center><br>
+<center><h2>[게시판-글목록 페이징]</h2></center><br>
 
-<center><h3>[첫번재-댓글등록 화면 보여주기]</h3></center><br>
+<center><h3>[첫번재-글목록을 페이징하여 보여주기]</h3></center><br>
 
-<center><h6>글목록(findAll)에서 조회하고자 하는 글을 클릭하여 글상세화면(findById)으로 들어가<br>
-            해당 글의 하단에 댓글을 쓸 수 있는 폼을 만든다. 로그인을 하지 않은 경우에는 작성자란이 비활성화되고<br>
-            로그인한 상태에서 작성이 가능하게 구현한다.
-            </h6></center>
+<center><h6>글목록(findAll) 하단에 페이지에 대한 부분을 아래아 같이 보여주기 위해 findAll.html에 그 내용을 추가한다.</h6></center>
 
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentForm.JPG?raw=true" width="550">
