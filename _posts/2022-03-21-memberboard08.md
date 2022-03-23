@@ -18,7 +18,7 @@ search: true
 
 <center><h2>[관리자-회원목록]</h2></center><br>
 
-<center><h6>index.html 하단에 로그인 이메일이 admin인 경우에만 보이는 회원목록 링크를 하나 추가한다..</h6></center>
+<center><h6>index.html 하단에 로그인 이메일이 admin@aaa.com인 경우에만 보이는 회원목록 링크를 하나 추가한다..</h6></center>
 
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/adminMemberList.jpg?raw=true" width="200">
@@ -29,14 +29,14 @@ search: true
   <span th:if="(${session.loginEmail}=='admin@aaa.com')">
      <div>
          <h3>관리자 메뉴</h3><br>
-     <a class="nav-link" href="/admin/memberList" style="font-size: 15px">회원 목록</a><br><br>
+     <a class="nav-link" href="/member/" style="font-size: 15px">회원 목록</a><br><br>
      </div></span>
 
 </div>
 ```
 <br>
 
-<center><h6>회원목록은 admin/memberList로 링크되며 resources 폴더에 admin 폴더를 만들고 그 밑에 memberList.html을 만든다. </h6></center>
+<center><h6>회원목록은 /member/로 링크되며 member 폴더에  findAll.html을 만든다. </h6></center>
 
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberList_1.jpg?raw=true" width="300">
