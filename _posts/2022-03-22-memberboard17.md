@@ -250,8 +250,9 @@ search: true
 ```
 <br>
 
-<center><h6>글목록 페이징 글에서 이미 만든 한 페이지에 보여줄 글의 갯수와 <br>화면에 보여줄 페이지의 갯수를 정의하고자 하면<br>
+<center><h6>한 페이지에 보여줄 글의 갯수와 <br>화면에 보여줄 페이지의 갯수를 정의하고자 하면<br>
             common package 內 PagingConst라는 class를 참고한다.<br>
+            글목록 페이징 기능 구현 시 이미 만들어놓음<br> 
             내용은 아래와 같다.</h6></center>
 
 ```java 
