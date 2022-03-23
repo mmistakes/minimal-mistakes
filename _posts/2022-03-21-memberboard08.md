@@ -39,7 +39,7 @@ search: true
 <center><h6>회원목록은 /member/로 링크되며 member 폴더에  findAll.html을 만든다. </h6></center>
 
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberList_1.jpg?raw=true" width="300">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/member_findAll.JPG?raw=true" width="600">
 </div>
 <br>
 
@@ -51,19 +51,20 @@ search: true
   <meta charset="UTF-8">
   <title>memberList</title>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   
 </head>
 
 <body>
 
-<table>
-  
+<table class="table table-hover">  
   <thead>
   <tr>
-    <th>회원번호</th>
-    <th>이름</th>
-    <!--        <th>비밀번호</th>-->
-    <th>이메일</th>
+    <th scope="col">회원번호</th>
+    <th scope="col">이름</th>
+    <!--        <th scope="col">비밀번호</th>-->
+    <th scope="col">이메일</th>
   </tr>
   </thead>
   
@@ -85,40 +86,19 @@ search: true
 ```
 <br>
 
-<center><h6>controller package 內 AdminController를 생성하고 메서드를 추가해준다.</h6></center>
+<center><h6>MemberController에 회원목록 관련 메서드를 추가해준다.</h6></center>
 
 ```java 
-package com.ex.test01.controller;
-
-import com.ex.test01.dto.MemberDetailDTO;
-import com.ex.test01.service.MemberService;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import javax.servlet.http.HttpSession;
-import java.util.List;
-
-import static com.ex.test01.common.PagingConst.BLOCK_LIMIT;
-
-@Controller
-@RequiredArgsConstructor
-@RequestMapping("/admin")
-public class AdminController {
-
-    private final MemberService ms;
-
-    @GetMapping("/memberList")
-    public String memberList(Model model, HttpSession session) {
-            List<MemberDetailDTO> memberList = ms.findAll();
-            model.addAttribute("memberList", memberList);
-            return "admin/memberList";
+    // 회원목록
+    @GetMapping("/")
+    public String findAll(Model model, HttpSession session) {
+      List<MemberDetailDTO> memberList = ms.findAll();
+      model.addAttribute("memberList", memberList);
+      return "member/findAll";
         }
 ```
 <br>
-<center><h6>AdminController 內 ms.findAll을 클릭하면 MemberService에 내용이 추가된다.</h6></center>
+<center><h6>MemberController 內 ms.findAll을 클릭하면 MemberService에 내용이 추가된다.</h6></center>
 
 ```java 
     List<MemberDetailDTO> findAll();
