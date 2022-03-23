@@ -10,7 +10,9 @@ sidebar:
   nav: "docs"
 ---
 
-## ✍ ArrayList 메서드
+# ✍2022-02-09 
+
+## ArrayList 메서드
 
 <!--Quote-->
 > *본 내용은 자바의 정석을 바탕으로 작성*  

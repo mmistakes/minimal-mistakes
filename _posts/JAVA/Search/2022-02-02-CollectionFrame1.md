@@ -10,9 +10,9 @@ sidebar:
   nav: "docs"
 ---
 
-# 2022-02-02
+# ✍2022-02-02
 
-## ✍ 컬렉션 프레임웍(Collections framework) 1편 
+## 컬렉션 프레임웍(Collections framework) 1편
 
 <!--Quote-->
 > *본 내용은 자바의 정석을 바탕으로 작성*  
