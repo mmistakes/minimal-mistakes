@@ -20,10 +20,11 @@ search: true
 
 <center><h3>[첫번재-글목록을 페이징하여 보여주기]</h3></center><br>
 
-<center><h6>글목록(findAll) 하단에 페이지에 대한 부분을 아래아 같이 보여주기 위해 findAll.html에 그 내용을 추가한다.</h6></center>
+<center><h6>글목록(findAll) 하단에 페이지에 대한 부분을 아래아 같이 보여주기 위해 findAll.html에 그 내용을 추가한다.<br>
+            브라우저 주소창에 보이는 주소값은 /board?page=1 형태로 보여진다.</h6></center>
 
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentForm.JPG?raw=true" width="550">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/paging_findAll.JPG?raw=true" width="650">
 </div>
 <br>
 
@@ -32,460 +33,220 @@ search: true
     <html lang="en" xmlns:th="http://www.thymeleaf.org">
     <head>
       <meta charset="UTF-8">
-      <title>Title</title>
+      <title>글목록</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script>
+        // function detail(boardId){
+        const detail = (boardId) => {
+          console.log(boardId);
+          const reqUrl = "/board/" + boardId;
+          $.ajax({
+            type: 'post',
+            url: reqUrl,
+            dataType: 'json',
+            success: function(result) {
+              console.log(result);
+              let output = "";
+              output += "<table>\n" +
+                "    <thead>\n" +
+                "    <tr>\n" +
+                "        <th>글번호</th>\n" +
+                "        <th>작성자명</th>\n" +
+                "        <th>제목</th>\n" +
+                "        <th>조회수</th>\n" +
+                "        <th>작성일자</th>\n" +
+                "        <th>회원번호</th>\n" +
+                "    </tr>\n" +
+                "    </thead>\n" +
+                "    <tbody>\n" +
+                "        <tr>\n" +
+                "            <td>"+result.boardId + "</td>\n" +
+                "            <td>"+result.boardWriter + "</td>\n" +
+                "            <td>"+result.boardTitle+ "</td>\n" +
+                "            <td>"+result.boardHits+ "</td>\n" +
+                "            <td>"+result.boardDate + " </td>\n" +
+                "            <td>"+result.memberId + " </td>\n" +
+                "        </tr>\n" +
+                "    </tbody>\n" +
+                "</table>"
+              document.getElementById("board-detail").innerHTML = output;
+            },
+            error: function() {
+              alert('ajax 실패');
+            }
+          });
+        }
+      </script>
     </head>
     <body>
-    <div th:align="center">
-      <h2>상세글</h2>
     
+    <div th:align="center">
+      <h2>글 목록</h2>
       <table>
         <thead>
         <tr>
-          <td>번호</td>
-          <td>제목</td>
-          <td>작성자</td>
-          <td>내용</td>
-          <!--        <td>프로필 사진</td>-->
-          <td>조회수</td>
-          <td>작성일자</td>
+          <!--        <th>회원번호</th>-->
+          <th>글번호</th>
+          <th>작성자명</th>
+          <!--        <th>비밀번호</th>-->
+          <th>제목</th>
+          <th>조회수</th>
+          <th>작성일자</th>
+          <th>회원번호</th>
+          <th>글 상세조회</th>
         </tr>
         </thead>
         <tbody>
-        <tr>
+        <tr th:each="board: ${boardList}">
           <td th:text="${board.boardId}"></td>
-          <td th:text="${board.boardTitle}"></td>
           <td th:text="${board.boardWriter}"></td>
-          <td th:text="${board.boardContents}"></td>
-          <!--        <td><img th:src="@{/boardImg/}+${board.boardFilename}" alt="프로필사진"></td>-->
-          <td th:text="${board.boardHits}"> </td>
+          <td><a th:href="@{|/board/${board.boardId}|}">
+            <span th:text="${board.boardTitle}"></span></a></td>
+          <td th:text="${board.boardHits}"></td>
           <td th:text="${board.boardDate}"></td>
-          <td><a th:if="${session.loginEmail}==${board.boardWriter}" th:href="@{|/board/update/${board.boardId}|}">수정</a></td>
-          <td><a th:if="${session.loginEmail}==${board.boardWriter}" th:href="@{|/board/delete/${board.boardId}|}">삭제</a></td>
+          <td th:text="${board.memberId}"></td>
+          <td><button th:onclick="detail([[${board.boardId}]])">글 상세조회(Ajax)</button></td>
+          <!--        <td><button th:onclick="deleteById([[${board.boardId}]])">글삭제(Ajax)</button></td>-->
+    
         </tr>
-        </tbody>
+        </tbody><br><br>
       </table>
+    
       <br><br><br>
-      <div id="comment-write">
-        <input type="text" name="commentWriter" id="commentWriter" th:value="${session.loginEmail}" readonly><br>
-        <input type="text" name="commentContents" id="commentContents" placeholder="내용"><br>
-        <button id="comment-write-btn">댓글등록</button>
-      </div>
-      <div>
-      <h3>-------------------------------------------------------------------------------------</h3>
-      <div id="comment-area">
-        <table>
-          <thead>
-          <tr>
-            <th>댓글번호</th>
-            <th>내용</th>
-            <th>작성자</th>
-            <th>작성시간</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr th:each="comment: ${commentList}">
-            <td th:text="${comment.commentId}" id="commentId"></td>
-            <td th:text="${comment.commentContents}"></td>
-            <td th:text="${comment.commentWriter}"></td>
-            <td th:text="${comment.createTime}"></td>
-            <td><input type="button" th:if="${comment.commentWriter}==${session.loginEmail}" th:onclick="deleteById([[${comment.commentId}]])" value="삭제"></td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
+      <div id="board-detail"></div>
+    
     </div>
-
-    </body>
-
-    <script>
-      $("#comment-write-btn").click(function (){
-        console.log('댓글등록 버튼 클릭');
-        const commentWriter = $("#commentWriter").val();
-        const commentContents = $("#commentContents").val();
-        const boardId = '[[${board.boardId}]]';
-        console.log(commentWriter, commentContents, boardId);
-        $.ajax({
-          type: 'post',
-          url: '/comment/save',
-          data:{
-            'commentWriter': commentWriter,
-            'commentContents': commentContents,
-            'boardId': boardId
-          },
-          dataType: 'json',
-          success: function (result){
-            let output = "<table>";
-            output += "<tr><th>댓글번호</th>";
-            output += "<th>작성자</th>";
-            output += "<th>내용</th>";
-            output += "<th>작성시간</th></tr>";
-            for ( let i in result) {
-              output += "<tr>";
-              output += "<td>" + result[i].commentId + "</td>";
-              output += "<td>" + result[i].commentWriter + "</td>";
-              output += "<td>" + result[i].commentContents + "</td>";
-              output += "<td>" + result[i].createTime + "</td>";
-              output += "</tr>";
-            }
-            output += "</table>";
-            document.getElementById('comment-area').innerHTML = output;
-            document.getElementById('commentContents').value = '';
-            location.reload();
-          },
-          error: function (){
-            alert('ajax 실패');
-          }
-        });
-      });
-    </script>
-    </body>
-    </html>
-```
-<br>
-
-<center><h6>controller package에 CommentController를 만들고 댓글을 입력하면 댓글이 저장되고<br>
-            기존에 작성된 댓글을 보여주기 위한 메서드(save(PostMapping))를 작성한다.<br>
-            @RequestMapping("/comment")라는 코드를 추가하면 브라우저에서/comment로 들어오는 주소에 대해 <br>
-            controller 內 주소 작성 시 /comment의 주소 뒷부분만 작성하면 되게 만들어준다.</h6></center>
-
-```java 
-    // 댓글 화면 저장 및 댓글 목록 보여주기
-    package com.ex.test01.controller;
     
-    import com.ex.test01.dto.CommentDetailDTO;
-    import com.ex.test01.dto.CommentSaveDTO;
-    import com.ex.test01.service.CommentService;
-    import lombok.RequiredArgsConstructor;
-    import org.springframework.http.HttpStatus;
-    import org.springframework.http.ResponseEntity;
-    import org.springframework.stereotype.Controller;
-    import org.springframework.web.bind.annotation.*;
+    <!-- 브라우저 주소창에 보이는 주소값: /board?page=1
+         html에서 타임리프로 작성하는 주소값: /board(page==1) -->
     
-    import java.util.List;
+    <div class="container" th:align="center">
+      <ul class="pagination">
+        <li class="page-item">
+          <!-- 첫 페이지로 가는 링크 -->
+          <a class="page-link" th:href="@{/board(page=1)}">
+            <span>First</span>
+          </a>
+        </li>
     
-    @Controller
-    @RequiredArgsConstructor
-    @RequestMapping("/comment")
-    public class CommentController {
+        <li th:class="${boardList.first} ? 'disabled'" class="page-item">
+          <!--boardList.first: isFirst() 호출 / 링크에 샾이 있으면 그 자리에 머무른다.(컨트롤러에 요청안함)
+              boardList.number: getNumber()-->
+          <a class="page-link" th:href="${boardList.first} ? '#' : @{/board(page=${boardList.number})}">
+            <span>&lt;</span> <!-- '<'를 표현(HTML문법) -->
+          </a>
+        </li>
     
-        private final CommentService cs;
+        <!-- startPage ~ endPage 까지 숫자를 만들어주는 역할-->
+        <li th:each="page: ${#numbers.sequence(startPage, endPage)}"
+            th:class="${page == boardList.number + 1} ? 'active'" class="page-item">
+          <a class="page-link" th:text="${page}" th:href="@{/board(page=${page})}"></a>
+        </li>
     
-      // 댓글 저장과 댓글 목록 보여주기
-        @PostMapping("/save")
-        public @ResponseBody
-        List<CommentDetailDTO> save(@ModelAttribute CommentSaveDTO commentSaveDTO){
-            cs.save(commentSaveDTO);
-            List<CommentDetailDTO> commentList = cs.findAll(commentSaveDTO.getBoardId());
-            return commentList;
-        }
-    }
-```
-<br>
-<center><h6>상기의 필드로 구성된 CommentSaveDTO와 CommentDetailDTO를 dto package에 만들어준다.</h6></center><br>
-<center><h6>CommentSaveDTO</h6></center>
-
-```java 
-    package com.ex.test01.dto;
+        <!-- 다음  페이지 요청
+            현재 3페이지를 보고 있다면 다음 페이지는 4페이지임.
+            getNumber() 값은 2임.
+            따라서 4페이지를 보고 싶다면 getNumber()+2를 해야 컨트롤러에 4를 요청-->
+        <li th:class="${boardList.last} ? 'disabled'">
+          <a class="page-link" th:href="${boardList.last} ? '#' : @{/board(page=${boardList.number + 2})}">
+            <span>&gt;</span>
+          </a>
+        </li>
     
-    import lombok.AllArgsConstructor;
-    import lombok.Data;
-    import lombok.NoArgsConstructor;
-    
-    @Data
-    @AllArgsConstructor
-    @NoArgsConstructor
-    public class CommentSaveDTO {
-    
-        private Long commentId;
-        private Long memberId;
-        private Long boardId;
-        private String commentWriter;
-        private String commentContents;
-    
-    }
-```
-<br>
-<center><h6>CommentDetailDTO</h6></center>
-
-```java 
-package com.ex.test01.dto;
-
-import com.ex.test01.entity.CommentEntity;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import java.time.LocalDateTime;
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-
-public class CommentDetailDTO {
-
-    private Long commentId;
-    private Long memberId;
-    private Long boardId;
-    private String commentWriter;
-    private String commentContents;
-    private LocalDateTime createTime;
-    private LocalDateTime updateTime;
-
-    public static CommentDetailDTO toCommentDetailDTO(CommentEntity c) {
-        CommentDetailDTO commentDetailDTO = new CommentDetailDTO();
-        commentDetailDTO.setCommentId(c.getCommentId());
-        commentDetailDTO.setCommentWriter(c.getCommentWriter());
-        commentDetailDTO.setCommentContents(c.getCommentContents());
-        commentDetailDTO.setCreateTime(c.getCreateTime());
-        commentDetailDTO.setUpdateTime(c.getUpdateTime());
-        commentDetailDTO.setMemberId(c.getMemberEntity().getMemberId());
-        commentDetailDTO.setBoardId(c.getBoardEntity().getBoardId());
-        return commentDetailDTO;
-    }
-}
-```
-<br>
-
-<center><h6>entity package에 CommentEntity를 생성하고 아래와 같이 작성한다.</h6></center>
-
-```java 
-package com.ex.test01.entity;
-
-import com.ex.test01.dto.CommentSaveDTO;
-import lombok.Getter;
-import lombok.Setter;
-
-import javax.persistence.*;
-import java.lang.reflect.Member;
-
-@Entity
-@Getter
-@Setter
-@Table(name="comment_table")
-public class CommentEntity extends BaseEntity {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="commentId")
-    private Long commentId;
-
-    @Column
-    private String commentWriter;
-
-    @Column
-    private String commentContents;
-
-    
-    // 댓글과 게시글의 관계(하나의 게시글에 여러개의 댓글을 달 수 있음)
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="boardId")
-    private BoardEntity boardEntity;
-
-    // 댓글과 회원의 관계(한명의 회원이 여러개의 댓글을 달 수 있음)
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="memberId")
-    private MemberEntity memberEntity;
-
-
-    public static CommentEntity toSaveComment(CommentSaveDTO commentSaveDTO, MemberEntity memberEntity, BoardEntity boardEntity) {
-    CommentEntity commentEntity = new CommentEntity();
-    commentEntity.setCommentWriter(memberEntity.getMemberEmail());
-    commentEntity.setCommentContents(commentSaveDTO.getCommentContents());
-    commentEntity.setMemberEntity(memberEntity);
-    commentEntity.setBoardEntity(boardEntity);
-    return commentEntity;
-    }
-}
-
-```
-<br>
-
-<center><h6>service package에 CommentService를 interface 형식으로 CommentServiceImpl을 class 형식으로 만들어준다.<br>
-            CommentController에서 빨간 밑줄이 생긴 cs.save와 cs.findAll을 클릭하면 자동으로 CommentService에 <br>
-            해당 내용이 생성된다.</h6></center>
-
-<center><h6>CommentService</h6></center>
-
-```java 
-    // 댓글 저장
-    Long save(CommentSaveDTO commentSaveDTO);
-    
-    // 댓글 목록
-    List<CommentDetailDTO> findAll(Long boardId);
-```
-<br>
-
-<center><h6>CommentServiceImpl에 댓글저장과 댓글목록 관련 내용을 추가한다.</h6></center>
-
-```java 
-package com.ex.test01.service;
-
-import com.ex.test01.dto.CommentDetailDTO;
-import com.ex.test01.dto.CommentSaveDTO;
-import com.ex.test01.entity.BoardEntity;
-import com.ex.test01.entity.CommentEntity;
-import com.ex.test01.entity.MemberEntity;
-import com.ex.test01.repository.BoardRepository;
-import com.ex.test01.repository.CommentRepository;
-import com.ex.test01.repository.MemberRepository;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
-import java.util.List;
-
-@Service
-@RequiredArgsConstructor
-public class CommentServiceImpl implements CommentService{
-
-    private final CommentRepository cr;
-    private final MemberRepository mr;
-    private final BoardRepository br;
-
-    // 댓글 저장
-    @Override
-    public Long save(CommentSaveDTO commentSaveDTO) {
-        BoardEntity boardEntity = br.findById(commentSaveDTO.getBoardId()).get();
-        MemberEntity memberEntity = mr.findByMemberEmail(commentSaveDTO.getCommentWriter());
-        CommentEntity commentEntity = CommentEntity.toSaveComment(commentSaveDTO, memberEntity, boardEntity);
-        return cr.save(commentEntity).getCommentId();
-    }
-
-    // 댓글 목록
-    @Override
-    public List<CommentDetailDTO> findAll(Long boardId) {
-        BoardEntity boardEntity = br.findById(boardId).get();
-        List<CommentEntity> commentEntityList = boardEntity.getCommentEntityList();
-        List<CommentDetailDTO> commentList = new ArrayList<>();
-        for(CommentEntity c:commentEntityList) {
-            CommentDetailDTO commentDetailDTO = CommentDetailDTO.toCommentDetailDTO(c);
-            commentList.add(commentDetailDTO);
-        }
-        return commentList;
-    }
-}
-```
-<br>
-
-<center><h6>repository package에 CommentRepository를 interface 형식으로 생성한 후 아래와 같이 작성한다.</h6></center>
-
-```java 
-  package com.ex.test01.repository;
-  
-  import com.ex.test01.entity.CommentEntity;
-  import org.springframework.data.jpa.repository.JpaRepository;
-  
-  public interface CommentRepository extends JpaRepository<CommentEntity, Long> {
-  
-  }
-
-```
-<br>
-
-<center><h6>여기까지 작성 후 댓글을 작성 후 저장이 정상적으로 이뤄지는지와<br>
-            댓글 목록이 정상적으로 화면에 보여지는지 확인한다.</h6></center>
-<div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentSaveTry.jpg?raw=true" width="500"><br><br>
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentListOk.JPG?raw=true" width="500"><br><br>
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentSaveDb.JPG?raw=true" width="700">
-</div>
-<br>
-<center><h6>상기와 같이 댓글이 정상적으로 저장이 되고 댓글 목록이 출력되었다면 해당 기능은 정상적으로 구현되었다.</h6></center><br>
-<br>
-
-
-<center><h3>[댓글 삭제 기능 구현]</h3></center><br>
-
-<center><h6>글상세조회 화면(findById.html) 하단에 자신이 작성한 댓글에만 보여지는 삭제 버튼을 생성하고<br>
-            삭제버튼을 누를 경우 실행될 Ajax Script를 작성한다.</h6></center><br>
-<br>
-<div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentDeleteButton.JPG?raw=true" width="500"><br><br>
-</div>
-
-```html
-<h3>-------------------------------------------------------------------------------------</h3>
-    <div id="comment-area">
-        <table>
-            <thead>
-            <tr>
-                <th>댓글번호</th>
-                <th>내용</th>
-                <th>작성자</th>
-                <th>작성시간</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr th:each="comment: ${commentList}">
-                <td th:text="${comment.commentId}" id="commentId"></td>
-                <td th:text="${comment.commentContents}"></td>
-                <td th:text="${comment.commentWriter}"></td>
-                <td th:text="${comment.createTime}"></td>
-                <td><input type="button" th:if="${comment.commentWriter}==${session.loginEmail}" th:onclick="deleteById([[${comment.commentId}]])" value="삭제"></td>
-            </tr>
-            </tbody>
-        </table>
+        <li class="page-item">
+          <a class="page-link" th:href="@{/board(page=${boardList.totalPages})}">
+            <span>Last</span>
+          </a>
+        </li>
+      </ul>
     </div>
+    
+    <div th:align="center">
+      세션값 이메일: <p th:text="${session['loginEmail']}"></p>    
     </div>
+    
     </body>
-    <script>
-      const deleteById = (commentId) => {    
-        const reqUrl = "/comment/"+commentId;
-        $.ajax({
-          type: 'delete',
-          url:reqUrl,
-          success: function (){
-            location.reload();
-          },
-          error: function (){
-          }
-        });
-      }
-    </script> 
 </html>
-
-
 ```
 <br>
-<center><h6>CommentController에 댓글 삭제 관련 메서드를 추가한다.</h6></center>
+
+<center><h6>먼저 한 페이지에 보여줄 글의 갯수와 화면에 보여줄 페이지의 갯수 정의를 위해<br>
+            common이라는 package를 생성하고 그안에 PagingConst라는 class를 생성한다.<br>
+            그리고 내용을 아래와 같이 작성한다.</h6></center>
 
 ```java 
-  // 댓글 삭제
-    @DeleteMapping("/{commentId}")
-    public ResponseEntity deleteById(@PathVariable("commentId") Long commentId){
-        cs.deleteById(commentId);
-        return new ResponseEntity<>(HttpStatus.OK);
+    package com.ex.test01.common;
+
+  public class PagingConst {
+     public static final int PAGE_LIMIT = 10; // 한 페이지에 보여 줄 글 갯수
+     public static final int BLOCK_LIMIT = 5; // 한 화면에 보여 줄 페이지 갯수
+
+}
+```
+<br>
+<center><h6>BoardController에 paging 관련 메서드를 추가해준다.</h6></center>
+
+```java 
+    // 페이징처리 : 브라우저 주소창에 보이는 주소값: /board?page=1
+    // html에서 타임리프로 작성하는 주소값: /board(page==1)
+    @GetMapping
+    public String paging(@PageableDefault(page=1) Pageable pageable, Model model){
+        //Page라는 객체가 있다.
+        Page<BoardDetailDTO> boardList = bs.paging(pageable);
+        model.addAttribute("boardList",boardList);
+        int startPage = (((int) (Math.ceil((double) pageable.getPageNumber() / BLOCK_LIMIT))) - 1) * BLOCK_LIMIT + 1;
+        int endPage = ((startPage + BLOCK_LIMIT - 1) < boardList.getTotalPages()) ? startPage + BLOCK_LIMIT - 1 : boardList.getTotalPages();
+        model.addAttribute("startPage", startPage);
+        model.addAttribute("endPage",endPage);
+        return  "board/findAll";
     }
 ```
 <br>
-<center><h6>CommentController 內 cs.deleteById를 클릭하면 자동으로 CommentService에 내용이 추가된다.</h6></center>
+<center><h6>BoardController 內 빨간줄로 표시된 bs.paging을 클릭하면 BoardService에 자동으로 내용이 추가된다.</h6></center>
 
 ```java 
-  // 댓글 삭제
-    void deleteById(Long commentId);
+    // 페이징 처리
+    Page<BoardDetailDTO> paging(Pageable pageable);
 ```
 <br>
-<center><h6>CommentServiceImpl에 댓글 삭제 관련 내용을 추가한다.</h6></center>
+
+<center><h6>BoardServiceImpl에 paging 관련 내용을 추가한다.</h6></center>
 
 ```java 
-  // 댓글 삭제
+    // 페이징 처리
     @Override
-    public void deleteById(Long commentId) {
-        cr.deleteById(commentId);
+    public Page<BoardDetailDTO> paging(Pageable pageable) {
+        int page = pageable.getPageNumber();
+//      *아래 내용은 요청한 페이지가 1이면 페이지값을 0으로 하고 1이 아니면 요청 페이지에서 1을 뺀다는 의미.
+        page=(page==1)? 0:(page-1);
+//         *PageRequest=> 페이지요청 / page => 몇번째? / PagingConst.PAGE_LIMIT => 몇개씩?
+//         *Sort.by(Sort.Direction.DESC,"id") => 어떤식으로 볼거고 어떤걸 기준으로("id"는 Entity필드 이름으로 와야한다.)
+        Page<BoardEntity> boardEntities =
+                br.findAll(PageRequest.of(page, PagingConst.PAGE_LIMIT, Sort.by(Sort.Direction.DESC, "boardId")));
+//         *Page<BoardEntity> => Page<BoardPagingDTO>
+//         *기존 방식대로하면 안된다. -> 페이지 객체가 제공하는 메서드드를 못 쓴다! 이렇게 단순하게 옮기면
+//        *map(): Entity가 담긴 Page 객체를 dto가 담긴 Page 객체로 변환해주는 역할
+        Page<BoardDetailDTO> boardList = boardEntities.map(
+                board -> new BoardDetailDTO(board.getBoardId(),
+                        board.getMemberEntity().getMemberId(),
+                        board.getBoardWriter(),
+                        board.getBoardTitle(),
+                        board.getBoardContents(),
+                        board.getBoardFilename(),
+                        board.getCreateTime(),
+                        board.getBoardHits())
+        );
+        return boardList;
     }
 ```
 <br>
-<center><h6>여기까지 작성 후 자신이 작성한 댓글을 삭제해본다.</h6></center>
-<center><h6>삭제 前</h6></center>
-<div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentDeleteButton.JPG?raw=true" width="500"><br><br>
-</div><br>
-<center><h6>삭제 後</h6></center>
-<div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/commentDeleteOk.JPG?raw=true" width="500"><br><br>
-</div>
-<center><h6>16번 댓글이 삭제됨을 확인할 수 있다.</h6></center>
-<center><h6>여기까지 확인이 되면 댓글 삭제기능 구현은 정상적으로 구현되었다. </h6></center>
 
-<center><h2>댓글(등록, 삭제, 목록)  파트 끝</h2></center>
+<center><h6>여기까지 작성 후 서버를 실행하여 아래와 같이 페이징형태로 글목록(findAll.html)이 보여지는지 확인한다.</h6></center>
+<div align="center">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/paging_findAll.JPG?raw=true" width="650">
+</div>
+<center><h6>여기까지 확인이 되면 글목록의 Paging 구현은 정상적으로 구현되었다. </h6></center>
+
+<center><h2>[ 글목록 Paging 파트 끝 ]</h2></center>
