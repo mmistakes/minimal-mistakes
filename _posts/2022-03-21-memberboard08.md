@@ -167,13 +167,14 @@ public class MemberDetailDTO {
     }
 }
 ```
-<br><br>
+<br>
 <center><h6>여기까지 작성 후 admin@aaa.com으로 로그인하여 회원목록을 조회해 아래와 같이 조회되는지 확인한다. </h6></center>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberList_jpg.jpg?raw=true" width="300"></div>
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberFindallOk.JPG?raw=true" width="800"></div>
+<center><h6>회원목록이 정상적으로 조회되면 회원목록 기능은 구현되었다. </h6></center>
 
-<br><br>
-
+<br>
+<center><h2>[관리자-회원 상세정보를 새창에서 조회]</h2></center><br>
 <center><h6>회원목록에서 회원이름을 클릭하면  member/3(회원번호)로 된 새창을 띄워 회원 상세정보를 보여주게끔 resources/member 폴더에 findById.html을 만들어준다.</h6></center><br>
 
 <div align="center">
