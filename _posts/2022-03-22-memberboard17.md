@@ -67,12 +67,12 @@ search: true
 <br>
 <center><h3>[MemberController, MemberService, MemberServiceImpl 내용 수정]<br><br>
         기존 회원목록(페이징이 되어있지 않은)과 회원목록 페이지에<br><br> 새로 만들고자 하는 Paging을 동시에 사용하게 되면<br><br>
-        BoardController 내 findAll 메서드, BoardService<br><br> 그리고 BoardServiceImpl 內 findAll 관련 항목과<br><br>
+        MemberController 내 findAll 메서드, MemberService<br><br> 그리고 MemberServiceImpl 內 findAll 관련 항목과<br><br>
         충돌이 일어나 오류가 발생하게 된다.<br><br> 이러한 문제를 방지하기 위해 위의 해당 항목들을 먼저 주석으로 처리해야<br><br>
         정상적으로 Paging 기능이 작동한다/.</h3></center><br><br>
 
 <center><h6>글목록(findAll) 하단에 페이지에 대한 부분을 아래와 같이 보여주기 위해 findAll.html에 그 내용을 추가한다.<br>
-            브라우저 주소창에 보이는 주소값은 /board?page=1 형태로 보여진다.</h6></center>
+            브라우저 주소창에 보이는 주소값은 /member?page=1 형태로 보여진다.</h6></center>
 
 <div align="center">
 <img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberPagingForm.jpg?raw=true" width="650">
