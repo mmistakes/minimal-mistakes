@@ -206,7 +206,7 @@ search: true
                              /member/search?searchType=memberName&keyword="검색할 이름(Ex.bbbb)" 형태와,<br>
                              /member/search?searchType=memberEmail&keyword="검색할 이메일(Ex bbbbb@bbb.com) 형태로 표기된다.</h6></center>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/searchResultForm.JPG?raw=true" width="750">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberSearchResultForm.jpg?raw=true" width="750">
 </div>
 <br>
 
@@ -397,7 +397,7 @@ search: true
 
 <center><h6>여기까지 작성 후 서버를 실행하여 아래와 같이 Paging이 된 회원목록 페이지에서 이름이나 Email로<br> 검색을 하였을 경우 정상적으로 Paging이 된 검색결과 페이지(search.html)가 화면에 보여지는지 확인한다. .</h6></center>
 <div align="center">
-<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/searchResultForm.JPG?raw=true" width="750">
+<img src="https://github.com/Gibson1211/Gibson1211.github.io/blob/master/assets/images/memberSearchResultOk.jpg?raw=true" width="750">
 </div>
 <center><h6>여기까지 확인이 되면 회원목록의 검색기능 구현은 정상적으로 구현되었다. </h6></center>
 
