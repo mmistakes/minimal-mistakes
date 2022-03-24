@@ -104,56 +104,76 @@ This post will capture the books I have read over the years starting from 2019.
 
     1.  10/28/21 - 11/09/21
 
-10. _The Daily Laws: 366 Meditations on Power, Seduction, Mastery, Strategy, and Human Nature_ by Robert Greene - **[In Progress]**
-
-    1.  11/01/21 - TBD
-
-11. _Oedipus_ the King by Sophocles
+10. _Oedipus_ the King by Sophocles
 
     1.  11/04/21 - 11/15/21
 
-12. _The President and the Freedom Fighter_ by Brian Kilmeade
+11. _The President and the Freedom Fighter_ by Brian Kilmeade
 
     1.  A moving book about the life and work of Abraham Lincoln and Fredrick Douglas. Two unlikely friends in a critical time of American History. An accurate account of the two men, not glorifying them, instead truthfully outlining their actions, feelings, and views at various points in their lives. I was honestly more touched and moved by the life of Fredrick Douglas, a man who was born a slave, yet died a legend.
 
     2.  11/10/21 - 11/23/21
 
-13. _Mastery_ by Robert Greene - **[In Progress]**
+## 2022
+
+1.  [_**The Book of Five Rings**_](/categories/mastery/the-master-swordsman) by Miyamoto Musashi
+
+    1.  12/15/21 - 01/09/2021
+
+2.  [_**Mastery**_](/categories/mastery) by Robert Greene
 
     1.  Rereading this book for the second time
 
-    2.  11/27/21 - TBD
+    2.  I got so much out of it this time around, particularly about the intuitive mind, and developing a natural feel for your realm.
 
-14. _Uniquely Human: A Different Way of Seeing Autism_ by Barry M. Prizant - **[In Progress]**
+    3.  11/27/21 - 02/08/22
 
-    1.  12/03/21 - TBD
+3.  _Uniquely Human: A Different Way of Seeing Autism_ by Barry M. Prizant
 
-15. _The Book of Five Rings_ by Miyamoto Musashi - **[In Progress]**
+    1.  12/03/21 - 03/23/22
 
-    1.  12/15/21 - TBD
+4.  _The Daily Laws: 366 Meditations on Power, Seduction, Mastery, Strategy, and Human Nature_ by Robert Greene - **[In Progress]**
 
-16. _Meditations_ by Marcus Aurelius - **[In Progress]**
+    1.  11/01/21 - TBD
+
+    2.  I read a page a day.
+
+5.  _Meditations_ by Marcus Aurelius - **[In Progress]**
 
     1.  N/A - TBD
 
+6.  _Analysis I_ by Terrance Tao - **[In Progress]**
+
+    1.  12/31/2021 - TBD
+
+7.  _Omnivores Dilemma_ by Michael Pollen - **[In Progress]**
+
+    1.  01/16/2021 - TBD
+
+8.  _Theodore Roosevelt, An Autobiography_ by Theodore Roosevelt - **[In Progress]**
+
+    1.  03/24/2022 - TBD
+
 # Books to Read
 
-1.  Analysis 1 by Terrance Tao
+1.  The 48 Laws of Power by Robert Greene
 
-2.  Game Theory by Giacomo Bonanno
+2.  A New World by Eckhart Tolle
 
-3.  Omnivores Dilemma
+3.  The Circadian Code by Satchin Panda
 
-4.  Power vs. Force: The Hidden Determinants of Human Behavior
+4.  Game Theory by Giacomo Bonanno
 
-5.  So Good They Can't Ignore Me
+5.  Power vs. Force: The Hidden Determinants of Human Behavior
 
-6.  Theodore Roosevelt, An Autobiography
+6.  So Good They Can't Ignore Me
 
-7.  The War of Art
+7.  The Iliad by Homer
 
-8.  The Holy Quran, English Translation
+8.  Theodore Roosevelt, An Autobiography
 
-9.  A New World by Eckhart Tolle
+9.  The War of Art
 
-10. Macroeconomics: Principles, Applications, and Tools
+10. The Holy Quran, English Translation
+
+11. Macroeconomics: Principles, Applications, and Tools by
