@@ -26,7 +26,7 @@ search: true
             실제 기능은 아래 동영상을 참고하면 된다.</h6></center>
 
 <div>
-<iframe width="150" src="https://www.youtube.com/embed/r-Jj6eLHJY0" frameborder="0" allowfullscreen></iframe> </div>
+<iframe width="150" src="https://www.youtube.com/embed/QLmzLF-WrAQ" frameborder="0" allowfullscreen></iframe> </div>
 
 <center><h6>먼저 interceptor package를 생성하고 거기에 LoginCheckInterceptor를 class 형태로 생성하여<br>
             아래와 같이 코딩한다.</h6></center>
