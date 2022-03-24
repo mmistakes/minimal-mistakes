@@ -80,6 +80,8 @@ M1 Macbook Air를 사용하고 있으며, 블로그의 모든 글은 Mac을 기�
 
 그림으로 나타내면 다음과 같습니다.
 
+![regression](../images/2022-03-24-regression/regression.png)
+
 예를 들어 주택의 크기로 주택의 가격이 결정된다고 했을 때,
 
 일반적으로 주택의 크기가 클수록 주택의 가격이 높아지겠죠.
@@ -101,6 +103,8 @@ M1 Macbook Air를 사용하고 있으며, 블로그의 모든 글은 Mac을 기�
 일반적으로 미분과 같은 계산을 편리하게 하기 위해 RSS 방식으로 오류의 합을 구합니다.
 
 RSS의 정규화된 식을 보면 다음과 같습니다.
+
+<img src="../images/2022-03-24-regression/rss.png" alt="rss" style="zoom:50%;" />
 
 이러한 오차를 나타내는 RSS와 같은 식을 손실 함수(loss function)라고 하며 변수는 *W*(회귀 계수)입니다.
 
