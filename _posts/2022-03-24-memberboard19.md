@@ -26,7 +26,7 @@ search: true
             실제 기능은 아래 동영상을 참고하면 된다.</h6></center>
 
 <div>
-<iframe width="250" height="600" src="https://www.youtube.com/embed/r-Jj6eLHJY0" frameborder="0" allowfullscreen></iframe> </div>
+<iframe width="150" src="https://www.youtube.com/embed/r-Jj6eLHJY0" frameborder="0" allowfullscreen></iframe> </div>
 
 <center><h6>먼저 interceptor package를 생성하고 거기에 LoginCheckInterceptor를 class 형태로 생성하여<br>
             아래와 같이 코딩한다.</h6></center>
@@ -64,7 +64,62 @@ public class LoginCheckInterceptor implements HandlerInterceptor {
 
 <br>
 
+<center><h6>common package에  거기에 SessionConst를 class 형태로 생성하여<br>
+            아래와 같이 코딩한다. 이렇게 하는 이유는 오타방지를 위해 상수를 선언하기 위함이다.</h6></center>
 
-<center><h6>여기까지 확인이 되면 인터셉터(interceptor) 기능은 정상적으로 구현되었다. </h6></center>
+``` java 
+public class SessionConst {
+    public static final String LOGIN_EMAIL = "loginEmail";
+    // static과 final이 붙고 대문자면 상수 선언
+}
+```
+<br>
+
+<center><h6>또한 interceptor package에 WebConfig를 class 형태로 생성하여 아래와 같이 코딩한다.</h6></center>
+
+``` java 
+// @Configuration: 설정정보를 스프링 실행 시 등록해 줌.
+// interceptor를 사용하지 않고 싶을때는 @Configuration의 주석처리만으로 가능.
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
+    // 로그인 여부에 따른 접속가능, 불가능 페이지 구분.
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new LoginCheckInterceptor())
+                // 만든 LoginCheckInterceptor 클래스 내용을 넘김
+                .order(1) // 해당 인터셉터가 적용되는 순서(우선순위)
+                .addPathPatterns("/**") // 해당 프로젝트의 모든 주소에 대해 인터셉터를 적용
+                .excludePathPatterns("/", "/member/save", "/member/login", "/member/logout", "/css/**");
+                                        // 제외 할 주소(ex. 회원가입, 메인페이지 등)
+    }
+}
+```
+<br>
+
+<center><h6>마지막으로 MemberController에 Login 처리를 위한 메서드를 아래와 같이 수정한다.</h6></center>
+
+``` java 
+    // 로그인 처리 with Interceptor
+    @PostMapping("/login")
+    public String login(@ModelAttribute("login") MemberLoginDTO memberLoginDTO, Model model, HttpSession session) {
+        boolean loginResult = ms.login(memberLoginDTO);
+        if (loginResult) {
+            session.setAttribute("loginEmail", memberLoginDTO.getMemberEmail());
+            String redirectURL = (String) session.getAttribute("redirectURL");
+            if (redirectURL != null) {
+                return "redirect:" + redirectURL;
+            } else {
+                return "redirect:/";
+            }
+        } else {
+            model.addAttribute("message", "로그인 정보가 잘못되었습니다.");
+            model.addAttribute("searchUrl", "/member/login");
+            return "member/message";
+        }
+    }
+```
+<br>
+<center><h6>여기까지 작성 후 서버를 구동하여 글쓰기 링크를 클릭해서 Login 화면으로 인터셉트가 되는지를 확인한다.<br>
+            만일 정상적으로 인터셉터가 이루어지면 인터셉터(interceptor) 기능은 정상적으로 구현되었다. </h6></center>
 
 <center><h2>[ 인터셉터(interceptor) 파트 끝 ]</h2></center>
