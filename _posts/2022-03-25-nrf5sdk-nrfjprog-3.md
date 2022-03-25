@@ -1,5 +1,5 @@
 ---
-title: "nRF5 SDK (11) - nrfjprog 명령어 활용 예시 (2) - 메모리 참조"
+title: "nRF5 SDK (11) - nrfjprog 명령을 이용한 메모리 참조"
 categories:
   - nRF5 SDK
 tags:
@@ -10,7 +10,7 @@ toc: true
 toc_sticky: true
 ---
 
-# 11. nrfjprog 명령어 활용 예시 (2) - 메모리 참조 🌟
+# 11. nrfjprog 명령을 이용한 메모리 참조 🌟
 
 `nrfjprog` 명령어 중 `--memrd` 를 이용하면 <span style="color:#50A0A0"><b>nRF Command Line Tool</b></span> 을 이용해 `nordic` chip 내부에의 flash 메모리 데이터를 읽을 수 있다. 구체적인 명령어 사용 예시에 대해 설명하기에 앞서, 이를 활용하려면 기본적으로 본인이 사용하는 `nordic` chip 의 flash 메모리가 어떤 식으로 구성되는지 확인해야 한다.
 
@@ -37,6 +37,8 @@ toc_sticky: true
 </figure>
 
 위의 그림을 보면 각각의 페이지 주소가 `0x0000_1000` 단위로 구분되어 있는 것을 볼 수 있는데, 각 주소값은 및 메모리 영역은 `4 bytes` 단위로 정렬이 되어있다. (`예: 0x0000_0000, 0x0000_0004, ...., 0x0000_0FFC, 0x0000_1000`). 결과적으로는 하나의 `page` 는 `0x0000_1000 = 4096 bytes = 4kB` 의 크기를 갖는다.
+
+>솔직히 내가 봐도 무슨 소린지 잘 모를 것 같긴한데..📜 아래의 실제 메모리 참조 예시를 보면서 본인이 테스트를 해보면 대충 어떤 구조인지 감이 잡힐지도..?
 
 ---
 

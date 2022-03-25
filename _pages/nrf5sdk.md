@@ -31,6 +31,9 @@ toc_ads: true
 * [nRF5 SDK (7) - 3.2 inch (ILI9341 SPI module) LCD 개발 <1>](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-ili9341/)
 * [nRF5 SDK (8) - 3.2 inch (ILI9341 SPI module) LCD 개발 <2>](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-ili9341-2/)
 * [nRF5 SDK (9) - nRF Command Line Tool 소개 및 설치방법](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-nrfjprog/)
+* [nRF5 SDK (10) - nrfjprog 명령어 활용예시](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-nrfjprog-2/)
+* [nRF5 SDK (11) - nrfjprog 명령을 이용한 메모리 참조](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-nrfjprog-3/)
+
 
 <!---
 ## 포스팅 예정 항목
