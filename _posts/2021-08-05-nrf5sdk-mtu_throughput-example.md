@@ -118,8 +118,7 @@ DLE 기능 사용하지만, 실제 유효한 데이터는 사용 가능한 패�
 
 * 실험 결과: `1 Mbps` 조건에서의 Throughput (`DLE` off: **`24 KB/s`**, on: **`90 KB/s`**). `2 Mbps` 조건에서의 Throughput (`DLE` on: **`150 KB/s`**)
 * 한계점: 예제 소스 코드에서 제공해주는 결과가 실제 유효한 데이터 (ATT Payload 영역) 기준으로 계산된 속도인지 확인 안 됨. 또한 실제 환경에서는 두 기기 사이에 정확하게 데이터가 수신되었는지 확인하는 절차 필요. (`e.g. QoS`)
-* 다음 포스트에서 Nordic UART Service 예제 코드를 이용해서, 임의의 GATT Service 데이터 보낼 때 실제 어플리케이션 시나리오 고려해서 **Throughput** 계산해볼 예정.
-
+* 다음 포스트에서 Nordic UART Service 예제 코드를 이용해서, 임의의 GATT Service 데이터 보낼 때 실제 어플리케이션 시나리오 고려해서 **Throughput** 계산해볼 예정이다. (~~`2022.03` 지금보니 결국 귀찮아서 따로 테스트 안했음 ㅋㅋ~~)
 ---
 
 **Reference**
