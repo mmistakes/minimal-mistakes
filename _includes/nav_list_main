@@ -81,6 +81,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        <span class="nav__sub-title">Database</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Database-gr" %}
+                        <li><a href="/categories/Database-gr" class=""> SQL 기초 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">BLOG</span>
             <ul>
                 {% for category in site.categories %}
