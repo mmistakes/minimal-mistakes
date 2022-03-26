@@ -20,10 +20,12 @@ search: true
 
 <center><h3>[인터셉터(interceptor)기능 추가하기]</h3></center><br>
 
-<center><h6>인터셉터(interceptor) 기능은 로그인 하지 않은 회원이 예를 들어 글쓰기 링크를 클릭하는 경우<br>
+<center><h6>인터셉터(interceptor) 기능은  로그인 하지 않은 회원이 예를 들어 글쓰기 링크를 클릭하는 경우<br>
             글쓰기 페이지로 가는 명령을 가로채서 login 페이지를 먼저 보여주어 <br>
             관리자가 허용하는 일부의 메뉴를 제외하고는 모두 로그인 후 사용토록 강제하는 기능이다.<br>
-            실제 기능은 아래 동영상을 참고하면 된다.</h6></center>
+            실제 기능은 아래 동영상을 참고하면 된다.<br>
+            ※ Interceptor란 컨트롤러에 들어오는 요청 HttpRequest와 컨트롤러가 응답하는 HttpResponse를<br>
+              가로채는 역할을 한다.</h6></center>
 
 <div>
 <iframe width="150" src="https://www.youtube.com/embed/QLmzLF-WrAQ" frameborder="0" allowfullscreen></iframe> </div>

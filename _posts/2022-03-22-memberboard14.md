@@ -280,12 +280,12 @@ public class CommentEntity extends BaseEntity {
     private String commentContents;
 
     
-    // 댓글과 게시글의 관계(하나의 게시글에 여러개의 댓글을 달 수 있음)
+    // 댓글과 게시글의 관계(여러개의 댓글을 하나의 게시글에 달 수 있음)
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="boardId")
     private BoardEntity boardEntity;
 
-    // 댓글과 회원의 관계(한명의 회원이 여러개의 댓글을 달 수 있음)
+    // 댓글과 회원의 관계(여러개의 댓글을 한명의 회원이 달 수 있음)
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="memberId")
     private MemberEntity memberEntity;
