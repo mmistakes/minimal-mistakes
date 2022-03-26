@@ -8,7 +8,7 @@ author_profile: true
 (* indicates equal contribution)
 
 * **Co-attention Network with Label Embedding for Text Classification**<br>
-  **Minqian Liu**, Lizhao Liu, Junyi Cao, Qing Du<br>
+  **Minqian Liu\***, Lizhao Liu\*, Junyi Cao, Qing Du<br>
   In ***Neurocomputing***, 2021.
 
 
