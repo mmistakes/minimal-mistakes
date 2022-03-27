@@ -561,4 +561,8 @@ body {
       padding-right: 0;
     }
   }
+  .page__content {
+    text-align: left;
+    word-break: keep-all;
+  }
 }
