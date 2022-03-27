@@ -5,4 +5,4 @@ author_profile: true
 categories: jekyll update
 ---
 
-CV
+For now, go to [LinkedIn](https://www.linkedin.com/in/chrisschindlbeck/) for my CV.
