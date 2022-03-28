@@ -145,4 +145,4 @@ OWL2Query is an expressive query and meta-query engine and visualization kit sup
 ##### Links
 
 - [Detailed description](/artifacts/sw/owl2query)
-- TODO Source code
+- [Source code](https://github.com/kbss-cvut/owl2query)
