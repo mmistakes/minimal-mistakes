@@ -17,6 +17,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 # Site Settings
 locale                   : "ko-KR"
 title                    : "Hoon's Blog"
+published                : true
 title_separator          : "|"
 subtitle                 : "do that thang"
 name                     : "yhoons"
@@ -291,3 +292,5 @@ defaults:
       show_date: true
 
 date_format: "%Y-%m-%d"
+
+futrue: true
