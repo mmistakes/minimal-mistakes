@@ -86,3 +86,8 @@ if __name__ == '__main__':
 
 ![image](https://user-images.githubusercontent.com/86642180/160359615-2d59c258-c46b-43a0-91ce-cdf98353baf6.png)
 guest를 admin으로 변경 뒤 새로고침을 하면 FLAG 값을 얻을 수 있다
+
+<br>
+
+![image](https://user-images.githubusercontent.com/86642180/160361597-18b2861d-051b-4dc5-ac92-5e40bf997be0.png)
+
