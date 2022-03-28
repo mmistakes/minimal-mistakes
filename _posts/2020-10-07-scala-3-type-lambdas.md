@@ -11,7 +11,7 @@ This article is a bit more difficult &mdash; it's aimed at the experienced Scala
 
 ## 1. Background
 
-We discussed in the [previous article](https://rockthejvm.com/scala-types-kinds) about categorizing types in Scala into _kinds_. Scala 3 is no different here. However, it introduces a new concept and a syntactic structure to express it, which might look daunting and hard to wrap your head around.
+We discussed in the [previous article](/scala-types-kinds) about categorizing types in Scala into _kinds_. Scala 3 is no different here. However, it introduces a new concept and a syntactic structure to express it, which might look daunting and hard to wrap your head around.
 
 To quickly recap:
 
