@@ -12,7 +12,7 @@ teaser: "/assets/images/posts/2022/03/terrinet-thumb.webp"
     <img src="/assets/images/posts/2022/03/terrinet-we.webp" height="300px" />
 </p>
 
-In October 2021 we applied a proposal in the TERRINet project developing a vision- and deep learning-accelerated landing system for Unmanned Aerial Devices (UAV) equipped in PX4 autopilot and Edge AI device. The idea was approved and fellowship was granted.
+In October 2021 we applied a proposal in the TERRINet project developing a vision- and deep learning-accelerated landing system for Unmanned Aerial Devices (UAV) equipped with PX4 autopilot and Edge AI device. The idea was approved and a fellowship was granted.
 
 In half of March, Dominik Pieczyński, Mateusz Piechocki and Bartosz Ptak flied to Sevilla, Spain with the task of developing system during 12 days' stay.
 
