@@ -107,7 +107,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "진근이의 study 블로그 입니다."
   location         : "South korea"
-  email            : "jindream6128@naver.com"
+  #email            : "jindream6128@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
