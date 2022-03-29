@@ -1,7 +1,7 @@
 ---
 title: "TTL"
 layout: ttl
-permalink: /ttls/
-author_profile: false
+permalink: /tags/#ttls/
+author_profile: true
 sidebar_main: true
 ---
