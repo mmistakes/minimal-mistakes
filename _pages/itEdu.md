@@ -1,7 +1,7 @@
 ---
 title: "ITEdu"
 layout: itedu
-permalink: /tags/#itedus/
+permalink: /tags/#itedu/
 author_profile: true
 sidebar_main: true
 ---
