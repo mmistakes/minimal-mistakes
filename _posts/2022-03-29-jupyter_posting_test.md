@@ -1,6 +1,4 @@
 ---
-layout: single
-title: "1-2 수업 첫날 포스팅."
 categories: daily
 tag: [diary, python]
 toc: true
