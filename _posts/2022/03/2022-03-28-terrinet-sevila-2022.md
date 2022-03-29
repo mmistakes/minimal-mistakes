@@ -48,7 +48,7 @@ Systems that support the real-life landing of flying robots are of critical impo
 
 Current vision-based unmanned aerial vehicle **landing systems** are mainly based on Aruco marker detection. The current development of **edge devices** and miniaturisation of resources allows performing **neural network inference on-board** the drone. Building a system based on deep learning would generalise such systems and improve their effectiveness in uncontrolled conditions. Additionally, the algorithm allows for the implementation of **safety features**, such as the ability to detect a human in the neighborhood and hold up the landing process.
 
-The ultimate aim of the research visit is to determine if it is pussible lo use edge devices tu build a vision-hased system using deep neural networks to improve precision UAV landing. If not, we will try to answer how current constraints prevent the use of modern technology and indicatc possible  evelopments and pitfalls of cxisting approachcs.
+The ultimate aim of the research visit is to determine if it is possible to use edge devices to build a vision-based system using deep neural networks to improve precision UAV landing. If not, we will try to answer how current constraints prevent the use of modern technology and indicate possible developments and pitfalls of existing approaches.
 
 ### Deep Computer Vision
 
