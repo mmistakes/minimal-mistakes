@@ -30,7 +30,7 @@ In half of March, Dominik Pieczyński, Mateusz Piechocki and Bartosz Ptak flied 
     <img src="/assets/images/posts/2022/03/terrinet-workspace.webp" height="300px" />
 </p>
 
-Our host was the [GRVC laboratory](https://grvc.us.es/), in witch has published many interesting papers related to UAVs and robotics. For example, the latest was analyzed [an ornithopter under high-amplitude flapping](https://www.sciencedirect.com/science/article/pii/S1270963822000050?via%3Dihub). Their laboratory is a safe place for developing steering algorithms for aerial robotics. As you can see above, it is equipped with a roll cage. Additionally, the whole roll cage is covered by the OptiTrack system.
+Our host was the [GRVC laboratory](https://grvc.us.es/), which has published many interesting papers related to UAVs and robotics. For example, the latest was analyzed [an ornithopter under high-amplitude flapping](https://www.sciencedirect.com/science/article/pii/S1270963822000050?via%3Dihub). Their laboratory is a safe place for developing steering algorithms for aerial robotics. As you can see above, it is equipped with a roll cage. Additionally, the whole roll cage is covered by the OptiTrack system.
 
 After familiarizing ourselves with the infrastructure and security information, we set to work. Based on a PX4 simulator, with EDGE AI devices such as the Jetson Xavier NX and Raspberry Pi 4 with Neural Compute Stick 2, we began to assemble a robotic node executing our algorithm. 
 
