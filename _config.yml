@@ -28,6 +28,7 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     :  "/assets/images/logo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+future                   : true
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -116,7 +117,7 @@ author:
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"s
+      icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
@@ -290,6 +291,6 @@ defaults:
       share: true
       related: true
       show_date: true
+      sidebar_main: true
 
 date_format: "%Y-%m-%d"
-future: true
