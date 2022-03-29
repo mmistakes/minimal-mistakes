@@ -231,18 +231,24 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+daily_archive:
+  type: liquid
+  path: /dailys/
 
 # https://github.com/jekyll/jekyll-archives
 jekyll-archives:
   enabled:
     - categories
     - tags
+    - dailys
   layouts:
     category: archive-taxonomy
     tag: archive-taxonomy
+    daily: archive-taxonomy
   permalinks:
     category: /categories/:name/
     tag: /tags/:name/
+    daily: /dailys/:name/
 
 
 # HTML Compression

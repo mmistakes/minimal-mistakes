@@ -1,7 +1,7 @@
 ---
 title: "Daily"
 layout: daily
-permalink: /tags/#daily/
+permalink: /dailys/
 author_profile: true
 sidebar_main: true
 ---
