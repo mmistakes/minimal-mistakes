@@ -7,12 +7,16 @@ main:
   - title: "Search"
     url: /search/
 docs:
-  - title: "대목차"
+  - title: "I N D E X"
     children:
-      - title: "Category"
-        url: /categories/
-      - title: "Tag"
-        url: /tags/
+      - title: "Zerobase"
+        url: /zerobases/
+      - title: "ITEdu"
+        url: /itedus/
+      - title: "TTL"
+        url: /ttls/
+      - title: "Daily"
+        url: /dailys/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
