@@ -78,12 +78,12 @@ yandex_site_verification :
 baidu_site_verification  :
 
 # Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
+# twitter:
+#   username               :
+# facebook:
+#   username               :
+#   app_id                 :
+#   publisher              :
 og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -117,9 +117,7 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/komingsu"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+
 
 # Site Footer
 footer:
@@ -233,6 +231,7 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
 # https://github.com/jekyll/jekyll-archives
 jekyll-archives:
   enabled:
