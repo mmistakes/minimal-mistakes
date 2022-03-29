@@ -89,6 +89,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Database-academy" %}
+                        <li><a href="/categories/Database-academy" class=""> DataBase 국비지원 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">BLOG</span>
             <ul>
                 {% for category in site.categories %}
