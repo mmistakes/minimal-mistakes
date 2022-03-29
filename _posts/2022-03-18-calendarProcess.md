@@ -99,5 +99,10 @@ Map으로 리턴 타입 바꾸니까 안되서 다시 List<CalendarDTO>로 리�
   `return new RedirectView("url");`
   
   <br>
+  
+# 3/30
+  리다이렉트 안하고 그냥 modelAndView로 다시 보내줌  
+  이렇게 해도 객체 전달은 되는데 문제가  
+  자꾸 null이 찍힌다..
 
 # 4. 브라우저에 thymeleaf로 
