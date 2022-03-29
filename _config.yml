@@ -236,7 +236,7 @@ plugins:
   - jekyll-readme-index
   - jekyll-titles-from-headings
   - jekyll-relative-links
-  - jekyll-archive
+  - jekyll-archives
 
 # mimic GitHub Pages with --safe
 whitelist:
