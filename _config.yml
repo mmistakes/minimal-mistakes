@@ -103,7 +103,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Hoon"
+  name             : "hoon"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
   location         : "South korea"
