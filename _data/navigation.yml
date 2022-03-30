@@ -6,17 +6,7 @@ main:
     url: /tags/
   - title: "Search"
     url: /search/
-docs:
-  - title: "I N D E X"
-    children:
-      - title: "Zerobase"
-        url: /zerobases/
-      - title: "ITEdu"
-        url: /itedus/
-      - title: "TTL"
-        url: /ttls/
-      - title: "Daily"
-        url: /dailys/
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
