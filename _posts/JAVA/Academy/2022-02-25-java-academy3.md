@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  " DAY-03. 자바 국비지원 수업"
+title:  " DAY-03. 자바 "
 categories: JAVA-academy
-tag: [JAVA, 국비지원, String, 형변환, 연산자, Scanner]
+tag: [JAVA, String, 형변환, 연산자, Scanner]
 toc: true
 toc_sticky: true
 author_profile: false
@@ -12,9 +12,8 @@ sidebar:
 # 📌2022-02-25
 
 
-## 자바 수업 
+## 자바  
 <!--Quote-->
-> *본 내용은 국비수업을 바탕으로 작성*
 
 > ❗ 개인이 공부한 내용을 적은 것 이기에 오류가 많을 수도 있음 
 

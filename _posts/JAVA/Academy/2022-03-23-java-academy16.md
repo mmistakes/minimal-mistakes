@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  " DAY-16. 자바 국비지원 수업"
+title:  " DAY-16. 자바"
 categories: JAVA-academy
 tag: [JAVA, IO스트림]
 toc: true
@@ -12,10 +12,9 @@ sidebar:
 
 # 📌2022-03-23
 
-## 자바 수업 
+## 자바 
 
 <!--Quote-->
-> *본 내용은 국비수업을 바탕으로 작성*
 
 > ❗ 개인이 공부한 내용을 적은 것 이기에 오류가 많을 수도 있음 
 

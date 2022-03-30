@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  " DAY-07. 자바 국비지원 시험"
+title:  " DAY-07. 자바"
 categories: JAVA-academy
-tag: [JAVA, 국비지원]
+tag: [JAVA]
 toc: true
 toc_sticky: true
 author_profile: false
@@ -11,10 +11,9 @@ sidebar:
 ---
 # 📌2022-03-04
  
- ## 자바 수업
+ ## 자바 
  
 <!--Quote-->
-> *본 내용은 국비수업을 바탕으로 작성*
 
 > ❗ 개인이 공부한 내용을 적은 것 이기에 오류가 많을 수도 있음 
 

@@ -15,14 +15,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "JAVA" %}
-                        <li><a href="/categories/JAVA" class="">JAVA 기초 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/JAVA" class="">JAVA 사전 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "JAVA-academy" %}
-                        <li><a href="/categories/JAVA-academy" class="">JAVA 국비지원 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/JAVA-academy" class="">JAVA 시작 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -92,7 +92,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Database-academy" %}
-                        <li><a href="/categories/Database-academy" class=""> DataBase 국비지원 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Database-academy" class=""> DataBase 시작 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
