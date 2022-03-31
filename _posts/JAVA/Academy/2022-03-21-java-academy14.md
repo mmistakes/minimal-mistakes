@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  " DAY-14. 자바"
+title:  " DAY-14. 자바 ArrayList"
 categories: JAVA-academy
 tag: [JAVA, ArrayList]
 toc: true

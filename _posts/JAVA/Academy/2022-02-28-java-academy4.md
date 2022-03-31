@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  " DAY-04. 자바"
+title:  " DAY-04. 자바 조건문"
 categories: JAVA-academy
 tag: [JAVA, 조건문]
 toc: true
@@ -53,8 +53,7 @@ public class Main {
 	}
 }
 ```
-
-1. 강사님 코드 
+ 
 
 ```java
 import java.util.Scanner;

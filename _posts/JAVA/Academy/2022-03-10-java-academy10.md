@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  " DAY-10. 자바"
+title:  " DAY-10. 자바 객체"
 categories: JAVA-academy
 tag: [JAVA, 객체, 라이브러리]
 toc: true

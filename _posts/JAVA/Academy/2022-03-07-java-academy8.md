@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  " DAY-08. 자바 "
+title:  " DAY-08. 자바 배열"
 categories: JAVA-academy
 tag: [JAVA, 배열]
 toc: true

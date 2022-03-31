@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  " DAY-05. 자바 "
+title:  " DAY-05. 자바 반복문 "
 categories: JAVA-academy
 tag: [JAVA, 반복문]
 toc: true

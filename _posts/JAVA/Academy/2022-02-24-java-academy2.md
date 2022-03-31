@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  " DAY-02. 자바"
+title:  " DAY-02. 자바 출력"
 categories: JAVA-academy
 tag: [JAVA, 환경설정, 출력(print), 변수]
 toc: true

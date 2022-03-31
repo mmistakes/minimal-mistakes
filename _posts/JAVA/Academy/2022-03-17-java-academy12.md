@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  " DAY-12. 자바"
+title:  " DAY-12. 자바 상속"
 categories: JAVA-academy
 tag: [JAVA, 상속, super]
 toc: true

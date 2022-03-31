@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  " DAY-17. 자바"
+title:  " DAY-17. 자바 네트워크"
 categories: JAVA-academy
 tag: [JAVA, 소켓, 네트워크]
 toc: true
