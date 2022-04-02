@@ -360,4 +360,237 @@ object PersistentBankAccount {
 }
 ```
 
+## 2. The Main Bank Actor
 
+This actor will manage all the bank accounts, which means it will be a parent of those accounts. The bank actor will be the middle layer between the HTTP server and the actual persistent bank accounts, which will do the majority of the work.
+
+```scala
+object Bank {
+  // our code here
+}
+```
+
+The bank actor will also have to be persistent. Why? Because if the application crashes, no bank account can be magically revived. Only _after_ the accounts have been created and their persistence IDs assigned, will the bank accounts start replaying their events from Cassandra. Therefore, we'll also need to store some events here, so that if the application needs to start again, the bank actor will have the right information to start up the appropriate bank accounts.
+
+Therefore, we'll also need to manage
+
+1. commands
+2. events
+3. internal state
+4. responses
+
+Thankfully, the commands will be identical to the ones from the persistent bank accounts: creation, update, retrieval, (optionally) deletion. There's no need for us to change here. Same for the responses. Therefore, we'll import the commands and responses
+
+```scala
+import PersistentBankAccount.Command._
+import PersistentBankAccount.Response._
+import PersistentBankAccount.Command
+```
+
+and set up new data structures for events and state:
+
+```scala
+// events
+sealed trait Event
+case class BankAccountCreated(id: String) extends Event
+
+// state
+case class State(accounts: Map[String, ActorRef[Command]])
+```
+
+For events, we really only need to store the creation of the accounts so we know how to spawn the actors again. For state, we'll keep an internal map to retrieve actors by their unique identifier.
+
+Because the bank is also a persistent actor, we'll need
+
+1. a persistence ID
+2. an empty state
+3. a command handler
+4. an event handler
+
+The first two are straightforward: a `"bank"` and a `State` with an empty `Map()` should suffice.
+
+Third: the command handler. Again, a function taking the current state and an incoming command, and returning an `Effect`. The structure will look like this:
+
+```scala
+val commandHandler: (State, Command) => Effect[Event, State] = ???
+```
+
+However, we need to be able to spawn new bank accounts in this handler, which means we'll need an `ActorContext` to do that. It's usually available when we create the final behavior of the actor, so we need to be able to pass it here, so our definition will change to
+
+```scala
+def commandHandler(context: ActorContext[Command]): (State, Command) => Effect[Event, State] = (state, command) => 
+  command match {
+    // continue here
+  }
+```
+
+Already took the liberty of doing a pattern match on the command, which will treat all the cases, as follows:
+
+```scala
+case createCommand @ CreateBankAccount(_, _, _, _) =>
+  val id = UUID.randomUUID().toString
+  val newBankAccount = context.spawn(PersistentBankAccount(id), id)
+  Effect
+    .persist(BankAccountCreated(id))
+    .thenReply(newBankAccount)(_ => createCommand)
+```
+
+If we need to create an account, we'll generate a unique identifier, spawn a bank account actor, persist the creation event so we know how to bring the actor back if necessary, then (very importantly) pass the command down to the new actor.
+
+Further:
+
+```scala
+case updateCmd @ UpdateBalance(id, _, _, replyTo) =>
+  state.accounts.get(id) match {
+    case Some(account) =>
+      Effect.reply(account)(updateCmd)
+    case None =>
+      Effect.reply(replyTo)(BankAccountBalanceUpdatedResponse(Failure(new RuntimeException("Bank account cannot be found")))) // failed account search
+  }
+```
+
+If we need to add/withdraw money, we'll first need to find the account: if it's found, great &mdash; pass the command on to the account actor, if not, return a failure to whoever sent this command to the bank. Similarly for bank account retrieval:
+
+```scala
+case getCmd @ GetBankAccount(id, replyTo) =>
+  state.accounts.get(id) match {
+    case Some(account) =>
+      Effect.reply(account)(getCmd)
+    case None =>
+      Effect.reply(replyTo)(GetBankAccountResponse(None)) // failed search
+  }
+```
+
+That was the third item on the list.
+
+Fourth: the event handler. In this case, we only have one event to handle, which is the bank account creation. There is only one problem:
+
+- If the bank actor is in "active" mode, i.e. normally receiving commands, the event handler occurs after persisting the `BankAccountCreated` event, and therefore the bank account actor exists.
+- If the bank actor is in recovery mode, i.e. on application start/restart, the event handler occurs after retrieving the `BankAccountCreated` event from Cassandra, and therefore the bank account actor _needs to be created here_.
+
+These points considered, we have
+
+```scala
+def eventHandler(context: ActorContext[Command]): (State, Event) => State = (state, event) =>
+  event match {
+    case BankAccountCreated(id) =>
+      val account = context.child(id) // exists after command handler,
+        .getOrElse(context.spawn(PersistentBankAccount(id), id)) // does NOT exist in the recovery mode, so needs to be created
+        .asInstanceOf[ActorRef[Command]] // harmless, it already has the right type
+      state.copy(state.accounts + (id -> account))
+  }
+```
+
+Then, all we need to do is to write an `apply` method which will return the appropriate bank behavior:
+
+```scala
+// behavior
+def apply(): Behavior[Command] = Behaviors.setup { context =>
+  EventSourcedBehavior[Command, Event, State](
+    persistenceId = PersistenceId.ofUniqueId("bank"),
+    emptyState = State(Map()),
+    commandHandler = commandHandler(context),
+    eventHandler = eventHandler(context)
+  )
+}
+```
+
+Amazing. Let's try this.
+
+### 2.1. Testing the Actors
+
+For interaction with Cassandra, we're going to need a configuration to use the Cassandra journal, so in `src/main/resources`, we'll add an `application.conf` file with the following configuration:
+
+```properties
+# Journal
+akka.persistence.journal.plugin = "akka.persistence.cassandra.journal"
+akka.persistence.cassandra.journal.keyspace-autocreate = true
+akka.persistence.cassandra.journal.tables-autocreate = true
+datastax-java-driver.advanced.reconnect-on-init = true
+
+# Snapshot
+akka.persistence.snapshot-store.plugin = "akka.persistence.cassandra.snapshot"
+akka.persistence.cassandra.snapshot.keyspace-autocreate = true
+akka.persistence.cassandra.snapshot.tables-autocreate = true
+
+akka.actor.allow-java-serialization = on
+```
+
+We can of course use the Akka TestKit to test the actors, but we'll go for some live testing with some events stored in Cassandra! With the Docker container up and running &mdash; all you need is to run `docker-compose up` in the root directory &mdash; we'll write some quick application to run with the Bank actor and some creation/retrieval commands:
+
+```scala
+object BankPlayground {
+  import PersistentBankAccount.Command._
+  import PersistentBankAccount.Response._
+  import PersistentBankAccount.Response
+
+  def main(args: Array[String]): Unit = {
+    val rootBehavior: Behavior[NotUsed] = Behaviors.setup { context =>
+      val bank = context.spawn(Bank(), "bank")
+      val logger = context.log
+
+      val responseHandler = context.spawn(Behaviors.receiveMessage[Response]{
+        case BankAccountCreatedResponse(id) =>
+          logger.info(s"successfully created bank account $id")
+          Behaviors.same
+        case GetBankAccountResponse(maybeBankAccount) =>
+          logger.info(s"Account details: $maybeBankAccount")
+          Behaviors.same
+      }, "replyHandler")
+
+      // ask pattern
+      import akka.actor.typed.scaladsl.AskPattern._
+      import scala.concurrent.duration._
+      implicit val timeout: Timeout = Timeout(2.seconds)
+      implicit val scheduler: Scheduler = context.system.scheduler
+      implicit val ec: ExecutionContext = context.executionContext
+
+      // test 1
+      //      bank ! CreateBankAccount("daniel", "USD", 10, responseHandler)
+      
+      // test 2
+      //      bank ! GetBankAccount("replaceWithYourUuidHere", responseHandler)
+
+      Behaviors.empty
+    }
+
+    val system = ActorSystem(rootBehavior, "BankDemo")
+  }
+}
+```
+
+For this live test, we're first going to send a creation message and check that there are two events in Cassandra (one from the bank and one from the account). Running this application should give us the log `successfully created bank account ...`. You can then shut down the application and run it again, this time with just the second message. A successful log with the account details proves multiple things:
+
+- that the bank actor works
+- that the account actor works
+- that the bank account can successfully respawn the account
+- that the account can successfully restore its state
+
+Sure enough, we can also inspect Cassandra for the relevant events. While Cassandra is running, from another terminal we can run
+
+```bash
+docker ps
+```
+
+and look at the container name, copy it, and then run
+
+```bash
+docker exec -it akka-cassandra-demo_cassandra_1 cqlsh
+```
+
+which will open the CQL prompt for us to inspect the tables. Inside, we'll run
+
+```sql
+select * from akka.messages;
+```
+
+and lo and behold, we have messages there! The Cassandra tables were created automatically by the Akka Persistence Cassandra journal.
+
+```text
+ persistence_id                       | partition_nr | sequence_nr | timestamp                            | event                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | event_manifest | meta | meta_ser_id | meta_ser_manifest | ser_id | ser_manifest | tags | timebucket    | writer_uuid
+--------------------------------------+--------------+-------------+--------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+------+-------------+-------------------+--------+--------------+------+---------------+--------------------------------------
+                                 bank |            0 |           1 | 34633920-b1ce-11ec-8405-a1782b503565 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     0xaced000573720032636f6d2e726f636b7468656a766d2e62616e6b2e6163746f72732e42616e6b2442616e6b4163636f756e74437265617465646aebebd03a53f5500200014c000269647400124c6a6176612f6c616e672f537472696e673b787074002434373166373833392d633363392d346532352d393035622d326333626533343132383437 |                | null |        null |              null |      1 |              | null | 1648825200000 | 0dd3a479-9563-488b-8b72-d259bbaf5f8f
+ 471f7839-c3c9-4e25-905b-2c3be3412847 |            0 |           1 | 346c87f0-b1ce-11ec-8405-a1782b503565 | 0xaced000573720043636f6d2e726f636b7468656a766d2e62616e6b2e6163746f72732e50657273697374656e7442616e6b4163636f756e742442616e6b4163636f756e744372656174656493750afb52eb6b5b0200014c000b62616e6b4163636f756e7474003e4c636f6d2f726f636b7468656a766d2f62616e6b2f6163746f72732f50657273697374656e7442616e6b4163636f756e742442616e6b4163636f756e743b78707372003c636f6d2e726f636b7468656a766d2e62616e6b2e6163746f72732e50657273697374656e7442616e6b4163636f756e742442616e6b4163636f756e74d653249c8fb35b6d02000444000762616c616e63654c000863757272656e63797400124c6a6176612f6c616e672f537472696e673b4c0002696471007e00044c00047573657271007e00047870402400000000000074000355534474002434373166373833392d633363392d346532352d393035622d32633362653334313238343774000664616e69656c |                | null |        null |              null |      1 |              | null | 1648825200000 | 4f9cea0e-13d3-403f-8574-15f19a3a5664
+```
+
+Let's move on to the HTTP server.
