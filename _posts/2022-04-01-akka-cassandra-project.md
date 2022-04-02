@@ -988,3 +988,209 @@ And in the main method, we now need to bring all pieces together:
 ```
 
 Run the application and have fun with the endpoints now, our application should be complete!
+
+## 4. Data Validation
+
+This bit is optional, because the application should work at this point. However, it's worth making our mini-bank a bit more robust in the face of malformed requests, and we can do this with the Cats validation capabilities. We talk about data validation and the Validated type in detail in the [Cats course](https://rockthejvm.com/p/cats), but here we're not going to need too much.
+
+We'll make a simple object where we'll store a generic mini-library for data validation.
+
+```scala
+import cats.data.ValidatedNel
+import cats.implicits._
+
+object Validation {
+  // based on cats.Validated
+  type ValidationResult[A] = ValidatedNel[ValidationFailure, A]
+
+  // validation failures
+  trait ValidationFailure {
+    def errorMessage: String
+  }
+  
+  // continue here
+}
+```
+
+In a `ValidatedNel` (Nel = non-empty list), we always have either
+- a value of type `A` (the desired value)
+- a non-empty list of `ValidationFailure`s
+
+This data type is extremely useful, because we can accumulate _multiple_ errors with an HTTP request and surface them out to the user, instead of a single generic error message.
+
+Let's say, for instance, that we would often need to validate whether a field is present in an HTTP request, or that a numerical field satisfies some minimal properties (e.g. a bank account balance will not be negative).
+
+```scala
+// field must be present
+trait Required[A] extends (A => Boolean)
+// minimum value
+trait Minimum[A] extends ((A, Double) => Boolean) // for numerical fields
+trait MinimumAbs[A] extends ((A, Double) => Boolean) // for numerical fields
+```
+
+Let's further assume that for certain types, e.g. `Int` or `String`, we already have some instances that make sense all (or almost all) the time:
+
+```scala
+// would be `given` instances in Scala 3
+implicit val requiredString: Required[String] = _.nonEmpty
+implicit val minimumInt: Minimum[Int] = _ >= _
+implicit val minimumDouble: Minimum[Double] = _ >= _
+implicit val minimumIntAbs: MinimumAbs[Int] = Math.abs(_) >= _
+implicit val minimumDoubleAbs: MinimumAbs[Double] = Math.abs(_) >= _
+```
+
+An "internal" validation API that would use these instances would look something like this:
+
+```scala
+case class EmptyField(fieldName: String) extends ValidationFailure {
+  override def errorMessage = s"$fieldName is empty"
+}
+
+case class NegativeValue(fieldName: String) extends ValidationFailure {
+  override def errorMessage = s"$fieldName is negative"
+}
+
+case class BelowMinimumValue(fieldName: String, min: Double) extends ValidationFailure {
+  override def errorMessage = s"$fieldName is below the minimum threshold $min"
+}
+```
+
+Now, in terms of something that we would offer to the outside world in terms of data validation, we can expose general APIs for every type of validation we need, in our case "required field", "above a minimum value", "above a minimum value in absolute value".
+
+```scala
+// "main" API
+def validateMinimum[A: Minimum](value: A, threshold: Double, fieldName: String): ValidationResult[A] = {
+  if (minimum(value, threshold)) value.validNel
+  else if (threshold == 0) NegativeValue(fieldName).invalidNel
+  else BelowMinimumValue(fieldName, threshold).invalidNel
+}
+
+def validateMinimumAbs[A: MinimumAbs](value: A, threshold: Double, fieldName: String): ValidationResult[A] = {
+  if (minimumAbs(value, threshold)) value.validNel
+  else BelowMinimumValue(fieldName, threshold).invalidNel
+}
+
+def validateRequired[A: Required](value: A, fieldName: String): ValidationResult[A] =
+  if (required(value)) value.validNel
+  else EmptyField(fieldName).invalidNel
+```
+
+The `validNel` and `invalidNel` are extension methods allowed by the `cats.implicits._` import, so that we can build our `ValidationResult`s more easily.
+
+A general type class we can also expose is some sort of validator for any type, not just for those that pass certain predicates:
+
+```scala
+trait Validator[A] {
+  def validate(value: A): ValidationResult[A]
+}
+
+def validateEntity[A](value: A)(implicit validator: Validator[A]): ValidationResult[A] =
+  validator.validate(value)
+```
+
+We will use this type class for our HTTP requests that we need to validate, namely
+- the bank account creation request
+- the bank account update request
+
+We show in the [Advanced Scala course](https://rockthejvm.com/p/advanced-scala) that when we have a single implicit behavior that makes sense for a type, we should place that implicit value in the companion of that type. In our case, we'll place the implicit type class instances in the companion objects of these requests:
+
+```scala
+import cats.implicits._
+
+object BankAccountCreationRequest {
+  implicit val validator: Validator[BankAccountCreationRequest] = new Validator[BankAccountCreationRequest] {
+    override def validate(request: BankAccountCreationRequest): ValidationResult[BankAccountCreationRequest] = {
+      val userValidation = validateRequired(request.user, "user")
+      val currencyValidation = validateRequired(request.currency, "currency")
+      val balanceValidation = validateMinimum(request.balance, 0, "balance")
+        .combine(validateMinimumAbs(request.balance, 0.01, "balance"))
+
+      (userValidation, currencyValidation, balanceValidation).mapN(BankAccountCreationRequest.apply)
+    }
+  }
+}
+```
+
+We validate each field with the predicate that we need. Notice the use of `combine` which can aggregate multiple errors with a value, if that value invalidates both conditions. Also notice the handy use of `mapN`, which can aggregate _all_ the errors from the `Validated` instances in one convenient call. This is possible because `Validated` is an _applicative_, something we prove and deconstruct in the Cats course.
+
+We can follow the same pattern with the bank account update request:
+
+```scala
+object BankAccountUpdateRequest {
+  implicit val validator: Validator[BankAccountUpdateRequest] = new Validator[BankAccountUpdateRequest] {
+    override def validate(request: BankAccountUpdateRequest): ValidationResult[BankAccountUpdateRequest] = {
+      val currencyValidation = validateRequired(request.currency, "currency")
+      val amountValidation = validateMinimumAbs(request.amount, 0.01, "amount")
+
+      (currencyValidation, amountValidation).mapN(BankAccountUpdateRequest.apply)
+    }
+  }
+}
+```
+
+And with that, we have some implicit type class instances ready for the HTTP requests that we want to check. Now, we need to introduce this validation logic in the HTTP server. Inside the `BankRouter`, we'll add a method that will
+
+- try to validate a request based on an implicit `Validator` for that type
+- if the result is valid, follow the happy path, i.e. the normal route
+- if the result is invalid, return an HTTP response with a `FailureResponse` aggregating _all_ the errors tha were discovered
+
+The method will look like this:
+
+```scala
+def validateRequest[R: Validator](request: R)(routeIfValid: Route): Route =
+  validateEntity(request) match {
+    case Valid(_) =>
+      routeIfValid
+    case Invalid(failures) =>
+      complete(StatusCodes.BadRequest, FailureResponse(failures.toList.map(_.errorMessage).mkString(", ")))
+  }
+```
+
+We specifically made this method curried, because we would like to wrap our existing routes with a method call, in the style of
+
+```scala
+validateRequest(req) {
+  // allRoutesBelow
+}
+```
+
+And this is exactly what we'll do. Right after the `entity(as[...])` calls (of which we have two), we'll insert our `validateRequest` calls:
+
+```scala
+// in endpoint 1
+entity(as[BankAccountCreationRequest]) { request =>
+  validateRequest(request) { // <-- added here
+    onSuccess(createBankAccount(request)) {
+      // send back an HTTP response
+      case BankAccountCreatedResponse(id) =>
+        respondWithHeader(Location(s"/bank/$id")) {
+          complete(StatusCodes.Created)
+        }
+    }
+  }
+}
+```
+
+```scala
+// in endpoint 3
+entity(as[BankAccountUpdateRequest]) { request =>
+  validateRequest(request) { // <-- added here
+    onSuccess(updateBankAccount(id, request)) {
+      // send HTTP response
+      case BankAccountBalanceUpdatedResponse(Success(account)) =>
+        complete(account)
+      case BankAccountBalanceUpdatedResponse(Failure(ex)) =>
+        complete(StatusCodes.BadRequest, FailureResponse(s"${ex.getMessage}"))
+    }
+  }
+}
+```
+
+And this will conclude our data validation attempt &mdash; it doesn't _add_ new endpoints or functionality, but, as we all know as developers, surfacing descriptive error messages makes all the difference in the world. This approach was extremely simplified and there are many ways we can improve it and make it more robust while decoupled from the logic of the HTTP server itself.
+
+At this point, you can run the application again, and have fun with the new endpoints which give you much richer information, especially if you passed the wrong kind of data inside.
+
+## 5. Conclusion
+
+This was a whirlwind tutorial on how to use Akka Actors, Akka Persistence, Akka HTTP, Cassandra and Cats into a bigger application. We created persistent actors, we managed them with a "root" actor, we ran an HTTP server with a sleek DSL and REST API, and we made our data validation more robust with a bit of Cats and the Validated type. We hope you had as much fun writing this application as we did.
+
