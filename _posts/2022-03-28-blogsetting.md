@@ -12,7 +12,7 @@ sidebar:
 
 #### 1일차(2022-03-28)
 
-#### ![hanaloglogo](../images/2022-03-28-blogsetting/hanaloglogo.jpg)
+![hanaloglogo](../images/2022-03-28-blogsetting/hanaloglogo.jpg)
 
 - 블로그 생성
 - 카테고리 및 태그 페이지 추가
