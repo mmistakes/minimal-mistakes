@@ -594,3 +594,397 @@ and lo and behold, we have messages there! The Cassandra tables were created aut
 ```
 
 Let's move on to the HTTP server.
+
+## 3. The HTTP Server
+
+For this section, we're going to use Akka HTTP (obviously), and we'll use the high-level DSL. We will expose the following endpoints:
+
+- A POST endpoint on `/bank` with a JSON payload that will create a new bank account; this will return the status of the request and the unique ID of the account in an HTTP header.
+- A GET endpoint on `/bank/(an id)` which returns a JSON payload containing the details of the account identified by that ID.
+- A PUT endpoint on `/bank/(an id)` with a JSON payload that will signify a withdrawal/deposit to the account; this will return a new JSON containing the new details of the account.
+
+Under a new `BankRouter` file, we need to represent the JSON payloads of these requests. We only have two:
+
+```scala
+case class BankAccountCreationRequest(user: String, currency: String, balance: Double) 
+case class BankAccountUpdateRequest(currency: String, amount: Double) 
+```
+
+As for responses, we already have the right data structures in the bank account definition, so we can either use them verbatim, or create new case classes with the same structure and some conversion methods to/from the responses from the bank account actor. For this article, we'll choose the former, so we'll simply
+
+```scala
+import com.rockthejvm.bank.actors.PersistentBankAccount.Response
+import com.rockthejvm.bank.actors.PersistentBankAccount.Response._
+```
+
+Plus a failure response in case any request is not right:
+
+```scala
+case class FailureResponse(reason: String)
+```
+
+Awesome. Now we need to be able to automatically serialize these case classes to and from JSON, so we'll add the Circe support with the imports
+
+```scala
+import io.circe.generic.auto._
+import de.heikoseeberger.akkahttpcirce.FailFastCirceSupport._
+```
+
+And along with the main import of all directives in Akka HTTP
+
+```scala
+import akka.http.scaladsl.server.Directives._
+```
+
+we can then get started with the Akka HTTP routes we'll need for the server. 
+
+### 3.1. Creating a Bank Account in the Akka HTTP Server
+
+Starting with the first endpoint, a POST on `/bank`:
+
+```scala
+object BankRouter {
+  val routes =
+    pathPrefix("bank") {
+      pathEndOrSingleSlash {
+        post {
+          // parse the payload
+          entity(as[BankAccountCreationRequest]) { request =>
+            /*
+              TODO 1
+             */
+          }
+        }
+      }
+    }
+}
+```
+
+Inside, we need to do the following:
+
+1. fetch the bank actor
+2. send it a `CreateBankAccount` _command_ &mdash; note that it's different from the HTTP request
+3. parse its reply
+4. send back an HTTP response
+
+First, we need the bank actor, which we don't have. We can receive it as a constructor argument to this `BankRouter`, which means we'll need to make it a class. Besides, we'll also need an `ActorSystem` to be able to run the directives, so we'll pass this one too, as an `implicit` argument, or a `using` clause in Scala 3.
+
+```scala
+// at the top
+import akka.actor.typed.{ActorRef, ActorSystem}
+import com.rockthejvm.bank.actors.PersistentBankAccount.Command
+import com.rockthejvm.bank.actors.PersistentBankAccount.Command._
+
+// change here
+class BankRouter(bank: ActorRef[Command])(implicit system: ActorSystem[_]) {
+  // same routes
+}
+```
+
+For point number two, we need to convert the HTTP request into a command we can pass to the bank actor:
+
+```scala
+case class BankAccountCreationRequest(user: String, currency: String, balance: Double) {
+  // added now
+  def toCommand(replyTo: ActorRef[Response]): Command = CreateBankAccount(user, currency, balance, replyTo)
+}
+```
+
+For point number three, we can use the bank actor to send a command and expect a reply. We'll use the ask pattern to do this.
+
+```scala
+// at the top
+import akka.actor.typed.scaladsl.AskPattern._
+import akka.util.Timeout
+import scala.concurrent.duration._
+
+// within BankRouter
+implicit val timeout: Timeout = Timeout(5.seconds)
+def createBankAccount(request: BankAccountCreationRequest): Future[Response] =
+  bank.ask(replyTo => request.toCommand(replyTo))
+```
+
+The ask pattern is useful for this kind of one-off, request-response interaction. Akka will create an intermediate actor with a short lifespan, which will serve as the destination for the eventual response, and this actor will fulfill a `Future` with that response when it receives it. It is this `Future` that we can then handle in our "regular", non-actor code.
+
+Finally, point four is our `TODO 1`:
+
+```scala
+// instead of TODO 1
+onSuccess(createBankAccount(request)) {
+  // send back an HTTP response
+  case BankAccountCreatedResponse(id) =>
+    respondWithHeader(Location(s"/bank/$id")) {
+      complete(StatusCodes.Created)
+    }
+}
+```
+
+`onSuccess` is a directive that asynchronously waits for a Future to be completed, and once it's done, the content of the Future is subject to the function below, which needs to return another directive: in our case, we'll return an HTTP 201, and will return the URI of the bank account as a `Location` HTTP header.
+
+### 3.2. Retrieving a Bank Account
+
+Our routes currently look like this:
+
+```scala
+  val routes =
+    pathPrefix("bank") {
+      pathEndOrSingleSlash {
+        post {
+          // parse the payload
+          entity(as[BankAccountCreationRequest]) { request =>
+            onSuccess(createBankAccount(request)) {
+              // send back an HTTP response
+              case BankAccountCreatedResponse(id) =>
+                respondWithHeader(Location(s"/bank/$id")) {
+                  complete(StatusCodes.Created)
+                }
+            }
+          }
+        }
+      }
+    }
+```
+
+The second endpoint is a GET on `/bank/someUUID`, so we need to add another route inside `pathPrefix("bank")`:
+
+```scala
+  val routes =
+    pathPrefix("bank") {
+      pathEndOrSingleSlash {
+        // same code
+      } ~ // <-- careful with this one
+        path(Segment) { id =>
+          get {
+            // TODO 2
+          }
+        }
+    }
+```
+
+We need to make Akka HTTP parse the next token after `/bank` and return that token to us as the identifier of the account. Once again, we need to
+
+1. send a command to the bank actor to retrieve the details
+2. parse the response
+3. send back an HTTP response
+
+We'll follow the same pattern as before, so we'll add a method to ask the bank actor for some account details:
+
+```scala
+  def getBankAccount(id: String): Future[Response] =
+    bank.ask(replyTo => GetBankAccount(id, replyTo))
+```
+
+And we'll parse the response and send back a proper HTTP response in `TODO 2`:
+
+```scala
+onSuccess(getBankAccount(id)) {
+  case GetBankAccountResponse(Some(account)) =>
+    complete(account)
+  case GetBankAccountResponse(None) =>
+    complete(StatusCodes.NotFound, FailureResponse(s"Bank account $id cannot be found."))
+}
+```
+
+We complete the response with the account details passed directly as the case class instance, because the implicit marshallers will take care to serialize that instance to JSON.
+
+### 3.3. Updating a Bank Account
+
+Our routes now look like this:
+
+```scala
+  val routes =
+    pathPrefix("bank") {
+      pathEndOrSingleSlash {
+        post {
+          // parse the payload
+          entity(as[BankAccountCreationRequest]) { request =>
+            onSuccess(createBankAccount(request)) {
+              // send back an HTTP response
+              case BankAccountCreatedResponse(id) =>
+                respondWithHeader(Location(s"/bank/$id")) {
+                  complete(StatusCodes.Created)
+                }
+            }
+          }
+        }
+      } ~
+      path(Segment) { id =>
+        get {
+          onSuccess(getBankAccount(id)) {
+            case GetBankAccountResponse(Some(account)) =>
+              complete(account)
+            case GetBankAccountResponse(None) =>
+              complete(StatusCodes.NotFound, FailureResponse(s"Bank account $id cannot be found."))
+          }
+        }
+      }
+    }
+```
+
+We need to add a third endpoint, which is a PUT on the same `/bank/UUID` path, therefore:
+
+```scala
+  val routes =
+    pathPrefix("bank") {
+      pathEndOrSingleSlash {
+        // endpoint 1
+      } ~
+      path(Segment) { id =>
+        get {
+          // endpoint 2
+        } ~ // <-- watch this one
+        put {
+          entity(as[BankAccountUpdateRequest]) { request => // need to parse the request
+            // TODO 3
+          }
+        }
+      }
+    }
+```
+
+Following the same pattern, in this endpoint we need to both parse the HTTP request's payload _and_ send back an HTTP response with a payload. So, same deal:
+
+1. Ask the bank actor to update the bank account.
+2. Expect a reply.
+3. Send back an HTTP response.
+
+Adding a method to ask the bank actor for the update:
+
+```scala
+def updateBankAccount(id: String, request: BankAccountUpdateRequest): Future[Response] =
+  bank.ask(replyTo => request.toCommand(id, replyTo))
+```
+
+After that, we need to invoke this method in an `onSuccess` directive like last time, and return an HTTP response in kind:
+
+```scala
+// instead of TODO 3
+onSuccess(updateBankAccount(id, request)) {
+  case BankAccountBalanceUpdatedResponse(Success(account)) =>
+    complete(account)
+  case BankAccountBalanceUpdatedResponse(Failure(ex)) =>
+    complete(StatusCodes.BadRequest, FailureResponse(s"${ex.getMessage}"))
+}
+```
+
+Our routes, therefore, will turn into this:
+
+```scala
+  val routes =
+    pathPrefix("bank") {
+      pathEndOrSingleSlash {
+        post {
+          // parse the payload
+          entity(as[BankAccountCreationRequest]) { request =>
+            onSuccess(createBankAccount(request)) {
+              // send back an HTTP response
+              case BankAccountCreatedResponse(id) =>
+                respondWithHeader(Location(s"/bank/$id")) {
+                  complete(StatusCodes.Created)
+                }
+            }
+          }
+        }
+      } ~
+      path(Segment) { id =>
+        get {
+          onSuccess(getBankAccount(id)) {
+            case GetBankAccountResponse(Some(account)) =>
+              complete(account)
+            case GetBankAccountResponse(None) =>
+              complete(StatusCodes.NotFound, FailureResponse(s"Bank account $id cannot be found."))
+          }
+        } ~
+        put {
+          entity(as[BankAccountUpdateRequest]) { request =>
+            onSuccess(updateBankAccount(id, request)) {
+              case BankAccountBalanceUpdatedResponse(Success(account)) =>
+                complete(account)
+              case BankAccountBalanceUpdatedResponse(Failure(ex)) =>
+                complete(StatusCodes.BadRequest, FailureResponse(s"${ex.getMessage}"))
+            }
+          }
+        }
+      }
+    }
+```
+
+Please watch carefully where the `~` operator is present: this is an operator to chain routes. Every HTTP request is matched by the routes of the server in turn; if the HTTP request was not matched by the current route, it will try the next one through the `~` operator.
+
+Testing time!
+
+### 3.4. Testing the HTTP Server
+
+Much like we did earlier with testing the entire actor interaction, we'll also create a standalone application that will spin up an `ActorSystem`, create the bank actor, and start a new HTTP server based on it.
+
+For the `ActorSystem`, we need to be able to retrieve the `Bank` actor from inside of it, so we'll need to send it a message and expect a response:
+
+```scala
+import akka.actor.typed.{ActorRef, ActorSystem, Behavior}
+import akka.actor.typed.scaladsl.Behaviors
+import com.rockthejvm.bank.actors.Bank
+import com.rockthejvm.bank.actors.PersistentBankAccount.Command
+import akka.actor.typed.scaladsl.AskPattern._
+import akka.http.scaladsl.Http
+import akka.util.Timeout
+import com.rockthejvm.bank.http.BankRouter
+
+import scala.concurrent.{ExecutionContext, Future}
+import scala.concurrent.duration._
+import scala.util.{Success, Failure}
+
+object BankApp {
+  trait RootCommand
+  case class RetrieveBankActor(replyTo: ActorRef[ActorRef[Command]]) extends RootCommand
+  
+  val rootBehavior: Behavior[RootCommand] = Behaviors.setup { context =>
+    val bankActor = context.spawn(Bank(), "bank")
+    Behaviors.receiveMessage {
+      case RetrieveBankActor(replyTo) =>
+        replyTo ! bankActor
+        Behaviors.same
+    }
+  }
+  
+  // continue here
+}
+```
+
+Starting the HTTP server based on the bank actor will need some dedicated code as well:
+
+```scala
+def startHttpServer(bank: ActorRef[Command])(implicit system: ActorSystem[_]): Unit = {
+  implicit val ec: ExecutionContext = system.executionContext
+  val router = new BankRouter(bank)
+  val routes = router.routes
+  
+  // start the server
+  val httpBindingFuture = Http().newServerAt("localhost", 8080).bind(routes)
+  
+  // manage the server binding
+  httpBindingFuture.onComplete {
+    case Success(binding) =>
+      val address = binding.localAddress
+      system.log.info(s"Server online at http://${address.getHostString}:${address.getPort}")
+    case Failure(ex) =>
+      system.log.error(s"Failed to bind HTTP server, because: $ex")
+      system.terminate()
+  }
+}
+```
+
+And in the main method, we now need to bring all pieces together:
+
+```scala
+  def main(args: Array[String]): Unit = {
+    implicit val system: ActorSystem[RootCommand] = ActorSystem(rootBehavior, "BankSystem")
+    implicit val timeout: Timeout = Timeout(5.seconds)
+    implicit val ec: ExecutionContext = system.executionContext
+
+    // using the ask pattern again
+    val bankActorFuture: Future[ActorRef[Command]] = system.ask(replyTo => RetrieveBankActor(replyTo))
+    bankActorFuture.foreach(startHttpServer)
+  }
+```
+
+Run the application and have fun with the endpoints now, our application should be complete!
