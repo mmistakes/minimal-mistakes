@@ -26,13 +26,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "JAVA-review" %}
-                        <li><a href="/categories/JAVA-review" class="">JAVA 복습 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
         <span class="nav__sub-title">JAVASCRIPT</span>
             <ul>
                 {% for category in site.categories %}
