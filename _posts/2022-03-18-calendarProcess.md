@@ -138,3 +138,6 @@ Map으로 리턴 타입 바꾸니까 안되서 다시 List<CalendarDTO>로 리�
   <br>
   
   그래도 배포는 해야되니까 다른 방법으로 진행한다  
+  생각해보니 컨트롤러가 리턴해주는 값은 ajax의 data로 들어가니  
+  ajax에서 success 했을 때 요소에 data 값을 추가해도 된다..  
+  https://velog.io/@leyuri/SpringBoot-ajax-%EC%82%AC%EC%9A%A9%EB%B2%95-%EB%B0%8F-%EC%98%88%EC%A0%9C-thymeleaf
