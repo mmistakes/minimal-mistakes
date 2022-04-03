@@ -50,6 +50,7 @@ innerText로 고치니
 @RequestMapping(value="/readCalendar", produces="text/html;charset=UTF-8", method = RequestMethod.POST)
 @ResponseBody
 ```
+
 `@PostMapping`이나 `@ReqeustMapping(method = RequestMethod.POST`는 같은 것인데  
 왜 위처럼 작성한 것은 안되는지 정확하게 모르겠다  
 Mapping 관련 어노테이션이 두 개여서 그런가..?  
@@ -116,4 +117,10 @@ Map으로 리턴 타입 바꾸니까 안되서 다시 List<CalendarDTO>로 리�
   처음에 ajax에서 받아오는 컨트롤러가 직접적으로 modelAndVIew 리턴을 하게 해서  
   프로세스가 너어어무 꼬였다ㅋㅋ  
   
+# 5. 타임리프 문제
+  `if(param == null)` 컨트롤러에서 파라미터인 param을 map으로 받는데 저렇게 하니까 로직이 꼬이지ㅋㅋ  
+  `param.isEmpty()`로 바꿔줌  
   
+  <br>
+  
+  그러고 그전에도 잘되던 category 부분도 select가 안되는 상황ㅎㅎ 
