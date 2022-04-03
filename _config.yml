@@ -20,7 +20,7 @@ title                    : "Chris Schindlbeck"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Chris Schindlbeck"
-description              : "Chris Schindlbeck"
+description              : "Personal Homepage Chris Schindlbeck"
 port                     : 4000
 host                     : "0.0.0.0"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -102,7 +102,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : /assets/images/bio_photo.jpg
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
