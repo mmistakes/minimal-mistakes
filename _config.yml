@@ -24,8 +24,8 @@ description              : "An amazing website."
 url                      : "https://jkc-mycode.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "jkc-mycode/jkc-mycode.github.io"
-teaser                   : "/assets/images/20220402_191739.png"
-logo                     : "/assets/images/20220402_191739.png"
+teaser                   : #"/assets/images/20220402_191739.png"
+logo                     : "/doc/assets/images/android-chrome-72x72.png"
 masthead_title           : " "
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
