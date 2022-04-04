@@ -332,6 +332,65 @@ public class ItemLookupHandler extends CoProcessFunction<OrderWithUserData, Item
                 .name("itemsLookup");
 ```
 
+
+
+![Alt text](../images/flink/fs.png "FS")
+
+Under the /opt/flink directory you should see a directory named checkpoints
+```shell
+checkpoints/0c83cf0320b3fc6fdcdb3d8323c27503/
+```
+
+Run the job this time by using a checkpoint
+```shell
+./bin/flink run --class io.ipolyzos.compute.EnrichmentStreamV3 \
+  -s checkpoints/0c83cf0320b3fc6fdcdb3d8323c27503/chk-17/ \
+  job.jar
+```
+
+![Alt text](../images/flink/job.png "JOB")
+
+
+![Alt text](../images/flink/ch_overview.png "Ch Overview")
+
+![Alt text](../images/flink/ch_history.png "Ch History")
+
+![Alt text](../images/flink/ch_config.png "Ch Config")
+
+
+The last step will be a way to collect any orders for which we are missing state. We will do so, by introducing Side Outputs:
+```shell
+        final OutputTag<EnrichedOrder> missingStateTagUsers = new OutputTag<>("missingState#User"){};
+        final OutputTag<EnrichedOrder> missingStateTagItems = new OutputTag<>("missingState#Item"){};
+```
+
+```shell
+enrichedOrderStream.getSideOutput(missingStateTagUsers)
+                .printToErr()
+                .name("MissingUserStateSink")
+                .uid("MissingUserStateSink");
+
+        enrichedOrderStream.getSideOutput(missingStateTagItems)
+                .printToErr()
+                .name("MissingItemStateSink")
+                .uid("MissingItemStateSink");
+
+        enrichedOrderStream
+                .print()
+                .uid("print")
+                .name("print");
+```
+
+
+You can see in the logs all of our orders have been successfully Enriched
+```shell
+taskmanager_1  | 2> EnrichedOrder(invoiceId=120647, lineItemId=119740, user=User(id=156766, firstName=Alami, lastName=E_Alami1973@mail.com, emailAddress=E_Alami1973@mail.com, createdAt=1474705963000, deletedAt=-1, mergedAt=-1, parentUserId=-1), item=Item(id=1511, createdAt=1385557281000, adjective=digital, category=mechanism, modifier=warmer, name=digital mechanism warmer, price=18.15), createdAt=1475380503000, paidAt=1475630996000)
+taskmanager_1  | 2> EnrichedOrder(invoiceId=147026, lineItemId=202706, user=User(id=163624, firstName=Lewis, lastName=RuthLewis1984@outlook.net, emailAddress=RuthLewis1984@outlook.net, createdAt=1477890405000, deletedAt=-1, mergedAt=-1, parentUserId=-1), item=Item(id=1671, createdAt=1382095192000, adjective=glossy, category=instrument, modifier=, name=glossy instrument, price=52.8), createdAt=1492070440000, paidAt=1492116522000)
+taskmanager_1  | 2> EnrichedOrder(invoiceId=147026, lineItemId=142579, user=User(id=163624, firstName=Lewis, lastName=RuthLewis1984@outlook.net, emailAddress=RuthLewis1984@outlook.net, createdAt=1477890405000, deletedAt=-1, mergedAt=-1, parentUserId=-1), item=Item(id=314, createdAt=1366517143000, adjective=rechargable, category=instrument, modifier=carrying_case, name=rechargable instrument carrying_case, price=34.32), createdAt=1492070440000, paidAt=1492116522000)
+taskmanager_1  | 2> EnrichedOrder(invoiceId=276233, lineItemId=201650, user=User(id=18390, firstName=Wilson, lastName=Hosna_Wilson1964@yahoo.biz, emailAddress=Hosna_Wilson1964@yahoo.biz, createdAt=1393314336000, deletedAt=-1, mergedAt=-1, parentUserId=-1), item=Item(id=2508, createdAt=1382763365000, adjective=aerodynamic, category=dongle, modifier=, name=aerodynamic dongle, price=42.0), createdAt=1407793944000, paidAt=1407681367000)
+taskmanager_1  | 2> EnrichedOrder(invoiceId=276233, lineItemId=168195, user=User(id=18390, firstName=Wilson, lastName=Hosna_Wilson1964@yahoo.biz, emailAddress=Hosna_Wilson1964@yahoo.biz, createdAt=1393314336000, deletedAt=-1, mergedAt=-1, parentUserId=-1), item=Item(id=1260, createdAt=1372770140000, adjective=organic, category=dongle, modifier=, name=organic dongle, price=45.0), createdAt=1407793944000, paidAt=1407681367000)
+taskmanager_1  | 2> EnrichedOrder(invoiceId=154364, lineItemId=86121, user=User(id=150744, firstName=Gupta, lastName=Emily_Gupta1974@gmail.com, emailAddress=Emily_Gupta1974@gmail.com, createdAt=1472288326000, deletedAt=-1, mergedAt=-1, parentUserId=-1), item=Item(id=349, createdAt=1385349327000, adjective=prize-winning, category=tool, modifier=, name=prize-winning tool, price=27.5), createdAt=1485266178000, paidAt=1485117337000)
+```
 ## 4. Conclusion
 
 
