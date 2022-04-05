@@ -21,6 +21,7 @@ search: true
 <h3> 파이썬(python) 기본 - 01</h3>
 
 <h3>데이터 형식 : str_data, int_data, float_data, bool_data</h3>
+<h3>나누기의 몫을 구하는 표기는 //, 나머지를 구하는 표기는 %</h3>
 <h3>입력받기 : 변수 = input()   ex)name = input() => david => name = david ※ 무조건 문자열로 넘김</h3>
 <h3>형변환(type casting)</h3>
 <h6>float(3) = 3.0 , int(3.6) = 3 , str(1) = '1'<br>
@@ -61,6 +62,30 @@ The latest occupation numbers are heralded as good news for the U.S. economy,<br
 print(article[2]) => 결과값은 t<br>
 글자 자르기(slice) : print(article[2:4] => 결과값은 th<br>
 ※ slice의 특징은 인덱스번호 2번째부터 4까지라고 했으나 실제로 자르는 건 4를 포함시키지 않는</h6><h3>인덱스 2,3에 해당하는
-  t와 h만이다.</h3> <h6>이부분을 혼동해서는 안된다.</h6>
+  t와 h만이다.</h3> <h6>이부분을 혼동해서는 안된다.</h6><br><br>
+
+<h3>format 형식</h3>
+<h6>중괄호({})안에 문자열을 차례차례 넣는다.<br>
+print("I have a { }, I have an { }.". format("pen", "apple"))<br>
+결과값 : I have a pen, I have an apple.<br><br>
+
+print("I have a {1}, I have an {0}.". format("pen", "apple"))<br>
+결과값 : I have a apple, I have an pen.<br><br>
+
+print("I have a {0}, I have an {0}.". format("pen", "apple"))<br>
+결과값 : I have a pen, I have an pen.<br><br></h6>
+
+<h6>format을 이용한 소숫점 자리 표시</h6>
+<h6>interest = 0.087<br>
+print(format(interest, ".2f")) ==> 소숫점 둘째짜리까지 출력 요청(반올림 기본 반영)<br>
+결과값 : 0.09<br><br>
+interest = 0.897<br>
+print(format(interest, ".2f")) ==> 소숫점 둘째짜리까지 출력 요청(반올림 기본 반영)<br>
+결과값 : 0.90(마지막 0은 필요없으나 소숫점 둘째짜리까지 출력 명령을 했기에 0으로 출력)</h6><br><br>
+
+<h6>문자열 출력<br>
+data1 = int(input()) , data2 = int(input())<br>
+print(data1, "+", data2, "=", data1 + data2)  ==> 입력값을 data1 = 5, data2 = 3을 입력시<br>
+출력값 : 5 + 3 =8</h6>
 
 
