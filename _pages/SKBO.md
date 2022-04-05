@@ -67,7 +67,7 @@ gallery1:
     
     
 ---
-### **Armenia, Colombia**
+### **Bogota, Colombia**
 #### **for Microsoft Flight Simulator**  
 
 Available in the MSFS Marketplace  
