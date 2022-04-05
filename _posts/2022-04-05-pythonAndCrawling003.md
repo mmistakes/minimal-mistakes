@@ -25,16 +25,8 @@ search: true
 if 조건:<br>
 [tab]실행문1<br>
 [tab]실행문2<br>      
-if문 조건의 끝에는 콜론(:)을 붙여주고 실행문은 반드시 tab으로 띄어쓰기 후 작성한다.<br>
-Ex 1)<br>
-age =  int(input("나이는?"))<br>
-if age_digit >= 19:<br>
-  print("당신은 성인입니다.")<br>
-  elif age >= 13 and age < 19:<br>
-    print("당신은 청소년입니다.")<br>
-  else:<br>
-    print("당신은 어린이입니다.")<br></h6>
-
+if문 조건의 끝에는 콜론(:)을 붙여주고 실행문은 반드시 tab으로 띄어쓰기 후 작성한다.<br><br>
+Ex)<br>
 ```python
 age =  int(input("나이는?"))
 if age_digit >= 19:
@@ -46,6 +38,50 @@ if age_digit >= 19:
 ```
 <br>
 
+```python
+cash = int(input("현금은?"))
+cash = 120000
+if cash > 100000:
+  print("go to restaurant)
+else:
+  if cash > 50000:
+    print("go to bobjib")
+    else:
+      print("go home")
+```
+<br>
+
+```python
+d1 = int(input())
+if (d1 % 2 == 0):
+  print("짝수")
+else:
+  print("홀수")
+```
+<br>
+
+```python
+data = input("주민번호는?")
+# 주민번호 입력: 800001-1231231
+# 성별을 나타내는 숫자만 출력할 것
+print(data.split("-")[1][0] # -를 기준으로 숫자를 두개로 나누고 인덱스 1인 값의 인덱스 0인 숫자.
+# 결과값 : 1
+```
+<br>
+
+```python
+# letters라는 변수에 사용자로부터 문자열을 입력받아서 문자 n이 들어있는지 출력한다.
+# n이 들어있으면 0, 안들어있으면 -1을 출력하라.
+letters = input()
+# 입력값이 note로 들어왔다면
+var = letters.find('n')
+if var >= 0:
+  print(0)
+else:
+  print(-1)
+  
+# 결과값 : 0
+```
 
 
 

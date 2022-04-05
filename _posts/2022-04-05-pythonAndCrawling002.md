@@ -46,7 +46,18 @@ numbers = [2, 1, 4, 5]<br>
 역순정렬 : numbers.reverse() ==> [5, 4, 2, 1]<br><br>
 
 문자열 나누기<br>
-python_is_easy = "python is easy"
-python_is_easy.split()  ==> ['python', 'is', 'easy']  ※ 리스트 형태로 나눔
-string_list = python_is_easy.split()
-print(string_list)  ==>  ['python', 'is', 'easy']
+python_is_easy = "python is easy"<br>
+python_is_easy.split()  ==> ['python', 'is', 'easy']  ※ 리스트 형태로 나눔<br>
+string_list = python_is_easy.split()<br>
+print(string_list)  ==>  ['python', 'is', 'easy']<br>
+
+python은 대소문자를 구분한다.<br><br>
+
+문자열 찾기(find)<br>
+letters = 'note'<br>
+letters.find('n')<br>
+ - 출력값 0 ==> [find 함수는 값이 있는 경우 index 번호를 출력하고 값이 없는 경우 -1을 출력한다.]<br><br>
+
+문자열 제거(strip)<br></h6>
+
+

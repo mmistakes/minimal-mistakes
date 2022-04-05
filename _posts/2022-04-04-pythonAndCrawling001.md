@@ -44,6 +44,8 @@ Ex) print("여기서 쌍따옴표는 \"라고 써주면 됩니다.") => 여기�
 <h3>개행문자/줄바꿈 표시</h3>
 <h6>\n은 줄바꿈 표시를 의미하며 문자 count 시 하나의 문자로 계산한다.</h6><br>
 
+<h3>tab 표시는 \t</h3><br>
+
 <h3>다양한 문자열 처리</h3>
 <h6>some_string = "python"<br>
 len(some_string) = 6<br><br><br>
