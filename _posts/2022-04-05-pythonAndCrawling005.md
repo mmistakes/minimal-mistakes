@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "파이썬(python) & 크롤링(crawling) - 004"
+title: "파이썬(python) & 크롤링(crawling) - 005"
 categories: python
 tag: [python, 파이썬, crawling, 크롤링]
 toc: true
@@ -15,47 +15,57 @@ search: true
 {: .notice--success}
 
 
-<h2>[파이썬(python) & 크롤링(crawling) - 004]</h2>
+<h2>[파이썬(python) & 크롤링(crawling) - 005]</h2>
 
 
-<h3> 파이썬(python) 기본 - 03</h3>
+<h3> 파이썬(python) 기본 - 05</h3>
 
-<h3>반복문</h3>
-<h6>반복문 문법</h6><br>
+<h3>함수</h3>
+<h6>함수 문법</h6><br>
 
 ```python
-# 반복문 for 변수 in (리스트 or 문자열):
-  for i in range(3):     
-    print(i)
+# 함수 사용법
+  # 함수 선언
+    def 함수이름(ex. func1)():
+      print("hello")
+
+  # 함수 호출
+    func1()
     
-  #출력값 : 0
-           1 
-           2
-
-  # range(3)은 index 기준 0,1,2 의미, 
-  # range(1, 4)는 index 기준 1부터 시작해서 4 바로 직전인 2,3까지임    
+    #출력값 : hello
 ```
 <br>
 
 ```python
-for i in ['python', 'java', 'golang']:
-  print(i)
+# 함수 선언
+def func1(parameter1, parameter2):
+  print("Hello!", parameter1)
+  print("Hello!", parameter2) # 인자(argument)를 2개 선언했어도 하나만 사용해도 됨.
   
-  #출력값
-  python
-  java
-  golang
-```
-<br>
-
-```python
-for index in ['list1', 'list2', 'list3']:
-  print(index)
+# 함수 호출
+func1("python", "java")
 
 # 출력값
-list1
-list2
-list3
+  Hello! python
+  Hello! java
+  
+  # return이 있는 경우 return까지만 실행이 되고 그 이후 코드는 실행하지 않는다.  
+  
+```
+<br>
+
+```python
+def awe_sum(a, b):
+  c = 1 #지역변수
+  result = a + b
+  return result
+  
+a=1 # 전역변수
+print(awe_sum(2, 3)
+
+# 출력값 : 5
+  a값은 1  # 전역변수이기에 값을 가지고 있음.
+  c값은 error # 지역변수로 함수가 끝나면 변수의 효력도 끝난다. 
 ```
 <br>
 
