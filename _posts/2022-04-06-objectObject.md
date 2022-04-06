@@ -44,6 +44,9 @@ ajax에게 바로 데이터 날리는게 아니라 다른 컨트롤러로 리다
 <br>
 결국 타임리프를 활용하지 않고 ajax - controller - ajax로 데이터 출력을 구현 시작  
 
+![image](https://user-images.githubusercontent.com/86642180/161923954-099f1350-8381-45b9-8b45-3a8975569335.png)
+
+
 <br> <br> <br>
 와일드카드`*`는 mysql에서 조회할 때만 쓰기  
 왜냐면 와일드카드로 데이터를 조회하면 다른 사람들은  
