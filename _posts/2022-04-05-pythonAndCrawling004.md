@@ -64,20 +64,10 @@ list3
 sum = 0
 for i in range(1, 11):
   sum += i
-  print(i)
+  
+print(sum)
   
   # 출력값 : 55
-```
-<br>
-
-```python
-# 1부터 10까지 합 구하기
-sum = 0
-for i in range(1, 11):
-  sum += i
-  print(i)
-
-# 출력값 : 55
 ```
 <br>
 
