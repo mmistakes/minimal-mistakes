@@ -160,7 +160,7 @@ search: true
 ```
 <br>
 
-- 집합은 index 번호로 지칭되지 않기에 순서가 없고 중복이 없다.<br>list안에 중복데이터를 제거하고자 할 때 집합을 많이 사용한다.
+  - 집합은 index 번호로 지칭되지 않기에 순서가 없고 중복이 없다.<br>list안에 중복데이터를 제거하고자 할 때 집합을 많이 사용한다.
 
 ```python
               data_list = ['apple', 'dell', 'samsung', 'apple', 'dell', 'nokia']
@@ -179,4 +179,32 @@ search: true
 ```
 <br>
 
+  - number_list가 다음과 같은 리스트일 때 중복 숫자를 제거한 number_list1 집합을 만들고, 출력하세요
+
+```python
+              number_list = [5, 1, 2, 2, 3, 3, 4, 5, 5, 6, 7, 8, 9, 9, 10, 10]
+              number_list1 = set(number_list)
+              number_list1
+              
+              # 출력값
+              {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+```
+<br>
+
+  - number_list2에 다음과 같은 데이터를 순서대로 추가하고, 제거하세요<br>선언: [1, 2, 3]<br>
+추가: 4<br>
+추가(업데이트): [5, 6]<br>
+제거: 2
+
+```python
+                number_list2 = {1, 2, 3}
+                number_list2.add(4) # 하나의 데이터를 추가할 때는 add
+                number_list2.update([5, 6]) # 여러 데이터를 추가할 때는 리스트 형태로 update 함수를 사용
+                number_list2.remove(2) # 특정 데이터를 삭제할 때는 remove
+                number_list2
+              
+              # 출력값
+              {1, 3, 4, 5, 6}
+```
+<br>
 
