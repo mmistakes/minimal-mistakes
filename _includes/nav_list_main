@@ -22,7 +22,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "JAVA-academy" %}
-                        <li><a href="/categories/JAVA-academy" class="">JAVA 시작 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/JAVA-academy" class="">JAVA 정리 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -85,7 +85,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Database-academy" %}
-                        <li><a href="/categories/Database-academy" class=""> DataBase 시작 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Database-academy" class=""> SQL 정리 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -93,7 +93,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "BLOG" %}
-                        <li><a href="/categories/JSP" class=""> BLOG 관리 방법 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/BLOG" class=""> BLOG 관리 방법 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
