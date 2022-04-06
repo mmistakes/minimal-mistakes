@@ -68,3 +68,153 @@ print(awe_sum(2, 3)
   c값은 error # 지역변수로 함수가 끝나면 변수의 효력도 끝난다. 
 ```
 <br>
+
+  - Coding을 출력하는 coding() 함수 만들고 호출하기
+
+```python
+              def coding():
+                  print ("Coding")
+              
+                coding()
+              
+              # 출력값 
+                Coding           
+```
+<br> 
+
+  - 임의의 문자열을 넣으면 해당 문자열을 출력하는 coding() 함수 만들고 호출하기
+
+```python
+              def coding(argument1):
+                  print ("argument1")
+              
+                coding("David)
+              
+              # 출력값 
+                David           
+```
+<br> 
+
+- 임의의 세 개의 숫자를 인자로 넣으면 세 숫자를 더한 값을 출력해주는 함수 만들고 호출하기
+
+```python
+              def plus(data1, data2, data3):
+                  print (data1 + data2 + data3)
+              
+              plus(1, 2, 3)
+                            
+              # 출력값 
+                6         
+```
+<br>
+
+  - 임의의 두 개의 숫자를 인자로 넣으면 두 개의 숫자를 곱한 값을 리턴해주는 함수를 만들고,<br> 특정 변수에 해당 리턴값을 넣고, 호출하기
+
+```python
+                def multiply(data1, data2):
+                    return data1 * data2
+                
+                data = multiply(2, 3)
+                print (data)
+                            
+              # 출력값 
+                6         
+```
+<br>
+
+  - 사칙연산을 지원하는 함수를 다음과 같이 만들고, 특정 변수에 해당 리턴값을 넣고, 호출해보세요.<br>
+    - 첫번째 인자: 숫자
+    - 두번째 인자: 숫자
+    - 세번째 인자: "*" 또는 "+"
+    - 세번째 인자에 따라 첫번째 인자와 두번째 인자를 곱하거나, 더한 값을 리턴
+    - 만약, 세번째 인자가 "*" 또는 "+" 가 아니라면, 0을 리턴
+
+```python
+                def cal(data1, data2, way):
+                    if way == "+":
+                        return data1 + data2
+                    elif way == "*":
+                        return data1 * data2
+                    else:
+                        return 0
+                    
+                data = cal(1, 2, "+")
+                print (data)
+                
+                data = cal(1, 2, "*")
+                print (data)
+                
+                data = cal(1, 2, "/")
+                print (data)
+                            
+              # 출력값 
+                3
+                2
+                0         
+```
+<br>
+
+  - 위에서 작성한 함수에 사칙연산 기능을 "-" (빼기) 와 "/" (나누기) 도 지원하도록 추가하기<br>
+    단, "/" 일 경우, 두번째 인자가 0이면, -1 을 리턴하도록 작성
+
+```python
+                def cal(data1, data2, way):
+                    if way == "+":
+                        return data1 + data2
+                    elif way == "*":
+                        return data1 * data2
+                    elif way == "-":
+                        return data1 - data2
+                    elif way == "/":
+                        if data2 == 0:
+                            return -1
+                        else:
+                            return data1 / data2
+                    else:
+                        return 0
+                    
+                data = cal(1, 2, "+")
+                print (data)
+                
+                data = cal(1, 2, "*")
+                print (data)
+                
+                data = cal(1, 2, "-")
+                print (data)
+                
+                data = cal(1, 0, "/")
+                print (data)
+                
+                data = cal(1, 2, "/")
+                print (data)
+                            
+              # 출력값 
+                3
+                2
+                -1
+                -1
+                0.5         
+```
+<br>
+
+  - 다음과 같은 기능을 하는 함수를 작성하고, 호출하기<br>
+    - 첫번째 인자: 문자열
+    - 두번째 인자: 숫자
+    - 리턴값: 문자열을 숫자만큼 넣은 리스트
+    - 출력 예1:
+      - print_string("Fun", 3)
+      - ["Fun", "Fun", "Fun"]
+
+```python
+                def print_string(string, digit):
+                    data = list()
+                    for index in range(digit):
+                        data.append(string)
+                    return data
+                
+                print_string("Fun", 3)
+                            
+              # 출력값 
+                ['Fun', 'Fun', 'Fun']       
+```
+<br>
