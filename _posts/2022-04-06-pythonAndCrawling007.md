@@ -39,7 +39,7 @@ search: true
 ```
 <br> 
 
-  - 데이터 삭제 : 변수명['삭제할 키'] 
+  - 데이터 삭제 : del 변수명['삭제할 키'] 
 
 ```python
               data_dict = {'한국':'KR', '일본':'JP'}
@@ -130,3 +130,103 @@ search: true
 <br>
 
 
+  - data 전체 출력하기, key값만, value값만은 리스트로 출력해보기<br>
+    environment: 환경<br>
+    company: 회사<br>
+    government: 정부<br>
+    face: 얼굴<br>
+
+```python
+                data = {'environment': '환경', 'company': '회사', 'government': '정부, 정치', 'face': '얼굴'}
+                
+                keys = data.keys()
+                values = data.values()
+                
+                print (data)
+                print (list(keys))
+                print (list(values))
+                  
+              # 출력값
+                {'environment': '환경', 'company': '회사', 'government': '정부', 'face': '얼굴'}
+                ['environment', 'company', 'government', 'face']
+                ['환경', '회사', '정부', '얼굴']
+```
+<br>
+
+
+  - 반복문을 이용해서 한 줄에 하나씩 출력해보기<br>
+    environment: 환경<br>
+    company: 회사<br>
+    government: 정부<br>
+    face: 얼굴<br>
+
+```python
+                data = {'environment': '환경', 'company': '회사', 'government': '정부, 정치', 'face': '얼굴'}
+                
+                for item in data.keys():
+                print (item, ":", data[item])
+                    
+              # 출력값
+                environment: 환경
+                company: 회사
+                government: 정부
+                face: 얼굴
+```
+<br>
+
+
+  - 아래 데이터를 딕셔너리 변수로 만들고 외움표시가 X 인 영단어만 출력<br>
+
+     영단어&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       의미     암기여부  
+    environment 환경     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X <br>
+    company &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회사         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O<br>
+    government&nbsp; 정부      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X<br>
+    face &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;얼굴            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X<br><br>
+    ※ 출력값<br>
+    environment<br>
+    government<br>
+    face
+  
+
+
+```python
+                data = {'environment': ['환경', 'X'], 'company': ['회사', 'O'], 'government': ['정부', 'X'], 'face': ['얼굴', 'X']}
+                
+                for item in data.keys():
+                    data_list = data[item]
+                    if data_list[1] == 'X':
+                        print (item)
+                    
+              # 출력값
+                environment
+                government
+                face
+```
+<br>
+
+  - 아래 데이터를 딕셔너리 변수로 만들고 사용자로부터 영어단어를 입력받으면 해당 영어단어의 외움표시를 O로 수정하고, 외움표시가 X 인 단어만 출력<br>
+
+    - 영단어&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       의미     암기여부  
+    - environment 환경     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X <br>
+    - company &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회사         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O<br>
+    - government&nbsp; 정부      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X<br>
+    - face &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;얼굴            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X<br><br>
+
+```python
+                data = {'environment': ['환경', 'X'], 'company': ['회사', 'O'], 'government': ['정부', 'X'], 'face': ['얼굴', 'X']}
+                
+                english = input()
+                if english in data.keys():  # 입력 단어가 딕셔너리에 없을 때 발생할 수 있는 에러방지를 위해 삽입한 코드
+                    data[english][1] = 'O'
+                
+                for item in data.keys():
+                    data_list = data[item]
+                    if data_list[1] == 'X':
+                        print (item)
+                    
+              # 출력값
+                사용자 입력: environment
+                결과값: government
+                       face
+```
+<br>

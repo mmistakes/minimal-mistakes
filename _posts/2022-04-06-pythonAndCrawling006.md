@@ -66,3 +66,48 @@ mul_return(1)
 ```
 <br>  
 
+  - 예제: (x,y) = (y,x)라고 쓰면 x,y의 값은 바로 교환된다.
+
+```python
+    var1, var2 = 1, 2
+    print (var1, var2)
+    
+    var1, var2 = var2, var1 # swapping
+    print (var1, var2)
+    
+    # 출력값
+      1 2
+      2 1
+    
+```
+<br>
+
+  - 두번째 데이터부터 마지막 데이터 출력하기
+    tupledata = ('coding1', 'coding2', 'coding3', 'coding4', 'coding5')
+    ※ 결과값 : ('coding2', 'coding3', 'coding4', 'coding5')
+
+```python
+    tupledata = ('coding1', 'coding2', 'coding3', 'coding4', 'coding5')
+    data = list(tupledata)
+    del data[0]
+    tuple(data)
+    
+    # 출력값
+      ('coding2', 'coding3', 'coding4', 'coding5')    
+```
+<br>
+
+  - 튜플 데이터를 리스트 데이터로 변환한 후에 'coding4' 데이터를 마지막에 추가하고, 다시 튜플 데이터로 변환 
+    tupledata = ('coding1', 'coding2', 'coding3')
+  ※ 결과값 : ('coding1', 'coding2', 'coding3', 'coding4')
+
+```python
+    tupledata = ('coding1', 'coding2', 'coding3', 'coding4', 'coding5')
+    data = list(tupledata)
+    data.append('coding4')
+    tuple(data)
+    
+    # 출력값
+      ('coding1', 'coding2', 'coding3', 'coding4')    
+```
+<br>
