@@ -230,3 +230,66 @@ search: true
                        face
 ```
 <br>
+
+  -  dict_all, dict2, dict3 딕셔너리 변수가 있을 때,<br> dict2와 dict3 두 데이터를 dict_all 딕셔너리 변수에 추가한 후,<br> dict_all 변수를 출력
+
+```python
+              dict_all = {'environment': '환경', 'gonernment':'정부, 정치'}
+              dict2 = {'company': '회사', 'face':'얼굴'}
+              dict3 = {'apple': '사과'}
+              
+              for item in dict2.keys():
+              dict_all[item] = dict2[item]
+              
+              for item in dict3.keys():
+              dict_all[item] = dict3[item]
+    
+              dict_all
+              
+                  
+              # 출력값
+              {'environment': '환경',
+               'gonernment': '정부, 정치',
+               'company': '회사',
+               'face': '얼굴',
+               'apple': '사과'}
+```
+<br>
+
+  -  다음 actor_info 딕셔너리 변수를 만들고,<br> 홈페이지, 배우 이름, 최근 출연 영화 갯수를 다음과 같이 출력하세요<br>
+
+```python
+#     actor_info = {'actor_details': {'생년월일': '1971-03-01',
+#                         '성별': '남',
+#                         '직업': '배우',
+#                         '홈페이지': 'https://www.instagram.com/madongseok'},
+#       'actor_name': '마동석',
+#       'actor_rate': 59361,
+#       'date': '2017-10',
+#       'movie_list': ['범죄도시', '부라더', '부산행']}
+       
+#     출력 예:
+#     배우 이름: 마동석
+#     홈페이지: https://www.instagram.com/madongseok
+#     출연 영화 갯수: 3
+    
+              actor_info = {'actor_details': {'생년월일': '1971-03-01',
+                                 '성별': '남',
+                                 '직업': '배우',
+                                 '홈페이지': 'https://www.instagram.com/madongseok'},
+               'actor_name': '마동석',
+               'actor_rate': 59361,
+               'date': '2017-10',
+               'movie_list': ['범죄도시', '부라더', '부산행']}
+
+              print ("배우 이름:", actor_info['actor_name'])
+              print ("홈페이지:", actor_info['actor_details']['홈페이지'])
+              print ("출연 영화 갯수:", len(actor_info['movie_list']))
+              
+                  
+              # 출력값
+                배우 이름: 마동석
+                홈페이지: https://www.instagram.com/madongseok
+                출연 영화 갯수: 3
+```
+<br>
