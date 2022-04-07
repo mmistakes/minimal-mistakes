@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "sunrise"
 locale                   : "en-US"
 title                    : "Estoy Yendo!z"
 title_separator          : "-"
-subtitle                 : "since 2022"
+subtitle                 : #
 name                     : "Estoy Yendo!z"
 description              : "getting some fun out of life."
 url                      : "https://yendoz.github.io"
@@ -104,9 +104,9 @@ analytics:
 author:
   name             : "Yendoz"
   avatar           : "/assets/images/profile.jpg"
-  bio              : "in the end it's all about<br />the **love** you're sending out"
+  bio              : "in the end it's all about<br />the **love** you're sending out<br />since 2022."
   location         : "Somewhere"
-  # email            : " "
+  email            : #
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
