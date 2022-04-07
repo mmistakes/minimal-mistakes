@@ -106,11 +106,11 @@ author:
   avatar           : "/assets/images/profile.jpg"
   bio              : "in the end it's all about<br />the **love** you're sending out"
   location         : "Somewhere"
-  email            : "rimsouth@gmail.com"
+  email            : " "
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:rimsouth@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
