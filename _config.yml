@@ -106,7 +106,7 @@ author:
   avatar           : "/assets/images/profile.jpg"
   bio              : "in the end it's all about<br />the **love** you're sending out"
   location         : "Somewhere"
-  email            : " "
+  # email            : " "
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -138,7 +138,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/yendoz"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
