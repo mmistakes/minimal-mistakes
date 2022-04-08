@@ -1,8 +1,9 @@
 ---
 layout: single
-title:  "Publications"
+title:  "Research"
 author_profile: true
-categories: wide
+date:   2021-05-29 16:00:00 +0100
+categories: jekyll update
 ---
 
 A list of my publications, categorized into 
