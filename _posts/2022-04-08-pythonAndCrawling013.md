@@ -46,24 +46,27 @@ search: true
 
 ```python
               #태그 찾기
-              soup.select("title")
+              items = soup.select("title")
               
               #특정 태그 아래에 있는 태그 찾기
-              soup.select("div a") #div 태그 아래에 있는 a 태그 찾기
+              items = soup.select("div a") #div 태그 아래에 있는 a 태그 찾기
               
               #특정 태그 바로 아래에 있는 태그 찾기
-              soup.select("head > title")
-              soup.select("head > #link1") #아이디로 태그 찾음
+              items = soup.select("head > title")
+              items = soup.select("head > #link1") #아이디로 태그 찾음
               
               #태그들의 형제 태그 찾기
-              soup.select("#link1 ~ .sister")
-              soup.select("#link1 + .sister")
+              items = soup.select("#link1 ~ .sister")
+              items = soup.select("#link1 + .sister")
               
               #CSS class로 태그 찾기
-              soup.select(".sister")
+              items = soup.select(".sister")
               
               #ID값으로 태그 찾기
-              soup.select("#link1")
+              items = soup.select("#link1")
+              
+              # 태그.클래스이름1.클래스이름2.~~~
+              items = soup.select('li.course.paid')
 
 ```
 <br>
@@ -161,6 +164,28 @@ search: true
           # find는 select_one, find_all은 select로 대체 가능
 ```
 <br>
+
+  - 추출된 데이터의 추가 가공
+    - ex) (basic)-개발자가 실제 사용하는 함수 모음[5]
+    - 위의 예와 같이 실제 필요한 문구는 '1.개발자가 실제 사용하는 함수 모음'으로 앞쪽의 글자와 뒷쪽의 숫자 부분을 삭제하고자 하는 경우
+
+```python         
+           # 1. split 함수 이용해 [5] 날리기 ==>  '['를 기준으로 쪼갠 후 하여 앞쪽 데이터[0]만 선택 
+             print(title.get_text().split('[')[0])
+             # 출력값 : (basic) 개발자가 실제 사용하는 함수 모음
+             
+           # 2. split 함수 이용해 '(basic)-' 부분 날리기 ==> '-'를 기준으로 쪼갠 후 하여 뒷쪽 데이터[1]만 선택
+             print(title.get_text().split('[')[0].split('-')[1])
+             
+           # 3. strip 함수 이용해 공백 또는 글 간 빈줄 날리기 
+             print(title.get_text().split('[')[0].split('-')[1].strip())
+             
+           # 4. 위의 결과값에 번호 추가하여 출력하기(for 문에 하나의 인자를 더 추가)
+             for index, title in enumerate(titles): 
+               # ==> 숫자 인자로 index를 추가했음. 
+               #     enumerate의 경우 숫자는 0부터 시작하기에 1부터 시작하게 조정 필요
+                print (str(index+1) + '.', title.get_text().split('[')[0].split('-')[1].strip())
+```
 <br>
 <h3>class 선택자와 id 선택자 선택 고려사항</h3>
 
