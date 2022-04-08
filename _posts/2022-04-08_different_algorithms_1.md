@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "AdaBoost, ExtraTrees, GradientBoosing, LDA"
-categories: Kaggle
+categories: ML
 tag: [AdaBoost, ExtraTrees, GradientBoosing, LDA]
 toc: true
 author_profile: false
