@@ -28,13 +28,13 @@ Connect with me on:
 
 ### Domain Knowledge
 <p align="center">
-<img src="https://img.shields.io/badge/Robotics-green?style=flat">
-<img src="https://img.shields.io/badge/Control-red?style=flat">
-<img src="https://img.shields.io/badge/Motion Planning-blue?style=flat">
-<img src="https://img.shields.io/badge/Sensor Fusion-yellowgreen?style=flat">
-<img src="https://img.shields.io/badge/Signal and Image Processing-blueviolet?style=flat">
-<img src="https://img.shields.io/badge/Machine Learning-success?style=flat"> 
-<img src="https://img.shields.io/badge/Blockchain-critical?style=flat"> 
+  <img src="https://img.shields.io/badge/Robotics-green?style=flat">
+  <img src="https://img.shields.io/badge/Control-red?style=flat">
+  <img src="https://img.shields.io/badge/Motion Planning-blue?style=flat">
+  <img src="https://img.shields.io/badge/Sensor Fusion-yellowgreen?style=flat">
+  <img src="https://img.shields.io/badge/Signal and Image Processing-blueviolet?style=flat">
+  <img src="https://img.shields.io/badge/Machine Learning-success?style=flat"> 
+  <img src="https://img.shields.io/badge/Blockchain-critical?style=flat"> 
 </p>
 
 ### Programming Languages
@@ -55,6 +55,7 @@ Connect with me on:
   <img alt="ROS" src="https://img.shields.io/static/v1?style=flat&message=ROS&color=22314E&logo=ROS&logoColor=FFFFFF&label=" />
   <img alt="git" src="https://img.shields.io/badge/git-E44C30?style=flat&logo=git&logoColor=white" />
   <img alt="Vim" src="https://img.shields.io/badge/VIM-%2311AB00.svg?&style=flat&logo=vim&logoColor=white" />
+  <img alt="opencv" src="https://img.shields.io/badge/-OpenCV-05122A?style=flat&logo=opencv&logoColor=5C3EE8" />
   <img alt="numpy" src="https://img.shields.io/badge/Numpy-777BB4?style=flat&logo=numpy&logoColor=white" />
   <img alt="Pytest" src="https://img.shields.io/badge/Pytest-0A9EDC.svg?logo=pytest&logoColor=white">
   <img alt="tmux" src="https://img.shields.io/badge/tmux-1BB91F?style=flat&logo=tmux&logoColor=white" />
@@ -96,11 +97,11 @@ Connect with me on:
 ## 📈 My Github Stats
 
 <p align="center">
- <img align="center" src="https://github-readme-stats.vercel.app/api?username=cschindlbeck&show_icons=true&include_all_commits=true&theme=gotham&hide_border=false" alt="cschindlbeck's github stats" /> <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cschindlbeck&layout=compact&theme=gotham&hide_border=false" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=cschindlbeck&show_icons=true&include_all_commits=true&theme=gotham&hide_border=false" alt="cschindlbeck's github stats" /> 
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cschindlbeck&layout=compact&theme=gotham&hide_border=false" />
 </p>
 
 <p align="center">
-<img src="https://komarev.com/ghpvc/?username=cschindlbeck&style=flat&color=blue" alt="cschindlbeck_profileviews" />
-<img src="https://badges.pufler.dev/years/cschindlbeck?style=flat&color=blue" alt="cschindlbeck_years" />
-
+  <img src="https://komarev.com/ghpvc/?username=cschindlbeck&style=flat&color=blue" alt="cschindlbeck_profileviews" />
+  <img src="https://badges.pufler.dev/years/cschindlbeck?style=flat&color=blue" alt="cschindlbeck_years" />
 </p>
