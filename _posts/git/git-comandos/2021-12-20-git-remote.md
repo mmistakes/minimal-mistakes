@@ -102,7 +102,9 @@ git branch --all
   master
   remotes/origin/feature-a
   remotes/origin/master
+
 # Para eliminar la rama remota "feature-a"  
+
 git push --delete origin feature-a
 ```
 

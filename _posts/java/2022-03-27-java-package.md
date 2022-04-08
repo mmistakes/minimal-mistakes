@@ -1,13 +1,13 @@
 ---
 layout: single
-title: Java - Métodos
+title: Java - Package
 date: 2022-03-27
 classes: wide
 toc: true
 toc_label: "Tabla de contenido"
 toc_icon: "clipboard-list"
 header:
-  teaser: /assets/images/llama.jpg
+  teaser: /assets/images/java/logo-java.jpg
 categories:
   - java
   - java-package
