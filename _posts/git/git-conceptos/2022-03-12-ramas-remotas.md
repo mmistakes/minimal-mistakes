@@ -31,7 +31,7 @@ page_css:
 origin/master
 ```
 
-* Muestra en donde se encontraba la **rama master** en el **|Repositorio Remoto|** la última vez que actualizamos el puntero
+* Muestra en donde se encontraba la **rama master** en el **Repositorio Remoto** la última vez que actualizamos el puntero
 
 ```bash
                           origin/master
@@ -45,4 +45,3 @@ origin/master
                                               |
                                             master
 ```
-
