@@ -7,7 +7,7 @@ toc: true
 toc_label: "Tabla de contenido"
 toc_icon: "clipboard-list"
 header:
-  teaser: /assets/images/llama.jpg
+  teaser: /assets/images/logo-java-2.jpg
 categories:
   - git
   - git-ramas 
