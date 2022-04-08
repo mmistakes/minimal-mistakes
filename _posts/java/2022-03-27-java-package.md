@@ -7,7 +7,7 @@ toc: true
 toc_label: "Tabla de contenido"
 toc_icon: "clipboard-list"
 header:
-  teaser: /assets/images/java/logo-java.jpg
+  teaser: /assets/images/java/logo-java-2.jpg
 categories:
   - java
   - java-package
