@@ -21,16 +21,15 @@ search: true
 <h3> 크롤링(Crawling) 기본 - 18</h3>
 
 <h3>공공데이터 크롤링하기</h3>
-<h3>공공데이터 포털(data.go.kr) 회원가입 및 크롤링하고자 하는 항목에 대한 인증키 신청를 신청한다.<br><br>
-    중요한 점은 인증키를 받았다고 해서 바로 사용이 가능한 것은 아니다. 최소 1~3시간 이후<br><br>
-    인증키가 정상적으로 작동된다.</h3>
+<h5>공공데이터 포털(data.go.kr) 회원가입 및 크롤링하고자 하는 항목에 대한 인증키 신청를 신청한다.<br><br>
+    중요한 점은 인증키를 받았다고 해서 바로 사용이 가능한 것은 아니다.<br><br> 
+    최소 1~3시간 이후 인증키가 정상적으로 작동된다.</h5>
 
 
 <div align="center">
 <img src="http://drive.google.com/uc?export=view&id=1g-_lCO18cM-vMWQKcutGHxxejj3MD8tq" width="800"><br><br>
 <img src="http://drive.google.com/uc?export=view&id=1g1z5KdBAR2_XKpYQZBFqj7sa4W_wxtIC" width="800"><br><br>
 <img src="http://drive.google.com/uc?export=view&id=1g7C48JOy_cM73sEbxCTzydoTgIjfITpI" width="800"><br><br>
-<img src="http://drive.google.com/uc?export=view&id=1g-_lCO18cM-vMWQKcutGHxxejj3MD8tq" width="800"><br><br>
 <img src="http://drive.google.com/uc?export=view&id=1g9gbz1VyoAojY_8s_s5HV0rfGIZ7egKQ" width="800"><br><br>
 </div>
 <br><br>
@@ -40,7 +39,7 @@ search: true
   - 특정 목적에 따라 데이터를 태그로 감싸서 마크업하는 범용적인 포맷임
   - 마크업 언어는 태그 등을 이용하여 데이터의 구조를 기술하는 언어의 한 가지로 가장 친숙한 마크업 언어가 HTML임
   - XML은 HTML과 마찬가지로 데이터를 계층 구조로 표현함
-  - XML 기본 구조:  <태그 열기 속성="속성값">내용<태그 닫기>
+  - XML 기본 구조:  <태그 열기 속성="속성값">내용</태그 닫기>
   - 태그와 속성은 특정 목적에 따라 임의로 이름을 정해서 사용
   - 다른 요소와 그룹으로 묶을 수도 있음
 
@@ -54,7 +53,7 @@ search: true
 
 <br>
 
-
+<h5>크롤링 한 로우데이터가 XML 포맷인경우 find_all이나 find 함수를 이용하여 출력한다. </h5>
 ```python 
 
                 import requests
