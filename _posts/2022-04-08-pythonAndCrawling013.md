@@ -76,11 +76,11 @@ search: true
   - find와 select는 태그 이름, 속성, 속성값을 특정하는 방식은 같다<br>하지만 CSS는 이 외에도 다양한 선택자(selector)를 갖기 때문에 여러 요소를 조합하여 태그를 특정하기 쉽다. 
   - 예를 들어 특정 경로의 태그를 객체로 반환하고 싶을 때, find의 경우 아래와 같이 반복적으로 코드를 작성해야 하는 반면 <br>select는 직접 하위 경로를 지정할 수 있다.
 
-    ###find
-    soup.find('div').find('p')
+    - find
+      - soup.find('div').find('p')
     
-    ###select
-    soup.select_one('div > p')<br><br>
+    - select
+      - soup.select_one('div > p')<br><br>
 
   - 그러므로 다양한 조건 활용과 태그를 직관적으로 찾기 위해서는 find보다는 select를 사용하는 게 유리.
 
@@ -100,8 +100,8 @@ search: true
               # 담은 페이지(res.content)를 html.parser를 이용 분해(parsing)해서 soup이라는 변수에 담기
               soup = BeautifulSoup(res.content, 'html.parser')
               
-              # select_one라는 함수를 이용해 필요한 데이터 하나(ex. title 그리고 h1 태그)를 추출해서 mydata라는 변수에 담기
-              mydata = soup.select_one('title', 'h1')              
+              # find라는 함수를 이용해 필요한 데이터 하나(ex. title 그리고 h1 태그)를 추출해서 mydata라는 변수에 담기
+              mydata = soup.find('title', 'h1')              
             
               # mydata에 담긴 내용 중 text만 빼서(get_text()) 출력하기
               print(mydata)   # 태그를 포함한 데이터가 추출됨.
@@ -111,7 +111,7 @@ search: true
 ```
 <br> 
 
-  - 크롤링 할 데이터를 지정할때는 크롬 브라우저의 페이지소스 보기를 한 후 개발자도구(f12) 좌측 상단<br> 검사할 페이지요소 선택(화살표 모양의 아이콘, Ctrl+Shift+C)을 클릭하여 지정하고자 하는 요소를 클릭한 후<br> 우측 개발자도구-요소(element)에 나타난 태그를 기반으로 지정한다.
+  - 크롤링 할 데이터를 지정할때는 크롬 브라우저의 페이지소스 보기를 한 후 개발자도구(f12) 좌측 상단에 있는<br> 검사할 페이지요소 선택(화살표 모양의 아이콘, Ctrl+Shift+C)을 클릭하여 지정하고자 하는 요소를 클릭한 후<br> 우측 개발자도구-요소(element)에 나타난 태그를 기반으로 지정한다.
 
 
 ```python

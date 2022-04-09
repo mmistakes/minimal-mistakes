@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "파이썬(python) & 크롤링(crawling) - 014"
+title: "파이썬(python) & 크롤링(crawling) - 015"
 categories: python
 tag: [python, 파이썬, crawling, 크롤링]
 toc: true
@@ -15,10 +15,10 @@ search: true
 {: .notice--success}
 
 
-<h2>[파이썬(python) & 크롤링(crawling) - 014]</h2>
+<h2>[파이썬(python) & 크롤링(crawling) - 015]</h2>
 
 
-<h3> 크롤링(Crawling) 기본 - 14</h3>
+<h3> 크롤링(Crawling) 기본 - 15</h3>
 
 <h3>크롤링(Crawling) - 여러페이지 크롤링, 엑셀로 저장</h3>
 <h5>크롤링 할 페이지가 없는 경우 확인</h5>
