@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "contrast" #"default" "air", "aqua", "contrast", "dar
 locale                   : "ko-KR"
 title                    : "jsheo.blog"
 title_separator          : "|" 
-subtitle                 : "If not now, then when??" # site tagline that appears below site title in masthead
+subtitle                 : "If not now, then when????" # site tagline that appears below site title in masthead
 name                     : "Heo Jung Seok"
 description              : "Welcome to jsheo.blog :)"
 url                      : "https://heojungseok.github.io"
