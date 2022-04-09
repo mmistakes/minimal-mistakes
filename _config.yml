@@ -79,21 +79,21 @@ naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
 
-# Scholar
-scholar:
-  style: apa
-  locale: en
-  sort_by: none
-  order: ascending
-  source: ./_bibliography
-  bibliography: references.bib
-  bibliography_template: "{{reference}}"
-  replace_strings: true
-  join_strings:    true
-  details_dir:    bibliography
-  details_layout: bibtex.html
-  details_link:   Details
-  query: "@*"
+# Scholar plugin not working yet
+#scholar:
+#style: apa
+#locale: en
+#sort_by: none
+#order: ascending
+#source: ./_bibliography
+#bibliography: references.bib
+#bibliography_template: "{{reference}}"
+#replace_strings: true
+#join_strings:    true
+#details_dir:    bibliography
+#details_layout: bibtex.html
+#details_link:   Details
+#query: "@*"
 
 # Social Sharing
 twitter:
@@ -144,6 +144,15 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/chrisschindlbeck"
+    - label: "Scholar"
+      icon: "ai ai-google-scholar"
+      url: "https://scholar.google.com/citations?user=MkoDxQkAAAAJ&hl=en"
+    - label: "ResearchGate"
+      icon: "ai ai-researchgate"
+      url: "https://www.researchgate.net/profile/Christopher-Schindlbeck"
+    - label: "ORCID"
+      icon: "ai ai-orcid"
+      url: "https://orcid.org/0000-0002-2443-3228"
 
 # Site Footer
 footer:
@@ -236,7 +245,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   # - jekyll-remote-theme
-  - jekyll-scholar
+  #- jekyll-scholar # not working as of 2022-04
 
 # mimic GitHub Pages with --safe
 whitelist:
