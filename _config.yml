@@ -15,21 +15,21 @@
 minimal_mistakes_skin    : "contrast" #"default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko"
+locale                   : "ko-KR"
 title                    : "jsheo.blog"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title_separator          : "|" 
+subtitle                 : "If not now, then when?" # site tagline that appears below site title in masthead
 name                     : "Heo Jung Seok"
-description              : "Welcome :) "
+description              : "Welcome to jsheo.blog :)"
 url                      : "https://heojungseok.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/bloglogo.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "/assets/images/88x88.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
-comments: "????????"
+comments: 
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
@@ -103,9 +103,9 @@ analytics:
 # Site Author
 author:
   name             : "heo jungseok"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : #"I am an **amazing** person."
-  location         : #"Somewhere"
+  avatar           : "/assets/images/bloglogo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : " :-D "
+  location         : "Republic of Korea"
   email            : "tjrwjdgj@gmail.com"
   links:
     - label: "Email"
