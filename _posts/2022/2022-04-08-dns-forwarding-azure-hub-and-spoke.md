@@ -2,6 +2,7 @@
 title: Allowing DNS resolution of Azure resources from on-premise
 date: 2022-02-24 10:00
 tags: [Azure, networking, hub-and-spoke, DNS, Azure Firewall, Azure Private DNS Zone, Enterprise Scale Landing Zone]
+excerpt: ""
 
 header:
   overlay_image: https://live.staticflickr.com/65535/51809757947_c13db151f0_h.jpg
