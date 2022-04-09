@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "EDA To Prediction(DieTanic)"
+title:  "[Titanic] EDA To Prediction(DieTanic)"
 categories: Kaggle
 tag: [Kaggle, Titanic]
 toc: true

@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Titanic Top 4% with ensemble modeling"
+title:  "[Titanic] Top 4% with ensemble modeling"
 categories: Kaggle
 tag: [Kaggle, Titanic]
 toc: true
