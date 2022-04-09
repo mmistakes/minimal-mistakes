@@ -211,7 +211,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_10_0.png)
+![png](/assets/images/220326/220326/output_10_0.png)
 
 
 전체 승객 중 오직 38.4%만 생존한 모습.
@@ -273,7 +273,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_16_0.png)
+![png](/assets/images/220326/output_16_0.png)
 
 
 여성보다 남성의 수가 많지만, 생존자의 수는 여성이 남성의 두배. 여성은 약 75%가 살아남았고, 남성은 약 18~19%가 살아남은 모습
@@ -380,7 +380,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_20_0.png)
+![png](/assets/images/220326/output_20_0.png)
 
 
 1등석 탑승객이 확실히 생존자가 많은 모습(생존률 약 63%). 3등석 탑승객이 제일 많았지만, 생존률은 약 25%. 2등석 탑승객의 생존률은 약 48%
@@ -514,7 +514,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_23_0.png)
+![png](/assets/images/220326/output_23_0.png)
 
 
 위의 CrossTab과 Factorplot을 보면, 1등석에 탄 여성 탑승객은 약 95~96%가 생존 (94명 중에서 3명만 사망).
@@ -548,7 +548,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_27_0.png)
+![png](/assets/images/220326/output_27_0.png)
 
 
 - 탑승석에 따라 아이의 수는 증가하고 10살 이하의 탑승객들은 탑승석과 상관없이 양호한 모습
@@ -743,7 +743,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_38_0.png)
+![png](/assets/images/220326/output_38_0.png)
 
 
 - 5살 이하의 아이들은 많은 수가 생존
@@ -757,7 +757,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_40_0.png)
+![png](/assets/images/220326/output_40_0.png)
 
 
 여성과 아동 우선 정책은 탑승석에 관계없이 유효
@@ -1026,7 +1026,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_45_0.png)
+![png](/assets/images/220326/output_45_0.png)
 
 
 생존률은 약 55%로 C가 가장 높으며, S가 가장 낮은 상태
@@ -1047,7 +1047,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_47_0.png)
+![png](/assets/images/220326/output_47_0.png)
 
 
 - 가장 많은 승객들이 S에서 탑승했으며, 그들중 다수는 3등석
@@ -1062,7 +1062,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_49_0.png)
+![png](/assets/images/220326/output_49_0.png)
 
 
 - 1등석과 2등석에 탑승한 여성은 탑승석과 상관없이 생존률은 거의 100%
@@ -1211,11 +1211,11 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_56_0.png)
+![png](/assets/images/220326/output_56_0.png)
 
 
 
-![png](/assets/images/output_56_1.png)
+![png](/assets/images/220326/output_56_1.png)
 
 
 
@@ -1472,11 +1472,11 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_61_0.png)
+![png](/assets/images/220326/output_61_0.png)
 
 
 
-![png](/assets/images/output_61_1.png)
+![png](/assets/images/220326/output_61_1.png)
 
 
 여기서 보여주는 그래프 결과 또한 비슷하다. 같이 탄 사람의 수가 많을수록 생존률이 감소하는 모습
@@ -1511,7 +1511,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_65_0.png)
+![png](/assets/images/220326/output_65_0.png)
 
 
 Fare는 연속형 자료이므로 Data Bining을 통해 이산 값으로 바꿀 수 있다.
@@ -1539,7 +1539,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_69_0.png)
+![png](/assets/images/220326/output_69_0.png)
 
 
 #### 히트맵 해석하기
@@ -1771,7 +1771,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_77_0.png)
+![png](/assets/images/220326/output_77_0.png)
 
 
 탑승석에 상관없이 나이가 증가할수록 생존률이 감소하는 모습
@@ -1798,15 +1798,15 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_80_0.png)
+![png](/assets/images/220326/output_80_0.png)
 
 
 
-![png](/assets/images/output_80_1.png)
+![png](/assets/images/220326/output_80_1.png)
 
 
 
-![png](/assets/images/output_80_2.png)
+![png](/assets/images/220326/output_80_2.png)
 
 
 Family_Size가 0이거나 Alone인 경우 생존률이 굉장히 낮고, Famil_Size가 4보다 커지면 생존 가능성이 감소한다.
@@ -1818,7 +1818,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_82_0.png)
+![png](/assets/images/220326/output_82_0.png)
 
 
 3등석을 제외하곤 성별과 탑승석 상관없이 혼자 탑승하는 것은 생존 가능성이 낮다는 것을 발견
@@ -1906,7 +1906,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_88_0.png)
+![png](/assets/images/220326/output_88_0.png)
 
 
 Fare_cat이 증가할수록 생존률도 증가하는 모습
@@ -1970,7 +1970,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_95_0.png)
+![png](/assets/images/220326/output_95_0.png)
 
 
 --------------
@@ -2165,7 +2165,7 @@ print('Accuracies for different values of n are:',a.values,'with the max value a
 ```
 
 
-![png](/assets/images/output_112_0.png)
+![png](/assets/images/220326/output_112_0.png)
 
 
     Accuracies for different values of n are: [0.75746269 0.76119403 0.80223881 0.79477612 0.81343284 0.80223881
@@ -2322,7 +2322,7 @@ box.T.boxplot()
 
 
 
-![png](/assets/images/output_121_1.png)
+![png](/assets/images/220326/output_121_1.png)
 
 
 
@@ -2335,7 +2335,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_122_0.png)
+![png](/assets/images/220326/output_122_0.png)
 
 
 분류 정확도는 때때로 데이터의 불균형으로 인하여 오해의 소지가 있을 수 있습니다.
@@ -2380,7 +2380,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_125_0.png)
+![png](/assets/images/220326/output_125_0.png)
 
 
 #### 혼동 행렬 해석
@@ -2606,7 +2606,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_155_0.png)
+![png](/assets/images/220326/output_155_0.png)
 
 
 ### Feature Importance
@@ -2640,7 +2640,7 @@ plt.show()
     
 
 
-![png](/assets/images/output_157_1.png)
+![png](/assets/images/220326/output_157_1.png)
 
 
 다양한 분류기의 feature 중요도를 파악했습니다.
@@ -2658,8 +2658,3 @@ plt.show()
 -------
 
 # End
-
-
-```python
-
-```
