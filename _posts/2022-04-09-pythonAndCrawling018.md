@@ -32,8 +32,8 @@ search: true
 <img src="http://drive.google.com/uc?export=view&id=1g7C48JOy_cM73sEbxCTzydoTgIjfITpI" width="800"><br><br>
 <img src="http://drive.google.com/uc?export=view&id=1g9gbz1VyoAojY_8s_s5HV0rfGIZ7egKQ" width="800"><br><br>
 </div>
-<br><br>
-<h3>XML 데이터 다루기</h3><bR>
+<br>
+<h3>XML 데이터 다루기</h3>
 <h5>XML(Extensible Markup Language)</h5>
 
   - 특정 목적에 따라 데이터를 태그로 감싸서 마크업하는 범용적인 포맷임
