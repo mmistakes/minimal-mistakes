@@ -106,7 +106,7 @@ author:
   avatar           : "/assets/images/bloglogo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : " :-D "
   location         : "Republic of Korea"
-  email            : "tjrwjdgj@gmail.com"
+  email            : #"tjrwjdgj@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -288,6 +288,6 @@ defaults:
       comments:  true
       share: true
       related: true
-      show-date: true
+      show_date: true
 
 date_format: "%Y-%m-%d"
