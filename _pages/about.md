@@ -98,11 +98,12 @@ Connect with me on:
 ## 📈 My Github Stats
 
 <p align="center">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=cschindlbeck&show_icons=true&include_all_commits=true&theme=gotham&hide_border=false" alt="cschindlbeck's github stats" /> 
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cschindlbeck&layout=compact&theme=gotham&hide_border=false" />
+  <img align="center" src="https://github-readme-stats-cschindlbeck.vercel.app/api?username=cschindlbeck&show_icons=true&include_all_commits=true&theme=gotham&hide_border=false&count_private=true" alt="cschindlbeck's github stats" /> 
+  <img align="center" src="https://github-readme-stats-cschindlbeck.vercel.app/api/top-langs/?username=cschindlbeck&layout=compact&theme=gotham&hide_border=false&count_private=true" alt="cschindlbeck's github language stats" />
 </p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=cschindlbeck&style=flat&color=blue" alt="cschindlbeck_profileviews" />
   <img src="https://badges.pufler.dev/years/cschindlbeck?style=flat&color=blue" alt="cschindlbeck_years" />
 </p>
+
