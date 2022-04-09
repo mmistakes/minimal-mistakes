@@ -21,7 +21,7 @@ search: false
 # ExtraTreesClassifier
 
 - random forest model의 변종으로, forest tree 의 각 후보 feature을 무작위로 분할하는 식으로 무작위성을 증가시킨다
-- extra tree의 base인 $ExtraClassifier$는 $DecisionClassifier$를 상속한 것이며, $splitter="best"$가 아니고 $splitter="random"$인 것과 $max_features="auto"$인 것을 제외하고는 $DecisionTreeClassifier$와 동일
+- extra tree의 base인 ```ExtraClassifier```는 ```DecisionClassifier```를 상속한 것이며, ```splitter="best"```가 아니고 ```splitter="random"```인 것과 ```max_features="auto"```인 것을 제외하고는 ```DecisionTreeClassifier```와 동일
 - accuracy 자체는 random forest와 거의 동일하지만, feature의 weight가 비교적 고른 편
 
 -------
