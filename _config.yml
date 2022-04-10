@@ -21,7 +21,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "es-ES"
-title                    : "Git Github Guía Básica"
+title                    : "Guia Básica De Desarrollo Full Stack"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 # name                     : &name "RVS"
@@ -30,7 +30,7 @@ name                     : "RVS"
 description              : "Blog sobre Programación e Informática"
 url                      : "https://rvsweb.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "rvsweb/guia-basica-git-github/"
+repository               : "rvsweb/guia-basica-de-desarrollo-full-stack"
 # teaser                 : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # logo                   : "assets/images/a.jpg"
 logo                     : "assets/images/yin-80x80.jpg"
