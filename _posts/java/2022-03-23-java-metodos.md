@@ -39,9 +39,9 @@ page_css:
 
 ```java
 /**
-* Declaración
+* Obtenemos la suma de 2 variables
+* @return Suma 2 variables y devuelve su valor
 * 
-* Método de instancia 
 */
 public int getSuma(){
   return a + b;
