@@ -71,6 +71,7 @@ search: true
                     print (index + 1, title.get_text(), price.get_text(), title['href'], provider_info.get_text())
                 
                     excel_sheet.append([index + 1, title.get_text(), price.get_text(), title['href'], provider_info.get_text()])
+                    excel_sheet.cell(row=index+2 , column=4).hyperlink = title['href']
                         
                 excel_file.save('GMARKET_BestFood100.xlsx')
                 excel_file.close()
