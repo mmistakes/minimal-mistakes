@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "파이썬(python) & 크롤링(crawling) - 019"
+title: "파이썬(python) & 크롤링(crawling) - 020"
 categories: python
 tag: [python, 파이썬, crawling, 크롤링]
 toc: true
@@ -15,13 +15,14 @@ search: true
 {: .notice--success}
 
 
-<h2>[파이썬(python) & 크롤링(crawling) - 019]</h2>
+<h2>[파이썬(python) & 크롤링(crawling) - 020]</h2>
 
 
-<h3> 크롤링(Crawling) 기본 - 19</h3>
+<h3> 크롤링(Crawling) 기본 - 20</h3>
 
-<h3>문자열 변환</h3>
-<h5>다양한 함수를 이용해서 문자열을 추가, 결합, 나누기, 삭제, 대체해보자 </h5>
+<h3>정규표현식</h3>
+<h5>정규표현식(regular expression) 간단히 regexp 또는 regex, rational expression) 또는  정규식(正規式)은 <br>
+    특정한 규칙을 가진 문자열의 집합을 표현하는 데 사용하는 형식 언어이다. <bR>정규 표현식은 많은 텍스트 편집기와 프로그래밍 언어에서 문자열의 검색과 치환을 위해 지원하고 있다</h5>
 
 <h5>문자열 관련 함수</h5>
 
