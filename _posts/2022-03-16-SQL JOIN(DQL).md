@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "MySQL JOIN(DQL)"
-categories: SQL
-tag: [TIL, SQL, Database, JOIN, DQL]
+categories: BackEnd
+tag: [total, mysql]
 ---
 
 ## 01. JOIN

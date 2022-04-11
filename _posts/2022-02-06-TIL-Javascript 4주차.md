@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "Javascript week 4"
-categories: Javascript
-tag: [HTML, CSS, Javascript, TIL]
+title: "Javascript week 04"
+categories: FrontEnd
+tag: [total, html, css, javascript]
 ---
 
 - 목차

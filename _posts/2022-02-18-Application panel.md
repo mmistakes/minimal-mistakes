@@ -2,7 +2,7 @@
 layout: single
 title: "Application Panel"
 categories: Reference
-tag: [TIL, Web, Reference]
+tag: [total, devtools]
 ---
 
 ### 01. Application 패널의 기능은?

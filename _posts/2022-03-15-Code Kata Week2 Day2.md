@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "Code Kata Week2 Day2"
+title: "Code Kata 07"
 categories: Algorithm
-tag: [TIL, Javascript, Algorithm]
+tag: [total, javascript]
 ---
 
 #### 문제
@@ -29,30 +29,29 @@ return 2;
 
 ```js
 function moreThanHalf(nums) {
+  let result = 0;
+  let sortArr = nums.sort((a, b) => {
+    return a > b ? 1 : -1;
+  });
+  let length = 0;
+  let count = 0;
 
-  let result = 0
-  let sortArr = nums.sort((a,b)=>{
-    return a > b ? 1 : -1
-  })
-  let length = 0
-  let count = 0
-  
-  sortArr.forEach((item, index)=>{
-    if(index === 0 || item === sortArr[index + 1]){
-      if(length <= count){
-        result = item
-        length = count
+  sortArr.forEach((item, index) => {
+    if (index === 0 || item === sortArr[index + 1]) {
+      if (length <= count) {
+        result = item;
+        length = count;
       }
-    }else {
-      count = -1
+    } else {
+      count = -1;
     }
-    ++count
-  })
-  return result
+    ++count;
+  });
+  return result;
 }
 
-let input = [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2]
-console.log(moreThanHalf(input)) // 2
+let input = [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2];
+console.log(moreThanHalf(input)); // 2
 
 module.exports = { moreThanHalf };
 ```
@@ -73,8 +72,6 @@ module.exports = { moreThanHalf };
 
 8. 조건문 내부의 조건문은 현재 중복된 수보다 다음 중복된 수가 많으면 `result` 는 현재 숫자로 변경하고 `length` 는 다음 중복 수로 변경한다.
 
-9. `else` 내부는 중복값이 변경되었다면 `count`를 초기화 한다. 
+9. `else` 내부는 중복값이 변경되었다면 `count`를 초기화 한다.
 
-10. 값 초기화를 `count = -1`  로 한 이유는 바로 밑에 `++count` 가 있어서 `0`으로 맞추기 위함이다.
-
-    
+10. 값 초기화를 `count = -1` 로 한 이유는 바로 밑에 `++count` 가 있어서 `0`으로 맞추기 위함이다.

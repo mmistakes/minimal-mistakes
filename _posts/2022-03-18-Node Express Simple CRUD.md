@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "Node Express Simple CRUD?"
-categories: Node
-tag: [TIL, Javascript, CRUD, Node, Express]
+title: "Node Express Simple CRUD"
+categories: BackEnd
+tag: [total, node, express, db]
 ---
 
 ## 01. Read

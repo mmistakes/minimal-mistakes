@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: single
 title: "Introduction"
 categories: [Profile]
@@ -6,4 +6,4 @@ categories: [Profile]
 
 ![intro1](/images/intro1.png)
 
-![intro2](/images/intro2.png)
+![intro2](/images/intro2.png) -->

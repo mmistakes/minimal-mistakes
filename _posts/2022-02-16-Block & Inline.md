@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "Block & Inline?"
-categories: CSS
-tag: [CSS, HTML, TIL]
+title: "Block과 Inline"
+categories: FrontEnd
+tag: [total, css]
 ---
 
 대부분의 HTML element(이하 요소)는 block 요소입니다.

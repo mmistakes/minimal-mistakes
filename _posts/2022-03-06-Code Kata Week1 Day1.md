@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "Code Kata Week1 Day1"
+title: "Code Kata 01"
 categories: Algorithm
-tag: [TIL, Javascript, Algorithm]
+tag: [total, javascript]
 ---
 
 ### 문제

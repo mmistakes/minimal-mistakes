@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "ORM & Prisma가 무엇이고 사용하는 방법"
-categories: Node
-tag: [TIL, SQL, Database, ORM, Prisma, Migrations]
+categories: Reference
+tag: [total, prisma, orm]
 ---
 
 ## 01. ORM (Object Relational Mapping)

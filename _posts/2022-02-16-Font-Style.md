@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "Font Style"
-categories: CSS
-tag: [CSS, HTML, TIL]
+categories: FrontEnd
+tag: [total, css]
 ---
 
 ### 01. font family

@@ -2,7 +2,7 @@
 layout: single
 title: "시맨틱(Semantic) 태그와 시맥틱(Semantic) 웹"
 categories: Reference
-tag: [HTML, TIL, Reference]
+tag: [total, html]
 ---
 
 ### 01. 시맨틱 이란

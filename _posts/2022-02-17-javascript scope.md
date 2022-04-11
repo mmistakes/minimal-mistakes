@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "Javascript Scope"
-categories: Javascript
-tag: [Javascript, TIL]
+title: "Scope in Javascript"
+categories: FrontEnd
+tag: [total, javascript]
 ---
 
 ### 01. Scope란?

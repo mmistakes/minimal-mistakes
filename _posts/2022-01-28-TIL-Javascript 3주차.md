@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "Javascript week 3"
-categories: Javascript
-tag: [Javascript, TIL]
+title: "Javascript week 03"
+categories: FrontEnd
+tag: [total, javascript]
 ---
 
 - 목차

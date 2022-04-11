@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "WeBucks with React"
+title: "스타벅스 클론 프로젝트"
 categories: Project
-tag: [TIL, Project, React, Javascript]
+tag: [total, react, sass]
 ---
 
 ### 01. 파일구조

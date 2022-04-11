@@ -2,7 +2,7 @@
 layout: single
 title: "Layered pattern"
 categories: Reference
-tag: [TIL, Reference, Pattern]
+tag: [total, pattern]
 ---
 
 ## 01. seperation of concern (관심사의 분리)

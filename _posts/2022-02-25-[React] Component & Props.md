@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "Component & Props"
-categories: React
-tag: [TIL, React]
+categories: FrontEnd
+tag: [total, react]
 ---
 
 ### 01. Component란?

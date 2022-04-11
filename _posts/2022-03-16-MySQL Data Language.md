@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "MySQL Data Language"
-categories: SQL
-tag: [TIL, SQL, Database, DDL, DML, DQL]
+categories: BackEnd
+tag: [total, mysql]
 ---
 
 ## 01. DDL (Data Define Language)

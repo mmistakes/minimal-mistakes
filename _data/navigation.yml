@@ -4,8 +4,8 @@ main:
     url: "/categories/"
   - title: "Tag"
     url: "/tags/"
-  - title: "About"
-    url: https://devshon.github.io/profile/self-introduction/
+  - title: "Profile"
+    url: https://www.notion.so/SHON-85ae96c1bfd54adf920e45d44e71560c
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
