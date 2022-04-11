@@ -42,14 +42,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">HTML</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "HTML" %}
-                        <li><a href="/categories/HTML" class="">HTML 기초 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
         <span class="nav__sub-title">CSS</span>
             <ul>
                 {% for category in site.categories %}
@@ -94,13 +86,6 @@
                 {% for category in site.categories %}
                     {% if category[0] == "Database-academy" %}
                         <li><a href="/categories/Database-academy" class=""> SQL 정리 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Database-jdbc" %}
-                        <li><a href="/categories/Database-jdbc" class=""> JDBC 정리 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
