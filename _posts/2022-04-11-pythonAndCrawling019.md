@@ -120,8 +120,7 @@ search: true
                 data1.replace(')','')       # case: 1 
                 data.replace("(", "".replace")","")   # case : 2
                                   
-                #출력값 : 'Gibson'
-                
+                #출력값 : 'Gibson'                
                 
                 
                 # 10. string = "10,11,22,33,44" 를 컴마(,) 로 분리해서 리스트 변수를 만들어 각 값을 정수형 리스트 데이터로 넣기
@@ -132,65 +131,6 @@ search: true
                     split_string[index] = int(split_item)
                 print (split_string)
                 
-                # 출력값 : [10, 11, 22, 33, 44]
-                
-                
-                
-                
-                
-                
-                
-                
-                  
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-```
-
-
-  - 특정 목적에 따라 데이터를 태그로 감싸서 마크업하는 범용적인 포맷임
-  - 마크업 언어는 태그 등을 이용하여 데이터의 구조를 기술하는 언어의 한 가지로 가장 친숙한 마크업 언어가 HTML임
-  - XML은 HTML과 마찬가지로 데이터를 계층 구조로 표현함
-  - XML 기본 구조:  <태그 열기 속성="속성값">내용</태그 닫기>
-  - 태그와 속성은 특정 목적에 따라 임의로 이름을 정해서 사용
-  - 다른 요소와 그룹으로 묶을 수도 있음
-
-``` xml
-            <products type="전자제품>
-              <product id="M001" price="300000">32인치 LCD 모니터</product>
-              <product id="M002" price="210000">24인치 LCD 모니터</product>
-            </products>
+                # 출력값 : [10, 11, 22, 33, 44]     
             
-``` 
-
-<br>
-
-<h5>크롤링 한 로우데이터가 XML 포맷인경우 find_all이나 find 함수를 이용하여 출력한다. </h5>
-```python 
-
-                import requests
-                from bs4 import BeautifulSoup # XML도 BeautifulSoup 사용
-                
-                service_key = '자신의 서비스 키'
-                params = '&numOfRows=10&pageNo=1&sidoName=서울&searchCondition=DAILY'
-                open_api = 'http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty?ServiceKey=' + service_key + params
-                
-                res = requests.get(open_api)
-                soup = BeautifulSoup(res.content, 'html.parser') # html.parser 이용
-                
-                data = soup.find_all('item') # CSS가 아닌 HTML tag이기에 find_all과 find 함수 이용
-                for item in data:
-                    stationname = item.find('stationname')
-                    pm10grade = item.find('pm10grade')
-                    print (stationname.get_text(), pm10grade.get_text())
-
 ```
-<br>
