@@ -5,7 +5,7 @@ excerpt: "[rejected] 브랜치명 -> 브랜치명 (non-fast-forward) 에러"
 categories:
 - Github
 tags:
-- [github, 에러 해결]
+- github
 last_modified_at: 2022-02-25
 ---
 
