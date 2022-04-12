@@ -1,4 +1,5 @@
 ---
+published: true
 title:  "[github] github pages 만들기"
 excerpt: ""
 
