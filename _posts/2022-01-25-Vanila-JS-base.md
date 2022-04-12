@@ -115,9 +115,9 @@ h1.addEventListener("click", handleh1Click);
 
 <br>
 
-## ㅇㅇ
 
-
+### classList와 className
+className replaces all classes, classList doesn't
 
 
 

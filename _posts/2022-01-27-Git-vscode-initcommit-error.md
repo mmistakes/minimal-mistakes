@@ -1,12 +1,12 @@
 ---
-title:  "[Git] vscode에서 커밋할 때 발생한 에러"
+title:  "[github] vscode에서 커밋할 때 발생한 에러"
 excerpt: "[rejected] 브랜치명 -> 브랜치명 (non-fast-forward) 에러"
 
 categories:
-- Git
+- Github
 tags:
-- git
-last_modified_at: 2022-02-01
+- [github, 에러 해결]
+last_modified_at: 2022-02-25
 ---
 
 <br>
