@@ -1,6 +1,7 @@
 ---
 title:  "내 로컬에서 Django 환경세팅"
 excerpt: "pipenv로 독립된 개발환경 만들기 "
+
 categories:
 - [Django]
 tags:
