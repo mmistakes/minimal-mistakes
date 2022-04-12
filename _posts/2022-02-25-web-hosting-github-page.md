@@ -4,7 +4,7 @@ title:  "[github] github pages 만들기"
 excerpt: ""
 
 categories:
-- [Web, Github]
+- Github
 tags:
 - github
 last_modified_at: 2022-03-01
