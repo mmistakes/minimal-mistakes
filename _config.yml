@@ -21,7 +21,7 @@ title_separator: "|"
 subtitle: "EVERYDAY"
 name: "kimyeongwan"
 description: "기록으로 남기기"
-url: "https://kimyeong96.github.io"
+url: "https://kimyeong96.github.io" #http://localhost:4000
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
