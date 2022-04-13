@@ -1,11 +1,10 @@
 # main links
-main:
-  - title: "Home"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-   - title: "About"
-     url: https://mmistakes.github.io/minimal-mistakes/about/
-   - title: "Python"
-     url: "/Python/"
+  - title: "About"
+    url: /about/
+  - title: "Category"
+    url: /categories/
+  - title: "Tag"
+    url: /tags/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
