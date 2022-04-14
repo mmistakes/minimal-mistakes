@@ -18,9 +18,9 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Java - Clases Intefaces
+## Clases Intefaces
 
-> Te dicen que hacer pero no como
+> Te dicen que hacer pero no como hacerlo
 
 * Son un tipo especial de clase que se usa para implmentar dependiendo de la necesidad un **método** o la invocación de una ``Constantes``
 
@@ -28,18 +28,25 @@ page_css:
   * Se utilizan para indicar que **hacer** pero **no su implementación**
 
 * Las **clases** que hereden de las **intefaces** serán las que implementen la lógica de los **métodos abstractos** que invoquen dentro de ellas
+  
+  * Recuerda : Las **clases Interfaces** no pueden **crear o instanciar objetos**, sólo pueden implementar las clases las cuales hereden de ellas los métodos mediante el modificador `implements`
 
 * Una utilidad sería disponer de distintas implementaciones de la misma clase de la que herede la interfaz principal
 
-* Estructura
-  * Como buena practica deben empezar la **clase interface** con la letra mayúscula I y el nombre de la clase que vayamos a usar
-    * Ejemplo : IControlador , IConnector , IBase , IRemote , IDataBaseLocal , IRoot
+```java
+Interface interface = new ClaseImplementaInterface();
+```
+
+### Estructura
+
+* Como buena practica deben empezar la **clase interface** con la letra mayúscula **I** y el nombre de la clase que vayamos a usar
+  * Ejemplo : **IControlador** , **IConnector** , **IBase** , **IRemote** , **IDataBaseLocal** , **IRoot**
 
 ```java
 public inteface <NombreInterface> { ... } 
 ```
 
-* Ejemplo
+#### Ejemplo
 
 ```java
 public inteface IControlador {

@@ -18,9 +18,9 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Java - Clases Abstractas
+## Clases Abstractas
 
-* Son un tipo de **clases especiales** que tienen algunos **métodos** implementados porque sabemos que tarea tienen que hacer y otros no **métodos** que no ``(Todavía no tenemos claro que harán de cara al futuro esos métodos sin implementar)``
+* Son un tipo de **clases especiales** que tienen algunos **métodos** implementados porque sabemos que tarea tienen **que hacer** y también contienen otros **métodos que no** están implementado ``(Todavía no tenemos claro que harán de cara al futuro esos métodos sin implementar)``
 
   * Ejemplo
 
