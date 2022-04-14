@@ -25,6 +25,38 @@
     line-height: 1;
 }
 
+.cci-codechef:before {
+    content: "\00fd";
+}
+
+.cci-codeforces:before {
+    content: "\00fe";
+}
+
+.cci-codersrank:before {
+    content: "\00f8";
+}
+
+.cci-coderwall:before {
+    content: "\00fc";
+}
+
+.cci-codewars:before {
+    content: "\00fb";
+}
+
+.cci-geeksforgeeks:before {
+    content: "\00fa";
+}
+
 .cci-hackerrank:before {
     content: "\00ff";
+}
+
+.cci-leetcode:before {
+    content: "\00f7";
+}
+
+.cci-topcoder:before {
+    content: "\00f9";
 }

@@ -153,9 +153,32 @@ author:
     - label: "ORCID"
       icon: "ai ai-orcid"
       url: "https://orcid.org/0000-0002-2443-3228"
+    - label: "Codechef"
+      icon: "cci cci-codechef"
+      url: "https://www.hackerrank.com/schindlbeck"
+    - label: "codeforces"
+      icon: "cci cci-codeforces"
+      url: "https://www.hackerrank.com/schindlbeck"
+    - label: "CodersRank"
+      icon: "cci cci-codersrank"
+      url: "https://www.hackerrank.com/schindlbeck"
+    - label: "Codewars"
+      icon: "cci cci-codewars"
+      url: "https://www.codewars.com/users/cschindlbeck"
+    - label: "geeksforgeeks"
+      icon: "cci cci-geeksforgeeks"
+      url: "https://www.hackerrank.com/schindlbeck"
     - label: "Hackerrank"
       icon: "cci cci-hackerrank"
       url: "https://www.hackerrank.com/schindlbeck"
+    - label: "leetcode"
+      icon: "cci cci-leetcode"
+      url: "https://leetcode.com/christopsy666/"
+    - label: "topcoder"
+      icon: "cci cci-topcoder"
+      url: "https://www.hackerrank.com/schindlbeck"
+      #todo coderbyte
+      #todo hackerearth
 
 # Site Footer
 footer:
