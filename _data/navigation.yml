@@ -8,7 +8,7 @@ main:
     url: /search/
 
 docs:
-  - title: "목차"
+  - title: "목록"
     children:
       - title: "Category"
         url: /categories/

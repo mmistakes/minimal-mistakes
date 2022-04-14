@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "KangTaeGong-blog"
+title                    : "KangTaeGong-Blog"
 title_separator          : "|"
-subtitle                 : "Codding note"
+subtitle                 : "Since 2022"
 name                     : "KangTaeGong"
 description              : "강태공의 블로그 입니다."
 url                      : "https://kangtaegong.github.io"
