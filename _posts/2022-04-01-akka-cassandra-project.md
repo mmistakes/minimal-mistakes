@@ -362,6 +362,10 @@ object PersistentBankAccount {
 
 ## 2. The Main Bank Actor
 
+This section is also available on video:
+
+{% include video id="NpGYj_Zpwsk" provider="youtube" %}
+
 This actor will manage all the bank accounts, which means it will be a parent of those accounts. The bank actor will be the middle layer between the HTTP server and the actual persistent bank accounts, which will do the majority of the work.
 
 ```scala
@@ -596,6 +600,10 @@ and lo and behold, we have messages there! The Cassandra tables were created aut
 Let's move on to the HTTP server.
 
 ## 3. The HTTP Server
+
+This section is also available on video:
+
+{% include video id="q9psVBnMqJk" provider="youtube" %}
 
 For this section, we're going to use Akka HTTP (obviously), and we'll use the high-level DSL. We will expose the following endpoints:
 
