@@ -56,7 +56,7 @@ hexo server 실행
 
 이름은 myblog로 맞추고
 
-![Untitled](/images/notion1/Untitled.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled.png)
 
  
 
@@ -64,11 +64,11 @@ hexo server 실행
 
 근데 이메일, 이름 관련 오류가 뜬다?
 
-![Untitled](/images/notion1/Untitled%201.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%201.png)
 
 이렇게 뜨면 이메일과 이름을 설정해줘야해
 
-![Untitled](/images/notion1/Untitled%202.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%202.png)
 
 바꿔버려
 
@@ -76,7 +76,7 @@ hexo server 실행
 
 깃허브로 가서 확인
 
-![Untitled](/images/notion1/Untitled%203.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%203.png)
 
 - **명령어 잠깐**
 
@@ -98,7 +98,7 @@ mblog로 했을때로 가정한다
 
 그다음 맨밑에가서 아무거나 쓰고  깃허브에 올라갓나 확인해보고
 
-![Untitled](/images/notion1/Untitled%204.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%204.png)
 
 위에 두줄은 필요없어 이미 경로에 와있기때문에
 
@@ -112,21 +112,21 @@ npm install hexo-deployer-git —save
 
 컨피그 파일로 가 이제 셋팅할거야
 
-![Untitled](/images/notion1/Untitled%205.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%205.png)
 
 타이틀 이름 바꿔 이렇게 예를들어서
 
-![Untitled](/images/notion1/Untitled%206.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%206.png)
 
  자 이제 주소를 바꿀거야 블로그 참고했어
 
-![Untitled](/images/notion1/Untitled%207.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%207.png)
 
 `url: [https://rain0430.github.io](https://rain0430.github.io)`
 
 여기서 이름을 바꿔줘 내 사용자이름과 같이 KONA1005로
 
-![Untitled](/images/notion1/Untitled%208.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%208.png)
 
 맨밑으로 가서 deployment로 가
 
@@ -137,51 +137,51 @@ deploy:
   branch: main
 ```
 
-![Untitled](/images/notion1/Untitled%209.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%209.png)
 
 다 복사해서 이렇게 이름도 다시 바꿔주자
 
-![Untitled](/images/notion1/Untitled%2010.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2010.png)
 
 쟤 복사해서
 
-![Untitled](/images/notion1/Untitled%2011.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2011.png)
 
 자 이제 다시 파이참가서 hexo generate 써
 
 css파일이 좍 뜨는지 확인
 
-![Untitled](/images/notion1/Untitled%2012.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2012.png)
 
 그다음 hexo deploy 쳐
 
-![Untitled](/images/notion1/Untitled%2013.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2013.png)
 
 잘 나오나 눌러서 확인해보고
 
-![Untitled](/images/notion1/Untitled%2014.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2014.png)
 
 그다음 저 [KONA1005.github.io](http://KONA1005.github.io) 복사해서 블로그 잘 나오나 봐봐
 
-![Untitled](/images/notion1/Untitled%2015.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2015.png)
 
 그리고 확인해야 할 것들
 
-![Untitled](/images/notion1/Untitled%2016.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2016.png)
 
-![Untitled](/images/notion1/Untitled%2017.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2017.png)
 
 블로그로 가서
 
-![Untitled](/images/notion1/Untitled%2018.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2018.png)
 
 hexo new “My New Post” 복사해서 파이참으로
 
-![Untitled](/images/notion1/Untitled%2019.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2019.png)
 
 그다음 파일이 생기는지 확인
 
-![Untitled](/images/notion1/Untitled%2020.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2020.png)
 
 **아참 그리고 업데이트 할때마다 제너레이트 디플로이 해야해**
 
@@ -199,31 +199,31 @@ hexo new “My New Post” 복사해서 파이참으로
 
 npm install -S hexo-theme-icarus
 
-![Untitled](/images/notion1/Untitled%2021.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2021.png)
 
-![Untitled](/images/notion1/Untitled%2022.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2022.png)
 
 복사한거 쟤도 써 그다음에 
 
 hexo server 실행해서 링크 눌러보면 에러남
 
-![Untitled](/images/notion1/Untitled%2023.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2023.png)
 
-![Untitled](/images/notion1/Untitled%2024.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2024.png)
 
 `npm install --save bulma-stylus@0.8.0 hexo-renderer-inferno@^0.1.3` 복붙 파이참
 
 그다음 다시 실행해보면 잘 뜬다
 
-![Untitled](/images/notion1/Untitled%2025.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2025.png)
 
 구글에 hexo theme 치면 테마 마니나오니까 확인해보고 쓰고싶음 써라
 
 아맞다 이거도 확인
 
-![Untitled](/images/notion1/Untitled%2026.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2026.png)
 
-![Untitled](/images/notion1/Untitled%2027.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2027.png)
 
 근데 이건 잘 모르겠다 기억 안나네 큰일났구만....
 
@@ -231,12 +231,12 @@ hexo clean 해주면 청소하는거 너무 마니 했을때 꼬일 수 있으�
 
 후 어려웠다....다시 잘 할 수 있을가....
 
-![Untitled](/images/notion1/Untitled%2028.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2028.png)
 
 이건 다하고 걍 참고...이렇게 쓰고 깃제너 깃디플로이 하고 서버 확인 하면
 
-![Untitled](/images/notion1/Untitled%2029.png)
+![Untitled](/images/2022-04-13Gitbub-Hexo/Untitled%2029.png)
 
 
-/images/notion1
+/images/2022-04-13Gitbub-Hexo
 %E1%84%80%E1%85%B5%E1%86%BA%E1%84%92%E1%85%A5%E1%84%87%E1%85%B3%20%E1%84%86%E1%85%A1%2053df2
