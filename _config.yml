@@ -162,11 +162,20 @@ author:
     - label: "CodersRank"
       icon: "cci cci-codersrank"
       url: "https://www.hackerrank.com/schindlbeck"
+    - label: "Coderwall"
+      icon: "cci cci-coderwall"
+      url: "https://www.codewars.com/users/cschindlbeck"
+    - label: "Codesignal"
+      icon: "cci cci-codesignal"
+      url: "https://app.codesignal.com/profile/chris_s_qex"
     - label: "Codewars"
       icon: "cci cci-codewars"
       url: "https://www.codewars.com/users/cschindlbeck"
     - label: "geeksforgeeks"
       icon: "cci cci-geeksforgeeks"
+      url: "https://www.hackerrank.com/schindlbeck"
+    - label: "Hackerearth"
+      icon: "cci cci-hackerearth"
       url: "https://www.hackerrank.com/schindlbeck"
     - label: "Hackerrank"
       icon: "cci cci-hackerrank"
@@ -178,7 +187,6 @@ author:
       icon: "cci cci-topcoder"
       url: "https://www.hackerrank.com/schindlbeck"
       #todo coderbyte
-      #todo hackerearth
 
 # Site Footer
 footer:
