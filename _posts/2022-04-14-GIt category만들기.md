@@ -2,15 +2,16 @@
 title:  "[Github 블로그] minimal-mistake 블로그 카테고리 만들기 (+ 전체 글 수)" 
 
 categories:
-  - Blog
+  - GIT
 tags:
-  - [Blog, jekyll, Liquid, HTML, minimal-mistake]
+  - [GIT, Blog]
+
 
 toc: true
 toc_sticky: true
  
-date: 2021-02-28
-last_modified_at: 2021-02-28
+date: 2022-04-13
+last_modified_at: 2022-04-14
 ---
 
 ## 🚀 서론
