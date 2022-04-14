@@ -14,8 +14,13 @@ A list of my publications, categorized into
 
 which can also be found on <a href="https://scholar.google.de/citations?user=MkoDxQkAAAAJ&hl=en" target="_blank">Google Scholar</a> or <a href="https://www.researchgate.net/profile/Christopher-Schindlbeck" target="_blank">ResearchGate</a>.
 
-
 ## Journals
+
+* **Increasing Optical Pose Estimation Accuracy via Freeform Design and its Application to Hand-Eye Calibration**\\
+Nils Melchert, Lennart Hinz, Christopher Schindlbeck, Eduard Reithmeier\\
+Optics Express, 2022\\
+[doi](http://dx.doi.org/10.1364/OE.455188){: .btn .btn--primary .btn--small}
+[pdf](https://opg.optica.org/oe/viewmedia.cfm?uri=oe-30-9-14368&seq=0){: .btn .btn--primary .btn--small}
 
 * **Process-integrated state estimation of optical systems with macro–micro manipulators based on wavefront filtering**\\
 Christopher Schindlbeck, Christian Pape, Eduard Reithmeier\\
