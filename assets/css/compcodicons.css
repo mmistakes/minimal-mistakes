@@ -1,0 +1,30 @@
+/*
+ *  Compcodicons by Chris Schindlbeck (https://github.com/cschindlbeck)
+ *  Fonts generated using FontForge - https://fontforge.org
+ *  Licenses - Font: TODO
+ */
+
+@font-face {
+    font-family: 'Compcodicons';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url('../fonts/compcodicons.eot');
+    src: url('../fonts/compcodicons.eot') format('embedded-opentype'), url('../fonts/compcodicons.ttf') format('truetype'), url('../fonts/compcodicons.woff') format('woff'), url('../fonts/compcodicons.svg') format('svg');
+}
+
+.cci {
+    font-family: 'Compcodicons';
+    font-weight: 400;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.cci-hackerrank:before {
+    content: "\00ff";
+}

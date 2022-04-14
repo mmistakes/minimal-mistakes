@@ -153,6 +153,9 @@ author:
     - label: "ORCID"
       icon: "ai ai-orcid"
       url: "https://orcid.org/0000-0002-2443-3228"
+    - label: "Hackerrank"
+      icon: "cci cci-hackerrank"
+      url: "https://www.hackerrank.com/schindlbeck"
 
 # Site Footer
 footer:
