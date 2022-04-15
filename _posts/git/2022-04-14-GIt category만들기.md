@@ -2,9 +2,9 @@
 title:  "[Github 블로그] minimal-mistake 블로그 카테고리 만들기 (+ 전체 글 수)" 
 
 categories:
-  - GIT
+  - Git
 tags:
-  - [GIT, Blog]
+  - [Git, Blog]
 
 
 toc: true
