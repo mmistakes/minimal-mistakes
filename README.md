@@ -51,7 +51,7 @@ hwan:
 ```
 ---
 layout: post
-date: 2018-04-03
+date: 2018-04-03cd
 title: 블로그를 만들어보자
 author: dgoon
 tags: general posting

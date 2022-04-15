@@ -7,7 +7,7 @@ comments: true
 ---
 
 # Architecture
-![kubernetes_architecture_001.png](/assets/images/kubernetes/architecture_001.png)
+![kubernetes_architecture_001.png](../assets/images/kubernetes/architecture_001.png)
 
 ## Master node 
 master node에는 kube-ApiServer, Controller-Manager, ETCD Cluster, Kube-Scheduler가 있음
