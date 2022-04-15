@@ -1,11 +1,15 @@
 ---
 title: "Git & GitHub"
 layout: archive
-permalink: categories/GIT
+permalink: categories/Git
 author_profile: true
 sidebar_main: true
 
 ---
 
-{% assign posts = site.categories.GIT %}
-{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+
+
+{% raw %}
+{% assign posts = site.categories.Git %}
+{% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
+{% endraw %}
