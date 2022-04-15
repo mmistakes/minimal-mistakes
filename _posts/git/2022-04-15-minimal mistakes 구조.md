@@ -1,4 +1,6 @@
 ---
+
+
 title:  "[Github 블로그] Minimal-Mistakes 테마의 디렉터리 구조"
 excerpt: "블로그 커스터마이징을 하기 위해 미리 알아야 할 jekyll를 기본으로 한 minimal-mistakes 테마의 뼈대"
 
