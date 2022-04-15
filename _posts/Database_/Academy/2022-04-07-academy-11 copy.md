@@ -13,31 +13,29 @@ sidebar:
 
 # 🔐 2022-04-07
 
-## 데이터베이스 
+## 데이터베이스
 
 <!--Quote-->
 
-> ❗ 수업을 듣고, 개인이 공부한 내용을 적은 것 이기에 오류가 많을 수도 있음 
+> ❗ 수업을 듣고, 개인이 공부한 내용을 적은 것 이기에 오류가 많을 수도 있음
 
-
-# 2022-04-07
 
 ## 1️⃣ DML (Data Manipulation Language)
 
-데이터 조작어 
+데이터 조작어
 
 - 데이터를 삽입, 수정, 삭제, 조회하는 언어 → insert, update, delete, select
 
 ### insert
 
-테이블에 새로운 행을 추가할 때 사용하는 구문 
+테이블에 새로운 행을 추가할 때 사용하는 구문
 
 1) 모든 행에 대한 데이터를 추가하고자 할때 사용하는 구문 (한 행도 빼지않고 넣을 때)
 
 
 <span style="color: #2D3748; background-color:#fff5b1;">insert into 테이블명 values(입력할 데이터, 입력할 데이터...)</span>
 
-2) 특정한 컬럼에만 데이터를 넣고 싶은 경우 사용하는 구문 : 
+2) 특정한 컬럼에만 데이터를 넣고 싶은 경우 사용하는 구문 :
 
 <span style="color: #2D3748; background-color:#fff5b1;">insert into 테이블명 (컬럼명1, 컬럼명2...) values (입력데이터1, 입력데이터2...) </span>
 
@@ -58,7 +56,7 @@ select * from member;
 insert into member values ('abc123','abc','ABC초콜릿','abc@naver.com');
 insert into member (id,pw) values ('eee555','eEE');
 
-// 묵시적 형변환 -> 오라클이 자동으로 자료형을 추측하여 변환해주는것 
+// 묵시적 형변환 -> 오라클이 자동으로 자료형을 추측하여 변환해주는것
 insert into member values(123,sysdate,'ffd','abc@naver.com');
 ```
 
@@ -81,7 +79,7 @@ update member set pw = '1234', nickname = '이티' where id = 'eee555';
 
 ### delete
 
-테이블의 행을 삭제하는 구문 → 행의 개수에 변화가 생김 
+테이블의 행을 삭제하는 구문 → 행의 개수에 변화가 생김
 
 - 조건문을 걸어주지 않으면 테이블의 모든 데이터가 삭제됨.
 - <span style="color: #2D3748; background-color:#fff5b1;">delete from 테이블명 where 조건</span>
@@ -97,12 +95,12 @@ delete from member;
 
 ### truncate
 
-테이블의 전체 행을 삭제할 때 사용하는 구문 
+테이블의 전체 행을 삭제할 때 사용하는 구문
 
 - 되돌릴 수 없음 → 영구적으로 삭제
 
 ```java
-// rollback / commit 
+// rollback / commit
 commit;
 select * from member;
 delete from member;
@@ -113,9 +111,9 @@ rollback;
 
 ## 2️⃣ TCL (Transcation Control Language)
 
-한번에 수행되어야하는 작업의 단위 
+한번에 수행되어야하는 작업의 단위
 
-ex) ATM 
+ex) ATM
 
 1. 카드 삽입
 2. 메뉴 선택(인출)
@@ -135,17 +133,17 @@ ex) ATM
 - rollback : 트랜잭션 작업을 모두 취소하고 최근에 commit 했던 지점으로 돌아가는 것.
 
 > rollback to savepoint 명 : 해당 savepoint로 되돌아 간다
-> 
+>
 
 ```java
-// 테이블 생성 
+// 테이블 생성
 create table tbl_user (
     no number unique
     , id varchar2(100) primary key
     , pw varchar2(100) not null
 );
 
-// 데이터 삽입 
+// 데이터 삽입
 insert into tbl_user values(1,'user1','pw1');
 insert into tbl_user values(2,'user2','pw2');
 insert into tbl_user values(3,'user3','pw3');
@@ -161,7 +159,7 @@ insert into tbl_user values(4,'user4','pw4 ');
 savepoint spl;
 insert into tbl_user values(5,'user5','pw5');
 
-rollback to spl; // save 포인트를 해준거는 user4 까지임 
+rollback to spl; // save 포인트를 해준거는 user4 까지임
 select * from tbl_user; // user4까지만 나옴
 rollback; // savepoint 했던것도 안나옴 오직 commit 했을 때의 데이터만 출력
 ```
@@ -170,13 +168,13 @@ rollback; // savepoint 했던것도 안나옴 오직 commit 했을 때의 데이
 
 ## 3️⃣ DCL(Data Control Language)
 
-데이터 제어어 
+데이터 제어어
 
 데이터베이스에 관한 보안, 무결성, 복구 등 DBMS를 제어하기 위한 언어
 
 → grant, revoke / TCL(commit, rollback)
 
-grant : 사용자 또는 role(resource, connect, dba)에 권한 부여 
+grant : 사용자 또는 role(resource, connect, dba)에 권한 부여
 
 → system/관리자 계정 접속 → 시규 사용자 생성 → grant 접속 권한 부여 → 리소스 권한 부여
 
@@ -196,13 +194,13 @@ commit;
 
 select * from kh.coffee;
 
-// kh 계정에서 실행 
-// system 계정에서 test01 계정한테 kh 계정이 가지고 있는 coffee 테이블에 접근 권한 부여 
+// kh 계정에서 실행
+// system 계정에서 test01 계정한테 kh 계정이 가지고 있는 coffee 테이블에 접근 권한 부여
 grant select on kh.coffee to test01;
-commit; 
+commit;
 
 // kh 계정에서 실행
-// system 계정에서 test01 계정한테 kh 계정의 coffee 테이블에 대한 insert 권한 부여 
+// system 계정에서 test01 계정한테 kh 계정의 coffee 테이블에 대한 insert 권한 부여
 grant insert on kh.coffee to test01;
 commit;
 
@@ -229,7 +227,7 @@ select * from dba_role_privs where grantee ='KH';
 
 
 
-**💡 create view 뷰이름 as select 구문** 
+**💡 create view 뷰이름 as select 구문**
 
 
 - 실제 테이블에서 데이터를 바꾸면 view 테이블에서도 데이터가 바뀐다
@@ -243,8 +241,8 @@ grant create view to kh;
 create view emp_view as select emp_no, emp_name, email, phone from employee;
 select * from emp_view;
 
-// kh계정에서 실행 
-// test01 계정한테 위에서 만든 emp_view에 접근 x 그래서 접근을 주는것 
+// kh계정에서 실행
+// test01 계정한테 위에서 만든 emp_view에 접근 x 그래서 접근을 주는것
 grant select on kh.emp_view to test01;
 commit;
 
@@ -255,7 +253,7 @@ select * from kh.emp_view;
 select * from kh.emp_view;
 
 // kh계정에서 실행
-// 선동일 -> 이름을 김동일으로 수정 
+// 선동일 -> 이름을 김동일으로 수정
 update employee set emp_name = '김동일' where emp_name ='선동일';
 select * from employee;
 commit;
@@ -283,13 +281,13 @@ commit;
 6. cache / nocache -> 메모리상에 미리 시퀀스를 뽑아 올려두고 사용하는 것/ 메모리상에 올려놓지 x
 
 ```java
-create sequence seq_temp 
+create sequence seq_temp
     start with 1
     increment by 1
-    maxvalue 10 
-    cycle 
+    maxvalue 10
+    cycle
     nocache;
-    
+
 select * from user_sequences where sequence_name = 'SEQ_TEMP';
 
 select seq_temp.currval from dual; // 에러 nextval먼저 사용 해야한다
@@ -300,18 +298,18 @@ select seq_temp.currval from dual;
 - nextval : 현재 시퀀스의 다음 값을 반환함과 동시에 시퀀스를 증가
 - currval : 현재값을 반환 → 접속하고나서 nextval이 단한번도 쓰이지 않았다면 사용 x (nextval먼저 사용 해야한다)
 
-1) 활용 
+1) 활용
 
 ```java
 
 drop sequence seq_temp;
-create sequence seq_temp 
+create sequence seq_temp
     start with 1
     increment by 1
-    maxvalue 10 
-    cycle 
+    maxvalue 10
+    cycle
     nocache;
-    
+
 select * from user_sequences where sequence_name = 'SEQ_TEMP';
 
 select seq_temp.nextval from dual;
@@ -320,8 +318,8 @@ select seq_temp.currval from dual;
 select * from coffee;
 
 delete from coffee where name in ('1','2');
-// insert into coffee values(1,4000,'Max'); 
-// insert into coffee values(2,4000,'Max'); 
+// insert into coffee values(1,4000,'Max');
+// insert into coffee values(2,4000,'Max');
 // 위의 코드처럼 하지않고 seq를 사용
 insert into coffee values(seq_temp.nextval,4000,'Max');
 insert into coffee values(seq_temp.nextval,4000,'Max');

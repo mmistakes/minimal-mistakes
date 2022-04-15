@@ -6,9 +6,9 @@
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
-     
+
       <li>
-            📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
+            📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style>
       </li>
       <li>
         <span class="nav__sub-title">JAVA</span>
@@ -26,11 +26,18 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">JAVASCRIPT</span>
+        <span class="nav__sub-title">Frontend</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "JAVASCRIPT" %}
                         <li><a href="/categories/JAVASCRIPT" class="">JAVASCRIPT 기초 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "html1" %}
+                        <li><a href="/categories/html1" class=""> HTML기초 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
