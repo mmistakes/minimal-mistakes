@@ -20,18 +20,20 @@ page_css:
 
 ## Clases Intefaces
 
-> Te dicen que hacer pero no como hacerlo
+> La clase te dicen que hacer pero no como hacerlo
 
-* Son un tipo especial de clase que se usa para implmentar dependiendo de la necesidad un **método** o la invocación de una ``Constantes``
+* Son un tipo **especial de clase** que se usa para definir sólo la cabecera de los  **método** o las ``constantes`` que implementarán las **clases** que las invoque
 
-* Contienen una colección de **métodos abstractos** ``sin implementar`` y **propiedades/atributos** ``Constantes`` definidos
+* Contienen **métodos** ``sin implementar`` y **propiedades/atributos** ``constantes`` bien definidos
   * Se utilizan para indicar que **hacer** pero **no su implementación**
 
-* Las **clases** que hereden de las **intefaces** serán las que implementen la lógica de los **métodos abstractos** que invoquen dentro de ellas
+* Las **clases** que implementen de las **interfaces** serán las que le den la lógica o funcionamiento de los **métodos abstractos** que se invoquen dentro de ellas
   
-  * Recuerda : Las **clases Interfaces** no pueden **crear o instanciar objetos**, sólo pueden implementar las clases las cuales hereden de ellas los métodos mediante el modificador `implements`
+  * Recuerda : Las **clases interfaces** no pueden **crear o instanciar objetos**, sólo pueden implementar las clases las cuales hereden de ellas los métodos mediante el modificador `implements`
 
-* Una utilidad sería disponer de distintas implementaciones de la misma clase de la que herede la interfaz principal
+* Una utilidad sería disponer de distintas implementaciones de la misma **clase** de las que herede la **interfaz principal**
+
+* Una **clase normal** como **abstracta** no tiene límite a la hora de recibir **clases interfaces**
 
 ```java
 Interface interface = new ClaseImplementaInterface();
