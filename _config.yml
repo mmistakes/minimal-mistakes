@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "거스러미"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "오블로거"
+name                     : "오블로"
 description              : "An amazing website."
 url                      : "https://SyoungOh.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
