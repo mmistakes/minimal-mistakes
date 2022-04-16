@@ -1,21 +1,22 @@
 ---
 
-
-title:  "[Github 블로그] Minimal-Mistakes 테마의 디렉터리 구조"
-excerpt: "블로그 커스터마이징을 하기 위해 미리 알아야 할 jekyll를 기본으로 한 minimal-mistakes 테마의 뼈대"
+title: "Minimal-mistakes 테마 디렉터리 구조"
+escerpt: "jekyll를 기본으로 한 Minimal-mistake 테마 블로그 커스터마이징 위해 분석하기"
 
 categories:
-  - git, Git
+  - Git
 tags:
-  - [Blog, Git, jekyll, minimal-mistake]
+  - [Git, Blog, GitHub, jekyll, Minimal-mistake]
 
 toc: true
 toc_sticky: true
 
 breadcrumbs: true
- 
+
 date: 2022-04-15
 last_modified_at: 2022-04-15
+
+comments: true
 ---
 
     🌕 계속 수정해나갈 문서입니다.

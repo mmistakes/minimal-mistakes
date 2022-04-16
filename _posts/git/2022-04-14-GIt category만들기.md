@@ -1,17 +1,22 @@
 ---
-title:  "[Github 블로그] minimal-mistake 블로그 카테고리 만들기 (+ 전체 글 수)" 
+title: "GitHub 블로그 카테고리 만들기"
+escerpt: "minimal-mistake 블로그 카테고리 만들기, 전체 글수 기능 넣기"
 
 categories:
   - Git
 tags:
-  - [Git, Blog]
-
+  - [Git, Blog, GitHub, minimal-mistake]
 
 toc: true
 toc_sticky: true
- 
+
+breadcrumbs: true
+
 date: 2022-04-13
 last_modified_at: 2022-04-14
+
+comments: true
+
 ---
 
 ## 개요
