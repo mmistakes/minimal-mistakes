@@ -12,22 +12,22 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "mint" # "default", "aqua", "contrast", "dark", "dirt", "neon", "air", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "mint", "aqua", "contrast", "dark", "dirt", "neon", "air", "plum", "sunrise", "default"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "MYCODE"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title                    : "마이코드"
+title_separator          : "|"
+subtitle                 : "All we have is now."
 name                     : "MYCODE"
-description              : "An amazing website."
+description              : "마이코드의 블로그입니다!!"
 url                      : "https://jkc-mycode.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "jkc-mycode/jkc-mycode.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/full_moon.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -105,8 +105,8 @@ author:
   name             : "MYCODE"
   avatar           : "/assets/images/github.jpg"
   bio              : "반갑습니다 :)"
-  location         : "Somewhere"
-  email            :
+  location         : "South Korea"
+  email            : "jkc9709@hanmail.net"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -288,3 +288,6 @@ defaults:
       comments: # true
       share: true
       related: true
+      show_date: true
+
+date_format: "%Y-%m-%d"
