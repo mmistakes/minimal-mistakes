@@ -104,7 +104,21 @@ analytics:
 author:
   name             : "BONGHYUN KIM"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Process engineer, Data analyst, Quant investor and **DAD of super-amazing boy**"
+  bio              : "Continental, VITESCO SMT **PE(Process Engineer), Data Analyst**<br>
+**Algorithm Stock Trader**<br>
+**Hubby** of a super-gorgeous wife and **Dad** of a super-amazing babe<br><br>
+***Programming Skill***<br>
+Language: **Python**<br>
+DB: **MSSQL, MySQL, MSAccess**<br>
+BI: **PowerBI, Microstrategy**, Tableau<br>
+RPA: Uipath<br><br>
+
+***Manufacturing Skill***<br>
+Process management: **SMT**(screen printer, SPI, Mounter, Reflow oven, AOI)<br>
+Machine acceptance test: multiple experiences in abroad<br>
+**KPI analysis**
+
+"
   location         : "SOUTH KOREA"
   email            :
   links:
