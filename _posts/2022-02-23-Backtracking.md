@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Backtracking 개념 및 관련 문제"
-categories: [Heap,priority Queue]
+categories: [Backtracking,Recursive]
 tag : [c++,python,Algorithm,LeetCode,Backtracking,Letter Combinations of a Phone Number,subsets,permutations,Combination Sum,restore_ip_adr,Word Search,valid sudoku, Sudoku Solver, N-Queen,Recursive,C++]
 toc: true
 author_profile: false
