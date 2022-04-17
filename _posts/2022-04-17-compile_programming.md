@@ -20,7 +20,7 @@ search: true
 
 메모 되기 전에 pdf를 원하시는 분들을 위해 통합으로 만든 pdf 파일을 아래에 준비 해놓았습니다. 
 
-<a href="pdfs/compiler_onenote.pdf"></a>
+<a href="https://meang123.github.io/pdfs/compiler_onenote.pdf">mypdf</a>
 
-
+추가추가
 감사합니다. 
