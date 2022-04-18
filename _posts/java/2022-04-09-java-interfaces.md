@@ -18,9 +18,9 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Clases Intefaces
+## Clases Interfaces
 
-> La clase te dicen que hacer pero no como hacerlo
+> La **clase** te dicen que hacer pero **no como hacerlo**
 
 * Son un tipo **especial de clase** que se usa para definir sólo la cabecera de los  **método** o las ``constantes`` que implementarán las **clases** que las invoque
 
@@ -45,13 +45,13 @@ Interface interface = new ClaseImplementaInterface();
   * Ejemplo : **IControlador** , **IConnector** , **IBase** , **IRemote** , **IDataBaseLocal** , **IRoot**
 
 ```java
-public inteface <NombreInterface> { ... } 
+public interface <NombreInterface> { ... } 
 ```
 
 #### Ejemplo
 
 ```java
-public inteface IControlador {
+public interface IControlador {
 
   private static final int ID_CONTROLADOR = 132435;
 
@@ -63,6 +63,11 @@ public inteface IControlador {
 } 
 ```
 
-> En Resumen
+### En Resumen
+
 >
 > > Se utiliza como previsión de lo que podremos hacer de cara al futuro en nuestra aplicación mediante las clases que hereden de las Interfaces que creamos o invoquemos dentro de ella
+
+### Recuerda
+
+* Cuando una clase ``abstracta`` o ``normal`` implemente una ``interface`` utilizará la palabra clase ``implements``

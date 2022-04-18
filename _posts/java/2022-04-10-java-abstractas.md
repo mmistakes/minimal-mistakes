@@ -22,7 +22,9 @@ page_css:
 
 * Son un tipo de **clases especiales** que tienen algunos **métodos** implementados porque sabemos que tarea tienen **que hacer** y también contienen otros **métodos que no** están implementado ``(Todavía no tenemos claro que harán de cara al futuro esos métodos sin implementar)``
 
-  * Ejemplo
+  * Implementará lo que sepa cómo hacer y dejará que sean clases hijas (abstractas o especificas) quienes terminen de implementar lo que aún se desconoce
+  
+### Ejemplo
 
 ```java
 /**
@@ -45,7 +47,7 @@ public class ClaseHija extends ClaseAbstractaEjemplo {
 }
 ```
 
-* Solo se puede heredar de una clase Padre o Abstracta y se puede implementar de tantas interfaces se necesite
+* Solo se puede heredar de una **clase Padre** o **abstracta** y se puede implementar de tantas **interfaces** se necesite
 
 ```java
 /**
