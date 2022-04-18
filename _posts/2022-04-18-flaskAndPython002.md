@@ -23,4 +23,3 @@ search: true
 <div align="center">
 <img src="http://drive.google.com/uc?export=view&id=1o7akFY5Hygr9Q2cJx_3wtAoJhQp5AKnQ"><br><br><br>
 </div>
-<h1>test</h1>
