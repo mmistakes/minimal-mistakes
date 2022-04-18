@@ -20,10 +20,16 @@ page_css:
 
 ## Clase - Objeto
 
+* Todos los **objetos** heredan de la **clase Object**
+
 * Es un **tipo de variable** que apunta a una **dirección de memoria** especifica asignada por el operador ``new``
+
 * Cuando creamos un **nuevo objeto** se reserva **espacio en memoria** para ese **objeto**
+
 * Apunta al **constructor** de la **clase** lo que está ``instanciando/creando``
+
 * Almacena el valor recibido por parte del **constructor** en el caso de que lo tengas asignados
+
 * Se utiliza para invocar los **métodos** que contenta la **clase** a la que este apuntando
 
 ### Sintaxis
