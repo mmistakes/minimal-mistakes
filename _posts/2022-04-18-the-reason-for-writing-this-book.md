@@ -2,7 +2,6 @@
 layout: single
 title:  "이 책을 쓰는 이유"
 author: dingaking
-image: /assets/images/computer-pxhere.com.jpg
 categories: book
 tag: [book, diet]
 ---
