@@ -7,8 +7,25 @@ main:
   - title: "Search"
     url: /search/
 docs:
-  - title: "Quick-Start Guide"
+  - title: "지킬 블로그 문서"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+
+  - title: "Portfolio 작성 팁"
+    children:
+     - title: "git"
+       url: /categories/
+       category: "portfolio"
+     - title: "Blog"
+       url: /categories/
+       category: "portfolio"
+  - title: "Java"
+    children:
+    - title: "Project"
+      url: /project/
+      category:
+  - title: "JavaScript"
+
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
