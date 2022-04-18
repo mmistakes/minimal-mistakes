@@ -11,7 +11,7 @@ permalink: /publications/
 
 ***
 
-### 2021
+### 2022
 
 * Jungo Kasai, Keisuke Sakaguchi, Ronan Le Bras, Lavinia Dunagan, **Jacob Morrison**, Alexander R. Fabbri, Yejin Choi, Noah A. Smith                  
 <span style="color:navy">Bidimensional Leaderboards: Generate and Evaluate Language Hand in Hand</span>              
