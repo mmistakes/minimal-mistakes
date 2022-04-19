@@ -15,7 +15,7 @@ sidebar:
 {: .notice--danger}
 
 <div class="notice--success">
-<h2>I hope you like it!</h2>
+<h4>I hope you like it!</h4>
 <ul>
     <li>Swift</li>
     <li>SwiftUI</li>
