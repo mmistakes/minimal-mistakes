@@ -9,7 +9,7 @@ This is my **first coding**.
 
 I hope you like it!
 
-![Swift UI](/assets/logo.jpg)
+![Swift UI](/assets/logo-min.jpg)
 
 ```swift
 import SwiftUI
