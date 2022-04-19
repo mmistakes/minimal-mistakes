@@ -2,7 +2,7 @@
 layout: post
 title:  "SwiftUI Day1"
 categories: SwiftUI
-tag: iOS
+tag: [iOS, blog, jekyll]
 toc: true
 author_prifile: false
 sidebar:
