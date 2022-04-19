@@ -23,6 +23,7 @@ My primary research interests lie in the field of **natural language processing*
 ## News
 <!-- **\[2021.10]** One paper accepted by **Neurocomputing**. Thanks to all my co-authors!<br> -->
 <!-- **\[2021.1]** One paper accepted by **ICASSP 2021**. Congrat to all my co-authors!<br> -->
+**\[2022.04]** Check out our new [arXiv paper](https://arxiv.org/abs/2204.07275) on lifelong event detection!
 **\[2021.11]** Our team has been selected as one of 10 teams to participate in the [**Alexa Prize SimBot Challenge**](https://developer.amazon.com/alexaprize/challenges/current-challenge/simbot). Congrats to all my teammates!<br>
 **\[2020.7]** One paper accepted by **ACM Multimedia 2020**. Great thanks to all my co-authors!
 
