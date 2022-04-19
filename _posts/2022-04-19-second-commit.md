@@ -9,7 +9,7 @@ This is my **first coding**.
 
 I hope you like it!
 
-![Swift UI](/assets/logo-min.jpg)
+![image-20220419150815188](../images/2022-04-19-second-commit/image-20220419150815188.png)
 
 ```swift
 import SwiftUI
