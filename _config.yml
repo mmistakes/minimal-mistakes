@@ -106,7 +106,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "1일 1깃 잔디밭 가꾸기"
   location         : "한국"
-  email            : "whdghk1907@naver.com"
+  # email            : "whdghk1907@naver.com"
   Github           : "https://github.com/whdghk1907"
   links:
     - label: "Email"
@@ -121,7 +121,7 @@ author:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "GitHub"
+    - label: "Git"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/whdghk1907"
     - label: "Instagram"

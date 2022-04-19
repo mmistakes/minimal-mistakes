@@ -1,9 +1,5 @@
 # main links
 main:
-  - title: "Category"
-    url: /categories/
-  - title: "Tag"
-    url: /tags/
   - title: "Search"
     url: /search/
 docs:
@@ -12,17 +8,17 @@ docs:
 
   - title: "Portfolio 작성 팁"
     children:
-     - title: "git"
-       url: /categories/
+     - title: "Git"
+       url: categories/git
        category: "portfolio"
-     - title: "Blog"
-       url: /categories/
-       category: "portfolio"
+     - title: "Git Blog"
+       url: /blog/
+       category: "blog"
   - title: "Java"
     children:
-    - title: "Project"
+    - title: "Java Project"
       url: /project/
-      category:
+      category: "project"
   - title: "JavaScript"
 
 
