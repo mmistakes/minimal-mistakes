@@ -3,6 +3,9 @@ layout: post
 title:  "SwiftUI Day1"
 categories: SwiftUI
 toc: true
+author_prifile: false
+sidebar:
+    nav: "docs"
 ---
 
 # Welcome
