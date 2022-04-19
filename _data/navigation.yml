@@ -6,7 +6,12 @@ docs:
   # - title: "지킬 블로그 문서"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
-  - title: "Portfolio 작성 팁"
+  - title: "Java"
+    children:
+    - title: "Java Project"
+      url: categories/project/
+      category: "project"
+  - title: "Portfolio"
     children:
      - title: "Git"
        url: categories/git
@@ -14,12 +19,6 @@ docs:
      - title: "Git Blog"
        url: categories/blog
        category: "blog"
-  - title: "Java"
-    children:
-    - title: "Java Project"
-      url: categories/project/
-      category: "project"
-  - title: "JavaScript"
 
 
   # - title: "About"

@@ -347,6 +347,7 @@
   }
 
   @include breakpoint(max-width $large - 1px) {
+    text-align: center;
     label {
       position: relative;
       display: inline-block;
@@ -354,7 +355,6 @@
       color: $gray;
       font-size: $type-size-6;
       font-weight: bold;
-      border: 1px solid $light-gray;
       border-radius: $border-radius;
       z-index: 20;
       -webkit-transition: 0.2s ease-out;
@@ -363,7 +363,7 @@
 
       &:before,
       &:after {
-        content: "";
+         content: "";
         position: absolute;
         right: 1em;
         top: 1.25em;
