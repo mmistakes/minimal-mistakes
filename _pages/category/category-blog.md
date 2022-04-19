@@ -1,5 +1,5 @@
 ---
-title: "Git을 통한 프로젝트 관리"
+title: "Git을 통한 블로그 관리"
 layout: archive
 permalink: categories/blog
 author_profile: false

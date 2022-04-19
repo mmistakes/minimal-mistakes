@@ -103,7 +103,8 @@ analytics:
 # Site Author
 author:
   name             : "whdghk1907"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  # avatar           : "/assets/images/Hello.png"
+  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "1일 1깃 잔디밭 가꾸기"
   location         : "한국"
   # email            : "whdghk1907@naver.com"

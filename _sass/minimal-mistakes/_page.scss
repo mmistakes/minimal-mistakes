@@ -48,6 +48,7 @@ body {
   }
 
   .page__inner-wrap {
+    text-align: center;
     float: left;
     margin-top: 1em;
     margin-left: 0;
@@ -70,6 +71,9 @@ body {
 
 .page__title {
   margin-top: 0;
+  background-color: $base0d;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: $border-radius;
   margin-bottom: 2em;
   line-height: 1;
   font-size: 1em;
@@ -94,6 +98,10 @@ body {
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
+  }
+
+  a {
+    text-decoration-line: none;
   }
 
 	h1, h2, h3, h4, h5, h6 {
@@ -162,6 +170,23 @@ body {
   blockquote + .small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
+  }
+}
+
+.e-content{
+  p{
+    a{
+      background-color: $base08;
+      border-radius: $border-radius;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+      font-weight: bold;
+    }
+    span{
+      background-color: $base0b;
+      border-radius: $border-radius;
+      padding: 0em;
+      font-weight: bold;
+    }
   }
 }
 
@@ -342,6 +367,18 @@ body {
     text-decoration: none;
     color: $link-color-hover;
   }
+}
+
+.page__taxonomy-item-tag{
+  background-color: $base0b;
+  padding: 0.125em 0.5em 0.25em 0.5em;
+  border-radius: $border-radius;
+}
+
+.page__taxonomy-item-category{
+  background-color: $base0d;
+  padding: 0.125em 0.5em 0.25em 0.5em;
+  border-radius: $border-radius;
 }
 
 .taxonomy__section {
