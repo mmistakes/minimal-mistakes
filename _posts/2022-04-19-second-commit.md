@@ -11,7 +11,8 @@ sidebar:
 
 # Welcome
 
-This is my **first coding**.
+[**Watch out!** This is my **first coding**.]
+{: .notice--danger}
 
 I hope you like it!
 
