@@ -14,7 +14,14 @@ sidebar:
 [**Watch out!** This is my **first coding**.]
 {: .notice--danger}
 
-I hope you like it!
+<div class="notice--success">
+<h2>I hope you like it!</h2>
+<ul>
+    <li>Swift</li>
+    <li>SwiftUI</li>
+    <li>GitHub</li>
+<ul>
+</div>
 
 ![image-20220419150815188](../images/2022-04-19-second-commit/image-20220419150815188.png)
 
