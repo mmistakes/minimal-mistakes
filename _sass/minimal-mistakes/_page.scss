@@ -175,6 +175,7 @@ body {
 
 .e-content{
   p{
+    line-height: 2;
     a{
       background-color: $base08;
       border-radius: $border-radius;
@@ -184,7 +185,7 @@ body {
     span{
       background-color: $base0b;
       border-radius: $border-radius;
-      padding: 0em;
+      padding: 0em 0.5em 0em 0.5em;
       font-weight: bold;
     }
   }
