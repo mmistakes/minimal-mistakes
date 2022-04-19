@@ -68,12 +68,35 @@ body {
     }
   }
 }
-
+.layout--single{
+  .page__title {
+    display: inline-block;
+    margin-top: 0;
+    background-color: $base0d;
+    padding: 0.5em 5em 0.5em 5em;
+    border-radius: $border-radius;
+    margin-bottom: 2em;
+    line-height: 1;
+    font-size: 1em;
+    text-align: center;
+  
+    a {
+      color: $text-color;
+      text-decoration: none;
+    }
+  
+    & + .page__meta {
+      margin-top: -0.5em;
+    }
+  }
+}
+.layout--home{
+  .page__title{
+    display: none;
+  }
+}
 .page__title {
   margin-top: 0;
-  background-color: $base0d;
-  padding: 0.5em 1em 0.5em 1em;
-  border-radius: $border-radius;
   margin-bottom: 2em;
   line-height: 1;
   font-size: 1em;

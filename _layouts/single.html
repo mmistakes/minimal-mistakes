@@ -32,7 +32,6 @@ layout: default
           {% include page__meta.html %}
         </header>
       {% endunless %}
-
       <section class="page__content e-content" itemprop="text">
         {% if page.toc %}
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
@@ -51,7 +50,7 @@ layout: default
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
         {% include page__taxonomy.html %}
-        {% include page__date.html %}
+        <!-- {% include page__date.html %} -->
       </footer>
 
       <!-- {% if page.share %}{% include social-share.html %}{% endif %} -->
