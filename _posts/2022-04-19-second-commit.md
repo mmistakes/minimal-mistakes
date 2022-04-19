@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "SwiftUI Day1"
+categories: SwiftUI
 ---
 
 # Welcome
