@@ -47,7 +47,7 @@ Worker node에는 kubelet, Container Runtime Engine, Kube-Proxy가 있다.
 
 - Kube-Proxy : Kubernetes 네트워크 프록시는 각 노드에서 실행. 이는 각 노드의 Kubernetes API에 정의 된 서비스를 반영하며 백엔드 세트에서 간단한 TCP, UDP 및 SCTP 스트림 전달 또는 라운드 로빈 TCP, UDP 및 SCTP 전달을 수행 할 수 있음. 서비스 클러스터 IP 및 포트는 현재 서비스 프록시에서 열린 포트를 지정하는 Docker-links 호환 환경 변수를 통해 찾을 수 있음. 이러한 클러스터 IP에 대해 클러스터 DNS를 제공하는 선택적 애드온이 있음. 사용자는 프록시를 구성하기 위해 apiserver API로 서비스를 만들어야함.
 
-# master/worker node간의 연결성
+## master/worker node간의 연결성
 
 - 과한 통신량을 받게 되면 Master 혼자서 감당하기 힘들며 Master Node가 고장나면 전체 Cluster에 영향을 받게 되므로 고가용성으로 Cluster를 연결하여 Load Balancing 및 고가용성을 유지할수 있는 환경 구축 필요
 
