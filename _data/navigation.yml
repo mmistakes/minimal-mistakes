@@ -3,8 +3,8 @@ main:
   - title: "Search"
     url: /search/
 docs:
-  - title: "지킬 블로그 문서"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "지킬 블로그 문서"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
   - title: "Portfolio 작성 팁"
     children:
@@ -12,12 +12,12 @@ docs:
        url: categories/git
        category: "portfolio"
      - title: "Git Blog"
-       url: /blog/
+       url: categories/blog
        category: "blog"
   - title: "Java"
     children:
     - title: "Java Project"
-      url: /project/
+      url: categories/project/
       category: "project"
   - title: "JavaScript"
 

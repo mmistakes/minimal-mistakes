@@ -32,11 +32,13 @@
 }
 
 .archive__subtitle {
-  margin: 1.414em 0 0.5em;
-  padding-bottom: 0.5em;
-  font-size: $type-size-5;
-  color: $muted-text-color;
-  border-bottom: 1px solid $border-color;
+  margin: 0 0 1em;
+  padding: 1em 1em 1em 1em;
+  font-size: $type-size-6;
+  color: $base01;
+  // background-color: $base04;
+  border-radius: $border-radius;
+  // border-bottom: 1px solid $border-color;
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
@@ -125,10 +127,24 @@
    ========================================================================== */
 
 .list__item {
+
+  text-align: center;
+  padding: 0.5em 1em 0.5em 1em;
+  font-weight: bold;
+  background-color: $base08;
+  border-radius: $border-radius;
+  margin-bottom: 5px;
+
+  a{
+  text-decoration-line: none;
+  box-shadow: none;
+  }
+
   .page__meta {
     margin: 0 0 4px;
     font-size: 0.6em;
   }
+
 }
 
 /*

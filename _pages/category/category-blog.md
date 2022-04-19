@@ -1,12 +1,12 @@
 ---
 title: "Git을 통한 프로젝트 관리"
 layout: archive
-permalink: categories/git
+permalink: categories/blog
 author_profile: false
 # sidebar_main: true
 sidebar:
     nav: "docs"
 ---
 
-{% assign posts = site.categories.git %}
+{% assign posts = site.categories.blog %}
 {% for post in posts %} {% include archive-single-list.html type=page.entries_layout %} {% endfor %}

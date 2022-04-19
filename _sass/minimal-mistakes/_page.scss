@@ -70,7 +70,9 @@ body {
 
 .page__title {
   margin-top: 0;
+  margin-bottom: 2em;
   line-height: 1;
+  font-size: 1em;
 
   a {
     color: $text-color;
@@ -329,8 +331,10 @@ body {
   margin-right: 5px;
   margin-bottom: 8px;
   padding: 5px 10px;
+  font-weight: bold;
   text-decoration: none;
-  border: 1px solid mix(#000, $border-color, 25%);
+  background-color: $base0b;
+  // border: 1px solid mix(#000, $border-color, 25%);
   border-radius: $border-radius;
 
   &:hover {
