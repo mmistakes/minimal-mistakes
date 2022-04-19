@@ -106,11 +106,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "iOS Developer."
   location         : "Melbourne-Austrlia"
-  # email            : "joepark0098@gmail.com"
+  email            : "joepark0098@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "joepark0098@gmail.com"
+      # url: "joepark0098@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://github.com/Joseph-Swift"
