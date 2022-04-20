@@ -106,7 +106,7 @@ origin/HEAD -> origin/master
 
 #### Opción ``-a``
 
-* Muestra todas las **locales / tracking / ramas remotas** del **|Repositorio Remoto|**
+* Muestra todas las **locales / tracking / ramas remotas** del **Repositorio Remoto**
 
 ```bash
 git branch -a

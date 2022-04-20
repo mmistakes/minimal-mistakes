@@ -25,7 +25,7 @@ tags:
 
 * Cambia **[HEAD]** en si mismo de lugar al que apunta
 
-* Copiar el contenido de una **rama remota** dentro de una **rama tracking local** y crear *(en el caso que no exista)* o actualizar *(en el caso que exista)* en el **[Repositorio Local]** una **rama** con el mismo nombre que poseía la **rama tracking local** que apunta a la **rama remota** del **|Repositorio Remoto|**
+* Copiar el contenido de una **rama remota** dentro de una **rama tracking local** y crear *(en el caso que no exista)* o actualizar *(en el caso que exista)* en el **[Repositorio Local]** una **rama** con el mismo nombre que poseía la **rama tracking local** que apunta a la **rama remota** del **Repositorio Remoto**
 
 > Todo los cambios que hagamos sobre un archivo que estén **{Tracked/Rastreado}** afectan al **(Working Directory/Directorio de Trabajo)**
 
@@ -56,7 +56,7 @@ git checkout -f <rama-a-la-que-dirigirnos>
 ```
 
 * Copia en una **rama remota** una **rama local de tracking** y crea una **rama local** con el mismo nombre ( en el caso de que no exista )
-  * Crea y sincroniza la **rama local tracking** asociada a una ``<rama remota>/<rama>`` como puede ser ``<origin/rama-remota>`` del **[Repositorio Remoto]**
+  * Crea y sincroniza la **rama local tracking** asociada a una ``<rama remota>/<rama>`` como puede ser ``<origin/rama-remota>`` del **Repositorio Remoto**
 
 ``git checkout <rama-tracking-apuntando-a-remota>``
 
