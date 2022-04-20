@@ -1,5 +1,6 @@
 # Custom Dictionary Words
 añadiendole
+Anonimo
 chgrp
 comprimirlos
 deshacerlos
@@ -10,9 +11,11 @@ metacaracteres
 metadatos
 monitorizado
 posicionales
+println
 Redirección
 referenciado
 renice
+reutilización
 secuencialmente
 subcomando
 subdirectorio

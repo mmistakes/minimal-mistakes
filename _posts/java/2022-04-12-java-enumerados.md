@@ -21,8 +21,9 @@ page_css:
 ## Tipo Especial - Enum
 
 * Es un **tipo de dato especial** el cual se puede equiparar de cierta manera como una ``clase`` que permite que una **variable** declarada en esta ``clase`` sea un **conjunto de constantes** predefinidas
+  * Un tipo enum puede estar compuesto por ``atributos`` , ``constructores`` , ``métodos``
   
-* Dentro de la ``clase`` puede incluir  ``metodos static`` que devuelven un array que contiene todos los valores enumerados en el orden que estén declarados
+* Dentro de la ``clase`` puede incluir  ``métodos static`` que devuelven un array que contiene todos los valores enumerados en el orden que estén declarados
   
   * Recuerda : Todas las **variables constantes** se deben de poner en mayúsculas
   
@@ -55,7 +56,7 @@ public class EnumTest{
     this.day = day;
   }
 
-// Metodo para mostrar los datos tipos enum
+// Método para mostrar los datos tipos enum
 public void getDay(){
   switch(day){
     case MONDAY:
