@@ -43,3 +43,4 @@ tags:
 * Modifica el **último commit** que haya registrado el **log del árbol** de **commits** además de cambiar el **ID** del **commits**
 
 ``git commit --amend -m "..."``
+

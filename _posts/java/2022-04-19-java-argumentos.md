@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Java - Super
+title: Java - Argumentos
 date: 2022-04-19
 classes: wide
 toc: true
