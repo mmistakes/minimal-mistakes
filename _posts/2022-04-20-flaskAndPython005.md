@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "플라스크(Flask)와 파이썬(Python) - 004"
+title: "플라스크(Flask)와 파이썬(Python) - 005"
 categories: Backend
 tag: [flask, 플라스크, 파이썬, python]
 toc: true
@@ -15,17 +15,17 @@ search: true
 {: .notice--success}
 
 
-<center><h2>[플라스크(Flask)와 파이썬(Python) - 004]</h2></center><br>
+<center><h2>[플라스크(Flask)와 파이썬(Python) - 005]</h2></center><br>
 
 
-<center><h3> 플라스크(Flask) basic - 04</h3></center><br>
+<center><h3> 플라스크(Flask) basic - 05</h3></center><br>
 
 <h3>FrontEnd & BackEnd 구현해보기</h3>
 
 
 
 <div align="center">
-<img src="http://drive.google.com/uc?export=view&id=1oVpheR6eqkpYCIlNVYdxI9Mb0u6epXM-"><br><br>
+<img src="http://drive.google.com/uc?export=view&id=1oXIgiU7P7Pp3U70CyATTW44nGAxYKry2"><br><br>
 
 
 </div>

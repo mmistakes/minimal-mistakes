@@ -37,9 +37,6 @@ search: true
 <img src="http://drive.google.com/uc?export=view&id=1oIpyJFgVwH35kHCDBO1_Xn5f9JwyUPrN"><br><br>
 
 
-<img src="http://drive.google.com/uc?export=view&id=1oIpyJFgVwH35kHCDBO1_Xn5f9JwyUPrN"><br><br>
-
-
 <img src="http://drive.google.com/uc?export=view&id=1oM8CUOgFqYJktljVGa8rcJ3XfpaT3qYN"><br><br>
 
 
