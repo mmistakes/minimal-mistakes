@@ -44,4 +44,4 @@ Ahora el archivo esta igual que al principio y sin ningún cambio realizado
 git apply < cambios-realizados.path
 ```
 
-Todos los cambios que hicimos anteriormente y que se almacenaron dentro del archivo ``cambios-realizados.path`` se han vuelto a restablecer sobre el mismo archivo y podremos añadirlos con ``git add <archivo>`` y confirmarlos mediante ``git commit`` para guardarlos en el **|Repositorio Remoto|**
+Todos los cambios que hicimos anteriormente y que se almacenaron dentro del archivo ``cambios-realizados.path`` se han vuelto a restablecer sobre el mismo archivo y podremos añadirlos con ``git add <archivo>`` y confirmarlos mediante ``git commit`` para guardarlos en el **Repositorio Remoto**

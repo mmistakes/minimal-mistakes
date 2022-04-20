@@ -25,11 +25,11 @@ page_css:
 
   * Permite asociar un identificador a una **URL**
 
-  * Subir al **|Repositorio Remoto|** todos cambios que se han hecho al proyecto desde el **directorio de trabajo (Working Directory)** y que fueron registrado en los **commits** que se fueron creando mediante el comando ``git commit -m "Mensaje"``
+  * Subir al **Repositorio Remoto** todos cambios que se han hecho al proyecto desde el **directorio de trabajo (Working Directory)** y que fueron registrado en los **commits** que se fueron creando mediante el comando ``git commit -m "Mensaje"``
 
-  * Sincronizar la rama del **[Repositorio local]** con la rama del **|Repositorio Remoto|**
+  * Sincronizar la rama del **[Repositorio local]** con la rama del **Repositorio Remoto**
 
-* Muestra los **|Repositorio Remotos|** definidos en un **[Repositorio Local]**
+* Muestra los **Repositorio Remoto** definidos en un **[Repositorio Local]**
 
 ```bash
 #         Elemento Opcional
@@ -37,7 +37,7 @@ page_css:
 git remote [-v]
 ```
 
-* Este comando se utiliza para sincronizar un **[Repositorio local]** con otro **|Repositorio Remoto|** dentro de la plataforma **GITHUB**
+* Este comando se utiliza para sincronizar un **[Repositorio local]** con otro **Repositorio Remoto** dentro de la plataforma **GITHUB**
 
   * Por regla general se llamará ``origin`` pero se puede añadir cualquier otro nombre
 
@@ -51,7 +51,7 @@ git remote add origin https://github.com/usuario/nombre_repositorio.git
 git remote add teamone https://github.com/usuario/nombre_repositorio.git
 ```
 
-* Renombrar una referencia **remota** desde el **|Repositorio Remoto|**
+* Renombrar una referencia **remota** desde el **Repositorio Remoto**
 
 ```bash
 git remote rename <nombre-remote> <nuevo-nombre-remote>
@@ -59,28 +59,28 @@ git remote rename <nombre-remote> <nuevo-nombre-remote>
 git remote rename rama-antigua rama-nueva
 ```
 
-* Actualizar la información de las ramas remotas almacenadas en el **|Repo.Remoto|**
+* Actualizar la información de las ramas remotas almacenadas en el **Repositorio Remoto**
 
 ```bash
 git remote update
 ```
 
-* Borra la ``<rama>`` que sincroniza el **[Repositorio Local]** con la rama **|Repositorio Remoto|**
+* Borra la ``<rama>`` que sincroniza el **[Repositorio Local]** con la rama **Repositorio Remoto**
 
 ```bash
 #                 Rama utilizada para sincronización entre 
-#                   ↓  **[Repo.Local]** y **|Repo.Remoto|** 
+#                   ↓  **[Repo.Local]** y **Repositorio Remoto**
 #                   ↓
 git remote remove <rama>
 ```
 
-* Otra forma de borrar una ``<rama>`` que se sincroniza con otra rama del **|Repositorio Remoto|** es mediante el argumento ``rm``
+* Otra forma de borrar una ``<rama>`` que se sincroniza con otra rama del **Repositorio Remoto** es mediante el argumento ``rm``
 
 ```bash
 git remote rm <rama>
 ```
 
-* Para poder ver las **[Ramas Locales]** que están sincronizadas con las **|Ramas Remotas|** y demás datos sobre las ramas **[Remote-Tracking-Branches]**
+* Para poder ver las **[Ramas Locales]** que están sincronizadas con las **Repositorio Remoto** y demás datos sobre las ramas **[Remote-Tracking-Branches]**
 
 ```bash
 git remote show origin

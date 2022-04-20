@@ -102,7 +102,7 @@ git commit --amend -m
 
 * ``amend`` → Sustituimos el **commit actual** por lo que teníamos el **commit anterior** a este y le añadimos lo que teníamos registrado en el **{INDEX}** de forma que podamos corregir lo que se nos olvido añadir o arreglarlo antes de pasarlo al **[Repositorio Local]**
 
-> `git commit` → Genera un nuevo **registro/instantánea** de todos los archivos que tengamos y se almacenarán dentro del **{INDEX}** esperando a ser enviados al **|Repositorio Remoto|**
+> `git commit` → Genera un nuevo **registro/instantánea** de todos los archivos que tengamos y se almacenarán dentro del **{INDEX}** esperando a ser enviados al **Repositorio Remoto**
 
 * Ver información especifica de un ``commit`` indicando su **SHA-1**
 
