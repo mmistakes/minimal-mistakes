@@ -14,7 +14,6 @@ sidebar:
 <br>
 각 기능의 방식과 원리에 대하여 포스팅 하겠습니다.  
 <br>
-<hr>
 <br>
 {% assign posts = site.categories.everyparking %}
 {% for post in posts %} {% include archive-single-list.html type=page.entries_layout %} {% endfor %}

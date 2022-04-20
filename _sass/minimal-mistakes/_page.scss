@@ -30,9 +30,14 @@ body {
           flex-direction: column;
 }
 
+
 .initial-content,
 .search-content {
   flex: 1 0 auto;
+}
+
+.highlight{
+  text-align: start;
 }
 
 .page {
@@ -120,7 +125,7 @@ body {
 .page__content {
   h2 {
     padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+    // border-bottom: 1px solid $border-color;
   }
 
   a {
@@ -400,6 +405,7 @@ body {
 }
 
 .page__taxonomy-item-category{
+  margin-right: 5px;
   background-color: $base0d;
   padding: 0.125em 0.5em 0.25em 0.5em;
   border-radius: $border-radius;
