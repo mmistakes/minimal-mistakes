@@ -11,6 +11,7 @@ header:
 categories:
   - java
   - java-herencia
+  - java-super
 tags:
   - java-manual
 page_css: 
@@ -19,13 +20,46 @@ page_css:
 
 ## Palabra Clave - Herencia
 
-* Cuando una ``clase hija`` **hereda** las características **'atributos y metodos'** de una ``clase padre`` y extiende esas características a la propia ``clase hija`` u otras clases descendientes de esta usaremos la palabra clave ``extends`` desde la ``clase hija``
+> Todas las clases heredan de la clase Object
+
+* Permite la **reutilización** y la **extensión del código** heredado desde la **clase Padre**
+  * A la **Clase Padre** también se le conoce como **Clase Base** o **SuperClase**
+
+  * Las **clases Hijas** que descienden de la **clase Padre** heredarán de ella todos sus **estados** ``(atributos)`` y **acciones** ``(comportamientos)``
+
+* Cuando una ``clase Hija`` **hereda** las características **"(atributos y métodos)"** de una ``clase Padre`` , está usará la palabra clave ``extends`` dentro de la ``clase Hija``
+
+```java
+public class Hija extends Padre {
+  // Implementanción
+}
+```
+
+* La ``clase Hija`` extiende las características de los **(estados/atributos)** y **(acciones/comportamientos)** de la ``clase Padre`` que recibida
+  * Podrá modificar los ``métodos`` mediante el identificador ``@Override`` para ajustarlos a las necesidades de la propias clases descendientes
+
+  * Recuerda : ``@Override`` significa **Invalidar** no **Sobrescribir**
+
+```java
+ @Override
+ public String getNombre() {
+  // TODO Auto-generated method stub
+  return super.getNombre();
+ }
+```
+
+* La ``clase Hija`` extiende las características a la propia ``clase Hija`` u otras **clases descendientes** de esta
+
+* Palabra clave ``super``
+  * Hace referencia al **constructor padre** heredado por la **clase Hija** para asignarles ciertos parámetros definidos por la **clase Padre**
+
+### Ejemplos
 
 ```java
 /**
  * Clase Principal - Padre
  * 
- * Define una serie de caracteristicas que heredará sus clases desdencientes
+ * Define una serie de características que heredará sus clases descendientes
  * como será la clase Hija
  * 
  * @author RVS
@@ -34,17 +68,17 @@ page_css:
 public class Padre {
 
  /**
-  * Atributo de instancia : Define el nombre del objeto persona que se instancie
+  * Atributo de instancia : Define el nombre del objeto persona que se instancia
   */
  private String nombre;
 
  /**
-  * Atributo de instancia : Define la edad del objeto persona que se instancie
+  * Atributo de instancia : Define la edad del objeto persona que se instancia
   */
  private int edad;
 
  /**
-  * Atributo de instancia : Define la altura del objeto persona que se instancie
+  * Atributo de instancia : Define la altura del objeto persona que se instancia
   */
  private double altura;
 
@@ -133,9 +167,9 @@ public class Padre {
 
 ```java
 /**
- * Clase Hija que hereda algunas caracteristicas de la clase Padre
+ * Clase Hija que hereda algunas características de la clase Padre
  * 
- * Caracteristicas (Atributos/Metodos) a heredar de la clase Padre serán :
+ * Características (Atributos/Métodos) a heredar de la clase Padre serán :
  * 
  * String - Nombre
  * 
@@ -166,7 +200,7 @@ public class Hija extends Padre {
  /**
   * Constructor por defecto
   * 
-  * Define unas caracteristicas por defecto del objeto que instanciemos
+  * Define unas características por defecto del objeto que instanciamos
   * 
   */
  public Hija() {
@@ -177,8 +211,8 @@ public class Hija extends Padre {
  }
 
  /**
-  * Constructor que permite definir al objeto que instanciemos una serie de
-  * valores y el cual define unas caracteristicas establecidas heredades del
+  * Constructor que permite definir al objeto que instanciamos una serie de
+  * valores y el cual define unas características establecidas heredades del
   * constructor Padre
   * 
   * @param peso
@@ -186,6 +220,7 @@ public class Hija extends Padre {
   * @param lugarDeNacimiento
   */
  public Hija(double peso, String ojos, String lugarDeNacimiento) {
+  // Palabra clave - super → Hace referencia al constructor padre heredado por la clase Hija para asignarles ciertos parámetros definidos por la clase Padre
   super("Maria", 20, 160);
   this.peso = peso;
   this.colorOjos = ojos;
@@ -193,7 +228,7 @@ public class Hija extends Padre {
  }
 
  /**
-  * Metodo de la clase Padre heredado por la clase Hija
+  * Método de la clase Padre heredado por la clase Hija
   * 
   * Permite obtener el nombre de la clase Hija
   */
@@ -204,7 +239,7 @@ public class Hija extends Padre {
  }
 
  /**
-  * Metodo de la clase Padre heredado por la clase Hija
+  * Método de la clase Padre heredado por la clase Hija
   * 
   * Permite establecer el nombre de la clase Hija
   */
@@ -215,7 +250,7 @@ public class Hija extends Padre {
  }
 
  /**
-  * Metodo de la clase Padre heredado por la clase Hija
+  * Método de la clase Padre heredado por la clase Hija
   * 
   * Permite establecer la edad de la clase Hija
   * 
@@ -227,7 +262,7 @@ public class Hija extends Padre {
  }
 
  /**
-  * Metodo de la clase Padre heredado por la clase Hija
+  * Método de la clase Padre heredado por la clase Hija
   * 
   * Permite establecer la edad de la clase Hija
   * 
@@ -239,7 +274,7 @@ public class Hija extends Padre {
  }
 
  /**
-  * Metodo de la clase Padre heredado por la clase Hija
+  * Método de la clase Padre heredado por la clase Hija
   * 
   * Permite obtener la altura de la clase Hija
   * 
@@ -251,7 +286,7 @@ public class Hija extends Padre {
  }
 
  /**
-  * Metodo de la clase Padre heredado por la clase Hija
+  * Método de la clase Padre heredado por la clase Hija
   * 
   * Permite establecer la altura de la clase Hija
   * 
@@ -328,10 +363,9 @@ public class Hija extends Padre {
 }
 ```
 
-* Desde la clase principal crearemos los objetos de las distintas clases Padre e Hija y ejecutaremos los metodos que nos muestren los valores almacenados dentro de los mismos
+* Desde la clase Principal ``main`` crearemos los objetos de las distintas clases ``Padre`` e ``Hija`` y ejecutaremos los ``métodos`` que nos muestren los valores almacenados dentro de los mismos
 
 ```java
-
 public class HerenciaPadreHijaMain {
 
  public static void main(String[] args) {
@@ -347,12 +381,11 @@ public class HerenciaPadreHijaMain {
 
   Hija hija2 = new Hija(56, "azules", "Madrid");
   System.out.println("♦♦ " + hija2.toString());
-
  }
 }
 ```
 
-* La clase main donde ejecutaremos el código
+* La **clase main** donde ejecutaremos el código
 
 ```java
 public class HerenciaPadreHijaMain {
@@ -363,7 +396,7 @@ public class HerenciaPadreHijaMain {
   Padre padreAnonimo = new Padre();
   System.out.println("• " + padreAnonimo.toString());
 
-//  Creamos un objeto Padre desde un constructor que tiene definido una serie de parametros los cuales le darán valores que almacenara el nuevo objeto padre que vayamos a crear
+//  Creamos un objeto Padre desde un constructor que tiene definido una serie de parámetros los cuales le darán valores que almacenara el nuevo objeto padre que vayamos a crear
   Padre padre = new Padre("David", 32, 180);
   System.out.println("•• " + padre.toString());
 
@@ -371,7 +404,7 @@ public class HerenciaPadreHijaMain {
   Hija hija1 = new Hija();
   System.out.println("♦ " + hija1.toString());
 
-//  Creamos un objeto Hija desde un constructor que tiene definidos una serie de parametros los cuales le darán valores que almacenara el nuevo objeto padre que vayamos a crear
+//  Creamos un objeto Hija desde un constructor que tiene definidos una serie de parámetros los cuales le darán valores que almacenara el nuevo objeto padre que vayamos a crear
   Hija hija2 = new Hija(56, "azules", "Madrid");
   System.out.println("♦♦ " + hija2.toString());
 
@@ -380,7 +413,7 @@ public class HerenciaPadreHijaMain {
 
 ```
 
-* La salida del codigo es :
+* La salida del código es :
 
 ```java
 • Nombre: Anónimo Edad: 0 Altura: 0.0

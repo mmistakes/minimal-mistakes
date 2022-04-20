@@ -35,11 +35,11 @@ page_css:
 *
 */
 public class Persona{
-// Atributo de instancia : Define el nombre del objeto persona que se instancie
+// Atributo de instancia : Define el nombre del objeto persona que se instancia
  private String nombre;
-// Atributo de instancia : Define la edad del objeto persona que se instancie
+// Atributo de instancia : Define la edad del objeto persona que se instancia
  private int edad;
-// Atributo de instancia : Define la altura del objeto persona que se instancie
+// Atributo de instancia : Define la altura del objeto persona que se instancia
  private double altura;
 
 /**
