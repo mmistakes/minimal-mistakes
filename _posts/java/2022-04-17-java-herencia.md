@@ -31,14 +31,15 @@ page_css:
 
 ```java
 public class Hija extends Padre {
-  // Implementanción
+  // Implementación
 }
 ```
 
 * La ``clase Hija`` extiende las características de los **(estados/atributos)** y **(acciones/comportamientos)** de la ``clase Padre`` que recibida
   * Podrá modificar los ``métodos`` mediante el identificador ``@Override`` para ajustarlos a las necesidades de la propias clases descendientes
 
-  * Recuerda : ``@Override`` significa **Invalidar** no **Sobrescribir**
+  * Recuerda : ``@Override`` → significa **Invalidar** no **Sobrescribir**
+               ``@Overwrite`` → significa **Sobrescribir**
 
 ```java
  @Override

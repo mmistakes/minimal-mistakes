@@ -261,7 +261,7 @@ Estas ramas se puede ir creando dependiendo de las necesidades del proyecto
 
   * Es la rama de sólo y para **Producción**
 
-  * Lo recomendable a la hora de trabajar con nuestro proyecto es crear una ``rama`` a partir de esta ``rama`` llamada **master** como puede ser la ``rama developer`` y fusionarle los cambios que sean correcto a la ``rama master`` mediante un ``pull request``
+  * Lo recomendable a la hora de trabajar con nuestro proyecto es crear una ``rama`` a partir de esta ``rama`` llamada **master** como puede ser la ``rama developer`` y fusionar los cambios que sean correcto a la ``rama master`` mediante un ``pull request``
 
 * **developer** → Rama Secundaria **[Rama Padre : Master]**
 

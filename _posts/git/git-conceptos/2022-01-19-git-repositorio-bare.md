@@ -18,7 +18,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Repositorios Bare - (vacio/simple)
+## Repositorios Bare - (vació/simple)
 
 * Son repositorios donde no se desarrolla los proyectos , solo se suben cambios realizados en el
 

@@ -31,7 +31,7 @@ git checkout fa680ad2
 
 * Se realiza el comando ``checkout`` sobre el ``SHA-1`` del ``commit en cuestión``
 
-* Se suele hacer para inspeccionar los **ficheros** en un punto del **historial de commts** del **[Repositorio Local]** y poder crear una nueva rama a partir de ese **commit** al que hemos accedido
+* Se suele hacer para inspeccionar los **ficheros** en un punto del **historial de commits** del **[Repositorio Local]** y poder crear una nueva rama a partir de ese **commit** al que hemos accedido
   * En cierto modo simbólico se ha creado una **rama sin nombre**
 
 * En cualquier momento podemos **crear** una **rama** en este punto mediante el siguiente comando

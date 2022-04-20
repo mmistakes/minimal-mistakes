@@ -23,7 +23,7 @@ page_css:
 
 ## Restaurar un archivo después de ejecutar git commit (confirmarlo)
 
-* Tenemos un archivo en el **(Working Directory)** descargado del **|Repo.Remoto|** en la  ``rama master`` llamado **README.md** el cual tiene el siguiente contenido definido
+* Tenemos un archivo en el **(Working Directory)** descargado del **Repositorio Remoto** en la  ``rama master`` llamado **README.md** el cual tiene el siguiente contenido definido
 
 ```bash
 # mi-git-para-pruebas

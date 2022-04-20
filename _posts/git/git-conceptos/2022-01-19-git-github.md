@@ -45,17 +45,17 @@ page_css:
       * Se puede importar de otro servidor de Internet o del propio **GITHUB** cambiando incluso su formato
 
   * Permite crear **organizaciones** para albergar **múltiples proyectos** relacionados
-    * Utilizando el botón : **New organisation**
+    * Utilizando el botón : **New organization**
 
   * Permite también otras operaciones para **compartir** , **gestionar** y **mantenimiento del código**
 
 ### Identificación de los Repositorio de GITHUB
 
-* Acceder al **[Repositorio Remoto]** de **GITHUB** mediante el protócolo **HTTPS** desde una **URL**
+* Acceder al **Repositorio Remoto** de **GITHUB** mediante el protocolo **HTTPS** desde una **URL**
 
 ``https://github.com/usuario/proyecto``
 
-* Usando el protócolo HTTPS **URL** y la extensión ``.git`` del **[Repositorio Remoto]** de **GITHUB**
+* Usando el protócolo HTTPS **URL** y la extensión ``.git`` del **Repositorio Remoto** de **GITHUB**
 
 ``https://github.com/usuario/proyecto.git``
 

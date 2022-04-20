@@ -20,11 +20,11 @@ page_css:
  
 ## Pull Request
 
-Una **"solicitud de extracción/Pull Request"** es un método para enviar contribuciones a un proyecto en un **|Repositorio Remoto|**
+Una **"solicitud de extracción/Pull Request"** es un método para enviar contribuciones a un proyecto en un **Repositorio Remoto**
 
 Es la forma preferida de **enviar contribuciones** a un proyecto utilizando un sistema de control de versiones distribuido como **Git** y su plataforma **GITHUB**
 
-Una **"Solicitud de Extracción/Pull Request"** ocurre cuando un desarrollador solicita cambios comprometidos con un **|Repositorio Remoto|** para que se le consideren para su inclusión en el **Repositorio Principal** de un proyecto remoto alojado en la plataforma **GITHUB**.
+Una **"Solicitud de Extracción/Pull Request"** ocurre cuando un desarrollador solicita cambios comprometidos con un **Repositorio Remoto** para que se le consideren para su inclusión en el **Repositorio Principal** de un proyecto remoto alojado en la plataforma **GITHUB**.
 
 Es importante tener en cuenta que las **"solicitud de extracción/Pull Request"** son un método de **flujo de trabajo/workflow**  y no son una función del sistema de control de versiones **GIT** en sí
 

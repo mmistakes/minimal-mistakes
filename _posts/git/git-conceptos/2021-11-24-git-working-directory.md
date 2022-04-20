@@ -57,7 +57,7 @@ Ruta del directorio :
   
     * A medida mientras trabajas con ellos , se preparan **{Staged}** selectivamente estos archivos modificados **{Modified}** mediante el comando ``git add`` y luego se confirman ``git commit`` con todos esos cambios preparados dentro del **{Staging Area/INDEX}**
 
-    {% include figure image_path="assets/images/graficos/ciclo-archivo-rastreado.jpg" alt="Sencillo gráfico del sistema de gestión de archivos git" caption="Sencillo gráfico del sistema de gestión de archivos git" %}
+    {% include figure image_path="assets/images/gráficos/ciclo-archivo-rastreado.jpg" alt="Sencillo gráfico del sistema de gestión de archivos git" caption="Sencillo gráfico del sistema de gestión de archivos git" %}
 
 * * *
 

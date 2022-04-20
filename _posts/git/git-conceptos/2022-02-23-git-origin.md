@@ -22,11 +22,11 @@ page_css:
  
 ## Git - Origin
 
-* Abreviatura y nombre predeterminado por **GITHUB** para indicar el lugar donde enviar el código al **|Repositorio Remoto|** para almacenarlo
+* Abreviatura y nombre predeterminado por **GITHUB** para indicar el lugar donde enviar el código al **Repositorio Remoto** para almacenarlo
 
   * Al clonar un proyecto desde **GITHUB** se crea por defecto dentro del **[Repositorio Local]**
 
-  * Se usa como **referencia** en lugar de la **URL** del **|Repositorio Remoto|** subido a **GITHUB**
+  * Se usa como **referencia** en lugar de la **URL** del **Repositorio Remoto** subido a **GITHUB**
 
 Este nombre se puede cambiar mediante el comando ``git remote set-url``
 
