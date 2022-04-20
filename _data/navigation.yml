@@ -8,10 +8,15 @@ docs:
 
   - title: "Java"
     children:
-    - title: "Java Project"
-      url: categories/project/
+    # - title: "Java Project"
+    #   url: categories/
       category: "project"
-  - title: "Portfolio"
+  - title: "Project"
+    children:
+     - title: "모두의 주차장"
+       url: categories/everyparking
+       category: "everyparking"
+  - title: "Github"
     children:
      - title: "Git"
        url: categories/git

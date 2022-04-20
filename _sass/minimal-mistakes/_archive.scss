@@ -5,7 +5,15 @@
 .archive {
   margin-top: 1em;
   margin-bottom: 2em;
-
+  text-align: center;
+  p{
+    span{
+      background-color: $base0b;
+      border-radius: $border-radius;
+      padding: 0em 0.5em 0em 0.5em;
+      font-weight: bold;
+    }
+  }
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
@@ -128,7 +136,7 @@
    ========================================================================== */
 
 .list__item {
-
+  
   text-align: center;
   padding: 0.5em 1em 0.5em 1em;
   font-weight: bold;
