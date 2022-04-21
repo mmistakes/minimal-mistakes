@@ -18,9 +18,17 @@ search: true
 일단 chapter 별로 올릴 예정입니다.
 저도 pdf로 다운 받고 추가로 공부를 진행하면서 메모가 추가 될 예정입니다. 
 
-메모 되기 전에 pdf를 원하시는 분들을 위해 통합으로 만든 pdf 파일을 아래에 준비 해놓았습니다. 
+메모 되기 전에 pdf를 원하시는 분들을 위해 통합으로 만든 pdf 파일을 아래에 준비 해놓았습니다.
 
-<a href="https://meang123.github.io/pdfs/compiler_onenote.pdf">mypdf</a>
+ 
 
-추가추가
+<a href="https://meang123.github.io/pdfs/compiler_onenote.pdf">중간고사이전내용pdf</a>
+
+
+
+그리고 pdf안에 유용한 사이트의 링크도 포함 되어있으니 참고하실 분들은 참고하시면 될 것 같습니다.
+
+
+마지막으로 내용중에 수정이 필요하거나 틀린 내용이 있다면 댓글로 반드시 알려 주세요!
+
 감사합니다. 
