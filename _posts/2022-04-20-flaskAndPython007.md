@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "플라스크(Flask)와 파이썬(Python) - 006"
+title: "플라스크(Flask)와 파이썬(Python) - 007"
 categories: Backend
 tag: [flask, 플라스크, 파이썬, python]
 toc: true
