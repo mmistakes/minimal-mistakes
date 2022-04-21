@@ -102,9 +102,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Infra SME"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "I love technology and helping clients to achieve their business needs by providing technical consulting"
   location         : "Somewhere"
   email            :
   links:
