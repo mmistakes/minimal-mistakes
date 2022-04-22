@@ -5,14 +5,16 @@ categories: Python
 tag: [Python, 파이썬, open(), 파일 읽기, 파일 쓰기]
 toc: true
 toc_sticky: true
+toc_label: '페이지 주요 목자'
 author_profile: false
 sidebar:
     nav: "docs"
 ---
 
+
 ## 1) line by line 으로 파일 읽기
 
-f_input 이라는 변수에 파일 위치를 저장한다. 혹시라도 패스를 바꾸고 싶을 때 손쉽게 하기 위함이다. fp 라는 변수에 open() 함수 사용해 파일을 열어볼 수 있도록 저장한다. 읽을 때는 'r'이라는 인자를 넣어야 하지만 디폴트가 'r' 이기 때문에 넣지 않아도 된다. 'w'이라는 인자는 쓸 때 넣어준다.
+f_input이라는 변수에 파일 위치를 저장한다. 혹시라도 path를 바꾸고 싶을 때 손쉽게 하기 위함이다. fp라는 변수에 open() 함수 사용해 파일을 열어볼 수 있도록 저장한다. 읽을 때는 'r'이라는 인자를 넣어야 하지만 디폴트가 'r'이기 때문에 넣지 않아도 된다. 'w'이라는 인자는 쓸 때 넣어준다.
 
 
 ```python
