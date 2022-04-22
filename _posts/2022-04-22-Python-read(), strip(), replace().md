@@ -5,6 +5,9 @@ categories: Python
 tag: [Python, 파이썬, read(), strip(), replace()]
 toc: true
 toc_sticky: true
+author_profile: false
+sidebar:
+    nav: "docs"
 ---
 
 ## 1) read() 함수
