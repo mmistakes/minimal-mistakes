@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "[파이썬(Python)] open 함수"
+title:  "[파이썬(Python)] open() 함수"
 categories: Python
 tag: [Python, 파이썬, open(), 파일 읽기, 파일 쓰기]
 toc: true
