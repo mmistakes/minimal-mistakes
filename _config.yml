@@ -16,16 +16,16 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Junho note"
+title                    : "JunhoNote"
 title_separator          : "|"
-subtitle                 : "Life is chilling"
+subtitle                 : "Chill with me"
 name                     : "Junho LEE"
 description              : "Welcome to Junho's blog."
 url                      : "https://JUNHO05160516.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/dream.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "/assets/images/JunhoNote.JPG" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Junho Lee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "This is Junho's blog bro"
+  bio              : "Welcome to Junho's blog."
   location         : "South Korea"
   email            : "junho05160516@gmail.com"
   links:
@@ -208,7 +208,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
