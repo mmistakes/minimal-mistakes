@@ -1,15 +1,12 @@
 ---
 layout: single
-title:  "Github 블로그 시작!"
-categories: blog_info
-tag: [Github]
+title:  "[파이썬(Python)] startswith() 함수"
+categories: Python
+tag: [Python, 파이썬, startswith()]
 toc: true
 toc_sticky: true
-toc_label: '페이지 주요 목자'
-author_profile: false
-sidebar:
-    nav: "docs"
 ---
+
 
 
 # [파이썬(Python)] startswith() 함수
