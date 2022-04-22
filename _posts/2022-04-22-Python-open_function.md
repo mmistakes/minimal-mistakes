@@ -5,6 +5,9 @@ categories: Python
 tag: [Python, 파이썬, open(), 파일 읽기, 파일 쓰기]
 toc: true
 toc_sticky: true
+author_profile: false
+sidebar:
+    nav: "docs"
 ---
 
 ## 1) line by line 으로 파일 읽기
