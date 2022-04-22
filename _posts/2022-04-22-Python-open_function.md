@@ -5,10 +5,6 @@ categories: Python
 tag: [Python, 파이썬, open(), 파일 읽기, 파일 쓰기]
 toc: true
 toc_sticky: true
-toc_label: '페이지 주요 목자'
-author_profile: false
-sidebar:
-    nav: "docs"
 ---
 
 
