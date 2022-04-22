@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Infra SME"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/infrasme.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I love technology and helping clients to achieve their business needs by providing technical consulting"
   location         : "Somewhere"
   email            :
