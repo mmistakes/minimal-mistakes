@@ -15,7 +15,7 @@ sidebar:
 {: .notice--danger}
 
 <div class="notice--success">
-<h4>I hope you like it!</h4>
+<h4>I'm learning the skills below!</h4>
 <ul>
     <li>Swift</li>
     <li>SwiftUI</li>
@@ -27,29 +27,13 @@ sidebar:
 
 ![image-20220419150815188](../images/2022-04-19-second-commit/image-20220419150815188.png)
 
-# SwiftUI
-
-# Swift
-
-
-
-## var
-
-
-
-### this is var
-
-
-
-#### var is ...
-
-
-
-##### description
+# Variables and Constants
 
 ```swift
 import SwiftUI
-
+```
+## Swift gives us two ways of storing data, depending on whether you want the data to change over time. The first options is  Variables.
+```swift
 var greeting = "Hello, playground"
 
 
@@ -61,6 +45,8 @@ print(name)
 
 var playerName = "Roy"
 print(playerName)
+```
+
 
 
 let managerName = "Michael Scott"
