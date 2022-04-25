@@ -15,6 +15,7 @@ gallery:
    alt: "Miroslav Blaško"
    title: "Miroslav Blaško"
 ---
+{% include gallery caption="Team members" %}
 
 ## Petr Křemen
 
