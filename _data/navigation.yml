@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "Research"
+  - title: "Research projects"
     url: "/research"
-  - title: "People"
-    url: "/people"
-  - title: "Artifacts"
+  - title: "Team"
+    url: "/team"
+  - title: "Artifacts" #rename to Software?
     url: "/artifacts"
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
@@ -17,8 +17,9 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 
+# IMHO projects shall be main research page, publications are part of team?
 research:
-  - title: "Research"
+  - title: "Research Projects"
     children:
       - title: "Projects"
         url: "/research/projects"
