@@ -31,7 +31,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Git</span>
+        <span class="nav__sub-title"> Development </span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Git" %}
@@ -39,7 +39,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Linux</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Linux" %}
@@ -47,6 +46,16 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        
+        <span class="nav__sub-title"> AI </span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "AI" %}
+                        <li><a href="/categories/AI" class=""> 논문리뷰 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
       </li>
   </ul>
 </nav>
