@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "판다스""
+title: "판다스2""
 categories: study
 toc: true
 tag: pandas
