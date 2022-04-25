@@ -1,13 +1,26 @@
 ---
 title: "kubernetes testbed 환경구축"
-date: 2021-01-11 13:12
-categories: kubernetes
-tags: kubernetes,devops
+escerpt: "kubernetes의 testbed를 위한 환경구축"
+
+categories:
+  - kubernetes
+tags:
+  - [kubernetes, devops]
+
+toc: true
+toc_sticky: true
+
+breadcrumbs: true
+
+date: 2021-01-11
+last_modified_at: 2021-01-11
+
 comments: true
 ---
 
-# Architecture
-![kubernetes_architecture_001.png](../assets/images/kubernetes/architecture_001.png)
+
+## Architecture
+![kubernetes_architecture_001.png](../../assets/images/kubernetes/architecture_001.png)
 
 ## Master node 
 master node에는 kube-ApiServer, Controller-Manager, ETCD Cluster, Kube-Scheduler가 있음
@@ -21,3 +34,6 @@ Worker node에는 kubelet, Container Runtime Engine, Kube-Proxy가 있음
 - kubelet : kubelet은 각 노드에서 실행되는 기본 "노드 에이전트" kubelet은 PodSpec 측면에서 작동. PodSpec은 포드를 설명하는 YAML 또는 JSON 객체이며, kubelet은 다양한 메커니즘 (주로 apiserver를 통해)을 통해 제공되는 일련의 PodSpec을 가져와 해당 PodSpec에 설명 된 컨테이너가 실행 중이고 정상인지 확인. kubelet은 Kubernetes에서 생성되지 않은 컨테이너를 관리하지 않음
 - Container Runtime Engine : 컨테이너 런타임 클러스터의 각 노드에 Pod가 실행될 수 있도록 함
 - Kube-Proxy : Kubernetes 네트워크 프록시는 각 노드에서 실행. 이는 각 노드의 Kubernetes API에 정의 된 서비스를 반영하며 백엔드 세트에서 간단한 TCP, UDP 및 SCTP 스트림 전달 또는 라운드 로빈 TCP, UDP 및 SCTP 전달을 수행 할 수 있음. 서비스 클러스터 IP 및 포트는 현재 서비스 프록시에서 열린 포트를 지정하는 Docker-links 호환 환경 변수를 통해 찾을 수 있음. 이러한 클러스터 IP에 대해 클러스터 DNS를 제공하는 선택적 애드온이 있음. 사용자는 프록시를 구성하기 위해 apiserver API로 서비스를 만들어야함.
+
+---
+[맨 위로 이동하기](#){: .btn .btn--primary }{: .align-right}

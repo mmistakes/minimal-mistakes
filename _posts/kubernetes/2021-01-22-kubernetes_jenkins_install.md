@@ -1,13 +1,24 @@
 ---
-
 title: "kubernetes jenkins install"
-description: "jenkins install"
+escerpt: "jenkins install"
+
+categories:
+  - kubernetes
+tags:
+  - [kubernetes, devops]
+
+toc: true
+toc_sticky: true
+
+breadcrumbs: true
+
+date: 2021-01-22
+last_modified_at: 2021-01-22
+
 comments: true
-date: 2021-01-22 17:12
-categories: kubernetes
-tags: kubernetes,devops
 ---
-# Jenkins on Kubernetes Cluster
+
+## Jenkins on Kubernetes Cluster
 - namespace 생성
 - kubernetes 관리자 권한이 있는 서비스 계정 생성
 - pod 재시작 시 영구 jenkins 데이터에 대한 로컬 영구 볼륨 생성
@@ -18,22 +29,26 @@ tags: kubernetes,devops
 
 ![jenkins_001](/assets/images/kubernetes/jenkins/jenkins_001.png)
 
-### 1.namespace 생성
+1.namespace 생성
+
 ~~~
-dino@master:~/work/kubernetes-jenkins/kubernetes-jenkins$ kubectl create namespace devops-tools
-namespace/devops-tools created
+dino@master:~/work/kubernetes-jenkins/kubernetes-jenkins$ kubectl create namespace devops-tools namespace/devops-tools created
 ~~~
 
 
-### 2.kubernetes 관리자 권한이 있는 서비스 계정 생성
+2.kubernetes 관리자 권한이 있는 서비스 계정 생성
+
 ~~~
-dino@master:~/work/kubernetes-jenkins/kubernetes-jenkins$ kubectl apply -f serviceAccount.yaml
-clusterrole.rbac.authorization.k8s.io/jenkins-admin created
-serviceaccount/jenkins-admin created
+dino@master:~/work/kubernetes-jenkins/kubernetes-jenkins$ kubectl apply -f serviceAccount.yaml 
+
+[output]
+clusterrole.rbac.authorization.k8s.io/jenkins-admin created 
+serviceaccount/jenkins-admin created 
 clusterrolebinding.rbac.authorization.k8s.io/jenkins-admin created
 ~~~
 
-#### serviceAccount.yaml
+  2-1. serviceAccount.yaml
+
 ~~~
 ---
 apiVersion: rbac.authorization.k8s.io/v1
@@ -73,15 +88,19 @@ jenkins-admin 은 clusterRole, jenkins-admin ServiceAccount을 하고 서비스 
 jenkins-admin클러스터 역할은 클러스터 구성 요소를 관리 할 모든 권한을 가진다.
 또한, 개별 리소스 작업을 지정하여 액세스를 제한할 수도 있다.
 
-### 3. pod 재시작 시 영구 jenkins 데이터에 대한 로컬 영구 볼륨 생성
+3. pod 재시작 시 영구 jenkins 데이터에 대한 로컬 영구 볼륨 생성
+
 ~~~
 dino@master:~/work/kubernetes-jenkins/kubernetes-jenkins$ kubectl create -f volume.yaml
+
+[output]
 storageclass.storage.k8s.io/local-storage created
 persistentvolume/jenkins-pv-volume created
 persistentvolumeclaim/jenkins-pv-claim created
 ~~~
 
-#### volume.yaml
+  3-1. volume.yaml
+
 ~~~
 kind: StorageClass
 apiVersion: storage.k8s.io/v1
@@ -131,7 +150,9 @@ spec:
     requests:
       storage: 3Gi
 ~~~
+
 cluster work node 호스트 이름으로 넣는다.
+
 ~~~
 $ kubectl get nodes
 ~~~
@@ -144,13 +165,17 @@ $ kubectl get nodes
 
 
 
-### 4.deployment.yaml만들고 배포
+4.deployment.yaml만들고 배포'
+
 ~~~
 dino@master:~/work/kubernetes-jenkins/kubernetes-jenkins$ kubectl apply -f deployment.yaml
+
+[output]
 deployment.apps/jenkins created
 ~~~
 
-#### deploymnet.yaml
+  4-1. deploymnet.yaml
+
 ~~~
 apiVersion: apps/v1
 kind: Deployment
@@ -215,23 +240,26 @@ securityContext Jenkins 포드가 로컬 영구 볼륨에 쓸 수 있도록 한�
 
 Jenkins 데이터 경로를 보유하는 로컬 스토리지 클래스를 기반으로 하는 로컬 영구 볼륨 /var/jenkins_home
 
-참고 : deployment 파일은 Jenkins 데이터에 대한 로컬 스토리지 클래스 영구 볼륨을 사용한다. 프로덕션 사용 사례의 경우 Jenkins 데이터에 대한 클라우드별 스토리지 클래스 영구 볼륨을 추가해야 한다. 로컬 스토리지 영구 볼륨을 원하지 않는 경우 아래와 같이 배포의 볼륨 정의를 호스트 디렉터리로 바꿀 수 있다.
+> deployment 파일은 Jenkins 데이터에 대한 로컬 스토리지 클래스 영구 볼륨을 사용한다. 프로덕션 사용 사례의 경우 Jenkins 데이터에 대한 클라우드별 스토리지 클래스 영구 볼륨을 추가해야 한다. 로컬 스토리지 영구 볼륨을 원하지 않는 경우 아래와 같이 배포의 볼륨 정의를 호스트 디렉터리로 바꿀 수 있다.
+
 ~~~
 volumes:
       - name: jenkins-data
         emptyDir: {}
 ~~~
 
-### 4-1.배포확인
+5. 배포확인
+
 ~~~
 $ kubectl get deployments -n devops-tools
 ~~~
 
 ![jenkins_003](/assets/images/kubernetes/jenkins/jenkins_003.png)
 
-### 4-2 에러발생
+6. 에러발생
 
 에러발생.아래와 같은 절차로 에러발생원인 확인 후 해결하자.
+
 ~~~
 $ kubectl get pod -n devops-tools
 $ kubectl describe [pod name] -n devops-tools
@@ -243,6 +271,8 @@ CrashLoopBackOff Exit Code 1 에러이다.관련 에러의 해결 방법론은 �
 
 ~~~
 $ kubectl logs [pod name] -n devops-tools
+
+[output]
 standard_init_linux.go:228: exec user process caused: exec format error
 ~~~
 
@@ -250,7 +280,8 @@ standard_init_linux.go:228: exec user process caused: exec format error
 현재 작성된 deployment.yaml에서 가져오는 jenkins container image는 Amd64 아키텍쳐 이며, 나는 현재 jetson nano의 ARM 계열이기에 container image를 ARM 계열로 가져오자.
 
 
-#### deploymnet.yaml
+8. deploymnet.yaml
+
 ~~~
 apiVersion: apps/v1
 kind: Deployment
@@ -324,10 +355,11 @@ $ kubectl get pod -n devops-tools
 
 ![jenkins_006](/assets/images/kubernetes/jenkins/jenkins_006.png)
 
-### 5.service.yaml 만들고 배포
+9.service.yaml 만들고 배포
 배포를 만들었지만 외부에서 접근할수 없다. 외부에서 jenkins 배포 application에 access위해서는 서비스를 만들고 배포에 매핑해야 한다.
 
-#### service.yaml
+  9-1. service.yaml
+
 ~~~
 apiVersion: v1
 kind: Service
@@ -353,11 +385,13 @@ $ kubectl apply -f service.yaml
 ~~~
 
 
-참고: 여기에서는 NodePort포트 32000의 모든 kubernetes 노드 IP에서 Jenkins를 노출 하는 유형을 사용하고 있습니다. 수신 설정 이 있는 경우 Jenkins에 액세스하기 위한 수신 규칙을 생성할 수 있습니다. 또한 AWS, Google 또는 Azure 클라우드에서 클러스터를 실행하는 경우 Jenkins 서비스를 Loadbalancer로 노출할 수 있습니다.
+> 여기에서는 NodePort포트 32000의 모든 kubernetes 노드 IP에서 Jenkins를 노출 하는 유형을 사용하고 있습니다. 수신 설정 이 있는 경우 Jenkins에 액세스하기 위한 수신 규칙을 생성할 수 있습니다. 또한 AWS, Google 또는 Azure 클라우드에서 클러스터를 실행하는 경우 Jenkins 서비스를 Loadbalancer로 노출할 수 있습니다.
 
 
-### 6.jenkins application에 access하기
+10.jenkins application에 access하기
+
 이제 노드ip중 하나를 탐색 후 32000포트로 접속하면 jenkins dashboard에 액세스 할수 있다.
+
 ~~~
 http://<노드아이피>:32000
 ~~~
@@ -374,7 +408,7 @@ $ kubectl logs <pod name> --namespace=devops-tools
 위 password를 이용하여 jenkins dashboard에 접속하면 된다.
 
 
-### 주의
+11. 주의
 kubernetes에서 jenkins를 호스팅할 때 포드 또는 노드 삭제 중 데이터 손실을 방지하기 위해 고가용성 영구 볼륨 설정(persistent volume)을 고려해야 한다.
 
 <!--
@@ -386,3 +420,5 @@ kubernetes에서 jenkins를 호스팅할 때 포드 또는 노드 삭제 중 데
 
 
 -->
+---
+[맨 위로 이동하기](#){: .btn .btn--primary }{: .align-right}
