@@ -24,7 +24,7 @@ search: true
 
 <div align="center">
 <img src="http://drive.google.com/uc?export=view&id=1p8Oc6N9Nd-xAlrGe8O_JsD8D0qGCjauz"><br>
-<img src=""><br>
+<img src="http://drive.google.com/uc?export=view&id=1pQskTpWqRCGUgcN5mgw-QepzjrFaueqp"><br>
 <img src=""><br>
 <img src=""><br>
 <img src=""><br>
