@@ -301,9 +301,9 @@ Estas ramas se puede ir creando dependiendo de las necesidades del proyecto
 
 ### Aclaraciones
 
-> Lo comentado en esta sección no es una obligación pero si entra en las buenas prácticas a la hora de gestionar un proyecto de ambito general con **GIT** y **GITHUB** además de que es flexible a las necesidades de cada caso o proyecto.
+> Lo comentado en esta sección no es una obligación pero si entra en las buenas prácticas a la hora de gestionar un proyecto de ámbito general con **GIT** y **GITHUB** además de que es flexible a las necesidades de cada caso o proyecto.
 
-> Considerarse como unas pautas básicas libres de seguir pero importante a tener en cuenta ya que cada empresa , equipo de desarrollo o ambito profesional tendrán sus propias reglas , estandar de desarrollo y demás condiciones de uso en este ambito del desarrollo de software.
+> Considerarse como unas pautas básicas libres de seguir pero importante a tener en cuenta ya que cada empresa , equipo de desarrollo o ámbito profesional tendrán sus propias reglas , estándar de desarrollo y demás condiciones de uso en este ámbito del desarrollo de software.
 
 ### Breve Resumen Final (Rama/Branch)
 

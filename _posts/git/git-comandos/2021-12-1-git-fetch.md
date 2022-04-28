@@ -13,7 +13,7 @@ categories:
   - git-fetch
   - git-comandos
 tags:
-  - git-basico
+  - git-básico
   - git-manual
 ---
 

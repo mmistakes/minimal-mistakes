@@ -70,7 +70,7 @@ page_css:
 
   * Se suele alojar en servidores remotos en Internet
 
-  * Se utilizan apra compartir desarrollos , guardar backups
+  * Se utilizan para compartir desarrollos , guardar backups
 
 * Ejemplo
 

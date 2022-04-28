@@ -55,7 +55,7 @@ page_css:
 
 ``https://github.com/usuario/proyecto``
 
-* Usando el protócolo HTTPS **URL** y la extensión ``.git`` del **Repositorio Remoto** de **GITHUB**
+* Usando el protocolo HTTPS **URL** y la extensión ``.git`` del **Repositorio Remoto** de **GITHUB**
 
 ``https://github.com/usuario/proyecto.git``
 
