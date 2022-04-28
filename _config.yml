@@ -12,6 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
+<<<<<<< HEAD
 minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -22,6 +23,18 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "Myung Seok Ko"
 description              : "An amazing website."
 url                      : "https://mgskko.github.io"
+=======
+minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+locale                   : "en-US"
+title                    : "Study room"
+title_separator          : "-"
+subtitle                 : # site tagline that appears below site title in masthead
+name                     : "Ko -Myung Seok"
+description              : "Math Computer Engineering."
+url                      :  "https://mgskko.github.io"
+>>>>>>> 57e8339f8940a5d0455c41a0fecc9a722d97f52b
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -102,9 +115,15 @@ analytics:
 
 # Site Author
 author:
+<<<<<<< HEAD
   name             : "Ko Myung"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Math, Computer Engineering"
+=======
+  name             : "Myung Seok"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Math, Computer Engineering."
+>>>>>>> 57e8339f8940a5d0455c41a0fecc9a722d97f52b
   location         : "Somewhere"
   email            :
   links:
