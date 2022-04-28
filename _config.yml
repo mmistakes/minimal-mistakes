@@ -24,7 +24,7 @@ name                     : "Myung Seok Ko"
 description              : "An amazing website."
 url                      : "https://mgskko.github.io"
 =======
-minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : ""neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
