@@ -22,7 +22,7 @@ page_css:
 
 ### (Untracked)
 
-> Un archivo dentro de estado (Untracked) del (Working Directory) se puede modificar tantas veces que se quieran sin tener que ejecutar ningun comando de preparación (git add) o confirmacion (git commit)
+> Un archivo dentro de estado (Untracked) del (Working Directory) se puede modificar tantas veces que se quieran sin tener que ejecutar ningún comando de preparación (git add) o confirmación (git commit)
 
 * Archivos no rastreados **(Untracked)** es cualquier archivo del **(Working Directory)** no se encuentra en en el estado **{Staging Area/Index}** ni en su última instantánea **(snapshot/commit)**
 

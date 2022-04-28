@@ -33,12 +33,12 @@ page_css:
   * Dos flecha / palitos : **commit** generado por **integración** de una **rama** o con el **commit anterior**
 
 ```bash
-*   01150a8d Merge branch 'master' # INTEGRACION de una rama
+*   01150a8d Merge branch 'master' # INTEGRACIÓN de una rama
 |\  
-| * 737c011d Update Font Awesome (#2102) # MODIFICACION del commit anterior
-* | b93ec8ca Update CHANGELOG and history # MODIFICACION del commit anterior
+| * 737c011d Update Font Awesome (#2102) # MODIFICACIÓN del commit anterior
+* | b93ec8ca Update CHANGELOG and history # MODIFICACIÓN del commit anterior
 |/  
-* baec5d00 more words for pt-br (#2098) # MODIFICACION del commit anterior
+* baec5d00 more words for pt-br (#2098) # MODIFICACIÓN del commit anterior
 ```
 
 ## Historial de Commits

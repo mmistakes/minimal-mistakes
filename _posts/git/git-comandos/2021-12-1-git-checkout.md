@@ -19,7 +19,7 @@ tags:
 
 ## Git - checkout
 
-* Cambiar de **rama** o **restaurar archivos** del **(Àrbol de Trabajo/Working-Tree Files)**
+* Cambiar de **rama** o **restaurar archivos** del **(Árbol de Trabajo/Working-Tree Files)**
   * **Cambiar de ramas local**
   * **Restaurar los archivos del (Working Tree)**
 
@@ -51,7 +51,7 @@ tags:
 * No podemos cambiarnos directamente de **rama** cuando en la **rama** en la que nos encontremos estos tengan cambios **"sin confirmar / hacer commit"** o guardarlos en el **{ Staging Area / Staged / Index }** pero si podemos forzarlo a hacer aunque esta acción elimine los cambios que hicimos y que no hayamos guardado con ``git add`` o confirmado con ``git commit`` en la rama en la que nos encontremos
 
 ```bash
-# Si ejecutamos este comando se perderan los cambios en la rama en la que nos encontremos
+# Si ejecutamos este comando se perderán los cambios en la rama en la que nos encontremos
 git checkout -f <rama-a-la-que-dirigirnos>
 ```
 
@@ -65,7 +65,7 @@ git checkout -f <rama-a-la-que-dirigirnos>
 ``git checkout origin/<rama-remota>``
 
 * Importante :by
-  * Mueve el puntero de la **rama tracking local** hacia ``origin/rama-remota`` para hacer pruebas con el **commit** que tendrá y el cual tiene dentro todos los archivos , después de hacer las pruebas podemos guardarlo mediante el comando ``git switch -c <nombre-rama>`` o deshacerlo mediante ``git switch -``
+  * Mueve el puntero de la **rama tracking local** hacia ``origin/rama-remota`` para hacer pruebas con el **commit** que tendrá y el cual tiene dentro todos los archivos , después de hacer las pruebas podemos guardarlo mediante el comando ``git switch -c <nombre-rama>`` o deshacerlos mediante ``git switch -``
 
 * Fusionar los cambios desde una **rama alternativa** sobre otra **rama principal** "en este caso" dando la oportunidad de corregir los conflictos que existan en ambas **ramas** usando cualquier editor de código
   * Nos encontramos en una **rama alternativa**

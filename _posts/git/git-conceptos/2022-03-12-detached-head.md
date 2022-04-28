@@ -24,7 +24,7 @@ page_css:
 * Se trata de una **rama** que se crea sobre un **commit** que no tiene un nombre de **rama** apuntándole
   
 ```bash
-git checkout <nunero-commit>
+git checkout <numero-commit>
 # Ejemplo
 git checkout fa680ad2
 ```

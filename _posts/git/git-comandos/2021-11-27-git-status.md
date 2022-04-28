@@ -21,7 +21,7 @@ tags:
 
 * Muestra el estado de los ficheros dentro del **(Directorio de Trabajo/Working Directory-wd)** la cual engloba la parte **(Untracked)** como del **{Tracked}**
 
-> Recuerda : <br>
+> Recuerda :
 > Git siempre compara los archivos del **último commit** con los archivos que tienes tanto en el **(Untracked)** como en las demás etapas del sistema **Git** como son **{UnModified}** / **{Modified}** / **{Staging Area}** para ver las diferencias entre ellos y así saber si han habido cambios en el código del **[Repositorio]** del proyecto o no.
 
 ### Estado de los Ficheros
@@ -96,7 +96,7 @@ Otros códigos de estado pueden interpretarse como el siguiente :
         {Staging Area}←←←←←←↓ ↓→→→→ (Working Directory)
 ```
 
-* Nota : la barra vertical ``|`` simplemente se muestra como separador entre las distintas opciones pero no se incluye en el codigo ni se necesita poner , solo esta para ayudar a comprender mejor el ejemplo.
+* Nota : la barra vertical ``|`` simplemente se muestra como separador entre las distintas opciones pero no se incluye en el código ni se necesita poner , solo esta para ayudar a comprender mejor el ejemplo.
 
 <!-- 
 Para rutas con conflictos de fusión 'X' e 'Y' muestra el estado modificado de cada lado de la fusión

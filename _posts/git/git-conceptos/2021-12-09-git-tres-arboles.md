@@ -22,7 +22,7 @@ page_css:
 
 Git administra el contenido del **[Repositorio]** con 3 árboles diferentes
 
-> Arbol → Colección de archivos
+> Árbol → Colección de archivos
 
 ### Arboles
 
@@ -40,7 +40,7 @@ Git administra el contenido del **[Repositorio]** con 3 árboles diferentes
 
 * Puntero de referencia de bifurcación actual y puntero al último commit realizado en la rama en la que estemos posicionado
   * [HEAD] → Será posiblemente el próximo commit que se genere con los cambios en los archivos del [Repositorio].
-  * Resumen : [HEAD] → como instantanea/snapshot de tu último commit
+  * Resumen : [HEAD] → como instantánea/snapshot de tu último commit
 
 #### {Index/Staging Area}
 
@@ -54,7 +54,7 @@ Git administra el contenido del **[Repositorio]** con 3 árboles diferentes
 
 * Técnicamente **{Index/Staging Area}** no es una estructura de árbol; se implementa como un ``manifiesto aplanado → flattened manifest``
   
-> Según Wikipedía : Manifiesto = Metadata de un grupo de archivos adjuntos que forman parte de un conjunto o unidad coherente
+> Según Wikipedia : Manifiesto = Metadata de un grupo de archivos adjuntos que forman parte de un conjunto o unidad coherente
 
 #### (Working Directory / Workspace)
 

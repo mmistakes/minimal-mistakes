@@ -21,7 +21,6 @@ page_css:
 ## Clase - HashSet
 
 * Clase implementada por ``interface Set`` que respaldada por una ``tabla hash`` en realidad es una instancia de ``HashMap``
-
 * Implementa la ``interface`` Set
 * Estructura de datos subyacente para ``HashSet`` es una ``hashtable``
 * No permite valores duplicados
