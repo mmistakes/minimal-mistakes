@@ -12,14 +12,14 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Daily Note"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "MgSkKo"
+name                     : "Myung Seok Ko"
 description              : "An amazing website."
 url                      : "https://mgskko.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
