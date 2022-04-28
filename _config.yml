@@ -19,7 +19,7 @@ title                    : "Daily Note"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Myung Seok Ko"
-description              : "An amazing website."
+description              : "Math, Computer Engineering"
 url                      : "https://mgskko.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
