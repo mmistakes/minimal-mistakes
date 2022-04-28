@@ -101,7 +101,6 @@ analytics:
 
 # Site Author
 author:
-<<<<<<< HEADgit merge --contine
   name             : "고명석"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Math, Computer Engineering <br> 꾸준하게 공부하기"
