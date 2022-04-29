@@ -1,5 +1,3 @@
-<<<<<<< HEAD:vendor/bundle/ruby/2.6.0/gems/minimal-mistakes-jekyll-4.16.4/CHANGELOG.md
-=======
 ## Unreleased
 
 ### Bug Fixes
@@ -315,7 +313,6 @@
 - Fix aria issues with Lunr search form. [#2211](https://github.com/mmistakes/minimal-mistakes/pull/2211)
 - Fix missing fallback title for table of contents.
 
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181:CHANGELOG.md
 ## [4.16.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.4)
 
 ### Enhancements
