@@ -1,20 +1,6 @@
 {% if site.comments.provider and page.comments %}
 
 {% case site.comments.provider %}
-<<<<<<< HEAD
-{% when "disqus" %}
-  {% include /comments-providers/disqus.html %}
-{% when "discourse" %}
-  {% include /comments-providers/discourse.html %}
-{% when "facebook" %}
-  {% include /comments-providers/facebook.html %}
-{% when "google-plus" %}
-  {% include /comments-providers/google-plus.html %}
-{% when "staticman" %}
-  {% include /comments-providers/staticman.html %}
-{% when "custom" %}
-  {% include /comments-providers/custom.html %}
-=======
   {% when "disqus" %}
     {% include /comments-providers/disqus.html %}
   {% when "discourse" %}
@@ -31,7 +17,6 @@
     {% include /comments-providers/giscus.html %}
   {% when "custom" %}
     {% include /comments-providers/custom_scripts.html %}
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
 {% endcase %}
 
 {% endif %}
