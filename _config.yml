@@ -12,14 +12,14 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # Site Settings
 locale                   : "ko-KR"
 title                    : "Study Note"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Myung Seok Ko"
-description              : "데이터를 위한 공부일지"
+description              : "데이터 공부일지"
 url                      : "https://mgskko.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/mgskko" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
