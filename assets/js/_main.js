@@ -2,30 +2,7 @@
    jQuery plugin settings and other scripts
    ========================================================================== */
 
-<<<<<<< HEAD
-$(document).ready(function(){
-
-  // Sticky footer
-  var bumpIt = function() {
-      $('body').css('margin-bottom', $('.page__footer').outerHeight(true));
-    },
-    didResize = false;
-
-  bumpIt();
-
-  $(window).resize(function() {
-    didResize = true;
-  });
-  setInterval(function() {
-    if(didResize) {
-      didResize = false;
-      bumpIt();
-    }
-  }, 250);
-
-=======
 $(document).ready(function() {
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
   // FitVids init
   $("#main").fitVids();
 
@@ -38,10 +15,6 @@ $(document).ready(function() {
   // init smooth scroll
   $("a").smoothScroll({offset: -20});
 
-<<<<<<< HEAD
-  // add lightbox class to all image links
-  $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
-=======
   // Search toggle
   $(".search__toggle").on("click", function() {
     $(".search-content").toggleClass("is--visible");
@@ -84,7 +57,6 @@ $(document).ready(function() {
   $(
     "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']"
   ).has("> img").addClass("image-popup");
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
 
   // Magnific-Popup options
   $(".image-popup").magnificPopup({
@@ -118,8 +90,6 @@ $(document).ready(function() {
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 
-<<<<<<< HEAD
-=======
   // Add anchors for headings
   $('.page__content').find('h1, h2, h3, h4, h5, h6').each(function() {
     var id = $(this).attr('id');
@@ -132,5 +102,4 @@ $(document).ready(function() {
       $(this).append(anchor);
     }
   });
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
 });

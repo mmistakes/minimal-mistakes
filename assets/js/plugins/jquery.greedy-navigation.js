@@ -1,20 +1,4 @@
 /*
-<<<<<<< HEAD
-* Greedy Navigation
-*
-* http://codepen.io/lukejacksonn/pen/PwmwWV
-*
-*/
-
-var $nav = $('#site-nav');
-var $btn = $('#site-nav button');
-var $vlinks = $('#site-nav .visible-links');
-var $hlinks = $('#site-nav .hidden-links');
-
-var breaks = [];
-
-function updateNav() {
-=======
 GreedyNav.js - http://lukejacksonn.com/actuate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright (c) 2015 Luke Jackson
@@ -67,42 +51,9 @@ $(function() {
   var winWidth = $( window ).width();
   // Set the last measured CSS width breakpoint: 0: <768px, 1: <1024px, 2: < 1280px, 3: >= 1280px.
   var lastBreakpoint = winWidth < 768 ? 0 : winWidth < 1024 ? 1 : winWidth < 1280 ? 2 : 3;
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
 
   var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
 
-<<<<<<< HEAD
-  // The visible list is overflowing the nav
-  if($vlinks.width() > availableSpace) {
-
-    // Record the width of the list
-    breaks.push($vlinks.width());
-
-    // Move item to the hidden list
-    $vlinks.children().last().prependTo($hlinks);
-
-    // Show the dropdown btn
-    if($btn.hasClass('hidden')) {
-      $btn.removeClass('hidden');
-    }
-
-  // The visible list is not overflowing
-  } else {
-
-    // There is space for another item in the nav
-    if(availableSpace > breaks[breaks.length-1]) {
-
-      // Move the item to the visible list
-      $hlinks.children().first().appendTo($vlinks);
-      breaks.pop();
-    }
-
-    // Hide the dropdown btn if hidden list is empty
-    if(breaks.length < 1) {
-      $btn.addClass('hidden');
-      $hlinks.addClass('hidden');
-    }
-=======
   function check() {
 
     winWidth = $( window ).width();
@@ -139,25 +90,11 @@ $(function() {
     if (numOfVisibleItems === numOfItems) {
       $btn.addClass('hidden');
     } else $btn.removeClass('hidden');
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
   }
 
   // Keep counter updated
   $btn.attr("count", breaks.length);
 
-<<<<<<< HEAD
-  // Recur if the visible list is still overflowing the nav
-  if($vlinks.width() > availableSpace) {
-    updateNav();
-  }
-
-}
-
-// Window listeners
-
-$(window).resize(function() {
-  updateNav();
-=======
   $btn.on('click', function() {
     $hlinks.toggleClass('hidden');
     $(this).toggleClass('close');
@@ -185,7 +122,6 @@ $(window).resize(function() {
   // if page does not have a logo just check
   } else check();
 
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
 });
 
 $btn.on('click', function() {
