@@ -1,0 +1,18 @@
+//*-- User --*\\
+.icono-user{
+    width: @32;
+    height: @14;
+    &:extend(.icono-stroke);
+    .border-radius(2*@32 2*@32 0 0 ~'/' 2*@32);
+    margin: @18 @1 @2;
+    &:before{
+        .square(@12);
+        &:extend(.stickCenterH);
+        top: -1*@20;
+        &:extend(.icono-stroke);
+        .border-radius(50%);
+    }
+    &:after{
+        
+    }
+}

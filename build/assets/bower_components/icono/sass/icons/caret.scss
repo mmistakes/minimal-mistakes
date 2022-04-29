@@ -1,0 +1,59 @@
+//* Carets *\\
+.icono-caretRight {
+    width: $U12;
+    height: $U20;
+    margin: $U7 $U11;
+    &:before, &:after {
+        width: $U14;
+        height: $U2;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        right: $U2;
+        box-shadow: inset 0 0 0 $U32;
+        transform-origin: right;
+    }
+    &:before {
+        @include transform(rotate(45deg));
+    }
+    &:after {
+        @include transform(rotate(-45deg));
+    }
+}
+
+.icono-caretRightCircle, .icono-caretRightSquare {
+    @extend .icono-caretRight;
+}
+
+.icono-caretLeft {
+    @extend .icono-caretRight;
+    @include transform(rotate(180deg));
+}
+.icono-caretLeftCircle, .icono-caretLeftSquare {
+    @extend .icono-caretLeft;
+}
+
+.icono-caretUp {
+    @extend .icono-caretRight;
+    @include transform(rotate(-90deg));
+}
+.icono-caretUpCircle, .icono-caretUpSquare {
+    @extend .icono-caretUp;
+}
+
+.icono-caretDown {
+    @extend .icono-caretRight;
+    @include transform(rotate(90deg));
+}
+.icono-caretDownCircle, .icono-caretDownSquare {
+    @extend .icono-caretDown;
+}
+[class*="icono-caret"] {
+    &[class*="Circle"], &[class*="Square"] {
+        &:before, &:after {
+            width: $U11;
+            right: $U8;
+        }
+    }
+}

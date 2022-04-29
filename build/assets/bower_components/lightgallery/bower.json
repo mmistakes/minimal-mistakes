@@ -1,0 +1,42 @@
+{
+    "name": "lightgallery",
+    "version": "1.6.12",
+    "description": "A lightweight, customizable, modular, responsive, lightbox gallery plugin for jQuery.",
+    "main": [
+        "dist/js/lightgallery.min.js",
+        "dist/css/lightgallery.css",
+        "dist/fonts/lg.eot",
+        "dist/fonts/lg.svg",
+        "dist/fonts/lg.ttf",
+        "dist/fonts/lg.woff",
+        "dist/img/loading.gif",
+        "dist/img/video-play.png",
+        "dist/img/vimeo-play.png",
+        "dist/img/youtube-play.png"
+    ],
+    "keywords": [
+        "gallery",
+        "lightbox",
+        "image",
+        "youtube",
+        "vimeo"
+    ],
+    "authors": [
+        "Sachin N <sachi77n@gmail.com>"
+    ],
+    "homepage": "http://sachinchoolur.github.io/lightGallery/",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/sachinchoolur/lightGallery.git"
+    },
+    "license": "GPLv3",
+    "ignore": [
+        "README.md"
+    ],
+    "dependencies": {
+        "jquery": ">=1.7.0"
+    },
+    "devDependencies": {
+        "qunit": "~1.12.0"
+    }
+}

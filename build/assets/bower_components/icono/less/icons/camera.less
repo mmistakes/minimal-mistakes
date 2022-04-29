@@ -1,0 +1,24 @@
+//*-- camera --*\\
+.icono-camera{
+    width: @32;
+    height: @24;
+    .border-radius(@4);
+    &:extend(.icono-stroke);
+    margin: @5 @1;
+    &:before{
+        &:extend(.stickCenter);
+        width: @10;
+        height: @10;
+        border: @1 solid transparent;
+        box-shadow: inset 0 0 0 @1, 0 0 0 @2;
+        .border-radius(50%);
+    }
+    &:after{
+        position: absolute;
+        width: @4;
+        height: @2;
+        right: @2;
+        top: @2;
+        box-shadow: inset 0 0 0 @32;
+    }
+}

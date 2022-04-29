@@ -1,0 +1,31 @@
+//*-- Heart --*\\
+.icono-heart{
+    width: @20;
+    height: @20;
+    &:extend(.icono-stroke);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    .transform(rotate(45deg));
+    .border-radius(@4 0);
+    margin: @9 @7 @5;
+    &:before, &:after{
+        position: absolute;
+        &:extend(.icono-stroke);
+    }
+    &:before{
+        width: ceil(@20/2.5);
+        height: ceil(@20*0.69);
+        left: -1*ceil(@20/2.5)-@2;
+        bottom: -1*@2;
+        .border-radius(@20 0 0 @20);
+        border-right-color: transparent;
+    }
+    &:after{
+        width: ceil(@20*0.69);
+        height: ceil(@20/2.5);
+        right: -1*@2;
+        top: -1*ceil(@20/2.5)-@2;
+        .border-radius(@20 @20 0 0);
+        border-bottom-color: transparent;
+    }
+}

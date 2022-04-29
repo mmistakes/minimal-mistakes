@@ -1,0 +1,22 @@
+//*-- File --*\\
+.icono-file{
+    width: @26;
+    height: @32;
+    &:extend(.icono-stroke);
+    .border-radius(0 @12 0 0);
+    margin: @1 @4;
+    &:before{
+        position:absolute;
+        top: -1*@2;
+        right:-1*@2;
+        border-style: solid;
+        width: 0;
+        height: 0;
+        border-width: @5;
+        border-top-color: transparent;
+        border-right-color: transparent;
+    }
+    &:after{
+        
+    }
+}

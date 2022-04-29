@@ -1,0 +1,36 @@
+.lg-progress-bar {
+    background-color: $lg-progress-bar-bg;
+    height: $lg-progress-bar-height;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: $zindex-progressbar;
+    opacity: 0;
+    @include transitionCustom(opacity 0.08s ease 0s);
+
+    .lg-progress {
+        background-color: $lg-progress-bar-active-bg;
+        height: $lg-progress-bar-height;
+        width: 0;
+    }
+
+    &.lg-start {
+        .lg-progress {
+            width: 100%;
+        }
+    }
+
+    .lg-show-autoplay & {
+        opacity: 1;
+    }
+}
+
+.lg-autoplay-button {
+    &:after {
+        .lg-show-autoplay & {
+            content: "\e01a";
+        }
+        content: "\e01d";
+    }
+}

@@ -1,0 +1,6 @@
+//*-- Previous --*\\
+.icono-previous{
+    @extend .icono-next;
+    @include transform(rotate(180deg));
+    margin: $U7 $U10 $U7 $U14;
+}

@@ -1,0 +1,16 @@
+//*-- Trash --*\\
+.icono-trash{
+    width: $U22;
+    height: $U22;
+    @include border-radius(0 0 $U3 $U3);
+    @extend .icono-stroke;
+    border-top: none;
+    margin: $U9 $U6 $U3;
+    &:before{
+        width: $U8;
+        height: $U2;
+        @extend .stickCenterH;
+        top: -1*$U6;
+        box-shadow: inset 0 0 0 $U32, -1*$U10 1*$U2 0 0, -1*$U6 1*$U2 0 0, 0 $U2 0 0, $U6 $U2 0 0, $U10 $U2 0 0;
+    }
+}

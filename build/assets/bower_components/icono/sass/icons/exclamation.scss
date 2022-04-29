@@ -1,0 +1,37 @@
+//*-- Exclamation --*\\
+[class*="icono-exclamation"]{
+    overflow: visible;
+    width: $U30;
+    border-bottom: $U2 solid;
+    @include border-radius(0 0 $U4 $U4);
+    margin: $U26 $U2 $U6;
+    &:before{
+        position: absolute;
+        width: $U26;
+        height: $U26;
+        left: $U1;
+        top: -1*$U14;
+        border-width: $U2 0 0 $U2;
+        border-style: solid;
+        @include border-radius($U4 0);
+        @include transform(rotate(45deg) skew(12deg, 12deg));
+    }
+    &:after{
+        width: $U4;
+        height: $U3;
+        top: -1*$U14;
+        @extend .stickCenterH;
+        box-shadow: inset 0 0 0 $U32, 0 $U3, 0 $U8;
+    }
+    &[class*="Circle"]{
+        height: $U30;
+        margin: $U2;
+        &:before{
+            display: none;
+        }
+        &:after{
+            box-shadow: inset 0 0 0 $U32, 0 $U3, 0 $U5, 0 $U10;
+            top: $U6;
+        }
+    }
+}

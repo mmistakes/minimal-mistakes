@@ -1,0 +1,32 @@
+//Math functions given from https://github.com/terkel/mathsass
+@function sqrt ($x) {
+    @if $x < 0 {
+        @warn "Argument for `sqrt()` must be a positive number.";
+        @return null;
+    }
+    $ret: 1;
+    @for $i from 1 through 24 {
+        $ret: $ret - (pow($ret, 2) - $x) / (2 * $ret);
+    }
+    @return $ret;
+}
+@function pow ($base, $exp) {
+    @if $exp == floor($exp) {
+        $r: 1;
+        $s: 0;
+        @if $exp < 0 {
+            $exp: $exp * -1;
+            $s: 1;
+        }
+        @while $exp > 0 {
+            @if $exp % 2 == 1 {
+                $r: $r * $base;
+            }
+            $exp: floor($exp * 0.5);
+            $base: $base * $base;
+        }
+        @return if($s != 0, 1 / $r, $r);
+    } @else {
+        @return exp(log($base) * $exp);
+    }
+}

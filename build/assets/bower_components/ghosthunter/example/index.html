@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>ghostHunter</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+    </head>
+    <body>
+
+      <form>
+        <input id="search-field" />
+        <input type="submit" value="search">
+        <input type="button" value="clear" onclick="clearResults();" />
+      </form>
+
+      <hr />
+        
+      <section id="results"></section>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+      <script src="../jquery.ghostHunter.js"></script>
+
+      <script>
+
+        var searchField = $("#search-field").ghostHunter({
+                            results     : "#results",
+                            rss         : "rss.xml",
+                            //Enable the "search as you type" by uncommenting the following line
+                            //onKeyUp   : true
+                          });
+
+        function clearResults() {
+          searchField.clear();
+        }
+
+      </script>
+
+    </body>
+</html>

@@ -1,0 +1,23 @@
+//*-- Credit Card --*\\
+.icono-creditCard{
+    width: $U32;
+    height: $U24;
+    @extend .icono-stroke;
+    @include border-radius($U3);
+    margin: $U5 $U1;
+    &:before{
+        position: absolute;
+        top: $U4;
+        width: 100%;
+        height: $U6;
+        box-shadow: inset 0 0 0 $U32;
+    }
+    &:after{
+        left: $U3;
+        bottom: $U3;
+        position: absolute;
+        width: $U4;
+        height: $U2;
+        box-shadow: inset 0 0 0 $U32, $U6 0;
+    }
+}

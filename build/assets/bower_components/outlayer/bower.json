@@ -1,0 +1,43 @@
+{
+  "name": "outlayer",
+  "description": "the brains and guts of a layout library",
+  "main": "outlayer.js",
+  "dependencies": {
+    "ev-emitter": "^1.0.0",
+    "get-size": "^2.0.2",
+    "fizzy-ui-utils": "^2.0.0"
+  },
+  "devDependencies": {
+    "jquery-bridget": "2.x",
+    "jquery": ">=1.4.3 <4",
+    "qunit": "^1.17.0"
+  },
+  "ignore": [
+    "test/",
+    "docs/",
+    "sandbox/",
+    ".*",
+    "notes.md",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "package.json"
+  ],
+  "homepage": "https://github.com/metafizzy/outlayer",
+  "authors": [
+    "Metafizzy"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "layout",
+    "masonry",
+    "isotope"
+  ],
+  "license": "MIT"
+}

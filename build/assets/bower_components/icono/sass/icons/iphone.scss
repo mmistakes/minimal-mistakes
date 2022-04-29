@@ -1,0 +1,34 @@
+//*-- iPhone --*\\
+.icono-iphone{
+    width: $U19;
+    height: $U31;
+    @extend .icono-stroke;
+    @include border-radius($U3);
+    border-width: $U5 $U1;
+    border-color: transparent;
+    box-shadow: 0 0 0 $U1, 0 0 0 $U1 inset;
+    margin: $U2 $U8 $U1 $U7;
+    &:before, &:after{
+        @extend .stickCenterH;
+        box-shadow: inset 0 0 0 $U32;
+    }
+    &:before{
+        width: $U3;
+        height: $U1;
+        top: -1*$U3;
+    }
+    &:after{
+        width: $U3;
+        height: $U3;
+        bottom: -1*$U4;
+        @include border-radius(50%);
+    }
+}
+.icono-iphoneBold{
+    width: $U20;
+    height: $U32;
+    margin: $U1 $U7;
+    @include border-radius($U4);
+    @extend .icono-stroke;
+    border-width: $U5 $U2;
+}

@@ -1,0 +1,32 @@
+//* Arrows *\\
+.icono-rightArrow {
+    width: @16;
+    height: @4;
+    margin: @15 @9;
+    box-shadow: inset 0 0 0 @2;
+    .transform(translateX(-@3));
+    &:before {
+        &:extend(.stickCenterV);
+        border-style: solid;
+        border-width: @8 0 @8 @8;
+        border-color: transparent;
+        border-left-color: inherit;
+        left: 100%;
+        right: auto;
+    }
+}
+
+.icono-leftArrow {
+    &:extend(.icono-rightArrow all);
+    .transform(translateX(@3) rotate(180deg));
+}
+
+.icono-upArrow {
+    &:extend(.icono-rightArrow all);
+    .transform(translateY(@3) rotate(-90deg));
+}
+
+.icono-downArrow {
+    &:extend(.icono-rightArrow all);
+    .transform(translateY(-@3) rotate(90deg));
+}

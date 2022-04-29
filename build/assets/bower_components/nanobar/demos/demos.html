@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>nanobar.js</title>
+		<meta name="description" content="nanobar.js - Very very lightweight progress bars">
+		<style>
+      * {
+        margin:0;
+        padding:0;
+      }
+      .container {
+        margin:0 auto;
+        max-width: 72em;
+      }
+      #color, #centered {
+        padding: 1em;
+        background: #fff;
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+      }
+      #color .nanobar, #centered .nanobar {
+        margin-bottom: 2em;
+      }
+
+      #color .nanobar .bar {
+        background: #38f;
+        border-radius: 4px;
+        box-shadow: 0 0 10px #59d;
+        height: 6px;
+        margin: 0 auto;
+      }
+      #centered .nanobar .bar {
+        background: url('img/rainbow.gif') 100%;
+        height: 9px;
+      }
+    </style>
+	</head>
+	<body>
+
+
+		<div class="container">
+			<br>
+			<h1 id="nanobar">nanobar.js</h1>
+			<br>
+			<div class="general-buttons">
+				<button class="doc_go" onClick="simplebar.go(30)">nanobar.go(30)</button>
+				<button class="doc_go" onClick="simplebar.go(60)">nanobar.go(60)</button>
+				<button class="doc_go" onClick="simplebar.go(100)">nanobar.go(100)</button>
+			</div>
+			<br>
+			<hr>
+			<br>
+      <section id="color">
+        <button class="doc_go" onClick="colorbar.go(30)">nanobar.go(30)</button>
+        <button class="doc_go" onClick="colorbar.go(60)">nanobar.go(60)</button>
+        <button class="doc_go" onClick="colorbar.go(100)">nanobar.go(100)</button>
+      </section>
+      <section id="centered">
+        <button class="doc_go" onClick="centeredbar.go(30)">nanobar.go(30)</button>
+        <button class="doc_go" onClick="centeredbar.go(60)">nanobar.go(60)</button>
+        <button class="doc_go" onClick="centeredbar.go(100)">nanobar.go(100)</button>
+      </section>
+			<p>© 2016 
+        <a href="https://github.com/jacoborus">jacoborus</a> - 
+        <a href="https://raw.github.com/jacoborus/nanobar/master/LICENSE">MIT License</a>
+      </p>
+		</div>
+
+		<script src="../nanobar.js"></script>
+		<script>
+			var simplebar = new Nanobar();
+			simplebar.go(50);
+      var colorbar = new Nanobar({target: document.getElementById('color')});
+			colorbar.go(50);
+      var centeredbar = new Nanobar({target: document.getElementById('centered')});
+			centeredbar.go(50);
+		</script>
+	</body>
+</html>

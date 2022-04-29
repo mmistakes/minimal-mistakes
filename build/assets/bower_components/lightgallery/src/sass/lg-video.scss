@@ -1,0 +1,110 @@
+.lg-outer {
+    .lg-video-cont {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 1140px;
+        max-height: 100%;
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .lg-video {
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+        position: relative;
+
+        .lg-object {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        .lg-video-play {
+            width: 84px;
+            height: 59px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -42px;
+            margin-top: -30px;
+            z-index: $zindex-playbutton;
+            cursor: pointer;
+        }
+    }
+
+    .lg-has-iframe {
+        .lg-video {
+            -webkit-overflow-scrolling: touch;
+            overflow: auto;
+        }
+    }
+
+    .lg-has-vimeo{
+        .lg-video-play{
+            background: url("#{$lg-path-images}/vimeo-play.png") no-repeat scroll 0 0 transparent;
+        }
+        &:hover{
+            .lg-video-play{
+                background: url("#{$lg-path-images}/vimeo-play.png") no-repeat scroll 0 -58px transparent;
+            } 
+
+        }  
+    }
+
+    .lg-has-html5{
+        .lg-video-play{
+            background: transparent url("#{$lg-path-images}/video-play.png") no-repeat scroll 0 0;
+            height: 64px;
+            margin-left: -32px;
+            margin-top: -32px;
+            width: 64px;
+            opacity: 0.8;
+        }  
+        &:hover{
+            .lg-video-play{
+                opacity: 1
+            } 
+
+        } 
+    }
+
+    .lg-has-youtube{
+        .lg-video-play{
+            background: url("#{$lg-path-images}/youtube-play.png") no-repeat scroll 0 0 transparent;
+        }
+        &:hover{
+            .lg-video-play{
+                background: url("#{$lg-path-images}/youtube-play.png") no-repeat scroll 0 -60px transparent;
+            } 
+
+        }  
+    }
+    .lg-video-object {
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .lg-has-video {
+        .lg-video-object {
+            visibility: hidden;
+        }
+
+        &.lg-video-playing {
+            .lg-object, .lg-video-play {
+                display: none;
+            }
+
+            .lg-video-object {
+                visibility: visible;
+            }
+        }
+    }
+}

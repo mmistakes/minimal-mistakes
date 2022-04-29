@@ -1,0 +1,37 @@
+{
+  "name": "imagesloaded",
+  "description": "JavaScript is all like _You images done yet or what?_",
+  "main": "imagesloaded.js",
+  "dependencies": {
+    "ev-emitter": "^1.0.0"
+  },
+  "devDependencies": {
+    "jquery": ">=1.9 <4.0",
+    "qunit": "^2.0.0"
+  },
+  "ignore": [
+    "**/.*",
+    "test",
+    "package.json",
+    "composer.json",
+    "node_modules",
+    "bower_components",
+    "tests",
+    "sandbox/",
+    "gulpfile.js",
+    "contributing.md"
+  ],
+  "homepage": "http://imagesloaded.desandro.com",
+  "authors": [
+    "David DeSandro"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "images"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,25 @@
+version: '3' # specify docker-compose version
+
+# Define the services/containers to be run
+services:
+  jekyllbuild:
+    build:
+      context: .
+      args:
+        build_command: "jekyll build --watch"
+    volumes:
+      - ".:/srv/jekyll"
+    ports:
+      - 4000:4000
+      - 35729:35729
+  nginx:
+    image: nginx
+    volumes:
+      - "./build:/var/www/public"
+      - "./nginx/nginx.conf:/etc/nginx/nginx.conf"
+      - "./nginx/html/404.html:/usr/share/nginx/html/404.html"
+      # to use jekyll's 404 page, uncomment the line below and disable the line above
+      # Important: ensure that 404.html exist else this will throw an error during build
+    # - "./web/_site/404.html:/usr/share/nginx/html/404.html"
+    ports:
+      - 80:80

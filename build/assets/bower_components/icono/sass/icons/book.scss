@@ -1,0 +1,32 @@
+//*-- Book --*\\
+.icono-book{
+    width: $U26;
+    height: $U22;
+    @include border-radius(0 0 0 $U6);
+    @extend .icono-stroke;
+    border-top: none;
+    margin: $U10 $U4 $U2;
+    &:before{
+        position: absolute;
+        width: $U24;
+        height: $U7;
+        box-sizing: border-box;
+        @extend .icono-stroke;
+        border-top: none;
+        border-right: none;
+        left: -1*$U2;
+        top: -1*$U5;
+        @include border-radius(0 0 0 $U6);
+    }
+    &:after{
+        position: absolute;
+        width: $U24;
+        height: $U8;
+        box-sizing: border-box;
+        left: -1*$U2;
+        top: -1*$U8;
+        @extend .icono-stroke;
+        border-bottom: none;
+        @include border-radius($U6 0 0 0);
+    }
+}

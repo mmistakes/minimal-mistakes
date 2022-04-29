@@ -1,0 +1,24 @@
+//*-- Clock --*\\
+.icono-clock{
+    width: $U26;
+    height: $U26;
+    @include border-radius(50%);
+    @extend .icono-stroke;
+    margin: $U4;
+    &:before, &:after{
+        @extend .stickCenter;
+        top: 35%;
+        box-shadow: inset 0 0 0 $U32;
+        @include border-radius($U2);
+    }
+    &:before{
+        width: $U2;
+        height: $U9;
+    }
+    &:after{
+        width: $U6;
+        height: $U2;
+        transform-origin: left center;
+        @include transform(rotate(45deg) translate($U1, $U2));
+    }
+}

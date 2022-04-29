@@ -1,0 +1,89 @@
+.lg-outer {
+    .lg-pager-outer {
+        bottom: 60px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        z-index: $zindex-pager;
+        height: 10px;
+
+        &.lg-pager-hover {
+            .lg-pager-cont {
+                overflow: visible;
+            }
+        }
+    }
+
+    .lg-pager-cont {
+        cursor: pointer;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        vertical-align: top;
+        margin: 0 5px;
+
+        &:hover {
+            .lg-pager-thumb-cont {
+                opacity: 1;
+                @include translate3d(0, 0, 0);
+            }
+        }
+
+        &.lg-pager-active {
+            .lg-pager {
+                box-shadow: 0 0 0 2px white inset;
+            }
+        }
+    }
+
+    .lg-pager-thumb-cont {
+        background-color: #fff;
+        color: #FFF;
+        bottom: 100%;
+        height: 83px;
+        left: 0;
+        margin-bottom: 20px;
+        margin-left: -60px;
+        opacity: 0;
+        padding: 5px;
+        position: absolute;
+        width: 120px;
+        border-radius: 3px;
+        @include transitionCustom(opacity 0.15s ease 0s, transform 0.15s ease 0s);
+        @include translate3d(0, 5px, 0);
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .lg-pager {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.7) inset;
+        display: block;
+        height: 12px;
+        @include transition(box-shadow 0.3s ease 0s);
+        width: 12px;
+
+        &:hover, &:focus {
+            box-shadow: 0 0 0 8px white inset;
+        }
+    }
+
+    .lg-caret {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px dashed;
+        bottom: -10px;
+        display: inline-block;
+        height: 0;
+        left: 50%;
+        margin-left: -5px;
+        position: absolute;
+        vertical-align: middle;
+        width: 0;
+    }
+}

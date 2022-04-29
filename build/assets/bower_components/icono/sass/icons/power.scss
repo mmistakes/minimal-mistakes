@@ -1,0 +1,17 @@
+//*-- Power --*\\
+.icono-power{
+    width: $U22;
+    height: $U22;
+    @extend .icono-stroke;
+    @include border-radius(50%);
+    border-top-color: transparent;
+    margin: $U6;
+    &:before{
+        position: absolute;
+        top: -15%;
+        left: $U8;
+        width: $U2;
+        height:60%;
+        box-shadow: inset 0 0 0 $U32;
+    }
+}

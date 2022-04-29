@@ -1,0 +1,26 @@
+//*-- Music --*\\
+.icono-music{
+    width: @18;
+    height: @6;
+    .transform(skewY(-15deg));
+    box-shadow: inset 0 0 0 @32;
+    .border-radius(@2 @2 0 0);
+    margin: @4 @5 @24 @11;
+    &:before{
+        position: absolute;
+        width: @2;
+        height: @16;
+        left: 0;
+        top: @4;
+        box-shadow: inset 0 0 0 @32, @16 0 0 0;
+    }
+    &:after{
+        position: absolute;
+        width: @10;
+        height: @8;
+        left: -1*@8;
+        top: @17;
+        .border-radius(50%);
+        box-shadow: inset 0 0 0 @32, @16 0 0 0; 
+    }
+}

@@ -1,0 +1,42 @@
+.icono-stroke{
+	border: $U2 solid;
+}
+
+.stickCenterV{
+    @include stickCenterV;
+}
+
+.stickCenterH{
+    @include stickCenterH;
+}
+
+.stickCenter{
+    @include stickCenter;
+}
+
+.spin[class*="spin"]{
+    -webkit-animation: loading-spinner 2s infinite linear; /* Safari 4+ */
+    -moz-animation:    loading-spinner 2s infinite linear; /* Fx 5+ */
+    -o-animation:      loading-spinner 2s infinite linear; /* Opera 12+ */
+    animation:         loading-spinner 2s infinite linear; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes loading-spinner {
+  0%   { @include transform(rotate(0deg)); }
+  100% { @include transform(rotate(360deg)); }
+}
+
+@-moz-keyframes loading-spinner {
+  0%   { @include transform(rotate(0deg)); }
+  100% { @include transform(rotate(360deg)); }
+}
+
+@-o-keyframes loading-spinner {
+  0%   { @include transform(rotate(0deg)); }
+  100% { @include transform(rotate(360deg)); }
+}
+
+@keyframes loading-spinner {
+  0%   { @include transform(rotate(0deg)); }
+  100% { @include transform(rotate(360deg)); }
+}

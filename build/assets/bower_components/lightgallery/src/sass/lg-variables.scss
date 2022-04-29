@@ -1,0 +1,57 @@
+$backdrop-opacity: 1 !default;
+$lg-toolbar-bg: rgba(0, 0, 0, 0.45) !default;
+$lg-border-radius-base: 2px !default;
+$lg-theme-highlight: rgb(169, 7, 7) !default;
+$lg-theme: #0D0A0A !default;
+
+// basic icon colours
+$lg-icon-bg: rgba(0, 0, 0, 0.45) !default;
+$lg-icon-color: #999 !default;
+$lg-icon-hover-color: #FFF !default;
+
+// counter
+$lg-counter-color: #e6e6e6 !default;
+$lg-counter-font-size: 16px !default;
+
+// Next prev icons
+$lg-next-prev-bg: $lg-icon-bg !default;
+$lg-next-prev-color: $lg-icon-color !default;
+$lg-next-prev-hover-color: $lg-icon-hover-color !default;
+
+// toolbar icons
+$lg-toolbar-icon-color: $lg-icon-color !default;
+$lg-toolbar-icon-hover-color: $lg-icon-hover-color !default;
+
+// autoplay progress bar
+$lg-progress-bar-bg: #333 !default;
+$lg-progress-bar-active-bg: $lg-theme-highlight !default;
+$lg-progress-bar-height: 5px !default;
+
+// paths
+$lg-path-fonts: '../fonts'!default;
+$lg-path-images: '../img'!default;
+
+// Zoom plugin
+$zoom-transition-duration: 0.3s !default;
+
+// Sub html - titile
+$lg-sub-html-bg: rgba(0, 0, 0, 0.45) !default;
+$lg-sub-html-color: #EEE !default;
+
+// thumbnail toggle button
+$lg-thumb-toggle-bg: #0D0A0A !default;
+$lg-thumb-toggle-color: $lg-icon-color !default;
+$lg-thumb-toggle-hover-color: $lg-icon-hover-color !default;
+$lg-thumb-bg: #0D0A0A !default;
+
+// z-index
+$zindex-outer: 1050 !default;
+$zindex-progressbar: 1083 !default;
+$zindex-controls: 1080 !default;
+$zindex-toolbar: 1082 !default;
+$zindex-subhtml: 1080 !default;
+$zindex-thumbnail: 1080 !default;
+$zindex-pager: 1080 !default;
+$zindex-playbutton: 1080 !default;
+$zindex-item: 1060 !default;
+$zindex-backdrop: 1040 !default;

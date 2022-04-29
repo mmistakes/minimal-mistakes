@@ -1,0 +1,19 @@
+//*-- Cart --*\\
+.icono-cart{
+    width: $U22;
+    height: 0;
+    border-width: $U14 $U6 0 $U2;
+    border-style: solid;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    margin: $U9 $U3 $U11 $U9;
+    &:before{
+        position: absolute;
+        width: $U4;
+        height: $U4;
+        @include border-radius(50%);
+        box-shadow: inset 0 0 0 $U32, $U13 0, -1*$U4 -1*$U20 0 $U1;
+        top: $U2;
+        left: -$U3;
+    }
+}

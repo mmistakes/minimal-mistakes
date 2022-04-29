@@ -1,0 +1,25 @@
+//*-- Market --*\\
+.icono-market{
+    width: $U32;
+    height: $U12;
+    @extend .icono-stroke;
+    border-top: none;
+    margin: $U19 $U1 $U3;
+    &:before{
+        width: $U6;
+        height: $U13;
+        position: absolute;
+        top: -1*$U15;
+        left: -1*$U5;
+        @include border-radius(0 0 $U10 $U10);
+        border-left: none;
+        box-shadow: inset 0 0 0 $U32, $U8 0 0, $U16 0 0, $U24 0 0, $U32 0 0;
+    }
+    &:after{
+        width: $U6;
+        height: $U6;
+        bottom: -1*$U2;
+        @extend .stickCenterH;
+        @extend .icono-stroke;
+    }
+}

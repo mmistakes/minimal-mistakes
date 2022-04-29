@@ -1,0 +1,20 @@
+//* Sitemap *\\
+.icono-sitemap {
+    width: @24;
+    height: @2;
+    box-shadow: 0 -@5;
+    margin: @21 @5 @11;
+    &:before {
+        &:extend(.stickCenterH);
+        width: @6;
+        height: @6;
+        .border-radius(@2);
+        box-shadow: inset 0 0 0 @32, @11 0, -@11 0, 0 -@14 0 @1;
+    }
+    &:after {
+        &:extend(.stickCenterH);
+        width: @2;
+        height: @10;
+        box-shadow: 0 -@7, @11 -@5, -@11 -@5;
+    }
+}

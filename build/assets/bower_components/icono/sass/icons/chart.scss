@@ -1,0 +1,73 @@
+//*-- Chart --*\\
+.icono-areaChart{
+    width: $U30;
+    height: $U22;
+    @extend .icono-stroke;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-color: transparent;
+    box-shadow: -1*$U2 $U2;
+    overflow: hidden;
+    margin: $U4 0 $U8 $U4;
+    &:before{
+        $bSpace: $U7;
+        position: absolute;
+        left: 0;
+        bottom: $bSpace;
+        border: $U6 solid transparent;
+        border-bottom-color: currentColor;
+        box-shadow: 0 $bSpace;
+    }
+    &:after{
+        $bSpace: $U4;
+        position: absolute;
+        left: $U11;
+        bottom: $bSpace;
+        border-width: 0 $U6 $U13;
+        border-style: solid;
+        border-color: transparent;
+        border-bottom-color: currentColor;
+        box-shadow: 0 $bSpace;
+    }
+}
+.icono-barChart{
+    width: $U30;
+    height: $U22;
+    @extend .icono-stroke;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-color: transparent;
+    box-shadow: -1*$U2 $U2;
+    overflow: hidden;
+    box-shadow: -1*$U2 $U2;
+    margin: $U4 0 $U8 $U4;
+    &:before{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: $U4;
+        height: $U15;
+        box-shadow: inset 0 -1*$U8 0 0, $U6 0, $U12 $U7, $U18 $U5;
+    }
+}
+.icono-pieChart{
+    width: 0;
+    height: 0;
+    border: $U15 solid;
+    border-right-color: transparent;
+    @include border-radius(50%);
+    @include transform(rotate(-45deg));
+    margin: $U2;
+    &:before{
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: -1*$U11;
+        top: -1*$U14;
+        border: $U14 solid;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+        border-top-color: transparent;
+        @include border-radius(50%);
+    }
+}

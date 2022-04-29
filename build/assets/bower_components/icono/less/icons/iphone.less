@@ -1,0 +1,34 @@
+//*-- iPhone --*\\
+.icono-iphone{
+    width: @19;
+    height: @31;
+    &:extend(.icono-stroke);
+    .border-radius(@3);
+    border-width: @5 @1;
+    border-color: transparent;
+    box-shadow: 0 0 0 @1, 0 0 0 @1 inset;
+    margin: @2 @8 @1 @7;
+    &:before, &:after{
+        &:extend(.stickCenterH);
+        box-shadow: inset 0 0 0 @32;
+    }
+    &:before{
+        width: @3;
+        height: @1;
+        top: -1*@3;
+    }
+    &:after{
+        width: @3;
+        height: @3;
+        bottom: -1*@4;
+        .border-radius(50%);
+    }
+}
+.icono-iphoneBold{
+    width: @20;
+    height: @32;
+    margin: @1 @7;
+    .border-radius(@4);
+    &:extend(.icono-stroke);
+    border-width: @5 @2;
+}

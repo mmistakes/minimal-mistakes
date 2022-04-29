@@ -1,0 +1,21 @@
+//*-- Asterisk --*\\
+.icono-asterisk{
+    width: @4;
+    height: @20;
+    box-shadow: inset 0 0 0 @32;
+    .border-radius(@1);
+    margin: @7 @15;
+    &:before, &:after{
+        position: absolute;
+        &:extend(.icono-asterisk);
+        margin: 0;
+        left: 0;
+        top: 0;
+    }
+    &:before{
+        .transform(rotate(-58deg));
+    }
+    &:after{
+        .transform(rotate(58deg));
+    }
+}

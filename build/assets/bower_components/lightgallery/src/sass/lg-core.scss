@@ -1,0 +1,272 @@
+// Clearfix
+.lg-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+// lightgallery core
+.lg-outer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $zindex-outer;
+    text-align: left;
+    opacity: 0;
+    // For start/end transition
+    @include transition(opacity 0.15s ease 0s);
+
+    * {
+        @include box-sizing(border-box);
+    }
+
+    &.lg-visible {
+        opacity: 1;
+    }
+
+    // Set transition speed and timing function
+    &.lg-css3 {
+        .lg-item {
+            &.lg-prev-slide, &.lg-next-slide, &.lg-current {
+                @include transition-duration(inherit !important);
+                @include transition-timing-function(inherit !important);
+            }
+        }
+    }
+
+    // Remove transition while dragging
+    &.lg-css3.lg-dragging {
+        .lg-item {
+            &.lg-prev-slide, &.lg-next-slide, &.lg-current {
+                @include transition-duration(0s !important);
+                opacity: 1;
+            }
+        }
+    }
+
+    // Set cursor grab while dragging
+    &.lg-grab {
+        img.lg-object {
+            @include grab-cursor;
+        }
+    }
+
+    &.lg-grabbing {
+        img.lg-object {
+            @include grabbing-cursor;
+        }
+    }
+
+    .lg {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .lg-inner {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        white-space: nowrap;
+    }
+
+    .lg-item {
+        background: url("#{$lg-path-images}/loading.gif") no-repeat scroll center center transparent;
+        display: none !important;
+    }
+    &.lg-css3 {
+        .lg-prev-slide, .lg-current, .lg-next-slide {
+            display: inline-block !important;
+        }
+    }
+    &.lg-css {
+        .lg-current {
+            display: inline-block !important;
+        }
+    }
+
+    .lg-item, .lg-img-wrap {
+        display: inline-block;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        &:before {
+            content: "";
+            display: inline-block;
+            height: 50%;
+            width: 1px;
+            margin-right: -1px;
+        }
+    }
+
+    .lg-img-wrap {
+        position: absolute;
+        padding: 0 5px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0
+    }
+
+    .lg-item {
+        &.lg-complete {
+            background-image: none;
+        }
+
+        &.lg-current {
+            z-index: $zindex-item;
+        }
+    }
+
+    .lg-image {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto !important;
+        height: auto !important;
+    }
+
+    &.lg-show-after-load {
+        .lg-item {
+            .lg-object, .lg-video-play {
+                opacity: 0;
+                @include transition(opacity 0.15s ease 0s);
+            }
+
+            &.lg-complete {
+                .lg-object, .lg-video-play {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    // Hide title div if empty
+    .lg-empty-html {
+        display: none;
+    }
+
+    &.lg-hide-download {
+        #lg-download {
+            display: none;
+        }
+    }
+}
+
+.lg-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $zindex-backdrop;
+    background-color: #000;
+    opacity: 0;
+    @include transition(opacity 0.15s ease 0s);
+    &.in {
+        opacity: $backdrop-opacity;
+    }
+}
+
+// Default slide animations. Should be placed at the bottom of the animation css
+.lg-css3 {
+
+    // Remove all transition effects
+    &.lg-no-trans {
+        .lg-prev-slide, .lg-next-slide, .lg-current {
+            @include transitionCustom(none 0s ease 0s !important);
+        }
+    }
+
+    &.lg-use-css3 {
+        .lg-item {
+            @include backface-visibility(hidden);
+        }
+    }
+
+    &.lg-use-left {
+        .lg-item {
+            @include backface-visibility(hidden);
+        }
+    }
+
+    // Fade mode
+    &.lg-fade {
+        .lg-item {
+            opacity: 0;
+
+            &.lg-current {
+                opacity: 1;
+            }
+
+            // transition timing property and duration will be over written from javascript
+            &.lg-prev-slide, &.lg-next-slide, &.lg-current {
+                @include transitionCustom(opacity 0.1s ease 0s);
+            }
+        }
+    }
+
+    &.lg-slide {
+        &.lg-use-css3 {
+            .lg-item {
+                opacity: 0;
+
+                &.lg-prev-slide {
+                    @include translate3d(-100%, 0, 0);
+                }
+
+                &.lg-next-slide {
+                    @include translate3d(100%, 0, 0);
+                }
+
+                &.lg-current {
+                    @include translate3d(0, 0, 0);
+                    opacity: 1;
+                }
+
+                // transition timing property and duration will be over written from javascript
+                &.lg-prev-slide, &.lg-next-slide, &.lg-current {
+                    @include transitionCustom(transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s);
+                }
+            }
+        }
+
+        &.lg-use-left {
+            .lg-item {
+                opacity: 0;
+                position: absolute;
+                left: 0;
+
+                &.lg-prev-slide {
+                    left: -100%;
+                }
+
+                &.lg-next-slide {
+                    left: 100%;
+                }
+
+                &.lg-current {
+                    left: 0;
+                    opacity: 1;
+                }
+
+                // transition timing property and duration will be over written from javascript
+                &.lg-prev-slide, &.lg-next-slide, &.lg-current {
+                    @include transitionCustom(left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s);
+                }
+            }
+        }
+    }
+}

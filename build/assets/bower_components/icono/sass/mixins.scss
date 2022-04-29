@@ -1,0 +1,74 @@
+@mixin stickCenter($top: 0, $right: 0, $bottom: 0, $left: 0){
+    position: absolute;
+    @if ($top == $bottom){
+        @if ($left == $right){
+            //stick center method 1
+            left: 50%;
+            top: 50%;
+            @include transform(translate(-50%, -50%));
+        }@else{
+            //stick center V
+            top: 50%;
+            @include transform(translateY(-50%));
+            right: $right;
+            left: $left;
+            margin: 0 auto;
+        }
+    }@else if ($left == $right){
+        //stick center H
+        left: 50%;
+        @include transform(translateX(-50%));
+        top: $top;
+        bottom: $bottom;
+        margin: auto 0;
+    }@else{
+        //stick center method 2
+        top: $top;
+        right: $right;
+        bottom: $bottom;
+        left: $left;
+        margin: auto;
+    }
+}
+@mixin stickCenterH{
+	position: absolute;
+	left: 50%;
+	@include transform(translateX(-50%));
+}
+@mixin stickCenterV{
+	position: absolute;
+	top: 50%;
+	@include transform(translateY(-50%));
+}
+@mixin square($length){
+	width: $length; height: $length;
+}
+@mixin goldenRectL($width){
+	width: $width;
+	height: ceil($width/1.61803398875);
+}
+@mixin goldenRectP($width){
+	width: $width;
+	height: ceil($width*1.61803398875);
+}
+@mixin wDiagonal($length){
+	width: ceil(sqrt(2 * $length * $length));
+}
+@mixin hDiagonal($length){
+	height: ceil(sqrt(2 * $length * $length));
+}
+//CSS3 Prefixes
+@mixin transform($params){
+  -webkit-transform: $params;
+     -moz-transform: $params;
+      -ms-transform: $params;
+       -o-transform: $params;
+          transform: $params;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+	

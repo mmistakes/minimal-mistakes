@@ -1,0 +1,45 @@
+backend:
+  name: github
+  repo: sujaykundu777/sujaykundu777.github.io
+  branch: master
+  site_domain: agitated-northcutt-53b578.netlify.app
+
+media_folder: "assets/img/posts" # Media files will be stored in the repo under images/uploads
+public_folder: "/assets/img/posts" # The src attribute for uploaded media will begin with /images/uploads
+publish_mode: editorial_workflow # To manage status (Edit, Draft, Publish)
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail-img", widget: "image"}
+      - {label: "Category", name: "category", widget: "string", default: "jekyll"}
+      - {label: "Summary", name: "summary", widget: "string"}
+      - {label: "Keywords", name: "keywords", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "string"}
+      - {label: "Permalink", name: "permalink", widget: "string"}
+  - name: "page"
+    label: "Page"
+    folder: "_pages"
+    create: true
+    slug: ".md"
+    fields:
+      - {label: "Layout", name: "layout", widget: "select", options: ["about", "blog", "contact", "gallery", "page", "product"]}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Permalink", name: "permalink", widget: "hidden", default: "//"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "layouts"
+    label: "Layouts"
+    folder: "_layouts"
+    extension: "html"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+      - {label: "Title", name: "title", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}

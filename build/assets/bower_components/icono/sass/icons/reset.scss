@@ -1,0 +1,23 @@
+//*-- Reset --*\\
+.icono-reset{
+    width: $U26;
+    height: $U26;
+    @include border-radius(50%);
+    border-width: $U2;
+    border-style: solid;
+    border-left-color: transparent;
+    margin: $U4;
+    &:before{
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: -1*$U7;
+        bottom: 0;
+        border-width: $U6;
+        border-style: solid;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+        @include transform(rotate(135deg));
+    }
+}

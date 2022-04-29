@@ -1,0 +1,28 @@
+{
+  "name": "jquery.easing",
+  "main": "jquery.easing.js",
+  "version": "1.4.1",
+  "homepage": "https://github.com/gdsmith/jquery.easing",
+  "authors": [
+    "George McGinley Smith <george@gsgd.co.uk>"
+  ],
+  "description": "A jQuery plugin from GSGD to give advanced easing options",
+  "keywords": [
+    "easing",
+    "ease",
+    "tween",
+    "keyframe",
+    "timeline",
+    "animation",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.3.0"
+  },
+  "license": "BSD-3-Clause",
+  "ignore": [
+    "**/.*",
+    "example"
+  ]
+}

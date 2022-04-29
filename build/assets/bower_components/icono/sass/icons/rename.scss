@@ -1,0 +1,21 @@
+//*-- Rename --*\\
+.icono-rename{
+    width: $U26;
+    height: $U10;
+    @extend .icono-stroke;
+    border-color: transparent;
+    border-width: $U3;
+    box-shadow: 0 0 0 $U1, $U11 0 0 0 inset;
+    margin: $U12 $U4;
+    &:before{
+        width: $U1;
+        height: $U18;
+        @extend .stickCenterV;
+        left: $U9;
+        border-width: $U2 $U4;
+        border-style: solid;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        box-shadow: 0 0 0 $U1 inset;
+    }
+}

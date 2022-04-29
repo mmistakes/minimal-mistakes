@@ -1,0 +1,237 @@
+//*-- Socials --*\\
+.icono-facebook{
+    width: $U9;
+    height: $U26;
+    box-shadow: inset $U2 $U4 0 0;
+    border-left: $U3 solid;
+    @include border-radius($U5 0 0 0);
+    margin: $U4 $U11 $U4 $U14;
+    &:before{
+        position: absolute;
+        top: $U9;
+        left: -1*$U6;
+        width: $U11;
+        height: 0;
+        border-top: $U4 solid;
+        border-right: $U1 solid transparent;
+    }
+}
+.icono-twitter{
+    width: $U14;
+    height: $U23;
+    @include border-radius(0 0 0 $U8);
+    box-shadow: -1*$U6 $U2 0 0;
+    margin: $U4 $U7 $U7 $U13;
+    &:before{
+        position: absolute;
+        bottom: -1*$U2;
+        left: -1*$U6;
+        width: $U17;
+        height: $U6;
+        @include border-radius(0 0 0 $U8);
+        box-shadow: inset $U4 -1*$U6, 0 -1*$U11;
+    }
+    &:after{
+        position: absolute;
+        width: $U6;
+        height: $U6;
+        box-shadow: inset 0 0 0 $U32, $U13 $U8, $U13 $U19;
+        @include border-radius(50%);
+        left: -1*$U6;
+    }
+}
+.icono-gplus{
+    width: $U10;
+    height: $U2;
+    box-shadow: inset 0 0 0 $U32;
+    margin: $U14 $U4 $U18 $U20;
+    &:before{
+        position: absolute;
+        top: -$U5;
+        right: $U10;
+        content: "g" !important;
+        font-family: georgia;
+        font-size: $U32;
+        text-indent: 0;
+        line-height: 0;
+    }
+    &:after{
+        @extend .stickCenter;
+        width: $U2;
+        height: $U10;
+        box-shadow: inset 0 0 0 $U32;
+    }
+}
+.icono-linkedIn{
+    width: $U5;
+    height: $U16;
+    box-shadow: inset 0 0 0 $U32, $U8 0; 
+    margin: $U12 $U24 $U6 $U5;
+    &:before{
+        position: absolute;
+        width: $U5;
+        height: $U5;
+        box-shadow: inset 0 0 0 $U32;
+        top: -1*$U7;
+        left: 0;
+        @include border-radius(50%);
+    }
+    &:after{
+        position: absolute;
+        width: $U12;
+        height: $U16;
+        border-right: $U1 solid;
+        left: $U11;
+        bottom: 0;
+        @include border-radius($U8 $U5 0 0#{'/'}$U11 $U5 0 0);
+        box-shadow: inset -1*$U4 $U4;
+    }
+}
+.icono-instagram{
+    width: $U26;
+    height: $U26;
+    box-shadow: inset 0 0 0 $U2;
+    @include border-radius($U4);
+    margin: $U4;
+    &:before{
+        @extend .stickCenter;
+        width: $U10;
+        height: $U10;
+        @include border-radius(50%);
+        box-shadow: 0 0 0 $U3;
+    }
+    &:after{
+        position: absolute;
+        width: $U5;
+        height: $U5;
+        @include border-radius($U1);
+        right: $U3;
+        top: $U3;
+        box-shadow: 0 0  0 $U2, $U1 $U1 0 $U2, -1*$U5 -1*$U1 0 $U1, -1*$U10 -1*$U1 0 $U1, -1*$U16 $U1 0 $U2;
+    }
+}
+.icono-flickr{
+    width: $U24;
+    height: $U24;
+    overflow: hidden;
+    @include border-radius($U4);
+    margin: $U5;
+    &:before, &:after{
+        @extend .stickCenterV;
+        width: $U7;
+        height: $U7;
+        @include border-radius(50%);
+    }
+    &:before{
+        left: $U4;
+        box-shadow: 0 0 0 $U1, 0 -1*$U10 0 $U6, 0 $U10 0 $U6, -1*$U4 0 0 $U3;
+    }
+    &:after{
+        right: $U4;
+        box-shadow: 0 0 0 $U1, 0 -1*$U10 0 $U6, 0 $U10 0 $U6, $U4 0 0 $U3;
+    }
+}
+.icono-delicious{
+    width: $U24;
+    height: $U24;
+    overflow: hidden;
+    @include border-radius($U4);
+    box-shadow: inset 0 0 0 $U2;
+    margin: $U5;
+    &:before{
+        position: absolute;
+        width: $U12;
+        height: $U12;
+        box-shadow: inset 0 0 0 $U32, $U12 -1*$U12 0 0;
+        left: 0;
+        bottom: 0;
+    }
+}
+.icono-codepen{
+    width: $U2;
+    height: $U10;
+    box-shadow: inset 0 0 0 $U32, 0 $U15, -1*$U11 $U7, $U11 $U7;
+    margin: $U4 $U16 $U20;
+    &:before{
+        position: absolute;
+        right: $U2;
+        top: $U3;
+        width: $U11;
+        height: $U4;
+        transform: skew(0, -35deg) scaleY(0.6);
+        box-shadow: inset 0 0 0 $U32, 0 $U13, $U11 $U26, $U12 $U32+$U7;
+    }
+    &:after{
+        position: absolute;
+        left: $U2;
+        top: $U3;
+        width: $U11;
+        height: $U4;
+        transform: skew(0, 35deg) scaleY(0.6);
+        box-shadow: inset 0 0 0 $U32, 0 $U13, -1*$U11 $U26, -1*$U12 $U32+$U7;
+    }
+}
+.icono-blogger{
+    width: $U24;
+    height: $U14;
+    @include border-radius(0 0 $U7 $U7);
+    margin: $U14 $U5 $U6;
+    &, &:before{
+        border-width: $U6;
+        border-style: solid;      
+    }
+    &:before{
+        position: absolute;
+        width: $U8;
+        height: $U2;
+        left: -1*$U6;
+        top: -1*$U15;
+        @include border-radius($U6 $U6 0 0)
+    }
+}
+.icono-disqus{
+    width: $U31;
+    height: $U31;
+    box-shadow: inset 0 0 0 $U32;
+    @include border-radius(50%);
+    margin: $U1 $U1 $U2 $U2;
+    &:before{
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: $U5 solid transparent;
+        border-top: $U10 solid;
+        @include transform(rotate(50deg));
+        left: -$U5;
+        top: $U20;
+    }
+}
+.icono-dribbble{
+    width: $U26;
+    height: $U26;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 $U2;
+    overflow: hidden;
+    position: relative;
+    background-image: radial-gradient(50% 100%, transparent 0, transparent $U9, currentColor $U10, currentColor $U11, transparent $U12);
+    background-repeat: no-repeat;
+    background-position: -$U8 center;
+    @include transform(rotate(-25deg));
+    margin: $U4;
+    &:after, &:before{
+        position: absolute;
+        @include border-radius(50%);
+        border: $U2 solid;
+        width: 2*$U20;
+        height: $U30;
+    }
+    &:after{
+        top: $U14;
+        left: -$U7;
+        width: $U32;
+    }
+    &:before{
+        left: -$U6;
+        top: -$U23;
+    }
+}

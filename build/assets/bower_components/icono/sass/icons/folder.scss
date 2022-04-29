@@ -1,0 +1,29 @@
+//*-- Folder --*\\
+.icono-folder{
+    width: $U18;
+    height: $U22;
+    @extend .icono-stroke;
+    border-left-width: 0;
+    @include border-radius(0 $U3 $U3 0);
+    margin: $U8 $U2 $U4 $U14;
+    &:before{
+        position: absolute;
+        width: $U12;
+        height: $U20;
+        left: -1*$U12;
+        bottom: -1*$U2;
+        border-width: 0 0 $U2 $U2;
+        border-style: solid;
+        @include border-radius(0 0 0 $U3);
+    }
+    &:after{
+        position: absolute;
+        width: $U10;
+        height: $U5;
+        left: -1*$U12;
+        top: -1*$U7;
+        border-width: $U2 $U2 0 $U2;
+        border-style: solid;
+        @include border-radius($U3 $U3 0 0);
+    }   
+}

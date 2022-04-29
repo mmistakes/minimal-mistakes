@@ -1,0 +1,44 @@
+{
+  "name": "isotope-layout",
+  "description": "Filter and sort magical layouts",
+  "main": "js/isotope.js",
+  "dependencies": {
+    "desandro-matches-selector": "^2.0.0",
+    "fizzy-ui-utils": "^2.0.4",
+    "get-size": "^2.0.0",
+    "masonry-layout": "^4.1.0",
+    "outlayer": "^2.1.0"
+  },
+  "devDependencies": {
+    "jquery": "^3.3.1",
+    "jquery-bridget": "^2",
+    "qunit": "^2.6.0"
+  },
+  "ignore": [
+    "test/",
+    "sandbox/",
+    "**/.*",
+    "package.json",
+    "notes.md",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://isotope.metafizzy.co",
+  "authors": [
+    "David DeSandro"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "filter",
+    "sort",
+    "masonry",
+    "jquery-plugin"
+  ],
+  "license": "GPL-3.0"
+}

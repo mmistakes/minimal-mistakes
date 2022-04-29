@@ -1,0 +1,33 @@
+{
+  "name": "nanobar",
+  "version": "0.4.2",
+  "description": "Very lightweight js progress bars (for browsers)",
+  "main": "nanobar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "linter": "eslint nanobar.js",
+    "build": "uglifyjs nanobar.js -o nanobar.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jacoborus/nanobar.git"
+  },
+  "keywords": [
+    "loader",
+    "progress bar",
+    "css3",
+    "js",
+    "html"
+  ],
+  "author": "Jacobo Tabernero jacobo@xarope.eu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacoborus/nanobar/issues"
+  },
+  "homepage": "http://nanobar.jacoborus.codes",
+  "namespace": "Nanobar",
+  "devDependencies": {
+    "eslint": "^2.6.0",
+    "uglify-js": "^2.6.2"
+  }
+}

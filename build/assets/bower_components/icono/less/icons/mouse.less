@@ -1,0 +1,26 @@
+//*-- Mouse --*\\
+.icono-mouse{
+    width: @23;
+    height: @32;
+    .border-radius(@11 @11 @12 @12);
+    &:extend(.icono-stroke);
+    margin: @1 @5 @1 @6;
+    &:before{
+        width: @1;
+        height: @6;
+        .border-radius(@2);
+        &:extend(.stickCenterH);
+        &:extend(.icono-stroke);
+        border-color: transparent;
+        border-width: @1;
+        top: @5;
+        box-shadow: 0 0 0 @1, 0 0 0 @2 inset;
+    }
+    &:after{
+        width: @1;
+        height: @4;
+        &:extend(.stickCenterH);
+        top: 0;
+        box-shadow: inset 0 0 0 @32, 0 @13 0 0;
+    }
+}

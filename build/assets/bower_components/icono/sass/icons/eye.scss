@@ -1,0 +1,17 @@
+//*-- Eye --*\\
+.icono-eye{
+    @include border-radius(80% 20%);
+    @include transform(rotate(45deg));
+    @extend .icono-stroke;
+    border-width: $U2 $U1 $U1 $U2;
+    height: $U28;
+    width: $U28;
+    margin: $U3 $U3;
+    &:before{
+        @include border-radius(50%);
+        box-shadow: 0 -1*$U3 0 $U3 inset;
+        height: $U11;
+        width: $U11;
+        @extend .stickCenter;
+    }
+}

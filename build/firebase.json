@@ -1,0 +1,15 @@
+{
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "Gemfile",
+      "Gemfile.lock",
+      "Rakefile",
+      "CNAME",
+      "README.md"
+    ]
+  }
+}

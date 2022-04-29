@@ -1,0 +1,12 @@
+//*-- Filter --*\\
+.icono-filter{
+    width: 0;
+    height: 0;
+    border: $U10 solid;
+    border-bottom: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    padding: $U3;
+    box-shadow: inset 0 $U7;
+    margin: $U9 $U4;
+}

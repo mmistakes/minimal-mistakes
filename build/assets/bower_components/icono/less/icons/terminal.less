@@ -1,0 +1,26 @@
+//*-- Terminal --*\\
+.icono-terminal{
+    width: @28;
+    height: @24;
+    &:extend(.icono-stroke);
+    margin: @5 @3;
+    &:before{
+        width: @5;
+        height: @5;
+        position: absolute;
+        top: 50%;
+        .transform(translateY(-50%) rotate(45deg));
+        left: @3;
+        border-width: @2 @2 0 0;
+        border-style: solid;
+    }
+    &:after{
+        position: absolute;
+        width: @5;
+        height: 0;
+        border-bottom: @2 solid;
+        right: @6;
+        bottom: @4;
+
+    }
+}

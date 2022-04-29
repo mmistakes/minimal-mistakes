@@ -1,0 +1,17 @@
+//*-- Moon --*\\
+.icono-moon{
+    width: $U22;
+    height: $U22;
+    @include border-radius(50%);
+    overflow: hidden;
+    margin: $U6;
+    &:before{
+        position: absolute;
+        width: $U20;
+        height: $U20;
+        top: -$U2;
+        left: $U6;
+        @include border-radius(50%);
+        box-shadow: 0 0 0 $U32;
+    }
+}

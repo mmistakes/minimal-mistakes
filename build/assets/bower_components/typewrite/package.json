@@ -1,0 +1,33 @@
+{
+  "name": "typewrite",
+  "version": "1.0.0",
+  "description": "A javascript library to animate the typing, deleting, and selecting of text on a page",
+  "main": "src/typewrite.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "uglify": "uglifyjs src/typewrite.js -o dist/typewrite.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrvautin/typewrite.git"
+  },
+  "keywords": [
+    "typewrite",
+    "jquery",
+    "animate",
+    "typing",
+    "type",
+    "text",
+    "delete text",
+    "animate typing"
+  ],
+  "author": "Mark Moffat <mrvautin@gmail.com> (http://mrvautin.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrvautin/typewrite/issues"
+  },
+  "homepage": "https://github.com/mrvautin/typewrite#readme",
+  "dependencies": {
+    "uglify-js": "^2.7.5"
+  }
+}

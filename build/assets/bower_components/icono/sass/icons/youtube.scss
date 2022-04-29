@@ -1,0 +1,31 @@
+//*-- Youtube --*\\
+.icono-youtube{
+    border-right-color: transparent;
+    border-left-color: transparent;
+    @include border-radius($U10);
+    width: $U32;
+    height: $U32 / 1.4357;
+    margin: $U6 $U1;
+    &, &:before{
+        @extend .icono-stroke;
+    }
+    &:before{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        @include border-radius($U6 #{'/'} $U3);
+    }
+    &:after{
+        width: 0;
+        height: 0;
+        @extend .stickCenter;
+        border-width: $U4 0 $U4 $U8;
+        border-style: solid;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+    }
+}

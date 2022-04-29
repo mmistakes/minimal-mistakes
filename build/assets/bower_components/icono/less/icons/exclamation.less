@@ -1,0 +1,36 @@
+//*-- Exclamation --*\\
+[class*="icono-exclamation"]{
+    overflow: visible;
+    width: @30;
+    border-bottom: @2 solid;
+    .border-radius(0 0 @4 @4);
+    margin: @26 @2 @6;
+    &:before{
+        position: absolute;
+        width: @26;
+        height: @26;
+        left: @1;
+        top: -1*@14;
+        border-width: @2 0 0 @2;
+        border-style: solid;
+        .border-radius(@4 0);
+        .transform(rotate(45deg) skew(12deg, 12deg));
+    }
+    &:after{
+        width: @4;
+        height: @3;
+        top: -1*@14;
+        &:extend(.stickCenterH);
+        box-shadow: inset 0 0 0 @32, 0 @3, 0 @8;
+    }
+    &[class*="Circle"]{
+        margin: @2;
+        &:before{
+            display: none;
+        }
+        &:after{
+            box-shadow: inset 0 0 0 @32, 0 @3, 0 @5, 0 @10;
+            top: @6;
+        }
+    }
+}

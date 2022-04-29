@@ -1,0 +1,34 @@
+//*-- Macbook --*\\
+.icono-macbook{
+    width: $U32;
+    height: $U2;
+    box-shadow: inset 0 0 0 $U32;
+    @include border-radius(0 0 $U32 $U32 #{'/'} $U3);
+    margin: $U25 $U1 $U7 $U1;
+    &:before{
+        width: $U20;
+        height: $U14;
+        @extend .icono-stroke;
+        @extend .stickCenterH;
+        bottom: $U2;
+        border-width: $U3 $U1 $U1 $U1;
+        border-color: transparent;
+        @include border-radius($U3 $U3 0 0);
+        box-shadow: 0 0 0 $U1, 0 0 0 $U1 inset;
+    }
+}
+.icono-macbookBold{
+    width: $U32;
+    height: $U2;
+    box-shadow: inset 0 0 0 $U32;
+    margin: $U25 $U1 $U7 $U1;
+    &:before{
+        width: $U20;
+        height: $U14;
+        @extend .stickCenterH;
+        bottom: $U2;
+        @extend .icono-stroke;
+        border-width: $U3 $U2 $U1;
+        @include border-radius($U3 $U3 0 0);
+    }
+}

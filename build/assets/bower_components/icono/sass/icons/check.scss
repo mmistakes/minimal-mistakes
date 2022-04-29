@@ -1,0 +1,37 @@
+//*-- Check --*\\
+[class*="icono-check"]{
+    width: $U28;
+    height: $U28;
+    margin: $U3 0 $U3 $U6;
+    @include transform(rotate(-45deg));
+    &:before, &:after{
+        box-shadow: inset 0 0 0 $U32;
+    }
+    &:before{
+        @extend [class*="icono-plus"]:before;
+    }
+    &:after{
+        position: absolute;
+        height: $U12;
+        width: $U2;
+        left: $U4;
+        bottom: $U14;
+    }
+    &[class*="Circle"]{
+        @extend .icono-stroke;
+        @include border-radius(50%);
+        width: $U30;
+        height: $U30;
+        margin: $U2;
+        &:before{
+            width: $U14;
+            top: $U15;
+            left: $U14;
+        }
+        &:after{
+            height: $U8;
+            left: $U7;
+            bottom: $U10;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+//*-- Comment --*\\
+.icono-commentEmpty{
+    width: @30;
+    height: @22;
+    &:extend(.icono-stroke);
+    .border-radius(@4 @4 @7 @7);
+    border-bottom-color: transparent;
+    margin: @5 @2 @7;
+    &:before{
+        position: absolute;
+        width: @6;
+        height: @6;
+        border-width: 0 0 @2 @2;
+        border-style: solid;
+        .transform(rotate(-45deg));
+        bottom: -1*@4;
+        left: @6;
+    }
+    &:after{
+        position: absolute;
+        width: @8;
+        height: @2;
+        border-width: 0 @12 0 @6;
+        border-style: solid;
+        bottom: 0;
+        left: 0;
+    }
+}
+.icono-comment{
+    width: @30;
+    height: @20;
+    box-shadow: inset 0 0 0 @32;
+    .border-radius(@4);
+    margin: @5 @2 @9;
+    &:before{
+        position: absolute;
+        width: @8;
+        height: @8;
+        box-shadow: inset 0 0 0 @32;
+        .transform(rotate(-45deg));
+        bottom: -1*@4;
+        left: @6;
+    }
+}

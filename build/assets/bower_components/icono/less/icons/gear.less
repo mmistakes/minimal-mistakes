@@ -1,0 +1,17 @@
+//*-- Gear --*\\
+.icono-gear{
+    width: @32;
+    height: @32;
+    border: @3 dotted;
+    .border-radius(50%);
+    margin: @1;
+    &:before{
+        &:extend(.stickCenter);
+        width: @22;
+        height: @22;
+        box-shadow: 0 0 0 @3, 0 0 0 @2 inset;
+        .border-radius(50%);
+        border: @6 solid transparent;
+        box-sizing: border-box;
+    }
+}

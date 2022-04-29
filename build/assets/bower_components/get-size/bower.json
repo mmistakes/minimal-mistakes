@@ -1,0 +1,23 @@
+{
+  "name": "get-size",
+  "description": "measures element size",
+  "main": "get-size.js",
+  "authors": [
+    "David DeSandro"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "size",
+    "DOM"
+  ],
+  "homepage": "https://github.com/desandro/get-size",
+  "ignore": [
+    "**/.*",
+    "package.json",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "sandbox.html"
+  ]
+}

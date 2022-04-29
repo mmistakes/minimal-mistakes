@@ -1,0 +1,16 @@
+//*-- Search --*\\
+.icono-search{
+    .square(@22);
+    .border-radius(50%);
+    &:extend(.icono-stroke);
+    .transform(rotate(45deg));
+    margin: @4 @4 @8 @8;
+    &:before{
+        width: @4;
+        height: @11;
+        &:extend(.stickCenterH);
+        box-shadow: inset 0 0 0 @32;
+        top: @19;
+        .border-radius(0 0 @1 @1);
+    }
+}

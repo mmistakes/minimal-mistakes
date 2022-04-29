@@ -1,0 +1,23 @@
+//*-- Video --*\\
+.icono-video{
+    width: $U20;
+    height: $U20;
+    @extend .icono-stroke;
+    margin: $U7 $U7;
+    &:before{
+        @extend .stickCenterV;
+        width: $U3;
+        height: $U3;
+        left: -1*$U8;
+        box-shadow: inset 0 0 0 $U32, 0 -1*$U8 0 0, 0 $U8 0 0, $U29 0 0 0,$U29 -1*$U8 0 0, $U29 $U8 0 0;
+    }
+    &:after{
+        @extend .stickCenter;
+        width: 0;
+        height: 0;
+        border-width: $U4 0 $U4 $U6;
+        border-style: solid;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+    }
+}

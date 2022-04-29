@@ -1,0 +1,12 @@
+//*-- Frown --*\\
+.icono-frown{
+    &:extend(.icono-smile);
+    &:before{
+        &:extend(.icono-smile:before);
+    }
+    &:after{
+        &:extend(.icono-smile:after);
+        .transform(translateX(-50%) rotate(180deg));
+        transform-origin: center 85%;
+    }
+}

@@ -1,0 +1,26 @@
+//*-- Flag --*\\
+.icono-flag{
+    width: @22;
+    height: @25;
+    border-left: @3 solid;
+    margin: @5 @6 @4;
+    &:before, &:after{
+        position:absolute;
+        width: @9;
+        height: @8;
+        &:extend(.icono-stroke);
+    }
+    &:before{
+        left: -1*@2;
+        top: 1px;
+        .border-radius(0 2px 0 0);
+        border-right-width: @2 + 1;
+    }
+    &:after{
+        width: @5;
+        left: @9;
+        top: @4;
+        border-left-width: @2 + 1;
+        .border-radius(2px 2px 0 2px);
+    }
+}

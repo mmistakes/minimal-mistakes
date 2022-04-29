@@ -1,0 +1,15 @@
+//*-- Meh --*\\
+.icono-meh{
+    &:extend(.icono-smile);
+    &:before{
+        &:extend(.icono-smile:before);
+    }
+    &:after{
+        &:extend(.icono-smile:after);
+        top: 0;
+        width: @12;
+        border-left-width: 0;
+        border-right-width: 0;
+        .border-radius(0);
+    }
+}

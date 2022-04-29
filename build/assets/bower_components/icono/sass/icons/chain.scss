@@ -1,0 +1,20 @@
+//*-- Chain --*\\
+.icono-chain{
+    width: $U16;
+    height: $U2;
+    box-shadow: inset 0 0 0 $U32;
+    @include transform(rotate(-45deg));
+    margin: $U16 $U9;
+    &:before, &:after{
+        @include goldenRectL($U12);
+        @extend .stickCenterV;
+        @extend .icono-stroke;
+        @include border-radius($U4);
+    }
+    &:before{
+        right: -1*$U10;
+    }
+    &:after{
+        left: -1*$U10;
+    }
+}

@@ -1,0 +1,23 @@
+//*-- RSS --*\\
+.icono-rss{
+    .square(@22);
+    overflow: hidden;
+    margin: @6;
+    &:before, &:after{
+        position: absolute;
+        .border-radius(50%);
+    }
+    &:before{
+        .square(@6);
+        box-shadow: 0 0 @32 inset;
+        left: 0;
+        bottom: 0;
+    }
+    &:after{
+        .square(@27);
+        right: 15%;
+        top: 15%;
+        border: @4 solid transparent;
+        box-shadow: inset 0 0 0 @2, 0 0 0 @2;
+    }
+}

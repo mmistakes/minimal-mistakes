@@ -1,0 +1,43 @@
+{
+  "name": "icono",
+  "version": "0.9.5",
+  "description": "Pure CSS Icons",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saeedalipoor/icono.git"
+  },
+  "contributors": [
+    {
+      "name": "Saeed Alipoor",
+      "email": "alipoor.sa@gmail.com",
+      "url": "https://github.com/saeedalipoor"
+    },
+    {
+      "name": "Adam Ellsworth",
+      "email": "adam.d.ellsworth@gmail.com",
+      "url": "https://github.com/adamellsworth"
+    }
+  ],
+  "keywords": [
+    "css",
+    "icons",
+    "ui",
+    "icono"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saeedalipoor/icono/issues"
+  },
+  "homepage": "http://saeedalipoor.github.io/icono/",
+  "devDependencies": {
+    "browser-sync": "^1.8.3",
+    "gulp": "^3.8.10",
+    "gulp-cssmin": "^0.1.6",
+    "gulp-less": "^2.0.1",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-watch": "^3.0.0",
+    "gulp-html-replace": "~1.4.1"
+  }
+}

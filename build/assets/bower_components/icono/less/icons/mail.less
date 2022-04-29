@@ -1,0 +1,15 @@
+//*-- Mail --*\\
+.icono-mail{
+    .goldenRectL(@28);
+    &:extend(.icono-stroke);
+    overflow: hidden;
+    margin: @8 @3;
+    &:before{
+        position: absolute;
+        .square(@32/1.3);
+        &:extend(.icono-stroke);
+        .transform(rotate(50deg) skew(-10deg, -20deg));
+        top: -1*@20;
+        left: -1*@3;
+    }
+}

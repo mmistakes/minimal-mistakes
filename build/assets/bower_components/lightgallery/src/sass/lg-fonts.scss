@@ -1,0 +1,22 @@
+// font icons support
+@font-face {
+    font-family: 'lg';
+    src: url("#{$lg-path-fonts}/lg.eot?n1z373");
+    src: url("#{$lg-path-fonts}/lg.eot?#iefixn1z373") format("embedded-opentype"), url("#{$lg-path-fonts}/lg.woff?n1z373") format("woff"), url("#{$lg-path-fonts}/lg.ttf?n1z373") format("truetype"), url("#{$lg-path-fonts}/lg.svg?n1z373#lg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.lg-icon {
+    font-family: 'lg';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

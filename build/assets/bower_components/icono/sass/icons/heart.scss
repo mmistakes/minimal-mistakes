@@ -1,0 +1,31 @@
+//*-- Heart --*\\
+.icono-heart{
+    width: $U20;
+    height: $U20;
+    @extend .icono-stroke;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    @include transform(rotate(45deg));
+    @include border-radius($U4 0);
+    margin: $U9 $U7 $U5;
+    &:before, &:after{
+        position: absolute;
+        @extend .icono-stroke;
+    }
+    &:before{
+        width: ceil($U20/2.5);
+        height: ceil($U20*0.69);
+        left: -1*ceil($U20/2.5)-$U2;
+        bottom: -1*$U2;
+        @include border-radius($U20 0 0 $U20);
+        border-right-color: transparent;
+    }
+    &:after{
+        width: ceil($U20*0.69);
+        height: ceil($U20/2.5);
+        right: -1*$U2;
+        top: -1*ceil($U20/2.5)-$U2;
+        @include border-radius($U20 $U20 0 0);
+        border-bottom-color: transparent;
+    }
+}

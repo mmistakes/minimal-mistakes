@@ -1,0 +1,23 @@
+//*-- Share --*\\
+.icono-share{
+    height: @9;
+    width: @9;
+    .border-radius(50%);
+    box-shadow: inset 0 0 0 @32, @22 -1*@11 0 0, @22 1*@11 0 0;
+    margin: @12 @24 @13 @1;
+    &:before, &:after{
+        position: absolute;
+        width: @24;
+        height: @2;
+        box-shadow: inset 0 0 0 @32;
+        left: 0;
+    }
+    &:before{
+        top:-1*@2;
+        .transform(rotate(-25deg));
+    }
+    &:after{
+        top:@9;
+        .transform(rotate(25deg));
+    }
+}

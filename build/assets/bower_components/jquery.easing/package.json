@@ -1,0 +1,35 @@
+{
+  "name": "jquery.easing",
+  "version": "1.4.1",
+  "homepage": "https://github.com/gdsmith/jquery.easing",
+  "description": "A jQuery plugin from GSGD to give advanced easing options",
+  "author": {
+    "name": "George McGinley Smith",
+    "email": "george@gsgd.co.uk",
+    "url": "http://gsgd.co.uk/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gdsmith/jquery.easing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gdsmith/jquery.easing/issues"
+  },
+  "main": "jquery.easing.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Use tests in the examples directory\" && exit 1",
+    "build": "uglifyjs jquery.easing.js --compress --mangle -o jquery.easing.min.js"
+  },
+  "devDependencies": {
+    "jquery": ">=1.3.0",
+    "uglify-js": "^2.6.2"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "license": "BSD-3-Clause"
+}

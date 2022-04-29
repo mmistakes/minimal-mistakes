@@ -1,0 +1,74 @@
+//*-- Volume --*\\
+.icono-volume{
+    width: 0;
+    height: 0;
+    border: @7 solid;
+    border-left: none;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    padding: @6 @3;
+    box-shadow: inset @4 0;
+    margin: @4 @10 @4 @11;
+}
+.icono-volumeLow{
+    &:extend(.icono-volume);
+    margin: @4 @14 @4 @7;
+    &:before{
+        width: @15;
+        height: @15;
+        position: absolute;
+        .border-radius(50%);
+        &:extend(.icono-stroke);
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        left: @2;
+        &:extend(.stickCenterV);
+    }
+}
+.icono-volumeMedium{
+    &:extend(.icono-volumeLow all);
+    margin: @4 @16 @4 @5;
+    &:before{
+        border-style: double;
+        border-width: @6;
+        left: -1*@2;
+    }
+}
+.icono-volumeHigh{
+    &:extend(.icono-volumeMedium all);
+    margin: @4 @18 @4 @3;
+    &:after{
+        &:extend(.icono-volumeLow:before);
+        width: @32;
+        height: @32;
+        left: -1*@7;
+    }
+}
+.icono-volumeDecrease{
+    &:extend(.icono-volume);
+    margin: @4 @16 @4 @5;
+    &:before, &:after{
+        &:extend(.stickCenterV);
+        box-shadow: inset 0 0 0 @32;
+    }
+    &:before{
+        width: @10;
+        height: @2;
+        left: @17;
+    }
+}
+.icono-volumeIncrease{
+    &:extend(.icono-volumeDecrease all);
+    &:after{
+        height: @10;
+        width: @2;
+        left: @17+@4;
+    }
+}
+.icono-volumeMute{
+    &:extend(.icono-volumeIncrease all);
+    &:after, &:before{
+        .transform(translateY(-50%) rotate(45deg));
+    }
+}

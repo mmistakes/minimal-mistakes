@@ -1,0 +1,27 @@
+{
+  "name": "ghosthunter",
+  "version": "0.6.0",
+  "description": "GhostHunter allows a theme developer for the Ghost blogging platform to add client-side search capability using lunr.js.",
+  "main": "jquery.ghostHunter.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fbennett/ghostHunter.git"
+  },
+  "author": "Jamal Neufeld",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fbennett/ghostHunter/issues"
+  },
+  "homepage": "https://github.com/fbennett/ghostHunter#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0"
+  }
+}

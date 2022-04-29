@@ -1,0 +1,27 @@
+<!doctype html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery lightgallery Test Suite</title>
+    <!-- Load local jQuery. -->
+    <script src="//cdn.jsdelivr.net/jquery/1.7/jquery.min.js"></script>
+    <!-- Load local QUnit. -->
+    <link rel="stylesheet" href="../bower_components/qunit/qunit/qunit.css" media="screen">
+    <script src="../bower_components/qunit/qunit/qunit.js"></script>
+    <!-- Load local lib and tests. -->
+    <script src="../src/js/lightgallery.js"></script>
+    <script src="lightgallery_test.js"></script>
+    <!-- Removing access to jQuery and $. But it'll still be available as _$, if
+         you REALLY want to mess around with jQuery in the console. REMEMBER WE
+         ARE TESTING A PLUGIN HERE, THIS HELPS ENSURE BEST PRACTICES. REALLY. -->
+    <script>window._$ = jQuery.noConflict(true);</script>
+  </head>
+  <body>
+    <div id="qunit"></div>
+    <ul id="lightgallery">
+      <li data-src="images/4.jpg">
+            <a href="#"><img src="images/thumb4.jpg" /></a>
+      </li>
+    </ul>
+  </body>
+</html>

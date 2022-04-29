@@ -1,0 +1,39 @@
+// Welcome to Iconode
+// You can use this file in your project instead of .css file, and build it with other your less files.
+
+@import "variables";
+@import "generals";
+@import "mixins";
+@import "icons";
+
+[class*="icono-"] {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    font-style: normal;
+    color: @maincolor;
+    text-align: left;
+    text-indent: -9999px;
+    direction: ltr;
+    &:before, &:after{
+        content:'';
+        pointer-events: none;
+    }
+    &[class*="Circle"]{
+        &:extend(.icono-stroke);
+        .border-radius(50%);
+        width: @30;
+        height: @30;
+        margin: @2;
+    }
+    &[class*="Square"]{
+        &:extend(.icono-stroke);
+        .border-radius(@4);
+        width: @30;
+        height: @30;
+        margin: @2;
+    }
+    &, & *{
+        box-sizing: border-box;
+    }
+}

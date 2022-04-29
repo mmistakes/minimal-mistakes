@@ -1,0 +1,29 @@
+//*-- Tag --*\\
+.icono-tag{
+    width: $U18;
+    height: $U24;
+    @extend .icono-stroke;
+    @include border-radius($U6 $U6 $U4 $U4);
+    border-top: none;
+    @include transform(rotate(45deg));
+    margin: $U5 $U8;
+    &:before{
+        position: absolute;
+        top: -1*$U4;
+        left: $U1;
+        width: $U10;
+        height: $U10;
+        border-width: $U2 0 0 $U2;
+        border-style: solid;
+        @include transform(rotate(45deg));
+        @include border-radius($U5 0 0 0)
+    }
+    &:after{
+        @extend .stickCenterH;
+        top: $U1;
+        width: $U3;
+        height: $U3;
+        @extend .icono-stroke;
+        @include border-radius(50%);
+    }
+}

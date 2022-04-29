@@ -1,0 +1,23 @@
+//*-- piano --*\\
+.icono-piano{
+    width: @28;
+    height: @22;
+    &:extend(.icono-stroke);
+    margin: @6 @3;
+    &:before{
+        position: absolute;
+        left: @4;
+        top: 0;
+        width: @1;
+        height: 100%;
+        box-shadow: inset 0 0 0 @32, @5 0, @10 0, @15 0;
+    }
+    &:after{
+        position: absolute;
+        width: @3;
+        height: @12;
+        left: @3;
+        top: 0;
+        box-shadow: inset 0 0 0 @32, @5 0, @10 0, @15 0;
+    }
+}

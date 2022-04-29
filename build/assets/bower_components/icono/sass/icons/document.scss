@@ -1,0 +1,24 @@
+//*-- Document --*\\
+.icono-document{
+    width: $U26;
+    height: $U32;
+    @include border-radius(0 0 0 $U10);
+    @extend .icono-stroke;
+    margin: $U1 $U4;
+    &:before{
+        position: absolute;
+        @include square(0);
+        left: -1*$U3;
+        bottom: -1*$U3;
+        border-width: $U5;
+        border-style: solid;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    &:after{
+        width: $U13;
+        height: $U2;
+        @extend .stickCenter;
+        box-shadow: inset 0 0 0 $U32, 0 -1*$U5 0 0, 0 $U5 0 0;
+    }
+}

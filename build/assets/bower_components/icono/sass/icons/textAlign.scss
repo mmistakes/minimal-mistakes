@@ -1,0 +1,30 @@
+//*-- Text align --*\\
+[class*="icono-textAlign"]{
+    width: $U28;
+    height: $U22;
+    margin: $U6 $U3;
+    &:before, &:after{
+        position: absolute;
+        height: $U2;
+        box-shadow: inset 0 0 0 $U32, 0 $U8 0 0, 0 $U16 0 0;
+        right: 0;
+    }
+    &:before{
+        width: $U28;
+        top: 0;
+    }
+    &:after{
+        width: $U18;
+        top: $U4;
+    }
+    &.icono-textAlignCenter{
+        &:before, &:after{
+            @extend .stickCenterH;
+        }
+    }
+    &.icono-textAlignLeft{
+        &:before, &:after{
+            left: 0;
+        }
+    }
+}

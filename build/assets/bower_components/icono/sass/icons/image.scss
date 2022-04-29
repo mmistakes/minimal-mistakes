@@ -1,0 +1,26 @@
+//*-- Image --*\\
+.icono-image{
+    width: $U30;
+    height: $U26;
+    @extend .icono-stroke;
+    @include border-radius($U3);
+    overflow: hidden;
+    margin: $U4 $U2;
+    &:before{
+        position: absolute;
+        width: $U20;
+        height: $U20;
+        left: -1*$U2;
+        top: $U14;
+        @include transform(rotate(45deg));
+        box-shadow: inset 0 0 0 $U32, $U10 -1*$U6 0 0;
+    }
+    &:after{
+        position: absolute;
+        @include square($U4);
+        @include border-radius(50%);
+        box-shadow: inset 0 0 0 $U32;
+        top: $U5;
+        right: $U5;
+    }
+}

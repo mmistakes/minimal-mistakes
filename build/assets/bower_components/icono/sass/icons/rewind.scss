@@ -1,0 +1,5 @@
+//*-- Rewind --*\\
+.icono-rewind{
+    @extend .icono-forward;
+    @include transform(rotate(180deg));
+}

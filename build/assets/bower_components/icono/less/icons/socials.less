@@ -1,0 +1,237 @@
+//*-- Socials --*\\
+.icono-facebook{
+    width: @9;
+    height: @26;
+    box-shadow: inset @2 @4 0 0;
+    border-left: @3 solid;
+    .border-radius(@5 0 0 0);
+    margin: @4 @11 @4 @14;
+    &:before{
+        position: absolute;
+        top: @9;
+        left: -1*@6;
+        width: @11;
+        height: 0;
+        border-top: @4 solid;
+        border-right: @1 solid transparent;
+    }
+}
+.icono-twitter{
+    width: @14;
+    height: @23;
+    .border-radius(0 0 0 @8);
+    box-shadow: -1*@6 @2 0 0;
+    margin: @4 @7 @7 @13;
+    &:before{
+        position: absolute;
+        bottom: -1*@2;
+        left: -1*@6;
+        width: @17;
+        height: @6;
+        .border-radius(0 0 0 @8);
+        box-shadow: inset @4 -1*@6, 0 -1*@11;
+    }
+    &:after{
+        position: absolute;
+        width: @6;
+        height: @6;
+        box-shadow: inset 0 0 0 @32, @13 @8, @13 @19;
+        .border-radius(50%);
+        left: -1*@6;
+    }
+}
+.icono-gplus{
+    width: @10;
+    height: @2;
+    box-shadow: inset 0 0 0 @32;
+    margin: @14 @4 @18 @20;
+    &:before{
+        position: absolute;
+        top: -@5;
+        right: @10;
+        content: "g" !important;
+        font-family: georgia;
+        font-size: @32;
+        text-indent: 0;
+        line-height: 0;
+    }
+    &:after{
+        &:extend(.stickCenter);
+        width: @2;
+        height: @10;
+        box-shadow: inset 0 0 0 @32;
+    }
+}
+.icono-linkedIn{
+    width: @5;
+    height: @16;
+    box-shadow: inset 0 0 0 @32, @8 0; 
+    margin: @12 @24 @6 @5;
+    &:before{
+        position: absolute;
+        width: @5;
+        height: @5;
+        box-shadow: inset 0 0 0 @32;
+        top: -1*@7;
+        left: 0;
+        .border-radius(50%);
+    }
+    &:after{
+        position: absolute;
+        width: @12;
+        height: @16;
+        border-right: @1 solid;
+        left: @11;
+        bottom: 0;
+        .border-radius(@8 @5 0 0~'/'@11 @5 0 0);
+        box-shadow: inset -1*@4 @4;
+    }
+}
+.icono-instagram{
+    width: @26;
+    height: @26;
+    box-shadow: inset 0 0 0 @2;
+    .border-radius(@4);
+    margin: @4;
+    &:before{
+        &:extend(.stickCenter);
+        width: @10;
+        height: @10;
+        .border-radius(50%);
+        box-shadow: 0 0 0 @3;
+    }
+    &:after{
+        position: absolute;
+        width: @5;
+        height: @5;
+        .border-radius(@1);
+        right: @3;
+        top: @3;
+        box-shadow: 0 0  0 @2, @1 @1 0 @2, -1*@5 -1*@1 0 @1, -1*@10 -1*@1 0 @1, -1*@16 @1 0 @2;
+    }
+}
+.icono-flickr{
+    width: @24;
+    height: @24;
+    overflow: hidden;
+    .border-radius(@4);
+    margin: @5;
+    &:before, &:after{
+        &:extend(.stickCenterV);
+        width: @7;
+        height: @7;
+        .border-radius(50%);
+    }
+    &:before{
+        left: @4;
+        box-shadow: 0 0 0 @1, 0 -1*@10 0 @6, 0 @10 0 @6, -1*@4 0 0 @3;
+    }
+    &:after{
+        right: @4;
+        box-shadow: 0 0 0 @1, 0 -1*@10 0 @6, 0 @10 0 @6, @4 0 0 @3;
+    }
+}
+.icono-delicious{
+    width: @24;
+    height: @24;
+    overflow: hidden;
+    .border-radius(@4);
+    box-shadow: inset 0 0 0 @2;
+    margin: @5;
+    &:before{
+        position: absolute;
+        width: @12;
+        height: @12;
+        box-shadow: inset 0 0 0 @32, @12 -1*@12 0 0;
+        left: 0;
+        bottom: 0;
+    }
+}
+.icono-codepen{
+    width: @2;
+    height: @10;
+    box-shadow: inset 0 0 0 @32, 0 @15, -1*@11 @7, @11 @7;
+    margin: @4 @16 @20;
+    &:before{
+        position: absolute;
+        right: @2;
+        top: @3;
+        width: @11;
+        height: @4;
+        transform: skew(0, -35deg) scaleY(0.6);
+        box-shadow: inset 0 0 0 @32, 0 @13, @11 @26, @12 @32+@7;
+    }
+    &:after{
+        position: absolute;
+        left: @2;
+        top: @3;
+        width: @11;
+        height: @4;
+        transform: skew(0, 35deg) scaleY(0.6);
+        box-shadow: inset 0 0 0 @32, 0 @13, -1*@11 @26, -1*@12 @32+@7;
+    }
+}
+.icono-blogger{
+    width: @24;
+    height: @14;
+    .border-radius(0 0 @7 @7);
+    margin: @14 @5 @6;
+    &, &:before{
+        border-width: @6;
+        border-style: solid;      
+    }
+    &:before{
+        position: absolute;
+        width: @8;
+        height: @2;
+        left: -1*@6;
+        top: -1*@15;
+        .border-radius(@6 @6 0 0)
+    }
+}
+.icono-disqus{
+    width: @31;
+    height: @31;
+    box-shadow: inset 0 0 0 @32;
+    .border-radius(50%);
+    margin: @1 @1 @2 @2;
+    &:before{
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: @5 solid transparent;
+        border-top: @10 solid;
+        .transform(rotate(50deg));
+        left: -@5;
+        top: @20;
+    }
+}
+.icono-dribbble{
+    width: @26;
+    height: @26;
+    .border-radius(50%);
+    box-shadow: inset 0 0 0 @2;
+    overflow: hidden;
+    position: relative;
+    background-image: radial-gradient(50% 100%, transparent 0, transparent @9, currentColor @10, currentColor @11, transparent @12);
+    background-repeat: no-repeat;
+    background-position: -@8 center;
+    .transform(rotate(-25deg));
+    margin: @4;
+    &:after, &:before{
+        position: absolute;
+        border-radius: 50%;
+        border: @2 solid;
+        width: 2*@20;
+        height: @30;
+    }
+    &:after{
+        top: @14;
+        left: -@7;
+        width: @32;
+    }
+    &:before{
+        left: -@6;
+        top: -@23;
+    }
+}

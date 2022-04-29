@@ -1,0 +1,30 @@
+//*-- Bookmark --*\\
+.icono-bookmark{
+    width: 0;
+    height: 0;
+    border: $U9 solid;
+    border-bottom-color: transparent;
+    box-shadow: 0 -1*$U4;
+    @include border-radius($U3 $U3 0 0);
+    margin: $U10 $U8 $U6;
+}
+.icono-bookmarkEmpty{
+    width: $U18;
+    height: $U22;
+    @extend .icono-stroke;
+    border-bottom: none;
+    @include border-radius($U3 $U3 $U2 $U2);
+    overflow: hidden;
+    margin: $U6 $U8;
+    &:before{
+        position: absolute;
+        width: $U12;
+        height: $U12;
+        bottom: 0;
+        left: 0;
+        @extend .icono-stroke;
+        border-right: none;
+        border-bottom: none;
+        @include transform(rotate(45deg) translate(35%, 35%));
+    }
+}

@@ -1,0 +1,38 @@
+$maincolor: #ddd;
+$size: 32px;//pixel for this version
+
+
+$U1: ceil($size/32);
+$U2: ceil($size/16);
+$U3: ceil($size/12);
+$U4: ceil($size/8);
+$U5: ceil($size/7);
+$U6: ceil($size/5.4);
+$U7: ceil($size/4.9);
+$U8: ceil($size/4);
+$U9: ceil($size/3.7);
+$U10: ceil($size/3.2);
+$U11: ceil($size/3.1);
+$U12: ceil($size/2.7);
+$U13: ceil($size/2.5);
+$U14: ceil($size/2.3);
+$U15: ceil($size/2.2);
+$U16: ceil($size/2);
+$U17: ceil($size/1.9);
+$U18: ceil($size/1.8);
+$U19: ceil($size/1.7);
+$U20: ceil($size/1.6);
+$U21: ceil($size/1.55);
+$U22: ceil($size/1.5);
+$U23: ceil($size/1.4);
+$U24: ceil($size/1.34);
+$U25: ceil($size/1.3);
+$U26: ceil($size/1.25);
+$U27: ceil($size/1.2);
+$U28: ceil($size/1.15);
+$U29: ceil($size/1.12);
+$U30: ceil($size/1.1);
+$U31: ceil($size/1.05);
+$U32: $size;
+
+$stroke: $U2 solid;

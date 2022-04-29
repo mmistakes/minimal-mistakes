@@ -1,0 +1,111 @@
+.lg-outer {
+    .lg-thumb-outer {
+        background-color: $lg-thumb-bg;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        z-index: $zindex-thumbnail;
+        max-height: 350px;
+        @include translate3d(0, 100%, 0);
+        @include transitionCustom(transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s);
+
+        &.lg-grab {
+            .lg-thumb-item {
+                @include grab-cursor;
+            }
+        }
+
+        &.lg-grabbing {
+            .lg-thumb-item {
+                @include grabbing-cursor;
+            }
+        }
+
+        &.lg-dragging {
+            .lg-thumb {
+                @include transition-duration(0s !important);
+            }
+        }
+    }
+    &.lg-thumb-open{
+        .lg-thumb-outer {
+            @include translate3d(0, 0%, 0);
+        }
+    }
+
+    .lg-thumb {
+        padding: 10px 0;
+        height: 100%;
+        margin-bottom: -5px;
+    }
+
+    .lg-thumb-item {
+        border-radius: 5px;
+        cursor: pointer;
+        float: left;
+        overflow: hidden;
+        height: 100%;
+        border: 2px solid #FFF;
+        border-radius: 4px;
+        margin-bottom: 5px;
+        @media (min-width: 1025px) {
+            @include transition(border-color 0.25s ease);
+        }
+
+        &.active, &:hover {
+            border-color: $lg-theme-highlight;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &.lg-has-thumb {
+        .lg-item {
+            padding-bottom: 120px;
+        }
+    }
+
+    &.lg-can-toggle {
+        .lg-item {
+            padding-bottom: 0;
+        }
+    }
+    &.lg-pull-caption-up{
+        .lg-sub-html {
+            @include transition(bottom 0.25s ease);
+        }
+        &.lg-thumb-open{
+            .lg-sub-html {
+                bottom: 100px;
+            }
+        }
+    }
+
+    .lg-toogle-thumb {
+        background-color: $lg-thumb-toggle-bg;
+        border-radius: $lg-border-radius-base $lg-border-radius-base 0 0;
+        color: $lg-thumb-toggle-color;
+        cursor: pointer;
+        font-size: 24px;
+        height: 39px;
+        line-height: 27px;
+        padding: 5px 0;
+        position: absolute;
+        right: 20px;
+        text-align: center;
+        top: -39px;
+        width: 50px;
+
+        &:after {
+            content: "\e1ff";
+        }
+
+        &:hover {
+            color: $lg-thumb-toggle-hover-color;
+        }
+    }
+}

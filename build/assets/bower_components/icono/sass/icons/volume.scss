@@ -1,0 +1,74 @@
+//*-- Volume --*\\
+.icono-volume{
+    width: 0;
+    height: 0;
+    border: $U7 solid;
+    border-left: none;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    padding: $U6 $U3;
+    box-shadow: inset $U4 0;
+    margin: $U4 $U10 $U4 $U11;
+}
+.icono-volumeLow{
+    @extend .icono-volume;
+    margin: $U4 $U14 $U4 $U7;
+    &:before{
+        width: $U15;
+        height: $U15;
+        position: absolute;
+        @include border-radius(50%);
+        @extend .icono-stroke;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        left: $U2;
+        @extend .stickCenterV;
+    }
+}
+.icono-volumeMedium{
+    @extend .icono-volumeLow;
+    margin: $U4 $U16 $U4 $U5;
+    &:before{
+        border-style: double;
+        border-width: $U6;
+        left: -1*$U2;
+    }
+}
+.icono-volumeHigh{
+    @extend .icono-volumeMedium;
+    margin: $U4 $U18 $U4 $U3;
+    &:after{
+        @extend .icono-volumeLow:before;
+        width: $U32;
+        height: $U32;
+        left: -1*$U7;
+    }
+}
+.icono-volumeDecrease{
+    @extend .icono-volume;
+    margin: $U4 $U16 $U4 $U5;
+    &:before, &:after{
+        @extend .stickCenterV;
+        box-shadow: inset 0 0 0 $U32;
+    }
+    &:before{
+        width: $U10;
+        height: $U2;
+        left: $U17;
+    }
+}
+.icono-volumeIncrease{
+    @extend .icono-volumeDecrease;
+    &:after{
+        height: $U10;
+        width: $U2;
+        left: $U17+$U4;
+    }
+}
+.icono-volumeMute{
+    @extend .icono-volumeIncrease;
+    &:after, &:before{
+        @include transform(translateY(-50%) rotate(45deg));
+    }
+}

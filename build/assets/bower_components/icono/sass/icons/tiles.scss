@@ -1,0 +1,8 @@
+//*-- Tiles --*\\
+.icono-tiles{
+	@include square($U4);
+	box-shadow: 0 -1*$U8 0, -1*$U8 -1*$U8 0, $U8 -1*$U8 0,
+				0 0 0 $U32 inset, -1*$U8 0 0, $U8 0 0,
+				0 $U8 0, -1*$U8 $U8 0, $U8 $U8 0;
+	margin: $U15;
+}

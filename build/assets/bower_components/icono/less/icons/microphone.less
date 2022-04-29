@@ -1,0 +1,24 @@
+//*-- Microphone --*\\
+.icono-microphone{
+    width: @22;
+    height: @15;
+    &:extend(.icono-stroke);
+    border-width: 0 @2 @2;
+    .border-radius(@20~'/'0 0 @20 @20);
+    margin: @12 @6 @7;
+    &:before{
+        width: @10;
+        height: @18;
+        &:extend(.stickCenterH);
+        top: -1*@11;
+        .border-radius(@20);
+        &:extend(.icono-stroke);
+    }
+    &:after{
+        width: @2;
+        height: @2;
+        bottom: -1*@4;
+        &:extend(.stickCenterH);
+        box-shadow: inset 0 0 0 @32, 0 @2, 0 @4, -1*@2 @4, -1*@4 @4, -1*@6 @4, @2 @4, @4 @4, @6 @4;
+    }
+}

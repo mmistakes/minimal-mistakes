@@ -1,0 +1,15 @@
+//*-- Keyboard --*\\
+.icono-keyboard{
+    width: $U32;
+    height: $U22;
+    @include border-radius($U3);
+    @extend .icono-stroke;
+    margin: $U6 $U1;
+    &:before{
+        @include square($U2);
+        @extend .stickCenter;
+        box-shadow: -1*$U2 -1*$U4 0, -1*$U6 -1*$U4 0, -1*$U10 -1*$U4 0, $U2 -1*$U4 0, $U6 -1*$U4 0, $U8 -1*$U4 0, $U10 -1*$U4 0,
+                    -1*$U4 0 0, -1*$U8 0 0, -1*$U10 0 0, inset 0 0 0 $U32, $U4 0 0, $U8 0 0, $U10 0 0,
+                    $U4 $U4 0, $U2 $U4 0, 0 $U4 0, -1*$U2 $U4 0, -1*$U6 $U4 0, -1*$U10 $U4 0, $U6 $U4 0, $U10 $U4 0;
+    }
+}

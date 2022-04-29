@@ -1,0 +1,22 @@
+{
+  "name": "devlopr-jekyll",
+  "homepage": "https://github.com/sujaykundu777/devlopr-jekyll",
+  "authors": [
+    "sujaykundu777 <sujaykundu777@gmail.com>"
+  ],
+  "description": "A Jekyll Theme Built For Developers",
+  "main": "",
+  "keywords": [
+    "jekyll-theme",
+    "jekyll",
+    "gallery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

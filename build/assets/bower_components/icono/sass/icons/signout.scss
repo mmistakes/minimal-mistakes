@@ -1,0 +1,22 @@
+//*-- Sign out --*\\
+.icono-signOut{
+    width: $U18;
+    height: $U32;
+    @extend .icono-stroke;
+    border-right: none;
+    margin-right: $U5;
+    @include border-radius($U3 0 0 $U3);
+    margin: $U1 $U8;
+    &:before{
+        position: absolute;
+        width: $U11;
+        height: $U11;
+        right:-1*$U2;
+        top:$U7;
+        @extend .icono-stroke;
+        border-bottom: none;
+        border-left: none;
+        @include transform(rotate(45deg));
+        @include border-radius(0 $U4 0 0);    
+    }
+}

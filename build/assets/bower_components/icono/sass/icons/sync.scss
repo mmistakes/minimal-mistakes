@@ -1,0 +1,29 @@
+//*-- Sync --*\\
+.icono-sync{
+    width: $U26;
+    height: $U26;
+    @include border-radius(50%);
+    @extend .icono-stroke;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    margin: $U4;
+    &:before, &:after{
+        position: absolute;
+        width: 0;height: 0;
+        border-width: $U6;
+        border-style: solid;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    &:before{
+        @include transform(rotate(-45deg));
+        right: -1*$U7;
+        top:0;
+    }
+    &:after{
+        @include transform(rotate(135deg));
+        left: -1*$U7;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,21 @@
+//*-- Display --*\\
+.icono-display{
+    width: @26;
+    height: @22;
+    &:extend(.icono-stroke);
+    margin: @4 @4 @8;
+    &:before{
+        width: @4;
+        height: @3;
+        &:extend(.stickCenterH);
+        bottom: -1*@5;
+        box-shadow: inset 0 0 0 @32;
+    }
+    &:after{
+        width: @14;
+        height: @2;
+        &:extend(.stickCenterH);
+        bottom: -1*@6;
+        box-shadow: inset 0 0 0 @32;
+    }
+}

@@ -1,0 +1,25 @@
+//*-- LocationArrow --*\\
+.icono-locationArrow{
+    width: $U32;
+    height: $U32;
+    margin: $U1;
+    &:before{
+        position: absolute;
+        left: $U7;
+        top: $U16;
+        border-width: $U6 0 $U6 $U6;
+        border-style: solid;
+        border-left-color: transparent;
+        @include transform(rotate(-45deg));
+    }
+    &:after{
+        position: absolute;
+        top: $U10;
+        left: $U2;
+        border-width: $U10;
+        border-style: solid;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        @include transform(skew(-30deg, -30deg));
+    }
+}

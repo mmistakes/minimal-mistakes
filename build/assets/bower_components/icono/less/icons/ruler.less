@@ -1,0 +1,23 @@
+//*-- Ruler --*\\
+.icono-ruler{
+    width: @27;
+    height: @12;
+    &:extend(.icono-stroke);
+    margin: @11 @4 @11 @3;
+    &:before{
+        position: absolute;
+        width: @1;
+        height: @4;
+        box-shadow: inset 0 0 0 @32, @6 0, @12 0;
+        left: @5;
+        top: 0;
+    }
+    &:after{
+        position: absolute;
+        width: @1;
+        height: @2;
+        box-shadow: inset 0 0 0 @32, @2 0, @6 0, @8 0, @12 0, @14 0, @18 0, @20 0;
+        left: @1;
+        top: 0;
+    }
+}

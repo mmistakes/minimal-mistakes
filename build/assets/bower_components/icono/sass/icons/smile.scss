@@ -1,0 +1,30 @@
+//*-- Smile --*\\
+.icono-smile{
+    @include border-radius(50%);
+    @extend .icono-stroke;
+    height: $U30;
+    width: $U30;
+    margin: $U2;
+    &:before{
+        @include border-radius(50%);
+        box-shadow: $U8 0 0 0, 0 0 0 $U2 inset;
+        height: $U4;
+        width: $U4;
+        left: $U7;
+        position: absolute;
+        top: 27%;
+    }
+    &:after{
+        @include border-radius(50%);
+        @include transform(translateX(-50%));
+        @extend .icono-stroke;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        height: $U16;
+        left:50%;
+        position: absolute;
+        top: 6%;
+        width: $U16;
+    }
+}

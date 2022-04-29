@@ -1,0 +1,27 @@
+//*-- Crop --*\\
+.icono-crop{
+    .square(@21);
+    &:extend(.icono-stroke);
+    border-left: none;
+    border-bottom: none;
+    margin: @9 @9 @4 @4;
+    &:before{
+        position: absolute;
+        .square(@21);
+        &:extend(.icono-stroke);
+        top: -1*@7;
+        right: -1*@7;
+        border-top: none;
+        border-right: none;
+        box-sizing: border-box;
+    }
+    &:after{
+        position: absolute;
+        width: @27;
+        height: @1;
+        left: @2;
+        top: @3;
+        box-shadow: inset 0 0 0 @32;
+        .transform(rotate(-45deg));
+    }
+}

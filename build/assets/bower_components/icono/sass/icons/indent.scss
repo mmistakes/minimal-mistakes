@@ -1,0 +1,18 @@
+//*-- Indent --*\\
+.icono-indent{
+    width: $U20;
+    height: $U16;
+    border-width: $U4 0 $U4 $U8;
+    border-style: solid;
+    border-color: transparent;
+    box-shadow: 0 -1*$U2, 0 $U2, inset 0 $U2, inset 0 -1*$U2;
+    margin: $U9 $U7;
+    &:before{
+        @extend .stickCenterV;
+        left: -1*$U8;
+        border: $U5 solid;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-right-width: 0;
+    }
+}

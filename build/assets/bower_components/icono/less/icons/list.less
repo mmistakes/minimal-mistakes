@@ -1,0 +1,13 @@
+//*-- List --*\\
+.icono-list{
+    .square(@4);
+    box-shadow: inset 0 0 0 @32, 0 -1*@8 0 0, 0 1*@8 0 0;
+    margin: @15 @26 @15 @4;
+    &:before{
+        &:extend(.stickCenterV);
+        width: @18;
+        height: @4;
+        left: @8;
+        box-shadow: inset 0 0 0 @32, 0 -1*@8 0 0, 0 1*@8 0 0;
+    }
+}

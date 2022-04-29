@@ -1,0 +1,9 @@
+//*-- Outdent --*\\
+.icono-outdent{
+    @extend .icono-indent;
+    &:before{
+        @extend .icono-indent:before;
+        border-left-width: 0;
+        border-right-width: $U5;
+    }
+}

@@ -1,0 +1,15 @@
+v0.5.1	: Performance enhancements to stop involuntary DDOS
+v0.5.0  : Levenshtein screen updates, fuzzy searching thanks to @fbennett
+v0.4.1  : Index caching, repo reorganization, extended metadata thanks to @fbennett
+v0.4.0  : Ghost 1.0 compatibility
+v0.3.5	: Exported query options ; added option to search static pages
+v0.3.4	: Added onPageLoad option to improve onKeyUp option thanks to @cjsheets.
+v0.3.3 	: Exported Lunr to a separate js file ; made the no-dependency version available.
+v0.3.2	: Added PrettyDate option thanks to @alavers
+v0.3.1  : Added tag support in the index thanks to @lizhuoli1126
+v0.3.0  : Stopped using RSS, started using API.
+v0.2.3	: Added callbacks
+	  Added tags/categories to the indexed data
+v0.2.2	: Added the "clear" method
+v0.2	: Added ability to have search occur onKeyUp
+v0.1	: Initial commit, fully functional alpha

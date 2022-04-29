@@ -1,0 +1,30 @@
+//*-- Paper clip --*\\
+.icono-paperClip{
+    width: @24;
+    height: @18;
+    &:extend(.icono-stroke);
+    border-left: none;
+    .border-radius(0 @16 @16 0);
+    .transform(rotate(-45deg));
+    margin: @5 0 @11 @10;
+    &:before{
+        width: @18;
+        height: @6;
+        right: @2;
+        &:extend(.stickCenterV);
+        &:extend(.icono-stroke);
+        .border-radius(0 @16 @16 0);
+        border-left: none;
+    }
+    &:after{
+        position: absolute;
+        width: @12;
+        height: @10;
+        left: -1*@12;
+        top: -1*@2;
+        &:extend(.icono-stroke);
+        border-right: none;
+        .border-radius(@16 0 0 @16);
+
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "matches-selector",
+  "description": "matches/matchesSelector helper",
+  "main": "matches-selector.js",
+  "devDependencies": {
+    "qunit": "1.x"
+  },
+  "homepage": "https://github.com/desandro/matches-selector",
+  "authors": [
+    "David DeSandro"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "DOM",
+    "matchesSelector",
+    "matches"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "tests.*",
+    "package.json"
+  ]
+}

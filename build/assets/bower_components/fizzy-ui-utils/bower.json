@@ -1,0 +1,32 @@
+{
+  "name": "fizzy-ui-utils",
+  "authors": [
+    "David DeSandro"
+  ],
+  "description": "UI utilities",
+  "main": "utils.js",
+  "dependencies": {
+    "desandro-matches-selector": "^2.0.0"
+  },
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "utility",
+    "ui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "package.json"
+  ],
+  "devDependencies": {
+    "qunit": "~1.20.0"
+  }
+}

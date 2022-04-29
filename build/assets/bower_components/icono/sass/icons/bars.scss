@@ -1,0 +1,10 @@
+//*-- bars --*\\
+.icono-bars{
+    width: $U20;
+    height: $U2;
+    box-shadow: inset 0 0 0 $U32, 0 -1*$U6, 0 $U6;
+    margin: $U16 $U7;
+}
+.icono-hamburger{
+    @extend .icono-bars;//will be deprecate
+}

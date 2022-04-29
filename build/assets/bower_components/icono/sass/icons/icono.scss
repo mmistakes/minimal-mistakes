@@ -1,0 +1,27 @@
+.icono-icono{
+  width: $U13;
+  height: $U4;
+  box-shadow: inset 0 0 0 $U32, 0 $U16, $U17 -1*$U18;
+  transform: skew(0, 30deg);
+  margin: $U11 $U19 $U19 $U2;
+  &:before{
+    position: absolute;
+    width: $U13;
+    height: $U4;
+    box-shadow: inset 0 0 0 $U32, 0 $U16, -1*$U17 -1*$U17;
+    right: -1*$U17;
+    top: -1*$U10;
+    transform: skew(0, -48deg);
+  }
+  &:after{
+    position: absolute;
+    width: $U22;
+    height: $U15;
+    left: 0;
+    top: -1*$U5;
+    border: $U4 solid;
+    border-top-color: transparent;
+    border-bottom: none;
+    transform: skew(0, -30deg) scaleY(0.6);
+  }
+}

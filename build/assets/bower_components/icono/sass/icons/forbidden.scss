@@ -1,0 +1,15 @@
+//*-- Forbidden --*\\
+.icono-forbidden{
+    @include square($U28);
+    @extend .icono-stroke;
+    border-width: $U3;
+    @include border-radius(50%);
+    margin: $U3;
+    @include transform(rotate(45deg));
+    &:before{
+        @extend .stickCenter;
+        width: $U24;
+        height: $U4;
+        box-shadow: inset 0 0 0 $U32;
+    }
+}

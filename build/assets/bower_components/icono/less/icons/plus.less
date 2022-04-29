@@ -1,0 +1,26 @@
+//*-- Plus --*\\
+[class*="icono-plus"], [class*="icono-cross"]{
+    width: @30;
+    height: @30;
+    margin: @2;
+    &:before, &:after{
+        &:extend(.stickCenter);
+        box-shadow: inset 0 0 0 @32;
+    }
+    &:before{
+        width: @20;
+        height: @2;
+    }
+    &:after{
+        height: @20;
+        width: @2;
+    }
+    &[class*="Circle"]{
+        &:before{
+            width: @18;
+        }
+        &:after{
+            height: @18;
+        }
+    }
+}

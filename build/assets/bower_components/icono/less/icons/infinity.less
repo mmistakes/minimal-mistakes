@@ -1,0 +1,21 @@
+//*-- Infinity --*\\
+.icono-infinity{
+    width: @32;
+    height: @16;
+    margin: @9 @1;
+    &:before, &:after{
+        width: @10;
+        height: @10;
+        position: absolute;
+        &:extend(.icono-stroke);    
+        .transform(rotate(45deg));
+    }
+    &:before{
+        left: 0;
+        .border-radius(@32 0 @32 @32);
+    }
+    &:after{
+        right: 1px;
+        .border-radius(@32 @32 @32 0);
+    }
+}
