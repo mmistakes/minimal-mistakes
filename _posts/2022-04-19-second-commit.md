@@ -2,7 +2,7 @@
 layout: post
 title:  "Day1"
 categories: SwiftUI
-tag: [iOS, blog, jekyll]
+tag: [iOS, SwiftUI, blog, jekyll]
 toc: true
 author_prifile: false
 sidebar:
@@ -27,8 +27,6 @@ sidebar:
 ![image-20220419150815188](../images/2022-04-19-second-commit/image-20220419150815188.png)
 
 ```swift
-```
-
 // we are going to store some data. it could be anyting, names, news, stories etc.. 
 // To store som data, we need a variable that we write 'var'. so variable can vary. it can change as program runs. 'var' means 'crate a new variable', it saves a little typing. and we are going to call variable 'greeting'. you can call it anything you want. 
 
@@ -142,6 +140,4 @@ print(decimalNumber)
 let a = 1
 let b = 2.0
 // let c = a + b  -error
-
-```
 ```
