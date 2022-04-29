@@ -7,4 +7,4 @@ title:  "Welcome to My First blog Post"
 
 **Hello world**, this is my first Jekyll blog post.
 
-I hope you like it!
+I hope you will like it!
