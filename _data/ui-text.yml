@@ -40,14 +40,11 @@ en: &DEFAULT_EN
   comment_success_msg        : "Thanks for your comment! It will show on the site once it has been approved."
   comment_error_msg          : "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
   loading_label              : "Loading..."
-<<<<<<< HEAD
-=======
   search_label_text          : "Enter your search term..."
   search_placeholder_text    : "Enter your search term..."
   search_algolia_no_results  : "No results"
   results_found              : "Result(s) found"
   back_to_top                : "Back to top"
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -60,13 +57,10 @@ en-AU:
 # Spanish
 # --------------
 es: &DEFAULT_ES
-<<<<<<< HEAD
-=======
   skip_links                 : "Saltar enlaces"
   skip_primary_nav           : "Saltar a navegación principal"
   skip_content               : "Saltar a contenido"
   skip_footer                : "Saltar a pie"
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
   page                       : "Página"
   pagination_previous        : "Anterior"
   pagination_next            : "Siguiente"
@@ -92,20 +86,6 @@ es: &DEFAULT_ES
   website_label              : "Sitio web"
   email_label                : "Email"
   recent_posts               : "Entradas recientes"
-<<<<<<< HEAD
-  undefined_wpm              : "Parametro words_per_minute (Palabras por minuto) no definido en _config.yml"
-  comment_form_info          :
-  comment_form_comment_label :
-  comment_form_md_info       :
-  comment_form_name_label    :
-  comment_form_email_label   :
-  comment_form_website_label :
-  comment_btn_submit         :
-  comment_btn_submitted      :
-  comment_success_msg        :
-  comment_error_msg          :
-  loading_label              :
-=======
   undefined_wpm              : "El parámetro words_per_minute (palabras por minuto) no está definido en _config.yml"
   comment_form_info          : "Tu dirección de correo electrónico no se publicará. Los campos obligatorios están marcados"
   comment_form_comment_label : "Comentario"
@@ -123,7 +103,6 @@ es: &DEFAULT_ES
   search_algolia_no_results  :
   results_found              : "resultado(s) encontrado(s)"
   back_to_top                : "Volver arriba"
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
 es-ES:
   <<: *DEFAULT_ES
 es-CO:
@@ -170,14 +149,11 @@ fr: &DEFAULT_FR
   comment_success_msg        : "Merci pour votre commentaire, il sera visible sur le site une fois approuvé."
   comment_error_msg          : "Désolé, une erreur est survenue lors de la soumission. Vérifiez que les champs obligatoires ont été remplis et réessayez."
   loading_label              : "Chargement..."
-<<<<<<< HEAD
-=======
   search_label_text          :
   search_placeholder_text    : "Entrez votre recherche..."
   search_algolia_no_results  :
   results_found              : "Résultat(s) trouvé(s)"
   back_to_top                : "Retour en haut"
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
 fr-FR:
   <<: *DEFAULT_FR
 fr-BE:
@@ -270,10 +246,6 @@ pt: &DEFAULT_PT
   comment_success_msg        : "Obrigado pelo seu comentário! Será visível no site logo que aprovado."
   comment_error_msg          : "Lamento, ocorreu um erro na sua submissão. Por favor verifique se todos os campos obrigatórios estão corretamente preenchidos e tente novamente."
   loading_label              : "A carregar..."
-<<<<<<< HEAD
-# Brazilian Portuguese
-pt-BR:
-=======
   search_label_text          :
   search_algolia_no_results  :
 pt-PT:
@@ -284,20 +256,11 @@ pt-BR:
   skip_primary_nav           : "Pular para navegação primária"
   skip_content               : "Pular para conteúdo"
   skip_footer                : "Pular para rodapé"
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
   page                       : "Página"
   pagination_previous        : "Anterior"
   pagination_next            : "Próxima"
   breadcrumb_home_label      : "Início"
   breadcrumb_separator       : "/"
-<<<<<<< HEAD
-  menu_label                 :
-  toc_label                  : "Nesta página"
-  ext_link_label             : "Link direto"
-  less_than                  : "meno que"
-  minute_read                : "minutos de leitura"
-  share_on_label             : "Compartilhe em"
-=======
   menu_label                 : "Chavear menu"
   search_label               : "Chavear busca"
   toc_label                  : "Nesta página"
@@ -305,44 +268,18 @@ pt-BR:
   less_than                  : "menos de"
   minute_read                : "minuto(s) de leitura"
   share_on_label             : "Compartilhe"
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
   meta_label                 :
   tags_label                 : "Tags:"
   categories_label           : "Categorias:"
   date_label                 : "Atualizado em:"
   comments_label             : "Deixe um comentário"
-<<<<<<< HEAD
-  comments_title             :
-  more_label                 : "Aprenda Mais"
-  related_label              : "Você Talvez Goste Também"
-  follow_label               : "Acompanhe em"
-=======
   comments_title             : "Comentários"
   more_label                 : "Saiba mais"
   related_label              : "Talvez você também goste"
   follow_label               : "Siga:"
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
   feed_label                 : "Feed"
   powered_by                 : "Feito com"
   website_label              : "Site"
-<<<<<<< HEAD
-  email_label                : "Email"
-  recent_posts               : "Postagens recentes"
-  undefined_wpm              : "Parâmetro indefinido em word_per_minute no _config.yml"
-  comment_form_info          :
-  comment_form_comment_label :
-  comment_form_md_info       :
-  comment_form_name_label    :
-  comment_form_email_label   :
-  comment_form_website_label :
-  comment_btn_submit         :
-  comment_btn_submitted      :
-  comment_success_msg        :
-  comment_error_msg          :
-  loading_label              :
-pt-PT:
-  <<: *DEFAULT_PT
-=======
   email_label                : "E-mail"
   recent_posts               : "Publicações recentes"
   undefined_wpm              : "Parâmetro words_per_minute não definido em _config.yml"
@@ -362,7 +299,6 @@ pt-PT:
   search_algolia_no_results  : "Nenhum resultado"
   results_found              : "Resultado(s) encontrado(s)"
   back_to_top                : "Voltar para o topo"
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
 
 # Italian
 # -----------------
@@ -404,47 +340,32 @@ it: &DEFAULT_IT
   comment_success_msg        : "Grazie per il tuo commento! Verrà visualizzato nel sito una volta che sarà approvato."
   comment_error_msg          : "C'è stato un errore con il tuo invio. Assicurati che tutti i campi richiesti siano stati completati e riprova."
   loading_label              : "Caricamento..."
-<<<<<<< HEAD
-=======
   search_label_text          :
   search_placeholder_text    : "Inserisci termini di ricerca..."
   search_algolia_no_results  :
   results_found              : "Risultati"
   back_to_top                : "Vai su"
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
 it-IT:
   <<: *DEFAULT_IT
 
 # Chinese  (zh-CN Chinese - China)
-<<<<<<< HEAD
-# -----------------
-zh: &DEFAULT_ZH
-=======
 # --------------------------------
 zh: &DEFAULT_ZH_HANS
   skip_links                 : "跳转链接"
   skip_primary_nav           : "转到主导航栏"
   skip_content               : "转到内容"
   skip_footer                : "转到底部"
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
   page                       : "页面"
   pagination_previous        : "上一页"
   pagination_next            : "下一页"
   breadcrumb_home_label      : "首页"
   breadcrumb_separator       : "/"
   menu_label                 : "切换菜单"
-<<<<<<< HEAD
-  toc_label                  : "在本页上"
-  ext_link_label             : "直接链接"
-  less_than                  : "少于"
-  minute_read                : "分钟 阅读"
-=======
   search_label               : "切换搜索"
   toc_label                  : "目录"
   ext_link_label             : "直接链接"
   less_than                  : "少于"
   minute_read                : "分钟阅读"
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
   share_on_label             : "分享"
   meta_label                 :
   tags_label                 : "标签:"
@@ -472,10 +393,6 @@ zh: &DEFAULT_ZH_HANS
   comment_success_msg        : "感谢您的评论！被批准后它会立即在此站点展示。"
   comment_error_msg          : "很抱歉，您的提交存在错误。请确保所有必填字段都已填写正确，然后再试一次。"
   loading_label              : "正在加载..."
-<<<<<<< HEAD
-zh-CN:
-  <<: *DEFAULT_ZH
-=======
   search_label_text          : "输入您要搜索的关键词..."
   search_placeholder_text    : "输入您要搜索的关键词..."
   search_algolia_no_results  : "无结果"
@@ -534,7 +451,6 @@ zh-TW: &DEFAULT_ZH_HANT
   search_algolia_no_results  : "沒有結果"
   results_found              : "條匹配的記錄"
   back_to_top                : "回到頂部"
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
 zh-HK:
   <<: *DEFAULT_ZH
 zh-SG:
@@ -582,13 +498,10 @@ de: &DEFAULT_DE
   comment_success_msg        : "Danke für ihren Kommentar! Er wird auf der Seite angezeigt, nachdem er geprüft wurde."
   comment_error_msg          : "Entschuldigung, es gab einen Fehler. Bitte füllen sie alle benötigten Felder aus und versuchen sie es erneut."
   loading_label              : "Lade..."
-<<<<<<< HEAD
-=======
   search_label_text          :
   search_placeholder_text    : "Suchbegriff eingeben..."
   search_algolia_no_results  :
   results_found              : "Ergebnis(se) gefunden"
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
 de-DE:
   <<: *DEFAULT_DE
 de-AT:
@@ -645,8 +558,6 @@ ne: &DEFAULT_NE
   search_algolia_no_results  :
 ne-NP:
   <<: *DEFAULT_NE
-<<<<<<< HEAD
-=======
 
 # Korean
 # ------
@@ -2021,6 +1932,5 @@ ar-AE:
 ar-EG:
   <<: *DEFAULT_AR
 
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
 # Another locale
 # --------------
