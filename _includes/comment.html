@@ -13,7 +13,7 @@
     <p class="comment__date">
       {% if include.date %}
         {% if include.index %}<a href="#comment{{ include.index }}" itemprop="url">{% endif %}
-        <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished">{{ include.date | date: "%B %d, %Y at %I:%M %p" }}</time>
+        <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished">{{ include.date | date: "%B %-d, %Y at %I:%M %p" }}</time>
         {% if include.index %}</a>{% endif %}
       {% endif %}
     </p>

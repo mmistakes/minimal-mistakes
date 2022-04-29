@@ -4,6 +4,7 @@
   {% if page.sidebar %}
     {% for s in page.sidebar %}
       {% if s.image %}
+<<<<<<< HEAD
         <img src=
         {% if s.image contains "://" %}
           "{{ s.image }}"
@@ -11,6 +12,10 @@
           "{{ s.image | absolute_url }}"
         {% endif %}
         alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+=======
+        <img src="{{ s.image | relative_url }}"
+             alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+>>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
       {% endif %}
       {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
       {% if s.text %}{{ s.text | markdownify }}{% endif %}
