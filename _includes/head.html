@@ -2,13 +2,9 @@
 
 {% include seo.html %}
 
-<<<<<<< HEAD
-<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | absolute_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-=======
 {% unless site.atom_feed.hide %}
   <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 {% endunless %}
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -20,11 +16,6 @@
 </script>
 
 <!-- For all browsers -->
-<<<<<<< HEAD
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
-
-<meta http-equiv="cleartype" content="on">
-=======
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
@@ -34,4 +25,3 @@
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
->>>>>>> 2632ff650a6efb0d856a37d675be5f1b63692181
