@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "Korea - Seoul"
-title                    : "Hooni의 "
+title                    : "Hooni의 개발일지 "
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Sehoon Kim"
