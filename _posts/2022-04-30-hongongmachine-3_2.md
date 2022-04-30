@@ -152,5 +152,7 @@ print(lr.score(test_poly, test_target))
 
 훈련 세트와 테스트 세트에 대한 점수가 크게 높아졌지만 테스트 점수가 더 높은걸 볼 수 있습니다. 그러므로 과소적합이 남아있다고 해석할 수 있습니다.
 
+***
+
 공부한 전체 코드는 깃허브에 올렸습니다.
 <https://github.com/mgskko/Data_science_Study-hongongmachine/blob/main/%ED%98%BC%EA%B3%B5%EB%A8%B8%EC%8B%A0_3%EA%B0%95_2.ipynb>
