@@ -5,6 +5,15 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
+# theme                  : "minimal-mistakes-jekyll"
+remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
 # Site Settings
 locale                   : "en-US"
 title                    : "Tomas Chor"
@@ -12,22 +21,22 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Tomas Chor"
 description              : "Investigations of oceanic and atmospheric turbulence"
-url                      : "https://tomchor.github.io"
+url                      : #"https://tomchor.github.io"
 baseurl                  : # Subpath, if there is one.
-repository               : "tomchor/tomchor.github.io"
-teaser                   : 
+repository               : #"tomchor/tomchor.github.io"
+teaser                   : #
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 #breadcrumbs             : false # true, false (default)
 words_per_minute         : 200
-remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook: # https://developers.facebook.com/docs/plugins/comments
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
@@ -88,17 +97,18 @@ analytics:
   provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          :
+    anonymize_ip         : # true, false (default)
 
 # Author information
 author:
   name             : "Tomás L. Chor"
-  avatar           : "/assets/images/TChor-02p_UCLA_cropped.jpg"
+  avatar           : #"/assets/images/TChor-02p_UCLA_cropped.jpg"
   bio              : "Atmosphere | Ocean | Turbulence"
   location         : "Somewhere"
-  email            : "website@tomaschor.xyz"
+  email            : #"website@tomaschor.xyz"
   links:
-    #    - label: "Email"
-    #  icon: "fas fa-fw fa-envelope-square"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
     #   url: "mailto:website@tomaschor.xyz"
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -109,8 +119,8 @@ author:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-      #- label: "GitHub"
-      #icon: "fab fa-fw fa-github"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
       # url: "https://github.com/tomchor"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
@@ -208,7 +218,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 10 # amount of posts to show
+paginate: 5 # amount of posts to show
 paginate_path: /blog/page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -220,7 +230,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
 
 # Mimic GitHub Pages with --safe
 whitelist:
@@ -247,7 +256,17 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
 
 
 # HTML Compression
