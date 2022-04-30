@@ -4,8 +4,8 @@ main:
     url: https://Hoonikim.github.io/
   - title: "Category"
     url: /categories/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "About"
+    url: https://github.com/Hoonikim
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
