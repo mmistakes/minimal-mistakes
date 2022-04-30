@@ -92,5 +92,7 @@ print(knr.score(test_input, test_target)) # 테스트 세트의 $R^2$은 0.97464
 
 테스트 세트의 점수가 훈련 세트보다 낮아졌으므로 과소적합 문제를 해결했습니다. 두 점수 차이도 크지 않으므로 과대적합하지도 않습니다. 
 
+***
+
 공부한 전체 코드는 깃허브에 올렸습니다.
 <https://github.com/mgskko/Data_science_Study-hongongmachine/blob/main/%ED%98%BC%EA%B3%B5%EB%A8%B8%EC%8B%A0_3%EA%B0%95_1.ipynb>
