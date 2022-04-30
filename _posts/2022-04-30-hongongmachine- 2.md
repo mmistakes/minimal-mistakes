@@ -2,7 +2,7 @@
 layout: single
 title:  "[혼공머신러닝] 2 - 1 훈련세트와 테스트 세트"
 categories: hongongmachine
-tag: [Python, Machine Learning]
+tag: [python, Machine Learning]
 ---
   
 ## 훈련세트와 테스트 세트
@@ -33,7 +33,7 @@ tag: [Python, Machine Learning]
 
 생선의 무게와 길이의 리스트
 
-```Python
+```python
 fish_length = [25.4, 26.3, 26.5, 29.0, 29.0, 29.7, 29.7, 30.0, 30.0, 30.7, 31.0, 31.0, 
                 31.5, 32.0, 32.0, 32.0, 33.0, 33.0, 33.5, 33.5, 34.0, 34.0, 34.5, 35.0, 
                 35.0, 35.0, 35.0, 36.0, 36.0, 37.0, 38.5, 38.5, 39.5, 41.0, 41.0, 9.8, 
@@ -46,7 +46,7 @@ fish_weight = [242.0, 290.0, 340.0, 363.0, 430.0, 450.0, 500.0, 390.0, 450.0, 50
 
 2차원 리스트 만들기
 
-```Python
+```python
 fish_data = [[l, w] for l, w in zip(fish_length, fish_weight)]
 fish_target = [1]*35 + [0]*14
 ```
@@ -63,7 +63,7 @@ from sklearn.neighbors import KNeighborsClassifier
 kn = KNeighborsClassifier()
 ```
 
-```Python
+```python
 kn.fit(train_input, train_target)
 kn.score(test_input, test_target)
 
@@ -82,11 +82,11 @@ kn.score(test_input, test_target)
 
 파이썬 리스트를 넘파이 배열로 바꾸기
 
-```Python
+```python
 import numpy as np
 ```
 
-```Python
+```python
 input_arr = np.array(fish_data)
 target_arr = np.array(fish_target)
 print(input_arr)
@@ -104,7 +104,7 @@ print(input_arr)
 
 인덱스를 input_arr와 target_arr에 부여하고 랜덤하게 섞어 출력해보면, 골고루 섞인 것을 확인할 수 있습니다.
 
-```Python
+```python
 np.random.seed(42)
 index = np.arange(49)
 np.random.shuffle(index)
@@ -118,7 +118,7 @@ print(index)
 
 랜덤하게 섞인 인덱스를 배열 인덱싱을 이용해 훈련 세트와 테스트 세트를 섞습니다.
 
-```Python
+```python
 train_input = input_arr[index[:35]]
 train_target = target_arr[index[:35]]
 
@@ -128,7 +128,7 @@ test_target = target_arr[index[35:]]
 
 그래프로 확인해 보기
 
-```Python
+```python
 import matplotlib.pyplot as plt
 plt.scatter(train_input[:, 0], train_input[:, 1])
 plt.scatter(test_input[:, 0], test_input[:, 1])
@@ -142,7 +142,7 @@ plt.show()
 파란색이 훈련 세트, 주황색이 테스트 세트입니다.
 도미와 빙어 모두 잘 섞여 있는 것을 그래프를 통해 확인해 볼 수 있습니다. 다음은 훈련을 시켜 보겠습니다.
 
-```Python
+```python
 kn = kn.fit(train_input, train_target)
 kn.score(test_input, test_target)
 
