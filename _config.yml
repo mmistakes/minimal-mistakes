@@ -106,11 +106,11 @@ author:
   bio              : "Math, Computer Engineering <br> 꾸준하게 공부하기"
 
   location         : "Republic of Korea" # "Somewhere"
-  #email            : "msk724012@gmail.com"
+  email            : "msk724012@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "msk724012@gmail.com"
+      url: # "msk724012@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mgskko"
