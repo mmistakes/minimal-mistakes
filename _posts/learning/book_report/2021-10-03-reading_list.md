@@ -132,27 +132,33 @@ This post will capture the books I have read over the years starting from 2019.
 
     1.  12/03/21 - 03/23/22
 
-4.  _The Daily Laws: 366 Meditations on Power, Seduction, Mastery, Strategy, and Human Nature_ by Robert Greene - **[In Progress]**
+4.  _Omnivores Dilemma_ by Michael Pollen
+
+    1.  01/16/2021 - 04/22/2022
+
+5.  _Theodore Roosevelt, An Autobiography_ by Theodore Roosevelt - **[In Progress]**
+
+    1.  03/24/2022 - TBD
+
+6.  _The Four Agreements_ by Don Miguel Ruiz - **[In Progress]**
+
+    1.  04/22/2022 - TBD
+
+7.  _The Daily Laws: 366 Meditations on Power, Seduction, Mastery, Strategy, and Human Nature_ by Robert Greene - **[In Progress]**
 
     1.  11/01/21 - TBD
 
     2.  I read a page a day.
 
-5.  _Meditations_ by Marcus Aurelius - **[In Progress]**
+8.  _Meditations_ by Marcus Aurelius - **[In Progress]**
 
-    1.  N/A - TBD
+    1.  I occasionally read a single passage.
 
-6.  _Analysis I_ by Terrance Tao - **[In Progress]**
+    2.  N/A - TBD
+
+9.  _Analysis I_ by Terrance Tao - **[Paused]**
 
     1.  12/31/2021 - TBD
-
-7.  _Omnivores Dilemma_ by Michael Pollen - **[In Progress]**
-
-    1.  01/16/2021 - TBD
-
-8.  _Theodore Roosevelt, An Autobiography_ by Theodore Roosevelt - **[In Progress]**
-
-    1.  03/24/2022 - TBD
 
 # Books to Read
 
