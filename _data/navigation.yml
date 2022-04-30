@@ -6,7 +6,7 @@ main:
     url: /categories/
   - title: "About"
     url: https://github.com/Hoonikim
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+  - title: "Tag"
+    url: /tags/
   # - title: "Sitemap"
   #   url: /sitemap/
