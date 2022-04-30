@@ -57,7 +57,7 @@ plt.show()
 
 ***
 
-#### 2 - 2. 결정계수($R^2$)
+#### 2 - 2. 결정계수(R²)
 
 ```python
 from sklearn.neighbors import KNeighborsRegressor
@@ -70,7 +70,7 @@ print(knr.score(test_input, test_target))
 
 회귀에서는 정확한 숫자를 맞힌다는 것은 거의 불가능합니다.
 예측하는 값이나 타깃 모두 임의의 수치이기 때문입니다.
-이러한 점수를  **결정계수($R^2$)** 라고 합니다.
+이러한 점수를  **결정계수(R²)** 라고 합니다.
 
 ![Alt text](https://i.esdrop.com/d/f/uVJApfFjHN/NM9897jwpn.jpg)
 
