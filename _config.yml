@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Sehoon Kim"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/IMG_5588 2.jpg"
   bio              : "I always do What I want to be"
   location         : "Korea, Seoul"
   email            : 
