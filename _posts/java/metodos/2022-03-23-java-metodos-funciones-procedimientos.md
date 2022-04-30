@@ -84,11 +84,14 @@ suma.setSuma(5,5);
 
 #### Funciones
 
-* Instrucción que pertenece a una clase estática ``static`` y no se puede ``instanciar = crear un objeto``  desde la propia clase en la que se encuentra
+* Instrucción que pertenece a una clase concreta
 
-* Tiene asignado el modificador llamado ``static`` dentro de sus sintaxis para identificarse como **método** de **clase estática**
+* No se puede invocar desde una ``instancia`` de la clase
+  * Crear un **objeto/copia** de esa ``clase`` para llamar a ese metodo
 
-* Solo se tiene una copia de esta función en toda la clase principal y su invocación es a través de la clase que lo alberga
+* Tiene asignado el modificador llamado ``static`` dentro de su sintaxis para identificarse como **método** de **clase estática**
+
+* Solo se tiene una copia de esta **función** en toda la **Clase Principal** y su invocación es a través de la clase que lo alberga o lo invoque
 
 ```java
 /**
@@ -106,4 +109,9 @@ public static void SetSuma(int a , int b){
 int suma = Sumar().setSuma(5,5);
 // Otra forma sería pero el valor no se quedará almacenado en ninguna variable u objeto
 new Sumar().setSuma(5,5);
+// Otro ejemplo sería usando la "clase Math" y su "función/método estático"
+// • Clase Estática
+// ↓   • Función estática
+// ↓   ↓
+Math.pow(2,3);
 ```
