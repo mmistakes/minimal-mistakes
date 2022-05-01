@@ -127,6 +127,13 @@ menu2 = set(["된장찌개", "떡국", "김밥"])
 menu3 = menu1 - menu2
 print(menu3)
 ```
+string으로 바로 차집합 실행 가능  
+```
+set_lunch = set(["된장찌개", "피자", "제육볶음", "짜장면"])
+item = "짜장면"
+set_lunch = set_lunch - set([item])
+```
+
 - 교집합  
 ```
 menu1 = set(["된장찌개", "피자", "제육볶음"])
@@ -137,8 +144,50 @@ print(menu3)
 
 <br>
 
+# python if
+```
+import random
+
+food = random.choice(["된장찌개","피자","제육볶음"])
+
+print(food)
+if(food == "제육볶음"):
+    print("곱배기 주세요")
+else:
+    print("그냥 주세요")
+print("종료")
+```
+for문과 마찬가지로 {} 없이 들여쓰기로 구분  
+
+<br>
+
 # 오늘은 뭐 드실?
 저메추, 점메추 프로그램  
+- 추가
+```
+import random
+import time
+
+lunch = ["된장찌개", "피자", "제육볶음", "짜장면"]
+
+while True:
+    print(lunch)
+    item = input("a = 메뉴 추가, d = 메뉴 삭제, q = 종료")
+    if item == "q":
+        break
+    elif item == "a":
+        food = input("음식을 추가해주세요 : ")
+        lunch.append(food)
+    elif item == "d":
+        delete = input("삭제할 음식을 입력해주세요 : ")
+        set_lunch = set(lunch)
+        set_lunch = set_lunch - set([delete])
+        lunch = list(set_lunch)
+
+time.sleep(1)
+print(random.choice(list(set_lunch)))
+
+```
 
 <br>
 
