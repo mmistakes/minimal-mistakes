@@ -374,13 +374,16 @@ urlpatterns = [
 '배달'을 검색하여 나온 결과를 캡처한 화면이다. 화면에서 앱 제목과 설명에서 '배달'과 일치하는 앱을 표시했으며, elasticsearch에서 전달해주는 결과를 그대로 나타내었다. 자세히 얘기하면 elasticsearch의 검색 결과 표시되는 score 점수가 있는데, 이 점수는 검색된 결과가 얼마나 검색 조건과 일치하는 지를 나타내며 점수가 높은 순으로 결과를 보여준다. 
 <p align="center"><img width="80%" height="70%" src="https://user-images.githubusercontent.com/83692497/166138045-a74e5ad2-e958-4a2e-8274-d660a1daf802.JPG"></p>
 
-기초적인 검색 기능을 구현한듯 보이지만, nori 형태소 분석기를 '사용자 사전'없이 사용하며 다른 예외처리 등을 하지 않았기 때문에 원하는 결과를 항상 얻지 못한다. 예를 들어 '생생한'을 검색 시 모든 앱이 출력되지만, 그 중에 앱 이름이나 앱 설명이 검색 조건과 일치해서 결과로 나타난 앱은 없다. 기회가 된다면 유연한 검색 엔진으로 개선시켜 보고 싶다. 마지막으로 구현 완료된 웹 사이트이다. 
+기초적인 검색 기능을 구현한듯 보이지만, nori 형태소 분석기를 '사용자 사전'없이 사용하며 다른 예외처리(ex. 오타를 검색 했을 경우) 등을 하지 않았기 때문에 원하는 결과를 항상 얻지 못한다. 예를 들어 '생생한'을 검색 시 모든 앱이 출력되지만, 그 중에 앱 이름이나 앱 설명이 검색 조건과 일치해서 결과로 나타난 앱은 없다. 기회가 된다면 유연한 검색 엔진으로 개선시켜 보고 싶다. 마지막으로 구현 완료된 웹 사이트이다. 
 
 <br>
 
 ### 웹 사이트 최종 모습
 
-<p align="center"><img width="80%" height="70%" src="https://user-images.githubusercontent.com/83692497/166139770-d1f9e4f2-db30-476e-a502-0cb21fb915e6.mp4"></p>
+<p align="center"><img width="80%" height="70%" src="https://user-images.githubusercontent.com/83692497/166140329-e9d9c114-f0fd-4dac-86c0-14600fa8ef59.JPG">
+<img width="80%" height="70%" src="https://user-images.githubusercontent.com/83692497/166140359-87fa2cac-962f-4c55-a228-ccfd288eeb69.JPG">
+<img width="80%" height="70%" src="https://user-images.githubusercontent.com/83692497/166140362-31b31fef-bf53-43ee-9f33-e76124d2a889.JPG">
+</p>
 
 <br>
 
