@@ -20,7 +20,7 @@ title: "Hooni의 개발일지 "
 title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
 name: "Sehoon Kim"
-description: "Hi 👋🏻 Preparing Front-end stack."
+description: "Hi 👋🏻 I'm Preparing Front-end stack."
 url: "https://Hoonikim.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -121,10 +121,10 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+       url: "https://github.com/Hoonikim"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+       url: "https://www.instagram.com/i_am_hoon__/"
 
 # Site Footer
 footer:
