@@ -11,14 +11,6 @@ last_modified_at: 2022-02-25
 
 <br>
 
-### 할 일 목록
-- [ ] vscode 디폴트 브랜치를 main으로 변경하기
-- [ ] pull 할 때, --allow-unrelated-histories 옵션 사용해보기
-
----
-
-<br>
-
 ### 원격 저장소 지정
 ```
 git remote add origin [ 커밋할 레파지토리 주소 ]
@@ -49,4 +41,4 @@ git push -u origin main
 ```
 git push origin +master
 ```
-이 방법을 사용하면 push 에러는 사라지지만, 레파지토리에 존재하는 README.md이 삭제된다,,, 
+이 방법을 사용하면 push 에러는 사라지지만, 레파지토리에 존재하는 README는 삭제된다.
