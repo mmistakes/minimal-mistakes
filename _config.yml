@@ -105,7 +105,7 @@ author:
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "I always do what i want to be."
   location: "Korea"
-  email: "tpgns2289@naver.com"
+  email:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
