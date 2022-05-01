@@ -2,7 +2,7 @@
 title: About me
 header:
   image: /assets/images/vortart/banner_vorticity.png
-layout: home
+layout: single
 classes: wide
 author_profile: true
 ---
