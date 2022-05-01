@@ -51,7 +51,7 @@ and [here](https://journals.ametsoc.org/jas/article-abstract/77/10/3479/353916/D
 
 ### Turbulent fluxes or greenhouse gases over grasslands, lakes and forests
 
-![](/assets/images/AFM-phi.png)
+![](/assets/images/AFM-phi2.png)
 
 I have made several field trips to install micrometeorological stations to
 measure things like wind speed, temperature and humidity at high frequencies
@@ -69,7 +69,7 @@ and
 
 ### Groundwater transport in porous aquifers
 
-![](/assets/images/WRR-aquifer.png)
+![](/assets/images/WRR-aquifer2.png)
 
 In this project (which I pursued as my Masters project) I aimed to take a
 theoretical approach and obtain analytical solutions for the Boussinesq
