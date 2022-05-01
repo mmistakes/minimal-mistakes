@@ -248,7 +248,7 @@ plt.xlabel('alpha')
 plt.ylabel('R^2')
 plt.show()
 ```
-![Alt text]https://i.esdrop.com/d/f/uVJApfFjHN/itDq2JMfwN.jpg)
+![Alt text](https://i.esdrop.com/d/f/uVJApfFjHN/itDq2JMfwN.jpg)
 
 적절한 alpha 값은 두 그래프가 가장 가깝고 테스트 세트의 점수가 가장 높은 -1, 즉 0.1입니다. alpha 값이 0.1로 결정을 하여 훈련을 하겠습니다.
 
