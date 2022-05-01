@@ -2,7 +2,7 @@
 title: Allowing DNS resolution of Azure resources from on-premise
 date: 2022-04-27 10:00
 tags: [Azure, networking, hub-and-spoke, DNS, Azure Firewall, Azure Private DNS Zone, Enterprise Scale Landing Zone]
-excerpt: "How can I integrate my on premise DNS with Azure?"
+excerpt: "How can I integrate my on-premises DNS with Azure?"
 
 header:
   overlay_image: https://live.staticflickr.com/65535/51809757947_c13db151f0_h.jpg
@@ -37,7 +37,7 @@ Once created, an [Azure private DNS Zone can be linked to an Azure Virtual Netwo
 
 **This means that this service is available only within Azure. On premise resources even if connected via VPN S2S can't benefit of this names resolution.**
 
-# How can I integrate my on premise DNS with Azure? 
+# How can I integrate my on premises DNS with Azure? 
 
 As mentioned above, Azure Firewall is a cloud-native firewall as a service (FWaaS) offering that allows you to centrally govern and log all your traffic flows using a DevOps approach. The service supports both application, NAT, and network-level filtering and is integrated with the Microsoft Threat Intelligence feed for filtering known malicious IP addresses and domains. Azure Firewall is highly available with built-in auto scaling. [Azure Firewall is also well integrated with Azure DNS resolution](https://azure.microsoft.com/it-it/blog/new-enhanced-dns-features-in-azure-firewall-now-generally-available/). With his DNS proxy enabled, Azure Firewall can process and forward DNS queries from a Virtual Network(s) to your desired DNS server. You can enable DNS proxy in Azure Firewall and Firewall Policy settings.
 
