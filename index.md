@@ -2,7 +2,9 @@
 title: About me
 header:
   image: /assets/images/vortart/banner_vorticity.png
-layout: single
+layout: home
+classes: wide
+author_profile: true
 ---
 
 I'm geophysical fluid dynamicist who is interested in turbulent phenomena. In particular my main
@@ -18,3 +20,10 @@ For an in-depth list of talks, awards, publications, skills, etc., please check 
 vitae](https://github.com/tomchor/tomchor.github.io/raw/master/assets/pdf/phd-tomas-chor3.pdf).
 
 
+
+## Contact
+
+I'm always looking for new things to do and learn so if you are interested in
+any part of my work, please contact me using the information below.
+
+- Email: tomaschor[at]gmail.com

@@ -1,8 +1,5 @@
-{% if page.author and site.data.authors[page.author] %}
-  {% assign author = site.data.authors[page.author] %}
-{% else %}
-  {% assign author = site.author %}
-{% endif %}
+{% assign author = page.author | default: page.authors[0] | default: site.author %}
+{% assign author = site.data.authors[author] | default: author %}
 
 <div itemscope itemtype="https://schema.org/Person" class="h-card">
 
@@ -59,7 +56,7 @@
         </li>
       {% endif %}
 
-      {% if author.google_scholar%}
+      {% if author.keybase %}
         <li>
           <a href="https://keybase.io/{{ author.keybase }}" itemprop="sameAs" rel="nofollow noopener noreferrer me">
             <i class="fab fa-fw fa-keybase" aria-hidden="true"></i><span class="label">Keybase</span>
@@ -131,7 +128,7 @@
         </li>
       {% endif %}
 
-      {% if author.keybase %}
+      {% if author.gitlab %}
         <li>
           <a href="https://gitlab.com/{{ author.gitlab }}" itemprop="sameAs" rel="nofollow noopener noreferrer me">
             <i class="fab fa-fw fa-gitlab" aria-hidden="true"></i><span class="label">GitLab</span>

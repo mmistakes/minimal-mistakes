@@ -52,7 +52,7 @@ $(function() {
   // Set the last measured CSS width breakpoint: 0: <768px, 1: <1024px, 2: < 1280px, 3: >= 1280px.
   var lastBreakpoint = winWidth < 768 ? 0 : winWidth < 1024 ? 1 : winWidth < 1280 ? 2 : 3;
 
-  var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
+  var availableSpace, numOfVisibleItems, requiredSpace, timer;
 
   function check() {
 
@@ -92,8 +92,10 @@ $(function() {
     } else $btn.removeClass('hidden');
   }
 
-  // Keep counter updated
-  $btn.attr("count", breaks.length);
+  // Window listeners
+  $(window).resize(function() {
+    check();
+  });
 
   $btn.on('click', function() {
     $hlinks.toggleClass('hidden');
@@ -123,10 +125,3 @@ $(function() {
   } else check();
 
 });
-
-$btn.on('click', function() {
-  $hlinks.toggleClass('hidden');
-  $(this).toggleClass('close');
-});
-
-updateNav();

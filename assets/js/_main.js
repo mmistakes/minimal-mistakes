@@ -6,14 +6,42 @@ $(document).ready(function() {
   // FitVids init
   $("#main").fitVids();
 
+  // Sticky sidebar
+  var stickySideBar = function() {
+    var show =
+      $(".author__urls-wrapper button").length === 0
+        ? $(window).width() > 1024 // width should match $large Sass variable
+        : !$(".author__urls-wrapper button").is(":visible");
+    if (show) {
+      // fix
+      $(".sidebar").addClass("sticky");
+    } else {
+      // unfix
+      $(".sidebar").removeClass("sticky");
+    }
+  };
+
+  stickySideBar();
+
+  $(window).resize(function() {
+    stickySideBar();
+  });
+
   // Follow menu drop down
   $(".author__urls-wrapper button").on("click", function() {
-    $(".author__urls").fadeToggle("fast", function() {});
+    $(".author__urls").toggleClass("is--visible");
     $(".author__urls-wrapper button").toggleClass("open");
   });
 
-  // init smooth scroll
-  $("a").smoothScroll({offset: -20});
+  // Close search screen with Esc key
+  $(document).keyup(function(e) {
+    if (e.keyCode === 27) {
+      if ($(".initial-content").hasClass("is--hidden")) {
+        $(".search-content").toggleClass("is--visible");
+        $(".initial-content").toggleClass("is--hidden");
+      }
+    }
+  });
 
   // Search toggle
   $(".search__toggle").on("click", function() {
@@ -66,24 +94,27 @@ $(document).ready(function() {
     //   }
     //   return true;
     // },
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
+    type: "image",
+    tLoading: "Loading image #%curr%...",
     gallery: {
       enabled: true,
       navigateByImgClick: true,
-      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+      preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
     },
     image: {
-      tError: '<a href="%url%">Image #%curr%</a> could not be loaded.',
+      tError: '<a href="%url%">Image #%curr%</a> could not be loaded.'
     },
     removalDelay: 500, // Delay in milliseconds before popup is removed
     // Class that is added to body when popup is open.
     // make it unique to apply your CSS animations just to this exact popup
-    mainClass: 'mfp-zoom-in',
+    mainClass: "mfp-zoom-in",
     callbacks: {
       beforeOpen: function() {
         // just a hack that adds mfp-anim class to markup
-        this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
+        this.st.image.markup = this.st.image.markup.replace(
+          "mfp-figure",
+          "mfp-figure mfp-with-anim"
+        );
       }
     },
     closeOnContentClick: true,

@@ -19,14 +19,14 @@ locale                   : "en-US"
 title                    : "Tomas Chor"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Tomas Chor"
+name                     : 
 description              : "Investigations of oceanic and atmospheric turbulence"
 url                      : #"https://tomchor.github.io"
 baseurl                  : # Subpath, if there is one.
-repository               : #"tomchor/tomchor.github.io"
+repository               : "tomchor/tomchor.github.io"
 teaser                   : #
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "Home" # overrides the website title displayed in the masthead, use " " for no title
 #breadcrumbs             : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -58,7 +58,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
+  hide                   : true # true, false (default)
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
@@ -102,32 +102,38 @@ analytics:
 # Author information
 author:
   name             : "Tomás L. Chor"
-  avatar           : #"/assets/images/TChor-02p_UCLA_cropped.jpg"
-  bio              : "Atmosphere | Ocean | Turbulence"
-  location         : "Somewhere"
-  email            : #"website@tomaschor.xyz"
+  avatar           : "assets/images/TChor-02p_UCLA_cropped.jpg"
+  bio              : "<br>"
+  location         : "Los Angeles, CA"
+  email            : #"tomaschor@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-    #   url: "mailto:website@tomaschor.xyz"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "mailto:tomaschor@gmail.com"
+    - label: "Google Scholar" # This odd username is somehow brewed up by Google.
+      icon: "fab fa-fw fa-google"
+      url: "https://scholar.google.com/citations?user=0uQC6kkAAAAJ&hl=en"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/tomchor"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
-      #- label: "Google Scholar" # This odd username is somehow brewed up by Google.
-      #icon: "fab fa-fw fa-instagram"
-      # url: "https://scholar.google.com/citations?user=0uQC6kkAAAAJ&hl=en"
+      url: "https://github.com/tomchor"
+    - label: "ResearchGate"
+      icon: "fab fa-fw fa-researchgate"
+      url: "https://www.researchgate.net/profile/Tomas-Chor"
+    - label: "Orcid"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0003-0854-3803"
+      #    - label: "Website"
+      #      icon: "fas fa-fw fa-link"
+      #      url: "https://your-website.com"
+      #    - label: "Twitter"
+      #      icon: "fab fa-fw fa-twitter-square"
+      #      url: "https://twitter.com/"
+      #    - label: "Facebook"
+      #      icon: "fab fa-fw fa-facebook-square"
+      #      url: "https://facebook.com/"
+        #    - label: "Instagram"
+        #      icon: "fab fa-fw fa-instagram"
+        #      url: "https://instagram.com/"
 
 # Site Footer
 footer:
@@ -285,8 +291,9 @@ defaults:
       type: pages
     values:
       layout: single
+      classes: wide
       author_profile: true
       read_time: false
-      comments: # true
+      comments: false
       share: false
       related: false
