@@ -10,6 +10,8 @@ author_profile: false
 sidebar:
   nav: "docs"
 ---
+# 실행순서 이미지  
+<br>
 ![실행순서 예시](https://i.stack.imgur.com/OovG7.png)  
 <br>  
 
@@ -29,7 +31,7 @@ body나 head에 선언하고 사용하게 된다.
 
 ## head에 선언하는 경우  
 <br>
-```JavaScript
+```javascript
 <html>
     <head>
         <script src = "main.js"></script>
@@ -52,7 +54,7 @@ script 태그를 만나면 html파일의 작업을
 
 ## body에 선언하는 경우  
 <br>
-```JavaScript
+```javascript
 <html>
     <head>
     </head>
@@ -73,7 +75,7 @@ html파일을 먼저 다운로드 받고 그 후에 Script를
 
 ## head + async로 선언하는 경우  
 <br>
-```JavaScript
+```javascript
 <html>
     <head>
         <script asyn src = "main.js"></script>
@@ -95,7 +97,7 @@ Script를 먼저 실행시키게 된다. 그러므로 사용자는
 
 ## head + defer로 선언하는 경우  
 <br>
-```JavaScript
+```javascript
 <html>
     <head>
         <script defer src = "main.js"></script>
