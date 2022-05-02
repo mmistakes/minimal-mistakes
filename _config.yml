@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name: "김세훈 / Sehoon Kim [26]"
-  avatar:  "/assets/IMG_5588 2.jpg"
+  avatar: "/assets/IMG_5588 2.jpg"
   bio: "I always do what i want to be."
   location: "Korea - Seoul"
   email:
@@ -112,20 +112,20 @@ author:
       url: "mailto:tpgns2289@naver.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/Hoonikim"
+      url: "https://github.com/Hoonikim"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       url: "https://www.instagram.com/i_am_hoon__/"
+      url: "https://www.instagram.com/i_am_hoon__/"
 
 # Site Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/Hoonikim"
+      url: "https://github.com/Hoonikim"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       url: "https://www.instagram.com/i_am_hoon__/"
+      url: "https://www.instagram.com/i_am_hoon__/"
 
 # Reading Files
 include:
