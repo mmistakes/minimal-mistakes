@@ -4,7 +4,8 @@ author_profile: false
 lang: en
 lang-ref: index
 excerpt: "TermIt is a tool to manage vocabularies, terms and resources in which are the terms defined and used. It is focused on management of terms based on their semantics -- i.e. two 'same' terms in different vocabularies may have different meaning."
-header:
+---
+<!-- header:
   overlay_image: /assets/images/front-image.jpg
   overlay_filter: rgba(38, 38, 38, 0.5)
   caption: "Photo credit: [**Ryunosuke Kikuno**](https://unsplash.com/@kknrynsk_jp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [**Unsplash**](http://unsplash.com/)"
@@ -27,9 +28,11 @@ feature_row:
     title: "Technical details"
     excerpt: "TermIt architecture, interesting libraries used within, or the data model used within TermIt are some of the technical details of the system."
     btn_label: "Introduce me to the details"
-    url: /technical-details
----
-{% assign pages=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+    url: /technical-details 
+--- -->
+This is new landing page.
+
+<!-- {% assign pages=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
 {% if pages.size == 0 %}
     {% assign pages=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
 {% endif %}
@@ -41,4 +44,4 @@ feature_row:
 </header>
 {% endif %}
 
-{% include feature_row %}
+{% include feature_row %} -->

@@ -1,9 +1,9 @@
 ---
 layout: single
-title: People
-permalink: /people
+title: Team
+permalink: /team
 lang: en
-lang-ref: people
+lang-ref: team
 classes: wide
 gallery:
  - url: /pages/team/petr
