@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "음..넘~파이 판다스"
+title:"음..넘~파이 판다스"
 categories: study
 tag: numpy,pandas
 ---

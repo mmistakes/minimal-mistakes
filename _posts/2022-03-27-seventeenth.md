@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "음..넘~파이, 클래스 복습 
+title:"음..넘~파이, 클래스 복습"
 categories: study
 toc: true
 tag: class, numpy
