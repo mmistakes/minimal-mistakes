@@ -1,11 +1,10 @@
 ---
 layout: single
-title: "음..넘~파이 again& 판다스""
+title: "음..넘~파이 판다스"
 categories: study
-toc: true
 tag: numpy,pandas
 ---
-
+#### 넘파이
 flatten()
 
 2차원 구조

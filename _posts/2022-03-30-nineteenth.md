@@ -1,15 +1,13 @@
 ---
 layout: single
-title: "판다스2""
+title: "판다스2"
 categories: study
-toc: true
 tag: pandas
 ---
-
+#### 판다스
 
 개더타운을 편집해야하는데. 통계용 패키지...
 
-363648876932
 
 .isin은 리스트를 파라미터로 갖습니다. isin 은 리스트에 어떤 원소가 들어가있는지 판단시켜준다.
 str.startswith은 문자열에만 적용된다.## Drop
