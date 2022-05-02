@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "선형회귀 쉽게 이해하기"
-categories: Machine Learning
+categories: MachineLearning
 tag: [python, Machine Learning]
 toc: true
 ---
