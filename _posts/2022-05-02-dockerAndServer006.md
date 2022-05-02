@@ -21,7 +21,6 @@ search: true
 <img src="http://drive.google.com/uc?export=view&id=1rRG8JVoKNBaM3O-8I7I6CeIprozfgxFI"><br>
 <img src="http://drive.google.com/uc?export=view&id=1rWEFC4eIpv4aAEcI5UIxHBnmOyPz5LnL"><br>
 <img src="http://drive.google.com/uc?export=view&id=1rEAbFZyyaa_QQFaWYrpK4Io3WSWhktd-"><br>
-<img src="http://drive.google.com/uc?export=view&id=1rFNQTvsPS8SA_4Pv88WZ79ATg3WSU14M"><br>
 </div>
 
 
