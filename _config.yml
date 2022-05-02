@@ -20,7 +20,7 @@ title                    : "Estoy Yendo!z"
 title_separator          : "-"
 subtitle                 : #
 name                     : "Estoy Yendo!z"
-description              : "getting some fun out of life."
+description              : "getting some fun out of life"
 url                      : "https://yendoz.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "yendoz/yendoz.github.io"
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Yendoz"
   avatar           : "/assets/images/profile.jpg"
-  bio              : "in the end it's all about<br />the **love** you're sending out<br />since 2022"
+  bio              : "all boundaries are conventions,<br />waiting to be transcended"
   location         : "Somewhere"
   email            : #
   links:
@@ -255,16 +255,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
