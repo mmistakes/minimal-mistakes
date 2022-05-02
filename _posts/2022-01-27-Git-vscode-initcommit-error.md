@@ -1,13 +1,15 @@
 ---
-title:  "[github] vscode에서 커밋할 때 발생한 에러"
+title:  "Visual Studio Code에서 커밋할 때 발생한 에러"
 excerpt: "[rejected] 브랜치명 -> 브랜치명 (non-fast-forward) 에러"
 
 categories:
-- Github
+- Error
 tags:
 - github
 last_modified_at: 2022-02-25
 ---
+
+문제 상황은 레파지토리를 생성하고, vscode에서 원격 저장소를 지정한 뒤 커밋하려 했을 때 `[rejected] 브랜치명 -> 브랜치명 (non-fast-forward)` 에러가 발생했다. 구글링해보니 레파지토리에 존재하는 README.md (또는 .gitignore) 파일 때문이었고, 해결한 방법과 로컬 저장소에 있는 파일을 원격 저장소로 보내는 방법까지 작성해보았다. 
 
 <br>
 
@@ -15,7 +17,7 @@ last_modified_at: 2022-02-25
 ```
 git remote add origin [ 커밋할 레파지토리 주소 ]
 ```
-vscode 왼쪽 아래에 디폴트로 브랜치 명이 브랜치가 master로 설정되어 있을텐데,  main 브랜치에 커밋하고 싶다면 아래처럼 수동으로 브랜치를 바꿔야 한다.
+vscode 왼쪽 아래에 디폴트로 브랜치 명이 브랜치가 master로 설정되어 있을텐데,  main 브랜치에 커밋하고 싶다면 수동으로 브랜치를 바꿔야 한다.
 
 ### 현재 로컬 브랜치명 변경 [master -> main]
 ```
@@ -28,7 +30,7 @@ git branch -M main
 git pull origin main
 // git pull origin main --allow-unrelated-histories
 ```
-원격 저장소에 존재하는 파일이 있을 수 있어서 먼저 pull 해줘야 제대로 push가 된다. 주석 처리한 옵션을 추가하면 관련없었던 두 저장소를 병합하도록 허용한다고 한다. 다음 커밋 때 사용해보고 글을 수정할 예정이다.
+원격 저장소에 존재하는 파일이 있을 수 있어서 먼저 pull 해줘야 제대로 push가 된다. 주석 처리한 옵션을 추가하면 관련없었던 두 저장소를 병합하도록 허용한다고 한다. 다음 커밋 때 사용해본 뒤에 글을 수정할 예정이다.
 
 ### 로컬 저장소에 push한 것을 원격 저장소에 반영
 ```

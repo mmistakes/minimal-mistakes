@@ -5,8 +5,8 @@ excerpt: ""
 categories:
 - Elastic
 tags:
-- [elastic cloud, elasticsearch, logstash, kibana, django, python]
-last_modified_at: 2022-05-01
+- [elastic-cloud, elasticsearch, logstash, kibana, django, python]
+last_modified_at: 2022-05-02
 ---
 
 > 상명대학교 elastic 팀 프로젝트에 참여하며 공부했던 것들을 기록하기 위해 작성한 글 ( 2022.02.08 - 2022.04.29 )
@@ -347,11 +347,13 @@ def search(request):
 ```
 
 ```HTML
+{% raw %}
 <!-- templates/home.html - 검색창을 둔 메인페이지 -->
 <form class="w-full max-w-xl" method="get" action="{% url 'apps:search' %}">
     <input name="q" class="search-bar" placeholder="찾고 싶은 앱을 검색해보세요." />
 </form> 
 <!-- 생략 -->
+{% endraw %}
 ```
 ```python
 # apps/urls.py
@@ -366,7 +368,7 @@ urlpatterns = [
 ```
 
 `search.html` 코드는 가져오지 않았지만, 모든 소스코드는 [깃허브](https://github.com/ssbinn/applastic-django)에 커밋해두었다.
-그리고 검색한 결과를 보여주는 페이지에서 pagination을 추가해 문제가 발생했었는데 그 부분은 [다음 글]()에 자세히 작성해두었다. 
+그리고 검색한 결과를 보여주는 페이지에서 pagination을 추가해 문제가 발생했었는데 그 부분은 다음 글에 자세히 작성해두었다. 
 
 <br>
 
