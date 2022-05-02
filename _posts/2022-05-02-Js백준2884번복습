@@ -49,7 +49,7 @@ const  sehoonalramM = ((alramH * 60 + alramM)-45)%60
 console.log(`지각을 방지하기 위하여 알람을 45분 일찍 설정합니다.
 알람은 ${sehoonalramH}시 ${sehoonalramM}분으로 설정되었습니다.`)
 
-내가 prompt() 로 전달받은 숫자는 문자열이기 때문에 Number() 함수를 이용하여 
+내가 prompt() 로 전달받은 숫자는 문자열이기 때문에 Number() 함수를 이용하여 
 문자열을 숫자열로 변환해주었고 몫은 정수만을 추출하기 위해 parseInt()를 활용했다. 
 
 결과는 성공적이었다. 내가 원하는 값을 받아낼 수 있었다. 
