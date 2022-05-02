@@ -14,7 +14,29 @@ gallery:
    image_path: /assets/images/team/miro.jpg
    alt: "Miroslav Blaško"
    title: "Miroslav Blaško"
+ - url: /pages/team/michal
+   image_path: /assets/images/team/michal.jpg
+   alt: "Michal Med"
+   title: "Michal Med"
+ - url: /pages/team/martin
+   image_path: /assets/images/team/martin.jpg
+   alt: "Martin Ledvinka"
+   title: "Martin Ledvinka"
+ - url: /pages/team/bogdan
+   image_path: /assets/images/team/bogdan.jpg
+   alt: "Bogdan Kostov"
+   title: "Bogdan Kostov"
+ - url: /pages/team/jana
+   image_path: /assets/images/team/jana.jpg
+   alt: "Jana Ahmad"
+   title: "Jana Ahmad"
+ - url: /pages/team/lama
+   image_path: /assets/images/team/lama.jpg
+   alt: "Lama Saeeda"
+   title: "Lama Saeeda"
+
 ---
+
 {% include gallery caption="Team members" %}
 
 ## Petr Křemen
