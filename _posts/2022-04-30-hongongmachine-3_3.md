@@ -190,7 +190,7 @@ print(lr.score(test_poly, test_target))
 
 #### 2 - 4. 규제
 
-아래 그림과 같이 왼쪽은 훈련 세트를 과도하게 학습한 결과이고 오른쪽은 기울기를 줄여 보편적인 패턴을 학습하고 있습니다. 
+아래 그림과 같이 왼쪽은 훈련 세트를 과도하게 학습한 결과이고 오른쪽은 기울기를 줄여 보편적인 패턴을 학습하고 있습니다. feature의 개수를 무리하게 늘려주면 과도한 over-fitting이 일어납니다.
 
 ![Alt text](https://i.esdrop.com/d/f/uVJApfFjHN/8Kuz1PRdz2.jpg)
 
