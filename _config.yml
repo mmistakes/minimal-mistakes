@@ -13,6 +13,8 @@
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "dirt"
+search: true
+
 
 # Site Settings
 locale                   : "en-US"
