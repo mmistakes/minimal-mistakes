@@ -6,7 +6,7 @@ tag: [iOS, SwiftUI, blog, jekyll]
 toc: true
 toc_label: "Table of Contents"
 toc_icon: "cog"
-author_prifile: false
+author_prifile: true
 sidebar:
     nav: "docs"
 ---
