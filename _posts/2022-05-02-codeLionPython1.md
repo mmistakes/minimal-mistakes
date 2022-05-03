@@ -293,3 +293,18 @@ print(order)
 <br>
 
 # 문제 3
+```
+# 첫 줄 출력
+for i in range(9, 0, -1): # 이건 자바의 for(i=9; i>0; i--)
+    num = str(i)
+    print("#  " + num + "단" + "  #  ", end="")
+    print("\n")
+
+# 구구단 출력
+for i in range(9, 0, -1):
+    for j in range(9, 0, -1):
+        first = str(i)
+        second = str(j)
+        print(second + " * " + first + "=" + str(i*j), end="  ")
+    print("\n")
+```
