@@ -3,7 +3,7 @@
 # For example, you can have one property to handle comment submission and
 # another one to handle posts.
 # To encrypt strings use the following endpoint:
-# https://api.staticman.net/v2/encrypt/{TEXT TO BE ENCRYPTED}
+# https://{your Staticman API URL}/v[2|3]/encrypt/{TEXT TO BE ENCRYPTED}
 
 comments:
   # (*) REQUIRED

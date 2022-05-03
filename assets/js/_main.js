@@ -83,8 +83,8 @@ $(document).ready(function() {
 
   // add lightbox class to all image links
   $(
-    "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']"
-  ).addClass("image-popup");
+    "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']"
+  ).has("> img").addClass("image-popup");
 
   // Magnific-Popup options
   $(".image-popup").magnificPopup({
@@ -128,7 +128,7 @@ $(document).ready(function() {
       var anchor = document.createElement("a");
       anchor.className = 'header-link';
       anchor.href = '#' + id;
-      anchor.innerHTML = '<span class=\"sr-only\">Permalink</span><i class=\"fa fa-link\"></i>';
+      anchor.innerHTML = '<span class=\"sr-only\">Permalink</span><i class=\"fas fa-link\"></i>';
       anchor.title = "Permalink";
       $(this).append(anchor);
     }
