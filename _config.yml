@@ -104,9 +104,9 @@ analytics:
 author:
   name             : "An Sol"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "공부한 내용을 정리하는 블로그"
+  bio              : "공부한 내용을 정리하는 블로그입니다."
   location         : 
-  email            : "apdlvmf486@naver.com"
+  email            : "이메일: apdlvmf486@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
