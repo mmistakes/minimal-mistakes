@@ -4,6 +4,8 @@ title:  "Day3"
 categories: SwiftUI
 tag: [iOS, SwiftUI, blog, jekyll]
 toc: true
+toc_label: "Table of Contents"
+toc_icon: "cog"
 author_prifile: false
 sidebar:
     nav: "docs"
@@ -216,7 +218,8 @@ in comparison, calling 'contains()' on a "set" runs So Fast. even though we have
 
 
 
-# enums = short for enumeration. we get to list up front the range of values it can have, and Swift will make sure you never make a miske using them. this calls the new enum Weekday, and provides five cases to handle the five weekdays.
+# enums = short for enumeration. 
+## we get to list up front the range of values it can have, and Swift will make sure you never make a miske using them. this calls the new enum Weekday, and provides five cases to handle the five weekdays.
 ```swift
 
 enum Weekday {
