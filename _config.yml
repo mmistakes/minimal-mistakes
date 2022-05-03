@@ -17,10 +17,10 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "ko-KR"
 title                    : "psycho 개발자 지망생의 블로그"
-title_separator          : "-"
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "An Sol"
-description              : "공부한 내용을 정리해보는 블로그입니다"
+name                     : "developsy"
+description              : "공부 정리 블로그"
 url                      : "https://developsy.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -105,7 +105,7 @@ author:
   name             : "An Sol"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "공부한 내용을 정리하는 블로그입니다."
-  location         : 
+  location         : "South Korea"
   email            : "apdlvmf486@naver.com"
   links:
     - label: "apdlvmf486@naver.com"
