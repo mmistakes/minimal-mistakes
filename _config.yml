@@ -106,9 +106,9 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "공부한 내용을 정리하는 블로그입니다."
   location         : 
-  email            : "이메일: apdlvmf486@naver.com"
+  email            : "apdlvmf486@naver.com"
   links:
-    - label: "Email"
+    - label: "apdlvmf486@naver.com"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
     - label: "Website"
