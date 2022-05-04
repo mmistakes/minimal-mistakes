@@ -1,27 +1,27 @@
 # main links
 main:
   - title: "Research projects"
-    url: "/research"
+    url: "/projects"
   - title: "Team"
     url: "/team"
-  - title: "Artifacts" #rename to Software?
-    url: "/artifacts"
+  - title: "Software" #rename to Software?
+    url: "/software"
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Archive"
+    url: /archive
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
 
 # IMHO projects shall be main research page, publications are part of team?
-research:
-  - title: "Research Projects"
-    children:
-      - title: "Projects"
-        url: "/research/projects"
-      - title: "Publications"
-        url: "/research/publications"
+# research:
+#   - title: "Research Projects"
+#     children:
+#       - title: "Projects"
+#         url: "/research/projects"
+#       - title: "Publications"
+#         url: "/research/publications"
