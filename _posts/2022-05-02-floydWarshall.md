@@ -46,7 +46,7 @@ if 조건으로 x[j][k] == 0이면 하지 마라 이런거 할 필요 X
 왜냐하면 입력된 데이터가 바로 전달되지 않고 버퍼를 거쳐 전달되기 때문  
 
 <br>
-- 첫번째 시도
+- 첫번째 시도   
 ```
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
