@@ -20,7 +20,7 @@ title                    : "BONGTASTIC DADDY BLOG"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "BONGHYUN KIM"
-description              : "It ain't what you don't know that gets you into trouble. It's what you know for sure that ain't so"
+description              : "Record from daddy, process engineer, programmer"#"It ain't what you don't know that gets you into trouble. It's what you know for sure that ain't so"
 url                      : "https://qhdwktm363554.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
