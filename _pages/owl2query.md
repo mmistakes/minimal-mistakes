@@ -1,7 +1,7 @@
 ---
 layout: single
 title: OWL2Query
-permalink: /artifacts/sw/owl2query
+permalink: /software/owl2query
 lang: en
 lang-ref: owl2query
 author_profile: true
@@ -36,46 +36,46 @@ __Reasoning library__
 ```
 
 ## Examples
-Here are three query examples. In the screen shots we show the plug-in integrated in Protégé 4.1. The query is drawn in the graph area 
-and it is executed with the pellet reason. The name of the file that is currently associated with the query is shown in the title at the top of the tab. 
-The tool bar under it contains tools as : demo query , new query , open query, save query, switch between graph and SPARQL view, 
-undo and redo graph changes. On the next line in the GUI we have a split view that contains on the left prefix editor and 
-on the right a tab view with var editor and layout editor. Under this view there is the graph area. On the right side of the graph 
-area we can see a node editor. Under the graph is a serialization of the query in SPARQL-DL syntax. Last row in the GUI is the 
-result area with a run button and a result table. On the right of the screen-shots we can see other protege views. 
+Here are three query examples. In the screen shots we show the plug-in integrated in Protégé 4.1. The query is drawn in the graph area
+and it is executed with the pellet reason. The name of the file that is currently associated with the query is shown in the title at the top of the tab.
+The tool bar under it contains tools as : demo query , new query , open query, save query, switch between graph and SPARQL view,
+undo and redo graph changes. On the next line in the GUI we have a split view that contains on the left prefix editor and
+on the right a tab view with var editor and layout editor. Under this view there is the graph area. On the right side of the graph
+area we can see a node editor. Under the graph is a serialization of the query in SPARQL-DL syntax. Last row in the GUI is the
+result area with a run button and a result table. On the right of the screen-shots we can see other protege views.
 They are present to show selection integration between the plug-in and other parts of protege.
 
 ### Example 1
 
-The first query is used to find all the graduate students that are related to a course and find what kind of relationship. 
+The first query is used to find all the graduate students that are related to a course and find what kind of relationship.
 It is a mixed ABox Rbox query. In SPARQL-DL this query is written in using two type atoms and a property value atom:
 
 `Q(?z, ?y, ?x) :- PropertyValue(?y, ?x, ?z), Type(<Course>, ?z), Type(<GraduateStudent>, ?x).`
 
 {% include figure image_path="/assets/images/owl2query/sparqlexample1.png" alt="OWL2Query query example 1" %}
 
-In the graph in the ABox area we have the property value query atom. It is represented using two ABox nodes for the subject 
-and object of the property and an arrow that goes through the property node witch represents the property itself. 
-Arrows with "type" stereotype to a TBox nodes in the TBox area represent the type atoms in the query. The red color represents a variable. 
-The yellow color is used to represent constants. Selection GraduateStudent97 in the result table is update also in the Protégé. 
+In the graph in the ABox area we have the property value query atom. It is represented using two ABox nodes for the subject
+and object of the property and an arrow that goes through the property node witch represents the property itself.
+Arrows with "type" stereotype to a TBox nodes in the TBox area represent the type atoms in the query. The red color represents a variable.
+The yellow color is used to represent constants. Selection GraduateStudent97 in the result table is update also in the Protégé.
 On the right in the Protégé's Idividuals view we can see that individual GraduateStudent97 is also selected.
 
 ### Example 2
 
-This query is used to find all the students who are also employees and find what kind of employee. This is a mixed ABox TBox query. 
+This query is used to find all the students who are also employees and find what kind of employee. This is a mixed ABox TBox query.
 In SPARQL-DL the query is represented with two type atoms and one sub class of atom:
 
 `Q(C, x) :- Type(?C, ?x) T(<Student>, ?x), SubClassOf(?C, <Employee>).`
 
 {% include figure image_path="/assets/images/owl2query/sparqlexample2.png" alt="OWL2Query query example 2" %}
 
-As in the first example the type atoms are represented as arrows from a ABox node to a TBox node with a "type" stereotype. 
-The Subclass atom is represented as an arrow from the variable TBox node to a constant TBox node with stereotype "SubClassOf". 
+As in the first example the type atoms are represented as arrows from a ABox node to a TBox node with a "type" stereotype.
+The Subclass atom is represented as an arrow from the variable TBox node to a constant TBox node with stereotype "SubClassOf".
 Note column selection in the result table is the same as the selection in the graph and the variable editor.
 
 ### Example 3
 
-This query is used to find all the members of Depatment0 and what kind of membership. This is a mixed ABox RBox query as the first example, 
+This query is used to find all the members of Depatment0 and what kind of membership. This is a mixed ABox RBox query as the first example,
 but this time we add constraints to the property node in the RBox area. In SPARQL-DL the query has one type atom, one property value atom
 and one sub property atom:
 
@@ -83,9 +83,9 @@ and one sub property atom:
 
 {% include figure image_path="/assets/images/owl2query/sparqlexample3.png" alt="OWL2Query query example 3" %}
 
-In the graph the sub property of atom is represented as an arrow between two rbox nodes in the RBox area with a "SubPropertyOf" stereotype. 
-This graph has two nodes that contain the label representing the variable y. This means that the nodes reference the same term from different 
-parts of the query. This fact is represented in the graph interactively. When the user tries to interact with the node the node's borders 
+In the graph the sub property of atom is represented as an arrow between two rbox nodes in the RBox area with a "SubPropertyOf" stereotype.
+This graph has two nodes that contain the label representing the variable y. This means that the nodes reference the same term from different
+parts of the query. This fact is represented in the graph interactively. When the user tries to interact with the node the node's borders
 that reference the same term are emphasized. Also a dashed line drawn to the other nodes using the same term.
 
 ## Publications
