@@ -8,6 +8,13 @@
 @import "minimal-mistakes"; // main partials
 
 .profile-photo {
-  width: 133px;
-  height: 200px;
+  width: 150px;
+  height: 300/4px;
+}
+
+.medaillon {
+  width: 100%;
+  height: 10px;
+  outline-style: solid;
+  outline-width: 10px;
 }

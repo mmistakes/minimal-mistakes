@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Dataset Dashboard
-permalink: /artifacts/sw/dataset-dashboard
+permalink: /software/dataset-dashboard
 lang: en
 lang-ref: dataset-dashboard
 author_profile: true
