@@ -23,6 +23,7 @@ search: true
 <img src="http://drive.google.com/uc?export=view&id=1ro3ki7JichBq0fXv4U388amVp4I7P4qi"><br>
 <img src="http://drive.google.com/uc?export=view&id=1ru_-yV0i2dPWjQx2rDr6u9mDjEFoiPqv"><br>
 <img src="http://drive.google.com/uc?export=view&id=1rwnuzDH-U4DTd_smyrBx-i_2_tyjUevp"><br>
+<img src="http://drive.google.com/uc?export=view&id=1sGtkDU5quWnZDQcb_jia1FmZbM4_FNpS"><br>
 </div>
 
 
