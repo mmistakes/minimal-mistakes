@@ -76,8 +76,8 @@ We develop end user systems and tools as well software libraries used by other s
 TermIt is a SKOS-compatible terminology manager and editor.
 
 [TermIt Website](https://kbss-cvut.github.io/termit-web/){: .btn .btn--info}
-[Source code backend](https://github.com/kbss-cvut/termit){: .btn .btn--info}
-[frontend](https://github.com/kbss-cvut/termit-ui){: .btn .btn--info}
+[Source code - backend](https://github.com/kbss-cvut/termit){: .btn .btn--info}
+[Source code - frontend](https://github.com/kbss-cvut/termit-ui){: .btn .btn--info}
 
 
 #### Dataset Dashboard
