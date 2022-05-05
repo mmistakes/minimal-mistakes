@@ -53,8 +53,8 @@ to apply, even if your mix of skills is different than what is listed above.</p>
     "name": "USDA-ARS",
     "value": "000001"
   },
-  "datePosted" : "2022-02-24",
-  "validThrough" : "2022-04-30T00:00",
+  "datePosted" : "2022-05-06",
+  "validThrough" : "2022-07-15T00:00",
   "applicantLocationRequirements": {
     "@type": "Country",
     "name": "USA"
@@ -92,7 +92,7 @@ to apply, even if your mix of skills is different than what is listed above.</p>
 
 ![](/assets/images/Salmonella_enteritidis_USDA.jpg)
 
-We will be filling this position as soon as possible, for full consideration please apply by **April 30, 2022**
+We will be filling this position as soon as possible, for full consideration please apply by **July 15, 2022**
 {: .notice--warning}
 
 # Position description
@@ -114,10 +114,6 @@ genomes, Salmonella is a great system to develop new non-linear polygenic scorin
 I anticipate that a successful applicant will have an interest or experience in:
 
 * computer science, microbiology, machine learning, computational biology or bioinformatics.
-* This position focuses on the development of applications for analysis
-of this data and the publication of software tools. A successful candidate will
-likely have some experience in version control, data structures, ML
-frameworks like Keras, Tensorflow, or PyTorch and proficiency in Python.
 * The applicant should have experience in statistics.
 
 I recognize that each person

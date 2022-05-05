@@ -79,14 +79,11 @@ _PhD, Mississippi State University, 2019_
 Dr. Winders is working on a project to determine the sex of chicken eggs when they are laid by applying
 high-throughput Proton transfer reaction mass spectrometry (PTR-MS) and machine learning.   
 
-![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/users.png){: .align-left}
-## Chris Gaby, PhD
-_PhD, University of Tennessee_
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/pp_sveinn_150.jpg){: .align-left}
+## Sveinn Einarsson, PhD
+_PhD Old Dominion University, 2021_
 
-Dr. Gaby is working on Large scale-comparative genomics in Salmonella and the
-application of Machine learning methods for genotype and phenotype prediction
-in Salmonella. He is also developing methods for investigating nitrogen fixation in sugar cane. More in his research is [here](https://chrisgaby.github.io/)
-
+Dr. Einarsson is is a University of Florida postdoc using Bayesian networks metagenomics and exo-metabolomics to model microbe metabolite interactions  in a tomato pathogen system using _Ralstonia solanacearum_.
 
 # Former members
 
@@ -101,6 +98,15 @@ communities using [amplicon sequencing, metabolomics, and Bayesian networks](/pr
 order to identify key microbial structures and functional signatures to support
 the selection of candidate taxa for microbial-consortia to enhance crop
 production.  He also developed [Guidemaker](https://guidemaker.org) Software for the design of CRISPR/Cas Guide RNAs.  More on his research is [here](https://ravinpoudel.github.io/).
+
+
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/users.png){: .align-left}
+## Chris Gaby, PhD
+_PhD, University of Tennessee_
+
+Dr. Gaby is working at an early stage microbiome start-up. At GBRU he worked on large scale-comparative genomics in Salmonella and the
+application of Machine learning methods for genotype and phenotype prediction
+in Salmonella. More in his research is [here](https://chrisgaby.github.io/)
 
 
 

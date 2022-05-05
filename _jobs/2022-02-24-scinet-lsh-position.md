@@ -30,8 +30,8 @@ header:
     "name": "USDA-ARS",
     "value": "000001"
   },
-  "datePosted" : "2022-02-24",
-  "validThrough" : "2022-04-30T00:00",
+  "datePosted" : "2022-05-06",
+  "validThrough" : "2022-07-15T00:00",
   "applicantLocationRequirements": {
     "@type": "Country",
     "name": "USA"
@@ -73,7 +73,7 @@ header:
 
 # Application Deadline
 
-4/30/2022 **Applications will be reviewed on a rolling-basis and this posting could close before the deadline**
+07/15/2022 **Applications will be reviewed on a rolling-basis and this posting could close before the deadline**
 
 # Description
 
@@ -108,7 +108,7 @@ The appointment is full-time.
 
 # Participant Stipend
 
-The participant(s) will receive a monthly stipend commensurate with educational level and experience. Presenty aproxamatly $7,500 per month plsu a stipend for heath insurance through ORISE.
+The participant(s) will receive a monthly stipend commensurate with educational level and experience. Presenty aproxamatly $7,500 per month plus a stipend for heath insurance through ORISE.
 
 # Citizenship Requirements
 
@@ -135,16 +135,10 @@ We recognize that everone has a unique mix of skills and welcome applications fr
 
 ##  Eligibility Requirements
 
-* Citizenship: U.S. Citizen Only
+
 *	Degree: Doctoral Degree.
 
-##	Discipline(s):
-
-*	Computer, Information, and Data Sciences
-*	Earth and Geosciences
-*	Environmental and Marine Sciences
-*	Life Health and Medical Sciences
-*	Mathematics and Statistics
 
 
-Interested? [Email me today](mailto:adam.rivers@usda.gov?Subject=lsh-postdoc-position). A link to the position application will be posted shortly.
+
+Interested? [Email me today](mailto:adam.rivers@usda.gov?Subject=lsh-postdoc-position)   and [apply here](https://www.zintellect.com/Opportunity/Details/USDA-ARS-2022-0131)
