@@ -23,9 +23,11 @@ sidebar:
 </div>
 
 # Day 1
+<br/>
 
 ![apple](/images/2022-04-19-second-commit/image-20220419150815188.png)
 
+# Variable = var
 
 we are going to store some data. it could be anyting, names, news, stories etc.. 
 To store som data, we need a variable that we write 'var'. so variable can vary. it can change as program runs. 'var' means 'crate a new variable', it saves a little typing. and we are going to call variable 'greeting'. you can call it anything you want. 
@@ -46,6 +48,8 @@ print(name)
 var playerName = "Roy"
 print(playerName)
 ```
+<br/>
+# Constant = let
 
 if we don't ever want to change a value, we need to use a 'constant' instead. we write 'let'. 
 ```swift
@@ -106,6 +110,9 @@ we also have 'hasSuffix()' which checks whether a string ends with some text of 
 ```swift
 print(filename.hasSuffix(".jpg"))
 ```
+<br/>
+
+# Intergers = numbers
 
 Now, we're working with integers wich is numbers, 'int' for short. Making a new interger works just like making a string. 
 ```swift

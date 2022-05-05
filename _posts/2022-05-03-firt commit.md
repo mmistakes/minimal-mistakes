@@ -13,7 +13,7 @@ sidebar:
 
 
 # Day3
-
+<br/>
 # Arrays
 Rather than hold just one data, Array can hold zero, 1, 2, 50 million, or even more strings, Int, Double.
 
