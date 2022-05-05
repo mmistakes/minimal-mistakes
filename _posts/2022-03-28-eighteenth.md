@@ -1,11 +1,13 @@
 ---
 layout: single
-title: "음..넘~파이 판다스"
+title: "음..판다스"
 categories: study
 toc: true
-tag: numpy,pandas
+tag: pandas
 ---
 #### 넘파이
+
+
 flatten()
 
 2차원 구조
@@ -29,6 +31,7 @@ np.mean('인자')
 차원이 다른경우 브로드캐스팅이 지원되지 않는 경우가 있다.
 
 np.concatenate((b.T, a), axis=1
+
 t= 전치 행렬
 
 브로드캐스팅은 shape가 다른배열간에도 연산이 가능하지만 
