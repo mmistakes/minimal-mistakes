@@ -6,7 +6,7 @@ tag: [python, Machine Learning]
 toc: true
 ---
 
-## 데이터 구하기
+## 로지스틱 회귀
 
 ***
 
@@ -131,7 +131,7 @@ print(train_target[indexes])
 
 로지스틱 회귀는 이름은 회귀이지만 분류 모델입니다.<br>
 
-$z=a\times \left(Weight\right)\ +\ b\times \left(Length\right)\ +\ c\times \left(Diagonal\right)\ +\ d\times \left(Height\right)\ +\ e\times \left(Width\right)\ +\ fz=a×(Weight) + b×(Length) + c×(Diagonal) + d×(Height) + e×(Width) + f$​<br>
+$z=a × (Weight) + b × (Length) + c × (Diagonal) + d × (Height) + e × (Width) + f$<br>
 
 로지스틱 회귀에 사용할 함수는 **시그모이드 함수**입니다.
 시그모이드 함수는 S자형 곡선 또는 시그모이드 곡선을 갖는 수학 함수이다 여기서 $a,b,c,d,e$는 가중치 혹은 계수입니다. **시그모이드 함수(로지스틱 함수)**는 확률이 되려면 0 ~ 1 사이의 값이 되어야 합니다. $z$가 아주 큰 음수일 때 0이 되고, $z$가 아주 큰 양수일 경우에는 1이 됩니다. 
@@ -159,7 +159,7 @@ plt.show()
 
 #### 3 - 1. 로지스틱 회귀로 이진 분류 수행하기
 
-**불리언 인덱싱**을 사용하여 도미와 빙어의 행만 골라냅니다. 도미와 빙어에 대한 비교 결과를 비트 OR연산자(|)를 사용해 도미와 빙어에 대한 행만 골라냅니다.
+**불리언 인덱싱**을 사용하여 도미와 빙어의 행만 골라냅니다. 도미와 빙어에 대한 비교 결과를 비트 OR연산자를 사용해 도미와 빙어에 대한 행만 골라냅니다.
 
 ```python
 bream_smelt_indexes = (train_target == 'Bream') | (train_target == 'Smelt')
