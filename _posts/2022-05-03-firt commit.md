@@ -14,6 +14,7 @@ sidebar:
 
 # Day3
 <br/>
+
 # Arrays
 Rather than hold just one data, Array can hold zero, 1, 2, 50 million, or even more strings, Int, Double.
 
@@ -131,8 +132,11 @@ print(reversedPresidents)
 ```
 
 
+<br/>
 
-# How to store and find data in Dictionaries
+# Dictionaries
+
+## How to store and find data in Dictionaries
 ## Dictionaries don't store items according to their position like arrays do, nut insetad let us decide where items should be stored. when we wanna print from a dictionary, we can provide a default value to use if the key doesn't exist. 
 ```swift
 let employee = [
@@ -185,7 +189,7 @@ archEnemies["Batman"] = "Penguin" //setting another value for a key, Batman
 print(archEnemies["Batman", default: "Unknown"])
 ```
 
-
+<br/>
 
 # Sets for fast data lookup
 
@@ -216,7 +220,7 @@ print(people2.sorted())
 So, Why we need sets? if we have an array of 1000 movie names and use something like 'contains()' to check whether it contains a movie. Swift needs to go through every items until it finds one that matches. 
 in comparison, calling 'contains()' on a "set" runs So Fast. even though we have 10 million items, it would still run instantly. 
 
-
+<br/>
 
 # enums = short for enumeration. 
 ## we get to list up front the range of values it can have, and Swift will make sure you never make a miske using them. this calls the new enum Weekday, and provides five cases to handle the five weekdays.
