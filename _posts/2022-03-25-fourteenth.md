@@ -3,7 +3,7 @@ layout: single
 title: "지옥의 알고리즘 공부"
 categories: study
 toc: true
-tag: stress,algorithm
+tag: algorithm
 ---
 
 문제를 똑바로 읽자...
