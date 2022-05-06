@@ -44,8 +44,6 @@ toc: true
 
 #### 🔗 유용한 사이트 
 
-```html
-[MDN](https://developer.mozilla.org/ko/docs/Web/HTML) 
-[oFcourse](https://ofcourse.kr/html-course/%ED%83%9C%EA%B7%B8)
-```
+[MDN](https://developer.mozilla.org/ko/docs/Web/HTML) : 가장 기본이 되고 기초가 되는 사이트 , 개발자들이 가장 많이 이용하는 웹사이트 
+[oFcourse](https://ofcourse.kr/html-course/%ED%83%9C%EA%B7%B8) : 내가 그냥 우연히 발견한 사이트 
 
