@@ -23,7 +23,20 @@ page_css:
 * Son un tipo de **clases especiales** que tienen algunos **métodos** implementados porque sabemos que tarea tienen **que hacer** y también contienen otros **métodos que no** están implementado ``(Todavía no tenemos claro que harán de cara al futuro esos métodos sin implementar)``
 
   * Implementará lo que sepa cómo hacer y dejará que sean clases hijas (abstractas o especificas) quienes terminen de implementar lo que aún se desconoce
-  
+
+### Modificador abstract
+
+* Los elementos abstractos no están implementados
+  * Una clase abstracta no puede ser instanciar (necesita ser extendida para contar con una clase no abstracta) ya que podremos instanciarlas
+  * Si una clase es abstracta (necesita ser extendida) y no puede ser final (lo que no permite que sea extendida por las clases hijas de esta)
+* Los métodos abstractos no están implementados , se implementarán en una clase hija
+  * Si una clase contiene un método abstracto , ha de ser abstracta
+  * Cuando declaremos un método abstracto , no lo implementaremos entre llaves , solo declararemos la cabecera con el punto y coma al final
+
+```java
+  public abstract metodoAbstracto();
+```
+
 ### Ejemplo
 
 ```java
