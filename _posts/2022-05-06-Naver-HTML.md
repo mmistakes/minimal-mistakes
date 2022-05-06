@@ -44,8 +44,8 @@ toc: true
 
 #### 🔗 유용한 사이트 
 
-```md
-[ MDN ](https://developer.mozilla.org/ko/docs/Web/HTML) 
+```html
+[MDN](https://developer.mozilla.org/ko/docs/Web/HTML) 
 [oFcourse](https://ofcourse.kr/html-course/%ED%83%9C%EA%B7%B8)
 ```
 
