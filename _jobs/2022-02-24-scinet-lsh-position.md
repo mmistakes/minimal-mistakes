@@ -1,12 +1,12 @@
 ---
 title: "Computational biology postdoc: locality sensitive hashing for petabyte-scale metagenomic search"
-date: 2022-02-24
+date: 2022-05-06
 categories:
  - jobs
 tags:
  - jobs
  - Hyper Log Log
- - Locality senitive hashing
+ - Locality sensitive hashing
  - pathogen monitoring
  - open
 published: true
@@ -18,12 +18,49 @@ header:
 {
   "@context" : "https://schema.org/",
   "@type" : "JobPosting",
-  "title" : "Computational biology postdoc: locality sensitive hashing for petabyte-scale metagenomic search",
-  "description" : "<p>ARS Office/Lab and Location: A postdoctoral research opportunity is available with the U.S. Department of Agriculture (USDA), Agricultural Research Service (ARS), Genomics and Bioinformatics Research Unit in Gainesville, Florida. Other work locations are also possible.</p>
-<p>Research Project: The U.S. Department of Agriculture - Agricultural Research Service (USDA ARS) mission involves problem-solving research in the widely diverse food and agricultural areas encompassing plant production and protection; animal production and protection; natural resources and sustainable agricultural systems; and nutrition; food safety; and quality. The programs are conducted in 46 of the 50 States, Puerto Rico, and the U.S. Virgin Islands. For ARS to maintain its standing as a premier scientific organization, major investments in computing, networking, and storage infrastructure are required. Training in data and information management are integral to the integrity, security, and accessibility of research findings, results, and outcomes within the ARS research enterprise. Nearly 2000 scientists and support staff conduct research within the ARS research enterprise.</p>
-<p>The SCINet/Big Data Fellows Program of the USDA ARS offers research opportunities to motivated postdoctoral fellows interested in working on agricultural-related problems at a range of spatial and temporal scales, from the genome to the continent, and sub-daily to evolutionary time scales. One of the goals of the SCINet Initiative is to develop and apply new technologies, including AI and machine learning, to help solve complex agricultural problems that also depend on collaboration across scientific disciplines and geographic locations. In addition, many of these technologies rely on the synthesis, integration, and analysis of large, diverse datasets that benefit from high performance computing clusters (HPC). The objective of this fellowship program is to facilitate cross-disciplinary, cross-location research through collaborative research on problems of interest to each applicant and amenable to or required by the HPC environment. Training will be provided in specific AI, machine learning, deep learning, and statistical software needed for a fellow to use the HPC to search abd analyze large metagenomics datasets.</p>
-<p>Under the guidance of a mentor, the participant will have the opportunity to gain experience developing a large-scale cloud compute and high performance computing system for indexing and searching petabyte-scale genomics and metagenomics datasets using locality sensitive hashing. There is also the opportunity to learn to develop statistical models for normalizing the sensitivity and recall of search by locality-sensitive hashing.</p>
-<p>Learning Objectives: The participant will learn HPC computing technologies and will help develop and co-lead ARS-wide workshops, resulting in a community of scientific practice in computational metagenomics.The participant will have the opportunity to collaborate with multiple USDA ARS scientists on metagenomics, microbiomes, real-time pathogen monitoring, and machine learning applications in agriculture.</p>
+  "title" : "Postdoctoral Fellow in locality sensitive hashing for petabyte-scale metagenomic search",
+  "description" : "<h1 id="scientific-challenge">Scientific Challenge</h1>
+<p>The Sequence Read Archive (SRA) is a repository for the world’s public unassembled
+genomics data—currently ~40 Petabytes of data. There is not currently a method
+of finding samples in SRA that contain reads similar to a search sequence. SRA
+search would enable us to monitor sequences for pathogen emergence, find novel
+gene homologs and more. Hyper log-log sketching is a method of locality
+sensitive hashing that could potentially be used to index SRA data and allow
+for fast search. But a current challenge with hyper log-log search is that the
+precision and recall vary greatly by sample. This work will develop a statistical model to
+index sequences in a way that provides balanced precision and recall across
+all SRA samples. We have an infrastructure in place to to large scale indexing
+on the Google Cloud Platform and experience in engineering systems to set up and host a high-profile search tool.</p>
+<h1 id="position">Position</h1>
+<p>This postdoc is with the U.S. Department of Agriculture (USDA), Agricultural Research Service (ARS), Genomics and Bioinformatics Research Unit in Gainesville, Florida. Other work locations are also possible. It is part of the SCINet/Big Data Fellows Program of the USDA ARS offers research opportunities to motivated postdoctoral fellows interested in working on agricultural-related problems at a range of spatial and temporal scales, from the genome to the continent, and sub-daily to evolutionary time scales. One of the goals of the SCINet Initiative is to develop and apply new technologies, including AI and machine learning, to help solve complex agricultural problems that also depend on collaboration across scientific disciplines and geographic locations. In addition, many of these technologies rely on the synthesis, integration, and analysis of large, diverse datasets that benefit from high performance computing clusters (HPC). The objective of this fellowship program is to facilitate cross-disciplinary, cross-location research through collaborative research on problems of interest to each applicant and amenable to or required by the HPC environment. Training will be provided in specific AI, machine learning, deep learning, and statistical software needed for a fellow to use the HPC to search and analyze large metagenomics datasets.</p>
+<h1 id="usda-ars-contact">USDA-ARS Contact:</h1>
+<p>If you have questions about the nature of the research, please contact Dr. Adam Rivers, adam.rivers@usda.gov. Lab web site https://tinyecology.com</p>
+<p>Anticipated Appointment Start Date: Start date is flexible and will depend on a variety of factors.</p>
+<h1 id="appointment-length">Appointment Length:</h1>
+<p>The appointment will initially be for one year, but will be renewed upon recommendation of the mentor and ARS.</p>
+<h1 id="level-of-participation">Level of Participation</h1>
+<p>The appointment is full-time.</p>
+<h1 id="participant-stipend">Participant Stipend</h1>
+<p>The participant(s) will receive a monthly stipend commensurate with educational level and experience. The Stipend is approximately $90,000 per year plus a stipend for heath insurance through ORISE.</p>
+<h1 id="citizenship-requirements">Citizenship Requirements</h1>
+<p>This opportunity is currently available to U.S. citizens only.</p>
+<h1 id="orise-information">ORISE Information</h1>
+<p>This program, administered by ORAU through its contract with the U.S. Department of Energy (DOE) to manage the Oak Ridge Institute for Science and Education (ORISE), was established through an interagency agreement between DOE and ARS. Participants do not become employees of USDA, ARS, DOE or the program administrator, and there are no employment-related benefits. Proof of health insurance is required for participation in this program. Health insurance can be obtained through ORISE.</p>
+<h1 id="preferred-skills">Preferred skills:</h1>
+<ul>
+  <li>Proficiency in Linux and Bash scripting</li>
+  <li>Experience in Python or other languages</li>
+  <li>Experience with Github and workflow managers like Nextflow</li>
+  <li>Some experience with statistical modeling</li>
+  <li>An interest in biological applications</li>
+</ul>
+<p>We recognize that everyone has a unique mix of skills and welcome applications from anyone who has an established track record of productivity in genomics or AI/ML research.</p>
+<h2 id="eligibility-requirements">Eligibility Requirements</h2>
+<ul>
+  <li>Degree: Doctoral Degree.</li>
+</ul>
+<p>Interested? <a href="mailto:adam.rivers@usda.gov?Subject=lsh-postdoc-position">Email me today</a>  and <a href="https://www.zintellect.com/Opportunity/Details/USDA-ARS-2022-0131">apply here</a></p>
+
   ",
   "identifier": {
     "@type": "PropertyValue",
@@ -31,7 +68,7 @@ header:
     "value": "000001"
   },
   "datePosted" : "2022-05-06",
-  "validThrough" : "2022-07-15T00:00",
+  "validThrough" : "2022-06-15T00:00",
   "applicantLocationRequirements": {
     "@type": "Country",
     "name": "USA"
@@ -55,6 +92,7 @@ header:
     "sameAs" : "https://www.ars.usda.gov/",
     "logo" : "https://tinyecology.com/assets/USDALOGO-RGB.png"
   },
+  "url": "https://www.zintellect.com/Opportunity/Details/USDA-ARS-2022-0131",
  "baseSalary": {
     "@type": "MonetaryAmount",
     "currency": "USD",
@@ -71,36 +109,39 @@ header:
 ![](/assets/images/lsh.svg)
 
 
-# Application Deadline
+We will be filling this position as soon as possible. For full consideration please apply by **June 15, 2022**
+{: .notice--danger}
 
-07/15/2022 **Applications will be reviewed on a rolling-basis and this posting could close before the deadline**
+# Scientific Challenge
 
-# Description
-
- SCINet Fellow: Applying locality-sensitive hash methods to rapidly search petabytes of unassembled metagenomics data
-
-
-ARS Office/Lab and Location: A postdoctoral research opportunity is available with the U.S. Department of Agriculture (USDA), Agricultural Research Service (ARS), Genomics and Bioinformatics Research Unit in Gainesville, Florida. Other work locations are also possible.
-
-Research Project: The U.S. Department of Agriculture - Agricultural Research Service (USDA ARS) mission involves problem-solving research in the widely diverse food and agricultural areas encompassing plant production and protection; animal production and protection; natural resources and sustainable agricultural systems; and nutrition; food safety; and quality. The programs are conducted in 46 of the 50 States, Puerto Rico, and the U.S. Virgin Islands. For ARS to maintain its standing as a premier scientific organization, major investments in computing, networking, and storage infrastructure are required. Training in data and information management are integral to the integrity, security, and accessibility of research findings, results, and outcomes within the ARS research enterprise. Nearly 2000 scientists and support staff conduct research within the ARS research enterprise.
-
-The SCINet/Big Data Fellows Program of the USDA ARS offers research opportunities to motivated postdoctoral fellows interested in working on agricultural-related problems at a range of spatial and temporal scales, from the genome to the continent, and sub-daily to evolutionary time scales. One of the goals of the SCINet Initiative is to develop and apply new technologies, including AI and machine learning, to help solve complex agricultural problems that also depend on collaboration across scientific disciplines and geographic locations. In addition, many of these technologies rely on the synthesis, integration, and analysis of large, diverse datasets that benefit from high performance computing clusters (HPC). The objective of this fellowship program is to facilitate cross-disciplinary, cross-location research through collaborative research on problems of interest to each applicant and amenable to or required by the HPC environment. Training will be provided in specific AI, machine learning, deep learning, and statistical software needed for a fellow to use the HPC to search abd analyze large metagenomics datasets.
-
-Under the guidance of a mentor, the participant will have the opportunity to gain experience developing a large-scale cloud compute and high performance computing system for indexing and searching petabyte-scale genomics and metagenomics datasets using locality sensitive hashing. There is also the opportunity to learn to develop statistical models for normalizing the sensitivity and recall of search by locality-sensitive hashing.
-
-
-Learning Objectives: The participant will learn HPC computing technologies and will help develop and co-lead ARS-wide workshops, resulting in a community of scientific practice in computational metagenomics.The participant will have the opportunity to collaborate with multiple USDA ARS scientists on metagenomics, microbiomes, real-time pathogen monitoring, and machine learning applications in agriculture.
+The Sequence Read Archive (SRA) is a repository for the world's public unassembled
+genomics data---currently ~40 Petabytes of data. There is not currently a method
+of finding samples in SRA that contain reads similar to a search sequence. SRA
+search would enable us to monitor sequences for pathogen emergence, find novel
+gene homologs and more. Hyper log-log sketching is a method of locality
+sensitive hashing that could potentially be used to index SRA data and allow
+for fast search. But a current challenge with hyper log-log search is that the
+precision and recall vary greatly by sample. This work will develop a statistical model to
+index sequences in a way that provides balanced precision and recall across
+all SRA samples. We have an infrastructure in place to to large scale indexing
+on the Google Cloud Platform and experience in engineering systems to set up and host a high-profile search tool.
 
 
-#USDA-ARS Contact:
+# Position
+
+This postdoc is with the U.S. Department of Agriculture (USDA), Agricultural Research Service (ARS), Genomics and Bioinformatics Research Unit in Gainesville, Florida. Other work locations are also possible. It is part of the SCINet/Big Data Fellows Program of the USDA ARS offers research opportunities to motivated postdoctoral fellows interested in working on agricultural-related problems at a range of spatial and temporal scales, from the genome to the continent, and sub-daily to evolutionary time scales. One of the goals of the SCINet Initiative is to develop and apply new technologies, including AI and machine learning, to help solve complex agricultural problems that also depend on collaboration across scientific disciplines and geographic locations. In addition, many of these technologies rely on the synthesis, integration, and analysis of large, diverse datasets that benefit from high performance computing clusters (HPC). The objective of this fellowship program is to facilitate cross-disciplinary, cross-location research through collaborative research on problems of interest to each applicant and amenable to or required by the HPC environment. Training will be provided in specific AI, machine learning, deep learning, and statistical software needed for a fellow to use the HPC to search and analyze large metagenomics datasets.
+
+
+
+# USDA-ARS Contact:
 
 If you have questions about the nature of the research, please contact Dr. Adam Rivers, adam.rivers@usda.gov. Lab web site https://tinyecology.com  
 
 Anticipated Appointment Start Date: Start date is flexible and will depend on a variety of factors.
 
-#Appointment Length:
+# Appointment Length:
 
-The appointment will initially be for one year, but may be renewed upon recommendation of the mentor and ARS.
+The appointment will initially be for one year, but will be renewed upon recommendation of the mentor and ARS.
 
 # Level of Participation
 
@@ -108,20 +149,16 @@ The appointment is full-time.
 
 # Participant Stipend
 
-The participant(s) will receive a monthly stipend commensurate with educational level and experience. Presenty aproxamatly $7,500 per month plus a stipend for heath insurance through ORISE.
+The participant(s) will receive a monthly stipend commensurate with educational level and experience. The Stipend is approximately $90,000 per year plus a stipend for heath insurance through ORISE.
 
 # Citizenship Requirements
 
-This opportunity is available to U.S. citizens only.
+This opportunity is currently available to U.S. citizens only.
 
 # ORISE Information
 
 This program, administered by ORAU through its contract with the U.S. Department of Energy (DOE) to manage the Oak Ridge Institute for Science and Education (ORISE), was established through an interagency agreement between DOE and ARS. Participants do not become employees of USDA, ARS, DOE or the program administrator, and there are no employment-related benefits. Proof of health insurance is required for participation in this program. Health insurance can be obtained through ORISE.
 
-# Program Questions
-
-Please visit our Program Website. If you have additional questions about the application process please email USDA-ARS@orau.org and include the reference code for this opportunity.
-Qualifications The qualified candidate should have received a doctoral degree in one of the relevant fields listed below.
 
 # Preferred skills:
 
@@ -131,7 +168,7 @@ Qualifications The qualified candidate should have received a doctoral degree in
 *	Some experience with statistical modeling
 *	An interest in biological applications
 
-We recognize that everone has a unique mix of skills and welcome applications from anyone who has an established track record of productivity in metagenomics research.
+We recognize that everyone has a unique mix of skills and welcome applications from anyone who has an established track record of productivity in genomics or AI/ML research.
 
 ##  Eligibility Requirements
 
@@ -141,4 +178,4 @@ We recognize that everone has a unique mix of skills and welcome applications fr
 
 
 
-Interested? [Email me today](mailto:adam.rivers@usda.gov?Subject=lsh-postdoc-position)   and [apply here](https://www.zintellect.com/Opportunity/Details/USDA-ARS-2022-0131)
+Interested? [Email me today](mailto:adam.rivers@usda.gov?Subject=lsh-postdoc-position)  and [apply here](https://www.zintellect.com/Opportunity/Details/USDA-ARS-2022-0131).

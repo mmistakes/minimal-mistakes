@@ -24,7 +24,8 @@ metatranscriptomics to understand the fate of oil and gas released. In 2014 A
 became a research scientist at the Joint Genome Institute, a part of Lawrence
 Berkeley National Laboratory. I was the head of the Metagenome Program at JGI
 until 2017.  In January of 2017 I joined the Agricultural Research Service to
-start  the Agricultural Microbiomes Group.  
+start a group in the Genomics and Bioinformatics Research Unit focused on
+microbiomes and applied machine learning in agriculture.
 
 Agriculture is an exciting field to apply microbiome methods. A key question in
 microbiome research is how the genetics of the host and the ecology of the
@@ -38,7 +39,10 @@ in an area where microbiome science will have a tremendous impact.
 At the USDA Agricultural Research Service I hold a career scientist position as a
 [Computational Biologist in the Genomics and Bioinformatics Research Unit.](https://www.ars.usda.gov/southeast-area/stoneville-ms/genomics-and-bioinformatics-research/people/adam-r-rivers-phd/)
 
-I have a courtesy faculty appointment in the Department of Microbiology and Cell science at the University of Florida.
+I have a courtesy faculty appointment in the
+[Department of Microbiology and Cell Science](https://microcell.ufl.edu/)
+and an affiliation at the [Emerging Pathogens Institute](https://www.epi.ufl.edu/)
+at the University of Florida.
 
 [Academic CV](https://github.com/arivers/cv/raw/master/cv-arivers.pdf)  
 [Google Scholar profile](https://scholar.google.com/citations?user=1-l8IxwAAAAJ)
@@ -83,7 +87,28 @@ high-throughput Proton transfer reaction mass spectrometry (PTR-MS) and machine 
 ## Sveinn Einarsson, PhD
 _PhD Old Dominion University, 2021_
 
-Dr. Einarsson is is a University of Florida postdoc using Bayesian networks metagenomics and exo-metabolomics to model microbe metabolite interactions  in a tomato pathogen system using _Ralstonia solanacearum_.
+Dr. Einarsson is is a University of Florida postdoc using Bayesian networks
+constructed from metagenomics and exo-metabolomics data to model microbe
+metabolite interactions in a tomato pathogen system using _Ralstonia solanacearum_.
+
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/users.png){: .align-left}
+## Ian Rambo, PhD
+_PhD, University of Texas Austin_
+
+Dr. Rambo is joining the group this summer and  working on a jointly advised
+project with the [Food Processing and Sensory Quality Research Unit](https://www.ars.usda.gov/southeast-area/new-orleans-la/southern-regional-research-center/food-processing-and-sensory-quality-research/) in New Orleans, LA to develop better food  allergy diagnostic tests. Using data from arrays
+of food allergen peptides and protein structures from AlphFold he is designing
+3D convolutional neural networks to predict allergic reactions to foods.
+
+# Graduate Students
+
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/users.png){: .align-left}
+## Vipul Shinde
+_MS Candidate, University of Georgia_
+
+Vipul is Working with our lab and the [Bacterial Epidemiology and Antibiotic Research Unit](https://www.ars.usda.gov/southeast-area/athens-ga/us-national-poultry-research-center/bacterial-epidemiology-antimicrobial-resistance-research/) in Athens, GA
+o develop a Bayesian network to predict the secondary antibiotic resistances
+are selected by the application a primary antibiotic.
 
 # Former members
 
@@ -104,9 +129,9 @@ production.  He also developed [Guidemaker](https://guidemaker.org) Software for
 ## Chris Gaby, PhD
 _PhD, University of Tennessee_
 
-Dr. Gaby is working at an early stage microbiome start-up. At GBRU he worked on large scale-comparative genomics in Salmonella and the
+Dr. Gaby is working at an early stage microbiome start-up. At GBRU he worked on large scale-comparative genomics in *Salmonella* and the
 application of Machine learning methods for genotype and phenotype prediction
-in Salmonella. More in his research is [here](https://chrisgaby.github.io/)
+in *Salmonella*. More on his research is [here](https://chrisgaby.github.io/)
 
 
 
@@ -125,4 +150,4 @@ Anushka is a PhD student with Dr. Damon Woodard in the Electrical & Computer Eng
  of Florida. Her primary area of research lies in the domain of Image Analysis wherein she has developed applications for
 fields ranging from agricultural monitoring to biometrics.
 
-For the Agricultural Microbiomes group, she is developed a web application for designing CRISPR-Cas guide RNAs
+For the Agricultural Microbiomes group, she developed a prototype web application for designing CRISPR-Cas guide RNAs
