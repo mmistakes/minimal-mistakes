@@ -33,6 +33,8 @@ toc_ads: true
 * [nRF5 SDK (9) - nRF Command Line Tool 소개 및 설치방법](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-nrfjprog/)
 * [nRF5 SDK (10) - nrfjprog 명령어 활용예시](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-nrfjprog-2/)
 * [nRF5 SDK (11) - nrfjprog 명령을 이용한 메모리 참조](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-nrfjprog-3/)
+* [nRF5 SDK (12) - nRF Sniffer 셋팅 방법](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-nrf-sniffer/)
+* [nRF5 SDK (13) - ble_app_uart 예제를 이용한 Long Range 모드 테스트](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-ble-app-uart-long-range/)
 
 
 <!---

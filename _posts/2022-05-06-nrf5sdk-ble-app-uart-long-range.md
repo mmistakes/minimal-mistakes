@@ -1,5 +1,5 @@
 ---
-title: "nRF5 SDK (13) - ble_app_uart 예제를 이용한 Long Range 기능 테스트"
+title: "nRF5 SDK (13) - ble_app_uart 예제를 이용한 Long Range 모드 테스트"
 categories:
   - nRF5 SDK
 tags:
@@ -11,7 +11,7 @@ toc: true
 toc_sticky: true
 ---
 
-# 13. ble_app_uart 예제를 이용한 Long Range 기능 테스트
+# 13. ble_app_uart 예제를 이용한 Long Range 모드 테스트
 
 이번 포스트에서는 `nRF5 SDK` 에서 제공되는 `Long Range` 연결 방법에 대해 간단하게 소개하고자 한다. `nRF5 SDK` 에서 제공되는 <span style="color:#50A0A0"><b>ble_app_uart</b></span> 예제를 기준으로는 소스 코드에 몇 줄만 추가해주면 `Long Range` 모드로 연결이 가능한데, 관련된 자료가 별로 없어서 처음 테스트 할 당시에는 꽤 골치가 아팠다 😫. 
 
@@ -75,13 +75,13 @@ static void ble_evt_handler(ble_evt_t const * p_ble_evt, void * p_context)
 }
 ```
 
-`BLE_GAP_PHY_CODED` 상수가 정의되어 있는 곳을 가보면 해당 옵션 외에 다른 옵션 (e.g. `2Mbps`)도 선택할 수 있으며, 여기서 설정한 PHY Coded 옵션이 `Long Range` 모드를 가리킨다. (~~생각보다 별 거 없죠?~~)
+`BLE_GAP_PHY_CODED` 상수가 정의되어 있는 곳을 가보면 해당 옵션 외에 다른 옵션 (e.g. `2Mbps`)도 선택할 수 있으며, 여기서 설정한 PHY Coded 옵션이 `Long Range` 모드를 가리킨다. (~~생각보다 별 거 없쥬?~~)
 
 >블루투스 표준 문서를 보면 `Bluetooth 5.0` 에서 추가된 `Long Range` 통신을 위한 물리 계층은 `S=2` or `S=8` 옵션으로 구분되는데, `nordic` 에서는 `S=8` 물리 계층만을 지원하는 것으로 보인다. 이 때 데이터 전송 속도는 `1 Mbps / 8 = 125 kbps` 에 해당하며, 이론상 전송 거리는 4배 증가된다고 알려져 있음.
 
 ---
 
-## 13.3 nRF Sniffer Capturing
+## 13.3 nRF Sniffer Capturing 🚁
 
 `central` 장치의 소스 코드를 수정했다면 해당 테스트 보드의 전원은 잠시 꺼두고 `Wireshark` 를 이용해 `nRF Sniffer` 에서 수신되는 패킷 정보를 확인해보도록 하자. 여기서 `central` 장치를 꺼두는 이유는, 현재 예제 코드에서는 `central` 장치가 곧바로 `peripheral` 장치와 연결을 하기 때문에 `nRF Sniffer` 에서 원하는 패킷을 구분해서 확인하기가 어렵기 때문이다.
 
@@ -117,4 +117,4 @@ static void ble_evt_handler(ble_evt_t const * p_ble_evt, void * p_context)
 * 따라서, `Long-Range` 모드를 실제 어플리케이션에 적용할 때는, 해당 모드가 호환되지 않는 장치와의 연결도 고려해야할 것으로 보임.
 * nRF 보드 끼리는 Advertising 단계에서부터 `Long-Range` 모드로 동작시켜도 되는데, `nRF5 SDK` 에서는 Advertising 패킷은 `Long-Range` 로 송신되지 않음.
 
-Advertising 단계에서 `Long-Range` 패킷을 전송하기 위해서는 Extended 모드로 패킷을 송신해야하는데, 간단하게 테스트 해봤을 때는 이를 적용하더라도 기존 `1 Mbps` 모드로 패킷이 송신되는 것처럼 보였다. `nRF5 SDK` 에서 지원이 안 되는 것인지, 아니면 뭔가 설정하는 과정에서 빠뜨린 부분이 있는 것인지 모르겠는데.. 일단 추후에 `Long-Range` 관련 포스트를 다루게 되면 다시 소개하는 걸로...
+Advertising 단계에서 `Long-Range` 패킷을 전송하기 위해서는 Extended 모드로 패킷을 송신해야하는데, 간단하게 테스트 해봤을 때는 이를 적용하더라도 기존 `1 Mbps` 모드로 패킷이 송신되는 것처럼 보였다. `nRF5 SDK` 에서 지원이 안 되는 것인지, 아니면 뭔가 설정하는 과정에서 빠뜨린 부분이 있는 것인지 모르겠는데.. 일단 추후에 `Long-Range` 관련 포스트를 다루게 되면 다시 소개하는 걸로...🎆
