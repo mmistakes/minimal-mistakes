@@ -114,22 +114,39 @@ We will be filling this position as soon as possible. For full consideration ple
 
 # Scientific Challenge
 
-The Sequence Read Archive (SRA) is a repository for the world's public unassembled
-genomics data---currently ~40 Petabytes of data. There is not currently a method
-of finding samples in SRA that contain reads similar to a search sequence. SRA
-search would enable us to monitor sequences for pathogen emergence, find novel
-gene homologs and more. Hyper log-log sketching is a method of locality
-sensitive hashing that could potentially be used to index SRA data and allow
-for fast search. But a current challenge with hyper log-log search is that the
-precision and recall vary greatly by sample. This work will develop a statistical model to
-index sequences in a way that provides balanced precision and recall across
-all SRA samples. We have an infrastructure in place to to large scale indexing
-on the Google Cloud Platform and experience in engineering systems to set up and host a high-profile search tool.
-
+The Sequence Read Archive (SRA) is a repository for the world's public
+unassembled genomics data---currently ~40 Petabytes of data. There is not
+currently a method of finding samples in SRA that contain reads similar to a
+search sequence. SRA search would enable us to monitor sequences for pathogen
+emergence, find novel gene homologs and more. Hyper log-log sketching is a
+method of locality sensitive hashing that could potentially be used to index SRA
+data and allow for fast search. But a current challenge with hyper log-log
+search is that the precision and recall vary greatly by sample. This work will
+develop a statistical model to index sequences in a way that provides balanced
+precision and recall across all SRA samples. We have infrastructure in place to
+do large-scale indexing on the Google Cloud Platform and experience in
+engineering systems to set up and host a high-profile search tool.
 
 # Position
 
-This postdoc is with the U.S. Department of Agriculture (USDA), Agricultural Research Service (ARS), Genomics and Bioinformatics Research Unit in Gainesville, Florida. Other work locations are also possible. It is part of the SCINet/Big Data Fellows Program of the USDA ARS offers research opportunities to motivated postdoctoral fellows interested in working on agricultural-related problems at a range of spatial and temporal scales, from the genome to the continent, and sub-daily to evolutionary time scales. One of the goals of the SCINet Initiative is to develop and apply new technologies, including AI and machine learning, to help solve complex agricultural problems that also depend on collaboration across scientific disciplines and geographic locations. In addition, many of these technologies rely on the synthesis, integration, and analysis of large, diverse datasets that benefit from high performance computing clusters (HPC). The objective of this fellowship program is to facilitate cross-disciplinary, cross-location research through collaborative research on problems of interest to each applicant and amenable to or required by the HPC environment. Training will be provided in specific AI, machine learning, deep learning, and statistical software needed for a fellow to use the HPC to search and analyze large metagenomics datasets.
+This postdoc is with the U.S. Department of Agriculture (USDA), Agricultural
+Research Service (ARS), Genomics and Bioinformatics Research Unit in
+Gainesville, Florida. Other work locations are also possible. It is part of the
+SCINet/Big Data Fellows Program of the USDA ARS offers research opportunities to
+motivated postdoctoral fellows interested in working on agricultural-related
+problems at a range of spatial and temporal scales, from the genome to the
+continent, and sub-daily to evolutionary time scales. One of the goals of the
+SCINet Initiative is to develop and apply new technologies, including AI and
+machine learning, to help solve complex agricultural problems that also depend
+on collaboration across scientific disciplines and geographic locations. In
+addition, many of these technologies rely on the synthesis, integration, and
+analysis of large, diverse datasets that benefit from high performance computing
+clusters (HPC). The objective of this fellowship program is to facilitate
+cross-disciplinary, cross-location research through collaborative research on
+problems of interest to each applicant and amenable to or required by the HPC
+environment. Training will be provided in specific AI, machine learning, deep
+learning, and statistical software needed for a fellow to use the HPC to search
+and analyze large metagenomics datasets.
 
 
 
@@ -149,7 +166,7 @@ The appointment is full-time.
 
 # Participant Stipend
 
-The participant(s) will receive a monthly stipend commensurate with educational level and experience. The Stipend is approximately $90,000 per year plus a stipend for heath insurance through ORISE.
+The participant(s) will receive a monthly stipend commensurate with educational level and experience. The stipend is approximately $90,000 per year plus a stipend for health insurance through ORISE.
 
 # Citizenship Requirements
 
@@ -176,6 +193,10 @@ We recognize that everyone has a unique mix of skills and welcome applications f
 *	Degree: Doctoral Degree.
 
 
+## Location
+
+The position is located in Gainesville, FL at the USDA Agricultural Research Service lab and the
+ University of Florida Emerging Pathogens Institute. ORISE may approve US remote work.
 
 
 Interested? [Email me today](mailto:adam.rivers@usda.gov?Subject=lsh-postdoc-position)  and [apply here](https://www.zintellect.com/Opportunity/Details/USDA-ARS-2022-0131).
