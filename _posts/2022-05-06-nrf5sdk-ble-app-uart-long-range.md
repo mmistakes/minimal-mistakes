@@ -81,5 +81,40 @@ static void ble_evt_handler(ble_evt_t const * p_ble_evt, void * p_context)
 
 ---
 
-## 13.3 nRF Sniffer Captureing
+## 13.3 nRF Sniffer Capturing
 
+`central` 장치의 소스 코드를 수정했다면 해당 테스트 보드의 전원은 잠시 꺼두고 `Wireshark` 를 이용해 `nRF Sniffer` 에서 수신되는 패킷 정보를 확인해보도록 하자. 여기서 `central` 장치를 꺼두는 이유는, 현재 예제 코드에서는 `central` 장치가 곧바로 `peripheral` 장치와 연결을 하기 때문에 `nRF Sniffer` 에서 원하는 패킷을 구분해서 확인하기가 어렵기 때문이다.
+
+`Wireshark` 에서 `nRF Sniffer` 를 선택한 후 `Nordic_UART` 라는 이름으로 Advertising 하고 있을 `ble_app_uart` `peripheral` 장치의 신호를 따로 걸러내도록 하자. 
+
+<figure style="width: 100%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/sdk-long-range-fig2.png" alt="">
+</figure>
+
+>만약 `nRF Sniffer` 를 처음 실행시켰을 경우에는 아래 그림과 같은 `Bluetooth LE Interface` 가 보이지 않을 수 있는데, 그럴 때는 상단 메뉴바에서 마우스 우클릭을 한 후 `Interface Toolbars` 의 `nRF Sniffer for Bluetooth LE` 옵션을 클릭해주면 된다.
+
+필터링 이후에 Advertising 패킷을 하나 선택해보면, 아래 그림에서 볼 수 있듯이 현재 사용되는 물리 계층이 `PHY: LE 1M` 되어있는 것을 볼 수 있고, 현재는 기본 BLE 데이터 통신 모드로 (`1 Mbps`) 동작하고 있다는 것을 확인할 수 있다.
+
+<figure style="width: 100%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/sdk-long-range-fig3.png" alt="">
+</figure>
+
+`nRF Sniffer` 의 수신 패킷을 `peripheral` 디바이스로 필터링하고 있는 상태에서 `central` 디바이스의 전원을 켜면 `Broadcast` 로만 표시되던 패킷 정보가, `Master & Slave` 로 표시되고 두 디바이스간의 무선 연결이 이루어졌음을 확인할 수 있다. 무선 연결 과정은 `central` 장치에서 `scanning` 후 연결 요청 신호를 보내는 것으로 시작되며, 아래 그림을 보면 연결 완료 후 앞서 추가한 **`sd_ble_gap_phy_update`** 함수에 의해 데이터 전송 모드가 `1 Mbps` 에서 `125 kbps = PHY Coded` 로 변경된 것을 확인할 수 있다.
+
+<figure style="width: 100%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/sdk-long-range-fig4.png" alt="">
+</figure>
+
+---
+
+## 13.4 Another Issue
+
+본 포스트에서 소개한 방식은 기본 BLE 통신 모드 (`1 Mbps`)에서 연결 과정을 마무리한 후에 데이터 전송 모드를 `Long Range` 로 변경한 예시인데, 이는 애초에 `1 Mbps` 에서 연결이 어려울 경우에 적용할 수 없으므로, 다소 불완전한 연결 방식이 될 수도 있다. 
+
+이와 관련해서 몇 가지 이슈를 소개하자면,
+
+* 현재까지는 모든 블루투스 기기 (e.g. 스마트폰) 에서 `Long-Range` 모드를 지원하지 않으므로, 연결 이후에 `Long-Range` 모드로 전환하는 것 또한 이점이 있을 수 있음.
+* 따라서, `Long-Range` 모드를 실제 어플리케이션에 적용할 때는, 해당 모드가 호환되지 않는 장치와의 연결도 고려해야할 것으로 보임.
+* nRF 보드 끼리는 Advertising 단계에서부터 `Long-Range` 모드로 동작시켜도 되는데, `nRF5 SDK` 에서는 Advertising 패킷은 `Long-Range` 로 송신되지 않음.
+
+Advertising 단계에서 `Long-Range` 패킷을 전송하기 위해서는 Extended 모드로 패킷을 송신해야하는데, 간단하게 테스트 해봤을 때는 이를 적용하더라도 기존 `1 Mbps` 모드로 패킷이 송신되는 것처럼 보였다. `nRF5 SDK` 에서 지원이 안 되는 것인지, 아니면 뭔가 설정하는 과정에서 빠뜨린 부분이 있는 것인지 모르겠는데.. 일단 추후에 `Long-Range` 관련 포스트를 다루게 되면 다시 소개하는 걸로...
