@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Parámetros & Argumentos
+title: Java - Parámetros & Argumentos
 date: 2022-05-05
 classes: wide
 toc: true
@@ -42,7 +42,7 @@ public static void setSuma(int x , int y){
 
 ### Argumento
 
-* Son los **valores** que se pasan a los **métodos** declarados de una **clase** el cual estamos invocando
+* Son los **valores** que se pasan a los **métodos/procedimientos/funciones** declarados de una **clase** la cual estamos invocando
   * A veces llamado ``parámetro real`` se refiere a la entrada real suministrada en la llamada de ``función``
 
 ```java
