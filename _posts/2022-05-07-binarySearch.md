@@ -34,3 +34,10 @@ def binary_search(array, target, start, end):
 
 <br>
 
+1. 오영식이 이미 가지고 있는 랜선의 개수 K, 필요한 랜선의 개수 N을 string token으로 받음  
+2. 각각 랜선의 길이를 배열로 받음  
+참고로 N, K, 각각 랜선의 길이는 int 범위에서 벗어나지 않으므로 int 타입  
+3. 이진탐색 알고리즘을 활용할 것이므로 `min과 max를 1`  
+`mid = (max + min) / 2`로 지정한다  
+4. for 루프를 통해 n개를 만들 수 있는 랜선의 최대 길이를 찾는다(int)  
+4-1. 
