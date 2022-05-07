@@ -21,7 +21,7 @@ toc_sticky: true
 
 `Long Range` 모드 테스트를 위해 총 3개의 테스트 보드가 있으면 좋은데, `central & peripheral` 로 동작할 보드가 각각 하나씩 필요하고, `Long Range` 로 정상 동작하는지 확인하기 위해 패킷 정보를 분석할 `nRF Sniffer` 로 동작시킬 보드가 하나 있어야 한다. `nRF Sniffer` 로 사용 가능한 장치가 따로 있다면 2개의 테스트 보드만 준비하면 되고, `nRF Sniffer` 에 대한 정보가 필요할 경우 **[이전 포스트](https://enidanny.github.io/nrf5%20sdk/nrf5sdk-nrf-sniffer/)** 를 참고하길 바람.
 
->물론 `nRF Sniffer` 가 없더라고 `Long Range` 연결은 가능하지만, `nRF5 SDK` 에서는 `Long Range` 모드로 연결해도 이를 검증할 만한 방법이 딱히 없는 듯하다.
+>물론 `nRF Sniffer` 가 없더라도 `Long Range` 연결은 가능하지만, `nRF5 SDK` 에서는 `Long Range` 모드로 연결하더라도 이를 검증할 만한 방법이 딱히 없는 듯하다.
 
 <figure style="width: 100%" class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/sdk-long-range-fig1.png" alt="">
