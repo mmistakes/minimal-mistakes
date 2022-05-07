@@ -5,7 +5,7 @@
 // https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#customizing
 $sans-serif: 'Noto Sans KR';
 $monospace: 'Ubuntu Mono';
-$type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
+$type-size-4-5: 1.2em !default; // Ubuntu Mono is a bit small
 
 @charset "utf-8";
 @import "minimal-mistakes/skins/aqua"; // skin
@@ -18,15 +18,15 @@ html {
   font-size: 12px; // change to whatever
 
   @include breakpoint($medium) {
-    font-size: 12px; // change to whatever
-  }
-
-  @include breakpoint($large) {
     font-size: 14px; // change to whatever
   }
 
-  @include breakpoint($x-large) {
+  @include breakpoint($large) {
     font-size: 16px; // change to whatever
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 18px; // change to whatever
   }
 }
 
