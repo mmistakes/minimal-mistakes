@@ -1,72 +1,103 @@
 {
   "main": {
-    "id": "aef7723f8abb9fd3",
+    "id": "ee5fc29fbfe2e611",
     "type": "split",
     "children": [
       {
-        "id": "a4e18912407e32f6",
+        "id": "f3eea4ef4e8277f6",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "_posts/2022-03-14-fourth.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "262e3637afd36aa4",
-    "type": "mobile-drawer",
+    "id": "f4fa495c0d21751b",
+    "type": "split",
     "children": [
       {
-        "id": "b121880a838df324",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "80c0f10f779b14de",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "6912a5bfbe989542",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "81d3c94274fe0b53",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "0b4efb4e1dd9e5f2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 253
   },
   "right": {
-    "id": "2dc83d5e97de7668",
-    "type": "mobile-drawer",
+    "id": "0bfd8d1c59d08bd8",
+    "type": "split",
     "children": [
       {
-        "id": "672ee626cbef84c1",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": true
+        "id": "5b5735e133df8ad0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8cc66b60eafc0d7b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/2022-03-14-fourth.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
   },
-  "active": "a4e18912407e32f6",
-  "lastOpenFiles": []
+  "active": "f3eea4ef4e8277f6",
+  "lastOpenFiles": [
+    "_posts/2022-03-14-fourth.md",
+    "_posts/2022-05-07-seventh2.md",
+    "_posts/2022-05-05-Fifth2.md",
+    "_posts/2022-05-07-sample.md",
+    "_posts/2022-05-07-sixth2.md",
+    "_posts/2022-03-16-sixth.md",
+    "_posts/2021-12-27-Second.md",
+    "_posts/2022-05-04-fourth2.md",
+    "_posts/2022-05-03-third2.md",
+    "_posts/2022-05-02-second2.md"
+  ]
 }
