@@ -60,3 +60,128 @@ def binary_search(array, target, start, end):
 
 <br>
 
+```
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		
+		int K = Integer.parseInt(st.nextToken()); // 첫번째로 받은 인자 String 타입을 int로 변환해 저장
+		int N = Integer.parseInt(st.nextToken()); // 띄어쓰기 된 값들 K, N은 줄바꿈으로 다른 값들을 받는 buffer만으로 인식X
+		int[] cableTie = new int[K];
+		
+		long max = 0;
+		long min = 1;
+		long mid = 0;
+		int count = 1;
+		
+		// 각각 케이블의 길이를 배열에 저장 & 최대값 찾기
+		for(int i=0; i<K; i++) {
+			cableTie[i] = Integer.parseInt(br.readLine());
+			if(max < cableTie[i]) {
+				max = cableTie[i];
+			}
+		}
+		
+		while(min <= max) {
+			
+			mid = (min + max) / 2;
+			
+			for(int i=0; i<K; i++) {
+				count += cableTie[i] / mid;
+			
+			if(count >= N) {
+				min = mid + 1;
+				
+			}else if(count < N) {
+				max = mid - 1;
+			}
+		}
+
+		System.out.println(max);
+		bw.flush();
+		bw.close();
+		br.close();	
+	}	
+}
+```
+이렇게 했는데 왜 안되나 계속 고민했는데  
+count = 1로 해놓고 += 에, 반복될때마다 초기화해야되는데  
+안해서 count 값이 이상하게 나옴ㅋㅋㅋㅋ...  
+min빼고 0 넣어주면 되는데 왜저런건지...  
+
+<br>
+
+```
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		
+		int K = Integer.parseInt(st.nextToken()); // 첫번째로 받은 인자 String 타입을 int로 변환해 저장
+		int N = Integer.parseInt(st.nextToken()); // 띄어쓰기 된 값들 K, N은 줄바꿈으로 다른 값들을 받는 buffer만으로 인식X
+		int[] cableTie = new int[K];
+		
+		long max = 1;
+		long min = 1;
+		long mid = 1;
+		
+		// 각각 케이블의 길이를 배열에 저장 & 최대값 찾기
+		for(int i=0; i<K; i++) {
+			cableTie[i] = Integer.parseInt(br.readLine());
+			if(max < cableTie[i]) {
+				max = cableTie[i];
+			}
+		}
+		
+		while(min <= max) {
+			
+			int count = 0;
+			
+			mid = (min + max) / 2;
+			
+			for(int i=0; i<K; i++) {
+				count += cableTie[i] / mid;
+			}
+			
+			if(count >= N) {
+				min = mid + 1;
+				
+			}else if(count < N) {
+				max = mid - 1;
+			}
+		}
+
+		System.out.println(max);
+		bw.flush();
+		bw.close();
+		br.close();	
+	}	
+}
+```
+이러니까 된다!  
+
+<br>
+
+![image](https://user-images.githubusercontent.com/86642180/167282383-4c825d20-7807-4601-a2f7-a6b0bbe98dae.png)  
+처음부터 맞출거 였는데 count 초기화 안함 & 처음부터 1넣어서 삽질했다  
