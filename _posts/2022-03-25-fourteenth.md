@@ -7,7 +7,6 @@ tag: algorithm
 ---
 
 문제를 똑바로 읽자...
-문제를 똑바로 읽자...
 
 1.  Your while-statement is missing a `:` at the end.
 2.  It is considered very dangerous to use `input` like that, since it evaluates its input as real Python code. It would be better here to use [`raw_input`](http://docs.python.org/2.7/library/functions.html#raw_input) and then convert the input to an integer with [`int`](http://docs.python.org/2.7/library/functions.html#int).

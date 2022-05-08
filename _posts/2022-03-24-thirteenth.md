@@ -11,8 +11,6 @@ tag: python, import
 	RUNTIME ERROR 실행중에 생기는 에러- running 과정에서 생기는 에러입니다.
 	Exception이라는 상위 클래스를 상속받는다.
 
-## 객체지향은 개념일뿐이다!
-### 기획 요구사항분석 설계 개발 배포 유지보수
 
 #### 클래스...
 ```python
@@ -198,11 +196,6 @@ print(james.get_age())
 
 #결과 20
 ```
-
-
-
-
-
 
 
 
