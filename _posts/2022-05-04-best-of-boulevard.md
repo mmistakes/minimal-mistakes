@@ -1,6 +1,6 @@
 ---
 title: "Best of Boulevard - April 2022"
-permalink: "bob/mar22"
+permalink: "bob/apr22"
 categories:
   - Best of Boulevard
 tags:
