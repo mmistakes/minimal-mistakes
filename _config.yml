@@ -93,9 +93,9 @@ social:
   links: # An array of links to social media profiles
 
 # Analytics
-analytics:
-  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
+    analytics:
+    provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
+    google:
     tracking_id          : "G-8BXYX6XJ3W"
     anonymize_ip         :  false # true, false (default)
 
@@ -106,26 +106,17 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "공부하는 개발자"
   location         : "South Korea"
-  email            :
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "winsomed96@naver.com"
+      url: "mailto:winsomed96@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+       url: "https://hosunghan-0821.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://github.com/hosunghan-0821"
 
 # Site Footer
 footer:
