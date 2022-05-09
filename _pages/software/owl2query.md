@@ -1,7 +1,7 @@
 ---
 layout: single
 title: OWL2Query
-permalink: /software/owl2query
+permalink: /owl2query
 lang: en
 lang-ref: owl2query
 author_profile: true
