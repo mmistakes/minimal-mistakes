@@ -20,7 +20,9 @@ page_css:
 
 ## Modificador - final
 
-* Hace que una ``clase`` , ``atributo`` o ``método`` no se pueda modificar
+* Este modificador hace que una ``clase`` , ``atributo`` o ``método`` no se pueda modificar
+
+* Los **atributos** y **métodos** no permiten el uso de la etiqueta ``@Override``
 
 ### Clases Finales
 
@@ -29,7 +31,7 @@ page_css:
 
 ### Métodos Finales
 
-* No pueden ser sobrescritos por ninguna de sus subclases
+* No pueden ser ``@Override`` por ninguna de sus subclases
 
 ### Atributos Finales
 
