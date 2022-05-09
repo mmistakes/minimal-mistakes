@@ -136,5 +136,9 @@ Semantic form generator and processor for ontology-based smart forms.
 
 OWL2Query is an expressive query and meta-query engine and visualization kit supporting OWL 2 DL and SPARQL-DL with negation as failure.
 
+<<<<<<< HEAD
 [Detailed description](/kbss-website/software/owl2query){: .btn .btn--info}
+=======
+[Detailed description](/owl2query){: .btn .btn--info}
+>>>>>>> 1127d4546b9c3c2e90a615a348cc04157d2a6741
 [Source code](https://github.com/kbss-cvut/owl2query){: .btn .btn--info}
