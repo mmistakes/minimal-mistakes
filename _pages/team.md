@@ -23,7 +23,7 @@ systems.
 
 ### Miroslav Blaško
 
-![miro-photo](/assets/images/team/miro.jpg){: .align-right .profile-photo}
+![miro-photo](/kbss-website/assets/images/team/miro.jpg){: .align-right .profile-photo}
 
 Miroslav Blaško získal Ph.D. v roce 2016 v oboru Umělá inteligence a biokybernetika po obhajobě disertační práce "Template-based Ontology Evolution". Mezi jeho odborné zájmy také patří ochrana soukromí, návrh myšlenkových map a ontologií, sémantický web, Linked Data, meta-modelování
 a automatické uvažování v deskripčních logikách. Má za sebou účast na evropském projektu Netcarity,
@@ -32,7 +32,7 @@ v současnosti se podílí na projektu Ministerstva kultury MONDIS.
 
 ### Martin Ledvinka
 
-![martin-photo](/assets/images/team/martin.jpg){: .align-left .profile-photo}
+![martin-photo](/kbss-website/assets/images/team/martin.jpg){: .align-left .profile-photo}
 
 Martin received his Ph.D. in the study programme Artificial intelligence and Biocybernetics at FEE CTU in Prague in 2021 by defending his dissertation thesis with the topic of "Leveraging Semantic Web Technologies in Domain-specific Information Systems." His professional interests include application access to ontologies, design of information systems based on semantic technologies in general and software system testing automation. Besides his research duties, he was or has been involved in teaching of the following subjects: A7B39WPA (Web and enterprise applications) and B6B36EAR (Enterprise architectures) at FEE CTU in Prague and BI-ATS (Software testing automation) at FIT CTU in Prague.
 
@@ -46,7 +46,7 @@ na FEL ČVUT v Praze a BI-ATS (Automatizované testování software) na FIT ČVU
 
 ### Michal Med
 
-![michal-photo](/assets/images/team/michal.jpg){: .align-right .profile-photo}
+![michal-photo](/kbss-website/assets/images/team/michal.jpg){: .align-right .profile-photo}
 
 Michal graduated in Geomatics at the Faculty of Civil Engineering in 2014 and received his Ph.D. in the Geodesy, cartography and geoinformatics at the same faculty in 2020. Topic of his thesis is "Implementation of the INSPIRE Directive in the context of Spatial Data Infrastructure development in the Czech Republic". In 2015 Michal started to participate at the KBSS project "Open Data and semantic approaches to uncover social aspects of urban quality". Later he became part of the team with focus mainly on the spatial aspects of linked open data, spatial ontologies. His interests lies in opening data of public administration. In the last years he got involved in teaching subject Ontologies and Semantic Web at the FEE.
 
@@ -55,7 +55,7 @@ Topics of the final theses to be led by Michal are listed [here](https://bpmpc.f
 
 ### Jana Ahmad
 
-![jana-photo](/assets/images/team/jana.jpg){: .align-left .profile-photo}
+![jana-photo](/kbss-website/assets/images/team/jana.jpg){: .align-left .profile-photo}
 
 Jana Ahmad v roce 2014 dokončila magisterské studium v oblasti IT a od letního semestru 2015 je studentkou prezenční formy doktorského studia
 oboru Umělá inteligence a biokybernetika. Oblastmi jejího odborného zájmu jsou konceptuální ontologické modelování pro rozvoj udržitelných IS,
@@ -64,7 +64,7 @@ ontologického modelování s ohledem na efektivní perzistenci výsledných ont
 
 ### Bogdan Kostov
 
-![bogdan-photo](/assets/images/team/bogdan.jpg){: .align-right .profile-photo}
+![bogdan-photo](/kbss-website/assets/images/team/bogdan.jpg){: .align-right .profile-photo}
 
 Bogdan Kostov je aktuálně interní doktorand na Katedře kybernetiky. Tématem jeho disertační práce je rozšíření, optimalizace
 a aplikace expresivních sémantických dotazovacích jazyků. Jeho další odborné zájmy jsou Linked Data,
@@ -75,7 +75,7 @@ V současnosti se podílí na projektu Ministerstva vnitra ProtoSpy.
 
 <!-- ### Lama Saeeda
 
-![lama-photo](/assets/images/team/lama.jpg){: .align-left .profile-photo}
+![lama-photo](/kbss-website/assets/images/team/lama.jpg){: .align-left .profile-photo}
 
 Lama Saeeda je studentkou prvního ročníku prezenční formy doktorského studia oboru Umělá inteligence a biokybernetika na FEL ČVUT v Praze.
 Dokončila magisterské studium na Univerzitě Tishreen v Sýrii, na fakultě informačních technologií, Katedra softwarového inženýrství a informačních systémů.
@@ -83,7 +83,7 @@ Tématem její dizertační práce je podpora tvorby ontologií s využitím tex
 
 ### Petr Křemen
 
-![petr-photo](/assets/images/team/petr.jpg){: .align-left .profile-photo}
+![petr-photo](/kbss-website/assets/images/team/petr.jpg){: .align-left .profile-photo}
 
 The former leader of the team received Ph.D. in 2012 in the study programme Artificial intelligence and Biocybernetics at FEE CTU by defending thesis "Building Ontology-Based Information Systems". His professional interests are ontology design, ontology information systems, semantic web, linked data and description logics querying. He is author or co-author of many impacted papers and over forty conference papers. He participated in more then eleven national and international research projects. From 2022 he reduced his work in the team just to teaching and supervising final theses.
 <!-- Mezi jeho odborné zájmy patří návrh ontologií a ontologických informačních systémů, sémantický web, Linked Data a automatické uvažování a dotazování do deskripčních logik. -->
