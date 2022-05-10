@@ -2,6 +2,16 @@
 main:
   - title: "cateogry"
     url : /categories/
+docs:
+  - title: "대목차"
+    children:
+      - title: "category"
+        url: /categories/
+      - title: "tags"
+        url: /tags/
+
+
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
