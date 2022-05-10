@@ -3,7 +3,7 @@ layout: single
 title: "파이썬 class, import (편집중) "
 categories: study
 toc: true
-tag: python, import
+tag: [python, import]
 ---
 
 # 예외-에러라고 부른다
