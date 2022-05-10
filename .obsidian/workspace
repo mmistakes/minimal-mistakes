@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2022-05-09-nineth2op1.md",
+            "file": "_pages/404.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-05-09-nineth2op1.md",
+                "file": "_pages/404.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "e6c4c69e89672130",
   "lastOpenFiles": [
+    "_pages/404.md",
     "_posts/2022-05-09-nineth2op1.md",
     "_posts/2022-05-09-nineth2op2.md",
     "test/_pages/splash-page.md",
@@ -97,7 +98,6 @@
     "test/_pages/year-archive.md",
     "test/_pages/sitemap.md",
     "test/_pages/search.md",
-    "test/_pages/sample-page.md",
-    "test/_pages/recipes-archive.md"
+    "test/_pages/sample-page.md"
   ]
 }
