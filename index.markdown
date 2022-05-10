@@ -28,7 +28,7 @@ feature_row:
     title: "Technical details"
     excerpt: "TermIt architecture, interesting libraries used within, or the data model used within TermIt are some of the technical details of the system."
     btn_label: "Introduce me to the details"
-    url: /technical-details 
+    url: /technical-details
 --- -->
 This is new landing page.
 
