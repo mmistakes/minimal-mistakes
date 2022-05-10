@@ -27,4 +27,4 @@ neural network model to improve accuracy. Moreover, by extending a state-of-the-
 with more in-depth testing, we showed that larger models might be prone to overfitting because of
 the relative scarcity of training data.
 
-You can found more about this project [here](https://www.mdpi.com/2072-4292/14/10/2288/htm).
+You can find more details and the full text of the publication  [here](https://www.mdpi.com/2072-4292/14/10/2288/htm).
