@@ -91,13 +91,13 @@
   "lastOpenFiles": [
     "_posts/2022-05-09-nineth2op1.md",
     "_posts/2022-05-09-nineth2op2.md",
-    "_posts/2022-05-09-nineth2.md",
-    "_posts/2022-05-08-eighth2.md",
-    "_posts/2022-05-09-nineth2op21.md",
-    "_posts/2022-05-09-nineth2op20.md",
-    "_posts/2022-05-09-nineth2op19.md",
-    "_posts/2022-05-09-nineth2op18.md",
-    "_posts/2022-05-09-nineth2op17.md",
-    "_posts/2022-05-09-nineth2op16.md"
+    "test/_pages/splash-page.md",
+    "test/_pages/tag-archive-grid.md",
+    "test/_pages/year-archive-grid.md",
+    "test/_pages/year-archive.md",
+    "test/_pages/sitemap.md",
+    "test/_pages/search.md",
+    "test/_pages/sample-page.md",
+    "test/_pages/recipes-archive.md"
   ]
 }
