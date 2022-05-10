@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2022-05-09-nineth2op1.md",
+            "file": "_posts/2022-05-09-nineth2op2.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-05-09-nineth2op1.md",
+                "file": "_posts/2022-05-09-nineth2op2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "e6c4c69e89672130",
   "lastOpenFiles": [
+    "_posts/2022-05-09-nineth2op2.md",
     "_posts/2022-05-09-nineth2op1.md",
+    "_posts/2022-05-09-nineth2.md",
+    "_posts/2022-05-08-eighth2.md",
     "_posts/2022-03-22-tenth.md",
     "_posts/2022-03-21-nineth.md",
     "_posts/2022-03-17-seventh.md",
     "_posts/2022-03-14-fourth.md",
     "_posts/2021-12-26-first.md",
-    "_posts/2022-05-09-nineth2.md",
-    "_posts/2022-05-08-eighth2.md",
-    "_posts/2022-05-09-nineth2op21.md",
-    "_posts/2022-05-09-nineth2op20.md"
+    "_posts/2022-05-09-nineth2op21.md"
   ]
 }
