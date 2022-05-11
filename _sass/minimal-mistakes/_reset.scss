@@ -120,6 +120,7 @@ img {
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 /* Prevent max-width from affecting Google Maps */
