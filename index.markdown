@@ -32,6 +32,14 @@ feature_row:
 --- -->
 This is new landing page.
 
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
 <!-- {% assign pages=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
 {% if pages.size == 0 %}
     {% assign pages=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
