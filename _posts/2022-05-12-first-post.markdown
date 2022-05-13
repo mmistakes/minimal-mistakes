@@ -1,6 +1,7 @@
 ---
 title:  "Open Mic on JTBD!"
 driveId: 1kTtGdCpnt3ROwvLGr4c-8-crPf-uPGcs/preview
+category: "open-mic"
 ---
 
 On friday 13th May at 10:30 was an Open mic session with the topic "Jobs to be Done".
