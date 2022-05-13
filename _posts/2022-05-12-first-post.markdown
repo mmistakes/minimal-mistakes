@@ -1,5 +1,5 @@
 ---
-title:  "Open Mic on JTBD!"
+title:  "Jobs to be done in Open Mic Session"
 driveId: 1kTtGdCpnt3ROwvLGr4c-8-crPf-uPGcs/preview
 category: "open-mic"
 ---
