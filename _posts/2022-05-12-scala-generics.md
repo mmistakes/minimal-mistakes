@@ -1,6 +1,6 @@
 ---
 title: "Scala Generics: A Gentle Introduction"
-date: 2022-05-22
+date: 2022-05-12
 header:
     image: "/images/blog cover.jpg"
 tags: [scala, beginners]
