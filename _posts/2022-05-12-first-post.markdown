@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Open Mic on JTBD!"
-category: "open-mic"
 author_profile: true
 ---
 
