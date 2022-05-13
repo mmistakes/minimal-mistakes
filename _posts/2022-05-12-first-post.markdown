@@ -13,7 +13,9 @@ It is about the Customer Jobs Theory by Pedi and Palmer focusing on the desires 
 
 The text presentation is available at [this page](https://drive.google.com/file/d/1dNWEogaVYYm2wJgdJEyrM-5Ff0N4Dnwn/view?usp=sharing).
 
-{% include video id="1Pz3R0pjainN7T4Qj-i17iW39VVhqBEds" provider="google-drive" %}
+{% include video id="1kTtGdCpnt3ROwvLGr4c-8-crPf-uPGcs" provider="google-drive" %}
+
+https://drive.google.com/file/d/1kTtGdCpnt3ROwvLGr4c-8-crPf-uPGcs/view?usp=sharing
 
 More reading in:
 * https://jtbd.info/2-what-is-jobs-to-be-done-jtbd-796b82081cca
