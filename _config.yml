@@ -21,8 +21,8 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "KBSS"
 description              : "Knowledge-based and Software Systems group website"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/kbss-website" # the subpath of your site, e.g. "/blog"
+url                      : # "https://kbss-cvut.github.io"
+baseurl                  : # "/kbss-website" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/kbss-logo.png"
@@ -200,7 +200,7 @@ sass:
 
 
 # Outputting
-# permalink: /:categories/:title/
+#permalink: /:categories/:title/
 permalink: /:title
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
