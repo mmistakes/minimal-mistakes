@@ -1,7 +1,12 @@
 ---
-layout: post
+layout: single
 title:  "Open Mic on JTBD!"
 author_profile: true
+read_time: true
+comments: # true
+share: true
+related: true
+show_date: true
 driveId: 1kTtGdCpnt3ROwvLGr4c-8-crPf-uPGcs/preview
 ---
 
