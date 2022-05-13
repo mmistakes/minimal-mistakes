@@ -84,21 +84,21 @@ TermIt is a SKOS-compatible terminology manager and editor.
 
 The dataset dashboard is a tool for getting a quick overview over a SPARQL endpoint, or a graph inside a SPARQL endpoint.
 
-[Detailed description]({{/software/dataset-dashboard" | relative_url}}){: .btn .btn--info}
+[Detailed description]({{"/software/dataset-dashboard" | relative_url}}){: .btn .btn--info}
 [Source code](https://github.com/kbss-cvut/dataset-dashboard){: .btn .btn--info}
 
 #### OntoMind
 
 OntoMind is a tool for semantic mind mapping. We used it in the [MONDIS project](https://mondis.cz) for monument damage example management.
 
-[Detailed description]({{/software/ontomind" | relative_url}}){: .btn .btn--info}
+[Detailed description]({{"/software/ontomind" | relative_url}}){: .btn .btn--info}
 *TODO Source code*{: .btn .btn--info}
 
 #### OWLDiff
 
 OWLDiff is a project aiming at providing diff/merge functionality for OWL ontologies.
 
-[Detailed description]({{/software/owldiff" | relative_url}}){: .btn .btn--info}
+[Detailed description]({{"/software/owldiff" | relative_url}}){: .btn .btn--info}
 [Source code](https://github.com/kbss-cvut/owldiff){: .btn .btn--info}
 
 
