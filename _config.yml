@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Abhishek Mukherjee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : #"Research Assistant at <a style='color: black' href='https://www.njit.edu'>New Jersey Institute of Technology"
+  bio              : "Research Assistant at <a style='color: black' href='https://www.njit.edu'>New Jersey Institute of Technology"
   location         : "Newark, New Jersey"
   email            :  am2455@njit.edu
   links:
