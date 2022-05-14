@@ -20,7 +20,7 @@ title                    : "Abhishek Mukherjee"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : &name "Abhishek Mukherjee"
-description              : &description "Computational Fluid dynamics Researcher"
+description              : &description "Computational Fluid Dynamics Researcher"
 url                      : https://absrocks.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : https://github.com/absrocks # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
