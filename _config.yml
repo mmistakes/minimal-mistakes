@@ -107,14 +107,14 @@ author:
   bio              : "Research Assistant at the <a style='color: black;' href='https://mie.njit.edu/'>Department of Mechanical & Industrial Engineering, <a style='color: black' href='https://www.njit.edu'>New Jersey Institute of Technology"
   location         : "Newark, New Jersey"
   email            :  am2455@njit.edu
-  googlescholar    : "https://scholar.google.com/citations?user=K2SRNu4AAAAJ&hl=en&authuser=1"
+  # googlescholar    : "https://scholar.google.com/citations?user=K2SRNu4AAAAJ&hl=en&authuser=1"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
-    - label: "Website"
+    - label: "Google Scholar"
       icon: "fas fa-fw fa-link"
-      url: "https://your-website.com"
+      url: "https://scholar.google.com/citations?user=K2SRNu4AAAAJ&hl=en&authuser=1"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
