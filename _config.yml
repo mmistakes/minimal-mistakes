@@ -128,7 +128,8 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
     - label: "LinkedIn"
-      icon:  "fab fa-linedin-in"
+      avatar: "/assets/images/bio-self.jpg"
+      #icon:  "fab fa-linedin-in"
       url: "https://linkedin.com/"
 # Site Footer
 footer:
