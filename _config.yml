@@ -20,7 +20,7 @@ title                    : "eenooyos B"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "soyoon"
-description              : "An amazing website."
+description              : "soyoon's B"
 url                      : "https://eenooy.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -105,7 +105,7 @@ author:
   name             : "Park soyoon"
   avatar           : "https://avatars.githubusercontent.com/u/89180346?s=400&u=7ecd7337aa65777d5efe775edae3e785a83f4873&v=4"
   bio              : "계속"
-  location         : "Somewhere"
+  location         : "Republic of Korea"
   email            :
   links:
     - label: "Email"
