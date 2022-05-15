@@ -126,7 +126,7 @@ author:
       url: "https://github.com/absrocks"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/"
     - label: "LinkedIn"
       icon: "/images/LI-In-Bug.png"
       url: "https://linkedin.com/"
