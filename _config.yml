@@ -126,8 +126,10 @@ author:
       url: "https://github.com/absrocks"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
-
+      url: "https://instagram.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linedin"
+      url: "https://linkedin.com/"
 # Site Footer
 footer:
   links:
