@@ -11,18 +11,18 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes"
+# remote_theme           : "mmistakes/minimal-mistakes"
 # minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Abhishe Mukherjee"
+title                    : "Abhishek Mukherjee"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : &name "Abhishek Mukherjee"
 description              : &description "Computational Fluid Dynamics Researcher"
 url                      : https://absrocks.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : https://github.com/absrocks # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -107,6 +107,7 @@ author:
   bio              : "Research Assistant at the <a style='color: black;' href='https://mie.njit.edu/'>Department of Mechanical & Industrial Engineering, <a style='color: black' href='https://www.njit.edu'>New Jersey Institute of Technology"
   location         : "Newark, New Jersey"
   email            :  am2455@njit.edu
+  googlescholar    : "https://scholar.google.com/citations?user=K2SRNu4AAAAJ&hl=en&authuser=1"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
