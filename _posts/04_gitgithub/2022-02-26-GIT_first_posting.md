@@ -1,15 +1,12 @@
 ---
-layout: post
-title: git, git, git, what the hell is the 'git'..
-subtitle: 여기다가 부제목을 넣으면 되냥...
-tags: 태그
-description: >
-  git이 대체 뭔대 이렇게 이해가 안된단 말인가.. 한번 공부해보자.
-  프로그래머들이 깃깃 하는데 나도 좀 이해해보자고.
-sitemap: false
-hide_last_modified: true
-categories:
- - 04_git_github
+layout: single
+title:  git, git, git, what the hell is the 'git'..
+categories: 04_gitgithub
+tag: [github, version_management, code ]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
 ---
 
 **git(깃)**이라는 단어를 처음 접했던 때는 지금으로부터 약 3년 전. 매우 불쾌했던 기억이 있다. 이해가 안되서.. git에 대한 설명 글과 youtubye의 동영상을 찾아보니 결국 남는건 **'분산형 버전 관리 시스템'**이라고 한다. 하아..알 듯 모르겠다. 프로그램의 source code version을 관리해준다니.. 그런데 도대체 어떻게 한다고!! 어쨌건 약 3년 전에 주먹구구식으로 배워서 git을 설치하고, 또 하란대로 github을 가입해서 계정을 생성하고 했지만 전문 프로그래머가 아니었던 나는 쓸 일도 별로 없고, 몇 개월 후 다시 들어오면 여전히 CML에 git 관련 명령어를 입력하기 위해서 계속해서 블로그나 youtube를 찾아보고 했지만 github 창에 녹색박스를 하나 채운 날 그 이상도 이하도 아닌 git과 나의 대치상태는 지금까지도 계속되었다. 전문가 수준은 안되겠지만 이 블로그를 계기로 알아보고 싶다.. 도대체 git이 뭐냐고 대체.<br>

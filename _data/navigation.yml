@@ -7,15 +7,21 @@ main:
   - title: "Search"
     url: /search/
 docs:
-  - title: "Main category1"
+  - title: "Computer Programming"
     children:
-      - title: "python"
+      - title: "01_database"
+        url: /categories/
+      - title: "02_python"
+        url: /categories/
+      - title: "03_bi"
+        url: /categories/
+      - title: "04_github"
         url: /categories/
       - title: "Tag"
         url: /tags/
-  - title: "Main category2"
+  - title: "Life"
     children:
-      - title: "Category"
+      - title: "Diabetes mellitus, 당뇨병"
         url: /categories/
       - title: "Tag"
         url: /tags/
