@@ -116,7 +116,7 @@ author:
       url: "http://azurebacktoschool.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/AzureBackto"
+      # url: "https://twitter.com/AzureBackto"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/DwayneNcloud"
