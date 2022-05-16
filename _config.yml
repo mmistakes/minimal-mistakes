@@ -104,13 +104,13 @@ analytics:
 author:
   name             : "권민혁"
   avatar           : "/assets/profile.png"
-  bio              : "99년생 컴공 3학년"
-  location         : "경기도 수원시"
+  bio              : "밥먹고 살고싶은 한 개발자 꿈나무의 몸부림"
+  location         : "Republic of Korea"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:danny9kwon@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
