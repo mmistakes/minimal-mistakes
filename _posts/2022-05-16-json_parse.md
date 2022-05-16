@@ -8,7 +8,7 @@ sidebar:
     nav: docs
 ---
 
-# Further Study: How to use the reviver function in JSON.parse()
+# Further Study: reviver function in JSON.parse()
 
 > While solving the exercises of Day 16, I couldn't understand the concept of `reviver` parameter of `JSON.parse()`. In this page, let's get the point of using the function and look through some examples.
 <br>

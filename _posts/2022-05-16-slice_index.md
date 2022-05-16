@@ -10,6 +10,7 @@ sidebar:
 
 # Further Study: [Negative index in slice()][1]
 
+
 + `start` parameter can take negative index value, which means it starts from the end. `slice(-2)` will extract last two elements in the sequence.
 <br>
 
