@@ -1,11 +1,12 @@
-# Authors
-
-Abhishek Mukherjee:
-  name        : "Abhishek Mukherjee"
-  uri         : ""
-  email       : "am2455@njit.edu"
-  bio         : "What do you want, jewels? I am a very extravagant man."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "extravagantman"
-  google_plus : "BillyRick"
-
+# main links
+main:
+  - title: "Projects"
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Publications"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "CV"
+  #   url: /year-archive/
+  - title: "Contact"
+  url: /contact/
+  # - title: "Sitemap"
+  #   url: /sitemap/
