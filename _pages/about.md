@@ -26,4 +26,3 @@ thermal load I have also worked in preparing technical proposal document, checki
 bill of materials etc. Before that I completed my master degree  at the [Jadavpur University] 
 (add link) 
 
-![plot] (./assests/images/bio-self.jpg)
