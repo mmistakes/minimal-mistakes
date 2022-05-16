@@ -1,19 +1,28 @@
 ---
-permalink: /about/
+permalink: /
 title: "About"
-excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
-layouts_gallery:
-  - url: /assets/images/mm-layout-splash.png
-    image_path: /assets/images/mm-layout-splash.png
-    alt: "splash layout example"
-  - url: /assets/images/mm-layout-single-meta.png
-    image_path: /assets/images/mm-layout-single-meta.png
-    alt: "single layout with comments and related posts"
-  - url: /assets/images/mm-layout-archive.png
-    image_path: /assets/images/mm-layout-archive.png
-    alt: "archive layout example"
-last_modified_at: 2021-05-11T10:23:16-04:00
-toc: true
+excerpt: "About me"
+author_profile: true
+ 
 ---
 
-Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
+
+
+{% include base_path %}
+=====
+Hello I am Abhishek, a doctoral student currently doing research on The role of
+vegetation in coastal risk reduction at [NJIT](https://njit.edu) with 
+Dr. [Simone Marras](https://web.njit.edu/~smarras/). I primarily work on 
+numerical analysis of geophysical flows. I also have experience in 
+computational heat transfer. 
+
+Academic Background
+======
+Before my research assistantship at NJIT, I worked in [Larsen & Toubro] 
+(https://www.larsentoubro.com/) for 3 years. I was involved in [ITER] 
+(https://www.larsentoubro.com/) nuclear fusion reactor project, where 
+I worked on designing thermal load I have also worked in preparing 
+technical proposal document, checking vendor data, bill of materials etc.
+Before that I completed my master degree  at the [Jadavpur University] 
+(https://www.larsentoubro.com/) 
+
