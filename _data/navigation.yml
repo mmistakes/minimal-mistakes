@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "About"
+    url: /about/
   - title: "Category"
     url: /categories/
   - title: "Tag"
@@ -8,6 +10,8 @@ main:
     url: /search/
 
 docs:
+  - title: "About"
+    url: /about/
   - title: "Contents"
     children: 
       - title: "Category"
