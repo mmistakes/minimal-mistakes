@@ -1,6 +1,6 @@
 ---
-layout: splash
-author_profile: false
+layout: home
+author_profile: true
 lang: en
 lang-ref: index
 excerpt: "TermIt is a tool to manage vocabularies, terms and resources in which are the terms defined and used. It is focused on management of terms based on their semantics -- i.e. two 'same' terms in different vocabularies may have different meaning."
@@ -31,6 +31,16 @@ feature_row:
     url: /technical-details
 --- -->
 This is new landing page.
+
+<!-- <ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <br/>{{post.date.day}}
+      <br/>{{post.excerpt}}
+    </li>
+  {% endfor %}
+</ul> -->
 
 <!-- {% assign pages=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
 {% if pages.size == 0 %}

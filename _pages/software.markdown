@@ -84,21 +84,21 @@ TermIt is a SKOS-compatible terminology manager and editor.
 
 The dataset dashboard is a tool for getting a quick overview over a SPARQL endpoint, or a graph inside a SPARQL endpoint.
 
-[Detailed description](/kbss-website/software/dataset-dashboard){: .btn .btn--info}
+[Detailed description]({{"/software/dataset-dashboard" | relative_url}}){: .btn .btn--info}
 [Source code](https://github.com/kbss-cvut/dataset-dashboard){: .btn .btn--info}
 
 #### OntoMind
 
 OntoMind is a tool for semantic mind mapping. We used it in the [MONDIS project](https://mondis.cz) for monument damage example management.
 
-[Detailed description](/kbss-website/software/ontomind){: .btn .btn--info}
+[Detailed description]({{"/software/ontomind" | relative_url}}){: .btn .btn--info}
 *TODO Source code*{: .btn .btn--info}
 
 #### OWLDiff
 
 OWLDiff is a project aiming at providing diff/merge functionality for OWL ontologies.
 
-[Detailed description](/kbss-website/software/owldiff){: .btn .btn--info}
+[Detailed description]({{"/software/owldiff" | relative_url}}){: .btn .btn--info}
 [Source code](https://github.com/kbss-cvut/owldiff){: .btn .btn--info}
 
 
@@ -136,5 +136,5 @@ Semantic form generator and processor for ontology-based smart forms.
 
 OWL2Query is an expressive query and meta-query engine and visualization kit supporting OWL 2 DL and SPARQL-DL with negation as failure.
 
-[Detailed description](/kbss-website/software/owl2query){: .btn .btn--info}
+[Detailed description]({{"/software/owl2query" | relative_url}}){: .btn .btn--info}
 [Source code](https://github.com/kbss-cvut/owl2query){: .btn .btn--info}

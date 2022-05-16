@@ -17,14 +17,16 @@ gem "github-pages", group: :jekyll_plugins
 
 # gem "jekyll"
 gem "minimal-mistakes-jekyll"
-gem "jekyll-relative-links"
 
 # The following plugins are automatically loaded by the theme-gem:
-#   gem "jekyll-paginate"
-#   gem "jekyll-sitemap"
-#   gem "jekyll-gist"
-#   gem "jekyll-feed"
-#   gem "jekyll-include-cache"
+  gem "jekyll-paginate"
+  gem "jekyll-sitemap"
+  gem "jekyll-gist"
+  gem "jekyll-feed"
+  gem "jekyll-include-cache"
+  gem "jekyll-relative-links"
+  gem "webrick"
+
 #
 # If you have any other plugins, put them here!
 # Cf. https://jekyllrb.com/docs/plugins/installation/

@@ -12,9 +12,7 @@
   height: 225px;
 }
 
-.medaillon {
-  width: 100%;
-  height: 10px;
-  outline-style: solid;
-  outline-width: 10px;
+.post-image {
+  max-width: 640px;
+  max-height: 640px;
 }

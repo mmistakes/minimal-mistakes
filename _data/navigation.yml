@@ -1,17 +1,24 @@
 # main links
 main:
   - title: "Research projects"
-    url: "/projects"
+    url: /projects
+    description: "Projects solved by the team"
   - title: "Team"
-    url: "/team"
+    url: /team
+    description: "Team members and major publications"
   - title: "Software" #rename to Software?
-    url: "/software"
+    url: /software
+    description: "Software developed by the team"
+  - title: "Teaching"
+    url: /teaching
+    description: "Subjects and theses topics"
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Archive"
     url: /archive
+    description: "Archive of posts"
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
