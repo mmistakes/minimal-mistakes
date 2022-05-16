@@ -102,7 +102,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Abishek Mukherjee"
+  name             : "Abhishek Mukherjee"
   avatar           : "/assets/images/bio-self.jpg"
   bio              : "Research Assistant at the <a style='color: black;' href='https://mie.njit.edu/'>Department of Mechanical & Industrial Engineering, <a style='color: black' href='https://www.njit.edu'>New Jersey Institute of Technology"
   location         : "Newark, New Jersey"
@@ -295,11 +295,11 @@ defaults:
       related: true
   # _pages
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
       layout: single
-      author_profile: true
+      #author_profile: true
   # _articles
   - scope:
       path: ""
