@@ -1,15 +1,16 @@
 ---
 layout: single
 classes: wide
-title:  "More JS. Parameters of slice()"
+title:  "More JS. slice()"
 categories: JavaScript
-tags: [30DaysOfJS, Slice, MoreJS]
+tags: [30DaysOfJS, slice, MoreJS]
 sidebar:
     nav: docs
 ---
 
+<br>
 
-# Further Study: [Negative indexes in slice()][1]
+# Further Study: [Negative index in slice()][1]
 
 + `start` parameter can take negative index value, which means it starts from the end. `slice(-2)` will extract last two elements in the sequence.
 <br>
