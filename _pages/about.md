@@ -20,9 +20,9 @@ I also have experience in computational heat transfer.
 
 Academic Background
 ======
-Before my research assistantship at NJIT, I worked in [Larsen & Toubro] (add link) for 3 years.
-I was involved in [ITER] (add link) nuclear fusion reactor project, where I worked on designing
+Before my research assistantship at NJIT, I worked in [Larsen & Toubro] 
+(https://www.larsentoubro.com/) for 3 years. I was involved in [ITER] (https://www.larsentoubro.com/) nuclear fusion reactor project, where I worked on designing
 thermal load I have also worked in preparing technical proposal document, checking vendor data,
 bill of materials etc. Before that I completed my master degree  at the [Jadavpur University] 
-(add link) 
+(https://www.larsentoubro.com/) 
 
