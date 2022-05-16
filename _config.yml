@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Azure Back to School"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/azurebacktoschool-logo1.png"
   bio              : "UNDER CONSTRUCTION - Annual Community event in September"
   location         : "Global"
   email            :
