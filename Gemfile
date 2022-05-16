@@ -25,6 +25,7 @@ gem "minimal-mistakes-jekyll"
   gem "jekyll-feed"
   gem "jekyll-include-cache"
   gem "jekyll-relative-links"
+  gem "webrick"
 
 #
 # If you have any other plugins, put them here!
