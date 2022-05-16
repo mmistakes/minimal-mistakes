@@ -157,7 +157,7 @@ footer:
 # Reading Files
 include:
   - .htaccess
-  - _pages
+  #- _pages
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -173,7 +173,7 @@ exclude:
   - CHANGELOG
   - config
   - Gemfile
-  #- _pages
+  - _pages
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
