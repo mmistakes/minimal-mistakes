@@ -4,8 +4,4 @@ title: "Contact"
 excerpt: "Contact me"
 author_profile: true
 ---
-Contact information is below, including email and various web services.  
-
-
-* Google Scholar: [Abhishek Mukherjee](https://scholar.google.com/citations?user=K2SRNu4AAAAJ&hl=en&authuser=1)
-* LinkedIn: [abhishek-mukherjee](http://www.linkedin.com/in/abhishek-mukherjee-24078888/)
+Contact information is below, including email and various web services.
