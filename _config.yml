@@ -94,16 +94,16 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : G-JXSLGQQ0VC
+    tracking_id          : "G-JXSLGQQ0VC"
     anonymize_ip         : # true, false (default)
 
 
 # Site Author
 author:
   name             : "Azure Back to School"
-  avatar           : "/assets/images/azurebacktoschool-logo1.png"
+  avatar           : "https://github.com/azurebacktoschool/azurebacktoschool.github.io/blob/main/docs/assets/images/azurebacktoschool-logo1.png"
   bio              : "UNDER CONSTRUCTION - Annual Community event in September"
   location         : "Global"
   email            :
