@@ -5,7 +5,7 @@ category: "open-mic"
 #excerpt: "Open mic session about Jobs to be Done, includes presentation, video and further reading."
 ---
 
-On friday 13th May at 10:30 took place Open mic session. Today\'s topic is \"Jobs to be Done\". Video and presentation included.
+On Friday 13th May at 10:30 an open Mic session took place. The topic was \"Jobs to be Done\". Video and presentation included.
 
 {% include googleDrivePlayer.html id=page.driveId %}
 
