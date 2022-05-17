@@ -8,7 +8,7 @@ author_profile: true
 
 
 
-{% include base_path %}
+About
 =====
 Hello I am Abhishek, a doctoral student currently doing research on The role of
 vegetation in coastal risk reduction at [NJIT](https://njit.edu) with 
