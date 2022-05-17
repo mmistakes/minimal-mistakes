@@ -5,7 +5,7 @@ excerpt: "About me"
 author_profile: true
 ---
 
-Hello I am Abhishek, a doctoral student currently doing research on The role of
+Hello I am Abhishek, a doctoral student currently doing research on the role of
 vegetation in coastal risk reduction at [NJIT](https://njit.edu) with 
 Dr. [Simone Marras](https://web.njit.edu/~smarras/). I primarily work on 
 numerical analysis of geophysical flows. I also have experience in 
