@@ -1,7 +1,7 @@
 ---
 layout: single
-title: Java - Herencia
-date: 2022-04-17
+title: Java - Sistema en Cascada de Implementación y Herencia  
+date: 2022-05-09
 classes: wide
 toc: true
 toc_label: "Tabla de contenido"
@@ -10,51 +10,18 @@ header:
   teaser: /assets/images/java/logo-java-2.jpg
 categories:
   - java
-  - java-herencia
-  - java-super
+  - java-Interface 
+  - java-Herencia 
+  - java-Clase
 tags:
   - java-manual
 page_css: 
   - /assets/css/mi-css.css
 ---
 
-## Palabra Clave - Herencia
+## Sistema en Cascada de Implementación y Herencia
 
-> Todas las clases heredan de la **clase Object**
-
-* Permite la **reutilización** y la **extensión del código** heredado desde la **clase Padre**
-  * A la **Clase Padre** también se le conoce como **Clase Base** o **SuperClase**
-
-  * Las **clases Hijas** que descienden de la **clase Padre** heredarán de ella todos sus **estados** ``(atributos)`` y **acciones** ``(comportamientos)``
-
-* Cuando una ``clase Hija`` **hereda** las características **"(atributos y métodos)"** de una ``clase Padre`` , está usará la palabra clave ``extends`` dentro de la ``clase Hija``
-
-```java
-public class Hija extends Padre {
-  // Implementación
-}
-```
-
-* La ``clase Hija`` extiende las características de los **(estados/atributos)** y **(acciones/comportamientos)** de la ``clase Padre`` que recibida
-  * Podrá modificar los ``métodos`` mediante el identificador ``@Override`` para ajustarlos a las necesidades de la propias clases descendientes
-
-  * Recuerda : ``@Override`` → significa **Invalidar** no **Sobrescribir**
-               ``@Overwrite`` → significa **Sobrescribir**
-
-```java
- @Override
- public String getNombre() {
-  // TODO Auto-generated method stub
-  return super.getNombre();
- }
-```
-
-* La ``clase Hija`` extiende las características de las siguientes ``clase Hija`` u otras **clases descendientes** de esta clase en cuestión
-
-* Palabra clave ``super``
-  * Hace referencia al **constructor padre** heredado por la **clase Hija** para asignarles ciertos parámetros definidos por la **clase Padre**
-
-* En términos de implementación mediante la **Interface** y la **Herencia** lo que se busca es ir concretando cada vez más las **clases** que se vayan generando
+* La implementación mediante la **Interface** y la **Herencia** se realiza como si fuera una cascada de elementos descendentes
 
 ### Resumen del funcionamiento de las Interfaces , Herencias y Clases Concretas
 
