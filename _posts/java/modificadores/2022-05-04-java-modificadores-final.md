@@ -10,9 +10,9 @@ header:
   teaser: /assets/images/java/logo-java-2.jpg
 categories:
   - java
-  - java-modificadores
-tags:
   - java-final
+tags:
+  - java-modificadores
   - java-manual
 page_css: 
   - /assets/css/mi-css.css
@@ -20,7 +20,9 @@ page_css:
 
 ## Modificador - final
 
-* Hace que una ``clase`` , ``atributo`` o ``método`` no se pueda modificar
+* Este modificador hace que una ``clase`` , ``atributo`` o ``método`` no se pueda modificar
+
+* Los **atributos** y **métodos** no permiten el uso de la etiqueta ``@Override``
 
 ### Clases Finales
 
@@ -29,7 +31,7 @@ page_css:
 
 ### Métodos Finales
 
-* No pueden ser sobrescritos por ninguna de sus subclases
+* No pueden ser ``@Override`` por ninguna de sus subclases
 
 ### Atributos Finales
 
