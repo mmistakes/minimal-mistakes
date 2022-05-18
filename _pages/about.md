@@ -12,7 +12,6 @@ numerical analysis of geophysical flows. I also have experience in
 computational heat transfer. 
 
 # Academic and Professional Background
-
 Before my research assistantship at NJIT, I worked in [Larsen & Toubro](https://www.larsentoubro.com/) 
 for 3 years. I was involved in [ITER](https://www.larsentoubro.com/) nuclear fusion 
 reactor project, where I worked on designing thermal load I have also worked in preparing 
