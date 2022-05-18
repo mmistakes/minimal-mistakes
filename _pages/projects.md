@@ -5,7 +5,7 @@ excerpt: "My work history"
 author_profile: true 
 ---
 ## Role of coastal vegetation on tsunami energy attenuation
-This is test.
+
 <!-- header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mm-home-page-feature.jpg
