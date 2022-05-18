@@ -10,9 +10,9 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-bisect
-tags:
   - git-manual
+tags:
+  - git-bisect
 page_css: 
   - /assets/css/mi-css.css
 ---

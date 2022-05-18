@@ -10,11 +10,11 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-commit
+  - git-basico
   - git-comandos
 tags:
-  - git-basico
   - git-branch
+  - git-commit
   - git-working directory
 ---
 

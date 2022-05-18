@@ -11,11 +11,11 @@ header:
 categories:
   - git
   - git-comandos
-  - git-restore
-  - git-rm
-tags:
   - git-basico
   - git-manual
+tags:
+  - git-rm
+  - git-restore
 ---
 
 ## Git - restore

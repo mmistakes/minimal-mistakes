@@ -10,10 +10,10 @@ header:
   teaser: /assets/images/java/logo-java-2.jpg
 categories:
   - java
-  - java-final
-tags:
-  - java-modificadores
   - java-manual
+tags:
+  - java-final
+  - java-modificadores
 page_css: 
   - /assets/css/mi-css.css
 ---

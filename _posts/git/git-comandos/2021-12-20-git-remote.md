@@ -10,11 +10,11 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-remote
   - git-comandos
-tags:
   - git-basico
   - git-manual
+tags:
+  - git-remote
 page_css: 
   - /assets/css/mi-css.css
 ---

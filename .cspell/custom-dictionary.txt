@@ -5,6 +5,7 @@ chgrp
 comprimirlos
 deshacerlos
 inicialización
+javac
 jcfp
 jxvf
 metacaracteres

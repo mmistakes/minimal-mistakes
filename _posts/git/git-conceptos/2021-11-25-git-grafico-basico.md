@@ -10,11 +10,11 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-grafico
-tags:
   - git-comandos
   - git-basico
   - git-manual
+tags:
+  - git-grafico
 ---
 
 ## Gráfico Básico del sistema de gestión de GIT

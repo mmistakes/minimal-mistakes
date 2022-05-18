@@ -10,11 +10,11 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-ls-files
   - git-comandos
-tags:
   - git-basico
   - git-manual
+tags:
+  - git-ls-files
 ---
 
 ## Git - ls-files

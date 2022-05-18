@@ -9,11 +9,11 @@ toc_icon: "clipboard-list"
 header:
   teaser: /assets/images/llama.jpg
 categories:
-  - git-repositorios-local
-  - git-repositorios-remotos
+  - git-manual
 tags:
   - git-repositorios
-  - git-manual
+  - git-repositorios-local
+  - git-repositorios-remotos
 page_css: 
   - /assets/css/mi-css.css
 ---

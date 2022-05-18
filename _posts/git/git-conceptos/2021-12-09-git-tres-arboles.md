@@ -10,10 +10,10 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-tres arboles
-tags:
   - git-basico
   - git-manual
+tags:
+  - git-tres arboles
 page_css: 
   - /assets/css/mi-css.css
 ---

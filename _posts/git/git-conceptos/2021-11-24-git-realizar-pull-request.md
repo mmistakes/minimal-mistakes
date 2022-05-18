@@ -10,10 +10,10 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-pull-request
-tags:
   - git-basico
   - git-manual
+tags:
+  - git-pull-request
 page_css: 
   - /assets/css/mi-css.css
 ---
