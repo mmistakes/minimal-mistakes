@@ -10,11 +10,11 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-checkout
   - git-comandos
-tags:
   - git-basico
   - git-manual
+tags:
+  - git-checkout
 ---
 
 ## Git - checkout

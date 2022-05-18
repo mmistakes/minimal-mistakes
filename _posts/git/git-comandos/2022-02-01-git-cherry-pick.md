@@ -10,10 +10,10 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-cherry-pick
-tags:
   - git-basico
   - git-manual
+tags:
+  - git-cherry-pick
 page_css: 
   - /assets/css/mi-css.css
 ---

@@ -10,12 +10,12 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-ssh
-  - git-ssh-keygen
-  - git-github
-tags:
   - git-basico
   - git-manual
+tags:
+  - git-ssh-keygen
+  - git-ssh
+  - git-github
 page_css: 
   - /assets/css/mi-css.css
 ---

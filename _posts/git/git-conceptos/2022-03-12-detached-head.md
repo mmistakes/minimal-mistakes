@@ -10,11 +10,11 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-detached 
-  - git-head 
-tags:
   - git-basico
   - git-manual
+tags:
+  - git-detached 
+  - git-head 
 page_css: 
   - /assets/css/mi-css.css
 ---

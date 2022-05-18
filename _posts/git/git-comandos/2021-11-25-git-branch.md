@@ -10,11 +10,11 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-branch
+  - git-manual
+  - git-basico
   - git-comandos
 tags:
-  - git-basico
-  - git-manual
+  - git-branch
 ---
 
 ## Git branch - (Rama)

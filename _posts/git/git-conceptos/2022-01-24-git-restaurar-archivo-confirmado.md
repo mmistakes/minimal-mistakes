@@ -10,13 +10,13 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
+  - git-basico
+  - git-manual
+tags:
   - git-commit
   - git-restore
   - git-reset
   - git-add
-tags:
-  - git-basico
-  - git-manual
 page_css: 
   - /assets/css/mi-css.css
 ---

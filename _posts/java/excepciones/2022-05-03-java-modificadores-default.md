@@ -10,11 +10,11 @@ header:
   teaser: /assets/images/java/logo-java-2.jpg
 categories:
   - java
-  - java-default
+  - java-manual
 tags:
+  - java-default
   - java-throwable
   - java-excepciones
-  - java-manual
 page_css: 
   - /assets/css/mi-css.css
 ---
@@ -56,7 +56,7 @@ throws , throw , try , catch , finally
 
 ```java
                              [Throwable]
-                    ______________↑________________                   |                              |
+                    ______________↑________________                           ↓                             ↓                             
                   [Error]                      [Exception]
          ___________↑________              _________↑______________
         |                    |            |                        |

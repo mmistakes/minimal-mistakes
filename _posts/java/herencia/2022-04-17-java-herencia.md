@@ -10,10 +10,10 @@ header:
   teaser: /assets/images/java/logo-java-2.jpg
 categories:
   - java
-  - java-herencia
-  - java-super
-tags:
   - java-manual
+tags:
+  - java-super
+  - java-herencia
 page_css: 
   - /assets/css/mi-css.css
 ---

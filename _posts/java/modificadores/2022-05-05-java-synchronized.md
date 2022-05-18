@@ -10,10 +10,10 @@ header:
   teaser: /assets/images/java/logo-java-2.jpg
 categories:
   - java
-  - java-synchronized
-tags:
-  - java-modificadores
   - java-manual
+tags:
+  - java-synchronized
+  - java-modificadores
 page_css: 
   - /assets/css/mi-css.css
 ---

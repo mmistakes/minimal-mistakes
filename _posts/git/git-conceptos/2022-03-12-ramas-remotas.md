@@ -10,11 +10,11 @@ header:
   teaser: /assets/images/logo-java-2.jpg
 categories:
   - git
-  - git-ramas 
-  - git-remotas 
-tags:
-  - git-basico
   - git-manual
+  - git-basico
+tags:
+  - git-remotas 
+  - git-ramas 
 page_css: 
   - /assets/css/mi-css.css
 ---

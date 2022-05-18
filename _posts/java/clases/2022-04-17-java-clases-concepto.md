@@ -10,9 +10,9 @@ header:
   teaser: /assets/images/java/logo-java-2.jpg
 categories:
   - java
-  - java-clase
-tags:
   - java-manual
+tags:
+  - java-clase
 page_css: 
   - /assets/css/mi-css.css
 ---

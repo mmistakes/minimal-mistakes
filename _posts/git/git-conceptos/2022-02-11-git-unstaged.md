@@ -10,12 +10,12 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-grafo-de-commits
-  - git-grafo
-  - git-commits
-tags:
   - git-basico
   - git-manual
+tags:
+  - git-grafo
+  - git-grafo-de-commits
+  - git-commits
 page_css: 
   - /assets/css/mi-css.css
 ---

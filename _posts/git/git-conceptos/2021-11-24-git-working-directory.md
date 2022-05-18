@@ -10,11 +10,11 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-working tree
-  - git-working directory
-tags:
   - git-basico
   - git-manual
+tags:
+  - git-working tree
+  - git-working directory
 ---
 
 ## Directorio de trabajo (Working Directory/Workspace)

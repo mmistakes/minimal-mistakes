@@ -10,11 +10,11 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-fetch
   - git-comandos
-tags:
   - git-básico
   - git-manual
+tags:
+  - git-fetch
 ---
 
 ## Git - fetch

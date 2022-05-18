@@ -10,11 +10,11 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
-  - git-index
   - git-comandos
-tags:
   - git-basico
   - git-manual
+tags:
+  - git-index
 page_css: 
   - /assets/css/mi-css.css
 ---

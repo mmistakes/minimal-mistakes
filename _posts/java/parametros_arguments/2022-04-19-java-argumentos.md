@@ -10,9 +10,9 @@ header:
   teaser: /assets/images/java/logo-java-2.jpg
 categories:
   - java
-  - java-argumentos
-tags:
   - java-manual
+tags:
+  - java-argumentos
 page_css: 
   - /assets/css/mi-css.css
 ---
