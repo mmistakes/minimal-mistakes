@@ -7,7 +7,7 @@ tags: [scala, scala 3]
 excerpt: "Scala general type projections are unsound and were removed in Scala 3 - what do you mean?"
 ---
 
-This article is about Scala 3. We've talked a lot about the additions in Scala 3 (which you can easily search on the blog), but it's also worth talking about the removals. In particular, this article will focus on the fact that "general type projections are unsound": what that phrase means, what that leads to, and why the feature was removed in Scala 2.
+This article is about Scala 3. We've talked a lot about the additions in Scala 3 (which you can easily search on the blog), but it's also worth talking about the removals. In particular, this article will focus on the fact that "general type projections are unsound": what that phrase means, what that leads to, and why the feature was removed in Scala 3.
 
 This removal (along with dozens of other changes) was explained in depth in the [Scala 3 New Features](https://rockthejvm.com/p/scala-3-new-features) course.
 
