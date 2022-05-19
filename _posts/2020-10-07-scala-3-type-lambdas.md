@@ -9,6 +9,8 @@ excerpt: "Exploring a quick but powerful structure in Scala 3 - type lambdas. Th
 
 This article is a bit more difficult &mdash; it's aimed at the experienced Scala developer who can think at a higher level. Ideally, you've read the [previous article](https://rockthejvm.com/scala-types-kinds) - it serves as a prep for this one. Type lambdas are simple to express in Scala 3, but the ramifications are deep.
 
+This feature (along with dozens of other changes) is explained in depth in the [Scala 3 New Features](https://rockthejvm.com/p/scala-3-new-features) course.
+
 ## 1. Background
 
 We discussed in the [previous article](/scala-types-kinds) about categorizing types in Scala into _kinds_. Scala 3 is no different here. However, it introduces a new concept and a syntactic structure to express it, which might look daunting and hard to wrap your head around.

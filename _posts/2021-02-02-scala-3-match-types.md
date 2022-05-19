@@ -9,6 +9,8 @@ excerpt: "Scala 3 comes with lots of new features. In this episode, match types:
 
 This article is for the Scala programmers who are curious about the next features of Scala 3. Familiarity with some of the current Scala 2 features (e.g. generics) is assumed. This article will also involve a bit of type-level nuance, so answer to questions like "how is this useful for me?" will be more subtle.
 
+This feature (along with dozens of other changes) is explained in depth in the [Scala 3 New Features](https://rockthejvm.com/p/scala-3-new-features) course.
+
 ## 1. Background: First-World Problems
 
 Instead of describing the feature, I want to start with the need first. Let's say you are working on a library for standard data types (e.g. Int, String, Lists), and you want to write a piece of code that extracts the last constituent part of a bigger value:

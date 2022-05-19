@@ -9,6 +9,8 @@ excerpt: "This quick tutorial will show you what dependent types are and how the
 
 This short article is for the Scala developer who is curious about the capabilities of its type system. What I'm about to describe is not used very often, but when you need something like this, it can prove pretty powerful.
 
+If you want to understand why abstract type projections are unsound and were removed in Scala 3, check [this article](/scala-3-type-projections/).
+
 ## 1. Nesting Types
 
 You're probably well aware that classes, objects and traits can hold other classes, objects and traits, as well as define type members &mdash; abstract or concrete in the form of type aliases.
