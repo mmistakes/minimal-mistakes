@@ -9,6 +9,8 @@ excerpt: "Some people love it, some hate it. Scala 3 indented syntax is not that
 
 Regardless of whether you're experienced or new to Scala, you've probably been confused about Scala syntax inconsistencies and alternatives at least once. In this article, we'll take a careful, structured look at how Scala 3 adds yet another facility to our ever-expanding set of alternative code styles.
 
+This feature (along with dozens of other changes) is explained in depth in the [Scala 3 New Features](https://rockthejvm.com/p/scala-3-new-features) course.
+
 ## 1. If Expressions 
 
 The Scala 2 syntax allows you to write if expressions on multiple lines:

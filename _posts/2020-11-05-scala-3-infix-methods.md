@@ -9,6 +9,8 @@ excerpt: "A quick article on one of the simple, but expressive features of the S
 
 No doubt, Scala is an expressive language. This article will be short and to the point, regarding a particular expressive feature of Scala: infix methods.
 
+This feature (along with dozens of other changes) is explained in depth in the [Scala 3 New Features](https://rockthejvm.com/p/scala-3-new-features) course.
+
 ## Background
 
 Scala is expressive and powerful in many ways, but two (quite simple) features make it distinctive from most other languages:

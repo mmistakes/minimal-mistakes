@@ -9,6 +9,8 @@ excerpt: "This article will continue some of the previous explorations of Scala 
 
 This article will continue some of the previous explorations of Scala 3. Here, we'll discuss some of the new functionality of traits in Scala 3.
 
+This feature (along with dozens of other changes) is explained in depth in the [Scala 3 New Features](https://rockthejvm.com/p/scala-3-new-features) course.
+
 ## 1. Background
 
 Scala traits were originally conceived to be analogous to Java interfaces. Essentially, a trait was a type definition which wrapped a suite of abstract fields and methods. In time, traits acquired additional functionality and features, such as non-abstract fields and methods. This led to some legitimate questions around the [boundary between abstract classes and traits](https://www.youtube.com/watch?v=_7ULjOILxhI).

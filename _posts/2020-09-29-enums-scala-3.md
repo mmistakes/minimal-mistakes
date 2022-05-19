@@ -6,7 +6,10 @@ header:
 tags: [scala, scala 3]
 excerpt: "Scala 3 introduces enums. About time! Even though it might seem like something minor, it has important implications."
 ---
+
 This article is for Scala programmers of all levels, and particularly for those Scala programmers who have been emulating enums in Scala 2 for the longest time. Your day has come, because Scala 3 now supports enums out of the box. This will be the focus of this article.
+
+This feature (along with dozens of other changes) is explained in depth in the [Scala 3 New Features](https://rockthejvm.com/p/scala-3-new-features) course.
 
 ## Background
 

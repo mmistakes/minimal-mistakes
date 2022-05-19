@@ -13,6 +13,8 @@ Unlike other posts on the topic, this article is also approachable for Scala beg
 
 So if you're starting out directly on Scala 3, or you're a Scala 2 developer without too much experience with implicits, this one is for you. If you happen to know how implicits work, that'll only be a plus.
 
+This feature (along with dozens of other changes) is explained in depth in the [Scala 3 New Features](https://rockthejvm.com/p/scala-3-new-features) course.
+
 ## A Small Problem
 
 Here's a situation. Let's say we write a nation-wide census application. Something like the following case class (perhaps with some more fields) would be used everywhere:
