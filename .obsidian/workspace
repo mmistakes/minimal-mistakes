@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "e6c4c69e89672130",
+        "id": "3f8ef86133c571fd",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2022-05-17-solution2.md",
+            "file": "_posts/2022-05-19-solution5.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#정처기",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,22 +58,48 @@
   "right": {
     "id": "0bfd8d1c59d08bd8",
     "type": "split",
-    "children": [],
+    "children": [
+      {
+        "id": "dfac779edab19239",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c55babedb7773e4b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1d699a5bf839998a",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
     "direction": "horizontal",
-    "width": 100,
+    "width": 317,
     "collapsed": true
   },
-  "active": "e6c4c69e89672130",
+  "active": "3f8ef86133c571fd",
   "lastOpenFiles": [
+    "_posts/2022-05-19-solution5.md",
+    "_posts/2022-05-17-solution4.md",
     "_posts/2022-05-17-solution2.md",
-    "_posts/2022-05-17-solution1.md",
-    "_posts/2022-05-09-nineth2op21 1.md",
-    "_images/screenshot-layouts.png",
-    "_posts/2022-05-09-nineth2op21.md",
+    "_posts/2022-05-17-solution3.md",
+    "planning/Algorithm.md",
     "무제노트.md",
-    "_posts/2022-05-09-nineth2op2.md",
-    "_posts/2022-05-09-nineth2op1.md",
-    "_pages/404.md",
-    "_pages/search.md"
+    "_posts/2022-05-07-sixth2.md",
+    "_posts/2022-05-05-Fifth2.md",
+    "_posts/2022-05-04-fourth2.md",
+    "_posts/2022-05-03-third2.md"
   ]
 }
