@@ -10,8 +10,8 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+# theme: "minimal-mistakes-jekyll"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -22,7 +22,7 @@ subtitle: "Assurance to be Accelator"
 name: "KangHoi"
 description: "제가 짠 코드가 오랜 기간 지속 가능한게 꿈입니다."
 url: "https://KangHoi.github.io"
-baseurl: # the subpath of your site, e.g. "/blog"
+baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: "/assets/images/duli.png"
@@ -263,5 +263,7 @@ defaults:
       comments: true
       share: true
       related: true
-      future: true
-      published: true
+      # future: true
+      # published: true
+
+date_format: "%Y-%m-%d"
