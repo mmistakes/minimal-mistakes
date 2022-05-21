@@ -9,7 +9,7 @@ ___________
 1. Fork this repo to your account and change the name to `yourusername.github.io`
 2. Modify the site and your personal info in the [`_config.yml`](_config.yml)
 3. Modify [`index.md`](index.md) to adjust you home page contents.
-3. Change the site main pages (tabs of the head) from [`_data/navigation.yml`](_data/navigation.yml)
+3. Change the site main pages (tabs of the header) from [`_data/navigation.yml`](_data/navigation.yml)
 4. Add your main pages to the [`_pages`](_pages) directory. You can start by empty files and modify them later. The pages can be in markdown format `.md`.
 ___________
 
