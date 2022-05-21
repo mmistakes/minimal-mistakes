@@ -11,6 +11,7 @@ ___________
 3. Modify [`index.md`](index.md) to adjust you home page contents.
 3. Change the site main pages (tabs of the header) from [`_data/navigation.yml`](_data/navigation.yml)
 4. Add your main pages to the [`_pages`](_pages) directory. You can start by empty files and modify them later. The pages can be in markdown format `.md`.
+5. Make sure that the indentation and spaces are correct because they can cause the site to fail. 
 ___________
 
 
