@@ -1,5 +1,7 @@
 # main links
 main:
+  - title : "Home"
+    url : "https://jkc-mycode.github.io"
   - title : "Category"
     url : /categories/
   # - title: "About"
