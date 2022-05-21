@@ -1,7 +1,7 @@
 ---
 permalink: /teaching_supervision/
 title: 'Teaching & Supervision'
-layout: splash
+layout: single
 author_profile: false
 header:
   overlay_image: /assets/images/Blank_Earth_Banner.jpg
