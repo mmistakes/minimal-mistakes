@@ -106,26 +106,30 @@ author:
   avatar           : "/assets/images/my_photo.png"
   bio              : "Postdoc & Manager of GWF projects @UCalgary. Interested in cold region hydrologic modelling. PhD, EIT."
   location         : "Alberta, CA"
-  email            :
+  email            : mohamedismaiel.ahmed@ucalgary.ca
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+       url: "https://mismlahmed.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+       url: "https://twitter.com/MIsmlAhmed"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+       url: "https://github.com/MIsmlAhmed"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+     - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://ca.linkedin.com/in/mohamed-ismaiel-ahmed-a08a367b"
+
 
 # Site Footer
 footer:
