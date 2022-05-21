@@ -1,7 +1,7 @@
 ---
 permalink: /publications/
 title: 'Publications'
-layout: home
+layout: splash
 author_profile: false
 toc: 	true # Optional	Show table of contents. (boolean)	false
 toc_label: Contents	# Optional	Table of contents title. (string)	toc_label in UI Text data file.
