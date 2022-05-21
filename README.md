@@ -1,6 +1,6 @@
 # This is my personal webiste on github compiled using the [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
 This repo includes the required files to build your own website hosted by GitHub.
-This was built by forking and modifying [Minimal Mistakes Jekyll theme repo](https://mmistakes.github.io/minimal-mistakes/). 
+This was built by forking and modifying [Minimal Mistakes Jekyll theme repo](https://github.com/mmistakes/minimal-mistakes). 
 The details are given below.
 ___________
 
@@ -9,8 +9,8 @@ ___________
 1. Fork this repo to your account and change the name to `yourusername.github.io`
 2. Modify the site and your personal info in the [`_config.yml`](_config.yml)
 3. Modify [`index.md`](index.md) to adjust you home page contents.
-3. Change the site main pages (tabs of the header) from [`_data/navigation.yml`](_data/navigation.yml)
-4. Add your main pages to the [`_pages`](_pages) directory. You can start by empty files and modify them later. The pages can be in markdown format `.md`.
+3. Change the site map and main pages (tabs at the header) from [`_data/navigation.yml`](_data/navigation.yml)
+4. Add your main pages to the [`_pages`](_pages) directory. You can start by empty files and modify them later. The pages can be in markdown format `.md` or `.html`.
 5. Make sure that the indentation and spaces are correct because they can cause the site to fail. 
 ___________
 
