@@ -5,7 +5,7 @@ categories:
 tags:
   - nRF Connect SDK
   - RTOS
-  - Zephyer
+  - Zephyr
 toc: true
 toc_sticky: true
 ---
@@ -34,11 +34,11 @@ toc_sticky: true
 
 * 개발 가능 제품군: `nRF91, nRF53, nRF52`
 * 지원 프로토콜: Blueooth LE, Bluetooth mesh, Zigbee, Thread, LTE-M/NB-IoT, GPS.
-* 주요 특징: **`Zephyer RTOS`** 기반, application 및 network protocol 관련 예제-라이브러리 제공, Bootloader 및 각종 hardware driver 제공.
+* 주요 특징: **`Zephyr RTOS`** 기반, application 및 network protocol 관련 예제-라이브러리 제공, Bootloader 및 각종 hardware driver 제공.
 
 주요 통합 개발 환경을 `nRF Connect SDK` 로 하려고 하는 이유는 아무래도 그동안 지원해주는 프로토콜마다 `SDK` 와 `SoftDevice` 버전을 일일이 분류하는 대신 이를 하나의 플랫폼으로 통합하기 위함이 큰 것 같다 🔰.
 
-BLE 프로토콜 기능을 제공해주는 BLE stack 은 크게 `Host` 와 `Controller` 영역으로 구분할 수 있는데, `nRF Connect SDK` 에서는 `Host` 계층에서 `Zephyr Bluetooth host` 를 이용하고, `Controller` 계층의 경우 `SoftDevice controller` 혹은 `Zephyer controller` 중 하나를 이용할 수 있다.
+BLE 프로토콜 기능을 제공해주는 BLE stack 은 크게 `Host` 와 `Controller` 영역으로 구분할 수 있는데, `nRF Connect SDK` 에서는 `Host` 계층에서 `Zephyr Bluetooth host` 를 이용하고, `Controller` 계층의 경우 `SoftDevice controller` 혹은 `Zephyr controller` 중 하나를 이용할 수 있다.
 
 >nRF91, nRF53 같은 새로운 nordic chip 이 개발되고, 제품 제조 현장에서 보다 빠르고 편리하게 nordic chip 을 개발할 수 있도록 하기 위해 RTOS 기반의 SDK 개발에 초점을 맞추게 된 것 같다.
 
