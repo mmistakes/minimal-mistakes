@@ -1,7 +1,7 @@
 ---
 title:  "Title of the open mic session"
 driveId: 1kTtGdCpnt3ROwvLGr4c-8-crPf-uPGcs/preview -- this is example, generate it from G drive
-category: open-mic open-mic-session
+categories: [Open Mic Session, Open Mic]
 ---
 
 First paragraph is always excerpt. It shall contain something like: On Friday 13th May at 10:30 an open Mic session took place. The topic was \"Jobs to be Done\". Video and presentation included.
