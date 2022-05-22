@@ -10,7 +10,7 @@ docs:
   - title: "Computer Programming"
     children:
       - title: "01_database"
-        url: /categories/
+        url: /search/
       - title: "02_python"
         url: /categories/
       - title: "03_bi"
@@ -21,12 +21,12 @@ docs:
         url: /tags/
   - title: "Life"
     children:
-      - title: "Diabetes mellitus, 당뇨병"
-        url: /categories/
+      - title: "Diabetes_mellitus"
+        url: /Diabetes
       - title: "Tag"
         url: /tags/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "About"
+    url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
