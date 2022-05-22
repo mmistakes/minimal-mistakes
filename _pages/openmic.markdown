@@ -1,5 +1,5 @@
 ---
-title: "Open mic"
+title: "Open mic sessions"
 layout: category
 permalink: open-mic
 taxonomy: Open Mic
