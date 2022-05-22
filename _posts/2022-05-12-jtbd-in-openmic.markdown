@@ -1,7 +1,7 @@
 ---
 title:  "Jobs to be done in Open Mic Session"
 driveId: 1kTtGdCpnt3ROwvLGr4c-8-crPf-uPGcs/preview
-category: "open-mic"
+category: open-mic
 #excerpt: "Open mic session about Jobs to be Done, includes presentation, video and further reading."
 ---
 
