@@ -5,21 +5,33 @@ lang: en
 lang-ref: index
 excerpt: "TermIt is a tool to manage vocabularies, terms and resources in which are the terms defined and used. It is focused on management of terms based on their semantics -- i.e. two 'same' terms in different vocabularies may have different meaning."
 ---
-<!-- header:
+
+<!--
+feature_row:
+  - image_path: /assets/images/archive/openmic.jpg
+    title: "Open mic sessions"
+    excerpt: "IrRegular meetings every other friday."
+    btn_label: "Open Mic"
+    btn_class: "btn--info btn--x-large"
+    url: /open-mic
+
+---
+
+ header:
   overlay_image: /assets/images/front-image.jpg
   overlay_filter: rgba(38, 38, 38, 0.5)
   caption: "Photo credit: [**Ryunosuke Kikuno**](https://unsplash.com/@kknrynsk_jp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [**Unsplash**](http://unsplash.com/)"
   actions:
    - label: "Find out more"
      url: /about
+     - image_path: /assets/images/team/team.jpg
+       title: "Team"
+       excerpt: "This is us, researchers at KBSS."
+       btn_label: "Meet us"
+       url: /team
+--->
 
-feature_row:
-- image_path: /assets/images/installation.jpg
-    title: "Team"
-    excerpt: "Our team."
-    btn_label: "Meet our team"
-    url: /team
-- image_path: /assets/images/tutorial.jpg
+<!-- - image_path: /assets/images/tutorial.jpg
     title: "Tutorial"
     excerpt: "TermIt solves various problems, from creating vocabularies to annotating resources."
     url: "/tutorial"
@@ -29,8 +41,15 @@ feature_row:
     excerpt: "TermIt architecture, interesting libraries used within, or the data model used within TermIt are some of the technical details of the system."
     btn_label: "Introduce me to the details"
     url: /technical-details
---- -->
-Welcome to the web pages of our group, Knowledge-based and Software Systems Group. Pages are in progress, but below there is a thread of the newest posts, announcing open mic sessions and summing up those already taken. You can also browse through the Projects, Team members and Software we have been developing during past and current research projects. All posts regarding open mic sessions are gathered at [this page]({{"/open-mic" | relative_url}}).
+
+{% include feature_row type="center" %}-->
+
+{% include figure image_path="/assets/images/archive/openmic.jpg" alt="Open mic sessions" %}
+[Check open mic sessions]({{ "/open-mic" | relative_url }}){: .btn .btn--info .btn--x--large .align-right} Irregular tech presentations every other friday.
+
+<!-- 
+
+Welcome to the web pages of our group, Knowledge-based and Software Systems Group. Pages are in progress, but below there is a thread of the newest posts, announcing open mic sessions and summing up those already taken. You can also browse through the Projects, Team members and Software we have been developing during past and current research projects. -->
 
 <!-- <ul>
   {% for post in site.posts %}
@@ -53,5 +72,4 @@ Welcome to the web pages of our group, Knowledge-based and Software Systems Grou
   {% endfor %}
 </header>
 {% endif %}
-
-{% include feature_row %} -->
+--->
