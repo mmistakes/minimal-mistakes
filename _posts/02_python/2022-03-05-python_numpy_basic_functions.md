@@ -1,16 +1,14 @@
 ---
-layout: post
+layout: single
 title: Python Numpy 기본 기능
-subtitle: 여기다가 부제목을 넣으면 되냥...
-tags: Python Numpy Basic
-description: >
-  최근 알고리즘이 나를 이끌었다 이러면서 AI가 시대를 휩쓰는 느낌이다. 그러면서 machine learning, deep learning이 주목받는데 보통사람에겐 영 그 의미를 받아들이기 힘들기도 하다. 방대한 양의 숫자를 다루는 컴퓨터 연산이 이 machine learning, deep learning의 핵심인데 이 방대한 연산을 가능하게 해준는 것들 중 하나가 바로 python에서는 Numpy라는 package이다. 
-sitemap: false
-hide_last_modified: true
-categories:
- - 02_python
+categories: 02_python
+tag: [python, numpy, 넘파이]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
 ---
-  
+ 최근 알고리즘이 나를 이끌었다 이러면서 AI가 시대를 휩쓰는 느낌이다. 그러면서 machine learning, deep learning이 주목받는데 보통사람에겐 영 그 의미를 받아들이기 힘들기도 하다. 방대한 양의 숫자를 다루는 컴퓨터 연산이 이 machine learning, deep learning의 핵심인데 이 방대한 연산을 가능하게 해준는 것들 중 하나가 바로 python에서는 Numpy라는 package이다. <br><br> 
   
   다차원array(배열, 때문에 차원개념이 중요하다.  )를 효과적으로 처리가 가능한 python package이다.
 	현실 세계의 다양한 data는 array 형태로 표현이 가능한데, numpy는 python에서 많이 사용하는 list에 비해 빠르고 강력하다.

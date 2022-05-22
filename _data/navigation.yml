@@ -10,23 +10,24 @@ docs:
   - title: "Computer Programming"
     children:
       - title: "01_database"
-        url: /search/
+        url: /categories_from_01_db/
       - title: "02_python"
-        url: /categories/
+        url: /categories_from_02_python/
       - title: "03_bi"
-        url: /categories/
-      - title: "04_github"
-        url: /categories/
+        url: /categories_from_03_bi/
+      - title: "04_gitgithub"
+        url: /categories_from_04_gitgithub/
       - title: "Tag"
         url: /tags/
   - title: "Life"
     children:
       - title: "Diabetes_mellitus"
-        url: /Diabetes
+        url: /categories_from_Diabetes_mellitus/
       - title: "Tag"
         url: /tags/
   - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
+    # url: https://mmistakes.github.io/minimal-mistakes/about/
+    url: /author-profile/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

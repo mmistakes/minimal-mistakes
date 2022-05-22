@@ -1,16 +1,14 @@
 ---
-layout: post
+layout: single
 title: PowerBI 'tooltip(말풍선)' 사용 방법
-subtitle: 여기다가 부제목을 넣으면 되냥...
-tags: PowerBI BI tooltip
-description: >
-  Tooltip은 ‘말풍선’이라고 한국어버전에서 나오는데, 나는 영어버전을 쓰니 tooltip이라고 표현하겠다. Microsoft 등의 software 업체에서 정식으로 배포한 manual 혹은 한글버전은 항상 느끼지만 참 가독성이 안좋다. 이 때문에 설명은 블로그를 찾아보거나 youtube를 참고하는 일이 많다. 동일한 이유로 차라리 SW는 영문 버전을 쓰는 게 편할 때가 많다. 어쨌건 이 tooltip이라는건 본인이 원하는 영역에 마우스포인터를 올려놨을 때 필요한 정보가 보이는 기능이다. 
-sitemap: false
-hide_last_modified: true
-categories:
- - 03_bi
+categories: 03_bi
+tag: [BI, tooltip, PowerBI]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
 ---
-
+Tooltip은 ‘말풍선’이라고 한국어버전에서 나오는데, 나는 영어버전을 쓰니 tooltip이라고 표현하겠다. Microsoft 등의 software 업체에서 정식으로 배포한 manual 혹은 한글버전은 항상 느끼지만 참 가독성이 안좋다. 이 때문에 설명은 블로그를 찾아보거나 youtube를 참고하는 일이 많다. 동일한 이유로 차라리 SW는 영문 버전을 쓰는 게 편할 때가 많다. 어쨌건 이 tooltip이라는건 본인이 원하는 영역에 마우스포인터를 올려놨을 때 필요한 정보가 보이는 기능이다. <br><br>
 [**참고자료**] 생산라인에서 버려지는 비용(Cost_Sum, 막대그래프), 버려지는 비율(Rate, 선그래프)을 2시간 간격으로 나타내주는 그래프이다. 지금은 마우스포인터를 올릴 경우 간단한 정보만 보여준다. <br>
 <img src = "/assets/img/bongs/1_main_page_graph.png">
 <img src = "/assets/img/bongs/2_no_tooltip.png">

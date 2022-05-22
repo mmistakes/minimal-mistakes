@@ -1,16 +1,15 @@
 ---
-layout: post
+layout: single
 title: PowerBI 'drill-through(드릴스루)'와 'drill-down(드릴다운)' 차이가 대체 뭐냐
-subtitle: 여기다가 부제목을 넣으면 되냥...
-tags: PowerBI BI drillthrough drilldown
-description: >
-  Power BI 기능에서 가장 중요한 기능들이다. 무엇보다 잘 이해하고 무심한듯 쓰면 다른 사람으로하여금 뭔가 있어 보이게 한다. 하지만 용어가 주는 압박으로 그 의미를 이해하는게 쉽지 않다. 대체 ‘Drill through(드릴스루)’와 ‘Drill down(드릴다운)’의 차이가 뭐냐고!! 두 기능 모두 말 그대로 ‘drill’ 드륄~~!, 뭔가 드릴링한다고 한다. 
-sitemap: false
-hide_last_modified: true
-categories:
- - 03_bi
+categories: 03_bi
+tag: [PowerBI, BI, drillthrough, drilldown, 드릴스루, 드릴다운]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
 ---
-
+Power BI 기능에서 가장 중요한 기능들이다. 무엇보다 잘 이해하고 무심한듯 쓰면 다른 사람으로하여금 뭔가 있어 보이게 한다. 하지만 용어가 주는 압박으로 그 의미를 이해하는게 쉽지 않다. 대체 ‘Drill through(드릴스루)’와 ‘Drill down(드릴다운)’의 차이가 뭐냐고!! 두 기능 모두 말 그대로 ‘drill’ 드륄~~!, 뭔가 드릴링한다고 한다. 
+<br><br>
 [**참고자료**] 생산라인에서 버려지는 비용(Cost_Sum, 막대그래프), 버려지는 비율(Rate, 선그래프)을 2시간 간격으로 나타내주는 그래프이다. 본인은 기본적으로 생산기술부의 엔지니어로 이런 데이터밖에 없음을 이해해주길 바란다. 개념이 어렵진 않다. <br>
 
 <br>
