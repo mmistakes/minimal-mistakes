@@ -1,7 +1,19 @@
 ---
-layout: page
+layout: single
 permalink: /categories/
 title: Archive
+
+lang: en
+lang-ref: categories
+#classes: wide
+author_profile: true
+toc: true
+toc_sticky: true
+
+header:
+  image: /assets/images/archive/archive.jpg
+  caption: "Photo credit: [**C M**](https://unsplash.com/@ubahnverleih?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [**Unsplash**](http://unsplash.com/)"
+
 ---
 This is archive of all posts divided by the categories.
 
@@ -12,12 +24,10 @@ This is archive of all posts divided by the categories.
     <div id="#{{ category_name | slugize }}"></div>
     <p></p>
 
-    <h3 class="category-head">{{ category_name }}</h3>
+    <h3 id={{ category_name }} class="category-head">{{ category_name }}</h3>
     <a name="{{ category_name | slugize }}"></a>
     {% for post in site.categories[category_name] %}
-    <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
+      {% include archive-single.html type=entries_layout %}
     {% endfor %}
   </div>
 {% endfor %}
