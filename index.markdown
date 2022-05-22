@@ -30,7 +30,7 @@ feature_row:
     btn_label: "Introduce me to the details"
     url: /technical-details
 --- -->
-Welcome to the web pages of our group, Knowledge-based and Software Systems Group. Pages are in progress, but below there is a thread of the newest posts, announcing open mic sessions and summing up those already taken. You can also browse through the Projects, Team members and Software we have been developing during past and current research projects.
+Welcome to the web pages of our group, Knowledge-based and Software Systems Group. Pages are in progress, but below there is a thread of the newest posts, announcing open mic sessions and summing up those already taken. You can also browse through the Projects, Team members and Software we have been developing during past and current research projects. All posts regarding open mic sessions are gathered at [this page]({{"/open-mic" | relative_url}}).
 
 <!-- <ul>
   {% for post in site.posts %}
