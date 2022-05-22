@@ -30,7 +30,7 @@ feature_row:
     btn_label: "Introduce me to the details"
     url: /technical-details
 --- -->
-This is new landing page.
+Welcome to the web pages of our group, Knowledge-based and Software Systems Group. Pages are in progress, but below there is a thread of the newest posts, announcing open mic sessions and summing up those already taken. You can also browse through the Projects, Team members and Software we have been developing during past and current research projects.
 
 <!-- <ul>
   {% for post in site.posts %}
