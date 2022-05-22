@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Ontological Foundation of Hazards and Risk in STAMP"
 categories: open-mic-announcement open-mic
 ---
