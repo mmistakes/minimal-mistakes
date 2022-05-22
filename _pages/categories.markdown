@@ -24,8 +24,8 @@ This is archive of all posts divided by the categories.
     <div id="#{{ category_name | slugize }}"></div>
     <p></p>
 
-    <h3 id={{ category_name }} class="category-head">{{ category_name }}</h3>
-    <a name="{{ category_name | slugize }}"></a>
+    <h3 id="{{ category_name | slugify }}" class="category-head">{{ category_name }}</h3>
+    <a name="{{ category_name }}"></a>
     {% for post in site.categories[category_name] %}
       {% include archive-single.html type=entries_layout %}
     {% endfor %}
