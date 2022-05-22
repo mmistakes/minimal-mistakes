@@ -18,6 +18,12 @@ Open mic session is an activity going on irregulary every two weeks. A member of
 
 Upcoming event:
 
-{% for post in site.posts.categories[OpenMicAnnouncement] limit:1 %}
+{% for post in site.categories.["Open Mic Announcement"] limit:1 %}
+  {% include archive-single.html type=entries_layout %}
+{% endfor %}
+
+Records and content of past Open mic sessions:
+
+{% for post in site.categories.["Open Mic Session"] %}
   {% include archive-single.html type=entries_layout %}
 {% endfor %}
