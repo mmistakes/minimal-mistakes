@@ -12,5 +12,8 @@ main:
   - title: "Tech Tidbits"
     url: "categories/#tech"
 
+  - title: "Things I like"
+    url: /things-i-like/
+
   - title: "GitBook on Data Science"
     url: "https://martinapugliese.gitbook.io/tales-of-science-and-data/"
