@@ -24,9 +24,7 @@ systems.
 ### Miroslav Blaško
 {% include figure image_path="/assets/images/team/miro.jpg" alt="Miro Blaško" %}{: .align-right .profile-photo}
 
-Miroslav Blaško získal Ph.D. v roce 2016 v oboru Umělá inteligence a biokybernetika po obhajobě disertační práce "Template-based Ontology Evolution". Mezi jeho odborné zájmy také patří ochrana soukromí, návrh myšlenkových map a ontologií, sémantický web, Linked Data, meta-modelování
-a automatické uvažování v deskripčních logikách. Má za sebou účast na evropském projektu Netcarity,
-v současnosti se podílí na projektu Ministerstva kultury MONDIS.
+The leader of the team received his Ph.D. in 2016 in the field of Artificial Intelligence and Biocybernetics after the defense of the dissertation “Template-based Ontology Evolution”. His professional interests also include privacy, design of mind maps and ontologies, Semantic Web, Linked Data, model-based UI generation and reasoning in descriptive logics.
 
 
 ### Martin Ledvinka
