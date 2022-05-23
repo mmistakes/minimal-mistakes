@@ -1,6 +1,6 @@
 # main links
 main:
-  - title: "Research projects"
+  - title: "Projects"
     url: /projects
     description: "Projects solved by the team"
   - title: "Team"
@@ -17,8 +17,8 @@ main:
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Archive"
-    url: /archive
-    description: "Archive of posts"
+    url: /categories
+    description: "Archive of all posts by categories"
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
