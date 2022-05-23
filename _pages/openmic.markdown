@@ -14,7 +14,7 @@ header:
   caption: "Photo credit: [**Matthias Wagner**](https://unsplash.com/@matwag?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [**Unsplash**](http://unsplash.com/)"
 ---
 
-Open mic session is an activity going on irregulary every other week. A member of a team or a guest presents an interesting topic to the rest of the team and anyone willing to listen.
+Open mic session is an activity going on irregulary every other week. A member of KBSS team or a guest presents an interesting topic to the rest of the team and anyone willing to listen.
 
 ###### Upcoming event:
 
