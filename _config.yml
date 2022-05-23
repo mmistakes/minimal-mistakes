@@ -253,6 +253,9 @@ compress_html:
   ignore:
     envs: development
 
+# Languages
+languages: ["ko", "en"]
+# exclude_from_localizations: ["javascript", "images", "css"]
 
 # Defaults
 defaults:

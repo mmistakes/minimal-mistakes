@@ -1,0 +1,8 @@
+global:
+  english: Eng 
+  korean: Kor
+pages:
+  home: Home
+  work: Work
+titles:
+  pagination: Pagination
