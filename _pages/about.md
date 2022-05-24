@@ -14,9 +14,10 @@ I am a first-year Ph.D. student in the [Computer Science Department](https://cs.
 
 ## Research Interests
 My primary research interests lie in the field of **natural language processing** and **machine learning**. Currently, I am interested in the following topics: <br>
-1) **Language technology for real-world applications:** lifelong learning and few/zero-shot learning for NLP; <br>
-2) **Multi-modal learning and reasoning**; <br> 
-3) **Knowledge-driven information extraction:** extracting structured information from text empowered by external knowledge sources.
+1) **Language technology for real-world applications:** continual learning and few/zero-shot learning for NLP; <br>
+2) **Embodied NLP**, e.g., dialogue understanding and generation for embodied agents; <br>
+3) **Multi-modal learning and reasoning**. <br> 
+<!-- 3) **Knowledge-driven information extraction:** extracting structured information from text empowered by external knowledge sources. -->
 <!-- 3) **Natural language generation:** text summarization, machine translation, and automatic evaluation for text generation. <br> -->
 
 
