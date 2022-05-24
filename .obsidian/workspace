@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2022-05-19-solution6.md",
+            "file": "_posts/2022-05-19-solution8.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306
+    "width": 354
   },
   "right": {
     "id": "0bfd8d1c59d08bd8",
@@ -81,6 +81,23 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "2ac52488f8be92ef",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/2022-05-19-solution8.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
           }
         ]
       }
@@ -91,15 +108,15 @@
   },
   "active": "3f8ef86133c571fd",
   "lastOpenFiles": [
-    "_posts/2022-05-19-solution6.md",
-    "_posts/2022-05-19-solution6.md",
-    "_posts/2022-05-09-nineth2op21.md",
-    "_posts/2022-05-19-solution5.md",
-    "_posts/2022-05-17-solution4.md",
+    "_posts/2022-05-19-solution8.md",
     "_posts/2022-05-17-solution2.md",
+    "_posts/2022-05-19-solution5.md",
+    "_posts/2022-05-19-solution6.md",
+    "_posts/2022-05-19-solution7.md",
+    "planning/Deep Learning.md",
+    "_posts/2022-05-17-solution1.md",
     "_posts/2022-05-17-solution3.md",
-    "planning/Algorithm.md",
-    "무제노트.md",
-    "_posts/2022-05-07-sixth2.md"
+    "_posts/2022-05-17-solution4.md",
+    "_posts/2022-05-09-nineth2op21.md"
   ]
 }
