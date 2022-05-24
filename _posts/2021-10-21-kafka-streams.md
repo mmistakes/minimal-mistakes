@@ -720,7 +720,7 @@ Topologies:
     Processor: KSTREAM-FLATMAPVALUES-0000000019 (stores: [])
       --> KSTREAM-SINK-0000000020
       <-- KSTREAM-MERGE-0000000018
-    Sink: KSTREAM-SINK-0000000020 (topic: payed-orders)
+    Sink: KSTREAM-SINK-0000000020 (topic: paid-orders)
       <-- KSTREAM-FLATMAPVALUES-0000000019
 ```
 
@@ -772,7 +772,7 @@ object KafkaStreamsApp {
   final val DiscountsTopic = "discounts"
   final val OrdersTopic = "orders"
   final val PaymentsTopic = "payments"
-  final val PayedOrdersTopic = "payed-orders"
+  final val PayedOrdersTopic = "paid-orders"
 
   type UserId = String
   type Profile = String
