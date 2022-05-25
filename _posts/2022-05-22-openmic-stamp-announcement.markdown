@@ -3,11 +3,9 @@ title: "Upcoming Open Mic - Ontological Foundation of Hazards and Risk in STAMP"
 categories: [Open Mic Announcement, Open Mic]
 ---
 
-On friday 27th May at 10:30, another open mic session presented by Jana Ahmad will take place.
+The Open mic session starts on Friday at 10:30 at [this link](https://meet.google.com/jan-ukop-sez). Speaker Jana Ahmad presents her presentation with the topic Ontological Foundation of Hazards and Risks in Stamp.
 
 {% include figure image_path="/assets/images/team/jana.jpg" alt="Jana Ahmad" %}{: .align-right .profile-photo}
-
-The link to the session will be added later.
 
 ###### The abstract:
 
