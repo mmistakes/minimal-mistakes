@@ -78,9 +78,15 @@ Lama Saeeda je studentkou prvního ročníku prezenční formy doktorského stud
 Dokončila magisterské studium na Univerzitě Tishreen v Sýrii, na fakultě informačních technologií, Katedra softwarového inženýrství a informačních systémů.
 Tématem její dizertační práce je podpora tvorby ontologií s využitím textové analýzy. -->
 
+### Matěj Kulich
+
+{% include figure image_path="/assets/images/team/matej.jpg" alt="Matěj Kulich" %}{: .align-left .profile-photo}
+
+Matěj Kulich received his Bc. degree after the defense of the bachelor thesis "Semantic Web-enabled Web Site" in the study programme Software engineering and technology at FEE CTU in 2021. His professional interests are ontology usage in applications and development of knowledge-based information systems.
+
 ### Petr Křemen
 
-{% include figure image_path="/assets/images/team/petr.jpg" alt="Petr Křemen" %}{: .align-left .profile-photo}
+{% include figure image_path="/assets/images/team/petr.jpg" alt="Petr Křemen" %}{: .align-right .profile-photo}
 
 The former leader of the team received Ph.D. in 2012 in the study programme Artificial intelligence and Biocybernetics at FEE CTU by defending thesis "Building Ontology-Based Information Systems". His professional interests are ontology design, ontology information systems, semantic web, linked data and description logics querying. He is author or co-author of many impacted papers and over forty conference papers. He participated in more then eleven national and international research projects. From 2022 he reduced his work in the team just to teaching and supervising final theses.
 <!-- Mezi jeho odborné zájmy patří návrh ontologií a ontologických informačních systémů, sémantický web, Linked Data a automatické uvažování a dotazování do deskripčních logik. -->
