@@ -53,11 +53,9 @@ Topics of the final theses to be led by Michal are listed [here](https://bpmpc.f
 ### Jana Ahmad
 
 {% include figure image_path="/assets/images/team/jana.jpg" alt="Jana Ahmad" %}{: .align-left .profile-photo}
-
-Jana Ahmad v roce 2014 dokončila magisterské studium v oblasti IT a od letního semestru 2015 je studentkou prezenční formy doktorského studia
-oboru Umělá inteligence a biokybernetika. Oblastmi jejího odborného zájmu jsou konceptuální ontologické modelování pro rozvoj udržitelných IS,
-metody a metodiky tvorby ontologií, formální reprezentace sady konceptů v rámci domény a vztahy mezi koncepty, metodiky konceptuálního
-ontologického modelování s ohledem na efektivní perzistenci výsledných ontologií pomocí navrženého sémantického úložiště.
+Jana is a Ph.D student in the study programme Artificial intelligence and Biocybernetics at FEE CTU in Prague in 2021. 
+Her professional interest are conceptual ontological modeling for the development of Inormation system,
+methods and methodologies of creating ontologies, formal representation of a set of concepts within the domain and relations between concepts, Foundational Ontologies, Semantic and linked data. She got involved in teaching subjects: Ontologies and Semantic Web, Database System and Enterprise architectures at the FEE.
 
 ### Bogdan Kostov
 
