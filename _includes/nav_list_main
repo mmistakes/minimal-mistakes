@@ -11,7 +11,7 @@
   <form action="/search">
     <div class="tipue_search_left">
         <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
-        <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
+        <input type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required></div>
     <div style="clear: both;"></div>
   </form>
 
