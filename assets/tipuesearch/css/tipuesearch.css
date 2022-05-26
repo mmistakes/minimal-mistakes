@@ -1,0 +1,251 @@
+
+/*
+Tipue Search 6.1
+Copyright (c) 2017 Tipue
+Tipue Search is released under the MIT License
+http://www.tipue.com/search
+*/
+
+
+/* fonts */
+
+
+#tipue_search_input, #tipue_search_foot_boxes
+{
+     font: 300 14px/1 Roboto, sans-serif;
+}
+#tipue_search_results_count, #tipue_search_warning, .tipue_search_content_url, .tipue_search_content_debug, .tipue_search_related_text
+{
+     font: 300 14px/1.7 Roboto, sans-serif;
+}
+.tipue_search_content_title
+{
+     font: 100 26px/1.7 Roboto, sans-serif;
+}
+.tipue_search_content_text, .tipue_search_related_title
+{
+     font: 300 15px/1.7 Roboto, sans-serif;
+}
+.tipue_search_content_bold, .tipue_search_related_bold
+{
+     font-weight: 400;
+}
+
+
+/* search box */
+
+
+#tipue_search_input
+{
+     color: #333;
+     max-width: 210px;
+	padding: 17px;
+	border: 1px solid #e3e3e3;
+	border-radius: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+     box-shadow: none; 
+	outline: 0;
+	margin: 0;
+}
+.tipue_search_icon
+{
+     width: 24px;
+     height: 24px;
+}
+.tipue_search_left
+{
+     float: left;
+     padding: 15px 9px 0 0;
+}
+.tipue_search_right
+{
+     float: left;
+}
+
+
+/* search results */
+
+
+#tipue_search_content
+{
+     max-width: 750px;
+	padding-top: 15px;
+	margin: 0;
+}
+#tipue_search_results_count
+{
+	color: #333;
+}
+#tipue_search_warning
+{
+     color: #333;    
+	margin: 7px 0;
+}
+#tipue_search_warning a
+{
+     color: #5396ea;
+     text-decoration: none;
+}
+#tipue_search_warning a:hover
+{
+     color: #555;  
+}
+.tipue_search_content_title
+{
+     color: #666;    
+	margin-top: 21px;
+}
+.tipue_search_content_title a
+{
+     color: #666;
+     text-decoration: none;
+}
+.tipue_search_content_title a:hover
+{
+     color: #666;
+}
+.tipue_search_content_url
+{
+     word-wrap: break-word;
+     hyphens: auto;
+}
+.tipue_search_content_url a, .tipue_search_related_text a
+{
+     color: #5396ea;
+     text-decoration: none;
+}
+.tipue_search_content_url a:hover, .tipue_search_related_text a:hover, .tipue_search_related_before, .tipue_search_related_after
+{
+     color: #555;   
+}
+.tipue_search_content_text
+{
+	color: #333;
+     word-wrap: break-word;
+     hyphens: auto;
+     margin-top: 5px;
+}
+.tipue_search_content_bold
+{
+     color: #333;
+}
+.tipue_search_content_debug
+{
+	color: #333;
+     margin: 5px 0;
+}
+.tipue_search_related_title
+{
+	color: #333;
+     margin: 26px 0 7px 0;
+}
+.tipue_search_related_cols
+{
+     -webkit-columns: 230px 2;
+     -moz-columns: 230px 2;
+     columns: 230px 2;
+}
+
+#tipue_search_foot
+{
+     margin: 51px 0 21px 0;
+}
+#tipue_search_foot_boxes
+{
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+#tipue_search_foot_boxes li
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+#tipue_search_foot_boxes li a
+{
+	padding: 10px 17px 11px 17px;
+     background-color: #fff;
+     border: 1px solid #e3e3e3;
+     border-radius: 1px;
+	color: #333;
+	margin-right: 7px;
+	text-decoration: none;
+	text-align: center;
+}
+#tipue_search_foot_boxes li.current
+{
+	padding: 10px 17px 11px 17px;
+     background: #f6f6f6;
+     border: 1px solid #e3e3e3;
+     border-radius: 1px;
+	color: #333;
+	margin-right: 7px;
+	text-align: center;
+}
+#tipue_search_foot_boxes li a:hover
+{
+     background: #f6f6f6;
+}
+
+
+/* spinner */
+
+
+.tipue_search_spinner
+{
+     width: 50px;
+     height: 28px;
+}
+.tipue_search_spinner > div
+{
+     background-color: #e3e3e3;
+     height: 100%;
+     width: 2px;
+     display: inline-block;
+     margin-right: 2px;
+     -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+     animation: stretchdelay 1.2s infinite ease-in-out;
+}
+.tipue_search_spinner .tipue_search_rect2
+{
+     -webkit-animation-delay: -1.1s;
+     animation-delay: -1.1s;
+}
+.tipue_search_spinner .tipue_search_rect3
+{
+     -webkit-animation-delay: -1.0s;
+     animation-delay: -1.0s;
+}
+@-webkit-keyframes stretchdelay
+{
+     0%, 40%, 100%
+     {
+          -webkit-transform: scaleY(0.4)
+     }  
+     20%
+     {
+          -webkit-transform: scaleY(1.0)
+     }
+}
+@keyframes stretchdelay
+{
+     0%, 40%, 100%
+     { 
+          transform: scaleY(0.4);
+          -webkit-transform: scaleY(0.4);
+     }
+     20%
+     { 
+          transform: scaleY(1.0);
+          -webkit-transform: scaleY(1.0);
+     }
+}
+
+
+
+
+
+

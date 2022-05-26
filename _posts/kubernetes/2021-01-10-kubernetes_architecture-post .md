@@ -16,8 +16,6 @@ date: 2021-01-10
 last_modified_at: 2021-01-10
 
 comments: true
-
-
 ---
 
 ---
@@ -58,3 +56,8 @@ Worker node에는 kubelet, Container Runtime Engine, Kube-Proxy가 있다.
 - Control Plane node는 Local ETCD 멤버를 생성하고 해당 ETCD 멤버는 오직 Kube-ApiServer와 통신함.
 
 - Kubeadm init과 kubeadm join --control-plane으로 Control Plane Node에서 자동으로 ETCD 멤버를 만들 수 있음
+
+---
+
+
+[맨 위로 이동하기](#){: .btn .btn--primary }{: .align-right}

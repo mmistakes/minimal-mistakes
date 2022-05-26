@@ -385,4 +385,4 @@ author_profile: true
 <br>
 
 
-[맨 위로 이동하기](#)
+[맨 위로 이동하기](#){: .btn .btn--primary }{: .align-right}

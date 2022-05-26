@@ -1,6 +1,6 @@
 ---
 title: "kubernetes 설치전 작업목록"
-escerpt: "kubernetes 설치전에 점검환경 사항"
+escerpt: "kubernetes 설치전에 작업목록 체크사항"
 
 categories:
   - kubernetes
