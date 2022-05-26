@@ -1,6 +1,6 @@
 ---
 title: "Free Monad in Scala"
-date: 2022-05-25
+date: 2022-05-26
 header:
     image: "/images/blog cover.jpg"
 tags: [abstract]
