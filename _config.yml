@@ -286,7 +286,7 @@ defaults:
 ## add search function
 tipue_search:
      include:
-         pages: true
+         pages: false
          collections: []
      exclude:
          files: [search.html,index.html, tags.html] #
