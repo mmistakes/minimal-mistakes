@@ -2,23 +2,23 @@
 
 {% assign sum = site.posts | size %}
 
-<form action="/search">
-    <div class="tipue_search_left">
-      <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
-    </div>
-    <div class="tipue_search_right">
-      <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
-    <div style="clear: both;"></div>
-</form>
 
 <nav class="nav__list">
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
+    <div class="tipue_search_left">
+        <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
+    </div>
+    <div class="tipue_search_right">
+        <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
+    <div style="clear: both;"></div>
+
       <!--전체 글 수-->
       <li>
             <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
       </li>
+    
       <li>
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/ -->
         
