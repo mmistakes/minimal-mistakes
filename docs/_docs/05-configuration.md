@@ -618,6 +618,13 @@ To enable site-wide search add `search: true` to your `_config.yml`.
 
 The default search uses [**Lunr**](https://lunrjs.com/) to build a search index of all post and your documents in collections. This method is 100% compatible with sites hosted on GitHub Pages.
 
+To have it index all pages, update `lunr` in `_config.yml` like so:
+
+```yaml
+lunr:
+  search_within_pages: true
+```
+
 **Note:** Only the first 50 words of a post or page's body content is added to the Lunr search index. Setting `search_full_content` to `true` in your `_config.yml` will override this and could impact page load performance.
 {: .notice--warning}
 
