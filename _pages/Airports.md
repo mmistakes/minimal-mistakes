@@ -10,6 +10,13 @@ toc: true
 
 # Colombia
 	
+## [SKBO - El Dorado Airport - Bogota, Colombia](https://vpilotdesigns.github.io/SKBO/)
+
+<p><a href="https://vpilotdesigns.github.io/SKBO/"><strong>Galeria/Gallery</strong></a><br>
+  <br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/_uTgo3KJlyk" title="SKBO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><br></iframe>
+  <br></p>
+  
 ## [SKRG - Jose Maria Cordová Airport - Rionegro, Colombia](https://vpilotdesigns.github.io/SKRG/)
 
 <p><a href="https://vpilotdesigns.github.io/SKRG/"><strong>Galeria/Gallery</strong></a><br>
@@ -27,13 +34,15 @@ toc: true
 <p><a href="https://vpilotdesigns.github.io/SKAR/"><strong>Galeria/Gallery</strong></a><br>
   <br></p>
 {% include figure image_path="/assets/images/SKAR/Block_06.jpg" alt="mpto" caption="El Eden Intl Airport - Armenia, Colombia for MSFS" %}
+
+## [SKUI - El Caraño Airport - Quibdo, Colombia](https://vpilotdesigns.github.io/SKUI/)
+<p><a href="https://vpilotdesigns.github.io/SKUI/"><strong>Galeria/Gallery</strong></a><br>
+  <br></p>
+{% include figure image_path="/assets/images/SKUI/Block_04.jpg" alt="skui" caption="El Caraño Airport - Quibdo, Colombia for MSFS" %}
   
 <!---## [SKMD - Olaya Herrera - Medellin, Colombia](https://vpilotdesigns.github.io/SKMD/)
 <p>SKMD - Olaya Herrera - Medellin, Colombia</p>
   --->
-  
-## SKBO - El Dorado Intl Airport - Bogota, Colombia
-  <p>....Pronto SKBO - El Dorado Intl - Bogota, Colombia<br></p>
 
 # Panama
 	
