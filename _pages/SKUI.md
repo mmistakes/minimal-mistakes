@@ -63,7 +63,7 @@ Available in the MSFS Marketplace
 Disponible en el Marketplace de MSFS
 
 {% include figure image_path="/assets/images/SKUI/Block_02.jpg" alt="SKUI" caption="El Caraño Airport, Quibdo, Colombia" %}
-Bocas del Toro
+El Caraño Airport
 
 Created by Arka506 and V Pilot Designs
 
