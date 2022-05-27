@@ -47,7 +47,8 @@ var store = [
       }{%- unless forloop.last and l -%},{%- endunless -%}
     {%- endfor -%}
   {%- endfor -%}{%- if site.lunr.search_within_pages -%},
-  {%- for doc in site.pages -%}
+  {%- assign pages = site.pages | where_exp:'doc','doc.search != false' -%}
+  {%- for doc in pages -%}
     {%- if forloop.last -%}
       {%- assign l = true -%}
     {%- endif -%}
