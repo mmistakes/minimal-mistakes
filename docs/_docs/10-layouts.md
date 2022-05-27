@@ -837,10 +837,10 @@ Add some Liquid tags for the new configuration to `_includes/footer/custom.html`
 {% endif %}
 ```{% endraw %}
 
-Next, add `page_js` to any page's YAML Front Matter to have your CSS loaded for that page.
+Next, add `page_js` to any page's YAML Front Matter to have your JavaScript loaded for that page.
 ```yaml
 page_js:
-  - /path/to/your/custom.css
+  - /path/to/your/custom.js
 ```
 
 ---
