@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Nikita Fedik"
   avatar           :  /assets/images/bio-photo.jpg
-  bio              : "Computational chemist exploring machine learning and data science"
+  bio              : "Computational Chemistry | Machine Learning | Data Science"
   location         : Logan, Utah
   email            :
   links:
@@ -113,7 +113,7 @@ author:
       url: "mailto:fediknikita@gmail.com"
     - label: "Google Scholar"
       icon: "fas fa-fw fa-graduation-cap"
-      url: "https://scholar.google.com/citations?user=WFDRv1MAAAAJ&hl=en#"
+      url: "https://scholar.google.com/citations?hl=en&user=xiXhXJoAAAAJ"
     - label: "ResearchGate"
       icon: "fab fa-fw fa-researchgate"
       url: "https://www.researchgate.net/profile/Nikita-Fedik"
