@@ -284,12 +284,3 @@ defaults:
       sidebar_main: true
 
 
-## add search function
-#tipue_search:
-#     include:
-#         pages: false
-#         collections: []
-#     exclude:
-#         files: [search.html,index.html, tags.html] #
-#         categories: []
-#         tags: []

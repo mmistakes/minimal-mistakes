@@ -1,12 +1,5 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
-<!--
-<form action="/search">
-  <div class="tipue_search_left">
-      <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
-      <input type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required></div>
-  <div style="clear: both;"></div>
-</form>
--->
+
   <div class="sidebar sticky">
   {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
   {% if page.sidebar %}
