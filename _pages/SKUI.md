@@ -62,7 +62,7 @@ Available in the MSFS Marketplace
 
 Disponible en el Marketplace de MSFS
 
-{% include figure image_path="/assets/images/SKUI/Block_02.jpg" alt="SKUI" caption="El Caraño Airport, Quibdo, Colombia" %}
+{% include figure image_path="/assets/images/SKUI/Block_01.jpg" alt="SKUI" caption="El Caraño Airport, Quibdo, Colombia" %}
 El Caraño Airport
 
 Created by Arka506 and V Pilot Designs
