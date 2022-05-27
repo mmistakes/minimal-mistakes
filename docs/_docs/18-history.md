@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2022-05-27T09:50:11-04:00
+last_modified_at: 2022-05-27T10:02:53-04:00
 toc: false
 ---
 
@@ -25,6 +25,7 @@ toc: false
 
 ### Enhancements
 
+- Use notice `<a>` colors for blockquotes that have `notice--` classes applied. [#3140](https://github.com/mmistakes/minimal-mistakes/pull/3140) [#3068](https://github.com/mmistakes/minimal-mistakes/issues/3068)
 - Add sameAs itemprop to author link. [#3087](https://github.com/mmistakes/minimal-mistakes/pull/3087)
 - Automatically close invalid PRs using GitHub Actions. [#3313](https://github.com/mmistakes/minimal-mistakes/pull/3313)
 - Update and add missing Brazilian Portuguese translations. [#3204](https://github.com/mmistakes/minimal-mistakes/pull/3204)
