@@ -7,47 +7,47 @@ gallery1:
   - url: /assets/images/SKUI/Block_01.jpg
     image_path: /assets/images/SKUI/Block_01.jpg
     alt: "placeholder image 2"
-    title: "Bocas del Toro, El Caraño Airport, Quibdo, Colombia"
+    title: "El Caraño Airport, Quibdo, Colombia"
   - url: /assets/images/SKUI/Block_02.jpg
     image_path: /assets/images/SKUI/Block_02.jpg
     alt: "placeholder image 5"
-    title: "Bocas del Toro, El Caraño Airport, Quibdo, Colombia"
+    title: "El Caraño Airport, Quibdo, Colombia"
   - url: /assets/images/SKUI/Block_03.jpg
     image_path: /assets/images/SKUI/Block_03.jpg
     alt: "placeholder image 5"
-    title: "Bocas del Toro, El Caraño Airport, Quibdo, Colombia"
+    title: "El Caraño Airport, Quibdo, Colombia"
   - url: /assets/images/SKUI/Block_04.jpg
     image_path: /assets/images/SKUI/Block_04.jpg
     alt: "placeholder image 5"
-    title: "Bocas del Toro, El Caraño Airport, Quibdo, Colombia"
+    title: "El Caraño Airport, Quibdo, Colombia"
   - url: /assets/images/SKUI/Block_05.jpg
     image_path: /assets/images/SKUI/Block_05.jpg
     alt: "placeholder image 6"
-    title: "Bocas del Toro, El Caraño Airport, Quibdo, Colombia"
+    title: "El Caraño Airport, Quibdo, Colombia"
   - url: /assets/images/SKUI/Block_06.jpg
     image_path: /assets/images/SKUI/Block_06.jpg
     alt: "placeholder image 7"
-    title: "Bocas del Toro, El Caraño Airport, Quibdo, Colombia"
+    title: "El Caraño Airport, Quibdo, Colombia"
   - url: /assets/images/SKUI/Block_07.jpg
     image_path: /assets/images/SKUI/Block_07.jpg
     alt: "placeholder image 7"
-    title: "Bocas del Toro, El Caraño Airport, Quibdo, Colombia"
+    title: "El Caraño Airport, Quibdo, Colombia"
   - url: /assets/images/SKUI/Block_08.jpg
     image_path: /assets/images/SKUI/Block_08.jpg
     alt: "placeholder image 7"
-    title: "Bocas del Toro, El Caraño Airport, Quibdo, Colombia"
+    title: "El Caraño Airport, Quibdo, Colombia"
   - url: /assets/images/SKUI/Block_09.jpg
     image_path: /assets/images/SKUI/Block_09.jpg
     alt: "placeholder image 7"
-    title: "Bocas del Toro, El Caraño Airport, Quibdo, Colombia"
+    title: "El Caraño Airport, Quibdo, Colombia"
   - url: /assets/images/SKUI/Block_10.jpg
     image_path: /assets/images/SKUI/Block_10.jpg
     alt: "placeholder image 7"
-    title: "Bocas del Toro, El Caraño Airport, Quibdo, Colombia"
+    title: "El Caraño Airport, Quibdo, Colombia"
   - url: /assets/images/SKUI/Block_11.jpg
     image_path: /assets/images/SKUI/Block_11.jpg
     alt: "placeholder image 7"
-    title: "Bocas del Toro, El Caraño Airport, Quibdo, Colombia"
+    title: "El Caraño Airport, Quibdo, Colombia"
   
     
 ---
