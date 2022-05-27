@@ -2,6 +2,7 @@
 
 ### Bug Fixes
 
+- Fix GreedyNav.js attribution link. [#3553](https://github.com/mmistakes/minimal-mistakes/pull/3553)
 - Fix typo about loading JavaScript in layout documentation. [#3350](https://github.com/mmistakes/minimal-mistakes/pull/3350)
 - Fix inline code style not applied to stylized text. [#3253](https://github.com/mmistakes/minimal-mistakes/pull/3253)
 - Fix documentation typos. [#3232](https://github.com/mmistakes/minimal-mistakes/pull/3232) [#3318](https://github.com/mmistakes/minimal-mistakes/pull/3318)
