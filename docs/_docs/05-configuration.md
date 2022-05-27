@@ -907,7 +907,7 @@ Author links are all optional, include the ones you want visible under the `auth
 | Name | Description |
 | --- | --- |
 | **label** | Link label (e.g. `"Twitter"`) |
-| **icon** | [Font Awesome icon](https://fontawesome.com/icons?d=gallery) classes (e.g. `"fab fa-fw fa-twitter-square"`) |
+| **icon** | [Font Awesome icon](https://fontawesome.com/v5/search) classes (e.g. `"fab fa-fw fa-twitter-square"`) |
 | **url** | Link URL (e.g. `"https://twitter.com/mmistakes"`) |
 
 ```yaml
@@ -940,7 +940,7 @@ Footer links can be added under the `footer.links` array.
 | Name | Description |
 | --- | --- |
 | **label** | Link label (e.g. `"Twitter"`) |
-| **icon** | [Font Awesome icon](https://fontawesome.com/icons?d=gallery) classes (e.g. `"fab fa-fw fa-twitter-square"`) |
+| **icon** | [Font Awesome icon](https://fontawesome.com/v5/search) classes (e.g. `"fab fa-fw fa-twitter-square"`) |
 | **url** | Link URL (e.g. `"https://twitter.com/mmistakes"`) |
 
 ```yaml
