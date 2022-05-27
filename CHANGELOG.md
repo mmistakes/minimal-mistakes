@@ -16,6 +16,7 @@
 
 ### Enhancements
 
+- Add Kiswahili localized UI text strings. [#3489](https://github.com/mmistakes/minimal-mistakes/pull/3489)
 - Exclude `main.scss` from Lunr search index.
 - Allow `site.pages` to be indexed and searched via Lunr. [#3352](https://github.com/mmistakes/minimal-mistakes/pull/3352)
 - Update jQuery to v3.6.0. [#3254](https://github.com/mmistakes/minimal-mistakes/pull/3254)
