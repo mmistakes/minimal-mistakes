@@ -8,7 +8,7 @@ layout: default
   {% include page__hero_video.html %}
 {% endif %}
 
-{% if page.url != "/" and site.breadcrumbs or page.breadcrumbs != false %}
+{% if page.url != "/" and site.breadcrumbs or page.breadcrumbs %}
   {% unless paginator %}
     {% include breadcrumbs.html %}
   {% endunless %}
