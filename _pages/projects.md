@@ -1,5 +1,5 @@
 ---
-permalink: /projects_old/
+permalink: /projects/
 excerpt: "My work history"
 author_profile: true
 ---
