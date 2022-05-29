@@ -1,6 +1,5 @@
 ---
 permalink: /projects_old/
-title: "Research Experience"
 excerpt: "My work history"
 author_profile: true
 ---
