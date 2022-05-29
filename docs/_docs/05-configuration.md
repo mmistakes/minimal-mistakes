@@ -937,7 +937,7 @@ paginate_path: /recent/page:num/
 **Please note:** When using Jekyll's default [pagination plugin](https://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest **[jekyll-paginate-v2][jekyll-paginate-v2]**.
 {: .notice--info}
 
-  [jekyll-paginate-v2]: (https://github.com/sverrirs/jekyll-paginate-v2)
+  [jekyll-paginate-v2]: https://github.com/sverrirs/jekyll-paginate-v2
 
 ### Paginate V2
 
@@ -987,7 +987,7 @@ pagination:
 ---
 ```
 
-**Note:** There are two more configuration options from Jekyll Paginate V2 that this theme doesn't support yet. Changing them may lead to unexpected results and you're on your own.
+**Note:** There are two more configuration options from Jekyll Paginate V2 that this theme doesn't support yet. You should either leave them out or use their default values as shown below. Changing them may lead to unexpected results and you're on your own.
 
 ```yaml
 pagination:
