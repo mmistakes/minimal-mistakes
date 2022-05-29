@@ -1,23 +1,50 @@
 ---
 permalink: /research/
 title: "Research"
-author_profile: false
-layout: splash
+author_profile: true
+layout: single
 toc: 	true # Optional	Show table of contents. (boolean)	false
 toc_label: Contents	# Optional	Table of contents title. (string)	toc_label in UI Text data file.
 #toc_icon:	Optional	Table of contents icon, displays before the title. (string)	Font Awesome  file-alt icon. Other FA icons can be used instead.
-toc_sticky: false	# Optional	Stick table of contents to top of screen.	false
-modified: 20-05-2022
+toc_sticky: true	# Optional	Stick table of contents to top of screen.	false
+last_modified_at: 20-05-2022
 header:
-  overlay_image: /assets/images/Blank_Earth_Banner.jpg
-  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  overlay_image: /assets/images/research_banner.jpg
+  overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
 ---
-
-This is a test research page. 
-
-Under construction.
+The following are the projecting that Dr. Ahmed is contributing to.
 # Current Projects
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
 
-# Finished Projects
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+## Model Intercomparison and Analysis
+
+![IMPC logo](/assets/images/IMPC_logo.png "Integrated Modelling Program for Canada"){: .align-right style="width: 20%;"}
+
+Dr. Ahmed is managing and leading the modelling efforts of Nelson-MiP project, which is funded by the Integrated Modelling Program for Canada (IMPC - Theme A6). The project involves testing multiple hydrologic models over the international Nelson-Churchill River basin in North America. The work is being conducted in collaboration with researchers and practitioners across Canada under the umbrella of this project. This project includes two-way knowledge transfer between researchers and practitioners to build better hydrologic models of the area. The participating models are test for their ability to simulate the streamflow and other hydrologic signatures of that complex basin.
+{: .text-justify}
+
+[Learn more](https://gwf.usask.ca/impc/science/research-themes/theme-a6.php){: .btn .btn--info}
+
+## Improving Current Hydrologic Models
+
+![GWF logo](/assets/images/GWF_logo.png "Global Water Futures"){: .align-right style="width: 20%;"}
+
+Currently available hydrologic models cannot simulate the hydrology of the prairies quite well because they do not have a proper representation of prairie potholes and their dynamics. Therefore, this project focuses on enhancing current models by properly representing the prairie pothole in them. Two models are being modified: Canadian MESH land surface model (used by ECCC) and the HYPE model (used in Canada and Europe). This project improves the estimation of the flow quantities in prairie rivers.
+{: .text-justify}
+
+[Learn more](https://gwf.usask.ca/core-modelling/index.php){: .btn .btn--info}
+
+## Flood Inundation Mapping
+
+Dr. Ahmed is involved in multiple projects that invistigate how the flooding extents will change under future climate for multiple cities/communities across Western Canada. The projects also look at tries to identify the change in the flooding extents when altering regulation scenarios of major lakes/reservoirs that are nearby the studied areas.
+{: .text-justify}
+______________
+
+
+# Completed Projects
+
+## FloodNet
+
+![FloodNet logo](/assets/images/FloodNet_logo.png "FloodNet"){: .align-right style="width: 20%;"} 
+Dr. Ahmed led the modeling efforts of this project (FloodNet - Theme 4-3), investigates and predicts the hydrologic connectivity in watersheds under flood conditions. As part of that project, multiple modelling approaches were built to simulate flood magnitude and its spatiotemporal inundation extents. The approaches can assess flood impacts on the varying watershed components (rural, agricultural, lakes, wetlands, etc.). 
+{: .text-justify}
+[Learn more](https://floodnet.webflow.io/){: .btn .btn--info}

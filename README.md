@@ -6,13 +6,48 @@ ___________
 
 # Steps to customize your website
 
-1. Fork this repo to your account and change the name to `yourusername.github.io`
-2. Modify the site and your personal info in the [`_config.yml`](_config.yml)
-3. Modify [`index.md`](index.md) to adjust you home page contents.
+1. Fork The [Minimal mistakes original repo] (https://mmistakes.github.io/minimal-mistakes/) to your account and change the repo name to `yourusername.github.io`
+2. Modify your personal info in the [`_config.yml`](_config.yml)
+3. Modify [`index.md`](index.md) to adjust your home page contents.
 3. Change the site map and main pages (tabs at the header) from [`_data/navigation.yml`](_data/navigation.yml)
 4. Add your main pages to the [`_pages`](_pages) directory. You can start by empty files and modify them later. The pages can be in markdown format `.md` or `.html`.
 5. Make sure that the indentation and spaces are correct because they can cause the site to fail. 
 ___________
+
+# Build and test your site locally using WSL
+Adapted from [here]('https://bartjolling.github.io/blog/2018/11/18/jekyll-on-wsl-for-github-pages.html')
+
+Install the following (Ruby)
+    sudo apt install zlib1g-dev
+    sudo apt update -y && sudo apt upgrade -y
+    sudo apt install ruby ruby-dev build-essential dh-autoreconf
+    sudo gem update
+
+Install Jekyll:
+
+    sudo gem install jekyll bundler
+    bundle config path vendor/bundle
+    jekyll -v
+
+The last command should output the version number.
+The above commands should be only done once to install the required programs/packages
+
+Install the github-pages gem and fix version conflicts. This should be done for every new repo
+
+Navigate to the folder containing your website repo.
+
+    cd yourusername.github.io
+    bundle install
+    bundle update
+
+Build the site locally every time you make changes to the site.
+
+    bundle exec jekyll serve
+
+This will build the site wait for the following message `Server running... press ctrl-c to stop.` 
+Then open http://localhost:4000 from any browser on your Windows machine.
+
+______
 
 
 # [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)

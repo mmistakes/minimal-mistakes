@@ -102,9 +102,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Mohamed Ismaiel Ahmed"
+  name             : "Mohamed Ismaiel Ahmed, PhD, EIT."
   avatar           : "/assets/images/my_photo.png"
-  bio              : "Postdoc & Manager of GWF projects @UCalgary. Interested in cold region hydrologic modelling. PhD, EIT."
+  bio              : "Postdoc & Manager of GWF projects @UCalgary. Interested in cold region hydrologic modelling."
   location         : "Alberta, CA"
   email            : mohamedismaiel.ahmed@ucalgary.ca
   links:
@@ -129,6 +129,15 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://ca.linkedin.com/in/mohamed-ismaiel-ahmed-a08a367b"
+    - label: "Google Scholar"
+      icon: "googlescholar ic-fw"
+      #url: "https://scholar.google.com/citations?user=hURRUhwAAAAJ&hl=en" 
+    - label: "ORCID"
+      icon: "brands-orcid ic-fw"
+      #url: "https://orcid.org/0000-0003-3423-7041" 
+    - label: "ResearchGate"
+      icon: "brands-researchgate ic-fw"
+      #url: "https://www.researchgate.net/profile/Mohamed-Ahmed-143" 
 
 
 # Site Footer
