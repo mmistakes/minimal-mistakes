@@ -5,7 +5,7 @@ author_profile: true
 excerpt: 'About me'
 last_modified_at: 29-05-2022
 header:
-  overlay_image: /assets/images/home_Banner.jpg
+  overlay_image: /assets/images/home_banner.jpg
   overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
 ---
 
