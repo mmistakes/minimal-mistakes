@@ -1,8 +1,8 @@
 ---
-permalink: /projects/
+permalink: /projects_old/
 title: "Research Experience"
 excerpt: "My work history"
-author_profile: true 
+author_profile: true
 ---
 ### Role of coastal vegetation on tsunami energy attenuation
 
@@ -32,6 +32,6 @@ feature_row:
     alt: "100% free"
     title: "100% free"
     excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-    url: "/docs/license/" 
+    url: "/docs/license/"
   btn_class: "btn--primary"
- btn_label: "Learn more"  --> 
+ btn_label: "Learn more"  -->
