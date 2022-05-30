@@ -4,7 +4,7 @@ excerpt: "My work history"
 author_profile: true
 ---
 ##### Role of coastal vegetation on tsunami energy attenuation
-In this study, we numerically investigated the effect of flexibility of vegetation in tsunami wave energy attenuation implementing a two-way coupling FSI (fluid-structure interaction) model to understand the boundary layer dynamics and hydrodynamics of full-scale three-dimensional tsunami flow while interacting with flexible vegetation to optimize the design of nature-based solutions to reduce the tsunami risk. [more](/articles/2022-fsi.md)
+In this study, we numerically investigated the effect of flexibility of vegetation in tsunami wave energy attenuation implementing a two-way coupling FSI (fluid-structure interaction) model to understand the boundary layer dynamics and hydrodynamics of full-scale three-dimensional tsunami flow while interacting with flexible vegetation to optimize the design of nature-based solutions to reduce the tsunami risk. [more](/articles/2022-fsi)
 
 
 <!-- header:
