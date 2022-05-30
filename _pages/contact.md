@@ -4,7 +4,7 @@ title: "Contact"
 excerpt: "Contact me"
 author_profile: true
 ---
-Contact information is given below, including email and various web services.  
+Contact information is below, including email and various web services.  
 
 * E-mail: [am2455@njit.edu](mailto:am2455@njit.edu)
 * Google Scholar: [Abhishek Mukherjee](https://scholar.google.com/citations?user=K2SRNu4AAAAJ&hl=en&authuser=1)
