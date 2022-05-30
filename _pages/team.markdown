@@ -60,11 +60,9 @@ Jana is a Ph.D student in the study programme Artificial intelligence and Biocyb
 
 {% include figure image_path="/assets/images/team/bogdan.jpg" alt="Bogdan Kostov" %}{: .align-right .profile-photo}
 
-Bogdan Kostov je aktuálně interní doktorand na Katedře kybernetiky. Tématem jeho disertační práce je rozšíření, optimalizace
-a aplikace expresivních sémantických dotazovacích jazyků. Jeho další odborné zájmy jsou Linked Data,
-návrh ontologie a vizualizace sémantických dotazovacích jazyků. V minulosti se zúčastnil projektu SoSIReČR.
-V současnosti se podílí na projektu Ministerstva vnitra ProtoSpy.
-
+Bogdan Kostov is a Ph.D student at FEE CTU. His professional interests are effective querying of semantic 
+knowledge bases in the context of information systems and ontology engineering. He is involved in teaching 
+B0B36DBS (Database systems) and B6B36EAR (Enterprise architectures). 
 
 
 <!-- ### Lama Saeeda
