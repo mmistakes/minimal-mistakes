@@ -38,13 +38,13 @@ body {
 .page {
   @include breakpoint($large) {
     float: right;
-    width: calc(105% -5%);
-    padding-right: 0;
+    width: calc(105% - 5%);
+    padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
     width: calc(105% - 5%);
-    padding-right: 0;
+    padding-right: $right-sidebar-width-narrow;
   }
 
   .page__inner-wrap {
@@ -518,11 +518,11 @@ body {
 
   @include breakpoint($large) {
     float: right;
-    width: calc(105% - 5%);
+    width: calc(100% - #{$right-sidebar-width-narrow});
   }
 
   @include breakpoint($x-large) {
-    width: calc(105% - 5%);
+    width: calc(100% - #{$right-sidebar-width-narrow});
   }
 
   a {
