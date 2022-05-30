@@ -6,18 +6,19 @@ ___________
 
 # Steps to customize your website
 
-1. Fork The [Minimal mistakes original repo] (https://mmistakes.github.io/minimal-mistakes/) to your account and change the repo name to `yourusername.github.io`
+1. Fork The [Minimal mistakes original repo](https://github.com/mmistakes/minimal-mistakes) to your account and change the repo name to `yourusername.github.io`
 2. Modify your personal info in the [`_config.yml`](_config.yml)
-3. Modify [`index.md`](index.md) to adjust your home page contents.
+3. Modify [`index.md`](index.md) or `index.html` to adjust your home page contents.
 3. Change the site map and main pages (tabs at the header) from [`_data/navigation.yml`](_data/navigation.yml)
 4. Add your main pages to the [`_pages`](_pages) directory. You can start by empty files and modify them later. The pages can be in markdown format `.md` or `.html`.
 5. Make sure that the indentation and spaces are correct because they can cause the site to fail. 
 ___________
 
 # Build and test your site locally using WSL
-Adapted from [here]('https://bartjolling.github.io/blog/2018/11/18/jekyll-on-wsl-for-github-pages.html')
+Adapted from [here](https://bartjolling.github.io/blog/2018/11/18/jekyll-on-wsl-for-github-pages.html)
 
 Install the following (Ruby)
+
     sudo apt install zlib1g-dev
     sudo apt update -y && sudo apt upgrade -y
     sudo apt install ruby ruby-dev build-essential dh-autoreconf
@@ -44,8 +45,8 @@ Build the site locally every time you make changes to the site.
 
     bundle exec jekyll serve
 
-This will build the site wait for the following message `Server running... press ctrl-c to stop.` 
-Then open http://localhost:4000 from any browser on your Windows machine.
+This will build the site wait for the following message `Server running... press ctrl-c to stop.` to appear in the terminal. 
+Then, open http://localhost:4000 from any browser on your Windows machine.
 
 ______
 
