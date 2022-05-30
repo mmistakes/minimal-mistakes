@@ -1,5 +1,6 @@
 ---
 layout: splash
+title: "sipbs-compbiol.github.io"
 permalink: /
 header:
     overlay_image: /assets/images/headers/homepage_1600x524.jpg
@@ -43,3 +44,7 @@ feature_row:
 ---
 
 {% include feature_row %}
+
+## How do I edit this website?
+
+Anyone in the group can edit or add to these pages. To do so, please fork this repository from [https://github.com/sipbs-compbiol/sipbs-compbiol.github.io](https://github.com/sipbs-compbiol/sipbs-compbiol.github.io), make your changes, and issue a pull request against the original repository, tagging Leighton as a reviewer. Most requests will be merged without question, but the time to changes going live may vary.
