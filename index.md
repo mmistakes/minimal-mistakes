@@ -17,7 +17,15 @@ Current research involves the development of new conceptual, empirical, and phys
 {: .text-justify}
 [Learn more](/research){: .btn .btn--info}
 
+# Education
+
+|-------------|-------------|
+| 2021 | **Doctor of Philosophy in Hydrology (PhD)** <br/> *University of Saskatchewan, Civil Engineering, Canada* |
+| 2016 | **Master of Science in Hydrogeology (MSc)** <br/> *Cairo University, Faculty of Engineering, Egypt* |
+| 2012 | **Bachelor of Civil Engineering (BSc)** <br/> *Cairo University, Faculty of Engineering, Egypt* |
+
 # Professional Experience
+
 <!---
 Commented section
 <img width=80/> is used to set the column width of the table
