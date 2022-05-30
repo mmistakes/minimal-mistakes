@@ -43,8 +43,8 @@ body {
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
+    width: calc(100% - #{$right-sidebar-width});
+    padding-right: $right-sidebar-width;
   }
 
   .page__inner-wrap {
@@ -206,7 +206,7 @@ body {
     }
 
     .page__lead {
-      max-width: $large;
+      max-width: $medium;
     }
 
     .page__title {
