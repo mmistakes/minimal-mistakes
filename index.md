@@ -37,4 +37,8 @@ Commented section
 | Sept 2012<br/>Dec 2016<br/>*Full time*| **Graduate Teaching and Research Assistant**<br/>*Faculty of Engineering, Cairo University, Egypt*|
 | Jan 2014<br/>Dec 2016<br/>*Part time*| **Hydrologic Engineer**<br/>*Civil and Environmental Engineering Group (CEEG), Egypt*<br/>Participating in designing flood protection works and internal storm drainage systems for many airports in the MENA region|
 
+<!---
+Commented section
 [Download CV](/docs/MIsmlAhmed_CV.pdf){: .btn .btn--info}
+-->
+
