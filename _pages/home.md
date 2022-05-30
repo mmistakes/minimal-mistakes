@@ -21,7 +21,7 @@ feature_row:
     alt: "group meetings"
     title: "Group Meetings"
     excerpt: "Group meeting schedule and archive."
-    url: "/group_meetings/"
+    url: "/group/meetings/"
     btn_class: "btn--primary"
     btn_label: "Meetings"
     image_size: "30%"
@@ -29,7 +29,7 @@ feature_row:
     alt: "journal club"
     title: "Journal Club"
     excerpt: "Random Number Generator Bioinformatics Journal Club."
-    url: "/journal_club/"
+    url: "/group/journal_club/"
     btn_class: "btn--primary"
     btn_label: "Journal Club"
     image_size: "30%"
@@ -44,6 +44,35 @@ feature_row:
 ---
 
 {% include feature_row %}
+
+## What We Do
+
+We are a computational biology research group in [SIPBS](https://www.strath.ac.uk/science/strathclydeinstituteofpharmacybiomedicalsciences/whatissipbs/) ([Strathclyde Institute for Pharmacy and Biomedical Sciences](https://www.strath.ac.uk/science/strathclydeinstituteofpharmacybiomedicalsciences/whatissipbs/)), at the [University of Strathclyde, Glasgow, Scotland](https://www.strath.ac.uk). We apply computational and mathematical approaches to better understand biology. Our main areas of research are in microbiology, human health, and plant health, and we have experience in a number of areas, including:
+
+- genomics
+- systems biology
+- metabolic modelling
+- software development
+- phylogenetics and phylogenomics
+- statistics (frequentist and Bayesian) and modelling
+- synthetic biology
+- protein sequence-structure-function analysis
+
+## Key Collaborators
+
+- SIPBS
+  - Prof. Gwyn Gould (SIPBS)
+  - Prof Paul Hoskisson (SIPBS)
+  - Dr Arnaud Javelle (SIPBS)
+  - Dr Nick Tucker (SIPBS)
+- UK
+  - Dr Sean Chapman (James Hutton Institute)
+  - Dr Tracey Gloster (University of St Andrews)
+  - Prof. Gail Preston (University of Oxford)
+- Overaeas
+  - Prof C Titus Brown (UC Davis)
+  - Prof Lenwood Heath (Virginia Tech)
+  - Prof Boris Vinatzer (Virginia Tech)
 
 ## How do I edit this website?
 
