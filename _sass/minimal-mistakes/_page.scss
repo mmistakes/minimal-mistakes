@@ -472,7 +472,7 @@ body {
   border-radius: 50%;
 
   @include breakpoint($large) {
-    width: 90px;
+    width: 80px;
     height: 80px;
     padding: 5px;
     border: 1px solid $border-color;
