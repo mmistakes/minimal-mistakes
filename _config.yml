@@ -13,20 +13,20 @@
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-GB"
 title                    : "SIPBS-CompBiol"
-title_separator          : "-"
-subtitle                 : "SIPBS Computational Biology Group Webpages"
-name                     : "Your Name"
-description              : "An amazing website."
+title_separator          : " | "
+subtitle                 : "SIPBS Computational Biology Group"
+name                     : "Leighton Pritchard"
+description              : "Group pages, including group meeting and journal club schedules."
 url                      : "https://sipbs-compbiol.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "sipbs-compbiol/sipbs-compbiol.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/logos/masthead_88wide" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -85,7 +85,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "@sipbs-compbiol"
 facebook:
   username               :
   app_id                 :
@@ -122,29 +122,29 @@ author:
       url: "https://widdowquimnn.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://twitter.com/widdowquinn"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/widdowquinn"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/widdowquinn"
 
 # Site Footer
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://twitter.com/sipbs-compbiol/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/sipbs-compbiol"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
