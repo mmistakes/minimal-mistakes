@@ -38,12 +38,12 @@ body {
 .page {
   @include breakpoint($large) {
     float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
+    width: calc(105% - #{$right-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
+    width: calc(105% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
   }
 
@@ -472,7 +472,7 @@ body {
   border-radius: 50%;
 
   @include breakpoint($large) {
-    width: 80px;
+    width: 90px;
     height: 80px;
     padding: 5px;
     border: 1px solid $border-color;
@@ -518,11 +518,11 @@ body {
 
   @include breakpoint($large) {
     float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
+    width: calc(105% - #{$right-sidebar-width-narrow});
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
+    width: calc(105% - #{$right-sidebar-width});
   }
 
   a {
