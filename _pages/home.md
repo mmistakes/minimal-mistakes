@@ -15,6 +15,7 @@ feature_row:
     url: "https://widdowquinn.github.io/group/"
     btn_class: "btn--primary"
     btn_label: "Group Info"
+    image_size: "30%"
   - image_path: /assets/images/icons/computer.svg
     alt: "group meetings"
     title: "Group Meetings"
@@ -22,6 +23,7 @@ feature_row:
     url: "/group_meetings/"
     btn_class: "btn--primary"
     btn_label: "Meetings"
+    image_size: "30%"
   - image_path: /assets/images/icons/document-3.svg
     alt: "journal club"
     title: "Journal Club"
@@ -29,6 +31,7 @@ feature_row:
     url: "/journal_club/"
     btn_class: "btn--primary"
     btn_label: "Journal Club"
+    image_size: "30%"
   - image_path: /assets/images/icons/document-3.svg
     alt: "hacky hour"
     title: "Hacky Hour"
@@ -36,6 +39,7 @@ feature_row:
     url: "/hacky_hour/"
     btn_class: "btn--primary"
     btn_label: "Hacky Hour"
+    image_size: "30%"
 ---
 
 {% include feature_row %}
