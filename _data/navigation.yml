@@ -1,12 +1,36 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Sitemap"
+    url: /sitemap/
+
+docs:
+  - title: Group Pages
+    children:
+      - title: "Philosophy"
+        url: https://widdowquinn.github.io/group/philosophy
+      - title: "Responsibilities"
+        url: https://widdowquinn.github.io/group/responsibilities
+      - title: "Code of Conduct"
+        url: https://widdowquinn.github.io/group/code_of_conduct
+      - title: "Group Python Style"
+        url: https://widdowquinn.github.io/group/python_style
+  - title: Software
+    children:
+      - title: Group Software Page
+        url: https://widdowquinn.github.io/software/
+      - title: "pyani"
+        url: https://widdowquinn.github.io/pyani/
+      - title: "cazy_webscraper"
+        url: https://hobnobmancer.github.io/cazy_webscraper
+      - title: "ncfp"
+        url: https://widdowquinn.github.io/ncfp/
+      - title: "pdp"
+        url: https://widdowquinn.github.io/find_differential_primers/
