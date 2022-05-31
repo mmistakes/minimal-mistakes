@@ -9,9 +9,11 @@ date: 2021-04-15
 ---
 
 ##### Motivation:
-Due to their unpredictability and rapid evolution from the moment they are triggered, tsunamis are considered as one of the deadliest natural hazards affecting coastal communities. Once triggered, they travel undisturbed at a very high speed in the open water, reaching the shore in up to a few hours once triggered. While tsunami wave moves fast and is, effectively, a two-dimensional wave propagating in the open water, once the flow approaches shore and moves inland, it becomes inherently three-dimensional, turbulent, with a growing boundary layer thickness that contributes to an important shear-driven erosion and sediment transport. To respond to the horrendous tsunami impact in the future, coastal communities around the Pacific and Indian Oceans are incorporating nature-based mitigation parks in their tsunami defense designs. However, the complete understanding of the hydrodynamics of the tsunami run-up through mitigation parks is still lacking. Thus, in this study we aim to numerically investigate the protective benefits of mitigation park to understand the boundary layer dynamics and hydrodynamics of full-scale three-dimensional tsunami flow while interacting with flexible vegetation to optimize the design of nature-based solutions to reduce the tsunami risk.
+Animal-borne video recordings from blue whales in the open ocean show that remoras preferentially adhere to specific regions on the surface of the whale. Using empirical and computational fluid dynamics analyses, we show that remora attachment was specific to regions of separating flow and wakes caused by surface features on the whale. Adhesion at these locations offers remoras drag reduction of up to 71–84% compared with the freestream. Remoras were observed to move freely along the surface of the whale using skimming and sliding behaviors. Skimming provided drag reduction as high as 50–72% at some locations for some remora sizes, but little to none was available in regions where few to no remoras were observed. Experimental work suggests that the Venturi effect may help remoras stay near the whale while skimming. Understanding the flow environment around a swimming blue whale will inform the placement of biosensor tags to increase attachment time for extended ecological monitoring.
 ##### Results:
-![plot1](/assets/images/flex-double-5e4-SP1.5D.gif)
-<b>Fig.1 - Dam break wave interaction with two flexible cylinders with modulus of elasticity (E) of 5 \times 10<sup>4</sup> pa</b>
-![plot2](/assets/images/flex-four-5e5-SP1.5D.gif)
-<b>Fig.2 - Dam break wave flows over four flexible cylinders with modulus of elasticity (E) of 5 $`\times`$ 10<sup>5</sup> pa</b>
+![plot1](/assets/images/q-criterion.png)
+<b>Fig.1 - Dorsal view of the blue whale where vorticity is colored by velocity magnitude at the outer edge of the boundary layer, revealing structure in the flow, including small-scale instabilities over much of the surface as in transitional flow, and large-scale vortical flows typical of wakes and separation zones. </b>
+![plot2](/assets/images/vel_profile.png)
+<b>Fig.2 - Velocity can be used in this figure as a first-order qualitative proxy for wall shear stress</b>
+
+For details, please the see the paper published in [Remoras pick where they stick on blue whales](10.1242/jeb.226654)
