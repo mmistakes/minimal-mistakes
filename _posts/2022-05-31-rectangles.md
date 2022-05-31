@@ -2,7 +2,7 @@
 layout: single
 title:  "직사각형의 넓이1(프로그래머스 Lv5)"
 categories : java
-tag : [프로그래머스 Lv5,스위핑 알고리즘, 좌표압축]
+tag : [프로그래머스 Lv5,좌표압축]
 search: true #false로 주면 검색해도 안나온다.
 ---
 
