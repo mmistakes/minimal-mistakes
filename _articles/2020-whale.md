@@ -5,7 +5,7 @@ category:
 permalink: /articles/2022-fsi
 excerpt: 'We introduce a new data-driven approach for grouping together transcripts in an experiment based on their inferential uncertainty. '
 classes: wide
-date: 2021-04-15
+date: 2020-09-07
 ---
 
 ##### Motivation:
