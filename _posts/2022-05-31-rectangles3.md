@@ -1,269 +1,167 @@
-```python
+![prob1](..../images/2022-05-31-rectangles3/prob1-165399332053831.png){: width="100%" height="100%"}![prob2](../../images/2022-05-31-rectangles3/prob2-165399333868533.png){: width="100%" height="100%"}![prob3](../../images/2022-05-31-rectangles3/prob3-165399335086435.png){: width="100%" height="100%"}
+
+```java
 import java.util.*;
 class Solution
 {    
-    //HashMap<Integer, HashSet<vertical_length>>
+    int vol=2;
+    long[] seg;
+    int[] spanning;    
+    ArrayList<Integer> n_y_positions = new ArrayList<Integer>();
     public long solution(int[][] rectangles) 
-    //public ArrayList<ArrayList<Integer>> solution(int[][] rectangles) 
-    {        
-        HashSet<Integer> set_x = new HashSet<Integer>();
-        HashSet<Integer> set_y = new HashSet<Integer>();
-        for(int[] rectangle : rectangles)
-        {
-            set_x.add(rectangle[0]);
-            set_x.add(rectangle[2]); 
-            set_y.add(rectangle[1]);
-            set_y.add(rectangle[3]); 
-            
-            //rectangle[2]-rectangle[0] => x_diff
-            //rectangle[3]-rectangle[1] => y_diff
-        }
-        
-        List<Integer> Set_x = new ArrayList(set_x);
-        List<Integer> Set_y = new ArrayList(set_y);
-        
-        //오름차순으로 Set_x,Set_y을 정렬한다.
-        Collections.sort(Set_x);  
-        Collections.sort(Set_y);
-
-        /*
-        Set_x
-            [0,3,4,5]
-            [1,2,4,5,6,7,8,9]
-            
-        Set_y
-            [1,3,4]        
+    {
+        TreeSet<Integer> y_positions = new TreeSet<Integer>();
+        HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
+        ArrayList<int[]> list = new ArrayList<int[]>();
+        for(int[] rec : rectangles)
+        {           
+            y_positions.add(rec[1]);   
+            y_positions.add(rec[3]); 
+            list.add(new int[]{rec[0],rec[1],rec[3],1});
+            list.add(new int[]{rec[2],rec[1],rec[3],-1});
+        } 
+        /* for문 실행결과           
+        y_positions
             [0,1,2,3,4,5,6,7]
-        */ 
+        list            
+        [
+            [1,1,5,1],
+            [6,1,5,-1],
+            [2,0,2,1],
+            [4,0,2,-1],
+            [2,4,7,1],
+            [5,4,7,-1],
+            [4,3,6,1],
+            [8,3,6,-1],
+            [7,5,7,1],
+            [9,5,7,-1]
+        ]            
+        */
         
-        for(int i=0;i<rectangles.length; i++)
+	//list를 정렬하기 위한 코드
+    /*
+    Comparator<int[]> comparator = new Comparator<int[]>() 
+    {
+        @Override
+        public int compare(int[] first, int[] second) 
         {
-            rectangles[i][0]=Set_x.indexOf(rectangles[i][0]);
-            rectangles[i][2]=Set_x.indexOf(rectangles[i][2]);
-            rectangles[i][1]=Set_y.indexOf(rectangles[i][1]);
-            rectangles[i][3]=Set_y.indexOf(rectangles[i][3]);            
-        }
-               
-        /*
-        rectangles
-            [[0,0,2,2],[1,0,3,1]]     
-            [[0,1,4,5],[1,0,2,2],[1,4,3,7],[2,3,6,6],[5,5,7,7]]
-        */
-        
-  
-        int position_max=-1;
-        int position_min=-1;
-        vertical_length temp_vertical;
-        Iterator<vertical_length> iterator;
-        vertical_length current;
-        HashSet<vertical_length> verticals; 
-        HashSet<vertical_length> removal;       
-        HashMap<Integer, HashSet<vertical_length>> map = new HashMap<Integer, HashSet<vertical_length>>();
-        
-        /*
-        rectangles
-            [[0,0,2,2],[1,0,3,1]]     
-            [[0,1,4,5],[1,0,2,2],[1,4,3,7],[2,3,6,6],[5,5,7,7]]
-        */
-
-        for(int[] rectangle : rectangles) 
-        {       
-            for(int i=rectangle[0]; i<rectangle[2]; i++)
-            { 
-                temp_vertical = new vertical_length();      
-                //temp_vertical.position = new int[]{rectangle[1],rectangle[3]}; 
-                temp_vertical.position[0] = rectangle[1]; 
-                temp_vertical.position[1] = rectangle[3];             
-                if(!map.containsKey(i))
-                {
-                    verticals = new HashSet<vertical_length>();
-                    verticals.add(temp_vertical);
-                    map.put(i, verticals);
-                }
-                
-                /*
-                {
-                    "0":[{"position":[1,5]}],
-                    "1":[{"position":[0,2]},{"position":[4,7]},{"position":[1,5]}],
-                    "2":[{"position":[4,7]},{"position":[3,6]},{"position":[1,5]}],
-                    "3":[{"position":[3,6]},{"position":[1,5]}],
-                    "4":[{"position":[3,6]}],
-                    "5":[{"position":[5,7]},{"position":[3,6]}],
-                    "6":[{"position":[5,7]}]
-                }
-                */
-                
-                else
-                {
-                    //iterator = verticals.iterator();
-                    iterator = map.get(i).iterator();
-                    removal = new HashSet<vertical_length>();
-                    while(iterator.hasNext())
-                    {
-                        current = iterator.next(); 
-                        position_max = current.position[1];
-                        position_min = current.position[0];
-                        
-                        //temp_vertical의 max가 current의 min, max사이에 있을경우
-                        if(position_min<= temp_vertical.position[1] && temp_vertical.position[1] <=position_max)
-                        {
-                            //temp_vertical의 min이 current의 min보다 클 경우                         
-                            if(position_min<temp_vertical.position[0])
-                            {
-                                temp_vertical.position[0] = position_min;                           
-                            }
-                            temp_vertical.position[1] = position_max;   
-                            removal.add(current.clone());
-                        }
-                        
-                        //temp_vertical의 min이 current의 min, max사이에 있을경우
-                        else if(position_min<= temp_vertical.position[0] && temp_vertical.position[0] <=position_max)
-                        {
-                             //temp_vertical의 max가 current의 max보다 작을 경우
-                            /*
-                            if(temp_vertical.position[1]<position_max)
-                            {
-                                temp_vertical.position[1] = position_max;                           
-                            }
-                            */
-                            temp_vertical.position[0] = position_min;
-                            removal.add(current.clone());
-                        }
-                        
-                        //temp_vertical의 max,min사이에 current의 min, max이 위치할 경우
-                        else if(temp_vertical.position[0] < position_min && position_max < temp_vertical.position[1])
-                        {                                          
-                            removal.add(current.clone());
-                            //removal.add(current);
-                        }                         
-                    } 
-                    
-                    //만약 위의 if,else if문의 실행결과 temp_vertical.position과 current의 값이
-                    //같아진다면, map.get(i).add(temp_vertical);를 실행해도 중복처리 되기 때문에
-                    //추가가 안된다. 따라서, map.get(i).removeAll(removal);를 먼저 실행해야 한다.
-                    
-                    map.get(i).removeAll(removal);                      
-                    map.get(i).add(temp_vertical);    
-                }
-            }           
-        }
-
-
-        // map.keySet() =>  map.keySet()의 자료형은 Set<Integer>
-        
-        /*
-        Set_x
-            [0,3,4,5]
-            [1,2,4,5,6,7,8,9]
-            [1,2,3,4]
+            //0번째 인덱스가 가리키는 값이 작은 순(오름차순)으로 정렬한다.
+            //(반드시 -1, 1일 필요는 없다, 걍 음수 양수 구분만 하기 위한 용도일 뿐이다.  
+            //음수일 때 요소 앞뒤 위치를 바꿔준다)
+            return (first[0] - second[0] > 0) ? 1 : -1;   
             
-        Set_y
-            [1,3,4]        
-            [0,1,2,3,4,5,6,7]
-            [2,4,5,7]
-            
-        map
-        {
-            "0":[{"position":[1,5]}],
-            "1":[{"position":[0,7]}],
-            "2":[{"position":[1,7]}],
-            "3":[{"position":[1,6]}],
-            "4":[{"position":[3,6]}],
-            "5":[{"position":[3,7]}],
-            "6":[{"position":[5,7]}]
-        }            
-        */
-
-        long height;
-        long sum=0;
-        
-        //HashMap<Integer, HashSet<vertical_length>> map = new HashMap<Integer, HashSet<vertical_length>>();
-
-        for(Integer key : map.keySet()) 
-        {
-            height = 0;
-            for(vertical_length pos : map.get(key))
-            {
-                //map.get(key).pos.leng += Set_y.get(pos.position[1])-Set_y.get(pos.position[0]);
-                height += Set_y.get(pos.position[1])-Set_y.get(pos.position[0]);
-            }
-            sum += height * Long.valueOf(Set_x.get(key+1) - Set_x.get(key)); 
+            //조건이 같은거 같은데 아래와 같이 리턴하면, 런타임시 에러가 발생하는 경우가 있다.
+						(이유는 모르겠다.)
+            //return (first[0] - second[0] < 0) ? -1 : 1;  
+            //compare작업시, list맨 끝에값을 first, 그 앞의 값을 second에 넣고 작업하고,
+            //이후 한칸씩 앞으로 움직이며, first, second에 집어넣는거 같다.       
         }
-        return sum;
+    };
+    Collections.sort(list, comparator); 
+    */          
+    Collections.sort(list, (first, second) -> first[0] - second[0]);
+    
+    //데이터타입이 트리셋인 y_positions를 어레이리스트로 변환한다.
+    n_y_positions = new ArrayList<Integer>(y_positions);
+    
+    /*세그먼트 트리의 맨 아래층이 한곳이라도 비지않게 표현하려면, 
+    아래와 같이 루트노드의 숫자가 나타내는 n_y_positions의 index범위의 
+    크기가 2,4,8,...2^n개의 형태가 되어야한다.
+    
+        #0
+        0-1
+       /   \        => 새그먼트 트리의 크기 = (2^2) -1 = 3
+      #1   #2 
+     0-0   1-1
+     
+         #0
+         0-3
+        /    \
+       #1    #2
+      0-1    2-3    => 새그먼트 트리의 크기 = (2^3) -1 = 7
+     /   \   /  \
+    #3   #4 #5  #6
+   0-0  1-1 2-2 3-3 
+   
+         ...
+   */        
+    for(int i=0; i<y_positions.size(); i++)
+    {
+        map.put(n_y_positions.get(i), i);    
+        if(!(vol/2 <= n_y_positions.size()-1 && n_y_positions.size()-1 < vol))
+        {
+            vol *=2;                
+        }
+    }
+    
+    //배열 선언시, 따로 값을 넣어주지 않으면 0으로 초기화가 된다.
+    //seg의 크기는 vol의 2배에서 하나가 적게 설정한다.
+    //(그래야 세그먼트트리 온전히 구성 가능하다.)
+    
+    //주의!!
+    //int[] seg로 선언할 경우, 계산해야할 직사각형의 넓이가 크다면
+    //int범위를 벗어난 숫자가 seg의 원소로 들어갈 수 있기 때문에
+    //오류 발생 가능성이 있다.
+    seg = new long[2*vol-1];
+    spanning = new int[2*vol-1];
+    int prev_x = 0;
+    long sum=0;
+    for(int j=0; j<list.size(); j++)
+    {
+        sum += (list.get(j)[0] - prev_x) * seg[0];       
+        /*
+        아래와 같이 코딩시,n_y_positions에서 list.get(j)[1]의 인덱스를 
+        찾는것에 시간이 많이 소모된다.(효율성 테스트 탈락의 원인)
+        n_y_positions.indexOf(list.get(j)[1])+1;  
+        */
+        renewal(0,0,vol-1,map.get(list.get(j)[1])+1,map.get(list.get(j)[2]),list.get(j)[3]);
+        prev_x = list.get(j)[0];
+    }    
+    return sum;
+}
 
+void renewal(int idx, int renewed_start, int renewed_end, int start, int end, int incre)
+{
+    //renewed_start,renewed_end와 start,end의 범위가 겹치지 않는 경우
+    if(renewed_end < start || end < renewed_start)
+    {
+        return;
+    }     
+    
+    //start,end의 범위안에 renewed_start,renewed_end가 있는 경우
+    else if(start<=renewed_start && renewed_end<=end)
+    {
+        spanning[idx] += incre;
+    }
+    
+    //renewed_start,renewed_end와 start,end의 범위가 일부 겹치는 경우
+    else
+    {
+        int center = (renewed_start+renewed_end)/2;
+        renewal(2*idx+1,renewed_start,center, start, end, incre);
+        renewal(2*idx+2,center+1,renewed_end, start, end, incre);
+    }      
+    
+    //n_y_positions의 인덱스 temp[1]와 temp[2]에 걸친 공간이 점유되었는지 판단한다.
+    if(spanning[idx] != 0)
+    {
+        seg[idx] = n_y_positions.get(renewed_end) - n_y_positions.get(renewed_start-1);
     } 
     
-    class vertical_length implements Cloneable
+    //n_y_positions의 인덱스 temp[1]와 temp[2]에 걸친 공간이 점유되어있지 않다.
+    //&& idx가 vol-1보다 작으면 seg[idx]의 값을 자식 노드의 합으로 구성한다.        
+    else if(idx >= vol-1)
     {
-        int[] position = new int[2];
-        //서로 다른 배열이, 같은 성분들로 구성되어 있을경우 비교하기위한 코딩        
-
-        //hashCode는 각 객체의 주소값을 반환하여 생성한 객체의 고유 정수값.
-        //hashCode 오버라이딩,주소값이 다르나, 구성 요소들이 동일한 객체에 hashCode를 
-        //같게 오버라이딩 해줌으로써,equals가 제대로 수행가능하게 해준다.
-        @Override
-        public int hashCode() 
-        {
-            //Objects,hash(Object... values) 메서드  => 매개 값으로 주어진 값들을 이용해서 해시 코드를 생성한다.
-            //hashcode                              => 객체를 식별하기위한 정수값
-            //return Objects.hash(position);
-            return Objects.hash(this.position[0],this.position[1]);
-        }
-
-        //equals 오버라이딩
-        
-        //hash 값을 사용하는 Collection(HashMap, HashSet, HashTable)등에서
-        //.add()메소드등을 실행할 경우가 있다. 기존 구성요소와 추가되는 객체의 중복여부를
-        //확인하기 위해 아래와 같은 과정을 거처야 한다.
-        //1)비교하는 두 객체의 hashCode()메소드 리턴값이 같아야 한다
-        //  (Object 클래스의 hashCode 메소드는 객체의 고유한 주소 값을 
-        //  int 값으로 변환하기 때문에 객체마다 다른 값을 리턴)
-        //2)equals 메서드의 리턴 값이 true여야 논리적으로 같은 객체라고 판단
-        @Override
-        public boolean equals(Object obj) 
-        {                 
-            //equals의 인자로 받은 obj가 vertical_length의 인스턴스인지 확인한다.
-            if(obj instanceof vertical_length) 
-            {
-                //Object 타입의 자료형을, vertical_length로 다운캐스팅 한다.
-                vertical_length comp = (vertical_length)obj;
-            
-                //array1.equals(array2), array1 == array2   => 두 배열이 같은 객체인지를 비교한다.
-                //Arrays.equals(array1,array2)              => 두 배열의 내용물들이 같은지를 비교한다.
-                return Arrays.equals(this.position, comp.position);
-                //return this.position[0] == comp.position[0] && this.position[1] == comp.position[1];
-            }
-            else
-            {             
-                return false;
-            }
-        }
-        
-        
-        @Override
-        /*
-            vertical_length는 내가 정의한 클래스로, Object 클래스와 상속관계가 
-            없기 때문에 오버라이딩 없이 clone()메소드 사용할 수 없다.
-            => vertical_length의 객체에 대해 깊은복사 기능을 사용하기 위해서 
-               clone() 메소드를 오버라이딩하고,접근 제어자를 Public으로 바꾼다.
-            (참고 : Object.java에서 아래와 같이 clone()이 정의되어 있다.
-            protected native Object clone() throws CloneNotSupportedException;)      
-            https://velog.io/@roro/Java-Object-%ED%81%B4%EB%9E%98%EC%8A%A4-clone
-        */
-        public vertical_length clone() 
-        {
-            Object obj = null;
-            try 
-            {
-                //super는 자식 클래스가 부모 클래스로부터 상속받은 멤버를 참조할 때 사용하는 참조 변수
-                obj = super.clone();
-            } 
-            catch (CloneNotSupportedException e) 
-            {
-            }
-            return (vertical_length)obj;
-        }        
-        
-    }    
+        seg[idx] = 0;
+    } 
+    
+    //n_y_positions의 인덱스 temp[1]와 temp[2]에 걸친 공간이 점유되어있지 않다.
+    //&& idx가 vol-1이상이다.         
+    else
+    {
+        seg[idx] = seg[2*idx+1] + seg[2*idx+2];
+    }
+	} 
 }
 ```
+실행결과![test](../../images/2022-05-31-rectangles3/test.png){: width="100%" height="100%"}![result](../../images/2022-05-31-rectangles3/result.png){: width="100%" height="100%"} 
