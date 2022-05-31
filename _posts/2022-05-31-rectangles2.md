@@ -226,4 +226,4 @@ class Solution
 }
 ```
 
-실행결과![test](../../images/2022-05-31-rectangles2/test.png){: width="100%" height="100%"}![result](../../images/2022-05-31-rectangles2/result.png){: width="100%" height="100%"} 저번과 다르게 효율성 테스트에서 하나만 빼고 다 성공했다. 코드를 개선했음에도 불구하고, 시간 초과가 된것은 아마 Queu와 Stack에 값을 넣고 빼는 과정에서 많은 시간이 소요된것으로 보인다.
+실행결과![test](../../images/2022-05-31-rectangles2/test.png){: width="100%" height="100%"}![result](../../images/2022-05-31-rectangles2/result.png){: width="100%" height="100%"} 저번과 다르게 효율성 테스트에서 하나만 빼고 다 성공했다. Queu와 Stack에 값을 넣고 빼는 과정에서 많은 시간이 소요된것이 시간초과의 원인이 된것같다.
