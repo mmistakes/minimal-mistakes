@@ -11,7 +11,7 @@ tags:
  - open
 published: true
 header:
-  teaser: "/assets/images/lsh.svg"
+  teaser: "/assets/images/containment.jpg"
 ---
 
 <script type="application/ld+json">
@@ -20,17 +20,7 @@ header:
   "@type" : "JobPosting",
   "title" : "Postdoctoral Fellow in locality sensitive hashing for petabyte-scale metagenomic search",
   "description" : "<h1 id="scientific-challenge">Scientific Challenge</h1>
-<p>The Sequence Read Archive (SRA) is a repository for the world’s public unassembled
-genomics data—currently ~40 Petabytes of data. There is not currently a method
-of finding samples in SRA that contain reads similar to a search sequence. SRA
-search would enable us to monitor sequences for pathogen emergence, find novel
-gene homologs and more. Hyper log-log sketching is a method of locality
-sensitive hashing that could potentially be used to index SRA data and allow
-for fast search. But a current challenge with hyper log-log search is that the
-precision and recall vary greatly by sample. This work will develop a statistical model to
-index sequences in a way that provides balanced precision and recall across
-all SRA samples. We have an infrastructure in place to to large scale indexing
-on the Google Cloud Platform and experience in engineering systems to set up and host a high-profile search tool.</p>
+<p>The Sequence Read Archive (SRA) is a repository for the world’s public unassembled genomics data—currently ~40 Petabytes of data. There is not currently a method of finding samples in SRA that contain reads similar to a search sequence. SRA search would enable us to monitor sequences for pathogen emergence, find novel gene homologs and more. On challenge with conventional kmer seach methods like minhash is that they perform poorly when the query is small and the search set is large, as for example when searching for a virus genome in a metagenomic dataset. Contaiment search (Kosleki and Zabeti 2019) and FracMinHash (Iber et al. 2022) proide a solution to seaching uneven size datasets but a single containment hash search of a dataset as large as SRA could take a day. This project will apply novel indexing and search methods to enable fast containment search of SRA data. The work will help the USDA monitor seqquence data for plant and aniaml pathogens and enable large-scale metagenomc search projects.</p>
 <h1 id="position">Position</h1>
 <p>This postdoc is with the U.S. Department of Agriculture (USDA), Agricultural Research Service (ARS), Genomics and Bioinformatics Research Unit in Gainesville, Florida. Other work locations are also possible. It is part of the SCINet/Big Data Fellows Program of the USDA ARS offers research opportunities to motivated postdoctoral fellows interested in working on agricultural-related problems at a range of spatial and temporal scales, from the genome to the continent, and sub-daily to evolutionary time scales. One of the goals of the SCINet Initiative is to develop and apply new technologies, including AI and machine learning, to help solve complex agricultural problems that also depend on collaboration across scientific disciplines and geographic locations. In addition, many of these technologies rely on the synthesis, integration, and analysis of large, diverse datasets that benefit from high performance computing clusters (HPC). The objective of this fellowship program is to facilitate cross-disciplinary, cross-location research through collaborative research on problems of interest to each applicant and amenable to or required by the HPC environment. Training will be provided in specific AI, machine learning, deep learning, and statistical software needed for a fellow to use the HPC to search and analyze large metagenomics datasets.</p>
 <h1 id="usda-ars-contact">USDA-ARS Contact:</h1>
@@ -67,8 +57,8 @@ on the Google Cloud Platform and experience in engineering systems to set up and
     "name": "USDA-ARS",
     "value": "000001"
   },
-  "datePosted" : "2022-05-06",
-  "validThrough" : "2022-06-15T00:00",
+  "datePosted" : "2022-05-31",
+  "validThrough" : "2022-06-30T00:00",
   "applicantLocationRequirements": {
     "@type": "Country",
     "name": "USA"
@@ -105,11 +95,11 @@ on the Google Cloud Platform and experience in engineering systems to set up and
 }
 </script>
 
+{% include figure image_path="/assets/images/containment.jpg" alt="Example of containment search" caption="Image from [(Kosleki and Zabeti 2019)](https://doi.org/10.1016/j.amc.2019.02.018)" %}
 
-![](/assets/images/lsh.svg)
 
 
-We will be filling this position as soon as possible. For full consideration please apply by **June 15, 2022**
+We will be filling this position as soon as possible. For full consideration please apply by **June 30, 2022**
 {: .notice--danger}
 
 # Scientific Challenge
@@ -118,14 +108,15 @@ The Sequence Read Archive (SRA) is a repository for the world's public
 unassembled genomics data---currently ~40 Petabytes of data. There is not
 currently a method of finding samples in SRA that contain reads similar to a
 search sequence. SRA search would enable us to monitor sequences for pathogen
-emergence, find novel gene homologs and more. Hyper log-log sketching is a
-method of locality sensitive hashing that could potentially be used to index SRA
-data and allow for fast search. But a current challenge with hyper log-log
-search is that the precision and recall vary greatly by sample. This work will
-develop a statistical model to index sequences in a way that provides balanced
-precision and recall across all SRA samples. We have infrastructure in place to
-do large-scale indexing on the Google Cloud Platform and experience in
-engineering systems to set up and host a high-profile search tool.
+emergence, find novel gene homologs and more. One challenge with conventional
+kmer seach methods like minhash is that they perform poorly when the query is
+small and the search set is large, for example when searching for a virus
+genome in a metagenomic dataset. Contaiment search [(Kosleki and Zabeti 2019)](https://doi.org/10.1016/j.amc.2019.02.018) and FracMinHash [(Iber et al. 2022)](https://doi.org/10.1101/2022.01.11.475838)
+proide a solution to seaching uneven size datasets but a single containment hash search of a
+dataset as large as SRA could take a day. This project will apply novel indexing
+and search methods to enable fast containment search of SRA data. The work will
+help the USDA monitor seqquence data for plant and aniaml pathogens and
+enable large-scale metagenomc search projects.   
 
 # Position
 
@@ -152,9 +143,11 @@ and analyze large metagenomics datasets.
 
 # USDA-ARS Contact:
 
-If you have questions about the nature of the research, please contact Dr. Adam Rivers, adam.rivers@usda.gov. Lab web site https://tinyecology.com  
+If you have questions about the nature of the research, please contact Dr. Adam Rivers, adam.rivers@usda.gov. Lab web site [https://tinyecology.com](https://tinyecology.com).
 
-Anticipated Appointment Start Date: Start date is flexible and will depend on a variety of factors.
+# Anticipated Appointment Start Date:
+
+Start date is flexible.
 
 # Appointment Length:
 
@@ -189,9 +182,7 @@ We recognize that everyone has a unique mix of skills and welcome applications f
 
 ##  Eligibility Requirements
 
-
 *	Degree: Doctoral Degree.
-
 
 ## Location
 
