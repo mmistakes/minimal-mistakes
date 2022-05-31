@@ -2,7 +2,7 @@
 layout: single
 title:  "직사각형의 넓이3(프로그래머스 Lv5)"
 categories : java
-tag : [프로그래머스 Lv5,좌표압축,세그먼트트리,재귀호출]
+tag : [프로그래머스 Lv5,좌표압축,세그먼트트리,재귀함수]
 search: true #false로 주면 검색해도 안나온다.
 ---
 ![prob1](../../images/2022-05-31-rectangles3/prob1-165399332053831.png){: width="100%" height="100%"}![prob2](../../images/2022-05-31-rectangles3/prob2-165399333868533.png){: width="100%" height="100%"}![prob3](../../images/2022-05-31-rectangles3/prob3-165399335086435.png){: width="100%" height="100%"}
