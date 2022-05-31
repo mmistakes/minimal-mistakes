@@ -12,7 +12,7 @@ search: true #false로 주면 검색해도 안나온다.
 
 ![prob3](../../images/2022-05-31-rectangles/prob3.png){: width="100%" height="100%"}
 
-코드의 작동원리 설명![exp1](../../images/2022-05-31-rectangles/exp1-16539842256466.png){: width="100%" height="100%"}![exp2](../../images/2022-05-31-rectangles/exp2-165398489465116.png){: width="100%" height="100%"}
+코드의 작동원리 설명![exp1](../../images/2022-05-31-rectangles/exp1-16539842256466.png){: width="100%" height="100%"}![exp2](../../images/2022-05-31-rectangles/exp2-165398546204518.png){: width="100%" height="100%"}
 
 
 ```java
