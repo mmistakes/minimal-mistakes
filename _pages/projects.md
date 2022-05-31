@@ -7,7 +7,9 @@ author_profile: true
 ##### Role of coastal vegetation on tsunami energy attenuation
 In this study, we numerically investigated the effect of flexibility of vegetation in tsunami wave energy attenuation implementing a two-way coupling FSI (fluid-structure interaction) model to understand the boundary layer dynamics and hydrodynamics of full-scale three-dimensional tsunami flow to optimize the design of nature-based solutions to reduce the tsunami risk. [Read more](/articles/2022-fsi)
 ##### CFD analysis to study the drag force of blue whale
-We investigated
+Remora is a type of ray finned fish which have front dorsal fins by which they can adhere to the smooth surface, and they can spend their lives by clinging to a large host fish mammal body such as whale, shark etc. Hence to get the understand the adherence mechanism, and why it is important to understand the
+drag mechanism around the whale body and for that we need turbulent boundary layer
+data.
 
 
 <!-- header:
