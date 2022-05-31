@@ -73,7 +73,7 @@ on the Google Cloud Platform and experience in engineering systems to set up and
     "@type": "Country",
     "name": "USA"
   },
-  "eligibilityToWorkRequirement" : "U.S. Citizen",
+  "eligibilityToWorkRequirement" : "U.S. citizens, Lawful Permanent Residents (LPR), and foreign nationals.",
   "jobLocation": {
   "@type": "Place",
   "address": {
@@ -170,7 +170,7 @@ The participant(s) will receive a monthly stipend commensurate with educational 
 
 # Citizenship Requirements
 
-This opportunity is currently available to U.S. citizens only.
+This opportunity is available to U.S. citizens, Lawful Permanent Residents (LPR), and foreign nationals.
 
 # ORISE Information
 
