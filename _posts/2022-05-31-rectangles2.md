@@ -2,7 +2,7 @@
 layout: single
 title:  "직사각형의 넓이2(프로그래머스 Lv5)"
 categories : java
-tag : [프로그래머스 Lv5,스위핑 알고리즘, 좌표압축]
+tag : [프로그래머스 Lv5,좌표압축,세그먼트트리]
 search: true #false로 주면 검색해도 안나온다.
 ---
 ![prob1](../../images/2022-05-31-rectangles/prob1.png){: width="100%" height="100%"}
