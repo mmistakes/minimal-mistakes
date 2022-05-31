@@ -164,4 +164,4 @@ void renewal(int idx, int renewed_start, int renewed_end, int start, int end, in
 	} 
 }
 ```
-실행결과![test](../../images/2022-05-31-rectangles3/test.png){: width="100%" height="100%"}![result](../../images/2022-05-31-rectangles3/result.png){: width="100%" height="100%"} 
+실행결과![test](../../images/2022-05-31-rectangles3/test.png){: width="100%" height="100%"}![result](../../images/2022-05-31-rectangles3/result.png){: width="100%" height="100%"} 직사각형의 넓이2와 전체적인 동작원리는 동일하다. 하지만, Queue와 Stack을 사용하는 대신 재귀호출을 하는 방법을 이용해 시간초과 문제를 완전히 해결하였다.
