@@ -1,4 +1,4 @@
-![prob1](..../images/2022-05-31-rectangles3/prob1-165399332053831.png){: width="100%" height="100%"}![prob2](../../images/2022-05-31-rectangles3/prob2-165399333868533.png){: width="100%" height="100%"}![prob3](../../images/2022-05-31-rectangles3/prob3-165399335086435.png){: width="100%" height="100%"}
+![prob1](../../images/2022-05-31-rectangles3/prob1-165399332053831.png){: width="100%" height="100%"}![prob2](../../images/2022-05-31-rectangles3/prob2-165399333868533.png){: width="100%" height="100%"}![prob3](../../images/2022-05-31-rectangles3/prob3-165399335086435.png){: width="100%" height="100%"}
 
 ```java
 import java.util.*;
