@@ -278,6 +278,4 @@ class vertical_length implements Cloneable
 }
 ```
 
-실행결과![test](../../images/2022-05-31-rectangles/test.png){: width="100%" height="100%"}![result](../../images/2022-05-31-rectangles/result.png){: width="100%" height="100%"}
-
-테스트케이스8개와 정확성 테스트는 통과했지만, 효율성 테스트는 그렇지 못했다. 문제의 접근방법은 틀리지 않았으나 더 효율적인 방법을 찾아봐야 겠다.
+실행결과![test](../../images/2022-05-31-rectangles/test.png){: width="100%" height="100%"}![result](../../images/2022-05-31-rectangles/result.png){: width="100%" height="100%"}테스트케이스8개와 정확성 테스트는 통과했지만, 효율성 테스트는 그렇지 못했다. 문제의 접근방법은 틀리지 않았으나 더 효율적인 방법을 찾아봐야 겠다.
