@@ -1,7 +1,7 @@
 ---
 title: "CFD analysis to study the drag force of blue whale"
 category:
-  - FSI
+  - CFD
 permalink: /articles/2022-fsi
 excerpt: 'We introduce a new data-driven approach for grouping together transcripts in an experiment based on their inferential uncertainty. '
 classes: wide
