@@ -1,6 +1,7 @@
 ---
 permalink: /projects/
 excerpt: "My work history"
+classes: wide
 author_profile: true
 ---
 ##### Role of coastal vegetation on tsunami energy attenuation
