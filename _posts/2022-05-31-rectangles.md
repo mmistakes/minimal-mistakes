@@ -6,11 +6,11 @@ tag : [프로그래머스 Lv5,스위핑 알고리즘, 좌표압축]
 search: true #false로 주면 검색해도 안나온다.
 ---
 
-![prob1](../images/2022-05-31-rectangles/prob1.png){: width="100%" height="100%"}
+![prob1](../../images/2022-05-31-rectangles/prob1.png){: width="100%" height="100%"}
 
-![prob2](../images/2022-05-31-rectangles/prob2.png){: width="100%" height="100%"}
+![prob2](../../images/2022-05-31-rectangles/prob2.png){: width="100%" height="100%"}
 
-![prob3](../images/2022-05-31-rectangles/prob3.png){: width="100%" height="100%"}
+![prob3](../../images/2022-05-31-rectangles/prob3.png){: width="100%" height="100%"}
 
 
 ```java
