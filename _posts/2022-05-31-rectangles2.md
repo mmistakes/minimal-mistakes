@@ -172,6 +172,8 @@ void renewal(int idx, int renewed_start, int renewed_end, int start, int end, in
     {
         seg[idx] = seg[2*idx+1] + seg[2*idx+2];
     }
-} 
+	} 
 }
 ```
+
+실행결과![test](../../images/2022-05-31-rectangles2/test.png){: width="100%" height="100%"}![result](../../images/2022-05-31-rectangles2/result.png){: width="100%" height="100%"}
