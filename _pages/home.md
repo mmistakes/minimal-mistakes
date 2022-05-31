@@ -69,7 +69,7 @@ We are a computational biology research group in [SIPBS](https://www.strath.ac.u
   - Dr Sean Chapman (James Hutton Institute)
   - Dr Tracey Gloster (University of St Andrews)
   - Prof. Gail Preston (University of Oxford)
-- Overaeas
+- International
   - Prof C Titus Brown (UC Davis)
   - Prof Lenwood Heath (Virginia Tech)
   - Prof Boris Vinatzer (Virginia Tech)
