@@ -7,6 +7,7 @@ toc: true
 toc_label: "Table of Contents"
 toc_icon: "book-reader"
 toc_sticky: true
+author: Leighton Pritchard
 ---
 
 A short post with advice for if you're thinking about applying for a PhD in the group, or with Leighton as a supervisor.

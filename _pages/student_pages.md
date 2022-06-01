@@ -8,6 +8,8 @@ toc_icon: "book-reader"
 toc_sticky: true
 ---
 
+Please see the [Group Responsibilities page](/group/responsibilities).
+
 ## General student info
 
 {% for post in site.categories.Student %}

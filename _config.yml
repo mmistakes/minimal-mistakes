@@ -109,8 +109,8 @@ analytics:
 # Site Author
 author:
   name             : "Leighton Pritchard"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Chancellor's Fellow"
+  avatar           : "/assets/images/avatars/lp_avatar_1000x1000.jpg"
+  bio              : "Chancellor's Fellow - PI"
   location         : "University of Strathclyde"
   email            : "leighton.pritchard@strath.ac.uk"
   links:
@@ -123,9 +123,6 @@ author:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/widdowquinn"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/widdowquinn"

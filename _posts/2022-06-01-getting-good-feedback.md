@@ -6,6 +6,7 @@ toc: true
 toc_label: "Table of Contents"
 toc_icon: "book-reader"
 toc_sticky: true
+author: Leighton Pritchard
 ---
 
 ## tldr;
