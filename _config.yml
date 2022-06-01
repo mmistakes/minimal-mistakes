@@ -113,21 +113,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
        url: "https://github.com/Minsoo1036"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-       url: "mailto:pos02043@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-       url: "https://blog.naver.com/key1036"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-       url: "https://twitter.com/Minsoo1036"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-       url: "https://facebook.com/minsoo1036"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-       url: "https://instagram.com/minsoo1036"
 
 # Site Footer
 footer:
@@ -135,15 +120,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
        url: "https://github.com/Minsoo1036"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-       url: "https://twitter.com/Minsoo1036"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-       url: "https://facebook.com/minsoo1036"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-       url: "https://instagram.com/minsoo1036"
 
 
 # Reading Files
