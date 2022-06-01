@@ -1,22 +1,32 @@
 ---
-layout: home
-author_profile: true
+layout: splash
+author_profile: false
 lang: en
+classes: wide
 lang-ref: index
-excerpt: "TermIt is a tool to manage vocabularies, terms and resources in which are the terms defined and used. It is focused on management of terms based on their semantics -- i.e. two 'same' terms in different vocabularies may have different meaning."
----
+excerpt: ""
 
-<!--
+header:
+ overlay_image: /assets/images/front-page.jpg
+ overlay_filter: rgba(38, 38, 38, 0.5)
+ caption: "Photo credit: [**Scott Webb**](https://unsplash.com/@scottweb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [**Unsplash**](http://unsplash.com/)"
+
 feature_row:
-  - image_path: /assets/images/archive/openmic.jpg
+  - image_path: /assets/images/archive/openmic-thumb.jpg
     title: "Open mic sessions"
-    excerpt: "IrRegular meetings every other friday."
+    excerpt: "Tech presentations every other friday."
     btn_label: "Open Mic"
-    btn_class: "btn--info btn--x-large"
+    btn_class: "btn--info"
     url: /open-mic
+  - image_path: /assets/images/teaching/teaching-thumb.jpg #https://unsplash.com/@jdiegoph Diego PH
+    title: "Teaching"
+    excerpt: "Subjects and theses topics."
+    btn_label: "Teaching"
+    btn_class: "btn--info"
+    url: /teaching
 
 ---
-
+<!--
  header:
   overlay_image: /assets/images/front-image.jpg
   overlay_filter: rgba(38, 38, 38, 0.5)
@@ -40,14 +50,34 @@ feature_row:
     title: "Technical details"
     excerpt: "TermIt architecture, interesting libraries used within, or the data model used within TermIt are some of the technical details of the system."
     btn_label: "Introduce me to the details"
-    url: /technical-details
+    url: /technical-details-->
 
-{% include feature_row type="center" %}-->
+We are Knowledge-based and Software Systems Group currently located at the department of computer engineering of the Faculty of Electrotechnical Engineering at Czech Technical University in Prague. Follow our pages to see what is new.
 
+{% include feature_row %}
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
+</div>
+
+{% include paginator.html %}
+
+<!--
 {% include figure image_path="/assets/images/archive/openmic.jpg" alt="Open mic sessions" %}
-[Check open mic sessions]({{ "/open-mic" | relative_url }}){: .btn .btn--info .btn--x--large .align-right} Irregular tech presentations every other friday.
+[Check open mic sessions]({{ "/open-mic" | relative_url }}){: .btn .btn--info .btn--x--large .align-right} Irregular tech presentations every other friday. -->
 
-<!-- 
+<!--
 
 Welcome to the web pages of our group, Knowledge-based and Software Systems Group. Pages are in progress, but below there is a thread of the newest posts, announcing open mic sessions and summing up those already taken. You can also browse through the Projects, Team members and Software we have been developing during past and current research projects. -->
 

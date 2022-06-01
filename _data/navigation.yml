@@ -9,9 +9,9 @@ main:
   - title: "Software" #rename to Software?
     url: /software
     description: "Software developed by the team"
-  - title: "Teaching"
-    url: /teaching
-    description: "Subjects and theses topics"
+  # - title: "Teaching"
+  #   url: /teaching
+  #   description: "Subjects and theses topics"
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
