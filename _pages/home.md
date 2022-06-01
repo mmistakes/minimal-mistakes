@@ -16,7 +16,7 @@ feature_row:
     url: "./group"
     btn_class: "btn--primary"
     btn_label: "Group Info"
-    image_size: "30%"
+    image_size: "20%"
     image_class: "filter-neon-blue"
   - image_path: /assets/fontawesome/svgs/solid/calendar-day.svg
     alt: "group meetings"
@@ -25,7 +25,7 @@ feature_row:
     url: "/group/meetings"
     btn_class: "btn--primary"
     btn_label: "Meetings"
-    image_size: "30%"
+    image_size: "20%"
     image_class: "filter-neon-blue"
   - image_path: /assets/fontawesome/svgs/solid/dice-d20.svg
     alt: "journal club"
@@ -34,7 +34,7 @@ feature_row:
     url: "/group/journal_club"
     btn_class: "btn--primary"
     btn_label: "Journal Club"
-    image_size: "30%"
+    image_size: "20%"
     image_class: "filter-neon-blue"
   - image_path: /assets/fontawesome/svgs/solid/computer.svg
     alt: "hacky hour"
@@ -43,7 +43,7 @@ feature_row:
     url: "/group/hacky_hour"
     btn_class: "btn--primary"
     btn_label: "Hacky Hour"
-    image_size: "30%"
+    image_size: "20%"
     image_class: "filter-neon-blue"
   - image_path: /assets/fontawesome/svgs/solid/graduation-cap.svg
     alt: "student pages"
@@ -52,7 +52,7 @@ feature_row:
     url: "/group/student_pages"
     btn_class: "btn--primary"
     btn_label: "Student Pages"
-    image_size: "30%"
+    image_size: "20%"
     image_class: "filter-neon-blue"
 ---
 
