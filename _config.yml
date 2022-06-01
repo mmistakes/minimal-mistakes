@@ -10,8 +10,8 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-#theme                  : "minimal-mistakes-jekyll"
-#remote_theme           : "mmistakes/minimal-mistakes"
+theme                  : "minimal-mistakes-jekyll"
+remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Minsoo Kim"
 description              : "Statistics, Economics, Machine Learning"
-url                      : "https://minsoo1036.github.io/"
+url                      : "https://minsoo1036.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Minsoo1036/Minsoo1036.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
