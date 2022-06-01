@@ -13,7 +13,7 @@ feature_row:
     alt: "group info"
     title: "Group Info"
     excerpt: "Resources for the research group."
-    url: "https://widdowquinn.github.io/group/"
+    url: "./group"
     btn_class: "btn--primary"
     btn_label: "Group Info"
     image_size: "30%"
