@@ -108,7 +108,7 @@ author:
   avatar           : "/assets/images/meli.png"
   bio              : "Data Scientist at KoreaPDS"
   location         : "Seoul, South Korea"
-  #email            : "pos02043@gmail.com"
+  email            : "pos02043@gmail.com"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
