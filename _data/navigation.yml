@@ -15,13 +15,13 @@ docs:
   - title: Group Pages
     children:
       - title: "Philosophy"
-        url: https://widdowquinn.github.io/group/philosophy
+        url: /group/philosophy
       - title: "Responsibilities"
-        url: https://widdowquinn.github.io/group/responsibilities
+        url: /group/responsibilities
       - title: "Code of Conduct"
-        url: https://widdowquinn.github.io/group/code_of_conduct
+        url: /group/code_of_conduct
       - title: "Group Python Style"
-        url: https://widdowquinn.github.io/group/python_style
+        url: /group/python_style
   - title: Software
     children:
       - title: Group Software Page
