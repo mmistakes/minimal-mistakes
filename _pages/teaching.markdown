@@ -66,6 +66,6 @@ The course is designed as a basic database course mainly aimed at the student ab
 [Subject description from the faculty web](https://fel.cvut.cz/en/education/bk/predmety/50/10/p5010606.html){: .btn .btn--info}
 [Details for students at CourseWare](https://cw.fel.cvut.cz/b{{ currentYear }}1/courses/b0b36dbs/start){: .btn .btn--info}
 
-## Bachelor andf master theses
+## Bachelor and master theses
 
 Topics for student theses are published in the [BPMPC system](https://bpmpc.feld.cvut.cz/dsfel/app/semesterprojecttopic/index.xhtml?all=true&department=14%2C&study=&field=&page=0&filter=), where it may be filtered by title, supervisor etc.
