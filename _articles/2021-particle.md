@@ -2,7 +2,7 @@
 title: "Role of coastal vegetation on tsunami energy attenuation"
 category:
   - FSI
-permalink: /articles/2022-fsi
+permalink: /articles/2021-particle
 date: 2022-04-15
 excerpt: 'We introduce a new data-driven approach for grouping together transcripts in an experiment based on their inferential uncertainty. '
 classes: wide
