@@ -9,7 +9,7 @@ header:
 excerpt: >
     Welcome to the SIPBS Computational Biology group pages
 feature_row:
-  - image_path: /assets/images/icons/group.svg
+  - image_path: /assets/fontawesome/svgs/solid/people-roof.svg
     alt: "group info"
     title: "Group Info"
     excerpt: "Resources for the research group."
@@ -18,7 +18,7 @@ feature_row:
     btn_label: "Group Info"
     image_size: "30%"
     image_class: "filter-neon-blue"
-  - image_path: /assets/images/icons/computer.svg
+  - image_path: /assets/fontawesome/svgs/solid/calendar-day.svg
     alt: "group meetings"
     title: "Group Meetings"
     excerpt: "Group meeting schedule and archive."
@@ -27,7 +27,7 @@ feature_row:
     btn_label: "Meetings"
     image_size: "30%"
     image_class: "filter-neon-blue"
-  - image_path: /assets/images/icons/document-3.svg
+  - image_path: /assets/fontawesome/svgs/solid/dice-d20.svg
     alt: "journal club"
     title: "Journal Club"
     excerpt: "Random Number Generator Bioinformatics Journal Club."
@@ -36,7 +36,7 @@ feature_row:
     btn_label: "Journal Club"
     image_size: "30%"
     image_class: "filter-neon-blue"
-  - image_path: /assets/images/icons/document-3.svg
+  - image_path: /assets/fontawesome/svgs/solid/computer.svg
     alt: "hacky hour"
     title: "Hacky Hour"
     excerpt: "SIPBS Hacky Hour."
