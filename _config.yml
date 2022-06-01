@@ -104,15 +104,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Minsoo Kim"
+  avatar           : "/assets/images/minsoo_profile.jpg"
+  bio              : "Data Scientist at KoreaPDS, pos02043@gmail.com"
+  location         : "Seoul, South Korea"
+  email            : "pos02043@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+       url: "pos02043@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -121,13 +121,13 @@ author:
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+       url: "https://facebook.com/minsoo1036"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+       url: "https://github.com/minsoo1036"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+       url: "https://instagram.com/minsoo1036"
 
 # Site Footer
 footer:
@@ -137,10 +137,10 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+       url: "https://facebook.com/minsoo1036"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+       url: "https://github.com/minsoo1036"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -149,7 +149,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+       url: "https://instagram.com/minsoo1036"
 
 
 # Reading Files
