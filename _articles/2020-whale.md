@@ -16,4 +16,5 @@ Animal-borne video recordings from blue whales in the open ocean show that remor
 ![plot2](/assets/images/vel_profile.png)
 <b>Fig.2 - Velocity can be used in this figure as a first-order qualitative proxy for wall shear stress</b>
 
-For details, please see the paper published from the following link [Remoras pick where they stick on blue whales](https://doi.org/10.1242/jeb.226654)
+For details, please see the paper published from the following link
+[Remoras pick where they stick on blue whales](https://doi.org/10.1242/jeb.226654)
