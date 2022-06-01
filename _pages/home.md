@@ -17,6 +17,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Group Info"
     image_size: "30%"
+    image_class: "filter-neon-blue"
   - image_path: /assets/images/icons/computer.svg
     alt: "group meetings"
     title: "Group Meetings"
@@ -25,6 +26,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Meetings"
     image_size: "30%"
+    image_class: "filter-neon-blue"
   - image_path: /assets/images/icons/document-3.svg
     alt: "journal club"
     title: "Journal Club"
@@ -33,6 +35,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Journal Club"
     image_size: "30%"
+    image_class: "filter-neon-blue"
   - image_path: /assets/images/icons/document-3.svg
     alt: "hacky hour"
     title: "Hacky Hour"
@@ -41,6 +44,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Hacky Hour"
     image_size: "30%"
+    image_class: "filter-neon-blue"
 ---
 
 {% include feature_row %}

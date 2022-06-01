@@ -24,7 +24,7 @@
               {% else %}
                 "{{ f.image_path | relative_url }}"
               {% endif %}
-              alt="{% if f.alt %}{{ f.alt }}{% endif %}" {% if f.image_size %}width="{{f.image_size}}"{% endif %} >
+              alt="{% if f.alt %}{{ f.alt }}{% endif %}" {% if f.image_size %}width="{{f.image_size}}"{% endif %} {% if f.image_class %}class="{{f.image_class}}"{% endif %}>
             {% if f.image_caption %}
               <span class="archive__item-caption">{{ f.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
             {% endif %}
