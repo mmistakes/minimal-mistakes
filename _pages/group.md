@@ -27,7 +27,7 @@ toc_sticky: true
 
 ### Former
 
-- Rory McLeod (PhD, University of Dundee)
+- Rory McLeod (PhD, 2016-2020, University of Dundee)
 - Christelle Robert (PhD, 2006-2009, University of Dundee)
 - Nick Waters (PhD, 2016-2020, NUI Galway)
 - Eirini Xemantilotou (PhD, 2015-2019, University of St Andrews)
@@ -44,10 +44,4 @@ toc_sticky: true
 - [Group responsibilities](/group/responsibilities)
 - [Group Python coding style guidelines](/group/python_style)
 
-## PhD student info
 
-- [**Current Opportunities**](/phd/opportunities){: .btn .btn--success}
-
-{% for post in site.categories.PhD %}
-- {{ post.date | date_to_string }}: [{{ post.title }}]({{ post.url }})
-{% endfor %}
