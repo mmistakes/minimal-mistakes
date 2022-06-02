@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Minsoo Kim"
   avatar           : "/assets/images/meli.png"
-  bio              : "https://github.com/Minsoo1036/CV"
+  bio              : <a href="https://github.com/Minsoo1036/CV">Github Link</a>
   location         : "Seoul, South Korea"
   email            : "pos02043@gmail.com"
   links:
