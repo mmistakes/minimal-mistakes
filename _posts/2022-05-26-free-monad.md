@@ -13,6 +13,10 @@ This piece assumes you're already very comfortable with Scala. If you know a bit
 
 This post was written for Scala 3, but the concepts work almost identically for Scala 2 if you replace [givens with implicits](/givens-vs-implicits/).
 
+If you want to see this article in video form, please watch below:
+
+{% include video id="lzlCjgRWPDU" provider="youtube" %}
+
 ## 1. Introduction
 
 In order to describe the Free monad, we need to understand what a Monad is. We've already written several approaches to it:
