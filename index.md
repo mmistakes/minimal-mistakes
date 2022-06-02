@@ -7,7 +7,7 @@ classes: wide
 author_profile: true
 ---
 
-I'm geophysical fluid dynamicist who is interested in turbulent phenomena. In particular my main
+I'm a geophysical fluid dynamicist who is interested in turbulent phenomena. In particular my main
 foci are small- and submeso-scale turbulence, which I investigate with a numerical approach (usually
 large-eddy simulations). I'm also a big believer in community-driven open-source software as a way
 to improve the reproducibility of results in science.
