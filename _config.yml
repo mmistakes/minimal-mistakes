@@ -15,9 +15,11 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
+future                   : true
 locale                   : "en-US"
 title                    : "Funny Statistics"
 title_separator          : "-"
+published                : true
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Minsoo Kim"
 description              : "Posts with available codes"
