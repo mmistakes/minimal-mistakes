@@ -112,17 +112,17 @@ author:
   bio              : "Data Scientist at KoreaPDS"
   location         : "Seoul, South Korea"
   email            : "pos02043@gmail.com"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-       url: "https://github.com/Minsoo1036"
+  #links:
+  #  - label: "GitHub"
+  #    icon: "fab fa-fw fa-github"
+  #     url: "https://github.com/Minsoo1036"
 
 # Site Footer
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-       url: "https://github.com/Minsoo1036"
+#footer:
+#  links:
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#       url: "https://github.com/Minsoo1036"
 
 
 # Reading Files
