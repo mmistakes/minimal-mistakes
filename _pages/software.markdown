@@ -19,7 +19,7 @@ The KBSS team produces two types of outputs: ontologies and software to maintain
 
 Ontology design is one of our primary research topics. We have built several ontologies as part of our research projects. The most iportant ontologies are here.
 
-### TermIt ontology
+### TermIt Ontology
 
 Ontology to describe resources as they are used in [TermIt](#termit) software. It reuses [Dataset description ontology](#dataset-description-ontology).
 
