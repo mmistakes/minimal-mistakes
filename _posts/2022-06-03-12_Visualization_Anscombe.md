@@ -405,7 +405,7 @@ plt.show()
 ```
 
 
- ![output_6_0](../../images/2022-06-03-12_Visualization_Anscombe/output_6_0.png){: width="100%" height="100%"}
+![output_6_0](../../images/2022-06-03-12_Visualization_Anscombe/output_6_0.png){: width="100%" height="100%"}
 
 ```python
 plt.plot(dataset_3['x'],dataset_3['y'], 'g^')
