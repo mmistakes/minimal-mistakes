@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  [Github] HTTPS와 SSH를 알아보자
+title:  Github> HTTPS와 SSH를 알아보자
 categories: 04_gitgithub
 tag: [github, https, ssh ]
 toc: true
