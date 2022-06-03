@@ -41,11 +41,7 @@ import missingno as msno
 ```
 
 
-
-
     'D:\\kookgi_11gi\\PythonBigData\\workspace'
-
-
 
 
 ```python
@@ -87,8 +83,6 @@ import missingno as msno
     2020-06-17  오후 03:09           131,206 전국_평균_분양가격_2018.6월_.csv
                   24개 파일           1,466,913 바이트
                    2개 디렉터리  958,804,938,752 바이트 남음
-    
-
 
 ```python
 # read_csv() 함수로 읽어들이는 csv 파일이 한글 인코딩 문제로 에러가 발생되서 읽어오지 못할 경우가 있다.
@@ -99,18 +93,12 @@ pre_sale.shape
 ```
 
 
-
-
     (2805, 5)
-
-
 
 
 ```python
 pre_sale.head()
 ```
-
-
 
 
 <div>
@@ -122,7 +110,7 @@ pre_sale.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -184,13 +172,9 @@ pre_sale.head()
 </div>
 
 
-
-
 ```python
 pre_sale.tail()
 ```
-
-
 
 
 <div>
@@ -202,7 +186,7 @@ pre_sale.tail()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -264,14 +248,10 @@ pre_sale.tail()
 </div>
 
 
-
-
 ```python
 # dtypes 속성이나 info() 함수를 이용해서 데이터프레임을 구성하는 데이터 타입을 확인하고 필요하다면 데이터 타입을 변경한다.
 pre_sale.dtypes
 ```
-
-
 
 
     지역명        object
@@ -280,8 +260,6 @@ pre_sale.dtypes
     월           int64
     분양가격(㎡)    object
     dtype: object
-
-
 
 
 ```python
@@ -300,8 +278,6 @@ pre_sale.info()
      4   분양가격(㎡)  2674 non-null   object
     dtypes: int64(2), object(3)
     memory usage: 109.7+ KB
-    
-
 
 ```python
 # 연도와 월은 연산에 사용할 데이터가 아니라 구분에 사용되는 데이터이므로 문자열 형태로 변환한다.
@@ -311,16 +287,12 @@ pre_sale.dtypes
 ```
 
 
-
-
     지역명        object
     규모구분       object
     연도         object
     월          object
     분양가격(㎡)    object
     dtype: object
-
-
 
 
 ```python
@@ -333,8 +305,6 @@ pre_sale.dtypes
 ```
 
 
-
-
     지역명         object
     규모구분        object
     연도          object
@@ -344,13 +314,9 @@ pre_sale.dtypes
     dtype: object
 
 
-
-
 ```python
 pre_sale.head()
 ```
-
-
 
 
 <div>
@@ -362,7 +328,7 @@ pre_sale.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -430,8 +396,6 @@ pre_sale.head()
 </div>
 
 
-
-
 ```python
 # isnull() 또는 isna() 함수와 sum() 함수를 사용해서 누락값이 존재하는가 확인하기
 print(pre_sale.isnull().sum())
@@ -452,8 +416,6 @@ print(pre_sale.isna().sum())
     분양가격(㎡)    223
     평당분양가격     223
     dtype: int64
-    
-
 
 ```python
 # missingno 라이브러리로 그래프를 그려서 누락값 확인하기 => 중간 중간에 흰색으로 보이는 부분이 누락값이다.
@@ -461,20 +423,13 @@ msno.matrix(pre_sale, figsize=[10, 6])
 plt.show()
 ```
 
-
-    
-![png](output_14_0.png)
-    
-
-
+![output_14_0](../../images/2022-06-03-Data_Analysis_1/output_14_0.png){: width="100%" height="100%"}
 
 ```python
 # 2017년 데이터만 추출한다.
 pre_sale_2017 = pre_sale[pre_sale['연도'] == '2017']
 pre_sale_2017
 ```
-
-
 
 
 <div>
@@ -486,7 +441,7 @@ pre_sale_2017
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -609,13 +564,9 @@ pre_sale_2017
 </div>
 
 
-
-
 ```python
 pre_sale['지역명'].value_counts() # 시도별 데이터가 동일하게 저장되어 있다.
 ```
-
-
 
 
     전북    165
@@ -638,13 +589,9 @@ pre_sale['지역명'].value_counts() # 시도별 데이터가 동일하게 저�
     Name: 지역명, dtype: int64
 
 
-
-
 ```python
 pre_sale['규모구분'].value_counts() # 규모구분별 데이터가 동일하게 저장되어 있다.
 ```
-
-
 
 
     전체                   561
@@ -653,8 +600,6 @@ pre_sale['규모구분'].value_counts() # 규모구분별 데이터가 동일하
     전용면적 102㎡초과          561
     전용면적 85㎡초과 102㎡이하    561
     Name: 규모구분, dtype: int64
-
-
 
 전국 평균 분양 가격
 
@@ -673,8 +618,6 @@ pre_sale.groupby(pre_sale['연도']).describe()
 ```
 
 
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -684,11 +627,11 @@ pre_sale.groupby(pre_sale['연도']).describe()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead tr th {
         text-align: left;
     }
-
+    
     .dataframe thead tr:last-of-type th {
         text-align: right;
     }
@@ -821,14 +764,10 @@ pre_sale.groupby(pre_sale['연도']).describe()
 </div>
 
 
-
-
 ```python
 # describe() 함수 실행 결과에 'T' 속성을 지정하면 요약 통계량이 전치되서 수직 방향으로 출력된다.
 pre_sale.groupby(pre_sale['연도']).describe().T 
 ```
-
-
 
 
 <div>
@@ -840,7 +779,7 @@ pre_sale.groupby(pre_sale['연도']).describe().T
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -974,8 +913,6 @@ pre_sale.groupby(pre_sale['연도']).describe().T
   </tbody>
 </table>
 </div>
-
-
 
 
 ```python
@@ -983,8 +920,6 @@ pre_sale.groupby(pre_sale.연도).describe().T
 ```
 
 
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -994,7 +929,7 @@ pre_sale.groupby(pre_sale.연도).describe().T
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1128,8 +1063,6 @@ pre_sale.groupby(pre_sale.연도).describe().T
   </tbody>
 </table>
 </div>
-
-
 
 전국 규모별 평균 분양 가격
 
@@ -1145,8 +1078,6 @@ pre_sale.pivot_table('평당분양가격', '규모구분', '연도')
 ```
 
 
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1156,7 +1087,7 @@ pre_sale.pivot_table('평당분양가격', '규모구분', '연도')
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1219,16 +1150,12 @@ pre_sale.pivot_table('평당분양가격', '규모구분', '연도')
 </div>
 
 
-
-
 ```python
 # 규모구분이 전체로 되어있는 금액으로면 연도별 변동 금액을 살펴보자
 # 규모구분이 전체인 데이터만 추출한다.
 region_year_all = pre_sale[pre_sale['규모구분'] == '전체']
 region_year_all
 ```
-
-
 
 
 <div>
@@ -1240,7 +1167,7 @@ region_year_all
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1363,8 +1290,6 @@ region_year_all
 </div>
 
 
-
-
 ```python
 # regoin_year = region_year_all.pivot_table('평당분양가격', '지역명', '연도')
 region_year = region_year_all.pivot_table('평당분양가격', '지역명', '연도').reset_index()
@@ -1378,8 +1303,6 @@ region_year
     Index(['지역명', '2015', '2016', '2017', '2018'], dtype='object', name='연도')
     연도
     Index(['지역명', '2015', '2016', '2017', '2018'], dtype='object', name='')
-    
-
 
 
 
@@ -1392,7 +1315,7 @@ region_year
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1549,8 +1472,6 @@ region_year
 </table>
 </div>
 
-
-
 전국 지역별 평당분양가격 변동 금액
 
 
@@ -1558,8 +1479,6 @@ region_year
 region_year['변동금액'] = region_year['2018'] - region_year['2015']
 region_year
 ```
-
-
 
 
 <div>
@@ -1571,7 +1490,7 @@ region_year
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1747,8 +1666,6 @@ region_year
 </div>
 
 
-
-
 ```python
 # print(region_year['변동금액'].max())
 # print(np.max(region_year['변동금액']))
@@ -1758,8 +1675,6 @@ print('2015년부터 2018년까지 분양가는 계속 상승했으며, 상승�
 ```
 
     2015년부터 2018년까지 분양가는 계속 상승했으며, 상승금액이 가장 큰 지역은 제주로 상승액은 평당 5,335.6 이다.
-    
-
 
 ```python
 min_delta_price = np.min(region_year['변동금액'])
@@ -1767,11 +1682,7 @@ min_delta_price
 ```
 
 
-
-
     387.7499999999982
-
-
 
 
 ```python
@@ -1780,11 +1691,7 @@ mean_delta_price
 ```
 
 
-
-
     1667.276470588235
-
-
 
 plotnine 패키지를 이용한 시각화
 
@@ -1800,18 +1707,9 @@ ggplot(region_year_all, aes(x='지역명', y='평당분양가격', fill='연도'
     + theme(text=element_text(family='NanumGothicCoding'), figure_size=[10, 6])
 ```
 
-
-    
-![png](output_33_0.png)
-    
-
-
-
-
+![output_33_0](../../images/2022-06-03-Data_Analysis_1/output_33_0.png){: width="100%" height="100%"}
 
     <ggplot: (-9223371876932408660)>
-
-
 
 
 ```python
@@ -1821,26 +1719,15 @@ ggplot(region_year_all, aes(x='지역명', y='평당분양가격', fill='연도'
     + theme(text=element_text(family='NanumGothicCoding'), figure_size=[10, 6]))
 ```
 
-
-    
-![png](output_34_0.png)
-    
-
-
-
-
+![output_34_0](../../images/2022-06-03-Data_Analysis_1/output_34_0.png){: width="100%" height="100%"}
 
     <ggplot: (159922603752)>
-
-
 
 
 ```python
 # 규모별 지역별 평당분양가격 합계
 pre_sale.pivot_table('평당분양가격', '규모구분', '지역명', sum)
 ```
-
-
 
 
 <div>
@@ -1852,7 +1739,7 @@ pre_sale.pivot_table('평당분양가격', '규모구분', '지역명', sum)
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2017,17 +1904,9 @@ ggplot(pre_sale, aes(x='지역명', y='평당분양가격', fill='규모구분')
 ```
 
 
-    
-![png](output_36_0.png)
-    
-
-
-
-
+![output_36_0](../../images/2022-06-03-Data_Analysis_1/output_36_0.png){: width="100%" height="100%"}
 
     <ggplot: (159923720673)>
-
-
 
 
 ```python
@@ -2039,18 +1918,9 @@ ggplot(pre_sale, aes(x='연도', y='평당분양가격', fill='규모구분')) \
     + theme(text=element_text(family='NanumGothicCoding'), figure_size=[18, 10], axis_text_x=element_text(rotation=45))
 ```
 
-
-    
-![png](output_37_0.png)
-    
-
-
-
-
+![output_37_0](../../images/2022-06-03-Data_Analysis_1/output_37_0.png){: width="100%" height="100%"}
 
     <ggplot: (-9223371876934239842)>
-
-
 
 
 ```python
@@ -2061,18 +1931,9 @@ ggplot(pre_sale, aes(x='지역명', y='평당분양가격', fill='규모구분')
     + theme(text=element_text(family='NanumGothicCoding'), figure_size=[10, 6])
 ```
 
-
-    
-![png](output_38_0.png)
-    
-
-
-
-
+![output_38_0](../../images/2022-06-03-Data_Analysis_1/output_38_0.png){: width="100%" height="100%"}
 
     <ggplot: (159922671494)>
-
-
 
 
 ```python
@@ -2080,8 +1941,6 @@ ggplot(pre_sale, aes(x='지역명', y='평당분양가격', fill='규모구분')
 pre_sale_seoul = pre_sale[pre_sale['지역명'] == '서울']
 pre_sale_seoul
 ```
-
-
 
 
 <div>
@@ -2093,7 +1952,7 @@ pre_sale_seoul
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2216,8 +2075,6 @@ pre_sale_seoul
 </div>
 
 
-
-
 ```python
 ggplot(pre_sale_seoul, aes(x='연도', y='평당분양가격', fill='규모구분')) \
     + geom_boxplot() \
@@ -2225,18 +2082,9 @@ ggplot(pre_sale_seoul, aes(x='연도', y='평당분양가격', fill='규모구�
     + theme(text=element_text(family='NanumGothicCoding'), figure_size=[10, 6])
 ```
 
-
-    
-![png](output_40_0.png)
-    
-
-
-
-
+![output_40_0](../../images/2022-06-03-Data_Analysis_1/output_40_0.png){: width="100%" height="100%"}
 
     <ggplot: (-9223371876932144170)>
-
-
 
 
 ```python
@@ -2244,8 +2092,6 @@ ggplot(pre_sale_seoul, aes(x='연도', y='평당분양가격', fill='규모구�
 pre_sale_jeju = pre_sale[pre_sale['지역명'] == '제주']
 pre_sale_jeju
 ```
-
-
 
 
 <div>
@@ -2257,7 +2103,7 @@ pre_sale_jeju
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2380,8 +2226,6 @@ pre_sale_jeju
 </div>
 
 
-
-
 ```python
 ggplot(pre_sale_jeju, aes(x='연도', y='평당분양가격', fill='규모구분')) \
     + geom_boxplot() \
@@ -2389,18 +2233,9 @@ ggplot(pre_sale_jeju, aes(x='연도', y='평당분양가격', fill='규모구분
     + theme(text=element_text(family='NanumGothicCoding'), figure_size=[10, 6])
 ```
 
-
-    
-![png](output_42_0.png)
-    
-
-
-
-
+![output_42_0](../../images/2022-06-03-Data_Analysis_1/output_42_0.png){: width="100%" height="100%"}
 
     <ggplot: (159920748401)>
-
-
 
 
 ```python
@@ -2408,8 +2243,6 @@ ggplot(pre_sale_jeju, aes(x='연도', y='평당분양가격', fill='규모구분
 pre_sale_ulsan = pre_sale[pre_sale['지역명'] == '울산']
 pre_sale_ulsan
 ```
-
-
 
 
 <div>
@@ -2421,7 +2254,7 @@ pre_sale_ulsan
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2544,8 +2377,6 @@ pre_sale_ulsan
 </div>
 
 
-
-
 ```python
 ggplot(pre_sale_ulsan, aes(x='연도', y='평당분양가격', fill='규모구분')) \
     + geom_boxplot() \
@@ -2553,35 +2384,6 @@ ggplot(pre_sale_ulsan, aes(x='연도', y='평당분양가격', fill='규모구�
     + theme(text=element_text(family='NanumGothicCoding'), figure_size=[10, 6])
 ```
 
-
-    
-![png](output_44_0.png)
-    
-
-
-
-
+![output_44_0](../../images/2022-06-03-Data_Analysis_1/output_44_0.png){: width="100%" height="100%"}
 
     <ggplot: (159922955952)>
-
-
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
