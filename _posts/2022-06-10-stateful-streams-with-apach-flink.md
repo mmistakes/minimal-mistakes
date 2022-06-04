@@ -33,7 +33,7 @@ Every new order is written into an **orders** topic and the same applies for eac
 We treat **users** and **items** topics as **changelog** streams - this means that the events written in those topics will be 
 a <key, value> pair and for each unique key we are only interested in the latest value.
 
-For example if `user1` updates the phone number we are ony interested in the latest updated value. The same goes for a product.
+For example if **user1** updates the phone number we are ony interested in the latest updated value. The same goes for a product.
 We will consider these **changelog** topics as our **state**.
 
 A common use case in streaming systems is combining data from different topics, in order to perform some kind of data validation or data enrichment.
