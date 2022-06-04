@@ -540,14 +540,14 @@ even though our source streams haven't read any new records.
 This means the state is restored from the checkpoint and flink knows how to rebuild it without replaying all the events from the topics.
 
 ## Additional Resources
-- RockTheJvm Apache Flink Course: https://rockthejvm.com/p/flink
-- Apache Pulsar Documentation:
-   - Pulsar Overview: https://pulsar.apache.org/docs/concepts-overview/
-   - Pulsar Producers: https://pulsar.apache.org/docs/concepts-messaging/
-- Streamnative Academy:
-   - Apache Pulsar Fundamentals: https://www.academy.streamnative.io/courses/course-v1:streamnative+AP101+UNLM/about
-   - Pulsar API Essentials - Java https://www.academy.streamnative.io/courses/course-v1:streamnative+AP101-Lab+UNLM/about
-- Apache Pulsar Ebooks: https://streamnative.io/ebooks/
-- Using RocksDB State Backend in Apache Flink: When and How: https://flink.apache.org/2021/01/18/rocksdb.html
-- Apache Flink Restart Strategies: https://kartikiyer.com/2019/05/26/choosing-the-correct-flink-restart-strategy-avoiding-production-gotchas/
-- Apache Flink Checkpoints: https://nightlies.apache.org/flink/flink-docs-master/docs/ops/state/checkpoints/
+- **RockTheJvm Apache Flink Course:** https://rockthejvm.com/p/flink
+- **Apache Pulsar Documentation:**
+   - **Pulsar Overview:** https://pulsar.apache.org/docs/concepts-overview/
+   - **Pulsar Producers:** https://pulsar.apache.org/docs/concepts-messaging/
+- **Streamnative Academy:**
+   - **Apache Pulsar Fundamentals:** https://www.academy.streamnative.io/courses/course-v1:streamnative+AP101+UNLM/about
+   - **Pulsar API Essentials - Java:** https://www.academy.streamnative.io/courses/course-v1:streamnative+AP101-Lab+UNLM/about
+- **Apache Pulsar Ebooks:** https://streamnative.io/ebooks/
+- **Using RocksDB State Backend in Apache Flink:** When and How: https://flink.apache.org/2021/01/18/rocksdb.html
+- **Apache Flink Restart Strategies:** https://kartikiyer.com/2019/05/26/choosing-the-correct-flink-restart-strategy-avoiding-production-gotchas/
+- **Apache Flink Checkpoints:** https://nightlies.apache.org/flink/flink-docs-master/docs/ops/state/checkpoints/
