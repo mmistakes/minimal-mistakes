@@ -20,7 +20,7 @@ sidebar:
 
 # HTTPS와 SSL 모두 보안을 위한 protocol
 
-1. HTTPS()**:** 단순하게 사용자의 id, pw로 인증하는 것. 보안용 protocol인 SSL(Secure Sockets Layer)로 통신을 암호화한단다. 2018년 7월부터 모든 website는 SSL인증서를 설치하여 연결을 암호화한다. 
+1. HTTPS(Hyper Text Transfer Protocol)**:** 단순하게 사용자의 id, pw로 인증하는 것. 보안용 protocol인 SSL(Secure Sockets Layer)로 통신을 암호화한단다. 2018년 7월부터 모든 website는 SSL인증서를 설치하여 연결을 암호화한다. 
 2. SSH(Secure Shell)**:**  내 pc에 있는 public key로 인증하는 것. 이걸 사용하면 repo에 접근할 때 passphrase 없이 생성한 SSH Key를 사용하면 id, pw 입력 안해도 안전하게 data를 주고받을 수 있다. 
     
     SSH key를 만드는 방법(다른사람 블로그참고): [https://www.lainyzine.com/ko/article/creating-ssh-key-for-github/](https://www.lainyzine.com/ko/article/creating-ssh-key-for-github/)
@@ -43,3 +43,11 @@ sidebar:
     2. command 창을 .ssh가 있는 쪽으로 옮기고, ssh-keygen -f id_rsa -p 명령어를 입력해주고 새로 passphrase를 입력해주면 된다. 기존의 passphrase를 입력 후 새로운 passphrase에 그냥 엔터를 치면 된다. 
 
  <img src = "/assets/img/bongs/https_ssh.png">
+
+# HTTP와 HTTPS의 차이점 
+
+1. HTTP(Hyper Text Transfer Protocol): SERVER와 client 간 data를 주고받는 protocol. 하지만 SERVER와 client 간의 통신에 별다른 보안 조치가 없기 때문에 만약 누가 network 신호를 가로채면 그대로 외부로 노출됨
+2. HTTPS(Hyper Text Transfer Protocol Secure): 아래 그림처럼 주소창에 자물쇠 표시를 볼 수 있다. HTTPS가 적용된다는걸 알려주는 표시. 
+    어떤 식으로 보안이슈를 해결? 
+        기존의 HTTP protocol은 전송계층의 TCP 위에서 동작하는데, 여기에 SSL(Secure Sockets Layer)이라는 보안 계층 위에 HTTP를 얹어서 보장된 통신을 하는 protocol이다. 
+ <img src = "/assets/img/bongs/https.png">
