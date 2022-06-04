@@ -168,7 +168,7 @@ a new partitioned topic and transfer all the data to this new topic.
 
 ## 1. Reading data from Pulsar
 With our setup in place, let's see the implementation now.
-First we will run the producers to simulate some `users` and `items` created in our system.
+First we will run the producers to simulate some **users** and **items** created in our system.
 You can find the producer code [here](https://github.com/polyzos/pulsar-flink-stateful-streams/blob/main/src/main/java/io/ipolyzos/producers/LookupDataProducer.java)
 The producer code should be pretty straightforward, but if you are not familiar with Pulsar producers you can take a look at the resources provided at the end of the blog post.
 After running the producer you should see an output similar to the following:
@@ -200,7 +200,7 @@ There are a few things to highlight here:
 1. We need to provide the service and admin urls (the ones we exposed also on our docker compose file).
 2. Start Cursor is the position we want to start consuming messages from. Earliest indicates we want to start consuming messages from the beginning of the topic.
 3. The topic name, the name of the subscription and also the type of the subscription. You can find more information around Pulsar Subscription Types [here](https://pulsar.apache.org/docs/2.3.2/concepts-messaging/#subscription-types)
-4. Finally, we need to provide what type of schema we wish to consume. In this example it's of type String, but we will use `JsonSchema` for our implementation.
+4. Finally, we need to provide what type of schema we wish to consume. In this example it's of type String, but we will use **JsonSchema** for our implementation.
 
 The following code snippet shows how to connect to our topics and print the, but you can find the complete code [here](https://github.com/polyzos/pulsar-flink-stateful-streams/blob/main/src/main/java/io/ipolyzos/compute/v1/EnrichmentStream.java)
 ```java
@@ -233,7 +233,7 @@ The following code snippet shows how to connect to our topics and print the, but
         );
 ```
 We will also create a Watermark strategy for our orders input data stream to handle late order events.
-Event Time with be tracked by the creation time within the `Order` event.
+Event Time with be tracked by the creation time within the **Order** event.
 ```java
 WatermarkStrategy<Order> watermarkStrategy =
                 WatermarkStrategy.<Order>forBoundedOutOfOrderness(Duration.ofSeconds(5))
@@ -244,7 +244,7 @@ WatermarkStrategy<Order> watermarkStrategy =
 The last step is to actually package and deploy our code on our cluster.
 To make it easier we can use the helper script [here](https://github.com/polyzos/pulsar-flink-stateful-streams/blob/main/deploy.sh).
 Run `./deploy.sh` and navigate to the terminal we run the `docker-compose up` command.
-Give it a few seconds and then the job should be deployed and now we can run the `OrdersDataSource` found [here](https://github.com/polyzos/pulsar-flink-stateful-streams/blob/main/src/main/java/io/ipolyzos/producers/OrdersDataSource.java)
+Give it a few seconds and then the job should be deployed and now we can run the **OrdersDataSource** found [here](https://github.com/polyzos/pulsar-flink-stateful-streams/blob/main/src/main/java/io/ipolyzos/producers/OrdersDataSource.java)
 to produce some events in our system.
 Running the producer and checking the logs on your terminal logs, you should see something similar to this:
 ```shell
@@ -305,12 +305,14 @@ public class UserLookupHandler extends CoProcessFunction<Order, User, OrderWithU
     }
 }
 ```
-We extend the `CoProcessFunction` that processes elements of two input streams (here users and orders) and produces a single output (here OrderWithUserData).
+
+We extend the **CoProcessFunction** that processes elements of two input streams (here users and orders) and produces a single output (here OrderWithUserData).
 The function will be called for every event coming from each input streams and can produce zero or more output elements.
-Note that for each `user` record we receive we use the **Value<User>** state in order to store it.
+Note that for each **user** record we receive we use the **Value<User>** state in order to store it.
 Then for every incoming order to try and "query" this state and if there is a matching key we enrich the order event.
 (Later we deal with missing state scenarios and how we can handle scenarios them).
-The implementation for enriching with `Item` values is similar:
+The implementation for enriching with **Item** values is similar:
+
 ```java
 public class ItemLookupHandler extends CoProcessFunction<OrderWithUserData, Item, EnrichedOrder> {
     private static final Logger logger = LoggerFactory.getLogger(UserLookupHandler.class);
@@ -356,13 +358,16 @@ public class ItemLookupHandler extends CoProcessFunction<OrderWithUserData, Item
     }
 }
 ```
-You can find a full implementation under the `v2` package [here](https://github.com/polyzos/pulsar-flink-stateful-streams/tree/main/src/main/java/io/ipolyzos/compute/v2).
+
+You can find a full implementation under the **v2** package [here](https://github.com/polyzos/pulsar-flink-stateful-streams/tree/main/src/main/java/io/ipolyzos/compute/v2).
 Let's package and redeploy our application and verify it works.
-**Note** make sure to modify the `deploy.sh` script to point to the updated `v2` version file.
-Following the steps from step 1:
-1. run the `deploy.sh` script
-2. generate some Order events
-3. check the logs 
+**Note** make sure to modify the `deploy.sh` script to point to the updated **v2** version file.
+
+Following our previous steps:
+1. Run the `deploy.sh` script
+2. Generate some **Order** events
+3. Check the logs 
+
 We should see an output similar to this:
 ```shell
 taskmanager_1  | EnrichedOrder(invoiceId=67052, lineItemId=326416, user=User(id=88300, firstName=Davis, lastName=MDavis1997@earthlink.edu, emailAddress=MDavis1997@earthlink.edu, createdAt=1441790913000, deletedAt=-1, mergedAt=-1, parentUserId=-1), item=Item(id=930, createdAt=1388876010000, adjective=, category=module, modifier=, name=module, price=100.0), createdAt=1443643093000, paidAt=1443745976000)
@@ -372,22 +377,25 @@ taskmanager_1  | EnrichedOrder(invoiceId=220846, lineItemId=48384, user=User(id=
 taskmanager_1  | EnrichedOrder(invoiceId=220846, lineItemId=230208, user=User(id=182477, firstName=Powell, lastName=MarinaPowell@mail.com, emailAddress=MarinaPowell@mail.com, createdAt=1485101903000, deletedAt=-1, mergedAt=-1, parentUserId=-1), item=Item(id=2425, createdAt=1372279813000, adjective=, category=apparatus, modifier=, name=apparatus, price=300.0), createdAt=1493699951000, paidAt=1493632923000)
 taskmanager_1  | EnrichedOrder(invoiceId=278358, lineItemId=129026, user=User(id=97081, firstName=Adebayo, lastName=SunitaAdebayo@inbox.info, emailAddress=SunitaAdebayo@inbox.info, createdAt=1446040475000, deletedAt=-1, mergedAt=-1, parentUserId=-1), item=Item(id=3435, createdAt=1373472723000, adjective=industrial-strength, category=widget, modifier=cleaner, name=industrial-strength widget cleaner, price=5.4), createdAt=1453951447000, paidAt=1454087954000)
 ```
-We have successfully enriched our `Orders` records with `User` and `Items` data.
-With this implementation in place there are two questions we need to address:
+
+We have successfully enriched our **Orders** events with **User** and **Items** information.
+At this point there are two questions we need to address:
 1. How can we investigate records that have no matching user and/or item record id?
 2. Our state is kept in memory so how can we handle state too large to fit in memory?
-
-Let's see how can address these questions.
+Let's see how can achieve this.
 
 ## 3. Using Side Outputs for missing state.
-Working with Distributed Systems we also want to deal with the "Unhappy Paths", i.e with unexpected behaviors.
-When an order is submitted we assume that the information for the user as well as with the purchased item are always present, but can we be 100% on that?
-For peace of mind we will use Flink's [Side Outputs](https://nightlies.apache.org/flink/flink-docs-master/docs/dev/datastream/side_output/).
-You can think of Side Outputs like a branch of a stream where you can redirect records that don't comply with your processing logic
+Working with Distributed Systems we want to be able to handle the "Unhappy Paths", i.e an unexpected behavior within our system.
+When an order is submitted we assume the information for the user and a purchased item are always present, but can we be guarantee this is always the case?
+
+In order to have more visibility we introduce Flink's [Side Outputs](https://nightlies.apache.org/flink/flink-docs-master/docs/dev/datastream/side_output/).
+You can think of Side Outputs like a branch of a stream you can use to redirect events that don't comply with your expected behavior
 and need to be propagated to a different output downstream, like printing them to the console, another Pulsar topic or a database.
-By doing this, if for some reason we hit a scenario that a user or item event is missing we can propagate the order event downstream.
+
+Doing this, if we hit a scenario that a user or item event is missing we can propagate the order event downstream.
 We might not be sure why this happened but at least we have visibility that it happened and can investigate more. 
-Using Side Outputs is pretty straight forward. First we need to modify our process function logic:
+Using Side Outputs is pretty to use.
+First we need to modify our process function logic:
 ```java
 public class UserLookupHandler extends CoProcessFunction<Order, User, OrderWithUserData> {
     private static final Logger logger = LoggerFactory.getLogger(UserLookupHandler.class);
@@ -431,8 +439,10 @@ public class UserLookupHandler extends CoProcessFunction<Order, User, OrderWithU
     }
 }
 ```
+
 **(1)** We create an OutputTag typed with our output event **OrderWithUserData**.
 **(2)** If a key is not present in our state for a particular id then we add the event to the side output.
+
 We also need to modify our main class to support Side Outputs:
 ```java
     final OutputTag<EnrichedOrder> missingStateTagUsers = new OutputTag<>("missingState#User"){};
@@ -448,19 +458,20 @@ We also need to modify our main class to support Side Outputs:
         .name("MissingItemStateSink")
         .uid("MissingItemStateSink"); 
 ```
-Here we create two side outputs - one for missing user events and one for the items events.
-Then from within the output stream we extract the side outputs and print it.
 
-**[Note:]** It's also worth highlighting the use of `name` and `uid` for each operator.
+Here we create two side outputs - one for missing user and one for item events. Then we extract the side outputs from out output stream and print it.
+
+**[Note:]** It's also worth highlighting the use of **name** and **uid** for each operator.
 Specifying names for your operators can be considered as best practise for your Flink Job
 This is useful to easier identify the operator on the Flink UI and also in cases you need to use savepoints to resume your job, after a code modification or scaling requirement (more on that later.)
-You can find the full implementation under the `v3` package [here](https://github.com/polyzos/pulsar-flink-stateful-streams/tree/main/src/main/java/io/ipolyzos/compute/v3)
+You can find the full implementation under the **v3** package [here](https://github.com/polyzos/pulsar-flink-stateful-streams/tree/main/src/main/java/io/ipolyzos/compute/v3)
 
 We have covered a lot so far. So let's take a moment and walk through the implementation and what we have achieved so far.
+
 As a quick recap:
 1. We have created 3 input sources that consume data from 3 different Pulsar topics
-2. The `orders` topic is a realtime event stream. `Users` and `orders` topics are changelog streams (i.e maintain the last state per key)
-3. We leverage Flink's process function along with Flink's state to enrich the input `orders` event stream `user` and `item` events.
+2. The **orders** topic is a realtime event stream. **Users** and **orders** topics are changelog streams (i.e maintain the last state per key)
+3. We leverage Flink's process function along with Flink's state to enrich the input **orders** event stream **user** and **item** events.
 4. We introduced Side Outputs to handle events with no matching keys in the user or items state.
 In a real life scenario you can't email a user without their email information or before you have verified they have given consent, right?
 
@@ -468,7 +479,7 @@ We are left one open question - how we provide Fault-tolerance guarantees for ou
 We want to account for scenarios that our state grows quite large to fit in memory and/or our job crashes, and we need to recover fast.
 
 ## 4. Making our job Fault Tolerant
-> Checkpoints make state in Flink fault tolerant by allowing state and the corresponding stream positions to be recovered, thereby giving the application the same semantics as a failure-free execution.
+> Checkpoints make state in Flink Fault Tolerant by allowing state and the corresponding stream positions to be recovered, thereby giving the application the same semantics as a failure-free execution.
 
 We can easily enable checkpoints by applying some configuration option. We will enable the required configuration option and along with that
 we will also add a Restart Strategy to let Flink try and restart a job upon an Exception.
