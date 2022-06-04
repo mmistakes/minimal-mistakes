@@ -7,17 +7,20 @@ tags: [pulsar, flink, stateful stream processing]
 excerpt: "We will discuss how you can use Apache Flink's State to combine huge amounts of streams for data validation or enrichment that reside in topics in some upstream streaming storage layer like Apache Pulsar"
 ---
 
-_This article is a collaboration between me (Daniel) and [Giannis Polyzos](https://github.com/polyzos), one of the earliest students of Rock the JVM back in 2017. Giannis is now a senior engineer and a contributor to Apache Pulsar, a promising new toolkit for distributed messaging and streaming. In this piece we combine two of our favorite pieces of tech: Apache Pulsar and Apache Flink._
+_This article is a collaboration between me (Daniel) and [Giannis Polyzos](https://github.com/polyzos), one of the earliest students of Rock the JVM back in 2017. 
+Giannis is now a Senior Engineer and a contributor to Apache Pulsar, a promising new toolkit for distributed messaging and streaming. 
+In this piece we combine two of our favorite pieces of tech: Apache Pulsar and Apache Flink._
 
 ![Alt text](../images/pf1.png "Unified Batch & Streaming")
 
-----
-References to the Flink course and pulsar blog post
-----
+### Prerequisites
+Before we start, some basic familiarity with Apache Pulsar and Apache Flink is required. To better understand the implementation in this blog post 
+we suggest getting familiar with the basic concepts of Apache Pulsar and Apache Flink. See the additional resources' section in the end of the blog post.
 
 ### Introduction
-Typical Data Architectures include a streaming storage layer like Apache Pulsar which serves as the backbone of the infrastructure, combined with a stream computing engine 
-like Apache Flink in order to perform advanced streaming computations. Data often resides inside multiple different topics in a streaming storage layer and it is required to
+Typical Streaming data architectures include a streaming storage layer like Apache Pulsar that serves as the backbone of the infrastructure, combined with a stream computing engine 
+like Apache Flink in order to perform advanced streaming computations that state is required.
+Data often resides inside multiple different topics in a streaming storage layer and it is required to
 combine data from multiple topics in order to have the right context for more advanced analytics or processing. In this blog post we will walkthrough how you can use Apache Flink to
 enrich real time data streams with data that resides into large changelog topics. We will use Apache Pulsar as our streaming storage layer.
 Apache Pulsar and Apache Flink have a strong integration together and enable a Unified Batch and Streaming Architecture. If you are interested about this type of Architecture you can find more [here](https://www.youtube.com/watch?v=2MpiE238Pzw)
@@ -517,5 +520,15 @@ You can see that while we consume new order events, the events actually get enri
 even though our source streams haven't read any new records. 
 This means the state is restored from the checkpoint and flink knows how to rebuild it without replaying all the events from the topics.
 
-## 4. Conclusion
-
+## 4. Additional Resources
+- RockTheJvm Apache Flink Course: https://rockthejvm.com/p/flink
+- Apache Pulsar Documentation:
+   - Pulsar Overview: https://pulsar.apache.org/docs/concepts-overview/
+   - Pulsar Producers: https://pulsar.apache.org/docs/concepts-messaging/
+- Streamnative Academy:
+   - Apache Pulsar Fundamentals: https://www.academy.streamnative.io/courses/course-v1:streamnative+AP101+UNLM/about
+   - Pulsar API Essentials - Java https://www.academy.streamnative.io/courses/course-v1:streamnative+AP101-Lab+UNLM/about
+- Apache Pulsar Ebooks: https://streamnative.io/ebooks/
+- Using RocksDB State Backend in Apache Flink: When and How: https://flink.apache.org/2021/01/18/rocksdb.html
+- Apache Flink Restart Strategies: https://kartikiyer.com/2019/05/26/choosing-the-correct-flink-restart-strategy-avoiding-production-gotchas/
+- Apache Flink Checkpoints: https://nightlies.apache.org/flink/flink-docs-master/docs/ops/state/checkpoints/
