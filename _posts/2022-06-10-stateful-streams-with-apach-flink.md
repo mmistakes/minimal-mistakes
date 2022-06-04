@@ -443,9 +443,8 @@ public class UserLookupHandler extends CoProcessFunction<Order, User, OrderWithU
 }
 ```
 
-**(1)** We create an OutputTag typed with our output event **OrderWithUserData**.
-
-**(2)** If a key is not present in our state for a particular id then we add the event to the side output.
+- **(1)** We create an OutputTag typed with our output event **OrderWithUserData**.
+- **(2)** If a key is not present in our state for a particular id then we add the event to the side output.
 
 We also need to modify our main class to support Side Outputs:
 ```java
