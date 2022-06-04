@@ -539,7 +539,7 @@ You can see that while we consume new order events, the events actually get enri
 even though our source streams haven't read any new records. 
 This means the state is restored from the checkpoint and flink knows how to rebuild it without replaying all the events from the topics.
 
-## 4. Additional Resources
+## Additional Resources
 - RockTheJvm Apache Flink Course: https://rockthejvm.com/p/flink
 - Apache Pulsar Documentation:
    - Pulsar Overview: https://pulsar.apache.org/docs/concepts-overview/
