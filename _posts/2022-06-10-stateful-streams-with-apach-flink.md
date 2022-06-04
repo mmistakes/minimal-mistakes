@@ -395,7 +395,7 @@ In order to have more visibility we introduce Flink's [Side Outputs](https://nig
 You can think of Side Outputs like a branch of a stream you can use to redirect events that don't comply with your expected behavior
 and need to be propagated to a different output downstream, like printing them to the console, another Pulsar topic or a database.
 
-Doing this, if we hit a scenario that a user or item event is missing we can propagate the order event downstream.
+With this approach f we hit a scenario that a user or item event is missing we can propagate the order event downstream.
 We might not be sure why this happened but at least we have visibility that it happened and can investigate more. 
 Using Side Outputs is pretty to use.
 First we need to modify our process function logic:
