@@ -7,7 +7,7 @@ tags: [pulsar, flink, stateful stream processing]
 excerpt: "We will discuss how you can use Apache Flink's State to combine huge amounts of streams for data validation or enrichment that reside in topics in some upstream streaming storage layer like Apache Pulsar"
 ---
 
-_This article is a collaboration between me (Daniel) and [Giannis Polyzos](https://github.com/polyzos), one of the earliest students of Rock the JVM back in 2017. 
+_This article is a collaboration between me (Daniel) and [Giannis Polyzos](https://www.linkedin.com/in/polyzos/), one of the earliest students of Rock the JVM back in 2017. 
 Giannis is now a Senior Engineer and a contributor to Apache Pulsar, a promising new toolkit for distributed messaging and streaming. 
 In this piece we combine two of our favorite pieces of tech: Apache Pulsar and Apache Flink._
 
