@@ -15,7 +15,7 @@ In this piece we combine two of our favorite pieces of tech: Apache Pulsar and A
 
 ### Prerequisites
 Before we start, some basic familiarity with Apache Pulsar and Apache Flink is required. To better understand the implementation in this blog post 
-we suggest getting familiar with the basic concepts of Apache Pulsar and Apache Flink. See the additional resources' section in the end of the blog post.
+we suggest getting familiar with the basic concepts of Apache Pulsar and Apache Flink. See the [`additional resources`](Additional Resources) section.
 
 ### Introduction
 Typical Streaming data architectures include a streaming storage layer like Apache Pulsar that serves as the backbone of the infrastructure.
