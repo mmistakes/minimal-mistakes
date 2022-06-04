@@ -4,7 +4,7 @@ date: 2022-06-10
 header:
 image: "/images/blog cover.jpg"
 tags: [pulsar, flink, stateful stream processing]
-excerpt: "We will discuss how you can use Apache Flink's State to combine huge amounts of streams for data validation or enrichment that reside in topics in some upstream streaming storage layer like Apache Pulsar"
+excerpt: "We will discuss how you can use Apache Pulsar along with Apache Flink to perform Data Enrichment with state from different topics."
 ---
 
 _This article is a collaboration between me (Daniel) and [Giannis Polyzos](https://www.linkedin.com/in/polyzos/), one of the earliest students of Rock the JVM back in 2017. 
@@ -18,12 +18,15 @@ Before we start, some basic familiarity with Apache Pulsar and Apache Flink is r
 we suggest getting familiar with the basic concepts of Apache Pulsar and Apache Flink. See the additional resources' section in the end of the blog post.
 
 ### Introduction
-Typical Streaming data architectures include a streaming storage layer like Apache Pulsar that serves as the backbone of the infrastructure, combined with a stream computing engine 
-like Apache Flink in order to perform advanced streaming computations that state is required.
-Data often resides inside multiple different topics in a streaming storage layer and it is required to
-combine data from multiple topics in order to have the right context for more advanced analytics or processing. In this blog post we will walkthrough how you can use Apache Flink to
-enrich real time data streams with data that resides into large changelog topics. We will use Apache Pulsar as our streaming storage layer.
-Apache Pulsar and Apache Flink have a strong integration together and enable a Unified Batch and Streaming Architecture. If you are interested about this type of Architecture you can find more [here](https://www.youtube.com/watch?v=2MpiE238Pzw)
+Typical Streaming data architectures include a streaming storage layer like Apache Pulsar that serves as the backbone of the infrastructure.
+Stateful stream processing is also required to deliver advance analytics for you users and you want to use a stream computing engine 
+like Apache Flink to handle time based computations especially when large state is required.
+Data often resides inside multiple different topics in a streaming storage layer and its important to be able to combine data from multiple input sources.
+
+In this blog post we will walkthrough how you can use Apache Flink to enrich real time data streams with data that resides into large changelog topics.
+We will use Apache Pulsar as our streaming storage layer.
+Apache Pulsar and Apache Flink have a strong integration together and enable a Unified Batch and Streaming Architecture.
+If you are interested about this type of Architecture you can find more [here](https://www.youtube.com/watch?v=2MpiE238Pzw)
 
 ## Example Use Case
 ![Alt text](../images/pf2.png "Example Use Case")
