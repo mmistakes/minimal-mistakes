@@ -15,7 +15,7 @@ In this piece we combine two of our favorite pieces of tech: Apache Pulsar and A
 
 ### Prerequisites
 Before we start, some basic familiarity with Apache Pulsar and Apache Flink is required. To better understand the implementation in this blog post 
-we suggest getting familiar with the basic concepts of Apache Pulsar and Apache Flink. See the [additional resources](#Additional Resources) section.
+we suggest getting familiar with the basic concepts of Apache Pulsar and Apache Flink. See the [Resources](#Resources) section.
 
 ### Introduction
 Typical Streaming data architectures include a streaming storage layer like Apache Pulsar that serves as the backbone of the infrastructure.
@@ -539,7 +539,7 @@ You can see that while we consume new order events, the events actually get enri
 even though our source streams haven't read any new records. 
 This means the state is restored from the checkpoint and flink knows how to rebuild it without replaying all the events from the topics.
 
-## 4. Additional Resources
+## 4. Resources
 - RockTheJvm Apache Flink Course: https://rockthejvm.com/p/flink
 - Apache Pulsar Documentation:
    - Pulsar Overview: https://pulsar.apache.org/docs/concepts-overview/
