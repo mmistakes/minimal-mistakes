@@ -11,7 +11,6 @@ _This article is a collaboration between me (Daniel) and [Giannis Polyzos](https
 
 ![Alt text](../images/pf1.png "Unified Batch & Streaming")
 
-
 ----
 References to the Flink course and pulsar blog post
 ----
@@ -25,20 +24,27 @@ Apache Pulsar and Apache Flink have a strong integration together and enable a U
 
 ## Example Use Case
 ![Alt text](../images/pf2.png "Example Use Case")
-As an example use case we will consider an online store. Users come online to our store and place orders. Every order is ingested into the `orders` topic and at the same time
-every user registered as well as every item are ingested into the `users` and `items` topics respectively. 
-They contain a unique id which is used as the key for the message written into the topic. 
+Our example use case we be an online store. Users come online and place orders.
+Every new order written into an `orders` topic and the same applies for each newly registered user or product written into the `users` and `items` topics respectively. 
+We will have the `users` and `items` topics as **changelog** streams - this means that the messages written in the topic will be 
+a <key, value> pair and for each unique key we are only interested in the latest value.
+For example if user1 update their phone number, we are ony interested in the latest updated value. The same goes for the items.
+We will consider these **changelog** topics as our **state**.
 One common use case in streaming systems is combining data from different topics, in order to perform some kind of data validation and data enrichment.
-In this blog post we will take a hands-on approach on the following:
+In our particular use case we want to be able to enrich our input `orders` streams with the **state** - i.e grab the user and item information to be
+able to take actions like - sent out an email thanking our user for their purchase, or calculating some reward points to see if 
+they are eligible for a discount coupon or even recommend purchasing something similar to the product
+they bought from a store nearby.
+Our focus on this blog post though is combining data from multiple topics.
+We will take a hands-on approach and better understand how we can:
 1. Connect Apache Pulsar with Flink and verify we can consume messages from these topics
-2. How we can use the low-level Flink processor API in order to handle the `state` data from the `users` and `items` topic in order to enrich the `orders` with user and item information
-3. How to use side-outputs to deal with cases when state is not present and we need to collect these records for further investigation
-4. How we can use rocksdb for handling our state with Flink and not keep it in-memory
-5. How we can recover from failure with checkpoints and restart strategies
-6. How we can resume our Flink job using savepoints.
+2. Use Flink's process functions to perform data enrichment.
+3. Use Side-Outputs to account for scenarios that state is not present, and we want to further investigation the why.
+4. Use RocksDB for large state we can not keep in-memory
+5. Recover from failures with Checkpoints and Restart Strategies
+6. How we can resume our Flink Job using Savepoints.
 
-There is a lot to cover here, so we will build incrementally on the above bullet points and hopefully by the end of the post you will have a better understanding on handling similar use cases.
-Let's jump right into it.
+There is a lot to cover here, so we will build on them incrementally. Let's jump right into it.
 
 ## Pre-Flight Check
 Before we start discussing how we can actually implement our use case let's make sure we have our dependencies in place and our environment setup.
