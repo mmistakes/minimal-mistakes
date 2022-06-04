@@ -9,6 +9,8 @@ excerpt: "This article will continue some of the previous explorations of Scala 
 
 This article will continue some of the previous explorations of Scala 3. Here, we'll discuss some of the new functionality of traits in Scala 3.
 
+This feature (along with dozens of other changes) is explained in depth in the [Scala 3 New Features](https://rockthejvm.com/p/scala-3-new-features) course.
+
 ## 1. Background
 
 Scala traits were originally conceived to be analogous to Java interfaces. Essentially, a trait was a type definition which wrapped a suite of abstract fields and methods. In time, traits acquired additional functionality and features, such as non-abstract fields and methods. This led to some legitimate questions around the [boundary between abstract classes and traits](https://www.youtube.com/watch?v=_7ULjOILxhI).
@@ -66,7 +68,7 @@ class AnnoyingFriend extends BrokenRecord with Talker("politics")
 
 A bit clunky, but that's the only way to make the type system sound with respect to this new capability of traits.
 
-## 3. Super Traits
+## 3. Transparent Traits
 
 The Scala compiler's type inference is one of its most powerful features. However, without enough information, sometimes even the compiler's type inference isn't powerful enough. Here's an example:
 
@@ -83,7 +85,7 @@ Can you guess what the inferred type of `color` is? Spoiler: it's not `Color`.
 
 Which is weird, right? We'd expect the inferred type to be the lowest common ancestor of the two types, Red and Blue. The complete inferred type is `Color with Product with Serializable`. The reason is that both Red and Blue derive from Color, but because they are `case object`s, they automatically implement the traits `Product` (from Scala) and `Serializable` (from Java). So the lowest common ancestor is the combination of all three.
 
-The thing is that we rarely use the traits `Product` or `Serializable` as standalone types we attach to values. So Scala 3 allows us to ignore these kinds of traits in type inference, by making them a `super` trait. Here's an example. Assume we have the following definitions for a graphical library:
+The thing is that we rarely use the traits `Product` or `Serializable` as standalone types we attach to values. So Scala 3 allows us to ignore these kinds of traits in type inference, by making them a `transparent` trait. Here's an example. Assume we have the following definitions for a graphical library:
 
 ```scala3
 trait Paintable
@@ -104,12 +106,12 @@ val color = if (43 > 2) Red else Blue
 then we'd like the type inference to detect `color` as being of type `Color`, not `Color with Paintable`. We can suppress `Paintable` from type inference by marking it with `super`:
 
 ```scala3
-super trait Paintable
+transparent trait Paintable
 ```
 
 After that we'll see that our variable `color` is now marked as `Color`.
 
-When Scala 3 comes out, the traits `Product`, `Comparable` (from Java) and `Serializable` (from Java) will be automatically be treated as super traits in the Scala compiler. Of course, if you mark your value as having a particular type, super traits will not influence the type checker.
+When Scala 3 comes out, the traits `Product`, `Comparable` (from Java) and `Serializable` (from Java) will be automatically be treated as transparent traits in the Scala compiler. Of course, if you mark your value as having a particular type, transparent traits will not influence the type checker.
 
 ## 4. Conclusion
 

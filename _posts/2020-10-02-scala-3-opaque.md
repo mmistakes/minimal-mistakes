@@ -9,7 +9,7 @@ excerpt: "We discover opaque type aliases in Scala 3 and how we can define new t
 
 This article continues the series on Scala 3. I'll assume you're familiar with some of the Scala (version 2) foundations, such as defining basic classes, methods, type aliases.
 
-This article focuses on a small but exciting feature: opaque types.
+This article focuses on a small but exciting feature: opaque types. This feature (along with dozens of other changes) is explained in depth in the [Scala 3 New Features](https://rockthejvm.com/p/scala-3-new-features) course.
 
 ## 1. Background and Motivation
 

@@ -39,7 +39,7 @@ We generally call the types such as `LinkedList` or `Optional` above simply "gen
 
 ```scala3
 val aListOfNumbers: LinkedList[Int] = new LinkedList[Int]
-val aListOfStrings: LinkedList[Int] = new LinkedList[String]
+val aListOfStrings: LinkedList[String] = new LinkedList[String]
 ```
 
 So notice we need to use a level-0 type as a type argument before we can use these new types. The type `LinkedList[Int]` is a value type (level-0), because it can be attached to a value. Because we can only use LinkedList after we pass a level-0 type as argument to it, LinkedList is a higher-level type. I'll call it a level-1 type, because it takes type arguments of the inferior kind.

@@ -10,6 +10,8 @@ This article is for Scala programmers of all levels, although some of the later 
 
 The focus of this article is some of the new kinds of types now allowed in Scala 3.
 
+This feature (along with dozens of other changes) is explained in depth in the [Scala 3 New Features](https://rockthejvm.com/p/scala-3-new-features) course.
+
 ## 1. Literal Types
 
 This feature was technically introduced in Scala 2.13, but we will explore it here in the context of the types we're going to talk about next. In short, Scala is now able to treat literal values as singletons of their own types. Remember <a href="https://rockthejvm.com/blog/type-level-programming-1">type-level programming</a>? We needed to defined each "number" as its own type. Now, Scala can do this by default. The catch is that you'll now have to declare it explicitly:

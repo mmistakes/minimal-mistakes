@@ -14,6 +14,8 @@ As for requirements, two major pieces are important:
 - how implicits work
 - how [given/using combos work](/scala-3-given-using/)
 
+This feature (along with dozens of other changes) is explained in depth in the [Scala 3 New Features](https://rockthejvm.com/p/scala-3-new-features) course.
+
 ## 1. Background
 
 In Scala 2, we had this concept of adding methods to types that were already defined elsewhere, and which we couldn't modify (like String, or Int). This technique was called "type enrichment", which was a bit boring, so people came up with the more tongue-in-cheek "pimping", which bordered on slang-ish, so the term commonly used is "extension methods", because that's what we're doing.
