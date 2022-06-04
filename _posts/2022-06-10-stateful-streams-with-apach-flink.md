@@ -156,15 +156,14 @@ We can run this [script](https://github.com/polyzos/pulsar-flink-stateful-stream
 It will create 3 partitioned topics (orders, users and items) each with one partition and set an infinite retention policy for the **changelog** topics.
 
 **Note:** We use partitioned topics in order to be able to increase the number of partition later, in case we need to scale. Otherwise if we had a not-partitioned topic we would have to create 
-a new partitioned topic and transfer all the data to this new topic. 
-
+a new partitioned topic and transfer all the data to this new topic.
 
 ## 1. Reading data from Pulsar
-We our environment setup let's start addressing our use case.
-As a first step let's run our producers to generate some data into our `users` and `items` topics.
+With our setup in place, let's see the implementation now.
+First we will run the producers to simulate some `users` and `items` created in our system.
 You can find the producer code [here](https://github.com/polyzos/pulsar-flink-stateful-streams/blob/main/src/main/java/io/ipolyzos/producers/LookupDataProducer.java)
 The producer code should be pretty straightforward, but if you are not familiar with Pulsar producers you can take a look at the resources provided at the end of the blog post.
-After running the producer you should see an output similar to the following 
+After running the producer you should see an output similar to the following:
 ```shell
 17:35:43.861 INFO [pulsar-client-io-1-1] io.ipolyzos.producers.LookupDataProducer - ✅ Acked message 35:98:0:26 - Total 2190
 17:35:43.861 INFO [pulsar-client-io-1-1] io.ipolyzos.producers.LookupDataProducer - ✅ Acked message 35:98:0:27 - Total 2191
@@ -175,9 +174,8 @@ After running the producer you should see an output similar to the following
 17:35:43.861 INFO [pulsar-client-io-1-1] io.ipolyzos.producers.LookupDataProducer - ✅ Acked message 35:98:0:32 - Total 2196
 17:35:43.861 INFO [pulsar-client-io-1-1] io.ipolyzos.producers.LookupDataProducer - ✅ Acked message 35:98:0:33 - Total 2197
 ```
-At this point we have populated the `users` and `items` topic with a few records.
-The next step is to create 3 Pulsar-Flink sources that will read data from the `users`, `items` and `orders` topics.
-In order achieve this we will use the Pulsar Flink connector. You can find more information about the connectors [here](https://nightlies.apache.org/flink/flink-docs-release-1.14/docs/connectors/datastream/pulsar/)
+The next step is to create 3 **Pulsar-Flink** sources that will listen and consume events in the topics.
+We will use the Pulsar Flink connector, can find more information about the connectors [here](https://nightlies.apache.org/flink/flink-docs-release-1.14/docs/connectors/datastream/pulsar/)
 The following code snippet show a basic Pulsar-Flink source:
 ```shell
 PulsarSource<String> pulsarSource = PulsarSource.builder()
@@ -190,44 +188,44 @@ PulsarSource<String> pulsarSource = PulsarSource.builder()
     .setSubscriptionType(SubscriptionType.Exclusive)
     .build();
 ```
-There are a few points to highlight here:
+There are a few things to highlight here:
 1. We need to provide the service and admin urls (the ones we exposed also on our docker compose file).
 2. Start Cursor is the position we want to start consuming messages from. Earliest indicates we want to start consuming messages from the beginning of the topic.
 3. The topic name, the name of the subscription and also the type of the subscription. You can find more information around Pulsar Subscription Types [here](https://pulsar.apache.org/docs/2.3.2/concepts-messaging/#subscription-types)
-4. Finally, we need to provide what type of schema we wish to consume. In this example it's of type String, but we will use JsonSchema for our example use-case.
+4. Finally, we need to provide what type of schema we wish to consume. In this example it's of type String, but we will use `JsonSchema` for our implementation.
 
-Now that we have a better understanding of how we can establish a connection to Pulsar topic using the connector let's create 3 connections to our 3 different topics.
-We will also use the `orders` datasource and print the stream in the console so we can verify we can indeed consume messages.
-The following code snippet shows the relevant code for doing that, but you can find the complete code [here](https://github.com/polyzos/pulsar-flink-stateful-streams/blob/main/src/main/java/io/ipolyzos/compute/v1/EnrichmentStream.java)
+The following code snippet shows how to connect to our topics and print the, but you can find the complete code [here](https://github.com/polyzos/pulsar-flink-stateful-streams/blob/main/src/main/java/io/ipolyzos/compute/v1/EnrichmentStream.java)
 ```java
         // 2. Initialize Sources
         PulsarSource<User> userSource =
-        EnvironmentUtils.initPulsarSource(
-        AppConfig.USERS_TOPIC,
-        "flink-user-consumer",
-        SubscriptionType.Exclusive,
-        StartCursor.earliest(),
-        User.class);
+            EnvironmentUtils.initPulsarSource(
+                    AppConfig.USERS_TOPIC,
+                    "flink-user-consumer",  
+                    SubscriptionType.Exclusive,
+                    StartCursor.earliest(),
+                    User.class
+            );
 
         PulsarSource<Item> itemSource =
-        EnvironmentUtils.initPulsarSource(
-        AppConfig.ITEMS_TOPIC,
-        "flink-items-consumer",
-        SubscriptionType.Exclusive,
-        StartCursor.earliest(),
-        Item.class);
+            EnvironmentUtils.initPulsarSource(
+                    AppConfig.ITEMS_TOPIC,
+                    "flink-items-consumer",
+                    SubscriptionType.Exclusive,
+                    StartCursor.earliest(),
+                    Item.class
+        );
 
         PulsarSource<Order> orderSource =
-        EnvironmentUtils.initPulsarSource(
-        AppConfig.ORDERS_TOPIC,
-        "flink-orders-consumer",
-        SubscriptionType.Exclusive,
-        StartCursor.earliest(),
-        Order.class);
-
+            EnvironmentUtils.initPulsarSource(
+                    AppConfig.ORDERS_TOPIC,
+                    "flink-orders-consumer",
+                    SubscriptionType.Exclusive,
+                    StartCursor.earliest(),
+                    Order.class
+        );
 ```
-The final step as you can see in the complete source code file is to create a Watermark strategy for our orders input data stream, so we can handle late order events.
-We will use the creation time of the order as our Event Time, so let's extract it from the payload.
+We will also create a Watermark strategy for our orders input data stream to handle late order events.
+Event Time with be tracked by the creation time within the `Order` event.
 ```java
 WatermarkStrategy<Order> watermarkStrategy =
                 WatermarkStrategy.<Order>forBoundedOutOfOrderness(Duration.ofSeconds(5))
@@ -235,12 +233,12 @@ WatermarkStrategy<Order> watermarkStrategy =
                                 (SerializableTimestampAssigner<Order>) (order, l) -> order.getCreatedAt()
                         );
 ```
-The last step here is to actually package and deploy our code on our cluster.
-In order to achieve this, i have provided a simple helper script, which you can find [here](https://github.com/polyzos/pulsar-flink-stateful-streams/blob/main/deploy.sh).
-All you need to do is run `./deploy.sh` and navigate on your terminal where you have the output logs from the previous `docker-compose up` command we run.
-After a little while the job should be deployed and after that start running the `OrdersDataSource` found [here](https://github.com/polyzos/pulsar-flink-stateful-streams/blob/main/src/main/java/io/ipolyzos/producers/OrdersDataSource.java)
-and you should start seeing some orders on your terminal logs similar to this:
-
+The last step is to actually package and deploy our code on our cluster.
+To make it easier we can use the helper script [here](https://github.com/polyzos/pulsar-flink-stateful-streams/blob/main/deploy.sh).
+Run `./deploy.sh` and navigate to the terminal we run the `docker-compose up` command.
+Give it a few seconds and then the job should be deployed and now we can run the `OrdersDataSource` found [here](https://github.com/polyzos/pulsar-flink-stateful-streams/blob/main/src/main/java/io/ipolyzos/producers/OrdersDataSource.java)
+to produce some events in our system.
+Running the producer and checking the logs on your terminal logs, you should see something similar to this:
 ```shell
 taskmanager_1  | Order(invoiceId=44172, lineItemId=192933, userId=145493, itemId=602, itemName=prize-winning instrument, itemCategory=instrument, price=48.40000000000001, createdAt=1469834917000, paidAt=1469700797000)
 taskmanager_1  | Order(invoiceId=44172, lineItemId=385101, userId=145493, itemId=3362, itemName=matte instrument, itemCategory=instrument, price=55.0, createdAt=1469834917000, paidAt=1469700797000)
@@ -249,7 +247,6 @@ taskmanager_1  | Order(invoiceId=245615, lineItemId=229127, userId=112915, itemI
 taskmanager_1  | Order(invoiceId=245615, lineItemId=384894, userId=112915, itemId=564, itemName=gadget wrapper, itemCategory=gadget, price=35.6, createdAt=1463179333000, paidAt=1463195221000)
 taskmanager_1  | Order(invoiceId=343211, lineItemId=258609, userId=34502, itemId=1257, itemName=tool warmer, itemCategory=tool, price=27.500000000000004, createdAt=1421975214000, paidAt=1422101333000)
 ```
-
 Congrats! We have successfully consumed messages from Pulsar.
 
 ## 2. Performing Data Lookups with the Flink Process Function
