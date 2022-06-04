@@ -2,7 +2,7 @@
 layout: single
 title:  Github> HTTPS와 SSH를 알아보자
 categories: 04_gitgithub
-tag: [github, https, ssh ]
+tag: [github, http, https, ssh ]
 toc: true
 author_profile: false
 sidebar:
@@ -49,5 +49,5 @@ sidebar:
 1. HTTP(Hyper Text Transfer Protocol): SERVER와 client 간 data를 주고받는 protocol. 하지만 SERVER와 client 간의 통신에 별다른 보안 조치가 없기 때문에 만약 누가 network 신호를 가로채면 그대로 외부로 노출됨
 2. HTTPS(Hyper Text Transfer Protocol Secure): 아래 그림처럼 주소창에 자물쇠 표시를 볼 수 있다. HTTPS가 적용된다는걸 알려주는 표시. 
     어떤 식으로 보안이슈를 해결? 
-        기존의 HTTP protocol은 전송계층의 TCP 위에서 동작하는데, 여기에 SSL(Secure Sockets Layer)이라는 보안 계층 위에 HTTP를 얹어서 보장된 통신을 하는 protocol이다. 
+        기존의 HTTP protocol은 전송계층의 TCP 위에서 동작하는데, 여기에 SSL(Secure Sockets Layer)이라는 보안 계층 위에 HTTP를 얹어서 보장된 통신을 하는 protocol이다. <br>
  <img src = "/assets/img/bongs/https.png">
