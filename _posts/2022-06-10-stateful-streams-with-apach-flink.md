@@ -19,9 +19,9 @@ we suggest getting familiar with the basic concepts of Apache Pulsar and Apache 
 
 ### Introduction
 Typical Streaming data architectures include a streaming storage layer like Apache Pulsar that serves as the backbone of the infrastructure.
-Stateful stream processing is also required to deliver advance analytics for you users and you want to use a stream computing engine 
-like Apache Flink to handle time based computations especially when large state is required.
-Data often resides inside multiple different topics in a streaming storage layer and its important to be able to combine data from multiple input sources.
+Stateful stream processing is also required to deliver advance analytics for your users and a stream computing engine 
+like Apache Flink is required to handle time based event computations especially when large state is required.
+Data often resides inside multiple different topics in a streaming storage layer and its important to be able to combine data from multiple input topics.
 
 In this blog post we will walkthrough how you can use Apache Flink to enrich real time data streams with data that resides into large changelog topics.
 We will use Apache Pulsar as our streaming storage layer.
