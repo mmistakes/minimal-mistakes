@@ -464,7 +464,7 @@ We also need to modify our main class to support Side Outputs:
 
 Here we create two side outputs - one for missing user and one for item events. Then we extract the side outputs from out output stream and print it.
 
-**[Note:]** It's also worth highlighting the use of **name** and **uid** for each operator.
+**Note:** It's also worth highlighting the use of **name** and **uid** for each operator.
 Specifying names for your operators can be considered as best practise for your Flink Job
 This is useful to easier identify the operator on the Flink UI and also in cases you need to use savepoints to resume your job, after a code modification or scaling requirement (more on that later.)
 You can find the full implementation under the **v3** package [here](https://github.com/polyzos/pulsar-flink-stateful-streams/tree/main/src/main/java/io/ipolyzos/compute/v3)
