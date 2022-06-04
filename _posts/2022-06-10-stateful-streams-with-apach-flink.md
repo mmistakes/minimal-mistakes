@@ -371,11 +371,15 @@ With this implementation in place there are two questions we need to address:
 
 Let's see how can address these questions.
 
-## 3. Using Side Outputs to collect missing state.
-In order to address how we can handle records that have no matching state, we will use Flink's [Side Outputs](https://nightlies.apache.org/flink/flink-docs-master/docs/dev/datastream/side_output/).
+## 3. Using Side Outputs for missing state.
+Working with Distributed Systems we also want to deal with the "Unhappy Paths", i.e with unexpected behaviors.
+When an order is submitted we assume that the information for the user as well as with the purchased item are always present, but can we be 100% on that?
+For peace of mind we will use Flink's [Side Outputs](https://nightlies.apache.org/flink/flink-docs-master/docs/dev/datastream/side_output/).
 You can think of Side Outputs like a branch of a stream where you can redirect records that don't comply with your processing logic
 and need to be propagated to a different output downstream, like printing them to the console, another Pulsar topic or a database.
-Using side outputs is pretty straight forward. First we need to modify our process function logic, like:
+By doing this, if for some reason we hit a scenario that a user or item event is missing we can propagate the order event downstream.
+We might not be sure why this happened but at least we have visibility that it happened and can investigate more. 
+Using Side Outputs is pretty straight forward. First we need to modify our process function logic:
 ```java
 public class UserLookupHandler extends CoProcessFunction<Order, User, OrderWithUserData> {
     private static final Logger logger = LoggerFactory.getLogger(UserLookupHandler.class);
@@ -419,8 +423,8 @@ public class UserLookupHandler extends CoProcessFunction<Order, User, OrderWithU
     }
 }
 ```
-**(1)** We create an OutputTag typed with our output
-**(2)** If we find no state present for a particular id then we add the particular record to the side output
+**(1)** We create an OutputTag typed with our output event **OrderWithUserData**.
+**(2)** If a key is not present in our state for a particular id then we add the event to the side output.
 We also need to modify our main class to support Side Outputs:
 ```java
     final OutputTag<EnrichedOrder> missingStateTagUsers = new OutputTag<>("missingState#User"){};
@@ -436,26 +440,32 @@ We also need to modify our main class to support Side Outputs:
         .name("MissingItemStateSink")
         .uid("MissingItemStateSink"); 
 ```
-Here we create two side outputs one for missing user state and one for the items state. Then from our output stream
-we extract the side outputs and print them.
+Here we create two side outputs - one for missing user events and one for the items events.
+Then from within the output stream we extract the side outputs and print it.
 
-[Note:] At this point it's also worth highlighting the use of `name` and `uid` for each operator.
+**[Note:]** It's also worth highlighting the use of `name` and `uid` for each operator.
 Specifying names for your operators can be considered as best practise for your Flink Job
 This is useful to easier identify the operator on the Flink UI and also in cases you need to use savepoints to resume your job, after a code modification or scaling requirement (more on that later.)
-You can find the full implementation as always under the `v3` package [here](https://github.com/polyzos/pulsar-flink-stateful-streams/tree/main/src/main/java/io/ipolyzos/compute/v3)
+You can find the full implementation under the `v3` package [here](https://github.com/polyzos/pulsar-flink-stateful-streams/tree/main/src/main/java/io/ipolyzos/compute/v3)
 
-We have covered a lot so far. So take a moment to walkthrough our implementation and what we have achieved so far.
+We have covered a lot so far. So let's take a moment and walk through the implementation and what we have achieved so far.
 As a quick recap:
-1. We have created 3 input sources that consume data from 3 different pulsar topics
-2. The `orders` topic is a realtime stream and the `users` and `orders` topics are changelog streams (i.e maintain the last state per key)
-3. We have used Flink's process function along with Flink's state to enrich the input `orders` stream with the further information from the `users
- and `items` topics
-4. We have introduced Side Outputs to handle records for which state is not present and we don't have additional information. In a real life scenario you can sent an email to a user for their order without their email information, right?
+1. We have created 3 input sources that consume data from 3 different Pulsar topics
+2. The `orders` topic is a realtime event stream. `Users` and `orders` topics are changelog streams (i.e maintain the last state per key)
+3. We leverage Flink's process function along with Flink's state to enrich the input `orders` event stream `user` and `item` events.
+4. We introduced Side Outputs to handle events with no matching keys in the user or items state.
+In a real life scenario you can't email a user without their email information or before you have verified they have given consent, right?
 
-After we have comprehend the above logic, we are left with one question - how we deal with fault-tolerance - to deal
-with scenarios were our state grows quite big and/or our job crashes and we need to recover fast.
+We are left one open question - how we provide Fault-tolerance guarantees for our streaming job.
+We want to account for scenarios that our state grows quite large to fit in memory and/or our job crashes, and we need to recover fast.
 
-## 4. Working towards fault tolerance
+## 4. Making our job Fault Tolerant
+> Checkpoints make state in Flink fault tolerant by allowing state and the corresponding stream positions to be recovered, thereby giving the application the same semantics as a failure-free execution.
+
+We can easily enable checkpoints by applying some configuration option. We will enable the required configuration option and along with that
+we will also add a Restart Strategy to let Flink try and restart a job upon an Exception.
+Combining a Restart Strategy with Checkpoints gives our job the ability to recover in case of an Exception - for example due to temporary connection error.
+For critical exceptions that will continually kill our job the best approach will be to apply kill the job, apply some fix and recover with a [savepoint](https://nightlies.apache.org/flink/flink-docs-master/docs/ops/state/savepoints/)
 
 Setup the following configurations
 ```shell
@@ -492,22 +502,20 @@ Under the /opt/flink directory you should see a directory named checkpoints
 ```shell
 checkpoints/0c83cf0320b3fc6fdcdb3d8323c27503/
 ```
-This is the directory flink uses to store all of the checkpoints.
-This means that when we get a savepoint or our job crashes or we stop it and need to restore it from that state
-we can do so by using this checkpoint directory.
-So lets test this out - kill your current flink job running and then try to restart the job by running the following command:
+This is the directory flink uses to store all the checkpoints.
+This means that when we get a savepoint, our job crashes or we stop it and need to restore it from a particular checkpoint we can do so by using this checkpoint directory.
+So lets test this out - by killing our running flink job and then try to restart, using the following command:
 ```shell
 ./bin/flink run --class io.ipolyzos.compute.v4.EnrichmentStream \
   -s checkpoints/0c83cf0320b3fc6fdcdb3d8323c27503/chk-17/ \
   job.jar
 ```
-With this command we basically start our job, but we instruct Flink to use the latest checkpoint and continue from there.
+With this command we basically start the job while instructing Flink to use the latest checkpoint and continue from there.
 Navigate to the Flink UI and you should see something similar to the following screenshot
-
 ![Alt text](../images/flink/job.png "JOB")
-You can see that while we consume new orders, our orders actually get enriched with the state, but our `user` and `items`
-sources haven't read any new records. This means that the state was restored from the checkpoint and flink new how
-to rebuild the state and doesn't need to read the topics again.
+You can see that while we consume new order events, the events actually get enriched with `user` and `item` information
+even though our source streams haven't read any new records. 
+This means the state is restored from the checkpoint and flink knows how to rebuild it without replaying all the events from the topics.
 
 ## 4. Conclusion
 
