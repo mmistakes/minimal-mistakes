@@ -151,12 +151,12 @@ services:
 ```
 There are a few things to note here. 
 First we create a Flink Cluster with one taskmanager that has 2 slots and a Pulsar cluster.
-We expose ports `8080` that is the Pulsar http port as well as port `6650` which is the broker port. 
-We also enable some configurations: the first two `systemTopicEnabled` and `topicLevelPoliciesEnabled` allow us to use topic level policies. 
-We need those in order to use infinite retention at the topic level, i.e keep our data around infinitely. Since we treat `users` and `items` as "state" we need to be able 
+We expose ports **8080** that is the Pulsar http port as well as port **6650** which is the broker port. 
+We also enable some configurations: the first two **systemTopicEnabled** and **topicLevelPoliciesEnabled** allow us to use topic level policies. 
+We need those in order to use infinite retention at the topic level, i.e keep our data around infinitely. Since we treat **users** and **items** as "state" we need to be able 
 to have this state around in case we need to replay it, right?
-Then we have the `transactionCoordinatorEnabled` which enables the transaction coordinator which is used by the Pulsar-Flink connector.
-So let's start our clusters by running `docker-compose up`.
+Then we have the **transactionCoordinatorEnabled** which enables the transaction coordinator which is used by the Pulsar-Flink connector.
+So let's start our clusters by running **docker-compose up**.
 
 With our clusters up and running we need to create our topics and apply some topic policies.
 Retention topic policies will also allow us to reply our events in a case of failure if required.
