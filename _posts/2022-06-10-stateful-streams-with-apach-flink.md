@@ -548,6 +548,6 @@ This means the state is restored from the checkpoint and flink knows how to rebu
    - **Apache Pulsar Fundamentals:** https://www.academy.streamnative.io/courses/course-v1:streamnative+AP101+UNLM/about
    - **Pulsar API Essentials - Java:** https://www.academy.streamnative.io/courses/course-v1:streamnative+AP101-Lab+UNLM/about
 - **Apache Pulsar Ebooks:** https://streamnative.io/ebooks/
-- **Using RocksDB State Backend in Apache Flink:** When and How: https://flink.apache.org/2021/01/18/rocksdb.html
+- **Using RocksDB State Backend in Apache Flink - When and How:** https://flink.apache.org/2021/01/18/rocksdb.html
 - **Apache Flink Restart Strategies:** https://kartikiyer.com/2019/05/26/choosing-the-correct-flink-restart-strategy-avoiding-production-gotchas/
 - **Apache Flink Checkpoints:** https://nightlies.apache.org/flink/flink-docs-master/docs/ops/state/checkpoints/
