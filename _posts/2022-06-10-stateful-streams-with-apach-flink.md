@@ -31,7 +31,7 @@ Apache Pulsar and Apache Flink have a strong integration together and enable a U
 Our example use case is an online store and users come online to place orders for different items.
 Every new order is written into an **orders** topic and the same applies for each newly registered users or items - written into the **users** and **items** topics respectively. 
 We treat **users** and **items** topics as **changelog** streams - this means that the events written in those topics will be 
-a <key, value> pair and for each unique key we are only interested in the latest value.
+a **<key, value>** pair and for each unique key we are only interested in the latest value.
 
 For example if **user1** updates the phone number we are ony interested in the latest updated value. The same goes for a product.
 We will consider these **changelog** topics as our **state**.
