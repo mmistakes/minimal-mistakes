@@ -27,20 +27,25 @@ Apache Pulsar and Apache Flink have a strong integration together and enable a U
 
 ## Example Use Case
 ![Alt text](../images/pf2.png "Example Use Case")
-Our example use case we be an online store. Users come online and place orders.
-Every new order written into an `orders` topic and the same applies for each newly registered user or product written into the `users` and `items` topics respectively. 
-We will have the `users` and `items` topics as **changelog** streams - this means that the messages written in the topic will be 
+
+Our example use case is an online store and users come online to place orders for different items.
+Every new order is written into an **orders** topic and the same applies for each newly registered users or items - written into the **users** and **items** topics respectively. 
+We treat **users** and **items** topics as **changelog** streams - this means that the events written in those topics will be 
 a <key, value> pair and for each unique key we are only interested in the latest value.
-For example if user1 update their phone number, we are ony interested in the latest updated value. The same goes for the items.
+
+For example if `user1` updates the phone number we are ony interested in the latest updated value. The same goes for a product.
 We will consider these **changelog** topics as our **state**.
-One common use case in streaming systems is combining data from different topics, in order to perform some kind of data validation and data enrichment.
-In our particular use case we want to be able to enrich our input `orders` streams with the **state** - i.e grab the user and item information to be
-able to take actions like - sent out an email thanking our user for their purchase, or calculating some reward points to see if 
-they are eligible for a discount coupon or even recommend purchasing something similar to the product
+
+A common use case in streaming systems is combining data from different topics, in order to perform some kind of data validation or data enrichment.
+In our example need to enrich the input **order** events with the **state** - i.e query the user and product information to be
+able to take actions like - sending out an email thanking our user for their purchase, calculating some reward points to see if 
+they are eligible for a discount coupon or even recommend purchasing something similar to the product they just bought.
 they bought from a store nearby.
-Our focus on this blog post though is combining data from multiple topics.
+
+Our focus for this blog post though is enriching an input event stream with information from events in other topics.
+
 We will take a hands-on approach and better understand how we can:
-1. Connect Apache Pulsar with Flink and verify we can consume messages from these topics
+1. Connect Apache Pulsar with Flink and verify we can consume events from different topics
 2. Use Flink's process functions to perform data enrichment.
 3. Use Side-Outputs to account for scenarios that state is not present, and we want to further investigation the why.
 4. Use RocksDB for large state we can not keep in-memory
