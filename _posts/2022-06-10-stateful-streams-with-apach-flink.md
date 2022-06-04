@@ -47,8 +47,8 @@ We will take a hands-on approach and better understand how we can:
 There is a lot to cover here, so we will build on them incrementally. Let's jump right into it.
 
 ## Pre-Flight Check
-Before we start discussing how we can actually implement our use case let's make sure we have our dependencies in place and our environment setup.
-We will be using Java in the tutorial so make sure you add the following dependencies to your `pom.xml` file.
+Before we start with the implementation let's make sure we have our dependencies in place and our environment setup.
+The examples here will be in Java, so let's add the following dependencies to our `pom.xml` file.
 ```shell
  <properties>
     <maven.compiler.source>11</maven.compiler.source>
@@ -98,7 +98,7 @@ We will be using Java in the tutorial so make sure you add the following depende
   </dependencies>
 ```
 
-Then we will need a Pulsar and Flink cluster. We can quickly spin up our clusters using docker-compose.
+We also require Pulsar and Flink, so we will use [docker-compose](https://docs.docker.com/compose/) to spin them up.
 Create a `docker-compose.yaml` file and add the following:
 ```shell
 version: '3.7'
@@ -141,7 +141,8 @@ services:
       " bin/apply-config-from-env.py conf/standalone.conf
       && bin/pulsar standalone"
 ```
-There are a few things to note here. First we create a Flink Cluster with one taskmanager that has 2 slots and a Pulsar cluster.
+There are a few things to note here. 
+First we create a Flink Cluster with one taskmanager that has 2 slots and a Pulsar cluster.
 We expose ports `8080` that is the Pulsar http port as well as port `6650` which is the broker port. 
 We also enable some configurations: the first two `systemTopicEnabled` and `topicLevelPoliciesEnabled` allow us to use topic level policies. 
 We need those in order to use infinite retention at the topic level, i.e keep our data around infinitely. Since we treat `users` and `items` as "state" we need to be able 
@@ -149,12 +150,12 @@ to have this state around in case we need to replay it, right?
 Then we have the `transactionCoordinatorEnabled` which enables the transaction coordinator which is used by the Pulsar-Flink connector.
 So let's start our clusters by running `docker-compose up`.
 
-At this point we have our clusters up and running and the last thing we want to do is create our topics and set infinite retention on our lookup data topics.
-The reason we want to enable infinite retention is for disaster recovery scenarios, so we are able to replay the whole state from the topic and not lose it.
-You can find a helper script that creates all the required topics and sets the policies on the github repo [here](https://github.com/polyzos/pulsar-flink-stateful-streams/blob/main/setup.sh).
-We create 3 partitioned topics (orders, users and items), with one partition each and set infinite retention for the users and items topics which will contain the lookup data
-to enrich the orders data stream.
-Note: We use partitioned topics in order to be able to increase the number of partition later, in case we need to scale. Otherwise if we had a not-partitioned topic we would have to create 
+With our clusters up and running we need to create our topics and apply some topic policies.
+Retention topic policies will also allow us to reply our events in a case of failure if required.
+We can run this [script](https://github.com/polyzos/pulsar-flink-stateful-streams/blob/main/setup.sh) to perform this setup.
+It will create 3 partitioned topics (orders, users and items) each with one partition and set an infinite retention policy for the **changelog** topics.
+
+**Note:** We use partitioned topics in order to be able to increase the number of partition later, in case we need to scale. Otherwise if we had a not-partitioned topic we would have to create 
 a new partitioned topic and transfer all the data to this new topic. 
 
 
