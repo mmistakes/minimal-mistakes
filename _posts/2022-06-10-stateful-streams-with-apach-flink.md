@@ -249,9 +249,9 @@ taskmanager_1  | Order(invoiceId=343211, lineItemId=258609, userId=34502, itemId
 ```
 Congrats! We have successfully consumed messages from Pulsar.
 
-## 2. Performing Data Lookups with the Flink Process Function
-Now that we verified we can read our events, the next step is to combine these multiple sources together, extract the user 
-Combining two datastreams together should look similar to this:
+## 2. Performing Data Enrichment
+We verified we can read our events so the next step is data enrichment, i.e "query" user and item information from the **changelog** topics.
+To achieve this with Flink it will look similar to this:
 ```java
  DataStream<OrderWithUserData> orderWithUserDataStream = orderStream
         .keyBy(Order::getUserId)
@@ -260,11 +260,9 @@ Combining two datastreams together should look similar to this:
         .uid("usersLookup")
         .name("usersLookup");
 ```
-Here we specify that we want our streams to be partitioned based on some key so Flink can make sure that the 
-same keys will be processed by the same taskmanager.
-The connect functions allows us to "connect" two streams together and the what we want to do with the inputs of these
-two datastreams is some logic we implement ourselves and pass it to the process functions.
-Our implementation should look similar to this:
+We partition the streams on the UserId and Flink will make sure that same keys will be processed by the same TaskManager.
+The **connect** function allows us to "connect" two streams and specify some processing logic with the **process** function.
+The process function implementation should look similar to this:
 ```java
 public class UserLookupHandler extends CoProcessFunction<Order, User, OrderWithUserData> {
     private static final Logger logger = LoggerFactory.getLogger(UserLookupHandler.class);
@@ -299,12 +297,12 @@ public class UserLookupHandler extends CoProcessFunction<Order, User, OrderWithU
     }
 }
 ```
-This is the implementation for the `users` and `orders` streams and the implementation for adding the `items` is similar.
-We extend the `CoProcessFunction` which basically processes elements of two input streams (here users and orders) and produces a single output (here OrderWithUserData).
-The function will be called for every element in the input streams and can produce zero or more output elements.
-Note that for each `user` record we receive we use the Value<User> state in order to store it.
-Then for every incoming order to try and "query" this state and if we find a matching key we enrich our order record (later we will see how we can handle scenarios were there is no user state present for a particular key).
-As we mentioned the implementation for handling `Item` state should is similar:
+We extend the `CoProcessFunction` that processes elements of two input streams (here users and orders) and produces a single output (here OrderWithUserData).
+The function will be called for every event coming from each input streams and can produce zero or more output elements.
+Note that for each `user` record we receive we use the **Value<User>** state in order to store it.
+Then for every incoming order to try and "query" this state and if there is a matching key we enrich the order event.
+(Later we deal with missing state scenarios and how we can handle scenarios them).
+The implementation for enriching with `Item` values is similar:
 ```java
 public class ItemLookupHandler extends CoProcessFunction<OrderWithUserData, Item, EnrichedOrder> {
     private static final Logger logger = LoggerFactory.getLogger(UserLookupHandler.class);
@@ -351,10 +349,13 @@ public class ItemLookupHandler extends CoProcessFunction<OrderWithUserData, Item
 }
 ```
 You can find a full implementation under the `v2` package [here](https://github.com/polyzos/pulsar-flink-stateful-streams/tree/main/src/main/java/io/ipolyzos/compute/v2).
-Once more let's package and redeploy our application and verify it works.
-[Note] make sure to modify the `deploy.sh` script to point to the updated `v2` version file.
-Following the steps we did at step 1, by running the `deploy.sh` script, running the producer and checking the logs we should 
-see an output similar to the following:
+Let's package and redeploy our application and verify it works.
+**Note** make sure to modify the `deploy.sh` script to point to the updated `v2` version file.
+Following the steps from step 1:
+1. run the `deploy.sh` script
+2. generate some Order events
+3. check the logs 
+We should see an output similar to this:
 ```shell
 taskmanager_1  | EnrichedOrder(invoiceId=67052, lineItemId=326416, user=User(id=88300, firstName=Davis, lastName=MDavis1997@earthlink.edu, emailAddress=MDavis1997@earthlink.edu, createdAt=1441790913000, deletedAt=-1, mergedAt=-1, parentUserId=-1), item=Item(id=930, createdAt=1388876010000, adjective=, category=module, modifier=, name=module, price=100.0), createdAt=1443643093000, paidAt=1443745976000)
 taskmanager_1  | EnrichedOrder(invoiceId=67052, lineItemId=146888, user=User(id=88300, firstName=Davis, lastName=MDavis1997@earthlink.edu, emailAddress=MDavis1997@earthlink.edu, createdAt=1441790913000, deletedAt=-1, mergedAt=-1, parentUserId=-1), item=Item(id=80, createdAt=1372810111000, adjective=rechargable, category=module, modifier=cleaner, name=rechargable module cleaner, price=78.0), createdAt=1443643093000, paidAt=1443745976000)
@@ -363,12 +364,12 @@ taskmanager_1  | EnrichedOrder(invoiceId=220846, lineItemId=48384, user=User(id=
 taskmanager_1  | EnrichedOrder(invoiceId=220846, lineItemId=230208, user=User(id=182477, firstName=Powell, lastName=MarinaPowell@mail.com, emailAddress=MarinaPowell@mail.com, createdAt=1485101903000, deletedAt=-1, mergedAt=-1, parentUserId=-1), item=Item(id=2425, createdAt=1372279813000, adjective=, category=apparatus, modifier=, name=apparatus, price=300.0), createdAt=1493699951000, paidAt=1493632923000)
 taskmanager_1  | EnrichedOrder(invoiceId=278358, lineItemId=129026, user=User(id=97081, firstName=Adebayo, lastName=SunitaAdebayo@inbox.info, emailAddress=SunitaAdebayo@inbox.info, createdAt=1446040475000, deletedAt=-1, mergedAt=-1, parentUserId=-1), item=Item(id=3435, createdAt=1373472723000, adjective=industrial-strength, category=widget, modifier=cleaner, name=industrial-strength widget cleaner, price=5.4), createdAt=1453951447000, paidAt=1454087954000)
 ```
-Looks like we have successfully enriched our `Orders` records with `User` and `Items` data.
-Since we have our logic implemented there are two questions we need to address to better enhance the behavior of our application:
-1. How can investigate further a record that for some reason there is no matching user and/or item record id?
-2. The state we build is kept in memory, so what happens if my state becomes so large it can't fit in memory and in case of failures like `OutOfMemoryExceptions`?
+We have successfully enriched our `Orders` records with `User` and `Items` data.
+With this implementation in place there are two questions we need to address:
+1. How can we investigate records that have no matching user and/or item record id?
+2. Our state is kept in memory so how can we handle state too large to fit in memory?
 
-Next, let's see how can address these questions.
+Let's see how can address these questions.
 
 ## 3. Using Side Outputs to collect missing state.
 In order to address how we can handle records that have no matching state, we will use Flink's [Side Outputs](https://nightlies.apache.org/flink/flink-docs-master/docs/dev/datastream/side_output/).
