@@ -98,6 +98,7 @@ I am also very excited about computing infrastrucutre, computing clusters (which
   <div class="box_item1">Los Alamos National Laboratory<br/>T-1/CNLS, USA</div>
   <div class="box_item1">2022-present</div>
 </div>
+<br/>
 <div class="box_ed">
   <div class="box_item1">Research<br/> Assistant</div>
   <div class="box_item1">Los Alamos National Laboratory<br/>Utah State University, USA</div>
