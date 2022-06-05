@@ -86,7 +86,6 @@ table  {
 Welcome to my page! My name is Nikita Fedik and I am a researcher passionate about solving scientific challenges on the edge of machine learning, computational chemistry and material science. <br/> 
 <br/> 
 Currently, I am Director's Postdoc Fellow at Los Alamos National Laboratory where my research is focused on the application of machine learning for parametrization and augmentation of classical computational chemistry.<br/>  
-<br/>  
 I completed my PhD in Computational Chemistry in Prof. Alexander I. Boldyrev lab at Utah State University. Our research was geared towards revealing new non-trivial bonding patterns in atomic clusters, molecules and materials, as well as rational design of new chemical systems<br/>
 <br/>
 I am also very excited about computing infrastrucutre, computing clusters (which I had a chance to assemble on my own) and new technology. 
