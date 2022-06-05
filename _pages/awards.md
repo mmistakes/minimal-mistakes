@@ -34,12 +34,12 @@ table  {
   </tr>
   <tr>
     <td>Doctoral Student Researcher of the Year</td>
-    <td>College of Science, Utah State University, USA</td>
+    <td>College of Science<br>Utah State University, USA</td>
     <td>2022 </td>
   </tr>
   <tr>
     <td>Outstanding Graduate Student in Chemistry</td>
-    <td>Chemistry and Bioshemistry Department, Utah State University, USA</td>
+    <td>Chemistry and Bioshemistry Department<br>Utah State University, USA</td>
     <td>2021 </td>
   </tr>
   <tr>
