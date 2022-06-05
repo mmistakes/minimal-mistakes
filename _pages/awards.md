@@ -65,6 +65,11 @@ table  {
 	<col style="width:20em">
 	<col style="width:10em">
   <tr>
+    <td>Teng Endowed Scholarship</td>
+    <td>Utah State University, USA</td>
+    <td>2021 </td>
+  </tr>  
+  <tr>
     <td>Summer Internship</td>
     <td>Los Alamos National Laboratory<br/>Center for Non-Linear Studies, USA</td>
     <td>2020 </td>
@@ -74,12 +79,12 @@ table  {
     <td>USA-Russia</td>
     <td>2014-2017</td>
   </tr>
-    <tr>
+  <tr>
     <td>Scholarship of private bank Centr-Invest</td>
     <td>Southern Federal University, Russia</td>
     <td>2016, 2015, 2014</td>
   </tr>
-    <tr>
+  <tr>
     <td>Scholarship of Rostov Area Governor</td>
     <td>Russia</td>
     <td>2016, 2015</td>
