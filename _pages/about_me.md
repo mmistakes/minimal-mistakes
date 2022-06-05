@@ -95,7 +95,7 @@ I am also very excited about computing infrastrucutre, computing clusters (which
 <span class="hb"> Work experience
   <div class="box_ed">
   <div class="box_item1">Director's Postdoc<br/> Fellow</div>
-  <div class="box_item1">Los Alamos National Laboratory<br/>T-1/CNLS, USA</div>
+  <div class="box_item1">T-1: Physics and Chemistry of Materials/CNLS<br/>Los Alamos National Laboratory, USA</div>
   <div class="box_item1">2022-present</div>
 </div>
 <br/>
