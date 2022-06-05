@@ -104,8 +104,8 @@ analytics:
 author:
   name             : "Nikita Fedik"
   avatar           :  /assets/images/bio-photo.jpg
-  bio              : "Computational Chemistry | Machine Learning | Data Science"
-  location         : Logan, Utah
+  bio              : "Computational Chemistry | Machine Learning"
+  location         : Santa Fe, NM
   email            :
   links:
     - label: "Email"
