@@ -28,6 +28,14 @@ table  {
 	<col style="width:20em">
 	<col style="width:10em">
   <tr>
+    <td>Director's Postdoc Fellowshipr</td>
+    <td>Los Alamos National Laboratory, USA</td>
+    <td>2022 </td>
+  </tr>    
+    <td>College of Science Doctoral Student Researcher of the Year</td>
+    <td>Utah State University, USA</td>
+    <td>2022 </td>
+  </tr>    
     <td>Outstanding Graduate Student in Chemistry</td>
     <td>Utah State University, USA</td>
     <td>2021 </td>
