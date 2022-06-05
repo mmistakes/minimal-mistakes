@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2022-05-19-solution8.md",
+            "file": "_posts/2022-05-09-nineth2.md",
             "mode": "source",
             "source": false
           }
@@ -88,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-05-19-solution8.md",
+                "file": "_posts/2022-05-09-nineth2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,15 +108,15 @@
   },
   "active": "3f8ef86133c571fd",
   "lastOpenFiles": [
+    "_posts/2022-05-09-nineth2.md",
+    "_posts/2022-05-09-nineth2op5.md",
+    "_posts/2022-05-09-nineth2op3.md",
+    "_posts/2022-05-09-nineth2op2.md",
+    "_posts/2022-05-09-nineth2op1.md",
+    "_posts/2022-05-09-nineth2op20.md",
+    "_posts/2022-05-09-nineth2op21 1.md",
     "_posts/2022-05-19-solution8.md",
     "_posts/2022-05-17-solution2.md",
-    "_posts/2022-05-19-solution5.md",
-    "_posts/2022-05-19-solution6.md",
-    "_posts/2022-05-19-solution7.md",
-    "planning/Deep Learning.md",
-    "_posts/2022-05-17-solution1.md",
-    "_posts/2022-05-17-solution3.md",
-    "_posts/2022-05-17-solution4.md",
-    "_posts/2022-05-09-nineth2op21.md"
+    "_posts/2022-05-19-solution5.md"
   ]
 }
