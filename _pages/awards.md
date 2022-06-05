@@ -33,12 +33,12 @@ table  {
     <td>2022 </td>
   </tr>
   <tr>
-    <td>Doctoral Student Researcher of the Year</td>
+    <td>Doctoral Student Researcher of the Year<br></td>
     <td>College of Science<br>Utah State University, USA</td>
     <td>2022 </td>
   </tr>
   <tr>
-    <td>Outstanding Graduate Student in Chemistry</td>
+    <td>Outstanding Graduate Student in Chemistry<br></td>
     <td>Chemistry and Bioshemistry Department<br>Utah State University, USA</td>
     <td>2021 </td>
   </tr>
