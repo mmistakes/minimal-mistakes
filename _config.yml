@@ -112,7 +112,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:fediknikita@gmail.com"
     - label: "LANL profile"
-      icon: "fas fa-fw fa-buildings"
+      icon: "fa-solid fa-buildings"
       url: "https://cnls.lanl.gov/External/people/Nikita_Fedik.php"
     - label: "Google Scholar"
       icon: "fas fa-fw fa-graduation-cap"
