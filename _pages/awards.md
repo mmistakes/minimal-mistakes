@@ -28,14 +28,16 @@ table  {
 	<col style="width:20em">
 	<col style="width:10em">
   <tr>
-    <td>Director's Postdoc Fellowshipr</td>
+    <td>Director's Postdoc Fellowship</td>
     <td>Los Alamos National Laboratory, USA</td>
     <td>2022 </td>
-  </tr>    
+  </tr>
+  <tr>
     <td>College of Science Doctoral Student Researcher of the Year</td>
     <td>Utah State University, USA</td>
     <td>2022 </td>
-  </tr>    
+  </tr>
+  <tr>
     <td>Outstanding Graduate Student in Chemistry</td>
     <td>Utah State University, USA</td>
     <td>2021 </td>
@@ -45,12 +47,12 @@ table  {
     <td>Utah State University, USA</td>
     <td>2019</td>
   </tr>
-    <tr>
+  <tr>
     <td>Student of the Year in Natural Sciences</td>
     <td>Southern Federal University, Russia</td>
     <td>2016</td>
   </tr>
-    <tr>
+  <tr>
     <td>Commemorative Medal for Merits in Science</td>
     <td>Rostov Area Government, Russia</td>
     <td>2016</td>
