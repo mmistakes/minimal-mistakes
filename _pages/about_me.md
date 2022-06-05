@@ -94,10 +94,15 @@ I am also very excited about computing infrastrucutre, computing clusters (which
 
 
 <span class="hb"> Work experience
+  <div class="box_ed">
+  <div class="box_item1">Director's Postdoc<br/> Fellow</div>
+  <div class="box_item1">Los Alamos National Laboratory<br/>T-1/CNLS, USA</div>
+  <div class="box_item1">2022-present</div>
+</div>
 <div class="box_ed">
   <div class="box_item1">Research<br/> Assistant</div>
   <div class="box_item1">Los Alamos National Laboratory<br/>Utah State University, USA</div>
-  <div class="box_item1">2020-present</div>
+  <div class="box_item1">2020-2022</div>
 </div>
 
 <span class="box_w_d"> Dr. Tretiak Group (T-1)<br/> 
