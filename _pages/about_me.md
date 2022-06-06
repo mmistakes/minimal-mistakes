@@ -152,13 +152,13 @@ I am also very excited about computing infrastrucutre, computing clusters (which
 <div class="box1">
   <div class="box_item1">PhD</div>
   <div class="box_item1">Utah State University</div>
-  <div class="box_item1">2018-present</div>
+  <div class="box_item1">2018-2022</div>
 </div>
 Physical/Computational Chemistry<br/>
 Professor:  Alexander I. Boldyrev<br/> 
 
 <div class="box1">
-  <div class="box_item1">Specialist</div>
+  <div class="box_item1">B.Sc</div>
   <div class="box_item1">Southern Federal University</div>
   <div class="box_item1"> 2012-2017</div>
 </div>
