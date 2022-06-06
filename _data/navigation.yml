@@ -4,15 +4,23 @@ main:
     url: /categories/
   - title: "Tag"
     url: /tags/
+  - title: "Search"
+    url: /search/
 
 docs:
-  - title: "대목차"
+  - title: "Quick"
     children:
       - title: "category"
         url: /categories/
       - title: "Tag"
         url: /tags/
 
+    # - title: "Topic"
+    # children:
+    #   - title: "category"
+    #     url: /categories/
+    #   - title: "Tag"
+    #     url: /tags/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
