@@ -38,8 +38,8 @@ This schedule is tentative - if you cannot attend a meeting where you are schedu
 |:-------------------:|:------------------------:|:------------------:|
 | Mon 13th June 2022  | Zoom (see calendar link) | Angelika Kiepas    |
 | Mon 20th June 2022  | TBC                      | Leighton Pritchard |
-| Mon 27th June 2022  | TBC                      | Julianna Piat      |
-| Mon 4th July 2022   | TBC                      | Bailey Harrington  |
+| Mon 27th June 2022  | TBC                      | Bailey Harrington  |
+| Mon 4th July 2022   | TBC                      | Julianna Piat      |
 | Mon 11th July 2022  | TBC                      | Yassmeen Ali       |
 | Tue 19th July 2022  | TBC                      | Areej Obaid        |
 | Mon 25th July 2022  | TBC                      | David Teixeira     |
