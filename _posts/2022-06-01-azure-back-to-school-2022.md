@@ -1,5 +1,5 @@
 ---
-title: "Azure Back to School - 2021"
+title: "Azure Back to School - 2022 - Call for Speakers"
 categories:
   - Edge Case
 tags:
