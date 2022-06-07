@@ -1,7 +1,7 @@
 ---
 title: "Azure Back to School - 2020"
 categories:
-  - 2020
+  - Edge case
 tags:
   - content
   - css
