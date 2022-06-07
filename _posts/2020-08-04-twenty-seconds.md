@@ -74,7 +74,7 @@ object MyStringOps {
     }
 }
 
-```scala
+```
 
 and then later in our code, when we import it, we'll also have access to the extension method:
 
