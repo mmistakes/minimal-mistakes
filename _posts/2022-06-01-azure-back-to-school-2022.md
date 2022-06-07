@@ -10,7 +10,7 @@ tags:
   - markup
 ---
 
-## **2022 Call for Speakers/Presenter**
+## **2022 Call for Speakers/Presenters**
 
 Azure Back to School is back again this year.  Last year, we had enough participants to have 1-2 presentations daily for all 30 days of September.  I'd like to have twice this many this year.  Submit your sessions between 1 April 2022 and 1 June 2022.  Sessions can be videos or blog articles.  Sessions should have something actionable that the viewers can learn and execute on their own.  
 
