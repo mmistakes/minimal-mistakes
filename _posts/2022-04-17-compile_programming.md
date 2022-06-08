@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "컴파일러 프로그램"
-categories: introduction
+categories: [introduction,Compiler]
 tag : [c,java,compiler]
 toc: true
 author_profile: false
