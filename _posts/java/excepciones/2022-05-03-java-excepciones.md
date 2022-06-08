@@ -21,10 +21,12 @@ page_css:
 
 ## Excepciones
 
+* Es un **evento** que ocurre durante la ``ejecución de un programa`` que rompe el **flujo normal** de ``ejecución``
+
 * Al ejecutar **código Java** pueden ocurrir diferentes **errores**
   * **Errores** de codificación por parte del programador
 
-  * **Errores** debido a una entrada incorrecta u otros imprevistos de la codificación.
+  * **Errores** debido a una ``entrada incorrecta`` u otros ``imprevistos`` de la codificación.
 
 * Cuando ocurre un **error**, **Java** normalmente se detendrá y generará un **mensaje de error**
 
@@ -55,15 +57,19 @@ throws , throw , try , catch , finally
 ### Diagrama de Clases con Errores y Excepciones
 
 ```java
+                               [Object]
+                                  ↑
+                                  |
                              [Throwable]
-                    ______________↑________________                           ↓                             ↓                             
+                    ______________↑________________
+                    |                             |                    
                   [Error]                      [Exception]
-         ___________↑________              _________↑______________
-        |                    |            |                        |
-[OutOfMemoryError]      [IOError]    [IOException]         (RuntimeException)
-                                          ↑                        ↑
-                                          |                        |
-                              [FileNotFoundException]     (NullPointerException)
+         ___________↑________              _________↑____________________________
+        |                    |            |                                     |
+[OutOfMemoryError]      [IOError]    [IOException]                      (RuntimeException)
+                                          ↑                         ____________↑_____________
+                                          |                        |                          |
+                              [FileNotFoundException]     (NullPointerException)   (ArrayIndexOutOfBoundsException)
 ```
 
 ### Subclase Error de la clase Throwable
