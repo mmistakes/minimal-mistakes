@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Bottom up Parser "
-categories: [CliteP,JAVA,Bottom up Parser, LR parser]
+categories: [CliteP,JAVA,Bottom up Parser, LR parser,Compiler]
 tag : [CliteP,JAVA,Top down parser, LR parser,Conflict,Parsing Table, rightmost derivation]
 toc: true
 author_profile: false
