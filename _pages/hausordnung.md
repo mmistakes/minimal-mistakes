@@ -4,68 +4,72 @@ title: "Hausordnung"
 permalink: /hausordnung/
 author_profile: false
 excerpt: "Die Hausordnung der Grundschule am Brandwerder"
-modified: 2018-08-28T12:00:00+01:00
+modified: 2022-04-01T12:00:00+01:00
 header:
  overlay_color: "#fff"
  overlay_image: /assets/images/mm-home-page-feature.jpg
 ---
 
-gültig ab 01.08.2018
+gültig ab 01.04.2022
 {: .text-right}
 
 # Hausordnung
 
 1.  Um 7:30 Uhr ist Einlass für alle Kinder, die einen offenen Anfang in ihren
-    Klassen führen. (Diese Kinder haben einen entsprechenden Ausweis!)
-2.  Um 7:50 Uhr ist offizieller Einlass. Dieser erfolgt ruhig und gesittet durch
-    den Haupteingang.
-3.  **In der Zeit von 7:30 Uhr bis 14:00 Uhr bitten wir Eltern und
-    Besucher\*innen sich als Erstes im Sekretariat anzumelden!**
-4.  Das Deponieren von Jacken und Schultaschen kann erfolgen/erfolgt im
-    jeweiligen Vorraum. Dies geschieht in ruhiger Atmosphäre.
-5.  Der Vorraum kann auch zum Arbeiten in einzelnen Unterrichtsphasen genutzt
-    werden. Der Vorraum wird ordentlich hinterlassen. Hierfür sprechen sich die
+    Klassen führen. Diese Kinder haben einen entsprechenden Ausweis!
+2.  Um 7:50 Uhr ist offizieller Einlass. Dieser erfolgt ruhig und gesittet durch den
+    Haupteingang bzw. über den Klassentreffpunkt auf dem Schulhof.
+3.  **In der Zeit von 7:30 Uhr bis 14:00 Uhr bitten wir Eltern und Besucherinnen
+    und Besucher sich als Erstes im Sekretariat anzumelden (über das
+    Fenster) und das Schulgebäude nicht ohne Erlaubnis zu betreten.**
+4.  Das Deponieren von Jacken und Schultaschen kann im jeweiligen Vorraum
+    erfolgen. Dies geschieht in ruhiger Atmosphäre.
+5.  Während des Unterrichtstages ist das Tragen von modischen Kopf-
+    bedeckungen wie z. B. Mützen, Basecaps, Kapuzen o. ä. nicht gestattet.
+6.  Der Vorraum kann auch zum Arbeiten in einzelnen Unterrichtsphasen genutzt
+    werden. Dieser wird ordentlich hinterlassen. Hierfür sprechen sich die
     entsprechenden Klassen gemeinschaftlich ab (Fluramt).
-6.  Die kleinen Pausen (bei Lehrer\*innenwechsel) werden im Klassenraum
-    verbracht und dazu genutzt, sich auf den nächsten Unterricht vorzubereiten
-    oder auf die Toilette zu gehen.
-7.  Zur großen Pause (9:35 und 11:30 Uhr) gehen alle Kinder zügig auf den
-    Schulhof, indem sie den Ausgang ihres Aufgangs (A/B) wählen. Kinder, die
-    zum Essen in die Mensa gehen, wählen den Hauptausgang.
-8.  Regenpausen werden bei ruhiger Beschäftigung und unter Aufsicht der letzten
+7.  Wenn die Lehrkraft wechselt, wird die Zeit genutzt um sich auf den nächsten
+    Unterricht vorzubereiten oder auf die Toilette zu gehen.
+8.  Nach der zweiten Stunde beginnt die große Pause mit Frühstück im
+    Unterrichtsraum am Platz. Anschließend gehen alle Kinder auf den Schulhof
+    und nutzen dabei die Seitenausgänge. Die Mittagspause wird von den Klassen
+    vier bis sechs zum Mittagessen genutzt.
+9.  Regenpausen werden bei ruhiger Beschäftigung und unter Aufsicht der letzten
     Lehrkraft in den Klassenräumen verbracht, auch bei Unterrichtsschluss der
     Klasse.
-9.  Während des Unterrichts und in den kleinen Pausen ist der Gang zur Toilette
-    nur einzeln erlaubt.
-10. Die Türen zu den Feuertreppen werden nur im Notfall geöffnet.
-11. Fenster in den Klassenräumen dürfen ohne Anwesenheit einer Lehrkraft nur
-    gekippt sein. Die Jalousien in den Klassenräumen müssen vor
-    Unterrichtsschluss hochgedreht werden. Alle Fenster sind zu schließen.
-12. Die Schüler\*innen dürfen das Schulgelände frühestens nach ihrem
-    Unterrichtsschluss verlassen.
-13. Auf dem Schulhof dürfen in den Pausen für Ballspiele ausschließlich Softbälle
-    benutzt werden. Basketbälle sind nur auf den Streetballanlagen erlaubt.
-14. Außer Bällen fliegt hier nichts <i class='fa fa-smile-o'></i>! Auf dem Schulgelände dürfen keine
+10. Der Gang zur Toilette ist nur einzeln erlaubt. Das Händewaschen vor dem
+    Unterricht wird durch einen Erwachsenen beaufsichtigt.
+11. Die Türen zu den Feuertreppen werden nur im Notfall geöffnet.
+12. Fenster in den Klassenräumen dürfen ohne Anwesenheit einer Lehrkraft nur
+    gekippt sein. Die Jalousien in den Klassenräumen müssen vor Unterrichtsschluss
+    hochgekurbelt werden. Alle Fenster sind zu schließen.
+13. Die Kinder dürfen das Schulgelände frühestens nach ihrem Unterrichtsschluss
+    verlassen.
+14. Auf dem Schulhof dürfen in den Pausen für Ballspiele ausschließlich Softbälle
+    benutzt werden. Basketbälle sind nur auf der Streetball-Anlage erlaubt.
+15. Außer Bällen fliegt hier nichts <i class='fa fa-smile-o'></i>! Auf dem Schulgelände dürfen keine
     Gegenstände (Eicheln, Zweige, Steine usw.) und im Winter keine Schneebälle
     geworfen werden.
-15. Fachräume haben ihre eigene Raumordnung (Aula, PC-Raum, Nawi-Raum,
-    Sporthalle etc) und dürfen ohne Erwachsenen nicht betreten werden.
-16. Der Raumwechsel erfolgt unter Anleitung der Lehrkraft.
-17. Im Schulhaus herrscht eine ruhige Atmosphäre.
+16. Fachräume haben ihre eigene Raumordnung (Aula, PC-Raum, Nawi-Raum,
+    Sporthalle etc.) und dürfen ohne Erwachsenen nicht betreten werden.
+17. Der Raumwechsel erfolgt unter Anleitung der Lehrkraft.
+18. Im Schulhaus herrscht eine ruhige Atmosphäre.
     * Ich gehe langsam! Rennen verboten!
     * Ich spreche leise! Schreien verboten!
     * Ich mache keine Spaßkämpfe und raufe/rangele nicht!
 18. **Nutzung von Mobiltelefonen**
 
-    <u>Für Eltern und Besucher*innen</u>: \\
-    **Die Nutzung von Mobiltelefonen ist auf dem Schulgelände und in den
-    Gebäuden nicht gestattet!**
-    Fotoaufnahmen zur Informationsbeschaffung sowie zum Notieren von
-    Terminen sind erlaubt.
+    <u>Für Eltern und Besucher und Besucherinnen:</u>: \\
+    **Die Nutzung von Mobiltelefonen und anderen elektronischen Geräten ist
+    auf dem Schulgelände und in den Gebäuden nicht gestattet!**
+    Fotoaufnahmen zur Informationsbeschaffung sowie das Notieren von Terminen sind
+    erlaubt.
 
     <u>Für Kinder</u>:\\
-    Führen Schüler\*innen Mobiltelefone mit, sind diese auf dem Schulgelände und
-    in den Gebäuden (Schule, Sporthalle, Hort, Mensa) während des gesamten
+    Führen Kinder Mobiltelefone, Smartwatches, Trackinguhren oder andere
+    elektronische Geräte mit, sind diese auf dem Schulgelände und in den
+    Gebäuden (Schule, Sporthalle, Hort, Mensa) während des gesamten
     Schultages ausgeschaltet in der Tasche zu lassen. Bei Zuwiderhandlung wird
     das Mobiltelefon durch eine **Lehrperson** eingezogen und nur an
     Erziehungsberechtigte wieder ausgehändigt.
