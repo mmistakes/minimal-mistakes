@@ -2,6 +2,7 @@
 layout: single
 author_profile: true
 permalink: /things-i-like/
+title: Things I like
 ---
 
 This page is a living document where I list things I really like. Fundamentally, it's a list of lists, because for certain material I use tools to keep track of items. For others, I couldn't conceive a better way than to list them here directly. My goal is just to have a single place where to keep track of everything, and to share with anyone who might be interested.
@@ -45,6 +46,7 @@ To listen to podcasts, I use Pocket Casts, but because the amount of them I eith
 * [The David McWilliams podcast](https://davidmcwilliams.ie/podcast/) (ongoing): exploring and explaining economics via the analysis of current news, it's very enjoyable
 * [More or Less: behind the statistics](https://www.bbc.co.uk/programmes/p02nrss1/episodes/downloads) (ongoing): BBC Radio 4 podcast hosted by Tim Harford, it debunks statistical myths, talks a lot about how to interpret data correctly in a very lighthearted way
 * [The curious cases of Rutherford & Fry](https://www.bbc.co.uk/programmes/b07dx75g) (ongoing): hosted by Adam Rutherford and Hannah Fry on BBC Radio 4, this podcast explores science's interesting facts and answers to people's curiosities
+* [Today, Explained](https://www.vox.com/today-explained) (ongoing): from the Vox team of the Explained Netflix documentary show, a podcast that dissects news and current affairs
 
 #### Stories
 
@@ -52,7 +54,7 @@ To listen to podcasts, I use Pocket Casts, but because the amount of them I eith
 * [Wind of change](https://crooked.com/podcast-series/wind-of-change/) (2020, finished): this is a bit out there but I decided to listen to it as it has been ideated by P Radden Keffe, whose investigative journalism work I read and appreciated. It follows and tries to investigate the rumour that the Scorpion's song "Wind of change" was written/commissioned by the CIA for propagandistic reasons. It is an interesting listen - I really hate conspiracy theories so would have never chosen this podcast but despite the wild story you can learn a lot of things about those times.
 
 
-## Articles
+## Articles - written stuff
 
 To store things I read on the Internet that I really enjoyed, I use Refind - my library with links categorised into topics [here](https://refind.com/library).
 

@@ -5,6 +5,7 @@ author_profile: true
   image: /assets/posts_images/victoria-park-autumn2021.png
   caption: Victoria Park, Edinburgh, fall 2021 -->
 permalink: /about/
+title: About me & my projects
 ---
 
 Hi! Glad you popped up here.
