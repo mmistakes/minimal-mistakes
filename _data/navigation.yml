@@ -1,8 +1,10 @@
 # main links
 main:
   - title: "About"
-    url: /
+    url: /about/
   - title: "CV"
     url: /assets/cv.pdf  
   - title: "Portfolio"
     url: /portfolio/
+  - title: "Voyage 2023"
+    url: /voyage_2023_grid/
