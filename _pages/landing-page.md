@@ -1,9 +1,10 @@
 ---
+title "FiQCI"
 layout: splash
 permalink: /
 hidden: false
 header:
-  overlay_color: "#5e616c"
+  #overlay_color: "#000"
   overlay_image: /assets/images/FiQCI-banner.jpg
 #  actions:
 #    - label: "<i class='fas fa-download'></i> Install now"
@@ -11,6 +12,10 @@ header:
 excerpt: >
   The Finnish Quantum-Computing Infrastructure<br />
   <small>small text</small>
+
+intro: 
+  - excerpt: 'Making the power of quantum computing usable'
+
 feature_row:
   - image_path: /assets/images/mm-customizable-feature.png
     alt: "customizable"
@@ -34,4 +39,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"      
 ---
+
+{% include feature_row id="intro" type="center" %}
+
 
