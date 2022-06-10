@@ -1,5 +1,5 @@
 ---
-title "FiQCI"
+title: "FiQCI"
 layout: splash
 permalink: /
 hidden: false
