@@ -1,12 +1,14 @@
 ---
 layout: single
-permalink: /group/EmmaH
+permalink: /group/emma_h
 title: "Emma Hobbs"
 toc: true
 toc_label: "Table of Contents"
 toc_icon: "book-reader"
 toc_sticky: true
 ---
+
+[Back to group members](/group)
 
 ## PhD Candidate
 

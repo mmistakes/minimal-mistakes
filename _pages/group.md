@@ -13,7 +13,7 @@ toc_sticky: true
 ### Current
 
 - Bailey Harrington (PDRA)
-- Emma Hobbs (PhD, University of St Andrews)
+- [Emma Hobbs](/group/emma_h) (PhD, University of St Andrews)
 - Angelika Kiepas (PhD)
 - Leighton Pritchard (Chancellor's Fellow, PI)
 
