@@ -218,8 +218,8 @@ public class Order{
 }
 ```
 이 코드의 의미는 호출한 해당 테이블(Order)에 name의 입력값인 `MEMBER_ID`라는 외래 키 컬럼이 생성된다.<br>
-`Order`의 `Member member`변수에 `Member` 엔티티가 할당되면 `Order`를 저장할 때 `Member`엔티티의 PK를 외래 키 컬럼인 `MEMBER_ID`에 저장하게 된다.<br>
-따라서, PK의 이름을 따로 설정하지 않아도(설정하지 않으면 기본 필드명으로 지정) PK를 외래 키 컬럼에 저장하는 것이므로 `@Column(name = "MEMBER_ID")`와 같이 PK명을 설정하는 코드를 넣지 않아도 정상 동작하는 것이다.
+`Order` 클래스의 `member`변수에 `Member` 엔티티가 할당되면 `Order`를 저장할 때 `Member`엔티티의 PK를 외래 키 컬럼인 `MEMBER_ID`에 저장하게 된다.<br>
+PK를 외래 키 컬럼에 저장하는 것이므로 `@Column(name = "MEMBER_ID")`와 같은 컬럼 설정 코드를 넣지 않아도 정상 동작하는 것이다.
 
 <br>
 
@@ -430,7 +430,7 @@ public class Order {
     @JoinColumn(name = "MEMBER_ID")
     private Member member;
 
-    @OneToOne(fetch = FetchType.LAZYm cascade = CascadeType.ALL)
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "DELIVERY_ID")
     private Delivery delivery;
 
