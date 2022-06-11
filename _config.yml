@@ -133,13 +133,13 @@ author:
 footer:
   links:
     - label: "VTT"
-      icon: "fab fa-fw fa-atom"
+      icon: "fab fa-solid fa-atom"
       url: "https://www.vttresearch.com/en"
     - label: "CSC"
-      icon: "fab fa-fw fa-atom"
+      icon: "fab fa-solid fa-atom"
       url: "https://research.csc.fi/"
     - label: "Aalto University"
-      icon: "fab fa-fw fa-atom"
+      icon: "fab fa-solid fa-atom"
       url: "https://www.aalto.fi/en"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
