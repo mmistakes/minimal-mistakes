@@ -17,29 +17,27 @@ intro:
   - excerpt: 'Making the power of quantum computing usable'
 
 feature_row:
-  - image_path: /assets/images/mm-customizable-feature.png
-    alt: "customizable"
-    title: "Super customizable"
-    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
-    url: "/docs/configuration/"
+  - image_path: /assets/images/access.jpg
+    title: "How to get access"
+    excerpt: "Access to FiQCI is granted through the LUMI supercomputing environment"
+    url: "/access"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/mm-responsive-feature.png
-    alt: "fully responsive"
-    title: "Responsive layouts"
-    excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
-    url: "/docs/layouts/"
+  - image_path: /assets/images/posts.jpg
+    title: "Posts and publications"
+    excerpt: "Blog posts, publications, and other material of interest"
+    url: "/publications"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/mm-free-feature.png
-    alt: "100% free"
-    title: "100% free"
-    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-    url: "/docs/license/"
+  - image_path: /assets/images/about.jog
+    title: "About FiQCI"
+    excerpt: "The FiQCI consortium maintains, operates, and develops the infrastructure"
+    url: "/about"
     btn_class: "btn--primary"
     btn_label: "Learn more"      
 ---
 
 {% include feature_row id="intro" type="center" %}
 
+{% include feature_row %}
 
