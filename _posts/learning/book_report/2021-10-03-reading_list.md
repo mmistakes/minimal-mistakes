@@ -90,7 +90,7 @@ This post will capture the books I have read over the years starting from 2019.
 
     1.  10/18/21 - 10/27/21
 
-    2.  A phenomenal story that seems almost unreal. I listened to the audiobook and I was taken away. The story requires some time to build up, but halfway through you can truly see, feel and emphasize what the sailors are experiencing. It has moments that will make your stomach turn and make you yell at God for his cruelty. It also has moments of satisfaction where you’re laughing and giggling. Overall, this is truly an extraordinary book that I would highly recommend.
+    2.  A phenomenal story that seems almost unreal. I listened to the audiobook, and I was taken away. The story requires some time to build up, but halfway through, you can truly see, feel and emphasize what the sailors are experiencing. It has moments that will make your stomach turn and make you yell at God for his cruelty. It also has moments of satisfaction where you’re laughing and giggling. Overall, this is truly an extraordinary book that I would highly recommend.
 
 7.  _The Outsider_ by S. E. Hinton
 
@@ -106,13 +106,13 @@ This post will capture the books I have read over the years starting from 2019.
 
 10. _Oedipus_ the King by Sophocles
 
-    1.  11/04/21 - 11/15/21
+    1. 11/04/21 - 11/15/21
 
 11. _The President and the Freedom Fighter_ by Brian Kilmeade
 
-    1.  A moving book about the life and work of Abraham Lincoln and Fredrick Douglas. Two unlikely friends in a critical time of American History. An accurate account of the two men, not glorifying them, instead truthfully outlining their actions, feelings, and views at various points in their lives. I was honestly more touched and moved by the life of Fredrick Douglas, a man who was born a slave, yet died a legend.
+    1. A moving book about the life and work of Abraham Lincoln and Fredrick Douglas. Two unlikely friends in a critical time of American History. An accurate account of the two men does not glorify them but instead truthfully outlines their actions, feelings, and views at various points in their lives. I was honestly more touched and moved by the life of Fredrick Douglas, a man who was born a slave, yet died a legend.
 
-    2.  11/10/21 - 11/23/21
+    2. 11/10/21 - 11/23/21
 
 ## 2022
 
@@ -124,7 +124,7 @@ This post will capture the books I have read over the years starting from 2019.
 
     1.  Rereading this book for the second time
 
-    2.  I got so much out of it this time around, particularly about the intuitive mind, and developing a natural feel for your realm.
+    2.  I got so much out of it this time around, particularly about the intuitive mind and developing a natural feel for your realm.
 
     3.  11/27/21 - 02/08/22
 
@@ -136,50 +136,60 @@ This post will capture the books I have read over the years starting from 2019.
 
     1.  01/16/2021 - 04/22/2022
 
-5.  _Theodore Roosevelt, An Autobiography_ by Theodore Roosevelt - **[In Progress]**
+5.  _The Four Agreements_ by Don Miguel Ruiz
+
+    1.  04/22/2022 - 06/10/2022
+
+    2.  I have just finished _The Four Agreements_ by Don Miguel Ruiz, a terrific author. His book [The Mastery of Love](/categories/learning/book_report/the_mastery_of_love) is one of my favorites, and Ruiz never fails to deliver. Every line in this book packs a punch and carries great meaning. I highly recommend this book to everyone, and I hold every agreement in high regard.
+
+6.  _A New Earth: Awakening to Your Life's Purpose_ by Eckhart Tolle - **[In Progress]**
+
+    1.  06/xx/2022 - TBD
+
+    2.  A special thank you to my great friend Trevor for gifting this book to me.
+
+7.  _Theodore Roosevelt, An Autobiography_ by Theodore Roosevelt - **[In Progress]**
 
     1.  03/24/2022 - TBD
 
-6.  _The Four Agreements_ by Don Miguel Ruiz - **[In Progress]**
-
-    1.  04/22/2022 - TBD
-
-7.  _The Daily Laws: 366 Meditations on Power, Seduction, Mastery, Strategy, and Human Nature_ by Robert Greene - **[In Progress]**
+8.  _The Daily Laws: 366 Meditations on Power, Seduction, Mastery, Strategy, and Human Nature_ by Robert Greene - **[In Progress]**
 
     1.  11/01/21 - TBD
 
     2.  I read a page a day.
 
-8.  _Meditations_ by Marcus Aurelius - **[In Progress]**
+9.  _Meditations_ by Marcus Aurelius - **[In Progress]**
 
     1.  I occasionally read a single passage.
 
     2.  N/A - TBD
 
-9.  _Analysis I_ by Terrance Tao - **[Paused]**
+10. _Analysis I_ by Terrance Tao - **[Paused]**
 
-    1.  12/31/2021 - TBD
+    1. 12/31/2021 - TBD
 
 # Books to Read
 
 1.  The 48 Laws of Power by Robert Greene
 
-2.  A New World by Eckhart Tolle
+2.  The Infinite Machine: How an Army of Crypto-hackers Is Building the Next Internet with Ethereum
 
-3.  The Circadian Code by Satchin Panda
+3.  The Cryptopians: Idealism, Greed, Lies, and the Making of the First Big Cryptocurrency Craze
 
-4.  Game Theory by Giacomo Bonanno
+4.  The Circadian Code by Satchin Panda
 
-5.  Power vs. Force: The Hidden Determinants of Human Behavior
+5.  Game Theory by Giacomo Bonanno
 
-6.  So Good They Can't Ignore Me
+6.  Power vs. Force: The Hidden Determinants of Human Behavior
 
-7.  The Iliad by Homer
+7.  Inner Engineering: A Yogi's Guide to Joy by Sadguru
 
-8.  Theodore Roosevelt, An Autobiography
+8.  The 50th Law
 
-9.  The War of Art
+9.  The Iliad by Homer
 
-10. The Holy Quran, English Translation
+10. The War of Art
 
-11. Macroeconomics: Principles, Applications, and Tools by
+11. The Holy Quran, English Translation
+
+12. Macroeconomics: Principles, Applications, and Tools by
