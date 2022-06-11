@@ -29,7 +29,7 @@ feature_row:
     url: "/publications"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/about.jog
+  - image_path: /assets/images/about.jpg
     title: "About FiQCI"
     excerpt: "The FiQCI consortium maintains, operates, and develops the infrastructure"
     url: "/about"
