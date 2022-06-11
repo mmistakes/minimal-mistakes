@@ -4,6 +4,19 @@
  * Licensed under MIT (https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE)
 */
 
+
+.icon-color-vtt {
+  color: coral;
+}
+
+.icon-color-csc {
+  color: aqua;
+}
+
+.icon-color-aalto {
+  color: yellow;
+}
+
 /* Variables */
 @import "minimal-mistakes/variables";
 
@@ -39,15 +52,3 @@
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
 
-
-.icon-color-vtt {
-  color: coral;
-}
-
-.icon-color-csc {
-  color: aqua;
-}
-
-.icon-color-aalto {
-  color: yellow;
-}
