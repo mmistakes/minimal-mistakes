@@ -8,7 +8,7 @@ header:
   overlay_image: /assets/images/FiQCI-banner.jpg
 excerpt: >
   The Finnish Quantum-Computing Infrastructure<br />
-  <small>Access</small>
+  <small></small>
 
 intro: 
   - excerpt: 'Access to FiQCI is granted through the LUMI supercomputing environment'
