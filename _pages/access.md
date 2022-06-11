@@ -1,7 +1,7 @@
 ---
 title: "Access"
 layout: splash
-permalink: /
+permalink: /access
 hidden: false
 header:
   #overlay_color: "#000"
