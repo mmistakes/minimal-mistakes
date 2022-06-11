@@ -14,7 +14,7 @@ excerpt: >
   <small></small>
 
 intro: 
-  - excerpt: 'Making the power of quantum computing accesible'
+  - excerpt: 'Making the power of quantum computing accessible'
 
 feature_row:
   - image_path: /assets/images/access-icon.png
