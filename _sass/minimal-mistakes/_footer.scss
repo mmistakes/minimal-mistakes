@@ -44,6 +44,17 @@
   .fal {
     color: $muted-text-color;
   }
+  .icon-color-vtt {
+  color: coral;
+  }
+
+  .icon-color-csc {
+  color: aqua;
+  }
+
+  .icon-color-aalto {
+  color: yellow;
+  }
 }
 
 .page__footer-copyright {
@@ -81,20 +92,7 @@
     a {
       white-space: nowrap;
     }
-  }
-   
-  .icon-color-vtt {
-  color: coral;
-  }
-
-  .icon-color-csc {
-  color: aqua;
-  }
-
-  .icon-color-aalto {
-  color: yellow;
-  }
-    
+  }  
 }
 
 
