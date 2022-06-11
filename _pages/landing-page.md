@@ -11,10 +11,10 @@ header:
 #      url: "/docs/quick-start-guide/"
 excerpt: >
   The Finnish Quantum-Computing Infrastructure<br />
-  <small>small text</small>
+  <small></small>
 
 intro: 
-  - excerpt: 'Making the power of quantum computing usable'
+  - excerpt: 'Making the power of quantum computing accesible'
 
 feature_row:
   - image_path: /assets/images/access-icon.png
