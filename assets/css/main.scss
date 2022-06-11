@@ -4,6 +4,18 @@
 
 @charset "utf-8";
 
+.icon-color-vtt {
+  color: coral;
+}
+
+.icon-color-csc {
+  color: aqua;
+}
+
+.icon-color-aalto {
+  color: yellow;
+}
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
