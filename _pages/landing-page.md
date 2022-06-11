@@ -17,19 +17,19 @@ intro:
   - excerpt: 'Making the power of quantum computing usable'
 
 feature_row:
-  - image_path: /assets/images/access.jpg
+  - image_path: /assets/images/access-icon.png
     title: "How to get access"
     excerpt: "Access to FiQCI is granted through the LUMI supercomputing environment"
     url: "/access"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/posts.jpg
+  - image_path: /assets/images/posts-icon.jpg
     title: "Posts and publications"
     excerpt: "Blog posts, publications, and other material of interest"
     url: "/publications"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/about.jpg
+  - image_path: /assets/images/about-icon.jpg
     title: "About FiQCI"
     excerpt: "The FiQCI consortium maintains, operates, and develops the infrastructure"
     url: "/about"
