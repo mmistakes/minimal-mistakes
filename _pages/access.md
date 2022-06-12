@@ -1,20 +1,17 @@
 ---
-title: "FiQCI"
+title: "Access"
 layout: splash
-permalink: /
+permalink: /access
 hidden: false
 header:
   #overlay_color: "#000"
   overlay_image: /assets/images/FiQCI-banner.jpg
-#  actions:
-#    - label: "<i class='fas fa-download'></i> Install now"
-#      url: "/docs/quick-start-guide/"
 excerpt: >
   The Finnish Quantum-Computing Infrastructure<br />
   <small></small>
 
 intro: 
-  - excerpt: 'Making the power of quantum computing accessible'
+  - excerpt: 'Access to FiQCI is granted through the LUMI supercomputing environment'
 
 feature_row:
   - image_path: /assets/images/access-icon.png
@@ -39,5 +36,7 @@ feature_row:
 
 {% include feature_row id="intro" type="center" %}
 
-{% include feature_row %}
+Here we have some text about this topic.
 
+
+{% include feature_row %}
