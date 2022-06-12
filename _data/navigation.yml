@@ -1,7 +1,7 @@
 
 main:
 
- - title: "어바웃"
+ - title: "About"
    url: https://theformat.github.io/about/
   - title: "Blog"
     url: /categories/blog/
