@@ -106,13 +106,10 @@ analytics:
 author:
   name             : "The Format, Ragtag, freddy"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "코린이, 코내기"
+  bio              : "코린이, 코내기<br/> - 고려대학교(KR Univ)<br/> ㄴ 자랑할게 이거밖에 없는 무식이"
   location         : "Daegu, Korea"
   email            : "freddy1109@naver.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:freddy1109@naver.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/TheFormat"
