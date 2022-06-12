@@ -5,6 +5,7 @@ excerpt: "블로거를 향한 첫걸음"
 summary: 첫걸음이다
 author: freddy
 date: '2022-06-12 15:59'
+last_modified_at: 2022-06-12T15:59:00
 ---
 블로그는 처음이에요
 ## 내용1
