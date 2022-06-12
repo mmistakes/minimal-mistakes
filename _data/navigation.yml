@@ -1,11 +1,7 @@
 
+# main links
 main:
-
- - title: "About"
-   url: https://theformat.github.io/about/
-  - title: "Blog"
-    url: /categories/blog/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
+  - title: "어바웃"
+    url: /about/
+  - title: "포스트"
+    url: https://theformat.github.io/blog/First_post/
