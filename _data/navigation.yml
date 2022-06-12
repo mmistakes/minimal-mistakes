@@ -1,6 +1,9 @@
 # main links
 main:
-  - title: ""
+  - title: "포스트"
     url: https://theformat.github.io/blog/First_post/
   - title: "어바웃"
     url: /about/
+  - title: "사공사"
+    url: /404.html
+
