@@ -7,11 +7,11 @@ It consists of two posts:
 - open-mic-announcement: includes when and where the next open mic session will take place. 
   - it should be published around two weeks before the session
   - We should update the topic of the session at least 3 days before the session
-- Open Mic session: includes the session materials (video and presntation)
+- Open Mic session: includes the session materials (video and presentation)
 ### How To Create The Posts:
 There are two templates, one for sessions and one for announcements. 
 Templates are located in the folder _draft and contain instructions:
-- CREATE A COPY TO THE _POSTS FOLDER AND RENAME IT TO [date]-[name] and then follow instructions how it shall look like.
+- CREATE A COPY TO THE _POSTS FOLDER AND RENAME IT TO [date]-[name].markdown and then follow instructions in it how it shall look like.
 -  Create new post both for announcement and past session.
 -  Create **PULL REQUEST** and send it for **REVIEW** and **MERGE**
 ### Where Can I Find The Open Mic Session Link
