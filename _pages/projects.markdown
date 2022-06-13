@@ -23,8 +23,6 @@ and technologies in the aforementioned information systems. The topic of our res
 - Semantic Web-based information systems and software libraries
 - Ontology-based information extraction from text
 
- **TODO: add newer projects, e.g. IPR**
-
 ## Semantic Vocabulary Management Tool for Urban Planning Data (OPPPR FEL ICT)
 
 The project lasted from 1st January 2018 to the 30th June 2020 and dealt with the development of a vocabulary and the semantic model in the Urban Planning domain. Project partner was Prague Institute of Planning and Development. During the project was used and further developed a Semantic Vocabulary Management Tool called Termit. In the project it was used exclusively for development of ontologies describing Urban Planning Data.
