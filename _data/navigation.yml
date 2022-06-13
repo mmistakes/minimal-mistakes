@@ -3,7 +3,7 @@ main:
   - title: "About me"
     url: /about_me/
   - title: "CV"
-    url: https://raw.githubusercontent.com/NikitaFedik/nikitafedik.github.io/master/assets/CV_Nikita_Fedik_06_06_22.pdf
+    url: https://raw.githubusercontent.com/NikitaFedik/nikitafedik.github.io/master/assets/CV.pdf
   - title: "Publications"
     url: /publications/
   - title: "Awards"
