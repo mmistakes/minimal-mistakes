@@ -13,7 +13,7 @@ header:
   caption: "Photo credit: [**Markus Spiske**](https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [**Unsplash**](http://unsplash.com/)"
 ---
 
-The KBSS team produces two types of outputs: ontologies and software to maintain them.
+The KBSS team produces mainly two types of artefacts -- ontologies and software. We develop ontology-based domain-specific information systems as well as tools to maintain ontologies.
 
 ## Ontologies
 
@@ -23,7 +23,6 @@ Ontology design is one of our primary research topics. We have built several ont
 
 Ontology to describe resources as they are used in [TermIt](#termit) software. It reuses [Dataset description ontology](#dataset-description-ontology).
 
-*TODO: add ontology schema*
 
 [GitHub repository with Turtle serialization](https://github.com/kbss-cvut/termit/tree/master/ontology){: .btn .btn--info}
 
