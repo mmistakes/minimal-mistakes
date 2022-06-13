@@ -26,15 +26,16 @@ While there are COVID restrictions in place (and it remains convenient) these wi
 
 ## Next Meeting/Meeting Archive
 
-| Date                | Location                  | Speaker            |
-|:-------------------:|:-------------------------:|:------------------:|
-| Mon 13th June 2022  | Zoom (see calendar link)  | Angelika Kiepas    |
+| Date                | Location                 | Speaker            |
+|:-------------------:|:------------------------:|:------------------:|
+| Mon 20th June 2022  | TBC                      | Leighton Pritchard |
 
 
 ### Past meetings
 
 | Date                | Location                 | Speaker            |
 |:-------------------:|:------------------------:|:------------------:|
+| Mon 13th June 2022  | Zoom (see calendar link) | Angelika Kiepas    |
 | Mon 6th June 2022   | Zoom (see calendar link) | Emma Hobbs         |
 
 ### Future Meeting Schedule
@@ -43,7 +44,6 @@ This schedule is tentative - if you cannot attend a meeting where you are schedu
 
 | Date                | Location                 | Speaker            |
 |:-------------------:|:------------------------:|:------------------:|
-| Mon 13th June 2022  | Zoom (see calendar link) | Angelika Kiepas    |
 | Mon 20th June 2022  | TBC                      | Leighton Pritchard |
 | Mon 27th June 2022  | TBC                      | TBC                |
 | Mon 4th July 2022   | TBC                      | Julianna Piat      |
