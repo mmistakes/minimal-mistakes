@@ -28,6 +28,8 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 logo                     : "/assets/images/FiQCI-logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
+# show_date                : true
+date_format              : "%Y-%m-%d"
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -165,6 +167,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - files
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -218,6 +221,11 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:path/
 
 # Sass/SCSS
 sass:
@@ -286,6 +294,7 @@ compress_html:
     envs: development
 
 
+
 # Defaults
 defaults:
   # _posts
@@ -293,9 +302,21 @@ defaults:
       path: ""
       type: posts
     values:
+      show_date: true
       layout: single
       author_profile: true
       read_time: true
       comments: # true
       share: true
       related: true
+  # _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      show_date: true
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      comments: true
