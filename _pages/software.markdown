@@ -71,7 +71,6 @@ We develop end user systems and tools as well software libraries used by other s
 
 #### TermIt
 
-*TODO: add some screenshots*
 TermIt is a SKOS-compatible terminology manager and editor.
 
 [TermIt Website](https://kbss-cvut.github.io/termit-web/){: .btn .btn--info}
@@ -91,7 +90,7 @@ The dataset dashboard is a tool for getting a quick overview over a SPARQL endpo
 OntoMind is a tool for semantic mind mapping. We used it in the [MONDIS project](https://mondis.cz) for monument damage example management.
 
 [Detailed description]({{"/software/ontomind" | relative_url}}){: .btn .btn--info}
-*TODO Source code*{: .btn .btn--info}
+
 
 #### OWLDiff
 
