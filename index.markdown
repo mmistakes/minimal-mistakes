@@ -52,7 +52,7 @@ feature_row:
     btn_label: "Introduce me to the details"
     url: /technical-details-->
 
-We are Knowledge-based and Software Systems Group currently located at the department of computer engineering of the Faculty of Electrotechnical Engineering at Czech Technical University in Prague. Follow our pages to see what is new.
+We are Knowledge-based and Software Systems Group located at the [Department of Computer Science and Engineering](https://cs.felk.cvut.cz/) of the Faculty of Electrotechnical Engineering at Czech Technical University in Prague. Follow our pages to see what is new.
 
 {% include feature_row %}
 
