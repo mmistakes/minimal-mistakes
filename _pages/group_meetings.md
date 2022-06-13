@@ -26,6 +26,13 @@ While there are COVID restrictions in place (and it remains convenient) these wi
 
 ## Next Meeting/Meeting Archive
 
+| Date                | Location                  | Speaker            |
+|:-------------------:|:-------------------------:|:------------------:|
+| Mon 13th June 2022  | Zoom (see calendar link)  | Angelika Kiepas    |
+
+
+### Past meetings
+
 | Date                | Location                 | Speaker            |
 |:-------------------:|:------------------------:|:------------------:|
 | Mon 6th June 2022   | Zoom (see calendar link) | Emma Hobbs         |
