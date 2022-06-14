@@ -13,10 +13,10 @@ toc_sticky: true
 ### Current Members
 
 - <img src="https://github.com/baileythegreen.png" alt="GitHub avatar for @baileythegreen" width="20"> Bailey Harrington (PDRA)
-- <img src="https://github.com/hobnobmancer.png" alt="GitHub avatar for @hobnobmancer" width="20"> [Emma Hobbs](/group/emma_h) (PhD, University of St Andrews)
+- <img src="https://github.com/hobnobmancer.png" alt="GitHub avatar for @hobnobmancer" width="20"> [Emma Hobbs](/group/bios/emma_h) (PhD, University of St Andrews)
 - <img src="https://github.com/kiepczi.png" alt="GitHub avatar for @kiepczi" width="20"> Angelika Kiepas (PhD)
 - <img src="https://github.com/JuliannaPiat.png" alt="GitHub avatar for @JuliannaPiat" width="20"> Julianna Piat (PhD, University of Oxford)
-- <img src="https://github.com/widdowquinn.png" alt="GitHub avatar for @widdowquinn" width="20"> Leighton Pritchard (Chancellor's Fellow, PI)
+- <img src="https://github.com/widdowquinn.png" alt="GitHub avatar for @widdowquinn" width="20"> [Leighton Pritchard](/group/bios/leighton) (Chancellor's Fellow, PI)
 
 - <img src="https://github.com/tharis.png" alt="GitHub avatar for @tharis" width="20"> Tom Harris (PhD, sup: Arnaud Javelle)
 - Tom Hender (PhD, sup: Nick Tucker)

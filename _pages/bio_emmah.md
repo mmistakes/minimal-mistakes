@@ -1,14 +1,13 @@
 ---
 layout: single
-permalink: /group/emma_h
+permalink: /group/bios/emma_h
 title: "Emma Hobbs"
 toc: true
 toc_label: "Table of Contents"
 toc_icon: "book-reader"
 toc_sticky: true
+categories: Bio
 ---
-
-[Back to group members](/group)
 
 ## PhD Candidate
 
