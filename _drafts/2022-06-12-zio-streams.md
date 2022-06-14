@@ -109,30 +109,85 @@ The main use case of a ZPipeline is to separate out reusable transform logic,
 that can then be composed together with other ZPipelines, and then placed in
 between any appropriate ZStream and a ZSink.
 
-From our example above, instead of rewriting `take5Map` as `take5Strings` with
-contramap, we could separate that logic out, and use our original ZSink:
+From our example above, let's say we wanted to sum the stream of Strings.
+Instead of adapting our `sum` ZSink with contramap, we can write:
 
 ```scala
-  //stringStream.run(take5Map) <- This doesn't compile
+  //stringStream.run(sum) <- This doesn't compile
   val businessLogic: ZPipeline[Any, Nothing, String, Int] = ZPipeline.map[String, Int](_.toInt)
-  val zio: ZIO[Any, Nothing, Chunk[String]] = stringStream.via(businessLogic).run(take5Map)
+  val zio: ZIO[Any, Nothing, Int] = stringStream.via(businessLogic).run(sum)
 ```
 
 ## Handling Failures
 
-Don't blow your top.
+If we think of some `val s1: ZStream[R, E, A]`:
+
+we can use the `orElse` methods to directly provide the recovery stream. The
+interesting thing of `orElseEither` is that we can distinguish the transition
+when s1 failed, and s2 was used, as s1 values would be a `Left` and values from
+s2 would be `Right`.
+
+```scala
+s1.orElse(s2: => ZStream[R1, E1, A1]): ZStream[R1, E1, A1]
+s1.orElseEither(s2: => ZStream[R1, E1, A1]): ZStream[R1, E1, Either[A, A1]]
+```
+
+If we want to recover from specific failures via
+`PartialFunction[E, ZStream[R1, E1, A1]]`s (and causes), we can use `catchSome`
+( or `catchSomeCause`)
+
+```scala
+s1.catchSome {
+  case e1: Error1 => s2
+}
+```
+
+If we want to exhaustively recover from errors via `E => ZStream[R1, E2, A1]`)
+(and causes), we can use `catchAll` (or `catchAllCause`)
+
+```scala
+s1.catchAll {
+  case e1: Error1 => s2
+  case e2: Error2 => s3
+  case _          => s4
+}
+```
+
+If we want to push our error handling downwards, we can also transform a
+`ZStream[R, E, A]` to `ZStream[R, Nothing, Either[E, A]]` via `either` (e.g.
+`s1.either`).
+
+Recovering form a failure in a ZStream generally revolves around providing a
+secondary stream to recover with. If you are looking to recover "in-place", by
+effectively just dropping that element, you could do something like
+`s1.either.collectRight`. For more robust solutions, we would likely need to
+encode that logic elsewhere.
 
 ## ZStream Operations
 
 The useful stuff.
 
-## ZStream Operations
-
-Probably useful stuff.
-
 ## ZSink Operations
 
 Also useful stuff.
+
+## Crossing the ZStreams
+
+example:
+
+```scala
+  val program: ZIO[Any, Throwable, ExitCode] = for {
+    queue <- Queue.unbounded[Int]
+    producer <- dirtyStream.via(parsePipeline)
+      .run(ZSink.fromQueueWithShutdown(queue))
+      .fork
+    result <- ZStream.fromQueue(queue)
+      .run(ZSink.sum[Int]).debug("sum")
+      .fork
+    _ <- producer.join
+    _ <- result.join
+  } yield ExitCode.success
+```
 
 ## An example
 
