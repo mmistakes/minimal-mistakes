@@ -9,7 +9,7 @@ tags:
  - bloom filters
  - Locality sensitive hashing
  - pathogen monitoring
- - open
+ - closed
 published: true
 header:
   teaser: "/assets/images/containment.jpg"
@@ -114,8 +114,8 @@ enable large-scale metagenomic search projects.</p>
 
 
 
-We will be filling this position as soon as possible. For full consideration please apply by **June 30, 2022**
-{: .notice--danger}
+This position has been filled, it is visible for archival purposes.
+{: .notice--warning}
 
 # Scientific Challenge
 
