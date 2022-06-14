@@ -25,7 +25,7 @@ feature_row:
   - image_path: /assets/images/free-to-use-sounds-kOuCX7fh50U-unsplash.jpg
     alt: "Join the Lab"
     title: "Join the Lab"
-    excerpt: "We are hiring two computatioanl biology postdocs"
+    excerpt: "We are currently hiring a computatioanl biology postdoc"
     url: "/jobs/"
     btn_label: "Learn More"
     btn_class: "btn--info"
