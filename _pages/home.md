@@ -12,7 +12,7 @@ feature_row:
   - image_path: /assets/fontawesome/svgs/solid/people-roof.svg
     alt: "group info"
     title: "Group Info"
-    excerpt: "About the group and resources for the research group."
+    excerpt: "Resources and bios for the research group."
     url: "./group"
     btn_class: "btn--primary"
     btn_label: "Group Info"
