@@ -10,14 +10,15 @@ toc_sticky: true
 
 ## Group Members
 
-### Current
+### Current Members
 
-- Bailey Harrington (PDRA)
-- Emma Hobbs (PhD, University of St Andrews)
-- Angelika Kiepas (PhD)
-- Leighton Pritchard (Chancellor's Fellow, PI)
+- <img src="https://github.com/baileythegreen.png" alt="GitHub avatar for @baileythegreen" width="20"> Bailey Harrington (PDRA)
+- <img src="https://github.com/hobnobmancer.png" alt="GitHub avatar for @hobnobmancer" width="20"> [Emma Hobbs](/group/bios/emma_h) (PhD, University of St Andrews)
+- <img src="https://github.com/kiepczi.png" alt="GitHub avatar for @kiepczi" width="20"> Angelika Kiepas (PhD)
+- <img src="https://github.com/JuliannaPiat.png" alt="GitHub avatar for @JuliannaPiat" width="20"> Julianna Piat (PhD, University of Oxford)
+- <img src="https://github.com/widdowquinn.png" alt="GitHub avatar for @widdowquinn" width="20"> [Leighton Pritchard](/group/bios/leighton) (Chancellor's Fellow, PI)
 
-- Tom Harris (PhD, sup: Arnaud Javelle)
+- <img src="https://github.com/tharis.png" alt="GitHub avatar for @tharis" width="20"> Tom Harris (PhD, sup: Arnaud Javelle)
 - Tom Hender (PhD, sup: Nick Tucker)
 
 - Yassmeen Ali (MSc, 2022)
@@ -25,11 +26,11 @@ toc_sticky: true
 - Areej Obaid (MSc, 2022)
 - David Teixeira (SfAM-funded Internship, 2022)
 
-### Former
+### Alumni
 
 - Rory McLeod (PhD, 2016-2020, University of Dundee)
 - Christelle Robert (PhD, 2006-2009, University of Dundee)
-- Nick Waters (PhD, 2016-2020, NUI Galway)
+- <img src="https://github.com/nickp60.png" alt="GitHub avatar for @nickp60" width="20"> Nick Waters (PhD, 2016-2020, NUI Galway)
 - Eirini Xemantilotou (PhD, 2015-2019, University of St Andrews)
 
 - Ramzi Alahmadi (MSc, 2021)
