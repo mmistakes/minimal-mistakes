@@ -6,6 +6,8 @@ main:
     url: /publications
   - title: "About"
     url: /about
+  # - title: "Github"
+  #   url: https://github.com/FiQCI/fiqci.github.io
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
