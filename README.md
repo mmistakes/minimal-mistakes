@@ -59,9 +59,12 @@ If you get errors try deleting `Gemfile.lock`.
 
 Ruby and it's different versions and environments can cause problems. A simple solution is to use Docker and install ruby inside it's own container. A docker container can be started through `docker compose up -d ` using the given `docker-compose.yml` file given. 
 
-## Editing
+## Editing and Contributing
+
+If you wish to add your own posts/publications or contribute to the website please see [CONTRIBUTING](CONTRIBUTING.MD) for help and guidelines.
 
 This website is built using Jekyll with the minimal mistakes theme. To find out more about jekyll, take a look at the docs: https://jekyllrb.com/docs/. 
 
 
 If you have made a change to the `_config.yml` file you will need to delete `_site` (e.g `rm -r _site/`) and rebuild.
+
