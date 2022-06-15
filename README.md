@@ -43,9 +43,9 @@ For further information:
 
 ## Requirements and building 
 
-Building the website locally requires `ruby` and `jekyll`. Ruby is install on most systems, however more details can be found [here](https://www.ruby-lang.org/en/documentation/installation/). For help installing `jekyll` see [here](https://jekyllrb.com/docs/installation/).
+Building the website locally requires `ruby` and `jekyll`. Ruby is installed on most systems, however more details can be found [here](https://www.ruby-lang.org/en/documentation/installation/). For help installing `jekyll` see [here](https://jekyllrb.com/docs/installation/).
 
-### Using Ruby
+### Using the command line
 
 Using the default configuration files: 
 
