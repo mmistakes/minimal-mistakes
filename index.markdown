@@ -13,13 +13,13 @@ header:
 
 feature_row:
   - image_path: /assets/images/archive/openmic-thumb.jpg
-    title: "Open mic sessions"
+    #title: "Open mic sessions"
     excerpt: "Tech presentations every other friday."
     btn_label: "Open Mic"
     btn_class: "btn--info"
     url: /open-mic
   - image_path: /assets/images/teaching/teaching-thumb.jpg #https://unsplash.com/@jdiegoph Diego PH
-    title: "Teaching"
+    #title: "Teaching"
     excerpt: "Subjects and theses topics."
     btn_label: "Teaching"
     btn_class: "btn--info"
@@ -52,7 +52,7 @@ feature_row:
     btn_label: "Introduce me to the details"
     url: /technical-details-->
 
-We are Knowledge-based and Software Systems Group currently located at the department of computer engineering of the Faculty of Electrotechnical Engineering at Czech Technical University in Prague. Follow our pages to see what is new.
+We are Knowledge-based and Software Systems Group located at the [Department of Computer Science and Engineering](https://cs.felk.cvut.cz/) of the Faculty of Electrotechnical Engineering at Czech Technical University in Prague. Follow our pages to see what is new.
 
 {% include feature_row %}
 
