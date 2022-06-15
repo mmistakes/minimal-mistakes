@@ -13,13 +13,13 @@ header:
 
 feature_row:
   - image_path: /assets/images/archive/openmic-thumb.jpg
-    title: "Open mic sessions"
+    #title: "Open mic sessions"
     excerpt: "Tech presentations every other friday."
     btn_label: "Open Mic"
     btn_class: "btn--info"
     url: /open-mic
   - image_path: /assets/images/teaching/teaching-thumb.jpg #https://unsplash.com/@jdiegoph Diego PH
-    title: "Teaching"
+    #title: "Teaching"
     excerpt: "Subjects and theses topics."
     btn_label: "Teaching"
     btn_class: "btn--info"
