@@ -240,7 +240,7 @@
 
 .feature__wrapper {
   @include clearfix();
-  margin-bottom: 2em;
+  margin-bottom: 0em;
   border-bottom: 1px solid $border-color;
 
   .archive__item-title {
@@ -250,7 +250,7 @@
 
 .feature__item {
   position: relative;
-  margin-bottom: 2em;
+  margin-bottom: 5em;
   font-size: 1.125em;
 
   @include breakpoint($small) {
