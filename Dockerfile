@@ -1,6 +1,6 @@
 FROM ubuntu:latest 
 
-LABEL maintainer="CSC Service Desk <servicedesk@csc.fi>"
+LABEL maintainer="fiqci-docs"
 
 # These need to be owned and writable by the root group in OpenShift
 ENV ROOT_GROUP_DIRS='/var/run /var/log/nginx /var/lib/nginx'
@@ -14,9 +14,10 @@ RUN apt-get -y update &&\
     apt-get -y install software-properties-common &&\
     add-apt-repository universe &&\
     add-apt-repository multiverse &&\
-    apt-get -y install build-essential ruby ruby-dev &&\
+    apt-get -y install build-essential ruby-full ruby-dev zlib1g-dev &&\
     gem install jekyll bundler &&\
-    gem install minima &&\
+    gem install minimal-mistakes-jekyll &&\
+    gem install webrick &&\
     jekyll build -d /usr/share/nginx/html &&\
     apt-get clean 
 
