@@ -25,7 +25,8 @@ and technologies in the aforementioned information systems. The topic of our res
 
 ## Semantic Vocabulary Management Tool for Urban Planning Data (OPPPR FEL ICT)
 
-The project dealt with the development of a vocabulary and the semantic model in the Urban Planning domain. Project partner was Prague Institute of Planning and Development. During the project, a Semantic Vocabulary Management Tool called Termit was used and further developed . In the project it was used exclusively for development of ontologies describing Urban Planning Data.
+The project dealt with the development of a vocabulary and semantic model in the domain of urban planning in cooperation with the project partner - Prague Institute of Planning and Development.
+A Semantic vocabulary management tool called [TermIt](http://kbss-cvut.github.io/termit-web) as well as a document annotation service - [Annotace](https://github.com/kbss-cvut/annotace) were developed and used in the project.
 
 **Duration:** | [1st January 2018 to the 30th June 2020](#semantic-vocabulary-management-tool-for-urban-planning-data-opppr-fel-ict){: .btn .btn--inverse}
 **Partners:** |[Prague Institute of Planning and Development](https://iprpraha.cz/en/){: .btn .btn--inverse}
