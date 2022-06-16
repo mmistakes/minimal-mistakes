@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Software
+title: Ontologies and Software
 permalink: /software
 lang: en
 lang-ref: software
