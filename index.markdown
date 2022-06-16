@@ -12,19 +12,23 @@ header:
  caption: "Photo credit: [**Scott Webb**](https://unsplash.com/@scottweb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [**Unsplash**](http://unsplash.com/)"
 
 feature_row:
-  - image_path: /assets/images/archive/openmic-thumb.jpg
-    #title: "Open mic sessions"
-    excerpt: "Tech presentations every other friday."
-    btn_label: "Open Mic"
+  - image_path: /assets/images/research/research2-thumb.jpg
+    excerpt: "Research is the main focus of the group."
+    btn_label: "Research"
     btn_class: "btn--info"
-    url: /open-mic
+    url: /research
   - image_path: /assets/images/teaching/teaching-thumb.jpg #https://unsplash.com/@jdiegoph Diego PH
     #title: "Teaching"
     excerpt: "Subjects and theses topics."
     btn_label: "Teaching"
     btn_class: "btn--info"
     url: /teaching
-
+  - image_path: /assets/images/archive/openmic-thumb.jpg
+    #title: "Open mic sessions"
+    excerpt: "Tech presentations takes place every other friday."
+    btn_label: "Open Mic"
+    btn_class: "btn--info"
+    url: /open-mic
 ---
 <!--
  header:
