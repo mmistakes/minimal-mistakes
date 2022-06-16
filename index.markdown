@@ -25,7 +25,7 @@ feature_row:
     url: /teaching
   - image_path: /assets/images/archive/openmic-thumb.jpg
     #title: "Open mic sessions"
-    excerpt: "Tech presentations taking place every other friday."
+    excerpt: "Tech presentations taking place every other Friday."
     btn_label: "Open Mic"
     btn_class: "btn--info"
     url: /open-mic
