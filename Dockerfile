@@ -5,9 +5,7 @@ LABEL maintainer="fiqci-docs"
 # These need to be owned and writable by the root group in OpenShift
 ENV ROOT_GROUP_DIRS='/var/run /var/log/nginx /var/lib/nginx'
 
-COPY . /tmp
-
-WORKDIR /tmp
+ARG repo_branch=master
 
 RUN apt-get -y update &&\
     apt-get -y install nginx &&\
@@ -25,6 +23,20 @@ RUN chgrp -R root ${ROOT_GROUP_DIRS} &&\
     chmod -R g+rwx ${ROOT_GROUP_DIRS}
 
 
+COPY . /tmp
+
+WORKDIR /tmp
+
+
+RUN git clone --no-checkout https://github.com/FiQCI/dev.git git_folder && \
+    mv git_folder/.git . && \
+    rm -r git_folder && \
+    git reset HEAD --hard && \
+    git checkout -f $repo_branch 
+
+RUN bundle clean --force && \
+    bundle install && \
+    bundle exec jekyll serve && \
 
 
 COPY nginx.conf /etc/nginx
