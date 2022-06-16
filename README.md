@@ -52,12 +52,21 @@ Using the default configuration files:
 1. Run `bundle clean` to clean up the directory
 2. `bundle install` installs the necessary packages such as `jekyll` etc.
 3. `bundle exec jekyll serve`
+4. Then navigate to [http://localhost:4000/](http://localhost:4000/).
 
 If you get errors try deleting `Gemfile.lock`. 
 
 ### Using Docker
 
 Ruby and it's different versions and environments can cause problems. A simple solution is to use Docker and install ruby inside it's own container. A docker container can be started through `docker compose up -d ` using the given `docker-compose.yml` file given. 
+
+Then navigate to [http://localhost:4000/](http://localhost:4000/). 
+
+1. `docker compose up -d `
+2. Then navigate to [http://localhost:4000/](http://localhost:4000/).   
+
+Ensure that there isn't a current container assigned to the `4000:4000`. This can be resolved by for example removing an old version of the docker container `docker rm xyz` where `xyz` is the first 3 letters of the container id found through `docker ps -a`. 
+
 
 ## Editing and Contributing
 
