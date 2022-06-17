@@ -57,7 +57,8 @@ operation you are performing. For example, if your intention is to sum a stream
 of integers, you wouldn't expect there to be anything left over.
 
 ```scala
-  val sum: ZSink[Any, Nothing, Int, Nothing, Int] = ZSink.sum[Int]
+  val sum: ZSink[Any, Nothing, Int, Nothing, Int] = 
+    ZSink.sum[Int]
 ```
 
 On the other hand, an operation like `take` implies that there are possibly
@@ -65,10 +66,10 @@ elements you are not operating on. Let's also map our output, so we can see a
 different output type.
 
 ```scala
-  val take5: ZSink[Any, Nothing, Int, Int, Chunk[Int]] = 
+  val take5: ZSink[Any, Nothing, Int, Int, Chunk[Int]] =
     ZSink.take[Int](5)
-  
-  val take5Map: ZSink[Any, Nothing, Int, Int, Chunk[String]] = 
+
+  val take5Map: ZSink[Any, Nothing, Int, Int, Chunk[String]] =
     take5.map(chunk => chunk.map(_.toString))
 ```
 
@@ -78,8 +79,8 @@ were not operated on - or we could outright ignore them.
 ```scala
   val take5Leftovers: ZSink[Any, Nothing, Int, Nothing, (Chunk[String], Chunk[Int]) =
     take5Map.exposeLeftover
-  
-  val take5NoLeftovers: ZSink[Any, Nothing, Int, Nothing, Chunk[String]] = 
+
+  val take5NoLeftovers: ZSink[Any, Nothing, Int, Nothing, Chunk[String]] =
     take5Map.dropLeftover
 ```
 
@@ -276,6 +277,10 @@ later.
 
 ### Pipelines
 
+Let's break up our concerns, and cover a first step of collecting all the tags
+we'll need, and then use those results for the blog post regeneration. Finally,
+we'll put everything together into an application we can run start-to-end.
+
 #### Collecting tags
 
 Now, let's think about collecting our tags. The general steps we want to take
@@ -366,6 +371,8 @@ We want to
     ZSink.fromFileName(_)
 
 ```
+
+### Building or Program
 
 With all of that define, now we can build our program!
 
