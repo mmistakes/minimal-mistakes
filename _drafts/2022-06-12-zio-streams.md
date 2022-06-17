@@ -172,7 +172,7 @@ The useful stuff.
 
 Also useful stuff.
 
-## Crossing the ZStreams
+## Async ZStreams
 
 example:
 
@@ -208,11 +208,9 @@ Build a tagging + indexing pipeline for markdown files.
 
 
 ```scala
-
- val post1: String = "hello-word.md"
+  val post1: String = "hello-word.md"
   val post1_content: Array[Byte] =
-    """
-      |---
+    """---
       |title: "Hello World"
       |tags: []
       |---
@@ -225,8 +223,7 @@ Build a tagging + indexing pipeline for markdown files.
 
   val post2: String = "scala-3-extensions.md"
   val post2_content: Array[Byte] =
-    """
-      |---
+    """---
       |title: "Scala 3 for You and Me"
       |tags: []
       |---
@@ -239,8 +236,7 @@ Build a tagging + indexing pipeline for markdown files.
 
   val post3: String = "zio-streams.md"
   val post3_content: Array[Byte] =
-    """
-      |---
+    """---
       |title: "ZIO Streams: An Introduction"
       |tags: []
       |---
@@ -249,7 +245,7 @@ Build a tagging + indexing pipeline for markdown files.
       |## Some Heading
       |
       |This is a post about #Scala and #ZIO #ZStreams!
-      |""".stripMargin.getBytes
+""".stripMargin.getBytes
 
   val fileMap: Map[String, Array[Byte]] = Map(
     post1 -> post1_content,
@@ -278,19 +274,18 @@ Build a tagging + indexing pipeline for markdown files.
 
   val addLink: ZPipeline[Any, Nothing, String, String] =
     ZPipeline.map[String, String] { line =>
-      line.split(" ").map { tag =>
-        if (hashFilter(tag)) {
-          s"[$tag](/tag/${punctRegex.replaceAllIn(tag.toLowerCase, "")})"
+      line.split(" ").map { word =>
+        if (hashFilter(word)) {
+          s"[$word](/tag/${punctRegex.replaceAllIn(word.toLowerCase, "")})"
         } else {
-          tag
+          word
         }
       }.mkString(" ")
     }
 
   val addNewLine: ZPipeline[Any, Nothing, String, String] = ZPipeline.map[String, String](_.appended('\n'))
 
-  val writeFile: ZSink[Console, Throwable, String, Nothing, Unit] = ZSink.foreach[Console, Throwable, String](str => Console.printLine(str))
-  
+  val writeFile: String => ZSink[Any, Throwable, Byte, Byte, Long] = ZSink.fromFileName(_)
 
   val collectTagPipeline: ZPipeline[Any, CharacterCodingException, Byte, String] =
     ZPipeline.utf8Decode >>>
@@ -300,29 +295,31 @@ Build a tagging + indexing pipeline for markdown files.
       removePunctuation >>>
       lowerCase
 
-  val regeneratePostPipeline: Set[String] => ZPipeline[Any, CharacterCodingException, Byte, String] =
+  val regeneratePostPipeline: Set[String] => ZPipeline[Any, CharacterCodingException, Byte, Byte] =
     ZPipeline.utf8Decode >>>
       ZPipeline.splitLines >>>
       addTags(_) >>>
       addLink >>>
-      addNewLine
+      addNewLine >>>
+      ZPipeline.utf8Encode
 
   val parseProgram: ZIO[Console, Throwable, ExitCode] = for {
     tagMap <- ZIO.foreach(fileMap) { (k, v) =>
-      ZStream.fromChunk(Chunk.fromArray(v))
+      ZStream.fromIterable(v)
         .via(collectTagPipeline)
         .run(collectTags)
         .map(tags => k -> tags)
     }
     _ <- ZIO.foreachDiscard(fileMap) { kv =>
       Console.printLine(s"// Generating file ${kv._1}") *>
-        ZStream.fromChunk(Chunk.fromArray(kv._2))
+        ZStream.fromIterable(kv._2)
           .via(regeneratePostPipeline(tagMap(kv._1)))
-          .run(writeFile)
+          .run(writeFile(kv._1))
     }
     _ <- Console.printLine("// Generating file search.json")
     searchMap = tagMap.values.toSet.flatten.map(t => t -> tagMap.filter(_._2.contains(t)).keys.toSet).toMap
-    _ <- Console.printLine(searchMap.toJsonPretty)
+    _ <- ZStream.fromIterable(searchMap.toJsonPretty.getBytes)
+      .run(ZSink.fromFileName("search.json"))
   } yield ExitCode.success
 
 ```
