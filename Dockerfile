@@ -20,6 +20,8 @@ RUN apt-get -y update &&\
     gem install jekyll bundler &&\
     gem install minimal-mistakes-jekyll &&\
     gem install webrick &&\
+    gem install puma &&\
+    gem install rack &&\
     jekyll build -d /usr/share/nginx/html &&\
     apt-get clean 
 
