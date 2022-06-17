@@ -65,16 +65,22 @@ elements you are not operating on. Let's also map our output, so we can see a
 different output type.
 
 ```scala
-  val take5: ZSink[Any, Nothing, Int, Int, Chunk[Int]] = ZSink.take[Int](5)
-  val take5Map: ZSink[Any, Nothing, Int, Int, Chunk[String]] = take5.map(chunk => chunk.map(_.toString))
+  val take5: ZSink[Any, Nothing, Int, Int, Chunk[Int]] = 
+    ZSink.take[Int](5)
+  
+  val take5Map: ZSink[Any, Nothing, Int, Int, Chunk[String]] = 
+    take5.map(chunk => chunk.map(_.toString))
 ```
 
 If we knew our collection was finite, we could also return the leftovers that
 were not operated on - or we could outright ignore them.
 
 ```scala
-  val take5Leftovers: ZSink[Any, Nothing, Int, Nothing, (Chunk[String], Chunk[Int])] = take5Map.exposeLeftover
-  val take5NoLeftovers: ZSink[Any, Nothing, Int, Nothing, Chunk[String]] = take5Map.dropLeftover
+  val take5Leftovers: ZSink[Any, Nothing, Int, Nothing, (Chunk[String], Chunk[Int]) =
+    take5Map.exposeLeftover
+  
+  val take5NoLeftovers: ZSink[Any, Nothing, Int, Nothing, Chunk[String]] = 
+    take5Map.dropLeftover
 ```
 
 If we have some logic to process a stream already, but suddenly our stream is a
@@ -85,14 +91,19 @@ call as well.
 ```scala
 
   // take5Map works on this.
-  val intStream: ZStream[Any, Nothing, Int] = ZStream(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+  val intStream: ZStream[Any, Nothing, Int] =
+  ZStream(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
 
   // take5Map does not work on this.
-  val stringStream: ZStream[Any, Nothing, String] = ZStream("0", "1", "2", "3", "4", "5", "6", "7", "8", "9")
+  val stringStream: ZStream[Any, Nothing, String] =
+    ZStream("0", "1", "2", "3", "4", "5", "6", "7", "8", "9")
 
   // We can use contramap to use our take5 logic, and operate on stringStream with it.
-  val take5Strings: ZSink[Any, Nothing, String, Int, Chunk[String]] = take5Map.contramap[String](_.toInt)
-  val take5Dimap: ZSink[Any, Nothing, String, Int, Chunk[String]] = take5.dimap[String, Chunk[String]](_.toInt, _.map(_.toString))
+  val take5Strings: ZSink[Any, Nothing, String, Int, Chunk[String]] =
+    take5Map.contramap[String](_.toInt)
+
+  val take5Dimap: ZSink[Any, Nothing, String, Int, Chunk[String]] =
+    take5.dimap[String, Chunk[String]](_.toInt, _.map(_.toString))
 ```
 
 Notice that he `L` is still `Int`. With contramap, we are operating on input
@@ -118,6 +129,11 @@ Instead of adapting our `sum` ZSink with contramap, we can write:
   val businessLogic: ZPipeline[Any, Nothing, String, Int] = ZPipeline.map[String, Int](_.toInt)
   val zio: ZIO[Any, Nothing, Int] = stringStream.via(businessLogic).run(sum)
 ```
+
+Along with the typical collection like operations you'd expect, there are a
+number of addition ones that are available directly on `ZStream` and can be
+referenced in the
+[official docs](https://zio.dev/next/datatypes/stream/zstream/#operations) .
 
 ## Handling Failures
 
@@ -164,14 +180,6 @@ effectively just dropping that element, you could do something like
 `s1.either.collectRight`. For more robust solutions, we would likely need to
 encode that logic elsewhere.
 
-## ZStream Operations
-
-The useful stuff.
-
-## ZSink Operations
-
-Also useful stuff.
-
 ## Async ZStreams
 
 example:
@@ -203,9 +211,16 @@ example:
 
 ## An example
 
-Build a tagging + indexing pipeline for markdown files.
+Let's walk through a working example application that parses markdown blog
+entries, automatically looks for tagged words, and re-generates a file with tags
+automatically added, and linked to their respective page. We'll also generate a
+"search" file, that is a JSON object that can be used to find all pages that use
+a particular tag.
 
+### The Content
 
+We'd normally read these from files, but for the purpose of this post, we'll
+have the example markdown as a String containing the sample content.
 
 ```scala
   val post1: String = "hello-word.md"
@@ -252,6 +267,33 @@ Build a tagging + indexing pipeline for markdown files.
     post2 -> post2_content,
     post3 -> post3_content
   )
+```
+
+We'll take note that we have `tags: []` in the post front-matter, and our
+content has words prefixed with a `#` that we want to index on. We'll also make
+a helper `Map` to represent how we'd call the file name to get the content
+later.
+
+### Pipelines
+
+#### Collecting tags
+
+Now, let's think about collecting our tags. The general steps we want to take
+are
+
+1. Filter words that match our tagging pattern
+2. Remove any punctuation, in case the last work in the sentence is tag - as
+   well as to remove the `#`.
+3. Convert our parsed tags to lowercase
+4. Put them all in a `Set[String]` to avoid duplicates.
+
+Let's also set up some helpers to looks for our `#tag`, as well as a reusable
+regex to remove punctuation when we need to.
+
+Along with our ZSink, we can make the ZPipeline components, and bundle them
+together as
+
+```scala
 
   val hashFilter: String => Boolean =
     str =>
@@ -261,12 +303,38 @@ Build a tagging + indexing pipeline for markdown files.
 
   val punctRegex: Regex = """\p{Punct}""".r
 
-  val parseHash: ZPipeline[Any, Nothing, String, String] = ZPipeline.filter[String](hashFilter)
-  val removePunctuation: ZPipeline[Any, Nothing, String, String] = ZPipeline.map[String, String](str => punctRegex.replaceAllIn(str, ""))
-  val lowerCase: ZPipeline[Any, Nothing, String, String] = ZPipeline.map[String, String](_.toLowerCase)
+  val parseHash: ZPipeline[Any, Nothing, String, String] =
+    ZPipeline.filter[String](hashFilter)
 
-  val collectTags: ZSink[Any, Nothing, String, Nothing, Set[String]] = ZSink.collectAllToSet[String]
+  val removePunctuation: ZPipeline[Any, Nothing, String, String] =
+    ZPipeline.map[String, String](str => punctRegex.replaceAllIn(str, ""))
 
+  val lowerCase: ZPipeline[Any, Nothing, String, String] =
+    ZPipeline.map[String, String](_.toLowerCase)
+
+  val collectTagPipeline: ZPipeline[Any, CharacterCodingException, Byte, String] =
+    ZPipeline.utf8Decode >>>
+      ZPipeline.splitLines >>> // This removes return characters, in case our tag is at the end of the line
+      ZPipeline.splitOn(" ") >>> // We ant to look word-for-word
+      parseHash >>>
+      removePunctuation >>>
+      lowerCase
+
+  val collectTags: ZSink[Any, Nothing, String, Nothing, Set[String]] =
+    ZSink.collectAllToSet[String]
+
+```
+
+#### Regenerating Files
+
+Now that we have the tags for any given file, we can regenerate our blog post.
+We want to
+
+1. Automatically inject the tags from the content
+2. Add a link to every `#tag`, which takes us to a special page on our blog that
+   lists all posts with that tag.
+
+```scala
   val addTags: Set[String] => ZPipeline[Any, Nothing, String, String] =
     tags =>
       ZPipeline.map[String, String](_.replace("tags: []", s"tags: [${tags.mkString(", ")}]"))
@@ -283,26 +351,25 @@ Build a tagging + indexing pipeline for markdown files.
       }.mkString(" ")
     }
 
-  val addNewLine: ZPipeline[Any, Nothing, String, String] = ZPipeline.map[String, String](_.appended('\n'))
-
-  val writeFile: String => ZSink[Any, Throwable, Byte, Byte, Long] = ZSink.fromFileName(_)
-
-  val collectTagPipeline: ZPipeline[Any, CharacterCodingException, Byte, String] =
-    ZPipeline.utf8Decode >>>
-      ZPipeline.splitLines >>>
-      ZPipeline.splitOn(" ") >>>
-      parseHash >>>
-      removePunctuation >>>
-      lowerCase
+  val addNewLine: ZPipeline[Any, Nothing, String, String] =
+    ZPipeline.map[String, String](_.appended('\n'))
 
   val regeneratePostPipeline: Set[String] => ZPipeline[Any, CharacterCodingException, Byte, Byte] =
     ZPipeline.utf8Decode >>>
-      ZPipeline.splitLines >>>
+      ZPipeline.splitLines >>> // we want to operate own whole lines
       addTags(_) >>>
       addLink >>>
-      addNewLine >>>
-      ZPipeline.utf8Encode
+      addNewLine >>> // since we split on out new lines, we should add it back in
+      ZPipeline.utf8Encode // Back to a format to write to a file
 
+    val writeFile: String => ZSink[Any, Throwable, Byte, Byte, Long] =
+    ZSink.fromFileName(_)
+
+```
+
+With all of that define, now we can build our program!
+
+```scala
   val parseProgram: ZIO[Console, Throwable, ExitCode] = for {
     tagMap <- ZIO.foreach(fileMap) { (k, v) =>
       ZStream.fromIterable(v)
@@ -323,3 +390,74 @@ Build a tagging + indexing pipeline for markdown files.
   } yield ExitCode.success
 
 ```
+
+We're just running these three samples serially, but if we wanted to speed up
+processing, we could do a `ZIO.foreachPar` to process files in parallel. Below
+is the content of the files we generated, and note that it's additionally
+formatted from the rules being applied to this post :-) :
+
+> hello-world.md
+
+```md
+---
+title: "Hello World"
+tags: [generic]
+---
+
+======
+
+## Generic Heading
+
+Even pretend blog posts need a [#generic](/tag/generic) intro.
+```
+
+> zio-streams.md
+
+#####
+
+```md
+---
+title: "ZIO Streams: An Introduction"
+tags: [scala, zio, zstreams]
+---
+
+======
+
+## Some Heading
+
+This is a post about [#Scala](/tag/scala) and [#ZIO](/tag/zio)
+[#ZStreams!](/tag/zstreams)
+```
+
+> scala-3-extensions.md
+
+```md
+---
+title: "Scala 3 for You and Me"
+tags: [scala, implicits, extensions]
+---
+
+======
+
+## Cool Heading
+
+This is a post about [#Scala](/tag/scala) and their re-work of
+[#implicits](/tag/implicits) via thing like [#extensions.](/tag/extensions)
+```
+
+> search.json
+
+```json
+{
+  "zstreams": ["zio-streams.md"],
+  "implicits": ["scala-3-extensions.md"],
+  "generic": ["hello-word.md"],
+  "extensions": ["scala-3-extensions.md"],
+  "zio": ["zio-streams.md"],
+  "scala": ["scala-3-extensions.md", "zio-streams.md"]
+}
+```
+
+## Wrapping up
+
+High level summary here...
