@@ -14,7 +14,8 @@ Talk'n bout ZIO Streams.
 ```scala
 libraryDependencies ++= Seq(
       "dev.zio" %% "zio" % "2.0.0-RC6",
-      "dev.zio" %% "zio-streams" % "2.0.0-RC6"
+      "dev.zio" %% "zio-streams" % "2.0.0-RC6",
+      "dev.zio" %% "zio-json" % "0.3.0-RC8"
 )
 ```
 
@@ -176,6 +177,17 @@ Also useful stuff.
 example:
 
 ```scala
+  // Bad code!
+  val program: ZIO[Any, Throwable, ExitCode] = for {
+    queue <- Queue.unbounded[Int]
+    producer <- dirtyStream.via(parsePipeline)
+      .run(ZSink.fromQueue(queue))
+    result <- ZStream.fromQueue(queue)
+      .run(ZSink.sum[Int]).debug("sum")
+  } yield ExitCode.success
+```
+
+```scala
   val program: ZIO[Any, Throwable, ExitCode] = for {
     queue <- Queue.unbounded[Int]
     producer <- dirtyStream.via(parsePipeline)
@@ -192,3 +204,125 @@ example:
 ## An example
 
 Build a tagging + indexing pipeline for markdown files.
+
+
+
+```scala
+
+ val post1: String = "hello-word.md"
+  val post1_content: Array[Byte] =
+    """
+      |---
+      |title: "Hello World"
+      |tags: []
+      |---
+      |======
+      |
+      |## Generic Heading
+      |
+      |Even pretend blog posts need a #generic intro.
+      |""".stripMargin.getBytes
+
+  val post2: String = "scala-3-extensions.md"
+  val post2_content: Array[Byte] =
+    """
+      |---
+      |title: "Scala 3 for You and Me"
+      |tags: []
+      |---
+      |======
+      |
+      |## Cool Heading
+      |
+      |This is a post about #Scala and their re-work of #implicits via thing like #extensions.
+      |""".stripMargin.getBytes
+
+  val post3: String = "zio-streams.md"
+  val post3_content: Array[Byte] =
+    """
+      |---
+      |title: "ZIO Streams: An Introduction"
+      |tags: []
+      |---
+      |======
+      |
+      |## Some Heading
+      |
+      |This is a post about #Scala and #ZIO #ZStreams!
+      |""".stripMargin.getBytes
+
+  val fileMap: Map[String, Array[Byte]] = Map(
+    post1 -> post1_content,
+    post2 -> post2_content,
+    post3 -> post3_content
+  )
+
+  val hashFilter: String => Boolean =
+    str =>
+      str.startsWith("#") &&
+        str.count(_ == '#') == 1 &&
+        str.length > 2
+
+  val punctRegex: Regex = """\p{Punct}""".r
+
+  val parseHash: ZPipeline[Any, Nothing, String, String] = ZPipeline.filter[String](hashFilter)
+  val removePunctuation: ZPipeline[Any, Nothing, String, String] = ZPipeline.map[String, String](str => punctRegex.replaceAllIn(str, ""))
+  val lowerCase: ZPipeline[Any, Nothing, String, String] = ZPipeline.map[String, String](_.toLowerCase)
+
+  val collectTags: ZSink[Any, Nothing, String, Nothing, Set[String]] = ZSink.collectAllToSet[String]
+
+  val addTags: Set[String] => ZPipeline[Any, Nothing, String, String] =
+    tags =>
+      ZPipeline.map[String, String](_.replace("tags: []", s"tags: [${tags.mkString(", ")}]"))
+
+
+  val addLink: ZPipeline[Any, Nothing, String, String] =
+    ZPipeline.map[String, String] { line =>
+      line.split(" ").map { tag =>
+        if (hashFilter(tag)) {
+          s"[$tag](/tag/${punctRegex.replaceAllIn(tag.toLowerCase, "")})"
+        } else {
+          tag
+        }
+      }.mkString(" ")
+    }
+
+  val addNewLine: ZPipeline[Any, Nothing, String, String] = ZPipeline.map[String, String](_.appended('\n'))
+
+  val writeFile: ZSink[Console, Throwable, String, Nothing, Unit] = ZSink.foreach[Console, Throwable, String](str => Console.printLine(str))
+  
+
+  val collectTagPipeline: ZPipeline[Any, CharacterCodingException, Byte, String] =
+    ZPipeline.utf8Decode >>>
+      ZPipeline.splitLines >>>
+      ZPipeline.splitOn(" ") >>>
+      parseHash >>>
+      removePunctuation >>>
+      lowerCase
+
+  val regeneratePostPipeline: Set[String] => ZPipeline[Any, CharacterCodingException, Byte, String] =
+    ZPipeline.utf8Decode >>>
+      ZPipeline.splitLines >>>
+      addTags(_) >>>
+      addLink >>>
+      addNewLine
+
+  val parseProgram: ZIO[Console, Throwable, ExitCode] = for {
+    tagMap <- ZIO.foreach(fileMap) { (k, v) =>
+      ZStream.fromChunk(Chunk.fromArray(v))
+        .via(collectTagPipeline)
+        .run(collectTags)
+        .map(tags => k -> tags)
+    }
+    _ <- ZIO.foreachDiscard(fileMap) { kv =>
+      Console.printLine(s"// Generating file ${kv._1}") *>
+        ZStream.fromChunk(Chunk.fromArray(kv._2))
+          .via(regeneratePostPipeline(tagMap(kv._1)))
+          .run(writeFile)
+    }
+    _ <- Console.printLine("// Generating file search.json")
+    searchMap = tagMap.values.toSet.flatten.map(t => t -> tagMap.filter(_._2.contains(t)).keys.toSet).toMap
+    _ <- Console.printLine(searchMap.toJsonPretty)
+  } yield ExitCode.success
+
+```
