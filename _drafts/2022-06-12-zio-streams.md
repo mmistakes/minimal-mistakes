@@ -7,9 +7,19 @@ tags: [zio, zio-streams]
 excerpt: "An Introduction to ZIO Streams"
 ---
 
-Talk'n bout ZIO Streams.
+In this post, we're going to go over an introduction to the main components of
+ZIO Streams, how to work with them when things go right, and what to do when
+things go wrong.
+
+Additionally, we're going to go over a toy example of working with ZIO Streams
+asynchronously to get us in the async mind-set, as well as provide a simple, but
+functional example of processing files modeled after markdown blog posts.
 
 ## Set up
+
+We're going to base this discussion off of the latest ZIO 2.0 code, which is
+still an `RC`, but hopefully won't change before release. These are the
+dependencies to include for our walk through:
 
 ```scala
 libraryDependencies ++= Seq(
@@ -38,17 +48,16 @@ _collection_ which will often present itself when working with ZStreams.
 
 A ZStream has the signature: `ZStream[R, E, O]`, which means it will produce
 **some number** of `O` elements, requiring dependencies `R` to do so, and could
-possibly fail with an error of type `E`. Since this is a _Stream_ we could
+possibly fail with an error of type `E`. Since this is a _stream_ we could
 possibly be producing somewhere between 0 and infinite `O` elements.
 
 A ZStream represents the _source_ of data in your work flow.
 
 ### ZSink
 
-At the opposite end of our stream, we have ZSink, with the signature:
+At the opposite end of our stream, we have a `ZSink`, with the signature:
 `ZSink[R, E, I, L, Z]`. `R`, and `E` are as described above. It will consume
-input of `I`, producing `Z` and any `L` that may be left over. Generally `I`
-will be matching the ZStream `O`.
+input of `I`, producing `Z` and any `L` that may be left over.
 
 A ZSink represents the terminating _endpoint_ of data in your workflow.
 
@@ -62,7 +71,7 @@ of integers, you wouldn't expect there to be anything left over.
 ```
 
 On the other hand, an operation like `take` implies that there are possibly
-elements you are not operating on. Let's also map our output, so we can see a
+elements you are not operating on. Let's also map our output, so we can see the
 different output type.
 
 ```scala
@@ -84,18 +93,19 @@ were not operated on - or we could outright ignore them.
     take5Map.dropLeftover
 ```
 
-If we have some logic to process a stream already, but suddenly our stream is a
-different type, we can use `contramap` to map the input type appropriately. If
+### A Prelude to ZPipelines
+
+If we have some logic to _process_ a stream already, but suddenly our stream is
+a different type, we can use `contramap` to map the input type appropriately. If
 using both `map` and `contramap`, then there is an equivalent `dimap` you can
 call as well.
 
 ```scala
-
-  // take5Map works on this.
+  // take5Map would work on this.
   val intStream: ZStream[Any, Nothing, Int] =
   ZStream(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
 
-  // take5Map does not work on this.
+  // take5Map would not work on this.
   val stringStream: ZStream[Any, Nothing, String] =
     ZStream("0", "1", "2", "3", "4", "5", "6", "7", "8", "9")
 
@@ -103,16 +113,17 @@ call as well.
   val take5Strings: ZSink[Any, Nothing, String, Int, Chunk[String]] =
     take5Map.contramap[String](_.toInt)
 
+// This is equivalent to take5Strings above
   val take5Dimap: ZSink[Any, Nothing, String, Int, Chunk[String]] =
     take5.dimap[String, Chunk[String]](_.toInt, _.map(_.toString))
 ```
 
 Notice that he `L` is still `Int`. With contramap, we are operating on input
-element to get it to the correct type (`String`), however, if it is left over,
-then it wasn't operated on - meaning it's still the input type from `take5`
-(`Int`).
+element to get it to the correct type (`String`), however, if anything is left
+over, then it wasn't operated on - meaning it's still the input type from
+`take5` (`Int`).
 
-### ZPipeline
+### ZPipelines
 
 A ZPipeline converts one ZStream to another ZStream. It can conceptually be
 thought of as
@@ -127,10 +138,11 @@ Instead of adapting our `sum` ZSink with contramap, we can write:
 
 ```scala
   //stringStream.run(sum) <- This doesn't compile
-  val businessLogic: ZPipeline[Any, Nothing, String, Int] = 
+
+  val businessLogic: ZPipeline[Any, Nothing, String, Int] =
     ZPipeline.map[String, Int](_.toInt)
-  
-  val zio: ZIO[Any, Nothing, Int] = 
+
+  val zio: ZIO[Any, Nothing, Int] =
     stringStream.via(businessLogic).run(sum)
 ```
 
@@ -141,12 +153,10 @@ referenced in the
 
 ## Handling Failures
 
-If we think of some `val s1: ZStream[R, E, A]`:
-
-we can use the `orElse` methods to directly provide the recovery stream. The
-interesting thing of `orElseEither` is that we can distinguish the transition
-when s1 failed, and s2 was used, as s1 values would be a `Left` and values from
-s2 would be `Right`.
+If we think of some `val s1: ZStream[R, E, A]`, we can use the `orElse` methods
+to directly provide a recovery stream. The interesting thing of `orElseEither`
+is that we can distinguish the transition when `s1` failed, and `s2` was used,
+as `s1` values would be a `Left` and values from `s2` would be `Right`.
 
 ```scala
 s1.orElse(s2: => ZStream[R1, E1, A1]): ZStream[R1, E1, A1]
@@ -154,8 +164,8 @@ s1.orElseEither(s2: => ZStream[R1, E1, A1]): ZStream[R1, E1, Either[A, A1]]
 ```
 
 If we want to recover from specific failures via
-`PartialFunction[E, ZStream[R1, E1, A1]]`s (and causes), we can use `catchSome`
-( or `catchSomeCause`)
+`PartialFunction[E, ZStream[R1, E1, A1]]`s we can use `catchSome` ( or
+`catchSomeCause` for causes - a.k.a _defects_).
 
 ```scala
 s1.catchSome {
@@ -164,7 +174,7 @@ s1.catchSome {
 ```
 
 If we want to exhaustively recover from errors via `E => ZStream[R1, E2, A1]`)
-(and causes), we can use `catchAll` (or `catchAllCause`)
+(and causes), we can use `catchAll` (or `catchAllCause`).
 
 ```scala
 s1.catchAll {
@@ -178,27 +188,27 @@ If we want to push our error handling downwards, we can also transform a
 `ZStream[R, E, A]` to `ZStream[R, Nothing, Either[E, A]]` via `either` (e.g.
 `s1.either`).
 
-Recovering form a failure in a ZStream generally revolves around providing a
+Recovering form a failure in a `ZStream` generally revolves around providing a
 secondary stream to recover with. If you are looking to recover "in-place", by
-effectively just dropping that element, you could do something like
-`s1.either.collectRight`. For more robust solutions, we would likely need to
-encode that logic elsewhere.
+effectively just dropping that element which caused trouble while processing the
+data, you could do something heavy handed like `s1.either.collectRight`. For
+more robust solutions, we would likely need to encode that logic elsewhere.
 
 ## Async ZStreams
 
-So far, we've discussed fairly bounded streams, from defined/known lists of
-values. It won't be long before we want to "feed" data into a stream we've
+So far, we've discussed fairly bounded streams, from defined/known collections
+of values. It won't be long before we want to "feed" data into a stream we've
 previously created. Luckily, we can create a `ZStream` from a `Queue`/`Hub`
-directly! In our example, we'll use a `Queue`, and with a reference to that
-queue we can offer values to it elsewhere. Additional, we can also create a
-`ZSink` from a `Queue`/`Hub` as well!
+directly, which are asynchronous data structures in ZIO. In our example, we'll
+use a `Queue`, and with a reference to that `queue` we can offer values to it
+elsewhere. Additional, we can also create a `ZSink` from a `Queue`/`Hub`!
 
 If we can set both the _endpoint_ and the _source_ as a queue, what if we joined
-two `ZStream`s together with the same queue? Let's look at a toy example, where
-we "process" one stream to sanitize values, that we then feed into another
-stream that now doesn't have to address that concern.
+two `ZStream`s together with the _same_ queue? Let's look at a toy example,
+where we "process" one stream to sanitize values, that we then feed that into
+another stream that now doesn't have to address that concern.
 
-After our practice above, we might first write something like this:
+After our `ZStream` practice above, we might first write something like this:
 
 ```scala
   // Bad code!
@@ -214,11 +224,11 @@ After our practice above, we might first write something like this:
 and it will _almost_ do what we think! It will process the values, and feed them
 to the second `ZStream`, but our program will hang. Why? Because we're working
 with asynchronous things now. Our `result` has processed all the elements from
-our `producer` - but it continues to wait for any new values to be passed into
-the our `queue`. It can't complete! We need to signal to `result` that we should
-finalize, by closing the `queue`. We could make a `Promise`, and use it to
-`await` before closing the `queue`, but luckily this functionality is already
-included with `ZSink.fromQueueWithShutdown`
+our `producer` - but it continues to wait for any new values that could be
+passed into the our `queue`. It can't complete! We need to signal to `result`
+that we should finalize, by closing the `queue`. We could make a `Promise`, and
+use it to `await` before closing the `queue`, but luckily this functionality is
+already included with `ZSink.fromQueueWithShutdown`
 
 Now, we might be tempted to write:
 
@@ -234,11 +244,11 @@ Now, we might be tempted to write:
 ```
 
 and it will work _even less than expected_! We will be greeted by an exception,
-because our queue will be closed before we initialize the `ZStream` of
-our`result`. with it! We need to think asynchronously, and realize that we need
-to `fork` both our `producer` _and_ `result`, and `join` them, so our `queue` is
-appropriately closed _after_ we've feed all of out data into it, and our second
-stream has opened from it to process the values in it before it closes.
+because our queue will be closed before we initialize the `ZStream` of our
+`result` with it! We need to think asynchronously top-to-bottom, and realize
+that we need to `fork` both our `producer` _and_ `result`, and then `join` them,
+so our `queue` is appropriately closed _after_ we've feed all of out data into
+it, and our second stream has opened from it to process the values in it.
 
 ```scala
   val program: ZIO[Any, Throwable, ExitCode] = for {
@@ -259,13 +269,13 @@ recognize the scope of context you are working in - i.e Are we processing the
 content of a file, which is finite, or are we streaming generated events to a
 websocket, which could be infinite.
 
-## An example
+## Example: Processing Files
 
-Let's walk through a working example application that parses markdown blog
-entries, automatically looks for tagged words, and re-generates a file with tags
-automatically added, and linked to their respective page. We'll also generate a
-"search" file, that is a JSON object that can be used to find all pages that use
-a particular tag.
+Let's walk through a simple, but working example application that parses
+markdown blog entries, automatically looks for tagged words, and re-generates a
+file with tags automatically added, and linked to their respective page. We'll
+also generate a "search" file, that is a JSON object that could be used by a
+JavaScript front end to find all pages that use a particular tag.
 
 ### The Content
 
@@ -322,7 +332,7 @@ have the example markdown as a String containing the sample content.
 We'll take note that we have `tags: []` in the post front-matter, and our
 content has words prefixed with a `#` that we want to index on. We'll also make
 a helper `Map` to represent how we'd call the file name to get the content
-later.
+later, as if we were reading from actual files.
 
 ### Pipelines
 
@@ -332,8 +342,8 @@ we'll put everything together into an application we can run start-to-end.
 
 #### Collecting tags
 
-Now, let's think about collecting our tags. The general steps we want to take
-are
+Let's outline the process of collecting our tags. The general steps we want to
+take are:
 
 1. Filter words that match our tagging pattern
 2. Remove any punctuation, in case the last work in the sentence is tag - as
@@ -344,8 +354,8 @@ are
 Let's also set up some helpers to looks for our `#tag`, as well as a reusable
 regex to remove punctuation when we need to.
 
-Along with our ZSink, we can make the ZPipeline components, and bundle them
-together as
+Along with our ZSink, we can make _compose_ our ZPipeline components together
+with the `>>>` operator, and bundle them together as:
 
 ```scala
 
@@ -369,7 +379,7 @@ together as
   val collectTagPipeline: ZPipeline[Any, CharacterCodingException, Byte, String] =
     ZPipeline.utf8Decode >>>
       ZPipeline.splitLines >>> // This removes return characters, in case our tag is at the end of the line
-      ZPipeline.splitOn(" ") >>> // We ant to look word-for-word
+      ZPipeline.splitOn(" ") >>> // We want to parse word-by-word
       parseHash >>>
       removePunctuation >>>
       lowerCase
@@ -384,9 +394,9 @@ together as
 Now that we have the tags for any given file, we can regenerate our blog post.
 We want to
 
-1. Automatically inject the tags from the content
+1. Automatically inject the tags into the front-matter of the content
 2. Add a link to every `#tag`, which takes us to a special page on our blog that
-   lists all posts with that tag.
+   lists all posts with that tag (e.g. `[#TagWord](/tag/tagword)`).
 
 ```scala
   val addTags: Set[String] => ZPipeline[Any, Nothing, String, String] =
@@ -410,10 +420,10 @@ We want to
 
   val regeneratePostPipeline: Set[String] => ZPipeline[Any, CharacterCodingException, Byte, Byte] =
     ZPipeline.utf8Decode >>>
-      ZPipeline.splitLines >>> // we want to operate own whole lines
+      ZPipeline.splitLines >>> // we want to operate own whole lines this time
       addTags(_) >>>
       addLink >>>
-      addNewLine >>> // since we split on out new lines, we should add it back in
+      addNewLine >>> // since we split on out new line characters, we should add one back in
       ZPipeline.utf8Encode // Back to a format to write to a file
 
     val writeFile: String => ZSink[Any, Throwable, Byte, Byte, Long] =
@@ -421,9 +431,9 @@ We want to
 
 ```
 
-### Building or Program
+#### Building or Program
 
-With all of that define, now we can build our program!
+With all of our processes defined, we can now build our program!
 
 ```scala
   val parseProgram: ZIO[Console, Throwable, ExitCode] = for {
@@ -450,7 +460,7 @@ With all of that define, now we can build our program!
 We're just running these three samples serially, but if we wanted to speed up
 processing, we could do a `ZIO.foreachPar` to process files in parallel. Below
 is the content of the files we generated, and note that it's additionally
-formatted from the rules being applied to this post :-) :
+formatted from the rules being applied to this post:
 
 > hello-world.md
 
@@ -516,4 +526,12 @@ This is a post about [#Scala](/tag/scala) and their re-work of
 
 ## Wrapping up
 
-High level summary here...
+Hopefully, after reading through this introduction, you are now more familiar
+and comfortable with `ZStream`s, how we can process data via `ZPipeline`s, and
+finalizing the processing of data to a `ZSink`s - as well as methods for
+recovering from errors, should something go wrong during processing.
+
+Additionally, I hope that the simple examples introducing the the prospect of
+working with `ZStream`s asynchronously, as well as the start-to-finish
+processing of files provides enough insight to get you started tackling your own
+real-world use cases.
