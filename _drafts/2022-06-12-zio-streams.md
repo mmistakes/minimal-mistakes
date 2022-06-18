@@ -57,7 +57,7 @@ operation you are performing. For example, if your intention is to sum a stream
 of integers, you wouldn't expect there to be anything left over.
 
 ```scala
-  val sum: ZSink[Any, Nothing, Int, Nothing, Int] = 
+  val sum: ZSink[Any, Nothing, Int, Nothing, Int] =
     ZSink.sum[Int]
 ```
 
@@ -127,8 +127,11 @@ Instead of adapting our `sum` ZSink with contramap, we can write:
 
 ```scala
   //stringStream.run(sum) <- This doesn't compile
-  val businessLogic: ZPipeline[Any, Nothing, String, Int] = ZPipeline.map[String, Int](_.toInt)
-  val zio: ZIO[Any, Nothing, Int] = stringStream.via(businessLogic).run(sum)
+  val businessLogic: ZPipeline[Any, Nothing, String, Int] = 
+    ZPipeline.map[String, Int](_.toInt)
+  
+  val zio: ZIO[Any, Nothing, Int] = 
+    stringStream.via(businessLogic).run(sum)
 ```
 
 Along with the typical collection like operations you'd expect, there are a
@@ -183,7 +186,19 @@ encode that logic elsewhere.
 
 ## Async ZStreams
 
-example:
+So far, we've discussed fairly bounded streams, from defined/known lists of
+values. It won't be long before we want to "feed" data into a stream we've
+previously created. Luckily, we can create a `ZStream` from a `Queue`/`Hub`
+directly! In our example, we'll use a `Queue`, and with a reference to that
+queue we can offer values to it elsewhere. Additional, we can also create a
+`ZSink` from a `Queue`/`Hub` as well!
+
+If we can set both the _endpoint_ and the _source_ as a queue, what if we joined
+two `ZStream`s together with the same queue? Let's look at a toy example, where
+we "process" one stream to sanitize values, that we then feed into another
+stream that now doesn't have to address that concern.
+
+After our practice above, we might first write something like this:
 
 ```scala
   // Bad code!
@@ -195,6 +210,35 @@ example:
       .run(ZSink.sum[Int]).debug("sum")
   } yield ExitCode.success
 ```
+
+and it will _almost_ do what we think! It will process the values, and feed them
+to the second `ZStream`, but our program will hang. Why? Because we're working
+with asynchronous things now. Our `result` has processed all the elements from
+our `producer` - but it continues to wait for any new values to be passed into
+the our `queue`. It can't complete! We need to signal to `result` that we should
+finalize, by closing the `queue`. We could make a `Promise`, and use it to
+`await` before closing the `queue`, but luckily this functionality is already
+included with `ZSink.fromQueueWithShutdown`
+
+Now, we might be tempted to write:
+
+```scala
+  // Still bad code!
+  val program: ZIO[Any, Throwable, ExitCode] = for {
+    queue <- Queue.unbounded[Int]
+    producer <- dirtyStream.via(parsePipeline)
+      .run(ZSink.fromQueueWithShutdown(queue))
+    result <- ZStream.fromQueue(queue)
+      .run(ZSink.sum[Int]).debug("sum")
+  } yield ExitCode.success
+```
+
+and it will work _even less than expected_! We will be greeted by an exception,
+because our queue will be closed before we initialize the `ZStream` of
+our`result`. with it! We need to think asynchronously, and realize that we need
+to `fork` both our `producer` _and_ `result`, and `join` them, so our `queue` is
+appropriately closed _after_ we've feed all of out data into it, and our second
+stream has opened from it to process the values in it before it closes.
 
 ```scala
   val program: ZIO[Any, Throwable, ExitCode] = for {
@@ -209,6 +253,11 @@ example:
     _ <- result.join
   } yield ExitCode.success
 ```
+
+Asynchronous code can be tricky to debug, but becomes a lot easier if you
+recognize the scope of context you are working in - i.e Are we processing the
+content of a file, which is finite, or are we streaming generated events to a
+websocket, which could be infinite.
 
 ## An example
 
