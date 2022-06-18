@@ -14,6 +14,8 @@ This guide will explain
 - integrating with postgres specific datatypes using slick-pg
 - how to auto-generate slick schema from database 
 
+For this blog, we will build a basic database for movies and related entities. We will use Slick to save and fetch rows from multiple tables related to the movies database. For explaining different features of Slick, we will make use of multiple tables with different types of columns.
+
 ## 1. Introduction 
 Slick is a functional relational library in Scala which makes working with relational databases easier. We can interact with the database almost in the same way as we do with Scala collections. Additionally, Slick uses asynchronous programming using scala Futures. It also supports the usage of plain SQL queries which might come in handy if we want to exactly control the way the queries are built. 
 Apart from that, Slick provides compile time safety by mapping the database columns to scala datatypes. This ensures that it is less likely to get runtime errors for database queries.
@@ -35,7 +37,7 @@ libraryDependencies ++= Seq(
 
 We need to have a working PostgreSQL database for testing the application. Some of the options are:
 - Installing a PostgreSQL database locally
-- Use a dockerized POstgreSQL instance (locally)
+- Use a dockerized PostgreSQL instance (locally)
 - Use any free online services such as [ElephantSQL](https://www.elephantsql.com/)
 
 Next, we can add the database configurations to the config file such as _application.conf_.
@@ -54,6 +56,22 @@ postgres = {
   numThreads = 10
 }
 ```
+
+Within the _postgres_ node, we will be providing all the necessary configurations to connect to the database. The key _connectionPoll_ let's us to use a connection pool to improve the database querying performance. If we don't provide that property, it will connect without using the connection pooling feature. Slick will be using the JDBC connection implementation from the _PGSimpleDataSource_ to connect to the database. This class is provided by the jdbc library we added, in our case _postgresql:42.3.4_. The node _properties_ are the information required to connect to the correct database. 
+Instead of this approach, we can also use direct URL and connect to the database. For example, for connecting to the _elephantsql_ service, we can use the configuration as:
+```scala
+databaseUrl {
+  dataSourceClass = "slick.jdbc.DatabaseUrlDataSource"
+  properties = {
+    driver = "org.postgresql.Driver"
+    url = "postgres://username:password@abul.db.elephantsql.com/dbname"
+  }
+}
+```
+In this case, we are using a different dataSource as _DatabaseUrlDataSource_ which is provided by slick itself. We then provide the connection information under the node _properties_. 
+
+There are many other ways to connect to the database, which can be read in (this)[https://scala-slick.org/doc/3.3.0/database.html] link.
+
 Slick uses a combination of case classes and Slick Table classes to model the database schema. For that, we need to provide a JDBC Profile. Since we are using PostgreSQL, we can use the _PostgresProfile_. 
 
 As next step, we can create a connection instance using the _PostgresProfile_ and previously defined configuration.
@@ -76,7 +94,7 @@ final case class Movie(
     lengthInMin: Int
 )
 ```
-Next, we need to create a slick table for mapping the database fields to the case class. We need to import the PostgresProfile api to get the relevant methods in scope. 
+Next, we need to create a Slick Table class. Slick Table maps the table fields to the case class. We need to import the PostgresProfile api to get the relevant methods in scope. 
 
 ```scala
 class SlickTablesGeneric(val profile: PostgresProfile) {
@@ -90,27 +108,41 @@ class SlickTablesGeneric(val profile: PostgresProfile) {
   }
 }
 ```
-We have created defs for database fields with their correct datatypes. We can mention the primary key using the property _O.PrimaryKey_. Similarly, we can mark the column as an auto increment field by using _O.AutoInc_. By setting the column as auto increment, PostgreSQL will generate an incremented numeric value for the primary key.
+For each of the column in the table, we need to define a def with the corresponding column type of the slick. We can use the method _column_ with the correct data type. We also need to provide the column name and any other properties that are needed. For example, let's look at the primary key **movie_id** in the Movie table. 
 
-We need to override the method `*` that maps the column to the case class _Movie_. 
-Now, we can create an instance for the _MovieTable_ :
+The method _column[Long]_ defines the column type. It takes the string parameter "movie_id" which is the actual column name in the database table. After that, we can provide multiple properties as vararg field. 
+_O.PrimaryKey_ informs Slick that this column is the primary key. 
+_O.AutoInc_ informs that this column is an auto-increment field and postgres will take care of incrementing the value.
+
+In the same way, we defines the other fields. 
+
+Now, we have to override a method `*` which does the mapping between the column field and the case class field. The `<>` operator maps a tuple to the case class fields. 
+
+Now, we can create an instance for the _MovieTable_. We will be using this instance to write slick queries to communicate with database.
 
 ```scala
 lazy val movieTable = TableQuery[MovieTable]
 ```
-We can also create a Singleton object for the _SlickTablesGeneric_ by providing the Profile. For now, we will be using the profile provided by the slick. Later, we can see how to write custom profile. 
+We can also create a Singleton object for the _SlickTablesGeneric_ by providing the _Profile_. The _Profile_ class contains all the necessary methods for Slick to connect to the database and execute the queries. 
+For now, we will be using the profile provided by Slick for the Postgres(_slick.jdbc.PostgresProfile_). Later, we can see how to write custom profile. 
 
 ```scala
 object SlickTables extends SlickTablesGeneric(PostgresProfile)
 ```
 
 ## 4. Basic CRUD Operations
-Now that we have completed the initial setup, we can look at performing basic CRUD operations using Slick. We will be using the _movieTable_ we created for all the operations. But before that, we need to manually create the database in Postgres and also create the table. 
+Now that we have completed the initial setup, we can look at performing basic CRUD operations using Slick. We will be using the _movieTable_ we created for all the operations. But before that, we need to manually create the database in Postgres and also create the table.
 ```sql
-create database movies;
+create extension hstore;
 create table if not exists "Movie" ("movie_id" BIGSERIAL NOT NULL PRIMARY KEY,"name" VARCHAR NOT NULL,"release_date" DATE NOT NULL,"length_in_min" INTEGER NOT NULL);
+create table if not exists "Actor" ("actor_id" BIGSERIAL NOT NULL PRIMARY KEY,"name" VARCHAR NOT NULL);
+create table if not exists "MovieActorMapping" ("movie_actor_id" BIGSERIAL NOT NULL PRIMARY KEY,"movie_id" BIGINT NOT NULL,"actor_id" BIGINT NOT NULL);
+create table if not exists "StreamingProviderMapping" ("id" BIGSERIAL NOT NULL PRIMARY KEY,"movie_id" BIGINT NOT NULL,"streaming_provider" VARCHAR NOT NULL);
+create table if not exists "MovieLocations" ("movie_location_id" BIGSERIAL NOT NULL PRIMARY KEY,"movie_id" BIGINT NOT NULL,"locations" text [] NOT NULL);
+create table if not exists "MovieProperties" ("id" bigserial NOT NULL PRIMARY KEY,"movie_id" BIGINT NOT NULL,"properties" hstore NOT NULL);
+create table if not exists "ActorDetails" ("id" bigserial NOT NULL PRIMARY KEY,"actor_id" BIGINT NOT NULL,"personal_info" jsonb NOT NULL);
 ```
-We are using more tables as part of this blog, and the table creation queries are provided [here](link_it_here).
+The above scripts are for all the tables we will be using as part of this blog.
 
 ### 4.1. Insert Rows
 Firstly, we can insert a record into the database. 
@@ -122,7 +154,7 @@ def insertMovie(movie: Movie): Future[Int] = {
   Connection.db.run(insertQuery)
 }
 ```
-The `db.run()` method takes an instance of `DBIOAction` and execute the action on database.
+The `db.run()` method takes an instance of `DBIOAction` and execute the action on database. DBIOAction is the most important type in Slick as all the queries in Slick are an instance of DBIOAction. DBIOAction takes 3 parameters as `DBIOAction[R,T,E]`, where `R` is the result type of the query, `T` specifies if streaming is supported or not and `E` is the effect type(Read/Write/Transaction/DDL). 
 
 Now we can invoke _insertMovie(shawshank)_ and it will asynchronously insert the record into the database. Since we have used the _BIGSERIAL_ for the `movie_id`, postgres will automatically assign a numeric value. 
 If we want to copy the generated id and return it along with the inserted object, we can use theee method `returning` as:
@@ -147,7 +179,11 @@ Now, let's see how to execute select queries and fetch the rows from the table. 
 ```scala
 val movies: Future[Seq[Movie]] = db.run(SlickTables.movieTable.result)
 ```
-The method `.result` on the _movieTable_ will create an executable action. We can filter the rows in the table using the _filter_ method just like on a collection. However, we need to use `===` method instead. 
+The method `.result` on the _movieTable_ will create an executable action. We can filter the rows in the table using the _filter_ method just like on a collection. However, we need to use `===` method instead. This method will compare the value provided with that in the database column. For this method to be available, we need to import _api_ from the profile.
+```
+import profile.api._
+```
+where profile is _PostgresProfile_ we used before.
 
 ```scala
 def findMovieByName(name: String): Future[Option[Movie]] = {
@@ -190,6 +226,8 @@ def getAllMoviesByPlainQuery: Future[Seq[Movie]] = {
   db.run(moviesQuery)
 }
 ```
+
+The implicit _GetResult_ informs Slick on how to map the results of a plain query to required case class. _GetResult_ takes a lambda, which has the _ResultSet_ from the query. We need to provide the datatypes of the result fields. If we use `<<`, Slick will try to infer the type based on the mapped case class fields. 
 
 ### 5.2. Transactional Queries
 When we have multiple queries that modifies the database table, it is always advisable to use transactions. It will ensure that the modifications happen atomically. We can combine multiple queries in Slick using _DBIO.seq_. 
