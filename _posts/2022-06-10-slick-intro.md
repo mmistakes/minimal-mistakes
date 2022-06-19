@@ -14,7 +14,7 @@ This guide will explain
 - integrating with postgres specific datatypes using slick-pg
 - how to auto-generate slick schema from database 
 
-For this blog, we will build a basic database for movies and related entities. We will use Slick to save and fetch rows from multiple tables related to the movies database. For explaining different features of Slick, we will make use of multiple tables with different types of columns.
+For this blog, we will build a basic database for movies and related entities. We will use Slick to save and fetch rows from multiple tables related to the movies database. For explaining different features of Slick, we will make use of tables with different types of columns.
 
 ## 1. Introduction 
 Slick is a functional relational library in Scala which makes working with relational databases easier. We can interact with the database almost in the same way as we do with Scala collections. Additionally, Slick uses asynchronous programming using scala Futures. It also supports the usage of plain SQL queries which might come in handy if we want to exactly control the way the queries are built. 
@@ -328,7 +328,7 @@ SlickTables.ddl.createIfNotExistsStatements.mkString(";\n")
 This will generate SQL scripts for creating all the tables we have used in our application. If we make any changes to the Slick tables, we can then again generate the DDL scripts. We can write the results to a `.sql` file and keep in the `resource` directory within the project. This will make sure that we always have the correct database structure and can create an empty database easily. 
 
 ## 6. Slick-Pg for Postgres
-PostgreSQL has additional powerful datatypes and features. We can use a thirdparty library [slick-pg](https://github.com/tminglei/slick-pg) to use those features in Slick with ease. We have already added the necessary dependencies in the _build.sbt_. 
+PostgreSQL has additional powerful datatypes and features. But by default, Slick doesn't have support for all the advanced features of Postres. Some of these features are not available in many of the relational databases. However, We can use a thirdparty library [slick-pg](https://github.com/tminglei/slick-pg) to utilise all those amazing features of Postgres in Slick with ease. We have already added the necessary dependencies in the _build.sbt_. 
 
 To use it, we need to write a custom Postgres Profile and use it instead of the slick provided _PostgresProfile_. We can mix-in the traits from slik-pg based on the required features of postgres. Let's add the support for _JSON_, _HStore_ and _Array_ datatypes. _HStore_ is a special datatype available in PostgreSQL database. It is used for storing key-value pair of data similar to _Map_ type in Scala.
 
