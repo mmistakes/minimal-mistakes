@@ -23,7 +23,9 @@ Apart from that, Slick provides compile time safety by mapping the database colu
 We assume the readers have basic knowledge of Scala and PostgreSQL for this post.
 
 ## 2. Setup
-For this blog, we will be using Slick with _PostgreSQL_ and _Hikari_ connection pool. Also we will be using _slick-pg_ library for advanced postgres features. Let's add all the necessary dependencies together in the _build.sbt_:
+For this blog, we will be using Slick with _PostgreSQL_ and _Hikari_ connection pool. Also we will be using _slick-pg_ library for advanced postgres features. 
+**We will be using Scala 2 version as support for Scala 3 is still in progress for Slick.**
+Let's add all the necessary dependencies together in the _build.sbt_:
 
 ```scala
 libraryDependencies ++= Seq(
@@ -230,7 +232,7 @@ def getAllMoviesByPlainQuery: Future[Seq[Movie]] = {
 The implicit _GetResult_ informs Slick on how to map the results of a plain query to required case class. _GetResult_ takes a lambda, which has the _ResultSet_ from the query. We need to provide the datatypes of the result fields. If we use `<<`, Slick will try to infer the type based on the mapped case class fields. 
 
 ### 5.2. Transactional Queries
-When we have multiple queries that modifies the database table, it is always advisable to use transactions. It will ensure that the modifications happen atomically. We can combine multiple queries in Slick using _DBIO.seq_. 
+When we have multiple queries that modifies the database table, it is always advisable to use transactions. It will ensure that the modifications happen atomically. When we use transaction, if one of the queries in the transaction fails, all the queries in the same transaction will be rolledback. 
 
 ```scala
 def saveWithTransaction(movie: Movie, actor: Actor): Future[Unit] = {
@@ -240,7 +242,8 @@ def saveWithTransaction(movie: Movie, actor: Actor): Future[Unit] = {
   db.run(combinedQuery.transactionally)
 }
 ```
-The method `transactionally` on the _combinedQuery_ will make both the insert queries in a single transaction. So, if one of the fails, both the inserts will be rolled back.
+The method `transactionally` on the _combinedQuery_ will make both the insert queries in a single transaction. So, if one of the fails, both the inserts will be rolled back. 
+We can combine multiple queries in Slick using _DBIO.seq_. The _seq_ method takes a vararg of _DBIOAction_ which will then execute all the actions sequentially.  If we don't add the method `.transactionally` at the end, it will run all the queries, but without transaction. 
 
 ### 5.3. Joining Tables
 
@@ -248,21 +251,20 @@ Slick also provides methods to write join queries. Let's try to join _Actor_ tab
 
 ```scala
 def getActorsByMovie(movieId: Long): Future[Seq[Actor]] = {
-  val joinQuery = for {
-    res <- movieActorMappingTable
+  val joinQuery: Query[(SlickTables.MovieActorMappingTable, SlickTables.ActorTable), (MovieActorMapping, Actor), Seq] = movieActorMappingTable
       .filter(_.movieId === movieId)
       .join(actorTable)
       .on(_.actorId === _.id)
-  } yield res._2
-  db.run(joinQuery.result)
+
+    db.run(joinQuery.map(_._2).result)
 }
 ```
-The above join operation returns a tuple of both the table results, but here we are only returning the _Actor_ table results and discarding the other one.
+The above join operation returns a tuple of both the table results as a _Query_ type. We can then transform the query in the way we want before exeucting it. Her we are applying _map_ and returning only the _Actor_ table results and discarding the other one.
 
-Apart from this, Slick also provide methods for left and right outer joins as well.
+Apart from this, Slick also provide methods for left and right outer joins as well using _joinLeft_ and _joinRight_ combinators.
 
 ### 5.4. Mapping Enumeration Field to Column
-In all the above samples, we used standard data types such as Int, String, Date, etc for the case classes. If we want to use a custom type, we need to provide an implicit converter to convert between the scala type and relevant column type. Let's try to use an enumeration field in case class. 
+In all the above samples, we used standard data types such as _Int_, _String_, _Date_, etc for the case classes. If we want to use a custom type, we need to provide an implicit converter to convert between the scala type and relevant column type. Let's try to use an enumeration field in case class. 
 
 ```scala
 object StreamingProvider extends Enumeration {
@@ -276,7 +278,10 @@ final case class StreamingProviderMapping(
   streamingProvider: StreamingProvider.StreamingProviders
 )
 ```
-Now, let's create the mapping table for slick as:
+We created enums for Streaming providers. We can then provide the enum in the case class field. We are using Scala 2 enums as there is no support yet for Scala 3. 
+
+Now, let's create the mapping table for slick. We are going to use the same format for creating the slick table by extending with _Table_ and implementing the `*` method for mapping.
+
 ```scala
 class StreamingProviderMappingTable(tag: Tag)
     extends Table[StreamingProviderMapping](tag, "StreamingProviderMapping") {
@@ -299,10 +304,12 @@ class StreamingProviderMappingTable(tag: Tag)
 }
 lazy val streamingProviderMappingTable = TableQuery[StreamingProviderMappingTable]
 ```
-Here, we defined an implicit converter for _StreamingProvider_ enum. Since it is available in the scope, we can map the field with the enum. Slick will use the _providerMapper_ to convert between case class and database column.
+Here, we defined an implicit converter for _StreamingProvider_ enum. We will be saving the enum value as a string in the column. When the record is fetched, slick will convert it to the relevant enum type using the implicit. Slick will use the _providerMapper_ to convert between case class and database column for the enum field.
 
 ### 5.5. Generating DDL Scripts from Slick Tables
-Slick also provides a way to generate DDL scripts from the slick tables. This way, we can generate the table scripts and track the versions easily. This will also make sure that we can easily set up an empty database.
+Slick also provides a way to generate Data Definition Language(DDL) scripts from the slick tables. DDL scripts explains the structure of the database using CREATE, DROP, ALTER queries and provides additional information for relationship between tables.
+This way, we can generate the table scripts and track the versions easily. This will also make sure that we can easily set up an empty database.
+
 To generate the DDL scripts, we need to first collect all the slick tables in a collection. 
 
 ```scala
@@ -317,11 +324,32 @@ Now, we can invoke the method to generate the scripts:
 ```scala
 SlickTables.ddl.createIfNotExistsStatements.mkString(";\n")
 ```
+This will generate SQL scripts for creating all the tables we have used in our application. If we make any changes to the Slick tables, we can then again generate the DDL scripts. We can write the results to a `.sql` file and keep in the `resource` directory within the project. This will make sure that we always have the correct database structure and can create an empty database easily. 
 
 ## 6. Slick-Pg for Postgres
 PostgreSQL has additional powerful datatypes and features. We can use a thirdparty library [slick-pg](https://github.com/tminglei/slick-pg) to use those features in Slick with ease. We have already added the necessary dependencies in the _build.sbt_. 
 
-To use it, we need to write a custom Postgres Profile and use it instead of the slick provided _PostgresProfile_. We can mix-in the traits from slik-pg based on the required features of postgres. Let's add the support for JSON, HStore and Array datatypes.
+To use it, we need to write a custom Postgres Profile and use it instead of the slick provided _PostgresProfile_. We can mix-in the traits from slik-pg based on the required features of postgres. Let's add the support for _JSON_, _HStore_ and _Array_ datatypes. _HStore_ is a special datatype available in PostgreSQL database. It is used for storing key-value pair of data similar to _Map_ type in Scala.
+
+Now, let's create a new custom profile with HStore support.
+
+```scala
+trait CustomPostgresProfile
+    extends ExPostgresProfile with PgHStoreSupport {
+
+  override val api = CustomPGAPI
+  object CustomPGAPI
+      extends API
+      with HStoreImplicits 
+}
+object CustomPostgresProfile extends CustomPostgresProfile
+```
+
+To create a custom profile, we need to extend with _ExPostgresProfile_ provided by Slick-PG that is a wrapper on Slick's _PostgresProfile_. To use HStore features, we need to mix-in with _PgHStoreSupport_ trait from slick-pg. 
+
+For get the implicit methods, we were importing _PostgresProfile.api.__. To get the Hstore implicit methods, we need to extend the Slick's API with _HStoreImplicits_ provided by slick-pg. Then we can create a companion object for our custom profile, so that we can import it when we need to build the queries.
+
+In the same way, we can add the support for other datatypes such as _JSON_, _Array_ etc. 
 
 ```scala
 trait CustomPostgresProfile
@@ -349,16 +377,28 @@ trait CustomPostgresProfile
 }
 object CustomPostgresProfile extends CustomPostgresProfile
 ```
+In the advanced profile, we have implemented the following features:
+- Support for HStore, JSON, Array
+- Support for jsonb type which is an improved and better way to serialise JSON data in postgres
+- Implicit parameters to support Array types for conversion between scala class and postgres json array types
+- Support for `insertOrUpdate` feature from postgres
+
 Now, we can use `CustomPostgresProfile` instead of the `PostgresProfile` to make use of these features.
 
 ### 6.1. Querying from an Array Column
 
 Let's see how we can use filter query on an postgres array column. We have created a _MovieLocationsTable_ which has a _movieLocations_ array field. If we want to filter movies which was shot on any of the input locations, we can do that as:
 ```scala
-val locations: List[String] = List("location1", "location2")
+val locations: List[String] = List("USA", "Germany")
 val query = SpecialTables.movieLocationsTable.filter(_.locations @& locations.bind)
 ```
-The operator `@&` will return true if there is an overlap between the input list and the database column. There are many other such operators on array field, but we are not going to go through all of it here.
+The operator `@&` will return true if there is an overlap between the input list and the database column. That means, if there is atleast one common item between the column value and input list, it will return true. 
+For example, assume that the database column has the countries as `[USA, Canada, Mexico]`. The above query will match and return true since _USA_ is a common value in the input `[USA, Germany]`. The method `bind` will convert the literal value into a database bind type. Bind parameters helps the database to improve the query performance by using pre-compiled prepared queries instead of re-creating separate queries each time.
+
+Some of the other popular array operators in slick-pg are:
+- `@>` will check for contains. For example, `[USA, Mexico, Canada, Germany] @> [USA, Germany]` returns true since all elements of rightside array is present in left 
+- `++` will concatenate two arrays
+- `length` returns the length of the array
 
 ### 6.2. Querying from an HStore Column
 
@@ -373,6 +413,11 @@ def getMoviesByDistributor(distributor: String): Future[Seq[MovieProperties]] = 
 ```
 The operator `@>` filters the hstore column for the key _distributor_ and the input value. Similar to array, there are many other operators in hstore as well.
 
+Some of the other available operations on HStore are:
+- `@+` concatenates two hstore columns
+- `??` checks if the provided key exists in the hstore field
+- `+>` returns the value for the key provided (`'a=>x, b=>y' -> 'a'` returns `x` as the value for `a`) 
+
 ### 6.3. Querying from a JSON Column
 Postgres also supports JSON datatype by default. Slick-Pg also has support for querying the json columns. Let's look at it with an example:
 
@@ -384,6 +429,10 @@ def getActorsBornOn(year: String): Future[Seq[ActorDetails]] = {
 }
 ```
 In the above code, we are filtering the _personal_ column which is a JSON type in _ActorDetails_ table. The method `+>>` will get the json key _birthYear_ and compares it with the value provided.
+
+Some of the other JSON Operators are:
+- `||` combines two json fields
+- `-` removes a field from json for the matching key
 
 ## 7. Code Generation
 So far, we have written the Slick tables manually. If we are following a database first approach, slick provides a way to generate the mapping tables easily. For now, we are ignoring the slick-pg types and trying to generate the slick mappings for basic datatypes. 
