@@ -1,0 +1,162 @@
+---
+layout : single
+title : PL/SQL 프로시저 예제
+categories:
+  - Blog
+tags:
+  - Blog
+---
+
+
+
+
+
+> ### PL/SQL 프로시저 예제
+
+~~~sql
+-- 게시판 테이블
+CREATE TABLE BOARD
+(
+    IDX     NUMBER  PRIMARY KEY, -- 글번호
+    TITLE   VARCHAR2(100)   NOT NULL, -- 글제목
+    CONTENT VARCHAR2(1000)  NOT NULL, -- 글내용
+    WRITER  VARCHAR2(50)    NOT NULL, -- 작성자
+    REGDATE DATE DEFAULT SYSDATE -- 등록/수정일
+);
+
+-- IDX컬럼 : SEQ_BOARD_IDX 시퀀스 사용 프로시저내부 INSERT문에 적용
+
+1. BOARD 테이블에 데이터 삽입하는 프로시저 생성 UDP_BOARD_INSERT
+-> 입력 데이터
+UDP_BOARD_INSERT('프로시저 연습1', '프로시저 코딩실습1', '홍길동1', SYSDATE);
+UDP_BOARD_INSERT('프로시저 연습2', '프로시저 코딩실습2', '홍길동2', SYSDATE);
+
+2. BOARD 테이블에 데이터 수정하는 프로시저 생성 UDP_BOARD_UPDATE
+-> 수정 데이터
+UDP_BOARD_UPDATE(글번호, '프로시저 연습수정1' '프로시저 코딩실습1 수정', SYSDATE);
+
+3. BOARD 테이블에 데이터 삭제하는 프로시저 생성 UDP_BOARD_DELETE
+-> 삭제 데이터
+UDP_BOARD_DELETE(글번호);
+
+4. BOARD 테이블에 글번호를 이용하여, 작성자 조회하는 프로시저. UDP_GET_WRITER
+UDP_GET_WRITER(글번호) - OUT 매개변수 이용
+
+
+1.
+
+
+CREATE SEQUENCE SEQ_BOARD_IDX;
+
+CREATE OR REPLACE PROCEDURE UDP_BOARD_INSERT1
+(
+    P_TITLE     IN  BOARD.TITLE%TYPE,
+    P_CONTENT   IN  BOARD.CONTENT%TYPE,
+    P_WRITER    IN  BOARD.WRITER%TYPE,
+    P_REGDATE   IN  BOARD.REGDATE%TYPE
+)
+IS
+
+BEGIN
+	INSERT INTO BOARD(IDX, TITLE, CONTENT, WRITER, REGDATE)
+    VALUES (SEQ_BOARD_IDX.NEXTVAL, P_TITLE, P_CONTENT, P_WRITER, P_REGDATE);
+    
+    COMMIT;
+END;
+
+
+-- 데이터 입력
+EXECUTE UDP_BOARD_INSERT1('프로시저 연습1', '프로시저 코딩실습1', '홍길동1', SYSDATE);
+EXECUTE UDP_BOARD_INSERT1('프로시저 연습2', '프로시저 코딩실습2', '홍길동2', SYSDATE);
+
+-- 데이터 조회
+SELECT * FROM BOARD;
+
+
+2.
+
+CREATE OR REPLACE PROCEDURE UDP_BOARD_UPDATE
+(
+    P_IDX       IN  BOARD.IDX%TYPE,
+    P_TITLE     IN  BOARD.TITLE%TYPE,
+    P_CONTENT   IN  BOARD.CONTENT%TYPE,
+    P_REGDATE   IN  BOARD.REGDATE%TYPE
+)
+IS
+
+BEGIN
+    UPDATE BOARD
+        SET TITLE = P_TITLE, CONTENT = P_CONTENT, REGDATE = P_REGDATE
+    WHERE IDX = P_IDX;
+    
+    COMMIT;
+END;
+
+
+-- 테스트 
+EXECUTE UDP_BOARD_UPDATE(1, '프로시저 연습수정1', '프로시저 코딩실습1 수정', SYSDATE);
+-- 데이터 조회
+SELECT * FROM BOARD WHERE IDX = 1;
+
+
+
+
+
+
+3.
+CREATE OR REPLACE PROCEDURE UDP_BOARD_DELETE
+(
+    P_IDX       IN  BOARD.IDX%TYPE
+)
+IS
+
+BEGIN
+    DELETE BOARD
+    WHERE IDX = P_IDX;
+    
+    COMMIT;
+END;
+
+-- 데이터 조회
+SELECT * FROM BOARD WHERE IDX = 1;
+
+-- 테스트
+EXECUTE UDP_BOARD_DELETE(1);
+
+-- 데이터 조회
+SELECT * FROM BOARD WHERE IDX = 1;
+
+
+
+4. 
+
+CREATE OR REPLACE PROCEDURE UDP_GET_WRITER
+(
+    P_IDX       IN  BOARD.IDX%TYPE,
+    P_WRITER    OUT  BOARD.WRITER%TYPE
+)
+IS
+    VS_WRITER BOARD.WRITER%TYPE;
+BEGIN
+    SELECT WRITER
+    INTO VS_WRITER
+    FROM BOARD
+    WHERE IDX = P_IDX;
+    
+    P_WRITER := VS_WRITER;
+    
+    COMMIT;
+END;
+
+-- 테스트
+DECLARE
+    VS_WRITER BOARD.WRITER%TYPE;
+BEGIN
+    UDP_GET_WRITER(21, VS_WRITER);
+    DBMS_OUTPUT.PUT_LINE('작성자 : ' || VS_WRITER);
+END;
+
+-- 데이터 조회
+SELECT * FROM BOARD;
+~~~
+
