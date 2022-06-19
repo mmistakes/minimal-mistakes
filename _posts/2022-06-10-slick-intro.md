@@ -39,7 +39,7 @@ libraryDependencies ++= Seq(
 
 We need to have a working PostgreSQL database for testing the application. Some of the options are:
 - Installing a PostgreSQL database locally
-- Use a dockerized PostgreSQL instance (locally)
+- Use a dockerized PostgreSQL instance (locally). In this tutorial, you can just run `docker-compose up` to set up the database tables.
 - Use any free online services such as [ElephantSQL](https://www.elephantsql.com/)
 
 Next, we can add the database configurations to the config file such as _application.conf_.
@@ -51,7 +51,7 @@ postgres = {
   properties = {
     serverName = "localhost"
     portNumber = "5432"
-    databaseName = "movies"
+    databaseName = "postgres"
     user = "postgres"
     password = "admin"
   }
@@ -101,7 +101,7 @@ Next, we need to create a Slick Table class. Slick Table maps the table fields t
 ```scala
 class SlickTablesGeneric(val profile: PostgresProfile) {
   import profile.api._
-  class MovieTable(tag: Tag) extends Table[Movie](tag, "Movie") {
+  class MovieTable(tag: Tag) extends Table[Movie](tag, Some("movies"), "Movie") {
     def id = column[Long]("movie_id", O.PrimaryKey, O.AutoInc)
     def name = column[String]("name")
     def releaseDate = column[LocalDate]("release_date")
@@ -110,6 +110,7 @@ class SlickTablesGeneric(val profile: PostgresProfile) {
   }
 }
 ```
+We need to first extends the class with _Table_ provided by Slick. It takes _tag_ as the first parameter. This is used by slick to mark the class as a Table class. We can give an optional parameter for the database schema and then the table name. If schema is not provided, it will use the default schema, _public_ in the case of postgres.
 For each of the column in the table, we need to define a def with the corresponding column type of the slick. We can use the method _column_ with the correct data type. We also need to provide the column name and any other properties that are needed. For example, let's look at the primary key **movie_id** in the Movie table. 
 
 The method _column[Long]_ defines the column type. It takes the string parameter "movie_id" which is the actual column name in the database table. After that, we can provide multiple properties as vararg field. 
@@ -136,13 +137,13 @@ object SlickTables extends SlickTablesGeneric(PostgresProfile)
 Now that we have completed the initial setup, we can look at performing basic CRUD operations using Slick. We will be using the _movieTable_ we created for all the operations. But before that, we need to manually create the database in Postgres and also create the table.
 ```sql
 create extension hstore;
-create table if not exists "Movie" ("movie_id" BIGSERIAL NOT NULL PRIMARY KEY,"name" VARCHAR NOT NULL,"release_date" DATE NOT NULL,"length_in_min" INTEGER NOT NULL);
-create table if not exists "Actor" ("actor_id" BIGSERIAL NOT NULL PRIMARY KEY,"name" VARCHAR NOT NULL);
-create table if not exists "MovieActorMapping" ("movie_actor_id" BIGSERIAL NOT NULL PRIMARY KEY,"movie_id" BIGINT NOT NULL,"actor_id" BIGINT NOT NULL);
-create table if not exists "StreamingProviderMapping" ("id" BIGSERIAL NOT NULL PRIMARY KEY,"movie_id" BIGINT NOT NULL,"streaming_provider" VARCHAR NOT NULL);
-create table if not exists "MovieLocations" ("movie_location_id" BIGSERIAL NOT NULL PRIMARY KEY,"movie_id" BIGINT NOT NULL,"locations" text [] NOT NULL);
-create table if not exists "MovieProperties" ("id" bigserial NOT NULL PRIMARY KEY,"movie_id" BIGINT NOT NULL,"properties" hstore NOT NULL);
-create table if not exists "ActorDetails" ("id" bigserial NOT NULL PRIMARY KEY,"actor_id" BIGINT NOT NULL,"personal_info" jsonb NOT NULL);
+create table if not exists movies."Movie" ("movie_id" BIGSERIAL NOT NULL PRIMARY KEY,"name" VARCHAR NOT NULL,"release_date" DATE NOT NULL,"length_in_min" INTEGER NOT NULL);
+create table if not exists movies."Actor" ("actor_id" BIGSERIAL NOT NULL PRIMARY KEY,"name" VARCHAR NOT NULL);
+create table if not exists movies."MovieActorMapping" ("movie_actor_id" BIGSERIAL NOT NULL PRIMARY KEY,"movie_id" BIGINT NOT NULL,"actor_id" BIGINT NOT NULL);
+create table if not exists movies."StreamingProviderMapping" ("id" BIGSERIAL NOT NULL PRIMARY KEY,"movie_id" BIGINT NOT NULL,"streaming_provider" VARCHAR NOT NULL);
+create table if not exists movies."MovieLocations" ("movie_location_id" BIGSERIAL NOT NULL PRIMARY KEY,"movie_id" BIGINT NOT NULL,"locations" text [] NOT NULL);
+create table if not exists movies."MovieProperties" ("id" bigserial NOT NULL PRIMARY KEY,"movie_id" BIGINT NOT NULL,"properties" hstore NOT NULL);
+create table if not exists movies."ActorDetails" ("id" bigserial NOT NULL PRIMARY KEY,"actor_id" BIGINT NOT NULL,"personal_info" jsonb NOT NULL);
 ```
 The above scripts are for all the tables we will be using as part of this blog.
 
@@ -284,7 +285,7 @@ Now, let's create the mapping table for slick. We are going to use the same form
 
 ```scala
 class StreamingProviderMappingTable(tag: Tag)
-    extends Table[StreamingProviderMapping](tag, "StreamingProviderMapping") {
+    extends Table[StreamingProviderMapping](tag, Some("movies"), "StreamingProviderMapping") {
 
   implicit val providerMapper =
     MappedColumnType.base[StreamingProvider.StreamingProviders, String](
@@ -447,7 +448,7 @@ Once the sbt is refreshed, we can add the configurations in _build.sbt_:
 ```scala
 slickCodegenSettings
 enablePlugins(CodegenPlugin)
-slickCodegenDatabaseUrl := "jdbc:postgresql://localhost:5432/movies"
+slickCodegenDatabaseUrl := "jdbc:postgresql://localhost:5432/postgres"
 slickCodegenDatabaseUser := "postgres"
 slickCodegenDatabasePassword := "admin"
 slickCodegenDriver := slick.jdbc.PostgresProfile
@@ -456,7 +457,7 @@ slickCodegenOutputPackage := "com.rockethejvm.generated.models"
 slickCodegenCodeGenerator := { (slickModel: model.Model) => new SourceCodeGenerator(slickModel) }
 ```
 
-Now, we can use the sbt command `slickCodegen`. This will generate the case classes and slick tables. 
+Now, we can use the sbt command `slickCodegen`. This will generate the case classes and slick tables. By default, the code generator will generate the file under the path `target/scala-2.13/src_managed`. It will generate both case classes and the slick tables. It will also generate all the special relationships like primary key, foreign keys, sequences etc based on the database structure. It will also generate all the implicit _GetResult_ parameters for the plain SQL execution. This way, we can avoid manually writing most of the necessary code for mapping the database to scala classes.
 
 We can also customise the code generator class to use advanced features like slick-pg, but we will not be looking at this as part of this blog. 
 
