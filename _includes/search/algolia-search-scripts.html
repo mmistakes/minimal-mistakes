@@ -26,8 +26,9 @@ const loadSearch = function() {
 
     const hitTemplate = function(hit) {
       const url = hit.url;
-      const title = hit._highlightResult.title.value;
-      const content = hit._highlightResult.html.value;
+      const hightlight = hit._highlightResult;
+      const title = hightlight.title && hightlight.title.value  || "";
+      const content = hightlight.html && hightlight.html.value  || "";
 
       return `
         <div class="list__item">
@@ -57,7 +58,7 @@ const loadSearch = function() {
       })
     );
 
-    if(!search.started) {
+    if (!search.started) {
       search.start();
     }
   });
