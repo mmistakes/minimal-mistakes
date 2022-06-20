@@ -2,11 +2,11 @@
 layout : single
 title : Spring 예외처리
 categories: SPRING
-tags: SPRING
+tags: [SPRING]
 toc:  true
 toc_icon: "bars"
 toc_sticky: true
-author_profile: true
+author_profile: false
 sidebar:
   nav: "docs"
 ---

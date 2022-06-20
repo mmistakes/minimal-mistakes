@@ -2,11 +2,11 @@
 layout : single
 title : Spring 업로드
 categories: SPRING
-tags: SPRING
+tags: [SPRING]
 toc:  true
 toc_icon: "bars"
 toc_sticky: true
-author_profile: true
+author_profile: false
 sidebar:
   nav: "docs"
 ---
