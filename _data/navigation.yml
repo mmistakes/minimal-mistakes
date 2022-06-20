@@ -6,12 +6,16 @@ main:
     url: /tags/
 
 docs:
-  - title: "대목차"
+  - title: "목록"
     children:
-      - title: "Category"
+      - title: "JAVA"
         url: /categories/
-      - title: "Tag"
+      - title: "SQL"
         url: /tags/
+      - title: "JSP"
+        url: /categories/
+      - title: "SPRING"
+        url: /categories/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
