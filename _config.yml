@@ -108,7 +108,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "개발 공부하는 비전공자"
   location         : "South Korea"
-  email            :
+  email            : "dbrtlarb@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -122,6 +122,18 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "JAVA"
+      icon: "fab fa-fw fa-github"
+      url: "/categories/java/"
+    - label: "SQL"
+      icon: "fab fa-fw fa-github"
+      url: "/categories/sql/"
+    - label: "JSP"
+      icon: "fab fa-fw fa-github"
+      url: "/categories/jsp/"
+    - label: "SPRING"
+      icon: "fab fa-fw fa-github"
+      url: "/categories/spring/"
 
 # Site Footer
 footer:
@@ -267,9 +279,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
-      sidebar:
-        nav: "docs"
+      author_profile: true
       read_time: true
       comments: true
       share: true
