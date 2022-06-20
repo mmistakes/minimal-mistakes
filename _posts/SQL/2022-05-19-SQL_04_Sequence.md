@@ -1,10 +1,14 @@
 ---
 layout : single
 title : SQL 시퀀스
-categories:
-  - Blog
-tags:
-  - Blog
+categories: SQL
+tags: [SQL]
+toc:  true
+toc_icon: "bars"
+toc_sticky: true
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 > ### 시퀀스의 정의 기본작성

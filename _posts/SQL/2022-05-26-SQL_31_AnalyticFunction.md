@@ -1,10 +1,14 @@
 ---
 layout : single
 title : SQL 분석함수
-categories:
-  - Blog
-tags:
-  - Blog
+categories: SQL
+tags: [SQL]
+toc:  true
+toc_icon: "bars"
+toc_sticky: true
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 > ### 분석함수 (Analytic Function)

@@ -1,10 +1,14 @@
 ---
 layout : single
 title : SQL 다중테이블 INSERT
-categories:
-  - Blog
-tags:
-  - Blog
+categories: SQL
+tags: [SQL]
+toc:  true
+toc_icon: "bars"
+toc_sticky: true
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 

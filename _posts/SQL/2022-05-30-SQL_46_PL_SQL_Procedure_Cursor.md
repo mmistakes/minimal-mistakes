@@ -1,10 +1,14 @@
 ---
 layout : single
 title : PL/SQL 프로시저 커서(CURSOR)
-categories:
-  - Blog
-tags:
-  - Blog
+categories: SQL
+tags: [SQL]
+toc:  true
+toc_icon: "bars"
+toc_sticky: true
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 > ### 커서(CURSOR)

@@ -1,10 +1,14 @@
 ---
 layout : single
 title : SQL 형변환 함수
-categories:
-  - Blog
-tags:
-  - Blog
+categories: SQL
+tags: [SQL]
+toc:  true
+toc_icon: "bars"
+toc_sticky: true
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 > ### 형변환 함수

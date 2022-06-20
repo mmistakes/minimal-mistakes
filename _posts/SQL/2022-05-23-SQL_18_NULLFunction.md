@@ -1,10 +1,14 @@
 ---
 layout : single
 title : SQL NULL 관련 함수
-categories:
-  - Blog
-tags:
-  - Blog
+categories: SQL
+tags: [SQL]
+toc:  true
+toc_icon: "bars"
+toc_sticky: true
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 > ### NULL 관련 함수

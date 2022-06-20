@@ -1,10 +1,14 @@
 ---
 layout : single
 title : SQL 기본 집계 함수
-categories:
-  - Blog
-tags:
-  - Blog
+categories: SQL
+tags: [SQL]
+toc:  true
+toc_icon: "bars"
+toc_sticky: true
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 > ### 기본 집계 함수

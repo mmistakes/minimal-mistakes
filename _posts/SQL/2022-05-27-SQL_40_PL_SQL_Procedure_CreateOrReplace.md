@@ -1,10 +1,14 @@
 ---
 layout : single
 title : PL/SQL 사용자정의함수 생성
-categories:
-  - Blog
-tags:
-  - Blog
+categories: SQL
+tags: [SQL]
+toc:  true
+toc_icon: "bars"
+toc_sticky: true
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 > ### PL/SQL 사용자 정의 함수 생성

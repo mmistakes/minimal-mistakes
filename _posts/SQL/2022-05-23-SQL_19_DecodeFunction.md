@@ -1,10 +1,14 @@
 ---
 layout : single
 title : SQL DECODE
-categories:
-  - Blog
-tags:
-  - Blog
+categories: SQL
+tags: [SQL]
+toc:  true
+toc_icon: "bars"
+toc_sticky: true
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 > ###### DECODE (expr, search1, result1, search2, result2, ..., default)

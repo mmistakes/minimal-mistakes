@@ -1,10 +1,14 @@
 ---
 layout : single
 title :   SQL 제약조건 5가지
-categories:
-  - Blog
-tags:
-  - Blog
+categories: SQL
+tags: [SQL]
+toc:  true
+toc_icon: "bars"
+toc_sticky: true
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 > ### 데이터 제약조건 5가지

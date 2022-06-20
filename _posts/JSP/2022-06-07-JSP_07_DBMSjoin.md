@@ -1,10 +1,14 @@
 ---
 layout : single
 title : JSP와 데이터베이스 연동하기
-categories:
-  - Blog
-tags:
-  - Blog
+categories: JSP
+tags: [JSP]
+toc:  true
+toc_icon: "bars"
+toc_sticky: true
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 > ### JSP와 데이터베이스 연동하기 - JDBC사용

@@ -1,10 +1,14 @@
 ---
 layout : single
 title : JSP 자바빈 액션태그
-categories:
-  - Blog
-tags:
-  - Blog
+categories: JSP
+tags: [JSP]
+toc:  true
+toc_icon: "bars"
+toc_sticky: true
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 > ### 자바빈(Java Bean) 액션태그

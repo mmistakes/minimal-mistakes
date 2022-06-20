@@ -1,10 +1,14 @@
 ---
 layout : single
 title : PL/SQL CONTINUE문
-categories:
-  - Blog
-tags:
-  - Blog
+categories: SQL
+tags: [SQL]
+toc:  true
+toc_icon: "bars"
+toc_sticky: true
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 > ### PL/SQL CONTINUE문

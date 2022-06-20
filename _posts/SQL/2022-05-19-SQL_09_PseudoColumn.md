@@ -1,10 +1,14 @@
 ---
 layout : single
 title : SQL 의사컬럼
-categories:
-  - Blog
-tags:
-  - Blog
+categories: SQL
+tags: [SQL]
+toc:  true
+toc_icon: "bars"
+toc_sticky: true
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 > ### 의사컬럼 (Pseudo-Column)

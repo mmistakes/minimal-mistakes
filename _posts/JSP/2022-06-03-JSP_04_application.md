@@ -1,10 +1,14 @@
 ---
 layout : single
 title : JSP application 내장객체
-categories:
-  - Blog
-tags:
-  - Blog
+categories: JSP
+tags: [JSP]
+toc:  true
+toc_icon: "bars"
+toc_sticky: true
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 > ### JSP application 내장객체

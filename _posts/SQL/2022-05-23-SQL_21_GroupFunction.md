@@ -1,10 +1,14 @@
 ---
 layout : single
 title : SQL GROUP BY, HAVING
-categories:
-  - Blog
-tags:
-  - Blog
+categories: SQL
+tags: [SQL]
+toc:  true
+toc_icon: "bars"
+toc_sticky: true
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 > ### 그룹화 함수(GROUP BY)
