@@ -4,6 +4,8 @@ main:
     url: /categories/
   - title: "Tag"
     url: /tags/
+  - title: "Serach"
+    url: /search/
 
 docs:
   - title: "목록"
