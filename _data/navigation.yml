@@ -9,13 +9,13 @@ docs:
   - title: "목록"
     children:
       - title: "JAVA"
-        url: /java/
+        url: /java
       - title: "SQL"
-        url: /sql/
+        url: /sql
       - title: "JSP"
-        url: /jsp/
+        url: /jsp
       - title: "SPRING"
-        url: /spring/
+        url: spring
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
