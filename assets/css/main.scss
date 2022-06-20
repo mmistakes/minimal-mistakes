@@ -4,6 +4,6 @@ search: false
 ---
 
 @charset "utf-8";
-
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
