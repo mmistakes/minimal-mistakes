@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Visualization_Anscombe"
+title:  "13_Visualization_Anscombe"
 categories : python
 tag : [review]
 search: true #false로 주면 검색해도 안나온다.
