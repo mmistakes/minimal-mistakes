@@ -6,6 +6,8 @@ header:
 tags: [scala, beginners]
 excerpt: "An introduction to the popular database library in Scala: Slick."
 ---
+_This article is written by Yadu. He loves to learn new languages, libraries and technologies whenever he gets time. He also loves writing Scala articles, especially for the new-comers to Scala._
+
 This is a beginner friendly article to get started with Slick, a popular database library in Scala. After following this post, you will be able to write scala code to communicate with database using SQL.
 
 This guide will explain 
