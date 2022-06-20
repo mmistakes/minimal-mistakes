@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   : "ko-KR"
 title                    : "개발공부 정리노트"
 title_separator          : "|"
-subtitle                 : #"small positive action"
+subtitle                 : "Progressive overload"
 name                     : "Simgyu Youk"
 description              : "공부한 개발노트 정리함"
 url                      : "https://youksimgyu.github.io"
@@ -75,7 +75,7 @@ google:
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-naver_site_verification  :
+naver_site_verification  : "20da30ef1fc21136669be78db60c23792290d124"
 yandex_site_verification :
 baidu_site_verification  :
 
