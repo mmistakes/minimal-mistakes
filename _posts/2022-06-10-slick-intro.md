@@ -42,6 +42,27 @@ We need to have a working PostgreSQL database for testing the application. Some 
 - Use a dockerized PostgreSQL instance (locally). In this tutorial, you can just run `docker-compose up` to set up the database tables.
 - Use any free online services such as [ElephantSQL](https://www.elephantsql.com/)
 
+A sample `docker-compose.yaml` file looks like:
+```
+version: '3.8'
+services:
+  db:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=admin
+    ports:
+      - '5432:5432'
+    volumes:
+      - db:/var/lib/postgresql11/data
+      - ./db/init-scripts.sql:/docker-entrypoint-initdb.d/scripts.sql
+
+volumes:
+  db:
+    driver: local
+```
+
 Next, we can add the database configurations to the config file such as _application.conf_.
 
 ```scala
