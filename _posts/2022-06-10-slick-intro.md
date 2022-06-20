@@ -219,7 +219,7 @@ val deleteQuery = SlickTables.movieTable.filter(_.id === movieId).delete
 Since we are become familiar with the basic CRUD operations, let's look at some more advanced concepts.
 
 ### 5.1 Executing Plain Query
-Sometimes we might need to run plain SQL queries to get the results in a better way. Slick provides multiple ways to run the plain query. Let's look at a simple way to run the plain query. However, since we are using the plain query, we need to provide some additional information to slick to make the queries typesafe. For that, we need to provide an implicit value with the mappings.
+Sometimes we might need to run plain SQL queries to get the results in a better way. Slick provides multiple ways to run the plain query. Let's look at a simple way to run the query to select rows. However, since we are using the plain query, we need to provide some additional information to slick to make the queries typesafe. For that, we need to provide an implicit value with the relevant mappings.
 
 ```scala
 def getAllMoviesByPlainQuery: Future[Seq[Movie]] = {
@@ -230,7 +230,8 @@ def getAllMoviesByPlainQuery: Future[Seq[Movie]] = {
 }
 ```
 
-The implicit _GetResult_ informs Slick on how to map the results of a plain query to required case class. _GetResult_ takes a lambda, which has the _ResultSet_ from the query. We need to provide the datatypes of the result fields. If we use `<<`, Slick will try to infer the type based on the mapped case class fields. 
+The implicit _GetResult_ informs Slick on how to map the results of a plain query to required case class. _GetResult_ takes a lambda, which has the _ResultSet_ from the query. This implicit is used when the `as` method is applied to convert the ResultSet to case class. 
+Here, we need to provide the datatypes of the result fields so that slick can apply the proper type handling. We can retrieve the values from result set using _r.nextInt_, _r.nextString_ and so on. But if we need to just map the columns to case class fields without any transformation, we can simply use the method `r.<<` on the result set. The method `<<` may be considered as a placeholder for the datatype, with Slick automatically inferring the correct type. In the above example, we are explicitly parsing the date to _LocalDate_ format. We can apply any other transformations on the column result before setting the value on the case class.  
 
 ### 5.2. Transactional Queries
 When we have multiple queries that modifies the database table, it is always advisable to use transactions. It will ensure that the modifications happen atomically. When we use transaction, if one of the queries in the transaction fails, all the queries in the same transaction will be rolledback. 
