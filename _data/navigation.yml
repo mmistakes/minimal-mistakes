@@ -4,11 +4,27 @@ main:
     url : /categories/
   - title : "Tag"
     url : /tags/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+
+docs:
+  - title : "이력서"
+    children:
+      - title : "about"
+        url : /about/resume/
+  
+  - title : "Python"
+    children:
+      - title : "object-detection"
+        children:
+          - title : "mmdetection"
+          - title : "ultratics"
+      - title : "OpenCV"
+      - title : "scikit-learn"
+      - title : "anomaly-detection"
+      - title : "Time series"
+      - title : "코딩테스트"
+  
+  - title : "논문"
+    children:
+      - title : "논문리뷰"
+      - title : "논문읽기모임"
+      
