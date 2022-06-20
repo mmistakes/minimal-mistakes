@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Data_Analysis_1"
+title:  "16_Data_Analysis_1"
 categories : python
 tag : [review]
 search: true #false로 주면 검색해도 안나온다.
