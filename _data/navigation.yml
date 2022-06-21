@@ -1,11 +1,14 @@
 # main links
 main:
-  - title: "My MSDN Blog"
+  - title: "post by years"
+    url: /posts/
+  - title: "tags"
+    url: /tags/
+  - title: "my old MSDN blog"
     url: https://blogs.msdn.microsoft.com/nicold/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
