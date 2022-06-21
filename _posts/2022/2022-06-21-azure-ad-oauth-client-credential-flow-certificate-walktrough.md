@@ -150,7 +150,7 @@ namespace daemon_console
 }
 ```
 
-> Note. Update this code with your **ApplicationId**, c**ertificate file path** and your **authority URI** 
+> Note. Update this code with your **ApplicationId**, **certificate file path** and your **authority URI** 
 
 Execute this application from Visual Studio Code. If everything works you will receive an output similar to:
 
@@ -166,10 +166,10 @@ copy encoded Token and paste it in https://jwt.ms. You should see something simi
 As you can see you have an **Access Token** able to call **Migrosoft Graph** (`aud` field), issued by **Azure AD** (`iid` and `idp` fields).
 
 # More information
-* Microsoft Identity OAuth 2.0 client credentials flow: https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow 
-* Create a certificate in Azure Key Vault: https://docs.microsoft.com/en-us/azure/key-vault/certificates/quick-create-portal 
-* Certificate Credential, Assertion Format: https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials 
-* MSAL: https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-overview
-* A .NET Core daemon console application using MSAL.NET to acquire tokens for resources: https://github.com/Azure-Samples/active-directory-dotnetcore-daemon-v2 
-* .NET 6: https://docs.microsoft.com/it-it/dotnet/fundamentals/ 
-* Visual Studio Code: https://code.visualstudio.com/ 
+* Microsoft Identity OAuth 2.0 client credentials flow: <https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow> 
+* Create a certificate in Azure Key Vault: <https://docs.microsoft.com/en-us/azure/key-vault/certificates/quick-create-portal >
+* Certificate Credential, Assertion Format: <https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials> 
+* MSAL Microsoft Authenticatio Library: https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-overview
+* A .NET Core daemon console application using MSAL.NET to acquire tokens for resources: <https://github.com/Azure-Samples/active-directory-dotnetcore-daemon-v2> 
+* .NET 6: <https://docs.microsoft.com/it-it/dotnet/fundamentals/> 
+* Visual Studio Code: <https://code.visualstudio.com/> 
