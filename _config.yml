@@ -118,14 +118,14 @@ author:
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   # url: "https://instagram.com/"
-    # - label: "JAVA"
-    #   url: "/categories/#java"
-    # - label: "SQL"
-    #   url: "/categories/#sql"
-    # - label: "JSP"
-    #   url: "/categories/#jsp"
-    # - label: "SPRING"
-    #   url: "/categories/#spring"
+    - label: "JAVA"
+      url: "/categories/#java"
+    - label: "SQL"
+      url: "/categories/#sql"
+    - label: "JSP"
+      url: "/categories/#jsp"
+    - label: "SPRING"
+      url: "/categories/#spring"
 
 # Site Footer
 footer:
