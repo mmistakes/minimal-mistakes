@@ -1,6 +1,6 @@
 # main links
 main:
-  - title: "post by years"
+  - title: "posts by year"
     url: /posts/
   - title: "tags"
     url: /tags/
