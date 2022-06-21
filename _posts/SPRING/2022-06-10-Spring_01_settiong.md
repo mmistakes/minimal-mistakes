@@ -6,7 +6,7 @@ tags: [SPRING]
 toc:  true
 toc_icon: "bars"
 toc_sticky: true
-author_profile: false
+author_profile: true
 sidebar:
   nav: "docs"
 ---

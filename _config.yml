@@ -110,29 +110,29 @@ author:
   location         : "South Korea"
   email            :
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/youksimgyu"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
-    - label: "JAVA"
-      url: "/categories/#java"
-    - label: "SQL"
-      url: "/categories/#sql"
-    - label: "JSP"
-      url: "/categories/#jsp"
-    - label: "SPRING"
-      url: "/categories/#spring"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/youksimgyu"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   # url: "https://instagram.com/"
+    # - label: "JAVA"
+    #   url: "/categories/#java"
+    # - label: "SQL"
+    #   url: "/categories/#sql"
+    # - label: "JSP"
+    #   url: "/categories/#jsp"
+    # - label: "SPRING"
+    #   url: "/categories/#spring"
 
 # Site Footer
 footer:
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/youksimgyu"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/youksimgyu"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
       # url:
 
 
