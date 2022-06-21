@@ -4,7 +4,7 @@ ptak-bartosz:
   firstname   : "Bartosz"
   surname     : "Ptak"
   title       : #
-  bio         : "Ph.D. student, interested in GPUs, EDGE devices, deep learning and image processing."
+  bio         : "Ph.D. student. Interested in UAVs, EDGE AI devices, deep learning and image processing."
   avatar      : "/assets/images/bio/bartoszptak.webp"
   links:
     - label: "Email"
@@ -21,7 +21,7 @@ aszkowski-przemyslaw:
   firstname   : "Przemysław"
   surname     : "Aszkowski"
   title       : #
-  bio         : "Ph.D. student ...."
+  bio         : "Ph.D. student. Research on perception beyond the visible spectrum"
   avatar      : "/assets/images/bio/przemekaszkowski.webp"
   links:
     - label: "Email"

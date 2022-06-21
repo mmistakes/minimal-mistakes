@@ -1,0 +1,24 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% assign postsByYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+{% for year in postsByYear %}
+
+      {% for post in year.items %}
+        {% for cat in post.category %}
+        {% if page.category contains cat %} 
+        
+            {% include archive-single.html type=entries_layout %}
+        
+  {% endif %}
+{% endfor %}
+{% endfor %}
+
+
+{% endfor %}
+
+<a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>

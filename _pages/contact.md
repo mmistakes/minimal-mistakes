@@ -26,8 +26,8 @@ author_profile: false
                 Faculty of Automatic Control, Robotics and Electrical Engineering<BR>
                 Intstitute of Robotics and Machine Intelligence<BR>
                 <BR>
-                <a href="mailto:vision@put.poznan.pl" >vision@put.poznan.pl</a>
             </p>
+            <h2>Contact us: <a href="mailto:vision@put.poznan.pl" >vision@put.poznan.pl</a></h2>
         </div>
     </div>
     </div>
