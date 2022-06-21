@@ -11,17 +11,16 @@ header:
 
 You can use the OAuth 2.0 client credentials grant specified in RFC 6749, to access web-hosted resources by using the identity of an application. This type of grant is commonly used for server-to-server interactions that must run in the background, without immediate interaction with a user.
 
-The OAuth 2.0 client credentials grant flow permits a web service (confidential client) to use its own credentials, instead of impersonating a user, to authenticate when calling another web service. For a higher level of assurance, the Microsoft identity platform also allows the calling service to authenticate using a certificate or federated credential instead of a shared secret.
+The OAuth 2.0 client credentials grant flow permits a web service (confidential client) to use its own credentials, instead of impersonating a user, to authenticate when calling another web service. For a higher level of assurance, the Microsoft Identity Platform also allows the calling service to authenticate using a certificate or federated credential instead of a shared secret.
 
-In this walktrough I show how to **use a certificate to request an access token to Azure Active Directory**, using the OAuth 2.0 client credential flow. As client I will use  a custom c# dotnet 6 application and MSAL Library. 
+In this walktrough I show how to **use a certificate to request an access token to Azure Active Directory**, using the OAuth 2.0 client credential flow. As client I use a custom c# DotNet 6 application and MSAL Library. 
 
-Alternatively, you can use any other library able [to compute an assertion](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials#assertion-format), and [post it](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#second-case-access-token-request-with-a-certificate) to Azure AD.
-
+> Alternatively, it is possible to use any other library able [to compute an assertion](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials#assertion-format), and [post it](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#second-case-access-token-request-with-a-certificate) to Azure Active Directory.
 
 # 01 - App registration
 On your [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis), create an app registration:
 * Open https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps
-* click [New Registration]
+* Click [New Registration]
 
 use the following parameters:
 
@@ -34,9 +33,10 @@ use the following parameters:
 You can use Azure to create a self signed certificate. 
 
 * Open an instance of [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts) or create a new one if needed.
-* From Azure Key vault open Certificates blade and click on [Generate or Import]
+* From Azure Key vault open `Certificates` blade and click on [Generate or Import]
 
-use the following parameters
+use the following parameters: 
+
 * Method: `Generate`
 * Certificate Name: `my-sample-certificate`
 * Type of CA: `Self-signed Certificate`
@@ -48,23 +48,23 @@ use the following parameters
 When certificate creation is completed:
 
 1. Download certificate in PFX/PEM format (with private key).
-2. Download certigicate in .CER format (without private key).
+2. Download certificate in .CER format (without private key).
 
 > NOTE: A .pfx file includes both the **public and private key** for the associated certificate. A .cer file only has the **public key**, it can be used to verify tokens or client authentication requests.
 
 
-Now go to the App Registration just created and click on `Certificates and Secrets`, upload the certificate **.CER** just created.
+Now, go to the `Application Registration` just created, select `Certificates and Secrets` and upload the certificate **.CER** just created.
 
 The result will be something like:
 
 | Thumbprint | description | start date | expires | id |
 |---|---|---|---|---|
-|4DDASE... | my-sample-certificate | ... | ... | 1aa986a ... | 
+|4DDASE(sample)... | my-sample-certificate | ... | ... | 1aa986a(sample) ... | 
 
 
-# 03 create .Net 6 client application
+# 03 - Create DotNet 6 client application
 
-Create a directory on your machine, and put **.PFX** file downloaded previously in it. 
+Create a directory on your machine, and copy there the **.PFX** file downloaded previously. 
 
 Create the following `client-certificate-test.csproj` file:
 
@@ -150,18 +150,20 @@ namespace daemon_console
 }
 ```
 
-> Note. Update this code with your ApplicationId, certificate file path and your authority URI 
+> Note. Update this code with your **ApplicationId**, c**ertificate file path** and your **authority URI** 
 
 Execute this application from Visual Studio Code. If everything works you will receive an output similar to:
 
 ```
 Token acquired
-Token: eyJ0eXAiOiJKV1QiLCJub25jZSI6IkpXNDFfcFF1Y1EzYkhfZVl6NmVBT0RYSHNpNEJQWjdQT0RwMTB2by12MWsiLCJhbGciOiJSUzI1NiIsIng1dCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyIsImtpZCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyJ9.eyJhdWQiOiJodHRwczovL2dyYXBoLm1pY3Jvc29mdC5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9kYWMyYjFkNS01NDIwLTRmYWQtODg5ZS0xMjgwZmZkYzgwMDMvIiwiaWF0IjoxNjU1MjI5MjAxLCJuYmYiOjE2NTUyMjkyMDEsImV4cCI6MTY1NTIzMzEwMSwiYWlvIjoiRTJaZ1lLaStuWnA3NmQ0TDdRc0Y2Zzk1TGF3NUFBPT0iLCJhcHBfZGlzcGxheW5hbWUiOiJteS1zYW1wbGUtYXBwLXJlZ2lzdHJhdGlvbiIsImFwcGlkIjoiYWNlN2ExMGQtYWFhYS00YTAxLTg2NjMtMTQ0MGI2Yjc4Y2I5IiwiYXBwaWRhY3IiOiIyIiwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZGFjMmIxZDUtNTQyMC00ZmFkLTg4OWUtMTI4MGZmZGM4MDAzLyIsImlkdHlwIjoiYXBwIiwib2lkIjoiNDZjOTRiNTctNjI0MC00OTAyLWI2MGEtZDg1OGViYWQ3YmFhIiwicmgiOiIwLkFRd0ExYkhDMmlCVXJVLUluaEtBXzl5QUF3TUFBQUFBQUFBQXdBQUFBQUFBQUFBTUFBQS4iLCJzdWIiOiI0NmM5NGI1Ny02MjQwLTQ5MDItYjYwYS1kODU4ZWJhZDdiYWEiLCJ0ZW5hbnRfcmVnaW9uX3Njb3BlIjoiRVUiLCJ0aWQiOiJkYWMyYjFkNS01NDIwLTRmYWQtODg5ZS0xMjgwZmZkYzgwMDMiLCJ1dGkiOiJsS2Ixa1hyMnVVYTE1MmNKMWFZakFBIiwidmVyIjoiMS4wIiwid2lkcyI6WyIwOTk3YTFkMC0wZDFkLTRhY2ItYjQwOC1kNWNhNzMxMjFlOTAiXSwieG1zX3RjZHQiOjEzODE3ODg5MTZ9.fGZvr6hFSgdjQrdVmbemxS96qEHM8d5HAWRDBj94IlgAcLWtDjk6hnVCOrOcWeU3Ng1egH7VN8bQ4yHxRmH7KzaYwt0nm4MSNaAhSMyta6LFsbGEzgI5oh873kUd0l0UoAFgvnkWK5CIQris8xxm7yW5fSlXfYbkCogyDsJoF2091KpQcHOqk7fWS9mvLQkDd84mwQkwAFoak0kD4N8S0nxS0aSeW2Jsn4dlGzaVdWbzA3uQ8lVUKiI6QZStAloMSsJPHUJd5LZK4_csH4zmTguPu9F8NWNIAZCxrANlLqtpHUdFX3DWMM-0hbUOd9nqWphPwDpSL8Mws4X1QbbdYQ
+Token: eyJ0eXAiOi(more...).eyJhdWQiOiJodHRwczovL2dyYXBoL(more...)HyKJ.fGZvr(more...)1QbbdYQ
 ```
 
 copy encoded Token and paste it in https://jwt.ms. You should see something similar to the following:
 
-![jwt.ms](\../assets/post/2022/jwt-token-sample.png)
+![jwt.ms](/assets/post/2022/jwt-token-sample.png)
+
+As you can see you have an **Access Token** able to call **Migrosoft Graph** (`aud` field), issued by **Azure AD** (`iid` and `idp` fields).
 
 # More information
 * Microsoft Identity OAuth 2.0 client credentials flow: https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow 
