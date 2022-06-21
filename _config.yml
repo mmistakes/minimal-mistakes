@@ -58,7 +58,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
+  hide                   : true # true, false (default)
 search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
@@ -107,15 +107,15 @@ author:
   name             : "choijaehyeok"
   avatar           : "/assets/images/logo.jpg"
   bio              : "Data Science & AI"
-  location         : "South Korea"
-  email            : "wowogur12@naver.com"
+  # location         : "South Korea"
+  # email            : "wowogur12@naver.com"
   links:
-    - label: "Email"
+    - label: "이메일"
       icon: "fas fa-fw fa-envelope-square"
       url: "wowogur12@naver.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://choijhyeok.github.io/"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://choijhyeok.github.io/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/choijhyeok"
@@ -268,5 +268,7 @@ defaults:
       share: true
       related: true
       show_date : true
+      mathjax: true
+      sidebar_main: true
 
 date_format : "%Y-%m-%d"
