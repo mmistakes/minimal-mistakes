@@ -5,8 +5,6 @@ categories : mmdetection
 tag : [python, mmdetection, object-detection]
 toc: true
 toc_sticky: true
-sidebar:
-  nav: "docs"
 ---
 
 
