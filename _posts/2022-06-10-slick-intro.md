@@ -1,0 +1,489 @@
+---
+title: "An introduction to Slick"
+date: 2022-06-10
+header:
+    image: "/images/blog cover.jpg"
+tags: [scala, beginners]
+excerpt: "An introduction to the popular database library in Scala: Slick."
+---
+_This article is written by Yadu. He loves to learn new languages, libraries and technologies whenever he gets time. He also loves writing Scala articles, especially for the new-comers to Scala._
+
+This is a beginner friendly article to get started with Slick, a popular database library in Scala. After following this post, you will be able to write scala code to communicate with database using SQL.
+
+This guide will explain 
+- what is slick and how to use slick for basic CRUD operations
+- how to apply advanced concepts like join, transaction etc using slick
+- integrating with postgres specific datatypes using slick-pg
+- how to auto-generate slick schema from database 
+
+For this blog, we will build a basic database for movies and related entities. We will use Slick to save and fetch rows from multiple tables related to the movies database. For explaining different features of Slick, we will make use of tables with different types of columns.
+
+## 1. Introduction 
+Slick is a functional relational library in Scala which makes working with relational databases easier. We can interact with the database almost in the same way as we do with Scala collections. Additionally, Slick uses asynchronous programming using scala Futures. It also supports the usage of plain SQL queries which might come in handy if we want to exactly control the way the queries are built. 
+Apart from that, Slick provides compile time safety by mapping the database columns to scala datatypes. This ensures that it is less likely to get runtime errors for database queries.
+
+We assume the readers have basic knowledge of Scala and PostgreSQL for this post.
+
+## 2. Setup
+For this blog, we will be using Slick with _PostgreSQL_ and _Hikari_ connection pool. Also we will be using _slick-pg_ library for advanced postgres features. 
+**We will be using Scala 2 version as support for Scala 3 is still in progress for Slick.**
+Let's add all the necessary dependencies together in the _build.sbt_:
+
+```scala
+libraryDependencies ++= Seq(
+  "com.typesafe.slick" %% "slick" % "3.3.3",
+  "org.postgresql" % "postgresql" % "42.3.4",
+  "com.typesafe.slick" %% "slick-hikaricp" % "3.3.3",
+  "com.github.tminglei" %% "slick-pg" % "0.20.3",
+  "com.github.tminglei" %% "slick-pg_play-json" % "0.20.3"
+)
+```
+
+We need to have a working PostgreSQL database for testing the application. Some of the options are:
+- Installing a PostgreSQL database locally
+- Use a dockerized PostgreSQL instance (locally). In this tutorial, you can just run `docker-compose up` to set up the database tables.
+- Use any free online services such as [ElephantSQL](https://www.elephantsql.com/)
+
+A sample `docker-compose.yaml` file looks like:
+```
+version: '3.8'
+services:
+  db:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=admin
+    ports:
+      - '5432:5432'
+    volumes:
+      - db:/var/lib/postgresql11/data
+      - ./db/init-scripts.sql:/docker-entrypoint-initdb.d/scripts.sql
+
+volumes:
+  db:
+    driver: local
+```
+
+Next, we can add the database configurations to the config file such as _application.conf_.
+
+```scala
+postgres = {
+  connectionPool = "HikariCP" 
+  dataSourceClass = "org.postgresql.ds.PGSimpleDataSource" 
+  properties = {
+    serverName = "localhost"
+    portNumber = "5432"
+    databaseName = "postgres"
+    user = "postgres"
+    password = "admin"
+  }
+  numThreads = 10
+}
+```
+
+Within the _postgres_ node, we will be providing all the necessary configurations to connect to the database. The key _connectionPoll_ let's us to use a connection pool to improve the database querying performance. If we don't provide that property, it will connect without using the connection pooling feature. Slick will be using the JDBC connection implementation from the _PGSimpleDataSource_ to connect to the database. This class is provided by the jdbc library we added, in our case _postgresql:42.3.4_. The node _properties_ are the information required to connect to the correct database. 
+Instead of this approach, we can also use direct URL and connect to the database. For example, for connecting to the _elephantsql_ service, we can use the configuration as:
+```scala
+databaseUrl {
+  dataSourceClass = "slick.jdbc.DatabaseUrlDataSource"
+  properties = {
+    driver = "org.postgresql.Driver"
+    url = "postgres://username:password@abul.db.elephantsql.com/dbname"
+  }
+}
+```
+In this case, we are using a different dataSource as _DatabaseUrlDataSource_ which is provided by slick itself. We then provide the connection information under the node _properties_. 
+
+There are many other ways to connect to the database, which can be read in (this)[https://scala-slick.org/doc/3.3.0/database.html] link.
+
+Slick uses a combination of case classes and Slick Table classes to model the database schema. For that, we need to provide a JDBC Profile. Since we are using PostgreSQL, we can use the _PostgresProfile_. 
+
+As next step, we can create a connection instance using the _PostgresProfile_ and previously defined configuration.
+```scala
+import PostgresProfile.profile.api._
+object Connection {
+  val db = Database.forConfig("postgres")
+}
+```
+
+## 3. Models
+
+As mentioned in the introduction, Slick provides compile time safety by mapping the database fields to the scala case classes. So, we need to create a case class correponding to the database table for us to use in the queries. 
+
+```scala
+final case class Movie(
+    id: Long,
+    name: String,
+    releaseDate: LocalDate,
+    lengthInMin: Int
+)
+```
+Next, we need to create a Slick Table class. Slick Table maps the table fields to the case class. We need to import the PostgresProfile api to get the relevant methods in scope. 
+
+```scala
+class SlickTablesGeneric(val profile: PostgresProfile) {
+  import profile.api._
+  class MovieTable(tag: Tag) extends Table[Movie](tag, Some("movies"), "Movie") {
+    def id = column[Long]("movie_id", O.PrimaryKey, O.AutoInc)
+    def name = column[String]("name")
+    def releaseDate = column[LocalDate]("release_date")
+    def lengthInMin = column[Int]("length_in_min")
+    override def * = (id, name, releaseDate, lengthInMin) <> (Movie.tupled, Movie.unapply)
+  }
+}
+```
+We need to first extends the class with _Table_ provided by Slick. It takes _tag_ as the first parameter. This is used by slick to mark the class as a Table class. We can give an optional parameter for the database schema and then the table name. If schema is not provided, it will use the default schema, _public_ in the case of postgres.
+For each of the column in the table, we need to define a def with the corresponding column type of the slick. We can use the method _column_ with the correct data type. We also need to provide the column name and any other properties that are needed. For example, let's look at the primary key **movie_id** in the Movie table. 
+
+The method _column[Long]_ defines the column type. It takes the string parameter "movie_id" which is the actual column name in the database table. After that, we can provide multiple properties as vararg field. 
+_O.PrimaryKey_ informs Slick that this column is the primary key. 
+_O.AutoInc_ informs that this column is an auto-increment field and postgres will take care of incrementing the value.
+
+In the same way, we defines the other fields. 
+
+Now, we have to override a method `*` which does the mapping between the column field and the case class field. The `<>` operator maps a tuple to the case class fields. 
+
+Now, we can create an instance for the _MovieTable_. We will be using this instance to write slick queries to communicate with database.
+
+```scala
+lazy val movieTable = TableQuery[MovieTable]
+```
+We can also create a Singleton object for the _SlickTablesGeneric_ by providing the _Profile_. The _Profile_ class contains all the necessary methods for Slick to connect to the database and execute the queries. 
+For now, we will be using the profile provided by Slick for the Postgres(_slick.jdbc.PostgresProfile_). Later, we can see how to write custom profile. 
+
+```scala
+object SlickTables extends SlickTablesGeneric(PostgresProfile)
+```
+
+## 4. Basic CRUD Operations
+Now that we have completed the initial setup, we can look at performing basic CRUD operations using Slick. We will be using the _movieTable_ we created for all the operations. But before that, we need to manually create the database in Postgres and also create the table.
+```sql
+create extension hstore;
+create table if not exists movies."Movie" ("movie_id" BIGSERIAL NOT NULL PRIMARY KEY,"name" VARCHAR NOT NULL,"release_date" DATE NOT NULL,"length_in_min" INTEGER NOT NULL);
+create table if not exists movies."Actor" ("actor_id" BIGSERIAL NOT NULL PRIMARY KEY,"name" VARCHAR NOT NULL);
+create table if not exists movies."MovieActorMapping" ("movie_actor_id" BIGSERIAL NOT NULL PRIMARY KEY,"movie_id" BIGINT NOT NULL,"actor_id" BIGINT NOT NULL);
+create table if not exists movies."StreamingProviderMapping" ("id" BIGSERIAL NOT NULL PRIMARY KEY,"movie_id" BIGINT NOT NULL,"streaming_provider" VARCHAR NOT NULL);
+create table if not exists movies."MovieLocations" ("movie_location_id" BIGSERIAL NOT NULL PRIMARY KEY,"movie_id" BIGINT NOT NULL,"locations" text [] NOT NULL);
+create table if not exists movies."MovieProperties" ("id" bigserial NOT NULL PRIMARY KEY,"movie_id" BIGINT NOT NULL,"properties" hstore NOT NULL);
+create table if not exists movies."ActorDetails" ("id" bigserial NOT NULL PRIMARY KEY,"actor_id" BIGINT NOT NULL,"personal_info" jsonb NOT NULL);
+```
+The above scripts are for all the tables we will be using as part of this blog.
+
+### 4.1. Insert Rows
+Firstly, we can insert a record into the database. 
+```scala
+val shawshank = Movie(1L, "Shawshank Redemptions", LocalDate.of(1994, 4, 2), 162)
+
+def insertMovie(movie: Movie): Future[Int] = {
+  val insertQuery = SlickTables.movieTable += movie
+  Connection.db.run(insertQuery)
+}
+```
+The `db.run()` method takes an instance of `DBIOAction` and execute the action on database. DBIOAction is the most important type in Slick as all the queries in Slick are an instance of DBIOAction. DBIOAction takes 3 parameters as `DBIOAction[R,T,E]`, where `R` is the result type of the query, `T` specifies if streaming is supported or not and `E` is the effect type(Read/Write/Transaction/DDL). 
+
+Now we can invoke _insertMovie(shawshank)_ and it will asynchronously insert the record into the database. Since we have used the _BIGSERIAL_ for the `movie_id`, postgres will automatically assign a numeric value. 
+If we want to copy the generated id and return it along with the inserted object, we can use theee method `returning` as:
+```scala
+val insertQueryWithReturn = SlickTables.movieTable.returning(SlickTables.movieTable) += movie
+val movieFuture: Future[Movie] = db.run(insertQueryWithReturn)
+```
+
+If we want to ensure that the provided movie_id is used instead of the autogenerated one, we can use the method `forceInsert` instead of `+=`. 
+
+```scala
+val forceInsertQuery = SlickTables.movieTable forceInsert movie
+```
+We can also insert multiple movies at a time.
+```scala
+val insertBatchQuery = SlickTables.movieTable ++= Seq(movie)
+val forceInsertBatchQuery = SlickTables.movieTable forceInsertAll Seq(movie)
+```
+
+### 4.2. Querying Rows from Database
+Now, let's see how to execute select queries and fetch the rows from the table. To get all the movies, we can use the `movieTable` as:
+```scala
+val movies: Future[Seq[Movie]] = db.run(SlickTables.movieTable.result)
+```
+The method `.result` on the _movieTable_ will create an executable action. We can filter the rows in the table using the _filter_ method just like on a collection. However, we need to use `===` method instead. This method will compare the value provided with that in the database column. For this method to be available, we need to import _api_ from the profile.
+```
+import profile.api._
+```
+where profile is _PostgresProfile_ we used before.
+
+```scala
+def findMovieByName(name: String): Future[Option[Movie]] = {
+    db.run(SlickTables.movieTable.filter(_.name === name).result.headOption)
+}
+```
+
+### 4.3. Update a Row
+We can use the method `update` to modify a record after applying the filter. 
+```scala
+def updateMovie(movieId: Long, movie: Movie): Future[Int] = {
+    val updateQuery = SlickTables.movieTable.filter(_.id === movieId).update(movie)
+    db.run(updateQuery)
+}
+```
+In the above sample, if the filter by id is not applied, it will update all the records with the same value.
+
+If we want to update only a particular field, we can use the `map` to get the field and then update it. For example, to update the movie name, we can do as:
+```scala
+val updateMovieNameQuery = SlickTables.movieTable.filter(_.id === movieId).map(_.name).update("newName")
+``` 
+
+### 4.4. Delete a Row
+We can also delete a record from the database by using the method `delete`. To delete a movie we can do:
+```scala
+val deleteQuery = SlickTables.movieTable.filter(_.id === movieId).delete
+```
+
+## 5. Advanced Options
+Since we are become familiar with the basic CRUD operations, let's look at some more advanced concepts.
+
+### 5.1 Executing Plain Query
+Sometimes we might need to run plain SQL queries to get the results in a better way. Slick provides multiple ways to run the plain query. Let's look at a simple way to run the query to select rows. However, since we are using the plain query, we need to provide some additional information to slick to make the queries typesafe. For that, we need to provide an implicit value with the relevant mappings.
+
+```scala
+def getAllMoviesByPlainQuery: Future[Seq[Movie]] = {
+  implicit val getResultMovie =
+    GetResult(r => Movie(r.<<, r.<<, LocalDate.parse(r.nextString()), r.<<))
+  val moviesQuery = sql"""SELECT * FROM public."Movie" """.as[Movie]
+  db.run(moviesQuery)
+}
+```
+
+The implicit _GetResult_ informs Slick on how to map the results of a plain query to required case class. _GetResult_ takes a lambda, which has the _ResultSet_ from the query. This implicit is used when the `as` method is applied to convert the ResultSet to case class. 
+Here, we need to provide the datatypes of the result fields so that slick can apply the proper type handling. We can retrieve the values from result set using _r.nextInt_, _r.nextString_ and so on. But if we need to just map the columns to case class fields without any transformation, we can simply use the method `r.<<` on the result set. The method `<<` may be considered as a placeholder for the datatype, with Slick automatically inferring the correct type. In the above example, we are explicitly parsing the date to _LocalDate_ format. We can apply any other transformations on the column result before setting the value on the case class.  
+
+### 5.2. Transactional Queries
+When we have multiple queries that modifies the database table, it is always advisable to use transactions. It will ensure that the modifications happen atomically. When we use transaction, if one of the queries in the transaction fails, all the queries in the same transaction will be rolledback. 
+
+```scala
+def saveWithTransaction(movie: Movie, actor: Actor): Future[Unit] = {
+  val saveMovieQuery = SlickTables.movieTable += movie
+  val saveActorQuery = SlickTables.actorTable += actor
+  val combinedQuery = DBIO.seq(saveMovieQuery, saveActorQuery)
+  db.run(combinedQuery.transactionally)
+}
+```
+The method `transactionally` on the _combinedQuery_ will make both the insert queries in a single transaction. So, if one of the fails, both the inserts will be rolled back. 
+We can combine multiple queries in Slick using _DBIO.seq_. The _seq_ method takes a vararg of _DBIOAction_ which will then execute all the actions sequentially.  If we don't add the method `.transactionally` at the end, it will run all the queries, but without transaction. 
+
+### 5.3. Joining Tables
+
+Slick also provides methods to write join queries. Let's try to join _Actor_ table and _MovieActorMapping_ table to fetch the results.
+
+```scala
+def getActorsByMovie(movieId: Long): Future[Seq[Actor]] = {
+  val joinQuery: Query[(SlickTables.MovieActorMappingTable, SlickTables.ActorTable), (MovieActorMapping, Actor), Seq] = movieActorMappingTable
+      .filter(_.movieId === movieId)
+      .join(actorTable)
+      .on(_.actorId === _.id)
+
+    db.run(joinQuery.map(_._2).result)
+}
+```
+The above join operation returns a tuple of both the table results as a _Query_ type. We can then transform the query in the way we want before exeucting it. Her we are applying _map_ and returning only the _Actor_ table results and discarding the other one.
+
+Apart from this, Slick also provide methods for left and right outer joins as well using _joinLeft_ and _joinRight_ combinators.
+
+### 5.4. Mapping Enumeration Field to Column
+In all the above samples, we used standard data types such as _Int_, _String_, _Date_, etc for the case classes. If we want to use a custom type, we need to provide an implicit converter to convert between the scala type and relevant column type. Let's try to use an enumeration field in case class. 
+
+```scala
+object StreamingProvider extends Enumeration {
+  type StreamingProviders = Value
+  val Netflix = Value("Netflix")
+  val Hulu = Value("Hulu")
+}
+final case class StreamingProviderMapping(
+  id: Long,
+  movieId: Long,
+  streamingProvider: StreamingProvider.StreamingProviders
+)
+```
+We created enums for Streaming providers. We can then provide the enum in the case class field. We are using Scala 2 enums as there is no support yet for Scala 3. 
+
+Now, let's create the mapping table for slick. We are going to use the same format for creating the slick table by extending with _Table_ and implementing the `*` method for mapping.
+
+```scala
+class StreamingProviderMappingTable(tag: Tag)
+    extends Table[StreamingProviderMapping](tag, Some("movies"), "StreamingProviderMapping") {
+
+  implicit val providerMapper =
+    MappedColumnType.base[StreamingProvider.StreamingProviders, String](
+      e => e.toString,
+      s => StreamingProvider.withName(s)
+    )
+
+  def id = column[Long]("id", O.PrimaryKey, O.AutoInc)
+  def movieId = column[Long]("movie_id")
+  def streamingProvider = column[StreamingProvider.StreamingProviders]("streaming_provider")
+  override def * =
+    (
+      id,
+      movieId,
+      streamingProvider
+    ) <> (StreamingProviderMapping.tupled, StreamingProviderMapping.unapply)
+}
+lazy val streamingProviderMappingTable = TableQuery[StreamingProviderMappingTable]
+```
+Here, we defined an implicit converter for _StreamingProvider_ enum. We will be saving the enum value as a string in the column. When the record is fetched, slick will convert it to the relevant enum type using the implicit. Slick will use the _providerMapper_ to convert between case class and database column for the enum field.
+
+### 5.5. Generating DDL Scripts from Slick Tables
+Slick also provides a way to generate Data Definition Language(DDL) scripts from the slick tables. DDL scripts explains the structure of the database using CREATE, DROP, ALTER queries and provides additional information for relationship between tables.
+This way, we can generate the table scripts and track the versions easily. This will also make sure that we can easily set up an empty database.
+
+To generate the DDL scripts, we need to first collect all the slick tables in a collection. 
+
+```scala
+val tables = Seq(movieTable, actorTable, movieActorMappingTable, streamingProviderMappingTable)
+```
+
+Then we can combine them into a slick DDL schema using:
+```scala
+val ddl: profile.DDL = tables.map(_.schema).reduce(_ ++ _)
+```
+Now, we can invoke the method to generate the scripts:
+```scala
+SlickTables.ddl.createIfNotExistsStatements.mkString(";\n")
+```
+This will generate SQL scripts for creating all the tables we have used in our application. If we make any changes to the Slick tables, we can then again generate the DDL scripts. We can write the results to a `.sql` file and keep in the `resource` directory within the project. This will make sure that we always have the correct database structure and can create an empty database easily. 
+
+## 6. Slick-Pg for Postgres
+PostgreSQL has additional powerful datatypes and features. But by default, Slick doesn't have support for all the advanced features of Postres. Some of these features are not available in many of the relational databases. However, We can use a thirdparty library [slick-pg](https://github.com/tminglei/slick-pg) to utilise all those amazing features of Postgres in Slick with ease. We have already added the necessary dependencies in the _build.sbt_. 
+
+To use it, we need to write a custom Postgres Profile and use it instead of the slick provided _PostgresProfile_. We can mix-in the traits from slik-pg based on the required features of postgres. Let's add the support for _JSON_, _HStore_ and _Array_ datatypes. _HStore_ is a special datatype available in PostgreSQL database. It is used for storing key-value pair of data similar to _Map_ type in Scala.
+
+Now, let's create a new custom profile with HStore support.
+
+```scala
+trait CustomPostgresProfile
+    extends ExPostgresProfile with PgHStoreSupport {
+
+  override val api = CustomPGAPI
+  object CustomPGAPI
+      extends API
+      with HStoreImplicits 
+}
+object CustomPostgresProfile extends CustomPostgresProfile
+```
+
+To create a custom profile, we need to extend with _ExPostgresProfile_ provided by Slick-PG that is a wrapper on Slick's _PostgresProfile_. To use HStore features, we need to mix-in with _PgHStoreSupport_ trait from slick-pg. 
+
+For get the implicit methods, we were importing _PostgresProfile.api.__. To get the Hstore implicit methods, we need to extend the Slick's API with _HStoreImplicits_ provided by slick-pg. Then we can create a companion object for our custom profile, so that we can import it when we need to build the queries.
+
+In the same way, we can add the support for other datatypes such as _JSON_, _Array_ etc. 
+
+```scala
+trait CustomPostgresProfile
+    extends ExPostgresProfile with PgJsonSupport with PgPlayJsonSupport 
+    with PgArraySupport with PgHStoreSupport with PgDate2Support {
+  override def pgjson = "jsonb"
+  override protected def computeCapabilities: Set[slick.basic.Capability] =
+    super.computeCapabilities + slick.jdbc.JdbcCapabilities.insertOrUpdate
+
+  override val api = CustomPGAPI
+  object CustomPGAPI
+      extends API
+      with JsonImplicits
+      with HStoreImplicits
+      with ArrayImplicits
+      with DateTimeImplicits {
+    implicit val strListTypeMapper = new SimpleArrayJdbcType[String]("text").to(_.toList)
+    implicit val playJsonArrayTypeMapper =
+      new AdvancedArrayJdbcType[JsValue](
+        pgjson,
+        (s) => utils.SimpleArrayUtils.fromString[JsValue](Json.parse(_))(s).orNull,
+        (v) => utils.SimpleArrayUtils.mkString[JsValue](_.toString())(v)
+      ).to(_.toList)
+  }
+}
+object CustomPostgresProfile extends CustomPostgresProfile
+```
+In the advanced profile, we have implemented the following features:
+- Support for HStore, JSON, Array
+- Support for jsonb type which is an improved and better way to serialise JSON data in postgres
+- Implicit parameters to support Array types for conversion between scala class and postgres json array types
+- Support for `insertOrUpdate` feature from postgres
+
+Now, we can use `CustomPostgresProfile` instead of the `PostgresProfile` to make use of these features.
+
+### 6.1. Querying from an Array Column
+
+Let's see how we can use filter query on an postgres array column. We have created a _MovieLocationsTable_ which has a _movieLocations_ array field. If we want to filter movies which was shot on any of the input locations, we can do that as:
+```scala
+val locations: List[String] = List("USA", "Germany")
+val query = SpecialTables.movieLocationsTable.filter(_.locations @& locations.bind)
+```
+The operator `@&` will return true if there is an overlap between the input list and the database column. That means, if there is atleast one common item between the column value and input list, it will return true. 
+For example, assume that the database column has the countries as `[USA, Canada, Mexico]`. The above query will match and return true since _USA_ is a common value in the input `[USA, Germany]`. The method `bind` will convert the literal value into a database bind type. Bind parameters helps the database to improve the query performance by using pre-compiled prepared queries instead of re-creating separate queries each time.
+
+Some of the other popular array operators in slick-pg are:
+- `@>` will check for contains. For example, `[USA, Mexico, Canada, Germany] @> [USA, Germany]` returns true since all elements of rightside array is present in left 
+- `++` will concatenate two arrays
+- `length` returns the length of the array
+
+### 6.2. Querying from an HStore Column
+
+Postgres has an extension called as `hstore`. Once it is installed, we can use the datatype _hstore_ for the columns. It is a type which stores the data as key and value pair, equivalent to an _Map_ type in Scala/Java. We can see how to filter a hstore column using slick-pg:
+
+```scala
+def getMoviesByDistributor(distributor: String): Future[Seq[MovieProperties]] = {
+  val condition = Map("distributor" -> distributor)
+  val query = SpecialTables.moviePropertiesTable.filter(_.properties @> condition.bind)
+  Connection.db.run(query.result)
+}
+```
+The operator `@>` filters the hstore column for the key _distributor_ and the input value. Similar to array, there are many other operators in hstore as well.
+
+Some of the other available operations on HStore are:
+- `@+` concatenates two hstore columns
+- `??` checks if the provided key exists in the hstore field
+- `+>` returns the value for the key provided (`'a=>x, b=>y' -> 'a'` returns `x` as the value for `a`) 
+
+### 6.3. Querying from a JSON Column
+Postgres also supports JSON datatype by default. Slick-Pg also has support for querying the json columns. Let's look at it with an example:
+
+```scala
+def getActorsBornOn(year: String): Future[Seq[ActorDetails]] = {
+  Connection.db.run(
+    SpecialTables.actorDetailsTable.filter(_.personal.+>>("birthYear") === year.bind).result
+  )
+}
+```
+In the above code, we are filtering the _personal_ column which is a JSON type in _ActorDetails_ table. The method `+>>` will get the json key _birthYear_ and compares it with the value provided.
+
+Some of the other JSON Operators are:
+- `||` combines two json fields
+- `-` removes a field from json for the matching key
+
+## 7. Code Generation
+So far, we have written the Slick tables manually. If we are following a database first approach, slick provides a way to generate the mapping tables easily. For now, we are ignoring the slick-pg types and trying to generate the slick mappings for basic datatypes. 
+
+We can use an sbt plugin to do that. For that, let's add the following lines to the _plugins.sbt_ file.
+```scala
+addSbtPlugin("com.github.tototoshi" % "sbt-slick-codegen" % "1.4.0")
+libraryDependencies += "org.postgresql" % "postgresql" % "42.3.4"
+```
+
+Once the sbt is refreshed, we can add the configurations in _build.sbt_:
+```scala
+slickCodegenSettings
+enablePlugins(CodegenPlugin)
+slickCodegenDatabaseUrl := "jdbc:postgresql://localhost:5432/postgres"
+slickCodegenDatabaseUser := "postgres"
+slickCodegenDatabasePassword := "admin"
+slickCodegenDriver := slick.jdbc.PostgresProfile
+slickCodegenJdbcDriver := "org.postgresql.Driver"
+slickCodegenOutputPackage := "com.rockethejvm.generated.models"
+slickCodegenCodeGenerator := { (slickModel: model.Model) => new SourceCodeGenerator(slickModel) }
+```
+
+Now, we can use the sbt command `slickCodegen`. This will generate the case classes and slick tables. By default, the code generator will generate the file under the path `target/scala-2.13/src_managed`. It will generate both case classes and the slick tables. It will also generate all the special relationships like primary key, foreign keys, sequences etc based on the database structure. It will also generate all the implicit _GetResult_ parameters for the plain SQL execution. This way, we can avoid manually writing most of the necessary code for mapping the database to scala classes.
+
+We can also customise the code generator class to use advanced features like slick-pg, but we will not be looking at this as part of this blog. 
+
+## 8. Conclusion
+In this article, we looked at Slick and how we can execute different types of queries using it. We also introduced some of the advanced features using slick-pg. The sample code used in this article is available in GitHub. 
