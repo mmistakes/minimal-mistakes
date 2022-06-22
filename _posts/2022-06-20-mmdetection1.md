@@ -72,12 +72,15 @@ toc_sticky: true
     cd mmdetection
     pip install -r requirements/build.txt
     pip install -v -e .
+    
+    pip install mmdet
     ```
-
+    
+    
+    
   
-
   
-
+  
   > 실제로 설치했을때 window 기준으로 자동설치가 잘 안됨, 자동설치가 안된다면 바로 수동설치를 하는것을 권장함
   
   
