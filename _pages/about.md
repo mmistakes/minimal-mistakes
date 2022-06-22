@@ -29,7 +29,7 @@ FiQCI is jointly developed by VTT, Aalto University, and CSC – IT Center for S
 
 ### LUMI supercomputer
 
-The backbone of the classical HPC resources in FiQCI, and the portal for quantum computing resources, is the pan-European EuroHPC LUMI supercomputer. LUMI is the fastest and greenest supercomputer in Europe, hosted by CSC in Kajaani, Finland. For more information, see [https://www.lumi-supercomputer.eu/] (https://www.lumi-supercomputer.eu/)
+The backbone of the classical HPC resources in FiQCI, and the portal for quantum computing resources, is the pan-European EuroHPC LUMI supercomputer. LUMI is the fastest and greenest supercomputer in Europe, hosted by CSC in Kajaani, Finland. For more information, see [https://www.lumi-supercomputer.eu/](https://www.lumi-supercomputer.eu/)
 
 ### Helmi quantum computer
 
