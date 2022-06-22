@@ -37,12 +37,12 @@ Suggested topics can be drawn from the holding pool, or newly provided by the sp
 
 | Date                 | Location                 | Topic | Speaker            | Paper  |
 |:--------------------:|:------------------------:|:-----:|:------------------:|:-------|
-| Tue 14th June 2022   | Zoom (see calendar link) | Metabolism | Steve Ford         | Sankarasubramanian _et al._ "Gut Microbiota and Metabolic Specificity in Ulcerative Colitis and Crohn's Disease" [doi:10.3389/fmed.2020.606298](https://doi.org/10.3389/fmed.2020.606298) |
+| Tue 12th July 2022   | Zoom (see calendar link) | Software Tool | Leighton Pritchard | TBA |
 
 ### Current Topic Pool
 
 1. Database
-2. Software tool
+2. Systems Biology
 3. Phylogenetic Trees
 4. Comparative Genomics
 5. Gene Prediction
@@ -73,6 +73,8 @@ Suggested topics can be drawn from the holding pool, or newly provided by the sp
 | 2022-03-08 | Angelika Kiepas | Classic paper (pre-2010) | Altschul _et al._ "Gapped `BLAST` and `PSI-BLAST`: a new generation of protein database search programs" [doi:10.1093/nar/25.17.3389](https://doi.org/10.1093/nar/25.17.3389) |
 | 2022-05-10 | Geraldine Buitrago | Artificial Intelligence | Gardiner _et al._ "Combining explainable machine learning, demographic and multi-omic data to inform precision medicine strategies for inflammatory bowel disease." [doi:10.1371/journal.pone.0263248](https://doi.org/10.1371/journal.pone.0263248) |
 | 2022-06-14 | Steve Ford | Metabolism | Sankarasubramanian _et al._ "Gut Microbiota and Metabolic Specificity in Ulcerative Colitis and Crohn's Disease" [doi:10.3389/fmed.2020.606298](https://doi.org/10.3389/fmed.2020.606298) |
+| 2022-07-12 | Leighton Pritchard | Software Tool | TBA |
+
 
 ## Holding Pool
 
