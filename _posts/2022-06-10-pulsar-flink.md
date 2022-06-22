@@ -11,7 +11,7 @@ _This article is a collaboration between myself (Daniel) and [Giannis Polyzos](h
 
 ![Alt text](../images/pf1.png "Unified Batch & Streaming")
 
-Before we start, some basic familiarity with Apache Pulsar and Apache Flink is required &mdash; Rock the JVM has an [Apache Flink course](https://rockthejvm.com/p/flink) if you're interested. To better understand the implementation in this blog post, we suggest getting familiar with the basic concepts of Apache Pulsar and Apache Flink. See the [Additional Resources](#additional-resources) section.
+Before we start, some basic familiarity with Apache Pulsar and Apache Flink is required &mdash; Rock the JVM has an [Apache Flink course](https://rockthejvm.com/p/flink) if you're interested. To better understand the implementation in this blog post, we suggest getting familiar with the basic concepts of Apache Pulsar and Apache Flink. See the [Additional Resources](#7-additional-resources) section.
 
 The code in this article is in **Java**, although it can be adapted to Scala as well.
 For the best experience following this article, we recommend referring to [this repository](https://github.com/polyzos/pulsar-flink-stateful-streams) while replicating the project locally in your own dev environment. You can also clone the repository and work directly on the code there.
@@ -508,7 +508,7 @@ Congrats! We have successfully consumed messages from Pulsar.
 ## 4. Performing Data Enrichment in Flink
 
 We verified we can read our events. The next step is data enrichment, i.e "query" user and item information from the _changelog_ topics.
-To do this, we'll use the `connect` the orders stream with the user stream and (separately) with the items stream. We talk about the `connect` function in great detail in the Flink course &mdash; in short, it's similar "join" where the records with the same key are combined into a tuple. Each tuple is then subject to a `ProcessFunction` (the core Flink abstraction) so that we can adjust the data to a format of our choosing.
+To do this, we'll use the `connect` the orders stream with the user stream and (separately) with the items stream. We talk about the `connect` function in great detail in the Flink course &mdash; in short, it's similar to a "join" where the records with the same key are combined into a tuple. Each tuple is then subject to a `ProcessFunction` (the core Flink abstraction) so that we can adjust the data to a format of our choosing.
 
 Aside from the earlier `EnrichmentStream` class, we now add the following in [version 2](https://github.com/polyzos/pulsar-flink-stateful-streams/blob/main/src/main/java/io/ipolyzos/compute/v2/EnrichmentStream.java):
 ```java
@@ -629,7 +629,7 @@ public class ItemLookupHandler extends CoProcessFunction<OrderWithUserData, Item
 
 You can find a full implementation under the **v2** package [here](https://github.com/polyzos/pulsar-flink-stateful-streams/tree/main/src/main/java/io/ipolyzos/compute/v2).
 We can now package and redeploy our application and verify it works.
-**Note** make sure to modify the `deploy.sh` script to point to the updated **v2** version file:
+Make sure to modify the `deploy.sh` script to point to the updated **v2** version file:
 
 ```shell
 mvn clean package
