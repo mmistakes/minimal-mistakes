@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "en-US"
-title                    : "나의 개발일지"
+title                    : "My Programming Diary"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Min Byeong Lock - rokket"
