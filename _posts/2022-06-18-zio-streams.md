@@ -328,7 +328,7 @@ example above, let's do something that feels more real, and implement an
   }
 ```
 
-Our `FakeInputStream` with make the elements of the string `"0123456789"`
+Our `FakeInputStream` will make the elements of the string `"0123456789"`
 available. In the constructor, we can pass in a `failAt` to indicate the point
 when we should throw an exception, and `failWith` is the exception we should
 throw. By setting `failAt` higher than the length of our string, we wont fail.
