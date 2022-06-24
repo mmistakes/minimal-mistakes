@@ -1,0 +1,15 @@
+# Authors
+
+Adan Alvarez:
+  name        : "Adan Álvarez"
+  avatar      : "/assets/images/bio-photo-2.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:adan.alvarez@donttouchmy.net"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://donttouchmy.net"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/Flekyy90"
