@@ -7,6 +7,12 @@ tags: [zio, zio-streams]
 excerpt: "An Introduction to ZIO Streams"
 ---
 
+_This article is brought to you by
+[Mark Rudolph](https://github.com/alterationx10), a new contributor to Rock the
+JVM. He's a senior developer, who has been working with Scala for a number of
+years. He also has been diving into the ZIO ecosystem, and loves sharing his
+learnings`._
+
 In this post, we're going to go over an introduction to the main components of
 ZIO Streams, how to work with them when things go right, and what to do when
 things go wrong.
