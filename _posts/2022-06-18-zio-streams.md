@@ -98,17 +98,17 @@ all streams.
 
 ### Logs-As-A-Stream
 
-Many messaging platforms, such as Kafka, Pulsar, and/ RabbitMQ have what they
+Many messaging platforms, such as Kafka, Pulsar, and/or RabbitMQ have what they
 advertise as `Stream`s. At the heart of this, there is the concept that a
 message is _produced_, and written to disk as an _append-only_ log. _Some time
 later_ a `consumer` can read back entries from that log at their own leisure,
-and there is a guarantee that the within the same offset (i.e. the first 1000
+and there is a guarantee that within the same offset (i.e. the first 1000
 elements), the data will be constant, even if re-processed later. This fits our
 broad definition, because the data is ordered and available over time.
 
 ### FileInputStream
 
-In our example later, we are going to process blog posts to parse tag-data.
+In our example later, we are going to process blog posts to parse tag meta-data.
 These files are not processed terribly different than our append-only log above;
 any given file is an ordered collection of elements, we read them in one at a
 time, and do something with that information as we go. A notable difference from
@@ -166,14 +166,19 @@ A ZStream represents the _source_ of data in your work flow.
 
 At the opposite end of our stream, we have a `ZSink`, with the signature:
 `ZSink[R, E, I, L, Z]`. `R`, and `E` are as described above. It will consume
-elements of type `I`, and produce a value of type `Z` and any elements of type
-`L` that may be left over.
+elements of type `I`, and produce a value of type `Z` along with any elements of
+type `L` that may be left over.
 
 A ZSink represents the terminating _endpoint_ of data in your workflow.
 
-`L` deserves a dedicated note: `L` describes values that have not been processed
-by the `ZSink`. For example, if our intent is to sum every element in the
-stream, then we would not expect any elements to be left over once processed:
+We should mention that ZIO uses pull-based streams, meaning that elements are
+processed by being "pulled through the stream" _by_ the sink. In push-based
+systems, elements would be "pushed through the stream" _to_ the sink.
+
+Referring back to the type signature, `L` deserves a dedicated note: `L`
+describes values that have not been processed by the `ZSink`. For example, if
+our intent is to sum every element in the stream, then we would not expect any
+elements to be left over once processed:
 
 ```scala
   val sum: ZSink[Any, Nothing, Int, Nothing, Int] =
@@ -207,9 +212,9 @@ were not operated on - or we could outright ignore them.
 ### A Prelude to ZPipelines
 
 If we have some logic to _process_ a stream already, but suddenly our stream is
-a different type, we can use `contramap` to map the input type appropriately. If
-using both `map` and `contramap`, then there is an equivalent `dimap` you can
-call as well.
+a different type, we can use `contramap` to convert the input type
+appropriately. If using both `map` and `contramap`, then there is an equivalent
+`dimap` you can call as well.
 
 ```scala
   // take5Map would work on this.
@@ -234,14 +239,14 @@ on the input element to get it to the correct type (`String`), however, if
 anything is left over, then it wasn't operated on - meaning it's still the input
 type from `take5` (`Int`).
 
-It's worthwhile to pause here, and discuss `contramap`. We are converting a
-value of type `A` to a value of type `B`, with a function that is `B => A` -
-this operates like `map` _in reverse_. Without diving too far into category
-theory, you can think of a Covariant Functor as something that may "produce" a
-value of type `A` (and implements a `map`), whereas a Contravariant Functor may
-"consume" a value of type `A` (and implements a `contramap`). With JSON as an
-example, the _contravariant_ `Encoder[A]` consumes a value of type `A` to
-produce JSON, whereas the _covariant_ `Decoder[A]` produces a value of type `A`
+It's worthwhile to pause here, and briefly discuss `contramap`. We are
+converting a value of type `A` to a value of type `B`, with a function that is
+`B => A` - this operates like `map` _in reverse_. Without diving too far into
+category theory, you can think of a Covariant Functor as something that may
+"produce" a value of type `A` (and implements a `map`), whereas a Contravariant
+Functor may "consume" a value of type `A` (and implements a `contramap`). With
+JSON as an example, a _contravariant_ `Encoder[A]` consumes a value of type `A`
+to produce JSON, whereas a _covariant_ `Decoder[A]` produces a value of type `A`
 by consuming JSON.
 
 ### ZPipelines
@@ -254,8 +259,9 @@ The main use case of a ZPipeline is to separate out reusable transform logic,
 that can then be composed together with other ZPipelines, and then placed in
 between any appropriate ZStream and a ZSink.
 
-From our example above, let's say we wanted to sum the stream of Strings.
-Instead of adapting our `sum` ZSink with contramap, we can write:
+From our example above, let's say we wanted to sum the stream of Strings
+representing integer values. Instead of adapting our `ZSink.sum` with contramap,
+we can write:
 
 ```scala
   //stringStream.run(sum) <- This doesn't compile
@@ -284,13 +290,9 @@ We can also _compose_ `ZPipeline`s together to form a new `ZPipeline` with
     stringStream.via(appLogic).run(sum)
 ```
 
-An interesting thing we're seeing here for the first time, is seeing that
-connecting a `ZSink` to a `ZStream` results in a `ZIO`. In oder to process of
-our stream logic, we need to connect streams to sinks to produce a `ZIO` we can
-evaluate. As we're talking about the complete processing of a stream, we should
-mention that ZIO uses pull-based streams, meaning that elements are processed by
-being "pulled through the stream" by the sink. In push-based systems, elements
-would be "pushed through the stream" to the sink.
+An interesting thing we're seeing here for the first time, is that connecting a
+`ZSink` to a `ZStream` results in a `ZIO`. In oder to process of our stream
+logic, we need to connect streams to sinks to produce a `ZIO` we can evaluate.
 
 Along with the typical collection-like operations you'd expect, there are a
 number of addition ones that are available directly on `ZStream`, and can be
@@ -300,7 +302,7 @@ referenced in the
 ## Handling Failures
 
 Illustrating failures can be a little lack-luster in a less-interactive medium,
-suh as reading a blog post. For example, we might declare a example of stream
+such as reading a blog post. For example, we might declare a example of stream
 with a failure as
 
 ```scala
@@ -314,7 +316,7 @@ example above, let's do something that feels more real, and implement an
 `InputStream` that we can control the success/failure cases.
 
 ```scala
-  class FakeInputStream[T <: Throwable](failAt: Int, failWith: => T) extends InputStream {
+  class RealFakeInputStream[T <: Throwable](failAt: Int, failWith: => T) extends InputStream {
     val data: Array[Byte] = "0123456789".getBytes
     var counter = 0
 
@@ -334,7 +336,7 @@ example above, let's do something that feels more real, and implement an
   }
 ```
 
-Our `FakeInputStream` will make the elements of the string `"0123456789"`
+Our `RealFakeInputStream` will make the elements of the string `"0123456789"`
 available. In the constructor, we can pass in a `failAt` to indicate the point
 when we should throw an exception, and `failWith` is the exception we should
 throw. By setting `failAt` higher than the length of our string, we wont fail.
@@ -342,22 +344,23 @@ By passing in different instances of `failsWith`, we can control wether or not
 if the error is in the `E` channel of our `ZStream[R, E, O]`.
 
 With this in mind, let's set up some stream components that we can run together,
-and test different error cases.
+and test different error cases. Note that we set the `chunkSize` of our
+`ZStream.fromInputStream` to 1.
 
 ```scala
   // 99 is higher than the length of our data, so we won't fail
   val nonFailingStream: ZStream[Any, IOException, String] =
-    ZStream.fromInputStream(new FakeInputStream(99, new IOException("")), chunkSize = 1)
+    ZStream.fromInputStream(new RealFakeInputStream(99, new IOException("")), chunkSize = 1)
       .map(b => new String(Array(b)))
 
   // We will fail, and the error type matches ZStream error channel
   val failingStream: ZStream[Any, IOException, String] =
-    ZStream.fromInputStream(new FakeInputStream(5, new IOException("")), chunkSize = 1)
+    ZStream.fromInputStream(new RealFakeInputStream(5, new IOException("")), chunkSize = 1)
       .map(b => new String(Array(b)))
 
   // We fail, but the error does not match the ZStream error channel
   val defectStream: ZStream[Any, IOException, String] =
-    ZStream.fromInputStream(new FakeInputStream(5, new IndexOutOfBoundsException("")), chunkSize = 1)
+    ZStream.fromInputStream(new RealFakeInputStream(5, new IndexOutOfBoundsException("")), chunkSize = 1)
       .map(b => new String(Array(b)))
 
   // When recovering, we will use this ZStream as the fall-back
@@ -369,8 +372,8 @@ and test different error cases.
     ZSink.collectAll[String].map(_.mkString("-"))
 ```
 
-If we were to define a program, and look at the output of the success case, it
-might look like:
+Let's write a success case program to pull values through, one at a time, and
+turn them into a single String where the values are separated by "-".
 
 ```scala
 object ZStreamExample extends ZIOAppDefault {
@@ -382,7 +385,10 @@ object ZStreamExample extends ZIOAppDefault {
 }
 ```
 
-and we would see the output `sink: 0-1-2-3-4-5-6-7-8-9`.
+The output would look like `sink: 0-1-2-3-4-5-6-7-8-9`. As a quick aside, a new
+feature in ZIO 2 is the `.debug(prefix)` method, which will log a line
+containing the computed value of the ZIO, prefixed with `prefix: `. This is
+where the `sink: ` portion of the output comes from.
 
 Now let's turn our attention to the `failingStream`.
 
