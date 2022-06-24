@@ -2,7 +2,7 @@
 
 Adan Alvarez:
   name        : "Adan Álvarez"
-  avatar      : "/assets/images/bio-photo-2.jpg"
+  avatar      : "/assets/images/bio-photo-adan.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -13,3 +13,5 @@ Adan Alvarez:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/Flekyy90"
+Jose M:
+  name        : "Jose M"
