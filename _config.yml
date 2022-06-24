@@ -110,9 +110,6 @@ author:
   location         : #"Barcelona"
   email            : #a
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:info@donttouchmy.net"
 
 # Site Footer
 footer:
