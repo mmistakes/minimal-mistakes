@@ -67,24 +67,26 @@ En primer lugar, nos debemos conectar por ADB así que necesitaremos habilitarlo
 
 Después de esto, si tenemos el puerto abierto a nuestra IP, podremos ejecutar:
 
+```
 adb connect *IPINSTANCIA*:5555
+```
 
 Para información detallada de como conectar por ADB seguir la siguiente guía: https://docs.genymotion.com/paas/latest/04_ADB.html
 
 Para aplicaciones que hagan uso de la configuración del proxy, lo podemos configurar para que envíe el tráfico a localhost con este comando:
-
+```
 adb shell settings put global http_proxy localhost:3333
-
+```
 En nuestro caso, como hemos comentado antes que las aplicaciones creadas en flutter no hacen caso de esta configuración deberemos utilizar IPTABLES del siguiente modo para enviar el tráfico HTTPS a localhost:
-
+```
 adb shell "iptables -t nat -F"
 adb shell "iptables -t nat -A OUTPUT -p tcp --dport 443 -j DNAT --to-destination 127.0.0.1:3333
 adb shell "iptables -t nat -A POSTROUTING -p tcp --dport 443 -j MASQUERADE"
-
+```
 Tras configurar que el tráfico HTTPS vaya a localhost:3333 utilizaremos [adb reverse](https://blog.grio.com/2015/07/android-tip-adb-reverse.html) para hacer que las peticiones a localhost:3333 vayan a nuestro localhost:8080 (Donde estará Burp escuchando).
-
+```
 adb reverse tcp:3333 tcp:8080
-
+```
 Por último, solo nos quedará configurar Burp Suite para forzar todo el tráfico al puerto 443. Así que arrancamos Burp Suite y vamos a *Proxy -- Options,* editamos el *proxy listener* y en *Request handling* forzamos el uso de TLS.
 
 [![](https://donttouchmy.net/wp-content/uploads/2021/03/forcetls-300x126.png)](https://donttouchmy.net/wp-content/uploads/2021/03/forcetls.png)
@@ -98,9 +100,9 @@ Con esto el tráfico HTTPS pasará por Burp Suite pero no podremos verlo debido 
 Tal y como se indica en el artículo de blog.nviso.eu mencionado al inicio, [Dart](https://dart.dev/) genera y compila su [propio Keystore](https://github.com/dart-lang/root_certificates) utilizando la librería Mozilla NSS.  Para hacer un bypass de la validación ssl debemos parchear la función session_verify_cert_chain  definida en la línea 362 de [ssl_x509.cc](https://github.com/google/boringssl/blob/master/ssl/ssl_x509.cc#L362) de la librería libflutter.so
 
 Para esto será necesario algo de ingeniería inversa utilizando Ghidra. Para poder realizar el análisis primero necesitaremos obtener la librería. Podemos obtenerla del dispositivo donde está instalada la aplicación del siguiente modo:
-
+```
 adb pull /data/app/APPLICACIÓN/lib/arm64/libflutter.so
-
+```
 [![](https://donttouchmy.net/wp-content/uploads/2021/03/pulllibflutter-300x24.png)](https://donttouchmy.net/wp-content/uploads/2021/03/pulllibflutter.png)
 
 Iniciamos [Ghidra](https://ghidra-sre.org/), creamos un nuevo proyecto y arrastramos el fichero libflutter.so que acabamos de obtener del móvil. Hacemos doble clic y nos pedirá analizarlo, el análisis puede tardar varios minutos y puede mostrar algunos errores.
@@ -130,7 +132,7 @@ Si hacemos doble clic nos llevará a una función que parece una buena candidata
 [![flutter con Burp](https://donttouchmy.net/wp-content/uploads/2021/03/function-1-300x136.png)](https://donttouchmy.net/wp-content/uploads/2021/03/function-1.png)
 
 Con esto podemos copiar los primeros bytes de la función y buscarlos en memoria mientras se ejecuta la aplicación usando la función Memory.scan de Frida. Así que usaremos el script del blog de nvisio y modificaremos el pattern y eliminaremos el add.(0x01) de la línea 25 al ser una aplicación de 64bits.  El script para este caso será el siguiente:
-
+```
 function hook_ssl_verify_result(address)
 {
 Interceptor.attach(address, {
@@ -162,7 +164,7 @@ onError: function(reason){
 }});
 }
 setTimeout(disablePinning, 1000)
-
+```
 Una vez modificado el script estamos listos para ejecutar la aplicación desde frida. Para poder hacer esto necesitaremos abrir el puerto de Frida en AWS, instalar frida-server y ejecutarlo.
 
 Primero accedemos al *Security Group* de AWS y añadimos el puerto 27042 TCP solo hacia nuestra IP:
@@ -172,23 +174,23 @@ Primero accedemos al *Security Group* de AWS y añadimos el puerto 27042 TCP s
 Descargamos la versión de Frida server para ARM64 desde: https://github.com/frida/frida/releases
 
 Tras descomprimirlo hacemos un push del fichero de frida al móvil:
-
+```
 adb push .\frida-server-14.2.13-android-arm64 /data/local/tmp/frida-server
-
+```
 Acedemos por shell, le damos permisos de ejecución y lo ejecutamos:
-
+```
 adb shell
 chmod 755 frida-server /data/local/tmp/frida-server
 /data/local/tmp/frida-server -l 0.0.0.0 &
-
+```
 Ahora que tenemos frida-server ejecutándose en el servidor podemos ejecutar el script que realizará el hook de la función. Para esto necesitaremos el nombre de la aplicación que podemos verlo en la carpeta /data/app o si la ejecutamos manualmente y mediante frida-ps -H IP listamos los procesos y vemos el nombre.
 
 [![flutter con Burp](https://donttouchmy.net/wp-content/uploads/2021/03/psfrida-300x191.png)](https://donttouchmy.net/wp-content/uploads/2021/03/psfrida.png)
 
 Para ejecutar la aplicación con el hook ejecutamos
-
+```
 frida -H IP -l .\hookcert.js -f NOMBREAPP --no-pause
-
+```
 Donde IP es la IP pública en AWS, hookcert.js será el fichero con el script modificado y NOMBREAPP será el nombre de la aplicación obtenido en el paso anterior:
 
 [![flutter con Burp](https://donttouchmy.net/wp-content/uploads/2021/03/frida-1-300x70.png)](https://donttouchmy.net/wp-content/uploads/2021/03/frida-1.png)
