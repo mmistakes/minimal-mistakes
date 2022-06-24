@@ -3,6 +3,13 @@ title: "Tráfico HTTPS de app Flutter con Burp usando Genymotion PaaS"
 author: Adan Alvarez
 classes: wide
 excerpt: " Captura de tráfico HTTPS de una aplicación en Flutter con Burp Suite usando una imagen en AWS de Genymotion PaaS."
+categories:
+  - Pentesting
+tags:
+  - aplicaciones móviles
+  - burp
+  - pentest
+  - flutter
 ---
 En esta entrada vamos a ver como podemos capturar tráfico HTTPS de una aplicación creada con Flutter con Burp Suite montando una imagen en AWS de Genymotion PaaS. Esto nos será de mucha utilidad en pentests de aplicaciones móviles creadas en Flutter.
 
@@ -29,7 +36,7 @@ El problema con este tipo de pruebas es que necesitamos hacer un hook de libflut
 Podemos instalar la aplicación en un emulador Android 11 x86 y esta funcionará sin problemas, ya que [desde Android 11](https://android-developers.googleblog.com/2020/03/run-arm-apps-on-android-emulator.html) es posible ejecutar binarios ARM con un rendimiento muy bueno. El problema es que si seguimos los artículos mencionados, veremos que al ejecutar el script que hará el hook, nos aparecerá un error ya que Frida no es capaz de encontrar el módulo libflutter.so, lo que significa que no podemos hacer el hook de la función que está en esa librería. Este error ha sido reportado a Frida [aquí](https://github.com/frida/frida/issues/1463).
 
 Por lo tanto, la única solución para poder hacer el hook y capturar tráfico HTTPS de una aplicación Flutter con Burp pasa por utilizar un dispositivo ARM y si, como yo, no disponéis de ningún dispositivo ARM con root la opción más rápida, y a un precio asequible, es utilizar [Genymotion PaaS](https://docs.genymotion.com/paas/latest/). Desde noviembre de 2020 existe en el Marketplace de AWS la opción de usar [Genymotion Android 8.0](https://aws.amazon.com/marketplace/pp/B08KHVZWMJ/?ref=_ptnr_website_blog) que se ejecuta en los chips ARM de nueva generación de AWS [Gravition2](https://aws.amazon.com/es/ec2/graviton/).
-
+{: style="text-align: justify;"}
 ### **Despliegue de la imagen Genymotion Cloud : Android 8.0 (oreo) -- ARM versión**
 
 Accedemos al servicio EC2, vamos al menú *Instances* y hacemos clic en *Launch instance*.
