@@ -2,7 +2,7 @@
 title: "Tráfico HTTPS de app Flutter con Burp usando Genymotion PaaS"
 author: Adan Alvarez
 classes: wide
-excerpt: " Captura de tráfico HTTPS de una aplicación en Flutter con Burp Suite usando una imagen en AWS de Genymotion PaaS."
+excerpt: "En esta entrada vamos a ver como podemos capturar tráfico HTTPS de una aplicación creada con Flutter con Burp Suite montando una imagen en AWS de Genymotion PaaS. Esto nos será de mucha utilidad en pentests de aplicaciones móviles creadas en Flutter."
 categories:
   - Pentesting
 tags:
