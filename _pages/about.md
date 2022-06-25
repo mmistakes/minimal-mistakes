@@ -1,14 +1,18 @@
 ---
-title: "이 블로그 설명서"
+title: "Hi! This is me."
 permalink: /about/
 layout: single
 author_profile: true
 ---
 
-## devinlife.github.io 블로그
+## DongHyo_Lee, Freddy, Ragtag, TheFormat
 
-이 블로그는 GitHub Pages 블로그 서비스인 github.io를 같이 만들어보는 샘플 블로그이다.
+# NAME
+안녕하세요! DongHyo_Lee 입니다!
 
-진짜 블로그인 <https://devinlife.com>을 방문해보자.
-이 곳에서 이 샘플 블로그를 같이 만들어보는 GitHub Pages 블로그 따라하기 시리즈의
-모든 글을 볼 수 있다.
+# DEGREE
+고려대학교 수학과 학부 재학(2020.03~)
+
+# CONTACT
+freddy1109@naver.com
+idonghyo1109@gmail.com
