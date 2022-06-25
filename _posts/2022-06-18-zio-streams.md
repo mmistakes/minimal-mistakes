@@ -26,15 +26,16 @@ files with tag-related metadata injected back into them.
 
 ## Set up
 
-We're going to base this discussion off of the latest ZIO 2.0 code, which is
-still an `RC` (at the time of writing, mid-June 2022), but the API hopefully
-won't change before release. These are the dependencies to include for our walk
-through:
+We're going to base this discussion off of the latest ZIO 2.0 code, which was
+officially released on June 24th, 2022. We're also using an `RC` of zio-json (at
+the time of writing, mid-June 2022), which is only used to pretty-print a `Map`
+as JSON in our of our examples. These are the dependencies to include for our
+walk through:
 
 ```scala
 libraryDependencies ++= Seq(
-      "dev.zio" %% "zio" % "2.0.0-RC6",
-      "dev.zio" %% "zio-streams" % "2.0.0-RC6",
+      "dev.zio" %% "zio" % "2.0.0",
+      "dev.zio" %% "zio-streams" % "2.0.0",
       "dev.zio" %% "zio-json" % "0.3.0-RC8"
 )
 ```
@@ -202,11 +203,11 @@ If we knew our collection was finite, we could also return the leftovers that
 were not operated on - or we could outright ignore them.
 
 ```scala
-  val take5Leftovers: ZSink[Any, Nothing, Int, Nothing, (Chunk[String], Chunk[Int]) =
-    take5Map.exposeLeftover
+  val take5Leftovers: ZSink[Any, Nothing, Int, Nothing, (Chunk[String], Chunk[Int])] =
+    take5Map.collectLeftover
 
   val take5NoLeftovers: ZSink[Any, Nothing, Int, Nothing, Chunk[String]] =
-    take5Map.dropLeftover
+    take5Map.ignoreLeftover
 ```
 
 ### A Prelude to ZPipelines
@@ -512,14 +513,14 @@ two `ZStream`s together with the _same_ queue? Let's look at a toy example,
 where we "process" one stream to sanitize values, that we then feed that into
 another stream that now doesn't have to address that concern.
 
-After our `ZStream` practice above, and a reminder that `parsePipeline` converts
+After our `ZStream` practice above, and a reminder that `businessLogic` converts
 `String`s to `Int`s, we might first write something like this:
 
 ```scala
   // Bad code!
   val program: ZIO[Any, Throwable, ExitCode] = for {
     queue <- Queue.unbounded[Int]
-    producer <- nonFailingStream.via(parsePipeline)
+    producer <- nonFailingStream.via(businessLogic)
       .run(ZSink.fromQueue(queue))
     result <- ZStream.fromQueue(queue)
       .run(ZSink.sum[Int]).debug("sum")
@@ -543,7 +544,7 @@ Now, we might be tempted to write:
   // Still bad code!
   val program: ZIO[Any, Throwable, ExitCode] = for {
     queue <- Queue.unbounded[Int]
-    producer <- nonFailingStream.via(parsePipeline)
+    producer <- nonFailingStream.via(businessLogic)
       .run(ZSink.fromQueueWithShutdown(queue))
     result <- ZStream.fromQueue(queue)
       .run(ZSink.sum[Int]).debug("sum")
@@ -560,7 +561,7 @@ it, and our second stream has opened from it to process the values in it.
 ```scala
   val program: ZIO[Any, Throwable, ExitCode] = for {
     queue <- Queue.unbounded[Int]
-    producer <- nonFailingStream.via(parsePipeline)
+    producer <- nonFailingStream.via(businessLogic)
       .run(ZSink.fromQueueWithShutdown(queue))
       .fork
     result <- ZStream.fromQueue(queue)
