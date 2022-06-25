@@ -6,10 +6,11 @@ excerpt: "Hola chicos! Hoy os vamos a traer un poco de ¡exfiltración DNS para 
 categories:
   - Herramientas
 tags:
-  - xss
-  - csp
-  - exfiltracion
-  - dns
+  - XSS
+  - CSP
+  - Exfiltracion
+  - DNS
+  - Red Team
 ---
 Hola chicos! Hoy os vamos a traer un poco de ¡exfiltración DNS para XSS con rascal!. Esta técnica nos permitirá extraer datos a partir de una [vulnerabilidad XSS](https://donttouchmy.net/introduccion-ataques-xss/) que nos será especialmente útil cuando nos encontramos con políticas de CSP muy restrictivas o para cuando no queremos hacer mucho ruido !
 {: style="text-align: justify;"}
