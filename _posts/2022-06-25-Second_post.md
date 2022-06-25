@@ -1,6 +1,6 @@
 ---
 title:  "블로그 두번째 글 쓰기"
-excerpt: "GitHub Blog 서비스인 github.io 블로그를 시작하기로 했다."
+excerpt: "이 블로그의 정체성"
 
 categories:
   - Blog
