@@ -116,17 +116,14 @@ author:
       url: "https://ihchoco.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://ihchoco.github.io"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://github.com/ihchoco/"
 
 # Site Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://ihchoco.github.io"
+      url: "https://github.com/ihchoco/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
