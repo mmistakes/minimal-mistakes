@@ -1,3 +1,11 @@
+<script src="https://utteranc.es/client.js"
+        repo="clean2001/clean2001.github.io"
+        issue-term="pathname"
+        label="comments"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
@@ -43,8 +51,8 @@ comments:
   utterances:
     theme: "github-light" # "github-dark"
     issue_term: "pathname"
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
+    #theme                : # "github-light" (default), "github-dark"
+    #issue_term           : # "pathname" (default)
   giscus:
     repo_id              : # Shown during giscus setup at https://giscus.app
     category_name        : # Full text name of the category
@@ -294,11 +302,4 @@ defaults:
       related: true
       future: true
 
-<script src="https://utteranc.es/client.js"
-        repo="clean2001/clean2001.github.io"
-        issue-term="pathname"
-        label="comments"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
+
