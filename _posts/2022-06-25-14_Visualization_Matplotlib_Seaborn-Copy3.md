@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "14_Visualization_Matplotlib_3"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
 ```python
 # bar 그래프는 batplot() 메소드로 만들 수 있다.
 # bar 그래프는 지정한 데이터의 평균을 계산해서 작성된다.
