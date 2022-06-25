@@ -24,7 +24,7 @@ minimal_mistakes_skin    : "air" #, "aqua", "contrast", "dark", "dirt", "neon", 
 
 # Site Settings
 locale                   : "en-US"
-title                    : "clean01's blog "
+title                    : "clean01's blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "clean2001"
