@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "포스트"
-    url: https://theformat.github.io/Posts/
+    url: https://theformat.github.io/posts/
   - title: "어바웃"
     url: /about/
   - title: "사공사"
