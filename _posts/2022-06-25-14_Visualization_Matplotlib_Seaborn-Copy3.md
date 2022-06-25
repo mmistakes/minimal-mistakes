@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "14_Visualization_Matplotlib_Seaborn_3"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
 ```python
 # 산점도, 관계 그래프 그리기 - 색상 추가
 sns.lmplot(x = "total_bill", y = "tip", data = tips, hue = "sex", fit_reg = False)
