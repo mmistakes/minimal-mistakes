@@ -41,11 +41,7 @@ import missingno as msno
 ```
 
 
-
-
     'D:\\kookgi_11gi\\PythonBigData\\workspace'
-
-
 
 
 ```python
@@ -87,8 +83,6 @@ import missingno as msno
     2020-06-17  오후 03:09           131,206 전국_평균_분양가격_2018.6월_.csv
                   24개 파일           1,466,913 바이트
                    2개 디렉터리  958,804,938,752 바이트 남음
-
-
 
 ```python
 # read_csv() 함수로 읽어들이는 csv 파일이 한글 인코딩 문제로 에러가 발생되서 읽어오지 못할 경우가 있다.
@@ -430,8 +424,7 @@ plt.show()
 ```
 
 
-![png](output_14_0.png)
-    
+![output_14_0](../../images/2022-06-25-17_Data_Analysis_1/output_14_0.png){: width="100%" height="100%"}
 
 ```python
 # 2017년 데이터만 추출한다.
@@ -1312,8 +1305,6 @@ region_year
     연도
     Index(['지역명', '2015', '2016', '2017', '2018'], dtype='object', name='')
 
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1716,8 +1707,7 @@ ggplot(region_year_all, aes(x='지역명', y='평당분양가격', fill='연도'
 ```
 
 
-![png](output_33_0.png)
-    
+![output_33_0](../../images/2022-06-25-17_Data_Analysis_1/output_33_0.png){: width="100%" height="100%"}
 
     <ggplot: (-9223371876932408660)>
 
@@ -1730,7 +1720,7 @@ ggplot(region_year_all, aes(x='지역명', y='평당분양가격', fill='연도'
 ```
 
 
-![png](output_34_0.png)
+![output_34_0](../../images/2022-06-25-17_Data_Analysis_1/output_34_0.png){: width="100%" height="100%"}
 
     <ggplot: (159922603752)>
 
@@ -1913,7 +1903,7 @@ ggplot(pre_sale, aes(x='지역명', y='평당분양가격', fill='규모구분')
 ```
 
 
-![png](output_36_0.png)
+![output_36_0](../../images/2022-06-25-17_Data_Analysis_1/output_36_0.png){: width="100%" height="100%"}
 
     <ggplot: (159923720673)>
 
@@ -1928,7 +1918,7 @@ ggplot(pre_sale, aes(x='연도', y='평당분양가격', fill='규모구분')) \
 ```
 
 
-![png](output_37_0.png)  
+![output_37_0](../../images/2022-06-25-17_Data_Analysis_1/output_37_0.png){: width="100%" height="100%"}
 
     <ggplot: (-9223371876934239842)>
 
@@ -1942,8 +1932,7 @@ ggplot(pre_sale, aes(x='지역명', y='평당분양가격', fill='규모구분')
 ```
 
 
-![png](output_38_0.png)
-    
+![output_38_0](../../images/2022-06-25-17_Data_Analysis_1/output_38_0.png){: width="100%" height="100%"}
 
     <ggplot: (159922671494)>
 
@@ -2095,8 +2084,7 @@ ggplot(pre_sale_seoul, aes(x='연도', y='평당분양가격', fill='규모구�
 ```
 
 
-![png](output_40_0.png)
-    
+![output_40_0](../../images/2022-06-25-17_Data_Analysis_1/output_40_0.png){: width="100%" height="100%"}
 
     <ggplot: (-9223371876932144170)>
 
@@ -2248,8 +2236,7 @@ ggplot(pre_sale_jeju, aes(x='연도', y='평당분양가격', fill='규모구분
 ```
 
 
-![png](output_42_0.png)
-    
+![output_42_0](../../images/2022-06-25-17_Data_Analysis_1/output_42_0.png){: width="100%" height="100%"}
 
     <ggplot: (159920748401)>
 
@@ -2401,7 +2388,6 @@ ggplot(pre_sale_ulsan, aes(x='연도', y='평당분양가격', fill='규모구�
 ```
 
 
-​    
-![png](output_44_0.png)
+![output_44_0](../../images/2022-06-25-17_Data_Analysis_1/output_44_0.png){: width="100%" height="100%"}
 
     <ggplot: (159922955952)>
