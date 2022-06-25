@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "14_Visualization_Matplotlib_4"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
 ```python
 # FacetGrid 클래스를 사용해서 간편하게 그래프를 그릴 수 있다.
 # FacetGrid 클래스로 차트를 구성할 데이터와 차트 작성의 기준이 되는 열을 넘겨 차트가 출력될 영역을 만든 후 map() 메소드를 
