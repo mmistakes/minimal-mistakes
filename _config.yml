@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -26,8 +26,8 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/profile.jpeg"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
- breadcrumbs            : true # false, false (default)
+masthead_title           : " " # overrides the website title displayed in the masthead, use " " for no title
+breadcrumbs            : true # false, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -290,4 +290,4 @@ defaults:
       related: true
       show_date : true
 
- date_format : "%Y-%m-%d"
+date_format : "%Y-%m-%d"
