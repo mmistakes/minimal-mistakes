@@ -47,7 +47,6 @@ VECTR_DATA_KEY: Clave de cifrado de la base de datos Mongo
 CAS_ENCRYPT_PASSWORD: Clave de cifrado de la base de datos CAS
 MONGO_INITDB_ROOT_PASSWORD: Contraseña root de la base de datos Mongo
 COMPOSE_PROJECT_NAME: Nombre que tendrán los contenedores
-{: style="text-align: justify;"}
 ```
 Una vez modificados esos valores, guardamos el fichero y estamos listos para mediante docker-compose arrancar la herramienta:
 {: style="text-align: justify;"}
