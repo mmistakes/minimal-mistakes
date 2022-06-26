@@ -7,58 +7,59 @@ main:
   - title: "검색"
     url: /search/
 
-# docs :
-#   - title : "대목차1"
-#     children:
-#       - title: "Category"
-#         url: /categories/
-#       - title: "Tag"
-#         url: /tags/
+docs :
+  - title : "대목차1"
+    children:
+      - title: "Category"
+        url: /categories/
+      - title: "Tag"
+        url: /tags/
 
-#   - title : "대목차2"
+  - title : "대목차2"
+    children:
+      - title: "Category"
+        url: /categories/
+      - title: "Tag"
+        url: /tags/
+        
+# docs:
+#   - title: WEB
 #     children:
-#       - title: "Category"
-#         url: /categories/
-#       - title: "Tag"
-#         url: /tags/
-docs:
-  - title: WEB
-    children:
-      - title: "HTML"
-        url: html/
-        category: "html"
-      - title: "CSS"
-        url: css/
-        category: "css"
-      - title: "Javascript"
-        url: javascript/
-        category: "javascript"
-      - title: "Spring"
-        url: spring/
-        category: "spring"        
-  - title: DATABASE
-    children:
-      - title: "Oracle"
-        url: oracle/
-        category: "oracle"
-      - title: "Mysql"
-        url: mysql/
-        category: "mysql"
-  - title: Algorithm
-    children:
-      - title: "algorithm"
-        url: algorithm/
-        category: "algorithm"
-- title: APP
-    children:
-      - title: "Android"
-        url: android/
-        category: "android"
-  - title: Blog
-    children:
-      - title: "blog"
-        url: blog/
-        category: "blog"
+#       - title: "HTML"
+#         url: html/
+#         category: "html"
+#       - title: "CSS"
+#         url: css/
+#         category: "css"
+#       - title: "Javascript"
+#         url: javascript/
+#         category: "javascript"
+#       - title: "Spring"
+#         url: spring/
+#         category: "spring"        
+#   - title: DATABASE
+#     children:
+#       - title: "Oracle"
+#         url: oracle/
+#         category: "oracle"
+#       - title: "Mysql"
+#         url: mysql/
+#         category: "mysql"
+#   - title: Algorithm
+#     children:
+#       - title: "algorithm"
+#         url: algorithm/
+#         category: "algorithm"
+# - title: APP
+#     children:
+#       - title: "Android"
+#         url: android/
+#         category: "android"
+#   - title: Blog
+#     children:
+#       - title: "blog"
+#         url: blog/
+#         category: "blog"
   
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
