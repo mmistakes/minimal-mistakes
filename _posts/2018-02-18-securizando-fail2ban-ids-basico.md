@@ -315,7 +315,7 @@ References: 1
 Members:
 198.xx.57.xx
 ```
-Mucho más cómodo ![🙂](https://s.w.org/images/core/emoji/13.0.1/svg/1f642.svg)
+Mucho más cómodo !🙂
 
 ### Eliminar una IP baneada
 
@@ -410,7 +410,7 @@ actionstop = <iptables> -C <chain> -p <protocol> -m multiport --dports <port> -m
 Revisando IPs baneadas
 ----------------------
 
-Por último, si queremos recibir correos con las IPs que se han benado, podemos usar acciones de correo integradas en *fail2ban*(comentadas en los ejemplos) o ejecutar una *cron* que nos envíe un email diario con las IPs banneadas del día anterior. Os recomendamos encarecidamente la segunda opción si no queréis sufrir de *autospam* ![🙂](https://s.w.org/images/core/emoji/13.0.1/svg/1f642.svg)
+Por último, si queremos recibir correos con las IPs que se han benado, podemos usar acciones de correo integradas en *fail2ban*(comentadas en los ejemplos) o ejecutar una *cron* que nos envíe un email diario con las IPs banneadas del día anterior. Os recomendamos encarecidamente la segunda opción si no queréis sufrir de *autospam* !🙂
 {: style="text-align: justify;"}
 ```
 [root@localhost fail2ban]# cat /etc/crontab
