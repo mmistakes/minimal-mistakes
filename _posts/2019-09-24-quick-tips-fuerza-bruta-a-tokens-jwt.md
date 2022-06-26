@@ -5,6 +5,7 @@ classes: wide
 excerpt: "El uso de JSON Web Tokens (JWT) se ha extendido mucho debído a la facilidad que nos ofrecen para identificar y asignar privilegios."
 categories:
   - Quick Tips
+  - Web
 tags:
   - JWT
   - Fuerza bruta

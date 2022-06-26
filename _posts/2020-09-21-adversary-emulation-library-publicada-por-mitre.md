@@ -4,9 +4,8 @@ author: Adan Alvarez
 classes: wide
 excerpt: "A principios de este mes MITRE Engenuity’s Center for Threat-Informed Defense hizo pública una de sus grandes iniciativas en el mundo de la cyberseguridad, la Adversary Emulation Library, una librería pública donde compartirán planes para la simulación de adversarios."
 categories:
-  - MITRE ATT&CK
-tags:
   - Threat Hunting
+tags:
   - Fin6
   - MITRE ATT&CK
   - Purple Team

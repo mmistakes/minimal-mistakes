@@ -4,12 +4,12 @@ author: Adan Alvarez
 classes: wide
 excerpt: "En esta entrada vamos a ver como podemos capturar tráfico HTTPS de una aplicación creada con Flutter con Burp Suite montando una imagen en AWS de Genymotion PaaS. Esto nos será de mucha utilidad en pentests de aplicaciones móviles creadas en Flutter."
 categories:
-  - Pentesting
+  - Pentest
 tags:
-  - aplicaciones móviles
-  - burp
-  - pentest
-  - flutter
+  - Aplicaciones móviles
+  - Burp
+  - Pentest
+  - Flutter
 ---
 En esta entrada vamos a ver como podemos capturar tráfico HTTPS de una aplicación creada con Flutter con Burp Suite montando una imagen en AWS de Genymotion PaaS. Esto nos será de mucha utilidad en pentests de aplicaciones móviles creadas en Flutter.
 {: style="text-align: justify;"}

@@ -5,6 +5,7 @@ classes: wide
 excerpt: "Hola chicos! Hoy os vamos a traer un poco de ¡exfiltración DNS para XSS con rascal!. Esta técnica nos permitirá extraer datos a partir de una vulnerabilidad XSS que nos será especialmente útil cuando nos encontramos con políticas de CSP muy restrictivas o para cuando no queremos hacer mucho ruido"
 categories:
   - Herramientas
+  - Web
 tags:
   - XSS
   - CSP
