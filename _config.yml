@@ -20,12 +20,12 @@ title                    : "차가운핫초코 노트"
 title_separator          : "|"
 subtitle                 : "don't let fear stop you from doing the thing you love "
 name                     : "차가운핫초코"
-description              : "성공한 사람보다 가치있는 사람이 되자"
+description              : "넘어져도 괜찮아"
 url                      : "https://ihchoco.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/profile.jpeg"
+logo                     : "/assets/images/logo.jpeg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : true # false, false (default)
 words_per_minute         : 200
