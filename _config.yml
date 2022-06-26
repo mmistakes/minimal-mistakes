@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "차가운핫초코"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.jpeg"
   bio              : "성공한 사람보다 가치있는 사람이 되라"
   location         : "South Korea"
   email            :
