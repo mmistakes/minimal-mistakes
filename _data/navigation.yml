@@ -9,14 +9,15 @@ docs:
   - title: "Java"
     url: categories/java
     children:
-    # - title: "Java Project"
-    #   url: categories/
-      category: "project"
-  - title: "Project"
-    children:
-     - title: "모두의 주차장"
-       url: categories/everyparking
-       category: "everyparking"
+     - title: "GeoTools"
+       url: categories/java/geotools
+       categories: "geotools"
+  - title: "JavaScript"
+    url: categories/javascript
+    children: 
+    - title: "OpenLayers"
+      url: categories/javascript/openlayers
+      category: "openlayers"
   - title: "Github"
     children:
      - title: "Git"
@@ -25,11 +26,6 @@ docs:
      - title: "Git Blog"
        url: categories/blog
        category: "blog"
-  - title: "JavaScript"
-    url: categories/javascript
-    children:
-    - title:
-      url:
 
 
   # - title: "About"
