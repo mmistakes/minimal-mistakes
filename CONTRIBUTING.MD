@@ -15,7 +15,11 @@ Once you've completed the steps above:
 * Scroll down to commit changes (create a new branch) -> make a pull request
 * Assign a reviewer who will then merge and push to the main site
 
+<<<<<<< HEAD
 Please check [Adding/Editing the website](#Adding/Editing-the-website) below for details on **where** to add new files such that they do not break the site. 
+=======
+Please check [Adding/Editing the website](#Adding-to-or-Editing-the-website) below for details on **where** to add new files such that they do not break the site. 
+>>>>>>> origin/master
 
 
 ## Pushing to the main repo master branch
@@ -40,7 +44,11 @@ OR
 This method pushes the changes in dev:master to fiqci.github.io:newbranch where `newbranch` is a user-created branch in the main repo. 
 
 1. Clone the `dev` repository and `cd` into it: `git clone git@github.com:FiQCI/dev.git` +`cd dev`
+<<<<<<< HEAD
 2. Do your changes which can be viewed locally (see above).
+=======
+2. Do your changes which can be viewed locally (see [README](README.MD)).
+>>>>>>> origin/master
 3. [Create branch in mainsite](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository). For example "test-changes". 
 
 4. Get this new branch in your local repository: `git fetch mainsite + git pull`
@@ -51,7 +59,11 @@ This method pushes the changes in dev:master to fiqci.github.io:newbranch where 
 7. Go to the main repo github page and switch to the new branch you created. Click "Compare and pull request" at the top. Then select "base:master" on the left and "compare: yourbranchname" on the right. Comment what you've changed and assign a reviewer. 
 
 
+<<<<<<< HEAD
 ## Adding/Editing the website
+=======
+## Adding to or Editing the website
+>>>>>>> origin/master
 
 This website is built using Jekyll with the minimal mistakes theme, thus the layout of the site is very particular. 
 
