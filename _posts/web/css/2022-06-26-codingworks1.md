@@ -21,48 +21,44 @@ search: true
 [가장 기초가 되면서 중요한 부분]
 
 인라인요소(inline)
-
+```
  - 한중에 여러개 배치
  - 기본 너비값은 컨텐츠의 너비값
  - 크기값을 가질 수 없음 X
  - 상하 마진은 가질 수 없음 X / 좌우 마진은 가질 수 있음 O
  
  ex) span, a, small, big, em, u, s, del, br, q, b, strong, mark, sub,sup, video, audio
-
+```
 
 블록요소(inline)
-
+```
  - 한줄에 한개만 배치
  - 기본 너비값은 100%
  - 크기값을 가질 수 있음 O
  - 상하좌우 마진 가질 수 있음 O
  
  ex) div, table, figure, figcaption, cation, header, nav, footer, section, article,aside, p, blockquote, ul, ol, li, td, th, form, hr, h1 ~ h6
- 
+ ```
 
  인라인블록(inline-block) 요소
-
+```
  - 한줄에 여러개 배치
  - 기본 너비값은 컨텐츠의 너비값
  - 크기값을 가질 수 있음 O
  - 상하 마진은 가질수 있음 O
  
  ex) img, input태그, button, fontawesome
-
-<br>
-<br>
-<br>
+```
 
 
 #### 가로 배치하기(float, overflow, clear)
-<br>
+
 CSS 가로 배치하기(float, overflow, clear, inline-block, hidden)
-<br>
-<br>
+
 CSS 포지셔닝 - 엘리먼트 수평 정렬하기 (속성 : float)
 
 : float 속성은 요소가 부모요소 기준으로 왼쪽 또는 오른쪽에 배치할지 지정한다.
-
+```
 display : none; //아무것도 지정안함
 
 display : float; //float 지정
@@ -72,11 +68,11 @@ float : left; //(왼쪽으로 배치 - inline,block요소 모두 가능)
 margin : auto; //(가운데로 배치 - block요소만 가능 O / inline, inline-block X)
 
 float : right; //(오른쪽으로 배치 - inline,block요소 모두 가능)
-
+```
 사람들이 보통 block이 왼쪽에 있으니까 float: left가 되어있는줄 알지만 실제로 float : none 상태이다.
 
 
-``` css
+``` HTML
 <div class="parent">
 <div class="child"></div>
 </div>
@@ -97,7 +93,7 @@ float : left;
 만약에 .child 에 float를 주지않으면 .parent도 같이 height : 200px을 가지게 된다.
 
 (float 뜻 : 둥둥뜬다. 자식요소가 붕 떠버리니까 부모가 봤을때 자식이 없네? 라고 생각한다.)
-
+```
 이렇게 사용할때 부모가 height를 가지게 하려면 
 
 - 1. 강제로 .parent { height : 200px } 이렇게 주는법
@@ -105,10 +101,10 @@ float : left;
 - 2. .parent { overflow : hidden } 값을 준다. 
 
 (자동으로 자식값의 높이를 찾아서 부모에 맞춰준다.!!!!!!!!!!!!!)
-
+```
 2번 방법을 쓰면 굳이 자식 높이를 정확히 구하지 않아도 되고 또 변경될때도 자동으로 맞춰주나까 자식에 float를 줄때 부모에는 overflow : hidden을 꼭 주자
 
-```CSS
+```
 <div class="parent">
 <div class="child"></div>
 </div>
@@ -126,7 +122,7 @@ margin : auto; <--
 }
 ```
 위 상태에서 자식인 child가 display : inline-block이고 가운데 정렬을 하고 싶은데 margin : auto를 주니까 동작하지 않는다.
-
+```
 Reason) inline-block의 경우 margin값을 가질수는 있지만 margin auto는 동작하지 않는다.
 
 margin : auto를 사용하려면 무조건 diplay : block상태여야 한다.
@@ -137,18 +133,18 @@ margin : auto를 사용하려면 무조건 diplay : block상태여야 한다.
 text-align : center >> 자식요소인 인라인 요소들을 가운데로 위치시킨다.(block은 움직이지 않는다)
 
 block이 자식이면 가운데 정렬할때 => margin : auto로 정렬
-<br>
+```
 
 상속받은 float속성 해제하는 방법(clear)
 
 float 속성이 적용되면 다음 요소가 float 속성을 상속 받는데 이것을 해제시킨다.
-<br>
 
+```
 clear : left | right | both
 - left : 왼쪽 float 속성 상속 해제
 - right : 오른쪽 float 속성 상속 해제
 - both : 양쪽 float 속성 상속 해제!! 가장 자주 사용됨
-
+```
 
 가로 배치 2가지 방법 : float , inline-block
 (float , overflow, box-sizing & inline-block)
@@ -157,7 +153,7 @@ clear : left | right | both
 2) display : inline-block으로 배치
        
 box-sizing
-```CSS
+```
 section{
     border : 5px solid black;
     width : 600px;
@@ -180,22 +176,18 @@ article이 3개이면 606px이다. 하지만 section(부모)의 width : 600px인
 있고 한개는 아래에 넘쳐서 배치가된다.
 
 이럴경우 article의 width를 너비와 border가 합쳐서 200이 되면 되는데
-
+```
 이렇게 하기 위해서는 article { box-sizing : border-box; }를 넣어주면 된다.
-
-box-sizing : border-box !!!!!!! border Width 포함 계산
+```
+> box-sizing : border-box !!!!!!! border Width 포함 계산
 
 float vs inline-block 레이아웃 배치
 1. 1px도 오차가 없이 정확하게 해야한다. float : left; clear : both 등 사용해서 레이아웃
 2. 적당하게 맞추면 된다. inline-block
 
-<br>
-<br>
-<br>
-
 #### 시멘틱 태그 사용법
 
-```HTML
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -295,12 +287,9 @@ float vs inline-block 레이아웃 배치
 </body>
 </html>
 ```
-<br>
-<br>
-<br>
 
 #### 포지션 속성 이해하기
-```HTML
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -369,10 +358,6 @@ float vs inline-block 레이아웃 배치
 </html>
 ```
 
-<br>
-<br>
-<br>
-
 #### 마우스 hover 사용법
 ```html
 <!DOCTYPE html>
@@ -417,14 +402,9 @@ float vs inline-block 레이아웃 배치
 
 ```
 
-
-<br>
-<br>
-<br>
-
 #### 가상클래스 nth-child, nth-of-type
 
-```HTML
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -496,11 +476,6 @@ float vs inline-block 레이아웃 배치
 </body>
 </html>
 ```
-
-
-<br>
-<br>
-<br>
 
 #### 가상클래스 first-child, last-child
 ```html
@@ -577,12 +552,6 @@ float vs inline-block 레이아웃 배치
 </body>
 </html>
 ```
-
-
-
-<br>
-<br>
-<br>
 
 #### 제이쿼리 시작하기
 ```html
@@ -853,11 +822,6 @@ float vs inline-block 레이아웃 배치
 </html>
 ```
 
-
-<br>
-<br>
-<br>
-
 #### 제이쿼리 네비게이션 만들기
 ```html
 <!DOCTYPE html>
@@ -951,11 +915,6 @@ float vs inline-block 레이아웃 배치
 </html>
 ```
 
-
-<br>
-<br>
-<br>
-
 #### 제이쿼리 네비게이션 만들기2
 ```html
 <!DOCTYPE html>
@@ -1007,11 +966,6 @@ float vs inline-block 레이아웃 배치
 
 </html>
 ```
-
-
-<br>
-<br>
-<br>
 
 #### CSS 키프레임 애니메이션
 ```html
@@ -1097,11 +1051,6 @@ float vs inline-block 레이아웃 배치
 </html>
 ```
 
-
-<br>
-<br>
-<br>
-
 #### 가상클래스 hover 네비게이션
 ```html
 <!DOCTYPE html>
@@ -1164,11 +1113,6 @@ float vs inline-block 레이아웃 배치
 </body>
 </html>
 ```
-
-
-<br>
-<br>
-<br>
 
 #### 가상클래스 hover 툴팁 만들기
 ```html
@@ -1247,11 +1191,6 @@ float vs inline-block 레이아웃 배치
 </html>
 ```
 
-
-<br>
-<br>
-<br>
-
 #### hover 메뉴 외 나머지 흐려지기
 ```html
 <!DOCTYPE html>
@@ -1311,11 +1250,6 @@ float vs inline-block 레이아웃 배치
 </body>
 </html>
 ```
-
-
-<br>
-<br>
-<br>
 
 #### 위 아래 분리 네비게이션
 ```html
@@ -1431,11 +1365,6 @@ float vs inline-block 레이아웃 배치
 </body>
 </html>
 ```
-
-
-<br>
-<br>
-<br>
 
 #### 넷플릭스 어코디언
 ```html
@@ -1589,11 +1518,6 @@ float vs inline-block 레이아웃 배치
 </html>
 ```
 
-
-<br>
-<br>
-<br>
-
 #### 밀리의 서재 어코디언
 ```html
 <!DOCTYPE html>
@@ -1740,11 +1664,6 @@ float vs inline-block 레이아웃 배치
 </html>
 ```
 
-
-<br>
-<br>
-<br>
-
 #### 제이쿼리 모달 만들기1
 ```html
 <!DOCTYPE html>
@@ -1828,12 +1747,6 @@ float vs inline-block 레이아웃 배치
 </body>
 </html>
 ```
-
-
-
-<br>
-<br>
-<br>
 
 #### 제이쿼리 모달 만들기2
 ```html
@@ -1938,11 +1851,6 @@ float vs inline-block 레이아웃 배치
 </body>
 </html>
 ```
-
-
-<br>
-<br>
-<br>
 
 #### 자바스크립트 모달 만들기
 
@@ -2061,11 +1969,6 @@ float vs inline-block 레이아웃 배치
 </html>
 ```
 
-
-<br>
-<br>
-<br>
-
 #### 가상클래스1
 ```html
 <!DOCTYPE html>
@@ -2167,12 +2070,8 @@ float vs inline-block 레이아웃 배치
 </html>
 ```
 
-
-<br>
-<br>
-<br>
-
 #### 가상클래스3
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
