@@ -9,6 +9,9 @@ toc_sticky: true
 author: Leighton Pritchard
 ---
 
+This post is partly based on ["Practicals made perfect" by Colin McGill](https://edu.rsc.org/ideas/how-to-apply-cognitive-load-theory-to-chemistry-practicals/4015738.article)
+{: .notice--success}
+
 ## tldr;
 
 - a research project in computational biology will require you to learn new concepts alongside new skills; this is difficult and rushing it can make you feel frustrated
@@ -16,8 +19,6 @@ author: Leighton Pritchard
 - make sure you understand the goal of your activity and how it is achieved, before starting it
 - learning new _concepts_ and new _skills_ simultaneously is difficult: learn the _concepts_ first to support learning the _skill_
 - become familiar with new software before using it to answer your research question
-
-This post is partly based on ["Practicals made perfect" by Colin McGill](https://edu.rsc.org/ideas/how-to-apply-cognitive-load-theory-to-chemistry-practicals/4015738.article)
 
 ## Computational biology may involve many unfamiliar concepts and skills
 
