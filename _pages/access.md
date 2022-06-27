@@ -19,7 +19,7 @@ excerpt: >
 
 Access to the quantum computing resources goes through the LUMI supercomputer environment.
 
-The pilot phase for access will open very soon!
+The first quantum calculations on the Helmi quantum computer through LUMI have been run, and the pilot phase for general access will open very soon!
 
 
 ### Access to LUMI
