@@ -28,13 +28,14 @@ While there are COVID restrictions in place (and it remains convenient) these wi
 
 | Date                | Location                 | Speaker            |
 |:-------------------:|:------------------------:|:------------------:|
-| Mon 27th June 2022  | Zoom (see calendar link) | Leighton Pritchard |
+| Mon 4th July 2022   | Zoom (see calendar link) | Julianna Piat      |
 
 
 ### Past meetings
 
 | Date                | Location                 | Speaker            |
 |:-------------------:|:------------------------:|:------------------:|
+| Mon 27th June 2022  | Zoom (see calendar link) | Leighton Pritchard |
 | Mon 20th June 2022  | CANCELLED                | CANCELLED          |
 | Mon 13th June 2022  | Zoom (see calendar link) | Angelika Kiepas    |
 | Mon 6th June 2022   | Zoom (see calendar link) | Emma Hobbs         |
@@ -45,7 +46,6 @@ This schedule is tentative - if you cannot attend a meeting where you are schedu
 
 | Date                | Location                 | Speaker            |
 |:-------------------:|:------------------------:|:------------------:|
-| Mon 4th July 2022   | TBC                      | Julianna Piat      |
 | Mon 11th July 2022  | TBC                      | Yassmeen Ali       |
 | Tue 19th July 2022  | TBC                      | Areej Obaid        |
 | Mon 25th July 2022  | TBC                      | David Teixeira     |
