@@ -469,7 +469,7 @@ body {
 .comment__avatar {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 25%;
 
   @include breakpoint($large) {
     width: 80px;

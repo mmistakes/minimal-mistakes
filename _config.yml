@@ -25,7 +25,7 @@ url                      : "https://ihchoco.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/logo.jpeg"
+logo                     : "/assets/images/logo.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : true # false, false (default)
 words_per_minute         : 200
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "차가운핫초코"
   avatar           : "/assets/images/profile.jpeg"
-  bio              : "성공한 사람보다 가치있는 사람이 되라"
+  bio              : "넘어져도 괜찮아. \n포기하지 말고 조금씩 앞으로 나아가자"
   location         : "South Korea"
   email            :
   links:
