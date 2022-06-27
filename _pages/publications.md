@@ -17,9 +17,13 @@ intro:
 
 {% include feature_row id="intro" type="center" %}
 
+Watch this space for the latest news and posts of interest!
+
+
+<!--
+
 <div class="row">
   <div class="column">
-    <!-- <h2>Posts <a href="{{site.github.repository_url}}/blob/master/_posts"><font size="-3">Add your own post</font></a></h2> -->
     {% include base_path %}
     {% capture written_year %}'None'{% endcapture %}
     {% for post in site.posts %}
@@ -33,7 +37,6 @@ intro:
     {% include feature_row %}
   </div>
   <div class="column">
-    <!-- <h2>Publications <a href="{{site.github.repository_url}}/blob/master/_publications"><font size="-3">Add your own publication</font></a></h2> -->
     {% include base_path %}
     {% capture written_year %}'None'{% endcapture %}
     {% for post in site.publications %}
@@ -48,5 +51,4 @@ intro:
   </div>
 </div>
 
-
-<!-- {% include feature_row %} -->
+-->

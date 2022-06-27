@@ -15,10 +15,16 @@ excerpt: >
 
 {% include feature_row id="intro" type="center" %}
 
-Access to LUMI
-======
+## Accessing the FiQCI infrastructure
 
-Accessing LUMI is covered in the LUMI [webpage](https://www.lumi-supercomputer.eu/get-started-2021/users-in-finland/).
+Access to the quantum computing resources goes through the LUMI supercomputer environment.
+
+The pilot phase for access will open very soon!
 
 
-{% include feature_row %}
+### Access to LUMI
+
+See the LUMI [webpage](https://www.lumi-supercomputer.eu/get-started-2021/users-in-finland/) for details on how to get access to the LUMI environment.
+
+
+
