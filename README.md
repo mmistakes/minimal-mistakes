@@ -1,10 +1,10 @@
 # About this site
 
-This is the repository for building and maintaining the webpage for the Finnish Quantum-Computing Infrastructure (FiQCI). You can view the site at https://fiqci.github.io/. 
+This is the repository for building and maintaining the webpage for the Finnish Quantum-Computing Infrastructure (FiQCI). You can view the main site at https://fiqci.github.io/. 
 
 ## Editing and Contributing
 
-If you wish to add your own posts/publications or contribute to the website please see [CONTRIBUTING](CONTRIBUTING.MD) for help and guidelines.
+If you wish to add your own posts/publications or contribute to the website please see [CONTRIBUTING.md](CONTRIBUTING.MD) for help and guidelines.
 
 This website is built using Jekyll with the minimal mistakes theme. To find out more about jekyll, take a look at the docs: https://jekyllrb.com/docs/. 
 
@@ -37,3 +37,7 @@ Then navigate to [http://localhost:4000/](http://localhost:4000/).
 2. Then navigate to [http://localhost:4000/](http://localhost:4000/).   
 
 Ensure that there isn't a current container assigned to the `4000:4000`. This can be resolved by for example removing an old version of the docker container `docker rm xyz` where `xyz` is the first 3 letters of the container id found through `docker ps -a`. 
+
+### Github pages
+
+Changes can also be previewed at either http://fiqci.fi/dev/ for the dev site or http://fiqci.fi/ for the main site. 

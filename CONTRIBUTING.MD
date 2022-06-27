@@ -1,11 +1,26 @@
 # Contributing
 
-Changes are first made to the [dev](https://github.com/FiQCI/dev) repository which are then pushed to the main repository which builds the main website https://fiqci.fi/. 
+Changes are first made to the [dev](https://github.com/FiQCI/dev) repository which are then pushed to the [main](https://github.com/FiQCI/fiqci.github.io) repository which builds the main website https://fiqci.fi/. 
+
+You can either edit/add documents through the GitHub Web GUI and **request** a merge with the main repository or you can edit/add documents through the terminal and merge them yourself, however this requires more advanced usage. 
+
+First, ensure you have write access to both the [dev](https://github.com/FiQCI/dev) repository and the [main](https://github.com/FiQCI/fiqci.github.io) repository. 
 
 
-First, ensure you have write access to both the [dev](https://github.com/FiQCI/dev) repository and the [main](https://github.com/FiQCI/fiqci.github.io) repository. Depending on your permissions you can then either do: 
+## For the impatient
 
-### Pushing to main site master branch
+Once you've completed the steps above:
+* In [the dev repo](https://github.com/FiQCI/dev) navigate to where you want to add a new file e.g `_posts/` and click "Add file" at the top. Or navigate to a file already in the repo and click the little pen icon in the top right "Edit this file". 
+* (sign in GitHub) and edit then content
+* Scroll down to commit changes (create a new branch) -> make a pull request
+* Assign a reviewer who will then merge and push to the main site
+
+Please check [Adding/Editing the website](#Adding/Editing-the-website) below for details on **where** to add new files such that they do not break the site. 
+
+
+## Pushing to the main repo master branch
+
+This method directly pushes dev:master --> fiqci.github.io:master and requires admin rights on both dev and the main repo. 
 
 1. Clone the `dev` repository and `cd` into it: `git clone git@github.com:FiQCI/dev.git` +`cd dev`
 2. Do your changes which can be viewed locally (see above).
@@ -20,7 +35,9 @@ First, ensure you have write access to both the [dev](https://github.com/FiQCI/d
 
 OR
 
-### Pushing to main site dev branch and creating a pull request
+## Pushing to the main repo new branch and creating a pull request
+
+This method pushes the changes in dev:master to fiqci.github.io:newbranch where `newbranch` is a user-created branch in the main repo. 
 
 1. Clone the `dev` repository and `cd` into it: `git clone git@github.com:FiQCI/dev.git` +`cd dev`
 2. Do your changes which can be viewed locally (see above).
@@ -34,8 +51,25 @@ OR
 7. Go to the main repo github page and switch to the new branch you created. Click "Compare and pull request" at the top. Then select "base:master" on the left and "compare: yourbranchname" on the right. Comment what you've changed and assign a reviewer. 
 
 
+## Adding/Editing the website
 
-## Posts and Publications
+This website is built using Jekyll with the minimal mistakes theme, thus the layout of the site is very particular. 
+
+The `_pages/` directory contains directly loading pages on the website. These can be edited and added to in markdown format + frontmatter following the layout already provided. Additional files to this directory should generally not be made without prior checking as it will affect the rest of the website. 
+
+The `_pages/publications.md` file will automatically generate content placed into the `_posts/` and `_publications/` directories. 
+
+The `_posts/` directory contains markdown (or html) files for content regarding short posts. New markdown files can be added/created in this directory on GitHub by navigating to https://github.com/FiQCI/dev/tree/master/_posts and clicking "Add file" in the top right. Please see below for a short style guide as new files added to this folder must have a certain name style.  
+
+The `_publications/` directory contains markdown (or html) files for content regarding publications about FiQCI. New markdown files can be added/created in this directory on GitHub by navigating to https://github.com/FiQCI/dev/tree/master/_publications and clicking "Add file" in the top right. Please see below for a short style guide as new files added to this folder must have a certain name style.  
+
+
+If you have made a change to the `_config.yml` file you will need to delete `_site` (e.g `rm -r _site/`) and rebuild.
+
+To find out more about jekyll, take a look at the docs: https://jekyllrb.com/docs/. 
+
+
+### Posts and Publications
 
 Posts and Publications can be in either `html` or `markdown` format and must be located in either `_posts` or `_publications`. Posts must be created with the following format `YEAT-MONTH-DAY-title.md` in order to render correctly on the webpage. You can also include front matter to set the layout and provide additional information
 
