@@ -1,142 +1,105 @@
 # Contributing
 
-This document describes the workflow in Github as well as instructions for previewing and deploying the documentation.
+Changes are first made to the [dev](https://github.com/FiQCI/dev) repository which are then pushed to the [main](https://github.com/FiQCI/fiqci.github.io) repository which builds the main website https://fiqci.fi/. 
+
+You can either edit/add documents through the GitHub Web GUI and **request** a merge with the main repository or you can edit/add documents through the terminal and merge them yourself, however this requires more advanced usage. 
+
+First, ensure you have write access to both the [dev](https://github.com/FiQCI/dev) repository and the [main](https://github.com/FiQCI/fiqci.github.io) repository. 
+
 
 ## For the impatient
 
 Once you've completed the steps above:
-* In [https://fiqci.fi/](https://fiqci.fi/) go the the page you want to edit and scroll down to the bottom. Above the footer there should be a "Edit this page" button.
+* In [the dev repo](https://github.com/FiQCI/dev) navigate to where you want to add a new file e.g `_posts/` and click "Add file" at the top. Or navigate to a file already in the repo and click the little pen icon in the top right "Edit this file". 
 * (sign in GitHub) and edit then content
 * Scroll down to commit changes (create a new branch) -> make a pull request
-* Assign a reviewer
+* Assign a reviewer who will then merge and push to the main site
 
-## Making changes
+Please check [Adding/Editing the website](#Adding/Editing-the-website) below for details on **where** to add new files such that they do not break the site. 
 
-The fqci/dev repository uses the 'master' as the default
-branch. You can make changes in web gui, command line or desktop application.
 
-The fqci.github.io Master branch is protected. You cannot make changes to it directly, but you
-must use pull requests.
+## Pushing to the main repo master branch
 
-**Note:** If you make bigger changes to the (main) categories / menu on the left, it might effect some links used on our webpages. Please communicate these changes to us. You can use either Github issues https://github.com/FiQCI/dev/issues or send us a message on chat.csc.fi.
+This method directly pushes dev:master --> fiqci.github.io:master and requires admin rights on both dev and the main repo. 
 
-### Adding a new post or publication
+1. Clone the `dev` repository and `cd` into it: `git clone git@github.com:FiQCI/dev.git` +`cd dev`
+2. Do your changes which can be viewed locally (see above).
+3. Commit your changes. 
+4. Ensure you have the latest version of the dev repo **after changes** `git fetch` + `git pull`
+5. Add the main repo's remote url: `git remote add mainsite git@github.com:FiQCI/fiqci.github.io`
+6. Ensure you have the latest version of the main repo: `git fetch mainsite`
+7. Create a new branch called "dev-changes" which is linked to the main repo **master** branch:  `git branch dev-changes mainsite/master`
+8. Switch to this branch: `git checkout dev-changes`
+9. Merge your changes with the new branch: `git merge origin/master`
+10. Push your changes to the main repo **master** branch: `git push mainsite dev-changes:master`
 
-New posts or publications can be added directly into the `_posts` or `_publications` folders as either html or markdown. These will automatically be shown in the main publications page. Please see below for a style guide and tips. 
+OR
 
-### Making pull requests in the web GUI
+## Pushing to the main repo new branch and creating a pull request
 
-In the master branch, navigate to the page you want to edit, click the pen-logo at the top right and once ready, at the bottom choose "Create new branch from this commit and start a pull request". Note, that you can give the branch a descriptive name at this point. If you wish to edit already existing branch, first change to the correct branch in the "branch" button on upper left, next to the path to the file. If you found an error in the pull request of your own branch, you can commit to it directly instead of creating another pull request (the two choices at the bottom).
+This method pushes the changes in dev:master to fiqci.github.io:newbranch where `newbranch` is a user-created branch in the main repo. 
 
-### Making pull requests on the command line
+1. Clone the `dev` repository and `cd` into it: `git clone git@github.com:FiQCI/dev.git` +`cd dev`
+2. Do your changes which can be viewed locally (see above).
+3. [Create branch in mainsite](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository). For example "test-changes". 
 
-Overview:
+4. Get this new branch in your local repository: `git fetch mainsite + git pull`
+5. Create a new branch called "dev-changes" which is linked to the new branch you just created:  `git branch dev-changes mainsite/test-changes`
+6. Switch to this branch: `git checkout dev-changes`
+7. Merge your changes with the new branch: `git merge origin/master`
+8. Push your changes to the main repo: `git push mainsite dev-changes`
+7. Go to the main repo github page and switch to the new branch you created. Click "Compare and pull request" at the top. Then select "base:master" on the left and "compare: yourbranchname" on the right. Comment what you've changed and assign a reviewer. 
 
- - Update local repository
- - Make a new branch from the master branch
- - Work and commit in your new branch
- - Push changes to github
- - Make a pull request to merge changes from your new branch into the develop branch
- - Ask a person to review and merge the changes
 
- To get a copy of the repository, you need a clone it. Make sure you clone the **dev** repository.
+## Adding/Editing the website
 
- ```bash
- git clone https://github.com/FiQCI/dev
- ```
- or (recommended) if you have ssh keys set up. 
+This website is built using Jekyll with the minimal mistakes theme, thus the layout of the site is very particular. 
 
- ```bash
- git clone git@github.com:FiQCI/dev.git
- ```
+The `_pages/` directory contains directly loading pages on the website. These can be edited and added to in markdown format + frontmatter following the layout already provided. Additional files to this directory should generally not be made without prior checking as it will affect the rest of the website. 
 
- All other Git commands are given inside the directory that you have
- cloned.
+The `_pages/publications.md` file will automatically generate content placed into the `_posts/` and `_publications/` directories. 
 
- ```bash
- cd dev
- ```
+The `_posts/` directory contains markdown (or html) files for content regarding short posts. New markdown files can be added/created in this directory on GitHub by navigating to https://github.com/FiQCI/dev/tree/master/_posts and clicking "Add file" in the top right. Please see below for a short style guide as new files added to this folder must have a certain name style.  
 
-When you have cloned the repository, master branch is what you
-see. If you are unsure which branch you are in, you can run `git branch`. The active branch can be changed with the `git checkout`
-command.
+The `_publications/` directory contains markdown (or html) files for content regarding publications about FiQCI. New markdown files can be added/created in this directory on GitHub by navigating to https://github.com/FiQCI/dev/tree/master/_publications and clicking "Add file" in the top right. Please see below for a short style guide as new files added to this folder must have a certain name style.  
 
-Method:
 
-```bash
-git pull
-git checkout master # switch to master branch
-git checkout -b your_branch_name # create a new (temporary) branch and switch to it
-# create some nice content, add files
-git add example-file.md
-git status # check the status
-git commit -v
-git push origin your_branch_name
-```
+If you have made a change to the `_config.yml` file you will need to delete `_site` (e.g `rm -r _site/`) and rebuild.
 
-Now you can ask a person to review and merge the changes. One can request
-reviewers in the Github web interface.
+To find out more about jekyll, take a look at the docs: https://jekyllrb.com/docs/. 
 
-After the PR has been merged, the branch on github can be deleted.
 
-Tip 1. Git uses [Vim](https://www.vim.org) as the default editor for commit
-messages. It is possible to change the default editor, but below are
-the most important commands if you do not want to do it right now.
+### Posts and Publications
+
+Posts and Publications can be in either `html` or `markdown` format and must be located in either `_posts` or `_publications`. Posts must be created with the following format `YEAT-MONTH-DAY-title.md` in order to render correctly on the webpage. You can also include front matter to set the layout and provide additional information
 
 ```
-i    Enter insert mode
-Esc  Exit insert mode
-:wq  Save and exit
+---
+title: 'Blog Post number 1'
+date: 2012-08-14
+permalink: /posts/2012/08/blog-post-1/
+header:
+  teaser: /assets/images/about-icon.jpg
+published: true
+gallery:
+  - url: /assets/images/about-icon.jpg
+    image_path: /assets/images/about-icon.jpg
+    title: Before and after comparison
+tags:
+  - cool posts
+  - category1
+  - category2
+---
+
 ```
 
-Tip 2. See instructions on [how to write a good Git commit
-message](https://chris.beams.io/posts/git-commit/).
-
-Tip 3. If pushing fails, the most probable reason is that somebody
-else has made edits while you were editing. This situation is called a
-conflict. (To be written: [How to resolve conflicts?](https://www.simplilearn.com/tutorials/git-tutorial/merge-conflicts-in-git)) 
-
-### Making pull requests in the desktop application
-
-[GitHub Desktop](https://desktop.github.com/) offers the third way to work
-with the repository.
-
-To clone the repository, do the following:
-1. Click _Current repository_
-1. Click _Add_ and select _Clone repository..._
-1. Find `FiQI/dev` and click _Clone_
-
-Pull requests can be created as follows:
-1. Click _Pull origin_
-1. Click _Current branch_ then _New branch_
-1. Type the name of the new branch and click _Create branch_
-1. Edit the files locally and commit the changes
-1. Finally click _Publish branch_ and _Create Pull Request_
-1. You are directed to web gui, where you click _Create pull request_
-
-## Previewing the website using MkDocs
-
-This user guide uses [Jekyll](http://jekyllrb.com/) with the [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) theme to generate documentation
-pages. For help installing `jekyll` see [here](https://jekyllrb.com/docs/installation/).
-
-Building the website locally requires `ruby` and `jekyll`. Ruby is installed on most systems, however more details can be found [here](https://www.ruby-lang.org/en/documentation/installation/).
-
-You can start a preview web server from the command line while in the
-root of the project directory.
-
-Using the default configuration files: 
-
-1. Run `bundle clean` to clean up the directory
-2. `bundle install` installs the necessary packages such as `jekyll` etc.
-3. `bundle exec jekyll serve`
-
-If you get errors try deleting `Gemfile.lock`. 
-
-This will start a web server on your computer listening on port
-4000. Point your web server to [localhost:4000](http://localhost:4000)
-to get a preview of the documentation.
+In this example the front matter variables such as `gallery` can be displayed in the main body of the text via `{% include gallery%}`. A teaser image or thumbnail can also be attached which will display on the posts and publications page. See the `templates/` directory for example posts and publications. 
 
 
-### Using Docker
+For further information: 
+- https://jekyllrb.com/docs/posts/
+- https://jekyllrb.com/docs/front-matter/
+- https://www.markdownguide.org/cheat-sheet/
 
-Ruby and it's different versions and environments can cause problems. A simple solution is to use Docker and install ruby inside it's own container. A docker container can be started through `docker compose up -d ` using the given `docker-compose.yml` file given. 
+Template files can be found under `templates/`. 
+
