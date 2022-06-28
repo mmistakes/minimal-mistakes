@@ -1,8 +1,10 @@
+---
 layout: single
-title:  "20_Data_Analysis_3"
+title:  "19_Data_Analysis_2"
 categories : python
 tag : [review]
 search: true #false로 주면 검색해도 안나온다.
+---
 
 ```python
 import warnings
