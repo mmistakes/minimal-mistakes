@@ -41,7 +41,7 @@ gallery1:
     title: "Jóse Maria Córdova Airport - Rionegro, Colombia for MSFS"
   - url: /assets/images/SKRG/Block_12.jpg
     image_path: /assets/images/SKRG/Block_12.jpg
-    alt: "10"
+    alt: "11"
     title: "Jóse Maria Córdova Airport - Rionegro, Colombia for MSFS"
   - url: /assets/images/SKRG/Block_111.jpg
     image_path: /assets/images/SKRG/Block_111.jpg
