@@ -27,7 +27,7 @@ print(type(request.text))
 print(request.text)
 ```
 
-![1](../../images/18_Data_Analysis_4_따릉이/1.png){: width="100%" height="100%"}
+![1](../../images/2022-06-28-21_Data_Analysis_4_따릉이/1.png){: width="100%" height="100%"}
 
 서버에서 응답받은 문자열인 json 타입의 데이터를 파이썬에서 처리하기 위해 딕셔너리로 변환한다.
 
@@ -39,7 +39,7 @@ print(type(bike_json))
 print(bike_json)
 ```
 
-![2](../../images/18_Data_Analysis_4_따릉이/2.png){: width="100%" height="100%"}
+![2](../../images/2022-06-28-21_Data_Analysis_4_따릉이/2.png){: width="100%" height="100%"}
 
 
 ```python
@@ -50,7 +50,7 @@ print(type(bike_json))
 print(bike_json)
 ```
 
-![3](../../images/18_Data_Analysis_4_따릉이/3.png){: width="100%" height="100%"}
+![3](../../images/2022-06-28-21_Data_Analysis_4_따릉이/3.png){: width="100%" height="100%"}
 
 판다스의 json_normalize() 함수를 사용해서 딕셔너리 타입의 데이터를 판다스 데이터프레임으로 변환한다.
 
@@ -62,14 +62,14 @@ bike_df = json_normalize(bike_json, 'realtimeList')
 bike_df
 ```
 
-![4](../../images/18_Data_Analysis_4_따릉이/4-16564195975715.png){: width="100%" height="100%"}
+![4](../../images/2022-06-28-21_Data_Analysis_4_따릉이/4.png){: width="100%" height="100%"}
 
 
 ```python
 bike_df.columns
 ```
 
-![5](../../images/18_Data_Analysis_4_따릉이/5.png){: width="100%" height="100%"}
+![5](../../images/2022-06-28-21_Data_Analysis_4_따릉이/5.png){: width="100%" height="100%"}
 
 필요한 컬럼 몇 가지를 선택해서 지도에 마커를 표시할 때 사용할 데이터가 저장된 데이터프레임을 만든다.
 
@@ -88,14 +88,14 @@ bike_df_map = bike_df[['stationName', 'stationLongitude', 'stationLatitude', 'ra
 bike_df_map
 ```
 
-![6](../../images/18_Data_Analysis_4_따릉이/6.png){: width="100%" height="100%"}
+![6](../../images/2022-06-28-21_Data_Analysis_4_따릉이/6.png){: width="100%" height="100%"}
 
 
 ```python
 bike_df_map.dtypes
 ```
 
-![7](../../images/18_Data_Analysis_4_따릉이/7.png){: width="100%" height="100%"}
+![7](../../images/2022-06-28-21_Data_Analysis_4_따릉이/7.png){: width="100%" height="100%"}
 
 
 ```python
@@ -113,21 +113,21 @@ bike_df_map['total'] = bike_df_map['parkingBikeTotCnt'] + bike_df_map['parkingQR
 bike_df_map.dtypes
 ```
 
-![8](../../images/18_Data_Analysis_4_따릉이/8.png){: width="100%" height="100%"}
+![8](../../images/2022-06-28-21_Data_Analysis_4_따릉이/8.png){: width="100%" height="100%"}
 
 
 ```python
 bike_df_map.head()
 ```
 
-![9](../../images/18_Data_Analysis_4_따릉이/9.png){: width="100%" height="100%"}
+![9](../../images/2022-06-28-21_Data_Analysis_4_따릉이/9.png){: width="100%" height="100%"}
 
 
 ```python
 bike_df_map.tail()
 ```
 
-![10](../../images/18_Data_Analysis_4_따릉이/10.png){: width="100%" height="100%"}
+![10](../../images/2022-06-28-21_Data_Analysis_4_따릉이/10.png){: width="100%" height="100%"}
 
 
 ```python
@@ -141,7 +141,7 @@ bike_df_map = bike_df_map[(bike_df_map['stationLongitude'] > 125) & (bike_df_map
 bike_df_map
 ```
 
-![11](../../images/18_Data_Analysis_4_따릉이/11.png){: width="100%" height="100%"}
+![11](../../images/2022-06-28-21_Data_Analysis_4_따릉이/11.png){: width="100%" height="100%"}
 
 시각화
 
@@ -161,7 +161,7 @@ bike_map.save('./output/bike.html')
 bike_map
 ```
 
-![12](../../images/18_Data_Analysis_4_따릉이/12.png){: width="100%" height="100%"}
+![12](../../images/2022-06-28-21_Data_Analysis_4_따릉이/12.png){: width="100%" height="100%"}
 
 
 ```python
@@ -176,4 +176,4 @@ bike_map.save('./output/bike.html')
 bike_map
 ```
 
-![13](../../images/18_Data_Analysis_4_따릉이/13.png){: width="100%" height="100%"}
+![13](../../images/2022-06-28-21_Data_Analysis_4_따릉이/13.png){: width="100%" height="100%"}
