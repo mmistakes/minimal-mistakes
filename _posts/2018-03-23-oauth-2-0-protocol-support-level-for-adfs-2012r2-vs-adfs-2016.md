@@ -1,6 +1,6 @@
 ---
 title: OAUTH 2.0 protocol support level for ADFS 2012R2 vs ADFS 2016
-tags: [Active Directory Federation Server, ADFS, Mobile Development, Modern Authentication, OAUTH, Windows 2012R2, Windows 2016]
+tags: [Active Directory Federation Server, ADFS, Mobile Development, Modern Authentication, OAUTH2, Windows 2012R2, Windows 2016]
 ---
 Active Directory Federation Services (ADFS) is a software component developed by Microsoft that can be installed on Windows Server operating systems to provide users with single sign-on access to systems and applications located across organizational boundaries. It uses a claims-based access control authorization model to maintain application security and implement federated identity.
 

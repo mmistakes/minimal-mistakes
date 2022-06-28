@@ -1,7 +1,7 @@
 ---
 title: Azure AD OAuth client credential flow with custom certificate walk-through
 date: 2022-06-01 10:00
-tags: [Azure, Azure Active Directory, OAuth, Postman, certificate, security]
+tags: [Azure, Azure Active Directory, OAUTH2, Postman, certificate, security]
 excerpt: "In this walk-through I show how to use a certificate to request an access token to Azure Active Directory, using the OAuth 2.0 client credential flow"
 
 header:

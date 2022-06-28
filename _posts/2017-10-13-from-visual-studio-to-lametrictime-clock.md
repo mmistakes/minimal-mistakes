@@ -1,6 +1,6 @@
 ---
 title: #CasualFriday - From Visual Studio Online to Lametric time® smart clock
-tags: [AngularJS, App Service, Azure, c#, Casualfriday, Dot Net Core, Geek, lametric, lametrictime, OAUTH, visual studio online, VSO]
+tags: [AngularJS, App Service, Azure, c#, Casualfriday, Dot Net Core, Geek, lametric, lametrictime, OAUTH2, visual studio online, VSO]
 ---
 
 The number of new smart devices to play with grows day after day. The baseline to work with them is essentially always the same set of technologies: federated authentication, OAuth2, REST, AngularJS, Typescript, cloud services... and to operate with a Lametric time (<a href="http://www.lametric.com">www.lametric.com</a>) makes no difference. To build a system that delivers relevant information from a cloud-based Microsoft service like Visual Studio Online (VSO) to Lametric, allows you to have a reference architecture to use as starting point to implement more creative plug-ins for both Lametric and tons of other smart devices available nowadays. In this post, I describe how I have designed and implemented <a href="https://lametric-visualstudio.azurewebsites.net/">https://lametric-visualstudio.azurewebsites.net/</a> an Azure-based sample service that allows to show on your Lametric, check-in information from a TFS project hosted on VSO.
