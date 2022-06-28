@@ -1,10 +1,8 @@
----
 layout: single
 title:  "19_Data_Analysis_3"
 categories : python
 tag : [review]
 search: true #false로 주면 검색해도 안나온다.
----
 
 ```python
 import warnings
@@ -31,18 +29,12 @@ park.shape
 ```
 
 
-
-
     (18137, 20)
-
-
 
 
 ```python
 park.head()
 ```
-
-
 
 
 <div>
@@ -54,7 +46,7 @@ park.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -206,8 +198,6 @@ park.head()
 </div>
 
 
-
-
 ```python
 park.info()
 ```
@@ -239,14 +229,10 @@ park.info()
      19  Unnamed: 19   0 non-null      float64
     dtypes: float64(4), object(16)
     memory usage: 2.8+ MB
-    
-
 
 ```python
 park.isnull().sum()
 ```
-
-
 
 
     관리번호                0
@@ -272,31 +258,15 @@ park.isnull().sum()
     dtype: int64
 
 
-
-
 ```python
 msno.matrix(park, figsize=[20, 8])
 ```
 
 
-
-
     <AxesSubplot:>
 
 
-
-
-    
-![png](output_6_1.png)
-    
-
-
-
-```python
-park.columns
-```
-
-
+![output_6_1](../../images/2022-06-28-20_Data_Analysis_3/output_6_1.png){: width="100%" height="100%"}
 
 
     Index(['관리번호', '공원명', '공원구분', '소재지도로명주소', '소재지지번주소', '위도', '경도', '공원면적',
@@ -304,8 +274,6 @@ park.columns
            '공원보유시설(기타시설)', '지정고시일', '관리기관명', '전화번호', '데이터기준일자', '제공기관코드', '제공기관명',
            'Unnamed: 19'],
           dtype='object')
-
-
 
 
 ```python
@@ -318,8 +286,6 @@ park
 ```
 
 
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -329,7 +295,7 @@ park
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -524,23 +490,15 @@ park
 </div>
 
 
-
-
 ```python
 msno.matrix(park, figsize=[14, 8])
 ```
 
 
-
-
     <AxesSubplot:>
 
 
-
-
-    
-![png](output_9_1.png)
-    
+![output_9_1](../../images/2022-06-28-20_Data_Analysis_3/output_9_1.png){: width="100%" height="100%"}
 
 
 전국 공원 분포 시각화
@@ -553,17 +511,9 @@ ggplot(park, aes(x='경도', y='위도')) \
 ```
 
 
-    
-![png](output_11_0.png)
-    
-
-
-
-
+![output_11_0](../../images/2022-06-28-20_Data_Analysis_3/output_11_0.png){: width="100%" height="100%"}
 
     <ggplot: (-9223371847520436883)>
-
-
 
 
 ```python
@@ -571,16 +521,9 @@ park.plot.scatter(x='경도', y='위도', grid=True, figsize=[7, 10], s=5)
 ```
 
 
-
-
     <AxesSubplot:xlabel='경도', ylabel='위도'>
 
-
-
-
-    
-![png](output_12_1.png)
-    
+![output_12_1](../../images/2022-06-28-20_Data_Analysis_3/output_12_1.png){: width="100%" height="100%"}
 
 
 데이터 전처리
@@ -589,8 +532,6 @@ park.plot.scatter(x='경도', y='위도', grid=True, figsize=[7, 10], s=5)
 ```python
 park.dtypes
 ```
-
-
 
 
     관리번호         object
@@ -608,13 +549,9 @@ park.dtypes
     dtype: object
 
 
-
-
 ```python
 park['공원면적'].head()
 ```
-
-
 
 
     0     9137.0
@@ -625,15 +562,11 @@ park['공원면적'].head()
     Name: 공원면적, dtype: float64
 
 
-
-
 ```python
 # park['공원면적'] 열의 데이터가 처음부터 차례대로 lambda 뒤의 변수 x에 저장되면서 ':'뒤의 수식을 실행한다.
 park['공원면적비율'] = park['공원면적'].apply(lambda x: np.sqrt(x) * 0.01)
 park.head()
 ```
-
-
 
 
 <div>
@@ -645,7 +578,7 @@ park.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -755,8 +688,6 @@ park.head()
 </div>
 
 
-
-
 ```python
 # 도로명주소가 NaN인 데이터의 개수 => 지번주소만 입력된 데이터의 개수
 # 도로명주소만 입력되고 지번주소가 입력되지 않은 데이터는 도로명주소 제도가 시행되고 난 후 조성된 공원이다.
@@ -764,11 +695,7 @@ park['소재지도로명주소'].isnull().sum()
 ```
 
 
-
-
     10098
-
-
 
 
 ```python
@@ -776,8 +703,6 @@ park['소재지도로명주소'].isnull().sum()
 # 판다스는 논리 연산자로 &(and)와 |(or)를 사용하고 논리 연산자 양쪽의 조건을 ()로 묶어준다.
 park[(park['소재지도로명주소'].isnull()) & (park['소재지지번주소'].notnull())]
 ```
-
-
 
 
 <div>
@@ -789,7 +714,7 @@ park[(park['소재지도로명주소'].isnull()) & (park['소재지지번주소'
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -996,27 +921,19 @@ park[(park['소재지도로명주소'].isnull()) & (park['소재지지번주소'
 </div>
 
 
-
-
 ```python
 # 지번주소가 NaN인 데이터의 개수 => 도로명주소만 입력된 데이터의 개수
 park['소재지지번주소'].isnull().sum()
 ```
 
 
-
-
     979
-
-
 
 
 ```python
 # 도로명주소는 입력되고 지번주소가 입력되지 않은 데이터
 park[(park['소재지도로명주소'].notnull()) & (park['소재지지번주소'].isnull())]
 ```
-
-
 
 
 <div>
@@ -1028,7 +945,7 @@ park[(park['소재지도로명주소'].notnull()) & (park['소재지지번주소
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1235,14 +1152,10 @@ park[(park['소재지도로명주소'].notnull()) & (park['소재지지번주소
 </div>
 
 
-
-
 ```python
 # 도로명주소와 지번주소가 모두 입력된 데이터
 park[(park['소재지도로명주소'].notnull()) & (park['소재지지번주소'].notnull())]
 ```
-
-
 
 
 <div>
@@ -1254,7 +1167,7 @@ park[(park['소재지도로명주소'].notnull()) & (park['소재지지번주소
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1461,14 +1374,10 @@ park[(park['소재지도로명주소'].notnull()) & (park['소재지지번주소
 </div>
 
 
-
-
 ```python
 # 도로명주소와 지번주소가 모두 입력되지 않은 데이터
 park[(park['소재지도로명주소'].isnull()) & (park['소재지지번주소'].isnull())]
 ```
-
-
 
 
 <div>
@@ -1480,7 +1389,7 @@ park[(park['소재지도로명주소'].isnull()) & (park['소재지지번주소'
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1510,15 +1419,11 @@ park[(park['소재지도로명주소'].isnull()) & (park['소재지지번주소'
 </div>
 
 
-
-
 ```python
 # 도로명주소가 NaN인 데이터를 지번주소로 채운다.
 park['소재지도로명주소'].fillna(park['소재지지번주소'], inplace=True)
 park
 ```
-
-
 
 
 <div>
@@ -1530,7 +1435,7 @@ park
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1737,26 +1642,18 @@ park
 </div>
 
 
-
-
 ```python
 park['소재지도로명주소'].isnull().sum()
 ```
 
 
-
-
     0
-
-
 
 
 ```python
 # split() 함수 실행시 expand=True 옵션을 지정하면 데이터프레임으로 분리되서 인덱싱과 슬라이싱을 할 수 있다.
 park['소재지도로명주소'].str.split(' ', expand=True)
 ```
-
-
 
 
 <div>
@@ -1768,7 +1665,7 @@ park['소재지도로명주소'].str.split(' ', expand=True)
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1927,15 +1824,11 @@ park['소재지도로명주소'].str.split(' ', expand=True)
 </div>
 
 
-
-
 ```python
 # 도로명주소에서 '시도'만 추출해서 '시도'라는 열을 만들어 park 데이터프레임에 추가한다.
 park['시도'] = park['소재지도로명주소'].str.split(' ', expand=True)[0]
 park.head()
 ```
-
-
 
 
 <div>
@@ -1947,7 +1840,7 @@ park.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2063,15 +1956,11 @@ park.head()
 </div>
 
 
-
-
 ```python
 # 도로명주소에서 '구군'만 추출해서 '구군'이라는 열을 만들어 park 데이터프레임에 추가한다.
 park['구군'] = park['소재지도로명주소'].str.split(' ', expand=True)[1]
 park.head()
 ```
-
-
 
 
 <div>
@@ -2083,7 +1972,7 @@ park.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2205,15 +2094,11 @@ park.head()
 </div>
 
 
-
-
 ```python
 # 도로명주소에서 '읍면동'만 추출해서 '읍면동'이라는 열을 만들어 park 데이터프레임에 추가한다.
 park['읍면동'] = park['소재지도로명주소'].str.split(' ', expand=True)[2]
 park.head()
 ```
-
-
 
 
 <div>
@@ -2225,7 +2110,7 @@ park.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2353,13 +2238,9 @@ park.head()
 </div>
 
 
-
-
 ```python
 park[['위도', '경도']].describe()
 ```
-
-
 
 
 <div>
@@ -2371,7 +2252,7 @@ park[['위도', '경도']].describe()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2430,15 +2311,11 @@ park[['위도', '경도']].describe()
 </div>
 
 
-
-
 ```python
 # 위도와 경도가 잘못 입력된 데이터를 추출한다.
 park_error = park[(park['위도'] < 32) | (park['경도'] > 132)]
 park_error
 ```
-
-
 
 
 <div>
@@ -2450,7 +2327,7 @@ park_error
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2521,8 +2398,6 @@ park_error
 </div>
 
 
-
-
 ```python
 # 올바른 데이터
 park_ok = park[(park['위도'] >= 32) & (park['경도'] <= 132)]
@@ -2530,18 +2405,12 @@ park_ok.shape
 ```
 
 
-
-
     (18135, 16)
-
-
 
 
 ```python
 park_ok.head()
 ```
-
-
 
 
 <div>
@@ -2553,7 +2422,7 @@ park_ok.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2681,13 +2550,9 @@ park_ok.head()
 </div>
 
 
-
-
 ```python
 park_ok['시도'].value_counts()
 ```
-
-
 
 
     경기도        3318
@@ -2711,8 +2576,6 @@ park_ok['시도'].value_counts()
     Name: 시도, dtype: int64
 
 
-
-
 ```python
 # '시도'가 '강원'인 데이터를 '강원도'로 수정한다.
 park_ok['시도'][park_ok['시도'] == '강원'] = '강원도'
@@ -2722,8 +2585,6 @@ park_ok['시도'][park_ok['시도'] == '강원'] = '강원도'
 ```python
 park_ok['시도'].value_counts()
 ```
-
-
 
 
     경기도        3318
@@ -2745,8 +2606,6 @@ park_ok['시도'].value_counts()
     세종특별자치시      70
     Name: 시도, dtype: int64
 
-
-
 시도별 공원 데이터 시각화
 
 
@@ -2757,17 +2616,9 @@ ggplot(park_ok, aes(x='경도', y='위도', color='시도')) \
 ```
 
 
-    
-![png](output_37_0.png)
-    
-
-
-
-
+![output_37_0](../../images/2022-06-28-20_Data_Analysis_3/output_37_0.png){: width="100%" height="100%"}
 
     <ggplot: (189338420726)>
-
-
 
 
 ```python
@@ -2776,16 +2627,9 @@ sns.scatterplot(data=park_ok, x='경도', y='위도', hue='시도', s=10)
 ```
 
 
-
-
     <AxesSubplot:xlabel='경도', ylabel='위도'>
 
-
-
-
-    
-![png](output_38_1.png)
-    
+![output_38_1](../../images/2022-06-28-20_Data_Analysis_3/output_38_1.png){: width="100%" height="100%"}
 
 
 공원 구분별 분포
@@ -2798,17 +2642,9 @@ ggplot(park_ok, aes(x='경도', y='위도', color='공원구분', size='공원�
 ```
 
 
-    
-![png](output_40_0.png)
-    
-
-
-
-
+ ![output_40_0](../../images/2022-06-28-20_Data_Analysis_3/output_40_0.png){: width="100%" height="100%"}
 
     <ggplot: (189342326255)>
-
-
 
 
 ```python
@@ -2817,24 +2653,13 @@ sns.scatterplot(data=park_ok, x='경도', y='위도', hue='공원구분', size='
 ```
 
 
-
-
     <AxesSubplot:xlabel='경도', ylabel='위도'>
 
-
-
-
-    
-![png](output_41_1.png)
-    
-
-
+![output_41_1](../../images/2022-06-28-20_Data_Analysis_3/output_41_1.png){: width="100%" height="100%"}
 
 ```python
 park_ok['공원구분'].value_counts()
 ```
-
-
 
 
     어린이공원     9987
@@ -2849,8 +2674,6 @@ park_ok['공원구분'].value_counts()
     도시농업공원      13
     Name: 공원구분, dtype: int64
 
-
-
 어린이 공원을 제외한 공원 분포
 
 
@@ -2861,17 +2684,9 @@ ggplot(park_ok[park_ok['공원구분'] != '어린이공원'], aes(x='경도', y=
 ```
 
 
-    
-![png](output_44_0.png)
-    
-
-
-
-
+![output_44_0](../../images/2022-06-28-20_Data_Analysis_3/output_44_0.png){: width="100%" height="100%"}
 
     <ggplot: (-9223371847511614292)>
-
-
 
 
 ```python
@@ -2881,16 +2696,9 @@ sns.scatterplot(data=park_ok[park_ok['공원구분'] != '어린이공원'], x='�
 ```
 
 
-
-
     <AxesSubplot:xlabel='경도', ylabel='위도'>
 
-
-
-
-    
-![png](output_45_1.png)
-    
+![output_45_1](../../images/2022-06-28-20_Data_Analysis_3/output_45_1.png){: width="100%" height="100%"}
 
 
 시도별 공원 비율
@@ -2906,8 +2714,6 @@ park_do
 ```
 
 
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2917,7 +2723,7 @@ park_do
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -3019,8 +2825,6 @@ park_do
   </tbody>
 </table>
 </div>
-
-
 
 
 ```python
@@ -3032,8 +2836,6 @@ park_normalize
 ```
 
 
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -3043,7 +2845,7 @@ park_normalize
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -3147,16 +2949,12 @@ park_normalize
 </div>
 
 
-
-
 ```python
 # 시도별 개수와 개수의 비율 데이터를 병합한다.
 # park_sido = park_do.merge(park_normalize, left_index=True, right_index=True) # 시도_x, 시도_y 열이 나타난다. 
 park_sido = park_do.merge(park_normalize, left_on='시도', right_on='시도')
 park_sido
 ```
-
-
 
 
 <div>
@@ -3168,7 +2966,7 @@ park_sido
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -3290,8 +3088,6 @@ park_sido
 </div>
 
 
-
-
 ```python
 ggplot(park_sido, aes(x='시도', y='개수')) \
     + geom_bar(stat='identity', fill='green') \
@@ -3299,17 +3095,9 @@ ggplot(park_sido, aes(x='시도', y='개수')) \
 ```
 
 
-    
-![png](output_50_0.png)
-    
-
-
-
-
+ ![output_50_0](../../images/2022-06-28-20_Data_Analysis_3/output_50_0.png){: width="100%" height="100%"}
 
     <ggplot: (189345861864)>
-
-
 
 
 ```python
@@ -3319,17 +3107,9 @@ ggplot(park_sido, aes(x='시도', y='개수')) \
 ```
 
 
-    
-![png](output_51_0.png)
-    
-
-
-
-
+![output_51_0](../../images/2022-06-28-20_Data_Analysis_3/output_51_0.png){: width="100%" height="100%"}
 
     <ggplot: (189336376584)>
-
-
 
 
 ```python
@@ -3340,17 +3120,9 @@ ggplot(park_sido, aes(x='시도', y='개수')) \
 ```
 
 
-    
-![png](output_52_0.png)
-    
-
-
-
-
+  ![output_52_0](../../images/2022-06-28-20_Data_Analysis_3/output_52_0.png){: width="100%" height="100%"}
 
     <ggplot: (189340465128)>
-
-
 
 
 ```python
@@ -3359,18 +3131,9 @@ sns.barplot(data=park_sido, x='시도', y='개수')
 ```
 
 
-
-
     <AxesSubplot:xlabel='시도', ylabel='개수'>
 
-
-
-
-    
-![png](output_53_1.png)
-    
-
-
+![output_53_1](../../images/2022-06-28-20_Data_Analysis_3/output_53_1.png){: width="100%" height="100%"}
 
 ```python
 plt.figure(figsize=[12, 8])
@@ -3379,18 +3142,9 @@ sns.barplot(data=park_sido, x='시도', y='개수')
 ```
 
 
-
-
     <AxesSubplot:xlabel='시도', ylabel='개수'>
 
-
-
-
-    
-![png](output_54_1.png)
-    
-
-
+![output_54_1](../../images/2022-06-28-20_Data_Analysis_3/output_54_1.png){: width="100%" height="100%"}
 
 ```python
 plt.figure(figsize=[12, 8])
@@ -3398,18 +3152,9 @@ sns.barplot(data=park_sido, x='개수', y='시도')
 ```
 
 
-
-
     <AxesSubplot:xlabel='개수', ylabel='시도'>
 
-
-
-
-    
-![png](output_55_1.png)
-    
-
-
+![output_55_1](../../images/2022-06-28-20_Data_Analysis_3/output_55_1.png){: width="100%" height="100%"}
 
 ```python
 # https://plotnine.readthedocs.io/en/stable/tutorials/miscellaneous-order-plot-series.html
@@ -3428,17 +3173,9 @@ from plotnine.data import mpg
 ```
 
 
-    
-![png](output_57_0.png)
-    
-
-
-
-
+![output_57_0](../../images/2022-06-28-20_Data_Analysis_3/output_57_0.png){: width="100%" height="100%"}
 
     <ggplot: (-9223371847514367123)>
-
-
 
 
 ```python
@@ -3459,17 +3196,9 @@ mpg = mpg.assign(manufacturer_cat = manufacturer_cat)
 ```
 
 
-    
-![png](output_58_0.png)
-    
-
-
-
-
+![output_58_0](../../images/2022-06-28-20_Data_Analysis_3/output_58_0.png){: width="100%" height="100%"}
 
     <ggplot: (189340426076)>
-
-
 
 
 ```python
@@ -3486,34 +3215,6 @@ park_ok = park_ok.assign(park_cat = park_cat)
 ```
 
 
-    
-![png](output_59_0.png)
-    
-
-
-
-
+![output_59_0](../../images/2022-06-28-20_Data_Analysis_3/output_59_0.png){: width="100%" height="100%"}
 
     <ggplot: (-9223371847511513305)>
-
-
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
