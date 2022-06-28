@@ -1,8 +1,8 @@
 ---
-title: Azure AD OAuth client credential flow with custom certificate walktrough
+title: Azure AD OAuth client credential flow with custom certificate walk-through
 date: 2022-06-01 10:00
 tags: [Azure, Azure Active Directory, OAuth, Postman, certificate, security]
-excerpt: "In this walktrough I show how to use a certificate to request an access token to Azure Active Directory, using the OAuth 2.0 client credential flow"
+excerpt: "In this walk-through I show how to use a certificate to request an access token to Azure Active Directory, using the OAuth 2.0 client credential flow"
 
 header:
   overlay_image: https://live.staticflickr.com/65535/52074972176_d36ce1a7cc_h.jpg
@@ -13,7 +13,7 @@ You can use the OAuth 2.0 client credentials grant specified in RFC 6749, to acc
 
 The OAuth 2.0 client credentials grant flow permits a web service (confidential client) to use its own credentials, instead of impersonating a user, to authenticate when calling another web service. For a higher level of assurance, the Microsoft Identity Platform also allows the calling service to authenticate using a certificate or federated credential instead of a shared secret.
 
-In this walktrough I show how to **use a certificate to request an access token to Azure Active Directory**, using the OAuth 2.0 client credential flow. As client I use a custom c# DotNet 6 application and MSAL Library. 
+In this walk-through I show how to **use a certificate to request an access token to Azure Active Directory**, using the OAuth 2.0 client credential flow. As client I use a custom c# DotNet 6 application and MSAL Library. 
 
 > Alternatively, it is possible to use any other library able [to compute an assertion](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials#assertion-format), and [post it](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#second-case-access-token-request-with-a-certificate) to Azure Active Directory.
 
