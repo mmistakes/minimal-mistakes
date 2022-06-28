@@ -1,5 +1,6 @@
 ---
 layout: none
+search: false
 ---
 
 var idx = lunr(function () {
