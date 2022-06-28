@@ -22,7 +22,7 @@ gallery1:
     title: "Tocumen Intl Airport - Panama, Panama for MSFS"
   - url: /assets/images/MPTO/Block_07.jpg
     image_path: /assets/images/MPTO/Block_07.jpg
-    alt: "placeholder image 7"
+    alt: "placeholder image 77"
     title: "Tocumen Intl Airport - Panama, Panama for MSFS"
   - url: /assets/images/MPTO/Block_08.jpg
     image_path: /assets/images/MPTO/Block_08.jpg
