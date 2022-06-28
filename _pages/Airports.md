@@ -49,7 +49,7 @@ toc: true
 ## [MPTO - Tocumen Intl Airport - Panama, Panama](https://vpilotdesigns.github.io/MPTO/)
 <p><a href="https://vpilotdesigns.github.io/MPTO/"><strong>Galeria/Gallery</strong></a><br>
   <br></p>
-{% include figure image_path="/assets/images/MPTO/mpto_block_06.jpg" alt="mpto" caption="Tocumen Intl Airport - Panama, Panama for MSFS" %}  
+{% include figure image_path="/assets/images/MPTO/Block_03.jpg" alt="mpto" caption="Tocumen Intl Airport - Panama, Panama for MSFS" %}  
 
 ## [MPBO - Bocas del Toro Airport - Bocas del Toro, Panama](https://vpilotdesigns.github.io/MPBO/)
 <p><a href="https://vpilotdesigns.github.io/MPBO/"><strong>Galeria/Gallery</strong></a><br>
