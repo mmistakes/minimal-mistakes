@@ -1,6 +1,6 @@
 ---
 layout: single
-title : "[js] 더글라스 크락포드 자바스크립트 개념 정리"
+title : "[js] 더글라스 크락포드 자바스크립트 개념 정리(CORE)"
 categories: javascript
 tag: [web, javascript]
 toc : true
