@@ -32,38 +32,6 @@ gallery1:
     image_path: /assets/images/SKAR/Block_07.jpg
     alt: "placeholder image 7"
     title: "El Eden Intl Airport, Armenia, Colombia"
-  - url: /assets/images/SKAR/Block_08.jpg
-    image_path: /assets/images/SKAR/Block_08.jpg
-    alt: "placeholder image 7"
-    title: "El Eden Intl Airport, Armenia, Colombia"
-  - url: /assets/images/SKAR/Block_09.jpg
-    image_path: /assets/images/SKAR/Block_09.jpg
-    alt: "placeholder image 7"
-    title: "El Eden Intl Airport, Armenia, Colombia"
-  - url: /assets/images/SKAR/Block_10.jpg
-    image_path: /assets/images/SKAR/Block_10.jpg
-    alt: "placeholder image 7"
-    title: "El Eden Intl Airport, Armenia, Colombia"
-  - url: /assets/images/SKAR/Block_11.jpg
-    image_path: /assets/images/SKAR/Block_11.jpg
-    alt: "placeholder image 7"
-    title: "El Eden Intl Airport, Armenia, Colombia"
-  - url: /assets/images/SKAR/Block_12.jpg
-    image_path: /assets/images/SKAR/Block_12.jpg
-    alt: "placeholder image 7"
-    title: "El Eden Intl Airport, Armenia, Colombia"
-  - url: /assets/images/SKAR/Block_13.jpg
-    image_path: /assets/images/SKAR/Block_13.jpg
-    alt: "placeholder image 7"
-    title: "El Eden Intl Airport, Armenia, Colombia"
-  - url: /assets/images/SKAR/Block_14.jpg
-    image_path: /assets/images/SKAR/Block_14.jpg
-    alt: "placeholder image 7"
-    title: "El Eden Intl Airport, Armenia, Colombia"
-  - url: /assets/images/SKAR/Block_15.jpg
-    image_path: /assets/images/SKAR/Block_15.jpg
-    alt: "placeholder image 7"
-    title: "El Eden Intl Airport, Armenia, Colombia"
     
     
 ---
