@@ -30,9 +30,9 @@ search: true
 
 > 프로젝트 결과물
 > 
-![img1](../../../images/_posts/css/chromeProject.png)
-![img2](../../../images/_posts/css/chromeProject2.png)
-![img3](../../../images/_posts/css/chromeProject3.png)
+![img1](../../../images/posts/css/chromeProject.png)
+![img2](../../../images/posts/css/chromeProject2.png)
+![img3](../../../images/posts/css/chromeProject3.png)
 
 #### 와이어 프레임(레이아웃)
 
