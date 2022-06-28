@@ -4,44 +4,44 @@ title: "MPTO - Tocumen Intl"
 layout: single
 classes: wide
 gallery1:  
-  - url: /assets/images/MPTO/mpto_block_03.jpg
-    image_path: /assets/images/MPTO/mpto_block_03.jpg
+  - url: /assets/images/MPTO/Block_03.jpg
+    image_path: /assets/images/MPTO/Block_03.jpg
     alt: "placeholder image 2"
     title: "Tocumen Intl Airport - Panama, Panama for MSFS"
-  - url: /assets/images/MPTO/mpto_block_04.jpg
-    image_path: /assets/images/MPTO/mpto_block_04.jpg
+  - url: /assets/images/MPTO/Block_04.jpg
+    image_path: /assets/images/MPTO/Block_04.jpg
     alt: "placeholder image 5"
     title: "Tocumen Intl Airport - Panama, Panama for MSFS"
-  - url: /assets/images/MPTO/mpto_block_05.jpg
-    image_path: /assets/images/MPTO/mpto_block_05.jpg
+  - url: /assets/images/MPTO/Block_05.jpg
+    image_path: /assets/images/MPTO/Block_05.jpg
     alt: "placeholder image 6"
     title: "Tocumen Intl Airport - Panama, Panama for MSFS"
-  - url: /assets/images/MPTO/mpto_block_06.jpg
-    image_path: /assets/images/MPTO/mpto_block_06.jpg
+  - url: /assets/images/MPTO/Block_06.jpg
+    image_path: /assets/images/MPTO/Block_06.jpg
     alt: "placeholder image 7"
     title: "Tocumen Intl Airport - Panama, Panama for MSFS"
-  - url: /assets/images/MPTO/mpto_block_07.jpg
-    image_path: /assets/images/MPTO/mpto_block_07.jpg
+  - url: /assets/images/MPTO/Block_07.jpg
+    image_path: /assets/images/MPTO/Block_07.jpg
     alt: "placeholder image 7"
     title: "Tocumen Intl Airport - Panama, Panama for MSFS"
-  - url: /assets/images/MPTO/mpto_block_08.jpg
-    image_path: /assets/images/MPTO/mpto_block_08.jpg
+  - url: /assets/images/MPTO/Block_08.jpg
+    image_path: /assets/images/MPTO/Block_08.jpg
     alt: "placeholder image 7"
     title: "Tocumen Intl Airport - Panama, Panama for MSFS"
-  - url: /assets/images/MPTO/mpto_block_09.jpg
-    image_path: /assets/images/MPTO/mpto_block_09.jpg
+  - url: /assets/images/MPTO/Block_09.jpg
+    image_path: /assets/images/MPTO/Block_09.jpg
     alt: "placeholder image 7"
     title: "Tocumen Intl Airport - Panama, Panama for MSFS"
-  - url: /assets/images/MPTO/mpto_block_10.jpg
-    image_path: /assets/images/MPTO/mpto_block_10.jpg
+  - url: /assets/images/MPTO/Block_10.jpg
+    image_path: /assets/images/MPTO/Block_10.jpg
     alt: "placeholder image 7"
     title: "Tocumen Intl Airport - Panama, Panama for MSFS"
-  - url: /assets/images/MPTO/mpto_block_11.jpg
-    image_path: /assets/images/MPTO/mpto_block_11.jpg
+  - url: /assets/images/MPTO/Block_11.jpg
+    image_path: /assets/images/MPTO/Block_01.jpg
     alt: "placeholder image 7"
     title: "Tocumen Intl Airport - Panama, Panama for MSFS"
-  - url: /assets/images/MPTO/mpto_block_12.jpg
-    image_path: /assets/images/MPTO/mpto_block_12.jpg
+  - url: /assets/images/MPTO/Block_12.jpg
+    image_path: /assets/images/MPTO/Block_02.jpg
     alt: "10"
     title: "Tocumen Intl Airport - Panama, Panama for MSFS"
     
