@@ -15,7 +15,7 @@ intro:
    
 ---
 
-{% include feature_row id="intro" type="center" %}
+<!-- {% include feature_row id="intro" type="center" %} -->
 
 Watch this space for the latest news and posts of interest!
 
