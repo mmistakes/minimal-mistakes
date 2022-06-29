@@ -14,6 +14,10 @@
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
+# 포스팅 안됨 해결시도
+future: true
+published: true
+
 # Site Settings
 locale                   : "ko-KR"
 title                    : "허태의 블로그는 너무 핫해"
