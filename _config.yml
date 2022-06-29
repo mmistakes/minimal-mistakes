@@ -75,7 +75,7 @@ google:
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-naver_site_verification  :
+naver_site_verification  : "72d4e4a4a375d1d54c3f1d45181aacab0fe95297"
 yandex_site_verification :
 baidu_site_verification  :
 
@@ -208,7 +208,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: Asia-Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
