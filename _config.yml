@@ -22,8 +22,8 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "Dior.Bizbae"
 description              : "Do you love Highend?"
 url                      :  "https://bizbaeja.github.io"
-baseurl                  :  the subpath of your site, e.g. "/bizbaeja.github.io/"
-repository               :  GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+baseurl                  :  # "/bizbaeja.github.io/"
+repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/Dior.jpeg" # path of fallback teaser image, e.g. 
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
