@@ -18,14 +18,14 @@ minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast",  "dirt
 locale                   : "en-US"
 title                    : "dev_Dior's_tilog"
 title_separator          : "-"
-#subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Dior.Bizbae"
 description              : "Do you love Highend?"
 url                      :  "https://bizbaeja.github.io"
-baseurl                  :   "/bizbaeja.github.io/"
-repository               :   "/bizbaeja?tab=repositories"
-teaser                   :  path of fallback teaser image, e.g. "/Users/aeong/Documents/GitHub/bizbaeja.github.io/docs/assets/images/Dior.jpeg"
-logo                     : "/Users/aeong/Documents/GitHub/bizbaeja.github.io/test/assets/images/KakaoTalk_Photo_2022-06-29-20-36-11 006.jpeg"
+baseurl                  :  the subpath of your site, e.g. "/bizbaeja.github.io/"
+repository               :  GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : "/assets/images/Dior.jpeg" # path of fallback teaser image, e.g. 
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -45,13 +45,13 @@ comments:
     issue_term           : # "pathname" (default)
   giscus:
     repo_id              : # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
+    category_name        : Full text name of the category
     category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
+    discussion_term      :  "pathname" (default), "url", "title", "og:title"
     reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : "dark" # "light" (default), , "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+    theme                : "dark"  # "light" (default), , "dark_dimmed", "transparent_dark", "preferred_color_scheme"
   staticman:
-    branch               : # "master"
+    branch               :  "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 reCaptcha:
   siteKey                :
@@ -59,11 +59,11 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : true # , false (default)
-search_full_content      : true # , false (default)
+search                   : # true, false (default)
+search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
-  search_within_pages    : true # , false (default)
+  search_within_pages    : # true, false (default)
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Dior.Bizbae"
+  name             : "Dior.Bae"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "하이엔드 개발자를 꿈꾸는 프론트엔드 아기개발자입니다."
-  #location         : "서울특별시"
-  #email            : 
+  bio              : #"I am an **amazing** person."
+  location         : #"Somewhere"
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
