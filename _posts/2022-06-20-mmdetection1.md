@@ -7,7 +7,7 @@ toc: true
 toc_sticky: true
 ---
 
-
+![header](https://capsule-render.vercel.app/api?type=waving&color=a2dcec&height=300&section=header&text=mmdetection 설명, 설치과정&fontSize=40&animation=fadeIn&fontAlignY=38&desc=최재혁%20GitHub.io&descAlignY=51&descAlign=62&fontColor=FFFFFF)
 
 ## 1. mmdetection?
 
@@ -147,8 +147,6 @@ mmdetection에서 제공하는 demo 이미지를 통한 검증
 ## 5. 끝으로
 
 이후 포스팅부터는 논문 리뷰와 해당하는 mmdetection 모델를 수행하는 과정으로 포스팅 하겠습니다~
-
-
 
 
 
