@@ -20,16 +20,16 @@ foo:
 
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
   - title: "About"
     url: /about/
-  - title: "Sample Posts"
+  - title: "Category"
+    url: /categories/
+  - title: "About"
     url: /year-archive/
-  - title: "Sample Collections"
+  - title: "About Dev_Dior"
     url: /collection-archive/
-  - title: "Terms &amp; Privacy Policy"
-    url: /terms/
+  - title: "Sitemap"
+    url: /sitemap/
 
 
 # documentation links
