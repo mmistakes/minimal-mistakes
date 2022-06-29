@@ -7,7 +7,7 @@ toc: true
 toc_sticky: true
 ---
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=a2dcec&height=300&section=header&text=mmdetection 설명, 설치과정&fontSize=40&animation=fadeIn&fontAlignY=38&desc=최재혁%20GitHub.io&descAlignY=51&descAlign=62&fontColor=FFFFFF)
+![header](https://capsule-render.vercel.app/api?type=waving&color=a2dcec&height=300&section=header&text=mmdetection 설명, 설치과정&fontSize=40&animation=fadeIn&fontAlignY=38&fontColor=FFFFFF)
 
 ## 1. mmdetection?
 

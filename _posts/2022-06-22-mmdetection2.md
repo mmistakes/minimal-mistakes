@@ -7,7 +7,7 @@ toc: true
 toc_sticky: true
 ---
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=a2dcec&height=300&section=header&text=mmdetection config setting&fontSize=40&animation=fadeIn&fontAlignY=38&desc=최재혁%20GitHub.io&descAlignY=51&descAlign=62&fontColor=FFFFFF)
+![header](https://capsule-render.vercel.app/api?type=waving&color=a2dcec&height=300&section=header&text=mmdetection config setting&fontSize=40&animation=fadeIn&fontAlignY=38&fontColor=FFFFFF)
 
 
 
@@ -52,5 +52,4 @@ toc_sticky: true
     - `[gpu x batch_per_gpu]`: GPU 및 GPU당 샘플 `8x2`이 기본적으로 사용됩니다.
     - `{schedule}`: 교육 일정, 옵션은 `1x`, `2x`, `20e`등 `1x`이며 `2x`각각 12 Epoch 및 24 Epoch를 의미합니다. `20e`는 20 Epoch를 나타내는 cascade 모델에서 채택됩니다. `1x`/ 의 경우 `2x`초기 학습률은 8/16 및 11/22 Epoch에서 10배 감소합니다. 의 경우 `20e`초기 학습률은 16번째 및 19번째 Epoch에서 10배 감소합니다.
     - `{dataset}`: `coco`, `cityscapes`, `voc_0712`, `wider_face`.
-
 
