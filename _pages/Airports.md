@@ -20,9 +20,8 @@ toc: true
 ## [SKRG - Jose Maria Cordová Airport - Rionegro, Colombia](https://vpilotdesigns.github.io/SKRG/)
 
 <p><a href="https://vpilotdesigns.github.io/SKRG/"><strong>Galeria/Gallery</strong></a><br>
-  <br>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/4UE65pxD6AA" title="SKRG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><br></iframe>
   <br></p>
+{% include figure image_path="/assets/images/SKRG/Block_071.jpg" alt="skrg" caption="Jose Maria Cordova Intl Airport - Rionegro, Colombia for MSFS" %}
   
 ## [SKCG - Rafael Nuñez Airport - Cartagena, Colombia](https://vpilotdesigns.github.io/SKCG/)  
 <p><a href="https://vpilotdesigns.github.io/SKCG/"><strong>Galeria/Gallery</strong></a><br>
