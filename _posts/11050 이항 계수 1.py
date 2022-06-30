@@ -10,6 +10,18 @@ N, K = map(int, sys.stdin.readline().split())
 
 # print(res)
 
+# 팩토리얼
+
+# def fact(num):
+#     if num == 0:
+#         return 1
+#     if num == 1:
+#         return 1
+#     else:
+#         return num * fact(num - 1)
+
+# print(fact(N) // (fact(K) * fact(N - K)))
+
 # dp
 
 dp = [[0] * 11 for _ in range(11)]
@@ -24,5 +36,8 @@ for i in range(N):
             
         else:
             dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j]
-            
-print(dp[N - 1][K - 1])
+
+if K == 0:
+    print(1)
+else:
+    print(dp[N - 1][K - 1])
