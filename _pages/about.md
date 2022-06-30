@@ -9,9 +9,17 @@ header:
 excerpt: >
   The Finnish Quantum-Computing Infrastructure<br />
   <small></small>
-
 intro: 
   - excerpt: 'The FiQCI consortium maintains, operates, and develops the infrastructure'
+funders_gallery:
+ - url: /assets/images/funder-Academy_of_Finland.png
+   image_path: /assets/images/funder-Academy_of_Finland.png
+   alt: "Academy of Finland logo"
+   title: "Academy of Finland"
+ - url: /assets/images/funder-EU-RRF.jpg
+   image_path: /assets/images/funder-EU-RRF.jpg
+   alt: "European Union NextGenerationEU logo"
+   title: "European Union NextGenerationEU"
 
 ---
 
@@ -39,8 +47,7 @@ Helmi, the first Finnish quantum computer, is operated by VTT. Presently, Helmi 
 
 Other quantum resources will continuously be added to the FiQCI infrastructure.
 
+## Supported by
 
-
-
-
+{% include gallery id="funders_gallery" class="full"}
 
