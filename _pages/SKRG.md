@@ -56,7 +56,7 @@ Available in the MSFS Marketplace
 
 Disponible en el Marketplace de MSFS
 
-{% include video id="4UE65pxD6AA" provider="youtube" %}
+{% include figure image_path="/assets/images/SKRG/Block_071.jpg" alt="skrg" caption="Jose Maria Cordova Intl Airport - Rionegro, Colombia for MSFS" %}
 
 {% include gallery id="gallery1" caption="SKRG Jóse Maria Córdova Airport - Rionegro, Colombia for MSFS" %}
 
