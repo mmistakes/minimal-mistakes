@@ -43,6 +43,10 @@ The backbone of the classical HPC resources in FiQCI, and the portal for quantum
 
 Helmi, the first Finnish quantum computer, is operated by VTT. Presently, Helmi provides five qubits, and will be upgraded to 20, then 50 qubits in the near future.
 
+### Kvasi quantum computer simulator
+
+Kvasi, the Atos Quantum Learning Machine, is a quantum computing simulator with which you can learn to use and develop new quantum algorithms. Kvasi provides a platform for developing and simulating quantum algorithms in both ideal and realistic, noisy conditions. Kvasi is capable of simulating algorithms for quantum computers of 30+ qubits. For more information, see [https://research.csc.fi/-/kvasi](https://research.csc.fi/-/kvasi)
+
 ### Other resources
 
 Other quantum resources will continuously be added to the FiQCI infrastructure.
