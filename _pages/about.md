@@ -49,5 +49,5 @@ Other quantum resources will continuously be added to the FiQCI infrastructure.
 
 ## Supported by
 
-{% include gallery id="funders_gallery" class="full"}
+{% include gallery id="funders_gallery" class="full"%}
 
