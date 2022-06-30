@@ -32,7 +32,7 @@ ex) 계산기 모듈
 
 
 <!-- ![calulator](../../../images/posts/js/calculator.png){: width="100" height="100"} -->
-<center><img src="../../../../images/posts/../../ihchoco.github.io/images/posts/js/calculator.png" width="400" height="400"></center>
+<center><img src="../../../images/posts/js/calculator.png" width="400" height="400"></center>
 
 
 
