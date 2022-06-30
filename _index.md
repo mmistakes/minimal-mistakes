@@ -2,7 +2,7 @@
 
 This website collects my various interests, projects, services, reports, learning experiences, and much more. Check out the [categories](/categories/) section to see the topics I have written about. You can also find more information [about](/about/) the purpose of my website.
 
-# Bi-Weekly Updates: 06/11/22 - 06/25/22
+# Bi-Weekly Updates: 06/26/22 - 07/03/22
 
 I moved into my new apartment this month. It has been a great, if not tiring experience. I am enjoying my new neighborhood very much.
 
@@ -12,7 +12,7 @@ A few _professional_ updates:
 
 - [**Mentorship Program**](/categories/career/mentorship_program) - I've started a **free** mentorship program to help people start or further develop their careers in tech. If you know anyone interested, please give them my contact information.
 
-- **Beacon Chain -** I have finally wrapped up a major application I have been building to keep track of the Ethereum Beacon Chain. It will run in production for the new few weeks and I will study it.
+- **Consulting** - I am considering taking a dive into the world of consulting and building out my own business.
 
 ## Personal
 
