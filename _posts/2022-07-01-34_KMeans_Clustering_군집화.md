@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "34_KMeans_Clustering_군집화"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
 ```python
 import warnings
 warnings.filterwarnings('ignore')
@@ -642,65 +650,4 @@ plt.show()
 
     
 ![png](output_19_0.png)
-    
 
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
