@@ -11,7 +11,7 @@ header:
 categories:
   - git
   - git-comandos
-  - git-básico
+  - git-basico
   - git-manual
 tags:
   - git-fetch

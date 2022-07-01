@@ -12,8 +12,8 @@ categories:
   - java
   - java-apis
   - java-manual
-  - java-excepciones
 tags:
+  - java-excepciones
   - java-throwable
 page_css: 
   - /assets/css/mi-css.css

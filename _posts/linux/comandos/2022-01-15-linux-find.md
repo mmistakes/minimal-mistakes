@@ -11,9 +11,9 @@ header:
 categories:
   - linux
   - linux-comando
-  - linux-find
 tags:
   - linux-concepto-de-comandos
+  - linux-find
 page_css: 
   - /assets/css/mi-css.css
 ---

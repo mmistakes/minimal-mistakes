@@ -10,9 +10,9 @@ header:
   teaser: /assets/images/linux/tux.jpg
 categories:
   - linux
-  - linux-shell-script
-tags:
   - linux-concepto-de-comandos
+tags:
+  - linux-shell-script
 page_css: 
   - /assets/css/mi-css.css
 ---

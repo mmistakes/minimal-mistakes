@@ -10,9 +10,9 @@ header:
   teaser: /assets/images/linux/tux.jpg
 categories:
   - linux
-  - linux-variables-shell
-tags:
   - linux-concepto-de-comandos
+tags:
+  - linux-variables-shell
 page_css: 
   - /assets/css/mi-css.css
 ---

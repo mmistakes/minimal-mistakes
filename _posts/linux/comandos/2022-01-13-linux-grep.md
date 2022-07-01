@@ -11,9 +11,9 @@ header:
 categories:
   - linux
   - linux-comando
-  - linux-grep
-tags:
   - linux-concepto-de-comandos
+tags:
+  - linux-grep
 page_css: 
   - /assets/css/mi-css.css
 ---

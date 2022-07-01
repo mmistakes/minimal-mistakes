@@ -13,7 +13,7 @@ categories:
   - linux-manual
 tags:
   - linux-salida
-  - linux-stdout
+  - linux-stdin
 page_css: 
   - /assets/css/mi-css.css
 ---

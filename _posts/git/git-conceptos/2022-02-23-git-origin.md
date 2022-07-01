@@ -13,7 +13,7 @@ categories:
   - git-basico
   - git-manual
 tags:
-  - git-grafo
+  - git-origin
   - git-commits
   - git-grafo-de-commits
 page_css: 

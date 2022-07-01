@@ -13,8 +13,8 @@ categories:
   - git-basico
   - git-manual
 tags:
-  - git-ssh-keygen
   - git-ssh
+  - git-ssh-keygen
   - git-github
 page_css: 
   - /assets/css/mi-css.css

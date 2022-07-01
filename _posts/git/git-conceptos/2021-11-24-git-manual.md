@@ -10,9 +10,9 @@ header:
   teaser: /assets/images/llama.jpg
 categories:
   - git
+  - git-manual
 tags:
   - git-basico
-  - git-manual
 ---
 
 ## Git Manual Básico
