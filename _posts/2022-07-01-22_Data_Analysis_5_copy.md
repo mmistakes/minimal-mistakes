@@ -34,35 +34,49 @@ df = pd.read_csv('./data/raw.csv', index_col='연번')
 df.shape
 ```
 
+![1](../../images/2022-07-01-22_Data_Analysis_5_copy/1.png){: width="100%" height="100%"}
+
 
 ```python
 df.head()
 ```
+
+![2](../../images/2022-07-01-22_Data_Analysis_5_copy/2.png){: width="100%" height="100%"}
 
 
 ```python
 df.tail()
 ```
 
+![3](../../images/2022-07-01-22_Data_Analysis_5_copy/3.png){: width="100%" height="100%"}
+
 
 ```python
 df.dtypes
 ```
+
+![4](../../images/2022-07-01-22_Data_Analysis_5_copy/4.png){: width="100%" height="100%"}
 
 
 ```python
 df.info()
 ```
 
+![5](../../images/2022-07-01-22_Data_Analysis_5_copy/5.png){: width="100%" height="100%"}
+
 
 ```python
 msno.matrix(df, figsize=[14, 8])
 ```
 
+![6](../../images/2022-07-01-22_Data_Analysis_5_copy/6.png){: width="100%" height="100%"}
+
 
 ```python
 df.isnull().sum()
 ```
+
+![7](../../images/2022-07-01-22_Data_Analysis_5_copy/7.png){: width="100%" height="100%"}
 
 
 ```python
@@ -70,11 +84,15 @@ df.isnull().sum()
 df[df['집행금액'].isnull()]
 ```
 
+![8](../../images/2022-07-01-22_Data_Analysis_5_copy/8.png){: width="100%" height="100%"}
+
 
 ```python
 missing_df_row = df[df['집행금액'].isnull()].index[0]
 missing_df_row
 ```
+
+![9](../../images/2022-07-01-22_Data_Analysis_5_copy/9.png){: width="100%" height="100%"}
 
 
 ```python
@@ -84,10 +102,14 @@ df = df.drop(missing_df_row)
 print(df.shape)
 ```
 
+![10](../../images/2022-07-01-22_Data_Analysis_5_copy/10.png){: width="100%" height="100%"}
+
 
 ```python
 df.isnull().sum()
 ```
+
+![11](../../images/2022-07-01-22_Data_Analysis_5_copy/11.png){: width="100%" height="100%"}
 
 
 ```python
@@ -96,6 +118,8 @@ df.isnull().sum()
 df['집행일시'] = pd.to_datetime(df['집행일시'])
 df.dtypes
 ```
+
+![12](../../images/2022-07-01-22_Data_Analysis_5_copy/12.png){: width="100%" height="100%"}
 
 
 ```python
@@ -109,12 +133,16 @@ df['요일'] = df['집행일시'].dt.dayofweek.astype(int) # 0 => 월, 1 => 화,
 df.head()
 ```
 
+![14](../../images/2022-07-01-22_Data_Analysis_5_copy/14.png){: width="100%" height="100%"}
+
 
 ```python
 plt.rcParams['figure.figsize'] = [12, 8]
 plt.rc('font', size=15)
 sns.countplot(data=df, x='연')
 ```
+
+![15](../../images/2022-07-01-22_Data_Analysis_5_copy/15.png){: width="100%" height="100%"}
 
 
 ```python
@@ -123,6 +151,8 @@ plt.rc('font', size=15)
 sns.countplot(data=df, x='월')
 ```
 
+![16](../../images/2022-07-01-22_Data_Analysis_5_copy/16.png){: width="100%" height="100%"}
+
 
 ```python
 plt.rcParams['figure.figsize'] = [20, 8]
@@ -130,6 +160,8 @@ plt.rc('font', size=15)
 plt.xticks(rotation=45)
 sns.countplot(data=df, x='연월')
 ```
+
+![17](../../images/2022-07-01-22_Data_Analysis_5_copy/17.png){: width="100%" height="100%"}
 
 
 ```python
@@ -145,12 +177,16 @@ plt.xticks(rotation=45)
 sns.countplot(data=df, x='연월')
 ```
 
+![18](../../images/2022-07-01-22_Data_Analysis_5_copy/18.png){: width="100%" height="100%"}
+
 
 ```python
 plt.rcParams['figure.figsize'] = [20, 8]
 plt.rc('font', size=15)
 sns.countplot(data=df, x='일')
 ```
+
+![19](../../images/2022-07-01-22_Data_Analysis_5_copy/19.png){: width="100%" height="100%"}
 
 
 ```python
@@ -159,12 +195,16 @@ plt.rc('font', size=15)
 sns.countplot(data=df, x='시')
 ```
 
+![20](../../images/2022-07-01-22_Data_Analysis_5_copy/20.png){: width="100%" height="100%"}
+
 
 ```python
 plt.rcParams['figure.figsize'] = [12, 8]
 plt.rc('font', size=15)
 sns.countplot(data=df, x='요일')
 ```
+
+![21](../../images/2022-07-01-22_Data_Analysis_5_copy/21.png){: width="100%" height="100%"}
 
 
 ```python
@@ -174,12 +214,16 @@ df['요일_한글'] = df['요일'].apply(lambda x: weekday[x])
 df.head()
 ```
 
+![22](../../images/2022-07-01-22_Data_Analysis_5_copy/22.png){: width="100%" height="100%"}
+
 
 ```python
 plt.rcParams['figure.figsize'] = [12, 8]
 plt.rc('font', size=15)
 sns.countplot(data=df, x='요일_한글')
 ```
+
+![23](../../images/2022-07-01-22_Data_Analysis_5_copy/23.png){: width="100%" height="100%"}
 
 
 ```python
@@ -188,6 +232,8 @@ plt.rc('font', size=15)
 sns.countplot(data=df.sort_values(by=['요일']), x='요일_한글')
 ```
 
+![24](../../images/2022-07-01-22_Data_Analysis_5_copy/24.png){: width="100%" height="100%"}
+
 
 ```python
 plt.rcParams['figure.figsize'] = [12, 8]
@@ -195,12 +241,16 @@ plt.rc('font', size=15)
 sns.barplot(data=df, x='연', y='집행금액')
 ```
 
+![25](../../images/2022-07-01-22_Data_Analysis_5_copy/25.png){: width="100%" height="100%"}
+
 
 ```python
 plt.rcParams['figure.figsize'] = [12, 8]
 plt.rc('font', size=15)
 sns.barplot(data=df, x='월', y='집행금액')
 ```
+
+![26](../../images/2022-07-01-22_Data_Analysis_5_copy/26.png){: width="100%" height="100%"}
 
 
 ```python
@@ -210,6 +260,8 @@ plt.xticks(rotation=45)
 sns.barplot(data=df, x='연월', y='집행금액')
 ```
 
+![27](../../images/2022-07-01-22_Data_Analysis_5_copy/27.png){: width="100%" height="100%"}
+
 
 ```python
 plt.rcParams['figure.figsize'] = [20, 8]
@@ -217,12 +269,16 @@ plt.rc('font', size=15)
 sns.barplot(data=df, x='시', y='집행금액')
 ```
 
+![28](../../images/2022-07-01-22_Data_Analysis_5_copy/28.png){: width="100%" height="100%"}
+
 
 ```python
 plt.rcParams['figure.figsize'] = [12, 8]
 plt.rc('font', size=15)
 sns.barplot(data=df.sort_values(by='요일'), x='요일_한글', y='집행금액')
 ```
+
+![29](../../images/2022-07-01-22_Data_Analysis_5_copy/29.png){: width="100%" height="100%"}
 
 집행목적 워드클라우드
 
@@ -236,11 +292,15 @@ from wordcloud import WordCloud
 df.head()
 ```
 
+![30](../../images/2022-07-01-22_Data_Analysis_5_copy/30.png){: width="100%" height="100%"}
+
 
 ```python
 #집행목적이 NaN인 데이터를 확인한다.
 df[df['집행목적'].isnull()]
 ```
+
+![31](../../images/2022-07-01-22_Data_Analysis_5_copy/31.png){: width="100%" height="100%"}
 
 
 ```python
@@ -248,6 +308,8 @@ df[df['집행목적'].isnull()]
 df['집행목적'] = df['집행목적'].fillna('')
 df[df['집행목적'].isnull()]
 ```
+
+![32](../../images/2022-07-01-22_Data_Analysis_5_copy/32.png){: width="100%" height="100%"}
 
 
 ```python
@@ -257,6 +319,8 @@ df[df['집행목적'].isnull()]
 spend_gubun = ' '.join(df['집행목적'])
 spend_gubun
 ```
+
+![33](../../images/2022-07-01-22_Data_Analysis_5_copy/33.png){: width="100%" height="100%"}
 
 
 ```python
@@ -271,6 +335,8 @@ plt.axis('off')
 plt.show()
 ```
 
+![34](../../images/2022-07-01-22_Data_Analysis_5_copy/34.png){: width="100%" height="100%"}
+
 집행장소 워드클라우드
 
 
@@ -279,6 +345,8 @@ plt.show()
 df[df['집행장소'].isnull()]
 ```
 
+![35](../../images/2022-07-01-22_Data_Analysis_5_copy/35.png){: width="100%" height="100%"}
+
 
 ```python
 # 집행장소가 NaN인 데이터가 존재하므로, NaN을 공백으로 채워준다.
@@ -286,15 +354,21 @@ df['집행장소'] = df['집행장소'].fillna('')
 df[df['집행장소'].isnull()]
 ```
 
+![36](../../images/2022-07-01-22_Data_Analysis_5_copy/36.png){: width="100%" height="100%"}
+
 
 ```python
 df.head()
 ```
 
+![37](../../images/2022-07-01-22_Data_Analysis_5_copy/37.png){: width="100%" height="100%"}
+
 
 ```python
 '뼈큰감자탕 (대구 중구 명덕로)'.split('(')[0].strip()
 ```
+
+![38](../../images/2022-07-01-22_Data_Analysis_5_copy/38.png){: width="100%" height="100%"}
 
 
 ```python
@@ -307,11 +381,15 @@ df['상호명'] = df['집행장소'].apply(lambda x: x.split('(')[0].strip())
 df.head()
 ```
 
+![39](../../images/2022-07-01-22_Data_Analysis_5_copy/39.png){: width="100%" height="100%"}
+
 
 ```python
 #상호명이 공백인 데이터의 집행목적을 확인한다.
 df.loc[df['상호명'] == '', '집행목적'].value_counts().head()
 ```
+
+![40](../../images/2022-07-01-22_Data_Analysis_5_copy/40.png){: width="100%" height="100%"}
 
 
 ```python
@@ -320,11 +398,15 @@ df.loc[df['상호명'] == '', '집행목적'].value_counts().head()
 df.loc[df['상호명'] == '대상자 소속부서', '집행목적'].value_counts().head()
 ```
 
+![41](../../images/2022-07-01-22_Data_Analysis_5_copy/41.png){: width="100%" height="100%"}
+
 
 ```python
 # 상호명이 '-'인 데이터의 집행목적을 확인한다.
 df.loc[df['상호명'] == '-', '집행목적'].value_counts().head()
 ```
+
+![42](../../images/2022-07-01-22_Data_Analysis_5_copy/42.png){: width="100%" height="100%"}
 
 
 ```python
@@ -337,16 +419,22 @@ df_shop=df[(df['상호명'] !='')
 df_shop
 ```
 
+![43](../../images/2022-07-01-22_Data_Analysis_5_copy/43.png){: width="100%" height="100%"}
+
 
 ```python
 df_shop['상호명'].value_counts().head(30)
 ```
+
+![44](../../images/2022-07-01-22_Data_Analysis_5_copy/44.png){: width="100%" height="100%"}
 
 
 ```python
 df_shop.loc[df_shop['상호명'] == '（주）바닷가작은부엌', '상호명'] = '바닷가작은부엌'
 df_shop['상호명'].value_counts().head(30)
 ```
+
+![45](../../images/2022-07-01-22_Data_Analysis_5_copy/45.png){: width="100%" height="100%"}
 
 
 ```python
@@ -355,6 +443,8 @@ top_100 = pd.DataFrame(top_100).reset_index()
 top_100.columns=['상호명', '방문횟수']
 top_100
 ```
+
+![46](../../images/2022-07-01-22_Data_Analysis_5_copy/46.png){: width="100%" height="100%"}
 
 
 ```python
@@ -369,7 +459,11 @@ plt.axis('off')
 plt.show()
 ```
 
+![47](../../images/2022-07-01-22_Data_Analysis_5_copy/47.png){: width="100%" height="100%"}
+
 
 ```python
 top_100[top_100['상호명'] =='뚜리삼']
 ```
+
+![48](../../images/2022-07-01-22_Data_Analysis_5_copy/48.png){: width="100%" height="100%"}
