@@ -10,27 +10,27 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast",  "dirt", "neon", "mint", "plum", "sunrise"
+# theme                  : 'minimal-mistakes-jekyll'
+# remote_theme           : 'mmistakes/minimal-mistakes'
+minimal_mistakes_skin    : 'dark' # 'default', 'air', 'aqua', 'contrast',  'dirt', 'neon', 'mint', 'plum', 'sunrise'
 
 # Site Settings
 locale                   : 'ko-KR'
 title                    : '디벨롭_Dior's_Tilog'
-title_separator          : "-"
+title_separator          : '-'
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Dior.Bizbae"
-description              : "코딩 마스터피스를 꿈꾸는_(Do you love Highend?)"
+name                     : 'Dior.Bizbae'
+description              : '코딩 마스터피스를 꿈꾸는_(Do you love Highend?)''
 url                      :  'https://bizbaeja.github.io'
 baseurl                  :  'https://www.youtube.com/watch?v=5DDP1mYxcbI'
 repository               : 'https://github.com/bizbaeja?tab=repositories'
 teaser                   : '/assets/img/Dior.jpeg' # path of fallback teaser image, e.g. 
 logo                     :  '/assets/images'
-masthead_title           : "Masterpiece!"
+masthead_title           : 'Masterpiece!'
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : # false (default), 'disqus', 'discourse', 'facebook', 'staticman', 'staticman_v2', 'utterances', 'giscus', 'custom'
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -39,20 +39,20 @@ comments:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : "dark" # "light" (default), 
+    colorscheme          : 'dark' # 'light' (default), 
   utterances:
-    theme                : "github-dark" # "github-light" (default), 
-    issue_term           : # "pathname" (default)
+    theme                : 'github-dark' # 'github-light' (default), 
+    issue_term           : # 'pathname' (default)
   giscus:
     repo_id              : # Shown during giscus setup at https://giscus.app
     category_name        : # Full text name of the category
     category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
+    discussion_term      : # 'pathname' (default), 'url', 'title', 'og:title'
     reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : "dark"  # "light" (default), , "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+    theme                : 'dark'  # 'light' (default), , 'dark_dimmed', 'transparent_dark', 'preferred_color_scheme'
   staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+    branch               : # 'master'
+    endpoint             : # 'https://{your Staticman v3 API}/v3/entry/github/'
 reCaptcha:
   siteKey                :
   secret                 :
@@ -96,7 +96,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : # false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : # false # false (default), 'google', 'google-universal', 'google-gtag', 'custom'
   google:
     tracking_id          :
     anonymize_ip         : # true, false (default)
@@ -112,43 +112,43 @@ author:
   #links:
     - label: 'Email'
       icon: 'fas fa-fw fa-envelope-square'
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      # url: 'mailto:your.name@email.com'
+    - label: 'Website'
+      icon: 'fas fa-fw fa-link'
+      # url: 'https://your-website.com'
+    - label: 'Twitter'
+      icon: 'fab fa-fw fa-twitter-square'
+      # url: 'https://twitter.com/'
+    - label: 'Facebook'
+      icon: 'fab fa-fw fa-facebook-square'
+      # url: 'https://facebook.com/'
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      # url: 'https://github.com/'
+    - label: 'Instagram'
+      icon: 'fab fa-fw fa-instagram'
+      # url: 'https://instagram.com/'
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+    - label: 'Twitter'
+      icon: 'fab fa-fw fa-twitter-square'
       # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+    - label: 'Facebook'
+      icon: 'fab fa-fw fa-facebook-square'
       # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
       # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
+    - label: 'GitLab'
+      icon: 'fab fa-fw fa-gitlab'
       # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
+    - label: 'Bitbucket'
+      icon: 'fab fa-fw fa-bitbucket'
       # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+    - label: 'Instagram'
+      icon: 'fab fa-fw fa-instagram'
       # url:
 
 
@@ -157,8 +157,8 @@ include:
   - .htaccess
   - _pages
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
+  - '*.sublime-project'
+  - '*.sublime-workspace'
   - vendor
   - .asset-cache
   - .bundle
@@ -186,15 +186,15 @@ exclude:
 keep_files:
   - .git
   - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+encoding: 'utf-8'
+markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
 
 
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: "\n\n"
+excerpt_separator: '\n\n'
 incremental: false
 
 
@@ -281,7 +281,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: '
       type: posts
     values:
       layout: single
@@ -293,7 +293,7 @@ defaults:
 
 # _pages
       - scope:
-      path: "_pages"
+      path: '_pages'
       type: pages
     values:
       layout: single
