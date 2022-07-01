@@ -18,7 +18,7 @@ tf.disable_v2_behavior()
     WARNING:tensorflow:From c:\python\lib\site-packages\tensorflow\python\compat\v2_compat.py:101: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
     Instructions for updating:
     non-resource variables are not supported in the long term
-    
+
 
 학습 데이터를 만든다.
 
@@ -45,8 +45,6 @@ print(xData)
      [10  7]
      [12  8]
      [14  9]]
-    
-
 
 ```python
 from IPython.display import Image
@@ -54,13 +52,7 @@ Image('./reshape.png', width ='800')
 ```
 
 
-
-
-    
-![png](output_3_0.png)
-    
-
-
+![output_3_0](../../images/2022-07-01-33_Multi_Logistic_Regression_다중로지스틱회귀/output_3_0.png){: width="100%" height="100%"}
 
 
 ```python
@@ -92,7 +84,7 @@ print(yData.ndim)
      [1]
      [1]]
     2
-    
+
 
 xData와 yData를 저장할 placeholder를 만든다.
 
@@ -112,14 +104,7 @@ from IPython.display import Image
 Image('./innerproduct.png', width ='800')
 ```
 
-
-
-
-    
-![png](output_8_0.png)
-    
-
-
+![output_8_0](../../images/2022-07-01-33_Multi_Logistic_Regression_다중로지스틱회귀/output_8_0.png){: width="100%" height="100%"}
 
 
 ```python
@@ -137,7 +122,7 @@ print('a1 = {}, a2 = {}, b = {}'.format(sess.run(a)[0], sess.run(a)[1], sess.run
      [0.9765004]]
     b = [0.55916774]
     a1 = [0.60752], a2 = [0.9765004], b = [0.55916774]
-    
+
 
 시그모이드 방정식, 오차 함수, 경사 하강
 
@@ -168,7 +153,7 @@ print(sess.run(predicted))
 
     0
     1
-    
+
 
 sigmoid() 함수를 실행한 예측값을 계산한다.
 
@@ -211,8 +196,6 @@ for i in range(3001):
     Epoch: 2400, a1:   0.28144, a2:   1.27775, b:  -8.12293, loss:   0.06942
     Epoch: 2700, a1:   0.22105, a2:   1.44302, b:  -8.53607, loss:   0.06269
     Epoch: 3000, a1:   0.16717, a2:   1.59202, b:  -8.91188, loss:   0.05714
-    
-
 
 ```python
 # 테스트 데이터를 만든다.
@@ -238,8 +221,6 @@ print('합격 여부: {0:s}, 합격 확률: {1:6.2f}%'.format('합격' if result
 
     공부 시간: 6, 과외 시간: 5
     합격 여부: 합격, 합격 확률:  51.28%
-    
-
 
 ```python
 # 공부는 1시간도 안하고 과외 수업만 0 ~ 10 시간을 받았을 경우 합격 여부와 합격 확률을 계산한다.

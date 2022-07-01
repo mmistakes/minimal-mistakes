@@ -34,8 +34,6 @@ df
 ```
 
 
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -45,7 +43,7 @@ df
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -214,8 +212,6 @@ df
 </div>
 
 
-
-
 ```python
 print(list(df.index))
 print(df.columns)
@@ -259,7 +255,7 @@ print(points)
      [15  6]
      [15 18]
      [18 12]]
-    
+
 
 matplotlib와 seaborn 라이브러리를 이용해 Clustering을 실행할  
 데이터를 시각화한다.
@@ -283,9 +279,7 @@ plt.show()
 ```
 
 
-    
-![png](output_6_0.png)
-    
+![output_6_0](../../images/2022-07-01-34_KMeans_Clustering_군집화/output_6_0.png){: width="100%" height="100%"}
 
 
 KMeans를 수행하기 위해서 클러스터링을 수행할 데이터의 주제를  
@@ -317,14 +311,7 @@ Image('./data/Clustering1.png', width ='1200')
 #멀리있는 노드(녹색)가 중심이 된다.
 ```
 
-
-
-
-    
-![png](output_10_0.png)
-    
-
-
+![output_10_0](../../images/2022-07-01-34_KMeans_Clustering_군집화/output_10_0.png){: width="100%" height="100%"}
 
 
 ```python
@@ -335,14 +322,7 @@ Image('./data/Clustering2.png', width ='1200')
 #가까운 클러스터에 속하도록 한다.
 ```
 
-
-
-
-    
-![png](output_11_0.png)
-    
-
-
+![output_11_0](../../images/2022-07-01-34_KMeans_Clustering_군집화/output_11_0.png){: width="100%" height="100%"}
 
 
 ```python
@@ -357,14 +337,7 @@ Image('./data/Clustering3.png', width ='1200')
 #더 이상 바뀌지 않으면 클러스터링이 끝난다.
 ```
 
-
-
-
-    
-![png](output_12_0.png)
-    
-
-
+![output_12_0](../../images/2022-07-01-34_KMeans_Clustering_군집화/output_12_0.png){: width="100%" height="100%"}
 
 KMeans 알고리즘을 이용해서 클러스터 4개를 생성한다.
 
@@ -390,7 +363,7 @@ print(kmeans.labels_)
      [ 6.375      16.375     ]
      [15.66666667 13.66666667]]
     [0 2 2 0 0 0 2 0 0 0 0 0 0 2 2 0 0 1 1 2 2 1 1 2 1 1 3 1 3 3]
-    
+
 
 데이터프레임에 cluster라는 이름의 열을 만들고  
 군집화된 결과(labels_)를 추가한다.
@@ -402,8 +375,6 @@ df
 ```
 
 
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -413,7 +384,7 @@ df
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -613,8 +584,6 @@ df
 </div>
 
 
-
-
 ```python
 #완성된 결과를 저장하려면 to_csv()함수를 사용해서
 #데이터프레임을 csv파일로 저장한다.
@@ -648,6 +617,4 @@ plt.show()
 ```
 
 
-    
-![png](output_19_0.png)
-
+![output_19_0](../../images/2022-07-01-34_KMeans_Clustering_군집화/output_19_0.png){: width="100%" height="100%"}
