@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "30_Gradient_Descent_경사하강법"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
 ```python
 import warnings 
 warnings.filterwarnings('ignore')
@@ -127,8 +135,3 @@ for i in range(3001):
     Epoch : 2800, RMSE :  2.8810, 기울기 :  2.3028, y절편 : 78.9836
     Epoch : 3000, RMSE :  2.8810, 기울기 :  2.3009, y절편 : 78.9947
     
-
-
-```python
-
-```
