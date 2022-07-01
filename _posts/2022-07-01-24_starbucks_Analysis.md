@@ -46,8 +46,6 @@ print(len(storeList['list']))
 
     <class 'dict'>
     581
-    
-
 
 ```python
 #json_normalize()함수로 json타입으로 데이터가
@@ -59,14 +57,10 @@ print(type(star_df))
 ```
 
     <class 'pandas.core.frame.DataFrame'>
-    
-
 
 ```python
 star_df.head()
 ```
-
-
 
 
 <div>
@@ -78,7 +72,7 @@ star_df.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -237,15 +231,11 @@ star_df.head()
 </div>
 
 
-
-
 ```python
 print(storeList['list'][0])
 ```
 
     {'seq': 0, 'sido_cd': None, 'sido_nm': None, 'gugun_cd': None, 'gugun_nm': None, 'code_order': None, 'view_yn': None, 'store_num': None, 'sido': None, 'gugun': None, 'address': None, 'new_img_nm': None, 'p_pro_seq': 0, 'p_view_yn': None, 'p_sido_cd': '', 'p_gugun_cd': '', 'p_store_nm': None, 'p_theme_cd': None, 'p_wireless_yn': None, 'p_smoking_yn': None, 'p_book_yn': None, 'p_music_yn': None, 'p_terrace_yn': None, 'p_table_yn': None, 'p_takeout_yn': None, 'p_parking_yn': None, 'p_dollar_assent': None, 'p_card_recharge': None, 'p_subway_yn': None, 'stb_store_file_renew': None, 'stb_store_theme_renew': None, 'stb_store_time_renew': None, 'stb_store_lsm': None, 's_code': '1509', 's_name': '역삼아레나빌딩', 'tel': '1522-3232', 'fax': '02-568-3763', 'sido_code': '01', 'sido_name': '서울', 'gugun_code': '0101', 'gugun_name': '강남구', 'addr': '서울특별시 강남구 역삼동 721-13 아레나빌딩', 'park_info': None, 'new_state': None, 'theme_state': 'T05@T08@T16@T17@T20@T21@T30@@T52@P80@P90', 'new_bool': 0, 'search_text': '', 'ins_lat': '', 'ins_lng': '', 'in_distance': 0, 'out_distance': '26.75', 'all_search_cnt': -1, 'addr_search_cnt': -1, 'store_search_cnt': -1, 'rowCount': 30, 'store_nm': '', 'store_cd': 0, 's_biz_code': '3762', 'new_icon': 'N', 'set_user': '', 'favorites': 0, 'map_desc': None, 'notice': None, 'defaultimage': '/upload/store/2020/09/[3762]_20200917031519_6juwr.JPG', 'etcimage': None, 'in_biz_cd': None, 'in_store_cd': None, 'in_favorites': None, 'in_user_id': None, 'in_biz_cds': 0, 'in_biz_arr': None, 'in_biz_arrdata': None, 'in_scodes': 0, 'in_scode_arr': None, 'in_scode_arrdata': None, 'disp': None, 'set_date': None, 'hlytag': None, 'hlytag_msg': None, 'vSal': '', 'istart': 1, 'iend': 60, 'open_dt': '20190613', 'gold_card': 0, 'ip_lat': '', 'ip_long': '', 'espresso': '', 'new_store': '', 'premiere_food': '', 'doro_address': '서울특별시 강남구 언주로 425 (역삼동)', 'cold_blew': '', 'my_siren_order_store_yn': 'N', 'whcroad_yn': 'WHCROAD', 'skuNo': '', 'skuName': '', 'skuImgUrl': '', 'stock_count': 0, 'store_area_name': None, 'store_area_code': 'A01', 'is_open': None, 'gift_stock_yn': None, 'lat': '37.501087', 'lot': '127.043069', 't20': 0, 't04': 0, 't03': 0, 't01': 0, 't12': 0, 't09': 0, 't06': 0, 't10': 0, 'p10': 0, 'p50': 0, 'p20': 0, 'p60': 0, 'p30': 0, 'p70': 0, 'p40': 0, 'p80': 0, 't22': 0, 't21': 0, 'p90': 0, 't05': 0, 't30': 0, 't36': 0, 't27': 0, 't29': 0, 't43': 0, 't48': 0}
-    
-
 
 ```python
 # 작업에 필요한 칼럼 및 가지를 선택해서 지도에 마커를
@@ -265,8 +255,6 @@ star_df_map.head()
 ```
 
 
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -276,7 +264,7 @@ star_df_map.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -356,13 +344,9 @@ star_df_map.head()
 </div>
 
 
-
-
 ```python
 star_df_map.dtypes
 ```
-
-
 
 
     s_name          object
@@ -376,15 +360,11 @@ star_df_map.dtypes
     dtype: object
 
 
-
-
 ```python
 star_df_map['lat'] = star_df_map['lat'].astype(float)
 star_df_map['lot'] = star_df_map['lot'].astype(float)
 star_df_map.dtypes
 ```
-
-
 
 
     s_name           object
@@ -398,14 +378,10 @@ star_df_map.dtypes
     dtype: object
 
 
-
-
 ```python
 #종각점 
 star_df_map[star_df_map['s_name']=='종각']
 ```
-
-
 
 
 <div>
@@ -417,7 +393,7 @@ star_df_map[star_df_map['s_name']=='종각']
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -453,14 +429,10 @@ star_df_map[star_df_map['s_name']=='종각']
 </div>
 
 
-
-
 ```python
 #종로관철점
 star_df_map[star_df_map['s_name']=='종로관철']
 ```
-
-
 
 
 <div>
@@ -472,7 +444,7 @@ star_df_map[star_df_map['s_name']=='종로관철']
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -508,8 +480,6 @@ star_df_map[star_df_map['s_name']=='종로관철']
 </div>
 
 
-
-
 ```python
 # folium 모듈의 Map()함수로 location 속성으로 지정한
 # 위치를 중심으로 하는 zoom_start옵션으로 지정한
@@ -532,6 +502,8 @@ star_map.save('./output/star1.html')
 star_map
 ```
 
+![1](../../images/2022-07-01-24_starbucks_Analysis/1.png){: width="100%" height="100%"}
+
 
 ```python
 # 서울특별시에 위치한 스타벅스 전 지점의 위치를 지도위에
@@ -552,6 +524,8 @@ for index, data in star_df_map.iterrows():
 star_map.save('./output/star2.html')
 star_map
 ```
+
+![2](../../images/2022-07-01-24_starbucks_Analysis/2.png){: width="100%" height="100%"}
 
 
 ```python
@@ -582,3 +556,5 @@ for index, data in star_df_map.iterrows():
 star_map.save('./output/star3.html')
 star_map
 ```
+
+![3](../../images/2022-07-01-24_starbucks_Analysis/3.png){: width="100%" height="100%"}
