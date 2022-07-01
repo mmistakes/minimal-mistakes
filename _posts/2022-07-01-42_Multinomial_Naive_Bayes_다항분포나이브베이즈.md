@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "42_Multinomial_Naive_Bayes_다항분포나이브베이즈"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
 다항분포 나이브 베이즈를 활용한 영화 리뷰 분류  
 영화 리뷰에 다항분포 나이브 베이즈를 활용해 영화 리뷰가 긍정적인지 부정적인지 분류한다.
 
@@ -483,20 +491,3 @@ comparsion
   </tbody>
 </table>
 </div>
-
-
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
