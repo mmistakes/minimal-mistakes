@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "33_Multi_Logistic_Regression_다중로지스틱회귀"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
 ```python
 import warnings
 warnings.filterwarnings('ignore')
@@ -252,35 +260,4 @@ for i in range(11):
     공부 시간:  0, 과외 시간:  7 합격 여부:   합격, 합격 확률:  90.31%
     공부 시간:  0, 과외 시간:  8 합격 여부:   합격, 합격 확률:  97.86%
     공부 시간:  0, 과외 시간:  9 합격 여부:   합격, 합격 확률:  99.56%
-    공부 시간:  0, 과외 시간: 10 합격 여부:   합격, 합격 확률:  99.91%
-    
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
+    공부 시간:  0, 과외 시간: 10 합격 여부:   합격, 합격 확률:  99.91%    
