@@ -16,7 +16,7 @@ tf.disable_v2_behavior()
     WARNING:tensorflow:From c:\python\lib\site-packages\tensorflow\python\compat\v2_compat.py:101: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
     Instructions for updating:
     non-resource variables are not supported in the long term
-    
+
 
 학습 데이터를 만든다.
 
@@ -50,7 +50,7 @@ print('a : {}, b : {}'.format(a,b))
 ```
 
     a : <tf.Variable 'Variable:0' shape=(1,) dtype=float32_ref>, b : <tf.Variable 'Variable_1:0' shape=(1,) dtype=float32_ref>
-    
+
 
 
 ```python
@@ -60,7 +60,7 @@ print('a : {}, b : {}'.format(sess.run(a),sess.run(b)))
 ```
 
     a : [-32.87706], b : [-50.900627]
-    
+
 
 근무 시간과 매출 금액을 기억할 placeholder를 선언한다.
 
@@ -154,7 +154,7 @@ for i in range(100001):
     90000.        nan      nan      nan
     95000.        nan      nan      nan
     100000.        nan      nan      nan
-    
+
 
 
 ```python
@@ -162,7 +162,7 @@ print('a : {}, b : {}'.format(sess.run(a),sess.run(b)))
 ```
 
     a : [nan], b : [nan]
-    
+
 
 
 ```python
@@ -188,9 +188,3 @@ for i in range(9, 25):
     22시간 근무했을 때 매출 기대금액 :     nan
     23시간 근무했을 때 매출 기대금액 :     nan
     24시간 근무했을 때 매출 기대금액 :     nan
-    
-
-
-```python
-
-```

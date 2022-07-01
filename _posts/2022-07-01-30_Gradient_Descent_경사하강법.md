@@ -18,8 +18,6 @@ tf.disable_v2_behavior()
     WARNING:tensorflow:From c:\python\lib\site-packages\tensorflow\python\compat\v2_compat.py:101: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
     Instructions for updating:
     non-resource variables are not supported in the long term
-    
-
 
 ```python
 data = [[2,81],[4,93],[6,91],[8,97]] #[공부한 시간(x), 실제 성적(y)]
@@ -46,8 +44,6 @@ print('a={}, b={}'.format(sess.run(a), sess.run(b)))
 ```
 
     a=[5.16829], b=[42.651283]
-    
-
 
 ```python
 #예측 성적(y)을 얻기위한 가설(수식)을 만든다.
@@ -87,14 +83,7 @@ from IPython.display import Image
 Image('./structure.png', width ='800')
 ```
 
-
-
-
-    
-![png](output_8_0.png)
-    
-
-
+![output_8_0](../../images/2022-07-01-30_Gradient_Descent_경사하강법/output_8_0.png){: width="100%" height="100%"}
 
 
 ```python
@@ -134,4 +123,3 @@ for i in range(3001):
     Epoch : 2600, RMSE :  2.8810, 기울기 :  2.3085, y절편 : 78.9493
     Epoch : 2800, RMSE :  2.8810, 기울기 :  2.3028, y절편 : 78.9836
     Epoch : 3000, RMSE :  2.8810, 기울기 :  2.3009, y절편 : 78.9947
-    
