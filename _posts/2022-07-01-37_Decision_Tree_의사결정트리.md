@@ -31,7 +31,14 @@ Image('./data/Decision_tree.png', width ='1000')
 ![output_3_0](../../images/2022-07-01-37_Decision_Tree_의사결정트리/output_3_0.png){: width="100%" height="100%"}
 
 데이터 획득
-district=>구, dong=>동, latitude=>위도, longitude=>경도  
+district=>구,
+
+dong=>동, 
+
+latitude=>위도, 
+
+longitude=>경도 
+
 label=>강동,강서,강남,강북으로 구분한 지역
 
 
