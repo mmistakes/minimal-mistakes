@@ -20,8 +20,7 @@ tf.disable_v2_behavior()
     non-resource variables are not supported in the long term
 
 
-날씨 정보(최저 기온, 평균 기온, 최고 기온, 강수량)와 배추 가격은 어떤 상관 관계가 있는지 예측하는 AI를 만든다.  
-최저 기온(minTemp), 평균 기온(avgTemp), 최고 기온(maxTemp), 강수량(rainFall)이 평균 배추 가격(avgPrice)에 영향을 미칠 경우 가격을 예측한다.
+![1](../../images/2022-07-01-38_Baechu_Project/1.png){: width="100%" height="100%"}
 ***
 기상 정보: 기상자료개방포털(https://data.kma.go.kr) 가격 정보: 농산물유통정보(https://www.kamis.or.kr)
 
