@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "29_Root_Mean_Square_Error_평균제곱근오차"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
 평균 제곱근 오차(Root Mean Squre Error, RMSE)  
 임의의 선을 그리고 난 후 이선이 얼마나 잘 그려졌는지  
 평가해서 조금씩 수정해 나간다. 이를 위해서 주어진  
@@ -111,55 +119,3 @@ print('RMSE(평균 제곱근 오차) : {}'.format(rmse_result))
 되는 기울기와 y절편을 찾아야 한다.  
 25_Least_Square_Approximation_최소제곱법 예제에서 계산한 기울기와 y절편을 사용시  
 2.880972058177584의 평균 제곱근 오차가 발생된다.
-
-
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
