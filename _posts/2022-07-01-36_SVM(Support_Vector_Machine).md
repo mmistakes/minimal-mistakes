@@ -37,33 +37,14 @@ from IPython.display import Image
 Image('./data/SVM.png', width ='1000')
 ```
 
-
-
-
-    
-![png](output_2_0.png)
-    
-
-
+![output_2_0](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/output_2_0.png){: width="100%" height="100%"}
 
 결정 경계선이 녹색일 때 보단, 노란색 일때 더 좋다.  
 왜냐하면, 녹색일 경우 파랑색 데이터와 거리가 가까워서  
 조금의 흔들림만 있어도 대량의 오류가 발생한다.  
 빨강색 원이 오차가 발생하지만 감내하는 것이다.
 
-
-```python
-
-```
-
-
-
-
-    
-![png](output_4_0.png)
-    
-
-
+![output_4_0](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/output_4_0.png){: width="100%" height="100%"}
 
 
 ```python
@@ -73,13 +54,7 @@ Image('./data/SVM3.png', width ='1200')
 ```
 
 
-
-
-    
-![png](output_5_0.png)
-    
-
-
+![output_5_0](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/output_5_0.png){: width="100%" height="100%"}
 
 
 ```python
@@ -107,7 +82,7 @@ print(test.shape[0])
 
     80
     20
-    
+
 
 커닐 트릭(kernel trick)  
 저차원 백터 공간(2차원)의 데이터를 고차원 백터 공간(3차원)으로    
@@ -166,7 +141,7 @@ clf = svm_param_selection(x_train, y_train, 10)
     최고 점수 : 0.95
     최고 점수를 낸 파라미터 : {'C': 1, 'gamma': 1, 'kernel': 'rbf'}
     최고 점수를 낸 파라미터를 가진 SVC 모델 : SVC(C=1, gamma=1)
-    
+
 
 결정 경계 시각화
 
@@ -203,7 +178,7 @@ print(type(Y))
     [0.01, 1, 100]
     [0.01, 1, 100]
     <class 'list'>
-    
+
 
 시각화를 위해 포지션(센터 : C => 0, 슈팅가드 : SG => 1)을 숫자로 표현한다.
 
@@ -222,7 +197,7 @@ print(position)
 ```
 
     [0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0]
-    
+
 
 
 ```python
@@ -239,8 +214,6 @@ classifiers
 ```
 
 
-
-
     [(0.01, 0.01, SVC(C=0.01, gamma=0.01)),
      (0.01, 1, SVC(C=0.01, gamma=1)),
      (0.01, 100, SVC(C=0.01, gamma=100)),
@@ -250,8 +223,6 @@ classifiers
      (100, 0.01, SVC(C=100, gamma=0.01)),
      (100, 1, SVC(C=100, gamma=1)),
      (100, 100, SVC(C=100, gamma=100))]
-
-
 
 
 ```python
@@ -265,8 +236,6 @@ mpl.rcParams['axes.unicode_minus'] = False
 ```python
 np.linspace(0,4, 100)
 ```
-
-
 
 
     array([0.        , 0.04040404, 0.08080808, 0.12121212, 0.16161616,
@@ -291,20 +260,11 @@ np.linspace(0,4, 100)
            3.83838384, 3.87878788, 3.91919192, 3.95959596, 4.        ])
 
 
-
-
 ```python
 Image('./data/np_r.png', width ='1000')
 ```
 
-
-
-
-    
-![png](output_21_0.png)
-    
-
-
+![output_21_0](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/output_21_0.png){: width="100%" height="100%"}
 
 
 ```python
@@ -358,9 +318,7 @@ plt.show()
 ```
 
 
-    
-![png](output_22_0.png)
-    
+ ![output_22_0](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/output_22_0.png){: width="100%" height="100%"}
 
 
 9개의 차트 중 가운데 차트가 GridSearch를 통해 얻은 C와  
@@ -384,8 +342,6 @@ print('정확도 : {}'.format(accuracy_score(y_true, y_pred)))
 ```
 
     정확도 : 0.95
-    
-
 
 ```python
 #               precision    recall  f1-score   support  
@@ -426,4 +382,3 @@ print(classification_report(y_true, y_pred))
         accuracy                           0.95        20
        macro avg       0.96      0.94      0.95        20
     weighted avg       0.95      0.95      0.95        20
-    

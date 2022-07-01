@@ -25,8 +25,6 @@ df
 ```
 
 
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -36,7 +34,7 @@ df
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -183,20 +181,14 @@ df
 </div>
 
 
-
-
 ```python
 df.Pos.value_counts()
 ```
 
 
-
-
     SG    50
     C     50
     Name: Pos, dtype: int64
-
-
 
 
 ```python
@@ -219,18 +211,10 @@ sns.lmplot(data=df,x='AST',y='2P',fit_reg=False,
 plt.show()
 ```
 
-
-    
-![png](output_3_0.png)
-    
+![output_3_0](../../images/2022-07-01-35_KNN(K_Nearest_Neighbor)_최근접이웃/output_3_0.png){: width="100%" height="100%"}
 
 
-
-    
-![png](output_3_1.png)
-    
-
-
+![output_3_1](../../images/2022-07-01-35_KNN(K_Nearest_Neighbor)_최근접이웃/output_3_1.png){: width="100%" height="100%"}
 
 ```python
 #seaborn 라이브러리의 lmplot()함수로 블로킹(BLK),3점슛,
@@ -251,15 +235,10 @@ plt.show()
 ```
 
 
-    
-![png](output_4_0.png)
-    
+![output_4_0](../../images/2022-07-01-35_KNN(K_Nearest_Neighbor)_최근접이웃/output_4_0.png){: width="100%" height="100%"}
 
 
-
-    
-![png](output_4_1.png)
-    
+![output_4_1](../../images/2022-07-01-35_KNN(K_Nearest_Neighbor)_최근접이웃/output_4_1.png){: width="100%" height="100%"}
 
 
 데이터 전처리
@@ -279,8 +258,6 @@ df.head()
 ```
 
 
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -290,7 +267,7 @@ df.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -351,8 +328,6 @@ df.head()
 </table>
 </div>
 
-
-
 전체 데이터를 무작위로 학습 데이터와 테스트 데이터로 분리한다.
 
 
@@ -376,7 +351,7 @@ print(test.shape[0])    #테스트 데이터의 행의 숫자
 
     80
     20
-    
+
 
 최적의 KNN파라미터 찾기
 
@@ -402,8 +377,6 @@ print(k_list)
 ```
 
     [3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39]
-    
-
 
 ```python
 #각각의 k별 10-fold 교차 검증 결과의 평균을
@@ -452,7 +425,7 @@ print(cross_validation_scores)
 ```
 
     [0.9, 0.925, 0.9375, 0.9375, 0.925, 0.925, 0.925, 0.9125, 0.9125, 0.9125, 0.9, 0.9, 0.8625, 0.875, 0.875, 0.85, 0.85, 0.85, 0.825]
-    
+
 
 각 k별로 출력된 정확도가 쉽게 이해되지 않기 대문에  
 시각화를 해서 최적의 k를 확인한다.
@@ -466,11 +439,7 @@ plt.show()
 ```
 
 
-    
-![png](output_16_0.png)
-    
-
-
+![output_16_0](../../images/2022-07-01-35_KNN(K_Nearest_Neighbor)_최근접이웃/output_16_0.png){: width="100%" height="100%"}
 
 ```python
 #예측율이 가장 높은 k를 선정한다.
@@ -488,7 +457,7 @@ print('최적의 k : {}'.format(optimal_k))
 ```
 
     최적의 k : 7
-    
+
 
 모델 테스트
 
@@ -517,15 +486,11 @@ print('정확도: {}'.format(accuracy_score(y_test.values.ravel(), predict)))
 ```
 
     정확도: 0.9
-    
-
 
 ```python
 comparison = pd.DataFrame({'실제값':y_test.values.ravel(), '예측값':predict})
 comparison
 ```
-
-
 
 
 <div>
@@ -537,7 +502,7 @@ comparison
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -655,8 +620,6 @@ comparison
 </table>
 </div>
 
-
-
 샘플 테스트
 
 
@@ -684,10 +647,6 @@ comparison
     1  SG
     
     샘플 테스트 정확도 : 1.0
-    
-
-
-
 
 <div>
 <style scoped>
@@ -698,11 +657,12 @@ comparison
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
 </style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -725,4 +685,3 @@ comparison
   </tbody>
 </table>
 </div>
-
