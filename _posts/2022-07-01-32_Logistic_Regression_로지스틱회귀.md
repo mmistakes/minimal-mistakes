@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "32_Logistic_Regression_로지스틱회귀"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
 공부 시간, 과외 시간 성적 사이의 관계는 좌표로  
 나타낼 때 형태가 직선으로 해결되는 선형 회귀를  
 사용하기에 적합했었다.  
@@ -45,12 +53,9 @@ yData=[i[1] for i in data] #합격여부
 print(xData)
 print(yData)
 ```
-
     [2, 4, 6, 8, 10, 12, 14]
     [0, 0, 0, 1, 1, 1, 1]
     
-
-
 ```python
 #기울기(a), y절편(b)값을 랜덤하게 정한다.
 #random_normal()함수는 tensorflow에서 정규
@@ -61,11 +66,8 @@ sess = tf.Session()
 sess.run(tf.global_variables_initializer())
 print('a={},b={}'.format(sess.run(a),sess.run(b)))
 ```
-
     a=[-0.60326647],b=[0.72928339]
     
-
-
 ```python
 #np.e : 넘파이에 지수값(2.718)을 의미하는 상수
 #print(np.e)
@@ -120,33 +122,3 @@ for i in range(320001):
     Epock:300000, loss:  0.001672, 기울기:  5.147820, y절편:-35.892983
     Epock:320000, loss:  0.001568, 기울기:  5.212394, y절편:-36.345051
     
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
