@@ -52,7 +52,7 @@ df
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -100,8 +100,6 @@ df
 </table>
 </div>
 
-
-
 학습 데이터 다듬기  
 사이킷런의 베이누이 나이브 베이즈 분류기(BernoulliNB)는 숫자만 다루기 때문에 True와 False를 1과 0으로 치환한다.  
 이메일 제목(email title)으로 학습을 진행하고 레이블은 label을 사용해서 스팸 메일인지 여부를 확인한다.
@@ -113,8 +111,6 @@ df
 ```
 
 
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -124,7 +120,7 @@ df
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -180,8 +176,6 @@ df
 </div>
 
 
-
-
 ```python
 # 학습에 사용할 데이터와 레이블로 값을 분리한다.
 df_x = df['email title']
@@ -198,8 +192,6 @@ s = set(['free', 'game', 'only', 'today', 'cheapest', 'flight', 'deal', 'limited
          'statement'])
 s
 ```
-
-
 
 
     {'attached',
@@ -221,8 +213,6 @@ s
      'your'}
 
 
-
-
 ```python
 # CountVectorizer() 함수는 이메일 제목에 출현한 단어를 오름차순으로 정렬해 단어의 위치로 행렬을 만들어 리턴한다.
 # 특정 단어가 출현할 경우 출현한 단어의 개수를 출현하지 않으면 0을 리턴한다.
@@ -233,8 +223,6 @@ x_train = cv.fit_transform(df_x)
 encoded_input = x_train.toarray()
 encoded_input
 ```
-
-
 
 
     array([[0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0],
@@ -256,8 +244,6 @@ cv.inverse_transform(encoded_input)
 ```
 
 
-
-
     [array(['free', 'game', 'only', 'today'], dtype='<U9'),
      array(['cheapest', 'deal', 'flight'], dtype='<U9'),
      array(['limited', 'offer', 'only', 'time', 'today'], dtype='<U9'),
@@ -266,15 +252,11 @@ cv.inverse_transform(encoded_input)
      array(['card', 'credit', 'statement', 'your'], dtype='<U9')]
 
 
-
-
 ```python
 # 고정된 벡터의 각 인덱스가 어떤 단어를 의미하는지 궁금하다면 get_feature_names() 함수로 각 인덱스에 해당되는 단어를 확인할
 # 수 있다.
 cv.get_feature_names()
 ```
-
-
 
 
     ['attached',
@@ -295,11 +277,9 @@ cv.get_feature_names()
      'today',
      'your']
 
-
-
 베르누이 나이브 베이즈 모델 학습하기  
 사이킷런의 베르누이 나이브 베이즈 분류기는 기본적으로 스무딩을 지원하므로 학습 데이터에 없던 단어가 테스트 데이터에 있어도 분류가 잘 진행된다.
-***
+
 라플라스 스무딩(Laplace Smoothing)  
 0이란 수는 곱셈과 나눗셈을 무력화시키는 값이므로 그 전에 아무리 의미있는 값이 도출된다 하더라도 마지막에 0을 곱해버리면 값은 0이 나온다. 이런 경우가 상당히 빈번하기 때문에 값을 0이 아닌 최소값(1회 등장)으로 보정을 하게 되는데 이를 라플라스 스무딩이라 한다.
 
@@ -311,11 +291,7 @@ bnb.fit(x_train, y_train)
 ```
 
 
-
-
     BernoulliNB()
-
-
 
 테스트 데이터로 테스트 한다.
 
@@ -344,15 +320,11 @@ print('정확도(accuracy): {}'.format(accuracy_score(y_test, predict)))
 ```
 
     정확도(accuracy): 0.8333333333333334
-    
-
 
 ```python
 comparsion = pd.DataFrame({'실제값': y_test, '예측값': predict})
 comparsion
 ```
-
-
 
 
 <div>
@@ -364,7 +336,7 @@ comparsion
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
