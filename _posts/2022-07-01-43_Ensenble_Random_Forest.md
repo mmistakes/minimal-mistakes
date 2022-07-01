@@ -6,24 +6,25 @@ tag : [review]
 search: true #false로 주면 검색해도 안나온다.
 ---
 
-앙상블(ensemble) 기법이란 여러 개의 분류 모델을 조합해서 더 나은 성능을 내는 방법이다.  
+앙상블(ensemble) 
+
+여러 개의 분류 모델을 조합해서 더 나은 성능을 내는 방법이다.  
 최근접 이웃, 서포트 벡터 머신, 의사결정 트리, 나이브 베이즈 분류 모델을 실습했는데 지금까지 실습한 여러 분류 모델을 조합해서 단일 모델모다 더 좋은 성능을 낸다.
-***
-배깅(bagging)의 어원은 부트스트랩(bootstrap)과 어그리게이팅(aggregating, 집계)에서 왔고 상당히 연주하기 힘든 바이올린 연주곡을 두세 명의 초급 바이올린 연주자가 나누어 연주함으로써 한 명의 중급 바이올린 연주자가 연주하는 것 보다 더 나은 연주를 할 수 있는 것과 유사하다.  
+
+배깅(bagging)
+
+부트스트랩(bootstrap)과 어그리게이팅(aggregating, 집계)에서 유례했따. 상당히 연주하기 힘든 바이올린 연주곡을 두세 명의 초급 바이올린 연주자가 나누어 연주함으로써 한 명의 중급 바이올린 연주자가 연주하는 것 보다 더 나은 연주를 할 수 있는 것과 유사하다.  
 중급 바이올린 연주자는 나름 잘 학습했지만 학습 데이터에 과대적합된 의사결정 트리라 볼 수 있다. 의사결정 트리의 단점은 쉽게 과적합된다는 것인데 배깅은 과대적합이 쉬운 모델에 상당히 적합한 앙상블이다.
-***
+
 랜덤 포레스트(random forest)  
+
 여러 의사결정 트리를 배깅을 적용해서 예측을 실행하는 모델이다.  
 배깅이 모든 분류 모델에서 적용 가능하지만 특히 과대적합되기 쉬운 의사결정 트리에 적용하면 확실히 과대적합을 줄여 성능이 높아지는 혜택을 보기 때문에 배깅은 많은 의사결정 트리 모델의 개선을 이뤘고 여러 개의 나무들이 모여있다는 개념에서 랜덤 포레스트라는 이름이 생겨났다.  
 의사결정 트리에서는 최적의 특징으로 트리를 분기하는 반면 랜덤 포레스트는 각 노드에 주어진 데이터를 샘플링해서 일부 데이터를 제외한 채 최적의 특징을 찾아 트리를 분기한다. 이러한 과정에서 랜덤 포레스트는 또 한 번 모델의 편향을 증가시켜 과대적합의 위험을 감소시킨다.
-***
+
 부스팅(Boosting)  
 여러 개의 분류기를 만들어 투표를 통해 예측값을 결정한다는 측면에서는 배깅과 동일하다.  
 배깅은 서로 다른 알고리즘에 기반한 여러 분류기를 병렬적으로 학습하는 반면에 부스팅은 동일한 알고리즘의 분류기를 순차적으로 학습해서 여러 개의 분류기를 만든 후 테스트할 때 가중 투표를 통해 예측값을 결정한다.
-
-
-
-
 
 ```python
 from IPython.display import Image
@@ -31,13 +32,7 @@ Image('./data/bootstrap.png', width=900)
 ```
 
 
-
-
-    
-![png](output_2_0.png)
-    
-
-
+![output_2_0](../../images/2022-07-01-43_Ensenble_Random_Forest/output_2_0.png){: width="100%" height="100%"}
 
 MNSIT 손글씨 데이터셋으로 랜덤 포레스트 모델과  
 의사 결정 트리 모델을 동일하게 학습시켜 두 모델의  
@@ -143,22 +138,13 @@ for i in range(len(dt_cv_scores)):
      8 : 0.82747
      9 : 0.81801
     10 : 0.82413
-    
-
 
 ```python
 Image('./data/nfold.png', width=900)
 #노랑색 : 자료분석, 하얀색 : 테스트
 ```
 
-
-
-
-    
-![png](output_11_0.png)
-    
-
-
+![output_11_0](../../images/2022-07-01-43_Ensenble_Random_Forest/output_11_0.png){: width="100%" height="100%"}
 
 
 ```python
@@ -199,8 +185,6 @@ for i in range(len(dt_cv_scores)):
      8 : 0.94823
      9 : 0.95102
     10 : 0.94823
-    
-
 
 ```python
 cv_dict = {'decision': dt_cv_scores, 'random_forest' : rf_cv_scores}
@@ -208,8 +192,6 @@ cv_dict = {'decision': dt_cv_scores, 'random_forest' : rf_cv_scores}
 df=pd.DataFrame(cv_dict)
 df
 ```
-
-
 
 
 <div>
@@ -221,7 +203,7 @@ df
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -290,25 +272,14 @@ df
 </div>
 
 
-
-
 ```python
 df.plot()
 ```
 
 
-
-
     <AxesSubplot:>
 
-
-
-
-    
-![png](output_14_1.png)
-    
-
-
+![output_14_1](../../images/2022-07-01-43_Ensenble_Random_Forest/output_14_1.png){: width="100%" height="100%"}
 
 ```python
 print('의사결정 트리 : {}'.format(np.mean(dt_cv_scores)))
@@ -317,4 +288,3 @@ print('랜덤 포레스트 : {}'.format(np.mean(rf_cv_scores)))
 
     의사결정 트리 : 0.8224047175667287
     랜덤 포레스트 : 0.94952017380509
-    
