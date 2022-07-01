@@ -18,7 +18,7 @@ tf.disable_v2_behavior()
     WARNING:tensorflow:From c:\python\lib\site-packages\tensorflow\python\compat\v2_compat.py:101: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
     Instructions for updating:
     non-resource variables are not supported in the long term
-    
+
 
 날씨 정보(최저 기온, 평균 기온, 최고 기온, 강수량)와 배추 가격은 어떤 상관 관계가 있는지 예측하는 AI를 만든다.  
 최저 기온(minTemp), 평균 기온(avgTemp), 최고 기온(maxTemp), 강수량(rainFall)이 평균 배추 가격(avgPrice)에 영향을 미칠 경우 가격을 예측한다.
@@ -34,10 +34,6 @@ price_data
 ```
 
     <class 'pandas.core.frame.DataFrame'>
-    
-
-
-
 
 <div>
 <style scoped>
@@ -48,7 +44,7 @@ price_data
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -171,8 +167,6 @@ price_data
 </div>
 
 
-
-
 ```python
 # 데이터프레임에 저장된 데이터를 텐서플로우에서 처리하기에 적합하도록 넘파이 배열 형태로 변환한다.
 data = np.array(price_data, dtype=np.float32)
@@ -181,10 +175,6 @@ data
 ```
 
     <class 'numpy.ndarray'>
-    
-
-
-
 
     array([[ 2.0100100e+07, -4.9000001e+00, -1.1000000e+01,  8.9999998e-01,
              0.0000000e+00,  2.1230000e+03],
@@ -201,8 +191,6 @@ data
              4.0000001e-01,  2.9010000e+03]], dtype=float32)
 
 
-
-
 ```python
 # 넘파이 배열에서 변화 요인 데이터(평균 기온, 최저 기온, 최고 기온, 강수량)으로 사용할 데이터를 뽑아낸다.
 xData = data[:, 1:5]
@@ -213,8 +201,6 @@ xData
 
     <class 'numpy.ndarray'>
     2
-    
-
 
 
 
@@ -243,8 +229,6 @@ yData
 
     <class 'numpy.ndarray'>
     2
-    
-
 
 
 
@@ -255,8 +239,6 @@ yData
            [2901.],
            [2901.],
            [2901.]], dtype=float32)
-
-
 
 
 ```python
@@ -279,8 +261,6 @@ print('a = {}, b = {}'.format(sess.run(a), sess.run(b)))
      [0.6775793 ]
      [0.06021261]
      [0.29406905]], b = [0.16309845]
-    
-
 
 ```python
 # 행렬의 적(곱셈) 연산을 이용해서 다변인 선형 회귀 모델의 가설 식을 세운다. => 예측값을 계산하는 식
@@ -324,8 +304,6 @@ for i in range(100001):
     Epoch:  90000, loss:  1825344.000, y:  2861.74
     Epoch:  95000, loss:  1825344.000, y:  2861.74
     Epoch: 100000, loss:  1825344.000, y:  2861.74
-    
-
 
 ```python
 # 학습이 완료되면 학습된 모델을 디스크에 저장한다.
@@ -337,17 +315,10 @@ print('학습된 모델을 저장했습니다.')
 ```
 
     학습된 모델을 저장했습니다.
-    
-
 
 ```python
 from IPython.display import Image
 Image('./data/model.png', width=900)
 ```
 
-
-
-
-    
-![png](output_11_0.png)
-    
+![output_11_0](../../images/2022-07-01-38_Baechu_Project/output_11_0.png){: width="100%" height="100%"}

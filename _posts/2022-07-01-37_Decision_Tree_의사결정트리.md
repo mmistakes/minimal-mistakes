@@ -27,8 +27,6 @@ import sklearn
 P^2 + Q^2 으로 계산하며 불순도를 측정하는 지표로 데이터의 통계적 분산정도를 정량화해서 표현한 것을 의미한다.  
 사이킷런의 의사결정 트리는 CART(Classification And Regression Tree) 타입의 의사결정 트리이며 CART는 트리의 노드마다 특징을 이진 분류하는 특징이 있기에 사이킷런은 트리를 구성할 때 지니 계수를 사용한다.
 
-
-
 ```python
 #군대의 지니계수가 더 커서, 판단하는데 더 유용하다.
 ```
@@ -39,14 +37,7 @@ from IPython.display import Image
 Image('./data/Decision_tree.png', width ='1000')
 ```
 
-
-
-
-    
-![png](output_3_0.png)
-    
-
-
+![output_3_0](../../images/2022-07-01-37_Decision_Tree_의사결정트리/output_3_0.png){: width="100%" height="100%"}
 
 데이터 획득
 district=>구, dong=>동, latitude=>위도, longitude=>경도  
@@ -116,8 +107,6 @@ train_df.head()
 ```
 
 
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -127,7 +116,7 @@ train_df.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -183,14 +172,10 @@ train_df.head()
 </div>
 
 
-
-
 ```python
 test_df=pd.DataFrame(dong_dict_list)
 test_df.head()
 ```
-
-
 
 
 <div>
@@ -202,7 +187,7 @@ test_df.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -258,8 +243,6 @@ test_df.head()
 </div>
 
 
-
-
 ```python
 sns.lmplot(data=train_df, x='longitude', y='latitude',
            fit_reg=False, hue='label', markers=['o','x','s','^'],
@@ -273,16 +256,9 @@ plt.title('dong visualization in 2D Plane')
 plt.show()
 ```
 
+![output_8_0](../../images/2022-07-01-37_Decision_Tree_의사결정트리/output_8_0.png){: width="100%" height="100%"}
 
-    
-![png](output_8_0.png)
-    
-
-
-
-    
-![png](output_8_1.png)
-    
+![output_8_1](../../images/2022-07-01-37_Decision_Tree_의사결정트리/output_8_1.png){: width="100%" height="100%"}
 
 
 데이터 전처리
@@ -329,8 +305,6 @@ print(y_encoded)
 ```
 
     [3 3 3 3 3 2 2 2 2 2 0 0 0 0 0 1 1 1 1 1]
-    
-
 
 ```python
 #DecisionTreeClassifier() 함수로 의사결정 트리를 학습시킨다.
@@ -357,8 +331,6 @@ print(np.c_[np.array([1,2,3]),np.array([4,5,6])])
     [[1 4]
      [2 5]
      [3 6]]
-    
-
 
 ```python
 def display_decision_surface(clf, x, y):
@@ -409,9 +381,7 @@ display_decision_surface(clf, x_train, y_encoded)
 ```
 
 
-    
-![png](output_19_0.png)
-    
+![output_19_0](../../images/2022-07-01-37_Decision_Tree_의사결정트리/output_19_0.png){: width="100%" height="100%"}
 
 
 의사결정 트리는 과대 적합되기가 상당히 쉬운 모델이다.  
@@ -436,9 +406,7 @@ display_decision_surface(clf, x_train, y_encoded)
 ```
 
 
-    
-![png](output_21_0.png)
-    
+ ![output_21_0](../../images/2022-07-01-37_Decision_Tree_의사결정트리/output_21_0.png){: width="100%" height="100%"}
 
 
 모델 테스트
@@ -459,15 +427,11 @@ print('정확도 : {}'.format(accuracy_score(y_test.values.ravel(),
 ```
 
     정확도 : 1.0
-    
-
 
 ```python
 comparison = pd.DataFrame({'실제값': y_test.values.ravel(), '예측값': le.classes_[pred]})
 comparison
 ```
-
-
 
 
 <div>
@@ -479,7 +443,7 @@ comparison
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -598,8 +562,6 @@ comparison
 </div>
 
 
-
-
 ```python
 # 정확도 예측 후 임의의 내용을 테스트 데이터를 만든다.
 dong_dict_list = [
@@ -625,10 +587,6 @@ comparison
 ```
 
     정확도: 0.6
-    
-
-
-
 
 <div>
 <style scoped>
@@ -639,7 +597,7 @@ comparison
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -682,8 +640,6 @@ comparison
 </table>
 </div>
 
-
-
 의사결정 트리 시각화 및 pdf 파일로 만들기
 
 
@@ -713,10 +669,5 @@ graph.render('seoul')
 graph
 ```
 
-
-
-
-    
-![svg](output_31_0.svg)
-    
+![output_31_0](../../images/2022-07-01-37_Decision_Tree_의사결정트리/output_31_0.svg){: width="100%" height="100%"}
 
