@@ -19,10 +19,7 @@ tf.disable_v2_behavior()
     Instructions for updating:
     non-resource variables are not supported in the long term
 
-
-![1](../../images/2022-07-01-38_Baechu_Project/1.png){: width="100%" height="100%"}
-***
-기상 정보: 기상자료개방포털(https://data.kma.go.kr) 가격 정보: 농산물유통정보(https://www.kamis.or.kr)
+![1](../../images/2022-07-01-38_Baechu_Project/1-165666632442188.png){: width="100%" height="100%"}
 
 
 ```python
@@ -320,4 +317,4 @@ from IPython.display import Image
 Image('./data/model.png', width=900)
 ```
 
-![output_11_0](../../images/2022-07-01-38_Baechu_Project/output_11_0.png){: width="100%" height="100%"}
+![output_11_0](../../images/2022-07-01-38_Baechu_Project/output_11_0.png)
