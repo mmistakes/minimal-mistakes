@@ -6,7 +6,7 @@ tag : [review]
 search: true #false로 주면 검색해도 안나온다.
 ---
 
-![1](../../images/2022-07-01-40_Gaussian_Naive_Bayes_가우시안나이브베이즈/1.png){: width="100%" height="100%"}
+![1](../../images/2022-07-01-40_Gaussian_Naive_Bayes_가우시안나이브베이즈/1-165666740611495.png){: width="100%" height="100%"}
 
 
 ```python
