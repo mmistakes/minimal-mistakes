@@ -36,7 +36,13 @@ df
 ```
 
 
-
+---
+layout: single
+title:  "41_Bernoulli_Naive_Bayes_베르누이나이브베이즈"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
 
 <div>
 <style scoped>
@@ -406,25 +412,3 @@ comparsion
   </tbody>
 </table>
 </div>
-
-
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
