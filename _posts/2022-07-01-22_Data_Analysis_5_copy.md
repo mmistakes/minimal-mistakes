@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "22_Data_Analysis_5"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
 ```python
 import warnings                   # 경고 메시지를 출력하고 싶지 않을 경우 import 한다.
 warnings.filterwarnings('ignore') # 경고 메시지를 출력하지 않는다. 경고 메시지를 보고싶다면 default로 지정한다.
