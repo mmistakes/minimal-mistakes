@@ -11,8 +11,9 @@ header:
 categories:
   - linux
   - linux-manual
-tags:
   - linux-concepto-de-comandos
+tags:
+  - linux-comandos-unix-linux
 page_css: 
   - /assets/css/mi-css.css
 ---

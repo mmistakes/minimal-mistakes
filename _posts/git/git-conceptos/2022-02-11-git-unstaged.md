@@ -13,9 +13,7 @@ categories:
   - git-basico
   - git-manual
 tags:
-  - git-grafo
-  - git-grafo-de-commits
-  - git-commits
+  - git-unstaged
 page_css: 
   - /assets/css/mi-css.css
 ---

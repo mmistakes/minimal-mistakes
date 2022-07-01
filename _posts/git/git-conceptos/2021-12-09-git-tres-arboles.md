@@ -13,7 +13,7 @@ categories:
   - git-basico
   - git-manual
 tags:
-  - git-tres arboles
+  - git-tres-arboles
 page_css: 
   - /assets/css/mi-css.css
 ---

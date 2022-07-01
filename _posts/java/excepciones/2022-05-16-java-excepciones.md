@@ -13,8 +13,8 @@ categories:
   - java-manual
 tags:
   - java-default
-  - java-throwable
   - java-excepciones
+  - java-throwable
 page_css: 
   - /assets/css/mi-css.css
 ---

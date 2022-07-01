@@ -13,7 +13,7 @@ categories:
   - git-basico
   - git-manual
 tags:
-  - git-Index
+  - git-index
   - git-staging area
 ---
 

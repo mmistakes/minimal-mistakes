@@ -11,9 +11,9 @@ header:
 categories:
   - linux
   - linux-comando
-  - linux-tldr
-tags:
   - linux-concepto-de-comandos
+tags:
+  - linux-tldr
 page_css: 
   - /assets/css/mi-css.css
 ---

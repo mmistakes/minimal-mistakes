@@ -12,7 +12,7 @@ categories:
   - linux
   - linux-manual
 tags:
-  - linux-comunicacion
+  - linux-gestion-de-archivos
 page_css: 
   - /assets/css/mi-css.css
 ---
