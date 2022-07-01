@@ -1,3 +1,12 @@
+---
+layout: single
+title:  "40_Gaussian_Naive_Bayes_가우시안나이브베이즈"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
+
 나이브 베이즈(naive bayes)는 확률 기반 머신러닝 분류 알고리즘이다.  
 나이브 베이즈 분류 알고리즘은 데이터를 나이브(단순)하고 독립적인 사건으로 가정하고 이 독립 사건들을 베이즈 이론(https://angeloyeo.github.io/2020/01/09/Bayes_rule.html) 에 대입시켜 가장 높은 확률의 레이블로 분류를 실행하는 알고리즘이다.  
 ***
@@ -518,20 +527,3 @@ comparsion
   </tbody>
 </table>
 </div>
-
-
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
