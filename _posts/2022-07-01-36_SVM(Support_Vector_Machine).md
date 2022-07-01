@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "36_SVM(Support_Vector_Machine)"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
 KNN알고리즘은 주변의 가까운 이웃들에게 물어봐서 대다수의  
 답변과 동일하게 답변하는 방법이다.  
 그러나 3명에게 물어봤을 때 2명이 거짓으로 대답한다면 예측은  
@@ -419,29 +427,3 @@ print(classification_report(y_true, y_pred))
        macro avg       0.96      0.94      0.95        20
     weighted avg       0.95      0.95      0.95        20
     
-    
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
