@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "35_KNN(K_Nearest_Neighbor)_최근접이웃"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
 ```python
 import warnings
 warnings.filterwarnings('ignore')
@@ -718,44 +726,3 @@ comparison
 </table>
 </div>
 
-
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
