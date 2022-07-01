@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Dior.Bae"
-  avatar           : "/Users/aeong/Documents/GitHub/bizbaeja.github.io/assets/img/sherlock.jpeg"
+  avatar           : "img/sherlock.jpeg"
   bio              : "코드스테이츠 FE39기 입니다"
   location         : "대한민국 서울특별시"
   #email            : https://bizbaeja.github.io/
@@ -291,7 +291,7 @@ defaults:
       share: true
       related: true
 
-   # _pages   
+# _pages
       - scope:
       path: "_pages"
       type: pages
