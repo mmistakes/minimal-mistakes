@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "43_Ensenble_Random_Forest"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
 앙상블(ensemble) 기법이란 여러 개의 분류 모델을 조합해서 더 나은 성능을 내는 방법이다.  
 최근접 이웃, 서포트 벡터 머신, 의사결정 트리, 나이브 베이즈 분류 모델을 실습했는데 지금까지 실습한 여러 분류 모델을 조합해서 단일 모델모다 더 좋은 성능을 낸다.
 ***
