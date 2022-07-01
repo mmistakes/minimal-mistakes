@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "37_Decision_Tree_의사결정트리"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
 ```python
 import warnings
 warnings.filterwarnings('ignore')
@@ -712,14 +720,3 @@ graph
 ![svg](output_31_0.svg)
     
 
-
-
-
-```python
-
-```
-
-
-```python
-
-```
