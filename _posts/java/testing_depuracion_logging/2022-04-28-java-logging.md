@@ -10,9 +10,9 @@ header:
   teaser: /assets/images/java/logo-java.jpg
 categories:
   - java
-  - java-logging
-tags:
   - java-manual
+tags:
+  - java-logging
 page_css: 
   - /assets/css/mi-css.css
 ---
