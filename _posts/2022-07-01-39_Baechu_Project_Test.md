@@ -18,8 +18,6 @@ tf.disable_v2_behavior()
     WARNING:tensorflow:From c:\python\lib\site-packages\tensorflow\python\compat\v2_compat.py:101: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
     Instructions for updating:
     non-resource variables are not supported in the long term
-    
-
 
 ```python
 X = tf.placeholder(dtype=tf.float32, shape=[None, 4])
@@ -43,8 +41,6 @@ rainFall = float(input('강수량: '))
     최저 온도: -3
     최고 온도: 10
     강수량: 10
-    
-
 
 ```python
 sess = tf.Session()
@@ -66,4 +62,3 @@ print('평균 온도: {0:.1f}, 최저 온도: {1:.1f}, 최고 온도: {2:.1f}, �
 
     INFO:tensorflow:Restoring parameters from ./model/saved.cpkt
     평균 온도: 5.0, 최저 온도: -3.0, 최고 온도: 10.0, 강수량: 10.0일 때 배추 가격은 2,972.2원 입니다.
-    

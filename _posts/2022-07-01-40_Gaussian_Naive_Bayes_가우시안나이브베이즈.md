@@ -6,18 +6,7 @@ tag : [review]
 search: true #false로 주면 검색해도 안나온다.
 ---
 
-
-나이브 베이즈(naive bayes)는 확률 기반 머신러닝 분류 알고리즘이다.  
-나이브 베이즈 분류 알고리즘은 데이터를 나이브(단순)하고 독립적인 사건으로 가정하고 이 독립 사건들을 베이즈 이론(https://angeloyeo.github.io/2020/01/09/Bayes_rule.html) 에 대입시켜 가장 높은 확률의 레이블로 분류를 실행하는 알고리즘이다.  
-***
-가우시안 나이브 베이즈(Gaussian Naive Bayes) 분류
-특징들의 값들이 정규 분포(가우시안 분포)돼 있다는 가정하에 조건부 확률을 계산하며 연속적인 성질이 있는 특성이 있는 데이터를 분류하는데 적합하다.
-***
-베르누이 나이브 베이즈(Bernoulli Naive Bayes) 분류
-데이터의 특징이 0 또는 1로 표현됐을 때 데이터의 출현 여부에 따라서 0 또는 1로 구분되는 데이터에 사용한다.
-***
-다항 분포 나이브 베이즈(Multinomial Naive Bayes) 분류
-데이터의 특징이 출현 횟수로 표현됐을 때 데이터의 출현 횟수에 따라 값을 달리한 데이터에 사용한다.
+![1](../../images/2022-07-01-40_Gaussian_Naive_Bayes_가우시안나이브베이즈/1.png){: width="100%" height="100%"}
 
 
 ```python
@@ -62,8 +51,6 @@ df
 ```
 
 
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -73,7 +60,7 @@ df
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -183,8 +170,6 @@ df
 <p>150 rows × 5 columns</p>
 </div>
 
-
-
 데이터 시각화
 
 
@@ -204,19 +189,10 @@ setosa_df['sepal length (cm)'].plot(kind='kde', ax=ax, secondary_y=True, title='
 ```
 
 
-
-
     <AxesSubplot:label='7c4da28c-cf85-45da-b77a-4f85ad551c0f'>
 
-
-
-
-    
-![png](output_8_1.png)
-    
-
-
-꽃 받침 너비
+![output_8_1](../../images/2022-07-01-40_Gaussian_Naive_Bayes_가우시안나이브베이즈/output_8_1.png){: width="100%" height="100%"}
+ 꽃 받침 너비
 
 
 ```python
@@ -226,16 +202,9 @@ setosa_df['sepal width (cm)'].plot(kind='kde', ax=ax, secondary_y=True, title='s
 ```
 
 
-
-
     <AxesSubplot:label='532e2c24-4336-4397-9be1-f9994c383ba2'>
 
-
-
-
-    
-![png](output_10_1.png)
-    
+![output_10_1](../../images/2022-07-01-40_Gaussian_Naive_Bayes_가우시안나이브베이즈/output_10_1.png){: width="100%" height="100%"}
 
 
 꽃잎 길이
@@ -248,16 +217,9 @@ setosa_df['petal length (cm)'].plot(kind='kde', ax=ax, secondary_y=True, title='
 ```
 
 
-
-
     <AxesSubplot:label='e6906f89-fd8e-4653-8523-68bdc1ca5ba7'>
 
-
-
-
-    
-![png](output_12_1.png)
-    
+![output_12_1](../../images/2022-07-01-40_Gaussian_Naive_Bayes_가우시안나이브베이즈/output_12_1.png){: width="100%" height="100%"}
 
 
 꽃잎 너비
@@ -270,16 +232,9 @@ setosa_df['petal width (cm)'].plot(kind='kde', ax=ax, secondary_y=True, title='s
 ```
 
 
-
-
     <AxesSubplot:label='814eba03-378b-41d4-876c-5f5ba9ad3e8b'>
 
-
-
-
-    
-![png](output_14_1.png)
-    
+![output_14_1](../../images/2022-07-01-40_Gaussian_Naive_Bayes_가우시안나이브베이즈/output_14_1.png){: width="100%" height="100%"}
 
 
 데이터 다듬기
@@ -296,7 +251,7 @@ print('꽃받침 길이, 꽃받침 너비, 꽃잎 길이, 꽃잎 너비(문제):
     x_train: 120, x_test: 30
     y_train: 120, y_test: 30
     꽃받침 길이, 꽃받침 너비, 꽃잎 길이, 꽃잎 너비(문제): [7.4 2.8 6.1 1.9], 품종(답): 2
-    
+
 
 가우시안 나이브 베이즈 모델 학습
 
@@ -307,11 +262,7 @@ model.fit(x_train, y_train)
 ```
 
 
-
-
     GaussianNB()
-
-
 
 테스트
 
@@ -331,8 +282,6 @@ print(classification_report(y_test, predict)) # 테스트 데이터의 실제값
         accuracy                           0.97        30
        macro avg       0.97      0.96      0.96        30
     weighted avg       0.97      0.97      0.97        30
-    
-    
 
 
 ```python
@@ -340,15 +289,11 @@ print('정확도(accuracy): {}'.format(accuracy_score(y_test, predict))) # # 테
 ```
 
     정확도(accuracy): 0.9666666666666667
-    
-
 
 ```python
 comparsion = pd.DataFrame({'실제값': y_test, '예측값': predict})
 comparsion
 ```
-
-
 
 
 <div>
@@ -360,7 +305,7 @@ comparsion
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
