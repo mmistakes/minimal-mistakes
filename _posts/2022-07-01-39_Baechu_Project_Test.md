@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "39_Baechu_Project_Test"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
 ```python
 import warnings
 warnings.filterwarnings('ignore')
@@ -59,23 +67,3 @@ print('평균 온도: {0:.1f}, 최저 온도: {1:.1f}, 최고 온도: {2:.1f}, �
     INFO:tensorflow:Restoring parameters from ./model/saved.cpkt
     평균 온도: 5.0, 최저 온도: -3.0, 최고 온도: 10.0, 강수량: 10.0일 때 배추 가격은 2,972.2원 입니다.
     
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
