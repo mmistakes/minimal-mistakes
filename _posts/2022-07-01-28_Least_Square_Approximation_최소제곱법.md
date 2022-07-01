@@ -38,8 +38,6 @@ df
 ```
 
 
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -49,7 +47,7 @@ df
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -88,8 +86,6 @@ df
 </div>
 
 
-
-
 ```python
 # 공부한 시간과 시험 점수 시각화
 plt.figure(figsize=[12,8])
@@ -98,9 +94,7 @@ plt.show()
 ```
 
 
-    
-![png](output_3_0.png)
-    
+   ![output_3_0](../../images/2022-07-01-28_Least_Square_Approximation_최소제곱법/output_3_0.png){: width="100%" height="100%"}
 
 
 기울기 공식 => ∑(x-x의 평균)(y-y의 평균) / ∑(x-x의 평균)(x-x의 평균)
@@ -113,8 +107,6 @@ print('공부한 시간의 평군 : {}, 시험 점수의 평균 : {}'.format(mea
 ```
 
     공부한 시간의 평군 : 5.0, 시험 점수의 평균 : 90.5
-    
-
 
 ```python
 # 기울기 공식이 분자를 계산하는 함수
@@ -128,8 +120,6 @@ print(dividend)
 ```
 
     46.0
-    
-
 
 ```python
 # 기울기 공식의 분모를 계산하는 함수
@@ -143,8 +133,6 @@ print(divisor)
 ```
 
     20.0
-    
-
 
 ```python
 divisor = sum([(i-mean_x)**2 for i in x])
@@ -152,7 +140,7 @@ print(divisor)
 ```
 
     20.0
-    
+
 
 기울기와 y절편을 계산한다.  
 y절편 공식 => y의 평균 - (x의 평균 * 기울기)
