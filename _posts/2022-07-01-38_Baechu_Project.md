@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "38_Baechu_Project"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
 ```python
 import warnings
 warnings.filterwarnings('ignore')
@@ -343,20 +351,3 @@ Image('./data/model.png', width=900)
     
 ![png](output_11_0.png)
     
-
-
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
