@@ -15,18 +15,18 @@
 minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast",  "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "dev_Dior's_tilog"
+locale                   : "ko-KR"
+title                    : "디벨롭_Dior's_Tilog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Dior.Bizbae"
-description              : "Do you love Highend?"
+description              : "코딩 마스터피스를 꿈꾸는_(Do you love Highend?)"
 url                      :  "https://bizbaeja.github.io"
-baseurl                  :  # "/bizbaeja.github.io/"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+baseurl                  :  "https://www.youtube.com/watch?v=5DDP1mYxcbI"
+repository               : "https://github.com/bizbaeja?tab=repositories"
 teaser                   : "/assets/img/Dior.jpeg" # path of fallback teaser image, e.g. 
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+logo                     :  "/assets/images"
+masthead_title           : "Masterpiece!"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -105,11 +105,11 @@ analytics:
 # Site Author
 author:
   name             : "Dior.Bae"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : #"I am an **amazing** person."
-  location         : #"Somewhere"
-  email            :
-  links:
+  avatar           : "/assets/img/sherlock.jpeg"
+  bio              : "코드스테이츠 FE39기 입니다"
+  location         : "대한민국 서울특별시"
+  #email            : https://bizbaeja.github.io/
+  #links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
@@ -218,7 +218,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -290,6 +290,13 @@ defaults:
       comments:  true
       share: true
       related: true
-      
+
+   # _pages   
+      - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 category_dir: category/
 tag_dir: tag/
