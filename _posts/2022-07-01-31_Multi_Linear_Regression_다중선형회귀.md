@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "31_Multi_Linear_Regression_다중선형회귀"
+categories : python
+tag : [review]
+search: true #false로 주면 검색해도 안나온다.
+---
+
 ```python
 import warnings 
 warnings.filterwarnings('ignore')
@@ -100,65 +108,5 @@ for i in range(3001):
 #Sgimoid함수 미분 정리
 
 #https://devlog.jwgo.kr/2018/04/16/sigmoid-graph-according-to-slope-change/
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
 
 ```
