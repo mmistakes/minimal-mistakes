@@ -25,14 +25,7 @@ from IPython.display import Image
 Image('./sigmoid.png', width ='800')
 ```
 
-
-
-
-    
-![png](output_1_0.png)
-    
-
-
+![output_1_0](../../images/2022-07-01-32_Logistic_Regression_로지스틱회귀/output_1_0.png){: width="100%" height="100%"}
 
 
 ```python
@@ -55,7 +48,7 @@ print(yData)
 ```
     [2, 4, 6, 8, 10, 12, 14]
     [0, 0, 0, 1, 1, 1, 1]
-    
+
 ```python
 #기울기(a), y절편(b)값을 랜덤하게 정한다.
 #random_normal()함수는 tensorflow에서 정규
@@ -67,7 +60,7 @@ sess.run(tf.global_variables_initializer())
 print('a={},b={}'.format(sess.run(a),sess.run(b)))
 ```
     a=[-0.60326647],b=[0.72928339]
-    
+
 ```python
 #np.e : 넘파이에 지수값(2.718)을 의미하는 상수
 #print(np.e)
@@ -121,4 +114,4 @@ for i in range(320001):
     Epock:280000, loss:  0.001791, 기울기:  5.078815, y절편:-35.409884
     Epock:300000, loss:  0.001672, 기울기:  5.147820, y절편:-35.892983
     Epock:320000, loss:  0.001568, 기울기:  5.212394, y절편:-36.345051
-    
+

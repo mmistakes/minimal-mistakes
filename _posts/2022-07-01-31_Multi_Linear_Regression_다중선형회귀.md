@@ -18,8 +18,6 @@ tf.disable_v2_behavior()
     WARNING:tensorflow:From c:\python\lib\site-packages\tensorflow\python\compat\v2_compat.py:101: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
     Instructions for updating:
     non-resource variables are not supported in the long term
-    
-
 
 ```python
 data = [[2,0,81],[4,4,93],[6,2,91],[8,3,97]] #[공부한 시간(x1), 과외 수업 시간(x2) 실제 성적(y)]
@@ -42,8 +40,6 @@ print('a1={},a2={},b={}'.format(sess.run(a1),sess.run(a2), sess.run(b)))
 ```
 
     a1=[1.6001141],a2=[1.2594676],b=[59.424484]
-    
-
 
 ```python
 #예측 성적(y)을 얻기위한 가설(수식)을 만든다.
@@ -100,8 +96,6 @@ for i in range(3001):
     Epoch : 2600, RMSE :  1.8371, 기울기1 :  1.2301, 기울기2 :  2.1633, y절편 : 77.8113
     Epoch : 2800, RMSE :  1.8371, 기울기1 :  1.2301, 기울기2 :  2.1633, y절편 : 77.8113
     Epoch : 3000, RMSE :  1.8371, 기울기1 :  1.2301, 기울기2 :  2.1633, y절편 : 77.8113
-    
-
 
 ```python
 #http://taewan.kim/post/sigmoid_diff/
