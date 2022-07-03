@@ -1,6 +1,6 @@
 ---
+---
 # Only the main Sass file needs front matter (the dashes are enough)
-@import "minimal-mistakes/skins/custum"
 search: false
 ---
 
@@ -8,7 +8,3 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-x
-.utterances {
-    max-width: 100% !important;
-}
