@@ -23,15 +23,15 @@ for i in range(257):
                 
             # 붙이기   
             else:
-                min_tg += graph[j][k]
+                min_tg += i - graph[j][k] 
                 
         
     if B + max_tg >= min_tg:
         time_cnt = max_tg * 2 + min_tg
-        if ans > time_cnt:
+        if ans >= time_cnt:
             ans = time_cnt
             height = i
         
-    time_cnt = 0
+    
            
 print(ans, height)
