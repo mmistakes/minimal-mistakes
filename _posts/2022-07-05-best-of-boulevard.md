@@ -22,7 +22,7 @@ Manchmal reicht auch schon das Grafikdesign um sich in dieser Liste zu verewigen
 
 
 ## #1
-![Hoden weg1](../assets/images/bob/06-2022/legat.JPG)
+![Hoden weg](../assets/images/bob/06-2022/legat.JPG)
 
 
 ## Honorable Mentions
