@@ -9,12 +9,7 @@ queue = deque()
 
 for i in range(N):
     graph.append(list(map(int, sys.stdin.readline().rstrip())))
-    
-# for i in range(N):
-#     for j in range(M):
-#         if graph[i][j] == 1:
-#             queue.append([i, j])
-            
+       
 dx = [-1, 0, 0, 1]
 dy = [0, -1, 1, 0]
 
