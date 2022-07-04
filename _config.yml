@@ -105,8 +105,8 @@ analytics:
 # Site Author
 author:
   name             : "Dior.Bae"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : #"I am an **amazing** person."
+  avatar           : "/assets/sherlock.jpeg"
+  bio              : "코드스테이츠 FE39기 입니다"
   location         : #"Somewhere"
   email            :
   links:
