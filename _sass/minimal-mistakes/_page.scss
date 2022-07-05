@@ -329,8 +329,9 @@ body {
    ========================================================================== */
 
 .page__taxonomy {
+  margin-top: -10px;
   .sep {
-    display: none;
+    display: inline;
   }
 
   strong {
@@ -338,20 +339,42 @@ body {
   }
 }
 
-.page__taxonomy-item {
-  display: inline-block;
+.page__taxonomy-item-tag {
+  display: inside;
   margin-right: 5px;
   margin-bottom: 8px;
-  padding: 5px 10px;
+  padding: 3px 8px;
   text-decoration: none;
-  border: 1px solid mix(#000, $border-color, 25%);
+  border: 1px solid $background-color;
   border-radius: $border-radius;
+  background-color: #4D5357;
+  font-family: $serif;
+  color: $primary-color;
 
   &:hover {
     text-decoration: none;
-    color: $link-color-hover;
+    color: mix(#00adb5, $text-color, 40%); /* 커서 댈 때 색깔 */
   }
 }
+
+.page__taxonomy-item-category {
+  display: inside;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  padding: 3px 8px;
+  text-decoration: none;
+  border: 1px solid $background-color;
+  border-radius: $border-radius;
+  background-color: mix(#fff, #4D5357, 18%);
+  font-family: $serif;
+  color: mix(#fff, $primary-color, 2%);;
+
+  &:hover {
+    text-decoration: none;
+    color: mix(#00adb5, $text-color, 40%); /* 커서 댈 때 색깔 */
+  }
+}
+
 
 .taxonomy__section {
   margin-bottom: 2em;
