@@ -110,8 +110,8 @@ author:
   name             : "Daejoon Cho"
   avatar           : "/assets/images/my_image.jpg"
   bio              : "I am an **amazing** person."
-  location         : "Penta Security Systems, Inc:rainbow:"
-  email            :
+  location         : "Penta Security Systems, Inc"
+  email            : "eowns36@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
