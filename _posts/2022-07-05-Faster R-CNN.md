@@ -204,11 +204,6 @@ toc_sticky: true
         
         &nbsp;
         
-        
-        
-        &nbsp;
-        
-        
 
 ### Detection
 
