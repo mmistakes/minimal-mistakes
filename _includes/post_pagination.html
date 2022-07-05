@@ -1,14 +1,30 @@
-{% if page.previous or page.next %}
-  <nav class="pagination">
-    {% if page.previous %}
-      <a href="{{ page.previous.url | relative_url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+{% assign cat = page.categories[0] %}
+{% assign cat_list = site.categories[cat] %}
+{% for post in cat_list %}
+  {% if post.url == page.url %}
+  	{% assign prevIndex = forloop.index0 | minus: 1 %}
+  	{% assign nextIndex = forloop.index0 | plus: 1 %}
+  	{% if forloop.first == false %}
+  	  {% assign next_post = cat_list[prevIndex] %}
+  	{% endif %}
+  	{% if forloop.last == false %}
+  	  {% assign prev_post = cat_list[nextIndex] %}
+  	{% endif %}
+  	{% break %}
+  {% endif %}
+{% endfor %}
+
+{% if prev_post or next_post %}
+  <nav class="pagination_prev_next">
+    {% if prev_post %}
+      <a href="{{ prev_post.url }}" class="pagination_prev_next--pager"><span class="prev_next">이전 글  &nbsp</span>{{ prev_post.title }}</a>
     {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+      <a href="#" class="pagination_prev_next--pager disabled">첫 번째 글입니다</a>
     {% endif %}
-    {% if page.next %}
-      <a href="{{ page.next.url | relative_url }}" class="pagination--pager" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+    {% if next_post %}
+      <a href="{{ next_post.url }}" class="pagination_prev_next--pager"><span class="prev_next">다음 글  &nbsp  </span>{{ next_post.title }}</a>
     {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+      <a href="#" class="pagination_prev_next--pager disabled">가장 최근 글입니다</a>
     {% endif %}
   </nav>
 {% endif %}
