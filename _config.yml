@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 timezone                 : Asia/Seoul
-title                    : "DJCHO 노트"
+title                    : "배움을 기록하는 블로그⛵"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Daejoon Cho"
-description              : "배움을 기록하는 블로그📕"
+description              : "Today I Learned📌"
 url                      : "https://djcho.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
