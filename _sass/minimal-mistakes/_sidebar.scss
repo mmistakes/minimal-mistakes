@@ -89,13 +89,6 @@
       position: sticky;
       top: 2em;
       float: right;
-
-      .toc {
-        .toc__menu {
-          overflow-y: auto;
-          max-height: calc(100vh - 7em);
-        }
-      }
     }
   }
 
@@ -103,6 +96,13 @@
     width: $right-sidebar-width;
     margin-right: -1 * $right-sidebar-width;
   }
+}
+
+.sidebar__top {
+  position: fixed;
+  bottom: 1.5em;
+  right: 2em;
+  z-index: 10;
 }
 
 .splash .sidebar__right {
@@ -168,20 +168,28 @@
 
   @include breakpoint($large) {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 }
 .sidebar .author__name {
   font-family: $gowundodum;
-  font-size: $type-size-5;
+  font-size: $type-size-4;
 }
 
 .author__bio {
   margin: 0;
+  font-family: $cute;
+  font-size: $type-size-4;
 
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 20px;
+  }
+  
+  p {
+    font-family: $cute;
+    margin-top: 1.6px;
+    margin-bottom: 3px;
   }
 }
 

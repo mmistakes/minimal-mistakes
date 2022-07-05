@@ -69,13 +69,10 @@ body {
 }
 
 .page__title {
+  font-family: $cute;
   margin-top: 0;
-  line-height: 1;
-
-  a {
-    color: $text-color;
-    text-decoration: none;
-  }
+  line-height: 1.2;
+  color: mix(#fff, $primary-color, 40%);
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -88,6 +85,7 @@ body {
 }
 
 .page__content {
+  margin-top: 20px;
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
