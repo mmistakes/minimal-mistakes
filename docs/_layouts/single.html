@@ -64,28 +64,18 @@ layout: default
 
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
-    <div class="page__related">
-      <div align="center" style="margin: 1em 0;">
-        <ins class="adsbygoogle"
-              style="display:block; border-bottom: initial;"
-              data-ad-client="ca-pub-7328585512091257"
-              data-ad-slot="3049671934"
-              data-ad-format="auto"
-              data-full-width-responsive="true"></ins>
-      </div>
-      <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
-      <div class="grid__wrapper">
-        {% for post in site.related_posts limit:4 %}
-          {% include archive-single.html type="grid" %}
+    <div class="page__related"> <!--site.data.ui-text[site.locale].related_label-->
+      <h4 class="page__related-title">{{ "최근 글 10 개📚" }}</h4>
+        {% for post in site.related_posts limit:10 %}
+          {% include archive-single3.html %}
         {% endfor %}
-      </div>
     </div>
   {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
   {% elsif page.id and page.related %}
     <div class="page__related">
-      <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
+      <h4 class="page__related-title">{{ "최근 글" }}</h4>
       <div class="grid__wrapper">
-        {% for post in site.posts limit:4 %}
+        {% for post in site.posts limit:3 %}
           {% if post.id == page.id %}
             {% continue %}
           {% endif %}
