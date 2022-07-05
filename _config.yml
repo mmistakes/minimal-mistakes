@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "ko-KR"
 timezone                 : Asia/Seoul
-title                    : "배움을 기록하는 블로그⛵"
+title                    : "배움을 기록하는 블로그📌"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Daejoon Cho"
@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Daejoon Cho"
   avatar           : "/assets/images/profile_photo.jpg"
-  bio              : "Today I Learned📌"
+  bio              : "Today I Learned..✏️"
   location         : "South Korea"
   email            : 
   links:

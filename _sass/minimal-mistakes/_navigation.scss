@@ -456,7 +456,8 @@
     font-size: $type-size-4;
     font-family: $gowundodum;
     color: mix(#fff,$primary-color,50%);
-
+    margin-left: 2em;
+    
     &:hover {
       text-decoration: underline;
     }
