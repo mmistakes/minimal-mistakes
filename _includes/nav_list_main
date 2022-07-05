@@ -11,22 +11,45 @@
         📃 <span style="font-family:'GowunDodum-Regular';">전체 글 수</style> <span style="font-family:'GowunDodum-Regular';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
       </li>
       <li>
-        <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-        <span class="nav__sub-title">📂 C/C++/C#</span>
+        <!--span 태그로 카테고리들을 크게 분류 ex) Python-->
+        <span class="nav__sub-title">📂 Python</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
-                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                <!--Python 카테고리 글들을 모아둔 페이지인 /categories/python 주소의 글로 링크 연결-->
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
+                    {% if category[0] == "Python" %}
+                        <li><a href="/categories/python" class="">Python ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">📂 C/C++/C#</span>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "Cpp" %}
-                        <li><a href="/categories/cpp" class="">C ++ ({{category[1].size}})</a></li>
+                        <li><a href="/categories/cpp" class="">C++ ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Python" %}
-                        <li><a href="/categories/python" class="">Python ({{category[1].size}})</a></li>
+                    {% if category[0] == "Csharp" %}
+                        <li><a href="/categories/csharp" class="">C# ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+         <span class="nav__sub-title">📂 Windows</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Winsys" %}
+                        <li><a href="/categories/winsys" class="">시스템 프로그래밍({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Win32" %}
+                        <li><a href="/categories/win32" class="">Win32 API({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -45,6 +68,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        
       </li>
       <li>	
         <br>      
