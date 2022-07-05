@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Daejoon Cho"
-  avatar           : "/assets/images/my_image.jpg"
+  avatar           : "/assets/images/profile_photo.jpg"
   bio              : "자기개발 블로그"
   location         : "South Korea"
   email            : "eowns36@gmail.com"
