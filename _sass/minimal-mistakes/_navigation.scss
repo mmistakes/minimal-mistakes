@@ -453,7 +453,7 @@
   font-size: 1.25rem;
 
   a {
-    font-size: $type-size-3;
+    font-size: $type-size-4;
     font-family: $gowundodum;
     color: mix(#fff,$primary-color,50%);
 
@@ -500,7 +500,7 @@
   margin: 0;
   padding: 0.5rem 0.75rem;
   font-family: $sans-serif-narrow;
-  font-size: $type-size-5;
+  font-size: $type-size-3;
   font-weight: bold;
 }
 
@@ -508,8 +508,9 @@
   display: block;
   margin: 0.5rem 0;
   padding: 0.25rem 0;
-  font-size: $type-size-3;
-  font-family: $serif;
+  font-size: $type-size-4;
+  font-family: $sans-serif;
+  font-weight: bold;
   color: mix(#fff,$primary-color,35%);
   border-bottom: 1px solid $border-color;
 }
