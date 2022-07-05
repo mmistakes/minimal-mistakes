@@ -20,8 +20,8 @@ timezone                 : Asia/Seoul
 title                    : "DJCHO 노트"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Djcho"
-description              : "An amazing website."
+name                     : "Daejoon Cho"
+description              : "배움을 기록하는 블로그📕"
 url                      : "https://djcho.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -109,8 +109,8 @@ analytics:
 author:
   name             : "Daejoon Cho"
   avatar           : "/assets/images/my_image.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Penta Security Systems, Inc"
+  bio              : "자기개발 블로그"
+  location         : "South Korea"
   email            : "eowns36@gmail.com"
   links:
     - label: "Email"
