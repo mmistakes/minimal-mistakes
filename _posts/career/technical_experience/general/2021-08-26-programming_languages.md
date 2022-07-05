@@ -22,27 +22,27 @@ header:
 
 # Overview
 
-Throughout my career, I have had the opportunity to program in several languages, as well as support applications that are written in those languages. Both roles have helped me understand application development more deeply. As a developer, you focus on functionality and capability; as support, you focus on performance and deliverability.
+Throughout my career, I have had the opportunity to program in several languages and support applications written in those languages. Both roles have helped me understand application development more deeply. As a developer, you focus on functionality and capability; as support, you focus on performance and deliverability.
 
-Having insight into both roles helped me understand that code should not only be written to solve the problem but to fit in harmoniously in technical infrastructure. While some developers code in a vacuum and some operational engineers focus solely on execution, the end goal should be for both sides to be mindful of one and other and to work together. For any technical infrastructure to be mature, Dev and Ops must come together.
+Having insight into both roles helped me understand that code should not only be written to solve the problem but to fit in harmoniously with technical infrastructure. While some developers code in a vacuum and some operational engineers focus solely on execution, the end goal should be for both sides to be mindful of one and other and to work together. For any technical infrastructure to be mature, Dev and Ops must come together.
 
 In this post, I explain my understanding of some of my favorite programming languages, and my experience with them from both sides.
 
 # Python
 
-Python holds a special place in my heart as its the first programming language I learned. I learned Python by watching videos from [Corey Shafer](https://www.youtube.com/c/Coreyms), reading Dan Bader's book, [Python Tricks](https://realpython.com/products/python-tricks-book/), and most importantly, writing a lot of code. I learned programming fundamentals in Python, and I relearned how to write clean code in Python, as well.
+Python holds a special place in my heart as its the first programming language I learned. I learned Python by watching videos from [Corey Shafer](https://www.youtube.com/c/Coreyms), reading Dan Bader's book, [Python Tricks](https://realpython.com/products/python-tricks-book/), and, most importantly, writing a lot of code. I also learned programming fundamentals in Python and relearned how to write clean code in Python.
 
 **I have worked with** _**Python**_ **in the following capacity:**
 
-- I have used Python to write code in Production. Some of the libraries I leveraged were Pandas, NumPy, JSON, Requests, and Logging.
+- I have used Python to write code in production. Some of the libraries I leveraged were Pandas, NumPy, JSON, Requests, and Logging.
 
 - I have used Python for ETL, data engineering, monitoring, general scripting, automation, releases, and many other ways.
 
 **I know** _**Python**_ **to the following level:**
 
-- I understand the core fundamentals of Python and utilize them to write simple, clean, and efficient code.
+- I understand the core fundamentals of Python and utilize them for writing simple, clean, and efficient code.
 
-- I can easily express my ideas in Python without having to refer to external resources (AKA Google).
+- I can easily express my ideas in Python without referring to external resources (AKA Google).
 
 **This is how I would like to continue my growth and understanding of** _**Python:**_
 
@@ -52,7 +52,7 @@ Python holds a special place in my heart as its the first programming language I
 
 # C++
 
-Although Python was the first language I learned to program in, applications written in C++ were the first that I ever supported. I was exposed to C++ as an SRE, and I learned to configure the application for maximum performance and minimal latency. After learning Python I spent many months [learning C++](https://www.youtube.com/c/TheChernoProject), and after a long road, I can proudly say I can comfortably write code in C++.
+Although Python was the first language I learned to program in, applications written in C++ were the first that I ever supported. I was exposed to C++ as an SRE, and I learned to configure the application for maximum performance and minimal latency. After learning Python, I spent many months [learning C++](https://www.youtube.com/c/TheChernoProject), and after a long road, I can proudly say I can comfortably write code in C++.
 
 Learning C++ as a developer and an operation engineer really opened my eyes to the intricacies and depth of application development. I was exposed to so many new concepts, both from a programmatic perspective and from a functional perspective.
 
@@ -106,21 +106,21 @@ C’s simplicity is what makes it stand out to me and millions of other develope
 
 # Go
 
-Go is a new language for me, and one that I am enjoying thoroughly. As someone who enjoys the complexity of low-level applications and languages, yet likes the simple syntax of high-level languages, Go was a must learn. Through books and simple practice, I have been learning Go and learning the best practices of the language.
+As someone who enjoys the complexity of low-level applications and languages, yet likes the simple syntax of high-level languages, Go was a must-learn. Through books and simple practice, I have been learning Go and learning the best practices of the language.
 
-Although I am new to Go, I can see myself working as a Go developer in the future. There are lots of features and concepts within Go that I am a fan of.
+I have contributed open-source code in the blockchain space using Golang. There are lots of features and concepts within Go that I am a fan of.
 
 **I have worked with** _**Go**_ **in the following capacity:**
 
-- I have utilized applications in Go such as Terraform and understand them at a deep level. This understanding gives me some insight into the capabilities and functionalities of Go.
+- I have provided organizational-level value by writing applications in Go from scratch, testing, deploying, monitoring, and maintaining them.
 
-- I have worked through the [“Go By Example”](https://gobyexample.com/) syllabus.
+- I have worked on various open-source repositories within the blockchain space, such as a fork of go-ethereum, and provided core contributions.
 
-- I have written code in Go to grasps all of its built-in features.
+- I have utilized applications in Go, such as Terraform, and understand them deeply. This understanding gives me some insight into the capabilities and functionalities of Go.
 
 **I know** _**Go**_ **to the following level:**
 
-- I understand _many_ best practices within Go, as well as the general concepts within the language.
+- I understand the best practices within Go, as well as the general concepts within the language.
 
 - I understand when to use specific Go features to conform to best practices and maximize efficiency.
 
@@ -128,7 +128,7 @@ Although I am new to Go, I can see myself working as a Go developer in the futur
 
 **This is how I would like to continue my growth and understanding of** _**Go:**_
 
-- I would like the opportunity to write production-level code in Go down the road.
+- I want to continue providing value in the blockchain and open-source space by writing code in Golang.
 
 # Scala
 

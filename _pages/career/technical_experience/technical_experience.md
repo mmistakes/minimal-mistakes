@@ -70,6 +70,52 @@ The following links highlight a few projects that I’ve worked on in some of my
 
 - [**Microwave**](/categories/career/technical_experience/microwave) - At Societe General, I worked closely with our Microwave instances. Learn about my experience configuring, analyzing, testing, upgrading, and architecting solutions for Microwaves [here](/categories/career/technical_experience/internal_trading_market).
 
+# Open-Source Contributions
+
+## Terraform - Microsoft Azure
+
+The following contributions were made to Azure’s Cloud Architecture Framework (CAF), where I worked directly with the leaders in cloud automation.
+
+- [Storage Account Management](https://github.com/aztfmod/terraform-azurerm-caf/pull/658)
+
+- [File Storage Solution](https://github.com/aztfmod/terraform-azurerm-caf/pull/626/files)
+
+- [Custom Data Logic for Azure VM](https://github.com/aztfmod/terraform-azurerm-caf/pull/667)
+
+- [Azure VM Disk Creation](https://github.com/aztfmod/terraform-azurerm-caf/pull/688/files)
+
+- [Azure Cognitive Services](https://github.com/aztfmod/terraform-azurerm-caf/pull/604)
+
+## Vulcanize - Blockchain-Specific Contributions
+
+At Vulcanize I contributed blockchain specific code in Golang, wrote entire testing and deployment frames works, and maintained a Geth Fork.
+
+- go-ethereum [Fork](https://github.com/vulcanize/go-ethereum/tree/v1.10.19-statediff-v5) - The commit history is hard to decipher due to the rebase strategy.
+
+  - [Updates for capturing known gaps while head tracking.](https://github.com/vulcanize/go-ethereum/pull/217/files)
+
+  - [Updates for capturing RLP encoded uncles (Ommers).](https://github.com/vulcanize/go-ethereum/pull/250)
+
+  - [Handling Geth Patches with complex conflicts.](https://github.com/vulcanize/go-ethereum/pull/222)
+
+- [Stack Orchestrator](https://github.com/vulcanize/stack-orchestrator) - I am the primary maintiner of the repository. This repo is utilized for complex CI/CD pipelines, docker deploments, local testing, and starting geth in a local private network with deterministic behaviors.
+
+- ipld-eth-db - [A database](https://github.com/vulcanize/ipld-eth-db/commits?author=abdulrabbani00) that captures all events on the Ethereum Execution Layer.
+
+- ipld-eth-server - [An application](https://github.com/vulcanize/ipld-eth-server/commits?author=abdulrabbani00) that server’s Ethereum specific data in an IPLD format.
+
+## Ethereum Kubernetes Testnet
+
+I created a [pull request](https://github.com/skylenet/ethereum-k8s-testnets/pull/16) to improve the Terraform deployments for deploying Kubernetes testnets.
+
+## Foundry - Smart Contract Testing
+
+Containerizing the testing framework (Co-Author)
+
+- [Initial PR](https://github.com/foundry-rs/foundry/pull/914)
+
+- [Final PR](https://github.com/foundry-rs/foundry/pull/981)
+
 # Past Experience
 
 Here I capture a few of my past roles of great significance.
