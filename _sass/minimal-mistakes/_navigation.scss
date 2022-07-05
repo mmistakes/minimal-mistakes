@@ -126,7 +126,7 @@
   /* next/previous buttons */
   &--pager {
     display: block;
-    padding: 1em 2em;
+    padding: 0.3em 2em;
     //float: left;
     width: 100%;
     font-family: $sans-serif;
@@ -144,7 +144,7 @@
     }
 
     &:hover {
-      @include yiq-contrasted($muted-text-color);
+      @include yiq-contrasted($mix(#fff,$primary-color,30%));
     }
 
     &:first-child {
