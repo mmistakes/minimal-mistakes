@@ -20,3 +20,8 @@ jobs:
 
               [1]: https://mmistakes.github.io/minimal-mistakes/
               [2]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
+      - uses: sudo-bot/action-pull-request-lock@v1.0.5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          number: ${{ github.event.pull_request.number }}
+          lock-reason: spam
