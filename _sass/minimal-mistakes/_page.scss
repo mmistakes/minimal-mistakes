@@ -137,20 +137,6 @@ body {
     }
   }
 
-  :not(pre) > code {
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
-    font-size: 0.8em;
-    background: $code-background-color;
-    border-radius: $border-radius;
-
-    &::before,
-    &::after {
-      letter-spacing: -0.2em;
-      content: "\00a0"; /* non-breaking space*/
-    }
-  }
-
   dt {
     margin-top: 1em;
     font-family: $sans-serif;
@@ -287,7 +273,7 @@ body {
 
 .page__share-title {
   margin-bottom: 10px;
-  font-size: $type-size-6;
+  font-size: $type-size-5;
   text-transform: uppercase;
 }
 
@@ -312,7 +298,7 @@ body {
 
 .page__meta-title {
   margin-bottom: 10px;
-  font-size: $type-size-6;
+  font-size: $type-size-5;
   text-transform: uppercase;
 }
 
@@ -411,7 +397,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   margin: 1.414em 0;
   padding: 0;
-  font-size: 0.75em;
+  font-size: 1.3em;
   list-style: none;
 
   @include breakpoint($large) {
@@ -436,7 +422,7 @@ body {
   display: block;
   clear: both;
   color: $muted-text-color;
-  font-size: 0.6em;
+  font-size: 0.9em;
   text-transform: uppercase;
   text-align: right;
   text-decoration: none;
