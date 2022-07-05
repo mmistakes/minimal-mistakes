@@ -72,7 +72,7 @@ body {
   font-family: $gowundodum;
   margin-top: 0;
   line-height: 1.2;
-  color: mix(#fff, $primary-color, 40%);
+  color: $primary-color;
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -283,7 +283,7 @@ body {
 
 .page__meta {
   margin-top: 2em;
-  color: $muted-text-color;
+  color: #fff;
   font-family: $sans-serif;
   font-size: $type-size-6;
 
@@ -331,7 +331,7 @@ body {
   text-decoration: none;
   border: 1px solid $background-color;
   border-radius: $border-radius;
-  background-color: #87CDC2;
+  background-color: #cff1ff;
   font-family: $serif;
   color: $primary-color;
 
@@ -349,13 +349,13 @@ body {
   text-decoration: none;
   border: 1px solid $background-color;
   border-radius: $border-radius;
-  background-color: mix(#fff, #F1D2B0, 18%);
+  background-color: #bed0f4;
   font-family: $serif;
   color: mix(#fff, $primary-color, 2%);;
 
   &:hover {
     text-decoration: none;
-    color: mix(#E8564A, $text-color, 40%); /* 커서 댈 때 색깔 */
+    color: mix(#26B5DC, $text-color, 40%); /* 커서 댈 때 색깔 */
   }
 }
 
