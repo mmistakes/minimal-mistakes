@@ -149,7 +149,7 @@
     padding-left: 15px;
     padding-right: 25px;
     line-height: 1;
-    font-family: $cute;
+    font-family: $nanumsquare;
   
     @include breakpoint($large) {
       display: block;
@@ -173,13 +173,13 @@
     }
   }
   .sidebar .author__name {
-    font-family: $cute;
+    font-family: $nanumsquare;
     font-size: $type-size-4;
   }
   
   .author__bio {
     margin: 0;
-    font-family: $cute;
+    font-family: $nanumsquare;
     font-size: $type-size-4;
   
     @include breakpoint($large) {
@@ -188,7 +188,7 @@
     }
   
     p {
-      font-family: $cute;
+      font-family: $nanumsquare;
       margin-top: 1.6px;
       margin-bottom: 3px;
     }
