@@ -34,8 +34,8 @@
 .archive__subtitle {
   margin: 1.414em 0 0.5em;
   padding-bottom: 0.5em;
-  font-size: $type-size-5;
-  color: $muted-text-color;
+  font-size: $type-size-2;
+  color: mix(#fff,$primary-color, 40%);
   border-bottom: 1px solid $border-color;
 
   + .list__item .archive__item-title {
