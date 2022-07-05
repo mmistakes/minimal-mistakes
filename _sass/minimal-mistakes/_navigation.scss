@@ -453,10 +453,9 @@
   font-size: 1.25rem;
 
   a {
-    color: inherit;
     font-size: $type-size-3;
     font-family: $gowundodum;
-    color: mix(#fff,$primary-color,80%);
+    color: mix(#fff,$primary-color,50%);
 
     &:hover {
       text-decoration: underline;

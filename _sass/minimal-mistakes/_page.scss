@@ -331,13 +331,13 @@ body {
   text-decoration: none;
   border: 1px solid $background-color;
   border-radius: $border-radius;
-  background-color: #4D5357;
+  background-color: #F1D2B0;
   font-family: $serif;
   color: $primary-color;
 
   &:hover {
     text-decoration: none;
-    color: mix(#00adb5, $text-color, 40%); /* 커서 댈 때 색깔 */
+    color: mix(#E8564A, $text-color, 40%); /* 커서 댈 때 색깔 */
   }
 }
 
@@ -349,13 +349,13 @@ body {
   text-decoration: none;
   border: 1px solid $background-color;
   border-radius: $border-radius;
-  background-color: mix(#fff, #4D5357, 18%);
+  background-color: mix(#fff, #F1D2B0, 18%);
   font-family: $serif;
   color: mix(#fff, $primary-color, 2%);;
 
   &:hover {
     text-decoration: none;
-    color: mix(#00adb5, $text-color, 40%); /* 커서 댈 때 색깔 */
+    color: mix(#E8564A, $text-color, 40%); /* 커서 댈 때 색깔 */
   }
 }
 
