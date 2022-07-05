@@ -18,6 +18,11 @@ docs:
         url: /categories/#jsp
       - title: "SPRING"
         url: /categories/#spring
+      - title: "프로젝트"
+      url: /categories/#project
+      - title: "ERROR"
+      url: /categories/#error
+        
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
