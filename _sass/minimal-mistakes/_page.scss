@@ -331,13 +331,13 @@ body {
   text-decoration: none;
   border: 1px solid $background-color;
   border-radius: $border-radius;
-  background-color: #F1D2B0;
+  background-color: #87CDC2;
   font-family: $serif;
   color: $primary-color;
 
   &:hover {
     text-decoration: none;
-    color: mix(#E8564A, $text-color, 40%); /* 커서 댈 때 색깔 */
+    color: mix(#26B5DC, $text-color, 40%); /* 커서 댈 때 색깔 */
   }
 }
 
