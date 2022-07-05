@@ -19,9 +19,9 @@ docs:
       - title: "SPRING"
         url: /categories/#spring
       - title: "PROJECT"
-      url: /categories/#project
+        url: /categories/#project
       - title: "ERROR"
-      url: /categories/#error
+        url: /categories/#error
         
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
