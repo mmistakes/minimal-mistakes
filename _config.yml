@@ -111,7 +111,7 @@ author:
   avatar           : "/assets/images/profile_photo.jpg"
   bio              : "배움을 기록하는 블로그📕"
   location         : "South Korea"
-  email            : "eowns36@gmail.com"
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
