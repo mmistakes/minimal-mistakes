@@ -144,7 +144,7 @@
     }
 
     &:hover {
-      @include yiq-contrasted($mix(#fff,$primary-color,30%));
+      @include yiq-contrasted(mix(#fff,$primary-color,30%));
     }
 
     &:first-child {
