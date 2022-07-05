@@ -126,6 +126,10 @@ author:
       url: "/categories/#jsp"
     - label: "SPRING"
       url: "/categories/#spring"
+    - label: "PROJECT"
+      url: "/categories/#project"
+    - label: "ERROR"
+      url: "/categories/#error"
 
 # Site Footer
 footer:
