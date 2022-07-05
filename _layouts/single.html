@@ -1,5 +1,6 @@
 ---
 layout: default
+classes: wide
 ---
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}

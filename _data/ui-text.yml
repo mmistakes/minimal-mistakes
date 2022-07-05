@@ -623,7 +623,7 @@ ko: &DEFAULT_KO
   powered_by                 : "Powered by"
   website_label              : "웹사이트"
   email_label                : "이메일"
-  recent_posts               : "최근 포스트"
+  recent_posts               : "Recent Posts"
   undefined_wpm              : "Undefined parameter words_per_minute at _config.yml"
   comment_form_info          : "이메일은 공개되지 않습니다. 작성 필요 필드:"
   comment_form_comment_label : "댓글"
