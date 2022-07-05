@@ -452,12 +452,19 @@
   margin: 0;
   font-size: 1.25rem;
 
+  img { // 방문자수 이미지 크기 맞추느라 추가했던 것
+    width: auto; height: auto;
+    max-width: 140px;
+    max-height: 38px;
+    margin-bottom: 1em;
+  }
+  
   a {
     font-size: $type-size-4;
     font-family: $gowundodum;
     color: mix(#fff,$primary-color,50%);
     margin-left: 2em;
-    
+
     &:hover {
       text-decoration: underline;
     }
