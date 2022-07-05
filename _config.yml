@@ -108,9 +108,9 @@ analytics:
 # Site Author
 author:
   name             : "Daejoon Cho"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/my_image.jpg"
   bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  location         : "Somewhere over the :rainbow"
   email            :
   links:
     - label: "Email"
