@@ -1148,6 +1148,7 @@ ggplot(shop_seoul, aes(x='경도', y='위도')) \
 
 
 ```python
+#scatter에서 s는 점의 크기를 나타낸다.
 shop_seoul.plot.scatter(x='경도', y='위도', grid=True, figsize=[10, 7], s=2)
 ```
 
@@ -1192,7 +1193,7 @@ shop_seoul
     .dataframe tbody tr th {
         vertical-align: top;
     }
-    
+
     .dataframe thead th {
         text-align: right;
     }
@@ -1488,7 +1489,7 @@ shop_seoul_edu
     .dataframe tbody tr th {
         vertical-align: top;
     }
-    
+
     .dataframe thead th {
         text-align: right;
     }
@@ -1760,7 +1761,7 @@ shop_seoul_realty
     .dataframe tbody tr th {
         vertical-align: top;
     }
-    
+
     .dataframe thead th {
         text-align: right;
     }
@@ -2032,7 +2033,7 @@ shop_seoul_edu_computer
     .dataframe tbody tr th {
         vertical-align: top;
     }
-    
+
     .dataframe thead th {
         text-align: right;
     }
@@ -2325,7 +2326,7 @@ shop_seoul_eat
     .dataframe tbody tr th {
         vertical-align: top;
     }
-    
+
     .dataframe thead th {
         text-align: right;
     }
