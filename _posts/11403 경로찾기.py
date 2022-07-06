@@ -12,8 +12,6 @@ for i in range(N):
         if a[j] == 1:
             graph[i].append(j)  
                
-res_graph = [[0] * N for _ in range(N)]   
-
 def bfs(v):
     queue.append(v)
     visit = [0] * N
