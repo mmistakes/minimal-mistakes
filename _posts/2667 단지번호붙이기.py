@@ -14,8 +14,11 @@ def bfs(graph, x, y, res):
     queue = deque()
     dx = [-1, 0, 1, 0]
     dy = [0, -1, 0, 1]
-    res_cnt = 0
+    
     queue.append([x, y])
+    res_cnt = 1
+    graph[x][y] = 2
+    
     while queue:
         x, y = queue.popleft()
         for i in range(4):
