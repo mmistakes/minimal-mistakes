@@ -90,7 +90,7 @@ The following contributions were made to Azure’s Cloud Architecture Framework 
 
 At Vulcanize I contributed blockchain specific code in Golang, wrote entire testing and deployment frames works, and maintained a Geth Fork.
 
-- go-ethereum [Fork](https://github.com/vulcanize/go-ethereum/tree/v1.10.19-statediff-v5) - The commit history is hard to decipher due to the rebase strategy.
+- `go-ethereum` [Fork](https://github.com/vulcanize/go-ethereum/tree/v1.10.19-statediff-v5) - The commit history is hard to decipher due to the rebase strategy.
 
   - [Updates for capturing known gaps while head tracking.](https://github.com/vulcanize/go-ethereum/pull/217/files)
 
@@ -98,11 +98,23 @@ At Vulcanize I contributed blockchain specific code in Golang, wrote entire test
 
   - [Handling Geth Patches with complex conflicts.](https://github.com/vulcanize/go-ethereum/pull/222)
 
-- [Stack Orchestrator](https://github.com/vulcanize/stack-orchestrator) - I am the primary maintiner of the repository. This repo is utilized for complex CI/CD pipelines, docker deploments, local testing, and starting geth in a local private network with deterministic behaviors.
+- [Stack Orchestrator](https://github.com/vulcanize/stack-orchestrator) - I am the primary maintainer of the repository. This repo is utilized for complex CI/CD pipelines, docker deployments, local testing, and starting geth in a local private network with deterministic behaviors.
 
-- ipld-eth-db - [A database](https://github.com/vulcanize/ipld-eth-db/commits?author=abdulrabbani00) that captures all events on the Ethereum Execution Layer.
+  - [Compile Geth](https://github.com/vulcanize/go-ethereum/runs/7081923602?check_suite_focus=true) - One of the most useful pipelines I have built does the following.
 
-- ipld-eth-server - [An application](https://github.com/vulcanize/ipld-eth-server/commits?author=abdulrabbani00) that server’s Ethereum specific data in an IPLD format.
+    - Compiles Geth using the source code.
+
+    - Start Geth in a private network using a custom Genesis File.
+
+    - Deploy Smart Contracts using Foundry.
+
+    - Execute Transactions and ensure they are properly written to a Postgres DB.
+
+  - [Pre-Jobs](https://github.com/vulcanize/go-ethereum/actions/runs/2572252728) - A component I have added to CICD pipelines to avoid running duplicate jobs. This saves resources, time, and allows for smoother testing.
+
+- `ipld-eth-db` - [A database](https://github.com/vulcanize/ipld-eth-db/commits?author=abdulrabbani00) that captures all events on the Ethereum Execution Layer.
+
+- `ipld-eth-server` - [An application](https://github.com/vulcanize/ipld-eth-server/commits?author=abdulrabbani00) that serves Ethereum-specific data in an IPLD format.
 
 ## Ethereum Kubernetes Testnet
 
