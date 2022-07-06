@@ -1,5 +1,5 @@
 ---
-title: "resume"
+title: "Resume"
 layout: archive
 permalink: categories/resume
 author_profile: true

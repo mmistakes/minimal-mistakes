@@ -74,7 +74,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "scikit-learn" %}
-                        <li><a href="/categories/scikit-learn" class="">Scikit-learn (with C++) ({{category[1].size}})</a></li>
+                        <li><a href="/categories/scikit-learn" class="">Scikit-learn ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

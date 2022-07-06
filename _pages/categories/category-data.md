@@ -1,5 +1,5 @@
 ---
-title: "data"
+title: "Data"
 layout: archive
 permalink: categories/data
 author_profile: true
