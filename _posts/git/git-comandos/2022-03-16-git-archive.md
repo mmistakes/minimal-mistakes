@@ -20,7 +20,7 @@ page_css:
 
 ## Git Archive
 
-* Crear un archivo comprimido del tipo que sea con los elementos que le indiquemos de una rama o toda la rama en si usando un comando de **Git**
+* Crear un archivo comprimido del tipo que sea con los elementos que le indiquemos de una **rama** o toda la **rama** en si usando un comando de **Git**
 
 * Ejemplo
 
