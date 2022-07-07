@@ -11,23 +11,30 @@ header:
 categories:
   - java
   - java-manual
-tags:
   - java-clase
-  - java-collections
+tags:
+  - java-hashset
+  - java-key-value-collections 
 page_css: 
   - /assets/css/mi-css.css
 ---
 
 ## Clase - HashSet
 
-* Clase implementada por ``interface Set`` que respaldada por una ``tabla hash`` en realidad es una instancia de ``HashMap``
+* Clase implementada por ``interface Set`` que esta respaldada por una ``tabla hash`` que en realidad es una instancia de ``HashMap``
+
 * Implementa la ``interface`` Set
-* Estructura de datos subyacente para ``HashSet`` es una ``hashtable``
-* No permite valores duplicados
+
+* **Estructura de datos** subyacente para ``HashSet`` es una ``hashtable``
+
+* **No permite** valores duplicados
+
 * No garantiza que los ``objetos`` que inserte en ``HashSet`` se inserten en el mismo orden
-  * Los objetos se insertan en función de su código ``hash``
-* Permiten elementos ``null`` en ``HashSet``
-* ``HashSet`` también implementa ``inferfaces`` serializables y clonables
+  * Los **objetos** se insertan en **función** de su código ``hash``
+
+* Permiten elementos **null** en ``HashSet``
+
+* ``HashSet`` también implementa ``inferfaces`` **serializables** y **clonables**
 
 ### Definición
 
