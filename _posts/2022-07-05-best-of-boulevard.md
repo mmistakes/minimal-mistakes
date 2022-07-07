@@ -35,4 +35,3 @@ Manchmal reicht auch schon das Grafikdesign um sich in dieser Liste zu verewigen
 
 ### Kegelbrüder Follow-up
 ![Brüder 4](../assets/images/bob/06-2022/kegeln2.jpg)
-
