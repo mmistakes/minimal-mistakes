@@ -27,7 +27,7 @@ print(type(request.text))
 print(request.text)
 ```
 
-![1](../../images/2022-06-28-21_Data_Analysis_4_따릉이/1.png){: width="100%" height="100%"}
+![1](../../images/2022-06-28-21_Data_Analysis_4_따릉이/1-16571848168241.png){: width="100%" height="100%"}
 
 서버에서 응답받은 문자열인 json 타입의 데이터를 파이썬에서 처리하기 위해 딕셔너리로 변환한다.
 
@@ -50,7 +50,7 @@ print(type(bike_json))
 print(bike_json)
 ```
 
-![3](../../images/2022-06-28-21_Data_Analysis_4_따릉이/3.png){: width="100%" height="100%"}
+![3](../../images/2022-06-28-21_Data_Analysis_4_따릉이/3-16571848303263.png){: width="100%" height="100%"}
 
 판다스의 json_normalize() 함수를 사용해서 딕셔너리 타입의 데이터를 판다스 데이터프레임으로 변환한다.
 
