@@ -15,6 +15,17 @@ import json # json 타입의 문자열을 딕셔너리로 변환한다.
 from pandas.io.json import json_normalize # 딕셔너리 타입의 데이터를 판다스 데이터프레임으로 변환한다.
 ```
 
+```python
+#아래 그림은 참고사항
+```
+
+![cf_1](../../images/2022-06-28-21_Data_Analysis_4_따릉이/cf_1.png){: width="100%" height="100%"}
+
+![cf_2](../../images/2022-06-28-21_Data_Analysis_4_따릉이/cf_2.png){: width="100%" height="100%"}
+
+[https://www.daleseo.com/python-requests/]: 
+[https://me2nuk.com/Python-requests-module-example/#data%EC%84%A0%ED%83%9D-%EC%82%AC%ED%95%AD]: 
+
 
 ```python
 targetSite = 'https://www.bikeseoul.com/app/station/getStationRealtimeStatus.do' # Request URL
