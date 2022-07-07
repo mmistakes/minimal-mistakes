@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "Machine Learning Basic"
 layout: archive
 permalink: /categories/mlbasic
@@ -8,4 +8,4 @@ sidebar:
 ---
 
 {% assign posts = site.categories.mlbasic %}
-{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %} -->
