@@ -169,6 +169,8 @@ sns.countplot(data=df, x='연월')
 df = df.sort_values(by=['연', '월'], ascending=True)
 ```
 
+![exp](../../images/2022-07-01-22_Data_Analysis_5_copy/exp.png){: width="100%" height="100%"}
+
 
 ```python
 plt.rcParams['figure.figsize'] = [20, 8]
