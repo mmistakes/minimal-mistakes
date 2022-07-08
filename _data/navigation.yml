@@ -3,7 +3,7 @@ main:
   - title: "Category"
     url: /categories/
   - title: "Curriculum Vitae"
-    url: /assets/cv.md
+    url: "/assets/cv.md"
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
