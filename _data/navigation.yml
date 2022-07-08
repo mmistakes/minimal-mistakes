@@ -3,7 +3,7 @@ main:
   - title: "Category"
     url: /categories/
   - title: "Curriculum Vitae"
-    url: "/_posts/2022-07-08cv.md"
+    url: "https://cheolminlee0907.github.io/cv/"
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
