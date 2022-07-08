@@ -106,9 +106,9 @@ analytics:
 author:
   name             : "Cheol Min Lee"
   avatar           : "/Users/cheolmin/Documents/Self-picture.jpg"# path of avatar image, e.g.
-  bio              : "I studied Doctor of Pharmacy for 6 years and now I am entering into the field of Biomedical Informatics."
+  bio              : ""
   location         : "St.Louis, MO"
-  email            : cheolmin16@gmail.com
+  email            : #
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -130,7 +130,7 @@ author:
 footer:
   links:
     - label: "Email"
-      icon: "fab fa-fw fa-envelope-square"
+      icon: "fas fa-fw fa-envelope-square"
       url: mailto:cheolmin16@gmail.com
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
