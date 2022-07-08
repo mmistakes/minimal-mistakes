@@ -1,28 +1,6 @@
 ---
 layout: single
-title: "Prediction Model of Diabetes"
-author: Cheol Min Lee
-date: '2021-05-01'
-slug: []
-categories:
-  - Tidyverse
-  - tidymodels
-  - ggridges
-  - rpart
-  - diabetes
-tags:
-  - Tidyverse
-  - tidymodels
-  - ggridges
-  - rpart
-  - diabetes
-Description: ''
-Tags: []
-Categories: []
-DisableComments: no
-output: 
-  md_document:
-    variant: markdown_github
+title: "Prediction Model of Diabetes"=
 ---
 
 
