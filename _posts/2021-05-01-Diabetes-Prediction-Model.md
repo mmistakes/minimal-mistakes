@@ -2,6 +2,7 @@
 layout: single
 title:  "Diabetes Prediction Model"
 categories: R
+output: rmarkdown::github_document
 ---
 
 This post contains the prediction models for the Diabetes.
