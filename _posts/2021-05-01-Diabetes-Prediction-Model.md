@@ -27,7 +27,9 @@ diabetes <- read_csv("diabetes.csv")
 head(diabetes)
 ```
 
-#### ![스크린샷 2022-07-08 오후 9.01.06](/Users/cheolmin/Documents/blog/cheolminlee0907-github-blog/cheolminlee0907.github.io/images/2021-05-01-Diabetes-Prediction-Model/스크린샷 2022-07-08 오후 9.01.06.png)Modify the Outcome data with str_replace() 
+![diabetes1](/Users/cheolmin/Documents/blog/cheolminlee0907-github-blog/cheolminlee0907.github.io/images/2021-05-01-Diabetes-Prediction-Model/diabetes1.png)
+
+#### Modify the Outcome data with str_replace() 
 
 ![스크린샷 2022-07-08 오후 9.01.25](/Users/cheolmin/Documents/blog/cheolminlee0907-github-blog/cheolminlee0907.github.io/images/2021-05-01-Diabetes-Prediction-Model/스크린샷 2022-07-08 오후 9.01.25.png)As you can see here, 8 factors possibly affect the diagnosis of diabetes. Since the outcome is shown as 1 and 0, I will change this to Positive and Negative for easier visualization.
 
