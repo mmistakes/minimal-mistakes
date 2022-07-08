@@ -1,0 +1,247 @@
+---
+title: Prediction Model of Diabetes
+author: Cheol Min Lee
+date: '2021-05-01'
+slug: []
+categories:
+  - Tidyverse
+  - tidymodels
+  - ggridges
+  - rpart
+  - diabetes
+tags:
+  - Tidyverse
+  - tidymodels
+  - ggridges
+  - rpart
+  - diabetes
+Description: ''
+Tags: []
+Categories: []
+DisableComments: no
+output:
+  rmarkdown::github_document
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>This post contains the prediction models for the Diabetes.</p>
+<pre class="r"><code>library(tidyverse)
+library(tidymodels)
+library(rpart.plot)
+library(ggridges)</code></pre>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>According to the Centers for Disease Control and Prevention, there were 34.2 million people in the United States with a medical history of Diabetes. Even though there are numerous medications such as GLP-1 Agonist, SGLT2 inhibitors, insulin, etc., the incidence of diabetes is increasing. By 2050, the estimation of the diabetes prediction is 1 in 3 adults. There are many factors associated with diabetes such as obesity rates, ages, and others. This post will make prediction models of diabetes with the dataset from the Kaggle.<a href="https://www.kaggle.com/mathchi/diabetes-data-set">https://www.kaggle.com/mathchi/diabetes-data-set</a>
+This data is originally from the National Institute of Diabetes and Digestive and Kidney Disease.</p>
+</div>
+<div id="build-the-prediction-model" class="section level1">
+<h1>Build the Prediction Model</h1>
+<div id="data-processing" class="section level2">
+<h2>Data Processing</h2>
+<pre class="r"><code>diabetes &lt;- read_csv(&quot;diabetes.csv&quot;)
+head(diabetes)</code></pre>
+<pre><code>## # A tibble: 6 x 9
+##   Pregnancies Glucose BloodPressure SkinThickness Insulin   BMI DiabetesPedigre…
+##         &lt;dbl&gt;   &lt;dbl&gt;         &lt;dbl&gt;         &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;            &lt;dbl&gt;
+## 1           6     148            72            35       0  33.6            0.627
+## 2           1      85            66            29       0  26.6            0.351
+## 3           8     183            64             0       0  23.3            0.672
+## 4           1      89            66            23      94  28.1            0.167
+## 5           0     137            40            35     168  43.1            2.29 
+## 6           5     116            74             0       0  25.6            0.201
+## # … with 2 more variables: Age &lt;dbl&gt;, Outcome &lt;dbl&gt;</code></pre>
+<div id="modify-the-outcome-data-with-str_replace" class="section level4">
+<h4>Modify the Outcome data with str_replace()</h4>
+<p>As you can see here, 8 factors possibly affect the diagnosis of diabetes. Since the outcome is shown as 1 and 0, I will change this to Positive and Negative for easier visualization.</p>
+<pre class="r"><code>diabetes$Outcome &lt;- str_replace(diabetes$Outcome,&quot;1&quot;,&quot;Positive&quot;)
+diabetes$Outcome &lt;- str_replace(diabetes$Outcome, &quot;0&quot;,&quot;Negative&quot;)
+diabetes</code></pre>
+<pre><code>## # A tibble: 768 x 9
+##    Pregnancies Glucose BloodPressure SkinThickness Insulin   BMI
+##          &lt;dbl&gt;   &lt;dbl&gt;         &lt;dbl&gt;         &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;
+##  1           6     148            72            35       0  33.6
+##  2           1      85            66            29       0  26.6
+##  3           8     183            64             0       0  23.3
+##  4           1      89            66            23      94  28.1
+##  5           0     137            40            35     168  43.1
+##  6           5     116            74             0       0  25.6
+##  7           3      78            50            32      88  31  
+##  8          10     115             0             0       0  35.3
+##  9           2     197            70            45     543  30.5
+## 10           8     125            96             0       0   0  
+## # … with 758 more rows, and 3 more variables: DiabetesPedigreeFunction &lt;dbl&gt;,
+## #   Age &lt;dbl&gt;, Outcome &lt;chr&gt;</code></pre>
+<pre class="r"><code>class(diabetes$Outcome)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<p>In addition, currently, the outcome is in <em>character</em>. However, to make it more suitable in the tidy model, it is better to change into <em>factor</em>.</p>
+<pre class="r"><code>diabetes &lt;- diabetes %&gt;% 
+  mutate(Outcome = factor(Outcome))
+class(diabetes$Outcome)</code></pre>
+<pre><code>## [1] &quot;factor&quot;</code></pre>
+</div>
+</div>
+<div id="relationship-between-the-variables-and-the-outcome" class="section level2">
+<h2>Relationship between the variables and the Outcome</h2>
+<div id="glucose-and-diabetes" class="section level4">
+<h4>1. Glucose and Diabetes</h4>
+<pre class="r"><code>ggplot(diabetes, aes(x = Glucose, y = Outcome))+
+  ggridges::geom_density_ridges()+
+  labs(x = &quot;Glucose Level&quot;,y = &quot;Result of Diabetes&quot;, title = &quot;Relationship between Glucose Level and Diabetes&quot;,subtitle = &quot;Normal Glucose Level: &lt;140 mg/dL&quot;,caption = &quot;Kaggle&quot;)</code></pre>
+<p><img src="/post/2021-05-01-prediction-model-of-diabetes/2021-05-01-Diabetes-Prediction-Model_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>As you can see in the graph, one of the most contributing factors to diabetes is the glucose level. Also, the glucose level is one of the indicative measures of diabetes. As the density plot suggests, the positive group tends to show a higher glucose range compared to the negative group.</p>
+</div>
+<div id="bmi-and-diabetes" class="section level4">
+<h4>2. BMI and Diabetes</h4>
+<pre class="r"><code>ggplot(diabetes, aes(x = BMI, fill = Outcome))+
+  geom_density(alpha = 0.4)+
+  labs(x = &quot;BMI Level&quot;,y = &quot;Density&quot;,title = &quot;Relationship between BMI and Diabetes&quot;,subtitle = &quot;Normal BMI Range = 18.5 ~ 24.9&quot;,caption = &quot;Kaggle&quot;)</code></pre>
+<p><img src="/post/2021-05-01-prediction-model-of-diabetes/2021-05-01-Diabetes-Prediction-Model_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>Also, obesity is one of the risk factors for diabetes. Even though the BMI is not an accurate measure of obesity (i.e. people with high muscle mass), BMI is often used to represent the weight status. This density plot indicates the positive group tends to have a higher BMI compared to the negative groups. Therefore, there are possible relationships that obesity affects the diabetes diagnosis.</p>
+</div>
+<div id="insulin-and-the-diabetes" class="section level4">
+<h4>3. Insulin and the Diabetes</h4>
+<pre class="r"><code>ggplot(diabetes, aes(x = Insulin, y = Outcome))+
+  ggridges::geom_density_ridges()+
+  labs(x = &quot;Insulin Level&quot;,y = &quot;Result of Diabetes&quot;, title = &quot;Relationship between Insulin Level and Diabetes&quot;,caption = &quot;Kaggle&quot;)</code></pre>
+<p><img src="/post/2021-05-01-prediction-model-of-diabetes/2021-05-01-Diabetes-Prediction-Model_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>Insulin is the key component of diabetes. Insulin is required in our body because insulin uses glucose to generate energy. Also, insulin is the factor that differentiates diabetes. Type 1 Diabetic patients do not generate insulin, therefore they require insulin medications. Type 2 diabetic patients generate insulin but the insulin does not function well. This dataset did not differentiate the types of diabetes. However, the positive groups that have a higher level of insulin might be an indication of Type 2 Diabetic patients.</p>
+</div>
+</div>
+<div id="bulid-a-classification-tree-model" class="section level2">
+<h2>Bulid a Classification Tree Model</h2>
+<div id="using-bmi-and-glucose-only" class="section level3">
+<h3>Using BMI and Glucose only</h3>
+<pre class="r"><code>set.seed(11)
+diabetes_split &lt;- initial_split(diabetes, prop = 0.8)
+diabetes_train &lt;- training(diabetes_split)
+diabetes_test &lt;- testing(diabetes_split)</code></pre>
+<p>I used the 20:80 methods to divide the training and the testing set.</p>
+<pre class="r"><code>diabetes_fit &lt;- decision_tree() %&gt;% 
+  set_engine(engine = &quot;rpart&quot;) %&gt;% 
+  set_mode(mode =&quot;classification&quot;) %&gt;% 
+  fit(Outcome ~ Glucose+BMI, data = diabetes_train)</code></pre>
+<p>I used the <em>rpart</em> engine to build the classification model and the outcome is a categorical variable, I used classification as a mode to fit the model.</p>
+<div id="classification-tree-model" class="section level4">
+<h4>Classification Tree Model</h4>
+<pre class="r"><code>rpart.plot(diabetes_fit$fit, roundint = FALSE)</code></pre>
+<p><img src="/post/2021-05-01-prediction-model-of-diabetes/2021-05-01-Diabetes-Prediction-Model_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p>The first diverging point of the classification tree model is the most influencing variable of the model. The first division occurs based on the glucose level of 144. Even though the diagnosis of glucose varies based on the fasting levels, post-meal, etc., 144 is above the normal range. Also, the model demonstrates that the glucose level is more affecting the model than the BMI.</p>
+</div>
+<div id="test-the-model-with-testing-set" class="section level4">
+<h4>Test the Model with Testing set</h4>
+<pre class="r"><code>diabetes_pred &lt;- diabetes_fit %&gt;% 
+  predict(diabetes_test)
+
+diabetes_test %&gt;% select(Glucose,BMI,Outcome) %&gt;% 
+  mutate(Outcome_Pred = diabetes_pred$.pred_class)</code></pre>
+<pre><code>## # A tibble: 153 x 4
+##    Glucose   BMI Outcome  Outcome_Pred
+##      &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;fct&gt;       
+##  1     116  25.6 Negative Negative    
+##  2     115  35.3 Negative Negative    
+##  3     168  38   Positive Positive    
+##  4     166  25.8 Positive Positive    
+##  5     107  29.6 Positive Negative    
+##  6     125  31.1 Positive Positive    
+##  7      92  19.9 Negative Negative    
+##  8      90  38.2 Positive Negative    
+##  9     103  39.1 Positive Negative    
+## 10     101  24.2 Negative Negative    
+## # … with 143 more rows</code></pre>
+</div>
+<div id="evaluate-the-model" class="section level4">
+<h4>Evaluate the Model</h4>
+<div id="heatmap" class="section level5">
+<h5>Heatmap</h5>
+<pre class="r"><code>diabetes_test %&gt;% select(Glucose,BMI,Outcome) %&gt;% 
+  mutate(Outcome_Pred = diabetes_pred$.pred_class) %&gt;% 
+  conf_mat(truth = Outcome,estimate = Outcome_Pred) %&gt;% 
+  autoplot(type = &quot;heatmap&quot;)</code></pre>
+<p><img src="/post/2021-05-01-prediction-model-of-diabetes/2021-05-01-Diabetes-Prediction-Model_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+</div>
+<div id="accuracy" class="section level5">
+<h5>Accuracy</h5>
+<pre class="r"><code>diabetes_test %&gt;% select(Glucose,BMI,Outcome) %&gt;% 
+  mutate(Outcome_Pred = diabetes_pred$.pred_class) %&gt;% 
+  accuracy(truth = Outcome,estimate = Outcome_Pred)</code></pre>
+<pre><code>## # A tibble: 1 x 3
+##   .metric  .estimator .estimate
+##   &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;
+## 1 accuracy binary         0.712</code></pre>
+<p>This model shows the 71% accuracy of the diabetic prediction when using 2 variables (BMI and Glucose).</p>
+</div>
+</div>
+</div>
+<div id="using-pregnancy-glucose-blood-pressure-skinthickness-insulin-bmi-diabetes-pedigree-function-age" class="section level3">
+<h3>Using Pregnancy, Glucose, Blood Pressure, SkinThickness, Insulin, BMI, Diabetes Pedigree Function, Age</h3>
+<pre class="r"><code>diabetes_all_fit &lt;- decision_tree() %&gt;% 
+  set_engine(engine = &quot;rpart&quot;) %&gt;% 
+  set_mode(mode =&quot;classification&quot;) %&gt;% 
+  fit(Outcome ~ Pregnancies+Glucose+BloodPressure+SkinThickness+Insulin+BMI+DiabetesPedigreeFunction+Age, data = diabetes_train)
+
+rpart.plot(diabetes_all_fit$fit,roundint = FALSE)</code></pre>
+<p><img src="/post/2021-05-01-prediction-model-of-diabetes/2021-05-01-Diabetes-Prediction-Model_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p>Glucose is the most influencing factor in this case as well. Just like the previous model, a glucose level of 144 is the most influencing factor of the classification of the diabetic model. Also, BMI is the second leading factor of this model. It can be inferred that obesity is the possible leading risk factor of diabetes as well. Lastly, the diabetes pedigree function, which indicates the genetic factor, also plays a significant role in this model. To conclude, this model portrays various risk factors for diabetes. According to this model, it is important for some individual, who are obese, family history of diabetes, and who have the high glucose level to be cautious about the possibilities of diabetes.</p>
+<div id="evaluate-the-model-1" class="section level4">
+<h4>Evaluate the Model</h4>
+<div id="heatmap-1" class="section level5">
+<h5>HeatMap</h5>
+<pre class="r"><code>diabetes_all_pred &lt;- diabetes_all_fit %&gt;% 
+  predict(diabetes_test)
+
+diabetes_test %&gt;% mutate(Outcome_Pred=diabetes_all_pred$.pred_class) %&gt;% 
+  conf_mat(truth = Outcome, estimate = Outcome_Pred) %&gt;% 
+  autoplot(type = &quot;heatmap&quot;)</code></pre>
+<p><img src="/post/2021-05-01-prediction-model-of-diabetes/2021-05-01-Diabetes-Prediction-Model_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+</div>
+<div id="accuracy-1" class="section level5">
+<h5>Accuracy</h5>
+<pre class="r"><code>diabetes_test %&gt;% mutate(Outcome_Pred=diabetes_all_pred$.pred_class) %&gt;% 
+  accuracy(truth = Outcome, estimate = Outcome_Pred)</code></pre>
+<pre><code>## # A tibble: 1 x 3
+##   .metric  .estimator .estimate
+##   &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;
+## 1 accuracy binary         0.752</code></pre>
+<p>As you can see here, the accuracy went up to 75% when using all the variables listed in the dataset. Therefore, we can conclude that other factors may also affect the diabetes diagnosis.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="using-random-forest-model-for-prediction" class="section level2">
+<h2>Using Random Forest Model for Prediction</h2>
+<pre class="r"><code>set.seed(11)
+diabetes_rf &lt;- rand_forest() %&gt;% 
+  set_engine(engine = &quot;randomForest&quot;) %&gt;% 
+  set_mode(mode = &quot;classification&quot;) %&gt;% 
+  fit(Outcome ~ Pregnancies+Glucose+BloodPressure+SkinThickness+Insulin+BMI+DiabetesPedigreeFunction+Age, data = diabetes_train)
+
+diabetes_rf_pred &lt;- diabetes_rf %&gt;% 
+  predict(new_data = diabetes_test)</code></pre>
+<div id="evluate-the-model" class="section level4">
+<h4>Evluate the Model</h4>
+<div id="heatmap-2" class="section level5">
+<h5>HeatMap</h5>
+<pre class="r"><code>diabetes_test %&gt;% mutate(Outcome_pred = diabetes_rf_pred$.pred_class) %&gt;% 
+  conf_mat(truth = Outcome,estimate = Outcome_pred) %&gt;% 
+  autoplot(type = &quot;heatmap&quot;)</code></pre>
+<p><img src="/post/2021-05-01-prediction-model-of-diabetes/2021-05-01-Diabetes-Prediction-Model_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+</div>
+<div id="accuracy-2" class="section level5">
+<h5>Accuracy</h5>
+<pre class="r"><code>diabetes_test %&gt;% mutate(Outcome_pred = diabetes_rf_pred$.pred_class) %&gt;% 
+  accuracy(truth = Outcome,estimate = Outcome_pred)</code></pre>
+<pre><code>## # A tibble: 1 x 3
+##   .metric  .estimator .estimate
+##   &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;
+## 1 accuracy binary         0.739</code></pre>
+<p>The Random Forest model shows a 73.9% accuracy compared to the classification model. In this case, the classification model shows the better result from an accuracy standpoint.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<p>There is an increasing number of diabetes cases. Surprisingly, some patients do not know that they have diabetes until they visit the hospital for other medical conditions. Disease deteriorates when the treatment gets delayed or detected in a later period. Building the precise prediction models may impact the early diagnose of the diseases and this is not limited to diabetes. Building the precise models may alleviate the conditions through early detection and this may be the new approach and a game-changer in the medical field. Finding the risk factors of the disease and establishing the relationship can be beneficial for the patients in the future.</p>
+</div>
