@@ -1,5 +1,6 @@
 ---
-title: Prediction Model of Diabetes
+layout: single
+title: "Prediction Model of Diabetes"
 author: Cheol Min Lee
 date: '2021-05-01'
 slug: []
