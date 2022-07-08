@@ -4,7 +4,7 @@ layout: single
 title: "Curriculum Vitae"
 toc: true # 목록 설정
 toc_sticky: true
-toc_label: "MYSELF"
+toc_label: "Table of Contents"
 ---
 
 ### Educations
