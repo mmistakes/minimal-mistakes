@@ -1,4 +1,5 @@
 ---
+layout: single
 title: What Affect Students SAT Scores?
 author: Cheol Min Lee
 date: '2021-03-01'
