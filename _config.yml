@@ -20,7 +20,7 @@ title                    : "Cheol Min Lee"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Cheol Min Lee"
-description              : "Washington University in St.Louis"
+description              : "Washington University in St.Louis MS Student"
 url                      : "https://cheolminlee0907.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,8 +106,8 @@ analytics:
 author:
   name             : "Cheol Min Lee"
   avatar           : "/assets/images/profile.jpg" 
-  bio              : "Washington University in St.Louis MS Student"
-  location         : "St.Louis, MO"
+  bio              : "Washington University in St.Louis <br>MS Student"
+  location         : "St.Louis, MO<br>Seoul, South Korea"
   email            : #
   links:
     - label: "Email"
@@ -288,5 +288,12 @@ defaults:
       share: true
       related: true
       show_date: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true  
 
 

@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "Category"
-    url: /categories/
   - title: "Curriculum Vitae"
     url: /about/
-  # - title: "Sample Posts"
+  - title: "Machine Learning"
+    url: /ml/
+  # - title: ""
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
