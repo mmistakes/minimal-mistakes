@@ -5194,14 +5194,14 @@ body {
 }
 
 .author__avatar img {
-  max-width: 110px;
-  border-radius: 50%;
+  max-width: 175px;
+  border-radius: 15%;
 }
 
 @media (min-width: 64em) {
   .author__avatar img {
     padding: 5px;
-    border: 1px solid #f2f3f3;
+    border: 15px solid #f2f3f3;
   }
 }
 
