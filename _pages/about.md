@@ -2,7 +2,9 @@
 permalink: /about/
 layout: single
 title: "Curriculum Vitae"
-toc: true
+toc: true # 목록 설정
+toc_sticky: true
+toc_label: "MYSELF"
 ---
 
 ### Educations

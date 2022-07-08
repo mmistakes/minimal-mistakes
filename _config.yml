@@ -106,8 +106,8 @@ analytics:
 author:
   name             : "Cheol Min Lee"
   avatar           : "/assets/images/profile.jpg" 
-  bio              : "Washington University in St.Louis <br>MS Student"
-  location         : "St.Louis, MO<br>Seoul, South Korea"
+  bio              : "Washington University in St.Louis <br>MS Student<br>PharmD"
+  location         : "St.Louis, MO<br>     Seoul, South Korea"
   email            : #
   links:
     - label: "Email"
