@@ -1,5 +1,5 @@
 ---
-permalink: /Curriculum Vitae/
+permalink: /about/
 layout: single
 title: "Curriculum Vitae"
 toc: true
