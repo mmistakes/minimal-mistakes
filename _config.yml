@@ -20,7 +20,7 @@ title                    : "Cheol Min Lee's Data Science Blog"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Cheol Min Lee"
-description              : "Washington University in St.Louis Biomedical Informatics student"
+description              : "Washington University in St.Louis"
 url                      : "https://cheolminlee0907.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Cheol Min Lee"
   avatar           : "/assets/images/profile.jpg" 
-  bio              : "studying at Washington University in St.Louis"
+  bio              : "Washington University in St.Louis MS Student"
   location         : "St.Louis, MO"
   email            : #
   links:
