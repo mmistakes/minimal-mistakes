@@ -20,7 +20,7 @@ page_css:
 
 ## AutoBoxing & UnBoxing
 
-* Conversión de valores del **tipo primitivos** a **objetos** cuando utilizamos estructuras de datos como core-colecciones
+* Conversión de valores del **tipo primitivos** a **objetos** y viceversa cuando utilizamos estructuras de datos como las colecciones
 
 ```java
 public class Autoboxing {
