@@ -105,7 +105,11 @@ analytics:
 # Site Author
 author:
   name             : "Cheol Min Lee"
+<<<<<<< HEAD
   avatar           : "/assets/images/profile.jpg" 
+=======
+  avatar           : "images/profile.jpg" #path of avatar image, e.g.
+>>>>>>> 2ff1c305f6c1a4c8d38d645b342f7ce39071c886
   bio              : ""
   location         : "St.Louis, MO"
   email            : #
