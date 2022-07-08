@@ -1,11 +1,6 @@
 \---
-
-title:"Curriculum Vitae"
-
-author_profile: true
-
-sidebar_main: true
-
+layout: single
+title:  "Curriculum Vitae"
 \---
 
 ### Curriculum Vitae
@@ -27,7 +22,7 @@ Doctor of Pharmacy - Graduated on May 2022
 
 - Participated in daily Intensive Care Unit roundings and assisted healthcare professionals through suggesting pharmacological interventions, answering drug questions, and more to enhance patient care.
 - Assessed several patients and presented patient cases to the group with exhaustive explanations on disease state management.
-- Presented updates in COVID-19 protocols to the hospital’s Pharmacy &Therapeutics committee as a group.
+- Presented updates in COVID-19 protocols to the hospital’s Pharmacy & Therapeutics committee as a group.
 
 ##### Beth Israel Lahey Health Pharmacy (November - December 2021)
 
