@@ -1,11 +1,6 @@
 \---
-
-title:"Curriculum Vitae"
-
-author_profile: true
-
-sidebar_main: true
-
+layout: single
+title:  "Curriculum Vitae"
 \---
 
 ### Curriculum Vitae
