@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Cheol Min Lee's Data Science Blog"
+title                    : "Cheol Min Lee"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Cheol Min Lee"
