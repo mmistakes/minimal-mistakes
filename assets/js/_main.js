@@ -23,6 +23,10 @@ $(function() {
 
   stickySideBar();
 
+  var disqus_config = function () { 
+    this.language = "kr";
+  };
+
   $(window).resize(function() {
     stickySideBar();
   });
