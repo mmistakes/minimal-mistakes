@@ -14,7 +14,6 @@ def dp(x):
         return d[x]
     else:
         a = dp(x - 1)
-        #d[x] = [a[1], a[0] + a[1]]
         d[x][0] = a[1]
         d[x][1] = a[0] + a[1]
     return d[x]
