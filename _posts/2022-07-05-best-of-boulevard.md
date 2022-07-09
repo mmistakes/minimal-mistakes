@@ -31,7 +31,3 @@ Manchmal reicht auch schon das Grafikdesign um sich in dieser Liste zu verewigen
 ![Wetter](../assets/images/bob/06-2022/rumms.PNG)
 ![Mali](../assets/images/bob/06-2022/bumbum.JPG)
 ![Bier](../assets/images/bob/06-2022/bier06.PNG)
-
-
-### Kegelbrüder Follow-up
-![Brüder 4](../assets/images/bob/06-2022/kegeln2.jpg)
