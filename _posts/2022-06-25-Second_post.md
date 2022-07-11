@@ -1,5 +1,5 @@
 ---
-title:  "블로그 두번째 글 쓰기"
+title:  "블로그 두번째 글"
 excerpt: "이 블로그의 정체성"
 
 categories:
