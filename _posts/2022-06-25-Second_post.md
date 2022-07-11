@@ -5,7 +5,7 @@ excerpt: "이 블로그의 정체성"
 categories:
   - Blog
 tags:
-  - Blog
+  - txt
 last_modified_at: 2022-06-25T20:24:00
 ---
 
