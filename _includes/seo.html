@@ -41,6 +41,9 @@
 {%- assign site_og_image = site.og_image | absolute_url -%}
 {%- assign site_og_image = site_og_image | escape -%}
 
+{%- assign site_og_image_alt = site.og_image_alt -%}
+{%- assign site_og_image_alt = site_og_image_alt | escape -%}
+
 {%- if page.date -%}
   {%- assign og_type = "article" -%}
 {%- else -%}
@@ -71,6 +74,7 @@
   <meta property="og:image" content="{{ page_large_image }}">
 {% elsif page_teaser_image %}
   <meta property="og:image" content="{{ page_teaser_image }}">
+  <meta property="og:image:alt" content="{{ site_og_image_alt }}">
 {% endif %}
 
 {% if site.twitter.username %}
@@ -86,6 +90,7 @@
     <meta name="twitter:card" content="summary">
     {% if page_teaser_image %}
       <meta name="twitter:image" content="{{ page_teaser_image }}">
+      <meta property="twitter:image:alt" content="{{ site_og_image_alt }}">
     {% endif %}
   {% endif %}
 
