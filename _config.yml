@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "SEYEON, VANESSA OH"
+  avatar           : "https://avatars.githubusercontent.com/u/102719063?v=4"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "**Work hard**, **Be kind** and amazing things will be happen."
+  location         : "Now in Korea, Seoul"
+  email            : syoh5188@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
