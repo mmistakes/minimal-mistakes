@@ -1,5 +1,4 @@
 import sys
-from itertools import product
 
 N = sys.stdin.readline().rstrip()
 
@@ -35,8 +34,6 @@ elif M != 0 and M != 10:
         print(sum_b)
     else:
         print(sum_a)
-        
-    
     
 elif M == 10:
     print(abs(int(N) - 100))
