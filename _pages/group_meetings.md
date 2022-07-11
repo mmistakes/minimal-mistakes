@@ -28,13 +28,14 @@ While there are COVID restrictions in place (and it remains convenient) these wi
 
 | Date                | Location                 | Speaker            |
 |:-------------------:|:------------------------:|:------------------:|
-| Mon 4th July 2022   | Zoom (see calendar link) | Julianna Piat      |
+| Mon 11th July 2022  | Zoom                     | Yassmeen Ali       |
 
 
 ### Past meetings
 
 | Date                | Location                 | Speaker            |
 |:-------------------:|:------------------------:|:------------------:|
+| Mon 4th July 2022   | Zoom (see calendar link) | Julianna Piat      |
 | Mon 27th June 2022  | Zoom (see calendar link) | Leighton Pritchard |
 | Mon 20th June 2022  | CANCELLED                | CANCELLED          |
 | Mon 13th June 2022  | Zoom (see calendar link) | Angelika Kiepas    |
@@ -44,9 +45,11 @@ While there are COVID restrictions in place (and it remains convenient) these wi
 
 This schedule is tentative - if you cannot attend a meeting where you are scheduled to present, please contact Leighton as early as possible.
 
-| Date                | Location                 | Speaker            |
-|:-------------------:|:------------------------:|:------------------:|
-| Mon 11th July 2022  | TBC                      | Yassmeen Ali       |
-| Tue 19th July 2022  | TBC                      | Areej Obaid        |
-| Mon 25th July 2022  | TBC                      | David Teixeira     |
-| Tue 2nd August 2022 | TBC                      | Nora Novak         |
+| Date                     | Location                 | Speaker            |
+|:------------------------:|:------------------------:|:------------------:|
+| Tue 19th July 2022       | Hybrid                   | Areej Obaid        |
+| Mon 25th July 2022       | Hybrid                   | David Teixeira     |
+| Mon 29th August 2022     | Hybrid                   | TBC                |
+| Mon 5th September 2022   | Hybrid                   | TBC                |
+| Mon 12th September 2022  | Hybrid                   | TBC                |
+| Mon 19th September 2022  | Hybrid                   | TBC                |
