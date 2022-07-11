@@ -1,5 +1,5 @@
 ---
-title:  "블로그 첫글 쓰기"
+title:  "블로그 첫글"
 excerpt: "GitHub Blog 서비스인 github.io 블로그를 시작하기로 했다."
 
 categories:
