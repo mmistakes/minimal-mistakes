@@ -11,11 +11,13 @@ jxvf
 metacaracteres
 metadatos
 monitorizado
+pasándole
 posicionales
 println
 Redirección
 referenciado
 renice
+reutilizables
 reutilización
 secuencialmente
 subcomando
