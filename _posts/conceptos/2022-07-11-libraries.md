@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Librería
+title: Librerías
 date: 2022-07-11
 classes: wide
 toc: true
@@ -16,7 +16,7 @@ tags:
   - libraries
 ---
 
-## Librería y Framework
+## Librerías y Frameworks
 
 * Son herramientas de **desarrollo** que se utilizan para agilizar el trabajo en la codificación de un sistema concreto
 
@@ -24,11 +24,13 @@ tags:
 
 ### Librería ( Library )
 
-* Fragmentos de códigos elaborado por su mayoría por terceros y que sirve para solucionar un problema concreto 
+* Fragmentos de códigos elaborados en su mayoría por terceros y que sirve para solucionar un problema concreto dentro del proyecto 
 
-* Su objetivo de ampliar las funcionalidades del código
+* Su objetivo de ampliar las funcionalidades del proyecto mediante un código definido , probado , testeado y automatizado
 
-* Las funcionalidades que poseen están bien definidas , son especificas , están empaquetadas , reutilizables que se usan para una o varias tareas concretas y también comunes dentro del proyecto que estamos desarrollando
+* Las funcionalidades que poseen las librerías están bien definidas , son especificas , están empaquetadas y son reutilizables 
+
+* Se usan para una o varias tareas concretas y son comunes dentro del proyecto que estamos desarrollando
 
 * Tiene un uso muy especifico aunque hay **librerías** que se utilizan de forma general en proyectos porque tienen funcionalidades muy genéricas
 
