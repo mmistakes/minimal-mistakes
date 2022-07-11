@@ -5,7 +5,7 @@ excerpt: "GitHub Blog 서비스인 github.io 블로그를 시작하기로 했다
 categories:
   - Blog
 tags:
-  - Blog
+  - txt
 last_modified_at: 2022-06-12T23:33:00
 ---
 
