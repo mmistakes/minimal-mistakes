@@ -47,8 +47,9 @@ This schedule is tentative - if you cannot attend a meeting where you are schedu
 
 | Date                     | Location                 | Speaker            |
 |:------------------------:|:------------------------:|:------------------:|
-| Tue 19th July 2022       | Hybrid                   | Areej Obaid        |
-| Mon 25th July 2022       | Hybrid                   | David Teixeira     |
+| Tue 19th July 2022       | Hybrid                   | David Teixeira     |
+| Mon 25th July 2022       | Hybrid                   | Nora Novak         |
+| Tue 2nd August 2022      | Hybrid                   | Areej Obaid        |
 | Mon 29th August 2022     | Hybrid                   | TBC                |
 | Mon 5th September 2022   | Hybrid                   | TBC                |
 | Mon 12th September 2022  | Hybrid                   | TBC                |
