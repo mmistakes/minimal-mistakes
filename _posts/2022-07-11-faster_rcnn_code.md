@@ -21,7 +21,7 @@ toc_sticky: true
 - 최종결과 확인 및 정리
 
 
-- 사용할 데이터셋 (https://public.roboflow.com/object-detection/mask-wearing)
+- 사용할 데이터셋 :  [마스크 데이터셋](https://public.roboflow.com/object-detection/mask-wearing)
 
 
 
