@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Framework
+title: Librería
 date: 2022-07-11
 classes: wide
 toc: true
