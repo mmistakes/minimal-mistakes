@@ -87,6 +87,8 @@ y = 1/(1+np.e**-(a*xData+b))
 
 ![sig7](../../images/2022-07-01-32_Logistic_Regression_로지스틱회귀/sig7.png){: width="100%" height="100%"}
 
+https://ang-love-chang.tistory.com/25
+
 
 ```python
 loss = -tf.reduce_mean(np.array(yData) * tf.log(y) +(1-np.array(yData)) * tf.log(1-y))
