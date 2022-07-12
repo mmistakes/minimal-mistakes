@@ -108,7 +108,9 @@ author:
   avatar           : "https://avatars.githubusercontent.com/u/102719063?v=4"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "**Work hard**, **Be kind** and amazing things will be happen."
   location         : "Now in Korea, Seoul"
-  email            : syoh5188@gmail.com
+  email            : "syoh5188@gmail.com"
+  github           : "https://github.com/syoh5188"
+  github blog_TIL           : "https://syoh5188.github.io/TIL/"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
