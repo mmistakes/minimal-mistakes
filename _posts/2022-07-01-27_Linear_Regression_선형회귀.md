@@ -72,6 +72,8 @@ y = tf.placeholder(dtype=tf.float32) # 매출 금액(yData)를 기억하는 plac
 
 1차 방정식 형태의 가설을 세우고 오차(비용) 함수를 정의한다.
 
+![reduce_mean](../../images/2022-07-01-27_Linear_Regression_선형회귀/reduce_mean.png){: width="100%" height="100%"}
+
 
 ```python
 #1차 방정식 형태의 가설 Y(에측값)를 정의한다.
@@ -155,15 +157,11 @@ for i in range(100001):
     95000.        nan      nan      nan
     100000.        nan      nan      nan
 
-
-
 ```python
 print('a : {}, b : {}'.format(sess.run(a),sess.run(b)))
 ```
 
     a : [nan], b : [nan]
-
-
 
 ```python
 import time

@@ -50,7 +50,7 @@ print('a={}, b={}'.format(sess.run(a), sess.run(b)))
 y = a*xData + b
 ```
 
-![reduce_mean](../../images/2022-07-01-30_Gradient_Descent_경사하강법/reduce_mean.png){: width="100%" height="100%"}
+![reduce_mean](../../images/2022-07-01-30_Gradient_Descent_경사하강법/reduce_mean-16576159248595.png){: width="100%" height="100%"}
 
 
 ```python
