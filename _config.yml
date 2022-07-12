@@ -16,16 +16,16 @@ minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Choi-Jae-Hyeok"
+title                    : "Choi_Note"
 title_separator          : "|"
-subtitle                 : "my study diary"
-name                     : "ChoiJaeHyeok"
+subtitle                 : "- 나의 공부 일지 -"
+name                     : "최재혁"
 description              : "Data Science & AI"
 url                      : "https://choijhyeok.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/logo2.png"
+logo                     : # "/assets/images/logo2.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -104,15 +104,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "choijaehyeok"
-  avatar           : "/assets/images/logo.jpg"
+  # name             : "최재혁"
+  avatar           : "/assets/images/logo3.webp"
   bio              : "Data Science & AI"
   # location         : "South Korea"
-  # email            : "wowogur12@naver.com"
+  email            : "wowogur12@naver.com"
   links:
-    - label: "이메일"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "wowogur12@naver.com"
+    # - label: "이메일"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "wowogur12@naver.com"
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://choijhyeok.github.io/"
