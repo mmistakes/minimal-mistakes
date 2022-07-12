@@ -49,6 +49,8 @@ print(yData)
     [2, 4, 6, 8, 10, 12, 14]
     [0, 0, 0, 1, 1, 1, 1]
 
+![reg](../../images/2022-07-01-32_Logistic_Regression_로지스틱회귀/reg.png){: width="100%" height="100%"}
+
 ```python
 #기울기(a), y절편(b)값을 랜덤하게 정한다.
 #random_normal()함수는 tensorflow에서 정규
