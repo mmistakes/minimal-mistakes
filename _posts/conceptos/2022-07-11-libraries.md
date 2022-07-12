@@ -22,13 +22,26 @@ tags:
 
 * Dependiendo del objetivo que queramos alcanzar se utiliza una herramienta u otra
 
+* Otra gran diferencia definitoria entre una **librería** y un **framework** es la inversión de control lo cual significa
+
+  *  Cuando llamas a una **librería** tienes el ``control de la ejecución`` **(necesitas realizar una acción y la llevas a cabo para conseguir ese fin)**
+
+  *  En el **Framework** , el ``control se invierte`` el **framework** te llama **(cuando el ``framework`` necesite hacer algo dentro de la aplicación te lo pedirá de forma sutil o funcional)**
+    * Si no tiene **inversión de control** , no es un **framework**
+
+* Todo el **flujo de control** ya está en el framework y solo hay un montón de elementos predefinidos que puede completar con su código
+ 
+* Una **librería** , por otro lado, es una **colección de funcionalidades** a las que puede llamar cuando quieras en quien parte de tu proyecto
+
 ### Librería ( Library )
 
-* Fragmentos de códigos elaborados en su mayoría por terceros y que sirve para solucionar un problema concreto dentro del proyecto 
+* Fragmentos de códigos elaborados en su mayoría por terceros y que sirve para solucionar un problema concreto dentro del proyecto mediante operaciones especificas y bien definidas
 
-* Su objetivo de ampliar las funcionalidades del proyecto mediante un código definido , probado , testeado y automatizado
+* Suelen ser la implementación de una **API** la cual contiene el código compilado que ejecuta las funciones y protocolos que la componen
 
-* Las funcionalidades que poseen las librerías están bien definidas , son especificas , están empaquetadas y son reutilizables 
+* Su objetivo es de ampliar las funcionalidades del proyecto mediante un código definido , probado , testeado y automatizado
+
+* Las librerías están empaquetadas , son reutilizables y con operaciones independientes
 
 * Se usan para una o varias tareas concretas y son comunes dentro del proyecto que estamos desarrollando
 
@@ -104,7 +117,12 @@ public static void addToCard(Object obj){
 
   * Tenemos empaquetadas funcionalidades creando una librería concreta  
 
-### Ejemplos de Librería
+### Ejemplos Generales de Librerías
+
+* Protocolos de red, compresión de datos , manipulación de imágenes, utilidades de cadenas de caracteres , evaluación de expresiones regulares,
+operaciones matemáticas dentro del código de la aplicación.
+
+### Ejemplos Concretos de Librerías
 
 * ``JQuery`` 
   * Era la librerías más conocida pero desde las nuevas versiones de ``Javascript`` las cuales implementan de forna nativa las funcionalidades que ofrecía esta librería están en desuso
@@ -114,16 +132,18 @@ public static void addToCard(Object obj){
 
 * ``Log4j2``
   * Librería de ``Java`` para depurar y testear código en el desarrollo de un software, especialmente en su etapa de producción
-  
+
 ### Lo bueno de las librerías
 
-* Soluciones individuales que se añaden individualmente conforme a las necesidades del proyecto
+* Pequeñas soluciones que se añaden individualmente conforme se van necesitando en el proyecto
 
-* Son flexibles a la hora de integrarlas en nuestro proyecto 
+* Son flexibles a la hora de integrarlas a nuestro proyecto y potencialmente más eficientes
+
+* Suele ser código relacionado que se puede intercambiar a voluntad para realizar tareas a nivel de clase
 
 * Se pueden añadir dependiendo de la necesidad , de una en una o varias a la vez **"si lo permite la compatibilidad"**
 
-* Que se pueden combinar entre ellas si lo permiten las especificaciones y la compatibilidad de estas
+* Permiten combinarse entre ellas si las especificaciones y la compatibilidad de estas lo aprueban
 
  * Ejemplo
 
@@ -135,9 +155,10 @@ public static void addToCard(Object obj){
 
 ### Lo malo de las librerías
 
+* Los desarrolladores necesitan diseñar una arquitectura y crear pruebas antes de la implementación
+
 * Solucionan un problema concreto lo cual el resto de elementos de nuestro proyecto lo tenemos que desarrollar nosotros mismos
 
 * Tienes que ir armando tu proyecto funcionalidad a funcionalidad agregando cada **librería** una a una dependiendo de lo que necesitemos crear
 
-* Necesitas asegurar la compatibilidad entre las librerías que vayas añadiendo y además crearte tu propio entorno de trabajo a mano
-
+* Necesitas asegurar la compatibilidad entre las **librerías** que vayas añadiendo y además crearte tu propio entorno de trabajo a mano
