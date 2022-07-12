@@ -83,7 +83,7 @@ y = 1/(1+np.e**-(a*xData+b))
 
 ![sig5](../../images/2022-07-01-32_Logistic_Regression_로지스틱회귀/sig5.png){: width="100%" height="100%"}
 
-![sig6](../../images/2022-07-01-32_Logistic_Regression_로지스틱회귀/sig6.png){: width="100%" height="100%"}
+![sig6](../../images/2022-07-01-32_Logistic_Regression_로지스틱회귀/sig6-16576264379289.png){: width="100%" height="100%"}
 
 ![sig7](../../images/2022-07-01-32_Logistic_Regression_로지스틱회귀/sig7.png){: width="100%" height="100%"}
 
@@ -132,3 +132,4 @@ for i in range(320001):
     Epock:280000, loss:  0.001791, 기울기:  5.078815, y절편:-35.409884
     Epock:300000, loss:  0.001672, 기울기:  5.147820, y절편:-35.892983
     Epock:320000, loss:  0.001568, 기울기:  5.212394, y절편:-36.345051
+
