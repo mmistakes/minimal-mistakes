@@ -51,8 +51,6 @@ print('a : {}, b : {}'.format(a,b))
 
     a : <tf.Variable 'Variable:0' shape=(1,) dtype=float32_ref>, b : <tf.Variable 'Variable_1:0' shape=(1,) dtype=float32_ref>
 
-
-
 ```python
 sess = tf.Session()
 sess.run(tf.global_variables_initializer())
