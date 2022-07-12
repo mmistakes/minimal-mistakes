@@ -50,6 +50,8 @@ print('a={}, b={}'.format(sess.run(a), sess.run(b)))
 y = a*xData + b
 ```
 
+![reduce_mean](../../images/2022-07-01-30_Gradient_Descent_경사하강법/reduce_mean.png){: width="100%" height="100%"}
+
 
 ```python
 #RMSE(평균 제곱근 오차) 수식(오차(비용)함수)을 만든다.
