@@ -100,7 +100,5 @@ for i in range(3001):
 ```python
 #http://taewan.kim/post/sigmoid_diff/
 #Sgimoid함수 미분 정리
-
-#https://devlog.jwgo.kr/2018/04/16/sigmoid-graph-according-to-slope-change/
-
+https://devlog.jwgo.kr/2018/04/16/sigmoid-graph-according-to-slope-change/
 ```
