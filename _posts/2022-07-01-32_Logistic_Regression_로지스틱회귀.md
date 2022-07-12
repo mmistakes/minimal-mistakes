@@ -73,6 +73,20 @@ y = 1/(1+np.e**-(a*xData+b))
 시그모이드 함수의 특성은 예측값(y)이 항상 0아니면  
 1이라는 것이다.
 
+![sig1](../../images/2022-07-01-32_Logistic_Regression_로지스틱회귀/sig1.png){: width="100%" height="100%"}
+
+![sig2](../../images/2022-07-01-32_Logistic_Regression_로지스틱회귀/sig2.png){: width="100%" height="100%"}
+
+![sig3](../../images/2022-07-01-32_Logistic_Regression_로지스틱회귀/sig3.png){: width="100%" height="100%"}
+
+![sig4](../../images/2022-07-01-32_Logistic_Regression_로지스틱회귀/sig4.png){: width="100%" height="100%"}
+
+![sig5](../../images/2022-07-01-32_Logistic_Regression_로지스틱회귀/sig5.png){: width="100%" height="100%"}
+
+![sig6](../../images/2022-07-01-32_Logistic_Regression_로지스틱회귀/sig6.png){: width="100%" height="100%"}
+
+![sig7](../../images/2022-07-01-32_Logistic_Regression_로지스틱회귀/sig7.png){: width="100%" height="100%"}
+
 
 ```python
 loss = -tf.reduce_mean(np.array(yData) * tf.log(y) +(1-np.array(yData)) * tf.log(1-y))
