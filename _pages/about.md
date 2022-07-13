@@ -19,13 +19,11 @@ Besides technology, I have a deep love for math and science. I hope to continue 
 
 ## Personal Information
 
-Age: 23
-
 Nationality: Pakistani
 
 Current Residence: Queens
 
-Favorite Programming Languages: Python, C, C++
+Favorite Programming Languages: Python, Go, C
 
 Sports: Wrestling
 
