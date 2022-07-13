@@ -307,52 +307,15 @@ toc_sticky: true
                     - GoogLeNet에서 conv 3x3 layer 4개를 더 추가하고 fc layer 2개 추가
                 - 최종 아웃풋은 위에서 계산한 7x7x30 의 예측텐서가 나옴
                 
-                | conv 7x7 |
-                | --- |
-                | max pool |
-                | conv 3x3 |
-                | max pool |
-                | inception  |
-                | inception  |
-                | max pool |
-                | inception  |
-                | inception  |
-                | inception  |
-                | inception  |
-                | inception  |
-                | max pool |
-                | inception  |
-                | inception  |
-                | avg pool |
-                | dropout |
-                | linear |
-                | softmax |
-                
-                | conv 7x7 |
-                | --- |
-                | max pool |
-                | conv 3x3 |
-                | max pool |
-                | conv 1x1 , conv 3x3 |
-                | conv 1x1 , conv 3x3 |
-                | max pool |
-                | conv 1x1 , conv 3x3 |
-                | conv 1x1 , conv 3x3 |
-                | conv 1x1 , conv 3x3 |
-                | conv 1x1 , conv 3x3 |
-                | conv 1x1 , conv 3x3 |
-                | max pool |
-                | conv 1x1 , conv 3x3 |
-                | conv 1x1 , conv 3x3 |
-                | conv 3x3 |
-                | conv 3x3 |
-                | conv 3x3 |
-                | conv 3x3 |
-                | Dense |
-                | Dense |
         
-        ![Untitled](/images/2022-07-13-YOLO(You Only Look Once)/Untitled%2075.png)
         
+    
+    ​				![image-20220713140433059](/images/2022-07-13-YOLO(You Only Look Once)/image-20220713140433059.png)
+    
+    
+    
+    ![Untitled](/images/2022-07-13-YOLO(You Only Look Once)/Untitled%2075.png)
+    
     - YOLO network
         - Pretrained
             - 사전에 학습시키는 layer
