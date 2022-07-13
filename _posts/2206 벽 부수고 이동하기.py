@@ -10,7 +10,6 @@ queue.append([0, 0, 0])
 
 for i in range(N):
     graph[i] = list(map(int, sys.stdin.readline().rstrip()))
-    
 
 visited = [[[0] * 2 for _ in range(M)] for _ in range(N)]
 visited[0][0][0] = 1
@@ -20,7 +19,6 @@ dx = [-1, 0, 1, 0]
 dy = [0, -1, 0, 1]
 
 def bfs():
-    
     while queue:
         x, y, broken = queue.popleft()
         if x == N - 1 and y == M - 1:
@@ -37,7 +35,6 @@ def bfs():
                     queue.append([nx, ny, broken])
     return -1
         
-
 non_broken = False
 broken = False
 
