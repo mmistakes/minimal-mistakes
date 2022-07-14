@@ -114,13 +114,6 @@
         <span class="nav__sub-title">me</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "resume" %}
-                        <li><a href="/categories/resume" class="">Resume ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
                     {% if category[0] == "dev_note" %}
                         <li><a href="/categories/dev_note" class="">개발일지 ({{category[1].size}})</a></li>
                     {% endif %}

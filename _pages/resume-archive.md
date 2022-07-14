@@ -1,11 +1,16 @@
 ---
+title: "My Resume"
 layout: single
-title:  "안녕하세요! 최재혁입니다."
 categories : resume
+permalink : /resume/
+author_profile : true
+sidebar_main : true
 tag : [resume, 이력서, blog, jekyll]
 toc: true
 toc_sticky: true
 ---
+
+
 
 ![header](https://capsule-render.vercel.app/api?type=waving&color=a2dcec&height=300&section=header&text=Resume&fontSize=40&animation=fadeIn&fontAlignY=38&fontColor=FFFFFF)
 
@@ -29,7 +34,7 @@ toc_sticky: true
 
 
 
-
+&nbsp;
 
 # 🛠  stacks
 
@@ -50,7 +55,7 @@ toc_sticky: true
 <h3 align="center">
     <img src="https://img.shields.io/badge/-YOLO-09B3AF?style=flat&logo=YOLO&logoColor=white"/>
 </h3>
-
+&nbsp;
 
 
 # 💻  Projects
@@ -68,7 +73,7 @@ toc_sticky: true
 
 github : [**GAN Denoising**](https://github.com/choijhyeok/denoising_gan)
 
-
+&nbsp;
 
 ## AI를 활용한 안면인식 출결시스템
 
@@ -82,7 +87,7 @@ github : [**GAN Denoising**](https://github.com/choijhyeok/denoising_gan)
 
 github : [**AI를 활용한 안면인식 출결시스템**](https://github.com/choijhyeok/Graduation_Project)
 
-
+&nbsp;
 
 ## OLS, VIF 좋은 변수 찾기
 
@@ -95,7 +100,7 @@ github : [**AI를 활용한 안면인식 출결시스템**](https://github.com/c
 
 github : [**OLS, VIF 좋은 변수 찾기**](https://github.com/choijhyeok/OLS)
 
-
+&nbsp;
 
 ## Clustering 분석 프로젝트
 
@@ -108,7 +113,7 @@ github : [**OLS, VIF 좋은 변수 찾기**](https://github.com/choijhyeok/OLS)
 
 github : [**Clustering**](https://github.com/choijhyeok/Clustering)
 
-
+&nbsp;
 
 ## 전주시 빅데이터 공모전
 
@@ -121,6 +126,10 @@ github : [**Clustering**](https://github.com/choijhyeok/Clustering)
     - 분석 결과 flask 대시보드 화
 
 github : [**전주시 빅데이터 공모전**](https://github.com/choijhyeok/Jeonju_bigdata)
+
+&nbsp;
+
+
 
 
 
@@ -136,7 +145,7 @@ github : [**전주시 빅데이터 공모전**](https://github.com/choijhyeok/Je
 - DNN,RNN,CNN,GAN 모델을 실습해보고 서로 발표를 통해서 지식 공유
 - 각 모델의 차이와 구조에 대한 경험지식을 습득
 
-
+&nbsp;
 
 ## 빅리더 아카데미
 
@@ -156,7 +165,7 @@ github : [**전주시 빅데이터 공모전**](https://github.com/choijhyeok/Je
 - heroku 를 통한 flask 웹 서버 배포
 - **대상인 경남도지사상 수상**
 
-
+&nbsp;
 
 ## 자연과학대학 학술창의력 경진대회
 
@@ -167,7 +176,7 @@ github : [**전주시 빅데이터 공모전**](https://github.com/choijhyeok/Je
 - 이미지 핸들링 기법 및 OpenCV 에 Keras 모델 적용 방법 습득
 - **자연대 은상 수상**
 
-
+&nbsp;
 
 ## 더존비즈온 중소,중견 빅데이터
 
@@ -181,7 +190,7 @@ github : [**전주시 빅데이터 공모전**](https://github.com/choijhyeok/Je
 - 모델의 중요도 보다 데이터를 분석하는 것이 중요하다는 것을 배움
 - 장려상 **수상**
 
-
+&nbsp;
 
 ## AI 챔피언쉽 경진대회
 
@@ -192,7 +201,7 @@ github : [**전주시 빅데이터 공모전**](https://github.com/choijhyeok/Je
 - 사업계획서 및 회의를 통해 창업이 이루어지는 과정을 경험
 - 실제로 수상하지는 못했지만, 정기적인 회의와 아이디어를 위해 조사한 내용을 통해 다양한 경험 습득
 
-
+&nbsp;
 
 ## 2021 전주시 빅데이터 공모전
 
@@ -205,7 +214,7 @@ github : [**전주시 빅데이터 공모전**](https://github.com/choijhyeok/Je
 - 위의 데이터를 사용하여 Python의 folium 패키지를 통해 시각화 수행 후 가장 자동차 사고가 많이 나는 곳과  관광지가 주변에 많이 있는 곳을 기준으로 새로운 자전거 도로를 지어야 하는 곳을 5곳 추천하였습니다.
 - **전주시 빅데이터 공모전 최우수상 수상**
 
-
+&nbsp;
 
 # 💯  Certificate
 
@@ -225,7 +234,7 @@ github : [**전주시 빅데이터 공모전**](https://github.com/choijhyeok/Je
 
 - 데이터베이스 상에 있는 데이터를 통해서 데이터분석을  수행하기 위해서 취득
 
-
+&nbsp;
 
 # 🙇‍♂️  Activities & Internships
 
@@ -261,7 +270,7 @@ github : [**전주시 빅데이터 공모전**](https://github.com/choijhyeok/Je
 - 경남연구원에서 요구한 데이터 클리어링에 맞춰서 데이터 전처리
 - 경남연구원에서 수행한 엑셀을 통한 엑셀 핸들링 기법 습득
 
-
+&nbsp;
 
 # 🎓  Education
 
@@ -272,7 +281,7 @@ github : [**전주시 빅데이터 공모전**](https://github.com/choijhyeok/Je
 - 정보통계학과 전공
 - 컴퓨터 과학 복수전공
 
-
+&nbsp;
 
 # 🚀 Career
 
@@ -309,6 +318,3 @@ Data Scientist
 2022.04 ~ 현재
 
 ---
-
-
-
