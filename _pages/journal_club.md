@@ -35,9 +35,9 @@ Suggested topics can be drawn from the holding pool, or newly provided by the sp
 
 ## Next Journal Club
 
-| Date                 | Location                 | Topic | Speaker            | Paper  |
+| Date                 | Location                 | Topic   | Speaker            | Paper  |
 |:--------------------:|:------------------------:|:-----:|:------------------:|:-------|
-| Tue 12th July 2022   | Zoom (see calendar link) | Software Tool | Leighton Pritchard | TBA |
+| Tue 9th August 2022   | Zoom (see calendar link or Slack) | Parasitology | Morgan Feeney | Will _et al._ "Genetic Underpinnings of Host Manipulation by Ophiocordyceps as Revealed by Comparative Transcriptomics" [doi:10.1534/g3.120.401290](https://doi.org/10.1534/g3.120.401290) |
 
 ### Current Topic Pool
 
@@ -46,7 +46,7 @@ Suggested topics can be drawn from the holding pool, or newly provided by the sp
 3. Phylogenetic Trees
 4. Comparative Genomics
 5. Gene Prediction
-6. Parasitology
+6. Protein Structure
 
 ## Previous Papers
 
@@ -73,7 +73,8 @@ Suggested topics can be drawn from the holding pool, or newly provided by the sp
 | 2022-03-08 | Angelika Kiepas | Classic paper (pre-2010) | Altschul _et al._ "Gapped `BLAST` and `PSI-BLAST`: a new generation of protein database search programs" [doi:10.1093/nar/25.17.3389](https://doi.org/10.1093/nar/25.17.3389) |
 | 2022-05-10 | Geraldine Buitrago | Artificial Intelligence | Gardiner _et al._ "Combining explainable machine learning, demographic and multi-omic data to inform precision medicine strategies for inflammatory bowel disease." [doi:10.1371/journal.pone.0263248](https://doi.org/10.1371/journal.pone.0263248) |
 | 2022-06-14 | Steve Ford | Metabolism | Sankarasubramanian _et al._ "Gut Microbiota and Metabolic Specificity in Ulcerative Colitis and Crohn's Disease" [doi:10.3389/fmed.2020.606298](https://doi.org/10.3389/fmed.2020.606298) |
-| 2022-07-12 | Leighton Pritchard | Software Tool | TBA |
+| 2022-07-12 | Leighton Pritchard | Software Tool | Leighton Pritchard | Kosakovsky Pond _et al._ "HyPhy: hypothesis testing using phylogenies" [doi:10.1093/bioinformatics/bti079](https://doi.org/10.1093/bioinformatics/bti079) |
+
 
 
 ## Holding Pool
@@ -95,3 +96,4 @@ Suggested topics can be drawn from the holding pool, or newly provided by the sp
 - Metagenomics
 - Forensic Science
 - Artificial Intelligence
+- Software Tool
