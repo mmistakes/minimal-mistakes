@@ -12,7 +12,7 @@
 
 # theme: "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin:  "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale: "ko-KR"
@@ -104,8 +104,8 @@ analytics:
 # Site Author
 author:
   name: "ChansNote"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "찬스노트의 블로그 입니다."
+  avatar: "/assets/images/me.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: "찬스노트의 블로그 입니다. <br> 🌐 Front-End Developer"
   location: "South Korea"
   email:
   links:

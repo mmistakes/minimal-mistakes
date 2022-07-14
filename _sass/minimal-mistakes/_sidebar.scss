@@ -134,9 +134,8 @@
   }
 
   img {
-    max-width: 110px;
-    border-radius: 50%;
-
+    width: 180px;
+    border-radius: 10%;
     @include breakpoint($large) {
       padding: 5px;
       border: 1px solid $border-color;
@@ -216,7 +215,7 @@
 
     &:before {
       @supports (pointer-events: none) {
-        content: '';
+        content: "";
         position: fixed;
         top: 0;
         left: 0;
@@ -350,4 +349,3 @@
     margin-right: initial;
   }
 }
-
