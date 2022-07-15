@@ -177,12 +177,11 @@
   -ms-flex-align: center;
   align-items: center;
   min-height: $nav-height;
-  background: $background-color;
 
   a {
     display: block;
     margin: 0 1rem;
-    color: $masthead-link-color;
+    color: var(--text-color);
     text-decoration: none;
     -webkit-transition: none;
     transition: none;
@@ -568,6 +567,6 @@
   }
 
   li ul li ul li ul li ul li ul > li a {
-    padding-left: 3.25rem
+    padding-left: 3.25rem;
   }
 }

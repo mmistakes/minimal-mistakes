@@ -14,7 +14,7 @@
   animation: $intro-transition;
   -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
-  background-color: $footer-background-color;
+  background-color: var(--bg-color) !important;
 
   footer {
     @include clearfix;
@@ -30,7 +30,7 @@
   }
 
   a {
-    color: inherit;
+    color: val(--text-color);
     text-decoration: none;
 
     &:hover {
@@ -49,6 +49,7 @@
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
+  color: var(--text-color);
 }
 
 .page__footer-follow {
@@ -59,6 +60,7 @@
   }
 
   li {
+    color: var(--text-color);
     display: inline-block;
     padding-top: 5px;
     padding-bottom: 5px;

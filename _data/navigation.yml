@@ -9,15 +9,15 @@ main:
   - title: "Search"
     url: /search/
 docs:
-  - title: "대목차2"
+  - title: "Side Menu"
     children:
       - title: "Category"
         url: /categories/
       - title: "Tag"
         url: /tags/
-  - title: "대목차1"
-    children:
-      - title: "Category"
-        url: /categories/
-      - title: "Tag"
-        url: /tags/
+  # - title: "대목차1"
+  #   children:
+  #     - title: "Category"
+  #       url: /categories/
+  #     - title: "Tag"
+  #       url: /tags/
