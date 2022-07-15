@@ -39,27 +39,33 @@
 /* _includes/masthead.html */
 const toggleSwitch = document.querySelector("#toggle_dark_theme");
 const currentTheme = localStorage.getItem("theme");
+const commentBody = document.querySelector(".sans-serif");
 
 if (currentTheme) {
   document.documentElement.setAttribute("data-theme", currentTheme);
-
+  test.setAttribute("data-theme", currentTheme);
   if (currentTheme === "dark") {
     toggleSwitch.checked = true;
   }
 }
 
 function switchTheme(e) {
-  console.log(51, e.target.checked);
   if (e.target.checked) {
-    console.log(53, e.target.checked);
     document.documentElement.setAttribute("data-theme", "dark");
+    commentBody.classList.remove("light");
+    commentBody.classList.add("darkBox");
+    const dark = document.querySelector(".darkBox");
+    dark.style.color = "#fafafa";
+    console.log(59, dark);
     localStorage.setItem("theme", "dark");
   } else {
-    console.log(54, e.target.checked);
     document.documentElement.setAttribute("data-theme", "light");
+    commentBody.classList.remove("darkBox");
+    commentBody.classList.add("lightBox");
+    const light = document.querySelector(".lightBox");
+    light.style.color = "#252a34";
     localStorage.setItem("theme", "light");
   }
-  console.log(62, currentTheme);
 }
 
 toggleSwitch.addEventListener("change", switchTheme, false);
