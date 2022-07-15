@@ -1,5 +1,3 @@
-from ctypes.wintypes import PUSHORT
-from os import popen
 import sys
 
 # - 입력받은 문자를 한 글자씩 stack에 PUSH
