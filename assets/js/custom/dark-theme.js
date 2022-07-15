@@ -43,7 +43,6 @@ const commentBody = document.querySelector(".sans-serif");
 
 if (currentTheme) {
   document.documentElement.setAttribute("data-theme", currentTheme);
-  test.setAttribute("data-theme", currentTheme);
   if (currentTheme === "dark") {
     toggleSwitch.checked = true;
   }
