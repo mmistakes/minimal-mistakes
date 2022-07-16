@@ -39,7 +39,6 @@
 /* _includes/masthead.html */
 const toggleSwitch = document.querySelector("#toggle_dark_theme");
 const currentTheme = localStorage.getItem("theme");
-const commentBody = document.querySelector(".sans-serif");
 
 if (currentTheme) {
   document.documentElement.setAttribute("data-theme", currentTheme);
@@ -48,15 +47,12 @@ if (currentTheme) {
   }
 }
 
-function commentDarkMode(removeType, addType, colorType) {
-  console.log(52, commentBody);
-  if (commentBody) {
-    commentBody.classList.remove(removeType);
-    commentBody.classList.add(addType);
-    const styleType = document.querySelector(`.${addType}`);
-    console.log(56, styleType);
-    styleType.style.color = colorType;
-  }
+function disqusColorReload() {
+  var d = document,
+    s = d.createElement("script");
+  s.src = "https://SITE_URL.disqus.com/embed.js"; // Replace SITE_URL with your site's URL
+  s.setAttribute("data-timestamp", +new Date());
+  (d.head || d.body).appendChild(s);
 }
 
 function localStorageSetting(key, value) {
@@ -66,12 +62,12 @@ function localStorageSetting(key, value) {
 function switchTheme(e) {
   if (e.target.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
-    commentDarkMode("lightBox", "darkBox", "#fafafa");
     localStorageSetting("theme", "dark");
+    disqusColorReload();
   } else {
     document.documentElement.setAttribute("data-theme", "light");
-    commentDarkMode("darkBox", "lightBox", "#252a34");
     localStorageSetting("theme", "light");
+    disqusColorReload();
   }
 }
 
