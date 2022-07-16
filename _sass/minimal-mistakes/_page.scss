@@ -148,7 +148,7 @@ body {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     font-size: 0.8em;
-    background: $code-background-color;
+    background: var(--pre-color);
     border-radius: $border-radius;
 
     &::before,
@@ -253,7 +253,7 @@ body {
   color: #fff;
   font-family: $caption-font-family;
   font-size: $type-size-7;
-  background: #000;
+  background: var(--pre-color);
   text-align: right;
   z-index: 5;
   opacity: 0.5;

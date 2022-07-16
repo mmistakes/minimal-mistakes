@@ -17,12 +17,13 @@ figure.highlight {
   pre.highlight {
     margin: 0;
     padding: 1em;
+    font-size: 13px;
   }
 }
 
 .highlight table {
   margin-bottom: 0;
-  font-size: 1em;
+  font-size: 13px;
   border: 0;
 
   td {
@@ -318,7 +319,8 @@ figure.highlight {
 }
 
 .gist {
-  th, td {
+  th,
+  td {
     border-bottom: 0;
   }
 }

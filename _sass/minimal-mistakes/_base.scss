@@ -141,7 +141,7 @@ a {
   }
 
   &:visited {
-    color: $link-color-visited;
+    color: var(--title-color);
   }
 
   &:hover {
