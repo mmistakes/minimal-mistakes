@@ -1,9 +1,9 @@
 // /* assets/js/custom/dark-theme.js */
 // const defaultTheme = [...document.styleSheets].find((style) =>
-//   /(main.css)$/.test(style.href)
+//   /(main.css)$/.(style.href)
 // );
 // const darkTheme = [...document.styleSheets].find((style) =>
-//   /(main_dark.css)$/.test(style.href)
+//   /(main_dark.css)$/.(style.href)
 // );
 
 // let setDarkMode = (isDark) => {
@@ -48,22 +48,30 @@ if (currentTheme) {
   }
 }
 
+function commentDarkMode(removeType, addType, colorType) {
+  console.log(52, commentBody);
+  if (commentBody) {
+    commentBody.classList.remove(removeType);
+    commentBody.classList.add(addType);
+    const styleType = document.querySelector(`.${addType}`);
+    console.log(56, styleType);
+    styleType.style.color = colorType;
+  }
+}
+
+function localStorageSetting(key, value) {
+  localStorage.removeItem(key, value);
+  localStorage.setItem(key, value);
+}
 function switchTheme(e) {
   if (e.target.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
-    commentBody.classList.remove("light");
-    commentBody.classList.add("darkBox");
-    const dark = document.querySelector(".darkBox");
-    dark.style.color = "#fafafa";
-    console.log(59, dark);
-    localStorage.setItem("theme", "dark");
+    commentDarkMode("lightBox", "darkBox", "#fafafa");
+    localStorageSetting("theme", "dark");
   } else {
     document.documentElement.setAttribute("data-theme", "light");
-    commentBody.classList.remove("darkBox");
-    commentBody.classList.add("lightBox");
-    const light = document.querySelector(".lightBox");
-    light.style.color = "#252a34";
-    localStorage.setItem("theme", "light");
+    commentDarkMode("darkBox", "lightBox", "#252a34");
+    localStorageSetting("theme", "light");
   }
 }
 

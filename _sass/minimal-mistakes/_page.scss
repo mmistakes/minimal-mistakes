@@ -62,7 +62,6 @@ body {
       float: left;
       margin-left: 0;
       margin-right: 0;
-      width: 768px;
       clear: both;
       color: var(--text-color);
     }
@@ -580,5 +579,46 @@ body {
     @include breakpoint($x-large) {
       padding-right: 0;
     }
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+@include mobile {
+  .page__content,
+  .page__meta,
+  .page__share {
+    width: 100%;
+  }
+}
+
+@include tablet {
+  .page__content,
+  .page__meta,
+  .page__share {
+    width: 100%;
+  }
+}
+
+@include desktop {
+  .page__content,
+  .page__meta,
+  .page__share {
+    width: 768px;
   }
 }

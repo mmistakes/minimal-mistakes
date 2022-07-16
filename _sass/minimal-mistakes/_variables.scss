@@ -151,6 +151,10 @@ $large: 1024px !default;
 $x-large: 1280px !default;
 $max-width: $x-large !default;
 
+$breakpoint-mobile: 335px;
+$breakpoint-tablet: 758px;
+$breakpoint-desktop: 1024px;
+
 /*
    Grid
    ========================================================================== */
