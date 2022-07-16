@@ -1,0 +1,7 @@
+---
+---
+
+@import 
+  "hamilton/skins/{{ site.skin | default: 'daylight' }}",
+  "hamilton/skin"
+;

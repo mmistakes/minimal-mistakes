@@ -1,0 +1,44 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{%- assign taxonomies = site.posts | group_by_exp: "post", "post.date | date: '%Y'" -%}
+
+<div class="taxonomies-wrapper">
+  <ul class="taxonomies">
+    {%- for taxonomy in taxonomies -%}
+      <li>
+        {%- capture link -%}{{ page.permalink }}#{{ taxonomy.name }}{%- endcapture -%}
+        <a class="taxonomy" href="{{ link | relative_url }}">
+            <span>{{ taxonomy.name }}</span>
+            <span class="taxonomy-count">{{ taxonomy.size }}</span>
+        </a> 
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>
+
+{% comment %} Show posts by taxonomy {% endcomment %}
+{%- for taxonomy in taxonomies -%}
+  <h2 id="{{ taxonomy.name }}">
+    {{ taxonomy.name }}
+  </h2>
+  <ul class="post-list-by-taxonomy">
+    {%- assign posts = taxonomy.items -%}
+    {%- for post in posts -%}
+      <li>
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> &raquo; <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </li>
+    {%- endfor -%}
+  </ul>
+  <a href="#" onclick="backToTop()" class="back-to-top">Top &#8648;</a>
+{%- endfor -%}
+
+<script>
+  function backToTop() {
+    const main = document.getElementById("site-main");
+    main.scrollTop = 0;
+  }
+</script>

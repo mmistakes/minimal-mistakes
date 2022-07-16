@@ -24,7 +24,7 @@
         OTHER DEALINGS IN THE SOFTWARE.
     {% endcomment %}
     {% comment %}
-        Version 1.1.0
+        Version 1.0.14
           https://github.com/allejo/jekyll-toc
 
         "...like all things liquid - where there's a will, and ~36 hours to spare, there's usually a/some way" ~jaybe
@@ -44,51 +44,34 @@
             * ordered       (bool)   : false  - when set to true, an ordered list will be outputted instead of an unordered list
             * item_class    (string) :   ''   - add custom class(es) for each list item; has support for '%level%' placeholder, which is the current heading level
             * submenu_class (string) :   ''   - add custom class(es) for each child group of headings; has support for '%level%' placeholder which is the current "submenu" heading level
-            * base_url      (string) :   ''   - add a base url to the TOC links for when your TOC is on another page than the actual content
+            * baseurl       (string) :   ''   - add a base url to the TOC links for when your TOC is on another page than the actual content
             * anchor_class  (string) :   ''   - add custom class(es) for each anchor element
-            * skip_no_ids   (bool)   : false  - skip headers that do not have an `id` attribute
+            * skipNoIDs     (bool)   : false  - skip headers that do not have an `id` attribute
 
         Output:
             An ordered or unordered list representing the table of contents of a markdown block. This snippet will only
             generate the table of contents and will NOT output the markdown given to it
     {% endcomment %}
 
-    {% capture newline %}
-    {% endcapture %}
-    {% assign newline = newline | rstrip %} <!-- Remove the extra spacing but preserve the newline -->
-
-    {% capture deprecation_warnings %}{% endcapture %}
-
-    {% if include.baseurl %}
-        {% capture deprecation_warnings %}{{ deprecation_warnings }}<!-- jekyll-toc :: "baseurl" has been deprecated, use "base_url" instead -->{{ newline }}{% endcapture %}
-    {% endif %}
-
-    {% if include.skipNoIDs %}
-        {% capture deprecation_warnings %}{{ deprecation_warnings }}<!-- jekyll-toc :: "skipNoIDs" has been deprecated, use "skip_no_ids" instead -->{{ newline }}{% endcapture %}
-    {% endif %}
-
-    {% capture jekyll_toc %}{% endcapture %}
+    {% capture my_toc %}{% endcapture %}
     {% assign orderedList = include.ordered | default: false %}
-    {% assign baseURL = include.base_url | default: include.baseurl | default: '' %}
-    {% assign skipNoIDs = include.skip_no_ids | default: include.skipNoIDs | default: false %}
+    {% assign skipNoIDs = include.skipNoIDs | default: false %}
     {% assign minHeader = include.h_min | default: 1 %}
     {% assign maxHeader = include.h_max | default: 6 %}
-    {% assign nodes = include.html | strip | split: '<h' %}
-
+    {% assign nodes = include.html | split: '<h' %}
     {% assign firstHeader = true %}
-    {% assign currLevel = 0 %}
-    {% assign lastLevel = 0 %}
+    {% assign previousLevel = 0 %}
 
-    {% capture listModifier %}{% if orderedList %}ol{% else %}ul{% endif %}{% endcapture %}
+    {% capture listModifier %}{% if orderedList %}1.{% else %}-{% endif %}{% endcapture %}
 
     {% for node in nodes %}
         {% if node == "" %}
             {% continue %}
         {% endif %}
 
-        {% assign currLevel = node | replace: '"', '' | slice: 0, 1 | times: 1 %}
+        {% assign headerLevel = node | replace: '"', '' | slice: 0, 1 | times: 1 %}
 
-        {% if currLevel < minHeader or currLevel > maxHeader %}
+        {% if headerLevel < minHeader or headerLevel > maxHeader %}
             {% continue %}
         {% endif %}
 
@@ -96,87 +79,92 @@
 
         {% assign _idWorkspace = _workspace[0] | split: 'id="' %}
         {% assign _idWorkspace = _idWorkspace[1] | split: '"' %}
-        {% assign htmlID = _idWorkspace[0] %}
+        {% assign html_id = _idWorkspace[0] %}
 
         {% assign _classWorkspace = _workspace[0] | split: 'class="' %}
         {% assign _classWorkspace = _classWorkspace[1] | split: '"' %}
-        {% assign htmlClass = _classWorkspace[0] %}
+        {% assign html_class = _classWorkspace[0] %}
 
-        {% if htmlClass contains "no_toc" %}
+        {% if html_class contains "no_toc" %}
             {% continue %}
         {% endif %}
 
         {% if firstHeader %}
-            {% assign minHeader = currLevel %}
+            {% assign firstHeader = false %}
+            {% assign minHeader = headerLevel %}
         {% endif %}
 
         {% capture _hAttrToStrip %}{{ _workspace[0] | split: '>' | first }}>{% endcapture %}
         {% assign header = _workspace[0] | replace: _hAttrToStrip, '' %}
 
+        {% assign indentAmount = headerLevel | minus: minHeader %}
+        {% assign space = '' %}
+        {% for i in (1..indentAmount) %}
+            {% assign space = space | prepend: '    ' %}
+        {% endfor %}
+
         {% if include.item_class and include.item_class != blank %}
-            {% capture listItemClass %} class="{{ include.item_class | replace: '%level%', currLevel | split: '.' | join: ' ' }}"{% endcapture %}
+            {% capture listItemClass %}{:.{{ include.item_class | replace: '%level%', headerLevel }}}{% endcapture %}
         {% endif %}
 
-        {% if include.submenu_class and include.submenu_class != blank %}
-            {% assign subMenuLevel = currLevel | minus: 1 %}
-            {% capture subMenuClass %} class="{{ include.submenu_class | replace: '%level%', subMenuLevel | split: '.' | join: ' ' }}"{% endcapture %}
-        {% endif %}
+        {% capture anchor_body %}{% if include.sanitize %}{{ header | strip_html }}{% else %}{{ header }}{% endif %}{% endcapture %}
+        {% capture anchor_body %}{{ anchor_body | replace: "|", "\|" }}{% endcapture %}
 
-        {% capture anchorBody %}{% if include.sanitize %}{{ header | strip_html }}{% else %}{{ header }}{% endif %}{% endcapture %}
-
-        {% if htmlID %}
-            {% capture anchorAttributes %} href="{% if baseURL %}{{ baseURL }}{% endif %}#{{ htmlID }}"{% endcapture %}
-
-            {% if include.anchor_class %}
-                {% capture anchorAttributes %}{{ anchorAttributes }} class="{{ include.anchor_class | split: '.' | join: ' ' }}"{% endcapture %}
-            {% endif %}
-
-            {% capture listItem %}<a{{ anchorAttributes }}>{{ anchorBody }}</a>{% endcapture %}
+        {% if html_id %}
+            {% capture list_item %}[{{ anchor_body }}]({% if include.baseurl %}{{ include.baseurl }}{% endif %}#{{ html_id }}){% endcapture %}
         {% elsif skipNoIDs == true %}
             {% continue %}
         {% else %}
-            {% capture listItem %}{{ anchorBody }}{% endcapture %}
+            {% capture list_item %}{{ anchor_body }}{% endcapture %}
         {% endif %}
 
-        {% if currLevel > lastLevel %}
-            {% capture jekyll_toc %}{{ jekyll_toc }}<{{ listModifier }}{{ subMenuClass }}>{% endcapture %}
-        {% elsif currLevel < lastLevel %}
-            {% assign repeatCount = lastLevel | minus: currLevel %}
+        <!--
+        If we have a submenu class and we're unindenting, then we need to add a "closing" class to this group of bullet
+        points
+        -->
+        {% if include.submenu_class and previousLevel > indentAmount %}
+            <!--
+            `space` is the current indentation, so we if want to close off the previous grouping, we need to add one
+            more level of indentation 
+            -->
+            {% assign submenuIndentation = space | prepend: '    ' %}
 
-            {% for i in (1..repeatCount) %}
-                {% capture jekyll_toc %}{{ jekyll_toc }}</li></{{ listModifier }}>{% endcapture %}
+            {% capture my_toc %}{{ my_toc }}
+{{ submenuIndentation }}{:.{{ include.submenu_class | replace: '%level%', previousLevel }}}{% endcapture %}
+        {% endif %}
+
+        {% capture my_toc %}{{ my_toc }}
+{{ space }}{{ listModifier }} {{ listItemClass }} {{ list_item }}{% if include.anchor_class %}{:.{{ include.anchor_class }}}{% endif %}{% endcapture %}
+
+        {% assign previousLevel = indentAmount %}
+    {% endfor %}
+
+    {% if include.class and include.class != blank %}
+        {% capture my_toc %}{:.{{ include.class }}}
+{{ my_toc | lstrip }}{% endcapture %}
+    {% endif %}
+
+    {% if include.id %}
+        {% capture my_toc %}{: #{{ include.id }}}
+{{ my_toc | lstrip }}{% endcapture %}
+    {% endif %}
+
+    <!--
+    If we have a submenu class, we need to close off all the remaining list item groups so that submenu classes are
+    applied correctly to them
+    -->
+    {% if include.submenu_class != blank %}
+        <!-- The last level of indentation that we were at, we need to work backwards from there closing each group -->
+        {% for i in (1..previousLevel) %}
+            {% assign lvl = previousLevel | plus: 1 | minus: i %} <!-- Invert the indent level based on `i` -->
+            {% assign closingSpace = '' %}
+
+            {% for i in (1..lvl) %}
+                {% assign closingSpace = closingSpace | prepend: '    ' %}
             {% endfor %}
 
-            {% capture jekyll_toc %}{{ jekyll_toc }}</li>{% endcapture %}
-        {% else %}
-            {% capture jekyll_toc %}{{ jekyll_toc }}</li>{% endcapture %}
-        {% endif %}
-
-        {% capture jekyll_toc %}{{ jekyll_toc }}<li{{ listItemClass }}>{{ listItem }}{% endcapture %}
-
-        {% assign lastLevel = currLevel %}
-        {% assign firstHeader = false %}
-    {% endfor %}
-
-    {% assign repeatCount = minHeader | minus: 1 %}
-    {% assign repeatCount = lastLevel | minus: repeatCount %}
-    {% for i in (1..repeatCount) %}
-        {% capture jekyll_toc %}{{ jekyll_toc }}</li></{{ listModifier }}>{% endcapture %}
-    {% endfor %}
-
-    {% if jekyll_toc != '' %}
-        {% assign rootAttributes = '' %}
-        {% if include.class and include.class != blank %}
-            {% capture rootAttributes %} class="{{ include.class | split: '.' | join: ' ' }}"{% endcapture %}
-        {% endif %}
-
-        {% if include.id and include.id != blank %}
-            {% capture rootAttributes %}{{ rootAttributes }} id="{{ include.id }}"{% endcapture %}
-        {% endif %}
-
-        {% if rootAttributes %}
-            {% assign nodes = jekyll_toc | split: '>' %}
-            {% capture jekyll_toc %}<{{ listModifier }}{{ rootAttributes }}>{{ nodes | shift | join: '>' }}>{% endcapture %}
-        {% endif %}
+            {% capture my_toc %}{{ my_toc }}
+{{ closingSpace }}{:.{{ include.submenu_class | replace: '%level%', lvl }}}{% endcapture %}
+        {% endfor %}
     {% endif %}
-{% endcapture %}{% assign tocWorkspace = '' %}{{ deprecation_warnings }}{{ jekyll_toc }}
+{% endcapture %}{% assign tocWorkspace = '' %}{{ my_toc | markdownify | strip }}

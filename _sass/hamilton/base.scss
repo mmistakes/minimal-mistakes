@@ -1,0 +1,204 @@
+html {
+  font-size: $base-font-size;
+
+  @include media-query($on-small) {
+    @include relative-font-size(0.89);
+  }
+}
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure, iframe,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit;
+}
+
+/**
+ * Basic styling
+ */
+body {
+  font-family: $base-font-family;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow-wrap: break-word;
+  line-height: $base-line-height;
+}
+
+p {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+hr {
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+}
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block;
+}
+
+figcaption {
+  @include relative-font-size(0.8);
+  margin-top: $spacing-unit / 2;
+}
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Links
+ */
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  border-left: 0.1em solid;
+  padding-left: $spacing-unit;
+  font-style: italic;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  i, em {
+    font-style: normal;
+  }
+}
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  font-family: $code-font-family;
+  border-radius: 0.3em;
+}
+
+code {
+  padding: 0px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+
+    white-space: pre;
+    word-break: normal;
+    word-wrap: normal;
+  }
+}
+
+.highlight {
+  border-radius: 0.3em;
+  @extend %vertical-rhythm;
+}
+
+/**
+ * Tables
+ */
+table {
+  margin-bottom: $spacing-unit;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid;
+  
+  th, td {
+    padding: ($spacing-unit / 3) ($spacing-unit / 2);
+  }
+  
+  th {
+    border: 1px solid;
+  }
+
+  td {
+    border: 1px solid;
+  }
+}
+
+/**
+ * Task item list
+ */
+ul.task-list {
+  li {
+    list-style-type: none;
+
+    .task-list-item-checkbox {
+      margin: 0 .5em .25em -1.6em;
+      vertical-align: middle;
+    }
+  }
+}
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: calc(#{$content-width} - (#{$spacing-unit}));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
+
+  @media screen and (min-width: $on-large) {
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+  }
+}

@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+body {
+  color: $text-color;
+  background-color: $background-color;
+}
+
+a {
+  color: $link-base-color;
+
+  &:visited {
+    color: $link-visited-color;
+  }
+
+  &:hover {
+    color: $text-color;
+  }
+}
+
+blockquote {
+  color: $text-color-light;
+  border-left-color: $border-color-light;
+}
+
+pre,
+code {
+  background-color: $code-background-color;
+}
+
+pre {
+  box-shadow: $pre-shadow;
+}
+
+.highlight {
+  background: $code-background-color;
+
+  .highlighter-rouge & {
+    background: $code-background-color;
+  }
+}
+
+table {
+  color: $table-text-color;
+  border-color: $table-border-color;
+
+  tr {
+    &:nth-child(even) {
+      background-color: $table-zebra-color;
+    }
+  }
+
+  th {
+    background-color: $table-header-bg-color;
+    border-color: $table-header-border;
+  }
+
+  td {
+    border-color: $table-border-color;
+  }
+}
+
+
+///////// Layout ///////////
+
+.site-header {
+  background-color: $background-color;
+  border-top-color: $border-color-dark;
+  border-bottom-color: $border-color-light;
+}
+
+.site-sidebar {
+  border-color: $border-color-light;
+}
+
+.site-title {
+  color: $text-color;
+  
+  &:visited {
+    color: $text-color;
+  }
+}
+
+.site-nav {
+  background-color: $background-color;
+  border-color: $border-color;
+
+  .menu-icon {
+    > svg path {
+      fill: $border-color-dark;
+    }
+  }
+
+  li a {
+    color: $text-color;
+  }
+
+  .dropdown-content {
+    background-color: $border-color-light;
+    box-shadow: $dropdown-shadow;
+  }
+}
+
+.post-list {
+  li {
+    border-bottom-color: $border-color-light;
+  }
+}
+
+.post-header {
+  border-bottom-color: $border-color-light;
+}
+
+.post-meta {
+  color: $text-color-light;
+}
+
+.post-footer {
+  border-color: $border-color-light;
+}
+
+.post-pagination {
+  border-color: $border-color-light;
+}
+
+ul.post-tags {
+  li {
+    background-color: $border-color-light;
+  }
+}
+
+.pagination {
+  li {
+    a, div {
+      border-color: $border-color-light;
+    }
+
+    div.pager-edge {
+      border: 1px dashed $border-color-light;
+    }
+
+    a.previous-page, a.next-page {
+      &:hover {
+        border-color: $border-color;
+      }
+    }
+  }
+}
+
+.taxonomy-count {
+  color: $text-color-light;
+}
+
+.site-footer {
+  color: $text-color-light;
+  border-top-color: $border-color-light;
+}
+
+.sidebar-section {
+  border-bottom-color: $border-color-light;
+}
+
+.feed-subscribe {
+  a {
+    color: $subscribe-color;
+  }
+}
+
+.toc-title {
+  color: $background-color;
+  background-color: $border-color-dark;
+  border-color: $border-color;
+}
+
+.toc-nav {
+  border-color: $border-color;
+
+  ul li a {
+    color: $text-color;
+    border-color: $border-color;
+
+    &:hover {
+      background-color: $border-color-light;
+    }
+  }
+}
