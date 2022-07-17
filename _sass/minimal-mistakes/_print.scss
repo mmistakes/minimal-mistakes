@@ -3,7 +3,6 @@
    ========================================================================== */
 
 @media print {
-
   [hidden] {
     display: none;
   }
@@ -176,7 +175,8 @@
 
   a[href^='http://']:after,
   a[href^='https://']:after,
-  a[href^='ftp://']:after {
+  a[href^='ftp://']:after
+  {
     content: " (" attr(href) ")";
     font-size: 80%;
   }
@@ -210,12 +210,12 @@
   }
 
   a.no-reformat:after {
-    content: '';
+    content: "";
   }
 
   abbr[title].no-reformat:after,
   acronym[title].no-reformat:after {
-    content: '';
+    content: "";
   }
 
   .page__hero-caption {
@@ -228,7 +228,7 @@
     }
   }
 
-/*
+  /*
    Hide the following elements on print
    ========================================================================== */
 

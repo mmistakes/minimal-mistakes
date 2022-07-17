@@ -118,7 +118,10 @@ body {
   p,
   li,
   dl {
-    font-size: 1em;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Malgun Gothic, Gulim, Segoe UI, -apple-system,
+      BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   }
 
   /* paragraph indents */
