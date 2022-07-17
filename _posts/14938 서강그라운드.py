@@ -29,7 +29,7 @@ for i in range(1, n + 1):
     for j in range(1, n + 1):
         if graph[i][j] == float('inf'):
             continue
-        if graph[i][j] <= r:
+        if graph[i][j] <= m:
             sum += item_list[j - 1]
     max_sum = max(max_sum, sum)
 
