@@ -134,7 +134,7 @@ NumPy(넘파이)는 Numerical Python의 약자로 자료구조, 알고리즘 산
 루프를 사용하지 않고 대량 데이터의 배열 연산을 가능하게 하므로 빠른 배열 연산 속도를 보장한다. 대량 데이터 기반의 과학과 공학 프로그램은 빠른 계산 능력이 매우 중요하므로 파이썬 기반의 많은 과학과 공학 패키지는 넘파이에 의존하고 있다. 
 넘파이API는 매우 넓은 범위를 다루고 있으므로 머신러닝 애플리케이션을 작성할 때 중요하게 활용될 수 있는 핵심 개념 위주로 숙지하는 것이 좋다. ex) Dimension, axis, etc.
 
-설치 명령어는 cmd에서 <code>pip install numpy</code>를 입력한다.
+설치 명령어는 cmd에서 `pip install numpy`를 입력한다.
 
 참고 사이트: <a href='https://sebastianraschka.com/pdf/books/dlb/appendix_f_numpy-intro.pdf' target='blank'>https://sebastianraschka.com/pdf/books/dlb/appendix_f_numpy-intro.pdf</a>
 
@@ -144,7 +144,7 @@ pandas(판다스)는 구조화된 데이터나 표 형식의 데이터를 빠르
 
 일반적으로 대부분의 데이터 세트는 2차원 데이터 즉, 행(Row) x 열(Column)로 구성돼 있다. 행과 열의 2차원 데이터가 인기 있는 이유는 바로 인간이 가장 이해하기 쉬운 데이터 구조이면서도 효과적으로 데이터를 담을 수 있는 구조이기 때문이다. 판다스는 이처럼 행과 열로 이뤄진 2차원 데이터를 효율적으로 가공/처리할 수 있는 다양하고 훌륭한 기능을 제공한다.
 
-설치 명령어는 cmd에서 <code>pip install pandas</code>를 입력한다.
+설치 명령어는 cmd에서 `pip install pandas`를 입력한다.
 
 참고 사이트: <a href='https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html' target='blank'>https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html</a>
 
