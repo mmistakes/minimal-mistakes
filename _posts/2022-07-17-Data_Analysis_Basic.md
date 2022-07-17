@@ -1,3 +1,84 @@
+---
+layout: single
+title:  "Data Analysis Basic"
+categories: 
+tag: [python]
+toc: false
+author_profile: false
+---
+
+<head>
+  <style>
+    table.dataframe {
+      white-space: normal;
+      width: 100%;
+      height: 240px;
+      display: block;
+      overflow: auto;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      line-height: 20px;
+      text-align: center;
+      border: 0px !important;
+    }
+
+    table.dataframe th {
+      text-align: center;
+      font-weight: bold;
+      padding: 8px;
+    }
+    
+    table.dataframe td {
+      text-align: center;
+      padding: 8px;
+    }
+    
+    table.dataframe tr:hover {
+      background: #b8d1f3; 
+    }
+    
+    .output_prompt {
+      overflow: auto;
+      font-size: 0.9rem;
+      line-height: 1.45;
+      border-radius: 0.3rem;
+      -webkit-overflow-scrolling: touch;
+      padding: 0.8rem;
+      margin-top: 0;
+      margin-bottom: 15px;
+      font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      color: $code-text-color;
+      border: solid 1px $border-color;
+      border-radius: 0.3rem;
+      word-break: normal;
+      white-space: pre;
+    }
+
+  .dataframe tbody tr th:only-of-type {
+      vertical-align: middle;
+  }
+
+  .dataframe tbody tr th {
+      vertical-align: top;
+  }
+
+  .dataframe thead th {
+      text-align: center !important;
+      padding: 8px;
+  }
+
+  .page__content p {
+      margin: 0 0 0px !important;
+  }
+
+  .page__content p > strong {
+    font-size: 0.8rem !important;
+  }
+
+  </style>
+
+</head>
+
 # 데이터 분석
 
 ---
@@ -7,6 +88,7 @@
 <strong>여기서 '데이터'는 정확히 무슨 뜻일까?</strong>
 
 주된 의미는 구조화된 데이터(structed data)다.
+
 - 각 컬럼(column)의 형식이 문자열, 숫자, 날짜 등으로 서로 다른 표 혹은 스프레드시트와 비슷한 데이터. 이는 관계형 데이터베이스 혹은 탭(tab)이나 쉼표(commma)로 구분되는 텍스트 파일 형식으로 저장되는 대부분의 데이터를 포함한다.
 - 다차원 배열(행렬)
 - SQL(Structured Query Language, 구조화 질의어)에서 기분키나 외래키 같은 키 컬럼에 의해 서로 연관되는 여러 가지 표
@@ -14,7 +96,7 @@
 
 대부분의 데이터는 모델링이나 분석을 위해 좀 더 쉬운 구조로 형태를 바꿀 수 있다. 또는 데이터 안에서 어떤 특성을 추출해서 구조화된 형태로 만들 수 있다. 예를 들어 뉴스 기사 모음은 사용 단어 빈도표를 만들어 감성 분석에 사용할 수도 있다.
 
-
+<br>
 
 # 데이터 분석에서의 파이썬
 
@@ -32,16 +114,21 @@
 이런 장점을 갖춘 파이썬에도 단점이 있는데, 파이썬은 인터프리터 언어이므로 Java나 C++ 같은 컴파일 언어보다 많이 느리다. 그래서 실시간 거래 시스템처럼 매우 짧은 응답 시간을 필요로 하는 애플리케이션에서는 가능한 한 최고의 성능을 내고자 생산성은 떨어지지만 C++ 같은 저수준 언어로 개발을 한다. 
 추가로, **GIL**<sup>global interpreter lock</sup>(전역 인터프리터 잠금) 매커니즘은 인터프리터가 한 번에 하나의 파이썬 명령만 실행하도록 해서 동시다발적인 멀티스레드를 처리하거나 CPU에 집중된 많은 스레드를 처리하는 애플리케이션에 적합한 언어가 아니다.
 하지만, 중요한 점은 **개발자의 시간 비용**은 **CPU의 시간 비용**보다 비싸다는 것이다.
+
+<br>
+
 # 필수 라이브러리
 
 ---
 
 ### [NumPy](https://numpy.org/)
+
 NumPy(넘파이)는 Numerical Python의 약자로 자료구조, 알고리즘 산술 데이터를 다루는 대부분의 과학 계산 애플리케이션에서 필요한 라이브러리를 제공하며 대표적인 파이썬 기반 수치 해석 라이브러리이다. 다음은 NumPy가 제공하는 기능이다. 
+
 - 빠르고 효울적인 다차원 배열 객체 ndarry
 - 배열 원소를 다루거나 배열 간의 수학 계산을 수행하는 함수
 - 디스크로부터 배열 기반의 데이터를 읽거나 쓸 수 있는 도구
--  선형대수 계산, 푸리에 변환, 난수 생성기
+- 선형대수 계산, 푸리에 변환, 난수 생성기
 - 파이썬 확장과 C, C++ 코드에서 NumPy의 자료구조에 접근하고 계산 기능을 사용할 수 있도록 해주는 C API
 
 루프를 사용하지 않고 대량 데이터의 배열 연산을 가능하게 하므로 빠른 배열 연산 속도를 보장한다. 대량 데이터 기반의 과학과 공학 프로그램은 빠른 계산 능력이 매우 중요하므로 파이썬 기반의 많은 과학과 공학 패키지는 넘파이에 의존하고 있다. 
@@ -49,43 +136,59 @@ NumPy(넘파이)는 Numerical Python의 약자로 자료구조, 알고리즘 산
 
 설치 명령어는 cmd에서 <code>pip install numpy</code>를 입력한다.
 
-참고 사이트: https://sebastianraschka.com/pdf/books/dlb/appendix_f_numpy-intro.pdf
+참고 사이트: <a href='https://sebastianraschka.com/pdf/books/dlb/appendix_f_numpy-intro.pdf' target='blank'>https://sebastianraschka.com/pdf/books/dlb/appendix_f_numpy-intro.pdf</a>
 
 ### [pandas](https://pandas.pydata.org/)
+
 pandas(판다스)는 구조화된 데이터나 표 형식의 데이터를 빠르고 쉽고 표현적으로 다루도록 설계된 고수준의 자료구조와 함수를 제공한다.  주된 목표는 서로 다른 형식을 갖는 여러 종류의 데이터를 컴퓨터가 이해할 수 있도록 동일한 형식을 갖는 구조로 통합하는 것이다. 이를 위해 판다스는 1차원 배열 객체인 Series(시리즈)와 표 형태의 row와 column 이름을 가지는 DataFrame(데이터프레임)이라는 구조화된 데이터 형식을 제공한다.
 
 일반적으로 대부분의 데이터 세트는 2차원 데이터 즉, 행(Row) x 열(Column)로 구성돼 있다. 행과 열의 2차원 데이터가 인기 있는 이유는 바로 인간이 가장 이해하기 쉬운 데이터 구조이면서도 효과적으로 데이터를 담을 수 있는 구조이기 때문이다. 판다스는 이처럼 행과 열로 이뤄진 2차원 데이터를 효율적으로 가공/처리할 수 있는 다양하고 훌륭한 기능을 제공한다.
 
 설치 명령어는 cmd에서 <code>pip install pandas</code>를 입력한다.
 
-참고 사이트: https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html
+참고 사이트: <a href='https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html' target='blank'>https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html</a>
 
 ### [matplotlib](https://matplotlib.org/)
+
 matplotlib(맷플롯립)은 그래프나 차트 등 그래픽으로 표현하는 데 사용하는 파이썬 기반 2D 시각화 도구이다. 판다스와 연계하여 데이터를 다양한 방식으로 시각화하는 기능을 제공한다. 하지만, 맷플롯립은 너무 세분화된 API로 익히기가 번거롭고 시각적인 디자인 부분에서도 투박한 면이 있다. 이를 보완하기 위해 Seaborn(시본)을 대표적으로 사용한다. 시본은 맷플롯립을 기반으로 만들었지만, 판다스와의 쉬운 연동, 더 함축적인 API, 분석을 위한 다양한 유형의 그래프/차트 제공 등으로 파이썬 기반의 데이터 분석가/과학자에게 인기를 얻고 있다.
-참고 사이트: https://matplotlib.org/1.5.3/users/beginner.html
+
 
 설치 명령어는 cmd에서 `pip install matplotlib`를 입력한다.
+
+참고 사이트: <a href='https://matplotlib.org/1.5.3/users/beginner.html' target='blank'> https://matplotlib.org/1.5.3/users/beginner.html</a>
+
 ### [SciPy](https://scipy.org/)
+
 SciPy(사이파이)는 과학 계산 컴퓨팅 영역의 여러 기본 문제를 다루는 패키지 모음이다. 다음은 SciPy에 포함된 패키지 중 일부다.
 
- - **scipy.integrate**
- 수치적분 루틴과 미분방적식 풀이법
- - **scipy.linalg**
- numpy.linalg에서 제공하는 것보다 더 확장된 선형대수 루틴과 매트릭스 분해
- - **scipy.optimize**
- 함수 최적화기와 방정식의 근을 구하는 알고리즘
- - **scipy.signal**
- 시그널 프로세싱 도구
-- **scipy.sparse**
-희소 행렬과 희소 선형 시스템 풀이법
-- **scipy.special**
-감마 함수처럼 흔히 사용되는 수학 함수를 구현한 포트란 라이브러리인 SPECFUN 래퍼
-- **scipy.stats**
-표준 연속/이산 확률 분포(밀도 함수, 샘플러, 연속 분포 함수)와 다양한 통계 테스트 그리고 좀 더 기술적인 통계도구
+ - **scipy.integrate**<br>
+
+   수치적분 루틴과 미분방적식 풀이법
+
+ - **scipy.linalg**<br>
+   numpy.linalg에서 제공하는 것보다 더 확장된 선형대수 루틴과 매트릭스 분해
+
+ - **scipy.optimize**<br>
+   함수 최적화기와 방정식의 근을 구하는 알고리즘
+
+ - **scipy.signal**<br>
+   시그널 프로세싱 도구
+
+- **scipy.sparse**<br>
+  희소 행렬과 희소 선형 시스템 풀이법
+
+- **scipy.special**<br>
+  감마 함수처럼 흔히 사용되는 수학 함수를 구현한 포트란 라이브러리인 SPECFUN 래퍼
+
+- **scipy.stats**<br>
+  표준 연속/이산 확률 분포(밀도 함수, 샘플러, 연속 분포 함수)와 다양한 통계 테스트 그리고 좀 더 기술적인 통계도구
 
 설치 명령어는 cmd에서 `pip install scipy`를 입력한다.
+
 ### scikit-learn
+
 scikit-learn(사이킷런)은 머신러닝 학습을 위한 파이썬 라이브러리이다. 다음과 같은 모델의 하위모듈을 포함한다.
+
 - **classification**: SVM(Support Vector Machine), KNN(K-Nearest Neighbor), Random Forest, Logistic Regression, etc.
 - **regression**: Ridge, Lasso, Elastic-Net, etc.
 - **clustering**: K-Mean, Spectral Clustering, etc.
@@ -94,8 +197,11 @@ scikit-learn(사이킷런)은 머신러닝 학습을 위한 파이썬 라이브�
 - **preprocessing**: Feature Extraction, Normalization, etc.
 
 설치 명령어는 cmd에서 `pip install -U scikit-learn`을 입력한다.
+
 ### statsmodels
+
 statsmodels은 다양한 R 언어용 회귀분석 모델을 구현한 스탠퍼드 대학의 통계학 교수인 조나단 테일러<sup>Jonathan Taylor</sup>의 작업을 기반으로 만들어진 통계분석 패키지다. scikit-learn과 비교하여 statsmodels는 전통적인 통계(주로 빈도주의적 접근)와 계량경제학 알고리즘을 포함하고 있다. 다음과 같은 하위모듈을 포함한다.
+
 - **회귀 모델**: 선형회귀, 일반화 선형 모델, 로버스트 선형 모델, 선형 혼합효과 모델 등
 - **분산분석**(ANOVA: analysis of variance)
 - **시계열분석**: AR, ARMA, ARIMA, VAR 및 기타 모델
