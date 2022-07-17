@@ -17,7 +17,7 @@ author_profile: false
       overflow: auto;
       font-family: Arial, sans-serif;
       font-size: 0.9rem;
-      line-height: 20px;
+      line-height: 120%;
       text-align: center;
       border: 0px !important;
     }
