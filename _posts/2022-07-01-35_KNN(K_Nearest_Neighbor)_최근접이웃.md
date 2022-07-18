@@ -481,7 +481,8 @@ knn.fit(x_train, y_train.values.ravel())
 x_test = test[['3P', 'TRB', 'BLK']]
 y_test = test[['Pos']]
 
-# 테스트를 수행한다. 정확도를 계산한다.
+# 테스트를 수행한다. 정확도를 계산한다. predict를 사용해서
+# 트레인 자료의 학습결과를 바탕으로, x_test에 대한 y_test값을 예측한다.
 predict = knn.predict(x_test) # 예측값
 # 모델 예측 정확도를 계산한다.
 print('정확도: {}'.format(accuracy_score(y_test.values.ravel(), predict)))
