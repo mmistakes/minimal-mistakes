@@ -473,6 +473,8 @@ knn = KNeighborsClassifier(n_neighbors=optimal_k)
 # 학습에 사용할 속성과 예측값을 지정한다.
 x_train = train[['3P', 'TRB', 'BLK']]
 y_train = train[['Pos']]
+
+#트레인 자료를 학습시킨다.
 knn.fit(x_train, y_train.values.ravel())
 
 # 테스트에 사용할 속성과 포지션에 대한 정답을 지정한다.
@@ -480,6 +482,7 @@ x_test = test[['3P', 'TRB', 'BLK']]
 y_test = test[['Pos']]
 
 # 테스트를 수행한다. 정확도를 계산한다.
+# 학습한 자료와, 예측값ㅇ르 비교한다.
 predict = knn.predict(x_test) # 예측값
 # 모델 예측 정확도를 계산한다.
 print('정확도: {}'.format(accuracy_score(y_test.values.ravel(), predict)))
