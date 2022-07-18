@@ -482,7 +482,6 @@ x_test = test[['3P', 'TRB', 'BLK']]
 y_test = test[['Pos']]
 
 # 테스트를 수행한다. 정확도를 계산한다.
-# 학습한 자료와, 예측값ㅇ르 비교한다.
 predict = knn.predict(x_test) # 예측값
 # 모델 예측 정확도를 계산한다.
 print('정확도: {}'.format(accuracy_score(y_test.values.ravel(), predict)))
