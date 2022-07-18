@@ -98,7 +98,7 @@
 }
 
 @include mobile {
-  .masthead__menu-item:last-child {
+  .masthead__menu-item {
     display: none;
   }
 }
