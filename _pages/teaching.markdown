@@ -10,10 +10,12 @@ toc_sticky: true
 
 
 header:
-  image: /assets/images/teaching/teaching2.jpg
-  caption: "Photo credit: [**Ivan Aleksic**](https://unsplash.com/@ivalex?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [**Unsplash**](http://unsplash.com/)"
+  image: /assets/images/teaching/teaching3.jpg
+  caption: "Photo credit: [**Sharon McCutcheon**](https://unsplash.com/@sharonmccutcheon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [**Unsplash**](http://unsplash.com/)"
 
 ---
+
+ <!-- image 2 caption: "Photo credit: [**Ivan Aleksic**](https://unsplash.com/@ivalex?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [**Unsplash**](http://unsplash.com/)" -->
 
 <!-- semester is named as b{{ curentYear }}1 or 2 (winter or summer). Current year begins in september and ends in august (e.g. june 22 has currentyear 21) -->
 {% capture currentMonth %}
