@@ -10,8 +10,8 @@ toc_sticky: true
 
 
 header:
-  image: /assets/images/teaching/teaching.jpg
-  caption: "Photo credit: [**Diego PH**](https://unsplash.com/@jdiegoph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [**Unsplash**](http://unsplash.com/)"
+  image: /assets/images/teaching/teaching2.jpg
+  caption: "Photo credit: [**Ivan Aleksic**](https://unsplash.com/@ivalex?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [**Unsplash**](http://unsplash.com/)"
 
 ---
 

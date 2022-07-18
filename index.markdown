@@ -17,7 +17,7 @@ feature_row:
     btn_label: "Research"
     btn_class: "btn--info"
     url: /research
-  - image_path: /assets/images/teaching/teaching-thumb.jpg #https://unsplash.com/@jdiegoph Diego PH
+  - image_path: /assets/images/teaching/teaching2-thumb.jpg #https://unsplash.com/@jdiegoph Diego PH
     #title: "Teaching"
     excerpt: "Subjects and thesis topics."
     btn_label: "Teaching"
