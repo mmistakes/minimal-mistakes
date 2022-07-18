@@ -11,7 +11,6 @@ for i in range(N):
 graph_home = [[0]]
 graph_chicken = [[0]]
 
-
 for i in range(N):
     for j in range(N):
         if graph[i][j] == 1:
