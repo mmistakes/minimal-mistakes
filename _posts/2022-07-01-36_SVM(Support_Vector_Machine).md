@@ -112,6 +112,8 @@ from sklearn.svm import SVC
 GridSearchCV() 함수의 실행 결과에 fit()함수를 실행화면  
 그리드 서치를 사용해서 자동으로 최적의 파라미터를 찾아준다.
 
+![exp](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/exp.png){: width="100%" height="100%"}
+
 
 ```python
 #사이킷런에서 제공하는 GridSearchCV()함수를 사용해  
@@ -198,8 +200,6 @@ print(position)
 
     [0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0]
 
-
-
 ```python
 #최적의 파라미터 후보들을 조합해서 학습하고 학습된 모델들을 저장한다.
 classifiers = []
@@ -231,6 +231,8 @@ plt.rcParams['font.family'] = 'NanumGothicCoding'
 plt.rcParams['font.size'] = 15
 mpl.rcParams['axes.unicode_minus'] = False
 ```
+
+![1](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/1.png){: width="100%" height="100%"}
 
 
 ```python
