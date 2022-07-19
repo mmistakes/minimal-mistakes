@@ -268,6 +268,8 @@ Image('./data/np_r.png', width ='1000')
 
 ![output_21_0](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/output_21_0.png){: width="100%" height="100%"}
 
+![mesh](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/mesh.png){: width="100%" height="100%"}
+
 
 ```python
 #각 모델을 시각화 한다.
