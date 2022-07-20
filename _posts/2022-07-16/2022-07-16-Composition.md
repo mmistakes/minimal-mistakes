@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Composition (Children prop)"
-categories: "FrontEnd"
+categories: "React"
 tag: [React]
 toc: true
 toc_sticky: true
@@ -10,8 +10,6 @@ author_profile: false
 sidebar:
   nav: "docs"
 ---
-
-
 
 ## Why Compostion ?
 
@@ -28,19 +26,19 @@ App.js -> Expense.js -> ExpenseItem.js -> ExpenseDate.js
 ```jsx
 // App.js
 
-import Expense from './components/Expense';
+import Expense from "./components/Expense";
 
 function App() {
   const expense = [
     {
-      id: 'e1',
-      title: 'Toliet Paper',
+      id: "e1",
+      title: "Toliet Paper",
       amount: 294.67,
       date: new Date(2021, 2, 28),
     },
     {
-      id: 'e2',
-      title: 'New TV',
+      id: "e2",
+      title: "New TV",
       amount: 799.49,
       date: new Date(2021, 5, 28),
     },
@@ -61,8 +59,8 @@ App.js 부모안에 props로 item을 넘겨준다.
 ```jsx
 // ExpenseItem.js
 
-import ExpenseItem from './ExpenseItem';
-import './Expense.css';
+import ExpenseItem from "./ExpenseItem";
+import "./Expense.css";
 
 function Expense(props) {
   return (
@@ -89,8 +87,8 @@ Expense 안에서 받은 props를 ExpenseItem컴포넌트로 다시 props로 전
 ```jsx
 // ExpenseItem.js
 
-import ExpenseDate from './ExpenseDate';
-import './ExpenseItem.css';
+import ExpenseDate from "./ExpenseDate";
+import "./ExpenseItem.css";
 
 function ExpenseItem(props) {
   return (
@@ -119,11 +117,11 @@ ExpenseItem에서 title과 amount값을 맵핑해주고 다시 ExpenseDate로 da
 ```jsx
 // ExpenseDate.js
 
-import './ExpenseDate.css';
+import "./ExpenseDate.css";
 
 function ExpenseDate(props) {
-  const month = props.date.toLocaleString('en-US', { month: 'long' });
-  const day = props.date.toLocaleString('en-US', { day: '2-digit' });
+  const month = props.date.toLocaleString("en-US", { month: "long" });
+  const day = props.date.toLocaleString("en-US", { day: "2-digit" });
   const year = props.date.getFullYear();
 
   return (
@@ -149,8 +147,6 @@ export default ExpenseDate;
 그리고 HTML을 살펴보면
 
 태그의 클래스를 부여하여 style을 중복적용하고있다.
-
-
 
 실제로 아래코드를 보면 box-shadow / border-radius가 중복 사용되고 있는 것을 볼 수 있다.
 
@@ -182,8 +178,6 @@ background-color: #4b4b4b;
 ### Children 사용후 Module
 
 <img src="https://imchanyo.netlify.app/static/2edd7ecc7f2cb321b26ef3cbc516d0a6/fe486/com4.png" width="400"/>
-
-
 
 우린 이제 children을 사용하여 중복된 스타일링과 HTML을 공통으로 사용할 수 있는 컴포넌트를 만들것이다. 위의 모듈을 보면 UI만 담당하는 Card / 그리고 비용의 기능을 담당하는 componenets로 분리하여 모듈화하였다. 이렇게하면 실제 공통 스타일링이 되어있을때 Card하나로 해결이 가능해진다.
 

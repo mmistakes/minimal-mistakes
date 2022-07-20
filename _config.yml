@@ -267,6 +267,5 @@ defaults:
       comments: true
       share: true
       related: true
-      show_date: true
-      words_per_minute: 250
-      date_format: "%Y-%m-%d"
+      mathjax: true
+      sidebar_main: true
