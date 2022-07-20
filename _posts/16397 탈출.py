@@ -50,6 +50,5 @@ def bfs():
                     visit[int(a)] = 1
     if flag == 0:
         print("ANG")
-                    
-            
+                           
 bfs()        
