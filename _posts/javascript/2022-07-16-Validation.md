@@ -1,15 +1,23 @@
 ---
+
 layout: single
 title: "Validation Check"
-categories: "FrontEnd"
-tag: [Javascript]
+categories: "Javascript"
+tag: [validation]
 toc: true
 toc_sticky: true
 toc_label: "목차"
 author_profile: false
 sidebar:
   nav: "docs"
+date: 2022-07-16
+last_modified_at: 2022-07-16
+
 ---
+
+
+
+
 
 
 

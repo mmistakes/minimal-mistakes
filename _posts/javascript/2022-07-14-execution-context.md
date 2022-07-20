@@ -1,14 +1,17 @@
 ---
 layout: single
 title: "실행 컨텍스트 (Execution Context)"
-categories: "FrontEnd"
-tag: [Javascript]
+categories: "Javascript"
+tag: [클로저, Closure , Execution Context]
 toc: true
 toc_sticky: true
 toc_label: "목차"
 author_profile: false
 sidebar:
   nav: "docs"
+date: 2022-07-14
+last_modified_at: 2022-07-14
+
 ---
 
 # Closure

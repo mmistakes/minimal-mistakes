@@ -1,14 +1,17 @@
 ---
+
 layout: single
 title: "discriminated.ts"
-categories: "FrontEnd"
-tag: [TypeScript]
+categories: "TypeScript"
+tag: [discriminated.ts]
 toc: true
 toc_sticky: true
 toc_label: "목차"
 author_profile: false
 sidebar:
   nav: "docs"
+date: 2022-07-16
+last_modified_at: 2022-07-16
 ---
 
 ### discriminated

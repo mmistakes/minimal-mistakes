@@ -1,15 +1,20 @@
 ---
 layout: single
 title: "Spread operator 및 몇 가지 편의 기능"
-categories: "FrontEnd"
-tag: [Javascript]
+categories: "Javascript"
+tag: [Spread operator]
 toc: true
 toc_sticky: true
 toc_label: "목차"
 author_profile: false
 sidebar:
   nav: "docs"
+date: 2022-07-16
+last_modified_at: 2022-07-16
+
 ---
+
+
 
 ## Spread operator 및 몇 가지 편의 기능
 

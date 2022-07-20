@@ -32,6 +32,9 @@ const switchTheme = (e) => {
   if (e.target.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
     localStorageSetting("theme", "light", "dark");
+    const link = document.location.href;
+    console.log(link);
+
     disqusColorReload();
   } else {
     document.documentElement.setAttribute("data-theme", "light");
