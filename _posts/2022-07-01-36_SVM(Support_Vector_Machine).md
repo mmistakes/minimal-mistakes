@@ -320,7 +320,7 @@ for i, (C, gamma, clf) in enumerate(classifiers):
     
     #X['3p']를 x축으로 X['BLK']를 y축으로 cmap에서 지정한 
     #색상(edgecolors는 테두리 색상)을 c속성으로 구분해서 
-    #그래프를 그린다.(파랑, 빨강색 그라데이션)
+    #그래프를 그린다.
     #cmap속성값 => https://jrc-park.tistory.com/155 참조
     #scatter메소드는 점을 그린다.
     plt.scatter(x=X['3P'], y=X['BLK'], 
