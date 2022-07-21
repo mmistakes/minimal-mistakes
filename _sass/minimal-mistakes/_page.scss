@@ -28,6 +28,8 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .initial-content,

@@ -16,6 +16,9 @@ $sign-color: #70cac3; /* Downy */
   --masthead-hover-color: #53595e;
   --pre-color: #afd7ff;
   --title-color: #000000;
+  --scroll-color: #056dbb;
+  --scroll-thumb: #54acef;
+  --scroll-thumb-hover: #ffd24c;
 }
 
 [data-theme="dark"] {
@@ -31,7 +34,9 @@ $sign-color: #70cac3; /* Downy */
   --masthead-hover-color: #999999;
   --pre-color: #5a9ddf;
   --title-color: #4584e8c7;
-
+  --scroll-color: #4b4f52;
+  --scroll-thumb: #5e6265;
+  --scroll-thumb-hover: #ffd24c;
   /* ==========================================================================
         Dark skin
         ========================================================================== */
