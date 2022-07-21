@@ -91,13 +91,3 @@
     font-weight: 700;
   }
 }
-@mixin mobile {
-  @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
-    @content;
-  }
-}
-
-@include mobile {
-  .masthead__menu-item {
-  }
-}
