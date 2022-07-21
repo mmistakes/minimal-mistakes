@@ -274,9 +274,9 @@ Image('./data/np_r.png', width ='1000')
 
 ![mesh](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/mesh.png){: width="100%" height="100%"}
 
-예시
+![exp6](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/exp6.png){: width="100%" height="100%"}
 
-![exp4](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/exp4.png){: width="100%" height="100%"}
+![grad](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/grad.png){: width="100%" height="100%"}
 
 
 ```python
