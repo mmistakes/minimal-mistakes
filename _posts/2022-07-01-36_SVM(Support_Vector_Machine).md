@@ -114,6 +114,10 @@ GridSearchCV() 함수의 실행 결과에 fit()함수를 실행화면
 
 ![exp](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/exp.png){: width="100%" height="100%"}
 
+![exp2](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/exp2-16583882478572.png){: width="100%" height="100%"}
+
+![exp3](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/exp3.png){: width="100%" height="100%"}
+
 
 ```python
 #사이킷런에서 제공하는 GridSearchCV()함수를 사용해  
@@ -269,6 +273,8 @@ Image('./data/np_r.png', width ='1000')
 ![output_21_0](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/output_21_0.png){: width="100%" height="100%"}
 
 ![mesh](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/mesh.png){: width="100%" height="100%"}
+
+![exp4](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/exp4.png){: width="100%" height="100%"}
 
 
 ```python
