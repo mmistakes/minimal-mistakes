@@ -600,16 +600,3 @@
     }
   }
 }
-
-@mixin mobile {
-  @media (min-width: 400px) and (max-width: 480px) {
-    @content;
-  }
-}
-@include mobile {
-  .greedy-nav {
-    a {
-      margin: 0 0.2rem;
-    }
-  }
-}
