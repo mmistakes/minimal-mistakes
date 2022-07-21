@@ -114,7 +114,7 @@ GridSearchCV() 함수의 실행 결과에 fit()함수를 실행화면
 
 ![exp](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/exp.png){: width="100%" height="100%"}
 
-![exp2](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/exp2-16583882478572.png){: width="100%" height="100%"}
+![exp2](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/exp2-16583956482146.png){: width="100%" height="100%"}
 
 ![exp3](../../images/2022-07-01-36_SVM(Support_Vector_Machine)/exp3.png){: width="100%" height="100%"}
 
@@ -312,15 +312,17 @@ for i, (C, gamma, clf) in enumerate(classifiers):
     Z=Z.reshape(xx.shape)
     #print(Z.shape)
     
-    #pcolormesh()함수는 cmap속성으로 지정한 색상을 이용해 xx,yy로 지정된
-    #단계로 Z에 저장된 결정 경계면을 표시한다.
-    
+    #pcolormesh()함수는 cmap속성으로 지정한 색상을 이용해 xx,yy로 지정된 
+    #사변형에 Z에 저장된 값을 가지고 음영색을 표시한다.
+    # Z앞에 붙은 -를 제거하면, 음영의 색이 바뀐다(빨->파, 파->빨).
+    #[xx,yy]의 차원이, Z보다 하나 이상 커야한다.
     plt.pcolormesh(xx,yy,-Z,cmap=plt.cm.RdBu_r)
     
     #X['3p']를 x축으로 X['BLK']를 y축으로 cmap에서 지정한 
     #색상(edgecolors는 테두리 색상)을 c속성으로 구분해서 
     #그래프를 그린다.(파랑, 빨강색 그라데이션)
     #cmap속성값 => https://jrc-park.tistory.com/155 참조
+    #scatter메소드는 점을 그린다.
     plt.scatter(x=X['3P'], y=X['BLK'], 
                 
                 #edgecolors =>동그라미의 테두리 색상을 정한다.
