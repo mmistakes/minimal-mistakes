@@ -19,14 +19,13 @@ locale                   : "en-US"
 title                    : "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "SOLA KIM"
-description              : "FOCUS ON FRONT-END"
+name                     : "Your Name"
+description              : "An amazing website."
 url                      : "https://ffe4el.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "![KakaoTalk_20220722_173143864](https://user-images.githubusercontent.com/93892724/180399303-3b7176b8-e5dd-4460-8b2f-a08c0da853af.jpg)
-"# path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
