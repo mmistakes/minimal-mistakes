@@ -30,7 +30,6 @@ While there are COVID restrictions in place (and it remains convenient) these wi
 |:-------------------:|:------------------------:|:------------------:|
 | Mon 27th June 2022  | Zoom (see calendar link) | Leighton Pritchard |
 
-
 ### Past meetings
 
 | Date                | Location                 | Speaker            |
