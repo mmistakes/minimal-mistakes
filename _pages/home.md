@@ -48,7 +48,7 @@ feature_row:
   - image_path: /assets/fontawesome/svgs/solid/graduation-cap.svg
     alt: "student pages"
     title: "Student Pages"
-    excerpt: "Pages for PhD, MSc and UG students working in the group."
+    excerpt: "Are you a new PhD, MSc or UG student working in the group? You might find these posts useful."
     url: "/group/student_pages"
     btn_class: "btn--primary"
     btn_label: "Student Pages"
