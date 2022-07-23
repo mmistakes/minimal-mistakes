@@ -16,11 +16,11 @@ minimal_mistakes_skin: "dark" # "default", "air", "aqua", "contrast", "dirt", "n
 
 # Site Settings
 locale: "ko-KR"
-title: "개발 노트"
+title: "시욱노트"
 title_separator: "|"
-subtitle: "안녕하세요"
-name: "JeongSiWook"
-description: "An amazing website."
+subtitle: "안녕하세요, 정시욱의 개발노트입니다."
+name: "정시욱"
+description: "웹 개발자 🌱"
 url: "https://Jeongsiwook.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
