@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "ko_KR"
 title                    : "모리의 블로그"
 title_separator          : "|"
-subtitle                 : "mori blog"
+subtitle                 : "mori's blog"
 name                     : "jinsookim97"
 description              : "모리의 블로그입니다"
 url                      : "https://jinsookim97.github.io"
@@ -30,9 +30,9 @@ masthead_title           : # overrides the website title displayed in the masthe
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "moriblog"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "모리"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "개발일지 | 일상 | 주식 | 부동산 | 투자 | 공부 (자기계발)"
+  bio              : "개발 | 일상 | 부동산 | 투자 | 공부(자기계발)"
   location         : "South Korea"
   email            : 
   links:
@@ -284,7 +284,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
       show_date: true
