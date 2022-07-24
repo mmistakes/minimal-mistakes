@@ -1,4 +1,7 @@
-# Computer Vision
+---
+layout: post
+title: Computer Vision
+---
 
 
 ## 컴퓨터 비전이란?
