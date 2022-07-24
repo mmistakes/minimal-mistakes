@@ -8,11 +8,27 @@ main:
     url: /search/
 
 docs: 
-  - title: "목차"
+  - title: "일상"
     children: 
-      - title: "Category"
+      - title: "일상"
         url: /categories/
-      - title: "Tag"
+      - title: "스크랩"
+        url: /tags/
+  - title: "투자"
+    children: 
+      - title: "부동산"
+        url: /categories/
+      - title: "임장"
+        url: /tags/
+      - title: "주식"
+        url: /tags/
+  - title: "공부"
+    children: 
+      - title: "대학"
+        url: /categories/
+      - title: "코딩"
+        url: /tags/
+      - title: "독서"
         url: /tags/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
