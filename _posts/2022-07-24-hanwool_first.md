@@ -16,7 +16,7 @@ title: Computer Vision
  - ### 제조업
  제조업에서 컴퓨터 비전은 제품의 결함 여부를 실시간을 파악할 수 있게 합니다.  아래 그림과 같이 제품의 크기가 아무리 작더라도 컴퓨터가 완제품의 이미지를 처리하여 결함을 쉽게 파악할 수 있게 합니다. 이외에도 원격 모니터링, 장비 관리 및 스킬 훈련에도 컴퓨터 비전이 활용되고 있습니다.
  
-![Quality management](https://viso.ai/wp-content/uploads/2021/09/defect-part-detection-with-computer-vision.jpg)
+<img src="https://viso.ai/wp-content/uploads/2021/09/defect-part-detection-with-computer-vision.jpg" width="700">
 
 
 [Defect Detection System in Manufacturing](https://www.researchgate.net/publication/334104857_Real-Time_Tiny_Part_Defect_Detection_System_in_Manufacturing_Using_Deep_Learning)
