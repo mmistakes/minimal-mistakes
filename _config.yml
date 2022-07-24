@@ -16,7 +16,7 @@ minimal_mistakes_skin: "dark" # "default", "air", "aqua", "contrast", "dirt", "n
 
 # Site Settings
 locale: "ko-KR"
-title: "시욱노트"
+title: "SW NOTE"
 title_separator: "|"
 subtitle: "안녕하세요, 정시욱의 개발노트입니다."
 name: "정시욱"
@@ -27,7 +27,7 @@ repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: "/assets/images/logo.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs: true # true, false (default)
 words_per_minute: 200
 comments:
   provider: # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -280,3 +280,6 @@ defaults:
       comments: # true
       share: true
       related: true
+      show_date: true
+
+date_format: "%Y-%m-%d"
