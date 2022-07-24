@@ -3,9 +3,17 @@ layout: post
 title: Computer Vision
 ---
 
+<br/>
+
 <div align="center">
   <h1> Computer Vision </h1>
   <font size="5"> 컴퓨터 비전의 개념과 활용 </font>
+  <br/>
+  <br/>
+  <img src = "https://www.kdnuggets.com/wp-content/uploads/6-steps-cv-tf-js-0.jpg" width="600">
+  <br/>
+  <a href="https://www.kdnuggets.com/2020/06/6-easy-steps-implement-computer-vision-application-tensorflow-js.html">Computer Vision</a>
+
 </div>
 
 ## 컴퓨터 비전이란?
