@@ -4,6 +4,8 @@ main:
     url: /categories/
   - title: "태그"
     url: /tags/
+  - title: "About"
+    url: /about/
   - title: "검색"
     url: /search/
 

@@ -1,5 +1,5 @@
 ---
-title: "category"
+title: "Posts by Category"
 layout: "categories"
 permalink: /categories/
 auther_profile: ture
