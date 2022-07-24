@@ -16,7 +16,7 @@ minimal_mistakes_skin: "dark" # "default", "air", "aqua", "contrast", "dirt", "n
 
 # Site Settings
 locale: "ko-KR"
-title: "SW-NOTE"
+title: "SW NOTE"
 title_separator: "|"
 subtitle: "안녕하세요, 정시욱의 개발노트입니다."
 name: "정시욱"
@@ -32,7 +32,7 @@ words_per_minute: 200
 comments:
   provider: "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname: "SW NOTE"
+    shortname: "sw-note"
   discourse:
     server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
