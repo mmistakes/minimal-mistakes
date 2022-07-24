@@ -107,7 +107,7 @@ author:
   name             : "모리"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "개발 | 일상 | 부동산 | 투자 | 공부"
-  location         : "South Korea"
+  location         : "Seoul, South Korea"
   email            : 
   links:
     - label: "Email"
@@ -119,7 +119,7 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: "Blog"
+    - label: "Naver Blog"
       icon: "fas fa-fw fa-link" 
       url: "https://blog.naver.com/kjs2451"
     - label: "Instagram"
