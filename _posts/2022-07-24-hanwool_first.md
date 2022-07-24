@@ -3,6 +3,10 @@ layout: post
 title: Computer Vision
 ---
 
+<div align="center">
+  <h1> Computer Vision </h1>
+  <font size="5"> 컴퓨터 비전의 개념과 활용 </font>
+</div>
 
 ## 컴퓨터 비전이란?
 
@@ -104,7 +108,7 @@ title: Computer Vision
     - 컴퓨터 비전은 이미지를 받으면 학습된 딥 러닝 모델을 활용하여 이미지를 처리하고 처리된 정보를 토대로 이미지 안의 객체를 식별하거나 분류하고, 그에 맞는 해석을 합니다.
     </font>
 
-\
+<br/>
 <font size="3">
 정리하자면, 컴퓨터 비전은 먼저 많은 이미지를 수집하여 그 이미지를 학습하고, 그 학습한 지식을 토대로 새로운 이미지를 처리하여 분석 및 해석하는 학문이라고 볼 수 있습니다.
 </font>
