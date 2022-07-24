@@ -25,6 +25,8 @@ title: Computer Vision
  종양 및 암세포 등도 컴퓨터 비전을 통해서 확인이 가능합니다.
  
  ![image segmentation of Lung CT-Scans](https://editor.analyticsvidhya.com/uploads/68232Abbildung03_BildsegmentierungLungenCTScans-1-1536x554.png)
+
+ 
  [AI CT Scan Analysis for COVID-19 Detection and Patient Monitoring](https://syncedreview.com/2020/03/18/ai-ct-scan-analysis-for-covid-19-detection-and-patient-monitoring/)
 
  - #### 자동차 산업
@@ -33,6 +35,8 @@ title: Computer Vision
 
 
 ![Perception cars](https://img.futurecar.com/202105/21/l_60a838a13e331.png)
+
+
 [Computer Vision Developer StradVision to Showcase its Most Advanced Perception Camera for Autonomous Driving & ADAS at Auto Tech 2021](https://img.futurecar.com/202105/21/l_60a838a13e331.png)
 
  - ### 소매업
@@ -40,12 +44,16 @@ title: Computer Vision
 소매업에도 컴퓨터 비전이 활용되고 있습니다. 컴퓨터 비전을 활용하여 아래 그림과 같이 실시간으로 고객의 움직임등을 파악하여 고객의 행동 및 어느 시간대에 고객이 가장 많이 활동하는 지 등을 분석할 수 있습니다. 이 분석을 활용하여 상점의 상품 배치 및 고객 만족도를 향상 시킬 수 있습니다.  이외에도 컴퓨터 비전은 상품 진열대의 현재 상품의 갯수를 파악하여 실시간으로 재배치를 할 수 있게 도와주며, 직원이 없더라도 절도 등을 바로 확인 할 수 있도록 도와줄 수 있습니다.
  
 ![Movement Heat Maps](https://viso.ai/wp-content/uploads/2021/09/computer-vision-heat-map.gif)
+
+
 [Customer Movement Heat Maps](https://viso.ai/application/movement-heat-maps/)
 
  - #### 농경 산업
  농경 산업에서도 컴퓨터 비전을 활용하고 있습니다. 컴퓨터 비전을 통해서 돼지나 소 등의 가축의 건강상태를 파악 할 수 있습니다.  아래 그림과 같이 가축의 행동을 분석하여 생산성 및 가축의 복지 향상을 촉진시킬 수 있습니다. 이외에도 해충 발견, 작물 관찰 및 농장 자동화에도 컴퓨터 비전이 활용되어 생산성 향상에 도움을 줄 수 있습니다.
  
  ![Animal monitoring System](https://viso.ai/wp-content/uploads/2021/02/animal-tracking.jpg)
+
+
 [Animal Monitoring](https://viso.ai/application/animal-monitoring/)
 
 
