@@ -119,7 +119,7 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: "Naver Blog"
+    - label: "Blog"
       icon: "fas fa-fw fa-link" 
       url: "https://blog.naver.com/kjs2451"
     - label: "Instagram"
