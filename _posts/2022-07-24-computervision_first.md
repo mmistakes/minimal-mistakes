@@ -164,6 +164,6 @@ title: "Computer Vision"
 <img align="left" width="100" height="100" src="https://media-exp1.licdn.com/dms/image/C4D03AQHnJKX3TtfkDA/profile-displayphoto-shrink_800_800/0/1589533672571?e=1664409600&v=beta&t=1mtEZY8cudQ9fbUtolN7xZ6nUzyCZCoktTAtQ-sGFgo"> 
 
 
-&nbsp; <font size="4"> <b> Hanwool Park </b> </font>
-&nbsp; <font size="4"> Machine Learning Engineer  </font>
+&nbsp; <font size="4"> <b> Hanwool Park </b> </font> <br/>
+&nbsp; <font size="4"> Machine Learning Engineer  </font> <br/>
 &nbsp;&nbsp;<a href="https://www.linkedin.com/in/hanwool-park/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/1280px-LinkedIn_Logo.svg.png" alt="Linkedin" width="80" height="20"></a>&nbsp;<a href="https://github.com/sky4689524/"><img src="https://flyclipart.com/thumb2/rendering-notebooks-on-github-jupyter-blog-813503.png" alt="Github" width="70" height="20"></a>
