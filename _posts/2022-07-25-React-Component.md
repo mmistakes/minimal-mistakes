@@ -42,7 +42,7 @@ App.css
 
 1.  function 만들기 : 다른 function에 만들기 & 영어 대문자로 시작하기 
 2. return( ) 안에 Html 담기 
-3. <함수명></함수명> 쓰기 
+3. <함수명><\/함수명> 쓰기 
 
 현재 function App(){
 
@@ -50,12 +50,12 @@ App.css
 
 ```react
 function Modal(){
-  return(
-  	<div className="modal">
-			<h4>제목</h4>
-  		<p>날짜</p>
-  		<p>상세내용</p>
-		</div>
+ return(
+   <div className="modal">
+    <h4>제목</h4>
+    <p>날짜</p>
+    <p>상세내용</p>
+   </div>
   )
 }
 ```
@@ -64,9 +64,9 @@ function Modal(){
 
 ```react
 <div className="modal">
-	<h4>제목</h4>
-  <p>날짜</p>
-  <p>상세내용</p>
+ <h4>제목</h4>
+ <p>날짜</p>
+ <p>상세내용</p>
 </div>
 ```
 
