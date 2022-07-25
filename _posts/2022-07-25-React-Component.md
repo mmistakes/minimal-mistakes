@@ -11,7 +11,7 @@ toc: true
 
 <span style ='color:blue'>React : Component</span> 상세페이지 만들기 
 
-App.js  - Html 밑 부분에 아래와 같이 디자인해준다. 
+App.js  - HTML 밑 부분에 아래와 같이 디자인해준다. 
 
 App.js
 
@@ -41,7 +41,7 @@ App.css
 <span style ='color:red'>Component 만드는 법</span>
 
 1.  function 만들기 : 다른 function에 만들기 & 영어 대문자로 시작하기 
-2. return( ) 안에 Html 담기 
+2. return( ) 안에 HTML 담기 
 3. <함수명></함수명> 쓰기 
 
 현재 function App(){
@@ -70,7 +70,7 @@ function Modal(){
 </div>
 ```
 
-이 Html 코드를
+이 HTML 코드를
 
 ```react
 <modal></modal>
@@ -80,4 +80,15 @@ function Modal(){
 
 ![스크린샷 2022-07-25 14 49 36](https://user-images.githubusercontent.com/104547038/180707373-77d42f70-3b1b-4805-8c4a-ca7977044c1b.png)
 
+<span style='color:red'>Component</span>를 사용하면 좋을 때 
+
+1. 반복적인 HTML을 축약할 때 
+2. 사이즈가 큰 페이지들 
+3. 자주 변경되는 HTML UI 들 
+
+
+
+<br>
+
 <span style ='background-color:black;'>[유튜브 코딩애플을 통해 공부](https://www.youtube.com/watch?v=fE4t2Ovgp-0&list=PLfLgtT94nNq0qTRunX9OEmUzQv4lI4pnP&index=3)</span>
+
