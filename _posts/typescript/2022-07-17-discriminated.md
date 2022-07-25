@@ -1,8 +1,7 @@
 ---
-
 layout: single
 title: "discriminated.ts"
-categories: "TypeScript"
+categories: "Typescript"
 tag: [discriminated.ts]
 toc: true
 toc_sticky: true

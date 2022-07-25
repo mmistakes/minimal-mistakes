@@ -7,7 +7,7 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
       <!--전체 글 수-->
-      <li>
+      <li style="font-size: 0.7rem;">
             📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
       </li>
       <li>
@@ -18,9 +18,40 @@
             <ul>
                 <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                <!-- beginner-intermediate-expert. -->
                 {% for category in site.categories %}
                     {% if category[0] == "React" %}
-                        <li><a href="/categories/react"    class="">React ({{category[1].size}})</a></li>
+                
+                        <li><a href="/categories/react"    class="">beginner ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+                {% for category in site.categories %}
+                {% if category[0] == "react-class" %}
+             
+                    <li><a href="/categories/react-class"    class="">class ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+            <span class="nav__sub-title">Typescript</span>
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                {% for category in site.categories %}
+                    {% if category[0] == "Typescript" %}
+                        <li><a href="/categories/typescript"class="">beginner ({{category[1].size}})</a></li>
+                    {% endif %}
+                    {% if category[0] == "typescript-level-middle" %}
+                    <li><a href="/categories/typescript-level-middle"class="">intermediate ({{category[1].size}})</a></li>
+                  {% endif %}
+                {% endfor %}
+            </ul>
+            <span class="nav__sub-title">Javascript</span>
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                {% for category in site.categories %}
+                    {% if category[0] == "Javascript" %}
+                        <li><a href="/categories/javascript"    class="">beginner ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -29,21 +60,6 @@
                 {% for category in site.categories %}
                     {% if category[0] == "Blog" %}
                         <li><a href="/categories/blog" class="">Blog ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        <span class="nav__sub-title">Coding Test </span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/algorithm" class="">알고리즘 구현 (with C++) ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Programmers" %}
-                        <li><a href="/categories/programmers" class="">프로그래머스 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

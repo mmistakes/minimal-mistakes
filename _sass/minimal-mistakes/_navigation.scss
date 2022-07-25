@@ -495,7 +495,11 @@
   font-size: $type-size-6;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid #c3c6c6;
+  // border: 1px solid #373c3f;
+  // background-color: #4d5357;
+  color: var(--sub-title);
+  // padding-left: 10px;
 }
 
 /*

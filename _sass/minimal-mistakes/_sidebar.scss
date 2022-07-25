@@ -60,6 +60,9 @@
     font-size: $type-size-6;
     line-height: 1.5;
   }
+  p {
+    font-size: 0.7rem;
+  }
 
   img {
     width: 100%;
@@ -238,6 +241,7 @@
 }
 
 .author__urls {
+  font-size: 0.7rem;
   display: none;
   position: absolute;
   right: 0;

@@ -1,8 +1,7 @@
 ---
-
 layout: single
 title: "inference.ts"
-categories: "TypeScript"
+categories: "Typescript"
 tag: [inference.ts]
 toc: true
 toc_sticky: true

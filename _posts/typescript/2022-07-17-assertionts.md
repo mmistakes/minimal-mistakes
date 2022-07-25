@@ -1,8 +1,7 @@
 ---
-
 layout: single
 title: "assertion.ts"
-categories: "TypeScript"
+categories: "Typescript"
 tag: [assertion.ts]
 toc: true
 toc_sticky: true

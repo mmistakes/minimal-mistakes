@@ -1,8 +1,7 @@
 ---
-
 layout: single
 title: "intersection.ts"
-categories: "TypeScript"
+categories: "Typescript"
 tag: [intersection.ts]
 toc: true
 toc_sticky: true
