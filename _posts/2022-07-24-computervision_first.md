@@ -159,7 +159,6 @@ title: "Computer Vision"
 <br/>
 <b> <font size="4"> About the Author  </font> </b>
 <br/>
-<br/>
 
 <img align="left" width="100" height="100" src="https://media-exp1.licdn.com/dms/image/C4D03AQHnJKX3TtfkDA/profile-displayphoto-shrink_800_800/0/1589533672571?e=1664409600&v=beta&t=1mtEZY8cudQ9fbUtolN7xZ6nUzyCZCoktTAtQ-sGFgo"> 
 
