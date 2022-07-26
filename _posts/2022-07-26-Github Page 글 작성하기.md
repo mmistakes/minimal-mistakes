@@ -6,7 +6,7 @@ tags: [blog, github]
 toc: true
 author_profile: false
 ---
-이 글은 깃허브 페이지(GitHub Pages)를 이용해 블로그를 작성하기 위해 작성하였다.
+이 글은 깃허브 페이지(GitHub Pages)를 이용해 블로그를 만들어보기 위해 작성하였다.
 
 이번 시간에는 지킬 블로그 기본 글 작성 타입 중 하나인 page 글을 작성해볼 것이다.
 
@@ -67,4 +67,4 @@ GitHub Pages에서 404.html 페이지는 주소를 찾을 수 없을때 기본�
 이렇게 page 글을 사용하면 블로그의 필요한 구성 페이지를 마음대로 만들 수 있다.
 
 
-출처: hhttps://devinlife.com/howto%20github%20pages/new-pages/
+출처: https://devinlife.com/howto%20github%20pages/new-pages/
