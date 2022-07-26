@@ -24,6 +24,7 @@
   a {
     position: relative;
     z-index: 10;
+    text-decoration: none;
   }
 
   a[rel="permalink"] {
@@ -57,7 +58,6 @@
     top: 0;
     right: 0;
     bottom: 0;
-    text-decoration: none;
   }
 
   a + a {
