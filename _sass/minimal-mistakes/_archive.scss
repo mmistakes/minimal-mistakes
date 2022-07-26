@@ -49,6 +49,7 @@
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-decoration: none;
 
   a[rel="permalink"]::before {
     content: '';
