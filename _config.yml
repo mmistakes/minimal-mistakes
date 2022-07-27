@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "SOLA KIM"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "KakaoTalk_20220727_122213935-modified.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "A Space for recording my **passion**"
   location         : "South Korea"
   email            : "codkan20@gmail.com"
