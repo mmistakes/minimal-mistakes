@@ -24,7 +24,7 @@ minimal-mistakes theme 초기 상태에는 _pages 폴더가 존재하지 않는�
 
 
 # 2. About page 등록하기
-```python
+```ruby
 ---
 title: "블로그 소개"
 permalink: /about/
@@ -47,7 +47,7 @@ layout은 이 페이지를 어떤 형태로 보여줄지를 미리 꾸며놓은 
 
 
 # 3. 404 page 등록하기
-```python
+```ruby
 ---
 title: "Page Not Found"
 excerpt: "Page not found. Your pixels are in another canvas."
