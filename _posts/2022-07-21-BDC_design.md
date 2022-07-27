@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "반도체 설계"
-categories: Class4
+categories: BOJ, Class4
 tag: [이분 탐색, 가장 긴 증가하는 부분 수열]
 toc: true
 author_profile: false

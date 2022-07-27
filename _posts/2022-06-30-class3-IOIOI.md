@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "IOIOI"
-categories: Class3
+categories: BOJ, Class3
 tag: [문자열]
 toc: true
 author_profile: false

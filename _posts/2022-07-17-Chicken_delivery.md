@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "치킨 배달"
-categories: Class4
+categories: BOJ, Class4
 tag: [구헌, 브루트포스, 백트래킹]
 toc: true
 author_profile: false

@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "절댓값 힙"
-categories: Class3
+categories: BOJ, Class3
 tag: [자료 구조, 우선순위 큐]
 toc: true
 author_profile: false
