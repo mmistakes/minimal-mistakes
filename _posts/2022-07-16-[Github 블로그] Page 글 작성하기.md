@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Github Page 글 작성하기"
+title:  "[Github 블로그] Page 글 작성하기"
 categories: GithubPages
 tags: [blog, github]
 toc: true
