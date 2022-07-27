@@ -19,11 +19,11 @@ page는 사이트 내 특정 주소에 보여줄 (날짜와 관련없는) 글을
 그럼 블로그 소개글인 About과 주소 오류 페이지인 404 page를 등록해보겠다.
 
 
-# 1. page 글 등록하기
+## 1. page 글 등록하기
 minimal-mistakes theme 초기 상태에는 _pages 폴더가 존재하지 않는다. _pages 폴더를 만들고 예제에서 사용된 about.md와 404.md 파일을 복사해서 등록해준다. page는 파일명에 날짜 포맷을 표기하지 않아도 된다.
 
 
-# 2. About page 등록하기
+## 2. About page 등록하기
 ```ruby
 ---
 title: "블로그 소개"
@@ -46,7 +46,7 @@ permalink은 About 페이지를 주소에 표시하기 위한 설정이다. 홈�
 layout은 이 페이지를 어떤 형태로 보여줄지를 미리 꾸며놓은 포맷이다. _layouts 폴더에 가면 여러가지 이름의 layout 파일들을 볼 수 있다. page는 layout을 single로 지정하는 것이 기본 설정이다. layout은 single을 사용하면 결국은 default.html을 include하는 형태로 되어있다.
 
 
-# 3. 404 page 등록하기
+## 3. 404 page 등록하기
 ```ruby
 ---
 title: "Page Not Found"
