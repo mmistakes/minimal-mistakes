@@ -27,7 +27,7 @@ sidebar:
 
 ## 입출력 예
 
-numbers|return|
+|numbers|return|
 |:---|:---|
 |"17"|3|
 |"011"|2|
