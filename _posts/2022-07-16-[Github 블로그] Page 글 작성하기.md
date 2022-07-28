@@ -6,7 +6,6 @@ categories:
 tags: [blog, github]
 toc: true
 toc_sticky: true
-author_profile: false
 ---
 💡 오늘은 Page 글 작성 방법을 알아보겠습니다.
 {: .notice}
