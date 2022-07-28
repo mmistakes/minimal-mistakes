@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "모리"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "**취미로 해보는 코딩**<br>코딩 | 개발일지 | 공부 | 일상"
+  bio              : "**취미로 해보는 코딩**<br>코딩 / 개발일지 / 공부 / 일상"
   location         : "Seoul, South Korea"
   email            : 
   links:
