@@ -12,13 +12,13 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast" #"default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "neon" #"default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "SOL-LOG"
 title_separator          : "|"
-subtitle                 : "Believe in yourself and show us what you can do!" # site tagline that appears below site title in masthead
+subtitle                 : "Life is Venture or Nothing" # site tagline that appears below site title in masthead
 name                     : "SOLA KIM"
 description              : "Prove my potential"
 url                      : "https://ffe4el.github.io"
