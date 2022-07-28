@@ -22,19 +22,12 @@ def solution(s):
                 if temp == a:
                     temp = ""
                     count += 1
-                    # if len(queue) < j:
-                    #     ans += str(count) + temp + queue[ : len(queue)]
-                    #     break
-
                 else:
                     if count == 1:
                         ans += temp
                     else:
                         ans += str(count) + temp
                     count = 1
-                # if len(queue) < j:
-                #     ans += queue[ : len(queue)]
-                #     break
         if count == 1:
             ans += temp
         else:
