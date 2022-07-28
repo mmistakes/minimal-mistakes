@@ -16,12 +16,12 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Fly To The Moon"
+title                    : "Fly Me To The Moon"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "SH"
 description              : "I can do it, just keep going"
-url                      : "https://SH-ftm.github.io"
+url                      : "https://castle-h.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
