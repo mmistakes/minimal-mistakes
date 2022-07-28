@@ -26,7 +26,7 @@ If you're running Jekyll v3.7+ and self-hosting you can quickly install the them
 **ProTip:** Be sure to remove `/docs` and `/test` if you forked Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don't want them littering up your repo.
 {: .notice--info}
 
-**Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll throw `Unknown tag 'include_cached'` errors at build.
+**Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise, you'll throw `Unknown tag 'include_cached'` errors at build.
 {: .notice--warning}
 
 ### Gem-based method
@@ -90,7 +90,7 @@ You may also optionally specify a branch, [tag](https://github.com/mmistakes/min
 **Note:** Your Jekyll site should be viewable immediately at <http://USERNAME.github.io>. If it's not, you can force a rebuild by **Customizing Your Site** (see below for more details).
 {: .notice--warning}
 
-If you're hosting several Jekyll based sites under the same GitHub username you will have to use Project Pages instead of User Pages. Essentially you rename the repo to something other than **USERNAME.github.io** and create a `gh-pages` branch off of `master`. For more details on how to set things up check [GitHub's documentation](https://help.github.com/articles/user-organization-and-project-pages/).
+If you're hosting several Jekyll based sites under the same GitHub username, you will have to use Project Pages instead of User Pages. Essentially, you rename the repo to something other than **USERNAME.github.io** and create a `gh-pages` branch off of `master`. For more details on how to set things up check [GitHub's documentation](https://help.github.com/articles/user-organization-and-project-pages/).
 
 <figure>
   <img src="{{ '/assets/images/mm-gh-pages.gif' | relative_url }}" alt="creating a new branch on GitHub">
@@ -98,13 +98,13 @@ If you're hosting several Jekyll based sites under the same GitHub username you 
 
 You can also install the theme by copying all of the theme files[^structure] into your project.
 
-To do so fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes/fork), then rename the repo to **USERNAME.github.io** --- replacing **USERNAME** with your GitHub username.
+To do so, fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes/fork), then rename the repo to **USERNAME.github.io** --- replacing **USERNAME** with your GitHub username.
 
 <figure>
   <img src="{{ '/assets/images/mm-theme-fork-repo.png' | relative_url }}" alt="fork Minimal Mistakes">
 </figure>
 
-**GitHub Pages Alternatives:** Looking to host your site for free and install/update the theme painlessly? [Netlify][netlify-jekyll], [GitLab Pages][gitlab-jekyll], and [Continuous Integration (CI) services][ci-jekyll] have you covered. In most cases all you need to do is connect your repository to them, create a simple configuration file, and install the theme following the [Ruby Gem Method](#ruby-gem-method) above.
+**GitHub Pages Alternatives:** Looking to host your site for free and install/update the theme painlessly? [Netlify][netlify-jekyll], [GitLab Pages][gitlab-jekyll], and [Continuous Integration (CI) services][ci-jekyll] have you covered. In most cases, all you need to do is connect your repository to them, create a simple configuration file, and install the theme following the [Ruby Gem Method](#ruby-gem-method) above.
 {: .notice--info}
 
 [netlify-jekyll]: https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/
@@ -113,7 +113,7 @@ To do so fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-
 
 ### Remove the Unnecessary
 
-If you forked or downloaded the `minimal-mistakes-jekyll` repo you can safely remove the following folders and files:
+If you forked or downloaded the `minimal-mistakes-jekyll` repo, you can safely remove the following folders and files:
 
 - `.editorconfig`
 - `.gitattributes`
@@ -126,7 +126,7 @@ If you forked or downloaded the `minimal-mistakes-jekyll` repo you can safely re
 - `screenshot-layouts.png`
 - `screenshot.png`
 
-**Note:** If forking the theme be sure to update `Gemfile` as well. The one found at the root of the project is for building the theme's Ruby gem and is missing dependencies. To properly setup a [`Gemfile`](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/Gemfile) with the theme, consult the "[Install Dependencies](https://mmistakes.github.io/minimal-mistakes/docs/installation/#install-dependencies)" section.
+**Note:** If forking the theme, be sure to update `Gemfile` as well. The one found at the root of the project is for building the theme's Ruby gem and is missing dependencies. To properly setup a [`Gemfile`](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/Gemfile) with the theme, consult the "[Install Dependencies](https://mmistakes.github.io/minimal-mistakes/docs/installation/#install-dependencies)" section.
 {: .notice--warning}
 
 ## Setup Your Site
@@ -164,7 +164,7 @@ Edit `_config.yml`. Then:
 
 ### Migrating to Gem Version
 
-If you're migrating a site already using Minimal Mistakes and haven't customized any of the theme files things upgrading will be easier for you.
+If you're migrating a site already using Minimal Mistakes and haven't customized any of the theme files, upgrading will be easier for you.
 
 Start by removing the following folders and any files within them: 
 
@@ -180,12 +180,12 @@ Start by removing the following folders and any files within them:
 
 You won't need these anymore as they're bundled with the theme gem --- unless you intend to [override them](https://jekyllrb.com/docs/themes/#overriding-theme-defaults).
 
-**Note:** When clearing out the `assets` folder be sure to leave any files you've added and need. This includes images, CSS, or JavaScript that aren't already [bundled in the theme](https://github.com/mmistakes/minimal-mistakes/tree/master/assets). 
+**Note:** When clearing out the `assets` folder, be sure to leave any files you've added and still need. This includes images, CSS, or JavaScript that aren't already [bundled in the theme](https://github.com/mmistakes/minimal-mistakes/tree/master/assets). 
 {: .notice--warning}
 
-From `v4.5.0` onwards, the default language files are read-in automatically via the [`jekyll-data`](https://github.com/ashmaroli/jekyll-data) plugin if it's installed. For sites hosted with GitHub Pages, you still need to copy the [`_data/ui-text.yml`][ui-text.yml] file because the `jekyll-data` plugin [is unsupported on GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#plugins).
+From `v4.5.0` onwards, the default language files are read in automatically via the [`jekyll-data`](https://github.com/ashmaroli/jekyll-data) plugin if it's installed. For sites hosted with GitHub Pages, you still need to copy the [`_data/ui-text.yml`][ui-text.yml] file because the `jekyll-data` plugin [is unsupported on GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#plugins).
 
-If you customized any of these files leave them alone, and only remove the untouched ones. If done correctly your modified versions should [override](https://jekyllrb.com/docs/themes/#overriding-theme-defaults) the versions bundled with the theme and be used by Jekyll instead.
+If you customized any of these files, leave them alone and only remove the untouched ones. If done correctly, your modified versions should [override](https://jekyllrb.com/docs/themes/#overriding-theme-defaults) the versions bundled with the theme and be used by Jekyll instead.
 
 #### Update Gemfile
 
@@ -199,7 +199,7 @@ Add the Minimal Mistakes theme gem:
 gem "minimal-mistakes-jekyll"
 ```
 
-When finished your `Gemfile` should look something like this:
+When finished, your `Gemfile` should look something like this:
 
 ```ruby
 source "https://rubygems.org"
@@ -215,4 +215,4 @@ Then run `bundle update` and add `theme: minimal-mistakes-jekyll` to your `_conf
 
 ---
 
-That's it! If all goes well running `bundle exec jekyll serve` should spin-up your site.
+That's it! If all goes well, running `bundle exec jekyll serve` should spin-up your site.
