@@ -5,9 +5,10 @@ categories:
   - Github Pages
 tags: [blog, github]
 toc: true
+toc_sticky: true
 author_profile: false
 ---
-💡깃허브 블로그 제작과 관련된 내용입니다. 오늘은 Page 글 작성 방법을 알아보겠습니다.
+💡 오늘은 Page 글 작성 방법을 알아보겠습니다.
 {: .notice}
 
 이번 시간에는 지킬 블로그 기본 글 작성 타입 중 하나인 page 글을 작성해볼 것이다.
