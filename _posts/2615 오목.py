@@ -24,8 +24,6 @@ for i in range(19):
 dx = [0, 1, 1, 1]
 dy = [1, 0, -1, 1]
 
-
-
 def bfs(queue, color):
     ans = []
     if color == "white":
@@ -79,17 +77,8 @@ def bfs(queue, color):
 ans_black = bfs(queue_black, "black")
 ans_white = bfs(queue_white, "white")
 
-check = 0
 black_win = []
 white_win = []
-
-# 0 : 아직 방향이 안정해져있음
-# 1 : 가로 체크 오른쪽으로만
-# 2 : 세로 체크 밑으로만
-# 3 : 왼쪽 대각선 체크 왼쪽 밑으로만
-# 4 : 오른쪽 대각선 체크 오른쪽 밑으로만
-check_black = 0
-check_white = 0
 
 if len(ans_black) != 0:
     for i in range(len(ans_black)):
