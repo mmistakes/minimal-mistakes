@@ -1,12 +1,74 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
+  - title: "Home"
+    url: /
+  - title: "Buscador"
+    url: /buscador/
+  - title: "Articulos por años"
+    url: /year-archive/
+  - title: "Categorias"
+    url: /categories/
+  - title: "Etiquetas"
+    url: /tags/
+  - title: "Portafolios"
+    url: /portfolio/
+  - title: "Políticas Privacidad"
+    url: /politica-de-privacidad/
+  - title: "Políticas de Cookies"
+    url: /politica-de-cookies/
+  - title: "Aviso Legal"
+    url: /aviso-legal/
+  # - title: "Pagina Splash"
+  #   url: /splash-page/  
+  # - title: "Recipes"
+  #   url: /recipes/  
+  # - title: "Colecciones de Post"
   #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  # - title: "Sobre Mi"
+  #   url: /about/
+
+  # Sidebar Menu Links
+# docs:
+#   - title: Getting Started
+#     children:
+#       - title: "Quick-Start Guide"
+#         url: /docs/quick-start-guide/
+#       - title: "Structure"
+#         url: /docs/structure/
+#       - title: "Installation"
+#         url: /docs/installation/
+#       - title: "Upgrading"
+#         url: /docs/upgrading/
+
+#   - title: Customization
+#     children:
+#       - title: "Configuration"
+#         url: /docs/configuration/
+#       - title: "Navigation"
+#         url: /docs/navigation/
+#       - title: "UI Text"
+#         url: /docs/ui-text/
+#       - title: "Authors"
+#         url: /docs/authors/
+#       - title: "Layouts"
+#         url: /docs/layouts/
+
+#   - title: Content
+#     children:
+#       - title: "Working with Posts"
+#         url: /docs/posts/
+#       - title: "Working with Pages"
+#         url: /docs/pages/
+#       - title: "Working with Collections"
+#         url: /docs/collections/
+#       - title: "Helpers"
+#         url: /docs/helpers/
+#       - title: "Utility Classes"
+#         url: /docs/utility-classes/
+
+#   - title: Extras
+#     children:
+#       - title: "Stylesheets"
+#         url: /docs/stylesheets/
+#       - title: "JavaScript"
+#         url: /docs/javascript/
