@@ -6,6 +6,11 @@ categories:
 tags: [blog, github]
 toc: true
 toc_sticky: true
+header:
+  image: /assets/images/james-harrison-vpOeXr5wmR4-unsplash.jpg
+  overlay_image: /assets/images/james-harrison-vpOeXr5wmR4-unsplash.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/vpOeXr5wmR4)"
 ---
 💡 오늘은 Page 글 작성 방법을 알아보겠습니다.
 {: .notice}
