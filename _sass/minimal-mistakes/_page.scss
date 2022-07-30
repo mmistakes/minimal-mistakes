@@ -188,7 +188,7 @@ body {
   &--overlay {
     position: relative;
     margin-bottom: 2em;
-    padding: 5em 0;
+    padding: 4em 0;  // 모리: 이미지 크기 조절
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
