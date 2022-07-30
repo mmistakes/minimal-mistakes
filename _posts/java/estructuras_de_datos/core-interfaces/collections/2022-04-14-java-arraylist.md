@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Java - List
+title: Java - ArrayList
 date: 2022-07-04
 classes: wide
 toc: true
@@ -40,7 +40,7 @@ page_css:
 ### Definición
 
 ```java
-
+// Ejemplo Básico
   List<Integer> lista = new ArrayList<Integer>();
  
   for (int i = 0; i < 5; i++) {
