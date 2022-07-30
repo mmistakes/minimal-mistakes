@@ -40,7 +40,7 @@ page_css:
 ### Definición
 
 ```java
-
+// Ejemplo Básico
   List<Integer> lista = new ArrayList<Integer>();
  
   for (int i = 0; i < 5; i++) {
