@@ -13,7 +13,6 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/vpOeXr5wmR4)"
 ---
 💡 오늘은 Page 글 작성 방법을 알아보겠습니다.
-{: .notice}
 
 이번 시간에는 지킬 블로그 기본 글 작성 타입 중 하나인 page 글을 작성해볼 것이다.
 
