@@ -178,7 +178,7 @@ body {
 
 .page__hero {
   position: relative;
-  margin-bottom: 2em;
+  margin-bottom: 1em; // 모리: 마진 조정
   @include clearfix;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
@@ -188,7 +188,7 @@ body {
   &--overlay {
     position: relative;
     margin-bottom: 2em;
-    padding: 4em 0;  // 모리: 이미지 크기 조절
+    padding: 3.5em 0;  // 모리: 이미지 크기 조절
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
