@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Java - List
+title: Java - ArrayList
 date: 2022-07-04
 classes: wide
 toc: true
