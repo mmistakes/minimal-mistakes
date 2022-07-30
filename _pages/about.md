@@ -2,6 +2,10 @@
 title: "블로그 소개"
 permalink: /about/
 layout: single
+header:
+  image: /assets/images/christopher-gower-m_HRfLhgABo-unsplash.jpg
+  overlay_image: /assets/images/christopher-gower-m_HRfLhgABo-unsplash.jpg
+  overlay_filter: 0.6
 ---
 
 ## 모리의 블로그
