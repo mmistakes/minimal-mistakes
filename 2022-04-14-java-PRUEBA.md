@@ -1,0 +1,25 @@
+---
+layout: single
+title: Java - PRUEBA
+date: 2022-07-04
+classes: wide
+toc: true
+toc_label: "Tabla de contenido"
+toc_icon: "clipboard-list"
+header:
+  teaser: /assets/images/java/logo-java-2.jpg
+categories:
+  - java
+  - java-manual
+  - java-prueba
+  - java-clase
+tags:
+  - java-core-interface
+  - java-arraylist
+  - java-collections
+page_css: 
+  - /assets/css/mi-css.css
+---
+
+## Clase - Soy una prueba
+
