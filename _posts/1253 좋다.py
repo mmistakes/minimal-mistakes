@@ -12,10 +12,10 @@ for i in range(len(lst)):
     right = len(temp) - 1
     while left < right:
         a = temp[left] + temp[right]
-        if i == a:
+        if lst[i] == a:
             count += 1
             break
-        elif i > a:
+        elif lst[i] > a:
             left += 1
         else:
             right -= 1
