@@ -1,5 +1,5 @@
 ---
-title: "Google Cloud Billing - Handling schema changes to Big Query export"
+title: "Google Cloud Billing - Handling schema changes to BigQuery export"
 excerpt: &excerpt "Helped customers understand and query their Billing
 data exported to BigQuery with documentation and sample queries."
 modified: 2020-11-13
@@ -19,9 +19,9 @@ featured:
 _Before reading..._
 
 -   _Target Audience:_ This document is geared towards Google Cloud customers
-    that export their billing data to Big Query for reporting and analysis.
+    that export their billing data to BigQuery for reporting and analysis.
     They are technically skilled and familiar with writing queries/code to
-    retrieve and manipulate data from Big Query.
+    retrieve and manipulate data from BigQuery.
 -   _Scenario:_ The schema for billing data exported to BigQuery was updated
     with additional fields, potentially breaking existing data queries and
     reports for Google Cloud customers. This document explained how to handle
