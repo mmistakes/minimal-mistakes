@@ -21,6 +21,8 @@ author_profile: true
 | [Microsoft](#microsoft)                               | _October 1999 to December 2015_  | Software Engineer, Software Developer in Test (SDET), Systems Engineer, Lead Systems Administrator |
 | [Fohn, Spink, and Co., CPAs](#fohn-spink-and-co-cpas) | _January 1996 to September 1999_ | System Administrator, Accountant |
 
+See my [technical writing portfolio here](/technicalwriting/).
+
 # Google
 
 **Technical Writer** - _April 2018 to Present_
