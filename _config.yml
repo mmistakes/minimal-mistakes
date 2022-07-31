@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "ko-KR"
 title                    : "My Blog"
 title_separator          : "|"
-subtitle                 : "Development Notes"
+subtitle                 : "Notes"
 name                     : "JH Lee"
 description              : "My Blog"
 url                      : "https://jhlee2729.github.io"
@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "JH Lee"
+  name             : "J.H Lee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "JH's development notes"
+  bio              : "Notes"
   location         : "South Korea"
   email            : 
   links:
