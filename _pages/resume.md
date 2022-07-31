@@ -11,12 +11,12 @@ author_profile: true
 
 {{ page.excerpt | markdownify }}
 
-| Company                                               | Timeframe |
+| Company                                               | Timeframe                        | Roles |
 |---|---|
-| [Google](#google)                                     | _April 2018 to Present_ |
-| [HBO](#hbo)                                           | _April 2016 to March 2018_ |
-| [Microsoft](#microsoft)                               | _October 1999 to December 2015_ |
-| [Fohn, Spink, and Co., CPAs](#fohn-spink-and-co-cpas) | _January 1996 to September 1999_ |
+| [Google](#google)                                     | _April 2018 to Present_          | Technical Writer |
+| [HBO](#hbo)                                           | _April 2016 to March 2018_       | Technical Writer |
+| [Microsoft](#microsoft)                               | _October 1999 to December 2015_  | Software Engineer, Software Developer in Test (SDET), Systems Engineer, Lead Systems Administrator |
+| [Fohn, Spink, and Co., CPAs](#fohn-spink-and-co-cpas) | _January 1996 to September 1999_ | System Administrator, Accountant |
 
 # Google
 
