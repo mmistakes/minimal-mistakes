@@ -140,11 +140,6 @@ Product Studio (proprietary bug tracking)
 -   Wrote an external blog focused on development, with reviews of technical books and detailed code
     snippets in C#, .NET, PowerShell, and Transact-SQL.
 
-### Technologies used
-
-C#, ASP.NET, SQL, T-SQL, Visual Studio, HTML, CSS, XML, XLS, OOP, Source Depot (proprietary version &
-source control), Product Studio (proprietary bug tracking)
-
 **Systems Engineer** - _October 2003 to March 2005_
 
 -   Improved team efficiency by automating multiple manual tasks with CMD batch, Visual Basic, and Transact-SQL
@@ -157,6 +152,11 @@ source control), Product Studio (proprietary bug tracking)
 
 -   Microsoft Gold Star Award - Improved the team’s efficiency and accuracy by identifying and automating
     several repetitive manual processes.
+
+### Technologies used
+
+C#, ASP.NET, SQL, T-SQL, Visual Studio, HTML, CSS, XML, XLS, OOP, Source Depot (proprietary version &
+source control), Product Studio (proprietary bug tracking)
 
 <p align="center"><a href="#top">top</a><br>~ ~ ~</p>
 
