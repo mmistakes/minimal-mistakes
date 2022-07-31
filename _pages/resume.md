@@ -14,8 +14,8 @@ author_profile: true
 | Company                                               | Timeframe |
 |---|---|
 | [Google](#google)                                     | _April 2018 to Present_ |
-| [HBO](#hbo)                                           |  _October 1999 to December 2015_ |
-| [Microsoft](#microsoft)                               |  _October 1999 to December 2015_ |
+| [HBO](#hbo)                                           | _April 2016 to March 2018_ |
+| [Microsoft](#microsoft)                               | _October 1999 to December 2015_ |
 | [Fohn, Spink, and Co., CPAs](#fohn-spink-and-co-cpas) | _January 1996 to September 1999_ |
 
 # Google
