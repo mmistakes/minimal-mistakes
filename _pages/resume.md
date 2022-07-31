@@ -145,12 +145,6 @@ Product Studio (proprietary bug tracking)
 C#, ASP.NET, SQL, T-SQL, Visual Studio, HTML, CSS, XML, XLS, OOP, Source Depot (proprietary version &
 source control), Product Studio (proprietary bug tracking)
 
-<p align="center"><a href="#top">top</a><br>~ ~ ~</p>
-
----
-
-## Windows Live Security
-
 **Systems Engineer** - _October 2003 to March 2005_
 
 -   Improved team efficiency by automating multiple manual tasks with CMD batch, Visual Basic, and Transact-SQL
