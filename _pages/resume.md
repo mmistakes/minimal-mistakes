@@ -11,6 +11,9 @@ author_profile: true
 
 {{ page.excerpt | markdownify }}
 
+
+<a id="top"></a>
+
 | Company                                               | Timeframe                        | Roles |
 |---|---|
 | [Google](#google)                                     | _April 2018 to Present_          | Technical Writer |
@@ -49,6 +52,10 @@ author_profile: true
 Markdown, Python, Bash, GoogleSQL, Visual Studio Code, Google Issue Tracker, proprietary code
 review tool, proprietary version & source control systems
 
+<p align="center"><a href="#top">top</a><br>~ ~ ~</p>
+
+---
+
 # HBO
 
 **Technical Writer** - _April 2016 to March 2018_
@@ -73,6 +80,10 @@ review tool, proprietary version & source control systems
 ### Technologies used
 
 Markdown, Git, GitHub, Visual Studio Code, Bash, Python, AWS, Ubuntu, Jenkins, Splunk, Pandoc, Jira, YouTrack
+
+<p align="center"><a href="#top">top</a><br>~ ~ ~</p>
+
+---
 
 # Microsoft
 
@@ -109,6 +120,10 @@ _October 1999 to December 2015_
 C#, PowerShell, SQL, T-SQL, Splunk, Visual Studio, Source Depot (proprietary version & source control),
 Product Studio (proprietary bug tracking)
 
+<p align="center"><a href="#top">top</a><br>~ ~ ~</p>
+
+---
+
 ## Windows Live Security
 
 **Software Development Engineer [SDE I]** - _March 2005 to March 2007_
@@ -126,6 +141,10 @@ Product Studio (proprietary bug tracking)
 C#, ASP.NET, SQL, T-SQL, Visual Studio, HTML, CSS, XML, XLS, OOP, Source Depot (proprietary version &
 source control), Product Studio (proprietary bug tracking)
 
+<p align="center"><a href="#top">top</a><br>~ ~ ~</p>
+
+---
+
 ## Windows Live Security
 
 **Systems Engineer** - _October 2003 to March 2005_
@@ -141,6 +160,10 @@ source control), Product Studio (proprietary bug tracking)
 -   Microsoft Gold Star Award - Improved the team’s efficiency and accuracy by identifying and automating
     several repetitive manual processes.
 
+<p align="center"><a href="#top">top</a><br>~ ~ ~</p>
+
+---
+
 ## MSN Service Operations Center (SOC)
 
 **Lead Systems Administrator** - _October 2002 to October 2003_
@@ -151,6 +174,10 @@ source control), Product Studio (proprietary bug tracking)
 
 -   Provided second-level triage and troubleshooting for multiple MSN properties supported by the MSN
     Service Operations Center (SOC).
+
+<p align="center"><a href="#top">top</a><br>~ ~ ~</p>
+
+---
 
 ## Operations and Technology Group
 
@@ -165,6 +192,10 @@ source control), Product Studio (proprietary bug tracking)
 -   Provided senior-level troubleshooting for all issues, including, but not limited to NT4.0, Windows
     2000 Server, IIS, WINS, DNS, SQL, and network connectivity in the Microsoft and MSN global data
     centers.
+
+<p align="center"><a href="#top">top</a><br>~ ~ ~</p>
+
+---
 
 # Fohn, Spink, and Co., CPAs
 
