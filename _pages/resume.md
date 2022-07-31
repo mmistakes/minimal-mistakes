@@ -34,7 +34,8 @@ author_profile: true
 ### Awards
 
 -   Leads with Respect award - nominated & approved by committee of peers for community leadership.
--   24 peer bonuses & kudos - given by peers for a variety of reasons.
+-   24 peer bonuses & kudos - given by peers for a variety of reasons, including performance
+    and community service.
 
 ### Technologies used
 
