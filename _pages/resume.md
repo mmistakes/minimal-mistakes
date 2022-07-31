@@ -40,9 +40,9 @@ author_profile: true
 
 ### Awards
 
--   Leads with Respect award - nominated & approved by committee of peers for community leadership.
--   24 peer bonuses & kudos - given by peers for a variety of reasons, including performance
-    and community service.
+-   Leads with Respect award - Nominated & approved by committee of peers for community leadership.
+-   24 peer bonuses & kudos - Given by peers for a variety of reasons, including outstanding
+    performance and community service.
 
 ### Technologies used
 
@@ -138,7 +138,7 @@ source control), Product Studio (proprietary bug tracking)
 
 ### Awards
 
--   Microsoft Gold Star Award - improved the team’s efficiency and accuracy by identifying and automating
+-   Microsoft Gold Star Award - Improved the team’s efficiency and accuracy by identifying and automating
     several repetitive manual processes.
 
 ## MSN Service Operations Center (SOC)
