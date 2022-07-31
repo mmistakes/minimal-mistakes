@@ -11,6 +11,13 @@ author_profile: true
 
 {{ page.excerpt | markdownify }}
 
+| Company                                               | Timeframe |
+|---|---|
+| [Google](#google)                                     | _April 2018 to Present_ |
+| [HBO](#hbo)                                           |  _October 1999 to December 2015_ |
+| [Microsoft](#microsoft)                               |  _October 1999 to December 2015_ |
+| [Fohn, Spink, and Co., CPAs](#fohn-spink-and-co-cpas) | _January 1996 to September 1999_ |
+
 # Google
 
 **Technical Writer** - _April 2018 to Present_
