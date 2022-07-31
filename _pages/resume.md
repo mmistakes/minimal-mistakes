@@ -169,5 +169,5 @@ plan, and Windows clients.
 
 **Staff Accountant** - _January 1996 to September 1999_
 
-Staff accountant focused on Federal Income Taxes, Payroll accounting, and bookkeeping for small
-businesses.
+Assisted small business clients and individuals with the preparation of Federal Income Taxes, payroll
+accounting processes and forms, and general bookkeeping.
