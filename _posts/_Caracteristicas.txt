@@ -1,0 +1,39 @@
+
+→ ↑ ← ↓
+                                [CABECERAS]
+---
+layout: single
+title: Git Configuración Básica
+date: 2021-11-24
+classes: wide
+# Caja con enlaces a los titulos
+toc: true
+toc_label: "Tabla de contenido"
+toc_icon: "clipboard-list"
+header:
+  teaser: /assets/images/llama.jpg
+comments : true
+categories:
+  - 
+tags:
+  - 
+---
+
+---------------------------------------------------
+
+[CONSEJOS PARA EDITAR y CREAR CONTENIDO]
+
+- Crear un menu que tenga por referencia cada titulo del articulo.
+
+# Caja con enlaces a los titulos
+toc: true
+toc_label: "My table of Contents"
+toc_icon: "arrows-alt"
+
+# Definir elementos mediante CSS
+page_css: 
+  - /assets/css/mi-css.css
+
+# Divide en 2 el contenido escrito 
+|| Divide en 2 el contenido escrito ||
+
