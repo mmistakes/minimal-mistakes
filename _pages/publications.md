@@ -9,9 +9,10 @@ layout: single
 <br/>
 Robin Zbinden, Lukas Mauch, Fabien Cardinaux
 <br/>
-Under review for the *Deep Learning for Code (DL4C) Workshop (ICLR 2022)*
+*Deep Learning for Code (DL4C) Workshop (ICLR 2022)*
 <br/>
-[Paper](/files/COBRA.pdf){:target="_blank"}
+[Paper](https://openreview.net/forum?id=BIcg6iub1Z5){:target="_blank"}
+[Poster](/files/COBRA_poster.pdf){:target="_blank"}
 
 - **A User Study of Perceived Carbon Footprint**
 <br/>
