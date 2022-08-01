@@ -22,24 +22,26 @@ page_css:
 
 ## Depuración con Eclipse
 
-* Botón : ``Debug <nombre de la clase>`` ![Alt text](https://github.com/rvsweb/guia-basica-de-desarrollo-full-stack/blob/master/_posts/java/depuracion/depuracion_imagenes/Depuraci%C3%B3n_Debug_Basico.png)
+* Botón : ``Debug <nombre de la clase>`` ![Alt text](guia-basica-de-desarrollo-full-stack/_posts/java/depuracion/2022-07-28-java-depuracion.md)
 
   * Ejecuta el modo depuración del IDE Eclipse
 
-* Botón ``F5`` : **Step Into**  ![Alt text](https://github.com/rvsweb/guia-basica-de-desarrollo-full-stack/blob/master/_posts/java/depuracion/depuracion_imagenes/Depuraci%C3%B3n_F5_Step_Into.png)
+* Botón ``F5`` : **Step Into**  ![Alt text](guia-basica-de-desarrollo-full-stack/_posts/java/depuracion/imagenes/Depuracion_F5_Step_Into.png)
 
 * **Entra** en el **elemento actual** el cual se este **ejecutando** dentro del **depurador**
   * Puede ser un **método** , una **expresión** , una **clase** , un **array**, etc.
 
-* Botón ``F6`` : **Step Over** ![Alt text](https://github.com/rvsweb/guia-basica-de-desarrollo-full-stack/blob/master/_posts/java/depuracion/depuracion_imagenes/Depuraci%C3%B3n_F6_Step_Over.png)
+* Botón ``F6`` : **Step Over** ![Alt text](guia-basica-de-desarrollo-full-stack/_posts/java/depuracion/imagenes/Depuracion_F6_Step_Over.png)
 
   * **Avanza una línea** dentro del **código** que tengamos escrito dentro del programa
     * ``Salta la pausa producida por el Debug y continua con la siguiente línea``
 
-* Botón ``F8`` : **Resume**
+* Botón ``F8`` : **Resume** ![Alt text](guia-basica-de-desarrollo-full-stack/_posts/java/depuracion/imagenes/Depuracion_F6_Step_Over.png)
+
   * **Salta** al **siguiente punto de interrupción - ``breakpoint``**  ejecutando todas las líneas de código que se encuentre hasta llegar al siguiente **punto de interrupción - ``breakpoint``** del programa
 
-* Botón ``Ctrl + Alt + B`` : **Skip All BreakPoint**
+* Botón ``Ctrl + Alt + B`` : **Skip All BreakPoint** ![Alt text](guia-basica-de-desarrollo-full-stack/_posts/java/depuracion/imagenes/Eliminar_todos_los_puntos.png)
+
   * Salta todos los puntos de interrupción ``breakpoint`` , mantiene la pausa realizada por el depurador pero si pulsamos ``F8`` : **Resumen** ejecuta el programa de forma automáticamente hasta su fin
 
   * Si vuelves a pulsar el botón : **Skip All BreakPoint** o el atajo de teclado ``Ctrl + Alt + B`` se vuelve a activar los **puntos de interrupción → ``breakpoint``**
