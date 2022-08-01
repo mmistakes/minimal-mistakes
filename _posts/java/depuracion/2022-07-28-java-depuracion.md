@@ -22,7 +22,7 @@ page_css:
 
 ## Depuración con Eclipse
 
-* Botón : ``Debug <nombre de la clase>`` ![Alt text](guia-basica-de-desarrollo-full-stack/_posts/java/depuracion/2022-07-28-java-depuracion.md)
+* Botón : ``Debug <nombre de la clase>`` ![Alt text](https://github.com/rvsweb/rvs.github.io/blob/9ee9e10086d5cec2539aa005d523b599ff1fa388/_posts/java/depuracion/imagenes/Depuracion_Debug_Basico.png)
 
   * Ejecuta el modo depuración del IDE Eclipse
 
