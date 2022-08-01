@@ -24,9 +24,9 @@ page_css:
 
 * Botón : ``Debug <nombre de la clase>``
 
-![Alt text](guia-basica-de-desarrollo-full-stack/assets/images/depurar_java/Depuracion_Debug_Basico.png)
- 
-![Alt text](_posts/java/depuracion/imagenes/Depuracion_Debug_Basico.png)
+![](/rvs.github.io/assets/images/depuracion_imagenes/Depuracion_Debug_Basico.png)
+
+![](/assets/images/depuracion_imagenes/Depuracion_Debug_Basico.png) 
 
   * Ejecuta el modo depuración del IDE Eclipse
 
