@@ -21,7 +21,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "es-ES"
-title                    : "Apuntes y Resúmenes sobre desarrollo Full Stack"
+title                    : "Blog sobre desarrollo Full Stack"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 # name                     : &name "RVS"
