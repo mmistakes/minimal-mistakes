@@ -24,6 +24,18 @@ page_css:
 
 * Botón : ``Debug <nombre de la clase>``
 
+![Alt text](guia-basica-de-desarrollo-full-stack/assets/images/depurar_java/Depuracion_Debug_Basico.png)
+
+![Alt text](_posts/java/depuracion/2022-07-28-java-depuracion.md)
+
+![Alt text](/home/radu04/blog_rvs.github.io/rvs.github.io/_posts/java/depuracion/2022-07-28-java-depuracion.md)
+
+![Alt text](guia-basica-de-desarrollo-full-stack/assets/images/depurar_java/Depuracion_Debug_Basico.png:Zone.Identifier)
+
+* * *
+
+![Alt text](https://github.com/rvsweb/rvs.github.io/blob/9ee9e10086d5cec2539aa005d523b599ff1fa388/_posts/java/depuracion/imagenes/Depuracion_Debug_Basico.png)
+
 ![Alt text](https://github.com/rvsweb/rvs.github.io/blob/9ee9e10086d5cec2539aa005d523b599ff1fa388/_posts/java/depuracion/imagenes/Depuracion_Debug_Basico.png)
 
 ![Alt text]("https://github.com/rvsweb/rvs.github.io/blob/8956162882f8b2eb91b2a99aca9f9aadd126d54e/_posts/java/depuracion/imagenes/Depuracion_Debug_Basico.png")
