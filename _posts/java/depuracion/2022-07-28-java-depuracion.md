@@ -26,6 +26,8 @@ page_css:
 
 ![](/assets/images/depuracion_imagenes/Depuracion_Debug_Basico.png)
 
+![](/rvs.github.io/assets/images/depuracion_imagenes/Depuracion_Debug_Basico.png)
+
 * Ejecuta el modo depuración del IDE Eclipse
 
   * Botón ``F5`` : **Step Into**  
