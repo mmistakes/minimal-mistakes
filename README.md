@@ -1,9 +1,9 @@
 
-# Guia Básica De Desarrollo Full Stack
+# Guía Básica De Desarrollo Full Stack
 
 Visíteme en :
 
-[Mi Blog 101](https://rvsweb.github.io/guia-basica-de-desarrollo-full-stack/)
+[Mi Humilde Blog](https://rvsweb.github.io/rvs.github.io/)
 
 > Blog orientado al aprendizaje básico en los distintos campos del desarrollo de software utilizando las herramientas como GIT , GITHUB y Jekyll principalmente , tratando otros aspectos relacionados con la informática en general como el desarrollo Front-end & Back-end , sistema operativos bajo GNU/Linux y la programación en general.
 
@@ -17,14 +17,14 @@ Gracias por vuestra atención
 
 * * *
 
-[Home Principal](https://rvsweb.github.io/guia-basica-de-desarrollo-full-stack/)
+[Home Principal](https://rvsweb.github.io/rvs.github.io/)
 
-[Articulos](https://rvsweb.github.io/guia-basica-de-desarrollo-full-stack/year-archive/)
+[Articulos](https://rvsweb.github.io/rvs.github.io/year-archive/)
 
-[Categorias](https://rvsweb.github.io/guia-basica-de-desarrollo-full-stack/categories/)
+[Categorias](https://rvsweb.github.io/rvs.github.io/categories/)
 
-[Etiquetas](https://rvsweb.github.io/guia-basica-de-desarrollo-full-stack/tags/)
+[Etiquetas](https://rvsweb.github.io/rvs.github.io/tags/)
 
-[Mi Portafolios](https://rvsweb.github.io/guia-basica-de-desarrollo-full-stack/portfolio/)
+[Mi Portafolios](https://rvsweb.github.io/rvs.github.io/portfolio/)
 
 * * *
