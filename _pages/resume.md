@@ -21,7 +21,7 @@ I’m passionate about technology, writing, and helping others.
 |---|---|
 | [Google](#google)                                     | _April 2018 to Present_          | Technical Writer |
 | [HBO](#hbo)                                           | _April 2016 to March 2018_       | Technical Writer |
-| [Microsoft](#microsoft)                               | _October 1999 to December 2015_  | Software Engineer, Software Developer in Test (SDET), Systems Engineer, Lead Systems Administrator |
+| [Microsoft](#microsoft)                               | _October 1999 to December 2015_  | Software Engineer, Software Development Engineer in Test (SDET), Systems Engineer, Lead Systems Administrator |
 | [Fohn, Spink, and Co., CPAs](#fohn-spink-and-co-cpas) | _January 1996 to September 1999_ | System Administrator, Accountant |
 
 See my [technical writing portfolio here](/technicalwriting/).
