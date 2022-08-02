@@ -21,7 +21,7 @@ title_separator          : "|"
 subtitle                 : "mori's blog"
 name                     : "모리"
 description              : "모리의 블로그입니다"
-url                      : "https://jinsookim97.github.io"
+url                      : "https://mori_0897.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -115,7 +115,7 @@ author:
       #url: "mailto:your.name@email.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/jinsookim97"
+      url: "https://github.com/mori_0897"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -124,17 +124,17 @@ author:
       url: "https://m.blog.naver.com/kjs2451"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/jinsookim97/"
+      url: "https://www.instagram.com/mori_0897/"
 
 # Site Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/jinsookim97"
+      url: "https://github.com/mori_0897"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/jinsookim97/"
+      url: "https://www.instagram.com/mori_0897/"
 
 
 # Reading Files
