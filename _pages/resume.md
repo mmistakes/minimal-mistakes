@@ -11,6 +11,7 @@ author_profile: true
 
 {{ page.excerpt | markdownify }}
 
+I’m passionate about technology, writing, and helping others.
 
 <a id="top"></a>
 
