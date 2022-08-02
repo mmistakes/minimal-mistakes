@@ -31,7 +31,7 @@ min_cost = 10 ** 9
 
 dp = [[0] * (max_cost + 1) for _ in range(N + 1)]
 
-for i in range(1, N):
+for i in range(1, N + 1):
     for j in range(max_cost + 1):
         if j < c[i - 1]:
             dp[i][j] = dp[i - 1][j]
