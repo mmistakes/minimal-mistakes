@@ -22,7 +22,7 @@ I’m passionate about technology, writing, and helping others.
 | [Google](#google)                                     | _April 2018 to Present_          | Technical Writer |
 | [HBO](#hbo)                                           | _April 2016 to March 2018_       | Technical Writer |
 | [Microsoft](#microsoft)                               | _October 1999 to December 2015_  | Software Engineer, Software Development Engineer in Test (SDET), Systems Engineer, Lead Systems Administrator |
-| [Fohn, Spink, and Co., CPAs](#fohn-spink-and-co-cpas) | _January 1996 to September 1999_ | System Administrator, Accountant |
+| [Fohn, Spink, and Co., CPAs](#fohn-spink-and-co-cpas) | _January 1996 to September 1999_ | Systems Administrator, Accountant |
 
 See my [technical writing portfolio here](/technicalwriting/).
 
@@ -167,7 +167,7 @@ source control), Product Studio (proprietary bug tracking)
 
 **Lead Systems Administrator** - _October 2002 to October 2003_
 
--   Managed a small team of system administrators while also providing technical mentorship.
+-   Managed a small team of systems administrators while also providing technical mentorship.
 
 **Systems Administrator** - _January 2002 to October 2002_
 
@@ -198,7 +198,7 @@ source control), Product Studio (proprietary bug tracking)
 
 # Fohn, Spink, and Co., CPAs
 
-**System Administrator** - _September 1996 to December 2005_
+**Systems Administrator** - _September 1996 to December 2005_
 
 This is where I cut my teeth on technology; designing, setting up and supporting a small network
 environment. After supporting the firm of 20 people on Novell Netware 3.0 for a year, I migrated them
