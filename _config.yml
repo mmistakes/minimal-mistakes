@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Hodun Notes"
+title                    : "HJ Notes"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Hojun Lee"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Hojun Lee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **adventurous** person."
+  bio              : "Tech, Lego, Music, Cocktail"
   location         : "Guro-gu, Seoul, Korea"
   email            : "hojun.lee@dartmedia.co.kr"
   links:
