@@ -143,7 +143,7 @@ Product Studio (proprietary bug tracking)
 
 **Systems Engineer** - _October 2003 to March 2005_
 
--   Improved team efficiency by automating multiple manual tasks with CMD batch, Visual Basic, and Transact-SQL
+-   Improved efficiency by automating multiple manual tasks with CMD batch, Visual Basic, and Transact-SQL
     scripts.
 -   Supported the servers in the data center environments and triaged problems encountered in the operating
     system, IIS, SQL, DNS, Active Directory, and more while implementing resolutions using CMD batch and
