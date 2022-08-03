@@ -65,7 +65,7 @@ review tool, proprietary version & source control systems
 
 **Technical Writer** - _April 2016 to March 2018_
 
--   **Worked closely with engineers throughout the development process** to author complete,
+-   **Worked closely with engineers throughout the development process** to author complete
     and accurate runbook documentation that helped them effectively troubleshoot live-site
     issues 24x7.
 -   **Designed and implemented a distributed build and publishing system** to pull together
