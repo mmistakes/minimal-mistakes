@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "PulchraScientia"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "ars a sapientia"
 description              : "An amazing website."
 url                      : "https://pulchrascientia.github.io" # the base hostname & protocol for your site e.g.
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -290,3 +290,4 @@ defaults:
       comments: # true
       share: true
       related: true
+      future: true
