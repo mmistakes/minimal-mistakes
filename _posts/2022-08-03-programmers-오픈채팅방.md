@@ -139,6 +139,6 @@ def solution(record):
         elif flag == "L":
             a += name_list[id] + "님이 나갔습니다."
             answer.append(a)
-    return answer
+    return answer   
 ```
 

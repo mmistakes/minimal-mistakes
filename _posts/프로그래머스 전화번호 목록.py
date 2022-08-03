@@ -17,7 +17,3 @@ def solution(phone_book):
         if phone_book[i] == phone_book[i + 1][ : len(phone_book[i])]:
             return False
     return answer
-
-phone_book = ["119","","115524421"]
-
-print(solution(phone_book))
