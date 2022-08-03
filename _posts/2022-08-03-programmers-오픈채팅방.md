@@ -140,5 +140,6 @@ def solution(record):
             a += name_list[id] + "님이 나갔습니다."
             answer.append(a)
     return answer
+    
 ```
 
