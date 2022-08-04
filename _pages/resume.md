@@ -15,13 +15,6 @@ author_profile: true
 
 I’m passionate about technology, writing, and helping others.
 
-# Superpowers
-
--   **Adaptable** - Jack of all trades who enjoys learning new things and filling in the gaps.
--   **Building relationships** - Collaborate & communicate across disciplines & teams to strengthen communities.
--   **Empathy** - With customers and peers, it’s what I do.
--   **Humor** - Because some days, laughing is the only thing you can do.
-
 # Experience summary
 
 | Company                                               | Timeframe                        | Roles |
@@ -32,6 +25,15 @@ I’m passionate about technology, writing, and helping others.
 | [Fohn, Spink, and Co., CPAs](#fohn-spink-and-co-cpas) | _January 1996 to September 1999_ | Systems Administrator, Accountant |
 
 See my [technical writing portfolio here](/technicalwriting/).
+
+# Superpowers
+
+We've all got 'em, but not everyone realizes what theirs are or when they're using them. These are mine.
+
+-   **Adaptable** - Jack of all trades who enjoys learning new things and filling in the gaps.
+-   **Building relationships** - Collaborate & communicate across disciplines & teams to strengthen communities.
+-   **Empathy** - With customers and peers, it’s what I do.
+-   **Humor** - Because some days, laughing is the only thing I can actually control.
 
 # Google
 
