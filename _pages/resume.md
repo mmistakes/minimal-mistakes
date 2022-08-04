@@ -11,9 +11,16 @@ author_profile: true
 
 {{ page.excerpt | markdownify }}
 
+<a id="top"></a>
+
 I’m passionate about technology, writing, and helping others.
 
-<a id="top"></a>
+# Superpowers
+
+-   **Adaptable** - Jack of all trades who enjoys learning new things and filling in the gaps.
+-   **Building relationships** - Collaborate & communicate across disciplines & teams to strengthen communities.
+-   **Empathy** - With customers and peers, it’s what I do.
+-   **Humor** - Because some days, laughing is the only thing you can do.
 
 # Experience summary
 
