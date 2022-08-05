@@ -17,13 +17,19 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Clase
+## Concepto Clase
 
-* Se entiende como un archivo del tipo ``.java`` cuyo interior tiene definida una **estructura básica** sobre las características las cuales tendrá un elemento concreto dentro del **sistema** o **programa** que vamos a crear o diseñar
+> Declarar una **Clase** permite crear ``un nuevo tipo de dato``
+
+* Se entiende como un **archivo** del tipo ``.java`` cuyo interior tiene definida una **estructura básica** sobre las características las cuales tendrá un **elemento concreto** dentro del **sistema** o **programa** que vayamos a **crear/diseñar**
+
+* Una clase proporciona un **modelo** para los objetos que vayamos a construir
+
   * Se podría decir que es una especie de :
-    * **Patrón** ←→ **Molde** ←→ **Modelo** ←→ **Ejemplo**
+
+    * **Patrón** ←→ **Molde** ←→ **Ejemplo** ←→ **Modelo**
   
-* Todas las ``clases`` que construyamos o usemos de la ``API oficial`` de ``Java`` heredan de la ``clase principal`` llamada ``Clase Object``
+* Todas las ``clases`` que construyamos o usemos de la ``API oficial`` de ``Java`` heredan de la ``principal clase`` llamada ``Clase Object``
 
 ### Ejemplo de Clase
 
