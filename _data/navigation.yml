@@ -10,10 +10,8 @@ main:
 docs: 
   - title: "코딩테스트 준비"
     children: 
-      - title: "자료구조와알고리즘"
-        url: /categories/자료구조와알고리즘/
-      - title: "실습예제"
-        url: /categories/실습예제/
+      - title: "codingTest"
+        url: /categories/codingtest/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
