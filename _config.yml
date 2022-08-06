@@ -106,9 +106,9 @@ analytics:
 author:
   name             : "용우"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Deep-Diving"
+  bio              : "기록보관소"
   location         : "Seoul"
-  email            :
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
