@@ -11,7 +11,7 @@ docs:
   - title: "공부 목록"
     children: 
       - title: "algorithm"
-        url: /categories/algorithm/
+        url: /categories/
 
 
 
