@@ -7,11 +7,11 @@ main:
   - title: "Search"
     url: /search/ 
 
-docs: 
-  - title: "공부 목록"
-    children: 
-      - title: "algorithm"
-        url: /categories/
+# docs: 
+#   - title: "공부 목록"
+#     children: 
+#       - title: "algorithm"
+#         url: /categories/
 
 
 
