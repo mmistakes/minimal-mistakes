@@ -108,7 +108,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "기록보관소"
   location         : "South Korea"
-  email            : "wooleejaan@gmail.com"
+  email            : # "wooleejaan@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
