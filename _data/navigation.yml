@@ -10,8 +10,8 @@ main:
 docs: 
   - title: "코딩테스트 준비"
     children: 
-      - title: "codingTest"
-        url: /categories/codingtest/
+      - title: "Algorithm"
+        url: /categories/algorithm/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
