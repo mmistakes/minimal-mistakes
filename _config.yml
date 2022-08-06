@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KR"
+locale                   : "en-US"
 title                    : "Interactive_wuleejaan"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -108,7 +108,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "기록보관소"
   location         : "South Korea"
-  email            : # "wooleejaan@gmail.com"
+  email            : "wooleejaan@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
