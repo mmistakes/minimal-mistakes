@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "[프로그래머스] 전화번호 목록"
+title:  "[프로그래머스] N으로 표현"
 categories: programmers
-tag: [python, algolithm, level2, sort, programmers]
+tag: [python, algolithm, level3, dp, programmers]
 toc: true
 author_profile: false
 sidebar:
@@ -11,7 +11,7 @@ sidebar:
 
 # N으로 표현
 
-[Class2] [N으로 표현](https://school.programmers.co.kr/learn/courses/30/lessons/42895)
+[N으로 표현](https://school.programmers.co.kr/learn/courses/30/lessons/42895)
 
 ## 문제 설명
 ---
