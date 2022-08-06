@@ -1,0 +1,67 @@
+---
+layout: single
+title: "web crolling"
+---
+##with selenium <br> #initial <br> - download chrome driver <br> - download selenium library  
+
+#start
+In selenium 4.3.0  
+
+-function 1.  import lib and open browser
+'''python
+from selenium import webdriver
+
+browser = webdriver.Chrome() 
+browser.get('https://www.write.address') 
+'''
+
+
+-function 2. select element and click
+'''python
+search_box = driver.find_element('type', '---add content')
+search_box.click()
+'''
+You can control web by these function
+(+) (x) driver.find_element_type('---add content') <br> It's for old version
+(+) You can make a list of elements by using
+'''python
+driver.find_elements('type', '---add content')
+'''
+
+
+-function 3. time for loading
+'''python
+import time
+time.sleep(5) # 5sec
+'''
+
+
+-function 4. send key and submit
+'''python
+search_box.send_keys('--write content') 
+search_box.submit() 
+'''
+example ( find search bar and put content )
+'''python
+search_box = driver.find_element("name", "q")
+search_box.send_keys('letter small A') #검색어 입력
+search_box.submit() #검색
+'''
+
+
+-function 5. get attribute
+'''python
+imgUrl = driver.find_element('--', '--').get_attribute("name")
+'''
+You can get attribute you want. Name can be replaced by "src', 'style', 'title', 'id'...
+
+
+-function 6. save file (by using Url)
+'''python
+import urllib.request
+urllib.request.urlretrieve(imgUrl, 'file name')
+'''
+
+
+:-)
+just for test! 
