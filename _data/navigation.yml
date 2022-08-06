@@ -8,7 +8,7 @@ main:
     url: /search/ 
 
 docs: 
-  - title: "코딩테스트 준비"
+  - title: "공부 목록"
     children: 
       - title: "Algorithm"
         url: /categories/algorithm/
