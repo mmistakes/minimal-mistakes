@@ -28,7 +28,7 @@ While there are COVID restrictions in place (and it remains convenient) these wi
 
 | Date                | Location                 | Speaker            |
 |:-------------------:|:------------------------:|:------------------:|
-| Mon 25th July 2022  | Zoom (see calendar link) | Nora Novak         |
+| Mon 29th August 2022| Hybrid                   | Emma Hobbs         |
 
 ### Past meetings
 
@@ -41,6 +41,8 @@ While there are COVID restrictions in place (and it remains convenient) these wi
 | Mon 6th June 2022   | Zoom (see calendar link) | Emma Hobbs         |
 | Mon 11th July 2022  | Zoom                     | Yassmeen Ali       |
 | Tue 19th July 2022  | Hybrid                   | David Teixeira     |
+| Mon 25th July 2022  | Zoom (see calendar link) | Nora Novak         |
+| Tue 2nd August 2022 | Hybrid                   | Areej Obaid        |
 
 ### Future Meeting Schedule
 
@@ -48,8 +50,6 @@ This schedule is tentative - if you cannot attend a meeting where you are schedu
 
 | Date                     | Location                 | Speaker            |
 |:------------------------:|:------------------------:|:------------------:|
-| Tue 2nd August 2022      | Hybrid                   | Areej Obaid        |
-| Mon 29th August 2022     | Hybrid                   | Project Recaps     |
 | Mon 5th September 2022   | Hybrid                   | TBC                |
-| Mon 12th September 2022  | Hybrid                   | TBC                |
+| Mon 12th September 2022  | Hybrid                   | Project Recaps     |
 | Mon 19th September 2022  | Hybrid                   | TBC                |
