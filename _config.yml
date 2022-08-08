@@ -32,9 +32,9 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" #(default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "terrynote"
   discourse:
-    server               : "terrynote"
+    server               : #https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
