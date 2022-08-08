@@ -109,9 +109,6 @@ author:
   location: "South Korea"
   email: "qjatjrx@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:qjatjrx@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://tigerstonebs.github.io"
