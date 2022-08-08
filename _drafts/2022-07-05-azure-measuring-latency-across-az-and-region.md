@@ -19,7 +19,7 @@ A [proximity placement group](https://azure.microsoft.com/en-us/blog/announcing-
 
 Understanding the latency implications of different network configurations when designing an architecture is **essential**.
 
-In this blob post I measure the real latency present between deplyed machines in Azure's **West Europe region** in the following configurations:
+In this blob post I measure the real latency present between deployed machines in Azure's **West Europe region** in the following configurations:
 
 * same vNet, same availability zone, same proximty placement group
 * same vNet, across availability zones
@@ -36,7 +36,7 @@ To measure latency, I've used [MTR](https://en.wikipedia.org/wiki/MTR_(software)
 
 # Scenario 1 - one Virtual Network
 
-In this scenario I have the calling machine in one availability zone and 3 additional machines each in a different availability zone. In availability zone 1 I have also placed both machine in the same proximity placement group to have the best latency possible.
+In this scenario I have the calling machine in one availability zone and 3 additional machines each in a different availability zone. In availability zone 1 I have also placed both machines in the same proximity placement group to have the best latency possible.
 
 ![](../assets/post/2022/latency-scenario-1.png)
 
@@ -69,7 +69,7 @@ Here the measures from `spoke01-az-01` (availability zone 1) to machines in anot
 
 Takeaways:
 * network peering adds an average overhead of just 0.2ms
-* Here I am not using a proximity group anymore and the result is that latency doesn't change is the machine is within same availability zone, or on another one  
+* Here I am not using a proximity group anymore and the result is that average latency doesn't change if the machine is within same availability zone, or on another one  
 
 # Scenario 3 - two Virtual Networks in H&S configuration with Virtual Network Gateway
 
@@ -104,8 +104,9 @@ Here the measures from `spoke01-az-01` (availability zone 1) to machines in anot
 
 Takeaways
 
-* Latency in MUCH better with Azure Firewall in the middle: a firewall in the middle have almost the same latency of a simple peering when you are in the same Availability Zone
-* Cross availabity zones latency grows up to 3.1/3.4ms, just 1ms more than the "1-peering" scenario
+* Latency in MUCH better than a VPN gateway with Azure Firewall in the middle
+* When source and destination are in the same availability Zone it has almost the same latency of a simple peering
+* When source ande destination are in different availabity zones, latency grows up to 3.1/3.4ms
 
 # Final thoughts
 
@@ -114,4 +115,4 @@ Takeaways
 * Peerings and hub-and-spoke have no real impact if a Firewall is used in the middle
 * I would avoid to use a VPN Gateway for cross spoke communication 
 
-**Have you achieved similar or different results? What is your "reference" network architecture and why? **
+**Have you achieved similar or different results? What is your "reference" network architecture and why?**
