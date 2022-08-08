@@ -1,11 +1,11 @@
 ---
 layout: single
-title:  "이것이 코딩테스트다 - 1차시"
+title:  "코딩 테스트 책 - 1차시"
 categories : coding-test
-tag : [코딩 테스트, python]
+tag : [이것이 취업을 위한 코딩 테스트다, python, 나동빈]
 ---
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=a2dcec&height=300&section=header&text=이것이 코딩테스트다 - 1차시&fontSize=40&animation=fadeIn&fontAlignY=38&fontColor=FFFFFF)
+![header](https://capsule-render.vercel.app/api?type=waving&color=a2dcec&height=300&section=header&text=코딩 테스트 책 - 1차시&fontSize=40&animation=fadeIn&fontAlignY=38&fontColor=FFFFFF)
 
 &nbsp;
 
