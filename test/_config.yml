@@ -7,7 +7,7 @@
 
 theme                    : "minimal-mistakes-jekyll"
 minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
+##
 # Site Settings
 locale                   : "en-US"
 title                    : "Minimal Mistakes"
