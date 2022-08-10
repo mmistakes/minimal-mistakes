@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Custom skin
+   ========================================================================== */
+
+
+/* Colors */
+$background-color: #ffffff !default;
+$text-color: #000000 !default;
+$muted-text-color: #2b4d3e !default;
+$primary-color: #167c50 !default;
+$border-color: mix(#fff, #3f6149, 75%) !default;
+$footer-background-color: $primary-color !default;
+$link-color: #4fc78f !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $text-color !default;
+$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+
+.page__footer {
+  color: #27362e !important; // override
+}
+
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
+
+a{
+  font-weight: bold;
+}
