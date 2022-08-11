@@ -9,6 +9,22 @@ sidebar :
     nav : "docs"
 ---
 # ㅇ어케하는겨
+{:  .notice--danger}
+
+<div class="notice--success">
+<h4>공지사항테스트</h4>
+<ul>
+    <li>공지사항 순서 1</li>
+    <li>공지사항 순서 2</li>
+</ul>
+</div>
+
+
+[버튼입니다](https://google.com){: .btn .btn--danger}
+
+
+{% include video id="MmERSfaBMNE" provider="youtube" %}
+
 
 ## 블로그 이전
 
