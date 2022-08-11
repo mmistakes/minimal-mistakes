@@ -4,6 +4,9 @@ title:  "첫 포스팅 입니다."
 categories : coding
 tags : [python, blog, jekyll]
 toc : true #이걸 추가해서 page의 컨텐츠 순서를 줄 수 있음.
+author_profile : false
+sidebar : 
+    nav : "docs"
 ---
 # ㅇ어케하는겨
 
