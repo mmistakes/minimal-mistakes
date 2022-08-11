@@ -9,7 +9,7 @@ tags:
  - bloom filters
  - Locality sensitive hashing
  - pathogen monitoring
- - closed
+ - open
 published: true
 header:
   teaser: "/assets/images/containment.jpg"
@@ -72,8 +72,8 @@ enable large-scale metagenomic search projects.</p>
     "name": "USDA-ARS",
     "value": "000001"
   },
-  "datePosted" : "2022-05-31",
-  "validThrough" : "2022-06-30T00:00",
+  "datePosted" : "2022-08-11",
+  "validThrough" : "2022-09-30T00:00",
   "applicantLocationRequirements": {
     "@type": "Country",
     "name": "USA"
@@ -114,7 +114,7 @@ enable large-scale metagenomic search projects.</p>
 
 
 
-This position has been filled, it is visible for archival purposes.
+This position is open until 9/30/2022 applications will be evaluated as soon as they are recieved.
 {: .notice--warning}
 
 # Scientific Challenge

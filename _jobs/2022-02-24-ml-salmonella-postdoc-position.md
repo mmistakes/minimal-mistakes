@@ -8,7 +8,7 @@ tags:
  - Salmonella
  - Autoencoders
  - MLST
- - open
+ - closed
 header:
   teaser: "/assets/images/Salmonella_enteritidis_USDA.jpg"
 ---
