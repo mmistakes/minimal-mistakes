@@ -2,26 +2,31 @@
 
 ## Book
 
-- Verguts, T. (2022). Introduction to modeling cognitive processes. [MIT Press.](https://mitpress.mit.edu/books/introduction-modeling-cognitive-processes)
+- Verguts, T. (2022). Introduction to modeling cognitive processes. [MIT Press](https://mitpress.mit.edu/books/introduction-modeling-cognitive-processes) [GitHub](https://github.com/CogComNeuroSci/modeling-master)
 
 <img src="/images/MCP_cover.jpg" alt="MCP book cover" max-width="50%" height="auto" align="center" hspace="10" vspace="10">
     
 ## Preprints
 
-- Lesage, E., & Verguts, T. (2021). Contextual overtraining accelerates habit formation in new stimuli.  [PsyArXiv.](https://doi.org/10.31234/osf.io/7m6bh)
- - Van Marcke, H., Le Denmat, P., Verguts, T., & Desender, K. (2022). Manipulating prior beliefs causally induces under- and overconfidence. [BioRxiv.](https://doi.org/10.1101/2022.03.01.482511)
+- Lesage, E., & Verguts, T. (2022). Contextual overtraining accelerates habit formation in new stimuli.  [PsyArXiv.](https://doi.org/10.31234/osf.io/7m6bh)
+
+- Van Marcke, H., Le Denmat, P., Verguts, T., & Desender, K. (2022). Manipulating prior beliefs causally induces under- and overconfidence. [BioRxiv.](https://doi.org/10.1101/2022.03.01.482511)
+
+- Huycke, P. Lesage, E., Boehler, C. Nico, & Verguts, T. (2022). Computational investigations of learning and synchronization in cognitive control. [PsyArXiv](https://psyarxiv.com/jhmku/)
 
 ## Recent publications
 
 In press:
-- Desender, K., Vermeylen, L., & Verguts, T. (2020). Dynamic influences on static measures of metacognition. Nature Communications.
- [BioRxiv version.](https://doi.org/10.1101/2020.10.29.360453)
+- Liu, M., Dong, W., Wu, Y., Verbeke, P., Verguts, T., & Chen, Q. (2022). Modulating hierarchical learning by high-definition transcranial alternating current stimulation at theta frequency. Cerebral Cortex. [BioRxiv version.](https://www.biorxiv.org/content/10.1101/2022.06.28.497899v1)
+
 
 2022: 
-- Senoussi, M., Verbeke, P., Desender, K., De Loof, E., Talsma, D., & Verguts, T. (2022). Theta oscillations shift towards optimal frequency for cognitive control. Nature Human Behaviour.
- [BioRxiv version.](https://doi.org/10.1101/2020.08.30.273706)
+- Desender, K., Vermeylen, L., & Verguts, T. (2022). Dynamic influences on static measures of metacognition. [Nature Communications.](https://www.nature.com/articles/s41467-022-31727-0)
 
-- Peng, Z., He, T., Ren, P., Jin, L., Yang, Q., Xu, C., … Chen, Q. (2022). Imbalance between the caudate and putamen connectivity in obsessive- compulsive disorder. NeuroImage : Clinical, (55). 
+- Senoussi, M., Verbeke, P., Desender, K., De Loof, E., Talsma, D., & Verguts, T. (2022). Theta oscillations shift towards optimal frequency for cognitive control. [Nature Human Behaviour.](https://www.nature.com/articles/s41562-022-01335-5)
+[BioRxiv version.](https://doi.org/10.1101/2020.08.30.273706)
+
+- Peng, Z., He, T., Ren, P., Jin, L., Yang, Q., Xu, C., … Chen, Q. (2022). Imbalance between the caudate and putamen connectivity in obsessive- compulsive disorder. [NeuroImage : Clinical, (55).](https://www.sciencedirect.com/science/article/pii/S2213158222001486)
 
 - Calderon, C.B., Verguts, T., & Frank, M. J. (2022). Thunderstruck: The ACDC model of flexible sequences and rhythms in recurrent neural circuits. [PLoS: Computational Biology.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009854) 
 
