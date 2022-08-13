@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% assign entries = site[include.collection] %}
 
 {% if include.sort_by == 'title' %}
@@ -17,3 +18,20 @@
 {%- for post in entries -%}
   {% include archive-single.html %}
 {%- endfor -%}
+=======
+{% assign entries = site[include.collection] %}
+
+{% if include.sort_by %}
+  {% assign entries = entries | sort: include.sort_by %}
+{% endif %}
+
+{% if include.sort_order == 'reverse' %}
+  {% assign entries = entries | reverse %}
+{% endif %}
+
+{%- for post in entries -%}
+  {%- unless post.hidden -%}
+    {% include archive-single.html %}
+  {%- endunless -%}
+{%- endfor -%}
+>>>>>>> 8a67ce8e41ec850f2d7c373aa47739b2abfee6f1

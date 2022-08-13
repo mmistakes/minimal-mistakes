@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
@@ -23,4 +24,14 @@ $base0d: #268bd2 !default;
 $base0e: #6c71c4 !default;
 $base0f: #d33682 !default;
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+=======
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+>>>>>>> 8a67ce8e41ec850f2d7c373aa47739b2abfee6f1
 @import "minimal-mistakes"; // main partials

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 layout: archive
 ---
@@ -7,3 +8,15 @@ layout: archive
 <div class="entries-{{ page.entries_layout }}">
   {% include documents-collection.html collection=page.collection sort_by=page.sort_by sort_order=page.sort_order type=page.entries_layout %}
 </div>
+=======
+---
+layout: archive
+---
+
+{{ content }}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% include documents-collection.html collection=page.collection sort_by=page.sort_by sort_order=page.sort_order type=entries_layout %}
+</div>
+>>>>>>> 8a67ce8e41ec850f2d7c373aa47739b2abfee6f1
