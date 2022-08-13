@@ -23,7 +23,7 @@ name                     : "Rhymes of Contraband"
 description              : "A blog and portfolio for the writing, graphic design and layout done by Rhymes of Contraband"
 url                      : 'https://rhymesofcontraband.github.io/''
 baseurl                  : "/roc/"
-repository               : "rhymesofcontraband/roc"
+repository               : "rhymesofcontraband/roc
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/Logo_3.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
