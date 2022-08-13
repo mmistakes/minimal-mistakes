@@ -1,3 +1,6 @@
+$ git commit --allow-empty -m "Trigger rebuild"
+$ git push
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
