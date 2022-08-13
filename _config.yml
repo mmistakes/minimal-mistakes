@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Rhymes of Contraband"
 description              : "A blog and portfolio for the writing, graphic design and layout done by Rhymes of Contraband"
-url                      : 'https://rhymesofcontraband.github.io/''
+url                      : "https://rhymesofcontraband.github.io/''
 baseurl                  : "/roc/"
 repository               : "rhymesofcontraband/roc"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
