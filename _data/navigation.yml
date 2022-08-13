@@ -3,7 +3,7 @@ regenerate: true
 main:
   - title: "About"
     url: /about/
-  - title: "Work"
+  - title: "Portfolio"
     url: /portfolio/
     description: A sample of realisations
   # - title: "Sample Collections"
