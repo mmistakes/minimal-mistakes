@@ -36,6 +36,8 @@
     </div>
 
     {% include scripts.html %}
-
+    {% if page.use_math %}
+     {% include mathjax_support.html %} 
+    {% endif %}
   </body>
 </html>
