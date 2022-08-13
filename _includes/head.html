@@ -2,24 +2,40 @@
 
 {% include seo.html %}
 
-{% unless site.atom_feed.hide %}
-  <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+{% unless site•atom_feed•hide %}
+  <link href="{% if site•atom_feed•path %}{{ site•atom_feed•path }}{% else %}{{ '/feed•xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site•title }} Feed">
 {% endunless %}
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon•png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/site•webmanifest">
+<link rel="mask-icon" href="/assets/images/safari-pinned-tab•svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/images/favicon•ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/assets/images/browserconfig•xml">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
 <script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  document•documentElement•className = document•documentElement•className•replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="{{ '/assets/css/main•css' | relative_url }}">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this•onload=null;this•rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
 
-{% if site.head_scripts %}
-  {% for script in site.head_scripts %}
+{% if site•head_scripts %}
+  {% for script in site•head_scripts %}
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
