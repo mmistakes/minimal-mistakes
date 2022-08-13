@@ -1,7 +1,7 @@
 ---
-title: Work
+title: Portfolio
 layout: collection
-permalink: /work/
+permalink: /portfolio/
 collection: portfolio
 entries_layout: grid
 header:
