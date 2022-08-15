@@ -22,4 +22,4 @@ toc: true
 
 ## 동아리 탄생 배경
 
-{% raw %}<img src="{{ site.url }}{{ site.baseurl }}/assets/images/KPSC_history.png" alt="">{% endraw %}
+{% raw %}<img src="/assets/images/KPSC_history.png" alt="">{% endraw %}
