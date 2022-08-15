@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   : "en-US"
 title                    : "L-STAR Corperation"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "나만의 공간"
 name                     : "L-STAR"
 description              : "엘스타"
 url                      : "https://femold.github.io"
