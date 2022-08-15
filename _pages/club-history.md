@@ -5,6 +5,10 @@ excerpt: "KPSC 동아리 기록"
 toc: true
 ---
 
+## 동아리 탄생 배경
+
+{% raw %}<img src="/assets/images/KPSC_history.png" alt="">{% endraw %}
+
 ## 역대 동아리 동아리장
 
 | 년도         | 이름           | 직책          | BOJ핸들                                                                                            |
@@ -19,7 +23,3 @@ toc: true
 | 년도 | 이름           | 직책   | BOJ핸들                                                                                                      |
 | ---- | -------------- | ------ | ------------------------------------------------------------------------------------------------------------ |
 | 2022 | 서형빈, 배용하 | 운영진 | [antifly55](https://www.acmicpc.net/user/antifly55), [qodydgk8624](https://www.acmicpc.net/user/qodydgk8624) |
-
-## 동아리 탄생 배경
-
-{% raw %}<img src="/assets/images/KPSC_history.png" alt="">{% endraw %}
