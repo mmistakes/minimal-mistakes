@@ -49,5 +49,22 @@
     },
     "created": "2022-08-16T19:40:21.000Z",
     "updated": "2022-08-16T19:40:31.881Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Weihnachtsferien",
+    "title": "Weihnachtsferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NmQ2NHUzNm1wM2liaWkwZTM2cGRoMTVoZTcgbG9nbTh1bTNuNGljOGs2Z3NlM2o1b3AyMWdAZw",
+    "start": {
+      "date": "2022-12-22",
+      "date_time": null
+    },
+    "end": {
+      "date": "2023-01-03",
+      "date_time": null
+    },
+    "created": "2022-08-16T19:42:18.000Z",
+    "updated": "2022-08-16T19:42:18.930Z"
   }
 ]
