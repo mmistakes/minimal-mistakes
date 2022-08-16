@@ -14,7 +14,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  check-links:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -41,7 +41,10 @@ jobs:
         run: bundle exec jekyll serve --ssl-key=./localhost.key --ssl-cert=./localhost.crt --detach
 
       - name: "Check for broken Links"
-        run: bundle exec htmlproofer ./_site --only-4xx --check-favicon --check_opengraph --check-html --check_img_http # --enforce_https
+        run: bundle exec htmlproofer ./_site --only-4xx --checks 'Images,Scripts,Favicon,OpenGraph' # --enforce_https
+        # see https://github.com/gjtorikian/html-proofer/blob/93ba616eb45b7ba844197fc29824995e8fcd2279/UPGRADING.md:
+        # --check-html was removed in 4.0.0
+        # --check_img_http was removed in 4.0.0
         
       - name: "Shutdown Website"
         run: pkill -f jekyll
