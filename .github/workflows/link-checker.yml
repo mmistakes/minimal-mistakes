@@ -41,10 +41,12 @@ jobs:
         run: bundle exec jekyll serve --ssl-key=./localhost.key --ssl-cert=./localhost.crt --detach
 
       - name: "Check for broken Links"
-        run: bundle exec htmlproofer ./_site --only-4xx --checks 'Images,Scripts,Favicon,OpenGraph' # --enforce_https
+        run: bundle exec htmlproofer ./_site --only-4xx --allow_missing_href --checks 'Images,Links,Scripts,Favicon,OpenGraph' --typhoeus '{ "ssl_verifypeer": false }' --hydra '{ "max_concurrency": 20 }' # --enforce_https
+        # --only-4xx disables "https://www.openstreetmap.org/?mlat=52.53608&mlon=13.15274 exists, but the hash 'map=17/52.53608/13.15274&layers=N' does not (status code 200)"
+        # --allow_missing_href disables "'a' tag is missing a reference" as in <a><i class="fa fa-envelope"> </i>sekretariat(ät)brandwerder.de</a>
         # see https://github.com/gjtorikian/html-proofer/blob/93ba616eb45b7ba844197fc29824995e8fcd2279/UPGRADING.md:
         # --check-html was removed in 4.0.0
         # --check_img_http was removed in 4.0.0
-        
+
       - name: "Shutdown Website"
         run: pkill -f jekyll
