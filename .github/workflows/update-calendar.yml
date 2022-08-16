@@ -30,18 +30,13 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
+      # Install all needed npm modules
       - name: Install npm modules
         run: npm install
 
-      # Runs a set of commands using the runners shell
+      # Re-create _data/calendar.yml
       - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-          
-      - name: List all files in .calendar
-        run: ls -al
+        run: npm create_calendar.js
 
       # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
       - name: setup git config
