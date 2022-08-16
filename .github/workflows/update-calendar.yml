@@ -38,8 +38,14 @@ jobs:
       - name: Update _data/calendar.yml from google calendar
         run: node ./create_calendar.js
 
-      # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
-      - name: setup git config
+      # Push changes if _data/calendar.yml was updated
+      - name: Publish new _data/calendar.yml if changed
         run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
+          if ! git diff --quiet ../_data/calendar.yml ; then
+            git config user.name "GitHub Actions Bot"
+            git config user.email "<>"
+
+            git add ../_data/calendar.yml
+            git commit -m "Updated Calendar"
+            git push origin master
+          fi
