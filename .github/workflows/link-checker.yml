@@ -23,11 +23,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Install Jekyll and HTML-Proofer
-      - name: Install Jekyll and HTML-Proofer
-        run: |
-          bundle install
-          bundle add html-proofer
+      # Install Jekyll
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3' # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
+      # Install HTML-Proofer
+      - name: HTML-Proofer
+        run: bundle add html-proofer
 
       # Generate localhost.{crt, key}
       - name: "Generate localhost.{crt, key}"
