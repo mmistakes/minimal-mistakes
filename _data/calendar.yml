@@ -15,5 +15,22 @@
     },
     "created": "2022-08-16T18:09:25.000Z",
     "updated": "2022-08-16T18:09:25.602Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Studientag",
+    "title": "Studientag",
+    "excerpt": "Hort bleibt geschlossen.",
+    "url": "https://www.google.com/calendar/event?eid=NGRsdTU1MDRicXRzNTN0Z3N2ZDd0M2s5NHIgbG9nbTh1bTNuNGljOGs2Z3NlM2o1b3AyMWdAZw",
+    "start": {
+      "date": "2022-08-19",
+      "date_time": null
+    },
+    "end": {
+      "date": "2022-08-20",
+      "date_time": null
+    },
+    "created": "2022-08-16T19:27:56.000Z",
+    "updated": "2022-08-16T19:28:06.645Z"
   }
 ]
