@@ -32,5 +32,22 @@
     },
     "created": "2022-08-16T19:27:56.000Z",
     "updated": "2022-08-16T19:28:06.645Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Herbstferien",
+    "title": "Herbstferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N2NnazY1czZocWVqZzlkdm5iOWJmcm1hZG0gbG9nbTh1bTNuNGljOGs2Z3NlM2o1b3AyMWdAZw",
+    "start": {
+      "date": "2022-10-24",
+      "date_time": null
+    },
+    "end": {
+      "date": "2022-11-06",
+      "date_time": null
+    },
+    "created": "2022-08-16T19:40:21.000Z",
+    "updated": "2022-08-16T19:40:31.881Z"
   }
 ]
