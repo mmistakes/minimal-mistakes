@@ -35,8 +35,8 @@ jobs:
         run: npm install
 
       # Re-create _data/calendar.yml
-      - name: Run a multi-line script
-        run: npm create_calendar.js
+      - name: Update _data/calendar.yml from google calendar
+        run: npm ./create_calendar.js
 
       # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
       - name: setup git config
