@@ -6,6 +6,10 @@ You can either edit/add documents through the GitHub Web GUI and **request** a m
 
 First, ensure you have write access to both the [dev](https://github.com/FiQCI/dev) repository and the [main](https://github.com/FiQCI/fiqci.github.io) repository. 
 
+**_NOTE:_**  If the main repo is AHEAD of the dev repo this can be resolved via adding the mainsite remote as below (`git remote add mainsite git@github.com:FiQCI/fiqci.github.io`) then `git fetch mainsite`, `git pull mainsite` then from dev:master `git pull mainsite master` and add a commit message saying you are merging upstream changes. 
+
+**Always check that the dev repo is up to date with the main repo**
+
 
 ## For the impatient
 
@@ -34,7 +38,7 @@ This method directly pushes dev:master --> fiqci.github.io:master and requires a
 6. Ensure you have the latest version of the main repo: `git fetch mainsite`
 7. Create a new branch called "dev-changes" which is linked to the main repo **master** branch:  `git branch dev-changes mainsite/master`
 8. Switch to this branch: `git checkout dev-changes`
-9. Merge your changes with the new branch: `git merge origin/master`
+9. Merge your changes with the new branch: `git merge origin/master -m <msg>`. Add a useful commit message to track what was changed.
 10. Push your changes to the main repo **master** branch: `git push mainsite dev-changes:master`
 
 OR
@@ -54,7 +58,7 @@ This method pushes the changes in dev:master to fiqci.github.io:newbranch where 
 4. Get this new branch in your local repository: `git fetch mainsite + git pull`
 5. Create a new branch called "dev-changes" which is linked to the new branch you just created:  `git branch dev-changes mainsite/test-changes`
 6. Switch to this branch: `git checkout dev-changes`
-7. Merge your changes with the new branch: `git merge origin/master`
+7. Merge your changes with the new branch: `git merge origin/master -m <msg>`. Add a useful commit message to track what was changed.
 8. Push your changes to the main repo: `git push mainsite dev-changes`
 7. Go to the main repo github page and switch to the new branch you created. Click "Compare and pull request" at the top. Then select "base:master" on the left and "compare: yourbranchname" on the right. Comment what you've changed and assign a reviewer. 
 
