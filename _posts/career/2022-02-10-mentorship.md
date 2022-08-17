@@ -1,5 +1,5 @@
 ---
-title: "Mentorship Programming - Get Stared in Tech Today!"
+title: "Mentorship Programming - Get Started in Tech Today!"
 layout: single
 categories:
   - interview_prep
