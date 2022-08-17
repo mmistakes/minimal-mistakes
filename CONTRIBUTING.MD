@@ -1,73 +1,35 @@
 # Contributing
 
-Changes are first made to the [dev](https://github.com/FiQCI/dev) repository which are then pushed to the [main](https://github.com/FiQCI/fiqci.github.io) repository which builds the main website https://fiqci.fi/. 
+Changes are first made to the [dev](https://github.com/FiQCI/dev) repository which are then pushed to the [main](https://github.com/FiQCI/fiqci.github.io) repository which builds the main website https://fiqci.fi/. You can preview the [dev](https://github.com/FiQCI/dev) repository at https://fiqci.fi/dev. ALL changes should be made directly to the dev repository. 
 
 You can either edit/add documents through the GitHub Web GUI and **request** a merge with the main repository or you can edit/add documents through the terminal and merge them yourself, however this requires more advanced usage. 
 
 First, ensure you have write access to both the [dev](https://github.com/FiQCI/dev) repository and the [main](https://github.com/FiQCI/fiqci.github.io) repository. 
 
-**_NOTE:_**  If the main repo is AHEAD of the dev repo this can be resolved via adding the mainsite remote as below (`git remote add mainsite git@github.com:FiQCI/fiqci.github.io`) then `git fetch mainsite`, `git pull mainsite` then from dev:master `git pull mainsite master` and add a commit message saying you are merging upstream changes. 
-
-**Always check that the dev repo is up to date with the main repo**
-
-
-## For the impatient
 
 Once you've completed the steps above:
 * In [the dev repo](https://github.com/FiQCI/dev) navigate to where you want to add a new file e.g `_posts/` and click "Add file" at the top. Or navigate to a file already in the repo and click the little pen icon in the top right "Edit this file". 
 * (sign in GitHub) and edit then content
 * Scroll down to commit changes (create a new branch) -> make a pull request
-* Assign a reviewer who will then merge and push to the main site
+* Assign a reviewer who will then merge and push to the master dev branch
+* After merging to the master branch of the dev repository a pull request will then be made to the main website. 
 
-<<<<<<< HEAD
-Please check [Adding/Editing the website](#Adding/Editing-the-website) below for details on **where** to add new files such that they do not break the site. 
-=======
+
+Of course all of the above can be done through the terminal as well:
+
+* Clone the dev repository `git clone https://github.com/FiQCI/dev.git`
+* Create and switch to a new branch `git checkout -b ＜new-branch＞`
+* Do your changes / Add your files. The changes you've made can be previewed with `git status`.
+* Add and commit your new files `git add <files>` `git commit -m <message>`
+* Push your changes to the dev repository `git push origin <new-branch>`
+* Then navigate to the GitHub page: https://github.com/FiQCI/dev.
+* You may see a message `<new-branch> has had recent changes`, this is a quick way to switch to your branch.
+* You can create a "Pull request" by clicking on `Contribute` at the top of the repository. You will want to select to merge into `FiQCI/dev` from `dev:<new-branch`. 
+
+
 Please check [Adding/Editing the website](#Adding-to-or-Editing-the-website) below for details on **where** to add new files such that they do not break the site. 
->>>>>>> origin/master
 
-
-## Pushing to the main repo master branch
-
-This method directly pushes dev:master --> fiqci.github.io:master and requires admin rights on both dev and the main repo. 
-
-1. Clone the `dev` repository and `cd` into it: `git clone git@github.com:FiQCI/dev.git` +`cd dev`
-2. Do your changes which can be viewed locally (see above).
-3. Commit your changes. 
-4. Ensure you have the latest version of the dev repo **after changes** `git fetch` + `git pull`
-5. Add the main repo's remote url: `git remote add mainsite git@github.com:FiQCI/fiqci.github.io`
-6. Ensure you have the latest version of the main repo: `git fetch mainsite`
-7. Create a new branch called "dev-changes" which is linked to the main repo **master** branch:  `git branch dev-changes mainsite/master`
-8. Switch to this branch: `git checkout dev-changes`
-9. Merge your changes with the new branch: `git merge origin/master -m <msg>`. Add a useful commit message to track what was changed.
-10. Push your changes to the main repo **master** branch: `git push mainsite dev-changes:master`
-
-OR
-
-## Pushing to the main repo new branch and creating a pull request
-
-This method pushes the changes in dev:master to fiqci.github.io:newbranch where `newbranch` is a user-created branch in the main repo. 
-
-1. Clone the `dev` repository and `cd` into it: `git clone git@github.com:FiQCI/dev.git` +`cd dev`
-<<<<<<< HEAD
-2. Do your changes which can be viewed locally (see above).
-=======
-2. Do your changes which can be viewed locally (see [README](README.MD)).
->>>>>>> origin/master
-3. [Create branch in mainsite](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository). For example "test-changes". 
-
-4. Get this new branch in your local repository: `git fetch mainsite + git pull`
-5. Create a new branch called "dev-changes" which is linked to the new branch you just created:  `git branch dev-changes mainsite/test-changes`
-6. Switch to this branch: `git checkout dev-changes`
-7. Merge your changes with the new branch: `git merge origin/master -m <msg>`. Add a useful commit message to track what was changed.
-8. Push your changes to the main repo: `git push mainsite dev-changes`
-7. Go to the main repo github page and switch to the new branch you created. Click "Compare and pull request" at the top. Then select "base:master" on the left and "compare: yourbranchname" on the right. Comment what you've changed and assign a reviewer. 
-
-
-<<<<<<< HEAD
-## Adding/Editing the website
-=======
 ## Adding to or Editing the website
->>>>>>> origin/master
 
 This website is built using Jekyll with the minimal mistakes theme, thus the layout of the site is very particular. 
 
