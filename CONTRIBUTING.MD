@@ -26,6 +26,10 @@ Of course all of the above can be done through the terminal as well:
 * You may see a message `<new-branch> has had recent changes`, this is a quick way to switch to your branch.
 * You can create a "Pull request" by clicking on `Contribute` at the top of the repository. You will want to select to merge into `FiQCI/dev` from `dev:<new-branch`. 
 
+``
+base repository: FiQCI/dev base:master <-- head repository: FiQCI/dev compare: <new-branch>
+``
+
 
 Please check [Adding/Editing the website](#Adding-to-or-Editing-the-website) below for details on **where** to add new files such that they do not break the site. 
 
@@ -81,3 +85,13 @@ For further information:
 
 Template files can be found under `templates/`. 
 
+
+## Admin information
+
+When the dev repository is ahead of the main website repository (FiQCI/fiqci.github.io) a notification will appear at the top of FiQCI/dev saying "This branch is X commits ahead of FiQCI:master". To push changes made to the dev repository to the main website i.e https://fiqci.fi/dev --> https://fiqci.fi/ click "Contribute" --> Open pull request and ensure that
+
+``
+base repository: FiQCI/fiqci.github.io base:master <-- head repository: FiQCI/dev compare: master
+``
+
+Create the pull request with relevant title and message. If it states **Unable to merge** then there are conflicts. Unfortunately conflicts usually have to be resolved in the terminal. You can view [Resolving a merge conflict on GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github) for more details. 
