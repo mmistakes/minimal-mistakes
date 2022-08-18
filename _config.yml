@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "L-Star"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "소프트웨어 공급"
   location         : "busan in korea"
   email            :
   links:
