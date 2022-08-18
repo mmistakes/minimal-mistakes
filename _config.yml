@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "plum" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 title                    : "L-STAR Corperation"
 title_separator          : "-"
 subtitle                 : "나만의 공간"
