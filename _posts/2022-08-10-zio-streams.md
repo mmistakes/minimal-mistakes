@@ -1,6 +1,6 @@
 ---
-title: "ZIO Streams: An Introduction"
-date: 2022-06-28
+title: "ZIO Streams: A Long-Form Introduction"
+date: 2022-08-10
 header:
   image: "/images/blog cover.jpg"
 tags: [zio, zio-streams]
