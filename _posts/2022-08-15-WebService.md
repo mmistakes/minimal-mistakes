@@ -1,5 +1,4 @@
 ---
-
 title: "웹이란?"
 categories: Web
 tag: [Web]
@@ -10,13 +9,6 @@ sidebar:
 #search: false
 
 ---
-
-
-
-# 웹 서비스 이야기
-
-
-
 
 # 초기의 웹
 
