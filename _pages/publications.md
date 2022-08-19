@@ -9,7 +9,7 @@ author_profile: true
 
 * **Incremental Prompting: Episodic Memory Prompt for Lifelong Event Detection**<br>
   **Minqian Liu**, Shiyu Chang, Lifu Huang<br>
-  In *arXiv preprint*, 2022. \[[pdf](https://arxiv.org/pdf/2204.07275.pdf)]
+  In ***COLING***, 2022. (Short paper) \[[pdf](https://arxiv.org/pdf/2204.07275.pdf)]
 
 * **Co-attention Network with Label Embedding for Text Classification**<br>
   **Minqian Liu\***, Lizhao Liu\*, Junyi Cao, Qing Du<br>
