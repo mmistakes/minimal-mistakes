@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   : "ko-KR"
 title                    : "L-STAR Corperation"
 title_separator          : "|"
-subtitle                 : "나만의 공간"
+subtitle                 : "나만의  공간"
 name                     : "L-STAR"
 description              : "주식회사 엘스타"
 url                      : "https://femold.github.io"
