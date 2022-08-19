@@ -23,7 +23,7 @@ My primary research interests lie in the field of **natural language processing*
 
 
 ## News
-**\[2022.08]** Our work on [lifelong event detection](https://arxiv.org/abs/2204.07275) is accepted by COLING2022!<br>
+**\[2022.08]** Our work on [lifelong event detection](https://arxiv.org/abs/2204.07275) is accepted by COLING 2022!<br>
 **\[2022.03]** Our Simbot team is featured on [VT News](https://vtx.vt.edu/articles/2022/03/virginia-tech-team-selected-as-finalist-in-alexa-prize.html)!<br> 
 **\[2021.11]** Our team has been selected as one of 10 teams to participate in the [**Alexa Prize SimBot Challenge**](https://developer.amazon.com/alexaprize/challenges/current-challenge/simbot)! <br>
 **\[2020.07]** One paper accepted by ACM Multimedia 2020.
