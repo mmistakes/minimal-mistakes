@@ -5,5 +5,4 @@ excerpt: "문의"
 toc: true
 ---
 
-E-mail: ggj06281@kookmin.ac.kr (윤상건)
-
+E-mail: pjh9996@kookmin.ac.kr (박정현)
