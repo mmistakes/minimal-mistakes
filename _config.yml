@@ -253,8 +253,7 @@ jekyll-archives:
   permalinks:
     category: /categories/:name/
     tag: /tags/:name/
-
-
+    
 # HTML Compression
 # - https://jch.penibelst.de/
 compress_html:
