@@ -374,6 +374,8 @@ def display_decision_surface(clf, x, y):
     plt.show()
 ```
 
+![제목 없음3](../../images/2022-07-01-37_Decision_Tree_의사결정트리/제목 없음3.png){: width="100%" height="100%"}
+
 ![제목 없음2](../../images/2022-07-01-37_Decision_Tree_의사결정트리/제목 없음2.png){: width="100%" height="100%"}
 
 ![제목 없음](../../images/2022-07-01-37_Decision_Tree_의사결정트리/제목 없음.png){: width="100%" height="100%"}
