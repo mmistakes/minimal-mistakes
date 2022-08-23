@@ -183,7 +183,7 @@ virginica_df = df[df.target == 'virginica']
 
 꽃 받침 길이
 
-[]: https://wikidocs.net/159927	"kde"
+[https://wikidocs.net/159927]: 
 
 
 ```python
