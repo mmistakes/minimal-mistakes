@@ -14,7 +14,8 @@
   margin-bottom: 1em;
 
   @include breakpoint($large) {
-    @include span(2 of 12);
+    float: left;
+    width: span(2 of 12);
     opacity: 0.75;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -171,6 +172,10 @@
   z-index: -1;
   box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
   cursor: default;
+
+  &.is--visible {
+    display: block;
+  }
 
   @include breakpoint($large) {
     display: block;
