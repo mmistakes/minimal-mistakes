@@ -106,13 +106,13 @@ analytics:
 author:
   name             : "이진우"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "이진우의 샘플 블로그입니다."
+  bio              : "이진우의 IT 블로그입니다."
   location         : "South korea"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:ninjakyle@naver.com"
+      url: "mailto:ninjakyle@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
