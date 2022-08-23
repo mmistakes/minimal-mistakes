@@ -234,7 +234,7 @@ compress_html:
   comments: []
   endings: all
   ignore:
-    envs: [local]
+    envs: [local, development]
   blanklines: false
   profile: false
   startings: all
