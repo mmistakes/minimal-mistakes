@@ -87,16 +87,17 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 ## Schulsozialarbeit
 {: #schulsozialarbeit}
 
-### Alina Friese
+### Peter Krauthäuser
 
-{% include author-profile.html author='Alina Friese' %}{: .align-right}
+{% include author-profile.html author='Peter Krauthäuser' %}{: .align-right}
 
-* E-Mail: {% include email email='afriese@g-casablanca.de' %}
+* E-Mail: {% include email email='pkrauthaeuser@g-casablanca.de' %}
 * Telefon: (030) 3670952 - 26
 * Mobil: 0176 55859098
 * Web: [<i class="fa fa-external-link">&nbsp;</i>Casablanca in Spandau](https://www.g-casablanca.de/taetigkeitsfelder/jugendhilfe-und-schule/sozial-und-elternberatung-an-schulen)
 * Sprechzeiten: Mo-Fr 7:30 - 16:00 Uhr
 
+{% comment %}
 ### Franziska Hanisch
 
 {% include author-profile.html author='Franziska Hanisch' %}{: .align-right}
@@ -106,6 +107,8 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 * Büro: (030) 308322711 (Team ambulante Hilfen)
 * Mobil: 0176 34523357
 * Web: [<i class="fa fa-external-link">&nbsp;</i>Casablanca in Spandau](https://www.g-casablanca.de/taetigkeitsfelder/jugendhilfe-und-schule/sozial-und-elternberatung-an-schulen)
+
+{% endcomment %}
 
 [<i class="fa fa-download">&nbsp;&nbsp;</i>Flyer zur Schulsozialarbeit von Casablanca](/assets/files/Sozialberatung_Casablanca_Flyer.pdf){: .btn .btn--success}
 

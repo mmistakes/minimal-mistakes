@@ -175,17 +175,15 @@ nachsehen.<br/><br/>
 
 ## Schulsozialarbeit Casablanca
 
-{% include author-profile.html author='Franziska Hanisch' %}{: .align-left}
-{% include author-profile.html author='Alina Friese' %}{: .align-left}
-<div style="clear:both;"></div>
+{% include author-profile.html author='Peter Krauthäuser' %}{: .align-right}
 
-An unserer Schule wird eine Schulsozialarbeit von Frau Hanisch und Frau Friese angeboten. Dieses
+An unserer Schule wird eine Schulsozialarbeit von Herr Krauthäuser angeboten. Dieses
 Angebot kann von allen im Schulwesen beteiligten Personen wahrgenommen werden,
-d.h. Frau Hanisch und Frau Friese sind als unabhängige, externe Person für alle Schüler\*innen,
+d.h. Herr Krauthäuser ist als unabhängige, externe Person für alle Schüler\*innen,
 Eltern, Lehrer\*innen und Erzieher\*innen da, um zu vermitteln, zu schlichten
 und zu helfen.
 
-Sie bieten an:
+Er bietet an:
 * Beratung zu schulischen Themen und Erziehungsfragen
 * Projekte und Freizeitangebote
 * Konfliktschlichtung
