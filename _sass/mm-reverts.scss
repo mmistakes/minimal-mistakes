@@ -1,0 +1,9 @@
+
+// Reverts CSS Änderungen in 4.5.1
+// https://github.com/mmistakes/minimal-mistakes/pull/1166/files
+// Wir benutzen keine rechte Sidebar (z.B. TOC), darum wollen wir etwas breiteren Inhalt in der Mitte
+
+.page, .archive
+{
+    padding-right: 0px;
+}
