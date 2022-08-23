@@ -183,10 +183,11 @@ virginica_df = df[df.target == 'virginica']
 
 꽃 받침 길이
 
-[https://wikidocs.net/159927]: 
+![제목 없음3](../../images/2022-07-01-40_Gaussian_Naive_Bayes_가우시안나이브베이즈/제목 없음3.png){: width="100%" height="100%"}
 
 
 ```python
+#https://wikidocs.net/159927
 ax = setosa_df['sepal length (cm)'].plot(kind='hist')
 setosa_df['sepal length (cm)'].plot(kind='kde', ax=ax, secondary_y=True, title='setosa sepal length (cm) distrubution', 
                                     figsize=[8, 4])
