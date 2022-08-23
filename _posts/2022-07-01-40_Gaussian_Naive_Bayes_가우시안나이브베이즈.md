@@ -183,6 +183,8 @@ virginica_df = df[df.target == 'virginica']
 
 꽃 받침 길이
 
+[]: https://wikidocs.net/159927	"kde"
+
 
 ```python
 ax = setosa_df['sepal length (cm)'].plot(kind='hist')
