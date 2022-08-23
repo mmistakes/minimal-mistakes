@@ -18,14 +18,15 @@ layout: compress
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
 
     {% include browser-upgrade.html %}
-    <!-- {% include corona-virus.html %} -->
+{% comment %}
+{% include corona-virus.html %}
+{% endcomment %}
     {% include masthead.html %}
 
-    <!-- <div class="notice--info align-center">
-    <h1>[Update 09.03.2021 11:30 Uhr] Morgen, 10.03.2021, ist wieder "normaler" Schulbetrieb,</h1>
-    <h3>d.h. auch die Klassen A1, A2, A4, A5, A6, 4a, 5a und 5b haben zu den zugeteilten Zeiten wieder ihren
-    Unterricht! Wir freuen uns, bis morgen!</h3>
-    </div> -->
+    <div class="notice--info align-center">
+    <h1>Einladung zum Schuljubiläum 50 Jahre Brandwerder!</h1>
+    <h3>Samstag, 24.09.2022, 11 - 14 Uhr. Bitte alte Schulfotos an {% include email email="jubilaeum@brandwerder.de" %} senden.</h3>
+    </div>
 
     {{ content }}
 
