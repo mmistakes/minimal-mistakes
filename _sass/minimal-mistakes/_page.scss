@@ -91,8 +91,7 @@
     }
   }
 
-  a {
-    text-decoration: none;
+  a:not(.btn) {
 
     &:hover {
       text-decoration: underline;
@@ -250,7 +249,7 @@
 
 .page__meta {
   margin-top: 2em;
-  color: mix(#fff, $gray, 25%);
+  color: $muted-text-color;
   font-family: $sans-serif;
   font-size: $type-size-6;
 
@@ -290,7 +289,7 @@
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
-  border: 1px solid $light-gray;
+  border: 1px solid mix(#000, $border-color, 25%);
   border-radius: $border-radius;
 
   &:hover {
@@ -322,8 +321,6 @@
 }
 
 .page__comments-form {
-  padding: 1em;
-  background: $lighter-gray;
   -webkit-transition: $global-transition;
   transition: $global-transition;
 
