@@ -1,3 +1,13 @@
+---
+layout: single
+title:  "네이버 검색 top 500개 가져오기 예제 "
+categories: coding
+tag: [python, blog]
+---
+
+
+
+
 ```python
 from selenium import webdriver
 from selenium.webdriver.common.by import By
