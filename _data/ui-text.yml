@@ -186,7 +186,6 @@ tr-TR:
   <<: *DEFAULT_TR
 
 # Portuguese
-# -----------------
 pt: &DEFAULT_PT
   page                       : "Página"
   pagination_previous        : "Anterior"
@@ -225,6 +224,9 @@ pt: &DEFAULT_PT
   comment_success_msg        : "Obrigado pelo seu comentário! Será visível no site logo que aprovado."
   comment_error_msg          : "Lamento, ocorreu um erro na sua submissão. Por favor verifique se todos os campos obrigatórios estão corretamente preenchidos e tente novamente."
   loading_label              : "A carregar..."
+pt-PT:
+  <<: *DEFAULT_PT
+
 # Brazilian Portuguese
 pt-BR:
   page                       : "Página"
@@ -235,8 +237,8 @@ pt-BR:
   menu_label                 :
   toc_label                  : "Nesta página"
   ext_link_label             : "Link direto"
-  less_than                  : "meno que"
-  minute_read                : "minutos de leitura"
+  less_than                  : "menos que"
+  minute_read                : "minuto(s) de leitura"
   share_on_label             : "Compartilhe em"
   meta_label                 :
   tags_label                 : "Tags:"
@@ -244,28 +246,26 @@ pt-BR:
   date_label                 : "Atualizado em:"
   comments_label             : "Deixe um comentário"
   comments_title             :
-  more_label                 : "Aprenda Mais"
-  related_label              : "Você Talvez Goste Também"
+  more_label                 : "Aprenda mais"
+  related_label              : "Talvez você goste também"
   follow_label               : "Acompanhe em"
   feed_label                 : "Feed"
   powered_by                 : "Feito com"
   website_label              : "Site"
   email_label                : "Email"
   recent_posts               : "Postagens recentes"
-  undefined_wpm              : "Parâmetro indefinido em word_per_minute no _config.yml"
-  comment_form_info          :
-  comment_form_comment_label :
-  comment_form_md_info       :
-  comment_form_name_label    :
-  comment_form_email_label   :
-  comment_form_website_label :
-  comment_btn_submit         :
-  comment_btn_submitted      :
-  comment_success_msg        :
-  comment_error_msg          :
-  loading_label              :
-pt-PT:
-  <<: *DEFAULT_PT
+  undefined_wpm              : "Parâmetro indefinido em words_per_minute no _config.yml"
+  comment_form_info          : "Seu email não será publicado. Os campos obrigatórios estão marcados"
+  comment_form_comment_label : "Comentário"
+  comment_form_md_info       : "Markdown é suportado."
+  comment_form_name_label    : "Nome"
+  comment_form_email_label   : "Email"
+  comment_form_website_label : "Site (opcional)"
+  comment_btn_submit         : "Enviar Comentário"
+  comment_btn_submitted      : "Enviado"
+  comment_success_msg        : "Obrigado pelo seu comentário! Ele aparecerá no site assim que for aprovado."
+  comment_error_msg          : "Desculpe, ocorreu um erro no envio. Por favor verifique se todos os campos obrigatórios foram preenchidos e tente novamente."
+  loading_label              : "Carregando..."
 
 # Italian
 # -----------------
@@ -882,6 +882,49 @@ da: &DEFAULT_DA
   loading_label              : "Indlæser..."
 da-DK:
   <<: *DEFAULT_DA
+
+# Polish
+# ------
+pl: &DEFAULT_PL
+  page                       : "Strona"
+  pagination_previous        : "Poprzednia"
+  pagination_next            : "Następna"
+  breadcrumb_home_label      : "Strona główna"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Przełącz menu"
+  toc_label                  : "Spis treści"
+  ext_link_label             : "Link bezpośredni"
+  less_than                  : "mniej niż"
+  minute_read                : "minut(y)"
+  share_on_label             : "Udostępnij"
+  meta_label                 :
+  tags_label                 : "Tagi:"
+  categories_label           : "Kategorie:"
+  date_label                 : "Ostatnia aktualizacja:"
+  comments_label             : "Zostaw komentarz"
+  comments_title             : "Komentarze"
+  more_label                 : "Dowiedz się więcej"
+  related_label              : "Także może Ci się spodobać"
+  follow_label               : "Śledź:"
+  feed_label                 : "Feed"
+  powered_by                 : "Powstało dzięki"
+  website_label              : "Strona"
+  email_label                : "Email"
+  recent_posts               : "Najnowsze wpisy"
+  undefined_wpm              : "Parametr words_per_minute nie został zdefiniowany w _config.yml."
+  comment_form_info          : "Twój adres email nie będzie udostępiony. Wymagane pola są oznaczone."
+  comment_form_comment_label : "Skomentuj"
+  comment_form_md_info       : "Markdown jest wspierany"
+  comment_form_name_label    : "Imię"
+  comment_form_email_label   : "Adres email"
+  comment_form_website_label : "Strona www (opcjonalna)"
+  comment_btn_submit         : "Skomentuj"
+  comment_btn_submitted      : "Komentarz dodany"
+  comment_success_msg        : "Dziękuję za Twój komentarz! Zostanie dodany po akceptacji."
+  comment_error_msg          : "Niestety wystąpił błąd. Proszę upewnij się, że wszystkie wymagane pola zostały wypełnione i spróbuj ponownie."
+  loading_label              : "Trwa ładowanie strony..."
+da-PL:
+  <<: *DEFAULT_PL
 
 # Another locale
 # --------------
