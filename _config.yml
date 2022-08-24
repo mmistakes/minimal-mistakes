@@ -12,17 +12,12 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-<<<<<<< Updated upstream
-minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-=======
-minimal_mistakes_skin    : "plum" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
->>>>>>> Stashed changes
-
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # Site Settings
 locale                   : "ko-KR"
 title                    : "L-STAR"
 title_separator          : "|"
-subtitle                 : "나만의  공간"
+subtitle                 : "new space"
 name                     : "L-STAR"
 description              : "엘스타"
 url                      : "https://femold.github.io"
