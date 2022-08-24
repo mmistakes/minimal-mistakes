@@ -7,3 +7,12 @@
 {
     padding-right: 0px;
 }
+
+// Reverts CSS Änderungen in 4.6.0
+// https://github.com/mmistakes/minimal-mistakes/pull/1166/files
+// https://github.com/mmistakes/minimal-mistakes/commit/553b6550f3d3ac6c434c63d4eab17a13fa3b3b40
+// Button sollten Weiß bleiben, auch in notices
+
+.btn {
+    color: #fff !important;
+}
