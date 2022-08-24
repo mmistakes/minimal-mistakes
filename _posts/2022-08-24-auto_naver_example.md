@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "구글 연관검색어 가져와서 네이버 쇼핑검색어 조회율 조회"
+title:  "구글 연관검색어 네이버 검색 조회율 조회"
 categories: coding
 tag: [python, blog]
 ---
