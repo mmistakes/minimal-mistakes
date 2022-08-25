@@ -3,3 +3,4 @@
 *[JabL]:    Jahrgangsbezogenes Lernen (klassisches Unterrichtskonzept)
 *[SAPH]:    Schulanfangsphase
 *[eFöB]:    ergänzende Förderung und Betreuung
+*[OGB]:     offene Ganztagsbetreuung

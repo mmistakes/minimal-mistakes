@@ -10,15 +10,10 @@ header:
   overlay_image: /assets/images/feature-hort.jpg
 ---
 
-{{comment}}<!-- Abkürzungen von Begriffen -->{{endcomment}}
-*[JÜL]:     Jahrgangsübergreifendes Lernen oder auch 1-2-3 Klasse genannt.
-*[JabL]:    Jahrgangsbezogenes Lernen (klassisches Unterrichtskonzept)
-*[SAPH]:    Schulanfangsphase
-*[VHG]:     verlässliche Halbtagsgrundschule
-
+{% include abkuerzungen.md %}
 
 Unsere Schule ist eine verlässliche Halbtagsgrundschule (VHG) mit offenem
-Ganztagsbetrieb.
+Ganztagsbetrieb (OGB).
 
 Das Team besteht derzeit aus neun Erzieherinnen und einem Erzieher, welche Ihr
 Kind am Nachmittag in einem festen Gruppenverband betreuen.
