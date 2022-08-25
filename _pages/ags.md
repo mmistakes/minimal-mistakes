@@ -138,7 +138,7 @@ können. Vor allem die Kursgebühren können sich ändern.
 
 {%- capture teacher_text -%}
 {%- if teacher and teacher.uri -%}
-{%- include external_link url=teacher.uri text=ag.teacher -%}
+{%- include website_link url=teacher.uri text=ag.teacher -%}
 {%- else -%}
 {{ag.teacher}}
 {%- endif -%}

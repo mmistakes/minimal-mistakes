@@ -1,0 +1,1 @@
+[{%- include icon_text icon='fa-globe' text=include.text -%}]({{include.url}})

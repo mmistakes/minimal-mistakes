@@ -94,7 +94,7 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 * E-Mail: {% include email email='pkrauthaeuser@g-casablanca.de' %}
 * Telefon: (030) 3670952 - 26
 * Mobil: 0176 55859098
-* Web: [<i class="fa fa-external-link">&nbsp;</i>Casablanca in Spandau](https://www.g-casablanca.de/taetigkeitsfelder/jugendhilfe-und-schule/sozial-und-elternberatung-an-schulen)
+* Web: {% include website_link url="https://www.g-casablanca.de/taetigkeitsfelder/jugendhilfe-und-schule/sozial-und-elternberatung-an-schulen" text="Casablanca in Spandau" %}
 * Sprechzeiten: Mo-Fr 7:30 - 16:00 Uhr
 
 {% comment %}
