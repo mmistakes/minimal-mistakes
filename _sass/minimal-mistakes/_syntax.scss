@@ -9,20 +9,20 @@ figure.highlight {
   font-family: $monospace;
   font-size: $type-size-6;
   line-height: 1.8;
-  border: 1px solid $border-color;
   border-radius: $border-radius;
   background-color: $code-background-color;
-  box-shadow: $box-shadow;
 
+  /* code block icon */
   &:before {
     position: absolute;
     top: 0;
     right: 0;
     padding: 0.5em;
-    background-color: $border-color;
     content: "\f121";
     font-family: "fontawesome" !important;
     line-height: 1;
+    background-color: $border-color;
+    border-top-right-radius: $border-radius;
     text-transform: none;
     speak: none;
   }
@@ -44,11 +44,13 @@ figure.highlight {
 
   td {
     padding: 5px;
+    width: calc(100% - 1em);
     border: 0;
 
     /* line numbers*/
     &.gutter {
       padding-right: 1em;
+      width: 1em;
       color: rgba($muted-text-color, 0.5);
     }
   }
