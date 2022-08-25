@@ -112,13 +112,10 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url:  mailto:ninjakyle@naver.com
+      url:  "mailto:ninjakyle@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/SIMOND7"
@@ -131,19 +128,10 @@ footer:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url:  mailto:ninjakyle@naver.com
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url:  "mailto:ninjakyle@naver.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/SIMOND7"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
