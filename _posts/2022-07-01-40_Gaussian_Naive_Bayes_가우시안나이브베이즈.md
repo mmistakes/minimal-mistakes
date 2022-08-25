@@ -8,7 +8,7 @@ search: true #false로 주면 검색해도 안나온다.
 
 ![제목 없음2](../../images/2022-07-01-40_Gaussian_Naive_Bayes_가우시안나이브베이즈/제목 없음2.png){: width="100%" height="100%"}
 
-![제목 없음](../../images/2022-07-01-40_Gaussian_Naive_Bayes_가우시안나이브베이즈/제목 없음-16612525675253.png){: width="100%" height="100%"}
+![제목 없음](../../images/2022-07-01-40_Gaussian_Naive_Bayes_가우시안나이브베이즈/제목 없음-16614290322141.png){: width="100%" height="100%"}
 
 
 ```python
@@ -274,7 +274,7 @@ model.fit(x_train, y_train)
 
 테스트
 
-![제목 없음4](../../images/2022-07-01-40_Gaussian_Naive_Bayes_가우시안나이브베이즈/제목 없음4.png){: width="100%" height="100%"}
+![제목 없음4](../../images/2022-07-01-40_Gaussian_Naive_Bayes_가우시안나이브베이즈/제목 없음4-16614290946673.png){: width="100%" height="100%"}
 
 
 ```python
