@@ -37,6 +37,7 @@
 .archive__item-title {
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
+  line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
 
@@ -47,7 +48,6 @@
 
 /* remove border*/
 .page__content {
-
   .archive__item-title {
     margin-top: 1em;
     border-bottom: none;
@@ -72,7 +72,6 @@
 }
 
 .archive__item:hover {
-
   .archive__item-teaser {
     box-shadow: 0 0 10px rgba(#000, 0.25);
   }
@@ -82,25 +81,21 @@
   }
 }
 
-
 /*
    List view
    ========================================================================== */
 
 .list__item {
-
   .page__meta {
     margin: 0 0 4px;
   }
 }
-
 
 /*
    Grid view
    ========================================================================== */
 
 .archive {
-
   .grid__wrapper {
     /* extend grid elements to the right */
 
@@ -121,12 +116,12 @@
     float: left;
     width: span(5 of 10);
 
-    &:nth-child(2n+1) {
+    &:nth-child(2n + 1) {
       clear: both;
       margin-left: 0;
     }
 
-    &:nth-child(2n+2) {
+    &:nth-child(2n + 2) {
       clear: none;
       margin-left: gutter(of 10);
     }
@@ -137,25 +132,25 @@
     margin-right: 0; /* override margin*/
     width: span(3 of 12);
 
-    &:nth-child(2n+1) {
+    &:nth-child(2n + 1) {
       clear: none;
     }
 
-    &:nth-child(4n+1) {
+    &:nth-child(4n + 1) {
       clear: both;
     }
 
-    &:nth-child(4n+2) {
+    &:nth-child(4n + 2) {
       clear: none;
       margin-left: gutter(1 of 12);
     }
 
-    &:nth-child(4n+3) {
+    &:nth-child(4n + 3) {
       clear: none;
       margin-left: gutter(1 of 12);
     }
 
-    &:nth-child(4n+4) {
+    &:nth-child(4n + 4) {
       clear: none;
       margin-left: gutter(1 of 12);
     }
@@ -180,7 +175,6 @@
   }
 
   .archive__item-teaser {
-
     @include breakpoint($small) {
       max-height: 200px;
     }
@@ -190,7 +184,6 @@
     }
   }
 }
-
 
 /*
    Features
@@ -211,17 +204,17 @@
     margin-bottom: 0;
     width: span(4 of 12);
 
-    &:nth-child(3n+1) {
+    &:nth-child(3n + 1) {
       clear: both;
       margin-left: 0;
     }
 
-    &:nth-child(3n+2) {
+    &:nth-child(3n + 2) {
       clear: none;
       margin-left: gutter(of 12);
     }
 
-    &:nth-child(3n+3) {
+    &:nth-child(3n + 3) {
       clear: none;
       margin-left: gutter(of 12);
     }
@@ -245,7 +238,6 @@
     }
 
     @include breakpoint($small) {
-
       .archive__item-teaser {
         float: left;
         width: span(5 of 12);

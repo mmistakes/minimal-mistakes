@@ -21,7 +21,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 Minimal Mistakes incorporates icons from [The Noun Project](https://thenounproject.com/)
-creators Garrett Knoll, Arthur Shlain, and tracy tam.
+creators Garrett Knoll, Arthur Shlain, and Tracy Tam.
 Icons are distributed under Creative Commons Attribution 3.0 United States (CC BY 3.0 US).
 
 Minimal Mistakes incorporates [Font Awesome](http://fontawesome.io/),

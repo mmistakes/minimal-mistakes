@@ -51,13 +51,13 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
+search                   : # true, false (default)
 
 # SEO Related
 google_site_verification : 'iqAzDAxxAG_773n_6FB2Hl8d2y3lwreAFIJCG1weXok'
 bing_site_verification   :
-alexa_site_verification  :
 yandex_site_verification :
-naver-site-verification  :
+naver_site_verification  :
 
 # Social Sharing
 twitter:

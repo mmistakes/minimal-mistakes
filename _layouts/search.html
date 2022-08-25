@@ -23,7 +23,7 @@ layout: default
     {{ content }}
 
     <form>
-      <input placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: "Enter your search term..." }}" type="search" id="search" class="search-input">
+      <input type="input" id="search" class="search-input" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
     </form>
 
     <div id="results"></div>
