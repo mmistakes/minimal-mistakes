@@ -274,6 +274,8 @@ model.fit(x_train, y_train)
 
 테스트
 
+![제목 없음4](../../images/2022-07-01-40_Gaussian_Naive_Bayes_가우시안나이브베이즈/제목 없음4.png){: width="100%" height="100%"}
+
 
 ```python
 predict = model.predict(x_test) # 학습 결과에 따른 테스트 데이터의 예측값을 계산한다.
