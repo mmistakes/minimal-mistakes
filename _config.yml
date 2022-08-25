@@ -108,11 +108,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "이진우의 IT 블로그입니다."
   location         : "South korea"
-  email            :
+  email            : #이메일 주소
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:ninjakyle@naver.com"
+      url:  mailto:ninjakyle@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -131,7 +131,7 @@ footer:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "ninjakyle@naver.com"
+      url:  mailto:ninjakyle@email.com
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
