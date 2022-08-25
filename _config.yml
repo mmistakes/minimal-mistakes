@@ -89,6 +89,7 @@ author:
   location         : "Somewhere"
   email            :
   uri              :
+  home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
