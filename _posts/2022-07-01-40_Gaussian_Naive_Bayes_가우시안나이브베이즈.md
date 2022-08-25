@@ -183,7 +183,7 @@ virginica_df = df[df.target == 'virginica']
 
 꽃 받침 길이
 
-![제목 없음3](../../images/2022-07-01-40_Gaussian_Naive_Bayes_가우시안나이브베이즈/제목 없음3.png){: width="100%" height="100%"}
+![제목 없음3](../../images/2022-07-01-40_Gaussian_Naive_Bayes_가우시안나이브베이즈/제목 없음3-16614003228584.png){: width="100%" height="100%"}
 
 ![제목 없음33](../../images/2022-07-01-40_Gaussian_Naive_Bayes_가우시안나이브베이즈/제목 없음33-16613992987442.png){: width="100%" height="100%"}
 
