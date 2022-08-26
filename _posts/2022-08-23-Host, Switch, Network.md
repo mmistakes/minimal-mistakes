@@ -1,5 +1,5 @@
 ---
-title: "[네트워크]Host, Switch, Network"
+title: "[네트워크 기초]Host, Switch, Network"
 categories: Network
 tag: [Network]
 toc: true
