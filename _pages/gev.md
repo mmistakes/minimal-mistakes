@@ -17,26 +17,26 @@ ist diese Seite trotzdem öffentlich zugänglich, aber mag nicht den allgemeinen
 Qualitätsanspruch der restlichen Seiten entsprechen. Vielen Dank!
 {: .notice--warning}
 
-# <i class='fa fa-calendar'>&nbsp;</i>AG Aktionen und Veranstaltungen
+# {% include icon_text text="AG Aktionen und Veranstaltungen" icon="fa-calendar" %}
 
 Aufgaben u.a.: Elternaktionstage; Einschulung, etc.
 
-# <i class='fa fa-comments-o'>&nbsp;</i>AG Kommunikation:
+# {% include icon_text text="AG Kommunikation:" icon="fa-comments-o" %}
 
 Aufgaben u.a.: Mailverteiler; Elternbrief; Stammtisch; Website; FAQ; Willkommensmappe
 
 ## Mailinglisten
 
 * Allgemeine Informationen zu Mailinglisten (für die Eltern) <br>
-  [<i class="fa fa-download">&nbsp;&nbsp;</i>Flyer über die Mailinglisten für die Eltern](/assets/files/gev_mailingliste_flyer.pdf){: .btn .btn--success}
+  {% include download_link text="Flyer über die Mailinglisten für die Eltern (pdf)" url="/assets/files/gev_mailingliste_flyer.pdf" button="success" %}
 * Wie man sich auf der Verwaltungsplatform der Mailinglisten registriert, sich anmeldet und die Klassenmailingliste findet <br>
-  [<i class="fa fa-download">&nbsp;&nbsp;</i>Anleitung zur Registrierung, Anmeldung und eigenen Liste](/assets/files/gev_mailingliste_1_anmelden.pdf){: .btn .btn--success}
+  {% include download_link text="Anleitung zur Registrierung, Anmeldung und eigenen Liste (pdf)" url="/assets/files/gev_mailingliste_1_anmelden.pdf" button="success" %}
 * Wie man Eltern in eine Mailingliste einträgt und wie man Sie wieder austrägt <br>
-  [<i class="fa fa-download">&nbsp;&nbsp;</i>Anleitung zum Verwalten der Eltern in einer Liste](/assets/files/gev_mailingliste_2_eltern_verwalten.pdf){: .btn .btn--success}
+  {% include download_link text="Anleitung zum Verwalten der Eltern in einer Liste (pdf)" url="/assets/files/gev_mailingliste_2_eltern_verwalten.pdf" button="success" %}
 * Wie man E-Mails, die zurückgehalten wurden, freigibt oder löscht
   <br>(Die Anleitung wird noch erarbeitet)
 
 <!--
-# <span><i class="fa fa-male"></i><i class="fa fa-female"></i>&nbsp;</span>SanitärAG
+# <span>{% include icon_text icon="fa-male" %}{% include icon_text icon="fa-female" %}&nbsp;</span>SanitärAG
 
 Aufgaben u.a.: Kommunikation mit Bezirksamt und den Medien aufrecht erhalten -->
