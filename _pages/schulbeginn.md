@@ -14,7 +14,7 @@ sidebar:
 
 {% include abkuerzungen.md %}
 
-# <i class="fa fa-calendar"></i> Termine rund um die Einschulung
+# {% include icon_text text="Termine rund um die Einschulung" icon="fa-calendar" %}
 {: #termine}
 
 <!-- {% include outdated.md %} -->
@@ -24,9 +24,9 @@ Die wichtigsten Daten zum Schuljahr **2022/23** in einem Überblick.
 | Termine |  Veranstaltung |
 |---|---|
 | | Ihr Kind wurde im Zeitraum vom 1. Oktober 2015 bis zum 30. September 2016 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
-| Montag, 27.09.2021 bis Freitag, 08.10.2021  | [<i class="fa fa-file-text-o">&nbsp;</i>**Anmeldung**](#anmeldung) der Schulanfänger*innen im Sekretariat. |
+| Montag, 27.09.2021 bis Freitag, 08.10.2021  | {% include icon_link text="<b>Anmeldung</b>" icon="fa-file-text-o" url="#anmeldung" %} der Schulanfänger*innen im Sekretariat. |
 |  | **Hospitation:** Sie können in der Schule hospitieren und sich mit den Abläufen vertraut machen. Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren Sie hierzu einen Termin im Sekretariat. |
-| Dienstag, 31.07.2022 | Melden Sie Ihr Kind rechtzeitig zur [<i class="fa fa-child">&nbsp;</i>**Hortbetreuung (eFöB)**](#hort) an, so dass Ihr Kind am 01.08.2022 von unserem Hort betreut werden kann.  |
+| Dienstag, 31.07.2022 | Melden Sie Ihr Kind rechtzeitig zur {% include icon_link text="<b>Hortbetreuung (eFöB)</b>" icon="fa-child" url="#hort" %} an, so dass Ihr Kind am 01.08.2022 von unserem Hort betreut werden kann.  |
 | Samstag, 27.08.2022 | Endlich! Wir feiern die Einschulung in der Sporthalle |
 | Montag, 29.08.2022 | Der **erste Schultag.** |
 
@@ -44,6 +44,7 @@ Die wichtigsten Daten zum Schuljahr **2022/23** in einem Überblick.
 {: .notice--warning}
 -->{{endcomment}}
 
+<p class="notice--info" markdown="1">
 **Hinweis:**
 Die folgenden Informationen sind für Schulanfänger*innen an unserer Schule
 abgestimmt. Für eine detailierte Darstellung - wie u.A. ein Kind zurückgestuft
@@ -51,13 +52,15 @@ werden kann - können Sie direkt auf der Seite der [Senatsverwaltung für Bildun
 Jugend und Familie
 ](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/)
 nachsehen.<br/><br/>
-<!-- [<i class="fa fa-download">&nbsp;&nbsp;</i>Info zur Anmeldung der Schulanfänger 2021/22](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/plakat_schulanmeldung_fuer_2021.pdf){: .btn .btn--success} -->
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Umfangreiche Informationen zum Schulbeginn 2022/23](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/2021_schulanmeldung.pdf){: .btn .btn--success}
-{: .notice--info}
+{% comment %}
+<!-- {% include download_link text="Info zur Anmeldung der Schulanfänger 2021/22" url="https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/plakat_schulanmeldung_fuer_2021.pdf" button="success" %} -->
+{% endcomment %}
+{% include download_link text="Umfangreiche Informationen zum Schulbeginn 2022/23" url="https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/2021_schulanmeldung.pdf" button="success" %}
+</p>
 
 ---
 
-# <i class="fa fa-picture-o"></i> Kurzporträt unserer Schule
+# {% include icon_text text="Kurzporträt unserer Schule" icon="fa-picture-o" %}
 {: #portrait}
 
 <!-- {% include outdated.md %} -->
@@ -95,9 +98,9 @@ und 54% Schüler haben, die von 13 Erziehern und 24 Lehrkräften betreut werden
 *Stephanie Lehmann, Schulleitung*
 {: .text-right }
 
-[<i class="fa fa-info">&nbsp;&nbsp;</i>Erfahren Sie mehr über JÜL-Klassen]({{'schule/#juel_konzept' | relative_url }}){: .btn .btn--primary}
+{% include info_link text="Erfahren Sie mehr über JÜL-Klassen" url="/schule/#juel_konzept" button="primary" %}
 
-# <i class="fa fa-file-text-o"></i> Anmeldung der Schulanfänger*innen
+# {% include icon_text text="Anmeldung der Schulanfänger*innen" icon="fa-file-text-o" %}
 {: #anmeldung}
 
 <!-- {% include outdated.md %} -->
@@ -110,7 +113,7 @@ Wir nehmen an einem Pilotprojekt teil um den Anmeldeprozess zu vereinfachen.
 Bitte gehen Sie zu der Online-Anmeldung, füllen das Formular aus und bringen
 es ausgedruckt zur Schulanmeldung mit.
 
-[<i class="fa fa-external-link">&nbsp;</i>Mein Kind Online anmelden!](https://bda.service.berlin.de/intelliform/forms/default/bda/index){: .btn .btn--success}
+{% include external_link text="Mein Kind Online anmelden!" url="https://bda.service.berlin.de/intelliform/forms/default/bda/index" button="success" %}
 
 Falls Sie an dem Pilotprojekt nicht teilnehmen können, dann müssen Sie zur Anmeldung folgende Dokumente mitbringen:
 
@@ -120,7 +123,7 @@ Falls Sie an dem Pilotprojekt nicht teilnehmen können, dann müssen Sie zur Anm
 Sie können entscheiden, ob Ihr Kind am Religionsunterricht (evangelisch/katholisch)
 teilnehmen soll oder nicht.
 
-# <i class="fa fa-stethoscope"></i> Einschulungsuntersuchung
+# {% include icon_text text="Einschulungsuntersuchung" icon="fa-stethoscope" %}
 {: #untersuchung}
 
 Ihr Kind wird durch den [Kinder- und
@@ -128,15 +131,16 @@ Jugendgesundheitsdiest](https://service.berlin.de/dienstleistung/324254/)
 schulärztlich untersucht. Sie bekommen nach der Anmeldung Ihres Kindes  **einen
 Termin zugesendet**.
 
-# <i class="fa fa-child"></i> Anmeldung zur ergänzenden Förderung und Betreuung (eFöB / Hort)
+# {% include icon_text text="Anmeldung zur ergänzenden Förderung und Betreuung (eFöB / Hort)" icon="fa-child" %}
 {: #hort}
 
 Bitte vergessen Sie nicht Ihr Kind bei Bedarf zur eFöB anzumelden.
 
-[<i class="fa fa-info">&nbsp;&nbsp;</i>Erfahren Sie mehr über unseren Hort]({{'hortbetreuung' | relative_url }}){: .btn .btn--primary}
+{% include info_link text="Erfahren Sie mehr über unseren Hort" url="/hortbetreuung" button="primary" %}
 
+<p class="notice--info">
 Die notwendigen Formulare zur Anmeldung einer ergänzenden Betreuung können Sie
 in unserem Sekretariat abholen oder direkt hier herunterladen und ausfüllen.<br/><br/>
-[<i class="fa fa-external-link">&nbsp;&nbsp;</i>Formularseite](https://www.berlin.de/sen/bjf/service/formulare/#hort){: .btn .btn--info}
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Formular für die Hortbetreuung von Schulanfänger*innen](https://www.berlin.de/sen/bjf/service/formulare/antrag_efob__ab_2019-20_20180914.pdf){: .btn .btn--success}
-{: .notice--info}
+{% include external_link text="Formularseite" url="https://www.berlin.de/sen/bjf/service/formulare/#hort" button="info" %}
+{% include download_link text="Formular für die Hortbetreuung von Schulanfänger*innen" url="https://www.berlin.de/sen/bjf/service/formulare/antrag_efob__ab_2019-20_20180914.pdf" button="success" %}
+</p>

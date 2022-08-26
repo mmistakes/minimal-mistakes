@@ -1,0 +1,12 @@
+{% if include.url contains "://" %}
+  {% capture link_url %}{{ include.url }}{% endcapture %}
+{% else %}
+  {% capture link_url %}{{ include.url | relative_url }}{% endcapture %}
+{% endif %}
+
+{%- if include.button -%}
+{% capture btn_class %} class='btn btn--{{include.button}}'{% endcapture %}
+{% else %}
+{% assign btn_class = null %}
+{%- endif -%}
+<a href='{{link_url}}'{{btn_class}}>{%- include icon_text icon=include.icon text=include.text -%}</a>
