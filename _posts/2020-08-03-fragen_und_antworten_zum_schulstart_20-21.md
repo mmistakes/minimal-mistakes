@@ -66,4 +66,4 @@ Viele Grüße
 
 Stephanie Lehmann
 
-[<i class="fa fa-download">&nbsp;</i>Download diesen Brief: Fragen und Antworten zum Schulstart 20-21 (pdf) ](/assets/files/corona/Fragen_und_Antworten_zum_Schulstart_20-21.pdf){: .btn .btn--success}
+{% include download_link text="Download diesen Brief: Fragen und Antworten zum Schulstart 20-21 (pdf)" url="/assets/files/corona/Fragen_und_Antworten_zum_Schulstart_20-21.pdf" button="success" %}

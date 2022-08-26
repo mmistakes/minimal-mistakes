@@ -5,7 +5,7 @@ date: 2020-06-22 08:00:00
 category: coronavirus
 ---
 
-[<i class="fa fa-download">&nbsp;</i>Download diesen Brief (docx) ](/assets/files/corona/Brief-Abschluss-Schuljahr-2019-20.docx){: .btn .btn--success}
+{% include download_link text="Download diesen Brief (docx)" url="/assets/files/corona/Brief-Abschluss-Schuljahr-2019-20.docx" button="success" %}
 {: .align-right}
 
 Liebe Eltern,

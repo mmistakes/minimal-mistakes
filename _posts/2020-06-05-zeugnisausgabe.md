@@ -14,4 +14,4 @@ Dies geschieht am Dienstag, 22.06. und Mittwoch, 23.06.2020 am Ende des Unterric
 
 ### Am 24.06.2020 kommen nur noch die Sterne der JüL-Klassen A1 – A6 sowie die Klassen 6a und 6b in die Schule!
 
-[<i class="fa fa-download">&nbsp;</i>Detaillierter Zeugnisausgabe-Zeitplan 2020 (pdf) ](/assets/files/corona/Zeugnisausgabe-am-22._-23.-und-24.06.2020.pdf){: .btn .btn--success}
+{% include download_link text="Detaillierter Zeugnisausgabe-Zeitplan 2020 (pdf)" url="/assets/files/corona/Zeugnisausgabe-am-22._-23.-und-24.06.2020.pdf" button="success" %}

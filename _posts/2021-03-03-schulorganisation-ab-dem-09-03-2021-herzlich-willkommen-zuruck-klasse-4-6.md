@@ -56,4 +56,4 @@ Viele Grüße
 
 Stephanie Lehmann
 
-[<i class="fa fa-download">&nbsp;</i>Download: Schaubild Unterricht im Alternativszenario (pdf) ](/assets/files/corona/aktuell-03-2021-schaubild-unterricht-im-alternativszenario.pdf){: .btn .btn--success}
+{% include download_link text="Download: Schaubild Unterricht im Alternativszenario (pdf)" url="/assets/files/corona/aktuell-03-2021-schaubild-unterricht-im-alternativszenario.pdf" button="success" %}

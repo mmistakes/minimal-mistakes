@@ -25,7 +25,7 @@ Bau und Heimat. **Die jeweils aktuelle Einstufung wird durch das Robert‐Koch�
 Folgender Link steht zur Verfügung:**
 
 * [<i class="fa fa-external-link">&nbsp;</i>Robert‐Koch‐Institut: BMG: Regelungen für Einreisende nach Deutschland im Zusammenhang mit COVID-19](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Transport/BMG_Merkblatt_Reisende_Tab.html)
-* [<i class="fa fa-download">&nbsp;</i>Download Merkblatt vom Robert‐Koch‐Institut (pdf) ](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Transport/Merkblatt_BMG_15_06_2020.pdf?__blob=publicationFile){: .btn .btn--success}
+* {% include download_link text="Download Merkblatt vom Robert‐Koch‐Institut (pdf)" url="https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Transport/Merkblatt_BMG_15_06_2020.pdf?__blob=publicationFile" button="success" %}
 
 Nach § 9 Absatz 3 der Sars‐Cov 2 – Infektionsschutzverordnung müssen Personen nicht in Quarantäne,
 die unverzüglich nach der Einreise der zuständigen Behörde ein ärztliches Zeugnis in deutscher und
@@ -49,4 +49,4 @@ Im Auftrag
 
 Thomas Duveneck
 
-[<i class="fa fa-download">&nbsp;</i>Download diesen Brief vom SenBJF: Rückkehr aus den Ferien, Schulpflicht und Quarantäne (pdf) ](/assets/files/corona/Rueckkehr_aus_Ferien_und-Quarantaene.pdf){: .btn .btn--success}
+{% include download_link text="Download diesen Brief vom SenBJF: Rückkehr aus den Ferien, Schulpflicht und Quarantäne (pdf)" url="/assets/files/corona/Rueckkehr_aus_Ferien_und-Quarantaene.pdf" button="success" %}

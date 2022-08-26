@@ -24,4 +24,4 @@ Viele Grüße
 
 Stephanie Lehmann
 
-[<i class="fa fa-download">&nbsp;</i>Download: Alternativszenario Stufe "rot" (pdf) ](/assets/files/corona/Elternbrief_falls_Unterricht_im_Alternativszenario_Stufe_rot_des_Corona_Stufenplans_04.11.2020.pdf){: .btn .btn--success}
+{% include download_link text='Download: Alternativszenario Stufe "rot" (pdf)' url="/assets/files/corona/Elternbrief_falls_Unterricht_im_Alternativszenario_Stufe_rot_des_Corona_Stufenplans_04.11.2020.pdf" button="success" %}

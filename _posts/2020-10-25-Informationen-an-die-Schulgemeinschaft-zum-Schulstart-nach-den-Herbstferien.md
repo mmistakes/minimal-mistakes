@@ -56,6 +56,6 @@ Stephanie Lehmann
 
 [<i class="fa fa-info">&nbsp;&nbsp;</i>Erfahren Sie mehr über unsere Checkliste "Wenn mein Kind krank wird?"]({{'coronavirus/2020/09/07/Wenn-mein-Kind-krank-wird/' | relative_url }}){: .btn .btn--primary}
 
-[<i class="fa fa-download">&nbsp;&nbsp;</i> Der Corona Stufenplan: Was bedeuten die Ampel Farben?](/assets/files/corona/201007_Corona-Stufenplan.pdf){: .btn .btn--success}
+{% include download_link text="Der Corona Stufenplan: Was bedeuten die Ampel Farben?" url="/assets/files/corona/201007_Corona-Stufenplan.pdf" button="success" %}
 
-[<i class="fa fa-download">&nbsp;&nbsp;</i> Der Corona Stufenplan - Entscheidungsprozesse und Informationswege: Wann und wie werden die Ampel Farben festgelegt?](/assets/files/corona/corona_stufenplan_entscheidungsprozesse_und_informationswege__senbjf.pdf){: .btn .btn--success}
+{% include download_link text="Der Corona Stufenplan - Entscheidungsprozesse und Informationswege: Wann und wie werden die Ampel Farben festgelegt?" url="/assets/files/corona/corona_stufenplan_entscheidungsprozesse_und_informationswege__senbjf.pdf" button="success" %}

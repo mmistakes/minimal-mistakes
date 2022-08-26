@@ -38,4 +38,4 @@ Viele Grüße
 
 Stephanie Lehmann
 
-[<i class="fa fa-download">&nbsp;</i>Download diesen Brief: Elternbrief zum Beginn des Schuljahres August 2020 - Maskenpflicht für Kinder (pdf) ](/assets/files/corona/Elternbrief_zum_Beginn_des_Schuljahres_August_2020_-_Maskenpflicht_fuer_Kinder.pdf){: .btn .btn--success}
+{% include download_link text="Download diesen Brief: Elternbrief zum Beginn des Schuljahres August 2020 - Maskenpflicht für Kinder (pdf)" url="/assets/files/corona/Elternbrief_zum_Beginn_des_Schuljahres_August_2020_-_Maskenpflicht_fuer_Kinder.pdf" button="success" %}
