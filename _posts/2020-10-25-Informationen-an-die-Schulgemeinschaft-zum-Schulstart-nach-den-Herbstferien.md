@@ -54,7 +54,7 @@ Ihre
 
 Stephanie Lehmann
 
-[<i class="fa fa-info">&nbsp;&nbsp;</i>Erfahren Sie mehr über unsere Checkliste "Wenn mein Kind krank wird?"]({{'coronavirus/2020/09/07/Wenn-mein-Kind-krank-wird/' | relative_url }}){: .btn .btn--primary}
+{% include info_link text='Erfahren Sie mehr über unsere Checkliste "Wenn mein Kind krank wird?"' url="/coronavirus/2020/09/07/Wenn-mein-Kind-krank-wird/" button="primary" %}
 
 {% include download_link text="Der Corona Stufenplan: Was bedeuten die Ampel Farben?" url="/assets/files/corona/201007_Corona-Stufenplan.pdf" button="success" %}
 
