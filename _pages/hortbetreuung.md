@@ -90,7 +90,7 @@ Die monatlichen Betreuungskosten für 3.-6. Klassen richten sich nach dem Betreu
 {% include external_link text="Übersichtsseite zum Kostenbeitrag" url="https://www.berlin.de/sen/jugend/familie-und-kinder/kindertagesbetreuung/kostenbeteiligung/" button="info" %}
 -->
 
-{% include download_link text="Kostentabelle zur ergänzenden Betreuung bis 31.07.2019 (pdf)" url="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/jugendamt/fachdienste/leistungsbereich/mdb-01.08.2012_tkbg_anlagen_2_und_2a.pdf" button="success" %}
+{% include download_link text="Kostentabelle zur ergänzenden Betreuung" url="https://gesetze.berlin.de/bsbe/document/jlr-TagEinrKostBetGBE2010V9Anlage2" button="success" %}
 
 Die notwendigen Formulare zur Anmeldung einer ergänzenden Betreuung können Sie
 in unserem Sekretariat abholen oder direkt hier herunterladen und ausfüllen.<br/><br/>
