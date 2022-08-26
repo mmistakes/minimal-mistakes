@@ -75,9 +75,11 @@ Die erste große Pause wird in zwei Hälften geteilt. Die Lehrkräfte führen di
 9:30  - 9:45 Uhr:
 * Klassen, die die Feuertreppe nutzen, frühstücken im Klassenraum. Zuvor werden die Hände gewaschen.
 * Klassen, die das Treppenhaus nutzen, haben Bewegungspause auf dem Schulhof.
+
 9:45   -10:00 Uhr:
 * Klassen, die die Feuertreppe nutzen, haben Bewegungspause auf dem Schulhof.
 * Klassen, die das Treppenhaus nutzen, waschen sich die Hände und frühstücken im Klassenraum.
+
 Die zweite große Pause wird für die Klassen vier bis sechs in zwei Hälften geteilt. Das Mittagessen wird eingenommen.
 
 ### 2.3 Mittagessen
