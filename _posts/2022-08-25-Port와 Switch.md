@@ -1,5 +1,5 @@
 ---
-title: "[네트워크]Port와 Switch"
+title: "[네트워크 기초]Port와 Switch"
 categories: Network
 tag: [Network]
 toc: true
@@ -11,8 +11,6 @@ sidebar:
 ---
 
 # Port와 Switch 이야기
-
-
 
 ## Port 번호에 대해
 
@@ -27,8 +25,6 @@ sidebar:
 여기서 중요한 것은 어떤 Host가 한대있고 IP주소가 192.168.0.10라 가정하고 엣지와 크롬 두개의 프로그램이 실행되었다고하면 각자 소켓을 열 것이다. 그럼 네이버에 접속한다고하면 엣지의 경우 30000번이라고 하면 크롬은 30000번이 아닌 다른 번호를 쓰게되어있다.
 
 앞으로 Packet이라는 데이터 단위를 배우게되면 Packet이라는 단위가 네트워크에 들어오게되면 Host → NIC → Device driver → TCP/IP → Process 순으로 전달이 된다. 여기서 중요한것은 운영체제 수준의 4계층에서 process로 갈것인지 엣지로 갈것인지 크롬으로 갈것인지를 정하는 것이 Port번호이다.
-
-  
 
 ## Switch가 하는일
 

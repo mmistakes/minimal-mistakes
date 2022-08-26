@@ -1,5 +1,5 @@
 ---
-title: "[네트워크]MAC주소, IP주소, Port번호"
+title: "[네트워크 기초]MAC주소, IP주소, Port번호"
 categories: Network
 tag: [Network]
 toc: true
