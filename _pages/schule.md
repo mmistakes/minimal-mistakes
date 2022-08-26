@@ -27,28 +27,28 @@ Wir sind bestrebt, Übergänge so gut wie möglich zu gestalten und pflegen
 folgende Kooperationen:
 
 Im Bereich Übergang Oberschule kooperieren wir mit dem
-[<i class="fa fa-external-link">&nbsp;</i>Carl-Friedrich-von-Siemens-Gymnasium](http://cfvsiemens.de),
+{% include external_link text="Carl-Friedrich-von-Siemens-Gymnasium" url="http://cfvsiemens.de" %},
 dem
-[<i class="fa fa-external-link">&nbsp;</i>Lily-Braun-Gymnasium](https://lily-braun-gymnasium.de)
+{% include external_link text="Lily-Braun-Gymnasium" url="https://lily-braun-gymnasium.de" %}
 sowie der Integrierten Sekundarschule (ISS)
-[<i class="fa fa-external-link">&nbsp;</i>Schule an der Jungfernheide](https://schule-an-der-jungfernheide.de).
+{% include external_link text="Schule an der Jungfernheide" url="https://schule-an-der-jungfernheide.de" %}.
 
 Hier pflegen wir einen engen Kontakt. Die Kinder der sechsten Klassen haben die
 Möglichkeit, im Unterricht der Oberschulen zu hospitieren. Gleichzeitig
 stellen die Oberschüler*innen ihre Schule vor.
 
 Unsere Kooperations-Kitas sind die
-[<i class="fa fa-external-link">&nbsp;</i>Kita Zauberschiff](https://www.kita-nordwest.de/kita/kita-zauberschiff/),
-[<i class="fa fa-external-link">&nbsp;</i>Kita Zwergenwinkel](https://www.awo-spandau.de/kinder-familie/kindertagesstaette-zwergenwinkel.html)
+{% include external_link text="Kita Zauberschiff" url="https://www.kita-nordwest.de/kita/kita-zauberschiff/" %},
+{% include external_link text="Kita Zwergenwinkel" url="https://www.awo-spandau.de/kinder-familie/kindertagesstaette-zwergenwinkel.html" %}
 sowie die
-[<i class="fa fa-external-link">&nbsp;</i>Kita Arche-Noah](https://www.kirchengemeinde-staaken.de/page/1183/kita-arche-noah).
+{% include external_link text="Kita Arche-Noah" url="https://www.kirchengemeinde-staaken.de/page/1183/kita-arche-noah" %}.
 Gemeinsam mit Ihren Erzieher*innen besuchen die Kinder den Unterricht und sind
 zu den Schulveranstaltungen eingeladen. Gleichzeitig befinden wir uns in engem
 Austausch und sind gerne Gast der Elternversammlungen.
 
 Neu seit Schuljahr 2020 sind Kooperationen mit
-[<i class="fa fa-external-link">&nbsp;</i>Hertha BSC](https://www.herthabsc.de/de/intern/schulaktion/page/2126--17--.html) und
-[<i class="fa fa-external-link">&nbsp;</i>Al-Farabi Musikakademie](https://www.al-farabi.de). Die Kinder haben hier die Möglichkeit, sich für eine Fußball-AG mit Anthony anzumelden oder in einer Chor-AG mit Kian zu singen. Hier werden Talente erkannt und individuell gefördert.
+{% include external_link text="Hertha BSC" url="https://www.herthabsc.de/de/intern/schulaktion/page/2126--17--.html" %} und
+{% include external_link text="Al-Farabi Musikakademie" url="https://www.al-farabi.de" %}. Die Kinder haben hier die Möglichkeit, sich für eine Fußball-AG mit Anthony anzumelden oder in einer Chor-AG mit Kian zu singen. Hier werden Talente erkannt und individuell gefördert.
 
 ### Veranstaltungen der Schulgemeinschaft
 
@@ -74,7 +74,7 @@ entsprechend anzupassen und inklusiv zu arbeiten.
 
 Die individuelle Förderung steht im Mittelpunkt.
 
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Umfangreiche Informationen zu JÜL-Klassen (pdf)](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/mdb-sen-bildung-bildungswege-grundschule-flexible_schulanfangsphase.pdf){: .btn .btn--success}
+{% include download_link text="Umfangreiche Informationen zu JÜL-Klassen (pdf)" url="https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/mdb-sen-bildung-bildungswege-grundschule-flexible_schulanfangsphase.pdf" button="success" %}
 
 ## Das sind unsere Unterrichtszeiten:
 
@@ -170,7 +170,7 @@ Für eine detailierte Darstellung der Rechtsvorschriften können Sie direkt auf
 der Seite der
 [Senatsverwaltung für Bildung, Jugend und Familie](https://www.berlin.de/sen/bildung/schule/rechtsvorschriften/)
 nachsehen.<br/><br/>
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Ausführungsvorschriften über Beurlaubung und Befreiung vom Unterricht (pdf)](https://www.berlin.de/sen/bildung/schule/rechtsvorschriften/mdb-sen-bildung-rechtsvorschriften-av_schulpflicht.pdf){: .btn .btn--success}
+{% include download_link text="Ausführungsvorschriften über Beurlaubung und Befreiung vom Unterricht (AV Schulbesuchspflicht) (pdf)" url="https://www.berlin.de/sen/bildung/schule/rechtsvorschriften/mdb-sen-bildung-rechtsvorschriften-av_schulpflicht.pdf" button="success" %}
 {: .notice--info}
 
 ## Schulsozialarbeit Casablanca
