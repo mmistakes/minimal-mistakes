@@ -3,7 +3,7 @@ layout: single
 title: "Ergänzende Förderung und Betreuung"
 permalink: /hortbetreuung/
 author_profile: false
-excerpt: "Alles zum eFöBgebäude, zur verlässlichen Halbtagsgrundschule, sowie zum Mittagessen"
+excerpt: "Alles zum eFöB-Gebäude, zur verlässlichen Halbtagsgrundschule, sowie zum Mittagessen"
 modified: 2017-03-07T10:55:00+01:00
 header:
   overlay_color: "#fff"
@@ -23,7 +23,7 @@ während des Unterrichts dabei und unterstützen somit Ihr Kind und die Lehrkraf
 im Unterricht.
 {: .notice--info }
 
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Flyer zu unserer Nachmittagsbetreuung (eFöB)](/assets/files/Schulflyer2705.pdf){: .btn .btn--success}
+{% include download_link text="Flyer zu unserer Nachmittagsbetreuung (eFöB)" url="/assets/files/Schulflyer2705.pdf" button="success" %}
 
 # Schließzeiten
 
@@ -45,9 +45,9 @@ im Unterricht.
 | 14.05.2021 | Pfingsten |
 
 
-# eFöBgebäude und Außengelände
+# eFöB-Gebäude und Außengelände
 
-Das eFöBgebäude befindet sich auf dem Schulgelände, in dem drei Räume während
+Das eFöB-Gebäude befindet sich auf dem Schulgelände, in dem drei Räume während
 der Nachmittagsbetreuung genutzt werden. Zusätzlich stehen vier Räume im
 Schulhaus zur Verfügung.
 
@@ -87,15 +87,15 @@ Die monatlichen Betreuungskosten für 3.-6. Klassen richten sich nach dem Betreu
 <!-- Gesetzestext zur Kostenbeiteiligung: http://gesetze.berlin.de/jportal/?quelle=jlink&query=TagEinrKostBetG+BE+Anlage+2&psml=bsbeprod.psml&max=true -->
 
 <!--
-[<i class="fa fa-external-link">&nbsp;&nbsp;</i>Übersichtsseite zum Kostenbeitrag](https://www.berlin.de/sen/jugend/familie-und-kinder/kindertagesbetreuung/kostenbeteiligung/){: .btn .btn--info}
+{% include external_link text="Übersichtsseite zum Kostenbeitrag" url="https://www.berlin.de/sen/jugend/familie-und-kinder/kindertagesbetreuung/kostenbeteiligung/" button="info" %}
 -->
 
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Kostentabelle zur ergänzenden Betreuung bis 31.07.2019](https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/jugendamt/fachdienste/leistungsbereich/mdb-01.08.2012_tkbg_anlagen_2_und_2a.pdf){: .btn .btn--success}
+{% include download_link text="Kostentabelle zur ergänzenden Betreuung bis 31.07.2019 (pdf)" url="https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/jugendamt/fachdienste/leistungsbereich/mdb-01.08.2012_tkbg_anlagen_2_und_2a.pdf" button="success" %}
 
 Die notwendigen Formulare zur Anmeldung einer ergänzenden Betreuung können Sie
 in unserem Sekretariat abholen oder direkt hier herunterladen und ausfüllen.<br/><br/>
-[<i class="fa fa-external-link">&nbsp;&nbsp;</i>Formularseite](https://www.berlin.de/sen/bjf/service/formulare/#hort){: .btn .btn--info}
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Formular für die Hortbetreuung in Jahrgangsstufen 1 bis 6](https://www.berlin.de/sen/bjf/service/formulare/antrag_efob__ab_2019-20_20180914.pdf){: .btn .btn--success}
+{% include external_link text="Formularseite" url="https://www.berlin.de/sen/bjf/service/formulare/#efob" button="info" %}
+{% include download_link text="Antrag auf ergänzende Förderung und Betreuung an der offenen Ganztagsschule (pdf)" url="https://www.berlin.de/sen/bjf/service/formulare/antrag-efoeb-ogb.pdf" button="success" %}
 {: .notice--info}
 
 # Betreuung in den Ferien
@@ -121,10 +121,10 @@ Ihr Kind kann in unserer Schule an einem kostenfreien Mittagessen teilnehmen.
 
 [GREENs UNLIMITED](http://www.greens-unlimited.de/)
 (Vollwert Catering) versorgt uns auch in diesem Schuljahr mit Mittagessen, welches über eine
-Mitarbeiterin in der Mensa (im eFöBgebäude) an Ihr Kind in einem sozialen
+Mitarbeiterin in der Mensa (im eFöB-Gebäude) an Ihr Kind in einem sozialen
 Gruppenumfeld ausgeteilt und verzehrt wird.
 Bitte melden Sie Ihr Kind [online](http://www.schulessen.berlin/) an.
-Sollten Sie bereits einen Zugang haben, verwenden Sie bitte Ihre Login-Daten. Bitte wählen Sie bei der Angabe des Schuljahres "für das kommende Schuljahr 2020/21" aus.
+Sollten Sie bereits einen Zugang haben, verwenden Sie bitte Ihre Login-Daten.
 Wir wünschen guten Appetit!
 
 [Anmeldung Mittagessen](http://www.schulessen.berlin/){: .btn .btn--success}
