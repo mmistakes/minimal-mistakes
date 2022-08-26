@@ -4,7 +4,7 @@ title: "Schulbeginn"
 permalink: /schulbeginn/
 author_profile: false
 excerpt: "Alles Wichtige zur Einschulung und zum Schulstart"
-modified: 2020-09-01T10:55:00+01:00
+modified: 2022-08-06T14:00:00+01:00
 header:
   overlay_color: "#fff"
   overlay_image: /assets/images/feature-einschulung.jpg
@@ -19,12 +19,12 @@ sidebar:
 
 <!-- {% include outdated.md %} -->
 
-Die wichtigsten Daten zum Schuljahr **2022/23** in einem Überblick.
+Die wichtigsten Daten zum Schuljahr **2023/24** in einem Überblick.
 
 | Termine |  Veranstaltung |
 |---|---|
 | | Ihr Kind wurde im Zeitraum vom 1. Oktober 2016 bis zum 30. September 2017 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
-| Montag, 10.10.2021 bis Freitag, 21.10.2022  | {% include icon_link text="<b>Anmeldung</b>" icon="fa-file-text-o" url="#anmeldung" %} der Schulanfänger*innen im Sekretariat. |
+| Montag, 10.10.2022 bis Freitag, 21.10.2022  | {% include icon_link text="<b>Anmeldung</b>" icon="fa-file-text-o" url="#anmeldung" %} der Schulanfänger*innen im Sekretariat. |
 |  | **Hospitation:** Sie können in der Schule hospitieren und sich mit den Abläufen vertraut machen. Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren Sie hierzu einen Termin im Sekretariat. |
 | Dienstag, 31.07.2023 | Melden Sie Ihr Kind rechtzeitig zur {% include icon_link text="<b>Hortbetreuung (eFöB)</b>" icon="fa-child" url="#hort" %} an, so dass Ihr Kind am 01.08.2023 von unserem Hort betreut werden kann.  |
 | Samstag, 02.09.2023 | Endlich! Wir feiern die Einschulung in der Sporthalle |
