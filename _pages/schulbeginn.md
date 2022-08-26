@@ -23,12 +23,12 @@ Die wichtigsten Daten zum Schuljahr **2022/23** in einem Überblick.
 
 | Termine |  Veranstaltung |
 |---|---|
-| | Ihr Kind wurde im Zeitraum vom 1. Oktober 2015 bis zum 30. September 2016 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
-| Montag, 27.09.2021 bis Freitag, 08.10.2021  | {% include icon_link text="<b>Anmeldung</b>" icon="fa-file-text-o" url="#anmeldung" %} der Schulanfänger*innen im Sekretariat. |
+| | Ihr Kind wurde im Zeitraum vom 1. Oktober 2016 bis zum 30. September 2017 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
+| Montag, 10.10.2021 bis Freitag, 21.10.2022  | {% include icon_link text="<b>Anmeldung</b>" icon="fa-file-text-o" url="#anmeldung" %} der Schulanfänger*innen im Sekretariat. |
 |  | **Hospitation:** Sie können in der Schule hospitieren und sich mit den Abläufen vertraut machen. Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren Sie hierzu einen Termin im Sekretariat. |
-| Dienstag, 31.07.2022 | Melden Sie Ihr Kind rechtzeitig zur {% include icon_link text="<b>Hortbetreuung (eFöB)</b>" icon="fa-child" url="#hort" %} an, so dass Ihr Kind am 01.08.2022 von unserem Hort betreut werden kann.  |
-| Samstag, 27.08.2022 | Endlich! Wir feiern die Einschulung in der Sporthalle |
-| Montag, 29.08.2022 | Der **erste Schultag.** |
+| Dienstag, 31.07.2023 | Melden Sie Ihr Kind rechtzeitig zur {% include icon_link text="<b>Hortbetreuung (eFöB)</b>" icon="fa-child" url="#hort" %} an, so dass Ihr Kind am 01.08.2023 von unserem Hort betreut werden kann.  |
+| Samstag, 02.09.2023 | Endlich! Wir feiern die Einschulung in der Sporthalle |
+| Montag, 04.09.2023 | Der **erste Schultag.** |
 
 {{comment}}<!--
 **TODO**:
@@ -55,7 +55,7 @@ nachsehen.<br/><br/>
 {% comment %}
 <!-- {% include download_link text="Info zur Anmeldung der Schulanfänger 2021/22" url="https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/plakat_schulanmeldung_fuer_2021.pdf" button="success" %} -->
 {% endcomment %}
-{% include download_link text="Umfangreiche Informationen zum Schulbeginn 2022/23" url="https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/2021_schulanmeldung.pdf" button="success" %}
+{% include download_link text="Umfangreiche Informationen zum Schulbeginn 2023/24" url="https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/schulanmeldung-2023.pdf" button="success" %}
 </p>
 
 ---
@@ -66,7 +66,7 @@ nachsehen.<br/><br/>
 <!-- {% include outdated.md %} -->
 
 Wir sind eine zweizügige, [verlässliche Halbtagsgrundschule](/hortbetreuung/#vhg)
-in Spandau mit rund 300 Kindern, die von 28
+in Spandau mit rund 325 Kindern, die von 28
 Lehrer\*innen und 10 Erzieher\*innen unterrichtet und gefördert werden.
 Verlässlich bedeutet, dass Ihr Kind in der Schulzeit von 7:30 - 13:30 Uhr
 untergebracht ist. Die Betreuung kann kostenpflichtig auf die Zeiten von 6:00
@@ -105,7 +105,7 @@ und 54% Schüler haben, die von 13 Erziehern und 24 Lehrkräften betreut werden
 
 <!-- {% include outdated.md %} -->
 
-In der Zeit vom 27. September bis 08. Oktober 2021 melden Sie ihr
+In der Zeit vom 10. Oktober bis 21. Oktober 2022 melden Sie ihr
 schulpflichtiges Kind in der [für Sie zuständigen
 Grundschule](https://www.bildung.berlin.de/Umkreissuche/) an.
 
@@ -134,13 +134,24 @@ Termin zugesendet**.
 # {% include icon_text text="Anmeldung zur ergänzenden Förderung und Betreuung (eFöB / Hort)" icon="fa-child" %}
 {: #hort}
 
-Bitte vergessen Sie nicht Ihr Kind bei Bedarf zur eFöB anzumelden.
+Bitte vergessen Sie nicht Ihr Kind bei Bedarf zur ergänzende Förderung und Betreuung (eFöB) im offenen Ganztag (OGB) anzumelden.
 
 {% include info_link text="Erfahren Sie mehr über unseren Hort" url="/hortbetreuung" button="primary" %}
 
 <p class="notice--info">
 Die notwendigen Formulare zur Anmeldung einer ergänzenden Betreuung können Sie
 in unserem Sekretariat abholen oder direkt hier herunterladen und ausfüllen.<br/><br/>
-{% include external_link text="Formularseite" url="https://www.berlin.de/sen/bjf/service/formulare/#hort" button="info" %}
-{% include download_link text="Formular für die Hortbetreuung von Schulanfänger*innen" url="https://www.berlin.de/sen/bjf/service/formulare/antrag_efob__ab_2019-20_20180914.pdf" button="success" %}
+{% include external_link text="Formularseite (Stichwort: offene Ganztagsschule)" url="https://www.berlin.de/sen/bjf/service/formulare/#efob" button="info" %}
+{% include download_link text="Formular für die Hortbetreuung von Schulanfänger*innen" url="https://www.berlin.de/sen/bjf/service/formulare/antrag-efoeb-ogb.pdf" button="success" %}
 </p>
+
+<!--
+TODO:
+
+SCHÜLERTICKET
+Das Schülerticket für den Berliner
+Nahverkehr ist für alle Schulkinder
+kostenfrei. Abonnieren können Sie
+die „fahrCard“ online unter:
+← www.bvg.de/schuelerticket
+ -->
