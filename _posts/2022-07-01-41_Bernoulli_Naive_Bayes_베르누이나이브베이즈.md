@@ -217,6 +217,9 @@ s
 # CountVectorizer() 함수는 이메일 제목에 출현한 단어를 오름차순으로 정렬해 단어의 위치로 행렬을 만들어 리턴한다.
 # 특정 단어가 출현할 경우 출현한 단어의 개수를 출현하지 않으면 0을 리턴한다.
 # CountVectorizer() 함수의 옵션으로 binary=True를 지정하면 같은 단어가 여러번 출현하더라도 1을 리턴한다.
+# fit_transform를 이용해 숫자로 만든다.Spain, Germany, France가 있는 경우, 
+# Spain는0,Germany는 1, France를 2라고 정의하려는 경우 사용한다.이용해 숫자로 만든다.
+# Spain, Germany, France가 있는 경우, Spain는0,Germany는 1, France를 2라고 정의하려는 경우 사용한다.
 cv = CountVectorizer(binary=True)
 x_train = cv.fit_transform(df_x)
 # toarray() 함수로 CountVectorizer() 함수를 실행한 결과를 넘파이 배열 데이터로 변환한다.
