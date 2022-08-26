@@ -142,9 +142,9 @@ Absprachen der Kollegen untereinander, wer welchen Bereich nutzt. Jeder Erzieher
 
 Eltern sind aufgefordert, den Gesundheitszustand ihres Kindes zu beobachten und es bei Symptomen und Beschwerden wie Fieber, Kopfschmerzen, Halsschmerzen, Husten) NICHT zur Schule zu schicken. Auch nicht zur Probe!
 
-[<i class="fa fa-info">&nbsp;&nbsp;</i>Erfahren Sie mehr über unsere Checkliste "Wenn mein Kind krank wird?"]({{'coronavirus/2020/09/07/Wenn-mein-Kind-krank-wird/' | relative_url }}){: .btn .btn--primary}
+{% include info_link text='Erfahren Sie mehr über unsere Checkliste "Wenn mein Kind krank wird?"' url="/coronavirus/2020/09/07/Wenn-mein-Kind-krank-wird/" button="primary" %}
 
-[<i class="fa fa-external-link">&nbsp;</i>Mehr Informationen von der SenBJF.](https://www.berlin.de/sen/bjf/coronavirus/aktuelles/schrittweise-schuloeffnung/#krank){: .btn .btn--info}
+{% include external_link text="Mehr Informationen von der SenBJF." url="https://www.berlin.de/sen/bjf/coronavirus/aktuelles/schrittweise-schuloeffnung/#krank" button="info" %}
 
 ## 2.9 Freistellung der Präsenzpflicht für Risikogruppen
 
