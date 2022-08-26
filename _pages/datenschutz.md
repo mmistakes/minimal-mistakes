@@ -19,8 +19,8 @@ benötigt werden, wie wir sie verarbeiten sowie über Ihre Rechte nach geltendem
 Datenschutzrecht.
 
 Informationen über die Verarbeitung personenbezogener Daten in der Schule:
-* [<i class="fa fa-download">&nbsp;</i>Schulanmeldung (ab Schuljahr 2019/20) (pdf) ](/assets/files/Datenschutzerklärung_Schulanmeldung.pdf){: .btn .btn--success}
-* [<i class="fa fa-download">&nbsp;</i>Bestandsschüler (Einschulung vor Schuljahr 2019/20) (pdf) ](/assets/files/Datenschutzerklärung_Bestandsschüler.pdf){: .btn .btn--success}
+* {% include download_link text="Schulanmeldung (ab Schuljahr 2019/20) (pdf) " url="/assets/files/Datenschutzerklärung_Schulanmeldung.pdf" button="success" %}
+* {% include download_link text="Bestandsschüler (Einschulung vor Schuljahr 2019/20) (pdf) " url="/assets/files/Datenschutzerklärung_Bestandsschüler.pdf" button="success" %}
 
 ## Webseite
 
