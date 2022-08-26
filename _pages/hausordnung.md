@@ -48,7 +48,7 @@ gültig ab 01.04.2022
     verlassen.
 14. Auf dem Schulhof dürfen in den Pausen für Ballspiele ausschließlich Softbälle
     benutzt werden. Basketbälle sind nur auf der Streetball-Anlage erlaubt.
-15. Außer Bällen fliegt hier nichts <i class='fa fa-smile-o'></i>! Auf dem Schulgelände dürfen keine
+15. Außer Bällen fliegt hier nichts {% include icon_text icon="fa-smile-o" %}! Auf dem Schulgelände dürfen keine
     Gegenstände (Eicheln, Zweige, Steine usw.) und im Winter keine Schneebälle
     geworfen werden.
 16. Fachräume haben ihre eigene Raumordnung (Aula, PC-Raum, Nawi-Raum,
