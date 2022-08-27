@@ -12,12 +12,11 @@ toc_sticky: true
 
 ### Current Members
 
-- <img src="https://github.com/baileythegreen.png" alt="GitHub avatar for @baileythegreen" width="20"> Bailey Harrington (PDRA)
 - <img src="https://github.com/hobnobmancer.png" alt="GitHub avatar for @hobnobmancer" width="20"> [Emma Hobbs](/group/bios/emma_h) (PhD, University of St Andrews)
     - [w/ Tracey Gloster, St Andrews]
-- <img src="https://github.com/kiepczi.png" alt="GitHub avatar for @kiepczi" width="20"> Angelika Kiepas (PhD)
+- <img src="https://github.com/kiepczi.png" alt="GitHub avatar for @kiepczi" width="20"> [Angelika Kiepas](/group/bios/angelika_k) (PhD)
     - [w/ Paul Hoskisson, Strathclyde]
-- <img src="https://github.com/JuliannaPiat.png" alt="GitHub avatar for @JuliannaPiat" width="20"> Julianna Piat (PhD, University of Oxford)
+- <img src="https://github.com/JuliannaPiat.png" alt="GitHub avatar for @JuliannaPiat" width="20"> [Julianna Piat](/group/bios/julianna_p) (PhD, University of Oxford)
     - [w/ Gail Preston, Oxford]
 - <img src="https://github.com/widdowquinn.png" alt="GitHub avatar for @widdowquinn" width="20"> [Leighton Pritchard](/group/bios/leighton) (Chancellor's Fellow, PI)
 
@@ -28,15 +27,11 @@ toc_sticky: true
 - Tom Hender
     - [w/ Nick Tucker, Strathclyde]
 
-#### Student projects
-
-- Yassmeen Ali (MSc project student, 2022)
-- Nora Novak (Carnegie-funded Internship, 2022)
-    - [w/ Gwyn Gould, Strathclyde]
-- Areej Obaid (MSc project student, 2022)
-- David Teixeira (SfAM-funded Internship, 2022)
-
 ### Alumni
+
+#### PostDoc
+
+- <img src="https://github.com/baileythegreen.png" alt="GitHub avatar for @baileythegreen" width="20"> Bailey Harrington (PDRA)
 
 #### PhD
 
@@ -58,6 +53,11 @@ toc_sticky: true
 - Kimberley Morsheimer (MSc project student, 2021)
 - Ailsa Orr (UG project student 2021-22)
 - Wong-Ka Yann (UG project student, 2021-22)
+- Yassmeen Ali (MSc project student, 2022)
+- Nora Novak (Carnegie-funded Internship, 2022)
+    - [w/ Gwyn Gould, Strathclyde]
+- Areej Obaid (MSc project student, 2022)
+- David Teixeira (SfAM-funded Internship, 2022)
 
 ## General group info
 
