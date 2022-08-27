@@ -27,9 +27,9 @@ Outside of work, Angelika is very likely in the gym powerlifting, at home watchi
 *University of Strathclyde*  
 Oct 2020 - Sept 2023
 
-**Master's Degree in Industrial Biotechnology**
-*Univeristy of Strathclyde*
-*Industrial Biotechnology Innovation Centre*
+**Master's Degree in Industrial Biotechnology**  
+*Univeristy of Strathclyde*  
+*Industrial Biotechnology Innovation Centre*  
 Sept 2019 - Sept 2020
 
 
