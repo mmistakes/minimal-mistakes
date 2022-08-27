@@ -30,11 +30,7 @@ toc_sticky: true
 
 #### Student projects
 
-- Yassmeen Ali (MSc project student, 2022)
-- Nora Novak (Carnegie-funded Internship, 2022)
-    - [w/ Gwyn Gould, Strathclyde]
-- Areej Obaid (MSc project student, 2022)
-- David Teixeira (SfAM-funded Internship, 2022)
+
 
 ### Alumni
 
@@ -58,6 +54,11 @@ toc_sticky: true
 - Kimberley Morsheimer (MSc project student, 2021)
 - Ailsa Orr (UG project student 2021-22)
 - Wong-Ka Yann (UG project student, 2021-22)
+- Yassmeen Ali (MSc project student, 2022)
+- Nora Novak (Carnegie-funded Internship, 2022)
+    - [w/ Gwyn Gould, Strathclyde]
+- Areej Obaid (MSc project student, 2022)
+- David Teixeira (SfAM-funded Internship, 2022)
 
 ## General group info
 
