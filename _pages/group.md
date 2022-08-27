@@ -16,7 +16,7 @@ toc_sticky: true
     - [w/ Tracey Gloster, St Andrews]
 - <img src="https://github.com/kiepczi.png" alt="GitHub avatar for @kiepczi" width="20"> [Angelika Kiepas](/group/bios/angelika_k) (PhD)
     - [w/ Paul Hoskisson, Strathclyde]
-- <img src="https://github.com/JuliannaPiat.png" alt="GitHub avatar for @JuliannaPiat" width="20"> Julianna Piat (PhD, University of Oxford)
+- <img src="https://github.com/JuliannaPiat.png" alt="GitHub avatar for @JuliannaPiat" width="20"> [Julianna Piat](/group/bios/julianna_p) (PhD, University of Oxford)
     - [w/ Gail Preston, Oxford]
 - <img src="https://github.com/widdowquinn.png" alt="GitHub avatar for @widdowquinn" width="20"> [Leighton Pritchard](/group/bios/leighton) (Chancellor's Fellow, PI)
 
