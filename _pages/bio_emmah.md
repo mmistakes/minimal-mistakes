@@ -41,7 +41,7 @@ Sept 2022 - Sept 2023
 Dundee, Scotland  
 July 2021-Oct 2021
 
-**Bachelor of Science (Hons)**  
+**Bachelor of Science (BSc, (Hons) - Biochemistry**  
 *University of Surrey*  
 Sept 2015 - July 2019  
 
