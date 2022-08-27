@@ -55,6 +55,8 @@ from sklearn.model_selection import cross_val_score
 import matplotlib.pyplot as plt
 ```
 
+![MNIST](../../images/2022-07-01-43_Ensenble_Random_Forest/MNIST.png){: width="100%" height="100%"}
+
 MINST 손글씨 데이터 불러오기
 
 
