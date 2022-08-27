@@ -313,7 +313,7 @@ test_df['label'] = test_df.spam.map({True: 1, False: 0})
 test_x = test_df['email title']
 test_y = test_df['label']
 
-#fit_transform() => train dataset에서만 사용.
+#fit_transform() => train dataset에서만 사용.daf
 #transform()     => train data로부터 학습된 내용을 test data에 적용하기 위해 사용.
 
 x_test = cv.transform(test_x)
