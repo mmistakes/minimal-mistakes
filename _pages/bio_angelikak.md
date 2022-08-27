@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /group/bios/angelika
+permalink: /group/bios/angelika_k
 title: "Angelika Kiepas"
 toc: true
 toc_label: "Table of Contents"
@@ -34,7 +34,7 @@ Sept 2019 - Sept 2020
 
 
 **Bachelor of Science (Hons) in Biochemistry and Immunology**  
-*University of Surrey*  
+*Univeristy of Strathclyde*  
 Sept 2015 - Jun 2019  
 
 ## Supervisors
