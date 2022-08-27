@@ -11,7 +11,7 @@ categories: Bio
 
 ## PhD Candidate
 
-Angelika was born and raised in a small town called Choszczno in Poland. Little did she know, she will never return to her homeland after visiting Scotland during summer holidays back in 2012. Despite not knowing English, passion for science was her biggest motivation to learn the language, and Angelika obtained a BSc (Hons) in Biochemistry and Immunology from the University of Strathclyde in 2019. After this, Angelika completed her Master’s Degree in Industrial Biotechnology at Strathclyde in partnership with [Industrial Biotechnology Innovation Centre (IBiolC)](https://www.ibioic.com/), during which she realised that computational biology is the missing puzzle she was looking for.
+Angelika was born and raised in a small town called Choszczno, in Poland. Little did she know, she will never return to her homeland after visiting Scotland during summer holidays back in 2012. Despite not knowing English, passion for science was her biggest motivation to learn the language, and Angelika obtained a BSc (Hons) in Biochemistry and Immunology from the University of Strathclyde in 2019. After this, Angelika completed her Master’s Degree in Industrial Biotechnology at Strathclyde in partnership with [Industrial Biotechnology Innovation Centre (IBiolC)](https://www.ibioic.com/), during which she realised that computational biology is the missing puzzle she was looking for.
 
 During her Master's, Angelika completed a 10-weeks project, working on genome mining of antiviral agents against SARS-CoV-2 in *Streptomyces* bacteria. Afterwords, in October 2020 she started her PhD studies (again at Strathclyde) and continued her joruney with *Streptomyces* under the supervision of Dr Leighton Pritchard and Prof Paul Hoskisson.
 
@@ -50,8 +50,8 @@ Kiepas, Angelika B.; Hoskisson, Paul A.; Pritchard, Leighton (2022): Untangling 
 
 
 ## Contact Information and Links
-- **Email:** angelika.kiepas@strath.ac.uk
-- [University of Strathclyde Pure page](https://pureportal.strath.ac.uk/en/persons/angelika-kiepas)
-- [ORCID](https://orcid.org/0000-0002-5133-492X)
-- [GitHub](https://github.com/kiepczi)
-- [LinkedIn](https://www.linkedin.com/in/angelika-kiepas-338738193/)
+**Email:** angelika.kiepas@strath.ac.uk  
+[**University of Strathclyde Pure page**](https://pureportal.strath.ac.uk/en/persons/angelika-kiepas)  
+[**ORCID**](https://orcid.org/0000-0002-5133-492X)  
+[**GitHub**](https://github.com/kiepczi)  
+[**LinkedIn**](https://www.linkedin.com/in/angelika-kiepas-338738193/)  
