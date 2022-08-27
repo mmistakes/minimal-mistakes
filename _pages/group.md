@@ -15,7 +15,7 @@ toc_sticky: true
 - <img src="https://github.com/baileythegreen.png" alt="GitHub avatar for @baileythegreen" width="20"> Bailey Harrington (PDRA)
 - <img src="https://github.com/hobnobmancer.png" alt="GitHub avatar for @hobnobmancer" width="20"> [Emma Hobbs](/group/bios/emma_h) (PhD, University of St Andrews)
     - [w/ Tracey Gloster, St Andrews]
-- <img src="https://github.com/kiepczi.png" alt="GitHub avatar for @kiepczi" width="20"> Angelika Kiepas (PhD)
+- <img src="https://github.com/kiepczi.png" alt="GitHub avatar for @kiepczi" width="20"> [Angelika Kiepas (PhD)](/group/bios/angelika_k)
     - [w/ Paul Hoskisson, Strathclyde]
 - <img src="https://github.com/JuliannaPiat.png" alt="GitHub avatar for @JuliannaPiat" width="20"> Julianna Piat (PhD, University of Oxford)
     - [w/ Gail Preston, Oxford]
