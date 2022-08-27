@@ -12,7 +12,6 @@ toc_sticky: true
 
 ### Current Members
 
-- <img src="https://github.com/baileythegreen.png" alt="GitHub avatar for @baileythegreen" width="20"> Bailey Harrington (PDRA)
 - <img src="https://github.com/hobnobmancer.png" alt="GitHub avatar for @hobnobmancer" width="20"> [Emma Hobbs](/group/bios/emma_h) (PhD, University of St Andrews)
     - [w/ Tracey Gloster, St Andrews]
 - <img src="https://github.com/kiepczi.png" alt="GitHub avatar for @kiepczi" width="20"> [Angelika Kiepas (PhD)](/group/bios/angelika_k)
@@ -33,6 +32,10 @@ toc_sticky: true
 
 
 ### Alumni
+
+#### PostDoc
+
+- <img src="https://github.com/baileythegreen.png" alt="GitHub avatar for @baileythegreen" width="20"> Bailey Harrington (PDRA)
 
 #### PhD
 

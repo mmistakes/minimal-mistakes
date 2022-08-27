@@ -24,7 +24,7 @@ In addition to her research, Emma has helped at several Software Carpentry works
 
 Outside university, Emma frequently goes hiking in the Scottish wilderness, knits and plays video games.
 
-## Education/Academic Qualification
+## Education/Academic Qualifications and Experience
 
 **Doctorate of Philosophy (PhD)**  
 *University of St Andrews*  
@@ -32,9 +32,18 @@ Outside university, Emma frequently goes hiking in the Scottish wilderness, knit
 *James Hutton Institute*  
 Sept 2019 - Dec 2023  
 
+**PhD Industrial Placement**  
+[*Bright Ascensions*](https://brightascension.com/)  
+Dundee, Scotland  
+July 2021-Oct 2021
+
 **Bachelor of Science (Hons)**  
 *University of Surrey*  
 Sept 2015 - July 2019  
+
+**Industrial Placement**  
+[*GlaxoSmith Kline*](https://www.gsk.com/en-gb/)  
+Stevenage, Hertfordshire, England
 
 ## Supervisors
 
@@ -71,6 +80,7 @@ Hobbs, Emma E. M.; Pritchard, Leighton; Gloster, Tracey M.; Chapman, Sean (2021)
 ## Contact Information and Links
 
 **Email:** eemh1@st-andrews.ac.uk  
+[**ORDIC**](https://orcid.org/0000-0002-8470-4739)  
 [**GitHub**](https://github.com/HobnobMancer)  
 [**LinkedIn**](https://uk.linkedin.com/in/emma-eliza-hobbs)  
-[**Gloster Laboratory website**](https://synergy.st-andrews.ac.uk/gloster/)
+[**Gloster Laboratory website**](https://gloster.wp.st-andrews.ac.uk/)
