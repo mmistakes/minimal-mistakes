@@ -32,6 +32,10 @@ Outside university, Emma frequently goes hiking in the Scottish wilderness, knit
 *James Hutton Institute*  
 Sept 2019 - Dec 2023  
 
+**Laboratory Demonstrator**  
+*University of St Andrews*  
+Sept 2022 - Sept 2023  
+
 **PhD Industrial Placement**  
 [*Bright Ascensions*](https://brightascension.com/)  
 Dundee, Scotland  
