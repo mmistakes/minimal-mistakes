@@ -107,11 +107,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "세명컴퓨터고등학교 인공지능소프트웨어과"
   location         : "Seoul"
-  email            :
+  email            : "woojun0107@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: "woojun0107@naver.com"
+       url: "woojun0106@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
