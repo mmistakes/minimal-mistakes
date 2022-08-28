@@ -104,14 +104,14 @@ analytics:
 # Site Author
 author:
   name             : "장우준"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "https://avatars.githubusercontent.com/u/102157871?v=4"
   bio              : "세명컴퓨터고등학교 인공지능소프트웨어과"
   location         : "Seoul"
-  email            : "woojun0107@naver.com"
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: "woojun0106@gmail.com"
+      # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -123,10 +123,10 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/JangWoojun"
+      # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       url: "https://www.instagram.com/w_oojun06/"
+      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
