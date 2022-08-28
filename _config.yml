@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@JangWoojun 
-JangWoojun
-/
-JangWoojun.github.io
-Public
-forked from mmistakes/minimal-mistakes
-Code
-Pull requests
-Actions
-Projects
-Security
-Insights
-Settings
-JangWoojun.github.io/_config.yml
-@JangWoojun
-JangWoojun Update _config.yml
-Latest commit 2e70a10 8 minutes ago
- History
- 33 contributors
-@mmistakes@ohadschn@SeanKilleen@yihangho@d-Rickyy-b@LoveMeWithoutAll@YuyingWu@JangWoojun@westes@vlajos@tony-ho@rriemann
-292 lines (265 sloc)  8.62 KB
-
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
@@ -133,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "장우준"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "세명컴퓨터고등학교 인공지능소프트웨어과 재학중"
+  location         : "Seoul"
   email            :
   links:
     - label: "Email"
@@ -319,17 +290,3 @@ defaults:
       comments: # true
       share: true
       related: true
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
