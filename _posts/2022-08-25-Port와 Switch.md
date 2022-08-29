@@ -1,7 +1,7 @@
 ---
 title: "[네트워크 기초]Port와 Switch"
 categories: Network
-tag: [Network]
+tag: [Network, port, swtich]
 toc: true
 author_profile: false
 sidebar:

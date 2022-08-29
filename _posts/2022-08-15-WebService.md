@@ -1,7 +1,7 @@
 ---
 title: "웹이란?"
 categories: Web
-tag: [Web]
+tag: [Web, 웹, 웹서비스, 백엔드]
 toc: true
 author_profile: false
 sidebar:
