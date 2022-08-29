@@ -24,6 +24,8 @@ For a more concrete example, we are going to write a program that will parse
 markdown files, extract words identified as tags, and then regenerate those
 files with tag-related metadata injected back into them.
 
+If you're interested in learning the ZIO core library, check out the Rock the JVM [ZIO course](https://rockthejvm.com/p/zio).
+
 ## Set up
 
 We're going to base this discussion off of the latest ZIO 2.0 code, which was
