@@ -1,7 +1,7 @@
 ---
 title: "[네트워크 기초]Host, Switch, Network"
 categories: Network
-tag: [Network]
+tag: [Network, Host, Switch, Network]
 toc: true
 author_profile: false
 sidebar:

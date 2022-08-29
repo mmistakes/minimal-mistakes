@@ -1,7 +1,7 @@
 ---
 title: "[네트워크 기초]MAC주소, IP주소, Port번호"
 categories: Network
-tag: [Network]
+tag: [Network, MAC, IP, Port]
 toc: true
 author_profile: false
 sidebar:
