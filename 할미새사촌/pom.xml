@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.demo</groupId>
+	<artifactId>controller</artifactId>
+	<name>ex10</name>
+	<packaging>war</packaging>
+	<version>1.0.0-BUILD-SNAPSHOT</version>
+	<properties>
+		<java-version>1.8</java-version>
+		<org.springframework-version>5.0.7.RELEASE</org.springframework-version>
+		<org.aspectj-version>1.9.0</org.aspectj-version><!-- AOP기능구현시 사용할 보조적인 문법버전 -->
+		<org.slf4j-version>1.7.25</org.slf4j-version>
+	</properties>
+	<dependencies>
+		
+		<!-- Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework-version}</version>
+			<exclusions>
+				<!-- Exclude Commons Logging in favor of SLF4j -->
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				 </exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+				
+		<!-- AspectJ : AOP기능 구현시 사용하는 문법을 지원해주는 라이브러리-->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>${org.aspectj-version}</version>
+		</dependency>	
+		
+		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+		<dependency>
+		    <groupId>org.aspectj</groupId>
+		    <artifactId>aspectjweaver</artifactId>
+		    <version>${org.aspectj-version}</version>
+		</dependency>
+		
+		
+		
+		<!-- Logging -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${org.slf4j-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>${org.slf4j-version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${org.slf4j-version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.15</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.mail</groupId>
+					<artifactId>mail</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>javax.jms</groupId>
+					<artifactId>jms</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jdmk</groupId>
+					<artifactId>jmxtools</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jmx</groupId>
+					<artifactId>jmxri</artifactId>
+				</exclusion>
+			</exclusions>
+			<!-- lombok log4j 사용목적 -->
+			<!-- <scope>runtime</scope> -->
+		</dependency>
+
+		<!-- @Inject -->
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+				
+		<!-- Servlet -->
+		<!-- 버전 변경. web.xml 수정 -->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <version>3.1.0</version>
+		    <scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<!-- jackson-databind-2.13.3.jar   JSON기능지원 목적 -->
+		<!-- 의존하고 있는 다른 라이브러리를 함께 다운받는다.  jackson-annotations, jackson-core-->
+		<!--추가-->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>2.13.3</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc8 -->
+		<!-- 오라클 데이타베이스 드라이버 -->
+		<!--추가-->
+		<dependency>
+		    <groupId>com.oracle.database.jdbc</groupId>
+		    <artifactId>ojdbc8</artifactId>
+		    <version>21.5.0.0</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
+		<!-- Connection Pool기능지원 -->
+		<dependency>
+		    <groupId>com.zaxxer</groupId>
+		    <artifactId>HikariCP</artifactId>
+		    <version>2.7.4</version>
+		</dependency>
+		
+		<!-- mybatis를 사용시 sql구문에 대한 상세로그를 출력. -->
+		<!-- 1)log4jdbc.log4j2.properties 2)logback.xml 2개의 파일을 src/main/resource 폴더에 복사 -->
+		<!-- 로그 level제어설정 : log4j.xml -->
+		<dependency>
+		    <groupId>org.bgee.log4jdbc-log4j2</groupId>
+		    <artifactId>log4jdbc-log4j2-jdbc4</artifactId>
+		    <version>1.16</version>
+		</dependency>
+		
+		<!--추가 5개-->
+		<!-- mybatis 사용하기위한 아래 5가지 라이브러리(With spring-test). -->
+		<!-- 1)mybatis 2)mybatis-spring 3)spring-jdbc 4)spring-tx 5)spring-test-->
+		<!-- 1)https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+		<!-- xml문서에 sql구문을 관리하는 형태의 특징 -->
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis</artifactId>
+		    <version>3.4.6</version>
+		</dependency>
+		<!-- 2)https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+		<!-- 스프링과 마이바티스를 중계(연결) -->
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis-spring</artifactId>
+		    <version>1.3.2</version>
+		</dependency>
+		<!-- 3)https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+		<!-- 자바의 jdbc를 스프링버전으로 만든 의미. -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-jdbc</artifactId>
+		    <version>${org.springframework-version}</version>
+		</dependency>
+		<!-- 4)https://mvnrepository.com/artifact/org.springframework/spring-tx -->
+		<!-- 트랜잭션 기능제공 -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-tx</artifactId>
+		    <version>${org.springframework-version}</version>
+		</dependency>
+		<!-- 5)JUnit와 함께 테스트를 위한 관련 라이브러리 -->
+		<!--  테스트 기능제공 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/net.coobird/thumbnailator -->
+		<!-- 썸네일 이미지 -->
+		<dependency>
+		    <groupId>net.coobird</groupId>
+		    <artifactId>thumbnailator</artifactId>
+		    <version>0.4.8</version>
+		</dependency>
+		
+		
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>1.18.22</version>
+		    <scope>provided</scope>
+		</dependency>
+	
+		<!-- Test -->
+		<!-- 단위테스트 기능을 제공하는 프로그램. -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<!-- 4.7 -> 4.12 변경 -->
+			<version>4.12</version>
+			<!-- <scope>test</scope> -->
+		</dependency>   
+		
+		      
+	</dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-eclipse-plugin</artifactId>
+                <version>2.9</version>
+                <configuration>
+                    <additionalProjectnatures>
+                        <projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
+                    </additionalProjectnatures>
+                    <additionalBuildcommands>
+                        <buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>
+                    </additionalBuildcommands>
+                    <downloadSources>true</downloadSources>
+                    <downloadJavadocs>true</downloadJavadocs>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <compilerArgument>-Xlint:all</compilerArgument>
+                    <showWarnings>true</showWarnings>
+                    <showDeprecation>true</showDeprecation>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <configuration>
+                    <mainClass>org.test.int1.Main</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
