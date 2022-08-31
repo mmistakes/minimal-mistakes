@@ -13,7 +13,7 @@ toc: true
 
 ##### HTML코드 [index.html]
 
-```HTML
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
