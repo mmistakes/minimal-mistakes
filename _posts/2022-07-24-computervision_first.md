@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Computer Vision"
+author: hanwool
 ---
 
 <br/>
@@ -156,6 +157,7 @@ title: "Computer Vision"
 정리하자면, 컴퓨터 비전은 먼저 많은 이미지를 수집하여 그 이미지를 학습하고, 그 학습한 지식을 토대로 새로운 이미지를 처리하여 분석 및 해석하는 학문이라고 볼 수 있습니다.
 </font>
 
+<!--
 <br/>
 <b> <font size="4"> About the Author  </font> </b>
 <br/>
@@ -166,3 +168,4 @@ title: "Computer Vision"
 &nbsp; <font size="4"> <b> Hanwool Park </b> </font> <br/>
 &nbsp; <font size="4"> Machine Learning Engineer  </font> <br/>
 &nbsp;&nbsp;<a href="https://www.linkedin.com/in/hanwool-park/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/1280px-LinkedIn_Logo.svg.png" alt="Linkedin" width="80" height="20"></a>&nbsp;<a href="https://github.com/sky4689524/"><img src="https://flyclipart.com/thumb2/rendering-notebooks-on-github-jupyter-blog-813503.png" alt="Github" width="70" height="20"></a>
+-->
