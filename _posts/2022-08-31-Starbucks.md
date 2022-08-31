@@ -9,7 +9,7 @@ toc: true
 
 ###  2022.08.31
 
-유튜브를 통한 Starbucks 상단 대 메뉴 클론코딩
+#### 유튜브를 통한 Starbucks 상단 대 메뉴 클론코딩
 
 ##### HTML코드 [index.html]
 
@@ -185,7 +185,7 @@ ul {
 
 <span style ='background-color:black;'>[유튜브 리베하얀님을 통한 클론코딩](https://www.youtube.com/watch?v=v_bxMmHQLLg&t=668s)</span>
 
-##### 결과물 
+#### 결과물 
 
 ###### Starbucks Korea Page
 
