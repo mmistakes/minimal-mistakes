@@ -1,0 +1,9 @@
+ksron:
+  name : "Sharon Kim"
+  bio  : ""
+  avatar : "/assets/images/bio-ksron-avatar.png"
+  links:
+    - label: "Email"
+      icon: fas fa-fw fa-envelope-square"
+      url: "mailto:kasrlmoojoo@gmail.com"
+
