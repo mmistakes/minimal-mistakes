@@ -4,6 +4,19 @@ ksron:
   avatar : "/assets/images/bio-ksron-avatar.png"
   links:
     - label: "Email"
-      icon: fas fa-fw fa-envelope-square"
+      icon: "fas fa-fw fa-envelope-square"
       url: "mailto:kasrlmoojoo@gmail.com"
-
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ksron"
+hanwool:
+  name : "Hanwool Park"
+  bio  : "Machine Learning Engineer"
+  avatar : "/assets/images/bio-hanwool-avatar.jpeg"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "mailto:kasrlmoojoo@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sky4689524/"
