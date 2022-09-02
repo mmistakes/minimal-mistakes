@@ -28,6 +28,7 @@ While there are COVID restrictions in place (and it remains convenient) these wi
 
 | Date                | Location                 | Speaker            |
 |:-------------------:|:------------------------:|:------------------:|
+| Mon 5th September 2022   | Hybrid                   | CANCELLED          |
 
 
 ### Past meetings
@@ -51,6 +52,9 @@ This schedule is tentative - if you cannot attend a meeting where you are schedu
 
 | Date                     | Location                 | Speaker            |
 |:------------------------:|:------------------------:|:------------------:|
-| Mon 5th September 2022   | Hybrid                   | TBC                |
 | Mon 12th September 2022  | Hybrid                   | Project Recaps     |
 | Mon 19th September 2022  | Hybrid                   | TBC                |
+| Tue 26th September 2022  | Hybrid                   | TBC                |
+| Mon 3rd October 2022  | Hybrid                   | TBC                |
+| Mon 11th October 2022  | Hybrid                   | TBC                |
+| Mon 17th October 2022  | Hybrid                   | TBC                |
