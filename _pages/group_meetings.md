@@ -28,21 +28,22 @@ While there are COVID restrictions in place (and it remains convenient) these wi
 
 | Date                | Location                 | Speaker            |
 |:-------------------:|:------------------------:|:------------------:|
-| Mon 29th August 2022| Hybrid                   | Emma Hobbs         |
+
 
 ### Past meetings
 
 | Date                | Location                 | Speaker            |
 |:-------------------:|:------------------------:|:------------------:|
+| Tue 2nd August 2022 | Hybrid                   | Areej Obaid        |
+| Mon 29th August 2022| Hybrid                   | Emma Hobbs         |
+| Mon 25th July 2022  | Zoom (see calendar link) | Nora Novak         |
+| Tue 19th July 2022  | Hybrid                   | David Teixeira     |
+| Mon 11th July 2022  | Zoom                     | Yassmeen Ali       |
 | Mon 4th July 2022   | Zoom (see calendar link) | Julianna Piat      |
 | Mon 27th June 2022  | Zoom (see calendar link) | Leighton Pritchard |
 | Mon 20th June 2022  | CANCELLED                | CANCELLED          |
 | Mon 13th June 2022  | Zoom (see calendar link) | Angelika Kiepas    |
 | Mon 6th June 2022   | Zoom (see calendar link) | Emma Hobbs         |
-| Mon 11th July 2022  | Zoom                     | Yassmeen Ali       |
-| Tue 19th July 2022  | Hybrid                   | David Teixeira     |
-| Mon 25th July 2022  | Zoom (see calendar link) | Nora Novak         |
-| Tue 2nd August 2022 | Hybrid                   | Areej Obaid        |
 
 ### Future Meeting Schedule
 
