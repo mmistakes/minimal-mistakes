@@ -22,6 +22,8 @@ docs:
         url: /categories/#project
       - title: "ERROR"
         url: /categories/#error
+        - title: "개념정리"
+        url: /categories/#개념정리
         
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
