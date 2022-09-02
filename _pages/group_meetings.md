@@ -35,8 +35,8 @@ While there are COVID restrictions in place (and it remains convenient) these wi
 
 | Date                | Location                 | Speaker            |
 |:-------------------:|:------------------------:|:------------------:|
-| Tue 2nd August 2022 | Hybrid                   | Areej Obaid        |
 | Mon 29th August 2022| Hybrid                   | Emma Hobbs         |
+| Tue 2nd August 2022 | Hybrid                   | Areej Obaid        |
 | Mon 25th July 2022  | Zoom (see calendar link) | Nora Novak         |
 | Tue 19th July 2022  | Hybrid                   | David Teixeira     |
 | Mon 11th July 2022  | Zoom                     | Yassmeen Ali       |
