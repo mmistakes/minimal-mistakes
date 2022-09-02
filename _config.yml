@@ -131,7 +131,7 @@ author:
     - label: "ERROR"
       url: "/categories/#error"
     - label: "개념정리"
-    url: "/categories/#개념정리"
+      url: "/categories/#concept"
 
 # Site Footer
 footer:
