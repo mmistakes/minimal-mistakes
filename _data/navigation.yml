@@ -6,6 +6,8 @@ main:
     url: /search/
   - title: "Tag"
     url: /tags/
+  - title: "Home"
+    url: https://jangwoojun.github.io/
     
     
   # - title: "About"
