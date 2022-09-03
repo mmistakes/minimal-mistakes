@@ -1,7 +1,7 @@
 ---
 title: "Today I Learned"
 layout: archive
-permalink: /Today-I-Learned
+permalink: /TIL
 
 
 author_profile: true
@@ -9,7 +9,7 @@ sidebar:
   nav: "docs"
 ---
 
-{% assign posts = site.categories.Today-I-Learned %}
+{% assign posts = site.categories.TIL %}
 {% for post in posts %}
   {% include custom-archive-single.html type=entries_layout %}
 {% endfor %}
