@@ -1,7 +1,7 @@
 ---
 title: "Today I Learned"
 layout: archive
-permalink: /til
+permalink: categories/til
 
 
 author_profile: true
