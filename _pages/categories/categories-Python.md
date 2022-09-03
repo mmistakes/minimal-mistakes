@@ -1,7 +1,7 @@
 ---
 title: "Python"
 layout: archive
-permalink: /python
+permalink: categories/python
 
 
 author_profile: true
