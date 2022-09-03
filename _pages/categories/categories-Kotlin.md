@@ -1,7 +1,7 @@
 ---
 title: "Kotlin"
 layout: archive
-permalink: /Kotlin
+permalink: categories/Kotlin
 
 
 author_profile: true
