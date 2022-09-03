@@ -22,7 +22,7 @@ docs:
         url: /categories/#project
       - title: "ERROR"
         url: /categories/#error
-      - title: "개념정리"
+      - title: "CONCEPT"
         url: /categories/#concept
         
   # - title: "About"
