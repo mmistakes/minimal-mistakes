@@ -1,7 +1,7 @@
 ---
 title: "CS"
 layout: archive
-permalink: /cs
+permalink: categories/cs
 
 
 author_profile: true
