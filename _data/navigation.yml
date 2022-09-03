@@ -7,34 +7,6 @@ main:
   - title: "Tag"
     url: /tags/
     
-docs:
-  - title: Today-I-Learned
-    children:
-      - title: "Today I Learned"
-        url: til/
-        category: "til"
-  - title: Computer/Mobile
-    children:
-      - title: "CS"
-        url: cs/
-        category: "cs"
-      - title: "Mobile"
-        url: mobile/
-        category: "mobile"
-  - title: language
-    children:
-      - title: "C++"
-        url: cpp/
-        category: "cpp"
-      - title: "Python"
-        url: python/
-        category: "python"
-      - title: "Kotlin"
-        url: kotlin/
-        category: "kotlin"
-      - title: "Swift"
-        url: swift/
-        category: "swift"
     
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/

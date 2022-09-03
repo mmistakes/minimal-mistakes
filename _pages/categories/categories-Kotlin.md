@@ -1,14 +1,11 @@
 ---
 layout: archive
-permalink: kotlin
+permalink: categories/kotlin
 title: "Kotlin"
 
 author_profile: true
-sidebar:
-  nav: "docs"
+sidebar_main: true
 ---
 
 {% assign posts = site.categories.kotlin %}
-{% for post in posts %}
-  {% include custom-archive-single.html type=entries_layout %}
-{% endfor %}
+{% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
