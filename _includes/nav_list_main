@@ -1,0 +1,26 @@
+{% assign sum = site.posts | size %}
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
+  <ul class="nav__items" id="category_tag_menu">
+      
+      <li>
+             <span style="font-family:'Cafe24Oneprettynight';">전체 글 </style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
+      </li>
+      <li>
+       
+        <span class="nav__sub-title">Today I Learned</span>
+            
+            <ul>
+
+                {% for category in site.categories %}
+                    {% if category[0] == "TIL" %}
+                        <li><a href="/categories/TIL" class=""> Today I Learned({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+
+  </ul>
+</nav>
