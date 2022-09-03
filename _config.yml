@@ -130,7 +130,7 @@ author:
       url: "/categories/#project"
     - label: "ERROR"
       url: "/categories/#error"
-    - label: "개념정리"
+    - label: "CONCEPT"
       url: "/categories/#concept"
 
 # Site Footer
