@@ -12,29 +12,29 @@ docs:
     children:
       - title: "Today I Learned"
         url: til/
-        category: "Today-I-Learned"
+        category: "til"
   - title: Computer/Mobile
     children:
       - title: "CS"
         url: cs/
-        category: "CS"
+        category: "cs"
       - title: "Mobile"
         url: mobile/
-        category: "Mobile"
+        category: "mobile"
   - title: language
     children:
       - title: "C++"
         url: cpp/
-        category: "C++"
+        category: "cpp"
       - title: "Python"
         url: python/
-        category: "Python"
+        category: "python"
       - title: "Kotlin"
         url: kotlin/
-        category: "Kotlin"
+        category: "kotlin"
       - title: "Swift"
         url: swift/
-        category: "Swift"
+        category: "swift"
     
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
