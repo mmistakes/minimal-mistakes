@@ -1,7 +1,7 @@
 ---
 title: "Swift"
 layout: archive
-permalink: /swift
+permalink: categories/swift
 
 
 author_profile: true
