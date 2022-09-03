@@ -111,23 +111,23 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: "woojun0107@naver.com"
+      url: "woojun0107@naver.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/JangWoojun"
+      url: "https://github.com/JangWoojun"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       url: "https://www.instagram.com/w_oojun06/"
+      url: "https://www.instagram.com/w_oojun06/"
 
 # Site Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/JangWoojun"
+      url: "https://github.com/JangWoojun"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       url: "https://www.instagram.com/w_oojun06/"
+      url: "https://www.instagram.com/w_oojun06/"
 
 
 
