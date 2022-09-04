@@ -142,7 +142,7 @@
   
       .prev_next {
         font-family: $cute;
-        color:#ffd861;
+        color:$primary-color;
       }
   
       &:hover {
@@ -471,7 +471,7 @@
       color: inherit;
       font-size: $type-size-3;
       font-family: $cute;
-      color: mix(#fff,$primary-color,80%);
+      color: $light-gray;
   
       &:hover {
         text-decoration: underline;
@@ -527,7 +527,7 @@
     padding: 0.25rem 0;
     font-size: $type-size-3;
     font-family: $serif;
-    color: mix(#fff,$primary-color,35%);
+    color: mix(#000,$primary-color,20%);
     border-bottom: 1px solid $border-color;
   }
   
@@ -604,3 +604,5 @@
       padding-left: 3.25rem
     }
   }
+ 
+  
