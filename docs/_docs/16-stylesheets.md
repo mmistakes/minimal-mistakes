@@ -147,7 +147,7 @@ $type-size-8 : 0.625em;  // ~10px
 
 ### Colors
 
-Change the mood of your site by altering a few color variables. `$body-color`, `$background-color`, `$text-color`, `$link-color`, and `$masthead-link-color` will have the most affect when changed.
+Change the mood of your site by altering a few color variables. `$body-color`, `$background-color`, `$text-color`, `$link-color`, and `$masthead-link-color` will have the most effect when changed.
 
 #### Syntax highlighting
 
