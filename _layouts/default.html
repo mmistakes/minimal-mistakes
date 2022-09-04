@@ -1,4 +1,5 @@
 ---
+classes: wide
 ---
 
 <!doctype html>
@@ -12,6 +13,20 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+
+    <!-- 스크롤바 커스터마이징 -->
+    <style> 
+      ::-webkit-scrollbar{width: 16px;}
+      ::-webkit-scrollbar-track {background-color:#E2B584; border-radius: 16px;}
+      ::-webkit-scrollbar-thumb {background-color:#E2B584; border-radius: 16px;}
+      ::-webkit-scrollbar-thumb:hover {background: #FFECB5;}
+      ::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment 
+      {
+          width:12px;height:12px;background:transparent;}
+      }  
+
+      
+    </style>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
@@ -34,6 +49,10 @@
         {% include_cached footer.html %}
       </footer>
     </div>
+
+    <aside class="sidebar__top">
+      <a href="#site-nav"> <i class="fas fa-angle-double-up fa-2x"></i></a>
+    </aside>
 
     {% include scripts.html %}
 

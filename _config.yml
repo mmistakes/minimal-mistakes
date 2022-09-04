@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "jennie"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/dorushe.jpeg"
   bio              : "나의 공부 기록들"
   location         : "South Korea"
   email            :
@@ -274,5 +274,6 @@ defaults:
       share: true
       related: true
       show_date: true 
+      sidebar_main: true
 
 date_format: "%Y-%m-%d"
