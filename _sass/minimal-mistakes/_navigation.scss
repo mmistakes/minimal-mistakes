@@ -471,7 +471,7 @@
       color: inherit;
       font-size: $type-size-3;
       font-family: $cute;
-      color: $light-gray;
+      color: $gray;
   
       &:hover {
         text-decoration: underline;
@@ -548,7 +548,7 @@
     .nav__title {
       color: #fff;
       font-size: $type-size-5;
-      background: mix(#fff,$primary-color,30%);
+      background: mix(#000,$primary-color,30%);
       border-top-left-radius: $border-radius;
       border-top-right-radius: $border-radius;
     }
@@ -579,7 +579,7 @@
       border-bottom: 1px solid $border-color;
   
       &:hover {
-        color: $text-color;
+        color: #000;
       }
     }
   
