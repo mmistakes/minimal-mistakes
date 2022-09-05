@@ -157,19 +157,20 @@ online at [http://www.csc.liv.ac.uk/~frank/publ/publ.html](http://www.csc.liv.ac
 The EL description logics allows following constructs:
 
 - Concept
-- Axioms: concept inclusion , concept equality
+- Axioms: concept inclusion, concept equality
 - No concept name can occur on the left side of an axiom more than once
-The algorithm uses a signature , which is an union of a set of concept and a set of roles.
+The algorithm uses a signature , which is a union of a set of concept and a set of roles.
 
 The algorithm returns in polynomial time two sets of concepts:
-![diffr](/assets/images/owldiff/diffr.png)
-![diffl](/assets/images/owldiff/diffr.png)
+{% include figure image_path="/assets/images/owldiff/diffr.png" alt="Right side result" %}
+{% include figure image_path="/assets/images/owldiff/diffl.png" alt="Left side result" %}
+
 
 
 The two sets represent differences between two ontologies, even when the differences cannot be observed in class hierarchies.
-The algorithm uses various auxiliary sets, and is rather complicated; it is beyond scope of this document, for details please see the paper Konev et al.
+The algorithm uses various auxiliary sets, and is rather complicated; it is beyond scope of this document, for details please see the paper by Konev et al.
 
-Following image shows how a sample output of CEX algorithm looks like. This is is an example used in the paper Konev et al.,
+Following image shows how a sample output of CEX algorithm looks like. This is an example used in the paper Konev et al.,
 giving the same results as in the paper.
 
 {% include figure image_path="/assets/images/owldiff/owldiff-cex.png" alt="OWLDiff CEX result view" %}
