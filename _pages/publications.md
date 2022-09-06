@@ -1,6 +1,6 @@
 ---
 title: "Publications"
-layout: archive
+layout: posts
 permalink: /publications/
 hidden: false
 header:
@@ -19,10 +19,34 @@ intro:
 
 Watch this space for the latest news and posts of interest!
 
+<!-- {% include base_path %}
+{% capture written_year %}'None'{% endcapture %}
+{% for post in site.posts %}
+  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% if year != written_year %}
+    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+    {% capture written_year %}{{ year }}{% endcapture %}
+  {% endif %}
+  {% include archive-single.html %}
+{% endfor %}
+{% include feature_row %}
 
-<!--
 
-<div class="row">
+{% include base_path %}
+{% capture written_year %}'None'{% endcapture %}
+{% for post in site.publications %}
+  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% if year != written_year %}
+    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+    {% capture written_year %}{{ year }}{% endcapture %}
+  {% endif %}
+  {% include archive-single.html %}
+{% endfor %}
+{% include feature_row %} -->
+
+
+
+<!-- <div class="row">
   <div class="column">
     {% include base_path %}
     {% capture written_year %}'None'{% endcapture %}
@@ -49,6 +73,6 @@ Watch this space for the latest news and posts of interest!
     {% endfor %}
     {% include feature_row %}
   </div>
-</div>
+</div> -->
 
--->
+
