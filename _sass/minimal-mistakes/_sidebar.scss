@@ -182,6 +182,7 @@
   margin: 0;
   font-family: $cute;
   font-size: $type-size-4;
+  transform: skew(-0.1deg);
 
   @include breakpoint($large) {
     margin-top: 10px;
