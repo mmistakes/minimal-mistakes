@@ -151,6 +151,8 @@
   padding-right: 25px;
   line-height: 1;
   font-family: $cute;
+  transform: skew(-0.1deg);
+
 
   @include breakpoint($large) {
     display: block;
@@ -175,6 +177,7 @@
 }
 .sidebar .author__name {
   font-family: $cute;
+  transform: skew(-0.1deg);
   font-size: $type-size-4;
 }
 
@@ -191,6 +194,7 @@
 
   p {
     font-family: $cute;
+    transform: skew(-0.1deg);
     margin-top: 1.6px;
     margin-bottom: 3px;
   }

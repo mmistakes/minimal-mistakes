@@ -142,6 +142,7 @@
   
       .prev_next {
         font-family: $cute;
+        transform: skew(-0.1deg);
         color:$primary-color;
       }
   
@@ -471,6 +472,7 @@
       color: inherit;
       font-size: $type-size-3;
       font-family: $cute;
+      transform: skew(-0.1deg);
       color: $gray;
   
       &:hover {
@@ -538,6 +540,7 @@
   
   .toc {
     font-family: $cute;
+    transform: skew(-0.1deg);
     color: $gray;
     background-color: $background-color;
     border: 1px solid $border-color;

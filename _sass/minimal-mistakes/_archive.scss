@@ -46,11 +46,12 @@
 
 .archive__item-title {
   margin-bottom: 0.9em;
-  font-family: $sans-serif-narrow;
+ // font-family: $sans-serif-narrow;
   line-height: 1.5;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: cute;
+  font-family: $cute;
+  transform: skew(-0.1deg);
   font-size: $type-size-4;
 
   a[rel="permalink"]::before {
