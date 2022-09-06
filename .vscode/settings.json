@@ -1,5 +1,5 @@
 {
     "pasteImage.basePath": "${currentFileDir}",
-    "pasteImage.path": "${currentFileDir}/images/",
+    "pasteImage.path": "assets/img/",
     "pasteImage.prefix": "./"
 }
