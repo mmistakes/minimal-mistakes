@@ -108,11 +108,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Grin_96님의 블로그입니다. 👽"
   location         : "South Korea"
-  email            : 
+  email            : "bnmnil96@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "bnmnil96@gmail.com"
+      #url: "bnmnil96@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
