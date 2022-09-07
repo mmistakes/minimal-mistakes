@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "en-k"
 title                    : "gye-jin blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
