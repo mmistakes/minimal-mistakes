@@ -108,7 +108,7 @@ libraryDependencies += "com.lihaoyi" %% "fansi" % "0.4.0"
 The method `+=` appends the provided library to the project dependencies. 
 An SBT dependency contains mainly 3 parts separated by % symbol. 
 The first part is the groupId of the library. The second part is the library name(artifactId) and the third part is the version of the library to be used. If you notice, you can see that a double percentage symbol (`%%`) is used between groupId and artifactId. 
-Scala is not binary compatible with different versions (such as 2.11, 2.12, 2.13 etc). Hence there are separate releases for each Scala libraries for each required versions. %% symbol ensures that SBT uses the same Scala version of library as the project.
+Scala is not binary compatible with different versions (such as 2.11, 2.12, 2.13 etc) except for Scala 3 series. Hence there are separate releases for each Scala libraries for each required versions. %% symbol ensures that SBT uses the same Scala version of library as the project.
 That means SBT will automatically append the Scala version of the project before trying to find the library. The above dependency code is equivalent to the following format(note that single % is used, but artifactid contains the Scala major version):
 ```
 libraryDependencies += "com.lihaoyi" % "fansi_2.13" % "0.4.0"
@@ -147,7 +147,7 @@ libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.13" % Test
 ```
 
 Note the special identifier _Test_ after the last % symbol. Adding `Test` informs SBT that this library is needed only for the test cases and accessible under _src/test/scala_ directory. Whenever we make the packaged application from our project, these libraries are not added to the package as they are not needed at the application run time. 
-Instead of the identifier _Test_, we can also use the string `"test"` (wrapped in double quotes). However, this practice is discouraged as it doesnt provide typesafety.
+Instead of the identifier _Test_, we can also use the string `"test"` (wrapped in double quotes). However, this practice is discouraged as it doesn't provide type safety.
 
 Now that we added the dependency, we can add a test file as:
 ```
@@ -199,7 +199,7 @@ This will set the value to false within scopes of test.
 
 There are many such configurations which are configured using the scope. You can think of this something in the lines of _Test.parallelExecution_.
 
-SBT also has other different scopes such as `IntegrationTest`, `RunTime`, `Compile`, and so on. So, we can set the configuration only for a particular scope. For example, we can set some configurations only for the scope `IntegrationTest` as:
+The list of different SBT scopes are `Test`, `IntegrationTest`, `RunTime`, `Compile`, `Provided`, `Optional`, `CompileInternal` and `ScalaTool` . So, we can set the configuration only for a particular scope. For example, we can set some configurations only for the scope `IntegrationTest` as:
 ```
 IntegrationTest / testOptions += Tests.Argument("-verbosity", "1")
 ```
@@ -218,7 +218,7 @@ lazy val module_2 = (project in file("module-2"))
 ```
 Now, when we can save this file and hit _sbt_ command in the project directoy. This will import the project based on the _build.sbt_ we created and will also create 2 sub directores as _module-1_ and _module-2_ within the directory. The value provided in _file()_ is used to create the sub module name. 
 
-However, as of now there is no relationship between any of the modules. We can explicitly combine both the sub modules together and link to the parent project by adding a new line as belwo to the _build.sbt_:
+However, as of now there is no relationship between any of the modules. We can explicitly combine both the sub modules together and link to the parent project by adding a new line as below to the _build.sbt_:
 ```
 lazy val root = (project in file("."))
   .aggregate(module_1, module_2)
@@ -238,11 +238,11 @@ lazy val module_2 = (project in file("module-2")).settings(
 )
 ```
 
-## 10. Multi-Module Build Best Practises
+## 10. Multi-Module Build Best Practice
 We need to first identify and get clarity on different modules. Let's assume that we are building an application that contains database access, HTTP services, utilities etc. 
 Each of these can be separated as a  module. Then we can combine the different parts if one is dependant on another.
 
-Some good practice are:
+Some good practice principles:
 - a single `build.sbt` file with all sub-module information inside.
 - common settings at the top (e.g. Scala version, org name)
 - `ThisBuild` to ensure the settings are applied to the entire project including submodules
