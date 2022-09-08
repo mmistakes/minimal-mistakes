@@ -103,7 +103,7 @@ analytics:
 author:
   name: "김세훈 / Sehoon Kim [26]"
   avatar: "/assets/IMG_5588 2.jpg"
-  bio: "I always do what i want to be."
+  bio: "I always do what i want it to be."
   location: "Korea - Seoul"
   email:
   links:
@@ -115,7 +115,7 @@ author:
       url: "https://github.com/Hoonikim"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/i_am_hoon__/"
+      url: "https://www.instagram.com/to_sehoon/"
 
 # Site Footer
 footer:
