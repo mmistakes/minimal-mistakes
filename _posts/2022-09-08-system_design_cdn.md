@@ -3,10 +3,6 @@ layout: single
 title:  "CDN은 어떻게 동작할까?"
 ---
 
-
-
-# CDN?
-
 `CDN(Content delivery network`는 지리적으로 분산된 서버(edge server 라고도 일컫음)를 말한다. `static`, `dynamic` 한 컨텐츠를 빠르게 제공하는 것을 목적으로 한다.
 
 ---
@@ -25,8 +21,6 @@ title:  "CDN은 어떻게 동작할까?"
 **CDN 동작 순서**
 
 1. 브라우저에 `https://www.google.com`을 입력하면 브라우저는 [로컬 DNS 캐시]()에서 도메인 네임을 찾는다.
-
-<br>
 
 2. 로컬 DNS 캐시에서 도메인 네임을 찾지 못한 경우,  브라우저는 도메인 네임을 찾기 위해 DNS Resolver로 이동한다. 일반적으로 DNS Resolver는 [ISP]()(Internet Service Provider)에게 있다.
 
