@@ -1,6 +1,7 @@
-# DNS 캐시 테이블이란?
-
-
+---
+layout: single
+title:  "로컬 DNS 캐시에서 도메인 네임을 확인하는 과정"
+---
 #### DNS 프로토콜
 
 네트워크 프로토콜을 사용해 통신을 할 때는 `Host`를 식별하기 위해 `IP 주소` 를 사용한다. 하지만 현실적으로 IP 주소를 기억하는 것은 비효율적이기 때문에 Host의 IP 주소와 URL을 매핑해주는 DNS 프로토콜을 사용하면 도메인 네임을 확인하여 Host에 접근할 수 있다. 
@@ -18,12 +19,14 @@
 `hosts` 파일에는 Host의 IP 주소를 찾기위해 OS가 호스트의 도메인 네임과 IP 주소를 대응시켜 저장해놓은 텍스트 파일이다. Window, Mac, Linux OS에서 파일 내용을 확인해볼 수 있다. 하지만 인터넷의 수많은 서버의 도메인 정보를 저장하기에는 무리가 있어 잘 사용하지 않으며 최근에는 네임서버를 사용한다.
 
 - Hosts 파일 확인
+
 ```
 # window
 # C:\Windows\System32\drivers\etc
 
 type hosts
 ```
+
 <div style="display: flex;
     flex-direction: column;
     margin: 20px 0">
