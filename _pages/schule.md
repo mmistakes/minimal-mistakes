@@ -4,7 +4,7 @@ title: "Unsere Schule"
 permalink: /schule/
 author_profile: false
 excerpt: "Über uns, Kooperationen, Veranstaltungen, JÜL-Konzept, Unterrichtszeiten und Kollegium"
-modified: 2017-03-07T10:55:00+01:00
+modified: 2022-09-09T10:55:00+01:00
 header:
   overlay_color: "#fff"
   overlay_image: /assets/images/mm-home-page-feature.jpg
@@ -12,10 +12,14 @@ header:
 
 {% include abkuerzungen.md %}
 
+## Kontakt
+
+Unsere Kontaktseite finden Sie [hier](/kontakt/).
+
 ## Über die Grundschule am Brandwerder
 
 Wir sind eine zweizügige, verlässliche Halbtagsgrundschule in Spandau/Staaken,
-die in diesem Schuljahr von rund 300 Kindern besucht wird.
+die in diesem Schuljahr von rund 350 Kindern besucht wird.
 
 Wir setzen Schwerpunkte im selbstständigen und sozialen Lernen. Die
 unterschiedlichen Interessen und Begabungen des Kindes werden aufgegriffen und
@@ -27,10 +31,8 @@ Wir sind bestrebt, Übergänge so gut wie möglich zu gestalten und pflegen
 folgende Kooperationen:
 
 Im Bereich Übergang Oberschule kooperieren wir mit dem
-{% include external_link text="Carl-Friedrich-von-Siemens-Gymnasium" url="http://cfvsiemens.de" %},
-dem
-{% include external_link text="Lily-Braun-Gymnasium" url="https://lily-braun-gymnasium.de" %}
-sowie der Integrierten Sekundarschule (ISS)
+{% include external_link text="Carl-Friedrich-von-Siemens-Gymnasium" url="http://cfvsiemens.de" %}
+und der Integrierten Sekundarschule (ISS)
 {% include external_link text="Schule an der Jungfernheide" url="https://schule-an-der-jungfernheide.de" %}.
 
 Hier pflegen wir einen engen Kontakt. Die Kinder der sechsten Klassen haben die
@@ -46,16 +48,17 @@ Gemeinsam mit Ihren Erzieher*innen besuchen die Kinder den Unterricht und sind
 zu den Schulveranstaltungen eingeladen. Gleichzeitig befinden wir uns in engem
 Austausch und sind gerne Gast der Elternversammlungen.
 
-Neu seit Schuljahr 2020 sind Kooperationen mit
-{% include external_link text="Hertha BSC" url="https://www.herthabsc.de/de/intern/schulaktion/page/2126--17--.html" %} und
-{% include external_link text="Al-Farabi Musikakademie" url="https://www.al-farabi.de" %}. Die Kinder haben hier die Möglichkeit, sich für eine Fußball-AG mit Anthony anzumelden oder in einer Chor-AG mit Kian zu singen. Hier werden Talente erkannt und individuell gefördert.
+Wir pflegen Kooperationen mit
+{% include external_link text="Hertha BSC" url="https://www.herthabsc.de/de/intern/schulaktion/page/2126--17--.html" %} und der
+{% include external_link text="Al-Farabi Musikakademie" url="https://www.al-farabi.de" %}.
+<!-- Die Kinder haben hier die Möglichkeit, sich für eine Fußball-AG mit Anthony anzumelden oder in einer Chor-AG mit Kian zu singen. -->
+Hier werden Talente erkannt und individuell gefördert.
 
 ### Veranstaltungen der Schulgemeinschaft
 
 Wir führen gemeinschaftliche Schulveranstaltungen durch wie etwa Sommerfeste,
-Zirkus in der Schule und Aktivitäten zur Weihnachtszeit. Fest verankert ist
-auch der Brandwerder-Cup, der immer  in den letzten Tagen vor den Sommerferien
-durchgeführt wird. Klassen absolvieren ausgewählte sportliche Aufgaben und
+Zirkus in der Schule, Laternenumzug und Aktivitäten zur Weihnachtszeit. Fest verankert sind das Flip-Flopturnier, das Fußballturnier der Klassen vier bis sechs sowie der Brandwerder-Cup. Dieser findet immer in den letzten Tagen vor den Sommerferien
+statt. Klassen absolvieren ausgewählte sportliche Aufgaben und
 treten gegeneinander an. Teamwork steht hier im Mittelpunkt.
 
 
@@ -78,7 +81,7 @@ Die individuelle Förderung steht im Mittelpunkt.
 
 ## Das sind unsere Unterrichtszeiten:
 
-{% include outdated.md %}
+<!-- {% include outdated.md %} -->
 
 |Einlass | 7:50 Uhr | Blöcke | Mittagessen |
 | ---|----| ----- |  |
@@ -99,7 +102,7 @@ Die individuelle Förderung steht im Mittelpunkt.
 
 ## Ferientermine
 
-{% include outdated.md %}
+<!-- {% include outdated.md %}
 
 | Schuljahr 2019/20     | Ferienbeginn   | Ferienende     | erster Unterrichtstag |
 |-------------------    |--------------  |------------    |-----------------------|
@@ -108,7 +111,9 @@ Die individuelle Förderung steht im Mittelpunkt.
 | Winterferien          | Mo, 03.02.2020 | Sa, 08.02.2020 | Mo, 10.02.2020        |
 | Osterferien           | Mo, 06.04.2020 | Fr, 17.04.2020 | Mo, 20.04.2020        |
 | Pfingstferien         | Fr, 22.05.2020 |                | Mo, 25.05.2020        |
-| Sommerferien          | Do, 25.06.2020 | Fr, 07.08.2020 | Mo, 10.08.2020        |
+| Sommerferien          | Do, 25.06.2020 | Fr, 07.08.2020 | Mo, 10.08.2020        | -->
+
+Aktuelle Ferien von Berlin auf {% include external_link text="schulferien.org" url="https://www.schulferien.org/Kalender_mit_Ferien/Berlin.html" %}.
 
 <!-- | Unterrichtsfreier Tag | Fr, 31.05.2020 |                | Mo, 03.06.2020        | -->
 
@@ -196,7 +201,3 @@ Sprechzeiten und Kontaktdaten finden Sie [hier](/kontakt/#schulsozialarbeit).
 ## Hausordnung
 
 Sie finden die Hausordnung der Grundschule am Brandwerder [hier](/hausordnung/).
-
-## Kontakt
-
-Unsere Kontaktseite finden Sie [hier](/kontakt/).
