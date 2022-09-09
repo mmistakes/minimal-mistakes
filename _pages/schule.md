@@ -61,6 +61,9 @@ Zirkus in der Schule, Laternenumzug und Aktivitäten zur Weihnachtszeit. Fest ve
 statt. Klassen absolvieren ausgewählte sportliche Aufgaben und
 treten gegeneinander an. Teamwork steht hier im Mittelpunkt.
 
+## Unser Team
+
+{% include figure image_path="/assets/images/kollegium_2022_23.jpg" alt="Team der Grundschule am Brandwerder vom Schuljahr 2022/2023." caption="" %}
 
 ## JÜL-Konzept:
 {: #juel_konzept}
