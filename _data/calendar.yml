@@ -1,36 +1,87 @@
 [
   {
     "image_path": null,
+    "alt": "1. Wandertag",
+    "title": "1. Wandertag",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=bnV2MGhzbGVzaGs4czloOGswbnF1cGRkZWMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2022-09-12",
+      "date_time": null
+    },
+    "end": {
+      "date": "2022-09-13",
+      "date_time": null
+    },
+    "created": "2022-09-05T19:41:02.000Z",
+    "updated": "2022-09-05T19:41:02.521Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Jubiläumsprojektwoche",
+    "title": "Jubiläumsprojektwoche",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Y3FrMDNnZGw2N2RjMDJjNGxmZHJyb2djajggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2022-09-19",
+      "date_time": null
+    },
+    "end": {
+      "date": "2022-09-24",
+      "date_time": null
+    },
+    "created": "2022-09-05T19:41:44.000Z",
+    "updated": "2022-09-05T19:41:44.230Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Schuljubiläum „50 Jahre Brandwerder bewegt“",
+    "title": "Schuljubiläum „50 Jahre Brandwerder bewegt“",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NGMydTMwbTcwNzAwcTBjanZuaTJpbGtmZDQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2022-09-24T11:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2022-09-24T14:00:00+02:00"
+    },
+    "created": "2022-09-05T19:42:35.000Z",
+    "updated": "2022-09-05T19:42:35.753Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Anmeldezeitraum Schulanfänger 2023/24",
+    "title": "Anmeldezeitraum Schulanfänger 2023/24",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=bWgwbXE4MXFoc3UzMHBhbWFyNm9yajhlMHMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2022-10-10",
+      "date_time": null
+    },
+    "end": {
+      "date": "2022-10-22",
+      "date_time": null
+    },
+    "created": "2022-09-05T19:43:42.000Z",
+    "updated": "2022-09-05T19:43:42.423Z"
+  },
+  {
+    "image_path": null,
     "alt": "Herbstferien",
     "title": "Herbstferien",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2NnazY1czZocWVqZzlkdm5iOWJmcm1hZG0gbG9nbTh1bTNuNGljOGs2Z3NlM2o1b3AyMWdAZw",
+    "url": "https://www.google.com/calendar/event?eid=dW41amE3ZDUwdG91c2Fiamw4ZGYwcGFjZG8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": "2022-10-24",
       "date_time": null
     },
     "end": {
-      "date": "2022-11-06",
+      "date": "2022-11-05",
       "date_time": null
     },
-    "created": "2022-08-16T19:40:21.000Z",
-    "updated": "2022-08-16T19:40:31.881Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Weihnachtsferien",
-    "title": "Weihnachtsferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NmQ2NHUzNm1wM2liaWkwZTM2cGRoMTVoZTcgbG9nbTh1bTNuNGljOGs2Z3NlM2o1b3AyMWdAZw",
-    "start": {
-      "date": "2022-12-22",
-      "date_time": null
-    },
-    "end": {
-      "date": "2023-01-03",
-      "date_time": null
-    },
-    "created": "2022-08-16T19:42:18.000Z",
-    "updated": "2022-08-16T19:42:18.930Z"
+    "created": "2022-09-05T19:44:15.000Z",
+    "updated": "2022-09-05T19:44:15.209Z"
   }
 ]

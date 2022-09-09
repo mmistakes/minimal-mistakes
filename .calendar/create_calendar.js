@@ -7,9 +7,9 @@ const {google} = require('googleapis');
 const SCOPES = ['https://www.googleapis.com/auth/calendar.readonly'];
 const TOKEN_PATH = 'token.json';
 // official calendar:
-// const CALENDAR_ID = 'hem870ffa21nkf91a8n05llmss@group.calendar.google.com'
+const CALENDAR_ID = 'hem870ffa21nkf91a8n05llmss@group.calendar.google.com'
 // test calendar:
-const CALENDAR_ID = 'logm8um3n4ic8k6gse3j5op21g@group.calendar.google.com'
+// const CALENDAR_ID = 'logm8um3n4ic8k6gse3j5op21g@group.calendar.google.com'
 const CALENDAR_DATA_PATH = '../_data/calendar.yml'
 const max_results = 6
 
