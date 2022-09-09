@@ -136,5 +136,5 @@ und direkten Einfluss auf die Auswahl des Unternehmens haben.
 # Noch Fragen?
 
 Sollte Sie noch Fragen haben, dann können Sie sich an unsere
-koordinierende Erzieherin -- [Simone
-Melz](/kontakt/#koordinierende_erzieherin) -- wenden.
+koordinierende Fachkraft -- [Simone
+Melz](/kontakt/#koordinierende_fachkraft) -- wenden.
