@@ -24,7 +24,7 @@ Die wichtigsten Daten zum Schuljahr **2023/24** in einem Überblick.
 | Termine |  Veranstaltung |
 |---|---|
 | | Ihr Kind wurde im Zeitraum vom 1. Oktober 2016 bis zum 30. September 2017 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
-| Montag, 10.10.2022 bis Freitag, 21.10.2022  | {% include icon_link text="<b>Anmeldung</b>" icon="fa-file-text-o" url="#anmeldung" %} der Schulanfänger*innen im Sekretariat. |
+| Montag, 10.10.2022 bis Freitag, 21.10.2022  | {% include icon_link text="<b>Anmeldung</b>" icon="fa-file-text-o" url="#anmeldung" %} der Schulanfänger*innen im Sekretariat. Sie erhalten einen Termin per Post. |
 |  | **Hospitation:** Sie können in der Schule hospitieren und sich mit den Abläufen vertraut machen. Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren Sie hierzu einen Termin im Sekretariat. |
 | Dienstag, 31.07.2023 | Melden Sie Ihr Kind rechtzeitig zur {% include icon_link text="<b>Hortbetreuung (eFöB)</b>" icon="fa-child" url="#hort" %} an, so dass Ihr Kind am 01.08.2023 von unserem Hort betreut werden kann.  |
 | Samstag, 02.09.2023 | Endlich! Wir feiern die Einschulung in der Sporthalle |
@@ -66,15 +66,20 @@ nachsehen.<br/><br/>
 <!-- {% include outdated.md %} -->
 
 Wir sind eine zweizügige, [verlässliche Halbtagsgrundschule](/hortbetreuung/#vhg)
-in Spandau mit rund 325 Kindern, die von 28
+in Spandau mit rund 350 Kindern, die von 32
 Lehrer\*innen und 10 Erzieher\*innen unterrichtet und gefördert werden.
 Verlässlich bedeutet, dass Ihr Kind in der Schulzeit von 7:30 - 13:30 Uhr
 untergebracht ist. Die Betreuung kann kostenpflichtig auf die Zeiten von 6:00
 bis 18:00 ausgeweitet werden ([eFöB/Hort](/hortbetreuung/#hort)).
 
-In den Klassen 1, 2, 3 wird jahrgangsübergreifend gelernt. Die Kinder der
+In den Klassen 1, 2, 3 wird jahrgangsübergreifend gelernt und
+[Arbeitsgemeinschaften](/ags/) runden den Schultag ab.
+
+<!-- Wir bieten schon ab der ersten Klasse in den Bereichen Sport, Musik und Kunst eine [Vielzahl an AGs](/ags/) an. -->
+
+<!-- Die Kinder der
 Jahrgangsstufen 4 - 6 haben im Rahmen der Sportbetonung vier statt drei Stunden
-Sport.
+Sport. -->
 
 <!-- Derzeit haben wir eine JabL-Klasse (1a) und drei JÜL-Klassen (A1, A2, A3). In
 den JÜL-Klassen sind Erstklässler, Zweitklässler und Drittklässer gemischt, so
@@ -85,7 +90,6 @@ vierte Klasse (4b) zusammengelegt. Auf der anderen Seite bieten JabL-Klassen
 eine stabile Klassengemeinschaft über die gesamte Grundschulzeit. Sie können bei
 der Anmeldung Ihre Präferenz der Unterrichtsform angeben. -->
 
-Wir bieten schon ab der ersten Klasse in den Bereichen Sport, Musik und Kunst eine [Vielzahl an AGs](/ags/) an.
 
 Wir laden Sie ein, bei uns zu hospitieren und sich mit den Abläufen vertraut zu machen.
 Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren
@@ -108,14 +112,9 @@ und 54% Schüler haben, die von 13 Erziehern und 24 Lehrkräften betreut werden
 In der Zeit vom 10. Oktober bis 21. Oktober 2022 melden Sie ihr
 schulpflichtiges Kind in der [für Sie zuständigen
 Grundschule](https://www.bildung.berlin.de/Umkreissuche/) an.
+Sie bekommen von uns einen Termin per Post zugeschickt.
 
-Wir nehmen an einem Pilotprojekt teil um den Anmeldeprozess zu vereinfachen.
-Bitte gehen Sie zu der Online-Anmeldung, füllen das Formular aus und bringen
-es ausgedruckt zur Schulanmeldung mit.
-
-{% include external_link text="Mein Kind Online anmelden!" url="https://bda.service.berlin.de/intelliform/forms/default/bda/index" button="success" %}
-
-Falls Sie an dem Pilotprojekt nicht teilnehmen können, dann müssen Sie zur Anmeldung folgende Dokumente mitbringen:
+Sie müssen zur Anmeldung folgende Dokumente mitbringen:
 
 * Ihre eigenen Personalpapiere (Ausweis oder Pass)
 * Geburtsurkunde des Kindes
