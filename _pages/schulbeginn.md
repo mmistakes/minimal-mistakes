@@ -4,7 +4,7 @@ title: "Schulbeginn"
 permalink: /schulbeginn/
 author_profile: false
 excerpt: "Alles Wichtige zur Einschulung und zum Schulstart"
-modified: 2022-08-06T14:00:00+01:00
+modified: 2022-09-09T14:00:00+01:00
 header:
   overlay_color: "#fff"
   overlay_image: /assets/images/feature-einschulung.jpg
