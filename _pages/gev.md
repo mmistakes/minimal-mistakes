@@ -17,14 +17,6 @@ ist diese Seite trotzdem öffentlich zugänglich, aber mag nicht den allgemeinen
 Qualitätsanspruch der restlichen Seiten entsprechen. Vielen Dank!
 {: .notice--warning}
 
-# {% include icon_text text="AG Aktionen und Veranstaltungen" icon="fa-calendar" %}
-
-Aufgaben u.a.: Elternaktionstage; Einschulung, etc.
-
-# {% include icon_text text="AG Kommunikation:" icon="fa-comments-o" %}
-
-Aufgaben u.a.: Mailverteiler; Elternbrief; Stammtisch; Website; FAQ; Willkommensmappe
-
 ## Mailinglisten
 
 * Allgemeine Informationen zu Mailinglisten (für die Eltern) <br>
