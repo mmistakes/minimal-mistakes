@@ -1408,7 +1408,7 @@ fa: &DEFAULT_FA
   more_label                 : "ادامه مطلب"
   related_label              : "ممکن است از این مطالب نیز لذت ببرید"
   follow_label               : "دنبال کنید: "
-  feed_label                 : "خوراک"
+  feed_label                 : "فید"
   powered_by                 : "طراحی شده توسط"
   website_label              : "سایت اینترنتی"
   email_label                : "پست الکترونیک"
