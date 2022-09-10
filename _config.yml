@@ -130,7 +130,7 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Antidote21"
     - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+      icon: "fab fa-fw fa-instagram" 
       # url:
 
 
