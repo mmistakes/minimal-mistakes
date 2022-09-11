@@ -11,4 +11,4 @@
 {%- else -%}
 {% assign btn_class = null %}
 {%- endif -%}
-<a href='{{link_url}}{% if link_hash %}#{{link_hash}}{% endif %}'{{btn_class}}>{%- include icon_text icon=include.icon text=include.text -%}</a>
+<a href='{{link_url}}{% if link_hash %}#{{link_hash}}{% endif %}'{{btn_class}}{% if include.proofer-ignore %} data-proofer-ignore{% endif %}>{%- include icon_text icon=include.icon text=include.text-%}</a>

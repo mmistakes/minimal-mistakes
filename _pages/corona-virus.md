@@ -12,7 +12,7 @@ sidebar:
   nav: ''
 ---
 
-**Achtung**: Bitte beachten Sie auch folgende [Hinweise vom SenBJF](https://www.berlin.de/sen/bjf/coronavirus/aktuelles/), unter anderem welche Eltern von systemrelevanten Berufen einen Anspruch auf eine Kinderbetreuung haben.
+**Achtung**: Bitte beachten Sie auch folgende ~~<a href="https://www.berlin.de/sen/bjf/coronavirus/aktuelles/" data-proofer-ignore>Hinweise vom SenBJF</a>~~ (Link nicht mehr erreichbar seit 2022), unter anderem welche Eltern von systemrelevanten Berufen einen Anspruch auf eine Kinderbetreuung haben.
 {: .notice--warning}
 
 {% for post in site.categories.coronavirus %}

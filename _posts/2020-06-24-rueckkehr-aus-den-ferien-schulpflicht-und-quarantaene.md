@@ -25,7 +25,8 @@ Bau und Heimat. **Die jeweils aktuelle Einstufung wird durch das Robert‐Koch�
 Folgender Link steht zur Verfügung:**
 
 * {% include external_link text="Robert‐Koch‐Institut: BMG: Regelungen für Einreisende nach Deutschland im Zusammenhang mit COVID-19" url="https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Transport/BMG_Merkblatt_Reisende_Tab.html" %}
-* {% include download_link text="Download Merkblatt vom Robert‐Koch‐Institut (pdf)" url="https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Transport/Merkblatt_BMG_15_06_2020.pdf?__blob=publicationFile" button="success" %}
+* <p>(Download nicht mehr erreichbar seit 2022)</p>
+  {% include download_link text="~~Download Merkblatt vom Robert‐Koch‐Institut (pdf)~~" url="https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Transport/Merkblatt_BMG_15_06_2020.pdf?__blob=publicationFile" button="success" proofer-ignore=true %}
 
 Nach § 9 Absatz 3 der Sars‐Cov 2 – Infektionsschutzverordnung müssen Personen nicht in Quarantäne,
 die unverzüglich nach der Einreise der zuständigen Behörde ein ärztliches Zeugnis in deutscher und

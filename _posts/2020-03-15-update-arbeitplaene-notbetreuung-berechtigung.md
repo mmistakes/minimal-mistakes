@@ -19,7 +19,7 @@ Bitte rufen Sie hierfür regelmäßig Ihre E-Mails ab und schauen Sie auf unsere
 Bezüglich der Notbetreuung für Kinder finden Sie hier weitere Informationen
 (Stand 15.03.2020):
 
-[https://www.berlin.de/sen/bjf/coronavirus/aktuelles/](https://www.berlin.de/sen/bjf/coronavirus/aktuelles/)
+~~<a href="https://www.berlin.de/sen/bjf/coronavirus/aktuelles/" data-proofer-ignore>https://www.berlin.de/sen/bjf/coronavirus/aktuelles/</a>~~ (Link nicht mehr erreichbar seit 2022)
 
 [https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/pressemitteilung.906919.php](https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/pressemitteilung.906919.php)
 

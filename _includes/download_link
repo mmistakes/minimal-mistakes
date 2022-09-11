@@ -1,1 +1,1 @@
-{%- include icon_link icon="fa-download" url=include.url text=include.text button=include.button -%}
+{%- include icon_link icon="fa-download" url=include.url text=include.text button=include.button proofer-ignore=include.proofer-ignore -%}
