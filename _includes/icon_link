@@ -7,7 +7,7 @@
   {%- capture link_url -%}{{ f_url | relative_url }}{% endcapture -%}
 {%- endif -%}
 {%- if include.button -%}
-{%- capture btn_class -%} class='btn btn--{{include.button}}'{%- endcapture -%}
+{% capture btn_class %} class='btn btn--{{include.button}}'{% endcapture %}
 {%- else -%}
 {% assign btn_class = null %}
 {%- endif -%}
