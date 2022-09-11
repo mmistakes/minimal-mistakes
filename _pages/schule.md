@@ -147,7 +147,7 @@ abgeben).  Bitte legen Sie Arzttermine in die unterrichtsfreie Zeit
 ## Beurlaubung vom Unterricht aus wichtigen Gründen
 
 Schülerinnen und Schüler können im Einzelfall nur aus einem wichtigen Grund
-vom Unterricht beurlaubt werden (<a href="http://gesetze.berlin.de/jportal/?quelle=jlink&query=SchulG+BE+%C2%A7+46&psml=bsbeprod.psml&max=true#P46-A5">§46 Abs. 5 Satz 1 SchulG</a>).
+vom Unterricht beurlaubt werden (<a href="https://gesetze.berlin.de/jportal/?quelle=jlink&query=SchulG+BE+%C2%A7+46&psml=bsbeprod.psml&max=true#P46-A5">§46 Abs. 5 Satz 1 SchulG</a>).
 Von einem wichtigen Grund kann insbesondere ausgegangen werden bei
 <ol style='list-style: none'>
 <li>a) persönlichen Gründen, wie z.B. einem Arztbesuch, der aus darzulegenden

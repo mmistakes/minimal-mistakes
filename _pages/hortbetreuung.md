@@ -121,15 +121,15 @@ aus pädagogischen Gründen jedes Kind in dieser Zeit drei Wochen Urlaub bekomme
 
 Ihr Kind kann in unserer Schule an einem kostenfreien Mittagessen teilnehmen.
 
-[GREENs UNLIMITED](http://www.greens-unlimited.de/)
+[GREENs UNLIMITED](https://www.greens-unlimited.de/)
 (Vollwert Catering) versorgt uns auch in diesem Schuljahr mit Mittagessen, welches über eine
 Mitarbeiterin in der Mensa (im eFöB-Gebäude) an Ihr Kind in einem sozialen
 Gruppenumfeld ausgeteilt und verzehrt wird.
-Bitte melden Sie Ihr Kind [online](http://www.schulessen.berlin/) an.
+Bitte melden Sie Ihr Kind [online](https://www.schulessen.berlin/) an.
 Sollten Sie bereits einen Zugang haben, verwenden Sie bitte Ihre Login-Daten.
 Wir wünschen guten Appetit!
 
-[Anmeldung Mittagessen](http://www.schulessen.berlin/){: .btn .btn--success}
+[Anmeldung Mittagessen](https://www.schulessen.berlin/){: .btn .btn--success}
 
 Das Catering-Unternehmen wird alle drei Jahre vom Schulamt europaweit
 ausgeschrieben, wobei die Lehrer-, Schüler und Elternschaft einen signifikanten
