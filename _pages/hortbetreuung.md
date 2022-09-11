@@ -4,7 +4,7 @@ title: "Ergänzende Förderung und Betreuung"
 permalink: /hortbetreuung/
 author_profile: false
 excerpt: "Alles zum eFöB-Gebäude, zur verlässlichen Halbtagsgrundschule, sowie zum Mittagessen"
-modified: 2017-03-07T10:55:00+01:00
+modified: 2022-09-11T10:55:00+01:00
 header:
   overlay_color: "#fff"
   overlay_image: /assets/images/feature-hort.jpg
@@ -27,7 +27,7 @@ im Unterricht.
 
 # Schließzeiten
 
-{% include outdated.md %}
+<!-- {% include outdated.md %} -->
 
 <!--
 | 22.12.2017 - 02.01.2018 | Weihnachtsschließzeit |
@@ -41,8 +41,10 @@ im Unterricht.
 | 17.08.2018 | Schließtag |
 -->
 
-| 21.12.2020 - 01.01.2020 | Weihnachtsschließzeit |
-| 14.05.2021 | Pfingsten |
+| 22.12.2022 - 01.01.2023 | Weihnachtsschließzeit |
+| 19.05.2023 | Pfingstferien |
+| 02.10.2023 | Hebrstferien |
+| 27.12.2023 - 01.01.2024 | Weihnachtsschließzeit |
 
 
 # eFöB-Gebäude und Außengelände
