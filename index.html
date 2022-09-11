@@ -21,73 +21,134 @@ header:
     headline: "Schuljubiläum 50 Jahre Brandwerder"
     caption: "am 24.09.2022, 11 - 14 Uhr!"
     url: /fest/2022/09/04/Willkommen-im-Schuljahr-2022_23-und-Einladung-50-Jahre-Brandwerder-am-24-09-2022/
-feature_row:
-  - image_path: /assets/images/feature-einschulung.jpg
-    alt: "Schulstart"
-    title: "Start in die Schule"
-    excerpt: "Die nächste wichtige Station Ihres Kindes: „Schule“. Was erwartet
-    Sie? Was ist zu tun? Und vor allem, was können Sie erwarten? Erfahren
-    Sie alles Wichtige zum Thema Schulanfang."
-    url: "/schulbeginn/"
-    btn_label: "<i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren"
-    btn_class: btn--primary
-  - image_path: /assets/images/feature-elternbriefe.jpg
-    alt: "Aktuelle Informationen"
-    title: "Aktuelle Informationen"
-    excerpt: "Hier finden Sie aktuelle Informationen & Mitteilungen der Schulleitung"
-    url: "/elternbriefe/"
-    btn_label: "<i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren"
-    btn_class: btn--primary
-  - image_path: /assets/images/mm-home-page-feature.jpg
-    alt: "Über die Schule"
-    title: "Über die Schule"
-    excerpt: "Sie haben Fragen zu <a href='/schule/#juel_konzept' class='btn
-    btn--success btn--small'>JÜL</a>, den Unterrichtszeiten, was Sie tun
-    müssen, falls Ihr Kind krank ist oder was für den Sportunterricht wichtig
-    ist? Vielleicht möchten Sie sich auch über unsere Schulsozialarbeit
-    informieren."
-    url: "/schule/"
-    btn_label: "<i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren"
-    btn_class: btn--primary
-  - image_path: /assets/images/creativecommons-mittagessen.jpg
-    alt: "Mittagessen"
-    title: "Mittagessen - Anmeldung"
-    excerpt: "Ihr Kind kann am kostenlosen Mittagessen teilnehmen, sobald es dafür angemeldet wurde."
-    url: "/hortbetreuung/#mittagessen"
-    btn_label: "<i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren"
-    btn_class: btn--primary
-  - image_path: /assets/images/feature-hort.jpg
-    alt: "Hortbetreuung"
-    title: "Ergänzende Förderung und Betreuung"
-    excerpt: "Ihr Kind wird in der Schulzeit zwischen 7:30 - 13:30 Uhr von uns
-    verlässlich betreut. Für Familien mit mehr Betreuungsbedarf gibt es einen
-    Ganztagsbetrieb von 6:00 bis 18:00 Uhr."
-    url: "/hortbetreuung/"
-    btn_label: "<i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren"
-    btn_class: btn--primary
-  - image_path: /assets/images/feature-foerderverein.jpg
-    alt: "Förderverein"
-    title: "Eltern gestalten mit!"
-    excerpt: "Wichtig sind nicht nur die Schüler an unserer Schule, sondern auch
-    die Eltern, Großeltern oder Bekannte. So werden Elternaktionen, Sommer-/ Winterfeste und weitere Sachen von der
-    Elternschaft z.B. durch den Förderverein oder die Elternvertreter
-    organisiert."
-    url: "https://www.foerderverein-brandwerder.de"
-    btn_label: "<i class='fa fa-external-link'>&nbsp;&nbsp;</i>Zur Seite des Fördervereins"
-    btn_class: btn--success
 ---
 
-<!--   - image_path: /assets/images/creativecommons-soccer-fussball-kinder.jpg
-    alt: "AG Angebote der Schule"
-    title: "AG Angebote der Schule"
-    excerpt: "Neben dem Unterricht und der ergänzenden Förderung und Betreuung stehen den Schülern eine
-    Vielzahl von zusätzlichen Angeboten zur Verfügung — einige sogar ab der 1.
-    Klasse. So gibt es z.B. Sport, Musik, Kunst und Förder AGs."
-    url: "/ags/"
-    btn_label: "<i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren"
-    btn_class: btn--primary -->
+<div class="feature__wrapper">
+    <div class="feature__item">
+        <div class="archive__item">
+            <div class="archive__item-teaser">
+                <a href="{{ '/schulbeginn/' | relative_url }}"><img src= "{{ '/assets/images/feature-einschulung.jpg' | relative_url }}" alt="Schulstart"></a>
+            </div>
 
-{% include feature_row %}
+            <div class="archive__item-body">
+                <h2 class="archive__item-title">Start in die Schule</h2>
+                <div class="archive__item-excerpt">
+                    <p>
+                        Die nächste wichtige Station Ihres Kindes: „Schule“. Was erwartet
+                        Sie? Was ist zu tun? Und vor allem, was können Sie erwarten? Erfahren
+                        Sie alles Wichtige zum Thema Schulanfang.
+                    </p>
+                </div>
+
+                <p><a href="{{ '/schulbeginn/' | relative_url }}" class="btn btn--primary"><i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature__item">
+        <div class="archive__item">
+            <div class="archive__item-teaser">
+                <a href="{{ '/elternbriefe/' | relative_url }}"><img src= "{{ '/assets/images/feature-elternbriefe.jpg' | relative_url }}" alt="Aktuelle Informationen"></a>
+            </div>
+
+            <div class="archive__item-body">
+                <h2 class="archive__item-title">Aktuelle Informationen</h2>
+                <div class="archive__item-excerpt">
+                    <p>Hier finden Sie aktuelle Informationen & Mitteilungen der Schulleitung.</p>
+                    <p>Elternbrief: „<b><a style="hyphens: auto;" href="{{ site.posts.first.url | absolute_url }}">{{ site.posts.first.title | truncate: 80 }}</a></b>“ vom <b>{{ site.posts.first.date | date: "%d.%m.%Y" }}</b></p>
+                </div>
+
+                <p><a href="{{ '/elternbriefe/' | relative_url }}" class="btn btn--primary"><i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature__item">
+        <div class="archive__item">
+            <div class="archive__item-teaser">
+                <a href="{{ '/schule/' | relative_url }}"><img src= "{{ '/assets/images/mm-home-page-feature.jpg' | relative_url }}" alt="Über die Schule"></a>
+            </div>
+
+            <div class="archive__item-body">
+                <h2 class="archive__item-title">Über die Schule</h2>
+                <div class="archive__item-excerpt">
+                    <p>
+                    Sie haben Fragen zu
+                    <a href='/schule/#juel_konzept' class='btn btn--success btn--small'>JÜL</a>, den Unterrichtszeiten,
+                    was Sie tun müssen, falls Ihr Kind krank ist oder was für den Sportunterricht wichtig
+                    ist? Vielleicht möchten Sie sich auch über unsere Schulsozialarbeit
+                    informieren.
+                    </p>
+                </div>
+
+                <p><a href="{{ '/schule/' | relative_url }}" class="btn btn--primary"><i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature__item">
+        <div class="archive__item">
+            <div class="archive__item-teaser">
+                <a href="{{ '/hortbetreuung/#mittagessen' | relative_url }}"><img src= "{{ '/assets/images/creativecommons-mittagessen.jpg' | relative_url }}" alt="Mittagessen"></a>
+            </div>
+
+            <div class="archive__item-body">
+                <h2 class="archive__item-title">Mittagessen - Anmeldung</h2>
+                <div class="archive__item-excerpt">
+                    <p>
+                    Ihr Kind kann am kostenlosen Mittagessen teilnehmen, sobald es dafür angemeldet wurde.
+                    </p>
+                </div>
+
+                <p><a href="{{ '/hortbetreuung/#mittagessen' | relative_url }}" class="btn btn--primary"><i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature__item">
+        <div class="archive__item">
+            <div class="archive__item-teaser">
+                <a href="{{ '/hortbetreuung/' | relative_url }}"><img src= "{{ '/assets/images/feature-hort.jpg' | relative_url }}" alt="Hortbetreuung"></a>
+            </div>
+
+            <div class="archive__item-body">
+                <h2 class="archive__item-title">Ergänzende Förderung und Betreuung</h2>
+                <div class="archive__item-excerpt">
+                    <p>
+                        Ihr Kind wird in der Schulzeit zwischen 7:30 - 13:30 Uhr von uns
+                        verlässlich betreut. Für Familien mit mehr Betreuungsbedarf gibt es einen
+                        Ganztagsbetrieb von 6:00 bis 18:00 Uhr.
+                    </p>
+                </div>
+
+                <p><a href="{{ '/hortbetreuung/' | relative_url }}" class="btn btn--primary"><i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature__item">
+        <div class="archive__item">
+            <div class="archive__item-teaser">
+                <a href="https://www.foerderverein-brandwerder.de"><img src= "{{ '/assets/images/feature-foerderverein.jpg' | relative_url }}" alt="Förderverein"></a>
+            </div>
+
+            <div class="archive__item-body">
+                <h2 class="archive__item-title">Eltern gestalten mit!</h2>
+                <div class="archive__item-excerpt">
+                    <p>
+                        Wichtig sind nicht nur die Schüler an unserer Schule, sondern auch
+                        die Eltern, Großeltern oder Bekannte. So werden Elternaktionen, Sommer-/ Winterfeste und weitere Sachen von der
+                        Elternschaft z.B. durch den Förderverein oder die Elternvertreter
+                        organisiert.
+                    </p>
+                </div>
+
+                <p><a href="https://www.foerderverein-brandwerder.de" class="btn btn--success"><i class='fa fa-external-link'>&nbsp;&nbsp;</i>Zur Seite des Fördervereins</a></p>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 <h1>Unsere Termine</h1>
 
