@@ -22,7 +22,7 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "KBSS"
 description              : "Knowledge-based and Software Systems group website"
 url                      : # "https://kbss-cvut.github.io"
-baseurl                  :  "/kbss-website" # the subpath of your site, e.g. "/blog"
+baseurl                  :  "/web" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/kbss-logo.png"
