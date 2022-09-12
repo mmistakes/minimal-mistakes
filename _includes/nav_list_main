@@ -66,6 +66,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <span class="nav__sub-title">Error&Bug</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "erro&bug" %}
+                        <li><a href="/categories/erro&bug" class="">Error&Bug ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
 
       </li>
   </ul>
