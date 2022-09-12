@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "Woosung Do"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/Users/dowoosung/Desktop/IMG_6909.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Bachleor's degree in MIS& Data Analytics, SUNY Buffalo"
   location         : "Buffalo"
   email            :"dws0815@naver.com"
