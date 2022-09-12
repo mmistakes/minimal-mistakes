@@ -1,25 +1,31 @@
 ---
 title: "An introduction to SBT"
-date: 2022-08-29
+date: 2022-09-12
 header:
     image: "/images/blog cover.jpg"
 tags: [scala, beginners, sbt]
 excerpt: "Introduction to SBT"
 ---
-_This article is written by Yadu Krishnan. He loves to learn new languages, libraries and technologies whenever he gets time. He also loves writing Scala articles, especially for the new-comers to Scala._
 
+_This article is brought to you by [Yadu Krishnan](https://github.com/yadavan88). He's a senior developer and constantly shares his passion for new languages, libraries and technologies. After his [long-form Slick tutorial](/slick), he's coming back with a new comprehensive introduction to SBT. Please enjoy!._
 
 ## 1. Introduction
-SBT is the most popular build tool in the Scala ecosystem. SBT provides a very rich DSL to configure a Scala project. It is also extensible and supports customised plugins to ehanance the project.
+
+SBT is the most popular build tool in the Scala ecosystem. SBT provides a very rich DSL to configure a Scala project. It is also extensible and supports customised plugins to enhance the project.
+
+_(Daniel's note: SBT was originally an acronym for "simple build tool", but in time "simple" was replaced by "Scala". Should've been the other way around.)_
+
+In this article we'll start an SBT project from scratch, and walk through essential SBT features you need.
 
 ## 2. Installation
-There are multiple ways to install SBT. 
+
+There are multiple ways to install SBT: 
 - Manual Installation using the executable depending on the OS
 - Using Coursier (https://www.scala-lang.org/download/)
 - Using IDEs like IntelliJ IDEA with SBT plugin
 
 ## 3. Basics of SBT
-The core of SBT is a file named as _build.sbt_. We can provide the needed configuration options within _build.sbt_. 
+The core of SBT is a file named _build.sbt_. We can provide the needed configuration options within _build.sbt_. 
 
 ### 3.1. Simplest SBT project
 
@@ -84,8 +90,8 @@ object Main {
 ```
 Let's start the SBT console by executing the command `sbt` at the root of the project.
 To compile the project, we can use _compile_ in the command. This will compile all the Scala files in the project and creates .class files. These files are kept under the directory _target_. 
-** SBT uses a feature called as _Incremented Compilation_  to speed up the compilation. In this way, SBT will compile only the modified files, and re-using the previously compile class files for the unchanged files. **
-We can use _clean_ command to remove all the generated class files.
+**SBT uses _incremental compilation_ to speed up the compilation. In this way, SBT will compile only the modified files, and re-use the previously compiled class files for the rest of the files.**
+We can use the _clean_ command to remove all the generated class files.
 
 We can run the application by using the command _run_. If we have multiple main classes in the project, SBT will show a prompt to select the main class to run. 
 In such case, we can use _runMain_ command by passing the class to run as:
