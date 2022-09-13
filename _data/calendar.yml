@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "1. Wandertag",
-    "title": "1. Wandertag",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=bnV2MGhzbGVzaGs4czloOGswbnF1cGRkZWMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2022-09-12",
-      "date_time": null
-    },
-    "end": {
-      "date": "2022-09-13",
-      "date_time": null
-    },
-    "created": "2022-09-05T19:41:02.000Z",
-    "updated": "2022-09-05T19:41:02.521Z"
-  },
-  {
-    "image_path": null,
     "alt": "Jubiläumsprojektwoche",
     "title": "Jubiläumsprojektwoche",
     "excerpt": null,
