@@ -1,0 +1,9 @@
+_id: 5cbffb50-68be-11e7-89b4-79fbd5ed8e2b
+message: >-
+  Can you explain how can I add
+  this(https://github.com/sachinchoolur/lightGallery) gallery to your theme ?
+name: Albus
+email: 73823e210b38f5b5fd2d6fba1970fed0
+url: ''
+hidden: ''
+date: '2017-07-14T18:00:47.312Z'

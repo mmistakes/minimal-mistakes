@@ -1,13 +1,7 @@
 # main links
 main:
-  - title: "How to get access"
-    url: /access
-  - title: "Posts and publications"
-    url: /publications
-  - title: "About"
-    url: /about
-  # - title: "Github"
-  #   url: https://github.com/FiQCI/fiqci.github.io
+  - title: "Quick-Start Guide"
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

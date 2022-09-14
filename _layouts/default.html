@@ -12,35 +12,14 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
-    <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    /* Create two equal columns that floats next to each other */
-    .column {
-      float: left;
-      width: 50%;
-      padding: 10px;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    </style>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
     {% include_cached skip-links.html %}
-    {% include_cached browser-upgrade.html %}
     {% include_cached masthead.html %}
 
     <div class="initial-content">
       {{ content }}
-      <!-- <a href="{{site.github.repository_url}}/blob/master/{{ page.path }}"><font size="-5">Edit this page</font></a> -->
     </div>
 
     {% if site.search == true %}

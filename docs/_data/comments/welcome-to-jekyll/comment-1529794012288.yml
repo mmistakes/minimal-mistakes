@@ -1,0 +1,9 @@
+_id: 5217d3c0-7737-11e8-a9b3-5b9ff79eceda
+message: >-
+  You're mixing Markdown inside of HTML elements, which is why it's not working.
+  Look at Kramdown's documentation as they have ways of enabling it I believe.
+name: Michael Rose
+email: 1ce71bc10b86565464b612093d89707e
+url: 'https://mademistakes.com'
+hidden: ''
+date: '2018-06-23T22:46:52.287Z'
