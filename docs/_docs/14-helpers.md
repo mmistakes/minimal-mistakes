@@ -279,7 +279,7 @@ Add `toc: true` to the YAML Front Matter of any post or page.
 | -------------- | -------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **toc**        | Optional | Show table of contents. (boolean)                           | `false`                                                                                                                                                       |
 | **toc_label**  | Optional | Table of contents title. (string)                           | `toc_label` in UI Text data file.                                                                                                                             |
-| **toc_icon**   | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fontawesome.com/icons?d=gallery&s=solid&m=free) <i class="fas fa-file-alt"></i> **file-alt** icon. Other FA icons can be used instead. |
+| **toc_icon**   | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fontawesome.com/v5/search?s=solid&m=free) <i class="fas fa-file-alt"></i> **file-alt** icon. Other FA icons can be used instead. |
 | **toc_sticky** | Optional | Stick table of contents to top of screen.                   | `false`                                                                                                                                                       |
 
 **TOC example with custom title and icon**
@@ -337,7 +337,7 @@ To include a Kramdown [auto-generated table of contents](https://kramdown.gettal
 | Parameter | Required | Description                                                 | Default                                                                                                                                                       |
 | --------- | -------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **title** | Optional | Table of contents title. (string)                           | `toc_label` in UI Text data file.                                                                                                                             |
-| **icon**  | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fontawesome.com/icons?d=gallery&s=solid&m=free) <i class="fas fa-file-alt"></i> **file-alt** icon. Other FA icons can be used instead. |
+| **icon**  | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fontawesome.com/v5/search?s=solid&m=free) <i class="fas fa-file-alt"></i> **file-alt** icon. Other FA icons can be used instead. |
 
 **TOC example with custom title and icon**
 
