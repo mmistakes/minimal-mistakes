@@ -13,7 +13,7 @@ I am a second-year Ph.D. student in the [Computer Science Department](https://cs
 
 
 ## Research Interests
-My primary research interests lie in the field of **natural language processing** and **machine learning**. Currently, I am interested in the following topics: <br>
+My research interests lie in the field of **natural language processing** and its intersections with other fields. Currently, I am interested in the following topics: <br>
 <!-- 1) **Language technology for real-world applications:** continual learning and few/zero-shot learning for NLP; <br> -->
 1) **Continual learning for NLP**: acquiring new tasks from evolving data while retaining previously learned knowledge; <br>
 2) **Embodied NLP**, e.g., dialogue understanding and generation for embodied agents in interactive environments; <br>
