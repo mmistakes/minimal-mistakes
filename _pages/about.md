@@ -21,12 +21,6 @@ My primary research interests lie in the field of **natural language processing*
 <!-- 3) **Knowledge-driven information extraction:** extracting structured information from text empowered by external knowledge sources. -->
 <!-- 3) **Natural language generation:** text summarization, machine translation, and automatic evaluation for text generation. <br> -->
 
-## Service
-Program Committee Member: AAAI 2023.
-
-## Teaching
-CS 3114: Data Structures and Algorithms, Fall 2021 & Spring 2022, Virginia Tech.
-
 ## News
 **\[2022.08]** Our work on [lifelong event detection](https://arxiv.org/abs/2204.07275) is accepted by COLING 2022!<br>
 **\[2022.03]** Our Simbot team is featured on [VT News](https://vtx.vt.edu/articles/2022/03/virginia-tech-team-selected-as-finalist-in-alexa-prize.html)!<br> 
