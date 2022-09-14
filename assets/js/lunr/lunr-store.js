@@ -1,5 +1,6 @@
 ---
 layout: none
+search: false
 ---
 
 var store = [
@@ -9,11 +10,7 @@ var store = [
     {%- endif -%}
     {%- assign docs = c.docs | where_exp:'doc','doc.search != false' -%}
     {%- for doc in docs -%}
-      {%- if doc.header.teaser -%}
-        {%- capture teaser -%}{{ doc.header.teaser }}{%- endcapture -%}
-      {%- else -%}
         {%- assign teaser = site.teaser -%}
-      {%- endif -%}
       {
         "title": {{ doc.title | jsonify }},
         "excerpt":

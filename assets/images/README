@@ -1,0 +1,10 @@
+Folder containing images for the web site.
+
+Creating favicon.png.
+
+Pick your png image
+Go to https://favicon.io/favicon-converter/
+Upload the file
+Click Download, this downloads a zip
+Copy and apst the 16x16 image as favicon.png to this folder.
+
