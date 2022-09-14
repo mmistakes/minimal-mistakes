@@ -12,7 +12,7 @@ teaser: "/assets/images/posts/2022/09/kakolewo_thumb.webp"
     <img src="/assets/images/posts/2022/09/kakolewo_maps.webp" height="300px" />
 </p>
 
-Yesterday (13 September), we had the pleasure of participating in the inauguration of the Kąkolewo Campus of the Poznań University of Technology. [The EPPG airport](https://www.google.com/maps/place/Landing+-+Aero+Poznan/@52.2377168,16.2340893,2779m/data=!3m1!1e3!4m5!3m4!1s0x4705d2efb14c93f3:0x91599e952ef1878d!8m2!3d52.2365998!4d16.2388016) - that is its ICAO code - has officially become a research and development platform for technologies:  
+Yesterday (September 13th), we had the pleasure of participating in the inauguration of the Kąkolewo Campus of the Poznań University of Technology. [The EPPG airport](https://www.google.com/maps/place/Landing+-+Aero+Poznan/@52.2377168,16.2340893,2779m/data=!3m1!1e3!4m5!3m4!1s0x4705d2efb14c93f3:0x91599e952ef1878d!8m2!3d52.2365998!4d16.2388016) - that is its ICAO code - has officially become a research and development platform for technologies:  
 - Information and Communications Technology (ICT),  
 - Unmanned Aerial Vehicles (UAVs),  
 - Manned Aircraft. 
