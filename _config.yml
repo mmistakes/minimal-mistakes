@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Lee Sin"
-  avatar           : "/assets/images/KakaoTalk_20220914_025452918.jpg"
+  avatar           : "/assets/images/KakaoTalk_20220914_030153250.jpg"
   bio              : "B.S. Student, Department of Robotics."
   location         : "Seoul, Republic of Korea"
   #email            : "gkdlgus97@naver.com"
@@ -239,16 +239,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+enabled:
+  - categories
+  - tags
+layouts:
+category: archive-taxonomy
+tag: archive-taxonomy
+permalinks:
+category: /categories/:name/
+tag: /tags/:name/
 
 
 # HTML Compression
@@ -272,7 +272,8 @@ defaults:
       comments: true
       share: true
       related: true
-      show_date: true
+      mathjax: true
+      sidebar_main: true
 
 date_format: "%Y-%m-%d"
 
