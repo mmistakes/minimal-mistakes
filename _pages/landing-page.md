@@ -19,7 +19,7 @@ intro:
 feature_row:
   - image_path: /assets/images/access-icon.png
     title: "How to get access"
-    excerpt: "Access to FiQCI is granted through the LUMI supercomputing environment"
+    excerpt: "Access to NordIQuEst is granted through...."
     url: "/access"
     btn_class: "btn--primary"
     btn_label: "Learn more"
@@ -30,8 +30,8 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/about-icon.jpg
-    title: "About FiQCI"
-    excerpt: "The FiQCI consortium maintains, operates, and develops the infrastructure"
+    title: "About NordIQuEst"
+    excerpt: "The NordIQuEst consortium maintains, operates, and develops the infrastructure"
     url: "/about"
     btn_class: "btn--primary"
     btn_label: "Learn more"      
