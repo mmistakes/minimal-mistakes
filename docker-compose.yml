@@ -1,0 +1,14 @@
+version: '3'
+services:
+  jekyll:
+      image: jekyll/jekyll:3.8
+      environment:
+        - JEKYLL_ENV=development
+        - GEM_HOME=$HOME/gems
+        - PATH=$HOME/gems/bin:$PATH
+      command: bash -c "bundle update && bundle exec jekyll serve --watch --incremental --config _config.yml --host 0.0.0.0"
+      ports:
+          - 4000:4000
+      volumes:
+          - .:/srv/jekyll:cached
+          - ./vendor/bundle:/usr/local/bundle:cached
