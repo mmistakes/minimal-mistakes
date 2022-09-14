@@ -202,7 +202,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: Asia/Seoul
+#timezone: Asia/Seoul
 
 
 # Plugins (previously gems:)
@@ -275,3 +275,5 @@ defaults:
       show_date: true
 
 date_format: "%Y-%m-%d"
+
+asset_url: /assets
