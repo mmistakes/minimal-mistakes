@@ -26,7 +26,7 @@ research into new computational methods
 * Applying machine learning to agricultural data (sequence, image, and chemometric data)
 * Engineering and optimizing microbial consortia
 * Developing Software (e.g. Itsxpress, Guidemaker) for bioinformatics
-* Applying Volatiles mass spectrometry and Machine learning to Ag challenges
+* Applying Volatiles mass spectrometry and Machine learning to agricultural challenges
 * Viral metagenomics
 
 ### Service areas:

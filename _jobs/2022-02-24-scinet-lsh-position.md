@@ -9,7 +9,7 @@ tags:
  - bloom filters
  - Locality sensitive hashing
  - pathogen monitoring
- - open
+ - closed
 published: true
 header:
   teaser: "/assets/images/containment.jpg"

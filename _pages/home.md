@@ -25,7 +25,7 @@ feature_row:
   - image_path: /assets/images/free-to-use-sounds-kOuCX7fh50U-unsplash.jpg
     alt: "Join the Lab"
     title: "Join the Lab"
-    excerpt: "We are currently hiring a computatioanl biology postdoc"
+    excerpt: "We will be hiring for several computational biology positions in the coming months related to xenosurveillance and RNA viruses. Contact us for details."
     url: "/jobs/"
     btn_label: "Learn More"
     btn_class: "btn--info"
@@ -40,7 +40,7 @@ University of Florida Emerging Pathogens Institute and the USDA-ARS Center for
 Medical Agricultural and Veterinary Entomology.
 
 GBRU-Gainesville works broadly in machine learning, software, and microbiome
-science across application domains. Thse applications include animal health, crop improvement,
+science across application domains. These applications include animal health, crop improvement,
 nutrition, and natural resource conservation.
 
 {% include feature_row id="intro" type="center" %}

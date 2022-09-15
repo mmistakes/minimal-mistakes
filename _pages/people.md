@@ -50,13 +50,7 @@ at the University of Florida.
 
 # Postdoctoral Associates
 
-![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/foxx.jpg){: .align-left}
-## Alicia Foxx, PhD
-_PhD Northwestern University, 2020_
 
-Dr. Foxx is the USDA/ORISE Postdoctoral Fellow for the USDA  SCINet Scientific
-computing initiative. She has experience in plant ecology and will be working on
-dataset shift in machine learning and Seed microbiomes.
 
 ![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/franco.jpg){: .align-left}
 ## Karla Franco Melendez, PhD
@@ -97,7 +91,7 @@ _PhD, University of Texas Austin_
 
 Dr. Rambo is joining the group this summer and  working on a jointly advised
 project with the [Food Processing and Sensory Quality Research Unit](https://www.ars.usda.gov/southeast-area/new-orleans-la/southern-regional-research-center/food-processing-and-sensory-quality-research/) in New Orleans, LA to develop better food  allergy diagnostic tests. Using data from arrays
-of food allergen peptides and protein structures from AlphFold he is designing
+of food allergen peptides and protein structures from AlphaFold he is designing
 3D convolutional neural networks to predict allergic reactions to foods.
 
 # Graduate Students
@@ -106,11 +100,18 @@ of food allergen peptides and protein structures from AlphFold he is designing
 ## Vipul Shinde
 _MS Candidate, University of Georgia_
 
-Vipul is Working with our lab and the [Bacterial Epidemiology and Antibiotic Research Unit](https://www.ars.usda.gov/southeast-area/athens-ga/us-national-poultry-research-center/bacterial-epidemiology-antimicrobial-resistance-research/) in Athens, GA
+Vipul is working with our lab and the [Bacterial Epidemiology and Antibiotic Research Unit](https://www.ars.usda.gov/southeast-area/athens-ga/us-national-poultry-research-center/bacterial-epidemiology-antimicrobial-resistance-research/) in Athens, GA
 o develop a Bayesian network to predict the secondary antibiotic resistances
 are selected by the application a primary antibiotic.
 
 # Former members
+
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/foxx.jpg){: .align-left}
+## Alicia Foxx, PhD
+_PhD Northwestern University, 2020_
+
+Dr. Foxx was a USDA/ORISE Postdoctoral Fellow for the USDA SCINet Scientific
+computing initiative. She has experience in plant ecology and worked on meta-analysis in metagenomics data, batch effect correction in metagenomics and seed microbiomes. She is currently a research scientist at the Chicago Botanic Garden.
 
 ![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/pp_ravin_150.jpg){: .align-left}
 ## Ravin Poudel, PhD
@@ -139,7 +140,7 @@ in *Salmonella*. More on his research is [here](https://chrisgaby.github.io/)
 ## Ryo (Leo) Iwata
 _BS University of Florida, 2018_
 
-Leo was a Python based analyst that wokred creating bioinformatic workflows for machine learning and data processing.
+Leo was a Python based analyst that worked creating bioinformatic workflows for machine learning and data processing.
 
 
 ![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/aswarup.jpg){: .align-left}
