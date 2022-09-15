@@ -12,15 +12,17 @@
 
 - Van Marcke, H., Le Denmat, P., Verguts, T., & Desender, K. (2022). Manipulating prior beliefs causally induces under- and overconfidence. [BioRxiv.](https://doi.org/10.1101/2022.03.01.482511)
 
-- Huycke, P. Lesage, E., Boehler, C. Nico, & Verguts, T. (2022). Computational investigations of learning and synchronization in cognitive control. [PsyArXiv](https://psyarxiv.com/jhmku/)
+
 
 ## Recent publications
 
 In press:
-- Liu, M., Dong, W., Wu, Y., Verbeke, P., Verguts, T., & Chen, Q. (2022). Modulating hierarchical learning by high-definition transcranial alternating current stimulation at theta frequency. Cerebral Cortex. [BioRxiv version.](https://www.biorxiv.org/content/10.1101/2022.06.28.497899v1)
+- Huycke, P. Lesage, E., Boehler, C. Nico, & Verguts, T. (in press). Computational investigations of learning and synchronization in cognitive control. Journal of Cognition. [PsyArXiv](https://psyarxiv.com/jhmku/)
 
 
 2022: 
+- Liu, M., Dong, W., Wu, Y., Verbeke, P., Verguts, T., & Chen, Q. (2022). Modulating hierarchical learning by high-definition transcranial alternating current stimulation at theta frequency. [Cerebral Cortex.](https://doi.org/10.1093/cercor/bhab245) [BioRxiv version.](https://www.biorxiv.org/content/10.1101/2022.06.28.497899v1)
+
 - Desender, K., Vermeylen, L., & Verguts, T. (2022). Dynamic influences on static measures of metacognition. [Nature Communications.](https://www.nature.com/articles/s41467-022-31727-0)
 
 - Senoussi, M., Verbeke, P., Desender, K., De Loof, E., Talsma, D., & Verguts, T. (2022). Theta oscillations shift towards optimal frequency for cognitive control. [Nature Human Behaviour.](https://www.nature.com/articles/s41562-022-01335-5)
