@@ -31,7 +31,7 @@ toc_sticky: true
 
 #### PostDoc
 
-- <img src="https://github.com/baileythegreen.png" alt="GitHub avatar for @baileythegreen" width="20"> Bailey Harrington (PDRA)
+- <img src="https://github.com/baileythegreen.png" alt="GitHub avatar for @baileythegreen" width="20"> Bailey Harrington (PDRA, 2021-2022)
 
 #### PhD
 
