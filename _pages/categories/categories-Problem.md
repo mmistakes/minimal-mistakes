@@ -1,11 +1,11 @@
 ---
 layout: archive
-permalink: categories/error&bug
-title: "Error&Bug"
+permalink: categories/problem
+title: "problem"
 
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories.error&bug %}
+{% assign posts = site.categories.problem %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}  
