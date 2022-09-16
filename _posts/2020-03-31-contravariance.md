@@ -7,6 +7,8 @@ tags: [scala, type system]
 excerpt: "The Scala type system is powerful, but also hard. We look at contravariance in Scala and try to make some sense out of it."
 ---
 
+> We discuss variance and variance positions in depth in the [Advanced Scala](https://rockthejvm.com/p/advanced/scala) course. Check it out!
+
 This article is for the Scala programmer who's either getting started with Scala generics, OR who has been using generics in their basic form, i.e. just attach type arguments, like
 
 ```scala

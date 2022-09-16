@@ -16,6 +16,7 @@ Error: covariant type T occurs in contravariant position in type T of value myAr
 
 We won't need a particular project setup for this article - a plain Scala/SBT project will do.
 
+> We discuss variance and variance positions in depth in the [Advanced Scala](https://rockthejvm.com/p/advanced/scala) course. Check it out!
 ## 1. Background
 
 This article will assume you're familiar with generics (either in Java, Scala or some other statically typed language).

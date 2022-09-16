@@ -4,10 +4,12 @@ date: 2022-09-12
 header:
     image: "/images/blog cover.jpg"
 tags: [scala, beginners, sbt]
-excerpt: "Introduction to SBT"
+excerpt: "Learn how to set up and configure your Scala projects with SBT in this long-form tutorial."
 ---
 
-_This article is brought to you by [Yadu Krishnan](https://github.com/yadavan88). He's a senior developer and constantly shares his passion for new languages, libraries and technologies. After his [long-form Slick tutorial](/slick), he's coming back with a new comprehensive introduction to SBT. Please enjoy!._
+_This article is brought to you by [Yadu Krishnan](https://github.com/yadavan88). He's a senior developer and constantly shares his passion for new languages, libraries and technologies. After his [long-form Slick tutorial](/slick), he's coming back with a new comprehensive introduction to SBT. Please enjoy!_
+
+> _This tutorial complements Rock the JVM's premium [Scala masterclass](https://rockthejvm.com/p/the-scala-bundle), as you learn to set up and configure your Scala projects._
 
 ## 1. Introduction
 
@@ -39,7 +41,7 @@ scalaVersion := "2.13.8"
 Note that SBT uses a special operator `:=` to assign the value. 
 
 Now, within the same directory, we can just start the SBT session by using the command `sbt`.
-If everything is fine, this will load an sbt console successfully. We can execute the command `project` within the SBT console to verify and view the SBT project name.
+If everything is fine, this will load an SBT console successfully. We can execute the command `project` within the SBT console to verify and view the SBT project name.
 
 Now, let's look at the other configuration options in the _build.sbt_ file. 
 We can provide a version for the project using the option `version` :
@@ -115,7 +117,7 @@ The method `+=` appends the provided library to the project dependencies.
 An SBT dependency contains mainly 3 parts separated by % symbol. 
 The first part is the groupId of the library. The second part is the library name(artifactId) and the third part is the version of the library to be used. If you notice, you can see that a double percentage symbol (`%%`) is used between groupId and artifactId. 
 Scala is not binary compatible with different versions (such as 2.11, 2.12, 2.13 etc) except for Scala 3 series. Hence there are separate releases for each Scala libraries for each required versions. %% symbol ensures that SBT uses the same Scala version of library as the project.
-That means SBT will automatically append the Scala version of the project before trying to find the library. The above dependency code is equivalent to the following format(note that single % is used, but artifactid contains the Scala major version):
+That means SBT will automatically append the Scala version of the project before trying to find the library. The above dependency code is equivalent to the following format(note that single % is used, but artifact id contains the Scala major version):
 ```
 libraryDependencies += "com.lihaoyi" % "fansi_2.13" % "0.4.0"
 ``` 
@@ -132,15 +134,15 @@ libraryDependencies ++= Seq(
 
 ## 5. Scala files under project directory
 SBT allows us to keep supporting files(i.e. non-source files, not part of the project "code" itself) for the build as Scala files. This helps to configure most of the required configurations in the known format of Scala classes. We can place the Scala files under the directory _project_. 
-Generally, depending on the project complexity, we keep various info (e.g. library dependencies) as object in these Scala files; they are accessible directly inside _build.sbt_. This is done so we can keep and track all the dependencies in a single place, and access them in multiple parts (modules) of the project (more on modules shortly).
+Generally, depending on the project complexity, we keep various info (e.g. library dependencies) as object in these Scala files; they are accessible directly inside _build.sbt_. This is done so that we can keep and track all the dependencies in a single place, and access them in multiple parts (modules) of the project (more on modules shortly).
 
 ## 6. SBT Console
 SBT also can start a REPL session within the project using the command `sbt console` or executing the command `console` within an SBT session. This will start up a REPL session just like the Scala REPL. However, the SBT console REPL will also load all the dependencies jars to the classpath so that we can directly import the classes and use them. 
 For example, let's try to use the fansi library in the SBT console. 
-We can then start up the SBT session by using `sbt` command. Then we can use the command _console_ within the SBT session to startup a REPL. 
-Now, within this REPL, we have access to the methods from fansi. Hence we can execute this code:
+We can then start up the SBT session by using `sbt` command. Then we can use the command _console_ within the SBT session to start a REPL. 
+Now, within this REPL, we have access to the methods from fansi. We can execute this code:
 ```
-val fansiString = Console.RED + "Let's rock the SBT!" + Console.RESET
+val redString: fansi.Str = fansi.Color.Red("Hello FAnsi String!")
 ```
 _Console_ is a class from the fansi library to give color to the string.
 
@@ -194,7 +196,7 @@ We can also use double quotes(") instead of single quotes('). This will ensure t
 We can compile only the test classes by using the command `test:compile` within sbt session. 
 
 ## 8. Advanced configuration in _build.sbt_
-In the previous section, we saw configurations like _name_, _organization_, etc. The values we set there are applicable for the entire project. SBT also let's us to do some configurations per scope. 
+In the previous section, we saw configurations like _name_, _organization_, etc. The values we set there are applicable for the entire project. SBT also lets us do some configurations per scope. 
 For example, by default SBT runs all the tests in parallel. If we somehow want to avoid that and run the tests in sequential way, we can set the config option for that. SBT uses the configuration key _parallelExecution_ for that and it is under the scope of Test. 
 
 So, in _build.sbt_, we can use the setting as:
@@ -222,7 +224,7 @@ ThisBuild / organization := "com.rockthejvm"
 lazy val module_1 = (project in file("module-1"))
 lazy val module_2 = (project in file("module-2"))
 ```
-Now, when we can save this file and hit _sbt_ command in the project directoy. This will import the project based on the _build.sbt_ we created and will also create 2 sub directores as _module-1_ and _module-2_ within the directory. The value provided in _file()_ is used to create the sub module name. 
+Now, when we can save this file and hit _sbt_ command in the project directory. This will import the project based on the _build.sbt_ we created and will also create 2 subdirectories as _module-1_ and _module-2_ within the directory. The value provided in _file()_ is used to create the submodule name. 
 
 However, as of now there is no relationship between any of the modules. We can explicitly combine both the sub modules together and link to the parent project by adding a new line as below to the _build.sbt_:
 ```
@@ -240,16 +242,16 @@ We can also provide settings for each sub module differently using the `settings
 
 ```
 lazy val module_2 = (project in file("module-2")).settings(
-  libraryDependencies += "com.typesafe" % "config" % "1.4.2"
+  libraryDependencies += "org.typelevel" %% "cats-effect" % "3.3.0"
 )
 ```
 
 ## 10. Multi-Module Build Best Practice
 We need to first identify and get clarity on different modules. Let's assume that we are building an application that contains database access, HTTP services, utilities etc. 
-Each of these can be separated as a  module. Then we can combine the different parts if one is dependant on another.
+Each of these can be separated as a  module. Then we can combine the different parts if one is dependent on another.
 
 Some good practice principles:
-- a single `build.sbt` file with all sub-module information inside.
+- a single `build.sbt` file with all submodule information inside.
 - common settings at the top (e.g. Scala version, org name)
 - `ThisBuild` to ensure the settings are applied to the entire project including submodules
 - variables for common library used across multiple sub-modules, applied as module `libraryDependencies`
@@ -266,6 +268,7 @@ project module_2
 Now, when we compile, only this module will get compiled. But, if this module depends on another module, SBT will compile that module as well.
 
 ## 12. Plugins
+
 One of the most important features of SBT is its support for plugins. Plugins help extend SBT with custom features which can be published and shared between multiple teams. 
 For handling plugins, a special file called as _plugins.sbt_ is used. This file is kept under the `project/` directory. Some common usages of plugins are:
  - packaging plugins to create jar, exe and other executables/deliverables
@@ -289,7 +292,8 @@ assembly / mainClass := Some("com.rockthejvm.Module2Main"),
 
  This is just one of the plugins. There are many plugins available which can help improve the development experience.
 
- ## 13. Global plugins
+## 13. Global plugins
+
  In the previous section, we added a plugin to the project. Sometimes, we might need to add some plugins that have nothing to do with the project itself. For example, there may be some plugin to publish the apps to an internal repository. This need not be kept in the git repo, instead can be shared across all the repositories. 
  SBT allows to do this using global plugins. 
 
@@ -303,8 +307,8 @@ assembly / mainClass := Some("com.rockthejvm.Module2Main"),
  [info] loading global plugins from /Users/username/.sbt/1.0/plugins
  ```
 
- ## 14. Resolvers
- So far, all the library dependencies and plugins are downloaded from the Maven Central repsitory. Sometimes, we need to use other third-party repository for downloading libraries/plugins. To do that, we can provide resolvers in the _.sbt_ files.
+## 14. Resolvers
+ So far, all the library dependencies and plugins are downloaded from the Maven Central repository. Sometimes, we need to use other third-party repository for downloading libraries/plugins. To do that, we can provide resolvers in the _.sbt_ files.
  ```
 resolvers += Resolver.url("my-test-repo", url("https://example.org/repo-releases/"))
  ```
@@ -332,7 +336,7 @@ Another powerful feature of SBT is the ability to create custom tasks. Apart fro
 
 For example, let's create a task which will just print some text to console. We can extend this to any complex functionality in the same way. 
 
-For that, we can create a Scala file which does the printng logic and keep this file under _project_ directory:
+For that, we can create a Scala file which does the printing logic and keep this file under _project_ directory:
 ```
 object CustomTaskPrinter {
   def print() = {
@@ -388,7 +392,7 @@ Now, when we run the command `printerTask`, it will first generate the UUID and 
 
 So far, we have created custom tasks. Now, let's look at custom settings. Before that, let's understand the difference  between a task and a setting.
 An SBT task is something which can be invoked and executed each time. You can think of it like `def` in Scala. 
-Whereas, a setting is evaluated at the start of SBT session and after that it is memoised. It is like `val` in Scala. 
+Whereas, a setting is evaluated at the start of SBT session and after that it is memoized. It is like `val` in Scala. 
 In the similar way, we can create a setting. The only difference is that instead of `taskKey` we will use `settingKey` to define a setting:
 ```
 lazy val uuidStringSetting = settingKey[String]("Generate string uuid task")
@@ -409,7 +413,7 @@ printerTask := {
 }
 ```
 
-Now, when we execute `printerTask`, notice the generated uuid. From task, each time a new UUID value is generated. But from setting, it will print the same value each time. Also, when you start teh SBT session, immediately we can see the print statement `Evaluating settings...` with the same uuid. 
+Now, when we execute `printerTask`, notice the generated uuid. From task, each time a new UUID value is generated. But from setting, it will print the same value each time. Also, when you start the SBT session, immediately we can see the print statement `Evaluating settings...` with the same uuid. 
 
 ## 16. Command Alias
 Another advaced feature SBT supports is the ability to set aliases. This is similar to the alias we create on unix based OSs. 
@@ -426,7 +430,7 @@ By default, we can only use the templates available under the official g8 repo. 
 
 ## 18. Cross Build between different Scala versions
 Scala releases are not binary compatible with each other(except the Scala 3 series). That means, we need to rebuild a library in all the supported versions for the users to use it. 
-Doing this manually is not an easy step. SBT tries to makes this easier by providing a feature to cross build between different versions.
+Doing this manually is not an easy step. SBT tries to make this easier by providing a feature to cross build between different versions.
 To support multiple versions, we can provide the settings as:
 ```
 val scala212 = "2.12.16"
@@ -470,7 +474,7 @@ We can provide jvm arguments on SBT startup. For example, if we want to increase
 sbt -v -J-Xmx3600m
 ```
 ### 19.4. SBT Command Alias With JVM Arguments
-We have see before on how to create SBT command aliases. We can create alias with passing jvm arguments. 
+We have seen before how to create SBT command aliases. We can create alias with passing jvm arguments. 
 However, we need to make sure that `fork := true` is set in _build.sbt_. This setting will ensure that SBT will start a forked jvm and apply the settings.
 Without a fork JVM, the jvm parameters we pass are not considered by the SBT.
 
@@ -491,12 +495,14 @@ println("PORT value from argument is: "+portValue)
 Next, we need to restart SBT to get these changes to effect. Then run the command `runSpecial`. This will print the passed javaOptions.
 
 If we want to pass multiple javaOptions, we need to use a Seq as:
+```scala
 addCommandAlias(
   "runSpecial",
   "; set ThisBuild/javaOptions ++= Seq(\"-Dport=4567\", \"-Duser=rockthejvm\"); run"
 )
+```
 
-Now when we run `runSpecial`, the value for `user` will be None. But when we run `runSpecial2`, it will have the value for `user` as rockthejvm.
+Now when we run `runSpecial`, the value for `user` will be None. But when we run `runSpecial2`, it will have the value for `user` as "rockthejvm".
 
 ## 20. Conclusion
 In this blog, we looked at SBT and its different components and functionalities. SBT has still more features which we haven't covered here. However, it is easy to explore more features once the basics are understood. 
