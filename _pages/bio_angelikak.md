@@ -13,11 +13,11 @@ categories: Bio
 
 Angelika was born and raised in a small town called Choszczno, in Poland. Little did she know, she will never return to her homeland after visiting Scotland during summer holidays back in 2012. Despite not knowing English, passion for science was her biggest motivation to learn the language, and Angelika obtained a BSc (Hons) in Biochemistry and Immunology from the University of Strathclyde in 2019. After this, Angelika completed her Master’s Degree in Industrial Biotechnology at Strathclyde in partnership with [Industrial Biotechnology Innovation Centre (IBiolC)](https://www.ibioic.com/), during which she realised that computational biology is the missing puzzle she was looking for.
 
-During her Master's, Angelika completed a 10-weeks project, working on genome mining of antiviral agents against SARS-CoV-2 in *Streptomyces* bacteria. Afterwords, in October 2020 she started her PhD studies (again at Strathclyde) and continued her joruney with *Streptomyces* under the supervision of Dr Leighton Pritchard and Prof Paul Hoskisson.
+During her Master's, Angelika completed a 10-weeks project, working on genome mining of antiviral agents against SARS-CoV-2 in _Streptomyces_ bacteria. Afterwords, in October 2020 she started her PhD studies (again at Strathclyde) and continued her joruney with _Streptomyces_ under the supervision of Dr Leighton Pritchard and Prof Paul Hoskisson.
 
-Angelika's research uses pangenomics to aid discovery of novel antimicrobials in *Streptomyces* with the aim to help combat the crisis of antibiotic resistance. Angelika used phylogenomics approaches to reclassify the entire genus of Streptomyces to improve basis for pangenomic and comparative genomic analyses, and to better understand the evolutionary genomics of this group.
+Angelika's research uses pangenomics to aid discovery of novel antimicrobials in _Streptomyces_ with the aim to help combat the crisis of antibiotic resistance. Angelika uses phylogenomics approaches to reclassify the entire genus of _Streptomyces_ to improve basis for pangenomic and comparative genomic analyses, and to better understand the evolutionary genomics of this group.
 
-Besides her reserach, Angelika enjoys to be involved in the community. She helped at Software Carpentries covering Unix Shell, Programming with Python and R, and OpenRefine hosted by IBiolC.
+Besides her reserach, Angelika enjoys to be involved in the community. She helped at Software Carpentries covering Unix Shell, Programming with Python and R, and OpenRefine, hosted by IBiolC.
 
 Outside of work, Angelika is very likely in the gym powerlifting, at home watching crime documentaries or UFC, reading books or playing with her cats.
 
@@ -31,7 +31,6 @@ Oct 2020 - Sept 2023
 *Univeristy of Strathclyde*  
 *Industrial Biotechnology Innovation Centre*  
 Sept 2019 - Sept 2020
-
 
 **Bachelor of Science (Hons) in Biochemistry and Immunology**  
 *Univeristy of Strathclyde*  
