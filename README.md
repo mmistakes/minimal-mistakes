@@ -1,6 +1,6 @@
 # Github homepage
 
-Chris' personal homepage
+Chris' personal homepage, visit [here](https://cschindlbeck.github.io/). 
 
 ## Docker
 
