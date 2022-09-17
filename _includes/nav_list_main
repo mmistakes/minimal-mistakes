@@ -18,8 +18,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "programmers" %}
-                        <li><a href="/categories/programmers" class=""> 프로그래머스 ({{category[1].size}})</a></li>
+                    {% if category[0] == "Do it algorithm" %}
+                        <li><a href="/categories/Do-it" class=""> 알고리즘 입문 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
