@@ -23,6 +23,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        <span class="nav__sub-title">Computer Science</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Design pattern" %}
+                        <li><a href="/categories/design-pattern" class="">디자인 패턴({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
       </li>
       <li>	
             <br>      
