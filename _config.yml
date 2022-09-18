@@ -104,12 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Jaehoon Jung"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Jaehoon Jung
-                      Entry Data Analyst
-                      Stony Brook University
-                      Applied Mathematics and Statistics"
+  bio              : "Entry Data Analyst\n
+                      Stony Brook University\n
+                      Applied Mathematics and Statistics\n"
   location         : "Stony Brook, NY"
   email            :
   links:
