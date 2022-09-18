@@ -1,15 +1,13 @@
 ---
-layout: single
-permalink: /student/project_students
-title: "Project Students"
+title: "So, You've Joined SIPBS-CompBiol as a Project Student…"
+categories: Student
+tags: [advice, studentships, MSc students, Internships, supervision]
 toc: true
 toc_label: "Table of Contents"
 toc_icon: "book-reader"
 toc_sticky: true
 author: Leighton Pritchard
 ---
-
-## So, You've Joined SIPBS-CompBiol as a Project Student…
 
 Firstly, **welcome to the group**!
 
@@ -31,10 +29,10 @@ Exactly what you need to do will depend on your project, and we'll talk about th
   - Every day is a school day. We all started off knowing nothing, and are learning all the time. We don't expect you to know everything so, if anything is confusing, unclear, or unfamiliar please talk to us.
   - Even if you do know the material well, we can help with advice on best practice and continual improvement - especially for coding, data management and analysis.
 - Be kind, collegiate, and helpful
-  - Our projects are our own individual responsibilities, but that doesn't mean we work in isolation. Your peers and the rest of the group are an excellent source of support and encouragement. We all benefit from each other's insight and help.
+  - Our projects are our own individual responsibilities, but that doesn't mean we work in isolation. Your peers and the rest of the group are an excellent source of knowledge, support, and encouragement. We all benefit from each other's insight and help.
 - Meet your course and examination requirements
   - please also submit your draft and final reports in time that they can be read and you can get good feedback
-  - do you need advice on getting good feedback? [We have some advice on that](http://localhost:4000/student/getting-good-feedback/)
+  - not sure how to get good feedback? [we have some advice about that.](http://localhost:4000/student/getting-good-feedback/)
 - Attend and present at project meetings, group meetings, and journal clubs
   - [Group meeting schedule](/group/group_meetings)
   - [Journal club schedule](/group/journal_club)
@@ -44,12 +42,12 @@ Exactly what you need to do will depend on your project, and we'll talk about th
 
 Computational biology and bioinformatics are practical skills, like lab skills. Just like lab skills, we all start out a wee bit clumsy but get much better with practice.
 
-Unfortunately, our degree curriculum doesn't yet prepare you with computational skills in the same way we train you in laboratory techniques. The good news is that there are many ways to practice these skills and learn new skills, yourself. The resources below should be helpful 
+Unfortunately, our degree curriculum doesn't yet prepare you with computational skills in the same way we train you in laboratory techniques. How far you get in your project will depend on the skills you start with, and how much you are willing to learn independently. The good news is that there are many ways to practice these skills and learn new skills, yourself. We hope that the resources below will be helpful 
 
 {: .notice--success}
 Remember, you can ask anyone in the group - and your peers - for advice on these topics. You are not alone. We were all complete novices, once.
 
-- [How to avoid cognitive dissonance in your project](/student/avoid-cognitive-overload/)
+- [How to avoid cognitive overload in your project](/student/avoid-cognitive-overload/)
 - [How to ask a (good) question](/student/asking-good-questions/)
 
 {: .notice--warning}
@@ -63,7 +61,7 @@ Computers are powerful but dumb. They do simple things very fast. To the extent 
 
 When you use a program you are working within a set of constraints someone else devised. But when you _write_ a program, you can build and do something new.
 
-A lot of bioinformatics can be done without programming, and your project might use a single analysis package, or [Galaxy](https://usegalaxy.eu) to build a workflow. But a little programming ability can get you a very long way.
+A lot of bioinformatics can be done without programming, and your project may well use a single analysis package, or [Galaxy](https://usegalaxy.eu) to build a workflow. But a little programming ability can get you a very long way, even if only automating things like file-renaming, or running the same tool on a number of different inputs.
 
 #### Shell scripting
 
@@ -78,7 +76,7 @@ mv my_project/results/2022-09* my_project/results/September
 
 #### Python
 
-Python is a powerful high-level programming language, widely used in bioinformatics and computational biology. Python is the _lingua franca_ of the group and we encourage students to code in Python to enable remixing and modular reuse of their work.
+Python is a high-level programming language, widely used in bioinformatics and computational biology. Python is the _lingua franca_ of the group and we encourage students to code in Python to enable remixing and modular reuse of their work.
 
 If you are just starting out with Python, we recommend using the cross-platform Anaconda distribution. This provides a powerful package manager that will make your life much easier. The Bioconda packages contain nearly all the bioinformatics tools you could need and work within Anaconda.
 
@@ -91,21 +89,23 @@ If you are just starting out with Python, we recommend using the cross-platform 
 
 #### R
 
-R is a powerful programming language designed specifically for data analysis. It is very widely-used in bioinformatics and computational biology, with many specialised packages providing analytical and visualisation tools that can't be found elsewhere.
+R is a programming language designed specifically for statistics and data analysis. It is very widely-used in bioinformatics and computational biology, with many specialised packages providing analytical and visualisation tools that can't be found elsewhere. R is also extremely good for producing high-quality and attractive visualisations.
 
 - [Software Carpentry Programming with R](https://swcarpentry.github.io/r-novice-inflammation/)
 - [Software Carpentry R for Reproducible Scientific Analysis](https://swcarpentry.github.io/r-novice-gapminder/)
 - [What they forgot to teach you about R](https://rstats.wtf/)
+- [`ggplot2`: Elegant Graphics for Data Analysis](https://ggplot2-book.org/introduction.html)
 
 #### Editing code
 
-This is a subjective topic. There is no one right way to work, and you should generally work the way that is productive and suits you best. That said, my (Leighton's) experience is that Visual Studio Code is a great choice to start working in. It works on all operating systems, can handle Python, R, and shell code, give you a terminal window, and integrate with tools like `git` (see below). If you haven't already decided on a programming workflow, there are many worse places to start.
+This is a subjective topic. There is no one right way to work, and you should generally work the way that is productive and suits you best. That said, my (Leighton's) experience is that Visual Studio Code (aka VS Code) is a great choice to start working in. It works on several operating systems, can handle Python, R, and shell code, give you a terminal window, and integrate with tools like `git` (see below). If you haven't already decided on a programming workflow, there are many worse places to start.
 
 - [Visual Studio Code](https://code.visualstudio.com/)
+- [Get Started With VS Code](https://code.visualstudio.com/learn/)
 
 ### Project and Data Management
 
-It doesn't matter how many programming skills you have if you can't find your data. It takes a lot of practice, and trial-and-error (mostly error) to become very fluent in data management, but we can help shortcut this process with some recommendations.
+It doesn't matter how many programming skills you have if you can't find your data, or where your code is. It takes a lot of practice, and trial-and-error (mostly error) to become very fluent in data management, but we can help shortcut this process with some recommendations.
 
 - [BM432 Project Management Workshop](https://sipbs-compbiol.github.io/BM432/notebooks/03-data_management_workshop.html)
 - [What is a dataset?](https://sipbs-compbiol.github.io/BM432/notebooks/02-01-dataset.html)
@@ -121,3 +121,45 @@ Version control is an important part of project and code management. The most po
 
 ### Computing Resources
 
+We do not have a laboratory, and we do not provide computing hardware for your project. However, computing and IT facilities for students are available at the university.
+
+- [Strathclyde IT facilities](https://www.strath.ac.uk/studywithus/centreforlifelonglearning/studentsupport/facilitiesservices/itfacilities/)
+
+Most projects can be completed using your own laptop, either by accessing online resources, or installing and using bioinformatics tools on your own machine.
+
+#### Operating Systems
+
+Much of bioinformatics runs on - and assumes you can use - Linux and Linux-like operating systems, and will require that you use the terminal. If your computer already runs Linux or MacOS, then you can get started straight away.
+
+- [TechRadar's list of best Linux distributions](https://www.techradar.com/best/best-linux-distros)
+- [How to open the Terminal on MacOS](https://www.howtogeek.com/682770/how-to-open-the-terminal-on-a-mac/)
+
+If you are using Windows, you should install Windows Subsystem Linux, if you have not done so already.
+
+- [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about)
+  
+#### Other Computing Resources
+
+In some cases, you may need to use remote computing resources to complete your project. These will either be services such as Galaxy, which can be used via your browser, or will likely run some form of Linux.
+
+- [Galaxy EU](https://usegalaxy.eu)
+
+We also make a small server available for undergraduate projects on the MRC CLIMB service. This is intended to make it easier to run lengthy jobs that might disrupt work on your own computer. To obtain an account for this server, please contact Leighton.
+
+- [MRC CLIMB](https://www.climb.ac.uk/)
+- CLIMB server specification
+  - OS: Ubuntu
+  - CPU cores: 4
+  - RAM: 32GB
+  - Storage: 200GB onboard, 1TB mounted
+
+The university may provide access to the ARCHIE-West cluster for student projects. There are some restrictions and recommendations governing its use. Please see Leighton for further details.
+
+- [ARCHIE-West](https://www.archie-west.ac.uk/)
+
+#### `tmux`
+
+When using remote computing resources, logging out of the machine or breaking connection can halt your job. To avoid this (and also gain other useful abilities), the `tmux` tool can be used to work in a persistent, long-running shell that is not stopped when you log out. It is highly recommended to use `tmux` or similar tools for remote work.
+
+- [Getting started with `tmux`](https://linuxize.com/post/getting-started-with-tmux/)
+- [`tmux` cheatsheet](https://tmuxcheatsheet.com/)
