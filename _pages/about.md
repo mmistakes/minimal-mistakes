@@ -27,7 +27,7 @@ My research interests lie in the field of **natural language processing** and it
 **\[2021.11]** Our team has been selected as one of 10 teams to participate in the [**Alexa Prize SimBot Challenge**](https://developer.amazon.com/alexaprize/challenges/current-challenge/simbot)! <br>
 **\[2020.07]** One paper accepted by ACM Multimedia 2020. Great thanks to all my co-authors!
 
-## MISC
-I'm a huge fan of music. My favorite genres are R&B, Jazz, and JPOP.
+<!-- ## MISC
+I'm a huge fan of music. My favorite genres are JPOP, Jazz, and R&B.
 
-
+ -->
