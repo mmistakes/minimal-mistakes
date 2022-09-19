@@ -19,8 +19,8 @@ locale                   : "ko-KR"
 title                    : "Site Title"
 title_separator          : "/"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Eui"
+description              : "hello blog"
 url                      : "https://Euihyunee.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,9 +106,9 @@ analytics:
 author:
   name             : "Your Name"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Attack is Eui"
+  location         : "Siheung, South Korea"
+  email            : "lobil7782@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
