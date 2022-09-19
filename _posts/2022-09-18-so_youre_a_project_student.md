@@ -32,9 +32,9 @@ Exactly what you need to do will depend on your project, and we'll talk about th
   - Our projects are our own individual responsibilities, but that doesn't mean we work in isolation. Your peers and the rest of the group are an excellent source of knowledge, support, and encouragement. We all benefit from each other's insight and help.
 - Meet your course and examination requirements
   - please also submit your draft and final reports in time that they can be read and you can get good feedback
-  - not sure how to get good feedback? [we have some advice about that.](http://localhost:4000/student/getting-good-feedback/)
+  - not sure how to get good feedback? [we have some advice about that.](/student/getting-good-feedback/)
 - Attend and present at project meetings, group meetings, and journal clubs
-  - [Group meeting schedule](/group/group_meetings)
+  - [Group meeting schedule](/group/meetings)
   - [Journal club schedule](/group/journal_club)
 - Sign your learning agreement.
 
