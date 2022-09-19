@@ -4,7 +4,7 @@ title:  "알고리즘을 위한 Python 기초 문법"
 excerpt: "박상길, 『파이썬알고리즘인터뷰』, 책만(2020), p73-98."
 
 categories: Python
-tag: [Python]
+tag: [Python, Syntax, Style]
 
 toc: true
 toc_sticky: true
@@ -15,7 +15,7 @@ sidebar: true
 search: true
  
 date: 2022-09-15
-last_modified_at: 2022-09-15
+last_modified_at: 2022-09-19
 ---
 
 
@@ -30,7 +30,7 @@ last_modified_at: 2022-09-15
 
 <br/><br/>
 
-### 인덴트
+## 인덴트
 
 
 
@@ -76,7 +76,7 @@ PyCharm 커뮤니티 에디션과 같은 도구를 이용해 이러한 기준들
 
 <br/><br/>
 
-### 네이밍 컨벤션
+## 네이밍 컨벤션
 
 
 
@@ -86,7 +86,7 @@ PyCharm 커뮤니티 에디션과 같은 도구를 이용해 이러한 기준들
 
 <br/><br/>
 
-### 타입힌트
+## 타입힌트
 
 
 
@@ -119,7 +119,7 @@ $mypy our_file.py our_directory #타입힌드가 잘못 지정된 코드 손쉽�
 
 <br/><br/>
 
-### 리스트 컴프리헨션
+## 리스트 컴프리헨션
 
 파이썬에서 오래 사용되어온 리스트 컴프리헨션은 가독성이 좋아 많이 사용이 된다.
 
@@ -137,9 +137,7 @@ a = {key: value for key, value in original.items()}
 
 <br/><br/>
 
-
-
-### 제너레이터
+## 제너레이터
 
 제너레이터는 루푸의 반복 동작을 제어할 수 있는 루틴 형태를 말한다.
 
@@ -172,9 +170,7 @@ next(g)
 
 <br/><br/>
 
-
-
-### range
+## range
 
 range도 마찬가지로 제너레이터의 방식을 활용한 함수이다.
 
@@ -193,7 +189,7 @@ len()함수를 통해 비교하면 둘다 동일한 길이를 출력하게 된�
 
 <br/><br/>
 
-### enumerate
+## enumerate
 
 여러가지 자료형 ex) list, set, tuple을 인덱스를 포함한 enumerate객체로 리턴한다.
 
@@ -233,7 +229,7 @@ for i, v in enumerate(a):
 
 <br/><br/>
 
-### //나눗셈연산자
+## //나눗셈연산자
 
 python 3버전 이상에서는 / 연산자는 실수형의 값을 리턴하고, // 연산자는 몫을 리턴한다.
 
@@ -241,7 +237,7 @@ python 3버전 이상에서는 / 연산자는 실수형의 값을 리턴하고, 
 
 <br/><br/>
 
-### print
+## print
 
 부득이한 경우에 print()를 이용하여 디버깅하는 경우가 있을 수 있다. (코딩테스트에 한해)
 
@@ -269,7 +265,7 @@ print(f'{idx+1}:{fruit}') #f-string을 이용한 방법 3.6+ 에서 지원
 
 <br/><br/>
 
-### pass
+## pass
 
 ```python
 class MyClass(object):
@@ -285,7 +281,7 @@ mockup 인터페이스부터 구현하고 구현을 진행할 수 있게 한다.
 
 <br/><br/>
 
-### locals
+## locals
 
 locals()는 딕셔너리를 가져오는데, 로컬에 선언된 모든 변수를 조회할 수 있다.
 
@@ -298,7 +294,9 @@ pprint.pprint(locals()) # 클래스 메소드 내부의 모든 로컬 변수를 
 
 <br/><br/>
 
-# 스타일
+# Style
+
+
 
 * 변수 : 각각의 의미를 부여해 작명
 * 주석 : 파이썬에는 간단한 주석(영어)을 부여하면 가독성이 높아보인다.

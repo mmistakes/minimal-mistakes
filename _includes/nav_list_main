@@ -22,6 +22,8 @@
                         <li><a href="/categories/Python" class="">Python ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
+
+                
             </ul>
 
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
@@ -36,6 +38,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+
       </li>
   </ul>
 </nav>
