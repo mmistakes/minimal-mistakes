@@ -1,6 +1,6 @@
 FROM ubuntu:latest 
 
-LABEL maintainer="CSC Service Desk <servicedesk@csc.fi>"
+LABEL maintainer="nordiquest"
 
 # These need to be owned and writable by the root group in OpenShift
 ENV ROOT_GROUP_DIRS='/var/run /var/log/nginx /var/lib/nginx'
