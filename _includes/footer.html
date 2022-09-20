@@ -6,7 +6,10 @@
 
     {% if site.footer.links %}
       {% for link in site.footer.links %}
-        {% if link.label and link.url %}
+        {% if link.label and link.img %}
+          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><svg class="svg-inline--fa fa-w-14 fa-fw" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <img src="{{ link.img | relative_url }}" height="40" width="40"  alt="{{ link.label | default: link.url }}";/></svg> {{ link.label }}</a></li>
+        {% endif %}
+        {% if link.label and link.icon %}
           <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
         {% endif %}
       {% endfor %}

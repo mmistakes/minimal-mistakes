@@ -1,7 +1,7 @@
 /*
-GreedyNav.js - https://github.com/lukejacksonn/GreedyNav
+GreedyNav.js - http://lukejacksonn.com/actuate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
-Copyright (c) 2015 Luke Jackson http://lukejacksonn.com
+Copyright (c) 2015 Luke Jackson
 */
 
 $(function() {

@@ -3,8 +3,8 @@
    ========================================================================== */
 
 .archive {
-  margin-top: 1em;
-  margin-bottom: 2em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
 
   @include breakpoint($large) {
     float: right;
@@ -32,7 +32,7 @@
 }
 
 .archive__subtitle {
-  margin: 1.414em 0 0.5em;
+  margin: 1em 0 0.5em;
   padding-bottom: 0.5em;
   font-size: $type-size-5;
   color: $muted-text-color;
@@ -250,7 +250,7 @@
 
 .feature__item {
   position: relative;
-  margin-bottom: 2em;
+  margin-bottom: 5em;
   font-size: 1.125em;
 
   @include breakpoint($small) {
