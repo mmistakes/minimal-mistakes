@@ -1,0 +1,237 @@
+---
+layout: single
+title:  "[django] URL Reverse를 통해 유연하게 URL 생성하기"
+categories: django
+tag: [python, django, MySQL, react]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
+# URL Dispatcher
+
+urls.py 변경만으로 "각 뷰에 대한 URL"이 변경되는 유연한 URL 시스템
+
+```python
+# "/blog/", "/blog/1/" 주소로 서비스하다가
+urlpatterns = [
+    path('blog/', blog_views.post_list, name='post_list’),
+    path('blog/<int:pk>/', blog_views.post_detail, name='post_detail'),
+]
+
+# 다음과 같이 변경을 하면,
+# 이제 "/weblog/", "/weblog/1/" 주소로 서비스하게 됩니다.
+urlpatterns = [
+    path('weblog/', blog_views.post_list, name='post_list’),
+    path('weblog/<int:pk>/', blog_views.post_detail, name='post_detail'),
+]
+```
+
+```html
+<a href="/blog/">
+    링크
+</a>
+```
+
+이런 경우 위에처럼 blog를 weblog로 바꾸게 된다면???
+
+싹 다 찾아서 바꿔야함....
+
+# URL Reverse의 혜택
+
+1. 개발자가 일일이 URL을 계산하지 않아도 된다.
+2. URL이 변경되더라도, URL Reverse가 변경된 URL을 추적함. 
+    - 누락될 일이 없다. 
+
+## 직접 URL을 계산한다면?
+
+1. blog앱 Post목록을 볼려면, post_list 뷰를 호출해야하니깐,
+2. urls.py 를 뒤적뒤적거리며, URL계산
+3. 계산완료 ! -> /blog/ 주소를 쓰면 되겠네?
+
+```html
+<!-- blog/templates/blog/layout.html 내에서의 링크 -->
+<a href="/blog/">블로그 글 목록</a>
+
+<!-- blog/templates/blog/post_form.html 내에서의 링크 -->
+<a href="/blog/">블로그 글 목록</a>
+
+<!-- blog/templates/blog/comment_form.html 내에서의 링크 -->
+<a href="/blog/">블로그 글 목록</a>
+```
+
+- 그런데, 이 blog앱을 다른 프로젝트에도 쓸려고 옮겼는 데, URL Prefix를 weblog로 쓰고 싶다면?
+    - 하나하나 수정할 것인가? 
+
+    - 그냥 안된다고 할 것인가?
+
+    - /blog/api/post/1001/comments/100/ 과 같은 URL을 외워서 쓸 것인가?
+
+    **URL 계산은 장고에게 양보!**
+
+    - 코드 변경 거의 없이 가능하다!
+
+# URL Reverse를 수행하는 4가지 함수
+
+1. url 템플릿태그
+
+    ```html
+    {% url ~~~ %}
+    ```
+
+    - 장고 내부 템플릿에서만 쓸 수 있는 태그임.
+    - 내부적으로 reverse 함수를 사용
+
+2. reverse 함수
+    - 매칭 URL이 없으면 NoReverseMatch 예외 발생
+    - 반환값 : url 문자열
+
+3. resolve_url 함수
+    - 매핑 URL이 없으면 "인자 문자열"을 그대로 리턴
+    - 내부적으로 reverse 함수를 사용
+    - 반환값 : url 문자열
+
+4. redirect 함수
+    - 매칭 URL이 없으면 "인자 문자열"을 그대로 URL로 사용
+    - 내부적으로 resolve_url 함수를 사용
+    - 반환값 : httpresponse의 인스턴스
+        - 즉 views.py 에서 바로 쓸 수 있음.
+
+- reverse를 조금 더 쓰기 쉽게 바꿔준 것이 resolve_url
+- resolve_url에서 기능을 더 첨부한 것이 redirect 
+
+```python
+{% url "blog:post_detail" 100 %}                -> 문자열 URL : '/blog/100/'
+{% url "blog:post_detail" pk=100 %}
+
+reverse('blog:post_detail', args=[100])         -> 문자열 URL : '/blog/100/'
+reverse('blog:post_detail', kwargs={'pk': 100})
+
+resolve_url('blog:post_detail', 100)            -> 문자열 URL : '/blog/100/'
+resolve_url('blog:post_detail', pk=100)
+resolve_url('/blog/100/')
+
+redirect('blog:post_detail', 100)               -> HttpResponse 응답 (301 or 302)
+redirect('blog:post_detail', pk=100)
+redirect('/blog/100/')
+```
+
+**주의** 
+
+- 무조건 app_name을 해당 앱의 url에다가 선언을 해줘서 위의 코드처럼 blog:post_detail 이런 식으로 접근을 하자!
+    - 그렇지 않으면?
+        - blog 앱의 post_detail
+        - shop 앱의 post_detail
+        - instagram 앱의 post_detail
+        - 이것들이 전부 urlpatterns의 list로서 정의가 됨
+
+        ```python
+        urlpatterns = [
+            blog앱의 post_detail,
+            shop앱의 post_detail,
+            instagram 앱의 post_detail,
+        ]
+        ```
+
+        - 이렇게 중복으로 되면 가장 맨 위의 blog 앱의 post_detail만 계속 부름.
+
+## 모델 객체에 대한 detail 주소 계산
+
+- 어떠한 모델을 만들게 되면 우리는 하나의 레코드에 대한 detail 페이지를 대게 만든다.
+    - Post의 detail
+    - Item의 detail
+    - Tag의 detail 
+    - ....
+
+
+- 매번 다음과 같은 코드로 할 수도 있다.
+
+```python
+resolve_url('blog:post_detail', pk=post.pk)
+redirect('blog:post_detail', pk=post.pk)
+{% url 'blog:post_detail' post.pk %}
+```
+
+- 근데 귀찮음.
+
+- 그래서 다음과 같이 더 간편하게 사용할 수도 있다.
+
+```python
+resolve_url(post)
+redirect(post)
+{{ post.get_absolute_url }}
+```
+
+**어떻게??**
+
+- Post 모델에 어떤 무언가를 따로 구현을 해줘야함 !!
+
+### 모델 클래스에 get_absolute_url() 구현
+
+- resolve_url 함수는 가장 먼저 get_absolute_url() 함수의 존재여부를 체크하고,
+존재할 경우 reverse를 수행하지 않고 그 리턴값을 즉시 리턴
+
+```python
+# django/shortcuts.py
+
+def resolve_url(to, *args, **kwargs):
+    if hasattr(to, 'get_absolute_url'):
+        return to.get_absolute_url()
+    # 중략
+    try:
+        return reverse(to, args=args, kwargs=kwargs)
+    except NoReverseMatch:
+        # 나머지 코드 생략
+```
+
+**resolve_url/redirect를 위한 모델 클래스 추가 구현**
+
+```python
+from django.urls import reverse
+
+class Post(models.Model):
+    # 중략
+    def get_absolute_url(self):
+        return reverse('blog:post_detail', args=[self.pk])
+```
+
+- 이렇게 구현을 해놓으면 ??
+
+```html
+<a href="{% url 'blog:post_detail' post.pk %}">
+    {{ post.message}}
+</a>
+```
+
+- 위의 코드를 밑의 코드처럼 간편하게 사용 가능!!
+
+```html
+<a href="{{ post.get_absolute_url }}">
+    {{ post.message}}
+</a>
+```
+
+- 이렇게만 써도 된다!!
+- admin에 적용한 예시
+
+![image](https://user-images.githubusercontent.com/95459089/191231830-1b8fa276-85c3-4357-bafa-ff6b4877359a.png)
+
+![image](https://user-images.githubusercontent.com/95459089/191231955-8eb716e4-e983-46c3-bda1-77c8170ce2e7.png)
+
+
+
+```python
+resolve_url(Post.objects.first())
+
+return 값 : '/blog/1106/'
+```
+
+### 그 외 활용
+
+- CreateView / UpdateView
+    - success_url을 제공하지 않을 경우, 해당 model instance 의 get_absolute_url 주소로 이동이 가능한지 체크하고, 이동이 가능할 경우 이동
+    - 생성/수정하고나서 Detail화면으로 이동하는 것은 자연스러운 시나리오
+        - 어떤 말이냐면 게시글을 새로 작성하거나 수정을 하였으면 해당 게시글의 detail url로 이동하는 것이 자연스럽다는 얘기
+- 특정 모델에 대한 Detail뷰를 작성할 경우
+    - Detail뷰에 대한 URLConf설정을 하자마자, 필히 get_absolute_url설정을 해라! 코드가 보다 간결해진다.
