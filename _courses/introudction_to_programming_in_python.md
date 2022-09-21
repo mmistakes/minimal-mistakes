@@ -9,7 +9,7 @@ excerpt: "Introductory course for people who have no programming experience"
 
 # Variables and Constants
 
-Course lectures:
+Course lectures - you can choose relevant videos from the playlist in the upper right corner:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9aqlRevPSRBceBpdYWf95dhLg91U1E2b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -24,7 +24,7 @@ Exercises:
 
 # Functions
 
-Course lectures:
+Course lectures - you can choose relevant videos from the playlist in the upper right corner:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9aqlRevPSRBceBpdYWf95dhLg91U1E2b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -36,7 +36,7 @@ Exercises:
 
 # Conditional Statements
 
-Course lectures:
+Course lectures - you can choose relevant videos from the playlist in the upper right corner:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9aqlRevPSRBceBpdYWf95dhLg91U1E2b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -48,7 +48,7 @@ Exercises:
 
 # Loops and Iterables
 
-Course lectures:
+Course lectures - you can choose relevant videos from the playlist in the upper right corner:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9aqlRevPSRBceBpdYWf95dhLg91U1E2b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -60,7 +60,7 @@ Exercises:
 
 # Lists and Dictionaries
 
-Course lectures:
+Course lectures - you can choose relevant videos from the playlist in the upper right corner:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9aqlRevPSRBceBpdYWf95dhLg91U1E2b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -72,7 +72,7 @@ Exercises:
 
 # Importing Packages
 
-Course lectures:
+Course lectures - you can choose relevant videos from the playlist in the upper right corner:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9aqlRevPSRBceBpdYWf95dhLg91U1E2b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
