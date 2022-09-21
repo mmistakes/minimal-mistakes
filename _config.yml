@@ -305,7 +305,7 @@ defaults:
   # _courses
   - scope:
       path: ""
-      type: pets
+      type: courses
     values:
       layout: single
       author_profile: true
