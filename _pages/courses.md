@@ -1,8 +1,8 @@
 ---
-title: Portfolio
+title: Courses
 layout: collection
 permalink: /courses/
-collection: portfolio
+collection: courses
 entries_layout: grid
 classes: wide
 ---
