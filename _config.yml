@@ -276,6 +276,11 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  courses:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -306,9 +311,3 @@ defaults:
       author_profile: true
       share: true
       comment: true
-
-# Collections
-collections:
-  courses:
-    output: true
-    permalink: /:collection/:path/
