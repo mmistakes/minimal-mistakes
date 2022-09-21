@@ -297,6 +297,13 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _courses
+  - scope:
+      path: ""
+    values:
+      layout: "single"
+      author_profile: false
+      share: true
 
 # Collections
 collections:
