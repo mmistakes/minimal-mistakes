@@ -10,9 +10,11 @@ author_profile: true
 <ul>
   {% for course in site.courses %}
     <li>
-      <h2>{{ course.name }}</h2>
-      <h3>{{ course.position }}</h3>
-      <p>{{ course.content | markdownify }}</p>
+        <h2>
+            <a href="{{ course.url }}">
+                {{ course.title }}
+            </a>
+        </h2>
     </li>
   {% endfor %}
 </ul>
