@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Hello There Course"
+title: "Hello Where Course"
 permalink: /courses/
 author_profile: true
 ---
