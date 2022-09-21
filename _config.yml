@@ -311,4 +311,4 @@ defaults:
 collections:
   courses:
     output: true
-    permalink: /courses/
+    permalink: /:collection/:path/
