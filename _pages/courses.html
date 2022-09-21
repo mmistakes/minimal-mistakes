@@ -1,0 +1,15 @@
+---
+layout: default
+title: Courses
+---
+<h1>Courses</h1>
+
+<ul>
+  {% for course in site.courses %}
+    <li>
+      <h2>{{ course.name }}</h2>
+      <h3>{{ course.position }}</h3>
+      <p>{{ course.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
