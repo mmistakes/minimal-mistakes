@@ -1,7 +1,6 @@
 ---
 layout: archive
 title: "Greeting Course"
-permalink: /courses/
 author_profile: true
 ---
 
