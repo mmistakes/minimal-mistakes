@@ -300,10 +300,12 @@ defaults:
   # _courses
   - scope:
       path: ""
+      type: pets
     values:
-      layout: "single"
-      author_profile: false
+      layout: single
+      author_profile: true
       share: true
+      comment: true
 
 # Collections
 collections:
