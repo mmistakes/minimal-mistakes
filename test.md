@@ -1,5 +1,6 @@
 ---
 layout: default
+output: true
 title: "ABCD"
 ---
 
