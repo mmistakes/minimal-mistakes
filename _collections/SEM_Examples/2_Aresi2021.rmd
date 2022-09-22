@@ -1,0 +1,24 @@
+---
+layout: single
+author_profile: true
+title: "2- PLS-SEM example with composite variables: assessment of influential factors on drunk behaviour of foreign students"
+shortdesc: ""
+
+Method: "PLS-SEM R's `SEMinR` package."
+Case: "A longitudinal study with the assessment of the influence of MMSAS
+(Multidimensional Motivations to Study Abroad) on BSAS (Brief
+sociocultural adaptation) and drunk behaviour."
+Datafrom: "Aresi, Giovanni; Moore, Simon C.; Marta, Elena (2021), "The
+longitudinal health behaviours of European study abroad students sampled
+from forty-two countries and across three-waves", Mendeley Data, V3,
+doi: 10.17632/585d2wdmtd.3"
+excerpt: ""
+header:
+  overlay_color: "#333"
+permalink: /collections/SEM_Examples/1_Park2018
+date: "5/27/2022"
+output: "github_document"
+editor_options: 
+  markdown: 
+    wrap: 72
+---
