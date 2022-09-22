@@ -2,6 +2,7 @@
 layout: single
 author_profile: true
 title: "Structural Equation Modelling - SEM"
+shortdesc: "Examples and cases of application of SEM"
 excerpt: "Some code examples using R"
 header:
   overlay_color: "#333"
