@@ -4,7 +4,7 @@ main:
   - title: "R-ShinyApps"
     url: /R-ShinyApps.html
   - title: "Test"
-    url: /test.md
+    url: /test
   - title: "SEM examples"
     url: /SEM_Examples/0_Main.html
   - title: "Sample Collections"
