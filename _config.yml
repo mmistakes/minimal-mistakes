@@ -104,6 +104,7 @@ collections_dir: my_collections
 collections:   
   R-ShinyApps:
     output: true
+    permalink: /R-ShinyApps/:path/
 
 # Site Footer
 footer:
