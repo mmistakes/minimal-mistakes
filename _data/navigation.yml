@@ -7,7 +7,7 @@ main:
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Collections"
      url: /my_collections/
-  # - title: "Sample Collections"
+  - title: "Sample Collections"
   #   url: https://tomoegusberti.github.io/SEM_Examples
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "R-ShinyApps"
+     url: /my_collections/R-ShinyApps
