@@ -129,6 +129,11 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
+# Site Header
+excerpt: "**Portfolio** Projects & code examples"
+header:
+  overlay_color: "#333"
+
 # Site Footer
 footer:
   links:
