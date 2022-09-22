@@ -3,7 +3,7 @@
 main:  
   - title: "R-ShinyApps"
     url: /R-ShinyApps
-  - title: "Sample Collections"
+  - title: "Collections"
     url: /collections    
   - title: "Test"
     url: /test
