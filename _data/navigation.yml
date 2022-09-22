@@ -1,11 +1,11 @@
 
 # main links
-main:
-  - title: "About"
-    url: https://tomoegusberti.github.io/#introduction
+main:  
   - title: "R-ShinyApps"
     url: /_my_collections/_R-ShinyApps/PatAnalytics
   - title: "SEM examples"
     url: _my_collections/_SEM_Examples/0_Main.html
   - title: "Sample Collections"
   #   url: https://tomoegusberti.github.io/SEM_Examples
+  - title: "About"
+    url: https://tomoegusberti.github.io/#introduction
