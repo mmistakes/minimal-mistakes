@@ -5,7 +5,7 @@ title: "Structural Equation Modelling - SEM"
 excerpt: "Some code examples using R"
 header:
   overlay_color: "#333"
-permalink: /SEM_Examples/
+permalink: /collections/
 date: "15/06/2022"
 output: html_document
 editor_options: 
