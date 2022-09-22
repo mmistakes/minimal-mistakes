@@ -3,6 +3,8 @@
 main:  
   - title: "R-ShinyApps"
     url: /R-ShinyApps.html
+  - title: "Test"
+    url: test.md
   - title: "SEM examples"
     url: /SEM_Examples/0_Main.html
   - title: "Sample Collections"
