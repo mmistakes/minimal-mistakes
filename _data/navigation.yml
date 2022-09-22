@@ -1,3 +1,10 @@
+# Site Header
+excerpt: "**Portfolio** Projects & code examples"
+header:
+  overlay_color: "#333"
+
+
+
 # main links
 main:
   - title: "Quick-Start Guide"
