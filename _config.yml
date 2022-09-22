@@ -131,7 +131,7 @@ author:
 
 #header
 show_excerpts: true
-excerpt: "This post should display a **header with a solid background color**, if the theme supports it."
+excerpt: "Text _config.yml testing"
 header:
   overlay_color: "#333"
 
