@@ -1,5 +1,10 @@
 ---
-title: StatPoker
+layout: single
+author_profile: true
+title: "StatPoker"
+excerpt: "Project and code examples"
+header:
+  overlay_color: "#333"
 ---
 
 [StatPoker: an educational app](https://hamagust.shinyapps.io/StatPoker2/)
