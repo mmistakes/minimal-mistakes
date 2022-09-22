@@ -6,6 +6,6 @@ main:
   - title: "SEM examples"
     url: /SEM_Examples/0_Main.html
   - title: "Sample Collections"
-    url: /my_collections/
+    url: /my_collections/collections.md
   - title: "About"
     url: https://tomoegusberti.github.io/#introduction
