@@ -1,4 +1,7 @@
-# StatPoker
+---
+title: StatPoker
+---
+
 [StatPoker: an educational app](https://hamagust.shinyapps.io/StatPoker2/)
 
 Following the logic of gamification of teaching, I have implemented and promoted changes in the game originally described by Leech (2008) in classroom statistics courses since 2009. This webapp comprises the first implementation version for an e-learning context.
