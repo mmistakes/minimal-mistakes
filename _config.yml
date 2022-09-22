@@ -100,13 +100,14 @@ author:
 show_excerpts: true
 
 #collections
-collections_dir: my_collections
 collections:   
   R-ShinyApps:
+    collections_dir: R-ShinyApps
     output: true
     permalink: /R-ShinyApps/:path/
   SEM_Examples:
     output: true
+    collections_dir: SEM_Examples
     permalink: /SEM_Examples/:path/
 
 # Site Footer
