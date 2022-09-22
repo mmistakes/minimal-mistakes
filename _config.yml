@@ -101,10 +101,9 @@ show_excerpts: true
 
 #collections
 collections_dir: my_collections
-collections:
-  my_collections:    
-    R-ShinyApps:
-      output: true
+collections:   
+  R-ShinyApps:
+    output: true
 
 # Site Footer
 footer:
