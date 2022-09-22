@@ -2,6 +2,7 @@
 layout: single
 author_profile: true
 title: "StatPoker"
+shortdesc: "An educational app to train basic statistical concpets"
 excerpt: "Project and code examples"
 header:
   overlay_color: "#333"
