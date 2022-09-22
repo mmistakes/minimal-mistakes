@@ -13,5 +13,6 @@ Collection and projects:
 <ol>
 {% for collection in site.collections %}
   <li><a href="{{collection.url}}">{{collection.title}}</a></li>
+  <p>{{ collection.shortdesc }}</p>
 {% endfor %}
 </ol>
