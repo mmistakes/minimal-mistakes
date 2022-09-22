@@ -105,10 +105,10 @@ collections:
     collections_dir: R-ShinyApps
     output: true
     permalink: /R-ShinyApps/:title/
-  SEM_Examples:
+  collections:
     output: true
-    collections_dir: SEM_Examples
-    permalink: /SEM_Examples/:title/
+    collections_dir: collections
+    permalink: /collections/:title/
 
 # Site Footer
 footer:
