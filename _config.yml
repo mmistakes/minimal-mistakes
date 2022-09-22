@@ -105,6 +105,9 @@ collections:
   R-ShinyApps:
     output: true
     permalink: /R-ShinyApps/:path/
+  SEM_Examples:
+    output: true
+    permalink: /SEM_Examples/:path/
 
 # Site Footer
 footer:
