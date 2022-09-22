@@ -13,9 +13,13 @@ excerpt : "심신 미약미약~"
 ## 빈즈란?
 프로그램에서 부품이라 생각하면 된다. 큰 프로그램에서 독립적으로 수행되는 하나의 작은 자바 컨포넌트이다. 
 
-jsp페이지에서 비지니스 로직을 제거하기 위한 방법으로 사용하는 기술이다. 즉, 
+비지니스 로직을 담고 있으며 자바빈즈 규약을 따르는 클래스이다. 
 
+특정 데이터를 관리하고 표현하기 위해 JSP에서 사용하는 특수한 클래스이다.
+
+jsp페이지에서 비지니스 로직을 제거하기 위한 방법으로 사용하는 기술이다. 즉, 
 jsp페이지에서 화면을 표현하기 위한 계산식이나 자료들의 처리를 담당하는 자바 코드를 따로 분리하여 작성한 것이 자바빈즈이다.
+
 
 ## 사용하는 이유?
 - JSP의 로직부분을 분리해서 코드를 재사용하기 위함
@@ -26,22 +30,53 @@ jsp페이지에서 화면을 표현하기 위한 계산식이나 자료들의 �
 - 기본 생성자, 멤버 변수(필드), `getter & setter`메소드가 필수적으로 작성되어 있어야 함
 - 자바 빈즈의 형태(예시)
 ```java
-@getter
-@setter
+@getter // getter 메소드
+@setter // setter 메소드 
 public class Bean{
-    private int x;
-    private int y;
+    private String name;
 
     public Bean(){ }
 
     // getter
+    /* 
+    public void setStatement(String name){
+      this.name = name;
+    }
+    */
     // setter 
+    /*
+    publi int getStatement(){
+      retrun "Hello" + this.name;
+    }
 }
 ```
-자바 빈즈를 활용할 때 
+자바 빈즈를 활용할 때   
 - 액션 태그를 사용한 형태
   - 자바빈 액션 태그를 사용하면 FORM 데이터나 HTML 페이지에서 넘어오는 데이터를 쉽게 객체에 저장하는 것이 가능하다. 
-- 스크립트 요소안에 자바코드를 작성하여 사용한 형태
+  - `<jsp:useBean>` 액션 태그를 이용 -> 자바빈즈 객체 생성 및 이용
+  - 액션태그는 JSP에서 특별한 기능을 위해 정의된 XML 형태의 태그 
+  - `<jsp:useBean>`액션 태그 : JSP에서 자바빈즈를 이용하기 위한 태그 
+  ```js
+  // 객체 생성 
+  <jsp:useBean id = "hello" class = "HelloWorld" scope = "page"/>
+  ```
+                  객체의 이름   자바빈즈 클래스 이름   자바빈즈 유효범위 지정
+  
+  - 위 구문은 아래와 동일한 구문이다. 
+   ```java 
+  HelloWorld hello = new HelloWorld();
+  ```
+  
+- 자바 코드를 이용하는 형태
+   - JSP 내에서 자바 코드를 이용하여 자바빈즈 객체를 생성 후 이용하는 방법이다. 
+   - 사용방법
+   1. 클래스 import 
+        - <%@page import = "hello.HelloBean"%>
+   2. 객체 생성 
+        - HelloBean myHello = new HelloBean();
+   3. 객체 사용 
+        - myHello.setStatement("Grace Byun!!");
+        - str = myHello.getStatement();
 
 그럼 어떤 형태를 사용해야 할까? 
 - 액션 태그를 활용하는 방법은 자바빈즈를 쓰는 디자이너에게 친숙한 방법이다.
