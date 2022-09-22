@@ -4,10 +4,8 @@ main:
   - title: "About"
     url: https://tomoegusberti.github.io/#introduction
   - title: "R-ShinyApps"
-    url: /my_collections/R-ShinyApps
+    url: /_my_collections/_R-ShinyApps/PatAnalytics.md
   - title: "SEM examples"
     url: https://tomoegusberti.github.io/SEM_Examples
-  - title: "Collections"
-     url: /my_collections/
   - title: "Sample Collections"
   #   url: https://tomoegusberti.github.io/SEM_Examples
