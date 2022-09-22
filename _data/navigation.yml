@@ -3,11 +3,12 @@
 main:
   - title: "About"
     url: https://tomoegusberti.github.io/#introduction
+  - title: "R-ShinyApps"
+    url: /my_collections/R-ShinyApps
+
   - title: "R-Shiny projects"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+    url: https://tomoegusberti.github.io/SEM_Examples
   - title: "Collections"
      url: /my_collections/
   - title: "Sample Collections"
   #   url: https://tomoegusberti.github.io/SEM_Examples
-  - title: "R-ShinyApps"
-     url: /my_collections/R-ShinyApps
