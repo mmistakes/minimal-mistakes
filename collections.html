@@ -1,0 +1,13 @@
+---
+layout: page
+title: Collections
+permalink: /my_collections/
+---
+
+These are my courses:
+
+<ol>
+{% for collection in site.my_collections %}
+  <li><a href="{{collection.url}}">{{collection.title}}</a></li>
+{% endfor %}
+</ol>
