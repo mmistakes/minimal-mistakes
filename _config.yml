@@ -104,11 +104,11 @@ collections:
   R-ShinyApps:
     collections_dir: R-ShinyApps
     output: true
-    permalink: /R-ShinyApps/:path/
+    permalink: /R-ShinyApps/:title/
   SEM_Examples:
     output: true
     collections_dir: SEM_Examples
-    permalink: /SEM_Examples/:path/
+    permalink: /SEM_Examples/:title/
 
 # Site Footer
 footer:
