@@ -4,7 +4,7 @@ main:
   - title: "R-ShinyApps"
     url: /_my_collections/_R-ShinyApps/PatAnalytics
   - title: "SEM examples"
-    url: _my_collections/_SEM_Examples/0_Main.html
+    url: /SEM_Examples/0_Main.html
   - title: "Sample Collections"
   #   url: https://tomoegusberti.github.io/SEM_Examples
   - title: "About"
