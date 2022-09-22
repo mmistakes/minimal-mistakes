@@ -131,9 +131,6 @@ author:
 
 #header
 show_excerpts: true
-excerpt: "Text _config.yml testing"
-header:
-  overlay_color: "#333"
 
 # Site Footer
 footer:
