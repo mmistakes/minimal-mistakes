@@ -6,7 +6,7 @@ main:
   - title: "R-Shiny projects"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Collections"
-  #   url: /year-archive/
+     url: /my_collections/
   # - title: "Sample Collections"
   #   url: https://tomoegusberti.github.io/SEM_Examples
   # - title: "Sitemap"
