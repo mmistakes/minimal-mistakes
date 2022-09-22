@@ -257,6 +257,73 @@ Some good practice principles:
 - variables for common library used across multiple sub-modules, applied as module `libraryDependencies`
 - same for common settings, applied as `settings`
 
+Below is a sample multi-module build.sbt:
+```
+ThisBuild / scalaVersion := "2.13.8"
+ThisBuild / version := "1.0"
+ThisBuild / organization := "com.rockthejvm"
+
+val catsVersion = "2.8.0"
+val akkaVersion = "2.6.20"
+
+lazy val core = project
+  .in(file("core"))
+  .settings(
+    libraryDependencies ++= Seq(
+      "com.typesafe"   % "config" % "1.4.2",
+      "org.scalameta" %% "munit"  % "0.7.29" % Test
+    )
+  )
+
+val commonDeps = Seq(
+  "ch.qos.logback" % "logback-classic" % "1.4.1"
+)
+
+lazy val compilerOptions = Seq(
+  "-unchecked",
+  "-feature",
+  "-deprecation"
+)
+
+lazy val module_1 = project
+  .in(file("module-1"))
+  .settings(
+    libraryDependencies ++= commonDeps ++ Seq(
+      //add more dependencies which are needed only for this module
+      "com.typesafe.akka" %% "akka-stream" % akkaVersion
+    )
+  )
+  .dependsOn(core)
+
+lazy val module_2 = project
+  .in(file("module-2"))
+  .settings(
+    name := "module_2", //can be different from the file() name
+    libraryDependencies ++= Seq(
+      "org.typelevel" %% "cats-core" % catsVersion
+      //add more dependencies which are needed only for this module
+    )
+  )
+  .dependsOn(core)
+
+lazy val root = project
+  .in(file("."))
+  .settings(
+    name := "multi_module",
+    publish / skip := true
+  )
+  .settings(
+    scalacOptions ++= compilerOptions ++ Seq(
+      "-Xfatal-warnings"
+    )
+  )
+  .enablePlugins(BuildInfoPlugin) //Need to add the plugin details in plugins.sbt first. In this case `sbt-buildinfo`
+  .aggregate(
+    module_1,
+    module_2
+  )
+```
+
 ## 11. Executing commands on each Module
 Now that we are ready with a multi-module project, let's see how we can execute SBT commands module-wise. 
 At the root of the project, if we execute `sbt` it will start the SBT session. When we run the compile command, it will compile all the modules.
