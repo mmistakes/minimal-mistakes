@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Collections
-permalink: /my_collections/
+permalink: /collections/
 ---
 
 These are my courses:
 
 <ol>
-{% for collection in site.my_collections %}
+{% for collection in site.collections %}
   <li><a href="{{collection.url}}">{{collection.title}}</a></li>
 {% endfor %}
 </ol>
