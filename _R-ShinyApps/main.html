@@ -1,0 +1,15 @@
+---
+layout: default
+title: R-Shiny Apps
+---
+<h1>R-Shiny Apps</h1>
+
+<ul>
+  {% for author in site.R-ShinyApps %}
+    <li>
+      <h2><a href="{{ R-ShinyApps.url }}">{{ R-ShinyApps.title }}</a></h2>
+      <h3>{{ R-ShinyApps.position }}</h3>
+      <p>{{ R-ShinyApps.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
