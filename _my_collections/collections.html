@@ -7,7 +7,7 @@ permalink: /my_collections/
 These are my courses:
 
 <ol>
-{% for course in site.my_collections %}
-  <li><a href="{{course.url}}">{{course.title}}</a></li>
+{% for my_collections in site.my_collections %}
+  <li><a href="{{my_collections.url}}">{{my_collections.title}}</a></li>
 {% endfor %}
 </ol>
