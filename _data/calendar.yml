@@ -35,53 +35,70 @@
   },
   {
     "image_path": null,
-    "alt": "Fotograf in der Schule",
-    "title": "Fotograf in der Schule",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=djcwc2U4N2VhOThza25tNDhkcmxyYzlvdGsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "alt": "Kinderparlament",
+    "title": "Kinderparlament",
+    "excerpt": "Wahl der Schülersprecher/-innen und Wahlen für die Schulkonferenz",
+    "url": "https://www.google.com/calendar/event?eid=cDhxdm1nbzAycWJob2Z0Mm9paTlwOXM1cDggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
-      "date": "2022-09-30",
+      "date": null,
+      "date_time": "2022-09-27T08:45:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2022-09-27T09:45:00+02:00"
+    },
+    "created": "2022-09-21T19:33:37.000Z",
+    "updated": "2022-09-21T19:34:52.045Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. Fachkonferenz Nawi",
+    "title": "1. Fachkonferenz Nawi",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Mm4yYmZoOTA2aGFyZTM0MXYwbHRiMzk0cnMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2022-09-27T15:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2022-09-27T16:30:00+02:00"
+    },
+    "created": "2022-09-21T19:20:26.000Z",
+    "updated": "2022-09-21T19:20:26.446Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. Fachkonferenz Sport",
+    "title": "1. Fachkonferenz Sport",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWxiNXFxcGlnbmpjNGI1MHRuYzFhamY2YTggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2022-09-27T15:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2022-09-27T16:30:00+02:00"
+    },
+    "created": "2022-09-21T19:19:17.000Z",
+    "updated": "2022-09-21T19:20:43.288Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Schulfotograf",
+    "title": "Schulfotograf",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=YWQ3N2Q1aG5xcm4xc3FwbDdpaDJwanRwcXMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2022-09-28",
       "date_time": null
     },
     "end": {
       "date": "2022-10-01",
       "date_time": null
     },
-    "created": "2022-09-21T04:32:44.000Z",
-    "updated": "2022-09-21T04:32:44.019Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Anmeldezeitraum Schulanfänger 2023/24",
-    "title": "Anmeldezeitraum Schulanfänger 2023/24",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=bWgwbXE4MXFoc3UzMHBhbWFyNm9yajhlMHMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2022-10-10",
-      "date_time": null
-    },
-    "end": {
-      "date": "2022-10-22",
-      "date_time": null
-    },
-    "created": "2022-09-05T19:43:42.000Z",
-    "updated": "2022-09-05T19:43:42.423Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Herbstferien",
-    "title": "Herbstferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=dW41amE3ZDUwdG91c2Fiamw4ZGYwcGFjZG8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2022-10-24",
-      "date_time": null
-    },
-    "end": {
-      "date": "2022-11-05",
-      "date_time": null
-    },
-    "created": "2022-09-05T19:44:15.000Z",
-    "updated": "2022-09-05T19:44:15.209Z"
+    "created": "2022-09-21T19:21:14.000Z",
+    "updated": "2022-09-21T19:21:14.969Z"
   }
 ]
