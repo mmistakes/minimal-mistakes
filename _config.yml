@@ -130,7 +130,7 @@ author:
       # url: "https://instagram.com/"
 
 #header
-show_excerpts: true
+show_excerpts: false
 
 # Site Footer
 footer:
