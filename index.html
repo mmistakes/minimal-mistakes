@@ -1,7 +1,11 @@
 ---
 layout: home
+author_profile: true
 excerpt: "index.html excerpt testing"
 header:
   overlay_color: "#333"
 ---
 #index test
+{%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+ {%- endif -%}
