@@ -2,12 +2,12 @@
 # main links
 main:  
   - title: "R-ShinyApps"
-    url: /R-ShinyApps.html
+    url: /R-ShinyApps
   - title: "Test"
     url: /test
   - title: "SEM examples"
-    url: /SEM_Examples/0_Main.html
+    url: /SEM_Examples/0_Main
   - title: "Sample Collections"
-    url: /my_collections/collections.html
+    url: /my_collections/collections
   - title: "About"
     url: https://tomoegusberti.github.io/#introduction
