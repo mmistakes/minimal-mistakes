@@ -2,6 +2,7 @@
 layout: single
 author_profile: true
 title: "PatAnalytics"
+shortdesc: "Analysis of technological panorama based on analysis of patent related data"
 excerpt: "Project and code examples"
 header:
   overlay_color: "#333"
