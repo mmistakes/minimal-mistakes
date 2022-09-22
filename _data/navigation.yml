@@ -6,6 +6,6 @@ main:
   - title: "R-ShinyApps"
     url: /_my_collections/_R-ShinyApps/PatAnalytics
   - title: "SEM examples"
-    url: https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/50f29ff88d4eb141c312bd443e2124ca3eedef8b/_my_collections/_SEM_Examples/0_Main.md
+    url: _my_collections/_SEM_Examples/0_Main.md
   - title: "Sample Collections"
   #   url: https://tomoegusberti.github.io/SEM_Examples
