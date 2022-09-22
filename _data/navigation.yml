@@ -2,7 +2,7 @@
 # main links
 main:  
   - title: "R-ShinyApps"
-    url: /R-ShinyApps/
+    url: /R-ShinyApps/main.html
   - title: "SEM examples"
     url: /SEM_Examples/0_Main.html
   - title: "Sample Collections"
