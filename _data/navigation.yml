@@ -3,11 +3,9 @@
 main:  
   - title: "R-ShinyApps"
     url: /R-ShinyApps
+  - title: "Sample Collections"
+    url: /collections    
   - title: "Test"
     url: /test
-  - title: "SEM examples"
-    url: /SEM_Examples/0_Main
-  - title: "Sample Collections"
-    url: /collections
   - title: "About"
     url: https://tomoegusberti.github.io/#introduction
