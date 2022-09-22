@@ -1,6 +1,10 @@
 ---
-title: "Main"
-author: "Tomoe Gusberti, Dr. Eng."
+layout: single
+author_profile: true
+title: "Structural Equation Modelling - SEM"
+excerpt: "Some code examples using R"
+header:
+  overlay_color: "#333"
 permalink: /SEM_Examples/
 date: "15/06/2022"
 output: html_document
@@ -8,6 +12,7 @@ editor_options:
   markdown: 
     wrap: 72
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
