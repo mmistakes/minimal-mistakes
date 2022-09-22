@@ -1,5 +1,10 @@
 ---
+layout: single
+author_profile: true
 title: "PatAnalytics"
+excerpt: "Project and code examples"
+header:
+  overlay_color: "#333"
 ---
 
 
