@@ -1,6 +1,7 @@
 ---
 title: "Main"
 author: "Tomoe Gusberti, Dr. Eng."
+permalink: /SEM_Examples/
 date: "15/06/2022"
 output: html_document
 editor_options: 
