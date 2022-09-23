@@ -33,7 +33,7 @@ S, Friedman JF, et al. (2018). Use of structural equation models to
 predict dengue illness phenotype. PLoS Negl Trop Dis 12 (10): e0006799.
 <https://doi.org/10.1371/journal>. pntd.0006799
 
-## 2- PLS-SEM example with composite variables: assessment of influential factors on drunk behaviour of foreign students
+## [2- PLS-SEM example with composite variables: assessment of influential factors on drunk behaviour of foreign students](/collections/SEM_Examples/2_Aresi2021)
 
 Method: PLS-SEM R's `SEMinR` package.
 
