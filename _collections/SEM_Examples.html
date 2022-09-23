@@ -12,12 +12,12 @@ Collection and projects:
 
 <ul>
   {% for collection in site.collections %}
-    {% for example in collection.SEM_Examples %}
+  {% if collection.category == 'SEM' %}
       <li>
-        <h2><a href="{{ example.url }}">{{ example.shorttitle }}</a></h2>
-        <h3>{{ example.position }}</h3>
-        <p>{{ example.shortdesc }}</p>
+        <h2><a href="{{ collection.url }}">{{ collection.shorttitle }}</a></h2>
+        <h3>{{ collection.position }}</h3>
+        <p>{{ collection.shortdesc }}</p>
       </li>
-    {% endfor %}
+  {% endif %}
   {% endfor %}
 </ul>
