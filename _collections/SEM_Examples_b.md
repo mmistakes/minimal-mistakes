@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This is a list of examples of application of SEM
 
-## 1 CB-SEM example: Progression in the disease patterns
+## [1 CB-SEM example: Progression in the disease patterns](_collections/SEM_Examples/1_Park2018.md)
 
 Method: CB-SEM using R's `Lavaan` Package. The visualization was
 generated using and `semPlots`'s Package.
