@@ -24,9 +24,9 @@ I use Large-eddy simulations to investigate the impact of submesoscale dynamics 
 layer flows. I've given specific focus to Centrifugal-Symmetric instabilities, which are thought to
 be especially active in the submesoscale range of the spectrum.
 
-You can find a preprint of a publication that's under review for JPO
-[here](https://eartharxiv.org/repository/view/2851/) and watch my presentation on the topic
-[here](https://youtu.be/F2RVCqTOF5o).
+You can find a relevant publication
+[here](https://journals.ametsoc.org/view/journals/phoc/52/9/JPO-D-21-0259.1.xml) and watch my
+presentation on the topic [here](https://youtu.be/F2RVCqTOF5o).
 
 
 
