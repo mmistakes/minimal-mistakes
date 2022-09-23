@@ -32,9 +32,9 @@ library(haven)
 
 A longitudinal study with the assessment of the influence of MMSAS (Multidimensional Motivations to Study Abroad) on BSAS (Brief sociocultural adaptation) and drunk behaviour.
 
-Data from: Aresi, Giovanni; Moore, Simon C.; Marta, Elena (2021), "The longitudinal health behaviours of European study abroad students sampled from forty-two countries and across three-waves", Mendeley Data, V3, doi: 10.17632/585d2wdmtd.3
+**Data from**: Aresi, Giovanni; Moore, Simon C.; Marta, Elena (2021), "The longitudinal health behaviours of European study abroad students sampled from forty-two countries and across three-waves", Mendeley Data, V3, doi: 10.17632/585d2wdmtd.3
 
-Method: PLS-SEM R's SEMinR package.
+**Method**: PLS-SEM R's SEMinR package.
 
 # Data acquisition
 
