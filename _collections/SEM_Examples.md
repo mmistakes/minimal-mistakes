@@ -6,7 +6,6 @@ shortdesc: "Examples and cases of application of SEM"
 excerpt: "Some code examples using R"
 header:
   overlay_color: "#333"
-permalink: /collections/SEM_Examples
 date: "15/06/2022"
 output: html_document
 editor_options: 
