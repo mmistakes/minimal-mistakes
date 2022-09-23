@@ -11,11 +11,13 @@ header:
 Collection and projects:
 
 <ul>
-  {% for example in site.collections.SEM_Examples %}
-    <li>
-      <h2><a href="{{ example.url }}">{{ example.title }}</a></h2>
-      <h3>{{ example.position }}</h3>
-      <p>{{ example.shortdesc }}</p>
-    </li>
+  {% for collection in site.collections %}
+    {% for example in collection.SEM_Examples %}
+      <li>
+        <h2><a href="{{ example.url }}">{{ example.shorttitle }}</a></h2>
+        <h3>{{ example.position }}</h3>
+        <p>{{ example.shortdesc }}</p>
+      </li>
+    {% endfor %}
   {% endfor %}
 </ul>
