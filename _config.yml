@@ -109,6 +109,9 @@ collections:
     output: true
     collections_dir: collections
     permalink: /collections/:title/
+    colections/_SEM_Examples:
+      output: true
+      permalink: /collections/:title/:shorttitle
 
 # Site Footer
 footer:
