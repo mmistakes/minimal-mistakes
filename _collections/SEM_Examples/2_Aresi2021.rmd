@@ -2,6 +2,7 @@
 layout: single
 author_profile: true
 title: "2- PLS-SEM example with composite variables: assessment of influential factors on drunk behaviour of foreign students"
+category: SEM
 shortdesc: ""
 Method: "PLS-SEM R's `SEMinR` package."
 Case: "A longitudinal study with the assessment of the influence of MMSAS
