@@ -21,4 +21,94 @@ editor_options:
   markdown: 
     wrap: 72
 ---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(seminr)
+library(haven)
+```
+
+# Objective
+
+A longitudinal study with the assessment of the influence of MMSAS (Multidimensional Motivations to Study Abroad) on BSAS (Brief sociocultural adaptation) and drunk behaviour.
+
+Data from: Aresi, Giovanni; Moore, Simon C.; Marta, Elena (2021), "The longitudinal health behaviours of European study abroad students sampled from forty-two countries and across three-waves", Mendeley Data, V3, doi: 10.17632/585d2wdmtd.3
+
+Method: PLS-SEM R's SEMinR package.
+
+# Data acquisition
+
+```{r}
+data<-read_sav('Aresi2021.sav')
+```
+
+# Model definition
+
+```{r}
+#scale MMSAS Multidimensional Motivations to Study Abroad Scale 
+
+measurements<-constructs(
+  composite('MMSAS',paste0("MMSAS_",c(11,15,19:22,24,25,27)), weights = mode_B),
+  composite('DrunkB_t1',names(data[,c(34,36,42:43,50,51,78)]), weights = mode_B),
+  composite('DrunkB_t2',names(data[,c(85,87,90,91,93,98,126)]), weights = mode_B),
+  composite('BSAS',names(data[,c(229,230,233,234,236)]), weights = mode_B),
+  composite('DrunkB_t3',names(data[,c(133:135,139:142,149,151,159,175:177,179)]), weights = mode_B)
+  )
+
+```
+
+# SEM
+
+```{r}
+modelSEM <- relationships(
+  paths(from = c("MMSAS",'BSAS','DrunkB_t1','DrunkB_t2'),        to = c("DrunkB_t3")),
+  paths(from = c("MMSAS",'BSAS','DrunkB_t1'),        to = c("DrunkB_t2")),
+  paths(from = "MMSAS",        to = c("DrunkB_t1",'BSAS')),
+  paths(from = "BSAS",        to = c("DrunkB_t1"))
+)
+
+
+fit_SEM=estimate_pls(data=data,measurement_model=measurements,structural_model=modelSEM)
+summary(fit_SEM,fit.meas=TRUE)
+```
+
+```{r}
+boot_mobi_pls <- bootstrap_model(seminr_model = fit_SEM,
+                                 nboot = 50,
+                                 cores = 5)
+```
+
+```{r}
+plot(boot_mobi_pls)
+save_plot("Aresi2021_PLS.png")
+```
+
+```{r}
+boot_mobi_pls$path_coef
+```
+
+```{r}
+
+specific_effect_significance(boot_seminr_model = boot_mobi_pls,
+                             from = "MMSAS",
+                             through = c("DrunkB_t1"),
+                             to = "DrunkB_t2",
+                             alpha = 0.05)
+```
+
+```{r}
+
+specific_effect_significance(boot_seminr_model = boot_mobi_pls,
+                             from = "MMSAS",
+                             to = "DrunkB_t2",
+                             alpha = 0.05)
+```
+
+```{r}
+
+specific_effect_significance(boot_seminr_model = boot_mobi_pls,
+                             from = "DrunkB_t1",
+                             to = "DrunkB_t2",
+                             alpha = 0.05)
+```
 
