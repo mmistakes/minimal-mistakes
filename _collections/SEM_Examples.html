@@ -1,0 +1,21 @@
+---
+layout: single
+author_profile: true
+title: Structural equation modelling
+permalink: /collections/SEM_Examples
+excerpt: "Some example codes"
+header:
+  overlay_color: "#333"
+---
+
+Collection and projects:
+
+<ul>
+  {% for example in site.collections.SEM_Examples %}
+    <li>
+      <h2><a href="{{ example.url }}">{{ example.title }}</a></h2>
+      <h3>{{ example.position }}</h3>
+      <p>{{ example.shortdesc }}</p>
+    </li>
+  {% endfor %}
+</ul>
