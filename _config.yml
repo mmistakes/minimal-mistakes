@@ -111,7 +111,7 @@ collections:
     permalink: /collections/:title/
     colections/_SEM_Examples:
       output: true
-      permalink: /collections/:title/:shorttitle
+      permalink: /collections/:category/:title
 
 # Site Footer
 footer:
