@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Jubiläumsprojektwoche",
-    "title": "Jubiläumsprojektwoche",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Y3FrMDNnZGw2N2RjMDJjNGxmZHJyb2djajggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2022-09-19",
-      "date_time": null
-    },
-    "end": {
-      "date": "2022-09-24",
-      "date_time": null
-    },
-    "created": "2022-09-05T19:41:44.000Z",
-    "updated": "2022-09-05T19:41:44.230Z"
-  },
-  {
-    "image_path": null,
     "alt": "Schuljubiläum „50 Jahre Brandwerder bewegt“",
     "title": "Schuljubiläum „50 Jahre Brandwerder bewegt“",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2022-09-21T19:36:45.000Z",
     "updated": "2022-09-21T19:36:45.773Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. Schulkonferenz digital",
+    "title": "1. Schulkonferenz digital",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Zmx0OGFrZzJkZ2JlaDZlNmVhbzVkazEzNm8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2022-10-06T15:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2022-10-06T17:00:00+02:00"
+    },
+    "created": "2022-09-21T19:22:16.000Z",
+    "updated": "2022-09-21T19:22:16.702Z"
   }
 ]
