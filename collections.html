@@ -8,10 +8,10 @@ header:
   overlay_color: "#333"
 ---
 
-Collection and projects:
+Collection of projects and codes:
 
 <ol>
-{% for collection in site.collections %}
+{% for collection in siandte.collections %}
   <li><a href="{{collection.url}}">{{collection.title}}</a></li>
   <p>{{ collection.shortdesc }}</p>
 {% endfor %}
