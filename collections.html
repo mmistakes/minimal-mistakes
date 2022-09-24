@@ -11,7 +11,7 @@ header:
 Collection of projects and codes:
 
 <ol>
-{% for collection in siandte.collections %}
+{% for collection in site.collections %}
   <li><a href="{{collection.url}}">{{collection.title}}</a></li>
   <p>{{ collection.shortdesc }}</p>
 {% endfor %}
