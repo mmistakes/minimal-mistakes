@@ -14,7 +14,7 @@ Collection and projects:
   {% for collection in site.collections %}
   {% if collection.category == 'SEM' %}
       <li>
-        <h2><a href="{{ collection.url }}">{{ collection.shorttitle }}</a></h2>
+        <h2><a href="{{ collection.url }}">{{ collection.title }}</a></h2>
         <h3>{{ collection.position }}</h3>
         <p>{{ collection.shortdesc }}</p>
       </li>
