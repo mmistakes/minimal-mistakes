@@ -8,7 +8,7 @@ main:
     url: /search/
 
 docs:
-  - title: "Contents1"
+  - title: "Contents"
     children:
      - title: "Category"
        url: /categories/
