@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Schuljubiläum „50 Jahre Brandwerder bewegt“",
-    "title": "Schuljubiläum „50 Jahre Brandwerder bewegt“",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NGMydTMwbTcwNzAwcTBjanZuaTJpbGtmZDQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2022-09-24T11:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2022-09-24T14:00:00+02:00"
-    },
-    "created": "2022-09-05T19:42:35.000Z",
-    "updated": "2022-09-05T19:42:35.753Z"
-  },
-  {
-    "image_path": null,
     "alt": "Kinderparlament",
     "title": "Kinderparlament",
     "excerpt": "Wahl der Schülersprecher/-innen und Wahlen für die Schulkonferenz",
@@ -100,5 +83,22 @@
     },
     "created": "2022-09-21T19:22:16.000Z",
     "updated": "2022-09-21T19:22:16.702Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Anmeldezeitraum Schulanfänger 2023/24",
+    "title": "Anmeldezeitraum Schulanfänger 2023/24",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=bWgwbXE4MXFoc3UzMHBhbWFyNm9yajhlMHMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2022-10-10",
+      "date_time": null
+    },
+    "end": {
+      "date": "2022-10-22",
+      "date_time": null
+    },
+    "created": "2022-09-05T19:43:42.000Z",
+    "updated": "2022-09-05T19:43:42.423Z"
   }
 ]
