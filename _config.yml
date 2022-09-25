@@ -124,6 +124,7 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/jaehoon_jung98"
+sidebar:
 
 # Site Footer
 footer:
@@ -274,5 +275,7 @@ defaults:
       comments: true
       share: true
       related: true
+      sidebar:
+        nav:sidebar
       show_date: true
 date_format: "%Y-%m-%d"
