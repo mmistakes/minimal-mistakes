@@ -1,7 +1,7 @@
 ---
 layout: single
-title:  "Basic Python"
-categories: Testing
+title:  "Data Organizing"
+categories: coding
 tag: [python, blog, jupytor]
 toc: true
 author_profile: false
@@ -80,12 +80,14 @@ sidebar:
   </style>
 </head>
 
-
+## 1.Import Data
 
 ```python
 # Import Pandas Library
 import pandas as pd
 ```
+
+
 
 
 ```python
@@ -191,9 +193,16 @@ Data columns (total 5 columns):
 dtypes: int64(2), object(3)
 memory usage: 40.0+ MB
 </pre>
+## 2.pd.pivot_table
+
+
+#pd.pivot_table(index = 'column name', columns = 'column name', values = 'column name', `aggfunc` = 'sum')
+#`aggfunc` Option: sum, count, mean, ...
+
+
 
 ```python
-# Che
+# Count the number of names
 raw.pivot_table(index = 'Name', values = 'Number', aggfunc = 'sum')
 ```
 
@@ -370,6 +379,8 @@ name_df
 
 
 ```python
+# Information of data
+# There are 14410 of Female name and 8657 of men name
 name_df.info()
 ```
 
@@ -384,14 +395,18 @@ Data columns (total 2 columns):
 dtypes: float64(2)
 memory usage: 487.9+ KB
 </pre>
+## 3. Fill the data
+
+
 
 ```python
+# Change value (Nan) to 0
 name_df = name_df.fillna(0)
 ```
 
 
 ```python
-name_df
+name_df.head()
 ```
 
 <div>
@@ -447,61 +462,18 @@ name_df
       <td>0.0</td>
       <td>116.0</td>
     </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>Zylah</th>
-      <td>36.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Zyler</th>
-      <td>0.0</td>
-      <td>38.0</td>
-    </tr>
-    <tr>
-      <th>Zyon</th>
-      <td>6.0</td>
-      <td>91.0</td>
-    </tr>
-    <tr>
-      <th>Zyra</th>
-      <td>23.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Zyrah</th>
-      <td>5.0</td>
-      <td>0.0</td>
-    </tr>
   </tbody>
 </table>
-<p>20815 rows × 2 columns</p>
 </div>
 
 
+## 4. Sorting
+
+
 
 ```python
-name_df.info()
-```
-
-<pre>
-<class 'pandas.core.frame.DataFrame'>
-Index: 20815 entries, Aadan to Zyrah
-Data columns (total 2 columns):
- #   Column  Non-Null Count  Dtype  
----  ------  --------------  -----  
- 0   F       20815 non-null  float64
- 1   M       20815 non-null  float64
-dtypes: float64(2)
-memory usage: 487.9+ KB
-</pre>
-
-```python
-name_df.sort_values(by = 'M', ascending = False)
+# Sorting data with descending order
+name_df.sort_values(by = 'M', ascending = False).head()
 ```
 
 <div>
@@ -557,44 +529,14 @@ name_df.sort_values(by = 'M', ascending = False)
       <td>2003.0</td>
       <td>615943.0</td>
     </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>Jemimah</th>
-      <td>5.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Jemma</th>
-      <td>535.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Jena</th>
-      <td>1819.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Jenae</th>
-      <td>510.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Zyrah</th>
-      <td>5.0</td>
-      <td>0.0</td>
-    </tr>
   </tbody>
 </table>
-<p>20815 rows × 2 columns</p>
 </div>
 
 
 
 ```python
+# Check top 5 names of men
 name_df.sort_values(by = 'M', ascending = False).head().index
 ```
 
@@ -603,90 +545,19 @@ Index(['Michael', 'James', 'Robert', 'John', 'David'], dtype='object', name='Nam
 </pre>
 
 ```python
+# Check top 5 names of female
 name_df.sort_values(by = 'F', ascending = False).head().index
 ```
 
 <pre>
 Index(['Mary', 'Jennifer', 'Elizabeth', 'Patricia', 'Linda'], dtype='object', name='Name')
 </pre>
-
-```python
-raw.head()
-```
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>StateCode</th>
-      <th>Sex</th>
-      <th>YearOfBirth</th>
-      <th>Name</th>
-      <th>Number</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>AK</td>
-      <td>F</td>
-      <td>1910</td>
-      <td>Mary</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>AK</td>
-      <td>F</td>
-      <td>1910</td>
-      <td>Annie</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>AK</td>
-      <td>F</td>
-      <td>1910</td>
-      <td>Anna</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>AK</td>
-      <td>F</td>
-      <td>1910</td>
-      <td>Margaret</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>AK</td>
-      <td>F</td>
-      <td>1910</td>
-      <td>Helen</td>
-      <td>7</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+## 5. Checking the type of data by columns
 
 
 
 ```python
+# Print values of "state column"
 raw['StateCode'].unique()
 ```
 
@@ -696,6 +567,7 @@ array(['AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL'],
 </pre>
 
 ```python
+# Print the number of values by columns
 raw['StateCode'].value_counts()
 ```
 
@@ -714,6 +586,7 @@ Name: StateCode, dtype: int64
 </pre>
 
 ```python
+# Print the number by Year
 raw['YearOfBirth'].value_counts()
 ```
 
@@ -731,3 +604,6 @@ raw['YearOfBirth'].value_counts()
 1910     2358
 Name: YearOfBirth, Length: 106, dtype: int64
 </pre>
+
+```python
+```
