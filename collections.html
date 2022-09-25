@@ -12,7 +12,9 @@ Collection of projects and codes:
 
 <ol>
 {% for collection in site.collections %}
+{% if collection.category == 'Index' %}
   <li><a href="{{collection.url}}">{{collection.title}}</a></li>
   <p>{{ collection.shortdesc }}</p>
+{% endif %}
 {% endfor %}
 </ol>
