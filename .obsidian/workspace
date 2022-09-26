@@ -1,0 +1,134 @@
+{
+  "main": {
+    "id": "c3f536baab79b38d",
+    "type": "split",
+    "children": [
+      {
+        "id": "f6e758a10de1fb58",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "25d53172520716c7",
+    "type": "split",
+    "children": [
+      {
+        "id": "dfd81f2b253964b8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "22ab413675b3e5f9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "921706c4d04925a0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b0c6679dc1e16c30",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "084c1a1a0617b971",
+    "type": "split",
+    "children": [
+      {
+        "id": "639780039edb7fc6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d13398f344c37acc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5904a4be4eba28db",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7742e68f28ddaf88",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "135a02709c7d0452",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "f6e758a10de1fb58",
+  "lastOpenFiles": [
+    "4F44ED3D-EFFB-4089-937C-51FCA7D75A82.png",
+    "4F44ED3D-EFFB-4089-937C-51FCA7D75A82.png.md",
+    "_posts/2022-09-26-Pytorch3.md",
+    "_posts/2022-09-26-Pytorch1.md",
+    "_posts/2022-09-26-Pytorch2.md",
+    "_posts/2022-09-23-daily.md",
+    "_posts/2022-09-23-Python-7.md",
+    "_posts/2022-09-19-Python-2.md"
+  ]
+}
