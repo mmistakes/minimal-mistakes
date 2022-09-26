@@ -77,7 +77,7 @@ Located at the Wallenberg Centre for Quantum Technology at Chalmers, SE, the QAL
 
 Helmi, the first Finnish quantum computer, is operated by VTT. Presently, Helmi provides five qubits, and will be upgraded to 20, then 50 qubits in the near future.
 
-### Future Resources
+<!-- ### Future Resources -->
 
 
 
@@ -89,6 +89,6 @@ Helmi, the first Finnish quantum computer, is operated by VTT. Presently, Helmi 
 <a title="NordIQuEst LinkedIn" href="https://www.linkedin.com/company/nordiquest"><img width="128" alt="LinkedIn logo initials" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/128px-LinkedIn_logo_initials.png"></a>
 
 
-## Partners
+<!-- ## Partners -->
 
 {% include gallery id="funders_gallery" %}
