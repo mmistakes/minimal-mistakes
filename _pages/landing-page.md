@@ -6,10 +6,7 @@ hidden: false
 header:
   #overlay_color: "#000"
   overlay_image: /assets/images/NordIQuEst_logo.png
-#  actions:
-#    - label: "<i class='fas fa-download'></i> Install now"
-#      url: "/docs/quick-start-guide/"
-excerpt: >
+excerpt: <br>
   Nordic-Estonian Quantum Computing e-Infrastructure Quest<br />
   <small></small>
 
@@ -17,24 +14,24 @@ intro:
   - excerpt: 'Nordic-Estonian Quantum Computing e-Infrastructure Quest'
 
 feature_row:
-  - image_path: /assets/images/access-icon.png
-    title: "How to get access"
-    excerpt: "Access to NordIQuEst is granted through...."
-    url: "/access"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /assets/images/posts-icon.jpg
-    title: "Posts and publications"
-    excerpt: "Blog posts, publications, and other material of interest"
-    url: "/publications"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /assets/images/about-icon.jpg
+  - image_path: /assets/images/about-icon.png
     title: "About NordIQuEst"
     excerpt: "The NordIQuEst consortium maintains, operates, and develops the infrastructure"
     url: "/about"
     btn_class: "btn--primary"
     btn_label: "Learn more"      
+  - image_path: /assets/images/events-icon.png
+    title: "Upcoming events"
+    excerpt: "Upcoming events hosted by NordIQuEst"
+    url: "/events"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/posts-icon.png
+    title: "Posts and publications"
+    excerpt: "Blog posts, publications, and other material of interest"
+    url: "/publications"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
 ---
 
 {% include feature_row id="intro" type="center" %}

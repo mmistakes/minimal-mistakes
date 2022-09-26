@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "How to get access"
-    url: /access
-  - title: "Posts and publications"
-    url: /publications
   - title: "About"
     url: /about
+  - title: "Posts and publications"
+    url: /publications
+  - title: "Upcoming events"
+    url: /events
   # - title: "Github"
   #   url: https://github.com/FiQCI/fiqci.github.io
   # - title: "About"

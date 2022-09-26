@@ -1,6 +1,6 @@
 # About this site
 
-This is the repository for building and maintaining the webpage for the Finnish Quantum-Computing Infrastructure (FiQCI). You can view the main site at https://fiqci.github.io/.
+This is the repository for building and maintaining the webpage for the Nordic-Estonian Quantum Computing e-Infrastructure Quest project (NordIQuEst). You can view the main site at https://nordiquest.net.
 
 ## Editing and Contributing
 
@@ -14,9 +14,10 @@ If you wish to add your own posts/publications or contribute to the website plea
 
 
 ``
-dev:<new-branch> --> dev:master --> fiqci.github.io:master
+dev:<new-branch> --> dev:master --> nordiquest.github.io:master
 ``
 
+Posts under `_posts/` should follow the format `YYYY-MM-DD-post-title.md`. 
 
 
 This website is built using Jekyll with the minimal mistakes theme. To find out more about jekyll, take a look at the docs: https://jekyllrb.com/docs/. 
@@ -57,4 +58,4 @@ Ensure that there isn't a current container assigned to the `4000:4000`. This ca
 
 ### Github pages
 
-Changes can also be previewed at either http://fiqci.fi/dev/ for the dev site or http://fiqci.fi/ for the main site. 
+Changes can also be previewed at either http://nordiquest.net/dev/ for the dev site or http://nordiquest.net/ for the main site. 
