@@ -1,0 +1,4 @@
+bundle add webrick
+시작하는 위치 조심하기
+bundle exec jekyll serve --trace
+
