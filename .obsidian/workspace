@@ -4,11 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "f6e758a10de1fb58",
+        "id": "0b319bbd2f77cca0",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "_posts/2022-09-26-Pytorch2.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -57,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 288.5
   },
   "right": {
     "id": "084c1a1a0617b971",
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_posts/2022-09-26-Pytorch2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "_posts/2022-09-26-Pytorch2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,25 +116,28 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "_posts/2022-09-26-Pytorch2.md"
+              }
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "f6e758a10de1fb58",
+  "active": "0b319bbd2f77cca0",
   "lastOpenFiles": [
-    "4F44ED3D-EFFB-4089-937C-51FCA7D75A82.png",
-    "4F44ED3D-EFFB-4089-937C-51FCA7D75A82.png.md",
-    "_posts/2022-09-26-Pytorch3.md",
     "_posts/2022-09-26-Pytorch1.md",
-    "_posts/2022-09-26-Pytorch2.md",
-    "_posts/2022-09-23-daily.md",
     "_posts/2022-09-23-Python-7.md",
-    "_posts/2022-09-19-Python-2.md"
+    "_posts/2022-09-19-Python-2.md",
+    "_posts/2022-09-20-AI_Math_3.md",
+    "_posts/2022-09-21-Python-5.md",
+    "docs.md",
+    "_posts/2022-09-26-Pytorch3.md",
+    "_posts/2022-09-26-Pytorch2.md",
+    "4F44ED3D-EFFB-4089-937C-51FCA7D75A82.png",
+    "4F44ED3D-EFFB-4089-937C-51FCA7D75A82.png.md"
   ]
 }
