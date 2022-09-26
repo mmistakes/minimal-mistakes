@@ -9,67 +9,116 @@ tag : [이것이 취업을 위한 코딩 테스트다, python, 나동빈]
 
 &nbsp;
 
-## 구현
+## 자료구조
 
-- **완전 탐색**
-  - 모든 경우의 수를 주저 없이 다 계산하는 해결 방법
+- **탐색**
+  - 많은 양의 데이터 중에서 원하는 데이터를 찾는 과정
+- **자료구조**
+  - 데이터를 표현하고 관리하고 처리하기 위한 구조
+    - 삽입(push) : 데이터 삽입
+    - 삭제(pop) : 데이터 삭제
+    - 오버플로 : 특정 자료구조가 수용할 수 있는 데이터의 크기를 이미 가득 찬 상태에서 삽입 연산 수행시 발생
+    - 언더플로 : 데이터가 없는 상태에서 삭제 연산을 수행하면 발생
 
-- **시뮬레이션**
-  - 문제에서 제시한 알고리즘을 한 단계씩 차례대로 직접 수행
+&nbsp;
+
+
+
+## 스택
+
+- 선입후출(First In Last Out) or 후입선출(Last In First Out)
+  - 먼저들어온것이 가장 나중에 나감
 
 
 &nbsp;
 
-### 예제) 상하좌우
-
-```markdown
-- N * N 행렬 좌표
-- 가장 좌측 상단 좌표는 1,1 가장 우측 하단 좌표는 N,N 로 표기한다.
-- N 길이의 입력에는 L(left), R(right), U(up), D(down) 이 들어있다.
-- 좌표를 초과하는 이동은 무시한다.
-- 예를 들어 1,1에서 L,U를 입력 받으면 이동하지 않는다.
-- 최종 도착한 좌표를 공백 기준으로 분리하여 출력하라.
-
-# 입력 예시
-5
-R R R U D D
-
-# 출력 에시
-3 4
-```
-
-&nbsp;
-
-**풀이**
+### 예제) 스택
 
 ```python
-number = int(input())
-moves = input().split()
-x,y = 1,1
+- 삽입(5), 삽입(2), 삽입(3), 삽입(7), 삭제(), 삽입(1), 삽입(4) ,삭제() 
 
-dx = [0,0,-1,1]
-dy = [-1,1,0,0]
+example = []
 
-move_type = ['L','R','U','D']
+example.append(5)
+example.append(2)
+example.append(3)
+example.append(7)
+example.pop()
+example.append(1)
+example.append(4)
+example.pop()
 
-for p in moves:
-    for i in range(len(move_type)):
-        if p == move_type[i]:
-            nx = x + dx[i]
-            ny = y + dy[i]
-    if nx < 1 or ny < 1 or nx > number or ny > number:
-        continue
-    
-    x, y = nx, ny
-
-print(x,y)
+print(example) # 최하단 부터
+print(example[::-1]) # 최상단 부터
 ```
 
-- 초기값 x,y 설정
-- 방향에 따라 좌표값을 dx,dy에 할당
-- 전체 격자를 넘어가는 경우에 대한 예외 적용
+&nbsp;
 
-> 구현은 위와같이 예외 케이스를 제외하는 방식으로 진행
+
+
+## 큐
+
+- 선입선출(First In First Out) 구조
+
+&nbsp;
+
+### 예제) 큐
+
+```python
+- 삽입(5), 삽입(2), 삽입(3), 삽입(7), 삭제(), 삽입(1), 삽입(4) ,삭제() 
+
+from collections import deque
+
+queue = deque()
+
+queue.append(5)
+queue.append(2)
+queue.append(3)
+queue.append(7)
+queue.popleft()
+queue.append(1)
+queue.append(4)
+queue.popleft()
+
+print(queue) # 입력부터 출력
+queue.reverse() # 역순으로 변경
+print(queue) # 나중 원소부터 출력
+```
+
+
+
+&nbsp;
+
+
+
+## 재귀 함수
+
+- 자기 자신을 다시 호출하는 함수
+- 재귀 함수는 종료 조건을 명시해야함
+- 스택 자료구조를 사용 가장 마지막에 호출한 함수가 먼저 수행을 끝나야 그 앞의 호출이 종료되기 때문
+
+&nbsp;
+
+### 예제) 팩토리얼
+
+```python
+def factorial(n):
+    
+    result = 1
+    
+    for i in range(1,n+1):
+        result *= i
+    
+    return result
+
+def factorial_re(n):
+    if n<= 1:
+        return 1
+    else:
+        return n * factorial_re(n-1)
+```
+
+> 수학의 점화식을 그대로 소스코드로 옮겼기 때문에 더욱 간결한 형태가 유지됨
 
 &nbsp;
 
