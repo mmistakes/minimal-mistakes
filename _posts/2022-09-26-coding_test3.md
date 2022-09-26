@@ -122,4 +122,3 @@ def factorial_re(n):
 
 &nbsp;
 
-
