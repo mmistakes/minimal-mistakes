@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Tomoe Gusberti, Dr. Eng."
-  avatar           : "https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/master/assets/images/foto.gif?raw=true" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : #"https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/master/assets/images/foto.gif?raw=true" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Page under development"
   location         : ""
   email            :
