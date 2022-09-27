@@ -16,7 +16,7 @@ Also the use-cases will be included and short demo will demonstrate the usage of
 
 
 Further reading:
-- https://github.com/features/copilot
-- https://geekflare.com/best-ai-powered-code-completion-tools/
-- https://www.tabnine.com/
-- https://www.kite.com/
+* [https://github.com/features/copilot](https://github.com/features/copilot)
+* [https://geekflare.com/best-ai-powered-code-completion-tools/](https://geekflare.com/best-ai-powered-code-completion-tools/)
+* [https://www.tabnine.com/](https://www.tabnine.com/)
+* [https://www.kite.com/](https://www.kite.com/)
