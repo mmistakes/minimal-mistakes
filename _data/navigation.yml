@@ -3,9 +3,7 @@
 main:  
   - title: "R-ShinyApps"
     url: /R-ShinyApps
-  - title: "Test"
-    url: /collections
-  - title: "Collections"
-    #url: /collections   
+  - title: "collections"
+    url: /collections 
   - title: "About"
     url: https://tomoegusberti.github.io/#introduction
