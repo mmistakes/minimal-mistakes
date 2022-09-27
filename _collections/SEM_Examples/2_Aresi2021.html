@@ -1,92 +1,223 @@
----
-layout: single
-author_profile: true
-title: "2- PLS-SEM example with composite variables: assessment of influential factors on drunk behaviour of foreign students"
-category: SEM
-shortdesc: "SEM_Aresi2021"
-Method: "PLS-SEM R's `SEMinR` package."
-Case: "A longitudinal study with the assessment of the influence of MMSAS
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+<meta name="date" content="2022-05-27" />
+
+<title>2- PLS-SEM example with composite variables: assessment of influential factors on drunk behaviour of foreign students</title>
+
+<script src="2_Aresi2021_files/header-attrs-2.11/header-attrs.js"></script>
+<script src="2_Aresi2021_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="2_Aresi2021_files/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="2_Aresi2021_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="2_Aresi2021_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="2_Aresi2021_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="2_Aresi2021_files/navigation-1.1/tabsets.js"></script>
+<link href="2_Aresi2021_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="2_Aresi2021_files/highlightjs-9.12.0/highlight.js"></script>
+<script src="2_Aresi2021_files/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="2_Aresi2021_files/viz-1.8.2/viz.js"></script>
+<link href="2_Aresi2021_files/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="2_Aresi2021_files/grViz-binding-1.0.9/grViz.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">2- PLS-SEM example with composite
+variables: assessment of influential factors on drunk behaviour of
+foreign students</h1>
+<h4 class="date">2022-05-27</h4>
+
+</div>
+
+
+<div id="objective" class="section level1">
+<h1>Objective</h1>
+<p>A longitudinal study with the assessment of the influence of MMSAS
 (Multidimensional Motivations to Study Abroad) on BSAS (Brief
-sociocultural adaptation) and drunk behaviour."
-Datafrom: 'Aresi, Giovanni; Moore, Simon C.; Marta, Elena (2021), "The
-longitudinal health behaviours of European study abroad students sampled
-from forty-two countries and across three-waves", Mendeley Data, V3,
-doi: 10.17632/585d2wdmtd.3'
-excerpt: ""
-header:
-  overlay_color: "#333"
-permalink: /collections/SEM_Examples/2_Aresi2021
-date: "2022-05-27"
-output: 
-  html_document:
-    keep_md: true
-    self_contained: false
-editor_options: 
-  markdown: 
-    wrap: 72
----
+sociocultural adaptation) and drunk behaviour.</p>
+<p><strong>Data from</strong>: Aresi, Giovanni; Moore, Simon C.; Marta,
+Elena (2021), “The longitudinal health behaviours of European study
+abroad students sampled from forty-two countries and across
+three-waves”, Mendeley Data, V3, doi: 10.17632/585d2wdmtd.3</p>
+<p><strong>Method</strong>: PLS-SEM R’s SEMinR package.</p>
+</div>
+<div id="data-acquisition" class="section level1">
+<h1>Data acquisition</h1>
+<pre class="r"><code>data&lt;-read_sav(&#39;Aresi2021.sav&#39;)</code></pre>
+</div>
+<div id="model-definition" class="section level1">
+<h1>Model definition</h1>
+<pre class="r"><code>#scale MMSAS Multidimensional Motivations to Study Abroad Scale 
 
-
-
-# Objective
-
-A longitudinal study with the assessment of the influence of MMSAS (Multidimensional Motivations to Study Abroad) on BSAS (Brief sociocultural adaptation) and drunk behaviour.
-
-**Data from**: Aresi, Giovanni; Moore, Simon C.; Marta, Elena (2021), "The longitudinal health behaviours of European study abroad students sampled from forty-two countries and across three-waves", Mendeley Data, V3, doi: 10.17632/585d2wdmtd.3
-
-**Method**: PLS-SEM R's SEMinR package.
-
-# Data acquisition
-
-
-```r
-data<-read_sav('Aresi2021.sav')
-```
-
-# Model definition
-
-
-```r
-#scale MMSAS Multidimensional Motivations to Study Abroad Scale 
-
-measurements<-constructs(
-  composite('MMSAS',paste0("MMSAS_",c(11,15,19:22,24,25,27)), weights = mode_B),
-  composite('DrunkB_t1',names(data[,c(34,36,42:43,50,51,78)]), weights = mode_B),
-  composite('DrunkB_t2',names(data[,c(85,87,90,91,93,98,126)]), weights = mode_B),
-  composite('BSAS',names(data[,c(229,230,233,234,236)]), weights = mode_B),
-  composite('DrunkB_t3',names(data[,c(133:135,139:142,149,151,159,175:177,179)]), weights = mode_B)
-  )
-```
-
-# SEM
-
-
-```r
-modelSEM <- relationships(
-  paths(from = c("MMSAS",'BSAS','DrunkB_t1','DrunkB_t2'),        to = c("DrunkB_t3")),
-  paths(from = c("MMSAS",'BSAS','DrunkB_t1'),        to = c("DrunkB_t2")),
-  paths(from = "MMSAS",        to = c("DrunkB_t1",'BSAS')),
-  paths(from = "BSAS",        to = c("DrunkB_t1"))
+measurements&lt;-constructs(
+  composite(&#39;MMSAS&#39;,paste0(&quot;MMSAS_&quot;,c(11,15,19:22,24,25,27)), weights = mode_B),
+  composite(&#39;DrunkB_t1&#39;,names(data[,c(34,36,42:43,50,51,78)]), weights = mode_B),
+  composite(&#39;DrunkB_t2&#39;,names(data[,c(85,87,90,91,93,98,126)]), weights = mode_B),
+  composite(&#39;BSAS&#39;,names(data[,c(229,230,233,234,236)]), weights = mode_B),
+  composite(&#39;DrunkB_t3&#39;,names(data[,c(133:135,139:142,149,151,159,175:177,179)]), weights = mode_B)
+  )</code></pre>
+</div>
+<div id="sem" class="section level1">
+<h1>SEM</h1>
+<pre class="r"><code>modelSEM &lt;- relationships(
+  paths(from = c(&quot;MMSAS&quot;,&#39;BSAS&#39;,&#39;DrunkB_t1&#39;,&#39;DrunkB_t2&#39;),        to = c(&quot;DrunkB_t3&quot;)),
+  paths(from = c(&quot;MMSAS&quot;,&#39;BSAS&#39;,&#39;DrunkB_t1&#39;),        to = c(&quot;DrunkB_t2&quot;)),
+  paths(from = &quot;MMSAS&quot;,        to = c(&quot;DrunkB_t1&quot;,&#39;BSAS&#39;)),
+  paths(from = &quot;BSAS&quot;,        to = c(&quot;DrunkB_t1&quot;))
 )
 
 
-fit_SEM=estimate_pls(data=data,measurement_model=measurements,structural_model=modelSEM)
-```
-
-```
-## Generating the seminr model
-```
-
-```
-## All 908 observations are valid.
-```
-
-```r
-summary(fit_SEM,fit.meas=TRUE)
-```
-
-```
-## 
+fit_SEM=estimate_pls(data=data,measurement_model=measurements,structural_model=modelSEM)</code></pre>
+<pre><code>## Generating the seminr model</code></pre>
+<pre><code>## All 908 observations are valid.</code></pre>
+<pre class="r"><code>summary(fit_SEM,fit.meas=TRUE)</code></pre>
+<pre><code>## 
 ## Results from  package seminr (2.3.1)
 ## 
 ## Path Coefficients:
@@ -106,91 +237,93 @@ summary(fit_SEM,fit.meas=TRUE)
 ## DrunkB_t2 0.079 0.225 0.276 1.000
 ## DrunkB_t3 0.610 0.002 0.052 1.000
 ## 
-## Alpha, rhoC, and rhoA should exceed 0.7 while AVE should exceed 0.5
-```
-
-
-```r
-boot_mobi_pls <- bootstrap_model(seminr_model = fit_SEM,
+## Alpha, rhoC, and rhoA should exceed 0.7 while AVE should exceed 0.5</code></pre>
+<pre class="r"><code>boot_mobi_pls &lt;- bootstrap_model(seminr_model = fit_SEM,
                                  nboot = 50,
-                                 cores = 5)
-```
-
-```
-## Bootstrapping model using seminr...
-```
-
-```
-## SEMinR Model successfully bootstrapped
-```
-
-
-```r
-plot(boot_mobi_pls)
-```
-
-```{=html}
+                                 cores = 5)</code></pre>
+<pre><code>## Bootstrapping model using seminr...</code></pre>
+<pre><code>## SEMinR Model successfully bootstrapped</code></pre>
+<pre class="r"><code>plot(boot_mobi_pls)</code></pre>
 <div id="htmlwidget-aa25a14f3e09f8646e11" style="width:672px;height:480px;" class="grViz html-widget"></div>
 <script type="application/json" data-for="htmlwidget-aa25a14f3e09f8646e11">{"x":{"diagram":"digraph G {\n\n// ----------------------\n// General graph settings\n// ----------------------\ngraph [\ncharset = \"UTF-8\",\nlayout = dot,\nlabel = \"\",\nfontsize = 24,\nfontcolor = black,\nfontname = helvetica,\nrankdir = LR,\nlabelloc = t,\nsplines = TRUE\nbgcolor = transparent\n]\n\n// --------------------\n// The structural model\n// --------------------\nsubgraph sm {\nrankdir = LR;\nnode [\nshape = ellipse,\ncolor = black,\nfillcolor = white,\nstyle = filled,\nfontsize = 12,\nfontcolor = black,\nheight = 1.00833333333333,\nwidth = 1.3375,\nfontname = helvetica,\nfixedsize = true\n]\n\"MMSAS\" [label=<<B>MMSAS <\/B>>, shape = hexagon]\n\"BSAS\" [label=<<B>BSAS <\/B><BR /><FONT POINT-SIZE=\"10\">r² = 0.077<\/FONT>>, shape = hexagon]\n\"DrunkB_t1\" [label=<<B>DrunkB_t1 <\/B><BR /><FONT POINT-SIZE=\"10\">r² = 0.073<\/FONT>>, shape = hexagon]\n\"DrunkB_t2\" [label=<<B>DrunkB_t2 <\/B><BR /><FONT POINT-SIZE=\"10\">r² = 0.457<\/FONT>>, shape = hexagon]\n\"DrunkB_t3\" [label=<<B>DrunkB_t3 <\/B><BR /><FONT POINT-SIZE=\"10\">r² = 0.052<\/FONT>>, shape = hexagon]\nedge [\ncolor = black,\nfontsize = 9,\nfontcolor = black,\nfontname = helvetica,\ndir = both,\narrowhead = normal,\narrowtail = none\n]\n\"MMSAS\" -> {\"DrunkB_t3\"}[weight = 1, label = < 𝛽 = 0.218<BR /><FONT POINT-SIZE=\"7\">95% CI [-0.277, 0.308]   <\/FONT> >, penwidth = 1.59, style = solid, color = black]\n\"BSAS\" -> {\"DrunkB_t3\"}[weight = 1, label = < 𝛽 = -0.062<BR /><FONT POINT-SIZE=\"7\">95% CI [-0.155, 0.127]   <\/FONT> >, penwidth = 0.81, style = dashed, color = black]\n\"DrunkB_t1\" -> {\"DrunkB_t3\"}[weight = 1, label = < 𝛽 = 0.04<BR /><FONT POINT-SIZE=\"7\">95% CI [-0.123, 0.154]   <\/FONT> >, penwidth = 0.7, style = solid, color = black]\n\"DrunkB_t2\" -> {\"DrunkB_t3\"}[weight = 1, label = < 𝛽 = -0.166<BR /><FONT POINT-SIZE=\"7\">95% CI [-0.256, 0.286]   <\/FONT> >, penwidth = 1.33, style = dashed, color = black]\n\"MMSAS\" -> {\"DrunkB_t2\"}[weight = 1, label = < 𝛽 = 0.107***<BR /><FONT POINT-SIZE=\"7\">95% CI [0.053, 0.16]   <\/FONT> >, penwidth = 1.035, style = solid, color = black]\n\"BSAS\" -> {\"DrunkB_t2\"}[weight = 1, label = < 𝛽 = 0.15***<BR /><FONT POINT-SIZE=\"7\">95% CI [0.085, 0.217]   <\/FONT> >, penwidth = 1.25, style = solid, color = black]\n\"DrunkB_t1\" -> {\"DrunkB_t2\"}[weight = 1, label = < 𝛽 = 0.599***<BR /><FONT POINT-SIZE=\"7\">95% CI [0.528, 0.65]   <\/FONT> >, penwidth = 3.495, style = solid, color = black]\n\"MMSAS\" -> {\"DrunkB_t1\"}[weight = 1, label = < 𝛽 = 0.251***<BR /><FONT POINT-SIZE=\"7\">95% CI [0.14, 0.332]   <\/FONT> >, penwidth = 1.755, style = solid, color = black]\n\"MMSAS\" -> {\"BSAS\"}[weight = 1, label = < 𝛽 = 0.277***<BR /><FONT POINT-SIZE=\"7\">95% CI [0.189, 0.361]   <\/FONT> >, penwidth = 1.885, style = solid, color = black]\n\"BSAS\" -> {\"DrunkB_t1\"}[weight = 1, label = < 𝛽 = 0.053<BR /><FONT POINT-SIZE=\"7\">95% CI [-0.013, 0.14]   <\/FONT> >, penwidth = 0.765, style = solid, color = black]\n}\n// ---------------------\n// The measurement model\n// ---------------------\n\nsubgraph construct_1 {\nnode [\nshape = box,\ncolor = dimgrey,\nfillcolor = white,\nstyle = filled,\nfontsize = 8,\nfontcolor = black,\nheight = 0.175,\nwidth = 1.63541666666667,\nfontname = helvetica,\nfixedsize = true\n]\n\"MMSAS_11\" [label = \"MMSAS_11\", shape = box]\n\"MMSAS_15\" [label = \"MMSAS_15\", shape = box]\n\"MMSAS_19\" [label = \"MMSAS_19\", shape = box]\n\"MMSAS_20\" [label = \"MMSAS_20\", shape = box]\n\"MMSAS_21\" [label = \"MMSAS_21\", shape = box]\n\"MMSAS_22\" [label = \"MMSAS_22\", shape = box]\n\"MMSAS_24\" [label = \"MMSAS_24\", shape = box]\n\"MMSAS_25\" [label = \"MMSAS_25\", shape = box]\n\"MMSAS_27\" [label = \"MMSAS_27\", shape = box]\nedge [\ncolor = dimgrey,\nfontsize = 7,\nfontcolor = black,\nfontname = helvetica,\nminlen = 1,\ndir = both\narrowhead = normal\narrowtail = none\n]\n\"MMSAS_11\" -> {\"MMSAS\"}[weight = 1000, label = < w = 0.128 >, penwidth = 0.884, style = solid, color = dimgrey]\n\"MMSAS_15\" -> {\"MMSAS\"}[weight = 1000, label = < w = 0.332** >, penwidth = 1.496, style = solid, color = dimgrey]\n\"MMSAS_19\" -> {\"MMSAS\"}[weight = 1000, label = < w = -0.447*** >, penwidth = 1.841, style = dashed, color = dimgrey]\n\"MMSAS_20\" -> {\"MMSAS\"}[weight = 1000, label = < w = 0.17 >, penwidth = 1.01, style = solid, color = dimgrey]\n\"MMSAS_21\" -> {\"MMSAS\"}[weight = 1000, label = < w = 0.286* >, penwidth = 1.358, style = solid, color = dimgrey]\n\"MMSAS_22\" -> {\"MMSAS\"}[weight = 1000, label = < w = 0.23* >, penwidth = 1.19, style = solid, color = dimgrey]\n\"MMSAS_24\" -> {\"MMSAS\"}[weight = 1000, label = < w = -0.302* >, penwidth = 1.406, style = dashed, color = dimgrey]\n\"MMSAS_25\" -> {\"MMSAS\"}[weight = 1000, label = < w = 0.303** >, penwidth = 1.409, style = solid, color = dimgrey]\n\"MMSAS_27\" -> {\"MMSAS\"}[weight = 1000, label = < w = 0.48*** >, penwidth = 1.94, style = solid, color = dimgrey]\n\n}\nsubgraph construct_2 {\nnode [\nshape = box,\ncolor = dimgrey,\nfillcolor = white,\nstyle = filled,\nfontsize = 8,\nfontcolor = black,\nheight = 0.175,\nwidth = 1.63541666666667,\nfontname = helvetica,\nfixedsize = true\n]\n\"BPAS_1\" [label = \"BPAS_1\", shape = box]\n\"BPAS_2\" [label = \"BPAS_2\", shape = box]\n\"BPAS_5\" [label = \"BPAS_5\", shape = box]\n\"BPAS_6\" [label = \"BPAS_6\", shape = box]\n\"BPAS_8\" [label = \"BPAS_8\", shape = box]\nedge [\ncolor = dimgrey,\nfontsize = 7,\nfontcolor = black,\nfontname = helvetica,\nminlen = 1,\ndir = both\narrowhead = normal\narrowtail = none\n]\n\"BPAS_1\" -> {\"BSAS\"}[weight = 1000, label = < w = 0.523** >, penwidth = 2.069, style = solid, color = dimgrey]\n\"BPAS_2\" -> {\"BSAS\"}[weight = 1000, label = < w = -0.128 >, penwidth = 0.884, style = dashed, color = dimgrey]\n\"BPAS_5\" -> {\"BSAS\"}[weight = 1000, label = < w = -0.728*** >, penwidth = 2.684, style = dashed, color = dimgrey]\n\"BPAS_6\" -> {\"BSAS\"}[weight = 1000, label = < w = 0.587** >, penwidth = 2.261, style = solid, color = dimgrey]\n\"BPAS_8\" -> {\"BSAS\"}[weight = 1000, label = < w = 0.311* >, penwidth = 1.433, style = solid, color = dimgrey]\n\n}\nsubgraph construct_3 {\nnode [\nshape = box,\ncolor = dimgrey,\nfillcolor = white,\nstyle = filled,\nfontsize = 8,\nfontcolor = black,\nheight = 0.175,\nwidth = 1.63541666666667,\nfontname = helvetica,\nfixedsize = true\n]\n\"T1_Sweets\" [label = \"T1_Sweets\", shape = box]\n\"T1_LY_alcohol\" [label = \"T1_LY_alcohol\", shape = box]\n\"T1_Friday\" [label = \"T1_Friday\", shape = box]\n\"T1_Saturday\" [label = \"T1_Saturday\", shape = box]\n\"T1_Binge_drinking\" [label = \"T1_Binge_drinking\", shape = box]\n\"T1_DrunkDrunkenness\" [label = \"T1_DrunkDrunkenness\", shape = box]\n\"T1_Drugs_YN\" [label = \"T1_Drugs_YN\", shape = box]\nedge [\ncolor = dimgrey,\nfontsize = 7,\nfontcolor = black,\nfontname = helvetica,\nminlen = 1,\ndir = both\narrowhead = normal\narrowtail = none\n]\n\"T1_Sweets\" -> {\"DrunkB_t1\"}[weight = 1000, label = < w = -0.127 >, penwidth = 0.881, style = dashed, color = dimgrey]\n\"T1_LY_alcohol\" -> {\"DrunkB_t1\"}[weight = 1000, label = < w = -0.51*** >, penwidth = 2.03, style = dashed, color = dimgrey]\n\"T1_Friday\" -> {\"DrunkB_t1\"}[weight = 1000, label = < w = 0.288*** >, penwidth = 1.364, style = solid, color = dimgrey]\n\"T1_Saturday\" -> {\"DrunkB_t1\"}[weight = 1000, label = < w = 0.205*** >, penwidth = 1.115, style = solid, color = dimgrey]\n\"T1_Binge_drinking\" -> {\"DrunkB_t1\"}[weight = 1000, label = < w = 0.202*** >, penwidth = 1.106, style = solid, color = dimgrey]\n\"T1_DrunkDrunkenness\" -> {\"DrunkB_t1\"}[weight = 1000, label = < w = 0.166** >, penwidth = 0.998, style = solid, color = dimgrey]\n\"T1_Drugs_YN\" -> {\"DrunkB_t1\"}[weight = 1000, label = < w = 0.069* >, penwidth = 0.707, style = solid, color = dimgrey]\n\n}\nsubgraph construct_4 {\nnode [\nshape = box,\ncolor = dimgrey,\nfillcolor = white,\nstyle = filled,\nfontsize = 8,\nfontcolor = black,\nheight = 0.175,\nwidth = 1.63541666666667,\nfontname = helvetica,\nfixedsize = true\n]\n\"T2_Sweets\" [label = \"T2_Sweets\", shape = box]\n\"T2_LM_alcohol\" [label = \"T2_LM_alcohol\", shape = box]\n\"T2_Wednesday\" [label = \"T2_Wednesday\", shape = box]\n\"T2_Thursday\" [label = \"T2_Thursday\", shape = box]\n\"T2_Saturday\" [label = \"T2_Saturday\", shape = box]\n\"T2_N_shot_spirit\" [label = \"T2_N_shot_spirit\", shape = box]\n\"T2_Cannabis_YN\" [label = \"T2_Cannabis_YN\", shape = box]\nedge [\ncolor = dimgrey,\nfontsize = 7,\nfontcolor = black,\nfontname = helvetica,\nminlen = 1,\ndir = both\narrowhead = normal\narrowtail = none\n]\n\"T2_Sweets\" -> {\"DrunkB_t2\"}[weight = 1000, label = < w = -0.186 >, penwidth = 1.058, style = dashed, color = dimgrey]\n\"T2_LM_alcohol\" -> {\"DrunkB_t2\"}[weight = 1000, label = < w = -0.615*** >, penwidth = 2.345, style = dashed, color = dimgrey]\n\"T2_Wednesday\" -> {\"DrunkB_t2\"}[weight = 1000, label = < w = 0.171*** >, penwidth = 1.013, style = solid, color = dimgrey]\n\"T2_Thursday\" -> {\"DrunkB_t2\"}[weight = 1000, label = < w = 0.188*** >, penwidth = 1.064, style = solid, color = dimgrey]\n\"T2_Saturday\" -> {\"DrunkB_t2\"}[weight = 1000, label = < w = 0.264*** >, penwidth = 1.292, style = solid, color = dimgrey]\n\"T2_N_shot_spirit\" -> {\"DrunkB_t2\"}[weight = 1000, label = < w = 0.056 >, penwidth = 0.668, style = solid, color = dimgrey]\n\"T2_Cannabis_YN\" -> {\"DrunkB_t2\"}[weight = 1000, label = < w = 0.169*** >, penwidth = 1.007, style = solid, color = dimgrey]\n\n}\nsubgraph construct_5 {\nnode [\nshape = box,\ncolor = dimgrey,\nfillcolor = white,\nstyle = filled,\nfontsize = 8,\nfontcolor = black,\nheight = 0.175,\nwidth = 1.63541666666667,\nfontname = helvetica,\nfixedsize = true\n]\n\"T3_Fruit\" [label = \"T3_Fruit\", shape = box]\n\"T3_Vegetables\" [label = \"T3_Vegetables\", shape = box]\n\"T3_Sweets\" [label = \"T3_Sweets\", shape = box]\n\"T3_Tuesday\" [label = \"T3_Tuesday\", shape = box]\n\"T3_Wednesday\" [label = \"T3_Wednesday\", shape = box]\n\"T3_Thursday\" [label = \"T3_Thursday\", shape = box]\n\"T3_Friday\" [label = \"T3_Friday\", shape = box]\n\"T3_N_mixed_drinks\" [label = \"T3_N_mixed_drinks\", shape = box]\n\"T3_Drunkenness\" [label = \"T3_Drunkenness\", shape = box]\n\"T3_BYAACQ_8\" [label = \"T3_BYAACQ_8\", shape = box]\n\"T3_Q125_24\" [label = \"T3_Q125_24\", shape = box]\n\"T3_Cannabis_YN\" [label = \"T3_Cannabis_YN\", shape = box]\n\"T3_Cannabis_frequency\" [label = \"T3_Cannabis_frequency\", shape = box]\n\"T3_Drugs_frequency\" [label = \"T3_Drugs_frequency\", shape = box]\nedge [\ncolor = dimgrey,\nfontsize = 7,\nfontcolor = black,\nfontname = helvetica,\nminlen = 1,\ndir = both\narrowhead = none\narrowtail = normal\n]\n\"DrunkB_t3\" -> {\"T3_Fruit\"}[weight = 1000, label = < w = -0.669 >, penwidth = 2.507, style = dashed, color = dimgrey]\n\"DrunkB_t3\" -> {\"T3_Vegetables\"}[weight = 1000, label = < w = 0.632 >, penwidth = 2.396, style = solid, color = dimgrey]\n\"DrunkB_t3\" -> {\"T3_Sweets\"}[weight = 1000, label = < w = 0.33 >, penwidth = 1.49, style = solid, color = dimgrey]\n\"DrunkB_t3\" -> {\"T3_Tuesday\"}[weight = 1000, label = < w = 0.307 >, penwidth = 1.421, style = solid, color = dimgrey]\n\"DrunkB_t3\" -> {\"T3_Wednesday\"}[weight = 1000, label = < w = -0.331 >, penwidth = 1.493, style = dashed, color = dimgrey]\n\"DrunkB_t3\" -> {\"T3_Thursday\"}[weight = 1000, label = < w = -0.216 >, penwidth = 1.148, style = dashed, color = dimgrey]\n\"DrunkB_t3\" -> {\"T3_Friday\"}[weight = 1000, label = < w = 0.232 >, penwidth = 1.196, style = solid, color = dimgrey]\n\"DrunkB_t3\" -> {\"T3_N_mixed_drinks\"}[weight = 1000, label = < w = -0.357 >, penwidth = 1.571, style = dashed, color = dimgrey]\n\"DrunkB_t3\" -> {\"T3_Drunkenness\"}[weight = 1000, label = < w = 0.298 >, penwidth = 1.394, style = solid, color = dimgrey]\n\"DrunkB_t3\" -> {\"T3_BYAACQ_8\"}[weight = 1000, label = < w = 0.14 >, penwidth = 0.92, style = solid, color = dimgrey]\n\"DrunkB_t3\" -> {\"T3_Q125_24\"}[weight = 1000, label = < w = 0.367 >, penwidth = 1.601, style = solid, color = dimgrey]\n\"DrunkB_t3\" -> {\"T3_Cannabis_YN\"}[weight = 1000, label = < w = -0.272 >, penwidth = 1.316, style = dashed, color = dimgrey]\n\"DrunkB_t3\" -> {\"T3_Cannabis_frequency\"}[weight = 1000, label = < w = 0.117 >, penwidth = 0.851, style = solid, color = dimgrey]\n\"DrunkB_t3\" -> {\"T3_Drugs_frequency\"}[weight = 1000, label = < w = -0.438 >, penwidth = 1.814, style = dashed, color = dimgrey]\n\n}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
-```
-
-
-```r
-boot_mobi_pls$path_coef
-```
-
-```
-##           MMSAS      BSAS  DrunkB_t1 DrunkB_t2   DrunkB_t3
+<pre class="r"><code>boot_mobi_pls$path_coef</code></pre>
+<pre><code>##           MMSAS      BSAS  DrunkB_t1 DrunkB_t2   DrunkB_t3
 ## MMSAS         0 0.2769349 0.25077665 0.1067458  0.21807184
 ## BSAS          0 0.0000000 0.05252984 0.1504484 -0.06244832
 ## DrunkB_t1     0 0.0000000 0.00000000 0.5987000  0.03954785
 ## DrunkB_t2     0 0.0000000 0.00000000 0.0000000 -0.16593000
-## DrunkB_t3     0 0.0000000 0.00000000 0.0000000  0.00000000
-```
-
-
-```r
-specific_effect_significance(boot_seminr_model = boot_mobi_pls,
-                             from = "MMSAS",
-                             through = c("DrunkB_t1"),
-                             to = "DrunkB_t2",
-                             alpha = 0.05)
-```
-
-```
-##  Original Est. Bootstrap Mean   Bootstrap SD        T Stat.        2.5% CI 
+## DrunkB_t3     0 0.0000000 0.00000000 0.0000000  0.00000000</code></pre>
+<pre class="r"><code>specific_effect_significance(boot_seminr_model = boot_mobi_pls,
+                             from = &quot;MMSAS&quot;,
+                             through = c(&quot;DrunkB_t1&quot;),
+                             to = &quot;DrunkB_t2&quot;,
+                             alpha = 0.05)</code></pre>
+<pre><code>##  Original Est. Bootstrap Mean   Bootstrap SD        T Stat.        2.5% CI 
 ##     0.15013997     0.15016185     0.02683515     5.59490053     0.08961782 
 ##       97.5% CI 
-##     0.20106116
-```
-
-
-```r
-specific_effect_significance(boot_seminr_model = boot_mobi_pls,
-                             from = "MMSAS",
-                             to = "DrunkB_t2",
-                             alpha = 0.05)
-```
-
-```
-##  Original Est. Bootstrap Mean   Bootstrap SD        T Stat.        2.5% CI 
+##     0.20106116</code></pre>
+<pre class="r"><code>specific_effect_significance(boot_seminr_model = boot_mobi_pls,
+                             from = &quot;MMSAS&quot;,
+                             to = &quot;DrunkB_t2&quot;,
+                             alpha = 0.05)</code></pre>
+<pre><code>##  Original Est. Bootstrap Mean   Bootstrap SD        T Stat.        2.5% CI 
 ##     0.10674584     0.10797246     0.02837340     3.76218044     0.05342442 
 ##       97.5% CI 
-##     0.15971765
-```
-
-
-```r
-specific_effect_significance(boot_seminr_model = boot_mobi_pls,
-                             from = "DrunkB_t1",
-                             to = "DrunkB_t2",
-                             alpha = 0.05)
-```
-
-```
-##  Original Est. Bootstrap Mean   Bootstrap SD        T Stat.        2.5% CI 
+##     0.15971765</code></pre>
+<pre class="r"><code>specific_effect_significance(boot_seminr_model = boot_mobi_pls,
+                             from = &quot;DrunkB_t1&quot;,
+                             to = &quot;DrunkB_t2&quot;,
+                             alpha = 0.05)</code></pre>
+<pre><code>##  Original Est. Bootstrap Mean   Bootstrap SD        T Stat.        2.5% CI 
 ##     0.59869995     0.59470914     0.03295439    18.16753297     0.52782635 
 ##       97.5% CI 
-##     0.64961067
-```
+##     0.64961067</code></pre>
+</div>
 
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
