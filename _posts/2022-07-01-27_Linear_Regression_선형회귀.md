@@ -80,7 +80,7 @@ Y = a * x + b
 #비용(오차) 함수 => 실제값(yData => y라는 placeholder에 저장한다.)과 
 #                   예측값(Y)의 편차의 제곱에 대한 평균을 이용한다.
 #                   (평균 제곱법)
-#reduce_mean() 함수로 tensorflow에서 평균을 계산한다.
+#reduce_mean() 함수로 차원을 제거하고 tensorflow에서 평균을 계산한다.
 #square() 함수로 tensorflow에서 제곱갓을 계산한다.
 #sqrt()함수로 tensorflow에서 제곱근 값을 게산한다.
 
