@@ -1,5 +1,5 @@
 ---
-title: "AI-powered completion in IDEs"
+title: "Upcoming Open Mic - AI-powered completion in IDEs"
 categories: [Open Mic Announcement, Open Mic]
 ---
 
