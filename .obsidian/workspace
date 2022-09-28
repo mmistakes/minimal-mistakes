@@ -7,8 +7,12 @@
         "id": "d590ea6f7ab25a1b",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "_posts/2022-09-27-homework1.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -57,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 100,
+    "width": 214.5,
     "collapsed": true
   },
   "right": {
@@ -74,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_posts/2022-09-27-homework1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,6 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "_posts/2022-09-27-homework1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,7 +117,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "_posts/2022-09-27-homework1.md"
+              }
             }
           }
         ]
@@ -123,15 +131,15 @@
   },
   "active": "d590ea6f7ab25a1b",
   "lastOpenFiles": [
-    "_posts/2022-09-27-Pytorch5.md",
-    "images/2022-09-20-Python-4/image-20220921151543110.png",
-    "Pasted image 20220927125355.png",
-    "screenshot-layouts.png",
-    "screenshot.png",
+    "_posts/2022-09-27-Daily.md",
+    "_posts/2022-09-28-daily.md",
+    "_posts/2022-09-27-homework1.md",
     "_posts/2022-09-27-Pytorch4.md",
-    "4F44ED3D-EFFB-4089-937C-51FCA7D75A82.png.md",
-    "4F44ED3D-EFFB-4089-937C-51FCA7D75A82.png",
-    "_posts/2022-09-26-Pytorch3.md",
-    "_posts/2022-09-26-Pytorch2.md"
+    "_posts/2022-09-28-Pytorch6.md",
+    "_posts/2022-09-28-Pytorch7.md",
+    "_posts/2022-09-27-Pytorch5.md",
+    "_posts/2022-09-23-daily.md",
+    "_posts/2022-09-24-Python-7-2.md",
+    "_posts/2022-09-26-Daily.md"
   ]
 }
