@@ -189,3 +189,117 @@ bfs(graph, 1, visited)
 
 &nbsp;
 
+### 예제) 음료수 얼려 먹기
+
+```python
+N × M 크기의 얼음 틀이 있다. 구멍이 뚫려 있는 부분은 0, 칸막이가 존재하는 부분은 1로 표시된다.
+구멍이 뚫려 있는 부분끼리 상, 하, 좌, 우로 붙어 있는 경우 서로 연결되어 있는 것으로 간주한다.
+이때 얼음 틀의 모양이 주어졌을 때 생성되는 총 아이스크림의 개수를 구하는 프로그램을 작성하라.
+다음의 4 × 5 얼음 틀 예시에서는 아이스크림이 총 3개가 생성된다
+
+
+# 입력예시
+4 5
+00110
+00011
+11111
+00000
+
+# 출력예시
+3
+```
+
+- 풀이
+
+```python
+# 행, 열 받고
+row, col = map(int, input().split())
+# 전체 맵
+graph = [list(map(int,input())) for _ in range(row)]
+
+
+def DFS(x, y):
+  # 예외 범주 처리
+  if x <= - 1 or x >= row or y <= -1 or y >= col:
+    return False
+
+  if graph[x][y] == 0:
+
+    graph[x][y] = 1
+
+    # 상하좌우 체크
+    DFS(x+1,y) 
+    DFS(x-1,y)
+    DFS(x,y+1)
+    DFS(x,y-1)
+    return True
+
+  return False
+
+
+cnt = 0
+for i in range(row):
+  for j in range(col):
+    if DFS(i,j) == True:
+      cnt += 1
+
+print(cnt)
+```
+
+&nbsp;
+
+### 예제) 미로 탈출
+
+```python
+N x M 크기의 직사각형 형태의 미로에 여러 마리의 괴물이 있어 이를 피해 탈출해야 한다. 현재 위치는 (1, 1)이고 미로의 출구는 (N,M)의 위치에 존재하며 한 번에 한 칸씩 이동할 수 있다. 괴물이 있는 부분은 0으로, 괴물이 없는 부분은 1로 표시되어 있다. 미로는 반드시 탈출할 수 있는 형태로 제시된다. 탈출하기 위해 움직여야 하는 최소 칸의 개수를 구하라. 칸을 셀 때는 시작 칸과 마지막 칸을 모두 포함해서 계산한다.
+
+# 입력
+5 6
+101010
+111111
+000001
+111111
+111111
+
+# 출력
+10
+```
+
+- 풀이
+
+```python
+from collections import deque
+
+# 행, 열, 맵 설정
+row, col = map(int, input().split())
+graph = [list(map(int,input())) for _ in range(row)]
+
+# 상하좌우 설정
+dx = [-1,1,0,0]
+dy = [0,0,-1,1]
+
+def BFS(x,y):
+  queue = deque()
+  queue.append((x,y))
+
+  # queue 없을때 까지
+  while queue:
+    x, y = queue.popleft()
+    for i in range(4):
+      nx = x + dx[i]
+      ny = y + dy[i]
+	  
+      # 예외 범주 처리
+      if nx <= -1 or nx >= row or ny <= -1 or ny >= col:
+        continue
+      if graph[nx][ny] == 0:
+        continue
+      if graph[nx][ny] == 1:
+        graph[nx][ny] = graph[x][y] + 1
+        queue.append((nx, ny))
+  return graph[row-1][col-1]
+
+
+print(BFS(0,0))
+```
+
