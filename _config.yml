@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-GB"
-title                    : "FiQCI"
+title                    : ""
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "The FiQCI Consortium"
@@ -251,6 +251,7 @@ plugins:
   # - jekyll-feed
   - jekyll-include-cache
   - jekyll-seo-tag
+  - jekyll-last-modified-at
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -260,6 +261,9 @@ whitelist:
   # - jekyll-feed
   - jekyll-include-cache
 
+
+last-modified-at:
+    date-format: '%d-%b-%y'
 
 # Archives
 #  Type
