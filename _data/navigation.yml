@@ -12,10 +12,20 @@ main:
     url: /search/
 
 docs:
-  - title: "Contents"
+  - title: "Category"
     children:
-     - title: "Category"
+     - title: "Project"
        url: /categories/
+     - title: "small_project"
+       url: /categories/#small_project
+     - title: "coding"
+       url: /categories/#coding/
+     - title: "testing"
+       url: /categories/#testing
+  - title: "Tag"
+    children:
+    # - title: "Category"
+    #   url: /categories/
      - title: "Tag"
        url: /tags/
   #- title: "Projects"
