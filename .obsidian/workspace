@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "d590ea6f7ab25a1b",
+        "id": "665d4c32ae4d3335",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2022-09-28-Pytorch6.md",
+            "file": "_posts/2022-09-27-Pytorch4.md",
             "mode": "source",
             "source": false
           }
@@ -61,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.5,
-    "collapsed": true
+    "width": 232.5
   },
   "right": {
     "id": "084c1a1a0617b971",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-09-28-Pytorch6.md",
+                "file": "_posts/2022-09-27-Pytorch4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-09-28-Pytorch6.md",
+                "file": "_posts/2022-09-27-Pytorch4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-09-28-Pytorch6.md"
+                "file": "_posts/2022-09-27-Pytorch4.md"
               }
             }
           }
@@ -129,17 +128,17 @@
     "width": 100,
     "collapsed": true
   },
-  "active": "d590ea6f7ab25a1b",
+  "active": "665d4c32ae4d3335",
   "lastOpenFiles": [
+    "_posts/2022-09-27-Pytorch5.md",
     "_posts/2022-09-28-Pytorch7.md",
-    "_posts/2022-09-23-daily.md",
-    "_posts/2022-09-26-Daily.md",
-    "_posts/2022-09-28-daily.md",
-    "_posts/2022-09-27-Daily.md",
-    "_posts/2022-09-26-Pytorch1.md",
     "_posts/2022-09-28-Pytorch6.md",
     "_posts/2022-09-27-Pytorch4.md",
+    "_posts/2022-09-28-daily.md",
+    "_posts/2022-09-23-daily.md",
+    "_posts/2022-09-26-Daily.md",
+    "_posts/2022-09-27-Daily.md",
     "_posts/2022-09-27-homework1.md",
-    "_posts/2022-09-27-Pytorch5.md"
+    "_posts/2022-09-26-Pytorch1.md"
   ]
 }
