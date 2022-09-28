@@ -1,6 +1,6 @@
 ---
 title: "Status"
-layout: status
+layout: splash
 permalink: /status
 last_modified_at: 2021-07-07
 hidden: false
