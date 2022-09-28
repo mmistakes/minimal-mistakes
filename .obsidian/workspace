@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2022-09-28-Pytorch6.md",
+            "file": "_posts/2022-09-28-daily.md",
             "mode": "source",
             "source": false
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-09-28-Pytorch6.md",
+                "file": "_posts/2022-09-28-daily.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-09-28-Pytorch6.md",
+                "file": "_posts/2022-09-28-daily.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-09-28-Pytorch6.md"
+                "file": "_posts/2022-09-28-daily.md"
               }
             }
           }
@@ -132,14 +132,14 @@
   "active": "d590ea6f7ab25a1b",
   "lastOpenFiles": [
     "_posts/2022-09-28-Pytorch7.md",
-    "_posts/2022-09-23-daily.md",
-    "_posts/2022-09-26-Daily.md",
-    "_posts/2022-09-28-daily.md",
-    "_posts/2022-09-27-Daily.md",
-    "_posts/2022-09-26-Pytorch1.md",
     "_posts/2022-09-28-Pytorch6.md",
-    "_posts/2022-09-27-Pytorch4.md",
+    "_posts/2022-09-23-daily.md",
+    "_posts/2022-09-28-daily.md",
+    "_posts/2022-09-26-Daily.md",
+    "_posts/2022-09-27-Daily.md",
     "_posts/2022-09-27-homework1.md",
+    "_posts/2022-09-26-Pytorch1.md",
+    "_posts/2022-09-27-Pytorch4.md",
     "_posts/2022-09-27-Pytorch5.md"
   ]
 }
