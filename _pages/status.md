@@ -72,4 +72,4 @@ intro:
 
 <!-- ### 22.09.2022 -->
 
-[**Full reboot of the LUMI Wednesday 28 September**](status/2022-09-22-Full-reboot-Wednesday-28-September.md)
+[**Full reboot of the LUMI ~~Wednesday 28 September~~ is Postponed**](status/2022-09-22-Full-reboot-Wednesday-28-September.md)
