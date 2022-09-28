@@ -4,6 +4,7 @@ title:  "Data Organizing"
 categories: coding
 tag: [python, blog, jupytor]
 toc: true
+
 author_profile: false
 sidebar:
     nav: "docs"

@@ -14,14 +14,14 @@ main:
 docs:
   - title: "Category"
     children:
-     - title: "Project"
+     - title: "Category"
        url: /categories/
-     - title: "small_project"
-       url: /categories/#small_project
-     - title: "coding"
-       url: /categories/#coding/
-     - title: "testing"
-       url: /categories/#testing
+     - title: "Small Project"
+       url: /categories/small_project/
+     - title: "Coding"
+       url: /categories/coding/
+     - title: "Testing"
+       url: /categories/testing/
   - title: "Tag"
     children:
     # - title: "Category"
