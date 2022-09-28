@@ -58,3 +58,7 @@ Ensure that there isn't a current container assigned to the `4000:4000`. This ca
 ### Github pages
 
 Changes can also be previewed at either http://fiqci.fi/dev/ for the dev site or http://fiqci.fi/ for the main site. 
+
+### Rebuilding the javascript files
+
+If any additional changes are made to `/assets/js/_main.js` then you will need to run `npm run build:js` to rebuild them. To install the npm dependencies run `npm install` in the root od the directory.
