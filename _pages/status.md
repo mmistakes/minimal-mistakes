@@ -66,7 +66,7 @@ intro:
 
  <h1 style="font-size:0.75vw">🟢 - Service is available</h1> 
  <h1 style="font-size:0.75vw">🔴 - Service is down</h1> 
- <h1 style="font-size:0.5vw">Page last modified: {% last_modified_at %}</h1> 
+ <!-- <h1 style="font-size:0.5vw">Page last modified: {% last_modified_at %}</h1>  -->
 
 <!-- Page last modified: {% last_modified_at %} -->
 
