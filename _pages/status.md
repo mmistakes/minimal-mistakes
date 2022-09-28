@@ -2,7 +2,6 @@
 title: "Status"
 layout: splash
 permalink: /status
-last_modified_at: 2021-07-07
 hidden: false
 header:
   #overlay_color: "#000"
@@ -66,7 +65,7 @@ intro:
 
  <h1 style="font-size:0.75vw">🟢 - Service is available</h1> 
  <h1 style="font-size:0.75vw">🔴 - Service is down</h1> 
- <!-- <h1 style="font-size:0.5vw">Page last modified: {% last_modified_at %}</h1>  -->
+ <h1 style="font-size:0.5vw">Page last modified: {% last_modified_at %}</h1> 
 
 <!-- Page last modified: {% last_modified_at %} -->
 
