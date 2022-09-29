@@ -15,7 +15,7 @@ sidebar: true
 search: true
  
 date: 2022-09-19
-last_modified_at: 2022-09-27
+last_modified_at: 2022-09-29
 ---
 
 # Valid Palindrome
@@ -366,6 +366,178 @@ return counts.most_common(1)[0][0]
 이를 collections 에서 Counter 객체를 설정해 더 편하게 하는 방법이 있는데 most_common(1)을 통해 가장 흔하게 등장하는 단어를 추출한다.
 
 이때, 추출하게 되면 [('key', value)]이러한 형식의 값을 가지게 되는데, 이를 index를 통해 접근해 가장 많이 출현하는 단어를 뽑아내게 된다.
+
+
+
+<br/><br/>
+
+# 그룹 애너그램
+
+[leetcode : group-anagrams]([https://leetcode.com/problems/group-anagrams/](https://leetcode.com/problems/group-anagrams/))
+
+<br/>
+
+
+
+## 정렬하여 딕셔너리에 추가
+
+```python
+def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+    anagrams = collections.defaultdict(list)
+    
+    for word in strs:
+        anagrams[''.join(sorted(word))].append(word)
+    return list(anagrams.values())
+```
+
+* collections.defaultdict(list) 를 통해 anagrams라는 변수가 기본적으로 value값을  list라는 값을 가지게 한다.
+
+
+
+* 결국에 애너그램이라는 것은 사전순으로 정렬을 했을 때 결과값이 같은 단어들을 나타낸 것이므로 다음과 같이 같은 정렬값을 key값으로 두고 value값에 해당하는 단어들을 넣어준다.
+
+
+
+* return 하는 값은 value값들에 한번더 list()를 씌어준 값을 반환한다.
+
+<br/><br/>
+
+### 정렬 방법
+
+```python
+a = [2, 5, 1, 9, 7]
+>>> sorted(a)
+[1, 2, 5, 7, 9]
+```
+
+
+
+```python
+b = 'zbdaf'
+>>>sorted(b)
+['a', 'b', 'd', 'f', 'z']
+```
+
+sort한 결과를 list로 반환한다. 결과를 다시 접합하려면 join()함수를 이용한다.
+
+
+
+리스트는 sort()라는 메소드도 제공하는데 이는 In-place sort로써 기존의 list 자체를 바꾼다.
+
+```python
+c = ['ccc', 'aaaa', 'd', 'bb']
+sorted(c, key = len) #다음과 같이 길이를 기준으로 정렬하는 key를 설정할 수도 있다.
+```
+
+
+
+```python
+a = ['cde', 'cfc', 'abc']
+
+def fn(s):
+    return s[0], s[-1]
+sorted(a, key=fn)
+```
+
+다음과 같이 함수로도 key를 설정할 수도 있다.
+
+
+
+```python
+a = ['cde', 'cfc', 'abc']
+sorted(a, key = lambda s: (s[0], s[-1]))
+```
+
+다음과 같이 람다식으로도 설정이 가능하다.
+
+
+
+<br/><br/>
+
+# 가장 긴 팰린드롬 부분 문자열
+
+[leetcode : longest-palindromic-substring]([https://leetcode.com/problems/longest-palindromic-substring/](https://leetcode.com/problems/longest-palindromic-substring/))
+
+<br/>
+
+
+
+## 내 풀이
+
+```python
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        palindromic_substring = []
+        for i in range(len(s)):
+            for j in range(i+1, len(s)+1):
+                if s[i:j] == s[i:j][::-1]:
+                    palindromic_substring.append(s[i:j])
+    
+        return max(palindromic_substring, key=len)
+```
+
+제출을 했었을 때 실행시간 초과가 발생하였다. 
+
+이는 예상하건데 $O(n^2)$으로 리스트의 모든 원소를 접근해 비효율적으로 판별하는데 이유가 있다고 보여진다. 
+
+
+
+<br/><br/>
+
+## 중앙을 중심으로 확장하는 풀이
+
+```python
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        #confirm palindrome and expand
+        def expand(left: int, right: int) -> str:
+            while left >= 0 and right < len(s) and s[left] == s[right]:
+                left -= 1
+                right += 1
+            return s[left + 1:right]
+        #exception
+        if len(s) < 2 or s == s[::-1]: 
+            return s
+        result = ''
+        for i in range(len(s)-1):
+            result = max(result,
+                        expand(i, i  + 1),
+                        expand(i, i + 2),
+                        key = len)
+        return result
+        
+        
+```
+
+슬라이딩 윈도우 처럼 이동하는 투 포인터를 이용해 짝수, 홀수인경우 모두 검사해 가장 긴 팰린드롬을 찾는 방식이다.
+
+expand함수를 통해 palindrome일 경우 확장시켜 palindrome중 가장 긴 palindrome을 찾는다.
+
+최종적으로 result에는 가장 길이가 긴 palindrome이 들어간다.
+
+<br/><br/>
+
+## 유니코드, UTF-8
+
+* 파이썬3부터는 문자열 모두 유니코드 기반이다.
+
+* 유니코드 자체로는 비효율적이므로 이를 효율적으로 하기 위해 UTF-8인코딩 방식을 이용한다.
+
+* 바이트수는 1부터 4까지 직관적이고 간단하게 나타내었다.
+
+* 예약된 공간을 제외하면 약 100만자를 표현한다.
+
+* 유니코드 값에 따라 가변적으로 바이트를 결정한다.
+
+**파이썬에서는 내부적으로 UTF-8 인코딩 방식을 사용하지는 않는다. **
+
+**개별문자에 인덱싱을 통해 접근하기 어렵기 때문이다. 이는 UTF-8방식으로 인코딩을 하면 문자마다 바이트 길이가 달라져 빠르게 접근할 수 없기 때문이다. **
+
+**문자열의 특성에 따라 바이트 수를 다르게 고정시켜서 인코딩한다.**
+
+
+
+
 
 
 
