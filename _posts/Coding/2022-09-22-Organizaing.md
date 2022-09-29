@@ -4,7 +4,6 @@ title:  "Data Organizing"
 categories: coding
 tag: [python, blog, jupytor]
 toc: true
-
 author_profile: false
 sidebar:
     nav: "docs"
@@ -16,7 +15,7 @@ sidebar:
       white-space: normal;
       width: 100%;
       height: 240px;
-      display: block;
+      display: blockn
       overflow: auto;
       font-family: Arial, sans-serif;
       font-size: 0.9rem;
