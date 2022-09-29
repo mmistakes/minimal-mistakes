@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Customers by day, stations, lines in South Korea"
-categories: small_project
+categories: Small_Project
 tag: [python, blog, jupytor, project]
 toc: true
 author_profile: false

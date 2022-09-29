@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Shelter of Seoul"
-categories: small_project
+categories: Small_Project
 tag: [python, project, jupytor]
 toc: true
 author_profile: false

@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "File Modifying"
-categories: coding
+categories: Coding
 tag: [python, blog, jupytor]
 toc: true
 author_profile: false

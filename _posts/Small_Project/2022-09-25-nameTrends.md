@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Name Trends in US"
-categories: small_project
+categories: Small_Project
 tag: [python, blog, jupytor, project]
 toc: true
 author_profile: false

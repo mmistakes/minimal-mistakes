@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Data Organizing"
-categories: coding
+categories: Coding
 tag: [python, blog, jupytor]
 toc: true
 author_profile: false
@@ -15,7 +15,7 @@ sidebar:
       white-space: normal;
       width: 100%;
       height: 240px;
-      display: blockn
+      display: block12
       overflow: auto;
       font-family: Arial, sans-serif;
       font-size: 0.9rem;
