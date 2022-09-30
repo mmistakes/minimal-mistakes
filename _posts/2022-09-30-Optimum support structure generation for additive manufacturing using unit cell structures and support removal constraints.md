@@ -33,21 +33,21 @@
 
 ![image-20220927000834030](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220927000834030.png)
 
-**1. ** 모델링한 CAD 파일을 STL로 변환
+**1.** 모델링한 CAD 파일을 STL로 변환
 
-**2. ** STL 파일을 Voxel화
+**2.** STL 파일을 Voxel화
 
-**3. **제품과 서포트 구조가 맞닿는 접촉면을 설정
+**3.** 제품과 서포트 구조가 맞닿는 접촉면을 설정
 
-**4. **Dijkstra's algorithm을 적용하여 인접 행렬(Adjacency matrix) 생성
+**4.** Dijkstra's algorithm을 적용하여 인접 행렬(Adjacency matrix) 생성
 
-**5. **인접한 단위 cell voxel들을 정사각형(혹은 직사각형) grid로 분할
+**5.** 인접한 단위 cell voxel들을 정사각형(혹은 직사각형) grid로 분할
 
-**6. **분할한 grid들을 single target unit cell voxels을 사용하여 지지하도록 설정
+**6.** 분할한 grid들을 single target unit cell voxels을 사용하여 지지하도록 설정
 
-**7. **Target unit cell voxels에 대한 직선의 서포트를 생성
+**7.** Target unit cell voxels에 대한 직선의 서포트를 생성
 
-**8. **지지되지 않은 인접 unit cell voxels을 위한 서포트를 Dijkstra's shortest path algorithm을 활용하여 생성 
+**8.** 지지되지 않은 인접 unit cell voxels을 위한 서포트를 Dijkstra's shortest path algorithm을 활용하여 생성 
 
  무슨 이야기인지 아직은 모르겠다. 세부적으로 살펴보자.
 
