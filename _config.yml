@@ -22,6 +22,8 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "Taehwan Kim"
 description              : "적층제조, 인공지능 관련 이론 정리"
 url                      : "https://skku-taehwan.github.io"
+future                   : true
+published:               : true
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
