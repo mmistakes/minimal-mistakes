@@ -42,7 +42,7 @@ Each module contains a main notebook, as well as several videos. The content of 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Main notebook**:
+**Main Notebook**:
 
 * [Functions](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/02_functions/en/functions.ipynb)
 
@@ -65,7 +65,7 @@ Each module contains a main notebook, as well as several videos. The content of 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Main notebook**:
+**Main Notebook**:
 
 * [Conditional Statements](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/03_conditional_statements/en/conditional_statements.ipynb)
 
@@ -104,7 +104,7 @@ Course lectures - you can choose relevant videos from the playlist in the upper 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Main notebook**:
+**Main Notebook**:
 
 * [Lists and Dictionaries](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/05_lists_and_dictionaries/en/lists_and_dictionaries.ipynb)
 
@@ -125,7 +125,7 @@ Course lectures - you can choose relevant videos from the playlist in the upper 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Main notebook**:
+**Main Notebook**:
 
 * [Importing](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/06_importing/en/importing.ipynb)
 
