@@ -31,7 +31,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-         <span class="nav__sub-title">언어</span>
+         <span class="nav__sub-title">programming</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "java" %}
@@ -50,6 +50,13 @@
                 {% for category in site.categories %}
                     {% if category[0] == "javascript" %}
                         <li><a href="/categories/javascript" class="">자바스크립트({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul> 
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "basic" %}
+                        <li><a href="/categories/basic" class="">개념 정리{{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>  
