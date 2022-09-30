@@ -31,7 +31,7 @@
 
  저자들이 개발한 서포트 구조 생성 알고리즘은 Fig. 1과 같다.
 
-![image-20220927000834030](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220927000834030.png)
+![image](https://user-images.githubusercontent.com/74092405/193224559-4114d2b3-fe4c-4c4e-a28c-0dce1fab52b2.png)
 
 **1.** 모델링한 CAD 파일을 STL로 변환
 
@@ -57,7 +57,7 @@
 
  해당 논문에서 사용된 unit cells voxels은 Fig. 2.의 다양한 volume fraction을 가진 truncated octahedron (잘린 8면체)과 12면체이다.
 
-![image-20220927172949467](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220927172949467.png)
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193224634-ec4b6b9d-b9b1-47d6-8197-60273d977e20.png"></p>
 
  저자들에 따르면, 상기에 소개된 두 개의 입면체는 다양한 방향들에 대한 서포트 생성에 대한 유연성(적용하기 쉽다는 의미)이 뛰어나다고 한다. Chua et al. (2003), Sudardamji et al. (2010), Roberts & Garboczi (2002), and Babaee et al. (2012)의 선행 연구들에서 그 제조 가능성과 기계적 성능이 입증됐다고 한다.  
 
@@ -68,17 +68,19 @@
  적층 제조를 하기 위해 설계된 CAD 도면에 대한 서포트 생성 알고리즘을 적용하기 전에 unit cellular structure들로 구성된 voxel화된 공간으로 제품이 차지한 공간을 분할하는 과정을 거친다. 이때, 분할된 unit cell voxelized space가 최소 경로 알고리즘을 적용하는 데 사용된다. 이를 위해, Matlab algorithm (Adam, 2010)으로 설계된 제품과 substrate (baseplate라고도 부르며, 3D 프린팅 공정 중에 제품이 적층되는 공간을 의미한다.)를 cubic voxels의 배열로 분할한다.
 
  이 과정에서 설계된 CAD 모델이 STL 형식으로 변환되고, voxelization algorithm의 입력으로 사용된다. 이를 통해 (Nx * Ny * Nz) 크기의 grids와 , (Nx, Ny, Nz) 수 만큼의 voxel들이 생성된다. 이때, 각각의 grid가 갖는 값은 아래와 같은 의미를 가진다.
+ 
 $$
 1:제품을\ 포함하는\ cubic\ voxel을\ 의미함. \\
 0:빈\ 공간의\ 3차원\ grid를\ 포함하는\ cubic\ voxel을 의미함.
 $$
+
  변환된 cubic voxel grid를 octahedral voxel grid로 변환하는 알고리즘은 Fig. 3.와 같다.
 
-![image-20220927174902381](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220927174902381.png)
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193224669-47834a58-b190-43c3-9143-c9a67e9a4fe8.png"></p>
 
 각각의 cubic voxel은 하나하나씩 octahedral과의 일치성을 확인한 후에, octahedral과 cubic voxel grid로 변환된다. 먼저, 모든 voxel grid를 truncated octahedral voxel로 적용한 뒤, 주변(인접한)의 8개의 octahedral voxels의 값을 비교하여 모든 점이 1이면 "Part voxel"로 인식하고, 모든 점이 0이면 빈 공간(void) voxel로 인식한다. 이 과정에서 표면의 점들을 생성되고, point in polygon (PIP) 검증이 수행하여 part voxel을 결정하는 역할을 한다.
 
-![image-20220927215427916](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220927215427916.png)
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193224718-d55ca0de-0f40-494d-bec6-ea19efb54b43.png"></p>
 
  상기 과정을 수행하여 Nx * Ny * Nz 크기의 octahedral voxel들의 정보를 갖는 행렬과 (Nx-1) * (Ny-1) * (Nz-1) 크기의 인접한 octahedral voxel들의 정보를 담은 행렬이 생성된다. 이를 통해 cubic voxelized된 3차원 공간이 truncated octahedron으로 변환되며, rhombic dodecahedron voxel 공간도 유사한 방식으로 변환됨을 알 수 있다. 
 
@@ -90,19 +92,22 @@ $$
 
  지정된 면들은 이후에 Fig. 5.처럼 점들로 이산화 (discretized)되어 support voxel들로 지정된다. 이산화된 support voxel들은 interface unit cell voxel들과 맞닿아 있기 때문에 2로 값을 할당해준다. 즉, "2"값은 서포트가 필요한 voxel들을 의미한다.
 
-![image-20220928233230670](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220928233230670.png)
+
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193224762-33724fe6-bf39-4525-a1c7-fdf5cb93ae08.png"></p>
 
 
 
 <H3> 3.4. Adjacency matrix generation for Dijkstra's algorithm</h3>
 
  Dijkstra's shortest path grapth search 기반 알고리즘이 3차원 단위 cell voxel space를 탐색하는 사용되고, interface unit cell voxel들과 substrate/part unit cell voxel사이를 최소로 서포팅하는 경로를 생성하여 서포트 생성 알고리즘의 입력이 되는 인접 행렬을 생성한다. Dijkstra's algorithm은 한 개의 단위 cell voxel node에서 인접한 node를 경유하는 비용에 대한 정보를 담은 그래프 행렬을 사용한다. 해당 알고리즘은 초기의 단위 cell voxel에서 마지막 단위 cell node voxel까지 경유하는 비용을 최소화하는 최적화 문제를 풀고, 이를 통해 전체 cellular voxel space에 대한 인접 행렬 (Adjacency matrix)가 정의된다. 인접 행렬의 크기는 N x N 이 되고, 이때, N값을 식 (1)과 같다.
+
 $$
 N = (N_x \times N_y \times N_z)+(N_x-1)\times (N_y-1)\times (N_z-1)\cdots\cdots (1)
 $$
+
 인접 행렬은 3차원 단위 cell voxel grid의 각각의 voxel에서 인접한 voxel까지 순회하는 비용을 할당하는데, truncated octahedron은 14개의 인접한 단위 cell voxel들을 가지고, rhombic dodecahedron은 12개를 갖는다. 인접한 단위 cell에 부여하는 비용은 Table 1.과 같은데, 단위 cell part voxel에 서포트가 생기는 것을 방지하기 위해 비용을 높게 설정하였다고 한다. 따라서, Dijkstra's 알고리즘을 사용하여 인접 행렬이 생성된다.
 
-![image-20220928234546825](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220928234546825.png)
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193224868-07ffa161-4a5f-45a2-83d3-03e018542519.png"></p>
 
 > **Dijikstra's shortest path algorithm**
 >
@@ -110,8 +115,8 @@ $$
 >
 >  예를 들어, 아래 그림에서 A에서 C로 가는 경로가 있다고 하면,  C에서 가장 A로 가는 경로 중 가장 비용이 싼 vertex(점)은 B 또는 E이다. 하지만, B의 경우 A로 가기 위해서 C-B-D-A의 경로를 지나는데 필요한 총 비용은 5+2+1 = 8인 반면에 E를 통해 A로 갈 경우, C-E-D-A의 경로를 지나는데 필요한 총 비용은 5+1+1 = 7로 가장 작다. 따라서, C에서 A로 가는 최단 거리는 C-E-D-A가 된다.
 >
-> ![image-20220930141013061](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220930141013061.png)
 >
+> <p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193224918-febe7903-8091-4a52-adb0-3f03c4660d66.png"></p>
 > 
 
 <H3> 3.5. Support generation
@@ -120,35 +125,34 @@ $$
 
  Part와 직접 맞닿는 interface (서포트 구조과 Part와 맞닿는 부분) unit cell voxel들을 식별한 후에 해당 voxel들은  3 x 3 grid로 분할되는데, 분할된  interface unit cell voxel들은 z방향으로 감지된다.  Fig. 6.는 3 x 3 grid unit cell voxel들이 분할되는 과정을 묘사하는데, 처음의 3 x 3 grid (Fig. 6a.)는 4개의 unit cell voxel로 지지되고, 2 x 2 grid (Fig. 6b.)는 1개의 unit cell voxel로 지지된다(Fig. 6c.). 이때, 해당 single voxel을 **"target unit cell voxel"** 이라고 지칭하고, 행렬에 저장된다.  즉, unit cell voxel의 수가 9개에서 1개로 감소하게 된다. 모든 3 x 3 grid에서 해당 방법이 가능하지는 않는데, 그럴 때에는 2 x 2 grid의 가능성을 탐색하고 상기 방법과 유사하게 진행한다(Fig. 7.). 
 
-![image-20220930105142282](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220930105142282.png)
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193224962-58da5727-8c1f-4d99-9cf0-c578db749f02.png"></p>
 
  Fig. 8.은 3차원 voxel grid에서 서로 다른 종류의 unit cell들의 용어를 나열하고 있다. Interface unit cell voxel들을 3 x 3 grid 또는 2 x 2 grid로 분할한 뒤에는 남은 unit cell voxel들은 지지되지 않는 것(unsupported)으로 남는다. 해당 unit cell voxel들은 3 x 1이나 1 x 3 크기의 retangular grid로 분할되고, 중앙의 voxel들이 target unit cell voxel matrix에 저장된다.  (해당 과정을 거친 후에도 여전히 분류되지 않은 interface unit cell voxel들이 남아있을지도 모르지만, 이들에 대한 서포트는 서포트 생성 후반 과정에서 생성된다.)  모든 unit cell voxel들의 값은 '3'으로  부여되고, target unit cell voxel의 경우는 '5'의 값을 할당한다.
 
-![image-20220930105906210](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220930105906210.png)
 
-![image-20220930105912345](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220930105912345.png)
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193224998-85509d8c-a876-444e-9b19-ef53cce2c009.png"></p>
 
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193225020-08b2573b-1e81-428e-9862-fa58d3d4d444.png"></p>
 
 
 #### 3.5.2. Support generation for target unit cell voxels
 
  서포트 생성 알고리즘 (support generation algorithm)을 '5'의 값이 부여된 모든 target unit cell voxel들에 대해서 실행하여, part나 substrate unit cell voxel 바로 아래에 서포트가 생겼는지 확인한다. 그 후에 '1'의 값이 할당된 unit cell voxel들을 식별하고, 이들을 'supporting unit cell voxel'로 정의한다. 그리고 target과 supporting unit cell voxel 사이에 unit cell support voxel들을 생성하고 '4'의 값을 할당한다 (Table 2.).  
 
-![image-20220930110947141](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220930110947141.png)
 
-
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193225038-a33dd357-f15a-4beb-9e6e-0adaf40280b7.png"></p>
 
 #### 3.5.3. Support generation for unsupported unit cell interface voxels
 
  Target unit cell voxel들에 대한 support를 생성한 후에, '2'의 값이 할당된 unsupported interface unit cell voxel (어떠한 형태의 grid로도 분할될 수 없는 voxel들을 의미)에 대한 support를 탐색하고, 해당 voxel들에 대한 support를 생성한다. 우선 '2'의 값이 할당된 voxel들을 탐색하고, 하나의 matrix안에 저장한 후 supporting unit cell voxel (1과 4의 값을 가진 녀석들)들 중에서 선택된 unsupported unit cell interface voxel과 가장 가까운 녀석을 선택하여 support 생성을 진행한다. 해당 과정은 Fig. 9.와 같고, 이때도 Dijkstra's shortest path algorithm을 사용하여 시작 노드를 unsupported interface unit cell voxel (2값)에서 최종 노드인 support unit cell voxel(1 또는 4의 값)로 가는 최소 경로(비용을 최소로 하는)를 계산하여 인접 행렬을 생성한다. 이때, 최소 경로 안에 있는 unit cell voxel들에 다시 '4'의 값을 할당한다. Fig. 10.과 Fig. 11.은 그 예시를 보여주고 있다.
 
-![image-20220930111429524](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220930111429524.png)
 
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193225069-f09a3818-f29c-4ab2-826d-a5875485ddca.png"></p>
 
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193225089-371e8e72-9d86-4be1-98f8-ecb783c15464.png"></p>
 
-![image-20220930111813663](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220930111813663.png)
-
-![image-20220930111842194](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220930111842194.png)
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193225104-95841f19-0d5b-4fe0-872b-722d55b0119c.png"></p>  
+  
 
 #### 3.5.4. Building the support in a CAD environment
 
@@ -158,15 +162,18 @@ $$
 
  Support voxel들을 생성한 후에, 공정 후에 support structure들의 제거가 용이함을 평가가 수행되어야 하는데, 해당 과정은 support generation step에서 추가적인 accessibility constraint를 통해 진행할 수 있다. 이는 part 바깥의 6개의 직교 방향들과  support들의 accessibility (접근성)을 확인함으로써 이루어지는데, Fig. 12-14.가 그 예시다.
 
-![image-20220930112814831](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220930112814831.png)
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193225139-53e30115-391a-4375-8c65-61032bfb0e53.png"></p> 
 
+  
 #### Support accessibility evaluation
 
  Support accessibility 계산을 위한 알고리즘은 Fig. 15.와 같다.
 
  Voxel support structure들과 voxelized part geometry를 불러온 뒤, i = 0부터 support voxel 수보다 작을 때까지 6개의 표준 직교 방향으로 voxel 순회를 진행하고, 그 과정에서 support voxel을 표시한다. (part voxel에 의해 6개의 방향 중 어느 곳에도 막히지 않을 때까지 순회하면서 접근가능하다고 표시)
 
-![image-20220930112904475](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220930112904475.png)
+  
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193225169-91069f6d-ab36-4347-b7f0-d5a0ae0da279.png" height = "400px"></p>
+
 
  해당 알고리즘을 수행한 뒤, not accessible한 모든 unit cell support voxel들을 삭제하고, 해당 voxel들의 순회 비용을 인접 행렬에 갱신한다. 모든 inaccessible unit cell voxel들은 높은 순회 비용을 가지기 때문에 support가 생성되는 것을 방지할 수 있다. 
 
@@ -185,6 +192,7 @@ $$
  ##### Total sintered area:
 
  저자들은 cubic voxel based method를 사용하여 total sintered area를 계산하였고, cubic voxel size는 0.1mm (=layer thickness)로 설정하였다. NX에서 support를 생성한 후, STL 파일로 추출하여 MATLAB의 voxelized algorithm 사용을 위한 입력(input)으로 넣어주었으며, total sintered area는 식 (2)로 계산된다.
+
 $$
 Total \ sintered\  area = n \times (area\ of \ voxel \ face)\cdots \cdots (2) \\
 n = the\ total\ number\ of\ voxels,\ area\ of \ voxel \ face = 0.1 \times 0.1
@@ -193,6 +201,7 @@ $$
 ##### Total support volume calculation for solid supports:
 
  Total support volume의 경우 Paul and Anand (2014)가 제안한 알고리즘을 적용하여 계산을 진행했는데, 먼저 substrate위의 part가 담긴 STL 파일과 solid support를 cubic voxel을 이용해 voxelized하고, voxel grid안에서 z 방향(수직)으로 voxel 순회하여 모든 갇혀있는 빈 cubic voxel들(part voxel들 사이 또는 part와 substrate 사이에 갇혀 있는 voxel들을 의미한다.)을 저장한다. 그리고 저장된 voxel들을 part에 대한 solid support로 간주하여 그 부피를 계산한다. (3)
+
 $$
 Total\ support\ volume = Total\ no.\ of\ trapped\ voxels\times Volume\ of\ each\ voxel \cdots\cdots(3)
 $$
@@ -200,6 +209,7 @@ $$
 ##### Support contact area:
 
  Support가 접촉한 영역은 모든 interface unit cell voxel들의 접촉면의 영역의 합으로 식 (4)와 같이 계산한다.
+
 $$
  Support\ contact\ area = ni\times area\ of\ interface\ voxel\ face\cdots \cdots (4)
 $$
@@ -208,15 +218,16 @@ $$
 
  해당 파트에서는 저자들이 여러 개의 geometry들에 대해 앞에서 언급한 알고리즘을 적용한 예시들을 설명하고 있다. 적용한 부품들은 각각 industry bracket (Fig. 16-19.), a turbine part (Fig. 20.), accessibility constraint를 적용한 예시(Fig. 21-22.)들이며, solid truncated octahedron (or rhombic dodecahedron)에서부터 hollow (정공: 내부에 구멍을 뚫어 경량화한 모델) shape을 적용한 결과들을 비교하여, Support volume, support contace area, total sintering area의 감소량의 감소량을 Table 4-9까지 나열하고 있다.  
 
-![image-20220930135028426](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220930135028426.png)
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193225279-c551fd82-5a22-49f7-9fca-e41afbf4be83.png"></p>
 
-![image-20220930135039522](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220930135039522.png)
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193225318-24a49fe6-40de-4348-801f-2531c276ab9b.png"></p>
 
-![image-20220930135047632](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220930135047632.png)
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193225338-4238cd9d-3323-48e2-9a71-1f3442ccd898.png"></p>
 
-![image-20220930135055689](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220930135055689.png)
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193225359-2f309ce8-049f-4052-bae2-4093cd680a15.png"></p>
 
-![image-20220930135104387](C:\Users\kimta\AppData\Roaming\Typora\typora-user-images\image-20220930135104387.png)
+<p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193225381-0f1728cf-eab5-4e07-8660-c11440230f87.png"></p>
+
 
  이를 통해, 저자들은 Interface unit cell voxel들을 hollow cellular unit cell로 대체함으로써 support contact area를 줄이는 동시에 표면의 품질도 향상시킬 수 있고, 제품 생산 시 구조적 특징에 의해 부품에 가해지는 응력도 최소화할 수 있다고 보고했다.  Test case 3의 경우에는, accessibility constraint를 적용함으로써 inaccessible voxel들을 제거하면서 동일한 부품을 생산하여 재료의 사용량을 줄일 수 있음을 보였다.
 
