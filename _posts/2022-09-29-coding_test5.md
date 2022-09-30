@@ -11,295 +11,181 @@ toc_sticky: true
 
 &nbsp;
 
-## DFS
-
-- 깊이 우선 탐색, 그래프에서 깊은 부분을 우선적으로 탐색하는 알고리즘
-  - `인접 행렬` : 2차원 배열로 그래프의 연결 관계를 표현하는 방식
-  - `인접 리스트` : 리스트로 그래프의 연결 관계를 표현하는 방식
-
-- O(N) 시간복잡도
+## 정렬 알고리즘
 
 
 
+### **선택 정렬**
 
-**ex) 인접 행렬 방식 예제**
+- 데이터가 무작위로 있을때 이중에서 가장 작은 데이터를 선택해 맨 앞에 있는 데이터와 바꾸고, 그다음 작은 데이터를 선택해 앞에서 두 번째 데이터와 바꾸는 과정을 반복
+- 가장 작은 것을 선택한다는 의미
+
+**ex) 선택 정렬 예시**
 
 ```python
-INF = 999999999999999 # 무한
+array = [7,5,9,0,3,1,6,2,4,8]
 
-# 2차원 리스트 이용해 인접 행렬 표현
-graph = [
-    [0, 7, 5],
-    [7, 0, INF],
-    [5, INF, 0]
-]
+for i in range(len(array)):
+    min_index = i # 가장 작은 원소 인덱스
+    for j in range(i+1, len(array)):
+        if array[min_index] > array[j]:
+            min_index = j
+    array[i], array[min_index] = array[min_index], array[i] # 변경
 
-print(graph)
->> [[0,7,5], [7,0,INF], [5, INF, 0]]
+print(array)
+>> [0,1,2,3,4,5,6,7,8,9]
 ```
 
-**ex) 인접 리스트 방식 예제**
-
-```python
-# row 3개 인 2차원 인접리스트
-g = [[] for _ in range(3)]
-
-# 노드 0에 연결된 노드 정보 저장
-g[0].append((1, 7))
-g[0].append((2, 5))
-
-# 노드 1에 연결된 노드 정보 저장
-g[1].append((0,7))
-
-# 노드 2에 연결된 노드 정보 저장
-g[2].append((0,5))
-
-print(g)
-```
-
-> 메모리 속도 측면에서 인접 행렬은 모든 방식과 관계를 저장, 인접 리스트는 특정한 두 노드가 연결되어 있는지에 대한 정보를 얻는 속도가 느림
+- 선택 정렬의 시간 복잡도
+  - ![image-20220930172430175](/images/2022-09-29-coding_test5/image-20220930172430175.png)
+  - 데이터의 개수가 10,000개 이상이면 정렬 속도가 급격하게 느려짐
 
 &nbsp;
 
-**DFS 스택 자료구조를 이용하며 구체적인 동작 과정**
+###  삽입 정렬
 
-1. 탐색 시작 노드를 스택에 삽입하고 방문 처리를 수행
-2. 스택의 최상단 노드에 방문하지 않은 인접 노드가 없으면 스택에서 최상단 노드를 꺼냄
-3. 2번의 과정을 더 이상 수행할 수 없을 때까지 반복
+- 특정한 데이터를 적절한 위치에 '삽입'한다는 의미
+- 삽입정렬은 두 번째 데이터부터 시작, 첫 번째 데이터는 이미 정렬되었다고 판단
 
-> `방문 처리` 는 스택에 한 번 삽입되어 처리된 노드가 다시 삽입되지 않게 체크하는 것, 각 노드를 한 번씩만 처리할 수 있음
-
-![image-20220927185959085](/images/2022-09-27-coding_test4/image-20220927185959085.png)
-
-`*방문 순서*` : 1 -> 2 -> 7 -> 6 -> 8 -> 3 -> 4 -> 5 
-
-
+**ex) 삽입 정렬 예시**
 
 ```python
-# DFS 메서드 정의
+array = [7,5,9,0,3,1,6,2,4,8]
 
-def dfs(graph, v, visited):
-    # 방문 처리
-    visited[v] = True
-    print(v, end=' ')
+for i in range(1, len(array)):
+    for j in range(i, 0, -1):
+        if array[j] < array[j-1]:
+            array[j], array[j-1] = array[j-1], array[j]
+        else:
+            break
 
-    # 현재 노드와 연결된 다른 노드를 재귀적으로 방문
-    for i in graph[v]:
-        if not visited[i]:
-            dfs(graph, i, visited)
-
-
-# 2차원 노드 연결 리스트
-graph = [
-    [],
-    [2, 3, 8],
-    [1, 7],
-    [1, 4, 5],
-    [3, 5],
-    [3, 4],
-    [7],
-    [2, 6, 8],
-    [1, 7]
-]
-
-# 각 노드 방문 기록
-visited = [False] * 9
-
-# run
-dfs(graph, 1, visited)
->> 1 2 7 6 8 3 4 5 
+print(array)
+>> [0,1,2,3,4,5,6,7,8,9]
 ```
+
+- 삽입 정렬의 시간 복잡도
+  - ![image-20220930172430175](/images/2022-09-29-coding_test5/image-20220930172430175.png)
+  - 현재 리스트가 정렬된 상태라면 선택 정렬보다 빠름
 
 &nbsp;
 
 
 
-## BFS
+### 퀵 정렬
 
-- `너비우선탐색`, 가까운 노드부터 탐색하는 알고리즘
+- 가장 많이 사용되는 알고리즘
+- 기준 데이터를 설정하고 그 기준보다 큰 데이터와 작은 데이터의 위치를 변경
+- 재귀 함수와 동작원리가 같음
 
-- O(N) 시간복잡도, 일반적으로 DFS보다 좋음
-
-**BFS 구체적인 동작 과정**
-
-1.  탐색 시작 노드를 큐에 삽입하고 방문처리
-2.  큐에서 노드를 꺼내 해당 노드의 인접 노드 중에서 방문하지 않은 노드를 모두 큐에 삽입하고 방문 처리를 함
-3.  2번 과정을 더 이상 수행할 수 없을 때까지 반복
-
-
-
-![image-20220927192135034](/images/2022-09-27-coding_test4/image-20220927192135034.png)
-
-`*방문 순서*` : 1 -> 2 -> 3 -> 8 -> 7 -> 4 -> 5 -> 6 
-
-
+**퀵 정렬 소스코드**
 
 ```python
-from collections import deque
+array = [5, 7, 9, 0, 3, 1, 6, 2, 4, 8]
 
-# BFS 메서드 정의
-def bfs(graph, start, visited):
-  # 큐 구현 deque로
-  queue = deque([start])
-  # 방문처리
-  visited[start] = True
-  # 큐가 빌때까지 반복
-  while queue:
-    # 큐 원소 out
-    v = queue.popleft()
-    print(v, end=' ')
-    # 해당 원소와 연결된, 아직 방문하지 않은 원소들을 큐에 삽입
-    for i in graph[v]:
-      if not visited[i]:
-        queue.append(i)
-        visited[i] = True
 
-# 각 노드가 연결된 정보를 표현 (2차원 리스트)
-graph = [
-    [],
-    [2, 3, 8],
-    [1, 7],
-    [1, 4, 5],
-    [3, 5],
-    [3, 4],
-    [7],
-    [2, 6, 8],
-    [1, 7]
-]
+def quick_sort(array, start, end) :
+  if start >= end: #원소가 1개인 경우 종료
+    return
+  pivot = start
+  left = start + 1
+  right = end
+  while left <= right:
+    #피벗보다 큰 데이터를 찾을 때까지 반복
+    while left <= end and array[left] <= array[pivot]:
+      left += 1
 
-# 각 노드가 방문된 정보를 표현 (1차원 리스트)
-visited = [False] * 9
+    #피벗보다 작은 데이터를 찾을 때까지 반복
+    while right > start and array[right] >= array[pivot]:
+      right -= 1
 
-# 정의된 BFS 함수 호출
-bfs(graph, 1, visited)
+    if left > right: #엇갈렸다면 작은 데이터와 피벗을 교체
+      array[right], array[pivot] = array[pivot], array[right]
+    
+    else: # 엇갈리지 않았다면 작은 데이터와 피벗을 교체
+      array[left], array[right] = array[right], array[left]
+
+    #분할 이후 왼쪽과 오른쪽 부분에서 각각 정렬 수행
+
+  quick_sort(array, start, right - 1)
+  quick_sort(array, right +1, end)
+
+
+quick_sort(array, 0, len(array)-1)
+print(array)
+
+>> [0,1,2,3,4,5,6,7,8,9]
 ```
+
+**파이썬의 장점을 살린 퀵 정렬 소스코드**
+
+```python
+array = [5, 7, 9, 0, 3, 1, 6, 2, 4, 8]
+
+def quick_sort(array):
+  # 리스트가 하나 이하의 원소만을 담고 있다면 종료
+  if len(array) <= 1:
+    return array
+
+  pivot = array[0] #피벗은 첫 번째 원소
+  tail = array[1:] # 피벗을 제외한 리스트 
+
+
+  left_side = [x for x in tail if x <= pivot] #분할된 왼쪽 부분
+  right_side = [x for x in tail if x >= pivot] #분할된 오른쪽 부분
+
+
+
+
+  #분할 이후 왼쪽 부분과 오른쪽 부분에서 각각 정렬을 수행하고, 전체 리스트를 반환 
+  return quick_sort(left_side) + [pivot] + quick_sort(right_side)
+
+
+
+print(quick_sort(array))
+>> [0,1,2,3,4,5,6,7,8,9]
+```
+
+- 최악의 경우 ![image-20220930172430175](/images/2022-09-29-coding_test5/image-20220930172430175.png), 평균은 O(NlogN)
 
 &nbsp;
 
+### 계수 정렬
 
+- 특정한 조건이 부합할 때만 사용할 수 있지만 매우 빠른 정렬 알고리즘
+- O(N+K) 의 시간복잡도 보장
+  - 데이터 개수가 N
+  - 데이터 중 최댓값이 K
 
-## DFS / BFS
-
-- **DFS**
-  - 동작 : 스택, 구현방법 : 재귀 함수
-
-- **BFS**
-  - 동작 : 큐, 구현방법 : 큐 자료구조 이용
-
-
-&nbsp;
-
-### 예제) 음료수 얼려 먹기
+**계수 정렬 소스코드**
 
 ```python
-N × M 크기의 얼음 틀이 있다. 구멍이 뚫려 있는 부분은 0, 칸막이가 존재하는 부분은 1로 표시된다.
-구멍이 뚫려 있는 부분끼리 상, 하, 좌, 우로 붙어 있는 경우 서로 연결되어 있는 것으로 간주한다.
-이때 얼음 틀의 모양이 주어졌을 때 생성되는 총 아이스크림의 개수를 구하는 프로그램을 작성하라.
-다음의 4 × 5 얼음 틀 예시에서는 아이스크림이 총 3개가 생성된다
+array = [7,5,9,0,3,1,6,2,9,1,4,8,0,5,2]
+
+#모든 범위를 포함하는 리스트 선언(모든 값은 0으로 초기화)
+count = [0] * (max(array) + 1)
 
 
-# 입력예시
-4 5
-00110
-00011
-11111
-00000
+for i in range(len(array)) :
+  count[array[i]] += 1 # 각 데이터에 해당하는 인덱스의 값 증가
 
-# 출력예시
-3
+
+for i in range(len(count)): # 리스트에 기록된 정렬 정보 확인
+  for j in range(count[i]):
+    print(i, end =' ') # 띄어쓰기를 구분으로 등장한 횟수만큼 인덱스 출력
 ```
 
-- 풀이
-
-```python
-# 행, 열 받고
-row, col = map(int, input().split())
-# 전체 맵
-graph = [list(map(int,input())) for _ in range(row)]
 
 
-def DFS(x, y):
-  # 예외 범주 처리
-  if x <= - 1 or x >= row or y <= -1 or y >= col:
-    return False
+### 정렬 라이브러리
 
-  if graph[x][y] == 0:
+- sorted()
+  - 퀵 정렬과 동작 방식이 비슷한 병합 정렬을 기반으로 만듬
+  - 퀵보다는 일반적으로 느려도 최악의 경우 O(NlogN)
 
-    graph[x][y] = 1
-
-    # 상하좌우 체크
-    DFS(x+1,y) 
-    DFS(x-1,y)
-    DFS(x,y+1)
-    DFS(x,y-1)
-    return True
-
-  return False
-
-
-cnt = 0
-for i in range(row):
-  for j in range(col):
-    if DFS(i,j) == True:
-      cnt += 1
-
-print(cnt)
-```
-
-&nbsp;
-
-### 예제) 미로 탈출
-
-```python
-N x M 크기의 직사각형 형태의 미로에 여러 마리의 괴물이 있어 이를 피해 탈출해야 한다. 현재 위치는 (1, 1)이고 미로의 출구는 (N,M)의 위치에 존재하며 한 번에 한 칸씩 이동할 수 있다. 괴물이 있는 부분은 0으로, 괴물이 없는 부분은 1로 표시되어 있다. 미로는 반드시 탈출할 수 있는 형태로 제시된다. 탈출하기 위해 움직여야 하는 최소 칸의 개수를 구하라. 칸을 셀 때는 시작 칸과 마지막 칸을 모두 포함해서 계산한다.
-
-# 입력
-5 6
-101010
-111111
-000001
-111111
-111111
-
-# 출력
-10
-```
-
-- 풀이
-
-```python
-from collections import deque
-
-# 행, 열, 맵 설정
-row, col = map(int, input().split())
-graph = [list(map(int,input())) for _ in range(row)]
-
-# 상하좌우 설정
-dx = [-1,1,0,0]
-dy = [0,0,-1,1]
-
-def BFS(x,y):
-  queue = deque()
-  queue.append((x,y))
-
-  # queue 없을때 까지
-  while queue:
-    x, y = queue.popleft()
-    for i in range(4):
-      nx = x + dx[i]
-      ny = y + dy[i]
-	  
-      # 예외 범주 처리
-      if nx <= -1 or nx >= row or ny <= -1 or ny >= col:
-        continue
-      if graph[nx][ny] == 0:
-        continue
-      if graph[nx][ny] == 1:
-        graph[nx][ny] = graph[x][y] + 1
-        queue.append((nx, ny))
-  return graph[row-1][col-1]
-
-
-print(BFS(0,0))
-```
-
+- 문제 유형
+  1. 정렬 라이브러리로 풀 수 있는 문제
+     - 단순히 정렬 기법을 알고 있는지 물어보는 유형, 기본 정렬 라이브러리의 사용 방법으로 해결
+  2. 정렬 알고리즘의 원리에 대해서 물어보는 문제
+     - 선택, 삽입, 퀵 정렬등의 원리를 알고 있어야 문제 해결 가능
+  3. 더 빠른 정렬이 필요한 문제
+     - 퀵 정렬 기반의 정렬 기법으로는 풀 수 없으며 계수 정렬 등의 다른 정렬 알고리즘을 이용하거나 알고리즘의 구조적인 개선이 필요
