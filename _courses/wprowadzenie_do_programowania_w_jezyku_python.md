@@ -1,5 +1,5 @@
 ---
-title: "Wprowadzenie do programowania w języku Pythob"
+title: "Wprowadzenie do programowania w języku Python"
 excerpt: "Kurs dla osób początkujących, bez wcześniejszego doświadczenia w programowaniu"
 ---
 
