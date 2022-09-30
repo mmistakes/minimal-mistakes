@@ -59,8 +59,15 @@
                         <li><a href="/categories/basic" class="">개념 정리{{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>  
-
+            </ul> 
+        <span class="nav__sub-title">Web</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "spring" %}
+                        <li><a href="/categories/spring" class="">스프링({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul> 
       </li>
       <li>	
             <br>      
