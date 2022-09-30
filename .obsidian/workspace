@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2022-9-29-daily.md",
+            "file": "_posts/2022-09-30-Pytorch9.md",
             "mode": "source",
             "source": false
           }
@@ -61,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.5,
-    "collapsed": true
+    "width": 232.5
   },
   "right": {
     "id": "084c1a1a0617b971",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-9-29-daily.md",
+                "file": "_posts/2022-09-30-Pytorch9.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-9-29-daily.md",
+                "file": "_posts/2022-09-30-Pytorch9.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-9-29-daily.md"
+                "file": "_posts/2022-09-30-Pytorch9.md"
               }
             }
           }
@@ -131,15 +130,15 @@
   },
   "active": "665d4c32ae4d3335",
   "lastOpenFiles": [
-    "_posts/Untitled.md",
-    "_posts/2022-9-29-daily.md",
-    "_posts/2022-09-29-Pytorch8.md",
+    "_posts/2022-09-30-pytorch10.md",
+    "_posts/2022-09-30-Pytorch9.md",
     "_posts/2022-09-28-Pytorch7.md",
+    "_posts/2022-09-29-daily.md",
+    "_posts/2022-09-29-Pytorch8.md",
+    "_posts/2022-09-27-homework1.md",
+    "_posts/2022-09-30-daily.md",
+    "2022-09-30-daily.md",
     "_posts/2022-09-28-daily.md",
-    "_posts/2022-09-28-Pytorch6.md",
-    "_posts/2022-09-27-Pytorch5.md",
-    "_posts/2022-09-27-Pytorch4.md",
-    "_posts/2022-09-20-Python-4.md",
-    "_posts/2022-09-20-Python-3.md"
+    "_posts/2022-09-28-Pytorch6.md"
   ]
 }
