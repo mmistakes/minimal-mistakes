@@ -1,3 +1,20 @@
+---
+title:  "[논문 리뷰] Optimum support structure generation for additive manufacturing using unit cell structures and support removal constraint"
+excerpt: ""
+
+categories:
+  - Blog
+tags:
+  - [Paper review, Additive manufacturing, 3D printing, Support generation algorithm, ]
+
+toc: true
+toc_sticky: true
+ 
+date: 2022-09-30
+last_modified_at: 2022-09-30
+---
+
+
 <H1> Optimum support structure generation for additive manufacturing using unit cell structures and support removal constraint </H1>
 >  위 논문은 적층제조(3D printing의 학술 용어) 중 제품의 돌출 형상(overhang structure) 또는 불안정한 형상의 안정적인 출력을 위해 사용하는 서포트 구조(support structure)의 최적화를 위한 기존 알고리즘을 개선한 저자들의 방법을 소개하는 논문이다.  [*Procedia Manufacturing* 5 (2016): 1043-1059.]
 
