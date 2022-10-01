@@ -35,6 +35,7 @@ Skills
 * Python 
 * Matlab
 * R
+* SQL
    
 
 
