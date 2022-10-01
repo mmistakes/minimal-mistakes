@@ -26,6 +26,9 @@ Work experience
   * BMW of North America
    
 
+Research
+======
+* Re-QGAN: an optimized adversarial quantum circuit learning framework [https://arxiv.org/abs/2208.02165]
 
 Skills
 ======
