@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Schulfotograf",
-    "title": "Schulfotograf",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=YWQ3N2Q1aG5xcm4xc3FwbDdpaDJwanRwcXMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2022-09-28",
-      "date_time": null
-    },
-    "end": {
-      "date": "2022-10-01",
-      "date_time": null
-    },
-    "created": "2022-09-21T19:21:14.000Z",
-    "updated": "2022-09-21T19:21:14.969Z"
-  },
-  {
-    "image_path": null,
     "alt": "Unterrichtsfrei",
     "title": "Unterrichtsfrei",
     "excerpt": "Feiertag",
@@ -100,5 +83,22 @@
     },
     "created": "2022-09-21T19:24:25.000Z",
     "updated": "2022-09-21T19:24:25.319Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Letzter Schultag vor den Herbstferien",
+    "title": "Letzter Schultag vor den Herbstferien",
+    "excerpt": "Unterricht nach Plan",
+    "url": "https://www.google.com/calendar/event?eid=azF2bW9kcWRraHJqNTAwOXR0ZWVjbW84NzQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2022-10-21",
+      "date_time": null
+    },
+    "end": {
+      "date": "2022-10-22",
+      "date_time": null
+    },
+    "created": "2022-09-21T19:25:22.000Z",
+    "updated": "2022-09-21T19:25:22.312Z"
   }
 ]
