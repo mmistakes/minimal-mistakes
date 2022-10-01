@@ -4,7 +4,7 @@
 - IoC의 등장 -> 스프링과 다른 프레임위크의 가장 큰 차이점이 IoC를 통한 개발 진행
 - AOP 로  로깅, 트랜잭션 관리, 시큐리티에서의 적용 등 
 - 스프링의 특징
-  - <img src="images/image-20220924204007238.png" alt="image-20220924204007238" style="zoom:67%;" />
+  - <img src="../images/2022-09-24-SpringKeynote/image-20220924204007238.png" alt="image-20220924204007238" style="zoom:67%;" />
 
 
 
@@ -420,7 +420,7 @@
 - 스프링 어플리케이션은 대부분 MVC 웹 어플리케이션(web Layer, Business Layer, Data Layer) 사용
 - 특정구역의 반복되는 로직들을 한 곳으로 몰아서 코딩을 하게 해줌
 - 주요 annotation
-  - <img src="images/image-20220926210906363.png" alt="image-20220926210906363" style="zoom:80%;" />
+  - <img src="../images/2022-09-24-SpringKeynote/image-20220926210906363.png" alt="image-20220926210906363" style="zoom:80%;" />
 
 
 
@@ -872,6 +872,6 @@
 
 # 6. 여러가지 Annotation
 
-- ![image-20220930195211047](images/image-20220930195211047.png)
+- ![image-20220930195211047](../images/2022-09-24-SpringKeynote/image-20220930195211047.png)
 
-- ![image-20220930195223827](images/image-20220930195223827.png)
+- ![image-20220930195223827](../images/2022-09-24-SpringKeynote/image-20220930195223827.png)

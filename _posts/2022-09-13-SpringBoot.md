@@ -422,7 +422,7 @@
 
 ### annotation 정리
 
-- ![image-20220920205603594](images/image-20220920205603594.png)
+- ![image-20220920205603594](../images/2022-09-13-SpringBoot/image-20220920205603594.png)
 
 
 
@@ -648,7 +648,7 @@
 
 ### delete annotation 정리
 
-![image-20220921213002286](images/image-20220921213002286.png)
+![image-20220921213002286](../images/2022-09-13-SpringBoot/image-20220921213002286.png)
 
 
 
