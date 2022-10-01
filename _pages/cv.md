@@ -28,7 +28,7 @@ Work experience
 
 Research
 ======
-* Re-QGAN: an optimized adversarial quantum circuit learning framework [https://arxiv.org/abs/2208.02165]
+* [https://arxiv.org/abs/2208.02165](Re-QGAN: an optimized adversarial quantum circuit learning framework)
 
 Skills
 ======
