@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* B.S. in Mathematics, University of Buea, 2014
-* M.S. in Applied Mathematics, Columbia University in the City of New York, 2016
 * Ph.D in Mathematics, University of Tennessee Knoxville, 2023 (Expected). 
+* M.S. in Applied Mathematics, Columbia University in the City of New York, 2016.
+* B.S. in Mathematics, University of Buea, 2014.
 
 Work experience
 ======
