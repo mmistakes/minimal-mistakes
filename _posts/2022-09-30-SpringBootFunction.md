@@ -35,7 +35,7 @@
 
 #### Validation Annotation
 
-- ![image-20220930195934607](../images/2022-09-30-SpringBoot function/image-20220930195934607.png)
+- ![image-20220930195934607](../images/2022-09-30-SpringBootFunction/image-20220930195934607.png)
 
 
 
