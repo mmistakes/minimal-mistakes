@@ -140,56 +140,70 @@ This post will capture the books I have read over the years starting from 2019.
 
     1.  04/22/2022 - 06/10/2022
 
-    2.  I have just finished _The Four Agreements_ by Don Miguel Ruiz, a terrific author. His book [The Mastery of Love](/categories/learning/book_report/the_mastery_of_love) is one of my favorites, and Ruiz never fails to deliver. Every line in this book packs a punch and carries great meaning. I highly recommend this book to everyone, and I hold every agreement in high regard.
+    2.  I have just finished _The Four Agreements_ by Don Miguel Ruiz, a terrific author. His book [The Mastery of Love](#) is one of my favorites, and Ruiz never fails to deliver. Every line in this book packs a punch and carries great meaning. I highly recommend this book to everyone, and I hold every agreement in high regard.
 
-6.  _A New Earth: Awakening to Your Life's Purpose_ by Eckhart Tolle - **[In Progress]**
+6.  _Theodore Roosevelt, An Autobiography_ by Theodore Roosevelt
+
+    1.  03/24/2022 - 07/29/2022
+
+7.  _Economics in One Lesson_ by Henry Hazlitt
+
+    1.  08/15/2022 - 09/20/22
+
+8.  _A New Earth: Awakening to Your Life's Purpose_ by Eckhart Tolle - **[In Progress]**
 
     1.  06/xx/2022 - TBD
 
     2.  A special thank you to my great friend Trevor for gifting this book to me.
 
-7.  _Theodore Roosevelt, An Autobiography_ by Theodore Roosevelt - **[In Progress]**
+9.  _Pride and Prejudice_ by Jane Austen - **[In Progress]**
 
-    1.  03/24/2022 - TBD
+    1.  08/03/2022 - TBD
 
-8.  _The Daily Laws: 366 Meditations on Power, Seduction, Mastery, Strategy, and Human Nature_ by Robert Greene - **[In Progress]**
+10. How Innovation Works by Matt Ridley - **[In Progress]**
+
+    1.  09/03/2022 - TBD
+
+11. _The Daily Laws: 366 Meditations on Power, Seduction, Mastery, Strategy, and Human Nature_ by Robert Greene - **[In Progress]**
 
     1.  11/01/21 - TBD
 
     2.  I read a page a day.
 
-9.  _Meditations_ by Marcus Aurelius - **[In Progress]**
+12. _Meditations_ by Marcus Aurelius - **[In Progress]**
 
     1.  I occasionally read a single passage.
 
     2.  N/A - TBD
 
-10. _Analysis I_ by Terrance Tao - **[Paused]**
+13. _Analysis I_ by Terrance Tao - **[Paused]**
 
-    1. 12/31/2021 - TBD
+    1.  12/31/2021 - TBD
 
 # Books to Read
 
 1.  The 48 Laws of Power by Robert Greene
 
-2.  The Infinite Machine: How an Army of Crypto-hackers Is Building the Next Internet with Ethereum
+2.  Running Lean
 
-3.  The Cryptopians: Idealism, Greed, Lies, and the Making of the First Big Cryptocurrency Craze
+3.  The Infinite Machine: How an Army of Crypto-hackers Is Building the Next Internet with Ethereum
 
-4.  The Circadian Code by Satchin Panda
+4.  The Cryptopians: Idealism, Greed, Lies, and the Making of the First Big Cryptocurrency Craze
 
-5.  Game Theory by Giacomo Bonanno
+5.  The Circadian Code by Satchin Panda
 
-6.  Power vs. Force: The Hidden Determinants of Human Behavior
+6.  Game Theory by Giacomo Bonanno
 
-7.  Inner Engineering: A Yogi's Guide to Joy by Sadguru
+7.  Power vs. Force: The Hidden Determinants of Human Behavior
 
-8.  The 50th Law
+8.  Inner Engineering: A Yogi's Guide to Joy by Sadguru
 
-9.  The Iliad by Homer
+9.  The 50th Law
 
-10. The War of Art
+10. The Iliad by Homer
 
-11. The Holy Quran, English Translation
+11. The War of Art
 
-12. Macroeconomics: Principles, Applications, and Tools by
+12. The Holy Quran, English Translation
+
+13. Macroeconomics: Principles, Applications, and Tools by
