@@ -20,7 +20,7 @@ title                    : "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Kkonng"
-description              : "An amazing website."
+description              : "진성아 너 바보야?"
 url                      : "https://Kkonng.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
