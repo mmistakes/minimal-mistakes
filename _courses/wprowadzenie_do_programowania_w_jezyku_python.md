@@ -14,8 +14,9 @@ Witamy! W tym kursie nauczysz się podstaw programowania w języku Python. Kurs 
 
 Każdy moduł zawiera tak zwany główny "notebook" oraz kilka filmów. Zawartość notebooków i filmów jest mniej więcej taka sama. W rzeczywistości, w filmach jeden z instruktorów kursu przechodzi przez główny notebook, omawiając go dokładnie i podając dodatkowe przykłady. W zależności od Twoich preferencji, możesz albo oglądać filmy, albo samodzielnie przechodzić przez główne notebooki (możesz też robić obie te rzeczy, to zależy od Ciebie).  Oprócz głównego notebooka, każdy moduł posiada również dodatkowe notebooki, zawierające zadania, które należy wykonać i przesłać na platformę [Gradescope](), jeżeli jesteś oficjalnym uczestnikiem kursu.
 
-# 1. Zmienne i Stałe 
 <a id='zmienne-i-stałe'></a>
+# 1. Zmienne i Stałe
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=CdBT4Ub6CRI,Ya7SsIVMXTk,3TIpGDM1i4s,fDVtfJJO7Ic,c0k9mBbukBY,DerEj07SKI4,52IM0KyWMf8,YjEDWH9f02o," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Główny Notebook**:
@@ -31,13 +32,13 @@ Każdy moduł zawiera tak zwany główny "notebook" oraz kilka filmów. Zawarto�
 * [Zadanie 01](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/01_variables_and_constants/pl/ex_01.ipynb)
 * [Zadanie 02](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/01_variables_and_constants/pl/ex_02.ipynb)
 
-# 2. Funkcje
 <a id='funkcje'></a>
+# 2. Funkcje
 <iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Główny Notebook**:
 
-* [Funkcje](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/02_functions/pl/funckje.ipynb)
+* [Funkcje](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/02_functions/pl/funkcje.ipynb)
 
 **Filmy:**
 
@@ -49,8 +50,9 @@ Każdy moduł zawiera tak zwany główny "notebook" oraz kilka filmów. Zawarto�
 * [Zadanie 02](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/02_functions/pl/ex_02.ipynb)
 * [Zadanie 03](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/02_functions/pl/ex_03.ipynb)
 
-# 3. Instrukcje Warunkowe
 <a id='instrukcje-warunkowe'></a>
+# 3. Instrukcje Warunkowe
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Główny Notebook**:
@@ -66,8 +68,8 @@ Każdy moduł zawiera tak zwany główny "notebook" oraz kilka filmów. Zawarto�
 * [Zadanie 01](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/03_conditional_statements/pl/ex_01.ipynb)
 * [Zadanie 02](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/03_conditional_statements/pl/ex_02.ipynb)
 
-# 4. Pętle i Iteratory
 <a id='pętle-i-iteratory'></a>
+# 4. Pętle i Iteratory
 Course lectures - you can choose relevant Filmy from the playlist in the upper right corner:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -86,8 +88,8 @@ Course lectures - you can choose relevant Filmy from the playlist in the upper r
 * [Zadanie 02](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/04_loops_and_iterables/pl/ex_02.ipynb)
 * [Zadanie 03](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/04_loops_and_iterables/pl/ex_03.ipynb)
 
-# 5. Listy i Słowniki
 <a id='listy-i-słowniki'></a>
+# 5. Listy i Słowniki
 Course lectures - you can choose relevant Filmy from the playlist in the upper right corner:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -109,8 +111,8 @@ Course lectures - you can choose relevant Filmy from the playlist in the upper r
 * [Zadanie 05](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/05_lists_and_dictionaries/pl/ex_05.ipynb)
 * [Zadanie 06](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/05_lists_and_dictionaries/pl/ex_06.ipynb)
 
-# 6. Importowanie
 <a id='importowanie'></a>
+# 6. Importowanie
 <iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Główny Notebook**:
