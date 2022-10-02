@@ -85,7 +85,7 @@ last_modified_at: 2022-09-30
  적층 제조를 하기 위해 설계된 CAD 도면에 대한 서포트 생성 알고리즘을 적용하기 전에 unit cellular structure들로 구성된 voxel화된 공간으로 제품이 차지한 공간을 분할하는 과정을 거친다. 이때, 분할된 unit cell voxelized space가 최소 경로 알고리즘을 적용하는 데 사용된다. 이를 위해, Matlab algorithm (Adam, 2010)으로 설계된 제품과 substrate (baseplate라고도 부르며, 3D 프린팅 공정 중에 제품이 적층되는 공간을 의미한다.)를 cubic voxels의 배열로 분할한다.
 
  이 과정에서 설계된 CAD 모델이 STL 형식으로 변환되고, voxelization algorithm의 입력으로 사용된다. 이를 통해 (Nx * Ny * Nz) 크기의 grids와 , (Nx, Ny, Nz) 수 만큼의 voxel들이 생성된다. 이때, 각각의 grid가 갖는 값은 아래와 같은 의미를 가진다.
- 
+
 $$
 1:제품을\ 포함하는\ cubic\ voxel을\ 의미함. \\
 0:빈\ 공간의\ 3차원\ grid를\ 포함하는\ cubic\ voxel을 의미함.
@@ -169,7 +169,7 @@ $$
 <p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193225089-371e8e72-9d86-4be1-98f8-ecb783c15464.png"></p>
 
 <p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193225104-95841f19-0d5b-4fe0-872b-722d55b0119c.png"></p>  
-  
+
 
 #### 3.5.4. Building the support in a CAD environment
 
@@ -181,14 +181,14 @@ $$
 
 <p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193225139-53e30115-391a-4375-8c65-61032bfb0e53.png"></p> 
 
-  
+
 #### Support accessibility evaluation
 
  Support accessibility 계산을 위한 알고리즘은 Fig. 15.와 같다.
 
  Voxel support structure들과 voxelized part geometry를 불러온 뒤, i = 0부터 support voxel 수보다 작을 때까지 6개의 표준 직교 방향으로 voxel 순회를 진행하고, 그 과정에서 support voxel을 표시한다. (part voxel에 의해 6개의 방향 중 어느 곳에도 막히지 않을 때까지 순회하면서 접근가능하다고 표시)
 
-  
+
 <p align = "center"><img src="https://user-images.githubusercontent.com/74092405/193225169-91069f6d-ab36-4347-b7f0-d5a0ae0da279.png" height = "400px"></p>
 
 
