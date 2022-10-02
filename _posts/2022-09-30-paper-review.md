@@ -1,6 +1,6 @@
 ---
 title:  "[논문 리뷰] Optimum support structure generation for additive manufacturing using unit cell structures and support removal constraint"
-excerpt: ""
+excerpt: "공부를 위한 논문 리뷰"
 
 categories:
   - Blog
