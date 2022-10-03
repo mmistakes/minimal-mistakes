@@ -1,0 +1,15 @@
+## Neural Networks
+
+하늘을 날고자 해서 새처럼 날 필요는 없듯이
+AI를 위해서 인간의 뇌를 완벽히 모방할 필요는 없다.
+
+
+NN : function approximators that stack affine transformations followed by nonlinear transformations
+
+먼저 linear regression에서
+Data : $D={(x_i,y_i)}^N_{i=1}$
+Model: 
+
+
+
+![[image2.png]]
