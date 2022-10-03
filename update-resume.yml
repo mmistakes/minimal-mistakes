@@ -1,0 +1,30 @@
+name: Update Resume
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  # schedule:
+  #  - cron: "*/10 * * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with: 
+          repository: cschindlbeck/cv
+    - name: Build Resume
+      run: |
+        ./latexdockercmd.sh pdflatex resume_cschindlbeck.tex
+    - name: Push code
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        # Force add since README is on gitignore
+        git add -f resume_cschindlbeck.pdf
+        # Prevent empty add to result in error
+        git diff-index --quiet HEAD || git commit -m "Updated Resume"
+        git push
