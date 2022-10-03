@@ -1,3 +1,12 @@
+---
+layout: single
+title:  "DL_2 NN & MLP"
+categories : DL
+tag : [NN, MLP]
+toc : true
+---
+
+
 ## Neural Networks
 
 하늘을 날고자 해서 새처럼 날 필요는 없듯이
