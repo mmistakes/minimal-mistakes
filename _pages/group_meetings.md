@@ -26,36 +26,35 @@ While there are COVID restrictions in place (and it remains convenient) these wi
 
 ## Next Meeting/Meeting Archive
 
-| Date                | Location                 | Speaker            |
-|:-------------------:|:------------------------:|:------------------:|
-| Mon 12th September 2022  | Hybrid                   | Project Recaps     |
+|         Date         |   Location   |      Speaker       |
+| :------------------: | :----------: | :----------------: |
+| Mon 3rd October 2022 | HW324/Hybrid | General Discussion |
 
 
 
 ### Past meetings
 
-| Date                | Location                 | Speaker            |
-|:-------------------:|:------------------------:|:------------------:|
-| Mon 5th September 2022   | Hybrid                   | CANCELLED          |
-| Mon 29th August 2022| Hybrid                   | Emma Hobbs         |
-| Tue 2nd August 2022 | Hybrid                   | Areej Obaid        |
-| Mon 25th July 2022  | Zoom (see calendar link) | Nora Novak         |
-| Tue 19th July 2022  | Hybrid                   | David Teixeira     |
-| Mon 11th July 2022  | Zoom                     | Yassmeen Ali       |
-| Mon 4th July 2022   | Zoom (see calendar link) | Julianna Piat      |
-| Mon 27th June 2022  | Zoom (see calendar link) | Leighton Pritchard |
-| Mon 20th June 2022  | CANCELLED                | CANCELLED          |
-| Mon 13th June 2022  | Zoom (see calendar link) | Angelika Kiepas    |
-| Mon 6th June 2022   | Zoom (see calendar link) | Emma Hobbs         |
+|          Date           |         Location         |      Speaker       |
+| :---------------------: | :----------------------: | :----------------: |
+| Tue 26th September 2022 |       HW324/Hybrid       |     Emma Hobbs     |
+| Mon 12th September 2022 |          Hybrid          |   Project Recaps   |
+| Mon 5th September 2022  |          Hybrid          |     CANCELLED      |
+|  Mon 29th August 2022   |          Hybrid          |     Emma Hobbs     |
+|   Tue 2nd August 2022   |          Hybrid          |    Areej Obaid     |
+|   Mon 25th July 2022    | Zoom (see calendar link) |     Nora Novak     |
+|   Tue 19th July 2022    |          Hybrid          |   David Teixeira   |
+|   Mon 11th July 2022    |           Zoom           |    Yassmeen Ali    |
+|    Mon 4th July 2022    | Zoom (see calendar link) |   Julianna Piat    |
+|   Mon 27th June 2022    | Zoom (see calendar link) | Leighton Pritchard |
+|   Mon 20th June 2022    |        CANCELLED         |     CANCELLED      |
+|   Mon 13th June 2022    | Zoom (see calendar link) |  Angelika Kiepas   |
+|    Mon 6th June 2022    | Zoom (see calendar link) |     Emma Hobbs     |
 
 ### Future Meeting Schedule
 
 This schedule is tentative - if you cannot attend a meeting where you are scheduled to present, please contact Leighton as early as possible.
 
-| Date                     | Location                 | Speaker            |
-|:------------------------:|:------------------------:|:------------------:|
-| Mon 19th September 2022  | Hybrid                   | TBC                |
-| Tue 26th September 2022  | Hybrid                   | TBC                |
-| Mon 3rd October 2022  | Hybrid                   | TBC                |
-| Mon 11th October 2022  | Hybrid                   | TBC                |
-| Mon 17th October 2022  | Hybrid                   | TBC                |
+|         Date          |   Location   |     Speaker     |
+| :-------------------: | :----------: | :-------------: |
+| Mon 10th October 2022 | HW323/Hybrid |   Tom Harris    |
+| Mon 17th October 2022 | HW323/Hybrid | Angelika Kiepas |
