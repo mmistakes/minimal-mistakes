@@ -3,3 +3,6 @@ bundle add webrick
 bundle exec jekyll serve --trace
 
 https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+
+
+나의 소개 웹페이지 꾸미기 -> 테그 연결, 자동으로 hide

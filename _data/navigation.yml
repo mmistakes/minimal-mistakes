@@ -1,11 +1,32 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
+  - title: "🗣자기소개 "
     url: /introduce/
-  - title: "카테고리"
+  - title: " 📖개요 "
     url: /archive-layout-with-content/
-  - title: "테그"
+  - title: " 🎯공부 "
     url: /tags/
+  - title: "                                                                           "
+    url: /
+  - title: "            "
+    url: /
+  - title: "                                                                           "
+    url: /
+  - title: "            "
+    url: /
+  - title: "                                                                           "
+    url: /
+  - title: "            "
+    url: /
+  - title: "                                                                           "
+    url: /
+  - title: "            "
+    url: /
+  - title: "                                                                           "
+    url: /
+
+
+
   #  - title: "/search/"
   #    url: /search/
   # - title: "Sitemap"
