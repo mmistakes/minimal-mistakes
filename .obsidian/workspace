@@ -61,7 +61,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5
+    "width": 324.5,
+    "collapsed": true
   },
   "right": {
     "id": "084c1a1a0617b971",
@@ -131,8 +132,8 @@
   "active": "665d4c32ae4d3335",
   "lastOpenFiles": [
     "_posts/2022-09-30-pytorch10.md",
-    "images/image2.png",
     "_posts/Untitled.md",
+    "images/image2.png",
     "images/Pasted image 20221003182430.png",
     "screenshot.png",
     "screenshot-layouts.png",
