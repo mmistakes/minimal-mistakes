@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "665d4c32ae4d3335",
+        "id": "c658ec9d04e90a66",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/Untitled.md",
+            "file": "_posts/2022-09-19-AI_Math_12.md",
             "mode": "source",
             "source": false
           }
@@ -61,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5,
-    "collapsed": true
+    "width": 202.5
   },
   "right": {
     "id": "084c1a1a0617b971",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/Untitled.md",
+                "file": "_posts/2022-09-19-AI_Math_12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/Untitled.md",
+                "file": "_posts/2022-09-19-AI_Math_12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/Untitled.md"
+                "file": "_posts/2022-09-19-AI_Math_12.md"
               }
             }
           }
@@ -129,17 +128,17 @@
     "width": 100,
     "collapsed": true
   },
-  "active": "665d4c32ae4d3335",
+  "active": "c658ec9d04e90a66",
   "lastOpenFiles": [
-    "_posts/2022-09-30-pytorch10.md",
-    "_posts/Untitled.md",
-    "images/image2.png",
-    "images/Pasted image 20221003182430.png",
-    "screenshot.png",
-    "screenshot-layouts.png",
-    "().md",
+    "_posts/2022-09-19-Python-2.md",
+    "_posts/2022-09-20-Python-3.md",
+    "_posts/2022-09-20-AI_Math_3.md",
+    "_posts/2022-09-26-Pytorch2.md",
+    "_posts/2022-09-28-Pytorch6.md",
+    "_posts/2022-09-29-Pytorch8.md",
     "README.md",
-    "_posts/2022-09-27-homework1.md",
-    "_posts/2022-09-30-Pytorch9.md"
+    "_posts/2022-10-03-DL-2.md",
+    "2.md",
+    "screenshot.png"
   ]
 }
