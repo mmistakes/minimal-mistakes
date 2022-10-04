@@ -1,0 +1,278 @@
+```python
+import warnings 
+warnings.filterwarnings('ignore')
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
+import time
+
+row_n = len(df2.index)
+col_n = len(df2.columns)
+col_h = int(col_n/2)
+incli_intercept = list()
+for i in range(0,row_n):  
+    #0~10사이의 난수 하나 생성
+    a=tf.Variable(tf.random_uniform([1],0,10,dtype=tf.float32))
+
+    #0~100사이의 난수 하나 생성
+    b=tf.Variable(tf.random_uniform([1],0,100,dtype=tf.float32))
+    sess = tf.Session()
+    sess.run(tf.global_variables_initializer())
+    #print('a={}, b={}'.format(sess.run(a), sess.run(b)))
+    
+    for j in range(1,21):
+        xData = new_df.loc[i][j]
+        yData = df2.loc[i][j]
+    
+    y = a/xData + b
+    
+    #평균 제곱근 오차 공식
+    rmse = tf.sqrt(tf.reduce_mean(tf.square(y-yData)))
+    sess = tf.Session()
+    
+    #경사 하강법 알고리즘을 이용해서 RMSE를 최소로 하는 값을 찾는수식을 만든다.
+    #학습율을 정한다.
+    learning_rate = 0.1
+
+    #GradientDescentOptimizer(학습율)함수로 학습율에 따른 경사 하강
+    #알고리즘을 계산한다.
+    gradient_descent = tf.train.GradientDescentOptimizer(learning_rate).minimize(rmse)   
+    sess.run(tf.global_variables_initializer())
+    
+    for i in range(1051):
+        #gradient_descent에 연산결과가 아닌 수식이 들어가 있다.
+        sess.run(gradient_descent)
+        #if i % 200 ==0:
+            #Epoch => 한번 학습을 의미하는 용어, 
+            #넘파이 배열(아래 예시의 경우'[]'안에 데이터가 하나 들어있다)에서 
+            #서식을 지정해서 꺼내려면 [0]붙여줘야 한다.         
+            #print('Epoch : {0:4d}, RMSE : {1:7.4f}, 기울기 : {2:7.4f}, y절편 : {3:7.4f}' 
+            #      .format(i, sess.run(rmse), sess.run(a)[0], sess.run(b)[0]))
+            #time.sleep(0.25)
+    incli_intercept.append([sess.run(a)[0], sess.run(b)[0]])
+```
+
+
+```python
+#경사하강법 실행후, 자치구별로 구한 기울기&절편값을 출력해본다.
+leng = len(incli_intercept)
+for i in range(leng):
+    print("지치구 : {0}, 기울기 : {1}, 절편 : {2}".format(df2.loc[i][0],incli_intercept[i][0], incli_intercept[i][1]))    
+```
+
+    지치구 : 종로구, 기울기 : 7.756473541259766, 절편 : 0.3182529807090759
+    지치구 : 중구, 기울기 : 2.289456844329834, 절편 : 0.784624457359314
+    지치구 : 용산구, 기울기 : 1.863206386566162, 절편 : 0.5738998651504517
+    지치구 : 성동구, 기울기 : 2.7437825202941895, 절편 : 0.7541283369064331
+    지치구 : 광진구, 기울기 : 0.9793703556060791, 절편 : 0.6251366138458252
+    지치구 : 동대문구, 기울기 : 5.23177433013916, 절편 : 0.6371681690216064
+    지치구 : 중랑구, 기울기 : 5.936285495758057, 절편 : 0.5261245965957642
+    지치구 : 성북구, 기울기 : -0.9613727927207947, 절편 : 0.7985848188400269
+    지치구 : 강북구, 기울기 : 5.965977191925049, 절편 : 0.3557838797569275
+    지치구 : 도봉구, 기울기 : 3.3908543586730957, 절편 : 0.642981767654419
+    지치구 : 노원구, 기울기 : -1.7002034187316895, 절편 : 0.7406853437423706
+    지치구 : 은평구, 기울기 : 5.352941513061523, 절편 : 0.5540100336074829
+    지치구 : 서대문구, 기울기 : 4.961416721343994, 절편 : 0.5014358758926392
+    지치구 : 마포구, 기울기 : 0.30287814140319824, 절편 : 0.6085236072540283
+    지치구 : 양천구, 기울기 : 0.5981001257896423, 절편 : 0.6911709308624268
+    지치구 : 강서구, 기울기 : 1.2118443250656128, 절편 : 0.634680986404419
+    지치구 : 구로구, 기울기 : 0.47866225242614746, 절편 : 0.688422441482544
+    지치구 : 금천구, 기울기 : 8.151782035827637, 절편 : 0.40845873951911926
+    지치구 : 영등포구, 기울기 : 1.1771764755249023, 절편 : 0.888277530670166
+    지치구 : 동작구, 기울기 : 9.039237022399902, 절편 : 0.37202876806259155
+    지치구 : 관악구, 기울기 : 6.237686634063721, 절편 : 0.43456652760505676
+    지치구 : 서초구, 기울기 : 0.49977564811706543, 절편 : 0.7380837202072144
+    지치구 : 강남구, 기울기 : 8.8569974899292, 절편 : 0.2942074239253998
+    지치구 : 송파구, 기울기 : 3.685990810394287, 절편 : 0.5663124322891235
+    지치구 : 강동구, 기울기 : 5.974305629730225, 절편 : 0.523023247718811
+
+```python
+#경사하강법으로 학습한 기울기와, 절편의 값들을 불러오고
+#실제 데이터와 비교해 본다.
+leng = len(incli_intercept)
+
+y_total = []    
+
+for i in range(leng):
+
+    a = incli_intercept[i][0]
+    b = incli_intercept[i][1]
+    
+    xData = []
+    y_real = []       
+    y_t=list()
+    for j in range(21,23):
+        xData.append(new_df.loc[i][j])
+        y_real.append(df2.loc[i][j])            
+
+    for k in range(0,len(xData)):
+        y_t.append([round(y_real[k], 3), round(a/xData[k] + b, 3), round(abs(y_real[k]-(a/xData[k] + b))*100, 3)])
+    y_total.append(y_t)
+        
+res = pd.DataFrame(y_total)
+idx = list(new_df['자치구별(1)'])
+res.insert(0, '자치구', idx)
+res.set_index('자치구', inplace=True)
+res.columns = ['2020년 출산율_실제값_예측값_오차(%)',
+               '2021년 출산율_실제값_예측값_오차(%)']
+res
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+    
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>2020년 출산율_실제값_예측값_오차(%)</th>
+      <th>2021년 출산율_실제값_예측값_오차(%)</th>
+    </tr>
+    <tr>
+      <th>자치구</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>종로구</th>
+      <td>[0.522, 0.554, 3.201]</td>
+      <td>[0.531, 0.554, 2.301]</td>
+    </tr>
+    <tr>
+      <th>중구</th>
+      <td>[0.688, 0.854, 16.621]</td>
+      <td>[0.634, 0.854, 21.958]</td>
+    </tr>
+    <tr>
+      <th>용산구</th>
+      <td>[0.634, 0.63, 0.372]</td>
+      <td>[0.664, 0.629, 3.489]</td>
+    </tr>
+    <tr>
+      <th>성동구</th>
+      <td>[0.783, 0.838, 5.504]</td>
+      <td>[0.764, 0.837, 7.29]</td>
+    </tr>
+    <tr>
+      <th>광진구</th>
+      <td>[0.527, 0.655, 12.841]</td>
+      <td>[0.525, 0.655, 13.022]</td>
+    </tr>
+    <tr>
+      <th>동대문구</th>
+      <td>[0.699, 0.799, 9.989]</td>
+      <td>[0.66, 0.798, 13.79]</td>
+    </tr>
+    <tr>
+      <th>중랑구</th>
+      <td>[0.66, 0.708, 4.85]</td>
+      <td>[0.65, 0.708, 5.766]</td>
+    </tr>
+    <tr>
+      <th>성북구</th>
+      <td>[0.676, 0.769, 9.332]</td>
+      <td>[0.656, 0.769, 11.345]</td>
+    </tr>
+    <tr>
+      <th>강북구</th>
+      <td>[0.55, 0.539, 1.149]</td>
+      <td>[0.541, 0.535, 0.552]</td>
+    </tr>
+    <tr>
+      <th>도봉구</th>
+      <td>[0.601, 0.747, 14.6]</td>
+      <td>[0.579, 0.747, 16.768]</td>
+    </tr>
+    <tr>
+      <th>노원구</th>
+      <td>[0.695, 0.688, 0.663]</td>
+      <td>[0.701, 0.688, 1.271]</td>
+    </tr>
+    <tr>
+      <th>은평구</th>
+      <td>[0.623, 0.717, 9.421]</td>
+      <td>[0.604, 0.716, 11.222]</td>
+    </tr>
+    <tr>
+      <th>서대문구</th>
+      <td>[0.685, 0.654, 3.137]</td>
+      <td>[0.635, 0.652, 1.655]</td>
+    </tr>
+    <tr>
+      <th>마포구</th>
+      <td>[0.594, 0.618, 2.374]</td>
+      <td>[0.587, 0.618, 3.066]</td>
+    </tr>
+    <tr>
+      <th>양천구</th>
+      <td>[0.644, 0.71, 6.557]</td>
+      <td>[0.645, 0.71, 6.452]</td>
+    </tr>
+    <tr>
+      <th>강서구</th>
+      <td>[0.675, 0.672, 0.292]</td>
+      <td>[0.617, 0.672, 5.48]</td>
+    </tr>
+    <tr>
+      <th>구로구</th>
+      <td>[0.737, 0.703, 3.394]</td>
+      <td>[0.737, 0.703, 3.405]</td>
+    </tr>
+    <tr>
+      <th>금천구</th>
+      <td>[0.668, 0.661, 0.677]</td>
+      <td>[0.612, 0.658, 4.575]</td>
+    </tr>
+    <tr>
+      <th>영등포구</th>
+      <td>[0.705, 0.925, 21.967]</td>
+      <td>[0.713, 0.924, 21.117]</td>
+    </tr>
+    <tr>
+      <th>동작구</th>
+      <td>[0.655, 0.648, 0.654]</td>
+      <td>[0.602, 0.648, 4.646]</td>
+    </tr>
+    <tr>
+      <th>관악구</th>
+      <td>[0.474, 0.629, 15.519]</td>
+      <td>[0.437, 0.627, 18.979]</td>
+    </tr>
+    <tr>
+      <th>서초구</th>
+      <td>[0.656, 0.753, 9.723]</td>
+      <td>[0.666, 0.753, 8.705]</td>
+    </tr>
+    <tr>
+      <th>강남구</th>
+      <td>[0.537, 0.561, 2.398]</td>
+      <td>[0.523, 0.559, 3.599]</td>
+    </tr>
+    <tr>
+      <th>송파구</th>
+      <td>[0.665, 0.68, 1.473]</td>
+      <td>[0.623, 0.678, 5.501]</td>
+    </tr>
+    <tr>
+      <th>강동구</th>
+      <td>[0.748, 0.706, 4.172]</td>
+      <td>[0.797, 0.705, 9.183]</td>
+    </tr>
+  </tbody>
+</table>
+</div>
