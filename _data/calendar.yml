@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Unterrichtsfrei",
-    "title": "Unterrichtsfrei",
-    "excerpt": "Feiertag",
-    "url": "https://www.google.com/calendar/event?eid=dm8wbmo2ZDF2Mmx1Zjd0bDEwMGNqZHFlaGcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2022-10-03",
-      "date_time": null
-    },
-    "end": {
-      "date": "2022-10-04",
-      "date_time": null
-    },
-    "created": "2022-09-21T19:36:45.000Z",
-    "updated": "2022-09-21T19:36:45.773Z"
-  },
-  {
-    "image_path": null,
     "alt": "Personalversammlung der Lehrkräfte und des Horts",
     "title": "Personalversammlung der Lehrkräfte und des Horts",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2022-09-21T19:25:22.000Z",
     "updated": "2022-09-21T19:25:22.312Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Herbstferien",
+    "title": "Herbstferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=dW41amE3ZDUwdG91c2Fiamw4ZGYwcGFjZG8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2022-10-24",
+      "date_time": null
+    },
+    "end": {
+      "date": "2022-11-05",
+      "date_time": null
+    },
+    "created": "2022-09-05T19:44:15.000Z",
+    "updated": "2022-09-05T19:44:15.209Z"
   }
 ]
