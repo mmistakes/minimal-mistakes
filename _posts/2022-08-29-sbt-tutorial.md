@@ -564,7 +564,7 @@ Next, we need to restart SBT to get these changes to effect. Then run the comman
 If we want to pass multiple javaOptions, we need to use a Seq as:
 ```scala
 addCommandAlias(
-  "runSpecial",
+  "runSpecial2",
   "; set ThisBuild/javaOptions ++= Seq(\"-Dport=4567\", \"-Duser=rockthejvm\"); run"
 )
 ```
