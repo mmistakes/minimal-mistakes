@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Today, I Learned"
+title                    : "오늘의 "
 title_separator          : "-"
 subtitle                 : #
 name                     : "Jaeyoung Jung"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Jaeyoung Jung"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "오늘의 파란 기록"
+  bio              : ""
   location         : "South Korea"
   email            :
   links:
