@@ -1,14 +1,7 @@
 # main links
 main:
   - title: "TIL"
-    sublinks:
-      - title: "Monthly, I Learned"
-        url: /monthly-il/
-      - title: "Weekend, I Learned"
-        url: /weekend-il/
-      - title: "Books, I Learned"
-        url: /books-il/
-        
+    url: /til/
   - title: "Category"
     url: /categories/
   - title: "Tag"
