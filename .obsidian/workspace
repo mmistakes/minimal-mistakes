@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2022-10-05-DL6.md",
+            "file": "_posts/2022-10-04-DL4.md",
             "mode": "source",
             "source": false
           }
@@ -61,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.5
+    "width": 234.5
   },
   "right": {
     "id": "084c1a1a0617b971",
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-10-05-DL6.md",
+                "file": "_posts/2022-10-04-DL4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-10-05-DL6.md",
+                "file": "_posts/2022-10-04-DL4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-10-05-DL6.md"
+                "file": "_posts/2022-10-04-DL4.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "5b374ced453c1c8b",
   "lastOpenFiles": [
-    "_posts/2022-10-05-Visual2.md",
-    "_posts/2022-10-03-Visual1.md",
-    "_posts/2022-10-05-DL6.md",
-    "_posts/2022-10-05-daily.md",
-    "_posts/2022-10-04-daily.md",
     "_posts/2022-10-05-DL5.md",
-    "_posts/2022-10-04-DL4.md",
-    "_posts/2022-10-03-DL-1.md",
-    "_posts/2022-10-03-DL-2.md",
-    "_posts/2022-10-04-DL3.md"
+    "_posts/2022-10-05-DL7.md",
+    "_posts/2022-10-05-Visual2.md",
+    "_posts/2022-09-20-Python-3.md",
+    "_posts/2022-09-20-Python-4.md",
+    "_posts/2022-09-21-Python-5.md",
+    "_posts/2022-09-22-Python-6.md",
+    "_posts/2022-09-23-Python-7.md",
+    "_posts/2022-09-24-Python-7-2.md",
+    "_posts/2022-09-20-AI_Math_3.md"
   ]
 }
