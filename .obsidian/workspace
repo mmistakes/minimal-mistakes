@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "c658ec9d04e90a66",
+        "id": "5b374ced453c1c8b",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2022-10-03-DL-1.md",
+            "file": "_posts/2022-10-04-DL4.md",
             "mode": "source",
             "source": false
           }
@@ -61,7 +61,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.5
+    "width": 202.5,
+    "collapsed": true
   },
   "right": {
     "id": "084c1a1a0617b971",
@@ -77,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-10-03-DL-1.md",
+                "file": "_posts/2022-10-04-DL4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-10-03-DL-1.md",
+                "file": "_posts/2022-10-04-DL4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-10-03-DL-1.md"
+                "file": "_posts/2022-10-04-DL4.md"
               }
             }
           }
@@ -128,17 +129,17 @@
     "width": 100,
     "collapsed": true
   },
-  "active": "c658ec9d04e90a66",
+  "active": "5b374ced453c1c8b",
   "lastOpenFiles": [
-    "_posts/2022-09-30-pytorch10.md",
     "_posts/2022-10-03-DL-1.md",
     "_posts/2022-10-03-DL-2.md",
-    "_posts/2022-09-19-AI_Math_12.md",
-    "_posts/2022-09-19-Python-2.md",
-    "_posts/2022-09-20-Python-3.md",
-    "_posts/2022-09-20-AI_Math_3.md",
-    "_posts/2022-09-26-Pytorch2.md",
-    "_posts/2022-09-28-Pytorch6.md",
-    "_posts/2022-09-29-Pytorch8.md"
+    "_posts/2022-10-03-Visualization1.md",
+    "_posts/2022-10-04-DL4.md",
+    "_posts/2022-10-04-DL3.md",
+    "_posts/2022-10-04-daily.md",
+    "Pasted image 20221004113100.png",
+    "_posts/2022-09-29-daily.md",
+    "docs.md",
+    "CHANGELOG.md"
   ]
 }
