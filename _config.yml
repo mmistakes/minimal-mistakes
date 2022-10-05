@@ -15,10 +15,10 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 title                    : "Today, I Learned"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : #
 name                     : "Jaeyoung Jung"
 description              : "사부작 사부작 공부 기록하는 blog"
 url                      : "https://j-jae0.github.io/"
@@ -106,8 +106,8 @@ analytics:
 author:
   name             : "Jaeyoung Jung"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Gumi, Republic of Korea"
+  bio              : "오늘의 기록"
+  location         : "South Korea"
   email            :
   links:
     - label: "Email"
