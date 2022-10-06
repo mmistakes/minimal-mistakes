@@ -68,6 +68,13 @@
                     {% endif %}
                 {% endfor %}
             </ul> 
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Web1" %}
+                        <li><a href="/categories/web1" class="">웹프로그래밍1({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul> 
       </li>
       <li>	
             <br>      
