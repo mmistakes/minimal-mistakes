@@ -1,6 +1,6 @@
 ---
 title: "Wprowadzenie do programowania w języku Python"
-excerpt: "Kurs dla osób początkujących, bez wcześniejszego doświadczenia w programowaniu"
+permalink: /courses_in_polish/wprowadzenie_do_programowania_w_jezyku_python/
 toc: true
 toc_sticky: true
 ---

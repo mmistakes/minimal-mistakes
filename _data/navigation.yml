@@ -2,8 +2,10 @@
 main:
   # - title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "Courses"
-    url: /courses/
+  - title: "Courses in English"
+    url: /courses_in_english/
+  - title: "Courses in Polish"
+    url: /courses_in_polish/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

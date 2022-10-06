@@ -1,16 +1,19 @@
 ---
 title: "Introduction to Programming in Python"
-excerpt: "Introductory course for people who have no programming experience"
+layout: single
+permalink: /courses_in_english/introduction_to_programming_in_python/
+toc: true
+toc_sticky: true
 ---
 
 Welcome! In this course, you will learn the basics of programming in Python. This course is divided into the following 6 modules:
 
-1. [Variables and Constants](#variables-and-constants)
-2. [Functions](#functions)
-3. [Conditional Statements](#conditional-statements)
-4. [Loops and Iterables](#loops-and-iterables)
-5. [Lists and Dictionaries](#lists-and-dictionaries)
-6. [Importing](#importing)
+- [1. Variables and Constants](#1-variables-and-constants)
+- [2. Functions](#2-functions)
+- [3. Conditional Statements](#3-conditional-statements)
+- [4. Loops and Iterables](#4-loops-and-iterables)
+- [5. Lists and Dictionaries](#5-lists-and-dictionaries)
+- [6. Importing](#6-importing)
 
 Each module contains a main notebook, as well as several videos. The content of the notebooks and videos is roughly the same. In fact, the videos consist of one of the course instructors going through the main notebook in a thorough manner, while also providing extra examples. Depending on your preference, you can either watch the videos or read the main notebook by yourself (you can also do both, it is entirely up to you).  Aside from the main notebook, each module also has additional notebooks, which contain exercises that should be completed and uploaded to [Gradescope](), if you are officially enrolled in the course.
 
