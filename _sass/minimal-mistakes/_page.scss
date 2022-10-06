@@ -2,6 +2,14 @@
    SINGLE PAGE/POST
    ========================================================================== */
 
+.page__content {
+    text-align: justify;
+}
+
+.sidebar__right {
+    text-align: left;
+}
+
 #main {
   @include clearfix;
   margin-left: auto;
