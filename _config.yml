@@ -104,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Mateusz Wyszynski"
+  name             : # "Mateusz Wyszynski"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "This was the default bio, but I kind of agree, so: 'I am an **amazing** person.'"
-  location         : "Somewhere"
+  bio              : # "This was the default bio, but I kind of agree, so: 'I am an **amazing** person.'"
+  location         : # "Somewhere"
   email            :
   links:
     - label: "Email"
@@ -276,6 +276,8 @@ compress_html:
   ignore:
     envs: development
 
+collections_dir: my_collections
+
 # Collections
 collections:
   courses:
@@ -290,7 +292,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: # true
       share: true
@@ -301,13 +303,13 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
   # _courses
   - scope:
       path: ""
       type: courses
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
       comment: true
