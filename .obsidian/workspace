@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "5b374ced453c1c8b",
+        "id": "54d35f586e2334ad",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2022-10-06-daily.md",
+            "file": "_posts/2022-10-06-DL8.md",
             "mode": "source",
             "source": false
           }
@@ -61,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 234.5,
-    "collapsed": true
+    "width": 234.5
   },
   "right": {
     "id": "084c1a1a0617b971",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-10-06-daily.md",
+                "file": "_posts/2022-10-06-DL8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-10-06-daily.md",
+                "file": "_posts/2022-10-06-DL8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-10-06-daily.md"
+                "file": "_posts/2022-10-06-DL8.md"
               }
             }
           }
@@ -129,17 +128,17 @@
     "width": 100,
     "collapsed": true
   },
-  "active": "5b374ced453c1c8b",
+  "active": "54d35f586e2334ad",
   "lastOpenFiles": [
-    "_posts/2022-10-06-DL8.md",
-    "_posts/2022-10-05-daily.md",
     "_posts/2022-10-06-daily.md",
-    "_posts/2022-10-05-DL7.md",
-    "_posts/2022-10-05-DL6.md",
-    "_posts/2022-10-04-daily.md",
+    "_posts/2022-10-06-DL8.md",
     "_posts/2022-10-04-DL4.md",
+    "_posts/2022-10-05-daily.md",
+    "_posts/2022-10-05-DL6.md",
+    "_posts/2022-10-05-DL7.md",
+    "images/2022-10-06-DL8/image-20221006144039635.png",
+    "_posts/2022-10-04-daily.md",
     "_posts/2022-10-05-DL5.md",
-    "_posts/2022-09-20-Python-3.md",
-    "_posts/2022-09-20-Python-4.md"
+    "_posts/2022-09-20-Python-3.md"
   ]
 }
