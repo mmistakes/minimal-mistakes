@@ -11,12 +11,14 @@ main:
   
     
 docs:
-  - title: "목차"
+  - title: "Today, I Learned"
     children:
-      - title: "Category"
-        url: /categories/
-      - title: "Tag"
-        url: /tags/
+      - title: "Monthly, I Learned"
+        url: /monthly-il/
+      - title: "Weekend, I Learned"
+        url: /weekend-il/
+      - title: "Books, I Learned"
+        url: /books-il/
         
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
