@@ -1,5 +1,5 @@
 ---
-title: Courses offered in English
+title: Courses in English
 layout: single
 permalink: /courses_in_english/
 ---

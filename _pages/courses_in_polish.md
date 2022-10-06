@@ -1,5 +1,5 @@
 ---
-title: Courses offered in Polish
+title: Courses in Polish
 layout: single
 permalink: /courses_in_polish/
 ---
