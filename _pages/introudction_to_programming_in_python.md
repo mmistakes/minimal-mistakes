@@ -6,6 +6,9 @@ toc: true
 toc_sticky: true
 ---
 
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop()</script>
+
 Welcome! In this course, you will learn the basics of programming in Python. This course is divided into the following 6 modules:
 
 - [1. Variables and Constants](#1-variables-and-constants)

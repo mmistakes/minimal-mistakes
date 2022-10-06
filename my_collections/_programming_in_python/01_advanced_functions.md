@@ -5,6 +5,9 @@ toc: true
 toc_sticky: true
 ---
 
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop()</script>
+
 - [1. Function basics](#1-function-basics)
 - [2. No `return` functions](#2-no-return-functions)
   - [2.1. NoneType](#21-nonetype)

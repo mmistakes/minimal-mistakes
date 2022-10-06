@@ -5,6 +5,9 @@ toc: true
 toc_sticky: true
 ---
 
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop()</script>
+
 - [1. Strings](#1-strings)
   - [1.1. Defining a string](#11-defining-a-string)
   - [1.2. EX. 1 - no points, no grader](#12-ex-1---no-points-no-grader)
@@ -620,4 +623,4 @@ Code a function `is_number(string)`, which will check if the provided `string` i
 
 Code a function `abbreviation(list_of_strings)`, which will create an abbreviation of words provided in a list. The function returns the first and the last character of the word as well as its length in a list, e.g. for`['Lazarski','University']` function will return:
 
-   ['L - i (8)', 'U - y (10)']
+['L - i (8)', 'U - y (10)']

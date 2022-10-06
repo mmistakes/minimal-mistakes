@@ -6,6 +6,9 @@ toc: true
 toc_sticky: true
 ---
 
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop()</script>
+
 Welcome to the Mathematics for Economics course! You will find here all the materials from our Youtube channel.
 
 - [1. Classification of numbers](#1-classification-of-numbers)

@@ -5,6 +5,9 @@ toc: true
 toc_sticky: true
 ---
 
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop()</script>
+
 Witamy! W tym kursie nauczysz się podstaw programowania w języku Python. Kurs ten jest podzielony na 6 modułów:
 
 - [1. Zmienne i Stałe](#1-zmienne-i-stałe)
