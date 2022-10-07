@@ -16,6 +16,7 @@ jobs:
       uses: actions/checkout@v2
       with: 
           repository: cschindlbeck/cv
+          ref: refs/heads/main
     - name: Build Resume
       run: |
         ./latexdockercmd.sh pdflatex resume_cschindlbeck.tex
