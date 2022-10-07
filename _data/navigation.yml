@@ -18,6 +18,8 @@ docs:
        url: /categories/
      - title: "Small Project"
        url: /categories/small_project/
+     - title: "Machine Learning"
+       url: /categories/machine_learning/
      - title: "Coding"
        url: /categories/coding/
      - title: "Testing"
