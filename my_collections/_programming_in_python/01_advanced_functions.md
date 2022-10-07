@@ -8,33 +8,6 @@ toc_sticky: true
 <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
 <script>addBackToTop()</script>
 
-- [1. Function basics](#1-function-basics)
-- [2. No `return` functions](#2-no-return-functions)
-  - [2.1. NoneType](#21-nonetype)
-  - [2.2. `return None`](#22-return-none)
-  - [2.3. Function without `return`](#23-function-without-return)
-- [3. Global Variables](#3-global-variables)
-- [4. Keywords & Default parameters](#4-keywords--default-parameters)
-  - [4.1. Keywords](#41-keywords)
-  - [4.2. Default parameters](#42-default-parameters)
-- [5. Arbitrary Number of Arguments](#5-arbitrary-number-of-arguments)
-- [6. A Function in a Function?](#6-a-function-in-a-function)
-  - [6.1. Recursion](#61-recursion)
-  - [6.2. A Function in a Function](#62-a-function-in-a-function)
-- [7. Exercises](#7-exercises)
-  - [7.1. Ex. 1 (1 point)](#71-ex-1-1-point)
-  - [7.2. Ex. 2 (1 point)](#72-ex-2-1-point)
-  - [7.3. Ex.3 (2 points)](#73-ex3-2-points)
-  - [7.4. Ex.4 (3 points)](#74-ex4-3-points)
-  - [7.5. Ex.5 (3 points)](#75-ex5-3-points)
-- [8. Appendix](#8-appendix)
-  - [8.1. Syntactic Sugar in Python](#81-syntactic-sugar-in-python)
-  - [8.2. Useful hyperlinks](#82-useful-hyperlinks)
-
-
----
----
-
 ## 1. Function basics 
 In this module, you will learn more information about Python functions. Up to this moment you should know how to define a function, as well as how the function construction looks like. So far, you have defined a function like this:
 
