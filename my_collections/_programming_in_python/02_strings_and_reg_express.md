@@ -8,42 +8,6 @@ toc_sticky: true
 <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
 <script>addBackToTop()</script>
 
-- [1. Strings](#1-strings)
-  - [1.1. Defining a string](#11-defining-a-string)
-  - [1.2. EX. 1 - no points, no grader](#12-ex-1---no-points-no-grader)
-  - [1.3. Special characters](#13-special-characters)
-- [2. Basic String Operations](#2-basic-string-operations)
-  - [2.1. Concatenation](#21-concatenation)
-  - [2.2. String multiplication](#22-string-multiplication)
-- [3. Print() upper-level](#3-print-upper-level)
-  - [3.1. EX. 2 - no points, no grader](#31-ex-2---no-points-no-grader)
-- [4. How to Index and Slice Strings](#4-how-to-index-and-slice-strings)
-  - [4.1. Index](#41-index)
-  - [4.2. Slicing](#42-slicing)
-  - [4.3. Can you modify strings?](#43-can-you-modify-strings)
-- [5. Looping Over a String](#5-looping-over-a-string)
-- [6. Logical Operations on Strings](#6-logical-operations-on-strings)
-  - [6.1. Greater or Less Than](#61-greater-or-less-than)
-- [7. Built-in string functions](#7-built-in-string-functions)
-  - [7.1. String Methods](#71-string-methods)
-- [8. Regular expressions](#8-regular-expressions)
-  - [8.1. Greedy](#81-greedy)
-- [9. Exercises](#9-exercises)
-  - [9.1. EX. 3 (0.5 point)](#91-ex-3-05-point)
-  - [9.2. EX. 4 (0.5 point)](#92-ex-4-05-point)
-  - [9.3. EX. 5 (0.5 point)](#93-ex-5-05-point)
-  - [9.4. EX. 6 (0.5 point)](#94-ex-6-05-point)
-  - [9.5. EX. 7 (1 point)](#95-ex-7-1-point)
-  - [9.6. EX. 8 (3 point)](#96-ex-8-3-point)
-  - [9.7. EX. 9 (1 point)](#97-ex-9-1-point)
-  - [9.8. EX. 10 (1 point)](#98-ex-10-1-point)
-  - [9.9. EX. 11 (1 point)](#99-ex-11-1-point)
-  - [9.10. EX. 12 (1 point)](#910-ex-12-1-point)
-
-
----
----
-
 ## 1. Strings
 
 Quick remainder: `string` is a sequence of characters. These characters are stored in a computer memory as bytes that represent unicode characters. In Python, there is no character data type, so even a single character is a string of length 1. 
