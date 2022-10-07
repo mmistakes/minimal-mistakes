@@ -1,18 +1,13 @@
-**Data Types**
-
-1. [Introduction](#1-introduction)
-2. [Tuples](#2-tuples)
-3. [When to use Tuples?](#3-when-to-use-tuples)
-4. [Some Definitions](#4-some-definitions)
-    1. [Object](#41-object)
-    2. [Identity](#42-identity)
-    3. [Type](#43-type)
-    4. [Value](#44-value)
-5. [Mutable vs. Immutable Data Types](#5-mutable-vs-immutable-data-types)
-    1. [Examples of Immutable Data Types](#51-examples-of-immutable-data-types)
-
 ---
+title: "Data Types"
+excerpt: "You will learn the difference between mutable and immutable objects"
+toc: true
+toc_sticky: true
 ---
+
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop()</script>
+
 ## **1. Introduction**
 You have most likely already heard phrases like "_strings are immutable_", "_lists are mutable_" or "_we cannot change elements of a string_". So far we have not spent much time explaining what exactly we mean by that. The reason was simple - you had to learn basics to understand the difference between mutable and immutable objects. But now you know quite a bit. Hence it's a good time to understand what's the difference between these two types of data.
 
