@@ -10,27 +10,18 @@ toc_sticky: true
 
 Witamy! W tym kursie nauczysz się podstaw programowania w języku Python. Kurs ten jest podzielony na 6 modułów:
 
-- [1. Zmienne i Stałe](#1-zmienne-i-stałe)
-- [2. Funkcje](#2-funkcje)
-- [3. Instrukcje Warunkowe](#3-instrukcje-warunkowe)
-- [4. Pętle i Iteratory](#4-pętle-i-iteratory)
-- [5. Listy i Słowniki](#5-listy-i-słowniki)
-- [6. Importowanie](#6-importowanie)
-
-Każdy moduł zawiera tak zwany główny "notebook" oraz kilka filmów. Zawartość notebooków i filmów jest mniej więcej taka sama. W rzeczywistości, w filmach jeden z instruktorów kursu przechodzi przez główny notebook, omawiając go dokładnie i podając dodatkowe przykłady. W zależności od Twoich preferencji, możesz albo oglądać filmy, albo samodzielnie przechodzić przez główne notebooki (możesz też robić obie te rzeczy, to zależy od Ciebie).  Oprócz głównego notebooka, każdy moduł posiada również dodatkowe notebooki, zawierające zadania, które należy wykonać i przesłać na platformę [Gradescope](), jeżeli jesteś oficjalnym uczestnikiem kursu.
+Każdy moduł zawiera tak zwany główny "notebook" oraz kilka filmów. Aby zobaczyć wszystkie filmy związane z danym tematem z pozycji tej storny, wystarczy że w prawym górnym rogu okna z filmem klikniesz w `Playlista`. Zawartość notebooków i filmów jest mniej więcej taka sama. W rzeczywistości, w filmach jeden z instruktorów kursu przechodzi przez główny notebook, omawiając go dokładnie i podając dodatkowe przykłady. W zależności od Twoich preferencji, możesz albo oglądać filmy, albo samodzielnie przechodzić przez główne notebooki (możesz też robić obie te rzeczy, to zależy od Ciebie).  Oprócz głównego notebooka, każdy moduł posiada również dodatkowe notebooki, zawierające zadania, które należy wykonać i przesłać na platformę [Gradescope](https://www.gradescope.com/), jeżeli jesteś oficjalnym uczestnikiem kursu.
 
 <a id='zmienne-i-stałe'></a>
 # 1. Zmienne i Stałe
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=CdBT4Ub6CRI,Ya7SsIVMXTk,3TIpGDM1i4s,fDVtfJJO7Ic,c0k9mBbukBY,DerEj07SKI4,52IM0KyWMf8,YjEDWH9f02o," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=NXeApucP8Zc,qevFPA2p0Jg,hDn2COfUav4,XjdIjGJRK1o,x9VCSCsneZQ,6DkZz9f23pc,LD_K0A36jZQ,t0AD6xc_3Z4," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Główny Notebook**:
 
 * [Zmienne i Stałe](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/01_variables_and_constants/pl/zmienne_i_stałe.ipynb)
 
-**Filmy:**
-
-- 
+Pamiętaj o rozwinięciu całej playlisty poświęconej temu tematowi, klikając w prawym górnym rogu okienka z filmem w `Playlista`!
 
 **Zadania:**
 
@@ -39,15 +30,13 @@ Każdy moduł zawiera tak zwany główny "notebook" oraz kilka filmów. Zawarto�
 
 <a id='funkcje'></a>
 # 2. Funkcje
-<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=H4DwGqQYhu0,4a7Jy0dV4y0," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Główny Notebook**:
 
 * [Funkcje](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/02_functions/pl/funkcje.ipynb)
 
-**Filmy:**
-
-- 
+Pamiętaj o rozwinięciu całej playlisty poświęconej temu tematowi, klikając w prawym górnym rogu okienka z filmem w `Playlista`!
 
 **Zadania:**
 
@@ -58,15 +47,13 @@ Każdy moduł zawiera tak zwany główny "notebook" oraz kilka filmów. Zawarto�
 <a id='instrukcje-warunkowe'></a>
 # 3. Instrukcje Warunkowe
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=4HTSGGFdTCI,T-8fqEGvv-Y,34tH8_xr3Ps,ynW9gRGEd6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Główny Notebook**:
 
 * [Instrukcje Warunkowe](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/03_conditional_statements/pl/instrukcje_warunkowe.ipynb)
 
-**Filmy:**
-
-- 
+Pamiętaj o rozwinięciu całej playlisty poświęconej temu tematowi, klikając w prawym górnym rogu okienka z filmem w `Playlista`!
 
 **Zadania:**
 
@@ -83,9 +70,7 @@ Course lectures - you can choose relevant Filmy from the playlist in the upper r
 
 * [Pętle i Iteratory](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/04_loops_and_iterables/pl/pętle_i_iteratory.ipynb)
 
-**Filmy:**
-
-- 
+Pamiętaj o rozwinięciu całej playlisty poświęconej temu tematowi, klikając w prawym górnym rogu okienka z filmem w `Playlista`!
 
 **Zadania:**
 
@@ -103,9 +88,7 @@ Course lectures - you can choose relevant Filmy from the playlist in the upper r
 
 * [Listy i Słowniki](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/05_lists_and_dictionaries/pl/listy_i_słowniki.ipynb)
 
-**Filmy:**
-
-- 
+Pamiętaj o rozwinięciu całej playlisty poświęconej temu tematowi, klikając w prawym górnym rogu okienka z filmem w `Playlista`!
 
 **Zadania:**
 
@@ -124,9 +107,7 @@ Course lectures - you can choose relevant Filmy from the playlist in the upper r
 
 * [Importowanie](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/06_importing/pl/importowanie.ipynb)
 
-**Filmy:**
-
-- 
+Pamiętaj o rozwinięciu całej playlisty poświęconej temu tematowi, klikając w prawym górnym rogu okienka z filmem w `Playlista`!
 
 **Zadania:**
 
