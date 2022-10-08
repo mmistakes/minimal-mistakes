@@ -285,6 +285,9 @@ collections:
   programming_in_python:
     output: true
     permalink: /courses_in_english/:collection/:path/
+  mathematics_for_economics:
+    output: true
+    permalink: /courses_in_english/:collection/:path/
 
 # Defaults
 defaults:
@@ -310,6 +313,15 @@ defaults:
   - scope:
       path: ""
       type: programming_in_python
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      comment: false
+  # _mathematics_for_economics
+  - scope:
+      path: ""
+      type: mathematics_for_economics
     values:
       layout: single
       author_profile: false
