@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2022-10-09-Visual2-2.md",
+            "file": "_posts/2022-10-09-Visual2-3.md",
             "mode": "source",
             "source": false
           }
@@ -61,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 234.5,
-    "collapsed": true
+    "width": 234.5
   },
   "right": {
     "id": "084c1a1a0617b971",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-10-09-Visual2-2.md",
+                "file": "_posts/2022-10-09-Visual2-3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-10-09-Visual2-2.md",
+                "file": "_posts/2022-10-09-Visual2-3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-10-09-Visual2-2.md"
+                "file": "_posts/2022-10-09-Visual2-3.md"
               }
             }
           }
@@ -131,15 +130,15 @@
   },
   "active": "54d35f586e2334ad",
   "lastOpenFiles": [
-    "_posts/2022-10-08-Visual2.md",
     "_posts/2022-10-09-Visual2-2.md",
+    "_posts/2022-10-09-Visual2-3.md",
+    "_posts/2022-10-08-Visual2.md",
     "_posts/2022-10-07-Officehour.md",
     "_posts/2022-10-03-Visual1.md",
     "_posts/2022-10-07-DL9.md",
     "_posts/2022-10-07-daily.md",
     "Untitled 1.md",
     "_posts/2022-10-03-DL-2.md",
-    "_posts/2022-09-27-Daily.md",
-    "_posts/2022-10-06-daily.md"
+    "_posts/2022-09-27-Daily.md"
   ]
 }
