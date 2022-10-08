@@ -8,7 +8,7 @@ toc_sticky: true
 <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
 <script>addBackToTop()</script>
 
-Exercises for this chapter: <a href="lazarskiopencourses.github.io/courses/mathematics_for_economics/math_basics.pdf" target="_blank">PDF.</a>
+Exercises for this chapter: <a href="https://lazarskiopencourses.github.io/courses/mathematics_for_economics/math_basics.pdf" target="_blank">PDF.</a>
 
 # Basics
 
