@@ -12,11 +12,11 @@ Exercises for this chapter: <a href="lazarskiopencourses.github.io/courses/mathe
 
 # Basics
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=OpswnzlvVVc,t_5ObzMpEvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=OpswnzlvVVc,t_5ObzMpEvo," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Functions
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=klgK7E03cVo,KtVa6kDaLa0,8rF2Or3EiJ0,1Dhdw5fkQBU,kjMfiB0AISo,zuj_-ugJJfo,SdSIq6RImjM,RJDqa1LUQzk,qD7d9JL0UEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=klgK7E03cVo,KtVa6kDaLa0,8rF2Or3EiJ0,1Dhdw5fkQBU,kjMfiB0AISo,zuj_-ugJJfo,SdSIq6RImjM,RJDqa1LUQzk,qD7d9JL0UEs," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Logics
 
