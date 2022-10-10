@@ -1,3 +1,4 @@
 {
-  "promptDelete": false
+  "promptDelete": false,
+  "attachmentFolderPath": "_posts"
 }

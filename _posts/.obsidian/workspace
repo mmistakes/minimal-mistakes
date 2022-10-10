@@ -1,33 +1,29 @@
 {
   "main": {
-    "id": "c3f536baab79b38d",
+    "id": "e631e69bfa17a2a0",
     "type": "split",
     "children": [
       {
-        "id": "54d35f586e2334ad",
+        "id": "04210cede17c49e5",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "_posts/2022-10-10-RecSys1.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "25d53172520716c7",
+    "id": "527288b7ef83cd0b",
     "type": "split",
     "children": [
       {
-        "id": "dfd81f2b253964b8",
+        "id": "8bc97d5ea1006c68",
         "type": "tabs",
         "children": [
           {
-            "id": "22ab413675b3e5f9",
+            "id": "20e367a904c11103",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -35,7 +31,7 @@
             }
           },
           {
-            "id": "921706c4d04925a0",
+            "id": "294716159b079ca2",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -50,7 +46,7 @@
             }
           },
           {
-            "id": "b0c6679dc1e16c30",
+            "id": "07782a3a5178600b",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -61,24 +57,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 234.5,
-    "collapsed": true
+    "width": 300
   },
   "right": {
-    "id": "084c1a1a0617b971",
+    "id": "2cd509842f346b05",
     "type": "split",
     "children": [
       {
-        "id": "639780039edb7fc6",
+        "id": "eb3c81f489e5175d",
         "type": "tabs",
         "children": [
           {
-            "id": "d13398f344c37acc",
+            "id": "1c306176af6bdebd",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-10-10-RecSys1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,19 +84,18 @@
             }
           },
           {
-            "id": "5904a4be4eba28db",
+            "id": "a37569460308c985",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-10-10-RecSys1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "7742e68f28ddaf88",
+            "id": "2e028b387e9dfc67",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -113,33 +106,23 @@
             }
           },
           {
-            "id": "135a02709c7d0452",
+            "id": "4a34d997f997e218",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "_posts/2022-10-10-RecSys1.md"
-              }
+              "state": {}
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 100,
+    "width": 300,
     "collapsed": true
   },
-  "active": "22ab413675b3e5f9",
+  "active": "04210cede17c49e5",
   "lastOpenFiles": [
-    "_posts/2022-10-09-Visual2-2.md",
-    "_posts/2022-10-09-Visual3-2.md",
-    "_posts/2022-10-09-Visual3-1.md",
-    "_posts/2022-10-09-Visual2-3.md",
-    "_posts/2022-10-10-RecSys1.md",
-    "_posts/2022-09-19-first.md",
-    "docs.md",
-    "CHANGELOG.md",
-    "screenshot-layouts.png",
-    "screenshot.png"
+    "2022-10-06-DL8.md",
+    "2022-10-10-RecSys1.md"
   ]
 }
