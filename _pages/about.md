@@ -7,7 +7,7 @@ header:
   #overlay_color: "#000"
   overlay_image: /assets/images/NordIQuEst_logo.png
 excerpt: <br>
-  Nordic-Estonian Quantum Computing e-Infrastructure Quest<br />
+  What is NordIQuEst? <br />
   <small></small>
 intro: 
   - excerpt: ''
@@ -59,7 +59,7 @@ socials_gallery:
 
 ## What is NordIQuEst
 
-NordIQuEst is a [NeIC](https://neic.no/) funded project with the purpose to build a Nordic-Estonian e-infrastructure which combines high-performance computing and quantum computing from across Norway, Sweden, Denmark, Finland and Estonia. Central to this is the pre-exacscale highperformance supercomputer, LUMI, located in Kajaani, Finland which will act as the hub allowing connections with existing quantum computers in Espoo, Finland and Gothenburg, Sweden. 
+NordIQuEst is a project funded by the [Nordic e-Infrastructure Collaboration](https://neic.no) (NeIC), which is an organisational unit under [NordForsk](https://www.nordforsk.org). The purpose of the project is to build a Nordic-Estonian e-infrastructure which combines high-performance computing and quantum computing from across Norway, Sweden, Denmark, Finland and Estonia. Central to this is the pre-exacscale high-performance supercomputer, LUMI, located in Kajaani, Finland which will act as the hub allowing connections with existing quantum computers in Espoo, Finland and Gothenburg, Sweden. 
 
 
 ## Current Infrastructure

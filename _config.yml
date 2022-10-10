@@ -134,6 +134,9 @@ author:
 # Site Footer
 footer:
   links:
+    - label: ""
+      img: "/assets/footer-icons/footer-logo-neic.svg"
+      url: "https://neic.no"
     - label: "CHALMERS"
       icon: "fas fa-atom fa-lg icon-color-chalmers"
       #img: "/assets/footer-icons/footer-logo-vtt.svg"
@@ -150,7 +153,7 @@ footer:
       icon: "fas fa-university fa-lg icon-color-sintef"
       #img: "/assets/footer-icons/footer-logo-aalto.svg"
       url: "https://www.sintef.no/en/"
-    - label: "Simula Research Laboratory"
+    - label: "Simula"
       icon: "fas fa-university fa-lg icon-color-simula"
       #img: "/assets/footer-icons/footer-logo-aalto.svg"
       url: "https://www.simula.no/"
