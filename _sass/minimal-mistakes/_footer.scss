@@ -18,7 +18,7 @@
 
   footer {
     @include clearfix;
-    margin-left: auto;
+    margin-left: 1em;
     margin-right: auto;
     margin-top: 2em;
     max-width: 100%;
@@ -84,5 +84,25 @@
   }  
 }
 
+.footer-section {
+  background-color: $footer-background-color;
+  height: auto;
+  padding: 0 1em 2em;
+  color: $muted-text-color;
+  position: relative;
+}
 
+.copyright {
+  text-align: center;
+}
+
+.creator-container{
+  position: absolute;
+  font-size: $type-size-6;
+  inline-size: 500px;
+  display: block;
+  overflow-wrap: break-word;
+  bottom: 11px;
+  right: 5px;
+}
 
