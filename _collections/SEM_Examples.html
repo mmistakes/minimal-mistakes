@@ -11,14 +11,33 @@ header:
 ---
 
 Collection and projects:
+<style>
+tbody {
+  font-size: 95%;
+  font-style: italic;
+}
 
+</style>
 <ul>
   {% for collection in site.collections %}
-  {% if collection.category == 'SEM' %}
+  {% if collection.categories contains 'SEM' %}
       <li>
         <h2><a href="{{ collection.url }}">{{ collection.title }}</a></h2>
         <h3>{{ collection.position }}</h3>
-        <p>{{ collection.shortdesc }}</p>
+        <p>{{ collection.Case }}</p>
+        <table>
+          
+          <tr>
+            <th>Short description</th>
+            <th>Case/Objective</th>
+            <th>Data source</th>
+          </tr>
+          <tr>
+            <td><a href="{{ collection.url }}">{{ collection.shortdesc }}</a></td>
+            <td><a href="{{ collection.url }}">{{ collection.Method }}</a></td>
+            <td><a href="{{ collection.url }}">{{ collection.Datafrom }}</a></td>
+          </tr>
+        </table>
       </li>
   {% endif %}
   {% endfor %}
