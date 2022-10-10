@@ -1,0 +1,94 @@
+---
+layout: single
+author_profile: true
+title:            Categories
+date:             2022-10-10
+permalink:        /categories/
+excerpt: "Categories in the collection of projects"
+header:
+  overlay_color: "#333"
+---
+
+
+----
+another old
+{% capture categories %}
+  {% for col in site.collections %}
+    {% for cat in col.categories| split:' ' | uniq | sort %}
+      {{ cat }}
+    {% endfor %}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedtags = categories | split:' ' | uniq | sort %}
+categories:
+<p>{{categories}}</p>
+sortedtags:
+<p>{{sortedtags}}</p>
+{% for cat in sortedtags | uniq | sort %}
+  <h3 id="{{ cat }}">{{ cat }}</h3>
+  {% for col in site.collections %}
+    <ul>
+      {% if collection.categories contains cat %}
+        <li><a href="{{ post.url }}">{{ collection.title }}</a></li>
+      {% endif %}
+    </ul>
+  {% endfor %}
+{% endfor %}
+---
+old
+{% for col in site.collections %}
+  {% for cat in col.categories | uniq %}
+  <h1>{{ cat}}</h1>
+  <li>
+          {% assign cat_name = cat[0] %}
+          <div class="Projects">
+                  <h1>{{ cat[0] }}</h1>
+                  <h2>{{ cat_name }}</h2>
+                  <ul>
+                          {% for post in site.categories[cat] %}
+                          <li>
+                                  <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
+                          </li>
+                          {% endfor %}
+                  </ul>
+          </div>
+  </li>
+  {% endfor %}
+{% endfor %}
+
+----
+
+another old
+
+{% capture categories %}
+  {% for cat in site.collections.categories %}
+    {{ cat[0] }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedtags = categories | split:' ' | sort %}
+<!-- Categories -->
+<p>These are the categories used on <a href="{{-site.url-}}">{{-site.title-}}</a> &nbsp;(number of &nbsp;<i class="far fa-sticky-note" style="font-size: 0.9em;"></i>&nbsp;posts).</p>
+
+{% for cat in sortedtags %}
+  <h3 id="{{ cat }}">{{ cat }}</h3>
+  <ul>
+  {% for post in site.categories[cat] %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+{% endfor %}
+---
+old
+{%-assign sorted_categories = site.categories%}
+
+{% for category in sortedtags %}
+  <h2 class="tight">
+    <span title="Articles categorized as '{{-category | first-}}'">{{-category | first | capitalize-}}</span>
+    <span class="smaller header-aside"> &nbsp;({{-category | last | size-}})</span>
+  </h2>
+  <ol>
+  {%-for post in category.last %}
+    {% include list_item.html-%}
+  {%-endfor %}
+  </ol>
+{% endfor-%}
