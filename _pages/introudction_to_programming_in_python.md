@@ -11,7 +11,7 @@ toc_sticky: true
 
 Welcome! In this course, you will learn the basics of programming in Python. As you can see in the table of contents, the course is divided into 6 modules. Each module contains a main notebook, as well as several videos. Videos are combined into playlists. To find and extend it, you have to click on the upper right corner of the frame with the first video. The amount of work required for each notebook should be roughly the same. In the videos one of the course instructors goes through the main notebook in a thorough manner. Sometimes extra examples are provided. 
 
-Depending on your preference, you can either watch the videos or read the main notebook by yourself (you can also do both, it is entirely up to you). Aside from the main notebook, each module also has additional notebooks, which contain exercises that should be completed and uploaded to [Gradescope](), if you are officially enrolled in the course.
+Depending on your preference, you can either watch the videos or read the main notebook by yourself (you can also do both, it is entirely up to you). Aside from the main notebook, each module also has additional notebooks, which contain exercises that should be completed and uploaded to [Gradescope](https://www.gradescope.com/), if you are officially enrolled in the course.
 
 <a id='variables-and-constants'></a>
 # 1. Variables and Constants 
@@ -69,14 +69,21 @@ Make sure that you have watched all the videos from this playlist!
 <a id='conditional-statements'></a>
 # 3. Conditional Statements
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,ZjSDR5gJDLM,n9W9B-MrQKQ,fTSKBwTfnuQ,j8pjpeDWKFY,cJK9aJoEJkA,fKUxK-5v4ZA,Pfh3MWzd6T8," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Main Notebook**:
 
 * [Conditional Statements](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/03_conditional_statements/en/conditional_statements.ipynb)
 
-
 Make sure that you have watched all the videos from this playlist!
+
+- Introduction,
+- First example,
+- Errors,
+- if-elif-else structure,
+- Booleans,
+- Complex conditional statements,
+- Usage in functions.
 
 **Exercises:**
 
@@ -86,15 +93,22 @@ Make sure that you have watched all the videos from this playlist!
 <a id='loops-and-iterables'></a>
 # 4. Loops and Iterables
 
-Course lectures - you can choose relevant videos from the playlist in the upper right corner:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,ISfXgyfmye8,M5AL1Tyd850,VUFHFAGRijs,q550CpRNbNI,_LZ7wFAur7o,CoGIEX_iVLc,ndI9EsVVmpE,98tD1KEP414," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Main notebook**:
 
 * [Loops and Iterables](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/04_loops_and_iterables/en/loops_and_iterables.ipynb)
 
 Make sure that you have watched all the videos from this playlist!
+
+- Introduction,
+- The print function,
+- For loop,
+- For loop part 2,
+- Iterables and iterators,
+- While loop,
+- While loop part 2,
+- Continue and break.
 
 **Exercises:**
 
@@ -105,15 +119,31 @@ Make sure that you have watched all the videos from this playlist!
 <a id='lists-and-dictionaries'></a>
 # 5. Lists and Dictionaries
 
-Course lectures - you can choose relevant videos from the playlist in the upper right corner:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,g8Lge41r13k,XIu_BZ5unGo,dNcmM7M1mis,uk4X1sbRjGE,3HH5nIoyrS8,DXr95cHCPGg,B4ht3nOuKGY,IO-zXCZyxEA,jghgAkSpP2E,rxQBB6Tdz1c,_HA2QJLtjug,oyNVN9efNbw,_-0Yd66uDHM,cuBfxQX3QWU,HE1mH7EtjRY," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Main Notebook**:
 
 * [Lists and Dictionaries](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/05_lists_and_dictionaries/en/lists_and_dictionaries.ipynb)
 
 Make sure that you have watched all the videos from this playlist!
+
+- Introduction,
+- Lists:
+  - Creation,
+  - Accessing elements,
+  - Slicing,
+  - Modifying elements,
+  - Operators,
+  - Built-in functions,
+  - For loops,
+  - Adding elements,
+  - Removing elements,
+- Dictionaries:
+  - Creation,
+  - Accessing elements,
+  - Modifying elements,
+  - For loops,
+  - Adding and removing elements.
 
 **Exercises:**
 
@@ -127,13 +157,18 @@ Make sure that you have watched all the videos from this playlist!
 <a id='importing'></a>
 # 6. Importing
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,7gpGbaWPoWw,k2L2QKJ0tF0,npOjABOQ5w4,fGdBWkUqIYo," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Main Notebook**:
 
 * [Importing](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/06_importing/en/importing.ipynb)
 
 Make sure that you have watched all the videos from this playlist!
+
+- Introduction
+- Math module,
+- Random module,
+- Packages overview.
 
 **Exercises:**
 
