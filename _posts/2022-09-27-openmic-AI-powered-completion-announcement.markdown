@@ -3,7 +3,7 @@ title: "AI-powered completion in IDEs"
 categories: [Open Mic Announcement, Open Mic]
 ---
 
-The Open mic session starts on Friday 7th July 2022 at 10:30 at [this link](https://meet.jit.si/2022-10-07-open-mic). Speaker [Matěj Kulich](https://kbss.felk.cvut.cz/web/team#mat%C4%9Bj-kulich) introduces the capabilities of AI-powered completion in various IDEs.
+The Open mic session starts on Friday 7th October 2022 at 10:30 at [this link](https://meet.jit.si/2022-10-07-open-mic). Speaker [Matěj Kulich](https://kbss.felk.cvut.cz/web/team#mat%C4%9Bj-kulich) introduces the capabilities of AI-powered completion in various IDEs.
 
 {% include figure image_path="https://venturebeat.com/wp-content/uploads/2021/06/Blog-Hero.png?fit=1601%2C800&strip=all" alt="Github Copilot." %}{: .post-image }
 
