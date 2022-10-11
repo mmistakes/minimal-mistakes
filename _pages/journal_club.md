@@ -35,14 +35,14 @@ Suggested topics can be drawn from the holding pool, or newly provided by the sp
 
 ## Next Journal Club
 
-|         Date          |             Location              |        Topic         |      Speaker       | Paper |
-| :-------------------: | :-------------------------------: | :------------------: | :----------------: | :---- |
-| Tue 11th October 2022 | Zoom (see calendar link or Slack) | Comparative Genomics | Geraldine Buitrago | TBA   |
+|          Date          |                  Location                   |      Topic      |  Speaker   | Paper |
+| :--------------------: | :-----------------------------------------: | :-------------: | :--------: | :---- |
+| Tue 15th November 2022 | HW324 and Zoom (see calendar link or Slack) | Systems Biology | Tom Harris | TBA   |
 
 ### Current Topic Pool
 
 1. Database
-2. Systems Biology
+2. Proteolytic Enzymes
 3. Phylogenetic Trees
 4. Forensic Science
 5. Gene Prediction
@@ -75,6 +75,7 @@ Suggested topics can be drawn from the holding pool, or newly provided by the sp
 | 2022-06-14 |     Steve Ford     |         Metabolism         | Sankarasubramanian _et al._ "Gut Microbiota and Metabolic Specificity in Ulcerative Colitis and Crohn's Disease" [doi:10.3389/fmed.2020.606298](https://doi.org/10.3389/fmed.2020.606298)                                                            |
 | 2022-07-12 | Leighton Pritchard |       Software Tool        | Kosakovsky Pond _et al._ "HyPhy: hypothesis testing using phylogenies" [doi:10.1093/bioinformatics/bti079](https://doi.org/10.1093/bioinformatics/bti079)                                                                                            |
 | 2022-08-09 |   Morgan Feeney    |        Parasitology        | Will et al. "Genetic Underpinnings of Host Manipulation by Ophiocordyceps as Revealed by Comparative Transcriptomics" [10.1534/g3.120.401290](https://doi.org/10.1534/g3.120.401290)                                                                 |
+| 2022-10-11 | Geraldine Buitrago |    Comparative Genomics    | Tong _et al._ "Comparative Genomics Identifies Putative Signatures of Sociality in Spiders" [doi:10.1093/gbe/evaa007](https://doi.org/10.1093/gbe/evaa007)                                                                                           |
 
 
 
@@ -101,3 +102,4 @@ Suggested topics can be drawn from the holding pool, or newly provided by the sp
 - Software Tool
 - Parasitology
 - Comparative Genomics
+- Systems Biology
