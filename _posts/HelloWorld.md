@@ -1,6 +1,6 @@
 ---
-layout: post
-title:  "Java HelloWorld!"
+layout: Java
+title:  "HelloWorld!"
 ---
 
 # package _posts;
