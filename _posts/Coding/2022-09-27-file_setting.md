@@ -1,8 +1,9 @@
 ---
 layout: single
-title:  "File Modifying"
-categories: Coding
-tag: [python, blog, jupytor]
+title:  "Python Study 7"
+categories: coding
+
+tag: [python, blog, coding]
 toc: true
 author_profile: false
 sidebar:

@@ -1,8 +1,9 @@
 ---
 layout: single
-title:  "KBO Hitters Stats"
-categories: Coding
-tag: [python, blog, jupytor]
+title:  "Python Study 6"
+categories: coding
+
+tag: [python, blog, coding]
 toc: true
 author_profile: false
 sidebar:

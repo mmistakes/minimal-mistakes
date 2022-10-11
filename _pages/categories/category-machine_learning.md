@@ -8,3 +8,6 @@ search : false
 sidebar:
     nav: "docs"
 ---
+{% assign posts = site.categories.machine_learning | sort:"date" | reverse %}
+
+{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

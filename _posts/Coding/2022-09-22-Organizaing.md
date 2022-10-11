@@ -1,8 +1,9 @@
 ---
 layout: single
-title:  "Data Organizing"
-categories: Coding
-tag: [python, blog, jupytor]
+title:  "Python Study 1"
+categories: coding
+
+tag: [python, blog, coding]
 toc: true
 author_profile: false
 sidebar:
