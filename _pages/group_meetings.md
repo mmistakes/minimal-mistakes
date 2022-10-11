@@ -26,9 +26,9 @@ While there are COVID restrictions in place (and it remains convenient) these wi
 
 ## Next Meeting/Meeting Archive
 
-|         Date         |   Location   |      Speaker       |
-| :------------------: | :----------: | :----------------: |
-| Mon 3rd October 2022 | HW324/Hybrid | General Discussion |
+|         Date          |   Location   |     Speaker     |
+| :-------------------: | :----------: | :-------------: |
+| Mon 17th October 2022 | HW323/Hybrid | Angelika Kiepas |
 
 
 
@@ -36,6 +36,8 @@ While there are COVID restrictions in place (and it remains convenient) these wi
 
 |          Date           |         Location         |      Speaker       |
 | :---------------------: | :----------------------: | :----------------: |
+|  Mon 10th October 2022  |       HW323/Hybrid       |     Tom Harris     |
+|  Mon 3rd October 2022   |       HW324/Hybrid       | General Discussion |
 | Tue 26th September 2022 |       HW324/Hybrid       |     Emma Hobbs     |
 | Mon 12th September 2022 |          Hybrid          |   Project Recaps   |
 | Mon 5th September 2022  |          Hybrid          |     CANCELLED      |
@@ -54,7 +56,8 @@ While there are COVID restrictions in place (and it remains convenient) these wi
 
 This schedule is tentative - if you cannot attend a meeting where you are scheduled to present, please contact Leighton as early as possible.
 
-|         Date          |   Location   |     Speaker     |
-| :-------------------: | :----------: | :-------------: |
-| Mon 10th October 2022 | HW323/Hybrid |   Tom Harris    |
-| Mon 17th October 2022 | HW323/Hybrid | Angelika Kiepas |
+|            Date            |   Location   |     Speaker     |
+| :------------------------: | :----------: | :-------------: |
+| Mon 17th October 2022 2pm  | HW323/Hybrid | Angelika Kiepas |
+| Mon 7th November 2022 3pm  | HW324/Hybrid |       TBC       |
+| Mon 14th November 2022 2pm | HW324/Hybrid |       TBC       |
