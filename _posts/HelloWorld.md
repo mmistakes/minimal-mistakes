@@ -5,8 +5,8 @@ title:  "Java HelloWorld!"
 
 # package _posts;
 
-#/**
-# * HelloWorld
+# /**
+#   * HelloWorld
 # */
 #   public class HelloWorld {
 #    public static void main(String[] args) {
