@@ -21,24 +21,24 @@ Understanding the latency implications of different network configurations when 
 
 In this blog post I measure the latency betweend virtual machines deployed in Azure's **West Europe region** in the following configurations:
 
-* same vNet, same availability zone, same proximty placement group
-* same vNet, across availability zones
-* multiple vNets (in peering), same availability zone
-* multiple vNets (in peering), across availability zones
-* multiple vNets connected in a Hub & Spoke topology and Routing via [Azure Virtual Network Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
-* multiple vNets connected in a Hub & Spoke topology and Routing via [Azure Firewall](https://docs.microsoft.com/en-us/azure/firewall/overview)
+* same v-net, same availability zone, same proximty placement group
+* same v-net, across availability zones
+* multiple v-nets (in peering), same availability zone
+* multiple v-nets (in peering), across availability zones
+* multiple v-nets connected in a Hub & Spoke topology and Routing via [Azure Virtual Network Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
+* multiple v-nets connected in a Hub & Spoke topology and Routing via [Azure Firewall](https://docs.microsoft.com/en-us/azure/firewall/overview)
 
-More than the absolute values, it is interesting to see the impact in terms of latency of various network configurations.
+Rather than the absolute values, my focus is on assessing the impact in terms of latency of various network configurations.
 
-To measure latency, I've used [MTR](https://en.wikipedia.org/wiki/MTR_(software)), which combines the functions of the traceroute and ping programs in one network diagnostic tool.
+To measure latency, I've used [MTR](https://en.wikipedia.org/wiki/MTR_(software)), which combines the functions of the traceroute and ping programs in one single network diagnostic tool.
 
 > please note that MTR are the round-trip times for an ICMP packet to reach the hop at which its TTL expires, for the device processing that expiration to generate an ICMP Time Exceeded packet, and for that packet to return to the originating device. For many routers, performing the ICMP response for dropped packets is a low priority–and on some devices, it’s disabled entirely.
 
 > The [**Azure hub and spoke playground**](https://github.com/nicolgit/hub-and-spoke-playground) is a repo where you find a reference architectire I use as common baseline to implement configurations and test connectivity scenarios. I have used it also here as starting point to build the lab used in this post.
 
-# Scenario 1 - one Virtual Network
+# Scenario 1 - one virtual network
 
-In this scenario I have a calling machine in one availability zone and 3 additional machines each in a different availability zone. In availability zone 1 I have also placed both machines in the same proximity placement group to have the best latency possible.
+In this scenario I have a calling machine in one availability zone and 3 additional machines each in a different availability zone. In availability zone 1 I have also placed both machines in the same proximity placement group to have the best possible latency.
 
 ![same network](../../assets/post/2022/latency-scenario-1.png)
 
@@ -52,12 +52,12 @@ Here the measures from `spoke01-az-01` (availability zone 1).
 
 Takeaways:
 
-* Proximity Placement group does a great job, latency is at an average of 1.4ms
-* Jumping between availability zones, I have measured a latency of 2.1ms, more than the 2ms declared but more than acceptable considering how this measure has been done
+* **Proximity Placement Group does a great job**, latency is at an average of 1.4ms
+* Jumping between availability zones, I have measured an average latency of 2.1ms, more than the 2ms declared but more than acceptable considering how this measure has been done.
 
-# Scenario 2 - two Virtual Networks in peering
+# Scenario 2 - two virtual networks in peering
 
-In this scenario I have measured the impact of a network peering. I have created 3 more machines, in 3 availability zones, on another network in peering.
+In this scenario I have measured the impact of a network peering. I have created 3 more machines, in 3 availability zones, on another network, in peering.
 
 ![peering](../../assets/post/2022/latency-scenario-2.png)
 
@@ -70,16 +70,16 @@ Here the measures from `spoke01-az-01` (availability zone 1) to machines in anot
 | `mtr 10.13.2.7` | 3  |  39 |   2.3 |  **2.4** |  1.8 |  3.3 |  0.3|
 
 Takeaways:
-* network peering adds an average overhead of just 0.2ms
-* Here I am not using a proximity group anymore and the result is that average latency doesn't change so much if the machine is within same availability zone, or on another one  
+* Network peering adds an average overhead of just 0.2ms, still a more than acceptable value
+* Here I am not using a proximity group anymore and the result is that **average latency doesn't change so much if the machine is within same availability zone, or on another one**  
 
-# Scenario 3 - two Virtual Networks in H&S configuration with Virtual Network Gateway
+# Scenario 3 - two virtual networks in H&S configuration with a Virtual Network Gateway in between
 
-In this scenario I moved to a more classic configuration: I removed peering and routed traffic through a central hub and a Virtual Network Gateway.
+In this scenario I moved to a more classic configuration: I eliminated peering and routed traffic through a central hub and an Azure Virtual Network Gateway.
 
 ![hub-and-spoke](../../assets/post/2022/latency-scenario-3-4.png)
 
-Here the measures from `spoke01-az-01` (availability zone 1) to machines in another virtual network via an Azure Virtual Network Gateway in the Hub Network
+Here the measures from `spoke01-az-01` (availability zone 1) to machines in another virtual network via an Azure Virtual Network Gateway in the Hub Network.
 
 | Command | Av Zone |  Snt |  Last |  Avg | Best | Wrst | StDev
 |---|--------|------|-------|------|------|------|------|
@@ -89,16 +89,16 @@ Here the measures from `spoke01-az-01` (availability zone 1) to machines in anot
 
 Takeaways
 
-* Latency increased up to 3.4/4.5ms, because each packet have to cross 2 peerings and an additional appliace
-* remaining in the same availability zone have an impact: and average of 1ms is not huge, but is a relative increase quite high (latency is 50% higher in cross availabilty zones communications) 
+* Latency increased up to **3.4/4.5ms**, because each packet have to cross 2 peerings and a virtual appliace (Azure Virtual Network Gateway)
+* **Staying in the same availability zone also have a positive impact on latency**: an average of +1ms in cross availability zone topology is not huge in se, but is a relative increase quite high (+50%)
 
-# Scenario 4 - two Virtual Networks in H&S configuration with Azure Firewall
+# Scenario 4 - two virtual networks in H&S configuration with an Azure Firewall in between
 
-In this last scenario I implemented the [reference architecture described in the cloud adoption framework](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke), that is a hub and spoke, with an (Azure) firewall to control all the traffic. 
+In this last scenario I implemented the [reference architecture described in the cloud adoption framework](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke), that is a hub and spoke, with an Azure Firewall to control all the traffic. 
 
 ![hub and spoke](../../assets/post/2022/latency-scenario-3-4.png)
 
-Here the measures from `spoke01-az-01` (availability zone 1) to machines in another virtual network via Azure Firewall in the Hub Network.
+Here the measures from `spoke01-az-01` (availability zone 1) to machines in another virtual network and different availability zones, via Azure Firewall in the Hub Network.
 
 | Command | Av Zone |  Snt |  Last |  Avg | Best | Wrst | StDev |
 |---|--------|------|-------|------|------|------|------|
@@ -108,9 +108,9 @@ Here the measures from `spoke01-az-01` (availability zone 1) to machines in anot
 
 Takeaways
 
-* Latency in MUCH better than a VPN gateway with Azure Firewall in the middle
-* When source and destination are in the same availability Zone it has almost the same latency of a simple peering
-* When source ande destination are in different availabity zones, latency grows up to 3.1/3.4ms
+* Latency is far better than an Azure Virtual Network Gateway with Azure Firewall in between
+* **When source and destination are in the same availability zone it has almost the same as for a simple peering**
+* When source and destination are **in different availabity zones, latency grows up to 3.1/3.4ms**
 
 # Final thoughts
 
