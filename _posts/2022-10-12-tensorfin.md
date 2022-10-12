@@ -1,6 +1,6 @@
 ----
 layout: single
-title: 을 적습니다.
+title: '[DL] 텐서(Tensor)알아보기 & 최적화 이해하기'.
 ----
 # 1. 신경망을 위한 데이터 표현 📊
 
