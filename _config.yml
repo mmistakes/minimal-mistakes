@@ -104,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Mateusz Wyszynski"
+  name             : # "Mateusz Wyszynski"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "This was the default bio, but I kind of agree, so: 'I am an **amazing** person.'"
-  location         : "Somewhere"
+  bio              : # "This was the default bio, but I kind of agree, so: 'I am an **amazing** person.'"
+  location         : # "Somewhere"
   email            :
   links:
     - label: "Email"
@@ -132,25 +132,27 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
+    - label: ""
+      icon: "fas fa-university fa-lg"
+      url: https://www.lazarski.pl/
+    - label: ""
+      icon: "fab fa-fw fa-youtube fa-lg"
+      url: https://www.youtube.com/channel/UCJ_yH3fxIAPy47blk3GxN6w
+    - label: ""
+      icon: "fab fa-fw fa-facebook-square fa-lg"
+      url: https://www.facebook.com/uczelnia.lazarskiego/?fref=ts
+    - label: ""
+      icon: "fab fa-fw fa-instagram fa-lg"
+      url: https://www.instagram.com/lazarskiuni/?hl=pl
+    - label: ""
+      icon: "fab fa-fw fa-twitter-square fa-lg"
+      url: https://twitter.com/lazarskiuni_
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+      icon: "fab fa-fw fa-github fa-lg"
       # url:
 
+atom_feed:
+  hide: true
 
 # Reading Files
 include:
@@ -276,11 +278,19 @@ compress_html:
   ignore:
     envs: development
 
+collections_dir: my_collections
+
 # Collections
 collections:
-  courses:
+  programming_in_python:
     output: true
-    permalink: /:collection/:path/
+    permalink: /courses_in_english/:collection/:path/
+  mathematics_for_economics:
+    output: true
+    permalink: /courses_in_english/:collection/:path/
+  mathematics_for_data_science:
+    output: true
+    permalink: /courses_in_english/:collection/:path/
 
 # Defaults
 defaults:
@@ -290,24 +300,42 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
+      author_profile: false
+      read_time: false
+      comments: false
       share: true
-      related: true
+      related: false
   # _pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
-      author_profile: true
-  # _courses
+      author_profile: false
+  # _programming_in_python
   - scope:
       path: ""
-      type: courses
+      type: programming_in_python
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
-      comment: true
+      comment: false
+  # _mathematics_for_economics
+  - scope:
+      path: ""
+      type: mathematics_for_economics
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      comment: false
+  # _mathematics_for_data_science
+  - scope:
+      path: ""
+      type: mathematics_for_data_science
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      comment: false
