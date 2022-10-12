@@ -1,5 +1,5 @@
 ---
-title: "Fill the title here"
+title: "Variables and Environment in Docker"
 categories: [Open Mic Announcement, Open Mic]
 ---
 
@@ -9,10 +9,14 @@ Content: Fill in when and where the next open mic session will take place. Remem
 
 Then include the profile picture of presenter. For pictures, place them somewhere in assets/images/... and use following code:
 
-{% include figure image_path="/assets/images/path_to_the_image" alt="title on popup or when it cannot be shown" %}{: .align-right .profile-photo}
+{% include figure image_path="https://vsupalov.com/images/docker-env-vars/docker_environment_build_args.png" alt="Docker variable availability overview" %}{: .post-image }
 
 Here attach the link to the place where session takes place.
 
 ##### The abstract
 
-Text of the abstract will be here. It may be also as a short summary.
+Docker has changed the way applications are built and run. However, one of the frequent pain points for newcomers is configuration of the containers - what are `ENV`, `ARG`, environment, `.env` file etc. This session will attempt to answer some of these questions and illustrate options of configuring Docker (and Docker Compose) containers.
+
+Further reading:
+* [Docker ARG, ENV and .env - A Complete Guide](https://vsupalov.com/docker-arg-env-variable-guide/)
+
