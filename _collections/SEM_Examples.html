@@ -22,20 +22,20 @@ tbody {
   {% for collection in site.collections %}
   {% if collection.categories contains 'SEM' %}
       <li>
-        <h2><a href="{{ collection.url }}">{{ collection.title }}</a></h2>
-        <h3>{{ collection.position }}</h3>
-        <p>{{ collection.Case }}</p>
         <table>
-          
           <tr>
-            <th>Short description</th>
-            <th>Case/Objective</th>
-            <th>Data source</th>
+            <td colspan="3"><h2 href="{{ collection.url }}">{{ collection.title }}</h2></td>
           </tr>
           <tr>
-            <td><a href="{{ collection.url }}">{{ collection.shortdesc }}</a></td>
-            <td><a href="{{ collection.url }}">{{ collection.Method }}</a></td>
-            <td><a href="{{ collection.url }}">{{ collection.Datafrom }}</a></td>
+            <td rowspan="3"><a href="{{ collection.url }}"><img src={{ collection.img }} alt = {{collection.title}} style="max-height:100%; max-width:100%; object-fit: cover"></a></td>
+            <td colspan="2"><a href="{{ collection.url }}">{{ collection.Case }}</a></td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="{{ collection.url }}">{{ collection.shortdesc }}</a></td>
+          </tr>
+          <tr>
+            <td width="30%><a href="{{ collection.url }}">{{ collection.Method }}</a></td>
+            <td width="40%><a href="{{ collection.url }}"><b>Data from: </b>{{ collection.Datafrom }}</a></td>
           </tr>
         </table>
       </li>
