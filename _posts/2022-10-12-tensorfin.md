@@ -1,8 +1,7 @@
-----
-layout: single
-title: '[DL] 텐서(Tensor)알아보기 & 최적화 이해하기'.
-
-----
+---
+title : '[DL] 텐서(Tensor) 알아보기 & 최적화 '
+layout : single
+---
 
 # 1. 신경망을 위한 데이터 표현 📊
 
