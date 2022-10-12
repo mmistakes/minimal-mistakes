@@ -2,6 +2,7 @@
 layout: single
 author_profile: true
 title: "R-Shiny Apps"
+category: Index
 excerpt: "Some web apps developed using R-Shiny"
 header:
   overlay_color: "#333"
@@ -11,7 +12,6 @@ header:
   {% for app in site.R-ShinyApps %}
     <li>
       <h2><a href="{{ app.url }}">{{ app.title }}</a></h2>
-      <h3>{{ app.position }}</h3>
       <p>{{ app.shortdesc }}</p>
     </li>
   {% endfor %}

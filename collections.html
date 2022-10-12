@@ -1,20 +1,21 @@
 ---
 layout: single
 author_profile: true
-title: Collections by subject or method
+title: Collections of codes and projects
 permalink: /collections/
-excerpt: "Codes and projects organized by method"
+excerpt: "Codes and projects organized by subject or method"
+category: Index
 header:
   overlay_color: "#333"
 ---
 
 Collection of projects and codes:
 
-<ol>
+<ul>
 {% for collection in site.collections %}
 {% if collection.category == 'Index' %}
   <li><a href="{{collection.url}}">{{collection.title}}</a></li>
   <p>{{ collection.shortdesc }}</p>
 {% endif %}
 {% endfor %}
-</ol>
+</ul>

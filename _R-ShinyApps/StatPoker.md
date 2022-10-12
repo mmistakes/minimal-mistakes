@@ -4,6 +4,7 @@ author_profile: true
 title: "StatPoker"
 shortdesc: "An educational app to train basic statistical concpets"
 excerpt: "Project and code examples"
+categories: [R,R-Shinny,Webapp]
 header:
   overlay_color: "#333"
 ---
