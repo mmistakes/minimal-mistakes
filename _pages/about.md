@@ -7,9 +7,9 @@ I am a second-year Computational and Mathematical Engineering PhD Student at Sta
 <img src="https://github.com/rjuenemann/rjuenemann.github.io/blob/master/assets/images/MFA_poster_crop.jpg?raw=true" alt="poster" style="height:250px;"/>    
 
 
-I have been in collaboration with Prof. Scott McKinley (Tulane University) and Prof. Christine Payne (Duke University) developing a statistical dashboard to automatically categorize diverse particle movement patterns in live-cell data. I completed a Mathematics Honors Thesis and a Computer Science Capstone to expand upon this work. 
+I have been in collaboration with Prof. Scott McKinley (Tulane University) and Prof. Christine Payne (Duke University) to develop a statistical dashboard to automatically categorize diverse particle movement patterns in live-cell data. I completed a Mathematics Honors Thesis and a Computer Science Capstone to expand upon this work. 
 
-I also collaborate with Prof. Veronica Ciocanel (Duke University), Prof. Adriana Dawes (Ohio State University), and Prof. Scott McKinley (Tulane University) on topological data analysis approaches for uncovering the timing of ring structure onset in filamentous networks. 
+I also collaborated with Prof. Veronica Ciocanel (Duke University), Prof. Adriana Dawes (Ohio State University), and Prof. Scott McKinley (Tulane University) on topological data analysis approaches for uncovering the timing of ring structure onset in filamentous networks. 
 
 <img src="https://github.com/rjuenemann/rjuenemann.github.io/blob/master/assets/images/guitar.png?raw=true" alt="poster" style="height:300px;"/>    
 
