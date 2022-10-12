@@ -2,7 +2,7 @@
 title: Measuring latency between Availabity Zones and the impact of an NVA in between
 date: 2022-10-10 10:00
 tags: [Azure, networking, hub-and-spoke, latency, availability-zone, azure firewall, peering, Proximity Placement Group, Virtual Network Gateway]
-excerpt: "In this blob post I measure the latency between VM in various network configurations"
+excerpt: "In this blob post I measure the latency between virtual machines in various network configurations on Azure"
 
 header:
   overlay_image: https://live.staticflickr.com/65535/52075200779_53b4400eae_h.jpg
@@ -19,7 +19,7 @@ A [proximity placement group](https://azure.microsoft.com/en-us/blog/announcing-
 
 Understanding the latency implications of different network configurations when designing an architecture is **essential**.
 
-In this blog post I measure the latency betweend virtual machines deployed in Azure's **West Europe region** in the following configurations:
+In this blog post I measure the latency between virtual machines deployed in Azure's **West Europe region** in the following configurations:
 
 * same v-net, same availability zone, same proximty placement group
 * same v-net, across availability zones
