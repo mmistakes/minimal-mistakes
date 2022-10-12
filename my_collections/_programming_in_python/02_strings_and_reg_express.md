@@ -8,6 +8,26 @@ toc_sticky: true
 <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
 <script>addBackToTop()</script>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,C_Y3bi19Sh8,N8sL98yHLW0,tsTqTvNfE6Q,EAp83Ua6olY,8hSVmAWjf94,EtdsquQSEs4,oyQ2ZCISAWM,JIUj2ERdvSU,cvdsw-KEzwQ,JdEXT9Pnc5w,C_qR3O8vGgw,fhltJtAn0BQ,UyAs711539s,MTly6c_tkfQ,o2mU9csk_MM," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Make sure that you have watched all the videos from this playlist!
+
+- Introduction,
+- Defining recap,
+- Operations recap,
+- Input function,
+- f-Strings,
+- Accessing characters,
+- For loop,
+- Slicing,
+- Modifying,
+- Looping once again,
+- Logical operations,
+- Comparisons,
+- Built-in functions,
+- Regular expressions,
+- re pattern matching.
+
 ## 1. Strings
 
 Quick remainder: `string` is a sequence of characters. These characters are stored in a computer memory as bytes that represent unicode characters. In Python, there is no character data type, so even a single character is a string of length 1. 

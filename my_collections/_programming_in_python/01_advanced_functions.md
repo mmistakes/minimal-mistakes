@@ -8,6 +8,25 @@ toc_sticky: true
 <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
 <script>addBackToTop()</script>
 
+The course is divided into 6 modules. Each module contains a main markdown, as well as several videos. Videos are combined into playlists. To find and extend it, you have to click on the upper right corner of the frame with the first video.
+
+Depending on your preference, you can either watch the videos or read the markdown by yourself (you can also do both, it is entirely up to you). Good luck!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,e0v_sZcwMSo,dQeoNvL1oC4,g_ocPfOYem0,EZjzVdhRCd8,48HfnIJjbbo,Fiwd8uuqTOs,1tEGLy-v-0M,GWng58oYAAU,AAGJBhc0OAI,DWuTlQ8jMmk," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Make sure that you have watched all the videos from this playlist!
+
+- Welcome to Programming in Python!
+- Course tools,
+- No return functions,
+- Global variables,
+- Keywords,
+- Default parameters,
+- Arbitrary arguments,
+- Arbitrary arguments example,
+- Recursion,
+- Functions inside other functions.
+
 ## 1. Function basics 
 In this module, you will learn more information about Python functions. Up to this moment you should know how to define a function, as well as how the function construction looks like. So far, you have defined a function like this:
 
