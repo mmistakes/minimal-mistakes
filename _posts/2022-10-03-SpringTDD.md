@@ -2,6 +2,7 @@
 layout: single
 title: "[Spring] TDD"
 excerpt : "Spring에서의 TDD방식"
+categories: spring
 ---
 
 ---
