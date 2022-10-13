@@ -1,5 +1,5 @@
 ---
-title: "Variables and Environment in Docker"
+title: "Upcoming Open Mic - Variables and Environment in Docker"
 categories: [Open Mic Announcement, Open Mic]
 ---
 
