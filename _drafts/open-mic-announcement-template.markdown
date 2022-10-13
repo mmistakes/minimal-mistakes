@@ -1,6 +1,6 @@
 ---
 title: "Fill the title here"
-categories: open-mic-announcement open-mic
+categories: [Open Mic Announcement, Open Mic]
 ---
 
 <!-- Naming convention: post MUST be named beginning with YEAR-MM-DD-title.MARKDOWN. Create a COPY of this file in _posts and rename it according to the convention. The title in human readable form is put in the quotes to the title parameter in front matter  -->
