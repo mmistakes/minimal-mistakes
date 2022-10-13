@@ -1,3 +1,9 @@
+---
+layout: single
+title: "Split()로 문자열 자르기(with 정규식)"
+---
+
+
 # String[] split(String regex)
 	- split()는 정규표현식 혹은 특정 문자를 기준으로 문자열을 나누는 기능과 나눈 문자열을 배열로 반환하는 기능을 하는 메서드.
 
