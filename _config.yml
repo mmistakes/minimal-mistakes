@@ -106,14 +106,14 @@ analytics:
 # Site Author
 author:
   name             : "Eui"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Attack is Eui"
+  avatar           : "/assets/clapbear.gif"
+  bio              : "개발자 파이팅"
   location         : "Siheung, South Korea"
   email            : "lobil7782@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "lobil7782@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
