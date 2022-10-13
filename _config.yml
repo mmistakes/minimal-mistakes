@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : 'eui'
+title                    : '백엔드 스터디'
 title_separator          : '|'
-subtitle                 : 'ver 1.0'
+subtitle                 : 'use spring'
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Eui"
+name                     : "개발하는 병르"
 description              : "hello blog"
 url                      : "https://Euihyunee.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -105,15 +105,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Eui"
+  name             : "Jeong eui hyun"
   avatar           : "/assets/clapbear.gif"
   bio              : "개발자 파이팅"
-  location         : "Siheung, South Korea"
+  location         : "Tech Universtiy of Korea"
   email            : "lobil7782@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "lobil7782@gmail.com"
+      url: "matilto:hey.lobil7782@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
