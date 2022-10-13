@@ -62,9 +62,8 @@ Pamiętaj o rozwinięciu całej playlisty poświęconej temu tematowi, klikając
 
 <a id='pętle-i-iteratory'></a>
 # 4. Pętle i Iteratory
-Course lectures - you can choose relevant Filmy from the playlist in the upper right corner:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,EVh47osF6r4,wLAVZFWXKzI,LpOsSAzm4bs,K12dy_6WV_w,OLUlRK3jlno," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Główny Notebook**:
 
@@ -80,9 +79,8 @@ Pamiętaj o rozwinięciu całej playlisty poświęconej temu tematowi, klikając
 
 <a id='listy-i-słowniki'></a>
 # 5. Listy i Słowniki
-Course lectures - you can choose relevant Filmy from the playlist in the upper right corner:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,nIfu1W96EFg,RbpHBxV74m4,3mkmu4a9SF8,tiaqi4mN5Oo,BNFKIpDcLNY,zWrPd_3hLdA,dtHGhLszfbU,lwjOH8rrMc0,FmKeI5yiYs0,0WVSa7EpaKI,32mFPq0WZWk,Iq7iOIhBgU4,cyNrKvsFWx0," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Główny Notebook**:
 
@@ -101,7 +99,7 @@ Pamiętaj o rozwinięciu całej playlisty poświęconej temu tematowi, klikając
 
 <a id='importowanie'></a>
 # 6. Importowanie
-<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,JFM8vUZRau8,X7Ea2zuZBLg,IMdkn1olGjs,tivhLzoQq_o,z0Cr9Y-hekA,z3pArU6XO1Y," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=,m0qviez6F68,aB0g-YVBwvg,CrX2E5oWHSc," title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Główny Notebook**:
 
@@ -110,5 +108,7 @@ Pamiętaj o rozwinięciu całej playlisty poświęconej temu tematowi, klikając
 Pamiętaj o rozwinięciu całej playlisty poświęconej temu tematowi, klikając w prawym górnym rogu okienka z filmem w `Playlista`!
 
 **Zadania:**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BcjOeMlYlKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 * [Zadanie Końcowe](https://colab.research.google.com/github/lazarskiopencourses/lazarskiopencourses.github.io/blob/master/courses/introduction_to_programming_in_python/06_importing/pl/final_assignment.ipynb)
