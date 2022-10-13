@@ -16,8 +16,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Site Title"
-title_separator          : "/"
+title                    : 'eui'
+title_separator          : '|'
+subtitle                 : 'ver 1.0'
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Eui"
 description              : "hello blog"
