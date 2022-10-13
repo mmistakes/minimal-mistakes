@@ -1,3 +1,9 @@
+---
+layout: single
+title: "Optional이란?"
+---
+
+
 # Optional<T>
 ```java
 public final class Optional<T>{
