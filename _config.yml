@@ -30,7 +30,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 readcrumbs               :  true 
 words_per_minute         : 200
 comments:
-  provider               :  "disqus", #disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider: "disqus"
   disqus:
     shortname            : "PrayNote"
   discourse:
