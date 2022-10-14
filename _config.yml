@@ -15,11 +15,11 @@
 minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
+locale                   : "ko-KR"
+title                    : "기도노트"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+subtitle                 : "My Life" 
+name                     : "Pray"
 description              : "An amazing website."
 url                      : "https://prayer0420.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
