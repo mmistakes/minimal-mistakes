@@ -56,13 +56,13 @@ categories: JAVA
   - 하지만 model1은 여전히 한 파일한에서 코드문이 분리되어 있는 상태이다.
   - 자바코드와 HTML이 한 파일에 있는 것도 작동은 하나 유지보수적 측면에서 이 둘을 분리해 각각의 파일로서 다루는 것이 더 바람직해 보인다. 따라서 컨트롤러와 뷰가 물리적으로 분리된 방식을 도입한 구조가  MVC model2이다.
 
-  <img src="../images/MVC model2.PNG" width= "600px" height= "300px" />
+  <img src="../images/MVC model2.png" width= "600px" height= "300px" />
 
   - 그러면 컨트롤러와 뷰를 분리하는 것까지는 단순히 파일만 만들어서 복붙만 하면 된다.
   - 하지만 이 둘을 어떻게 연결할 것인가하는 문제가 발생한다. 이전처럼 파일 내에서 model이라는 변수로만 연결하기에는 다른 파일이라는 점에서 한계가 있다.
   - 이러한 역할을 forwatding이라고 부르며 Dispatcher라고 것이 이를 수행한다.
 
-  <img src="../images/MVC model2_1.PNG" width= "600px" height= "300px" />
+  <img src="../images/MVC model2_1.png" width= "600px" height= "300px" />
 
   - 프로그램이 완성되고 서비스가 커질 수록 웹 어플리케이션에서 클라이언트가 요청하는 페이지가 늘어나게 된다. 이는 곧 즉 준비할 url 페이지가 많아져 컨트롤러(자바 클래스파일)&뷰(JSP파일)이 더 필요하다는 의미.
   - 여기서 디스패쳐는 클라이언트의 request를 받아 각 요청에 맞는 컨트롤러와 연결해주고, 컨트롤러의 response(return된 어떤 결과값과 함께)를 받아 JSP파일과 함께 VIEW를 클라이언트에서 반환해준다.
