@@ -95,11 +95,11 @@ social:
   links: # An array of links to social media profiles
 
 # Analytics
-analytics:
+analytics: "google-gtag"
   provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : "G-T0YY9RENSN"
+    anonymize_ip         : flase
 
 
 # Site Author
