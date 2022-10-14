@@ -4,7 +4,22 @@ search: false
 ---
 
 @charset "utf-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+html {
+    font-size: 16px; // change to whatever
+    
+    @include breakpoint($medium) {
+        font-size: 18px; // change to whatever
+    }
+    
+    @include breakpoint($large) {
+        font-size: 18px; // change to whatever
+    }
+    
+    @include breakpoint($x-large) {
+        font-size: 18px; // change to whatever
+    }
+    }
