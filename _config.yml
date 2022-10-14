@@ -26,10 +26,10 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/CA111.JPG"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-readcrumbs               :  true 
+readcrumbs               : true 
 words_per_minute         : 200
 comments:
-  provider: "disqus"
+  provider               : "disqus"
   disqus:
     shortname            : "PrayNote"
   discourse:
@@ -94,8 +94,8 @@ social:
   links: # An array of links to social media profiles
 
 # Analytics
-analytics: "google-gtag"
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+analytics: 
+  provider               : "goole-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : "G-T0YY9RENSN"
     anonymize_ip         : flase
