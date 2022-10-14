@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 locale                   : "ko-KR"
 title                    : "JSHEOTECH"
 title_separator          : "|"
-subtitle                 : "If not now, then when?"
+subtitle                 : ""
 name                     : "HEO JUNG SEOK"
 description              : "Welcome to my blog :)"
 url                      : "https://heojungseok.github.io"
