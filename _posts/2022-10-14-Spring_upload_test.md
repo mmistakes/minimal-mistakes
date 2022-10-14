@@ -5,6 +5,6 @@ categories: SpringBoot
 Tag: [springboot]
 ---
 <link rel="short icon" href="#">
-spring boot test git push2
+spring boot test git push to remote 1
 ---
 
