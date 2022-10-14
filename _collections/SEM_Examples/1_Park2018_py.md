@@ -3,7 +3,7 @@ layout: single
 author_profile: true
 title: "1-Progression of Dengue illness phenotype (using Park et al 2018 data) in Python"
 categories: ['SEM','CB-SEM','Python']
-shorttitle: "SEM_Park2018"
+shorttitle: "SEM_Park2018_py"
 shortdesc: "Modelling progression of the dengue illness phenotype. Replication of the SEM analysis presented in 
 Park, S., Srikiatkhachorn, A., Kalayanarooj, S., Macareo, L., Green, S., Friedman, J. F., & Rothman, A. L. (2018)."
 Method: "CB-SEM using Python's `semopy` Package."
@@ -123,7 +123,7 @@ print(res)
 ## Optimization terminated successfully
 ## Objective value: 0.209
 ## Number of iterations: 57
-## Params: 0.001 0.022 -0.000 1.795 1.000 -0.000 0.591 -0.043 0.227 5.662 0.607 1.735 0.379 -33246.649 -656491.391 9.497 8.347 1487.481 0.131 3281007555.300 348.077
+## Params: 0.001 0.022 -0.000 1.795 1.000 -0.000 0.591 -0.043 0.227 5.662 0.607 1.735 0.379 -33246.649 -656491.391 3281007555.300 1487.481 9.497 0.131 348.077 8.347
 ```
 
 Let's inspect the parameter estimates, with standardized coefficients.
@@ -154,11 +154,11 @@ print(mod.inspect(std_est=True).to_markdown())
 ## | 12 | dhf          | ~    | platelets_m1 |      -1.16768e-06 |  -0.244079 |      2.75992e-07 |  -4.23083 | 2.32833e-05 |
 ## | 13 | ast_m3       | ~~   | wbc_m3       |  -33246.6         |  -0.207074 |   8242.24        |  -4.03369 | 5.49076e-05 |
 ## | 14 | ast_m3       | ~~   | platelets_m3 | -656491           |  -0.196597 | 182101           |  -3.60509 | 0.000312049 |
-## | 15 | max_hct_m1   | ~~   | max_hct_m1   |       9.49689     |   0.586248 |      0.83778     |  11.3358  | 0           |
-## | 16 | max_hct_m3   | ~~   | max_hct_m3   |       8.34678     |   0.855458 |      0.736321    |  11.3358  | 0           |
-## | 17 | alt_m1       | ~~   | alt_m1       |    1487.48        |   0.338816 |    131.22        |  11.3358  | 0           |
-## | 18 | platelets_m1 | ~~   | platelets_m1 |       3.28101e+09 |   0.472087 |      2.89438e+08 |  11.3358  | 0           |
-## | 19 | alt_m3       | ~~   | alt_m3       |     348.077       |   0.921746 |     30.7061      |  11.3358  | 0           |
+## | 15 | platelets_m1 | ~~   | platelets_m1 |       3.28101e+09 |   0.472087 |      2.89438e+08 |  11.3358  | 0           |
+## | 16 | alt_m1       | ~~   | alt_m1       |    1487.48        |   0.338816 |    131.22        |  11.3358  | 0           |
+## | 17 | max_hct_m1   | ~~   | max_hct_m1   |       9.49689     |   0.586248 |      0.83778     |  11.3358  | 0           |
+## | 18 | alt_m3       | ~~   | alt_m3       |     348.077       |   0.921746 |     30.7061      |  11.3358  | 0           |
+## | 19 | max_hct_m3   | ~~   | max_hct_m3   |       8.34678     |   0.855458 |      0.736321    |  11.3358  | 0           |
 ## | 20 | dhf          | ~~   | dhf          |       0.131203    |   0.824841 |      0.0115743   |  11.3358  | 0           |
 ```
 
