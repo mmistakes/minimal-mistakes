@@ -1,29 +1,33 @@
 {
   "main": {
-    "id": "4783d3552338a0e4",
+    "id": "f8c8b7599c3db37e",
     "type": "split",
     "children": [
       {
-        "id": "740b6d2ac806c786",
+        "id": "7b3334a59f4cf0f5",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "_posts/2022-10-14-JSP MVC model 기초 개념.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "5fc8dc0d26a7ca09",
+    "id": "0f03346bbdf0e746",
     "type": "split",
     "children": [
       {
-        "id": "9b94c333a69eb229",
+        "id": "92b01bcec6809073",
         "type": "tabs",
         "children": [
           {
-            "id": "4270199a588677ba",
+            "id": "846b897bacd36cd8",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -31,7 +35,7 @@
             }
           },
           {
-            "id": "63a23d3496fec4ba",
+            "id": "b0689425d71cca34",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -46,7 +50,7 @@
             }
           },
           {
-            "id": "8fc3ef3bfceec5b1",
+            "id": "c5eb21f9c4addfdc",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -57,22 +61,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 510.00732421875
   },
   "right": {
-    "id": "c249aa38529efd6f",
+    "id": "7276adb92d6e4b6d",
     "type": "split",
     "children": [
       {
-        "id": "852f32b7b730a213",
+        "id": "99ed4a46ef956351",
         "type": "tabs",
         "children": [
           {
-            "id": "87828ae0d3398b9a",
+            "id": "ff0b9303de29ad5c",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_posts/2022-10-14-JSP MVC model 기초 개념.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,18 +89,19 @@
             }
           },
           {
-            "id": "399b770bb063243d",
+            "id": "a8e82d630b64b4b0",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "_posts/2022-10-14-JSP MVC model 기초 개념.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "75b3f338ed518e49",
+            "id": "829edc563145f708",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -106,11 +112,13 @@
             }
           },
           {
-            "id": "d8ef38fce2caff71",
+            "id": "2147a58a8ee5fca2",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "_posts/2022-10-14-JSP MVC model 기초 개념.md"
+              }
             }
           }
         ]
@@ -120,6 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "740b6d2ac806c786",
-  "lastOpenFiles": []
+  "active": "7b3334a59f4cf0f5",
+  "lastOpenFiles": [
+    "images/MVC model1.png",
+    "images/MVC패턴.png",
+    "_posts/2022-10-14-JSP MVC model 기초 개념.md",
+    "images/Pasted image 20220811213011.png",
+    "images/Pasted image 20220811211617.png",
+    "images/Pasted image 20220811232833.png",
+    "images/Pasted image 20220811215757.jpg",
+    "_posts/2022-10-14-JDBC 개념 정리.md",
+    "_posts/2022-10-14-트랜잭션.md",
+    "_posts/2022-10-14-스냅샷이란.md"
+  ]
 }
