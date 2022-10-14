@@ -1,7 +1,7 @@
 ---
-title: "Category"
+title: "Posts by Category"
 layout: categories
-premalink: /categories/
+permalink: /categories/
 author_profile: true
-sidebar_main: ture
 ---
+
