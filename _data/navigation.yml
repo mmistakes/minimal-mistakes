@@ -8,7 +8,7 @@ main:
     url: /aboutme/
     # COVER LETTER
   - title: "Resume"
-    url: /resume/
+    url: resume.pdf
     #PDF UPLOAD
   - title: "Category"
     url: /categories/
