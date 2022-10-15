@@ -21,7 +21,7 @@ title_separator          : "|"
 subtitle                 : "Better than yesterday"
 name                     : "Jay Jung"
 description              : "Better than yesterday"
-url                      : "https://jayjung98.github.io"
+url                      : "https://jaynote.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -105,7 +105,7 @@ analytics:
 author:
   name             : "Jaehoon Jung"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Entry Data Analyst \n\n
+  bio              : "Data Analyst \n\n
                       Stony Brook University"
   location         : "Stony Brook, NY"
   email            : "hoon7589@gmail.com"
@@ -122,6 +122,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/jaehoon_jung98"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jaehoon-jung-6174a1251/"
 
 # Site Footer
 footer:
@@ -132,6 +135,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/jaehoon_jung98"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jaehoon-jung-6174a1251/"
 
 
 # Reading Files
