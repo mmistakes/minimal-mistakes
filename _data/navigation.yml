@@ -4,6 +4,12 @@ main:
   #  url: /aboutme/
   #- title: "Project"
   #  url: /projects/
+  - title: "About me"
+    url: /aboutme/
+    # COVER LETTER
+  - title: "Resume"
+    url: /resume/
+    #PDF UPLOAD
   - title: "Category"
     url: /categories/
   - title: "Tag"
