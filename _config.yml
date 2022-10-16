@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Hamin Chang 장하민"
   avatar           : '/assets/profile.jpg'
-  bio              : "👨‍🔧 공대생의 딥러닝 & \컴퓨터비전 도전기"
+  bio              : "👨‍🔧 공대생의 딥러닝 & \n컴퓨터비전 도전기"
   location         : "Seoul Korea"
   email            :
   links:
