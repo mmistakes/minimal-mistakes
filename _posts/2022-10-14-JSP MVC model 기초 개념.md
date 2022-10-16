@@ -2,6 +2,7 @@
 layout: single
 title: "간단한 Stream 사용서"
 categories: JAVA
+author_profile: false
 ---
 
 

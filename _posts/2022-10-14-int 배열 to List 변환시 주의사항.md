@@ -2,6 +2,7 @@
 layout: single
 title: "원시타입 배열과 list의 변환시 주의사항"
 categories: JAVA
+author_profile: false
 ---
 
 ## 원시타입 배열과 list의 변환시 주의사항

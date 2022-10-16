@@ -2,6 +2,7 @@
 layout: single
 title: "Service Loader의 개념 이해하기!"
 toc: true
+author_profile: false
 ---
 
 # 서비스 로더
