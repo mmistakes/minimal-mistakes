@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "간단한 Stream 사용서"
+title: "원시타입 배열과 list의 변환시 주의사항"
 categories: JAVA
 ---
 
