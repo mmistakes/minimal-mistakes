@@ -1,5 +1,5 @@
 ---
-title : '[DL] 케라스 사용법 : 모델 구축을 위한 기본기 🛠️'
+title : '[DL/BASIC] 케라스 사용법 : 모델 구축을 위한 기본기 🛠️'
 layout: single
 ---
 
