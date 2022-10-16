@@ -1,0 +1,18 @@
+{
+  "githubRepo": "akkuchan_blog",
+  "githubToken": "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",
+  "githubUserName": "Akkuchan",
+  "gardenBaseUrl": "",
+  "prHistory": [],
+  "theme": "dark",
+  "baseTheme": "{\"name\": \"default\", \"modes\": [\"dark\"]}",
+  "faviconPath": "",
+  "showRibbonIcon": true,
+  "defaultNoteSettings": {
+    "dgHomeLink": true,
+    "dgPassFrontmatter": false,
+    "dgShowBacklinks": false,
+    "dgShowLocalGraph": false,
+    "dgShowInlineTitle": false
+  }
+}

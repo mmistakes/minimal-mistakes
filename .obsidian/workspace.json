@@ -4,16 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "7b3334a59f4cf0f5",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "_posts/2022-10-14-JDBC 개념 정리.md",
-            "mode": "source",
-            "source": false
+        "id": "d25e8805f179fef7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ceaae215764a7c45",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2022-10-14-JDBC 개념 정리.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        }
+        ]
       }
     ],
     "direction": "vertical"
@@ -31,7 +37,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -61,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 510.00732421875
+    "width": 368.005859375
   },
   "right": {
     "id": "7276adb92d6e4b6d",
@@ -128,17 +136,20 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7b3334a59f4cf0f5",
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "ceaae215764a7c45",
   "lastOpenFiles": [
-    "_posts/2022-10-14-SQL 정규화.md",
-    "_posts/2022-10-14-SQL 데이터 모델 설계.md",
-    "_posts/2022-10-14-List와 배열의 관계.md",
-    "_posts/2022-10-14-JSP MVC model 기초 개념.md",
-    "images/MVC model1.png",
-    "images/MVC패턴.png",
-    "images/Pasted image 20220811213011.png",
+    "_posts/2022-10-14-int 배열 to List 변환시 주의사항.md",
+    "_posts/2022-10-14-JDBC 개념 정리.md",
+    "_posts/2022-10-14-트랜잭션.md",
+    "images/서블릿계층구조.jpg",
+    "images/서블릿동작과정.png",
+    "images/Pasted image 20220811211600.png",
     "images/Pasted image 20220811211617.png",
-    "images/Pasted image 20220811232833.png",
-    "images/Pasted image 20220811215757.jpg"
+    "images/Pasted image 20220811212624.png",
+    "images/Pasted image 20220812003014.png",
+    "_posts/2022-10-14-SQL 정규화.md"
   ]
 }

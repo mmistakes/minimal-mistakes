@@ -1,0 +1,18 @@
+.digital-garden-publish-status-view ul {
+    list-style-type: none;
+    position: relative;
+    margin-left: 5px;
+    margin-top: 0;
+    max-height: 250px;
+    overflow: auto;
+}
+
+.digital-garden-publish-status-view h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.digital-garden-publish-status-view .collapsable {
+    cursor: pointer;
+    margin-left: 10px;
+}
