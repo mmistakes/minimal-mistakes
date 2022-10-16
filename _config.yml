@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "dark" , "air"  , "aqua", "contrast",  "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "dark" , "default"  , "aqua", "contrast",  "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Hamin Chang"
+  name             : "Hamin Chang 장하민"
   avatar           : '/assets/profile.jpg'
-  bio              : "I am justcoder."
+  bio              : "👨‍🔧 공대생의 딥러닝 & 컴퓨터비전 도전기"
   location         : "Seoul Korea"
   email            :
   links:
