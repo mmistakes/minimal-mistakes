@@ -1,5 +1,5 @@
 ---
-title : '[DL] 텐서(Tensor) 알아보기 📊 '
+title : '[DL/BASIC] 텐서(Tensor) 알아보기 📊 '
 layout : single
 ---
 
