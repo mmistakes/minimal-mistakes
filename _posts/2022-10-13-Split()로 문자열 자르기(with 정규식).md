@@ -4,6 +4,8 @@ title: "Split()로 문자열 자르기(with 정규식)"
 categories: JAVA
 toc: true
 author_profile: false
+sidebar:
+    nav: "docs"
 ---
 
 

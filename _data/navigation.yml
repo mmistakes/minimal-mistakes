@@ -3,7 +3,7 @@ main:
   - title: "Category"
     url: /categories/
   - title: "Tag"
-    url: /tags/
+    url: /tags/    
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/ 
   # - title: "About"
@@ -14,3 +14,18 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+docs:
+  - title: "프로그래밍"
+    children:
+      - title: "Category"
+        url: /categories/
+      - title: "Tag" 
+        url: /tags/ 
+
+  - title: "일상"
+    children:
+      - title: "Life"
+        url: /life/
+
+        
