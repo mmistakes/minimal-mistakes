@@ -13,13 +13,13 @@
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 # 스킨 설정 
-minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
 title                    : "Akkuchan_Blog"
 title_separator          : "|"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "오늘보다 나은 내일을 위한 발자취" # site tagline that appears below site title in masthead
 name                     : "Akkuchan"
 description              : "오늘보다 나은 내일을 위한 발자취"
 url                      : "https://Akkuchan.github.io"
