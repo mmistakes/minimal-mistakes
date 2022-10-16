@@ -288,7 +288,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true # 댓글 기능 설정 
+      comments: true
       share: true
       related: true
       show_date : true # 각 포스트를 올릴 때마다 작성일이 추가되는 설정, 날짜 형식 변경도 가능
