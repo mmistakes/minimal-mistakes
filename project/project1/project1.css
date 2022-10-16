@@ -1,0 +1,21 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.navbar{
+  display: flex;
+  background-color: blueviolet;
+  height: 10vh;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar_logo{
+  display: flex;
+  color: aliceblue;
+  justify-content: center;
+}
