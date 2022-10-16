@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2022-10-12-RecSys3.md",
+            "file": "_posts/2022-10-12-RecSys4.md",
             "mode": "source",
             "source": false
           }
@@ -61,7 +61,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 234.5
+    "width": 234.5,
+    "collapsed": true
   },
   "right": {
     "id": "084c1a1a0617b971",
@@ -77,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-10-12-RecSys3.md",
+                "file": "_posts/2022-10-12-RecSys4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-10-12-RecSys3.md",
+                "file": "_posts/2022-10-12-RecSys4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-10-12-RecSys3.md"
+                "file": "_posts/2022-10-12-RecSys4.md"
               }
             }
           }
@@ -130,15 +131,15 @@
   },
   "active": "54d35f586e2334ad",
   "lastOpenFiles": [
+    "_posts/2022-10-12-RecSys3.md",
     "_posts/2022-10-15-RecSys8.md",
+    "_posts/2022-10-15-RecSys7.md",
+    "_posts/2022-10-04-DL4.md",
+    "_posts/2022-10-05-daily.md",
     "_posts/Pasted image 20221015214853.png",
     "screenshot-layouts.png",
     "screenshot.png",
-    "_posts/2022-10-12-RecSys3.md",
     "_posts/2022-10-12-RecSys4.md",
-    "_posts/2022-10-11-RecSys2.md",
-    "_posts/2022-10-15-RecSys7.md",
-    "_posts/2022-10-15-RecSys6.md",
-    "_posts/2022-10-14-RecSys5.md"
+    "_posts/2022-10-11-RecSys2.md"
   ]
 }
