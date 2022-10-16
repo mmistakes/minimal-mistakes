@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "dark" , "air"  , "aqua", "contrast",  "d
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Just Deep Learning"
+title                    : "Just DL & CV 👨‍💻"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Hamin Chang"
-description              : "An amazing website."
+name                     : "Hamin Chang 장하민 "
+description              : "👨‍🔧 공대생의 딥러닝 & 컴퓨터비전 도전기"
 url                      : "https://Hamin-Chang.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
