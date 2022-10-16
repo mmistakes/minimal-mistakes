@@ -28,7 +28,7 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -105,11 +105,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Akkuchan"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "What i have learned"
+  location         : "South Korea"
+  email            : "pohd8494@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -291,3 +291,6 @@ defaults:
       comments: # true
       share: true
       related: true
+      show_date : true # 각 포스트를 올릴 때마다 작성일이 추가되는 설정, 날짜 형식 변경도 가능
+
+date_format: "%Y-%m-%d" # 날짜 형식 변경
