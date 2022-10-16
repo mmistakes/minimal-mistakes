@@ -182,7 +182,7 @@ keras.utils.plot_model(model,'ticket_classifier_with_shape.png',show_shapes=True
 
 
     
-![png](20221015_files/20221015_17_0.png)
+![10-16-first](https://user-images.githubusercontent.com/77332628/196033530-10020b81-2ce5-4fd5-9e9a-ea3bca0c868e.png)
     
 
 
@@ -258,7 +258,7 @@ keras.utils.plot_model(new_model,'updated_ticket_classifier.png',show_shapes=Tru
 
 
     
-![png](20221015_files/20221015_25_0.png)
+![10-16-second](https://user-images.githubusercontent.com/77332628/196033533-8437b922-33df-464d-ae4d-97b098771bbf.png)
     
 
 
