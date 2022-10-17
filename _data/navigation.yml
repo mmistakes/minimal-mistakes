@@ -5,7 +5,7 @@ main:
  - title: "Tag"
    url: /tags/
  - title: "SpringBoot"
-   url: /springboot/
+   url: /categories/springboot/
    
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
