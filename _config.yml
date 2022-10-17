@@ -291,6 +291,12 @@ collections:
   mathematics_for_data_science:
     output: true
     permalink: /courses_in_english/:collection/:path/
+  introduction_to_programming_in_python:
+    output: true
+    permalink: /courses_in_english/:collection/:path/
+  wprowadzenie_do_programowania_w_jezyku_python:
+    output: true
+    permalink: /courses_in_polish/:collection/:path/
 
 # Defaults
 defaults:
@@ -334,6 +340,24 @@ defaults:
   - scope:
       path: ""
       type: mathematics_for_data_science
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      comment: false
+  # _introduction_to_programming_in_python
+  - scope:
+      path: ""
+      type: introduction_to_programming_in_python
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      comment: false
+  # wprowadzenie_do_programowania_w_jezyku_python
+  - scope:
+      path: ""
+      type: wprowadzenie_do_programowania_w_jezyku_python
     values:
       layout: single
       author_profile: false
