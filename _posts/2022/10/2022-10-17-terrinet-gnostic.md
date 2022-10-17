@@ -14,7 +14,7 @@ teaser: "/assets/images/posts/2022/10/terrinet-thumb.webp"
 
 ## TERRINet project and Host Institution
 
-We was granted to participate in the TERRINet project, which is a part of the European Union’s Horizon 2020 research and innovation programme. We were hosted at the Institut de Robòtica i Informàtica Industrial Universitat at Politècnica de Catalunya, Spain. During the 7-day stay, Marek, Dominik, Przemyslaw, and Bartosz worked on the vision surveillance in the smart city project.
+We were granted to participate in the TERRINet project, which is a part of the European Union’s Horizon 2020 research and innovation programme. We were hosted at the Institut de Robòtica i Informàtica Industrial Universitat at Politècnica de Catalunya, Spain. During the 7-day stay, Marek, Dominik, Przemyslaw, and Bartosz worked on the vision surveillance in the smart city project.
 
 <p align="center">
     <img src="/assets/images/posts/2022/10/team-front.webp" height="300px" />
@@ -53,12 +53,11 @@ Now, we plan to re-identify people between the cameras and provide this informat
     <img src="/assets/images/posts/2022/10/public-access.webp" height="300px" />
 </p>
 
-A really inspiring place for us was the spot of "open access publishing", where you can get and read the latest publications at the institute. We will definitely try to copy the idea to Poznan!
+A really inspiring place for us was the spot of "open access publishing", where you can get and read the latest publications at the institute. We will definitely try to apply this idea at our PUT!
 
 ## Summary
 
-Now, after the finish of travel, we plan to merge all benchmarks and knowledge boosts in order to prepare a conference paper.
-
+Now, once the trip is over, we plan to merge all benchmarks and knowledge boosts in order to prepare a conference paper.
 
 <p align="center">
     <img src="/assets/images/posts/2022/03/terrinet.webp"/>
