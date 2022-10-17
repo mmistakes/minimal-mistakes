@@ -14,3 +14,4 @@ git pullrequest test 7th.
 3. checkout origin **< main or master >**
 4. create pull request
 5. merge " local  **< branch >** " into origin **< main or master >**
+6. pull at **< main or master >**
