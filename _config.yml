@@ -241,6 +241,7 @@ jekyll-archives:
   enabled:
     - categories
     - tags
+    - springboot
   layouts:
     category: archive-taxonomy
     tag: archive-taxonomy
