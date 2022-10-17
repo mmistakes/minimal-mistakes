@@ -7,9 +7,8 @@ header:
   overlay_color: "#333"
 ---
 
-# Introduction
+# Objective:
 
+This page hosts projects and code examples made available as complementary material to other content available on the web.
 
-This page hosts some projects and code examples
-
-The page is still under construction
+Page still under construction
