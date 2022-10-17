@@ -18,7 +18,7 @@ Tag: [springboot-basic]
 * **정적 컨텐츠 :** 파일을 그대로 웹 브라우저에 전달
 * **MVC와 템플릿엔진:** 서버에서 변형을 해서 전달
 
-![MVC, 템플릿 엔진 이미지](../assets/images/2022-10-17-14-52-56.png)
+![MVC, 템플릿 엔진 이미지](/assets/images/2022-10-17-14-52-56.png)
 
 * **API:** json 구조를 통해 클라이언트에게 데이터 전달, 서버끼리 통신할 때도 많이 씀
     API를 이용할 때는 @ReponseBody 를 사용
@@ -30,7 +30,7 @@ Tag: [springboot-basic]
 
   - 기본 객체처리: MappingJackson2HttpMessageConverter
   
-  ![사용 원리 이미지](../assets/images/2022-10-17-14-54-39.png)
-  ![사용 예시 이미지](../assets/images/2022-10-17-14-55-07.png)
+  ![사용 원리 이미지](/assets/images/2022-10-17-14-54-39.png)
+  ![사용 예시 이미지](/assets/images/2022-10-17-14-55-07.png)
 
   ##### → 객체를 반환하는 것, view 없이 json 방식으로 브라우저에 내용을 띄움
