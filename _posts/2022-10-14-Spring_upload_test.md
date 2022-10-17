@@ -7,7 +7,7 @@ Tag: [manual]
 <link rel="short icon" href="#">
 git pullrequest test 7th.
 ---
-### github blog 잔디 심기!
+### github blog 잔디 심기!!
 
 1. local  **< branch >** 글 작성 및 수정 
 2. local  **< branch >** commit & push to origin
