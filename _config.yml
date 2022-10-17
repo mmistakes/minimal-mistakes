@@ -26,6 +26,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : NordIQuEst/nordiquest.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/NordIQuEst_logo2.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo2                     : "/assets/footer-icons/footer-logo-neic.svg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 # show_date                : true
@@ -137,14 +138,18 @@ footer:
     - label: ""
       img: "/assets/footer-icons/footer-logo-neic.svg"
       url: "https://neic.no"
-    - label: "CHALMERS"
-      icon: "fas fa-atom fa-lg icon-color-chalmers"
-      #img: "/assets/footer-icons/footer-logo-vtt.svg"
+    - label: ""
+      # icon: "fas fa-atom fa-lg icon-color-chalmers"
+      img: "/assets/footer-icons/footer-logo-chalmers.svg"
       url: "https://www.chalmers.se/en"
-    - label: "CSC"
-      icon: "fas fa-atom fa-lg icon-color-csc"
-      #img: "/assets/footer-icons/footer-logo-csc.svg"
+    - label: ""
+      # icon: "fas fa-atom fa-lg icon-color-csc"
+      img: "/assets/footer-icons/footer-logo-csc.svg"
       url: "https://research.csc.fi/"
+    - label: ""
+      # icon: "fas fa-university fa-lg icon-color-tartu"
+      img: "/assets/footer-icons/footer-logo-UT.svg"
+      url: "https://ut.ee/en"
     - label: "DTU"
       icon: "fas fa-university fa-lg icon-color-dtu"
       #img: "/assets/footer-icons/footer-logo-aalto.svg"
@@ -157,32 +162,10 @@ footer:
       icon: "fas fa-university fa-lg icon-color-simula"
       #img: "/assets/footer-icons/footer-logo-aalto.svg"
       url: "https://www.simula.no/"
-    - label: "University of Tartu"
-      icon: "fas fa-university fa-lg icon-color-tartu"
-      #img: "/assets/footer-icons/footer-logo-aalto.svg"
-      url: "https://ut.ee/en"
     - label: "VTT"
       icon: "fas fa-atom fa-lg icon-color-vtt"
       #img: "/assets/footer-icons/footer-logo-aalto.svg"
       url: "https://www.vttresearch.com/en"
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
-      # url:
-    # - label: "Facebook"
-    #   icon: "fab fa-fw fa-facebook-square"
-      # url:
-    # - label: "GitHub"
-    #   icon: "fab fa-fw fa-github"
-    #   url: "https://github.com/FiQCI/fiqci.github.io"
-    # - label: "GitLab"
-    #   icon: "fab fa-fw fa-gitlab"
-      # url:
-    # - label: "Bitbucket"
-    #   icon: "fab fa-fw fa-bitbucket"
-      # url:
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-      # url:
 
 
 # Reading Files
