@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "TERRINet 10th Call and Institut de Robòtica i Informàtica Industrial Universitat at Politècnica de Catalunya"
+title: "TERRINet 10th Call and Institut de Robòtica i Informàtica Industrial at Universitat Politècnica de Catalunya"
 author: [ptak-bartosz, pieczynski-dominik, aszkowski-przemyslaw, kraft-marek]
 modified: 2022-10-17
 tags: [research, computer vision, smart surveillance, deep learning]
@@ -14,7 +14,7 @@ teaser: "/assets/images/posts/2022/10/terrinet-thumb.webp"
 
 ## TERRINet project and Host Institution
 
-We were granted to participate in the TERRINet project, which is a part of the European Union’s Horizon 2020 research and innovation programme. We were hosted at the Institut de Robòtica i Informàtica Industrial Universitat at Politècnica de Catalunya, Spain. During the 7-day stay, Marek, Dominik, Przemyslaw, and Bartosz worked on the vision surveillance in the smart city project.
+We were granted to participate in the TERRINet project, which is a part of the European Union’s Horizon 2020 research and innovation programme. We were hosted at the Institut de Robòtica i Informàtica Industrial at Universitat Politècnica de Catalunya, Spain. During the 7-day stay, Marek, Dominik, Przemyslaw, and Bartosz worked on the vision surveillance in the smart city project.
 
 <p align="center">
     <img src="/assets/images/posts/2022/10/team-front.webp" height="300px" />
@@ -63,4 +63,4 @@ Now, once the trip is over, we plan to combine the acquired knowledge and test d
     <img src="/assets/images/posts/2022/03/terrinet.webp"/>
 </p>
 
-> We acknowledge the support of the TERRINet project and would like to express our gratitude to the Institut de Robòtica i Informàtica Industrial Universitat team at Politècnica de Catalunya for their hospitality and help. Special thanks to Riccardo, who supported us during our stay.
+> We acknowledge the support of the TERRINet project and would like to express our gratitude to the Institut de Robòtica i Informàtica Industrial team at Universitat Politècnica de Catalunya for their hospitality and help. Special thanks to Riccardo, who supported us during our stay.
