@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "SpringBoot - Basic #1"
-categories: springboot-basic
+categories: springboot
 Tag: [springboot]
 ---
 # SpringBoot 환경설정 / 프로젝트 생성/ view 환경 설정/ build 하고 실행 시키기
