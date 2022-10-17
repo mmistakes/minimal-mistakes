@@ -57,7 +57,7 @@ A really inspiring place for us was the spot of "open access publishing", where 
 
 ## Summary
 
-Now, once the trip is over, we plan to merge all benchmarks and knowledge boosts in order to prepare a conference paper.
+Now, once the trip is over, we plan to combine the acquired knowledge and test data to prepare a research paper.
 
 <p align="center">
     <img src="/assets/images/posts/2022/03/terrinet.webp"/>
