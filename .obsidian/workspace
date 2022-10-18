@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2022-10-18-github.md",
+            "file": "_posts/2022-10-15-RecSys7.md",
             "mode": "source",
             "source": false
           }
@@ -61,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 234.5,
-    "collapsed": true
+    "width": 234.5
   },
   "right": {
     "id": "084c1a1a0617b971",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-10-18-github.md",
+                "file": "_posts/2022-10-15-RecSys7.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-10-18-github.md",
+                "file": "_posts/2022-10-15-RecSys7.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-10-18-github.md"
+                "file": "_posts/2022-10-15-RecSys7.md"
               }
             }
           }
@@ -131,8 +130,8 @@
   },
   "active": "54d35f586e2334ad",
   "lastOpenFiles": [
-    "2022-10-18.md",
     "_posts/2022-10-18-github.md",
+    "2022-10-18.md",
     "_posts/2022-10-11-github.md",
     "_posts/2022-10-11-RecSys2.md",
     "_posts/2022-10-18-daily.md",
