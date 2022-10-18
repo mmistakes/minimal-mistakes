@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2022-10-17-RecSys10.md",
+            "file": "_posts/2022-10-18-github.md",
             "mode": "source",
             "source": false
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-10-17-RecSys10.md",
+                "file": "_posts/2022-10-18-github.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-10-17-RecSys10.md",
+                "file": "_posts/2022-10-18-github.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-10-17-RecSys10.md"
+                "file": "_posts/2022-10-18-github.md"
               }
             }
           }
@@ -131,15 +131,15 @@
   },
   "active": "54d35f586e2334ad",
   "lastOpenFiles": [
-    "_posts/2022-10-15-RecSys8.md",
-    "_posts/2022-10-15-RecSys7.md",
-    "_posts/2022-10-16-RecSys9.md",
+    "2022-10-18.md",
+    "_posts/2022-10-18-github.md",
+    "_posts/2022-10-11-github.md",
+    "_posts/2022-10-11-RecSys2.md",
+    "_posts/2022-10-18-daily.md",
+    "_posts/2022-10-17-daily.md",
     "_posts/2022-10-15-RecSys6.md",
-    "_posts/2022-10-17-RecSys10.md",
-    "_posts/2022-10-14-RecSys5.md",
-    "_posts/2022-10-04-DL4.md",
-    "_posts/2022-10-05-daily.md",
-    "_posts/2022-10-05-DL5.md",
-    "_posts/2022-10-04-DL3.md"
+    "_posts/2022-10-12-RecSys3.md",
+    "_posts/2022-10-12-RecSys4.md",
+    "_posts/2022-10-14-RecSys5.md"
   ]
 }
