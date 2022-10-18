@@ -9,13 +9,96 @@ body{
 .navbar{
   display: flex;
   background-color: blueviolet;
-  height: 10vh;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
 }
 
 .navbar_logo{
   display: flex;
-  color: aliceblue;
   justify-content: center;
+  font-size: 24px; 
+  color: aliceblue;
 }
+
+.navbar_logo i{
+  color: blue; 
+}
+
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+ul>li{
+  padding: 10px;
+}
+
+
+.navbar_menu{
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  align-items: center;
+  list-style: none;
+  }
+
+.navbar_menu li{
+  padding: 8px 12px;
+}
+
+.navbar_icons{
+  list-style: none;
+  color: aliceblue;
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar_icons li{
+  padding: 8px 12px;
+}
+
+.navbar_menu li:hover{
+  background-color: brown;
+  border-radius: 10px;
+}
+.navbar_toggleBtn{
+  display: none;
+  position: absolute;
+  right: 30px;
+  font-size: 24px;
+  color: cyan;
+}
+
+
+@media screen and (max-width:768px) {
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+  .navbar_menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar_menu li{
+    width: 100%;
+    text-align: center;
+  }
+  .navbar_icons {
+   display: none;
+   justify-content: center;
+   width: 100%;
+  }
+  .navbar_toggleBtn{
+    display: block
+  }
+  .navbar_menu.active,
+  .navbar_icons.active {
+    display: flex;
+  }
+}
+
