@@ -7,11 +7,9 @@
         "id": "54d35f586e2334ad",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "image",
           "state": {
-            "file": "_posts/2022-10-15-RecSys7.md",
-            "mode": "source",
-            "source": false
+            "file": "images/2022-10-15-RecSys7/스크린샷 2022-10-18 오후 11.29.54.png"
           }
         }
       }
@@ -77,7 +75,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-10-15-RecSys7.md",
+                "file": "images/2022-10-15-RecSys7/스크린샷 2022-10-18 오후 11.29.54.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +92,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-10-15-RecSys7.md",
+                "file": "images/2022-10-15-RecSys7/스크린샷 2022-10-18 오후 11.29.54.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-10-15-RecSys7.md"
+                "file": "images/2022-10-15-RecSys7/스크린샷 2022-10-18 오후 11.29.54.png"
               }
             }
           }
@@ -130,15 +128,15 @@
   },
   "active": "54d35f586e2334ad",
   "lastOpenFiles": [
+    "images/2022-10-06-DL8/image-20221006113403398.png",
+    "images/2022-10-06-DL8/image-20221006115430070.png",
+    "images/2022-10-06-DL8/image-20221006132027291.png",
+    "images/2022-10-06-DL8/image-20221006132714859.png",
+    "images/2022-10-06-DL8/image-20221006135304428.png",
+    "images/2022-10-06-DL8/image-20221006144000195.png",
+    "images/2022-10-06-DL8/image-20221006144039635.png",
+    "_posts/2022-10-15-RecSys7.md",
     "_posts/2022-10-18-github.md",
-    "2022-10-18.md",
-    "_posts/2022-10-11-github.md",
-    "_posts/2022-10-11-RecSys2.md",
-    "_posts/2022-10-18-daily.md",
-    "_posts/2022-10-17-daily.md",
-    "_posts/2022-10-15-RecSys6.md",
-    "_posts/2022-10-12-RecSys3.md",
-    "_posts/2022-10-12-RecSys4.md",
-    "_posts/2022-10-14-RecSys5.md"
+    "2022-10-18.md"
   ]
 }
