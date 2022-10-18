@@ -6,7 +6,7 @@ Tag: [springboot-basic]
 ---
 # 스프링 빈과 의존관계(자바 코드로 직접 스프링 빈 등록)
 
-직접 등록
+#### 직접 등록
 
 springConfig 클래스 만들기
 @Configuration  어노테이션 설정
@@ -14,7 +14,7 @@ springConfig 클래스 만들기
 (스프링 컨테이너에 올라간 객체들만 Autowired가 성립 됨)
 
 <hr>
-DI 3가지
+#### DI 3가지
 
 1. 필드 주입 - 고칠 수 없어서 사용 잘 안함​
 
