@@ -270,5 +270,8 @@ defaults:
       show_date : true
       mathjax: true
       sidebar_main: true
+      toc_ads: true
+      toc_sticky : true
+
 
 date_format : "%Y-%m-%d"
