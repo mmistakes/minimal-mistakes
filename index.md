@@ -9,6 +9,6 @@ header:
 
 # Objective:
 
-This page hosts projects and code examples made available as complementary material to other content available on the web.
+This page hosts projects and code examples made available as complementary material to other contents of mine available on the web.
 
 Page still under construction

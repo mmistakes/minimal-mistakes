@@ -1,6 +1,8 @@
 
 # main links
 main:  
+  - title: "Home"
+    url: https://tomoegusberti.github.io/#introduction
   - title: "R-ShinyApps"
     url: /R-ShinyApps
   - title: "Collections"
@@ -8,4 +10,4 @@ main:
   - title: "Categories"
     url: /categories
   - title: "About"
-    url: https://tomoegusberti.github.io/#introduction
+    url: /about
