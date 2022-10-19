@@ -63,4 +63,4 @@ Now, once the trip is over, we plan to combine the acquired knowledge and test d
     <img src="/assets/images/posts/2022/03/terrinet.webp"/>
 </p>
 
-> We acknowledge the support of the TERRINet project and would like to express our gratitude to the Institut de Robòtica i Informàtica Industrial team at Universitat Politècnica de Catalunya for their hospitality and help. Special thanks to Riccardo, who supported us during our stay.
+> We acknowledge the support of the TERRINet project and would like to express our gratitude to the Institut de Robòtica i Informàtica Industrial team at Universitat Politècnica de Catalunya for their hospitality and help. Special thanks to Fernando, who supported us during our stay.
