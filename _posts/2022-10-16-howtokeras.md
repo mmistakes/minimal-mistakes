@@ -328,4 +328,5 @@ model = keras.models.load_model('checkpoint_path.keras')
 
 출처:
 프랑소와 숄레 지음, ⌜케라스 창시자에게 배우는 딥러닝 개정2판⌟, 박해선 옮김, 길벗, 2022 , 259-282쪽
+
 도서보기: https://www.gilbut.co.kr/book/view?bookcode=BN003496
