@@ -1,3 +1,5 @@
+# 파이썬 알고리즘 인터뷰 3장, 파이썬에 관하여
+
 # Chapter 3 Python
 
 Often, the most incredible brainchilds of hackers are created right after Christmas. In December 1989, Guido Van Rossum, a computer scientist from the Netherlands, now in his mid-thirties, struggled due to the limitations of diverse programming languages. He decided to create a new language as his Christmas project.
