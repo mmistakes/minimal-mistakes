@@ -1,3 +1,7 @@
+---
+layout : post
+title : "This is the first post"
+---
 # 파이썬 알고리즘 인터뷰 3장, 파이썬에 관하여
 
 # Chapter 3 Python
