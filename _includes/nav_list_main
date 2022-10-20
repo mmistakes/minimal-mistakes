@@ -70,7 +70,16 @@
                 {% endfor %}
             </ul>
 
-        <span class="nav__sub-title">scikit-learn</span>
+        <span class="nav__sub-title">Pytorch</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "pytorch" %}
+                        <li><a href="/categories/pytorch" class="">pytorch ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <span class="nav__sub-title">Scikit-Learn</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "scikit-learn" %}
