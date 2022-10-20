@@ -1,6 +1,6 @@
 ---
 layout : post
-title : "This is the first post"
+title : "Python Algorithm Interview Chapter 3, Python"
 ---
 # 파이썬 알고리즘 인터뷰 3장, 파이썬에 관하여
 
