@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "default" , "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Bobetti blog for programming"
+title                    : "Bobett-log"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Hyegang Kim"
