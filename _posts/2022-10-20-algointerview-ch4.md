@@ -1,6 +1,6 @@
 ---
 layout : post
-title : "This is the first post"
+title : "Python Algorithm Interview Chapter 4,  Big-O, Datatypes"
 ---
 
 #Chapter 4 Big-O, Datatypes
