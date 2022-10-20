@@ -106,11 +106,11 @@ analytics:
 author:
   name             : "Hyegang"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "trying to keep **up to date**"
+  bio              : "trying to keep the blog **up to date**"
   location         : "Namyangju, Korea"
   email            : mw116208@yonsei.ac.kr
   links:
-    - label: "Email"
+    - label: "mw116208@yonsei.ac.kr"
       icon: "fas fa-fw fa-envelope-square"
       url: "mw116208@yonsei.ac.kr"
     - label: "Website"
