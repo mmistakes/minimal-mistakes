@@ -1,9 +1,10 @@
 ---
 title: "Upcoming Open Mic - Variables and Environment in Docker"
 categories: [Open Mic Session, Open Mic]
+excerpt: Docker has changed the way applications are built and run. However, one of the frequent pain points for newcomers is configuration of the containers - what are `ENV`, `ARG`, environment, `.env` file etc.
 ---
 
-{% include figure image_path="assets/images/openmics/2022-10-21-docker.png" alt="Martin Ledvinka - Variables and Environment in DOcker" %}{: .post-image }
+{% include figure image_path="assets/images/openmics/2022-10-21-docker.png" alt="Martin Ledvinka - Variables and Environment in Docker" %}{: .post-image }
 
 Speaker [Martin Ledvinka](https://kbss.felk.cvut.cz/web/team#martin-ledvinka) took presentation on 21st October with the topic Variables and Environment in Docker.
 
