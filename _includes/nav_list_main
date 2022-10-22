@@ -25,15 +25,15 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "java" %}
-                        <li><a href="/categories/java" class="">Java ({{category[1].size}})</a></li>
+                    {% if category[0] == "jpa" %}
+                        <li><a href="/categories/jpa" class="">JPA ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "jpa" %}
-                        <li><a href="/categories/jpa" class="">JPA ({{category[1].size}})</a></li>
+                    {% if category[0] == "java" %}
+                        <li><a href="/categories/java" class="">Java ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

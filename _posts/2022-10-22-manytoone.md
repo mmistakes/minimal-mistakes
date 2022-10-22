@@ -2,7 +2,7 @@
 layout: single
 title: "[JPA]다대일[N:1] 연관관계 매핑"
 excerpt : "@ManyToOne"
-categories: jpa
+categories: jpa
 ---
 
 ## 다대일 단방향 연관관계 매핑하기
