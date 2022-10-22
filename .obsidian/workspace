@@ -7,9 +7,11 @@
         "id": "54d35f586e2334ad",
         "type": "leaf",
         "state": {
-          "type": "image",
+          "type": "markdown",
           "state": {
-            "file": "images/2022-10-15-RecSys7/스크린샷 2022-10-18 오후 11.29.54.png"
+            "file": "_posts/2022-10-20-daily.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -59,7 +61,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 234.5
+    "width": 234.5,
+    "collapsed": true
   },
   "right": {
     "id": "084c1a1a0617b971",
@@ -75,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "images/2022-10-15-RecSys7/스크린샷 2022-10-18 오후 11.29.54.png",
+                "file": "_posts/2022-10-20-daily.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "images/2022-10-15-RecSys7/스크린샷 2022-10-18 오후 11.29.54.png",
+                "file": "_posts/2022-10-20-daily.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -115,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "images/2022-10-15-RecSys7/스크린샷 2022-10-18 오후 11.29.54.png"
+                "file": "_posts/2022-10-20-daily.md"
               }
             }
           }
@@ -128,15 +131,15 @@
   },
   "active": "54d35f586e2334ad",
   "lastOpenFiles": [
-    "images/2022-10-06-DL8/image-20221006113403398.png",
-    "images/2022-10-06-DL8/image-20221006115430070.png",
-    "images/2022-10-06-DL8/image-20221006132027291.png",
-    "images/2022-10-06-DL8/image-20221006132714859.png",
-    "images/2022-10-06-DL8/image-20221006135304428.png",
-    "images/2022-10-06-DL8/image-20221006144000195.png",
-    "images/2022-10-06-DL8/image-20221006144039635.png",
-    "_posts/2022-10-15-RecSys7.md",
+    "_posts/2022-10-20-github.md",
+    "_posts/2022-10-19-daily.md",
+    "_posts/2022-10-20-daily.md",
     "_posts/2022-10-18-github.md",
-    "2022-10-18.md"
+    "_posts/2022-10-11-github.md",
+    "_posts/2022-10-17-daily.md",
+    "_posts/2022-10-19-NLP3.md",
+    "_posts/2022-10-19-NLP1.md",
+    "_posts/2022-10-19-NLP2.md",
+    "_posts/2022-10-17-RecSys10.md"
   ]
 }
