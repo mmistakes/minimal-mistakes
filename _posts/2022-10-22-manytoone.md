@@ -28,7 +28,7 @@ categories: jpa
 
 ### [ex] 예시로 유튜버와 구독자를 나타내는 다대일을 나타내 보자.
 
-![Alt ManyToOne](./img/ManyToOne.png)
+![Alt ManyToOne](https://raw.githubusercontent.com/Euihyunee/Euihyunee.github.io/master/_posts/img/ManyToOne.png)
 
 많은 쪽 Subscriber(구독자)쪽이 N이고 Youtuber(유튜버)가 1인 경우이다. 많은 쪽에 외래키를 설정해 주었고, Subscriber에서 Youtuber로 참조를 한다고 하면 YOUTUBER_ID를 가지고 참조하면 됨. DB설계에서 외래키는 항상 "다"에 가야한다.
 
