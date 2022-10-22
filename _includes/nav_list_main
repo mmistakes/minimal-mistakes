@@ -19,21 +19,21 @@
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
                     {% if category[0] == "spring" %}
-                        <li><a href="/categories/spring" class="">spring 블로그 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/spring" class="">spring ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "etc" %}
-                        <li><a href="/categories/etc" class="">기타둥둥 ({{category[1].size}})</a></li>
+                    {% if category[0] == "java" %}
+                        <li><a href="/categories/java" class="">Java ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "js" %}
-                        <li><a href="/categories/js" class="">JS ({{category[1].size}})</a></li>
+                    {% if category[0] == "jpa" %}
+                        <li><a href="/categories/jpa" class="">JPA ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
