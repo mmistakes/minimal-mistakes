@@ -8,6 +8,9 @@ redirect_from:
 ---
 
 
+My resume is available [here](https://rebrand.ly/NguemtoResume)
+
+
 
 Education
 ======
@@ -35,11 +38,8 @@ Skills
 * Python 
 * Matlab
 * R
-* SQL
+
    
-
-
-  
 
   
 
