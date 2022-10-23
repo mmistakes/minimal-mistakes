@@ -19,7 +19,7 @@ For books, I use **goodreads**, here are my [lists](https://www.goodreads.com/re
 
 ## Podcasts
 
-To listen to podcasts, I use Pocket Casts, but because the amount of them I either subscribe to (not necessarily listening to them) or have finished has grown to be quite unwieldy, I have decided to list here the ones I really love(d).
+To listen to podcasts, I use Pocket Casts, but because the amount of them I either subscribe to (not necessarily listening to them) or have finished has grown to be quite unwieldy, I have decided to list here the ones I really love(d) - this doesn't include podcasts used for learning language (see below).
 
 ### In Italiano
 
@@ -66,6 +66,7 @@ There's plenty of resources to learn languages online (some are obvious), but he
 
 * I am following the courses of the [Deutsche Welle](https://learngerman.dw.com/en/overview), they're really good as they lead you through your learning in an engaging yet serious way
 * I use Duolinguo too, but only coupled with grammar studying and the above
+* I am also using (with much fun) the [podcast](https://coffeebreaklanguages.com/coffeebreakgerman/) from the Coffee break series, it's really well made and very useful!
 
 
 ## Travelling
