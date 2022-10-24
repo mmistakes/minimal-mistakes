@@ -1,4 +1,4 @@
-#Chapter 4 Big-O, Datatypes
+##Chapter 4 Big-O, Datatypes
 
 Big-O is an important topic that is covered in almost all books about algorithm. In computer science, big-O is used to classify how the required time of processing (time complexity) and space requirements (space complexity) increase as the size of input value increases and is extremely useful in analyzing the efficiency of an algorithm.
 
