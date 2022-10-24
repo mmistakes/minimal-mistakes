@@ -1,9 +1,3 @@
----
-layout : post
-title : "Python Algorithm Interview Chapter 5, List, Dictionary"
----
-
-
 # Chapter 5 List, Dictionary
 
 Lists and Dictionaries are the data types that you will be most frequently using while coding with Python. Especially in coding tests, these two data types are the ones that are almost never left out in the probelms given during coding tests. Therefore, you have to fully understand its structure to form the basis and be aware of how to apply these so that you can freely use them in your solution. As a result, in chapter 5, we will cover these two in detail, the structure, logic, and grammar, apart from other data types.
