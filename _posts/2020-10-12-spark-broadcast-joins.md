@@ -31,6 +31,8 @@ val spark = SparkSession.builder()
     .appName("Broadcast Joins")
     .master("local")
     .getOrCreate()
+
+val sc = spark.sparkContext
 ```
 
 For this article, we'll be using the DataFrame API, although a very similar effect can be seen with the low-level RDD API.
