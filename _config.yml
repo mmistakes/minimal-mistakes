@@ -261,6 +261,7 @@ tag_archive:
 # jekyll-archives:
 #   enabled:
 #     - categories
+
 #     - tags
 #   layouts:
 #     category: archive-taxonomy
@@ -291,3 +292,4 @@ defaults:
       comments: # true
       share: true
       related: true
+      show_date: true
