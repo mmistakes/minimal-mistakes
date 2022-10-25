@@ -4,16 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "54d35f586e2334ad",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "_posts/2022-10-24-RecSysC01.md",
-            "mode": "source",
-            "source": false
+        "id": "3abe49fe36e41631",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b4a4efd8448feaf8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2022-10-24-RecSysC02.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aed40a026a1e12fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2022-10-24-RecSysC03.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1eb31c90e9b21f36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2022-10-24-RecSysC02.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "84504f1541d9a5f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2022-10-19-NLP1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        }
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -31,7 +74,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabeticalReverse"
+              }
             }
           },
           {
@@ -61,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 234.5,
+    "width": 200,
     "collapsed": true
   },
   "right": {
@@ -78,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-10-24-RecSysC01.md",
+                "file": "_posts/2022-10-24-RecSysC02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-10-24-RecSysC01.md",
+                "file": "_posts/2022-10-24-RecSysC02.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-10-24-RecSysC01.md"
+                "file": "_posts/2022-10-24-RecSysC02.md"
               }
             }
           }
@@ -129,17 +174,20 @@
     "width": 100,
     "collapsed": true
   },
-  "active": "54d35f586e2334ad",
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "1eb31c90e9b21f36",
   "lastOpenFiles": [
-    "_posts/2022-10-19-NLP1.md",
-    "_posts/2022-10-15-RecSys7.md",
     "_posts/2022-10-24-RecSysC01.md",
+    "_posts/2022-10-24-RecSysC04.md",
+    "_posts/2022-10-24-RecSysC03.md",
+    "_posts/2022-10-24-RecSysC02.md",
+    "_posts/2022-10-19-NLP1.md",
+    "test/_pets/tabby.md",
+    "_posts/2022-10-15-RecSys7.md",
     "_posts/2022-10-17-RecSys10.md",
     "_posts/2022-10-16-RecSys9.md",
-    "_posts/2022-10-20-github.md",
-    "_posts/2022-10-24-daily.md",
-    "_posts/2022-10-19-NLP3.md",
-    "_posts/2022-10-20-daily.md",
-    "_posts/2022-10-19-daily.md"
+    "_posts/2022-10-20-github.md"
   ]
 }
