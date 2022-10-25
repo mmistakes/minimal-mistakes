@@ -1,6 +1,6 @@
 ----
 layout: single
-title: "Welcome to My Github Blog"
+title:  Welcome to My Github Blog
 ----
 
 # Welcome To My Github Blog
