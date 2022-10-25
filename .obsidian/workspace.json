@@ -8,42 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b4a4efd8448feaf8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2022-10-24-RecSysC02.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aed40a026a1e12fa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2022-10-24-RecSysC03.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1eb31c90e9b21f36",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2022-10-24-RecSysC02.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "84504f1541d9a5f7",
             "type": "leaf",
             "state": {
@@ -54,9 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2d8a0b21232f732d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2022-10-25-RecSysC05.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -123,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-10-24-RecSysC02.md",
+                "file": "_posts/2022-10-25-RecSysC05.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-10-24-RecSysC02.md",
+                "file": "_posts/2022-10-25-RecSysC05.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-10-24-RecSysC02.md"
+                "file": "_posts/2022-10-25-RecSysC05.md"
               }
             }
           }
@@ -177,17 +153,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "1eb31c90e9b21f36",
+  "active": "2d8a0b21232f732d",
   "lastOpenFiles": [
-    "_posts/2022-10-24-RecSysC01.md",
     "_posts/2022-10-24-RecSysC04.md",
+    "_posts/2022-10-25-RecSysC05.md",
     "_posts/2022-10-24-RecSysC03.md",
-    "_posts/2022-10-24-RecSysC02.md",
     "_posts/2022-10-19-NLP1.md",
+    "_posts/2022-10-24-RecSysC02.md",
+    "_posts/2022-10-24-RecSysC01.md",
     "test/_pets/tabby.md",
     "_posts/2022-10-15-RecSys7.md",
     "_posts/2022-10-17-RecSys10.md",
-    "_posts/2022-10-16-RecSys9.md",
-    "_posts/2022-10-20-github.md"
+    "_posts/2022-10-16-RecSys9.md"
   ]
 }
