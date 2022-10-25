@@ -1,7 +1,6 @@
-----
-layout: single
-title:  Welcome to My Github Blog
-----
+---
+layout: post
+title:  "Welcome to My Blog!"
+---
 
-# Welcome To My Github Blog
-## Thanks
+# Welcome
