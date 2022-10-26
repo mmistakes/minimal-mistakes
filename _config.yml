@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Today, I Learned"
+title                    : "데린이 "
 title_separator          : "-"
-subtitle                 : "사부작사부작 기록하는 blog"
+subtitle                 : "Today, I Learned"
 name                     : "Jaeyoung Jung"
 description              : "오늘의 파란기록"
 url                      : "https://j-jae0.github.io/"
