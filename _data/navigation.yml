@@ -13,12 +13,12 @@ main:
 docs:
   - title: "Today, I Learned"
     children:
-      - title: "Monthly, I Learned"
-        url: /monthly-il/
-      - title: "Weekend, I Learned"
-        url: /weekend-il/
-      - title: "Books, I Learned"
-        url: /books-il/
+      - title: "TIL"
+        url: /til/
+      - title: "Category"
+        url: /categories/
+      - title: "Search"
+        url: /search/
         
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
