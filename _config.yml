@@ -31,7 +31,7 @@ future                   : true
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               :  # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : "MOON_FLOW" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
