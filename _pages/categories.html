@@ -8,20 +8,21 @@ excerpt: "Categories in the collection of projects"
 header:
   overlay_color: "#333"
 ---
-<h2>Categories in this site</h2>
-<p>Followings are the list of projects and codes organized by categories</p>
+
+<h1>Categories employed in this site and the corresponding publications/codes/projects</h1>
 <ul>
-{% assign alldocs = site.documents %}
-{% assign grouptag =  alldocs | map: 'categories' | join: ','  | split: ','  | group_by: categories %}
-{%- for tag in grouptag -%}
-  {% unless tag.name == 'Index' %}
-  <h2>{{- tag.name -}} - {{tag.size}}</h2>
-    {%- for document in alldocs -%}
-    	{% if document.categories contains tag.name %}
-        	 <li><a href="{{ document.url }}">{{ document.title }}</a></li>
-		 {% endif %}
-    {%- endfor -%}
-  {% endunless %}
-	
-{%- endfor -%}
+  {% assign alldocs = site.documents %}	
+  {% assign grouptag =  alldocs | map: 'categories' | join: ','  | split: ','  | group_by: categories %}
+  {%- for tag in grouptag -%}
+    {% unless tag.name == 'Index' %}
+      <h2>{{- tag.name -}} - {{tag.size}}</h2>
+  	  {%- for document in alldocs -%}
+      	{% if document.categories contains tag.name %}
+          	 <li><a href="{{ document.url }}">{{ document.title }}</a></li>
+  		 {% endif %}
+      {%- endfor -%}
+  	{% endunless %}
+  {%- endfor -%}
 </ul>
+
+

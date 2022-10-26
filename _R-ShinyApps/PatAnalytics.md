@@ -4,7 +4,7 @@ author_profile: true
 title: "PatAnalytics"
 shortdesc: "Analysis of technological panorama based on analysis of patent related data"
 excerpt: "Project and code examples"
-categories: [R,R-Shinny,Webapp]
+categories: [R,R-Shinny,WebApp]
 header:
   overlay_color: "#333"
 ---

@@ -20,7 +20,7 @@ title                    : "Tomoe Gusberti Dr. Eng."
 title_separator          : "-"
 subtitle                 : "Scientific Consultant"# site tagline that appears below site title in masthead
 name                     : "Tomoe Gusberti"
-description              : "Tomoe Gusberti's Code Portfolio"
+description              : "This page hosts projects and code examples made available as complementary material to Tomoe Gusberti's other contents available on the web."
 url                      : https://tomoegusberti.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # /portfolio # the subpath of your site, e.g. "/blog"
 repository               : "TomoeGusberti/tomoegusberti.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
