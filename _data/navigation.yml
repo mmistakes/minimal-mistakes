@@ -1,12 +1,12 @@
 # main links
 main:
-  - title: "TIL"
+  - title: "👩🏻‍💻TIL"
     url: /til/
-  - title: "Category"
+  - title: "📍Category"
     url: /categories/
-  - title: "Tag"
+  - title: "📍Tag"
     url: /tags/  
-  - title: "Search"
+  - title: "📍Search"
     url: /search/
   
     
