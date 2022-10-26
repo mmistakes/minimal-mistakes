@@ -1,7 +1,8 @@
 ---
 published: true
-layout: post
+layout: single
 title:  "Welcome to My Blog!"
+categories: Others
 ---
 
 # Welcome!!
