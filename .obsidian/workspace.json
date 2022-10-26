@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "84504f1541d9a5f7",
+            "id": "ceadc70c8d9d9f06",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-10-19-NLP1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2d8a0b21232f732d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2022-10-25-RecSysC05.md",
+                "file": "_posts/2022-10-18-github2.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "084c1a1a0617b971",
@@ -99,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-10-25-RecSysC05.md",
+                "file": "_posts/2022-10-18-github2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-10-25-RecSysC05.md",
+                "file": "_posts/2022-10-18-github2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-10-25-RecSysC05.md"
+                "file": "_posts/2022-10-18-github2.md"
               }
             }
           }
@@ -153,17 +139,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "2d8a0b21232f732d",
+  "active": "ceadc70c8d9d9f06",
   "lastOpenFiles": [
-    "_posts/2022-10-24-RecSysC04.md",
-    "_posts/2022-10-25-RecSysC05.md",
-    "_posts/2022-10-24-RecSysC03.md",
-    "_posts/2022-10-19-NLP1.md",
-    "_posts/2022-10-24-RecSysC02.md",
-    "_posts/2022-10-24-RecSysC01.md",
-    "test/_pets/tabby.md",
-    "_posts/2022-10-15-RecSys7.md",
+    "_posts/2022-10-11-github1.md",
+    "_posts/2022-10-18-github2.md",
+    "_posts/2022-10-17-daily.md",
+    "_posts/2022-10-20-github3.md",
     "_posts/2022-10-17-RecSys10.md",
-    "_posts/2022-10-16-RecSys9.md"
+    "_posts/2022-10-24-daily.md",
+    "_posts/2022-10-24-RecSysC01.md",
+    "_posts/2022-10-24-RecSysC02.md",
+    "_posts/2022-10-25-RecSysC07.md",
+    "_posts/2022-10-25-RecSysC06.md"
   ]
 }
