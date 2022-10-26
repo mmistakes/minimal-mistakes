@@ -31,6 +31,8 @@ intro:
 
 <!-- <center>Helmi 🟢 </center> -->
 
+Helmi is available for LUMI users daily between 13:00 EEST and 08:00 EEST. 
+
 <center>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -69,6 +71,8 @@ intro:
 {% include feature_row %}
 
 # Upcoming Service breaks
+
+You can view general LUMI Service breaks [here](https://www.lumi-supercomputer.eu/service-breaks/).
 
 <!-- ### 22.09.2022 -->
 
