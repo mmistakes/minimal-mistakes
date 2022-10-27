@@ -1,4 +1,4 @@
-#Chapter 6 String Manipulation
+## Chapter 6, String Manipulation
 
 String manipulation means the diverse process such as changing or politting a string. Originally, a string should be manipulated at a low level, or in a language without string like C, it is very difficult to manipulate. However, in most languages, string data types and diverse functions to manipulate strings are basically provided, so unless there is a certain restriction, it is best to get the most out of basic functions provided in a language. String manipulation is a topic that frequently appears in coding tests, and is an extremely useful function that is often used in real life. Fields that use algorithms that have to do with string manipulation is as the following.
 
