@@ -264,7 +264,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: flase
+#       read_time: flase
       comments: # true
       share: true
       related: true
