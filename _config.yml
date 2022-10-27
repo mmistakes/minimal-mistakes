@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Today, I Learned"
+title                    : "사부작사부작 기록하는 블로그"
 title_separator          : "-"
-subtitle                 : "사부작사부작 기록하는 블로그"
+subtitle                 : # "사부작사부작 기록하는 블로그"
 name                     : "Jaeyoung Jung"
 description              : "오늘의 파란기록"
 url                      : "https://j-jae0.github.io/"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Jung Jaeyoung"
   avatar           : "/assets/images/me.jpg"
-  bio              : "집콕하며 데이터분석 중..👩🏻‍💻"
+  bio              : "집콕하며 멋사 AI 스쿨 수강 중..👩🏻‍💻"
   location         : "South Korea"
   email            :
   links:
