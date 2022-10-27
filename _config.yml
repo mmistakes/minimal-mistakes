@@ -16,16 +16,16 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "데린이 재영"
+title                    : "Today, I Learned"
 title_separator          : "-"
-subtitle                 : "Today, I Learned"
+subtitle                 : "사부작사부작 기록하는 blog"
 name                     : "Jaeyoung Jung"
 description              : "오늘의 파란기록"
 url                      : "https://j-jae0.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : #"/assets/images/smile.png"
+logo                     : "/assets/images/smile.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # false (default)
 words_per_minute         : 200
