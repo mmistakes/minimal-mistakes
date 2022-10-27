@@ -8,6 +8,7 @@ toc: true
 author_profile: false
 sidebar:
     nav: "docs"
+search: true
 ---
 
 There are diversity of workers in world.
