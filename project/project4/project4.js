@@ -1,8 +1,7 @@
-const loginInput = document.querySelector("#login-form input");
-const loginButton = document.querySelector("#login-form button");
-
-function onLoginBtnClick() {
-  console.log("click!!!")
-};
-
-loginButton.addEventListener("click", onLoginBtnClick);
+const age = 30;
+if(age > 19){
+  console.log('환영합니다');
+}
+if(age < 19){
+  console.log('안녕히 가세요');
+}
