@@ -4,7 +4,7 @@ permalink: /likelion/
 layout: single
 author_profile: false
 sidebar:
-    nav: "lion"
+    nav: "likelion"
 
 ---
 ## AI 스쿨 7기
