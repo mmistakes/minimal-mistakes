@@ -5,6 +5,4 @@ layout: single
 author_profile: false
 
 ---
-
-# 🎃👻🎃👻🎃👻🎃👻🎃👻🎃👻🎃
-## ᴛʀɪᴄᴋ ᴏʀ ᴛʀᴇᴀᴛ !
+# 🎃ᴛʀɪᴄᴋ ᴏʀ ᴛʀᴇᴀᴛ👻
