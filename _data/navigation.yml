@@ -2,6 +2,8 @@
 main:
   - title: "🏠"
     url: "https://j-jae0.github.io/"
+  - title: "👩🏻‍💻"
+    url: /til/
   - title: "🎃"
     url: /happy-halloween/
   - title: "Category"
