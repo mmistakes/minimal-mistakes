@@ -49,7 +49,14 @@ likelion:
         
   - title: "🍄Special Lecture"
     url: /likelion/lecture/  
-    
+    children:
+      - title: "SQL"
+        url: /likelion/lecture/sql/
+      - title: "통계"
+        url: /likelion/lecture/statistics/
+      - title: "Tableau"
+        url: /likelion/lecture/tableau/
+        
   - title: "🌈Study Together"
     url: /likelion/study/
 
