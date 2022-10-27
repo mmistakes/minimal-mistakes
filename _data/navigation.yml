@@ -29,7 +29,20 @@ docs:
         url: /likelion/mini/
       - title: "Middle Project"
         url: /likelion/middle/
+  - title: "💻CODING TEST"
+    url: /test/
+    children:
+      - title: "Baekjoon"
+        url: /test/baekjoon/
+      - title: "Programmers"
+        url: /test/programmers/
+      - title: "HackerRank"
+        url: /test/hackerrank/
+  - title: "🔌소소한 취미"
+    url: /freetime/
 
+
+        
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
