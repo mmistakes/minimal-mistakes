@@ -267,7 +267,7 @@ defaults:
       # read_time: flase
       comments: # true
       # share: true
-      related: true
+      related: false
       show_date: true  
       
 #date_format: "%Y-%m-d"            
