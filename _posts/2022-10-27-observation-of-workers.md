@@ -4,6 +4,7 @@ layout: single
 title:  "Observation of workers"
 categories: Observation
 tag: [observation]
+toc: true
 ---
 
 There are diversity of workers in world.
