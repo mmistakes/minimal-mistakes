@@ -14,7 +14,7 @@ main:
     url: /search/
   
     
-docs:
+doing:
   - title: "📝Today, I Learned"
     url: /til/
     children:
@@ -22,13 +22,6 @@ docs:
         url: /til/2022-10/
       - title: "2022년 11월 TIL"
         url: /til/2022-11/
-  - title: "🦁멋쟁이사자처럼 AI 7기"
-    url: /likelion/
-    children:
-      - title: "Mini Project"
-        url: /likelion/mini/
-      - title: "Middle Project"
-        url: /likelion/middle/
   - title: "💻CODING TEST"
     url: /test/
     children:
@@ -38,10 +31,17 @@ docs:
         url: /test/programmers/
       - title: "HackerRank"
         url: /test/hackerrank/
-  - title: "🔌소소한 취미"
+  - title: "🔌FREE TIME"
     url: /freetime/
 
-
+lion:
+  - title: "🦁LIKELION AI S7"
+    url: /likelion/
+    children:
+      - title: "Mini Project"
+        url: /likelion/mini/
+      - title: "Middle Project"
+        url: /likelion/middle/
         
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
