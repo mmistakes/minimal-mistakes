@@ -1,18 +1,18 @@
 # main links
 main:
-  - title: "🏠"
+  - title: 🏠
     url: "https://j-jae0.github.io/"
-  - title: "👻"
+  - title: 👻
     url: /happy-halloween/
-  - title: "👩🏻‍💻"
+  - title: 👩🏻‍💻
     url: /study/
-  - title: "🦁"
+  - title: 🦁
     url: /likelion/
-  - title: "Category"
+  - title: 🗂
     url: /categories/
-  - title: "Tag"
+  - title: 🖇
     url: /tags/  
-  - title: "Search"
+  - title: 🔎
     url: /search/
   
     
