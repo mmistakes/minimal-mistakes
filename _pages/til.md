@@ -1,6 +1,5 @@
 ---
 title: "TIL"
-permalink: /til/
 layout: single
 author_profile: ture
 ---
