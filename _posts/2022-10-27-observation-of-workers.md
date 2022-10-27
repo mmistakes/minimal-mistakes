@@ -5,6 +5,9 @@ title:  "Observation of workers"
 categories: Observation
 tag: [observation]
 toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
 ---
 
 There are diversity of workers in world.
