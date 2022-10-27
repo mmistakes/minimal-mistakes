@@ -13,13 +13,20 @@ main:
   
     
 docs:
-  - title: "Today, I Learned"
+  - title: "👩🏻‍💻Today, I Learned"
+    url: /til/
     children:
       - title: "2022년 10월 TIL"
         url: /til/2022-10/
       - title: "2022년 11월 TIL"
         url: /til/2022-11/
-
+  - title: "🦁멋쟁이사자처럼 AI 7기"
+    url: /likelion/
+    children:
+      - title: "Mini Project"
+        url: /likelion/mini/
+      - title: "Middle Project"
+        url: /likelion/middle/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
