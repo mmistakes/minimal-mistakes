@@ -12,7 +12,7 @@ main:
     url: /categories/
   - title: 🖇
     url: /tags/  
-  - title: 🔎
+  - title: 🔍
     url: /search/
   
     
