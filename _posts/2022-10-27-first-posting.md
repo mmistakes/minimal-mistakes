@@ -2,12 +2,12 @@
 title:  "Streamlit 으로 대시보드 만들기"
 layout: single
 
-categories: TIL
+categories: "TIL"
 tags: Streamlit
 
 toc: true
 toc_sticky: true
-toc_label : "📍목차"
+toc_label : "목차"
 author_profile: false
 sidebar:
     nav: "docs"
