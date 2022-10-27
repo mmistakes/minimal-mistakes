@@ -1,7 +1,7 @@
 ---
 title: "Today, I Learned"
-permalink: /categories/til/
-layout: category
+permalink: /til/
+layout: monthly
 author_profile: true
 taxonomy: 👩🏻‍💻TIL
 ---
