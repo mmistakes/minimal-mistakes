@@ -3,7 +3,7 @@ title:  "Tableau"
 permalink: /likelion/lecture/tableau/20221028/
 layout: single
 
-categories: "Special Lecture"
+categories: "LIKELION"
 tags: Tableau
 
 toc: true
