@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Jaeyoung Jung"
   avatar           : "/assets/images/me.jpg"
-  bio              : ""
+  bio              : "🏠 집콕 중.."
   location         : "South Korea"
   email            :
   links:
@@ -264,7 +264,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      # read_time: true
+      read_time: flase
       comments: # true
       share: true
       related: true
