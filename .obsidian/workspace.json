@@ -25,14 +25,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-10-26-daily.md",
+                "file": "_posts/2022-10-24-RecSysC03.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a903a3dd1326663d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2022-10-27-daily.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "00775bd0b36d0730",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2022-10-27-daily.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -82,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "084c1a1a0617b971",
@@ -98,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-10-26-daily.md",
+                "file": "_posts/2022-10-27-daily.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-10-26-daily.md",
+                "file": "_posts/2022-10-27-daily.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-10-26-daily.md"
+                "file": "_posts/2022-10-27-daily.md"
               }
             }
           }
@@ -152,17 +177,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "f1b8fcf6f72f9f99",
+  "active": "00775bd0b36d0730",
   "lastOpenFiles": [
-    "_posts/2022-10-24-daily.md",
+    "_posts/Untitled.md",
+    "_posts/2022-10-27-daily.md",
     "_posts/2022-10-26-daily.md",
-    "_posts/2022-10-20-daily.md",
+    "_posts/2022-10-24-RecSysC03.md",
     "_posts/2022-10-18-github2.md",
-    "_posts/2022-10-11-github1.md",
     "_posts/2022-10-17-daily.md",
     "_posts/2022-10-20-github3.md",
-    "_posts/2022-10-17-RecSys10.md",
-    "_posts/2022-10-24-RecSysC01.md",
-    "_posts/2022-10-24-RecSysC02.md"
+    "_posts/2022-10-24-daily.md",
+    "_posts/2022-10-20-daily.md",
+    "_posts/2022-10-11-github1.md"
   ]
 }
