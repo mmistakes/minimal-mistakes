@@ -110,13 +110,10 @@ author:
   location         : "South Korea"
   email            :
   links:
-    - label: # "Email"
+    - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:jjayounge2e@gmail.com"
-    - label: # "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://j-jae0.github.io"
-    - label: # "GitHub"
+    - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/j-jae0"
 
