@@ -2,7 +2,7 @@
 title: "Today, I Learned "
 permalink: /til/
 layout: single
-author_profile: ture
+author_profile: false
 sidebar:
     nav: "docs"
 ---
