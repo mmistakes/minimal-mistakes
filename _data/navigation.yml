@@ -15,7 +15,7 @@ main:
   
     
 docs:
-  - title: "👩🏻‍💻Today, I Learned"
+  - title: "📝Today, I Learned"
     url: /til/
     children:
       - title: "2022년 10월 TIL"
