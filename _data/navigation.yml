@@ -16,7 +16,7 @@ main:
     url: /search/
   
     
-doing:
+study:
   - title: "📝Today, I Learned"
     url: /study/til/
     children:
@@ -38,7 +38,7 @@ doing:
   - title: "🔌FREE TIME"
     url: /study/freetime/
 
-lion:
+likelion:
   - title: "⚒Projects"
     url: /likelion/project/
     children:
