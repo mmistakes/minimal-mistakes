@@ -1,5 +1,6 @@
 ---
 title:  "Streamlit 으로 대시보드 만들기"
+permalink: /til/20221027/
 layout: single
 
 categories: "TIL"
