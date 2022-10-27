@@ -2,10 +2,12 @@
 main:
   - title: "🏠"
     url: "https://j-jae0.github.io/"
-  - title: "👩🏻‍💻"
-    url: /til/
   - title: "🎃"
     url: /happy-halloween/
+  - title: "👩🏻‍💻"
+    url: /study/
+  - title: "🦁"
+    url: /likelion/
   - title: "Category"
     url: /categories/
   - title: "Tag"
@@ -16,23 +18,23 @@ main:
     
 doing:
   - title: "📝Today, I Learned"
-    url: /til/
+    url: /study/til/
     children:
       - title: "2022년 10월 TIL"
-        url: /til/2022-10/
+        url: /study/til/2022-10/
       - title: "2022년 11월 TIL"
-        url: /til/2022-11/
+        url: /study/til/2022-11/
   - title: "💻CODING TEST"
-    url: /test/
+    url: /study/test/
     children:
       - title: "Baekjoon"
-        url: /test/baekjoon/
+        url: /study/test/baekjoon/
       - title: "Programmers"
-        url: /test/programmers/
+        url: /study/test/programmers/
       - title: "HackerRank"
-        url: /test/hackerrank/
+        url: /study/test/hackerrank/
   - title: "🔌FREE TIME"
-    url: /freetime/
+    url: /study/freetime/
 
 lion:
   - title: "🦁LIKELION AI S7"
