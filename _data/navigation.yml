@@ -2,7 +2,7 @@
 main:
   - title: "🏠"
     url: "https://j-jae0.github.io/"
-  - title: "🎃"
+  - title: "👻"
     url: /happy-halloween/
   - title: "👩🏻‍💻"
     url: /study/
@@ -39,7 +39,7 @@ study:
     url: /study/freetime/
 
 likelion:
-  - title: "⚒Projects"
+  - title: "🌱Projects"
     url: /likelion/project/
     children:
       - title: "Mini Project"
@@ -47,7 +47,10 @@ likelion:
       - title: "Middle Project"
         url: /likelion/project/middle/
         
-  - title: "🧨Study Together"
+  - title: "🍄Special Lecture"
+    url: /likelion/lecture/  
+    
+  - title: "🌈Study Together"
     url: /likelion/study/
 
         
