@@ -44,6 +44,8 @@ lion:
         url: /likelion/mini/
       - title: "Middle Project"
         url: /likelion/middle/
+      - title: "Study Together"
+        url: /likelion/study/
         
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
