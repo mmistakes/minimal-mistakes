@@ -11,14 +11,14 @@ main:
   
     
 docs:
-  - title: "Today, I Learned"
+  - title: "👩🏻‍💻TIL"
     children:
-      - title: "TIL"
-        url: /til/
-      - title: "Category"
-        url: /categories/
-      - title: "Search"
-        url: /search/
+      - title: "Today, I Learned"
+        url: /til/t/
+      - title: "Weekend, I Learned"
+        url: /til/w/
+      - title: "Monthly, I Learned"
+        url: /til/m/
         
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
