@@ -1,17 +1,18 @@
 # main links
 main:
-  - title: "👩🏻‍💻TIL"
+  - title: "🏠"
+  - title: "TIL"
     url: /til/
-  - title: "📍Category"
+  - title: "Category"
     url: /categories/
-  - title: "📍Tag"
+  - title: "Tag"
     url: /tags/  
-  - title: "📍Search"
+  - title: "Search"
     url: /search/
   
     
 docs:
-  - title: "👩🏻‍💻TIL"
+  - title: "TIL"
     children:
       - title: "Today, I Learned"
         url: /til/t/
