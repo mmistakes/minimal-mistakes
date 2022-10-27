@@ -1,6 +1,7 @@
 # main links
 main:
   - title: "🏠"
+    url: "https://j-jae0.github.io/"
   - title: "TIL"
     url: /til/
   - title: "Category"
