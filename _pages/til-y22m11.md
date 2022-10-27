@@ -1,10 +1,10 @@
 ---
 title: "2022년 11월, TIL"
-permalink: /doing/til/2022-11/
+permalink: /study/til/2022-11/
 layout: single
 author_profile: false
 sidebar:
-    nav: "doing"
+    nav: "study"
 ---
  
 ## 한달간의 회고 기록👩🏻‍💻
