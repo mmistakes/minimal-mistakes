@@ -1,8 +1,10 @@
 ---
+title: "ʜᴀᴘᴘʏ ʜᴀʟʟᴏᴡᴇᴇɴ"
 permalink: /happy-halloween/
 layout: single
 author_profile: false
 
 ---
 
-# 🎃ʜᴀᴘᴘʏ ʜᴀʟʟᴏᴡᴇᴇɴ 👻
+# 🎃👻🎃👻🎃👻🎃👻🎃👻🎃👻🎃
+## ᴛʀɪᴄᴋ ᴏʀ ᴛʀᴇᴀᴛ !
