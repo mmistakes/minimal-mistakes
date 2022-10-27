@@ -52,7 +52,7 @@ likelion:
     children:
       - title: "SQL"
         url: /likelion/lecture/sql/
-      - title: "통계"
+      - title: "Statistics"
         url: /likelion/lecture/statistics/
       - title: "Tableau"
         url: /likelion/lecture/tableau/
