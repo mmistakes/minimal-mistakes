@@ -126,6 +126,9 @@ footer:
     - label: "Velog"
       icon: "fa-brands fa-markdown"
       url: "https://velog.io/@jaeyoung_jung"
+    - label: "Tistory"
+      icon: "fa-brands fa-markdown"
+      url: "https://jaeyoung-jung.tistory.com/"
 
 # Reading Files
 include:

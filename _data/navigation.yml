@@ -14,8 +14,57 @@ main:
     url: /tags/  
   - title: 🔍
     url: /search/
-  
-    
+
+home:
+  - title: "👩🏻‍💻STUDY"
+    url: /study/
+
+  - title: "📝Today, I Learned"
+    url: /study/til/
+    children:
+      - title: "2022년 10월, TIL"
+        url: /study/til/2022-10/
+      - title: "2022년 11월, TIL"
+        url: /study/til/2022-11/
+        
+  - title: "💻CODING TEST"
+    url: /study/test/
+    children:
+      - title: "Baekjoon"
+        url: /study/test/baekjoon/
+      - title: "Programmers"
+        url: /study/test/programmers/
+      - title: "HackerRank"
+        url: /study/test/hackerrank/
+        
+  - title: "🔌FREE TIME"
+    url: /study/freetime/  
+
+  - title: "🦁LIKELION AI S7"
+    url: /likelion/
+  - title: "🌱Projects"
+    url: /likelion/project/
+    children:
+      - title: "Mini Project"
+        url: /likelion/project/mini/
+      - title: "Middle Project"
+        url: /likelion/project/middle/
+        
+  - title: "🍄Special Lecture"
+    url: /likelion/lecture/  
+    children:
+      - title: "SQL"
+        url: /likelion/lecture/sql/
+      - title: "Statistics"
+        url: /likelion/lecture/statistics/
+      - title: "Tableau"
+        url: /likelion/lecture/tableau/
+        
+  - title: "🌈Study Together"
+    url: /likelion/study/
+
+
+# study     
 study:
   - title: "👩🏻‍💻STUDY"
     url: /study/
