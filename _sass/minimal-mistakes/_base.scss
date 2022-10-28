@@ -127,15 +127,15 @@ blockquote {
 
 a {
   text-decoration: none; //추가된 코드 : 밑줄 제거
-  color: #000000
+  
   &:focus {
     @extend %tab-focus;
   }
-/*
+
   &:visited {
     color: $link-color-visited;
   }
-*/
+
   &:hover {
     color: $link-color-hover;
     outline: 0;
