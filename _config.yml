@@ -28,7 +28,6 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 logo                     : # "/assets/images/smile.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # false (default)
-future                   : true
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -39,7 +38,7 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : 15 # 5 (default)
+    num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
     theme                : # "github-light" (default), "github-dark"
@@ -109,7 +108,7 @@ author:
   avatar           : "/assets/images/me.jpg"
   bio              : "집콕하며 멋사 AI 스쿨 수강 중..👩🏻‍💻"
   location         : "South Korea"
-  email            :
+  email            : #
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -267,5 +266,4 @@ defaults:
       # share: true
       related: false
       show_date: true  
-      
-#date_format: "%Y-%m-d"            
+
