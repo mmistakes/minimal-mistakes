@@ -1,7 +1,7 @@
 # main links
 main:
   - title: 🏠
-    url: "https://j-jae0.github.io/"
+    url: /about-me/
   - title: 👻
     url: /happy-halloween/
   - title: 👩🏻‍💻
@@ -17,6 +17,9 @@ main:
   
     
 study:
+  - title: "👩🏻‍💻STUDY"
+    url: /study/
+
   - title: "📝Today, I Learned"
     url: /study/til/
     children:
@@ -39,6 +42,8 @@ study:
     url: /study/freetime/
 
 likelion:
+  - title: "🦁멋쟁이사자처럼 AI S7"
+    url: /likelion/
   - title: "🌱Projects"
     url: /likelion/project/
     children:
