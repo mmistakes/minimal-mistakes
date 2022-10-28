@@ -6,11 +6,12 @@ author_profile: false
 sidebar:
     nav: "study"
 ---
+***
+## Today, I Learned
+- [221027_TIL - Streamlit으로 대시보드 만들기](https://j-jae0.github.io/study/20221027/)
 
-### Today, I Learned
-1. [221027_TIL - Streamlit으로 대시보드 만들기](https://j-jae0.github.io/study/20221027/)
+***
+## CODING TEST
 
-### CODING TEST
-
-
-### FREE TIME
+***
+## FREE TIME
