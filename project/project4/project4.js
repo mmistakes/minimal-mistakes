@@ -1,7 +1,15 @@
-const age = 30;
-if(age > 19){
-  console.log('환영합니다');
+const loginForm = document.querySelector("#login-form")
+const loginInput= document.querySelector("#login-form input")
+const greeting = document.querySelector("#greeting")
+const HIDDEN_CLASSNAME = "hideen";
+
+
+function onLoginSubmit(event) {
+  event.preventDefault();
+  loginForm.classList.add(HIDDEN_CLASSNAME);
+  const username = loginInput.value;
+  greeting.innerText = "hello" + username;
+  greeting.classList.remove(HIDDEN_CLASSNAME)
 }
-if(age < 19){
-  console.log('안녕히 가세요');
-}
+
+loginForm.addEventListener("submit", onLoginSubmit);
