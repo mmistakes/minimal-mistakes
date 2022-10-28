@@ -7,4 +7,16 @@ sidebar:
     nav: "likelion"
 
 ---
-## AI 스쿨 7기
+## AI 스쿨 7기에서 배운 것은? 🦁
+
+### Project
+- [Mid Project] 데이터 분석 및 EDA
+- [Mini project(2)] 데이터 분석 및 EDA 
+- [Mini project(1)] 네이버 영화랭킹 정보 수집하기
+
+### Special Lectures
+- [통계] p value ...
+- [통계] 귀무가설 대립가설 ?
+- [SQL] 문법 정리
+- [SQL] 문법 정리
+
