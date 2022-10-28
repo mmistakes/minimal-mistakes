@@ -1,5 +1,5 @@
 ---
-title: "Code Test"
+title: "Coding Test"
 permalink: /study/test/
 layout: single
 author_profile: false
