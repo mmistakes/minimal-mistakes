@@ -15,8 +15,6 @@ sidebar:
 - [Mini project(1)] 네이버 영화랭킹 정보 수집하기
 
 ### Special Lectures
-- [통계] p value ...
-- [통계] 귀무가설 대립가설 ?
-- [SQL] 문법 정리
-- [SQL] 문법 정리
+- [Tableau - 삼성전자와 sk하이닉스 주식 비교 대시보드 만들기](https://j-jae0.github.io/tableau/tableau-02/)
+- [Tableau - 코로나 19 일별 시도별 확진자 트렌드 대시보드 만들기](https://j-jae0.github.io/tableau/tableau-01/)
 
