@@ -7,21 +7,12 @@ sidebar:
     nav: "study"
 ---
 
-## 📍TIL
-- 
--
--
--
--
+### 📍TIL
 
-## 📍Coding Test
--
--
--
--
 
-## 📍Free Time
--
--
--
--
+### 📍Coding Test
+
+
+
+### 📍Free Time
+
