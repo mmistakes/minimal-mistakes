@@ -7,7 +7,7 @@ sidebar:
     nav: "likelion"
 
 ---
-## AI 스쿨 7기에서 배운 것은? 🦁
+## AI 스쿨 7기에서 배운 것 정리하기 🦁
 
 ### Project
 - [Mid Project] 데이터 분석 및 EDA
