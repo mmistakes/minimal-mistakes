@@ -1,6 +1,6 @@
 ---
 title: "2022년 10월, TIL"
-permalink: /study/TIL/2022-10/
+permalink: /study/til/2022-10/
 layout: single
 author_profile: false
 sidebar:
