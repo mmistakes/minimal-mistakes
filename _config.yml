@@ -110,23 +110,27 @@ author:
   location         : "South Korea"
   email            : #
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "mailto:jjayounge2e@gmail.com"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/j-jae0"
+    - icon: "fas fa-fw fa-envelope-square"
       url: "mailto:jjayounge2e@gmail.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+    - icon: "fab fa-fw fa-github"
       url: "https://github.com/j-jae0"
 
 # Site Footer
 footer:
   links:
-    -  # label: "GitHub"
+    - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/j-jae0"
-    - # label: "Velog"
+    - label: "Velog"
       icon: "fa-brands fa-markdown"
       url: "https://velog.io/@jaeyoung_jung"
-    - # label: "Tistory"
+    - label: "Tistory"
       icon: "fa-brands fa-markdown"
       url: "https://jaeyoung-jung.tistory.com/"
 
