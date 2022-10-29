@@ -1,8 +1,6 @@
 ---
-title: "ʜᴀᴘᴘʏ ʜᴀʟʟᴏᴡᴇᴇɴ"
-permalink: /happy-halloween/
 layout: post
+permalink: /free-time/
 author_profile: false
-
 ---
-🎃ᴛʀɪᴄᴋ ᴏʀ ᴛʀᴇᴀᴛ👻
+
