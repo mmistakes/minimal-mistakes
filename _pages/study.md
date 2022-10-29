@@ -7,12 +7,9 @@ sidebar:
     nav: "study"
 ---
 
-### 📍TIL
+### 기억할 것
 
 
-### 📍Coding Test
+### 코딩테스트
 
-
-
-### 📍Free Time
 
