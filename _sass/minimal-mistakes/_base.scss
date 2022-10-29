@@ -133,11 +133,11 @@ a {
   }
 
   &:visited {
-    color: #424242; // $link-color-visited;
+    color: $link-color-visited;
   }
 
   &:hover {
-    color: #616161; // $link-color-hover;
+    color: $link-color-hover;
     outline: 0;
   }
 }
