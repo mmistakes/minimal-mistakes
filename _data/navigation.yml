@@ -30,12 +30,10 @@ home:
   - title: "CODING TEST"
     url: /study/test/
     children:
-      - title: "Baekjoon"
-        url: /study/test/baekjoon/
-      - title: "Programmers"
-        url: /study/test/programmers/
-      - title: "HackerRank"
-        url: /study/test/hackerrank/
+      - title: "Python"
+        url: /study/test/python/
+      - title: "SQL"
+        url: /study/test/sql
 
 
   - title: "LIKELION AI S7"
@@ -78,12 +76,10 @@ study:
   - title: "CODING TEST"
     url: /study/test/
     children:
-      - title: "Baekjoon"
-        url: /study/test/baekjoon/
-      - title: "Programmers"
-        url: /study/test/programmers/
-      - title: "HackerRank"
-        url: /study/test/hackerrank/
+      - title: "Python"
+        url: /study/test/python/
+      - title: "SQL"
+        url: /study/test/sql
 
 
 likelion:
