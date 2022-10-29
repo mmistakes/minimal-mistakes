@@ -13,7 +13,8 @@ excerpt: Going with Dickens on a tour of Italy, a data card.
 
 I have recently embarked on a journey across books devoted to adventure and travel - it's being quite the reading journey (pun intended), and "Pictures from Italy" was one of the pieces on the list. Then while reading, and being Italian myself, I realised there was material to do a data card. This is a marvellous little book written exactly like a modern travelogue that transports you both back in time to the mid-1800s when Dickens actually did his travels in the country and across the many months he spent there.
 
-Dickens travelled around Italy for about a year between 1844 and 1845 with his family, moving mostly from place to place in a carriage and staying either at inns (for short stays) or renting a house for longer periods. The [Charles Dickens Page site](https://www.charlesdickenspage.com) built (in 1997!) by D Perdue is a goldmine of information about Dickens, but also contains a great [section](https://www.charlesdickenspage.com/charles-dickens-italy-map.html#top) on the travels he did in Italy, with an interactive map and quotations from what he wrote.
+Dickens travelled around Italy for about a year between 1844 and 1845 with his family, moving mostly from place to place in a carriage and staying either at inns (for short stays) or renting a house for longer periods. The book reads like a diary as he notes down everything he saw and experienced, from visits to churches and monuments to local celebrations and customs (which he generally found very weird and entertaining).
+The [Charles Dickens Page site](https://www.charlesdickenspage.com) built (in 1997!) by D Perdue is a goldmine of information about Dickens, but also contains a great [section](https://www.charlesdickenspage.com/charles-dickens-italy-map.html#top) on the travels he did in Italy, with an interactive map and quotations from what he wrote.
 
 Bear in mind that Italy was certainly a favoured destination (in fact, typically the end one) of many wealthy and gentlemen of the European intelligentsia of the 1700s and 1800s who went around wandering, exploring and criticising places during their [Grand Tour](https://en.wikipedia.org/wiki/Grand_Tour) - I guess Dickens' one belongs to the tail end (historically/chronologically speaking) of the phenomenon.
 
@@ -25,7 +26,6 @@ As always in these data journeys, let's select three items to bring along. I cho
 Surprise surprise, the book can't be anything else than ["Pictures from Italy"](https://www.goodreads.com/book/show/5340.Pictures_from_Italy), of course. You can get it for free on [Project Gutenberg](https://gutenberg.org/ebooks/650). I really enjoyed it (I have actually read it a second time when working for this card to isolate the sentiment and the best quotes). It is very Victorian, it is quite funny and descriptive. Obviously, it is outdated as a travel guide, though actually you would be surprised about how much it contains that still provides a decent overview. After all, many of Italy's treasures are older than his times; what's changed is the context. Furthermore, I find it incredibly interesting to read about places I know on old narrations, it makes for a good exercise to mentally check how expectations and reality-checks may have changed in time.
 
 ### A place
-
 It would be dumb to just recommend Italy at this stage, I feel like I have to be more specific. Why don't we do a quick trip to Ferrara, which Dickens so clearly didn't like (see below)? I felt like he missed out, though obviously whatever impression we can get today isn't anything like what he got more than a century and a half ago. 
 
 <figure class="align-left" style="width: 500px">
@@ -38,7 +38,6 @@ I will confess upfront that so far I have never been to Ferrara, actually. But I
 There are many other places in the book where he gets a similar impression and his descriptions sound quite entertaining and, to be fair, a bit Victorian-snob. Yet another reason to give it a read.
 
 ### A movie
-
 For a movie, I feel like recommending ["È stata la mano di Dio/The hand of God"](https://www.themoviedb.org/movie/722778-e-stata-la-mano-di-dio) which is a recent one (Netflix production, so you find it there) set in Naples in the '80s. It is a tale of dreams, culture, belonging, family and love, and I think narrates the city very well. I am from around there, and I have this visceral love for Naples, but I swear this movie is all in all delightful.
 
 ## The data card
@@ -66,6 +65,15 @@ Overall, I would say his perception of Italy is quite balanced: pretty much anyw
 ### The more technical bits
 
 This card didn't take much technical work other than downloading the free TXT from Project Gutenberg and using some simple NLP to isolate the adjectives. I have used the [TextBlob](https://textblob.readthedocs.io/en/dev/index.html) package for the job, which has also given me a sentiment score.
+
+Other than this, the decision as to whether Dickens liked or disliked a place was totally up to my interpretation. As I said I read this book twice, the first one was just for pleasure and the second was to collect information about how he characterised each site he visited. I armed myself with the ancient instruments of paper and pen and scribbled down the most salient descriptions with a particulr attention to the choice of adjectives (which is what prompted the idea of then measuring their occurrences text-wide). Afterwards, I went through my notes and gave a summary judgment. As such, the assessments are subjected to my own impression.
+
+## To conclude
+
+Dickens leaves Italy with these words:
+
+"Let us part from Italy, with all its miseries and wrongs, affectionately, in our admiration of the beauties, natural and artificial, of which it is full to overflowing, and in our tenderness towards a people, naturally well-disposed, and patient, and sweet-tempered.
+[...]"
 
 ## References
 
