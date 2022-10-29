@@ -94,8 +94,8 @@ likelion:
     children:
       - title: "Mini Project"
         url: /likelion/project/mini/
-      - title: "Middle Project"
-        url: /likelion/project/middle/
+      - title: "Mid Project"
+        url: /likelion/project/mid/
         
   - title: "🍄Special Lecture"
     url: /likelion/lecture/  
