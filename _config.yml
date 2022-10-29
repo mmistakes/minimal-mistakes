@@ -38,7 +38,7 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : 7 # (default)
+    num_posts            : # (default) : 5
     colorscheme          : # "light" (default), "dark"
   utterances:
     theme                : # "github-light" (default), "github-dark"
@@ -196,7 +196,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show - Defaults:5
 paginate_path: /page:num/
 timezone: Asia/Seoul
 
@@ -270,3 +270,9 @@ defaults:
       related: false
       show_date: true  
 
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: false
