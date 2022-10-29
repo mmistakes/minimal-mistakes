@@ -16,10 +16,10 @@ main:
     url: /search/
 
 home:
-  - title: "👩🏻‍💻STUDY"
+  - title: "STUDY"
     url: /study/
 
-  - title: "📝Today, I Learned"
+  - title: "Today, I Learned"
     url: /study/til/
     children:
       - title: "2022년 10월, TIL"
@@ -27,7 +27,7 @@ home:
       - title: "2022년 11월, TIL"
         url: /study/til/2022-11/
         
-  - title: "💻CODING TEST"
+  - title: "CODING TEST"
     url: /study/test/
     children:
       - title: "Baekjoon"
@@ -38,9 +38,9 @@ home:
         url: /study/test/hackerrank/
 
 
-  - title: "🦁LIKELION AI S7"
+  - title: "LIKELION AI S7"
     url: /likelion/
-  - title: "🌱Projects"
+  - title: "Projects"
     url: /likelion/project/
     children:
       - title: "Mini Project"
@@ -48,7 +48,7 @@ home:
       - title: "Middle Project"
         url: /likelion/project/middle/
         
-  - title: "🍄Special Lecture"
+  - title: "Special Lecture"
     url: /likelion/lecture/  
     children:
       - title: "SQL"
@@ -58,16 +58,16 @@ home:
       - title: "Tableau"
         url: /likelion/lecture/tableau/
         
-  - title: "🌈Study Together"
+  - title: "Study Together"
     url: /likelion/study/
 
 
 # study     
 study:
-  - title: "👩🏻‍💻STUDY"
+  - title: "STUDY"
     url: /study/
 
-  - title: "📝Today, I Learned"
+  - title: "Today, I Learned"
     url: /study/til/
     children:
       - title: "2022년 10월, TIL"
@@ -75,7 +75,7 @@ study:
       - title: "2022년 11월, TIL"
         url: /study/til/2022-11/
         
-  - title: "💻CODING TEST"
+  - title: "CODING TEST"
     url: /study/test/
     children:
       - title: "Baekjoon"
@@ -87,9 +87,9 @@ study:
 
 
 likelion:
-  - title: "🦁LIKELION AI S7"
+  - title: "LIKELION AI S7"
     url: /likelion/
-  - title: "🌱Projects"
+  - title: "Projects"
     url: /likelion/project/
     children:
       - title: "Mini Project"
@@ -97,7 +97,7 @@ likelion:
       - title: "Mid Project"
         url: /likelion/project/mid/
         
-  - title: "🍄Special Lecture"
+  - title: "Special Lecture"
     url: /likelion/lecture/  
     children:
       - title: "SQL"
@@ -107,7 +107,7 @@ likelion:
       - title: "Tableau"
         url: /likelion/lecture/tableau/
         
-  - title: "🌈Study Together"
+  - title: "Study Together"
     url: /likelion/study/
 
         
