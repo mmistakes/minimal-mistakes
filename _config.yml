@@ -120,13 +120,13 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "GitHub"
+    -  # label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/j-jae0"
-    - label: "Velog"
+    - # label: "Velog"
       icon: "fa-brands fa-markdown"
       url: "https://velog.io/@jaeyoung_jung"
-    - label: "Tistory"
+    - # label: "Tistory"
       icon: "fa-brands fa-markdown"
       url: "https://jaeyoung-jung.tistory.com/"
 
