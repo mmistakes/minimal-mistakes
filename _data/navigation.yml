@@ -36,9 +36,7 @@ home:
         url: /study/test/programmers/
       - title: "HackerRank"
         url: /study/test/hackerrank/
-        
-  - title: "🔌FREE TIME"
-    url: /study/freetime/  
+
 
   - title: "🦁LIKELION AI S7"
     url: /likelion/
@@ -86,9 +84,7 @@ study:
         url: /study/test/programmers/
       - title: "HackerRank"
         url: /study/test/hackerrank/
-        
-  - title: "🔌FREE TIME"
-    url: /study/freetime/
+
 
 likelion:
   - title: "🦁LIKELION AI S7"

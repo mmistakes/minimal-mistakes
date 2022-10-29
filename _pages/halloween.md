@@ -1,7 +1,7 @@
 ---
 title: "ʜᴀᴘᴘʏ ʜᴀʟʟᴏᴡᴇᴇɴ"
 permalink: /happy-halloween/
-layout: single
+layout: post
 author_profile: false
 
 ---
