@@ -18,17 +18,17 @@ main:
 home:
   - title: "👻About Me"
     url: /free-time/
-    
+
   - title: "👩🏻‍💻STUDY"
     url: /study/
-
-  - title: "Today, I Learned"
-    url: /study/til/
     children:
-      - title: "2022년 10월, TIL"
-        url: /study/til/2022-10/
-      - title: "2022년 11월, TIL"
-        url: /study/til/2022-11/
+      - title: "Today, I Learned"
+      - url: /study/til/
+      children:
+        - title: "2022년 10월, TIL"
+          url: /study/til/2022-10/
+        - title: "2022년 11월, TIL"
+          url: /study/til/2022-11/
         
   - title: "CODING TEST"
     url: /study/test/
