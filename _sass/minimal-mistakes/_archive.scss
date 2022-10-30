@@ -62,6 +62,11 @@
   a + a {
     opacity: 0.5;
   }
+
+  // 추가한 부분
+  h2 {
+    font-size: initial;
+  }
 }
 
 /* remove border*/
