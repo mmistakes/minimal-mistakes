@@ -22,45 +22,20 @@ home:
   - title: "👩🏻‍💻STUDY"
     url: /study/
     children:
-      - title: "Today, I Learned"
-      - url: /study/til/
-      children:
-        - title: "2022년 10월, TIL"
-          url: /study/til/2022-10/
-        - title: "2022년 11월, TIL"
-          url: /study/til/2022-11/
-        
-  - title: "CODING TEST"
-    url: /study/test/
-    children:
-      - title: "Python"
-        url: /study/test/python/
-      - title: "SQL"
-        url: /study/test/sql
-
+      - title: "TIL"
+        url: /study/til/    
+      - title: "CODING TEST"
+        url: /study/test/
 
   - title: "🦁LIKELION AI S7"
     url: /likelion/
-  - title: "Projects"
-    url: /likelion/project/
     children:
-      - title: "Mini Project"
-        url: /likelion/project/mini/
-      - title: "Middle Project"
-        url: /likelion/project/middle/
-        
-  - title: "Special Lecture"
-    url: /likelion/lecture/  
-    children:
-      - title: "SQL"
-        url: /likelion/lecture/sql/
-      - title: "Statistics"
-        url: /likelion/lecture/statistics/
-      - title: "Tableau"
-        url: /likelion/lecture/tableau/
-        
-  - title: "Study Together"
-    url: /likelion/study/
+      - title: "Projects"
+        url: /likelion/project/        
+      - title: "Special Lecture"
+        url: /likelion/lecture/  
+      - title: "Study Together"
+        url: /likelion/study/
 
 
 # study     
