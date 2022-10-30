@@ -39,5 +39,7 @@ feature_row:
 
 {% include feature_row id="intro" type="center" %}
 
+## Open Call for pilot access to Helmi quantum computer open! Read more here.
+
 {% include feature_row %}
 
