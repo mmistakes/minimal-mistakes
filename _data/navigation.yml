@@ -22,19 +22,20 @@ home:
   - title: "👩🏻‍💻STUDY"
     url: /study/
     children:
-      - title: "TIL"
+      - title: "- 
+      TIL"
         url: /study/til/    
-      - title: "CODING TEST"
+      - title: "- Coding Test"
         url: /study/test/
 
   - title: "🦁LIKELION AI S7"
     url: /likelion/
     children:
-      - title: "Projects"
+      - title: "- Projects"
         url: /likelion/project/        
-      - title: "Special Lecture"
+      - title: "- Special Lecture"
         url: /likelion/lecture/  
-      - title: "Study Together"
+      - title: "- Study Together"
         url: /likelion/study/
 
 
