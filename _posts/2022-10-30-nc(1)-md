@@ -15,24 +15,21 @@ sidebar:
 ### 1.click event : addEventListener( )
 
 ```html
-  <div class="hello">
-    <h1>Grab me!</h1>
-  </div>
+<div class="hello">
+  <h1>Grab me!</h1>
+</div>
 ```
 
 ```js
-const title = document.querySelector("div.hello h1")
+const title = document.querySelector("div.hello h1");
 
 function handleTitleClick() {
   console.log("title was clicked!");
 }
 
-title.addEventListener("click", handleTitleClick) 
+title.addEventListener("click", handleTitleClick);
 ```
 
+0.jpg
 
-
-
-
-
-
+![](../imagesssssssssssssss/event/0.jpg)
