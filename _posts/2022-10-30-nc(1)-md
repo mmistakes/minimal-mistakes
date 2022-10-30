@@ -1,0 +1,38 @@
+---
+layout: single
+title: "NomardCoder-1: event  "
+toc: true
+toc_sticky: true
+excerpt: 테스트
+author_profile: false
+sidebar:
+  nav: "docs"
+#search: false
+---
+
+# event
+
+### 1.click event : addEventListener( )
+
+```html
+  <div class="hello">
+    <h1>Grab me!</h1>
+  </div>
+```
+
+```js
+const title = document.querySelector("div.hello h1")
+
+function handleTitleClick() {
+  console.log("title was clicked!");
+}
+
+title.addEventListener("click", handleTitleClick) 
+```
+
+
+
+
+
+
+
