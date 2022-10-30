@@ -16,7 +16,10 @@ main:
     url: /search/
 
 home:
-  - title: "STUDY"
+  - title: "👻About Me"
+    url: /free-time/
+    
+  - title: "👩🏻‍💻STUDY"
     url: /study/
 
   - title: "Today, I Learned"
@@ -36,7 +39,7 @@ home:
         url: /study/test/sql
 
 
-  - title: "LIKELION AI S7"
+  - title: "🦁LIKELION AI S7"
     url: /likelion/
   - title: "Projects"
     url: /likelion/project/
