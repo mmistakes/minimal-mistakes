@@ -7,10 +7,16 @@
     <title>Momentum App</title>
   </head>
   <body>
-    <div class="hello">
-      <h1>Grab me!</h1>
-    </div>
-
+    <form id="login-form" class="hidden">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="what is your name?"
+      />
+      <button>login</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
     <script src="./project4.js" defer></script>
   </body>
 </html>
