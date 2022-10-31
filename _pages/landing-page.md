@@ -41,7 +41,10 @@ feature_row:
 
 ## Open Call for pilot access to Helmi quantum computer open from 1 November 2022 
 
-[Read more here](posts/2022-11-01-Helmi_pilot).
+<!-- [Read more here](posts/2022-10-31-Helmi-pilot/). -->
+
+<p style="text-align:center"> <a href="_posts/2022-11-01-Helmi-pilot/">  <font size="+3"> Read more here </font></a> </p>
+
 
 {% include feature_row %}
 

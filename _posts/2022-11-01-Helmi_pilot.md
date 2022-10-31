@@ -1,4 +1,22 @@
-# Open Call for pilot projects for access to the Helmi quantum computer
+---
+title: 'Open Call for pilot projects for access to the Helmi quantum computer'
+date: 2022-10-31
+permalink: /_posts/2022-11-01-Helmi-pilot/
+header:
+  teaser: /assets/images/about-icon.jpg
+published: true
+layout: single
+# gallery:
+#   - url: /assets/images/about-icon.jpg
+#     image_path: /assets/images/about-icon.jpg
+#     title: Before and after comparison
+tags:
+  - helmi
+---
+
+<!-- # Open Call for pilot projects for access to the Helmi quantum computer -->
+
+You are in underscore posts
 
 *Pilot access to the Helmi quantum computer is now open for users from Finnish higher-education 
 institutions and research institutes. Helmi, the Finnish quantum computer operated by VTT is 
