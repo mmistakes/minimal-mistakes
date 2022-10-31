@@ -65,8 +65,8 @@ You need a valid CSC user account to apply. If you do not have one already, foll
 [instructions here](https://docs.csc.fi/accounts/how-to-create-new-user-account/). 
 Note that in the pilot phase, you need to have a **Haka** account.
 
-Once logged in to the MyCSC portal, apply for a new project under “My Projects”. 
-Fill in the form as follows:
+Once logged in to [the MyCSC portal](https://my.csc.fi/), apply for a new project 
+under “My Projects”. Fill in the form as follows:
 
 1.	Project name: Choose a descriptive name
 2.	Project description: Short description of the project (abstract)
