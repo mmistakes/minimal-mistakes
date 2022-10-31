@@ -41,7 +41,7 @@ The backbone of the classical HPC resources in FiQCI, and the portal for quantum
 
 ### Helmi quantum computer
 
-Helmi, the first Finnish quantum computer, is operated by VTT. Presently, Helmi provides five qubits, and will be upgraded to 20, then 50 qubits in the near future.
+Helmi, the first Finnish quantum computer, co-developed by VTT and IQM Quantum Computers, is operated by VTT in Espoo, Finland. Helmi is based on superconducting technology, and presently provides five qubits. Upgrades to 20, then 50 qubits is planned for the near future.
 
 ### Kvasi quantum computer simulator
 
