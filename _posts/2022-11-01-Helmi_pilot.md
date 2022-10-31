@@ -16,8 +16,6 @@ tags:
 
 <!-- # Open Call for pilot projects for access to the Helmi quantum computer -->
 
-You are in underscore posts
-
 *Pilot access to the Helmi quantum computer is now open for users from Finnish higher-education 
 institutions and research institutes. Helmi, the Finnish quantum computer operated by VTT is 
 accessible through the LUMI supercomputer environment, provided by CSC. This marks the opening 
