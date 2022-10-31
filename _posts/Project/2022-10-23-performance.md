@@ -2,7 +2,7 @@
 layout: single
 title:  "Project 3"
 categories: project
-tag: [python, blog, project]
+tag: [python, project, machine_learning]
 toc: true
 author_profile: false
 sidebar:

@@ -3,7 +3,7 @@ layout: single
 title:  "Python Study 8"
 categories: coding
 
-tag: [python, blog, coding]
+tag: [python, coding]
 toc: true
 author_profile: false
 sidebar:

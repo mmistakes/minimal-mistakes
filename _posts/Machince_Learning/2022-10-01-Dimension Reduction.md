@@ -3,7 +3,7 @@ layout: single
 title:  "Machine Learning 1"
 categories: machine_learning
 
-tag: [python, blog, machine_learning]
+tag: [python, machine_learning]
 toc: true
 author_profile: false
 sidebar:

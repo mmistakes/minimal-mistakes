@@ -106,8 +106,7 @@ analytics:
 author:
   name             : "Jay (Jaehoon) Jung"
   avatar           : "/images/image3.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data Scientist/Analyst \n\n
-                      Stony Brook University"
+  bio              : "Data Scientist/Analyst"
   location         : "Stony Brook, NY"
   email            : "hoon7589@gmail.com"
   links:
