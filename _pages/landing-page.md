@@ -19,7 +19,7 @@ intro:
 feature_row:
   - image_path: /assets/images/access-icon.png
     title: "How to get access"
-    excerpt: "Access to FiQCI is granted through the LUMI supercomputing environment"
+    excerpt: "Access to FiQCI is granted through the CSC supercomputing environment"
     url: "/access"
     btn_class: "btn--primary"
     btn_label: "Learn more"
