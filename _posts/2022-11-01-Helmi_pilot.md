@@ -46,6 +46,8 @@ During the pilot phase, the service is provided "as is". Changes in the environm
 are possible, even probable, as the service is continuously developed. Service breaks
 can take place with short or no notice. User support is limited to technical issues.
 
+The pilot phase is expected to run for three months, starting 1 November 2022.
+
 ### Feedback
 
 We value your feedback during the pilot phase, as this will help us improve the service,
@@ -68,10 +70,10 @@ Fill in the form as follows:
 3.	Project category: LUMI
 4.	Access mode: Development
 5.	Resources: Apply for the following standard resources
-  - CPU core hours: 5 thousand
-  - GPU hours: 0	
-  - Storage TiB hours: 50 thousand
-  - QPU minutes: 1440 minutes
+  - CPU core hours: **4** thousand
+  - GPU hours: **0**	
+  - Storage TiB hours: **50** thousand
+  - QPU minutes: **1440** minutes
 6.	Program codes, methods and research objectives: Describe the intent and plan of the project in 200-500 words. In the pilot phase, acceptable use cases range from scientific curiosity via testing purposes to production-level research. The use has to be fully non-commercial.
 7.	Field of science: Select the best-matching
 8.	Keywords: Add suitable keywords; include at least Helmi (remember to press “+ Add” to actually include the keyword)
