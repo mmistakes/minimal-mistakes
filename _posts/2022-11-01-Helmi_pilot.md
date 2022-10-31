@@ -56,6 +56,9 @@ the user community. We are interested in all feedback and improvement suggestion
 For example: What additional supporting software would be useful? Is the documentation useful
 and user friendly?
 
+Please send your feedback to servicedesk@csc.fi, with "Helmi pilot" included in the
+e-mail subject-line.
+
 ## How to apply
 
 You need a valid CSC user account to apply. If you do not have one already, follow the 
@@ -74,7 +77,7 @@ Fill in the form as follows:
   - GPU hours: **0**	
   - Storage TiB hours: **50** thousand
   - QPU minutes: **1440** minutes
-6.	Program codes, methods and research objectives: Describe the intent and plan of the project in 200-500 words. In the pilot phase, acceptable use cases range from scientific curiosity via testing purposes to production-level research. The use has to be fully non-commercial.
+6.	Program codes, methods and research objectives: Describe the intent and plan of the project in 200-500 words. In the pilot phase, acceptable use cases range from scientific curiosity via testing purposes to production-level research. The use has to be fully non-commercial, and **all members** of the project have to be affiliated with a Finnish higher-education institution or state research organisation.
 7.	Field of science: Select the best-matching
 8.	Keywords: Add suitable keywords; include at least Helmi (remember to press “+ Add” to actually include the keyword)
 9.	Terms of Use
