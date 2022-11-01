@@ -97,6 +97,10 @@ major milestone on this road. A 20-qubit quantum computer is currently under dev
 modelling capacity of even the largest supercomputers, marking the start of a new era of science. 
 VTT, CSC, and Aalto University are also seeking global strategic partnerships to promptly usher in the quantum age.
 
+## Open Call for pilot projects
+
+Details on the Open Call can be found on [the FiQCI website](_posts/2022-11-01-Helmi-pilot/).
+
 ## Further information: 
 
 Pekka Pursula, Research Manager, VTT\
