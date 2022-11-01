@@ -99,16 +99,16 @@ VTT, CSC, and Aalto University are also seeking global strategic partnerships to
 
 ## Further information: 
 
-Pekka Pursula, Research Manager, VTT
+Pekka Pursula, Research Manager, VTT\
 Pekka.pursula@vtt.fi, +358 40 7384 986
 
-Mikael Johansson, Quantum Strategist, CSC
+Mikael Johansson, Quantum Strategist, CSC\
 mikael.johansson@csc.fi, +350 40 7526 291
 
-Pekka Manninen, Director, LUMI Leadership Computing Facility, CSC
+Pekka Manninen, Director, LUMI Leadership Computing Facility, CSC\
 Pekka.manninen@csc.fi, +358 50 3812 831 
 
-Tapio Ala-Nissilä, Professor of Physics, Aalto University
+Tapio Ala-Nissilä, Professor of Physics, Aalto University\
 Tapio.Ala-Nissila@aalto.fi, +358 40 541 2983
 
 ## Boilerplates: 
