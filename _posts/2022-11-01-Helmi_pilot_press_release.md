@@ -1,4 +1,20 @@
-# Finland opens quantum computer for research purposes – the fusion of quantum computing and supercomputing enables completely new science
+---
+title: 'Finland opens quantum computer for research purposes – the fusion of quantum computing and supercomputing enables completely new science'
+date: 2022-11-01
+permalink: /_posts/2022-11-01-Helmi_pilot_press_release/
+header:
+  # teaser: /assets/images/FiQCI-banner.jpg
+published: true
+layout: single
+# gallery:
+#   - url: /assets/images/about-icon.jpg
+#     image_path: /assets/images/about-icon.jpg
+#     title: Before and after comparison
+tags:
+  - helmi
+---
+
+<!-- # Finland opens quantum computer for research purposes – the fusion of quantum computing and supercomputing enables completely new science -->
 
 *VTT’s quantum computer HELMI (“Pearl”) has been connected with the pan-European supercomputer LUMI (“Snow”), 
 hosted by CSC - IT Center for Science. The connection to Europe’s most powerful classical supercomputer 
@@ -6,7 +22,7 @@ enables the best possible use of the quantum computer’s computing power. This 
 that this kind of hybrid service connecting a supercomputer and a general-purpose quantum computer is 
 opened for researchers.*
 
-INSERT IMAGE HERE
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/FiQCI-banner.jpg" alt="FiQCI-Banner">
 
 Quantum computers, while potentially extremely powerful at certain tasks, need supervision by traditional 
 classical computers. Finland is one of the few countries worldwide that has connected a quantum computer 
