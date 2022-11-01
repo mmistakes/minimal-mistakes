@@ -109,7 +109,7 @@ pekka.pursula@vtt.fi, +358 40 7384 986
 Mikael Johansson, Quantum Strategist, CSC\
 mikael.johansson@csc.fi, +350 40 7526 291
 
-Pekka Manninen, Director, LUMI Leadership Computing Facility, CSC\
+Pekka Manninen, Director, LUMI Leadership Computing Facility\
 pekka.manninen@csc.fi, +358 50 3812 831 
 
 Tapio Ala-Nissilä, Professor of Physics, Aalto University\
