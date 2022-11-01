@@ -29,10 +29,10 @@ Watch this space for the latest news and posts of interest!
   {% endif %}
   {% include archive-single.html %}
 {% endfor %}
-{% include feature_row %}
+{% include feature_row %} -->
 
 
-{% include base_path %}
+<!-- {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.publications %}
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}

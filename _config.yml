@@ -302,6 +302,7 @@ compress_html:
     envs: development
 
 
+future: false
 
 # Defaults
 defaults:

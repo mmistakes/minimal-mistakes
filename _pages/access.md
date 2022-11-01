@@ -19,8 +19,9 @@ excerpt: >
 
 The main access portal to the real quantum computing resources is through the LUMI supercomputer environment. Kvasi, the Quantum Learning Machine can be accessed directly.
 
-The first quantum calculations on the Helmi quantum computer through LUMI have been run, and the pilot phase for general access will open very soon!
+### Access to Helmi
 
+The pilot phase for Helmi access is now running! [More details here](_posts/2022-11-01-Helmi-pilot/), with instructions on how to apply for a pilot project.
 
 ### Access to Kvasi
 

@@ -27,7 +27,7 @@ funders_gallery:
 
 ## In Brief
 
-The Finnish Quantum Computing Infrastructure (FiQCI) was established in 2020, when it became part of the Finnish Research Infrastructure (FIRI) roadmap of significant national research infrastructures within the Finnish research infrastructure ecosystem, maintained by the Academy of Finland.
+The Finnish Quantum-Computing Infrastructure (FiQCI) was established in 2020, when it became part of the Finnish Research Infrastructure (FIRI) roadmap of significant national research infrastructures within the Finnish research infrastructure ecosystem, maintained by the Academy of Finland.
 
 The mission of FiQCI is to provide state-of-the-art quantum-computing services such as computing time and training to the Finnish RDI communities. This includes providing a hybrid high-performance computing and quantum computing (HPC+QC) platform for developing, testing, and exploiting quantum-accelerated computational workflows. Through FiQCI, Finnish researchers have access to one of the most powerful hybrid HPC+nQC resources in the world, available for quantum accelerated research and development. The infrastructure also aims to offer possibilities to carry out experiments in quantum physics.
 
@@ -41,7 +41,7 @@ The backbone of the classical HPC resources in FiQCI, and the portal for quantum
 
 ### Helmi quantum computer
 
-Helmi, the first Finnish quantum computer, is operated by VTT. Presently, Helmi provides five qubits, and will be upgraded to 20, then 50 qubits in the near future.
+Helmi, the first Finnish quantum computer, co-developed by VTT and IQM Quantum Computers, is operated by VTT in Espoo, Finland. Helmi is based on superconducting technology, and presently provides five qubits. Upgrades to 20, then 50 qubits is planned for the near future.
 
 ### Kvasi quantum computer simulator
 

@@ -19,7 +19,7 @@ intro:
 feature_row:
   - image_path: /assets/images/access-icon.png
     title: "How to get access"
-    excerpt: "Access to FiQCI is granted through the LUMI supercomputing environment"
+    excerpt: "Access to FiQCI is granted through the CSC supercomputing environment"
     url: "/access"
     btn_class: "btn--primary"
     btn_label: "Learn more"
@@ -38,6 +38,13 @@ feature_row:
 ---
 
 {% include feature_row id="intro" type="center" %}
+
+## Open Call for pilot access to Helmi quantum computer open from 1 November 2022 
+
+<!-- [Read more here](posts/2022-10-31-Helmi-pilot/). -->
+
+<p style="text-align:center"> <a href="_posts/2022-11-01-Helmi-pilot/">  <font size="+3"> Read more here </font></a> </p>
+
 
 {% include feature_row %}
 
