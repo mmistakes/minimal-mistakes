@@ -44,8 +44,10 @@
     margin-top: 1em;
     margin-bottom: 1em;
   }
-
-  h2,
+  // 수정부분
+  h2 {
+    font-size: inherit;
+  },
   h3,
   h4,
   h5,
