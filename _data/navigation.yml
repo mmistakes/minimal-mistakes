@@ -15,44 +15,20 @@ main:
   - title: 🔍
     url: /search/
 
-home:
-  - title: "👻About Me"
-    url: /free-time/
-
-  - title: "👩🏻‍💻STUDY"
-    url: /study/
-    children:
-      - title: "- 
-      TIL"
-        url: /study/til/    
-      - title: "- Coding Test"
-        url: /study/test/
-
-  - title: "🦁LIKELION AI S7"
-    url: /likelion/
-    children:
-      - title: "- Projects"
-        url: /likelion/project/        
-      - title: "- Special Lecture"
-        url: /likelion/lecture/  
-      - title: "- Study Together"
-        url: /likelion/study/
-
-
 # study     
 study:
-  - title: "STUDY"
+  - title: "배운내용 정리하기"
     url: /study/
 
-  - title: "Today, I Learned"
+  - title: "✏️Today, I Learned"
     url: /study/til/
     children:
       - title: "2022년 10월, TIL"
         url: /study/til/2022-10/
       - title: "2022년 11월, TIL"
         url: /study/til/2022-11/
-        
-  - title: "CODING TEST"
+
+  - title: "💻코딩테스트"
     url: /study/test/
     children:
       - title: "Python"
@@ -60,7 +36,11 @@ study:
       - title: "SQL"
         url: /study/test/sql
 
+  - title: "📚이달의 독서왕"
+    url: /book/
 
+
+# 멋사ais7    
 likelion:
   - title: "LIKELION AI S7"
     url: /likelion/
