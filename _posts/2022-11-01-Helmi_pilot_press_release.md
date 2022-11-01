@@ -99,7 +99,7 @@ VTT, CSC, and Aalto University are also seeking global strategic partnerships to
 
 ## Open Call for pilot projects
 
-Details on the Open Call can be found on [the FiQCI website](_posts/2022-11-01-Helmi-pilot/).
+Details on the Open Call can be found on [the FiQCI website](/_posts/2022-11-01-Helmi-pilot/).
 
 ## Further information: 
 
