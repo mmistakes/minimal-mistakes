@@ -15,28 +15,28 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Python" %}
-                        <li><a href="/categories/Python" class="">- Python 뿌수기({{category[1].size}})</a></li>
+                        <li><a href="/categories/Python" class="">- Python 부수기 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "SQL" %}
-                        <li><a href="/categories/SQL" class="">- SQL 뿌수기({{category[1].size}})</a></li>
+                        <li><a href="/categories/SQL" class="">- SQL 부수기 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Pandas" %}
-                        <li><a href="/categories/Pandas" class="">- Pandas 뿌수기({{category[1].size}})</a></li>
+                        <li><a href="/categories/Pandas" class="">- Pandas 부수기 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "ML" %}
-                        <li><a href="/categories/ML" class="">- Machine Learning 뿌수기 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/ML" class="">- Machine Learning 부수기 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -87,14 +87,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Mini Project" %}
-                        <li><a href="/categories/Mini Project" class="">- Mini Project({{category[1].size}})</a></li>
+                        <li><a href="/categories/Mini Project" class="">- Mini Project ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Mid Project" %}
-                        <li><a href="/categories/Mid Project" class="">- Mid Project({{category[1].size}})</a></li>
+                        <li><a href="/categories/Mid Project" class="">- Mid Project ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -102,7 +102,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "머신러닝 서적" %}
-                        <li><a href="/categories/book-ml" class="">Machine Learning({{category[1].size}})</a></li>
+                        <li><a href="/categories/book-ml" class="">Machine Learning ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
