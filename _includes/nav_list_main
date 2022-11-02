@@ -80,7 +80,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "TIL_ais7" %}
-                        <li><a href="/categories/TIL_ais7" class="">- TIL({{category[1].size}})</a></li>
+                        <li><a href="/categories/TIL_ais7" class="">- TIL ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
