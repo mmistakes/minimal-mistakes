@@ -2,7 +2,7 @@
 title:  "[SQL] 프로그래머스 Lv 1. 흉부외과 또는 일반외과 의사 목록 출력하기"
 layout: single
 
-categories: "Algorithm"
+categories: "Algorithm_SQL"
 tags: 
     - Algorithm
     - SQL

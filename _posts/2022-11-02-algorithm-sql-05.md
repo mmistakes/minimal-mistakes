@@ -2,7 +2,7 @@
 title:  "[SQL] 프로그래머스 Lv 1. 강원도에 위치한 생산공장 목록 출력하기"
 layout: single
 
-categories: "Algorithm"
+categories: "Algorithm_SQL"
 tags: 
     - Algorithm
     - SQL

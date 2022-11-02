@@ -11,7 +11,7 @@
             <span style="font-family:'GyeonggiBatang';">전체 게시물 수</style> <span style="font-family:'GyeonggiBatang';">{{sum}}</style> <span style="font-family:'GyeonggiBatang';">개</style> 
       </li>
       <li>
-        <span class="nav__sub-title">🔍Python/SQL</span>
+        <span class="nav__sub-title">파이썬, SQL</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Python" %}
@@ -28,14 +28,14 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "TIL_202210" %}
-                        <li><a href="/categories/TIL_202210" class="">2022년 10월, TIL ({{category[1].size}})</a></li>
+                    {% if category[0] == "Pandas" %}
+                        <li><a href="/categories/Pandas" class="">Pandas ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
 
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-        <span class="nav__sub-title">✏️회고 기록</span>
+        <span class="nav__sub-title">회고 기록</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
                 {% for category in site.categories %}
@@ -60,7 +60,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">💻코딩테스트</span>
+        <span class="nav__sub-title">코딩 테스트</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm_Python" %}
@@ -76,7 +76,7 @@
                 {% endfor %}
             </ul>
         
-        <span class="nav__sub-title">👩🏻‍💻프로젝트</span>
+        <span class="nav__sub-title">프로젝트</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Mini Project" %}
@@ -98,7 +98,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">📚이달의 독서왕</span>
+        <span class="nav__sub-title">이달의 독서왕</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "머신러닝 서적" %}
