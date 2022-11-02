@@ -11,7 +11,7 @@
             <span style="font-family:'GyeonggiBatang';">전체 게시물 수</style> <span style="font-family:'GyeonggiBatang';">{{sum}}</style> <span style="font-family:'GyeonggiBatang';">개</style> 
       </li>
       <li>
-        <span class="nav__sub-title">파이썬, SQL</span>
+        <span class="nav__sub-title">지식 저장소</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Python" %}
@@ -33,14 +33,21 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "ML" %}
+                        <li><a href="/categories/ML" class="">Pandas ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
 
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
         <span class="nav__sub-title">회고 기록</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "TIL_멋사ais7" %}
-                        <li><a href="/categories/TIL_멋사ais7" class="">멋사 ais7기, TIL ({{category[1].size}})</a></li>
+                    {% if category[0] == "TIL_ais7" %}
+                        <li><a href="/categories/TIL_ais7" class="">멋사 AI S7기, TIL ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -49,7 +56,7 @@
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
                     {% if category[0] == "TIL_202210" %}
-                        <li><a href="/categories/TIL_202210" class="">2022년 10월, TIL ({{category[1].size}})</a></li>
+                        <li><a href="/categories/TIL_202210" class="">TIL_202210 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
