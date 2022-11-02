@@ -12,8 +12,15 @@
       </li>
       <li>
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-        <span class="nav__sub-title">✏️Today, I Learned</span>
+        <span class="nav__sub-title">Today, I Learned</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "TIL_멋사ais7" %}
+                        <li><a href="/categories/til-멋사ais7" class="">멋사 ais7기, TIL ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
             <ul>
                 <!--TIL 카테고리 글들을 모아둔 페이지인 /categories/til 주소의 글로 링크 연결-->
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
@@ -30,7 +37,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">💻코딩테스트</span>
+        <span class="nav__sub-title">코딩테스트</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Python" %}
@@ -46,7 +53,29 @@
                 {% endfor %}
             </ul>
         
-        <span class="nav__sub-title">📚이달의 독서왕</span>
+        <span class="nav__sub-title">프로젝트</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Mini Project" %}
+                        <li><a href="/categories/mini-project" class="">Mini Project({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Mid Project" %}
+                        <li><a href="/categories/mid-project" class="">Mid Project({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Personal Project" %}
+                        <li><a href="/categories/personal-project" class="">Personal Project({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">이달의 독서왕</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "머신러닝 서적" %}
@@ -54,6 +83,8 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+
+
       </li>
   </ul>
 </nav>
