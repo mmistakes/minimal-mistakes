@@ -56,8 +56,7 @@ the user community. We are interested in all feedback and improvement suggestion
 For example: What additional supporting software would be useful? Is the documentation useful
 and user friendly?
 
-Please send your feedback to servicedesk@csc.fi, with "Helmi pilot" included in the
-e-mail subject-line.
+Please send your feedback to fiqci-feedback@postit.csc.fi.
 
 ## How to apply
 
