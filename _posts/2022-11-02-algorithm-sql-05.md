@@ -10,9 +10,6 @@ tags:
 toc: true
 toc_sticky: true
 toc_label : "목차"
-author_profile: false
-sidebar:
-    nav: "study"
 ---
 
 **SQL 고득점 Kit - SELECT 문제**
