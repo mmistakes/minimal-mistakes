@@ -270,6 +270,7 @@ defaults:
       related: false
       show_date: true  
       sidebar_main: true
+      mathjax: true
 
   - scope:
       path: "_pages"
@@ -277,3 +278,4 @@ defaults:
     values:
       layout: single
       author_profile: false
+
