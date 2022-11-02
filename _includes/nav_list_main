@@ -11,8 +11,31 @@
             <span style="font-family:'GyeonggiBatang';">전체 게시물 수</style> <span style="font-family:'GyeonggiBatang';">{{sum}}</style> <span style="font-family:'GyeonggiBatang';">개</style> 
       </li>
       <li>
+        <span class="nav__sub-title">🔍Python/SQL</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Python" %}
+                        <li><a href="/categories/Python" class="">Python ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "SQL" %}
+                        <li><a href="/categories/SQL" class="">SQL ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "TIL_202210" %}
+                        <li><a href="/categories/TIL_202210" class="">2022년 10월, TIL ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-        <span class="nav__sub-title">✏️Today, I Learned</span>
+        <span class="nav__sub-title">✏️회고 기록</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
                 {% for category in site.categories %}
