@@ -8,35 +8,35 @@
   <ul class="nav__items" id="category_tag_menu">
       <!--전체 글 수-->
       <li>
-            <span style="font-family:'GyeonggiBatang';">전체 게시물 수</style> <span style="font-family:'GyeonggiBatang';">{{sum}}</style> <span style="font-family:'GyeonggiBatang';">개</style> 
+           📂 <span style="font-family:'GyeonggiBatang';">전체 게시물 수</style> <span style="font-family:'GyeonggiBatang';">{{sum}}</style> <span style="font-family:'GyeonggiBatang';">개</style> 
       </li>
       <li>
-        <span class="nav__sub-title">지식 저장소</span>
+        <span class="nav__sub-title">Python/SQL/ML</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Python" %}
-                        <li><a href="/categories/Python" class="">Python ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Python" class="">- Python 뿌수기({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "SQL" %}
-                        <li><a href="/categories/SQL" class="">SQL ({{category[1].size}})</a></li>
+                        <li><a href="/categories/SQL" class="">- SQL 뿌수기({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Pandas" %}
-                        <li><a href="/categories/Pandas" class="">Pandas ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Pandas" class="">- Pandas 뿌수기({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "ML" %}
-                        <li><a href="/categories/ML" class="">Pandas ({{category[1].size}})</a></li>
+                        <li><a href="/categories/ML" class="">- Machine Learning 뿌수기 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -45,25 +45,18 @@
         <span class="nav__sub-title">회고 기록</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "TIL_ais7" %}
-                        <li><a href="/categories/TIL_ais7" class="">멋사 AI S7기, TIL ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
                 <!--TIL 카테고리 글들을 모아둔 페이지인 /categories/til 주소의 글로 링크 연결-->
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
                     {% if category[0] == "TIL_202210" %}
-                        <li><a href="/categories/TIL_202210" class="">TIL_202210 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/TIL_202210" class="">- 2022년 10월, TIL ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "TIL_202211" %}
-                        <li><a href="/categories/TIL_202211" class="">2022년 11월, TIL ({{category[1].size}})</a></li>
+                        <li><a href="/categories/TIL_202211" class="">- 2022년 11월, TIL ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -71,37 +64,37 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm_Python" %}
-                        <li><a href="/categories/Algorithm_Python" class="">Algorithm_Python ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Algorithm_Python" class="">- Python ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm_SQL" %}
-                        <li><a href="/categories/Algorithm_SQL" class="">Algorithm_SQL ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Algorithm_SQL" class="">- SQL ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
         
-        <span class="nav__sub-title">프로젝트</span>
+        <span class="nav__sub-title">멋쟁이사자처럼 ais7</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "TIL_ais7" %}
+                        <li><a href="/categories/TIL_ais7" class="">- TIL({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Mini Project" %}
-                        <li><a href="/categories/Mini Project" class="">Mini Project({{category[1].size}})</a></li>
+                        <li><a href="/categories/Mini Project" class="">- Mini Project({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Mid Project" %}
-                        <li><a href="/categories/Mid Project" class="">Mid Project({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Personal Project" %}
-                        <li><a href="/categories/personal-project" class="">Personal Project({{category[1].size}})</a></li>
+                        <li><a href="/categories/Mid Project" class="">- Mid Project({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
