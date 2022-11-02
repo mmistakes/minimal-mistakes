@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Linux/Git] 관리자 권한과 경로"
+title: "[Linux/Git] Linux경로와 관리자 권한"
 categories: Linux/Git
 tags: [ Linux, Git, CodeStates]
 toc: true
@@ -15,7 +15,7 @@ toc: true
 
 컴퓨터를 사용하다 보면 새로운 프로그램을 설치할 때, 관리자 권한으로 실행되는 경우가 있는데 이러한 부분들에 대해 알아보았다. 
 
-#### ▶️ Linux 경로와 관리자 권한  
+#### ▶️ Linux 경로와 관리자권한  
 
 ##### 📌 절대 경로
 
