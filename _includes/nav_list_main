@@ -26,7 +26,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "TIL_202211" %}
-                        <li><a href="/categories/til-202211" class="">2022년 11월, TIL({{category[1].size}})</a></li>
+                        <li><a href="/categories/til-202211" class="">2022년 11월, TIL ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
