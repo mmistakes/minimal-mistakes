@@ -1,76 +1,10 @@
 # main links
 main:
-  - title: 🏠
+  - title: "🏠Home"
     url: "https://j-jae0.github.io/"
-  - title: 👻
-    url: /free-time/
-  - title: 👩🏻‍💻
-    url: /study/
-  - title: 🦁
-    url: /likelion/
-  - title: 🗂
+  - title: "🗂Category"
     url: /categories/
-  - title: 🔖
+  - title: "🔖Tag"
     url: /tags/  
-  - title: 🔍
+  - title: "🔍Search"
     url: /search/
-
-# study     
-study:
-  - title: "배운내용 정리하기"
-    url: /study/
-
-  - title: "✏️Today, I Learned"
-    url: /study/til/
-    children:
-      - title: "2022년 10월, TIL"
-        url: /study/til/2022-10/
-      - title: "2022년 11월, TIL"
-        url: /study/til/2022-11/
-
-  - title: "💻코딩테스트"
-    url: /study/test/
-    children:
-      - title: "Python"
-        url: /study/test/python/
-      - title: "SQL"
-        url: /study/test/sql
-
-  - title: "📚이달의 독서왕"
-    url: /book/
-
-
-# 멋사ais7    
-likelion:
-  - title: "LIKELION AI S7"
-    url: /likelion/
-  - title: "Projects"
-    url: /likelion/project/
-    children:
-      - title: "Mini Project"
-        url: /likelion/project/mini/
-      - title: "Mid Project"
-        url: /likelion/project/mid/
-        
-  - title: "Special Lecture"
-    url: /likelion/lecture/  
-    children:
-      - title: "SQL"
-        url: /likelion/lecture/sql/
-      - title: "Statistics"
-        url: /likelion/lecture/statistics/
-      - title: "Tableau"
-        url: /likelion/lecture/tableau/
-        
-  - title: "Study Together"
-    url: /likelion/study/
-
-        
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
