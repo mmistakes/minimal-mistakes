@@ -18,10 +18,10 @@ toc_label : "목차"
 ***
 # 문제 설명
 
-```markdown
-다음은 종합병원에 등록된 환자정보를 담은 PATIENT 테이블입니다. 
-PATIENT 테이블은 다음과 같으며 PT_NO, PT_NAME, GEND_CD, AGE, TLNO는 각각 환자번호, 환자이름, 성별코드, 나이, 전화번호를 의미합니다.
-```
+
+>다음은 종합병원에 등록된 환자정보를 담은 PATIENT 테이블입니다.<br> 
+<br>PATIENT 테이블은 다음과 같으며 PT_NO, PT_NAME, GEND_CD, AGE, TLNO는 각각 환자번호, 환자이름, 성별코드, 나이, 전화번호를 의미합니다.
+
 
 |Column name|	Type	|Nullable|
 |:---|:---|:---|

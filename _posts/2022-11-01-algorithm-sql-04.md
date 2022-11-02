@@ -18,11 +18,10 @@ toc_label : "목차"
 ***
 # 문제 설명
 
-```markdown
-다음은 식당 리뷰 사이트의 회원 정보를 담은 MEMBER_PROFILE 테이블입니다.
-MEMBER_PROFILE 테이블은 다음과 같으며 MEMBER_ID, MEMBER_NAME, TLNO, GENDER, DATE_OF_BIRTH는 
-회원 ID, 회원 이름, 회원 연락처, 성별, 생년월일을 의미합니다.
-```
+
+> 다음은 식당 리뷰 사이트의 회원 정보를 담은 MEMBER_PROFILE 테이블입니다.<br>
+<br>MEMBER_PROFILE 테이블은 다음과 같으며 MEMBER_ID, MEMBER_NAME, TLNO, GENDER, DATE_OF_BIRTH는 회원 ID, 회원 이름, 회원 연락처, 성별, 생년월일을 의미합니다.
+
 
 |Column name|	Type|	Nullable|
 |:---|:---|:---|
