@@ -74,7 +74,7 @@ under “My Projects”. Fill in the form as follows:
 5.	Resources: Apply for the following standard resources
   - CPU core hours: **4** thousand
   - GPU hours: **0**	
-  - Storage TiB hours: **50** thousand
+  - Storage TiB hours: **5** thousand
   - QPU minutes: **1440** minutes
 6.	Program codes, methods and research objectives: Describe the intent and plan of the project in 200-500 words. In the pilot phase, acceptable use cases range from scientific curiosity via testing purposes to production-level research. The use has to be fully non-commercial, and **all members** of the project have to be affiliated with a Finnish higher-education institution or state research organisation.
 7.	Field of science: Select the best-matching
