@@ -269,6 +269,7 @@ defaults:
       # share: true
       related: false
       show_date: true  
+      sidebar_main: true
 
   - scope:
       path: "_pages"
