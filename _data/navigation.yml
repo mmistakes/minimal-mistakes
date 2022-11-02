@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "🏠Home"
+  - title: "🏠 Home"
     url: "https://j-jae0.github.io/"
-  - title: "🗂Category"
+  - title: "🗂 Category"
     url: /categories/
-  - title: "🔖Tag"
+  - title: "🔖 Tag"
     url: /tags/  
-  - title: "🔍Search"
+  - title: "🔍 Search"
     url: /search/
