@@ -11,6 +11,8 @@
            📂 <span style="font-family:'GyeonggiBatang';">전체 게시물 수</style> <span style="font-family:'GyeonggiBatang';">{{sum}}</style> <span style="font-family:'GyeonggiBatang';">개</style> 
       </li>
       <li>
+
+        <!-- 배운 지식 정리 -->
         <span class="nav__sub-title">Python/SQL/ML</span>
             <ul>
                 {% for category in site.categories %}
@@ -41,25 +43,7 @@
                 {% endfor %}
             </ul>
 
-        <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-        <span class="nav__sub-title">회고 기록</span>
-            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
-            <ul>
-                <!--TIL 카테고리 글들을 모아둔 페이지인 /categories/til 주소의 글로 링크 연결-->
-                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
-                {% for category in site.categories %}
-                    {% if category[0] == "TIL_202210" %}
-                        <li><a href="/categories/TIL_202210" class="">- 2022년 10월, TIL ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "TIL_202211" %}
-                        <li><a href="/categories/TIL_202211" class="">- 2022년 11월, TIL ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+        <!-- 코테 정리 -->
         <span class="nav__sub-title">코딩 테스트</span>
             <ul>
                 {% for category in site.categories %}
@@ -76,6 +60,7 @@
                 {% endfor %}
             </ul>
         
+        <!-- 멋사 ais7 -->
         <span class="nav__sub-title">멋쟁이사자처럼 ais7</span>
             <ul>
                 {% for category in site.categories %}
@@ -98,6 +83,25 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+
+        <!-- 회고 정리 -->
+        <span class="nav__sub-title">Today, I Learned</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "TIL_202210" %}
+                        <li><a href="/categories/TIL_202210" class="">- 2022년 10월, TIL ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "TIL_202211" %}
+                        <li><a href="/categories/TIL_202211" class="">- 2022년 11월, TIL ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <!-- 책 읽고 배운 것 정리 -->
         <span class="nav__sub-title">이달의 독서왕</span>
             <ul>
                 {% for category in site.categories %}
