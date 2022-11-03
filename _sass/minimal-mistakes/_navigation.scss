@@ -443,12 +443,6 @@
 
   a {
     color: inherit;
-    // 아래 총 5줄 추가
-    // font-size: $type-size-3;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   .active {
