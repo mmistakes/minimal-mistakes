@@ -31,7 +31,7 @@ intro:
 
 <!-- <center>Helmi 🟢 </center> -->
 
-Helmi is available for LUMI users daily between 13:00 EET and 08:00 EET. 
+Helmi is accessible through the LUMI environment daily between 13:00 EET and 08:00 EET. 
 
 <center>
 <style type="text/css">
