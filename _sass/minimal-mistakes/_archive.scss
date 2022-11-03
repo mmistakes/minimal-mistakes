@@ -46,7 +46,7 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em; // 0.25em
+  margin-bottom: 0.1em; // 0.25em
   font-family: $sans-serif-narrow;
   line-height: initial; // initial
   overflow: hidden;
@@ -75,9 +75,11 @@
   }
 }
 
+/* 글 밑 내용 미리보기 부분 */
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-6;
+  margin-bottom: 0; // 추가 함
+  font-size: $type-size-7; // default 6
 
   & + p {
     text-indent: 0;
@@ -310,7 +312,7 @@
     }
 
     .archive__item-teaser {
-      margin-bottom: 2em;
+      margin-bottom: 1.5em; // default 2em
     }
 
     a.btn::before {
