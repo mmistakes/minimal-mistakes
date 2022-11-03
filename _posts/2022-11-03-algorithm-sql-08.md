@@ -20,6 +20,8 @@ toc_label : "목차"
 
 > 다음은 어느 의류 쇼핑몰의 온라인 상품 판매 정보를 담은 ONLINE_SALE 테이블 입니다.<br> <br>ONLINE_SALE 테이블은 아래와 같은 구조로 되어있으며 ONLINE_SALE_ID, USER_ID, PRODUCT_ID, SALES_AMOUNT, SALES_DATE는 각각 온라인 상품 판매 ID, 회원 ID, 상품 ID, 판매량, 판매일을 나타냅니다.
 
+<div style="text-align : center;">
+
 |Column name|	Type|	Nullable|
 |:---|:---|:---|
 |ONLINE_SALE_ID|	INTEGER|	FALSE|
@@ -27,6 +29,8 @@ toc_label : "목차"
 |PRODUCT_ID	|INTEGER|	FALSE|
 |SALES_AMOUNT|	INTEGER|	FALSE|
 |SALES_DATE	|DATE|	FALSE|
+
+</div>
 
 > 동일한 날짜, 회원 ID, 상품 ID 조합에 대해서는 하나의 판매 데이터만 존재합니다.
 
