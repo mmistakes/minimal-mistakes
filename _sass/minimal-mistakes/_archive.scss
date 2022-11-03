@@ -78,7 +78,6 @@
 /* 글 밑 내용 미리보기 부분 */
 .archive__item-excerpt {
   margin-top: 0;
-  margin-bottom: 0; // 추가 함
   font-size: $type-size-6; // default 6
 
   & + p {
