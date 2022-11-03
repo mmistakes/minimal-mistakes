@@ -38,20 +38,32 @@ toc_label : "목차"
 <br>
 
 # 문제 풀이
-
-## (1) 코드 작성
-```sql
-SELECT FLAVOR
-FROM FIRST_HALF
-ORDER BY TOTAL_ORDER DESC, SHIPMENT_ID
+## (1) Pseudo-Code
+```markdown
+1. 동일한 회원, 동일한 상품 컬럼을 GROUP BY 로 묶는다.
+2. GROUP BY 로 묶은 값을 기준으로 행이 2개 이상인 데이터만 가져올 수 있도록 HAVING 문을 사용한다.
+3. 데이터에 대해 고객ID 오름차순, 상품ID 내림차순(DESC) 정렬한다.
 ```
 
-## (2) 코드 결과
+## (2) 코드 작성
+```sql
+SELECT USER_ID, PRODUCT_ID
+FROM ONLINE_SALE
+GROUP BY USER_ID, PRODUCT_ID
+HAVING COUNT(*) > 1
+ORDER BY USER_ID, PRODUCT_ID DESC
+```
+
+## (3) 코드 결과
 - **성능 요약** : 메모리 0.0 MB, 시간 0.00 ms
 - **채점결과** : EMPTY
 
-## (3) 코드 리뷰 및 회고
-- 이번 문제는 매우 쉬웠다.
+## (4) 코드 리뷰 및 회고
+- 이번 문제는 고민을 조금 많이 했다.
+- 동일한 고객, 동일한 상품을 재구매한 데이터를 가져올 수 있는 방법에 대해 고민을 많이했다.
+- 두 조건에 대한 데이터를 가져올 수 있도록, 두 컬럼을 그룹바이로 묶어서 해결하였다.
+- 또한, 그룹바이 한 결과에 대해, 행의 개수가 2개 이상인 조건을 걸어주기 위해 HAVING 문을 사용하였다.
+- 문제를 해결해서 뿌듯하다.🔥
 
 <br>
 
