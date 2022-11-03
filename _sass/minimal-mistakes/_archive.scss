@@ -33,7 +33,7 @@
 
 // 최근 포스트
 .archive__subtitle {
-  margin: 0.8em 0 0; // 1.414em 0 0.5em
+  margin: 1.414em 0 0.5em; // 1.414em 0 0.5em
   padding-bottom: 0.5em;
   font-size: $type-size-5; // defaults:6
   color: $muted-text-color;
@@ -45,9 +45,9 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0.9em; // 0.25em
+  margin-bottom: 0.25em; // 0.25em
   font-family: $sans-serif-narrow;
-  line-height: 1.5; // initial
+  line-height: initial; // initial
   overflow: hidden;
   text-overflow: ellipsis;
 
