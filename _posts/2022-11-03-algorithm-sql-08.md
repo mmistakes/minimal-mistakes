@@ -67,4 +67,3 @@ ORDER BY USER_ID, PRODUCT_ID DESC
 
 <br>
 
-***
