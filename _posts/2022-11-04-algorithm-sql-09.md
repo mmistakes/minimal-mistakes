@@ -52,8 +52,6 @@ toc_label : "목차"
 
 [👉 문제(모든 레코드 조회하기) 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59034)
 
-<br>
-
 ## 문제 풀이
 ### (1) 코드 작성
 
@@ -89,8 +87,6 @@ ORDER BY ANIMAL_ID
 ..이하 생략
 
 [👉 문제(역순 정렬하기) 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59035)
-
-<br>
 
 ## 문제 풀이
 ### (1) 코드 작성
