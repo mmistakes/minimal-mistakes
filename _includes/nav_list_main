@@ -31,7 +31,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Pandas" %}
-                        <li><a href="/categories/Pandas" class="">- Pandas 부수기 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Pandas" class="">- Pandas cheat sheet 부수기 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
