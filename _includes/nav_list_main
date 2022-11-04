@@ -78,15 +78,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Mini Project" %}
-                        <li><a href="/categories/Mini Project" class="">- Mini Project ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Mid Project" %}
-                        <li><a href="/categories/Mid Project" class="">- Mid Project ({{category[1].size}})</a></li>
+                    {% if category[0] == "Project" %}
+                        <li><a href="/categories/Project" class="">- Project ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -108,17 +101,25 @@
                 {% endfor %}
             </ul>
 
+        <!-- 오류 분석하기 -->
+        <span class="nav__sub-title">Error</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Error" %}
+                        <li><a href="/categories/Error" class="">- 오류 분석하기 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
         <!-- 책 읽고 배운 것 정리 -->
-        <span class="nav__sub-title">이달의 독서왕</span>
+        <!-- <span class="nav__sub-title">이달의 독서왕</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "머신러닝 서적" %}
                         <li><a href="/categories/book-ml" class="">Machine Learning ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
-
-
+            </ul> -->
       </li>
   </ul>
 </nav>
