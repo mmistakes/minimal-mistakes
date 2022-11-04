@@ -31,7 +31,7 @@ toc_label : "목차"
 |NAME|	VARCHAR(N)|	TRUE|
 |SEX_UPON_INTAKE|	VARCHAR(N)	|FALSE|
 
-- 본 문제는 Kaggle의 ["Austin Animal Center Shelter Intakes and Outcomes"](https://www.kaggle.com/datasets/aaronschlegel/austin-animal-center-shelter-intakes-and-outcomes)에서 제공하는 데이터를 사용하였으며 [ODbL](https://opendatacommons.org/licenses/odbl/1-0/)의 적용을 받습니다.
+본 문제는 Kaggle의 ["Austin Animal Center Shelter Intakes and Outcomes"](https://www.kaggle.com/datasets/aaronschlegel/austin-animal-center-shelter-intakes-and-outcomes)에서 제공하는 데이터를 사용하였으며 [ODbL](https://opendatacommons.org/licenses/odbl/1-0/)의 적용을 받습니다.
 
 <br>
 
@@ -50,7 +50,7 @@ toc_label : "목차"
 
 ..이하 생략
 
-- [👉 문제(모든 레코드 조회하기) 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59034)
+[👉 문제(모든 레코드 조회하기) 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59034)
 
 <br>
 
@@ -88,7 +88,7 @@ ORDER BY ANIMAL_ID
 
 ..이하 생략
 
-- [👉 문제(역순 정렬하기) 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59035)
+[👉 문제(역순 정렬하기) 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59035)
 
 <br>
 
