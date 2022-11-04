@@ -71,6 +71,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "STUDY_ais7" %}
+                        <li><a href="/categories/STUDY_ais7" class="">- 자기주도학습 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "Mini Project" %}
                         <li><a href="/categories/Mini Project" class="">- Mini Project ({{category[1].size}})</a></li>
                     {% endif %}
