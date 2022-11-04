@@ -279,3 +279,4 @@ defaults:
   #     layout: single
   #     author_profile: false
 
+date_format: "%Y-%m-%d"
