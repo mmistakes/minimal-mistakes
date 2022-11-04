@@ -84,19 +84,12 @@
                 {% endfor %}
             </ul>
 
-        <!-- 회고 정리 -->
-        <span class="nav__sub-title">Today, I Learned</span>
+        <!-- 내가 한 일 정리 -->
+        <span class="nav__sub-title">Today, What I Did</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "TIL_202210" %}
-                        <li><a href="/categories/TIL_202210" class="">- 2022년 10월, TIL ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "TIL_202211" %}
-                        <li><a href="/categories/TIL_202211" class="">- 2022년 11월, TIL ({{category[1].size}})</a></li>
+                        <li><a href="/categories/TIL_202210" class="">- 2022년 11월, TWID ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
