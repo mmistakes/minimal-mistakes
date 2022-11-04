@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <div class="header-page">
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="contents">
+        <div class="contents__clock">
+            <h2 id="clock">00:00:00</h2>
+        </div>
+        <div class="contents__LogIn">
+            <form class="hidden contents__LogIn-form" id="login-form">
+                <input class="contents__LogIn-input " type="text" placeholder="이름을 알려주세요" maxlength="15" required>
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+        </div>
+    </div>
+
+    <form id="todo-form">
+        <input type="text" placeholder="할 일을 적어주세요">
+    </form>
+
+    <ul id="todo-list"></ul>
+
+    <div id="quotes">
+        <span></span>
+        <span></span>
+    </div>
+
+    <script src="./js/greetings.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/quotes.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/weather.js"></script>
+</body>
+
+</html>
