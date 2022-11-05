@@ -124,10 +124,10 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/j-jae0"
     - label: "Velog"
-      icon: "fa-brands fa-markdown"
+      icon: "fa-thin fa-hippo"
       url: "https://velog.io/@jaeyoung_jung"
     - label: "Tistory"
-      icon: "fa-brands fa-markdown"
+      icon: "fa-thin fa-teddy-bear"
       url: "https://jaeyoung-jung.tistory.com/"
 
 # Reading Files
