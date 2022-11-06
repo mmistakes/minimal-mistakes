@@ -1,9 +1,13 @@
 const images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
 
-const chooseImages = images[Math.floor(Math.random() * images.length)];
+const chosenImages = images[Math.floor(Math.random() * images.length)];
 
-const bgImage = document.createElement("img");
+// const backgroundImage = document.createElement("img");
 
-bgImage.src = `img/${chooseImages}`;
+// backgroundImage.src = `img/${chooseImages}`;
+// document.body.appendChild(backgroundImage);
+// document.body.backgroundImage.url =
 
-document.body.appendChild(bgImage);
+const body = document.querySelector("body");
+
+body.style.backgroundImage = `url(img/${chosenImages})`;

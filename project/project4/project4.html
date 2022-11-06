@@ -8,15 +8,17 @@
   </head>
   <body>
     <div class="header-box">
-      <div id="clock-box">
-        <h2 id="clock">00:00:00</h2>
-      </div>
       <div id="weather">
         <span></span>
         <span></span>
       </div>
     </div>
+    <!-- header-box: 날씨 -->
     <div class="main-box">
+      <div id="clock-box">
+        <h2 id="clock">00:00:00</h2>
+      </div>
+      <!-- 시간 -->
       <form id="login-form" class="hidden">
         <input
           required
@@ -24,18 +26,27 @@
           type="text"
           placeholder="what is your name?"
         />
-        <button>login</button>
       </form>
-      <h1 id="greeting" class="hidden"></h1>
+      <!-- 이름입력창 -->
+      <div>
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
+      <!-- 인사말 -->
       <form id="todo-form">
         <input type="text" placeholder="Write a To Do and Press Enter" />
       </form>
+      <!-- todo입력창 -->
       <ul id="todo-list"></ul>
-      <div id="quote">
-        <span></span>
-        <span></span>
-      </div>
     </div>
+    <!-- todo리스트 -->
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <!-- 명언 -->
+
+    <!-- main-box: 시간, 이름입력창, 인사말, todo입력창, todo리스트, 명언 -->
+
     <script src="./pj4-clock.js" defer></script>
     <script src="./pj4-greeting.js"></script>
     <script src="./quotes.js"></script>

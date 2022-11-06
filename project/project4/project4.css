@@ -1,3 +1,8 @@
-.hidden {
-  display: none;
+body {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: "no-repeat";
+  background-position: "center";
+  margin: 0;
+  padding: 0;
 }
