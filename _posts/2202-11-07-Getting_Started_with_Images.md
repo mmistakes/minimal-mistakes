@@ -1,3 +1,10 @@
+---
+layout: page
+title: "포스트 제목"
+date: YYYY-MM-DD hh:mm:ss -0000
+categories: CATEGORY-1 CATEGORY-2
+---
+
 # <font style="color:black">Getting Started with Images</font>
 This notebook will help you take your first steps in learning Image Processing and Computer Vision using OpenCV. You will learn some important lessons using some simple examples. In this notebook, you will learn the following:
 
