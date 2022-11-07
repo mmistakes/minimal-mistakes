@@ -1,5 +1,5 @@
 ---
-title:  "[SQL] 프로그래머스 Lv 2. 재구매가 일어난 상품과 회원 리스트 구하기"
+title:  "[프로그래머스 SQL] Lv 2. 재구매가 일어난 상품과 회원 리스트 구하기"
 layout: single
 
 categories: "Algorithm_SQL"

@@ -1,5 +1,5 @@
 ---
-title:  "[SQL] 프로그래머스 Lv 4. 서울에 위치한 식당 목록 출력하기"
+title:  "[프로그래머스 SQL] Lv 4. 서울에 위치한 식당 목록 출력하기"
 layout: single
 
 categories: "Algorithm_SQL"

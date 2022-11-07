@@ -1,5 +1,5 @@
 ---
-title:  "[SQL] 프로그래머스 Lv 1. 인기있는 아이스크림🍦"
+title:  "[프로그래머스 SQL] Lv 1. 인기있는 아이스크림🍦"
 layout: single
 
 categories: "Algorithm_SQL"

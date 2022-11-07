@@ -1,5 +1,5 @@
 ---
-title:  "[SQL] 프로그래머스 Lv 1. 모든 레코드 조회하기, 역순 정렬하기"
+title:  "[프로그래머스 SQL] Lv 1. 모든 레코드 조회하기, 역순 정렬하기"
 layout: single
 
 categories: "Algorithm_SQL"

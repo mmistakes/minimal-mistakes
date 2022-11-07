@@ -1,5 +1,5 @@
 ---
-title:  "[SQL] 프로그래머스 Lv 1. 12세 이하인 여자 환자 목록 출력하기"
+title:  "[프로그래머스 SQL] Lv 1. 12세 이하인 여자 환자 목록 출력하기"
 layout: single
 
 categories: "Algorithm_SQL"

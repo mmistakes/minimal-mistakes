@@ -1,5 +1,5 @@
 ---
-title:  "[SQL] 프로그래머스 Lv 4. 오프라인/온라인 판매 데이터 통합하기"
+title:  "[프로그래머스 SQL] Lv 4. 오프라인/온라인 판매 데이터 통합하기"
 layout: single
 
 categories: "Algorithm_SQL"

@@ -1,5 +1,5 @@
 ---
-title:  "[SQL] 프로그래머스 Lv 1. 과일로 만든 아이스크림 고르기"
+title:  "[프로그래머스 SQL] Lv 1. 과일로 만든 아이스크림 고르기"
 layout: single
 
 categories: "Algorithm_SQL"

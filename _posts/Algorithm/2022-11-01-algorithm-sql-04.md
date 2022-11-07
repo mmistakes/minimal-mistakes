@@ -1,5 +1,5 @@
 ---
-title:  "[SQL] 프로그래머스 Lv 2. 3월에 태어난 여성 회원 목록 출력하기"
+title:  "[프로그래머스 SQL] Lv 2. 3월에 태어난 여성 회원 목록 출력하기"
 layout: single
 
 categories: "Algorithm_SQL"
