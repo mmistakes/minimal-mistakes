@@ -1,8 +1,6 @@
 ---
 layout: page
 title: "포스트 제목"
-date: YYYY-MM-DD hh:mm:ss -0000
-categories: CATEGORY-1 CATEGORY-2
 ---
 
 # <font style="color:black">Getting Started with Images</font>
@@ -39,9 +37,9 @@ Image(filename='checkerboard_18x18.png')
 
 
 
-    
+​    
 ![png](output_4_0.png)
-    
+​    
 
 
 
@@ -54,9 +52,9 @@ Image(filename='checkerboard_84x84.jpg')
 
 
 
-    
+​    
 ![jpeg](output_5_0.jpg)
-    
+​    
 
 
 
@@ -121,7 +119,7 @@ print(cb_img)
      [  0   0   0   0   0   0 255 255 255 255 255 255   0   0   0   0   0   0]
      [  0   0   0   0   0   0 255 255 255 255 255 255   0   0   0   0   0   0]
      [  0   0   0   0   0   0 255 255 255 255 255 255   0   0   0   0   0   0]]
-    
+
 
 ## Display Image attributes
 
@@ -136,7 +134,7 @@ print("Data type of image is ", cb_img.dtype)
 
     Image size is  (18, 18)
     Data type of image is  uint8
-    
+
 
 ## Display Images using Matplotlib
 
@@ -154,9 +152,9 @@ plt.imshow(cb_img)
 
 
 
-    
+​    
 ![png](output_11_1.png)
-    
+​    
 
 
 ### What happened?
@@ -176,9 +174,9 @@ plt.imshow(cb_img, cmap='gray')
 
 
 
-    
+​    
 ![png](output_13_1.png)
-    
+​    
 
 
 ## Another example
@@ -213,7 +211,7 @@ plt.imshow(cb_img_fuzzy,cmap='gray')
      [ 12   6   7  27   0 131 234 255 254 250 254 230 123   1  28   5  10  10]
      [  0   0   9  22   1 133 233 255 253 253 254 230 129   1  26   2   0   0]
      [  0   0   9  22   1 132 233 255 253 253 254 230 129   1  26   2   0   0]]
-    
+
 
 
 
@@ -223,9 +221,9 @@ plt.imshow(cb_img_fuzzy,cmap='gray')
 
 
 
-    
+​    
 ![png](output_15_2.png)
-    
+​    
 
 
 ## Working with Color Images
@@ -240,9 +238,9 @@ Image("coca-cola-logo.png")
 
 
 
-    
+​    
 ![png](output_17_0.png)
-    
+​    
 
 
 
@@ -265,8 +263,9 @@ print("")
 
     Image size is  (700, 700, 3)
     Data type of image is  uint8
-    
-    
+
+
+​    
 
 ## Display the Image
 
@@ -284,9 +283,9 @@ plt.imshow(coke_img)
 
 
 
-    
+​    
 ![png](output_21_1.png)
-    
+​    
 
 
 The color displayed above is different from the actual image. This is because matplotlib expects the image in RGB format whereas OpenCV stores images in BGR format. Thus, for correct display, we need to reverse the channels of the image. We will discuss about the channels in the sections below.
@@ -305,9 +304,9 @@ plt.imshow(coke_img_channels_reversed)
 
 
 
-    
+​    
 ![png](output_23_1.png)
-    
+​    
 
 
 ## Splitting and Merging Color Channels
@@ -341,9 +340,9 @@ plt.subplot(144);plt.imshow(imgMerged[:,:,::-1]);plt.title("Merged Output");
 ```
 
 
-    
+​    
 ![png](output_25_0.png)
-    
+​    
 
 
 ## Converting to different Color Spaces
@@ -385,9 +384,9 @@ plt.imshow(img_NZ_rgb)
 
 
 
-    
+​    
 ![png](output_28_1.png)
-    
+​    
 
 
 ### Changing to HSV color space
@@ -408,9 +407,9 @@ plt.subplot(144);plt.imshow(img_NZ_rgb);plt.title("Original");
 ```
 
 
-    
+​    
 ![png](output_30_0.png)
-    
+​    
 
 
 ## Modifying individual Channel
@@ -430,9 +429,9 @@ plt.subplot(144);plt.imshow(img_NZ_rgb);plt.title("Modified");
 ```
 
 
-    
+​    
 ![png](output_32_0.png)
-    
+​    
 
 
 ## Saving Images
@@ -441,7 +440,7 @@ Saving the image is as trivial as reading an image in OpenCV. We use the functio
 
 The function imwrite saves the image to the specified file. The image format is chosen based on the filename extension (see cv::imread for the list of extensions). In general, only 8-bit single-channel or 3-channel (with 'BGR' channel order) images can be saved using this function (see the OpenCV documentation for further details).
 
-	
+
 ### <font style="color:rgb(8,133,37)">Function Syntax </font>
 ``` python
 cv2.imwrite( filename, img[, params] )
@@ -468,9 +467,9 @@ Image(filename='New_Zealand_Lake_SAVED.png')
 
 
 
-    
+​    
 ![png](output_34_0.png)
-    
+​    
 
 
 
@@ -487,6 +486,6 @@ print("img_NZ_gry shape is: ", img_NZ_gry.shape)
 
     img_NZ_bgr shape is:  (600, 840, 3)
     img_NZ_gry shape is:  (600, 840)
-    
+
 
 ## Thank You!
