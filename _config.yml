@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-US"
-title                    : "JYP-Data for Good"
+title                    : "낭중지추"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : 낭중지추 - 능력과 재주가 뛰어난 사람은 스스로 두각을 나타내게 된다.
 name                     : "Juyoon Park"
 description              : "Let's Make it Happen"
 url                      : "https://xper100.github.io"
