@@ -2,7 +2,7 @@
 layout: single
 title: "[JPA]Spring Data JPA"
 excerpt : "Spring Data JPA에 대해서"
-categories: ~~jpa~~
+categories: jpa
 ---
 
 ## Spring Data JPA란?
