@@ -8,55 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ceadc70c8d9d9f06",
+            "id": "d7245f974e219a23",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-10-18-github2.md",
+                "file": "_posts/2022-11-05-Dataviz1.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f1b8fcf6f72f9f99",
+            "id": "db531cc2f3aa021e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-10-24-RecSysC03.md",
+                "file": "_posts/2022-11-07-AIservice02.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a903a3dd1326663d",
+            "id": "bac28eadf47c513b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-10-27-daily.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "00775bd0b36d0730",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2022-10-27-daily.md",
+                "file": "_posts/2022-11-07-AIservice03.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -123,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-10-27-daily.md",
+                "file": "_posts/2022-11-07-AIservice03.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-10-27-daily.md",
+                "file": "_posts/2022-11-07-AIservice03.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-10-27-daily.md"
+                "file": "_posts/2022-11-07-AIservice03.md"
               }
             }
           }
@@ -174,20 +162,17 @@
     "width": 100,
     "collapsed": true
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
-  "active": "00775bd0b36d0730",
+  "active": "bac28eadf47c513b",
   "lastOpenFiles": [
-    "_posts/Untitled.md",
+    "_posts/2022-11-07-AIservice02.md",
+    "_posts/2022-11-07-AIservice03.md",
+    "_posts/2022-11-07-AIservice01.md",
+    "_posts/2022-11-05-Dataviz1.md",
     "_posts/2022-10-27-daily.md",
-    "_posts/2022-10-26-daily.md",
-    "_posts/2022-10-24-RecSysC03.md",
-    "_posts/2022-10-18-github2.md",
-    "_posts/2022-10-17-daily.md",
-    "_posts/2022-10-20-github3.md",
-    "_posts/2022-10-24-daily.md",
-    "_posts/2022-10-20-daily.md",
-    "_posts/2022-10-11-github1.md"
+    "_posts/2022-10-28-daily.md",
+    "_posts/2022-10-09-Visual3-2.md",
+    "_posts/2022-10-25-RecSysC07.md",
+    "_posts/2022-10-15-RecSys8.md",
+    "_posts/2022-10-26-daily.md"
   ]
 }
