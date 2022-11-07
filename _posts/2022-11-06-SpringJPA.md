@@ -13,6 +13,7 @@ categories: jpa
 > - 공통 메소드를 제공한다.(아래 내용 있습니다)
 
 ---
+
 ## 의존성 주입
 
 - gradle에서 build.gradle
