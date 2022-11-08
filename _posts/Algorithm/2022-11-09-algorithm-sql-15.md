@@ -1,5 +1,5 @@
 ---
-title:  "[프로그래머스 SQL] Lv 1. 아픈 동물 찾기"
+title:  "[프로그래머스 SQL] Lv 1. 상위 n개 레코드"
 layout: single
 
 categories: "Algorithm_SQL"
@@ -31,12 +31,10 @@ ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은
 |NAME|	VARCHAR(N)|	TRUE|
 |SEX_UPON_INTAKE|	VARCHAR(N)|	FALSE|
 
-동물 보호소에 들어온 동물 중 아픈 동물의 아이디와 이름을 조회하는 SQL 문을 작성해주세요. 
-<br>이때 결과는 아이디 순으로 조회해주세요.
-<br>아픈 동물은 ```INTAKE_CONDITION```이 Sick인 경우를 뜻함
+동물 보호소에 가장 먼저 들어온 동물의 이름을 조회하는 SQL 문을 작성해주세요.
 
 본 문제는 Kaggle의 "Austin Animal Center Shelter Intakes and Outcomes"에서 제공하는 데이터를 사용하였으며 ODbL의 적용을 받습니다.
-<br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59036)
+<br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59404)
 
 <br>
 
@@ -44,17 +42,17 @@ ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은
 ## (1) Pseudo-Code
 ```markdown
 1. ANIMAL_INS 테이블을 가져온다.
-2. INTAKE_CONDITION이 Sick인 데이터를 가져온다.
-3. 여러 컬럼 중 ANIMAL_ID, NAME 만 출력한다.
-4. 출력 시 ANIMAL_ID를 기준으로 오름차순 정렬한다.
+2. 여러 컬럼 중 NAME 만 출력한다.
+3. 보호소에 가장 먼저 들어온 동물을 조회하기 위해 DATETIME을 오름차순 정렬한다.
+4. LIMIT를 1로 설정하여 가장 먼저 들어온 동물 한 마리의 이름을 조회한다.
 ```
 
 ## (2) 코드 작성
 ```sql
-SELECT ANIMAL_ID, NAME
+SELECT NAME
 FROM ANIMAL_INS
-WHERE INTAKE_CONDITION = "Sick"
-ORDER BY ANIMAL_ID
+ORDER BY DATETIME
+LIMIT 1
 ```
 
 ## (3) 코드 결과
