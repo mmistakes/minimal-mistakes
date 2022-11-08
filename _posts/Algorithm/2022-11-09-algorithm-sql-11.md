@@ -10,7 +10,6 @@ tags:
 toc: true
 toc_sticky: true
 toc_label : "목차"
-published: false
 ---
 
 **SQL 고득점 Kit - SELECT 문제**
@@ -32,8 +31,9 @@ ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은
 |NAME|	VARCHAR(N)|	TRUE|
 |SEX_UPON_INTAKE|	VARCHAR(N)|	FALSE|
 
-동물 보호소에 들어온 동물 중 아픈 동물1의 아이디와 이름을 조회하는 SQL 문을 작성해주세요. 
+동물 보호소에 들어온 동물 중 아픈 동물의 아이디와 이름을 조회하는 SQL 문을 작성해주세요. 
 <br>이때 결과는 아이디 순으로 조회해주세요.
+<br>아픈 동물은 ```INTAKE_CONDITION```이 Sick인 경우를 뜻함
 
 본 문제는 Kaggle의 "Austin Animal Center Shelter Intakes and Outcomes"에서 제공하는 데이터를 사용하였으며 ODbL의 적용을 받습니다.
 <br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59036)
@@ -48,7 +48,10 @@ ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은
 
 ## (2) 코드 작성
 ```sql
-
+SELECT ANIMAL_ID, NAME
+FROM ANIMAL_INS
+WHERE INTAKE_CONDITION = "Sick"
+ORDER BY ANIMAL_ID
 ```
 
 ## (3) 코드 결과
