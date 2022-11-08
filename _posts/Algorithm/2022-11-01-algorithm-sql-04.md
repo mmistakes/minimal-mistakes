@@ -19,7 +19,7 @@ toc_label : "목차"
 # 문제 설명
 
 
-> 다음은 식당 리뷰 사이트의 회원 정보를 담은 MEMBER_PROFILE 테이블입니다.<br>
+다음은 식당 리뷰 사이트의 회원 정보를 담은 MEMBER_PROFILE 테이블입니다.
 <br>MEMBER_PROFILE 테이블은 다음과 같으며 MEMBER_ID, MEMBER_NAME, TLNO, GENDER, DATE_OF_BIRTH는 회원 ID, 회원 이름, 회원 연락처, 성별, 생년월일을 의미합니다.
 
 
@@ -32,9 +32,9 @@ toc_label : "목차"
 |DATE_OF_BIRTH	|DATE|	TRUE|
 
 ## 문제
-- MEMBER_PROFILE 테이블에서 생일이 3월인 여성 회원의 ID, 이름, 성별, 생년월일을 조회하는 SQL문을 작성해주세요. 
-- 이때 전화번호가 NULL인 경우는 출력대상에서 제외시켜 주시고, 결과는 회원ID를 기준으로 오름차순 정렬해주세요.
-- [👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/131120)
+MEMBER_PROFILE 테이블에서 생일이 3월인 여성 회원의 ID, 이름, 성별, 생년월일을 조회하는 SQL문을 작성해주세요. 
+<br>이때 전화번호가 NULL인 경우는 출력대상에서 제외시켜 주시고, 결과는 회원ID를 기준으로 오름차순 정렬해주세요.
+<br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/131120)
 
 <br>
 

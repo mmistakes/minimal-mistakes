@@ -18,9 +18,8 @@ toc_label : "목차"
 ***
 # 문제 설명
 
-
-> 다음은 식품공장의 정보를 담은 FOOD_FACTORY 테이블입니다. <br><br>FOOD_FACTORY 테이블은 다음과 같으며 FACTORY_ID, FACTORY_NAME, ADDRESS, TLNO는 각각 공장 ID, 공장 이름, 주소, 전화번호를 의미합니다.
-
+다음은 식품공장의 정보를 담은 FOOD_FACTORY 테이블입니다. 
+<br>FOOD_FACTORY 테이블은 다음과 같으며 FACTORY_ID, FACTORY_NAME, ADDRESS, TLNO는 각각 공장 ID, 공장 이름, 주소, 전화번호를 의미합니다.
 
 |Column name|	Type|	Nullable|
 |:---|:---|:---|
@@ -30,9 +29,9 @@ toc_label : "목차"
 |TLNO	|VARCHAR(20)	|TRUE|
 
 ## 문제
-- FOOD_FACTORY 테이블에서 강원도에 위치한 식품공장의 공장 ID, 공장 이름, 주소를 조회하는 SQL문을 작성해주세요. 
-- 이때 결과는 공장 ID를 기준으로 오름차순 정렬해주세요.
-- [👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/131112)
+FOOD_FACTORY 테이블에서 강원도에 위치한 식품공장의 공장 ID, 공장 이름, 주소를 조회하는 SQL문을 작성해주세요. 
+<br>이때 결과는 공장 ID를 기준으로 오름차순 정렬해주세요.
+<br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/131112)
 
 <br>
 
