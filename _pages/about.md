@@ -87,6 +87,10 @@ Helmi, the first Finnish quantum computer, is operated by VTT. Presently, Helmi 
 
 <a title="NordIQuEst LinkedIn" href="https://www.linkedin.com/company/nordiquest"><img width="128" alt="LinkedIn logo initials" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/128px-LinkedIn_logo_initials.png"></a>
 
+For more information on NordIQuEst contact Alberto Lanzanova (project manager): alberto.lanzanova at csc.fi. 
+
+
+
 
 <!-- ## Partners -->
 
