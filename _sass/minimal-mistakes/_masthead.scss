@@ -23,7 +23,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    font-family: 'BMHANNAPro'; // default : $sans-serif-narrow;
+    font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
       max-width: $max-width;
@@ -49,7 +49,6 @@
   display: flex;
   -ms-flex-item-align: center;
   align-self: center;
-  font-family: 'BMHANNAPro'; // 내가 추가한 것
   // font-weight: bold;
   font-size: $type-size-4;
   // z-index: 20;
