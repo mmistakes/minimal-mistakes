@@ -25,7 +25,7 @@ feature_row:
   - image_path: /assets/images/free-to-use-sounds-kOuCX7fh50U-unsplash.jpg
     alt: "Join the Lab"
     title: "Join the Lab"
-    excerpt: "We will be hiring for several computational biology positions in the coming months related to 1) xenosurveillance and metagenomics for wet market pathogens, 2) the Engineering of RNA Dependent RNA Polymerases and 3) the detection of Bovine mastitis my thermal imaging and Machine learning. Contact us for details."
+    excerpt: "We will be hiring for several computational biology positions in the coming months related to: 1) xenosurveillance and metagenomics for wet market pathogens, 2) the engineering of RNA Dependent RNA Polymerases and, 3) the detection of bovine mastitis by thermal imaging and machine learning. Contact us for details."
     url: "/jobs/"
     btn_label: "Learn More"
     btn_class: "btn--info"
