@@ -6,7 +6,7 @@
    Typography
    ========================================================================== */
 
-$doc-font-size: 18 !default; // 16
+$doc-font-size: 16 !default; 
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
@@ -14,7 +14,7 @@ $indent-var: 1.3em !default;
 
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
-$sans-serif: "KOTRA_GOTHIC", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default; // -apple-system, BlinkMacSystemFont,
+$sans-serif: "Gowun Dodum", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default; // -apple-system, BlinkMacSystemFont,
 $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 
 /* sans serif typefaces */
