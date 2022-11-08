@@ -73,3 +73,9 @@ search: false
     font-weight: normal;
     font-style: normal;
 }
+
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+
+.hanna * {
+ font-family: 'Hanna', fantasy;
+}
