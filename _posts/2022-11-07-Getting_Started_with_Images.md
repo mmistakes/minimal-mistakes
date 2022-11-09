@@ -6,7 +6,7 @@ categories:
 
 tags:
   - opencv 
-  - 기술 지원
+  - Python
 
 ---
 
