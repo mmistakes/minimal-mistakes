@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "포스트 제목"
+title: "1강 제목 변경"
 categories:
   - aciform
   - antiquarianism
