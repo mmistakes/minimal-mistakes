@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "1강 제목 변경"
 categories:
   - openCV
