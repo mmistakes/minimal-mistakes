@@ -7,6 +7,8 @@ tags:
   - opencv 
   - Python
 
+toc : true
+
 ---
 
 # <font style="color:black">Getting Started with Images</font>
