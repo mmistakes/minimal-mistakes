@@ -102,11 +102,18 @@
             </ul>
 
         <!-- 오류 분석하기 -->
-        <span class="nav__sub-title">Error</span>
+        <span class="nav__sub-title">Error/Warning</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Error" %}
-                        <li><a href="/categories/Error" class="">- 오류 분석하기 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Error" class="">- 에러 대처하기 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Warning" %}
+                        <li><a href="/categories/Warning" class="">- 경고 대처하기 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
