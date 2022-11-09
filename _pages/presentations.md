@@ -1,6 +1,3 @@
-
-
-
 ---
 layout: archive
 title: "Presentations"
