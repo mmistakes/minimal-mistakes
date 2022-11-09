@@ -2,8 +2,8 @@
 title: "Top 10 Skills to Learn to Be a Scala Developer"
 date: 2022-11-07
 header:
-image: "/images/blog cover.jpg"
-    tags: [scala, tips]
+    image: "/images/blog cover.jpg"
+tags: [scala, tips]
 excerpt: "Learning Scala doesn't need to be hard. Here are 10 mental skills you can learn to be a good Scala developer."
 ---
 
