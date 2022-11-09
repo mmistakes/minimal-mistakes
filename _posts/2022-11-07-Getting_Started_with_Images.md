@@ -55,7 +55,7 @@ Image(filename='checkerboard_18x18.png')
 
 
 
-​![체크무늬](./image/1%EA%B0%95/output_4_0.png)
+​![체크무늬](/image/1%EA%B0%95/output_4_0.png)
 # ![png](output_4_0.png)
 ​    
 
