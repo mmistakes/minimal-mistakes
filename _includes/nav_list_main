@@ -91,7 +91,7 @@
                 {% endfor %}
             </ul>
 
-        <!-- 내가 한 일 정리 -->
+        <!-- 내가 한 일 정리
         <span class="nav__sub-title">Today, What I Did</span>
             <ul>
                 {% for category in site.categories %}
@@ -99,7 +99,7 @@
                         <li><a href="/categories/TWID_202211" class="">- 2022년 11월, TWID ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
+            </ul> -->
 
         <!-- 오류 분석하기 -->
         <span class="nav__sub-title">Error/Warning</span>
