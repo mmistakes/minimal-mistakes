@@ -1,6 +1,24 @@
 ---
 layout: page
 title: "포스트 제목"
+categories:
+  - aciform
+  - antiquarianism
+  - arrangement
+  - asmodeus
+  - broder
+  - buying
+  - championship
+  - chastening
+  - disinclination
+  - disinfection
+  - dispatch
+  - echappee
+  - enphagy
+tags:
+  - categories
+  - edge case
+
 ---
 
 # <font style="color:black">Getting Started with Images</font>
