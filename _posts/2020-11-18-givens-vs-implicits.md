@@ -61,7 +61,7 @@ and then we could write
 Now, with Scala 3, there are many steps to follow to make sure we know what we're doing. An implicit conversion is a `given` instance of `Conversion[A, B]`. The example of the Person class would be
 
 ```scala3
-given stringToPerson as Conversion[String, Person] {
+given stringToPerson: Conversion[String, Person] with {
   def apply(s: String): Person = Person(s)
 }
 ```
