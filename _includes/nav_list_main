@@ -95,8 +95,8 @@
         <span class="nav__sub-title">Today, What I Did</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Error" %}
-                        <li><a href="/categories/Error" class="">- Error/Warning 분석 ({{category[1].size}})</a></li>
+                    {% if category[0] == "Error-Warning" %}
+                        <li><a href="/categories/Error-Warning" class="">- Error/Warning 분석 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
