@@ -292,5 +292,3 @@ defaults:
       related: true
       comments: true
       show_date: true
-
-date_format:"%Y-%m-%d"
