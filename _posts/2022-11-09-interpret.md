@@ -140,12 +140,7 @@ plt.show()
 
 
     
-![png](Untitled3_files/Untitled3_5_0.png)
-    
-
-
-
-이미지0
+![int0](https://user-images.githubusercontent.com/77332628/200705472-758a0630-9c60-4fc8-9061-93b121d5b4f3.png)
 
 시각화하고 싶은 특성 맵을 추출하기 위해 이미지 배치를 입력으로 받아서 모든 합성곱과 풀링 층의 활성화를 출력하는 케라스 모델을 구축한다.
 
@@ -200,12 +195,8 @@ plt.show()
 
 
     
-![png](Untitled3_files/Untitled3_13_0.png)
-    
+![int1](https://user-images.githubusercontent.com/77332628/200705468-0e2ba000-11a8-4465-b296-0b70fe2b2bef.png)
 
-
-
-이미지1
 
 이제 네트워크의 모든 활성화를 시각화 해보겠다. 각 층의 활성화에 있는 모든 채널을 그리기 위해 하나의 큰 이미지 그리드에 추출한 결과를 나란히 쌓겠다.
 
@@ -253,79 +244,15 @@ for layer_name, layer_activation in zip(layer_names, activations):
 
 
     
-![png](Untitled3_files/Untitled3_15_0.png)
-    
-
-
-
-
-
-
-    
-![png](Untitled3_files/Untitled3_15_1.png)
-    
-
-
-
-
-
-
-    
-![png](Untitled3_files/Untitled3_15_2.png)
-    
-
-
-
-
-
-
-    
-![png](Untitled3_files/Untitled3_15_3.png)
-    
-
-
-
-
-
-
-    
-![png](Untitled3_files/Untitled3_15_4.png)
-    
-
-
-
-
-
-
-    
-![png](Untitled3_files/Untitled3_15_5.png)
-    
-
-
-
-
-
-
-    
-![png](Untitled3_files/Untitled3_15_6.png)
-    
-
-
-
-
-
-
-    
-![png](Untitled3_files/Untitled3_15_7.png)
-    
-
-
-
-
-
-
-    
-![png](Untitled3_files/Untitled3_15_8.png)
+![int2](https://user-images.githubusercontent.com/77332628/200705530-24311444-ff63-495a-93a3-873a6027c295.png)
+![int3](https://user-images.githubusercontent.com/77332628/200705531-9cac506d-c4de-4173-8b1e-31b4a63f45bf.png)
+![int4](https://user-images.githubusercontent.com/77332628/200705536-b5324b0a-c262-4ef8-9fd7-685828ebca96.png)
+![int5](https://user-images.githubusercontent.com/77332628/200705539-74ec3541-4506-4bdf-8805-270efbf96b51.png)
+![int6](https://user-images.githubusercontent.com/77332628/200705543-14b7aa3e-b90a-4626-81a4-529e63d21614.png)
+![int7](https://user-images.githubusercontent.com/77332628/200705545-54ff0e7b-4f8b-4562-b2eb-3e29f794a1eb.png)
+![int8](https://user-images.githubusercontent.com/77332628/200705546-5157e895-8796-4c52-a82b-c58ea4c5e94c.png)
+![int9](https://user-images.githubusercontent.com/77332628/200705547-876ece46-e31a-46ab-85a4-22376e38fba0.png)
+![int10](https://user-images.githubusercontent.com/77332628/200705550-6e16a768-c29d-404c-985e-9ba4cdf89e90.png)
     
 
 
@@ -516,12 +443,7 @@ plt.show()
 
 
     
-![png](Untitled3_files/Untitled3_34_0.png)
-    
-
-
-
-pre0
+![predown](https://user-images.githubusercontent.com/77332628/200705593-197c6283-ac36-4f6b-901c-d4649930b3a0.png)
 
 block3_sepconv1 층에 있는 세 번째 필터는 물이나 털 같은 수평 패턴에 반응하는 것으로 보인다.
 
@@ -565,77 +487,22 @@ keras.utils.save_img(
     0번 필터 처리중
     1번 필터 처리중
     2번 필터 처리중
-    3번 필터 처리중
-    4번 필터 처리중
-    5번 필터 처리중
-    6번 필터 처리중
-    7번 필터 처리중
-    8번 필터 처리중
-    9번 필터 처리중
-    10번 필터 처리중
-    11번 필터 처리중
-    12번 필터 처리중
-    13번 필터 처리중
-    14번 필터 처리중
-    15번 필터 처리중
-    16번 필터 처리중
-    17번 필터 처리중
-    18번 필터 처리중
-    19번 필터 처리중
-    20번 필터 처리중
-    21번 필터 처리중
-    22번 필터 처리중
-    23번 필터 처리중
-    24번 필터 처리중
-    25번 필터 처리중
-    26번 필터 처리중
-    27번 필터 처리중
-    28번 필터 처리중
-    29번 필터 처리중
-    30번 필터 처리중
-    31번 필터 처리중
-    32번 필터 처리중
-    33번 필터 처리중
-    34번 필터 처리중
-    35번 필터 처리중
-    36번 필터 처리중
-    37번 필터 처리중
-    38번 필터 처리중
-    39번 필터 처리중
-    40번 필터 처리중
-    41번 필터 처리중
-    42번 필터 처리중
-    43번 필터 처리중
-    44번 필터 처리중
-    45번 필터 처리중
-    46번 필터 처리중
-    47번 필터 처리중
-    48번 필터 처리중
-    49번 필터 처리중
-    50번 필터 처리중
-    51번 필터 처리중
-    52번 필터 처리중
-    53번 필터 처리중
-    54번 필터 처리중
-    55번 필터 처리중
-    56번 필터 처리중
-    57번 필터 처리중
-    58번 필터 처리중
-    59번 필터 처리중
-    60번 필터 처리중
+   .
+   .
+   .
     61번 필터 처리중
     62번 필터 처리중
     63번 필터 처리중
 
 
 **block2 **
-block2 이미지
+![block2](https://user-images.githubusercontent.com/77332628/200705633-004cb2d3-4287-471a-ba68-ef8f87c65e3e.png)
 
 **block4 **
-block4 이미지
+![block4](https://user-images.githubusercontent.com/77332628/200705640-6b75c942-501c-4e11-8b9c-427cadbb0147.png)
 
 **block8 **
-block8 이미지
+![block8](https://user-images.githubusercontent.com/77332628/200705643-0d7658ab-d387-4424-aa5c-c71edd3cf2f5.png)
 
 이런 필터 시각화를 통해 컨브넷 층이 바라보는 방식을 이해할 수 있다. 컨브넷의 각 층은 필터의 조합으로 입력을 표현할 수 있는 일련의 패턴을 학습한다. 이 컨브넷 필터들은 모델의 층이 깊어질수록 점점 더 복잡해지고 개선된다.
 
@@ -664,7 +531,7 @@ model = keras.applications.xception.Xception(weights='imagenet') # 최상위 밀
     91884032/91884032 [==============================] - 5s 0us/step
 
 
-코끼리 이미지
+![elephant](https://user-images.githubusercontent.com/77332628/200705747-4a85f82a-286d-4842-af96-c459fcefe77a.jpg)
 
 위의 어미와 새끼 코끼리 이미지를 적용해본다. Xception 모델은 299x299 크기의 이미지에서 훈련되었고, keras.applications.xception.preprocess_input 함수에 따라 전처리 되었다. 그러므로 코끼리 이미지를 299x299 크기로 변경하고 넘파이 float32 텐서로 바꾼 후 전처리 함수를 적용해서 Xception 모델이 인식할 수 있도록 변환한다.
 
@@ -803,12 +670,7 @@ plt.show()
 
 
     
-![png](Untitled3_files/Untitled3_54_0.png)
-    
-
-
-
-히트맵 
+![heat](https://user-images.githubusercontent.com/77332628/200705886-bfd0c2db-f9e5-4b35-8b8e-c2639def13af.png)
 
 마지막으로 위의 히트맵에 원본 그림을 겹친 이미지를 만들어본다.
 
@@ -840,7 +702,7 @@ save_path = 'elephant_cam.jpg'
 superimposed_img.save(save_path)
 ```
 
-마지막 이미지
+![elephant_cam](https://user-images.githubusercontent.com/77332628/200705957-4670e7ae-15f7-436b-a832-b39baca57c62.jpg)
 
 이 시각화 기법은 2가지 중요한 질문에 대한 답을 준다
 
