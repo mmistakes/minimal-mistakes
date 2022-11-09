@@ -103,10 +103,10 @@ analytics:
 author:
   name             : "Juyoon Park"
   avatar           : "/assets/images/bio-photo.jpeg"
-  bio              : "ep"
+  bio              : "도전을 즐기며 성장을 추구하는 데이터 분석가입니다."
   location         : "Somewhere"
   email            :
-  links:
+  links: 
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "xper100@gmail.com"
