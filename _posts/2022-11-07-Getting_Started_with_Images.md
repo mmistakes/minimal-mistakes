@@ -2,22 +2,11 @@
 layout: post
 title: "1강 제목 변경"
 categories:
-  - aciform
-  - antiquarianism
-  - arrangement
-  - asmodeus
-  - broder
-  - buying
-  - championship
-  - chastening
-  - disinclination
-  - disinfection
-  - dispatch
-  - echappee
-  - enphagy
+  - openCV
+
 tags:
-  - categories
-  - edge case
+  - opencv 
+  - 기술 지원
 
 ---
 
