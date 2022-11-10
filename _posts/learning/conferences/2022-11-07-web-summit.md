@@ -8,6 +8,7 @@ toc: true
 header:
   image: "/assets/images/categories/learning/conferences/web-summit.jpeg"
 ---
+
 # Introduction
 
 I was fortunate to attend [Web Summit](https://websummit.com/ "https://websummit.com/") (WS) 2022 in Lisbon, Portugal. My employer, Messari, sent me to Web Summit as part of our Learning And Development program, for which I am very grateful. I had a terrific time in Europe and learned so much.
@@ -83,8 +84,8 @@ As a wrestler in High School, my coach taught me something significant. Single L
 -   The best projects can make it out of a bear market. They are often built in it.
     
 -   Seriously consider your exit strategy, fewer companies are IPO’ing, and more are being acquired MA style.
-
-- Focus on revenue in your early days. Investors want to see recurring revenue.
+    
+-   Focus on revenue in your early days. Investors want to see recurring revenue.
     
 
 ## My Take On a Missing Link!
@@ -101,7 +102,7 @@ As a wrestler in High School, my coach taught me something significant. Single L
     
 -   I have also seen projects that overextended and underdelivered. Lack of testing, spaghetti code, no documentation, lack of automation, poor architecting, and a lack of future thought are just a few reasons that products go from “adding new features to capture the market” to “we need to spend six months refactoring everything, again...”
     
--   VCs and investors should spend more time and resources on “grilling” a founding team’s technical stack. If they cannot, they should consider hiring others to do it for them. This due diligence can be the difference in investing in a product that can easily maneuver, adapt, and change, leading to your investment to capture the market, satisfy the customer, and grow rapidly.
+-   VCs and investors should spend more time and resources on “grilling” a founding team’s technical stack. They should consider hiring others to do it for them if they can’t do it themselves. This due diligence can be the difference in investing in a product that can easily maneuver, adapt, and change, leading to your investment to capture the market, satisfy the customer, and grow rapidly.
     
 
 # Entrepreneurs and Builders
@@ -112,9 +113,9 @@ During my chats with VCs, builders, investors, and founders, here is what I lear
 
 -   Do not over-hire!
     
--   Do your accounting, and consider every financial option. There is a true cost to raising funds.
+-   Do your accounting and consider every financial option. There is a true cost of raising funds.
     
--   Don’t think about the short term; consider the long term when raising funds. It’s better to give away less equity and exit for less if you keep more than giving most of your company away and exit high (but keep less).
+-   Don’t think about the short term; consider the long term when raising funds. Exiting high doesn't isn’t always the best scenario. It’s often better to hold on to as much equity as possible.
     
     -   Good: You own 90% of your company and exit at 10 million dollars (9 million profit).
         
@@ -175,9 +176,9 @@ Everyone’s favorite topic and perhaps the most controversial topic at the summ
 -   Don’t make your models too strong; there are dangers to overfitting.
     
 
-### Chompsky’s Fears
+### Chomsky Fears
 
-Noam Chompsy spoke on his fears as it relates to AI and ML.
+Noam Chomsky spoke on his fears as it relates to AI and ML.
 
 -   ML and NLP are not science (his words, not mine); they are closer to tools than scientific discoveries.
     
@@ -194,7 +195,7 @@ Noam Chompsy spoke on his fears as it relates to AI and ML.
     
 -   Should we rely on the giants to do our dirty work? At what cost?
     
--   In a world where data is king, can we trust our data in the hands of the Giants?
+-   In a world where data is king, can we trust our data in the hands of Giants?
     
 -   Managed Services have allowed smaller teams and startups to compete with the big boys. Perhaps they can do it again.
     
@@ -224,7 +225,7 @@ As a crypto, data, and software enthusiast, getting lost in my own world can be 
     
 -   I encourage you to check out his chat and learn more about his company.
     
--   This topic hits close to home. It reminds me of my father. He came to the US and worked many back-breaking jobs. He did it, but he never wanted it for his children. It is incredible to see someone like Ariyan working to help us get to a place where people no longer have to break their bodies to provide.
+-   This topic hits close to home. It reminds me of my father. He came to the U.S and worked many back-breaking jobs. He did it, but he never wanted it for his children. It is incredible to see someone like Ariyan working to help us get to a place where people no longer have to break their bodies to provide.
     
 
 ## Progress in Women’s Fertility - [Gameto](https://www.gametogen.com/ "https://www.gametogen.com/")
@@ -244,7 +245,7 @@ As a crypto, data, and software enthusiast, getting lost in my own world can be 
 
 ## Remote Education
 
--   I can’t single out an individual company here. But many are working to help provide meaningful education around the globe to underserved communities.
+-   I can’t single out an individual company here, many are working to help provide meaningful education around the globe to underserved communities.
     
 -   I don’t have a college degree, but I am fortunate to have a few things.
     
@@ -266,9 +267,9 @@ As a crypto, data, and software enthusiast, getting lost in my own world can be 
     
 -   Some plan to leverage the metaverse to put together classrooms of children worldwide to help them get this education.
     
--   I won’t get into specifics on any individual project. But I think the future is bright, and as long as we put effort into educating ourselves and each other, we will be in good hands.
+-   I won’t get into specifics on any individual project, I think the future is bright. As long as we put effort into educating ourselves and each other, we will be in good hands.
     
 
 # The Future is Bright
 
--   The world around us is ever-growing. We are building new tools, developing new tech, and spreading it to each other innovatively. We want to provide value in unique ways and give what we can to our endeavors. We might disagree, have conflicts, and compete for a specific market. But I think we can all agree the future is bright as long as we put our heads together and produce our best work!
+-   The world around us is ever-growing. We are building new tools, developing new tech, and sharing it innovatively. We want to provide value in unique ways and give what we can to our endeavors. We might disagree, have conflicts, and compete for a specific market. I think we can all agree the future is bright as long as we put our heads together and produce our best work!
