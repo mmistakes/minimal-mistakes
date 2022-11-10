@@ -8,7 +8,7 @@
   <ul class="nav__items" id="category_tag_menu">
       <!--전체 글 수-->
       <li>
-        📂 <span style="font-family:'BMHANNAPro';">전체 게시물 수</style> <span style="font-family:'BMHANNAPro';">{{sum}}</style> <span style="font-family:'BMHANNAPro';">개</style> 
+        📂 <span style="color:#000;font-family:'BMHANNAPro';">전체 게시물 수</style> <span style="color:#F2DF3A;font-family:'BMHANNAPro';">{{sum}}</style> <span style="color:#000;font-family:'BMHANNAPro';">개</style> 
       </li>
       <li>
 
