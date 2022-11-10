@@ -13,7 +13,7 @@ toc_label : "목차"
 toc_icon: "bars"
 ---
 
-**SQL 고득점 Kit - SELECT 문제**
+👩🏻‍💻 SQL 고득점 Kit - SELECT 문제
 <br>
 
 ***

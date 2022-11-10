@@ -1,5 +1,5 @@
 ---
-title:  "[프로그래머스 SQL] Lv 1. 조건에 맞는 회원수 구하기"
+title:  "[프로그래머스 SQL] Lv 1. 가장 비싼 상품 구하기"
 layout: single
 
 categories: "Algorithm_SQL"
@@ -13,7 +13,7 @@ toc_label : "목차"
 toc_icon: "bars"
 ---
 
-👩🏻‍💻 SQL 고득점 Kit - SELECT 문제
+👩🏻‍💻 SQL 고득점 Kit - SUM, MAX, MIN 문제
 <br>
 
 ***
@@ -65,4 +65,3 @@ WHERE DATE_FORMAT(JOINED, '%Y') = '2021'
 - LGTM :)
 
 <br>
-
