@@ -30,7 +30,10 @@ main:
 #    url: /year-archive/
     
   - title: "CV"
-    url: /cv/
+    url: /pages/cv/
+    
+  - title: "Presentations"
+    url: /pages/presentations/  
     
 #  - title: "Guide"
 #    url: /markdown/
