@@ -1,9 +1,12 @@
 ---
-layout: talk
+layout: archive
 title: "Presentations"
 permalink: /presentations/
 author_profile: true
+redirect_from:
+  - /presentations
 ---
 
 
-Hello
+2022
+======
