@@ -33,7 +33,7 @@ main:
     url: _pages/cv.md
     
   - title: "Presentations"
-    url: /_pages/presentations/  
+    url: /presentations/  
     
 #  - title: "Guide"
 #    url: /markdown/
