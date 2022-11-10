@@ -23,7 +23,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    font-family: "BMHANNAPro" // $sans-serif-narrow;
+    font-family: "BMHANNAPro"; // $sans-serif-narrow;
 
     @include breakpoint($x-large) {
       max-width: $max-width;
