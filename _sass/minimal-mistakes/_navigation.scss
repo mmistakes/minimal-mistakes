@@ -513,12 +513,13 @@
   box-shadow: $box-shadow;
 
   .nav__title {
-    color: #fff;
+    color: #000;
     text-shadow: 1px 1px 1px gray;
     font-size: $type-size-6;
-    font-weight: bold;
+    font-family: "BMHANNAPro";
+    // font-weight: bold;
     /*background: $primary-color;*/
-    background: #F7E2D6;
+    background: #FFEFE0;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
