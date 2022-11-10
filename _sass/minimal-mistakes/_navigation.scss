@@ -514,7 +514,7 @@
 
   .nav__title {
     color: #000;
-    font-size: $type-size-6;
+    font-size: .9em; // default : $type-size-5;
     font-weight: bold;
     /*background: $primary-color;*/
     background: #FFEFE0;
