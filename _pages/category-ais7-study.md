@@ -1,5 +1,5 @@
 ---
-title: "멋쟁이사자처럼 AI 스쿨 7기, 자기주도학습"
+title: "멋쟁이사자처럼 AI 스쿨 7기, 주간 학습내용 정리"
 layout: archive
 permalink: categories/STUDY_ais7
 author_profile: true
