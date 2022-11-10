@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d7245f974e219a23",
+            "id": "b82556af95ea7355",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-11-05-Dataviz1.md",
+                "file": "_posts/2022-11-08-AIservice04.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "db531cc2f3aa021e",
+            "id": "22b9ca65a547ce86",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-11-07-AIservice02.md",
+                "file": "_posts/2022-11-08-AIservice05.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,14 +37,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-11-07-AIservice03.md",
+                "file": "_posts/2022-11-08-daily.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "599f1f403b1bdfed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2022-11-09.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6c1d1502a099d443",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2022-11-10.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -111,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-11-07-AIservice03.md",
+                "file": "_posts/2022-11-10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-11-07-AIservice03.md",
+                "file": "_posts/2022-11-10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-11-07-AIservice03.md"
+                "file": "_posts/2022-11-10.md"
               }
             }
           }
@@ -162,17 +186,17 @@
     "width": 100,
     "collapsed": true
   },
-  "active": "bac28eadf47c513b",
+  "active": "6c1d1502a099d443",
   "lastOpenFiles": [
-    "_posts/2022-11-07-AIservice02.md",
+    "_posts/2022-11-09.md",
+    "_posts/2022-11-10.md",
+    "_posts/2022-11-08-AIservice05.md",
+    "_posts/2022-11-08-AIservice04.md",
+    "_posts/2022-11-08-daily.md",
     "_posts/2022-11-07-AIservice03.md",
     "_posts/2022-11-07-AIservice01.md",
-    "_posts/2022-11-05-Dataviz1.md",
-    "_posts/2022-10-27-daily.md",
     "_posts/2022-10-28-daily.md",
-    "_posts/2022-10-09-Visual3-2.md",
-    "_posts/2022-10-25-RecSysC07.md",
-    "_posts/2022-10-15-RecSys8.md",
-    "_posts/2022-10-26-daily.md"
+    "_posts/2022-11-07-AIservice02.md",
+    "_posts/2022-11-05-Dataviz1.md"
   ]
 }
