@@ -383,7 +383,7 @@
 
       &:hover {
         color: #fff;
-        border-color: $gray;
+        border-color: #000; //default $gray;
         background-color: mix(white, #000, 20%);
 
         &:before,
@@ -517,7 +517,7 @@
     font-size: $type-size-6;
     font-weight: bold;
     /*background: $primary-color;*/
-    background: #8EC3B0;
+    background: #7895B2;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
@@ -549,6 +549,7 @@
 
     &:hover {
       color: $text-color;
+      text-decoration: none; // 내가 추가한 것
     }
   }
 
