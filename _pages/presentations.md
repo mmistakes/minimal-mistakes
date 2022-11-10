@@ -1,12 +1,14 @@
 ---
-layout: archive
 title: "Presentations"
+layout: archive
 permalink: /presentations/
 author_profile: true
-redirect_from:
-  - /presentations
 ---
 
 
 2022
+======
+
+
+2021
 ======
