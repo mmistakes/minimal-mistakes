@@ -17,35 +17,35 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Python" %}
-                        <li><a href="/categories/Python" class="">👊 Python 부수기 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Python" class="">ㄴ Python 부수기 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "SQL" %}
-                        <li><a href="/categories/SQL" class="">👊 SQL 부수기 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/SQL" class="">ㄴ SQL 부수기 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Pandas" %}
-                        <li><a href="/categories/Pandas" class="">👊 Pandas cheat sheet 부수기 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Pandas" class="">ㄴ Pandas cheat sheet 부수기 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "ML" %}
-                        <li><a href="/categories/ML" class="">👊 Machine Learning 부수기 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/ML" class="">ㄴ Machine Learning 부수기 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Error-Warning" %}
-                        <li><a href="/categories/Error-Warning" class="">👊 에러/경고 메시지 부수기 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Error-Warning" class="">ㄴ 에러/경고 메시지 부수기 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -55,21 +55,21 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "STUDY_ais7" %}
-                        <li><a href="/categories/STUDY_ais7" class="">🦁 주간 회고 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/STUDY_ais7" class="">ㄴ 주간 회고 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Special_lecture_ais7" %}
-                        <li><a href="/categories/Special_lecture_ais7" class="">🦁 Special Lecture ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Special_lecture_ais7" class="">ㄴ Special Lecture ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Mini_Project" %}
-                        <li><a href="/categories/Mini_Project" class="">🦁 Mini Project ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Mini_Project" class="">ㄴ Mini Project ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -79,14 +79,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm_Python" %}
-                        <li><a href="/categories/Algorithm_Python" class="">👩🏻‍💻 Python ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Algorithm_Python" class="">ㄴ Python ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm_SQL" %}
-                        <li><a href="/categories/Algorithm_SQL" class="">👩🏻‍💻 SQL ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Algorithm_SQL" class="">ㄴ SQL ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -96,7 +96,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "TWID_202211" %}
-                        <li><a href="/categories/TWID_202211" class="">- 2022년 11월, TWID ({{category[1].size}})</a></li>
+                        <li><a href="/categories/TWID_202211" class="">ㄴ 2022년 11월, TWID ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
