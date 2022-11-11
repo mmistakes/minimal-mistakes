@@ -265,7 +265,7 @@ defaults:
       layout: single
       author_profile: true
       # read_time: flase
-      comments: # true
+      comments: true
       # share: true
       related: false
       show_date: true  
