@@ -55,7 +55,7 @@ We'll change our code in two small ways.
 First, our standard ordering will be considered a "given", that is, an automatically created instance which is readily available to be injected in the "right place". The structure of the declaration will look like this:
 
 ```scala3
-given personOrdering as Ordering[Person] {
+given personOrdering: Ordering[Person] with {
   override def compare(x: Person, y: Person): Int = 
     x.surname.compareTo(y.surname)
 }
@@ -85,7 +85,7 @@ Let's assume our given instance stays in an `object`:
 
 ```scala3
 object StandardValues {
-  given personOrdering as Ordering[Person] {
+  given personOrdering: Ordering[Person] with {
     override def compare(x: Person, y: Person): Int = x.surname.compareTo(y.surname)
   }
 }
@@ -118,7 +118,7 @@ In Scala 3, we can.
 Let's imagine that in our big census application we have many types for which we have `given` instances of `Ordering`. Meanwhile, because we're using pure FP to deal with value absence, we're working with Options, and we need to compare them, sort them etc. Can we automatically create an `Ordering[Option[T]]` if we had an `Ordering[T]` in scope?
 
 ```scala3
-given optionOrdering[T](using normalOrdering: Ordering[T]) as Ordering[Option[T]] {
+given optionOrdering[T](using normalOrdering: Ordering[T]): Ordering[Option[T]] with {
   def compare(optionA: Option[T], optionB: Option[T]): Int = (a, b) match {
     case (None, None) => 0
     case (None, _) => -1
@@ -178,7 +178,7 @@ given Ordering[Person] {
 Sometimes defining instances on the spot might not be convenient, when we already have simpler/better construction tools available (e.g. factory methods, existing values, better constructors). If that is the case, we can create a given instance where the value of it is an expression:
 
 ```scala3
-given personOrdering as Ordering[Person] = Ordering.fromLessThan((a, b) => a.surname.compareTo(b.surname) < 0)
+given personOrdering: Ordering[Person] = Ordering.fromLessThan((a, b) => a.surname.compareTo(b.surname) < 0)
 ```
 
 or even make it anonymous:
