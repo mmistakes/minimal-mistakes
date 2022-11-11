@@ -8,54 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b82556af95ea7355",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2022-11-08-AIservice04.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "22b9ca65a547ce86",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2022-11-08-AIservice05.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bac28eadf47c513b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2022-11-08-daily.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "599f1f403b1bdfed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2022-11-09.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "6c1d1502a099d443",
             "type": "leaf",
             "state": {
@@ -67,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -188,9 +139,9 @@
   },
   "active": "6c1d1502a099d443",
   "lastOpenFiles": [
+    "_posts/2022-11-08-AIservice05.md",
     "_posts/2022-11-09.md",
     "_posts/2022-11-10.md",
-    "_posts/2022-11-08-AIservice05.md",
     "_posts/2022-11-08-AIservice04.md",
     "_posts/2022-11-08-daily.md",
     "_posts/2022-11-07-AIservice03.md",
