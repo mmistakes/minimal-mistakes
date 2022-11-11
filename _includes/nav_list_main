@@ -92,11 +92,11 @@
             </ul>
 
         <!-- 내가 한 일 정리 -->
-        <span class="nav__sub-title"></span>
+        <span class="nav__sub-title">Blog</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "TWID_202211" %}
-                        <li><a href="/categories/TWID_202211" class="">ㄴ 2022년 11월, TWID ({{category[1].size}})</a></li>
+                    {% if category[0] == "Blog" %}
+                        <li><a href="/categories/Blog" class="">ㄴ 꾸미는 과정 기록 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
