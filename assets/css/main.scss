@@ -10,6 +10,12 @@ search: false
 
 
 // 내가 추가한 폰트 리스트
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'KOTRA_GOTHIC';
@@ -65,12 +71,5 @@ search: false
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GoyangIlsan';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff') format('woff');
-    font-weight: normal;
     font-style: normal;
 }
