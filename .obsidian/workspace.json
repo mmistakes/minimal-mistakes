@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-11-10.md",
+                "file": "_posts/2022-11-09.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "50dc4917d87fccd1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2022-11-12.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-11-10.md",
+                "file": "_posts/2022-11-12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-11-10.md",
+                "file": "_posts/2022-11-12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-11-10.md"
+                "file": "_posts/2022-11-12.md"
               }
             }
           }
@@ -137,17 +150,17 @@
     "width": 100,
     "collapsed": true
   },
-  "active": "6c1d1502a099d443",
+  "active": "50dc4917d87fccd1",
   "lastOpenFiles": [
-    "_posts/2022-11-08-AIservice05.md",
     "_posts/2022-11-09.md",
+    "_posts/2022-11-12.md",
     "_posts/2022-11-10.md",
-    "_posts/2022-11-08-AIservice04.md",
     "_posts/2022-11-08-daily.md",
+    "_posts/2022-11-08-AIservice05.md",
+    "_posts/2022-11-08-AIservice04.md",
     "_posts/2022-11-07-AIservice03.md",
     "_posts/2022-11-07-AIservice01.md",
     "_posts/2022-10-28-daily.md",
-    "_posts/2022-11-07-AIservice02.md",
-    "_posts/2022-11-05-Dataviz1.md"
+    "_posts/2022-11-07-AIservice02.md"
   ]
 }
