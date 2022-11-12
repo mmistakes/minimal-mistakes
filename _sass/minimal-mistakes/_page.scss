@@ -145,7 +145,7 @@ body {
     padding-left: 0.2rem; // 내가 추가한 것 (inline code block)
     padding-right: 0.2rem; // 내가 추가한 것 (inline code block)
     font-size: 0.8em;
-    background: $code-background-color;
+    background: rgba(135,131,120,0.15); // background: $code-background-color;
     border-radius: $border-radius;
 
     &::before,
