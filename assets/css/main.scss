@@ -17,6 +17,12 @@ search: false
     font-style: normal;
 }
 
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+
+.hanna * {
+ font-family: 'Hanna', fantasy;
+}
+
 @font-face {
     font-family: 'BCcardB';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.1/BCcardB.woff') format('woff');
