@@ -72,3 +72,10 @@ search: false
     font-weight: 400;
     font-style: normal;
 }
+
+// 나눔고딕코딩 폰트
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
+.nanumgothiccoding * {
+ font-family: 'Nanum Gothic Coding', monospace;
+}
