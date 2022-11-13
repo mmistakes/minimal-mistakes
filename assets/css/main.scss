@@ -81,8 +81,13 @@ search: false
 }
 
 @font-face {
-    font-family: 'IM_Hyemin-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
-    font-weight: lighter;
+    font-family: 'IMHyemin';
+    font-weight: 400;
     font-style: normal;
-}
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminRegular.ttf') format("truetype");
+    font-display: swap;
+} 
