@@ -6,7 +6,7 @@ div.highlighter-rouge,
 figure.highlight {
   position: relative;
   margin-bottom: 1em;
-  background: $base00; // (python 코드블럭 배경)
+  background: $base00;
   color: $base05;
   font-family: $monospace;
   font-size: $type-size-6;
@@ -78,11 +78,11 @@ figure.highlight {
   }
   .n {
     /* Name */
-    color: $base05; // (python에서 변수부분)
+    color: $base05;
   }
   .o {
     /* Operator */
-    color: $base0c; // (=, + 등 연산 기호)
+    color: $base0c;
   }
   .p {
     /* Punctuation */
@@ -98,7 +98,7 @@ figure.highlight {
   }
   .c1 {
     /* Comment.Single */
-    color: $base04; // (python에서 # 주석)
+    color: $base04;
   }
   .cs {
     /* Comment.Special */
