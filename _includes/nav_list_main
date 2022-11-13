@@ -92,7 +92,7 @@
             </ul>
 
         <!-- 내가 한 일 정리 -->
-        <span class="nav__sub-title">Dev</span>
+        <span class="nav__sub-title">Etc</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Blog" %}
@@ -100,13 +100,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "ETC" %}
-                        <li><a href="/categories/Blog" class="">ㄴ 그 외 기록 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+
 
         <!-- 책 읽고 배운 것 정리 -->
         <!-- <span class="nav__sub-title">이달의 독서왕</span>
