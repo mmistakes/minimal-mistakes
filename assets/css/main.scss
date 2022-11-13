@@ -103,3 +103,15 @@ search: false
          url('https://cdn.jsdelivr.net/gh/webfontworld/dgb/IMHyeminBold.ttf') format("truetype");
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'MapoPeacefull';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/mapo/MapoPeacefull.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/mapo/MapoPeacefull.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/mapo/MapoPeacefull.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/mapo/MapoPeacefull.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/mapo/MapoPeacefull.ttf') format("truetype");
+    font-display: swap;
+}
