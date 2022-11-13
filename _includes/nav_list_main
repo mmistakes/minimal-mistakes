@@ -100,16 +100,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-
-        <!-- 책 읽고 배운 것 정리 -->
-        <!-- <span class="nav__sub-title">이달의 독서왕</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "머신러닝 서적" %}
-                        <li><a href="/categories/book-ml" class="">Machine Learning ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul> -->
       </li>
   </ul>
 </nav>
