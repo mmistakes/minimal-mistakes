@@ -92,11 +92,11 @@
             </ul>
 
         <!-- 내가 한 일 정리 -->
-        <span class="nav__sub-title">Blog, etc</span>
+        <span class="nav__sub-title">Dev</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Blog" %}
-                        <li><a href="/categories/Blog" class="">ㄴ Blog 꾸미기 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Blog" class="">ㄴ Github 블로그 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
