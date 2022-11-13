@@ -17,35 +17,28 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Python" %}
-                        <li><a href="/categories/Python" class="">ㄴ Python 부수기 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Python" class="">ㄴ Python ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "SQL" %}
-                        <li><a href="/categories/SQL" class="">ㄴ SQL 부수기 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/SQL" class="">ㄴ SQL ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Pandas" %}
-                        <li><a href="/categories/Pandas" class="">ㄴ Pandas cheat sheet 부수기 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Pandas" class="">ㄴ Pandas cheat sheet ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "ML" %}
-                        <li><a href="/categories/ML" class="">ㄴ Machine Learning 부수기 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Error-Warning" %}
-                        <li><a href="/categories/Error-Warning" class="">ㄴ 에러/경고 메시지 부수기 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/ML" class="">ㄴ Machine Learning ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -100,7 +93,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Error-Warning" %}
+                        <li><a href="/categories/Error-Warning" class="">ㄴ 에러/경고 메시지 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
 
         <!-- 책 읽고 배운 것 정리 -->
         <!-- <span class="nav__sub-title">이달의 독서왕</span>
