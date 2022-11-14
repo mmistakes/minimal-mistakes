@@ -25,7 +25,7 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Codeup" %}
+                    {% if category[0] == "codeup" %}
                         <li><a href="/categories/codeup" class=""> 코드업({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
