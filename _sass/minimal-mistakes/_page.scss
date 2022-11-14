@@ -357,6 +357,29 @@ body {
   }
 }
 
+// 내가 추가한 것
+.page__taxonomy-item-category {
+  margin-right: 5px;
+  margin-bottom: 8px;
+  padding: 3px 8px;
+  text-decoration: none;
+  border: 1px solid #373c3f;
+  border-radius: 4px;
+  background-color: #E9ECEF;
+  color: #000;
+}
+
+.page__taxonomy-item-tag {
+  margin-right: 5px;
+  margin-bottom: 8px;
+  padding: 3px 8px;
+  text-decoration: none;
+  border: 1px solid #373c3f;
+  border-radius: 4px;
+  background-color: #ebeff3;
+  color: #000;
+}
+
 .taxonomy__section {
   margin-bottom: 2em;
   padding-bottom: 1em;
