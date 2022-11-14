@@ -16,7 +16,20 @@
         {% if nav.children != null %}
         <ul>
           {% for child in nav.children %}
-            <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}</a></li>
+          
+          {% comment %}
+             아래 부분은 카테고리 옆에 해당 카테고리에 해당하는 포스트 수를 표시하기 위해 수정되었습니다.
+             navigation.yml에서 children 부분에 하위 속성으로 category를 추가합니다.
+             이를 통해 category 명을 가져 올 수 있고, site.categories를 통해 해당 카테고리의 포스트 갯수를 가져올 수 있습니다.
+          {% endcomment %}
+          {% assign post_cnt = 0 %}
+          {% for category in site.categories %}
+            {% if category[0] == child.category  %}
+                {% assign post_cnt = category[1].size %}
+            {% endif %}
+          {% endfor %}
+
+            <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}({{ post_cnt }})</a></li>
           {% endfor %}
         </ul>
         {% endif %}
