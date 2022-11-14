@@ -16,4 +16,5 @@ sidebar-category:
     children:
       - title: "Basics 🌱"
         url: "/basics"
+        category: 'basics'
       
