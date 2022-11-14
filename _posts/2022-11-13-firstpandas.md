@@ -13,20 +13,20 @@ Today, I got to experience how to work with pandas from an online class. From th
 
 I basically got to upload the data to Jupyter Notebook and learned how to observe the data along with making some changes from the data.
 
-So I imported pandas through
+So I imported pandas through:
 
 ```
 import pandas as pd
 ```
 
-and I loaded the data by
+and I loaded the data by:
 
 ```
 my_data = pd.read_csv("data/"data_name.csv", encoding="cp949")
 my_data
 ```
 
-And these are some basic functions I got to use today
+And these are some basic functions I got to use today:
 
 ```
 # Seeing the information of the data
