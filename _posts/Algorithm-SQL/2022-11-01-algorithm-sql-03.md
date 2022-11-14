@@ -14,10 +14,10 @@ toc_icon: "bars"
 ---
 
 👩🏻‍💻 SQL 고득점 Kit - SELECT 문제
-<br>
 
 ***
-# 문제 설명
+
+# <span class="half_HL">✔️ 문제 설명</span>
 
 다음은 종합병원에 속한 의사 정보를 담은DOCTOR 테이블입니다.
 <br>DOCTOR 테이블은 다음과 같으며 DR_NAME, DR_ID, LCNS_NO, HIRE_YMD, MCDP_CD, TLNO는 각각 의사이름, 의사ID, 면허번호, 고용일자, 진료과코드, 전화번호를 나타냅니다.
@@ -39,7 +39,7 @@ DOCTOR 테이블에서 진료과가 흉부외과(CS)이거나 일반외과(GS)�
 
 <br>
 
-# 문제 풀이
+# <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
 1. 진료과가 흉부외과, 일반외과인 경우만 가져오기 위해 WHERE 문에 OR 로 두 조건을 넣는다.
@@ -66,3 +66,6 @@ ORDER BY HIRE_YMD DESC, DR_NAME
 
 <br>
 
+👩🏻‍💻개인 공부 기록용 블로그입니다
+<br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.
+{: .notice}

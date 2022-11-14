@@ -14,10 +14,10 @@ toc_icon: "bars"
 ---
 
 👩🏻‍💻 SQL 고득점 Kit - SELECT 문제
-<br>
 
 ***
-# 문제 설명
+
+# <span class="half_HL">✔️ 문제 설명</span>
 
 > 다음은 어느 의류 쇼핑몰의 온라인 상품 판매 정보를 담은 ONLINE_SALE 테이블 입니다.<br> <br>ONLINE_SALE 테이블은 아래와 같은 구조로 되어있으며 ONLINE_SALE_ID, USER_ID, PRODUCT_ID, SALES_AMOUNT, SALES_DATE는 각각 온라인 상품 판매 ID, 회원 ID, 상품 ID, 판매량, 판매일을 나타냅니다.
 
@@ -38,7 +38,7 @@ toc_icon: "bars"
 
 <br>
 
-# 문제 풀이
+# <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
 1. 동일한 회원, 동일한 상품 컬럼을 GROUP BY 로 묶는다.
@@ -68,3 +68,6 @@ ORDER BY USER_ID, PRODUCT_ID DESC
 
 <br>
 
+👩🏻‍💻개인 공부 기록용 블로그입니다
+<br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.
+{: .notice}

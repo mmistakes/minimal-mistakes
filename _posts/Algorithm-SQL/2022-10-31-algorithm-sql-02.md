@@ -14,10 +14,10 @@ toc_icon: "bars"
 ---
 
 👩🏻‍💻 SQL 고득점 Kit - SELECT 문제
-<br>
 
 ***
-# 문제 설명
+
+# <span class="half_HL">✔️ 문제 설명</span>
 
 다음은 종합병원에 등록된 환자정보를 담은 PATIENT 테이블입니다.
 <br>PATIENT 테이블은 다음과 같으며 PT_NO, PT_NAME, GEND_CD, AGE, TLNO는 각각 환자번호, 환자이름, 성별코드, 나이, 전화번호를 의미합니다.
@@ -37,7 +37,7 @@ PATIENT 테이블에서 12세 이하인 여자환자의 환자이름, 환자번�
 
 <br>
 
-# 문제 풀이
+# <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
 1. WHERE 에 나이가 12세 이하, 성별이 여자인 조건을 추가하여 데이터를 필터링하여준다.
@@ -65,3 +65,6 @@ ORDER BY AGE DESC, PT_NAME
 
 <br>
 
+👩🏻‍💻개인 공부 기록용 블로그입니다
+<br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.
+{: .notice}

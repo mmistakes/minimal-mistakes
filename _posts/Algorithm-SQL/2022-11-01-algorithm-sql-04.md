@@ -14,10 +14,10 @@ toc_icon: "bars"
 ---
 
 👩🏻‍💻 SQL 고득점 Kit - SELECT 문제
-<br>
 
 ***
-# 문제 설명
+
+# <span class="half_HL">✔️ 문제 설명</span>
 
 
 다음은 식당 리뷰 사이트의 회원 정보를 담은 MEMBER_PROFILE 테이블입니다.
@@ -39,7 +39,7 @@ MEMBER_PROFILE 테이블에서 생일이 3월인 여성 회원의 ID, 이름, �
 
 <br>
 
-# 문제 풀이
+# <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
 1. WHERE 문에 생일이 3월, 성별이 여성, 번호가 NULL 제외 조건을 넣어준다.
@@ -69,4 +69,6 @@ ORDER BY MEMBER_ID
 
 <br>
 
-
+👩🏻‍💻개인 공부 기록용 블로그입니다
+<br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.
+{: .notice}

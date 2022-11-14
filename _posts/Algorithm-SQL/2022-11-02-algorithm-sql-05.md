@@ -14,10 +14,9 @@ toc_icon: "bars"
 ---
 
 👩🏻‍💻 SQL 고득점 Kit - SELECT 문제
-<br>
 
 ***
-# 문제 설명
+# <span class="half_HL">✔️ 문제 설명</span>
 
 다음은 식품공장의 정보를 담은 FOOD_FACTORY 테이블입니다. 
 <br>FOOD_FACTORY 테이블은 다음과 같으며 FACTORY_ID, FACTORY_NAME, ADDRESS, TLNO는 각각 공장 ID, 공장 이름, 주소, 전화번호를 의미합니다.
@@ -36,7 +35,7 @@ FOOD_FACTORY 테이블에서 강원도에 위치한 식품공장의 공장 ID, �
 
 <br>
 
-# 문제 풀이
+# <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
 1. 강원도로 시작되는 문자를 포함하는 주소를 가져온다. (Like, % 사용)
@@ -62,3 +61,6 @@ ORDER BY FACTORY_ID
 
 <br>
 
+👩🏻‍💻개인 공부 기록용 블로그입니다
+<br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.
+{: .notice}

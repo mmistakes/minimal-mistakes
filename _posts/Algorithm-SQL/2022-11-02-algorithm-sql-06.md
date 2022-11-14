@@ -14,10 +14,10 @@ toc_icon: "bars"
 ---
 
 👩🏻‍💻 SQL 고득점 Kit - SELECT 문제
-<br>
 
 ***
-# 문제 설명
+
+# <span class="half_HL">✔️ 문제 설명</span>
 
 
 다음은 식당의 정보를 담은 REST_INFO 테이블과 식당의 리뷰 정보를 담은 REST_REVIEW 테이블입니다.
@@ -55,7 +55,7 @@ REST_INFO와 REST_REVIEW 테이블에서 서울에 위치한 식당들의 식당
 
 <br>
 
-# 문제 풀이
+# <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
 1. 주소가 서울을 포함하고 있는 데이터를 가져온다 (WHERE)
@@ -86,3 +86,6 @@ ORDER BY SCORE DESC, FAVORITES DESC
 
 <br>
 
+👩🏻‍💻개인 공부 기록용 블로그입니다
+<br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.
+{: .notice}

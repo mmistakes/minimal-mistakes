@@ -18,7 +18,7 @@ toc_icon: "bars"
 
 ***
 
-# 문제 설명
+# <span class="half_HL">✔️ 문제 설명</span>
 다음은 어느 의류 쇼핑몰에서 판매 중인 상품들의 정보를 담은 PRODUCT 테이블입니다. 
 <br>PRODUCT 테이블은 아래와 같은 구조로 되어있으며, PRODUCT_ID, PRODUCT_CODE, PRICE는 각각 상품 ID, 상품코드, 판매가를 나타냅니다.
 
@@ -37,7 +37,7 @@ PRODUCT 테이블에서 판매 중인 상품 중 가장 높은 판매가를 출�
 
 <br>
 
-# 문제 풀이
+# <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
 1. SELECT 문에 PRICE를 넣고 AS 로 컬럼명을 별칭으로 출력한다.
@@ -61,3 +61,7 @@ LIMIT 1
 - LGTM:)
 
 <br>
+
+👩🏻‍💻개인 공부 기록용 블로그입니다
+<br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.
+{: .notice}

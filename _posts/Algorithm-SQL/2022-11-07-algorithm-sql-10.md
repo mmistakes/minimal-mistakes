@@ -18,7 +18,8 @@ toc_icon: "bars"
 
 ***
 
-# 문제 설명
+# <span class="half_HL">✔️ 문제 설명</span>
+
 다음은 어느 의류 쇼핑몰의 온라인 상품 판매 정보를 담은 ```ONLINE_SALE``` 테이블과 오프라인 상품 판매 정보를 담은 ```OFFLINE_SALE``` 테이블 입니다. 
 
 ```ONLINE_SALE``` 테이블은 아래와 같은 구조로 되어있으며 ```ONLINE_SALE_ID```, ```USER_ID```, ```PRODUCT_ID```, ```SALES_AMOUNT```, ```SALES_DATE```는 각각 온라인 상품 판매 ID, 회원 ID, 상품 ID, 판매량, 판매일을 나타냅니다.
@@ -52,7 +53,7 @@ toc_icon: "bars"
 
 <br>
 
-# 문제 풀이
+# <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
 1. 두 테이블을 SELECT, FROM, WHERE 로 문제를 만족할 조건식을 만든 후 각각 소괄호로 묶는다.
@@ -96,7 +97,8 @@ ORDER BY SALES_DATE, PRODUCT_ID, USER_ID
 - 컬럼의 개수가 맞지 않을 땐, ```NULL```로 대채할 수 있다.
 - 위에 작성한 코드와 같이 컬럼 길이를 맞추기 위해 ```NULL```을 사용하고, 컬럼명 변경을 위해 ```AS USER_ID``` 를 기입했다.
 
-
-
 <br>
 
+👩🏻‍💻개인 공부 기록용 블로그입니다
+<br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.
+{: .notice}

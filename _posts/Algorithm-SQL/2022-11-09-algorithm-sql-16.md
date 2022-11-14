@@ -18,7 +18,7 @@ toc_icon: "bars"
 
 ***
 
-# 문제 설명
+# <span class="half_HL">✔️ 문제 설명</span>
 다음은 어느 의류 쇼핑몰에 가입한 회원 정보를 담은 USER_INFO 테이블입니다. 
 <br>USER_INFO 테이블은 아래와 같은 구조로 되어있으며 USER_ID, GENDER, AGE, JOINED는 각각 회원 ID, 성별, 나이, 가입일을 나타냅니다.
 
@@ -37,7 +37,7 @@ USER_INFO 테이블에서 2021년에 가입한 회원 중 나이가 20세 이상
 
 <br>
 
-# 문제 풀이
+# <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
 1. USER_INFO 테이블을 가져온다.
@@ -66,3 +66,6 @@ WHERE DATE_FORMAT(JOINED, '%Y') = '2021'
 
 <br>
 
+👩🏻‍💻개인 공부 기록용 블로그입니다
+<br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.
+{: .notice}
