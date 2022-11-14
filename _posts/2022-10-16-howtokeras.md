@@ -1,6 +1,10 @@
 ---
 title : '[DL/BASIC] 케라스 사용법 : 모델 구축을 위한 기본기 🛠️'
 layout: single
+toc: true
+toc_sticky: true
+categories:
+  - basics
 ---
 
 # 5. 케라스 사용법 
