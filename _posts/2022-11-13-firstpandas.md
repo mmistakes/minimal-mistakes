@@ -16,19 +16,24 @@ I basically got to upload the data to Jupyter Notebook and learned how to observ
 So I imported pandas through:
 
 ```
+{% highlight ruby %}
 import pandas as pd
+{% endhighlight %}
 ```
 
 and I loaded the data by:
 
 ```
+{% highlight ruby %}
 my_data = pd.read_csv("data/"data_name.csv", encoding="cp949")
 my_data
+{% endhighlight %}
 ```
 
 And these are some basic functions I got to use today:
 
 ```
+{% highlight ruby %}
 # Seeing the information of the data
 my_data.info()
 
@@ -58,5 +63,6 @@ my_data.groupby(["Column_A"])["Column_B"].mean().unstack()
 
 # Transposing the column and row
 my_data.groupby(["Column_A"])["Column_B"].mean().unstack().T
+{% endhighlight %}
 ```
 
