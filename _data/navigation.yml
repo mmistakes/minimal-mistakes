@@ -17,15 +17,15 @@ sidebar-category:
       - title: "Basics 🌱"
         url: "/basics"
         category: 'basics'
-      - title: ''
+      
       - title: 'Computer Vision 👓'
         url: "/visions"
         category: 'visions'
-      - title: ''
+      
       - title: 'Upgrading model 🚀'
         url: "/advanced"
         category: 'advanced'
-      - title: ''
+      
       - title: 'Kaggle 🎯'
         url: "/kaggle"
         category: 'kaggle'
