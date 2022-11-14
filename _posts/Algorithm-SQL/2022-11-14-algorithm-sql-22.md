@@ -1,5 +1,5 @@
 ---
-title:  "[프로그래머스 SQL] Lv 2. 동물 수 구하기"
+title:  "[프로그래머스 SQL] Lv 2. 중복 제거하기"
 layout: single
 
 categories: "Algorithm_SQL"
