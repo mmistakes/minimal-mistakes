@@ -3,8 +3,7 @@ title : '[DL/BASIC] 텐서(Tensor) 알아보기 📊 '
 layout : single
 toc : true 
 toc_sticky: true
-categories : 
-  - Basic 
+categories : Basic 
 ---
 
 # 1. 신경망을 위한 데이터 표현 
