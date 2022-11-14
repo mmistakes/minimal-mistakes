@@ -1,3 +1,8 @@
+----
+layout: single
+title: Pandas 1
+----
+
 ## My First Use of Pandas
 
 Today, I got to experience how to work with pandas from an online class. From the class, I got to use the public data of the prices of the korean apartments. Because pandas is basically a software for Python, I recognized same functions that are used to analyze data, but  it was a new experience to actually get to manage data through Python.
