@@ -1,5 +1,5 @@
 ---
-title: "Basics"
+title: "Basics 🌱"
 layout: archive
 permalink: /basics
 author_profile: true
