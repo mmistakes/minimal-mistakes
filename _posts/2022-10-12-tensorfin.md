@@ -4,7 +4,7 @@ layout : single
 toc : true 
 author_profile: true
 sidebar_main: true
-categories : 
+categories:
   - Basic
 ---
 
