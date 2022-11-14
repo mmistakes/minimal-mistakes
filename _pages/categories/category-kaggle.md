@@ -2,6 +2,8 @@
 title: "kaggle"
 layout: archive
 permalink: /kaggle
+author_profile: true
+sidebar_main: true
 ---
 
 
