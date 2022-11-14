@@ -22,7 +22,7 @@ subtitle                 : 낭중지추 - 능력과 재주가 뛰어난 사람�
 name                     : "Juyoon Park"
 description              : "Let's Make it Happen"
 url                      : "https://xper100.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -60,7 +60,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
 search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search_full_content      : true # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -104,7 +104,7 @@ author:
   name             : "Juyoon Park"
   avatar           : "/assets/images/bio-photo.jpeg"
   bio              : "도전을 즐기며 성장을 추구하는 데이터 분석가입니다."
-  location         : "Somewhere"
+  location         : "Seoul, South Korea"
   email            : "xper100@gmail.com"
   links: 
     # - label: "Email"
@@ -284,6 +284,23 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      read_time : true
+      commets: true
+      share: true
+      related: true
+  
+
+collections:
+  portfolio:
+    output : true
+    permalink : /:collection/:path
