@@ -72,13 +72,5 @@ Helmi is accessible through the LUMI environment daily between 13:00 EET and 08:
 
 # Upcoming Service breaks
 
-LUMI will have a service break starting Wednesday 9 November.
-We aim to have LUMI-C and LUMI-Q accessible again at the latest on Monday 14 November.
-
 You can view general LUMI Service breaks [here](https://www.lumi-supercomputer.eu/service-breaks/).
 
-<!-- ### 22.09.2022
-
-[**Full reboot of the LUMI ~~Wednesday 28 September~~ is Postponed**](status/2022-09-22-Full-reboot-Wednesday-28-September.md)
-
--->
