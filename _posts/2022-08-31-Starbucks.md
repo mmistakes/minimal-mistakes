@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "[Web] 클론코딩"
-categories: HTML/CSS[클론코딩]
+title: "[mini] 클론코딩"
+categories: mini Project
 tags: [HTML, 클론코딩]
 toc: true
 

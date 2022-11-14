@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[React]  : Component를 이용한 상세페이지"
+title: "[React] : Component를 이용한 상세페이지"
 categories: React
 tags: [React]
 toc: true
