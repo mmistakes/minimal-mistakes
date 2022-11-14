@@ -1,5 +1,5 @@
 ---
-title: "visions"
+title: "Computer Vision 👓"
 layout: archive
 permalink: /visions
 author_profile: true
