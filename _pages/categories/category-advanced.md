@@ -1,5 +1,5 @@
 ---
-title: "advanced"
+title: "Upgrading model 🚀"
 layout: archive
 permalink: /advanced
 author_profile: true
