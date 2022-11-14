@@ -1,0 +1,189 @@
+---
+title: "커피머신"
+categories:
+  - 회사업무 내역
+
+tags: [QT, 라즈베리파이, ]
+toc : true
+comments: true
+---
+
+### 최초 작성일 : 2022-11-15
+
+## 업무 내용
+### UI작업
+
+ 내가 처음 입사하면서 시작한 프로젝트이다. 커피머신 기계에 사용할 UI 작업 부분인데 
+ 주로 QT 를 이용하여 라즈베리파이에서 활용하였다. 처음에 라즈베리파이에서 직접 작업하느라
+ 성능이 떨어지는 상태였다. 나중에 알고보니 QT는 크로스 컴파일 환경을 지워해주기 떄문에
+ 라즈베리파이에서 직업 작업하지 않고 원격에서 작업 후 실행파일만 실행할 수 있다는것을 알게 되었다.
+
+
+
+### 주요 활용 기술
+1. QML UI 작업
+2. CPP QML 연동
+
+
+### 협업 받은 내역
+1. 센서 연동
+2. 커피머신 동작 관련
+
+
+
+###
+1. QML UI 작업 
+
+``` Qml
+import QtQuick 2.11
+import QtQuick.Window 2.11
+import QtQuick.VirtualKeyboard 2.3
+import QtQuick.VirtualKeyboard.Settings 2.0
+import QtQuick.Controls 2.3
+import info 1.0
+import "."
+import "qml/GlobalVariable.js" as Global
+
+ApplicationWindow {
+    id: window
+    visible: true
+    x:0
+    y:0
+    width: 480
+    height: 320
+    flags: Qt.Window | Qt.FramelessWindowHint
+    title: qsTr("iRHEA")
+    minimumWidth: 480
+    minimumHeight: 320
+    maximumHeight: 320
+    maximumWidth: 480
+
+    Info {
+        id: info
+    }
+
+    onFontChanged: {
+        info.drawPage = 0
+    }
+
+    Component.onCompleted: {
+        console.log("[Process Log] iRHEA Start")
+        info.callLCDInit()
+    }
+
+    Timer {
+        id: timer
+        running: true
+        repeat: false
+        interval: 3000
+        onTriggered: {
+            mainPage.clicked()
+        }
+    }
+
+    InputPanel {
+        id: inputPanel
+        z: 99
+        x: 0
+        y: window.height
+        width: window.width
+
+        states: State {
+            name: "visible"
+            when: inputPanel.active
+            PropertyChanges {
+                id: ttt
+                target: inputPanel
+                y: Global.keyboardY
+            }
+        }
+        transitions: Transition {
+            from: ""
+            to: "visible"
+            reversible: true
+            ParallelAnimation {
+                NumberAnimation {
+                    properties: "y"
+                    duration: 250
+                    easing.type: Easing.InOutQuad
+                }
+            }
+        }
+    }
+
+    BorderImage {
+        id: borderImage
+        x: 0
+        y: 0
+        width: 480
+        height: 320
+        source : "./iRHEA_IMG/english_img/main_eng_00.png"
+        Component.onCompleted: {
+
+        }
+    }
+
+    StackView
+    {
+        id:stackView
+        anchors.fill: parent
+        replaceEnter: Transition { PropertyAnimation {//뷰를 replace 한 화면이 그려질때 출력하는 애니메이션
+                property: "opacity"
+                from: 1
+                to:1
+                duration: 0
+            }}
+        replaceExit: Transition { PropertyAnimation {//뷰를 replace 한 화면이 그려질때 이전화면이 없어지는 애니메이션
+                property: "opacity"
+                from: 1
+                to:1
+                duration: 0
+            }}
+        pushEnter: Transition { PropertyAnimation {//뷰를 push 한 화면이 그려지는 애니메이션
+                property: "opacity"//투명도가 설정 되게 설정 x,나 y등 다른 속성값으로 설정할수 있음
+                from: 1//투명도를 1에서 1로 바꿔줌 즉 투명도가 변하지 않아서 애니메이션이 없는 것처럼 된다.
+                to:1
+                duration: 0
+            }}
+        pushExit: Transition { PropertyAnimation {//뷰를 push 한 화면이 그려질때 이전화면이 없어지는 애니메이션
+                property: "opacity"//투명도가 설정 되게 설정 x,나 y등 다른 속성값으로 설정할수 있음
+                from: 1
+                to:1//투명도를 1에서 1로 바꿔줌 즉 투명도가 변하지 않아서 애니메이션이 없는 것처럼 된다.
+                duration: 0
+            }}
+        popEnter: Transition { PropertyAnimation {////뷰를 pop해서 이전화면으로 갈때 이전화면이 출력되는 애니메이션
+                property: "opacity"//투명도가 설정 되게 설정 x,나 y등 다른 속성값으로 설정할수 있음
+                from: 1//투명도를 1에서 1로 바꿔줌 즉 투명도가 변하지 않아서 애니메이션이 없는 것처럼 된다.
+                to:1
+                duration: 0
+            }}
+        popExit: Transition { PropertyAnimation {//뷰를 pop 했을때 pop한 화면이 없어지는 애니메이션
+                property: "opacity"//투명도가 설정 되게 설정 x,나 y등 다른 속성값으로 설정할수 있음
+                from: 1
+                to:1//투명도를 1에서 1로 바꿔줌 즉 투명도가 변하지 않아서 애니메이션이 없는 것처럼 된다.
+                duration:0
+
+            }}
+
+        initialItem: Item  //제일 첫화면을 설정하는 것으로 설정을 안하면 되돌아오기가 안된다.
+        {
+            Button
+            {
+                id: mainPage
+                width: 480
+                height: 320
+                opacity: 0
+                visible: true
+                onClicked:
+                {
+                    if(info.Login)
+                        stackView.push(Qt.resolvedUrl("qrc:/qml/First_Information.qml"))//다음 화면을 출력하기 위해 stack에 화면을 쌓는 코드
+                    else
+                        stackView.push(Qt.resolvedUrl("qrc:/qml/Information.qml"))
+                }
+            }
+        }
+    }
+}
+```
+Main QML 내용이다.
