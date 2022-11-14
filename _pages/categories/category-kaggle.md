@@ -1,5 +1,5 @@
 ---
-title: "kaggle"
+title: "Kaggle 🎯"
 layout: archive
 permalink: /kaggle
 author_profile: true
