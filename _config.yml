@@ -287,18 +287,23 @@ defaults:
       comments: true
       share: true
       related: true
+defaults:
   # _portfolio
   - scope:
       path: ""
       type: portfolio
     values:
       layout: single
-      author_profile: true
-      read_time : true
-      commets: true
+      author_profile: false
       share: true
-      related: true
-  
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
 collections:
   portfolio:
