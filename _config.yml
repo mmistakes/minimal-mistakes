@@ -62,6 +62,8 @@ atom_feed:
 search                   : # true, false (default)
 search_full_content      : true # true, false (default)
 search_provider          : # lunr (default), algolia, google
+lunr:
+  search_within_pages    : # true, false (default)
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -73,8 +75,9 @@ google:
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-yandex_site_verification :
 naver_site_verification  :
+yandex_site_verification :
+baidu_site_verification  :
 
 # Social Sharing
 twitter:
