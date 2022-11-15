@@ -31,6 +31,8 @@ Now, we will need to climb a steep hill, so it will be a little bit hard, but yo
 
 First of all _qubits_ are also (but not only) abstract, mathematical objects. What makes easier for me to deal with them is to treat them as such - if I see a surprising qubit property, but can understand (or at least have intution) about the math behind it - then I am all good.  I tell myself that "surprising properties of qubits are just consequence of math" to avoid mind-bending quantum effects with are so distinct from our day-to-day expirence. 
 
+Just like a bit, qubit is also two state, but instead of represeting a logical state it represents a quantum state. Now let us take a jump head first and try to swim. Quantum state of a qubit 
+
 
 # Amplitude and probability
 
