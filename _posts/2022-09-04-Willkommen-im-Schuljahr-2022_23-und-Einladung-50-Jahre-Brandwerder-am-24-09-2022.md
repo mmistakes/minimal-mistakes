@@ -2,7 +2,7 @@
 layout: elternbrief
 title: "Einladung zur Jubiläumsfeier „50 Jahre Grundschule am Brandwerder“ am Samstag, 24.09.2022 von 11 - 14 Uhr"
 date: 2022-09-04 20:30:00
-category: fest
+category: elternbrief
 ---
 
 Liebe Eltern,
