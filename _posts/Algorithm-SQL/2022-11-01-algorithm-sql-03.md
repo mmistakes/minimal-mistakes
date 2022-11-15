@@ -37,6 +37,7 @@ DOCTOR 테이블에서 진료과가 흉부외과(CS)이거나 일반외과(GS)�
 <br>이때 결과는 고용일자를 기준으로 내림차순 정렬하고, 고용일자가 같다면 이름을 기준으로 오름차순 정렬해주세요.
 <br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/132203)
 
+<br>
 
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code

@@ -34,6 +34,8 @@ toc_icon: "bars"
 이때 이름이 NULL인 경우는 집계하지 않으며 중복되는 이름은 하나로 칩니다.
 <br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59408)
 
+<br>
+
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown

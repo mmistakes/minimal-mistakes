@@ -62,6 +62,8 @@ ORDER BY ANIMAL_ID
 ### (2) 코드 리뷰 및 회고
 - 이번 문제는 매우 쉬웠다.
 
+<br>
+
 ***
 
 # <span class="half_HL">✔️ 2번 문제 : 역순 정렬하기</span>

@@ -33,6 +33,7 @@ toc_icon: "bars"
 가장 최근에 들어온 동물은 언제 들어왔는지 조회하는 SQL 문을 작성해주세요.
 <br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59415)
 
+<br>
 
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code

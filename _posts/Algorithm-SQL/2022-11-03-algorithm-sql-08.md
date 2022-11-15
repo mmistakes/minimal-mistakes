@@ -37,6 +37,7 @@ ONLINE_SALE 테이블은 아래와 같은 구조로 되어있으며 ONLINE_SALE_
 - 결과는 회원 ID를 기준으로 오름차순 정렬해주시고 회원 ID가 같다면 상품 ID를 기준으로 내림차순 정렬해주세요.
 - [👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/131536)
 
+<br>
 
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code

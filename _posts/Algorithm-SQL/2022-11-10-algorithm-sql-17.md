@@ -34,6 +34,8 @@ PRODUCT 테이블에서 판매 중인 상품 중 가장 높은 판매가를 출�
 <br>이때 컬럼명은 MAX_PRICE로 지정해주세요.
 <br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/131697)
 
+<br>
+
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown

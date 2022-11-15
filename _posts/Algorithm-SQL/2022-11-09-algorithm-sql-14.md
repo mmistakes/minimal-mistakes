@@ -37,6 +37,8 @@ ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은
 본 문제는 Kaggle의 "Austin Animal Center Shelter Intakes and Outcomes"에서 제공하는 데이터를 사용하였으며 ODbL의 적용을 받습니다.
 <br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59404)
 
+<br>
+
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown

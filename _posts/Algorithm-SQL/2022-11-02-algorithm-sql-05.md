@@ -34,6 +34,7 @@ FOOD_FACTORY 테이블에서 강원도에 위치한 식품공장의 공장 ID, �
 <br>이때 결과는 공장 ID를 기준으로 오름차순 정렬해주세요.
 <br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/131112)
 
+<br>
 
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code

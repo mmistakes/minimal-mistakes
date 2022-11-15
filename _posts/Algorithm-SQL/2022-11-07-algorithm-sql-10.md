@@ -50,6 +50,7 @@ toc_icon: "bars"
 - 결과는 판매일을 기준으로 오름차순 정렬해주시고 판매일이 같다면 상품 ID를 기준으로 오름차순, 상품ID까지 같다면 유저 ID를 기준으로 오름차순 정렬해주세요.
 - [👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/131537)
 
+<br>
 
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code

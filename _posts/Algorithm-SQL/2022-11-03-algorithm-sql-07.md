@@ -33,6 +33,7 @@ FIRST_HALF 테이블은 아이스크림 가게의 상반기 주문 정보를 담
 <br>기준으로 오름차순 정렬하여 조회하는 SQL 문을 작성해주세요.
 <br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/133024)
 
+<br>
 
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) 코드 작성
