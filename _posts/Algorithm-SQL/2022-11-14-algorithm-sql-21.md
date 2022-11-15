@@ -34,8 +34,6 @@ toc_icon: "bars"
 동물 보호소에 동물이 몇 마리 들어왔는지 조회하는 SQL 문을 작성해주세요.
 <br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59406)
 
-<br>
-
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
@@ -50,16 +48,10 @@ SELECT COUNT(*)
 FROM ANIMAL_INS
 ```
 
-## (3) 코드 결과
-- **성능 요약** : 메모리 0.0 MB, 시간 0.00 ms
-- **채점결과** : EMPTY
-
-## (4) 코드 리뷰 및 회고
+## (3) 코드 리뷰 및 회고
 - 전체 행에 대한 개수를 구하고싶을 땐, ```*```을 사용하자!
 - ```COUNT``` 와 ```SUM``` 함수 구분을 잘 하자!
 - LGTM:)
-
-<br>
 
 👩🏻‍💻개인 공부 기록용 블로그입니다
 <br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.

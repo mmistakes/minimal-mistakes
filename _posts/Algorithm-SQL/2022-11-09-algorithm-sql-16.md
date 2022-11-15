@@ -14,7 +14,6 @@ toc_icon: "bars"
 ---
 
 👩🏻‍💻 SQL 고득점 Kit - SELECT 문제
-<br>
 
 ***
 
@@ -35,8 +34,6 @@ GENDER 컬럼은 비어있거나 0 또는 1의 값을 가지며 0인 경우 남�
 USER_INFO 테이블에서 2021년에 가입한 회원 중 나이가 20세 이상 29세 이하인 회원이 몇 명인지 출력하는 SQL문을 작성해주세요.
 <br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/131535)
 
-<br>
-
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
@@ -54,17 +51,11 @@ WHERE DATE_FORMAT(JOINED, '%Y') = '2021'
       AND AGE BETWEEN 20 AND 29 
 ```
 
-## (3) 코드 결과
-- **성능 요약** : 메모리 0.0 MB, 시간 0.00 ms
-- **채점결과** : EMPTY
-
-## (4) 코드 리뷰 및 회고
+## (3) 코드 리뷰 및 회고
 - BETWEEN 은 이상, 이하를 나타내는 것을 기억하자.
 - COUNT 함수를 사용할 때, 결측치가 있는 컬럼을 넣으면 결측값을 제외한 행의 개수를 출력한다는 점을 기억하자.
 - COUNT(*)를 사용하면 결측값이 있어도 행 전체가 NULL이 아닌 이상 전체 행의 개수를 출력한다.
 - LGTM :)
-
-<br>
 
 👩🏻‍💻개인 공부 기록용 블로그입니다
 <br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.

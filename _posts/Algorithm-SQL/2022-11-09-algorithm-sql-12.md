@@ -14,7 +14,6 @@ toc_icon: "bars"
 ---
 
 👩🏻‍💻 SQL 고득점 Kit - SELECT 문제
-<br>
 
 ***
 
@@ -39,8 +38,6 @@ ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은
 본 문제는 Kaggle의 "Austin Animal Center Shelter Intakes and Outcomes"에서 제공하는 데이터를 사용하였으며 ODbL의 적용을 받습니다.
 <br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59037)
 
-<br>
-
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
@@ -58,11 +55,7 @@ WHERE INTAKE_CONDITION != "Aged"
 ORDER BY ANIMAL_ID
 ```
 
-## (3) 코드 결과
-- **성능 요약** : 메모리 0.0 MB, 시간 0.00 ms
-- **채점결과** : EMPTY
-
-## (4) 코드 리뷰 및 회고
+## (3) 코드 리뷰 및 회고
 - LGTM :)
 
 <br>

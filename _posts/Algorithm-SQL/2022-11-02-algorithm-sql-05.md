@@ -16,6 +16,7 @@ toc_icon: "bars"
 👩🏻‍💻 SQL 고득점 Kit - SELECT 문제
 
 ***
+
 # <span class="half_HL">✔️ 문제 설명</span>
 
 다음은 식품공장의 정보를 담은 FOOD_FACTORY 테이블입니다. 
@@ -33,7 +34,6 @@ FOOD_FACTORY 테이블에서 강원도에 위치한 식품공장의 공장 ID, �
 <br>이때 결과는 공장 ID를 기준으로 오름차순 정렬해주세요.
 <br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/131112)
 
-<br>
 
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
@@ -50,16 +50,10 @@ WHERE ADDRESS LIKE '강원도%'
 ORDER BY FACTORY_ID
 ```
 
-## (3) 코드 결과
-- **성능 요약** : 메모리 0.0 MB, 시간 0.00 ms
-- **채점결과** : EMPTY
-
-## (4) 코드 리뷰 및 회고
+## (3) 코드 리뷰 및 회고
 - 강원도에 위치한 공장 정보를 가져오기 위해, 'LIKE' 를 사용하였다.
 - LIKE 로 강원도 정보를 불러올 때, 데이터는 '강원도 정선군 ~ '와 같은 형식이기 때문에 %를 사용하여 불러왔다.
 - 코드는 만족한다.
-
-<br>
 
 👩🏻‍💻개인 공부 기록용 블로그입니다
 <br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.

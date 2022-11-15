@@ -43,7 +43,6 @@ ICECREAM_INFO 테이블 구조는 다음과 같으며, FLAVOR, INGREDITENT_TYPE 
 상반기 아이스크림 총주문량이 3,000보다 높으면서 아이스크림의 주 성분이 과일인 아이스크림의 맛을 총주문량이 큰 순서대로 조회하는 SQL 문을 작성해주세요.
 <br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/133025)
 
-<br>
 
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
@@ -63,17 +62,13 @@ WHERE fh.TOTAL_ORDER > 3000
 ORDER BY fh.TOTAL_ORDER DESC
 ```
 
-## (3) 코드 결과
-- **성능 요약** : 메모리 0.0 MB, 시간 0.00 ms
-- **채점결과** : EMPTY
 
-## (4) 코드 리뷰
+## (3) 코드 리뷰
 - JOIN 을 사용하여 두 테이블을 FLAVOR 을 기준으로 합쳐주었다.
 - WHERE 에 주문량 3000 초과, 주성분 과일맛 조건을 넣어주어 데이터를 필터링해 주었다.
 - 데이터 출력은 FLAVOR만 하지만 순서는 총 주문량의 내림차순을 기준으로 한다.
 - 코드는 만족한다.
 
-<br>
 
 👩🏻‍💻개인 공부 기록용 블로그입니다
 <br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.

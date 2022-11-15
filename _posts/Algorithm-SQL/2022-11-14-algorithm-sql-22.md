@@ -14,7 +14,6 @@ toc_icon: "bars"
 ---
 
 👩🏻‍💻 SQL 고득점 Kit - SUM, MAX, MIN 문제
-<br>
 
 ***
 
@@ -35,8 +34,6 @@ toc_icon: "bars"
 이때 이름이 NULL인 경우는 집계하지 않으며 중복되는 이름은 하나로 칩니다.
 <br>[👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59408)
 
-<br>
-
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
@@ -51,17 +48,11 @@ SELECT COUNT(DISTINCT NAME)
 FROM ANIMAL_INS
 ```
 
-## (3) 코드 결과
-- **성능 요약** : 메모리 0.0 MB, 시간 0.00 ms
-- **채점결과** : EMPTY
-
-## (4) 코드 리뷰 및 회고
+## (3) 코드 리뷰 및 회고
 - 전체 행에 대한 개수를 구하고싶을 때 ```*```을 사용하면, 하나의 행에 결측치가 아닌 값이 하나라도 있으면 무조건 COUNT에 포함된다.
 - 특정 변수에 대한 개수를 구하고싶을 때 ```COUNT(변수)``` 를 사용하면 되는데 이때 NULL인 부분은 COUNT에 포함되지 않는다.
 - ```DISTINCT``` 를 사용하면 중복된 값을 제거하고 대표로 1개의 값만 가져올 수 있다.
 - LGTM:)
-
-<br>
 
 👩🏻‍💻개인 공부 기록용 블로그입니다
 <br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.

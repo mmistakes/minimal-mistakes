@@ -14,7 +14,6 @@ toc_icon: "bars"
 ---
 
 👩🏻‍💻 SQL 고득점 Kit - SELECT 문제
-<br>
 
 ***
 
@@ -33,8 +32,6 @@ toc_icon: "bars"
 |SEX_UPON_INTAKE|	VARCHAR(N)	|FALSE|
 
 본 문제는 Kaggle의 ["Austin Animal Center Shelter Intakes and Outcomes"](https://www.kaggle.com/datasets/aaronschlegel/austin-animal-center-shelter-intakes-and-outcomes)에서 제공하는 데이터를 사용하였으며 [ODbL](https://opendatacommons.org/licenses/odbl/1-0/)의 적용을 받습니다.
-
-<br>
 
 ***
 
@@ -62,14 +59,8 @@ FROM ANIMAL_INS
 ORDER BY ANIMAL_ID
 ```
 
-### (2) 코드 결과
-- **성능 요약** : 메모리 0.0 MB, 시간 0.00 ms
-- **채점결과** : EMPTY
-
-### (3) 코드 리뷰 및 회고
+### (2) 코드 리뷰 및 회고
 - 이번 문제는 매우 쉬웠다.
-
-<br>
 
 ***
 
@@ -98,15 +89,9 @@ FROM ANIMAL_INS
 ORDER BY ANIMAL_ID DESC
 ```
 
-### (2) 코드 결과
-- **성능 요약** : 메모리 0.0 MB, 시간 0.00 ms
-- **채점결과** : EMPTY
-
-### (3) 코드 리뷰 및 회고
+### (2) 코드 리뷰 및 회고
 - 이번 문제는 매우 쉬웠다.
 - 이전 ```모든 레코드 조회하기``` 문제에 정렬조건을 내림차순 으로 바꿔준 것이 다이다!
-
-<br>
 
 👩🏻‍💻개인 공부 기록용 블로그입니다
 <br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.
