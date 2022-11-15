@@ -1,5 +1,5 @@
 ---
-title: "Top 10 Skills to Learn to Be a Scala Developer"
+title: "Top 10 Skills (Mostly Mental Models) to Learn to Be a Scala Developer"
 date: 2022-11-07
 header:
     image: "/images/blog cover.jpg"
@@ -101,7 +101,7 @@ Because Scala originally targeted the JVM (built for Java, an OO language withou
 
 **Skill 5:** Therefore, the ability to use functions as values - pass them around, construct new ones on the spot, etc. - is a crucial skill for a functional Scala developer. Master it and you're well on your way.
 
-**Skill 6:** With functional programming, we can then start to think of collections, such as List, Set, Map, Vector, etc, and process them quickly with the help of FP-style combinators. The functions `map`, `flatMap` and `filter` are your best friends. With them, you can then build the famous for-comprehensions in Scala, which are nothing more than chains of `map` and `flatMap`. This will be another counterintuitive idea, because we programmers tend to think "for" as a "loop" (the C-style language curse), where as here, a for-comprehension is an expression.
+**Skill 6:** With functional programming, we can then start to think of collections, such as List, Set, Map, Vector, etc, and process them quickly with the help of FP-style combinators. The functions `map`, `flatMap` and `filter` are your best friends. With them, you can then build the famous for-comprehensions in Scala, which are nothing more than chains of `map` and `flatMap`. This will be another counterintuitive idea, because we programmers tend to think "for" as a "loop" (the C-style language curse), whereas here, a for-comprehension is an expression.
 
 ## Skills 7 and 8 of Abstract Reasoning
 
