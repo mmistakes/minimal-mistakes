@@ -53,9 +53,10 @@ FROM ANIMAL_INS
 ORDER BY NAME, DATETIME DESC
 ```
 
-
 ## (3) 코드 리뷰 및 회고
 - LGTM :)
+
+<br>
 
 👩🏻‍💻개인 공부 기록용 블로그입니다
 <br>오류나 틀린 부분이 있을 경우 댓글 혹은 메일로 따끔하게 지적해주시면 감사하겠습니다.
