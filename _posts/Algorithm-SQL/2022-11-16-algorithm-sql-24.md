@@ -110,6 +110,8 @@ ORDER BY PRICE DESC
 
 
 
+http://jason-heo.github.io/mysql/2014/03/05/find-max-row.html
+
 <br>
 
 👩🏻‍💻개인 공부 기록용 블로그입니다
