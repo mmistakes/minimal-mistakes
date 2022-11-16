@@ -4,6 +4,8 @@ layout: archive
 permalink: categories/Algorithm_Python
 author_profile: true
 sidebar_main: true
+
+classes: wide
 ---
 
 
