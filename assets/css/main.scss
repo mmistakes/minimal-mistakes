@@ -174,16 +174,4 @@ search: false
     font-display: swap;
 } 
 
-@font-face {
-    font-family: 'BMHanna11yrs';
-    font-weight: normal;
-    font-style: normal;
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/BMHanna11yrs/BMHanna11yrs.eot');
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/BMHanna11yrs/BMHanna11yrs.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/BMHanna11yrs/BMHanna11yrs.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/BMHanna11yrs/BMHanna11yrs.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/BMHanna11yrs/BMHanna11yrs.ttf') format("truetype");
-    font-display: swap;
-} 
-
-@import url('https://webfontworld.github.io/SCoreDream/SCoreDream.css');
+@import url('https://webfontworld.github.io/NanumSquareRound/NanumSquareRound.css');
