@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 1. 12세 이하인 여자 환자 목록 출
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["SELECT", "CASE", "FROM", "WHERE", "ORDER BY"]
+tags: ["CASE", "WHERE", "ORDER BY"]
 
 toc: true
 toc_sticky: true

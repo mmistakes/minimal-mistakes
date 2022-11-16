@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 4. 오프라인/온라인 판매 데이터 
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["SELECT", "FROM", "WHERE", "ORDER BY", "UNION", "DATE_FORMAT"]
+tags: ["WHERE", "ORDER BY", "UNION", "DATE_FORMAT"]
 
 toc: true
 toc_sticky: true

@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 2. 진료과별 총 예약 횟수 출력하
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["SELECT", "FROM", "WHERE", "GROUP BY", "ORDER BY", "COUNT", "BETWEEN"]
+tags: ["WHERE", "GROUP BY", "ORDER BY", "COUNT", "BETWEEN"]
 
 toc: true
 toc_sticky: true

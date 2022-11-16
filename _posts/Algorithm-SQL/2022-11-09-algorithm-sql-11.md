@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 1. 아픈 동물 찾기"
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["SELECT", "FROM", "WHERE", "ORDER BY"]
+tags: ["WHERE", "ORDER BY"]
 
 toc: true
 toc_sticky: true

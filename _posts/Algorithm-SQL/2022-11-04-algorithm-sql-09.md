@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 1. 모든 레코드 조회하기, 역순 �
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["SELECT", "FROM", "ORDER BY"]
+tags: ["ORDER BY"]
 
 toc: true
 toc_sticky: true

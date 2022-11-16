@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 2. 최솟값 구하기"
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["SELECT", "FROM", "ORDER BY", "LIMIT", "MIN"]
+tags: ["ORDER BY", "LIMIT", "MIN"]
 
 toc: true
 toc_sticky: true

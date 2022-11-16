@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 1. 과일로 만든 아이스크림 고르�
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["SELECT", "FROM", "JOIN", "WHERE", "ORDER BY"]
+tags: ["JOIN", "WHERE", "ORDER BY"]
 
 toc: true
 toc_sticky: true

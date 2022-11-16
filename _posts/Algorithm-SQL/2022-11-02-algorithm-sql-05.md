@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 1. 강원도에 위치한 생산공장 목�
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["SELECT", "FROM", "WHERE", "ORDER BY", "LIKE"]
+tags: ["WHERE", "ORDER BY", "LIKE"]
 
 toc: true
 toc_sticky: true

@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 1. 여러 기준으로 정렬하기"
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["SELECT", "FROM", "ORDER BY"]
+tags: ["ORDER BY"]
 
 toc: true
 toc_sticky: true

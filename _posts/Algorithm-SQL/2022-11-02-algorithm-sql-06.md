@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 4. 서울에 위치한 식당 목록 출력
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["SELECT", "FROM", "JOIN", "WHERE", "GROUP BY", "ORDER BY", "ROUND", "AVG", "LIKE"]
+tags: ["JOIN", "WHERE", "GROUP BY", "ORDER BY", "ROUND", "AVG", "LIKE"]
 
 toc: true
 toc_sticky: true

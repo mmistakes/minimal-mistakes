@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 2. 중복 제거하기"
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["SELECT", "FROM", "DISTINCT", "COUNT"]
+tags: ["DISTINCT", "COUNT"]
 
 toc: true
 toc_sticky: true

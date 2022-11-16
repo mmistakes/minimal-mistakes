@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 2. 재구매가 일어난 상품과 회원 
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["SELECT", "FROM", "GROUP BY", "HAVING", "ORDER BY", "COUNT"]
+tags: ["GROUP BY", "HAVING", "ORDER BY", "COUNT"]
 
 toc: true
 toc_sticky: true

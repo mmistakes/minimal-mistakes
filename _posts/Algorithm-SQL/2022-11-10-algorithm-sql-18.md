@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 2. 가격이 제일 비싼 식품의 정보
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["SELECT", "FROM", "ORDER BY", "LIMIT"]
+tags: ["ORDER BY", "LIMIT"]
 
 toc: true
 toc_sticky: true

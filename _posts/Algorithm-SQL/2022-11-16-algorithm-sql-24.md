@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 4. 식품분류별 가장 비싼 식품의 
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["SELECT", "FROM", "WHERE", "GROUP BY", "HAVING", "ORDER BY", "JOIN", "MAX", "REGEXP"]
+tags: ["WHERE", "GROUP BY", "HAVING", "ORDER BY", "JOIN", "MAX", "REGEXP"]
 
 toc: true
 toc_sticky: true

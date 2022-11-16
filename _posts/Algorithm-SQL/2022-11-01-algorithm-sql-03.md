@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 1. 흉부외과 또는 일반외과 의사 
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["SELECT", "FROM", "WHERE", "ORDER BY", "DATE_FORMAT"]
+tags: ["WHERE", "ORDER BY", "DATE_FORMAT"]
 
 toc: true
 toc_sticky: true

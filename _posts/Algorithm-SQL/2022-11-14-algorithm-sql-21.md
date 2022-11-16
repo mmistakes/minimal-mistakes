@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 2. 동물 수 구하기"
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["SELECT", "FROM", "COUNT"]
+tags: ["COUNT"]
 
 toc: true
 toc_sticky: true

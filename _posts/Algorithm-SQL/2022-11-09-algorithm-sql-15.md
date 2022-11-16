@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 1. 상위 n개 레코드"
 layout: single
 
 categories: "Algorithm_SQL"
-tags: ["SELECT", "FROM", "ORDER BY", "LIMIT"]
+tags: ["ORDER BY", "LIMIT"]
 
 toc: true
 toc_sticky: true
