@@ -80,6 +80,18 @@ del a {
   color: inherit;
 }
 
+/* 내가 추가한 것 : 태그영역 꾸미기 */
+.page__taxonomy-item-tag {
+  margin-right: 2px;
+  margin-bottom: 5px;
+  padding: 3px 5px;
+  text-decoration: none;
+  border: 1px solid #F7DAD9;
+  border-radius: 6px;
+  background-color: #FAF3F3;
+}
+
+
 /* reduce orphans and widows when printing */
 
 p,
