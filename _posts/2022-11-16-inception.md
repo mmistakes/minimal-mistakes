@@ -1,3 +1,14 @@
+---
+layout: single
+title:  "[DL/CV] 사전 훈련된 모델 알아보기 - Inception-v3 📚"
+toc: true
+toc_sticky: true
+categories:
+  - visions
+---
+
+
+
 ## 7. Inception-v3 모델 알아보기
 
 ### 7.0 들어가며
