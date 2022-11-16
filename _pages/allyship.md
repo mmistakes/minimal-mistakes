@@ -29,7 +29,7 @@ times to do so. I’m still learning, every single day, and I enjoy sharing my e
 If you're interested, read my [thoughts on attending Grace Hopper Celebration 2018](/words/gracehopper/).
 
 The following slides, including speaker notes, are from my presentation
-at [AnitaB.org](https://anitab.org/)'s [Male Ally Summit 2019]([https://community.anitab.org/event/male-ally-summit-2019/](https://www.linkedin.com/posts/todhilton_im-excited-to-speak-about-the-allyship-journey-activity-6595821918652366849-gbmf)).
+at [AnitaB.org](https://anitab.org/)'s [Male Ally Summit 2019](https://www.linkedin.com/posts/todhilton_im-excited-to-speak-about-the-allyship-journey-activity-6595821918652366849-gbmf).
 
 **_Feedback:_** If you attended my presentation, I would greatly appreciate your anonymous feedback ([click here](https://forms.gle/eQUfNNNsDSexYWqF7) to go to the form).
 
