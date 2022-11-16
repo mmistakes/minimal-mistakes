@@ -57,7 +57,7 @@ ORDER BY PRICE DESC
 
 <br>
 
-# <span class="half_HL">🌞 오답 코드 공유</span>
+# <span class="half_HL">🌞 실패 코드 공유</span>
 
 
 |PRODUCT_ID|	PRODUCT_NAME|	PRODUCT_CD|	CATEGORY|	PRICE|
