@@ -136,7 +136,7 @@ blockquote {
   margin: 2em 1em 2em 0;
   padding-left: 1em;
   padding-right: 1em;
-  font-style: italic;
+  // font-style: italic; 지워버림 
   border-left: 0.25em solid $primary-color;
 
   cite {
