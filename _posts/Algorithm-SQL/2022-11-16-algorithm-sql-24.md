@@ -9,6 +9,8 @@ toc: true
 toc_sticky: true
 toc_label : "목차"
 toc_icon: "bars"
+
+published: false
 ---
 
 <small>SQL 고득점 Kit - GROUP BY 문제</small>
@@ -53,7 +55,10 @@ ORDER BY PRICE DESC
 ```
 
 ## (3) 코드 리뷰 및 회고
-- 
+- 이번 문제를 통해 GROUP BY를 이해할 수 있었다.
+  - GROUP BY로 특정 변수로 묶고 연산(COUNT, SUM, MAX 등)을 사용하지 않으면 그룹별 첫 번째 데이터(행)이 불러와진다.
+  - 이 점을 인식하지 못했을 때 카테고리별, 제일 비싼 식품가격과 그 식품의 이름을 불러왔는데 각 정보가 일치하지 않았다.
+  - 예 : 맛동산이 2000원으로 가장 비싼 과자일 때, 위 코드로 데이터를 불러오면 2000원 짱구 라는 가격과 과자명이 일치하지 않은 데이터가 불러와졌다.
 
 <br>
 
