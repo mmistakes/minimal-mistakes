@@ -3,9 +3,7 @@ title:  "[프로그래머스 SQL] Lv 1. 가장 비싼 상품 구하기"
 layout: single
 
 categories: "Algorithm_SQL"
-tags: 
-    - Algorithm
-    - SQL
+tags: ["SELECT", "FROM", "ORDER BY", "LIMIT"]
 
 toc: true
 toc_sticky: true
@@ -13,7 +11,7 @@ toc_label : "목차"
 toc_icon: "bars"
 ---
 
-👩🏻‍💻 SQL 고득점 Kit - SUM, MAX, MIN 문제
+<small>SQL 고득점 Kit - SUM, MAX, MIN 문제</small>
 
 ***
 

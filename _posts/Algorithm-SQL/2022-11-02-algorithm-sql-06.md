@@ -3,9 +3,7 @@ title:  "[프로그래머스 SQL] Lv 4. 서울에 위치한 식당 목록 출력
 layout: single
 
 categories: "Algorithm_SQL"
-tags: 
-    - Algorithm
-    - SQL
+tags: ["SELECT", "FROM", "JOIN", "WHERE", "GROUP BY", "ORDER BY", "ROUND", "AVG", "LIKE"]
 
 toc: true
 toc_sticky: true
@@ -13,7 +11,7 @@ toc_label : "목차"
 toc_icon: "bars"
 ---
 
-👩🏻‍💻 SQL 고득점 Kit - SELECT 문제
+<small>SQL 고득점 Kit - SELECT 문제</small>
 
 ***
 

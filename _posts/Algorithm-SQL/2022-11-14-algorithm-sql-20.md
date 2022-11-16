@@ -3,9 +3,7 @@ title:  "[프로그래머스 SQL] Lv 2. 최솟값 구하기"
 layout: single
 
 categories: "Algorithm_SQL"
-tags: 
-    - Algorithm
-    - SQL
+tags: ["SELECT", "FROM", "ORDER BY", "LIMIT", "MIN"]
 
 toc: true
 toc_sticky: true
@@ -13,8 +11,7 @@ toc_label : "목차"
 toc_icon: "bars"
 ---
 
-👩🏻‍💻 SQL 고득점 Kit - SUM, MAX, MIN 문제
-<br>
+<small>SQL 고득점 Kit - SUM, MAX, MIN 문제</small>
 
 ***
 

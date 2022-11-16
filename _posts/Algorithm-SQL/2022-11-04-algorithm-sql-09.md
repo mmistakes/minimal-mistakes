@@ -3,9 +3,7 @@ title:  "[프로그래머스 SQL] Lv 1. 모든 레코드 조회하기, 역순 �
 layout: single
 
 categories: "Algorithm_SQL"
-tags: 
-    - Algorithm
-    - SQL
+tags: ["SELECT", "FROM", "ORDER BY"]
 
 toc: true
 toc_sticky: true
@@ -13,7 +11,7 @@ toc_label : "목차"
 toc_icon: "bars"
 ---
 
-👩🏻‍💻 SQL 고득점 Kit - SELECT 문제
+<small>SQL 고득점 Kit - SELECT 문제</small>
 
 ***
 

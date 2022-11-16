@@ -3,9 +3,7 @@ title:  "[프로그래머스 SQL] Lv 2. 재구매가 일어난 상품과 회원 
 layout: single
 
 categories: "Algorithm_SQL"
-tags: 
-    - Algorithm
-    - SQL
+tags: ["SELECT", "FROM", "GROUP BY", "HAVING", "ORDER BY", "COUNT"]
 
 toc: true
 toc_sticky: true
@@ -13,7 +11,7 @@ toc_label : "목차"
 toc_icon: "bars"
 ---
 
-👩🏻‍💻 SQL 고득점 Kit - SELECT 문제
+<small>SQL 고득점 Kit - SELECT 문제</small>
 
 ***
 

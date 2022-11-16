@@ -3,9 +3,7 @@ title:  "[프로그래머스 SQL] Lv 2. 진료과별 총 예약 횟수 출력하
 layout: single
 
 categories: "Algorithm_SQL"
-tags: 
-    - Algorithm
-    - SQL
+tags: ["SELECT", "FROM", "WHERE", "GROUP BY", "ORDER BY", "COUNT", "BETWEEN"]
 
 toc: true
 toc_sticky: true
@@ -13,7 +11,7 @@ toc_label : "목차"
 toc_icon: "bars"
 ---
 
-👩🏻‍💻 SQL 고득점 Kit - GROUP BY 문제
+<small>SQL 고득점 Kit - GROUP BY 문제</small>
 
 ***
 
