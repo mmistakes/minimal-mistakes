@@ -9,8 +9,6 @@ toc: true
 toc_sticky: true
 toc_label : "목차"
 toc_icon: "bars"
-
-published: false
 ---
 
 <small>SQL 고득점 Kit - GROUP BY 문제</small>
