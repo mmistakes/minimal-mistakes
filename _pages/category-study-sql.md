@@ -4,6 +4,8 @@ layout: archive
 permalink: categories/SQL
 author_profile: true
 sidebar_main: true
+
+classes: wide
 ---
 
 

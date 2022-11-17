@@ -4,6 +4,8 @@ layout: archive
 permalink: categories/Special_lecture_ais7
 author_profile: true
 sidebar_main: true
+
+classes: wide
 ---
 
 

@@ -4,6 +4,8 @@ layout: archive
 permalink: categories/STUDY_ais7
 author_profile: true
 sidebar_main: true
+
+classes: wide
 ---
 
 
