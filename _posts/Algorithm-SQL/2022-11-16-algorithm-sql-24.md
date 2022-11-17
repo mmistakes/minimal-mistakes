@@ -124,6 +124,22 @@ GROUP BY FOOD_CATEGORY
 
 이러한 이유로 위 실패 코드를 사용하여 문제를 풀면 <u>1950원짜리 과자 이름이 맛있는허니버터칩인데 맛있는포카칩</u>으로 불러와진다. <u>8950원짜리 맛있는마조유가 맛있는콩기름</u>으로 조회되어 **실패 sign**이 뜬 것이다.
 
+**👀 문제 해결 : 음식 카테고리, 최고금액, 결제여부 가져오기**
+```sql
+SELECT T2.CATEGORY, T2.TOTAL_COSTS, PAY
+FROM (
+      SELECT FOOD_CATEGORY, MAX(TOTAL_COSTS) AS MAX_COSTS 
+      FROM DELIVERY_SERVICE 
+      GROUP BY FOOD_CATEGORY
+) AS T1 JOIN FOOD_CATEGORY AS T2 ON T1.FOOD_CATEGORY = T2.FOOD_CATEGORY AND T1.MAX_COSTS = T2.TOTAL_COSTS
+```
+
+|FOOD_CATEGORY|TOTAL_COSTS|PAY|
+|:------------:|:----------:|:--:|
+|한식|18500|Y|
+|양식|135000|Y|
+|일식|26000|Y|
+
 ## 2. 실패 회고
 - 이번 문제를 통해 ```GROUP BY```를 이해할 수 있었다.
 - GROUP BY로 특정 변수로 그룹화 후, 연산(```COUNT```, ```SUM```, ```MAX``` 등)을 사용하지 않으면 그룹별 첫 번째 데이터(행)이 불러와진다.
