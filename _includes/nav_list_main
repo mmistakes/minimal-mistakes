@@ -78,15 +78,15 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Special_lecture_ais7" %}
-                        <li><a href="/categories/Special_lecture_ais7" class="">ㄴ Special Lecture ({{category[1].size}})</a></li>
+                    {% if category[0] == "Team_Project" %}
+                        <li><a href="/categories/Team_Project" class="">ㄴ 팀 프로젝트 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Mini_Project" %}
-                        <li><a href="/categories/Mini_Project" class="">ㄴ Mini Project ({{category[1].size}})</a></li>
+                    {% if category[0] == "Special_lecture_ais7" %}
+                        <li><a href="/categories/Special_lecture_ais7" class="">ㄴ Special Lecture ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
