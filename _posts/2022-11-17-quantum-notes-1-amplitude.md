@@ -102,7 +102,7 @@ $$
 
 ### Notes on amplitude as a vector
 
-As amplitudes are complex numbers we can represent them using [polar coordinates](https://en.wikipedia.org/wiki/Polar_coordinate_system#Complex_numbers), with modulus becoming the length of vector formed between the origin point and any particular complex number. For me (on my current level of knowledge) thinking about amplitudes as vectors make things more "complete". Then, for $\lvert \1 \rangle$ H-gate performs rotation of the amplitude vector (for the $\lvert \1 \rangle$ output).
+As amplitudes are complex numbers we can represent them using [polar coordinates](https://en.wikipedia.org/wiki/Polar_coordinate_system#Complex_numbers), with modulus becoming the length of vector formed between the origin point and any particular complex number. For me (on my current level of knowledge) thinking about amplitudes as vectors make things more "complete". Then, for $\lvert 1 \rangle$ H-gate performs rotation of the amplitude vector (for the $\lvert 1 \rangle$ output).
 
 ## Summary
 
