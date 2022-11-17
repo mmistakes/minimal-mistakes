@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 2. 성분으로 구분한 아이스크림 �
 layout: single
 
 categories: "Algorithm_SQL"
-tags: []
+tags: ["JOIN", "GROUP BY", "ORDER BY", "SUM"]
 
 toc: true
 toc_sticky: true

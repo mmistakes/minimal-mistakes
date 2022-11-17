@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 3. 즐겨찾기가 가장 많은 식당 정
 layout: single
 
 categories: "Algorithm_SQL"
-tags: []
+tags: ["JOIN", "GROUP BY", "ORDER BY", "MAX"]
 
 toc: true
 toc_sticky: true
