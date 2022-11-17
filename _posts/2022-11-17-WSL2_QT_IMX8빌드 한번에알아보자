@@ -1,0 +1,199 @@
+---
+title: "WSL2_QT_IMX8_OpenCV빌드 한번에알아보자"
+categories:
+  - 개발 환경 설정
+
+tags: [WSL, QT,OpenCV, IMX8mq EVK]
+toc : true
+comments: true
+---
+
+## WSL2 설치
+
+1. cmd창에 설치 관련 패키지 찾기
+```cmd
+wsl --list --online
+```
+
+결과
+다음은 설치할 수 있는 유효한 배포 목록입니다.
+'wsl --install -d <배포>'를 사용하여 설치하세요.
+
+NAME            FRIENDLY NAME
+Ubuntu          Ubuntu
+Debian          Debian GNU/Linux
+kali-linux      Kali Linux Rolling
+openSUSE-42     openSUSE Leap 42
+SLES-12         SUSE Linux Enterprise Server v12
+Ubuntu-16.04    Ubuntu 16.04 LTS
+Ubuntu-18.04    Ubuntu 18.04 LTS
+Ubuntu-20.04    Ubuntu 20.04 LTS
+
+
+2. WSL 설치
+```cmd
+
+wsl --install -d Ubuntu-20.04
+```
+
+* 추천
+물론 여기서 하면 되지만 C드라이브에 용량문제로인해 D드리아브로 옮기고 진핸한다
+
+```
+:: wsl --export <리눅스 이름> <파일 경로> 파일 추출
+wsl --export Ubuntu-20.04 D:\ubuntu-20-04.tar
+
+:: wsl --unregister <리눅스 이름> 기존 삭제
+wsl --unregister Ubuntu-20.04
+
+:: wsl --import <설정해 줄 리눅스 이름> <설치경로> <추출한 파일 경로> D드라이브로 이동\
+wsl --import Ubuntu-20.04 D:\WSL\ubuntu-20-04\ D:\ubuntu-20-04.tar
+
+그후 WSL 로그인 후 
+sudo nano /etc/wsl.cof 생성 후
+
+아이디 입력 
+[user]
+default=<user>
+- 현재 유저 바뀌지 않는 문제 확인 
+
+```
+
+결과로 
+
+"D:\WSL\ubuntu-20-04\ext4.vhdx" 파일이 생성됨을 확인되었다
+
+3. QT설치
+
+-------------------
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install qtcreator
+
+qtcreator 실행
+
+### G++ 컴파일러 추가 설치
+sudo apt-get install build-essential make
+### 기본 설정 추가 설치
+sudo apt-get install qt5-default
+
+--------------
+
+*만약 qtcreator가 화면이 나오지 않는가면
+
+wsl --update 로 최신화로 만들면됩니다.
+
+![Qt버젼](/assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/WSL/qt%20%EC%84%A4%EC%B9%98%20%ED%99%94%EB%A9%B4.png)
+
+== cmake및 키트 설정 방법 확인 필요
+
+4. OpenCV 설치
+
+패키지 설치
+``` 
+sudo apt-get install build-essential cmake
+
+sudo apt-get install pkg-config
+
+sudo apt-get install libjpeg-dev libtiff5-dev libpng-dev
+
+sudo apt-get install ffmpeg libavcodec-dev libavformat-dev libswscale-dev libxvidcore-dev libx264-dev libxine2-dev
+
+sudo apt-get install libv4l-dev v4l-utils
+
+ sudo apt-get install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev 
+
+sudo apt-get install libgtk-3-dev
+
+sudo apt-get install mesa-utils libgl1-mesa-dri libgtkgl2.0-dev libgtkglext1-dev  
+
+sudo apt-get install libatlas-base-dev gfortran libeigen3-dev
+
+sudo apt-get install python3-dev python3-numpy
+
+```
+
+OpenCV 다운로드
+원하는 위치 에서
+mkdir opencv
+cd opencv
+
+wget -O opencv.zip https://github.com/opencv/opencv/archive/4.6.0.zip
+unzip opencv.zip
+
+
+wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.6.0.zip
+unzip opencv_contrib.zip
+
+cd opencv-4.6.0/
+mkdir build
+cd build 
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=OFF -D WITH_IPP=OFF -D WITH_1394=OFF -D BUILD_WITH_DEBUG_INFO=OFF -D BUILD_DOCS=OFF -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=OFF -D BUILD_PACKAGE=OFF -D BUILD_TESTS=OFF -D BUILD_PERF_TESTS=OFF -D WITH_QT=OFF -D WITH_GTK=ON -D WITH_OPENGL=ON -D BUILD_opencv_python3=ON -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-4.6.0/modules -D WITH_V4L=ON  -D WITH_FFMPEG=ON -D WITH_XINE=ON -D OPENCV_ENABLE_NONFREE=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D OPENCV_SKIP_PYTHON_LOADER=ON -D OPENCV_GENERATE_PKGCONFIG=ON ../
+
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=OFF -D WITH_IPP=OFF -D WITH_1394=OFF -D BUILD_WITH_DEBUG_INFO=OFF -D BUILD_DOCS=OFF -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=OFF -D BUILD_PACKAGE=OFF -D BUILD_TESTS=OFF -D BUILD_PERF_TESTS=OFF -D WITH_QT=OFF -D WITH_GTK=ON -D WITH_OPENGL=ON -D BUILD_opencv_python3=ON -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-4.6.0/modules -D WITH_V4L=ON  -D WITH_FFMPEG=ON -D WITH_XINE=ON -D OPENCV_ENABLE_NONFREE=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D OPENCV_SKIP_PYTHON_LOADER=ON -D OPENCV_GENERATE_PKGCONFIG=ON ../
+
+-DBUILD_LIBPROTOBUF_FROM_SOURCES=ON 추가 혹은
+-DBUILD_opencv_dnn=OFF
+
+time make -j$(nproc)
+
+```
+![openCV 에러](/assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/WSL//openv%20%EC%97%90%EB%9F%AC.png)
+현재 build 에러 발생
+해당 에러 발생시 
+time make -j$(nproc) 계속 반복 수행
+정 안되면
+time make clean 이후 반복
+
+
+5. Yocto 설치 imx8mqevk imx-5.15.32-2.0.0.xml
+설치 패키지 추가
+```
+$ sudo apt install gawk wget git-core diffstat unzip texinfo gcc-multilib 
+$ sudo apt install build-essential chrpath socat cpio python python3 python3-pip python3-pexpect 
+$ sudo apt install xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev 
+$ sudo apt install pylint3 xterm 
+$ sudo apt install curl
+
+$ sudo apt install  zstd liblz4-tool
+```
+
+
+```
+mkdir ~/bin
+cat >> ~/.bashrc
+export PATH="${HOME}/bin:${PATH}" 입력 후 CTRL +D
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+```
+
+git config --global user.name "Firstname Lastname"
+git config --global user.email "EmailAddress@Domain.com"
+
+
+```
+
+repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-kirkstone -m imx-5.15.32-2.0.0.xml
+
+repo sync
+
+MACHINE=imx8mqevk DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
+
+bitbake meta-toolchain-qt6
+```
+
+### 자료 관련 링크
+
+1. WSL 관련 
+https://dongle94.github.io/windows/windows-wsl-path-change/
+
+2. Qt 설치 관련
+https://webnautes.tistory.com/1509
+
+3. openCV 설치
+
+4. Yocto 설치 관련 참고
+https://www.hackster.io/flint-weller/a-first-yocto-build-for-the-nxp-i-mx-8m-quad-evk-02b6a9
+
+https://github.com/opencv/opencv/issues/7652
