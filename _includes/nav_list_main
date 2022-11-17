@@ -43,6 +43,30 @@
                 {% endfor %}
             </ul>
         
+        <!-- 시각화 라이브러리 -->
+        <span class="nav__sub-title">시각화 라이브러리</span>
+             <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Matplotlib" %}
+                        <li><a href="/categories/Matplotlib" class="">ㄴ Matplotlib ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Seaborn" %}
+                        <li><a href="/categories/Seaborn" class="">ㄴ Seaborn ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Plotly" %}
+                        <li><a href="/categories/Plotly" class="">ㄴ Plotly ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        
         <!-- 멋사 ais7 -->
         <span class="nav__sub-title">멋쟁이사자처럼 ais7</span>
             <ul>
