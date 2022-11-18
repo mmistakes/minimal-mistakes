@@ -65,6 +65,8 @@ GROUP BY HOUR
 ORDER BY HOUR
 ```
 
+<span style="color:#FF8787">>>> SQL 실행 중 오류가 발생하였습니다. Unknown column 'ID' in 'where clause'</span>
+
 ## 1. 실패 분석
 ### (1) 코드 실행 순서에 대한 이해도
 위 코드로 실행했을 때, 컬럼에 ```HOUR```이라는 컬럼이 없다라는 오류 메시지가 출력되었다. ```SELECT``` 문에 ```DATE_FORMAT(DATETIME, "%H") AS HOUR``` 로 별칭을 지정해주었는데 컬럼이 발견되지 않는다는 메시지를 보고 코드가 실행되는 순서를 생각해보았다.
