@@ -125,6 +125,9 @@ author:
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jayjungnote/"
+    - label: "Kaggle"
+      icon: "fab fa-fw fa-link"
+      url: "https://www.kaggle.com/jaehoonjung98/"    
 
 # Site Footer
 footer:
