@@ -65,7 +65,7 @@ GROUP BY HOUR
 ORDER BY HOUR
 ```
 
-<span style="color:#FF8787">>>> SQL 실행 중 오류가 발생하였습니다. Unknown column 'ID' in 'where clause'</span>
+<span style="color:#FF8787">>>> SQL 실행 중 오류가 발생하였습니다. Unknown column 'HOUR' in 'where clause'</span>
 
 ## 1. 실패 분석
 ### (1) 코드 실행 순서에 대한 이해도
@@ -89,7 +89,7 @@ FROM ANIMAL_OUTS
 WHERE N LIKE '%a%'
 ```
 
-🚨 오류 메시지 출력 : <u>SQL 실행 중 오류가 발생하였습니다. Unknown column 'ID' in 'where clause'</u>
+🚨 오류 메시지 출력 : <u>SQL 실행 중 오류가 발생하였습니다. Unknown column 'N' in 'where clause'</u>
 
 **🔍 SELECT, GROUP BY 실행순서**
 ```sql
