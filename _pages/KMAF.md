@@ -48,11 +48,11 @@ gallery1:
     image_path: /assets/images/KMAF/Block_11.jpg
     alt: "placeholder image 7"
     title: "Midland International Air and Space Port, Midland, Texas"
-  - url: /assets/images/KMAF/Block_11.jpg
+  - url: /assets/images/KMAF/Block_12.jpg
     image_path: /assets/images/KMAF/Block_12.jpg
     alt: "placeholder image 7"
     title: "Midland International Air and Space Port, Midland, Texas"
-  - url: /assets/images/KMAF/Block_11.jpg
+  - url: /assets/images/KMAF/Block_13.jpg
     image_path: /assets/images/KMAF/Block_13.jpg
     alt: "placeholder image 7"
     title: "Midland International Air and Space Port, Midland, Texas"
@@ -86,10 +86,9 @@ High Detail 3D Models
 	- Hangars  
 	- FBO  
 	- Custom Jetways  
-	
-PBR Textures
-Ground Markings
-Frame Rate Friendly
+	- PBR Textures  
+	- Ground Markings  
+	- Frame Rate Friendly  
 
 {% include gallery id="gallery1" caption="Midland International Air and Space Port, Midland, Texas" %}
 
