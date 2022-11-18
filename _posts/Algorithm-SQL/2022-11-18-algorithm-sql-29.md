@@ -17,16 +17,15 @@ toc_icon: "bars"
 
 # <span class="half_HL">✔️ 문제 설명</span>
 
-```ANIMAL_INS``` 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. ```ANIMAL_INS``` 테이블 구조는 다음과 같으며, ```ANIMAL_ID```, ```ANIMAL_TYPE```, ```DATETIME```, ```INTAKE_CONDITION```, ```NAME```, ```SEX_UPON_INTAKE```는 각각 동물의 아이디, 생물 종, 보호 시작일, 보호 시작 시 상태, 이름, 성별 및 중성화 여부를 나타냅니다.
+ANIMAL_OUTS 테이블은 동물 보호소에서 입양 보낸 동물의 정보를 담은 테이블입니다. ANIMAL_OUTS 테이블 구조는 다음과 같으며, ANIMAL_ID, ANIMAL_TYPE, DATETIME, NAME, SEX_UPON_OUTCOME는 각각 동물의 아이디, 생물 종, 입양일, 이름, 성별 및 중성화 여부를 나타냅니다.
 
-|NAME|	TYPE	|NULLABLE|
-|:---|:---------|:-------|
+|NAME|	TYPE|	NULLABLE|
+|:----|:---|:------------|
 |ANIMAL_ID|	VARCHAR(N)|	FALSE|
-|ANIMAL_TYPE|	VARCHAR(N)|	FALSE|
+|ANIMAL_TYPE	|VARCHAR(N)|	FALSE|
 |DATETIME|	DATETIME|	FALSE|
-|INTAKE_CONDITION|	VARCHAR(N)|	FALSE|
 |NAME|	VARCHAR(N)|	TRUE|
-|SEX_UPON_INTAKE|	VARCHAR(N)|	FALSE|
+|SEX_UPON_OUTCOME|	VARCHAR(N)|	FALSE|
 
 ## 문제
 보호소에서는 몇 시에 입양이 가장 활발하게 일어나는지 알아보려 합니다. 09:00부터 19:59까지, 각 시간대별로 입양이 몇 건이나 발생했는지 조회하는 SQL문을 작성해주세요. 이때 결과는 시간대 순으로 정렬해야 합니다. [👉 문제 보러가기](https://school.programmers.co.kr/learn/courses/30/lessons/59412)
@@ -75,7 +74,7 @@ ORDER BY HOUR
 (2) ```GROUP BY``` 등 여러 조건을 적용한 결과에 대해 출력될 컬럼을 지정(SELECT)하는 것이기 때문에 SELECT 문이 마지막에 실행될 것이라고 생각함<br>
 (3) 하지만, ```SELECT``` 문에 부여한 별칭이 ```WHERE``` 문에선 사용되지 않았고, ```GROUP BY```, ```ORDER BY``` 에서는 사용이 된다는 점을 발견함<br>
 
-<u>🚨 확실하다고 생각되는 점은 ```FROM```으로 테이블을 불러오는 것이 가장 먼저 실행된다는 것이다.</u>
+<u>🚨 확실하다고 생각되는 점은 FROM으로 테이블을 불러오는 것이 가장 먼저 실행된다는 것이다.</u>
 
 ### (2) 예시로 실패 분석하기
 - 사용한 데이터는 해당 코딩테스트 문제의 ```ANIMAL_OUTS``` 테이블을 사용했다.
@@ -83,9 +82,9 @@ ORDER BY HOUR
 
 **🔍 SELECT, WHERE 실행순서**
 ```sql
-SELECT ANIMAL_ID AS ID
+SELECT NAME AS N
 FROM ANIMAL_OUTS
-WHERE ID LIKE 'A349%'
+WHERE N LIKE '%a%'
 ```
 
 🚨 오류 메시지 출력 : <u>SQL 실행 중 오류가 발생하였습니다. Unknown column 'ID' in 'where clause'</u>
