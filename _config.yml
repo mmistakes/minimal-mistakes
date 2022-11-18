@@ -32,7 +32,6 @@ full_url: "https://www.abdulrabbani.com"
 repository: "abdulrabbani00/minimal-mistakes"
 #teaser                   : "/assets/images/initials-3.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: "/assets/images/ar-logo-1.png"
-logo_dark: "/assets/images/ar-logo-1.png"
 masthead_title: "Abdul Rabbani"
 breadcrumbs: true # true, false (default)
 words_per_minute: 250
