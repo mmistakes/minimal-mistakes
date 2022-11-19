@@ -1,0 +1,42 @@
+---
+title:  "css-14: 노마드코더-transformation"
+layout: single
+categories : css
+tag: [coding, javascript, github, jekyll, blog, html]
+toc: true
+toc_sticky: true
+author_profile: false
+---
+
+# transformation
+
+- transformation은 한 요소를 transform(변형)시킬 수 있다.
+- border-radius에 50%를 준다면 원이 된다.
+- translate은 transformation을 적용 시키긴 하지만, 다른 형제(sibling)을 변화시키진 않는다.
+- transformation은 box element를 변형시키지 않는다.
+- margin, padding이 적용되지 않는다. 일종의 3D transformation이기 때문이다.
+- margin, padding을 위해서 translateX, translateY를 사용하지 않는다.
+- transform과 transition을 조합하면 더 역동적인 애니메이션을 만들 수 있다.
+- CSS 3D는 GPU로 돌아가므로, 3D 작업을 할 수 있다.
+
+```html
+    <img src="https://prayer0420.github.io/assets/images/CA111.JPG" alt="" />
+```
+
+```css
+img {
+  width: 500px;
+  height: 500px;
+  border: 5px solid black;
+  border-radius: 50%;
+  transition: transform 2s ease-in-out;
+}
+
+img:hover {
+  transform: matrix(1, 2, 3, 4, 5, 6);
+}
+
+```
+
+
+
