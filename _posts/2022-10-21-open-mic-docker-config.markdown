@@ -1,5 +1,5 @@
 ---
-title: "Open Mic - Variables and Environment in Docker"
+title: "Variables and Environment in Docker"
 categories: [Open Mic Session, Open Mic]
 excerpt: Docker has changed the way applications are built and run. However, one of the frequent pain points for newcomers is configuration of the containers - what are `ENV`, `ARG`, environment, `.env` file etc.
 ---
