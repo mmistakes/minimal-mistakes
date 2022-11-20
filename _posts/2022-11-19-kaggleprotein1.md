@@ -1,3 +1,10 @@
+---
+title: '[Kaggle/CV] Protein Atlas - 데이터 살펴보기, baseline model 🧬'
+toc: true
+toc_sticky: true
+categories:
+  - kaggle
+---
 ## 1. Protein Atlas
 
 ### 1.0 들어가며
@@ -567,7 +574,7 @@ sns.barplot(y=target_counts.index.values, x=target_counts.values, order=target_c
 
 
     
-![png](20221119_files/20221119_13_1.png)
+![kaggle_pro1](https://user-images.githubusercontent.com/77332628/202901044-c2241c92-4dfc-4271-b1f2-ab7d942bb618.png)
     
 
 
@@ -594,7 +601,7 @@ plt.ylabel('percentage of train data')
 
 
     
-![png](20221119_files/20221119_15_1.png)
+![kaggle_pro2](https://user-images.githubusercontent.com/77332628/202901045-9c72a405-de96-41f2-84ab-aefdd567658b.png)
     
 
 
@@ -618,7 +625,7 @@ sns.heatmap(train_labels[train_labels.number_of_targets>1].drop(['Id','Target','
 
 
     
-![png](20221119_files/20221119_17_1.png)
+![kaggle_pro3](https://user-images.githubusercontent.com/77332628/202901046-34f0105b-623d-4fff-8953-512a4c84c858.png)
     
 
 
@@ -653,7 +660,7 @@ plt.title('Lysosomes and Endosomes')
 
 
     
-![png](20221119_files/20221119_20_1.png)
+![kaggle_pro4](https://user-images.githubusercontent.com/77332628/202901048-7978d994-f61a-4bdc-a3a7-844319d259aa.png)
     
 
 
@@ -677,7 +684,7 @@ plt.title('Rod & rings')
 
 
     
-![png](20221119_files/20221119_22_1.png)
+![kaggle_pro5](https://user-images.githubusercontent.com/77332628/202901049-1265b39c-803b-4185-b3f3-db881d23d595.png)
     
 
 
@@ -700,7 +707,7 @@ plt.title('Peroxisomes')
 
 
     
-![png](20221119_files/20221119_23_1.png)
+![kaggle_pro6](https://user-images.githubusercontent.com/77332628/202901050-56f8252c-7e7a-456a-9c1d-128c2f51d4c8.png)
     
 
 
@@ -722,8 +729,7 @@ plt.title('Microtubule ends')
 
 
     
-![png](20221119_files/20221119_24_1.png)
-    
+![kaggle_pro7](https://user-images.githubusercontent.com/77332628/202901053-eda5e4b6-f776-4177-9f88-d74ec23a7f90.png)
 
 
 
@@ -745,7 +751,7 @@ plt.title('Nuclear speckles')
 
 
     
-![png](20221119_files/20221119_25_1.png)
+![kaggle_pro8](https://user-images.githubusercontent.com/77332628/202901054-900013f6-f898-442e-9445-9863cb4c1073.png)
     
 
 
@@ -887,7 +893,7 @@ for n in range(len(file_ids)):
 
 
     
-![png](20221119_files/20221119_36_0.png)
+![kaggle_pro9](https://user-images.githubusercontent.com/77332628/202901056-77a15b1a-3825-4ef1-90a2-19a3eaaf1ab6.png)
     
 
 
@@ -1100,7 +1106,7 @@ ax[1].set_title('after preprocess')
 
 
     
-![png](20221119_files/20221119_55_2.png)
+![kaggle_pro10](https://user-images.githubusercontent.com/77332628/202901058-8bd32df8-f5a5-42aa-9b22-4d7f11f58be0.png)
     
 
 
@@ -1395,8 +1401,7 @@ ax[1].set_ylabel("Percentage");
 
 
     
-![png](20221119_files/20221119_74_0.png)
-    
+![kaggle_pro11](https://user-images.githubusercontent.com/77332628/202901059-85f35fa5-b552-4ed6-987f-e34077b6e806.png)
 
 
 위의 왼쪽 그래프를 보면 모델이 단백질 구조를 10% 이상 맞힌 데이터는 굉장히 적은 것을 볼 수 있다. 그리고 오른쪽 그래프를 보면 label이 0인 클래스가 1인 클래스보다 월등히 많은 것을 알 수 있다. 이는 당연한것이, 대부분의 데이터는 1개 또는 2개의 타깃만 포함하고 나머지는 모두 0으로 label 되었기 때문이다. 따라서 위의 94.3%의 정확도는 모델이 label이 0인, 즉 데이터에 '존재하지 않는' 타깃값을 예측한 정확도를 포함한 것이다.
@@ -1431,8 +1436,7 @@ ax[1].set_title('Standard deviation of predicted probabilty per class over all d
 
 
     
-![png](20221119_files/20221119_76_1.png)
-    
+![kaggle_pro12](https://user-images.githubusercontent.com/77332628/202901060-41c8ba24-8d81-436f-978b-18c99ddb9829.png)
 
 
 
@@ -1453,7 +1457,8 @@ ax.set_title('Percentage of hot counts (ones) per target class')
 
 
     
-![png](20221119_files/20221119_77_1.png)
+![kaggle_pro13](https://user-images.githubusercontent.com/77332628/202901061-f9a4d0af-9280-46a5-ae90-0a6b0dcc5e3e.png)
+
     
 
 
