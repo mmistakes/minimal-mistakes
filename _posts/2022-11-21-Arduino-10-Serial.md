@@ -1,6 +1,6 @@
 
 
-# :pencil2:UART
+# UART
 
 ---
 
@@ -8,7 +8,7 @@
 
 
 
-### Universal Asynchronou Receiver/Transmitter
+### :pencil2:Universal Asynchronou Receiver/Transmitter
 
 - Universal 여러 통신 규약과 함께 사용됨 (RS-232C, RS-422, RS-485 등)
 
@@ -18,7 +18,7 @@
 
 - 저수준의 통신 방법,**하드웨어 수준에서 지원**,마이크로컨트롤러의 동작 전압을 기준으로 하는 TTL레벨 사용 (아두이노 메가 기준 5V)
 
-### 아두이노 메가2560의 UART 통신
+### :pencil2:아두이노 메가2560의 UART 통신
 
 - 4개의 통신 채널 제공 ( 하나의 채널에는 하나의 장치만 연결 가능 **1:1 통신만 지원** )
   
@@ -29,7 +29,7 @@
   | 2   | 17(RX), 16(TX) | Serial2 |        |
   | 3   | 15(RX), 14(TX) | Serial3 |        |
 
-### SoftwareSerial 클래스
+### :pencil2:SoftwareSerial 클래스
 
 - 하드웨어로 지원되는 UART 통신을 소프트웨어로 에뮬레이션
 
@@ -43,13 +43,13 @@
 
 
 
-# :pencil2:SPI통신
+# SPI통신
 
 ---
 
 
 
-### Serial Peripheral Interface
+### :pencil2:Serial Peripheral Interface
 
 - 고속 직렬 통신 방식
 
@@ -75,13 +75,13 @@
 
 
 
-# :pencil2:I2C 통신
+# I2C 통신
 
 ---
 
 
 
-### Inter-Intergrated Circuit
+### :pencil2:Inter-Intergrated Circuit
 
 - 저속 직렬 통신 방식 중 하나
 
@@ -105,7 +105,7 @@
 
 
 
-# :pencil:직렬 통신 방식 비교
+# 직렬 통신 방식 비교
 
 ---
 
