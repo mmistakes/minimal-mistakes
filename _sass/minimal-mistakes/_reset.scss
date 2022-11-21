@@ -2,24 +2,26 @@
    STYLE RESETS
    ========================================================================== */
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
   background-color: $background-color;
-  font-size: 16px;
+  font-size: 14px;
 
   @include breakpoint($medium) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   @include breakpoint($large) {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   @include breakpoint($x-large) {
-    font-size: 22px;
+    font-size: 16px;
   }
 
   -webkit-text-size-adjust: 100%;
@@ -28,7 +30,9 @@ html {
 
 /* Remove margin */
 
-body { margin: 0; }
+body {
+  margin: 0;
+}
 
 /* Selected elements */
 
@@ -113,9 +117,12 @@ sub {
 
 img {
   /* Responsive images (ensure images don't scale beyond their parents) */
-  max-width: 100%; /* part 1: Set a maximum relative to the parent*/
-  width: auto\9; /* IE7-8 need help adjusting responsive images*/
-  height: auto; /* part 2: Scale the height according to the width, otherwise you get stretching*/
+  max-width: 100%;
+  /* part 1: Set a maximum relative to the parent*/
+  width: auto\9;
+  /* IE7-8 need help adjusting responsive images*/
+  height: auto;
+  /* part 2: Scale the height according to the width, otherwise you get stretching*/
 
   vertical-align: middle;
   border: 0;
@@ -142,22 +149,28 @@ textarea {
 
 button,
 input {
-  *overflow: visible; /* inner spacing ie IE6/7*/
-  line-height: normal; /* FF3/4 have !important on line-height in UA stylesheet*/
+  *overflow: visible;
+  /* inner spacing ie IE6/7*/
+  line-height: normal;
+  /* FF3/4 have !important on line-height in UA stylesheet*/
 }
 
 button::-moz-focus-inner,
-input::-moz-focus-inner { /* inner padding and border oddities in FF3/4*/
+input::-moz-focus-inner {
+  /* inner padding and border oddities in FF3/4*/
   padding: 0;
   border: 0;
 }
 
 button,
-html input[type="button"], // avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls
+html input[type="button"],
+// avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls
 input[type="reset"],
 input[type="submit"] {
-    -webkit-appearance: button; /* corrects inability to style clickable `input` types in iOS*/
-    cursor: pointer; /* improves usability and consistency of cursor style between image-type `input` and others*/
+  -webkit-appearance: button;
+  /* corrects inability to style clickable `input` types in iOS*/
+  cursor: pointer;
+  /* improves usability and consistency of cursor style between image-type `input` and others*/
 }
 
 label,
@@ -168,20 +181,25 @@ input[type="reset"],
 input[type="submit"],
 input[type="radio"],
 input[type="checkbox"] {
-    cursor: pointer; /* improves usability and consistency of cursor style between image-type `input` and others*/
+  cursor: pointer;
+  /* improves usability and consistency of cursor style between image-type `input` and others*/
 }
 
-input[type="search"] { /* Appearance in Safari/Chrome*/
+input[type="search"] {
+  /* Appearance in Safari/Chrome*/
   box-sizing: border-box;
   -webkit-appearance: textfield;
 }
 
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none; /* inner-padding issues in Chrome OSX, Safari 5*/
+  -webkit-appearance: none;
+  /* inner-padding issues in Chrome OSX, Safari 5*/
 }
 
 textarea {
-  overflow: auto; /* remove vertical scrollbar in IE6-9*/
-  vertical-align: top; /* readability and alignment cross-browser*/
+  overflow: auto;
+  /* remove vertical scrollbar in IE6-9*/
+  vertical-align: top;
+  /* readability and alignment cross-browser*/
 }
