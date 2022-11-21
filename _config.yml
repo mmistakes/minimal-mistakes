@@ -19,8 +19,8 @@ locale                   : "ko-KR"
 title                    : "몬조쓰 블로그"
 title_separator          : "|"
 subtitle                 : "만들어지는 과정"
-name                     : "몬조"
-description              : "몬스타조"
+name                     : "몬스타조"
+description              : "18 PNU-CSE 조준서 입니다."
 url                      : "https://monsta-zo.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "몬조"
+  name             : "몬스타조"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "모듬 회전 초밥"
+  bio              : "18 PNU-CSE 조준서 입니다."
   location         : "South Korea"
   email            :
   links:
