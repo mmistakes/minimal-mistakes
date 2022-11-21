@@ -1,5 +1,9 @@
 # :pencil2:UART
 
+---
+
+
+
 ### Universal Asynchronou Receiver/Transmitter
 
 - Universal : 여러 통신 규약과 함께 사용됨
@@ -35,7 +39,17 @@
 
 
 
+
+
+
+
+
+
 # :pencil2:SPI통신
+
+---
+
+
 
 ### Serial Peripheral Interface
 
@@ -57,6 +71,28 @@
 
 ![](../images/2022-11-21-Arduino-10-Serial/2022-11-21-15-50-50-image.png)
 
+
+
+
+
+
+
 # :pencil2:I2C 통신
+
+---
+
+
+
+### Inter-Intergrated Circuit
+
+- 저속 직렬 통신 방식 중 하나
+
+- 1:n 통신
+
+- 2개의 연결선 필요
+  
+  SDA : 데이터 송수신 ( 반이중 방식으로 하나의 데이터 선만 사용 )
+
+
 
 
