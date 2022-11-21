@@ -1,6 +1,6 @@
-## :pushpin:UART
+# :pencil2:UART
 
-#### Universal Asynchronou Receiver/Transmitter
+### Universal Asynchronou Receiver/Transmitter
 
 - Universal : 여러 통신 규약과 함께 사용됨
   
@@ -18,7 +18,7 @@
   
   - 마이크로컨트롤러의 동작 전압을 기준으로 하는 TTL레벨 사용 (아두이노 메가 기준 5V)
 
-#### 아두이노 메가2560의 UART 통신
+### 아두이노 메가2560의 UART 통신
 
 - 4개의 통신 채널 제공 ( 하나의 채널에는 하나의 장치만 연결 가능 **1:1 통신만 지원** )
   
@@ -29,15 +29,15 @@
   | 2   | 17(RX), 16(TX) | Serial2 |        |
   | 3   | 15(RX), 14(TX) | Serial3 |        |
 
-#### SoftwareSerial 클래스
+### SoftwareSerial 클래스
 
 - 하드웨어로 지원되는 UART 통신을 소프트웨어로 에뮬레이션
 
 
 
-## :pushpin:SPI통신
+# :pencil2:SPI통신
 
-#### Serial Peripheral Interface
+### Serial Peripheral Interface
 
 - 고속 직렬 통신 방식
 
@@ -56,3 +56,7 @@
 - 기본 SPI 라이브러리 포함 
 
 ![](../images/2022-11-21-Arduino-10-Serial/2022-11-21-15-50-50-image.png)
+
+# :pencil2:I2C 통신
+
+
