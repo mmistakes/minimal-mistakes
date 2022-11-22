@@ -264,7 +264,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false # true
       # read_time: flase
       comments: true
       # share: true
