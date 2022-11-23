@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "default" # "air", "aqua", "contrast", "d
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Today, I Learned"
+title                    : "사부작사부작 기록하는 블로그"
 title_separator          : # "-"
 subtitle                 : # "사부작사부작 기록하는 블로그"
 name                     : "Jaeyoung Jung"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Jaeyoung Jung"
   avatar           : "/assets/images/rp.png"
-  bio              : "집콕 중..🏠"
+  bio              : "이겨내자. 할 수 있다."
   location         : "South Korea"
   email            : #
   links:
