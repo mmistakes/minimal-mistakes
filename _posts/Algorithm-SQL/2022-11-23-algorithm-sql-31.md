@@ -11,6 +11,8 @@ toc_label : "목차"
 toc_icon: "bars"
 
 last_modified_at: 2022-11-24
+
+published: false
 ---
 
 <small>SQL 고득점 Kit - GROUP BY 문제</small>
