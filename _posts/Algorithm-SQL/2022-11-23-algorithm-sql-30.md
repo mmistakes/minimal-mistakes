@@ -9,9 +9,6 @@ toc: true
 toc_sticky: true
 toc_label : "목차"
 toc_icon: "bars"
-
-date: 2022-11-23
-last_modified_at: 2022-11-24
 ---
 
 <small>SQL 고득점 Kit - GROUP BY 문제</small>
