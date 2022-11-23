@@ -34,17 +34,43 @@ $$
 
 \lvert - 1 \rangle = 
 (\frac{1}{\sqrt{2}} \cdot 0) \lvert 00 \rangle + (\frac{1}{\sqrt{2}} \cdot 1) \lvert 01 \rangle - (\frac{1}{\sqrt{2}} \cdot 0) \lvert 10 \rangle - (\frac{1}{\sqrt{2}} \cdot 1) \lvert 11 \rangle 
-\\= \frac{1}{\sqrt{2}} \lvert 01 \rangle - \frac{1}{\sqrt{2}}\lvert 11 \rangle
+\\= \frac{1}{\sqrt{2}}(\lvert 01 \rangle - \lvert 11 \rangle)
 $$
 
 With amplitudes described above we have 0.5 probability of observing $\lvert 01 \rangle$ and 0.5 probability of observing $\lvert 11 \rangle$.
 
 ### Canceling out amplitudes
 
-As you might recall the amplitudes are complex numbers. That means that the $-\frac{1}{\sqrt{2}}\lvert 11 \rangle$ is completely valid as for example  $-\frac{i}{\sqrt{4}}\lvert 11 \rangle$ would be (although the rest of amplitudes would need to have different values). That means that with interesting enough quantum logic gates some of the amplitudes will cancel out! (For example by constructing following gate $i^2 + 1^2 = 0$).
+As you might recall the amplitudes are complex numbers. That means that the $-\frac{1}{\sqrt{2}}\lvert 11 \rangle$ is completely valid as for example  $-\frac{i}{\sqrt{4}}\lvert 11 \rangle$ would be (although the rest of amplitudes would have to be different). That means that with interesting enough quantum logic gates some of the amplitudes will cancel out! (Recall $i^2 + 1^2 = 0$).
 
 ## Entangled states
 
-## Why bother?
+![Single layer Feedforward Network](/assets/img/quantum_ent_worry_meme.png "worry_meme")
 
-## Do you need entaglement for the advantage?
+Okay, so for now we described multiple qubit states. You might scratch your head "Well, so what?".
+
+It turns out that we can have states that are not a product of a singular qubit states! Consider following state (read "ket phi minus")
+
+$$
+\lvert \Phi^- \rangle = \frac{1}{\sqrt{2}}(\lvert 00 \rangle - \lvert 11 \rangle)
+$$
+
+We can play a little with this state
+
+$$
+\lvert \Phi^- \rangle = \alpha_b \cdot \alpha_a \lvert 00 \rangle + \alpha_b \cdot \beta_a \lvert 01 \rangle + \beta_b \cdot \alpha_a \lvert 10 \rangle + \beta_b \cdot \beta_a \lvert 11 \rangle \\
+\frac{1}{\sqrt{2}}(\lvert 00 \rangle - \lvert 11 \rangle) = \alpha_b \cdot \alpha_a \lvert 00 \rangle + \alpha_b \cdot \beta_a \lvert 01 \rangle + \beta_b \cdot \alpha_a \lvert 10 \rangle + \beta_b \cdot \beta_a \lvert 11 \rangle \\
+\alpha_b \cdot \alpha_a = \frac{1}{\sqrt{2}} \\
+\alpha_b \cdot \alpha_a = \frac{1}{\sqrt{2}} \\
+\alpha_b \cdot \alpha_a = \frac{1}{\sqrt{2}} \\
+\alpha_b \cdot \alpha_a = \frac{1}{\sqrt{2}} \\
+
+
+
+$$
+
+
+## Why do we even need entagled states?
+
+Okay, so for now we described entagled qubit states. You might scratch your head "Well, so what?".
+
