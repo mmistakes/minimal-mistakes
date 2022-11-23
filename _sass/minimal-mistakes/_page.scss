@@ -71,7 +71,6 @@ body {
 .page__title {
   margin-top: 0;
   line-height: 1;
-  font-family: "GangwonEduAll"; // 내가 추가한 것
 
   a {
     color: $text-color;
@@ -92,11 +91,9 @@ body {
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
-    font-family: "GangwonEduAll"; // 내가 추가한 것
   }
 
 	h1, h2, h3, h4, h5, h6 {
-    font-family: "GangwonEduAll"; // 내가 추가한 것
 		.header-link {
 			position: relative;
 			left: 0.5em;
@@ -121,7 +118,6 @@ body {
 
   /* paragraph indents */
   p {
-    font-family: "GangwonEduAll"; // 내가 추가한 것
     margin: 0 0 $indent-var;
 
     /* sibling indentation*/
