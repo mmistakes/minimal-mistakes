@@ -46,7 +46,6 @@ last_modified_at: 2022-11-24
 
 <br>
 
-
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
