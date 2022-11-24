@@ -29,8 +29,8 @@ toc_icon: "bars"
 
 ```ONLINE_SALE``` 테이블은 아래와 같은 구조로 되어있으며, ```ONLINE_SALE_ID```, ```USER_ID```, ```PRODUCT_ID```, ```SALES_AMOUNT```, ```SALES_DATE```는 각각 온라인 상품 판매 ID, 회원 ID, 상품 ID, 판매량, 판매일을 나타냅니다.
 
-|Column| name|	Type|	Nullable|
-|:-----|:----|:-----|:----------|
+|Column name|	Type|	Nullable|
+|:---------|:-----|:----------|
 |ONLINE_SALE_ID|	INTEGER|	FALSE|
 |USER_ID|	INTEGER|	FALSE|
 |PRODUCT_ID|	INTEGER	|FALSE|
