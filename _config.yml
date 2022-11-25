@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "MK523-kr's Today I Learned"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Minkyu"
 description              : "An amazing website."
 url                      : "https://MK523-kr.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Minkyu Park"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Just started, but will make a big change"
+  location         : "Seoul! Soon to be in NY"
   email            :
   links:
     - label: "Email"
