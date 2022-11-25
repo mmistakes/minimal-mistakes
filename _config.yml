@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Minkyu Park"
+  name             : "Minkyu"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Just started, but will make a big change"
-  location         : "Seoul! Soon to be in NY"
-  email            :
+  location         : "Seoul, Soon to be in NY"
+  email            : "minkyu523@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
