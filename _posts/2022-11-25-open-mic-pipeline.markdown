@@ -14,6 +14,6 @@ SPipes (https://github.com/kbss-cvut/s-pipes) (Semantic data pipelines) is RDF-b
 
 {% include figure image_path="/assets/images/posts/spipes-model.png" alt="SPipes model" %}{: .post-image }
 
-This may be considered an ultimate tuorial on working with SPipes.
+This may be considered an ultimate tutorial on working with SPipes.
 
-The text presentation is available [here](https://docs.google.com/presentation/d/1p7-iFnTq39JHNR0J15CUR_4dx-UqJXXe/edit?usp=sharing&ouid=114555206856699416195&rtpof=true&sd=true).
+The text presentation is available [at this link](https://drive.google.com/file/d/13XgD1EsuIveDK-xoSKmuNKdvhvJruy1R/view?usp=sharing).
