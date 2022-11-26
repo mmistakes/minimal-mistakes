@@ -1,3 +1,10 @@
+---
+title: '[Kaggle/CV] GTSRB - 독일 표지판 이미지 분류 🚸'
+toc: true
+toc_sticky: true
+categories:
+  - kaggle
+---
 ## 1. GTSRB - German Traffic Sign Recognition Benchmark
 
 ### 1.0 들어가며
@@ -119,7 +126,7 @@ plt.show()
 
 
     
-![png](notebookc7f985766d_files/notebookc7f985766d_6_0.png)
+![kaggle_german1](https://user-images.githubusercontent.com/77332628/204090618-2616c735-6542-44c6-984a-ed10d65a33cc.png)
     
 
 
@@ -151,7 +158,7 @@ for i in range(1,26):
 
 
     
-![png](notebookc7f985766d_files/notebookc7f985766d_8_1.png)
+![kaggle_german2](https://user-images.githubusercontent.com/77332628/204090619-be700297-22c2-4117-9e9d-9a8a2ed9e811.png)
     
 
 
@@ -257,19 +264,6 @@ model = keras.models.Sequential([
 ])
 ```
 
-    2022-11-26 11:40:23.428568: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
-    2022-11-26 11:40:23.527108: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
-    2022-11-26 11:40:23.527853: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
-    2022-11-26 11:40:23.529030: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
-    To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-    2022-11-26 11:40:23.529357: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
-    2022-11-26 11:40:23.530081: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
-    2022-11-26 11:40:23.530725: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
-    2022-11-26 11:40:25.884459: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
-    2022-11-26 11:40:25.885320: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
-    2022-11-26 11:40:25.885994: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
-    2022-11-26 11:40:25.886609: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 15401 MB memory:  -> device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:00:04.0, compute capability: 6.0
-
 
 이제 학습률과 epochs와 optimizer를 정하고 모델을 compile 한다.
 
@@ -301,11 +295,6 @@ history = model.fit(augmentation.flow(X_train,y_train,batch_size=32),
 
 
     Epoch 1/30
-
-
-    2022-11-26 11:46:30.520646: I tensorflow/stream_executor/cuda/cuda_dnn.cc:369] Loaded cuDNN version 8005
-
-
     858/858 [==============================] - 24s 20ms/step - loss: 1.0324 - accuracy: 0.7198 - val_loss: 0.0689 - val_accuracy: 0.9802
     Epoch 2/30
     858/858 [==============================] - 16s 19ms/step - loss: 0.1799 - accuracy: 0.9444 - val_loss: 0.0273 - val_accuracy: 0.9926
@@ -379,7 +368,7 @@ plt.show()
 
 
     
-![png](notebookc7f985766d_files/notebookc7f985766d_21_0.png)
+![kaggle_german3](https://user-images.githubusercontent.com/77332628/204090620-e5419568-406f-442c-83c7-2f203922ae27.png)
     
 
 
@@ -443,7 +432,7 @@ plt.show()
 
 
     
-![png](notebookc7f985766d_files/notebookc7f985766d_25_0.png)
+![kaggle_german4](https://user-images.githubusercontent.com/77332628/204090621-f3d0f3d8-5ce3-4a0e-a68e-b716bf2ec3ff.png)
     
 
 
@@ -473,7 +462,7 @@ sns.heatmap(df_cm, annot=True)
 
 
     
-![png](notebookc7f985766d_files/notebookc7f985766d_28_1.png)
+![kaggle_german5](https://user-images.githubusercontent.com/77332628/204090623-b770164a-f559-4207-a922-2cde24d18121.png)
     
 
 
