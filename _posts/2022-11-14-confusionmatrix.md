@@ -104,7 +104,7 @@ mglearn.plots.plot_confusion_matrix_illustration()
 
 
     
-![png](Untitled0_files/Untitled0_5_0.png)
+![cf1](https://user-images.githubusercontent.com/77332628/204074901-7dd438e0-0276-435b-8313-a90f2791daad.png)
     
 
 
@@ -120,8 +120,7 @@ mglearn.plots.plot_binary_confusion_matrix()
 
 
     
-![png](Untitled0_files/Untitled0_7_0.png)
-    
+![cf2](https://user-images.githubusercontent.com/77332628/204074902-53fa28ea-029a-4da4-8287-943d221b53d3.png)
 
 
 
@@ -143,7 +142,7 @@ plt.show()
 
 
     
-![png](Untitled0_files/Untitled0_9_0.png)
+![cf3](https://user-images.githubusercontent.com/77332628/204074905-15f0d94b-4ccc-4a83-a5fc-69f3310199f3.png)
     
 
 
@@ -160,7 +159,7 @@ plt.show()
 
 
     
-![png](Untitled0_files/Untitled0_10_0.png)
+![cf4](https://user-images.githubusercontent.com/77332628/204074906-d88be17c-65b2-4039-852e-9f561c7b38fc.png)
     
 
 
@@ -262,7 +261,8 @@ plt.gca().invert_yaxis()
 
 
     
-![png](Untitled0_files/Untitled0_15_0.png)
+![cf5](https://user-images.githubusercontent.com/77332628/204074907-3eb9f28b-089b-4c5d-8433-1fe231d3cdba.png)
+
     
 
 
@@ -298,3 +298,8 @@ print(classification_report(y_test,pred))
 * macro 평균 : 클래스별 f1 점수에 가중치를 주지 않고 평균을 낸다.
 * weighted 평균 : 클래스별 샘플수에 대한 가중칠르 두어 f1 점수의 평균을 낸다.
 * micro 평균 : 모든 클래스의 FP,FN,TP의 총 수를 헤아린 다음 f1 점수를 이 수치로 계산한다.
+
+
+
+
+<파이썬 라이브러리를 활용한 머신러닝: 사이킷런 핵심개발자가 쓴 머신러닝과 데이터 과학 실무서>을 학습하고 개인 학습용으로 정리한 내용입니다.
