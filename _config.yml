@@ -20,7 +20,7 @@ title                    : "Sehyeon1104"
 title_separator          : "|"
 subtitle                 : "No Pain No Gain"
 name                     : "Sehyeon Kim"
-description              : "Sehyeon's Blog"
+description              : "Sehyeon1104's Blog"
 url                      : "https://sehyeon1104.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "SehyeonKim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "sehyeon1104의 같이 배워나가는 블로그입니다"
+  location         : "South Korea"
+  email            : Sehyeon1104@naver.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
