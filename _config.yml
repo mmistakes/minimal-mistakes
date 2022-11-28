@@ -22,17 +22,17 @@ subtitle                 : "No Pain No Gain"
 name                     : "Sehyeon Kim"
 description              : "Sehyeon1104's Blog"
 url                      : "https://sehyeon1104.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  :  # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     :  "/assets/images/WIN_20211029_00_09_59_Pro.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs            : true # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus: 
-    shortname            :  sehyeon1104 # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "sehyeon1104" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:  
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -108,48 +108,36 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "게임 개발을 하면서 얻은 지식과 기능을 같이 공유하는 블로그입니다"
   location         : "South Korea"
-  email            : Sehyeon1104@naver.com
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:sehyeon1104@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://github.com/sehyeon1104/sehyeon1104.github.io"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://www.facebook.com/profile.php?id=100018058574236"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/sehyeon1104"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://www.instagram.com/sehyeon._.1104/"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://www.facebook.com/profile.php?id=100018058574236"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
+      url: "https://github.com/sehyeon1104"
     - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+      icon: "fab fa-fw fa-instagram"  
+      url: "https://www.instagram.com/sehyeon._.1104/"
 
 
 # Reading Files
@@ -220,7 +208,8 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+timezone: #Asia/Seoul
 
 
 # Plugins (previously gems:)
@@ -256,17 +245,16 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+     - categories
+     - tags 
+  layouts:
+     category: archive-taxonomy
+     tag: archive-taxonomy
+  permalinks:
+     category: /categories/:name/
+     tag: /tags/:name/
 
 
 # HTML Compression
@@ -284,7 +272,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: s ingle
       author_profile: true
       read_time: true
       comments: true
