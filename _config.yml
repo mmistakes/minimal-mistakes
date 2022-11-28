@@ -96,15 +96,15 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : "G-3KDW1Q1CR8"
+    anonymize_ip         : true 
 
 
 # Site Author
 author:
-  name             : "SehyeonKim"
+  name             : "sehyeon-Kim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "게임 개발을 하면서 얻은 지식과 기능을 같이 공유하는 블로그입니다"
   location         : "South Korea"
@@ -287,10 +287,10 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments:  true
+      comments: true
       share: true
       related: true
       show_date: true
 
-date_format: "%Y-%m-%d"   
+date_format: "%Y-%m-%d"     
   
