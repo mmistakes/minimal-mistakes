@@ -7,7 +7,7 @@ categories:
   - basics
 ---
 
-# 5. 케라스 사용법 
+# 5. 케라스 사용법 (Sequential, 함수형 API, Model 서브클래싱, 콜백함수)
 
 
 ### 5.1 케라스 모델을 만드는 여러 방법
