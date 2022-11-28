@@ -1,10 +1,11 @@
 ---
 layout: single
-title:  "[인공지능]인공신경망 정리, fashion mnist"
-categories: AI
-tag: [python, keras, 파이썬, 머신러닝, 딥러닝, fashion mnist, 인공신경망, 다중 분류, 예측]
+title:  "인공신경망 정리, fashion mnist"
+categories: 딥러닝
+tag: [python, keras, 파이썬, 딥러닝, fashion mnist, 인공신경망, 다중 분류, 예측]
 toc: true
-author_profile: false
+toc_sticky: true
+
 ---
 
 <head>

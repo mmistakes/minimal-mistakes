@@ -1,10 +1,11 @@
 ---
 layout: single
-title:  "[인공지능] LSTM과 GRU를 사용한 IMDB 분류"
-categories: AI
-tag: [python, 파이썬, 인공지능, 딥러닝, 머신러닝, 순환신경망, LSTM, GRU, IMDB]
+title:  "LSTM과 GRU를 사용한 IMDB 분류"
+categories: 딥러닝
+tag: [python, 파이썬, 딥러닝, 순환신경망, LSTM, GRU, IMDB]
 toc: true
-author_profile: false
+toc_sticky: true
+
 ---
 
 <head>

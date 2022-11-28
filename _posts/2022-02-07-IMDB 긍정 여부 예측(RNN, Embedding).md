@@ -1,10 +1,11 @@
 ---
 layout: single
-title:  "[인공지능] IMDB 긍정 여부 분류 (RNN, Embedding)"
-categories: AI
-tag: [python, 파이썬, keras, 인공지능, 머신러닝, 딥러닝, imdb, RNN, 시퀀스 패딩, Embedding, 예측]
+title:  "IMDB 긍정 여부 분류 (RNN, Embedding)"
+categories: 딥러닝
+tag: [python, 파이썬, keras, 딥러닝, imdb, RNN, 시퀀스 패딩, Embedding, 예측]
 toc: true
-author_profile: false
+toc_sticky: true
+
 ---
 
 <head>

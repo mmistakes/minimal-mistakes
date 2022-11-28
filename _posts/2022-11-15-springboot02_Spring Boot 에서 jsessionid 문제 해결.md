@@ -1,10 +1,11 @@
 ---
 layout: single
-title:  "[SpringBoot] Spring Boot 에서 jsessionid 문제 해결"
+title:  "Spring Boot 에서 jsessionid 문제 해결"
 categories: SpringBoot
 tag: [Java, Spring, Spring Boot, STS, Eclipse]
 toc: true
-author_profile: false
+toc_sticky: true
+
 ---
 
 <head>
@@ -79,9 +80,7 @@ author_profile: false
 </head>
 
 
-# Spring Boot 에서 jsessionid 문제 해결
-
-# jsessionid란?
+## jsessionid란?
 
 - jsessionid는 새 세션이 만들어지면 클라이언트가 쿠키를 지원하는지 여부를 서버가 알 수 없으므로, 쿠키와 URL에 모두 jsessionid를 만들어 주는 것을 의미한다.
 - url에 붙거나 헤더에 붙여서 표시된다.

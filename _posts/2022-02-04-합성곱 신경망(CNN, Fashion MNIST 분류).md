@@ -1,10 +1,11 @@
 ---
 layout: single
-title:  "[인공지능]합성곱 신경망(CNN, Fasion MNIST 분류)"
-categories: AI
-tag: [python, 파이썬, keras, CNN, 합성곱, Fashion MNIST, 분류, 인공지능, 딥러닝, 머신러닝]
+title:  "합성곱 신경망(CNN, Fasion MNIST 분류)"
+categories: 딥러닝
+tag: [python, 파이썬, keras, CNN, 합성곱, Fashion MNIST, 분류, 딥러닝]
 toc: true
-author_profile: false
+toc_sticky: true
+
 ---
 
 <head>

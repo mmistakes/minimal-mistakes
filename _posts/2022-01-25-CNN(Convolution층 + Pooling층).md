@@ -1,10 +1,11 @@
 ---
 layout: single
-title:  "[인공지능] CNN 정리(컨볼루션 층, 풀링 층)"
-categories: AI
+title:  "CNN 정리(컨볼루션 층, 풀링 층)"
+categories: 딥러닝
 tag: [python, keras, CNN, 컨볼루션, 풀링, Convolution, Pooling, 인공지능, 딥러닝, 머신러닝]
 toc: true
-author_profile: false
+toc_sticky: true
+
 ---
 
 <head>

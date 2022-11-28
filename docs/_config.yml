@@ -10,7 +10,7 @@ remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR" # "en-US"
 title                    : "Minimal Mistakes"
 title_separator          : "-"
 subtitle                 : "A Jekyll theme"
@@ -25,9 +25,9 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "false" # false (default), "disqus", "discourse", "facebook", "staticman_v2", "staticman", "utterances", "giscus", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman_v2", "staticman", "utterances", "giscus", "custom"
   disqus:
-    shortname            :
+    shortname            : "yoonkienote"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -210,10 +210,11 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
+      show_date: true
       comments: true
       share: true
-      related: true
+      related: false
   # _pages
   - scope:
       path: "_pages"

@@ -1,10 +1,11 @@
 ---
 layout: single
-title:  "[SpringBoot] Spring Data JPA란?"
+title:  "Spring Data JPA란?"
 categories: SpringBoot
 tag: [Java, Spring, JPA, Spring Boot, STS, Eclipse]
 toc: true
-author_profile: false
+toc_sticky: true
+
 ---
 
 <head>
@@ -79,7 +80,6 @@ author_profile: false
 </head>
 
 
-# Spring Data JPA
 
 ## ORM이란?
 

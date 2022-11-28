@@ -1,10 +1,11 @@
 ---
 layout: single
-title:  "[SpringBoot] Spring Boot 프로젝트 시작"
+title:  "Spring Boot 프로젝트 시작"
 categories: SpringBoot
 tag: [Java, Spring, Spring Boot, STS, Eclipse]
 toc: true
-author_profile: false
+toc_sticky: true
+
 ---
 
 <head>
@@ -78,8 +79,6 @@ author_profile: false
   </style>
 </head>
 
-
-# Spring Boot 프로젝트 시작
 
 ## STS로 스프링 부트 시작하기
 
