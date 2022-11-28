@@ -530,6 +530,10 @@ parameterestimates(fit,standardized = TRUE)
 
 # Testing forced orthogonality
 
+The lavaan's 'sem' function set the remaining paths free for covariance estimation. But in some tools, like in those interface/graphics- oriented tools, not drawn covariates are set as zero, forcing orthogonality. 
+The following code attempt to do so using a lavaan's function just for illustration. Note how an error message is thrown.
+
+
 ```r
 fit_forcedOrth=try(lavaan(model=model, data=data,std.ov=TRUE,estimator="MLR",fixed.x = FALSE,orthogonal.x=TRUE))
 ```
@@ -736,6 +740,7 @@ Any attempt to make interpretations on the parameter table can be useless, where
 
 
 ### Residual covariances
+As mentioned, the fit measures reflect how the model-implied covariance matrix and sample covariance matrix are close or not. Consequently, we can talk about residual covarinces.
 
 
 ```r
@@ -840,6 +845,8 @@ lavResiduals(fit,zstat=TRUE, type='cor')
 ## ucrmr.closefit.z         0.671
 ## ucrmr.closefit.pvalue    0.251
 ```
+
+But note the attempt to adjust based in this matrix can be really messy.
 
 ### Modification indices
 
@@ -2419,7 +2426,6 @@ table2<-parameterEstimates(fit,standardized=TRUE)%>%as.data.frame()
 table2<-table2[!table2$lhs==table2$rhs,]
 b<-gettextf('%.3f \n p=%.3f', table2$std.all, digits=table2$pvalue)
 fittitles<-fitmeasures(fit)[c('cfi.robust','tli.robust','rmsea.robust','rmsea.ci.lower.robust' , 'rmsea.ci.upper.robust')]%>%round(3)
-
 semPaths(fit, layout=ly,
          edgeLabels=b,
          residuals=FALSE,
@@ -2442,7 +2448,11 @@ title('Adjusted Model')
 ![Adjusted Model](https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/master/_collections/SEM_Examples/1_Park2018_files/Park2018_iteration_adj.png?raw=true)
 
 # Non-sense models also fits well
+To illustrate how we must not adjust blindly following the modification indices, we present how non-sense models can also fit well.
 ## Blind fit
+The following is a blindly fitted model.
+Note how some paths does not make sense already because temporal issues. But its fit measure is very good.
+
 
 ```r
 library(lavaan)
@@ -2917,6 +2927,7 @@ title('Nonsense Blind fit')
 ![Blind Model](https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/master/_collections/SEM_Examples/1_Park2018_files/Park2018_iteration_ns_blind.png?raw=true)
 
 ## Reversed model
+To illustrate further how non-sense models also can fit well, look at this model in which all causal relationships are reversed. Look how non-sense it is! But how it fits well!
 
 ```r
 library(lavaan)
@@ -3398,3 +3409,4 @@ title('Nonsense Reversed Model')
 ![](1b_Park2018_iteration_files/figure-html/unnamed-chunk-23-1.png)<!-- -->
 
 ![Reversed Model](https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/master/_collections/SEM_Examples/1_Park2018_files/Park2018_iteration_ns_reversed.png?raw=true)
+

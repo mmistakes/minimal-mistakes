@@ -44,7 +44,7 @@ Data: La Barbera, F. Moderating Role of Control in the Theory of Planned
 Behavior: A Replication and Extension [Dataset] [Data set]. ZPID (Leibniz
 Institute for Psychology Information). <https://doi.org/10.23668/psycharchives.2759>
 
-# data acquisition
+# Data acquisition
 
 ```r
 datat<-read_sav('LaBarbera2020.sav')
@@ -948,7 +948,7 @@ semPlot::semPaths(fit_SEM,rotation=2,structural=FALSE,edgeLabels=b,
 ![](5_LaBarbera2020_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
 ![moderation sem](https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/master/_collections/SEM_Examples/5_LaBarbera2020/LaBarbera2020_mod.png?raw=true)
 
-## illustration on the moderation effect
+## Illustration on the moderation effect
 
 The major objectives in moderation study is focused in how the moderator is able (or not) to change the independent variable's effect on the dependent variable, graphically illustrated as a change in the slope.
 
@@ -957,13 +957,8 @@ The major objectives in moderation study is focused in how the moderator is able
 probe <- semTools::probe2WayMC(fit_SEM, nameX = c("attitude", "BehControl", "BhC_x_Att"), 
                        nameY = "intention", modVar = "BehControl", valProbe = c(-1, 0, 1))
 
-png(file='./5_LaBarbera2020/LaBarbera2020c_mod_interaction.png',width=600, height = 300)
 semTools::plotProbe(probe,xlim=c(-1.5,1.5),xlab='attitude',ylab='intention')
-dev.off()
 ```
 
-```
-## png 
-##   2
-```
+![](5_LaBarbera2020_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
 ![interaction](https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/master/_collections/SEM_Examples/5_LaBarbera2020/LaBarbera2020c_mod_interaction.png?raw=true)
