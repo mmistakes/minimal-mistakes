@@ -341,5 +341,12 @@ compress_html:
       
 #include: ["_pages"]
 
+
+  
+# excerpt: "This post should display a **header with an overlay image**, if the theme supports it."
 header:
-  image: /assets/images/universe-g353fb7c4c_1280.jpg
+  overlay_image: /assets/images/universe-g353fb7c4c_1280.jpg
+  #caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+#   actions:
+#     - label: "More Info"
+#       url: "https://unsplash.com"  
