@@ -12,12 +12,26 @@
       </li>
       <li>
 
-        <!-- 배운 지식 정리 -->
-        <span class="nav__sub-title">Python/SQL/ML</span>
+        <!-- 배운 지식 정리 1 -->
+        <span class="nav__sub-title">Python/SQL</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Python" %}
                         <li><a href="/categories/Python" class="">ㄴ Python ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Pandas" %}
+                        <li><a href="/categories/Pandas" class="">ㄴ Pandas ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Numpy" %}
+                        <li><a href="/categories/Numpy" class="">ㄴ Numpy ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -28,13 +42,9 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Pandas" %}
-                        <li><a href="/categories/Pandas" class="">ㄴ Pandas cheat sheet ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+
+        <!-- 배운 지식 정리 2 -->
+        <span class="nav__sub-title">ML/DL</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "ML" %}
@@ -42,10 +52,18 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "DL" %}
+                        <li><a href="/categories/DL" class="">ㄴ Deep Learning ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
         
         <!-- 시각화 라이브러리 -->
         <span class="nav__sub-title">시각화 라이브러리</span>
-             <ul>
+            <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Matplotlib" %}
                         <li><a href="/categories/Matplotlib" class="">ㄴ Matplotlib ({{category[1].size}})</a></li>
