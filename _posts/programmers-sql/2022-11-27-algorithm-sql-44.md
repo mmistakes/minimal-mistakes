@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 5. 상품을 구매한 회원 비율 구하
 layout: single
 
 categories: "Algorithm_SQL"
-tags: [""]
+tags: ["ROUND", "COUNT", "YEAR", "MONTH", "JOIN", "DISTINCT", "GROUP BY", "LIKE", "ORDER BY", "WHERE"]
 
 toc: true
 toc_sticky: true
@@ -49,7 +49,13 @@ toc_icon: "bars"
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
-1. 
+1. ONLINE_SALE 테이블을 동일한 날짜, 회원 ID, 상품 ID 조합에 대해 한 데이터만 불러오기 위해 DISTINCT 를 사용한다.
+2. ONLINE_SALE 테이블에서 연도, 월, 고객 ID만 불러올 수 있도록 한다.
+3. 위에서 불러온 테이블을 USER_INFO 테이블과 고객 ID를 기준으로 JOIN 한다.
+4. USER_INFO 에서 가입 연도가 2021년도에 해당하는 정보만 불러올 수 있는 조건문을 추가한다. (LIKE 연산자 사용하면 될 듯)
+5. 상품을 구매한 연도와 월을 기준으로 GROUP BY한다.
+6. 출력할 정보는 연도, 월, 고객 수, 2021년에 가입한 전체 회원들 중 상품을 구매한 회원수와 상품을 구매한 회원의 비율이다.
+7. 연도와 월을 기준으로 오름차순 정렬한다.
 ```
 
 ## (2) 코드 작성
@@ -65,7 +71,9 @@ ORDER BY T1.YEAR, T1.MONTH
 ```
 
 ## (3) 코드 리뷰 및 회고
-- 
+- **2021년에 가입한 전체 회원들 중 상품을 구매한 회원수와 상품을 구매한 회원의 비율**을 구할 때 2021년에 가입한 전체 회원 수를 구하기 위해 ```SELECT-FROM-WHERE``` 을 사용했다.
+- ```SELECT``` 문의 계산식(```ROUND```, ```COUNT```, .. 등)에도 테이블을 새로 불러오고 원하는 정보를 뽑아내어 가져올 수 있다는 점을 기억해야겠다!
+- 또한 ```JOIN```으로 테이블을 연결할 때 **조건식**(```T2.JOINED LIKE '2021%'```)을 넣을 수 있다는 점을 기억해야겠다!
 
 <br>
 

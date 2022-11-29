@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 2. 상품 별 오프라인 매출 구하기
 layout: single
 
 categories: "Algorithm_SQL"
-tags: [""]
+tags: ["JOIN", "GROUP BY", "SUM", "ORDER BY"]
 
 toc: true
 toc_sticky: true
@@ -45,7 +45,10 @@ toc_icon: "bars"
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
-1. 
+1. PRODUCT, OFFLINE_SALE 테이블을 상품 ID를 기준으로 JOIN 한다.
+2. OFFLINE_SALE 테이블엔 상품 ID에 대해 여러 데이터가 존재하기 때문에 불러올 때 GROUP BY로 묶은 뒤, ID별로 총 판매량을 불러온다.
+3. 출력할 정보인 상품 ID, 매출액(상품 단가*총 판매량)을 SELECT 문에 작성한다.
+4. 매출액을 기준으로 내림차순 정렬하고, 매출액이 같다면 상품 코드를 기준으로 오름차순 정렬한다.
 ```
 
 ## (2) 코드 작성
@@ -59,7 +62,8 @@ ORDER BY SALES DESC, T1.PRODUCT_CODE
 ```
 
 ## (3) 코드 리뷰 및 회고
-- 
+- ```PRODUCT``` 테이블에 ```OFFLINE_SALE``` 테이블을 상품 ID를 기준으로 ```JOIN``` 할 때, ```SELECT-FROM-GROUP BY```로 테이블에서 원하는 정보만 가져왔다.
+- ```SELECT``` 문에 사칙연산 기호를 사용하여 불러올 수 있다는 점을 기억하자.
 
 <br>
 
