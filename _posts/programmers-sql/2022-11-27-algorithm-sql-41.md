@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 3. 오랜 기간 보호한 동물(1)"
 layout: single
 
 categories: "Algorithm_SQL"
-tags: [""]
+tags: ["JOIN", "IS NULL", "ORDER BY", "LIMIT", "WHERE"]
 
 toc: true
 toc_sticky: true
@@ -43,12 +43,7 @@ toc_icon: "bars"
 <br>
 
 # <span class="half_HL">✔️ 문제 풀이</span>
-## (1) Pseudo-Code
-```markdown
-1. 
-```
-
-## (2) 코드 작성
+## (1) 코드 작성
 ```sql
 SELECT T1.NAME, T1.DATETIME
 FROM ANIMAL_INS AS T1
@@ -58,8 +53,12 @@ ORDER BY T1.DATETIME
 LIMIT 3
 ```
 
-## (3) 코드 리뷰 및 회고
-- 
+## (2) 코드 리뷰 및 회고
+- 입양을 가지 못한 동물 데이터를 불러오기 위해 T2(입양 보낸 동물 정보)는 NULL 이어도 T1(보호소에 들어온 동물 정보)는 NULL이 아니어야한다.
+- T2에 데이터가 없어도 T1의 정보가 유실되지 않도록하기 위해 ```LEFT JOIN```을 사용했다.
+- 불러온 데이터에 대해 T2의 정보가 없는 조건을 만족시키기 위해 T2에 ```ANIMAL_ID```가 없는 경우를 기입했다.
+- 데이터는 보호소에 들어온 일자를 기준으로 오름차순 정렬했고, 상위 3개만 가져오기 위해 ```LIMIT 3```을 입력했다.
+- 두 데이터를 어떤 변수를 기준으로 결합할 때, 합집합, 교집합, 차집합 등을 잘 고민해서 적절한 ```JOIN``` 문을 사용해야겠다!
 
 <br>
 
