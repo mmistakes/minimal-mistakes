@@ -9,7 +9,7 @@ author_profile: true
 2022
 ======
 
-* **Re-qgan: an optimized adversarial quantum circuit learning framework**, Black in AI Workshop at NeurIPS, New Orleans, Louisiana. [Contributed Talk and Poster]. November 2022.
+* **Re-qgan: an optimized adversarial quantum circuit learning framework**, Black in AI Workshop at NeurIPS, New Orleans, Louisiana. [Contributed Talk and Poster]. November 2022..
 
 * **Re-qgan: an optimized adversarial quantum circuit learning framework**, Quantum Techniques in Machine Learning (QTML), Naples, Italy. [Poster]. November 2022.
 
