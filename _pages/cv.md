@@ -24,18 +24,14 @@ Work experience
   * Supervisor: Vicente Leyton-Ortega
 
 * 2017: Financial Analyst
-  * BMW of North America
-   
-
-Research
-======
-*  [Re-QGAN: an optimized adversarial quantum circuit learning framework](https://arxiv.org/abs/2208.02165)
+  * BMW of North America  
 
 Skills
 ======
-* Python 
+* Python (Qiskit, Scikit-learn, Keras, Matplotlib)
 * Matlab
 * R
+* SQL
 
    
 
