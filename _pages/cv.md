@@ -31,7 +31,7 @@ Skills
 * Python (Qiskit, Scikit-learn, Keras, Matplotlib)
 * Matlab
 * R
-* SQL.
+* SQL
 
    
 
