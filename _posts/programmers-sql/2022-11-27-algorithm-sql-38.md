@@ -46,7 +46,7 @@ toc_icon: "bars"
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
-1. 
+1. ㄱ
 ```
 
 ## (2) 코드 작성

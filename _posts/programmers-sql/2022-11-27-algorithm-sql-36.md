@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 4. 5월 식품들의 총매출 조회하기
 layout: single
 
 categories: "Algorithm_SQL"
-tags: [""]
+tags: ["JOIN", "SUM", "GROUP BY", "ORDER BY", "DATE_FORMAT", "WHERE"]
 
 toc: true
 toc_sticky: true
@@ -48,13 +48,16 @@ toc_icon: "bars"
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
-1. 
+1. 두 테이블을 PRODUCT_ID를 기준으로 합치기 위해 JOIN 을 사용한다.
+2. FOOD_ORDER 테이블을 불러올 때 생산일자가 '2022-05'인 것만 가져오고 식품ID로 그룹화 및 총 주문량 정보를 가져온다.
+3. 총 매출량은 총 주문량 * 단가로 계산한다.
 ```
 
 ## (2) 코드 작성
 ```sql
 SELECT T1.PRODUCT_ID, T1.PRODUCT_NAME, T2.AMOUNT * T1.PRICE AS TOTAL_SALES
-FROM FOOD_PRODUCT AS T1 INNER JOIN (
+FROM FOOD_PRODUCT AS T1 
+INNER JOIN (
     SELECT PRODUCT_ID, SUM(AMOUNT) AS AMOUNT
     FROM FOOD_ORDER
     WHERE DATE_FORMAT(PRODUCE_DATE, '%Y-%m') = '2022-05'
@@ -64,7 +67,8 @@ ORDER BY TOTAL_SALES DESC, T2.PRODUCT_ID
 ```
 
 ## (3) 코드 리뷰 및 회고
-- 
+- ```JOIN``` 으로 테이블을 결합할 때, ```SELECT, FROM, ~``` 문을 사용해 기존의 테이블을 약간의 변형 후에 가져올 수 있다는 점을 기억해야겠다.
+- 풀이 방법에 대한 고민을 많이 했던 문제였다.
 
 <br>
 
