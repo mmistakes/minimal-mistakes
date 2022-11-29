@@ -341,3 +341,5 @@ compress_html:
       
 #include: ["_pages"]
 
+header:
+  image: /assets/images/universe-g353fb7c4c_1280.jpg
