@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 4. 주문량이 많은 아이스크림들 �
 layout: single
 
 categories: "Algorithm_SQL"
-tags: [""]
+tags: ["SUM", "GROUP BY", "JOIN", "ORDER BY", "LIMIT"]
 
 toc: true
 toc_sticky: true

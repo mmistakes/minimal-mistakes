@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 4. 그룹별 조건에 맞는 식당 목록
 layout: single
 
 categories: "Algorithm_SQL"
-tags: [""]
+tags: ["COUNT", "JOIN", "DATE_FORMAT", "GROUP BY", "ORDER BY", "LIMIT"]
 
 toc: true
 toc_sticky: true
@@ -46,7 +46,7 @@ toc_icon: "bars"
 # <span class="half_HL">✔️ 문제 풀이</span>
 ## (1) Pseudo-Code
 ```markdown
-1. ㄱ
+1. 
 ```
 
 ## (2) 코드 작성
