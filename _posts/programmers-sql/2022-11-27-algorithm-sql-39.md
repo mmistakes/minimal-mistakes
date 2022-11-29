@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 3. 없어진 기록 찾기"
 layout: single
 
 categories: "Algorithm_SQL"
-tags: [""]
+tags: ["JOIN", "IS NULL"]
 
 toc: true
 toc_sticky: true
@@ -43,12 +43,7 @@ toc_icon: "bars"
 <br>
 
 # <span class="half_HL">✔️ 문제 풀이</span>
-## (1) Pseudo-Code
-```markdown
-1. 
-```
-
-## (2) 코드 작성
+## (1) 코드 작성
 ```sql
 SELECT T2.ANIMAL_ID, T2.NAME
 FROM ANIMAL_INS AS T1
@@ -56,8 +51,11 @@ FROM ANIMAL_INS AS T1
 WHERE T1.ANIMAL_ID IS NULL
 ```
 
-## (3) 코드 리뷰 및 회고
-- 
+## (2) 코드 리뷰 및 회고
+- 두 테이블(보호소에 들어온 동물 정보/입양 보낸 동물 정보)를 동물의 ID를 기준으로 합치기 위해 ```JOIN``` 을 사용했다.
+- ```RIGHT JOIN```을 사용한 이유는 보호소에 들어온 기록이 일부 유실되었기 때문이다. (```ANIMAL_INS```가 빈 값이라도 불러오기 위함)
+- 불러온 데이터에 대해 T1(보호소에 들어온 동물 정보)가 NULL인 것만 출력되도록 조건문을 추가했다.
+- 출력할 데이터로는 T1에서의 아이디와 이름은 NULL이기 때문에 T2(입양 보낸 동물 정보)에서의 아이디와 이름을 불러왔다.
 
 <br>
 

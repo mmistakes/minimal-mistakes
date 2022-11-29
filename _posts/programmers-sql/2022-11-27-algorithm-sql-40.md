@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 3. 있었는데요 없었습니다"
 layout: single
 
 categories: "Algorithm_SQL"
-tags: [""]
+tags: ["JOIN", "WHERE", "ORDER BY"]
 
 toc: true
 toc_sticky: true
@@ -43,12 +43,7 @@ toc_icon: "bars"
 <br>
 
 # <span class="half_HL">✔️ 문제 풀이</span>
-## (1) Pseudo-Code
-```markdown
-1. 
-```
-
-## (2) 코드 작성
+## (1) 코드 작성
 ```sql
 SELECT T2.ANIMAL_ID, T2.NAME
 FROM ANIMAL_INS AS T1 
@@ -57,8 +52,12 @@ WHERE T1.DATETIME > T2.DATETIME
 ORDER BY T1.DATETIME
 ```
 
-## (3) 코드 리뷰 및 회고
-- 
+## (2) 코드 리뷰 및 회고
+- 두 테이블(보호소에 들어온 동물 정보/입양 보낸 동물 정보)를 동물의 ID를 기준으로 합치기 위해 ```JOIN``` 을 사용했다.
+- ```RIGHT JOIN```을 사용한 이유는 T1(보호소에 들어온 동물 정보)에 NULL 값이 있기도 하고 T2의 전체 데이터를 불러와야하기 때문이다.
+  - 하지만 입양일과 보호시작일을 비교하기 위해선 ```RIGHT JOIN``` 이 아닌 ```JOIN/INNER JOIN``` 을 사용해도 된다.
+- 불러온 데이터에 대해 T1(보호소에 들어온 동물 정보)의 보호 시작일이 T2(입양 보낸 동물 정보)의 입양일보다 빠른 경우를 불러오기 위해 조건식을 작성했다.
+- 출력할 데이터는 T2를 기준으로 불러왔는데, T1을 기준으로 불러와도 무방하다.
 
 <br>
 
