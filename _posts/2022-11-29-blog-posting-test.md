@@ -28,7 +28,9 @@ GIT, GITHUB 어떻게 쓰는지  전혀, 1도 모르겠슴미다..
 #step 2. 게시글 싸기#
 
 ##일단 따라하기##
+https://ansohxxn.github.io/blog/posting/#1-markdown-%EC%9D%84-%EC%A7%80%EC%9B%90%ED%95%98%EB%8A%94-%EC%97%90%EB%94%94%ED%84%B0%EB%A5%BC-%EC%8B%A4%ED%96%89%ED%95%9C%EB%8B%A4
 
+근데 Front matter가 안먹는다..
 ##마크다운?##
 
 #step 3. 환경 설정하기#
