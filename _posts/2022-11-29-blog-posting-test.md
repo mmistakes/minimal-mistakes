@@ -1,4 +1,5 @@
 ---
+Layout: post
 title: "깃헙 블로그 포스팅 테스트"
 categories: GITHublog
 date: 2022-11-29
@@ -26,6 +27,8 @@ GIT, GITHUB 어떻게 쓰는지  전혀, 1도 모르겠슴미다..
 게시글은 리포지토리의 _post 폴더에 YY-MM-DD-Title.MD 형식으로 작성되어야 한단다
 
 근데 Front matter가 안먹는다. 일단 타이틀/카테고리/날짜 3가지만 남겨보았다.
+
+[xho95.github.io](https://xho95.github.io/blog/jekyll/markdown/post/kramdown/2016/01/12/Post-a-new-MarkDown-file.html)
 
 ## 마크다운?
 
