@@ -105,6 +105,7 @@ public class Main {
 |bolean|hasMoreElements()|hasMoreTokens()와 동일하다.|
 |Object|nextElement()|nextToken()과 동일하지만 객체를 반환|
 |int|countTokens()|총 토큰의 개수를 반환|
+
 ---
 
 ## StringTokenizer VS split
