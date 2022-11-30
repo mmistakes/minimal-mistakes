@@ -3,9 +3,9 @@ title: "깃헙 블로그 포스팅 테스트"
 excerpt: "깃헙 블로그에 포스팅하는 방법을 완전히 제로베이스에서 시작해보자..."
 
 categories 
- - GITHUBlog
+ - Temp
 tags
- - github, blog
+ - [github, blog]
 
 date: 2022-11-29
 ---
