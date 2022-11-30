@@ -2,6 +2,7 @@
 layout: single
 title: "[Java]StringTokenizer사용법?"
 excerpt : "문자열 분리"
+categories: java
 ---
 
 ## 1. 라이브러리
