@@ -10,6 +10,9 @@ GIT, GITHUB 어떻게 쓰는지  전혀, 1도 모르겠슴미다..
 
 그래서 남으 블로그 글을 그대로 따라서 해 봅니다.
 
+https://comeinsidebox.com/create-a-blog-on-github/
+
+
 # step 1. 블로그 포크해오기
 
 ## 깃허브 계정 만들기
