@@ -4,6 +4,8 @@ excerpt: "깃헙 블로그에 포스팅하는 방법을 완전히 제로베이�
 
 categories 
  - GITHUBlog
+tags
+ - github, blog
 
 date: 2022-11-29
 ---
