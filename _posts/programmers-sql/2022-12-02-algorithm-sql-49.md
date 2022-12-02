@@ -3,7 +3,7 @@ title:  "[프로그래머스 SQL] Lv 2. 중성화 여부 파악하기"
 layout: single
 
 categories: "Algorithm_SQL"
-tags: [""]
+tags: ["REGEXP", "CASE", "ORDER BY"]
 
 toc: true
 toc_sticky: true
