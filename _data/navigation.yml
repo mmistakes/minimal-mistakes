@@ -11,3 +11,10 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
    
+sidebar-category:
+  - title: "categories"
+    children:
+      - title: "Blog"
+        url: "/blog"
+      - title: "Study"
+        url: "/Study"
