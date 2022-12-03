@@ -66,6 +66,13 @@ _config.yml 파일의 15행에 있는 minimal_mistakes_skin 항목을 바꿔주�
 
 ## 레이아웃
 
+[ansohxxn.github.io ; mmistakes 테마 디렉토리 구조](https://ansohxxn.github.io/blog/jekyll-directory-structure/)
+위 글을 참고해서 레이아웃 수정중.  
+data\ui-text.yml에서 toc의 라벨? 을 on this page -> Index / 목차 로 수정하고  
+data\navigation.yml에서 전부 주석처리  
+_config.yml에서 breadcrumps -> true, comment provider -> facebook, search -> true  
+등등...
+
 ## 에디터와 모바일 환경
 
 [StackEdit](https://stackedit.io/app#)
