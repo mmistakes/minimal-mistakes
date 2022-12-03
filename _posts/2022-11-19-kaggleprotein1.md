@@ -3,7 +3,7 @@ title: '[Kaggle/CV] Protein Atlas - 데이터 살펴보기, baseline model 🔬'
 toc: true
 toc_sticky: true
 categories:
-  - kaggle
+  - kaggle-imageclassification
 ---
 ## 1. Protein Atlas
 
