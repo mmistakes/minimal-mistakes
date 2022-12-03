@@ -4,7 +4,7 @@ layout : single
 toc: true
 toc_sticky: true
 categories:
-  - basics
+  - MLDLbasics
 ---
 
 ## 6. 오차행렬 (confusion matrix)
