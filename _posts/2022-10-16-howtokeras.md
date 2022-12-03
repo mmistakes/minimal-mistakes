@@ -4,7 +4,7 @@ layout: single
 toc: true
 toc_sticky: true
 categories:
-  - basics
+  - MLDLbasics
 ---
 
 # 5. 케라스 사용법 (Sequential, 함수형 API, Model 서브클래싱, 콜백함수)
