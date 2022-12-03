@@ -12,20 +12,41 @@ main:
   #   url: /sitemap/
   
 sidebar-category:
-  - title: "Categories"
+  - title : "ML / DL Basics 🌱 "
+    url : '/MLDLbasics'
+    category : 'MLDLbasics'
+  
+  - title: "Computer Vision 👓"
     children:
-      - title: "Basics 🌱"
-        url: "/basics"
-        category: 'basics'
+      - title: "Basics"
+        url: "/cv-basics"
+        category: 'cv-basics'
       
-      - title: 'Computer Vision 👓'
-        url: "/visions"
-        category: 'visions'
+      - title: 'Image Classification'
+        url: "/cv-imageclassification"
+        category: 'cv-imageclassification'
       
-      - title: 'Upgrading model 🚀'
-        url: "/advanced"
-        category: 'advanced'
+      - title: 'Object Detection'
+        url: "/cv-objectdetection"
+        category: 'cv-objectdetection'
       
-      - title: 'Kaggle 🎯'
-        url: "/kaggle"
-        category: 'kaggle'
+      - title: 'Pretrained Models'
+        url: "/cv-pretrained"
+        category: 'cv-pretrained'
+        
+  - title : "Kaggle 🎯"
+    children :
+      - title : 'Image Classification'
+        url: "/kaggle-imageclassification"
+        category: 'kaggle-imageclassification'
+      
+      - title : 'Object Detection'
+        url: "/kaggle-objectdetection"
+        category: 'kaggle-objectdetection'
+
+  - title : "Etc"
+    children :
+      - title : 'Upgrading model 🚀'
+        url: "/etc-upgrading"
+        category: 'etc-upgrading'
+    
