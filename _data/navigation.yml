@@ -29,21 +29,3 @@ sidebar-category:
       - title: 'Kaggle 🎯'
         url: "/kaggle"
         category: 'kaggle'
-      
-- title: "Categories2"
-    children:
-      - title: "Basics2 🌱"
-        url: "/basics"
-        category: 'basics'
-      
-      - title: 'Computer Vision2 👓'
-        url: "/visions"
-        category: 'visions'
-      
-      - title: 'Upgrading mode2 🚀'
-        url: "/advanced"
-        category: 'advanced'
-      
-      - title: 'Kaggle2🎯'
-        url: "/kaggle"
-        category: 'kaggle'
