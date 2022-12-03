@@ -3,7 +3,7 @@ title: '[Kaggle/CV] GTSRB - 독일 표지판 이미지 분류 🚸'
 toc: true
 toc_sticky: true
 categories:
-  - kaggle
+  - kaggle-imageclassification
 ---
 ## 1. GTSRB - German Traffic Sign Recognition Benchmark
 
