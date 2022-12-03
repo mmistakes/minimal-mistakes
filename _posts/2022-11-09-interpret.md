@@ -5,11 +5,11 @@ layout : single
 toc: true
 toc_sticky: true
 categories:
-  - visions
+  - cv-basics
 ---
 
 
-## 6. 컨브넷이 학습한 것 해석하기
+## 컨브넷이 학습한 것 해석하기
 
 
 ### 6.0 들어가며
