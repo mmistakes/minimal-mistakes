@@ -1,7 +1,7 @@
 ---
-title: "Basics 🌱"
+title: "ML / DL Basics 🌱 "
 layout: archive
-permalink: /basics
+permalink: /MLDLbasics
 author_profile: true
 sidebar_main: true
 sidebar:
@@ -9,5 +9,5 @@ sidebar:
 ---
 
 
-{% assign posts = site.categories.basics %}
+{% assign posts = site.categories.MLDLbasics %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
