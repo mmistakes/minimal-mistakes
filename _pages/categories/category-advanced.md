@@ -1,7 +1,7 @@
 ---
 title: "Upgrading model 🚀"
 layout: archive
-permalink: /advanced
+permalink: /etc-upgrading
 author_profile: true
 sidebar_main: true
 sidebar:
@@ -9,5 +9,5 @@ sidebar:
 ---
 
 
-{% assign posts = site.categories.advanced %}
+{% assign posts = site.categories.etc-upgrading %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
