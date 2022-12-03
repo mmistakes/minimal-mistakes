@@ -1,0 +1,15 @@
+<div class="{{ include.type | default: "list" }}__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="{{ post.url }}">{{post.title}}</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d" }}
+              {% if site.category_archive.type and post.categories[0] and site.tag_archive.type and post.tags[0] %}
+                {%- include post__taxonomy.html -%}
+              {% endif %}
+            </small>
+        </div>
+      </article>
+</div>
