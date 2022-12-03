@@ -73,6 +73,12 @@ data\navigation.yml에서 전부 주석처리
 _config.yml에서 breadcrumps -> true, comment provider -> facebook, search -> true  
 등등...
 
+## 사이드바에 카테고리 넣기
+
+[https://devyurim.github.io](https://devyurim.github.io/development%20environment/github%20blog/2018/08/07/blog-6.html)
+[https://ansohxxn.github.io](https://ansohxxn.github.io/blog/category/)
+[https://x2info.github.io](https://x2info.github.io/minimal-mistakes/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC_%EB%A7%8C%EB%93%A4%EA%B8%B0/)
+
 ## 에디터와 모바일 환경
 
 [StackEdit](https://stackedit.io/app#)
