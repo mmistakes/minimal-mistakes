@@ -3,35 +3,45 @@ Layout: post
 title: "깃헙 블로그 포스팅 테스트"
 categories: GITHublog
 date: 2022-11-29
+post.excerpt: "사용자 정의된 발췌문 작성..."
 ---
 
-GIT, GITHUB 어떻게 쓰는지  전혀, 1도 모르겠슴미다..
-마크다운 언어는 또 뭐야.. 어디선가 들어본거는 같은데..
+GIT이고 GITHUB고 어떻게 쓰는지 모르는 상태에서 일단 블로그를 만들어 보기로 했는데...
+마크다운 언어는 또 뭐야.. 어디선가 들어본거는 같은데.. 전혀 모르겠다
 
-그래서 남으 블로그 글을 그대로 따라서 해 봅니다.
-
-https://comeinsidebox.com/create-a-blog-on-github/
-
+그래서 남의 블로그 글을 그대로 따라해 보기로 했습니다.
 
 # step 1. 블로그 포크해오기
 
-## 깃허브 계정 만들기
-
-## mmistakes
-
-## jekyll?
+https://comeinsidebox.com/create-a-blog-on-github/
+위 글을 따라 깃허브 계정을 만들고, 리포지토리를 만들고
+mmistakes라는 테마를 포크해서 기본 틀을 잡았습니다...
+jekyll이 뭔지도 몰라서 일단 그냥 냅다 들고 옴.
 
 # step 2. 게시글 싸기
 
-## 일단 따라하기
+## 일단 포스트를 써 보자
 
+위의 포크 설명글에도 어느정도 포스팅에 대한 설명은 있지만, 
+실제로는 다음 글을 참고해서 이 글을 쌌습니다.
 [ansohxxn.github.io](https://ansohxxn.github.io/blog/posting/#1-markdown-%EC%9D%84-%EC%A7%80%EC%9B%90%ED%95%98%EB%8A%94-%EC%97%90%EB%94%94%ED%84%B0%EB%A5%BC-%EC%8B%A4%ED%96%89%ED%95%9C%EB%8B%A4)
+게시글은 리포지토리의 _post 폴더에 YY-MM-DD-Title.MD 형식으로 작성되어야 한다고 하네요.
+처음에는 _post 폴더가 없다 보니 윈도우에서처럼 빈 폴더를 만들고 파일을 생성하려고 했는데
+빈 폴더를 만드는 방법도 찾을 수가 없었습니다...
+알고보니 그냥 파일명 입력할 때 슬래시 집어넣으면 자동으로 해당 폴더로 정리가 되네요.
+빈 폴더는 만들 수가 없습니다!
 
-게시글은 리포지토리의 _post 폴더에 YY-MM-DD-Title.MD 형식으로 작성되어야 한단다
+그리고 게시글을 쓰고 나니 Front matter가 안먹네요. 다른것보다 excerpt(요약문)은 꼭 쓰고싶은데... 
+일단 타이틀/카테고리/날짜 3가지만 남겨보았습니다.
 
-근데 Front matter가 안먹는다. 일단 타이틀/카테고리/날짜 3가지만 남겨보았다.
+## excerpt(요약문) 작성이 안 되는 경우..
 
 [xho95.github.io](https://xho95.github.io/blog/jekyll/markdown/post/kramdown/2016/01/12/Post-a-new-MarkDown-file.html)
+[https://jekyllrb.com](https://jekyllrb.com/docs/posts/#post-excerpts)
+[https://mmistakes.github.io](https://mmistakes.github.io/so-simple-theme/tags/#excerpt)
+위의 두 글과 한 페이지를 참고해서
+front matter에 post.excerpt 항목을 추가해 보았습니다...
+
 
 ## 마크다운?
 
