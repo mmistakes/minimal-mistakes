@@ -18,6 +18,9 @@
       {% if site.author.instagram %}
         <li><a href="http://instagram.com/{{ site.author.instagram }}" title="Instagram"><i class="fa fa-fw fa-instagram" aria-hidden="true"></i></a></li>
       {% endif %}
+      {% if site.author.mastodon %}
+        <li><a rel="me" href="https://hachyderm.io/@{{ site.author.instagram }}" title="Mastodon"><i class="fa fa-fw fa-mastodon" aria-hidden="true"></i></a></li>
+      {% endif %}
       {% if site.author.github %}
         <li><a href="http://github.com/{{ site.author.github }}" title="Github"><i class="fa fa-fw fa-github" aria-hidden="true"></i></a></li>
       {% endif %}
