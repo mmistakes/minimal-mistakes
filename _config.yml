@@ -57,6 +57,9 @@ alexa_site_verification  :
 yandex_site_verification :
 
 # Social Sharing
+mastodon:
+  username               : hiltontod
+  instance               : hachyderm.io
 twitter:
   username               : hiltontod
 facebook:
