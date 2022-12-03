@@ -290,4 +290,5 @@ defaults:
       comments: # true
       share: true
       related: true
-      sidebar_main: true
+      sidebar:          #사이드바 추가
+        nav: "sidebar-category"   #사이드바에 내비 
