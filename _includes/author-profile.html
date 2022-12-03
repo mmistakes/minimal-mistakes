@@ -24,6 +24,7 @@
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
+        <br>
       {% endif %}
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fa fa-fw fa-chain" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
@@ -34,9 +35,6 @@
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fa fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
       {% endif %}
-      {% if author.mastodon %}
-        <li><a rel="me" href="https://hachyderm.io/@{{ author.mastodon }}"><i class="fa fa-fw fa-mastodon" aria-hidden="true"></i> Mastodon</a></li>
-      {% endif %}
       {% if author.twitter %}
         <li><a href="https://twitter.com/{{ author.twitter }}"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
       {% endif %}
@@ -45,6 +43,9 @@
       {% endif %}
       {% if author.linkedin %}
         <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
+      {% endif %}
+      {% if author.mastodon %}
+        <li><a rel="me" href="https://hachyderm.io/@{{ author.mastodon }}"><i class="fa fa-fw fa-mastodon" aria-hidden="true"></i> Mastodon</a></li>
       {% endif %}
       {% if author.xing %}
         <li><a href="https://www.xing.com/profile/{{ author.xing }}"><i class="fa fa-fw fa-xing-square" aria-hidden="true"></i> XING</a></li>
