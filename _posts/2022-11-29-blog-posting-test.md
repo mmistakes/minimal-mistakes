@@ -1,9 +1,9 @@
 ---
 Layout: post
 title: "깃헙 블로그 포스팅 테스트"
+excerpt: "사용자 정의된 발췌문 작성..."
 categories: GITHublog
 date: 2022-11-29
-post.excerpt: "사용자 정의된 발췌문 작성..."
 ---
 
 GIT이고 GITHUB고 어떻게 쓰는지 모르는 상태에서 일단 블로그를 만들어 보기로 했는데...  
@@ -34,13 +34,15 @@ jekyll이 뭔지도 몰라서 일단 그냥 냅다 들고 옴.
 그리고 게시글을 쓰고 나니 Front matter가 안먹네요. 다른것보다 excerpt(요약문)은 꼭 쓰고싶은데...   
 일단 타이틀/카테고리/날짜 3가지만 남겨보았습니다.  
   
-## excerpt(요약문) 작성이 안 되는 경우..
+## excerpt(요약문) 작성이 왜 안되는지?
   
 [xho95.github.io](https://xho95.github.io/blog/jekyll/markdown/post/kramdown/2016/01/12/Post-a-new-MarkDown-file.html)  
 [https://jekyllrb.com](https://jekyllrb.com/docs/posts/#post-excerpts)  
 [https://mmistakes.github.io](https://mmistakes.github.io/so-simple-theme/tags/#excerpt)  
-위의 두 글과 한 페이지를 참고해서 front matter에 post.excerpt 항목을 추가해 보았습니다...  
-  
+위의 두 글과 한 페이지를 참고해서 front matter에 post.excerpt 항목을 추가해 보았습니다...만 실패  
+post.excerpt 변수 (또는 page.excerpt) 는 요약문을 작성하는게 아니라
+다른 페이지(예를 들어, 포스트 목록) 에서 요약문을 읽어오는데 사용되는 변수인 듯 합니다.
+
 ## 마크다운?
 
 [inpa.tistory.com](https://inpa.tistory.com/entry/MarkDown-%F0%9F%93%9A-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%F0%9F%92%AF-%EC%A0%95%EB%A6%AC)
@@ -52,3 +54,9 @@ jekyll이 뭔지도 몰라서 일단 그냥 냅다 들고 옴.
 ## 에디터와 모바일 환경
 
 [StackEdit](https://stackedit.io/app#)
+
+
+# 기타 참고할 페이지들
+
+[https://www.wonseoko.com/jekyll/minimal-mistakes/]
+[https://namhoon.kim/2017/03/20/jekyll/009/index.html]
