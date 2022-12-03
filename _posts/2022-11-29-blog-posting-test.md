@@ -41,13 +41,28 @@ jekyll이 뭔지도 몰라서 일단 그냥 냅다 들고 옴.
 [https://mmistakes.github.io](https://mmistakes.github.io/so-simple-theme/tags/#excerpt)  
 위의 두 글과 한 페이지를 참고해서 front matter에 post.excerpt 항목을 추가해 보았습니다...만 실패  
 post.excerpt 변수 (또는 page.excerpt) 는 요약문을 작성하는게 아니라
-다른 페이지(예를 들어, 포스트 목록) 에서 요약문을 읽어오는데 사용되는 변수인 듯 합니다.
+다른 페이지(예를 들어, 포스트 목록) 에서 요약문을 읽어오는데 사용되는 변수인 듯 합니다.  
+  
+얼라...? 갑자기 요약문이 입력되었습니다.  
+---
+Layout: post
+title: "깃헙 블로그 포스팅 테스트"
+excerpt: "발췌문 내용"
+categories: 카테고리명
+date: 2022-11-29
+---
+이런 식으로 작성했는데 갑자기 입력이 되네요. 안되던게 되니까 왜 되는지를 몰라서 답답하네...
 
 ## 마크다운?
 
 [inpa.tistory.com](https://inpa.tistory.com/entry/MarkDown-%F0%9F%93%9A-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%F0%9F%92%AF-%EC%A0%95%EB%A6%AC)
 
 # step 3. 환경 설정하기
+
+## 테마 적용하기
+
+_config.yml 파일의 15행에 있는 minimal_mistakes_skin 항목을 바꿔주면 색상 테마를 적용할 수 있습니다.
+[https://junhobaik.github.io/](https://junhobaik.github.io/jekyll-apply-theme/)
 
 ## 레이아웃
 
