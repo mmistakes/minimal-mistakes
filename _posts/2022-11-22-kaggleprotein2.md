@@ -3,7 +3,7 @@ title: '[Kaggle/CV] Protein Atlas - 한 단계 발전된 모델 🔬'
 toc: true
 toc_sticky: true
 categories:
-  - kaggle
+  - kaggle-imageclassification
 ---
 ## 2. Protein Atlas
 
