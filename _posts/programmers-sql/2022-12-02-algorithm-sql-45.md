@@ -9,8 +9,6 @@ toc: true
 toc_sticky: true
 toc_label : "목차"
 toc_icon: "bars"
-
-published: false
 ---
 
 <small>SQL 고득점 Kit - String, Date 문제</small>
@@ -66,7 +64,13 @@ published: false
 
 ## (2) 코드 작성
 ```sql
-
+SELECT A.APNT_NO, P.PT_NAME, A.PT_NO, A.MCDP_CD, D.DR_NAME, A.APNT_YMD
+FROM PATIENT AS P
+  JOIN APPOINTMENT AS A ON P.PT_NO = A.PT_NO
+  JOIN DOCTOR AS D ON A.MDDR_ID = D.DR_ID
+WHERE MONTH(A.APNT_YMD) = '04' AND A.APNT_CNCL_YN = 'N' AND A.MCDP_CD = 'CS'
+GROUP BY PT_NAME
+ORDER BY A.APNT_YMD
 ```
 
 ## (3) 코드 리뷰 및 회고
