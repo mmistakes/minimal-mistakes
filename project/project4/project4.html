@@ -4,7 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./project4.css" />
-    <title>Momentum App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Mali:ital,wght@0,200;0,400;0,500;1,400;1,500&family=Nanum+Pen+Script&family=Nunito:wght@600&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Digimon-Momentum App</title>
   </head>
   <body>
     <div class="header-box">
@@ -19,12 +29,13 @@
         <h2 id="clock">00:00:00</h2>
       </div>
       <!-- 시간 -->
-      <form id="login-form" class="hidden">
+      <form id="login-form">
         <input
+          class="hidden"
           required
           maxlength="15"
           type="text"
-          placeholder="what is your name?"
+          placeholder="Input 'Chosen Child' name"
         />
       </form>
       <!-- 이름입력창 -->
@@ -37,11 +48,13 @@
       </form>
       <!-- todo입력창 -->
       <ul id="todo-list"></ul>
-    </div>
-    <!-- todo리스트 -->
-    <div id="quote">
-      <span></span>
-      <span></span>
+
+      <!-- todo리스트 -->
+      <div id="quote">
+        <span></span>
+        <br />
+        <span></span>
+      </div>
     </div>
     <!-- 명언 -->
 

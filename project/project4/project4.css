@@ -1,8 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script:400");
+
+:root {
+  --yellow: #fae100;
+  --orange: #f17a20;
+  --blue: #0f73b6;
+}
+
+.hidden {
+  display: none;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
 body {
   height: 100vh;
+  width: 100vw;
   background-size: cover;
-  background-repeat: "no-repeat";
-  background-position: "center";
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Press Start 2P", "Jua", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.header-box {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  color: aliceblue;
+  text-shadow: 5px 3px 7px #e91e63;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+  /* position: relative; */
+}
+
+#clock-box {
+  margin-bottom: -50px;
+  font-size: 70px;
+  color: white;
+  text-shadow: 6px 6px 2px #0068b7;
+  margin-top: 260px;
+}
+
+#greeting {
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: 4px 2px 4px var(--orange);
+}
+
+#login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 30px;
+}
+
+#login-form input {
+  width: 550px;
+  height: 30px;
+  border: none;
+  background-color: rgb(59, 184, 184);
+  border-radius: 40px;
+  padding: 5px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+}
+
+#login-form input:hover {
+  outline: none;
+}
+
+input::placeholder {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+  font-family: "Press Start 2P", cursive;
+  background-size: contain;
+  color: #fcab3f;
+}
+
+#todo-form input {
+  width: 600px;
+  height: 50px;
+  text-align: center;
+  border: 0 solid black;
+  background-color: var(--blue);
+  padding-top: 5px;
+  background-color: transparent;
+  font-size: 40px;
+  color: white;
+  text-shadow: -2px 2px 3px rgb(3, 3, 3);
+}
+
+#todo-form input:hover {
+  outline: none;
+  background-color: transparent;
+}
+
+#todo-form input:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+#todo-form > input::placeholder {
+  font-size: 20px;
+}
+
+#todo-list {
+  margin-top: 6px;
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 3px 4px var(--blue);
+}
+
+#todo-list li {
+  display: flex;
+  align-content: center;
+  margin-bottom: 4px;
+  margin-right: 10px;
+}
+
+#todo-list li span {
+  text-align: center;
+}
+
+#todo-list li button {
+  outline: 0;
+  list-style: none;
+  border: 0;
+  background-color: transparent;
+}
+
+#quote {
+  position: absolute;
+  bottom: 0px;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 2px 4px var(--orange);
+  width: 820px;
 }
