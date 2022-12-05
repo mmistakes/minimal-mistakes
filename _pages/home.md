@@ -14,5 +14,5 @@ header:
 
 I am a PhD candidate in Mathematics at the [University of Tennessee Knoxville](https://www.math.utk.edu). 
 
-I am interested in Machine Learning within the scope of Data Assimilation and Quantum Computing, with applications to Stochastic Dynamical Systems. ..
+I am interested in Machine Learning within the scope of Data Assimilation and Quantum Computing, with applications to Stochastic Dynamical Systems. 
 
