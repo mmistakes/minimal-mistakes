@@ -1,6 +1,6 @@
 ---
 title: "Using APIs to Retrieve Data"
-excerpt: "Short description of portfolio item number 1<br/><img src='/assets/images/API.png'>"
+excerpt: "<br/><img src='/assets/images/API.png'>"
 collection: portfolio
 ---
 
