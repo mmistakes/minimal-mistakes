@@ -16,7 +16,7 @@ title_separator          : "-"
 subtitle                 : "A Jekyll theme"
 name                     : &name "Muhammad Yusuf" # &name is a YAML anchor which can be *referenced later
 description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
-url                      : https://mmistakes.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://www.clashmwns.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "mwnsofficial/clashmwns"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
