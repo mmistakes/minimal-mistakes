@@ -7,18 +7,18 @@
 
 remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Minimal Mistakes"
+title                    : "clashmwms"
 title_separator          : "-"
 subtitle                 : "A Jekyll theme"
-name                     : &name "Michael Rose" # &name is a YAML anchor which can be *referenced later
+name                     : &name "Muhammad Yusuf" # &name is a YAML anchor which can be *referenced later
 description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
 url                      : https://mmistakes.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
-repository               : "mmistakes/minimal-mistakes"
+baseurl                  : "/" # the subpath of your site, e.g. "/blog"
+repository               : "mwnsofficial/clashmwns"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -59,7 +59,7 @@ algolia:
   application_id         : QB6HVGBSBA # YOUR_APPLICATION_ID
   index_name             : minimal_mistakes # YOUR_INDEX_NAME
   search_only_api_key    : 9d5014e5bbc77372547bce778dfa5663 # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : true # true (default), false
+  powered_by             : false # true (default), false
   files_to_exclude:
     - _posts/2017-11-28-post-exclude-search.md
 
@@ -100,7 +100,7 @@ author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
   avatar           : "/assets/images/michael-rose.jpg"
   bio              : "Just another *boring*, *tattooed*, *time traveling*, *designer*."
-  location         : "Buffalo, NY"
+  location         : "Banjarmasin, ID"
   links:
     - label: "Made Mistakes"
       icon: "fas fa-fw fa-link"
