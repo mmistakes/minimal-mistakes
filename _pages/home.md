@@ -8,7 +8,7 @@ redirect_from:
   - /about/
   - /about.html
 header:
-  image: assets/images/headerimg.jpg
+  image: assets/images/headerimg.png
 ---
 
 
