@@ -1,5 +1,6 @@
 ---
 title: "Using APIs to Retrieve Data"
+excerpt: "Tech: Python, Git"
 header:
   image: assets/images/headerimg.png 
   teaser: /assets/images/api.png
