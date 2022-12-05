@@ -4,7 +4,7 @@ header:
   teaser: /assets/images/api.png
 collection: portfolio
 gallery:
-  - url: /assets/images/API.jpg
+  - url: /assets/images/API.png
     
 
 ---
