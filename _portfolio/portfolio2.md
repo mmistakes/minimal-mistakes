@@ -1,5 +1,6 @@
 ---
 title: "Stock Index Forecasting "
+excerpt: "Tech: R, Git"
 header:
   image: assets/images/headerimg.png 
   teaser: /assets/images/stockteaser.png
