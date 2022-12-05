@@ -8,4 +8,4 @@ classes: wide
 ---
 
 
-A collection of my Data Science, Machine Learning and Research projects.
+A collection of my Data Science, Machine Learning and Quantum Computing Research projects.
