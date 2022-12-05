@@ -2,7 +2,7 @@
 title: "Presentations"
 layout: archive
 permalink: /presentations/
-author_profile: false
+author_profile: true
 ---
 
 
