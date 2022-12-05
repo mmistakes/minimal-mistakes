@@ -1,6 +1,7 @@
 ---
 title: "Using APIs to Retrieve Data"
-excerpt: "<br/><img src='/assets/images/API.png'>"
+header:
+  teaser: /assets/images/API.png
 collection: portfolio
 ---
 
