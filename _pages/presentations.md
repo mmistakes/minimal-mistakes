@@ -21,4 +21,4 @@ author_profile: true
 * **Parameter reduction in adversarial quantum circuit learning**. Oak Ridge National Laboratory, Summer Intern Symposium, Oak Ridge, TN. [Virtual Poster]. August 2021.
 
 
-#
+
