@@ -1,6 +1,7 @@
 ---
 title: "Using APIs to Retrieve Data"
 header:
+  image: assets/images/headerimg.png 
   teaser: /assets/images/api.png
 collection: portfolio
 gallery:
