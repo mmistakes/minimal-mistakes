@@ -3,6 +3,8 @@ title: "Presentations"
 layout: archive
 permalink: /presentations/
 author_profile: true
+header:
+  image: assets/images/headerimg.png 
 ---
 
 
