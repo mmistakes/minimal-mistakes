@@ -12,6 +12,10 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1794381705838564"
+     crossorigin="anonymous"></script>
+
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
@@ -19,7 +23,23 @@
     {% include_cached masthead.html %}
 
     <div class="initial-content">
+    <div align="center" style="margin: 1em 0;">
+        <!-- bannerku -->
+       <ins class="adsbygoogle"
+            style="display:inline-block;width:320px;height:240px"
+            data-ad-client="ca-pub-1794381705838564"
+            data-ad-slot="9279811452"></ins>
+      </div>
+
       {{ content }}
+
+    <div align="center" style="margin: 1em 0;">
+        <!-- bannerku -->
+       <ins class="adsbygoogle"
+            style="display:inline-block;width:320px;height:240px"
+            data-ad-client="ca-pub-1794381705838564"
+            data-ad-slot="9279811452"></ins>
+      </div>
     </div>
 
     {% if site.search == true %}
