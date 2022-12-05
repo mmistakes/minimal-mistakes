@@ -14,4 +14,7 @@ For this mini project, we will focus on equities data from the Frankfurt Stock E
 
 We pull some data from [data.nasdaq.com](https://data.nasdaq.com/).
 
-[Gihub Repository](https://github.com/sandra-nguemto/dataretrievalapi)
+
+
+{% include gallery caption="[Gihub Repository](https://github.com/sandra-nguemto/dataretrievalapi)
+" %}
