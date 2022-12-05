@@ -20,7 +20,7 @@ header:
 2021
 ======
 
-* **Parameter reduction in adversarial quantum circuit learning**. Oak Ridge National Laboratory, Summer Intern Symposium, Oak Ridge, TN. [Virtual Poster]. August 2021.
+* **Parameter reduction in adversarial quantum circuit learning**. Oak Ridge National Laboratory, Summer Intern Symposium, Oak Ridge, TN. [Virtual Poster]. August 2021. --
 
 
 
