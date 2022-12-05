@@ -9,6 +9,7 @@ redirect_from:
   - /about.html
 header:
   image: assets/images/headerimg.png
+layout: splash    
 ---
 
 
