@@ -39,8 +39,8 @@ main:
     url: /publications/  
     
  
-#   - title: "Portfolio"
-#     url: /portfolio/
+  - title: "Portfolio"
+    url: /portfolio/
     
 #  - title: "Guide"
 #    url: /markdown/
