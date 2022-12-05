@@ -18,5 +18,5 @@ In the paper where this model is presented it is tested on the TAIEX for the yea
 
 
 
-{% include gallery caption="[Gihub Repository]([https://github.com/sandra-nguemto/dataretrievalapi](https://github.com/sandra-nguemto/stock-index-forecasting))
+{% include gallery caption="[Gihub Repository]([https://github.com/sandra-nguemto/dataretrievalapi](https://github.com/sandra-nguemto/stock-index-forecasting)
 " %}
