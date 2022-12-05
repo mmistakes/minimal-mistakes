@@ -7,6 +7,8 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+header:
+  image: assets/images/universe-g353fb7c4c_1280.jpg
 ---
 
 
