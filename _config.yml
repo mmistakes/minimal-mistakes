@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko_KR"
-title                    : "woolfie's note"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title                    : "My growth daily diary"
+title_separator          : "|"
+subtitle                 : "Programming & Seoul"
 name                     : "Joohee kim"
-description              : "My growth daily diary"
+description              : "쥬씨의 상경 & 성장 블로그입니다."
 url                      : "https://woolfiekim.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -105,10 +105,10 @@ analytics:
 # Site Author
 author:
   name             : "Joohee kim"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  avatar           : "/images/avatar/shrimp.png"
+  bio              : "주희의 개발일기"
+  location         : "South korea"
+  email            : "woolfie@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
