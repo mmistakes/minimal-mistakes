@@ -109,6 +109,10 @@ _includes/author-profile.html 파일에서 3군데를 주석처리했다.
       
 ```
 
+포스트 상에서는 사이드바가 나타나는데  
+다른데서는 사이드바가 안보인다.  
+nav_list를 수정해야 하나보다
+
 ## 사이드바에 카테고리 넣기
 
 [https://devyurim.github.io](https://devyurim.github.io/development%20environment/github%20blog/2018/08/07/blog-6.html)
