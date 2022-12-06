@@ -9,4 +9,5 @@ RUN apk add --no-cache --virtual .build-deps \
         make 
 WORKDIR /srv/jekyll
 ADD Gemfile /srv/jekyll/
+ADD minimal-mistakes-jekyll.gemspec /srv/jekyll/
 RUN bundle install
