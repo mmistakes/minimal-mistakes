@@ -1,6 +1,6 @@
 ---
 Layout: post
-title: "깃헙 블로그 포스팅 테스트"
+title: "좌충우돌 GITHUB로 블로그 만들기"
 excerpt: "GITHUB을 이용한 블로그를 만들고 포스팅하기까지의 험난한(?) 과정을 대충 적어보았다."
 categories: GITHublog
 date: 2022-11-29
@@ -139,7 +139,9 @@ permalink: /[카테고리 주소 (영문)]
 {% assign posts = site.categories.[카테고리 주소 (영문)] %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
 ```
-일단 이렇게 해 놨다...
+일단 이렇게 해 놨다...  
+  
+근데 게시글에 나오는 카테고리 페이지를 클릭하니 categories/#[category name] 형식이라 이것도 수정이 필요할 듯 하다
 
 ### 네비게이션 수정
 
