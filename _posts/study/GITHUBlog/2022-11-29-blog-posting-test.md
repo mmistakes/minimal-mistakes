@@ -73,11 +73,95 @@ data\navigation.yml에서 전부 주석처리
 _config.yml에서 breadcrumps -> true, comment provider -> facebook, search -> true  
 등등...
 
+사이드바 내용 날리는게 어려웠다. 코딩의 코도 모르는 바보...
+_includes/author-profile.html 파일에서 3군데를 주석처리했다.
+```
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  <!-- 여기랑
+  {% if author.avatar %}
+    <div class="author__avatar"> 
+    ....
+  {% endif %}
+  -->
+  
+  <!-- 여기
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+    ....
+    {% endif %}
+  </div>
+  주석2-->
+  
+  
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
+    <ul class="author__urls social-icons">
+      <!--마지막으로 여기!!! 를 주석처리
+      {% if author.location %}
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.location }}</span>
+        </li>
+      {% endif %}
+      -->
+      
+      ... 이하생략
+      
+```
+
 ## 사이드바에 카테고리 넣기
 
 [https://devyurim.github.io](https://devyurim.github.io/development%20environment/github%20blog/2018/08/07/blog-6.html)
 [https://ansohxxn.github.io](https://ansohxxn.github.io/blog/category/)
 [https://x2info.github.io](https://x2info.github.io/minimal-mistakes/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC_%EB%A7%8C%EB%93%A4%EA%B8%B0/)
+
+
+카테고리별로 페이지를 만들고
+네비게이션에 각 카테고리별로 페이지로 가는 링크를 추가하고
+config.yml에 사이드바를 등록하는 순서인듯?
+
+
+### 카테고리별 페이지 만들기
+
+_pages 폴더에 category-[category name].md 형태로 파일을 만들고 내용은
+```
+---
+title: "제목"
+layout: archive
+permalink: /[카테고리 주소 (영문)]
+---
+
+
+{% assign posts = site.categories.[카테고리 주소 (영문)] %}
+{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+```
+일단 이렇게 해 놨다...
+
+### 네비게이션 수정
+
+_data/navigation.yml 파일에서 기존 항목 전부 주석처리하고
+```
+main:
+<!--
+주석처리...
+-->
+sidebar-category:
+  - title: "categories"
+    children:
+      - title: "[카테고리1]"
+        url: "/[카테고리1 주소]
+      - title: "[카테고리2]"
+        url: "/[카테고리2 주소]"
+```
+
+
+### config 수정
+config.yml의 마지막에 아래 코드 추가
+```
+      sidebar:          #사이드바
+        nav: "sidebar-category"   #사이드바에 내비 추가
+```
+
 
 ## 에디터와 모바일 환경
 
