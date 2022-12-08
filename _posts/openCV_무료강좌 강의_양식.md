@@ -1,5 +1,5 @@
 ---
-title: "제목"
+title: "9강 파노라마"
 categories:
   - openCV
 
