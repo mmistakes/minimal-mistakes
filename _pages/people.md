@@ -72,7 +72,7 @@ profile of poultry specimens from the pre- and post-antibiotic eras.
 
 ![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/winders.jpeg){: .align-left}
 ## Jeremy Winders, PhD
-_PhD, Mississippi State University, 2019_
+_PhD Mississippi State University, 2019_
 
 Dr. Winders is working on a project to determine the sex of chicken eggs when they are laid by applying
 high-throughput Proton transfer reaction mass spectrometry (PTR-MS) and machine learning.   
@@ -85,16 +85,28 @@ Dr. Einarsson is is a University of Florida postdoc using Bayesian networks
 constructed from metagenomics and exo-metabolomics data to model microbe
 metabolite interactions in a tomato pathogen system using _Ralstonia solanacearum_.
 
-![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/users.png){: .align-left}
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/ian_rambo.jpeg){: .align-left}
 ## Ian Rambo, PhD
-_PhD, University of Texas Austin_
+_PhD University of Texas, Austin_
 
 Dr. Rambo is joining the group this summer and  working on a jointly advised
 project with the [Food Processing and Sensory Quality Research Unit](https://www.ars.usda.gov/southeast-area/new-orleans-la/southern-regional-research-center/food-processing-and-sensory-quality-research/) in New Orleans, LA to develop better food  allergy diagnostic tests. Using data from arrays
 of food allergen peptides and protein structures from AlphaFold he is designing
 3D convolutional neural networks to predict allergic reactions to foods.
 
-# Graduate Students
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/lei_ma_2.jpg){: .align-left}
+## Lei Ma, PhD
+_PhD Massachusetts Institute of Technology / Woods Hole Oceanographic Institution, 2022_
+
+Dr. Lei Ma received her PhD in 2022 from the MIT-WHOI Joint Program in 
+Oceanography/Applied Ocean Science and Engineering. Her dissertation 
+focused on the ecology of marine microorganisms in coral reefs and 
+in Atlantic killifish. She is particularly interested in genotype-environment-microbiome 
+interactions in animal hosts, such as the influence of host evolution 
+on its microbiome. As a postdoc at the USDA-ARS, she is working on
+developing methods to type Salmonella strains and predict antimicrobial resistance.
+
+# Former members
 
 ![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/users.png){: .align-left}
 ## Vipul Shinde
@@ -104,7 +116,6 @@ Vipul is working with our lab and the [Bacterial Epidemiology and Antibiotic Res
 o develop a Bayesian network to predict the secondary antibiotic resistances
 are selected by the application a primary antibiotic.
 
-# Former members
 
 ![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/foxx.jpg){: .align-left}
 ## Alicia Foxx, PhD
