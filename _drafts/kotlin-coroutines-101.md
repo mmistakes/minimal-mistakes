@@ -147,9 +147,9 @@ Kotlin provides the `suspend` keyword to mark a function that can suspend a coro
 
 ```kotlin
 suspend fun bathTime() {
-  println("Going to the bathroom")
+  logger.info("Going to the bathroom")
   delay(500L)
-  println("Exiting the bathroom")
+  logger.info("Exiting the bathroom")
 }
 ```
 As we can see, we will use the same examples of the article [ZIO: Introduction to Fibers](https://blog.rockthejvm.com/zio-fibers/), just to show how coroutines are different from fibers. 
@@ -171,12 +171,12 @@ fun bathTime(continuation: Continuation<*>): Any {
     val continuation =
       continuation as? BathTimeContinuation ?: BathTimeContinuation(continuation)
     if (continuation.label == 0) {
-      println("Going to the bathroom")
+      logger.info("Going to the bathroom")
       continuation.label = 1
       if (delay(500L, continuation) == COROUTINE_SUSPENDED) return COROUTINE_SUSPENDED
     }
     if (continuation.label == 1) {
-      println("Exiting the bathroom")
+      logger.info("Exiting the bathroom")
     }
     error("This line should never be reached")
 }
@@ -196,9 +196,9 @@ First, let's declare another suspending function, which will simulate the action
 
 ```kotlin 
 suspend fun boilingWater() {
-    println("Boiling water")
+    logger.info("Boiling water")
     delay(1000L)
-    println("Water boiled")
+    logger.info("Water boiled")
 }
 ```
 
