@@ -8,11 +8,19 @@
             📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
       </li>
       <li>
-        <span class="nav__sub-title">Front End</span>
+        <span class="nav__sub-title">Programming</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Cpp" %}
                         <li><a href="/categories/cpp" class="">C ++ ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Algorithm" %}
+                        <li><a href="/categories/algorithm" class="">Algorithm ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
