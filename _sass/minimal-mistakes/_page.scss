@@ -72,7 +72,7 @@ body {
   font-family: $cute;
   margin-top: 0;
   line-height: 1.2;
-  color: mix(#fff, $primary-color, 40%);
+  color: black;
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -133,7 +133,7 @@ body {
       text-decoration: underline;
 
       img {
-        box-shadow: 0 0 10px rgba(#000, 0.25);
+        box-shadow: 0 0 5px rgba(#000, 0.25);
       }
     }
   }
@@ -184,7 +184,7 @@ body {
     animation-delay: 0.25s;
 
     a {
-      color: #fff;
+      color: black;
     }
 
     .wrapper {
@@ -200,8 +200,7 @@ body {
     .page__meta,
     .page__lead,
     .btn {
-      color: #fff;
-      text-shadow: 1px 1px 4px rgba(#000, 0.5);
+      color: black;
     }
 
     .page__lead {
@@ -230,10 +229,10 @@ body {
   right: 0;
   margin: 0 auto;
   padding: 2px 5px;
-  color: #fff;
+  color: black;
   font-family: $caption-font-family;
   font-size: $type-size-7;
-  background: #000;
+  background: grey;
   text-align: right;
   z-index: 5;
   opacity: 0.5;
@@ -244,7 +243,7 @@ body {
   }
 
   a {
-    color: #fff;
+    color: black;
     text-decoration: none;
   }
 }
@@ -326,9 +325,9 @@ body {
   margin-bottom: 8px;
   padding: 3px 8px;
   text-decoration: none;
-  border: 1px solid $background-color;
+  border: 1px solid black;
   border-radius: $border-radius;
-  background-color: #4D5357;
+  background-color: white;
   font-family: $serif;
   color: $primary-color;
 
@@ -346,9 +345,9 @@ body {
   text-decoration: none;
   border: 1px solid $background-color;
   border-radius: $border-radius;
-  background-color: mix(#fff, #4D5357, 18%);
+  background-color: grey;
   font-family: $serif;
-  color: mix(#fff, $primary-color, 2%);;
+  color: white;
 
   &:hover {
     text-decoration: none;
