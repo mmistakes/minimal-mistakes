@@ -20,63 +20,92 @@ We'll use the following Maven file to resolve dependency and build the code.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.rockthejvm</groupId>
-    <artifactId>kactor-coroutines-playground</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+  <groupId>in.rcard</groupId>
+  <artifactId>kactor-coroutines-playground</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
 
-    <properties>
-        <kotlin.version>1.7.20</kotlin.version>
-        <kotlinx-coroutines.version>1.6.4</kotlinx-coroutines.version>
-    </properties>
+  <properties>
+    <kotlin.version>1.7.20</kotlin.version>
+    <kotlinx-coroutines.version>1.6.4</kotlinx-coroutines.version>
+    <slf4j-api.version>2.0.5</slf4j-api.version>
+    <logback-classic.version>1.4.5</logback-classic.version>
+  </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-stdlib</artifactId>
-            <version>${kotlin.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.jetbrains.kotlinx</groupId>
-            <artifactId>kotlinx-coroutines-core</artifactId>
-            <version>${kotlinx-coroutines.version}</version>
-        </dependency>
-    </dependencies>
+  <dependencies>
+    <dependency>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-stdlib</artifactId>
+      <version>${kotlin.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains.kotlinx</groupId>
+      <artifactId>kotlinx-coroutines-core</artifactId>
+      <version>${kotlinx-coroutines.version}</version>
+    </dependency>
 
-    <build>
-        <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
-        <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j-api.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback-classic.version}</version>
+    </dependency>
+  </dependencies>
 
-        <plugins>
-            <plugin>
-                <groupId>org.jetbrains.kotlin</groupId>
-                <artifactId>kotlin-maven-plugin</artifactId>
-                <version>${kotlin.version}</version>
+  <build>
+    <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
+    <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
 
-                <executions>
-                    <execution>
-                        <id>compile</id>
-                        <goals>
-                            <goal>compile</goal>
-                        </goals>
-                    </execution>
+    <plugins>
+      <plugin>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-maven-plugin</artifactId>
+        <version>${kotlin.version}</version>
 
-                    <execution>
-                        <id>test-compile</id>
-                        <goals>
-                            <goal>test-compile</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+        <executions>
+          <execution>
+            <id>compile</id>
+            <goals>
+              <goal>compile</goal>
+            </goals>
+          </execution>
+
+          <execution>
+            <id>test-compile</id>
+            <goals>
+              <goal>test-compile</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>
+
+
 ```
 
 Clearly, it's possible to create a similar building file for Gradle, but we'll stick to Maven for the sake of simplicity.
+
+During the article, we'll use a Slf4j logger to print the output of the code, instead of using the `println` function:
+
+```kotlin
+val logger: Logger = LoggerFactory.getLogger("CoroutinesPlayground")
+```
+
+The logger allows us to easily trace the name of the coroutine that is running the code, and the name of the tread that is executing the coroutine. For example, we will have the following output:
+
+```text
+14:59:20.741 [DefaultDispatcher-worker-1 @coroutine#2] INFO CoroutinesPlayground - Boiling water
+```
+
+In the above example, the `DefaultDispatcher-worker-1` represents the name of the thread executing the corouting called `coroutine#2`.
 
 ## 2. Why Coroutines?
 
@@ -157,5 +186,25 @@ Well, a lot of things are happening here. First of all, we have to check if the 
 
 Then, if the `label` is `0`, we print the first message and we set the label to `1`. Then, we call the `delay` function, passing the continuation object. If the `delay` function returns `COROUTINE_SUSPENDED`, it means that the function was suspended, and we return `COROUTINE_SUSPENDED` to the caller. If the `delay` function returns a value different from `COROUTINE_SUSPENDED`, it means that the function was resumed, and we can continue the execution of the `bathTime` function. If the label is `1`, the function was just resumed, and we print the second message.
 
-Basically, a suspending function acts like a state machine. Clearly, the above is a simplified version of the actual code generated by the Kotlin compiler. Though, it's enough to understand how coroutines work. However, we didn't talk about how the runtime resumes a suspended coroutine, and how we can set the state of a suspending function, since this is far beyond the scope of this article.
+Clearly, the above is a simplified version of the actual code generated by the Kotlin compiler. Though, it's enough to understand how coroutines work. However, we didn't talk about how the runtime resumes a suspended coroutine, and how we can set the state of a suspending function, since this is far beyond the scope of this article.
+
+### 3.2. Coroutine Builders
+
+Now that we now how to suspend and resume a coroutine, we can start looking at how to build a coroutine. The Kotlin coroutines library provides a set of functions called coroutine builders. These functions are used to create a coroutine and to start its execution.
+
+First, let's declare another suspending function, which will simulate the action of boiling some water:
+
+```kotlin 
+suspend fun boilingWater() {
+    println("Boiling water")
+    delay(1000L)
+    println("Water boiled")
+}
+```
+
+Now, we can create two different coroutines which race the execution of having a bath and boiling water. If we need to create and start a coroutine that doesn't return a value, we can use the `launch` function:
+
+```kotlin
+
+``` 
 
