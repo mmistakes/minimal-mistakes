@@ -202,9 +202,41 @@ suspend fun boilingWater() {
 }
 ```
 
-Now, we can create two different coroutines which race the execution of having a bath and boiling water. If we need to create and start a coroutine that doesn't return a value, we can use the `launch` function:
+Now, we can create two different coroutines which race the execution of having a bath and boiling water. The first function we introduce is the `coroutineScope` function:
 
 ```kotlin
+suspend fun main() {
+  logger.info("Starting the morning routine")
+  coroutineScope {
+    bathTime()
+  }
+  coroutineScope {
+    boilingWater()
+  }
+  logger.info("Ending the morning routine")
+}
+```
 
-``` 
+The `coroutineScope` function is a suspending function, and it's not commonly presented as a coroutines builders. In fact, it's main aim is to create a new coroutine scope, making it available to the `block` suspending lambda:
+
+```kotlin
+suspend fun <R> coroutineScope(
+  block: suspend CoroutineScope.() -> R
+): R
+```
+
+However, formally, it also creates a new coroutines, which suspends the execution of the previous one until the end of its execution. So, we shouldn't be surprised that the output of the above code is something similar to the following:
+
+```text
+15:27:05.260 [main] INFO CoroutinesPlayground - Starting the morning routine
+15:27:05.286 [main] INFO CoroutinesPlayground - Going to the bathroom
+15:27:05.811 [kotlinx.coroutines.DefaultExecutor] INFO CoroutinesPlayground - Exiting the bathroom
+15:27:05.826 [kotlinx.coroutines.DefaultExecutor] INFO CoroutinesPlayground - Boiling water
+15:27:06.829 [kotlinx.coroutines.DefaultExecutor] INFO CoroutinesPlayground - Water boiled
+15:27:06.830 [kotlinx.coroutines.DefaultExecutor] INFO CoroutinesPlayground - Ending the morning routine
+```
+
+As we can see, the execution of the two coroutines is purely sequential. However, we can see that the runtime uses two different threads to execute the whole process, the `main` and the `kotlinx.coroutines.DefaultExecutor` thread.
+
+
 
