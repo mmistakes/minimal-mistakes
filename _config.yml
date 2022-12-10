@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Seyeon"
-  avatar           : "https://github.com/account"
+  avatar           : "/assets/images/wink.png"
   bio              : "Hello, I am Seyeon :)"
   #location         : "Toronto, Canada"
   links:
