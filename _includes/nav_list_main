@@ -11,7 +11,7 @@
         <span class="nav__sub-title">Front End</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "HTML" %}
+                    {% if category[0] == "Html" %}
                         <li><a href="/categories/html" class="">HTML ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
