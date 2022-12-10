@@ -11,27 +11,8 @@
         <span class="nav__sub-title">Front End</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Html" %}
-                        <li><a href="/categories/html" class="">HTML ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            
-
-        <span class="nav__sub-title">Back End</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Nodejs" %}
-                        <li><a href="/categories/node" class="">Node.js ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-
-        <span class="nav__sub-title">Coding Test</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/algorithm" class="">Algorithm ({{category[1].size}})</a></li>
+                    {% if category[0] == "Cpp" %}
+                        <li><a href="/categories/cpp" class="">C ++ ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
