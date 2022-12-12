@@ -106,8 +106,8 @@ analytics:
 author:
   name             : "nagne"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "database"
-  location         : "Somewhere"
+  bio              : #"database"
+  location         : #"Somewhere"
   email            :
   links:
     - label: "Email"
