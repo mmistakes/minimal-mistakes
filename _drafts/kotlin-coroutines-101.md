@@ -286,3 +286,16 @@ suspend fun concurrentMorningRoutine() {
     }
 }
 ```
+
+The log of the above code is something similar to the following:
+
+```text
+09:09:44.817 [main] INFO CoroutinesPlayground - Starting the morning routine
+09:09:44.870 [DefaultDispatcher-worker-1 @coroutine#1] INFO CoroutinesPlayground - Going to the bathroom
+09:09:44.871 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - Boiling water
+09:09:45.380 [DefaultDispatcher-worker-2 @coroutine#1] INFO CoroutinesPlayground - Exiting the bathroom
+09:09:45.875 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - Water boiled
+09:09:45.876 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - Ending the morning routine
+```
+
+We can extract a lot of information from the above log.
