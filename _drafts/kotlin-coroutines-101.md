@@ -99,7 +99,13 @@ During the article, we'll use a Slf4j logger to print the output of the code, in
 val logger: Logger = LoggerFactory.getLogger("CoroutinesPlayground")
 ```
 
-The logger allows us to easily trace the name of the coroutine that is running the code, and the name of the tread that is executing the coroutine. For example, we will have the following output:
+The logger allows us to easily trace the name of the coroutine that is running the code, and the name of the tread that is executing the coroutine. Remember: To see the name of the coroutine, we need to add the following VM property when running the code: 
+
+```
+-Dkotlinx.coroutines.debug
+```
+
+For example, with the above setup, we will have the following output:
 
 ```text
 14:59:20.741 [DefaultDispatcher-worker-1 @coroutine#2] INFO CoroutinesPlayground - Boiling water
@@ -212,7 +218,7 @@ suspend fun <R> coroutineScope(
 
 The coroutines scope represents the actual implementation of structural concurrency in Kotlin. In fact, the execution of the `block` lambda will be suspended until all the coroutines started inside the `block` lambda are completed. These coroutines are called children coroutines of the scope. Moreover, structural concurrency also brings us the following features:
 
- * Children coroutines inherit the context of the parent coroutine, but they can override it. The context of the coroutine is part of the `Continuation` object we've seen before, and contains elements such us the name of the coroutine, the dispatcher (aka, the pool of threads executing the coroutines), the exception handler, and so on.
+ * Children coroutines inherit the context (`CoroutineContext`) of the parent coroutine, but they can override it. The context of the coroutine is part of the `Continuation` object we've seen before, and contains elements such us the name of the coroutine, the dispatcher (aka, the pool of threads executing the coroutines), the exception handler, and so on.
  * When the parent coroutine is cancelled, all the children coroutines are cancelled as well.
  * When a child coroutine throws an exception, the parent coroutine is stopped as well.
 
@@ -254,6 +260,29 @@ As we can see, the execution is purely sequential. However, we can see that the 
 
 ### 3.3. Coroutine Builders
 
-The Kotlin coroutines library provides a set of functions called coroutine builders. These functions are used to create a coroutine and to start its execution. 
+At this point, we should know about suspending functions and the basics of structural concurrency. It's time to create our first coroutine explicitly. To do so, the Kotlin coroutines library provides a set of functions called coroutine builders. These functions are used to create a coroutine and to start its execution. The first function we'll see is the `launch` function:
 
+```kotlin
+public fun CoroutineScope.launch(
+    context: CoroutineContext = EmptyCoroutineContext,
+    start: CoroutineStart = CoroutineStart.DEFAULT,
+    block: suspend CoroutineScope.() -> Unit
+): Job
+```
 
+The library defines the `launch` builder as an extension function of the `CoroutineScope`. So, we need a scope to create a coroutine in this way. To create a coroutine, we need also a `CoroutineContext`, and a lambda with the code to execute. The builder will pass its `CoroutineScope` to the `block` lambda as the receiver. In this way, we can reuse the scope to create new children coroutines. Finally, the default behavior to of the builder is to start immediately the new coroutine (`CoroutineStart.DEFAULT`).
+
+So, let's add some concurrency on our morning routine. We can start the `boilingWater` and the `bathTime` functions in two new coroutine, and see them racing:
+
+```kotlin
+suspend fun concurrentMorningRoutine() {
+    coroutineScope {
+        launch {
+            bathTime()
+        }
+        launch {
+            boilingWater()
+        }
+    }
+}
+```
