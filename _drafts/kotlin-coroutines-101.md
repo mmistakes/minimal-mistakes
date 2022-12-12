@@ -210,7 +210,11 @@ suspend fun <R> coroutineScope(
 ): R
 ```
 
-The coroutines scope represents the actual implementation of structural concurrency in Kotlin. In fact, the execution of the `block` lambda will be suspended until all the coroutines started inside the `block` lambda are completed. These coroutines are called children coroutines of the scope.
+The coroutines scope represents the actual implementation of structural concurrency in Kotlin. In fact, the execution of the `block` lambda will be suspended until all the coroutines started inside the `block` lambda are completed. These coroutines are called children coroutines of the scope. Moreover, structural concurrency also brings us the following features:
+
+ * Children coroutines inherit the context of the parent coroutine, but they can override it. The context of the coroutine is part of the `Continuation` object we've seen before, and contains elements such us the name of the coroutine, the dispatcher (aka, the pool of threads executing the coroutines), the exception handler, and so on.
+ * When the parent coroutine is cancelled, all the children coroutines are cancelled as well.
+ * When a child coroutine throws an exception, the parent coroutine is stopped as well.
 
 In addition, the `coroutineScope` function  also creates a new coroutines, which suspends the execution of the previous one until the end of its execution. So, if we want to sequentially execute the two steps of out morning routing, we can use the following code:
 
@@ -246,9 +250,10 @@ The `sequentialMorningRoutine` function will execute sequentially the `bathTime`
 15:27:06.830 [kotlinx.coroutines.DefaultExecutor] INFO CoroutinesPlayground - Ending the morning routine
 ```
 
-As we can see, the execution is purely sequential. However, we can see that the runtime uses two different threads to execute the whole process, the `main` and the `kotlinx.coroutines.DefaultExecutor` thread.
+As we can see, the execution is purely sequential. However, we can see that the runtime uses two different threads to execute the whole process, the `main` and the `kotlinx.coroutines.DefaultExecutor` thread. An important property of coroutines is that when they are resumed, they can be executed in a different thread than the one that suspended them. This is the case of the coroutine executing the `bathTime` function: The coroutine starts on the main thread, then the `delay` function suspends it, and, finally, the coroutine is resumed on the `kotlinx.coroutines.DefaultExecutor` thread.
 
+### 3.3. Coroutine Builders
 
-The Kotlin coroutines library provides a set of functions called coroutine builders. These functions are used to create a coroutine and to start its execution.
+The Kotlin coroutines library provides a set of functions called coroutine builders. These functions are used to create a coroutine and to start its execution. 
 
 
