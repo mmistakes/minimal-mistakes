@@ -306,7 +306,7 @@ Moreover, when suspended, the `@coroutine#1` was running on thread `DefaultDispa
 
 Last but not least, the log shows a clear example of structural concurrency. In fact, the execution printed the last log in the `main` method after the end of the execution of both of the coroutines. As we may have noticed, we didn't have any explicit synchronization mechanism to achieve this result in the `main` function. We didn't wait or delay the execution of the `main` function. As we said, this is due to structural concurrency. The `coroutineScope` function creates a scope that is used to create both the two coroutines. Since the two coroutines are children of the same scope, this will wait the end of the execution of both of them before returning.
 
-We can also avoid the use of the structural concurrency, to show that in this case we need to add some wait for the end of the execution of the coroutines. Instead of using the `coroutineScope` function, we can use the `GlobalScope` object. It's like an empty coroutine scope that doesn't force any parent-child relationship between the coroutines. So, we can rewrite the morning routine function as follows:
+We can also avoid the use of the structural concurrency, to show that in this case we need to add some wait for the end of the execution of the coroutines. Instead of using the `coroutineScope` function, we can use the `GlobalScope` object. It's like an empty coroutine scope that does not force any parent-child relationship between the coroutines. So, we can rewrite the morning routine function as follows:
 
 ```kotlin
 suspend fun noStructuralConcurrencyMorningRoutine() {
@@ -320,6 +320,8 @@ suspend fun noStructuralConcurrencyMorningRoutine() {
 }
 ```
 
+The log of the above code is more or less the same as the previous one:
+
 ```text
 14:06:57.670 [main] INFO CoroutinesPlayground - Starting the morning routine
 14:06:57.755 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - Boiling water
@@ -327,4 +329,56 @@ suspend fun noStructuralConcurrencyMorningRoutine() {
 14:06:58.264 [DefaultDispatcher-worker-1 @coroutine#1] INFO CoroutinesPlayground - Exiting the bathroom
 14:06:58.763 [DefaultDispatcher-worker-1 @coroutine#2] INFO CoroutinesPlayground - Water boiled
 14:06:59.257 [main] INFO CoroutinesPlayground - Ending the morning routine
+```
+
+Since we have not any structural concurrency mechanism in act using the `GlobalScope`, we had a `Thread.sleep(1500L` at the end of the function, to wait the end of the execution of the two coroutines. If we remove the `Thread.sleep(1500L)` call, the log will be something similar to the following:
+
+```text
+21:47:09.418 [main] INFO CoroutinesPlayground - Starting the morning routine
+21:47:09.506 [main] INFO CoroutinesPlayground - Ending the morning routine
+```   
+
+As expected, the main function returned before the end of the execution of the two coroutines. So, we can say that the `GlobalScope` is not a good choice to create coroutines.
+
+If we look at the definition of the `launch` function, we can see that it returns a `Job` object. This object is a handle to the coroutine. We can use it to cancel the execution of the coroutine, or to wait for its completion. Let's see how we can use it to wait for the completion of the coroutine. Let's add a new suspending function to out wallet:
+
+```kotlin
+suspend fun preparingCoffee() {
+    logger.info("Preparing coffee")
+    delay(500L)
+    logger.info("Coffee prepared")
+}
+```
+
+In our morning routine, we want to prepare coffee only after having a bath and boiling water. So, we need to wait for the completion of the two coroutines. We can do it calling the `join` method on the resulting `Job` object:
+
+```kotlin 
+suspend fun morningRoutineWithCoffee() {
+    coroutineScope {
+        val bathTimeJob: Job = launch {
+            bathTime()
+        }
+        val  boilingWaterJob: Job = launch {
+            boilingWater()
+        }
+        bathTimeJob.join()
+        boilingWaterJob.join()
+        launch {
+            preparingCoffee()
+        }
+    }
+}
+```
+
+As expected, from the log we can see that the coffee was prepared only after the end of the execution of the two coroutines:
+
+```text
+21:56:18.040 [main] INFO CoroutinesPlayground - Starting the morning routine
+21:56:18.128 [DefaultDispatcher-worker-1 @coroutine#1] INFO CoroutinesPlayground - Going to the bathroom
+21:56:18.130 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - Boiling water
+21:56:18.639 [DefaultDispatcher-worker-1 @coroutine#1] INFO CoroutinesPlayground - Exiting the bathroom
+21:56:19.136 [DefaultDispatcher-worker-1 @coroutine#2] INFO CoroutinesPlayground - Water boiled
+21:56:19.234 [DefaultDispatcher-worker-2 @coroutine#3] INFO CoroutinesPlayground - Preparing coffee
+21:56:19.739 [DefaultDispatcher-worker-2 @coroutine#3] INFO CoroutinesPlayground - Coffee prepared
+21:56:19.739 [DefaultDispatcher-worker-2 @coroutine#3] INFO CoroutinesPlayground - Ending the morning routine
 ```
