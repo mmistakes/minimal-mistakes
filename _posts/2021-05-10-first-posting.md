@@ -91,11 +91,11 @@ class <className>:
 
 ## 이미지 목차
 
-### 이미지 세부 목차1
+### 김치 잘 묵겠습니다.
 
-이미지입니다.
+![img](../images/2021-05-10-first-posting/img.jpg)
 
-### 이미지 세부 목차2
+### 이미지 세부 목차2![common1JMUEPF5](../images/2021-05-10-first-posting/common1JMUEPF5.jpg)
 
 이미지입니다.{: .notice}
 
