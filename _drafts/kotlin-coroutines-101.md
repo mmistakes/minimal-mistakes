@@ -298,4 +298,12 @@ The log of the above code is something similar to the following:
 09:09:45.876 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - Ending the morning routine
 ```
 
-We can extract a lot of information from the above log.
+We can extract a lot of information from the above log. First of all, we can see that we effectively spawned two new coroutines, `@coroutine#1` and `@coroutine#2`. The first runs the `bathTime` suspending function, and the second the `boilingWater`. 
+
+The logs of the two function interleaves, so the execution of the two functions is concurrent. We can say that this model of concurrency is cooperative. In fact, the `@coroutine#2` had a change to execute only when `@coroutine#1` reached the execution of a suspending function, i.e. the `delay` function.
+
+Moreover, when suspended, the `@coroutine#1` was running on thread `DefaultDispatcher-worker-1`. Whereas, when resumed, it ran on thread `DefaultDispatcher-worker-2`. Coroutines run on configurable thread pools. As the log suggested, the default thread pool is called `Dispatchers.Default` (more on the dedicated following section).
+
+Last but not least, the log shows a clear example of structural concurrency. In fact, the execution printed the last log in the `main` method after the end of the execution of both of the coroutines. As we may have noticed, we didn't have any explicit synchronization mechanism to achieve this result in the `main` function. We didn't wait or delay the execution of the `main` function. As we said, this is due to structural concurrency. The `coroutineScope` function creates a scope that is used to create both the two coroutines. Since the two coroutines are children of the same scope, this will wait the end of the execution of both of them before returning.
+
+TODO Introduce the GlobalScope
