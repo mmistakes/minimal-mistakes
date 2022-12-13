@@ -91,7 +91,7 @@ class <className>:
 
 ## 이미지 목차
 
-### 이미지 세부 목차1
+### 이미지 세부 목차1 갑시다.
 
 ![img](../images/2021-05-10-first-posting/img.jpg)
 
