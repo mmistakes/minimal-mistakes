@@ -93,7 +93,7 @@ class <className>:
 
 ### ![img](C:\Users\MASTEK\Pictures\img.jpg)
 
-이미지입니다.
+확인하는 이미지입니다.
 
 ### 이미지 세부 목차2
 
