@@ -306,4 +306,25 @@ Moreover, when suspended, the `@coroutine#1` was running on thread `DefaultDispa
 
 Last but not least, the log shows a clear example of structural concurrency. In fact, the execution printed the last log in the `main` method after the end of the execution of both of the coroutines. As we may have noticed, we didn't have any explicit synchronization mechanism to achieve this result in the `main` function. We didn't wait or delay the execution of the `main` function. As we said, this is due to structural concurrency. The `coroutineScope` function creates a scope that is used to create both the two coroutines. Since the two coroutines are children of the same scope, this will wait the end of the execution of both of them before returning.
 
-TODO Introduce the GlobalScope
+We can also avoid the use of the structural concurrency, to show that in this case we need to add some wait for the end of the execution of the coroutines. Instead of using the `coroutineScope` function, we can use the `GlobalScope` object. It's like an empty coroutine scope that doesn't force any parent-child relationship between the coroutines. So, we can rewrite the morning routine function as follows:
+
+```kotlin
+suspend fun noStructuralConcurrencyMorningRoutine() {
+    GlobalScope.launch {
+        bathTime()
+    }
+    GlobalScope.launch {
+        boilingWater()
+    }
+    Thread.sleep(1500L)
+}
+```
+
+```text
+14:06:57.670 [main] INFO CoroutinesPlayground - Starting the morning routine
+14:06:57.755 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - Boiling water
+14:06:57.755 [DefaultDispatcher-worker-1 @coroutine#1] INFO CoroutinesPlayground - Going to the bathroom
+14:06:58.264 [DefaultDispatcher-worker-1 @coroutine#1] INFO CoroutinesPlayground - Exiting the bathroom
+14:06:58.763 [DefaultDispatcher-worker-1 @coroutine#2] INFO CoroutinesPlayground - Water boiled
+14:06:59.257 [main] INFO CoroutinesPlayground - Ending the morning routine
+```
