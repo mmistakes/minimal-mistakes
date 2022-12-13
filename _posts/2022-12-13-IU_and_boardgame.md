@@ -295,7 +295,7 @@ search: true #false로 주면 검색해도 안나온다
             return answer;
         }    
     }
-    
+
 실행결과
 
 ![실행결과1](../../images/2022-12-13-IU_and_boardgame/실행결과1.png){: width="100%" height="100%"}
