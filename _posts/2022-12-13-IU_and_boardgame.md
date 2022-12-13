@@ -202,7 +202,6 @@ class Solution
         }
         
         //3개의 고무줄중 두개의 이동만으로 조건을 만족한 경우
-        //int[][] reit = {{0,1,2},{1,2,0},{2,0,1}};
         int fir;
         int sec;
         int third;
