@@ -18,7 +18,7 @@ search: true #false로 주면 검색해도 안나온다.
 
 ![디테일2](../../images/2022-12-13-IU_and_boardgame/디테일2.png){: width="100%" height="100%"}
 
-```python
+```java
 import java.util.*;
 class Solution 
 {
