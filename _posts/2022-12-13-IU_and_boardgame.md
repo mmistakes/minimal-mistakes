@@ -178,6 +178,8 @@ search: true #false로 주면 검색해도 안나온다
             }        
             
             /*여기까지 실행후 nums출력
+            nums는 삼각형 각각의 변과, v의 점들사이 각도를 구하고, 
+            그 값이 작은 순서대로 정렬한 것이다.
             [
                 [0,1],
                 [1,0],
@@ -259,7 +261,9 @@ search: true #false로 주면 검색해도 안나온다
                 for(int k=0; k<cur_loc_in_sec; k++)
                 {              
                     second_in.add(nums.get(sec).get(k));    
-                    second_in_c.add(nums.get(sec).get(k));                
+                    second_in_c.add(nums.get(sec).get(k));  
+                    
+                    //두번째 고무줄 이동으로 문제의 조건을 만족한 경우
                     if(second_in.size() == v_length)
                     {
                         answer +=1;                
@@ -275,7 +279,8 @@ search: true #false로 주면 검색해도 안나온다
                         {
                             third_in.add(nums.get(third).get(l)); 
                             if(!first_in.contains(nums.get(third).get(l)))
-                            {                    
+                            {        
+                            	//세번째 고무줄 이동으로 문제의 조건을 만족한 경우
                                 answer = (third_in.size() == v_length) ? answer+1 : answer;                
                             } 
                             
