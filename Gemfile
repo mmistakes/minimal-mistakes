@@ -10,3 +10,6 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
 end
+
+gem 'rake'
+gem 'html-proofer'

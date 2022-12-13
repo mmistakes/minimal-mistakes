@@ -72,6 +72,11 @@ body {
   margin-top: 0;
   line-height: 1;
 
+  a {
+    color: $text-color;
+    text-decoration: none;
+  }
+
   & + .page__meta {
     margin-top: -0.5em;
   }
@@ -131,6 +136,20 @@ body {
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);
       }
+    }
+  }
+
+  :not(pre) > code {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    font-size: 0.8em;
+    background: $code-background-color;
+    border-radius: $border-radius;
+
+    &::before,
+    &::after {
+      letter-spacing: -0.2em;
+      content: "\00a0"; /* non-breaking space*/
     }
   }
 
