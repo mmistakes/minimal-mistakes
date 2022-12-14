@@ -6,9 +6,7 @@ tag : [프로그래머스 Lv5]
 search: true #false로 주면 검색해도 안나온다.
 ---
 
-![문제1](../../images/2022-12-14-IU_and_boardgame/문제1.png){: width="100%" height="100%"}![문제2](../../images/2022-12-14-IU_and_boardgame/문제2.png){: width="100%" height="100%"}![문제3](../../images/2022-12-14-IU_and_boardgame/문제3.png){: width="100%" height="100%"}
-
-코드의 알고리즘 설명![디테일1](../../images/2022-12-14-IU_and_boardgame/디테일1.png){: width="100%" height="100%"}![디테일2](../../images/2022-12-14-IU_and_boardgame/디테일2.png){: width="100%" height="100%"}
+![문제1](../../images/2022-12-14-IU_and_boardgame/문제1.png){: width="100%" height="100%"}![문제2](../../images/2022-12-14-IU_and_boardgame/문제2.png){: width="100%" height="100%"}![문제3](../../images/2022-12-14-IU_and_boardgame/문제3.png){: width="100%" height="100%"}코드의 알고리즘 설명![디테일1](../../images/2022-12-14-IU_and_boardgame/디테일1.png){: width="100%" height="100%"}![디테일2](../../images/2022-12-14-IU_and_boardgame/디테일2.png){: width="100%" height="100%"}
 
 ```java
 import java.util.*;
