@@ -30,12 +30,16 @@ class Solution
                 break;
             default:
                  v_length = v.length;
-                 //answer=calc(triangle,v);
+                 answer=calc(triangle,v);
                  break;                      
          }
         return answer;
     }
-    
+    int calc(int[][] triangle, int[][] v)
+    {        
+        int[][] reit = {{0,1,2},{1,2,0},{2,0,1}};
+        return = 0;
+    }
 }
 ```
 
