@@ -31,6 +31,8 @@ This was already the second successful cross-border HPC+QC integration within th
 
 {% include figure image_path="/assets/images/IstvanVirag_eX31.png" alt="Ex3 by Istvan Virag" caption="eX3 Supercomputer infrastructure hosted in Norway. Credit: Istvan Virag" %}
 
+{% include figure image_path="/assets/images/ex3-qal9000_1.png" alt="Screenshot of the Live Demonstration given at QC Norway by Axel Andersson." caption="Screenshot of the Live Demonstration given at QC Norway by Axel Andersson. Credit: QC Norway & Axel Andersson" %}
+
 {% include video id="PP3F9pcZgL8" provider="youtube" %}
 
 
