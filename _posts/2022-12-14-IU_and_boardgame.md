@@ -288,7 +288,6 @@ class Solution
         return answer;
     }    
 }
-
 ```
 
 실행결과
