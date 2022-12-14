@@ -41,7 +41,7 @@ Using the default configuration files:
 
 You can also use `./build.sh` for quick use of these commands above. 
 
-If you get errors try deleting `Gemfile.lock` or deleting the `.jekyll-cache` directory (`sudo rm -r .jekyll-cache`). 
+If you get errors try deleting `Gemfile.lock` or deleting the `.jekyll-cache` directory (`rm -r .jekyll-cache`). 
 
 ### Using Docker
 
