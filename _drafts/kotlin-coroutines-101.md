@@ -382,3 +382,38 @@ As expected, from the log we can see that the coffee was prepared only after the
 21:56:19.739 [DefaultDispatcher-worker-2 @coroutine#3] INFO CoroutinesPlayground - Coffee prepared
 21:56:19.739 [DefaultDispatcher-worker-2 @coroutine#3] INFO CoroutinesPlayground - Ending the morning routine
 ```
+
+However, since we know all the secrets of structural concurrency now, we can rewrite the above code using the power of the `coroutineScope` function:
+
+```kotlin
+suspend fun structuralConcurrentMorningRoutineWithCoffee() {
+    coroutineScope {
+        coroutineScope {
+            launch {
+                bathTime()
+            }
+            launch {
+                boilingWater()
+            }
+        }
+        launch {
+            preparingCoffee()
+        }
+    }
+}
+```
+
+The output of the above code is the same as the previous one.
+
+What if we want to return a value from the execution of a coroutine? For example, let's define a new supending function that returns the blend of the coffee, we prepared:
+
+```kotlin
+suspend fun preparingJavaCoffee(): String {
+    logger.info("Preparing coffee")
+    delay(500L)
+    logger.info("Coffee prepared")
+    return "Java coffee"
+}
+```
+
+Fortunately, the coroutines library provides a way to do it. We can use the `async` function to create a coroutine that returns a value.
