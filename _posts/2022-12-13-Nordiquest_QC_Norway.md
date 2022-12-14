@@ -25,11 +25,11 @@ Göran Wendin, a member of the NordIQuEst project gave a talk about integrating 
 
 # Axel Andersson on eX3 + QAL9000 connection
 
-In a live demonstration conducted by Axel Andersson, the eX3 experimental infrastructure for exploration of exascale computing at Simula Research Laboratory located in Norway was connected to the Chalmers University of Technology QAL 9000 quantum computer in Sweden.
+In a live demonstration conducted by Axel Andersson, the eX3 experimental infrastructure for exploration of exascale computing at Simula Research Laboratory located in Norway was connected to the Chalmers University of Technology QAL 9000 quantum computer at Wallenberg Centre for Quantum Technology (WACAT) in Sweden.
 
 This was already the second successful cross-border HPC+QC integration within the project, and a prime example of the importance of collaboration between different stakeholders, nations, and domain experts for getting quantum computing out to the end-users.
 
-{% include figure image_path="/assets/images/IstvanVirag_eX31.png" alt="Ex3 by Istvan Virag" caption="eX3 Supercomputer infrastructure hosted in Norway. Credit: Istvan Virag" %}
+{% include figure image_path="/assets/images/IstvanVirag_eX31.png" alt="Ex3" caption="eX3 Supercomputer infrastructure hosted in Norway. Credit:  torel{at}simula.no" %}
 
 {% include figure image_path="/assets/images/ex3-qal9000_1.png" alt="Screenshot of the Live Demonstration given at QC Norway by Axel Andersson." caption="Screenshot of the Live Demonstration given at QC Norway by Axel Andersson. Credit: QC Norway & Axel Andersson" %}
 
