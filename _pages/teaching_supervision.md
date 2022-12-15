@@ -16,12 +16,13 @@ header:
 # Teaching
 <!---
 Commented section
-## Assistant Lecturer
+-->
+## Sessional Co-instructor
 
 | Duration | Location | Courses |
 | ----------- | ----------- | ----------- |
-| Sep 2022<br/>Dec 2022 | Department of Geography, UCalgary, Canada | Watershed System Science (Geog 508) |
--->
+| Sep 2022<br/>Dec 2022 | Schulich School of Engineering, University of Calgary, Canada | Hydrology (ENCI 510) |
+
 ## Teaching Assistant
 
 | Duration | Location | Courses |
