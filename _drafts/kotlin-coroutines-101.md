@@ -405,15 +405,59 @@ suspend fun structuralConcurrentMorningRoutineWithCoffee() {
 
 The output of the above code is the same as the previous one.
 
-What if we want to return a value from the execution of a coroutine? For example, let's define a new supending function that returns the blend of the coffee, we prepared:
+What if we want to return a value from the execution of a coroutine? For example, let's define two new suspending functions: The former returns the blend of the coffee we prepared, while the latter the returns a toasted bread:
 
 ```kotlin
 suspend fun preparingJavaCoffee(): String {
-    logger.info("Preparing coffee")
-    delay(500L)
-    logger.info("Coffee prepared")
-    return "Java coffee"
+  logger.info("Preparing coffee")
+  delay(500L)
+  logger.info("Coffee prepared")
+  return "Java coffee"
+}
+
+suspend fun toastingBread(): String {
+  logger.info("Toasting bread")
+  delay(1000L)
+  logger.info("Bread toasted")
+  return "Toasted bread"
 }
 ```
 
-Fortunately, the coroutines library provides a way to do it. We can use the `async` function to create a coroutine that returns a value.
+Fortunately, the coroutines library provides a way for a coroutine to return a value. We can use the `async` builder to create a coroutine that returns a value. In detail, it returns a value of type `Deferred<T>`, which acts more or less like a java `Future<T>`. On a object of type `Deferred<T>`, we can call the `await` method to wait for the completion of the coroutine and to get the value returned by the coroutine. The library also defines the `async` builder as a `CoroutineScope` extension method:
+
+```kotlin
+public fun <T> CoroutineScope.async(
+  context: CoroutineContext = EmptyCoroutineContext,
+  start: CoroutineStart = CoroutineStart.DEFAULT,
+  block: suspend CoroutineScope.() -> T
+): Deferred<T>
+```
+
+Let's see how we can use it to return the blend of the coffee we prepared and the toasted bread:
+
+```kotlin
+suspend fun breakfastPreparation() {
+    coroutineScope {
+        val coffee: Deferred<String> = async {
+            preparingJavaCoffee()
+        }
+        val toast: Deferred<String> = async {
+            toastingBread()
+        }
+        logger.info("I'm eating ${coffee.await()} and ${toast.await()}")
+    }
+}
+```
+
+If we look at the log, we can see that the execution of the two coroutines is still concurrent and the last log awaits for the completion of the two coroutines to print the final message:
+
+```text
+21:56:46.091 [main] INFO CoroutinesPlayground - Starting the morning routine
+21:56:46.253 [DefaultDispatcher-worker-1 @coroutine#1] INFO CoroutinesPlayground - Preparing coffee
+21:56:46.258 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - Toasting bread
+21:56:46.758 [DefaultDispatcher-worker-1 @coroutine#1] INFO CoroutinesPlayground - Coffee prepared
+21:56:47.263 [DefaultDispatcher-worker-1 @coroutine#2] INFO CoroutinesPlayground - Bread toasted
+21:56:47.263 [DefaultDispatcher-worker-1 @coroutine#2] INFO CoroutinesPlayground - I'm eating Java coffee and Toasted bread
+21:56:47.263 [DefaultDispatcher-worker-1 @coroutine#2] INFO CoroutinesPlayground - Ending the morning routine
+```
+
