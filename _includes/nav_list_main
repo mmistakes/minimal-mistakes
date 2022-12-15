@@ -9,65 +9,64 @@
       </li>
       <li>
         <span class="nav__sub-title">Web</span>
-        <ul>
-            {% for category in site.categories %}
-                {% if category[0] == "browser" %}
-                    <li><a href="/categories/browser" class="">Browser ({{category[1].size}})</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
-        <ul>
-            {% for category in site.categories %}
-                {% if category[0] == "http" %}
-                    <li><a href="/categories/http" class="">HTTP ({{category[1].size}})</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
-        <ul>
-            {% for category in site.categories %}
-                {% if category[0] == "api" %}
-                    <li><a href="/categories/api" class="">API ({{category[1].size}})</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
-        <ul>
-            {% for category in site.categories %}
-                {% if category[0] == "uxui" %}
-                    <li><a href="/categories/uxui" class="">UX & UI ({{category[1].size}})</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
-      </li>
-      <li>
-        <span class="nav__sub-title">Web</span>
-        <ul>
-            {% for category in site.categories %}
-                {% if category[0] == "browser" %}
-                    <li><a href="/categories/browser" class="">Browser ({{category[1].size}})</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
-        <ul>
-            {% for category in site.categories %}
-                {% if category[0] == "http" %}
-                    <li><a href="/categories/http" class="">HTTP ({{category[1].size}})</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
-        <ul>
-            {% for category in site.categories %}
-                {% if category[0] == "api" %}
-                    <li><a href="/categories/api" class="">API ({{category[1].size}})</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
-        <ul>
-            {% for category in site.categories %}
-                {% if category[0] == "uxui" %}
-                    <li><a href="/categories/uxui" class="">UX & UI ({{category[1].size}})</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "browser" %}
+                        <li><a href="/categories/browser" class="">Browser ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "http" %}
+                        <li><a href="/categories/http" class="">HTTP ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "api" %}
+                        <li><a href="/categories/api" class="">API ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "uxui" %}
+                        <li><a href="/categories/uxui" class="">UX & UI ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <span class="nav__sub-title">Language</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "js" %}
+                        <li><a href="/categories/js" class="">JavaScript ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "java" %}
+                        <li><a href="/categories/java" class="">Java ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "c" %}
+                        <li><a href="/categories/c" class="">C ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "python" %}
+                        <li><a href="/categories/python" class="">Python ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
       </li>
   </ul>
 </nav>
