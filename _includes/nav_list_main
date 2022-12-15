@@ -5,45 +5,69 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
       <li>
-            📂 <span style="font-family:'Cafe24Oneprettynight';">Total number of posts</style> <span style="font-family:'Coming Soon';">{{sum}}</style>
+        📂 <span style="font-family:'Cafe24Oneprettynight';">Total number of posts</style> <span style="font-family:'Coming Soon';">{{sum}}</style>
       </li>
       <li>
         <span class="nav__sub-title">Web</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "browser" %}
-                        <li><a href="/categories/browser" class="">Browser ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "http" %}
-                        <li><a href="/categories/http" class="">HTTP ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "api" %}
-                        <li><a href="/categories/api" class="">API ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "uxui" %}
-                        <li><a href="/categories/uxui" class="">HTTP ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "HTTP" %}
-                        <li><a href="/categories/http" class="">HTTP ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "browser" %}
+                    <li><a href="/categories/browser" class="">Browser ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "http" %}
+                    <li><a href="/categories/http" class="">HTTP ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "api" %}
+                    <li><a href="/categories/api" class="">API ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "uxui" %}
+                    <li><a href="/categories/uxui" class="">UX & UI ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+      </li>
+      <li>
+        <span class="nav__sub-title">Web</span>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "browser" %}
+                    <li><a href="/categories/browser" class="">Browser ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "http" %}
+                    <li><a href="/categories/http" class="">HTTP ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "api" %}
+                    <li><a href="/categories/api" class="">API ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "uxui" %}
+                    <li><a href="/categories/uxui" class="">UX & UI ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
       </li>
   </ul>
 </nav>
