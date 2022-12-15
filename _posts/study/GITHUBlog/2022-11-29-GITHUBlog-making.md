@@ -89,6 +89,8 @@ _includes/author-profile.html 파일에서 3군데를 주석처리했다.
     <div class="author__content">
       <h3 class="author__name p-name" itemprop="name">
       ....
+      {% if author.bio %}
+      ...
       {% endif %}
     </div>
     주석2-->
@@ -147,17 +149,17 @@ permalink: /[카테고리 주소 (영문)]
 
 _data/navigation.yml 파일에서 기존 항목 전부 주석처리하고
 ```
-main:
-<!--
-주석처리...
--->
-sidebar-category:
-  - title: "categories"
-    children:
-      - title: "[카테고리1]"
-        url: "/[카테고리1 주소]
-      - title: "[카테고리2]"
-        url: "/[카테고리2 주소]"
+    main:
+    <!--
+    주석처리...
+    -->
+    sidebar-category:
+      - title: "categories"
+        children:
+          - title: "[카테고리1]"
+            url: "/[카테고리1 주소]
+          - title: "[카테고리2]"
+            url: "/[카테고리2 주소]"
 ```
 
 
