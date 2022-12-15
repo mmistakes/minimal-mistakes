@@ -77,37 +77,38 @@ _config.yml에서 breadcrumps -> true, comment provider -> facebook, search -> t
 _includes/author-profile.html 파일에서 3군데를 주석처리했다.
 ```
 <div itemscope itemtype="https://schema.org/Person" class="h-card">
-
-    <!-- 여기랑
-    {% if author.avatar %}
-      <div class="author__avatar"> 
-      ....
-    {% endif %}
-    -->
+{% raw %}
+  <!-- 여기랑
+  {% if author.avatar %}
+    <div class="author__avatar"> 
+    ....
+  {% endif %}
+  -->
   
-    <!-- 여기
-    <div class="author__content">
-      <h3 class="author__name p-name" itemprop="name">
-      ....
-      {% if author.bio %}
-      ...
+  <!-- 여기
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+    ....
+    {% if author.bio %}
+    ...
+    {% endif %}
+  </div>
+  주석2-->
+    
+    
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
+    <ul class="author__urls social-icons">
+      <!--마지막으로 여기!!! 를 주석처리
+      {% if author.location %}
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.location }}</span>
+        </li>
       {% endif %}
-    </div>
-    주석2-->
-    
-    
-    <div class="author__urls-wrapper">
-      <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
-      <ul class="author__urls social-icons">
-        <!--마지막으로 여기!!! 를 주석처리
-        {% if author.location %}
-          <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-            <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.location }}</span>
-          </li>
-        {% endif %}
-        -->
-        
-        ... 이하생략
+      -->
+      
+      ... 이하생략
+{% endraw %}
         
 ```
   
