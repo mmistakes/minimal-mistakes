@@ -461,3 +461,12 @@ If we look at the log, we can see that the execution of the two coroutines is st
 21:56:47.263 [DefaultDispatcher-worker-1 @coroutine#2] INFO CoroutinesPlayground - Ending the morning routine
 ```
 
+## Cooperative Scheduling
+
+At this point, we should know something about the basics of coroutines. However, we still have to talk about one important aspect of coroutines: cooperative scheduling. 
+
+Coroutines model of scheduling is very different from the one adopted by Java `Threads`, which is called preemptive scheduling. In preemptive scheduling, the operating system decides when to switch from one thread to another. In cooperative scheduling, instead, the coroutines itself decides when to yield the control to another coroutine. 
+
+In fact, we have already seen it in action. Let's see an example. Let's define a new suspending function that simulates the execution of a long-running task:
+
+```kotlin
