@@ -1,7 +1,7 @@
 ---
 Layout: post
 title: "2022-12-16 왜 포스트가 안보이냐 (liquid 태그 문제 해결)"
-excerpt: "코드블록에 들어있는 불완전한 liquid 태그로 인해 블로그가 빌드 실패할 수도 있"
+excerpt: "코드블록에 들어있는 불완전한 liquid 태그로 인해 블로그가 빌드 실패할 수도 있다"
 categories: blog
 date: 2022-12-16
 ---
