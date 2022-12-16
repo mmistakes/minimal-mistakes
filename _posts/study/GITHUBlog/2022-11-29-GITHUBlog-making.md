@@ -138,9 +138,10 @@ layout: archive
 permalink: /[카테고리 주소 (영문)]
 ---
 
-
-{% assign posts = site.categories.[카테고리 주소 (영문)] %}
-{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+{% raw %}
+  {% assign posts = site.categories.[카테고리 주소 (영문)] %}
+  {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+{% raw %}  
 ```
 일단 이렇게 해 놨다...  
   
