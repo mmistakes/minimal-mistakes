@@ -171,6 +171,10 @@ config.yml의 마지막에 아래 코드 추가
         nav: "sidebar-category"   #사이드바에 내비 추가
 ```
 
+## 폰트 크기 수정
+
+[https://evenharder.github.io](https://evenharder.github.io/blog/jekyll-change-fonts/)  
+위 블로그 글에 따라 assets/css/main.scss 파일을 수정.
 
 ## 에디터와 모바일 환경
 
