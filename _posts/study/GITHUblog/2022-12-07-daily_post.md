@@ -5,8 +5,7 @@ excerpt: "깃허브(jekyll) 블로그의 포스트 주소는 어떻게 정해지
 categories: blog
 date: 2022-12-07
 ---
-<span style="font-size:12pt">
-  
+ 
 _posts/[category]/YYYY-MM-DD-[NAME].md 형식의 파일명에  
 카테고리를 [category] 로 잡고 글을 쓰니까 
 게시글 주소가 kim-menboong.github.io/category/name 으로 되었다.  
