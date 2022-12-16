@@ -1,7 +1,7 @@
 ---
-title: "UX & UI"
+title: "JavaScript"
 layout: archive
-permalink: categories/uxui
+permalink: categories/js
 author_profile: true
 sidebar_main: true
 ---
