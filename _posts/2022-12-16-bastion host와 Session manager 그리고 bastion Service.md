@@ -24,6 +24,8 @@ sidebar:
 
 **SSH Bastion host 모범 사례**
 
+
+
 [14 Best Practices to Secure SSH Bastion Host](https://goteleport.com/blog/security-hardening-ssh-bastion-best-practices/)
 
 이것저것 읽어보면서 정리한 Bastion host의 단점으로는 우선 관리할 전용서버가 필요하다. AWS의 경우 VM인 EC2로 생성하여 VPN과 연결하곤 하는데, 단순히 점프용도로 사용하는 케이스가 많다. 
