@@ -1,4 +1,4 @@
----
+```yaml
 title: "[AWS]bastion host와 Session manager 그리고 bastion Service"
 categories: AWS
 tag: [AWS,네트워크, network]
@@ -7,9 +7,9 @@ author_profile: false
 sidebar:
  nav: "docs"
 #search: false
----
+```
 
-# **bastion host, bastion service 그리고 Session manager**
+# **bastion host, Session manager 그리고  bastion service**
 
 [AWS Systems Manager Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)
 
