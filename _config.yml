@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "Won Blog"
 title_separator          : "-"
 subtitle                 : "version 1.0"
-name                     : "원종혁 (Won jonghyuk)"
+name                     : "원종혁 (Won JongHyuk)"
 description              : "기록 하기 위한 곳"
 url                      : "https://jhwon91.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,15 +104,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Won JongHyuk"
+  avatar           : image/profile/gitProfile3.jpeg
+  bio              : "기록 하자!! <br> 정리 하자!!"
+  location         : "Republic of Korea"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:jwon3991.9191@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -124,7 +124,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/jhwon91"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -132,6 +132,9 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:jwon3991.9191@gmail.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
@@ -140,7 +143,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/jhwon91"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -216,9 +219,10 @@ sass:
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
-# Outputting
+
+# Outputting 첫 화면 개시물 개수
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 15 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
