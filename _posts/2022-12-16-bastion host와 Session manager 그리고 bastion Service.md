@@ -12,6 +12,8 @@ sidebar:
 
 # **bastion host, bastion service 그리고 Session manager**
 
+![bastion1](https://user-images.githubusercontent.com/75375944/208288367-737063e6-f2df-41ee-af57-ec3430de481f.png)
+
 [AWS Systems Manager Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)
 
 [Linux Bastion Hosts on AWS - 솔루션](https://aws.amazon.com/ko/solutions/implementations/linux-bastion/)
@@ -20,11 +22,9 @@ sidebar:
 
 일반적으로 bastion server라고도 하며 OpenSSH 서버 또는 RDP 게이트웨이와 같은 프로토콜별 서버가 있는 최소한의 운영 체제로 구성된다.
 
-<img title="" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a28912a4-eb51-45f6-9aa9-f2f6a6959837/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221216%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221216T114322Z&X-Amz-Expires=86400&X-Amz-Signature=ff888bbdc2e52bbc237ef70f136a4425f64adc07394c15f02c450e71a620653f&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject" alt="Untitled" width="545">
+![bastion2](https://user-images.githubusercontent.com/75375944/208288369-f877f800-a265-42a0-86a8-c46fc1872095.png)
 
 **SSH Bastion host 모범 사례**
-
-
 
 [14 Best Practices to Secure SSH Bastion Host](https://goteleport.com/blog/security-hardening-ssh-bastion-best-practices/)
 
@@ -46,14 +46,14 @@ AWS는 bastion host 없이 프라이빗 인프라에 안전하게 연결할 수 
 
 터널링 SSH 없이 SSM을 사용하면 다음과 같은 이점이 있다.
 
-- 세션 중에 실행된 명령과 결과를 기록합니다. Session Manager 내에서 SSH를 사용하면 모두 암호화
+- 세션 중에 실행된 명령과 결과를 기록. Session Manager 내에서 SSH를 사용하면 모두 암호화
 - SSH 키를 관리할 필요가 없다
 - Shell access는 IAM(Identity and Access Management) 정책 내에 완전히 포함되어 있으므로 해당 접근을 제어하는 하나의 통로가 있다
 - 원격 액세스를 활성화하기 위해 공용 IP 주소를 가상 머신과 연결할 필요는 없다
 - SSH 다중화 공격의 가능성을 제거
 - IAM 자격 증명에 대한 액세스(예: SSH 또는 RDP)를 통합
 - 원격 액세스를 위해 메타데이터 및 전체 세션 로그(가능한 경우)를 캡처
-- Session Manager는 액세스 및 로깅과 관련된 다양한 서비스에 대해 VPC 엔드포인트를 사용할 수 있으므로 인터넷에 대한 노출이 최소화됩니다
+- Session Manager는 액세스 및 로깅과 관련된 다양한 서비스에 대해 VPC 엔드포인트를 사용할 수 있으므로 인터넷에 대한 노출이 최소화
 
 **— AWS System Manager구성 시 필요한것**
 
@@ -87,13 +87,17 @@ Bastion Service에 관심이 생긴 이유는 문제 해결과 패치 및 업데
 
 ## **Teleport**
 
-<img title="" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e08d85d7-aca2-41f3-a6ae-4cefe2e45f1e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221216%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221216T114828Z&X-Amz-Expires=86400&X-Amz-Signature=f1e749374138eb45b038ce7a45119615b592c8c34d5de64f046f84a7dc15ae4c&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject" alt="출처: https://goteleport.com/how-it-works/" width="468">
+![bastion3](https://user-images.githubusercontent.com/75375944/208288372-158c7629-8c57-4605-b238-170762f770b5.png)
 
 출처: https://goteleport.com/how-it-works
 
+    
+
+    
+
 Bastion Service 중 Teleport는 SSH 서버, Windows 서버 및 desktop, Kubernetes 클러스터, 웹 애플리케이션 또는 데이터베이스에 액세스할 수 있다.
 
-<img title="" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/72a3fece-dae7-4a55-92cf-ecf7fff6aa0d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221216%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221216T114908Z&X-Amz-Expires=86400&X-Amz-Signature=8440fe3fd7c262b86c33774c4f65d8ea26e87e82509c41bdec4dfa9199b29ec6&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject" alt="Untitled" width="625">
+![bastion4](https://user-images.githubusercontent.com/75375944/208288376-09c559d4-8e26-4055-a46d-edc0ac53fd4c.png)
 
 - 장점
   
@@ -102,6 +106,8 @@ Bastion Service 중 Teleport는 SSH 서버, Windows 서버 및 desktop, Kubernet
   - Teleport Web에서 Console로 접근하여 ssh 접근가능, tsh라는 Teleport ssh를 OS별로 설치할 수 있어서 세팅이 간편
   
   - 이중 인증 절차(2FA)를 기본적으로 갖추고 있어 보안이 뛰어남(앞서 얘기한 Bastion host의 단점을 보완)
+
+    
 
 ## 짤막한 결론
 
