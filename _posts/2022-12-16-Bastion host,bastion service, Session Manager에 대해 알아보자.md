@@ -9,6 +9,8 @@ sidebar:
 #search: false
 ```
 
+<img title="" src="../images/2022-12-16-Bastion%20host,bastion%20service,%20Session%20Manager에%20대해%20알아보자/8d78af3f911e518709cd8c7f3874e193755b6dd9.png" alt="bastion1.png" width="263" data-align="center">
+
 # **bastion host, Session manager 그리고  bastion service**
 
 [AWS Systems Manager Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)
@@ -19,7 +21,13 @@ sidebar:
 
 일반적으로 bastion server라고도 하며 OpenSSH 서버 또는 RDP 게이트웨이와 같은 프로토콜별 서버가 있는 최소한의 운영 체제로 구성된다.
 
-![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a28912a4-eb51-45f6-9aa9-f2f6a6959837/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221216%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221216T114322Z&X-Amz-Expires=86400&X-Amz-Signature=ff888bbdc2e52bbc237ef70f136a4425f64adc07394c15f02c450e71a620653f&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject)
+  
+
+![bastion2.png](../images/2022-12-16-Bastion%20host,bastion%20service,%20Session%20Manager에%20대해%20알아보자/672a21b4150937f3dd1a64762cdc49c6b1bb246e.png)
+
+  
+
+  
 
 **SSH Bastion host 모범 사례**
 
@@ -81,13 +89,19 @@ Bastion Service에 관심이 생긴 이유는 문제 해결과 패치 및 업데
 
 ## **Teleport**
 
-![출처 https//goteleportcom/howitworks/](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e08d85d7-aca2-41f3-a6ae-4cefe2e45f1e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221216%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221216T114828Z&X-Amz-Expires=86400&X-Amz-Signature=f1e749374138eb45b038ce7a45119615b592c8c34d5de64f046f84a7dc15ae4c&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject)
+![bastion3.png](../images/2022-12-16-Bastion%20host,bastion%20service,%20Session%20Manager에%20대해%20알아보자/50c6fda7212b5a0f3bb57b91567d10ad123bb17b.png)
+
+
 
 출처: [How Teleport Works: Basic Concepts | Teleport](https://goteleport.com/how-it-works)
 
 Bastion Service 중 Teleport는 SSH 서버, Windows 서버 및 desktop, Kubernetes 클러스터, 웹 애플리케이션 또는 데이터베이스에 액세스할 수 있다.
 
-![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/72a3fece-dae7-4a55-92cf-ecf7fff6aa0d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221216%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221216T114908Z&X-Amz-Expires=86400&X-Amz-Signature=8440fe3fd7c262b86c33774c4f65d8ea26e87e82509c41bdec4dfa9199b29ec6&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject)
+  
+
+![bastion4.png](../images/2022-12-16-Bastion%20host,bastion%20service,%20Session%20Manager에%20대해%20알아보자/9d31ad065b475b173506c0508b8b3c4b39d06e21.png)
+
+
 
 - 장점
   
@@ -96,6 +110,10 @@ Bastion Service 중 Teleport는 SSH 서버, Windows 서버 및 desktop, Kubernet
   - Teleport Web에서 Console로 접근하여 ssh 접근가능, tsh라는 Teleport ssh를 OS별로 설치할 수 있어서 세팅이 간편
   
   - 이중 인증 절차(2FA)를 기본적으로 갖추고 있어 보안이 뛰어남(앞서 얘기한 Bastion host의 단점을 보완)
+
+  
+
+  
 
 ## 짤막한 결론
 
