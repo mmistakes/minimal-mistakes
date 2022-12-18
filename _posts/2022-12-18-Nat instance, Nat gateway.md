@@ -9,11 +9,15 @@ sidebar:
 #search: false
 ---
 
-# **Nat instance, Nat gateway 무엇을 선택해야할까**
+# Nat instance, Nat gateway 무엇을 사용해야할까
 
 ### NAT = Network Address Translation
 
 # **Nat Instance**
+
+![nat-1](https://user-images.githubusercontent.com/75375944/208288467-a5632b7a-7552-4f88-b2bc-a7315cda297f.png)
+
+  
 
 ![nat-1](https://user-images.githubusercontent.com/75375944/208288467-a5632b7a-7552-4f88-b2bc-a7315cda297f.png)
 
@@ -41,6 +45,12 @@ sidebar:
   개인 서브넷에서 수신되는 HTTP/HTTPS 트래픽 허용
   홈 네트워크에서 SSH 허용(인터넷 게이트웨이를 통해 액세스 제공)
   Outbound: 인터넷에 대한 HTTP/HTTPS 트래픽 허용
+
+  
+
+  
+
+  
 
 # **Nat gateway**
 
