@@ -1,4 +1,4 @@
-```yaml
+---
 title: "[AWS]bastion host와 Session manager 그리고 bastion Service"
 categories: AWS
 tag: [AWS,네트워크, network]
@@ -7,7 +7,7 @@ author_profile: false
 sidebar:
  nav: "docs"
 #search: false
-```
+---
 
 <img title="" src="../images/2022-12-16-Bastion%20host,bastion%20service,%20Session%20Manager에%20대해%20알아보자/8d78af3f911e518709cd8c7f3874e193755b6dd9.png" alt="bastion1.png" width="263" data-align="center">
 
