@@ -11,9 +11,11 @@ sidebar:
 
 # **Nat instance, Nat gateway 무엇을 선택해야할까**
 
-
-
 # **Nat Instance**
+
+  
+
+
 
 NAT = Network Address Translation
 
