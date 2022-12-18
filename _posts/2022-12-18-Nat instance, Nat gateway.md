@@ -23,8 +23,6 @@ NAT = Network Address Translation
 - Elastic IP가 연결되어 있어야 합니다.
 - 개인 서브넷에서 NAT 인스턴스로 트래픽을 라우팅하도록 라우팅 테이블을 구성해야 함
 - Bastion 서버로 겸용가능(병목우려)
-  
-    
 
 <img src="../images/2022-12-18-Nat%20instance,%20Nat%20gateway/631a3ac8180c7dc85beb056969243f0f4f93a8b3.png" title="" alt="nat1.png" data-align="inline">
 
