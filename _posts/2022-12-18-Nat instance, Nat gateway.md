@@ -9,15 +9,15 @@ sidebar:
 #search: false
 ---
 
-# **Nat instance, Nat gateway 무엇을 선택해야할까**
+# Nat instance, Nat gateway 무엇을 사용해야할까
 
-# **Nat Instance**
+# **Nat instance**
+
+NAT = Network Address Translation
 
   
 
-
-
-NAT = Network Address Translation
+![nat-1](https://user-images.githubusercontent.com/75375944/208288467-a5632b7a-7552-4f88-b2bc-a7315cda297f.png)
 
 - 개인 서브넷의 EC2 인스턴스가 인터넷에 연결할 수 있도록 허용합니다.
 - 공용 서브넷에서 시작해야 함
@@ -26,9 +26,11 @@ NAT = Network Address Translation
 - 개인 서브넷에서 NAT 인스턴스로 트래픽을 라우팅하도록 라우팅 테이블을 구성해야 함
 - Bastion 서버로 겸용가능(병목우려)
 
-<img src="../images/2022-12-18-Nat%20instance,%20Nat%20gateway/631a3ac8180c7dc85beb056969243f0f4f93a8b3.png" title="" alt="nat1.png" data-align="inline">
+  
 
-![nat2.png](../images/2022-12-18-Nat%20instance,%20Nat%20gateway/b4b816c99cad60f709d6959a688d7da95e4cfdc2.png)
+
+
+![nat-2](https://user-images.githubusercontent.com/75375944/208288475-8321f22f-8c02-4008-a00e-5d11b9ef087f.png)
 
 미리 구성된 Amazon Linux AMI를 사용할 수 있음
 
@@ -42,11 +44,18 @@ NAT = Network Address Translation
   홈 네트워크에서 SSH 허용(인터넷 게이트웨이를 통해 액세스 제공)
   Outbound: 인터넷에 대한 HTTP/HTTPS 트래픽 허용
 
+  
+
+  
+
+  
+
 # **Nat gateway**
 
-![nat3.png](../images/2022-12-18-Nat%20instance,%20Nat%20gateway/f883e8884bd7db3a4074cd93e17d907811160653.png)
+![nat-3](https://user-images.githubusercontent.com/75375944/208288477-72a062a4-470e-4929-9854-1a9cdbf4b618.png)
 
-- AWS 관리 NAT, 더 높은 대역폭, 고가용성(HA), 관리 없음
+AWS 관리 NAT, 더 높은 대역폭, 고가용성(HA), 관리 없음
+
 - 사용량 및 대역폭에 대한 시간당 지불(24시간 가동시 요금많이듦)
 - NATGW는 특정 가용성 영역에서 생성됨, Elp 통해서만 지원
 - 동일한 서브넷의 EC2 인스턴스에서 사용할 수 없음(다른 서브넷에서만 사용)
@@ -54,7 +63,11 @@ NAT = Network Address Translation
 - 최대 45Gbps의 자동 확장 기능을 갖춘 5Gbps 대역폭
 - 관리할 Security Group 없음 (SG에 영향받지않음)
 
-<img src="../images/2022-12-18-Nat%20instance,%20Nat%20gateway/8578616f6955554b4f78591fd27a76c30962ba95.png" title="" alt="nat4.png" width="422">
+  
+
+  
+
+![nat-4](https://user-images.githubusercontent.com/75375944/208288481-dcd0cb15-ac68-448b-8a1d-2392c61ae678.png)
 
 - 프로젝트에 Nat gateway로 선택한 이유
 1. Nat instance는 EC2이기때문에 꺼지면 죽는다. 죽으면 서비스가 중지된다.(ASG적용 , Multiple AZ 적용 등 필요)

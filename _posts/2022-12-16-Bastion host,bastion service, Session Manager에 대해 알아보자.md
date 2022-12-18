@@ -9,7 +9,7 @@ sidebar:
 #search: false
 ---
 
-<img title="" src="../images/2022-12-16-Bastion%20host,bastion%20service,%20Session%20Manager에%20대해%20알아보자/8d78af3f911e518709cd8c7f3874e193755b6dd9.png" alt="bastion1.png" width="263" data-align="center">
+![bastion1](https://user-images.githubusercontent.com/75375944/208288367-737063e6-f2df-41ee-af57-ec3430de481f.png)
 
 # **bastion host, Session manager 그리고  bastion service**
 
@@ -21,7 +21,7 @@ sidebar:
 
 일반적으로 bastion server라고도 하며 OpenSSH 서버 또는 RDP 게이트웨이와 같은 프로토콜별 서버가 있는 최소한의 운영 체제로 구성된다.
 
-![bastion2.png](../images/2022-12-16-Bastion%20host,bastion%20service,%20Session%20Manager에%20대해%20알아보자/672a21b4150937f3dd1a64762cdc49c6b1bb246e.png)
+![bastion2](https://user-images.githubusercontent.com/75375944/208288369-f877f800-a265-42a0-86a8-c46fc1872095.png)
 
 **SSH Bastion host 모범 사례**
 
@@ -83,13 +83,13 @@ Bastion Service에 관심이 생긴 이유는 문제 해결과 패치 및 업데
 
 ## **Teleport**
 
-![bastion3.png](../images/2022-12-16-Bastion%20host,bastion%20service,%20Session%20Manager에%20대해%20알아보자/50c6fda7212b5a0f3bb57b91567d10ad123bb17b.png)
+![bastion3](https://user-images.githubusercontent.com/75375944/208288372-158c7629-8c57-4605-b238-170762f770b5.png)
 
 출처: [How Teleport Works: Basic Concepts | Teleport](https://goteleport.com/how-it-works)
 
 Bastion Service 중 Teleport는 SSH 서버, Windows 서버 및 desktop, Kubernetes 클러스터, 웹 애플리케이션 또는 데이터베이스에 액세스할 수 있다.
 
-![bastion4.png](../images/2022-12-16-Bastion%20host,bastion%20service,%20Session%20Manager에%20대해%20알아보자/9d31ad065b475b173506c0508b8b3c4b39d06e21.png)
+![bastion4](https://user-images.githubusercontent.com/75375944/208288376-09c559d4-8e26-4055-a46d-edc0ac53fd4c.png)
 
 - 장점
   
