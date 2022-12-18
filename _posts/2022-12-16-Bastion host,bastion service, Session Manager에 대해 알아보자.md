@@ -21,13 +21,7 @@ sidebar:
 
 일반적으로 bastion server라고도 하며 OpenSSH 서버 또는 RDP 게이트웨이와 같은 프로토콜별 서버가 있는 최소한의 운영 체제로 구성된다.
 
-  
-
 ![bastion2.png](../images/2022-12-16-Bastion%20host,bastion%20service,%20Session%20Manager에%20대해%20알아보자/672a21b4150937f3dd1a64762cdc49c6b1bb246e.png)
-
-  
-
-  
 
 **SSH Bastion host 모범 사례**
 
@@ -91,17 +85,11 @@ Bastion Service에 관심이 생긴 이유는 문제 해결과 패치 및 업데
 
 ![bastion3.png](../images/2022-12-16-Bastion%20host,bastion%20service,%20Session%20Manager에%20대해%20알아보자/50c6fda7212b5a0f3bb57b91567d10ad123bb17b.png)
 
-
-
 출처: [How Teleport Works: Basic Concepts | Teleport](https://goteleport.com/how-it-works)
 
 Bastion Service 중 Teleport는 SSH 서버, Windows 서버 및 desktop, Kubernetes 클러스터, 웹 애플리케이션 또는 데이터베이스에 액세스할 수 있다.
 
-  
-
 ![bastion4.png](../images/2022-12-16-Bastion%20host,bastion%20service,%20Session%20Manager에%20대해%20알아보자/9d31ad065b475b173506c0508b8b3c4b39d06e21.png)
-
-
 
 - 장점
   
@@ -111,17 +99,13 @@ Bastion Service 중 Teleport는 SSH 서버, Windows 서버 및 desktop, Kubernet
   
   - 이중 인증 절차(2FA)를 기본적으로 갖추고 있어 보안이 뛰어남(앞서 얘기한 Bastion host의 단점을 보완)
 
-  
-
-  
-
 ## 짤막한 결론
 
 여차저차 최근 진행하는 Peak Triffic Test 프로젝트에 AWS Session Manager 먼저 도입해보고나서 Teleport로 접근제어하는 방식도 한번 적용을 고려해봐야겠다.
 
 [Teleport: Identity-Native Infrastructure Access. Faster. More Secure.](https://goteleport.com/)
 
-그외 유용한 레퍼런스
+그외 유용한 레퍼런스 
 
 [New - Port Forwarding Using AWS System Manager Session Manager](https://aws.amazon.com/ko/blogs/aws/new-port-forwarding-using-aws-system-manager-sessions-manager/)
 
