@@ -9,9 +9,11 @@ sidebar:
 #search: false
 ---
 
+# **Nat instance, Nat gateway 무엇을 선택해야할까**
 
 
-# **Nat instance**
+
+# **Nat Instance**
 
 NAT = Network Address Translation
 
@@ -22,15 +24,7 @@ NAT = Network Address Translation
 - 개인 서브넷에서 NAT 인스턴스로 트래픽을 라우팅하도록 라우팅 테이블을 구성해야 함
 - Bastion 서버로 겸용가능(병목우려)
 
-
-
 <img src="../images/2022-12-18-Nat%20instance,%20Nat%20gateway/631a3ac8180c7dc85beb056969243f0f4f93a8b3.png" title="" alt="nat1.png" data-align="inline">
-
-  
-
-  
-
-  
 
 ![nat2.png](../images/2022-12-18-Nat%20instance,%20Nat%20gateway/b4b816c99cad60f709d6959a688d7da95e4cfdc2.png)
 
@@ -46,15 +40,7 @@ NAT = Network Address Translation
   홈 네트워크에서 SSH 허용(인터넷 게이트웨이를 통해 액세스 제공)
   Outbound: 인터넷에 대한 HTTP/HTTPS 트래픽 허용
 
-  
-
-  
-
-  
-
 # **Nat gateway**
-
-  
 
 ![nat3.png](../images/2022-12-18-Nat%20instance,%20Nat%20gateway/f883e8884bd7db3a4074cd93e17d907811160653.png)
 
@@ -66,12 +52,6 @@ NAT = Network Address Translation
 - 최대 45Gbps의 자동 확장 기능을 갖춘 5Gbps 대역폭
 - 관리할 Security Group 없음 (SG에 영향받지않음)
 
-  
-
-  
-
-
-
 <img src="../images/2022-12-18-Nat%20instance,%20Nat%20gateway/8578616f6955554b4f78591fd27a76c30962ba95.png" title="" alt="nat4.png" width="422">
 
 - 프로젝트에 Nat gateway로 선택한 이유
@@ -80,7 +60,3 @@ NAT = Network Address Translation
 3. NAT 트래픽 처리에 최적화되어 있다.
 4. Nat gateway 기본요금 시간당 약 0.06달러.. 돈드니깐 될수록 나중에 달아야겠다.
    테스트 시 추가비용발생 주의
-
-
-
-
