@@ -12,7 +12,7 @@ main:
   #   url: /sitemap/
    
 sidebar-category:
-  - title: "categories"
+  - title: "카테고리"
     children:
       - title: "잡담"
         url: "/blog"
