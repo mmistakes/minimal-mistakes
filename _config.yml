@@ -11,13 +11,13 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "낭중지추"
-title_separator          : "_"
+title_separator          : "-"
 subtitle                 : "낭중지추 - 능력과 재주가 뛰어난 사람은 스스로 두각을 나타내게 된다."
 name                     : &name "Juyoon Park"
 description              : &description "Let's Make it Happen"
