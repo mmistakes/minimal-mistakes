@@ -24,7 +24,7 @@ description              : &description "Let's Make it Happen"
 url                      : "https://xper100.github.io"
 baseurl                  : 
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assetes/images/bio-photo.jpeg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : # "/assetes/images/bio-photo.jpeg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
@@ -282,17 +282,17 @@ compress_html:
     envs: development
 
 
-# Collections
-collections:
-  recipes:
-    output: true
-    permalink: /:collection/:path/
-  pets:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
+# # Collections
+# collections:
+#   recipes:
+#     output: true
+#     permalink: /:collection/:path/
+#   pets:
+#     output: true
+#     permalink: /:collection/:path/
+#   portfolio:
+#     output: true
+#     permalink: /:collection/:path/
 
 
 # Defaults
