@@ -1,5 +1,5 @@
 ---
-title: "Programming Book"
+title: "Programming"
 layout: archive
 permalink: categories/programming-book
 author_profile: true
