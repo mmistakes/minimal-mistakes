@@ -553,3 +553,43 @@ Now, the log shows that the `takeABreak` coroutine had the chance to execute, ev
 09:02:50.387 [DefaultDispatcher-worker-1 @coroutine#2] INFO CoroutinesPlayground - Break done
 -- Running forever --
 ```
+
+We can obtain the same log also using the `workingHard` coroutine, adding a thread to the thread pool:
+
+```kotlin
+@OptIn(ExperimentalCoroutinesApi::class)
+suspend fun workingHardRoutine() {
+  val dispatcher: CoroutineDispatcher = Dispatchers.Default.limitedParallelism(2)
+  coroutineScope {
+    launch(dispatcher) {
+      workingHard()
+    }
+    launch(dispatcher) {
+      takeABreak()
+    }
+  }
+}
+```
+
+Since we have two threads and two coroutines, the concurrency degree is now two, and, as usual, the log confirms the theory: `@coroutine#1` executes on `DefaultDispatcher-worker-1`, and `@coroutine#2` executes on `DefaultDispatcher-worker-2`.
+
+```text
+13:40:59.864 [main] INFO CoroutinesPlayground - Starting the morning routine
+13:40:59.998 [DefaultDispatcher-worker-1 @coroutine#1] INFO CoroutinesPlayground - Working
+13:41:00.003 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - Taking a break
+13:41:01.010 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - Break done
+-- Running forever --
+```
+
+Cooperative scheduling force us to be very careful when designing our coroutines. In fact, if a coroutines performs an operation that blocks the underlying thread, such as a blocking JDBC call, it is blocking the thread to execute any other coroutine.
+
+For this reason, the library gives us the ability to use different dispatchers for different kind of operations. The main ones are:
+
+1. `Dispatchers.Default` is the default dispatcher used by the library. It uses a thread pool with a number of threads equal to the number of available processors. It's the right choice for CPU-intensive operations.
+2. `Dispatchers.IO` is the dispatcher used for I/O operations. It uses a thread pool with a number of threads equal to the number of available processors or at most 64. It's the right choice for I/O operations, such as network calls or file operations.
+3. Dispatcher created from a thread pool: It's possible to create our own instance of `CoroutineDispatcher` using a thread pool. We can easily use the `asCoroutineDispatcher` extension function of the `Executor` interface. However, be aware that it's our responsibility to close the underlying thread pool when we don't need it anymore:
+
+```kotlin
+val dispatcher = Executors.newFixedThreadPool(10).asCoroutineDispatcher()
+```
+
