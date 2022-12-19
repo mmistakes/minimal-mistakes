@@ -11,8 +11,8 @@
         <span class="nav__sub-title">Programming</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "program-book" %}
-                        <li><a href="/categories/programming-book" class="">Programming ({{category[1].size}})</a></li>
+                    {% if category[0] == "Programming" %}
+                        <li><a href="/categories/programming-book" class="">Programming# ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
