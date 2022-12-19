@@ -1,7 +1,7 @@
 ---
 title: "깃허브-블로그"
 layout: archive
-permalink: /study/GITHUBlog
+permalink: /GITHUBlog
 ---
 
 
