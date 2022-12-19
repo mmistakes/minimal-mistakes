@@ -1,7 +1,7 @@
 ---
-title: "Browser"
+title: "Programming Book"
 layout: archive
-permalink: categories/browser
+permalink: categories/programming-book
 author_profile: true
 sidebar_main: true
 ---
