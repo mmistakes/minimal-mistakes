@@ -1,7 +1,7 @@
 ---
-title: "Programming"
+title: "Tutorials"
 layout: archive
-permalink: categories/programming-book
+permalink: categories/ytb-tutorial
 author_profile: true
 sidebar_main: true
 ---

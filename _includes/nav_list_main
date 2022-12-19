@@ -8,11 +8,11 @@
         📂 <span style="font-family:'Cafe24Oneprettynight';">Total number of posts</style> <span style="font-family:'Coming Soon';">{{sum}}</style>
       </li>
       <li>
-        <span class="nav__sub-title">Programming</span>
+        <span class="nav__sub-title">Tutorials</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Programming" %}
-                        <li><a href="/categories/programming-book" class="">Programming# ({{category[1].size}})</a></li>
+                    {% if category[0] == "Tutorial" %}
+                        <li><a href="/categories/ytb-tutorial" class="">Tutorials ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
