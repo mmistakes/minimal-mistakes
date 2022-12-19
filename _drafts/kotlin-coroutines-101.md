@@ -467,6 +467,89 @@ At this point, we should know something about the basics of coroutines. However,
 
 Coroutines model of scheduling is very different from the one adopted by Java `Threads`, which is called preemptive scheduling. In preemptive scheduling, the operating system decides when to switch from one thread to another. In cooperative scheduling, instead, the coroutines itself decides when to yield the control to another coroutine. 
 
-In fact, we have already seen it in action. Let's see an example. Let's define a new suspending function that simulates the execution of a long-running task:
+In case of Kotlin coroutines, a coroutine decides to yield the control reaching a suspending function. Only at that moment, the thread executing the coroutine will be released by the coroutine and allowed to execute another coroutine.
+
+In fact, if we noticed, in the logs we've seen so far, the execution control changed always when calling the `delay` suspending function. However, to understand it better, let's see another example. Let's define a new suspending function that simulates the execution of a very long-running task:
 
 ```kotlin
+suspend fun workingHard() {
+    logger.info("Working")
+    while (true) {
+        // Do nothing
+    }
+    delay(100L)
+    logger.info("Work done")
+}
+```
+
+The infinite cycle will prevent the function to reach the `delay` suspending function, so the coroutine will never yield the control. Now, we define another suspending function that should be executed concurrently with the previous one:
+
+```kotlin
+suspend fun takeABreak() {
+    logger.info("Taking a break")
+    delay(1000L)
+    logger.info("Break done")
+}
+```
+
+Finally, let's glue everything together in a new suspending function running the two previous function in two dedicated coroutines. To be sure that to see the effect of the cooperative scheduling, we limit the thread pool executing the coroutines to a single thread:
+
+```kotlin
+@OptIn(ExperimentalCoroutinesApi::class)
+suspend fun workingHardRoutine() {
+  val dispatcher: CoroutineDispatcher = Dispatchers.Default.limitedParallelism(1)
+  coroutineScope {
+    launch(dispatcher) {
+      workingHard()
+    }
+    launch(dispatcher) {
+      takeABreak()
+    }
+  }
+}
+```
+
+The `CoroutineDispatcher` represents the thread pool used to execute the coroutines. The `limitedParallelism` function is an extension method of the `CoroutineDispatcher` interface that limits the number of threads in the thread pool to the given value. Since it's an experimental API, we need to annotate the function with the `@OptIn(ExperimentalCoroutinesApi::class)` annotation to avoid compiler warnings.
+
+We launched both the coroutines on the only available thread of the `dispatcher`, and the log shows us the effect of the cooperative scheduling:
+
+```text
+08:46:04.804 [main] INFO CoroutinesPlayground - Starting the morning routine
+08:46:04.884 [DefaultDispatcher-worker-2 @coroutine#1] INFO CoroutinesPlayground - Working
+-- Running forever --
+``` 
+
+Since the `workingHard` coroutine never reached a suspending function, it never yields the control back, and the `takeABreak` coroutine is never executed. On the contrary, if we define a suspending function that yields the control back to the dispatcher, the `takeABreak` coroutine will be executed:
+
+```kotlin
+suspend fun workingConsciousness() {
+    logger.info("Working")
+    while (true) {
+        delay(100L)
+    }
+    logger.info("Work done")
+}
+
+@OptIn(ExperimentalCoroutinesApi::class)
+suspend fun workingConsciousnessRoutine() {
+  val dispatcher: CoroutineDispatcher = Dispatchers.Default.limitedParallelism(1)
+  coroutineScope {
+    launch(dispatcher) {
+      workingConsciousness()
+    }
+    launch(dispatcher) {
+      takeABreak()
+    }
+  }
+}
+```
+
+Now, the log shows that the `takeABreak` coroutine had the chance to execute, even if the `workingConsciousness` runs forever and the parallelism is limited to a single thread:
+
+```text
+09:02:49.302 [main] INFO CoroutinesPlayground - Starting the morning routine
+09:02:49.376 [DefaultDispatcher-worker-1 @coroutine#1] INFO CoroutinesPlayground - Working
+09:02:49.382 [DefaultDispatcher-worker-1 @coroutine#2] INFO CoroutinesPlayground - Taking a break
+09:02:50.387 [DefaultDispatcher-worker-1 @coroutine#2] INFO CoroutinesPlayground - Break done
+-- Running forever --
+```
