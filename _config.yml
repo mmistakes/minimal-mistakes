@@ -319,7 +319,7 @@ defaults:
       layout: single
       author_profile: false
       share: true
-      show_date : true
+      # show_date : true
 
   # _pages
   - scope:
@@ -328,7 +328,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      show_date : true
+      # show_date : true
 # _pets
   - scope:
       path: ""
@@ -336,5 +336,5 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      # share: true
 
