@@ -9,17 +9,17 @@ header:
   caption: "Photo credit: [**nicola since 1972**](https://www.flickr.com/photos/15216811@N06/51811446245)"
 ---
 
-Azure [App Service Certificate](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.CertificateRegistration%2FcertificateOrders) can be used also for other Azure services and not just App Service Web App. The list include Virtual Machines and Azure Application Gateway.
+Azure [App Service Certificate](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.CertificateRegistration%2FcertificateOrders) can be also be used for other Azure services and not just App Service Web App. The list includes Virtual Machines and Azure Application Gateway.
 
-In order to use the certificate outside Azure, you can export it from the UI.
+In order to use the certificate outside Azure, you can export it from the Azure Portal.
 
-Just select:
+Simply select:
 * Settings
 * Export Certificate
-* Open Key Vault Select
-* click on current version and **download as certificate button**. (the script in the link below do not work properly so do it in this way instead).
+* click Key Vault
+* click on the current version and **download as certificate** button. (the script in the link below does not work correctly so you need to do it in this way).
 
-The pfx created by the above command will not include certificates from the chain. Services like Azure App Services expect the certificates that are being uploaded to have all the certificates in the chain included as part of the pfx file. To get the certificates of the chain to be part of the pfx, you will need to install the exported certificate on your machine. In this step **Make sure you mark the certificate as exportable**.
+The .pfx created above will not include the chain certificates. Services such ad Azure App Services expect uploaded certificates to have all chain certificates included in the pfx file. In order for the chain certificates to be part of the pfx file, you must install the exported certificate on your computer. In this step **make sure you have marked the certificate as exportable**.
 
   * <https://azure.github.io/AppService/2017/02/24/Creating-a-local-PFX-copy-of-App-Service-Certificate.html>
 
