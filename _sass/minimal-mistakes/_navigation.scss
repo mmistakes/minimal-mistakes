@@ -474,7 +474,7 @@
     color: inherit;
     font-size: $type-size-3;
     font-family: $cute;
-    color: mix(#fff, $primary-color, 80%);
+    color: mix(#000, $primary-color, 50%);
 
     &:hover {
       text-decoration: underline;
@@ -530,7 +530,7 @@
   padding: 0.25rem 0;
   font-size: $type-size-3;
   font-family: $serif;
-  color: mix(#fff, $primary-color, 35%);
+  color: mix(#000, $primary-color, 15%);
   border-bottom: 1px solid $border-color;
 }
 
@@ -566,7 +566,7 @@
   padding: 0;
   width: 100%;
   list-style: none;
-  font-size: $type-size-5;
+  font-size: $type-size-4;
 
   @include breakpoint($large) {
     font-size: $type-size-6;
