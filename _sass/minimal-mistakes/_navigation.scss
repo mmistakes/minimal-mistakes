@@ -81,7 +81,7 @@
       text-decoration: none;
       color: $muted-text-color;
       // border: 1px solid #44494d;
-      border: 1px solid mix(#000, $border-color, 25%);
+      border: 1px solid mix(#44494d, $border-color, 25%);
       border-radius: 0;
 
       &:hover {
@@ -474,6 +474,7 @@
     color: inherit;
     font-size: $type-size-3;
     font-family: $cute;
+    // color: #000;
     color: mix(#000, $primary-color, 50%);
 
     &:hover {
