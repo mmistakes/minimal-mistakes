@@ -17,6 +17,15 @@
                 {% endfor %}
             </ul>
 
+        <span class="nav__sub-title">Tech</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Tech_News" %}
+                        <li><a href="/categories/tech-news" class="">Tech News ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
       </li>
   </ul>
 </nav>
