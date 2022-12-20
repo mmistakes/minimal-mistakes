@@ -329,7 +329,7 @@ body {
   margin-bottom: 8px;
   padding: 3px 8px;
   text-decoration: none;
-  border: 1px solid $background-color;
+  border: 1px solid mix(#fff, #4d5357, 18%);
   border-radius: $border-radius;
   // background-color: #4d5357;
   font-family: $serif;
@@ -347,9 +347,9 @@ body {
   margin-bottom: 8px;
   padding: 3px 8px;
   text-decoration: none;
-  border: 1px solid $background-color;
+  border: 1px solid mix(#fff, #4d5357, 18%);
   border-radius: $border-radius;
-  // background-color: mix(#fff, #4d5357, 18%);
+  background-color: mix(#fff, #4d5357, 18%);
   font-family: $serif;
   color: $primary-color;
   // color: mix(#fff, $primary-color, 2%);;
