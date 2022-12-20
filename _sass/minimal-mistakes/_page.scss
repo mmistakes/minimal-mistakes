@@ -27,7 +27,7 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .initial-content,
@@ -92,22 +92,27 @@ body {
     border-bottom: 1px solid $border-color;
   }
 
-	h1, h2, h3, h4, h5, h6 {
-		.header-link {
-			position: relative;
-			left: 0.5em;
-			opacity: 0;
-			font-size: 0.8em;
-			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
-			-moz-transition: opacity 0.2s ease-in-out 0.1s;
-			-o-transition: opacity 0.2s ease-in-out 0.1s;
-			transition: opacity 0.2s ease-in-out 0.1s;
-		}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    .header-link {
+      position: relative;
+      left: 0.5em;
+      opacity: 0;
+      font-size: 0.8em;
+      -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+      -moz-transition: opacity 0.2s ease-in-out 0.1s;
+      -o-transition: opacity 0.2s ease-in-out 0.1s;
+      transition: opacity 0.2s ease-in-out 0.1s;
+    }
 
-		&:hover .header-link {
-			opacity: 1;
-		}
-	}
+    &:hover .header-link {
+      opacity: 1;
+    }
+  }
 
   p,
   li,
@@ -303,7 +308,6 @@ body {
   font-size: $type-size-5;
 }
 
-
 /*
    Page taxonomy
    ========================================================================== */
@@ -315,7 +319,6 @@ body {
   }
 
   strong {
-    
     margin-right: 10px;
   }
 }
@@ -328,7 +331,7 @@ body {
   text-decoration: none;
   border: 1px solid $background-color;
   border-radius: $border-radius;
-  background-color: #4D5357;
+  background-color: #4d5357;
   font-family: $serif;
   color: $primary-color;
 
@@ -346,16 +349,16 @@ body {
   text-decoration: none;
   border: 1px solid $background-color;
   border-radius: $border-radius;
-  background-color: mix(#fff, #4D5357, 18%);
+  background-color: mix(#fff, #4d5357, 18%);
   font-family: $serif;
-  color: mix(#fff, $primary-color, 2%);;
+  color: $primary-color;
+  // color: mix(#fff, $primary-color, 2%);;
 
   &:hover {
     text-decoration: none;
     color: mix(#00adb5, $text-color, 40%); /* 커서 댈 때 색깔 */
   }
 }
-
 
 .taxonomy__section {
   margin-bottom: 2em;
