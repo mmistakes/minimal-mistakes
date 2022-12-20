@@ -535,6 +535,10 @@
   border-bottom: 1px solid $border-color;
 }
 
+.nav__sub-title:first-child {
+  margin-top: 1rem;
+}
+
 /*
      Table of contents navigation
      ========================================================================== */
