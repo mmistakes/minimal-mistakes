@@ -619,6 +619,12 @@ suspend fun forgettingTheBirthDayRoutine() {
 }
 ```
 
+There a lot going on in this snippet. First, we started the `workingConsciousness` coroutine, and we collected the corresponding `Job`. We used the `workingConsciousness` suspending function because it suspends inside the infinite loop, calling the `delay` function.
+
+Concurrently, we launch another coroutine, which after 2 seconds, cancels the `workingJob` and waits for its completion. The `workingJob` is cancelled, but the `workingConsciousness` coroutine is not stopped immediately. It continues to execute until it reaches the suspending point, and then it is cancelled. Since we want to wait for the cancellation, we call the `join` function on the `workingJob`.
+
+The log confirms the theory. In fact, after more or less 2 seconds from the start of the `@coroutine#1`, the `@coroutine#2` prints its log, and the `@coroutine#1` is cancelled:
+
 ```text
 21:36:04.205 [main] INFO CoroutinesPlayground - Starting the morning routine
 21:36:04.278 [DefaultDispatcher-worker-1 @coroutine#1] INFO CoroutinesPlayground - Working
