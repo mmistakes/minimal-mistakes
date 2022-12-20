@@ -72,7 +72,7 @@ body {
   font-family: $cute;
   margin-top: 0;
   line-height: 1.2;
-  color: mix(#fff, $primary-color, 40%);
+  color: mix(#000, $primary-color, 40%);
 
   & + .page__meta {
     margin-top: -0.5em;
