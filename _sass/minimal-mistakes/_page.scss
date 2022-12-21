@@ -70,13 +70,17 @@ body {
 
 .page__title {
   font-family: $cute;
-  margin-top: -2rem;
+  margin-top: 0;
   line-height: 1.2;
   color: #2f7d94;
 
   & + .page__meta {
     margin-top: -0.5em;
   }
+}
+
+.page__title p {
+  margin-top: -2rem;
 }
 
 .page__lead {
