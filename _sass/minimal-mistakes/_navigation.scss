@@ -81,7 +81,7 @@
       text-decoration: none;
       color: $muted-text-color;
       // border: 1px solid $mint-grey-color;
-      border: 1px solid mix($mint-grey-color, $mint-grey-light-color, 25%);
+      border: 1px solid mix($mint-grey-color, $border-color, 25%);
       border-radius: 0;
 
       &:hover {
@@ -138,7 +138,7 @@
     text-align: center;
     text-decoration: none;
     color: $muted-text-color;
-    border: 1px solid mix(#000, $mint-grey-light-color, 50%);
+    border: 1px solid mix(#000, $border-color, 50%);
     border-radius: $border-radius;
 
     .prev_next {
@@ -187,7 +187,7 @@
 .page__comments + .pagination {
   margin-top: 2em;
   padding-top: 2em;
-  border-top: 1px solid $mint-grey-light-color;
+  border-top: 1px solid $border-color;
 }
 
 /*
@@ -284,7 +284,7 @@
     right: 0;
     margin-top: 15px;
     padding: 5px;
-    border: 1px solid $mint-grey-light-color;
+    border: 1px solid $border-color;
     border-radius: $border-radius;
     background: $background-color;
     -webkit-box-shadow: 0 2px 4px 0 rgba(#000, 0.16),
@@ -314,7 +314,7 @@
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
-      border-color: $mint-grey-light-color transparent;
+      border-color: $border-color transparent;
       display: block;
       z-index: 0;
     }
@@ -334,7 +334,7 @@
 
     li {
       display: block;
-      border-bottom: 1px solid $mint-grey-light-color;
+      border-bottom: 1px solid $border-color;
 
       &:last-child {
         border-bottom: none;
@@ -533,7 +533,7 @@
   font-family: $serif;
   font-weight: 700;
   color: $mint-primary-color;
-  border-bottom: 1px solid $mint-grey-light-color;
+  border-bottom: 1px solid $border-color;
 }
 
 .nav__sub-title:first-child {
@@ -548,7 +548,7 @@
   font-family: $cute;
   color: $gray;
   background-color: $background-color;
-  border: 1px solid $mint-grey-light-color;
+  border: 1px solid $border-color;
   border-radius: $border-radius;
   -webkit-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
@@ -584,7 +584,7 @@
     color: $muted-text-color;
     font-weight: bold;
     line-height: 1.5;
-    border-bottom: 1px solid $mint-grey-light-color;
+    border-bottom: 1px solid $border-color;
 
     &:hover {
       color: $text-color;
