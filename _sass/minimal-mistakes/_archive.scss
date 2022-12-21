@@ -32,7 +32,7 @@
 }
 
 .archive__subtitle {
-  margin: 0.8em 0 0;
+  margin: 0.8em 0 2rem;
   padding-bottom: 0.5em;
   font-size: $type-size-3;
   color: $mint-primary-color;
@@ -137,7 +137,7 @@
 
 .list__item {
   .page__meta {
-    margin: 1rem 0 4px;
+    margin: -0.1rem 0 4px;
     font-size: 0.6em;
   }
 }
