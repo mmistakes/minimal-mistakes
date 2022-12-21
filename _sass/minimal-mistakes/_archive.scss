@@ -44,6 +44,10 @@
   }
 }
 
+.archive__subtitle span {
+  color: $mint-secondary-color;
+}
+
 .archive__item-title {
   // margin-bottom: 0.9em;
   font-family: $sans-serif-narrow;
@@ -65,6 +69,10 @@
   a + a {
     opacity: 0.5;
   }
+}
+
+.archive__item-title a {
+  color: $mint-secondary-color;
 }
 
 /* remove border*/
