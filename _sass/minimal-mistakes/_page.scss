@@ -79,9 +79,9 @@ body {
   }
 }
 
-.page__title p {
-  margin-top: -2rem;
-}
+// .page__title p {
+//   margin-top: -2rem;
+// }
 
 .page__lead {
   font-family: $global-font-family;
@@ -416,7 +416,7 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    color: #2f7c94c7;
+    color: #2f7c94de;
     text-decoration: none;
     border-bottom: 1px solid $border-color;
     font-family: $serif;
