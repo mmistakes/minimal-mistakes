@@ -79,9 +79,9 @@ body {
   }
 }
 
-// .page__title p {
-//   margin-top: -2rem;
-// }
+.page__title p {
+  margin-top: -0.5rem;
+}
 
 .page__lead {
   font-family: $global-font-family;
@@ -356,7 +356,6 @@ body {
   background-color: mix(#fff, #4d5357, 18%);
   font-family: $serif;
   color: #fff;
-  // color: mix(#fff, $primary-color, 2%);;
 
   &:hover {
     text-decoration: none;
