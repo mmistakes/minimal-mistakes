@@ -632,4 +632,84 @@ The log confirms the theory. In fact, after more or less 2 seconds from the star
 21:36:06.391 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - Ending the morning routine
 ```
 
+The `cancel` and then `join` pattern is so common that the Kotlin coroutines library provides us with a `cancelAndJoin` function that combines the two operations.
 
+As we said, cancellation is a cooperative affair in Kotlin coroutines. If a coroutine never suspend, it cannot be cancelled at all. Let's change the above example using the `workingHard` suspending function, instead. In this case, the `workingHard` function never suspends, so we expect the `workingJob` cannot be cancelled:
+
+```kotlin
+suspend fun forgettingTheBirthDayRoutineWhileWorkingHard() {
+    coroutineScope {
+        val workingJob = launch {
+            workingHard()
+        }
+        launch {
+            delay(2000L)
+            workingJob.cancelAndJoin()
+            logger.info("I forgot the birthday! Let's go to the mall!")
+        }
+    }
+}
+```
+
+This time, our friend will not receive her present. In fact, the `workingJob` is cancelled, but the `workingHard` function is not stopped, since it never reaches a suspension point. Again, the log confirms the theory:
+
+```text
+08:56:10.784 [main] INFO CoroutinesPlayground - Starting the morning routine
+08:56:10.849 [DefaultDispatcher-worker-1 @coroutine#1] INFO CoroutinesPlayground - Working
+-- Running forever --
+```
+
+Behind the scenes, the `cancel` function sets the `Job` in a state called "Cancelling". At first reached suspension point, the runtime throws a `CancellationException`, and the coroutine is finally cancelled. This mechanism allows us to safely clean up the resources used by the coroutine. There are a lot of strategies we can implement to clean up the resources. For example, we can use the `finally` block of the `try`/`catch`/`finally` construct. Imagine we want to clean up the desk we use to work, we can use the `finally` block to clean up the desk after the `workingConsciousness` function is completed:
+
+```kotlin
+suspend fun forgettingTheBirthDayRoutineAndCleaningTheDesk() {
+  coroutineScope {
+    val workingJob = launch {
+      try {
+        workingConsciousness()
+      } finally {
+        logger.info("Cleaning the desk")
+      }
+    }
+    launch {
+      delay(2000L)
+      workingJob.cancelAndJoin()
+      logger.info("I forgot the birthday! Let's go to the mall!")
+    }
+  }
+}
+```
+
+As expected, before we move to the mall, we clean up the desk, and the log confirms it:
+
+```text
+09:55:58.127 [main] INFO CoroutinesPlayground - Starting the morning routine
+09:55:58.208 [DefaultDispatcher-worker-2 @coroutine#1] INFO CoroutinesPlayground - Working
+09:56:00.280 [DefaultDispatcher-worker-2 @coroutine#1] INFO CoroutinesPlayground - Cleaning the desk
+09:56:00.281 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - I forgot the birthday! Let's go to the mall!
+09:56:00.281 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - Ending the morning routine
+```
+
+We can also use the `invokeOnCompletion` function on the cancelling `Job` to clean up the desk after the `workingConsciousness` function is completed:
+
+```kotlin
+suspend fun forgettingTheBirthDayRoutineAndCleaningTheDeskOnCompletion() {
+    coroutineScope {
+        val workingJob = launch {
+            workingConsciousness()
+        }
+        workingJob.invokeOnCompletion { exception: Throwable? ->
+            logger.info("Cleaning the desk")
+        }
+        launch {
+            delay(2000L)
+            workingJob.cancelAndJoin()
+            logger.info("I forgot the birthday! Let's go to the mall!")
+        }
+    }
+}
+```
+
+As we can wee, the `invokeOnCompletion` method takes a nullable exception as an input argument. If the `Job` is cancelled, the exception is a `CancellationException`.
+
+```text 
