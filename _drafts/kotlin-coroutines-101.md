@@ -712,4 +712,52 @@ suspend fun forgettingTheBirthDayRoutineAndCleaningTheDeskOnCompletion() {
 
 As we can wee, the `invokeOnCompletion` method takes a nullable exception as an input argument. If the `Job` is cancelled, the exception is a `CancellationException`.
 
-```text 
+Another feature of coroutines cancellation is that it propagates to children coroutines. When we cancel a coroutine, we are implicitly cancel also all of its children. Let's see an example. During the day, it's important to stay hydrated. We can use the `drinkWater` suspending function to drink water:
+
+```kotlin
+suspend fun drinkWater() {
+  while (true) {
+    logger.info("Drinking water")
+    delay(1000L)
+    logger.info("Water drunk")
+  }
+} 
+```
+
+Then, we can create a coroutine that spawns two new coroutines, one for working and one for drinking water. Finally, we can cancel the parent coroutine, and we expect that the two children coroutines are cancelled as well:
+
+```kotlin
+suspend fun forgettingTheBirthDayWhileWorkingAndDrinkingWaterRoutine() {
+    coroutineScope {
+        val workingJob = launch {
+            launch {
+                workingConsciousness()
+            }
+            launch {
+                drinkWater()
+            }
+        }
+        launch {
+            delay(2000L)
+            workingJob.cancelAndJoin()
+            logger.info("I forgot the birthday! Let's go to the mall!")
+        }
+    }
+}
+```
+
+As expected, when we cancel the  `workingJob`, we also cancel and stop both its children coroutines. Here, it is the log that describes the situation:
+
+```text
+13:18:49.143 [main] INFO CoroutinesPlayground - Starting the morning routine
+13:18:49.275 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - Working
+13:18:49.285 [DefaultDispatcher-worker-3 @coroutine#3] INFO CoroutinesPlayground - Drinking water
+13:18:50.285 [DefaultDispatcher-worker-3 @coroutine#3] INFO CoroutinesPlayground - Water drunk
+13:18:50.286 [DefaultDispatcher-worker-3 @coroutine#3] INFO CoroutinesPlayground - Drinking water
+13:18:51.288 [DefaultDispatcher-worker-2 @coroutine#3] INFO CoroutinesPlayground - Water drunk
+13:18:51.288 [DefaultDispatcher-worker-2 @coroutine#3] INFO CoroutinesPlayground - Drinking water
+13:18:51.357 [DefaultDispatcher-worker-2 @coroutine#4] INFO CoroutinesPlayground - I forgot the birthday! Let's go to the mall!
+13:18:51.357 [DefaultDispatcher-worker-2 @coroutine#4] INFO CoroutinesPlayground - Ending the morning routine
+```
+
+And that's all for coroutines cancellation!
