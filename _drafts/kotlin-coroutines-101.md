@@ -761,3 +761,23 @@ As expected, when we cancel the  `workingJob`, we also cancel and stop both its 
 ```
 
 And that's all for coroutines cancellation!
+
+## 8. The Coroutine Context
+
+In the section concerning continuation, and in the section concerning the coroutines' builders, we briefly introduced the concept of coroutine context. Also the `CoroutineScope` retains a reference to a coroutine context. As you can imagine, it is a way to store information about coroutines, information that is passed from parent to children to develop the structural concurrency internally.
+
+The type representing the coroutines context is called `CoroutineContext`, and it is part of the Kotlin core library. It's a funny type, since it represent a collection of element, but also every element is a collection of elements. In fact, we have the following:
+
+```kotlin
+public interface CoroutineContext
+// But also
+public interface Element : CoroutineContext
+```
+
+The implementation of the `CoroutineContext` are placed in the Kotlin coroutines library. Among the most important implementation we have the `CoroutineName`, which represents the name of a coroutine:
+
+```kotlin
+val name: CoroutineContext = CoroutineName("Morning Routine")
+``` 
+
+In addition, the `CoroutineDispatcher` implements the `CoroutineContext` interface, as also the `Job` type. The identifier we saw in the above logs is the `CoroutineId`, a context that is automatically added to every coroutine, when we enable the debug mode.
