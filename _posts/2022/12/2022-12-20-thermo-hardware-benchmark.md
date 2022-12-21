@@ -20,17 +20,14 @@ You can find more about this project in [this publication](https://ieeexplore.ie
 
 ### Achieved Results
 
-<div align="center">
 
 | **Metric Name** | MAE    | MSE    | Counting MAE | Counting MSE | Counting MRAPE [%] | Accuracy | F1 Score | No. of parameters |
 |:---------------:|:------:|:------:|:------------:|:------------:|:------------------:|:--------:|:--------:|:-----------------:|
 | **Results**     | 0.1057 | 0.0332 | 0.0226       | 0.0234       | 0.81               | 0.9778   | 0.9782   | 46 577            |
 
-</div>
 
 #### Hardware Performance
 
-<div align="center">
 
 | Device                                          | Data Type | Avg. Inference Time [ms]  | Counting MAE | Counting MSE | Counting MRAPE [%]  |
 |-------------------------------------------------|:---------:|:-------------------------:|:------------:|:------------:|:-------------------:|
@@ -47,5 +44,3 @@ You can find more about this project in [this publication](https://ieeexplore.ie
 | Raspberry Pi 4B + Coral USB Accelerator (max)   | INT8      |    0.570 ±0.060           | 0.037        | 0.038        | 1.16                |
 | Raspberry Pi 4B + Intel Neural Compute Stick 2  | FP32      |    2.630 ±0.159           | 0.028        | 0.029        | 0.92                |
 |                                                 | FP16      |    2.300 ±0.100           | 0.028        | 0.029        | 0.91                |
-
-</div>
