@@ -3,9 +3,9 @@ layout: single
 title: "Efficient People Counting in Thermal Images: The Benchmark of Resource-Constrained Hardware"
 author: [piechocki-mateusz, kraft-marek, aszkowski-przemyslaw, pieczynski-dominik]
 modified: 2022-12-20
-tags: [thermal, unet]
+tags: [thermal, unet, hardware, benchmark]
 category: [publication]
-teaser: "/assets/images/posts/2022/12/thermo-hardware-benchmark-graphical-abstract.webp"
+teaser: "/assets/images/posts/2022/12/single_gaussian.webp"
 ---
 
 <p align="center">
