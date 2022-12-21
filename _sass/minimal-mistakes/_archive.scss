@@ -36,7 +36,7 @@
 }
 
 .archive__subtitle {
-  margin: 0.8em 0 2rem;
+  margin: 0.8em 0 0;
   padding-bottom: 0.5em;
   font-size: $type-size-3;
   color: $mint-primary-color;
@@ -46,6 +46,10 @@
   + .list__item .archive__item-title {
     margin-top: 0.5em;
   }
+}
+
+.archive .archive__subtitle {
+  margin-bottom: 2rem;
 }
 
 .archive__subtitle span {
