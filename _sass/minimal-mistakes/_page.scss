@@ -72,7 +72,7 @@ body {
   font-family: $cute;
   margin-top: 0;
   line-height: 1.2;
-  color: #2f7d94;
+  color: $mint-primary-color;
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -333,15 +333,15 @@ body {
   margin-bottom: 8px;
   padding: 3px 8px;
   text-decoration: none;
-  border: 1px solid mix(#fff, #4d5357, 18%);
+  border: 1px solid mix(#fff, $mint-grey-color, 18%);
   border-radius: $border-radius;
-  // background-color: #4d5357;
+  // background-color: $mint-grey-color;
   font-family: $serif;
   color: $primary-color;
 
   &:hover {
     text-decoration: none;
-    color: mix(#00adb5, $text-color, 40%); /* 커서 댈 때 색깔 */
+    color: mix($mint-primary-color, $text-color, 40%); /* 커서 댈 때 색깔 */
   }
 }
 
@@ -351,15 +351,15 @@ body {
   margin-bottom: 8px;
   padding: 3px 8px;
   text-decoration: none;
-  border: 1px solid mix(#fff, #4d5357, 18%);
+  border: 1px solid mix(#fff, $mint-grey-color, 18%);
   border-radius: $border-radius;
-  background-color: mix(#fff, #4d5357, 18%);
+  background-color: mix(#fff, $mint-grey-color, 18%);
   font-family: $serif;
   color: #fff;
 
   &:hover {
     text-decoration: none;
-    color: mix(#00adb5, $text-color, 40%); /* 커서 댈 때 색깔 */
+    color: mix($mint-primary-color, $text-color, 40%); /* 커서 댈 때 색깔 */
   }
 }
 
@@ -415,7 +415,7 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    color: #2f7c94de;
+    color: $mint-secondary-color;
     text-decoration: none;
     border-bottom: 1px solid $border-color;
     font-family: $serif;

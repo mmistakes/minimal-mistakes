@@ -80,8 +80,8 @@
       text-align: center;
       text-decoration: none;
       color: $muted-text-color;
-      // border: 1px solid #44494d;
-      border: 1px solid mix(#44494d, $border-color, 25%);
+      // border: 1px solid $mint-grey-color;
+      border: 1px solid mix($mint-grey-color, $border-color, 25%);
       border-radius: 0;
 
       &:hover {
@@ -143,7 +143,7 @@
 
     .prev_next {
       font-family: $cute;
-      color: #44494d;
+      color: $mint-grey-color;
     }
 
     &:hover {
@@ -474,7 +474,7 @@
     color: inherit;
     font-size: $type-size-3;
     font-family: $cute;
-    color: #2f7c94de;
+    color: $mint-secondary-color;
     // color: mix(#000, $primary-color, 50%);
 
     &:hover {
@@ -532,7 +532,7 @@
   font-size: $type-size-3;
   font-family: $serif;
   font-weight: 700;
-  color: #2f7d94;
+  color: $mint-primary-color;
   border-bottom: 1px solid $border-color;
 }
 

@@ -14,14 +14,15 @@ $indent-var: 1.3em !default;
 
 /* system typefaces */
 $serif: "Coming Soon", Georgia, Times, serif !default;
-$sans-serif: "Iropke Batang", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
-  "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+$sans-serif: "Iropke Batang", -apple-system, BlinkMacSystemFont, "Roboto",
+  "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $monospace: "Nanum Gothic Coding", Monaco, Consolas, "Lucida Console", monospace !default;
 $cute: "Cafe24Oneprettynight" !default;
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
-$helvetica: "Cafe24Oneprettynight", Helvetica, "Helvetica Neue", Arial, sans-serif !default;
+$helvetica: "Cafe24Oneprettynight", Helvetica, "Helvetica Neue", Arial,
+  sans-serif !default;
 
 /* serif typefaces */
 $georgia: Georgia, serif !default;
@@ -79,6 +80,12 @@ $info-color: #3b9cba !default;
 $focus-color: $primary-color !default;
 $active-color: mix(#fff, $primary-color, 80%) !default;
 
+/* Blog theme skin - mint */
+$mint-primary-color: #00adb5 !default;
+$mint-secondary-color: #00acb5cb !default; // mint-primary-color light version
+$mint-grey-color: #4d5357 !default;
+$mint-grey-light-color: #4d5357c5 !default; // mint-grey-color light version
+
 /* YIQ color contrast */
 $yiq-contrasted-dark-default: $dark-gray !default;
 $yiq-contrasted-light-default: #fff !default;
@@ -120,7 +127,7 @@ $masthead-link-color-hover: mix(#000, $primary-color, 25%) !default;
 $navicon-link-color-hover: mix(#fff, $primary-color, 75%) !default;
 
 /* syntax highlighting (base16) */
-$base00: #44494D !default;
+$base00: #44494d !default;
 $base01: #2e3c43 !default;
 $base02: #314549 !default;
 $base03: #546e7a !default;
