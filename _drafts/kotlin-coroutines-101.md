@@ -659,47 +659,30 @@ This time, our friend will not receive her present. In fact, the `workingJob` is
 -- Running forever --
 ```
 
-Behind the scenes, the `cancel` function sets the `Job` in a state called "Cancelling". At first reached suspension point, the runtime throws a `CancellationException`, and the coroutine is finally cancelled. This mechanism allows us to safely clean up the resources used by the coroutine. There are a lot of strategies we can implement to clean up the resources. For example, we can use the `finally` block of the `try`/`catch`/`finally` construct. Imagine we want to clean up the desk we use to work, we can use the `finally` block to clean up the desk after the `workingConsciousness` function is completed:
+Behind the scenes, the `cancel` function sets the `Job` in a state called "Cancelling". At first reached suspension point, the runtime throws a `CancellationException`, and the coroutine is finally cancelled. This mechanism allows us to safely clean up the resources used by the coroutine. There are a lot of strategies we can implement to clean up the resources, but first we need a resource to free during our examples. We can define the class `Desk` that represents a desk in our office:
 
 ```kotlin
-suspend fun forgettingTheBirthDayRoutineAndCleaningTheDesk() {
-  coroutineScope {
-    val workingJob = launch {
-      try {
-        workingConsciousness()
-      } finally {
+class Desk : AutoCloseable {
+    init {
+        logger.info("Starting to work on the desk")
+    }
+
+    override fun close() {
         logger.info("Cleaning the desk")
-      }
     }
-    launch {
-      delay(2000L)
-      workingJob.cancelAndJoin()
-      logger.info("I forgot the birthday! Let's go to the mall!")
-    }
-  }
 }
 ```
 
-As expected, before we move to the mall, we clean up the desk, and the log confirms it:
-
-```text
-09:55:58.127 [main] INFO CoroutinesPlayground - Starting the morning routine
-09:55:58.208 [DefaultDispatcher-worker-2 @coroutine#1] INFO CoroutinesPlayground - Working
-09:56:00.280 [DefaultDispatcher-worker-2 @coroutine#1] INFO CoroutinesPlayground - Cleaning the desk
-09:56:00.281 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - I forgot the birthday! Let's go to the mall!
-09:56:00.281 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - Ending the morning routine
-```
-
-We can also use the `invokeOnCompletion` function on the cancelling `Job` to clean up the desk after the `workingConsciousness` function is completed:
+The `Desk` class implements the `AutoCloseable` interface, and so it's a good candidate to be a resource to free during the cancellation of a coroutine. Since it implements `AutoCloseable`, we can use the `use` function to automatically close the resource when the block of code is completed:
 
 ```kotlin
-suspend fun forgettingTheBirthDayRoutineAndCleaningTheDeskOnCompletion() {
+suspend fun forgettingTheBirthDayRoutineAndCleaningTheDesk() {
+    val desk = Desk()
     coroutineScope {
         val workingJob = launch {
-            workingConsciousness()
-        }
-        workingJob.invokeOnCompletion { exception: Throwable? ->
-            logger.info("Cleaning the desk")
+            desk.use { _ ->
+                workingConsciousness()
+            }
         }
         launch {
             delay(2000L)
@@ -707,6 +690,40 @@ suspend fun forgettingTheBirthDayRoutineAndCleaningTheDeskOnCompletion() {
             logger.info("I forgot the birthday! Let's go to the mall!")
         }
     }
+}
+```
+
+The `use` function works exactly as the _try-with-resources_ construct in Java.
+
+As expected, before we move to the mall, we clean up the desk, and the log confirms it:
+
+```text
+21:38:30.117 [main] INFO CoroutinesPlayground - Starting the morning routine
+21:38:30.124 [main] INFO CoroutinesPlayground - Starting to work on the desk
+21:38:30.226 [DefaultDispatcher-worker-1 @coroutine#1] INFO CoroutinesPlayground - Working
+21:38:32.298 [DefaultDispatcher-worker-2 @coroutine#1] INFO CoroutinesPlayground - Cleaning the desk
+21:38:32.298 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - I forgot the birthday! Let's go to the mall!
+21:38:32.298 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - Ending the morning routine
+```
+
+We can also use the `invokeOnCompletion` function on the cancelling `Job` to clean up the desk after the `workingConsciousness` function is completed:
+
+```kotlin
+suspend fun forgettingTheBirthDayRoutineAndCleaningTheDeskOnCompletion() {
+  val desk = Desk()
+  coroutineScope {
+    val workingJob = launch {
+      workingConsciousness()
+    }
+    workingJob.invokeOnCompletion { exception: Throwable? ->
+      desk.close()
+    }
+    launch {
+      delay(2000L)
+      workingJob.cancelAndJoin()
+      logger.info("I forgot the birthday! Let's go to the mall!")
+    }
+  }
 }
 ```
 
