@@ -33,6 +33,9 @@ intro:
 
 Helmi is accessible through the LUMI environment daily between 13:00 EET and 08:00 EET. 
 
+Due to an unexpected technical issue, Helmi is currently down. Unfortunately, there is currently no estimate for when Helmi will be back online.
+{: .notice--danger}
+
 <center>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -57,7 +60,7 @@ Helmi is accessible through the LUMI environment daily between 13:00 EET and 08:
 <tbody>
   <tr>
     <td class="tg-tbqi">LUMI-Helmi</td>
-    <td class="tg-49rs">🟢</td>
+    <td class="tg-49rs">🔴</td>
   </tr>
 </tbody>
 </table>
