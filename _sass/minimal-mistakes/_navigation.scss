@@ -40,6 +40,10 @@
     display: inline;
   }
 
+  li a {
+    color: $purple-primary-color;
+  }
+
   .current {
     font-weight: bold;
   }
