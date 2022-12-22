@@ -1,7 +1,7 @@
 ---
-title: "Tech Articles"
+title: "Articles"
 layout: archive
-permalink: categories/tech-articles
+permalink: categories/articles
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ---
 
-{% assign posts = site.categories.Tech_Articles %}
+{% assign posts = site.categories.Articles %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
