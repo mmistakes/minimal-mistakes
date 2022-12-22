@@ -12,7 +12,7 @@ The format was slightly different, but I already had some knowledge on the logis
 
 I learned and tried some operands to be able to write if statements:
 
-```ruby
+```js
 1+1
 // 2
 1+"1"
@@ -34,7 +34,7 @@ false || true
 ```
 
 With these operands, I practiced writing function using if statement:
-```ruby
+```js
 const profile = {
     name: "철수",
     age: 12,
@@ -60,7 +60,7 @@ ageDetect(profile)
 ### For loop codes
 
 For for loop, I practiced by using the fruits list I used before:
-```ruby
+```js
 const fruits = [
     {number: 1, title: "레드향"},
     {number: 2, title: "샤인머스캣"},
