@@ -79,8 +79,8 @@
       text-align: center;
       text-decoration: none;
       color: $muted-text-color;
-      // border: 1px solid $mint-grey-color;
-      border: 1px solid mix($mint-grey-color, $border-color, 25%);
+      // border: 1px solid $purple-grey-color;
+      border: 1px solid mix($purple-grey-color, $border-color, 25%);
       border-radius: 0;
 
       &:hover {
@@ -142,7 +142,7 @@
 
     .prev_next {
       font-family: $cute;
-      color: $mint-primary-color;
+      color: $purple-primary-color;
     }
 
     &:hover {
@@ -473,7 +473,7 @@
     color: inherit;
     font-size: $type-size-3;
     font-family: $cute;
-    color: $mint-secondary-color;
+    color: $purple-secondary-color;
     // color: mix(#000, $primary-color, 50%);
 
     &:hover {
@@ -531,7 +531,7 @@
   font-size: $type-size-3;
   font-family: $serif;
   font-weight: 700;
-  color: $mint-primary-color;
+  color: $purple-primary-color;
   border-bottom: 1px solid $border-color;
 }
 
