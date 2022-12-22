@@ -81,10 +81,13 @@ $focus-color: $primary-color !default;
 $active-color: mix(#fff, $primary-color, 80%) !default;
 
 /* Blog theme skin-purple */
-$purple-primary-color: #1d6176 !default;
-$purple-secondary-color: #2f7d95 !default; // purple-primary-color light version
+$purple-primary-color: #80558c !default;
+$purple-secondary-color: #af7ab3 !default; // purple-primary-color light version
 $purple-grey-color: #4d5357 !default;
 $purple-grey-light-color: #4d5357c5 !default; // purple-grey-color light version
+
+// $purple-primary-color: #1d6176 !default;
+// $purple-secondary-color: #2f7d95 !default;
 
 /* YIQ color contrast */
 $yiq-contrasted-dark-default: $dark-gray !default;
