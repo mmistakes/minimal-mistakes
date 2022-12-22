@@ -102,9 +102,3 @@
 .notice--danger {
   @include notice($danger-color);
 }
-
-/* Purple notice */
-
-.notice--purple {
-  @include notice($purple-color);
-}
