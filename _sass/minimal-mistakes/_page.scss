@@ -76,7 +76,7 @@ article.page {
   font-family: $cute;
   margin-top: 0;
   line-height: 1.2;
-  color: $mint-primary-color;
+  color: $purple-primary-color;
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -337,15 +337,15 @@ article.page {
   margin-bottom: 8px;
   padding: 3px 8px;
   text-decoration: none;
-  border: 1px solid mix(#fff, $mint-grey-color, 18%);
+  border: 1px solid mix(#fff, $purple-grey-color, 18%);
   border-radius: $border-radius;
-  // background-color: $mint-grey-color;
+  // background-color: $purple-grey-color;
   font-family: $serif;
   color: $primary-color;
 
   &:hover {
     text-decoration: none;
-    color: mix($mint-primary-color, $text-color, 40%); /* 커서 댈 때 색깔 */
+    color: mix($purple-primary-color, $text-color, 40%); /* 커서 댈 때 색깔 */
   }
 }
 
@@ -355,15 +355,15 @@ article.page {
   margin-bottom: 8px;
   padding: 3px 8px;
   text-decoration: none;
-  border: 1px solid mix(#fff, $mint-grey-color, 18%);
+  border: 1px solid mix(#fff, $purple-grey-color, 18%);
   border-radius: $border-radius;
-  background-color: mix(#fff, $mint-grey-color, 18%);
+  background-color: mix(#fff, $purple-grey-color, 18%);
   font-family: $serif;
   color: #fff;
 
   &:hover {
     text-decoration: none;
-    color: mix($mint-primary-color, $text-color, 40%); /* 커서 댈 때 색깔 */
+    color: mix($purple-primary-color, $text-color, 40%); /* 커서 댈 때 색깔 */
   }
 }
 
@@ -423,7 +423,7 @@ article.page {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    color: $mint-secondary-color;
+    color: $purple-secondary-color;
     text-decoration: none;
     border-bottom: 1px solid $border-color;
     font-family: $serif;
