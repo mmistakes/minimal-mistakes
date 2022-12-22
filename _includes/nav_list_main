@@ -26,6 +26,15 @@
                 {% endfor %}
             </ul>
 
+        <span class="nav__sub-title">Collection</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Tech_Articles" %}
+                        <li><a href="/categories/tech-articles" class="">Tech Articles ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
       </li>
   </ul>
 </nav>
