@@ -11,7 +11,7 @@
  */
 
 @mixin notice($notice-color) {
-  margin: 2em 0 !important;  /* override*/
+  margin: 2em 0 !important; /* override*/
   padding: 1em;
   color: $dark-gray;
   font-family: $global-font-family;
@@ -53,12 +53,12 @@
   }
 
   code {
-    background-color: mix(#fff, $notice-color, 95%)
+    background-color: mix(#fff, $notice-color, 95%);
   }
 
-	pre code {
-		background-color: inherit;
-	}
+  pre code {
+    background-color: inherit;
+  }
 
   ul {
     &:last-child {
@@ -101,4 +101,10 @@
 
 .notice--danger {
   @include notice($danger-color);
+}
+
+/* Purple notice */
+
+.notice--purple {
+  @include notice($purple-color);
 }

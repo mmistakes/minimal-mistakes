@@ -79,12 +79,13 @@ $danger-color: #ee5f5b !default;
 $info-color: #3b9cba !default;
 $focus-color: $primary-color !default;
 $active-color: mix(#fff, $primary-color, 80%) !default;
+$purple-color: #af7ab3 !default;
 
-/* Blog theme skin - mint */
-$mint-primary-color: #007f85 !default;
-$mint-secondary-color: #007e85d1 !default; // mint-primary-color light version
-$mint-grey-color: #4d5357 !default;
-$mint-grey-light-color: #4d5357c5 !default; // mint-grey-color light version
+/* Blog theme skin - purple */
+$purple-primary-color: #80558c !default;
+$purple-secondary-color: #af7ab3 !default; // purple-primary-color light version
+$purple-grey-color: #4d5357 !default;
+$purple-grey-light-color: #4d5357c5 !default; // purple-grey-color light version
 
 /* YIQ color contrast */
 $yiq-contrasted-dark-default: $dark-gray !default;
