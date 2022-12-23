@@ -7,15 +7,15 @@ tags: [kotlin, coroutines, concurrency]
 excerpt: ""
 ---
 
-This article introduces Kotlin coroutines, a powerful tool for asynchronous programming. Kotlin's coroutines fall under the umbrella of structured concurrency, and, basically, they implement a model of concurrency that is similar to Java virtual threads, [Cats Effect](https://blog.rockthejvm.com/cats-effect-fibers/) and [ZIO fibers](https://blog.rockthejvm.com/zio-fibers/). In detail, we'll present some use cases concerning the use of coroutines on backend services, not on the Android environment. 
+This article introduces Kotlin coroutines, a powerful tool for asynchronous programming. Kotlin's coroutines fall under the umbrella of structured concurrency. They implement a model of concurrency that is similar to Java virtual threads, [Cats Effect](https://blog.rockthejvm.com/cats-effect-fibers/) and [ZIO fibers](https://blog.rockthejvm.com/zio-fibers/). In detail, we'll present some use cases concerning the use of coroutines on backend services, not on the Android environment.
 
-The article requires a minimum knowledge of the Kotlin language, but if you came from a Scala background, you should be fine.
+The article requires a minimum knowledge of the Kotlin language. Still, you should be fine if you come from a Scala background.
 
 ## 1. Background and Setup
 
-All the examples we'll present requires at least version 1.7.20 of the Kotlin compiler and version 1.6.4 of the Kotlin Coroutines library. In fact, whereas the basic building blocks of coroutines are available in the standard library, the full implementation of the structured concurrency model is available in an extension library, called `kotlinx-coroutines-core`.
+All the examples we'll present requires at least version 1.7.20 of the Kotlin compiler and version 1.6.4 of the Kotlin Coroutines library. The basic building blocks of coroutines are available in the standard library. The full implementation of the structured concurrency model is in an extension library called `kotlinx-coroutines-core`.
 
-We'll use the following Maven file to resolve dependency and build the code.
+We'll use a Maven file to resolve dependency and build the code.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -84,22 +84,28 @@ We'll use the following Maven file to resolve dependency and build the code.
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>7</source>
+          <target>7</target>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
-
-
 ```
 
-Clearly, it's possible to create a similar building file for Gradle, but we'll stick to Maven for the sake of simplicity.
+It's possible to create a similar building file for Gradle, but we'll stick to Maven for simplicity.
 
-During the article, we'll use a Slf4j logger to print the output of the code, instead of using the `println` function:
+During the article, we'll use an Slf4j logger to print the output of the code instead of using the `println` function:
 
 ```kotlin
 val logger: Logger = LoggerFactory.getLogger("CoroutinesPlayground")
 ```
 
-The logger allows us to easily trace the name of the coroutine that is running the code, and the name of the tread that is executing the coroutine. Remember: To see the name of the coroutine, we need to add the following VM property when running the code: 
+The logger allows us to easily trace the id of the coroutine running the code and the thread's name executing it. Remember: To see the name of the coroutine, we need to add the following VM property when running the code:
 
 ```
 -Dkotlinx.coroutines.debug
@@ -111,17 +117,18 @@ For example, with the above setup, we will have the following output:
 14:59:20.741 [DefaultDispatcher-worker-1 @coroutine#2] INFO CoroutinesPlayground - Boiling water
 ```
 
-In the above example, the `DefaultDispatcher-worker-1` represents the name of the thread executing the coroutine called `coroutine#2`.
+In the above example, the `DefaultDispatcher-worker-1` represents the thread's name. The `coroutine` string is the default coroutine name, whereas the `#2` string represents the identifier.
 
 ## 2. Why Coroutines?
 
-The first question that comes to mind is: why should we use coroutines? The answer is simple: coroutines are a powerful tool for asynchronous programming. Someone could argue that we already have the `Thread` abstraction in the JVM ecosystem that model an asynchronous computation. However, threads, that the JVM maps directly on OS threads, are really heavy. For every thread, the OS must allocate a lot of context information on the stack. Moreover, every time a computation reaches a blocking operation, the underneath thread is suspended, and the JVM must load the context of another thread. This is a very expensive operation, and it's the reason why we should avoid blocking operations in our code. 
+The first question that comes to mind is: why should we use coroutines? The answer is simple: coroutines are a powerful tool for asynchronous programming. Someone could argue that we already have the `Thread` abstraction in the JVM ecosystem that model an asynchronous computation. However, threads that the JVM maps directly on OS threads are heavy. For every thread, the OS must allocate a lot of context information on the stack. Moreover, every time a computation reaches a blocking operation, the underneath thread is paused, and the JVM must load the context of another thread. The context switch is costly, so we should avoid blocking operations in our code.
 
-On the other end, as we will see, coroutines are very lightweight. They are not mapped directly on OS threads, but are mapper at user level, with simple objects called _continuations_. Switching between coroutines does not require the OS to load the context of another thread, but it's just a matter of switching the reference to the continuation object.
+On the other end, as we will see, coroutines are very lightweight. They are not mapped directly on OS threads but at the user level, with simple objects called _continuations_. Switching between coroutines does not require the OS to load another thread's context but to switch the reference to the continuation object.
 
-Another good reason to adopt coroutines is that they are a way to write asynchronous code in a synchronous way.
+Another good reason to adopt coroutines is that they are a way to write asynchronous code in a synchronous fashion.
 
-A first attempt in writing asynchronous code in a synchronous way is to use callbacks. However, callbacks are not very elegant, and they are not composable. Moreover, they are not very easy to reason about. In fact, it's easy to end up in a callback hell, where the code is very hard to read and to maintain:
+In the first attempt, we can use callbacks. However, callbacks are not very elegant, and they are not composable. Moreover, they are not very easy to reason about them. It's easy to end up in a callback hell, where the code is tough to read and maintain:
+
 
 ```kotlin
 a(aInput) { resultFromA ->
@@ -135,9 +142,9 @@ a(aInput) { resultFromA ->
 }
 ```
 
-The example above, shows the execution of four functions using the callback-style. As we can see, collecting the four values returned by the four functions is not very easy. Moreover, the code is very hard to read and to maintain.
+The example above shows the execution of four functions using the callback style. As we can see, collecting the four values returned by the four functions takes a lot of work. Moreover, the code could be easier to read and maintain.
 
-Another model that is used in asynchronous programming is the reactive programming. However, the problem is that it produces a code that is really hard to understand, and so to maintain. Let's take for example the following code snippet, taken from the official documentation of the RxJava library:
+Another model that is used in asynchronous programming is reactive programming. However, the problem is that it needs to produce more complex code to understand and maintain. Let's take, for example, the following code snippet, taken from the official documentation of the RxJava library:
 
 ```java
 Flowable.fromCallable(() -> {
@@ -149,9 +156,9 @@ Flowable.fromCallable(() -> {
   .subscribe(System.out::println, Throwable::printStackTrace);
 ```
 
-The above code just simulate the run of some computation, network request on a background thread, showing the results (or error) on the UI thread. We have to admit that it's not really self-explanatory, and we need to know well the library to understand what's going on.
+The above code simulates the run of some computation, and network request on a background thread, showing the results (or error) on the UI thread. It's not self-explanatory, and we need to know the library well to understand what's happening.
 
-All the above problems are solved by coroutines. Let's see how.
+Coroutines solve all the above problems. Let's see how.
 
 ## 3. Suspending Functions
 
