@@ -2,8 +2,10 @@
 layout: single
 title: "Pandas 1"
 categories: pandas
-tag: python
-tag: pandas
+tag: [python, pandas]
+author_profile: false
+sidebar:
+    nav: "docs"
 ---
 
 ## My First Use of Pandas
@@ -21,6 +23,7 @@ So I imported pandas through:
 ```python
 import pandas as pd
 ```
+
 
 and I loaded the data by:
 
