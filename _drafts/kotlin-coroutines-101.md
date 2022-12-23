@@ -791,10 +791,106 @@ public interface CoroutineContext
 public interface Element : CoroutineContext
 ```
 
-The implementation of the `CoroutineContext` are placed in the Kotlin coroutines library. Among the most important implementation we have the `CoroutineName`, which represents the name of a coroutine:
+The implementation of the `CoroutineContext` are placed in the Kotlin coroutines library, together with the `Continuation<T>` type. Among the most important implementation we have the `CoroutineName`, which represents the name of a coroutine:
 
 ```kotlin
 val name: CoroutineContext = CoroutineName("Morning Routine")
 ``` 
 
 In addition, the `CoroutineDispatcher` implements the `CoroutineContext` interface, as also the `Job` type. The identifier we saw in the above logs is the `CoroutineId`, a context that is automatically added to every coroutine, when we enable the debug mode.
+
+Since the `CoroutineContext` behaves like a collection, the library also defines the `+` operator to add elements to the context. So, creating a new context with many element is as simple as:
+
+```kotlin
+val context: CoroutineContext = CoroutineName("Morning Routine") + Dispatchers.Default + Job()
+```
+
+Removing elements from the context is also possible, using the `minusKey` function:
+
+```kotlin
+val newContext: CoroutineContext = context.minusKey(CoroutineName)
+```
+
+As we should remember, a coroutine context can be pass to the coroutines builders to parametrize the behavior of the created coroutine. For example, if we want to create a coroutine with a specific name and that uses the `Dispatchers.Default`, we can do it as follows:
+
+```kotlin
+suspend fun asynchronousGreeting() {
+    coroutineScope {
+        launch(CoroutineName("Greeting Coroutine") + Dispatchers.Default) {
+            logger.info("Hello Everyone!")
+        }
+    }
+}
+```
+
+If we run it inside the `main` function, we can see in the log that the coroutine is created with the specified name, and it's executed in the `Default` dispatcher:
+
+```text
+11:56:46.747 [DefaultDispatcher-worker-1 @Greeting Coroutine#1] INFO CoroutinesPlayground - Hello Everyone!
+```
+
+A coroutine context behaves also as a map since we can search and access the elements it contains, using the name of the type corresponding to the element we want to retrieve:
+
+```kotlin
+logger.info("Coroutine name: {}", context[CoroutineName]?.name)
+```
+
+The above code prints the coroutine name stored in the context, if any. The `CoroutineName` used inside the square brackets is nor a type nor a class. Indeed, it is a reference to the companion object called `Key` of the class. Just some Kotlin syntactic sugar.
+
+The library defines also the empty coroutine context, `EmptyCoroutineContext`,which we can use as a "zero" element to start creating a new custom context.
+
+So, the coroutine context is a way to pass information from a coroutine to another. In fact, any parent coroutine passes its context to its children coroutines. Children coroutines copy values from the parent to a new instance of the context, that they can override. Let's see an example of inheritance without override:
+
+```kotlin
+suspend fun coroutineCtxInheritance() {
+    coroutineScope {
+        launch(CoroutineName("Greeting Coroutine")) {
+            logger.info("Hello everyone from the outer coroutine!")
+            launch {
+                logger.info("Hello everyone from the inner coroutine!")
+            }
+            delay(200L)
+            logger.info("Hello again from the outer coroutine!")
+        }
+    }
+}
+```
+
+The log of the above code is the following, and it highlights that both coroutines share the same name:
+
+```text
+12:19:12.962 [DefaultDispatcher-worker-1 @Greeting Coroutine#1] INFO CoroutinesPlayground - Hello everyone from the outer coroutine!
+12:19:12.963 [DefaultDispatcher-worker-2 @Greeting Coroutine#2] INFO CoroutinesPlayground - Hello everyone from the inner coroutine!
+12:19:12.963 [DefaultDispatcher-worker-1 @Greeting Coroutine#1] INFO CoroutinesPlayground - Hello again from the outer coroutine!
+```
+
+As we said, if we want, we can override the values inside the context from the child coroutine:
+
+```kotlin
+suspend fun coroutineCtxOverride() {
+    coroutineScope {
+        launch(CoroutineName("Greeting Coroutine")) {
+            logger.info("Hello everyone from the outer coroutine!")
+            launch(CoroutineName("Greeting Inner Coroutine")) {
+                logger.info("Hello everyone from the inner coroutine!")
+            }
+            delay(200L)
+            logger.info("Hello again from the outer coroutine!")
+        }
+    }
+}
+```
+
+The log of the above code shows that the inner coroutines overrode of its parent coroutine, but this last was not changed in the parent context:
+
+```text
+12:22:33.869 [DefaultDispatcher-worker-1 @Greeting Coroutine#1] INFO CoroutinesPlayground - Hello everyone from the outer coroutine!
+12:22:33.870 [DefaultDispatcher-worker-2 @Greeting Inner Coroutine#2] INFO CoroutinesPlayground - Hello everyone from the inner coroutine!
+12:22:34.077 [DefaultDispatcher-worker-1 @Greeting Coroutine#1] INFO CoroutinesPlayground - Hello again from the outer coroutine!
+12:22:34.078 [DefaultDispatcher-worker-1 @Greeting Coroutine#1] INFO CoroutinesPlayground - Ending the morning routine
+```
+
+The only exception to the context inheritance rule is the `Job` context instance. Every new coroutine creates its own `Job` instance, and it is not inherited from the parent.
+
+## 9. Conclusions
+
