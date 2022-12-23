@@ -11,6 +11,11 @@ excerpt: >
   <small></small>
 intro: 
   - excerpt: 'View the status of the Quantum Connections'
+ fixing_fiqci_image:
+ - url: /assets/images/Fixing-FiQCI.jpg
+   image_path: /assets/images/Fixing-FiQCI.jpg
+   alt: "Cat fixing FiQCI"
+   title: "We are on it!"
 ---
 
 {% include feature_row id="intro" type="center" %}
@@ -33,7 +38,7 @@ intro:
 
 Helmi is accessible through the LUMI environment daily between 13:00 EET and 08:00 EET. 
 
-Due to an unexpected technical issue, Helmi is currently down. Unfortunately, there is currently no estimate for when Helmi will be back online.
+22 Dec 2022: Due to an unexpected technical issue, Helmi is currently down. Unfortunately, there is currently no estimate for when Helmi will be back online.
 {: .notice--danger}
 
 <center>
@@ -70,6 +75,11 @@ Due to an unexpected technical issue, Helmi is currently down. Unfortunately, th
 
  <h1 style="font-size:0.75vw">🟢 - Service is available</h1> 
  <h1 style="font-size:0.75vw">🔴 - Service is down</h1> 
+
+
+{% include gallery id="fixing_fiqci_image" %}
+
+
 
 {% include feature_row %}
 
