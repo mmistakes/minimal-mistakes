@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KR"
+locale                   : "en-US"
 title                    : "Austini"
 title_separator          : "|"
 subtitle                 : "A new adventure"
@@ -27,7 +27,7 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -96,10 +96,10 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : "G-P8XH09RVFT"
+    anonymize_ip         : false # true, false (default)
 
 
 # Site Author
@@ -107,7 +107,7 @@ author:
   name             : "Austin"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "My diary of practices and exercises."
-  location         : "Korea, US"
+  location         : "Iowa City, IA"
   email            :
   links:
     - label: "Email"
@@ -290,3 +290,5 @@ defaults:
       comments: # true
       share: true
       related: true
+      show_date: true
+date_format: "%Y-%m-%d"
