@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Pandas 1"
+categories: pandas
 ---
 
 ## My First Use of Pandas

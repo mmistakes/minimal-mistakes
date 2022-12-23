@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Using if statement and for loop in JS"
+categories: JavaScript
 ---
 
 ## How to write and use if statement and for loop in JavaScript
