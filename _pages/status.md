@@ -39,7 +39,7 @@ fixing_fiqci_image:
 
 Helmi is accessible through the LUMI environment daily between 13:00 EET and 08:00 EET. 
 
-22 Dec 2022: Due to an unexpected technical issue, Helmi is currently down. Unfortunately, there is currently no estimate for when Helmi will be back online.
+22 Dec 2022: Due to an unexpected technical issue, Helmi is currently down. Unfortunately, there is no estimate for when Helmi will be back online.
 {: .notice--danger}
 
 <center>
