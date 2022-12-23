@@ -12,15 +12,15 @@
 
 - Van Marcke, H., Le Denmat, P., Verguts, T., & Desender, K. (2022). Manipulating prior beliefs causally induces under- and overconfidence. [BioRxiv.](https://doi.org/10.1101/2022.03.01.482511)
 
-
+- Xu, S., Simoens, J., Verguts, T., & Braem, S. (2022). Learning where to be flexible: Using environmental cues to regulate cognitive control. [PsyArxiv.](https://doi.org/10.31234/osf.io/y5h78)
 
 ## Recent publications
 
-In press:
-- Huycke, P. Lesage, E., Boehler, C. Nico, & Verguts, T. (in press). Computational investigations of learning and synchronization in cognitive control. Journal of Cognition. [PsyArXiv](https://psyarxiv.com/jhmku/)
-
-
 2022: 
+- Peng, Z., He, L., Wen, R., Verguts, T., Seger, C. A., & Chen, Q. (2022). Obsessive-compulsive disorder is characterized by decreased Pavlovian influence on goal-directed instrumental behavior. [PLoS Computational Biology.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009945)
+
+- Huycke, P. Lesage, E., Boehler, C. Nico, & Verguts, T. (in press). Computational investigations of learning and synchronization in cognitive control. Journal of Cognition. [PsyArXiv version](https://psyarxiv.com/jhmku/)
+
 - Liu, M., Dong, W., Wu, Y., Verbeke, P., Verguts, T., & Chen, Q. (2022). Modulating hierarchical learning by high-definition transcranial alternating current stimulation at theta frequency. [Cerebral Cortex.](https://doi.org/10.1093/cercor/bhab245) [BioRxiv version.](https://www.biorxiv.org/content/10.1101/2022.06.28.497899v1)
 
 - Desender, K., Vermeylen, L., & Verguts, T. (2022). Dynamic influences on static measures of metacognition. [Nature Communications.](https://www.nature.com/articles/s41467-022-31727-0)
