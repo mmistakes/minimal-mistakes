@@ -3,16 +3,16 @@ main:
   - title: "Home"
     url: /index.html
   #- title: "About"
-    #url: /about/
+  #url: /about/
   - title: "Category"
     url: /categories/
+  - title: "Search"
+    url: /search/
   #- title: "Tag"
-    #url: /tags/
+  #url: /tags/
   #- title: "Post by Year"
-    #url: /year-archive/
- 
-
-# 카테고리 추가시 
-  # 1. _includes/nav_list_main 에서 코드를 추가한다.
-    # sidebar.html 에서 머릿말에 sidebar_main = true 를 해주면 nav_list_main 을 불러오게끔 마지막 부분에 코딩이 되어있다.
-  # 2. pages/catecory 에 연결할 카테고리 페이지를 추가한다.
+  #url: /year-archive/
+# 카테고리 추가시
+# 1. _includes/nav_list_main 에서 코드를 추가한다.
+# sidebar.html 에서 머릿말에 sidebar_main = true 를 해주면 nav_list_main 을 불러오게끔 마지막 부분에 코딩이 되어있다.
+# 2. pages/catecory 에 연결할 카테고리 페이지를 추가한다.
