@@ -894,3 +894,4 @@ The only exception to the context inheritance rule is the `Job` context instance
 
 ## 9. Conclusions
 
+Our journey through the basics of the Kotlin coroutines library is over. During the way, we saw why coroutines matters, and made an simplified explanation of how they're implemented under the hood. Then, we showed how to create coroutines, introducing also the structural concurrency topic. We saw how cooperative scheduling and cancellation work with a lot of example, and finally we introduced main features of the coroutines' context. Obviously, there a lot more to say about coroutines, but we hope that this article can be a good starting point for those who want to learn more about them.
