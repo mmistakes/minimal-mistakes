@@ -16,7 +16,7 @@ minimal_mistakes_skin: "default" # "default", "air", "aqua", "contrast", "dark",
 
 # Site Settings
 locale: "en-CA"
-title: "Seyeon Blog___☕️" # 🍯🔥💧💵🔮🩸🧸🎀🔖🖊️🖋️🃏
+title: "Seyeon Blog_☕️" # 🍯🔥💧💵🔮🩸🧸🎀🔖🖊️🖋️🃏
 title_separator: "|"
 subtitle: # site tagline that appears below site title in masthead
 name: "Seyeon"
@@ -85,9 +85,9 @@ social:
 
 # Analytics
 analytics:
-  provider: "google" # false (default), "google", "google-universal", "custom"
+  provider: "google-gtag" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id: "UA-169251732-1"
+    tracking_id: "G-80PSQT7BZN"
     anonymize_ip: false # true, false (default)
 
 # Site Author

@@ -550,7 +550,7 @@ article.page {
   @include clearfix();
   float: left;
   margin-top: 2em;
-  padding-top: 1em;
+  padding: 1rem;
   border-top: 1px solid $border-color;
 
   @include breakpoint($large) {
