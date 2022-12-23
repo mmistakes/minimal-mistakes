@@ -278,7 +278,7 @@ As we can see, the execution is purely sequential. However, we can see that the 
 
 ### 5.1. The `launch` Builder
 
-At this point, we should know about suspending functions and the basics of structural concurrency. It's time to create our first coroutine explicitly. To do so, the Kotlin coroutines library provides a set of functions called coroutine builders. These functions are used to create a coroutine and to start its execution. The first function we'll see is the `launch` function:
+At this point, we should know about suspending functions and the basics of structural concurrency. It's time to create our first coroutine explicitly. The Kotlin coroutines library provides a set of functions called builders. These functions are used to create a coroutine and to start its execution. The first function we'll see is the `launch` function:
 
 ```kotlin
 public fun CoroutineScope.launch(
@@ -288,9 +288,9 @@ public fun CoroutineScope.launch(
 ): Job
 ```
 
-The library defines the `launch` builder as an extension function of the `CoroutineScope`. So, we need a scope to create a coroutine in this way. To create a coroutine, we need also a `CoroutineContext`, and a lambda with the code to execute. The builder will pass its `CoroutineScope` to the `block` lambda as the receiver. In this way, we can reuse the scope to create new children coroutines. Finally, the default behavior to of the builder is to start immediately the new coroutine (`CoroutineStart.DEFAULT`).
+The library defines the `launch` builder as an extension function of the `CoroutineScope`. So, we need a scope to create a coroutine in this way. To create a coroutine, we also need a `CoroutineContext` and a lambda with the code to execute. The builder will pass its `CoroutineScope` to the `block` lambda as the receiver. This way, we can reuse the scope to create new children coroutines. Finally, the builder's default behavior is to immediately start the new coroutine (`CoroutineStart.DEFAULT`).
 
-So, let's add some concurrency on our morning routine. We can start the `boilingWater` and the `bathTime` functions in two new coroutine, and see them racing:
+So, let's add some concurrency to our morning routine. We can start the `boilingWater` and the `bathTime` functions in two new coroutines and see them racing:
 
 ```kotlin
 suspend fun concurrentMorningRoutine() {
@@ -316,15 +316,15 @@ The log of the above code is something similar to the following:
 09:09:45.876 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - Ending the morning routine
 ```
 
-We can extract a lot of information from the above log. First of all, we can see that we effectively spawned two new coroutines, `@coroutine#1` and `@coroutine#2`. The first runs the `bathTime` suspending function, and the second the `boilingWater`. 
+We can extract a lot of information from the above log. First, we can see that we effectively spawned two new coroutines, `@coroutine#1` and `@coroutine#2`. The first runs the `bathTime` suspending function, and the second the `boilingWater`.
 
-The logs of the two function interleaves, so the execution of the two functions is concurrent. We can say that this model of concurrency is cooperative. In fact, the `@coroutine#2` had a change to execute only when `@coroutine#1` reached the execution of a suspending function, i.e. the `delay` function.
+The logs of the two functions interleave, so the execution of the two functions is concurrent. This model of concurrency is cooperative. The `@coroutine#2` had a chance to execute only when `@coroutine#1` reached the execution of a suspending function, i.e., the `delay` function.
 
 Moreover, when suspended, the `@coroutine#1` was running on thread `DefaultDispatcher-worker-1`. Whereas, when resumed, it ran on thread `DefaultDispatcher-worker-2`. Coroutines run on configurable thread pools. As the log suggested, the default thread pool is called `Dispatchers.Default` (more on the dedicated following section).
 
-Last but not least, the log shows a clear example of structural concurrency. In fact, the execution printed the last log in the `main` method after the end of the execution of both of the coroutines. As we may have noticed, we didn't have any explicit synchronization mechanism to achieve this result in the `main` function. We didn't wait or delay the execution of the `main` function. As we said, this is due to structural concurrency. The `coroutineScope` function creates a scope that is used to create both the two coroutines. Since the two coroutines are children of the same scope, this will wait the end of the execution of both of them before returning.
+Last but not least, the log shows a clear example of structural concurrency. The execution printed the previous log in the `main` method after the execution of both the coroutines. As we may have noticed, we didn't have any explicit synchronization mechanism to achieve this result in the `main` function. We didn't wait or delay the execution of the `main` function. As we said, this is due to structural concurrency. The `coroutineScope` function creates a scope that is used to create both the two coroutines. Since the two coroutines are children of the same scope, it will wait until the end of the execution of both of them before returning.
 
-We can also avoid the use of the structural concurrency, to show that in this case we need to add some wait for the end of the execution of the coroutines. Instead of using the `coroutineScope` function, we can use the `GlobalScope` object. It's like an empty coroutine scope that does not force any parent-child relationship between the coroutines. So, we can rewrite the morning routine function as follows:
+We can also avoid using structural concurrency. In this case, we need to add some wait for the end of the execution of the coroutines. Instead of using the `coroutineScope` function, we can use the `GlobalScope` object. It's like an empty coroutine scope that does not force any parent-child relationship. So, we can rewrite the morning routine function as follows:
 
 ```kotlin
 suspend fun noStructuralConcurrencyMorningRoutine() {
@@ -349,7 +349,7 @@ The log of the above code is more or less the same as the previous one:
 14:06:59.257 [main] INFO CoroutinesPlayground - Ending the morning routine
 ```
 
-Since we have not any structural concurrency mechanism in act using the `GlobalScope`, we had a `Thread.sleep(1500L` at the end of the function, to wait the end of the execution of the two coroutines. If we remove the `Thread.sleep(1500L)` call, the log will be something similar to the following:
+Since we not have any structural concurrency mechanism using the `GlobalScope`, we added a `Thread.sleep(1500L` at the end of the function to wait the end of the execution of the two coroutines. If we remove the `Thread.sleep(1500L)` call, the log will be something similar to the following:
 
 ```text
 21:47:09.418 [main] INFO CoroutinesPlayground - Starting the morning routine
