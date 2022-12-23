@@ -11,11 +11,12 @@ excerpt: >
   <small></small>
 intro: 
   - excerpt: 'View the status of the Quantum Connections'
- fixing_fiqci_image:
+fixing_fiqci_image:
  - url: /assets/images/Fixing-FiQCI.jpg
    image_path: /assets/images/Fixing-FiQCI.jpg
    alt: "Cat fixing FiQCI"
    title: "We are on it!"
+   
 ---
 
 {% include feature_row id="intro" type="center" %}
