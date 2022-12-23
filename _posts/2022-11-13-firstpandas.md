@@ -2,6 +2,8 @@
 layout: single
 title: "Pandas 1"
 categories: pandas
+tag: python
+tag: pandas
 ---
 
 ## My First Use of Pandas
