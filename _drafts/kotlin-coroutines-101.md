@@ -123,9 +123,19 @@ Another good reason to adopt coroutines is that they are a way to write asynchro
 
 A first attempt in writing asynchronous code in a synchronous way is to use callbacks. However, callbacks are not very elegant, and they are not composable. Moreover, they are not very easy to reason about. In fact, it's easy to end up in a callback hell, where the code is very hard to read and to maintain:
 
-````java
-// Find a good example of callback hell
-````
+```kotlin
+a(aInput) { resultFromA ->
+  b(resultFromA) { resultFromB ->
+    c(resultFromB) { resultFromC ->
+      d(resultFromC) { resultFromD ->
+        println("A, B, C, D: $resultFromA, $resultFromB, $resultFromC, $resultFromD")
+      }
+    }
+  }
+}
+```
+
+The example above, shows the execution of four functions using the callback-style. As we can see, collecting the four values returned by the four functions is not very easy. Moreover, the code is very hard to read and to maintain.
 
 Another model that is used in asynchronous programming is the reactive programming. However, the problem is that it produces a code that is really hard to understand, and so to maintain. Let's take for example the following code snippet, taken from the official documentation of the RxJava library:
 
