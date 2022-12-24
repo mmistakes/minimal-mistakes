@@ -46,14 +46,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "English" %}
-                        <li><a href="/categories/english" class="">English Book ({{category[1].size}})</a></li>
+                        <li><a href="/categories/english" class="">In English ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Korean" %}
-                        <li><a href="/categories/korean" class="">Korean Book ({{category[1].size}})</a></li>
+                        <li><a href="/categories/korean" class="">In Korean ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
