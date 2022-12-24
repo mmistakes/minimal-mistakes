@@ -45,15 +45,8 @@
         <span class="nav__sub-title">Book</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Reading_E" %}
-                        <li><a href="/categories/reading-e" class="">In English ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Reading_K" %}
-                        <li><a href="/categories/reading-k" class="">In Korean ({{category[1].size}})</a></li>
+                    {% if category[0] == "Books" %}
+                        <li><a href="/categories/books" class="">In English ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
