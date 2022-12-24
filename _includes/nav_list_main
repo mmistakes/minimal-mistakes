@@ -8,7 +8,7 @@
         📂 <span style="font-family:'Cafe24Oneprettynight';">Total number of posts</style> <span style="font-family:'Coming Soon';">{{sum}}</style>
       </li>
       <li>
-        <span class="nav__sub-title">Tutorials</span>
+        <span class="nav__sub-title">Tutorial</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Tutorial" %}
@@ -38,6 +38,22 @@
                 {% for category in site.categories %}
                     {% if category[0] == "Websites" %}
                         <li><a href="/categories/websites" class="">Website ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <span class="nav__sub-title">Book</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "English" %}
+                        <li><a href="/categories/english" class="">English Book ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Korean" %}
+                        <li><a href="/categories/korean" class="">Korean Book ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
