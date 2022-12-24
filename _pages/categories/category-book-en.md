@@ -1,7 +1,7 @@
 ---
-title: "English Book"
+title: "Book In English"
 layout: archive
-permalink: categories/english
+permalink: categories/en-book
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ---
 
-{% assign posts = site.categories.English %}
+{% assign posts = site.categories.En_Book %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
