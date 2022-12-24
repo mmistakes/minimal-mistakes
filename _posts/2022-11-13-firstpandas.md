@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Pandas 1"
+title: "Pandas Apartment Sale Price Data 1"
 categories: pandas
 tag: [python, pandas]
 author_profile: false
