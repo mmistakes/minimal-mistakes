@@ -10,3 +10,30 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  
+  
+  docs:
+  - title: Database
+    children:
+      - title: "Oracle"
+        url: oracle/
+        category: "oracle"
+      - title: "MS-SQL"
+        url: mssql/
+        category: "mssql"
+      - title: "MariaDB"
+        url: mariadb/
+        category: "mariadb"
+  - title: Server
+    children:
+      - title: "Ubuntu"
+        url: ubuntu/
+        category: "ubuntu"
+      - title: "Windows Server"
+        url: windows-server/
+        category: "windows-server"
+  - title: Etc
+    children:
+      - title: "Jekyll"
+        url: jekyll/
+        category: "jekyll"
