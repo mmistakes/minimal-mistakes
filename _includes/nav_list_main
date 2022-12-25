@@ -42,7 +42,7 @@
                 {% endfor %}
             </ul>
 
-        <span class="nav__sub-title">Reading</span>
+        <span class="nav__sub-title">Book</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Books_E" %}
