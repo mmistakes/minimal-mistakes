@@ -290,3 +290,8 @@ defaults:
       comments: # true
       share: true
       related: true
+
+
+# sidebar
+sidebar:
+  - title: pyTorch
