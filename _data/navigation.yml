@@ -11,8 +11,7 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   
-  
-  docs:
+docs:
   - title: Database
     children:
       - title: "Oracle"
