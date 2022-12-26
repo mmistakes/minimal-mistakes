@@ -349,16 +349,16 @@ The log of the above code is more or less the same as the previous one:
 14:06:59.257 [main] INFO CoroutinesPlayground - Ending the morning routine
 ```
 
-Since we not have any structural concurrency mechanism using the `GlobalScope`, we added a `Thread.sleep(1500L` at the end of the function to wait the end of the execution of the two coroutines. If we remove the `Thread.sleep(1500L)` call, the log will be something similar to the following:
+Since we do not have any structural concurrency mechanism using the `GlobalScope`, we added a `Thread.sleep(1500L` at the end of the function to wait the end of the execution of the two coroutines. If we remove the `Thread.sleep(1500L)` call, the log will be something similar to the following:
 
 ```text
 21:47:09.418 [main] INFO CoroutinesPlayground - Starting the morning routine
 21:47:09.506 [main] INFO CoroutinesPlayground - Ending the morning routine
 ```   
 
-As expected, the main function returned before the end of the execution of the two coroutines. So, we can say that the `GlobalScope` is not a good choice to create coroutines.
+As expected, the primary function returned before the end of the execution of the two coroutines. So, we can say that the `GlobalScope` is not a good choice for creating coroutines.
 
-If we look at the definition of the `launch` function, we can see that it returns a `Job` object. This object is a handle to the coroutine. We can use it to cancel the execution of the coroutine, or to wait for its completion. Let's see how we can use it to wait for the completion of the coroutine. Let's add a new suspending function to out wallet:
+If we look at the definition of the `launch` function, we can see that it returns a `Job` object. This object is a handle to the coroutine. We can use it to cancel the execution of the coroutine or to wait for its completion. Let's see how we can use it to wait for the coroutine's completion. Let's add a new suspending function to our wallet:
 
 ```kotlin
 suspend fun preparingCoffee() {
@@ -368,7 +368,7 @@ suspend fun preparingCoffee() {
 }
 ```
 
-In our morning routine, we want to prepare coffee only after having a bath and boiling water. So, we need to wait for the completion of the two coroutines. We can do it calling the `join` method on the resulting `Job` object:
+In our morning routine, we only want to prepare coffee after a bath and boiling water. So, we need to wait for the completion of the two coroutines. We can do it by calling the `join` method on the resulting `Job` object:
 
 ```kotlin 
 suspend fun morningRoutineWithCoffee() {
@@ -388,7 +388,7 @@ suspend fun morningRoutineWithCoffee() {
 }
 ```
 
-As expected, from the log we can see that the coffee was prepared only after the end of the execution of the two coroutines:
+As expected, from the log, we can see that we prepared the coffee only after the end of the execution of the two coroutines:
 
 ```text
 21:56:18.040 [main] INFO CoroutinesPlayground - Starting the morning routine
@@ -425,7 +425,7 @@ The output of the above code is the same as the previous one.
 
 ### 5.2. The `async` Builder
 
-What if we want to return a value from the execution of a coroutine? For example, let's define two new suspending functions: The former returns the blend of the coffee we prepared, while the latter the returns a toasted bread:
+What if we want to return a value from the execution of a coroutine? For example, let's define two new suspending functions: The former produces the blend of the coffee we prepared. At the same time, the latter returns a toasted bread:
 
 ```kotlin
 suspend fun preparingJavaCoffee(): String {
@@ -443,7 +443,7 @@ suspend fun toastingBread(): String {
 }
 ```
 
-Fortunately, the coroutines library provides a way for a coroutine to return a value. We can use the `async` builder to create a coroutine that returns a value. In detail, it returns a value of type `Deferred<T>`, which acts more or less like a java `Future<T>`. On a object of type `Deferred<T>`, we can call the `await` method to wait for the completion of the coroutine and to get the value returned by the coroutine. The library also defines the `async` builder as a `CoroutineScope` extension method:
+Fortunately, the library provides a way for a coroutine to return a value. We can use the `async` builder to create a coroutine that returns a value. In detail, it produces a value of type `Deferred<T>`, which acts more or less like a java `Future<T>`. On the object of type `Deferred<T>`, we can call the `await` method to wait for the coroutine's completion and get the returned value. The library also defines the `async` builder as a `CoroutineScope` extension method:
 
 ```kotlin
 public fun <T> CoroutineScope.async(
@@ -469,7 +469,7 @@ suspend fun breakfastPreparation() {
 }
 ```
 
-If we look at the log, we can see that the execution of the two coroutines is still concurrent and the last log awaits for the completion of the two coroutines to print the final message:
+If we look at the log, we can see that the execution of the two coroutines is still concurrent. The last log awaits the completion of the two coroutines to print the final message:
 
 ```text
 21:56:46.091 [main] INFO CoroutinesPlayground - Starting the morning routine
@@ -483,13 +483,13 @@ If we look at the log, we can see that the execution of the two coroutines is st
 
 ## 6. Cooperative Scheduling
 
-At this point, we should know something about the basics of coroutines. However, we still have to talk about one important aspect of coroutines: cooperative scheduling. 
+At this point, we should know something about the basics of coroutines. However, we still have to discuss one essential coroutines' aspect: cooperative scheduling.
 
-Coroutines model of scheduling is very different from the one adopted by Java `Threads`, which is called preemptive scheduling. In preemptive scheduling, the operating system decides when to switch from one thread to another. In cooperative scheduling, instead, the coroutines itself decides when to yield the control to another coroutine. 
+The coroutines scheduling model is very different from the one adopted by Java `Threads`, called preemptive scheduling. In preemptive scheduling, the operating system decides when to switch from one thread to another. In cooperative scheduling, the coroutine itself decides when to yield the control to another coroutine.
 
-In case of Kotlin coroutines, a coroutine decides to yield the control reaching a suspending function. Only at that moment, the thread executing the coroutine will be released by the coroutine and allowed to execute another coroutine.
+In the case of Kotlin, a coroutine decides to yield the control reaching a suspending function. Only at that moment the thread executing it will be released and allowed to run another coroutine.
 
-In fact, if we noticed, in the logs we've seen so far, the execution control changed always when calling the `delay` suspending function. However, to understand it better, let's see another example. Let's define a new suspending function that simulates the execution of a very long-running task:
+If we noticed, in the logs we've seen so far, the execution control always changed when calling the `delay` suspending function. However, to understand it better, let's see another example. Let's define a new suspending function that simulates the execution of a very long-running task:
 
 ```kotlin
 suspend fun workingHard() {
@@ -502,7 +502,7 @@ suspend fun workingHard() {
 }
 ```
 
-The infinite cycle will prevent the function to reach the `delay` suspending function, so the coroutine will never yield the control. Now, we define another suspending function that should be executed concurrently with the previous one:
+The infinite cycle will prevent the function from reaching the `delay` suspending function, so the coroutine will never yield the control. Now, we define another suspending function to execute concurrently with the previous one:
 
 ```kotlin
 suspend fun takeABreak() {
@@ -512,7 +512,7 @@ suspend fun takeABreak() {
 }
 ```
 
-Finally, let's glue everything together in a new suspending function running the two previous function in two dedicated coroutines. To be sure that to see the effect of the cooperative scheduling, we limit the thread pool executing the coroutines to a single thread:
+Finally, let's glue everything together in a new suspending function running the two previous functions in two dedicated coroutines. To be sure that to see the effect of the cooperative scheduling, we limit the thread pool executing the coroutines to a single thread:
 
 ```kotlin
 @OptIn(ExperimentalCoroutinesApi::class)
@@ -539,7 +539,7 @@ We launched both the coroutines on the only available thread of the `dispatcher`
 -- Running forever --
 ``` 
 
-Since the `workingHard` coroutine never reached a suspending function, it never yields the control back, and the `takeABreak` coroutine is never executed. On the contrary, if we define a suspending function that yields the control back to the dispatcher, the `takeABreak` coroutine will be executed:
+Since the `workingHard` coroutine never reached a suspending function, it never yields the control back. Then, the `takeABreak` coroutine is never executed. On the contrary, if we define a suspending function that yields the control back to the dispatcher, the `takeABreak` coroutine will have the chance to be executed:
 
 ```kotlin
 suspend fun workingConsciousness() {
@@ -564,7 +564,7 @@ suspend fun workingConsciousnessRoutine() {
 }
 ```
 
-Now, the log shows that the `takeABreak` coroutine had the chance to execute, even if the `workingConsciousness` runs forever and the parallelism is limited to a single thread:
+Now, the log shows that the `takeABreak` coroutine had the chance to execute, even if the `workingConsciousness` runs forever and we have a single thread:
 
 ```text
 09:02:49.302 [main] INFO CoroutinesPlayground - Starting the morning routine
@@ -591,7 +591,7 @@ suspend fun workingHardRoutine() {
 }
 ```
 
-Since we have two threads and two coroutines, the concurrency degree is now two, and, as usual, the log confirms the theory: `@coroutine#1` executes on `DefaultDispatcher-worker-1`, and `@coroutine#2` executes on `DefaultDispatcher-worker-2`.
+Since we have two threads and two coroutines, the concurrency degree is now two. As usual, the log confirms the theory: `@coroutine#1` executes on `DefaultDispatcher-worker-1`, and `@coroutine#2` executes on `DefaultDispatcher-worker-2`.
 
 ```text
 13:40:59.864 [main] INFO CoroutinesPlayground - Starting the morning routine
@@ -601,13 +601,13 @@ Since we have two threads and two coroutines, the concurrency degree is now two,
 -- Running forever --
 ```
 
-Cooperative scheduling force us to be very careful when designing our coroutines. In fact, if a coroutines performs an operation that blocks the underlying thread, such as a blocking JDBC call, it is blocking the thread to execute any other coroutine.
+Cooperative scheduling forces us to be very careful when designing our coroutines. Suppose a coroutine performs an operation blocking the underlying thread, such as a JDBC call. In that case, it blocks the thread from executing any other coroutine.
 
-For this reason, the library gives us the ability to use different dispatchers for different kind of operations. The main ones are:
+For this reason, the library allows us to use different dispatchers for different operations. The main ones are:
 
 1. `Dispatchers.Default` is the default dispatcher used by the library. It uses a thread pool with a number of threads equal to the number of available processors. It's the right choice for CPU-intensive operations.
-2. `Dispatchers.IO` is the dispatcher used for I/O operations. It uses a thread pool with a number of threads equal to the number of available processors or at most 64. It's the right choice for I/O operations, such as network calls or file operations.
-3. Dispatcher created from a thread pool: It's possible to create our own instance of `CoroutineDispatcher` using a thread pool. We can easily use the `asCoroutineDispatcher` extension function of the `Executor` interface. However, be aware that it's our responsibility to close the underlying thread pool when we don't need it anymore:
+2. `Dispatchers.IO` is the dispatcher used for I/O operations. It uses a thread pool with a number of threads equal to the number of available processors or, at most 64. It's the right choice for I/O operations, such as network calls or file operations.
+3. Dispatcher created from a thread pool: It's possible to make our instance of `CoroutineDispatcher` using a thread pool. We can easily use the `asCoroutineDispatcher` extension function of the `Executor` interface. However, be aware that it's our responsibility to close the underlying thread pool when we don't need it anymore:
 
 ```kotlin
 val dispatcher = Executors.newFixedThreadPool(10).asCoroutineDispatcher()
