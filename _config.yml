@@ -17,8 +17,8 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 # Site Settings
 locale: "ko-KR"
 title: "Devlog"
-title_separator: "-"
-subtitle: # site tagline that appears below site title in masthead
+title_separator: "|"
+subtitle: "기억은 순간, 기록은 영원" # site tagline that appears below site title in masthead
 name: "Changyu Park"
 description: "개발 경험을 기록하는 블로그입니다."
 url: "https://pcg0610.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -27,7 +27,7 @@ repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs: true # true, false (default)
 words_per_minute: 200
 comments:
   provider: # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -58,7 +58,7 @@ reCaptcha:
   secret:
 atom_feed:
   path: # blank (default) uses feed.xml
-  hide: # true, false (default)
+  hide: true # true, false (default)
 search: # true, false (default)
 search_full_content: # true, false (default)
 search_provider: # lunr (default), algolia, google
@@ -277,6 +277,9 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+      show_date: true
+
+date_format: "%Y-%m-%d"
