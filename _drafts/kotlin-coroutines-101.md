@@ -615,11 +615,11 @@ val dispatcher = Executors.newFixedThreadPool(10).asCoroutineDispatcher()
 
 ## 7. Cancellation
 
-When we reason about concurrent programming, cancellation is always a tricky topic. In fact, killing a thread and abruptly stopping the execution of a task is not a good practice. Before stopping a task, we must free the resources in use, avoid any kind of leak, and leave the system in a consistent state.
+When we reason about concurrent programming, cancellation is always a tricky topic. Killing a thread and abruptly stopping the execution of a task is not a good practice. Before stopping a task, we must free the resources in use, avoid leaks, and leave the system in a consistent state.
 
-As we can image, Kotlin allows us to cancel the execution of coroutines. To avoid the problems mentioned above, the library provides us with a mechanism to cancel a coroutine in a cooperative way. The `Job` type, representing the execution of a coroutine, provides a `cancel` function that cancels the execution of the coroutine. However, the cancellation of the coroutine is not immediate, and it happens only when the coroutine reaches a suspending point. The mechanism is very close to the one we saw for cooperative scheduling.
+As we can imagine, Kotlin allows us to cancel the execution of coroutines. The library provides a mechanism to cancel a coroutine cooperatively to avoid problems. The `Job` type provides a `cancel` function that cancels the execution of the coroutine. However, the cancellation is not immediate and happens only when the coroutine reaches a suspending point. The mechanism is very close to the one we saw for cooperative scheduling.
 
-Let's see an example. We want to model the fact that during the working routine, we receive an important call: We forgot the birthday of out best friend, and we want to go to buy him a present before the mall closes:
+Let's see an example. We want to model that we receive an important call during the working routine. We forgot the birthday of our best friend, and we want to go to buy a present before the mall closes:
 
 ```kotlin
 suspend fun forgettingTheBirthDayRoutine() {
@@ -637,11 +637,11 @@ suspend fun forgettingTheBirthDayRoutine() {
 }
 ```
 
-There a lot going on in this snippet. First, we started the `workingConsciousness` coroutine, and we collected the corresponding `Job`. We used the `workingConsciousness` suspending function because it suspends inside the infinite loop, calling the `delay` function.
+A lot is going on in this snippet. First, we started the `workingConsciousness` coroutine and collected the corresponding `Job`. We used the `workingConsciousness` suspending function because it suspends inside the infinite loop, calling the `delay` function.
 
-Concurrently, we launch another coroutine, which after 2 seconds, cancels the `workingJob` and waits for its completion. The `workingJob` is cancelled, but the `workingConsciousness` coroutine is not stopped immediately. It continues to execute until it reaches the suspending point, and then it is cancelled. Since we want to wait for the cancellation, we call the `join` function on the `workingJob`.
+Concurrently, we launch another coroutine, which after 2 seconds, cancels the `workingJob` and waits for its completion. The `workingJob` is canceled, but the `workingConsciousness` coroutine is not stopped immediately. It continues to execute until it reaches the suspending point, and then it is canceled. Since we want to wait for the cancellation, we call the `join` function on the `workingJob`.
 
-The log confirms the theory. In fact, after more or less 2 seconds from the start of the `@coroutine#1`, the `@coroutine#2` prints its log, and the `@coroutine#1` is cancelled:
+The log confirms the theory. After more or less 2 seconds from the start of the `@coroutine#1`, the `@coroutine#2` prints its log, and the `@coroutine#1` is canceled:
 
 ```text
 21:36:04.205 [main] INFO CoroutinesPlayground - Starting the morning routine
@@ -652,7 +652,7 @@ The log confirms the theory. In fact, after more or less 2 seconds from the star
 
 The `cancel` and then `join` pattern is so common that the Kotlin coroutines library provides us with a `cancelAndJoin` function that combines the two operations.
 
-As we said, cancellation is a cooperative affair in Kotlin coroutines. If a coroutine never suspend, it cannot be cancelled at all. Let's change the above example using the `workingHard` suspending function, instead. In this case, the `workingHard` function never suspends, so we expect the `workingJob` cannot be cancelled:
+As we said, cancelation is a cooperative affair in Kotlin. If a coroutine never suspends, it cannot be canceled at all. Let's change the above example using the `workingHard` suspending function instead. In this case, the `workingHard` function never suspends, so we expect the `workingJob` cannot be canceled:
 
 ```kotlin
 suspend fun forgettingTheBirthDayRoutineWhileWorkingHard() {
@@ -669,7 +669,7 @@ suspend fun forgettingTheBirthDayRoutineWhileWorkingHard() {
 }
 ```
 
-This time, our friend will not receive her present. In fact, the `workingJob` is cancelled, but the `workingHard` function is not stopped, since it never reaches a suspension point. Again, the log confirms the theory:
+This time, our friend will not receive her present. The `workingJob` is canceled, but the `workingHard` function is not stopped since it never reaches a suspension point. Again, the log confirms the theory:
 
 ```text
 08:56:10.784 [main] INFO CoroutinesPlayground - Starting the morning routine
@@ -677,7 +677,7 @@ This time, our friend will not receive her present. In fact, the `workingJob` is
 -- Running forever --
 ```
 
-Behind the scenes, the `cancel` function sets the `Job` in a state called "Cancelling". At first reached suspension point, the runtime throws a `CancellationException`, and the coroutine is finally cancelled. This mechanism allows us to safely clean up the resources used by the coroutine. There are a lot of strategies we can implement to clean up the resources, but first we need a resource to free during our examples. We can define the class `Desk` that represents a desk in our office:
+Behind the scenes, the `cancel` function sets the `Job` in a state called "Cancelling". At first reached suspension point, the runtime throws a `CancellationException`, and the coroutine is finally canceled. This mechanism allows us to clean up the resources used by the coroutine safely. There are a lot of strategies we can implement to clean up the resources, but first, we need a resource to free during our examples. We can define the class `Desk` that represents a desk in our office:
 
 ```kotlin
 class Desk : AutoCloseable {
@@ -691,7 +691,7 @@ class Desk : AutoCloseable {
 }
 ```
 
-The `Desk` class implements the `AutoCloseable` interface, and so it's a good candidate to be a resource to free during the cancellation of a coroutine. Since it implements `AutoCloseable`, we can use the `use` function to automatically close the resource when the block of code is completed:
+The `Desk` class implements the `AutoCloseable` interface. So, it's an excellent candidate to free during a coroutine's cancellation. Since it implements `AutoCloseable`, we can use the `use` function to automatically close the resource when the block of code is completed:
 
 ```kotlin
 suspend fun forgettingTheBirthDayRoutineAndCleaningTheDesk() {
@@ -711,9 +711,9 @@ suspend fun forgettingTheBirthDayRoutineAndCleaningTheDesk() {
 }
 ```
 
-The `use` function works exactly as the _try-with-resources_ construct in Java.
+The `use` function works precisely as the _try-with-resources_ construct in Java.
 
-As expected, before we move to the mall, we clean up the desk, and the log confirms it:
+As expected, before we moved to the mall, we cleaned up the desk, and the log confirms it:
 
 ```text
 21:38:30.117 [main] INFO CoroutinesPlayground - Starting the morning routine
@@ -724,7 +724,7 @@ As expected, before we move to the mall, we clean up the desk, and the log confi
 21:38:32.298 [DefaultDispatcher-worker-2 @coroutine#2] INFO CoroutinesPlayground - Ending the morning routine
 ```
 
-We can also use the `invokeOnCompletion` function on the cancelling `Job` to clean up the desk after the `workingConsciousness` function is completed:
+We can also use the `invokeOnCompletion` function on the canceling `Job` to clean up the desk after the `workingConsciousness` function is completed:
 
 ```kotlin
 suspend fun forgettingTheBirthDayRoutineAndCleaningTheDeskOnCompletion() {
@@ -745,9 +745,9 @@ suspend fun forgettingTheBirthDayRoutineAndCleaningTheDeskOnCompletion() {
 }
 ```
 
-As we can wee, the `invokeOnCompletion` method takes a nullable exception as an input argument. If the `Job` is cancelled, the exception is a `CancellationException`.
+As we can see, the `invokeOnCompletion` method takes a nullable exception as an input argument. If the `Job` is canceled, the exception is a `CancellationException`.
 
-Another feature of coroutines cancellation is that it propagates to children coroutines. When we cancel a coroutine, we are implicitly cancel also all of its children. Let's see an example. During the day, it's important to stay hydrated. We can use the `drinkWater` suspending function to drink water:
+Another feature of cancellation is it propagates to children coroutines. When we cancel a coroutine, we implicitly cancel all of its children. Let's see an example. During the day, it's essential to stay hydrated. We can use the `drinkWater` suspending function to drink water:
 
 ```kotlin
 suspend fun drinkWater() {
@@ -759,7 +759,7 @@ suspend fun drinkWater() {
 } 
 ```
 
-Then, we can create a coroutine that spawns two new coroutines, one for working and one for drinking water. Finally, we can cancel the parent coroutine, and we expect that the two children coroutines are cancelled as well:
+Then, we can create a coroutine that spawns two new coroutines for working and drinking water. Finally, we can cancel the parent coroutine, and we expect that the two children are canceled as well:
 
 ```kotlin
 suspend fun forgettingTheBirthDayWhileWorkingAndDrinkingWaterRoutine() {
@@ -781,7 +781,7 @@ suspend fun forgettingTheBirthDayWhileWorkingAndDrinkingWaterRoutine() {
 }
 ```
 
-As expected, when we cancel the  `workingJob`, we also cancel and stop both its children coroutines. Here, it is the log that describes the situation:
+As expected, when we cancel the  `workingJob`, we also cancel and stop its children's coroutines. Here is the log that describes the situation:
 
 ```text
 13:18:49.143 [main] INFO CoroutinesPlayground - Starting the morning routine
@@ -799,9 +799,9 @@ And that's all for coroutines cancellation!
 
 ## 8. The Coroutine Context
 
-In the section concerning continuation, and in the section concerning the coroutines' builders, we briefly introduced the concept of coroutine context. Also the `CoroutineScope` retains a reference to a coroutine context. As you can imagine, it is a way to store information about coroutines, information that is passed from parent to children to develop the structural concurrency internally.
+In the section concerning continuation and the section concerning builders, we briefly introduced the concept of coroutine context. Also, the `CoroutineScope` retains a reference to a coroutine context. As you can imagine, it is a way to store information passed from parents to children to develop structural concurrency internally.
 
-The type representing the coroutines context is called `CoroutineContext`, and it is part of the Kotlin core library. It's a funny type, since it represent a collection of element, but also every element is a collection of elements. In fact, we have the following:
+The type representing the coroutine context is called `CoroutineContext`, and it is part of the Kotlin core library. It's a funny type since it represents a collection of elements, but also, every element is a collection. We have the following:
 
 ```kotlin
 public interface CoroutineContext
@@ -809,27 +809,27 @@ public interface CoroutineContext
 public interface Element : CoroutineContext
 ```
 
-The implementation of the `CoroutineContext` are placed in the Kotlin coroutines library, together with the `Continuation<T>` type. Among the most important implementation we have the `CoroutineName`, which represents the name of a coroutine:
+The implementation of the `CoroutineContext` is placed in the Kotlin coroutines library, together with the `Continuation<T>` type. Among the actual implementations, we have the `CoroutineName`, which represents the name of a coroutine:
 
 ```kotlin
 val name: CoroutineContext = CoroutineName("Morning Routine")
-``` 
+```
 
-In addition, the `CoroutineDispatcher` implements the `CoroutineContext` interface, as also the `Job` type. The identifier we saw in the above logs is the `CoroutineId`, a context that is automatically added to every coroutine, when we enable the debug mode.
+In addition, the `CoroutineDispatcher` implements the `CoroutineContext` interface and the `Job` type. The identifier we saw in the above logs is the `CoroutineId`. This context is automatically added to every coroutine when we enable the debug mode.
 
-Since the `CoroutineContext` behaves like a collection, the library also defines the `+` operator to add elements to the context. So, creating a new context with many element is as simple as:
+Since the `CoroutineContext` behaves like a collection, the library also defines the `+` operator to add elements to the context. So, creating a new context with many elements is as simple as:
 
 ```kotlin
 val context: CoroutineContext = CoroutineName("Morning Routine") + Dispatchers.Default + Job()
 ```
 
-Removing elements from the context is also possible, using the `minusKey` function:
+Removing elements from the context is also possible using the `minusKey` function:
 
 ```kotlin
 val newContext: CoroutineContext = context.minusKey(CoroutineName)
 ```
 
-As we should remember, a coroutine context can be pass to the coroutines builders to parametrize the behavior of the created coroutine. For example, if we want to create a coroutine with a specific name and that uses the `Dispatchers.Default`, we can do it as follows:
+As we should remember, we can pass the context to a builder to change the behavior of the created coroutine. For example, suppose we want to create a coroutine with a specific name that uses the `Dispatchers.Default`. In that case, we can do it as follows:
 
 ```kotlin
 suspend fun asynchronousGreeting() {
@@ -841,23 +841,23 @@ suspend fun asynchronousGreeting() {
 }
 ```
 
-If we run it inside the `main` function, we can see in the log that the coroutine is created with the specified name, and it's executed in the `Default` dispatcher:
+Let's run it inside the `main` function. We can see in the log that the coroutine is created with the specified name, and it's executed in the `Default` dispatcher:
 
 ```text
 11:56:46.747 [DefaultDispatcher-worker-1 @Greeting Coroutine#1] INFO CoroutinesPlayground - Hello Everyone!
 ```
 
-A coroutine context behaves also as a map since we can search and access the elements it contains, using the name of the type corresponding to the element we want to retrieve:
+A coroutine context also behaves as a map since we can search and access the elements it contains using the name of the type corresponding to the element we want to retrieve:
 
 ```kotlin
 logger.info("Coroutine name: {}", context[CoroutineName]?.name)
 ```
 
-The above code prints the coroutine name stored in the context, if any. The `CoroutineName` used inside the square brackets is nor a type nor a class. Indeed, it is a reference to the companion object called `Key` of the class. Just some Kotlin syntactic sugar.
+The above code prints the coroutine name stored in the context, if any. The `CoroutineName` used inside the square brackets is neither a type nor a class. Indeed, it references the companion object called the `Key` of the class—just some Kotlin syntactic sugar.
 
-The library defines also the empty coroutine context, `EmptyCoroutineContext`,which we can use as a "zero" element to start creating a new custom context.
+The library also defines the empty coroutine context, `EmptyCoroutineContext`, which we can use as a "zero" element to create a new custom context.
 
-So, the coroutine context is a way to pass information from a coroutine to another. In fact, any parent coroutine passes its context to its children coroutines. Children coroutines copy values from the parent to a new instance of the context, that they can override. Let's see an example of inheritance without override:
+So, context is a way to pass information among coroutines. Any parent coroutine gives its context to its children coroutines. Children coroutines copy values from the parent to a new instance of the context that they can override. Let's see an example of inheritance without override:
 
 ```kotlin
 suspend fun coroutineCtxInheritance() {
@@ -899,7 +899,7 @@ suspend fun coroutineCtxOverride() {
 }
 ```
 
-The log of the above code shows that the inner coroutines overrode of its parent coroutine, but this last was not changed in the parent context:
+The log of the above code shows the override of the parent coroutine. However, the original value is still the original in the parent context:
 
 ```text
 12:22:33.869 [DefaultDispatcher-worker-1 @Greeting Coroutine#1] INFO CoroutinesPlayground - Hello everyone from the outer coroutine!
@@ -908,8 +908,8 @@ The log of the above code shows that the inner coroutines overrode of its parent
 12:22:34.078 [DefaultDispatcher-worker-1 @Greeting Coroutine#1] INFO CoroutinesPlayground - Ending the morning routine
 ```
 
-The only exception to the context inheritance rule is the `Job` context instance. Every new coroutine creates its own `Job` instance, and it is not inherited from the parent.
+The only exception to the context inheritance rule is the `Job` context instance. Every new coroutine creates its own `Job` instance, which is not inherited from the parent.
 
 ## 9. Conclusions
 
-Our journey through the basics of the Kotlin coroutines library is over. During the way, we saw why coroutines matters, and made an simplified explanation of how they're implemented under the hood. Then, we showed how to create coroutines, introducing also the structural concurrency topic. We saw how cooperative scheduling and cancellation work with a lot of example, and finally we introduced main features of the coroutines' context. Obviously, there a lot more to say about coroutines, but we hope that this article can be a good starting point for those who want to learn more about them.
+Our journey through the basics of the Kotlin coroutines library is over. During the way, we saw why coroutines matter and made a simplified explanation of how they're implemented under the hood. Then, we showed how to create coroutines, also introducing the structural concurrency topic. We saw how cooperative scheduling and cancellation work with many examples. Finally, we introduced the main features of the coroutines' context. There is a lot more to say about coroutines, but we hope this article can be a good starting point for those who want to learn more about them.
