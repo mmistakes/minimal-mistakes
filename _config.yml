@@ -15,6 +15,7 @@
 minimal_mistakes_skin    : "" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
+future                   : ture
 locale                   : "en-US"
 title                    : "Site Title"
 title_separator          : "-"
