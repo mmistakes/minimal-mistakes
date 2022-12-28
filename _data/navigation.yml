@@ -6,7 +6,13 @@ main:
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Tags"
     url: /tags/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Search"
+    url: /search/
+
+docs:
+  - title: "대목차"
+    children:
+      - title: "Category"
+        url: /categories/
+      - title: "Tag"
+        url: /tags/
