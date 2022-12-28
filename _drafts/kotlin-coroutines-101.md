@@ -105,7 +105,7 @@ During the article, we'll use an Slf4j logger to print the output of the code in
 val logger: Logger = LoggerFactory.getLogger("CoroutinesPlayground")
 ```
 
-The logger allows us to easily trace the id of the coroutine running the code and the thread's name executing it. Remember: To see the name of the coroutine, we need to add the following VM property when running the code:
+The logger allows us to easily trace the id of the coroutine running the code and the thread's name executing it. Remember: To see the identifier of the coroutine, we need to add the following VM property when running the code:
 
 ```
 -Dkotlinx.coroutines.debug
@@ -121,13 +121,13 @@ In the above example, the `DefaultDispatcher-worker-1` represents the thread's n
 
 ## 2. Why Coroutines?
 
-The first question that comes to mind is: why should we use coroutines? The answer is simple: coroutines are a powerful tool for asynchronous programming. Someone could argue that we already have the `Thread` abstraction in the JVM ecosystem that model an asynchronous computation. However, threads that the JVM maps directly on OS threads are heavy. For every thread, the OS must allocate a lot of context information on the stack. Moreover, every time a computation reaches a blocking operation, the underneath thread is paused, and the JVM must load the context of another thread. The context switch is costly, so we should avoid blocking operations in our code.
+The first question that comes to mind is: why should we use coroutines? The answer is simple: coroutines are a powerful tool for asynchronous programming. Someone could argue that we already have the `Thread` abstraction in the JVM ecosystem that models an asynchronous computation. However, **threads that the JVM maps directly on OS threads are heavy**. For every thread, the OS must allocate a lot of context information on the stack. Moreover, every time a computation reaches a blocking operation, the underneath thread is paused, and the JVM must load the context of another thread. The context switch is costly, so we should avoid blocking operations in our code.
 
-On the other end, as we will see, coroutines are very lightweight. They are not mapped directly on OS threads but at the user level, with simple objects called _continuations_. Switching between coroutines does not require the OS to load another thread's context but to switch the reference to the continuation object.
+On the other end, as we will see, **coroutines are very lightweight**. They are not mapped directly on OS threads but at the user level, with simple objects called _continuations_. Switching between coroutines does not require the OS to load another thread's context but to switch the reference to the continuation object.
 
-Another good reason to adopt coroutines is that they are a way to write asynchronous code in a synchronous fashion.
+Another good reason to adopt **coroutines** is that they **are a way to write asynchronous code in a synchronous fashion**.
 
-In the first attempt, we can use callbacks. However, callbacks are not very elegant, and they are not composable. Moreover, they are not very easy to reason about them. It's easy to end up in a callback hell, where the code is tough to read and maintain:
+In the first attempt, we can use callbacks. However, callbacks are not very elegant, and they are not composable. Moreover, they are not very easy to reason about them. It's easy to end up in a *callback hell*, where the code is tough to read and maintain:
 
 
 ```kotlin
@@ -144,7 +144,7 @@ a(aInput) { resultFromA ->
 
 The example above shows the execution of four functions using the callback style. As we can see, collecting the four values returned by the four functions takes a lot of work. Moreover, the code could be easier to read and maintain.
 
-Another model that is used in asynchronous programming is reactive programming. However, the problem is that it needs to produce more complex code to understand and maintain. Let's take, for example, the following code snippet, taken from the official documentation of the RxJava library:
+Another model that is used in asynchronous programming is reactive programming. However, the problem is that it needs to produce more complex code to understand and maintain. Let's take, for example, the following code snippet from the official documentation of the RxJava library:
 
 ```java
 Flowable.fromCallable(() -> {
@@ -164,7 +164,7 @@ Coroutines solve all the above problems. Let's see how.
 
 As we said, a coroutine is a lightweight thread, which means it's not mapped directly to an OS thread. It's a computation that can be suspended and resumed at any time. So, before we can start looking at how to build a coroutine, we need to understand how to suspend and resume a coroutine.
 
-Kotlin provides the `suspend` keyword to mark a function that can suspend a coroutine:
+**Kotlin provides the `suspend` keyword to mark a function that can suspend a coroutine**:
 
 ```kotlin
 suspend fun bathTime() {
@@ -176,9 +176,9 @@ suspend fun bathTime() {
 
 As we can see, we will use the same examples from the article [ZIO: Introduction to Fibers](https://blog.rockthejvm.com/zio-fibers/) to show how coroutines are different from fibers.
 
-The `delay(timeMillis: Long)` function is a `suspend` that suspends a coroutine for `timeMillis` milliseconds, provided by the `kotlinx-coroutines-core` library. A `suspend` function can be called only from a coroutine or another `suspend` function. It can be suspended and resumed. In the example above, the `bathTime` function can be suspended when the coroutine executes the `delay` function. Once resumed, the `bathTime` function will continue its execution from the line immediately after the suspension.
+The `delay(timeMillis: Long)` function is a `suspend` that suspends a coroutine for `timeMillis` milliseconds. A `suspend` function can be called only from a coroutine or another `suspend` function. It can be suspended and resumed. In the example above, the `bathTime` function can be suspended when the coroutine executes the `delay` function. Once resumed, the `bathTime` function will continue its execution from the line immediately after the suspension.
 
-How is it possible? Without going too deep into coroutines' internals, the whole context of the suspending function is saved in an object of type `Continuation<T>`. The `T` type variable represents the function's return type. The continuation contains all the state of the variables and parameters of the function. Moreover, it includes a label that stores the point where the execution was suspended. So, the Kotlin compiler will rewrite every suspending function adding a parameter of type `Continuation` to the function signature. The signature of our `bathTime` function will be rewritten as follows:
+The above mechanism is wholly implemented in the Kotlin runtime, but how is it possible? Without going too deep into coroutines' internals, **the whole context of the suspending function is saved in an object of type `Continuation<T>`**. The `T` type variable represents the function's return type. The continuation contains all the state of the variables and parameters of the function. Moreover, it includes a label that stores the point where the execution was suspended. So, the Kotlin compiler will rewrite every suspending function adding a parameter of type `Continuation` to the function signature. The signature of our `bathTime` function will be rewritten as follows:
 
 ```kotlin
 fun bathTime(continuation: Continuation<*>): Any
@@ -186,7 +186,9 @@ fun bathTime(continuation: Continuation<*>): Any
 
 Why the compiler also changes the return type? The answer is that when the `suspend` function is suspended, it cannot return the value of the function. Still, it must return a value that marks that the function was suspended, `COROUTINE_SUSPENDED`.
 
-Inside the `continuation` object, the compiler will save the state of the execution of the function. Since we have no parameters and no internal variables, the continuation stores only a label marking the advance of the execution. For the sake of simplicity, let's introduce a `BathTimeContinuation` type to store the context of the function. In our example, the `bathTime` can be called at the beginning or after the `delay` function. If we use an `Int` label, we can represent the two possible states of the function as follows:
+Inside the `continuation` object, the compiler will save the state of the execution of the function. Since we have no parameters and no internal variables, the continuation stores only a label marking the advance of the execution. For the sake of simplicity, let's introduce a `BathTimeContinuation` type to store the context of the function. 
+
+In our example, the runtime can call the `bathTime` function at the beginning or after the `delay` function. If we use an `Int` label, we can represent the two possible states of the function as follows:
 
 ```kotlin
 fun bathTime(continuation: Continuation<*>): Any {
@@ -204,11 +206,11 @@ fun bathTime(continuation: Continuation<*>): Any {
 }
 ```
 
-Well, a lot of things are happening here. First, we must check if the `continuation` object is of type `BathTimeContinuation`. If not, we create a new `BathTimeContinuation` object, passing the `continuation` object as a parameter. We create a new continuation instance when the `bathTime` function is called for the first time. As we can see, continuations are like onions: Every time we call a suspending function, we wrap the continuation object in a new one.
+Well, a lot of things are happening here. First, we must check if the `continuation` object is of type `BathTimeContinuation`. If not, we create a new `BathTimeContinuation` object, passing the `continuation` object as a parameter. We create a new continuation instance when the `bathTime` function is called for the first time. As we can see, continuations are like onions: **Every time we call a suspending function, we wrap the continuation object in a new one**.
 
 Then, if the `label` is `0`, we print the first message and set the label to `1`. Then, we call the `delay` function, passing the continuation object. If the `delay` function returns `COROUTINE_SUSPENDED`, it means that the function was suspended, and we return `COROUTINE_SUSPENDED` to the caller. Suppose the `delay` function returns a value different from `COROUTINE_SUSPENDED`. In that case, it means the function resumed, and we can continue the execution of the `bathTime` function. If the label is `1`, the function is just resumed, and we print the second message.
 
-The above is a simplified version of the actual code generated by the Kotlin compiler. Though, it's enough to understand how coroutines work.
+The above is a simplified version of the actual code generated by the Kotlin compiler and run by the Kotlin runtime. Though, it's enough to understand how coroutines work.
 
 ## 4. Coroutine Scope and Structural Concurrency
 
