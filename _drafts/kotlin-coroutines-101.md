@@ -799,9 +799,9 @@ And that's all for coroutines cancellation!
 
 ## 8. The Coroutine Context
 
-In the section concerning continuation and the section concerning builders, we briefly introduced the concept of coroutine context. Also, the `CoroutineScope` retains a reference to a coroutine context. As you can imagine, it is a way to store information passed from parents to children to develop structural concurrency internally.
+In the section concerning continuation and the section concerning builders, we briefly introduced the concept of coroutine context. Also, the `CoroutineScope` retains a reference to a coroutine context. As you can imagine, **it is a way to store information passed from parents to children to develop structural concurrency internally**.
 
-The type representing the coroutine context is called `CoroutineContext`, and it is part of the Kotlin core library. It's a funny type since it represents a collection of elements, but also, every element is a collection. We have the following:
+The type representing the coroutine context is called `CoroutineContext`, and it is part of the Kotlin core library. It's a funny type since it represents a collection of elements, but also, every element is a collection:
 
 ```kotlin
 public interface CoroutineContext
@@ -815,7 +815,7 @@ The implementation of the `CoroutineContext` is placed in the Kotlin coroutines 
 val name: CoroutineContext = CoroutineName("Morning Routine")
 ```
 
-In addition, the `CoroutineDispatcher` implements the `CoroutineContext` interface and the `Job` type. The identifier we saw in the above logs is the `CoroutineId`. This context is automatically added to every coroutine when we enable the debug mode.
+In addition, the `CoroutineDispatcher` and the `Job` type implement the `CoroutineContext` interface. The identifier we saw in the above logs is the `CoroutineId`. This context is automatically added by the runtime to every coroutine when we enable the debug mode.
 
 Since the `CoroutineContext` behaves like a collection, the library also defines the `+` operator to add elements to the context. So, creating a new context with many elements is as simple as:
 
@@ -857,7 +857,7 @@ The above code prints the coroutine name stored in the context, if any. The `Cor
 
 The library also defines the empty coroutine context, `EmptyCoroutineContext`, which we can use as a "zero" element to create a new custom context.
 
-So, context is a way to pass information among coroutines. Any parent coroutine gives its context to its children coroutines. Children coroutines copy values from the parent to a new instance of the context that they can override. Let's see an example of inheritance without override:
+So, context is a way to pass information among coroutines. **Any parent coroutine gives its context to its children coroutines**. Children coroutines copy values from the parent to a new instance of the context that they can override. Let's see an example of inheritance without override:
 
 ```kotlin
 suspend fun coroutineCtxInheritance() {
