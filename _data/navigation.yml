@@ -1,7 +1,21 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "About"
+    url: /#about
+  - title: "Program"
+    url: /#program
+  - title: "Shared Task"
+    url: /#shared-task
+  - title: "Invited Speakers"
+    url: /#invited-speakers
+  - title: "Organization"
+    url: /#organization
+  - title: "Sponsors"
+    url: /#sponsors
+  - title: "Previous Workshops"
+    url: /previous-workshops
+  - title: "Contact"
+    url: /#contact
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
