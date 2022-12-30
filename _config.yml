@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Sin's Blog"
+title                    : "이십대후반 공대생 기록장"
 title_separator          : "|"
 subtitle                 : #"Stop thinking, Just Do it!"
-name                     : "LeeSin"
+name                     : "현 to 신"
 description              : "이신의 블로그 입니다."
 url                      : "https://LEESIN97.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Lee Sin"
+  name             : "현 to 신"
   avatar           : "/assets/images/myphoto.jpg"
-  bio              : "B.S. Student, Department of Robotics."
+  bio              : "벌써 이십대 후반.."
   location         : "Seoul, Republic of Korea"
   #email            : "gkdlgus97@naver.com"
   links:
