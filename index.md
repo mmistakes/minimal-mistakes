@@ -9,7 +9,7 @@ toc_sticky: true
 
 To be announced.
 
-## Program
+## Calls
 
 To be announced.
 
@@ -23,12 +23,9 @@ To be announced.
 
 ## Organization
 
-To be announced.
 
-## Sponsors
-
-To be announced.
+[//]: # (## Sponsors)
 
 ## Contact
 
-To be announced.
+Please email us at [dialdoc2023-organizers@@googlegroups.com](dialdoc2023-organizers@@googlegroups.com).
