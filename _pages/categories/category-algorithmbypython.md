@@ -1,5 +1,5 @@
 ---
-title: "알고리즘 구현 (With Python)"
+title: "알고리즘"
 layout: archive
 permalink: categories/AlgorithmByPython
 author_profile: true
