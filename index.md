@@ -7,11 +7,63 @@ toc_sticky: true
 
 ## About
 
-To be announced.
+Welcome to the Third DialDoc Workshop co-located with [ACL 2023](https://2023.aclweb.org).
+
+DialDoc workshop focuses on Document-Grounded Dialogue and Conversational Question Answering. 
+Given the vast amount of content created every day in various mediums, it is a meaningful yet challenging task not only to make such content _accessible_ to end users via various conversational interfaces but also to make sure the responses provided by the models are _grounded_ and _faithful_ with respect to the knowledge sources. The purpose of this workshop is to invite researchers and practitioners to bring their individual perspectives on the subject of grounded dialogue and conversational question answering to advance the field in a joint effort. We also host a shared task on grounded dialogue based on multilingual documents, which aims to extend the current advances to languages other than English.
+
+Topics of interests include but not limited to
+- Document-grounded dialogue and conversational machine reading;
+- Knowledge-grounded dialogue generation with pre-trained language models;
+- Open domain dialogue and conversational QA;
+- Topical open-domain conversational chat;
+- Parsing semi-structured document content for dialogue and conversational QA, table reading;
+- Evaluation for document-grounded dialogue;
+- Interpretability and faithfulness in dialogue modeling;
+- Dialogue summarization and query-based summarization.
+
 
 ## Calls
 
-To be announced.
+We welcome submissions of original work as long or short papers, as well as non-archival papers. We also accept paper submissions via ARR. All accepted papers will be presented at the workshop.
+
+We will have the Best Paper Award and Best Student Paper Award, which will be announced during the workshop.
+
+### Submission Instructions
+
+Formatting Guidelines:
+We accept long (eight pages plus unlimited references) and short (four pages plus unlimited references) papers, which should conform to ARR CFP guidelines.
+
+Non-Archival Submissions:
+The accepted papers can opt to be non-archival.
+
+Stay tuned for more details about submission site.
+
+[//]: # (Submit your paper:)
+
+[//]: # (- For submitting papers directly to our workshop, use button "Workshop Submission" on the submission site. )
+
+[//]: # (- For submitting papers with ARR reviews, use button "Commitment Submission" on the submission site.)
+
+
+
+### Review Process
+
+All submissions will be peer-reviewed by at least two reviewers. The reviewing process will be two-way anonymized. Authors are responsible for anonymizing the submissions.
+
+### Important Dates
+- For regular workshop paper submissions (regular/non-archival long/short tracks)
+  - Paper Due Date: April 24, 2023
+- For paper submissions with ARR reviews
+  - Paper Due Date: TBD
+- For technical paper submissions (Shared Task track)
+  - Paper Due Date: TBD
+- For all
+  - Notification of Acceptance: May 22, 2023
+    - Camera-ready Paper Due Date: June 6, 2023
+    - Pre-recorded video due: June 12, 2023
+- Workshop Date: July 13 or 14, 2023
+
 
 ## Shared Task
 
@@ -24,8 +76,10 @@ To be announced.
 ## Organization
 
 
-[//]: # (## Sponsors)
+
 
 ## Contact
+
+Please join our [Google Group](https://groups.google.com/g/dialdoc)!
 
 Please email us at [dialdoc2023-organizers@@googlegroups.com](dialdoc2023-organizers@@googlegroups.com).
