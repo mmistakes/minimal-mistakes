@@ -6,15 +6,9 @@ main:
     url: /projects
   - title: "Research"
     url: /research
+  - title: "Teaching"
+    url: /teaching
   - title: "People"
     url: /people
   - title: "Contact"
     url: /contact
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/

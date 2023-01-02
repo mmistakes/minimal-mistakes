@@ -1,0 +1,57 @@
+# /_data/courses.yml
+
+wdpo:
+  name        : "Introduction to Image Processing"
+  language    : "PL"
+  field       : "Automatic control and robotics"
+  level       : "bechelor degree, 5 semester"
+  online      : "https://jug.dpieczynski.pl/lab-wdpo/"  
+  info:
+    - "Basics of image processing using OpenCV in Python language"
+    - "Classical image processing methods"
+    - "Use knowledge in: camera calibration, lighting methods, color influence and industrial system"
+    - "Application of programming knowledge in sensors: depth camera, thermal imaging camera, AI camera"
+
+sw:
+  name        : "Introduction to Computer Vision"
+  language    : "PL"
+  field       : "Automatic control and robotics"
+  level       : "master degree, 1 semester"
+  online      : 
+  info:
+    - "Basic knowledge of image processing methods and vision systems"
+    - "Local, contextual, and shape- and feature-based algorithms"
+    - "OpenCV library in Python"
+
+wzum:
+  name        : "Selected topics of machine learning"
+  language    : "PL"
+  field       : "Automatic control and robotics"
+  level       : "master degree, 1 semester"
+  online      : 
+  info:
+    - "Basic knowledge of machine learning: tasks, algorithms, their characteristics and applications"
+    - "Classical methods based on Scikit-learn"
+
+zpo:
+  name        : "Advanced image processing"
+  language    : "PL"
+  field       : "Automatic control and robotics"
+  level       : "master degree, 2 semester"
+  online      : 
+  info:
+    - "Architectures of sample neural networks for image recognition"
+    - "How are deep neural networks learned? "
+    - "What are the modern approaches depending on the task?"
+    - "ML frameworks in Python, like: PyTorch, TensorFlow, Keras"
+
+edge:
+  name        : "Embedded systems and edge processing"
+  language    : "PL"
+  field       : "Automatic control and robotics"
+  level       : "master degree, 3 semester"
+  online      : "https://jug.dpieczynski.pl/lab-swpb/"
+  info:
+    - "Architectures of embedded systems and ways of edge processing"
+    - "How to speed up computing?"
+    - "What is TinyML and what is EDGE AI?"

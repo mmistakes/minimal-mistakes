@@ -1,0 +1,21 @@
+{% assign couse = course %}
+
+<div class="{{ include.type | default: 'grid' }}__item_course">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      {{ course.name }} ({{ course.language }})
+    </h2>
+
+    <p style="font-size:smaller; color:darkgreen;margin-top:-10px">{{ course.field }} ({{ course.level }})</p>
+
+    <p style="font-size:smaller;margin-top:-20px">
+      <strong>Content: {% if couse.online %} <a href="{{ couse.online }}" style="font-size:smaller;color:#006288">(available online)</a> {% endif %} </strong><BR>
+    <ul style="font-size:small;margin-top:-20px">
+      {% for content in course.info %}
+      <li>{{ content }}</li>
+      {% endfor %}
+    </ul>
+    </p>
+  </article>
+</div>
