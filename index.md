@@ -71,7 +71,7 @@ To be announced.
 
 ## Organization
 
-<h2>Invited Speakers</h2>
+### Invited Speakers
 {% include committee-member.html
    name="Greg Durrett"
    picture="./assets/images/speakers/greg_durrett.jpg"
@@ -96,7 +96,7 @@ To be announced.
    email = "ruiyan@ruc.edu.cn"
 %}
 
-<h2>Workshop Organizers</h2>
+### Workshop Organizers
 {% include committee-member.html
    name="Roee Aharoni"
    picture="./assets/images/organizers/roee_aharoni.jpg"
