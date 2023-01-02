@@ -25,7 +25,7 @@ The pilot phase for Helmi access is now running! [More details here](_posts/2022
 
 ### Access to Kvasi
 
-See the [Kvasi documentation](https://docs.csc.fi/computing/kvasi/) for details on how to connect to Kvasi.
+See the [Kvasi documentation](https://docs.csc.fi/computing/quantum-computing/overview/#kvasi) for details on how to connect to Kvasi.
 
 ### Access to LUMI
 
