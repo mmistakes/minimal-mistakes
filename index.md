@@ -75,7 +75,22 @@ To be announced.
 
 ## Organization
 
+<h2>Workshop Organizers</h2>
+{% include committee-member.html
+   name="Roee Aharoni"
+   picture="/assets/images/speakers/roee_aharoni.jpg"
+   site="http://roeeaharoni.com"
+   institution="Google Research"
+   email = "roeeaharoni@google.com"
+%}
 
+{% include committee-member.html
+   name="Nouha Dziri"
+   picture="/assets/images/speakers/nouha_dziri.jpg"
+   site="https://webdocs.cs.ualberta.ca/~dziri/"
+   institution="AllenAI"
+   email = "nouhad@allenai.org"
+%}
 
 
 ## Contact

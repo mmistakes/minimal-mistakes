@@ -2,8 +2,8 @@
 main:
   - title: "About"
     url: /#about
-  - title: "Program"
-    url: /#program
+  - title: "Calls"
+    url: /#calls
   - title: "Shared Task"
     url: /#shared-task
   - title: "Invited Speakers"
