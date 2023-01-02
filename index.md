@@ -69,7 +69,7 @@ All submissions will be peer-reviewed by at least two reviewers. The reviewing p
 
 To be announced.
 
-## Invited Speakers
+## Organization
 
 <h2>Invited Speakers</h2>
 {% include committee-member.html
@@ -95,8 +95,6 @@ To be announced.
    institution="Renmin University of China"
    email = "ruiyan@ruc.edu.cn"
 %}
-
-## Organization
 
 <h2>Workshop Organizers</h2>
 {% include committee-member.html
