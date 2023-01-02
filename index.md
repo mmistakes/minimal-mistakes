@@ -71,14 +71,37 @@ To be announced.
 
 ## Invited Speakers
 
-To be announced.
+<h2>Invited Speakers</h2>
+{% include committee-member.html
+   name="Greg Durrett"
+   picture="/assets/images/speakers/greg_durrett.jpg"
+   site="https://www.cs.utexas.edu/~gdurrett/"
+   institution="The University of Texas at Austin"
+   email = "gdurrett@cs.utexas.edu"
+%}
+
+{% include committee-member.html
+   name="Xiang Ren"
+   picture="/assets/images/speakers/xiang_ren.jpg"
+   site="https://shanzhenren.github.io/"
+   institution="University of Southern California"
+   email = "xiangren@usc.edu"
+%}
+
+{% include committee-member.html
+   name="Rui Yan"
+   picture="/assets/images/speakers/rui_yan.jpg"
+   site="http://ai.ruc.edu.cn/english/GSAI_FACULTY/28026f7425324f61991c70d279372d13.htm"
+   institution="Renmin University of China"
+   email = "ruiyan@ruc.edu.cn"
+%}
 
 ## Organization
 
 <h2>Workshop Organizers</h2>
 {% include committee-member.html
    name="Roee Aharoni"
-   picture="/assets/images/speakers/roee_aharoni.jpg"
+   picture="/assets/images/organizers/roee_aharoni.jpg"
    site="http://roeeaharoni.com"
    institution="Google Research"
    email = "roeeaharoni@google.com"
@@ -86,10 +109,42 @@ To be announced.
 
 {% include committee-member.html
    name="Nouha Dziri"
-   picture="/assets/images/speakers/nouha_dziri.jpg"
+   picture="/assets/images/organizers/nouha_dziri.jpg"
    site="https://webdocs.cs.ualberta.ca/~dziri/"
    institution="AllenAI"
    email = "nouhad@allenai.org"
+%}
+
+{% include committee-member.html
+   name="Song Feng"
+   picture="/assets/images/organizers/song_feng.jpg"
+   site="https://songfeng.github.io"
+   institution="AWS AI Labs"
+   email = "sofeng@amazon.com"
+%}
+
+{% include committee-member.html
+   name="Yongbin Li"
+   picture="/assets/images/organizers/yongbin_li.jpg"
+   site=""
+   institution="DAMO Academy, Alibaba Group"
+   email = "shuide.lyb@alibaba-inc.com"
+%}
+
+{% include committee-member.html
+   name="Yu Li"
+   picture="/assets/images/organizers/yu_li.jpg"
+   site="http://yooli.me"
+   institution="Columbia University"
+   email = "yl5016@columbia.edu"
+%}
+
+{% include committee-member.html
+   name="Hui Wan"
+   picture="/assets/images/organizers/hui_wan.jpg"
+   site="https://sites.google.com/view/hui-wan/"
+   institution="IBM Research AI"
+   email = "hwan@us.ibm.com"
 %}
 
 
