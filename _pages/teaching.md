@@ -1,5 +1,5 @@
 ---
-title: "People"
+title: "Teching"
 layout: splash
 permalink: /teaching
 author_profile: false
