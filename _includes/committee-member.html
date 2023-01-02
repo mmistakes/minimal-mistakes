@@ -1,0 +1,15 @@
+<div itemscope itemtype="https://schema.org/Person" style="width: 100%; display: table;">
+    <div style="display: table-row;">
+        <div class="author__avatar" style="display: table-cell; padding-bottom: 5px;">
+          <img src="{{ include.picture }}" alt="{{ include.name }}" itemprop="image">
+        </div>
+        <div class="author__content" style="display: table-cell; padding-left: 15px;">
+          <h3 class="author__name" itemprop="name">
+            {% if include.site == null %}{{ include.name }}{% else %}<a href="{{ include.site }}">{{ include.name }}</a>{% endif %}
+            {% if include.extrainfo != null %}<em>{{ include.extrainfo }}</em>{% endif %}
+          </h3>
+          <p class="author__bio" itemprop="description">{{ include.institution }}</p>
+          <p class="author__bio" itemprop="description">{{ include.email }}</p>
+        </div>
+    </div>
+</div>
