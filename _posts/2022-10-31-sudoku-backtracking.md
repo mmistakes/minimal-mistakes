@@ -258,7 +258,7 @@ Testing a few scenarios should validate our validation function:
 ```scala
 validate(problem, 5, 2, 4) // true
 validate(problem, 5, 2, 5) // false
-validate(problem, 5, 2, 7) // true
+validate(problem, 5, 2, 7) // false
 ```
 
 ## 4. The Recursive Backtracking Sudoku Solver

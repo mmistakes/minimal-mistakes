@@ -41,7 +41,7 @@ How can you do that in the current Scala 2 world?
 
 Some good news and some bad news. The bad news is that you can't follow your dreams in Scala 2 (not this one at least). The good news is that it's possible in Scala 3.
 
-In Scala 3, we can define a type member which can take different forms &emdash; i.e. reduce to different concrete types &emdash; depending on the type argument we're passing:
+In Scala 3, we can define a type member which can take different forms &mdash; i.e. reduce to different concrete types &mdash; depending on the type argument we're passing:
 
 ```scala3
 type ConstituentPartOf[T] = T match
