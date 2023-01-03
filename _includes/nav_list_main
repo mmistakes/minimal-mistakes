@@ -17,7 +17,7 @@
                 {% endfor %}
             </ul>
 
-        <span class="nav__sub-title">Reading Archive</span>
+        <span class="nav__sub-title">Reading</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Tech_News" %}
@@ -40,7 +40,7 @@
                 {% endfor %}
             </ul>
 
-        <span class="nav__sub-title">Collection Archive</span>
+        <span class="nav__sub-title">Collection</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Articles" %}
