@@ -1,7 +1,7 @@
 ---
-title: "In Korean"
+title: "Book"
 layout: archive
-permalink: categories/book-k
+permalink: categories/interests
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ---
 
-{% assign posts = site.categories.Book_K %}
+{% assign posts = site.categories.Interests %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
