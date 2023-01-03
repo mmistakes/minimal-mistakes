@@ -17,6 +17,8 @@ Resource description Framework (RDF) is a standard model for data interchange, u
 
 Jekyll RDF is a plugin for Jekyll allowing rendering static web based on the RDF file.
 
+This weeks open mic presentation introduces to the basis of installation and usage of the Jekyll RDF plugin and offers some scenarios in which it is suitable to use.
+
 ##### Sources
 * [Jekyll](https://jekyllrb.com/)
 * [RDF Jekyll](https://github.com/AKSW/jekyll-rdf/tree/5a675591a7f08593f7ba1b1cdb0257d00b568d4d)
