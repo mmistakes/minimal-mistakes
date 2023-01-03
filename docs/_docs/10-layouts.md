@@ -764,7 +764,7 @@ If you'd like to add, remove, or change the order of these default links you can
 Let's say you wanted to replace the LinkedIn button with a Reddit one. Simply replace the HTML with the following:
 
 ```html
-{% raw %}<a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}" class="btn" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
+{% raw %}<a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}" class="btn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Reddit"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
 ```
 
 The important parts to change are:
@@ -778,23 +778,23 @@ The important parts to change are:
 
 To change the color of the button use one of the built in [utility classes]({{ "/docs/utility-classes/#buttons" | relative_url }}). Or you can create a new button class to match whatever color you want.
 
-Under the `$social` color map in `assets/_scss/_buttons.scss` simply add a name (this will be appened to `btn--`) that matches the new button class. In our case `reddit` ~> `.btn--reddit`.
+Under the `$buttoncolors:` color map in `_sass/minimal-mistakes/_buttons.scss` simply add a name (this will be appended to `btn--`) that matches the new button class. In our case `reddit` ~> `.btn--reddit`.
 
 ```scss
-$social:
+$buttoncolors:
 (facebook, $facebook-color),
 (twitter, $twitter-color),
 (linkedin, $linkedin-color),
-(reddit, #ff4500);
+(reddit, $reddit-color);
 ```
 
-**ProTip:** For bonus points you can add it as a Sass `$variable` that you set in `_variables.scss` like the other ["brand" colors](http://brandcolors.net/).
+**ProTip:** For bonus points you can modify the Sass variable `$reddit-color` that is set in `_variables.scss` [or create if different than Reddit example] to a modified ["brand" color](http://brandcolors.net/).
 {: .notice--info}
 
 Add the new `.btn--reddit` class to the `<a>` element from earlier, [compile `main.css`]({{ "/docs/stylesheets/" | relative_url }}) and away you go.
 
 ```html
-{% raw %}<a href="https://www.reddit.com/submit?url={{ page.url | relative_url }}&title={{ page.title }}" class="btn btn--reddit" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
+{% raw %}<a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}" class="btn btn--reddit" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Reddit"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
 ```
 
 ![Reddit social share link button]({{ "/assets/images/mm-social-share-links-reddit-color.png" | relative_url }})
