@@ -14,14 +14,7 @@
         </li>
         <li>
             <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->            
-            <ul>
-                {% for category in site.categories %}
-                {% if category[0] == "Java" %}
-                <li><a href="/categories/Java" class="">Java ({{category[1].size}})</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->   
             <ul>
                 <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시-->
@@ -30,7 +23,14 @@
                 <li><a href="/categories/CodeUp" class="">CodeUp ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
-            </ul>
+            </ul>         
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Java" %}
+                <li><a href="/categories/Java" class="">Java ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>            
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "C" %}
