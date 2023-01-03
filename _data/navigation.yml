@@ -2,14 +2,10 @@
 main:
   #- title: "Home"
   #  url: "/"
-  - title: "Archive"
+  - title: 'Archive'
     url: /year-archive/
-  - title: "Introduce"
-    url: /about/
-  - title: "Category"
-    url: "/categories/"
-  - title: "Tags"
-    url: /tags/
+  - title: 'Category'
+    url: '/categories/'
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
