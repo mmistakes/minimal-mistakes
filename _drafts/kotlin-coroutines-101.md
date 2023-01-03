@@ -15,89 +15,7 @@ The article requires a minimum knowledge of the Kotlin language. Still, you shou
 
 All the examples we'll present requires at least version 1.7.20 of the Kotlin compiler and version 1.6.4 of the Kotlin Coroutines library. The basic building blocks of coroutines are available in the standard library. The full implementation of the structured concurrency model is in an extension library called `kotlinx-coroutines-core`.
 
-We'll use a Maven file to resolve dependency and build the code.
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-
-  <groupId>in.rcard</groupId>
-  <artifactId>kactor-coroutines-playground</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-
-  <properties>
-    <kotlin.version>1.7.20</kotlin.version>
-    <kotlinx-coroutines.version>1.6.4</kotlinx-coroutines.version>
-    <slf4j-api.version>2.0.5</slf4j-api.version>
-    <logback-classic.version>1.4.5</logback-classic.version>
-  </properties>
-
-  <dependencies>
-    <dependency>
-      <groupId>org.jetbrains.kotlin</groupId>
-      <artifactId>kotlin-stdlib</artifactId>
-      <version>${kotlin.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jetbrains.kotlinx</groupId>
-      <artifactId>kotlinx-coroutines-core</artifactId>
-      <version>${kotlinx-coroutines.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>${slf4j-api.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-classic</artifactId>
-      <version>${logback-classic.version}</version>
-    </dependency>
-  </dependencies>
-
-  <build>
-    <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
-    <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
-
-    <plugins>
-      <plugin>
-        <groupId>org.jetbrains.kotlin</groupId>
-        <artifactId>kotlin-maven-plugin</artifactId>
-        <version>${kotlin.version}</version>
-
-        <executions>
-          <execution>
-            <id>compile</id>
-            <goals>
-              <goal>compile</goal>
-            </goals>
-          </execution>
-
-          <execution>
-            <id>test-compile</id>
-            <goals>
-              <goal>test-compile</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>7</source>
-          <target>7</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-</project>
-```
-
-It's possible to create a similar building file for Gradle, but we'll stick to Maven for simplicity.
+We'll use a Maven file to resolve dependency and build the code. We shared an example of `pom.xml` file at the end of this article. It's also possible to create a similar building file for Gradle, but we'll stick to Maven for simplicity.
 
 During the article, we'll use an Slf4j logger to print the output of the code instead of using the `println` function:
 
@@ -127,7 +45,7 @@ On the other end, as we will see, **coroutines are very lightweight**. They are 
 
 Another good reason to adopt **coroutines** is that they **are a way to write asynchronous code in a synchronous fashion**.
 
-In the first attempt, we can use callbacks. However, callbacks are not very elegant, and they are not composable. Moreover, they are not very easy to reason about them. It's easy to end up in a *callback hell*, where the code is tough to read and maintain:
+As an alternative, we can use callbacks. However, callbacks are not very elegant, and they are not composable. Moreover, it's not very easy to reason about them. It's easy to end up in a *callback hell*, where the code is tough to read and maintain:
 
 
 ```kotlin
@@ -164,7 +82,7 @@ Coroutines solve all the above problems. Let's see how.
 
 As we said, a coroutine is a lightweight thread, which means it's not mapped directly to an OS thread. It's a computation that can be suspended and resumed at any time. So, before we can start looking at how to build a coroutine, we need to understand how to suspend and resume a coroutine.
 
-**Kotlin provides the `suspend` keyword to mark a function that can suspend a coroutine**:
+**Kotlin provides the `suspend` keyword to mark a function that can suspend a coroutine**, i.e. allow it to be paused & resumed later:
 
 ```kotlin
 suspend fun bathTime() {
@@ -174,7 +92,7 @@ suspend fun bathTime() {
 }
 ```
 
-As we can see, we will use the same examples from the article [ZIO: Introduction to Fibers](https://blog.rockthejvm.com/zio-fibers/) to show how coroutines are different from fibers.
+If you're a Scala geek and have been following us for a while, you may notice the example is the same as the [ZIO Fibers article](https://blog.rockthejvm.com/zio-fibers/) - a great opportunity for you to see how coroutines are different from fibers.
 
 The `delay(timeMillis: Long)` function is a `suspend` that suspends a coroutine for `timeMillis` milliseconds. A `suspend` function can be called only from a coroutine or another `suspend` function. It can be suspended and resumed. In the example above, the `bathTime` function can be suspended when the coroutine executes the `delay` function. Once resumed, the `bathTime` function will continue its execution from the line immediately after the suspension.
 
@@ -502,7 +420,7 @@ suspend fun workingHard() {
 }
 ```
 
-The infinite cycle will prevent the function from reaching the `delay` suspending function, so the coroutine will never yield the control. Now, we define another suspending function to execute concurrently with the previous one:
+The infinite cycle will prevent the function from reaching the `delay` suspending function, so the coroutine will never yield control. Now, we define another suspending function to execute concurrently with the previous one:
 
 ```kotlin
 suspend fun takeABreak() {
@@ -512,7 +430,7 @@ suspend fun takeABreak() {
 }
 ```
 
-Finally, let's glue everything together in a new suspending function running the two previous functions in two dedicated coroutines. To be sure seeing the effect of the cooperative scheduling, we limit the thread pool executing the coroutines to a single thread:
+Finally, let's glue everything together in a new suspending function running the two previous functions in two dedicated coroutines. To make sure we'll see the effect of the cooperative scheduling, we limit the thread pool executing the coroutines to a single thread:
 
 ```kotlin
 @OptIn(ExperimentalCoroutinesApi::class)
@@ -613,6 +531,8 @@ For this reason, the library allows us to use different dispatchers for differen
 val dispatcher = Executors.newFixedThreadPool(10).asCoroutineDispatcher()
 ```
 
+If we have both CPU-intensive and blocking parts, we must use both the `Dispatchers.Default` and the `Dispatchers.IO` and make sure to launch CPU-intensive coroutines on the default dispatchers and blocking code on the IO dispatcher.
+
 ## 7. Cancellation
 
 When we reason about concurrent programming, cancellation is always a tricky topic. Killing a thread and abruptly stopping the execution of a task is not a good practice. **Before stopping a task, we must free the resources in use, avoid leaks, and leave the system in a consistent state**.
@@ -641,7 +561,7 @@ A lot is going on in this snippet. First, we started the `workingConsciousness` 
 
 Concurrently, we launch another coroutine, which cancels the `workingJob` after 2 seconds and waits for its completion. The `workingJob` is canceled, but the `workingConsciousness` coroutine is not stopped immediately. It continues to execute until it reaches the suspending point, and then it is canceled. Since we want to wait for the cancellation, we call the `join` function on the `workingJob`.
 
-The log confirms the theory. After more or less 2 seconds from the start of the `coroutine#1`, the `coroutine#2` prints its log, and the `coroutine#1` is canceled:
+The log confirms the theory. About 2 seconds from the start of the `coroutine#1`, the `coroutine#2` prints its log, and the `coroutine#1` is canceled:
 
 ```text
 21:36:04.205 [main] INFO CoroutinesPlayground - Starting the morning routine
@@ -908,8 +828,94 @@ The log of the above code shows the override of the parent coroutine. However, t
 12:22:34.078 [DefaultDispatcher-worker-1 @Greeting Coroutine#1] INFO CoroutinesPlayground - Ending the morning routine
 ```
 
-The only exception to the context inheritance rule is the `Job` context instance. Every new coroutine creates its own `Job` instance, which is not inherited from the parent.
+The only exception to the context inheritance rule is the `Job` context instance. Every new coroutine creates its own `Job` instance, which is not inherited from the parent. Whereas, the other context elements, such as the `CoroutineName` or the dispatcher, are inherited from the parent.
 
 ## 9. Conclusions
 
-Our journey through the basics of the Kotlin coroutines library is over. During the way, we saw why coroutines matter and made a simplified explanation of how they're implemented under the hood. Then, we showed how to create coroutines, also introducing the structural concurrency topic. We saw how cooperative scheduling and cancellation work with many examples. Finally, we introduced the main features of the coroutines' context. There is a lot more to say about coroutines, but we hope this article can be a good starting point for those who want to learn more about them.
+Our journey through the basics of the Kotlin coroutines library is over. We saw why coroutines matter and made a simplified explanation of how they're implemented under the hood. Then, we showed how to create coroutines, also introducing the structural concurrency topic. We saw how cooperative scheduling and cancellation work with many examples. Finally, we introduced the main features of the coroutines' context. There is a lot more to say about coroutines, but we hope this article can be a good starting point for those who want to learn more about them.
+
+## 10. Appendix A
+
+As promised, here is the `pom.xml` file that we used to run the code in this article:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>in.rcard</groupId>
+  <artifactId>kactor-coroutines-playground</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <properties>
+    <kotlin.version>1.7.20</kotlin.version>
+    <kotlinx-coroutines.version>1.6.4</kotlinx-coroutines.version>
+    <slf4j-api.version>2.0.5</slf4j-api.version>
+    <logback-classic.version>1.4.5</logback-classic.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-stdlib</artifactId>
+      <version>${kotlin.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains.kotlinx</groupId>
+      <artifactId>kotlinx-coroutines-core</artifactId>
+      <version>${kotlinx-coroutines.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j-api.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback-classic.version}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
+    <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
+
+    <plugins>
+      <plugin>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-maven-plugin</artifactId>
+        <version>${kotlin.version}</version>
+
+        <executions>
+          <execution>
+            <id>compile</id>
+            <goals>
+              <goal>compile</goal>
+            </goals>
+          </execution>
+
+          <execution>
+            <id>test-compile</id>
+            <goals>
+              <goal>test-compile</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>7</source>
+          <target>7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+```
+
+Enjoy!
