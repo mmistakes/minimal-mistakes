@@ -39,17 +39,11 @@ The accepted papers can opt to be non-archival.
 
 Stay tuned for more details about submission site.
 
-[//]: # (Submit your paper:)
-
-[//]: # (- For submitting papers directly to our workshop, use button "Workshop Submission" on the submission site. )
-
-[//]: # (- For submitting papers with ARR reviews, use button "Commitment Submission" on the submission site.)
-
 
 
 ### Review Process
 
-All submissions will be peer-reviewed by at least two reviewers. The reviewing process will be two-way anonymized. Authors are responsible for anonymizing the submissions.
+All submissions will be peer-reviewed by at least two reviewers. The reviewing process will be two-way anonymized. Authors are responsible for anonymizing their submissions.
 
 ### Important Dates
 - For regular workshop paper submissions (regular/non-archival long/short tracks)
@@ -58,10 +52,9 @@ All submissions will be peer-reviewed by at least two reviewers. The reviewing p
   - Paper Due Date: TBD
 - For technical paper submissions (Shared Task track)
   - Paper Due Date: TBD
-- For all
-  - Notification of Acceptance: May 22, 2023
-    - Camera-ready Paper Due Date: June 6, 2023
-    - Pre-recorded video due: June 12, 2023
+- Notification of Acceptance: May 22, 2023
+- Camera-ready Paper Due Date: June 6, 2023
+- Pre-recorded video due: June 12, 2023
 - Workshop Date: July 13 or 14, 2023
 
 
@@ -77,7 +70,6 @@ To be announced.
    picture="./assets/images/speakers/greg_durrett.jpg"
    site="https://www.cs.utexas.edu/~gdurrett/"
    institution="The University of Texas at Austin"
-   email = "gdurrett@cs.utexas.edu"
 %}
 
 {% include committee-member.html
@@ -85,7 +77,6 @@ To be announced.
    picture="./assets/images/speakers/xiang_ren.jpg"
    site="https://shanzhenren.github.io/"
    institution="University of Southern California"
-   email = "xiangren@usc.edu"
 %}
 
 {% include committee-member.html
@@ -93,7 +84,6 @@ To be announced.
    picture="./assets/images/speakers/rui_yan.jpg"
    site="http://ai.ruc.edu.cn/english/GSAI_FACULTY/28026f7425324f61991c70d279372d13.htm"
    institution="Renmin University of China"
-   email = "ruiyan@ruc.edu.cn"
 %}
 
 ### Workshop Organizers
