@@ -62,9 +62,8 @@ All submissions will be peer-reviewed by at least two reviewers. The reviewing p
 
 To be announced.
 
-## Organization
 
-### Invited Speakers
+## Invited Speakers
 {% include committee-member.html
    name="Greg Durrett"
    picture="./assets/images/speakers/greg_durrett.jpg"
@@ -86,13 +85,13 @@ To be announced.
    institution="Renmin University of China"
 %}
 
+## Organization
 ### Workshop Organizers
 {% include committee-member.html
    name="Roee Aharoni"
    picture="./assets/images/organizers/roee_aharoni.jpg"
    site="http://roeeaharoni.com"
    institution="Google Research"
-   email = "roeeaharoni@google.com"
 %}
 
 {% include committee-member.html
@@ -100,7 +99,6 @@ To be announced.
    picture="./assets/images/organizers/nouha_dziri.jpg"
    site="https://webdocs.cs.ualberta.ca/~dziri/"
    institution="AllenAI"
-   email = "nouhad@allenai.org"
 %}
 
 {% include committee-member.html
@@ -108,7 +106,6 @@ To be announced.
    picture="./assets/images/organizers/song_feng.jpg"
    site="https://songfeng.github.io"
    institution="AWS AI Labs"
-   email = "sofeng@amazon.com"
 %}
 
 {% include committee-member.html
@@ -116,7 +113,6 @@ To be announced.
    picture="./assets/images/organizers/yongbin_li.jpg"
    site=""
    institution="DAMO Academy, Alibaba Group"
-   email = "shuide.lyb@alibaba-inc.com"
 %}
 
 {% include committee-member.html
@@ -124,7 +120,6 @@ To be announced.
    picture="./assets/images/organizers/yu_li.jpg"
    site="http://yooli.me"
    institution="Columbia University"
-   email = "yl5016@columbia.edu"
 %}
 
 {% include committee-member.html
@@ -132,12 +127,16 @@ To be announced.
    picture="./assets/images/organizers/hui_wan.jpg"
    site="https://sites.google.com/view/hui-wan/"
    institution="IBM Research AI"
-   email = "hwan@us.ibm.com"
 %}
 
+### Shared Task Organizers
+TBA
+
+### Program Committee
+TBA
 
 ## Contact
 
-Please join our [Google Group](https://groups.google.com/g/dialdoc)!
+Please join our [Google Group](https://groups.google.com/g/dialdoc) for the updates!
 
-Please email us at [dialdoc2023-organizers@@googlegroups.com](dialdoc2023-organizers@@googlegroups.com).
+Please email us at [dialdoc2023-organizers@@googlegroups.com](dialdoc2023-organizers@@googlegroups.com) for questions and suggestions.
