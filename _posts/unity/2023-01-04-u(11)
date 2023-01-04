@@ -1,0 +1,127 @@
+---
+title: "Unity-11: Ray를 이용한 픽킹 "
+layout: single
+categories : unity
+tag: [coding, github, jekyll, blog, unity]
+toc: true
+toc_sticky: true
+author_profile: false
+---
+
+
+카메라의 작은 상자와 큰 상자를 일직선으로 가상 선을 그었을 때,
+그 선에 만나는 object들의 위치를 가져오는 방식 = Ray를 이용한 픽킹
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class RayTestScript : MonoBehaviour
+{
+
+    void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
+       //마우스 왼쪽 클릭시 감지할수있게 해줌
+        {
+            Ray r = Camera.main.ScreenPointToRay(Input.mousePosition);
+      //r에다가 메인카메라의 ray값(마우스좌표)을 저장
+            RaycastHit rHit;
+     //rHit에다가 ray가 물체를 만났을때 최초 값을 저장
+            if(Physics.Raycast(r, out rHit))
+    // ray가 물체를 만나서 충돌하면 true값이 됨
+            {
+                Debug.Log(rHit.transform.name);
+                Debug.Log(rHit.point);
+            }
+        }        
+    }
+}
+
+```
+
+![image](https://user-images.githubusercontent.com/111720411/209942016-b3d04c87-fbb9-44e9-b241-0746660f6a27.png)
+
+![image](https://user-images.githubusercontent.com/111720411/209942011-0fcd2406-3166-4912-93ab-827f092d7e25.png)
+
+### layer을 이용
+
+- Layer는 비트로 되어있어서 해당 레이어를 감지하고 싶다면, 
+<< (쉬프트 연산)을 통해 해당레이어를 확인한다.
+- int는 32bit로 되어있음 1byte = 4bit
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class RayTestScript : MonoBehaviour
+{
+
+    void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Ray r = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit rHit;
+            int lMask = 1 << 6;
+         //int lMask = 1 << LayerMask.NameToLayer("Floor");
+            //"1"은 켰다라른것을 의미하고, <<는 9번을 밀었으니 '9번째 비트를 키다 = 불러오다' 가 됨.
+            if(Physics.Raycast(r, out rHit, Mathf.Infinity, lMask))
+            {
+                Debug.Log(rHit.transform.name);
+                Debug.Log(rHit.point);
+
+            }
+        }        
+    }
+}
+```
+
+![image](https://user-images.githubusercontent.com/111720411/209942032-dc0be2a9-df27-473e-9eba-2b388da60001.png)
+
+
+- 6번 Layer만 보게했으니, wall을 눌러도 안나옴. floor만 나옴
+- Layer이름으로 나오게 할 수 도있음 `(LayerMask.NameToLayer("Floor")`
+
+
+#### layer 여러 개 
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class RayTestScript : MonoBehaviour
+{
+
+    void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Ray r = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit rHit;
+            int lMask = 1 << LayerMask.NameToLayer("Floor") | 1 << LayerMask.NameToLayer("wall");          
+            if(Physics.Raycast(r, out rHit, Mathf.Infinity, lMask))
+            {
+                Debug.Log(rHit.transform.name);
+                Debug.Log(rHit.point);
+
+            }
+        }        
+    }
+}
+
+```
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/111720411/209945514-d5614cb9-163d-43bb-9ae4-74856c384fa5.gif">
+  </p>
+
+![image](https://user-images.githubusercontent.com/111720411/209942037-cccfda83-cd2d-493a-aaaa-80c862a9f894.png)
+
+
+
+-  `|`을 이용해서 여러 개 Layer 가능
+
