@@ -1,5 +1,5 @@
 ---
-title:  "포스트 최초 작성 입니다."
+title:  "포스트 테스트."
 search: true
 categories: 
   - 
