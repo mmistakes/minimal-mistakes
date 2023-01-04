@@ -1,11 +1,15 @@
 ---
-title: "Kotlin Coroutines 101"
-date: 2022-12-14
+title: "Kotlin Coroutines - A Comprehensive Introduction"
+date: 2023-01-03
 header:
   image: "/images/blog cover.jpg"
 tags: [kotlin, coroutines, concurrency]
 excerpt: "Coroutines are a powerful tool for asynchronous programming, and they fall under the umbrella of structured concurrency. Let's see together which are their main features and strengths."
 ---
+
+_This article is brought to you by [Riccardo Cardin](https://github.com/rcardin). Riccardo is a proud alumnus of Rock the JVM, now a senior engineer working on critical systems written in Scala and Kotlin._
+
+_Enter Riccardo:_
 
 This article introduces Kotlin coroutines, a powerful tool for asynchronous programming. Kotlin's coroutines fall under the umbrella of structured concurrency. They implement a model of concurrency that is similar to Java virtual threads, [Cats Effect](https://blog.rockthejvm.com/cats-effect-fibers/) and [ZIO fibers](https://blog.rockthejvm.com/zio-fibers/). In detail, we'll present some use cases concerning the use of coroutines on backend services, not on the Android environment.
 
