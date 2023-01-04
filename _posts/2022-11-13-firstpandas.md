@@ -3,7 +3,9 @@ layout: single
 title: "Pandas 1"
 categories: pandas
 tag: [Python, pandas]
-tag: pandas
+author_profile: false
+sidebar:
+    nav: "docs"
 ---
 
 ## My First Use of Pandas
