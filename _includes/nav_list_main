@@ -11,8 +11,8 @@
         <span class="nav__sub-title">Tutorial</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Tutorial" %}
-                        <li><a href="/categories/ytb-tutorial" class="">Tutorials ({{category[1].size}})</a></li>
+                    {% if category[0] == "Youtube-tut" %}
+                        <li><a href="/categories/ytb-tutorial" class="">Youtube ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -22,20 +22,6 @@
                 {% for category in site.categories %}
                     {% if category[0] == "Tech_News" %}
                         <li><a href="/categories/tech-news" class="">Tech News ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Interests" %}
-                        <li><a href="/categories/interests" class="">Interest ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Books" %}
-                        <li><a href="/categories/books" class="">Book ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -56,28 +42,6 @@
                 {% endfor %}
             </ul>
 
-        <span class="nav__sub-title">Reading in Korean</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Tech_News-k" %}
-                        <li><a href="/categories/tech-news-k" class="">Tech News ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Interests-k" %}
-                        <li><a href="/categories/interests-k" class="">Interest ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Books-k" %}
-                        <li><a href="/categories/books-k" class="">Book ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
 
       </li>
   </ul>
