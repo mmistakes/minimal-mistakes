@@ -14,7 +14,7 @@ en: &DEFAULT_EN
   breadcrumb_separator       : "/"
   menu_label                 : "Toggle menu"
   search_label               : "Toggle search"
-  toc_label                  : "On this page"
+  toc_label                  : "Index"
   ext_link_label             : "Direct link"
   less_than                  : "less than"
   minute_read                : "minute read"
