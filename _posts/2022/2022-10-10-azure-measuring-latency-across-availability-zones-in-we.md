@@ -34,7 +34,7 @@ To measure latency, I've used [MTR](https://en.wikipedia.org/wiki/MTR_(software)
 
 > please note that MTR are the round-trip times for an ICMP packet to reach the hop at which its TTL expires, for the device processing that expiration to generate an ICMP Time Exceeded packet, and for that packet to return to the originating device. For many routers, performing the ICMP response for dropped packets is a low priority–and on some devices, it’s disabled entirely.
 
-> The [**Azure hub and spoke playground**](https://github.com/nicolgit/hub-and-spoke-playground) is a repo where you find a reference architectire I use as common baseline to implement configurations and test connectivity scenarios. I have used it also here as starting point to build the lab used in this post.
+> The [**Azure hub and spoke playground**](https://github.com/nicolgit/hub-and-spoke-playground) is a GitHub repo where you can find a reference network architecture I use as common base to implement configurations and test networking and connectivity scenarios. I have used it also here as starting point to build the lab used in this post.
 
 # Scenario 1 - one virtual network
 
