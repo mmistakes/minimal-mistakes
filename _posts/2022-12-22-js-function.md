@@ -3,6 +3,9 @@ layout: single
 title: "Using if statement and for loop in JS"
 categories: JavaScript
 tag: JavaScript
+author_profile: false
+sidebar:
+    nav: "docs"
 ---
 
 ## How to write and use if statement and for loop in JavaScript
