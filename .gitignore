@@ -27,6 +27,7 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+.history
 .history/_config_20230105030251.yml
 .history/_config_20230105033356.yml
 .history/_config_20230105033419.yml
