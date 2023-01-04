@@ -1,0 +1,71 @@
+---
+title: "python-10: 기타 제어문"
+layout: single
+categories : python
+tag: [coding, javascript, github, jekyll, blog, python]
+toc: true
+toc_sticky: true
+author_profile: false
+---
+
+# 기타 제어문
+- break : 인터프리터가 break를 만나자마자 반복문 탈출
+- continue : 아래 문장을 하지 않고 다음 반복
+
+### 1~10까지 중 4까지만 출력
+
+```py
+for i in range(10):
+    print(i + 1)
+    if i == 3 :
+        break
+```py
+
+
+
+### 1~10까지 중 4를 제외하고 출력
+
+```py
+for i in range(10):
+    if i == 3 :
+        continue
+    print(i + 1)
+```
+
+![image](https://user-images.githubusercontent.com/111720411/209920150-e7de7ed9-7569-4894-8a24-f98cdf66cf23.png)
+
+
+
+## 기타제어문 실습    
+
+### 100~1까지 중 70까지만 출력하기(break)
+
+```py
+for i in range(100):
+   print(100 - i)
+    if i == 30 :
+    break
+```
+
+
+
+### 1~100까지 중 3과 5의 공배수만 출력하기(continue)
+
+```py
+# (i+1) % 3 == 0 : 3의 배수
+# (i+1) % 5 == 0 : 5의 배수
+# for i in range(100):
+#     if (i+1) % 3 == 0 and (i+1) % 5 == 0:
+#         print(i+1)
+
+for i in range(100):
+    # if not((i+1) % 3 == 0 and (i+1) % 5 == 0):
+    if (i+1) % 3 != 0 or (i+1) % 5 != 0:
+        continue
+    print(i + 1)
+```py
+
+![image](https://user-images.githubusercontent.com/111720411/209920121-b8a28802-92cf-436d-a350-6715a161c78f.png)
+
+
+
