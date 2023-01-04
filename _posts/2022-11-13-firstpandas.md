@@ -2,7 +2,7 @@
 layout: single
 title: "Pandas 1"
 categories: pandas
-tag: python
+tag: [Python, pandas]
 tag: pandas
 ---
 
