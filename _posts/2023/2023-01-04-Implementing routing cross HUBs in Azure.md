@@ -1,7 +1,7 @@
 ---
 title: Implementing cross HUBs routing in Azure
-date: 2023-01-06 10:00
-tags: [Azure, networking, hub-and-spoke, azure firewall, peering, routing]
+date: 2023-01-04 10:00
+tags: [Azure, networking, hub-and-spoke, azure firewall, peering, routing, chatgpt]
 excerpt: "In this blog post I describe how to configure the routing between 2 HUBs peered toghether, so that all spokes in both Hubs can communicate with each other."
 header:
   overlay_image: https://live.staticflickr.com/65535/52075201234_7520c2cc60_b.jpg
