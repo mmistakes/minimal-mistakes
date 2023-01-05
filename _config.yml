@@ -256,7 +256,6 @@ tag_archive:
 jekyll-archives:
    enabled:
      - categories
-     - tags
    layouts:
      category: archive-taxonomy
      tag: archive-taxonomy
