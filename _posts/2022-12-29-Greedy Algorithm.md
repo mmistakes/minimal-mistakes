@@ -2,9 +2,9 @@
 title: "Greedy Alogorithm"
 categories:
   - 알고리즘
-tags:
-  - 알고리즘
-  - Greedy
+#tags:
+#  - 알고리즘
+#  - Greedy
 toc: true
 toc_label: "목차"
 #toc_icon:

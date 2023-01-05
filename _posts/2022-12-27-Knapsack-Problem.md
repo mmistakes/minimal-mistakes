@@ -2,8 +2,8 @@
 title: "Knapsack Problem"
 categories:
   - 알고리즘
-tags:
-  - 알고리즘
+#tags:
+#  - 알고리즘
 toc: true
 toc_label: "목차"
 #toc_icon:
