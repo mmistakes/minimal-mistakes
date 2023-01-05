@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Yoon Gunwo"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "myImages/profile/me1.jpg" # 프로필 사진 경로
   bio              : "더 좋은 개발자를 위한 과정을 기록하는 윤건우 입니다."
   location         : "Repubic liblic of korea"
   email            :
@@ -299,3 +299,11 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+# Analytics
+analytics:
+  provider               : "google-gtag" 
+                          # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : "G-X1J61B9X3G"
+    anonymize_ip         : # true, false (default)
