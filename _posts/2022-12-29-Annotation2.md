@@ -1,3 +1,16 @@
+---
+title: "Annotation2"
+categories:
+  - Spring
+tags:
+  - Spring
+toc: true
+toc_label: "목차"
+#toc_icon:
+toc_sticky: true
+#last_modified_at:
+---
+
 ### 1. 두 개 이상의 설정 파일 사용
 스프링을 이용해서 어플리케이션 개발하다보면 적게는 수십 개에서 많게는 수백여 개 이상의 빈을 설정하게 된다. 설정하는 빈의 개수가 증가하면 한 개의 클래스 파일에 설정하는 것보다 영역별로 설정 파일을 나누면 관리하기 편해진다.\
 스프링은 한 개 이상의 설정 파일을 이용해서 컨테이너를 생성할 수 있다

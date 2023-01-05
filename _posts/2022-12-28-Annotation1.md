@@ -1,3 +1,16 @@
+---
+title: "Annotation1"
+categories:
+  - Spring
+tags:
+  - Spring
+toc: true
+toc_label: "목차"
+#toc_icon:
+toc_sticky: true
+#last_modified_at:
+---
+
 ### 1. Annotation이란?
 Spring에서는 Annotation을 많이 사용합니다. `Annotation의 역할`은 아래와 같습니다. 
 > JAVA에서 Annotation이라는 기능이 있습니다. 사전상으로 주석의 의미이지만 JAVA에서는 주석 이상의 기능을 가지고 있습니다. Annotation은 자바 소스 코드에 추가하여 사용할 수 있는 메타데이터의 일종입니다. 소스코드에 추가하면 단순 주석의 기능을 하는 것이 아니라 특별한 기능을 사용할 수 있습니다.

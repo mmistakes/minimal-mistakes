@@ -1,3 +1,16 @@
+---
+title: "구간 합(Prefix Sum)"
+categories:
+  - 알고리즘
+tags:
+  - 알고리즘
+toc: true
+toc_label: "목차"
+#toc_icon:
+toc_sticky: true
+#last_modified_at:
+---
+
 ### 1. 누적합(Prefix Sum)이란?
 누적합은 말 그대로 구간의 누적합을 구하는 문제입니다.\
 일반적으로 사용되는 배열에 값을 저장하고 지정된 인데스부터 하나씩 더해가는 방식은 최악의 경우 $O(n^2)$의 시간복잡도를 갖기 때문에 입력의 범위가 클 때 사용할 수 없습니다. 하지만 **Prefix Sum**방식을 사용하면 $O(n)$으로 해결할 수 있습니다.\

@@ -1,3 +1,16 @@
+---
+title: "Knapsack Problem"
+categories:
+  - 알고리즘
+tags:
+  - 알고리즘
+toc: true
+toc_label: "목차"
+#toc_icon:
+toc_sticky: true
+#last_modified_at:
+---
+
 ## 1. Kanpsack Problem이란?
 > 도둑이 보석가게에 배낭을 메고 침입했다.
 > 배낭의 최대 용량은 W이며, 이를 초과해서 보석을 담으면 배낭이 찢어질 것이다.

@@ -1,3 +1,17 @@
+---
+title: "Greedy Alogorithm"
+categories:
+  - 알고리즘
+tags:
+  - 알고리즘
+  - Greedy
+toc: true
+toc_label: "목차"
+#toc_icon:
+toc_sticky: true
+#last_modified_at:
+---
+
 ### 1. Greedy Alogorithm이란?
 - Greedy는 '탐욕스러운, 욕심 많은'이란 뜻이다.
 - 탐욕 알고리즘은 말 그대로 <span style='background-color: #fff5b1'>선택의 순간마다 당장 눈앞에 보이는 최적의 상황만을 쫓아 최종적인 해답에 도달</span>하는 방법이다.
