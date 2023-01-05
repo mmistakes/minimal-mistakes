@@ -13,8 +13,8 @@
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
+minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+classes                  : wide
 # Site Settings
 locale                   : "ko-KR"
 title                    : "Jeromemi Blog"
@@ -23,7 +23,7 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "Jeromemi"
 description              : "웹 개발자 블로그."
 url                      : "https://jagarian1.github.io"
-baseurl                  : ""
+# baseurl                  : 
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   :  # "/assets/images/500x300_teaser.png" path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/88x88logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -65,6 +65,7 @@ search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
   search_within_pages    : # true, false (default)
+  #검색기능
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -102,6 +103,12 @@ analytics:
     tracking_id          : "UA-252976386-1"
     anonymize_ip         : true # true, false (default)
 
+github: [metadata]
+
+header:
+  video:
+    id: -PVofD2A9t8
+    provider: youtube
 
 # Site Author
 author:
@@ -202,7 +209,7 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+enable_coderay: false
 
 
 # Sass/SCSS
@@ -212,12 +219,10 @@ sass:
 
 
 # Outputting
-permalinks:
-category: 
-     tag: 
+permalinks: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: "Asia/Seoul" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -249,10 +254,10 @@ whitelist:
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
-  type: jekyll-archives
+  type: liquid
   path: /categories/
 tag_archive:
-  type: jekyll-archives
+  type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
 jekyll-archives:
@@ -289,7 +294,7 @@ defaults:
       share: true
       related: true
       show_date: true
-      date_format: "%Y-%m-%d"
+      # date_format: "%Y-%m-%d"
   # _posts
   - scope:
       path: ""
