@@ -1,6 +1,6 @@
 ---
 published: true
-title: '2023-01-05-ComputerArchitecture-중앙처리장치(CPU) 작동 원리'
+title: '2023-01-06-ComputerArchitecture-캐시 메모리(Cache Memory)'
 categories:
   - ComputerArchitecture
 tags:
@@ -81,7 +81,7 @@ CPU가 요청한 데이터가 캐시에 있으면 'Cache hit', 없어서 DRAM에
 - Set Associative
 
   - 앞 두 방법의 장단점 보완
-  - 현재 대부분 이 방법 사용
+  - 현재 대부분 이 방법 사용<br><br>
     ![image](https://github.com/222SeungHyun/222SeungHyun.github.io/blob/master/_images/Set%20Associative.png?raw=true)
   - 어떤 set에 들어갈 것인지는 direct, 어떤 way에 들어갈 것인지는 associative
   - way가 클수록 associative에 가까워짐
