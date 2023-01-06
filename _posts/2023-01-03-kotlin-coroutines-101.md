@@ -4,7 +4,7 @@ date: 2023-01-03
 header:
   image: "/images/blog cover.jpg"
 tags: [kotlin, coroutines, concurrency]
-excerpt: "Coroutines are a powerful tool for asynchronous programming, and they fall under the umbrella of structured concurrency. Let's see together which are their main features and strengths."
+excerpt: "Kotlin coroutines are a powerful tool for asynchronous programming, and they fall under the umbrella of structured concurrency. Let's check out their main features and strengths in this tutorial."
 ---
 
 _This article is brought to you by [Riccardo Cardin](https://github.com/rcardin). Riccardo is a proud alumnus of Rock the JVM, now a senior engineer working on critical systems written in Scala and Kotlin._
