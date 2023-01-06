@@ -169,7 +169,7 @@ institution="IBM Research AI"
 
 {% include committee-member.html
 name="Haiyang Yu"
-picture=./assets/images/organizers/haiyang_yu.jpg""
+picture="./assets/images/organizers/haiyang_yu.jpg"
 site=""
 institution="DAMO Academy, Alibaba Group"
 %}
