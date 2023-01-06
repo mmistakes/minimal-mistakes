@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Pandas 1"
+title: "Pandas Apartment Sale Price Data 1"
 categories: pandas
 tag: [Python, pandas]
 author_profile: false
@@ -23,6 +23,7 @@ So I imported pandas through:
 ```python
 import pandas as pd
 ```
+
 
 and I loaded the data by:
 
