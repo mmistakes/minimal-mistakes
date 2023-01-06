@@ -87,7 +87,7 @@ The challenge includes leaderboards for two task settings with two phases, Dev (
 ## Invited Speakers
 {% include committee-member.html
    name="Greg Durrett"
-   picture="./assets/images/speakers/greg_durrett.jpg"
+   picture="./assets/images/speakers/greg_durrett.png"
    site="https://www.cs.utexas.edu/~gdurrett/"
    institution="The University of Texas at Austin"
 %}
