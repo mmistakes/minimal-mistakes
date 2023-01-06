@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "About"
-    url: /#about
   - title: "Calls"
     url: /#calls
   - title: "Shared Task"
@@ -10,17 +8,8 @@ main:
     url: /#invited-speakers
   - title: "Organization"
     url: /#organization
-  - title: "Sponsors"
-    url: /#sponsors
   - title: "Previous Workshops"
     url: /previous-workshops
   - title: "Contact"
     url: /#contact
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+    

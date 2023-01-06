@@ -60,7 +60,26 @@ All submissions will be peer-reviewed by at least two reviewers. The reviewing p
 
 ## Shared Task
 
-To be announced.
+### Task1 Mixed-lingual DGDS
+We will provide annotated data in English, Chinese, French, and Vietnamese for training; and then evaluate models in all four languages.
+
+Training: document set contains 4 languages and we have sample conversations grounded on documents of 4 languages.
+Testing: testing conversations in 4 languages which contain evidences in documents of 4 languages
+
+### Task2 Cross-lingual DGDS
+We will provide sizable annotated data in a source language (e.g. English) and limited data in the target language for training; then evaluate the models in the target language for the settings such as English-to-Chinese and Chinese-to-Vietnamese.
+
+Training: document set and conversation set with grounding labels in English and/or Chinese. 
+Testing: testing conversations in French and/or Vietnamese which contain evidences in documents of 2 source languages (English, Chinese)
+
+
+### Important Dates
+The challenge includes leaderboards for two task settings with two phases, Dev (TestDev) and Test phase,
+- Datasets ready & Baseline Models : February 6, 2023
+- Dev Phase Start : February 13, 2023
+- Test Phase Start : March 25, 2023
+- Date of Leaderboard submission：March 31, 2023
+- Paper submission: April 24, 2023
 
 
 ## Invited Speakers
@@ -130,7 +149,13 @@ To be announced.
 %}
 
 ### Shared Task Organizers
-TBA
+{% include committee-member.html
+   name="Haiyang Yu"
+   picture=""
+   site=""
+   institution="Alibaba DAMO"
+%}
+
 
 ### Program Committee
 TBA
