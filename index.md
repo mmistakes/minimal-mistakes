@@ -197,7 +197,7 @@ Danish Contractor	(IBM Research AI) \
 Le Anh Cuong	(Ton Duc Thang University, Vietnam \
 Nico Daheim	(Technische Universität Darmstadt) \
 Sam Davidson	(UC Davis) \
-Wanyu Du	(UVA) \
+Wanyu Du	(University of Virginia) \
 Hao Fang	(Microsoft) \
 Jatin Ganhotra	(IBM Research AI) \
 Chang Gao	(The Chinese University of Hong Kong) \
