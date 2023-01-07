@@ -15,4 +15,3 @@ classes: wide
 
 **Note:** If the page contains a table of contents, it will no longer appear to the right. Instead it will be forced into the main content container directly following the page's title.
 {: .notice--info}
-

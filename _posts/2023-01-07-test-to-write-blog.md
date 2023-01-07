@@ -12,4 +12,3 @@ I hope you like it!
 
 {% include video id="-PVofD2A9t8" provider="youtube" %}
 
-![unsplash-gallery-image-3-th](images/unsplash-gallery-image-3-th.jpg)
