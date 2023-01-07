@@ -149,14 +149,156 @@ Logback은 로그 메시지 형식과 기록 위치를 설정 파일에서 읽�
 try {
     cps.changePassword("glove", "1111", "1234");
 		System.out.println("암호를 변경했습니다.");
-	}catch(MemberNotFoundException e) {
-		System.out.println("회원 데이터가 존재하지 않습니다.");
-	}catch(WrongIdPasswordException e) {
-		System.out.println("암호가 올바르지 않습니다.");
-	}
+}catch(MemberNotFoundException e) {
+	System.out.println("회원 데이터가 존재하지 않습니다.");
+}catch(WrongIdPasswordException e) {
+	System.out.println("암호가 올바르지 않습니다.");
+}
 ```
 정상 실행되면 다음과 유사한 로그 메시지가 콘솔에 출력된다.
 ![springTrasaction1]("MyImages/springTransaction/springTransaction1")
+
+정상 실행되지 않는다면 다음과 유사한 로그 메시지가 콘솔에 출력된다.
+![springTrasaction2]("MyImages/springTransaction/springTransaction2")
+
+트랜잭션을 롤백했다는 로그 메시지가 찍힌다. 여기서 의문점이 하나 생긴다. 
+> 도대체 트랜잭셕을 시작하고, 커밋하고, 롤백하는 것은 누가 어떻게 처리하는 걸까? 이에 관한 내용을 이해하려면 프록시를 알아야한다.
+
+## 4. @Transactional과 프록시
+앞서 여러 빈 객체에 공통으로 적용되는 기능을 구현하는 방법으로 [AOP](https://yoongunwo.github.io/spring/AOP/#2-%ED%94%84%EB%A1%9D%EC%8B%9C%EC%99%80-aop)를 설명했는데 트랙잭션도 공통 기능 중 하나이다. 스프링은 @Transactional 애노테이션을 이용해서 트랜잭션을 처리하기 위해 내부적으로 AOP를 사용한다. 따라서 트랜잭션 처리도 프록시를 통해서 이루어진다고 유추할 수 있다.
+
+> 실제로 @Transactional 애노테이션을 적용하기 위해 @EnableTransactionalManagement 태그를 사용하면 스프링은 @Transactional 애노테이션이 적용된 빈 객체를 찾아서 알맞은 프록시 객체를 생성한다.
+
+### 4.1 @Transactional 적용 메서드의 커밋 처리
+![springTrasaction3]("MyImages/springTransaction/springTransaction3")
+
+ChangePasswordService 클래스의 메서드에 @Transactional 애노테이션이 적용되어 있으므로 스프링은 트랜잭션 기능을 적용한 프록시 객체를 생성한다. Main 클래스에서 getBean("changePwdSvc", ChangePasswordService.class) 코드를 실행하면 ChangePasswordService 객체 대신에 트랜잭션 처리를 위해 생성한 프록시 객체를 리턴한다.
+
+이 프록시 객체는 @Transactional 애노테이션이 붙은 메서드를 호출하면 1.1 과정처럼 PlatformTransactionManagement를 사용해서 트랜잭션을 시작한다. 트랜잭션 시작한 후 실제 객체의 메서드를 호출하고, 성공적으로 실행되면 트랜잭션을 커밋한다.
+
+### 4.2 @Transactional 적용 메서드의 롤백 처리
+커밋 수행하는 주체가 프록시 객체였던 것처럼 롤백을 처리하는 주체 또한 프록시 객체이다. 예제 코드를 보자
+```java
+try {
+    cps.changePassword("glove", "1111", "1234");
+		System.out.println("암호를 변경했습니다.");
+}catch(MemberNotFoundException e) {
+	System.out.println("회원 데이터가 존재하지 않습니다.");
+}catch(WrongIdPasswordException e) {
+	System.out.println("암호가 올바르지 않습니다.");
+}
+```
+이 코드의 실행 결과 WrongIdPasswordException이 발생했을 때 트랜잭션이 롤백된 것을 알 수 있다. 실제로 @Transactional을 처리하기 위한 프록시 객체는 원본 객체의 메서드를 실행하는 과정에서 RuntimeException일 발생하면 다음과 같이 트랜잭션을 롤백한다.
+![springTrasaction4]("MyImages/springTransaction/springTransaction4")
+
+<span style="color:red">별도 설정을 추가하지 않으면 발생한 익셉션이 RuntimeException일 때 트랜잭션을 롤백한다.</span>
+
+JdbcTemplate은 DB 연동 과정에 문제가 있으면 DataAccessException을 발생한다고 했는데 DataAccessException 역시 RuntimeException을 상속받고 있다. 따라서 JdbcTemplate의 기능을 실행하는 도중 익셉션이 발생해도 프록시는 트랜잭션을 롤백한다.
+
+SQLException은 RuntimeException을 상속하고 있지 않으므로 SQLException이 발생하면 트랜잭션을 롤백하지 않는다. RuntimeException 뿐만 아니라 SQLException이 발생하는 경우에도 트랜잭션을 롤백하고 싶다면 @Transactional의 rollbackFor 속성을 사용해야 한다.
+```java
+@Transactional(rollbackFor = SQLException.class)
+public void method(){}
+```
+여러 익셉션 타입을 지정하고 싶다면 {SQLException.class, IOException.class}와 같이 배열로 지정하면 된다.
+
+<span style="color:red">rollbackFor와 반대 설정을 제공하는 것이 noRollbackFor 속성이다.</span> 이 속성은 익셉션이 발생해도 롤백시키지 않고 커밋할 익셉션 타일을 지정할 때 사용한다.
+
+## 5.@Transactional의 주요 속성
+@Transactional 애노테이션의 주요 속성은 다음과 같다. 보통 이들 속성이 간혹 필요할 때가 있다.
+- value
+    - 타입 : String
+    - 트랜잭션을 관리할 때 사용할 PlatformTransactionManager 빈의 이름을 지정한다. 기본값은 ""이다.
+- propagation
+    - 타입 : Propagation
+    - 트랜잭션 전파 타입을 지정한다.\
+    기본값은 Propagation.REQUIRED이다.
+- isolation
+    - 타입 : Isolation
+    - 트랜잭션 격리 레벨을 지정한다.\
+    기본값은 Isolation.DEFAULT이다
+- timeout
+    - 타입 : int
+    - 트랜잭션 제한 시간을 지정한다. 기본값은 -1로 이 경우 데이터베이스의 타임아웃 시간을 사용한다. 초 단위로 지정한다.
+
+### 5.1 Propagation 열거 타입
+Propagation 열거 타입에 정의되어 있는 값 목록은 아래와 같다. Propagation은 트랜잭션 전파와 관련된 것으로 이에 대한 내용은 뒤에서 설명한다.
+- REQUIRED
+    : 메서드를 수행하는 데 트랜잭션이 필요하다는 것을 의미한다. 현재 진행 중인 트랜잭션이 존재하면 해당 트랜잭션을 사용한다. 존재하지 않으면 새로운 트랜잭션을 생성한다.
+- MANDATORY
+    : 메서드를 수행하는 데 트랜잭션이 필요하다는 것을 의미한다. 하지만 진행 중인 트랜잭션이 존재하지 않을 경우 익셉션이 발생한다.
+- REQUIRES_NEW
+    : 항상 새로운 트랜잭션을 시작한다. 진행 중인 트랜잭션이 존재하면 기존 트랜잭션을 일시 중지하고 새로운 트랜잭션을 시작한다. 새로 시작된 트랜잭션이 종료된 뒤에 기존 트랜잭션이 계속 된다.
+- SUPPORTS
+    : 메서드가 트랜잭션을 필요로 하지는 않지만, 진행 중인 트랜잭션이 존재하면 트랜잭션을 사용한다는 것을 의미한다. 진행 중인 트랜잭션이 존재하지 않더라도 정상적으로 동작한다.
+- NOT_SUPPORTED
+    : 메서드가 트랜잭션을 필요로 하지 않음을 의미한다. 진행 중인 트랜잭션이 존재할 경우 메서드가 실행되는 동안 트랜잭션은 일시 중지되고 메서드 실행이 종료된 후에 트랜잭션을 계속 진행한다.
+- NEVER
+    : 메서드가 트랜잭션을 필요로 하지 않는다. 만약 진행 중인 트랜잭션이 존재하면 익셉션이 발생한다.
+- NESTED
+    : 진행 중인 트랜잭션이 존재하면 기존 트랜잭션에 중첩된 트랜잭션에서 메서드를 실행한다. 진행 중인 트랜잭션이 존재하지 않으면 REQUIRED와 동일하게 동작한다. 이 기능은 JDBC 3.0 드라이버를 사용할 때에만 적용된다.
+
+### 5.2 Isolation 열거 타입
+Isolation 열거 타입에 정의된 값은 다음과 같다
+- DEFAULT
+    : 기본 설정을 사용한다.
+- READ_UNCOMMITTED
+    : 다른 트랜잭션이 커밋하지 않은 데이터를 읽을 수 있다.
+- READ_COMMITTED
+    : 다른 트랜잭션이 커밋한 데이터를 읽을 수 있다.
+- REPEATABLE_READ
+    : 처음에 읽어 온 데이터와 두 번째 읽어 온 데이터가 동일한 값을 갖는다.
+- SERIALIZABLE
+    : 동일한 데이터에 대해서 동시에 두 개 이상의 트랜잭션을 수행할 수 없다.
+
+## 6. @EnableTransactionManagement의 주요 속성
+@EnableTransactionManagement이 제공하는 속성은 다음과 같다
+- proxyTargetClass
+    : 클래스를 이용해서 프록시를 생성할지 여부를 지정한다. 기본값은 false로서 인터페이스를 이용해서 프록시를 생성한다.
+- order
+    : AOP 적용 순서를 지정한다. 기본값은 가장 낮은 우선순위에 해당하는 int의 최댓값이다.
+
+## 7. 트랜잭션 전파
+Propagation 열거 타입 값 목록에서 REQUIRED 값의 설명은 다음과 같다
+> 메서드를 수행하는 데 트랜잭션이 필요하다는 것을 의미한다. 현재 진행 중인 트랜잭션이 존재하면 해당 트랜잭션을 사용한다. 존재하지 않으면 새로운 트랜잭션을 생성한다.
+
+이해를 돕기 위해 다음의 자바코드와 스프링 설정을 보자
+```java
+public class SomeService{
+    @Autowired
+    private AnyService any;
+    
+    @Transactional
+    public void some(){
+        anyService.any();
+    }
+}
+
+public class AnyService{
+    @Tansactional
+    publci void any(){...}
+}
+```
+```java
+@Configuration
+@EnableTransactionManagement
+public class Config{
+    @Bean
+    public SomeService some(){
+        return new SomeService();
+    }
+    @Bean
+    public AnyService any(){
+        return new AnyService();
+    }
+}
+```
+다음 설정 클래스에 따르면 두 클래스에 대해 프록시가 생성된다. 즉 some 메서드를 호출하면 트랜잭션이 시작되고 any() 메서드를 호출해도 트랜잭션이 시작된다.\
+그런데 some()메서드 내부에서 다시 any()메서드를 호출하고 있다. 이 경우 트랜잭션 처리는 어떻게 될까?
+
+@Transactionald의 propagation 속성은 기본값이 Propagation.REQUIRED이다. 처음 some()메서드를 호출하면 트랜잭션을 새로 시작한다. 하지만 some()메서드 내부에서 any() 메서드를 호출하면 이미 some() 메서드에 의해 시작된 트랜잭션이 존재하므로 any() 메서드를 호출하는 시점에는 트랜잭션을 새로 생성하지 않는다. 대신에 존재하는 트랜잭션을 그대로 사용한다. <span style="color:red">즉 some 메서드와 any() 메서드를 한 트랜잭션으로 묶어서 실행하는 것이다.</span>
+
+만약 any() 메서드에 @Transactional이 붙어 있지 않다면 JdbcTemplate 클래스 덕에 트랜잭션 범위에서 쿼리를 실행할 수 있다. <span style="color:red">JdbcTemplate은 진행 중인 트랜잭션이 존재하면 해당 트랜잭션 범위에서 쿼리를 실행한다.</span>
 
 
 ## Ref.
