@@ -4,4 +4,5 @@
  rem 기본 실행
  rem bundle exec jekyll serve
  rem 초안 표시
- bundle exec jekyll serve --draft
+ REM  bundle exec jekyll serve --draft
+ bundle exec jekyll serve --livereload

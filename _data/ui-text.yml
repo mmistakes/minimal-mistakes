@@ -602,7 +602,7 @@ ko: &DEFAULT_KO
   pagination_previous        : "이전"
   pagination_next            : "다음"
   breadcrumb_home_label      : "Home"
-  breadcrumb_separator       : " > "
+  breadcrumb_separator       : ">"
   menu_label                 : "토글 메뉴"
   search_label               :
   toc_label                  : "On This Page"

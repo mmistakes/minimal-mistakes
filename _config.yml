@@ -12,6 +12,7 @@
 remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 #classes                  : wide
+
 # Site Settings
 locale                   : "ko-KR"
 title                    : "Jeromemi Blog"
@@ -84,6 +85,22 @@ header:
   video:
     id: -PVofD2A9t8
     provider: youtube
+
+feature_row:  # 3개의 이미지와 각가의 텍스트가 담긴 feature_row 
+  - image_path: /assets/images/unsplash-gallery-image-1-th.jpg
+    alt: "placeholder image 1"
+    title: "Placeholder 1"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+    title: "Placeholder 2"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+  - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
+    title: "Placeholder 3"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
 
 # Site Author
 author:
@@ -254,8 +271,8 @@ defaults:
       share: true
       related: true
       show_date: true
-      # date_format: "%Y-%m-%d"
-  # lunr.js
+      date_format: "%Y-%m-%d"  #TODO: deprecated #FIXME: deprecated
+  # _posts
   - scope:
       path: "assets/js/lunr"
     values:
