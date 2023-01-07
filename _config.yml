@@ -261,15 +261,15 @@ tag_archive:
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
 jekyll-archives:
-   enabled:
-     - categories
-     - tag
-   layouts:
-     category: archive-taxonomy
-     tag: archive-taxonomy
-   permalinks:
-     category: /categories/:name/
-     tag: /tags/:name/
+  enabled:
+    - categories
+    - tag
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -284,10 +284,9 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ""
-      type: posts
+      path: "_posts"
     values:
-      layout: single
+      layout: post
       author_profile: true
       read_time: true
       comments: true
@@ -295,10 +294,8 @@ defaults:
       related: true
       show_date: true
       # date_format: "%Y-%m-%d"
-  # _posts
+  # lunr.js
   - scope:
-      path: ""
-      type: pages
+      path: "assets/js/lunr"
     values:
-      layout: splash
-      author_profile: true
+      layout: none
