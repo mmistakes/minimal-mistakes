@@ -1,0 +1,5 @@
+User-agent:
+Allow: /
+Disallow: /posts
+          /post
+Stiemap: https://jagarian1.github.io/sitemap.xml
