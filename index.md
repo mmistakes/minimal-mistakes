@@ -190,7 +190,33 @@ institution="DAMO Academy, Alibaba Group"
 
 ### Program Committee
 
-TBA
+Srijan Bansal	(Carnegie Mellon University)  \
+Daniele Bonadiman	(Amazon) \
+Pengshan Cai	(University of Massachusetts - UMass Amherst) \
+Danish Contractor	(IBM Research AI) \
+Le Anh Cuong	(Ton Duc Thang University, Vietnam \
+Nico Daheim	(Technische Universität Darmstadt) \
+Sam Davidson	(UC Davis) \
+Wanyu Du	(UVA) \
+Hao Fang	(Microsoft) \
+Jatin Ganhotra	(IBM Research AI) \
+Chang Gao	(The Chinese University of Hong Kong) \
+Chulaka Gunasekara	(IBM Research AI) \
+Ankita Gupta	(University of Massachusetts - UMass Amherst) \
+Han He	(Emory University) \
+Xiangkun Hu	(Amazon) \
+Etsuko Ishii	(Hong Kong University of Science and Technology) \
+Ehsan Kamalloo	(University of Alberta) \
+Zichao Li	(McGill / Mila) \
+Xing Han Lu	(McGill / Mila) \
+Tran Thi Oanh	(Vietnam National University, Vietnam) \
+Baolin Peng	(Microsoft) \
+Xuan-Hieu Phan	(Vietnam National University, Vietnam) \
+Kun Qian	(Columbia University) \
+Le Hoang Quynh	(Vietnam National University, Vietnam) \
+Min Yang	(Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences) \
+Bowen Yu	(DAMO Academy Alibaba Group)
+
 
 ## Contact
 
