@@ -9,11 +9,8 @@
 #
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
-
-# theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
 remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 classes                  : wide
 # Site Settings
 locale                   : "ko-KR"
@@ -25,7 +22,7 @@ description              : "웹 개발자 블로그."
 url                      : "https://jagarian1.github.io"
 # baseurl                  : 
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   :  # "/assets/images/500x300_teaser.png" path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : # "/assets/images/500x300_teaser.png" path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/88x88logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : " " # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
@@ -36,24 +33,9 @@ comments:
     shortname            : "jeromemi"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
-  giscus:
-    repo_id              : # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
-    category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+
+
+
 reCaptcha:
   siteKey                :
   secret                 :
@@ -64,7 +46,7 @@ search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
-  search_within_pages    : # true, false (default)
+  search_within_pages    : true # true, false (default)
   #검색기능
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -76,19 +58,12 @@ google:
   instant_search         : true # false (default), true
 # SEO Related
 google_site_verification :
-bing_site_verification   :
-naver_site_verification  :
-yandex_site_verification :
-baidu_site_verification  :
+# bing_site_verification   :
+# naver_site_verification  :
+# yandex_site_verification :
+# baidu_site_verification  :
 
 # Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -116,7 +91,7 @@ author:
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Music & Web **Dev** Blog ."
   location         : "seoul.KR"
-  email            : "jeromeoffice191@gmail.com"
+  # email            : "jeromeoffice191@gmail.com"
   links:
   #   - label: "Email"
   #     icon: "fas fa-fw fa-envelope-square"
@@ -130,9 +105,9 @@ author:
   #   - label: "Facebook"
   #     icon: "fab fa-fw fa-facebook-square"
   #     url: "https://facebook.com/"
-     - label: "GitHub"
-       icon: "fab fa-fw fa-github"
-       url: "https://github.com/jagarian1"
+  #   - label: "GitHub"
+  #     icon: "fab fa-fw fa-github"
+  #     url: "https://github.com/jagarian1"
   #   - label: "Instagram"
   #     icon: "fab fa-fw fa-instagram"
   #     url: "https://instagram.com/"
@@ -140,9 +115,9 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://GitHub.com/jagarian1"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://GitHub.com/jagarian1"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "jeromeoffice191@gmail.com"
