@@ -107,7 +107,7 @@ author:
   name             : "Yoon Gunwo"
   avatar           : "myImages/profile/me1.jpg" # 프로필 사진 경로
   bio              : "더 좋은 개발자를 위한 과정을 기록하는 윤건우 입니다."
-  location         : "Repubic liblic of korea"
+  location         : "Repubic of korea"
   email            :
   links:
     - label: "Email"
@@ -115,7 +115,7 @@ author:
       url: "mailto:glove2275@pusan.ac.kr"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://yoongunwo.gihub.io"
+      url: "https://yoongunwo.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
