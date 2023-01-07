@@ -156,10 +156,11 @@ try {
 }
 ```
 정상 실행되면 다음과 유사한 로그 메시지가 콘솔에 출력된다.
-![springTrasaction1]("MyImages/springTransaction/springTransaction1")
+![springTrascation1](https://user-images.githubusercontent.com/97718735/211152056-be8da39c-8faa-4287-a762-cfc2ac1fcaa6.png)
+
 
 정상 실행되지 않는다면 다음과 유사한 로그 메시지가 콘솔에 출력된다.
-![springTrasaction2]("MyImages/springTransaction/springTransaction2")
+![springTrascation2](https://user-images.githubusercontent.com/97718735/211152121-de9ff903-000e-4f70-9569-78d142ebbb7e.png)
 
 트랜잭션을 롤백했다는 로그 메시지가 찍힌다. 여기서 의문점이 하나 생긴다. 
 > 도대체 트랜잭셕을 시작하고, 커밋하고, 롤백하는 것은 누가 어떻게 처리하는 걸까? 이에 관한 내용을 이해하려면 프록시를 알아야한다.
@@ -170,7 +171,7 @@ try {
 > 실제로 @Transactional 애노테이션을 적용하기 위해 @EnableTransactionalManagement 태그를 사용하면 스프링은 @Transactional 애노테이션이 적용된 빈 객체를 찾아서 알맞은 프록시 객체를 생성한다.
 
 ### 4.1 @Transactional 적용 메서드의 커밋 처리
-![springTrasaction3]("MyImages/springTransaction/springTransaction3")
+![springTrascation3](https://user-images.githubusercontent.com/97718735/211152145-dca1e7d7-de34-43e3-9dc5-7242ee4c91d4.png)
 
 ChangePasswordService 클래스의 메서드에 @Transactional 애노테이션이 적용되어 있으므로 스프링은 트랜잭션 기능을 적용한 프록시 객체를 생성한다. Main 클래스에서 getBean("changePwdSvc", ChangePasswordService.class) 코드를 실행하면 ChangePasswordService 객체 대신에 트랜잭션 처리를 위해 생성한 프록시 객체를 리턴한다.
 
@@ -189,7 +190,7 @@ try {
 }
 ```
 이 코드의 실행 결과 WrongIdPasswordException이 발생했을 때 트랜잭션이 롤백된 것을 알 수 있다. 실제로 @Transactional을 처리하기 위한 프록시 객체는 원본 객체의 메서드를 실행하는 과정에서 RuntimeException일 발생하면 다음과 같이 트랜잭션을 롤백한다.
-![springTrasaction4]("MyImages/springTransaction/springTransaction4")
+![springTrascation4](https://user-images.githubusercontent.com/97718735/211152149-f391116c-425f-44b6-ad7e-84bea9e5f082.png)
 
 <span style="color:red">별도 설정을 추가하지 않으면 발생한 익셉션이 RuntimeException일 때 트랜잭션을 롤백한다.</span>
 
