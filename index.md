@@ -60,7 +60,7 @@ Authors are responsible for anonymizing their submissions.
 - For paper submissions with ARR reviews
     - Paper Due Date: TBD
 - For technical paper submissions (Shared Task track)
-    - Paper Due Date: TBD
+    - Paper Due Date: April 24, 2023
 - Notification of Acceptance: May 22, 2023
 - Camera-ready Paper Due Date: June 6, 2023
 - Pre-recorded video due: June 12, 2023
