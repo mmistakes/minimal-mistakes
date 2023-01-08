@@ -11,7 +11,7 @@ _This article is brought to you by [Riccardo Cardin](https://github.com/rcardin)
 
 _Enter Riccardo:_
 
-This article introduces Kotlin coroutines, a powerful tool for asynchronous programming. Kotlin's coroutines fall under the umbrella of structured concurrency. They implement a model of concurrency that is similar to Java virtual threads, [Cats Effect](https://blog.rockthejvm.com/cats-effect-fibers/) and [ZIO fibers](https://blog.rockthejvm.com/zio-fibers/). In detail, we'll present some use cases concerning the use of coroutines on backend services, not on the Android environment.
+This article introduces Kotlin coroutines, a powerful tool for asynchronous programming. Kotlin's coroutines fall under the umbrella of structured concurrency. They implement a model of concurrency which you can consider similar to Java virtual threads, [Cats Effect](https://blog.rockthejvm.com/cats-effect-fibers/) and [ZIO fibers](https://blog.rockthejvm.com/zio-fibers/). In detail, we'll present some use cases concerning the use of coroutines on backend services, not on the Android environment.
 
 The article requires a minimum knowledge of the Kotlin language. Still, you should be fine if you come from a Scala background.
 
@@ -84,7 +84,7 @@ Coroutines solve all the above problems. Let's see how.
 
 ## 3. Suspending Functions
 
-As we said, a coroutine is a lightweight thread, which means it's not mapped directly to an OS thread. It's a computation that can be suspended and resumed at any time. So, before we can start looking at how to build a coroutine, we need to understand how to suspend and resume a coroutine.
+To start, you can think of a coroutine as a lightweight thread, which means it's not mapped directly to an OS thread. It's a computation that can be suspended and resumed at any time. So, before we can start looking at how to build a coroutine, we need to understand how to suspend and resume a coroutine.
 
 **Kotlin provides the `suspend` keyword to mark a function that can suspend a coroutine**, i.e. allow it to be paused & resumed later:
 
