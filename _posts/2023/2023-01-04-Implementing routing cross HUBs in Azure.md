@@ -44,10 +44,10 @@ _The first step_ is to ensure that all outbound traffic from each peered network
 
 | spoke | user defined route table |
 |---|---|
-| spoke-01 | 0.0.0.0/0 -> 10.13.1.4 (firewall IP on Hub 1) |
-| spoke-02 | 0.0.0.0/0 -> 10.13.1.4 (firewall IP on Hub 1) |
-| spoke-03 | 0.0.0.0/0 -> 10.13.1.4 (firewall IP on Hub 1) |
-| spoke-04 | 0.0.0.0/0 -> 10.14.1.4 (firewall IP on Hub 1) |
+| spoke-01 | 0.0.0.0/0 -> 10.12.3.4 (firewall IP on Hub 1) |
+| spoke-02 | 0.0.0.0/0 -> 10.12.3.4 (firewall IP on Hub 1) |
+| spoke-03 | 0.0.0.0/0 -> 10.12.3.4 (firewall IP on Hub 1) |
+| spoke-04 | 0.0.0.0/0 -> 10.14.3.4 (firewall IP on Hub 1) |
 
 _The second step_ regards tjhe firewalls, on each firewall (here we are using 2 Azure Firewalls), we need to ensure that any source network can reach any target network. This is possibile with the following network policy rule, associated to both firewalls: 
 
@@ -60,7 +60,7 @@ _The second step_ regards tjhe firewalls, on each firewall (here we are using 2 
 
 If you want to block some protocol, port or IP, this is easily possible working on the specific Hub policy.
 
-_As third step_, you have to instruct the hub-lab-net firewall that spoke-04 is reachable through the hub-lab-02-net firewall. Also, all outbound traffic must be routed to the Internet. This is possible with the following user-defined route on firewall's subnet:
+_As third step_, you have to instruct the _hub-lab-net_ firewall that `spoke-04` is reachable through the `hub-lab-02-net` firewall. Also, all outbound traffic must be routed to the Internet. This is possible with the following user-defined route on firewall's subnet:
 
 * 10.15.1.0/24 (spoke-04 network) -> 10.14.3.4 (firewall in hub-lab-02-net)
 * 0.0.0.0/0 -> internet
