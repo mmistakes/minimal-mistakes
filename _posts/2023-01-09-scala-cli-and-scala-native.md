@@ -12,7 +12,7 @@ Which brings us to this article: Antonio originally started from my [Sudoku back
 
 _Enter Antonio:_
 
-# 1. Introduction
+## 1. Introduction
 
 [Sudoku](https://en.wikipedia.org/wiki/Sudoku) is a notorious combinatorial puzzle solvable with optimised and efficient algorithms. Today we won't focus on any of those techniques, but we'll leverage the computing power of our machines to brute-force the solution in a functional immutable fashion.
 
