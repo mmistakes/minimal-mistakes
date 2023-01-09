@@ -364,7 +364,7 @@ SudokuSpec:
   + Sudoku.getCellOf(n) should extract the correct cell 0.003s
 ```
 
-# Recursive immutable solution
+## 6. Recursive immutable solution
 
 To solve the sudoku, we will use a recursive brute-forcing algorithm:
 
@@ -372,7 +372,7 @@ To solve the sudoku, we will use a recursive brute-forcing algorithm:
 2. For each zero, we will find all the numbers that fit in that position according to the constraints
 3. For each of those numbers, we will generate a new sudoku replacing the zero with it
 4. We will apply the three previous steps to every sudoku we have created so far until there are no more zeros
-5. We will end up with a list of solved sudokus that we will return to the user
+5. We will end up with a list of solved sudoku boards that we will return to the user
 
 We will need to implement a couple of methods over `Sudoku` to implement this solution:
 
@@ -399,7 +399,7 @@ final case class Sudoku private (data: Vector[Int]) {
 }
 ```
 
-Let's try to implement the solving algorithm using the newly created methods. The function should accept a `Sudoku` and return all the possible solved ones, so the method signature is easy to write:
+Let's try to implement the algorithm using the newly created methods. The function should accept a `Sudoku` and return all the possible solved ones, so the method signature is easy to write:
 
 ```scala
 def solve(s: Sudoku): List[Sudoku] = ???
@@ -425,7 +425,7 @@ def solve(s: Sudoku): List[Sudoku] = s.getZero match {
 
 In case `getZero` returns the coordinates of a zero, we have to calculate all the possible numbers that fit in that cell according to the constraints and return the list of the corresponding sudoku boards (with that zero replaced by a possible number). Since there are multiple ways to implement this logic, it makes sense to wrap it in a standalone function `calcStep`.
 
-Bear in mind that since this function returns a list of sudokus that satisfy some constraints, it may return an empty list. So this function is in charge of skimming the unsolvable sudokus from the list.
+Bear in mind that since this function returns a list of sudoku boards that satisfy some constraints, it may return an empty list. So this function is in charge of skimming the unsolvable boards from the list.
 
 ```scala
 def solve(s: Sudoku): List[Sudoku] = s.getZero match {
@@ -440,10 +440,9 @@ def calcStep(x: Int, y: Int)(s: Sudoku): List[Sudoku] = 1
   .toList
 ```
 
-The function consists of 2 steps: skimming out from the 1 to 9 range the numbers that don't satisfy the constraints and getting a new `Sudoku` for each one that does.
+The function consists of 2 steps: filtering out from the 1 to 9 range the numbers that don't satisfy the constraints and getting a new `Sudoku` for each one that does.
 
-
-Now that the solving step has been implemented, it's time to add some recursion to find the solutions. Since the sudokus that `calcStep` returns might still have zeros, it makes sense to re-submit them to the `solve` function. Since we have a `List[Sudoku]` and `solve` returns a `List[Sudoku]` as well, the easiest way to chain the `solve` function to itself is using `flatMap`:
+Now that the solving step has been implemented, it's time to add some recursion to find the solutions. Since the sudoku boards that `calcStep` returns might still have zeros, it makes sense to re-submit them to the `solve` function. Since we have a `List[Sudoku]` and `solve` returns a `List[Sudoku]` as well, the easiest way to chain the `solve` function to itself is using `flatMap`:
 
 ```scala
 def solve(s: Sudoku): List[Sudoku] = s.getZero match {
@@ -466,7 +465,7 @@ def solve(s: Sudoku): List[Sudoku] = s.getZero.fold(s :: Nil) {
 }
 ```
 
-# Creating the command line application
+## 7. Creating the command line application
 
 Now that we've built the core of the logic, it's time to wire it to create a command line application. The chosen library for command line argument parsing is [decline](https://ben.kirw.in/decline/). We will place the argument parsing logic and the application entry point in their own `Main.scala` file.
 
@@ -487,7 +486,7 @@ The decline API to define a command line argument parser is called `Opts`. `Opts
 - `Opts.flag` that are identical to `option` but don't require a value (like `-l` or `--verbose`)
 - `Opts.env[T]` to read environment variables
 
-Each of these options has a "s-terminating" alternative (like `Opts.arguments[T]`) that will parse multiple instances of the defined option. Decline features [commands and subcommands](https://ben.kirw.in/decline/usage.html#commands-and-subcommands), but they're out of scope for the sake of this post.
+Each of these options has an "s-terminating" alternative (like `Opts.arguments[T]`) that will parse multiple instances of the defined option. Decline features [commands and subcommands](https://ben.kirw.in/decline/usage.html#commands-and-subcommands), but they're out of scope for the sake of this post.
 
 Since our application's solving logic must receive a `Sudoku` we will write a `Opts[Sudoku]` definition:
 
@@ -501,7 +500,7 @@ val sudokuArgument: Opts[Sudoku] =
   Opts.argument[String]("sudoku").mapValidated(Sudoku.from(_).toValidatedNel)
 ```
 
-The definitions starts from a string argument that gets parsed to create a `Sudoku`. Decline offers the `mapValidated` method, that accepts a `String => ValidatedNel[String, Sudoku]` function that should convert the provided string to a Sudoku. The returned datatype is a [Validated](https://typelevel.org/cats/datatypes/validated), an `Either`-like structure offered by cats that doesn't form a monad and that is [particularly suited for error accumulation](https://typelevel.org/cats/datatypes/validated#parallel-validation). Luckily we can convert from `Either[A,B]` to `Validated[NonEmptyList[A],B]` using an extension method.
+The definition starts from a string argument that gets parsed to create a `Sudoku`. Decline offers the `mapValidated` method, that accepts a `String => ValidatedNel[String, Sudoku]` function that should convert the provided string to a Sudoku. The returned data type is a [Validated](https://typelevel.org/cats/datatypes/validated), an `Either`-like structure offered by cats that doesn't form a monad and that is [particularly suited for error accumulation](https://typelevel.org/cats/datatypes/validated#parallel-validation). Luckily we can convert from `Either[A,B]` to `Validated[NonEmptyList[A],B]` using an extension method.
 
 To use the newly defined `sudokuArgument` we must extend [CommandApp](https://ben.kirw.in/decline/usage.html#using-commandapp), to wire up our app's `main` method:
 
@@ -590,9 +589,9 @@ object Main extends CommandApp(
 )
 ```
 
-## Packaging as an executable file
+## 8. Packaging as an executable file
 
-It's time to use scala-cli to [package](https://scala-cli.virtuslab.org/docs/cookbooks/scala-package) our application. By default scala-cli packages in a [lightweight format](https://scala-cli.virtuslab.org/docs/cookbooks/scala-package) that contains only your bytecode. To run the application, the `java` command needs to be available, and access to the internet, if dependencies need to be downloaded. Adding `//> using packaging.output "sudokuSolver"` to `project.scala` will let us control the filename of the produced executable file.
+It's time to use scala-cli to [package](https://scala-cli.virtuslab.org/docs/cookbooks/scala-package) our application. By default, scala-cli packages in a [lightweight format](https://scala-cli.virtuslab.org/docs/cookbooks/scala-package) that contains only your bytecode. To run the application, the `java` command needs to be available, and access to the internet, if dependencies need to be downloaded. Adding `//> using packaging.output "sudokuSolver"` to `project.scala` will let us control the filename of the produced executable file.
 
 ```shell
 $ scala-cli package .
@@ -624,11 +623,11 @@ Options and flags:
         Display this help text.
 ```
 
-Running `sudokuSolver` on a fresh machine featuring only a java installation will automagically download every dependency needed to run your code, plus macOS and Linux executables are portable between these two operating systems, maximising the "shareability" of your application package :heart_eyes:.
+Running `sudokuSolver` on a fresh machine featuring only a Java installation will automagically download every dependency needed to run your code, plus macOS and Linux executables are portable between these two operating systems, maximising the "shareability" of your application package 😍.
 
-# Benchmarking and Scala Native
+## 9. Benchmarking and Scala Native
 
-Now that we have a universal-ish binary that can run virtually anywhere there's a java installation, it's time for some benchmarking. To benchmark the time our command line app takes to solve a specific sudoku we'll use [hyperfine](https://github.com/sharkdp/hyperfine), an awesome command-line benchmarking tool written in Rust.
+Now that we have a universal-ish binary that can run virtually anywhere there's a java installation, it's time for some benchmarking. To benchmark the time, our command line app takes to solve a specific sudoku we'll use [hyperfine](https://github.com/sharkdp/hyperfine), an awesome command-line benchmarking tool written in Rust.
 
 ```shell
 $ SUDOKU="....47......5.....9.483..15.19.7...4...3.9.21.3...5.7......8....78.2..3...1.5.4.."
@@ -700,11 +699,10 @@ As we can see, Scala Native annihilated the application startup time (there's no
 
 Scala Native can be used to craft NGINX Unit server applications using [Snunit](https://github.com/lolgab/snunit), and as recently a [Cats-Effect single-threaded native runtime](https://github.com/armanbilge/epollcat) was published, it's possible to use [Http4s with Ember](https://github.com/ChristopherDavenport/scala-native-ember-example) to create single-threaded native servers!
 
-# Conclusion
+## 10. Conclusion
 
 In this article, we saw how to use [scala-cli](https://scala-cli.virtuslab.org/), [Scala Native](https://scala-native.org/en/stable/) and [decline](https://ben.kirw.in/decline/), a combination of tools that rocks when used to craft lightweight command line tools and much more. Despite not being a comprehensive guide to all their features, I hope this article will act as a starting point for ideas.
 
-#### Ideas for further improvements
-
+Some ideas for further improvements:
 - Writing a `solve` stack-safe implementation
 - Adding a `--all` flag to print all the solutions
