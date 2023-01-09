@@ -1,6 +1,7 @@
 ---
-layout: single
+layout: post
 title: "블로그 로컬호스트를 만들며 겪은 에러"
+categories: ['github', 'blog', 'error']
 ---
 깃허브 블로그에 첫글을 쓰는것까지는 쉬웠지만 로컬호스트를 연결하는데서 정말 많은 시간이 걸렸다.
 지금보면 간단한거같은데 당시에는 정말 많이 헤맸다.
