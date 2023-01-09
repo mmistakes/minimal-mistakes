@@ -1,0 +1,74 @@
+---
+layout: post
+title: git 공부
+comments: true
+categories: [git]
+tags: [git]
+---
+
+# 1.Git 이란?
+Git은 분산 버전 관리 시스템(VCS)으로, 실시간으로 프로젝트 파일의 변경사항을 추적하는 시스템이다.
+개발자들은 프로젝트를 진행하며 자신의 프로젝트를 자신의 컴퓨터에 저장하고, 변경사항을 기록하며, 나중에 각 버전의 프로젝트를 병합 할 수 있어 협업할때 유용하다.
+또한 특정 시점으로 돌아갈 수 있어 다음 프로젝트르 진행하다 수정 요청을 받은 곳으로 다시 돌아가서 작업 할 수도 있다. 
+
+# 2. Git 설치
+Git 은 command-line-interface(CLI)를 사용한다.
+>CLI란?
+커맨드 라인 인터페이스로 명령 줄 인터페이스라고 하며, 터미널(도스창)을 통해 사용자와 컴퓨터가 상호작용 하는 방법을 말한다.
+
+## 2-1.Git을 OS에 맞춰 다운로드
+>다운로드 링크: https://git-scm.com/downloads
+
+## 2-2.회원가입
+>git config --global user.name "이름"
+git config --global user.email "이메일"
+
+# 3.Repositories
+레퍼지토리는 git으로 관리되는 프로젝트 저장소를 말한다.git의 폴더로 생각하면 된다.
+레퍼지토리에는 2가지가 있다.
+- Local Repository : 자신의 컴퓨터에 저장되는 로컬 저장소.
+- Remote Repository : 자신의 컴퓨터가아닌 원격의 서버에 저장되는, 팀원들과 함꼐 쓰는 저장소. 이곳에 올린 코드를 다른사람들과 공유할 수 있으며, 다른사람들의 코드를 확인할 수 도 있다. 로컬의 작업물을 병합하고 변경사항을 적용 할 수 있는 곳이다.
+
+# 4.레퍼지토리 초기화
+새 저장소를 만들고 Git으로 프로젝트를 관리하려면 터미널에서 프로젝트 폴더로 이동 후 다음 명령어를 입력해야한다.
+> git init
+
+이 명령어를 사용하면 프로젝트 폴더에 `.git` 디렉토리를 숨겨진 상태로 생성한다. .git이 생성되면 Git은 이 저장소의 모든 변경사항을 추적/관리하게 된다.
+연결을 끊고 싶다면 `git remote remove 폴더명`을 입력하면 된다.
+
+# 5.Git commit
+ git commit은 현제까지 작성한 프로젝트의 코드를 커밋에 저장하는 것으로 체크포인트에 기록을 남긴다고 보면 된다. commit history에 자유곱게 커밋을 생성할 수 있으며, 코드의 변경 전,후 사항을 확인 할 수 있다.  
+커밋을 남기기 위해서는 staging area에 추가해야한다.
+
+# 5-1.Staging area에 파일 추가하기
+git에 commit하기 위해서는 프로젝트 폴더에서 `git add`를 입력하여 staging area에 추가해 주어야한다.
+`git add .`(add 띄어쓰기 .) 명령어를 입력하면 경로내의 모든 파일을 한번에 추가한다.
+`git add 파일명.js`를 입력하면 특정파일만 추가한다.
+`git add 파일1.js 파일2.js 파일3.js`를 입력하면 여러파일을 추가할 수 있다.
+
+# 5-2.커밋 남기기
+git add로 staging area에 파일을 추가하였다면 `git commit -m "설명하는말"`명령어를 사용하여 파일을 commit할 수 있다.
+""안의 설명하는 말은 간략하게 작성하는 것이 좋다.
+
+# 5-3.git status
+`git status` 명령어를 통해 파일의 추가,변경 사항을 확인 할 수 있다. 
+커밋은 할때마다 기록이 남아 여러개가 보이는데 하나의 커밋만 보이고 싶을 경우 `git rebase`를 사용하면 하나의 커밋만 남길 수 있다.
+
+# 5-4.commit history
+`git log`를 입력하면 프로젝트의 모든 커밋내역을 확인 할 수 있다.
+특정 시점의 코드로 되 돌리고 싶다면 아래의 명령어를 사용하면 된다.
+> git checkout <commit-git로그에서 보이는 커밋의 hash값>
+
+# 5-5.git ignore
+staging area에 추가하면 않되거나, git에서 관리하고 싶지않은 파일이 있다면, `.gitignore`파일을 프로젝트 폴더에 생성하면 된다.
+.gitignore안에 폴더명과 파일명을 입력하면 그 파일들은 무시된다.
+~~~
+/db/schema.sql
+.env
+node_modules
+~~~
+
+아래의 사이트에서 쉽게 ignore파일을 생성 할 수 있다.
+> https://www.toptal.com/developers/gitignore
+
+
