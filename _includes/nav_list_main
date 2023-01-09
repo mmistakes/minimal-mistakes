@@ -8,6 +8,12 @@
         📂 <span style="font-family:'Cafe24Oneprettynight';">Total number of posts</style> <span style="font-family:'Coming Soon';">{{sum}}</style>
       </li>
       <li>
+        <span class="nav__sub-title">Math</span>
+
+        <span class="nav__sub-title">Software</span>
+
+        <span class="nav__sub-title">Programming</span>
+
         <span class="nav__sub-title">Tutorial</span>
             <ul>
                 {% for category in site.categories %}
