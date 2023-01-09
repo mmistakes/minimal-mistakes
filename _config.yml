@@ -283,3 +283,4 @@ defaults:
       related: true
       show_date: true
       future: true
+      sidebar_main: true
