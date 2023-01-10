@@ -49,10 +49,12 @@ sudo apt install -y '.*libxcb.*' libxrender-dev libxi-dev libfontconfig1-dev lib
 # 3. 가상환경 구축 
 
 1. Ubuntu 업데이트
+
 ```bash
 sudo apt update
 sudo apt upgrade
 ```
+
 2. 개발 프로그램 설치 
 -> sudo 명령어로 실
 
@@ -70,6 +72,7 @@ cd /opt/qt5jnano/
 ```
 
 4. 툴체인 설치 
+
 ```bash
 wget https://releases.linaro.org/components/toolchain/binaries/latest-5/aarch64-linux-gnu/gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu.tar.xz
 tar xf gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu.tar.xz 
@@ -110,6 +113,7 @@ gedit qt-everywhere-src-5.15.0/qtbase/mkspecs/devices/linux-jetson-nano/qmake.co
 ```
 
 gedit 수정 내역
+
 ```bash
 #
 # qmake configuration for the Jetson Nano 2GB
@@ -153,7 +157,6 @@ make install
 ```
 
 9. 컴파일 바이너리 잭슨에게 전
-
 
 ```bash
 rsync -avz sysroot/usr/local/qt5jnano root@192.168.16.24:/usr/local
