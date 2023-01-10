@@ -149,6 +149,7 @@ load(qt_config)
 8. 바이너리와 QT Config 만들기 위한 디렉토리 생성
 
  - 해당 과정은 하드웨어 상태에 따라 오래 걸릴 수 있다.
+ 
 ```bash
 mkdir qt5buid && cd qt5build
 ../qt-everywhere-src-5.15.0/configure -opengl es2 -device linux-jetson-nano -device-option CROSS_COMPILE=/opt/qt5jnano/gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu- -sysroot /opt/qt5jnano/sysroot -prefix /usr/local/qt5jnano -opensource -confirm-license -skip qtscript -skip wayland -skip qtwebengine -force-debug-info -skip qtdatavis3d -skip qtlocation -nomake examples -make libs -pkg-config -no-use-gold-linker -v
