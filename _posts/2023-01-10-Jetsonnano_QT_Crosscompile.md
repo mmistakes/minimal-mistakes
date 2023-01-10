@@ -24,11 +24,14 @@ comments: true
 -> 당연히 여기서 sudo apt-get update +upgrade 수
 * 여기서 멈추면 추후에 root passwd를 사용할 수 없어 다음 아래 단계를 실행해야한다.
 2. passwd  설정해준다
+
 ```bash
 sudo passwd root
-#비밀전호 설
+#비밀전호 설정
 ```
+
 3. 루트 로그인 설정을 해준다
+
 ```bash
 sudo vi /etc/ssh/sshd_config
 
@@ -38,6 +41,7 @@ PermitRootLogin yes
 
 
 4. 설치 dependencies(의존성?)
+
 ```bash
 sudo apt install -y '.*libxcb.*' libxrender-dev libxi-dev libfontconfig1-dev libudev-dev libgles2-mesa-dev libgl1-mesa-dev gcc git bison python gperf pkg-config make libclang-dev build-essential
 ```
