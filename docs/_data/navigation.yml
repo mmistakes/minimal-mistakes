@@ -1,133 +1,131 @@
 # example navigation
 foo:
-  - title: "Parent Link 1"
+  - title: 'Parent Link 1'
     url: /parent-1-page-url/
     children:
-      - title: "Child Link 1"
+      - title: 'Child Link 1'
         url: /child-1-page-url/
-      - title: "Child Link 2"
+      - title: 'Child Link 2'
         url: /child-2-page-url/
-  - title: "Parent Link 2"
+  - title: 'Parent Link 2'
     url: /parent-2-page-url/
     children:
-      - title: "Child Link 1"
+      - title: 'Child Link 1'
         url: /child-1-page-url/
-      - title: "Child Link 2"
+      - title: 'Child Link 2'
         url: /child-2-page-url/
-      - title: "Child Link 3"
+      - title: 'Child Link 3'
         url: /child-3-page-url/
-
 
 # main links
 main:
-  - title: "Quick-Start Guide"
+  - title: 'Quick-Start Guide'
     url: /docs/quick-start-guide/
-  - title: "About"
+  - title: 'About'
     url: /about/
-  - title: "Sample Posts"
+  - title: 'Sample Posts'
     url: /year-archive/
-  - title: "Sample Collections"
+  - title: 'Sample Collections'
     url: /collection-archive/
-  - title: "Terms &amp; Privacy Policy"
+  - title: 'Terms &amp; Privacy Policy'
     url: /terms/
-
 
 # documentation links
 docs:
   - title: Getting Started
     children:
-      - title: "Quick-Start Guide"
+      - title: 'Quick-Start Guide'
         url: /docs/quick-start-guide/
-      - title: "Structure"
+      - title: 'Structure'
         url: /docs/structure/
-      - title: "Installation"
+      - title: 'Installation'
         url: /docs/installation/
-      - title: "Upgrading"
+      - title: 'Upgrading'
         url: /docs/upgrading/
   - title: Customization
     children:
-      - title: "Configuration"
+      - title: 'Configuration'
         url: /docs/configuration/
-      - title: "Overriding Theme Defaults"
+      - title: 'Overriding Theme Defaults'
         url: /docs/overriding-theme-defaults/
-      - title: "Navigation"
+      - title: 'Navigation'
         url: /docs/navigation/
-      - title: "UI Text"
+      - title: 'UI Text'
         url: /docs/ui-text/
-      - title: "Authors"
+      - title: 'Authors'
         url: /docs/authors/
-      - title: "Layouts"
+      - title: 'Layouts'
         url: /docs/layouts/
   - title: Content
     children:
-      - title: "Working with Posts"
+      - title: 'Working with Posts'
         url: /docs/posts/
-      - title: "Working with Pages"
+      - title: 'Working with Pages'
         url: /docs/pages/
-      - title: "Working with Collections"
+      - title: 'Working with Collections'
         url: /docs/collections/
-      - title: "Helpers"
+      - title: 'Helpers'
         url: /docs/helpers/
-      - title: "Utility Classes"
+      - title: 'Utility Classes'
         url: /docs/utility-classes/
   - title: Extras
     children:
-      - title: "Stylesheets"
+      - title: 'Stylesheets'
         url: /docs/stylesheets/
-      - title: "JavaScript"
+      - title: 'JavaScript'
         url: /docs/javascript/
   - title: Meta
     children:
-      - title: "History"
+      - title: 'History'
         url: /docs/history/
-      - title: "Contributing"
+      - title: 'Contributing'
         url: /docs/contributing/
-      - title: "Old 2.2 Docs"
+      - title: 'Old 2.2 Docs'
         url: /docs/docs-2-2/
-      - title: "License"
+      - title: 'License'
         url: /docs/license/
-      - title: "Terms &amp; Privacy Policy"
+      - title: 'Terms &amp; Privacy Policy'
         url: /terms/
 
 # sidebar navigation list sample
 sidebar-sample:
-  - title: "Parent Page A"
+  - title: 'Parent Page A'
     children:
-      - title: "Child Page A1"
+      - title: 'Child Page A1'
         url: /
-      - title: "Child Page A2"
+      - title: 'Child Page A2'
         url: /
-      - title: "Child Page A3"
+      - title: 'Child Page A3'
         url: /
-      - title: "Child Page A4"
+      - title: 'Child Page A4'
         url: /
-  - title: "Parent Page B"
+  - title: 'Parent Page B'
     children:
-      - title: "Child Page B1"
+      - title: 'Child Page B1'
         url: /
-      - title: "Child Page B2"
+      - title: 'Child Page B2'
         url: /
-      - title: "Child Page B3"
+      - title: 'Child Page B3'
         url: /
-      - title: "Child Page B4"
+      - title: 'Child Page B4'
         url: /
-      - title: "Child Page B5"
+      - title: 'Child Page B5'
         url: /
-  - title: "Parent Page C"
+  - title: 'Parent Page C'
     children:
-      - title: "Child Page C1"
+      - title: 'Child Page C1'
         url: /
-      - title: "Child Page C2"
+      - title: 'Child Page C2'
         url: /
-      - title: "Child Page C3"
+      - title: 'Child Page C3'
         url: /
-      - title: "Child Page C4"
+      - title: 'Child Page C4'
         url: /
-      - title: "Child Page C5"
+      - title: 'Child Page C5'
         url: /
-  - title: "Parent Page D"
+  - title: 'Parent Page D'
     children:
-      - title: "Child Page D1"
+      - title: 'Child Page D1'
         url: /
-      - title: "Child Page D2"
+      - title: 'Child Page D2'
         url: /
