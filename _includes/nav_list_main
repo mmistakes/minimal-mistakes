@@ -9,6 +9,13 @@
       </li>
       <li>
         <span class="nav__sub-title">Math</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Func-Num" %}
+                        <li><a href="/categories/func-num" class="">Functions & Number Systems ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
 
         <span class="nav__sub-title">Software Engineering</span>
 
