@@ -87,7 +87,7 @@ export PATH=$PATH:/opt/qt5jnano/gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gn
 
 ```
 
-5. QT single 설치 또는 
+5. QT single 설치 또는 베이스만 사용하려면 쓰면 됩니다.
 
 ```bash
 wget https://download.qt.io/official_releases/qt/5.15/5.15.0/single/qt-everywhere-src-5.15.0.tar.xz
@@ -171,7 +171,24 @@ rsync -avz sysroot/usr/local/qt5jnano root@192.168.16.24:/usr/local
 sudo apt install qtcreator
 ```
 
+2. kits 추가
 
+Qt version 추가
+ - /opt/qt5jnano/sysroot/usr/local/qt5jnano/bin/qmake 
+Compilers 추가
+- GCC : /opt/qt5jnano/gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-gcc
+- G++ :/opt/qt5jnano/gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-g++
+-> 참고로 ABI 수동으로 arm-linux-generic-elf-64bit 설정
+
+3. 원격 Remote 추가
+-Device에서 Jesnano 설정 적
+
+![잭슨 나노 설정 예시](../assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/JesonNano/%EC%9B%90%EA%B2%A9%20%EC%84%A4%EC%A0%95_2023-01-11%20153717.png)
+
+4. Kit 제작
+2번 3번에서만든 설정을 아래에 키트에 조립하드시 넣으면 된다.
+
+![키트 설정](../assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/JesonNano/kit%20%EC%B5%9C%EC%A2%85%20%EC%84%A4%EC%A0%95%202023-01-11%20154051.png)
 
 # 참고 
 1. 도움 영상
