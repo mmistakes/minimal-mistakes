@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Daniel Logan"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /assets/images/Portrait.jpg
   bio              : "I am a **Data Scientist** eager to bring **actionable insights** to your organization."
   location         : "Palo Alto, California, USA"
   email            : "danielseanlogan@gmail.com"
@@ -290,3 +290,9 @@ defaults:
       comments: # true
       share: true
       related: true
+
+gallery:
+  - url: /assets/images/Capstone.jpg
+    image_path: /assets/images/Capstone.jpg
+    alt: "Data Visualization"
+    title: "Image 1 title caption"
