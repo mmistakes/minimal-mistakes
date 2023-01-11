@@ -190,6 +190,27 @@ Compilers 추가
 
 ![키트 설정](../assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/JesonNano/kit%20%EC%B5%9C%EC%A2%85%20%EC%84%A4%EC%A0%95%202023-01-11%20154051.png)
 
+
+5. .pro 파일 내용 추가
+
+```
+qnx: target.path = /tmp/$${TARGET}/bin
+else: unix:!android: target.path = /opt/$${TARGET}/bin
+!isEmpty(target.path): INSTALLS += target
+```
+배포 파일 위치 설정
+
+6. 환경 설정
+
+추가 설정 파일에 환경 설정 추가
+
+![Alt text](../assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/JesonNano/%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95.png)
+
+```
+DISPLAY :0
+XAUTHORITY /run/user/1000/gdm/Xaut
+```
+
 # 참고 
 1. 도움 영상
 https://www.youtube.com/watch?v=PY41CP13p3k
