@@ -9,7 +9,6 @@ a {
 .archive {
   margin-top: 1em;
   margin-bottom: 2em;
-  padding: 0 1rem;
 
   @include breakpoint($large) {
     float: right;

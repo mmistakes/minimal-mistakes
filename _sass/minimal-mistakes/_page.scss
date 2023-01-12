@@ -35,10 +35,6 @@ body {
   flex: 1 0 auto;
 }
 
-article.page {
-  padding: 0 1rem;
-}
-
 .page {
   @include breakpoint($large) {
     float: right;
