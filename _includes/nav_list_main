@@ -18,12 +18,19 @@
             </ul>
 
         <span class="nav__sub-title">Software Engineering</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Python" %}
+                        <li><a href="/categories/python" class="">Python Fundatmentals ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
 
         <span class="nav__sub-title">Programming</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "C#" %}
-                        <li><a href="/categories/c#" class="">C# ({{category[1].size}})</a></li>
+                    {% if category[0] == "CS" %}
+                        <li><a href="/categories/cs" class="">C# ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

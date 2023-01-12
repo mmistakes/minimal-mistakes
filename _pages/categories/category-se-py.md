@@ -1,7 +1,7 @@
 ---
-title: "C#"
+title: "Python Fundatmentals"
 layout: archive
-permalink: categories/c#
+permalink: categories/python
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ---
 
-{% assign posts = site.categories.C# %}
+{% assign posts = site.categories.Python %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
