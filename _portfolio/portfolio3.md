@@ -3,11 +3,11 @@ title: "Data Wrangling with Pandas"
 excerpt: "Tech: Python, Git"
 header:
   image: assets/images/headerimg.png 
-  teaser: /assets/images/api.png
+  teaser: /assets/images/pandasteaser.png
 collection: portfolio
 gallery:
-  - url: /assets/images/API.png
-    image_path: /assets/images/API.png
+  - url: /assets/images/pandasgallery.png
+    image_path: /assets/images/pandasgallery.png
    
 ---
 
