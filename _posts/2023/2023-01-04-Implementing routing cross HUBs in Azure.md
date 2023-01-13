@@ -2,7 +2,7 @@
 title: Implementing cross HUBs routing in Azure
 date: 2023-01-04 10:00
 tags: [Azure, networking, hub-and-spoke, azure firewall, peering, routing, chatgpt]
-excerpt: "In this blog post I describe how to configure the routing between 2 HUBs peered toghether, so that all spokes in both Hubs can communicate with each other."
+excerpt: "In this blog article, I'll show you how to arrange the routing between two Hubs that are peering with each other so that all spokes in both Hubs can communicate with one other."
 header:
   overlay_image: https://live.staticflickr.com/65535/52075201234_7520c2cc60_b.jpg
   caption: "Photo credit: [**nicola since 1972**](https://www.flickr.com/photos/15216811@N06/52075201234)"
@@ -30,7 +30,7 @@ Hub and spoke topology is often recommended in cloud architectures for several r
 
 When multiple Hubs are in place, often a cross hub communication and routing is required.
 
-**In this blog post I describe how to configure the routing between 2 HUBs peered toghether, so that all spokes in both Hubs can communicate with each other.**
+**In this blog article, I'll show you how to arrange the routing between two Hubs that are peering with each other so that all spokes in both Hubs can communicate with one other.**
 
 > This is an approach that, once understood, can be extended to scenarios with more than 2 Hubs easily.
 
