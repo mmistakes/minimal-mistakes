@@ -6,7 +6,7 @@ header:
 tags: [scala, type system]
 excerpt: "We continue down the path of type-level power in Scala. We learn to add numbers as types, at compile time."
 ---
-In this article we will continue what we started in the [first part]("/type-level-programming-part-1) and enhance our type-level capabilities. As a quick reminder, in this mini-series we learn to use the power of the Scala compiler to validate complex relationships between types that mean something special to us, for example that a "number" (as a type) is  "smaller than" another "number".
+In this article we will continue what we started in the [first part](/type-level-programming-part-1) and enhance our type-level capabilities. As a quick reminder, in this mini-series we learn to use the power of the Scala compiler to validate complex relationships between types that mean something special to us, for example that a "number" (as a type) is  "smaller than" another "number".
 
 ## Background
 
