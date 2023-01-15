@@ -22,3 +22,11 @@ module virtual.threads.playground {
 ```
 
 The name of our module doesn't matter. We used `virtual.threads.playground` but we can use any name we want. The important thing is that we need to use the `requires` directive to enable the incubator module. At the end of the article we will give an example of a Maven configuration that enables the preview and the incubator module.
+
+## 2. Why Virtual Threads?
+
+For people who already follows us, we made the same question on the article on [Kotlin Coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/). However, we think that it is important to give a brief introduction to the problem that virtual threads are trying to solve.
+
+The JVM is a multithreaded environment. As we may know, the JVM gives us an abstraction of OS threads through the type `Thread`. Until Project Loom, every thread in the JVM was mapped directly to an OS thread. We can call such implementation of the `Thread` type as _platform thread_.
+
+The problem with platform thread is that they are expensive under a lot of points of view. First, they are expensive to create. 
