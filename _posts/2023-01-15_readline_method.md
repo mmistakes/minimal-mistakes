@@ -1,3 +1,9 @@
+---
+layout: single
+title: " sys 모듈 stdin.readline() 사용하기 "
+---
+
+
 ## sys 모듈 stdin.readline() 사용하기
 
 알고리즘 문제를 풀 때, 파이썬의 `input()`은 실행시간이 느려서 자주 시간초과가 난다. 이럴때 sys모듈의 `stdin`을 사용하면 더 빠르게 input이 가능하다.
