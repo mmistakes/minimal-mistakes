@@ -47,7 +47,7 @@ _The first step_ is to ensure that all outbound traffic from each peered network
 | spoke-01 | 0.0.0.0/0 -> 10.12.3.4 (firewall IP on Hub 1) |
 | spoke-02 | 0.0.0.0/0 -> 10.12.3.4 (firewall IP on Hub 1) |
 | spoke-03 | 0.0.0.0/0 -> 10.12.3.4 (firewall IP on Hub 1) |
-| spoke-04 | 0.0.0.0/0 -> 10.14.3.4 (firewall IP on Hub 1) |
+| spoke-04 | 0.0.0.0/0 -> 10.14.3.4 (firewall IP on Hub 2) |
 
 _The second step_ regards tjhe firewalls, on each firewall (here we are using 2 Azure Firewalls), we need to ensure that any source network can reach any target network. This is possibile with the following network policy rule, associated to both firewalls: 
 
