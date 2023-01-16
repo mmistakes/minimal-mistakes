@@ -1,6 +1,6 @@
 ---
 layout: single
-title: About
+title: Schedule
 permalink: /schedule/
 classes: wide
 ---
