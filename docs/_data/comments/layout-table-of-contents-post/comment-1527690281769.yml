@@ -1,9 +1,0 @@
-_id: 30e73630-6415-11e8-85f3-dd0128460d26
-message: "@Matthew - that's likely due to vendor prefixes missing from the CSS. `position: sticky` isn't enough for webkit browsers like Safari.\r\n\r\n```css\r\nposition: sticky;\r\nposition: -webkit-sticky;\r\nposition: -moz-sticky;\r\nposition: -ms-sticky;\r\nposition: -o-sticky;\r\n```"
-name: Michael Rose
-email: 1ce71bc10b86565464b612093d89707e
-url: 'https://mademistakes.com'
-hidden: ''
-date: '2018-05-30T14:24:41.768Z'
-tags: []
-timestamp: 1527690281
