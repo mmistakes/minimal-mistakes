@@ -208,7 +208,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 ```
 DISPLAY :0
-XAUTHORITY /run/user/1000/gdm/Xaut
+XAUTHORITY /run/user/1000/gdm/Xauthority
 ```
 
 # 참고 
