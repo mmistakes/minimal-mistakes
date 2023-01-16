@@ -27,6 +27,28 @@ The name of our module doesn't matter. We used `virtual.threads.playground` but 
 
 For people who already follows us, we made the same question on the article on [Kotlin Coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/). However, we think that it is important to give a brief introduction to the problem that virtual threads are trying to solve.
 
-The JVM is a multithreaded environment. As we may know, the JVM gives us an abstraction of OS threads through the type `Thread`. Until Project Loom, every thread in the JVM was mapped directly to an OS thread. We can call such implementation of the `Thread` type as _platform thread_.
+The JVM is a multithreaded environment. As we may know, the JVM gives us an abstraction of OS threads through the type `Thread`. Until Project Loom, every thread in the JVM is just a little wrapper around an OS thread. We can call such implementation of the `Thread` type as _platform thread_.
 
-The problem with platform thread is that they are expensive under a lot of points of view. First, they are expensive to create. 
+The problem with platform thread is that they are expensive under a lot of points of view. First, they are expensive to create. Every time a platform thread is created, the OS must allocate a very large amount of memory (megabytes) in the stack to store the thread context, native, and Java call stacks. This is due to the not resizable nature of the stack. Moreover, every time the scheduler preempts a thread from execution, this huge amount of memory must be moved around.
+
+As we can imagine, this is a very expensive operation, both in space and time. In fact, th huge size of stacks frame is what really limit the number of threads that can be created. We can reach a `OutOfMemoryError` quite easily in Java, continuing creating new platform threads till the OS runs out of memory:
+
+```java
+private static void stackOverFlowErrorExample() {
+  for (int i = 0; i < 100_000; i++) {
+    new Thread(() -> {
+      try {
+        Thread.sleep(Duration.ofSeconds(1L));
+      } catch (InterruptedException e) {
+        throw new RuntimeException(e);
+      }
+    }).start();
+  }
+}
+```
+
+The results depend on the OS and the hardware, but we can easily reach a `OutOfMemoryError` in a few seconds.
+
+The above example shows how we wrote concurrent programs was constrained until now. In fact, the more straightforward way to write concurrent programs in Java is to create a new thread for every concurrent task, _one task per thread_ approach. In such approach, every thread can use its own local variable to store information, and the need to share mutable state among threads drastically decreases. However, using such approach, we can easily reach the limit of the number of threads that we can create.
+
+As we said in the article concerning Kotlin Coroutines, a lot of different approaches risen during the past years to overcome the above problem. Reactive programming and async/await approach are two of the most popular. 
