@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "ryunny"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "LEE HA RYUN"
 description              : "An amazing website."
 url                      : "https://lharyun.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -39,7 +39,7 @@ comments:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    colorscheme          : # "light" , "dark(default)"
   utterances:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
