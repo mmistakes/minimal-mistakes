@@ -47,8 +47,22 @@ private static void stackOverFlowErrorExample() {
 }
 ```
 
-The results depend on the OS and the hardware, but we can easily reach a `OutOfMemoryError` in a few seconds.
+The results depend on the OS and the hardware, but we can easily reach a `OutOfMemoryError` in a few seconds:
 
-The above example shows how we wrote concurrent programs was constrained until now. In fact, the more straightforward way to write concurrent programs in Java is to create a new thread for every concurrent task, _one task per thread_ approach. In such approach, every thread can use its own local variable to store information, and the need to share mutable state among threads drastically decreases. However, using such approach, we can easily reach the limit of the number of threads that we can create.
+```
+[0.949s][warning][os,thread] Failed to start thread "Unknown thread" - pthread_create failed (EAGAIN) for attributes: stacksize: 1024k, guardsize: 4k, detached.
+[0.949s][warning][os,thread] Failed to start the native thread for java.lang.Thread "Thread-4073"
+Exception in thread "main" java.lang.OutOfMemoryError: unable to create native thread: possibly out of memory or process/resource limits reached
+```
 
-As we said in the article concerning Kotlin Coroutines, a lot of different approaches risen during the past years to overcome the above problem. Reactive programming and async/await approach are two of the most popular. 
+The above example shows how we wrote concurrent programs was constrained until now. 
+
+From its inception, Java has been a language that tried to strive for simplicity. In concurrent programming, this means that we should try to write programs as if the were sequential.  In fact, the more straightforward way to write concurrent programs in Java is to create a new thread for every concurrent task. This model is called _one task per thread_. 
+
+In such approach, every thread can use its own local variable to store information, and the need to share mutable state among threads, which is the well-known "hard part" of concurrent programming, drastically decreases. However, using such approach, we can easily reach the limit of the number of threads that we can create.
+
+As we said in the article concerning Kotlin Coroutines, a lot of different approaches risen during the past years to overcome the above problem. Reactive programming and async/await approaches are two of the most popular.
+
+The reactive programming initiatives tries to overcome the lack of thread resources building a custom DSL to declarative describe the flow of data, and let the framework handle concurrency. However, the DSL tends to be very hard to understand and to use, losing the simplicity that Java tries to give us.
+
+Also the async/await approach, such as Kotlin coroutines, has its own problems. Despite the fact that it aims is to to model the _one task per thread_ approach, it can't rely on any native JVM construct. For example, Kotlin coroutines based the whole story on _suspending functions_, i.e. functions that can suspend a coroutine. However, to suspension is completely based upon non-blocking IO, which we can achieve using libraries based on Netty for example. However, not every task can be expressed in terms of non-blocking IO. So, we must divide our program in two parts: one that is based on non-blocking IO, and one that is not. This is a very hard task, and it is not easy to do it correctly. Moreover, we loose again the simplicity that we want to have in our programs. 
