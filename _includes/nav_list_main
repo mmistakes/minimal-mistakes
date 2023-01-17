@@ -49,11 +49,20 @@
                 {% endfor %}
             </ul>
 
-        <span class="nav__sub-title">Tutorial</span>
+        <span class="nav__sub-title">Coding Practice</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Youtube-tut" %}
                         <li><a href="/categories/ytb-tutorial" class="">Youtube ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <span class="nav__sub-title">Tutorials</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "JS" %}
+                        <li><a href="/categories/js" class="">JavaScript ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -67,7 +76,23 @@
                 {% endfor %}
             </ul>
 
-        <span class="nav__sub-title">Collection</span>
+        <span class="nav__sub-title">Job</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Interview" %}
+                        <li><a href="/categories/interview" class="">Interviews ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <span class="nav__sub-title">etc</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "En-Study" %}
+                        <li><a href="/categories/en-study" class="">English ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Articles" %}
