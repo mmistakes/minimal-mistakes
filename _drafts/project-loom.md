@@ -94,3 +94,9 @@ private static void createNewVirtualThreadWithExecutorService()
   }
 }
 ```
+
+How do virtual threads work? Basically, the JVM maintains a pool of _platform threads_, created and maintained by a dedicated `ForkJoinPool`. Initially, the number of platform threads is equal to the number of CPU cores. For each created virtual thread, the JVM schedule its execution on a platform thread, temporarily copying the stack chunk for the virtual thread from the heap to the stack of the platform thread. We said that the platform thread becomes the _carrier thread_ of the virtual thread. The figure below shows the relationship between virtual threads and platform threads:
+
+TODO: add image
+
+The first time the virtual thread blocks on a blocking operation, the carrier thread is released, and the stack chunk of the virtual thread is copied back to the heap. The virtual thread is scheduled again for execution when the blocking operation completes.
