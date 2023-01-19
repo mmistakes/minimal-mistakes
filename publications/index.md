@@ -8,11 +8,15 @@
     
 ## Preprints
 
-- Lesage, E., & Verguts, T. (2022). Contextual overtraining accelerates habit formation in new stimuli.  [PsyArXiv.](https://doi.org/10.31234/osf.io/7m6bh)
+- Simoens, J., Verguts, T., & Braem, S. (2023). Meta-learning environment-specific learning rates. [PsyArxiv.](https://psyarxiv.com/ypd45) 
+
+- Turkakin, E., Verguts, T., Desender, K., & Lesage, E. (2023). Should I Sample or Should I Go? An approximately optimal model for deciding when to stop sampling information. [PsyArxiv.](https://psyarxiv.com/tfe94/)
+
+- Xu, S., Simoens, J., Verguts, T., & Braem, S. (2022). Learning where to be flexible: Using environmental cues to regulate cognitive control. [PsyArxiv.](https://doi.org/10.31234/osf.io/y5h78)
 
 - Van Marcke, H., Le Denmat, P., Verguts, T., & Desender, K. (2022). Manipulating prior beliefs causally induces under- and overconfidence. [BioRxiv.](https://doi.org/10.1101/2022.03.01.482511)
 
-- Xu, S., Simoens, J., Verguts, T., & Braem, S. (2022). Learning where to be flexible: Using environmental cues to regulate cognitive control. [PsyArxiv.](https://doi.org/10.31234/osf.io/y5h78)
+- Lesage, E., & Verguts, T. (2022). Contextual overtraining accelerates habit formation in new stimuli.  [PsyArXiv.](https://doi.org/10.31234/osf.io/7m6bh)
 
 ## Recent publications
 
