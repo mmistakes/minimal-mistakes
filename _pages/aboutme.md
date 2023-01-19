@@ -8,7 +8,8 @@ author_profile: true
 
 Hello! Welcome to Jay's Note <br>
 ![](/images/image1.jpg){: .align-right width="320"}
-I am currently a senior student of Stony Brook University and expected graduation date on December 16, 2022. I am from South Korea, and currently staying in Port Jefferson, NY.
+
+
 I am major in Applied Mathematics and Statistics, and pursuing to be a Data Scientist. <br>
 1. Why Data Scientist? <br>
 - Advantages of predicting what I want to know instantly.
