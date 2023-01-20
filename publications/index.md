@@ -8,7 +8,7 @@
     
 ## Preprints
 
-- Simoens, J., Verguts, T., & Braem, S. (2023). Meta-learning environment-specific learning rates. [PsyArxiv.](https://psyarxiv.com/ypd45) 
+- Simoens, J., Verguts, T., & Braem, S. (2023). Meta-learning environment-specific learning rates. [PsyArxiv.](https://psyarxiv.com/ypd45)  
 
 - Turkakin, E., Verguts, T., Desender, K., & Lesage, E. (2023). Should I Sample or Should I Go? An approximately optimal model for deciding when to stop sampling information. [PsyArxiv.](https://psyarxiv.com/tfe94/)
 
