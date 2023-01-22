@@ -1,6 +1,14 @@
 /* ==========================================================================
    FOOTER
    ========================================================================== */
+.top-var {
+  display: scroll;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 45px;
+  width: 50px"
+ }
 
 .page__footer {
   @include clearfix;
