@@ -23,6 +23,26 @@ module virtual.threads.playground {
 
 The name of our module doesn't matter. We used `virtual.threads.playground` but we can use any name we want. The important thing is that we need to use the `requires` directive to enable the incubator module. At the end of the article we will give an example of a Maven configuration that enables the preview and the incubator module.
 
+We'll use Slf4j to log something on the console. So, all the code snippets in this article will use the following logger:
+
+```java
+static final Logger logger = LoggerFactory.getLogger(App.class);
+```
+
+Moreover, we'll use also Lombok, to reduce the boilerplate code when dealing with checked exceptions. So, we'll use the `@SneakyThrows`, that let's us treating checked exceptions as unchecked ones (don't use it in production!).
+
+Since we're in an application using Java modules, we need to both the dependencies to the required modules. The above module declaration then becomes the following:
+
+```java
+module virtual.threads.playground {
+  requires jdk.incubator.concurrent;
+  requires org.slf4j;
+  requires static lombok;
+}
+```
+
+At the end of the article, we will give an example of a Maven configuration with all the needed dependencies and configurations.
+
 ## 2. Why Virtual Threads?
 
 For people who already follows us, we made the same question on the article on [Kotlin Coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/). However, we think that it is important to give a brief introduction to the problem that virtual threads are trying to solve.
@@ -69,7 +89,7 @@ Also the async/await approach, such as Kotlin coroutines, has its own problems. 
 
 The above are some of the reasons why the JVM community is looking for a better way to write concurrent programs. Project Loom is one of the attempts to solve the problem. So, let's introduce the first brick of the project: _virtual threads_.
 
-## 3. Virtual Threads
+## 3. Virtual Threads: Basics
 
 As we said, virtual threads are a new type of thread that tries to overcome the problem of resource limitation of platform threads. They are an alternate implementation of the `java.lang.Thread` type, which store they stack frames in the heap (garbage collected memory) instead of the stack.
 
@@ -95,8 +115,11 @@ private static void createNewVirtualThreadWithExecutorService()
 }
 ```
 
-How do virtual threads work? Basically, the JVM maintains a pool of _platform threads_, created and maintained by a dedicated `ForkJoinPool`. Initially, the number of platform threads is equal to the number of CPU cores. For each created virtual thread, the JVM schedule its execution on a platform thread, temporarily copying the stack chunk for the virtual thread from the heap to the stack of the platform thread. We said that the platform thread becomes the _carrier thread_ of the virtual thread. The figure below shows the relationship between virtual threads and platform threads:
+How do virtual threads work? The figure below shows the relationship between virtual threads and platform threads:
 
-TODO: add image
+![Java Virtual Threads Representation](/images/virtual-threads/java-virtual-threads.png)
 
-The first time the virtual thread blocks on a blocking operation, the carrier thread is released, and the stack chunk of the virtual thread is copied back to the heap. The virtual thread is scheduled again for execution when the blocking operation completes.
+Basically, the JVM maintains a pool of _platform threads_, created and maintained by a dedicated `ForkJoinPool`. Initially, the number of platform threads is equal to the number of CPU cores. For each created virtual thread, the JVM schedule its execution on a platform thread, temporarily copying the stack chunk for the virtual thread from the heap to the stack of the platform thread. We said that the platform thread becomes the _carrier thread_ of the virtual thread. 
+
+The first time the virtual thread blocks on a blocking operation, the carrier thread is released, and the stack chunk of the virtual thread is copied back to the heap. In this way, the carrier thread is available to execute any other eligible virtual threads. Once the blocked virtual thread finish the blocking operation, the scheduler schedules it again for execution. The execution can continue on the same carrier thread, or on a different one.
+
