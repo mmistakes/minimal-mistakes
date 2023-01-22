@@ -29,7 +29,14 @@ We'll use Slf4j to log something on the console. So, all the code snippets in th
 static final Logger logger = LoggerFactory.getLogger(App.class);
 ```
 
-Moreover, we'll use also Lombok, to reduce the boilerplate code when dealing with checked exceptions. So, we'll use the `@SneakyThrows`, that let's us treating checked exceptions as unchecked ones (don't use it in production!).
+Moreover, we'll use also Lombok, to reduce the boilerplate code when dealing with checked exceptions. So, we'll use the `@SneakyThrows`, that let us treating checked exceptions as unchecked ones (don't use it in production!). For example, we'll wrap the `Thread.sleep` method, that throws a checked `InterruptedException`, with the `@SneakyThrows` annotation:
+
+```java
+@SneakyThrows
+private static void sleep(Duration duration) {
+  Thread.sleep(duration);
+}
+```
 
 Since we're in an application using Java modules, we need to both the dependencies to the required modules. The above module declaration then becomes the following:
 
@@ -91,29 +98,90 @@ The above are some of the reasons why the JVM community is looking for a better 
 
 ## 3. Virtual Threads: Basics
 
-As we said, virtual threads are a new type of thread that tries to overcome the problem of resource limitation of platform threads. They are an alternate implementation of the `java.lang.Thread` type, which store they stack frames in the heap (garbage collected memory) instead of the stack.
+As we said, virtual threads are a new type of threads that tries to overcome the problem of resource limitation of platform threads. They are an alternate implementation of the `java.lang.Thread` type, which store they stack frames in the heap (garbage collected memory) instead of the stack.
 
 Therefore, the initial memory footprint of a virtual thread tends to be very small, a few of hundred bytes, instead of megabytes. In fact, the stack chunk can resize in every moment. So, we don't need to allocate a gazillion of memory to try to fit every possible use case. 
 
-Create a new virtual thread is very easy. We can use the new factory method `ofVirtual`on the `java.lang.Thread` type:
+Create a new virtual thread is very easy. We can use the new factory method `ofVirtual`on the `java.lang.Thread` type. In detail, we create an utility function to create a virtual thread with a given name:
 
 ```java
-private static Thread createNewVirtualThreadWithFactory() {
-  return Thread.ofVirtual().start(() -> System.out.println("Hello from a virtual thread!"));
+private static Thread virtualThread(String name, Runnable runnable) {
+  return Thread.ofVirtual()
+    .name(name)
+    .start(runnable);
 }
 ```
 
-Other than the factory method, we can use a new implementation of the `java.util.concurrent.ExecutorService` tailored on virtual threads:
+To show how virtual threads work, we'll use the same example we used in the Kotlin Coroutine article. Let's say we want to describe our morning routine. Every morning, we take a bath:
 
 ```java
-private static void createNewVirtualThreadWithExecutorService()
-    throws ExecutionException, InterruptedException {
-  try (var executorService = Executors.newVirtualThreadPerTaskExecutor()) {
-    var future = executorService.submit(() -> System.out.println("Hello from a virtual thread!"));
-    future.get();
+static Thread bathTime() {
+  return virtualThread("Bath time", () -> {
+    logger.info("I'm going to take a bath");
+    sleep(Duration.ofMillis(500L));
+    logger.info("I'm done with the bath");
+  });
+}
+```
+
+Another task that we do every morning is to boil some water to make a tea:
+
+```java
+static Thread boilingWater() {
+  return virtualThread("Boil some water", () -> {
+    logger.info("I'm going to boil some water");
+    sleep(Duration.ofSeconds(1L));
+    logger.info("I'm done with the water");
+  });
+}
+```
+
+Fortunately, we can race the two tasks, to speed up the process and go to work earlier:
+
+```java
+@SneakyThrows
+static void concurrentMorningRoutine() {
+  var vt1 = bathTime();
+  var vt2 = boilingWater();
+  vt1.join();
+  vt2.join();
+}
+```
+
+We joined both the virtual threads, so we can be sure that the main thread will not terminate before the two virtual threads. Let's run the program:
+
+```
+15:19:25.243 [Bath time] INFO in.rcard.virtual.threads.App - I'm going to take a bath
+15:19:25.243 [Boil some water] INFO in.rcard.virtual.threads.App - I'm going to boil some water
+15:19:25.750 [Bath time] INFO in.rcard.virtual.threads.App - I'm done with the bath
+15:19:26.253 [Boil some water] INFO in.rcard.virtual.threads.App - I'm done with the water
+```
+
+The output is exactly what we expected. The two virtual threads run concurrently, and the main thread waits for them to terminate.
+
+Other than the factory method, we can use a new implementation of the `java.util.concurrent.ExecutorService` tailored on virtual threads.
+
+```java
+@SneakyThrows
+static void concurrentMorningRoutineUsingExecutors() {
+  try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
+    var f1 = executor.submit(() -> {
+      logger.info("I'm going to take a bath");
+      sleep(Duration.ofMillis(500L));
+      logger.info("I'm done with the bath");
+    });
+    var f2 = executor.submit(() -> {
+      logger.info("I'm going to boil some water");
+      sleep(Duration.ofSeconds(1L));
+      logger.info("I'm done with the water");
+    });
+    f1.get();
+    f2.get();
   }
 }
 ```
+
+TODO
 
 How do virtual threads work? The figure below shows the relationship between virtual threads and platform threads:
 
