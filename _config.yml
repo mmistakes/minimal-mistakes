@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "shiver"
+  name             : "shiverlog"
   avatar           : "/assets/images/my-logo.png"
-  bio              : "금융 웹개발 SI·Solution쪽으로 준비중입니다"
+  bio              : "금융 웹개발 SI·Solution"
   location         : "Seoul, South Korea"
   email            : 
   links:
