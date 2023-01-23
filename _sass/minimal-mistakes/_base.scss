@@ -126,6 +126,8 @@ blockquote {
 /* links */
 
 a {
+  /* devinlife : a link 하이퍼링크 밑줄 없애기 */
+  text-decoration: none;
   &:focus {
     @extend %tab-focus;
   }
