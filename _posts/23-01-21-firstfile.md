@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "포스팅 관련"
 categories : etc
 ---
