@@ -616,7 +616,7 @@ ko: &DEFAULT_KO
   date_label                 : "업데이트:"
   comments_label             : "댓글남기기"
   comments_title             : "댓글"
-  more_label                 : "더 보기"
+  more_label                 : "더보기"
   related_label              : "참고"
   follow_label               : "팔로우:"
   feed_label                 : "피드"
@@ -639,7 +639,7 @@ ko: &DEFAULT_KO
   search_label_text          :
   search_placeholder_text    : "검색어를 입력하세요..."
   search_algolia_no_results  :
-  results_found              : "개 결과 발견"
+  results_found              : "결과 발견"
   back_to_top                : "맨 위로 이동"
 ko-KR:
   <<: *DEFAULT_KO
