@@ -96,7 +96,7 @@ Also the async/await approach, such as Kotlin coroutines, has its own problems. 
 
 The above are some of the reasons why the JVM community is looking for a better way to write concurrent programs. Project Loom is one of the attempts to solve the problem. So, let's introduce the first brick of the project: _virtual threads_.
 
-## 3. Virtual Threads: Basics
+## 3. How to Create a Virtual Thread
 
 As we said, virtual threads are a new type of threads that tries to overcome the problem of resource limitation of platform threads. They are an alternate implementation of the `java.lang.Thread` type, which store they stack frames in the heap (garbage collected memory) instead of the stack.
 
@@ -228,6 +228,10 @@ A `ThreadFactory` is a factory that creates threads that share the same configur
 08:32:07.850 [routine-0] INFO in.rcard.virtual.threads.App - I'm done with the bath
 08:32:08.351 [routine-1] INFO in.rcard.virtual.threads.App - I'm done with the water
 ```
+
+Now that we know how to create virtual threads, let's see how they work under the hood.
+
+## 4. How Virtual Threads Work
 
 How do virtual threads work? The figure below shows the relationship between virtual threads and platform threads:
 
