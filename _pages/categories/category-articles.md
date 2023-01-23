@@ -1,7 +1,7 @@
 ---
-title: "Articles"
+title: "Resources"
 layout: archive
-permalink: categories/articles
+permalink: categories/resource
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ---
 
-{% assign posts = site.categories.Articles %}
+{% assign posts = site.categories.Resource %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
