@@ -20,8 +20,8 @@ title                    : "Mr. Araki Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Steven Araki"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Professional Portfolio"
+url                      : # the base hostname & protocol for your site e.g. "https://StevenAraki.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -70,7 +70,7 @@ algolia:
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
 google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
+  search_engine_id       :  Steven Araki
   instant_search         : # false (default), true
 # SEO Related
 google_site_verification :
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Steven Araki"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "Future Mechanical Engineer."
   location         : "Washington State"
   email            :
   links:
