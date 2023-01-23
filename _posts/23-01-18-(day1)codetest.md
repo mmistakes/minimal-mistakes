@@ -1,3 +1,9 @@
+---
+layout: single
+title: " 코테(mission2) "
+categories: algorithm 
+tag: [algorithm]
+---
 # day1 - code test
 
 지갑 크기 구하기(= 최대 최소값 구하기)

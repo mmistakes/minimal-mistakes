@@ -1,3 +1,9 @@
+---
+layout: single
+title: " JS스터디2일차 "
+categories: concept
+tag: [concept]
+---
 # # 2023-01-18 javascript 스터디 2일차 - 개념정리
 
 # 함수와 객체

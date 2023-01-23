@@ -1,3 +1,9 @@
+---
+layout: single
+title: " JS스터디1일차-1 "
+categories: concept
+tag: [concept]
+---
 2023-01-18 javascript 스터디 1일차
 
 # 2023-01-18 javascript 스터디 1일차 - 개념정리

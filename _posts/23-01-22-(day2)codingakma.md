@@ -1,3 +1,9 @@
+---
+layout: single
+title: " 코딩앙마 JS 초급 "
+categories: concept
+tag: [codingakma]
+---
 # 코딩앙마 100분
 
 명시적 형변환을 습관화
