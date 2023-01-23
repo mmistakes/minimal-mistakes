@@ -3,7 +3,7 @@ title: "Upcoming Open Mic - Project management in IT"
 categories: [Open Mic Announcement, Open Mic]
 ---
 
-The Open mic session starts on Friday 20th November 2022 at 10:30 at [this link](https://meet.jit.si/open-mic-kbss). Speaker [Max Chopart](https://www.linkedin.com/in/max-chopart) opens the topic of project management in IT.
+The Open mic session starts on Friday 20th January 2023 at 10:30 at [this link](https://meet.jit.si/open-mic-kbss). Speaker [Max Chopart](https://www.linkedin.com/in/max-chopart) opens the topic of project management in IT.
 
 {% include figure image_path="/assets/images/posts/project-management.webp" alt="Project management" %}{: .post-image }
 
