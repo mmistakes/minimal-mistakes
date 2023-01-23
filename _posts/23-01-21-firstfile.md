@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "포스팅 관련"
+categories : etc
 ---
 
 # Welcome
