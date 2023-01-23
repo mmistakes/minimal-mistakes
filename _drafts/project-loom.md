@@ -159,7 +159,7 @@ We joined both the virtual threads, so we can be sure that the main thread will 
 
 The output is exactly what we expected. The two virtual threads run concurrently, and the main thread waits for them to terminate.
 
-Other than the factory method, we can use a new implementation of the `java.util.concurrent.ExecutorService` tailored on virtual threads.
+Other than the factory method, we can use a new implementation of the `java.util.concurrent.ExecutorService` tailored on virtual threads, called `java.util.concurrent.ThreadPerTaskExecutor`. It's name is quite evocative. it creates a new virtual thread for every task submitted to the executor:
 
 ```java
 @SneakyThrows
@@ -181,7 +181,53 @@ static void concurrentMorningRoutineUsingExecutors() {
 }
 ```
 
-TODO
+The way we start threads is a little different since we're using an `ExecutorService`. Every call to the `submit` method requires a `Runnable` or a `Callable<T>` instance. The `submit` returns an instance of a  `Future<T>` that we can use to join the underlying virtual thread.
+
+The output is more or less the same as before:
+
+```
+21:22:52.561 [] INFO in.rcard.virtual.threads.App - I'm going to take a bath
+21:22:52.561 [] INFO in.rcard.virtual.threads.App - I'm going to boil some water
+21:22:53.072 [] INFO in.rcard.virtual.threads.App - I'm done with the bath
+21:22:53.570 [] INFO in.rcard.virtual.threads.App - I'm done with the water
+```
+
+As we can see, threads created in this way have not a name, and it can be difficult to debug errors without it. We can overcome this problem just by using the `ThreadPerTaskExecutor` factory method that takes a `ThreadFactory` as parameter:
+
+```java
+@SneakyThrows
+static void concurrentMorningRoutineUsingExecutorsWithName() {
+  final ThreadFactory factory = Thread.ofVirtual().name("routine-", 0).factory();
+  try (var executor =
+      Executors.newThreadPerTaskExecutor(factory)) {
+    var f1 =
+        executor.submit(
+            () -> {
+              logger.info("I'm going to take a bath");
+              sleep(Duration.ofMillis(500L));
+              logger.info("I'm done with the bath");
+            });
+    var f2 =
+        executor.submit(
+            () -> {
+              logger.info("I'm going to boil some water");
+              sleep(Duration.ofSeconds(1L));
+              logger.info("I'm done with the water");
+            });
+    f1.get();
+    f2.get();
+  }
+}
+```
+
+A `ThreadFactory` is a factory that creates threads that share the same configuration. In our case, we give the prefix `routine-` to the name of the threads, and we start the counter from 0. The output is the same as before, but now we can see the name of the threads:
+
+```
+08:32:07.342 [routine-0] INFO in.rcard.virtual.threads.App - I'm going to take a bath
+08:32:07.342 [routine-1] INFO in.rcard.virtual.threads.App - I'm going to boil some water
+08:32:07.850 [routine-0] INFO in.rcard.virtual.threads.App - I'm done with the bath
+08:32:08.351 [routine-1] INFO in.rcard.virtual.threads.App - I'm done with the water
+```
 
 How do virtual threads work? The figure below shows the relationship between virtual threads and platform threads:
 
