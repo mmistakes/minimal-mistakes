@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "Arti-Cliches"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "🐦shiverlog🐦"
+name                     : "shiverlog🐦"
 description              : "shiver's Devlog"
 url                      : "https://shiverlog.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
