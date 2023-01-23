@@ -7,9 +7,10 @@ tags: [kotlin, kafka, streaming]
 excerpt: ""
 ---
 
-_This article is part of the **In the Land of Streams** journey and is brought to you by [Giannis Polyzos](https://github.com/polyzos). Giannis is a proud alumnus of Rock the JVM, working as Solutions Architect, providing Cloud-native Event Streaming Solutions with a focus on Apache Kafka and Apache Flink.
+_This article is brought to you by [Giannis Polyzos](https://github.com/polyzos). 
+Giannis is a proud alumnus of Rock the JVM, working as a Solutions Architect with a focus on Event Streaming and Computing Systems.
 
-_Enter Giannis:_
+**_Enter Giannis:_**
 
 Apache Kafka is a well-known event streaming platform. 
 This article requires some basic familiarity with Kafka — creating producers and consumers — and will focus on providing a better understanding of how Kafka works under the hood to better design and tune your applications.
@@ -17,25 +18,21 @@ This article requires some basic familiarity with Kafka — creating producers a
 ![Alt text](../images/kafka/ppc.png "Message Lifecycle: PPC (Produce, Persist, Consume)")
 
 Using a simple file ingestion data pipeline, this article aims to cover the following:
-1. Ingest data files (with click event data) into Kafka
-2. Explain how the producing side works
-3. Producer configuration tuning
-4. Throughput vs Latency
-5. How the consuming side works 
-6. How scaling consumer groups works 
-7. How scaling with the parallel consumer works 
-8. Tuning to avoid slow consumers
-9. What’s the role of offsets in Kafka
-10. What are the caveats when working with offsets
-11. Different approaching for handling offsets
+1. Ingest click stream data from the filesystem into Kafka
+2. Explain how Kafka producers works, configurations and tuning for throughput / latency 
+3. How Kafka consumers work, configurations and scaling the consuming side 
+4. Caveats with consumer offsets and different approaches for handling them
 
-I will be using some e-commerce datasets you can find [here](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store). 
+We will use e-commerce datasets which you can find [here](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store). 
 The code samples are written in Kotlin, but the implementation should be easy to port in any programming language.
 You can find the source code on Github [here](https://github.com/polyzos/kafka-streaming-ledger).
 
-Let us dive right in.
+So, let us dive right in.
 
-## 1. Background and Setup
+## 1. Environment Setup
+First we want to have a Kafka Cluster up and running.
+Make sure you have [docker compose](https://docs.docker.com/compose/) installed on your machine, as we will use the following `docker-compose.yaml` file
+to setup a 3-node Kafka Cluster.
 
 ```shell
 version: "3.7"
@@ -106,17 +103,42 @@ services:
       - zookeeper
 ```
 
-### 👀 Show me the Code 👀
-Our producer will send some events to Kafka. The data model for the click events should look similar to the following payload:
-![Alt text](../images/kafka/payload.png "Payload")
-
-I will create a topic called ecommerce.events which I will use to store my messages. The topic will have 5 partitions and a replication factor of 3 (leader + 2 replicas).
+All you have to do is navigate to the root folder of the project where the `docker-compose.yaml` file is located and run 
 ```shell
-./bin/kafka-topics.sh --bootstrap-server localhost:9092 --create
-./bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
+docker-compose up
+```
+This command will start a 3-node Kafka Cluster 
+
+**Note:** You might want to increase your docker resources (I'm running with 6GB RAM) to make sure you don't run into any issues.
+
+Wait a little bit for the cluster to start and then we will need to create our topic to store our clickstream events. 
+For that we will create a topic with 5 partitions and a replication factor of 3 (leader + 2 replicas) using the following command:
+```shell
+bin/kafka-topics.sh --create \
+  --topic ecommerce.events \
+  --replication-factor 3 \
+  --partitions 5 \
+  --bootstrap-server localhost:9092
 ```
 
-Creating Kafka Producers is pretty straightforward, the important part is creating and sending records.
+Verify the topic was created successfully:
+```shell
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe ecommerce.events
+
+Topic: ecommerce.events	TopicId: oMhOjOKcQZaoPp_8Xc27lQ	PartitionCount: 5	ReplicationFactor: 3	Configs:
+	Topic: ecommerce.events	Partition: 0	Leader: 1001	Replicas: 1001,1002,1003	Isr: 1001,1002,1003
+	Topic: ecommerce.events	Partition: 1	Leader: 1003	Replicas: 1003,1001,1002	Isr: 1003,1001,1002
+	Topic: ecommerce.events	Partition: 2	Leader: 1002	Replicas: 1002,1003,1001	Isr: 1002,1003,1001
+	Topic: ecommerce.events	Partition: 3	Leader: 1001	Replicas: 1001,1003,1002	Isr: 1001,1003,1002
+	Topic: ecommerce.events	Partition: 4	Leader: 1003	Replicas: 1003,1002,1001	Isr: 1003,1002,1001
+```
+
+### 👀 Show me the Code 👀
+The producer will send some events to Kafka. 
+The data model for the click events should look similar to the following payload.
+![Alt text](../images/kafka/payload.png "Payload")
+
+Creating Kafka Producers is pretty straightforward, the important part is creating and sending records and the produce method should look similar to the following:
 ```kotlin
 fun produce(topic: String, key: K, value: V) {
   ProducerRecord(topic, key, value)
@@ -133,9 +155,10 @@ fun produce(topic: String, key: K, value: V) {
       }
     }
 }
-```
 
-For every event, we create a **ProducerRecord** object and specify the `topic`, the `key` (here we partition based on the userId),
+producerResource.produce(KafkaConfig.EVENTS_TOPIC, event.userid, event)
+```
+For every event we create a **ProducerRecord** object and specify the `topic`, the `key` (here we partition on the userId),
 and finally the event payload as the `value`.
 
 The **send()** method is asynchronous, so we specify a callback that gets triggered when we receive a result back.
@@ -148,17 +171,16 @@ If the message was successfully written to Kafka we print the metadata, otherwis
 
 Kafka does a lot of things under the hood when the **send()** method is invoked, so let’s outline them below:
 1. The message is serialized using the specified serializer 
-2. The partitioner determines in which partition the message should be routed. 
+2. The partitioner determines which partition the message should be routed to. 
 3. Internally Kafka keeps message buffers; we have one buffer for each partition and each buffer can hold many batches of messages grouped for each partition. 
 4. Finally, the I/O threads pick up these batches and sent them over to the brokers.  
-At this point, our messages are in-flight from the client to the brokers. The brokers have sent/receive network buffers for the network threads to pick up the messages and hand them over to some IO thread to actually persist it on disk.
+At this point, our messages are in-flight from the client to the brokers. The brokers have sent/receive network buffers for the network threads to pick up the messages and hand them over to some IO thread to actually persist them on disk.
 5. On the leader broker, the messages are written on disk and sent to the followers for replication. One thing to note here is that the messages are first written on the PageCache and periodically are flushed on disk.
 (**Note:** PageCache to disk is an extreme case for message loss, but still you might wanna be aware of that)
 6. The followers (in-sync replicas) store and sent an acknowledgment back they have replicated the message.
 7. A **RecordMetadata** response is sent back to the client.
 8. If a failure occurred and we didn’t receive an ACK, we check if message retry is enabled and we need to resend it
 9. The client receives the response.
-
 
 ### Tradeoffs between Latency and Throughput
 In the distributed systems world most things come with tradeoffs and it’s up to the developer to find that “sweetspot” between different tradeoffs; thus it’s important to understand how things work.
@@ -173,7 +195,8 @@ On the other hand, a larger `batch size` might use more memory (as we will alloc
 ![Alt text](../images/kafka/tradeoffs.png "Tradeoffs Everywhere ")
 
 #### Let’s better illustrate this with an example.
-Our event data is stored in CSV files that we want to ingest into Kafka and since it is not real-time data ingestion we don’t really care about latency here, but having a good throughput so we can ingest them fast. Using the default configurations ingesting 5.000.000 messages takes around 119 seconds.
+Our event data is stored in CSV files that we want to ingest into Kafka and since it is not real-time data ingestion we don’t really care about latency here, but having a good throughput so we can ingest them fast. 
+Using the default configurations ingesting 5.000.000 messages takes around 119 seconds.
 
 ```shell
 13:17:22.885 INFO  [kafka-producer-network-thread | producer-1] io.ipolyzos.utils.LoggingUtils - Total messages sent so far 4800000.
@@ -202,14 +225,15 @@ Has the following impact on the ingestion time.
 
 From around 119 seconds dropped down to 36 seconds. In both cases **ack=1**.
 I will leave it up to you to experiment and try different configuration options to see how they better come in handy based on your use case.
-You might also wanna test against a real cluster to test the networking in place. For example running this similar example on a real cluster takes around 184 seconds to ingest
-1.000.000 messages and when adding the configurations changes drops down to 18 seconds.
+You might also wanna test against a real cluster to test the networking in place. For example running this similar example on a real cluster takes around _184 seconds_ to ingest
+1000000 messages and when adding the configurations changes drops down to _18 seconds_.
 
 If you are concerned with exactly-once semantics, set enable.idempotency to true, which will also result in acks set to all.
 
 > Switching to the other side of the wall
+Up to this point we have ingested clickstream events into Kafka, so let's see what reading those events looks like.
 
-### Let’s zoom in on the consuming side now.
+### Zoom in on the consuming side.
 A typical Kafka consumer loop should look similar to the following snippet:
 ```kotlin
 private fun consume(topic: String) {
@@ -235,7 +259,7 @@ private fun consume(topic: String) {
     }
 ```
 
-So let’s try to better understand what happens here. The following diagram provides a more detailed explanation.
+Let’s try to better understand what happens here. The following diagram provides a more detailed explanation.
 ![Alt text](../images/kafka/consumers.png "Consumer Internals")
 
 Kafka uses a pull-based model for data fetching. At the “heart of the consumer” sits the poll loop. The poll loop is important for two reasons:
@@ -257,7 +281,21 @@ At this point, I will start one consuming instance on my **ecommerce.events** to
 I will execute against my Kafka cluster, using the default consumer configuration options and my goal is to see how long it takes for a consumer to read _10.000_ messages from the topic, assuming a _20ms_ processing time per message.
 
 ```shell
-add logs
+12:37:13.362 INFO  [main] io.ipolyzos.utils.LoggingUtils - [Consumer-1] Records in batch: 500 - Elapsed Time: 226 seconds - Total Consumer Processed: 9500 - Total Group Processed: 9500
+12:37:25.039 INFO  [main] io.ipolyzos.Extensions - Batch Contains: 500 records from 1 partitions.
+12:37:25.040 INFO  [main] io.ipolyzos.Extensions - 
++--------+------------------+-----------+---------------+-----------+----------------------------------------------+---------------+-------------------------------------------------+-------------+
+| Offset | Topic            | Partition | Timestamp     | Key       | Value                                        | TimestampType | Teaders                                         | LeaderEpoch |
++--------+------------------+-----------+---------------+-----------+----------------------------------------------+---------------+-------------------------------------------------+-------------+
+| 9999   | ecommerce.events | 4         | 1674469663415 | 513376382 | {eventTime=1572569126000, eventType=view ... | CreateTime    | RecordHeaders(headers = [], isReadOnly = false) | Optional[1] |
+| 9998   | ecommerce.events | 4         | 1674469663415 | 529836227 | {eventTime=1572569124000, eventType=view ... | CreateTime    | RecordHeaders(headers = [], isReadOnly = false) | Optional[1] |
+| 9997   | ecommerce.events | 4         | 1674469663415 | 513231964 | {eventTime=1572569124000, eventType=view ... | CreateTime    | RecordHeaders(headers = [], isReadOnly = false) | Optional[1] |
+| 9996   | ecommerce.events | 4         | 1674469663415 | 564378632 | {eventTime=1572569124000, eventType=view ... | CreateTime    | RecordHeaders(headers = [], isReadOnly = false) | Optional[1] |
+| 9995   | ecommerce.events | 4         | 1674469663415 | 548411752 | {eventTime=1572569124000, eventType=view ... | CreateTime    | RecordHeaders(headers = [], isReadOnly = false) | Optional[1] |
++--------+------------------+-----------+---------------+-----------+----------------------------------------------+---------------+-------------------------------------------------+-------------+
+12:37:25.041 INFO  [main] io.ipolyzos.utils.LoggingUtils - [Consumer-1] Records in batch: 500 - Elapsed Time: 237 seconds - Total Consumer Processed: 10000 - Total Group Processed: 10000
+12:37:27.509 INFO  [Thread-0] io.ipolyzos.utils.LoggingUtils - [Consumer-1] Detected a shutdown, let's exit by calling consumer.wakeup()...
+
 ```
 We can see that it takes a single consumer around 4 minutes for this kind of processing. So how can we do better?
 
@@ -285,7 +323,20 @@ This scenario is similar to the previous one, only now we will have one consumer
 When a consumer goes down or similarly a new one joins the group, Kafka will have to trigger a rebalance. This means that partitions need to be revoked and reassigned to the available consumers in the group.
 
 Let’s run again our previous example — consuming 10k messages — but this time having 5 consumers in our consumer group. I will be creating 5 consuming instances from within a single JVM (using kotlin [coroutines](https://kotlinlang.org/docs/coroutines-overview.html)), but you can easily re-adjust the code (found [here](https://github.com/polyzos/kafka-streaming-ledger/blob/main/src/main/kotlin/io/ipolyzos/consumers/PerPartitionConsumer.kt)) and just start multiple JVMs.
-![Alt text](../images/kafka/output1.png "O1")
+```shell
+12:39:53.233 INFO  [DefaultDispatcher-worker-1] io.ipolyzos.Extensions - 
++--------+------------------+-----------+---------------+-----------+----------------------------------------------+---------------+-------------------------------------------------+-------------+
+| Offset | Topic            | Partition | Timestamp     | Key       | Value                                        | TimestampType | Teaders                                         | LeaderEpoch |
++--------+------------------+-----------+---------------+-----------+----------------------------------------------+---------------+-------------------------------------------------+-------------+
+| 1999   | ecommerce.events | 0         | 1674469663077 | 512801708 | {eventTime=1572562526000, eventType=view ... | CreateTime    | RecordHeaders(headers = [], isReadOnly = false) | Optional[1] |
+| 1998   | ecommerce.events | 0         | 1674469663077 | 548190452 | {eventTime=1572562525000, eventType=view ... | CreateTime    | RecordHeaders(headers = [], isReadOnly = false) | Optional[1] |
+| 1997   | ecommerce.events | 0         | 1674469663077 | 517445703 | {eventTime=1572562520000, eventType=view ... | CreateTime    | RecordHeaders(headers = [], isReadOnly = false) | Optional[1] |
+| 1996   | ecommerce.events | 0         | 1674469663077 | 512797937 | {eventTime=1572562519000, eventType=view ... | CreateTime    | RecordHeaders(headers = [], isReadOnly = false) | Optional[1] |
+| 1995   | ecommerce.events | 0         | 1674469663077 | 562837353 | {eventTime=1572562519000, eventType=view ... | CreateTime    | RecordHeaders(headers = [], isReadOnly = false) | Optional[1] |
++--------+------------------+-----------+---------------+-----------+----------------------------------------------+---------------+-------------------------------------------------+-------------+
+12:39:53.233 INFO  [DefaultDispatcher-worker-1] io.ipolyzos.utils.LoggingUtils - [Consumer-2] Records in batch: 500 - Elapsed Time: 47 seconds - Total Consumer Processed: 2000 - Total Group Processed: 10000
+12:39:55.555 INFO  [Thread-10] io.ipolyzos.utils.LoggingUtils - [Consumer-3] Detected a shutdown, let's exit by calling consumer.wakeup()...
+```
 
 As expected we can see that the consumption time dropped to less than a minute time.
 
@@ -311,18 +362,36 @@ Along with that it also provides different ways for committing offset. This is a
 
 Going once more back to our example to answer the question — how can we break the scaling limit? We will be using the parallel consumer pattern — you can find the code [here](https://github.com/polyzos/kafka-streaming-ledger/blob/main/src/main/kotlin/io/ipolyzos/consumers/ParallelScalingConsumer.kt).
 Using one _parallel consumer instance_ on our _5-partition_ topic, specifying a _Key Ordering_, and using a parallelism of _100 threads_
-![Alt text](../images/kafka/output2.png "O2")
+```shell
+12:48:42.752 INFO  [pc-pool-1-thread-87] io.ipolyzos.utils.LoggingUtils - [Consumer-0] Records in batch: 5 - Elapsed Time: 2 seconds - Total Consumer Processed: 9970 - Total Group Processed: 9970
+12:48:42.752 INFO  [pc-pool-1-thread-98] io.ipolyzos.utils.LoggingUtils - [Consumer-0] Records in batch: 5 - Elapsed Time: 2 seconds - Total Consumer Processed: 9970 - Total Group Processed: 9970
+12:48:42.758 INFO  [pc-pool-1-thread-26] io.ipolyzos.utils.LoggingUtils - [Consumer-0] Records in batch: 5 - Elapsed Time: 2 seconds - Total Consumer Processed: 9975 - Total Group Processed: 9975
+12:48:42.761 INFO  [pc-pool-1-thread-72] io.ipolyzos.utils.LoggingUtils - [Consumer-0] Records in batch: 5 - Elapsed Time: 2 seconds - Total Consumer Processed: 9980 - Total Group Processed: 9980
+12:48:42.761 INFO  [pc-pool-1-thread-75] io.ipolyzos.utils.LoggingUtils - [Consumer-0] Records in batch: 5 - Elapsed Time: 2 seconds - Total Consumer Processed: 9985 - Total Group Processed: 9985
+12:48:42.761 INFO  [pc-pool-1-thread-21] io.ipolyzos.utils.LoggingUtils - [Consumer-0] Records in batch: 5 - Elapsed Time: 2 seconds - Total Consumer Processed: 9990 - Total Group Processed: 9990
+12:48:42.765 INFO  [pc-pool-1-thread-13] io.ipolyzos.utils.LoggingUtils - [Consumer-0] Records in batch: 5 - Elapsed Time: 2 seconds - Total Consumer Processed: 9995 - Total Group Processed: 9995
+12:48:42.765 INFO  [pc-pool-1-thread-56] io.ipolyzos.utils.LoggingUtils - [Consumer-0] Records in batch: 5 - Elapsed Time: 2 seconds - Total Consumer Processed: 10000 - Total Group Processed: 10000
+```
 
-makes the consuming and processing time of **10k messages** take as much as **6 seconds**.
+Makes the consuming and processing time of **10k messages** take as much as **2 seconds**.
 
-_Notice on the screenshot how different batches are processed on different threads on the same consumer instance._
+_Notice from the logs how different batches are processed on different threads on the same consumer instance._
 
-and if we use _5 parallel consumer instances_
+and if we use _5 parallel consumer instances_, it takes just a few milliseconds.
+```shell
+12:53:23.800 INFO  [pc-pool-2-thread-85] io.ipolyzos.utils.LoggingUtils - [Consumer-1] Records in batch: 5 - Elapsed Time: 672 milliseconds - Total Consumer Processed: 2031 - Total Group Processed: 10015
+12:53:23.800 INFO  [pc-pool-4-thread-11] io.ipolyzos.utils.LoggingUtils - [Consumer-3] Records in batch: 5 - Elapsed Time: 683 milliseconds - Total Consumer Processed: 1865 - Total Group Processed: 10015
+12:53:23.800 INFO  [pc-pool-5-thread-80] io.ipolyzos.utils.LoggingUtils - [Consumer-5] Records in batch: 5 - Elapsed Time: 670 milliseconds - Total Consumer Processed: 2062 - Total Group Processed: 10020
+12:53:23.801 INFO  [pc-pool-6-thread-6] io.ipolyzos.utils.LoggingUtils - [Consumer-4] Records in batch: 5 - Elapsed Time: 654 milliseconds - Total Consumer Processed: 2018 - Total Group Processed: 10025
+12:53:23.801 INFO  [pc-pool-4-thread-41] io.ipolyzos.utils.LoggingUtils - [Consumer-3] Records in batch: 5 - Elapsed Time: 684 milliseconds - Total Consumer Processed: 1870 - Total Group Processed: 10030
+12:53:23.801 INFO  [pc-pool-3-thread-8] io.ipolyzos.utils.LoggingUtils - [Consumer-2] Records in batch: 5 - Elapsed Time: 672 milliseconds - Total Consumer Processed: 2054 - Total Group Processed: 10035
+12:53:23.801 INFO  [pc-pool-5-thread-89] io.ipolyzos.utils.LoggingUtils - [Consumer-5] Records in batch: 5 - Elapsed Time: 671 milliseconds - Total Consumer Processed: 2067 - Total Group Processed: 10040
+12:53:23.801 INFO  [pc-pool-5-thread-66] io.ipolyzos.utils.LoggingUtils - [Consumer-5] Records in batch: 5 - Elapsed Time: 671 milliseconds - Total Consumer Processed: 2072 - Total Group Processed: 10045
+12:
+```
+So basically we have accomplished getting our processing time from ~ minutes down to milliseconds.
 
-![Alt text](../images/kafka/output3.png "O3")
-we accomplished getting that down to **3 seconds**.
-
-_Notice in the screenshot how different batches are processed on different threads on different consumer instances._
+_Notice in the screenshot how different batches are processed on different threads on different consumer instances.
 
 ### Offsets and How to Handle Them
 > It’s a cycle — the message lifecycle
@@ -390,12 +459,8 @@ One way to achieve this can be adding a **ConsumerRebalanceListener** and when *
 
 ### Wrapping Up
 As takeaways:
-- Think of the requirements and try to tune between throughput and latency
-- Think of the guarantees you need your producers to provide; i.e for exactly once semantics idempotency and/or transactions might be your friends there.
-- One detail not mentioned before but is good to know is that If you want to create multi-threaded apps, its best to create one producer instance and share it among threads
-- We need to take into account the number of partitions each topic has
-- Think of our requirements in terms of processing and try to account for slow consumers.
-- How we can scale both with consumer groups and the parallel consumer pattern?
-- Message ordering, the number of keyspace, and partition guarantees need to be taken into account here and see what approach works the best (or a combination of both).
+- Don't rely on the default configurations; Try to fine-tune between throughput and latency
+- Partitions play an important role in scaling Kafka.
+- The Parallel-Consumer pattern can further help you scale your applications.
 - Consuming a message is different from actually processing it successfully
 - Auto-committing offsets can have a negative impact on your application guarantees
