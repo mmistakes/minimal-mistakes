@@ -1,6 +1,7 @@
 ---
 layout: single
 title: " sys 모듈 stdin.readline() 사용하기 "
+categories: python
 ---
 
 

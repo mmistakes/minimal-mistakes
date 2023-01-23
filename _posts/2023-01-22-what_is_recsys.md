@@ -1,6 +1,7 @@
 ---
 layout: single
 title: " 추천시스템과 방법론 "
+categories: recommender system
 ---   
 ## 추천시스템이란?    
 

@@ -1,3 +1,12 @@
+
+---
+layout: single
+title: "신경망비교- numpy&pytorch"
+categories: pytorch
+tag: pytorch
+---
+
+
 ### 해야할 업무 리스트
 *  랭킹 데이터 개발 환경 및 운영환경 설정
 
