@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: : "첫번 쨰 포스팅 테스트입니다"
 categories: coding
 tag: [c#, blog]
