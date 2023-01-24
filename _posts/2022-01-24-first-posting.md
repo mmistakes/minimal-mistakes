@@ -1,8 +1,9 @@
 ---
-layout: single
+layout: post
 title: : "첫번 쨰 포스팅 테스트입니다"
 categories: coding
 tag: [c#, blog]
+toc: ture
 ---
 
 # **안녕하세요**
@@ -15,3 +16,5 @@ public void HelloWorld()
 ```
 
 # 잘부탁드립니다🙏
+
+맨 위로 이동하기{: .btn .btn--primary }{: .align-right}
