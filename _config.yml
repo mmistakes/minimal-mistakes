@@ -104,11 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "지훈킴"
-  avatar           :  "![Ji](https://user-images.githubusercontent.com/123379016/214223187-0331213c-d7d3-4e5a-a819-32f23dd66522.png)
-
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "지훈킴.zip"
+  avatar           :  "![Ji](https://user-images.githubusercontent.com/123379016/214223187-0331213c-d7d3-4e5a-a819-32f23dd66522.png)"
+  bio              : "개발공부하며 일상을 기록하는 블로그 입니다."
+  location         : "South Korea"
   email            :
   links:
     - label: "Email"
