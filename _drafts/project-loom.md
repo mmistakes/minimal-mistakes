@@ -237,7 +237,138 @@ How do virtual threads work? The figure below shows the relationship between vir
 
 ![Java Virtual Threads Representation](/images/virtual-threads/java-virtual-threads.png)
 
-Basically, the JVM maintains a pool of _platform threads_, created and maintained by a dedicated `ForkJoinPool`. Initially, the number of platform threads is equal to the number of CPU cores. For each created virtual thread, the JVM schedule its execution on a platform thread, temporarily copying the stack chunk for the virtual thread from the heap to the stack of the platform thread. We said that the platform thread becomes the _carrier thread_ of the virtual thread. 
+Basically, the JVM maintains a pool of _platform threads_, created and maintained by a dedicated `ForkJoinPool`. Initially, the number of platform threads is equal to the number of CPU cores, and it cannot increase more than 256. 
+
+For each created virtual thread, the JVM schedules its execution on a platform thread, temporarily copying the stack chunk for the virtual thread from the heap to the stack of the platform thread. We said that the platform thread becomes the _carrier thread_ of the virtual thread. 
 
 The first time the virtual thread blocks on a blocking operation, the carrier thread is released, and the stack chunk of the virtual thread is copied back to the heap. In this way, the carrier thread is available to execute any other eligible virtual threads. Once the blocked virtual thread finish the blocking operation, the scheduler schedules it again for execution. The execution can continue on the same carrier thread, or on a different one.
+
+There a lot of details to consider. Let's start from the scheduler.
+
+### 4.1. The Scheduler
+
+As we said, virtual threads are scheduled on a dedicated `ForkJoinPool`. The default scheduler is defined in the `java.lang.VirtualThread` class:
+
+```java
+// SDK code
+final class VirtualThread extends BaseVirtualThread {
+  private static final ForkJoinPool DEFAULT_SCHEDULER = createDefaultScheduler();
+  
+  // Omissis
+  
+  private static ForkJoinPool createDefaultScheduler() {
+    // Omissis
+    int parallelism, maxPoolSize, minRunnable;
+    String parallelismValue = System.getProperty("jdk.virtualThreadScheduler.parallelism");
+    String maxPoolSizeValue = System.getProperty("jdk.virtualThreadScheduler.maxPoolSize");
+    String minRunnableValue = System.getProperty("jdk.virtualThreadScheduler.minRunnable");
+    // Omissis
+    return new ForkJoinPool(parallelism, factory, handler, asyncMode,
+        0, maxPoolSize, minRunnable, pool -> true, 30, SECONDS);
+  }
+}
+```
+
+As we might imagine, it's possible to configure the pool dedicated to carrier threads using the above system properties. The default pool size (parallelism) is equal to the number of CPU cores, and the maximum pool size is at most 256. The minimum allowed number of core threads not blocked is half the pool size.
+
+In Java, virtual threads implements cooperative scheduling. As we saw for [Kotlin Coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/#6-cooperative-scheduling), it's a virtual thread that decide when to yield the execution to another virtual thread. In detail, the control is passed to the scheduler and the virtual thread is _unmounted_ from the carrier thread when it reaches a blocking operation.
+
+We can empirically verify this behavior playing around with the `sleep` method, and the above system properties. First, let's define a function creating a virtual thread that contains an infinite loop. Let's say we want to model a employee that is working hard on a task:
+
+```java
+static Thread workingHard() {
+  return virtualThread(
+      "Working hard",
+      () -> {
+        logger.info("I'm working hard");
+        while (alwaysTrue()) {
+          // Do nothing
+        }
+        sleep(Duration.ofMillis(100L));
+        logger.info("I'm done with working hard");
+      });
+}
+```
+
+As we can see, the IO operation, the `sleep` method, is after the infinite loop. We defined also an `alwaysTrue()` function, which returns `true`, and it allows us to write an infinite loop without using the `while (true)` construct that is not allowed by the compiler.
+
+Then, we define a function to let our employee take a break:
+
+```java
+static Thread takeABreak() {
+  return virtualThread(
+      "Take a break",
+      () -> {
+        logger.info("I'm going to take a break");
+        sleep(Duration.ofSeconds(1L));
+        logger.info("I'm done with the break");
+      });
+}
+```
+
+Now, we can compose the two function and let the two thread race:
+
+```java
+@SneakyThrows
+static void workingHardRoutine() {
+  final Thread vt1 = workingHard();
+  final Thread vt2 = takeABreak();
+  vt1.join();
+  vt2.join();
+}
+```
+
+Before running the `workingHardRoutine()` function, we set properly the three system properties:
+
+```
+-Djdk.virtualThreadScheduler.parallelism=1
+-Djdk.virtualThreadScheduler.maxPoolSize=1
+-Djdk.virtualThreadScheduler.minRunnable=1
+```
+
+The above settings force the scheduler to use a pool configured with only one carrier thread. Since the `"Working hard"` virtual thread never reaches a blocking operation, it will never yield the execution to the `"Take a break"` virtual thread. In fact, the output is the following:
+
+```
+21:52:29.852 [Working hard] INFO in.rcard.virtual.threads.App - I'm working hard
+```
+
+The `"Working hard"` virtual thread is never unmounted from the carrier thread, and the `"Take a break"` virtual thread is never scheduled.
+
+Let's now change the things a little to let the cooperative scheduling work. We define a new function simulating an employee that is working hard, but it stops working every 100 milliseconds:
+
+```java
+static Thread workingConsciousness() {
+  return virtualThread(
+      "Working consciousness,
+      () -> {
+        logger.info("I'm working hard");
+        while (alwaysTrue()) {
+          sleep(Duration.ofMillis(100L));
+        }
+        logger.info("I'm done with working hard");
+      });
+}
+```
+
+Now, the execution can reach the blocking operation, and the `"Working hard"` virtual thread can be unmounted from the carrier thread. To verify this, we can race the above thread with the `"Take a break"` thread:
+
+```java
+@SneakyThrows
+static void workingConsciousnessRoutine() {
+  final Thread vt1 = workingConsciousness();
+  final Thread vt2 = takeABreak();
+  vt1.join();
+  vt2.join();
+}
+```
+
+This time, we expect the `"Take a break"` virtual thread to be scheduled and executed on the only carrier thread, when the `"Working consciousness"` reaches the blocking operation. The output confirms our expectations:
+
+```
+21:58:34.568 [Working consciousness] INFO in.rcard.virtual.threads.App - I'm working hard
+21:58:34.574 [Take a break] INFO in.rcard.virtual.threads.App - I'm going to take a break
+21:58:35.578 [Take a break] INFO in.rcard.virtual.threads.App - I'm done with the break
+```
+
+Unfortunately, it's not possible to retrieve the name of the carrier thread of a virtual thread, but the above examples show clearly the presence of the cooperative scheduling.
 
