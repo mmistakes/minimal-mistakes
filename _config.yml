@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Despacito"
+title                    : "천천히 꾸준히"
 title_separator          : "|"
-subtitle                 : "천천히 꾸준히"
+subtitle                 : "Despacito"
 name                     : "공부하는 지훈킴"
 description              : "공부&일상 블로그입니다"
 url                      : "https://JiHxxn-zip.github.io"
