@@ -25,7 +25,7 @@ url                      : "https://JiHxxn-zip.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     :"![Ji](https://user-images.githubusercontent.com/123379016/214223187-0331213c-d7d3-4e5a-a819-32f23dd66522.png)"
+#logo                     :""
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "지훈킴.zip"
-  avatar           :  "![Ji](https://user-images.githubusercontent.com/123379016/214223187-0331213c-d7d3-4e5a-a819-32f23dd66522.png)"
+  #avatar           :  ""
   bio              : "개발공부하며 일상을 기록하는 블로그 입니다."
   location         : "South Korea"
   email            :
