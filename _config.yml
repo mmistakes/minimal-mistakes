@@ -86,7 +86,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "https://user-images.githubusercontent.com/123379016/214223187-0331213c-d7d3-4e5a-a819-32f23dd66522.png"
+og_image                 : "https://ichef.bbci.co.uk/news/640/cpsprodpb/E172/production/_126241775_getty_cats.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -110,18 +110,15 @@ author:
   location         : "South Korea"
   email            :
   links:
+
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:kda2443@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://JiHxxn-zip.github.io"
+
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/JiHxxn-zip"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/kda5772/"
+
 
 # Site Footer
 footer:
