@@ -17,4 +17,6 @@ public void HelloWorld()
 
 # 잘부탁드립니다🙏
 
-맨 위로 이동하기{: .btn .btn--primary }{: .align-right}
+
+[맨 위로 이동하기](#){: .btn .btn--primary }{: .align-right}
+[홈](#https://jihxxn-zip.github.io/){: .btn .btn--success}
