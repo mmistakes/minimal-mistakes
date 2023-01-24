@@ -25,7 +25,7 @@ url                      : "https://JiHxxn-zip.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "https://www.google.co.kr/url?sa=i&url=https%3A%2F%2Fwww.hellodd.com%2Fnews%2FarticleView.html%3Fidxno%3D72124&psig=AOvVaw2O4shTAyBUaEQXJCTl-wBJ&ust=1674637137688000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLDV2M_r3_wCFQAAAAAdAAAAABAF"
+logo                     : "https://user-images.githubusercontent.com/123379016/214223187-0331213c-d7d3-4e5a-a819-32f23dd66522.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : ture # true, false (default)
 words_per_minute         : 200
@@ -293,4 +293,3 @@ defaults:
       show_date: true
       
 date_format: "%Y-%m-%d"
-      
