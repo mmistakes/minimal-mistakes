@@ -86,7 +86,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "/assets/images/ji.png" # Open Graph/Twitter default site image
+og_image                 : "https://user-images.githubusercontent.com/123379016/214223187-0331213c-d7d3-4e5a-a819-32f23dd66522.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "지훈킴.zip"
-  avatar           : /assets/images/ji.png
+  avatar           : "https://user-images.githubusercontent.com/123379016/214223187-0331213c-d7d3-4e5a-a819-32f23dd66522.png"
   bio              : "개발공부하며 일상을 기록하는 블로그 입니다."
   location         : "South Korea"
   email            :
