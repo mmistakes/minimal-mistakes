@@ -16,16 +16,16 @@ minimal_mistakes_skin: 'mint' # "air", "aqua", "contrast", "dark", "dirt", "neon
 
 # Site Settings
 locale: 'ko-KR'
-title: "Hong's blog"
+title: "Amy's Devlog"
 title_separator: '|'
-subtitle: 'Going places together'
+subtitle: ''
 name: 'Amy'
 description: 'Welcome to my blog'
 url: 'https://hong-kyungs.github.io'
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: '/assets/images/logo.jpeg'
+logo:
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: true # true, false (default)
 words_per_minute: 200
@@ -103,9 +103,9 @@ analytics:
 
 # Site Author
 author:
-  name: "Amy's Devlog"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: 'Web developer'
+  name: '우당탕탕 개발블로그'
+  avatar: '/assets/images/logo.jpeg' # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: 'Be positive, Be professional, Be reponsible'
   location: 'South Korea'
   email:
   links:
