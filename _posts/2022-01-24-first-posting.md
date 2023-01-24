@@ -1,6 +1,6 @@
 ---
 layout: single
-title: :"첫번 쨰 포스팅 테스트입니다"
+title: : "첫번 쨰 포스팅 테스트입니다"
 categories: coding
 ---
 
@@ -9,6 +9,6 @@ categories: coding
 ```c#
 public void HelloWoald()
 {
-    Debug.log("HelloWoald");
+    Debug.log("Hello Woald!!");
 }
 ```
