@@ -1,5 +1,5 @@
 ---
-title: "Python Fundamentals"
+title: "Software Engineering"
 layout: archive
 permalink: categories/software
 author_profile: true
