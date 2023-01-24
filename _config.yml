@@ -25,9 +25,9 @@ url                      : "https://JiHxxn-zip.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "https://github.com/JiHxxn-zip/Image-zip/issues/1#issue-1554378201"
+logo                     : "![Ji](https://user-images.githubusercontent.com/123379016/214223187-0331213c-d7d3-4e5a-a819-32f23dd66522.png)"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : ture # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -290,3 +290,4 @@ defaults:
       comments: # true
       share: true
       related: true
+      show_date: true
