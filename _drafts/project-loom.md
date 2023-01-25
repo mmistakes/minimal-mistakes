@@ -330,6 +330,7 @@ The above settings force the scheduler to use a pool configured with only one ca
 
 ```
 21:52:29.852 [Working hard] INFO in.rcard.virtual.threads.App - I'm working hard
+--- Running forever ---
 ```
 
 The `"Working hard"` virtual thread is never unmounted from the carrier thread, and the `"Take a break"` virtual thread is never scheduled.
@@ -368,7 +369,25 @@ This time, we expect the `"Take a break"` virtual thread to be scheduled and exe
 21:58:34.568 [Working consciousness] INFO in.rcard.virtual.threads.App - I'm working hard
 21:58:34.574 [Take a break] INFO in.rcard.virtual.threads.App - I'm going to take a break
 21:58:35.578 [Take a break] INFO in.rcard.virtual.threads.App - I'm done with the break
+--- Running forever ---
 ```
 
-Unfortunately, it's not possible to retrieve the name of the carrier thread of a virtual thread, but the above examples show clearly the presence of the cooperative scheduling.
+If we change the carrier pool size to 2, we can see that both the `"Working Hard"` and the `"Take a break"` virtual threads are scheduled on the two carrier threads, and so they can run concurrently. The new setup is the following:
+
+```
+-Djdk.virtualThreadScheduler.parallelism=2
+-Djdk.virtualThreadScheduler.maxPoolSize=2
+-Djdk.virtualThreadScheduler.minRunnable=2
+```
+
+As we might expect, the output is the following:
+
+```
+08:34:10.561 [Working hard] INFO in.rcard.virtual.threads.App - I'm working hard
+08:34:10.561 [Take a break] INFO in.rcard.virtual.threads.App - I'm going to take a break
+08:34:11.566 [Take a break] INFO in.rcard.virtual.threads.App - I'm done with the break
+--- Running forever ---
+```
+
+Unfortunately, it's not possible to retrieve the name of the carrier thread of a virtual thread in the current implementation of Java virtual threads.
 
