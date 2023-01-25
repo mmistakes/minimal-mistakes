@@ -15,7 +15,7 @@ Giannis is a proud alumnus of Rock the JVM, working as a Solutions Architect wit
 
 Apache Kafka is a well-known event streaming platform used in many organizations worldwide.
 It is used as the backbone of many data infrastructures, thus it's important to understand how to use it efficiently.
-The focus of this article is to provide a better understanding of how Kafka works under the hoods to better design and tune your client applications.
+The focus of this article is to provide a better understanding of how Kafka works under the hoods to better design and tune your client applications.  
 
 Since we will discuss - how things work - this article assumes some basic familiarity with Kafka, ie:
 - Understanding Kafka on a high level
