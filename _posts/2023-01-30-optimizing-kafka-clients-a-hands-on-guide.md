@@ -17,7 +17,7 @@ Apache Kafka is a well-known event streaming platform used in many organizations
 It is used as the backbone of many data infrastructures, thus it's important to understand how to use it efficiently.
 The focus of this article is to provide a better understanding of how Kafka works under the hoods to better design and tune your client applications.  
 
-Since we will discuss - how things work - this article assumes some basic familiarity with Kafka, ie:
+Since we will discuss - **how things work** - this article assumes some basic familiarity with Kafka, ie:
 - Understanding Kafka on a high level
 - Experience with the Java Client API for creating Producers and Consumers
 - Some familiarity with Docker will be helpful (but not required)
@@ -35,7 +35,7 @@ The relevant e-commerce datasets can be found [here](https://www.kaggle.com/data
 The code samples are written in Kotlin, but the implementation should be easy to port in any programming language.
 You can find the source code on Github [here](https://github.com/polyzos/kafka-streaming-ledger).
 
-So, let us dive right in.
+**So, let us dive right in.**
 
 ## 1. Environment Setup
 First we want to have a Kafka Cluster up and running.
