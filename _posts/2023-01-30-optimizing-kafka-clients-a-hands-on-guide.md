@@ -5,6 +5,7 @@ header:
   image: "/images/blog cover.jpg"
 tags: [kotlin, kafka, streaming]
 excerpt: ""
+attribution: <a href="https://www.vecteezy.com/free-vector/squirrel-cartoon">Squirrel Cartoon Vectors by Vecteezy</a>
 ---
 
 _This article is brought to you by [Giannis Polyzos](https://github.com/polyzos). 
