@@ -80,7 +80,7 @@ toc: true
 {% include figure image_path="/assets/images/KSUU/Block_02.jpg" alt="mpto" caption="Westchester County Airport - White Plains, NY for MSFS" %}
 
 # Como conseguirlos/How to find
-<img src="/assets/images/marketplace.png" alt="Trulli" width="100%" height="333">
+<img src="/assets/images/marketplace2.png" alt="Trulli" width="100%" height="333">
 <br>
 <br>
 
