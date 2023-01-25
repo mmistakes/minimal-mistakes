@@ -14,11 +14,13 @@ Giannis is a proud alumnus of Rock the JVM, working as a Solutions Architect wit
 **_Enter Giannis:_**
 
 Apache Kafka is a well-known event streaming platform used in many organizations worldwide.
-As Kafka is used as the backbone of many data infrastructures, using it efficiently is important and thus the focus here is to provide a better understanding of how it works under the hood to better design and tune your applications.
+It is used as the backbone of many data infrastructures, thus it's important to understand how to use it efficiently.
+The focus of this article is to provide a better understanding of how Kafka works under the hoods to better design and tune your client applications.
 Since we will discuss - how things work - this article assumes some basic familiarity with Kafka, ie:
 - Understanding Kafka on a high level
 - Experience with the Java Client API for creating Producers and Consumers
 - Some familiarity with Docker will be helpful (but not required)
+
 
 ![Alt text](../images/kafka/ppc.png "Message Lifecycle: PPC (Produce, Persist, Consume)")
 
