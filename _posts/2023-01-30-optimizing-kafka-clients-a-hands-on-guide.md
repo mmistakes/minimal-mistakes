@@ -1,5 +1,5 @@
 ---
-title: "Kafka Client Internals"
+title: "Optimizing Kafka Clients: A Hands-On Guide"
 date: 2023-01-22
 header:
   image: "/images/blog cover.jpg"
@@ -8,22 +8,26 @@ excerpt: ""
 ---
 
 _This article is brought to you by [Giannis Polyzos](https://github.com/polyzos). 
-Giannis is a proud alumnus of Rock the JVM, working as a Solutions Architect with a focus on Event Streaming and Computing Systems.
+Giannis is a proud alumnus of Rock the JVM, working as a Solutions Architect with a focus on Event Streaming and Stream Processing Systems.
 
 **_Enter Giannis:_**
 
-Apache Kafka is a well-known event streaming platform. 
-This article requires some basic familiarity with Kafka — creating producers and consumers — and will focus on providing a better understanding of how Kafka works under the hood to better design and tune your applications.
+Apache Kafka is a well-known event streaming platform used in many organizations worldwide.
+As Kafka is used as the backbone of many data infrastructures, using it efficiently is important and thus the focus here is to provide a better understanding of how it works under the hood to better design and tune your applications.
+Since we will discuss - how things work - this article assumes some basic familiarity with Kafka, ie:
+- Understanding Kafka on a high level
+- Experience with the Java Client API for creating Producers and Consumers
+- Some familiarity with Docker will be helpful (but not required)
 
 ![Alt text](../images/kafka/ppc.png "Message Lifecycle: PPC (Produce, Persist, Consume)")
 
-Using a simple file ingestion data pipeline, this article aims to cover the following:
+We will use a file ingestion data pipeline for cliskstream data as an example to cover the following:
 1. Ingest click stream data from the filesystem into Kafka
 2. Explain how Kafka producers works, configurations and tuning for throughput / latency 
 3. How Kafka consumers work, configurations and scaling the consuming side 
 4. Caveats with consumer offsets and different approaches for handling them
 
-We will use e-commerce datasets which you can find [here](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store). 
+The relevant e-commerce datasets can be found [here](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store). 
 The code samples are written in Kotlin, but the implementation should be easy to port in any programming language.
 You can find the source code on Github [here](https://github.com/polyzos/kafka-streaming-ledger).
 
