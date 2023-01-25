@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "천천히 꾸준히 : Despacito 🍟"
+title                    : "천천히 꾸준히 : Despacito :)"
 title_separator          : "|"
 subtitle                 : #"Despacito"
 name                     : "공부하는 지훈킴"
@@ -106,8 +106,8 @@ analytics:
 author:
   name             : "지훈킴.zip"
   avatar           : "https://user-images.githubusercontent.com/123379016/214223187-0331213c-d7d3-4e5a-a819-32f23dd66522.png"
-  bio              : "개발공부하며 일상을 기록하는 블로그 입니다."
-  location         : "South Korea"
+  bio              : "지훈 개발 일지"
+  location         : # "South Korea"
   email            :
   links:
 
@@ -266,7 +266,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
       show_date: true
