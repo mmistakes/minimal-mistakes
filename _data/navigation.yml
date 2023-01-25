@@ -5,12 +5,7 @@ main:
   - title: "Tag"
     url: /tags/
 
-  docs:
-  - title: Unity
-    children:
-      - title: "C#"
-        url: C#/
-        category: "C#"
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
