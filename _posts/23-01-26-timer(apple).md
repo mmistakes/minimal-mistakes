@@ -1,11 +1,11 @@
 ---
 layout: single
-title: setTimeout
+title: "setTimeout"
 categories : code
-tag: [codingApple]
+tag: [codingApple, JS, code, Method]
 ---
 
-# SetTimeOut 타이머 기능 + @ 
+# SetTimeOut 타이머 기능 + @ setInterval 
 
 
 
@@ -34,4 +34,8 @@ setTimeout(함수, 5000);
 //+@ addEventListener같은 경우도 
 //콜백자리에 동일하게 집어넣으면됨
 ```
+
+
+
+
 
