@@ -490,3 +490,51 @@ An execution with the new configuration produces the following output:
 ```
 
 The JVM added a new carrier thread to the pool when it found that no carrier thread was available, and so the `daniel` virtual thread is scheduled on the new carrier thread, executing concurrently and interleaving the two logs.
+
+Even though in the near future also `synchronized` blocks will probably unmount a virtual thread from its carrier thread, it is better to migrate those block to the new `Lock` API, using `java.util.concurrent.locks.ReentrantLock`. Such locks don't pin the virtual thread and so they make the cooperative scheduling working again.
+
+Let's create a version of our `Bathroom` class using the `Lock` API:
+
+```java
+static class Bathroom {
+  private final Lock lock = new ReentrantLock();
+  
+  @SneakyThrows
+  void useTheToiletWithLock() {
+    if (lock.tryLock(10, TimeUnit.SECONDS)) {
+      try {
+        logger.info("I'm going to use the toilet");
+        sleep(Duration.ofSeconds(1L));
+        logger.info("I'm done with the toilet");
+      } finally {
+        lock.unlock();
+      }
+    }
+  }
+}
+```
+
+Now, let's change the previous functions to use this new version of the `Bathroom` class:
+
+```java
+static Thread goToTheToiletWithLock() {
+  return virtualThread("Go to the toilet", () -> bathroom.useTheToiletWithLock());
+}
+
+@SneakyThrows
+static void twoEmployeesInTheOfficeWithLock() {
+  var riccardo = goToTheToiletWithLock();
+  var daniel = takeABreak();
+  riccardo.join();
+  daniel.join();
+}
+```
+
+The execution of the `twoEmployeesInTheOfficeWithLock` produces the expected output, which shows the two thread running concurrently:
+
+```
+13:55:24.445 [Go to the toilet] INFO in.rcard.virtual.threads.App - I'm going to use the toilet
+13:55:24.451 [Take a break] INFO in.rcard.virtual.threads.App - I'm going to take a break
+13:55:25.452 [Go to the toilet] INFO in.rcard.virtual.threads.App - I'm done with the toilet
+13:55:25.452 [Take a break] INFO in.rcard.virtual.threads.App - I'm done with the break
+```
