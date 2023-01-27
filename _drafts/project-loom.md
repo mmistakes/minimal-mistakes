@@ -453,6 +453,25 @@ To see the effect of the synchronization, and the pinning of the `riccardo` virt
 
 As we can see, the task are completely linearized by the JVM. As we said, the blocking `sleep` operation is inside the `synchronized` `useTheToilet` method, and so the virtual thread is not unmounted. So, the `riccardo` virtual thread is pinned to the carrier thread, and the `daniel` virtual thread finds no available carrier thread to execute. In fact, it is scheduled only when the `riccardo` virtual thread is done with the bathroom.
 
+It's possible to trace these situations during the execution of a program adding a useful property to the run configuration:
+
+```
+-Djdk.tracePinnedThreads=full/short
+```
+
+The `full` value prints the full stack trace of the pinned virtual thread, while the `short` value prints only less information. The execution of the `twoEmployeesInTheOffice` with the above configuration set to the `short`  value produces the following interesting output:
+
+```
+11:57:29.982 [Go to the toilet] INFO in.rcard.virtual.threads.App - I'm going to use the toilet
+Thread[#22,ForkJoinPool-1-worker-1,5,CarrierThreads]
+    virtual.threads.playground/in.rcard.virtual.threads.App$Bathroom.useTheToilet(App.java:171) <== monitors:1
+11:57:30.989 [Go to the toilet] INFO in.rcard.virtual.threads.App - I'm done with the toilet
+11:57:30.990 [Take a break] INFO in.rcard.virtual.threads.App - I'm going to take a break
+11:57:31.996 [Take a break] INFO in.rcard.virtual.threads.App - I'm done with the break
+```
+
+As we guessed, the `riccardo` virtual thread was in fact pinned to its carrier thread. Despite what we previously said, we can also see the name of the carrier thread here. Amazing.
+
 We can change the configuration of the carrier pool to allow the JVM adding a new carrier thread to the pool when needed:
 
 ```
