@@ -29,6 +29,16 @@ We'll use Slf4j to log something on the console. So, all the code snippets in th
 static final Logger logger = LoggerFactory.getLogger(App.class);
 ```
 
+However, we won't use the `logger` object directly in our example but the following custom function `log`:
+
+```java
+static void log(String message) {
+  logger.info("{} | " + message, Thread.currentThread());
+}
+```
+
+In fact, the above function allow us to print some useful information concerning virtual threads that will be very handy to understand what's going on.
+
 Moreover, we'll use also Lombok, to reduce the boilerplate code when dealing with checked exceptions. So, we'll use the `@SneakyThrows`, that let us treating checked exceptions as unchecked ones (don't use it in production!). For example, we'll wrap the `Thread.sleep` method, that throws a checked `InterruptedException`, with the `@SneakyThrows` annotation:
 
 ```java
@@ -247,7 +257,7 @@ There a lot of details to consider. Let's start from the scheduler.
 
 ## 5. The Scheduler and Cooperative Scheduling
 
-As we said, virtual threads are scheduled on a dedicated `ForkJoinPool`. The default scheduler is defined in the `java.lang.VirtualThread` class:
+As we said, virtual threads are scheduled using a FIFO queue consumed by a dedicated `ForkJoinPool`. The default scheduler is defined in the `java.lang.VirtualThread` class:
 
 ```java
 // SDK code
