@@ -20,7 +20,7 @@ title                    : "삽질노트"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Minhyeok Kwon"
-description              : "주입식 교육 내꺼만들기 프로젝트"
+description              : "학습 내용 정리 블로그"
 url                      : "https://Danny-Kwon.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "권민혁"
   avatar           : "/assets/profile.png"
-  bio              : "밥먹고 살고싶은 한 개발자 꿈나무의 몸부림"
+  bio              : "가천대학교 컴퓨터공학과 4학년"
   location         : "Republic of Korea"
   email            :
   links:
