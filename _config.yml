@@ -27,7 +27,7 @@ repository               : Sanweizhen/portfolio-zhen# GitHub username/repo-name 
 teaser                   : /assets/imgaes/所以黑暗暂把他们隐藏 2.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : /assets/images/未标题-1.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+#breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Zhen Yin"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  location         : "London,UK"
+  email            : qinger324@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -290,3 +290,4 @@ defaults:
       comments:  true
       share: true
       related: true
+      show_date: true
