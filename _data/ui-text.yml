@@ -11,7 +11,7 @@ en: &DEFAULT_EN
   pagination_previous        : "Previous"
   pagination_next            : "Next"
   breadcrumb_home_label      : "Home"
-  breadcrumb_separator       : "/"
+  breadcrumb_separator       : ">"
   menu_label                 : "Toggle menu"
   search_label               : "Toggle search"
   toc_label                  : "On this page"
@@ -373,8 +373,8 @@ it: &DEFAULT_IT
 it-IT:
   <<: *DEFAULT_IT
 
-# Chinese  (zh-CN Chinese - China)
-# --------------------------------
+ Chinese  (zh-CN Chinese - China)
+--------------------------------
 zh: &DEFAULT_ZH_HANS
   skip_links                 : "跳转链接"
   skip_primary_nav           : "转到主导航栏"
