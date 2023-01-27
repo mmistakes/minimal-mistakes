@@ -108,11 +108,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
   location         : "London,UK"
-  email            : qinger324@gmail.com
+  #email            : qinger324@gmail.com
   links:
-    - label: "Email"
+    - label: "qinger324@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
-      url: qinger324@gmail.com
+      #url: 
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -127,7 +127,7 @@ author:
       # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: https://www.instagram.com/z.yinqinger/
 
 # Site Footer
 footer:
