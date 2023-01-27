@@ -337,14 +337,4 @@ defaults:
       author_profile: false
       share: true
       
-      collections:
-  my_collection:
-    output: true
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "my_collection" # a collection in your site, in plural form
-    values:
-      layout: "default"
+   
