@@ -1,6 +1,6 @@
 ---
 layout: single
-title: " JS스터디2일차 "
+title: " 함수 "
 categories: concept
 tag: [concept]
 ---
