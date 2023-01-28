@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "About"
-    url: /year-archive/
+    url: /about/
   - title: "Design"
     url: /categories/
   - title: "Writing"
