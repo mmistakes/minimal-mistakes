@@ -278,7 +278,7 @@ compress_html:
     
 # Collections
 collections:
-  docs:
+  design:
     output: true
     permalink: /:collection/:path/
   recipes:
