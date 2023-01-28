@@ -281,13 +281,13 @@ collections:
   design:
     output: true
     permalink: /:collection/:path/
-  recipes:
+  writing:
     output: true
     permalink: /:collection/:path/
-  pets:
+  illustration:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  others:
     output: true
     permalink: /:collection/:path/
 
@@ -327,28 +327,28 @@ defaults:
       comments: false
       sidebar:
         nav: "docs"
-  # _recipes
+  # _design
   - scope:
       path: ""
-      type: recipes
+      type: design
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
-  # _pets
+  # _writing
   - scope:
       path: ""
-      type: pets
+      type: writing
     values:
       layout: single
       author_profile: true
       share: true
       comment: true
-  # _portfolio
+  # _illustration
   - scope:
       path: ""
-      type: portfolio
+      type: illustration
     values:
       layout: single
       author_profile: false
