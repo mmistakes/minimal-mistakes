@@ -1,7 +1,7 @@
 ---
 title: Design
 layout: collection
-permalink: /Design/
+permalink: /design/
 collection: design
 entries_layout: grid
 classes: wide
