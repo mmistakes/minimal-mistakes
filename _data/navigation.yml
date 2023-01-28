@@ -3,13 +3,12 @@ main:
   - title: "About"
     url: /about/
   - title: "Design"
-    url: /collection-archive/
+    url: /design/
   - title: "Writing"
     url: /writing/
   - title: "Illustration"
     url: /illustration/
   - title: "Others"
     url: /others/
-  - title: "Portfolio"
-    url: /portfolio/
+
 
