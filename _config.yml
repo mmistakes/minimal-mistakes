@@ -279,7 +279,7 @@ compress_html:
 # Collections
 collections:
   design:
-    output: true
+    output: false
     permalink: /:collection/:path/
   writing:
     output: true
