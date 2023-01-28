@@ -279,7 +279,7 @@ compress_html:
 # Collections
 collections:
   design:
-    output: false
+    output: true
     permalink: /:collection/:path/
   writing:
     output: true
@@ -333,7 +333,7 @@ defaults:
         nav: "docs"
   # _design
   - scope:
-      path: "_design"
+      path: ""
       type: design
     values:
       layout: single
