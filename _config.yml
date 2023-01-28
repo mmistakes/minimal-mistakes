@@ -338,8 +338,8 @@ defaults:
       layout: single
       author_profile: false
       share: true
-      #_collections
-      collections:
+     
+ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
