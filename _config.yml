@@ -338,9 +338,5 @@ defaults:
       layout: single
       author_profile: false
       share: true
-     
- collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
+
    
