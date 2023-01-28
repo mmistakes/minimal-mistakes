@@ -283,7 +283,7 @@ collections:
     permalink: /my-design/:name
   writing:
     output: true
-    permalink: /:collection/:path/
+    permalink: /my-writing/:name
   illustration:
     output: true
     permalink: /:collection/:path/
