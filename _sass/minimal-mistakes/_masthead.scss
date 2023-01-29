@@ -4,7 +4,7 @@
 
 .masthead {
   position: fixed;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 0px solid $border-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
@@ -89,5 +89,6 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+    font-size: 0.7em;
   }
 }
