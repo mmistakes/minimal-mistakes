@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dirt" #"default" "air", "aqua", "contrast", "dark", 
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "noir1458"
+title                    : "Blog"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "noir1458"
@@ -25,7 +25,7 @@ url                      : "https://noir1458.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "noir1458/noir1458.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/images/pf.jpeg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "noir1458"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/pf.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "noir1458's blog"
   location         : "South Korea"
   email            : "noir1458@gmail.com"
@@ -128,6 +128,9 @@ author:
     #- #label: "Instagram"
       #icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "Youtube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://github.com/noir1458"
 
 # Site Footer
 footer:
@@ -138,9 +141,9 @@ footer:
     #- label: "Facebook"
     #  icon: "fab fa-fw fa-facebook-square"
       # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/noir1458"
+    #- label: "GitHub"
+    #  icon: "fab fa-fw fa-github"
+    #  url: "https://github.com/noir1458"
     #- label: "GitLab"
     #  icon: "fab fa-fw fa-gitlab"
       # url:
