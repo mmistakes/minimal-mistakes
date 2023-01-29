@@ -2,7 +2,6 @@
 layout: single
 title: Testing MathJax
 tags: mathjax
-toc : true
 ---
 ## 1
 Not Pure Poole supports [MathJax](https://www.mathjax.org/). You can enable it on a page by setting `math: true` in the front matter.
