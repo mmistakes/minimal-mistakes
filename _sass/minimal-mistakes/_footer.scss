@@ -9,7 +9,7 @@
   margin-right: 0;
   width: 100%;
   margin-top: 3em;
-  color: $muted-text-color;
+  color: #177ebb;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.45s;
@@ -49,6 +49,7 @@
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
+  color: #177ebb;
 }
 
 .page__footer-follow {
@@ -63,8 +64,9 @@
     padding-top: 5px;
     padding-bottom: 5px;
     font-family: $sans-serif-narrow;
-    font-size: $type-size-6;
+    font-size: 0.7;
     text-transform: uppercase;
+    color: #177ebb;
   }
 
   li + li:before {
