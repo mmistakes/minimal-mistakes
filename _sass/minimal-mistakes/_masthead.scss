@@ -27,7 +27,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    font-family: $menufont;
+    font-family: $sans-serif;
 
     @include breakpoint($x-large) {
       max-width: $max-width;
@@ -91,7 +91,7 @@
   margin-right: 0;
   width: 100%;
   clear: both;
-  font-family: $menufont;
+  font-family: $sans-serif;
 
   .site-nav {
     margin-left: 0;
