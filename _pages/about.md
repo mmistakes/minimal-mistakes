@@ -1,12 +1,13 @@
 ---
-title: "Hi all! I'm choiiis👋🏻"
+title: "Hi! I'm Zhen👋🏻"
 permalink: /about/
 layout: single
 comments: false
+classes: wide
 ---
 
 <div>
-    <img src="/assets/images/avatar.png" alt="about_meee" width="70%" min-width="700px" itemprop="image">
+    <img src="/assets/images/avatar.png" alt="about_meee" width="70%" min-width="350px" itemprop="image">
 </div>
 
 
