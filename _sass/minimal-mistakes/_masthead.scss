@@ -7,7 +7,7 @@
   top: 0;
   width: 100%;
   background-color: rgba($background-color, 0.9);
-  border-bottom: 0px solid $border-color;
+  border-bottom: 1px solid $border-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
@@ -27,7 +27,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    font-family: $sans-serif;
+    font-family: $menufont;
 
     @include breakpoint($x-large) {
       max-width: $max-width;
@@ -91,7 +91,7 @@
   margin-right: 0;
   width: 100%;
   clear: both;
-  font-family: $sans-serif;
+  font-family: $menufont;
 
   .site-nav {
     margin-left: 0;
