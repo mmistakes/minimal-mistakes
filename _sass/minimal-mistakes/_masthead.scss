@@ -3,9 +3,9 @@
    ========================================================================== */
 
 .masthead {
-  position: relative;
+  position: fixed;
   width: 100%;
-  background-color: rgba($background-color, 0.9);
+  background-color: rgba($background-color, 1);
   border-bottom: 0px solid $border-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
@@ -74,7 +74,7 @@
   -ms-flex-item-align: center;
   align-self: center;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .site-subtitle {
