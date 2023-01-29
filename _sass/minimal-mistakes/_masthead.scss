@@ -41,8 +41,29 @@
     }
   }
 }
+.site-logo img {
+  max-height: 2.2rem;
+  /* 2022.01.23 rotate */
+  animation: rotate_image 1s linear infinite;
+  transform-origin: 50% 50%;
+}
 
-	
+@keyframes rotate_image{
+	25% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+  	transform: rotate(-5deg);
+  }
+
+  100% {
+  	transform: rotate(0deg);
+  }
 
 }
 
