@@ -2,7 +2,7 @@
 layout: single
 title: " 코테(mission2) "
 categories: algorithm 
-tag: [algorithm, code, method]
+tag: [algorithm, codeReview , Method]
 ---
 # day1 - code test
 

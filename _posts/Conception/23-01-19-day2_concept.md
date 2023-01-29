@@ -1,8 +1,8 @@
 ---
 layout: single
 title: " 함수 "
-categories: concept
-tag: [concept]
+categories: Conception
+tag: [Concept, JS, Sail99]
 ---
 # # 2023-01-18 javascript 스터디 2일차 - 개념정리
 

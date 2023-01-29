@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "230125_Manger"
-categories : concept
-tag: ExecutionContext
+title: "훈화말씀1"
+categories : etc
+tag: [Concept, JS, Sail99]
 ---
 
 ㅇㅇ
