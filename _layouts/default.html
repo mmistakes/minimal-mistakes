@@ -3,55 +3,95 @@
 
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
   Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
+    <style> 
+      ::-webkit-scrollbar{ 
+        width: 10px;
+        height: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        width: 0px;
+        background-color: rgba(224, 224, 224, 0.2);
+        /* border-radius: 5px; */
+      }
+
+      ::-webkit-scrollbar-thumb {
+        width: 0px;
+        background-color: rgba(220, 219, 218, 0.6);
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        width: 10px;
+        height: 20px;
+        /* background-color: rgba(190, 190, 190, 0.2); */
+        background-color: rgba(193, 192, 191, 0.7);
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-track:hover {
+        width: 10px;
+        /* background-color: rgba(150, 150, 150, 0.1); */
+        background-color: rgba(224, 224, 224, 0.5);
+        border-radius: 5px;
+        /* background: transparent; */
+        /* border-radius: 10px; */
+      }
+
+      ::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {
+          width:0px;
+          height: 0px;
+          /* background-color: rgb(14, 221, 24); */
+          /* border-radius: 50%; */
+      }
+    </style>
+    
     {% include head.html %}
     {% include head/custom.html %}
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="https://choiiis.github.io/assets/images/favicon/favicon.ico"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://choiiis.github.io/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://choiiis.github.io/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://choiiis.github.io/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://choiiis.github.io/assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://choiiis.github.io/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="google-site-verification" content="LKDXdTbkqfYcDLaxd7-n3VyPtaYjoDXQ6axWfVew_VQ" />
+    <meta name="naver-site-verification" content="adf9ff31fdd5483be60c146ecf49f0bb5ffc89e7" />
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
     {% include_cached skip-links.html %}
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+    {% include_cached browser-upgrade.html %}
+    {% include_cached masthead.html %}
 
     <div class="initial-content">
       {{ content }}
-      <div align="center" style="margin: 1em 0;">
-        <ins class="adsbygoogle"
-             style="display:block; border-bottom: initial;"
-             data-ad-client="ca-pub-7328585512091257"
-             data-ad-slot="3049671934"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-      </div>
     </div>
 
     {% if site.search == true %}
       <div class="search-content">
-        {% include search/search_form.html %}
+        {% include_cached search/search_form.html %}
       </div>
     {% endif %}
 
-    <div class="page__footer">
+    <div id="footer" class="page__footer">
       <footer>
         {% include footer/custom.html %}
-        {% include footer.html %}
+        {% include_cached footer.html %}
       </footer>
     </div>
 
     {% include scripts.html %}
-    <style>
-      .google-auto-placed {
-        margin: 2em auto;
-      }
-    </style>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
   </body>
 </html>
