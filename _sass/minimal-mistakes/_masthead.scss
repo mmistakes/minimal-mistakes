@@ -3,16 +3,15 @@
    ========================================================================== */
 
 .masthead {
-  position: fixed;
-  top: 0;
+  position: relative;
   width: 100%;
   background-color: rgba($background-color, 0.9);
-  border-bottom: 1px solid $border-color;
+  border-bottom: 0px solid $border-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
-  z-index: 999;
+  z-index: 20;
 
 
   &__inner-wrap {
