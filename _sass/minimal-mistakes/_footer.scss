@@ -9,12 +9,12 @@
   margin-right: 0;
   width: 100%;
   margin-top: 3em;
-  color: #177ebb;
+  color: $muted-text-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
-  background-color: #cdd3d6;
+  background-color: $footer-background-color;
 
   footer {
     @include clearfix;
@@ -49,7 +49,6 @@
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
-  color: #177ebb;
 }
 
 .page__footer-follow {
@@ -64,9 +63,8 @@
     padding-top: 5px;
     padding-bottom: 5px;
     font-family: $sans-serif-narrow;
-    font-size: 0.7;
+    font-size: $type-size-6;
     text-transform: uppercase;
-    color: #177ebb;
   }
 
   li + li:before {
@@ -78,10 +76,10 @@
     padding-right: 10px;
     font-weight: bold;
   }
-   .social-icons {
+
+  .social-icons {
     a {
       white-space: nowrap;
     }
   }
-  
 }
