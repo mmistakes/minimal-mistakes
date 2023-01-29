@@ -107,7 +107,7 @@ author:
   name             : "Zhen Yin"
   avatar           : /assets/images/avatar.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   #bio              : "I am an **amazing** person."
-  location         : "London,UK"
+  location         : #"London,UK"
   #email            : qinger324@gmail.com
   links:
     - label: "Email"
