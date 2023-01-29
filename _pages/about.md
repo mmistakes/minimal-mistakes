@@ -1,7 +1,7 @@
 ---
 title: "Hi! I'm Zhen👋🏻"
 permalink: /about/
-layout: single
+layout: pages
 comments: false
 classes: wide
 ---
