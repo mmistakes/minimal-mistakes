@@ -20,7 +20,7 @@ title                    : "KalelPark's LAB"
 title_separator          : "-"
 subtitle                 : "ComputerVision Engineer"
 name                     : "KalelPark"
-description              : "Only in the darkness can you see the stars."
+description              : "Just do it"
 url                      : "https://kalelpark.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "KalelPark"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Only in the darkness can you see the stars."
+  bio              : "Just do it"
   location         : "South Korea"
   email            :
   links:
