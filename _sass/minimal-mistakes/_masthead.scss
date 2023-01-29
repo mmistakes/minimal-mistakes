@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .masthead {
-  position: fiexed;
+  position: fixed;
   width: 100%;
   background-color: rgba($background-color, 0.9);
   border-bottom: 0px solid $border-color;
@@ -75,8 +75,7 @@
   -ms-flex-item-align: center;
   align-self: center;
   font-weight: bold;
-  font-size: 1.4rem;
-  font-style: italic;
+  font-size: 0.7em;
 }
 
 .site-subtitle {
