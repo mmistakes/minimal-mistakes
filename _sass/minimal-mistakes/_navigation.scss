@@ -25,7 +25,7 @@
   ol {
     padding: 0;
     list-style: none;
-    font-size: $type-size-6;
+    font-size: $type-size-8;
 
     @include breakpoint($large) {
       float: right;
