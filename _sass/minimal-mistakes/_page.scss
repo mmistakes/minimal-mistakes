@@ -570,20 +570,28 @@ body {
   .page {
     @include breakpoint($large) {
       padding-right: 0;
+      /* 2023.01.30 gap between sidebar and page */
+    padding-left: 3em;
     }
 
     @include breakpoint($x-large) {
       padding-right: 0;
+      /* 2023.01.30 gap between sidebar and page */
+    padding-left: 3em;
     }
   }
 
   .page__related {
     @include breakpoint($large) {
       padding-right: 0;
+      /* 2023.01.30 gap between sidebar and page */
+    padding-left: 3em;
     }
 
     @include breakpoint($x-large) {
       padding-right: 0;
+      /* 2023.01.30 gap between sidebar and page */
+    padding-left: 3em;
     }
   }
 }
