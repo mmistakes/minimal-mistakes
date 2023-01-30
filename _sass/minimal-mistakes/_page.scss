@@ -40,11 +40,15 @@ body {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
+     /*2023.01.30*/
+    padding-left: 1em;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
+    /*2023.01.30*/
+    padding-left: 1em;
   }
 
   .page__inner-wrap {
@@ -142,6 +146,8 @@ body {
   :not(pre) > code {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
+    /*2023.01.30*/
+    padding-left: 1em;
     font-size: 0.8em;
     background: $code-background-color;
     border-radius: $border-radius;
