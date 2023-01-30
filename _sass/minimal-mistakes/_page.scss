@@ -1,4 +1,4 @@
-、/* ==========================================================================
+/* ==========================================================================
    SINGLE PAGE/POST
    ========================================================================== */
 
@@ -40,16 +40,11 @@ body {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
-    /* 2023.01.30 gap between sidebar and page */
-    padding-left: 3em;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
-    /* 2023.01.30 gap between sidebar and page */
-    padding-left: 3em;
-    
   }
 
   .page__inner-wrap {
@@ -75,8 +70,7 @@ body {
 
 .page__title {
   margin-top: 0;
-  line-height: 1.5;
-  font-size: $type-size-3;
+  line-height: 1;
 
   a {
     color: $text-color;
@@ -85,7 +79,6 @@ body {
 
   & + .page__meta {
     margin-top: -0.5em;
-    font-size: $type-size-6;
   }
 }
 
@@ -120,7 +113,7 @@ body {
   p,
   li,
   dl {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   /* paragraph indents */
@@ -180,10 +173,6 @@ body {
   blockquote + .small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
-  }
-  img {
-    margin-top: 1em;
-    margin-bottom: 1em;
   }
 }
 
@@ -570,33 +559,20 @@ body {
   .page {
     @include breakpoint($large) {
       padding-right: 0;
-      /* 2023.01.30 gap between sidebar and page */
-    padding-left: 3em;
     }
 
     @include breakpoint($x-large) {
       padding-right: 0;
-      /* 2023.01.30 gap between sidebar and page */
-    padding-left: 3em;
     }
   }
 
   .page__related {
     @include breakpoint($large) {
       padding-right: 0;
-      /* 2023.01.30 gap between sidebar and page */
-    padding-left: 3em;
     }
 
     @include breakpoint($x-large) {
       padding-right: 0;
-      /* 2023.01.30 gap between sidebar and page */
-    padding-left: 3em;
     }
   }
-}
-/* 2022.01.20 add .wide#main for lifelog page */
-#main.wide {
-  padding-left: 7em;
-  padding-right: 7em;
 }
