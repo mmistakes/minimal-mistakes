@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -20,7 +20,7 @@ title                    : "애근파파 블로그"
 title_separator          : "|"
 subtitle                 : "All log"
 name                     : "Keun"
-description              : "애근파파의 블로그 입니다."
+description              : "모든 것을 자유롭게 기록하는 공간"
 url                      : "https://HKYoo95.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -75,7 +75,7 @@ google:
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-naver_site_verification  :
+naver_site_verification  : "a78cbc6e83757983e684dcba9682305101bd4777"
 yandex_site_verification :
 baidu_site_verification  :
 
@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Keun"
+  name             : "KeunLog."
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "애근파파의 블로그 입니다."
+  bio              : "모든 것을 자유롭게 기록하는 공간"
   location         : "South Korea"
   email            :
   links:
@@ -291,5 +291,10 @@ defaults:
       share: true
       related: true
       show_date: true
+      sidebar_main: true
+      toc: true
+      toc_sticky: true
+      toc_label: Contents
+      toc_icon: "fas fa-angle-down"
 
 date_format: "%Y-%m-%d"
