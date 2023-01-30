@@ -4,7 +4,7 @@ date: 2023-01-22
 header:
   image: "/images/blog cover.jpg"
 tags: [kotlin, kafka, streaming]
-excerpt: ""
+excerpt: "Tips on how to make Kafka clients run blazing fast, with code examples."
 attribution: <a href="https://www.vecteezy.com/free-vector/squirrel-cartoon">Squirrel Cartoon Vectors by Vecteezy</a>
 ---
 
