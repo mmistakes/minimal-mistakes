@@ -61,7 +61,7 @@ From various possible reasons, I first thought there might be a problem in the p
 And what I did is that I started tracking the amount of weekly active user per device type to see if the platform for any specific device type is causing trouble.
 
 ### SQL Code
-```SQL
+```sql
 WITH weekly_data AS (
 SELECT DATE_TRUNC('week', e.occurred_at) AS week
      , COUNT(DISTINCT e.user_id) AS weekly_active_users
