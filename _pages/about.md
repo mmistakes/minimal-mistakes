@@ -1,7 +1,7 @@
 ---
 title: "Hi ! I'm Zhen👋🏻"
 permalink: /about/
-layout: post
+layout: splash
 comments: false
 ---
 
