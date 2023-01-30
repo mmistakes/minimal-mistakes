@@ -307,7 +307,7 @@ defaults:
       share: true
       related: true
       show_date: true
-      classes: wide 
+      
     # _pages
   - scope:
       path: "_pages"
@@ -315,7 +315,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      classes: wide
+     
   # _docs
   - scope:
       path: ""
