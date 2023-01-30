@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "SQL로 타이타닉 생존자 예측하기"
+title:  "[SQL]SQL로 타이타닉 생존자 예측하기"
 categories: SQL
-tag: [머신러닝, SQL, PL/SQL]
+tag: [SQL, PL/SQL, 머신러닝]
 toc: true
 author_profile: false
 sidebar: true

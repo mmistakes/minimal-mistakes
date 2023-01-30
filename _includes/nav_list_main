@@ -12,7 +12,7 @@
       </li>
       <li>
         <!--span 태그로 카테고리들을 크게 분류 -->
-        <span class="nav__sub-title">SQL, PL/SQL</span>
+        <span class="nav__sub-title">DataBase</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
                 <!--SQL 카테고리 글들을 모아둔 페이지인 /categories/SQL 주소의 글로 링크 연결-->
@@ -23,18 +23,11 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Python</span>
+        <span class="nav__sub-title">Language</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Python" %}
                         <li><a href="/categories/Python" class="">Python ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/Algorithm" class="">알고리즘 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
