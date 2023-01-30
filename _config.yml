@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   : "ko-KR"
 title                    : "일단 해보는 코딩노트"
 title_separator          : "|"
-subtitle                 : "도전"
+subtitle                 : "코딩이 재밋어요 하하"
 name                     : "Mingi Ju"
 description              : "어캐하는지 몰라서 무작정 해보는 중"
 url                      : "https://mingking2.github.io"
