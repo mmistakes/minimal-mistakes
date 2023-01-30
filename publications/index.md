@@ -8,6 +8,10 @@
     
 ## Preprints
 
+- Beeckmans, M., Huycke, P., Verguts, T., & Verbeke, P. (2023). How much data do we need to estimate computational models of decision making? The COMPASS toolbox. [PsyArxiv](https://psyarxiv.com/dexyk/)
+
+- Verbeke, P., & Verguts, T. (2023). Humans adaptively select different computational strategies in different learning environments. [BioArxiv.](https://www.biorxiv.org/content/10.1101/2023.01.27.525944v1)
+
 - Simoens, J., Verguts, T., & Braem, S. (2023). Meta-learning environment-specific learning rates. [PsyArxiv.](https://psyarxiv.com/ypd45)
 
 - Turkakin, E., Verguts, T., Desender, K., & Lesage, E. (2023). Should I Sample or Should I Go? An approximately optimal model for deciding when to stop sampling information. [PsyArxiv.](https://psyarxiv.com/tfe94/)
