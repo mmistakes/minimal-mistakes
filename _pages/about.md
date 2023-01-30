@@ -1,8 +1,9 @@
 ---
-title: "Hi all! I'm choiiis👋🏻"
+title: "Hi all! I'm Zhen👋🏻"
 permalink: /about/
 layout: single
 comments: false
+classes: wide
 ---
 
 <div>
