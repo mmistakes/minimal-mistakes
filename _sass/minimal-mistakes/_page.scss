@@ -559,20 +559,24 @@ body {
   .page {
     @include breakpoint($large) {
       padding-right: 0;
+      padding-right: 1em;
     }
 
     @include breakpoint($x-large) {
       padding-right: 0;
+      padding-right: 1em;
     }
   }
 
   .page__related {
     @include breakpoint($large) {
       padding-right: 0;
+      padding-right: 1em;
     }
 
     @include breakpoint($x-large) {
       padding-right: 0;
+      padding-right: 1em;
     }
   }
 }
