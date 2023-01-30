@@ -60,7 +60,7 @@ SELECT *
 |TICKET|티켓번호|
 |FARE|티켓요금|
 |CABIN|선실 번호|
-|EMBARKED| 탑승한 곳 (C:Cherbourg, Q:Queenstown, S:Southmpton)|
+|EMBARKED| 탑승한 곳 (C:Cherbourg, Q:Queenstown, S:Southampton)|
 
 
 ### 2. 데이터 전처리
@@ -158,7 +158,7 @@ ALTER TABLE train
 ***
 #### 2.2. 동승가족수 컬럼 생성
 
-> SIBSP(함께 탑승한 형제/배우자의 수), parch(함께 탑승한 부모/자녀의 수)  
+> SIBSP(함께 탑승한 형제/배우자의 수), PARCH(함께 탑승한 부모/자녀의 수)  
 👉 두 개의 컬럼을 동승가족수 라는 하나의 컬럼으로 병합하여 파생변수 생성
 
 ```sql
