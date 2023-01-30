@@ -5,32 +5,24 @@ layout: post
 comments: false
 classes: wide
 ---
+# Dillinger
+## _The Last Markdown Editor, Ever_
 
-<div>
-    <img src="/assets/images/avatar.png" alt="about_meee" width="30%" min-width="500px" itemprop="image">
-</div>
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-<div style="border-left: 2px solid rgba(199, 198, 198, 0.7); margin: 0.5em 0 0 0.5em; padding-left: 1.5em; font-weight: 500;">
-    <ul class="author__urls social-icons">
-        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">  Seoul, Korea</span>
-        </li>
-        <li>
-          <a href="https://github.com/choiiis" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">  https://github.com/choiiis</span>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:bemychoiiis@gmail.com">
-            <meta itemprop="email" content="bemychoiiis@gmail.com" />
-            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">  bemychoiiis@gmail.com</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/choiiis.dev/" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">  https://www.instagram.com/choiiis.dev/</span>
-          </a>
-        </li>
-    </ul>
-  </div>
+Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible,
+AngularJS-powered HTML5 Markdown editor.
+
+- Type some Markdown on the left
+- See HTML in the right
+- ✨Magic ✨
+
+## Features
+
+- Import a HTML file and watch it magically convert to Markdown
+- Drag and drop images (requires your Dropbox account be linked)
+- Import and save files from GitHub, Dropbox, Google Drive and One Drive
+- Drag and drop markdown and HTML files into Dillinger
+- Export documents as Markdown, HTML and PDF
