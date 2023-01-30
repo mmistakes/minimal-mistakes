@@ -15,15 +15,15 @@
 minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko_KR"
-title                    : "공부 좀 하자ㅠㅠ"
+locale                   : "ko_KR"   # 블로그의 주 언어입니다.
+title                    : "공부 좀 하자" # 사이트 탭에서 보이는 이름입니다.
 title_separator          : "-"
 subtitle                 : "초보개발자 성장기"# site tagline that appears below site title in masthead
-name                     : "hyeonjun"
+name                     : "제현준(Je Hyeonjun)"  
 description              : "An amazing website."
 url                      : "https://hyeonjunje.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+baseurl                  : # the subpath of your site, e.g. "/blog"    # 폴백(예기치 못한 오류)일 때 연결되는 url 입니다.
+repository               : "https://github.com/hyeonjunje/hyeonjunje.github.io" # Github Repo url 입니다.
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -104,27 +104,18 @@ analytics:
 
 # Site Author
 author:
-  name             : "hyeon jun"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "꾸준한 개발자(가 되고 싶어요)"
-  location         : "Somewhere"
+  name             : "Je Hyeonjun"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"  # 프로필 사진 경로입니다.
+  bio              : "**꾸준한 개발자(가 되고 싶어요)**" # biography의 약칭으로, 자기소개를 적으시면 됩니다.
+  location         : "Republic of Korea"  # 지역입니다.
   email            : "jhg62002@daum.net"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: mailto:jhg62002@daum.net
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/hyeonjunje"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -132,6 +123,9 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:jhg62002@daum.net
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
@@ -140,7 +134,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/hyeonjunje"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -218,7 +212,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show. Default : 5
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -290,3 +284,10 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages                      : 해당 하단 영역이 새로 추가되었습니다.
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
