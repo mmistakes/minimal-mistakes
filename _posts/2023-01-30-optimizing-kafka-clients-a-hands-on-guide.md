@@ -203,9 +203,9 @@ In distributed systems, most things come with tradeoffs, and it’s up to the de
 
 One important aspect might be tuning between throughput and latency. Some key configurations to that are `batch.size` and `linger.ms`.
 
-Having a small `batch size` and also `linger` set to 0 can reduce latency and process messages as soon as possible — but it might reduce throughput. Configuring for low latency is also useful for slow produce rate scenarios. Having fewer records accumulated than the specified `batch size` will result in the client waiting `linger.ms` for more records to arrive.
+Having a small `batch.size` and also `linger` set to 0 can reduce latency and process messages as soon as possible — but it might reduce throughput. Configuring for low latency is also useful for slow produce rate scenarios. Having fewer records accumulated than the specified `batch.size` will result in the client waiting `linger.ms` for more records to arrive.
 
-On the other hand, a larger `batch size` might use more memory (as we will allocate buffers for the specified batch size) but it will increase the throughput. Other configuration options like `compression.type`, `max.in.flight.requests.per.connection`, and `max.request.size` can help here.
+On the other hand, a larger `batch.size` might use more memory (as we will allocate buffers for the specified batch size) but it will increase the throughput. Other configuration options like `compression.type`, `max.in.flight.requests.per.connection`, and `max.request.size` can help here.
 
 ![Alt text](../images/kafka/tradeoffs.png "Tradeoffs Everywhere ")
 
