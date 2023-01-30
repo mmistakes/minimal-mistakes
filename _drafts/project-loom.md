@@ -37,7 +37,7 @@ static void log(String message) {
 }
 ```
 
-In fact, the above function allow us to print some useful information concerning virtual threads that will be very handy to understand what's going on.
+In fact, the above function allows us to print some useful information concerning virtual threads that will be very handy to understand what's going on.
 
 Moreover, we'll use also Lombok, to reduce the boilerplate code when dealing with checked exceptions. So, we'll use the `@SneakyThrows`, that let us treating checked exceptions as unchecked ones (don't use it in production!). For example, we'll wrap the `Thread.sleep` method, that throws a checked `InterruptedException`, with the `@SneakyThrows` annotation:
 
@@ -126,11 +126,13 @@ To show how virtual threads work, we'll use the same example we used in the Kotl
 
 ```java
 static Thread bathTime() {
-  return virtualThread("Bath time", () -> {
-    logger.info("I'm going to take a bath");
-    sleep(Duration.ofMillis(500L));
-    logger.info("I'm done with the bath");
-  });
+  return virtualThread(
+    "Bath time",
+    () -> {
+      log("I'm going to take a bath");
+      sleep(Duration.ofMillis(500L));
+      log("I'm done with the bath");
+    });
 }
 ```
 
@@ -138,11 +140,13 @@ Another task that we do every morning is to boil some water to make a tea:
 
 ```java
 static Thread boilingWater() {
-  return virtualThread("Boil some water", () -> {
-    logger.info("I'm going to boil some water");
-    sleep(Duration.ofSeconds(1L));
-    logger.info("I'm done with the water");
-  });
+  return virtualThread(
+    "Boil some water",
+    () -> {
+      log("I'm going to boil some water");
+      sleep(Duration.ofSeconds(1L));
+      log("I'm done with the water");
+    });
 }
 ```
 
@@ -151,23 +155,23 @@ Fortunately, we can race the two tasks, to speed up the process and go to work e
 ```java
 @SneakyThrows
 static void concurrentMorningRoutine() {
-  var vt1 = bathTime();
-  var vt2 = boilingWater();
-  vt1.join();
-  vt2.join();
+  var bathTime = bathTime();
+  var boilingWater = boilingWater();
+  bathTime.join();
+  boilingWater.join();
 }
 ```
 
 We joined both the virtual threads, so we can be sure that the main thread will not terminate before the two virtual threads. Let's run the program:
 
 ```
-15:19:25.243 [Bath time] INFO in.rcard.virtual.threads.App - I'm going to take a bath
-15:19:25.243 [Boil some water] INFO in.rcard.virtual.threads.App - I'm going to boil some water
-15:19:25.750 [Bath time] INFO in.rcard.virtual.threads.App - I'm done with the bath
-15:19:26.253 [Boil some water] INFO in.rcard.virtual.threads.App - I'm done with the water
+08:34:46.217 [boilWater] INFO in.rcard.virtual.threads.App - VirtualThread[#21,boilWater]/runnable@ForkJoinPool-1-worker-1 | I'm going to take a bath
+08:34:46.218 [boilWater] INFO in.rcard.virtual.threads.App - VirtualThread[#23,boilWater]/runnable@ForkJoinPool-1-worker-2 | I'm going to boil some water
+08:34:46.732 [bath-time] INFO in.rcard.virtual.threads.App - VirtualThread[#21,boilWater]/runnable@ForkJoinPool-1-worker-2 | I'm done with the bath
+08:34:47.231 [boilWater] INFO in.rcard.virtual.threads.App - VirtualThread[#23,boilWater]/runnable@ForkJoinPool-1-worker-2 | I'm done with the water
 ```
 
-The output is exactly what we expected. The two virtual threads run concurrently, and the main thread waits for them to terminate.
+The output is exactly what we expected. The two virtual threads run concurrently, and the main thread waits for them to terminate. We'll explain all the information printed by the log in a while. For now, let's focus solely on thread name and execution interleaving.
 
 Other than the factory method, we can use a new implementation of the `java.util.concurrent.ExecutorService` tailored on virtual threads, called `java.util.concurrent.ThreadPerTaskExecutor`. It's name is quite evocative. it creates a new virtual thread for every task submitted to the executor:
 
@@ -175,18 +179,22 @@ Other than the factory method, we can use a new implementation of the `java.util
 @SneakyThrows
 static void concurrentMorningRoutineUsingExecutors() {
   try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
-    var f1 = executor.submit(() -> {
-      logger.info("I'm going to take a bath");
-      sleep(Duration.ofMillis(500L));
-      logger.info("I'm done with the bath");
-    });
-    var f2 = executor.submit(() -> {
-      logger.info("I'm going to boil some water");
-      sleep(Duration.ofSeconds(1L));
-      logger.info("I'm done with the water");
-    });
-    f1.get();
-    f2.get();
+    var bathTime =
+      executor.submit(
+        () -> {
+          log("I'm going to take a bath");
+          sleep(Duration.ofMillis(500L));
+          log("I'm done with the bath");
+        });
+    var boilingWater =
+      executor.submit(
+        () -> {
+          log("I'm going to boil some water");
+          sleep(Duration.ofSeconds(1L));
+          log("I'm done with the water");
+        });
+    bathTime.get();
+    boilingWater.get();
   }
 }
 ```
@@ -196,10 +204,10 @@ The way we start threads is a little different since we're using an `ExecutorSer
 The output is more or less the same as before:
 
 ```
-21:22:52.561 [] INFO in.rcard.virtual.threads.App - I'm going to take a bath
-21:22:52.561 [] INFO in.rcard.virtual.threads.App - I'm going to boil some water
-21:22:53.072 [] INFO in.rcard.virtual.threads.App - I'm done with the bath
-21:22:53.570 [] INFO in.rcard.virtual.threads.App - I'm done with the water
+08:42:09.164 [] INFO in.rcard.virtual.threads.App - VirtualThread[#21]/runnable@ForkJoinPool-1-worker-1 | I'm going to take a bath
+08:42:09.164 [] INFO in.rcard.virtual.threads.App - VirtualThread[#23]/runnable@ForkJoinPool-1-worker-2 | I'm going to boil some water
+08:42:09.676 [] INFO in.rcard.virtual.threads.App - VirtualThread[#21]/runnable@ForkJoinPool-1-worker-2 | I'm done with the bath
+08:42:10.175 [] INFO in.rcard.virtual.threads.App - VirtualThread[#23]/runnable@ForkJoinPool-1-worker-2 | I'm done with the water
 ```
 
 As we can see, threads created in this way have not a name, and it can be difficult to debug errors without it. We can overcome this problem just by using the `ThreadPerTaskExecutor` factory method that takes a `ThreadFactory` as parameter:
@@ -208,24 +216,23 @@ As we can see, threads created in this way have not a name, and it can be diffic
 @SneakyThrows
 static void concurrentMorningRoutineUsingExecutorsWithName() {
   final ThreadFactory factory = Thread.ofVirtual().name("routine-", 0).factory();
-  try (var executor =
-      Executors.newThreadPerTaskExecutor(factory)) {
-    var f1 =
-        executor.submit(
-            () -> {
-              logger.info("I'm going to take a bath");
-              sleep(Duration.ofMillis(500L));
-              logger.info("I'm done with the bath");
-            });
-    var f2 =
-        executor.submit(
-            () -> {
-              logger.info("I'm going to boil some water");
-              sleep(Duration.ofSeconds(1L));
-              logger.info("I'm done with the water");
-            });
-    f1.get();
-    f2.get();
+  try (var executor = Executors.newThreadPerTaskExecutor(factory)) {
+    var bathTime =
+      executor.submit(
+        () -> {
+          log("I'm going to take a bath");
+          sleep(Duration.ofMillis(500L));
+          log("I'm done with the bath");
+         });
+    var boilingWater =
+      executor.submit(
+        () -> {
+          log("I'm going to boil some water");
+          sleep(Duration.ofSeconds(1L));
+          log("I'm done with the water");
+        });
+    bathTime.get();
+    boilingWater.get();
   }
 }
 ```
@@ -233,10 +240,10 @@ static void concurrentMorningRoutineUsingExecutorsWithName() {
 A `ThreadFactory` is a factory that creates threads that share the same configuration. In our case, we give the prefix `routine-` to the name of the threads, and we start the counter from 0. The output is the same as before, but now we can see the name of the threads:
 
 ```
-08:32:07.342 [routine-0] INFO in.rcard.virtual.threads.App - I'm going to take a bath
-08:32:07.342 [routine-1] INFO in.rcard.virtual.threads.App - I'm going to boil some water
-08:32:07.850 [routine-0] INFO in.rcard.virtual.threads.App - I'm done with the bath
-08:32:08.351 [routine-1] INFO in.rcard.virtual.threads.App - I'm done with the water
+08:44:35.390 [routine-1] INFO in.rcard.virtual.threads.App - VirtualThread[#23,routine-1]/runnable@ForkJoinPool-1-worker-2 | I'm going to boil some water
+08:44:35.390 [routine-0] INFO in.rcard.virtual.threads.App - VirtualThread[#21,routine-0]/runnable@ForkJoinPool-1-worker-1 | I'm going to take a bath
+08:44:35.900 [routine-0] INFO in.rcard.virtual.threads.App - VirtualThread[#21,routine-0]/runnable@ForkJoinPool-1-worker-1 | I'm done with the bath
+08:44:36.399 [routine-1] INFO in.rcard.virtual.threads.App - VirtualThread[#23,routine-1]/runnable@ForkJoinPool-1-worker-1 | I'm done with the water
 ```
 
 Now that we know how to create virtual threads, let's see how they work under the hood.
