@@ -3,7 +3,7 @@ title: "Hi all! I'm Zhen👋🏻"
 permalink: /about/
 layout: post
 comments: false
-classes: wide
+
 ---
 # Dillinger
 ## _The Last Markdown Editor, Ever_
