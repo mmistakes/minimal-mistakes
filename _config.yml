@@ -12,13 +12,13 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko_KR"   # 블로그의 주 언어입니다.
 title                    : "공부 좀 하자" # 사이트 탭에서 보이는 이름입니다.
 title_separator          : "-"
-subtitle                 : "초보개발자 성장기"# site tagline that appears below site title in masthead
+subtitle                 : "Version 0.1"# site tagline that appears below site title in masthead
 name                     : "제현준(Je Hyeonjun)"  
 description              : "An amazing website."
 url                      : "https://hyeonjunje.github.io"
@@ -112,7 +112,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:jhg62002@daum.net
+      # url: mailto:jhg62002@daum.net
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hyeonjunje"
