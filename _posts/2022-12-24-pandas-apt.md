@@ -4,8 +4,6 @@ title: "Pandas Apartment Sale Price Data 2"
 categories: pandas
 tag: [python, pandas, data_visualization]
 author_profile: false
-sidebar:
-    nav: "docs"
 ---
 
 ## Data Management and Visualization through Pandas

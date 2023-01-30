@@ -4,8 +4,6 @@ title: "Making a registration page Part 1"
 categories: [JavaScript, HTML, CSS]
 tag: [JavaScript, HTML, CSS]
 author_profile: false
-sidebar:
-    nav: "docs"
 ---
 ## Making a signup page using basic HTML, CSS, JavaScript knowledge
 

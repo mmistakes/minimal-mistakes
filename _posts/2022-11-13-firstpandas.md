@@ -4,8 +4,6 @@ title: "Pandas Apartment Sale Price Data 1"
 categories: pandas
 tag: [Python, pandas]
 author_profile: false
-sidebar:
-    nav: "docs"
 ---
 
 ## My First Use of Pandas

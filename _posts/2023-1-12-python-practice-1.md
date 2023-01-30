@@ -4,8 +4,6 @@ title: "Python Practice (1)"
 categories: Python
 tag: Python
 author_profile: false
-sidebar:
-    nav: "docs"
 ---
 
 ## Python practice problem (1)

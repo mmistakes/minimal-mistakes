@@ -4,8 +4,6 @@ title: "SQL Independent Project (1)"
 categories: [SQL, Project]
 tag: [SQL, Project]
 author_profile: false
-sidebar:
-    nav: "docs"
 ---
 
 ## SQL Independent Project (1): Investigating a Drop in User Engagement

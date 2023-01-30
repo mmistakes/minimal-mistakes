@@ -4,8 +4,6 @@ title: "Using Math Functions in JavaScript to create Random Digit Numbers"
 categories: JavaScript
 tag: JavaScript
 author_profile: false
-sidebar:
-    nav: "docs"
 ---
 ## How to create random 6 digit numbers using math functions in JavaScript
 
