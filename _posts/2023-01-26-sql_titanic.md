@@ -20,7 +20,7 @@ search: true
 Oracle db를 사용했고, sqldeveloper로 진행하였다.
 
 ## 📝 사용 데이터
-tanic: Machine Learning from Disaster (승객 데이터 총 891건 으로 구성)
+titanic: Machine Learning from Disaster (승객 데이터 총 891건 으로 구성)
 
 📑test.csv -> survived(생존여부) 컬럼이 없음. (해당 테이블에서 생존여부 예측)
 
