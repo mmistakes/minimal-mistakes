@@ -138,7 +138,7 @@ ALTER TABLE train
 ***
 4) EMBARKED(탑승장소)
 
-> 각 탐승장소의 생존/사망자 수 확인
+> 각 탑승장소의 생존/사망자 수 확인
 
 ```sql
 SELECT EMBARKED, SURVIVED, COUNT(*)
