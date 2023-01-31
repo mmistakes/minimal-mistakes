@@ -9,23 +9,23 @@ main:
   - title: 'Search'
     url: /search/
 
-docs:
+sidebar-category:
   - title: 'ESSAY'
     children:
       - title: '끄적거림'
-        url: /categories/
+        url: /categories/essay
   - title: 'PROGRAMMING'
     children:
       - title: 'Blog Dev'
-        url: /categories/
+        url: /categories/blog
       - title: 'Github'
-        url: /categories/
+        url: /categories/github
   - title: 'BOOK REVIEW'
     children:
       - title: 'IT'
-        url: /categories/
+        url: /categories/it
       - title: '이것저것'
-        url: /categories/
+        url: /categories/all
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

@@ -2,6 +2,6 @@
 title: 'Tag'
 layout: tags
 permalink: /tags/
-author_profile: true
-sidebar_mina: true
+sidebar:
+  nav: 'sidebar-category'
 ---
