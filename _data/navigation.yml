@@ -1,4 +1,4 @@
-# main links
+﻿# main links
 main:
   - title: "Category"
     url: /categories/
@@ -8,7 +8,7 @@ main:
     url: /search/
     
 docs:
-  - title: "대목차1"  
+  - title: "Github"  
     children:
       - title: "Category"
         url: /categories/
