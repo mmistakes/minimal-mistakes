@@ -66,5 +66,39 @@
     },
     "created": "2022-12-18T11:36:08.000Z",
     "updated": "2022-12-18T11:36:08.670Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Einschränkungen im Unterricht und Hort möglich",
+    "title": "Einschränkungen im Unterricht und Hort möglich",
+    "excerpt": "Berlinweite Frauenvollversammlung",
+    "url": "https://www.google.com/calendar/event?eid=cnN1aWFjaDZtdm11bGN1Y3Q2dHBhNmE5c2cgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2023-03-27",
+      "date_time": null
+    },
+    "end": {
+      "date": "2023-03-28",
+      "date_time": null
+    },
+    "created": "2023-01-30T15:27:28.000Z",
+    "updated": "2023-01-30T15:27:28.477Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Osterferien",
+    "title": "Osterferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MWswbWxzaTFyMWM5dHEybmo0YjE4M3V2M2cgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2023-04-03",
+      "date_time": null
+    },
+    "end": {
+      "date": "2023-04-15",
+      "date_time": null
+    },
+    "created": "2023-01-30T15:26:10.000Z",
+    "updated": "2023-01-30T15:26:10.972Z"
   }
 ]
