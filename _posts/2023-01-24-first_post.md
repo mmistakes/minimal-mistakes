@@ -4,7 +4,7 @@ title:  "블로그를 시작하는 이유"
 categories: Life
 tag: [github, blog, jekyll]
 toc: true
-author_profile: false
+author_profile: true
 sidebar: true
 search: false
 ---

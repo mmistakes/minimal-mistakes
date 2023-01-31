@@ -4,7 +4,7 @@ title:  "[SQL]SQL로 타이타닉 생존자 예측하기"
 categories: SQL
 tag: [SQL, PL/SQL, 머신러닝]
 toc: true
-author_profile: false
+author_profile: true
 sidebar: true
 search: true
 ---
