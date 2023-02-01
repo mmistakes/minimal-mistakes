@@ -7,7 +7,7 @@ comments: false
 author_profile: false
 ---
 <br>
-<img src="/assets/images/profile.JPG" width="40%">
+<img src="/assets/images/profile.JPG" width="40%" class="center">
 <br>
 
 My cat & I say **hi** to you.
