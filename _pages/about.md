@@ -6,4 +6,4 @@ classes: wide
 comments: false
 author_profile: false
 ---
-啊啊啊啊啊啊啊啊
+![Me and my cat!](/assets/images/profile.JPG "Me and my cat")
