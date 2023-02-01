@@ -431,8 +431,8 @@ const add = function(num1,num2){
 
 ```js
 const superman ={
-  name : 'clark',				//name == key
-  age : 33,						//clark ==value
+  name : 'clark',				//name == key //clark ==value
+  age : 33,						
 }
 
 //각 프로퍼티는 ,(쉼표) 로 구분/마지막쉼표는 없어도 되지만 수정 삭제 이동에 용이함
