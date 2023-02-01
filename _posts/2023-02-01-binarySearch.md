@@ -14,7 +14,7 @@ toc_sticky: true
 ## 1. Binary Search이란?
 이진 탐색이란 데이터가 정렬돼 있는 배열에서 특정한 값을 찾아내는 알고리즘이다. 배열의 중간에 있는 임의의 값을 선택하여 찾고자 하는 값 X와 비교한다. X가 중간 값보다 작으면 중간 값을 기준으로 좌측의 데이터들을 대상으로, X가 중간 값보다 크면 배열의 우측을 대상으로 다시 탐색한다. 동일한 방법으로 다시 중간의 값을 임의로 선택하고 비교한다. 해당 값을 찾을 때까지 이 과정을 반복한다.
 
-## 2. Lower Bound/Upper Bound
+## 2. Lower Bound/Upper Bound란?
 이진 탐색이 데이터 내 특정 값을 정확히 찾는 것이라면 lower bound와 upper bound는 이진 탐색 알고리즘에서 약간 변형된 것으로 중복된 자료가 있을 때 유용하게 탐색할 수 있는 알고리즘이다.
 
 ### 2.1 Lower Bound
@@ -67,5 +67,4 @@ public static int upperBound(int[] arry, int value) {
 
 
 ## Ref.
-[gilog-동적 계획법](https://velog.io/@gillog/%EB%8F%99%EC%A0%81-%EA%B3%84%ED%9A%8D%EB%B2%95Dynamic-Programming)\
-[겐지충 프로그래머-동적 계획법](https://hongjw1938.tistory.com/47)
+[잭팟53-이진탐색-상/하한선](https://jackpot53.tistory.com/33)
