@@ -1,7 +1,7 @@
 ---
 title: "Test-design3"
 excerpt: "Baz Boom design system including logo mark, website design, and branding applications."
-layout: single
+layout: singlewithnoside
 full-width: true
 classes: wide
 ---
