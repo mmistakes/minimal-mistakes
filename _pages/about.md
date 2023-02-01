@@ -4,6 +4,6 @@ permalink: /about/
 layout: single
 classes: wide
 comments: false
-side-bar: false
+author_profile: false
 ---
 啊啊啊啊啊啊啊啊
