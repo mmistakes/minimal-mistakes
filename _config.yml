@@ -28,7 +28,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 logo                     : # should be my customized-logo"/images/logo.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 150
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
@@ -57,7 +57,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : "_SirMike"
+  username               : #"_SirMike"
 facebook:
   username               :
   app_id                 :
@@ -85,13 +85,13 @@ analytics:
 author:
   name             : #"Michael Mustapha"
   avatar           : "/images/bio-img.jpg"
-  bio              : #"Software Engineer"
-  location         : "Lagos, Nigeria"
+  bio              : #"Software Engineer @ Zalando SE"
+  location         : "Berlin, Germany"
   email            : #""
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/_SirMike"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/_SirMike"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/michael-mustapha/"
@@ -168,7 +168,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: Africa/Lagos # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Berlin # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)

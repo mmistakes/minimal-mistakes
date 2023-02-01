@@ -3,10 +3,10 @@ title: "About"
 permalink: /about/
 ---
 
-Hi there! I am a software engineer with so many thoughts running through my mind, and I hope to pen some of it down here. I love cake, tech, software engineering, and Christ.
+Hi there! I am a Software Engineer at Zalando SE, spending most of my time on the design, development, and improvement of resilient and scalable distributed systems.
 
-I currently work full time in Lagos, Nigeria. Most of my work have been building native mobile applications in Android (Kotlin) and backend systems using Node.js and Scala.
+I am currently on a journey of spending ~10,000 hours on tinkering through software systems, reading, and scribbling technical notes. (_Still a long way to go!_ 😄)
 
-I am currently exploring projects in Scala (Akka & FP) and multiplatform mobile.
+Some of my past experiences are in building backend systems and native Android applications in financial services, customer relationship, and facility management.
 
-In my free time, I  `cook`, `read`, `watch movies`, `work out`, and `volunteer in technology and humanitarian communities`.
+My current interests are reading engineering blogs/papers, understanding distributed systems, startups/scale-ups, soccer ⚽️, and cooking 🧑🏽‍🍳.
