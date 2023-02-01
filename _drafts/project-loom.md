@@ -256,11 +256,60 @@ How do virtual threads work? The figure below shows the relationship between vir
 
 Basically, the JVM maintains a pool of _platform threads_, created and maintained by a dedicated `ForkJoinPool`. Initially, the number of platform threads is equal to the number of CPU cores, and it cannot increase more than 256. 
 
-For each created virtual thread, the JVM schedules its execution on a platform thread, temporarily copying the stack chunk for the virtual thread from the heap to the stack of the platform thread. We said that the platform thread becomes the _carrier thread_ of the virtual thread. 
+For each created virtual thread, the JVM schedules its execution on a platform thread, temporarily copying the stack chunk for the virtual thread from the heap to the stack of the platform thread. We said that the platform thread becomes the _carrier thread_ of the virtual thread.
+
+The logs we've seen so far showed us exactly the above situation. Let's analyze one of them:
+
+```
+08:44:35.390 [routine-1] INFO in.rcard.virtual.threads.App - VirtualThread[#23,routine-1]/runnable@ForkJoinPool-1-worker-2 | I'm going to boil some water
+```
+
+The interesting part is on the right side of the first `-` character. The first part identifies the virtual thread in execution: `VirtualThread[#23,routine-1]` reports the thread identifier, the `#23` part, and the thread name. Then, we have the indication on which carrier thread the virtual thread is executing: `ForkJoinPool-1-worker-2`, represents the platform thread called `worker-2` of the default `ForkJoinPool`, called `ForkJoinPool-1`.
 
 The first time the virtual thread blocks on a blocking operation, the carrier thread is released, and the stack chunk of the virtual thread is copied back to the heap. In this way, the carrier thread is available to execute any other eligible virtual threads. Once the blocked virtual thread finish the blocking operation, the scheduler schedules it again for execution. The execution can continue on the same carrier thread, or on a different one.
 
-There a lot of details to consider. Let's start from the scheduler.
+We can easily see that number of available carrier thread is equal to the number of CPU cores by default running a program that creates and starts a number of virtual threads that is greater than the number of cores. On a Mac, you can retrieve the number of cores by running the following command:
+
+```bash
+sysctl hw.physicalcpu hw.logicalcpu
+```
+
+We are interested on the second value, which counts the number of logical cores. On my machine, I have 2 physical cores and 4 logical cores. Let's define a function to retrieve the number of logical cores in Java:
+
+```java
+static int numberOfCores() {
+  return Runtime.getRuntime().availableProcessors();
+}
+```
+
+Then, we can create a program that creates the desired number of virtual threads, i.e. the number of logical cores plus one:
+
+```java
+static void viewCarrierThreadPoolSize() {
+  final ThreadFactory factory = Thread.ofVirtual().name("routine-", 0).factory();
+  try (var executor = Executors.newThreadPerTaskExecutor(factory)) {
+    IntStream.range(0, numberOfCores() + 1)
+        .forEach(i -> executor.submit(() -> {
+          log("Hello, I'm a virtual thread number " + i);
+          sleep(Duration.ofSeconds(1L));
+        }));
+  }
+}
+```
+
+We expect that the 5 virtual threads will be executed on 4 carrier threads, and one of the carrier threads should be reused at least once. Running the program, we can see that our hypothesis is correct:
+
+```
+08:44:54.849 [routine-0] INFO in.rcard.virtual.threads.App - VirtualThread[#21,routine-0]/runnable@ForkJoinPool-1-worker-1 | Hello, I'm a virtual thread number 0
+08:44:54.849 [routine-1] INFO in.rcard.virtual.threads.App - VirtualThread[#23,routine-1]/runnable@ForkJoinPool-1-worker-2 | Hello, I'm a virtual thread number 1
+08:44:54.849 [routine-2] INFO in.rcard.virtual.threads.App - VirtualThread[#24,routine-2]/runnable@ForkJoinPool-1-worker-3 | Hello, I'm a virtual thread number 2
+08:44:54.855 [routine-4] INFO in.rcard.virtual.threads.App - VirtualThread[#26,routine-4]/runnable@ForkJoinPool-1-worker-4 | Hello, I'm a virtual thread number 4
+08:44:54.849 [routine-3] INFO in.rcard.virtual.threads.App - VirtualThread[#25,routine-3]/runnable@ForkJoinPool-1-worker-4 | Hello, I'm a virtual thread number 3
+```
+
+There are four carrier threads, `ForkJoinPool-1-worker-1`, `ForkJoinPool-1-worker-2`, `ForkJoinPool-1-worker-3`, and `ForkJoinPool-1-worker-4`, and the `ForkJoinPool-1-worker-4` is reused twice. Awesome!
+
+The above log should ring a bell in the astute reader. How the JVM schedules virtual threads on their carrier threads? Is there any preemption? Does the JVM use cooperative scheduling instead? Let's answer these questions in the next session.
 
 ## 5. The Scheduler and Cooperative Scheduling
 
