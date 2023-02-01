@@ -588,10 +588,11 @@ body {
 }
 
 
-  /*.initial-content p{
-    margin: 0 49.5px;
-    padding: 0 22px;
-  }*/
+ .initial-content p{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em 1em 1em 1em;
+  }
 
 p{
   color: red !important;
