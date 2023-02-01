@@ -346,12 +346,12 @@ static Thread workingHard() {
   return virtualThread(
       "Working hard",
       () -> {
-        logger.info("I'm working hard");
+        log("I'm working hard");
         while (alwaysTrue()) {
           // Do nothing
         }
         sleep(Duration.ofMillis(100L));
-        logger.info("I'm done with working hard");
+        log("I'm done with working hard");
       });
 }
 ```
@@ -365,9 +365,9 @@ static Thread takeABreak() {
   return virtualThread(
       "Take a break",
       () -> {
-        logger.info("I'm going to take a break");
+        log("I'm going to take a break");
         sleep(Duration.ofSeconds(1L));
-        logger.info("I'm done with the break");
+        log("I'm done with the break");
       });
 }
 ```
@@ -377,10 +377,10 @@ Now, we can compose the two function and let the two thread race:
 ```java
 @SneakyThrows
 static void workingHardRoutine() {
-  final Thread vt1 = workingHard();
-  final Thread vt2 = takeABreak();
-  vt1.join();
-  vt2.join();
+  var workingHard = workingHard();
+  var takeABreak = takeABreak();
+  workingHard.join();
+  takeABreak.join();
 }
 ```
 
@@ -395,7 +395,7 @@ Before running the `workingHardRoutine()` function, we set properly the three sy
 The above settings force the scheduler to use a pool configured with only one carrier thread. Since the `"Working hard"` virtual thread never reaches a blocking operation, it will never yield the execution to the `"Take a break"` virtual thread. In fact, the output is the following:
 
 ```
-21:52:29.852 [Working hard] INFO in.rcard.virtual.threads.App - I'm working hard
+21:28:35.702 [Working hard] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Working hard]/runnable@ForkJoinPool-1-worker-1 | I'm working hard
 --- Running forever ---
 ```
 
@@ -408,11 +408,11 @@ static Thread workingConsciousness() {
   return virtualThread(
       "Working consciousness,
       () -> {
-        logger.info("I'm working hard");
+        log("I'm working hard");
         while (alwaysTrue()) {
           sleep(Duration.ofMillis(100L));
         }
-        logger.info("I'm done with working hard");
+        log("I'm done with working hard");
       });
 }
 ```
@@ -422,23 +422,25 @@ Now, the execution can reach the blocking operation, and the `"Working hard"` vi
 ```java
 @SneakyThrows
 static void workingConsciousnessRoutine() {
-  final Thread vt1 = workingConsciousness();
-  final Thread vt2 = takeABreak();
-  vt1.join();
-  vt2.join();
+  var workingConsciousness = workingConsciousness();
+  var takeABreak = takeABreak();
+  workingConsciousness.join();
+  takeABreak.join();
 }
 ```
 
 This time, we expect the `"Take a break"` virtual thread to be scheduled and executed on the only carrier thread, when the `"Working consciousness"` reaches the blocking operation. The output confirms our expectations:
 
 ```
-21:58:34.568 [Working consciousness] INFO in.rcard.virtual.threads.App - I'm working hard
-21:58:34.574 [Take a break] INFO in.rcard.virtual.threads.App - I'm going to take a break
-21:58:35.578 [Take a break] INFO in.rcard.virtual.threads.App - I'm done with the break
+21:30:51.677 [Working consciousness] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Working consciousness]/runnable@ForkJoinPool-1-worker-1 | I'm working hard
+21:30:51.682 [Take a break] INFO in.rcard.virtual.threads.App - VirtualThread[#23,Take a break]/runnable@ForkJoinPool-1-worker-1 | I'm going to take a break
+21:30:52.688 [Take a break] INFO in.rcard.virtual.threads.App - VirtualThread[#23,Take a break]/runnable@ForkJoinPool-1-worker-1 | I'm done with the break
 --- Running forever ---
 ```
 
-If we change the carrier pool size to 2, we can see that both the `"Working Hard"` and the `"Take a break"` virtual threads are scheduled on the two carrier threads, and so they can run concurrently. The new setup is the following:
+As we might expect, the two virtual thread are sharing the same carrier thread.
+
+Let's go back to the `workingHardRoutine()` function. If we change the carrier pool size to 2, we can see that both the `"Working Hard"` and the `"Take a break"` virtual threads are scheduled on the two carrier threads, and so they can run concurrently. The new setup is the following:
 
 ```
 -Djdk.virtualThreadScheduler.parallelism=2
@@ -446,12 +448,12 @@ If we change the carrier pool size to 2, we can see that both the `"Working Hard
 -Djdk.virtualThreadScheduler.minRunnable=2
 ```
 
-As we might expect, the output is the following:
+As we might expect, the output is the following. While the `ForkJoinPool-1-worker-1` is stuck in the infinite loop, the `ForkJoinPool-1-worker-2` is executing the `"Take a break"` virtual thread:
 
 ```
-08:34:10.561 [Working hard] INFO in.rcard.virtual.threads.App - I'm working hard
-08:34:10.561 [Take a break] INFO in.rcard.virtual.threads.App - I'm going to take a break
-08:34:11.566 [Take a break] INFO in.rcard.virtual.threads.App - I'm done with the break
+21:33:43.641 [Working hard] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Working hard]/runnable@ForkJoinPool-1-worker-1 | I'm working hard
+21:33:43.641 [Take a break] INFO in.rcard.virtual.threads.App - VirtualThread[#24,Take a break]/runnable@ForkJoinPool-1-worker-2 | I'm going to take a break
+21:33:44.655 [Take a break] INFO in.rcard.virtual.threads.App - VirtualThread[#24,Take a break]/runnable@ForkJoinPool-1-worker-2 | I'm done with the break
 --- Running forever ---
 ```
 
