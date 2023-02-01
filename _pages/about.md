@@ -6,4 +6,4 @@ classes: wide
 comments: false
 author_profile: false
 ---
-![Me and my cat!](/assets/images/profile.JPG "Me and my cat")
+<img src="/assets/images/profile.png" width="100">
