@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Hierarchical Methods"
-categories: hongongmaMachineLearningchine
+categories: MachineLearning
 tag: [python, Machine Learning]
 toc: true
 ---
