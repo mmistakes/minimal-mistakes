@@ -201,7 +201,7 @@ At this point, our messages are in-flight from the client to the brokers. The br
 
 In distributed systems, most things come with tradeoffs, and it’s up to the developer to find that "sweet spot" between different tradeoffs; thus it’s important to understand how things work.
 
-One important aspect might be tuning between throughput and latency. Some key configurations to that are `batch.size` and `linger.ms`.
+One important aspect might be tuning between throughput and latency. Some key configurations to that are `batch.size` and `linger.ms`. These configs work as follows: the producer will batch together records, and when the batch is full, it will send it whole. Otherwise, it will wait at most `linger.ms` to enqueue a new item, and if that time is expired, it will send a (partially full) batch.
 
 Having a small `batch.size` and also `linger` set to 0 can reduce latency and process messages as soon as possible — but it might reduce throughput. Configuring for low latency is also useful for slow produce rate scenarios. Having fewer records accumulated than the specified `batch.size` will result in the client waiting `linger.ms` for more records to arrive.
 
@@ -339,7 +339,7 @@ This scenario is similar to the previous one, only now we will have one consumer
 
 When a consumer goes down or similarly a new one joins the group, Kafka will have to trigger a rebalance. This means that partitions need to be revoked and reassigned to the available consumers in the group.
 
-Let’s run again our previous example — consuming 10k messages — but this time having 5 consumers in our consumer group. I will be creating 5 consuming instances from within a single JVM (using kotlin [coroutines](https://kotlinlang.org/docs/coroutines-overview.html)), but you can easily re-adjust the code (found [here](https://github.com/polyzos/kafka-streaming-ledger/blob/main/src/main/kotlin/io/ipolyzos/consumers/PerPartitionConsumer.kt)) and just start multiple JVMs.
+Let’s run again our previous example — consuming 10k messages — but this time having 5 consumers in our consumer group. I will be creating 5 consuming instances from within a single JVM (using Kotlin [coroutines](/kotlin-coroutines-101), but you can easily re-adjust the code (found [here](https://github.com/polyzos/kafka-streaming-ledger/blob/main/src/main/kotlin/io/ipolyzos/consumers/PerPartitionConsumer.kt)) and just start multiple JVMs.
 ```shell
 12:39:53.233 INFO  [DefaultDispatcher-worker-1] io.ipolyzos.Extensions - 
 +--------+------------------+-----------+---------------+-----------+----------------------------------------------+---------------+-------------------------------------------------+-------------+
