@@ -12,15 +12,17 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Chris Schindlbeck"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Chris Schindlbeck"
+description              : "Personal Homepage Chris Schindlbeck"
+port                     : 4000
+host                     : "0.0.0.0"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -73,11 +75,27 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
+google_site_verification : iuIwreVY0elNDbKETRka_bfET9bf_uarcbMAK1JuXG8
 bing_site_verification   :
 naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
+
+# Scholar plugin not working yet
+#scholar:
+#style: apa
+#locale: en
+#sort_by: none
+#order: ascending
+#source: ./_bibliography
+#bibliography: references.bib
+#bibliography_template: "{{reference}}"
+#replace_strings: true
+#join_strings:    true
+#details_dir:    bibliography
+#details_layout: bibtex.html
+#details_link:   Details
+#query: "@*"
 
 # Social Sharing
 twitter:
@@ -86,7 +104,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : /assets/images/bio_photo.jpg
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -104,59 +122,71 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Chris Schindlbeck"
+  avatar           : "/assets/images/bio_photo.jpg"
+  bio              : "Software Developer for Robotics"
+  location         : "Germany"
   email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      #- label: "Email"
+      #icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
+      #- label: "Website"
+      #icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      #- label: "Twitter"
+      #icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+      #- label: "Facebook"
+      #icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://github.com/cschindlbeck"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/chrisschindlbeck"
+    - label: "Hackerrank"
+      icon: "cci cci-hackerrank"
+      url: "https://www.hackerrank.com/schindlbeck"
+    - label: "leetCode"
+      icon: "cci cci-leetcode"
+      url: "https://leetcode.com/cschindlbeck/"
+    - label: "Codesignal"
+      icon: "cci cci-codesignal"
+      url: "https://app.codesignal.com/profile/chris_s_qex"
+    - label: "Codewars"
+      icon: "cci cci-codewars"
+      url: "https://www.codewars.com/users/cschindlbeck"
+    - label: "Scholar"
+      icon: "ai ai-google-scholar"
+      url: "https://scholar.google.com/citations?user=MkoDxQkAAAAJ&hl=en"
+    - label: "ResearchGate"
+      icon: "ai ai-researchgate"
+      url: "https://www.researchgate.net/profile/Christopher-Schindlbeck"
+    - label: "ORCiD"
+      icon: "ai ai-orcid"
+      url: "https://orcid.org/0000-0002-2443-3228"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
-
+      url: "https://github.com/cschindlbeck"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/chrisschindlbeck"
+    - label: "Hackerrank"
+      icon: "cci cci-hackerrank"
+      url: "https://www.hackerrank.com/schindlbeck"
 
 # Reading Files
 include:
   - .htaccess
   - _pages
 exclude:
+  - './README.md'
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
@@ -230,6 +260,8 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  # - jekyll-remote-theme
+  #- jekyll-scholar # not working as of 2022-04
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -287,6 +319,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      #comments: # true
       share: true
       related: true

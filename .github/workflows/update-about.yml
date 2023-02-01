@@ -1,0 +1,38 @@
+name: Update About
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  schedule:
+    - cron: "0 0 1 * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      #with: 
+      #repository: cschindlbeck/cv
+      #ref: refs/heads/main
+    - name: About
+      run: |
+        # replace date, time, and time offset in template
+        sed -ri "s/[12][0-9]{3}-[01][0-9]-[0-3][0-9]/$(date '+%Y-%m-%d')/g" _pages/about_template.md
+        sed -ri "s/[01][0-9]:[0-5][0-9]:[0-5][0-9]/$(date '+%T')/g" _pages/about_template.md
+        sed -ri "s/\+[0-9]{4}/$(date '+%z')/g" _pages/about_template.md
+        # clone cschindlbeck, get about and concatenate it to template
+        git clone https://github.com/cschindlbeck/cschindlbeck.git
+        cat _pages/about_template.md cschindlbeck/README.md > _pages/about.md
+    - name: Push code
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        # Force add since README is on gitignore
+        git add _pages/about.md
+        git add _pages/about_template.md
+        # Prevent empty add to result in error
+        git diff-index --quiet HEAD || git commit -m "Updated about"
+        git push

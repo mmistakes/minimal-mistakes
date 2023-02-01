@@ -1,0 +1,138 @@
+/*
+ *  Compcodicons by Chris Schindlbeck (https://github.com/cschindlbeck)
+ *  Fonts generated using FontForge - https://fontforge.org
+ *  Licenses - Font: TODO
+ */
+
+@font-face {
+    font-family: 'Compcodicons';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url('../fonts/compcodicons.eot');
+    src: url('../fonts/compcodicons.eot') format('embedded-opentype'), url('../fonts/compcodicons.ttf') format('truetype'), url('../fonts/compcodicons.woff') format('woff'), url('../fonts/compcodicons.svg') format('svg');
+}
+
+.cci {
+    font-family: 'Compcodicons';
+    font-weight: 400;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.cci-codechef:before {
+    content: "\e808";
+}
+
+.cci-codeforces:before {
+    content: "\e809";
+}
+
+.cci-codersrank:before {
+    content: "\e803";
+}
+
+.cci-coderwall:before {
+    content: "\e807";
+}
+
+.cci-codesignal:before {
+    content: "\e810";
+}
+
+.cci-codewars:before {
+    content: "\e806";
+}
+
+.cci-geeksforgeeks:before {
+    content: "\e805";
+}
+
+.cci-hackerearth:before {
+    content: "\e80c";
+}
+
+.cci-hackerrank:before {
+    content: "\e80a";
+}
+
+.cci-leetcode:before {
+    content: "\e802";
+}
+
+.cci-topcoder:before {
+    content: "\e804";
+}
+/*
+ *  Repeat of the FontAwesome style classes to prevent override if academicons.css
+ *  is called after font-awesome.css.
+ */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-3x {
+  font-size: 3em;
+}
+.fa-4x {
+  font-size: 4em;
+}
+.fa-5x {
+  font-size: 5em;
+}
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.fa-ul > li {
+  position: relative;
+}
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.fa-li.fa-lg {
+  left: -1.85714286em;
+}
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.fa-pull-left {
+  float: left;
+}
+.fa-pull-right {
+  float: right;
+}
+.fa.fa-pull-left {
+  margin-right: .3em;
+}
+.fa.fa-pull-right {
+  margin-left: .3em;
+}
+/*
+ * Accessibility: hide text for screen readers
+ */
+.sr-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
