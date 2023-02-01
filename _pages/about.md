@@ -1,5 +1,5 @@
 ---
-title: "Hi all! I'm Zhen👋🏻"
+title: "Hi ! I'm Zhen🔹"
 permalink: /about/
 layout: single
 classes: wide
