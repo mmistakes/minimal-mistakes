@@ -6,4 +6,4 @@ classes: wide
 comments: false
 author_profile: false
 ---
-<img src="/assets/images/profile.png" width="100">
+<img src="/assets/images/profile.png" min-width="700px">
