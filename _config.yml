@@ -16,7 +16,7 @@ minimal_mistakes_skin    :  "neon" # "default" "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "SSI [un]Hackathon"
+title                    : "Decentralized Identity [un]Hackathon"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "SSI"
