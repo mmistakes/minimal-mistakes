@@ -3,7 +3,7 @@ title: Illustration
 layout: splashpadding
 permalink: /illustration/
 collection: illustration
-gallery: 
+gallery:
   - url: /assets/images/2021/1.jpg
     image_path: /assets/images/2021/1.jpg
     alt: "20211"
