@@ -2,5 +2,5 @@
 main:
   - title: "Home"
     url: https://danny-kwon.github.io
-  - title: "About"
-    url: https://danny-kwon.github.io/about/
+  #- title: "About"
+  # url: https://danny-kwon.github.io/about/
