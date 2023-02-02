@@ -72,6 +72,7 @@ gallery:
     image_path: /assets/images/2021/17.jpg
     alt: "202117"
     title: "2021-17"
+gallery2:
   - url: /assets/images/2020/ 1.jpg
     image_path: /assets/images/2020/ 1.jpg
     alt: "NCCU1"
@@ -119,4 +120,4 @@ gallery:
 
 ---
 
-{% include gallery id="gallery3" caption="" %}
+{% include gallery id="gallery2" caption="" %}
