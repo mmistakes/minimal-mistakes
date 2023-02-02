@@ -41,6 +41,6 @@ gallery:
     alt: "20209"
     title: "2020-9"
 ---
-<h2>2020</h2>
+<h3 style="background-color=grey;">2020</h3>
 
 {% include gallery caption="test" %}
