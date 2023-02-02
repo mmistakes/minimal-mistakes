@@ -43,6 +43,4 @@ gallery:
 ---
 <h2>2020</h2>
 
----
-
 {% include gallery caption="test" %}
