@@ -18,13 +18,13 @@ locale                   : "en-US"
 title                    : "yosef0x1's Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Youssef Muhammad"
+name                     : "yosef0x1"
 description              : "Hackthebox Write ups && CTF and some Research Stuff"
 url                      : "yosef0x01.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-masthead_title           : "yosef0x1" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "yosef0x1's Blog" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
