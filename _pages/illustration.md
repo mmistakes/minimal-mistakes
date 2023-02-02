@@ -3,7 +3,7 @@ title: Illustration
 layout: splashpadding
 permalink: /illustration/
 collection: illustration
-gallery2: 
+gallery: 
   - url: /assets/images/2021/1.jpg
     image_path: /assets/images/2021/1.jpg
     alt: "20211"
@@ -113,7 +113,7 @@ gallery2:
 
 ---
 
-{% include gallery id="gallery2" caption="" %}
+{% include gallery caption="" %}
 
 <h3 style="color:#565656;">2020</h3>
 
