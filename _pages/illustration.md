@@ -1,6 +1,6 @@
 ---
 title: Illustration
-layout:splash
+layout: splash
 permalink: /illustration/
 collection: illustration
 gallery:
