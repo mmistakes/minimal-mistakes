@@ -3,8 +3,8 @@ title: Illustration
 permalink: /illustration/
 collection: illustration
 gallery:
-  - url: /assets/images/2020/1.jpg
-    image_path: /assets/images/2020/1.jpg
+  - url: /assets/images/profile.JPG
+    image_path: /assets/images/profile.JPG
     alt: "NCCU1"
     title: "NCCU-1"
   - url: /assets/images/2020/2.jpg
