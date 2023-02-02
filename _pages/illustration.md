@@ -4,8 +4,8 @@ layout: splash
 permalink: /illustration/
 collection: illustration
 gallery:
-  - url: /assets/images/ 1.JPG
-    image_path: /assets/images/ 1.JPG
+  - url: /assets/images/ 1.jpg
+    image_path: /assets/images/ 1.jpg
     alt: "NCCU1"
     title: "NCCU-1"
   - url: /assets/images/2020/ 2.jpg
