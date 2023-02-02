@@ -1,6 +1,6 @@
 ---
 title: Illustration
-layout: splash
+layout: splashpadding
 permalink: /illustration/
 collection: illustration
 gallery:
@@ -41,4 +41,4 @@ gallery:
     alt: "20209"
     title: "2020-9"
 ---
-{% include gallery caption="Illustrations 2020" %}
+{% include gallery caption="test" %}
