@@ -232,6 +232,9 @@ figure {
     > img {
       @include breakpoint($small) {
         width: calc(33.3333% - 0.5em);
+        /*2023.2.2*/
+        padding-left: 10px;
+        padding-right: 10px;
       }
     }
 
