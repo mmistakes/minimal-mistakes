@@ -1,8 +1,8 @@
 # main links
 main:
-  - title: "Boxes"
+  - title: "HTB Boxes"
     url: https://yosef0x01.github.io
-  # - title: "About"
+  - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
   #   url: /year-archive/
