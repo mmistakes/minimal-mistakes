@@ -41,7 +41,7 @@ gallery:
     alt: "20209"
     title: "2020-9"
 ---
-<h3 style="background-color=#565656;">2020</h3>
+<h3 style="color=#565656;">2020</h3>
 
 ---
 
