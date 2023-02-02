@@ -318,7 +318,7 @@ public class Category {
     private List<Item> items = new ArrayList<>();
 }
 ```
-실무에서 `@ManyToMain`을 안쓰지만, 예제이기 때문에 예시로 사용함.
+실무에서 `@ManyToMany`을 안쓰지만, 예제이기 때문에 예시로 사용함.
 
 ## Item.class(V3)
 
