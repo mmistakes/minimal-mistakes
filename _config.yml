@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : "Fight for Money" # site tagline that appears below site title in masthead
 name                     : "권민혁(Minhyeok Kwon)"
 description              : "학습 내용 정리 블로그"
-url                      : "https://Danny-Kwon.github.io"
+url                      : "https://danny-kwon.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
