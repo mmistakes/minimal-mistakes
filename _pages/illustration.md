@@ -7,8 +7,8 @@ gallery:
     image_path: /assets/images/profile.JPG
     alt: "NCCU1"
     title: "NCCU-1"
-  - url: /assets/images/2020/2.jpg
-    image_path: /assets/images/2020/2.jpg
+  - url: /assets/images/2020/ 2.jpg
+    image_path: /assets/images/2020/ 2.jpg
     alt: "NCCU2"
     title: "NCCU-2"
   - url: /assets/images/2020/3.jpg
