@@ -3,6 +3,7 @@ title: "我在“双非”学新闻"
 excerpt: ""
 layout: single
 page-date: false
+show_date: false
 ---
 <div style="text-align: center;">
   <img src="/assets/images/fouryearsjournalism/1.jpg" alt="fouryearsjournalism1">
