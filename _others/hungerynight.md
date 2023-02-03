@@ -1,6 +1,6 @@
 ---
 title: "没有吃饱的夜晚"
-excerpt: "hungerynight"
+excerpt: "A Hungery Night"
 layout: single
 header:
   teaser: /assets/images/hungerynight/header.jpg

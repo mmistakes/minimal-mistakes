@@ -1,9 +1,8 @@
 ---
 title: "我在“双非”学新闻"
-excerpt: "four years in journalism"
+excerpt: "Studying Journalism as a *Shuangfei* Student"
 layout: single
 header:
-  image: /assets/images/fouryearsjournalism/header.jpg
   teaser: /assets/images/fouryearsjournalism/header.jpg
 ---
 <div style="text-align: center;">

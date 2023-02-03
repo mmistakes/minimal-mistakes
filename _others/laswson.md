@@ -1,6 +1,6 @@
 ---
 title: "当我和猫在便利店"
-excerpt: "When my cat and I in lawson"
+excerpt: "When My Cat and I in Lawson"
 layout: single
 header:
   teaser: /assets/images/lawson/header.jpg
