@@ -20,4 +20,7 @@ layout: single
   <img src="/assets/images/fouryearsjournalism/13.jpg" alt="fouryearsjournalism13">
   <img src="/assets/images/fouryearsjournalism/14.jpg" alt="fouryearsjournalism14">
   <img src="/assets/images/fouryearsjournalism/15.jpg" alt="fouryearsjournalism15">
+  <img src="/assets/images/fouryearsjournalism/16.jpg" alt="fouryearsjournalism16">
 </div>
+
+
