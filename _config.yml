@@ -363,3 +363,4 @@ defaults:
       author_profile: false
       share: false
       show_date: false
+      page_date: false
