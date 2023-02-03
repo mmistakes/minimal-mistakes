@@ -22,7 +22,7 @@ Work experience
 ======
 * 2023: Graduate Research Intern, Quantum Computational Sciences
   * Oak Ridge National Laboratory
-  * Project: Variational and quantum kernel based classifiers.
+  * Project: Variational and kernel based quantum classifiers.
   * Supervisor: Vicente Leyton-Ortega
   
 * 2021: Graduate Research Intern, Quantum Computational Sciences
