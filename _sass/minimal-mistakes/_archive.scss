@@ -157,9 +157,9 @@
   @include breakpoint($small) {
     float: left;
     /*2023.2.3*/
-    width: span(6 of 10);
+    width: 70%;
 
-    &:nth-child(2n + 1) {
+   /* &:nth-child(2n + 1) {
       clear: both;
       margin-left: 0;
     }
@@ -167,16 +167,16 @@
     &:nth-child(2n + 2) {
       clear: none;
       margin-left: gutter(of 10);
-    }
+    }*/
   }
 
   @include breakpoint($medium) {
     margin-left: 0; /* override margin*/
     margin-right: 0; /* override margin*/
     /*2023.2.3*/
-    width: span(5 of 12);
+    width: 70%;
 
-    &:nth-child(2n + 1) {
+    /*&:nth-child(2n + 1) {
       clear: none;
     }
 
@@ -197,7 +197,7 @@
     &:nth-child(4n + 4) {
       clear: none;
       margin-left: gutter(1 of 12);
-    }
+    }*/
   }
 
   .page__meta {
