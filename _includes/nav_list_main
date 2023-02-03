@@ -53,8 +53,8 @@
                     {% if category[0] == "Develop" %}
                         <li><a href="/categories/Develop" class="">개발({{category[1].size}})</a></li>
                     {% endif %}
-                    {% if category[0] == "Git" %}
-                        <li><a href="/categories/Git" class="">깃 & 깃허브({{category[1].size}})</a></li>
+                    {% if category[0] == "GitHub" %}
+                        <li><a href="/categories/GitHub" class="">깃 & 깃허브({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
