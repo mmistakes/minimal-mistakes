@@ -1,6 +1,6 @@
 ---
 title: "我在“双非”学新闻"
-excerpt: ""
+excerpt: "four years in journalism"
 layout: single
 header:
    image:/assets/images/fouryearsjournalism/header.jpg
