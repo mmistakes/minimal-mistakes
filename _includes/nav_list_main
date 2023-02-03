@@ -1,0 +1,67 @@
+{% assign sum = site.posts | size %}
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <li>
+            📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
+      </li>
+      <li>
+        <span class="nav__sub-title">Mathematics</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Linear-algebra" %}
+                        <li><a href="/categories/Linear-algebra" class="">선형대수(with 파이썬)({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <span class="nav__sub-title">Coding Test</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Algorithm" %}
+                        <li><a href="/categories/Algorithm" class="">백준({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        
+        <span class="nav__sub-title">DataBase</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "DataBase" %}
+                        <li><a href="/categories/DataBase" class="">데이터베이스({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            
+        <span class="nav__sub-title">MLDL</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Hongong_mldl" %}
+                        <li><a href="/categories/Hongong_mldl" class="">혼자 공부하는 머신러닝+딥러닝({{category[1].size}})</a></li>
+                    {% endif %}
+                    {% if category[0] == "MachineLearning" %}
+                        <li><a href="/categories/MachineLearning" class="">머신러닝({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <span class="nav__sub-title">Ect</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Develop" %}
+                        <li><a href="/categories/Develop" class="">개발({{category[1].size}})</a></li>
+                    {% endif %}
+                    {% if category[0] == "Git" %}
+                        <li><a href="/categories/Git" class="">깃 & 깃허브({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+      <li>	
+            <br>      
+            <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Finhopp.github.io&count_bg=%2388A4D3&title_bg=%23555555&icon=linux.svg&icon_color=%23F9F9F9&title=visitors&edge_flat=false"/>
+      </li>
+  </ul>
+</nav>

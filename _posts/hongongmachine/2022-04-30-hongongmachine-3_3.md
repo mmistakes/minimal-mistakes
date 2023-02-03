@@ -1,18 +1,18 @@
 ---
 layout: single
-title:  "[혼공머신러닝] 3 - 3 특성 공학과 규제"
-categories: hongongmachine
+title: "[혼공머신러닝] 3 - 3 특성 공학과 규제"
+categories: Hongong_mldl
 tag: [python, Machine Learning]
 toc: true
 ---
 
 ## 특성 공학과 규제
 
-***
+---
 
 ### 1. 용어 정리
 
-특성 공학 : 기존의 특성을 사용해 새로운 특성을 뽑아내는 작업 
+특성 공학 : 기존의 특성을 사용해 새로운 특성을 뽑아내는 작업
 
 판다스 : 파이썬 데이터 처리를 위한 라이브러리입니다.
 
@@ -28,7 +28,7 @@ toc: true
 
 하이퍼파라미터 : 머신러닝 모델이 학습할 수 없고 사람이 알려줘야 하는 파라미터
 
-***
+---
 
 ### 2. 문제 풀이
 
@@ -37,9 +37,9 @@ toc: true
 판다스라는 유명한 데이터 분석 라이브러리를 사용합니다. 데이터프레임은 판다스의 핵심 데이터 구조로 넘파이 배열보다 많은 기능을 제공해 줍니다. 또 데이터프레임은 넘파이 배열로 쉽게 바꿀 수도 있습니다. read_csv() 함수를 사용하여 넘파이 배열로 바꿔드립니다.
 
 ```python
-import pandas as pd 
+import pandas as pd
 df = pd.read_csv('https://bit.ly/perch_csv_data')
-perch_full = df.to_numpy() 
+perch_full = df.to_numpy()
 print(perch_full)
 ```
 
@@ -100,28 +100,26 @@ print(perch_full)
      [43.5  12.6   8.14]
      [44.   12.49  7.6 ]]
 
-
-
 ```python
 import numpy as np
 
 perch_weight = np.array(
-    [5.9, 32.0, 40.0, 51.5, 70.0, 100.0, 78.0, 80.0, 85.0, 85.0, 
-     110.0, 115.0, 125.0, 130.0, 120.0, 120.0, 130.0, 135.0, 110.0, 
-     130.0, 150.0, 145.0, 150.0, 170.0, 225.0, 145.0, 188.0, 180.0, 
-     197.0, 218.0, 300.0, 260.0, 265.0, 250.0, 250.0, 300.0, 320.0, 
-     514.0, 556.0, 840.0, 685.0, 700.0, 700.0, 690.0, 900.0, 650.0, 
-     820.0, 850.0, 900.0, 1015.0, 820.0, 1100.0, 1000.0, 1100.0, 
+    [5.9, 32.0, 40.0, 51.5, 70.0, 100.0, 78.0, 80.0, 85.0, 85.0,
+     110.0, 115.0, 125.0, 130.0, 120.0, 120.0, 130.0, 135.0, 110.0,
+     130.0, 150.0, 145.0, 150.0, 170.0, 225.0, 145.0, 188.0, 180.0,
+     197.0, 218.0, 300.0, 260.0, 265.0, 250.0, 250.0, 300.0, 320.0,
+     514.0, 556.0, 840.0, 685.0, 700.0, 700.0, 690.0, 900.0, 650.0,
+     820.0, 850.0, 900.0, 1015.0, 820.0, 1100.0, 1000.0, 1100.0,
      1000.0, 1000.0]
-     ) 
+     )
 ```
-
 
 ```python
 from sklearn.model_selection import train_test_split
 train_input, test_input, train_target, test_target = train_test_split(perch_full, perch_weight, random_state=42)
 ```
-***
+
+---
 
 #### 2 - 2. 사이킷런의 변환기
 
@@ -136,7 +134,7 @@ print(poly.transform([[2, 3]]))
 
     [[2. 3. 4. 6. 9.]]
 
-***
+---
 
 #### 2 - 3. 다중 회귀 모델 훈련하기
 
@@ -157,7 +155,7 @@ print(lr.score(test_poly, test_target))
 이처럼 특성을 추가하면 문제가 생기지 않는 것을 확인해본 결과 3제곱, 4제곱 ,5제곱까지 특성을 추가해 출력을 해보겠습니다.
 
 ```python
-poly = PolynomialFeatures(degree=5, include_bias=False) 
+poly = PolynomialFeatures(degree=5, include_bias=False)
 
 poly.fit(train_input)
 train_poly = poly.transform(train_input)
@@ -167,8 +165,6 @@ print(train_poly.shape)
 
     (42, 55)
 
-
-
 ```python
 lr.fit(train_poly, train_target)
 print(lr.score(train_poly, train_target))
@@ -176,17 +172,15 @@ print(lr.score(train_poly, train_target))
 
     0.9999999999991097
 
-
-
 ```python
 print(lr.score(test_poly, test_target))
 ```
 
     -144.40579242684848
 
-테스트 점수는 아주 큰 음수가 나오는걸 확인해 볼 수 있습니다. 특성의 개수를 크게 늘리면 선형 모델은 강력해지지만 너무 크게 늘릴 경우 형편없는 값이 나오게 됩니다. 
+테스트 점수는 아주 큰 음수가 나오는걸 확인해 볼 수 있습니다. 특성의 개수를 크게 늘리면 선형 모델은 강력해지지만 너무 크게 늘릴 경우 형편없는 값이 나오게 됩니다.
 
-***
+---
 
 #### 2 - 4. 규제
 
@@ -194,7 +188,7 @@ print(lr.score(test_poly, test_target))
 
 ![Alt text](https://i.esdrop.com/d/f/uVJApfFjHN/8Kuz1PRdz2.jpg)
 
-훈련 세트로 학습한 변환기를 사용해 테스트 세트까지 변환해줍니다. 
+훈련 세트로 학습한 변환기를 사용해 테스트 세트까지 변환해줍니다.
 
 ```python
 from sklearn.preprocessing import StandardScaler
@@ -204,14 +198,14 @@ train_scaled = ss.transform(train_poly)
 test_scaled = ss.transform(test_poly)
 ```
 
-***
+---
 
 #### 2 - 5. 릿지 회귀
 
 선형 회귀 모델에 규제를 추가한 모델 중 계수를 제곱한 값을 기준으로 규제를 적용합니다.
 
 ```python
-from sklearn.linear_model import Ridge 
+from sklearn.linear_model import Ridge
 ridge = Ridge()
 ridge.fit(train_scaled, train_target)
 print(ridge.score(train_scaled, train_target))
@@ -219,15 +213,13 @@ print(ridge.score(train_scaled, train_target))
 
     0.9896101671037343
 
-
-
 ```python
 print(ridge.score(test_scaled, test_target))
 ```
 
     0.9790693977615397
 
-테스트 세트가 정상적으로 돌아오고 훈련 세트에 너무 과대적합되지 않아 테스트 세트에서도 좋은 성능을 내고 있습니다. 
+테스트 세트가 정상적으로 돌아오고 훈련 세트에 너무 과대적합되지 않아 테스트 세트에서도 좋은 성능을 내고 있습니다.
 
 ```python
 import matplotlib.pyplot as plt
@@ -248,6 +240,7 @@ plt.xlabel('alpha')
 plt.ylabel('R^2')
 plt.show()
 ```
+
 ![Alt text](https://i.esdrop.com/d/f/uVJApfFjHN/itDq2JMfwN.jpg)
 
 적절한 alpha 값은 두 그래프가 가장 가깝고 테스트 세트의 점수가 가장 높은 -1, 즉 0.1입니다. alpha 값이 0.1로 결정을 하여 훈련을 하겠습니다.
@@ -265,14 +258,14 @@ print(ridge.score(test_scaled, test_target))
     0.9903815817570366
     0.9827976465386926
 
-***
+---
 
 #### 2 - 6. 라쏘 회귀
 
 릿지 회귀의 방식과 똑같이 진행해보겠습니다.기본적으로 라쏘 또한 릿지 회귀와 같이 과대적합을 잘 억제했고, 테스트 세트의 점수도 좋게 나왔습니다.
 
 ```python
-from sklearn.linear_model import Lasso 
+from sklearn.linear_model import Lasso
 lasso = Lasso()
 lasso.fit(train_scaled, train_target)
 print(lasso.score(train_scaled, train_target))
@@ -326,7 +319,7 @@ print(lasso.score(test_scaled, test_target))
     0.9888067471131867
     0.9824470598706695
 
-***
+---
 
 공부한 전체 코드는 깃허브에 올렸습니다.
 <https://github.com/mgskko/Data_science_Study-hongongmachine/blob/main/%ED%98%BC%EA%B3%B5%EB%A8%B8%EC%8B%A0_3%EA%B0%95_3.ipynb>

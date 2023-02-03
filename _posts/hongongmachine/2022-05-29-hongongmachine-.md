@@ -1,7 +1,7 @@
 ---
 layout: single
-title:  "[혼공머신러닝] 7 - 1 인공신경망"
-categories: hongongmachine
+title: "[혼공머신러닝] 7 - 1 인공신경망"
+categories: Hongong_mldl
 tag: [python, Machine Learning]
 toc: true
 ---
@@ -16,10 +16,11 @@ toc: true
 
 밀집층 : 가장 간단한 인공 신경망의 층
 
-원-핫 인코딩 : 정숫값을 배열에서 해당 정수 위치의 원소만 1이고 나머지 모두 0으로 변환한다. 
+원-핫 인코딩 : 정숫값을 배열에서 해당 정수 위치의 원소만 1이고 나머지 모두 0으로 변환한다.
 
-***
-### 2. 인공신경망 
+---
+
+### 2. 인공신경망
 
 #### 2 - 1. 패션 mnist
 
@@ -29,6 +30,7 @@ toc: true
 from tensorflow import keras
 (train_input, train_target), (test_input, test_target) = keras.datasets.fashion_mnist.load_data()
 ```
+
 훈련 데이터에 60,000개의 이미지로 이루어져 있고 28X28 사이즈의 크기인것을 확인해 볼 수 있습니다.
 
 ```python
@@ -47,7 +49,6 @@ for i in range(10):
   axs[i].axis('off')
 plt.show()
 ```
-
 
 ![png](https://i.esdrop.com/d/f/uVJApfFjHN/jYaE0iWjWd.jpg)
 
@@ -72,22 +73,20 @@ print(np.unique(train_target, return_counts=True))
 
     (array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=uint8), array([6000, 6000, 6000, 6000, 6000, 6000, 6000, 6000, 6000, 6000]))
 
-
 ### 2 - 2. 로지스틱 회귀로 패션 아이템 분류하기
 
 훈련샘플이 60,000개나 되기 때문에 전체 데이터를 한꺼번에 사용하는 것보다 샘플을 하나씩 꺼내서 훈련시키는 방법이 더 효율적입니다.
- -> 확률적 경사 하강법
-
+-> 확률적 경사 하강법
 
 SGDClassifier를 사용할 때 표준화 전처리된 데이터를 사용합니다. 확률적 경사 하강법은 여러 특성 중 기울기가 가장 가파른 방향을 따라 이동합니다. 특성마다 값의 범위가 많이 다르면 올바르게 손실 함수의 경사를 내려올 수 없습니다.
 <br>
 SGDClassifier은 2차원 입력을 다루지 못하므로 샘플을 1차원 배열로 만들어 줍니다.
 
-
 ```python
-train_scaled = train_input / 255.0 
+train_scaled = train_input / 255.0
 train_scaled = train_scaled.reshape(-1, 28*28)
 ```
+
 변환된 train_scaled를 확인해보면 784개의 픽셀로 이루어진 60000개의 샘플로 되었음을 볼 수 있습니다.
 
 ```python
@@ -110,17 +109,15 @@ print(np.mean(scores['test_score']))
 
     0.8195666666666668
 
-
 ### 2 - 3. 인공 신경망으로 모델 만들기
 
- 
 ```python
 import tensorflow as tf
 from tensorflow import keras
 ```
 
+인공신경망에서는 교차 검증을 사용하지 않고 검증 세트를 별도로 덜어내어 사용합니다. 이렇게 하는 이유는
 
-인공신경망에서는 교차 검증을 사용하지 않고 검증 세트를 별도로 덜어내어 사용합니다. 이렇게 하는 이유는 
 1. 딥러닝 분야의 데이터셋은 충분히 크기 때문에 검증 점수가 안정적입니다.
 2. 교차 검증을 수행하기에는 훈련 시간이 오래 걸리기 때문입니다.
 
@@ -141,8 +138,6 @@ print(train_scaled.shape, train_target.shape)
 
     (48000, 784) (48000,)
 
-
-
 ```python
 print(val_scaled.shape, val_target.shape)
 ```
@@ -153,25 +148,24 @@ print(val_scaled.shape, val_target.shape)
 
 ![png](https://i.esdrop.com/d/f/uVJApfFjHN/D2MUpPLEy0.jpg)
 
-다음 그림에서 왼쪽에 있는 784개의 픽셀과 오른쪽에 있는 10개의뉴런이 모두 연결되어 있습니다. 총 784 *10 = 7,840개의 연결된 선들이 있습니다. 이러한 이유로 밀집층이라고 불립니다.
+다음 그림에서 왼쪽에 있는 784개의 픽셀과 오른쪽에 있는 10개의뉴런이 모두 연결되어 있습니다. 총 784 \*10 = 7,840개의 연결된 선들이 있습니다. 이러한 이유로 밀집층이라고 불립니다.
 
 ![png](https://i.esdrop.com/d/f/uVJApfFjHN/VVpzcIxWuU.jpg)
 
-케라스의 Dense 클래스를 사용해 밀집층을 만들어 봅니다. 
+케라스의 Dense 클래스를 사용해 밀집층을 만들어 봅니다.
 
 ```python
 dense = keras.layers.Dense(10,activation='softmax', input_shape=(784,))
 # 10은 뉴런 개수 ,activation='softmax'는 뉴런의 출력에 적용할 함수, input_shape=(784,)는 입력의 크기입니다.
 ```
 
-케라스의 Sequential클래스를 사용해봅니다. 
+케라스의 Sequential클래스를 사용해봅니다.
 
 ```python
 model = keras.Sequential(dense)
 ```
 
 ![png](https://i.esdrop.com/d/f/uVJApfFjHN/sAJrKvvu8k.jpg)
-
 
 ### 2 - 4. 인공신경망으로 패션 아이템 분류하기
 
@@ -213,7 +207,6 @@ model.fit(train_scaled, train_target, epochs=5)
     <keras.callbacks.History at 0x7fd2d2195950>
 
 evaluate() 메서드도 fit() 메서드와 비슷한 출력을 보여줍니다.
-
 
 ```python
 model.evaluate(val_scaled, val_target)

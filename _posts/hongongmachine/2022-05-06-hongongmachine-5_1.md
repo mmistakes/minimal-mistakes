@@ -1,16 +1,14 @@
 ---
 layout: single
-title:  "[혼공머신러닝] 5 - 1 결정트리"
-categories: hongongmachine
+title: "[혼공머신러닝] 5 - 1 결정트리"
+categories: Hongong_mldl
 tag: [python, Machine Learning]
 toc: true
-
 ---
 
 ## 결정 트리
 
-
-***
+---
 
 ### 1. 용어 정리
 
@@ -21,7 +19,8 @@ toc: true
 정보 이득 : 부모 노드와 자식 노드의 불순도 차이입니다. 결정 트리 알고리즘은 정보 이득이 최대화되도록 학습합니다.
 
 특성 중요도 : 결정 트리에 사용된 특성이 불순도를 감소하는데 기여한 정도를 나타내는 값입니다.
-***
+
+---
 
 ### 2. 로지스틱 회귀로 와인 분류하기
 
@@ -51,6 +50,7 @@ wine.head()
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -105,12 +105,12 @@ wine.head()
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-       width="24px">
-    <path d="M0 0h24v24H0V0z" fill="none"/>
-    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
-  </svg>
-      </button>
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+width="24px">
+<path d="M0 0h24v24H0V0z" fill="none"/>
+<path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+</svg>
+</button>
 
   <style>
     .colab-df-container {
@@ -175,6 +175,7 @@ wine.head()
         }
       </script>
     </div>
+
   </div>
 
 info() 메서드를 통해 데이터가 누락이 되있는지 확인을 해 봅니다.
@@ -186,15 +187,14 @@ wine.info()
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 6497 entries, 0 to 6496
     Data columns (total 4 columns):
-     #   Column   Non-Null Count  Dtype  
-    ---  ------   --------------  -----  
+     #   Column   Non-Null Count  Dtype
+    ---  ------   --------------  -----
      0   alcohol  6497 non-null   float64
      1   sugar    6497 non-null   float64
      2   pH       6497 non-null   float64
      3   class    6497 non-null   float64
     dtypes: float64(4)
     memory usage: 203.2 KB
-
 
 이번에는 describe() 메서드를 통해 평균, 표준편차, 최소, 최대, 사분위수 등의 값을 확인해봅니다.
 
@@ -217,6 +217,7 @@ wine.describe()
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -292,12 +293,12 @@ wine.describe()
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-       width="24px">
-    <path d="M0 0h24v24H0V0z" fill="none"/>
-    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
-  </svg>
-      </button>
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+width="24px">
+<path d="M0 0h24v24H0V0z" fill="none"/>
+<path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+</svg>
+</button>
 
   <style>
     .colab-df-container {
@@ -362,11 +363,11 @@ wine.describe()
         }
       </script>
     </div>
+
   </div>
 
 판다스 데이터 프레임을 넘파이 배열로 바꾼 후 이제 와인 데이터를 타깃과 데이터로 분류 후, 테스트 세트와 훈련 세트로 또 분류합니다.
 각 개수를 6번 코드를 통해 확인 해보니 훈련 세트 5197개, 테스트 세트 1300개로 나뉘어집니다.
-
 
 ```python
 data = wine[['alcohol', 'sugar', 'pH']].to_numpy()
@@ -394,7 +395,7 @@ print(lr.score(test_scaled, test_target))
     0.7808350971714451
     0.7776923076923077
 
-이러한 계수와 절편은 일반인에게 설명하기는 어렵습니다. 우리도 이 모델이 이러한 값을 학습했는지 정확히 이해하기 어렵다.  이 숫자가 어떤 의미인지 설명하기 어렵기 때문에, 쉽게 설명하기 방법으로 **결정 트리(Decision Tree)** 모델을 사용합니다.
+이러한 계수와 절편은 일반인에게 설명하기는 어렵습니다. 우리도 이 모델이 이러한 값을 학습했는지 정확히 이해하기 어렵다. 이 숫자가 어떤 의미인지 설명하기 어렵기 때문에, 쉽게 설명하기 방법으로 **결정 트리(Decision Tree)** 모델을 사용합니다.
 
 결정 트리 모델은 스무고개와 같이 질문을 하나씩 던져서 정답과 맞춰가는 겁니다.
 
@@ -403,7 +404,6 @@ print(lr.coef_, lr.intercept_)
 ```
 
     [[ 0.51270274  1.6733911  -0.68767781]] [1.81777902]
-
 
 ### 3. 결정트리
 
@@ -423,10 +423,8 @@ print(dt.score(test_scaled, test_target))
     0.996921300750433
     0.8592307692307692
 
-
 결정 트리는 위에서 아래로 거꾸로 자랍니다. 맨 위의 노드를 **루트 노드**라고 하고 맨 아래 끝에 달린 노드를 **리프 노드**라고 한다.
 filled 매개변수에서 클래스에 맞게 노드의 색을 칠할 수 있습니다.feature_names 매개변수는 특성의 이름을 전달합니다.
-
 
 ```python
 plt.figure(figsize=(10,7))
@@ -436,7 +434,6 @@ plt.show
 
 ![png](https://i.esdrop.com/d/f/uVJApfFjHN/BNRNZUvMAC.jpg)
 
-
 <br>
 
 ![png](https://i.esdrop.com/d/f/uVJApfFjHN/SluwRDp6m9.jpg)
@@ -445,15 +442,14 @@ plt.show
 
 ![png](https://i.esdrop.com/d/f/uVJApfFjHN/p7D60x6hZ3.jpg)
 
-하나씩 살펴보면 처음 루트 노드는 당도가 -0.239이하인지를 질문합니다. 어떤 샘플의 당도가  -0.239와 같거나 작으면 왼쪽으로 가고 그렇지 않으면 오른쪽 가지로 이동합니다. 총 샘플 5197개에서 왼쪽으로 2922개, 오른쪽으로 2275개가 이동한 것입니다. value는 [음성클래스 개수, 양성클래스 개수]입니다.
-
+하나씩 살펴보면 처음 루트 노드는 당도가 -0.239이하인지를 질문합니다. 어떤 샘플의 당도가 -0.239와 같거나 작으면 왼쪽으로 가고 그렇지 않으면 오른쪽 가지로 이동합니다. 총 샘플 5197개에서 왼쪽으로 2922개, 오른쪽으로 2275개가 이동한 것입니다. value는 [음성클래스 개수, 양성클래스 개수]입니다.
 
 ### 3 - 1. 불순도
 
 ![png](https://i.esdrop.com/d/f/uVJApfFjHN/m1gI2jE5SO.png)
 
-빨간색 동그라미 친 gini는 **지니 불순도**를 의미합니다. 
-지니 불순도는 클래스의 비율을 제곱해서 더한 다음 1에서 빼면 됩니다. 
+빨간색 동그라미 친 gini는 **지니 불순도**를 의미합니다.
+지니 불순도는 클래스의 비율을 제곱해서 더한 다음 1에서 빼면 됩니다.
 $$지니 불순도 = 1 - (음성 클래스 비율^2 + 양성 클래스 비율^2)$$
 
 <br>
@@ -469,6 +465,7 @@ DecisionTreeClassifier 클래스의 max_depth 매개변수를 3으로 지정해 
 <br>
 
 훈련세트의 성능은 낮아졌지만 테스트 세트의 성능은 거의 그대로입니다.
+
 ```python
 dt = DecisionTreeClassifier(max_depth=3, random_state=42)
 dt.fit(train_scaled, train_target)
@@ -488,17 +485,15 @@ plot_tree(dt, filled=True, feature_names=['alcohol', 'sugar', 'pH'])
 plt.show()
 ```
 
-
 ![png](https://i.esdrop.com/d/f/uVJApfFjHN/bdoOdQFU2G.png)
 
- 두 번째 특성인 당도가 0.87로 제일 중요하고 그다음 알코올 도수, pH순으로 중요합니다.
+두 번째 특성인 당도가 0.87로 제일 중요하고 그다음 알코올 도수, pH순으로 중요합니다.
 
 ```python
 print(dt.feature_importances_)
 ```
 
     [0.12345626 0.86862934 0.0079144 ]
-
 
 공부한 전체 코드는 깃허브에 올렸습니다.
 <https://github.com/mgskko/Data_science_Study-hongongmachine/blob/main/%ED%98%BC%EA%B3%B5%EB%A8%B8%EC%8B%A0_5%EA%B0%95_1.ipynb>

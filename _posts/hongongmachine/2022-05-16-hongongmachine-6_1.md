@@ -1,14 +1,14 @@
 ---
 layout: single
-title:  "[혼공머신러닝] 6 - 1 군집 알고리즘"
-categories: hongongmachine
+title: "[혼공머신러닝] 6 - 1 군집 알고리즘"
+categories: Hongong_mldl
 tag: [python, Machine Learning]
 toc: true
 ---
 
 ## 군집 알고리즘
 
-***
+---
 
 ### 1. 용어 정리
 
@@ -20,10 +20,9 @@ toc: true
 
 클러스터 : 군집 알고리즘에서 만든 그룹
 
-***
+---
 
 ### 2. 비지도 학습
-
 
 #### 2 - 1. 과일 사진 데이터 준비
 
@@ -32,13 +31,14 @@ toc: true
 import numpy as np
 import matplotlib.pyplot as plt
 ```
-여기서 !는 코랩의 코드 셀에서 리눅스 셀 명령어로 인식하고 wget 명령은 원격 주소에서 데이터를 다운로드하여 저장합니다. 이 명령어를 실행하면 fruit_300.npy가 저장된것을 확인한 후에 load로 데이터를 불러옵니다. 
+
+여기서 !는 코랩의 코드 셀에서 리눅스 셀 명령어로 인식하고 wget 명령은 원격 주소에서 데이터를 다운로드하여 저장합니다. 이 명령어를 실행하면 fruit_300.npy가 저장된것을 확인한 후에 load로 데이터를 불러옵니다.
 
 ```python
 fruits = np.load('fruits_300.npy')
 ```
 
-첫번째 차원(300)은 샘플의 개수를 나타내고, 두 번째 차원(100)은 이미지 높이, 세번째 차원(100)은 이미지 너비입니다. 
+첫번째 차원(300)은 샘플의 개수를 나타내고, 두 번째 차원(100)은 이미지 높이, 세번째 차원(100)은 이미지 너비입니다.
 
 ```python
 print(fruits.shape)
@@ -66,7 +66,6 @@ plt.imshow(fruits[0], cmap='gray')
 plt.show()
 ```
 
-
 ![png](https://i.esdrop.com/d/f/uVJApfFjHN/5XFBFu7s5W.jpg)
 
 우리가 봐야할 대상은 바탕이 아닌 사과입니다. 고로 흰색 바탕은 우리에게 중요하지 않고 사과가 중요하기 때문에 바탕을 검게 만들고 사과를 밝게 만들겠습니다. 'gray_r'을 사용하면 반전하여 우리 눈에 편하게 해줍니다.
@@ -76,25 +75,22 @@ plt.imshow(fruits[0], cmap='gray_r')
 plt.show()
 ```
 
-
 ![png](https://i.esdrop.com/d/f/uVJApfFjHN/nKho5mkiF4.jpg)
 
 바나나와 파인애플도 출력해보겠습니다.
 
 ```python
 fig,axs = plt.subplots(1,2)
-axs[0].imshow(fruits[100], cmap='gray_r') 
+axs[0].imshow(fruits[100], cmap='gray_r')
 axs[1].imshow(fruits[200], cmap='gray_r')
 plt.show()
 ```
 
-
 ![png](https://i.esdrop.com/d/f/uVJApfFjHN/99lmOOo8CT.jpg)
-
 
 #### 2 - 2. 픽셀값 분석하기
 
-사용하기 쉽게하기 위해 데이터를 사과, 파인애플, 바나나로 각각 나누어 줍니다. 이미지로는 출력하기에는 불편하지만 배열을 계산할 때는 편리합니다. reshap(-1,100*100)을 사용해 차원을 할당해 줍니다. 
+사용하기 쉽게하기 위해 데이터를 사과, 파인애플, 바나나로 각각 나누어 줍니다. 이미지로는 출력하기에는 불편하지만 배열을 계산할 때는 편리합니다. reshap(-1,100\*100)을 사용해 차원을 할당해 줍니다.
 
 ```python
 apple = fruits[0:100].reshape(-1,100*100)
@@ -102,14 +98,11 @@ pineapple = fruits[100:200].reshape(-1,100*100)
 banana = fruits[200:300].reshape(-1,100*100)
 ```
 
-
 ```python
 print(apple.shape)
 ```
 
     (100, 10000)
-
-
 
 ```python
 print(apple.mean(axis = 1))
@@ -130,7 +123,7 @@ print(apple.mean(axis = 1))
      101.556  100.7027  91.6098  88.8976]
 
 숫자로는 알아보기 힘드니까 히스토그램으로 알아봅니다.
-바나나의 경우 평균값은 40아래에 집중되어 있고 사과와 파인애플은 겹쳐보입니다. 즉 사과와 파인애플을 구별하기 어렵습니다. 
+바나나의 경우 평균값은 40아래에 집중되어 있고 사과와 파인애플은 겹쳐보입니다. 즉 사과와 파인애플을 구별하기 어렵습니다.
 
 ```python
 plt.hist(np.mean(apple, axis=1), alpha=0.8)
@@ -140,17 +133,11 @@ plt.legend(['apple', 'pineapple', 'banana'])
 plt.show
 ```
 
-
-
-
     <function matplotlib.pyplot.show>
-
-
-
 
 ![png](https://i.esdrop.com/d/f/uVJApfFjHN/8nCfKU4w22.jpg)
 
-샘플의 평균값이 아닌 픽셀별 평균값을 비교해 보겠습니다. 평균을 계산하는 것은 axis=0으로 지정해주면 됩니다. 
+샘플의 평균값이 아닌 픽셀별 평균값을 비교해 보겠습니다. 평균을 계산하는 것은 axis=0으로 지정해주면 됩니다.
 
 ```python
 fig, axs = plt.subplots(1, 3, figsize=(20, 5))
@@ -160,10 +147,9 @@ axs[2].bar(range(10000), np.mean(banana, axis=0))
 plt.show()
 ```
 
-
 ![png](https://i.esdrop.com/d/f/uVJApfFjHN/Dk87RjepAF.jpg)
 
-100 X 100으로 바꿔서 이미지처럼 출력해 위 그래프와 비교해봅니다. 
+100 X 100으로 바꿔서 이미지처럼 출력해 위 그래프와 비교해봅니다.
 
 ```python
 apple_mean = np.mean(apple,axis=0).reshape(100,100)
@@ -176,13 +162,11 @@ axs[2].imshow(banana_mean, cmap='gray_r')
 plt.show()
 ```
 
-
 ![png](https://i.esdrop.com/d/f/uVJApfFjHN/U6GK09Emma.jpg)
-
 
 #### 2 - 3. 평균값과 가까운 사진 고르기
 
-절댓값 함수인 abs()를 사용하여 apple_mean과 오차가 가장 작은 샘플 100개를 골라봅니다. 그 후 subplots()함수를 사용해 100개의 사진을 출력해봅니다. 
+절댓값 함수인 abs()를 사용하여 apple_mean과 오차가 가장 작은 샘플 100개를 골라봅니다. 그 후 subplots()함수를 사용해 100개의 사진을 출력해봅니다.
 
 ```python
 abs_diff = np.abs(fruits - apple_mean)
@@ -191,8 +175,6 @@ print(abs_mean.shape)
 ```
 
     (300,)
-
-
 
 ```python
 apple_index = np.argsort(abs_mean)[:100]
@@ -204,9 +186,7 @@ for i in range(10):
 plt.show()
 ```
 
-
 ![png](https://i.esdrop.com/d/f/uVJApfFjHN/s0Tg2QK1Zq.jpg)
-
 
 공부한 전체 코드는 깃허브에 올렸습니다.
 <https://github.com/mgskko/Data_science_Study-hongongmachine/blob/main/%ED%98%BC%EA%B3%B5%EB%A8%B8%EC%8B%A0_6%EA%B0%95_1.ipynb>

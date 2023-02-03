@@ -1,7 +1,7 @@
 ---
 layout: single
-title:  "[혼공머신러닝] 3 - 2 선형 회귀"
-categories: hongongmachine
+title: "[혼공머신러닝] 3 - 2 선형 회귀"
+categories: Hongong_mldl
 tag: [python, Machine Learning]
 toc: true
 ---
@@ -16,13 +16,13 @@ toc: true
 
 다항 회귀 : 다항식을 사용하여 특성과 타깃 사이의 관계를 나타냅니다. 이 함수는 비선형일 수 있지만 여전히 선형 회귀로 표현할 수 있습니다.
 
-***
+---
 
 ### 2. 문제 풀이
 
 #### 2 - 1. k-최근접 이웃 회귀의 문제점
 
-지금까지 k-최근접 이웃 회귀 모델을 통해 만들었습니다. 그런데 모델을 학습 시킨 후, 50cm인 농어의 무게를 예측해보니 약 1,033g 정도로 예측했습니다. 실제 무게인 1.5kg과는 상당한 차이가 나는걸 확인해 볼  수 있습니다.
+지금까지 k-최근접 이웃 회귀 모델을 통해 만들었습니다. 그런데 모델을 학습 시킨 후, 50cm인 농어의 무게를 예측해보니 약 1,033g 정도로 예측했습니다. 실제 무게인 1.5kg과는 상당한 차이가 나는걸 확인해 볼 수 있습니다.
 
 ```python
 import numpy as np
@@ -41,7 +41,6 @@ perch_weight = np.array([5.9, 32.0, 40.0, 51.5, 70.0, 100.0, 78.0, 80.0, 85.0, 8
        1000.0])
 ```
 
-
 ```python
 from sklearn.model_selection import train_test_split
 
@@ -52,7 +51,6 @@ train_input, test_input, train_target, test_target = train_test_split(
 train_input = train_input.reshape(-1, 1)
 test_input = test_input.reshape(-1, 1)
 ```
-
 
 ```python
 from sklearn.neighbors import KNeighborsRegressor
@@ -65,7 +63,7 @@ print(knr.predict([[50]]))
 
     [1033.33333333]
 
-***
+---
 
 #### 2 - 2. 선형 회귀
 
@@ -86,16 +84,16 @@ print(lr.predict([[50]]))
 
     [1241.83860323]
 
-선형 회귀 모델로 훈련한 결과 길이가 50인 농어에 대해 k-최근접 회귀보다 조금 더 정확한 값인 1241.83860323kg이 나왔습니다. 
+선형 회귀 모델로 훈련한 결과 길이가 50인 농어에 대해 k-최근접 회귀보다 조금 더 정확한 값인 1241.83860323kg이 나왔습니다.
 
-직선 $y=ax+b$로 나타낼 수 있습니다. $x$는 농어의 길이, $y$는 농어의 무게로 바꾸면 다음과 같습니다. 
+직선 $y=ax+b$로 나타낼 수 있습니다. $x$는 농어의 길이, $y$는 농어의 무게로 바꾸면 다음과 같습니다.
 
 ![Alt text](https://i.esdrop.com/d/f/uVJApfFjHN/6lHAbOZKcE.jpg)
 
 기울기인 $a$와 $y$절편인 $b$를 다음과 같이 확인해줍니다.
 
 ```python
-print(lr.coef_, lr.intercept_) 
+print(lr.coef_, lr.intercept_)
 ```
 
 전체적으로 과소적합이 되었다는걸 볼 수 있습니다.
@@ -110,11 +108,11 @@ print(lr.score(test_input, test_target))
 
     [39.01714496] -709.0186449535477
 
-선형 회귀로 만든 직선이 왼쪽 아래로 뻗어 있습니다. 이렇게 되면 농어의 무게가 0g 밑으로 내려가 문제가 생깁니다. 
+선형 회귀로 만든 직선이 왼쪽 아래로 뻗어 있습니다. 이렇게 되면 농어의 무게가 0g 밑으로 내려가 문제가 생깁니다.
 
 ![Alt text](https://i.esdrop.com/d/f/uVJApfFjHN/g7UiJIURKp.png)
 
-***
+---
 
 #### 2 - 3. 다항 회귀
 
@@ -122,7 +120,7 @@ print(lr.score(test_input, test_target))
 
 ![Alt text](https://i.esdrop.com/d/f/uVJApfFjHN/403RkvOpl5.jpg)
 
-이처럼 2차 방정식의 그래프를 그리려면 길이를 제곱한 항이 훈련 세트에 추가되어야 합니다. 
+이처럼 2차 방정식의 그래프를 그리려면 길이를 제곱한 항이 훈련 세트에 추가되어야 합니다.
 
 ```python
 lr = LinearRegression()
@@ -152,7 +150,7 @@ print(lr.score(test_poly, test_target))
 
 훈련 세트와 테스트 세트에 대한 점수가 크게 높아졌지만 테스트 점수가 더 높은걸 볼 수 있습니다. 그러므로 과소적합이 남아있다고 해석할 수 있습니다.
 
-***
+---
 
 공부한 전체 코드는 깃허브에 올렸습니다.
 <https://github.com/mgskko/Data_science_Study-hongongmachine/blob/main/%ED%98%BC%EA%B3%B5%EB%A8%B8%EC%8B%A0_3%EA%B0%95_2.ipynb>
