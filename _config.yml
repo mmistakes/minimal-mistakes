@@ -354,4 +354,12 @@ defaults:
       layout: single
       author_profile: false
       share: true
-
+ # _others
+  - scope:
+      path: ""
+      type: others
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      show_date: false
