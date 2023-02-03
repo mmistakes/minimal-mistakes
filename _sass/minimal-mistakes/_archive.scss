@@ -137,15 +137,17 @@
 
 .archive {
   .grid__wrapper {
+    
+    /*2023.2.3*/
     /* extend grid elements to the right */
 
-    @include breakpoint($large) {
+    /*@include breakpoint($large) {
       margin-right: -1 * $right-sidebar-width-narrow;
     }
 
     @include breakpoint($x-large) {
       margin-right: -1 * $right-sidebar-width;
-    }
+    }/*
   }
 }
 
@@ -154,7 +156,8 @@
 
   @include breakpoint($small) {
     float: left;
-    width: span(5 of 10);
+    /*2023.2.3*/
+    width: span(10 of 10);
 
     &:nth-child(2n + 1) {
       clear: both;
@@ -170,7 +173,8 @@
   @include breakpoint($medium) {
     margin-left: 0; /* override margin*/
     margin-right: 0; /* override margin*/
-    width: span(3 of 12);
+    /*2023.2.3*/
+    width: span(12 of 12);
 
     &:nth-child(2n + 1) {
       clear: none;
