@@ -3,7 +3,8 @@ title: "我在“双非”学新闻"
 excerpt: "four years in journalism"
 layout: single
 header:
-  teaser:/assets/images/fouryearsjournalism/header.jpg
+  image: /assets/images/fouryearsjournalism/header.jpg
+  teaser: /assets/images/fouryearsjournalism/header.jpg
 ---
 <div style="text-align: center;">
   <img src="/assets/images/fouryearsjournalism/1.jpg" alt="fouryearsjournalism1">
