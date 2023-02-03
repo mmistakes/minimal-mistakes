@@ -1,0 +1,40 @@
+---
+layout: single
+title: "[선형대수(with 파이썬)] 2. 전치 연산, 영벡터, 일벡터"
+categories: linear-algebra
+tag: [python, linear-algebra]
+toc: true
+---
+
+## 전치 연산
+
+---
+
+### 1. 용어 정리
+
+전치 행렬 : 행렬 A의 행과 열을 바꾸어 놓은 행렬
+
+$$
+A_{2,3} =
+ \begin{pmatrix}
+  a_{1,1} & a_{1,2} & a_{1,3} \\
+  a_{2,1} & a_{2,2} & a_{2,3} \\
+ \end{pmatrix}
+$$
+
+$$
+A^T =
+ \begin{pmatrix}
+  a_{1,1} & a_{2,1} \\
+  a_{1,2} & a_{2,2} \\
+  a_{1,3} & a_{3,2} \\
+ \end{pmatrix}
+$$
+
+정리중
+
+---
+
+공부한 전체 코드는 깃허브에 올렸습니다.
+
+<https://github.com/mgskko/linear-algebra-with-python/blob/master/%EC%A0%84%EC%B9%98%EC%97%B0%EC%82%B0.ipynb>
