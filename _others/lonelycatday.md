@@ -1,6 +1,6 @@
 ---
-title: "今天铲屎官不在家"
-excerpt: "Lonelycatday"
+title: "今天，铲屎官不在家"
+excerpt: "Today is ONLYMEOW Day"
 layout: single
 header:
   teaser: /assets/images/lonelycatday/header.jpg
