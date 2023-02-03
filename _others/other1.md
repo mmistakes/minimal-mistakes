@@ -4,5 +4,5 @@ excerpt: "Baz Boom design system including logo mark, website design, and brandi
 layout: splash
 ---
 <div style="text-align: center;">
-  <img src="/assets/imgaes/2021/1.jpg" alt="Your Image">
+  <img src="/assets/imgae/2021/1.jpg" alt="Your Image">
 </div>
