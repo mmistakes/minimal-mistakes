@@ -479,9 +479,9 @@ Let's see an example pinned virtual thread. We want to simulate an employee that
 ```java
 static class Bathroom {
   synchronized void useTheToilet() {
-    logger.info("I'm going to use the toilet");
+    log("I'm going to use the toilet");
     sleep(Duration.ofSeconds(1L));
-    logger.info("I'm done with the toilet");
+    log("I'm done with the toilet");
   }
 }
 ```
@@ -513,10 +513,10 @@ static void twoEmployeesInTheOffice() {
 To see the effect of the synchronization, and the pinning of the `riccardo` virtual thread associated, we limit the carrier pool to one thread, as we did previously. The execution of the `twoEmployeesInTheOffice` produces the following output:
 
 ```
-11:20:42.464 [Go to the toilet] INFO in.rcard.virtual.threads.App - I'm going to use the toilet
-11:20:43.470 [Go to the toilet] INFO in.rcard.virtual.threads.App - I'm done with the toilet
-11:20:43.471 [Take a break] INFO in.rcard.virtual.threads.App - I'm going to take a break
-11:20:44.477 [Take a break] INFO in.rcard.virtual.threads.App - I'm done with the break
+16:29:05.548 [Go to the toilet] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Go to the toilet]/runnable@ForkJoinPool-1-worker-1 | I'm going to use the toilet
+16:29:06.558 [Go to the toilet] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Go to the toilet]/runnable@ForkJoinPool-1-worker-1 | I'm done with the toilet
+16:29:06.559 [Take a break] INFO in.rcard.virtual.threads.App - VirtualThread[#23,Take a break]/runnable@ForkJoinPool-1-worker-1 | I'm going to take a break
+16:29:07.563 [Take a break] INFO in.rcard.virtual.threads.App - VirtualThread[#23,Take a break]/runnable@ForkJoinPool-1-worker-1 | I'm done with the break
 ```
 
 As we can see, the task are completely linearized by the JVM. As we said, the blocking `sleep` operation is inside the `synchronized` `useTheToilet` method, and so the virtual thread is not unmounted. So, the `riccardo` virtual thread is pinned to the carrier thread, and the `daniel` virtual thread finds no available carrier thread to execute. In fact, it is scheduled only when the `riccardo` virtual thread is done with the bathroom.
@@ -530,12 +530,12 @@ It's possible to trace these situations during the execution of a program adding
 The `full` value prints the full stack trace of the pinned virtual thread, while the `short` value prints only less information. The execution of the `twoEmployeesInTheOffice` with the above configuration set to the `short`  value produces the following interesting output:
 
 ```
-11:57:29.982 [Go to the toilet] INFO in.rcard.virtual.threads.App - I'm going to use the toilet
+16:29:05.548 [Go to the toilet] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Go to the toilet]/runnable@ForkJoinPool-1-worker-1 | I'm going to use the toilet
 Thread[#22,ForkJoinPool-1-worker-1,5,CarrierThreads]
-    virtual.threads.playground/in.rcard.virtual.threads.App$Bathroom.useTheToilet(App.java:171) <== monitors:1
-11:57:30.989 [Go to the toilet] INFO in.rcard.virtual.threads.App - I'm done with the toilet
-11:57:30.990 [Take a break] INFO in.rcard.virtual.threads.App - I'm going to take a break
-11:57:31.996 [Take a break] INFO in.rcard.virtual.threads.App - I'm done with the break
+    virtual.threads.playground/in.rcard.virtual.threads.App$Bathroom.useTheToilet(App.java:188) <== monitors:1
+16:29:06.558 [Go to the toilet] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Go to the toilet]/runnable@ForkJoinPool-1-worker-1 | I'm done with the toilet
+16:29:06.559 [Take a break] INFO in.rcard.virtual.threads.App - VirtualThread[#23,Take a break]/runnable@ForkJoinPool-1-worker-1 | I'm going to take a break
+16:29:07.563 [Take a break] INFO in.rcard.virtual.threads.App - VirtualThread[#23,Take a break]/runnable@ForkJoinPool-1-worker-1 | I'm done with the break
 ```
 
 As we guessed, the `riccardo` virtual thread was in fact pinned to its carrier thread. Despite what we previously said, we can also see the name of the carrier thread here. Amazing.
@@ -548,13 +548,13 @@ We can change the configuration of the carrier pool to allow the JVM adding a ne
 -Djdk.virtualThreadScheduler.minRunnable=1
 ```
 
-An execution with the new configuration produces the following output:
+We remove also the property `jdk.tracePinnedThreads` to avoid printing the pinned stacktrace. An execution with the new configuration produces the following output:
 
 ```
-11:51:56.961 [Go to the toilet] INFO in.rcard.virtual.threads.App - I'm going to use the toilet
-11:51:56.961 [Take a break] INFO in.rcard.virtual.threads.App - I'm going to take a break
-11:51:57.970 [Go to the toilet] INFO in.rcard.virtual.threads.App - I'm done with the toilet
-11:51:57.971 [Take a break] INFO in.rcard.virtual.threads.App - I'm done with the break
+16:32:05.235 [Go to the toilet] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Go to the toilet]/runnable@ForkJoinPool-1-worker-1 | I'm going to use the toilet
+16:32:05.235 [Take a break] INFO in.rcard.virtual.threads.App - VirtualThread[#23,Take a break]/runnable@ForkJoinPool-1-worker-2 | I'm going to take a break
+16:32:06.243 [Go to the toilet] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Go to the toilet]/runnable@ForkJoinPool-1-worker-1 | I'm done with the toilet
+16:32:06.243 [Take a break] INFO in.rcard.virtual.threads.App - VirtualThread[#23,Take a break]/runnable@ForkJoinPool-1-worker-2 | I'm done with the break
 ```
 
 The JVM added a new carrier thread to the pool when it found that no carrier thread was available, and so the `daniel` virtual thread is scheduled on the new carrier thread, executing concurrently and interleaving the two logs.
@@ -571,9 +571,9 @@ static class Bathroom {
   void useTheToiletWithLock() {
     if (lock.tryLock(10, TimeUnit.SECONDS)) {
       try {
-        logger.info("I'm going to use the toilet");
+        log("I'm going to use the toilet");
         sleep(Duration.ofSeconds(1L));
-        logger.info("I'm done with the toilet");
+        log("I'm done with the toilet");
       } finally {
         lock.unlock();
       }
@@ -601,11 +601,13 @@ static void twoEmployeesInTheOfficeWithLock() {
 The execution of the `twoEmployeesInTheOfficeWithLock` produces the expected output, which shows the two thread running concurrently:
 
 ```
-13:55:24.445 [Go to the toilet] INFO in.rcard.virtual.threads.App - I'm going to use the toilet
-13:55:24.451 [Take a break] INFO in.rcard.virtual.threads.App - I'm going to take a break
-13:55:25.452 [Go to the toilet] INFO in.rcard.virtual.threads.App - I'm done with the toilet
-13:55:25.452 [Take a break] INFO in.rcard.virtual.threads.App - I'm done with the break
+16:35:58.921 [Take a break] INFO in.rcard.virtual.threads.App - VirtualThread[#23,Take a break]/runnable@ForkJoinPool-1-worker-2 | I'm going to take a break
+16:35:58.921 [Go to the toilet] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Go to the toilet]/runnable@ForkJoinPool-1-worker-1 | I'm going to use the toilet
+16:35:59.932 [Take a break] INFO in.rcard.virtual.threads.App - VirtualThread[#23,Take a break]/runnable@ForkJoinPool-1-worker-1 | I'm done with the break
+16:35:59.933 [Go to the toilet] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Go to the toilet]/runnable@ForkJoinPool-1-worker-2 | I'm done with the toilet
 ```
+
+We can run the above method also with the `jdk.tracePinnedThreads` property set to see that no thread is pinned to its carrier thread during the execution.
 
 ## 7. Some Virtual Threads Internals
 
