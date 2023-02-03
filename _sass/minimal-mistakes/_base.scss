@@ -213,6 +213,20 @@ figure {
   > a {
     display: block;
   }
+  /*2023.02.03*/
+  &.one {
+    > a,
+    > img {
+      @include breakpoint($small) {
+        width: 50%
+        text-align: center;
+      }
+    }
+
+    figcaption {
+      width: 100%;
+    }
+  }
 
   &.half {
     > a,
