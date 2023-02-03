@@ -4,6 +4,9 @@ title: "[선형대수(with 파이썬)] 1. 스칼라, 벡터, 텐서"
 categories: linear-algebra
 tag: [python, linear-algebra]
 toc: true
+sidebar:
+  nav: "docs"
+author_profile: True
 ---
 
 ## 스칼라, 벡터, 텐서
@@ -48,4 +51,4 @@ $$
 
 공부한 전체 코드는 깃허브에 올렸습니다.
 
-<https://github.com/mgskko/linear-algebra-with-python/blob/master/%EB%B2%A1%ED%84%B0%2C%20%ED%96%89%EB%A0%AC%2C%20%ED%85%90%EC%84%9C.ipynb>
+**[깃허브 코드](https://www.acmicpc.net/problem/1343)**
