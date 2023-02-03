@@ -20,6 +20,11 @@ Education
 
 Work experience
 ======
+* 2023: Graduate Research Intern, Quantum Computational Sciences
+  * Oak Ridge National Laboratory
+  * Project: Variational and quantum kernel based classifiers.
+  * Supervisor: Vicente Leyton-Ortega
+  
 * 2021: Graduate Research Intern, Quantum Computational Sciences
   * Oak Ridge National Laboratory
   * Project: Data Driven Quantum Circuit Learning for the Solution of Stochastic Differential Equations.
@@ -30,7 +35,7 @@ Work experience
 
 Skills
 ======
-* Python (Qiskit, Scikit-learn, Keras, Matplotlib, Pandas)
+* Python (Qiskit, Scikit-learn, Keras, Matplotlib, Pandas, Tensorflow)
 * Matlab
 * R
 * SQL
