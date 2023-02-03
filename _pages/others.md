@@ -3,5 +3,5 @@ title: Others
 layout: collection
 permalink: /others/
 collection: others
-entries_layout: list
+entries_layout: grid
 ---
