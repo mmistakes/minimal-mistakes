@@ -606,3 +606,18 @@ The execution of the `twoEmployeesInTheOfficeWithLock` produces the expected out
 13:55:25.452 [Go to the toilet] INFO in.rcard.virtual.threads.App - I'm done with the toilet
 13:55:25.452 [Take a break] INFO in.rcard.virtual.threads.App - I'm done with the break
 ```
+
+## 7. Some Virtual Threads Internals
+
+As we might understand, a virtual thread is not something that can run itself, but it store the information of what have to be run. In other words, it a pointer to the advance of an execution that can be yield and resumed later.
+
+The above definition is the definition of _continuations_. We've already seen how Kotlin coroutines implement continuations ([Kotlin Coroutines - A Comprehensive Introduction - Suspending Functions](https://blog.rockthejvm.com/kotlin-coroutines-101/#3-suspending-functions)). In that case, the Kotlin compiler generates continuation from the coroutine code. Kotlin's coroutines have no direct support in the JVM, so they are implemented at code level.
+
+However, for virtual threads, we have the JVM support. So, continuations execution is implemented directly using a lot of native calls to the JVM, and for thies reason they are less understandable looking the JDK code.
+
+All the core information are mainly placed in the `java.lang.VirtualThread` class. As a continuation, a virtual thread is a state machine with many states. The relations among these states are summarized in the following diagram:
+
+![Java Virtual Threads States](/images/virtual-threads/virtual-thread-states.png)
+
+
+
