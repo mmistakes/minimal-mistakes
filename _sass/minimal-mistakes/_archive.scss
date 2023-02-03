@@ -223,17 +223,17 @@
 
     @include breakpoint($medium) {
       display: block;
-      font-size: $type-size-6;
+      font-size: $type-size-8;
     }
   }
 
   .archive__item-teaser {
     @include breakpoint($small) {
-      max-height: 200px;
+      max-height: 1000px;
     }
 
     @include breakpoint($medium) {
-      max-height: 120px;
+      max-height: 1000px;
     }
   }
 }
