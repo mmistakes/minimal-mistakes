@@ -141,7 +141,7 @@
     /*2023.2.3*/
     /* extend grid elements to the right */
 
-   *@include breakpoint($large) {
+   @include breakpoint($large) {
       margin-right: -1 * $right-sidebar-width-narrow;
     }
 
