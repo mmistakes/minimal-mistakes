@@ -33,12 +33,10 @@ toc: true
 ### 3-1. 웹 크롤링 초기 설정
 
 <div class="notice--primary" markdown="1">
-
 1. 라이브러리 import 하기
 2. 얻고자 싶은 정보 리스트에 담아두기
 3. 파싱할 페이지 요청 후 담기
 4. 사전형으로 데이터 파일 만들기
-
 <div>
 
 #### 3-2-1. 라이브러리 import 하기
@@ -57,11 +55,9 @@ headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit
 먼저 데이터를 만들기 전 초기 상태에서 import와 from 구문을 통해 초기 설정을 해준다.
 
 <div class="notice--primary" markdown="1">
-
 **보충 설명**
  - requests 사용 시, 스크립트가 불가능한 사이트들이 있을 수가 있어 허용할 수 있게 User Agent를 사용한다.
 **[User Agent 사이트](http://www.useragentstring.com/)**
-
 <div>
 
 이 사이트에 접속한 후에 보이는 코드를 복사 붙여넣기를 해주면 된다.
