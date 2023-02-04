@@ -61,7 +61,7 @@ headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit
 **[User Agent 사이트](http://www.useragentstring.com/)**
 {: .notice--primary}
 
-이 사이트에 접속한 후에 보이는 코드를 복사 붙여넣기를 해주면 된다.
+이 사이트에 접속한 후에 보이는 코드를 복사 붙여넣기를 해주면 된다.  
 
 #### 3-2-2. 얻고자 싶은 정보 리스트에 담아두기
 
@@ -201,26 +201,178 @@ plt.xlim([0, 90])      # X축의 범위: [xmin, xmax]
 plt.ylim([15, 40])     # Y축의 범위: [ymin, ymax]
 plt.show()
 ```
-#보충 설명
-groupby()함수는 그룹별로 구분하여 데이터를 보기 위해 저장하는 함수이다.
+**보충 설명**
+ - groupby()함수는 그룹별로 구분하여 데이터를 보기 위해 저장하는 함수이다.
+
+df[]안에 나이별 선수로 나눈 후 ‘count’ 열을 따로 생성해 함수 안에 저장해준다. 
+
+![image](https://user-images.githubusercontent.com/100071667/216763239-15310c5b-43cb-416b-abd8-c8f27ceaa1a2.png)
+
+```python
+print('가장 많은 나이는',max(df['나이']),'이고 가장 적은 나이는', min(df['나이']),'이다.')
+```
+
+    가장 많은 나이는 36 이고 가장 적은 나이는 17 이다.
+
+
+가장 나이 많은 선수는 36살임을 알 수 있고 가장 적은 나이는 17살임을 알 수 있다. 여기서 36살인 선수가 어떤 선수인지와 17살인 선수가 어떤 선수인지 알아보자.
+
+```python
+df[df['나이']==36]
+```
+
+![image](https://user-images.githubusercontent.com/100071667/216763368-3c3686f3-460f-4c17-b759-6cd724043701.png)
+
+
+```python
+df[df['나이']==17]
+```
+
+![image](https://user-images.githubusercontent.com/100071667/216763383-327e5fd0-5b71-46b4-9ddb-d0f8d3c1faf3.png)
+
+가장 나이 많은 선수는 36살임을 알 수 있고 가장 적은 나이는 17살임을 알 수 있다. 여기서 36살인 선수가 어떤 선수인지와 17살인 선수가 어떤 선수인지 알아보자.
+36살인 선수는 ‘Cristiano Ronaldo’이라는 것을 알 수 있고 순위는 114위이다. 17살 선수는 2명으로 ‘Gavi’ ‘Youssoufa Moukoko’인 것을 알 수 있고 각각 272위와 472위임을 알 수 있다. 
 
 ### 4-4. 나이와 포지션의 관계
+
+다음으로 확인해 볼 데이터는 나이와 포지션의 관계이다. 선수의 나이가 포지션과도 관련이 있는지 확인을 해보겠다. 
+
 #### 4-4-1. ‘나이’와 ‘포지션’의 교집합 만들기
+
+```python
+Centre_Forward20= df[(df['나이']<=20) & (df['포지션']=='Centre-Forward')]
+Centre_Forward20_24= df[(df['나이'] > 20) & (df['나이'] < 25) & (df['포지션']=='Centre-Forward')]
+Centre_Forward25_29= df[(df['나이']>=25) & (df['나이'] < 30) & (df['포지션']=='Centre-Forward')]
+Centre_Forward30= df[(df['나이']>=30) & (df['포지션']=='Centre-Forward')]
+
+Central_Midfield20= df[(df['나이']<=20) & (df['포지션']=='Central Midfield')]
+Central_Midfield20_24= df[(df['나이'] > 20) & (df['나이'] < 25) & (df['포지션']=='Central Midfield')]
+Central_Midfield25_29= df[(df['나이']>=25) & (df['나이'] < 30) & (df['포지션']=='Central Midfield')]
+Central_Midfield30= df[(df['나이']>=30) & (df['포지션']=='Central Midfield')]
+
+Centre_Back20= df[(df['나이']<=20) & (df['포지션']=='Centre-Back')]
+Centre_Back20_24= df[(df['나이'] > 20) & (df['나이'] < 25) & (df['포지션']=='Centre-Back')]
+Centre_Back25_29= df[(df['나이']>=25) & (df['나이'] < 30) & (df['포지션']=='Centre-Back')]
+Centre_Back30= df[(df['나이']>=30) & (df['포지션']=='Centre-Back')]
+
+Goalkeeper20= df[(df['나이']<=20) & (df['포지션']=='Goalkeeper')]
+Goalkeeper20_24= df[(df['나이'] > 20) & (df['나이'] < 25) & (df['포지션']=='Goalkeeper')]
+Goalkeeper25_29= df[(df['나이']>=25) & (df['나이'] < 30) & (df['포지션']=='Goalkeeper')]
+Goalkeeper30= df[(df['나이']>=30) & (df['포지션']=='Goalkeeper')]
+
+Right_Winger20= df[(df['나이']<=20) & (df['포지션']=='Right Winger')]
+Right_Winger20_24= df[(df['나이'] > 20) & (df['나이'] < 25) & (df['포지션']=='Right Winger')]
+Right_Winger25_29= df[(df['나이']>=25) & (df['나이'] < 30) & (df['포지션']=='Right Winger')]
+Right_Winger30= df[(df['나이']>=30) & (df['포지션']=='Right Winger')]
+
+Left_Winger20= df[(df['나이']<=20) & (df['포지션']=='Left Winger')]
+Left_Winger20_24= df[(df['나이'] > 20) & (df['나이'] < 25) & (df['포지션']=='Left Winger')]
+Left_Winger25_29= df[(df['나이']>=25) & (df['나이'] < 30) & (df['포지션']=='Left Winger')]
+Left_Winger30= df[(df['나이']>=30) & (df['포지션']=='Left Winger')]
+
+
+Attacking_Midfield20= df[(df['나이']<=20) & (df['포지션']=='Attacking Midfield')]
+Attacking_Midfield20_24= df[(df['나이'] > 20) & (df['나이'] < 25) & (df['포지션']=='Attacking Midfield')]
+Attacking_Midfield25_29= df[(df['나이']>=25) & (df['나이'] < 30) & (df['포지션']=='Attacking Midfield')]
+Attacking_Midfield30= df[(df['나이']>=30) & (df['포지션']=='Attacking Midfield')]
+
+Defensive_Midfield20= df[(df['나이']<=20) & (df['포지션']=='Defensive Midfield')]
+Defensive_Midfield20_24= df[(df['나이'] > 20) & (df['나이'] < 25) & (df['포지션']=='Defensive Midfield')]
+Defensive_Midfield25_29= df[(df['나이']>=25) & (df['나이'] < 30) & (df['포지션']=='Defensive Midfield')]
+Defensive_Midfield30= df[(df['나이']>=30) & (df['포지션']=='Defensive Midfield')]
+
+Right_Back20= df[(df['나이']<=20) & (df['포지션']=='Right-Back')]
+Right_Back20_24= df[(df['나이'] > 20) & (df['나이'] < 25) & (df['포지션']=='Right-Back')]
+Right_Back25_29= df[(df['나이']>=25) & (df['나이'] < 30) & (df['포지션']=='Right-Back')]
+Right_Back30= df[(df['나이']>=30) & (df['포지션']=='Right-Back')]
+
+Left_Back20= df[(df['나이']<=20) & (df['포지션']=='Left-Back')]
+Left_Back20_24= df[(df['나이'] > 20) & (df['나이'] < 25) & (df['포지션']=='Left-Back')]
+Left_Back25_29= df[(df['나이']>=25) & (df['나이'] < 30) & (df['포지션']=='Left-Back')]
+Left_Back30= df[(df['나이']>=30) & (df['포지션']=='Left-Back')]
+
+Second_Striker20= df[(df['나이']<=20) & (df['포지션']=='Second Striker')]
+Second_Striker20_24= df[(df['나이'] > 20) & (df['나이'] < 25) & (df['포지션']=='Second Striker')]
+Second_Striker25_29= df[(df['나이']>=25) & (df['나이'] < 30) & (df['포지션']=='Second Striker')]
+Second_Striker30= df[(df['나이']>=30) & (df['포지션']=='Second Striker')]
+
+Right_Midfield20= df[(df['나이']<=20) & (df['포지션']=='Right Midfield')]
+Right_Midfield20_24= df[(df['나이'] > 20) & (df['나이'] < 25) & (df['포지션']=='Right Midfield')]
+Right_Midfield25_29= df[(df['나이']>=25) & (df['나이'] < 30) & (df['포지션']=='Right Midfield')]
+Right_Midfield30= df[(df['나이']>=30) & (df['포지션']=='Right Midfield')]
+
+Left_Midfield20= df[(df['나이']<=20) & (df['포지션']=='Left Midfield')]
+Left_Midfield20_24= df[(df['나이'] > 20) & (df['나이'] < 25) & (df['포지션']=='Left Midfield')]
+Left_Midfield25_29= df[(df['나이']>=25) & (df['나이'] < 30) & (df['포지션']=='Left Midfield')]
+Left_Midfield30= df[(df['나이']>=30) & (df['포지션']=='Left Midfield')]
+```
+
+각 포지션과 나이대별로 나눠주었다. 
+
 #### 4-4-2. x축과 y축 변수 지정하기
+
+x축과 누적 데이터를 입력할 y축을 리스트로 만들어주었다. x축에는 각각의 포지션을 입력해주고 y축의 누적 데이터에는 나이대별로 분류를 해주었다.
+
 #### 4-4-3. 누적 막대그래프를 이용하여 추출
 
-### 4-5. 나이가 몸값에 영향이 큰지
+bottom을 이용하여 그 전의 데이터들을 누적으로 쌓아두었다. y1 위에 y2를 올리고 맨 위에 y4인 30세 이상 선수를 넣었다. 출력해본 결과 이러한 그래프가 나타난다.
+
+```python
+x =['Centre_Forward','Left_Back','Left_Winger','Left_Midfield','Right_Midfield',
+    'Second_Striker','Right_Back','Defensive_Midfield',
+    'Attacking_Midfield','Right_Winger','Goalkeeper','Centre_Back','Central_Midfield']
+y1 = [len(Centre_Forward20),len(Left_Back20),len(Left_Winger20),
+      len(Left_Midfield20),len(Right_Midfield20),len(Second_Striker20),
+      len(Right_Back20),len(Defensive_Midfield20),len(Attacking_Midfield20),
+      len(Right_Winger20),len(Goalkeeper20),len(Centre_Back20),len(Central_Midfield20)]
+y2 = [len(Centre_Forward20_24),len(Left_Back20_24),len(Left_Winger20_24),
+      len(Left_Midfield20_24),len(Right_Midfield20_24),len(Second_Striker20_24),
+      len(Right_Back20_24),len(Defensive_Midfield20_24),len(Attacking_Midfield20_24),
+      len(Right_Winger20_24),len(Goalkeeper20_24),len(Centre_Back20_24),len(Central_Midfield20_24)]
+y3 = [len(Centre_Forward25_29),len(Left_Back25_29),len(Left_Winger25_29),
+      len(Left_Midfield25_29),len(Right_Midfield25_29),len(Second_Striker25_29),
+      len(Right_Back25_29),len(Defensive_Midfield25_29),len(Attacking_Midfield25_29),
+      len(Right_Winger25_29),len(Goalkeeper25_29),len(Centre_Back25_29),len(Central_Midfield25_29)]
+y4 = [len(Centre_Forward30),len(Left_Back30),len(Left_Winger30),
+      len(Left_Midfield30),len(Right_Midfield30),len(Second_Striker30),
+      len(Right_Back30),len(Defensive_Midfield30),len(Attacking_Midfield30),
+      len(Right_Winger30),len(Goalkeeper30),len(Centre_Back30),len(Central_Midfield30)]
+plt.figure(figsize=(35,10)) #그래프 크기
+plt.xlabel('포지션')#X축 이름
+plt.ylabel('누적 선수수')#Y축 이름
+plt.title("포지션별 나이 분포표") #그래프 제목
+plt.bar(x, y1, color='r',label='under_20')
+plt.bar(x, y2, bottom=y1, color='b',label='twenty21_24')
+plt.bar(x, y3, bottom=[y1[i] + y2[i] for i in range(len(y1))], color='g',label='twenty25_29')
+plt.bar(x, y4, bottom=[y1[i] + y2[i] + y3[i] for i in range(len(y1))], color='k',label='over_20')
+plt.legend()
+plt.show()
+```
+
+![image](https://user-images.githubusercontent.com/100071667/216763486-b23e6eff-b7b1-4a18-b50c-dfad95633521.png)
+
+그래프로 나타내어 조사해보면 상대적으로 활약을 많이 할 수 있는 공격수인 ‘Centre-Forward’ 포지션에 30대 선수가 가장 많다는 것을 볼 수 있다. 그다음으로는 ‘Central Midfield’, ‘Centre-Back’ 순으로 많다는 것을 알 수가 있다. ‘Goalkeeper’, ‘Left Midfield’, ‘Right Midfield’의 포지션은 한 명도 없다는 것 또한 알 수 있다. 이 포지션들은 전반적으로 많은 선수가 분포해 있지 않기도 한다.
+
+
 
 ## 5. 수행 결과 및 결과에 대한 검토/분석
 
+축구 선수의 나이와 몸값과의 관계를 총 4가지로 분석을 해 보았다. 가장 먼저 눈에 띄는 것은 확실히 전성기가 지난 30대 선수와 아직 성장기인 10대 선수들보다 신체적으로 월등한 20대 축구 선수들이 매우 높은 몸값을 가지고 있다. 이를 통해 알 수 있는 것은 몸값이 높다고 해서 그 선수의 실력이 높다고는 말할 수가 없다는 것 또한 알 수가 있다. 가장 먼저 최근 발롱도르를 수상한 메시, 호날두, 모드리치와 같은 선수들은 30대이지만 몸값이 높은 편이 아니다. 이처럼 실력과 몸값은 같다고 말할 순 없다는 것이다. 트랜스퍼마켓에서 몸값을 책정할 때 고려하는 점이 그 선수의 발전 가능성, 나이, 가장 중요한 실력이라고 한다. 나이가 많을수록 곧 은퇴에 가까워진다는 것을 알 수 있듯이 나이가 많은 선수는 몸값이 낮음을 알 수가 있고 가장 중요한 실력에서는 나이가 어린 10대 선수들에게 발전 가능성과 나이 면에서 높은 점수를 주었다는 것을 알 수 있다. 20대 선수 중 20대 중반의 선수들이 몸값이 높은 선수가 많이 분포하는 데 이유는 아무래도 실력과 적지 않은 나이, 발전 가능성이 있기에 높게 쳐준다고 생각한다. 이처럼 파이썬으로 데이터를 정리해 분석을 바탕으로 결론을 내릴 수 있다. 
+
 ## 6. 분석 내용 기반 향후 활용방안 또는 기대효과
+
+
+분석한 데이터를 통해 검토해본 결과 나이와 몸값이 관련이 있다는 것을 알 수 있다. 이 데이터를 통해 나이뿐만 아니라 몸값과 포지션의 관계 등 새로운 데이터들을 만들 수도 있다. 축구 분석가나 축구와 관련된 기자들이 글을 쓸 때 만든 데이터를 참고할 수 있다.
 
 ## 7. 보완 사항
 
+축구 선수의 몸값과 국가에 따라 분류를 하지 못해서 아쉬웠다. 특히 지도를 통해 국가를 대륙별로도 나타내어 어느 대륙의 선수가 많은지 확인을 할 수 없는 게 보완 사항 중 한 가지였다. 또한 나이와 포지션과의 관계에서 일일이 다 작성하는 방법보다 더 좋은 방법이 있을 거 같아서 생각해 봤지만 찾지 못해 일일이 작성한 방법이 아쉬웠다고 말 할 수 있다.
 
 
+공부한 전체 코드는 깃허브에 올렸습니다.
 
-
+**[깃허브 링크](<https://github.com/mgskko/Project_Analysis_of_soccer_player_data>)**
+{: .notice--primary}
 
 
 
