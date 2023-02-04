@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "[선형대수(with 파이썬)] 2. 전치 연산, 영벡터, 일벡터"
-categories: linear-algebra
-tag: [python, linear-algebra]
+categories: Linear-algebra
+tag: [python, Linear-algebra]
 toc: true
 ---
 
