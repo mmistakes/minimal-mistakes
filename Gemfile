@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gemspecs
+gemspec
 gem "webrick", "~> 1.7"
 
 
