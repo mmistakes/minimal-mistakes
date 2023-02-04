@@ -37,4 +37,8 @@ $$
 
 공부한 전체 코드는 깃허브에 올렸습니다.
 
-<https://github.com/mgskko/linear-algebra-with-python/blob/master/%EC%A0%84%EC%B9%98%EC%97%B0%EC%82%B0.ipynb>
+<>
+
+
+**[깃허브 링크](<hhttps://github.com/mgskko/linear-algebra-with-python/blob/master/%EC%A0%84%EC%B9%98%EC%97%B0%EC%82%B0.ipynb>)**
+{: .notice--primary}

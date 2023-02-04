@@ -49,4 +49,5 @@ $$
 
 공부한 전체 코드는 깃허브에 올렸습니다.
 
-**[깃허브 코드](https://www.acmicpc.net/problem/1343)**
+**[깃허브 링크](<https://github.com/mgskko/linear-algebra-with-python/blob/master/%EC%8A%A4%EC%B9%BC%EB%9D%BC%20%2C%EB%B2%A1%ED%84%B0%2C%20%ED%85%90%EC%84%9C.ipynb>)**
+{: .notice--primary}
