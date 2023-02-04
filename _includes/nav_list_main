@@ -28,6 +28,15 @@
                 {% endfor %}
             </ul>
 
+            <span class="nav__sub-title">Project</span>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Project" %}
+                <li><a href="/categories/Project" class="">프로젝트({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+
             <span class="nav__sub-title">DataBase</span>
             <ul>
                 {% for category in site.categories %}
