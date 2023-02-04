@@ -40,7 +40,7 @@
     width: calc(#{$right-sidebar-width} - 1em);
   }
 
-  > * {
+  >* {
     margin-top: 1em;
     margin-bottom: 1em;
   }
@@ -124,8 +124,8 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
 
   @include breakpoint($large) {
     display: block;
@@ -134,12 +134,12 @@
   }
 
   img {
-    max-width: 110px;
-    border-radius: 50%;
+    max-width: 150px;
+    border-radius: 30%;
 
     @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
+      padding: 3px;
+      border: 2px solid $border-color;
     }
   }
 }
@@ -172,6 +172,7 @@
     margin-bottom: 10px;
   }
 }
+
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
@@ -350,4 +351,3 @@
     margin-right: initial;
   }
 }
-
