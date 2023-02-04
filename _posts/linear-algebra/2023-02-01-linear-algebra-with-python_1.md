@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "[선형대수(with 파이썬)] 1. 스칼라, 벡터, 텐서"
-categories: linear-algebra
-tag: [python, linear-algebra]
+categories: Linear-algebra
+tag: [python, Linear-algebra]
 toc: true
 author_profile: True
 ---

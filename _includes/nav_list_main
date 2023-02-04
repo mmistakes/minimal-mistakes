@@ -13,8 +13,8 @@
             <span class="nav__sub-title">Mathematics</span>
             <ul>
                 {% for category in site.categories %}
-                {% if category[0] == "Linearalgebra" %}
-                <li><a href="/categories/Linearalgebra" class="">선형대수(with 파이썬)({{category[1].size}})</a></li>
+                {% if category[0] == "Linear-algebra" %}
+                <li><a href="/categories/Linear-algebra" class="">선형대수(with 파이썬)({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
@@ -55,8 +55,8 @@
                 {% if category[0] == "Develop" %}
                 <li><a href="/categories/Develop" class="">개발({{category[1].size}})</a></li>
                 {% endif %}
-                {% if category[0] == "Git" %}
-                <li><a href="/categories/git" class="">깃 & 깃허브({{category[1].size}})</a></li>
+                {% if category[0] == "GitHub" %}
+                <li><a href="/categories/GitHub" class="">깃 & 깃허브({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
