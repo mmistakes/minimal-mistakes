@@ -162,4 +162,6 @@ kn.score(test_input, test_target)
 ---
 
 공부한 전체 코드는 깃허브에 올렸습니다.
-<https://github.com/mgskko/Data_science_Study-hongongmachine/blob/main/%ED%98%BC%EA%B3%B5%EB%A8%B8%EC%8B%A0_2%EA%B0%95_1.ipynb>
+
+**[깃허브 주소](<https://github.com/mgskko/Data_science_Study-hongongmachine/blob/main/%ED%98%BC%EA%B3%B5%EB%A8%B8%EC%8B%A0_2%EA%B0%95_1.ipynb>)**
+{: .notice--primary}
