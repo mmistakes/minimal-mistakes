@@ -1,9 +1,7 @@
 ---
 layout: single
 title:  "What habits should I have for a comfortable life?"
-tag: useAI
-toc: false
-author_profile: false
+tag: think
 ---
 Are you looking for ways to lead a more comfortable life? If so, developing healthy habits is the key to achieving your goals. Habits such as getting enough sleep, exercising regularly, and eating healthy can make a big difference in your overall wellbeing. In this article, we'll discuss the habits you should have for a comfortable life.
 
