@@ -1,15 +1,18 @@
 # main links
 main:
-  # - title: "Quick-Start Guide"
-  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
   - title: "Schedule"
     url: /schedule/
-  - title: "Docs"
-    url: /docs/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Resources"
+    url: /resources/
+resources:
+  - title: Getting Started
+    children:
+      - title: "Quick-Start Guide"
+        url: /resources/quick-start-guide/
+      - title: "Structure"
+        url: /resources/structure/
+      - title: "Installation"
+        url: /resources/installation/
+      - title: "Upgrading"
+        url: /resources/upgrading/
+# ^^ the resources key allows for sidebar navigation. This will be useful for the resources page
