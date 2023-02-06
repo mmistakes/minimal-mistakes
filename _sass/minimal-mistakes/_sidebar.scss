@@ -88,9 +88,14 @@
       position: -webkit-sticky;
       position: sticky;
       top: 2em;
-      float: right;
+      float: top;
 
-      
+      .toc {
+        .toc__menu {
+          overflow-y: auto;
+          max-height: calc(100vh - 7em);
+        }
+      }
     }
   }
 
