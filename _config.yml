@@ -20,7 +20,7 @@ title                    : "DATA 100%"
 title_separator          : "|"
 subtitle                 : "Be Brave. Be Bold. And Stay Wiggly."
 name                     : "WOONGSONVI"
-description              : "웅선비의 데이터 다이어리"
+description              : "남들에게 제대로 알려줄 수 있을 때까지. 꾸준히 적는 데이터 다이어리."
 url                      : "https://woongsonvi.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -230,16 +230,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+   enabled:
+     - categories
+     - tags
+   layouts:
+     category: archive-taxonomy
+     tag: archive-taxonomy
+   permalinks:
+     category: /categories/:name/
+     tag: /tags/:name/
 
 
 # HTML Compression
