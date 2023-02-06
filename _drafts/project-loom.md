@@ -786,7 +786,7 @@ private boolean yieldContinuation() {
 }
 ```
 
-The `Continuation.yield(VTHREAD_SCOPE)` call is full of JVM native calls. From there, the method `VirtualThread.afterYield()` is called. This method sets the `PARKED` state to the virtual thread, and the continuation is scheduled again for execution through the method `lazySubmitRunContinuation()`:
+The `Continuation.yield(VTHREAD_SCOPE)` call is full of JVM native calls. From there, the method `VirtualThread.afterYield()` is called. This method sets the `PARKED` state to the virtual thread, and the continuation is scheduled again for execution through the method `lazySubmitRunContinuation()` and setting the state to `RUNNABLE`:
 
 ```java
 // JDK core code
