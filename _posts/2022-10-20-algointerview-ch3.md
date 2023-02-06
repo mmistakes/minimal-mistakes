@@ -6,8 +6,6 @@ Often, the most incredible brainchilds of hackers are created right after Christ
 
 The rules to keep were simple. First, it should be easy to read. Neat indents made by blanks replaced braces that would bind the codes. Second, the user should be allowed to create a module package as he wishes and apply it to another program. The language continued to develop on this basis,  first through easy_install and finally providing package index through pip which eventually affected numerous other languages. Third, it needed a peculiar and mystic name. The language was named after Monty Python, a prominent comedy group in England in the 70s.
 
-##수정중
-
 About thirty years have passed since then, and now, Python has become one of the world's most popular programming languages. Above all, the grammar is elementary, which is why this language is recommended firsthand for beginners. Therefore, the language is also called 'Executable Pseudocode.' A pseudocode is not supposed to be operating, and only the algorithm should be described, but Python is simple enough to describe just the algorithm and is operational. Moreover, Python is widely used in the field, although it is a recommended language for beginners. On the list of most popular programming languages on Stack Overflow investigated by the question ratio, Python has continuously stayed on the top list and now stands up to the first place, like image 3-2. From this, we can see how popular Python has become.
 
 In my previous workplace, the Kakao NLP processing team, and at my current job at Hyundai AI research lab, Python is used as one of the main languages for R&D. In the past, 'Basic,' which was a language for beginners could not be put to actual use once the person left the computer academy. However, Python is learned in elementary schools on the one hand and is used for publishing papers for world-class journals by computer science professors on the other. Indeed Python is doing what all existing programming languages have never achieved.
@@ -239,7 +237,7 @@ def get_natural_number( ):
     yield n
 ```
 
-In this case, tje returned value of the function becomes a generator like the following.
+In this case, the returned value of the function becomes a generator like the following.
 
 
 ```python
@@ -253,7 +251,7 @@ get_natural_number()
 
 
 
-if you want the next value, you can use next(). For example, if you want to generate 100 valuesm you can do next() 100 times like the following.
+if you want the next value, you can use next(). For example, if you want to generate 100 values, you can do next() 100 times like the following.
 
 
 ```python
@@ -421,7 +419,7 @@ next(g)
 
 ### range
 
-A representitive function that uses a generator method is range(). It is usually implemented in a for loop and is used like the following.
+A representative function that uses a generator method is range(). It is usually implemented in a for loop and is used like the following.
 
 
 ```python
@@ -455,9 +453,9 @@ for i in range(5):
 
     0 1 2 3 4 
 
-In this code, range( ) returns a range class and if used within a for statement, it generates the next number just as the generator's next( ) expression would do. In fact, range( ) function was not like what it is up until python 2.x. Range generated numbers in advance and returned it as a list, and a method for returning a generator existed separately as xrange(). But after Python version 3, range( ) function was changed to return a range class acting as a generator and xrange( ) function was depricated.
+In this code, range( ) returns a range class, and if used within a for statement, it generates the following number just as the generator's next( ) expression would do. In fact, range( ) function was not like what it is until python 2.x. Range generated numbers in advance and returned them as a list, and a method for returning a generator existed separately as xrange(). But after Python version 3, the range( ) function was changed to return a range class acting as a generator, and xrange( ) function was deprecated.
 
-What if you have to generate about a million numbers? It will take up a lot of memory and will take some time. However, that is not the case if you return the class range as you return a generator. You can just decide the generation conditions and use it when needed. The following are two methods to generate a million numbers.
+What if you have to generate about a million numbers? It will take up a lot of memory and will take some time. However, that is not the case if you return the class range as you return a generator. You can decide the generation conditions and use them when needed. The following are two methods to generate a million numbers.
 
 
 ```python
@@ -465,8 +463,7 @@ a = [n for n in range(1000000)]
 b = range(1000000)
 ```
 
-In fact, if you compare the length of both variables using len, both returns a million and the comparision operator returns True.
-
+In fact, if you compare the length of both variables using len, both return a million, and the comparison operator returns True.
 
 ```python
 len(a)
@@ -503,7 +500,7 @@ len(a)==len(b)
 
 
 
-However, there is a diffeence that a holds an already generated value, but b only has the condition to generate the values.
+However, there is a difference that a holds an already generated value, but b only has the condition to generate the values.
 
 
 ```python
@@ -529,8 +526,7 @@ type(b)
 
 
 
-If we compare the memory usage of the two, it will be easier to visualize why it is better to return a class range.
-
+Let's compare the memory usage of the two. It will be easier to visualize why it is better to return a class range.
 
 ```python
 #import sys
@@ -572,7 +568,7 @@ b[999]
 
 ### enumerate
 
-enumerate returns ordinal data types(list, set, tupel) with the indices in a form of an enumerate object. It can be used in the following way.
+enumerate returns ordinal data types(list, set, tuple) with the indices as an enumerate object. It can be used in the following way.
 
 
 ```python
@@ -603,7 +599,7 @@ list(enumerate(a))
 
 
 
-You an return the results usinig list(), and since the indices are automatically applied, it is extremely convenient.
+You can return the results using list(), and since the indices are automatically applied, it is highly convenient.
 
 What if you want to print a list a = ['a1','b2','c3'] along with the indices of the list?
 
@@ -622,7 +618,7 @@ for i in range(len(a)):
     6 5
 
 
-You can first think of the code in the above format. However, it isn't neat to use a[i] to look up the indices and search the total length of the list to create a loop. Without using range() you can implement it in the following way as well.
+You can first think of the code in the above format. However, it isn't neat to use a[i] to look up the indices and search the total length of the list to create a loop. Without using range(), you can also implement it in the following way.
 
 
 ```python
@@ -641,8 +637,7 @@ for v in a:
     6 5
 
 
-The values are neat, but this too is a method that creates a variable to hold the indices, so needs improvement. The best way is to use enumerate() as the following.
-
+The values are neat, but this method also creates a variable to hold the indices, so it needs improvement. The best way is to use enumerate() as the following.
 
 ```python
 for i, v in enumerate(a):
@@ -663,7 +658,6 @@ This way, you can process both the indices and the values at once.
 ### // division operator
 
 For Python version 2 and under, there were common mistakes due to the division operator / maintaining variables' original type. If we do 5 / 3, it should return 1.666 in Python 3 and over, but it would return 1 maintaining the integer form in Python 2 and under. 
-
 
 ```python
 5/3
@@ -688,7 +682,7 @@ For Python version 2 and under, there were common mistakes due to the division o
 
 
 
-In PEP 238, a modification in this type of operation was suggested, and afterwards, there was a change in the defaunt division operator. In this PEP, a new // division opeartor was added which maintains the type of the variables. This // operator acts in the same way as the / operator of the past Python 2 and under. When dividing an integer, it returns an integer and operates as a floor divisor. In other words, it gets the quotient.
+In PEP 238, a modification in this type of operation was suggested, and afterward, there was a change in the default division operator. In this PEP, a new // division operator was added, which maintains the type of the variables. This // operator acts the same way as the / operator of the past Python 2 and under. When dividing an integer, it returns an integer and operates as a floor divisor. In other words, it gets the quotient.
 
 
 ```python
@@ -738,8 +732,7 @@ type(5//3)
 
 
 
-5//3 is the same as int(5/3) and can be handled easily. Further in this book, we will always use this operator in case we need an integer result in a division. To add, we can get the remainder through the modulo operator which is % and can be used in the following way.
-
+5//3 is the same as int(5/3) and can be handled easily. Further in this book, we will always use this operator if we need an integer to result in a division. To add, we can get the remainder through the modulo operator, which is %, and can be used in the following way.
 
 ```python
 #Remainder
@@ -755,7 +748,6 @@ type(5//3)
 
 If we want both the quotient and the remainder, we can use the divmod() function. Further in this book, this function will be frequently used as well.
 
-
 ```python
 #When we get both the quotient and the remainder
 divmod(5,3)
@@ -770,9 +762,9 @@ divmod(5,3)
 
 ### print
 
-The most frequently used command while debugging in a coding test problem solving process is print()(print was a statement until Python 2.x and changed to print() function in 3.x). In most coding test platforms, they let you print out the stdout result using print() to be used for debugging. However, there are cases where print() is not shown when submitting the answer, so it requires caution. Debugging using print() is not recommended at work. However, during a coding test it is also difficult to use a debugger or make a TDD approach, so the only function available for debugging is print(). Let's look at a few methods to make more of this function. Since it is the only choice available, it shoud print out well to increase productivity.
+The most frequently used command while debugging in a coding test problem-solving process is print()(print was a statement until Python 2.x and changed to print() function in 3.x). Most coding test platforms let you print out the stdout result using print() to be used for debugging. However, there are cases where print() is not shown when submitting the answer, so it requires caution. Debugging using print() is not recommended at work. However, it is also challenging to use a debugger or make a TDD approach during a coding test, so the only function available for debugging is print(). Let's look at a few methods to make more of this function. Since it is the only choice available, it should print out well to increase productivity.
 
-The easiest way to print out a values is to use commas. In this case, a single blank space will be set as default, and when you print the values, each value will be separated with a black space.
+The easiest way to print out values is to use commas. In this case, a single blank space will be set as default, and when you print the values, each value will be separated with a black margin.
 
 
 ```python
@@ -792,7 +784,7 @@ print('A1','B2',sep = ',')
     A1,B2
 
 
-Print() function always changes a line, so if you print a value of a long loop, it will be difficult for debugging. In this case, you can set the end parameter as blank to not make the function change the line every time.
+Print() function always changes a line, so if you print a value of a long loop, it will be difficult to debug. In this case, you can set the end parameter as blank to not make the function change the line every time.
 
 
 ```python
@@ -868,9 +860,9 @@ class MyClass(object):
 c = MyClass()
 ```
 
-But in this case, the code doesn't run returning an indentation error.
+But in this case, the code doesn't run, returning an indentation error.
 
-The problem is, the error occurred in method_b() because method_a() did not return anything. This error is necessary, but it is a hassle to handle it in the middle of coding. pass can stop this error from happening. If you insert pass in method_a(), the problem is simply solved.
+The problem is the error occurred in method_b() because method_a() did not return anything. This error is necessary, but it is a hassle to handle in the middle of coding. pass can stop this error from happening. If you insert pass in method_a(), the problem is solved.
 
 
 ```python
@@ -882,13 +874,13 @@ class MyClass(object):
 c = MyClass()
 ```
 
-pass in python is a null operation that does not do anything. I you assign pass that does not take any role, you can prevent unneeded errors like the indentation error above. With pass, you can create a mockup interface first, and proceed with the actual codes later on. This can be extremely useful even during a coding test.
+pass in python is a null operation that does not do anything. If you assign pass that does not take any role, you can prevent unneeded errors like the indentation error above. With pass, you can create a mockup interface and proceed with the actual codes later. This can be extremely useful even during a coding test.
 
-I made effort to write all the codes in this book the most pythonic way. Even deciding a name of a variable took a lot of effort. Referencing the coding style of this book will help a lot when writing a good python code. It is often said that the code smells good, meaning that a good code has a scent just by looking at it. Of course a bad code will be the opposite. I put in a lot of effort in trying to make the codes have the good smell and you will all be able to do the same. The following specific cases will be a lot of help.
+I wrote all the codes in this book in the most pythonic way. Even deciding a name of a variable took a lot of effort. Referencing the coding style of this book will help a lot when writing good python code. It is often said that the code smells good, meaning that a good code has a scent just by looking at it. Of course, a bad code will be the opposite. I put a lot of effort into making the codes look good, and you will all be able to do the same. The following specific cases will be a lot of help.
 
 ### Variable name and comments
 
-First, the following is a code that gets the number of sub sequence matched to a string which was used in a actual problem-solving process. Let's assign the variable names in whatever way and look through the written code without any comment.
+First, the following is a code that gets the number of sub-sequences matched to a string that was used in an actual problem-solving process. Let's assign the variable names in whatever way and look through the written code without any comment.
 
 
 ```python
@@ -909,7 +901,7 @@ def numMatchingSubseq(self, S: str, words: List[str]) -> int:
   return a
 ```
 
-Doesn't it look like a professional code? Thankfully Python forces you to indent so at least it doesn't look unorganized. At least it doesn't stink, and this owes to Python's strength. However, it is difficult to understand what the variable names indicate and there is no comment on the algorithm making it difficult to understand how the codes work. Of course uncle Bob argues that you should not write comments in his book "Clean Code," but not writing comments in a language other than Java is controversial. I prefer to write comments as detailed as possible, and even during coding tests, I look throught whether there are comments in the submitted result, and discuss about the comments during the interview.
+Doesn't it look like a professional code? Thankfully Python forces you to indent, so it doesn't look unorganized. At least it doesn't stink, which owes to Python's strength. However, it is difficult to understand what the variable names indicate, and there needs to be a comment on the algorithm, making it difficult to understand how the codes work. Of course, uncle Bob argues that you should not write comments in his book "Clean Code," but not writing comments in a language other than Java is controversial. I prefer to write comments as detailed as possible. Even during coding tests, I look through whether there are comments in the submitted result and discuss the comments during the interview.
 
 
 ```python
@@ -927,20 +919,20 @@ def numMatchingSubseq(self, S: str, words: List[str]) -> int:
         
 ```
 
-Personally, adding simple comments looks much more easy to read, and the same is for name of variables especially for Python. Instead of som random name, each has a specific meaning and are written according to the Snake Case of PEP 8 document. The code is from Leetcode's soluution and the only function which was not named following the Snake Case is a given function name from the Leetcode question, so it was impossible to modify. This is because Leetcode does not follow PEP 8, and I hope Leetcode fixes this someday.
+Personally, adding simple comments makes it look much more readable, and the same goes for name of variables especially for Python. Instead of som random name, each has a specific meaning and are written according to the Snake Case of PEP 8 document. The code is from Leetcode's soluution and the only function which was not named following the Snake Case is a given function name from the Leetcode question, so it was impossible to modify. This is because Leetcode does not follow PEP 8, and I hope Leetcode fixes this someday.
 
-Comments can be written in Korean but you should be at least comfortable with reading and writing them in English. During an online coding test, English comments will have more chance to give a professionalistic impression. Of course in this book, the comments are not properly written because there are separate detailed explanations for each code snippet. However in an actual coding test, you cannot add these descriptions so it is best to always put detailed comments on the code.
+Comments can be written in Korean, but you should be at least comfortable with reading and writing them in English. During an online coding test, English comments will have more chances to give a professional impression. Of course, the comments are not properly written in this book because there are separate detailed explanations for each code snippet. However, in an actual coding test, you cannot add these descriptions, so it is best to always put detailed comments on the code.
 
 ### List comprehension
 
-List comprehension is one of the four outstanding functions of Python, and is one of the representitive characteristics of Python. However due to the unique grammar and its implicit nature, it may reduce the readability once it is abused. The following is one representitive case of lowering the readability.
+List comprehension is one of the four special functions of Python and is one of the representative characteristics of Python. However, due to the unique grammar and its implicit nature, it may reduce readability once it is abused. The following is one representative case of lowering the readability.
 
 
 ```python
 str1s = [str1[i:i+2].lower() for i in range(len(str1)-1) if re.findall('[a-z]{2}', str1[i:i+2].lower())]
 ```
 
-List comprehensions are often written in a single line because of its powerfulness, but even in this case, if you separate the lines according to each role, the code becomes much easier to read and understand. Let's change the lines of each code and organize it.
+List comprehensions are often written in a single line because of their powerfulness, but even in this case, if you separate the lines according to each role, the code becomes much easier to read and understand. Let's change the lines of each code and organize it.
 
 
 ```python
@@ -950,7 +942,7 @@ str1s = [
          ]
 ```
 
-Rather than being obsessed with a single-line solution, I used the lines more freely to increase readability. Also as explained on page 81, I limited the expressions to 2 to lower the complexity. It is better than lambda expressions, but list comprehensions still have lower readability than a fully written down code.
+Rather than being obsessed with a single-line solution, I used the lines more freely to increase readability. Also, as explained on page 81, I limited the expressions to 2 to lower the complexity. It is better than lambda expressions, but list comprehensions still have lower readability than a code fully written down.
 
 
 ```python
@@ -960,7 +952,7 @@ for i in range(len(str1)-1):
     str1s.append(str1[i:i+2].lower())
 ```
 
-Writing down everything like this is not so bad for readability. We can read the code from top to bottom which makes it much easier to understand. We don't have to be too obsessed with shorter lines of code. At times, we can consider writing everything down to make it easier to read. Expressions in list comprehensions must not exceed two. If multiple expressions are written across multiple lines, the readability decreases significantly.
+Writing down everything like this is okay for readability. We can read the code from top to bottom, which makes it much easier to understand. We don't have to be too obsessed with shorter lines of code. Sometimes, we consider writing everything down to make it easier to read. Expressions in list comprehensions must be at most two. If multiple expressions are written across multiple lines, the readability decreases significantly.
 
 
 ```python
@@ -974,9 +966,9 @@ if y !=z]
 
 ### Google Python style guide
 
-I previously introduced PEP 8, the official Python style guide. It was explained that there are many guidelines in PEP 8 such as setting the indent as four blank space, and using an IDE like PyCharm will automatically help you follow these standards. Google Python style guide is a style guide organized by Google where there are several guidelines for a good code not discussed in the official style guide, PEP 8. There are especially guidelines to increase the readability of codes, and we will look through several of them because it fits well wit the coding style introduced in this chapter.
+I previously introduced PEP 8, the official Python style guide. It was explained that there are many guidelines in PEP 8, such as setting the indent as four blank spaces, and using an IDE like PyCharm will automatically help you follow these standards. Google Python style guide is a style guide organized by Google where there are several guidelines for a good code not discussed in the official style guide, PEP 8. There are guidelines to increase the readability of codes, and we will look through several of them because they fit well with the coding style introduced in this chapter.
 
-First, you must not use mutable objects as default function value. If the function modifies an object (adding an item in a list), the default value will change. Therefore, we must refrain from using [] or {} as default function value as the following.
+First, you must not use mutable objects as the default function value. The default value will change if the function modifies an object (adding an item to a list). Therefore, we must refrain from using [] or {} as the default function value as the following.
 
 
 ```python
@@ -998,7 +990,7 @@ def foo(a, b: Optional[Sequence] = None):
     b = []
 ```
 
-When determining True and False, using implicit methods is more simple and easy to read. Thus, you don't have to use if foo != []: which can be replaced with if foo:. The following are several similar cases.
+When determining True and False, using implicit methods is more simple and easy to read. Thus, you don't have to use if foo != []:, which can be replaced with if foo:. The following are several similar cases.
 
 
 ```python
@@ -1026,14 +1018,14 @@ if not i % 10:
   self.handle_multiple_of_ten()
 ```
 
-len(users) == 0 means the length is zero, which means that users doesn't have a value and as #1, using not users is just enough. It is much easier to read. When processing integers, it is less risky to directly compare the integer values like #2 rather than implicitly determining True and False. In the same way, processing a modulo result 0 as an implicit False rather than its integer form is a dangerous move as well and it decreases the readability. Like #3, it is better to explicitly compare the values as i % 10 == 0. Ptherwise, you must not end a line with a semicolon and you also must not write two sentences within a line using a semicolon.
+len(users) == 0 means the length is zero, meaning that users don't have a value, and as #1, using not users is just enough. It is much easier to read. When processing integers, it is less risky to directly compare the integer values like #2 rather than implicitly determining True and False. In the same way, processing a modulo result 0 as an implicit False rather than its integer form is a dangerous move as well, and it decreases the readability. Like #3, it is better to explicitly compare the values as i % 10 == 0. Otherwise, you must not end a line with a semicolon and must not write two sentences within a line using a semicolon.
 
-The amximum length of line is set as 80 letters. Although most use big moniters now, there is still an implicit rule that the horizontal length of a code should not be long. Google style guide as well restricts the length of line to 80 letters.
-Until now, we looked through each of the basic Python grammer that is easy to miss and also discussed about coding style as well. From chapter 4, we will start looking into the data structure focusing on the datatypes provided by Python.
+The maximum length of the line is set as 80 letters. Although most use big monitors now, there is still an implicit rule that the horizontal length of a code should not be long. Google style guide as well restricts the length of the line to 80 letters.
+Until now, we looked through each of the basic Python grammar that is easy to miss and also discussed coding style as well. From chapter 4, we will start looking into the data structure, focusing on the datatypes provided by Python.
 
 ## Python Philosophy
 
-Python has its own philosophy of a 'Pythonic Way". Python is already a giant universal language that anyone uses, but it is still based upon the philosophy of a pythonic way, and it is a philosophy that developers at least once remind themselves of when creating a new module. Python provides this philosophy through the 'Zen of Python'. This was defined by Tim Peters who made Timsort which we will discuss in chapter 6 'String Manipulation' and can be run by 'import this' command.
+Python has its own philosophy of a 'Pythonic Way". Python is already a giant universal language that anyone uses. However, it is still based upon the philosophy of a Pythonic way. It is a philosophy developer at least once remind themselves of when creating a new module. Python provides this philosophy through the 'Zen of Python'. This was defined by Tim Peters, who made Timsort which we will discuss in chapter 6, 'String Manipulation,' and can be run by the 'import this' command.
 
 
 ```python
