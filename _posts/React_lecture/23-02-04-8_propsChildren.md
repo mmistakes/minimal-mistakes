@@ -15,6 +15,7 @@ children도 똑같지만 내려가는 전달되는 형태가 다름
 
 ```react
 //Children 문법
+//일반 props는 클로즈 태그 children props는 여다는 태그사이에 값 넣어줌
 
 import React from "react";
 import Layout from "Layout";
@@ -58,7 +59,5 @@ export default Layout;
 
 ```
 
-```react
 
-```
 
