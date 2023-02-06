@@ -9,8 +9,6 @@ excerpt: "Interoperability between Akka streams and actors with code examples"
 
 [comment]: <> (# From Akka Streams To Actors And Back)
 
-<img src="../images/akkastreamstoactorsandback/creek1.jpg" alt="Beautiful creek" width="600"/>
-
 Akka streams and Akka actor based code have their distinct properties and bridging between these two programming models
 is useful in some scenarios. This is an account of a way to enhance the standard ways to bridge the gap. To make the
 most out of this text the reader should know Akka streams and actors and ideally have some experience using them
