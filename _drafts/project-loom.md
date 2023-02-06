@@ -736,6 +736,7 @@ private void runContinuation() {
 From this point on, the state of the virtual threads depends on the execution of the continuation, made through the method `Continuation.run()`. The method performs a lot of native calls and  it's not easy to follow the execution flow. However, the first thing it makes is to set as mounted the associated virtual thread:
 
 ```java
+// JDK core code
 public final void run() {
   while (true) {
     mount();
@@ -746,7 +747,8 @@ public final void run() {
 
 Every time the virtual threads reaches a blocking point, the state of thread is changed to `PARKING`. The reaching of a blocking point is signaled through the call of the `VirtualThread.park()` method:
 
-```java  
+```java
+// JDK core code
 void park() {
     assert Thread.currentThread() == this;
     // complete immediately if parking permit available or interrupted
@@ -765,6 +767,49 @@ void park() {
 }
 ```
 
-TODO
+Once in `PARKING` state, the `yieldContinuation()` method is called. This method is the one that performs the actual parking of the virtual thread, and tries to unmount the virtual thread from its carrier thread:
+
+```java
+// JDK core code
+private boolean yieldContinuation() {
+    boolean notifyJvmti = notifyJvmtiEvents;
+    // unmount
+    if (notifyJvmti) notifyJvmtiUnmountBegin(false);
+    unmount();
+    try {
+        return Continuation.yield(VTHREAD_SCOPE);
+    } finally {
+        // re-mount
+        mount();
+        if (notifyJvmti) notifyJvmtiMountEnd(false);
+    }
+}
+```
+
+The `Continuation.yield(VTHREAD_SCOPE)` call is full of JVM native calls. From there, the method `VirtualThread.afterYield()` is called. This method sets the `PARKED` state to the virtual thread, and the continuation is scheduled again for execution through the method `lazySubmitRunContinuation()`:
+
+```java
+// JDK core code
+private void afterYield() {
+    int s = state();
+    assert (s == PARKING || s == YIELDING) && (carrierThread == null);
+    if (s == PARKING) {
+        setState(PARKED);
+        // notify JVMTI that unmount has completed, thread is parked
+        if (notifyJvmtiEvents) notifyJvmtiUnmountEnd(false);
+        // may have been unparked while parking
+        if (parkPermit && compareAndSetState(PARKED, RUNNABLE)) {
+            // lazy submit to continue on the current thread as carrier if possible
+            lazySubmitRunContinuation();
+        }
+    } else if (s == YIELDING) {   // Thread.yield
+        setState(RUNNABLE);
+        // notify JVMTI that unmount has completed, thread is runnable
+        if (notifyJvmtiEvents) notifyJvmtiUnmountEnd(false);
+        // lazy submit to continue on the current thread as carrier if possible
+        lazySubmitRunContinuation();
+    }
+}
+```
 
 
