@@ -16,11 +16,11 @@ minimal_mistakes_skin    :  "neon" # "default" "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Decentralized Identity [un]Hackathon"
+title                    : "DID:HACK"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "SSI"
-description              : "The anchor for all SSI [un]Hackathons"
+description              : "The anchor for all DID:HACKs"
 url                      : "https://ssi-unhackathon.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : ssi-unhackathon/ssi-unhackathon.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
