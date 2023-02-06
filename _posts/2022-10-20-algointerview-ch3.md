@@ -8,23 +8,24 @@ The rules to keep were simple. First, it should be easy to read. Neat indents ma
 
 ##수정중
 
-About thirty years have passed since then, and now, Python has become one of the world's most popular programming language. Above all, the grammer is extremely simple which is why this language is recommended firsthand for beginners. Therefore, the language is also called 'Executable Pseudocode.' A pseudocode is not supposed to be operating and only the algorithm should be described, but Python is simple enough to describe just the algorithm and is operational. Moreover, Python is widely used in the field although it is a recommmended language for beginners. On the list of most popular programming languages on Stack Overflow investigated by the question ratio, Python has continuously stayed on the top list and now stood up to the first place like image 3-2. From this we can see how popular Python has become.
+About thirty years have passed since then, and now, Python has become one of the world's most popular programming languages. Above all, the grammar is elementary, which is why this language is recommended firsthand for beginners. Therefore, the language is also called 'Executable Pseudocode.' A pseudocode is not supposed to be operating, and only the algorithm should be described, but Python is simple enough to describe just the algorithm and is operational. Moreover, Python is widely used in the field, although it is a recommended language for beginners. On the list of most popular programming languages on Stack Overflow investigated by the question ratio, Python has continuously stayed on the top list and now stands up to the first place, like image 3-2. From this, we can see how popular Python has become.
 
-In my previous workplace, Kakao NLP processing team and at my current job at Hyundai AI research lab, Python is being used as one of the main languages for R&D. IInthe past, 'Basic,' which was a language for beginners could not be put to actual use once the person left the computer academy. However, Python is learned in elementary schools on the one hand and is used for publishing papers for world-class journals by computer science professors on the other. Indeed Python is doing what all existing programming languages have never achieved.
+In my previous workplace, the Kakao NLP processing team, and at my current job at Hyundai AI research lab, Python is used as one of the main languages for R&D. In the past, 'Basic,' which was a language for beginners could not be put to actual use once the person left the computer academy. However, Python is learned in elementary schools on the one hand and is used for publishing papers for world-class journals by computer science professors on the other. Indeed Python is doing what all existing programming languages have never achieved.
 
 ## Understanding Python
 
-In this book, we will cover Python in extreme detail by solving coding test problems. If you choose a certain language for your coding test, you must understand the detailed structure of the language to correctly, swiftly, and accurately solve the problem. If you are not even familiar with the basic grammar, you cannot do well on the coding test.
+This book will cover Python in extreme detail by solving coding test problems. Suppose you choose a particular language for your coding test. In that case, you must understand the detailed structure of the language to correctly, swiftly, and accurately solve the problem. You must be familiar with basic grammar to do well on the coding test.
 
-Moreover, knowing just a part of it is more dangerous than not knowing at all. If you think that dictionaries (covered in Ch 5) always maintain the order of input (only possible on version 3.7 and above), you might waste your time with the wrong results and will not be able to solve the problem within the given time. Time waste mostly comes from what we do not fully understand. Of course many argue that language is merely a tool, but even a simplest tool requires an understanding of how to use it to effectively use it. If you give a chainsaw to a person that cannot even use a saw, that won't help at all chopping down the tree.
+Moreover, knowing just a part of it is more dangerous than not knowing. Suppose you think that dictionaries (covered in Ch 5) always maintain the order of input (only possible on version 3.7 and above). In that case, you might waste your time with the wrong results and will not be able to solve the problem within the given time. Time waste mainly comes from what we do not fully understand. Of course, many argue that language is merely a tool. Still, even the most straightforward tool requires an understanding of how to use it effectively. Giving a chainsaw to a person who cannot even use a saw won't help at all in chopping down the tree.
 
-In this book, we will take a close look at python alogn with problem solving, and will be covering in more detail above that of ordinary Python books. However, the contents will be limited to built-in libraries, data structure, and algorithm. It is not too much, so you don't have to be afraid of it at this point. We will only look to the degree of providing the optimal solution. For example, Numpy is accepted as a standard library of Python, but since it cannot be used in coding tests, it will not be covered here as well. Object oriented programming as well will not be covered in this book.
+In this book, we will take a close look at Python along with problem-solving and will cover it in more detail than in ordinary Python books. However, the contents will be limited to built-in libraries, data structures, and algorithms. It is not too much, so you don't have to be afraid of it at this point. We will only look to the degree of providing the optimal solution. For example, Numpy is accepted as a standard library of Python, but since it cannot be used in coding tests, it will not be covered here as, well. Object-oriented programming as well will not be covered in this book.
 
-This book is based on CPython which is an official interpretor of Python. There are plenty of splendid interpreters like PyPy, but we will limit the boundaries to the official interpretor. The Python version we will be using will py 3.7, and at times, we will look into the inner structure of CPython to accurately understand the principles.
+This book is based on CPython, which is an official interpreter of Python. There are plenty of splendid interpreters like PyPy, but we will limit the boundaries to the official interpreter. The Python version we will be using will be py 3.7. At times, we will look into the inner structure of CPython to accurately understand the principles.
+
 
 ##Python Grammar
 
-From here, we will understand the characteristics of Python by looking through the advanced grammer of Python which will bring up your development skills one step further, and those you may miss although you have an understanding of basic Python grammar. If you keep in mind the characteristics that are introduced here, you will be able to increase your productivity at the codinig test.
+From here, we will understand the characteristics of Python by looking through the advanced grammar of Python, which will bring up your development skills one step further. You may miss although you have an understanding of basic Python grammar. Keep in mind the characteristics that are introduced here. You will be able to increase your productivity at the coding test.
 
 ### Indent
 
@@ -32,10 +33,11 @@ Indent, which is one of the representative characteristics of Python, follows th
 
 **PEP(Python Enhancement Proposals**
 
-Python programming follows the PEP process. PEP process refers to the main development process of Python that proposes new functions and collects the public opinion on communities to document Python design. The indices of PEP starts from 0 and goes on folllowing the form 3XX and 4XX according to a certain rule. For example, numbers 1 to 15 are meta PEPs. These are PEPs about PEPs, and PEP 8 which is a coding style guide belongs to this section. Other than this. PEP about Python 3.0 which is a PEP about Python 3000 is PEP 3000. The proposals related to Python version 3 all start with 3XXX. 
-You can find out the full list of PEPs in https://www.python.org/dev/peps
+Python programming follows the PEP process. The PEP process refers to the primary development process of Python that proposes new functions and collects the public opinion on communities to document Python design. The indices of PEP start from 0 and goes on, following the form 3XX and 4XX according to a particular rule. For example, numbers 1 to 15 are meta PEPs. These are PEPs about PEPs, and PEP 8, a coding style guide, belongs to this section. Other than this. PEP about Python 3.0, which is a PEP about Python 3000, is called PEP 3000. The proposals related to Python version 3 all start with 3XXX. 
+You can find out the complete list of PEPs in https://www.python.org/dev/peps
 
-The four-space indentation is also a rule for Google's Python guideline. Of course as Python always does, this is not mandatory and can be done freely according to the user's choice. In the past, it used to be recommended to use tabs o two indents, but after PEP 8, people follow the rule of four spaces. Other than this, there are these following standards in PEP 8. 
+The four-space indentation is also a rule for Google's Python guideline. Of course, as Python always does, this is not mandatory and can be done freely according to the user's choice. In the past, it used to be recommended to use tabs o two indents, but after PEP 8, people followed the rule of four spaces. Other than this, there are these following standards in PEP 8. 
+
 
 
 
@@ -63,19 +65,19 @@ foo = long_function_name(
     var_three, var_four)
 ```
 
-if the code is divided into multiple linew, we add an indent to distinguish it from other lines.
+if the code is divided into multiple lines, we add an indent to distinguish it from other lines.
 
-It is not easy to consider all these methods and distinguish things. THe best way is to use great development tools such as PyCharm community edition(https://www.jetbrains.com/ko-kr/pycharm/downlloads/) like image 3-3.
+It is not easy to consider all these methods and distinguish things. The best way is to use great development tools such as PyCharm community edition(https://www.jetbrains.com/ko-kr/pycharm/downlloads/) like image 3-3.
 
 **그림 3-3**
 
-If you use pycharm, it automatically follows the coding guide even if you don't put any attention to it. Or uoi can use PyCharm's Reformat Code to automatically fit the code to PEP 8 Standards, so it is extremely convenient. If you use tools like PyCharm to solve online coding tests, it willl help a lot in solving problems according to the coding guide.
+If you use pycharm, it automatically follows the coding guide even if you don't pay attention to it. Or you can use PyCharm's Reformat Code to automatically fit the code to PEP 8 Standards, so it is highly convenient. Using tools like PyCharm to solve online coding tests will help solve problems according to the coding guide.
 
 ### Naming Convention
 
-The variable naming convention, unlike Java, follows Snake Case which weparates each word with an underscore(_). The same goes for function names as well. In fact, there are situations where problems submitted for coding test do not follow the rule, but you still have to at least keep the names of variables and functions lower-case if it is written by yourself.
+The variable naming convention, unlike Java, follows Snake Case, which separates each word with an underscore(_). The same goes for function names as well. There are situations where problems submitted for coding tests do not follow the rule. However, you still have at least to keep the names of variables and functions lowercase if it is written by yourself.
 
-Python is extremely proud in its 'Pythonic Way', so it refrains from coding following the Camel Case or in Java-style(Unlike Python, Java follows the Camel Case where a single capitalized letter separates each word). All variables that appear in this book follow the Snake Case without any exception. When you code with Python, follow the Snake Case as default and if the interview asks a question about this, you must be able to answer that you prefer snake coding following Python's PEP 8 and its philosophy. Here again if you use great IDE such as PyCharm, an error apears if a certain name does not follow the standards so it is more convenient.
+Python is highly proud of its 'Pythonic Way,' so it refrains from coding following the Camel Case or in Java style (Unlike Python, Java follows the Camel Case where a single capitalized letter separates each word). All variables in this book follow the Snake Case without exception. When you code with Python, follow the Snake Case as default, and if the interviewer asks a question about this, you must be able to answer that you prefer snake coding following Python's PEP 8 and its philosophy. Again, if you use a great IDE such as PyCharm, an error appears if a particular name does not follow the standards, so it is more convenient.
 
 
 
@@ -85,9 +87,9 @@ Python is extremely proud in its 'Pythonic Way', so it refrains from coding foll
 ```
 
 **Camel Case, Snake Case**
-Camel Case is named after its form which resembles a camel. Upper-case and lower-case letters separate each word in this format and is a typical format of Java. Interestingly, the first letter of each word starts with a capital, but the first letter of the first word starts with a lower-case. If the first letter of the first word starts with an upper-case as well, than this is called the Pascal Case.
+Camel Case is named after its form, which resembles a camel. Upper-case and lowercase letters separate each word in this format, which is a typical Java format. Interestingly, the first letter of each word starts with a capital, but the first letter of the first word begins with a lowercase. If the first letter of the first word starts with an upper-case as well, then this is called the Pascal Case.
 
-Snake case comes from its snake-like shape and distinguishes each word with an underscore. Most of the times, the letters are lower-cased but at times, the first letter may be in upper-case. According to research, Snake case turned out to be recognized more easily than Camel case. Python recommends a naming convention following the Snake case through PEP8
+Snake case comes from its snake-like shape and distinguishes each word with an underscore. Most of the time, the letters are lowercase, but at times, the first letter may be in upper-case. According to research, the Snake case was recognized more quickly than the Camel case. Python recommends a naming convention following the Snake case through PEP8
 
 
 ```python
@@ -100,7 +102,7 @@ snake_case: int = 1
 
 ### Type Hint
 
-It was briefly mentioned in Chapter 2 that although Python is a representitive interactive typing language, a Type Hint that could determine the type was added to the PEP 484 document. THis function can be used in Python version 3.5 and over. Cpython's typing.py clearly states the types that can be defined, and the types can be defined throough the following format.
+It was briefly mentioned in Chapter 2 that although Python is a representative interactive typing language, a Type Hint that could determine the type was added to the PEP 484 document. This function can be used in Python version 3.5 and over. Cpython's typing.py clearly states the types that can be defined, and the types can be defined through the following format.
 
 
 ```python
@@ -108,15 +110,14 @@ a: str = "1"
 b: int = 1
 ```
 
-For instance, the previous puthon function that does not use type hint was defined as the following
-
+For instance, the previous Python function that does not use type hint was defined as the following
 
 ```python
 def fn(a:)
 ...
 ```
 
-It does have an advantage that the function can be quickly defined, but there is no clue in what to input in parameter a, whether it is a number or a string, and we cannot know what the dictionary would return. Later on as the scale of the project becomes larger, it becomes a main cause of bugs such as inputting a string in the parameter when you are supposed to put in a number. Let's look through the following code.
+It does have the advantage that the function can be quickly defined, but there is no clue what to input in parameter a, whether it is a number or a string, and we need to know what the dictionary would return. Later on, as the scale of the project becomes more significant, it becomes a primary cause of bugs, such as inputting a string in the parameter when you are supposed to put in a number. Let's look through the following code.
 
 
 ```python
@@ -124,7 +125,7 @@ def fn(a: int) -> bool:
 ...
 ```
 
-With such type hint, you can clearly state that the parameter a of the function fn() is an integer and that the return value would be True or False. With a clear definition as above, the readability increases and the bug become less probable. Of course since this is not an obligation, adiverse values can be allocated so we must be cautious. Therefore, you must stay away from allocating an integer to a string as the following.
+With such a type hint, you can clearly state that the parameter a of the function fn() is an integer and that the return value would be True or False. The readability increases with a clear definition as above, and the bug becomes less probable. Of course, since this is not an obligation, diverse values can be allocated, so we must be cautious. Therefore, you must avoid assigning an integer to a string as follows.
 
 
 ```python
@@ -138,17 +139,16 @@ With such type hint, you can clearly state that the parameter a of the function 
     int
 
 
+A coding test is usually composed of a short algorithm, and the required type does not need a specification. However, if you allocate the class to make the code easily readable in the problem-solving process, the interviewer would likely give more credit.
 
-A coding test usually is composed of a short algorith, and the required type is clear not needing a specification. However if you allocate the type to make the code easily readable in the problem solving process, the interviewer would likely give more credit.
-
-In an online coding teest, you can use mypy to automatically check if there are any errors in the type hint, so you can proofread your codes before submitting it. mypy can be installed through pip like as the following
+In an online coding test, you can use mypy to automatically check if there are any errors in the type hint, so you can proofread your codes before submitting it. mypy can be installed through pip like as the following
 
 
 ```python
 $ pip install mypy
 ```
 
-For codes with incorrect type hint, it will return Incompatible return value time and an error will occur for you to check and fix your code.
+For codes with incorrect type hints, it will return an Incompatible return value time, and an error will occur for you to check and fix your code.
 
 
 ```python
@@ -157,8 +157,7 @@ $ mypy solution.py
 
 ### List Comprehension
 
-Python provides functional features like map and filter, and at the same time supports labda expressions as the following
-
+Python provides functional features like map and filter, and at the same time supports lambda expressions as the following
 
 ```python
 list(map(lambda x: x+10, [1,2,3]))
@@ -171,7 +170,7 @@ list(map(lambda x: x+10, [1,2,3]))
 
 
 
-Only in its 8th version released in 2014 did Java support lambda expressions, but Python has supported lambda since its 1.0 version in 1994, having a longer history. However, the far more convenient feature of Python is its list comprehension. List comprehension iis a method that creates a new list based on an already existing list. It has been supported since Python2.0 and is a characteristic of Python which referenced functional languages like Haskell. In "Effective Python 파이썬 코딩의 기술(길벗, 2016)" chapter 1, 'Pythonic Thinking,' there is a phrase that goes 'Better way 7: use list comprehension instead of map and filter. As such, list comprehension is used effectively in numeroous ways, and moreover is much easier to read compared to lambda expressions incorporating map and filter.
+Java started supporting lambda expressions in its 8th version released in 2014, but Python has supported lambda since its 1.0 version in 1994, having a longer history. However, the far more convenient feature of Python is its list comprehension. List comprehension is a method that creates a new list based on an already existing list. It has been supported since Python2.0 and is a characteristic of Python which referenced functional languages like Haskell. In "Effective Python 파이썬 코딩의 기술(길벗, 2016)" chapter 1, 'Pythonic Thinking,' there is a phrase that goes 'Better way 7: use list comprehension instead of map and filter. As such, list comprehension is used effectively in numerous ways and is much easier to read compared to lambda expressions incorporating map and filter.
 
 The following is a list comprehension that multiplies two if the number is odd.
 
@@ -187,7 +186,7 @@ The following is a list comprehension that multiplies two if the number is odd.
 
 
 
-Without list comprehension, the code will have to be in the following stretched out form.
+Without list comprehension, the code must be in the following stretched-out form.
 
 
 
@@ -206,7 +205,7 @@ a
 
 
 
-The code became much longer compared to list comprehension, and a variable a had to be created. We can see that the lines of code has increased a lot. Of course list comprehension can also be applied to those other than lists. Since version 2.7, a list comprehension on dictionary and other types became possible. 
+The code became much longer than list comprehension, and a variable had to be created. The lines of code have increased a lot. Of course, list comprehension can also be applied to those other than lists. Since version 2.7, list comprehension in a dictionary and different types became possible. 
 
 
 ```python
@@ -222,13 +221,14 @@ The code shortened into the following
 a = {key:value for key, value in original.items()}
 ```
 
-The simple one-line code using list comprehension(or dictionary comprehension for this case) is quite easy to read, but you should be aware to not make it overly complicated since it will also become difficult to understand. Normally, expressions should not exceed two.
+The simple one-line code using list comprehension(or dictionary comprehension, for this case) is relatively easy to read. Still, you should be aware not to make it overly complicated since it will also become challenging to understand. Typically, expressions should not exceed two.
+
 
 ### Generator
 
-Generator is an old Python function added in Python version 2.2 in 2001. It is a routine form that can control the iteration of loops. For example, let's say we write a program that makes and calculates a hundred-million numbers according a certain rule. In this case, without a generator, we should have somewhere in memory the hundred-million numbers. However if we use the generator, we can only create a generator and create the numbers whenever needed. If about a hundred is used out of the hundred million, the gap will be much greater.
+The generator is an old Python function added in Python version 2.2 in 2001. It is a standard form that can control the iteration of loops. For example, let's say we write a program that makes and calculates a hundred million numbers according to a particular rule. In this case, without a generator, we should have somewhere in memory the hundred-million numbers. However, if we use the generator, we can only create a generator and make the numbers whenever needed. The gap will be much more significant if about a hundred is used out of the hundred million.
 
-You can use the yield expression to return a generator. A function returns a value and closes if we use a return expression. However if we use yield, the function returns the value up to the point of the expression and continues to be processed until the end of the function. Of course in the following code since there is no ending condition for while True, the function can continue to return values
+You can use the yield expression to return a generator. A function returns a value and closes if we use a return expression. However, if we use yield, the function returns the weight up to the point of the expression and continues to be processed until the end of the function. Of course, in the following code, since there is no ending condition for while True, the function can continue to return values
 
 
 ```python
@@ -363,7 +363,7 @@ for _ in range(0,100):
     99
     100
 
-
+#수정중
 Moreover in generators, you can make it possible to return diverse types of values from a single function.
 
 
