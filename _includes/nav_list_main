@@ -25,6 +25,9 @@
                 {% if category[0] == "Algorithm" %}
                 <li><a href="/categories/Algorithm" class="">백준({{category[1].size}})</a></li>
                 {% endif %}
+                {% if category[0] == "Programmers" %}
+                <li><a href="/categories/Programmers" class="">프로그래머스({{category[1].size}})</a></li>
+                {% endif %}
                 {% endfor %}
             </ul>
 
