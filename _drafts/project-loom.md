@@ -611,15 +611,111 @@ We can run the above method also with the `jdk.tracePinnedThreads` property set 
 
 ## 7. Some Virtual Threads Internals
 
-As we might understand, a virtual thread is not something that can run itself, but it store the information of what have to be run. In other words, it a pointer to the advance of an execution that can be yield and resumed later.
+In this section, we try to give an introduction to the implementation of continuation in Java vitual threads. We're not going to go into too much detail, but we'll try to give a general idea of how the virtual threads are implemented.
+
+As we might guess, a virtual thread is not something that can run itself, but it store the information of what have to be run. In other words, it's a pointer to the advance of an execution that can be yield and resumed later.
 
 The above definition is the definition of _continuations_. We've already seen how Kotlin coroutines implement continuations ([Kotlin Coroutines - A Comprehensive Introduction - Suspending Functions](https://blog.rockthejvm.com/kotlin-coroutines-101/#3-suspending-functions)). In that case, the Kotlin compiler generates continuation from the coroutine code. Kotlin's coroutines have no direct support in the JVM, so they are implemented at code level.
 
-However, for virtual threads, we have the JVM support. So, continuations execution is implemented directly using a lot of native calls to the JVM, and for thies reason they are less understandable looking the JDK code.
+However, for virtual threads, we have directly the JVM support. So, continuations execution is implemented directly using a lot of native calls to the JVM, and for this reason, it's less understandable when looking at the JDK code. However, we can still understand some concepts at the roots of virtual threads.
 
-All the core information are mainly placed in the `java.lang.VirtualThread` class. As a continuation, a virtual thread is a state machine with many states. The relations among these states are summarized in the following diagram:
+All the core information are mainly placed in the `java.lang.VirtualThread` class. When we create a new virtual thread, we first create `unstarted` thread. At the core, the JVM calls the `VirtualThread`constructor:
+
+```java
+// JDK core code
+VirtualThread(Executor scheduler, String name, int characteristics, Runnable task) {
+    super(name, characteristics, /*bound*/ false);
+    Objects.requireNonNull(task);
+    // choose scheduler if not specified
+    if (scheduler == null) {
+        Thread parent = Thread.currentThread();
+        if (parent instanceof VirtualThread vparent) {
+            scheduler = vparent.scheduler;
+        } else {
+            scheduler = DEFAULT_SCHEDULER;
+        }
+    }
+    this.scheduler = scheduler;
+    this.cont = new VThreadContinuation(this, task);
+    this.runContinuation = this::runContinuation;
+}
+```
+
+As we can see, a scheduler is chosen if not specified. The default scheduler is the one we described in the previous section. After that, a continuation is created, which is a `VThreadContinuation` object. This object is the one that stores the information of what have to be run as a `Runnable` object:
+
+```java
+// JDK core code
+private static class VThreadContinuation extends Continuation {
+  VThreadContinuation(VirtualThread vthread, Runnable task) {
+    super(VTHREAD_SCOPE, () -> vthread.run(task));
+  }
+  @Override
+  protected void onPinned(Continuation.Pinned reason) {
+    if (TRACE_PINNING_MODE > 0) {
+      boolean printAll = (TRACE_PINNING_MODE == 1);
+      PinnedThreadPrinter.printStackTrace(System.out, printAll);
+    }
+  }
+}
+```
+
+The above code shows also how the `jdk.tracePinnedThreads` flag works. The `VTHREAD_SCOPE` is a `ContinuationScope` object, which is a class that is used to group continuations. In other words, it's a way to group continuations that are related to each other. In our case, we have only one `ContinuationScope` object, which is the `VTHREAD_SCOPE` object. This object is used to group all the virtual threads.
+
+Last, the method sets the `runContinuation` field, which is a `Runnable` object that is used to run the continuation. This method is called when the virtual thread is started.
+
+As a continuation, a virtual thread is a state machine with many states. The relations among these states are summarized in the following diagram:
 
 ![Java Virtual Threads States](/images/virtual-threads/virtual-thread-states.png)
+
+We get a virtual thread in the `NEW` status when we call the `unstarted` method on the object returned by the `Thread.ofVirtual()` method. Basically, it is the state we have after the call to the `VirtualThread` constructor we've just seen. 
+
+Once we call the `start` method, the virtual thread is moved to the `STARTED` status:
+
+```java
+// JDK core code
+@Override
+void start(ThreadContainer container) {
+    if (!compareAndSetState(NEW, STARTED)) {
+        throw new IllegalThreadStateException("Already start
+    }
+    // Omissis
+    try {
+        // Omissis
+        // submit task to run thread
+        submitRunContinuation();
+        started = true;
+    } finally {
+        // Omissis
+    }
+}
+```
+
+The `submitRunContinuation()` is the method scheduling the `runContinuation` runnable to the virtual thread scheduler:
+
+```java
+// JDK core code
+private void submitRunContinuation(boolean lazySubmit) {
+    try {
+        if (lazySubmit && scheduler instanceof ForkJoinPool pool) {
+            pool.lazySubmit(ForkJoinTask.adapt(runContinuation));
+        } else {
+            scheduler.execute(runContinuation);
+        }
+    } catch (RejectedExecutionException ree) {
+        // record event
+        var event = new VirtualThreadSubmitFailedEvent();
+        if (event.isEnabled()) {
+            event.javaThreadId = threadId();
+            event.exceptionMessage = ree.getMessage();
+            event.commit();
+        }
+        throw ree;
+    }
+}
+```
+
+TODO...
+
 
 
 
