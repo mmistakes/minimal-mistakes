@@ -1,5 +1,5 @@
 ---
-title: "Interveiw"
+title: "English Study"
 layout: archive
 permalink: categories/en-study
 author_profile: true
