@@ -702,20 +702,69 @@ private void submitRunContinuation(boolean lazySubmit) {
             scheduler.execute(runContinuation);
         }
     } catch (RejectedExecutionException ree) {
-        // record event
-        var event = new VirtualThreadSubmitFailedEvent();
-        if (event.isEnabled()) {
-            event.javaThreadId = threadId();
-            event.exceptionMessage = ree.getMessage();
-            event.commit();
-        }
-        throw ree;
+        // Omissis
     }
 }
 ```
 
-TODO...
+The execution of the `runContinuation` runnable move the virtual thread to the `RUNNING` status, both if it's in the `STARTED` status or in the `RUNNABLE` status:
 
+```java
+// JDK core code
+private void runContinuation() {
+    // Omissis
+    if (initialState == STARTED && compareAndSetState(STARTED, RUNNING)) {
+        // first run
+        firstRun = true;
+    } else if (initialState == RUNNABLE && compareAndSetState(RUNNABLE, RUNNING)) {
+        // consume parking permit
+        setParkPermit(false);
+        firstRun = false;
+    } else {
+        // not runnable
+        return;
+    }
+    // Omissis
+    try {
+        cont.run();
+    } finally {
+        // Omissis
+    }
+}   
+```
 
+From this point on, the state of the virtual threads depends on the execution of the continuation, made through the method `Continuation.run()`. The method performs a lot of native calls and  it's not easy to follow the execution flow. However, the first thing it makes is to set as mounted the associated virtual thread:
+
+```java
+public final void run() {
+  while (true) {
+    mount();
+    // A lot of omissis
+  }
+}
+```
+
+Every time the virtual threads reaches a blocking point, the state of thread is changed to `PARKING`. The reaching of a blocking point is signaled through the call of the `VirtualThread.park()` method:
+
+```java  
+void park() {
+    assert Thread.currentThread() == this;
+    // complete immediately if parking permit available or interrupted
+    if (getAndSetParkPermit(false) || interrupted)
+        return;
+    // park the thread
+    setState(PARKING);
+    try {
+        if (!yieldContinuation()) {
+            // park on the carrier thread when pinned
+            parkOnCarrierThread(false, 0);
+        }
+    } finally {
+        assert (Thread.currentThread() == this) && (state() == RUNNING);
+    }
+}
+```
+
+TODO
 
 
