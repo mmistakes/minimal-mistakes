@@ -2,8 +2,7 @@
 layout: archive
 ---
 
-<!-- {{ content }}
-
+{{ content }}
 <ul class="taxonomy__index">
   {% assign postsInYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
   {% for year in postsInYear %}
@@ -27,13 +26,4 @@ layout: archive
     </div>
     <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
   </section>
-{% endfor %} -->
-
-<script src="https://utteranc.es/client.js"
-        repo="DonghyunAnn / DonghyunAnn.github.io"
-        issue-term="pathname"
-        label="comments"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
+{% endfor %}
