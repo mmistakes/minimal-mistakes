@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "1. Schultag",
-    "title": "1. Schultag",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2RzbjNsbnJjOXZpaXI1c2YyZG9sOWNrYWMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2023-02-06",
-      "date_time": null
-    },
-    "end": {
-      "date": "2023-02-07",
-      "date_time": null
-    },
-    "created": "2022-12-18T11:35:12.000Z",
-    "updated": "2022-12-18T11:35:12.525Z"
-  },
-  {
-    "image_path": null,
     "alt": "2. GEV",
     "title": "2. GEV",
     "excerpt": null,
