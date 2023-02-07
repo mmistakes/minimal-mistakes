@@ -68,7 +68,6 @@ const App = () => {
   return (
     <div className="app-style">
       {/* filter로 조건가공 */}
-
       {testArr
         .filter((item) => {
           return item !== "오이";
@@ -102,7 +101,7 @@ export default App;
 
 
 
-# 갖고놀아보기
+# 갖고놀아보기 
 
 ```react
 xz
