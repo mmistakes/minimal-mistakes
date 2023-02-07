@@ -7,6 +7,11 @@ use_math: true
 ---
 # Leet code 01.Two Sum
 
+* content
+{:toc}
+
+## [304. Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/)
+
 ### Problem
 ```
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
