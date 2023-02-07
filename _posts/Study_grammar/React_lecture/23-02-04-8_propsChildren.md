@@ -2,7 +2,7 @@
 layout: single
 title: "Props Children"
 categories: lecture 
-tag: [React, code, JS, conception]
+tag: [React, code,conception,lecture_react,Sail99]
 ---
 
 # props Children
