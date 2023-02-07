@@ -6,9 +6,9 @@ author: GyoOh
 use_math: true
 ---
 
+![logo](../images/2023-02-06-LeetCode-01-TwoSum/logo-5800520.png)
 
 
-![logo](/Users/gwanggyooh/Documents/blog/GyoOh.github.io/images/2023-02-06-LeetCode-01-TwoSum/logo.png)
 
 ### Problem
 
