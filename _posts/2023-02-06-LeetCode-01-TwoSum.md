@@ -5,7 +5,6 @@ categories: LeetCode
 author: GyoOh
 use_math: true
 ---
-# Leet code 01.Two Sum
 
 ### Problem
 ```
@@ -51,3 +50,4 @@ var twoSum = function(nums, target) {
     }
 };
 ```
+---
