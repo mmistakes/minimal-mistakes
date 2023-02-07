@@ -6,7 +6,12 @@ author: GyoOh
 use_math: true
 ---
 
+
+
+![logo](/Users/gwanggyooh/Documents/blog/GyoOh.github.io/images/2023-02-06-LeetCode-01-TwoSum/logo.png)
+
 ### Problem
+
 ```
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
