@@ -18,6 +18,8 @@ Flink SQL is a powerful high level API for running queries on streaming (and bat
 4. Understand different kinds of Processing Operators and Functions
 5. Different ways of running Flink SQL Queries
 
+> _Daniel here: If you need to learn the fundamentals of streaming with Flink, check out the long-form [Flink course](https://rockthejvm.com/p/flink) here at Rock the JVM._
+
 ## 1. Streaming (and Batch) SQL
 ### 1.1 Unified Batch and Streaming
 
