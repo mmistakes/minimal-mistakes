@@ -24,7 +24,7 @@ Flink SQL is a powerful high level API for running queries on streaming (and bat
 When we hear about SQL (referenced as batch SQL here) we think of the following tabular format you typically find in RDBMS,
 on which we operate and run computations - from simple projections (like SELECT and Filter), to Aggregations to Windowed Functions.
 
-![SQL table](../images/flink/sql/image1.png")
+![SQL table](../images/flink/sql/image1.png)
 
 Batch SQL Queries operate on static data, i.e. on data stored on disk, already available and the results are considered complete.
 
@@ -61,7 +61,7 @@ This is called a *Dynamic Table*.
 
 ## 2. Flink SQL Logical Components
 
-![Flink Catalogs](../images/flink/sql/image05.png)
+![Flink Catalogs](../images/flink/sql/image5.png)
 
 Flink consists of *catalogs* that hold metadata for databases, tables, functions and views.
 
@@ -681,9 +681,8 @@ As extras you might notice two things:
 2. Rocksdb as a state backend is enabled.
 
 We are not going into detail for these concepts here as it's a story for another day. For those interested if you run the code above you should see two output directories, `checkpoints` and `state`.
-<p align="center">
-    <img src="../images/flink/sql/image7.png" width="1000" height=250">
-</p>
+
+![Checkpoints](../images/flink/sql/image7.png)
 
 Since we are consuming (at most) from 3 kafka partitions, I'm using a parallelism of 3 as you might have also noticed in the code and so the stateful operator that runs the join will
 store state for each of the three tasks.
