@@ -362,5 +362,5 @@ defaults:
       layout: single
       author_profile: false
       share: false
-      show_date: false
-      page_date: false
+      show_date: true
+  
