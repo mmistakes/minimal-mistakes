@@ -284,10 +284,11 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: splash
+      layout: single
       author_profile: true
       read_time: true
       comments: # true
       share: true
       related: true
       toc: true
+      show_date: true

@@ -1,6 +1,6 @@
 ---
-layout: single
 title:  "Adversarial Prompting"
+excerpt: "Finding phrases that bias image and text generation towards unexpected outputs"
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
@@ -11,7 +11,6 @@ header:
       url: "https://arxiv.org/abs/todo"
     - label: "Code"
       url: "https://github.com/debugml/todo"
-author_profile: true
 authors: 
   - Natalie Maus
   - Patrick Chao
@@ -20,5 +19,5 @@ authors:
 ---
 
 
-Searching for adversarial prompts that bias image and text generation towards unexpected outputs. 
+Blog post here.
 

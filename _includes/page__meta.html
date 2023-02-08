@@ -1,8 +1,28 @@
+{% assign authorCount = page.authors | size %}
+{% if authorCount == 0 %}
+  {% if page.author and site.data.authors[page.author] %}
+    {% assign author = site.data.authors[page.author] %}
+  {% else %}
+    {% assign author = site.author %}
+  {% endif %}
+  
+  {% assign authors = {{author.authorid | split: "," }} %}
+{% else %}
+  {% assign authors = page.authors %}
+{% endif %}
+
 {% assign document = post | default: page %}
 {% if document.read_time or document.show_date %}
   <p class="page__meta">
+    <!-- new: add authors meta -->
+    {% for authorid in authors %}
+      {% assign author = site.data.authors[authorid] %}
+      {% if author.home %}
+      <a class="u-url" rel="me" href="{{ author.home | default: '/' | absolute_url }}" itemprop="url">{% endif %}{{ author.name }}{% if author.home %}</a>{% endif %}{% unless forloop.last %},{% endunless %}
+    {% endfor %} 
     {% if document.show_date and document.date %}
       {% assign date = document.date %}
+      <span class="page__meta-sep"></span>
       <span class="page__meta-date">
         <i class="far {% if include.type == 'grid' and document.read_time and document.show_date %}fa-fw {% endif %}fa-calendar-alt" aria-hidden="true"></i>
         {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
