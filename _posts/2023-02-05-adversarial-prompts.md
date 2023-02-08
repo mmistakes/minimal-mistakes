@@ -13,8 +13,10 @@ header:
       url: "https://github.com/debugml/todo"
 author_profile: true
 authors: 
-  - First Last
+  - Natalie Maus
+  - Patrick Chao
   - Eric Wong
+  - Jake Gardner
 ---
 
 

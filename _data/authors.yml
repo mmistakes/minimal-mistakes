@@ -1,0 +1,65 @@
+First Last:
+  name             : "First Last"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : # "Bio Here"
+  location         : # "Philadelphia, PA"
+  home             : 
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      # url: "mailto:username@cis.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      # url: "www.website.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url: "https://twitter.com/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      # url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
+
+Eric Wong:
+  name             : "Eric Wong"
+  avatar           : "/assets/images/avatar/eric.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Assistant Professor at UPenn"
+  location         : "Philadelphia, PA"
+  home             : https://www.cis.upenn.edu/~exwong/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:exwong@cis.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.cis.upenn.edu/~exwong/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/RICEric22"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/RICEric22"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
+
+Patrick Chao:
+  name             : "Patrick Chao"
+  avatar           : https://faculty.wharton.upenn.edu/wp-content/uploads/2016/11/Chao_Patrick-129x139.jpg
+
+
+Natalie Maus:
+  name             : "Natalie Maus"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+
+
+Jake Gardner:
+  name             : "Jake Gardner"
+  avatar           : https://jacobrgardner.github.io/images/me.jpg

@@ -7,3 +7,15 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+Adding some stuff for multiple authors view
+.author__content {
+  vertical-align: middle;
+}
+
+.author__content, .author__avatar, .author__urls-wrapper {
+  vertical-align: middle;
+  @include breakpoint($large) {
+    text-align: center;
+  }
+}
