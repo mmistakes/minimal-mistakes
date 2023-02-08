@@ -1,4 +1,17 @@
 ---
-layout: home
-author_profile: true
+layout: home-full
+entries_layout: grid
+collection: posts
+author_profile: false
+classes: wide
 ---
+<!-- 
+{% for post in site.posts %}
+  {% include archive-single.html %}
+{% endfor %} 
+-->
+
+<!-- {% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% include documents-collection.html collection=page.collection sort_by=page.sort_by sort_order=page.sort_order type=entries_layout %}
+</div> -->

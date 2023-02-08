@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Eric Wong"
+  name             : "Eric Wong's Lab"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Assistant Professor at UPenn"
+  bio              : "Research Group at UPenn"
   location         : "Philadelphia, PA"
   email            :
   links:
@@ -115,10 +115,10 @@ author:
       # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://www.cis.upenn.edu/~exwong/"
+      url: "https://www.debugml.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/RICEric22"
+      # url: "https://twitter.com/RICEric22"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -285,8 +285,9 @@ defaults:
       type: posts
     values:
       layout: splash
-      author_profile: false # true
+      author_profile: true
       read_time: true
       comments: # true
       share: true
       related: true
+      toc: true

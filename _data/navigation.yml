@@ -2,6 +2,8 @@
 main:
   - title: "All Posts"
     url: /posts/
+  - title: "GitHub"
+    url: https://debugml.github.io/
   - title: "About"
     url: /about/
   # - title: "Quick-Start Guide"
