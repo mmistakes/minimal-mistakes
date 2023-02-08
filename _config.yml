@@ -76,7 +76,7 @@ google:
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-naver_site_verification  :
+naver_site_verification  : "1b9d1c5bda4cce1bdcf045be73f5cd32c188cb9c"
 yandex_site_verification :
 baidu_site_verification  :
 
@@ -106,7 +106,7 @@ analytics:
 # Site Author
 author:
   name             : "Ann, Dong Hyun"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "assets/images/IMG_3830.JPG"
   bio              : "운동 좋아하는 데이터쟁이"
   location         : "Seongnam, Gyeonggi"
   email            : 
