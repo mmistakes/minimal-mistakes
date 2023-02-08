@@ -58,6 +58,8 @@ feature_row:
 
 We are the Knowledge-based and Software Systems Group - a research group located at the [Department of Computer Science](https://cs.felk.cvut.cz/), [Faculty of Electrical Engineering](https://fel.cvut.cz/en/) of the Czech Technical University in Prague.
 
+We focus on the research and development of knowledge-based information systems using Semantic Web technologies.
+
 {% include feature_row %}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
