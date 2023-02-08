@@ -30,7 +30,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "giscus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -41,16 +41,16 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                :  # "github-light" (default), "github-dark"
-    issue_term           :  # "pathname" (default)
+    theme                : "github-light"  # "github-light" (default), "github-dark"
+    issue_term           : "pathname" # "pathname" (default)
     label                : 
   giscus:
-    repo_id              : "https://giscus.app/client.js" # Shown during giscus setup at https://giscus.app
-    category_name        : "Announcements" # Full text name of the category
-    category_id          : "R_kgDOI4Dtaw" # Shown during giscus setup at https://giscus.app
-    discussion_term      : "pathname" # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : 1 # '1' for enabled (default), '0' for disabled
-    theme                : "light_protanopia" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+    repo_id              : # "https://giscus.app/client.js" # Shown during giscus setup at https://giscus.app
+    category_name        : # "Announcements" # Full text name of the category
+    category_id          : # "R_kgDOI4Dtaw" # Shown during giscus setup at https://giscus.app
+    discussion_term      : # "pathname" # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : # 1 # '1' for enabled (default), '0' for disabled
+    theme                : # "light_protanopia" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
