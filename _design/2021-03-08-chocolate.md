@@ -1,5 +1,6 @@
 ---
-title: "Test-design"
+title: "Withme Chocolate"
+permalink: /chocolate/
 excerpt: "Baz Boom design system including logo mark, website design, and branding applications."
 layout: splash
 ---
