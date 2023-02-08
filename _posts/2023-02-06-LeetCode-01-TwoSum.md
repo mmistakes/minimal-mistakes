@@ -57,4 +57,4 @@ var twoSum = function(nums, target) {
 ```
 ---
 
-![logo](../images/2023-02-06-LeetCode-01-TwoSum/logo-5801379.png)
+![logo](../images/2023-02-06-LeetCode-01-TwoSum/logo.png)
