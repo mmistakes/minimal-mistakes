@@ -3,7 +3,7 @@ layout: single
 title: "Cognition: distributed data processing system for lunar activities"
 author: [ptak-bartosz, pieczynski-dominik, kraft-marek]
 modified: 2023-02-08
-tags: [qgis, plugin, deepness, remote sensing]
+tags: [ros2, fpga, xilinx, petalinux, husky, ai-engine, depthai, xsens, lunares, cognition, rover]
 category: [project]
 teaser: "/assets/images/posts/2023/02/husky_thumb.webp"
 ---
