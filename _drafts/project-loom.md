@@ -667,6 +667,8 @@ As a continuation, a virtual thread is a state machine with many states. The rel
 
 ![Java Virtual Threads States](/images/virtual-threads/virtual-thread-states.png)
 
+A virtual thread is _mounted_ on its carrier thread when it is in the states colored of green. In states colored in light blue, the virtual thread is _unmounted_ from its carrier thread. The pinned state is colored in violet.
+
 We get a virtual thread in the `NEW` status when we call the `unstarted` method on the object returned by the `Thread.ofVirtual()` method. Basically, it is the state we have after the call to the `VirtualThread` constructor we've just seen. 
 
 Once we call the `start` method, the virtual thread is moved to the `STARTED` status:
@@ -786,7 +788,32 @@ private boolean yieldContinuation() {
 }
 ```
 
-The `Continuation.yield(VTHREAD_SCOPE)` call is full of JVM native calls. From there, the method `VirtualThread.afterYield()` is called. This method sets the `PARKED` state to the virtual thread, and the continuation is scheduled again for execution through the method `lazySubmitRunContinuation()` and setting the state to `RUNNABLE`:
+The `Continuation.yield(VTHREAD_SCOPE)` call is implemented with a lot of JVM native calls. If the method returns `true`, then the `parkOnCarrierThread`is called. This method sets the virtual threads as pinned on the carrier thread:
+
+```java
+private void parkOnCarrierThread(boolean timed, long nanos) {
+    assert state() == PARKING;
+    var pinnedEvent = new VirtualThreadPinnedEvent();
+    pinnedEvent.begin();
+    setState(PINNED);
+    try {
+        if (!parkPermit) {
+            if (!timed) {
+                U.park(false, 0);
+            } else if (nanos > 0) {
+                U.park(false, nanos);
+            }
+        }
+    } finally {
+        setState(RUNNING);
+    }
+    // consume parking permit
+    setParkPermit(false);
+    pinnedEvent.commit();
+}
+```
+
+From there, the method `VirtualThread.afterYield()` is called. This method sets the `PARKED` state to the virtual thread, and the continuation is scheduled again for execution through the method `lazySubmitRunContinuation()` and setting the state to `RUNNABLE`:
 
 ```java
 // JDK core code
@@ -811,5 +838,7 @@ private void afterYield() {
     }
 }
 ```
+
+Basically, this close the circle. As we can see, it's not that easy to follow the life cycle of a virtual thread and its continuation. A lot of native calls are involved. We hope that the JDK team will provide a better documentation of the virtual threads implementation in the future.
 
 
