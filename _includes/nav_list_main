@@ -14,7 +14,7 @@
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Linear-algebra" %}
-                <li><a href="/categories/Linear-algebra" class=""><i class="fa-solid fa-calculator"></i> 선형대수(with 파이썬)({{category[1].size}})</a></li>
+                <li><a href="/categories/Linear-algebra" class="">선형대수(with 파이썬)({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
@@ -23,10 +23,10 @@
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Baekjoon" %}
-                <li><a href="/categories/Baekjoon" class=""><i class="fab fa-python"></i> 백준({{category[1].size}})</a></li>
+                <li><a href="/categories/Baekjoon" class="">백준({{category[1].size}})</a></li>
                 {% endif %}
                 {% if category[0] == "Programmers" %}
-                <li><a href="/categories/Programmers" class=""><i class="fa-sharp fa-solid fa-rectangle-pro"></i> 프로그래머스({{category[1].size}})</a></li>
+                <li><a href="/categories/Programmers" class="">프로그래머스({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
@@ -35,7 +35,7 @@
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Project" %}
-                <li><a href="/categories/Project" class=""><i class="fa-solid fa-projector"></i> 프로젝트({{category[1].size}})</a></li>
+                <li><a href="/categories/Project" class="">프로젝트({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
@@ -44,7 +44,7 @@
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "DataBase" %}
-                <li><a href="/categories/DataBase" class=""><i class="fa-solid fa-database"></i> 데이터베이스({{category[1].size}})</a></li>
+                <li><a href="/categories/DataBase" class="">데이터베이스({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
@@ -53,10 +53,10 @@
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Hongong_mldl" %}
-                <li><a href="/categories/Hongong_mldl" class=""><i class="fa-solid fa-graduation-cap"></i> 혼자 공부하는 머신러닝+딥러닝({{category[1].size}})</a></li>
+                <li><a href="/categories/Hongong_mldl" class="">혼자 공부하는 머신러닝+딥러닝({{category[1].size}})</a></li>
                 {% endif %}
                 {% if category[0] == "MachineLearning" %}
-                <li><a href="/categories/MachineLearning" class=""><i class="fa-solid fa-chalkboard-user"></i> 머신러닝({{category[1].size}})</a></li>
+                <li><a href="/categories/MachineLearning" class="">머신러닝({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
@@ -65,18 +65,17 @@
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Develop" %}
-                <li><a href="/categories/Develop" class=""><i class="fa-solid fa-brackets-curly"></i> 개발({{category[1].size}})</a></li>
+                <li><a href="/categories/Develop" class="">개발({{category[1].size}})</a></li>
                 {% endif %}
                 {% if category[0] == "GitHub" %}
-                <li><a href="/categories/GitHub" class=""><i class="fa-brands fa-github"></i> 깃 & 깃허브({{category[1].size}})</a></li>
+                <li><a href="/categories/GitHub" class="">깃 & 깃허브({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
         </li>
         <li>
             <br>
-            <img
-                src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fmgskko.github.io&count_bg=%23D8D947&title_bg=%23555555&icon=googlechrome.svg&icon_color=%23D62121&title=hits&edge_flat=false" />
+            <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fmgskko.github.io&count_bg=%23D6D714&title_bg=%23D50F34&icon=googlekeep.svg&icon_color=%23E7E7E7&title=&edge_flat=false"/></a>
         </li>
     </ul>
 </nav>
