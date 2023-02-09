@@ -23,7 +23,7 @@
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Baekjoon" %}
-                <li><a href="/categories/Baekjoon" class="">백준({{category[1].size}})</a></li>
+                <li><a href="/categories/Baekjoon" class=""><i class="fab fa-python"></i>백준({{category[1].size}})</a></li>
                 {% endif %}
                 {% if category[0] == "Programmers" %}
                 <li><a href="/categories/Programmers" class="">프로그래머스({{category[1].size}})</a></li>
