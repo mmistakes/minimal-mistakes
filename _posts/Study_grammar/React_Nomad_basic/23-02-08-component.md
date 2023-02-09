@@ -2,7 +2,7 @@
 layout: single
 title: "컴포기본"
 categories: lecture
-tag: [lecture_react,Nomad]
+tag: [lecture_react,Nomad_React]
 ---
 
 ```react
