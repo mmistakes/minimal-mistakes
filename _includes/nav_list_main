@@ -10,65 +10,65 @@
                         style="font-family:'Cafe24Oneprettynight';">개</style>
         </li>
         <li>
-            <span class="nav__sub-title">📐Mathematics</span>
+            <span class="nav__sub-title">📐 Mathematics</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Linear-algebra" %}
-                <li><a href="/categories/Linear-algebra" class="">선형대수(with 파이썬)({{category[1].size}})</a></li>
+                <li><a href="/categories/Linear-algebra" class=""><i class="fa-solid fa-calculator"></i> 선형대수(with 파이썬)({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
 
-            <span class="nav__sub-title">📈Coding Test</span>
+            <span class="nav__sub-title">📈 Coding Test</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Baekjoon" %}
-                <li><a href="/categories/Baekjoon" class=""><i class="fab fa-python"></i>백준({{category[1].size}})</a></li>
+                <li><a href="/categories/Baekjoon" class=""><i class="fab fa-python"></i> 백준({{category[1].size}})</a></li>
                 {% endif %}
                 {% if category[0] == "Programmers" %}
-                <li><a href="/categories/Programmers" class="">프로그래머스({{category[1].size}})</a></li>
+                <li><a href="/categories/Programmers" class=""><i class="fa-sharp fa-solid fa-rectangle-pro"></i> 프로그래머스({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
 
-            <span class="nav__sub-title">📝Project</span>
+            <span class="nav__sub-title">📝 Project</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Project" %}
-                <li><a href="/categories/Project" class="">프로젝트({{category[1].size}})</a></li>
+                <li><a href="/categories/Project" class=""><i class="fa-solid fa-projector"></i> 프로젝트({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
 
-            <span class="nav__sub-title">📊DataBase</span>
+            <span class="nav__sub-title">📊 DataBase</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "DataBase" %}
-                <li><a href="/categories/DataBase" class="">데이터베이스({{category[1].size}})</a></li>
+                <li><a href="/categories/DataBase" class=""><i class="fa-solid fa-database"></i> 데이터베이스({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
 
-            <span class="nav__sub-title">📏MLDL</span>
+            <span class="nav__sub-title">📏 MLDL</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Hongong_mldl" %}
-                <li><a href="/categories/Hongong_mldl" class="">혼자 공부하는 머신러닝+딥러닝({{category[1].size}})</a></li>
+                <li><a href="/categories/Hongong_mldl" class=""><i class="fa-solid fa-graduation-cap"></i> 혼자 공부하는 머신러닝+딥러닝({{category[1].size}})</a></li>
                 {% endif %}
                 {% if category[0] == "MachineLearning" %}
-                <li><a href="/categories/MachineLearning" class="">머신러닝({{category[1].size}})</a></li>
+                <li><a href="/categories/MachineLearning" class=""><i class="fa-solid fa-chalkboard-user"></i> 머신러닝({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
 
-            <span class="nav__sub-title">🔋Ect</span>
+            <span class="nav__sub-title">🔋 Ect</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Develop" %}
-                <li><a href="/categories/Develop" class="">개발({{category[1].size}})</a></li>
+                <li><a href="/categories/Develop" class=""><i class="fa-solid fa-brackets-curly"></i> 개발({{category[1].size}})</a></li>
                 {% endif %}
                 {% if category[0] == "GitHub" %}
-                <li><a href="/categories/GitHub" class="">깃 & 깃허브({{category[1].size}})</a></li>
+                <li><a href="/categories/GitHub" class=""><i class="fa-brands fa-github"></i> 깃 & 깃허브({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
