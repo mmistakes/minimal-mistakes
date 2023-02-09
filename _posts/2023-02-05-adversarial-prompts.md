@@ -68,16 +68,6 @@ We also attack the Text-to-Text generative model <a href="https://huggingface.co
 
 ### Citation
 
-
-<code>
-      @article{poole2022dreamfusion,<br>
-      &nbsp; author = {Poole, Ben and Jain, Ajay and Barron, Jonathan T. and Mildenhall, Ben},<br>
-      &nbsp; title  = {DreamFusion: Text-to-3D using 2D Diffusion},<br>
-      &nbsp; journal = {arXiv},<br>
-      &nbsp; year   = {2022},<br>
-                }</code>
-
-
 <span style="color:blue; font-size:0.6em;">@article{maus2023adversarialprompting,  
   &nbsp; &nbsp; &nbsp; &nbsp; author = {Maus, Natalie and Chao, Patrick and Wong, Eric and Gardner, Jacob},  
   &nbsp; &nbsp; &nbsp; &nbsp; title = {Adversarial Prompting for Black Box Foundation Models},  
