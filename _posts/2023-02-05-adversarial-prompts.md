@@ -26,7 +26,7 @@ authors:
 ## Adversarial Prompts for Text-to-Image Models
 We find adversarial prompts that generate unexpected outputs using <a href="https://huggingface.co/runwayml/stable-diffusion-v1-5"> Stable Diffusion</a>.
 
-Below are examples of generated images using the prompt and using each of the individual tokens. The individual tokens do not semantically relate to the class and do not generate images of the desired class, yet together they do generate desired images.
+Below are examples of generated images using the prompt and using each of the individual tokens. Given a target class, the individual tokens in the prompt do not semantically relate to the class and do not generate images of the class, yet together they generate images of the target class.
 
 <figure>
     <a href="/assets/images/adversarial_prompting/lizard.png "><img src="/assets/images/adversarial_prompting/lizard.png"></a>
