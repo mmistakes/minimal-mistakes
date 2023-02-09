@@ -19,7 +19,7 @@ title: "Study Note"
 title_separator: "|"
 subtitle: # site tagline that appears below site title in masthead
 name: "Myung Seok Ko"
-description: "데이터 공부일지"
+description: "공부일지"
 url: "https://mgskko.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "https://github.com/mgskko" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -102,7 +102,7 @@ analytics:
 author:
   name: "고명석"
   avatar: "https://i.esdrop.com/d/f/uVJApfFjHN/JuPS6b7yOr.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Math, Computer Engineering <br> Happy Data:)"
+  bio: "Math, Computer Engineering <br> Happy Day:)"
 
   location: "Republic of Korea" # "Somewhere"
   email: "msk724012@gmail.com"
