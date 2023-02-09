@@ -109,6 +109,7 @@ author:
   bio              : "I am an **amazing** person."
 #  location         : "Somewhere"
   email            : "ods04138@gmail.com"
+  bio              : "send me an e-mail"
   links:
     #- label: "Email"
      # icon: "fas fa-fw fa-envelope-square"
