@@ -14,7 +14,7 @@
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Linear-algebra" %}
-                <li><a href="/categories/Linear-algebra" class="">선형대수(with 파이썬)({{category[1].size}})</a></li>
+                <li><a href="/categories/Linear-algebra" class=""><meta name="application-name" content="Beautiful application name">선형대수(with 파이썬)({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
