@@ -841,4 +841,12 @@ private void afterYield() {
 
 Basically, this close the circle. As we can see, it's not that easy to follow the life cycle of a virtual thread and its continuation. A lot of native calls are involved. We hope that the JDK team will provide a better documentation of the virtual threads implementation in the future.
 
+## 8. Don't use `ThreadLocal` and Thread Pools
+
+TODO
+
+## 9. Conclusions
+
+TODO
+
 
