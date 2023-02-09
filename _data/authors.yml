@@ -53,7 +53,15 @@ Eric Wong:
 Patrick Chao:
   name             : "Patrick Chao"
   avatar           : https://faculty.wharton.upenn.edu/wp-content/uploads/2016/11/Chao_Patrick-129x139.jpg
-
+  bio              : "Statistics PhD Student at UPenn"
+  home             : https://patrickrchao.github.io/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:pchao@wharton.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://patrickrchao.github.io/"
 
 Natalie Maus:
   name             : "Natalie Maus"
