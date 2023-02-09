@@ -10,7 +10,7 @@
                         style="font-family:'Cafe24Oneprettynight';">개</style>
         </li>
         <li>
-            <span class="nav__sub-title">Mathematics</span>
+            <span class="nav__sub-title">📐Mathematics</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Linear-algebra" %}
@@ -19,7 +19,7 @@
                 {% endfor %}
             </ul>
 
-            <span class="nav__sub-title">Coding Test</span>
+            <span class="nav__sub-title">📈Coding Test</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Baekjoon" %}
@@ -31,7 +31,7 @@
                 {% endfor %}
             </ul>
 
-            <span class="nav__sub-title">Project</span>
+            <span class="nav__sub-title">📝Project</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Project" %}
@@ -40,7 +40,7 @@
                 {% endfor %}
             </ul>
 
-            <span class="nav__sub-title">DataBase</span>
+            <span class="nav__sub-title">📊DataBase</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "DataBase" %}
@@ -49,7 +49,7 @@
                 {% endfor %}
             </ul>
 
-            <span class="nav__sub-title">MLDL</span>
+            <span class="nav__sub-title">📏MLDL</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Hongong_mldl" %}
@@ -61,7 +61,7 @@
                 {% endfor %}
             </ul>
 
-            <span class="nav__sub-title">Ect</span>
+            <span class="nav__sub-title">🔋Ect</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Develop" %}
