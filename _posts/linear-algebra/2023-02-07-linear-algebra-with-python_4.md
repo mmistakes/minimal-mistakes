@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[선형대수(with 파이썬)] 3. 벡터의 곱셈"
+title: "[선형대수(with 파이썬)] 4. 벡터의 곱셈"
 categories: Linear-algebra
 tag: [python, Linear-algebra]
 toc: true
