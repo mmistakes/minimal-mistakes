@@ -39,7 +39,7 @@ def boj_type():
     
     infile = '''---
 layout: single
-title: BOJ-'''+fname+'''
+title: BOJ-'''+fname+'''-python
 tags: BOJ
 ---
 
