@@ -5,18 +5,18 @@ tags: python
 ---
 
 ## dictionary  
-단일 변수에 많은 값을 갖도록 허용
-정렬되지 않은 collection이다. each value with its own label
-영어사전을 찾는것과 같다. commend > c부터 하나씩 찾아들어간다.> 마지막에 찾으면 뜻 1,2,3
-정수 인덱스 대신 키워드를 사용하여 찾음
+단일 변수에 많은 값을 갖도록 허용  
+정렬되지 않은 collection이다. each value with its own label  
+영어사전을 찾는것과 같다. commend > c부터 하나씩 찾아들어간다.> 마지막에 찾으면 뜻 1,2,3  
+정수 인덱스 대신 키워드를 사용하여 찾음  
 
-java.util.HashMap in java
-std::map in C++
-std::collections::HashMap in Rust
+java.util.HashMap in java  
+std::map in C++  
+std::collections::HashMap in Rust  
 
-The dictionary data type models a super fast searchable collection of (key-values) items
-키값은 중복될수 없다(집합과 똑같음)
-Keys must be immutable and hashable
+The dictionary data type models a super fast searchable collection of (key-values) items  
+키값은 중복될수 없다(집합과 똑같음)  
+Keys must be immutable and hashable  
 
 ```python
 def testDict():
