@@ -843,10 +843,81 @@ Basically, this close the circle. As we can see, it's not that easy to follow th
 
 ## 8. Don't use `ThreadLocal` and Thread Pools
 
-TODO
+When using threads before Java 19 and Project Loom, it was quite uncommon to create a thread using the constructor. Instead, we preferred to use a thread pool or an executor service configured with a thread pool. In fact, those threads were what now we call platform thread, and the reason was that creating such threads was a quite expensive operation. 
+
+As we said in the beginning of this article, with virtual threads it's not the case anymore. The creation of a virtual thread is very cheap, both in space and time. Also, they were design with the idea of using a different virtual thread for each request. So, it's not a good idea to use a thread pool or an executor service to create virtual threads.
+
+The possible high number of virtual threads created by an application is the reason behind the fact the using `ThreadLocal` with virtual threads is not a good idea. 
+
+A `ThreadLocal` is a construct that allows us to store data that is accessible only by a specific thread. Let's see an example. First of all, we want to create a `ThreadLocal` that stores a `String`:
+
+```java
+static ThreadLocal<String> context = new ThreadLocal<>();
+```
+Then, we create two different platform threads that uses both the `ThreadLocal`:
+
+```java
+@SneakyThrows
+static void platformThreadLocal() {
+  var thread1 = Thread.ofPlatform().name("thread-1").start(() -> {
+    context.set("thread-1");
+    sleep(Duration.ofSeconds(1L));
+    log("Hey, my name is " + context.get());
+  });
+  var thread2 = Thread.ofPlatform().name("thread-2").start(() -> {
+    context.set("thread-2");
+    sleep(Duration.ofSeconds(1L));
+    log("Hey, my name is " + context.get());
+  });
+  thread1.join();
+  thread2.join();
+}
+```
+
+If we run the above function, the output is:
+
+```text
+14:57:05.334 [thread-2] INFO in.rcard.virtual.threads.App - Thread[#22,thread-2,5,main] | Hey, my name is thread-2
+14:57:05.334 [thread-1] INFO in.rcard.virtual.threads.App - Thread[#21,thread-1,5,main] | Hey, my name is thread-1
+```
+
+As we can see, each thread stores in the `ThreadLocal` a different value, and the value is not accessible to other threads. the thread called `thread-1` sets and retrieves the value `thread-1` from the `ThreadLocal`; The thread `thread-2` sets and retrieves the value `thread-2`, instead. There is no race condition at all.
+
+The same properties of `ThreadLocal` still stand also when we speak about virtual threads. In fact, we can replicate the same example above using virtual threads and the result will be the same:
+
+```java
+@SneakyThrows
+static void virtualThreadLocal() {
+  var virtualThread1 = Thread.ofVirtual().name("thread-1").start(() -> {
+    context.set("thread-1");
+    sleep(Duration.ofSeconds(1L));
+    log("Hey, my name is " + context.get());
+  });
+  var virtualThread2 = Thread.ofVirtual().name("thread-2").start(() -> {
+    context.set("thread-2");
+    sleep(Duration.ofSeconds(1L));
+    log("Hey, my name is " + context.get());
+  });
+  virtualThread1.join();
+  virtualThread2.join();
+}
+```
+
+As we might expect, the output is very similar to the previous one:
+
+```text
+15:08:37.142 [thread-1] INFO in.rcard.virtual.threads.App - VirtualThread[#21,thread-1]/runnable@ForkJoinPool-1-worker-1 | Hey, my name is thread-1
+15:08:37.142 [thread-2] INFO in.rcard.virtual.threads.App - VirtualThread[#23,thread-2]/runnable@ForkJoinPool-1-worker-2 | Hey, my name is thread-2
+```
+
+Nice. So, is it a good idea to use `ThreadLocal` with virtual threads? Well, no, it isn't. The reason is that virtual threads can be a lot, and each virtual thread will have its own `ThreadLocal`. This means that the memory footprint of the application will be very high. Moreover, in a on-thread-per-request scenario, the `ThreadLocal` will be useless, since it shouldn't be any sharing of data between different requests.
+
+However, there could be some scenario where the use of something similar to `ThreadLocal` could be useful. For this reason, in Java 20, there will be introduced [scoped values](https://openjdk.org/jeps/429), which enable the sharing of immutable data within and across threads. However, this is a topic for another article.
 
 ## 9. Conclusions
 
-TODO
+Finally, we come to the end of this article. At the beginning, we introduced the reason behind the introduction of virtual threads in the JVM. Then, we saw how to create and use it with some examples. We also discuss of some internals of the virtual threads implementations, such as the continuations. We made some example of pinned threads, and, finally, we saw how some old best practices are not valid anymore when using virtual threads.
+
+Project Loom is still actively under development, and there are a lot of other interesting features in it. As we said, structural concurrency, and scoped values to cite some of them. We firmly believe that Project Loom will be a game changer in the Java world. We hope that this article will help you to understand better the virtual threads and how to use them. 
 
 
