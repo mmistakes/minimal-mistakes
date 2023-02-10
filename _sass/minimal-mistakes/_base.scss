@@ -1,11 +1,6 @@
 /* ==========================================================================
    BASE ELEMENTS
    ========================================================================== */
- /*2023.2.10*/
-:root {
-  --background-color: #FFF;
-}
-
 html {
   /* sticky footer fix */
   position: relative;
@@ -18,8 +13,7 @@ body {
   color: $text-color;
   font-family: $global-font-family;
   line-height: 1.5;
-  /*2023.2.10*/
-  background-color: var(--background-color);
+ 
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
