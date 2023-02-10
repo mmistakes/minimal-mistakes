@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "useRef"
+title: "useContext"
 categories: lecture
 tag: [React, code,conception,lecture_react,Sail99]
 ---
