@@ -1,67 +1,9 @@
 ---
 layout: single
-title: "styled components"
+title: "Global Styling"
 categories: lecture
 tag: [React, code,conception,lecture_react,Sail99]
 ---
-
-# Styled Components
-
-
-
-> ## 환경설정
-
-extension에 styled-components 설치(전역설치됨)
-
-yarn add styled-components로 json package 추가
-
-
-
-```react
-import React from 'react'
-import "./App.css"
-import styled from "styled-components"
-
-//스타일링 css in js --> styled component 로 하는 방법 강의
-// div는 컴포명 ``안에 인수 넣어주면 진행
-//styled.뒤에는 항상 html 요소 옴
-const StBox = styled.div`
-width : 100px;
-height : 100px;
-border : 1px solid red;
-margin : 20px;
-`
-
-// ex: p태그에 적용
-// const StP = styled.p`
-// color : blue;
-// `
-
-
-function App() {
-  return (
-      <>
-    <StBox borderColor="red">
-          박스
-    </StBox>
-          </>
-  )
-}
-
-export default App
-```
-
-
-
-### CSS  in JS
-
-JS로 CSS코드 작성하는 방식
-
-Props를 통해 부모=>자식 컴포로  **조건부 스타일링** 가능
-
-### 참고 :  styled components => 지역스타일링
-
-
 
 
 
