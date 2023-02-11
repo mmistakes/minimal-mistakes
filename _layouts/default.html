@@ -14,6 +14,12 @@
     {% include head.html %}
     {% include head/custom.html %}
   </head>
+
+
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+    {% include_cached skip-links.html %}
+    {% include_cached masthead.html %}
+    
 /*2023.2.11*/
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
@@ -26,10 +32,6 @@
     {% include breadcrumbs.html %}
   {% endunless %}
 {% endif %}
-
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-    {% include_cached skip-links.html %}
-    {% include_cached masthead.html %}
 
     <div class="initial-content">
       {{ content }}
