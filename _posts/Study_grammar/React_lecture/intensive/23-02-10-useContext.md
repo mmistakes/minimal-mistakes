@@ -40,7 +40,7 @@ driling은 props 사용시 컴포넌트를 거쳐서 줘야 하기 때문에 발
 
 3. `provider` : 하위 컴포로 Context전달
 
-![KakaoTalk_20230210_193054412](../../../KakaoTalk_20230210_193054412.jpg)
+![KakaoTalk_20230210_193054412](../images/23-02-10-useContext/KakaoTalk_20230210_193054412.jpg)
 
 
 
