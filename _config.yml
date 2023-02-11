@@ -272,7 +272,7 @@ defaults:
       show_date: true
       sidebar_main: true
       toc: ture
-      toc_sticky: true
+      toc_sticky: false
       toc_label: 목차
       toc_icon: "fas fa-tablet-alt"
       
