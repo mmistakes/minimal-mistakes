@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "useMemo"
+title: "useCallback"
 categories: lecture
 tag: [React, code,conception,lecture_react,Sail99]
 ---
