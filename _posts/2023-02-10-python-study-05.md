@@ -1,7 +1,7 @@
 ---
 layout: single
 title: python-study-05 python class
-tags: other
+tags: python
 ---
 
 ## python class define  
