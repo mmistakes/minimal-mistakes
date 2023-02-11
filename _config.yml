@@ -20,7 +20,7 @@ title                    : "DATA 100%"
 title_separator          : "|"
 subtitle                 : "Be Brave. Be Bold. And Stay Wiggly."
 name                     : "WOONGSONVI"
-description              : "누구에게나 제대로 알려줄 수 있을 때까지. 꾸준히 적는 데이터 다이어리."
+description              : "제대로 설명할 수 있을 때까지. 꾸준히 적는 데이터 다이어리."
 url                      : "https://woongsonvi.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -102,11 +102,12 @@ analytics:
     anonymize_ip         : false # true, false (default)
 
 
+# &nbsp
 # Site Author
 author:
   name             : "WOONGSONVI"
   avatar           : "/assets/images/프로필.jpg"
-  bio              : "누구에게나 제대로 알려줄 수 있을 때까지. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 꾸준히 적는 데이터 다이어리."
+  bio              : 제대로 설명할 수 있을 때까지. <br> 꾸준히 적는 데이터 다이어리.
   location         : "Incheon, South Korea"
   email            : 
   links:
