@@ -88,9 +88,7 @@
       position: -webkit-sticky;
       position: sticky;
       top: 2em;
-      float: right;
-
-      
+      float: top;
     }
   }
 
@@ -98,6 +96,13 @@
     width: $right-sidebar-width;
     margin-right: -1 * $right-sidebar-width;
   }
+}
+
+.sidebar__top {
+  position: fixed;
+  bottom: 1.5em;
+  right: 2em;
+  z-index: 10;
 }
 
 .splash .sidebar__right {
@@ -305,9 +310,9 @@
 
   a {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     padding-right: 5px;
-    padding-top: 2px;
+    padding-top: 0px;
     padding-bottom: 2px;
     color: inherit;
     font-size: $type-size-5;
