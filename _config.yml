@@ -105,8 +105,8 @@ analytics:
 # Site Author
 author:
   name             : "WOONGSONVI"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "누구에게나 제대로 알려줄 수 있을 때까지. 꾸준히 적는 데이터 다이어리."
+  avatar           : "/assets/images/캐릭터.jpg"
+  bio              : "누구에게나 제대로 알려줄 수 있을 때까지. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 꾸준히 적는 데이터 다이어리."
   location         : "South Korea"
   email            : 
   links:
@@ -116,6 +116,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/WOONGSONVI"
+    - label: "Notion"
+      icon: "fas fa-fw fa-link"
+      url: "https://woong-jae.notion.site/"
 
 # Site Footer
 footer:
@@ -123,6 +126,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/WOONGSONVI"
+    - label: "Notion"
+      icon: "fas fa-fw fa-link"
+      url: "https://woong-jae.notion.site/"
 
 
 # Reading Files
@@ -203,6 +209,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -211,6 +218,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 
 # Archives
@@ -264,4 +272,9 @@ defaults:
       share: true
       related: true
       show_date : true
+      toc: true
+      toc_sticky: true
+      toc_label: 목차
+      toc_icon : "fa-solid fa-indent"
+
 date_format: "%Y-%m-%d"
