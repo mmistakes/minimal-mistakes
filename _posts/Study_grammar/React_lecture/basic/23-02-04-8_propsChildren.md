@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "Props Children"
-categories: lecture 
-tag: [React, code,conception,lecture_react,Sail99]
+categories: React
+tag: [Sail99, React_Grammar_Basic]
 ---
 
 # props Children

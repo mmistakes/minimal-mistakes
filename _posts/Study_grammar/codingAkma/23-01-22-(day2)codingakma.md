@@ -1,8 +1,8 @@
 ---
 layout: single
 title: " 코딩앙마 JS 초급 "
-categories: concept
-tag: [codingakma]
+categories: Javascript
+tag: [lecture,codingakma]
 ---
 # 코딩앙마 100분
 

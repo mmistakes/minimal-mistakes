@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "styled components"
-categories: lecture
-tag: [React, code,conception,lecture_react,Sail99]
+categories: React
+tag: [React_Grammar_Intensive,Sail99,setting]
 ---
 
 # Styled Components

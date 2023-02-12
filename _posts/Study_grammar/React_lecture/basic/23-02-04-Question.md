@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "질문"
-categories: lecture_Q
-tag: [React, code, conception, Question]
+title: "React_basic_Qusetion"
+categories: React
+tag: [Sail99, React_Grammar_Basic]
 ---
 
 #  Question_ React

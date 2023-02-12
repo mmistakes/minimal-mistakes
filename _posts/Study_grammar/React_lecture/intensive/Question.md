@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "숙련주차 Question"
-categories: lecture, Question
-tag: [React, code,conception,lecture_react,Sail99]
+categories: React
+tag: [React,React_Grammar_Intensive,Sail99,Question]
 ---
 
 

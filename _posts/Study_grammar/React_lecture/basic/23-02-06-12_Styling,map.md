@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "Styling, app"
-categories: lecture, practice
-tag: [React, code, JS, conception,lecture_react,Sail99]
+categories: React
+tag: [Sail99, React_Grammar_Basic, practice]
 ---
 
 # styling, map

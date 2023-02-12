@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "Virtual DOM "
-categories: lecture
-tag: [React, code,conception,lecture_react,Sail99]
+categories: React
+tag: [React_Grammar_Intensive,Sail99]
 ---
 
 [TOC]
@@ -17,7 +17,7 @@ Document Object Model
 
 DOM == element를 트리형태로 표현한 것
 DOM에서 element요소들을 'Node'라고 부름
-각 노드는 Api를 제공 (Api : HTML요소에 접근해 수정가능한 함수정도로 이해)
+각 노드는 Api를 제공 (Api : HTML요소에 접근해 수정가 능한 함수정도로 이해)
 
 form validation도 접근하여 가져와서 확인
 
@@ -53,7 +53,7 @@ form validation도 접근하여 가져와서 확인
 
   
 
-  이렇게 보면 이해가 쉬워요.
+  이렇게 보면 이해가 쉬워요. 
 
   <**클릭 한 번으로 화면에 있는 5개의 엘리먼트가 바뀌어야 한다면>**
 
