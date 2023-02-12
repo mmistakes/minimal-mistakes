@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Zhen Yin"
   avatar           : /assets/images/avatar.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  #bio              : "I am an **amazing** person."
+  bio              : "A designer, writer, cat lover"
   location         : #"London,UK"
   #email            : qinger324@gmail.com
   links:
