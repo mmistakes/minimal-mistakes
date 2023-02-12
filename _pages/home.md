@@ -3,10 +3,7 @@ layout: splash
 permalink: /
 hidden: false
 header:
-  image: /assets/images/mm-home-page-feature.jpg
-excerpt: >
-  A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
-  <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0">Latest release v4.24.0</a></small>
+  image: /assets/images/home.jpg
 feature_row:
   - image_path: /assets/images/plastics/header.jpg
     alt: "plasticsheader"
