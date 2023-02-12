@@ -8,19 +8,19 @@ feature_row:
   - image_path: /assets/images/plastics/header.jpg
     alt: "plasticsheader"
     url: "/design/"
-    title: ""
+    excerpt: ""
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/fouryearsjournalism/header.jpg
     alt: "fouryearsjournalismheader"
     url: "/others/"
-    title: ""
+    excerpt: ""
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/2022/1.jpg
     alt: "illustration20221"
     url: "/illustration/"
-    title: ""
+    excerpt: ""
     btn_class: "btn--primary"
     btn_label: "Learn more"      
 ---
