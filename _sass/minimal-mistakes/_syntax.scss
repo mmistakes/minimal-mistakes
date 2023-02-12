@@ -9,14 +9,14 @@ figure.highlight {
   background: $base00;
   color: $base05;
   font-family: $monospace;
-  font-size: $type-size-6;
+  font-size: $type-size-8;
   line-height: 1.8;
   border-radius: $border-radius;
 
   > pre,
   pre.highlight {
     margin: 0;
-    padding: 1em;
+    padding: 0.5em;
   }
 }
 
@@ -318,7 +318,8 @@ figure.highlight {
 }
 
 .gist {
-  th, td {
+  th,
+  td {
     border-bottom: 0;
   }
 }

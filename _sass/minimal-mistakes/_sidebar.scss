@@ -57,7 +57,7 @@
   p,
   li {
     font-family: $sans-serif;
-    font-size: $type-size-6;
+    font-size: $type-size-7;
     line-height: 1.5;
   }
 
@@ -174,7 +174,7 @@
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-size: $type-size-6;
 }
 
 .author__bio {
@@ -267,7 +267,7 @@
 
   &:before {
     display: block;
-    content: "";
+    content: '';
     position: absolute;
     top: -11px;
     left: calc(50% - 10px);
@@ -284,7 +284,7 @@
 
   &:after {
     display: block;
-    content: "";
+    content: '';
     position: absolute;
     top: -10px;
     left: calc(50% - 10px);
@@ -350,4 +350,3 @@
     margin-right: initial;
   }
 }
-

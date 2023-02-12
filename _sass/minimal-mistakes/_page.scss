@@ -27,7 +27,7 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .initial-content,
@@ -84,7 +84,7 @@ body {
 
 .page__lead {
   font-family: $global-font-family;
-  font-size: $type-size-4;
+  font-size: $type-size-6;
 }
 
 .page__content {
@@ -93,27 +93,32 @@ body {
     border-bottom: 1px solid $border-color;
   }
 
-	h1, h2, h3, h4, h5, h6 {
-		.header-link {
-			position: relative;
-			left: 0.5em;
-			opacity: 0;
-			font-size: 0.8em;
-			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
-			-moz-transition: opacity 0.2s ease-in-out 0.1s;
-			-o-transition: opacity 0.2s ease-in-out 0.1s;
-			transition: opacity 0.2s ease-in-out 0.1s;
-		}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    .header-link {
+      position: relative;
+      left: 0.5em;
+      opacity: 0;
+      font-size: 0.8em;
+      -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+      -moz-transition: opacity 0.2s ease-in-out 0.1s;
+      -o-transition: opacity 0.2s ease-in-out 0.1s;
+      transition: opacity 0.2s ease-in-out 0.1s;
+    }
 
-		&:hover .header-link {
-			opacity: 1;
-		}
-	}
+    &:hover .header-link {
+      opacity: 1;
+    }
+  }
 
   p,
   li,
   dl {
-    font-size: 1em;
+    font-size: 0.75em;
   }
 
   /* paragraph indents */
@@ -149,7 +154,7 @@ body {
     &::before,
     &::after {
       letter-spacing: -0.2em;
-      content: "\00a0"; /* non-breaking space*/
+      content: '\00a0'; /* non-breaking space*/
     }
   }
 
@@ -301,7 +306,7 @@ body {
   margin-top: 2em;
   color: $muted-text-color;
   font-family: $sans-serif;
-  font-size: $type-size-6;
+  font-size: $type-size-8;
 
   p {
     margin: 0;
@@ -319,7 +324,7 @@ body {
 }
 
 .page__meta-sep::before {
-  content: "\2022";
+  content: '\2022';
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
@@ -342,7 +347,7 @@ body {
   display: inline-block;
   margin-right: 5px;
   margin-bottom: 8px;
-  padding: 5px 10px;
+  padding: 2px 5px;
   text-decoration: none;
   border: 1px solid mix(#000, $border-color, 25%);
   border-radius: $border-radius;

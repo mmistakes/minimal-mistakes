@@ -18,6 +18,8 @@ sidebar-category:
     children:
       - title: 'Blog Dev'
         url: /categories/blog
+      - title: 'React'
+        url: /categories/react
       - title: 'Github'
         url: /categories/github
   - title: 'BOOK REVIEW'
