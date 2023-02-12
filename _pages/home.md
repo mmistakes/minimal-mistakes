@@ -23,7 +23,7 @@ feature_row:
   - image_path: /assets/images/2022/1.jpg
     alt: "illustration20221"
     excerpt: "Illustrations"
-    url: "/_pages/illustration"
+    url: "/pages/illustration"
     btn_class: "btn--primary"
     btn_label: "Learn more"      
 ---
