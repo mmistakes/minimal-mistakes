@@ -7,20 +7,20 @@ header:
 feature_row:
   - image_path: /assets/images/plastics/header.jpg
     alt: "plasticsheader"
-    url: "/plastics/"
-    title: "Where Is My Missing Plastics"
+    url: "/design/"
+    title: ""
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/fouryearsjournalism/header.jpg
     alt: "fouryearsjournalismheader"
-    url: "/fouryearsjournalism/"
-    title: "Studying Journalism As A Shuangfei Student"
+    url: "/others/"
+    title: ""
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/2022/1.jpg
     alt: "illustration20221"
     url: "/illustration/"
-    title: "Illustrations"
+    title: ""
     btn_class: "btn--primary"
     btn_label: "Learn more"      
 ---
