@@ -24,4 +24,5 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"      
 ---
+<h1 style="text-align: center;"> See what I have done</h1>
 {% include feature_row %}
