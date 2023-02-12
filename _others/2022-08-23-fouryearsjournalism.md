@@ -2,6 +2,7 @@
 title: "我在“双非”学新闻"
 excerpt: "Studying Journalism as a *Shuangfei* Student"
 layout: single
+permalink: /fouryearsjournalism/
 header:
   teaser: /assets/images/fouryearsjournalism/header.jpg
 ---
