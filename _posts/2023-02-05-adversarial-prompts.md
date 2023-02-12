@@ -19,6 +19,15 @@ authors:
 
 
 
+gallery_flagship:
+  - url: "/assets/images/adversarial_prompting/mountain.png"
+    image_path: "/assets/images/adversarial_prompting/mountain.png"
+    alt: "Image generated with the prompt `a picture of a mountain`"
+    # title: "Image generated with the prompt `pegasus`"
+  - url: "/assets/images/adversarial_prompting/final_dog.jpg"
+    image_path: "/assets/images/adversarial_prompting/final_dog.jpg"
+    alt: "Image generated with the prompt `turbo lhaff&#10003;a picture of a mountain`"
+
 gallery_individual:
   - url: "/assets/images/adversarial_prompting/gallery_individual/pegasus.png"
     image_path: "/assets/images/adversarial_prompting/gallery_individual/pegasus.png"
@@ -68,10 +77,10 @@ gallery_plane:
     image_path: "/assets/images/adversarial_prompting/gallery_plane/plane3.png"
     alt: "Ocean image attacked to be a plane"
     title: "DALL-E image generated with the prompt `pegasus yorkshire wwii a picture of the ocean`"
-  - url: "/assets/images/adversarial_prompting/gallery_plane/plane4.png"
-    image_path: "/assets/images/adversarial_prompting/gallery_plane/plane4.png"
-    alt: "Ocean image attacked to be a plane"
-    title: "DALL-E image generated with the prompt `pegasus yorkshire wwii a picture of the ocean`."
+  # - url: "/assets/images/adversarial_prompting/gallery_plane/plane4.png"
+  #   image_path: "/assets/images/adversarial_prompting/gallery_plane/plane4.png"
+  #   alt: "Ocean image attacked to be a plane"
+  #   title: "DALL-E image generated with the prompt `pegasus yorkshire wwii a picture of the ocean`."
 ---
 
 [arxiv]: "https://arxiv.org/abs/2302.04237"
@@ -79,7 +88,9 @@ gallery_plane:
 >In this post, we discuss how to generate adversarial prompts for unstructured image and text generation. These prompts, which can be standalone or prepended to benign prompts, induce specific behaviors into the generative process. 
 For example, "turbo lhaff&#10003;" can be prepended to "a picture of a mountain" to generate the dog in the banner photo of this page. 
 
----
+{% include gallery id="gallery_flagship" layout="half" caption="Images generated with the prompts (left) 'a picture of a mountain' and (right) 'turbo lhaff&#10003;a picture of a mountain'." %}
+
+<!-- --- -->
 
 ## Prompting Interfaces for Text/Image Generation
 Recent research has shifted towards using natural language as an interface for text and image generation, also known as *prompting*. 
@@ -100,9 +111,19 @@ As an example, consider the following prompt for image generation: ``a picture o
 
 {% include gallery id="gallery_ocean" layout="third" caption="Images generated with DALLE-2 and the prompt ``a picture of the ocean``" %}
 
-But what is an allowable perturbation to the prompt? In this post, we'll consider a simple change: the attacker is allowed to prepend a small number of tokens to a normal prompt, but cannot otherwise change the original prompt. This presents a challenge for the attacker: the adversarial prompt must override the original prompt without direct modifications! 
+But what is an allowable perturbation to the prompt? In this post, we'll consider a two simple requirements: 
+1. The attacker is allowed to prepend a small number of tokens to a normal prompt, but cannot otherwise change the original prompt. 
+2. The attacker cannot use tokens related to the target class that they are trying to induce in the downstream classifier. This will exclude trivial and obvious modifications that simply prepend the classification target, which would appear very suspicious. 
 
-But how are we going to find such an adversarial prompt? This presents another challenge for the attacker---many commercial prompting models are closed-source and can only be queried, e.g. [DALLE-2](https://openai.com/dall-e-2/) and [ChatGPT](https://openai.com/blog/chatgpt/). Many classsic adversarial attacks known as "white-box" attacks require access to the underlying model to get gradient information, which is unavailable when the models are closed-source. Instead, we will leverage an alternative class of so-called "black-box" attacks, which assume only query-level access to the model. 
+These restrictions limit the "perceptibiity" of the change. In other words, an adversarial prompt is one that prepends a small number of tokens that appear unrelated to the target class. This presents a challenge for the attacker: the adversarial prompt must override the original prompt without direct modifications, and with a small number of tokens! 
+
+For example, suppose we want DALLE-2 to generate pictures of planes instead of the ocean. Consider prepending three tokens ``pegasus yorkshire wwii`` to the original prompt, resulting in the adversarial prompt ``pegasus yorkshire wwii a picture of the ocean``. This results in the following images: 
+
+{% include gallery id="gallery_plane" layout="third" caption="Images generated with the prompt `pegasus yorkshire wwii taken a picture of the ocean`. Here, `pegasus yorkshire wwii` is the adversarial string prepended to the normal prompt `a picture of the ocean` to force DALLE-2 to generate images that are classified as planes instead of oceans." %}
+
+With this adversarial prompt, DALLE-2 is now generating pictures of planes! We were able to do this with a small number of tokens, without changing the original prompt, and without using tokens that directly relate to planes. 
+
+How did we find this adversarial prompt? This leads to the main challenge for the attacker---many commercial prompting models are closed-source and can only be queried, e.g. [DALLE-2](https://openai.com/dall-e-2/) and [ChatGPT](https://openai.com/blog/chatgpt/). Unfortunately, many classsic attacks known as "white-box" attacks require access to the underlying model to get gradient information. In our work, we instead leverage an alternative class of so-called "black-box" attacks, which assume only query-level access to the model. 
 
 ### Black-Box Adversarial Attack for Prompting
 
@@ -112,7 +133,6 @@ walk through the following example
 
 {% include gallery id="gallery_individual" layout="half" caption="Images generated with individual tokens from the adversarial prompt" %}
 
-{% include gallery id="gallery_plane" layout="half" caption="Images generated with the prompt `pegasus yorkshire wwii taken a picture of the ocean`. Here, `pegasus yorkshire wwii` is the adversarial string prepended to the normal prompt `a picture of the ocean` to force DALLE-2 to generate images that are classified as planes instead of oceans." %}
 
 ## Attacking Text-to-Image Models
 We find adversarial prompts that generate unexpected outputs using <a href="https://huggingface.co/runwayml/stable-diffusion-v1-5"> Stable Diffusion</a>.
