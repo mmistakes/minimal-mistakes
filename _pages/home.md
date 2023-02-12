@@ -3,31 +3,27 @@ layout: splash
 permalink: /
 hidden: false
 header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/mm-home-page-feature.jpg
+  image: /assets/images/mm-home-page-feature.jpg
 excerpt: >
   A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
   <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0">Latest release v4.24.0</a></small>
 feature_row:
-  - image_path: /assets/images/mm-customizable-feature.png
-    alt: "customizable"
-    title: "Super customizable"
-    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
-    url: "/docs/configuration/"
+  - image_path: /assets/images/plastics/header.jpg
+    alt: "plasticsheader"
+    excerpt: "Where Is My Missing Plastics"
+    url: "/design/plastics/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/mm-responsive-feature.png
-    alt: "fully responsive"
-    title: "Responsive layouts"
-    excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
-    url: "/docs/layouts/"
+  - image_path: /assets/images/fouryearsjournalism/header.jpg
+    alt: "fouryearsjournalismheader"
+    excerpt: "Studying Journalism as a Shuangfei Student"
+    url: "/others/fouryearsjournalism/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/mm-free-feature.png
-    alt: "100% free"
-    title: "100% free"
-    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-    url: "/docs/license/"
+  - image_path: /assets/images/2022/1.jpg
+    alt: "illustration20221"
+    excerpt: "Illustrations"
+    url: "/_pages/illustration"
     btn_class: "btn--primary"
     btn_label: "Learn more"      
 ---
