@@ -4,8 +4,6 @@ categories: [Open Mic Session, Open Mic]
 excerpt: "JSON-LD allows providing context with data published by REST services. This talk introduces JB4JSON-LD - a library for mapping Java objects to JSON-LD."
 ---
 
-{% include figure image_path="assets/images/openmics/2023-02-10-json-ld.png" alt="Martin Ledvinka - Giving semantics to web services with JSON-LD" %}{: .post-image }
-
 On the 10th February, speaker [Martin Ledvinka](https://kbss.felk.cvut.cz/web/team#martin-ledvinka) presented the topic of how to give semantics to Web Services using JSON-LD. The whole session was recorded.
 
 {% include video id="bnEZepQYYG0" provider="youtube" %}
