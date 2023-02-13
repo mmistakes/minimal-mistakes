@@ -1,6 +1,6 @@
 ---
 title: "From Akka Streams To Actors And Back"
-date: 2023-02-01 
+date: 2023-02-13 
 header:
    image: "/images/blog cover.jpg"
 tags: [akka]
