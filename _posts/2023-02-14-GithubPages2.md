@@ -1,7 +1,7 @@
 ---
 layout: single
-title: '깃허브 블로그 만들기 for Mac OS | 2. 로컬작업환경 설정, Ruby, rbenv'
-categories: GitHub Blog
+title: '깃허브 블로그 만들기 for Mac OS: 2. 로컬작업환경 설정, Ruby, rbenv'
+categories: 'GitHubBlog'
 tags: ['GitHub Pages', 'Jekyll']
 toc: true   # 우측 목차 여부
 author_profile: True   # 좌측 프로필 여부
@@ -11,6 +11,7 @@ author_profile: True   # 좌측 프로필 여부
 - Github Pages는 ruby라는 언어로 관리가 된다고 한다.
 - 하지만 기존의 맥에 설치되어 있는 ruby 2.6.0은 문제를 일으켜서 이것을 효과적으로 관리할 수 있는 rbenv 설치가 필요하다.
 - [Homebrew(링크)](https://brew.sh/index_ko) 또한 ruby를 사용하기 때문에 이를 통해 설치가 가능하다고한다. 설치가 안되어있다면 링크로 이동해서 다운먼저 받으면 된다.
+
 ```
 brew update
 brew install rbenv ruby-build
@@ -23,6 +24,7 @@ rbenv versions
 ```
 
 - 가장 최근의 ruby 버전을 설치한다
+
 ```
 # 설치가능한 ruby 버전 출력
 rbenv install -l
@@ -32,6 +34,7 @@ rbenv install 3.2.0
 ```
 
 - 설치한 루비 버전을 global로 설정하고 버전을 확인한다
+
 ```
 rbenv global 3.2.0
 
@@ -44,6 +47,7 @@ rbenv versions
 ```
 
 - 마지막으로 본인의 쉘 설정 파일 (..zshrc, .bashrc) 을 열어 rbenv PATH를 추가한다.
+
 ```
 # 쉘 설정 파일 열기
 vim ~/.zshrc
