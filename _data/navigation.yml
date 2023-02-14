@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Information"
+    url: /information/
   - title: "Schedule"
     url: /schedule/
   - title: "Resources"
