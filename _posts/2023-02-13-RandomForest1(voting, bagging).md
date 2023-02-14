@@ -235,3 +235,12 @@ bag_clf.oob_decision_function_
            [0.88717949, 0.11282051],
            [0.60818713, 0.39181287],
            [1.        , 0.        ]])
+
+# 랜덤 패치와 랜덤 서브스페이스
+앞선 BaggingClassifier 앙상블을 사용할 때, 데이터 샘플링 이외에 특성 샘플링도 가능하다.
+데이터 샘플링은 max_samples, bootstrap 매개변수들을 사용하여 조절했으나 특성 샘플링은 max_features, bootstrap_features 매개변수들을 사용하여 조절이 가능하다.
+
+위 방식은 매우 고차원의 데이터셋을 다룰 때 유용하다.
+특성과 샘플을 모두 샘플링하는 것을 랜덤 패치 방식이라고 하며, 훈련 샘플은 모두 사용하는 대신 특성을 샘플링(bootstrap=False, max_samples=1.0, bootstrap_features=True, max_features < 1.0으로 설정)하는 것을 랜덤 서브스페이스 방식이라고 한다.
+
+특성 샘플링은 편향을 늘리는 대신 분산을 낮춘다.
