@@ -273,6 +273,6 @@ defaults:
       comments: true
       share: true
       related: true
-      show_data: true
+      show_date: true
 
-# date_format: "%Y-%m-%d"
+date_format: "%Y-%m-%d"

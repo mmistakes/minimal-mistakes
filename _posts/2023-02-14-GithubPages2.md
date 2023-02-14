@@ -1,6 +1,6 @@
 ---
 layout: single
-title: '깃허브 블로그 만들기 for Mac OS: 2. 로컬작업환경 설정, Ruby, rbenv'
+title: '깃허브 블로그 만들기 for Mac OS: 2. 로컬작업환경 설정(rbenv, Jekyll, bundler)'
 categories: 'GitHubBlog'
 tags: ['GitHub Pages', 'Jekyll']
 toc: true   # 우측 목차 여부
