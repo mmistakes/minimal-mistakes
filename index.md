@@ -37,6 +37,8 @@ This event is designed to be inclusive to individuals from all backgrounds no ma
   <img src="/assets/images/logos/wwcodebd_dark.png" alt="Women Who Code" width="200"/>
 </div>
 
-## Interested in helping out as a sponsor or partner?
+## Interested in contributing as a sponsor or partner?
 
-<a href="mailto:didhackxyz@gmail.com">Contact Us</a>
+<div style="text-align: center;">
+  <a href="mailto:didhackxyz@gmail.com" class="btn btn--primary btn--large">Contact Us</a>
+</div>
