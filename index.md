@@ -24,16 +24,14 @@ This event is designed to be inclusive to individuals from all backgrounds no ma
 - Contribute to open source
 
 ## Thank you to our sponsors
-<div style="display: flex; align-items: center; justify-content: space-evenly; gap: 2rem;">
+<div class="logos">
   <img src="/assets/images/logos/dock_light.png" alt="Dock" width="200"/>
-  &#9711;
   <img src="/assets/images/logos/spruce.svg" alt="Spruce" width="200"/>
-  &#9711;
   <img src="/assets/images/logos/aviarytech.png" alt="Aviary Tech" width="200"/>
 </div>
 
 ## And our partners
-<div style="display: flex; align-items: center; justify-content: space-evenly; gap: 2rem;">
+<div class="logos">
   <img src="/assets/images/logos/wwcodebd_dark.png" alt="Women Who Code" width="200"/>
 </div>
 
