@@ -5,10 +5,13 @@
     - [De Loof Esther](#de-loof-esther)
     - [Desender Kobe](#desender-kobe)
     - [Janowich Jacki](#janowich-jacki)
+    - [Anna Marzecova]
+    - [Mehdi Senoussi]
 2. [PhD researchers](#phd-researchers)
     - [Aben Bart](#aben-bart)
     - [Deraeve James](#deraeve-james)
     - [Ergo Kate](#ergo-kate)
+    - [Pieter Huycke]
 
 ## Post-doctoral researchers
 
