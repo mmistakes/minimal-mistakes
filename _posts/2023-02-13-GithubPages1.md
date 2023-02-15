@@ -51,7 +51,7 @@ url: "https://DonghyunAnn.github.io"
 - _posts 폴더를 새롭게 생성한다. 
 - 그리고 날짜-파일명.md 형식으로 파일을 만든다 
 (ex:2023-02-13-Start_Github.md)
-- 데이터 분야에 관심이 있는 분들이 이 글을 보셨을 것이라 생각하는데, 그냥 jupyter notebook에서 좌측상단에 File/Download as/Markdown 으로 저장하면 편하게 파일을 생산할 수 있다.
+- 데이터 분야에 관심이 있는 분들이 이 글을 보셨을 것이라 생각하는데, 그냥 jupyter notebook에서 좌측상단에 <span style="background-color:#C0FFFF"> File/Download as/Markdown</span> 으로 저장하면 편하게 파일을 생산할 수 있다.
 
 ### 게시물 내부 이미지 삽입
 - assets 내 사진을 업로드한다
@@ -73,11 +73,11 @@ url: "https://DonghyunAnn.github.io"
 
 ## Commit & Pull Request
 - 터미널이나 Github Desktop에서 기존에 설정한 branch로 커밋을 한다
-- Repository/Pull Request 클릭 
+- <span style="background-color:#C0FFFF"> Repository/Pull Request</span> 클릭 
 ![PullRequest1](/assets/blog_img/pullrequest.png)
 - 오른쪽 Repository 에서 왼쪽 Repository로 적용시키는 단계에서 오른쪽 branch는 기존에 만들어놨던 branch(gh-pages) 왼쪽은 master branch로 설정
 ![PullRequest2](/assets/blog_img/pullrequest2.png)
-- Create Pull Request -> Merge -> Confirm Merge
+- <span style="background-color:#C0FFFF"> Create Pull Request -> Merge -> Confirm Merge</span>
 ![PullRequest3](/assets/blog_img/pullrequest3.png)
 - Overview로 넘어가서 잔디가 잘 심어졌는지 확인
 

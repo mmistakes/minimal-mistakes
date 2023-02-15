@@ -10,7 +10,7 @@ author_profile: True   # 좌측 프로필 여부
 
 ## 시작
 - [Quick Start Guide](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)를 참고하면 모든 자료가 나와있다
-- **_config.yml 파일 수정**
+- **<span style="background-color:#C0FFFF"> _config.yml </span> 파일 수정**
 
 ## 기본 테마 변경
 
@@ -66,7 +66,40 @@ footer:
       icon: "fab fa-fw fa-instagram"
       url: Instagram Link
 ```
+#### avatar 부분 수정 (프로필 사진 형태 변경)
+- <span style="background-color:#C0FFFF"> _sass/minimal-mistakes/_sidebar.scss </span> 로 이동
+- 아래 코드 중 태그를 걸어둔 부분을 바꾸면 프로필 사진 형태 변환 가능
 
+```python 
+# 120번째줄 부터
+/*
+   Author profile and links
+   ========================================================================== */
+
+.author__avatar {
+  display: table-cell;
+  vertical-align: top;
+  width: 36px;
+  height: 36px;
+
+  @include breakpoint($large) {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  img {
+    max-width: 150px;  # 프로필 사진의 최대 크기
+    border-radius: 20%;  # 50% = 원형, 낮아질수록 각지게 바뀜
+
+    @include breakpoint($large) {
+      padding: 5px;  # 테두리 바꿔주는 변수
+      border: 1px solid $border-color; # 테두리 바꿔주는 변수
+    }
+  }
+}
+
+```
 ## 날짜 추가
 - 게시물 하단에 날짜 추가 하는 방법은 
 ![layout4](/assets/blog_img/layout4.png)
