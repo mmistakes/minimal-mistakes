@@ -2,18 +2,15 @@
 
 1. [Principal investigator](#principal-investigator)
 2. [Post-doctoral researchers](#post-doctoral-researchers)
-    - [Anna Marzecová](#anna-marzecová)
     - [Elise Lesage](#elise-lesage)
     - [Irene Cogliati Dezza](#irene-cogliati-dezza)
-    - [Mehdi Senoussi](#mehdi-senoussi)
 3. [PhD researchers](#phd-researchers)
     - [Esin Turkakin](#esin-turkakin)
     - [Jonas Simoens](#jonas-simoens)
-    - [Pieter Huycke](#pieter-huycke)
     - [Pieter Verbeke](#pieter-verbeke)
 4. [Visiting researchers](#visiting-researchers)
 5. [Internship students](#internship-students)
-    - [Maud Beeckmans](#maud-beeckmans)
+    - 
 
 # Principal Investigator
 
@@ -38,22 +35,6 @@ Although this is a fairly broad topic, there are a few recurring themes, such as
 
 # Post-doctoral researchers
 
-### Anna Marzecová
-
-<img src="/images/profile_pic_anna.jpg" alt="Anna Marzecova" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
-
-I am interested in neurocognitive and -modulary mechanisms of attention and decision-making under uncertainty. 
-In the current project, I explore how Bayesian estimates about uncertainty guide attention using computational modeling in combination with electroencephalography and pupillometry. 
-
-My research is supported by an FWO (Research Foundation – Flanders) post-doctoral fellowship.
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Anna.Marzecova@UGent.be" href="mailto:Anna.Marzecova@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Anna.Marzecova@UGent.be</a></div>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/marzecova" href="https://twitter.com/marzecova" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@marzecova</a></div>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="http://www.marzecova.com/" href="http://www.marzecova.com/" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">http://www.marzecova.com/</a></div>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-2914-0766" href="https://orcid.org/0000-0002-2914-0766" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0002-2914-0766</a></div>
 
 ### Elise Lesage
 
@@ -86,19 +67,6 @@ My research focuses on understanding how people decide what they want to know an
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-1212-4751" href="https://orcid.org/0000-0002-1212-4751" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0002-1212-4751</a></div>
 
-### Mehdi Senoussi
-
-<img src="/images/profile_pic_mehdi.jpg" alt="Mehdi Senoussi" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
-
-My research currently focuses on top-down/cognitive control mechanisms that allow us to manipulate and use perceptual and/or mnesic representations. For instance our ability implement a task rule (bind a percept to a motor command), attend to a specific feature, switch between sensory modalities or create and manipulate a mental image. I use Multivariate Pattern Analysis (MVPA) and modeling methods to better understand which and when relevant representations emerge in neural activity. And to know how (and when) such representations are bound together (e.g. perceptual <-> task representations) I use connectivity measures (phase-locking, cross-frequency coupling). In previous work during my PhD at the CerCo lab (Toulouse) I used fMRI, EEG and MVPA to measure the effects of learning on neural representations of visual objects and how it affects perception.
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Mehdi.Senoussi@UGent.be" href="mailto:Mehdi.Senoussi@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Mehdi.Senoussi@UGent.be</a></div>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/cog_senoussi" href="https://twitter.com/cog_senoussi" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@cog_senoussi</a></div>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://sites.google.com/site/senoussim/home" href="https://sites.google.com/site/senoussim/home" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://sites.google.com/site/senoussim/home</a></div>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0001-9896-4235" href="https://orcid.org/0000-0001-9896-4235" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0001-9896-4235</a></div>
 
 # PhD researchers
 
@@ -129,19 +97,6 @@ I conduct this research in collaboration with Tom Verguts and Senne Braem, using
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-0497-7287" href="https://orcid.org/0000-0002-0497-7287" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0002-0497-7287</a></div>
 
-### Pieter Huycke
-
-<img src="/images/profile_pic_pieter_h.jpg" alt="Pieter Huycke" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
-
-My PhD project focuses mostly on the impact of extensive learning on both behavioral performance and neural oscillations. In our first [study](https://doi.org/10.1111/ejn.15320), we investigated whether alpha and theta neural oscillations co-exist and interact on the same timescale, or whether they impact learning on distinct timescales. Our results suggested that theta power decreases when learning took place on a slow timescale, while alpha increases on a fast timescale, suggesting that these frequencies operate at different timescales. In a second [study](https://psyarxiv.com/jhmku), we use computational models to investigate two different types of binding: learning and synchronization. We show that learning, but not synchronization is essential for behavioral improvement. Synchrony boosts performance, but only for linearly inseparable tasks. Theta power was found to decrease with practice but increase with task difficulty. Our simulation results bring new insights in how different types of binding interact in different types of tasks, and how this is translated in both behavioral and neural metrics.
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Pieter.Huycke@UGent.be" href="mailto:Pieter.Huycke@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Pieter.Huycke@UGent.be</a></div>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/phuycke" href="https://github.com/phuycke" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">@phuycke</a></div>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/PieterHuycke" href="https://twitter.com/PieterHuycke" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@PieterHuycke</a></div>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-8156-4419" href="https://orcid.org/0000-0002-8156-4419" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0002-8156-4419</a></div>
 
 ### Pieter Verbeke
 
@@ -163,17 +118,7 @@ Currently, we have no visiting researchers working in our lab.
 
 # Internship students
 
-### Maud Beeckmans
-
-<img src="/images/profile_pic_maud.jpg" alt="Maud Beeckmans" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
-
-Since I am fascinated by both computational modelling and statistics, I am happy to be able to do my research internship in this lab. The project I am working on relates to the estimation of free parameters, such as the learning rate, in computational models. More specifically, we investigate whether exact free parameter estimation is always necessary and how this varying need can be implemented in power estimations. The goal is to find the optimal balance between high power studies and a parsimonious design in different research contexts. In addition, I hope to learn much and acquire new skills during this research internship.
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Maud.Beeckmans@UGent.be" href="mailto:Maud.Beeckmans@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Maud.Beeckmans@UGent.be</a></div>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/MaudBeeckmans/" href="https://github.com/MaudBeeckmans/" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">@MaudBeeckmans</a></div>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/maud_beeckmans" href="https://twitter.com/maud_beeckmans" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@maud_beeckmans</a></div>
+Currently, we have no internship students working in our lab.   
 
 ---
 
