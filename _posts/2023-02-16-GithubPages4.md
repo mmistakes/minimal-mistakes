@@ -43,6 +43,7 @@ analytics:
 ```
 
 ## 구글 노출
+
 - [Google Webmaster Tools(링크)](https://search.google.com/search-console/welcome?hl=ko) 이동 후 접두어에 링크입력
 ![gs1](/assets/blog_img/gs1.png)
 
@@ -55,17 +56,21 @@ analytics:
 
 - 블로그링크/sitemap.xml 주소입력 후 다음과 같은 결과 확인 -> 성공 (시간이 조금 걸릴 수 있음)
 ![gs4](/assets/blog_img/gs4.png)
-## 네이버 노출
-- [Naver Search Advisor](https://searchadvisor.naver.com/) 이동 후 로그인 -> 웹마스터 도구 클릭
 
-- 블로그 링크 입력 후 HTML 태그 클릭 -> 태그 내 contents 복사 -> _.config.yml line79 에 복사한 내용 붙여넣기 후 Push
+
+## 네이버 노출
+
+- [Naver Search Advisor](https://searchadvisor.naver.com/) 이동 후 로그인 -> 웹마스터 도구 클릭
+![nv1](/assets/blog_img/nv1.png)
+- 블로그 링크 입력 후 HTML 태그 클릭 -> 태그 내 contents 복사 -> _.config.yml line79 에 복사한 내용 붙여넣기 후 Push -> 대기후 소유 확인
+![nv2](/assets/blog_img/nv2.png)
 
 ```
 naver_site_verification  : "1b9d1c5bda4cce1bdcf045be73f5cd32c188cb9c"
 ```
 
+- 링크 클릭 후 요청/사이트맥 제출 클릭 -> 블로그링크/sitemap.xml 입력 -> 제출
+![nv3](/assets/blog_img/nv3.png)
 
+- 검중/robots.txt -> 수집요청 클릭
 
-
-## 게시물 레이아웃 Category Tags 댓글 폰트 변경
-## 
