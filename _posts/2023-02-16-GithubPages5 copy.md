@@ -1,19 +1,19 @@
 ---
 layout: single
-title: '깃허브 블로그 만들기 for Mac OS: 5. 카테고리, 태그, 검색, 댓글(Utterances) 기능 추가'
+title: '깃허브 블로그 만들기 for Mac OS: 5. 카테고리, 태그, 서치기능, 에러페이지 추가'
 categories: 'GitHubBlog'
 tags: ['GitHub Pages', 'Jekyll']
 toc: true   # 우측 목차 여부
 author_profile: True  # 좌측 프로필 여부
-publish: False
+
 ---
 
 ## 카테고리, 태그, 서치 기능
 ![category1](/assets/blog_img/category1.png)
-1. _pages 폴더에 category-archive.md, tag-archive.md, search.md 생성
+<span style="background-color:#C0FFFF"> _pages </span> 폴더에 <span style="background-color:#C0FFFF"> category-archive.md, tag-archive.md, search.md</span> 를 다음과 같이 생성한다. 
 
 ```m
-## category-archive.md 파일에 작성
+# category-archive.md 파일에 작성
 ---
 title: "Category"
 layout: "categories"
@@ -39,8 +39,7 @@ permalink: /search/
 ---
 ```
 
-2. _data/navigation.yml 경로로 이동 후 기존에 있던 Quuick-Start-Guide 제거 후 main 하단에 다음과 같이 작성
-
+<span style="background-color:#C0FFFF"> _data/navigation.yml</span>  경로로 이동 후 기존에 있던 Quick-Start-Guide 제거 후 main 하단에 다음과 같이 작성한다. 
 
 ```m
 main:
@@ -54,10 +53,10 @@ main:
 
 ![search](/assets/blog_img/search.png)
 
-- Search 기능 추가됨
+- Search 기능 추가된 결과
+- 같은 방법으로 자신의 소개 페이지 (About)을 남기는 것도 가능하다
 
-
-3. 각각의 포스팅 파일(마크다운 파일) 상단에 다음과 같은 형식 추가
+이후 각각의 포스팅 파일(마크다운 파일) 상단에 다음과 같은 형식 추가
 
 ```m
 ---
@@ -69,13 +68,25 @@ toc: true   # 우측 목차 여부
 author_profile: true  # 좌측 프로필 여부
 ---
 ```
-
-4. 결과 확인
-- 하단에 다음과 같은 태그와 카테고리가 생김
 ![category2](/assets/blog_img/category2.png)
+- 하단에 다음과 같은 태그와 카테고리 생성
+
+## 404 에러페이지
+원리와 방법은 이전의 카테고리, 태그 생성과 똑같다. <span style="background-color:#C0FFFF"> _pages </span> 폴더에 404.md 파일을 생성한 후 다음과 같은 코드를 집어넣는다. 이때 에러창에 띄우고 싶은 사진 링크도 하나 복사해둔다
+
+```m
+---
+title: "Page Not Found"
+excerpt: "Page not found. Your pixels are in another canvas."
+sitemap: false
+permalink: /404.html
+---
+
+![](사진링크){: width="100%" height="100%"}
+```
+![error](/assets/blog_img/error.png)
+- 존재하지 않는 블로그 경로로 이동하면 다음과 같은 결과를 반환
 
 
-# 댓글 폰트 변경
 
-## 페이지 설정 (404까지)
 

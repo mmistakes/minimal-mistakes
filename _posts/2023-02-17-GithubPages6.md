@@ -1,6 +1,6 @@
 ---
 layout: single
-title: '깃허브 블로그 만들기 for Mac OS: 5. 카테고리, 태그, 검색, 댓글(Utterances) 기능 추가'
+title: '깃허브 블로그 만들기 for Mac OS: 6. 댓글(Utterances)기능, 폰트 디자인 및 사이즈 설정,'
 categories: 'GitHubBlog'
 tags: ['GitHub Pages', 'Jekyll']
 toc: true   # 우측 목차 여부
@@ -9,6 +9,7 @@ publish: False
 ---
 
 
+## 댓글 폰트 변경
 
 ## 폰트 크기 
 

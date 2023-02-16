@@ -15,7 +15,7 @@ ERROR:  While executing gem ... (Gem::FilePermissionError)
     You don't have write permissions for the /Library/Ruby/Gems/2.3.0 directory.
 ```
 
-- 이를 해결하기 위해 rbenv를 설치하면 되는데 다음 순서를 따라가면 된다.
+- 이를 해결하기 위해 rbenv를 설치하면 되는데 다음 순서를 따라가면 된다.(가장 많은 시간을 잡아먹은 부분)
 
 ## rbenv 설처 
 - [Homebrew(링크)](https://brew.sh/index_ko) 또한 ruby를 사용하기 때문에 이를 통해 설치가 가능하다고한다. 설치가 안되어있다면 링크로 이동해서 다운먼저 받으면 된다.
