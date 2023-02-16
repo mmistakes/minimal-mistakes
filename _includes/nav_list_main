@@ -40,11 +40,29 @@
                 {% endfor %}
             </ul>
 
-            <span class="nav__sub-title">📊 DataBase</span>
+            <span class="nav__sub-title">📉 DataBase</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "DataBase" %}
                 <li><a href="/categories/DataBase" class="">데이터베이스({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+
+            <span class="nav__sub-title">📊 Tableau</span>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Tableau" %}
+                <li><a href="/categories/Tableau" class="">태블로 굿모닝 굿애프터눈({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+
+            <span class="nav__sub-title">📝 DataAnalysis</span>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "DataAnalysis" %}
+                <li><a href="/categories/DataAnalysis" class="">이것이 데이터 분석이다(with 파이썬)({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
