@@ -69,8 +69,8 @@ p {
 
 u,
 ins {
-  text-decoration: none;
-  border-bottom: 1px solid $text-color;
+  text-decoration: #ed6060 wavy underline;
+  /* border-bottom: 1px solid $text-color; */
   a {
     color: inherit;
   }
