@@ -1,11 +1,10 @@
 ---
 layout: single
-title: '깃허브 블로그 만들기 for Mac OS: 3. 구글 애널리틱스, 구글 및 네이버 노출'
+title: '깃허브 블로그 만들기 for Mac OS: 4. 구글 애널리틱스, 구글 및 네이버 노출'
 categories: 'GitHubBlog'
 tags: ['GitHub Pages', 'Jekyll']
 toc: true   # 우측 목차 여부
 author_profile: True  # 좌측 프로필 여부
-published: false
 ---
 
 
@@ -44,11 +43,29 @@ analytics:
 ```
 
 ## 구글 노출
+- [Google Webmaster Tools(링크)](https://search.google.com/search-console/welcome?hl=ko) 이동 후 접두어에 링크입력
+![gs1](/assets/blog_img/gs1.png)
 
+- html 파일 다운로드 후 _config.yml, LINCENSE와 같은 폴더에 이동후 GitHub Push
+- Push 결과 확인 후 소유권 확인 -> 속성확인 이동
+![gs2](/assets/blog_img/gs2.png)
+
+- 좌측 Sitemaps 클릭 후 사이트맥 URL 입력 (sitemap.xml)
+![gs3](/assets/blog_img/gs3.png)
+
+- 블로그링크/sitemap.xml 주소입력 후 다음과 같은 결과 확인 -> 성공 (시간이 조금 걸릴 수 있음)
+![gs4](/assets/blog_img/gs4.png)
 ## 네이버 노출
+- [Naver Search Advisor](https://searchadvisor.naver.com/) 이동 후 로그인 -> 웹마스터 도구 클릭
+
+- 블로그 링크 입력 후 HTML 태그 클릭 -> 태그 내 contents 복사 -> _.config.yml line79 에 복사한 내용 붙여넣기 후 Push
+
+```
+naver_site_verification  : "1b9d1c5bda4cce1bdcf045be73f5cd32c188cb9c"
+```
 
 
 
 
-## 게시물 레이아웃 Category Tags 댓글
+## 게시물 레이아웃 Category Tags 댓글 폰트 변경
 ## 
