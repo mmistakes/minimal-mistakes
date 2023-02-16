@@ -1,6 +1,6 @@
 ---
 layout: single
-title: '깃허브 블로그 만들기 for Mac OS: 3. 기본 레이아웃 설정 (테마, 타이틀, 링크, 날짜 설정 등)'
+title: '깃허브 블로그 만들기 for Mac OS: 3. 기본 레이아웃 설정 (테마, 타이틀, SNS링크, 날짜 설정 등)'
 categories: 'GitHubBlog'
 tags: ['GitHub Pages', 'Jekyll']
 toc: true   # 우측 목차 여부
@@ -22,7 +22,6 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 ## 블로그 첫화면 레이아웃 상단 및 하단 글
 ![layout1](/assets/blog_img/layout1.png)
 ![layout2](/assets/blog_img/layout2.png)
-![layout3](/assets/blog_img/layout3.png){: width="300" height="170"}
 
 ```python
 # Site Settings(17번째줄 부터)
