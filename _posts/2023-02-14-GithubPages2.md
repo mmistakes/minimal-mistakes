@@ -49,15 +49,29 @@ rbenv versions
 - 마지막으로 본인의 쉘 설정 파일 (..zshrc, .bashrc) 을 열어 rbenv PATH를 추가한다.
 
 ```
-# 쉘 설정 파일 열기
+# 방법1
+## 쉘 설정 파일 열기
 vim ~/.zshrc
 
-# 추가할 코드
+## 추가할 코드
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# 수정 완료 했으면 :wq 입력으로 페이지에서 나오고 다음 코드로 적용
+## 수정 완료 했으면 :wq 입력으로 페이지에서 나오고 다음 코드로 적용
 source ~/.zshrc
+
+# 방법2
+## zsh와 bash 유저에 따라 다르게 적용
+## if you use zsh
+$ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
+$ echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+$ source ~/.zshrc
+
+## if you use bash
+$ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+$ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+$ source ~/.bashrc
+$ type rbenv
 ```
 
 ## Jekyll 과 bundler 설치
@@ -76,9 +90,23 @@ jekyll 4.3.2
 ## 로컬에서 실행
 - [Visual Studio Code (링크)](https://code.visualstudio.com)를 설치한다 
 - Repository와 연결된 폴더로 이동해서 터미널 실행후 아래 명령어 입력
+
 ```
 bundle exec jekyll serve
 ```
-- http://127.0.0.1:4000 에서 로컬 수정 사항을 바로 확인할 수 있음
+- 하지만 여기서 또 에러가 날 수 있다
+
+```
+Could not find compatible versions
+
+Because every version of minimal-mistakes-jekyll depends on jekyll-include-cache ~> 0.1
+  and jekyll-include-cache ~> 0.1 could not be found in locally installed gems,
+  minimal-mistakes-jekyll cannot be used.
+So, because Gemfile depends on minimal-mistakes-jekyll >= 0,
+  version solving has failed.
+```
+- 이런 에러가 난다면 <span style="background-color:#C0FFFF"> Gemfile.lock </span> 파일을 찾아서 삭제후(Homebrew 폴더 안에 있었음) 다시 bundle install 명령어를 터미널에서 실행 해주면 된다
+
+- 드디어 [http://127.0.0.1:4000](http://127.0.0.1:4000) 에서 로컬 수정 사항을 바로 확인할 수 있음
 - **_config.yml 같은 파일은 단순 저장으로 반영되지 않으므로 서버를 껐다 켜야한다**
 
