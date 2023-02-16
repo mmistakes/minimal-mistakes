@@ -5,8 +5,9 @@
     - [De Loof Esther](#de-loof-esther)
     - [Desender Kobe](#desender-kobe)
     - [Janowich Jacki](#janowich-jacki)
-    - [Anna Marzecova]
-    - [Mehdi Senoussi]
+    - [Marzecova Anna] 
+    - [Senoussi Mehdi](#senoussi-mehdi)
+
 2. [PhD researchers](#phd-researchers)
     - [Aben Bart](#aben-bart)
     - [Deraeve James](#deraeve-james)
@@ -17,7 +18,7 @@
 
 ### Buc Calderon Cristian
 
-Cristian currently works as a post-doctoral researcher at the [laboratory of neural computation and cognition](https://www.lnccbrown.com/members) led by prof. Michael J. Frank at Brown University (Providence, RI, US).
+Cristian currently works as a research scientist at Centre Nacional de Inteligencia Artificial (Chili).
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0001-8325-2059" href="https://orcid.org/0000-0001-8325-2059" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0001-8325-2059</a></div>
 
@@ -40,6 +41,10 @@ Kobe currently works as a research professor at the Brain and Cognition research
 Jacki currently works as a medical writer at [Evidera](https://www.evidera.com/who-we-are/about-us/).
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://be.linkedin.com/in/jackijanowich" href="https://be.linkedin.com/in/jackijanowich" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/linkedin.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">in/jackijanowich</a></div>
+
+### Senoussi Mehdi
+
+Mehdi currently works as an assistant professor at Université Toulouse.
 
 ## PhD researchers
 
