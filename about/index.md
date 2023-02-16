@@ -9,8 +9,7 @@
     - [Jonas Simoens](#jonas-simoens)
     - [Pieter Verbeke](#pieter-verbeke)
 4. [Visiting researchers](#visiting-researchers)
-5. [Internship students](#internship-students)
-    - 
+5. [Internship students](#internship-students) 
 
 # Principal Investigator
 
