@@ -218,3 +218,11 @@ chipo.groupby('order_id').sum().sort_values(by='item_price', ascending=False)[:5
 
 ![image](https://user-images.githubusercontent.com/100071667/219543708-d26eb6eb-2f11-4a9a-8d05-5bf27a1517da.png)
 
+---
+
+공부한 전체 코드는 깃허브에 올렸습니다.
+
+
+**[깃허브 주소](<https://github.com/mgskko/Python_Data_Analysis/blob/main/chapter1/01-chipotle-eda.ipynb>)**
+{: .notice--primary}
+
