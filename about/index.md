@@ -68,7 +68,7 @@ My research focuses on understanding how people decide what they want to know an
 
 ### Pieter Verbeke
 
-<img src="/images/profile_pic_pieter_v.jpg" alt="Pieter Verbeke" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
+<img src="/images/profile_pic_pieter_v.jpg" alt="Pieter Verbeke" max-width="20%" height="auto" align="left" hspace="10" vspace="10">
 
 My research focusses on how humans and artificial agents can balance shared versus separated task representations to optimize continual learning. Here, separated representations are useful to avoid (catastrophic) interference and shared representations are useful to speed up learning via generalization.
 We argue that humans do this via hierarchical learning.
