@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[파이썬] lambda & apply 사용법"
-categories: python
+categories: Python
 tag: [python]
 toc: true
 author_profile: true

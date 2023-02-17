@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[파이썬] enumerate() 함수"
-categories: python
+categories: Python
 tag: [python]
 toc: true
 author_profile: true
