@@ -4,10 +4,10 @@
 2. [Post-doctoral researchers](#post-doctoral-researchers)
     - [Elise Lesage](#elise-lesage)
     - [Irene Cogliati Dezza](#irene-cogliati-dezza)
+    - [Pieter Verbeke](#pieter-verbeke)
 3. [PhD researchers](#phd-researchers)
     - [Esin Turkakin](#esin-turkakin)
     - [Jonas Simoens](#jonas-simoens)
-    - [Pieter Verbeke](#pieter-verbeke)
 4. [Visiting researchers](#visiting-researchers)
 5. [Internship students](#internship-students) 
 
@@ -66,6 +66,22 @@ My research focuses on understanding how people decide what they want to know an
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-1212-4751" href="https://orcid.org/0000-0002-1212-4751" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0002-1212-4751</a></div>
 
+### Pieter Verbeke
+
+<img src="/images/profile_pic_pieter_v.jpg" alt="Pieter Verbeke" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
+
+My research focusses on how humans and artificial agents can balance shared versus separated task representations to optimize continual learning. Here, separated representations are useful to avoid (catastrophic) interference and shared representations are useful to speed up learning via generalization.
+We argue that humans do this via hierarchical learning.
+At the hierarchically higher level, relations between tasks are learned and used to decide which lower-level modules get control over behavior.
+The appropriate modules can be bound via the synchronization of oscillations (in biological agents) or via multiplicative gating (in artificial agents). To investigate this, we use multiple tools such as computational modelling, EEG, fMRI and behavioral studies.
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="pjverbek.Verbeke@UGent.be" href="mailto:pjverbek.Verbeke@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">pjverbek.Verbeke@UGent.be</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://pieterverbeke.github.io" href="https://pieterverbeke.github.io" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://pieterverbeke.github.io</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/PieterVerbeke4" href="https://twitter.com/PieterVerbeke4" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@PieterVerbeke4</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0003-2919-1528" href="https://orcid.org/0000-0003-2919-1528" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0003-2919-1528</a></div>
 
 # PhD researchers
 
@@ -96,20 +112,6 @@ I conduct this research in collaboration with Tom Verguts and Senne Braem, using
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-0497-7287" href="https://orcid.org/0000-0002-0497-7287" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0002-0497-7287</a></div>
 
-
-### Pieter Verbeke
-
-<img src="/images/profile_pic_pieter_v.jpg" alt="Pieter Verbeke" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
-
-Previous studies of human cognition at different time scales have reported two mechanisms to alter connectivity between brain regions. First, the brain can adjust the strength of the synaptic connections between different neurons. Second, regions can be bound together by synchronizing their oscillations (Fries, 2005). In this PhD project, we investigate how interactions between these two dynamics lead to the remarkable flexibility (and also stability) in human behavior. Additionally, we investigate how the brain is able to know which regions to synchronize by exerting learning at a higher hierarchical level. For these purposes, we aim at describing computational models and test these models empirically with EEG.
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="pjverbek.Verbeke@UGent.be" href="mailto:pjverbek.Verbeke@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">pjverbek.Verbeke@UGent.be</a></div>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/PieterVerbeke" href="https://github.com/PieterVerbeke" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">@PieterVerbeke</a></div>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/PieterVerbeke4" href="https://twitter.com/PieterVerbeke4" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@PieterVerbeke4</a></div>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0003-2919-1528" href="https://orcid.org/0000-0003-2919-1528" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0003-2919-1528</a></div>
 
 # Visiting researchers
 
