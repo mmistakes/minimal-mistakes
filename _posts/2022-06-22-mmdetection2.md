@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "mmdetection config setting"
-categories : mmdetection
+categories : MMpackage
 tag : [python, mmdetection, object-detection]
 toc: true
 toc_sticky: true
