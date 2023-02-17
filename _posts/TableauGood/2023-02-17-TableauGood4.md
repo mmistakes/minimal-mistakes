@@ -1,11 +1,10 @@
-- - -
-
-## layout: single
-title: "임시 계산"
+---
+layout: single
+title:  "임시 계산"
 categories: Tableau
 tag: [Tableau]
 toc: true
-
+---
 ## 임시 계산
 
 **임시 계산**이란 선반에서 직접 새로운 계산식을 만들거나 선반에 올라가 있는 필드를 편집해 만드는 계산 방식이다. 임시 계산은 **입력 계산** 또는 **인라인 계산**이라고도 한다.
