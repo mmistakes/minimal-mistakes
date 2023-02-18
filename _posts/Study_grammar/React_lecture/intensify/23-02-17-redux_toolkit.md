@@ -23,6 +23,8 @@ tag: [Redux,Sail99]
 
 그 묶인 리듀서로 store를 만듦(CreateStore) 
 
+ddd
+
 
 
 2. 이 store는 index.js에서 import 하여
