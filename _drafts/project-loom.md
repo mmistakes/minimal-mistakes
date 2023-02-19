@@ -429,7 +429,7 @@ static void workingConsciousnessRoutine() {
 }
 ```
 
-This time, we expect the `"Take a break"` virtual thread to be scheduled and executed on the only carrier thread, when the `"Working consciousness"` reaches the blocking operation. The output confirms our expectations:
+This time, we expect the `"Take a break"` virtual thread to be scheduled and executed on the only carrier thread when the `"Working consciousness"` reaches the blocking operation. The output confirms our expectations:
 
 ```
 21:30:51.677 [Working consciousness] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Working consciousness]/runnable@ForkJoinPool-1-worker-1 | I'm working hard
@@ -438,9 +438,9 @@ This time, we expect the `"Take a break"` virtual thread to be scheduled and exe
 --- Running forever ---
 ```
 
-As we might expect, the two virtual thread are sharing the same carrier thread.
+As we might expect, the two virtual threads share the same carrier thread.
 
-Let's go back to the `workingHardRoutine()` function. If we change the carrier pool size to 2, we can see that both the `"Working Hard"` and the `"Take a break"` virtual threads are scheduled on the two carrier threads, and so they can run concurrently. The new setup is the following:
+Let's go back to the `workingHardRoutine()` function. If we change the carrier pool size to 2, we can see that both the `"Working Hard"` and the `"Take a break"` virtual threads are scheduled on the two carrier threads so they can run concurrently. The new setup is the following:
 
 ```
 -Djdk.virtualThreadScheduler.parallelism=2
@@ -457,9 +457,9 @@ As we might expect, the output is the following. While the `ForkJoinPool-1-worke
 --- Running forever ---
 ```
 
-It's worth mentioning that cooperative scheduling is useful when working in a highly cooperative environment. Roughly speaking, it's useful when virtual threads give the change to other virtual threads to execute. Since a virtual thread release its carrier thread only when reaching a blocking operation, cooperative scheduling and virtual threads will not improve the performance of CPU-intensive applications. For those tasks, the JVM already gives us a tool that we created explicitly for that purpose: Java parallel streams.
+It's worth mentioning that cooperative scheduling is helpful when working in a highly collaborative environment. It's useful when virtual threads give the change to other virtual threads to execute. Since a virtual thread releases its carrier thread only when reaching a blocking operation, cooperative scheduling and virtual threads will not improve the performance of CPU-intensive applications. For those tasks, the JVM already gives us a tool we created explicitly for that purpose: Java parallel streams.
 
-Unfortunately, it's not possible to retrieve the name of the carrier thread of a virtual thread in the current implementation of Java virtual threads.
+Unfortunately, it's impossible to retrieve the name of the carrier thread of a virtual thread in the current implementation of Java virtual threads.
 
 ## 6. Pinned Virtual Threads
 
