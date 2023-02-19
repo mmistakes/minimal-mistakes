@@ -463,18 +463,18 @@ Unfortunately, it's impossible to retrieve the name of the carrier thread of a v
 
 ## 6. Pinned Virtual Threads
 
-We said that the JVM mounts a virtual threads to a platform thread, its carrier thread, and execute it until it reaches a blocking operation. Then, the virtual thread is unmounted from the carrier thread, and the scheduler decides which virtual thread to schedule on the carrier thread.
+We said that the JVM mounts a virtual thread to a platform thread, its carrier thread, and executes it until it reaches a blocking operation. Then, the virtual thread is unmounted from the carrier thread, and the scheduler decides which virtual thread to schedule on the carrier thread.
 
-However, there are some cases in which a blocking operation doesn't unmount the virtual thread from the carrier thread, blocking also the underlying carrier thread. In such cases, we say the virtual is _pinned_ to the carrier thread. It's not an error, but it's a behavior that limits the scalability of the application. Note that if a carrier thread is pinned, the JVM can always add a new platform thread to the carrier pool, if the configurations of the carrier pool allow it.
+However, there are some cases where a blocking operation doesn't unmount the virtual thread from the carrier thread, blocking the underlying carrier thread. In such cases, we say the virtual is _pinned_ to the carrier thread. It's not an error, but it's a behavior that limits the application's scalability. Note that if a carrier thread is pinned, the JVM can always add a new platform thread to the carrier pool if the configurations of the carrier pool allow it.
 
-Let's see an example of a pinned virtual thread. We define a function simulating an employee that is working hard, but it stops working every 100 milliseconds:
+Let's see an example of a pinned virtual thread. We define a function simulating an employee that is working hard but stops working every 100 milliseconds:
 
 Fortunately, there are only two cases in which a virtual thread is pinned to the carrier thread:
 
- - When it executes code inside a `synchronized` block or method;
- - When it calls a native method or a foreign function (i.e., a call to a native library using JNI).
+- When it executes code inside a `synchronized` block or method;
+- When it calls a native method or a foreign function (i.e., a call to a native library using JNI).
 
-Let's see an example pinned virtual thread. We want to simulate an employee that need to go to the bathroom. The bathroom has only one WC, so the access to the bathroom must be synchronized:
+Let's see an example pinned virtual thread. We want to simulate an employee that needs to go to the bathroom. The bathroom has only one WC, so the access to the toilet must be synchronized:
 
 ```java
 static class Bathroom {
@@ -486,7 +486,7 @@ static class Bathroom {
 }
 ```
 
-Now, we define a function simulating an employee that is uses the bathroom:
+Now, we define a function simulating an employee that uses the bathroom:
 
 ```java
 static Bathroom bathroom = new Bathroom();
@@ -498,7 +498,7 @@ static Thread goToTheToilet() {
 }
 ```
 
-In the office, there are Riccardo and Daniel. Riccardo has to go to the bathroom, while Daniel wants to take a break. Since they're working on different issues, the could make their task concurrently. Let's define a function that tries to execute Riccardo and Daniel concurrently:
+In the office, there are Riccardo and Daniel. Riccardo has to go to the bathroom while Daniel wants a break. Since they're working on different issues, they could complete their task concurrently. Let's define a function that tries to execute Riccardo and Daniel concurrently:
 
 ```java
 @SneakyThrows
@@ -510,7 +510,7 @@ static void twoEmployeesInTheOffice() {
 }
 ```
 
-To see the effect of the synchronization, and the pinning of the `riccardo` virtual thread associated, we limit the carrier pool to one thread, as we did previously. The execution of the `twoEmployeesInTheOffice` produces the following output:
+To see the effect of the synchronization and the pinning of the `riccardo` virtual thread associated, we limit the carrier pool to one thread, as we did previously. The execution of the `twoEmployeesInTheOffice` produces the following output:
 
 ```
 16:29:05.548 [Go to the toilet] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Go to the toilet]/runnable@ForkJoinPool-1-worker-1 | I'm going to use the toilet
@@ -519,9 +519,9 @@ To see the effect of the synchronization, and the pinning of the `riccardo` virt
 16:29:07.563 [Take a break] INFO in.rcard.virtual.threads.App - VirtualThread[#23,Take a break]/runnable@ForkJoinPool-1-worker-1 | I'm done with the break
 ```
 
-As we can see, the task are completely linearized by the JVM. As we said, the blocking `sleep` operation is inside the `synchronized` `useTheToilet` method, and so the virtual thread is not unmounted. So, the `riccardo` virtual thread is pinned to the carrier thread, and the `daniel` virtual thread finds no available carrier thread to execute. In fact, it is scheduled only when the `riccardo` virtual thread is done with the bathroom.
+As we can see, the tasks are entirely linearized by the JVM. As we said, the blocking `sleep` operation is inside the `synchronized` `useTheToilet` method, so the virtual thread is not unmounted. So, the `riccardo` virtual thread is pinned to the carrier thread, and the `daniel` virtual thread finds no available carrier thread to execute. In fact, it is scheduled when the `riccardo` virtual thread is done with the bathroom.
 
-It's possible to trace these situations during the execution of a program adding a useful property to the run configuration:
+It's possible to trace these situations during the execution of a program by adding a valuable property to the run configuration:
 
 ```
 -Djdk.tracePinnedThreads=full/short
@@ -538,9 +538,9 @@ Thread[#22,ForkJoinPool-1-worker-1,5,CarrierThreads]
 16:29:07.563 [Take a break] INFO in.rcard.virtual.threads.App - VirtualThread[#23,Take a break]/runnable@ForkJoinPool-1-worker-1 | I'm done with the break
 ```
 
-As we guessed, the `riccardo` virtual thread was in fact pinned to its carrier thread. Despite what we previously said, we can also see the name of the carrier thread here. Amazing.
+As we guessed, the `riccardo` virtual thread was pinned to its carrier thread. Despite what we previously said, we can also see the name of the carrier thread here. Amazing.
 
-We can change the configuration of the carrier pool to allow the JVM adding a new carrier thread to the pool when needed:
+We can change the configuration of the carrier pool to allow the JVM to add a new carrier thread to the pool when needed:
 
 ```
 -Djdk.virtualThreadScheduler.parallelism=1
@@ -548,7 +548,7 @@ We can change the configuration of the carrier pool to allow the JVM adding a ne
 -Djdk.virtualThreadScheduler.minRunnable=1
 ```
 
-We remove also the property `jdk.tracePinnedThreads` to avoid printing the pinned stacktrace. An execution with the new configuration produces the following output:
+We also removed the property `jdk.tracePinnedThreads` to avoid printing the pinned stacktrace. Execution with the new configuration produces the following output:
 
 ```
 16:32:05.235 [Go to the toilet] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Go to the toilet]/runnable@ForkJoinPool-1-worker-1 | I'm going to use the toilet
@@ -557,9 +557,9 @@ We remove also the property `jdk.tracePinnedThreads` to avoid printing the pinne
 16:32:06.243 [Take a break] INFO in.rcard.virtual.threads.App - VirtualThread[#23,Take a break]/runnable@ForkJoinPool-1-worker-2 | I'm done with the break
 ```
 
-The JVM added a new carrier thread to the pool when it found that no carrier thread was available, and so the `daniel` virtual thread is scheduled on the new carrier thread, executing concurrently and interleaving the two logs.
+The JVM added a new carrier thread to the pool when it found no carrier thread. So the `daniel` virtual thread is scheduled on the new carrier thread, executing concurrently and interleaving the two logs.
 
-Even though in the near future also `synchronized` blocks will probably unmount a virtual thread from its carrier thread, it is better to migrate those block to the new `Lock` API, using `java.util.concurrent.locks.ReentrantLock`. Such locks don't pin the virtual thread and so they make the cooperative scheduling working again.
+Even though soon also `synchronized` blocks will probably unmount a virtual thread from its carrier thread, it is better to migrate those blocks to the new `Lock` API, using `java.util.concurrent.locks.ReentrantLock`. Such locks don't pin the virtual thread, making the cooperative scheduling work again.
 
 Let's create a version of our `Bathroom` class using the `Lock` API:
 
@@ -598,7 +598,7 @@ static void twoEmployeesInTheOfficeWithLock() {
 }
 ```
 
-The execution of the `twoEmployeesInTheOfficeWithLock` produces the expected output, which shows the two thread running concurrently:
+The execution of the `twoEmployeesInTheOfficeWithLock` produces the expected output, which shows the two threads running concurrently:
 
 ```
 16:35:58.921 [Take a break] INFO in.rcard.virtual.threads.App - VirtualThread[#23,Take a break]/runnable@ForkJoinPool-1-worker-2 | I'm going to take a break
