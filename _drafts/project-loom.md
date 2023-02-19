@@ -62,13 +62,13 @@ At the end of the article, we will give an example of a Maven configuration with
 
 ## 2. Why Virtual Threads?
 
-For people who already follows us, we made the same question on the article on [Kotlin Coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/). However, we think that it is important to give a brief introduction to the problem that virtual threads are trying to solve.
+For people who already follow us, we asked the same question in the article on [Kotlin Coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/). However, it is essential to briefly introduce the problem that virtual threads are trying to solve.
 
-The JVM is a multithreaded environment. As we may know, the JVM gives us an abstraction of OS threads through the type `java.lang.Thread`. Until Project Loom, every thread in the JVM is just a little wrapper around an OS thread. We can call such implementation of the `java.lang.Thread` type as _platform thread_.
+The JVM is a multithreaded environment. As we may know, the JVM gives us an abstraction of OS threads through the type `java.lang.Thread`. Until Project Loom, every thread in the JVM is just a little wrapper around an OS thread. We can call the such implementation of the `java.lang.Thread` type as _platform thread_.
 
-The problem with platform thread is that they are expensive under a lot of points of view. First, they are expensive to create. Every time a platform thread is created, the OS must allocate a very large amount of memory (megabytes) in the stack to store the thread context, native, and Java call stacks. This is due to the not resizable nature of the stack. Moreover, every time the scheduler preempts a thread from execution, this huge amount of memory must be moved around.
+The problem with platform threads is that they are expensive from a lot of points of view. First, they are costly to create. Every time a platform thread is made, the OS must allocate a large amount of memory (megabytes) in the stack to store the thread context, native, and Java call stacks. This is due to the not resizable nature of the stack. Moreover, every time the scheduler preempts a thread from execution, this enormous amount of memory must be moved around.
 
-As we can imagine, this is a very expensive operation, both in space and time. In fact, th huge size of stacks frame is what really limit the number of threads that can be created. We can reach a `OutOfMemoryError` quite easily in Java, continuing creating new platform threads till the OS runs out of memory:
+As we can imagine, this is a costly operation, both in space and time. In fact, the massive size of the stack frame limits the number of threads that can be created. We can reach an `OutOfMemoryError` quite easily in Java, continually instantiating new platform threads till the OS runs out of memory:
 
 ```java
 private static void stackOverFlowErrorExample() {
@@ -84,7 +84,7 @@ private static void stackOverFlowErrorExample() {
 }
 ```
 
-The results depend on the OS and the hardware, but we can easily reach a `OutOfMemoryError` in a few seconds:
+The results depend on the OS and the hardware, but we can easily reach an `OutOfMemoryError` in a few seconds:
 
 ```
 [0.949s][warning][os,thread] Failed to start thread "Unknown thread" - pthread_create failed (EAGAIN) for attributes: stacksize: 1024k, guardsize: 4k, detached.
@@ -92,19 +92,19 @@ The results depend on the OS and the hardware, but we can easily reach a `OutOfM
 Exception in thread "main" java.lang.OutOfMemoryError: unable to create native thread: possibly out of memory or process/resource limits reached
 ```
 
-The above example shows how we wrote concurrent programs was constrained until now. 
+The above example shows how we wrote concurrent programs that were constrained until now.
 
-From its inception, Java has been a language that tried to strive for simplicity. In concurrent programming, this means that we should try to write programs as if the were sequential.  In fact, the more straightforward way to write concurrent programs in Java is to create a new thread for every concurrent task. This model is called _one task per thread_. 
+Java has been a language that has tried to strive for simplicity since its inception. In concurrent programming, we should write programs as if they were sequential. In fact, the more straightforward way to write concurrent programs in Java is to create a new thread for every concurrent task. This model is called _one task per thread_.
 
-In such approach, every thread can use its own local variable to store information, and the need to share mutable state among threads, which is the well-known "hard part" of concurrent programming, drastically decreases. However, using such approach, we can easily reach the limit of the number of threads that we can create.
+In such an approach, every thread can use its own local variable to store information. The need to share mutable states among threads, the well-known "hard part" of concurrent programming, drastically decreases. However, using such an approach, we can easily reach the limit of the number of threads we can create.
 
-As we said in the article concerning Kotlin Coroutines, a lot of different approaches risen during the past years to overcome the above problem. Reactive programming and async/await approaches are two of the most popular.
+As we said in the article concerning Kotlin Coroutines, many different approaches have risen during the past years to overcome the above problem. Reactive programming and async/await strategies are two of the most popular.
 
-The reactive programming initiatives tries to overcome the lack of thread resources building a custom DSL to declarative describe the flow of data, and let the framework handle concurrency. However, the DSL tends to be very hard to understand and to use, losing the simplicity that Java tries to give us.
+The reactive programming initiatives try to overcome the lack of thread resources by building a custom DSL to declaratively describe the data flow and let the framework handle concurrency. However, DSL is tough to understand and use, losing the simplicity that Java tries to give us.
 
-Also the async/await approach, such as Kotlin coroutines, has its own problems. Despite the fact that it aims is to to model the _one task per thread_ approach, it can't rely on any native JVM construct. For example, Kotlin coroutines based the whole story on _suspending functions_, i.e. functions that can suspend a coroutine. However, the suspension is completely based upon non-blocking IO, which we can achieve using libraries based on Netty for example. However, not every task can be expressed in terms of non-blocking IO. In the end, we must divide our program in two parts: one that is based on non-blocking IO (suspending functions), and one that is not. This is a very hard task, and it is not easy to do it correctly. Moreover, we loose again the simplicity that we want to have in our programs.
+Also, the async/await approach, such as Kotlin coroutines, has its own problems. Even though it aims to model the _one task per thread_ approach, it can't rely on any native JVM construct. For example, Kotlin coroutines based the whole story on _suspending functions_, i.e., functions that can suspend a coroutine. However, the suspension is wholly based upon non-blocking IO, which we can achieve using libraries based on Netty, for example. However, not every task can be expressed in terms of non-blocking IO. Ultimately, we must divide our program into two parts: one based on non-blocking IO (suspending functions) and one that does not. This is a challenging task; it takes work to do it correctly. Moreover, we lose again the simplicity that we want to have in our programs.
 
-The above are some of the reasons why the JVM community is looking for a better way to write concurrent programs. Project Loom is one of the attempts to solve the problem. So, let's introduce the first brick of the project: _virtual threads_.
+The above are reasons why the JVM community is looking for a better way to write concurrent programs. Project Loom is one of the attempts to solve the problem. So, let's introduce the first brick of the project: _virtual threads_.
 
 ## 3. How to Create a Virtual Thread
 
