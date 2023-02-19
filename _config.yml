@@ -108,7 +108,7 @@ author:
   avatar           : "https://avatars.githubusercontent.com/u/20273974?v=4"
   bio              : "공부 기록"
   location         : "경기도 남양주시"
-  email            : "sars100@naver.com"
+  email            : #
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
