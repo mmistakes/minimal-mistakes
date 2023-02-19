@@ -108,11 +108,11 @@ The above are reasons why the JVM community is looking for a better way to write
 
 ## 3. How to Create a Virtual Thread
 
-As we said, virtual threads are a new type of threads that tries to overcome the problem of resource limitation of platform threads. They are an alternate implementation of the `java.lang.Thread` type, which store they stack frames in the heap (garbage collected memory) instead of the stack.
+As we said, virtual threads are a new type of thread that tries to overcome the resource limitation problem of platform threads. They are an alternate implementation of the `java.lang.Thread` type, which stores the stack frames in the heap (garbage-collected memory) instead of the stack.
 
-Therefore, the initial memory footprint of a virtual thread tends to be very small, a few of hundred bytes, instead of megabytes. In fact, the stack chunk can resize in every moment. So, we don't need to allocate a gazillion of memory to try to fit every possible use case. 
+Therefore, the initial memory footprint of a virtual thread tends to be very small, a few hundred bytes instead of megabytes. In fact, the stack chunk can resize at every moment. So, we don't need to allocate a gazillion of memory to fit every possible use case.
 
-Create a new virtual thread is very easy. We can use the new factory method `ofVirtual`on the `java.lang.Thread` type. In detail, we create an utility function to create a virtual thread with a given name:
+Creating a new virtual thread is very easy. We can use the new factory method `ofVirtual` on the `java.lang.Thread` type. In detail, we create a utility function to create a virtual thread with a given name:
 
 ```java
 private static Thread virtualThread(String name, Runnable runnable) {
@@ -122,7 +122,7 @@ private static Thread virtualThread(String name, Runnable runnable) {
 }
 ```
 
-To show how virtual threads work, we'll use the same example we used in the Kotlin Coroutine article. Let's say we want to describe our morning routine. Every morning, we take a bath:
+We'll use the same example we used in the Kotlin Coroutine article to show how virtual threads work. Let's describe our morning routine. Every morning, we take a bath:
 
 ```java
 static Thread bathTime() {
@@ -136,7 +136,7 @@ static Thread bathTime() {
 }
 ```
 
-Another task that we do every morning is to boil some water to make a tea:
+Another task that we do every morning is to boil some water to make tea:
 
 ```java
 static Thread boilingWater() {
@@ -150,7 +150,7 @@ static Thread boilingWater() {
 }
 ```
 
-Fortunately, we can race the two tasks, to speed up the process and go to work earlier:
+Fortunately, we can race the two tasks to speed up the process and go to work earlier:
 
 ```java
 @SneakyThrows
@@ -162,7 +162,7 @@ static void concurrentMorningRoutine() {
 }
 ```
 
-We joined both the virtual threads, so we can be sure that the main thread will not terminate before the two virtual threads. Let's run the program:
+We joined both virtual threads, so we can be sure that the main thread will not terminate before the two virtual threads. Let's run the program:
 
 ```
 08:34:46.217 [boilWater] INFO in.rcard.virtual.threads.App - VirtualThread[#21,boilWater]/runnable@ForkJoinPool-1-worker-1 | I'm going to take a bath
@@ -171,9 +171,9 @@ We joined both the virtual threads, so we can be sure that the main thread will 
 08:34:47.231 [boilWater] INFO in.rcard.virtual.threads.App - VirtualThread[#23,boilWater]/runnable@ForkJoinPool-1-worker-2 | I'm done with the water
 ```
 
-The output is exactly what we expected. The two virtual threads run concurrently, and the main thread waits for them to terminate. We'll explain all the information printed by the log in a while. For now, let's focus solely on thread name and execution interleaving.
+The output is what we expected. The two virtual threads run concurrently, and the main thread waits for them to terminate. We'll explain all the information printed by the log in a while. For now, let's focus solely on thread name and execution interleaving.
 
-Other than the factory method, we can use a new implementation of the `java.util.concurrent.ExecutorService` tailored on virtual threads, called `java.util.concurrent.ThreadPerTaskExecutor`. It's name is quite evocative. it creates a new virtual thread for every task submitted to the executor:
+Other than the factory method, we can use a new implementation of the `java.util.concurrent.ExecutorService` tailored on virtual threads, called `java.util.concurrent.ThreadPerTaskExecutor`. Its name is quite evocative. It creates a new virtual thread for every task submitted to the executor:
 
 ```java
 @SneakyThrows
@@ -210,7 +210,7 @@ The output is more or less the same as before:
 08:42:10.175 [] INFO in.rcard.virtual.threads.App - VirtualThread[#23]/runnable@ForkJoinPool-1-worker-2 | I'm done with the water
 ```
 
-As we can see, threads created in this way have not a name, and it can be difficult to debug errors without it. We can overcome this problem just by using the `ThreadPerTaskExecutor` factory method that takes a `ThreadFactory` as parameter:
+As we can see, threads created this way do not have a name, and it can be difficult to debug errors without a name. We can overcome this problem just by using the `ThreadPerTaskExecutor` factory method that takes a `ThreadFactory` as a parameter:
 
 ```java
 @SneakyThrows
@@ -246,7 +246,7 @@ A `ThreadFactory` is a factory that creates threads that share the same configur
 08:44:36.399 [routine-1] INFO in.rcard.virtual.threads.App - VirtualThread[#23,routine-1]/runnable@ForkJoinPool-1-worker-1 | I'm done with the water
 ```
 
-Now that we know how to create virtual threads, let's see how they work under the hood.
+Now that we know how to create virtual threads let's see how they work.
 
 ## 4. How Virtual Threads Work
 
