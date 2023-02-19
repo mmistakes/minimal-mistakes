@@ -313,7 +313,7 @@ The above log should ring a bell in the astute reader. How the JVM schedules vir
 
 ## 5. The Scheduler and Cooperative Scheduling
 
-As we said, virtual threads are scheduled using a FIFO queue consumed by a dedicated `ForkJoinPool`. The default scheduler is defined in the `java.lang.VirtualThread` class:
+Virtual threads are scheduled using a FIFO queue consumed by a dedicated `ForkJoinPool`. The default scheduler is defined in the `java.lang.VirtualThread` class:
 
 ```java
 // SDK code
@@ -335,11 +335,11 @@ final class VirtualThread extends BaseVirtualThread {
 }
 ```
 
-As we might imagine, it's possible to configure the pool dedicated to carrier threads using the above system properties. The default pool size (parallelism) is equal to the number of CPU cores, and the maximum pool size is at most 256. The minimum allowed number of core threads not blocked is half the pool size.
+It's possible to configure the pool dedicated to carrier threads using the above system properties. The default pool size (parallelism) equals the number of CPU cores, and the maximum pool size is at most 256. The minimum number of core threads not blocked allowed is half the pool size.
 
-In Java, virtual threads implements cooperative scheduling. As we saw for [Kotlin Coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/#6-cooperative-scheduling), it's a virtual thread that decide when to yield the execution to another virtual thread. In detail, the control is passed to the scheduler and the virtual thread is _unmounted_ from the carrier thread when it reaches a blocking operation.
+In Java, virtual threads implement cooperative scheduling. As we saw for [Kotlin Coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/#6-cooperative-scheduling), it's a virtual thread that decides when to yield the execution to another virtual thread. In detail, the control is passed to the scheduler, and the virtual thread is _unmounted_ from the carrier thread when it reaches a blocking operation.
 
-We can empirically verify this behavior playing around with the `sleep` method, and the above system properties. First, let's define a function creating a virtual thread that contains an infinite loop. Let's say we want to model a employee that is working hard on a task:
+We can empirically verify this behavior by playing with the `sleep()` method and the above system properties. First, let's define a function creating a virtual thread that contains an infinite loop. Let's say we want to model an employee that is working hard on a task:
 
 ```java
 static Thread workingHard() {
@@ -356,9 +356,9 @@ static Thread workingHard() {
 }
 ```
 
-As we can see, the IO operation, the `sleep` method, is after the infinite loop. We defined also an `alwaysTrue()` function, which returns `true`, and it allows us to write an infinite loop without using the `while (true)` construct that is not allowed by the compiler.
+As we can see, the IO operation, the `sleep()` method, is after the infinite loop. We also defined an `alwaysTrue()` function, which returns `true` and allows us to write an infinite loop without using the `while (true)` construct that is not permitted by the compiler.
 
-Then, we define a function to let our employee take a break:
+Then, we define a function to let our employees take a break:
 
 ```java
 static Thread takeABreak() {
@@ -372,7 +372,7 @@ static Thread takeABreak() {
 }
 ```
 
-Now, we can compose the two function and let the two thread race:
+Now, we can compose the two functions and let the two thread race:
 
 ```java
 @SneakyThrows
@@ -384,7 +384,7 @@ static void workingHardRoutine() {
 }
 ```
 
-Before running the `workingHardRoutine()` function, we set properly the three system properties:
+Before running the `workingHardRoutine()` function, we correctly set the three system properties:
 
 ```
 -Djdk.virtualThreadScheduler.parallelism=1
@@ -401,7 +401,7 @@ The above settings force the scheduler to use a pool configured with only one ca
 
 The `"Working hard"` virtual thread is never unmounted from the carrier thread, and the `"Take a break"` virtual thread is never scheduled.
 
-Let's now change the things a little to let the cooperative scheduling work. We define a new function simulating an employee that is working hard, but it stops working every 100 milliseconds:
+Let's now change things to let the cooperative scheduling work. We define a new function simulating an employee that is working hard but stops working every 100 milliseconds:
 
 ```java
 static Thread workingConsciousness() {
