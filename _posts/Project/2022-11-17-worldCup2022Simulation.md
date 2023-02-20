@@ -5,6 +5,7 @@ categories: project
 tag: [python, project, machine_learning]
 toc: true
 author_profile: false
+color: white
 sidebar:
     nav: "docs"
 ---
