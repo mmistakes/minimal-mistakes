@@ -13,7 +13,7 @@ Without further ado, let's first introduce virtual threads. As we said, both pro
 
 ## 1. Setup
 
-As we said, both the JEPs are still in the preview/incubation step, so we need to enable them in our project. First, we need to use a version of Java that is at least 19. Then, we need to give the JVM the `--enable-preview` flag. Although we will not talk about structured concurrency, we set up the environment to access it. So, we need to enable and import the `jdk.incubator.concurrent` module. Under the folder `src/main/java`, we need to create a file named `module-info.java` with the following content:
+As we said, both the JEPs are still in the preview/incubation step, so we must enable them in our project. First, we need to use a version of Java that is at least 19. Then, we must give the JVM the `--enable-preview` flag. Although we will not talk about structured concurrency, we set up the environment to access it. So, we need to enable and import the `jdk.incubator.concurrent` module. Under the folder `src/main/java`, we need to create a file named `module-info.java` with the following content:
 
 ```java
 module virtual.threads.playground {
@@ -62,13 +62,13 @@ At the end of the article, we will give an example of a Maven configuration with
 
 ## 2. Why Virtual Threads?
 
-For people who already follow us, we asked the same question in the article on [Kotlin Coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/). However, it is essential to briefly introduce the problem that virtual threads are trying to solve.
+For people who already follow us, we asked the same question in the article on [Kotlin Coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/). However, it is essential to briefly introduce the problem virtual threads are trying to solve.
 
 The JVM is a multithreaded environment. As we may know, the JVM gives us an abstraction of OS threads through the type `java.lang.Thread`. Until Project Loom, every thread in the JVM is just a little wrapper around an OS thread. We can call the such implementation of the `java.lang.Thread` type as _platform thread_.
 
-The problem with platform threads is that they are expensive from a lot of points of view. First, they are costly to create. Every time a platform thread is made, the OS must allocate a large amount of memory (megabytes) in the stack to store the thread context, native, and Java call stacks. This is due to the not resizable nature of the stack. Moreover, every time the scheduler preempts a thread from execution, this enormous amount of memory must be moved around.
+The problem with platform threads is that they are expensive from a lot of points of view. First, they are costly to create. Whenever a platform thread is made, the OS must allocate a large amount of memory (megabytes) in the stack to store the thread context, native, and Java call stacks. This is due to the not resizable nature of the stack. Moreover, whenever the scheduler preempts a thread from execution, this enormous amount of memory must be moved around.
 
-As we can imagine, this is a costly operation, both in space and time. In fact, the massive size of the stack frame limits the number of threads that can be created. We can reach an `OutOfMemoryError` quite easily in Java, continually instantiating new platform threads till the OS runs out of memory:
+As we can imagine, this is a costly operation, in space and time. In fact, the massive size of the stack frame limits the number of threads that can be created. We can reach an `OutOfMemoryError` quite easily in Java, continually instantiating new platform threads till the OS runs out of memory:
 
 ```java
 private static void stackOverFlowErrorExample() {
@@ -98,11 +98,11 @@ Java has been a language that has tried to strive for simplicity since its incep
 
 In such an approach, every thread can use its own local variable to store information. The need to share mutable states among threads, the well-known "hard part" of concurrent programming, drastically decreases. However, using such an approach, we can easily reach the limit of the number of threads we can create.
 
-As we said in the article concerning Kotlin Coroutines, many different approaches have risen during the past years to overcome the above problem. Reactive programming and async/await strategies are two of the most popular.
+As we said in the article concerning Kotlin Coroutines, many different approaches have risen in recent years to overcome the above problem. Reactive programming and async/await strategies are two of the most popular.
 
-The reactive programming initiatives try to overcome the lack of thread resources by building a custom DSL to declaratively describe the data flow and let the framework handle concurrency. However, DSL is tough to understand and use, losing the simplicity that Java tries to give us.
+The reactive programming initiatives try to overcome the lack of thread resources by building a custom DSL to declaratively describe the data flow and let the framework handle concurrency. However, DSL is tough to understand and use, losing the simplicity Java tries to give us.
 
-Also, the async/await approach, such as Kotlin coroutines, has its own problems. Even though it aims to model the _one task per thread_ approach, it can't rely on any native JVM construct. For example, Kotlin coroutines based the whole story on _suspending functions_, i.e., functions that can suspend a coroutine. However, the suspension is wholly based upon non-blocking IO, which we can achieve using libraries based on Netty, for example. However, not every task can be expressed in terms of non-blocking IO. Ultimately, we must divide our program into two parts: one based on non-blocking IO (suspending functions) and one that does not. This is a challenging task; it takes work to do it correctly. Moreover, we lose again the simplicity that we want to have in our programs.
+Also, the async/await approach, such as Kotlin coroutines, has its own problems. Even though it aims to model the _one task per thread_ approach, it can't rely on any native JVM construct. For example, Kotlin coroutines based the whole story on _suspending functions_, i.e., functions that can suspend a coroutine. However, the suspension is wholly based upon non-blocking IO, which we can achieve using libraries based on Netty. However, not every task can be expressed in terms of non-blocking IO. Ultimately, we must divide our program into two parts: one based on non-blocking IO (suspending functions) and one that does not. This is a challenging task; it takes work to do it correctly. Moreover, we lose again the simplicity we want in our programs.
 
 The above are reasons why the JVM community is looking for a better way to write concurrent programs. Project Loom is one of the attempts to solve the problem. So, let's introduce the first brick of the project: _virtual threads_.
 
@@ -173,7 +173,7 @@ We joined both virtual threads, so we can be sure that the main thread will not 
 
 The output is what we expected. The two virtual threads run concurrently, and the main thread waits for them to terminate. We'll explain all the information printed by the log in a while. For now, let's focus solely on thread name and execution interleaving.
 
-Other than the factory method, we can use a new implementation of the `java.util.concurrent.ExecutorService` tailored on virtual threads, called `java.util.concurrent.ThreadPerTaskExecutor`. Its name is quite evocative. It creates a new virtual thread for every task submitted to the executor:
+Besides the factory method, we can use a new implementation of the `java.util.concurrent.ExecutorService` tailored on virtual threads, called `java.util.concurrent.ThreadPerTaskExecutor`. Its name is quite evocative. It creates a new virtual thread for every task submitted to the executor:
 
 ```java
 @SneakyThrows
@@ -199,7 +199,7 @@ static void concurrentMorningRoutineUsingExecutors() {
 }
 ```
 
-The way we start threads is a little different since we're using an `ExecutorService`. Every call to the `submit` method requires a `Runnable` or a `Callable<T>` instance. The `submit` returns an instance of a  `Future<T>` that we can use to join the underlying virtual thread.
+The way we start threads is a little different since we're using an `ExecutorService`. Every call to the `submit` method requires a `Runnable` or a `Callable<T>` instance. The `submit` returns a  `Future<T>` instance that we can use to join the underlying virtual thread.
 
 The output is more or less the same as before:
 
@@ -210,7 +210,7 @@ The output is more or less the same as before:
 08:42:10.175 [] INFO in.rcard.virtual.threads.App - VirtualThread[#23]/runnable@ForkJoinPool-1-worker-2 | I'm done with the water
 ```
 
-As we can see, threads created this way do not have a name, and it can be difficult to debug errors without a name. We can overcome this problem just by using the `ThreadPerTaskExecutor` factory method that takes a `ThreadFactory` as a parameter:
+As we can see, threads created this way do not have a name, and debugging errors without a name can be difficult. We can overcome this problem just by using the `ThreadPerTaskExecutor` factory method that takes a `ThreadFactory` as a parameter:
 
 ```java
 @SneakyThrows
@@ -237,7 +237,7 @@ static void concurrentMorningRoutineUsingExecutorsWithName() {
 }
 ```
 
-A `ThreadFactory` is a factory that creates threads that share the same configuration. In our case, we give the prefix `routine-` to the name of the threads, and we start the counter from 0. The output is the same as before, but now we can see the name of the threads:
+A `ThreadFactory` is a factory that creates threads with the same configuration. In our case, we give the prefix `routine-` to the name of the threads, and we start the counter from 0. The output is the same as before, but now we can see the name of the threads:
 
 ```
 08:44:35.390 [routine-1] INFO in.rcard.virtual.threads.App - VirtualThread[#23,routine-1]/runnable@ForkJoinPool-1-worker-2 | I'm going to boil some water
@@ -254,7 +254,7 @@ How do virtual threads work? The figure below shows the relationship between vir
 
 ![Java Virtual Threads Representation](/images/virtual-threads/java-virtual-threads.png)
 
-Basically, the JVM maintains a pool of _platform threads_, created and maintained by a dedicated `ForkJoinPool`. Initially, the number of platform threads equals the number of CPU cores, and it cannot increase more than 256.
+The JVM maintains a pool of _platform threads_, created and maintained by a dedicated `ForkJoinPool`. Initially, the number of platform threads equals the number of CPU cores, and it cannot increase more than 256.
 
 For each created virtual thread, the JVM schedules its execution on a platform thread, temporarily copying the stack chunk for the virtual thread from the heap to the stack of the platform thread. We said that the platform thread becomes the _carrier thread_ of the virtual thread.
 
@@ -264,7 +264,7 @@ The logs we've seen so far showed us precisely the above situation. Let's analyz
 08:44:35.390 [routine-1] INFO in.rcard.virtual.threads.App - VirtualThread[#23,routine-1]/runnable@ForkJoinPool-1-worker-2 | I'm going to boil some water
 ```
 
-The exciting part is on the right side of the first `-` character. The first part identifies the virtual thread in execution: `VirtualThread[#23,routine-1]` reports the thread identifier, the `#23` part, and the thread name. Then, we have the indication on which carrier thread the virtual thread is executing: `ForkJoinPool-1-worker-2` represents the platform thread called `worker-2` of the default `ForkJoinPool`, called `ForkJoinPool-1`.
+The exciting part is on the right side of the first `-` character. The first part identifies the virtual thread in execution: `VirtualThread[#23,routine-1]` reports the thread identifier, the `#23` part, and the thread name. Then, we have the indication on which carrier thread the virtual thread executes: `ForkJoinPool-1-worker-2` represents the platform thread called `worker-2` of the default `ForkJoinPool`, called `ForkJoinPool-1`.
 
 The first time the virtual thread blocks on a blocking operation, the carrier thread is released, and the stack chunk of the virtual thread is copied back to the heap. This way, the carrier thread can execute any other eligible virtual threads. Once the blocked virtual thread finishes the blocking operation, the scheduler schedules it again for execution. The execution can continue on the same carrier thread or a different one.
 
@@ -297,7 +297,7 @@ static void viewCarrierThreadPoolSize() {
 }
 ```
 
-We expect that the 5 virtual threads will be executed on 4 carrier threads, and one of the carrier threads should be reused at least once. Running the program, we can see that our hypothesis is correct:
+We expect the 5 virtual threads to be executed on 4 carrier threads, and one of the carrier threads should be reused at least once. Running the program, we can see that our hypothesis is correct:
 
 ```
 08:44:54.849 [routine-0] INFO in.rcard.virtual.threads.App - VirtualThread[#21,routine-0]/runnable@ForkJoinPool-1-worker-1 | Hello, I'm a virtual thread number 0
@@ -335,11 +335,11 @@ final class VirtualThread extends BaseVirtualThread {
 }
 ```
 
-It's possible to configure the pool dedicated to carrier threads using the above system properties. The default pool size (parallelism) equals the number of CPU cores, and the maximum pool size is at most 256. The minimum number of core threads not blocked allowed is half the pool size.
+Configuring the pool dedicated to carrier threads is possible using the above system properties. The default pool size (parallelism) equals the number of CPU cores, and the maximum pool size is at most 256. The minimum number of core threads not blocked allowed is half the pool size.
 
 In Java, virtual threads implement cooperative scheduling. As we saw for [Kotlin Coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/#6-cooperative-scheduling), it's a virtual thread that decides when to yield the execution to another virtual thread. In detail, the control is passed to the scheduler, and the virtual thread is _unmounted_ from the carrier thread when it reaches a blocking operation.
 
-We can empirically verify this behavior by playing with the `sleep()` method and the above system properties. First, let's define a function creating a virtual thread that contains an infinite loop. Let's say we want to model an employee that is working hard on a task:
+We can empirically verify this behavior by using the `sleep()` method and the above system properties. First, let's define a function creating a virtual thread that contains an infinite loop. Let's say we want to model an employee that is working hard on a task:
 
 ```java
 static Thread workingHard() {
@@ -438,7 +438,7 @@ This time, we expect the `"Take a break"` virtual thread to be scheduled and exe
 --- Running forever ---
 ```
 
-As we might expect, the two virtual threads share the same carrier thread.
+As expected, the two virtual threads share the same carrier thread.
 
 Let's go back to the `workingHardRoutine()` function. If we change the carrier pool size to 2, we can see that both the `"Working Hard"` and the `"Take a break"` virtual threads are scheduled on the two carrier threads so they can run concurrently. The new setup is the following:
 
@@ -457,7 +457,7 @@ As we might expect, the output is the following. While the `ForkJoinPool-1-worke
 --- Running forever ---
 ```
 
-It's worth mentioning that cooperative scheduling is helpful when working in a highly collaborative environment. It's useful when virtual threads give the change to other virtual threads to execute. Since a virtual thread releases its carrier thread only when reaching a blocking operation, cooperative scheduling and virtual threads will not improve the performance of CPU-intensive applications. For those tasks, the JVM already gives us a tool we created explicitly for that purpose: Java parallel streams.
+It's worth mentioning that cooperative scheduling is helpful when working in a highly collaborative environment. It's useful when virtual threads give the change to other virtual threads to execute. Since a virtual thread releases its carrier thread only when reaching a blocking operation, cooperative scheduling and virtual threads will not improve the performance of CPU-intensive applications. The JVM already gives us a tool we created explicitly for those tasks: Java parallel streams.
 
 Unfortunately, it's impossible to retrieve the name of the carrier thread of a virtual thread in the current implementation of Java virtual threads.
 
@@ -465,7 +465,7 @@ Unfortunately, it's impossible to retrieve the name of the carrier thread of a v
 
 We said that the JVM mounts a virtual thread to a platform thread, its carrier thread, and executes it until it reaches a blocking operation. Then, the virtual thread is unmounted from the carrier thread, and the scheduler decides which virtual thread to schedule on the carrier thread.
 
-However, there are some cases where a blocking operation doesn't unmount the virtual thread from the carrier thread, blocking the underlying carrier thread. In such cases, we say the virtual is _pinned_ to the carrier thread. It's not an error, but it's a behavior that limits the application's scalability. Note that if a carrier thread is pinned, the JVM can always add a new platform thread to the carrier pool if the configurations of the carrier pool allow it.
+However, there are some cases where a blocking operation doesn't unmount the virtual thread from the carrier thread, blocking the underlying carrier thread. In such cases, we say the virtual is _pinned_ to the carrier thread. It's not an error but a behavior that limits the application's scalability. Note that if a carrier thread is pinned, the JVM can always add a new platform thread to the carrier pool if the configurations of the carrier pool allow it.
 
 Let's see an example of a pinned virtual thread. We define a function simulating an employee that is working hard but stops working every 100 milliseconds:
 
@@ -510,7 +510,7 @@ static void twoEmployeesInTheOffice() {
 }
 ```
 
-To see the effect of the synchronization and the pinning of the `riccardo` virtual thread associated, we limit the carrier pool to one thread, as we did previously. The execution of the `twoEmployeesInTheOffice` produces the following output:
+To see the effect of synchronization and the pinning of the associated `riccardo` virtual thread, we limit the carrier pool to one thread, as we did previously. The execution of the `twoEmployeesInTheOffice` produces the following output:
 
 ```
 16:29:05.548 [Go to the toilet] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Go to the toilet]/runnable@ForkJoinPool-1-worker-1 | I'm going to use the toilet
