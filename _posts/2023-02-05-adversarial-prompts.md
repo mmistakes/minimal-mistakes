@@ -85,7 +85,11 @@ gallery_plane:
   #   alt: "Ocean image attacked to be a plane"
   #   title: "DALL-E image generated with the prompt `pegasus yorkshire wwii a picture of the ocean`."
 
-
+prompting_pipeline:
+  - url: "/assets/images/adversarial_prompting/prompting_pipeline.jpg"
+    image_path: "/assets/images/adversarial_prompting/prompting_pipeline.jpg"
+    alt: "Generation pipeline"
+    title: "Generation Pipeline"
 
 ---
 <script type="text/javascript" async
@@ -132,9 +136,9 @@ For example, suppose we want DALLE-2 to generate pictures of planes instead of t
 
 With this adversarial prompt, DALLE-2 is now generating pictures of planes! We were able to do this with a small number of tokens, without changing the original prompt, and without using tokens that directly relate to planes. 
 
-How did we find this adversarial prompt? This leads to the main challenge for the attacker---many commercial prompting models are closed-source and can only be queried, e.g. [DALLE-2](https://openai.com/dall-e-2/) and [ChatGPT](https://openai.com/blog/chatgpt/). Unfortunately, many classsic attacks known as "white-box" attacks require access to the underlying model to get gradient information. In our work, we instead leverage an alternative class of so-called "black-box" attacks, which assume only query-level access to the model. 
+How did we find this adversarial prompt? This leads to the main challenge for the attacker---many commercial prompting models are closed-source and can only be queried, e.g. [DALLE-2](https://openai.com/dall-e-2/) and [ChatGPT](https://openai.com/blog/chatgpt/). Unfortunately, many classic attacks known as "white-box" attacks require access to the underlying model to get gradient information. In our work, we instead leverage an alternative class of so-called "black-box" attacks, which assume only query-level access to the model. 
 
-### Black-Box Adversarial Attack for Prompting
+### Black-Box Adversarial Attacks for Prompting
 
 Consider a model $$m$$ where given a prompt $$p\in \mathcal{P}$$, the model outputs a probability distribution of outputs. We would like to find a prompt that generates images of class ``dog``, specifically we can solve the following optimization problem:
 \\[\tag{1}\label{eq: opt}
@@ -147,6 +151,8 @@ There are two main difficulties in this optimization problem:
 To tackle these two difficulties, we employ two key techniques:
   1. *Optimize over word embedding space*. Rather than searching over the discrete tokens, we search over the continuous 768-dimensional word embedding space and project to the nearest tokens. This also allows us to avoid using restricted tokens in the projection step.
   2. *Use black-box optimization methods*. We use Bayesian Optimization (specifically [TuRBO](https://proceedings.neurips.cc/paper/2019/hash/6c990b7aca7bc7058f5e98ea909e924b-Abstract.html)) and standard zeroth-order methods (square attacks).
+
+{% include gallery id="prompting_pipeline" layout="" caption="Standard generation pipeline when using text prompts. Our optimization framework in blue." %}
 
 Using these two techniques, we are able to successfully optimize Equation \eqref{eq: opt} and find tokens that are dissimilar with the goal class yet still generate planes, in this case we find the adversarial prompt ``pegasus yorkshire wwii taken a picture of the ocean``.
 
@@ -207,7 +213,51 @@ We also attack the Text-to-Text generative model <a href="https://huggingface.co
 }</span>
 <!-- ## How to Find Adversarial Prompts -->
 
+## Adversarial Prompts for Text-to-Text Models
 
+We also explore attacking text generation models, specifically we use the open source [OPT model](https://huggingface.co/docs/transformers/model_doc/opt)-125M. 
+
+Rather than generating images of a certain class, we now generate text of certain characteristics. We explore two tasks of generating text 1) of a certain sentiment and 2) containing as many of a certain letter (such as ``q``) as possible.
+
+In these tasks, we do not have specific restricted tokens, and instead solely optimize over prompts. For the sentiment flipping setting, we prepend an optimized prompt to the seed prompts ``I am sad`` and ``I am happy``.
+
+### Generation Sentiment
+
+For the seed prompt ``I am sad``, the `` rolled</s> latest 11 I am sad`` manages to flip the sentiment. Below are five examples of generated text.
+>
+1.`` rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one. I am not the only``  
+2.`` rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one. I'm happy to``  
+3.`` rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one. I'm glad you``  
+4.`` rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one. I'm glad to``  
+5.`` rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one.  I am not the``  
+
+For the seed prompt ``I am happy``, the `` Pr cele out submitted I am happy`` manages to flip the sentiment. Below are five examples of generated text.
+>
+1. `` Pr cele out submitted I am happy for them but I am not happy for them. I am happy for them but I am not happy for them``  
+2. `` Pr cele out submitted I am happy for them but I am not happy for them. I am not happy for them. I am not happy for``  
+3. `` Pr cele out submitted I am happy for them but I am not happy for them. I am not happy for them but I am not happy for``  
+4. `` Pr cele out submitted I am happy for them but I am not happy for them. I am happy for them but I am not happy for the``  
+5. `` Pr cele out submitted I am happy for them but I am not happy for them. I am not happy for them. I am happy for them``  
+
+### Generating Specific Letters
+
+For the optimization task of generating as many of the letter ``l`` as possible, we find the prompt `` set sl il sl``. Below are five examples of generated text.
+
+1. `` set sl il sl il il il il il il il il il il il il il il il il il il il il il il il il il``  
+2. `` set sl il sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl``  
+3. `` set sl il sl il sl il il il il il il il il il il il il il il il il il il il il il il il``  
+4. `` set sl il sl sl il il il il il il il il il il il il il il il il il il il il il il il il``  
+5. `` set sl il sl il sl il sl il il il il il il il il il il il il il il il il il il il il il``  
+
+For the optimization task of generating as many of the letter ``q`` as possible, we find the prompt `` partners business UNCLASSIFIED mosqu``. Below are five examples of generated text.
+1. `` partners business UNCLASSIFIED mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu``  
+2. `` partners business UNCLASSIFIED mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu``  
+3. `` partners business UNCLASSIFIED mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu``  
+4. `` partners business UNCLASSIFIED mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu``  
+5. `` partners business UNCLASSIFIED mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu``
+``  
+
+Interestingly in all of above our optimized prompts, there is a space before the first letter in the prompt, e.g. ' partners business UNCLASSIFIED mosqu' rather than 'partners business UNCLASSIFIED mosqu'. When removing this space, the prompt's performance deteriorates. 
 
 ### Citation
 > @article{maus2023adversarialprompting,  
