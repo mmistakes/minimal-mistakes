@@ -843,18 +843,18 @@ This closes the circle. As we can see, it takes a lot of work to follow the life
 
 ## 8. Don't use `ThreadLocal` and Thread Pools
 
-When using threads before Java 19 and Project Loom, it was quite uncommon to create a thread using the constructor. Instead, we preferred to use a thread pool or an executor service configured with a thread pool. In fact, those threads were what now we call platform thread, and the reason was that creating such threads was a quite expensive operation. 
+When using threads before Java 19 and Project Loom, creating a thread using the constructor was relatively uncommon. Instead, we preferred to use a thread pool or an executor service configured with a thread pool. In fact, those threads were what we now call platform threads, and the reason was that creating such threads was quite expensive operation.
 
-As we said in the beginning of this article, with virtual threads it's not the case anymore. The creation of a virtual thread is very cheap, both in space and time. Also, they were design with the idea of using a different virtual thread for each request. So, it's not a good idea to use a thread pool or an executor service to create virtual threads.
+As we said at the beginning of this article, with virtual threads, it's not the case anymore. Creating a virtual thread is very cheap, both in space and time. Also, they were designed with the idea of using a different virtual thread for each request. So, it would be better to use a thread pool or an executor service to create virtual threads.
 
-The possible high number of virtual threads created by an application is the reason behind the fact the using `ThreadLocal` with virtual threads is not a good idea. 
+The possible high number of virtual threads created by an application is why using `ThreadLocal` with virtual threads is not a good idea.
 
-A `ThreadLocal` is a construct that allows us to store data that is accessible only by a specific thread. Let's see an example. First of all, we want to create a `ThreadLocal` that stores a `String`:
+A `ThreadLocal` is a construct allowing us to store data accessible only by a specific thread. Let's see an example. First of all, we want to create a `ThreadLocal` that holds a `String`:
 
 ```java
 static ThreadLocal<String> context = new ThreadLocal<>();
 ```
-Then, we create two different platform threads that uses both the `ThreadLocal`:
+Then, we create two different platform threads that use both the `ThreadLocal`:
 
 ```java
 @SneakyThrows
@@ -881,9 +881,9 @@ If we run the above function, the output is:
 14:57:05.334 [thread-1] INFO in.rcard.virtual.threads.App - Thread[#21,thread-1,5,main] | Hey, my name is thread-1
 ```
 
-As we can see, each thread stores in the `ThreadLocal` a different value, and the value is not accessible to other threads. the thread called `thread-1` sets and retrieves the value `thread-1` from the `ThreadLocal`; The thread `thread-2` sets and retrieves the value `thread-2`, instead. There is no race condition at all.
+As we can see, each thread stores a different value in the `ThreadLocal`, and the value is not accessible to other threads. The thread called `thread-1` retrieves the value `thread-1` from the `ThreadLocal`; The thread `thread-2` retrieves the value `thread-2` instead. There is no race condition at all.
 
-The same properties of `ThreadLocal` still stand also when we speak about virtual threads. In fact, we can replicate the same example above using virtual threads and the result will be the same:
+The same properties of `ThreadLocal` still stand also when we speak about virtual threads. In fact, we can replicate the same example above using virtual threads, and the result will be the same:
 
 ```java
 @SneakyThrows
