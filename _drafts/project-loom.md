@@ -98,7 +98,7 @@ Java has been a language that has tried to strive for simplicity since its incep
 
 In such an approach, every thread can use its own local variable to store information. The need to share mutable states among threads, the well-known "hard part" of concurrent programming, drastically decreases. However, using such an approach, we can easily reach the limit of the number of threads we can create.
 
-As we said in the article concerning Kotlin Coroutines, many different approaches have risen in recent years to overcome the above problem. Reactive programming and async/await strategies are two of the most popular.
+As we said in the article concerning Kotlin Coroutines, many approaches have risen in recent years to overcome the above problem. Reactive programming and async/await strategies are two of the most popular.
 
 The reactive programming initiatives try to overcome the lack of thread resources by building a custom DSL to declaratively describe the data flow and let the framework handle concurrency. However, DSL is tough to understand and use, losing the simplicity Java tries to give us.
 
@@ -122,7 +122,7 @@ private static Thread virtualThread(String name, Runnable runnable) {
 }
 ```
 
-We'll use the same example we used in the Kotlin Coroutine article to show how virtual threads work. Let's describe our morning routine. Every morning, we take a bath:
+We'll use the same example in the Kotlin Coroutine article to show how virtual threads work. Let's describe our morning routine. Every morning, we take a bath:
 
 ```java
 static Thread bathTime() {
@@ -339,7 +339,7 @@ Configuring the pool dedicated to carrier threads is possible using the above sy
 
 In Java, virtual threads implement cooperative scheduling. As we saw for [Kotlin Coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/#6-cooperative-scheduling), it's a virtual thread that decides when to yield the execution to another virtual thread. In detail, the control is passed to the scheduler, and the virtual thread is _unmounted_ from the carrier thread when it reaches a blocking operation.
 
-We can empirically verify this behavior by using the `sleep()` method and the above system properties. First, let's define a function creating a virtual thread that contains an infinite loop. Let's say we want to model an employee that is working hard on a task:
+We can empirically verify this behavior using the `sleep()` method and the above system properties. First, let's define a function creating a virtual thread that contains an infinite loop. Let's say we want to model an employee that is working hard on a task:
 
 ```java
 static Thread workingHard() {
@@ -611,15 +611,15 @@ We can run the above method also with the `jdk.tracePinnedThreads` property set 
 
 ## 7. Some Virtual Threads Internals
 
-In this section, we try to give an introduction to the implementation of continuation in Java vitual threads. We're not going to go into too much detail, but we'll try to give a general idea of how the virtual threads are implemented.
+In this section, we'll introduce the implementation of continuation in Java virtual threads. We're not going into too much detail, but we'll try to give a general idea of how the virtual threads are implemented.
 
-As we might guess, a virtual thread is not something that can run itself, but it store the information of what have to be run. In other words, it's a pointer to the advance of an execution that can be yield and resumed later.
+A virtual thread cannot run itself, but it stores the information of what must be run. In other words, it's a pointer to the advance of an execution that can be yielded and resumed later.
 
-The above definition is the definition of _continuations_. We've already seen how Kotlin coroutines implement continuations ([Kotlin Coroutines - A Comprehensive Introduction - Suspending Functions](https://blog.rockthejvm.com/kotlin-coroutines-101/#3-suspending-functions)). In that case, the Kotlin compiler generates continuation from the coroutine code. Kotlin's coroutines have no direct support in the JVM, so they are implemented at code level.
+The above definition is the definition of _continuations_. We've already seen how Kotlin coroutines implement continuations ([Kotlin Coroutines - A Comprehensive Introduction - Suspending Functions](https://blog.rockthejvm.com/kotlin-coroutines-101/#3-suspending-functions)). In that case, the Kotlin compiler generates continuation from the coroutine code. Kotlin's coroutines have no direct support in the JVM, so they are implemented at the code level.
 
-However, for virtual threads, we have directly the JVM support. So, continuations execution is implemented directly using a lot of native calls to the JVM, and for this reason, it's less understandable when looking at the JDK code. However, we can still understand some concepts at the roots of virtual threads.
+However, for virtual threads, we have the JVM support directly. So, continuations execution is implemented using a lot of native calls to the JVM, so it's less understandable when looking at the JDK code. However, we can still understand some concepts at the roots of virtual threads.
 
-All the core information are mainly placed in the `java.lang.VirtualThread` class. When we create a new virtual thread, we first create `unstarted` thread. At the core, the JVM calls the `VirtualThread`constructor:
+The core information is mainly in the `java.lang.VirtualThread` class. When we create a new virtual thread, we first create an `unstarted` thread. At the core, the JVM calls the `VirtualThread`constructor:
 
 ```java
 // JDK core code
@@ -641,7 +641,7 @@ VirtualThread(Executor scheduler, String name, int characteristics, Runnable tas
 }
 ```
 
-As we can see, a scheduler is chosen if not specified. The default scheduler is the one we described in the previous section. After that, a continuation is created, which is a `VThreadContinuation` object. This object is the one that stores the information of what have to be run as a `Runnable` object:
+As we can see, a scheduler is chosen if not specified. The default scheduler is the one we described in the previous section. After that, a continuation is created, which is a `VThreadContinuation` object. This object is the one that stores the information of what has to be run as a `Runnable` object:
 
 ```java
 // JDK core code
@@ -659,17 +659,17 @@ private static class VThreadContinuation extends Continuation {
 }
 ```
 
-The above code shows also how the `jdk.tracePinnedThreads` flag works. The `VTHREAD_SCOPE` is a `ContinuationScope` object, which is a class that is used to group continuations. In other words, it's a way to group continuations that are related to each other. In our case, we have only one `ContinuationScope` object, which is the `VTHREAD_SCOPE` object. This object is used to group all the virtual threads.
+The above code also shows how the `jdk.tracePinnedThreads` flag works. The `VTHREAD_SCOPE` is a `ContinuationScope` object, a class used to group continuations. In other words, it's a way to group continuations related to each other. In our case, we have only one `ContinuationScope` object, the `VTHREAD_SCOPE` object. This object is used to group all the virtual threads.
 
-Last, the method sets the `runContinuation` field, which is a `Runnable` object that is used to run the continuation. This method is called when the virtual thread is started.
+Last, the method sets the `runContinuation` field, a `Runnable` object used to run the continuation. This method is called when the virtual thread is started.
 
 As a continuation, a virtual thread is a state machine with many states. The relations among these states are summarized in the following diagram:
 
 ![Java Virtual Threads States](/images/virtual-threads/virtual-thread-states.png)
 
-A virtual thread is _mounted_ on its carrier thread when it is in the states colored of green. In states colored in light blue, the virtual thread is _unmounted_ from its carrier thread. The pinned state is colored in violet.
+A virtual thread is _mounted_ on its carrier thread when it is in the states colored green. In states colored in light blue, the virtual thread is _unmounted_ from its carrier thread. The pinned state is colored violet.
 
-We get a virtual thread in the `NEW` status when we call the `unstarted` method on the object returned by the `Thread.ofVirtual()` method. Basically, it is the state we have after the call to the `VirtualThread` constructor we've just seen. 
+We get a virtual thread in the `NEW` status when we call the `unstarted` method on the object returned by the `Thread.ofVirtual()` method. It is the state we have after the call to the `VirtualThread` constructor we've just seen.
 
 Once we call the `start` method, the virtual thread is moved to the `STARTED` status:
 
@@ -709,7 +709,7 @@ private void submitRunContinuation(boolean lazySubmit) {
 }
 ```
 
-The execution of the `runContinuation` runnable move the virtual thread to the `RUNNING` status, both if it's in the `STARTED` status or in the `RUNNABLE` status:
+The execution of the `runContinuation` runnable moves the virtual thread to the `RUNNING` status, both if it's in the `STARTED` status or in the `RUNNABLE` status:
 
 ```java
 // JDK core code
@@ -735,7 +735,7 @@ private void runContinuation() {
 }   
 ```
 
-From this point on, the state of the virtual threads depends on the execution of the continuation, made through the method `Continuation.run()`. The method performs a lot of native calls and  it's not easy to follow the execution flow. However, the first thing it makes is to set as mounted the associated virtual thread:
+From this point on, the state of the virtual threads depends on the execution of the continuation, made through the method `Continuation.run()`. The method performs a lot of native calls, and it's not easy to follow the execution flow. However, the first thing it makes is to set as mounted the associated virtual thread:
 
 ```java
 // JDK core code
@@ -747,7 +747,7 @@ public final void run() {
 }
 ```
 
-Every time the virtual threads reaches a blocking point, the state of thread is changed to `PARKING`. The reaching of a blocking point is signaled through the call of the `VirtualThread.park()` method:
+Every time the virtual thread reaches a blocking point, the state of the thread is changed to `PARKING`. The reaching of a blocking point is signaled through the call of the `VirtualThread.park()` method:
 
 ```java
 // JDK core code
@@ -769,7 +769,7 @@ void park() {
 }
 ```
 
-Once in `PARKING` state, the `yieldContinuation()` method is called. This method is the one that performs the actual parking of the virtual thread, and tries to unmount the virtual thread from its carrier thread:
+Once in the `PARKING` state, the `yieldContinuation()` method is called. This method is the one that performs the actual parking of the virtual thread and tries to unmount the virtual thread from its carrier thread:
 
 ```java
 // JDK core code
@@ -788,7 +788,7 @@ private boolean yieldContinuation() {
 }
 ```
 
-The `Continuation.yield(VTHREAD_SCOPE)` call is implemented with a lot of JVM native calls. If the method returns `true`, then the `parkOnCarrierThread`is called. This method sets the virtual threads as pinned on the carrier thread:
+The `Continuation.yield(VTHREAD_SCOPE)` call is implemented with many JVM native calls. If the method returns `true`, then the `parkOnCarrierThread`is called. This method sets the virtual threads as pinned on the carrier thread:
 
 ```java
 private void parkOnCarrierThread(boolean timed, long nanos) {
@@ -839,7 +839,7 @@ private void afterYield() {
 }
 ```
 
-Basically, this close the circle. As we can see, it's not that easy to follow the life cycle of a virtual thread and its continuation. A lot of native calls are involved. We hope that the JDK team will provide a better documentation of the virtual threads implementation in the future.
+This closes the circle. As we can see, it takes a lot of work to follow the life cycle of a virtual thread and its continuation. A lot of native calls are involved. We hope that the JDK team will provide better documentation of the virtual threads implementation in the future.
 
 ## 8. Don't use `ThreadLocal` and Thread Pools
 
