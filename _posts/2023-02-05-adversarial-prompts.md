@@ -223,7 +223,7 @@ In these tasks, we do not have specific restricted tokens, and instead solely op
 
 ### Generation Sentiment
 
-For the seed prompt ``I am sad``, the `` rolled</s> latest 11 I am sad`` manages to flip the sentiment. Below are five examples of generated text.
+For the seed prompt ``I am sad``, the prompt `` rolled</s> latest 11 I am sad`` flips the sentiment. Below are five examples of generated text.
 >
 1.`` rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one. I am not the only``  
 2.`` rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one. I'm happy to``  
@@ -231,7 +231,7 @@ For the seed prompt ``I am sad``, the `` rolled</s> latest 11 I am sad`` manages
 4.`` rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one. I'm glad to``  
 5.`` rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one.  I am not the``  
 
-For the seed prompt ``I am happy``, the `` Pr cele out submitted I am happy`` manages to flip the sentiment. Below are five examples of generated text.
+For the seed prompt ``I am happy``, the prompt `` Pr cele out submitted I am happy`` flips the sentiment. Below are five examples of generated text.
 >
 1. `` Pr cele out submitted I am happy for them but I am not happy for them. I am happy for them but I am not happy for them``  
 2. `` Pr cele out submitted I am happy for them but I am not happy for them. I am not happy for them. I am not happy for``  
