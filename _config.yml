@@ -100,9 +100,9 @@ analytics:
 
 # Site Author
 author:
-  name: "고명석"
+  name: "Happy Day:)"
   avatar: "https://i.esdrop.com/d/f/uVJApfFjHN/JuPS6b7yOr.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Math, Computer Engineering <br> Happy Day:)"
+  bio: "Math, Computer Engineering"
 
   location: "Republic of Korea" # "Somewhere"
   email: "msk724012@gmail.com"
