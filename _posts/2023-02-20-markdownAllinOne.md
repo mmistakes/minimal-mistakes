@@ -3,10 +3,9 @@ layout: single
 title: "Markdown All in One 정보"
 categories: markdown
 tag: [markdown, vscode, visual studio code]
-toc: true
 author_profile: false
-sidebar:
-    nav: "docs"
+#sidebar:
+#    nav: "docs"
 #search: false    
 ---
 

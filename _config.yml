@@ -291,5 +291,8 @@ defaults:
       share: true
       related: true
       show_date: true
-
+      toc: true
+      toc_sticky: true
+      toc_label: 목차
+      #toc_icon: "fas fa-utensils"
 date_format: "%Y년 %m월 %d일"
