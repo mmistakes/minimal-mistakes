@@ -337,7 +337,7 @@ final class VirtualThread extends BaseVirtualThread {
 
 Configuring the pool dedicated to carrier threads is possible using the above system properties. The default pool size (parallelism) equals the number of CPU cores, and the maximum pool size is at most 256. The minimum number of core threads not blocked allowed is half the pool size.
 
-In Java, virtual threads implement cooperative scheduling. As we saw for [Kotlin Coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/#6-cooperative-scheduling), it's a virtual thread that decides when to yield the execution to another virtual thread. In detail, the control is passed to the scheduler, and the virtual thread is _unmounted_ from the carrier thread when it reaches a blocking operation.
+In Java, **virtual threads implement cooperative scheduling**. As we saw for [Kotlin Coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/#6-cooperative-scheduling), it's a virtual thread that decides when to yield the execution to another virtual thread. In detail, the control is passed to the scheduler, and **the virtual thread is _unmounted_ from the carrier thread** when it reaches a blocking operation.
 
 We can empirically verify this behavior using the `sleep()` method and the above system properties. First, let's define a function creating a virtual thread that contains an infinite loop. Let's say we want to model an employee that is working hard on a task:
 
@@ -384,7 +384,7 @@ static void workingHardRoutine() {
 }
 ```
 
-Before running the `workingHardRoutine()` function, we correctly set the three system properties:
+Before running the `workingHardRoutine()` function, we set the three system properties:
 
 ```
 -Djdk.virtualThreadScheduler.parallelism=1
@@ -392,14 +392,14 @@ Before running the `workingHardRoutine()` function, we correctly set the three s
 -Djdk.virtualThreadScheduler.minRunnable=1
 ```
 
-The above settings force the scheduler to use a pool configured with only one carrier thread. Since the `"Working hard"` virtual thread never reaches a blocking operation, it will never yield the execution to the `"Take a break"` virtual thread. In fact, the output is the following:
+The above settings force the scheduler to use a pool configured with only one carrier thread. Since the `workingHard` virtual thread never reaches a blocking operation, it will never yield the execution to the `takeABreak"` virtual thread. In fact, the output is the following:
 
 ```
 21:28:35.702 [Working hard] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Working hard]/runnable@ForkJoinPool-1-worker-1 | I'm working hard
 --- Running forever ---
 ```
 
-The `"Working hard"` virtual thread is never unmounted from the carrier thread, and the `"Take a break"` virtual thread is never scheduled.
+The `workingHard` virtual thread is never unmounted from the carrier thread, and the `takeABreak` virtual thread is never scheduled.
 
 Let's now change things to let the cooperative scheduling work. We define a new function simulating an employee that is working hard but stops working every 100 milliseconds:
 
@@ -417,7 +417,7 @@ static Thread workingConsciousness() {
 }
 ```
 
-Now, the execution can reach the blocking operation, and the `"Working hard"` virtual thread can be unmounted from the carrier thread. To verify this, we can race the above thread with the `"Take a break"` thread:
+Now, the execution can reach the blocking operation, and the `workingHard` virtual thread can be unmounted from the carrier thread. To verify this, we can race the above thread with the `takeABreak` thread:
 
 ```java
 @SneakyThrows
@@ -429,7 +429,7 @@ static void workingConsciousnessRoutine() {
 }
 ```
 
-This time, we expect the `"Take a break"` virtual thread to be scheduled and executed on the only carrier thread when the `"Working consciousness"` reaches the blocking operation. The output confirms our expectations:
+This time, we expect the `takeABreak` virtual thread to be scheduled and executed on the only carrier thread when the `workingConsciousness` reaches the blocking operation. The output confirms our expectations:
 
 ```
 21:30:51.677 [Working consciousness] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Working consciousness]/runnable@ForkJoinPool-1-worker-1 | I'm working hard
@@ -440,7 +440,7 @@ This time, we expect the `"Take a break"` virtual thread to be scheduled and exe
 
 As expected, the two virtual threads share the same carrier thread.
 
-Let's go back to the `workingHardRoutine()` function. If we change the carrier pool size to 2, we can see that both the `"Working Hard"` and the `"Take a break"` virtual threads are scheduled on the two carrier threads so they can run concurrently. The new setup is the following:
+Let's go back to the `workingHardRoutine()` function. If we change the carrier pool size to 2, we can see that both the `workingHard` and the `takeABreak` virtual threads are scheduled on the two carrier threads so they can run concurrently. The new setup is the following:
 
 ```
 -Djdk.virtualThreadScheduler.parallelism=2
@@ -448,7 +448,7 @@ Let's go back to the `workingHardRoutine()` function. If we change the carrier p
 -Djdk.virtualThreadScheduler.minRunnable=2
 ```
 
-As we might expect, the output is the following. While the `ForkJoinPool-1-worker-1` is stuck in the infinite loop, the `ForkJoinPool-1-worker-2` is executing the `"Take a break"` virtual thread:
+As we might expect, the output is the following. While the `ForkJoinPool-1-worker-1` is stuck in the infinite loop, the `ForkJoinPool-1-worker-2` is executing the `takeABreak` virtual thread:
 
 ```
 21:33:43.641 [Working hard] INFO in.rcard.virtual.threads.App - VirtualThread[#21,Working hard]/runnable@ForkJoinPool-1-worker-1 | I'm working hard
@@ -457,17 +457,13 @@ As we might expect, the output is the following. While the `ForkJoinPool-1-worke
 --- Running forever ---
 ```
 
-It's worth mentioning that cooperative scheduling is helpful when working in a highly collaborative environment. It's useful when virtual threads give the change to other virtual threads to execute. Since a virtual thread releases its carrier thread only when reaching a blocking operation, cooperative scheduling and virtual threads will not improve the performance of CPU-intensive applications. The JVM already gives us a tool we created explicitly for those tasks: Java parallel streams.
-
-Unfortunately, it's impossible to retrieve the name of the carrier thread of a virtual thread in the current implementation of Java virtual threads.
+It's worth mentioning that cooperative scheduling is helpful when working in a highly collaborative environment. Since a virtual thread releases its carrier thread only when reaching a blocking operation, cooperative scheduling and virtual threads will not improve the performance of CPU-intensive applications. The JVM already gives us a tool for those tasks: Java parallel streams.
 
 ## 6. Pinned Virtual Threads
 
-We said that the JVM mounts a virtual thread to a platform thread, its carrier thread, and executes it until it reaches a blocking operation. Then, the virtual thread is unmounted from the carrier thread, and the scheduler decides which virtual thread to schedule on the carrier thread.
+We said that the JVM _mounts_ a virtual thread to a platform thread, its carrier thread, and executes it until it reaches a blocking operation. Then, the virtual thread is unmounted from the carrier thread, and the scheduler decides which virtual thread to schedule on the carrier thread.
 
-However, there are some cases where a blocking operation doesn't unmount the virtual thread from the carrier thread, blocking the underlying carrier thread. In such cases, we say the virtual is _pinned_ to the carrier thread. It's not an error but a behavior that limits the application's scalability. Note that if a carrier thread is pinned, the JVM can always add a new platform thread to the carrier pool if the configurations of the carrier pool allow it.
-
-Let's see an example of a pinned virtual thread. We define a function simulating an employee that is working hard but stops working every 100 milliseconds:
+However, **there are some cases where a blocking operation doesn't unmount the virtual thread from the carrier thread**, blocking the underlying carrier thread. In such cases, we say the virtual is _pinned_ to the carrier thread. It's not an error but a behavior that limits the application's scalability. Note that if a carrier thread is pinned, the JVM can always add a new platform thread to the carrier pool if the configurations of the carrier pool allow it.
 
 Fortunately, there are only two cases in which a virtual thread is pinned to the carrier thread:
 
@@ -521,7 +517,7 @@ To see the effect of synchronization and the pinning of the associated `riccardo
 
 As we can see, the tasks are entirely linearized by the JVM. As we said, the blocking `sleep` operation is inside the `synchronized` `useTheToilet` method, so the virtual thread is not unmounted. So, the `riccardo` virtual thread is pinned to the carrier thread, and the `daniel` virtual thread finds no available carrier thread to execute. In fact, it is scheduled when the `riccardo` virtual thread is done with the bathroom.
 
-It's possible to trace these situations during the execution of a program by adding a valuable property to the run configuration:
+It's possible to trace these situations during the execution of a program by adding a property to the run configuration:
 
 ```
 -Djdk.tracePinnedThreads=full/short
@@ -538,7 +534,7 @@ Thread[#22,ForkJoinPool-1-worker-1,5,CarrierThreads]
 16:29:07.563 [Take a break] INFO in.rcard.virtual.threads.App - VirtualThread[#23,Take a break]/runnable@ForkJoinPool-1-worker-1 | I'm done with the break
 ```
 
-As we guessed, the `riccardo` virtual thread was pinned to its carrier thread. Despite what we previously said, we can also see the name of the carrier thread here. Amazing.
+As we guessed, the `riccardo` virtual thread was pinned to its carrier thread. We can also see the name of the carrier thread here. Amazing.
 
 We can change the configuration of the carrier pool to allow the JVM to add a new carrier thread to the pool when needed:
 
@@ -559,7 +555,7 @@ We also removed the property `jdk.tracePinnedThreads` to avoid printing the pinn
 
 The JVM added a new carrier thread to the pool when it found no carrier thread. So the `daniel` virtual thread is scheduled on the new carrier thread, executing concurrently and interleaving the two logs.
 
-Even though soon also `synchronized` blocks will probably unmount a virtual thread from its carrier thread, it is better to migrate those blocks to the new `Lock` API, using `java.util.concurrent.locks.ReentrantLock`. Such locks don't pin the virtual thread, making the cooperative scheduling work again.
+Even though soon also `synchronized` blocks will probably unmount a virtual thread from its carrier thread, it is better to migrate those blocks to the `Lock` API, using `java.util.concurrent.locks.ReentrantLock`. Such locks don't pin the virtual thread, making the cooperative scheduling work again.
 
 Let's create a version of our `Bathroom` class using the `Lock` API:
 
@@ -609,7 +605,86 @@ The execution of the `twoEmployeesInTheOfficeWithLock` produces the expected out
 
 We can run the above method also with the `jdk.tracePinnedThreads` property set to see that no thread is pinned to its carrier thread during the execution.
 
-## 7. Some Virtual Threads Internals
+## 7. Don't use `ThreadLocal` and Thread Pools
+
+When using threads before Java 19 and Project Loom, creating a thread using the constructor was relatively uncommon. Instead, we preferred to use a thread pool or an executor service configured with a thread pool. In fact, those threads were what we now call platform threads, and the reason was that creating such threads was quite expensive operation.
+
+As we said at the beginning of this article, with virtual threads, it's not the case anymore. Creating a virtual thread is very cheap, both in space and time. Also, they were designed with the idea of using a different virtual thread for each request. So, it would be better to use a thread pool or an executor service to create virtual threads.
+
+The possible high number of virtual threads created by an application is why using `ThreadLocal` with virtual threads is not a good idea.
+
+A `ThreadLocal` allows us to store data accessible only by a specific thread. Let's see an example. First of all, we want to create a `ThreadLocal` that holds a `String`:
+
+```java
+static ThreadLocal<String> context = new ThreadLocal<>();
+```
+Then, we create two different platform threads that use both the `ThreadLocal`:
+
+```java
+@SneakyThrows
+static void platformThreadLocal() {
+  var thread1 = Thread.ofPlatform().name("thread-1").start(() -> {
+    context.set("thread-1");
+    sleep(Duration.ofSeconds(1L));
+    log("Hey, my name is " + context.get());
+  });
+  var thread2 = Thread.ofPlatform().name("thread-2").start(() -> {
+    context.set("thread-2");
+    sleep(Duration.ofSeconds(1L));
+    log("Hey, my name is " + context.get());
+  });
+  thread1.join();
+  thread2.join();
+}
+```
+
+If we run the above function, the output is:
+
+```text
+14:57:05.334 [thread-2] INFO in.rcard.virtual.threads.App - Thread[#22,thread-2,5,main] | Hey, my name is thread-2
+14:57:05.334 [thread-1] INFO in.rcard.virtual.threads.App - Thread[#21,thread-1,5,main] | Hey, my name is thread-1
+```
+
+As we can see, each thread stores a different value in the `ThreadLocal`, which is not accessible to other threads. The thread called `thread-1` retrieves the value `thread-1` from the `ThreadLocal`; The thread `thread-2` retrieves the value `thread-2` instead. There is no race condition at all.
+
+The same properties of `ThreadLocal` still stand also when we speak about virtual threads. In fact, we can replicate the same example above using virtual threads, and the result will be the same:
+
+```java
+@SneakyThrows
+static void virtualThreadLocal() {
+  var virtualThread1 = Thread.ofVirtual().name("thread-1").start(() -> {
+    context.set("thread-1");
+    sleep(Duration.ofSeconds(1L));
+    log("Hey, my name is " + context.get());
+  });
+  var virtualThread2 = Thread.ofVirtual().name("thread-2").start(() -> {
+    context.set("thread-2");
+    sleep(Duration.ofSeconds(1L));
+    log("Hey, my name is " + context.get());
+  });
+  virtualThread1.join();
+  virtualThread2.join();
+}
+```
+
+As we might expect, the output is very similar to the previous one:
+
+```text
+15:08:37.142 [thread-1] INFO in.rcard.virtual.threads.App - VirtualThread[#21,thread-1]/runnable@ForkJoinPool-1-worker-1 | Hey, my name is thread-1
+15:08:37.142 [thread-2] INFO in.rcard.virtual.threads.App - VirtualThread[#23,thread-2]/runnable@ForkJoinPool-1-worker-2 | Hey, my name is thread-2
+```
+
+Nice. So, is it a good idea to use `ThreadLocal` with virtual threads? Well, no, it isn't. The reason is that virtual threads can be a lot, and each virtual thread will have its own `ThreadLocal`. This means that the memory footprint of the application will be very high. Moreover, the `ThreadLocal` will be useless in a one-thread-per-request scenario since data shouldn't be shared between different requests.
+
+However, some scenarios could be help use something similar to `ThreadLocal`. For this reason, Java 20, there will be introduced [scoped values](https://openjdk.org/jeps/429), which enable the sharing of immutable data within and across threads. However, this is a topic for another article.
+
+## 8. Conclusions
+
+Finally, we come to the end of this article. In the beginning, we introduced the reason behind the introduction of virtual threads in the JVM. Then, we saw how to create and use it with some examples. We also discuss some internals of the virtual threads implementations, such as the continuations. We made some examples of pinned threads, and finally, we saw how some old best practices are no longer valid when using virtual threads.
+
+Project Loom is still actively under development, and there are a lot of other exciting features in it. As we said, structural concurrency and scoped values are some of them. Project Loom will be a game changer in the Java world. This article will help you better understand virtual threads and how to use them.
+
+## 9. Appendix A: Some Virtual Threads Internals
 
 In this section, we'll introduce the implementation of continuation in Java virtual threads. We're not going into too much detail, but we'll try to give a general idea of how the virtual threads are implemented.
 
@@ -841,86 +916,7 @@ private void afterYield() {
 
 This closes the circle. As we can see, it takes a lot of work to follow the life cycle of a virtual thread and its continuation. A lot of native calls are involved. We hope that the JDK team will provide better documentation of the virtual threads implementation in the future.
 
-## 8. Don't use `ThreadLocal` and Thread Pools
-
-When using threads before Java 19 and Project Loom, creating a thread using the constructor was relatively uncommon. Instead, we preferred to use a thread pool or an executor service configured with a thread pool. In fact, those threads were what we now call platform threads, and the reason was that creating such threads was quite expensive operation.
-
-As we said at the beginning of this article, with virtual threads, it's not the case anymore. Creating a virtual thread is very cheap, both in space and time. Also, they were designed with the idea of using a different virtual thread for each request. So, it would be better to use a thread pool or an executor service to create virtual threads.
-
-The possible high number of virtual threads created by an application is why using `ThreadLocal` with virtual threads is not a good idea.
-
-A `ThreadLocal` allows us to store data accessible only by a specific thread. Let's see an example. First of all, we want to create a `ThreadLocal` that holds a `String`:
-
-```java
-static ThreadLocal<String> context = new ThreadLocal<>();
-```
-Then, we create two different platform threads that use both the `ThreadLocal`:
-
-```java
-@SneakyThrows
-static void platformThreadLocal() {
-  var thread1 = Thread.ofPlatform().name("thread-1").start(() -> {
-    context.set("thread-1");
-    sleep(Duration.ofSeconds(1L));
-    log("Hey, my name is " + context.get());
-  });
-  var thread2 = Thread.ofPlatform().name("thread-2").start(() -> {
-    context.set("thread-2");
-    sleep(Duration.ofSeconds(1L));
-    log("Hey, my name is " + context.get());
-  });
-  thread1.join();
-  thread2.join();
-}
-```
-
-If we run the above function, the output is:
-
-```text
-14:57:05.334 [thread-2] INFO in.rcard.virtual.threads.App - Thread[#22,thread-2,5,main] | Hey, my name is thread-2
-14:57:05.334 [thread-1] INFO in.rcard.virtual.threads.App - Thread[#21,thread-1,5,main] | Hey, my name is thread-1
-```
-
-As we can see, each thread stores a different value in the `ThreadLocal`, which is not accessible to other threads. The thread called `thread-1` retrieves the value `thread-1` from the `ThreadLocal`; The thread `thread-2` retrieves the value `thread-2` instead. There is no race condition at all.
-
-The same properties of `ThreadLocal` still stand also when we speak about virtual threads. In fact, we can replicate the same example above using virtual threads, and the result will be the same:
-
-```java
-@SneakyThrows
-static void virtualThreadLocal() {
-  var virtualThread1 = Thread.ofVirtual().name("thread-1").start(() -> {
-    context.set("thread-1");
-    sleep(Duration.ofSeconds(1L));
-    log("Hey, my name is " + context.get());
-  });
-  var virtualThread2 = Thread.ofVirtual().name("thread-2").start(() -> {
-    context.set("thread-2");
-    sleep(Duration.ofSeconds(1L));
-    log("Hey, my name is " + context.get());
-  });
-  virtualThread1.join();
-  virtualThread2.join();
-}
-```
-
-As we might expect, the output is very similar to the previous one:
-
-```text
-15:08:37.142 [thread-1] INFO in.rcard.virtual.threads.App - VirtualThread[#21,thread-1]/runnable@ForkJoinPool-1-worker-1 | Hey, my name is thread-1
-15:08:37.142 [thread-2] INFO in.rcard.virtual.threads.App - VirtualThread[#23,thread-2]/runnable@ForkJoinPool-1-worker-2 | Hey, my name is thread-2
-```
-
-Nice. So, is it a good idea to use `ThreadLocal` with virtual threads? Well, no, it isn't. The reason is that virtual threads can be a lot, and each virtual thread will have its own `ThreadLocal`. This means that the memory footprint of the application will be very high. Moreover, the `ThreadLocal` will be useless in a one-thread-per-request scenario since data shouldn't be shared between different requests.
-
-However, some scenarios could be help use something similar to `ThreadLocal`. For this reason, Java 20, there will be introduced [scoped values](https://openjdk.org/jeps/429), which enable the sharing of immutable data within and across threads. However, this is a topic for another article.
-
-## 9. Conclusions
-
-Finally, we come to the end of this article. In the beginning, we introduced the reason behind the introduction of virtual threads in the JVM. Then, we saw how to create and use it with some examples. We also discuss some internals of the virtual threads implementations, such as the continuations. We made some examples of pinned threads, and finally, we saw how some old best practices are no longer valid when using virtual threads.
-
-Project Loom is still actively under development, and there are a lot of other exciting features in it. As we said, structural concurrency and scoped values are some of them. Project Loom will be a game changer in the Java world. This article will help you better understand virtual threads and how to use them.
-
-## 10. Appendix
+## 9. Appendix B: Maven Configuration
 
 As promised, here is the `pom.xml` file that we used to run the code in this article:
 
