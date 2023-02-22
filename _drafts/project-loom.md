@@ -849,7 +849,7 @@ As we said at the beginning of this article, with virtual threads, it's not the 
 
 The possible high number of virtual threads created by an application is why using `ThreadLocal` with virtual threads is not a good idea.
 
-A `ThreadLocal` is a construct allowing us to store data accessible only by a specific thread. Let's see an example. First of all, we want to create a `ThreadLocal` that holds a `String`:
+A `ThreadLocal` allows us to store data accessible only by a specific thread. Let's see an example. First of all, we want to create a `ThreadLocal` that holds a `String`:
 
 ```java
 static ThreadLocal<String> context = new ThreadLocal<>();
@@ -881,7 +881,7 @@ If we run the above function, the output is:
 14:57:05.334 [thread-1] INFO in.rcard.virtual.threads.App - Thread[#21,thread-1,5,main] | Hey, my name is thread-1
 ```
 
-As we can see, each thread stores a different value in the `ThreadLocal`, and the value is not accessible to other threads. The thread called `thread-1` retrieves the value `thread-1` from the `ThreadLocal`; The thread `thread-2` retrieves the value `thread-2` instead. There is no race condition at all.
+As we can see, each thread stores a different value in the `ThreadLocal`, which is not accessible to other threads. The thread called `thread-1` retrieves the value `thread-1` from the `ThreadLocal`; The thread `thread-2` retrieves the value `thread-2` instead. There is no race condition at all.
 
 The same properties of `ThreadLocal` still stand also when we speak about virtual threads. In fact, we can replicate the same example above using virtual threads, and the result will be the same:
 
@@ -910,9 +910,9 @@ As we might expect, the output is very similar to the previous one:
 15:08:37.142 [thread-2] INFO in.rcard.virtual.threads.App - VirtualThread[#23,thread-2]/runnable@ForkJoinPool-1-worker-2 | Hey, my name is thread-2
 ```
 
-Nice. So, is it a good idea to use `ThreadLocal` with virtual threads? Well, no, it isn't. The reason is that virtual threads can be a lot, and each virtual thread will have its own `ThreadLocal`. This means that the memory footprint of the application will be very high. Moreover, in a on-thread-per-request scenario, the `ThreadLocal` will be useless, since it shouldn't be any sharing of data between different requests.
+Nice. So, is it a good idea to use `ThreadLocal` with virtual threads? Well, no, it isn't. The reason is that virtual threads can be a lot, and each virtual thread will have its own `ThreadLocal`. This means that the memory footprint of the application will be very high. Moreover, in a one-thread-per-request scenario, the `ThreadLocal` will be useless since there shouldn't be any data sharing between different requests.
 
-However, there could be some scenario where the use of something similar to `ThreadLocal` could be useful. For this reason, in Java 20, there will be introduced [scoped values](https://openjdk.org/jeps/429), which enable the sharing of immutable data within and across threads. However, this is a topic for another article.
+However, some scenarios could be where using something similar to `ThreadLocal` could be helpful. For this reason, Java 20, there will be introduced [scoped values](https://openjdk.org/jeps/429), which enable the sharing of immutable data within and across threads. However, this is a topic for another article.
 
 ## 9. Conclusions
 
