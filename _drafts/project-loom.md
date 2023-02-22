@@ -916,9 +916,9 @@ However, some scenarios could be where using something similar to `ThreadLocal` 
 
 ## 9. Conclusions
 
-Finally, we come to the end of this article. At the beginning, we introduced the reason behind the introduction of virtual threads in the JVM. Then, we saw how to create and use it with some examples. We also discuss of some internals of the virtual threads implementations, such as the continuations. We made some example of pinned threads, and, finally, we saw how some old best practices are not valid anymore when using virtual threads.
+Finally, we come to the end of this article. In the beginning, we introduced the reason behind the introduction of virtual threads in the JVM. Then, we saw how to create and use it with some examples. We also discuss some internals of the virtual threads implementations, such as the continuations. We made some examples of pinned threads, and finally, we saw how some old best practices are no longer valid when using virtual threads.
 
-Project Loom is still actively under development, and there are a lot of other interesting features in it. As we said, structural concurrency, and scoped values to cite some of them. We firmly believe that Project Loom will be a game changer in the Java world. We hope that this article will help you to understand better the virtual threads and how to use them. 
+Project Loom is still actively under development, and there are a lot of other exciting features in it. As we said, structural concurrency and scoped values are some of them. Project Loom will be a game changer in the Java world. This article will help you better understand virtual threads and how to use them.
 
 ## 10. Appendix
 
