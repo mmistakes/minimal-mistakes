@@ -269,6 +269,7 @@ defaults:
       related: true
       show_date : true
       mathjax: true
+      use_math : true
       sidebar_main: true
       toc_ads: true
       toc_sticky : true
