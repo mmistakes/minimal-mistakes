@@ -3,7 +3,7 @@ title: 'Home'
 layout: single
 author_profile: true
 excerpt: 'About me'
-last_modified_at: 14-12-2022
+last_modified_at: 22-02-2023
 header:
   overlay_image: /assets/images/home_banner.jpg
   overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
