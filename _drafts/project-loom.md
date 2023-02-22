@@ -4,12 +4,12 @@ date: 2023-01-30
 header:
     image: "/images/blog cover.jpg"
 tags: []
-excerpt: "TODO"
+excerpt: "Project Loom and virtual threads promise to bring modern concurrency paradigms that we already found in Kotlin (coroutines) and Scala (Cats Effect and ZIO fibers) in Java. They are still in preview, but we can already enjoy them."
 ---
 
 Version 19 of Java came at the end of 2022, bringing us a lot of exciting stuff. One of the coolest is the preview of some hot topics concerning Project Loom: _virtual threads_ ([JEP 425](https://openjdk.org/jeps/425)) and _structured concurrency_ ([JEP 428](https://openjdk.org/jeps/428)). Whereas still in a preview phase (to tell the truth, structured concurrency is still in the incubator module), the two JEPs promise to bring modern concurrency paradigms that we already found in Kotlin (coroutines) and Scala (Cats Effect and ZIO fibers) also in the mainstream language of the JVM: The Java programming language.
 
-Without further ado, let's first introduce virtual threads. As we said, both projects are still evolving, so the final version of the features might differ from what we will see here. The following articles will focus on structured concurrency and other cool features of Project Loom.
+Without further ado, let's first introduce virtual threads. As we said, both projects are still evolving, so the final version of the features might differ from what we will see here. Future articles to come will focus on structured concurrency and other cool features of Project Loom.
 
 ## 1. Setup
 
@@ -64,9 +64,9 @@ At the end of the article, we will give an example of a Maven configuration with
 
 For people who already follow us, we asked the same question in the article on [Kotlin Coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/). However, it is essential to briefly introduce the problem virtual threads are trying to solve.
 
-The JVM is a multithreaded environment. As we may know, the JVM gives us an abstraction of OS threads through the type `java.lang.Thread`. Until Project Loom, every thread in the JVM is just a little wrapper around an OS thread. We can call the such implementation of the `java.lang.Thread` type as _platform thread_.
+The JVM is a multithreaded environment. As we may know, the JVM gives us an abstraction of OS threads through the type `java.lang.Thread`. **Until Project Loom, every thread in the JVM is just a little wrapper around an OS thread**. We can call the such implementation of the `java.lang.Thread` type as _platform thread_.
 
-The problem with platform threads is that they are expensive from a lot of points of view. First, they are costly to create. Whenever a platform thread is made, the OS must allocate a large amount of memory (megabytes) in the stack to store the thread context, native, and Java call stacks. This is due to the not resizable nature of the stack. Moreover, whenever the scheduler preempts a thread from execution, this enormous amount of memory must be moved around.
+The problem with platform threads is that they are expensive from a lot of points of view. First, they are costly to create. Whenever a platform thread is made, the **OS must allocate a large amount of memory (megabytes) in the stack to store the thread context, native, and Java call stacks**. This is due to the not resizable nature of the stack. Moreover, whenever the scheduler preempts a thread from execution, this enormous amount of memory must be moved around.
 
 As we can imagine, this is a costly operation, in space and time. In fact, the massive size of the stack frame limits the number of threads that can be created. We can reach an `OutOfMemoryError` quite easily in Java, continually instantiating new platform threads till the OS runs out of memory:
 
@@ -94,7 +94,7 @@ Exception in thread "main" java.lang.OutOfMemoryError: unable to create native t
 
 The above example shows how we wrote concurrent programs that were constrained until now.
 
-Java has been a language that has tried to strive for simplicity since its inception. In concurrent programming, we should write programs as if they were sequential. In fact, the more straightforward way to write concurrent programs in Java is to create a new thread for every concurrent task. This model is called _one task per thread_.
+Java has been a language that has tried to strive for simplicity since its inception. In concurrent programming, we should write programs as if they were sequential. In fact, **the more straightforward way to write concurrent programs in Java is to create a new thread for every concurrent task**. This model is called _one task per thread_.
 
 In such an approach, every thread can use its own local variable to store information. The need to share mutable states among threads, the well-known "hard part" of concurrent programming, drastically decreases. However, using such an approach, we can easily reach the limit of the number of threads we can create.
 
@@ -102,17 +102,17 @@ As we said in the article concerning Kotlin Coroutines, many approaches have ris
 
 The reactive programming initiatives try to overcome the lack of thread resources by building a custom DSL to declaratively describe the data flow and let the framework handle concurrency. However, DSL is tough to understand and use, losing the simplicity Java tries to give us.
 
-Also, the async/await approach, such as Kotlin coroutines, has its own problems. Even though it aims to model the _one task per thread_ approach, it can't rely on any native JVM construct. For example, Kotlin coroutines based the whole story on _suspending functions_, i.e., functions that can suspend a coroutine. However, the suspension is wholly based upon non-blocking IO, which we can achieve using libraries based on Netty. However, not every task can be expressed in terms of non-blocking IO. Ultimately, we must divide our program into two parts: one based on non-blocking IO (suspending functions) and one that does not. This is a challenging task; it takes work to do it correctly. Moreover, we lose again the simplicity we want in our programs.
+Also, the async/await approach, such as Kotlin coroutines, has its own problems. Even though it aims to model the _one task per thread_ approach, it can't rely on any native JVM construct. For example, Kotlin coroutines based the whole story on _suspending functions_, i.e., functions that can suspend a coroutine. However, the suspension is wholly based upon non-blocking IO, which we can achieve using libraries based on Netty, but not every task can be expressed in terms of non-blocking IO. Ultimately, we must divide our program into two parts: one based on non-blocking IO (suspending functions) and one that does not. This is a challenging task; it takes work to do it correctly. Moreover, we lose again the simplicity we want in our programs.
 
 The above are reasons why the JVM community is looking for a better way to write concurrent programs. Project Loom is one of the attempts to solve the problem. So, let's introduce the first brick of the project: _virtual threads_.
 
 ## 3. How to Create a Virtual Thread
 
-As we said, virtual threads are a new type of thread that tries to overcome the resource limitation problem of platform threads. They are an alternate implementation of the `java.lang.Thread` type, which stores the stack frames in the heap (garbage-collected memory) instead of the stack.
+As we said, virtual threads are a new type of thread that tries to overcome the resource limitation problem of platform threads. They are an alternate implementation of the `java.lang.Thread` type, which **stores the stack frames in the heap (garbage-collected memory) instead of the stack**.
 
 Therefore, the initial memory footprint of a virtual thread tends to be very small, a few hundred bytes instead of megabytes. In fact, the stack chunk can resize at every moment. So, we don't need to allocate a gazillion of memory to fit every possible use case.
 
-Creating a new virtual thread is very easy. We can use the new factory method `ofVirtual` on the `java.lang.Thread` type. In detail, we create a utility function to create a virtual thread with a given name:
+Creating a new virtual thread is very easy. We can use the new factory method `ofVirtual` on the `java.lang.Thread` type. Let's first define a utility function to create a virtual thread with a given name:
 
 ```java
 private static Thread virtualThread(String name, Runnable runnable) {
@@ -136,7 +136,7 @@ static Thread bathTime() {
 }
 ```
 
-Another task that we do every morning is to boil some water to make tea:
+Another task that we do is to boil some water to make tea:
 
 ```java
 static Thread boilingWater() {
@@ -162,7 +162,7 @@ static void concurrentMorningRoutine() {
 }
 ```
 
-We joined both virtual threads, so we can be sure that the main thread will not terminate before the two virtual threads. Let's run the program:
+We joined both virtual threads, so we can be sure that the `main` thread will not terminate before the two virtual threads. Let's run the program:
 
 ```
 08:34:46.217 [boilWater] INFO in.rcard.virtual.threads.App - VirtualThread[#21,boilWater]/runnable@ForkJoinPool-1-worker-1 | I'm going to take a bath
@@ -171,7 +171,7 @@ We joined both virtual threads, so we can be sure that the main thread will not 
 08:34:47.231 [boilWater] INFO in.rcard.virtual.threads.App - VirtualThread[#23,boilWater]/runnable@ForkJoinPool-1-worker-2 | I'm done with the water
 ```
 
-The output is what we expected. The two virtual threads run concurrently, and the main thread waits for them to terminate. We'll explain all the information printed by the log in a while. For now, let's focus solely on thread name and execution interleaving.
+The output is what we expected. The two virtual threads run concurrently, and the `main` thread waits for them to terminate. We'll explain all the information printed by the log in a while. For now, let's focus solely on thread name and execution interleaving.
 
 Besides the factory method, we can use a new implementation of the `java.util.concurrent.ExecutorService` tailored on virtual threads, called `java.util.concurrent.ThreadPerTaskExecutor`. Its name is quite evocative. It creates a new virtual thread for every task submitted to the executor:
 
@@ -199,7 +199,7 @@ static void concurrentMorningRoutineUsingExecutors() {
 }
 ```
 
-The way we start threads is a little different since we're using an `ExecutorService`. Every call to the `submit` method requires a `Runnable` or a `Callable<T>` instance. The `submit` returns a  `Future<T>` instance that we can use to join the underlying virtual thread.
+The way we start threads is a little different since we're using the `ExecutorService`. Every call to the `submit` method requires a `Runnable` or a `Callable<T>` instance. The `submit` returns a  `Future<T>` instance that we can use to join the underlying virtual thread.
 
 The output is more or less the same as before:
 
@@ -210,7 +210,7 @@ The output is more or less the same as before:
 08:42:10.175 [] INFO in.rcard.virtual.threads.App - VirtualThread[#23]/runnable@ForkJoinPool-1-worker-2 | I'm done with the water
 ```
 
-As we can see, threads created this way do not have a name, and debugging errors without a name can be difficult. We can overcome this problem just by using the `ThreadPerTaskExecutor` factory method that takes a `ThreadFactory` as a parameter:
+As we can see, threads created this way do not have a name, and debugging errors without a name can be difficult. We can overcome this problem just by using the `newThreadPerTaskExecutor` factory method that takes a `ThreadFactory` as a parameter:
 
 ```java
 @SneakyThrows
@@ -910,9 +910,9 @@ As we might expect, the output is very similar to the previous one:
 15:08:37.142 [thread-2] INFO in.rcard.virtual.threads.App - VirtualThread[#23,thread-2]/runnable@ForkJoinPool-1-worker-2 | Hey, my name is thread-2
 ```
 
-Nice. So, is it a good idea to use `ThreadLocal` with virtual threads? Well, no, it isn't. The reason is that virtual threads can be a lot, and each virtual thread will have its own `ThreadLocal`. This means that the memory footprint of the application will be very high. Moreover, in a one-thread-per-request scenario, the `ThreadLocal` will be useless since there shouldn't be any data sharing between different requests.
+Nice. So, is it a good idea to use `ThreadLocal` with virtual threads? Well, no, it isn't. The reason is that virtual threads can be a lot, and each virtual thread will have its own `ThreadLocal`. This means that the memory footprint of the application will be very high. Moreover, the `ThreadLocal` will be useless in a one-thread-per-request scenario since data shouldn't be shared between different requests.
 
-However, some scenarios could be where using something similar to `ThreadLocal` could be helpful. For this reason, Java 20, there will be introduced [scoped values](https://openjdk.org/jeps/429), which enable the sharing of immutable data within and across threads. However, this is a topic for another article.
+However, some scenarios could be help use something similar to `ThreadLocal`. For this reason, Java 20, there will be introduced [scoped values](https://openjdk.org/jeps/429), which enable the sharing of immutable data within and across threads. However, this is a topic for another article.
 
 ## 9. Conclusions
 
