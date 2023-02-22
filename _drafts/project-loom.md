@@ -254,9 +254,9 @@ How do virtual threads work? The figure below shows the relationship between vir
 
 ![Java Virtual Threads Representation](/images/virtual-threads/java-virtual-threads.png)
 
-The JVM maintains a pool of _platform threads_, created and maintained by a dedicated `ForkJoinPool`. Initially, the number of platform threads equals the number of CPU cores, and it cannot increase more than 256.
+**The JVM maintains a pool of platform threads**, created and maintained by a dedicated `ForkJoinPool`. Initially, the number of platform threads equals the number of CPU cores, and it cannot increase more than 256.
 
-For each created virtual thread, the JVM schedules its execution on a platform thread, temporarily copying the stack chunk for the virtual thread from the heap to the stack of the platform thread. We said that the platform thread becomes the _carrier thread_ of the virtual thread.
+For each created virtual thread, the JVM schedules its execution on a platform thread, temporarily copying the stack chunk for the virtual thread from the heap to the stack of the platform thread. **We said that the platform thread becomes the carrier thread of the virtual thread**.
 
 The logs we've seen so far showed us precisely the above situation. Let's analyze one of them:
 
@@ -264,11 +264,11 @@ The logs we've seen so far showed us precisely the above situation. Let's analyz
 08:44:35.390 [routine-1] INFO in.rcard.virtual.threads.App - VirtualThread[#23,routine-1]/runnable@ForkJoinPool-1-worker-2 | I'm going to boil some water
 ```
 
-The exciting part is on the right side of the first `-` character. The first part identifies the virtual thread in execution: `VirtualThread[#23,routine-1]` reports the thread identifier, the `#23` part, and the thread name. Then, we have the indication on which carrier thread the virtual thread executes: `ForkJoinPool-1-worker-2` represents the platform thread called `worker-2` of the default `ForkJoinPool`, called `ForkJoinPool-1`.
+The exciting part is on the left side of the `|` character. The first part identifies the virtual thread in execution: `VirtualThread[#23,routine-1]` reports the thread identifier, the `#23` part, and the thread name. Then, we have the indication on which carrier thread the virtual thread executes: `ForkJoinPool-1-worker-2` represents the platform thread called `worker-2` of the default `ForkJoinPool`, called `ForkJoinPool-1`.
 
-The first time the virtual thread blocks on a blocking operation, the carrier thread is released, and the stack chunk of the virtual thread is copied back to the heap. This way, the carrier thread can execute any other eligible virtual threads. Once the blocked virtual thread finishes the blocking operation, the scheduler schedules it again for execution. The execution can continue on the same carrier thread or a different one.
+**The first time the virtual thread blocks on a blocking operation, the carrier thread is released**, and the stack chunk of the virtual thread is copied back to the heap. This way, the carrier thread can execute any other eligible virtual threads. Once the blocked virtual thread finishes the blocking operation, the scheduler schedules it again for execution. The execution can continue on the same carrier thread or a different one.
 
-We can easily see that the number of available carrier threads is equal to the number of CPU cores by default running a program that creates and starts many virtual threads greater than the number of cores. On a Mac, you can retrieve the number of cores by running the following command:
+We can easily see that the number of available carrier threads is equal to the number of CPU cores by default running a program that creates and starts a number of virtual threads greater than the number of cores. On a Mac, you can retrieve the number of cores by running the following command:
 
 ```bash
 sysctl hw.physicalcpu hw.logicalcpu
