@@ -101,3 +101,5 @@ Just go to the address from a computer on a same network and login using the roo
 
 - https://proxmox.com/
 - https://forum.proxmox.com/
+
+#proxmox #foss

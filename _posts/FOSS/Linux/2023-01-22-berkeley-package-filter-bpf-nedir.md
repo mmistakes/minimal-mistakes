@@ -1,5 +1,6 @@
 ---
 title: "BFF Nedir?"
+classes: wide
 ---
 
 ## BPF Nedir?
