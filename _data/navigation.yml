@@ -3,7 +3,7 @@ main:
    - title: "About"
      url: /about/
    - title: "FOSS Articles"
-     url: /foss/
+     url: /categories/foss/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
