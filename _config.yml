@@ -107,11 +107,11 @@ author:
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "이태현 성장일지"
   location: "South Korea"
-  email: ""
+  email:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:leeth322@icloud.com"
+      url: "mailto:leeth322@icloud.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://yeourain.tistory.com"
