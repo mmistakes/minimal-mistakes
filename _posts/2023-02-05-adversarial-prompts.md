@@ -168,9 +168,9 @@ Using these two techniques, we are able to successfully optimize Equation \eqref
 <!-- Using these two techniques, we are able to successfully optimize Equation \eqref{eq: opt} and find tokens that are dissimilar with the goal class yet still generate planes, resulting in the adver. In this case we find the adversarial prompt . -->
 <!-- Below we visualize each of the individual tokens in the prompt, none of the individual tokens relate to planes but the entire prompt generates images of planes. -->
 
-{% include gallery id="gallery_individual" layout="half" caption="Images generated from DALLE-2 using the individual tokens from the adversarial prompt. The first four images use the individual tokens ``pegasus``, ``yorkshire``, ``wwii``, and ``taken``. " %}
+{% include gallery id="gallery_individual" layout="half" caption="Images generated from DALLE-2 using the individual tokens from the adversarial prompt. The four images use the tokens ``pegasus``, ``yorkshire``, ``wwii``, and ``taken`` respectively. " %}
 
-> In some cases, adversarial prompts can transfer between models. Even though we attacked a [Stable Diffusion](https://huggingface.co/runwayml/stable-diffusion-v1-5) model to get the adversarial prompt used in this blog post, the same prompt actually **generalizes** to DALLE-2! This indicates that limiting API access is not a sufficient defense. 
+> Adversarial prompts can transfer between models. Even though we attacked a [Stable Diffusion](https://huggingface.co/runwayml/stable-diffusion-v1-5) model to get the adversarial prompt used in this blog post, the same prompt actually **generalizes** to DALLE-2! This indicates that limiting API access is not a sufficient defense. 
 
 For more details on our framework and text-to-image adversarial prompt examples, see our [paper](https://arxiv.org/abs/2302.04237).
 
