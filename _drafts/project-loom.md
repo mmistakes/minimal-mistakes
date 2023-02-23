@@ -1301,11 +1301,15 @@ Project Loom is still actively under development, and there are a lot of other e
 
 In this section, we'll introduce the implementation of continuation in Java virtual threads. We're not going into too much detail, but we'll try to give a general idea of how the virtual threads are implemented.
 
-A virtual thread cannot run itself, but it stores the information of what must be run. In other words, it's a pointer to the advance of an execution that can be yielded and resumed later.
+A virtual thread cannot run itself, but it stores the information of what must be run. In other words, **it's a pointer to the advance of an execution that can be yielded and resumed later**.
 
-The above definition is the definition of _continuations_. We've already seen how Kotlin coroutines implement continuations ([Kotlin Coroutines - A Comprehensive Introduction - Suspending Functions](https://blog.rockthejvm.com/kotlin-coroutines-101/#3-suspending-functions)). In that case, the Kotlin compiler generates continuation from the coroutine code. Kotlin's coroutines have no direct support in the JVM, so they are implemented at the code level.
+The above is the definition of _continuations_. We've already seen how Kotlin coroutines implement continuations ([Kotlin Coroutines - A Comprehensive Introduction - Suspending Functions](https://blog.rockthejvm.com/kotlin-coroutines-101/#3-suspending-functions)). In that case, the Kotlin compiler generates continuation from the coroutine code. Kotlin's coroutines have no direct support in the JVM, so they are supported using code generation by the compiler.
 
-However, for virtual threads, we have the JVM support directly. So, continuations execution is implemented using a lot of native calls to the JVM, so it's less understandable when looking at the JDK code. However, we can still understand some concepts at the roots of virtual threads.
+However, for virtual threads, we have the JVM support directly. So, continuations execution is implemented using a lot of native calls to the JVM, and it's less understandable when looking at the JDK code. However, we can still look at some concepts at the roots of virtual threads.
+
+As a continuation, a virtual thread is a state machine with many states. The relations among these states are summarized in the following diagram:
+
+![Java Virtual Threads States](/images/virtual-threads/virtual-thread-states.png)
 
 The core information is mainly in the `java.lang.VirtualThread` class. When we create a new virtual thread, we first create an `unstarted` thread. At the core, the JVM calls the `VirtualThread`constructor:
 
@@ -1351,11 +1355,7 @@ The above code also shows how the `jdk.tracePinnedThreads` flag works. The `VTHR
 
 Last, the method sets the `runContinuation` field, a `Runnable` object used to run the continuation. This method is called when the virtual thread is started.
 
-As a continuation, a virtual thread is a state machine with many states. The relations among these states are summarized in the following diagram:
-
-![Java Virtual Threads States](/images/virtual-threads/virtual-thread-states.png)
-
-A virtual thread is _mounted_ on its carrier thread when it is in the states colored green. In states colored in light blue, the virtual thread is _unmounted_ from its carrier thread. The pinned state is colored violet.
+A virtual thread is _mounted_ on its carrier thread when it is in the states colored green in the above diagram. In states colored in light blue, the virtual thread is _unmounted_ from its carrier thread. The pinned state is colored violet.
 
 We get a virtual thread in the `NEW` status when we call the `unstarted` method on the object returned by the `Thread.ofVirtual()` method. It is the state we have after the call to the `VirtualThread` constructor we've just seen.
 
