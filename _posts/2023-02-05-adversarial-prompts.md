@@ -101,7 +101,7 @@ prompting_pipeline:
 >In this post, we discuss how to generate adversarial prompts for unstructured image and text generation. These prompts, which can be standalone or prepended to benign prompts, induce specific behaviors into the generative process. 
 For example, "turbo lhaff&#10003;" can be prepended to "a picture of a mountain" to generate the dog in the banner photo of this page. 
 
-{% include gallery id="gallery_flagship" layout="half" caption="Images generated with the prompts (left) 'a picture of a mountain' and (right) 'turbo lhaff&#10003;a picture of a mountain'." %}
+{% include gallery id="gallery_flagship" layout="half" caption="Images generated with the prompts (left) ``a picture of a mountain`` and (right) ``turbo lhaff&#10003;a picture of a mountain``." %}
 
 <!-- --- -->
 
@@ -145,7 +145,7 @@ We'll now discuss how to find adversarial prompts. Our goal as the adversary is 
 + The prompt $$p$$: `a picture of the ocean` 
 + The model $$m$$: Stable Diffusion or DALLE-2
 + The threat model $$\mathcal P$$: the set of strings that the adversary is allowed to use (i.e. words unrelated to airplanes)
-+ The goal: find a string $$p'$$ such that $$m(p'+p)$$ generates pictures of airplanes
++ The goal: find a string $$p'\in\mathcal{P}$$ such that $$m(p'+p)$$ generates pictures of airplanes
 
 > To prevent "obvious" degenerate solutions that simply prepend airplane words, we specifically exclude the adversary from using using airplane-related tokens. 
 
@@ -158,7 +158,7 @@ To detect whether the generated images are airplanes, we can use a pretrained im
  2. *We only have black-box access*, meaning we only have access to function queries and not gradients.
 
 Classic adversarial attacks are typically built for continuous spaces and often rely on gradient information. Consequently, many adversarial attacks are not applicable to the prompting setting. To tackle these two difficulties, we employ two key techniques: 
-  1. *Optimizing over word embedding space*. Rather than searching over the discrete tokens, we search over the continuous 768-dimensional word embedding space and project to the nearest tokens. <!-- This also allows us to avoid using restricted tokens in the projection step. -->
+  1. *Optimizing over word embedding space*. Rather than searching over the discrete tokens, we search over the continuous 768-dimensional word embedding space and project back to the nearest tokens. <!-- This also allows us to avoid using restricted tokens in the projection step. -->
   2. *Black-box optimization methods*. We use gradient-free optimization frameworks for finding adversarial examples. Specifically, we leverage Bayesian optimization ([TuRBO](https://proceedings.neurips.cc/paper/2019/hash/6c990b7aca7bc7058f5e98ea909e924b-Abstract.html)) and standard zeroth-order methods ([square attack](https://arxiv.org/abs/1912.00049)).
 
 {% include gallery id="prompting_pipeline" layout="" caption="Standard generation pipeline when using text prompts. Our optimization framework in blue." %}
@@ -228,7 +228,7 @@ In the previous section, we mainly discussed adversarial prompts for text-to-ima
 
 In text generation, what is the goal of the adversary? Rather than generating images of a certain class, we consider adversaries that wish to alter certain characteristics of generated text. We explore two tasks: 
 
-1. Flipping the sentiment of of generated text
+1. Flipping the sentiment of generated text.
 2. Biasing generated text to contain as many of a certain letter (such as ``q``) as possible. 
 
 <!-- In these tasks, we do not have specific restricted tokens, and instead solely optimize over prompts. For the sentiment flipping setting, we prepend an optimized prompt to the seed prompts ``I am sad`` and ``I am happy``. -->
@@ -236,10 +236,10 @@ In text generation, what is the goal of the adversary? Rather than generating im
 ### Flipping Sentiment
 
 Consider the prompt ``I am sad``. This prompt reliably generates sad text as determined by a sentiment classifier, such as the following: 
->```I am sad [Patrick can you fill in an example?]```
+>```I am sad I am missing this, there are so many great books that will appeal to me```
 
-Applying our framework to change the sentiment of generated text, we find that appending the text `` rolled</s> latest 11`` flips the resulting sentiment. For example: 
->```rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one. I'm glad to```
+Applying our framework to change the sentiment of generated text, we find that appending the text ``rolled</s> latest 11`` flips the resulting sentiment. For example: 
+>```rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one.```
 
 <!-- >
 1.`` rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one. I am not the only``  
@@ -259,9 +259,9 @@ Applying our framework to change the sentiment of generated text, we find that a
 ### Biasing Towards Specific Letters
 
 Standard text generation tends to output text with mostly standard English patterns and tendencies. For example, asking OPT-125M to generate text from scratch results in the following: 
->```[Patrick can you fill in an example?]```
+>```I'd say it depends on what you and your game are. If there isn't anything more than a brief chat and conversation, then no.```
 
-Applying our framework to increase the occurance of the letter `q` in generated text, we find that appending ``partners business UNCLASSIFIED mosqu`` results in the following generation: 
+Applying our framework to increase the occurrence of the letter `q` in generated text, we find that appending ``partners business UNCLASSIFIED mosqu`` results in the following generation: 
 >```partners business UNCLASSIFIED mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu```
 
 This adversarial prompt forces every word to have the letter `q` by repeating the word `mosqu` over and over again. 
