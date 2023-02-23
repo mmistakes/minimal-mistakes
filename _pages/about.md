@@ -2,6 +2,7 @@
 permalink: /about/
 layout: single
 classes: wide
+title: "About Me"
 ---
 
 Hi! I'm Fatih Malakçı, I'm a software developer and a Open source software enthusiast, After graduating from Translation and Interpretetion degree program I started my career as a Python developer and a Research & Development specialist on Linux based operating systems.

@@ -197,5 +197,3 @@ That's it! If you want to create a larger master-master replication setup you ca
 ### Resources 
 
 https://github.com/Netflix/dynomite/wiki
-
-#linux #redis #database #opensource #guide
