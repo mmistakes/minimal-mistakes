@@ -77,3 +77,7 @@ Natalie Maus:
 Jake Gardner:
   name             : "Jake Gardner"
   avatar           : https://jacobrgardner.github.io/images/me.jpg
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://jacobrgardner.github.io/"

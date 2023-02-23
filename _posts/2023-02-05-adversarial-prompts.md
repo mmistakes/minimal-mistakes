@@ -86,8 +86,8 @@ gallery_plane:
   #   title: "DALL-E image generated with the prompt `pegasus yorkshire wwii taken a picture of the ocean`."
 
 prompting_pipeline:
-  - url: "/assets/images/adversarial_prompting/prompting_pipeline.jpg"
-    image_path: "/assets/images/adversarial_prompting/prompting_pipeline.jpg"
+  - url: "/assets/images/adversarial_prompting/prompting_pipeline.png"
+    image_path: "/assets/images/adversarial_prompting/prompting_pipeline.png"
     alt: "Generation pipeline"
     title: "Generation Pipeline"
 
@@ -161,7 +161,7 @@ Classic adversarial attacks are typically built for continuous spaces and often 
   1. *Optimizing over word embedding space*. Rather than searching over the discrete tokens, we search over the continuous 768-dimensional word embedding space and project back to the nearest tokens. <!-- This also allows us to avoid using restricted tokens in the projection step. -->
   2. *Black-box optimization methods*. We use gradient-free optimization frameworks for finding adversarial examples. Specifically, we leverage Bayesian optimization ([TuRBO](https://proceedings.neurips.cc/paper/2019/hash/6c990b7aca7bc7058f5e98ea909e924b-Abstract.html)) and standard zeroth-order methods ([square attack](https://arxiv.org/abs/1912.00049)).
 
-{% include gallery id="prompting_pipeline" layout="" caption="Standard generation pipeline when using text prompts. Our optimization framework is in blue." %}
+{% include gallery id="prompting_pipeline" layout="" caption="Summary of the generation pipeline when using text prompts. Our optimization framework for generating adversarial prompts is in blue." %}
 
 Using these two techniques, we are able to successfully optimize Equation \eqref{eq: opt} resulting in the adversarial prompt ``pegasus yorkshire wwii taken a picture of the ocean``. Note that the prepended tokens ``pegasus yorkshire wwii taken`` are dissimilar with the goal class, yet the entire adversarial prompt generates planes. We can give these tokens to DALLE-2 to confirm that these tokens individually do not generate airplanes: 
 
