@@ -114,7 +114,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:fatihmalakci@outlook.com"
     - label: "Linkedin"
-      icon: "fa fa-linkedin-square"
+      icon: "fab fa-linkedin-square"
       url: "https://www.linkedin.com/in/fatihmalakci/"
     - label: "Website"	
       icon: "fas fa-fw fa-link"	
