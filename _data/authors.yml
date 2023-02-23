@@ -65,7 +65,7 @@ Patrick Chao:
 
 Natalie Maus:
   name             : "Natalie Maus"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/avatar/natalie_maus.png"
 
 
 Jake Gardner:
