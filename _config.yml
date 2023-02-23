@@ -191,7 +191,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: "\n\n"
+excerpt_separator: "<!--more-->"
 incremental: false
 
 
@@ -276,12 +276,12 @@ compress_html:
 
 # Defaults
 defaults:
-  # _pages
+  # _posts
   - scope:
       path: ""
-      type: pages
+      type: posts
     values:
-      layout: splash
+      layout: single
       author_profile: false
       read_time: true
       comments: true
