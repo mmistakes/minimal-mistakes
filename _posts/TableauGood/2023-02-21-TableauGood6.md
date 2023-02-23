@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "트리맵 차트 만들기"
+title:  "트리맵 차트"
 categories: Tableau
 tag: [Tableau]
 toc: true
