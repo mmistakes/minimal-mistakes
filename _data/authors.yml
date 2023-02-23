@@ -66,6 +66,12 @@ Patrick Chao:
 Natalie Maus:
   name             : "Natalie Maus"
   avatar           : "/assets/images/avatar/natalie_maus.png"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://sites.google.com/seas.upenn.edu/natalie-maus/home"
+  
+
 
 
 Jake Gardner:
