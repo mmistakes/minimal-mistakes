@@ -42,5 +42,3 @@ SELINUX=disabled
 SElinux should now be disabled, reboot the operating system for the changes to take effect.
 
 For enabling simply change the disabled to enforcing.
-
-#linux #opensource #guide
