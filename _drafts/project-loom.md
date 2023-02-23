@@ -1311,7 +1311,9 @@ As a continuation, a virtual thread is a state machine with many states. The rel
 
 ![Java Virtual Threads States](/images/virtual-threads/virtual-thread-states.png)
 
-The core information is mainly in the `java.lang.VirtualThread` class. When we create a new virtual thread, we first create an `unstarted` thread. At the core, the JVM calls the `VirtualThread`constructor:
+A virtual thread is _mounted_ on its carrier thread when it is in the states colored green in the above diagram. In states colored in light blue, the virtual thread is _unmounted_ from its carrier thread. The pinned state is colored violet.
+
+We get a virtual thread in the `NEW` status when we call the `unstarted` method on the object returned by the `Thread.ofVirtual()` method. The core information is mainly in the `java.lang.VirtualThread` class. At the core, the JVM calls the `VirtualThread`constructor:
 
 ```java
 // JDK core code
@@ -1354,10 +1356,6 @@ private static class VThreadContinuation extends Continuation {
 The above code also shows how the `jdk.tracePinnedThreads` flag works. The `VTHREAD_SCOPE` is a `ContinuationScope` object, a class used to group continuations. In other words, it's a way to group continuations related to each other. In our case, we have only one `ContinuationScope` object, the `VTHREAD_SCOPE` object. This object is used to group all the virtual threads.
 
 Last, the method sets the `runContinuation` field, a `Runnable` object used to run the continuation. This method is called when the virtual thread is started.
-
-A virtual thread is _mounted_ on its carrier thread when it is in the states colored green in the above diagram. In states colored in light blue, the virtual thread is _unmounted_ from its carrier thread. The pinned state is colored violet.
-
-We get a virtual thread in the `NEW` status when we call the `unstarted` method on the object returned by the `Thread.ofVirtual()` method. It is the state we have after the call to the `VirtualThread` constructor we've just seen.
 
 Once we call the `start` method, the virtual thread is moved to the `STARTED` status:
 
