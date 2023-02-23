@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "하이라이트 테이블 만들기"
+title:  "하이라이트 테이블"
 categories: Tableau
 tag: [Tableau]
 toc: true
