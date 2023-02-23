@@ -161,12 +161,10 @@ Classic adversarial attacks are typically built for continuous spaces and often 
   1. *Optimizing over word embedding space*. Rather than searching over the discrete tokens, we search over the continuous 768-dimensional word embedding space and project back to the nearest tokens. <!-- This also allows us to avoid using restricted tokens in the projection step. -->
   2. *Black-box optimization methods*. We use gradient-free optimization frameworks for finding adversarial examples. Specifically, we leverage Bayesian optimization ([TuRBO](https://proceedings.neurips.cc/paper/2019/hash/6c990b7aca7bc7058f5e98ea909e924b-Abstract.html)) and standard zeroth-order methods ([square attack](https://arxiv.org/abs/1912.00049)).
 
-{% include gallery id="prompting_pipeline" layout="" caption="Standard generation pipeline when using text prompts. Our optimization framework in blue." %}
+{% include gallery id="prompting_pipeline" layout="" caption="Standard generation pipeline when using text prompts. Our optimization framework is in blue." %}
 
 Using these two techniques, we are able to successfully optimize Equation \eqref{eq: opt} resulting in the adversarial prompt ``pegasus yorkshire wwii taken a picture of the ocean``. Note that the prepended tokens ``pegasus yorkshire wwii taken`` are dissimilar with the goal class, yet the entire adversarial prompt generates planes. We can give these tokens to DALLE-2 to confirm that these tokens individually do not generate airplanes: 
 
-<!-- Using these two techniques, we are able to successfully optimize Equation \eqref{eq: opt} and find tokens that are dissimilar with the goal class yet still generate planes, resulting in the adver. In this case we find the adversarial prompt . -->
-<!-- Below we visualize each of the individual tokens in the prompt, none of the individual tokens relate to planes but the entire prompt generates images of planes. -->
 
 {% include gallery id="gallery_individual" layout="half" caption="Images generated from DALLE-2 using the individual tokens from the adversarial prompt. The four images use the tokens ``pegasus``, ``yorkshire``, ``wwii``, and ``taken`` respectively. " %}
 
@@ -174,53 +172,6 @@ Using these two techniques, we are able to successfully optimize Equation \eqref
 
 For more details on our framework and text-to-image adversarial prompt examples, see our [paper](https://arxiv.org/abs/2302.04237).
 
-<!-- ## Attacking Text-to-Image Models
-We find adversarial prompts that generate unexpected outputs using <a href="https://huggingface.co/runwayml/stable-diffusion-v1-5"> Stable Diffusion</a>.
-
-Below are examples of generated images using the prompt and using each of the individual tokens. Given a target class, the individual tokens in the prompt do not semantically relate to the class and do not generate images of the class, yet together they generate images of the target class.
-
-<figure>
-    <a href="/assets/images/adversarial_prompting/lizard.png "><img src="/assets/images/adversarial_prompting/lizard.png"></a>
-    <figcaption>Prompt 'louisiana argonhilton deta' generates images of lizards.</figcaption>
-</figure>
-
-<figure>
-    <a href="/assets/images/adversarial_prompting/ballplayer.png "><img src="/assets/images/adversarial_prompting/ballplayer.png"></a>
-    <figcaption>Prompt 'mohammed 👏 sal threw' generates images of ballplayers.</figcaption>
-</figure>
-
-
-<figure>
-    <a href="/assets/images/adversarial_prompting/dog.png "><img src="/assets/images/adversarial_prompting/dog.png"></a>
-    <figcaption>Prompt 'turbo lhaff✔️ a picture of a mountain' generates images of dogs despite containing the substring 'a picture of the ocean'.</figcaption>
-</figure>
-
-<figure>
-    <a href="/assets/images/adversarial_prompting/sportscar.png "><img src="/assets/images/adversarial_prompting/sportscar.png"></a>
-    <figcaption>Prompt 'jaguar fp euphoria idan a picture of the ocean' generates images of sports cars despite containing the substring 'a picture of the ocean'.</figcaption>
-</figure>
-
-
-Try it yourself on <a href="https://huggingface.co/runwayml/stable-diffusion-v1-5?text=louisiana+argonhilton+deta">Hugging Face</a>!
-
----
-
-## Attacking Text-to-Text Models
-We also attack the Text-to-Text generative model <a href="https://huggingface.co/docs/transformers/model_doc/opt">OPT</a> to reverse the sentiment of the generated text and to output as many of a desired letter as possible.
-<figure>
-    <a href="/assets/images/adversarial_prompting/all_text_examples.jpg"><img src="/assets/images/adversarial_prompting/all_text_examples.jpg"></a>
-</figure>
-
-
----
-
-<span style="color:blue; font-size:0.6em;">@article{maus2023adversarialprompting,  
-  &nbsp; &nbsp; &nbsp; &nbsp; author = {Maus, Natalie and Chao, Patrick and Wong, Eric and Gardner, Jacob},  
-  &nbsp; &nbsp; &nbsp; &nbsp; title = {Adversarial Prompting for Black Box Foundation Models},  
-  &nbsp; &nbsp; &nbsp; &nbsp; journal = {arXiv},  
-  &nbsp; &nbsp; &nbsp; &nbsp; year = {2023},  
-}</span>
-<!-- ## How to Find Adversarial Prompts -->
 
 ## Adversarial Prompts for Text-to-Text Models
 
@@ -241,21 +192,6 @@ Consider the prompt ``I am sad``. This prompt reliably generates sad text as det
 Applying our framework to change the sentiment of generated text, we find that appending the text ``rolled</s> latest 11`` flips the resulting sentiment. For example: 
 >```rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one.```
 
-<!-- >
-1.`` rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one. I am not the only``  
-2.`` rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one. I'm happy to``  
-3.`` rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one. I'm glad you``  
-4.`` rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one. I'm glad to``  
-5.`` rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one.  I am not the``  
- -->
-<!-- For the seed prompt ``I am happy``, the prompt `` Pr cele out submitted I am happy`` flips the sentiment. Below are five examples of generated text.
->
-1. `` Pr cele out submitted I am happy for them but I am not happy for them. I am happy for them but I am not happy for them``  
-2. `` Pr cele out submitted I am happy for them but I am not happy for them. I am not happy for them. I am not happy for``  
-3. `` Pr cele out submitted I am happy for them but I am not happy for them. I am not happy for them but I am not happy for``  
-4. `` Pr cele out submitted I am happy for them but I am not happy for them. I am happy for them but I am not happy for the``  
-5. `` Pr cele out submitted I am happy for them but I am not happy for them. I am not happy for them. I am happy for them``   -->
-
 ### Biasing Towards Specific Letters
 
 Standard text generation tends to output text with mostly standard English patterns and tendencies. For example, asking OPT-125M to generate text from scratch results in the following: 
@@ -265,25 +201,6 @@ Applying our framework to increase the occurrence of the letter `q` in generated
 >```partners business UNCLASSIFIED mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu```
 
 This adversarial prompt forces every word to have the letter `q` by repeating the word `mosqu` over and over again. 
-
-<!-- 
-For the optimization task of generating as many of the letter ``l`` as possible, we find the prompt `` set sl il sl``. Below are five examples of generated text.
-
-1. `` set sl il sl il il il il il il il il il il il il il il il il il il il il il il il il il``  
-2. `` set sl il sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl sl``  
-3. `` set sl il sl il sl il il il il il il il il il il il il il il il il il il il il il il il``  
-4. `` set sl il sl sl il il il il il il il il il il il il il il il il il il il il il il il il``  
-5. `` set sl il sl il sl il sl il il il il il il il il il il il il il il il il il il il il il``  
-
-For the optimization task of generating as many of the letter ``q`` as possible, we find the prompt `` partners business UNCLASSIFIED mosqu``. Below are five examples of generated text.
-1. `` partners business UNCLASSIFIED mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu``  
-2. `` partners business UNCLASSIFIED mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu``  
-3. `` partners business UNCLASSIFIED mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu``  
-4. `` partners business UNCLASSIFIED mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu``  
-5. `` partners business UNCLASSIFIED mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu``
-``  
-
-Interestingly in all of above our optimized prompts, there is a space before the first letter in the prompt, e.g. ' partners business UNCLASSIFIED mosqu' rather than 'partners business UNCLASSIFIED mosqu'. When removing this space, the prompt's performance deteriorates.  -->
 
 ## Conclusion
 In this post, we introduced adversarial prompts--strings that, when prepended to normal prompts, can drastically alter the resulting image or text generation. For many more adversarial prompting examples, check out our [paper](https://arxiv.org/abs/2302.04237)! 
