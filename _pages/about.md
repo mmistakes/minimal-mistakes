@@ -1,5 +1,7 @@
 ---
 permalink: /about/
+layout: single
+classes: wide
 ---
 
 ## ***About Me / Hakkımda***
