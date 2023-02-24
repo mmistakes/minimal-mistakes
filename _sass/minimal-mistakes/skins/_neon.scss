@@ -3,19 +3,19 @@
    ========================================================================== */
 
 /* Colors */
-$background-color: #141010 !default;
+$background-color: #181414 !default;
 $text-color: #fff6fb !default;
-$primary-color: #f21368 !default;
+$primary-color: #20e26aea !default;
 $border-color: mix(#fff, $background-color, 20%) !default;
 $code-background-color: mix(#000, $background-color, 15%) !default;
 $code-background-color-dark: mix(#000, $background-color, 20%) !default;
 $form-background-color: mix(#000, $background-color, 15%) !default;
-$footer-background-color: mix($primary-color, #000, 10%) !default;
+$footer-background-color: mix($primary-color, #141010, 3%) !default;
 $link-color: $primary-color !default;
 $link-color-hover: mix(#fff, $link-color, 25%) !default;
 $link-color-visited: mix(#000, $link-color, 25%) !default;
 $masthead-link-color: $text-color !default;
-$masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
+$masthead-link-color-hover: mix(#000000, $text-color, 20%) !default;
 $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 
 /* notices */
@@ -31,13 +31,13 @@ $base04: #000000 !default;
 $base05: #101010 !default;
 $base06: #151515 !default;
 $base07: #202020 !default;
-$base08: #ff0086 !default;
+$base08: #ff00ff80 !default;
 $base09: #fd8900 !default;
 $base0a: #aba800 !default;
 $base0b: #00c918 !default;
 $base0c: #1faaaa !default;
 $base0d: #3777e6 !default;
-$base0e: #ad00a1 !default;
+$base0e: #aaad00c2 !default;
 $base0f: #cc6633 !default;
 
 .author__urls.social-icons i,

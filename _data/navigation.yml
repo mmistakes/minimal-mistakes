@@ -1,9 +1,13 @@
 # main links
 main:
-   - title: "About"
+   - title: "About Me"
      url: /about/
-   - title: "FOSS Articles"
-     url: /categories/foss/
+
+   - title: "Linux Articles"
+     url: /categories/linux/
+   - title: "Other Articles"
+     url: /categories/other/
+
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

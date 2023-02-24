@@ -12,18 +12,19 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+github: [metadata]
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Fatih Malakçı's Blog"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Fatih Malakçı"
-description              : "An amazing website."
+subtitle                 : "Articles & Tutorials" # site tagline that appears below site title in masthead
+name                     : "Fatih Malakçı's Blog"
+description              : "Fatih Malakçı's Blog"
 url                      : "https://fatihmalakci.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+baseurl                  :  # the subpath of your site, e.g. "/blog"
+repository               : "FatihMalakci/fatihmalakci.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -58,7 +59,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
+  hide                   : false # true, false (default)
 search                   : "true" # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
@@ -96,10 +97,10 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : "UA-171166645-1"
+    anonymize_ip         : false # true, false (default)
 
 
 # Site Author
@@ -112,10 +113,10 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:fatihmalakci@outlook.com"
+      url: "fatihmalakci@outlook.com"
     - label: "Linkedin"
-      icon: "fab fa-linkedin-square"
-      url: "https://www.linkedin.com/in/fatihmalakci/"
+      icon: "fab fa-fw fa-brands fa-linkedin"
+      url: "https://linkedin.com/in/fatihmalakci/"
     - label: "Website"	
       icon: "fas fa-fw fa-link"	
       # url: "https://your-website.com"
@@ -134,13 +135,13 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/FatihMalakci"
+      # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/FatihMalakci"
+      url: "https://github.com/FatihMalakci/fatihmalakci.github.io"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -285,9 +286,8 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
-
