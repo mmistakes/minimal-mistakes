@@ -1,13 +1,11 @@
 # main links
 main:
-   - title: "About Me"
-     url: /about/
-
    - title: "Linux Articles"
      url: /categories/linux/
    - title: "Other Articles"
      url: /categories/other/
-
+   - title: "About Me"
+     url: /about/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

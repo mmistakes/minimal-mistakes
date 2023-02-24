@@ -1,6 +1,11 @@
 ---
 title: "How to Enable/Disable SElinux in Linux Distributions"
 classes: wide
+categories:
+  - Tutorial
+tags:
+  - Linux
+  - Selinux
 ---
 
 Some of the Linux Distributions comes with SElinux installed, for example on Oracle Linux 7 (OL7), SELinux services were installed by default. 
