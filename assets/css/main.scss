@@ -6,6 +6,3 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-
-/* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
