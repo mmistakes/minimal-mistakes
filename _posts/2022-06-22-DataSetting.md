@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "object-detection Data & Label"
-categories : data
+categories : labeling
 tag : [python, data, object-detection, labeling]
 toc: true
 toc_sticky: true

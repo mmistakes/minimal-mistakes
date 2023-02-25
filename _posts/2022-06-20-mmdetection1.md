@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "mmdetection 설명 & 설치과정"
-categories : MMpackage
+categories : MMDetection
 tag : [python, mmdetection, object-detection]
 toc: true
 toc_sticky: true

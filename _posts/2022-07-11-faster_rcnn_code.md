@@ -2,7 +2,7 @@
 layout: single
 title:  "Faster R-CNN 구현"
 categories : MMpackage
-tag : [python, mmdetection, object-detection, Faster R-CNN]
+tag : [python, MMDetection, object-detection, Faster R-CNN]
 toc: true
 toc_sticky: true
 
