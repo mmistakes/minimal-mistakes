@@ -66,7 +66,7 @@ google:
 google_site_verification :
 bing_site_verification   :
 yandex_site_verification :
-naver_site_verification  :
+naver_site_verification  : "a2a1d01183d4787b0777c02f6a8908d259af7897"
 
 # Social Sharing
 twitter:
@@ -229,16 +229,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
