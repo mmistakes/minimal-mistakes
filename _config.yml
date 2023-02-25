@@ -19,7 +19,7 @@ github: [metadata]
 locale                   : "en-US"
 title                    : "Fatih Malakçı's Blog"
 title_separator          : "-"
-subtitle                 : "Articles & Tutorials" # site tagline that appears below site title in masthead
+subtitle                 : "Tech Notes & Articles" #site tagline that appears below site title in masthead
 name                     :
 description              :
 url                      : "https://fatihmalakci.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"

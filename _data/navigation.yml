@@ -1,8 +1,8 @@
 # main links
 main:
-   - title: "Linux Articles"
+   - title: "Linux"
      url: /categories/linux/
-   - title: "Other Articles"
+   - title: "Other"
      url: /categories/other/
    - title: "About Me"
      url: /about/
