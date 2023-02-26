@@ -20,11 +20,12 @@ def boj_type():
     fpath, fmode = '', 'w'
     fdate = time.strftime('%Y-%m-%d-')
     fname = input('문제번호를 입력하세요 : ')
+    qname = input('문제이름을 입력하세요 : ')
     fhandle = open(fpath+fdate+'BOJ-'+fname+'.md',fmode,encoding="UTF-8")
     
     infile = '''---
 layout: single
-title: BOJ-'''+fname+'''-python
+title: BOJ-'''+fname+'''-python ''' + qname +'''
 tags: BOJ
 ---
 
