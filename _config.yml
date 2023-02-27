@@ -15,24 +15,24 @@ theme: "minimal-mistakes-jekyll"
 minimal_mistakes_skin: "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale: "en-US"
+locale: "ko-KR"
 title: "Onlyoon"
-title_separator: "-"
-subtitle: # site tagline that appears below site title in masthead
-name: "SANGYOON PARK"
-description: "Super Amazing Website"
+title_separator: "|"
+subtitle: "Fake until you become it"
+name: "Onlyoon"
+description: "Onlyoon 블로그 입니다."
 url: "https://onlyoon.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo: "/assets/images/onlyoon87.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs: true # true, false (default)
 words_per_minute: 200
 comments:
-  provider: # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider: "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname: # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname: "Onlyoon"
   discourse:
     server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -103,15 +103,15 @@ analytics:
 
 # Site Author
 author:
-  name: "Your Name"
+  name: "Yoon"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "I am an **amazing** person."
-  location: "Somewhere"
+  bio: "Yoon's Developer Blog."
+  location: "South Korea"
   email:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:parkyoon97@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -123,10 +123,10 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/onlyoon"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://www.instagram.com/parkyoon97/"
 
 # Site Footer
 footer:
@@ -280,3 +280,6 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
+
+date_format: "%Y-%m-%d"
