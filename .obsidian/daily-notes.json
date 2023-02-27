@@ -1,4 +1,5 @@
 {
   "folder": "_posts",
-  "template": "templates/무제 파일"
+  "template": "templates/무제 파일",
+  "format": "YYYY-MM-DD-제목(공백 하이픈)"
 }

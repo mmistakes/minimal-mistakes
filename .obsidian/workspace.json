@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-02-27.md",
+                "file": "_posts/2023-02-27-제목(공백 하이픈).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-02-27.md",
+                "file": "_posts/2023-02-27-제목(공백 하이픈).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-02-27.md",
+                "file": "_posts/2023-02-27-제목(공백 하이픈).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-02-27.md"
+                "file": "_posts/2023-02-27-제목(공백 하이픈).md"
               }
             }
           }
@@ -148,17 +148,27 @@
   },
   "active": "e178e4b81b125629",
   "lastOpenFiles": [
+    "_site/images/20230223_161057.jpg",
+    "_site/images",
+    "images/20230223_161057.jpg",
+    "templates/무제 파일.md",
+    "_posts/2023-02-27-제목(공백 하이픈).md",
+    "_posts/2023-02-27-첫 블로그 포스트.md",
+    "_site/제목(공백-하이픈)/index.html",
+    "_site/제목(공백-하이픈)",
+    "_site/첫-블로그-포스트/index.html",
+    "_site/첫-블로그-포스트",
+    "_site/첫-블로그-작성/index.html",
+    "_site/첫-블로그-작성",
+    "_posts/2023-02-27-첫 블로그 작성.md",
+    "_posts/2023-02-27.md",
+    "_site/writing-jekyll-posts/index.html",
+    "_site/writing-jekyll-posts",
+    "_posts/2023-02-27-writing-jekyll-posts.md",
     "_site/templates/무제 파일.md",
     "_site/templates",
     "_site/jekyll blog note/무제 파일.canvas",
-    "_site/jekyll blog note",
     "_post/2023-02-27.md",
-    "_posts/2023-02-27.md",
-    "_posts",
-    "templates/무제 파일.md",
-    "_post",
-    "jekyll blog note/무제 파일.canvas",
-    "templates/post",
-    "templates"
+    "jekyll blog note/무제 파일.canvas"
   ]
 }
