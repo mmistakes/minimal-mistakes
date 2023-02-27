@@ -5,7 +5,6 @@
     - [De Loof Esther](#de-loof-esther)
     - [Desender Kobe](#desender-kobe)
     - [Janowich Jacki](#janowich-jacki)
-    - [Marzecova Anna] 
     - [Senoussi Mehdi](#senoussi-mehdi)
 
 2. [PhD researchers](#phd-researchers)
