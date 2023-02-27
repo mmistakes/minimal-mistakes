@@ -13,7 +13,7 @@ This document is for the beginners out there who are interested in Self Sovereig
 
 The document is structured to start simple and get more complicated as you progress through it.
 
-Throughout this document we'll have reference to some of the prompts that this information could apply to.
+<!-- Throughout this document we'll have reference to some of the prompts that this information could apply to. -->
 <!-- Not sure about this -->
 
 # Getting Started:
@@ -22,7 +22,6 @@ Throughout this document we'll have reference to some of the prompts that this i
 Decentralized Identity Explained - https://www.youtube.com/watch?v=Ew-_F-OtDFI 
 Good summary doc: https://www.okta.com/blog/2021/01/what-is-decentralized-identity/ & matched video https://www.youtube.com/watch?v=gWfAIYXcyH4
 
-https://tno-ssi-lab.github.io/standardisation-overview/docs.html
 
 ## What are the core technologies of Decentralized Identity:
 
@@ -41,13 +40,16 @@ Verfiable Credentials:
 
 ## Now to get a little more specific
 
-Credential Exchange:
+<!-- Credential Exchange:
 - DIF(PE)
 - Hyperledger Aries
 - W3C? -Credential Handler Api
 
 Verifying Credentials:
-- DID Document
+- DID Document -->
+
+
+https://tno-ssi-lab.github.io/standardisation-overview/docs.html
 
 
 
