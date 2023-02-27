@@ -1,0 +1,8 @@
+{
+  "tabSize": 2,
+  "readableLineLength": false,
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "images"
+}
