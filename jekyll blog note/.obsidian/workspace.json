@@ -1,0 +1,157 @@
+{
+  "main": {
+    "id": "1f5cf2c2af477751",
+    "type": "split",
+    "children": [
+      {
+        "id": "016241d48e287425",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e876086754df38dd",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "무제 파일.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "911f36f04e9fa548",
+    "type": "split",
+    "children": [
+      {
+        "id": "12a272d36bab574d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e10355180279744f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "eb010360bb34c9aa",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "17049882ec33353c",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "041eab0827600f38",
+    "type": "split",
+    "children": [
+      {
+        "id": "2b199e3044add046",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c66b0138bc6b8072",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "무제 파일.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3d8cc568219438ac",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "무제 파일.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d0489b5d2303d099",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "4befb523e808553b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "무제 파일.canvas"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "canvas:새 캔버스 만들기": false,
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "e10355180279744f",
+  "lastOpenFiles": [
+    "무제 폴더",
+    "무제 파일.canvas"
+  ]
+}
