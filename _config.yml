@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Rachel Jeoung"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FJcGuU%2Fbtr0NJqDy42%2FaIIoHyD2fXdQgKiqQKIhm1%2Fimg.png"
   bio              : "라이브한 프론트엔드 개발자를 꿈꾸는 사람입니다."
   location         : "Korea(absolutly South)"
   email            :
