@@ -11,7 +11,7 @@
     - [Aben Bart](#aben-bart)
     - [Deraeve James](#deraeve-james)
     - [Ergo Kate](#ergo-kate)
-    - [Pieter Huycke]
+    - [Huycke Pieter](#huycke-pieter)
 
 ## Post-doctoral researchers
 
@@ -64,6 +64,10 @@ James currently works as a Data Engineer at [Partena Ziekenfonds](https://www.he
 Kate currently works as a Senior Application Developer (AI Healthcare) at [Nuance Belgium](https://www.nuance.com/nl-be/index.html).
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://www.linkedin.com/in/kate-ergo-phd-044959a7/" href="https://www.linkedin.com/in/kate-ergo-phd-044959a7/" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/linkedin.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">in/kate-ergo-phd-044959a7/</a></div>
+
+### Huycke Pieter
+
+Pieter currently works as a Data Engineer at [Data Minded](https://www.dataminded.com/team).
 
 <hr class="dashed">
  
