@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_post/2023-02-27.md",
+                "file": "_posts/2023-02-27.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_post/2023-02-27.md",
+                "file": "_posts/2023-02-27.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_post/2023-02-27.md",
+                "file": "_posts/2023-02-27.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_post/2023-02-27.md"
+                "file": "_posts/2023-02-27.md"
               }
             }
           }
@@ -148,7 +148,13 @@
   },
   "active": "e178e4b81b125629",
   "lastOpenFiles": [
+    "_site/templates/무제 파일.md",
+    "_site/templates",
+    "_site/jekyll blog note/무제 파일.canvas",
+    "_site/jekyll blog note",
     "_post/2023-02-27.md",
+    "_posts/2023-02-27.md",
+    "_posts",
     "templates/무제 파일.md",
     "_post",
     "jekyll blog note/무제 파일.canvas",
