@@ -6,6 +6,9 @@ tag: [기록, 댓글창 만들기]
 toc: true
 toc_sticky: true
 toc_label: 목차
+author_profile: false
+sidebar:
+  nav: "docs"
 ---
 
 깃헙 블로그에 댓글을 남길 수 있는 방법에 대해 기술하였습니다.
