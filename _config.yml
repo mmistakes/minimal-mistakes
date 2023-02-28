@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "베짱이 개발자"
+title                    : "(⌒▽⌒)베짱이 개발자_へ__(‾◡◝ )>"
 title_separator          : "|"
 subtitle                 : "🚢船到桥头自然直"
 name                     : "Huilian"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Huilian"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "🍋+🌱+👲+💻+🪕"
+  bio              : "🌱+👲+👩🏻‍💻+🪕"
   location         : "Seoul,Korea"
   email            :
   links:
