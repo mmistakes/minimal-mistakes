@@ -3,7 +3,7 @@ title: "How To Connect and Query Relational Databases in Scala Using Slick"
 header: 
   og_image: /images/scala-db.png
 tags: [databases, scala, how-to]
-excerpt: ""
+excerpt: "We will look at how to interact with relational databases in Scala projects using Slick."
 ---
 
 It is sometimes required to persist the state of different entities when running computer programs, such as the names of account holders in a bank, the list of products in an e-commerce site, etc. What happens when there is a loss of power to the system? The stored data becomes either inconsistent or unavailable, and very unpleasant for real-world use, hence the need for databases. Databases are useful when building modern applications due to their ability to store business data and provide them when needed.
