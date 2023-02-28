@@ -12,13 +12,13 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "plum" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
 title                    : "베짱이 개발자"
 title_separator          : "|"
-subtitle                 : "🍋+🌱+👲+💻+🪕"
+subtitle                 : "⛵船到桥头自然直"
 name                     : "Huilian"
 description              : "기술블로그 입니다."
 url                      : "https://programinglong.github.io"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Huilian"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "🚢船到桥头自然直: 때가 되면 해결됨"
+  bio              : "🍋+🌱+👲+💻+🪕"
   location         : "Seoul,Korea"
   email            :
   links:
