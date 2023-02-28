@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "깃헙 블로그에 댓글창 띄우기"
-categories: Github Blog
+categories: Github-Blog
 tag: [기록, 댓글창 만들기]
 toc: true
 toc_sticky: true

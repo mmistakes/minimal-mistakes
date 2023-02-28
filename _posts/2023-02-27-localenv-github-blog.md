@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "깃헙 블로그 로컬 개발환경 설정방법 및 에러 핸들링"
-categories: Error Handling Logs
+categories: Error-Handling-Logs
 tag: [루비, 로컬 개발환경, 에러핸들링, 기록]
 toc: true
 toc_sticky: true
