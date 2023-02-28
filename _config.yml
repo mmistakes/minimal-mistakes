@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "(⌒▽⌒)/ 베짱이 개발자_へ__(‾◡◝ )>"
+title                    : "베짱이 개발자_へ__(‾◡◝ )>"
 title_separator          : "|"
-subtitle                 : "🚢船到桥头自然直: 배가 다리에 닿으면 뱃머리가 자연스럽게 바로 돌려진다"
+subtitle                 : "🚢 船到桥头自然直: 배가 다리에 닿으면 뱃머리가 자연스래 돌려져"
 name                     : "Huilian"
 description              : "기술블로그 입니다."
 url                      : "https://programinglong.github.io"
