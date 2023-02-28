@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   : "ko-KR"
 title                    : "베짱이 개발자_へ__(‾◡◝ )>"
 title_separator          : "|"
-subtitle                 : "🚢船到桥头自然直"
+subtitle                 : "내가 나대로 사는 것에 죄책감을 느낄 필요가 없다."
 name                     : "Huilian"
 description              : "기술블로그 입니다."
 url                      : "https://programinglong.github.io"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Huilian"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "🌱+👲+👩🏻‍💻+🪕"
+  bio              : "🍋키우고 🪕치는 👲🏻하는 베짱이👩🏻‍💻"
   location         : "Seoul,Korea"
   email            :
   links:
