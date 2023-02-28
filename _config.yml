@@ -118,7 +118,7 @@ author:
       url: "https://programinglong.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/programinglong"
+      url: "https://twitter.com/programiglong"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -134,7 +134,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/programinglong"
+      url: "https://twitter.com/programiglong"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
