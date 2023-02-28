@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "ko-KR"
 title                    : "베짱이 개발자"
 title_separator          : "|"
-subtitle                 : "船到桥头自然直: 때가 되면 해결된다"
+subtitle                 : "🍋+🌱+👲+💻+🪕"
 name                     : "Huilian"
 description              : "기술블로그 입니다."
 url                      : "https://programinglong.github.io"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Huilian"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "🍋🌱+👲+💻+🪕"
+  bio              : "🚢船到桥头自然直: 때가 되면 해결됨"
   location         : "Seoul,Korea"
   email            :
   links:
