@@ -103,6 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "KBSS"
+  home             : "https://kbss.felk.cvut.cz"
   avatar           : "/assets/images/kbss-logo.png"
   bio              : "We design and build knowledge-based information systems"
   location         : "CTU FEE in Prague"
