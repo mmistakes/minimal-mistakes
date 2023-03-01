@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "개발 블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "서유준"
 description              : "An amazing website."
 url                      : "sasimiseo.github.io.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
