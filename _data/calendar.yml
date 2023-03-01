@@ -1,6 +1,74 @@
 [
   {
     "image_path": null,
+    "alt": "3. Schulkonferenz ",
+    "title": "3. Schulkonferenz ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Mmt0cmZxZTd1dHNia3VmNzY0b2ZsZTd0cTcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2023-03-02T15:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2023-03-02T16:30:00+01:00"
+    },
+    "created": "2023-02-28T13:58:28.000Z",
+    "updated": "2023-02-28T13:58:28.839Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Helfer katalogisieren Bücher für Schulbücherei 13 - 17 Uhr",
+    "title": "Helfer katalogisieren Bücher für Schulbücherei 13 - 17 Uhr",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MWxyOGlxdGlnYjRkbDRvcWJuaGZmMmRzbzQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2023-03-03T13:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2023-03-03T17:00:00+01:00"
+    },
+    "created": "2023-02-28T13:59:50.000Z",
+    "updated": "2023-02-28T13:59:50.572Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Helfer katalogisieren Bücher für Schulbücherei 10:30 - 14  Uhr",
+    "title": "Helfer katalogisieren Bücher für Schulbücherei 10:30 - 14  Uhr",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MGJnbnR1cmdwNzg2dDduMTNoMm9kY212cGYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2023-03-04T10:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2023-03-04T14:00:00+01:00"
+    },
+    "created": "2023-02-28T14:00:35.000Z",
+    "updated": "2023-02-28T14:00:35.665Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Schule und Hort geschlossen: Feiertag",
+    "title": "Schule und Hort geschlossen: Feiertag",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N3MxdXY5cjgwcWFvczMwMmNtNGNxa2RkZ2MgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2023-03-08",
+      "date_time": null
+    },
+    "end": {
+      "date": "2023-03-09",
+      "date_time": null
+    },
+    "created": "2023-02-28T13:57:55.000Z",
+    "updated": "2023-02-28T13:57:55.193Z"
+  },
+  {
+    "image_path": null,
     "alt": "Einschränkungen im Unterricht und Hort möglich",
     "title": "Einschränkungen im Unterricht und Hort möglich",
     "excerpt": "Berlinweite Frauenvollversammlung",
@@ -32,22 +100,5 @@
     },
     "created": "2023-01-30T15:26:10.000Z",
     "updated": "2023-01-30T15:26:10.972Z"
-  },
-  {
-    "image_path": null,
-    "alt": "unterrichtsfrei",
-    "title": "unterrichtsfrei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=azRjdTU4MmtlMjlmMDdtb3Ztc3BpNjgwYzQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2023-05-30",
-      "date_time": null
-    },
-    "end": {
-      "date": "2023-05-31",
-      "date_time": null
-    },
-    "created": "2023-02-11T08:32:15.000Z",
-    "updated": "2023-02-11T08:32:15.893Z"
   }
 ]
