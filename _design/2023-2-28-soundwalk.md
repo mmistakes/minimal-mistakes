@@ -3,6 +3,6 @@ title: "Step by Step"
 permalink: /soundwalking/
 layout: default
 header:
-  teaser: /assets/images/writing/header-01.jpg
+  teaser: /assets/images/soundwalkheader.jpg
 link: https://sanweizhen.github.io/soundwalk/launch
 ---
