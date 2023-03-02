@@ -8,6 +8,7 @@
 3. [PhD researchers](#phd-researchers)
     - [Esin Turkakin](#esin-turkakin)
     - [Jonas Simoens](#jonas-simoens)
+    - [Haopeng Chen](#haopeng-chen)
 4. [Visiting researchers](#visiting-researchers)
 5. [Internship students](#internship-students) 
 
