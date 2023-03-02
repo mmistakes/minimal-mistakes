@@ -2,7 +2,7 @@
 layout: single
 title: "Versal VCK190 AI Engine: ROS2 FPGA Deep Learning Inference"
 author: [ptak-bartosz, pieczynski-dominik, kraft-marek]
-modified: 2023-02-08
+modified: 2023-03-02
 tags: [ros2, fpga, xilinx, vck190, ai-engine, deep learning, inference]
 category: [repository]
 teaser: "/assets/images/posts/2023/03/husky_on_the_moon_thumb.webp"
