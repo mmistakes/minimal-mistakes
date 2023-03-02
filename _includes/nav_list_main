@@ -8,7 +8,7 @@
         📂 <span style="font-family:'Cafe24Oneprettynight';">Total number of posts</style> <span style="font-family:'Coming Soon';">{{sum}}</style>
       </li>
       <li>
-        <span class="nav__sub-title">Math</span>
+        <span class="nav__sub-title">School</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Func-Num" %}
@@ -16,8 +16,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-
-        <span class="nav__sub-title">Software</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Computer" %}
@@ -39,10 +37,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-
-
-
-        <span class="nav__sub-title">Programming</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "CS" %}
@@ -60,38 +54,11 @@
                 {% endfor %}
             </ul>
 
-        <span class="nav__sub-title">Tutorials</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "JS" %}
-                        <li><a href="/categories/js" class="">JavaScript ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-
-        <span class="nav__sub-title">Reading</span>
+        <span class="nav__sub-title">etc</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Tech_News" %}
                         <li><a href="/categories/tech-news" class="">Tech News ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-
-        <span class="nav__sub-title">Job</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Interview" %}
-                        <li><a href="/categories/interview" class="">Interviews ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-
-        <span class="nav__sub-title">etc</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "En-Study" %}
-                        <li><a href="/categories/en-study" class="">English ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -102,7 +69,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Job_Info" %}
+                        <li><a href="/categories/job_info" class="">Job Info ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
 
       </li>
   </ul>

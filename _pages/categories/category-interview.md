@@ -1,7 +1,7 @@
 ---
 title: "Interveiw"
 layout: archive
-permalink: categories/interview
+permalink: categories/job_info
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ---
 
-{% assign posts = site.categories.Interview %}
+{% assign posts = site.categories.Job_Info %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
