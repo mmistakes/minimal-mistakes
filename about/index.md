@@ -113,6 +113,15 @@ I conduct this research in collaboration with Tom Verguts and Senne Braem, using
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-0497-7287" href="https://orcid.org/0000-0002-0497-7287" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">0000-0002-0497-7287</a></div>
 
 
+### Haopeng chen
+
+<img src="/images/profile_pic_haopeng.jpg" alt="Haopeng Chen" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
+
+My research topic is the "behavioral and neural nature of the testing effect". The testing effect refers to the phenomenon that testing can help people reinforce the learned materials better than restudying. Although the Testing effect has been demonstrated in many studies and holds major educational implications, its origin has remained unclear. Based on earlier empirical work and theory formation, we currently postulate that the testing effect derives from reward prediction error (RPE). To be specific, during testing, people will calculate their confidence in their answers and get feedback, which will trigger the RPE (feedback-confidence). Therefore, it might not be the RPE triggered by testing that leads to the testing effect. We will try to investigate this postulation at both behavioral and neural (fMRI) levels.
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Haopeng.Chen@UGent.be" href="mailto:Haopeng.Chen@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Haopeng.Chen@UGent.be</a></div>
+
+
 # Visiting researchers
 
 Currently, we have no visiting researchers working in our lab.    
