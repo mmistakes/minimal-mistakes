@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "3. Schulkonferenz ",
-    "title": "3. Schulkonferenz ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Mmt0cmZxZTd1dHNia3VmNzY0b2ZsZTd0cTcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2023-03-02T15:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2023-03-02T16:30:00+01:00"
-    },
-    "created": "2023-02-28T13:58:28.000Z",
-    "updated": "2023-02-28T13:58:28.839Z"
-  },
-  {
-    "image_path": null,
     "alt": "Helfer katalogisieren Bücher für Schulbücherei 13 - 17 Uhr",
     "title": "Helfer katalogisieren Bücher für Schulbücherei 13 - 17 Uhr",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2023-01-30T15:26:10.000Z",
     "updated": "2023-01-30T15:26:10.972Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elteraktionstag möglich",
+    "title": "Elteraktionstag möglich",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Mmw3NWxpdTk1MW41dTF2bWg2aGRoanZwaTcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2023-05-06T10:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2023-05-06T13:00:00+02:00"
+    },
+    "created": "2023-02-28T14:01:26.000Z",
+    "updated": "2023-02-28T14:01:26.636Z"
   }
 ]
