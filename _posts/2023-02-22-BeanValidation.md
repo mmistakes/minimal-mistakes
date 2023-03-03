@@ -81,7 +81,7 @@ public String handleStep3(@Valid RegisterRequest regReq, Errors errors) {
 ```
 
 ### 1.5 주의사항
-만약 글로벌 범위 Validator를 따로 설정했다면 해당 설정을 삭제하자.\
+만약 글로벌 범위 Validator를 따로 설정했다면 해당 설정을 삭제하자.
 > 아래와 같이 글로벌 범위 Validator를 설정하면 OptionalValidatorFactoryBean을 글로벌 범위 Validator로 사용하지 않는다.\
 스프링 MVC는 별도로 설정한 글로벌 범위 Validato가 없을 때에 OptionalValidatorFactoryBean을 글로벌 범위 Validator로 사용한다.
 ```java
@@ -99,7 +99,9 @@ public clas MvcConfig implements WebMvcConfigurer {
 ```
 
 ### 1.6 Bean Validation의 에러 메시지
-오류 메시지는 메시지 프로퍼티 파일에 등록한 내용이 아니다. 이 메시지는 Bean Validation 프로바이더(hibernate-validator)가 제공한느 기본 에러 메시지다. 스프링 MVC는 에러 코드에 해당하는 메시지가 존재하지 않을 때 Bean Validation 프로바이더가 제공하는 기본 에러 메시지를 출력한다.
+![beanvalidation1](https://user-images.githubusercontent.com/97718735/222687337-077d99a1-ab0d-4862-928f-106ead24f990.png)
+
+위 오류 메시지는 메시지 프로퍼티 파일에 등록한 내용이 아니다. 이 메시지는 Bean Validation 프로바이더(hibernate-validator)가 제공한느 기본 에러 메시지다. 스프링 MVC는 에러 코드에 해당하는 메시지가 존재하지 않을 때 Bean Validation 프로바이더가 제공하는 기본 에러 메시지를 출력한다.
 
 > 기본 에러 메시지 대신 원하는 에러 메시지를 사용하려면 다음 규칙을 따르는 메시지 코드를 메시지 프로퍼티 파일에 추가하면 된다.
 - 애노테이션이름.커맨드객체모델명.프로퍼티명
@@ -115,7 +117,7 @@ public class ReigsterRequest{
 }
 ```
 
-값을 검사한느 과정에서 @NotBlank 애노테이션으로 지정한 검사를 통과하지 못할 때 사용하는 메시지 코드는 다음과 같다. (커맨드 객체의 모델 이름을 registerRequest라고 가정).
+값을 검사한는 과정에서 @NotBlank 애노테이션으로 지정한 검사를 통과하지 못할 때 사용하는 메시지 코드는 다음과 같다. (커맨드 객체의 모델 이름을 registerRequest라고 가정).
 - NotBlank.registerRequest.name
 - NotBlank,name
 - NotBlank
