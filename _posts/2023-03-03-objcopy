@@ -1,0 +1,50 @@
+---
+layout: single
+title: "객체 복사"
+---
+
+
+### 참조에 의한 객체 복사
+
+	let user = { name: "John" };
+
+	let admin = user; // 참조값을 복사함
+	
+admin은 user의 객체 참조값을 복사한것으로 객체는 그대로 하나이다.
+객체 키 user와 admin은 열쇠같은 역할으로 메모리 어딘가에 저장된 객체 name에 대한 정보를 열수있다.
+
+### 객체복사
+
+    let user = {
+      name: "John",
+      age: 30
+    };
+    
+    let clone = {}; // 새로운 빈 객체
+    
+    // 빈 객체에 user 프로퍼티 전부를 복사해 넣습니다.
+    for (let key in user) {
+      clone[key] = user[key];
+    }
+	
+참조값만을 복사하는 것이 아니라 똑같으면서 독립된 객체를 만들려면 위의 예시처럼 새로운 빈 객체를 만들어 프로퍼티를 복사해 넣어야합니다.
+
+### [Object.assign](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/assign "Object.assign")
+
+	Object.assign(dest, [src1, src2, src3...])
+
+dest는 목표로 하는 객체 srcN은  복사하고자하는 객체 입니다. 이를 사용하여 반복문 없으 간단하게 객체를 복사할수있다.
+
+	let user = {
+	  name: "John",
+	  age: 30
+	};
+
+	let clone = Object.assign({}, user);
+	
+예시처럼 객체 user을 clone으로 바로 복사할수있다.
+
+###중첩 객체 복사
+
+객체안의 프로퍼티가 원시형만이 아니라 객체안에 객체가 있다면 위의 방식들로 독립된 객체를 복사하지 못한다.
+그럴경우 자바스크립트 라이브러리 loadsh의 [_.cloneDeep(obj)](https://lodash.com/docs#cloneDeep "_.cloneDeep(obj)") 을 사용하면 된다.
