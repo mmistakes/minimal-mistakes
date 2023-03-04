@@ -1,6 +1,6 @@
 ---
 layout: single
-title "회전하는 큐브"
+title: "회전하는 큐브"
 ---
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/sasimi_seo/embed/QWVNdrg?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
