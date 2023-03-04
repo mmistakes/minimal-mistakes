@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Helfer katalogisieren Bücher für Schulbücherei 13 - 17 Uhr",
-    "title": "Helfer katalogisieren Bücher für Schulbücherei 13 - 17 Uhr",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MWxyOGlxdGlnYjRkbDRvcWJuaGZmMmRzbzQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2023-03-03T13:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2023-03-03T17:00:00+01:00"
-    },
-    "created": "2023-02-28T13:59:50.000Z",
-    "updated": "2023-02-28T13:59:50.572Z"
-  },
-  {
-    "image_path": null,
     "alt": "Helfer katalogisieren Bücher für Schulbücherei 10:30 - 14  Uhr",
     "title": "Helfer katalogisieren Bücher für Schulbücherei 10:30 - 14  Uhr",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2023-02-28T14:01:26.000Z",
     "updated": "2023-02-28T14:01:26.636Z"
+  },
+  {
+    "image_path": null,
+    "alt": "unterrichtsfrei",
+    "title": "unterrichtsfrei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=azRjdTU4MmtlMjlmMDdtb3Ztc3BpNjgwYzQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2023-05-30",
+      "date_time": null
+    },
+    "end": {
+      "date": "2023-05-31",
+      "date_time": null
+    },
+    "created": "2023-02-11T08:32:15.000Z",
+    "updated": "2023-02-11T08:32:15.893Z"
   }
 ]
