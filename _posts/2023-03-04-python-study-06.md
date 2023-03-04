@@ -13,7 +13,7 @@ score = [88,12,34,23]
 for no, s in enumerate(score,1):
     print(str(no) + "번 학생의 성적 :", s)
 ```
-1번 학생의 성적 : 88
+>1번 학생의 성적 : 88
 2번 학생의 성적 : 12
 3번 학생의 성적 : 34
 4번 학생의 성적 : 23
@@ -28,7 +28,7 @@ test_zip = zip(a,b)
 for tmp1,tmp2 in test_zip:
     print("%s 테스트용 : %s" % (tmp1,tmp2))
 ```
-월 테스트용 : 1
+>월 테스트용 : 1
 화 테스트용 : 2
 수 테스트용 : 3
 
@@ -43,7 +43,7 @@ test_anyall = [True,False,True]
 print(any(test_anyall))
 print(all(test_anyall))
 ```
-True
+>True
 False
 
 빈 리스트의 경우, any함수는 참이 하나도 없다고 판단하여 거짓이라는 결과가 나오고, all함수는 거짓이 하나도 없다고 판단하여 참이라는 결과가 나온다.
@@ -61,7 +61,7 @@ score = [45,89,72,53,94]
 for s in filter(flunk,score):
     print(s)
 ```
-45
+>45
 53
 
 ### map
@@ -74,7 +74,7 @@ score = [45,89,72,53,94]
 for s in map(half,score):
     print(s, end=', ')
 ```
-22.5, 44.5, 36.0, 26.5, 47.0, 
+>22.5, 44.5, 36.0, 26.5, 47.0, 
 
 
 두개 이상의 리스트를 받아 각 리스트의 요소를 조합할수도 있는데, 이때 변환 함수는 두개의 요소값을 전달받아야 하므로 대상 리스트 인수가 2개여야 한다. 두 개의 정수값을 더해 리턴하는 total 함수를 정의하고, 이 함수와 두 리스트를 전달하면 두 리스트의 각 요소가 순서대로 total로 전달된다. total이 리턴하는 합계로 새로운 리스트가 생성된다.
@@ -86,7 +86,7 @@ bonus = [2,3,0,0,5]
 for s in map(total,score,bonus):
     print(s, end=", ")
 ```
-47, 92, 72, 53, 99, 
+>47, 92, 72, 53, 99, 
 
 
 ### 람다 함수
@@ -107,7 +107,7 @@ score = [45,89,72,53,94]
 for s in filter(lambda x:x < 60,score):
     print(s)
 ```
-45
+>45
 53
 
 
@@ -116,7 +116,7 @@ score = [45,89,72,53,94]
 for s in map(lambda x:x/2,score):
     print(s,end=', ')
 ```
-22.5, 44.5, 36.0, 26.5, 47.0, 
+>22.5, 44.5, 36.0, 26.5, 47.0, 
 
 
 ## 컬렉션의 사본
@@ -135,7 +135,7 @@ list2[1] = 100
 print(list1)
 print(list2)
 ```
-a=3, b=3
+>a=3, b=3
 a = 5, b=3
 [1, 100, 3]
 [1, 100, 3]
@@ -156,7 +156,7 @@ list2[0][1] = 'c'
 print(list1)
 print(list2)
 ```
-[['a', 'c'], 1, 2]
+>[['a', 'c'], 1, 2]
 [['a', 'c'], 1, 2]
 
 list1 안에 list0가 포함되어 있는 상황인데 copy메서드로 list2를 복사하면 두 리스트가 내부의 list0을 공유하는 상황이 된다. 이 상태에서 list2에 포함된 list0을 변경하면 list1도 영향을 받는다.  
@@ -173,7 +173,7 @@ list2[0][1] = 'c'
 print(list1)
 print(list2)
 ```
-[['a', 'b'], 1, 2]
+>[['a', 'b'], 1, 2]
 [['a', 'c'], 1, 2]
 
 deepcopy 함수는 중첩된 리스트까지 모두 복사하여 완전한 사본을 만드는 깊은 복사를 수행한다. list2를 수정해도 list1에 영향이 없다.
@@ -190,7 +190,7 @@ print(list1 is list2)
 print(list1 is list3)
 print(list2 is list3)
 ```
-True
+>True
 False
 False
 
@@ -205,7 +205,7 @@ print("a =",a,"b =",b,":",a is b)
 b = 2
 print("a =",a,"b =",b,":",a is b)
 ```
-a = 1 b = 1 : True
+>a = 1 b = 1 : True
 a = 1 b = 2 : False
 
 a를 1로 초기화해놓은 상태에서 b에 a를 대입하면 두 변수는 1이라는 같은 객체를 가리킨다. 파이썬은 상수까지도 객체 취급하는데 1이라는 상수가 하나의 객체이며 두 변수가 같은 객체를 가리킨다.  
