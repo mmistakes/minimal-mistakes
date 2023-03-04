@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "왕만두 블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "선태욱"
+name                     : "KingMandooo"
 description              : "An amazing website."
 url                      : "https://KingMandooo.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
