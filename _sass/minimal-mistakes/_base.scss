@@ -127,7 +127,7 @@ blockquote {
 
 a {
   text-decoration: none;                // 포스터 밑줄 제거
-
+  
   &:focus {
     @extend %tab-focus;
   }
