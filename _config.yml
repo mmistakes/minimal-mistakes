@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "김호준의 개발공부"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "김호준"
 description              : "An amazing website."
 url                      : "https://witchking20.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
