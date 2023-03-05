@@ -129,9 +129,6 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
-sidebar:         # 사이드바
-    nav: "docs"
-
 # Site Footer
 footer:
   links:
