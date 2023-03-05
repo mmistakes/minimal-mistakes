@@ -5,7 +5,7 @@ categories: blog
 tag: [JAVA, 코딩, TIL]
 toc: true
 toc_sticky: true
-toc_label: 🦗 목차
+toc_label: 🦗목차
 ---
 
 ## 🌼TIL 개요
@@ -50,7 +50,7 @@ public class ScannerExample {
 }
 위 예제에서는 Scanner를 사용하여 표준 입력에서 사용자 이름과 나이를 읽어들이고, 이를 출력합니다.
 
-## 🍊 BufferedReader와 Scanner 비교
+## 🍊 BufferedReader VS Scanner
 
 BufferedReader와 Scanner는 각각의 장단점이 있습니다.
 
