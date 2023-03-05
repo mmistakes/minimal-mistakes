@@ -12,7 +12,6 @@ toc_label: 🦗목차
 BufferedReader와 Scanner는 Java에서 입력 스트림에서 데이터를 읽는 데 사용되는 두 가지 클래스입니다. 그러나 각각의 클래스는 사용 방법과 목적이 다릅니다.
 
 ## 🍏 BufferedReader
-
 BufferedReader는 입력 스트림에서 문자열을 읽어들이는 데에 사용됩니다. 데이터를 한 번에 읽고 저장하며, 버퍼링이 되기 때문에 매우 빠른 속도로 데이터를 읽어올 수 있습니다. 이 클래스는 기본적으로 문자 입력 스트림을 처리하기 때문에, 문자열을 읽는 데에 효과적입니다.
 
 아래는 BufferedReader로 입력 받는 간단한 코드 예시입니다.
@@ -21,8 +20,8 @@ BufferedReader는 입력 스트림에서 문자열을 읽어들이는 데에 사
 
 위 예제에서는 BufferedReader를 사용하여 표준 입력에서 사용자 이름과 나이를 읽어들이고, 이를 출력합니다.
 
-## 🍎 Scanner
 
+## 🍎 Scanner
 Scanner는 BufferedReader와 마찬가지로 입력 스트림에서 데이터를 읽는 데 사용됩니다. 그러나 Scanner는 정규 표현식을 사용하여 토큰을 구분하기 때문에, 문자열, 숫자, 불리언 값 등 다양한 유형의 데이터를 처리할 수 있습니다.
 
 아래는 Scanner를 사용하여 입력 받는 간단한 코드 예시입니다.
@@ -32,7 +31,6 @@ Scanner는 BufferedReader와 마찬가지로 입력 스트림에서 데이터를
 위 예제에서는 Scanner를 사용하여 표준 입력에서 사용자 이름과 나이를 읽어들이고, 이를 출력합니다.
 
 ## 🌼BufferedReader VS Scanner
-
 BufferedReader와 Scanner는 각각의 장단점이 있습니다.
 
 
