@@ -31,19 +31,19 @@ Scanner는 BufferedReader와 마찬가지로 입력 스트림에서 데이터를
 
 위 예제에서는 Scanner를 사용하여 표준 입력에서 사용자 이름과 나이를 읽어들이고, 이를 출력합니다.
 
-## 🍊 BufferedReader VS Scanner
+## 🍊BufferedReader VS Scanner
 
 BufferedReader와 Scanner는 각각의 장단점이 있습니다.
 
 
-##🍏BufferedReader의 장점:
-
+## 🍏BufferedReader의 장점:
 BufferedReader는 데이터를 더 빠르게 읽을 수 있습니다.
 문자열만 처리하기 때문에, 불필요한 파싱 작업이 없습니다.
 
 
-##🍎Scanner의 장점:
-
-##🍊 Scanner는 정규 표현식을 사용하여 토큰을 분리할 수 있기 때문에, 다양한 유형의 데이터를 처리할 수 있습니다.
+## 🍎Scanner의 장점:
+ Scanner는 정규 표현식을 사용하여 토큰을 분리할 수 있기 때문에, 다양한 유형의 데이터를 처리할 수 있습니다.
 Scanner는 기본형 데이터 형식을 지원하기 때문에, parseInt()나 parseDouble() 등을 사용하여 타입 변환을 할 필요가 없습니다.
+
+
 단점으로는, BufferedReader는 BufferedReader#readLine()이 반환하는 값이 문자열이며, Scanner는 다양한 타입으로 파싱 가능하기 때문에 잘못된 입력을 처리하기 어려울 수 있습니다.
