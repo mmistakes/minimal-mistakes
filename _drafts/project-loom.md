@@ -484,7 +484,7 @@ Fortunately, there are only two cases in which a virtual thread is pinned to the
 - When it executes code inside a `synchronized` block or method;
 - When it calls a native method or a foreign function (i.e., a call to a native library using JNI).
 
-Let's see an example pinned virtual thread. We want to simulate an employee that needs to go to the bathroom. The bathroom has only one WC, so the access to the toilet must be synchronized:
+Let's see an example of pinned virtual thread. We want to simulate an employee that needs to go to the bathroom. The bathroom has only one WC, so the access to the toilet must be synchronized:
 
 ```java
 static class Bathroom {
@@ -619,7 +619,7 @@ The execution of the `twoEmployeesInTheOfficeWithLock` produces the expected out
 
 We can run the above method also with the `jdk.tracePinnedThreads` property set to see that no thread is pinned to its carrier thread during the execution.
 
-## 7. Don't use `ThreadLocal` and Thread Pools
+## 7. `ThreadLocal` and Thread Pools Becoming Bad Practice
 
 When using threads before Java 19 and Project Loom, creating a thread using the constructor was relatively uncommon. Instead, we preferred to use a thread pool or an executor service configured with a thread pool. In fact, those threads were what we now call platform threads, and the reason was that creating such threads was quite expensive operation.
 
