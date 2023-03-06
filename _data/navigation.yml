@@ -5,7 +5,7 @@ main:
   - title: "Tag"
     url: /tags/
 
-doc:
+docs:
   - title: "대목차"
     children:
       - title: "Category"
