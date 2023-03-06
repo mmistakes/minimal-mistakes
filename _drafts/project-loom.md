@@ -688,9 +688,9 @@ As we might expect, the output is very similar to the previous one:
 15:08:37.142 [thread-2] INFO in.rcard.virtual.threads.App - VirtualThread[#23,thread-2]/runnable@ForkJoinPool-1-worker-2 | Hey, my name is thread-2
 ```
 
-Nice. So, is it a good idea to use `ThreadLocal` with virtual threads? Well, no, it isn't. The reason is that virtual threads can be a lot, and each virtual thread will have its own `ThreadLocal`. This means that **the memory footprint of the application will be very high**. Moreover, the `ThreadLocal` will be useless in a one-thread-per-request scenario since data shouldn't be shared between different requests.
+Nice. So, is it a good idea to use `ThreadLocal` with virtual threads? Well, no, it isn't. The reason is that we can have a huge number of virtual threads, and each virtual thread will have its own `ThreadLocal`. This means that **the memory footprint of the application will be very high**. Moreover, the `ThreadLocal` will be useless in a one-thread-per-request scenario since data shouldn't be shared between different requests.
 
-However, some scenarios could be help use something similar to `ThreadLocal`. For this reason, Java 20, there will introduce [scoped values](https://openjdk.org/jeps/429), which enable the sharing of immutable data within and across threads. However, this is a topic for another article.
+However, some scenarios could be help use something similar to `ThreadLocal`. For this reason, Java 20 will introduce [scoped values](https://openjdk.org/jeps/429), which enable the sharing of immutable data within and across threads. However, this is a topic for another article.
 
 ## 8. Conclusions
 
