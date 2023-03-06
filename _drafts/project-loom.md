@@ -692,13 +692,7 @@ Nice. So, is it a good idea to use `ThreadLocal` with virtual threads? Well, no,
 
 However, some scenarios could be help use something similar to `ThreadLocal`. For this reason, Java 20 will introduce [scoped values](https://openjdk.org/jeps/429), which enable the sharing of immutable data within and across threads. However, this is a topic for another article.
 
-## 8. Conclusions
-
-Finally, we come to the end of this article. In the beginning, we introduced the reason behind the introduction of virtual threads in the JVM. Then, we saw how to create and use it with some examples. We made some examples of pinned threads, and finally, we saw how some old best practices are no longer valid when using virtual threads.
-
-Project Loom is still actively under development, and there are a lot of other exciting features in it. As we said, structural concurrency and scoped values are some of them. Project Loom will be a game changer in the Java world. This article will help you better understand virtual threads and how to use them.
-
-## 9. Appendix A: Some Virtual Threads Internals
+## 8. Some Virtual Threads Internals
 
 In this section, we'll introduce the implementation of continuation in Java virtual threads. We're not going into too much detail, but we'll try to give a general idea of how the virtual threads are implemented.
 
@@ -928,7 +922,13 @@ private void afterYield() {
 
 This closes the circle. As we can see, it takes a lot of work to follow the life cycle of a virtual thread and its continuation. A lot of native calls are involved. We hope that the JDK team will provide better documentation of the virtual threads implementation in the future.
 
-## 9. Appendix B: Maven Configuration
+## 9. Conclusions
+
+Finally, we come to the end of this article. In the beginning, we introduced the reason behind the introduction of virtual threads in the JVM. Then, we saw how to create and use it with some examples. We made some examples of pinned threads, and finally, we saw how some old best practices are no longer valid when using virtual threads.
+
+Project Loom is still actively under development, and there are a lot of other exciting features in it. As we said, structural concurrency and scoped values are some of them. Project Loom will be a game changer in the Java world. This article will help you better understand virtual threads and how to use them.
+
+## 10. Appendix B: Maven Configuration
 
 As promised, here is the `pom.xml` file that we used to run the code in this article:
 
