@@ -98,7 +98,21 @@ Java has been a language that has tried to strive for simplicity since its incep
 
 In such an approach, every thread can use its own local variable to store information. The need to share mutable states among threads, the well-known "hard part" of concurrent programming, drastically decreases. However, using such an approach, we can easily reach the limit of the number of threads we can create.
 
-As we said in the article concerning Kotlin Coroutines, many approaches have risen in recent years to overcome the above problem. Reactive programming and async/await strategies are two of the most popular.
+As we said in the article concerning Kotlin Coroutines, many approaches have risen in recent years to overcome the above problem. The first attempt was to introduce a model of programming based on callback. For each asynchronous statement, we also give a callback to call once the statement finishes:
+
+```java
+static void callbackHell() {
+  a(aInput, resultFromA -> 
+    b(resultFromA, resultFromB -> 
+      c(resultFromB, resultFromC ->
+        d(resultFromC, resultFromD ->
+          System.out.printf("A, B, C, D: $resultFromA, $resultFromB, $resultFromC, $resultFromD")))));
+}
+```
+
+The above code is a simple example of callback hell. The code is not easy to read and understand. Moreover, it is not easy to write.
+
+To overcome the problems of callbacks, reactive programming, and async/await strategies were introduced.
 
 The reactive programming initiatives try to overcome the lack of thread resources by building a custom DSL to declaratively describe the data flow and let the framework handle concurrency. However, DSL is tough to understand and use, losing the simplicity Java tries to give us.
 
