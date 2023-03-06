@@ -20,6 +20,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 ```
 다음은 랜덤 포레스트 분류기를 사용하여 모델을 여러 CPU 코어에서 학습시키는 코드이다.
 500개의 결정 트리로 이루어져 있으며, 최대 리프 노드는 16개이다.
+n_jobs 매개변수는 사용할 CPU의 개수를 지정해주는 매개변수로, n_jobs = -1 으로 설정해주면 컴퓨터의 모든 CPU를 사용하게 된다.
 
 ```python
 from sklearn.ensemble import RandomForestClassifier
