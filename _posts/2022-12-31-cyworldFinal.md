@@ -3,6 +3,7 @@ layout: single
 title: "Cyworld Project Final"
 categories: Project
 tag: [HTML, CSS, JavaScript]
+author_profile: false
 ---
 
 ## Jukebox page in Cyworld Project
