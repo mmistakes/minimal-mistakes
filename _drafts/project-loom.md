@@ -13,7 +13,9 @@ Without further ado, let's first introduce virtual threads. As we said, both pro
 
 ## 1. Setup
 
-As we said, both the JEPs are still in the preview/incubation step, so we must enable them in our project. First, we need to use a version of Java that is at least 19. Then, we must give the JVM the `--enable-preview` flag. Although we will not talk about structured concurrency, we set up the environment to access it. So, we need to enable and import the `jdk.incubator.concurrent` module. Under the folder `src/main/java`, we need to create a file named `module-info.java` with the following content:
+As we said, both the JEPs are still in the preview/incubation step, so we must enable them in our project. At the end of the article, we will give an example of a Maven configuration with all the needed dependencies and configurations. Here, we will just show the most important parts.
+
+First, we need to use a version of Java that is at least 19. Then, we must give the JVM the `--enable-preview` flag. Although we will not talk about structured concurrency, we set up the environment to access it. So, we need to enable and import the `jdk.incubator.concurrent` module. Under the folder `src/main/java`, we need to create a file named `module-info.java` with the following content:
 
 ```java
 module virtual.threads.playground {
@@ -57,8 +59,6 @@ module virtual.threads.playground {
   requires static lombok;
 }
 ```
-
-At the end of the article, we will give an example of a Maven configuration with all the needed dependencies and configurations.
 
 ## 2. Why Virtual Threads?
 
