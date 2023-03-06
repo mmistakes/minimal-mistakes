@@ -5,7 +5,7 @@ title: "랜덤 포레스트, 에이다 부스트"
 # 랜덤 포레스트
 
 의사 결정 트리에서는 과대적합이 일어날 수 있다. 결정 트리에서 일어나는 과대적합을 방지하기 위해, 배깅 방식으로 결정 트리 예측기들을 학습시켜 앙상블 학습하는 방법이 있다.
-이 방식을 랜덤 포레스트 기법이라고 하며 기존 BaggingClassifier에서 DecisionTreeCalssifier를 사용하여 구현할 수 있다.
+이 방식을 랜덤 포레스트 기법이라고 하며 기존 BaggingClassifier에서 DecisionTreeClassifier를 사용하여 구현할 수 있다.
 이것을 더 간단하고 쉽게 할 수 있는 방법이 있는데, 사이킷런에서 재공하는 RandomForestClassifier(회귀의 경우 RandomForestRegressor)을 사용하면 된다.
 
 다음은 make_moons() 함수를 사용하여 노이즈가 0.1인 샘플을 만드는 코드이다.
