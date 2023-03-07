@@ -24,7 +24,7 @@ description              : "'During dark nights I heard your praise.'"
 url                      : "https://dev-deeplake.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/logo-deeplake.png"
+teaser                   : "/assets/images/teaser-deeplake.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true
@@ -292,4 +292,4 @@ defaults:
       related: true
       show_date: true
 
-date_format: "%Y-%m-%d (%^a) %H:%M"
+date_format: "%Y/%m/%d (%^a)"
