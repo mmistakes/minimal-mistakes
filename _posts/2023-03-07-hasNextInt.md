@@ -11,16 +11,28 @@ toc_label: 🦗목차
 ## 🌼TIL 개요
 Java에서 hasNextInt(), hasNext(), nextInt(), next()는 java.util.Scanner 클래스의 메소드입니다. Scanner 클래스는 입력 스트림에서 토큰을 읽어오는 기능을 제공합니다.
 
+
 ## 🍏 hasNextInt(), hasNext(), nextInt(), next()
-- hasNextInt(): 입력 스트림에서 다음 토큰이 정수인지 여부를 검사합니다. 다음 토큰이 정수인 경우 true를 반환하고, 그렇지 않은 경우 false를 반환합니다.
-- hasNext(): 입력 스트림에서 다음 토큰이 있으면 true를 반환하고, 그렇지 않으면 false를 반환합니다.
-- nextInt(): 입력 스트림에서 다음 토큰을 읽어와 정수로 변환한 후 반환합니다. 입력 스트림에서 다음 토큰이 정수가 아닌 경우 InputMismatchException을 발생시킵니다.
-- next(): 입력 스트림에서 다음 토큰을 읽어와 문자열로 반환합니다.
+- hasNextInt()
+  : 입력 스트림에서 다음 토큰이 정수인지 여부를 검사
+  : 다음 토큰이 정수인 경우 true를 반환하고, 그렇지 않은 경우 false를 반환
+  
+- hasNext()
+  : 입력 스트림에서 다음 토큰이 있으면 true를 반환 
+  : 그렇지 않으면 false를 반환
+  
+- nextInt(): 
+  : 입력 스트림에서 다음 토큰을 읽어와 정수로 변환한 후 반환
+  : 입력 스트림에서 다음 토큰이 정수가 아닌 경우 InputMismatchException을 발생
+  
+- next()
+  : 입력 스트림에서 다음 토큰을 읽어와 문자열로 반환
+
 
 ## 🍎 hasNextInt() 더 알아보기
 이 메서드는 다음과 같이 사용됩니다.
 
-~~~
+~~~java
 Scanner scanner = new Scanner(System.in);
 if (scanner.hasNextInt()) {
     int num = scanner.nextInt();
