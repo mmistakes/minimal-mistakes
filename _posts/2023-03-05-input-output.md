@@ -16,7 +16,19 @@ BufferedReader는 입력 스트림에서 문자열을 읽어들이는 데에 사
 
 아래는 BufferedReader로 입력 받는 간단한 코드 예시입니다.
 
-![image](https://user-images.githubusercontent.com/126564770/222965940-0080bd01-146d-452d-8bb8-fa34b5df0245.png)
+~~~java
+import java.io.*;
+
+public class BufferedReaderExample {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String name = br.readLine();
+        int age = Integer.parseInt(br.readLine());
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+~~~
 
 위 예제에서는 BufferedReader를 사용하여 표준 입력에서 사용자 이름과 나이를 읽어들이고, 이를 출력합니다.
 
@@ -25,8 +37,6 @@ BufferedReader는 입력 스트림에서 문자열을 읽어들이는 데에 사
 Scanner는 BufferedReader와 마찬가지로 입력 스트림에서 데이터를 읽는 데 사용됩니다. 그러나 Scanner는 정규 표현식을 사용하여 토큰을 구분하기 때문에, 문자열, 숫자, 불리언 값 등 다양한 유형의 데이터를 처리할 수 있습니다.
 
 아래는 Scanner를 사용하여 입력 받는 간단한 코드 예시입니다.
-
-![image](https://user-images.githubusercontent.com/126564770/222965925-3135d5cf-da87-496b-bddd-47f563b1c1a7.png)
 
 ~~~java
 import java.util.Scanner;
