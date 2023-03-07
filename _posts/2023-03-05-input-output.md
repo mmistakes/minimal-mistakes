@@ -27,7 +27,22 @@ Scanner는 BufferedReader와 마찬가지로 입력 스트림에서 데이터를
 아래는 Scanner를 사용하여 입력 받는 간단한 코드 예시입니다.
 
 ![image](https://user-images.githubusercontent.com/126564770/222965925-3135d5cf-da87-496b-bddd-47f563b1c1a7.png)
-<script src="https://gist.github.com/programinglong/9b196970c34cc8cdaa6f14f985e5831f.js"></script>
+
+~~~java
+import java.util.Scanner;
+
+public class ScannerExample {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        int age = sc.nextInt();
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+~~~
+
+
 
 위 예제에서는 Scanner를 사용하여 표준 입력에서 사용자 이름과 나이를 읽어들이고, 이를 출력합니다.
 
