@@ -39,16 +39,7 @@
                 {% endfor %}
             </ul>
 
-            <span class="nav__sub-title">📝 Project</span>
-            <ul>
-                {% for category in site.categories %}
-                {% if category[0] == "Project" %}
-                <li><a href="/categories/Project" class="">프로젝트({{category[1].size}})</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-
-            <span class="nav__sub-title">📉 Computer science</span>
+            <span class="nav__sub-title">💻 Computer science</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "DataBase" %}
@@ -98,6 +89,9 @@
                 {% endif %}
                 {% if category[0] == "GitHub" %}
                 <li><a href="/categories/GitHub" class="">깃 & 깃허브({{category[1].size}})</a></li>
+                {% endif %}
+                {% if category[0] == "Project" %}
+                <li><a href="/categories/Project" class="">프로젝트({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
