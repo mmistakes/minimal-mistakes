@@ -48,11 +48,14 @@
                 {% endfor %}
             </ul>
 
-            <span class="nav__sub-title">📉 DataBase</span>
+            <span class="nav__sub-title">📉 Computer science</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "DataBase" %}
                 <li><a href="/categories/DataBase" class="">데이터베이스({{category[1].size}})</a></li>
+                {% endif %}
+                {% if category[0] == "os" %}
+                <li><a href="/categories/os" class="">운영체제({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
