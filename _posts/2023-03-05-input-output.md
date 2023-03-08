@@ -76,4 +76,3 @@ BufferedReader와 Scanner는 각각의 장단점이 있습니다.
 
 
 ![지롱 김혜련](C:\Git\programinglong.github.io\images\2023-03-05-input-output\지롱 김혜련.png)
-
