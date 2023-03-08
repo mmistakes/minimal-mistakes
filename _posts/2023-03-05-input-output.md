@@ -73,7 +73,7 @@ BufferedReader와 Scanner는 각각의 장단점이 있습니다.
 - Scanner는 기본형 데이터 형식을 지원하기 때문에, parseInt()나 parseDouble() 등을 사용하여 타입 변환을 할 필요가 없음
 - BufferedReader보다는 성능이 떨어지는 경향이 있음
 
+<img src="C:\Git\programinglong.github.io\images\${filname}\지롱 김혜련.png" alt="지롱 김혜련" style="zoom:25%;" />
 
 
-![지롱 김혜련](C:\Git\programinglong.github.io\images\2023-03-05-input-output\지롱 김혜련.png)
 
