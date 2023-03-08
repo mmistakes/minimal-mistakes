@@ -1,7 +1,9 @@
 main:
-  - title: "Tags"
-    url: /tags/
-  - title: "Category"
-    url: /categories/
-  - title: "Search"
+  - title: "검색"
     url: /search/
+  - title: "카테고리"
+    url: /categories/
+  - title: "테그"
+    url: /tags/
+  - title: "어바웃미"
+    url: /about/
