@@ -1,11 +1,15 @@
 ---
-title: "Project Loom: A New Hope - Virtual Threads"
+title: "The Ultimate Guide to Java Virtual Threads"
 date: 2023-02-23
 header:
     image: "/images/blog cover.jpg"
 tags: []
 excerpt: "Project Loom and virtual threads promise to bring modern concurrency paradigms that we already found in Kotlin (coroutines) and Scala (Cats Effect and ZIO fibers) in Java. They are still in preview, but we can already enjoy them."
+toc: true
+toc_label: "In this article"
 ---
+
+_Another tour de force by [Riccardo Cardin](https://github.com/rcardin). Riccardo is a proud alumnus of Rock the JVM, now a senior engineer working on critical systems written in Java, Scala and Kotlin._
 
 Version 19 of Java came at the end of 2022, bringing us a lot of exciting stuff. One of the coolest is the preview of some hot topics concerning Project Loom: _virtual threads_ ([JEP 425](https://openjdk.org/jeps/425)) and _structured concurrency_ ([JEP 428](https://openjdk.org/jeps/428)). Whereas still in a preview phase (to tell the truth, structured concurrency is still in the incubator module), the two JEPs promise to bring modern concurrency paradigms that we already found in Kotlin (coroutines) and Scala (Cats Effect and ZIO fibers) also in the mainstream language of the JVM: The Java programming language.
 
@@ -928,7 +932,7 @@ Finally, we come to the end of this article. In the beginning, we introduced the
 
 Project Loom is still actively under development, and there are a lot of other exciting features in it. As we said, structural concurrency and scoped values are some of them. Project Loom will be a game changer in the Java world. This article will help you better understand virtual threads and how to use them.
 
-## 10. Appendix B: Maven Configuration
+## 10. Appendix: Maven Configuration
 
 As promised, here is the `pom.xml` file that we used to run the code in this article:
 
