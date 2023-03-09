@@ -6,7 +6,7 @@ cubic-bezier는 애니메이션의 움직임을 곡선 그래프로 표현한것
 [![linear](https://github.com/sasimiseo/sasimiseo.github.io/blob/master/_posts/post_images/2023-03-09-linear.png?raw=true "linear")](http://https://github.com/sasimiseo/sasimiseo.github.io/blob/master/_posts/post_images/2023-03-09-linear.png "linear")
 cubic-bezier(0.250, 0.250, 0.750, 0.750) 여기서 숫자들이 표현하는것은 점 x1, y1, x2, y2를 의미하는것이다. 위의 그래프가 일직선이므로 애니메이션은 일정한 속도로 작동한다.
 
-[![linear](https://github.com/sasimiseo/sasimiseo.github.io/blob/master/_posts/post_images/2023-03-09-easeInOut.png?raw=true "easeInOut")](http://https://github.com/sasimiseo/sasimiseo.github.io/blob/master/_posts/post_images/2023-03-09-easeInOut.png "easeInOut")
+[![easeInOut](https://github.com/sasimiseo/sasimiseo.github.io/blob/master/_posts/post_images/2023-03-09-easeInOut.png?raw=true "easeInOut")](http://https://github.com/sasimiseo/sasimiseo.github.io/blob/master/_posts/post_images/2023-03-09-easeInOut.png "easeInOut")
 이 그래프는 시작과 끝부분이 휘어있는것을 볼수있다.  결과는 처음은 느리게 움직이다가 빨라지며 다시 느리게 마무리된다. 밑의 코드의 linear은 첫번째 그래프 easeInOut은 두번째 그래프로 직접 확인해보자.
 <iframe height="300" style="width: 100%;" scrolling="no" title="cubic-bezier" src="https://codepen.io/sasimi_seo/embed/KKxyzVY?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/sasimi_seo/pen/KKxyzVY">
