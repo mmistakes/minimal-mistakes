@@ -3,7 +3,7 @@ First Last:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : # "Bio Here"
   location         : # "Philadelphia, PA"
-  home             : 
+  home             :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -50,6 +50,22 @@ Eric Wong:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
+Tai Nguyen:
+  name             : "Tai Nguyen"
+  avatar           : "/assets/images/avatar/tai.jpg"
+  bio              : "MS Student at UPenn"
+  home             : https://taidnguyen.github.io/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:taing@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://taidnguyen.github.io/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/taidng"
+
 Patrick Chao:
   name             : "Patrick Chao"
   avatar           : https://faculty.wharton.upenn.edu/wp-content/uploads/2016/11/Chao_Patrick-129x139.jpg
@@ -70,7 +86,7 @@ Natalie Maus:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://sites.google.com/seas.upenn.edu/natalie-maus/home"
-  
+
 
 
 
