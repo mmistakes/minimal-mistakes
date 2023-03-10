@@ -1,7 +1,6 @@
 import time
-
+fpath, fmode = 'C:/Users/noir1/Documents/git/noir1458.github.io/_posts/', 'w'
 def other_type():
-    fpath, fmode = '', 'w'
     fdate = time.strftime('%Y-%m-%d-')
     fname = input('날짜 뒤의 파일명을 입력하세요 : ')
     fhandle = open(fpath+fdate+fname+'.md',fmode)
@@ -17,7 +16,6 @@ tags: other
     return None
 
 def boj_type():
-    fpath, fmode = '', 'w'
     fdate = time.strftime('%Y-%m-%d-')
     fname = input('문제번호를 입력하세요 : ')
     qname = input('문제이름을 입력하세요 : ')
@@ -46,7 +44,6 @@ tags: BOJ
     return None
 
 def think_type():
-    fpath, fmode = '', 'w'
     fdate = time.strftime('%Y-%m-%d-')
     fname = input('날짜 뒤의 파일명을 입력하세요 : ')
     fhandle = open(fpath+fdate+fname+'.md',fmode)
