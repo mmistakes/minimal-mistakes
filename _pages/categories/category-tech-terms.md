@@ -1,7 +1,7 @@
 ---
-title: "Reading Books"
+title: "Tech Terms"
 layout: archive
-permalink: categories/book
+permalink: categories/tech-terms
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ---
 
-{% assign posts = site.categories.Book %}
+{% assign posts = site.categories.Tech_Terms %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

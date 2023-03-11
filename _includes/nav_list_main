@@ -8,6 +8,31 @@
         📂 <span style="font-family:'Cafe24Oneprettynight';">Total number of posts</style> <span style="font-family:'Coming Soon';">{{sum}}</style>
       </li>
       <li>
+        <span class="nav__sub-title">LeetCode</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Arrays" %}
+                        <li><a href="/categories/arrays" class="">Arrays 101 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <span class="nav__sub-title">Tech</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Tech_News" %}
+                        <li><a href="/categories/tech-news" class="">Tech News ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Tech_Terms" %}
+                        <li><a href="/categories/tech-terms" class="">Tech Terms ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
         <span class="nav__sub-title">School</span>
             <ul>
                 {% for category in site.categories %}
@@ -48,8 +73,8 @@
         <span class="nav__sub-title">Coding Practice</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Youtube-tut" %}
-                        <li><a href="/categories/ytb-tutorial" class="">Youtube ({{category[1].size}})</a></li>
+                    {% if category[0] == "Tutorial" %}
+                        <li><a href="/categories/tutorial" class="">Tutorials ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -57,29 +82,8 @@
         <span class="nav__sub-title">etc</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Tech_News" %}
-                        <li><a href="/categories/tech-news" class="">Tech News ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
                     {% if category[0] == "Resource" %}
                         <li><a href="/categories/resource" class="">Resources ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Job_Info" %}
-                        <li><a href="/categories/job_info" class="">Job Info ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Book" %}
-                        <li><a href="/categories/book" class="">Reading Books ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
