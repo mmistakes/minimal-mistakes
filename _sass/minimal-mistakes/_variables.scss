@@ -54,14 +54,14 @@ $h-size-6: 1em !default; // ~16px
 /*
    Colors
    ========================================================================== */
-
-$gray: #7a8288 !default;
+ 
+$gray: #2b2d2f !default;
 $dark-gray: mix(#000, $gray, 50%) !default;
 $darker-gray: mix(#000, $gray, 60%) !default;
 $light-gray: mix(#fff, $gray, 50%) !default;
 $lighter-gray: mix(#fff, $gray, 90%) !default;
 
-$background-color: #fff !default;
+$background-color: #fceab5 !default;
 $code-background-color: #fafafa !default;
 $code-background-color-dark: $light-gray !default;
 $text-color: $dark-gray !default;
@@ -74,7 +74,7 @@ $primary-color: #6f777d !default;
 $success-color: #3fa63f !default;
 $warning-color: #d67f05 !default;
 $danger-color: #ee5f5b !default;
-$info-color: #3b9cba !default;
+$info-color: #144656 !default;
 $focus-color: $primary-color !default;
 $active-color: mix(#fff, $primary-color, 80%) !default;
 
@@ -164,7 +164,7 @@ $right-sidebar-width-wide: 400px !default;
    ========================================================================== */
 
 $border-radius: 4px !default;
-$box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125) !default;
+$box-shadow: 0 1px 1px rgba(234, 165, 16, 0.918) !default;
 $nav-height: 2em !default;
 $nav-toggle-height: 2rem !default;
 $navicon-width: 1.5rem !default;
