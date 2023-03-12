@@ -56,12 +56,12 @@ $h-size-6: 1em !default; // ~16px
    ========================================================================== */
  
 $gray: #1b1e20 !default;
-$dark-gray: mix(#000, $gray, 30%) !default;
+$dark-gray: mix(#081c02, $gray, 30%) !default;
 $darker-gray: mix(#000, $gray, 40%) !default;
 $light-gray: mix(#fff, $gray, 40%) !default;
 $lighter-gray: mix(#fff, $gray, 80%) !default;
 
-$background-color: #a3c8a5 !default;
+$background-color: #a3c8a57b !default;
 $code-background-color: #fafafa !default;
 $code-background-color-dark: $light-gray !default;
 $text-color: $dark-gray !default;
@@ -164,10 +164,13 @@ $right-sidebar-width-wide: 400px !default;
    ========================================================================== */
 
 $border-radius: 4px !default;
-$box-shadow: 0 1px 1px rgba(234, 165, 16, 0.918) !default;
+$box-shadow: 0 1px 1px rgba(13, 51, 22, 0.94) !default;
 $nav-height: 2em !default;
 $nav-toggle-height: 2rem !default;
 $navicon-width: 1.5rem !default;
 $navicon-height: 0.25rem !default;
 $global-transition: all 0.2s ease-in-out !default;
 $intro-transition: intro 0.3s both !default;
+
+$toc-color: #364b3ca6 !default;
+$archive-color: #081c02 !default;
