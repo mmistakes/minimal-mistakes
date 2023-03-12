@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "근처 개발일지"
+title                    : "근처에 있다"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "근처"
-description              : "An amazing website."
+description              : "게임 개발일지!"
 url                      : "https://nearthyou.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
