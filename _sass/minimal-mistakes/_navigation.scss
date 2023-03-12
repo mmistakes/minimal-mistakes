@@ -79,7 +79,8 @@
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: $muted-text-color;
+      /* 0312 20:10 수정 */
+      color: #081c02;
       border: 1px solid mix(#000, $border-color, 25%);
       border-radius: 0;
 
@@ -177,7 +178,8 @@
   -ms-flex-align: center;
   align-items: center;
   min-height: $nav-height;
-  background: $background-color;
+  /* 0312 수정*/
+  background: #f4f18ccc;
 
   a {
     display: block;
@@ -506,11 +508,11 @@
 .toc {
   font-family: $sans-serif-narrow;
   color: $active-color;
-  background-color: $background-color;
+  background-color: #f4f18ccc;
   border: 1px solid $active-color;
   border-radius: $border-radius;
-  -webkit-box-shadow: $box-shadow;
-  box-shadow: $box-shadow;
+  -webkit-box-shadow: $active-color;
+  box-shadow: $active-color;
 
   .nav__title {
     color: #fff;
