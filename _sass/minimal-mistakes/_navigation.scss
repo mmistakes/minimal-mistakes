@@ -505,9 +505,9 @@
 
 .toc {
   font-family: $sans-serif-narrow;
-  color: $gray;
+  color: $active-color;
   background-color: $background-color;
-  border: 1px solid $border-color;
+  border: 1px solid $active-color;
   border-radius: $border-radius;
   -webkit-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
