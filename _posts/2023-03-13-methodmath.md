@@ -1,0 +1,5 @@
+---
+layout: single
+title: "메서드 Math"
+---
+w
