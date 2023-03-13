@@ -19,13 +19,13 @@ locale                   : "ko-KR"
 title                    : "👩🏻‍💻베짱이 개발자_へ__(‾◡◝ )>"
 title_separator          : "|"
 subtitle                 : "내가 나대로 사는 것에 죄책감을 느낄 필요가 없다."
-name                     : "G_long"
+name                     : "ㅈlong"
 description              : "지롱이의 기술블로그 입니다."
 url                      : "https://programinglong.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/ningmeng2.png"
+logo                     : "/assets/images/nigmeng.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -103,8 +103,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "G_long"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "ㅈlong"
+  avatar           : "/images/bigglong.png"
   bio              : "🍋키우고 🪕치는 🦗베짱이"
   location         : "Seoul, Korea"
   email            : wellness365@naver.com
