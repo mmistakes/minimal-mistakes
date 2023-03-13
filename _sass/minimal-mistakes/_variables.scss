@@ -61,7 +61,7 @@ $darker-gray: mix(#000, $gray, 40%) !default;
 $light-gray: mix(#fff, $gray, 40%) !default;
 $lighter-gray: mix(#fff, $gray, 80%) !default;
 
-$background-color: #a3c8a57b !default;
+$background-color: #a3c8a564 !default;
 $code-background-color: #fafafa !default;
 $code-background-color-dark: $light-gray !default;
 $text-color: $dark-gray !default;
@@ -173,4 +173,4 @@ $global-transition: all 0.2s ease-in-out !default;
 $intro-transition: intro 0.3s both !default;
 
 $toc-color: #364b3ca6 !default;
-$archive-color: #081c02 !default;
+$archive-color:  #081c02!default;
