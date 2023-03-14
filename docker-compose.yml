@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  kbss-website:
+    build:
+      context: .
+    container_name: kbss-website
+    command: ["jekyll", "serve", "--host", "0.0.0.0", "--basename", "${BASENAME:-/kbss-website}"]
+    restart: always
+    ports:
+      - "4000:4000"
+    volumes:
+      - $PWD:/srv/jekyll
