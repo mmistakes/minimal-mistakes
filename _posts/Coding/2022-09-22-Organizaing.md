@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Python Study 1"
-categories: coding
+categories: study
 
 tag: [python, coding]
 toc: true
