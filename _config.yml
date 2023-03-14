@@ -118,7 +118,7 @@ author:
       url: "https://www.stonybrook.edu/commcms/ams/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/JayJung98"
+      url: "https://github.com/jfloww"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/jaehoon_jung98"
@@ -131,13 +131,13 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://jayjung98.github.io"
+      url: "https://github.com/jfloww"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/jaehoon_jung98"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/jaehoon-jung-6174a1251/"
+      url: "https://www.linkedin.com/in/jfloww/"
 
 
 # Reading Files
