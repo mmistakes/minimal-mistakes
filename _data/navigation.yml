@@ -6,9 +6,6 @@ main:
   #  url: /projects/
   - title: "About me"
     url: /aboutme/
-    # COVER LETTER
-  - title: "Resume"
-    url: Jaehoon-Jung-resumde.pdf
     #PDF UPLOAD
   - title: "Category"
     url: /categories/
@@ -25,7 +22,7 @@ docs:
      - title: "Machine Learning"
        url: /categories/machine_learning/
      - title: "Coding"
-       url: /categories/coding/\
+       url: /categories/coding/
   - title: "Tag"
     children:
      - title: "Tag"
