@@ -21,7 +21,23 @@ There is a Dockerfile to simplify deployment. So the steps to get the website wo
 
 `docker run --volume="$PWD:/srv/jekyll" -p 4000:4000 -t kbss-website`
 
-3. The website is now available at `http://localhost:4000`
+3. The website is now available at `http://localhost:4000/kbss-website`
+
+
+### Docker compose
+
+1. Build the Docker image
+
+`docker-compose build`
+
+2. [Optional] Configure environment variables for docker-compose file, e.g.:
+`echo BASENAME=/kbss-website > .env`
+
+3. Run the container.
+
+`docker-compose up -d`
+
+3. The website is now available at `http://localhost:4000/kbss-website`
 
 ### Without Docker
 
@@ -35,5 +51,5 @@ Assuming Jekyll is installed on the system, the following commands can be used t
 
 `jekyll serve`
 
-3. The website is now available at `http://localhost:4000`
+3. The website is now available at `http://localhost:4000/kbss-website`
 
