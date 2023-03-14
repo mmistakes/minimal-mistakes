@@ -19,8 +19,8 @@ docs:
     children:
      - title: "Category"
        url: /categories/
-     - title: "Machine Learning"
-       url: /categories/machine_learning/
+     - title: "LeetCode"
+       url: /categories/leetcode/
      - title: "Coding"
        url: /categories/coding/
   - title: "Tag"
