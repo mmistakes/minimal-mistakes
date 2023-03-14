@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Jay's Note"
+title                    : "JFLOWW"
 title_separator          : "|"
 subtitle                 : "Better than yesterday"
 name                     : "Jay Jung"
@@ -98,7 +98,7 @@ social:
 analytics:
   provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : "G-7RKVZP6DK8"
+    tracking_id          : "G-HJ34EJBJHV"
     anonymize_ip         : false
 
 
