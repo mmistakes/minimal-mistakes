@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /categories/leetcode/
-title: "Machine Learning"
+title: "LeetCode"
 author_profile: true
 sidebar_main: true
 search : false
