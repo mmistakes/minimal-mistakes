@@ -22,7 +22,7 @@ title_separator          : "|"
 subtitle                 : "Better than yesterday"
 name                     : "Jay Jung"
 description              : "Better than yesterday"
-url                      : "https://jayjung98.github.io"
+url                      : "https://jfloww.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Jay (Jaehoon) Jung"
   avatar           : "/images/image3.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data Scientist/Analyst"
+  bio              : "Software Engineer"
   location         : "Stony Brook, NY"
   email            : "hoon7589@gmail.com"
   links:
@@ -124,10 +124,7 @@ author:
       url: "https://www.instagram.com/jaehoon_jung98"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/jayjungnote/"
-    - label: "Kaggle"
-      icon: "fas fa-fw fa-link"
-      url: "https://www.kaggle.com/jaehoonjung98/"    
+      url: "https://www.linkedin.com/in/jfloww/"  
 
 # Site Footer
 footer:
