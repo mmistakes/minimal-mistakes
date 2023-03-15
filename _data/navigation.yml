@@ -22,8 +22,8 @@ docs:
      - title: "LeetCode"
        url: /categories/leetcode/
      - title: "Coding"
-       url: /categories/Coding/
-     - title: "Lecture Review"
+       url: /categories/coding/
+     - title: "LectureReview"
        url: /categories/lecture_review/
   - title: "Tag"
     children:

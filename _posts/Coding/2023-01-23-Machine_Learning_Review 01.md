@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Machine Learning Algorithms 01"
-categories: Coding
+categories: coding
 tag: [algorithms, machine_learning]
 toc: true
 author_profile: false

@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Machine Learning 1"
-categories: Coding
+categories: coding
 tag: [python, machine_learning]
 toc: true
 author_profile: false

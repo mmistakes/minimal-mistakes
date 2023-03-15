@@ -8,6 +8,6 @@ search : false
 sidebar:
     nav: "docs"
 ---
-{% assign posts = site.categories.Project | sort:"date" | reverse %}
+{% assign posts = site.categories.project | sort:"date" | reverse %}
 
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
