@@ -15,6 +15,7 @@ sidebar:
 # 현재까지 진행 상황
 
 - 회원가입 기능 완료
+    - BaseTimeEntity 생성 완료
     - User Entity 생성 완료
     - UserRepositoryImpl, UserService를 통해서 DB에 저장되는지 Test Code로 확인.
     - 중복 회원 검증
@@ -152,6 +153,18 @@ public class PostingResponseDto {
     private int hits;
     private LocalDateTime modifiedDate;
 
+    // paging 포함 조회시 사용(전체 게시글 송출)
+    public PostingResponseDto(Long id, String title, String content, String writer, String password, int hits, String createdDate) {
+        this.id = id;
+        this.title = title;
+        this.content = content;
+        this.writer = writer;
+        this.password = password;
+        this.hits = hits;
+        this.createdDate = createdDate;
+    }
+
+    // paging없이 단순 조회(게시글 조회 등)
     public PostingResponseDto(Long id, String title, String content, String writer, String password, int hits) {
         this.id = id;
         this.title = title;

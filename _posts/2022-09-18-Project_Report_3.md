@@ -14,6 +14,7 @@ sidebar:
 
 # 현재까지 진행 상황
 
+- BaseTimeEntity 생성 완료
 - User Entity 생성 완료
 - UserRepositoryImpl, UserService를 통해서 DB에 저장되는지 Test Code로 확인.
 - 중복 회원 검증

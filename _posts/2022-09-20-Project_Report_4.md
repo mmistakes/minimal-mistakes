@@ -14,6 +14,7 @@ sidebar:
 
 # 현재까지 진행 상황
 
+- BaseTimeEntity 생성 완료
 - User Entity 생성 완료
 - UserRepositoryImpl, UserService를 통해서 DB에 저장되는지 Test Code로 확인.
 - 중복 회원 검증
@@ -56,9 +57,14 @@ public class LoginService {
 
     public FindUserDto login(String userId, String password) {
 
-        return userRepository.findByUserId(userId)
-                .filter(user -> user.getPassword().equals(password))
-                .orElse(null);
+        FindUserDto findUser = userRepository.findByUserId(userId).orElseThrow(UserNotFoundException::new);
+
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+        if(encoder.matches(password, findUser.getPassword())) {
+            return findUser;
+        } else {
+            throw new UserNotFoundException("비밀번호가 일치하지 않습니다.");
+        }
     }
 ```
 - `LoginForm`에서 입력받은 아이디와 패스워드를 통해서 일치하는 정보를 가져오고, 정보가 없으면 null을 리턴
