@@ -6,7 +6,7 @@ And that's the big idea of Inversion of Control.
 
 요약 하자면 IoC 는 디자인 프로세서고 변경이 자유롭다.
 
-![](..images/2022-03-15-tes_please_final/2023-03-16-03-58-24-image.png)
+![](images/2022-03-15-tes_please_final/2023-03-16-03-58-24-image.png)
 
 ![](C:\Users\user\Documents\GitHub\ramyo564.github.io\images\2023-03-16-03-46-57-image.png)
 
