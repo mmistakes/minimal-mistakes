@@ -22,9 +22,9 @@ docs:
      - title: "LeetCode"
        url: /categories/leetcode/
      - title: "Coding"
-       url: /categories/coding/
-    #  - title: "Lecture Review"
-    #    url: /categories/lecture_review/
+       url: /categories/Coding/
+     - title: "Lecture Review"
+       url: /categories/lecture_review/
   - title: "Tag"
     children:
      - title: "Tag"
