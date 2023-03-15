@@ -1,8 +1,7 @@
 ---
 layout: single
 title:  "Python Study 4"
-categories: coding
-
+categories: Coding
 tag: [python, coding]
 toc: true
 author_profile: false
