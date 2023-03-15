@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /categories/lecture_review/
-title: "lecture_review"
+title: "Lecture Review"
 author_profile: true
 sidebar_main: true
 search : false
