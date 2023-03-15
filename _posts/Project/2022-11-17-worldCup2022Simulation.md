@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Project 5"
-categories: project
+categories: Project
 tag: [python, project, machine_learning]
 toc: true
 author_profile: false
