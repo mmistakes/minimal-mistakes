@@ -6,8 +6,9 @@ And that's the big idea of Inversion of Control.
 
 요약 하자면 IoC 는 디자인 프로세서고 변경이 자유롭다.
 
-![[Pasted image 20230316013300.png]]
+![](C:\Users\user\Documents\GitHub\ramyo564.github.io\images\2023-03-16-03-46-57-image.png)
 
+![](C:\Users\user\AppData\Roaming\marktext\images\2023-03-16-02-07-14-image.png)
 
 ## Java Beans ? Spring Beans?
 
@@ -15,10 +16,7 @@ Spring Beans 는 Java beans 랑 비슷 한 컨셉이지만 Java beans의 엄격�
 요구사항을 따르지는 않는다.
 요약하자면 그냥 Spring Beans는 Java Object로 생각하면 된다.
 
-
-
 ## Dependency inversion Injection
-
 
 ![[Spring - IoC-페이지-2.drawio.png]]
 
@@ -34,6 +32,4 @@ You don't have to build the car.
 
 ![[Pasted image 20230303054847.png]]
 
-
 출처 유데미 & https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring
-
