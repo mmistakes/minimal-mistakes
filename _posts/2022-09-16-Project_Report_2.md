@@ -31,11 +31,70 @@ Html, Css를 통해서 화면은 어느정도 틀만 잡아놓고, 디테일한 
 
 ## 이번에 해야할 목록
 
+- BaseTimeEntity 생성
 - User Entity 생성
 - 필요한 DTO 생성
 - 회원가입 Repository 개발
 - 회원가입 검증기 작성
 - 회원가입 Repository와 service 연결
+
+## BaseTimeEntity
+
+```java
+@Getter
+@MappedSuperclass
+@EntityListeners(AuditingEntityListener.class)
+public abstract class BaseTimeEntity {
+
+    // Entity가 생성되서 저장될 때 시간이 자동 저장
+    @CreatedDate
+    private String createdDate;
+
+    // 조회한 Entity 값을 변경할 때 시간이 자동 저장
+    @LastModifiedDate
+    private String modifiedDate;
+
+    /*
+    * 엔티티를 저장하기 이전에 실행
+    * 시간을 가져온 뒤 알맞게 포멧
+    * */
+    @PrePersist
+    public void onPrePersist() {
+        this.createdDate = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        this.modifiedDate = this.createdDate;
+    }
+
+    @PreUpdate
+    public void onPreUpdate() {
+        this.modifiedDate = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+    }
+}
+```
+- 공통 적으로 사용되는 생성 일자와, 수정 일자
+- Auditing 기능을 포함 : 시간에 대해서 자동으로 값을 넣어주는 기능
+- Main Class에 `@EnableJpaAuditing` 어노테이션을 추가해줘야 한다.
+
+## User Entity
+
+```java
+@Entity
+@Getter
+@NoArgsConstructor
+public class User extends BaseTimeEntity{
+
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "USER_PK")
+    private Long id;
+    private String userName;
+    private String userId;
+    private String password;
+
+    @Enumerated(EnumType.STRING)
+    @Setter
+    private Role role;
+
+}
+```
 
 ## 회원가입 기능
 
