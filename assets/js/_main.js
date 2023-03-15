@@ -54,12 +54,37 @@ $(function() {
   });
 
   // Smooth scrolling
-  var scroll = new SmoothScroll('a[href*="#"]', {
-    offset: 20,
-    speed: 400,
-    speedAsDuration: true,
-    durationMax: 500
-  });
+  if('Animation' in window){
+    animateScroll('a[href^=#]',{
+      //delay:-1,
+      //endDelay:-1
+      //easing:"ease-out",
+      //duration: 800,
+      //iterations: 1,
+      //offset:-50,
+      callback:function(event,elm,target){
+          animateScroll.createAnimation(target,{
+              keyframes:[
+                  {
+                      backgroundColor:'#FFF'
+                  },
+                  {
+                      backgroundColor:'#000'
+                  }
+              ],
+              duration: 100,//动画所需ms
+              iterations: 3,//循环次数
+          });
+      }
+    });
+  }else{
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      offset: 20,
+      speed: 400,
+      speedAsDuration: true,
+      durationMax: 500
+    });
+  }
 
   // Gumshoe scroll spy init
   if($("nav.toc").length > 0) {
