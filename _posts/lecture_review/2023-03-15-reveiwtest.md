@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Test"
-categories: lecture review
+categories: 'lecture review'
 tag: [python, leetcode]
 toc: true
 author_profile: false
