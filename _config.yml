@@ -105,7 +105,7 @@ analytics:
 author:
   name: "Namu56"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Node.js Backend 지망생의 블로그입니다"
+  bio: "Backend 지망생의 블로그입니다"
   location: "South Korea"
   email:
   links:

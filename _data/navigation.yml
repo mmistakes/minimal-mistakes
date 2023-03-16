@@ -2,6 +2,8 @@
 main:
   - title: "Category"
     url: /categories/
+  - title: "By Year"
+    url: /year-archive/
   - title: "Search"
     url: /search/
 
