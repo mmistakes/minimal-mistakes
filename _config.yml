@@ -20,7 +20,7 @@ title: "Namu56의 개발일지"
 title_separator: "|"
 subtitle:
 name: "Namu56"
-description: "Node.js Backend 지망생의 개발일지"
+description: "Backend 지망생의 개발일지"
 url: "https://namu56.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -281,5 +281,6 @@ defaults:
       share: true
       related: true
       show_date: true
-
-date_format: "%Y-%m-%d"
+      sidebar:
+        nav: "docs"
+      date_format: "%Y-%m-%d"
