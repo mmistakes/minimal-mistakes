@@ -17,16 +17,22 @@ tbody {
   font-style: italic;
 }
 
+<ul>
+{% for tag in site.Case_code %}
+    <li> {{tag}} </li>
+{% endfor %}
+</ul>
+
 </style>
 <ul>
-  {% for case in site.Case_code %}
+  {% for case in site.collections.Case_code %}
 	   {% if case !='' %}
 	   	 <li>
+	   	 <tr colspan="1"><h2>{{ case }}</h2></tr>
 	   	 {% for rd in site.collections %}
 	   		{% if case = rd.Case_code %}
 		      <table>
-			<tr>
-			  <td colspan="1"><h2>{{ case }}</h2></td>
+			<tr>			  
 			  <td colspan="1"><h2 href="{{ rd.url }}">{{ rd.title }}</h2></td>
 			</tr>
 			<tr>
