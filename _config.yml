@@ -111,8 +111,7 @@ collections:
   collections:
     output: true
     collections_dir: collections
-    permalink: /collections/:title/
-    Case_code: true
+    permalink: /collections/:title/    
     projectType:
       output: true
       permalink: /collections/:collection/:name
