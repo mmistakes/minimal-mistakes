@@ -6,7 +6,8 @@ categories: ['R','SpacialData']
 shorttitle: "1_ComtradeVaccine_SDViz"
 shortdesc: "Spatial data analysis "
 Method: "Spacial data visualization using R's `ggplot2` package"
-Case: ""
+Case: "Global trade in vaccines - UN's Comtrade data"
+Case_code: 'Comtrade_vaccines'
 Datafrom: "United Nations' Comtrade data"
 image: ""
 excerpt: "Who export vaccines  to who? A spatial data Visualization using UN's Comtrade data and R's `ggplot2` package"
