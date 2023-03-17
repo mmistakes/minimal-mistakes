@@ -1,8 +1,16 @@
 ---
-layout: post
+layout: single
 title: "블로그 새롭게 만들었습니다!"
 categories: blog
 tag: [blog, java]
+toc: true
+toc_sticky: true
+toc_label: index
+toc_icon: "fa-solid fa-indent"
+author_profile: false
+# sidebar:
+#     nav: "docs"
+# search: false
 ---
 
 # 모든 포스팅이 사라졌습니다,,,
