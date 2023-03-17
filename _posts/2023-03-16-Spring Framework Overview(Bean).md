@@ -1,4 +1,4 @@
-# Beans
+# Beans 이 뭐지?
 
 스프링 Core container 에는 크게 Beans, Core, SpEL, Context 가 있다.
 
@@ -130,8 +130,6 @@ Managing such a number of objects is nothing short of a nightmare. **This is wh
 
 Instead of constructing dependencies by itself, an object can retrieve its dependencies from an IoC container. **All we need to do is to provide the container with appropriate configuration metadata.**
 
-
-
 **각 오브젝트을 개발자가 따로따로 관리하는게 아니라 IoC container에 넘겨주는 것**
 
 #### 3.3) Bean Configuration
@@ -184,8 +182,6 @@ The result proves that the IoC container has created and initialized beans corre
 
 This article gave a brief description of Spring beans and their relationship with an IoC container.
 
-
-
 ### 2. Beans 관련
 
 Beans와 관련해서 **중요한 부분은 BeansFactory**가 있다.
@@ -195,8 +191,6 @@ Beans와 관련해서 **중요한 부분은 BeansFactory**가 있다.
 >   (의존성 주입이나 객체를 Bean으로 등록한다던지 등)
 
 해당 인터페이스로 **Bean의 각종 설정**을 하거나 **Bean을 가져올 수 있다.**
-
-
 
 ### 3. Beans 작성법
 
