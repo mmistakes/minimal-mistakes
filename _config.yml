@@ -282,5 +282,3 @@ defaults:
       related: true
       mathjax: true
       sidebar_main: true
-      show_date: true
-      date_format: "%Y-%m-%d"
