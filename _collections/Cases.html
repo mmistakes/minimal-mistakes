@@ -1,0 +1,44 @@
+---
+layout: single
+author_profile: true
+title: Structural equation modelling
+shortdesc: "SEM examples"
+permalink: /collections/SEM_Examples
+category: Index
+excerpt: "Some example codes"
+header:
+  overlay_color: "#333"
+---
+
+Projects/codes in this collection:
+<style>
+tbody {
+  font-size: 95%;
+  font-style: italic;
+}
+
+</style>
+<ul>
+  {% for collection in site.collections %}
+  {% if collection.categories contains 'SEM' %}
+      <li>
+        <table>
+          <tr>
+            <td colspan="3"><h2 href="{{ collection.url }}">{{ collection.title }}</h2></td>
+          </tr>
+          <tr>
+            <td rowspan="3"><a href="{{ collection.url }}"><image src={{ collection.image }} alt = {{collection.title}} style="max-height:100%; max-width:100%; object-fit: cover"></a></td>
+            <td colspan="2"><a href="{{ collection.url }}">{{ collection.Case }}</a></td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="{{ collection.url }}">{{ collection.shortdesc }}</a></td>
+          </tr>
+          <tr>
+            <td width="30%><a href="{{ collection.url }}">{{ collection.Method }}</a></td>
+            <td width="40%><a href="{{ collection.url }}"><b>Data from: </b>{{ collection.Datafrom }}</a></td>
+          </tr>
+        </table>
+      </li>
+  {% endif %}
+  {% endfor %}
+</ul>
