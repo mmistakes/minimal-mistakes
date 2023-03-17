@@ -10,7 +10,7 @@ header:
   overlay_color: "#333"
 ---
 
-Projects/codes in this collection:
+Projects/codes in this collection organized by cases (or datasets):
 <style>
 tbody {
   font-size: 95%;
@@ -18,7 +18,7 @@ tbody {
 }
 
 <ul>
-{% for tag in site.Case_code %}
+{% for tag in site.collections.Case_code %}
     <li> {{tag}} </li>
 {% endfor %}
 </ul>
