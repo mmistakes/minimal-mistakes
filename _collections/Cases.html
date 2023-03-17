@@ -20,23 +20,27 @@ tbody {
 </style>
 <ul>
   {% for collection in site.collections %}
-  <li>
-      <table>
-        <tr>
-          <td colspan="3"><h2 href="{{ collection.url }}">{{ collection.Case_code }}</h2></td>
-        </tr>
-        <tr>
-          <td rowspan="3"><a href="{{ collection.url }}"><image src={{ collection.image }} alt = {{collection.title}} style="max-height:100%; max-width:100%; object-fit: cover"></a></td>
-          <td colspan="2"><a href="{{ collection.url }}">{{ collection.Case }}</a></td>
-        </tr>
-        <tr>
-          <td colspan="2"><a href="{{ collection.url }}">{{ collection.shortdesc }}</a></td>
-        </tr>
-        <tr>
-          <td width="30%"><a href="{{ collection.url }}">{{ collection.Method }}</a></td>
-          <td width="40%"><a href="{{ collection.url }}"><b>Data from: </b>{{ collection.Datafrom }}</a></td>
-        </tr>
-      </table>
-    </li>
+	  {% for case in collection.Case_code %}
+		   {% if case !='' %}
+			  <li>
+			      <table>
+				<tr>
+				  <td colspan="3"><h2 href="{{ collection.url }}">{{ case }}</h2></td>
+				</tr>
+				<tr>
+				  <td rowspan="3"><a href="{{ collection.url }}"><image src={{ collection.image }} alt = {{collection.title}} style="max-height:100%; max-width:100%; object-fit: cover"></a></td>
+				  <td colspan="2"><a href="{{ collection.url }}">{{ collection.Case }}</a></td>
+				</tr>
+				<tr>
+				  <td colspan="2"><a href="{{ collection.url }}">{{ collection.shortdesc }}</a></td>
+				</tr>
+				<tr>
+				  <td width="30%"><a href="{{ collection.url }}">{{ collection.Method }}</a></td>
+				  <td width="40%"><a href="{{ collection.url }}"><b>Data from: </b>{{ collection.Datafrom }}</a></td>
+				</tr>
+			      </table>
+			    </li>
+		    {% endif %}
+	    {% endfor %}
   {% endfor %}
 </ul>
