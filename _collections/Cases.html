@@ -22,21 +22,23 @@ tbody {
   {% for collection in site.collections %}
 	  {% for case in collection.Case_code %}
 		   {% if case !='' %}
+		   	{% for rd in site.collections %}
 			  <li>
 			      <table>
 				<tr>
-				  <td colspan="3"><h2 href="{{ collection.url }}">{{ case }}</h2></td>
+				  <td colspan="1"><h2>{{ case }}</h2></td>
+				  <td colspan="1"><h2 href="{{ rd.url }}">{{ rd.title }}</h2></td>
 				</tr>
 				<tr>
-				  <td rowspan="3"><a href="{{ collection.url }}"><image src={{ collection.image }} alt = {{collection.title}} style="max-height:100%; max-width:100%; object-fit: cover"></a></td>
-				  <td colspan="2"><a href="{{ collection.url }}">{{ collection.Case }}</a></td>
+				  <td rowspan="3"><a href="{{ rd.url }}"><image src={{ rd.image }} alt = {{collection.title}} style="max-height:100%; max-width:100%; object-fit: cover"></a></td>
+				  <td colspan="2"><a href="{{ rd.url }}">{{ rd.Case }}</a></td>
 				</tr>
 				<tr>
-				  <td colspan="2"><a href="{{ collection.url }}">{{ collection.shortdesc }}</a></td>
+				  <td colspan="2"><a href="{{ rd.url }}">{{ rd.shortdesc }}</a></td>
 				</tr>
 				<tr>
-				  <td width="30%"><a href="{{ collection.url }}">{{ collection.Method }}</a></td>
-				  <td width="40%"><a href="{{ collection.url }}"><b>Data from: </b>{{ collection.Datafrom }}</a></td>
+				  <td width="30%"><a href="{{ rd.url }}">{{ rd.Method }}</a></td>
+				  <td width="40%"><a href="{{ rd.url }}"><b>Data from: </b>{{ rd.Datafrom }}</a></td>
 				</tr>
 			      </table>
 			    </li>
