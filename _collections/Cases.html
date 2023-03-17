@@ -23,34 +23,4 @@ tbody {
 {% endfor %}
 </ul>
 
-</style>
-<ul>
-  {% for case in site.Case_code %}
-	   {% if case !='' %}
-	   	 <li>
-	   	 <tr colspan="1"><h2>{{ case }}</h2></tr>
-	   	 {% for rd in site.collections %}
-	   		{% if case = rd.Case_code %}
-		      <table>
-			<tr>			  
-			  <td colspan="1"><h2 href="{{ rd.url }}">{{ rd.title }}</h2></td>
-			</tr>
-			<tr>
-			  <td rowspan="3"><a href="{{ rd.url }}"><image src={{ rd.image }} alt = {{collection.title}} style="max-height:100%; max-width:100%; object-fit: cover"></a></td>
-			  <td colspan="2"><a href="{{ rd.url }}">{{ rd.Case }}</a></td>
-			</tr>
-			<tr>
-			  <td colspan="2"><a href="{{ rd.url }}">{{ rd.shortdesc }}</a></td>
-			</tr>
-			<tr>
-			  <td width="30%"><a href="{{ rd.url }}">{{ rd.Method }}</a></td>
-			  <td width="40%"><a href="{{ rd.url }}"><b>Data from: </b>{{ rd.Datafrom }}</a></td>
-			</tr>
-		      </table>
-		      {% endif %}
-		{% endfor %}
-	    	</li>
-		    
-	    {% endif %}
-    {% endfor %}
-</ul>
+
