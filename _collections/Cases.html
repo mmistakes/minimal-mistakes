@@ -18,14 +18,14 @@ tbody {
 }
 
 <ul>
-{% for tag in site.collections.Case_code %}
+{% for tag in site.Case_code %}
     <li> {{tag}} </li>
 {% endfor %}
 </ul>
 
 </style>
 <ul>
-  {% for case in site.collections.Case_code %}
+  {% for case in site.Case_code %}
 	   {% if case !='' %}
 	   	 <li>
 	   	 <tr colspan="1"><h2>{{ case }}</h2></tr>
