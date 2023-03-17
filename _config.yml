@@ -16,12 +16,12 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale: "ko-KR"
-title: "Namu56의 개발일지"
+title: "개발일지 : Today I Learned"
 title_separator: "|"
 subtitle:
-name: "Namu56"
-description: "Backend 지망생의 개발일지"
-url: "https://namu56.github.io"
+name: "One"
+description: "Backend 지망생"
+url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -103,9 +103,9 @@ analytics:
 
 # Site Author
 author:
-  name: "Namu56"
+  name: "One"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Backend 지망생의 블로그입니다"
+  bio: "Backend 지망생"
   location: "South Korea"
   email:
   links:
@@ -249,16 +249,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: archive-taxonomy
-    tag: archive-taxonomy
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
 
 # HTML Compression
 # - https://jch.penibelst.de/
@@ -277,10 +277,10 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+      mathjax: true
+      sidebar_main: true
       show_date: true
-      sidebar:
-        nav: "docs"
       date_format: "%Y-%m-%d"

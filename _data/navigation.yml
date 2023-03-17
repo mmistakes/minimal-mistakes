@@ -6,17 +6,6 @@ main:
     url: /year-archive/
   - title: "Search"
     url: /search/
-
-docs:
-  - title: "항해99"
-    children:
-      - title: "TIL"
-        url: /categories/til
-        category: "til"
-
-counts:
-  - title: "항해99"
-    use: true
     # - title: "About"
     #   url: https://mmistakes.github.io/minimal-mistakes/about/
     # - title: "Sample Posts"
