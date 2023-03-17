@@ -9,6 +9,7 @@ Park, S., Srikiatkhachorn, A., Kalayanarooj, S., Macareo, L., Green, S., Friedma
 Method: "CB-SEM using Python's `semopy` Package."
 Case: "a partial replication of an intermediary step in modelling
 progression of the dengue illness phenotype."
+Case_code: 'Park_2018'
 Datafrom: "Park S, Srikiatkhachorn A, Kalayanarooj S, Macareo L, Green
 S, Friedman JF, et al. (2018). Use of structural equation models to
 predict dengue illness phenotype. PLoS Negl Trop Dis 12 (10): e0006799.

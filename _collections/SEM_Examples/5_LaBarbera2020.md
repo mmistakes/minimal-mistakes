@@ -10,6 +10,7 @@ intention"
 Method: "CB-SEM using R's `Lavaan` Package. The semTools package is used to compute moderation terms. The visualization was
 generated using `semPlots` Package."
 Case: "Model inspired by La Barbera's data, on the assessment of Sustainability awareness through the attitudes toward energy saving, and the implications on intention"
+Case_code: 'LaBarbera_2020'
 Datafrom: "La Barbera, F. Moderating Role of Control in the Theory of Planned Behavior: A Replication and Extension [Dataset] [Data set]. ZPID (Leibniz Institute for Psychology Information). https://doi.org/10.23668/psycharchives.2759."
 excerpt: "Some code examples using R"
 image: "https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/master/_collections/SEM_Examples/5_LaBarbera2020/LaBarbera2020_mod.png?raw=true"
