@@ -59,4 +59,4 @@ Our focus remains on our team members' well-being, ensuring they have fulfilling
 
 *Note: I love that GPT-4 picked up on the importance of diversity, well-being, and health to create exceptional products.*
 
-*Final note: If you have enjoyed this text, we are seeking more partners to join our network, and naturally, we welcome more clients to join our growing roster of launched teams. I hope that by sharing my personal journey and its influence on my vision for bld.ai (as interpreted by GPT-4), you will gain a deeper understanding of our mission and feel confident in entrusting your business to us.*
+*Final note: If you have enjoyed this text, we are seeking more partners to join our network, and naturally, we welcome more clients to join our growing roster of launched teams. I hope that by sharing my personal journey and its influence on my vision for [bld.ai](https://bld.ai) (as interpreted by GPT-4), you will gain a deeper understanding of our mission and feel confident in entrusting your business to us.*
