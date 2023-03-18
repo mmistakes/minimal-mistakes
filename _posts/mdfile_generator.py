@@ -3,7 +3,8 @@ fpath, fmode = 'C:/Users/noir1/Documents/git/noir1458.github.io/_posts/', 'w'
 def other_type():
     fdate = time.strftime('%Y-%m-%d-')
     fname = input('날짜 뒤의 파일명을 입력하세요 : ')
-    fhandle = open(fpath+fdate+fname+'.md',fmode)
+    fname2 = fname.replace(' ','-')
+    fhandle = open(fpath+fdate+fname2+'.md',fmode)
     
     infile = '''---
 layout: single
@@ -46,7 +47,8 @@ tags: BOJ
 def think_type():
     fdate = time.strftime('%Y-%m-%d-')
     fname = input('날짜 뒤의 파일명을 입력하세요 : ')
-    fhandle = open(fpath+fdate+fname+'.md',fmode)
+    fname2 = fname.replace(' ','-')
+    fhandle = open(fpath+fdate+fname2+'.md',fmode)
     
     infile = '''---
 layout: single
