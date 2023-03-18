@@ -1,5 +1,5 @@
 ---
-title: I went for a walk and wrote this
+title: My story and how it shaped bld.ai
 category: "Language model"
 tag: ["Descript", “OpenAI”]
 toc: true
