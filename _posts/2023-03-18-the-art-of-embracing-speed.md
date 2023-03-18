@@ -5,7 +5,7 @@ tag: ["Descript", “OpenAI”]
 toc: true
 ---
 
-I find myself giving the same advice to teams at [bld.ai](https://bld.ai) and at [l2m.vc](https://l2m.vc).
+I often share the same guidance with teams at both [bld.ai](https://bld.ai) and [l2m.vc](https://l2m.vc), so I thought it would be valuable to discuss it here as well.
 
 In AI development, speed is crucial. It's more important than cost and quality. We want all three, but speed comes first.
 
