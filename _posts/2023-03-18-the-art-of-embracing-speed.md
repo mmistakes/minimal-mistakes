@@ -19,6 +19,6 @@ After shipping, step back and evaluate. Check if people want your product, measu
 
 For startups, apply this approach and aim for positive unit economics and iteratively invest in your product.
 
-Make sure costs are lower than revenue and achieve positive unit economics this way.
+Make sure variable costs are lower than variable revenue and achieve positive unit economics this way.
 
 I hope this helps. Good luck!
