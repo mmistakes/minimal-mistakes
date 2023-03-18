@@ -1,7 +1,7 @@
 ---
 layout: single
 title: regular expression for Python
-tags: python
+tags: numpy_pandas
 ---
     
 ## Python and regular expression
@@ -46,7 +46,8 @@ if __name__ == '__main__':
     main()
 ```
 
-><re.Match object; span=(0, 15), match='cbvxxxxxxxxxxxx'>
+```
+<re.Match object; span=(0, 15), match='cbvxxxxxxxxxxxx'>
 <re.Match object; span=(0, 20), match='cbvxxxxxxxxxxxxcxcxx'>
 <re.Match object; span=(0, 14), match='999999-8888808'>
-
+```
