@@ -1,8 +1,6 @@
 ---
 title: The Art of Embracing Speed
-category: "Language model"
-tag: ["Descript", “OpenAI”]
-toc: true
+category: "Product Development"
 ---
 
 I often share the same guidance with teams at both [bld.ai](https://bld.ai) and [l2m.vc](https://l2m.vc), so I thought it would be valuable to discuss it here as well.
