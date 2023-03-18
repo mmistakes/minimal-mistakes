@@ -7,7 +7,7 @@ toc: true
 
 I often share the same guidance with teams at both [bld.ai](https://bld.ai) and [l2m.vc](https://l2m.vc), so I thought it would be valuable to discuss it here as well.
 
-In AI development, speed is crucial. It's more important than cost and quality. We want all three, but speed comes first.
+In AI product development, speed is crucial. It's more important than cost and quality. We want all three, but speed comes first.
 
 Optimizing for cost hurts quality. Prioritizing quality wastes time. Focus on speed to save costs, reduce scope, and fix quality later.
 
