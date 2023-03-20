@@ -20,6 +20,7 @@ tbody {
 {% assign codes = site.collections | map: "Case_code" %}
 {%assign codes = codes | uniq%}
 {%for code in codes%}
+	{%if code != blank %}
 	<h2>{{code}}: </h2> 
 		  	
     	{% for collection in site.collections %}
@@ -41,6 +42,7 @@ tbody {
         </table>	  
 	  {% endif %}
 	 {% endfor %}
+	 {% endif %}
 {%endfor%}
 
 
