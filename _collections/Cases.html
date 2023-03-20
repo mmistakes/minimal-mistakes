@@ -20,7 +20,8 @@ tbody {
 
 {% for collection in site.collections reversed %}
     {% for code in collection.Case_code%}
-    	<h2>{{code}}: {{collection.Case}}</h2>      	  	
+    	<h2>{{code}}: {{collection.Case}}</h2>     
+    	<p>Data from: {{ collection.Datafrom }}</p> 	  	
     	{% for collection in site.collections %}
 	  {% if collection.Case_code contains code %} 
 	  <table>
