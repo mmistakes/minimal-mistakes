@@ -18,7 +18,7 @@ tbody {
 }
 </style>
 
-{% for collection in site.collections %}
+{% for collection in site.collections | reverse %}
     {% for code in collection.Case_code%}
     	{% assign cases = code | first %}
     	<li>
