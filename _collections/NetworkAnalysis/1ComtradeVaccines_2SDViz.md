@@ -9,7 +9,7 @@ Method: "Spacial data visualization using R's `ggplot2` package"
 Case: "Global trade in vaccines - UN's Comtrade data"
 Case_code: 'Comtrade_vaccines'
 Datafrom: "United Nations' Comtrade data"
-image: ""
+image: "https://github.com/TomoeGusberti/tomoegusberti.github.io/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_ExportPathsMap_all.png?raw=true"
 excerpt: "Who export vaccines  to who? A spatial data Visualization using UN's Comtrade data and R's `ggplot2` package"
 header:
   overlay_color: "#333"
