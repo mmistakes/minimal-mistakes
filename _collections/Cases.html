@@ -20,8 +20,7 @@ tbody {
 
 {% for collection in site.collections reversed %}
     {% for code in collection.Case_code%}
-    	<li>
-    	<h2>{{code}}: {{collection.Case}}</h2>    	
+    	<h2>{{code}}: {{collection.Case}}</h2>      	  	
     	{% for collection in site.collections %}
 	  {% if collection.Case_code contains code %} 
 	  <table>
@@ -35,14 +34,12 @@ tbody {
             <td colspan="2"><a href="{{ collection.url }}">{{ collection.shortdesc }}</a></td>
           </tr>
           <tr>
-            <td width="30%><a href="{{ collection.url }}">{{ collection.Method }}</a></td>
-            <td width="40%><a href="{{ collection.url }}"><b>Data from: </b>{{ collection.Datafrom }}</a></td>
+            <td width="30%"><a href="{{ collection.url }}">{{ collection.Method }}</a></td>
+            <td width="40%"><a href="{{ collection.url }}"><b>Data from: </b>{{ collection.Datafrom }}</a></td>
           </tr>
         </table>	  
 	  {% endif %}
-	 {% endfor %}
-	  </li>
-	
+	 {% endfor %}	
     {% endfor %}    
 {% endfor %}  
 <ul>
