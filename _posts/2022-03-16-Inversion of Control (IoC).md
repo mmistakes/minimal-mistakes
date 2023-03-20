@@ -1,6 +1,14 @@
+---
+layout: single
+title: "IoC 가 그래서 뭐지?"
+categories: Spring
+tag: Java
+toc: true
+toc_sticky: true
+
+---
+
 # IoC 가 그래서 뭐지?
-
-
 
 Well, it's simply the design process of externalizing the construction and management of your objects.
 
@@ -8,13 +16,11 @@ So in a nutshell, it basically says that your application is gonna outsource the
 
 And that's the big idea of Inversion of Control.
 
-
-
 요약 하자면 IoC 는 디자인 프로세서고 변경이 자유롭다.
 
-![Spring - IoC-Page-1.drawio 1.png](../images/2022-03-16-Inversion%20of%20Control%20(IoC)/6a07f695e7826d193a2afcb1729ef147e6572ac7.png)
 
 
+![Spring - IoC-Page-1.drawio 1.png](/images/2022-03-16-Inversion of Control (IoC)/6a07f695e7826d193a2afcb1729ef147e6572ac7.png)
 
 ## Java Beans ? Spring Beans?
 
@@ -34,14 +40,8 @@ In this case, That's the car factory.
 They inject the engine, tires and so on for you.
 You don't have to build the car.
 
-
-
 ![Spring - IoC-Page-1.drawio (1) 1.png](../images/2022-03-16-Inversion%20of%20Control%20(IoC)/db9017c5c5fd753754c32159c150db03cb104293.png)
 
-
-
 ![Pasted image 20230303054847.png](../images/2022-03-16-Inversion%20of%20Control%20(IoC)/5dcaa5756b8e65ee6a01683f49865f19976ebf51.png)
-
-
 
 출처 유데미 & https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring
