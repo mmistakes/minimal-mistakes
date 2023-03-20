@@ -21,12 +21,12 @@ tbody {
 {% for collection in site.collections reversed %}
     {% for code in collection.Case_code%}
     	<li>
-    	{{code}}{{collection.Case}}
+    	<h2>{{code}}: {{collection.Case}}</h2>    	
     	{% for collection in site.collections %}
 	  {% if collection.Case_code contains code %} 
 	  <table>
           <tr>
-            <td colspan="3"><h2 href="{{ collection.url }}">{{ collection.title }}</h2></td>
+            <td colspan="3"><h3 href="{{ collection.url }}">{{ collection.title }}</h3></td>
           </tr>
           <tr>
             <td rowspan="3"><a href="{{ collection.url }}"><image src={{ collection.image }} alt = {{collection.title}} style="max-height:100%; max-width:100%; object-fit: cover"></a></td>
