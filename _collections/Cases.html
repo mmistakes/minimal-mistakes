@@ -18,9 +18,9 @@ tbody {
 }
 </style>
 <ul>
-{% for code in site.collections.Case_code %}
-    <li> <div> {{code}}</div> </li>
-{% endfor %}
+	{% for code in site.collections.Case_code | uniq %}
+	    <li> {{code}}</li>
+	{% endfor %}
 </ul>
 
 
