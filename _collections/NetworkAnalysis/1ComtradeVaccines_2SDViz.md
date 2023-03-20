@@ -9,7 +9,7 @@ Method: "Spacial data visualization using R's `ggplot2` package"
 Case: "Global trade in vaccines - UN's Comtrade data"
 Case_code: 'Comtrade_vaccines'
 Datafrom: "United Nations' Comtrade data"
-image: "https://github.com/TomoeGusberti/tomoegusberti.github.io/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_ExportPathsMap_all.png?raw=true"
+image: "https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/75c741ae6fc827c49360c55c411861532e9da3ab/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_countMap_all.png"
 excerpt: "Who export vaccines  to who? A spatial data Visualization using UN's Comtrade data and R's `ggplot2` package"
 header:
   overlay_color: "#333"
@@ -309,7 +309,7 @@ p<-grid.arrange(arrangeGrob(grobs = plots_list2, ncol = 3),
 )
 ```
 
-![TotalExport_countMap](https://github.com/TomoeGusberti/tomoegusberti.github.io/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_countMap_all.png?raw=true)
+![TotalExport_countMap](https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/75c741ae6fc827c49360c55c411861532e9da3ab/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_BubbleMap_all.png?raw=true)
 
 ## bubble map with total exportation (values)
 
@@ -352,7 +352,7 @@ p<-grid.arrange(arrangeGrob(grobs = plots_list2, ncol = 3),
              heights = c(9, 1)
 )
 ```
-![TotalExport_bubbleMap](https://github.com/TomoeGusberti/tomoegusberti.github.io/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_BubbleMap_all.png?raw=true)
+![TotalExport_bubbleMap](https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/75c741ae6fc827c49360c55c411861532e9da3ab/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_BubbleMap_all.png?raw=true)
 
 ## Simple bar plots
 
@@ -389,7 +389,7 @@ plots_list2<-sapply(names(Barplot_l),function(x){
 },USE.NAMES = TRUE,simplify = FALSE)
 p<-grid.arrange(arrangeGrob(grobs = plots_list2, ncol = 3))
 ```
-![TotalExport_barPlot](https://github.com/TomoeGusberti/tomoegusberti.github.io/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_barplot_all.png?raw=true)
+![TotalExport_barPlot](https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/75c741ae6fc827c49360c55c411861532e9da3ab/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_barplot_all.png?raw=true)
 
 And note how the spatial data visualization essentially intends to show
 the same information of the bar plot, but has the geographical
@@ -453,7 +453,7 @@ p<-grid.arrange(arrangeGrob(grobs = plots_list2, ncol = 3),
              widths = c(9, 1)
 )
 ```
-![TotalExport_TreeMap](https://github.com/TomoeGusberti/tomoegusberti.github.io/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_TreeMap_all.png?raw=true)
+![TotalExport_TreeMap](https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/75c741ae6fc827c49360c55c411861532e9da3ab/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_TreeMap_all.png?raw=true)
 
 Before the Covid Outbreak, the vaccine market was led by companies like
 Merck (US), GlaxoSmithCline GSK (mostly manufacturing at Belgium) and
@@ -556,7 +556,7 @@ p<-grid.arrange(arrangeGrob(grobs = plots_list2, ncol = 3),
              heights = c(9, 1)
 )
 ```
-![TotalExport_Paths](https://github.com/TomoeGusberti/tomoegusberti.github.io/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_ExportPathsMap_all.png?raw=true)
+![TotalExport_Paths](https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/75c741ae6fc827c49360c55c411861532e9da3ab/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_countMap_all.png?raw=true)
 
 # Conclusion remarks
 
