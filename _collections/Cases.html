@@ -22,7 +22,7 @@ tbody {
     {% for code in collection.Case_code%}
     	{% assign cases = code | first %}
     	<li>
-    	{{code}}
+    	{{code}}: {{collection.Case}}
     	{% for collection in site.collections %}
 	  {% if collection.Case_code contains code %} 
 	  <table>
