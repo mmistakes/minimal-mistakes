@@ -5,6 +5,9 @@ categories: Spring
 tag: Java
 toc: true
 toc_sticky: true
+author_profile: false
+sidebar:
+    nav: "docs"
 
 ---
 
