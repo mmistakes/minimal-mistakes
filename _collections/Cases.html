@@ -19,12 +19,12 @@ tbody {
 </style>
 
 {% for collection in site.collections  %}
-    {% for code in collection.Case_code and case_l in collection.Case%}
-    	{% assign cases = code | last %}
-    	{% assign cases_l = case_l | last %}
+    {% for code in collection.Case_code%}
+    	{% assign cases = code | first %}
+    	{% assign cases_l = case_l | first %}
 	{% endfor %}
 {% endfor %}
-{% for code in cases  and case_l in cases_l%}
+{% for code in cases|reverse %}
     	<li>
     	{{code}}: {{case_l}}
     	{% for collection in site.collections %}
