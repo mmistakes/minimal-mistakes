@@ -19,7 +19,7 @@ tbody {
 </style>
 
 {% for collection in site.collections reversed %}
-    {% for code in collection.Case_code%}
+    {% for code in collection.Case_code | uniq %}
     	<h2>{{code}}: {{collection.Case}}</h2>     
     	<p>Data from: {{ collection.Datafrom }}</p> 	  	
     	{% for collection in site.collections %}
