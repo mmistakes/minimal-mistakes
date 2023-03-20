@@ -2,10 +2,10 @@
 layout: single
 author_profile: true
 title: "Assessing the global trade of vaccines using spatial data visualization and UN's Comtrade data"
-categories: ['R','SpacialData']
+categories: ['R','SpatialData']
 shorttitle: "1_ComtradeVaccine_SDViz"
 shortdesc: "Spatial data analysis "
-Method: "Spacial data visualization using R's `ggplot2` package"
+Method: "Spatial data visualization using R's `ggplot2` package"
 Case: "Global trade in vaccines - UN's Comtrade data"
 Case_code: 'Comtrade_vaccines'
 Datafrom: "United Nations' Comtrade data"
@@ -28,7 +28,7 @@ editor_options:
 
 
 
-# 2.1 Spacial visualization
+# 2.1 Spatial visualization
 
 In this post, we assess the global trade regarding vaccine supply
 sources and international commerce using UN's Comtrade data.
