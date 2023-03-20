@@ -18,11 +18,10 @@ tbody {
 }
 </style>
 
-{% for collection in site.collections  %}
+{% for collection in site.collections |reverse %}
     {% for code in collection.Case_code%}
-    	{% assign cases = code | first %}
     	<li>
-    	{{code}}{{collection.Code}}
+    	{{code}}{{collection.Case}}
     	{% for collection in site.collections %}
 	  {% if collection.Case_code contains code %} 
 	  <table>
