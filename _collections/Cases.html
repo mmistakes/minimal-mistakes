@@ -21,11 +21,11 @@ tbody {
 {% for collection in site.collections %}
     {% for code in collection.Case_code%}
     	{% assign cases = code | first %}
+    	<li>
+    	{{code}}
     	{% for collection in site.collections %}
-	  {% if collection.Case_code contains code %}
-	  <li>
-	  {{code}}
-	    <table>
+	  {% if collection.Case_code contains code %} 
+	  <table>
           <tr>
             <td colspan="3"><h2 href="{{ collection.url }}">{{ collection.title }}</h2></td>
           </tr>
@@ -39,9 +39,9 @@ tbody {
             <td width="30%><a href="{{ collection.url }}">{{ collection.Method }}</a></td>
             <td width="40%><a href="{{ collection.url }}"><b>Data from: </b>{{ collection.Datafrom }}</a></td>
           </tr>
-        </table>
-	  </li>
+        </table>	  
 	  {% endif %}
+	  </li>
 	{% endfor %}
     {% endfor %}    
 {% endfor %}
