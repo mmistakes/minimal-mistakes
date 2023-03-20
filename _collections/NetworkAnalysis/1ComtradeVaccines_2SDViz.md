@@ -9,7 +9,7 @@ Method: "Spacial data visualization using R's `ggplot2` package"
 Case: "Global trade in vaccines - UN's Comtrade data"
 Case_code: 'Comtrade_vaccines'
 Datafrom: "United Nations' Comtrade data"
-image: "https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/75c741ae6fc827c49360c55c411861532e9da3ab/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_countMap_all.png"
+image: "https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/a909016743381ac7937d5b38aa8814800dd996d4/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_ExportPathsMap_all.png?raw=true"
 excerpt: "Who export vaccines  to who? A spatial data Visualization using UN's Comtrade data and R's `ggplot2` package"
 header:
   overlay_color: "#333"
@@ -309,7 +309,7 @@ p<-grid.arrange(arrangeGrob(grobs = plots_list2, ncol = 3),
 )
 ```
 
-![TotalExport_countMap](https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/75c741ae6fc827c49360c55c411861532e9da3ab/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_BubbleMap_all.png?raw=true)
+![TotalExport_countMap](https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/a909016743381ac7937d5b38aa8814800dd996d4/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_countMap_all.png?raw=true)
 
 ## bubble map with total exportation (values)
 
@@ -556,7 +556,7 @@ p<-grid.arrange(arrangeGrob(grobs = plots_list2, ncol = 3),
              heights = c(9, 1)
 )
 ```
-![TotalExport_Paths](https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/75c741ae6fc827c49360c55c411861532e9da3ab/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_countMap_all.png?raw=true)
+![TotalExport_Paths](https://github.com/TomoeGusberti/tomoegusberti.github.io/blob/a909016743381ac7937d5b38aa8814800dd996d4/_collections/NetworkAnalysis/1_ComtradeVaccine/2_1_ComtradeVaccine_ExportPathsMap_all.png?raw=true)
 
 # Conclusion remarks
 
