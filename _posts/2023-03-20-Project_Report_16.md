@@ -337,4 +337,4 @@ public class RecordRepositoryCustomImplTest {
 # 정리
 
 사용자 정의 Repository인 RecordRepositoryCustomImpl을 생성하여 DB에서 영화, 게시글 정보를 생성일자 기준 내림차순하여 가져올 수 있게 되었다.<br>
-RecordService에서 이 데이터들을 가공하여 컨트롤러에 넘겨주면, 컨트롤러는 model을 통해 front단에 넘겨주어 출력만 잘 해주면 될 것 같다.
+RecordService에서 이 데이터들을 가공하여 컨트롤러에 넘겨주면, 컨트롤러는 model을 통해 front단에 넘겨주어 출력만 잘 해주면 될 것 같다. 
