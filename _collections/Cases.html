@@ -17,6 +17,16 @@ tbody {
   font-style: italic;
 }
 </style>
+{ %assign codes=''%}
+{% for collection in site.collections reversed %}
+    {% for code in collection.Case_code %}
+    	{% assign codes|concat: code%}
+    {% endfor %}    
+{% endfor %}  
+{%assign codes = codes|uniq%}
+{for code in codes}
+	<p>{{code}}</p>
+{%endfor%}
 
 {% for collection in site.collections reversed %}
     {% for code in collection.Case_code | uniq %}
