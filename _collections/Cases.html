@@ -24,7 +24,7 @@ tbody {
     {% endfor %}    
 {% endfor %}  
 {%assign codes = codes|uniq%}
-{for code in codes}
+{%for code in codes%}
 	<p>{{code}}</p>
 {%endfor%}
 
