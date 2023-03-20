@@ -20,8 +20,8 @@ tbody {
 
 {% for collection in site.collections  %}
     {% for code in collection.Case_code and case_l in collection.Case%}
-    	{% assign cases = code | reverse %}
-    	{% assign cases_l = case_l | reverse %}
+    	{% assign cases = code | last %}
+    	{% assign cases_l = case_l | last %}
 	{% endfor %}
 {% endfor %}
 {% for code in cases  and case_l in cases_l%}
@@ -45,8 +45,9 @@ tbody {
           </tr>
         </table>	  
 	  {% endif %}
+	 {% endfor %}
 	  </li>
-	{% endfor %}
+	
     {% endfor %}    
 
 <ul>
