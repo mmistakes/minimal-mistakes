@@ -8,6 +8,8 @@
     
 ## Preprints
 
+- Le Denmat, P, Verguts, T., & Desender, K. (2023). A low-dimensional approximation of optimal confidence. [BioArxiv](https://www.biorxiv.org/content/10.1101/2023.03.15.532729v1)
+
 - Beeckmans, M., Huycke, P., Verguts, T., & Verbeke, P. (2023). How much data do we need to estimate computational models of decision making? The COMPASS toolbox. [PsyArxiv](https://psyarxiv.com/dexyk/)
 
 - Verbeke, P., & Verguts, T. (2023). Humans adaptively select different computational strategies in different learning environments. [BioArxiv.](https://www.biorxiv.org/content/10.1101/2023.01.27.525944v1)
