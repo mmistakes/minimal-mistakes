@@ -208,7 +208,7 @@
   - ```java
     package com.example.ioc2;
     
-    import ...
+    import ...;
     
     @Component
     public class ApplicationContextProvider implements ApplicationContextAware {
@@ -424,7 +424,7 @@
 
 
 
-### 예제 1
+### 예제 1 : PointCut
 
 - RestApiController
 
