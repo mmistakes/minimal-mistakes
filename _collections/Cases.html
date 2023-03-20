@@ -18,7 +18,7 @@ tbody {
 }
 </style>
 
-{% for collection in site.collections |reverse %}
+{% for collection in site.collections reversed %}
     {% for code in collection.Case_code%}
     	<li>
     	{{code}}{{collection.Case}}
