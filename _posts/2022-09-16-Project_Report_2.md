@@ -144,18 +144,53 @@ public class JoinForm {
 
 처음에는 Service가 Repository를 바로 의존관계 주입하도록 했는데, 나중에 Repository 코드를 바꿀 가능성이 있기 때문에 Interface를 하나 만들어서 Service로직이 Interface를 주입받도록 설계했다.
 
-<br>
-
-**구현 기능**<br>
-우선 필요한 4가지 로직만 작성해 놓았다.
-- 회원 저장
-- DB ID값을 통한 회원 조회
-- 회원 id값을 통한 회원 조회
-- 전체 회원 조회
-
-
-#### findAll()
 ```java
+@Repository
+@RequiredArgsConstructor
+public class UserRepositoryImpl implements UserRepository {
+
+    private final EntityManager em;
+
+    // 회원을 저장하는 메소드
+    @Override
+    public void save(User user_info) {
+        em.persist(user_info);
+    }
+
+    /*
+    * DB ID값으로 회원 조회
+    * 테스트 코드에서 사용
+    * */
+    @Override
+    public User findById(Long id) {
+        return em.find(User.class, id);
+    }
+
+    /*
+    /*
+    * 회원 아이디로 회원 엔티티 조회
+    * Session을 통해 유저 정보를 가져올 때 id값이 없기 때문에 새로 조회하기 위해 사용
+    * */
+    @Override
+    public User loadUserByUserId(String userId) {
+        return (User) em.createQuery("select u from User u where u.userId =: userId")
+                .setParameter("userId", userId)
+                .getSingleResult();
+    }
+
+    /*
+    * 회원 아이디로 회원 검색(회원가입 / 로그인시 확인용으로 사용)
+    * */
+    @Override
+    public Optional<FindUserDto> findByUserId(String userId) {
+        return findAll().stream()
+                .filter(findUserDto -> findUserDto.getUserId().equals(userId))
+                .findFirst();
+    }
+
+    /*
+    * 전체 회원 조회
+    * */
     @Override
     public List<FindUserDto> findAll() {
         return em.createQuery(
@@ -163,9 +198,18 @@ public class JoinForm {
                 " from User u", FindUserDto.class)
                 .getResultList();
     }
+
+    @Override
+    public void deleteUser(User user) {
+        em.remove(user);
+    }
+}
 ```
-- 우선 순수 JPA로만 작성했는데, 추후에 Querydsl로 변경할 수도 있다..
-- 전체 회원을 조회하는데, User Entity 그대로 받아오지 않고, 필요한 정보만 Dto로 받아오게 했다.
+- `findAll()`
+    - 전체 회원을 조회하는데, User Entity 그대로 받아오지 않고, 필요한 정보만 Dto로 받아오게 했다.
+- `findByUserId()`
+    - `userId`값을 통해서 DB에 이미 가입되어 있는 회원인지 값을 가져온다.
+    - `findAll()`을 사용해서 가져온 모든 데이터에서 필터링을 통해 원하는 정보만 뽑아올 수 있게 작성하였다.
 
 **FindUserDto**
 ```java
@@ -179,28 +223,13 @@ public class FindUserDto {
 }
 ```
 
-
-#### findByUserId()
-
-회원가입할 때 입력하는 회원의 아이디를 통해서 중복회원이 가입하는건지 체크하기 위한 로직이다.
-```java
-    @Override
-    public Optional<FindUserDto> findByUserId(String userId) {
-        return findAll().stream()
-                .filter(findUserDto -> findUserDto.getUserId().equals(userId))
-                .findFirst();
-    }
-```
-- `userId`값을 통해서 DB에 이미 가입되어 있는 회원인지 값을 가져온다.
-- `findAll()`을 사용해서 가져온 모든 데이터에서 필터링을 통해 원하는 정보만 뽑아올 수 있게 작성하였다.
-
 <br>
 
 여기서 한 가지 고민은 `Optional` 사용 여부였다.<br>
 `Optional`을 찾아보니 비용이 비싸서 정확한 의도대로 사용하지 않으면 오히려 안쓰는 것보다 못하다고 했다.<br>
 우선 사용하긴 했지만, 나중에 리팩토링할 때 메모리를 많이 잡아먹는다고 생각되면 비교문으로 바꿔야 겠다.
 
-### UserService(비즈니스 로직)
+### UserService
 
 `Service` 역할은 회원가입 form에서 받은 정보로 중복회원인지 확인하고, 중복회원이 아니라면 User Entity로 변환해서 `Repository`에 넘겨주어 DB에 저장하는 역할을 한다.
 
