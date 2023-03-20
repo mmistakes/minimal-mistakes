@@ -17,12 +17,36 @@ tbody {
   font-style: italic;
 }
 </style>
-<ul>
-	{% for collection in site.collections %}
-		{% for code in collection.Case_code%}
-	    	<li> {{code}}</li>
-	    {% endfor %}
+
+{% for collection in site.collections %}
+    {% for code in collection.Case_code%}
+    	{% assign cases = code | first %}
+    	{% for collection in site.collections %}
+	  {% if collection.Case_code contains code %}
+	  <li>
+	  {{code}}
+	    <table>
+          <tr>
+            <td colspan="3"><h2 href="{{ collection.url }}">{{ collection.title }}</h2></td>
+          </tr>
+          <tr>
+            <td rowspan="3"><a href="{{ collection.url }}"><image src={{ collection.image }} alt = {{collection.title}} style="max-height:100%; max-width:100%; object-fit: cover"></a></td>
+            </tr>
+          <tr>
+            <td colspan="2"><a href="{{ collection.url }}">{{ collection.shortdesc }}</a></td>
+          </tr>
+          <tr>
+            <td width="30%><a href="{{ collection.url }}">{{ collection.Method }}</a></td>
+            <td width="40%><a href="{{ collection.url }}"><b>Data from: </b>{{ collection.Datafrom }}</a></td>
+          </tr>
+        </table>
+	  </li>
+	  {% endif %}
 	{% endfor %}
+    {% endfor %}    
+{% endfor %}
+<ul>
+	
 </ul>
 
 
