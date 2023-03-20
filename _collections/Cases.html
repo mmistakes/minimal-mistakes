@@ -21,11 +21,8 @@ tbody {
 {% for collection in site.collections  %}
     {% for code in collection.Case_code%}
     	{% assign cases = code | first %}
-	{% endfor %}
-{% endfor %}
-{% for code in cases|reverse %}
     	<li>
-    	{{code}}
+    	{{code}}{{collection.Code}}
     	{% for collection in site.collections %}
 	  {% if collection.Case_code contains code %} 
 	  <table>
@@ -48,7 +45,7 @@ tbody {
 	  </li>
 	
     {% endfor %}    
-
+{% endfor %}  
 <ul>
 	
 </ul>
