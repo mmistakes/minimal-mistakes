@@ -18,8 +18,10 @@ tbody {
 }
 </style>
 <ul>
-	{% for code in site.collections.Case_code | uniq %}
-	    <li> {{code}}</li>
+	{% for collection in site.collections %}
+		{% for code in collection.Case_code%}
+	    	<li> {{code}}</li>
+	    {% endfor %}
 	{% endfor %}
 </ul>
 
