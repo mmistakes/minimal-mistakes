@@ -96,9 +96,5 @@
                 {% endfor %}
             </ul>
         </li>
-        <li>
-            <br>
-            <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fmgskko.github.io&count_bg=%23D6D714&title_bg=%23D50F34&icon=googlekeep.svg&icon_color=%23E7E7E7&title=&edge_flat=false"/></a>
-        </li>
     </ul>
 </nav>
