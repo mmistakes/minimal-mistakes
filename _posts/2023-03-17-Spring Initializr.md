@@ -1,4 +1,4 @@
-Spring Initializr created a maven 
+Spring Initializr created a maven.
 
 ## Maven Standard Directory Structure
 
