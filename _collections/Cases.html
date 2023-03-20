@@ -18,7 +18,7 @@ tbody {
 }
 </style>
 {% assign codes = site.collections | map: "Case_code" %}
-{%assign codes = codes | uniq%}
+{%assign codes = codes | uniq |reverse%}
 {%for code in codes%}
 	{%if code != "" and code != blank and code !=empty and code !=nil%}
 	<h2>{{code}}: </h2> 
