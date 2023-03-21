@@ -1,12 +1,25 @@
+---
+layout: single
+title: "Spring Initializr?"
+categories: Spring
+tag: [Java,Spring Initializr]
+toc: true
+toc_sticky: true
+author_profile: false
+sidebar:
+    nav: "docs"
+
+---
+
 Spring Initializr created a maven.
 
 ## Maven Standard Directory Structure
 
-![](../images/2023-03-17-Spring%20Initializr/2023-03-17-18-35-59-image.png)
+![](/images/2023-03-17-Spring%20Initializr/2023-03-17-18-35-59-image.png)
 
 ## Maven Wrapper files
 
-<img src="../images/2023-03-17-Spring%20Initializr/2023-03-17-18-40-18-image.png" title="" alt="" width="247">
+<img src="/images/2023-03-17-Spring%20Initializr/2023-03-17-18-40-18-image.png" title="" alt="" width="247">
 
 - mbnw allows you to run a Maven project
   - No need to have Maven installed or present on your path
@@ -22,7 +35,7 @@ Spring Initializr created a maven.
 
 - pom.xml includes info that you entered at Spring Initializr website 
 
-<img src="../images/2023-03-17-Spring%20Initializr/2023-03-17-18-45-29-image.png" title="" alt="" width="248">
+<img src="/images/2023-03-17-Spring%20Initializr/2023-03-17-18-45-29-image.png" title="" alt="" width="248">
 
 ```java
 <?xml version="1.0" encoding="UTF-8"?>
@@ -76,7 +89,7 @@ Spring Initializr created a maven.
 
 - By default, Spring Boot will load properties from: application.properties
 
-![](../images/2023-03-17-Spring%20Initializr/2023-03-17-18-51-58-image.png)
+![](/images/2023-03-17-Spring%20Initializr/2023-03-17-18-51-58-image.png)
 
 - Created by Spring initializr
   
@@ -114,7 +127,7 @@ Spring Initializr created a maven.
 ```
 ## Static Content
 
-![](../images/2023-03-17-Spring%20Initializr/2023-03-17-18-58-39-image.png)
+![](/images/2023-03-17-Spring%20Initializr/2023-03-17-18-58-39-image.png)
 
 - By default, Spring Boot will load static resources from "/static" directory
 
@@ -145,5 +158,5 @@ It is silently ignored by most build tools if you generate a JAR.
 
 ## Unit Tests
 
-<img src="../images/2023-03-17-Spring%20Initializr/2023-03-17-19-05-55-image.png" title="" alt="" width="443">
+<img src="/images/2023-03-17-Spring%20Initializr/2023-03-17-19-05-55-image.png" title="" alt="" width="443">
 ```

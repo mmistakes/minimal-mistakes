@@ -1,12 +1,25 @@
-# Beans 이 뭐지?
+---
+layout: single
+title: "Beans 이게 뭐지?"
+categories: Spring
+tag: [Java,Beans]
+toc: true
+toc_sticky: true
+author_profile: false
+sidebar:
+    nav: "docs"
+
+---
+
+## Beans 뭐지?
 
 스프링 Core container 에는 크게 Beans, Core, SpEL, Context 가 있다.
 
 우선 Bean에 대해서 공부를 해보자.
 
-![Spring - IoC-페이지-3.drawio.png](../images/2023-03-16-Spring%20Framework%20Overview/00ec64aaa5d8e5fc0f87b61956d3153239e642f7.png)
+![Spring - IoC-페이지-3.drawio.png](/images/2023-03-16-Spring%20Framework%20Overview/00ec64aaa5d8e5fc0f87b61956d3153239e642f7.png)
 
-## Beans 이란?
+## 그래서 Beans가 뭔데..?
 
 우리가 자주 사용할 **Bean을 지원**하는 모듈이다.  
 앞에서 배웠던 **의존성 주입을 얘가 담당**한다.
@@ -53,7 +66,7 @@ class B {
 이럴 경우 클래스 A가 클래스 B 를 직접 만드는 게 아니라 외부에 있는 class B 를 사용하기 때문에
 A는 B에 의존적이고 의존성 주입이라고 한다.
 
-![Pasted image 20230314003331.png](../images/2023-03-16-Spring%20Framework%20Overview/312f067587563f97d5575ff5f7ba0ef61a800223.png)
+![Pasted image 20230314003331.png](/images/2023-03-16-Spring%20Framework%20Overview/312f067587563f97d5575ff5f7ba0ef61a800223.png)
 
 Class A가 Class B를 직접 참조하고 생성했던 것을
 중간에 매개체를 통해서 사용하면 제어가 역전된다

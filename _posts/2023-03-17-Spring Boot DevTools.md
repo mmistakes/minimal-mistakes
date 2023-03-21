@@ -1,3 +1,16 @@
+---
+layout: single
+title: "Spring Boot DevTools?"
+categories: Spring
+tag: [Java,Devtools]
+toc: true
+toc_sticky: true
+author_profile: false
+sidebar:
+    nav: "docs"
+
+---
+
 ## The problem
 
 - When running Spring Boot applications
@@ -37,7 +50,7 @@
   
   - Check box: Build project automatically
     
-    ![](../images/2023-03-17-Spring%20Boot%20Dev%20Tools/2023-03-17-20-37-34-image.png)
+    ![](/images/2023-03-17-Spring%20Boot%20Dev%20Tools/2023-03-17-20-37-34-image.png)
 
 - Additional setting
 
@@ -45,7 +58,7 @@
   
   - Check box : Allow auto-make-to ..
   
-  ![](../images/2023-03-17-Spring%20Boot%20Dev%20Tools/2023-03-17-20-39-29-image.png)
+  ![](/images/2023-03-17-Spring%20Boot%20Dev%20Tools/2023-03-17-20-39-29-image.png)
 
 이렇게 2개 체크하고 밑에 코드 pom.xml에 추가해 주면 끝 (새로고침 잊지말기)
 

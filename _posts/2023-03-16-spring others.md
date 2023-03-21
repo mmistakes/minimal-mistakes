@@ -1,3 +1,16 @@
+---
+layout: single
+title: "작성예정"
+categories: Spring
+tag: Java
+toc: true
+toc_sticky: true
+author_profile: false
+sidebar:
+    nav: "docs"
+
+---
+
 Core
 
 **다른 모든 모듈들의 핵심이 되는 부분**이다.  

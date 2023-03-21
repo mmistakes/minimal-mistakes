@@ -1,3 +1,16 @@
+---
+layout: single
+title: "@Autowired, @Resource and @inject"
+categories: Spring
+tag: [Java,@Autowired,@Resource,@]
+toc: true
+toc_sticky: true
+author_profile: false
+sidebar:
+    nav: "docs"
+
+---
+
 # Overview
 
 In this Spring Framework tutorial, we'll demonstrate how to use annotations related to dependency injection, namely the _@Resource_, _@Inject_, and _@Autowired_ annotations. These annotations provide classes with a declarative way to resolve dependencies:
