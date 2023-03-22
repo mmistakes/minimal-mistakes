@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "지은이의블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "임은"
+name                     : "임지은"
 description              : "An amazing website."
 url                      :  "https://Jieun-IM.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
