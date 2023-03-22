@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Spring] Security 인증(Authentication)"
-categories: blog
+categories: Spring
 tag: [back-end, spring, security]
 toc: true
 toc_sticky: true
