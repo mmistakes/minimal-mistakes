@@ -18,7 +18,11 @@ main:
 docs:
   - title: "목차"
     children:
-    - title: "Category"
-      url: /categories/
-    - title: "Tag"
-      url: /tags/
+    - title: "DeepLearning"
+      url: /deeplearning/
+    - title: "Spring"
+      url: /categories/#Spring/
+    - title: "Algorithm & Data Structure"
+      url: /algorithmAndDataStructure/
+
+  

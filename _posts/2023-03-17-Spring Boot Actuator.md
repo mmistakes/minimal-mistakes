@@ -242,3 +242,5 @@ src/main/resources/application.properties
 - 빠밤!
 
 ![](/images/2023-03-17-Spring%20Boot%20Actuator/2023-03-21-05-41-14-image.png)
+
+출처 유데미

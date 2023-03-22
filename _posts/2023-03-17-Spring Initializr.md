@@ -11,6 +11,8 @@ sidebar:
 
 ---
 
+# Spring Initializr 간략하게 보기
+
 Spring Initializr created a maven.
 
 ## Maven Standard Directory Structure
@@ -119,12 +121,13 @@ Spring Initializr created a maven.
   server.port = 8484
   ```
 
-# configure my props
+## configure my props
 
-  coach.name = Micky Mouse
-  team.name = The Mouse Crew
-
+```java
+coach.name = Micky Mouse
+ team.name = The Mouse Crew
 ```
+
 ## Static Content
 
 ![](/images/2023-03-17-Spring%20Initializr/2023-03-17-18-58-39-image.png)
@@ -142,8 +145,6 @@ It is silently ignored by most build tools if you generate a JAR.
 
 - WAR 패키징만 되니까 조심할 것
 
-
-
 ## Templates
 
 - Spring Boot includes auto-configuration for following template engines
@@ -154,9 +155,8 @@ It is silently ignored by most build tools if you generate a JAR.
 
 - Mustache
 
-
-
 ## Unit Tests
 
 <img src="/images/2023-03-17-Spring%20Initializr/2023-03-17-19-05-55-image.png" title="" alt="" width="443">
-```
+
+출처 유데미, luv2code.com
