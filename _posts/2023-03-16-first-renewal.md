@@ -2,7 +2,7 @@
 layout: single
 title: "블로그 새롭게 만들었습니다!"
 categories: blog
-tag: [blog, java]
+tag: blog
 toc: true
 toc_sticky: true
 toc_label: index
