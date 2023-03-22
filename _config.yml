@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "지은이의블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "임은"
 description              : "An amazing website."
 url                      :  "https://Jieun-IM.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "임지은"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "I am an **cute** person."
+  location         : "Busan"
   email            :
   links:
     - label: "Email"
