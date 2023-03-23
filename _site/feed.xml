@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-23T18:28:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Euihyunee</title><subtitle>euihyunee blog</subtitle><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><entry><title type="html">[Java]StringTokenizer사용법?</title><link href="http://localhost:4000/java/StringTokenizer/" rel="alternate" type="text/html" title="[Java]StringTokenizer사용법?" /><published>2022-11-29T00:00:00+09:00</published><updated>2022-11-29T00:00:00+09:00</updated><id>http://localhost:4000/java/StringTokenizer</id><content type="html" xml:base="http://localhost:4000/java/StringTokenizer/"><![CDATA[<h2 id="1-라이브러리">1. 라이브러리</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-23T19:30:59+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Euihyunee</title><subtitle>euihyunee blog</subtitle><author><name>Euihyunee</name><email>lobil7782@gmail.com</email></author><entry><title type="html">[Java]StringTokenizer사용법?</title><link href="http://localhost:4000/java/StringTokenizer/" rel="alternate" type="text/html" title="[Java]StringTokenizer사용법?" /><published>2022-11-29T00:00:00+09:00</published><updated>2022-11-29T00:00:00+09:00</updated><id>http://localhost:4000/java/StringTokenizer</id><content type="html" xml:base="http://localhost:4000/java/StringTokenizer/"><![CDATA[<h2 id="1-라이브러리">1. 라이브러리</h2>
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.StringTokenizer</span><span class="o">;</span>
 </code></pre></div></div>
@@ -147,7 +147,7 @@ Spring
   <li>StringTokenizer는 결과값이 문자열이라면 split은 결과값이 문자열 배열이다.</li>
   <li>성능적으로는 배열에 담아 반환하는 split이 StringTokenizer보다 뒤쳐진다.<br />
 하지만 그렇게 큰 차이는 없으므로 편한 방식을 사용하면 된다.</li>
-</ul>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><category term="java" /><summary type="html"><![CDATA[문자열 분리]]></summary></entry><entry><title type="html">[JPA]Spring Data JPA</title><link href="http://localhost:4000/jpa/SpringJPA/" rel="alternate" type="text/html" title="[JPA]Spring Data JPA" /><published>2022-11-06T00:00:00+09:00</published><updated>2022-11-06T00:00:00+09:00</updated><id>http://localhost:4000/jpa/SpringJPA</id><content type="html" xml:base="http://localhost:4000/jpa/SpringJPA/"><![CDATA[<h2 id="spring-data-jpa란">Spring Data JPA란?</h2>
+</ul>]]></content><author><name>Euihyunee</name><email>lobil7782@gmail.com</email></author><category term="java" /><summary type="html"><![CDATA[문자열 분리]]></summary></entry><entry><title type="html">[JPA]Spring Data JPA</title><link href="http://localhost:4000/jpa/SpringJPA/" rel="alternate" type="text/html" title="[JPA]Spring Data JPA" /><published>2022-11-06T00:00:00+09:00</published><updated>2022-11-06T00:00:00+09:00</updated><id>http://localhost:4000/jpa/SpringJPA</id><content type="html" xml:base="http://localhost:4000/jpa/SpringJPA/"><![CDATA[<h2 id="spring-data-jpa란">Spring Data JPA란?</h2>
 <blockquote>
   <ul>
     <li>JPA를 좀 더 편하게 사용할 수 있게 Repository interface를 제공한다.<br />
@@ -270,7 +270,7 @@ repository 개발 시 인터페이스만 작성하면 실행 시점에 spring da
     <span class="nc">List</span><span class="o">&lt;</span><span class="nc">User</span><span class="o">&gt;</span> <span class="nf">findByEmailAddressAndLastname</span><span class="o">(</span>
         <span class="nc">String</span> <span class="n">emailAddress</span><span class="o">,</span> <span class="nc">String</span> <span class="nc">Lastname</span><span class="o">);</span>
 <span class="o">}</span>
-</code></pre></div></div>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><category term="jpa" /><summary type="html"><![CDATA[Spring Data JPA에 대해서]]></summary></entry><entry><title type="html">[JPA]영속성 컨텍스트</title><link href="http://localhost:4000/jpa/persist/" rel="alternate" type="text/html" title="[JPA]영속성 컨텍스트" /><published>2022-10-23T00:00:00+09:00</published><updated>2022-10-23T00:00:00+09:00</updated><id>http://localhost:4000/jpa/persist</id><content type="html" xml:base="http://localhost:4000/jpa/persist/"><![CDATA[<h2 id="영속성-컨텍스트란">영속성 컨텍스트란?</h2>
+</code></pre></div></div>]]></content><author><name>Euihyunee</name><email>lobil7782@gmail.com</email></author><category term="jpa" /><summary type="html"><![CDATA[Spring Data JPA에 대해서]]></summary></entry><entry><title type="html">[JPA]영속성 컨텍스트</title><link href="http://localhost:4000/jpa/persist/" rel="alternate" type="text/html" title="[JPA]영속성 컨텍스트" /><published>2022-10-23T00:00:00+09:00</published><updated>2022-10-23T00:00:00+09:00</updated><id>http://localhost:4000/jpa/persist</id><content type="html" xml:base="http://localhost:4000/jpa/persist/"><![CDATA[<h2 id="영속성-컨텍스트란">영속성 컨텍스트란?</h2>
 <ul>
   <li>JPA에서 가장 중요한 2가지 중 하나이다.</li>
   <li>~~”엔티티를 영구 저장하는 환경”이라는 뜻이다. ~~</li>
@@ -329,7 +329,7 @@ repository 개발 시 인터페이스만 작성하면 실행 시점에 spring da
 <ul>
   <li>영속성 컨텍스트의 변경내용을 데이터베이스에 반영하는 것이다.</li>
   <li>플러쉬는 영속성 컨텍스트의 내용을 비우는 것이 아니다.</li>
-</ul>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><category term="jpa" /><summary type="html"><![CDATA[JPA와 영속성 컨텍스트]]></summary></entry><entry><title type="html">[JPA]다대일[N:1] 연관관계 매핑</title><link href="http://localhost:4000/jpa/manytoone/" rel="alternate" type="text/html" title="[JPA]다대일[N:1] 연관관계 매핑" /><published>2022-10-22T00:00:00+09:00</published><updated>2022-10-22T00:00:00+09:00</updated><id>http://localhost:4000/jpa/manytoone</id><content type="html" xml:base="http://localhost:4000/jpa/manytoone/"><![CDATA[<h2 id="다대일-단방향-연관관계-매핑하기">다대일 단방향 연관관계 매핑하기</h2>
+</ul>]]></content><author><name>Euihyunee</name><email>lobil7782@gmail.com</email></author><category term="jpa" /><summary type="html"><![CDATA[JPA와 영속성 컨텍스트]]></summary></entry><entry><title type="html">[JPA]다대일[N:1] 연관관계 매핑</title><link href="http://localhost:4000/jpa/manytoone/" rel="alternate" type="text/html" title="[JPA]다대일[N:1] 연관관계 매핑" /><published>2022-10-22T00:00:00+09:00</published><updated>2022-10-22T00:00:00+09:00</updated><id>http://localhost:4000/jpa/manytoone</id><content type="html" xml:base="http://localhost:4000/jpa/manytoone/"><![CDATA[<h2 id="다대일-단방향-연관관계-매핑하기">다대일 단방향 연관관계 매핑하기</h2>
 <ul>
   <li>객체와 테이블의 연관관계는 조금 다르다.</li>
   <li>테이블
@@ -401,7 +401,7 @@ repository 개발 시 인터페이스만 작성하면 실행 시점에 spring da
   <li>여기서 양방향으로 하기 위해서는 코드 2줄만 “1”인쪽에 추가해주면 되는데, 일단 다대일만 짠 이후에 양방향이 필요하다면 그때 추가하는 것이 좋다.</li>
 </ul>
 
-<h3 id="jpa를-이용하기-위해서는-db설계가-먼저-되어야-한다-그리고-각-entity마다-관계를-어노테이션을-이용해-알려줘야-한다">JPA를 이용하기 위해서는 DB설계가 먼저 되어야 한다. 그리고 각 Entity마다 관계를 어노테이션을 이용해 알려줘야 한다.</h3>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><category term="jpa" /><summary type="html"><![CDATA[@ManyToOne]]></summary></entry><entry><title type="html">[Spring] TDD</title><link href="http://localhost:4000/spring/SpringTDD/" rel="alternate" type="text/html" title="[Spring] TDD" /><published>2022-10-03T00:00:00+09:00</published><updated>2022-10-03T00:00:00+09:00</updated><id>http://localhost:4000/spring/SpringTDD</id><content type="html" xml:base="http://localhost:4000/spring/SpringTDD/"><![CDATA[<hr />
+<h3 id="jpa를-이용하기-위해서는-db설계가-먼저-되어야-한다-그리고-각-entity마다-관계를-어노테이션을-이용해-알려줘야-한다">JPA를 이용하기 위해서는 DB설계가 먼저 되어야 한다. 그리고 각 Entity마다 관계를 어노테이션을 이용해 알려줘야 한다.</h3>]]></content><author><name>Euihyunee</name><email>lobil7782@gmail.com</email></author><category term="jpa" /><summary type="html"><![CDATA[@ManyToOne]]></summary></entry><entry><title type="html">[Spring] TDD</title><link href="http://localhost:4000/spring/SpringTDD/" rel="alternate" type="text/html" title="[Spring] TDD" /><published>2022-10-03T00:00:00+09:00</published><updated>2022-10-03T00:00:00+09:00</updated><id>http://localhost:4000/spring/SpringTDD</id><content type="html" xml:base="http://localhost:4000/spring/SpringTDD/"><![CDATA[<hr />
 <h2 id="테스트-코드는-어떻게-짜야할까">테스트 코드는 어떻게 짜야할까?</h2>
 
 <p>TDD에서는 실제 개발코드보다 테스트 코드를 먼저 작성한다.</p>
@@ -525,7 +525,7 @@ repository 개발 시 인터페이스만 작성하면 실행 시점에 spring da
 TDD하다가 해당 코드를 분석하기 위해서 많은 코드들을 분석해야하고 복잡성으로 인해 '누군가가 나에게 이 코드는 어떤식으로 짜여졌어!' 라고 말을 해줬으면 좋았을 텐데 라고 생각을 하다가 보니 행동 중심 개발을 하면 좋겠다고 생각했다.
 </code></p>
 
-<p>한 마디로 표현하자면 BDD는 애플리케이션이 어떻게 행동해야 하는지에 대한 공통된 이해를 구성하는 방법이며 이에 대한 자세한 설명은 다음 글에 소개하도록 하겠습니다.</p>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><category term="spring" /><summary type="html"><![CDATA[Spring에서의 TDD방식]]></summary></entry><entry><title type="html">[Java]NullException</title><link href="http://localhost:4000/java/NPE/" rel="alternate" type="text/html" title="[Java]NullException" /><published>2022-10-03T00:00:00+09:00</published><updated>2022-10-03T00:00:00+09:00</updated><id>http://localhost:4000/java/NPE</id><content type="html" xml:base="http://localhost:4000/java/NPE/"><![CDATA[<h2 id="java-nullpointexception-원인예방해결">[Java] NullPointException 원인/예방/해결</h2>
+<p>한 마디로 표현하자면 BDD는 애플리케이션이 어떻게 행동해야 하는지에 대한 공통된 이해를 구성하는 방법이며 이에 대한 자세한 설명은 다음 글에 소개하도록 하겠습니다.</p>]]></content><author><name>Euihyunee</name><email>lobil7782@gmail.com</email></author><category term="spring" /><summary type="html"><![CDATA[Spring에서의 TDD방식]]></summary></entry><entry><title type="html">[Java]NullException</title><link href="http://localhost:4000/java/NPE/" rel="alternate" type="text/html" title="[Java]NullException" /><published>2022-10-03T00:00:00+09:00</published><updated>2022-10-03T00:00:00+09:00</updated><id>http://localhost:4000/java/NPE</id><content type="html" xml:base="http://localhost:4000/java/NPE/"><![CDATA[<h2 id="java-nullpointexception-원인예방해결">[Java] NullPointException 원인/예방/해결</h2>
 
 <p>이번 프로젝트를 진행하던 도중 JSON파일 부분인지 API요청해서 DTO로 받는 부분인진 모르겠지만 가장 많이 일어났던 오류가 바로 이 NullPointException이였는데 이를 개선하기 위한 방법들을 알아보고 포스팅해 보았다.</p>
 
@@ -589,7 +589,7 @@ TDD하다가 해당 코드를 분석하기 위해서 많은 코드들을 분석�
 <h3 id="마지막">마지막</h3>
 <p>Null로 인해 발생된 에러는 가면 갈 수록 찾기 힘들고 디버깅이 어려워지게 한다. 이 Null이라는 것은 오류인지 아닌지 판단하기가 어렵다!</p>
 
-<p>처음부터 이 NPE 방지를 위해 코딩을 한다면 코드 품질은 올라올 것이라 생각이든다.</p>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><category term="java" /><summary type="html"><![CDATA[NPL 원인, 예방, 해결]]></summary></entry><entry><title type="html">Docker</title><link href="http://localhost:4000/Docker/" rel="alternate" type="text/html" title="Docker" /><published>2022-09-26T00:00:00+09:00</published><updated>2022-09-26T00:00:00+09:00</updated><id>http://localhost:4000/Docker</id><content type="html" xml:base="http://localhost:4000/Docker/"><![CDATA[<hr />
+<p>처음부터 이 NPE 방지를 위해 코딩을 한다면 코드 품질은 올라올 것이라 생각이든다.</p>]]></content><author><name>Euihyunee</name><email>lobil7782@gmail.com</email></author><category term="java" /><summary type="html"><![CDATA[NPL 원인, 예방, 해결]]></summary></entry><entry><title type="html">Docker</title><link href="http://localhost:4000/Docker/" rel="alternate" type="text/html" title="Docker" /><published>2022-09-26T00:00:00+09:00</published><updated>2022-09-26T00:00:00+09:00</updated><id>http://localhost:4000/Docker</id><content type="html" xml:base="http://localhost:4000/Docker/"><![CDATA[<hr />
 <h2 id="docker란-무엇">Docker란 무엇?</h2>
 <p>도커는 먼저 컨테이너 기반의 오픈 소스이다.</p>
 
@@ -666,7 +666,7 @@ TDD하다가 해당 코드를 분석하기 위해서 많은 코드들을 분석�
 
 <p>사이트에 들어가서 설치하시면 되구 좀 오래 걸림</p>
 
-<p><del>정작 본인은 설치 못함</del> 크흠~</p>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><summary type="html"><![CDATA[Doker의 개념 및 사용 방법 설명]]></summary></entry><entry><title type="html">JAVA Beans</title><link href="http://localhost:4000/beans/" rel="alternate" type="text/html" title="JAVA Beans" /><published>2022-09-20T00:00:00+09:00</published><updated>2022-09-20T00:00:00+09:00</updated><id>http://localhost:4000/beans</id><content type="html" xml:base="http://localhost:4000/beans/"><![CDATA[<h1 id="jsp-자바-빈즈">JSP 자바 빈즈</h1>
+<p><del>정작 본인은 설치 못함</del> 크흠~</p>]]></content><author><name>Euihyunee</name><email>lobil7782@gmail.com</email></author><summary type="html"><![CDATA[Doker의 개념 및 사용 방법 설명]]></summary></entry><entry><title type="html">JAVA Beans</title><link href="http://localhost:4000/beans/" rel="alternate" type="text/html" title="JAVA Beans" /><published>2022-09-20T00:00:00+09:00</published><updated>2022-09-20T00:00:00+09:00</updated><id>http://localhost:4000/beans</id><content type="html" xml:base="http://localhost:4000/beans/"><![CDATA[<h1 id="jsp-자바-빈즈">JSP 자바 빈즈</h1>
 
 <h2 id="개요">개요</h2>
 <p>오늘 JSP를 배우던 와중 beans란 단어가 나와서 한 번 포스팅을 써본데이~</p>
@@ -821,7 +821,7 @@ jsp페이지에서 화면을 표현하기 위한 계산식이나 자료들의 �
   </li>
   <li><strong>기본 생성자</strong>를 생성</li>
   <li><code class="language-plaintext highlighter-rouge">default</code>로 지정된 패키지는 자바빈즈로 못 불러오며 패키지의 이름을 꼭 작성해야함</li>
-</ul>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><summary type="html"><![CDATA[심신 미약미약~]]></summary></entry><entry><title type="html">[Spring]Lombok</title><link href="http://localhost:4000/spring/Lombok/" rel="alternate" type="text/html" title="[Spring]Lombok" /><published>2022-09-15T00:00:00+09:00</published><updated>2022-09-15T00:00:00+09:00</updated><id>http://localhost:4000/spring/Lombok</id><content type="html" xml:base="http://localhost:4000/spring/Lombok/"><![CDATA[<h3 id="lombok이란">@Lombok이란?</h3>
+</ul>]]></content><author><name>Euihyunee</name><email>lobil7782@gmail.com</email></author><summary type="html"><![CDATA[심신 미약미약~]]></summary></entry><entry><title type="html">[Spring]Lombok</title><link href="http://localhost:4000/spring/Lombok/" rel="alternate" type="text/html" title="[Spring]Lombok" /><published>2022-09-15T00:00:00+09:00</published><updated>2022-09-15T00:00:00+09:00</updated><id>http://localhost:4000/spring/Lombok</id><content type="html" xml:base="http://localhost:4000/spring/Lombok/"><![CDATA[<h3 id="lombok이란">@Lombok이란?</h3>
 <ul>
   <li>Lombok은 Java 라이브러리에서 <strong>getter, setter, toString</strong> 등의 메서드 작성 코드를 줄여주는 코드 다이어트 라이브러리임.</li>
   <li>
@@ -888,7 +888,7 @@ jsp페이지에서 화면을 표현하기 위한 계산식이나 자료들의 �
 
 <ul>
   <li>LOGGING을 할 때 사용하는 방법이다. Spring에서는 로그를 남기는 방법이 많이 있는데 @Slf4j 어노테이션은 가장 편하게 사용되는 방법 중 하나이다.</li>
-</ul>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><category term="spring" /><summary type="html"><![CDATA[@Lombok이란? Lombok은 Java 라이브러리에서 getter, setter, toString 등의 메서드 작성 코드를 줄여주는 코드 다이어트 라이브러리임. getter, setter와 toString() 메서드를 만들 때 IDE로 한 번에 할 수 있긴 하지만 코드가 길어지고 복잡해진다. 하지만 Lombok을 사용한다면 이러한 단점들이 사라지고 단지 어노테이션 하나만 입력해주면 된다.]]></summary></entry><entry><title type="html">좋은 객체 지향 설계의 5가지 원칙</title><link href="http://localhost:4000/SOLID/" rel="alternate" type="text/html" title="좋은 객체 지향 설계의 5가지 원칙" /><published>2022-09-11T00:00:00+09:00</published><updated>2022-09-11T00:00:00+09:00</updated><id>http://localhost:4000/SOLID</id><content type="html" xml:base="http://localhost:4000/SOLID/"><![CDATA[<hr />
+</ul>]]></content><author><name>Euihyunee</name><email>lobil7782@gmail.com</email></author><category term="spring" /><summary type="html"><![CDATA[@Lombok이란? Lombok은 Java 라이브러리에서 getter, setter, toString 등의 메서드 작성 코드를 줄여주는 코드 다이어트 라이브러리임. getter, setter와 toString() 메서드를 만들 때 IDE로 한 번에 할 수 있긴 하지만 코드가 길어지고 복잡해진다. 하지만 Lombok을 사용한다면 이러한 단점들이 사라지고 단지 어노테이션 하나만 입력해주면 된다.]]></summary></entry><entry><title type="html">좋은 객체 지향 설계의 5가지 원칙</title><link href="http://localhost:4000/SOLID/" rel="alternate" type="text/html" title="좋은 객체 지향 설계의 5가지 원칙" /><published>2022-09-11T00:00:00+09:00</published><updated>2022-09-11T00:00:00+09:00</updated><id>http://localhost:4000/SOLID</id><content type="html" xml:base="http://localhost:4000/SOLID/"><![CDATA[<hr />
 <h2 id="srp-단일-책임-원칙single-responsibility-principle">SRP: 단일 책임 원칙(single responsibility principle)</h2>
 <hr />
 <ul>
@@ -952,4 +952,4 @@ jsp페이지에서 화면을 표현하기 위한 계산식이나 자료들의 �
 
 <p><a href="https://imspear.tistory.com/148">객체지향 참고 글</a></p>
 
-<p><a href="https://velog.io/@re-deok/%EC%8A%A4%ED%94%84%EB%A7%81-IoC-DI-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88">Spring IoC/DI컨테이너</a></p>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><summary type="html"><![CDATA[SRP: 단일 책임 원칙(single responsibility principle) 한 클래스는 하나의 책임만 가져아 한다는 것이다. 중요한 기준은 변경이다. 변경이 있을 때 다른 곳에 파급되는 영향이 적다면 단일 책임 원칙을 잘 따라 설계한 것이다. 객체의 생성과 사용을 분리한다면 파급 효과가 적도록 설계할 수 있다. 추가로 스프링에서는 구현 객체를 생성해 객체를 생성하고 역활을 명시한 인터페이스를 사용하도록 하는 것이다.]]></summary></entry></feed>
+<p><a href="https://velog.io/@re-deok/%EC%8A%A4%ED%94%84%EB%A7%81-IoC-DI-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88">Spring IoC/DI컨테이너</a></p>]]></content><author><name>Euihyunee</name><email>lobil7782@gmail.com</email></author><summary type="html"><![CDATA[SRP: 단일 책임 원칙(single responsibility principle) 한 클래스는 하나의 책임만 가져아 한다는 것이다. 중요한 기준은 변경이다. 변경이 있을 때 다른 곳에 파급되는 영향이 적다면 단일 책임 원칙을 잘 따라 설계한 것이다. 객체의 생성과 사용을 분리한다면 파급 효과가 적도록 설계할 수 있다. 추가로 스프링에서는 구현 객체를 생성해 객체를 생성하고 역활을 명시한 인터페이스를 사용하도록 하는 것이다.]]></summary></entry></feed>

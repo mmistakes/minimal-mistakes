@@ -1,4 +1,4 @@
-I"3
+I"�
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
@@ -20,8 +20,18 @@
       </span>
     
 
-    
+    <span class="page__meta-sep"></span>
 
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
     
   </p>
 
@@ -52,8 +62,18 @@
       </span>
     
 
-    
+    <span class="page__meta-sep"></span>
 
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
     
   </p>
 
