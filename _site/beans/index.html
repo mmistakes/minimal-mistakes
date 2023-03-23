@@ -1,0 +1,827 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>JAVA Beans | Euihyunee</title>
+<meta name="description" content="심신 미약미약~">
+
+
+  <meta name="author" content="Jeong eui hyun">
+  
+  <meta property="article:author" content="Jeong eui hyun">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="Euihyunee">
+<meta property="og:title" content="JAVA Beans">
+<meta property="og:url" content="http://localhost:4000/beans/">
+
+
+  <meta property="og:description" content="심신 미약미약~">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-09-20T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/beans/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "euihyunee",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Euihyunee Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/clapbear.gif" alt="Euihyunee"></a>
+        
+        <a class="site-title" href="/">
+          Euihyunee
+          <span class="site-subtitle">small positive message</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tag/">Tag</a>
+            </li><li class="masthead__menu-item">
+              <a href="/search/">Search</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+<div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/clapbear.gif" alt="Jeong eui hyun" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Jeong eui hyun</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>spring 알아보는 블로그</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Tech Universtiy of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="matilto:hey.lobil7782@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:lobil7782@gmail.com" rel="me" class="u-email">
+            <meta itemprop="email" content="lobil7782@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">이메일</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+   <!--전체 글 수를 세기 위한 연산. sum 변수에 전체 글 수 저장-->
+
+
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">토글 메뉴</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <!--전체 글 수-->
+      <li>
+            📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">11</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
+      </li>
+      <li>
+        <!--span 태그로 카테고리들을 크게 분류 -->
+        <span class="nav__sub-title">Tech</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                
+                    
+                        <li><a href="/categories/spring" class="">spring (2)</a></li>
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                        <li><a href="/categories/jpa" class="">JPA (3)</a></li>
+                    
+                
+            </ul>
+            <ul>
+                
+                    
+                
+                    
+                        <li><a href="/categories/java" class="">Java (2)</a></li>
+                    
+                
+                    
+                
+            </ul>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        <span class="nav__sub-title">Paper</span>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        <span class="nav__sub-title">etc.</span>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+      </li>
+  </ul>
+</nav> 
+</div>
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="JAVA Beans">
+    <meta itemprop="description" content="심신 미약미약~">
+    <meta itemprop="datePublished" content="2022-09-20T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/beans/" class="u-url" itemprop="url">JAVA Beans
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-09-20T00:00:00+09:00">September 20, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h1 id="jsp-자바-빈즈">JSP 자바 빈즈</h1>
+
+<h2 id="개요">개요</h2>
+<p>오늘 JSP를 배우던 와중 beans란 단어가 나와서 한 번 포스팅을 써본데이~</p>
+
+<h2 id="빈즈란">빈즈란?</h2>
+<p>프로그램에서 부품이라 생각하면 된다. 큰 프로그램에서 독립적으로 수행되는 하나의 작은 자바 컨포넌트이다.</p>
+
+<p>비지니스 로직을 담고 있으며 자바빈즈 규약을 따르는 클래스이다.</p>
+
+<p>특정 데이터를 관리하고 표현하기 위해 JSP에서 사용하는 특수한 클래스이다.</p>
+
+<p>jsp페이지에서 비지니스 로직을 제거하기 위한 방법으로 사용하는 기술이다. 즉, 
+jsp페이지에서 화면을 표현하기 위한 계산식이나 자료들의 처리를 담당하는 자바 코드를 따로 분리하여 작성한 것이 자바빈즈이다.</p>
+
+<h2 id="사용하는-이유">사용하는 이유?</h2>
+<ul>
+  <li>JSP의 로직부분을 분리해서 코드를 재사용하기 위함</li>
+  <li>코드의 안정성이 보장되며 유지보수가 쉬움</li>
+  <li>폼 데이터 처리에 좋음
+    <ul>
+      <li>수 많은 파라미터를 자바 빈에 담아 사용/전달 할 수 있기 때문이다.</li>
+    </ul>
+  </li>
+  <li>재사용성</li>
+  <li>컴포넌트 기반 구현
+    <ul>
+      <li><strong>JSP, Java bean, Business Logic</strong>이 분리되어 각각이 하는 기능을 줄일 수 있습니다</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="구성요소">구성요소</h2>
+<ul>
+  <li>자바빈즈는 JSP의 표준 액션 태그를 통해 접근할 수 있는 <code class="language-plaintext highlighter-rouge">자바 클래스</code>이다.</li>
+  <li>기본 생성자, 멤버 변수(필드), <code class="language-plaintext highlighter-rouge">getter &amp; setter</code>메소드가 필수적으로 작성되어 있어야 함</li>
+  <li>자바 빈즈의 형태(예시)
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloBean</span><span class="o">{</span>
+  <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+
+  <span class="c1">// setter</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setStatement</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">){</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+  <span class="o">}</span>
+  <span class="c1">// getter</span>
+  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getStatement</span><span class="o">(){</span>
+    <span class="n">retrun</span> <span class="s">"Hello"</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">name</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>    </div>
+    <p>자바 빈즈를 활용할 때</p>
+  </li>
+  <li>액션 태그를 사용한 형태
+    <ul>
+      <li>자바빈 액션 태그를 사용하면 FORM 데이터나 HTML 페이지에서 넘어오는 데이터를 쉽게 객체에 저장하는 것이 가능하다.</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;jsp:useBean&gt;</code> 액션 태그를 이용 -&gt; 자바빈즈 객체 생성 및 이용</li>
+      <li>액션태그는 JSP에서 특별한 기능을 위해 정의된 XML 형태의 태그</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;jsp:useBean&gt;</code>액션 태그 : JSP에서 자바빈즈를 이용하기 위한 태그</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-jsp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 액션 태그 이용
+<span class="nt">&lt;%@page </span><span class="na">contenType = </span><span class="s">"text/html; charset = euc - kr"</span><span class="nt">%&gt;</span>
+// 객체 생성
+<span class="nt">&lt;jsp:useBean </span><span class="na">id = </span><span class="s">"myHello"</span><span class="na"> class = </span><span class="s">"HelloWorld"</span><span class="na"> scope = </span><span class="s">"page"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Hello JSP<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;%</span>
+      <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">();</span>
+
+      <span class="n">myHello</span><span class="o">.</span><span class="na">setStatement</span><span class="o">(</span><span class="s">"대격변!!"</span><span class="o">);</span>
+      <span class="n">str</span> <span class="o">=</span> <span class="n">myHello</span><span class="o">.</span><span class="na">getStatement</span><span class="o">();</span>
+
+      <span class="n">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="err">"</span><span class="o">&lt;</span><span class="n">h1</span><span class="err">&gt;</span><span class="s">" + str + "</span><span class="o">&lt;/</span><span class="n">h1</span><span class="err">&gt;"</span><span class="o">);</span>
+      <span class="nt">%&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>자바 코드를 이용하는 형태
+    <ul>
+      <li>JSP 내에서 자바 코드를 이용하여 자바빈즈 객체를 생성 후 이용하는 방법이다.</li>
+      <li>사용방법</li>
+      <li>클래스 import
+        <ul>
+          <li>&lt;%@page import = “hello.HelloBean”%&gt;</li>
+        </ul>
+      </li>
+      <li>객체 생성
+        <ul>
+          <li>HelloBean myHello = new HelloBean();</li>
+        </ul>
+      </li>
+      <li>객체 사용
+        <ul>
+          <li>myHello.setStatement(“Grace Byun!!”);</li>
+          <li>str = myHello.getStatement();</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-jsp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 전체 코드(JSP안에 자바 코드 이용)
+<span class="nt">&lt;%@page </span><span class="na">contenType = </span><span class="s">"text/html; charset = euc - kr"</span><span class="nt">%&gt;</span>
+<span class="nt">&lt;%@page </span><span class="na">import = </span><span class="s">"hello.HelloBean"</span><span class="nt">%&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Hello JSP<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;%</span>
+      <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">();</span>
+
+      <span class="c1">// 객체 생성</span>
+      <span class="nc">HelloBean</span> <span class="n">myHello</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HelloBean</span><span class="o">();</span>
+
+      <span class="n">myHello</span><span class="o">.</span><span class="na">setStatement</span><span class="o">(</span><span class="s">"8LJAYWALKING"</span><span class="o">);</span>
+      <span class="n">str</span> <span class="o">=</span> <span class="n">myHello</span><span class="o">.</span><span class="na">getStatement</span><span class="o">();</span>
+
+      <span class="n">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="err">"</span><span class="o">&lt;</span><span class="n">h1</span><span class="err">&gt;</span><span class="s">" + str + "</span><span class="o">&lt;/</span><span class="n">h1</span><span class="err">&gt;"</span><span class="o">);</span>
+      <span class="nt">%&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>그럼 어떤 형태를 사용해야 할까?</p>
+<ul>
+  <li>액션 태그를 활용하는 방법은 자바빈즈를 쓰는 디자이너에게 친숙한 방법이다.</li>
+  <li>자바 코드를 사용하는 방법은 개발자에게 친숙한 방법이다.</li>
+  <li>솔직히 편한 방법 쓰면 된다.</li>
+</ul>
+
+<h2 id="자바빈즈-규칙">자바빈즈 규칙</h2>
+
+<p>자바 빈즈를 이용하기 위한 규칙들이 있다. JSP에서 사용을 위함이다.</p>
+
+<ul>
+  <li>패키지화
+    <ul>
+      <li>자바빈즈는 <strong>반드시 패키지</strong>가 있어야 함(default pakage에 있으면 안됨)</li>
+    </ul>
+  </li>
+  <li>멤버 변수 접근자를 <code class="language-plaintext highlighter-rouge">private</code>로 선언
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">getter, setter</code> 이용하여 멤버 변수에 접근. 단 <code class="language-plaintext highlighter-rouge">getter, setter</code>는 <code class="language-plaintext highlighter-rouge">public</code>으로 설정</li>
+    </ul>
+  </li>
+  <li><strong>기본 생성자</strong>를 생성</li>
+  <li><code class="language-plaintext highlighter-rouge">default</code>로 지정된 패키지는 자바빈즈로 못 불러오며 패키지의 이름을 꼭 작성해야함</li>
+</ul>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-09-20T00:00:00+09:00">September 20, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=JAVA+Beans%20http%3A%2F%2Flocalhost%3A4000%2Fbeans%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fbeans%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fbeans%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/spring/Lombok/" class="pagination--pager" title="[Spring]Lombok
+">이전</a>
+    
+    
+      <a href="/Docker/" class="pagination--pager" title="Docker
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/java/StringTokenizer/" rel="permalink">[Java]StringTokenizer사용법?
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-11-29T00:00:00+09:00">November 29, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">문자열 분리
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/jpa/SpringJPA/" rel="permalink">[JPA]Spring Data JPA
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-11-06T00:00:00+09:00">November 6, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Spring Data JPA에 대해서
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/jpa/persist/" rel="permalink">[JPA]영속성 컨텍스트
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-10-23T00:00:00+09:00">October 23, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">JPA와 영속성 컨텍스트
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/jpa/manytoone/" rel="permalink">[JPA]다대일[N:1] 연관관계 매핑
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-10-22T00:00:00+09:00">October 22, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">@ManyToOne
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 euihyunee. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/beans/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/beans"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://euihyunee.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

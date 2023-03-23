@@ -1,0 +1,8 @@
+I"<h3 id="lombok이란">@Lombok이란?</h3>
+<ul>
+  <li>Lombok은 Java 라이브러리에서 <strong>getter, setter, toString</strong> 등의 메서드 작성 코드를 줄여주는 코드 다이어트 라이브러리임.</li>
+  <li>
+    <h2 id="getter-setter와-tostring-메서드를-만들-때-ide로-한-번에-할-수-있긴-하지만-코드가-길어지고-복잡해진다-하지만-lombok을-사용한다면-이러한-단점들이-사라지고-단지-어노테이션-하나만-입력해주면-된다">getter, setter와 toString() 메서드를 만들 때 IDE로 한 번에 할 수 있긴 하지만 코드가 길어지고 복잡해진다. 하지만 Lombok을 사용한다면 이러한 단점들이 사라지고 단지 어노테이션 하나만 입력해주면 된다.</h2>
+  </li>
+</ul>
+:ET

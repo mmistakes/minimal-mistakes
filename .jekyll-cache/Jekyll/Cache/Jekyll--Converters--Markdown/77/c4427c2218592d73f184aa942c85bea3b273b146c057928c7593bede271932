@@ -1,0 +1,158 @@
+I"�%<h1 id="jsp-자바-빈즈">JSP 자바 빈즈</h1>
+
+<h2 id="개요">개요</h2>
+<p>오늘 JSP를 배우던 와중 beans란 단어가 나와서 한 번 포스팅을 써본데이~</p>
+
+<h2 id="빈즈란">빈즈란?</h2>
+<p>프로그램에서 부품이라 생각하면 된다. 큰 프로그램에서 독립적으로 수행되는 하나의 작은 자바 컨포넌트이다.</p>
+
+<p>비지니스 로직을 담고 있으며 자바빈즈 규약을 따르는 클래스이다.</p>
+
+<p>특정 데이터를 관리하고 표현하기 위해 JSP에서 사용하는 특수한 클래스이다.</p>
+
+<p>jsp페이지에서 비지니스 로직을 제거하기 위한 방법으로 사용하는 기술이다. 즉, 
+jsp페이지에서 화면을 표현하기 위한 계산식이나 자료들의 처리를 담당하는 자바 코드를 따로 분리하여 작성한 것이 자바빈즈이다.</p>
+
+<h2 id="사용하는-이유">사용하는 이유?</h2>
+<ul>
+  <li>JSP의 로직부분을 분리해서 코드를 재사용하기 위함</li>
+  <li>코드의 안정성이 보장되며 유지보수가 쉬움</li>
+  <li>폼 데이터 처리에 좋음
+    <ul>
+      <li>수 많은 파라미터를 자바 빈에 담아 사용/전달 할 수 있기 때문이다.</li>
+    </ul>
+  </li>
+  <li>재사용성</li>
+  <li>컴포넌트 기반 구현
+    <ul>
+      <li><strong>JSP, Java bean, Business Logic</strong>이 분리되어 각각이 하는 기능을 줄일 수 있습니다</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="구성요소">구성요소</h2>
+<ul>
+  <li>자바빈즈는 JSP의 표준 액션 태그를 통해 접근할 수 있는 <code class="language-plaintext highlighter-rouge">자바 클래스</code>이다.</li>
+  <li>기본 생성자, 멤버 변수(필드), <code class="language-plaintext highlighter-rouge">getter &amp; setter</code>메소드가 필수적으로 작성되어 있어야 함</li>
+  <li>자바 빈즈의 형태(예시)
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloBean</span><span class="o">{</span>
+  <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+
+  <span class="c1">// setter</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setStatement</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">){</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+  <span class="o">}</span>
+  <span class="c1">// getter</span>
+  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getStatement</span><span class="o">(){</span>
+    <span class="n">retrun</span> <span class="s">"Hello"</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">name</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>    </div>
+    <p>자바 빈즈를 활용할 때</p>
+  </li>
+  <li>액션 태그를 사용한 형태
+    <ul>
+      <li>자바빈 액션 태그를 사용하면 FORM 데이터나 HTML 페이지에서 넘어오는 데이터를 쉽게 객체에 저장하는 것이 가능하다.</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;jsp:useBean&gt;</code> 액션 태그를 이용 -&gt; 자바빈즈 객체 생성 및 이용</li>
+      <li>액션태그는 JSP에서 특별한 기능을 위해 정의된 XML 형태의 태그</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;jsp:useBean&gt;</code>액션 태그 : JSP에서 자바빈즈를 이용하기 위한 태그</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-jsp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 액션 태그 이용
+<span class="nt">&lt;%@page </span><span class="na">contenType = </span><span class="s">"text/html; charset = euc - kr"</span><span class="nt">%&gt;</span>
+// 객체 생성
+<span class="nt">&lt;jsp:useBean </span><span class="na">id = </span><span class="s">"myHello"</span><span class="na"> class = </span><span class="s">"HelloWorld"</span><span class="na"> scope = </span><span class="s">"page"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Hello JSP<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;%</span>
+      <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">();</span>
+
+      <span class="n">myHello</span><span class="o">.</span><span class="na">setStatement</span><span class="o">(</span><span class="s">"대격변!!"</span><span class="o">);</span>
+      <span class="n">str</span> <span class="o">=</span> <span class="n">myHello</span><span class="o">.</span><span class="na">getStatement</span><span class="o">();</span>
+
+      <span class="n">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="err">"</span><span class="o">&lt;</span><span class="n">h1</span><span class="err">&gt;</span><span class="s">" + str + "</span><span class="o">&lt;/</span><span class="n">h1</span><span class="err">&gt;"</span><span class="o">);</span>
+      <span class="nt">%&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>자바 코드를 이용하는 형태
+    <ul>
+      <li>JSP 내에서 자바 코드를 이용하여 자바빈즈 객체를 생성 후 이용하는 방법이다.</li>
+      <li>사용방법</li>
+      <li>클래스 import
+        <ul>
+          <li>&lt;%@page import = “hello.HelloBean”%&gt;</li>
+        </ul>
+      </li>
+      <li>객체 생성
+        <ul>
+          <li>HelloBean myHello = new HelloBean();</li>
+        </ul>
+      </li>
+      <li>객체 사용
+        <ul>
+          <li>myHello.setStatement(“Grace Byun!!”);</li>
+          <li>str = myHello.getStatement();</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-jsp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 전체 코드(JSP안에 자바 코드 이용)
+<span class="nt">&lt;%@page </span><span class="na">contenType = </span><span class="s">"text/html; charset = euc - kr"</span><span class="nt">%&gt;</span>
+<span class="nt">&lt;%@page </span><span class="na">import = </span><span class="s">"hello.HelloBean"</span><span class="nt">%&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Hello JSP<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;%</span>
+      <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">();</span>
+
+      <span class="c1">// 객체 생성</span>
+      <span class="nc">HelloBean</span> <span class="n">myHello</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HelloBean</span><span class="o">();</span>
+
+      <span class="n">myHello</span><span class="o">.</span><span class="na">setStatement</span><span class="o">(</span><span class="s">"8LJAYWALKING"</span><span class="o">);</span>
+      <span class="n">str</span> <span class="o">=</span> <span class="n">myHello</span><span class="o">.</span><span class="na">getStatement</span><span class="o">();</span>
+
+      <span class="n">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="err">"</span><span class="o">&lt;</span><span class="n">h1</span><span class="err">&gt;</span><span class="s">" + str + "</span><span class="o">&lt;/</span><span class="n">h1</span><span class="err">&gt;"</span><span class="o">);</span>
+      <span class="nt">%&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>그럼 어떤 형태를 사용해야 할까?</p>
+<ul>
+  <li>액션 태그를 활용하는 방법은 자바빈즈를 쓰는 디자이너에게 친숙한 방법이다.</li>
+  <li>자바 코드를 사용하는 방법은 개발자에게 친숙한 방법이다.</li>
+  <li>솔직히 편한 방법 쓰면 된다.</li>
+</ul>
+
+<h2 id="자바빈즈-규칙">자바빈즈 규칙</h2>
+
+<p>자바 빈즈를 이용하기 위한 규칙들이 있다. JSP에서 사용을 위함이다.</p>
+
+<ul>
+  <li>패키지화
+    <ul>
+      <li>자바빈즈는 <strong>반드시 패키지</strong>가 있어야 함(default pakage에 있으면 안됨)</li>
+    </ul>
+  </li>
+  <li>멤버 변수 접근자를 <code class="language-plaintext highlighter-rouge">private</code>로 선언
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">getter, setter</code> 이용하여 멤버 변수에 접근. 단 <code class="language-plaintext highlighter-rouge">getter, setter</code>는 <code class="language-plaintext highlighter-rouge">public</code>으로 설정</li>
+    </ul>
+  </li>
+  <li><strong>기본 생성자</strong>를 생성</li>
+  <li><code class="language-plaintext highlighter-rouge">default</code>로 지정된 패키지는 자바빈즈로 못 불러오며 패키지의 이름을 꼭 작성해야함</li>
+</ul>
+
+:ET

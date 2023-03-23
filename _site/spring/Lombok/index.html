@@ -1,0 +1,753 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[Spring]Lombok | Euihyunee</title>
+<meta name="description" content="@Lombok이란?    Lombok은 Java 라이브러리에서 getter, setter, toString 등의 메서드 작성 코드를 줄여주는 코드 다이어트 라이브러리임.        getter, setter와 toString() 메서드를 만들 때 IDE로 한 번에 할 수 있긴 하지만 코드가 길어지고 복잡해진다. 하지만 Lombok을 사용한다면 이러한 단점들이 사라지고 단지 어노테이션 하나만 입력해주면 된다.">
+
+
+  <meta name="author" content="Jeong eui hyun">
+  
+  <meta property="article:author" content="Jeong eui hyun">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="Euihyunee">
+<meta property="og:title" content="[Spring]Lombok">
+<meta property="og:url" content="http://localhost:4000/spring/Lombok/">
+
+
+  <meta property="og:description" content="@Lombok이란?    Lombok은 Java 라이브러리에서 getter, setter, toString 등의 메서드 작성 코드를 줄여주는 코드 다이어트 라이브러리임.        getter, setter와 toString() 메서드를 만들 때 IDE로 한 번에 할 수 있긴 하지만 코드가 길어지고 복잡해진다. 하지만 Lombok을 사용한다면 이러한 단점들이 사라지고 단지 어노테이션 하나만 입력해주면 된다.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-09-15T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/spring/Lombok/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "euihyunee",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Euihyunee Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/clapbear.gif" alt="Euihyunee"></a>
+        
+        <a class="site-title" href="/">
+          Euihyunee
+          <span class="site-subtitle">small positive message</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tag/">Tag</a>
+            </li><li class="masthead__menu-item">
+              <a href="/search/">Search</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+<div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/clapbear.gif" alt="Jeong eui hyun" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Jeong eui hyun</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>spring 알아보는 블로그</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Tech Universtiy of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="matilto:hey.lobil7782@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:lobil7782@gmail.com" rel="me" class="u-email">
+            <meta itemprop="email" content="lobil7782@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">이메일</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+   <!--전체 글 수를 세기 위한 연산. sum 변수에 전체 글 수 저장-->
+
+
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">토글 메뉴</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <!--전체 글 수-->
+      <li>
+            📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">11</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
+      </li>
+      <li>
+        <!--span 태그로 카테고리들을 크게 분류 -->
+        <span class="nav__sub-title">Tech</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                
+                    
+                        <li><a href="/categories/spring" class="">spring (2)</a></li>
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                        <li><a href="/categories/jpa" class="">JPA (3)</a></li>
+                    
+                
+            </ul>
+            <ul>
+                
+                    
+                
+                    
+                        <li><a href="/categories/java" class="">Java (2)</a></li>
+                    
+                
+                    
+                
+            </ul>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        <span class="nav__sub-title">Paper</span>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        <span class="nav__sub-title">etc.</span>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+      </li>
+  </ul>
+</nav> 
+</div>
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[Spring]Lombok">
+    <meta itemprop="description" content="@Lombok이란?  Lombok은 Java 라이브러리에서 getter, setter, toString 등의 메서드 작성 코드를 줄여주는 코드 다이어트 라이브러리임.      getter, setter와 toString() 메서드를 만들 때 IDE로 한 번에 할 수 있긴 하지만 코드가 길어지고 복잡해진다. 하지만 Lombok을 사용한다면 이러한 단점들이 사라지고 단지 어노테이션 하나만 입력해주면 된다.  ">
+    <meta itemprop="datePublished" content="2022-09-15T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/spring/Lombok/" class="u-url" itemprop="url">[Spring]Lombok
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-09-15T00:00:00+09:00">September 15, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h3 id="lombok이란">@Lombok이란?</h3>
+<ul>
+  <li>Lombok은 Java 라이브러리에서 <strong>getter, setter, toString</strong> 등의 메서드 작성 코드를 줄여주는 코드 다이어트 라이브러리임.</li>
+  <li>
+    <h2 id="getter-setter와-tostring-메서드를-만들-때-ide로-한-번에-할-수-있긴-하지만-코드가-길어지고-복잡해진다-하지만-lombok을-사용한다면-이러한-단점들이-사라지고-단지-어노테이션-하나만-입력해주면-된다">getter, setter와 toString() 메서드를 만들 때 IDE로 한 번에 할 수 있긴 하지만 코드가 길어지고 복잡해진다. 하지만 Lombok을 사용한다면 이러한 단점들이 사라지고 단지 어노테이션 하나만 입력해주면 된다.</h2>
+  </li>
+</ul>
+
+<h3 id="다양한-lombok">다양한 Lombok</h3>
+<h4 id="--여기서는-lombok과-종류에-대해서만-알아보고-자세한-예제들은-나중에-다시-설명하겠다">- 여기서는 Lombok과 종류에 대해서만 알아보고 자세한 예제들은 나중에 다시 설명하겠다.</h4>
+<hr />
+
+<h3 id="getter-setter">@Getter @Setter</h3>
+
+<ul>
+  <li>가장 많이 활용하는 어노테이션이다. 클래스 위에 적용하면 모든 변수에 적용되고, 변수 이름 위에 적용하면 해당 변수들만 적용 가능하다.</li>
+</ul>
+
+<h3 id="allargsconstructor">@AllArgsConstructor</h3>
+
+<ul>
+  <li>모든 변수를 사용하는 생성자를 만들어주는 어노테이션이다.</li>
+</ul>
+
+<h3 id="noargsconstructor">@NoArgsConstructor</h3>
+
+<ul>
+  <li>어떠한 변수도 사용하지 않는 기본 생성자를 만들어주는 어노테이션이다.</li>
+</ul>
+
+<h3 id="requiredargsconstructor">@RequiredArgsConstructor</h3>
+
+<ul>
+  <li>특정 변수만을 활용하는 생성자를 만들어주는 어노테이션. 생성자의 인자로 추가할 변수에 @NonNull어노테이션을 붙여서 해당 변수를 생성자의 인자로 추가 가능하다. 또한 해당 변수를 final로 선언해도 의존성 주입을 받는 것이 가능하다.</li>
+</ul>
+
+<h3 id="equalsandhashcode">@EqualsAndHashCode</h3>
+
+<ul>
+  <li>클래스에 대한 equals함수와 hashCode 함수를 자동으로 생성해줌.</li>
+</ul>
+
+<h3 id="tostring">@ToString</h3>
+
+<ul>
+  <li>ToString 메소드를 자동으로 완성시켜 줌. @ToString.Exclude를 해당 변수에 붙여주면 출력에서 제외할 수 있다.</li>
+  <li>상위 클래스에 toString을 적용하려면 상위 클래스에 @ToString(callSuper = true)를 적용시키면 된다.</li>
+</ul>
+
+<h3 id="builder">@Builder</h3>
+
+<ul>
+  <li>적용 시 클래스 객체의 생성에 Builder 패턴을 적용시켜준다.</li>
+  <li>특정 변수들만을 build하기 원한다면 생성자 작성 후 그 위에 @Builder를 붙이면 된다.</li>
+</ul>
+
+<h3 id="delegate">@Delegate</h3>
+
+<ul>
+  <li>@Delegate는 한 객체의 메소드를 다른 객체로 위임시켜 준다.</li>
+  <li>좀 봐야할 듯 DB에서 많이 사용</li>
+</ul>
+
+<h3 id="slf4j">@Slf4j</h3>
+
+<ul>
+  <li>LOGGING을 할 때 사용하는 방법이다. Spring에서는 로그를 남기는 방법이 많이 있는데 @Slf4j 어노테이션은 가장 편하게 사용되는 방법 중 하나이다.</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#spring" class="page__taxonomy-item p-category" rel="tag">spring</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-09-15T00:00:00+09:00">September 15, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%5BSpring%5DLombok%20http%3A%2F%2Flocalhost%3A4000%2Fspring%2FLombok%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fspring%2FLombok%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fspring%2FLombok%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/SOLID/" class="pagination--pager" title="좋은 객체 지향 설계의 5가지 원칙
+">이전</a>
+    
+    
+      <a href="/beans/" class="pagination--pager" title="JAVA Beans
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/java/StringTokenizer/" rel="permalink">[Java]StringTokenizer사용법?
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-11-29T00:00:00+09:00">November 29, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">문자열 분리
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/jpa/SpringJPA/" rel="permalink">[JPA]Spring Data JPA
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-11-06T00:00:00+09:00">November 6, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Spring Data JPA에 대해서
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/jpa/persist/" rel="permalink">[JPA]영속성 컨텍스트
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-10-23T00:00:00+09:00">October 23, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">JPA와 영속성 컨텍스트
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/jpa/manytoone/" rel="permalink">[JPA]다대일[N:1] 연관관계 매핑
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-10-22T00:00:00+09:00">October 22, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">@ManyToOne
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 euihyunee. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/spring/Lombok/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/spring/Lombok"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://euihyunee.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,66 @@
+I"<h2 id="java-nullpointexception-원인예방해결">[Java] NullPointException 원인/예방/해결</h2>
+
+<p>이번 프로젝트를 진행하던 도중 JSON파일 부분인지 API요청해서 DTO로 받는 부분인진 모르겠지만 가장 많이 일어났던 오류가 바로 이 NullPointException이였는데 이를 개선하기 위한 방법들을 알아보고 포스팅해 보았다.</p>
+
+<h2 id="npe의-예방-및-해결법">[NPE]의 예방 및 해결법</h2>
+<h4 id="nullpointexception-줄인-말이-npe다">NullPointException 줄인 말이 NPE다</h4>
+
+<h3 id="1-null-parmeter-넘기지-말-것">1. null Parmeter 넘기지 말 것</h3>
+<ul>
+  <li>parameter를 넘기고 나서 뒤에 이를 처리하는 부분이 있다고 해도 넘기지 말자</li>
+  <li>의미없는 null 덕분에 쓸데없이 null체크를 해줘야 한다.</li>
+</ul>
+
+<h3 id="2-문자열-비교">2. 문자열 비교</h3>
+<ul>
+  <li>String 문자열은 기본형이 아니기에 반드니 <span style="color:blue"> equals </span>를 사용한다.</li>
+</ul>
+
+<h4 id="예시">[예시]</h4>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">String</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="s">"tft"</span><span class="o">);</span>
+<span class="k">if</span><span class="o">(</span><span class="n">a</span> <span class="o">==</span> <span class="s">"tft"</span><span class="o">){</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"참"</span><span class="o">);</span>
+<span class="o">}</span><span class="k">else</span><span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"거짓"</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="s">"tft"</span><span class="o">)){</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"참"</span><span class="o">);</span>
+<span class="o">}</span><span class="k">else</span><span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"거짓"</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>하면 결과는</p>
+
+<p>거짓</p>
+
+<p>참  으로 나온다. 근데 여기서 a = null이면 equlas에서 <strong>NPE</strong>가 발생한다. null은 객체가 아니기 때문이다.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="o">(</span><span class="s">"tft"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">a</span><span class="o">)){</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"참"</span><span class="o">);</span>
+<span class="o">}</span><span class="k">else</span><span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"거짓"</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>하지만 이렇게 <strong>비교의 주체가 문자열</strong>부터 주어진다면 <code class="language-plaintext highlighter-rouge">NPE</code>이 발생하지 않는다. 따라서 문자열 비교는 non-null String 기준으로 비교하는 것이 좋다.</p>
+
+<h3 id="3-tostring말고---valeof-사용">3. toString말고 -&gt; valeOf() 사용</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">valueOf</span><span class="o">(</span><span class="n">a</span><span class="o">));</span><span class="c1">// null</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span><span class="c1">// NPE발생!!</span>
+</code></pre></div></div>
+<p>이렇듯 toString은 null을 객체로 못 만든다. 따라서 이런 경우 valueOf()를 사용하길 바란다.</p>
+
+<h3 id="4-spring에서는-notnull을-사용하자">4. Spring에서는 @NotNull을 사용하자</h3>
+
+<p>DTO에 @NotNull 어노테이션을 사용하자</p>
+
+<p>Lombok에서 지원하는 @NotNull어노테이션은 필드에 Null값이 주입될 경우는 허용하지 않으나 비어있는 경우는 상관없게 해준다.</p>
+
+<h3 id="마지막">마지막</h3>
+<p>Null로 인해 발생된 에러는 가면 갈 수록 찾기 힘들고 디버깅이 어려워지게 한다. 이 Null이라는 것은 오류인지 아닌지 판단하기가 어렵다!</p>
+
+<p>처음부터 이 NPE 방지를 위해 코딩을 한다면 코드 품질은 올라올 것이라 생각이든다.</p>
+:ET

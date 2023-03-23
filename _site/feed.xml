@@ -1,1 +1,955 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-09-03T18:13:49+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Site Title</title><subtitle>An amazing website.</subtitle><author><name>Your Name</name></author><entry><title type="html">hello</title><link href="http://localhost:4000/first/" rel="alternate" type="text/html" title="hello" /><published>2022-09-03T00:00:00+00:00</published><updated>2022-09-03T00:00:00+00:00</updated><id>http://localhost:4000/first</id><content type="html" xml:base="http://localhost:4000/first/"><![CDATA[<h2 id="hello-world">hello world</h2>]]></content><author><name>Your Name</name></author><summary type="html"><![CDATA[hello world]]></summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-23T18:28:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Euihyunee</title><subtitle>euihyunee blog</subtitle><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><entry><title type="html">[Java]StringTokenizer사용법?</title><link href="http://localhost:4000/java/StringTokenizer/" rel="alternate" type="text/html" title="[Java]StringTokenizer사용법?" /><published>2022-11-29T00:00:00+09:00</published><updated>2022-11-29T00:00:00+09:00</updated><id>http://localhost:4000/java/StringTokenizer</id><content type="html" xml:base="http://localhost:4000/java/StringTokenizer/"><![CDATA[<h2 id="1-라이브러리">1. 라이브러리</h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.StringTokenizer</span><span class="o">;</span>
+</code></pre></div></div>
+<ul>
+  <li>import를 해주셔야 사용이 가능합니다.</li>
+</ul>
+
+<hr />
+<h2 id="2-생성-방법">2. 생성 방법</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. StringTokenizer st = new StringTokenizer(문자열);
+2. StringTokenizer st = new StringTokenizer(문자열, 구분자);
+3. StringTokenizer st = new StringTokenizer(문자열, 구분자, true/false);
+</code></pre></div></div>
+
+<ul>
+  <li>StringTokenizer는 기본적으로 띄어쓰기를 기점으로 분리합니다.</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">"안녕하세요, Spring 개발자입니다."</span><span class="o">;</span>
+
+        <span class="nc">StringTokenizer</span> <span class="n">st</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringTokenizer</span><span class="o">(</span><span class="n">str</span><span class="o">);</span>
+
+        <span class="k">while</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">hasMoreTokens</span><span class="o">()){</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">nextToken</span><span class="o">());</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>안녕하세요,
+Spring
+개발자입니다.
+
+종료 코드 0(으)로 완료된 프로세스
+</code></pre></div></div>
+
+<ul>
+  <li>구분자를 적어줄 경우 띄어쓰기가 아닌 구분자를 기점으로 분리합니다.</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">"안녕하세요, Spring 개발자입니다."</span><span class="o">;</span>
+
+        <span class="nc">StringTokenizer</span> <span class="n">st</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringTokenizer</span><span class="o">(</span><span class="n">str</span><span class="o">,</span> <span class="s">","</span><span class="o">);</span>
+
+        <span class="k">while</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">hasMoreTokens</span><span class="o">()){</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">nextToken</span><span class="o">());</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>안녕하세요
+ Spring 개발자입니다.
+
+종료 코드 0(으)로 완료된 프로세스
+</code></pre></div></div>
+
+<ul>
+  <li>구분자와 더불어 세 번째 파라메터에 true를 주게 되면 구분자 또한 토큰으로 취급합니다.</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">"안녕하세요, Spring 개발자입니다."</span><span class="o">;</span>
+
+        <span class="nc">StringTokenizer</span> <span class="n">st</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringTokenizer</span><span class="o">(</span><span class="n">str</span><span class="o">,</span> <span class="s">","</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+
+        <span class="k">while</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">hasMoreTokens</span><span class="o">()){</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">nextToken</span><span class="o">());</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>안녕하세요
+,
+ Spring 개발자입니다.
+
+종료 코드 0(으)로 완료된 프로세스
+</code></pre></div></div>
+
+<hr />
+<h2 id="stringtokenizer-메소드">StringTokenizer 메소드</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>리턴값</th>
+      <th>메서드명</th>
+      <th>역활</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>bolean</td>
+      <td>hasMoreTokens()</td>
+      <td>남아있는 토큰이 있으면 true 없으면 false 반환</td>
+    </tr>
+    <tr>
+      <td>String</td>
+      <td>nextToken()</td>
+      <td>다음 토큰을 반환</td>
+    </tr>
+    <tr>
+      <td>String</td>
+      <td>nextToken(String delim)</td>
+      <td>delim기준으로 다음 토큰을 반환</td>
+    </tr>
+    <tr>
+      <td>bolean</td>
+      <td>hasMoreElements()</td>
+      <td>hasMoreTokens()와 동일하다.</td>
+    </tr>
+    <tr>
+      <td>Object</td>
+      <td>nextElement()</td>
+      <td>nextToken()과 동일하지만 객체를 반환</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>countTokens()</td>
+      <td>총 토큰의 개수를 반환</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="stringtokenizer-vs-split">StringTokenizer VS split</h2>
+<ul>
+  <li>둘 다 문자열을 파싱할 때 사용한다는 공통점이 있다.</li>
+  <li>StringTokenizer는 문자, 문자열로 구분한다. split은 정규표현식으로 구분한다.</li>
+  <li>StringTokenizer는 빈 문자열을 Token으로 인식하지 않는다.<br />
+반면 split은 빈 문자열을 Token으로 인식한다.</li>
+  <li>StringTokenizer는 결과값이 문자열이라면 split은 결과값이 문자열 배열이다.</li>
+  <li>성능적으로는 배열에 담아 반환하는 split이 StringTokenizer보다 뒤쳐진다.<br />
+하지만 그렇게 큰 차이는 없으므로 편한 방식을 사용하면 된다.</li>
+</ul>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><category term="java" /><summary type="html"><![CDATA[문자열 분리]]></summary></entry><entry><title type="html">[JPA]Spring Data JPA</title><link href="http://localhost:4000/jpa/SpringJPA/" rel="alternate" type="text/html" title="[JPA]Spring Data JPA" /><published>2022-11-06T00:00:00+09:00</published><updated>2022-11-06T00:00:00+09:00</updated><id>http://localhost:4000/jpa/SpringJPA</id><content type="html" xml:base="http://localhost:4000/jpa/SpringJPA/"><![CDATA[<h2 id="spring-data-jpa란">Spring Data JPA란?</h2>
+<blockquote>
+  <ul>
+    <li>JPA를 좀 더 편하게 사용할 수 있게 Repository interface를 제공한다.<br />
+repository 개발 시 인터페이스만 작성하면 실행 시점에 spring data jpa가 구현 객체를 동적으로 생성해서 알아서 주입한다.</li>
+    <li>기존의 JPA는 EntityManager를 생성하여 그 안에서 CRUD의 로직을 처리하는 반면에 Spring Data JPA는 이미 EntityManager가 선언되어 있기 때문에 직접 작성할 필요가 없다.</li>
+    <li>CRUD 처리를 위한 공통 인터페이스를 제공한다.</li>
+    <li>공통 메소드를 제공한다.(아래 내용 있습니다)</li>
+  </ul>
+</blockquote>
+
+<hr />
+
+<h2 id="의존성-주입">의존성 주입</h2>
+
+<ul>
+  <li>gradle에서 build.gradle</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">mplementation</span> <span class="err">'</span><span class="n">org</span><span class="o">.</span><span class="na">springframework</span><span class="o">.</span>
+        <span class="nl">boot:</span><span class="n">spring</span><span class="o">-</span><span class="n">boot</span><span class="o">-</span><span class="n">starter</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">jpa</span><span class="err">'</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<ul>
+  <li>maven에서 appConfig.xml</li>
+</ul>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>org.springframework.data<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>spring-data-jpa<span class="nt">&lt;/artifactId&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="spring-data-jpa의-예시">Spring Data JPA의 예시</h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">UserRepository</span> <span class="kd">extends</span> <span class="nc">JpaRepository</span><span class="o">&lt;</span><span class="nc">User</span><span class="o">,</span> <span class="nc">Long</span><span class="o">&gt;</span> <span class="o">{</span>
+
+  <span class="nc">List</span><span class="o">&lt;</span><span class="nc">User</span><span class="o">&gt;</span> <span class="nf">findByEmailAddressAndLastname</span>
+  <span class="o">(</span><span class="nc">String</span> <span class="n">emailAddress</span><span class="o">,</span> <span class="nc">String</span> <span class="n">lastname</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <ul>
+    <li>docs.spring.io에 나온 예시이다.</li>
+    <li>Repository만 interface로 작성하면 spring data jpa 적용 끝이다.</li>
+    <li>위의 코드(findByEmailAddressAndLastname)를 쿼리로 날리면 다음과 같다.</li>
+  </ul>
+</blockquote>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="n">u</span> <span class="k">from</span> <span class="k">User</span> <span class="n">u</span> <span class="k">where</span> <span class="n">u</span><span class="p">.</span><span class="n">emailAddress</span> <span class="o">=</span> <span class="o">?</span><span class="mi">1</span> <span class="k">and</span> <span class="n">u</span><span class="p">.</span><span class="n">lastname</span> <span class="o">=</span> <span class="o">?</span><span class="mi">2</span>
+</code></pre></div></div>
+
+<ul>
+  <li>sql문을 읽어보면 emailAddress 값과 lastname이 일치하는 값을 select해주며 List<User> 타입으로 값을 받는다.</User></li>
+  <li>이처럼 spring data jpa는 메소드 이름을 보고 쿼리를 생성한다. 이를 spring.io.docx 사이트에서는 keyword로 정의했는데 자세한 내용은 사이트를 참조 바란다.</li>
+  <li>
+    <p><a href="https://docs.spring.io/spring-data/jpa/docs/1.10.1.RELEASE/reference/html/#jpa.sample-app.finders.strategies">spring.io.docx</a></p>
+  </li>
+  <li>주요 메서드
+    <blockquote>
+      <ul>
+        <li>save() : 새로운 엔티티는 저장하고 이미 있는 엔티티는 수정한다.
+          <ul>
+            <li>내부 : em.merge() 호출</li>
+          </ul>
+        </li>
+        <li>delete() : 엔티티 하나를 삭제
+          <ul>
+            <li>내부 : em.remove() 호출</li>
+          </ul>
+        </li>
+        <li>findOne() : 엔티티 하나를 조회
+          <ul>
+            <li>내부 : em.find() 호출</li>
+          </ul>
+        </li>
+        <li>getOne() : 엔티티를 프록시로 조회
+          <ul>
+            <li>내부 : em.getReference() 호출</li>
+          </ul>
+        </li>
+        <li>findAll() : 모든 엔티티를 조회
+          <ul>
+            <li>sort 또는 pageable 조건을 파라미터로 제공</li>
+          </ul>
+        </li>
+      </ul>
+    </blockquote>
+  </li>
+</ul>
+
+<hr />
+<h2 id="query직접-사용하기">Query직접 사용하기</h2>
+<ul>
+  <li>
+    <p>Repository 메소드를 사용한 곳에 직접 쿼리를 정의하는 방식</p>
+
+    <ul>
+      <li>Repository에 직접 쿼리 정의</li>
+    </ul>
+  </li>
+  <li>
+    <p>@Query 어노테이션에 nativeQuery=true로 설정 시 파라미터 바인딩을 0부터 사용하면 된다. default는 1부터 시작</p>
+  </li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">UserRepository</span> <span class="kd">extends</span> <span class="nc">JpaRepository</span><span class="o">&lt;</span><span class="nc">User</span><span class="o">,</span> <span class="nc">Long</span><span class="o">&gt;{</span>
+
+    <span class="nd">@Query</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span><span class="s">"select u from User u where u.
+    emailAddress =?1 and u.lastname = ?2"</span><span class="o">)</span>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">User</span><span class="o">&gt;</span> <span class="nf">findByEmailAddressAndLastname</span><span class="o">(</span>
+        <span class="nc">String</span> <span class="n">emailAddress</span><span class="o">,</span> <span class="nc">String</span> <span class="nc">Lastname</span><span class="o">);</span>
+
+    <span class="c1">// nativeQuery = true 사용 </span>
+    <span class="nd">@Query</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span><span class="s">"select u from User u where u.
+    emailAddress =?0 and u.lastname = ?1"</span><span class="o">,</span> 
+    <span class="n">nativeQuery</span> <span class="o">=</span> <span class="kc">true</span><span class="o">)</span>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">User</span><span class="o">&gt;</span> <span class="nf">findByEmailAddressAndLastname</span><span class="o">(</span>
+        <span class="nc">String</span> <span class="n">emailAddress</span><span class="o">,</span> <span class="nc">String</span> <span class="nc">Lastname</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><category term="jpa" /><summary type="html"><![CDATA[Spring Data JPA에 대해서]]></summary></entry><entry><title type="html">[JPA]영속성 컨텍스트</title><link href="http://localhost:4000/jpa/persist/" rel="alternate" type="text/html" title="[JPA]영속성 컨텍스트" /><published>2022-10-23T00:00:00+09:00</published><updated>2022-10-23T00:00:00+09:00</updated><id>http://localhost:4000/jpa/persist</id><content type="html" xml:base="http://localhost:4000/jpa/persist/"><![CDATA[<h2 id="영속성-컨텍스트란">영속성 컨텍스트란?</h2>
+<ul>
+  <li>JPA에서 가장 중요한 2가지 중 하나이다.</li>
+  <li>~~”엔티티를 영구 저장하는 환경”이라는 뜻이다. ~~</li>
+  <li>영속성 컨텍스트는 논리적인 개념이다.</li>
+  <li>눈에 보이지 않는다.</li>
+  <li>엔티티 매니저를 통해서 영속성 컨텍스트에 접근한다.</li>
+</ul>
+
+<h2 id="엔티티의-생명주기">엔티티의 생명주기</h2>
+<ul>
+  <li>비영속(new/transient)
+    <ul>
+      <li>영속성 컨텍스트와 전혀 관계가 없는 새로운 상태</li>
+    </ul>
+  </li>
+  <li>영속(managed)
+    <ul>
+      <li>영속성 컨텍스트에 관리되는 상태</li>
+    </ul>
+  </li>
+  <li>준영속(detached)
+    <ul>
+      <li>영속성 컨텍스트에 저장되었다가 분리된 상태</li>
+    </ul>
+  </li>
+  <li>삭제(removed)
+    <ul>
+      <li>말 그대로 삭제된 상태</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="1-비영속">1. 비영속</h3>
+
+<h3 id="2-영속">2. 영속</h3>
+
+<h3 id="3-준영속-삭제">3. 준영속, 삭제</h3>
+<ul>
+  <li>준영속 상태로 만드는 방법</li>
+  <li>em.detach(entity)</li>
+  <li>em.clear()</li>
+  <li>em.close()</li>
+</ul>
+
+<h2 id="영속성-컨텍스트의-이점">영속성 컨텍스트의 이점</h2>
+<ul>
+  <li>1차 캐시</li>
+  <li>동일성(identity) 보장</li>
+  <li>트랜잭션을 지원하는 쓰기 지연<br />
+(transactional write-behind)</li>
+  <li>변경 감지(Dirty Checking)</li>
+  <li>지연 로딩(Lazy Loading)</li>
+</ul>
+
+<h2 id="플러쉬란">플러쉬란?</h2>
+<ul>
+  <li>영속성 컨텍스트의 변경내용을 데이터베이스에 반영하는 것이다.</li>
+  <li>플러쉬는 영속성 컨텍스트의 내용을 비우는 것이 아니다.</li>
+</ul>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><category term="jpa" /><summary type="html"><![CDATA[JPA와 영속성 컨텍스트]]></summary></entry><entry><title type="html">[JPA]다대일[N:1] 연관관계 매핑</title><link href="http://localhost:4000/jpa/manytoone/" rel="alternate" type="text/html" title="[JPA]다대일[N:1] 연관관계 매핑" /><published>2022-10-22T00:00:00+09:00</published><updated>2022-10-22T00:00:00+09:00</updated><id>http://localhost:4000/jpa/manytoone</id><content type="html" xml:base="http://localhost:4000/jpa/manytoone/"><![CDATA[<h2 id="다대일-단방향-연관관계-매핑하기">다대일 단방향 연관관계 매핑하기</h2>
+<ul>
+  <li>객체와 테이블의 연관관계는 조금 다르다.</li>
+  <li>테이블
+    <ul>
+      <li>외래 키 하나로 양쪽 조인이 가능하다.</li>
+      <li>사실 방향이라는 개념이 없다.</li>
+      <li>DB에서는 외래키가 한 쪽에만 있다.</li>
+    </ul>
+  </li>
+  <li>객체
+    <ul>
+      <li>참조용 필드가 있는 쪽으로만 참조 가능하다.</li>
+      <li>한쪽만 참조하면 단방향</li>
+      <li>양쪽이 서로 참조하면 양방향</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="연관관계의-주인">연관관계의 주인</h2>
+<ul>
+  <li>테이블은 <strong>외래 키 하나</strong>로 두 테이블이 연관관계를 맺는다.</li>
+  <li>객체 양방향 관계는 A-&gt;B, B-&gt;A 처럼 참조가 2군데이다.</li>
+  <li>객체 양방향 관계는 참조가 2군데 있다.<br />
+둘 중 테이블의 외래키를 관리할 곳을 지정해야 한다.</li>
+  <li>연관관계의 주인은 외래키를 관리하는 참조이다.</li>
+  <li>연관관계 주인의 반대편은 외래 키에 영향을 주지 않으며,<br />
+단순 조회만 가능하다.</li>
+</ul>
+
+<h3 id="ex-예시로-유튜버와-구독자를-나타내는-다대일을-나타내-보자">[ex] 예시로 유튜버와 구독자를 나타내는 다대일을 나타내 보자.</h3>
+
+<p><img src="https://raw.githubusercontent.com/Euihyunee/Euihyunee.github.io/master/_posts/img/ManyToOne.png" alt="Alt ManyToOne" /></p>
+
+<p>많은 쪽 Subscriber(구독자)쪽이 N이고 Youtuber(유튜버)가 1인 경우이다. 많은 쪽에 외래키를 설정해 주었고, Subscriber에서 Youtuber로 참조를 한다고 하면 YOUTUBER_ID를 가지고 참조하면 됨. DB설계에서 외래키는 항상 “다”에 가야한다.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Entity</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Youtuber</span> <span class="o">{</span>
+    <span class="nd">@Id</span> <span class="nd">@GeneratedValue</span>
+    <span class="nd">@Column</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">"YOUTUBER_ID"</span><span class="o">)</span>
+    <span class="kd">private</span> <span class="nc">Long</span> <span class="n">id</span><span class="o">;</span>
+
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Entity</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Subscriber</span> <span class="o">{</span>
+
+    <span class="nd">@Id</span> <span class="nd">@GeneratedValue</span>
+    <span class="nd">@Column</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">"SUBSCRIBER_ID"</span><span class="o">)</span>
+    <span class="kd">private</span> <span class="nc">Long</span> <span class="n">id</span><span class="o">;</span>
+
+    <span class="nd">@Column</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">"USERNAME"</span><span class="o">)</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">username</span><span class="o">;</span>
+
+    <span class="nd">@ManyToOne</span>
+    <span class="nd">@JoinColumn</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">"YOUTUBER_ID"</span><span class="o">)</span>
+    <span class="kd">private</span> <span class="nc">Youtuber</span> <span class="n">youtuber</span><span class="o">;</span>
+
+    <span class="c1">// getter, setter</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>다대일인 경우에는 @ManyToOne 어노테이션을 많은 쪽(여기서는 Subscriber)에 써주면 JPA에서 인식을 하여 Query가 우리가 원하는 데로 나가게 된다.</li>
+  <li>외래키가 있는 곳이 연관관계의 주인이라고 했다. 그렇다면 위에서는 외래키가 어디 있을까? 바로 Subscriber에 있다. 다대일이라는 것은 해석에 따라 Youtuber가 될 수 있고, Subscriber가 될 수도 있다. 하지만 DB입장에서 보면 다대일이라는 것은 많은 쪽이 “다”라고 생각하면 된다.</li>
+  <li>@ManyToOne 어노테이션은 DB와 매핑하기 위해 존재하는 것이다. JPA에게 다대일이라고 알려주는 것이라 생각하면 된다.<br />
+@JoinColum은 YOUTUBER_ID와 매핑하기 위한 어노테이션이다.</li>
+  <li>여기서 양방향으로 하기 위해서는 코드 2줄만 “1”인쪽에 추가해주면 되는데, 일단 다대일만 짠 이후에 양방향이 필요하다면 그때 추가하는 것이 좋다.</li>
+</ul>
+
+<h3 id="jpa를-이용하기-위해서는-db설계가-먼저-되어야-한다-그리고-각-entity마다-관계를-어노테이션을-이용해-알려줘야-한다">JPA를 이용하기 위해서는 DB설계가 먼저 되어야 한다. 그리고 각 Entity마다 관계를 어노테이션을 이용해 알려줘야 한다.</h3>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><category term="jpa" /><summary type="html"><![CDATA[@ManyToOne]]></summary></entry><entry><title type="html">[Spring] TDD</title><link href="http://localhost:4000/spring/SpringTDD/" rel="alternate" type="text/html" title="[Spring] TDD" /><published>2022-10-03T00:00:00+09:00</published><updated>2022-10-03T00:00:00+09:00</updated><id>http://localhost:4000/spring/SpringTDD</id><content type="html" xml:base="http://localhost:4000/spring/SpringTDD/"><![CDATA[<hr />
+<h2 id="테스트-코드는-어떻게-짜야할까">테스트 코드는 어떻게 짜야할까?</h2>
+
+<p>TDD에서는 실제 개발코드보다 테스트 코드를 먼저 작성한다.</p>
+
+<p>왜냐? 개발된 코드를 테스트하는 것이 훨씬 어렵기 때문이다.</p>
+
+<p>테스트 코드를 짤 때 우리가 의문이 드는 점이 아주 많다. <code class="language-plaintext highlighter-rouge">어떤 코드에 대해서 테스트 코드를 짜야할까?</code>, <code class="language-plaintext highlighter-rouge">DB연결은 어떻게 테스트하지</code> 등 수많은 고려사항들을 마주칠 것이고 이로 인해 머리가 아프다.</p>
+
+<p>여기 글에서는 Spring에서 TDD방식을 사용할 때 어떤 것을 사용하면 좋을 지에 대해 설명하겠다.</p>
+
+<hr />
+<h2 id="java-단위테스트-작성">Java 단위테스트 작성</h2>
+
+<h3 id="필요한-라이브러리">[필요한 라이브러리]</h3>
+<ul>
+  <li>Junit5 : 자바 단위 테스트를 위한 테스팅 프레임워크</li>
+  <li>AssertJ : 자바 테스트를 돕기 위해 다양한 문법을 지원하는 라이브러리</li>
+</ul>
+
+<h3 id="given-when-then패턴">[given-when-then패턴]</h3>
+<p>단위 테스트의 패턴 중 하나로 1개의 단위 테스트를 3가지 단계로 나누어 처리하는 패턴</p>
+<ul>
+  <li>given(준비) : 어떠한 데이터가 준비되었을 때</li>
+  <li>when(실행) : 어떠한 함수를 실행하면</li>
+  <li>then(검증) : 어떠한 결과가 나와야 한다.</li>
+</ul>
+
+<hr />
+<h2 id="mockito-소개-및-사용법">Mockito 소개 및 사용법</h2>
+
+<h3 id="mockito란">[Mockito란?]</h3>
+<p>이는 <strong><span style="color:red">개발자가 동작을 직접 제어할 수 있는 가짜(Mock) 객체를 지원하는 테스트 프레임 워크</span></strong> 이다. Spring에서는 여러 객체들 간의 의존성이 생기는데 이러한 의존성은 단위 테스트 작성을 어렵게 만든다. 이를 위해 Mockito 라이브러리를 활용한다면 가짜 객체에 원하는 결과를 Stub하여 단위 테스트를 진행할 수 있다.</p>
+
+<h3 id="mockito-사용법">[Mockito 사용법]</h3>
+
+<h3 id="1-mock-객체-의존성-주입">1. Mock 객체 의존성 주입</h3>
+<hr />
+<ul>
+  <li>@Mock : Mock 객체를 만들어 반환해주는 어노테이션</li>
+  <li>@Spy : Stub하지 않은 메소드들은 원본 메소드 그대로 사용하는 어노테이션</li>
+  <li>@InjectMocks : @Mock 또는 @Spy로 생성된 가짜 객체를 자동으로 주입시켜주는 어노테이션</li>
+</ul>
+
+<h3 id="2-stub-결과-처리">2. Stub 결과 처리</h3>
+<hr />
+<ul>
+  <li>doReturn() : Mock 객체가 특정한 값을 반환해야 하는 경우</li>
+  <li>doNothing() : Mock 객체가 아무 것도 반환하지 않는 경우(void)</li>
+  <li>doThrow() : Mock 객체가 예외를 발생시키는 경우 사용</li>
+</ul>
+
+<h3 id="3-mockito와-junit의-결합">3. Mockito와 Junit의 결합</h3>
+<hr />
+<p>Junit과 결합되기 위해서는 Junit4에서 Mockito를 활용하기 위해서는 클래스에 @RunWith를 붙여주어야 연동이 가능하고 SpringBoot 2.2.0부터 Junit5를 지원하기에 @ExtendWith를 사용해야 결합이 가능하다.</p>
+
+<h3 id="4-활용">4. 활용</h3>
+<hr />
+<p>Mockito를 활용하여 Spring의 Controller, Service, Repository 계층에서 단위 테스트를 진행하면 된다.</p>
+
+<h3 id="예시-service-계층">[예시 Service 계층]</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Service</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HistoryService</span> <span class="o">{</span>
+
+    <span class="nd">@Autowired</span>
+    <span class="nc">GetMatchIDBean</span> <span class="nc">GetMatchIDBean</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nc">MatchID</span> <span class="nf">GetMatchIdByPuuid</span><span class="o">(</span><span class="nc">String</span> <span class="n">puuid</span><span class="o">){</span>
+        <span class="k">return</span> <span class="nc">GetMatchIDBean</span><span class="o">.</span><span class="na">exec</span><span class="o">(</span><span class="n">puuid</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@ExtendWith</span><span class="o">(</span><span class="nc">MockitoExtension</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+<span class="kd">class</span> <span class="nc">HistoryServiceTest</span> <span class="o">{</span>
+
+    <span class="nd">@InjectMocks</span>
+    <span class="kd">private</span> <span class="nc">HistoryService</span> <span class="n">historyService</span><span class="o">;</span>
+
+    <span class="nd">@Mock</span>
+    <span class="kd">private</span> <span class="nc">MatchID</span> <span class="n">matchID</span><span class="o">;</span>
+
+    <span class="nd">@Spy</span>
+    <span class="kd">private</span> <span class="nc">GetMatchIDBean</span> <span class="n">getMatchIDBean</span><span class="o">;</span>
+
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>위 Service 계층은 이렇게 나타낸 후에 단위별로 Test를 진행하면 된다.</p>
+
+<p>@Spy 어노테이션은 Mock으로 지정 안 되어 있으니 원본 메소드를 실행한다.</p>
+
+<p>자세한 예시와 설명은 이 블로그를 참조하면 된다.</p>
+
+<p><a href="https://mangkyu.tistory.com/145?category=761302">https://mangkyu.tistory.com/145?category=761302</a></p>
+
+<h3 id="bdd는-또-뭐야">BDD는 또 뭐야!!@&gt;?</h3>
+
+<p>간단히 소개만 하고 다음에 작성하겠다.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@ExtendWith</span><span class="o">(</span><span class="nc">MockitoExtension</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+<span class="kd">class</span> <span class="nc">HistoryServiceTest</span> <span class="o">{</span>
+
+    <span class="nd">@MockBean</span>
+    <span class="kd">private</span> <span class="nc">HistoryService</span> <span class="n">historyService</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="nc">GetMatchIDBean</span> <span class="n">getMatchIDBean</span> <span class="o">=</span> <span class="n">mock</span><span class="o">(</span><span class="nc">GetMatchIDBean</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+    <span class="kd">private</span> <span class="nc">MatchID</span> <span class="nc">MatchID</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">MatchID</span><span class="o">();</span>
+
+    <span class="nd">@BeforeEach</span>
+    <span class="kt">void</span> <span class="nf">stubbing</span><span class="o">(){</span>
+    
+        <span class="n">given</span><span class="o">(</span><span class="n">getMatchIDBean</span><span class="o">.</span><span class="na">exec</span><span class="o">(</span><span class="n">any</span><span class="o">(</span><span class="nc">String</span><span class="o">.</span><span class="na">class</span><span class="o">))).</span><span class="na">willReturn</span><span class="o">(</span><span class="nc">MatchID</span><span class="o">);</span>
+    <span class="o">}</span>
+</code></pre></div></div>
+
+<p>위의 예시를 BDD로 나타낸 모습인데 Mokito라이브러리를 쓴 것과 유사한 모습을 가진다. BDD는 사실 TDD에서 따온 Behavior Driven Development 약자로 유사한 의미를 가진다.</p>
+
+<p>BDD를 처음 생각한 사람은</p>
+
+<p><code class="language-plaintext highlighter-rouge">
+TDD하다가 해당 코드를 분석하기 위해서 많은 코드들을 분석해야하고 복잡성으로 인해 '누군가가 나에게 이 코드는 어떤식으로 짜여졌어!' 라고 말을 해줬으면 좋았을 텐데 라고 생각을 하다가 보니 행동 중심 개발을 하면 좋겠다고 생각했다.
+</code></p>
+
+<p>한 마디로 표현하자면 BDD는 애플리케이션이 어떻게 행동해야 하는지에 대한 공통된 이해를 구성하는 방법이며 이에 대한 자세한 설명은 다음 글에 소개하도록 하겠습니다.</p>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><category term="spring" /><summary type="html"><![CDATA[Spring에서의 TDD방식]]></summary></entry><entry><title type="html">[Java]NullException</title><link href="http://localhost:4000/java/NPE/" rel="alternate" type="text/html" title="[Java]NullException" /><published>2022-10-03T00:00:00+09:00</published><updated>2022-10-03T00:00:00+09:00</updated><id>http://localhost:4000/java/NPE</id><content type="html" xml:base="http://localhost:4000/java/NPE/"><![CDATA[<h2 id="java-nullpointexception-원인예방해결">[Java] NullPointException 원인/예방/해결</h2>
+
+<p>이번 프로젝트를 진행하던 도중 JSON파일 부분인지 API요청해서 DTO로 받는 부분인진 모르겠지만 가장 많이 일어났던 오류가 바로 이 NullPointException이였는데 이를 개선하기 위한 방법들을 알아보고 포스팅해 보았다.</p>
+
+<h2 id="npe의-예방-및-해결법">[NPE]의 예방 및 해결법</h2>
+<h4 id="nullpointexception-줄인-말이-npe다">NullPointException 줄인 말이 NPE다</h4>
+
+<h3 id="1-null-parmeter-넘기지-말-것">1. null Parmeter 넘기지 말 것</h3>
+<ul>
+  <li>parameter를 넘기고 나서 뒤에 이를 처리하는 부분이 있다고 해도 넘기지 말자</li>
+  <li>의미없는 null 덕분에 쓸데없이 null체크를 해줘야 한다.</li>
+</ul>
+
+<h3 id="2-문자열-비교">2. 문자열 비교</h3>
+<ul>
+  <li>String 문자열은 기본형이 아니기에 반드니 <span style="color:blue"> equals </span>를 사용한다.</li>
+</ul>
+
+<h4 id="예시">[예시]</h4>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">String</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="s">"tft"</span><span class="o">);</span>
+<span class="k">if</span><span class="o">(</span><span class="n">a</span> <span class="o">==</span> <span class="s">"tft"</span><span class="o">){</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"참"</span><span class="o">);</span>
+<span class="o">}</span><span class="k">else</span><span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"거짓"</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="s">"tft"</span><span class="o">)){</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"참"</span><span class="o">);</span>
+<span class="o">}</span><span class="k">else</span><span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"거짓"</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>하면 결과는</p>
+
+<p>거짓</p>
+
+<p>참  으로 나온다. 근데 여기서 a = null이면 equlas에서 <strong>NPE</strong>가 발생한다. null은 객체가 아니기 때문이다.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="o">(</span><span class="s">"tft"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">a</span><span class="o">)){</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"참"</span><span class="o">);</span>
+<span class="o">}</span><span class="k">else</span><span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"거짓"</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>하지만 이렇게 <strong>비교의 주체가 문자열</strong>부터 주어진다면 <code class="language-plaintext highlighter-rouge">NPE</code>이 발생하지 않는다. 따라서 문자열 비교는 non-null String 기준으로 비교하는 것이 좋다.</p>
+
+<h3 id="3-tostring말고---valeof-사용">3. toString말고 -&gt; valeOf() 사용</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">valueOf</span><span class="o">(</span><span class="n">a</span><span class="o">));</span><span class="c1">// null</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span><span class="c1">// NPE발생!!</span>
+</code></pre></div></div>
+<p>이렇듯 toString은 null을 객체로 못 만든다. 따라서 이런 경우 valueOf()를 사용하길 바란다.</p>
+
+<h3 id="4-spring에서는-notnull을-사용하자">4. Spring에서는 @NotNull을 사용하자</h3>
+
+<p>DTO에 @NotNull 어노테이션을 사용하자</p>
+
+<p>Lombok에서 지원하는 @NotNull어노테이션은 필드에 Null값이 주입될 경우는 허용하지 않으나 비어있는 경우는 상관없게 해준다.</p>
+
+<h3 id="마지막">마지막</h3>
+<p>Null로 인해 발생된 에러는 가면 갈 수록 찾기 힘들고 디버깅이 어려워지게 한다. 이 Null이라는 것은 오류인지 아닌지 판단하기가 어렵다!</p>
+
+<p>처음부터 이 NPE 방지를 위해 코딩을 한다면 코드 품질은 올라올 것이라 생각이든다.</p>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><category term="java" /><summary type="html"><![CDATA[NPL 원인, 예방, 해결]]></summary></entry><entry><title type="html">Docker</title><link href="http://localhost:4000/Docker/" rel="alternate" type="text/html" title="Docker" /><published>2022-09-26T00:00:00+09:00</published><updated>2022-09-26T00:00:00+09:00</updated><id>http://localhost:4000/Docker</id><content type="html" xml:base="http://localhost:4000/Docker/"><![CDATA[<hr />
+<h2 id="docker란-무엇">Docker란 무엇?</h2>
+<p>도커는 먼저 컨테이너 기반의 오픈 소스이다.</p>
+
+<p>먼저 컨테이너란 개념에 대해서 알아야합니다. 대충 말하자면 하나의 시스템 위에서 둘 이상의 Software를 동시에 실행하려고 한다면 문제가 발생할 수 있습니다. 만약 두 software의 운영 체제가 다른 경우에 문제가 발생할 수 있습니다. 이때 해결법으로 두 Software에 대한 시스템을 각각 준비하는 방법이 있는데 시스템을 각각 준비할 경우 비용의 문제가 발생하게 된다. 이러한 문제점을 효율적으로 해결한 것이 바로 컨테이너이다. 컨테이너(Container)는 개별 Software의 실행에 필요한 실행환경을 독립적으로 운용할 수 있도록  <strong>“별도의 운영 환경을 제공해주는 기술”</strong> 이다. 이를 활용하면 다른 실행환경과의 간섭을 막으니 독립성을 확보해준다.</p>
+
+<hr />
+<h2 id="docker-사용이유">Docker 사용이유?</h2>
+<p>그러면 Docker는 어디서/왜? 사용할까?</p>
+
+<p>Docker는 이러한 컨테이너들을 관리하는 플랫폼이다.</p>
+
+<p>다양한 프로그램, 실행환경을 컨테이너로 추상화하고 동일한 인터페이스를 제공하여 프로그램의 배포 및 관리를 단순하게 해준다.</p>
+
+<p>사용하는 곳들은 백엔드 프로그램, 데이터베이스 서버, 메시지 큐 등 어떤 프로그램도 컨테이너로 추상화할 수 있고 조립PC, AWS, Azure, Google cloud등 어떤 환경에서도 실행이 가능하다.</p>
+
+<p>모든 개발자는 자신의 개발 환경에서 직접 컨테이너화된 애플리케이션을 개발한 다음, 이를 클라우드 프로덕션 환경에 이동 및 실행할 수 있다.</p>
+
+<hr />
+<h2 id="docker의-두-가지-주요-측면">Docker의 두 가지 주요 측면</h2>
+<p>Docker는 두 가지 서로 다른 측면에서 소프트웨어를 빌드, 제공 및 실행하는 방식을 변경합니다:</p>
+
+<ul>
+  <li>개발에서 프로덕션까지 애플리케이션을 안정적으로 구축할 수 있도록 프로세스를 개선한다.</li>
+  <li>온프레미스에서 클라우드로 이전할 수 있도록 표준 이미지 형식을 제공</li>
+</ul>
+
+<hr />
+<h2 id="이미지">이미지??</h2>
+<p>Docker를 찾아보면 이미지에 관한 이야기가 나온다. 컨테이너는 이 이미지를 실행한 상태이고, 여기서 이미지는 컨테이너 실행에 필요한 파일과 설정을 포함하고 있는 것으로 기본값을 가진다.</p>
+
+<p>추가되거나 변하는 값은 컨테이너에 저장되며 같은 이미지에서 여러 개의 컨테이너를 만들 수 있고 컨테이너의 상태가 바뀌거나 삭제되도 이미지는 변하지 않고 그대로 남아있다.</p>
+
+<p>Docker 이미지는 Docker hub에 등록하거나 Docker Registry 저장소를 직접 만들어 관리할 수 있다.</p>
+
+<p>모든 종속성을 갖춘 Docker 이미지를 생성한다면 <strong>자신의 개발 환경에서만 제대로 작동하는 문제</strong> 를 해결할 수 있다. Docker 이미지가 Git 같은 소스 코드 저장소의 빌드 파이프라인을 통해 자동으로 생성한다.</p>
+
+<p>이미지의 특성으로는 다음과 같다.</p>
+<ul>
+  <li>도커 이미지의 용량은 보통 수백 MB ~ 수 GB이지만 가상머신에 비하면 작은 용량이다</li>
+  <li>상태값을 가지지 않고 변하지 않는다</li>
+  <li>하나의 이미지를 통해 여러 컨테이너를 생성할 수 있고, 컨테이너를 삭제해도 이미지는 변하지 않는다</li>
+  <li>이미지들은 Docker Hub를 통해 버전 관리 및 배포가 가능</li>
+  <li>도커는 Dockerfile이라는 파일로 이미지를 만든다</li>
+</ul>
+
+<hr />
+<h2 id="dockerfile">Dockerfile??</h2>
+<p>도커 이미지를 만들기 위해선 Dockerfile이라는 파일에 DSL언어를 이용해 이미지를 생성할 수 있다. 이는 단순한 텍스트 파일이며 일반적으로 소스와 함께 관리한다. 서버에서 프로그램을 설치하려고 하면 Dockerfile을 통하여 관리하면 되는데 키워드는 20가지 정도 있지만 중요한 키워드는 <code class="language-plaintext highlighter-rouge">FROM</code>과 <code class="language-plaintext highlighter-rouge">RUN</code>이다. 이 두가지를 사용하여 이미지를 만들 수 있다.</p>
+<ul>
+  <li>FROM</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">FROM</span><span class="s"> &lt;image&gt;:&lt;tag&gt;</span>
+<span class="k">FROM</span><span class="s"> ubuntu:16.04</span>
+</code></pre></div></div>
+
+<p>이는 베이스 이미지를 지정한다. 반드시 베이스 이미지를 지정해줘야 하며 어떠한 이미지든 가능하다.</p>
+
+<ul>
+  <li>RUN</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">RUN </span>&lt;<span class="nb">command</span><span class="o">&gt;</span>
+<span class="k">RUN </span>bundle <span class="nb">install</span>
+</code></pre></div></div>
+<p>말 그대로 명령어를 실행한다. /bin/sh -c 뒤에 명령어를 실행하는 방식</p>
+
+<hr />
+<h2 id="docker-install">Docker install</h2>
+
+<p>마지막으로 설치방법에 대해서 말할려 했는데 이 블로그가 잘해주셔서 참조하면 됩니당.</p>
+
+<p>설치 설명 블로그 : https://javaworld.co.kr/131</p>
+
+<p>사이트에 들어가서 설치하시면 되구 좀 오래 걸림</p>
+
+<p><del>정작 본인은 설치 못함</del> 크흠~</p>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><summary type="html"><![CDATA[Doker의 개념 및 사용 방법 설명]]></summary></entry><entry><title type="html">JAVA Beans</title><link href="http://localhost:4000/beans/" rel="alternate" type="text/html" title="JAVA Beans" /><published>2022-09-20T00:00:00+09:00</published><updated>2022-09-20T00:00:00+09:00</updated><id>http://localhost:4000/beans</id><content type="html" xml:base="http://localhost:4000/beans/"><![CDATA[<h1 id="jsp-자바-빈즈">JSP 자바 빈즈</h1>
+
+<h2 id="개요">개요</h2>
+<p>오늘 JSP를 배우던 와중 beans란 단어가 나와서 한 번 포스팅을 써본데이~</p>
+
+<h2 id="빈즈란">빈즈란?</h2>
+<p>프로그램에서 부품이라 생각하면 된다. 큰 프로그램에서 독립적으로 수행되는 하나의 작은 자바 컨포넌트이다.</p>
+
+<p>비지니스 로직을 담고 있으며 자바빈즈 규약을 따르는 클래스이다.</p>
+
+<p>특정 데이터를 관리하고 표현하기 위해 JSP에서 사용하는 특수한 클래스이다.</p>
+
+<p>jsp페이지에서 비지니스 로직을 제거하기 위한 방법으로 사용하는 기술이다. 즉, 
+jsp페이지에서 화면을 표현하기 위한 계산식이나 자료들의 처리를 담당하는 자바 코드를 따로 분리하여 작성한 것이 자바빈즈이다.</p>
+
+<h2 id="사용하는-이유">사용하는 이유?</h2>
+<ul>
+  <li>JSP의 로직부분을 분리해서 코드를 재사용하기 위함</li>
+  <li>코드의 안정성이 보장되며 유지보수가 쉬움</li>
+  <li>폼 데이터 처리에 좋음
+    <ul>
+      <li>수 많은 파라미터를 자바 빈에 담아 사용/전달 할 수 있기 때문이다.</li>
+    </ul>
+  </li>
+  <li>재사용성</li>
+  <li>컴포넌트 기반 구현
+    <ul>
+      <li><strong>JSP, Java bean, Business Logic</strong>이 분리되어 각각이 하는 기능을 줄일 수 있습니다</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="구성요소">구성요소</h2>
+<ul>
+  <li>자바빈즈는 JSP의 표준 액션 태그를 통해 접근할 수 있는 <code class="language-plaintext highlighter-rouge">자바 클래스</code>이다.</li>
+  <li>기본 생성자, 멤버 변수(필드), <code class="language-plaintext highlighter-rouge">getter &amp; setter</code>메소드가 필수적으로 작성되어 있어야 함</li>
+  <li>자바 빈즈의 형태(예시)
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloBean</span><span class="o">{</span>
+  <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+
+  <span class="c1">// setter</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setStatement</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">){</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+  <span class="o">}</span>
+  <span class="c1">// getter</span>
+  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getStatement</span><span class="o">(){</span>
+    <span class="n">retrun</span> <span class="s">"Hello"</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">name</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>    </div>
+    <p>자바 빈즈를 활용할 때</p>
+  </li>
+  <li>액션 태그를 사용한 형태
+    <ul>
+      <li>자바빈 액션 태그를 사용하면 FORM 데이터나 HTML 페이지에서 넘어오는 데이터를 쉽게 객체에 저장하는 것이 가능하다.</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;jsp:useBean&gt;</code> 액션 태그를 이용 -&gt; 자바빈즈 객체 생성 및 이용</li>
+      <li>액션태그는 JSP에서 특별한 기능을 위해 정의된 XML 형태의 태그</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;jsp:useBean&gt;</code>액션 태그 : JSP에서 자바빈즈를 이용하기 위한 태그</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-jsp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 액션 태그 이용
+<span class="nt">&lt;%@page </span><span class="na">contenType = </span><span class="s">"text/html; charset = euc - kr"</span><span class="nt">%&gt;</span>
+// 객체 생성
+<span class="nt">&lt;jsp:useBean </span><span class="na">id = </span><span class="s">"myHello"</span><span class="na"> class = </span><span class="s">"HelloWorld"</span><span class="na"> scope = </span><span class="s">"page"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Hello JSP<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;%</span>
+      <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">();</span>
+
+      <span class="n">myHello</span><span class="o">.</span><span class="na">setStatement</span><span class="o">(</span><span class="s">"대격변!!"</span><span class="o">);</span>
+      <span class="n">str</span> <span class="o">=</span> <span class="n">myHello</span><span class="o">.</span><span class="na">getStatement</span><span class="o">();</span>
+
+      <span class="n">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="err">"</span><span class="o">&lt;</span><span class="n">h1</span><span class="err">&gt;</span><span class="s">" + str + "</span><span class="o">&lt;/</span><span class="n">h1</span><span class="err">&gt;"</span><span class="o">);</span>
+      <span class="nt">%&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>자바 코드를 이용하는 형태
+    <ul>
+      <li>JSP 내에서 자바 코드를 이용하여 자바빈즈 객체를 생성 후 이용하는 방법이다.</li>
+      <li>사용방법</li>
+      <li>클래스 import
+        <ul>
+          <li>&lt;%@page import = “hello.HelloBean”%&gt;</li>
+        </ul>
+      </li>
+      <li>객체 생성
+        <ul>
+          <li>HelloBean myHello = new HelloBean();</li>
+        </ul>
+      </li>
+      <li>객체 사용
+        <ul>
+          <li>myHello.setStatement(“Grace Byun!!”);</li>
+          <li>str = myHello.getStatement();</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-jsp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 전체 코드(JSP안에 자바 코드 이용)
+<span class="nt">&lt;%@page </span><span class="na">contenType = </span><span class="s">"text/html; charset = euc - kr"</span><span class="nt">%&gt;</span>
+<span class="nt">&lt;%@page </span><span class="na">import = </span><span class="s">"hello.HelloBean"</span><span class="nt">%&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Hello JSP<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;%</span>
+      <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">();</span>
+
+      <span class="c1">// 객체 생성</span>
+      <span class="nc">HelloBean</span> <span class="n">myHello</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HelloBean</span><span class="o">();</span>
+
+      <span class="n">myHello</span><span class="o">.</span><span class="na">setStatement</span><span class="o">(</span><span class="s">"8LJAYWALKING"</span><span class="o">);</span>
+      <span class="n">str</span> <span class="o">=</span> <span class="n">myHello</span><span class="o">.</span><span class="na">getStatement</span><span class="o">();</span>
+
+      <span class="n">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="err">"</span><span class="o">&lt;</span><span class="n">h1</span><span class="err">&gt;</span><span class="s">" + str + "</span><span class="o">&lt;/</span><span class="n">h1</span><span class="err">&gt;"</span><span class="o">);</span>
+      <span class="nt">%&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>그럼 어떤 형태를 사용해야 할까?</p>
+<ul>
+  <li>액션 태그를 활용하는 방법은 자바빈즈를 쓰는 디자이너에게 친숙한 방법이다.</li>
+  <li>자바 코드를 사용하는 방법은 개발자에게 친숙한 방법이다.</li>
+  <li>솔직히 편한 방법 쓰면 된다.</li>
+</ul>
+
+<h2 id="자바빈즈-규칙">자바빈즈 규칙</h2>
+
+<p>자바 빈즈를 이용하기 위한 규칙들이 있다. JSP에서 사용을 위함이다.</p>
+
+<ul>
+  <li>패키지화
+    <ul>
+      <li>자바빈즈는 <strong>반드시 패키지</strong>가 있어야 함(default pakage에 있으면 안됨)</li>
+    </ul>
+  </li>
+  <li>멤버 변수 접근자를 <code class="language-plaintext highlighter-rouge">private</code>로 선언
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">getter, setter</code> 이용하여 멤버 변수에 접근. 단 <code class="language-plaintext highlighter-rouge">getter, setter</code>는 <code class="language-plaintext highlighter-rouge">public</code>으로 설정</li>
+    </ul>
+  </li>
+  <li><strong>기본 생성자</strong>를 생성</li>
+  <li><code class="language-plaintext highlighter-rouge">default</code>로 지정된 패키지는 자바빈즈로 못 불러오며 패키지의 이름을 꼭 작성해야함</li>
+</ul>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><summary type="html"><![CDATA[심신 미약미약~]]></summary></entry><entry><title type="html">[Spring]Lombok</title><link href="http://localhost:4000/spring/Lombok/" rel="alternate" type="text/html" title="[Spring]Lombok" /><published>2022-09-15T00:00:00+09:00</published><updated>2022-09-15T00:00:00+09:00</updated><id>http://localhost:4000/spring/Lombok</id><content type="html" xml:base="http://localhost:4000/spring/Lombok/"><![CDATA[<h3 id="lombok이란">@Lombok이란?</h3>
+<ul>
+  <li>Lombok은 Java 라이브러리에서 <strong>getter, setter, toString</strong> 등의 메서드 작성 코드를 줄여주는 코드 다이어트 라이브러리임.</li>
+  <li>
+    <h2 id="getter-setter와-tostring-메서드를-만들-때-ide로-한-번에-할-수-있긴-하지만-코드가-길어지고-복잡해진다-하지만-lombok을-사용한다면-이러한-단점들이-사라지고-단지-어노테이션-하나만-입력해주면-된다">getter, setter와 toString() 메서드를 만들 때 IDE로 한 번에 할 수 있긴 하지만 코드가 길어지고 복잡해진다. 하지만 Lombok을 사용한다면 이러한 단점들이 사라지고 단지 어노테이션 하나만 입력해주면 된다.</h2>
+  </li>
+</ul>
+
+<h3 id="다양한-lombok">다양한 Lombok</h3>
+<h4 id="--여기서는-lombok과-종류에-대해서만-알아보고-자세한-예제들은-나중에-다시-설명하겠다">- 여기서는 Lombok과 종류에 대해서만 알아보고 자세한 예제들은 나중에 다시 설명하겠다.</h4>
+<hr />
+
+<h3 id="getter-setter">@Getter @Setter</h3>
+
+<ul>
+  <li>가장 많이 활용하는 어노테이션이다. 클래스 위에 적용하면 모든 변수에 적용되고, 변수 이름 위에 적용하면 해당 변수들만 적용 가능하다.</li>
+</ul>
+
+<h3 id="allargsconstructor">@AllArgsConstructor</h3>
+
+<ul>
+  <li>모든 변수를 사용하는 생성자를 만들어주는 어노테이션이다.</li>
+</ul>
+
+<h3 id="noargsconstructor">@NoArgsConstructor</h3>
+
+<ul>
+  <li>어떠한 변수도 사용하지 않는 기본 생성자를 만들어주는 어노테이션이다.</li>
+</ul>
+
+<h3 id="requiredargsconstructor">@RequiredArgsConstructor</h3>
+
+<ul>
+  <li>특정 변수만을 활용하는 생성자를 만들어주는 어노테이션. 생성자의 인자로 추가할 변수에 @NonNull어노테이션을 붙여서 해당 변수를 생성자의 인자로 추가 가능하다. 또한 해당 변수를 final로 선언해도 의존성 주입을 받는 것이 가능하다.</li>
+</ul>
+
+<h3 id="equalsandhashcode">@EqualsAndHashCode</h3>
+
+<ul>
+  <li>클래스에 대한 equals함수와 hashCode 함수를 자동으로 생성해줌.</li>
+</ul>
+
+<h3 id="tostring">@ToString</h3>
+
+<ul>
+  <li>ToString 메소드를 자동으로 완성시켜 줌. @ToString.Exclude를 해당 변수에 붙여주면 출력에서 제외할 수 있다.</li>
+  <li>상위 클래스에 toString을 적용하려면 상위 클래스에 @ToString(callSuper = true)를 적용시키면 된다.</li>
+</ul>
+
+<h3 id="builder">@Builder</h3>
+
+<ul>
+  <li>적용 시 클래스 객체의 생성에 Builder 패턴을 적용시켜준다.</li>
+  <li>특정 변수들만을 build하기 원한다면 생성자 작성 후 그 위에 @Builder를 붙이면 된다.</li>
+</ul>
+
+<h3 id="delegate">@Delegate</h3>
+
+<ul>
+  <li>@Delegate는 한 객체의 메소드를 다른 객체로 위임시켜 준다.</li>
+  <li>좀 봐야할 듯 DB에서 많이 사용</li>
+</ul>
+
+<h3 id="slf4j">@Slf4j</h3>
+
+<ul>
+  <li>LOGGING을 할 때 사용하는 방법이다. Spring에서는 로그를 남기는 방법이 많이 있는데 @Slf4j 어노테이션은 가장 편하게 사용되는 방법 중 하나이다.</li>
+</ul>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><category term="spring" /><summary type="html"><![CDATA[@Lombok이란? Lombok은 Java 라이브러리에서 getter, setter, toString 등의 메서드 작성 코드를 줄여주는 코드 다이어트 라이브러리임. getter, setter와 toString() 메서드를 만들 때 IDE로 한 번에 할 수 있긴 하지만 코드가 길어지고 복잡해진다. 하지만 Lombok을 사용한다면 이러한 단점들이 사라지고 단지 어노테이션 하나만 입력해주면 된다.]]></summary></entry><entry><title type="html">좋은 객체 지향 설계의 5가지 원칙</title><link href="http://localhost:4000/SOLID/" rel="alternate" type="text/html" title="좋은 객체 지향 설계의 5가지 원칙" /><published>2022-09-11T00:00:00+09:00</published><updated>2022-09-11T00:00:00+09:00</updated><id>http://localhost:4000/SOLID</id><content type="html" xml:base="http://localhost:4000/SOLID/"><![CDATA[<hr />
+<h2 id="srp-단일-책임-원칙single-responsibility-principle">SRP: 단일 책임 원칙(single responsibility principle)</h2>
+<hr />
+<ul>
+  <li>한 클래스는 하나의 책임만 가져아 한다는 것이다.</li>
+  <li><strong>중요한 기준은 변경</strong>이다. 변경이 있을 때 다른 곳에 파급되는 영향이 적다면 단일 책임 원칙을 잘 따라 설계한 것이다.</li>
+  <li>객체의 생성과 사용을 분리한다면 파급 효과가 적도록 설계할 수 있다.</li>
+  <li>추가로 스프링에서는 구현 객체를 생성해 객체를 생성하고 역활을 명시한 인터페이스를 사용하도록 하는 것이다.</li>
+</ul>
+
+<hr />
+<h2 id="ocp-개방-폐쇄-원칙openclosed-principle">OCP: 개방-폐쇄 원칙(Open/closed principle)</h2>
+<hr />
+<ul>
+  <li>소프트웨어 요소는 <strong>확장에는 열려</strong> 있으나 <strong>변경에는 닫혀</strong> 있어야 한다.</li>
+  <li>유연함과 관련된 원칙으로 변화하는 부분을 추상화하여 기존 코드를 수정하지 않고도, 확장을 할 수 있게 만들어 주는 원칙이다.</li>
+  <li>인터페이스를 구현한 새로운 클래스를 하나 만들어서 새로운 기능을 구현</li>
+  <li>-&gt; 기존 코드를 변경하는 것이 아니다.</li>
+  <li>다른 말로 하나의 변화가 다른 곳에 <strong>연쇄적으로 변화를 일으키는 것을 방지</strong>하기 위함이다.</li>
+</ul>
+
+<h3 id="문제점">문제점</h3>
+<ul>
+  <li>구현 객체를 변경하려면 클라이언트 코드를 변경해야 하고, 다형성 원칙으로 OCP 원칙을 전부 지킬 수는 없다는 것이다.</li>
+  <li>-&gt; 스프링의 DI나 DI컨테이너들을 이용해 보완이 가능하다.</li>
+</ul>
+
+<hr />
+<h2 id="lsp-리스코프-치환-원칙liskov-substitution-principle">LSP: 리스코프 치환 원칙(Liskov substitution principle)</h2>
+<hr />
+<ul>
+  <li>프로그램의 객체는 프로그램의 정확성을 깨뜨리지 않으면서 하위 타입의 인스턴스로 바꿀 수 있어야 한다.</li>
+  <li>다형성에서 하위 클래스는 인터페이스 규약을 다 지켜야 한다는 것, 다형성을 지원하기 위한 원칙, 인터페이스를 구현한 구현체는 믿고 사용하려면, 이 원칙이 필요하다.</li>
+</ul>
+
+<hr />
+<h2 id="isp-인터페이스-분리-원칙interface-segregation-principle">ISP: 인터페이스 분리 원칙(Interface segregation principle)</h2>
+<hr />
+<ul>
+  <li>특정 클라이언트를 위한 인터페이스 여러 개가 범용 인터페이스 하나보다 낫다</li>
+  <li>클라이언트가 자신이 이용하지 않는 메서드에 의존하지 않아야 한다는 원칙이다. 이 원칙은 큰 덩어리의 인터페이스를 작은 단위들로 분리시켜 특정 클라이언트들이 꼭 필요한 메서드들만 이용할 수 있게 한다.</li>
+  <li>이 원칙을 활용하면 인터페이스가 명확해지고, 대체 가능성이 높아진다.</li>
+</ul>
+
+<hr />
+<h2 id="dip-의존관계-역전-원칙dependency-inversion-principle">DIP: 의존관계 역전 원칙(Dependency inversion principle)</h2>
+<hr />
+<ul>
+  <li>“추상화에 의존해야지, 구체화에 의존하면 안된다.”</li>
+  <li>쉽게 이야기해서 구현 클래스에 의존하지 말고, 인터페이스에 의존하라는 뜻이다. 상위 모듈은 하위 모듈에 의존해서는 안되며 모든 모듈은 추상화에 의존해야 한다.</li>
+  <li>
+    <h2 id="추상화는-세부-사항에-의존해서는-안되며-세부-사항이-추상화에-의존하게-만들어야-한다">추상화는 세부 사항에 의존해서는 안되며 세부 사항이 추상화에 의존하게 만들어야 한다.</h2>
+  </li>
+</ul>
+
+<h2 id="정리">정리</h2>
+<ul>
+  <li>객체 지향의 핵심은 다형성이지만 다형성 만으로는 객체 지향 프로그램을 쉽게 개발할 수 없다.</li>
+  <li>다형성 만으로는 <strong>OCP, DIP를 지킬 수 없기에</strong> 다른 방법을 찾아야 한다.</li>
+  <li>스프링에서는 의존성 주입과 DI컨테이너와 같은 기능들을 제공한다. 스프링을 잘 사용하기 위해서는 다형성에 대한 기본 지식을과 앞서 소개한 원칙들을 잘 알고 스프링에 있는 기능들(DI컨테이너, 의존성 주입)을 어떻게 사용하는 지 필요하다.</li>
+</ul>
+
+<p><a href="https://imspear.tistory.com/148">객체지향 참고 글</a></p>
+
+<p><a href="https://velog.io/@re-deok/%EC%8A%A4%ED%94%84%EB%A7%81-IoC-DI-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88">Spring IoC/DI컨테이너</a></p>]]></content><author><name>Jeong eui hyun</name><email>lobil7782@gmail.com</email></author><summary type="html"><![CDATA[SRP: 단일 책임 원칙(single responsibility principle) 한 클래스는 하나의 책임만 가져아 한다는 것이다. 중요한 기준은 변경이다. 변경이 있을 때 다른 곳에 파급되는 영향이 적다면 단일 책임 원칙을 잘 따라 설계한 것이다. 객체의 생성과 사용을 분리한다면 파급 효과가 적도록 설계할 수 있다. 추가로 스프링에서는 구현 객체를 생성해 객체를 생성하고 역활을 명시한 인터페이스를 사용하도록 하는 것이다.]]></summary></entry></feed>

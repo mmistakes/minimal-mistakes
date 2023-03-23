@@ -1,0 +1,125 @@
+I"|<h2 id="spring-data-jpa란">Spring Data JPA란?</h2>
+<blockquote>
+  <ul>
+    <li>JPA를 좀 더 편하게 사용할 수 있게 Repository interface를 제공한다.<br />
+repository 개발 시 인터페이스만 작성하면 실행 시점에 spring data jpa가 구현 객체를 동적으로 생성해서 알아서 주입한다.</li>
+    <li>기존의 JPA는 EntityManager를 생성하여 그 안에서 CRUD의 로직을 처리하는 반면에 Spring Data JPA는 이미 EntityManager가 선언되어 있기 때문에 직접 작성할 필요가 없다.</li>
+    <li>CRUD 처리를 위한 공통 인터페이스를 제공한다.</li>
+    <li>공통 메소드를 제공한다.(아래 내용 있습니다)</li>
+  </ul>
+</blockquote>
+
+<hr />
+
+<h2 id="의존성-주입">의존성 주입</h2>
+
+<ul>
+  <li>gradle에서 build.gradle</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">mplementation</span> <span class="err">'</span><span class="n">org</span><span class="o">.</span><span class="na">springframework</span><span class="o">.</span>
+        <span class="nl">boot:</span><span class="n">spring</span><span class="o">-</span><span class="n">boot</span><span class="o">-</span><span class="n">starter</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">jpa</span><span class="err">'</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<ul>
+  <li>maven에서 appConfig.xml</li>
+</ul>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>org.springframework.data<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>spring-data-jpa<span class="nt">&lt;/artifactId&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="spring-data-jpa의-예시">Spring Data JPA의 예시</h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">UserRepository</span> <span class="kd">extends</span> <span class="nc">JpaRepository</span><span class="o">&lt;</span><span class="nc">User</span><span class="o">,</span> <span class="nc">Long</span><span class="o">&gt;</span> <span class="o">{</span>
+
+  <span class="nc">List</span><span class="o">&lt;</span><span class="nc">User</span><span class="o">&gt;</span> <span class="nf">findByEmailAddressAndLastname</span>
+  <span class="o">(</span><span class="nc">String</span> <span class="n">emailAddress</span><span class="o">,</span> <span class="nc">String</span> <span class="n">lastname</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <ul>
+    <li>docs.spring.io에 나온 예시이다.</li>
+    <li>Repository만 interface로 작성하면 spring data jpa 적용 끝이다.</li>
+    <li>위의 코드(findByEmailAddressAndLastname)를 쿼리로 날리면 다음과 같다.</li>
+  </ul>
+</blockquote>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="n">u</span> <span class="k">from</span> <span class="k">User</span> <span class="n">u</span> <span class="k">where</span> <span class="n">u</span><span class="p">.</span><span class="n">emailAddress</span> <span class="o">=</span> <span class="o">?</span><span class="mi">1</span> <span class="k">and</span> <span class="n">u</span><span class="p">.</span><span class="n">lastname</span> <span class="o">=</span> <span class="o">?</span><span class="mi">2</span>
+</code></pre></div></div>
+
+<ul>
+  <li>sql문을 읽어보면 emailAddress 값과 lastname이 일치하는 값을 select해주며 List<User> 타입으로 값을 받는다.</User></li>
+  <li>이처럼 spring data jpa는 메소드 이름을 보고 쿼리를 생성한다. 이를 spring.io.docx 사이트에서는 keyword로 정의했는데 자세한 내용은 사이트를 참조 바란다.</li>
+  <li>
+    <p><a href="https://docs.spring.io/spring-data/jpa/docs/1.10.1.RELEASE/reference/html/#jpa.sample-app.finders.strategies">spring.io.docx</a></p>
+  </li>
+  <li>주요 메서드
+    <blockquote>
+      <ul>
+        <li>save() : 새로운 엔티티는 저장하고 이미 있는 엔티티는 수정한다.
+          <ul>
+            <li>내부 : em.merge() 호출</li>
+          </ul>
+        </li>
+        <li>delete() : 엔티티 하나를 삭제
+          <ul>
+            <li>내부 : em.remove() 호출</li>
+          </ul>
+        </li>
+        <li>findOne() : 엔티티 하나를 조회
+          <ul>
+            <li>내부 : em.find() 호출</li>
+          </ul>
+        </li>
+        <li>getOne() : 엔티티를 프록시로 조회
+          <ul>
+            <li>내부 : em.getReference() 호출</li>
+          </ul>
+        </li>
+        <li>findAll() : 모든 엔티티를 조회
+          <ul>
+            <li>sort 또는 pageable 조건을 파라미터로 제공</li>
+          </ul>
+        </li>
+      </ul>
+    </blockquote>
+  </li>
+</ul>
+
+<hr />
+<h2 id="query직접-사용하기">Query직접 사용하기</h2>
+<ul>
+  <li>
+    <p>Repository 메소드를 사용한 곳에 직접 쿼리를 정의하는 방식</p>
+
+    <ul>
+      <li>Repository에 직접 쿼리 정의</li>
+    </ul>
+  </li>
+  <li>
+    <p>@Query 어노테이션에 nativeQuery=true로 설정 시 파라미터 바인딩을 0부터 사용하면 된다. default는 1부터 시작</p>
+  </li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">UserRepository</span> <span class="kd">extends</span> <span class="nc">JpaRepository</span><span class="o">&lt;</span><span class="nc">User</span><span class="o">,</span> <span class="nc">Long</span><span class="o">&gt;{</span>
+
+    <span class="nd">@Query</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span><span class="s">"select u from User u where u.
+    emailAddress =?1 and u.lastname = ?2"</span><span class="o">)</span>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">User</span><span class="o">&gt;</span> <span class="nf">findByEmailAddressAndLastname</span><span class="o">(</span>
+        <span class="nc">String</span> <span class="n">emailAddress</span><span class="o">,</span> <span class="nc">String</span> <span class="nc">Lastname</span><span class="o">);</span>
+
+    <span class="c1">// nativeQuery = true 사용 </span>
+    <span class="nd">@Query</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span><span class="s">"select u from User u where u.
+    emailAddress =?0 and u.lastname = ?1"</span><span class="o">,</span> 
+    <span class="n">nativeQuery</span> <span class="o">=</span> <span class="kc">true</span><span class="o">)</span>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">User</span><span class="o">&gt;</span> <span class="nf">findByEmailAddressAndLastname</span><span class="o">(</span>
+        <span class="nc">String</span> <span class="n">emailAddress</span><span class="o">,</span> <span class="nc">String</span> <span class="nc">Lastname</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+:ET

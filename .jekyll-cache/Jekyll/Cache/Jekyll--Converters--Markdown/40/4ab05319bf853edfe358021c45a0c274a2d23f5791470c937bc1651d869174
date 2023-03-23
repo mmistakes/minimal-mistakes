@@ -1,0 +1,151 @@
+I"e <h2 id="1-라이브러리">1. 라이브러리</h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.StringTokenizer</span><span class="o">;</span>
+</code></pre></div></div>
+<ul>
+  <li>import를 해주셔야 사용이 가능합니다.</li>
+</ul>
+
+<hr />
+<h2 id="2-생성-방법">2. 생성 방법</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. StringTokenizer st = new StringTokenizer(문자열);
+2. StringTokenizer st = new StringTokenizer(문자열, 구분자);
+3. StringTokenizer st = new StringTokenizer(문자열, 구분자, true/false);
+</code></pre></div></div>
+
+<ul>
+  <li>StringTokenizer는 기본적으로 띄어쓰기를 기점으로 분리합니다.</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">"안녕하세요, Spring 개발자입니다."</span><span class="o">;</span>
+
+        <span class="nc">StringTokenizer</span> <span class="n">st</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringTokenizer</span><span class="o">(</span><span class="n">str</span><span class="o">);</span>
+
+        <span class="k">while</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">hasMoreTokens</span><span class="o">()){</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">nextToken</span><span class="o">());</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>안녕하세요,
+Spring
+개발자입니다.
+
+종료 코드 0(으)로 완료된 프로세스
+</code></pre></div></div>
+
+<ul>
+  <li>구분자를 적어줄 경우 띄어쓰기가 아닌 구분자를 기점으로 분리합니다.</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">"안녕하세요, Spring 개발자입니다."</span><span class="o">;</span>
+
+        <span class="nc">StringTokenizer</span> <span class="n">st</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringTokenizer</span><span class="o">(</span><span class="n">str</span><span class="o">,</span> <span class="s">","</span><span class="o">);</span>
+
+        <span class="k">while</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">hasMoreTokens</span><span class="o">()){</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">nextToken</span><span class="o">());</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>안녕하세요
+ Spring 개발자입니다.
+
+종료 코드 0(으)로 완료된 프로세스
+</code></pre></div></div>
+
+<ul>
+  <li>구분자와 더불어 세 번째 파라메터에 true를 주게 되면 구분자 또한 토큰으로 취급합니다.</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="nc">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">"안녕하세요, Spring 개발자입니다."</span><span class="o">;</span>
+
+        <span class="nc">StringTokenizer</span> <span class="n">st</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringTokenizer</span><span class="o">(</span><span class="n">str</span><span class="o">,</span> <span class="s">","</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+
+        <span class="k">while</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">hasMoreTokens</span><span class="o">()){</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">nextToken</span><span class="o">());</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>안녕하세요
+,
+ Spring 개발자입니다.
+
+종료 코드 0(으)로 완료된 프로세스
+</code></pre></div></div>
+
+<hr />
+<h2 id="stringtokenizer-메소드">StringTokenizer 메소드</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>리턴값</th>
+      <th>메서드명</th>
+      <th>역활</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>bolean</td>
+      <td>hasMoreTokens()</td>
+      <td>남아있는 토큰이 있으면 true 없으면 false 반환</td>
+    </tr>
+    <tr>
+      <td>String</td>
+      <td>nextToken()</td>
+      <td>다음 토큰을 반환</td>
+    </tr>
+    <tr>
+      <td>String</td>
+      <td>nextToken(String delim)</td>
+      <td>delim기준으로 다음 토큰을 반환</td>
+    </tr>
+    <tr>
+      <td>bolean</td>
+      <td>hasMoreElements()</td>
+      <td>hasMoreTokens()와 동일하다.</td>
+    </tr>
+    <tr>
+      <td>Object</td>
+      <td>nextElement()</td>
+      <td>nextToken()과 동일하지만 객체를 반환</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>countTokens()</td>
+      <td>총 토큰의 개수를 반환</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="stringtokenizer-vs-split">StringTokenizer VS split</h2>
+<ul>
+  <li>둘 다 문자열을 파싱할 때 사용한다는 공통점이 있다.</li>
+  <li>StringTokenizer는 문자, 문자열로 구분한다. split은 정규표현식으로 구분한다.</li>
+  <li>StringTokenizer는 빈 문자열을 Token으로 인식하지 않는다.<br />
+반면 split은 빈 문자열을 Token으로 인식한다.</li>
+  <li>StringTokenizer는 결과값이 문자열이라면 split은 결과값이 문자열 배열이다.</li>
+  <li>성능적으로는 배열에 담아 반환하는 split이 StringTokenizer보다 뒤쳐진다.<br />
+하지만 그렇게 큰 차이는 없으므로 편한 방식을 사용하면 된다.</li>
+</ul>
+:ET

@@ -1,0 +1,79 @@
+I"0<hr />
+<h2 id="docker란-무엇">Docker란 무엇?</h2>
+<p>도커는 먼저 컨테이너 기반의 오픈 소스이다.</p>
+
+<p>먼저 컨테이너란 개념에 대해서 알아야합니다. 대충 말하자면 하나의 시스템 위에서 둘 이상의 Software를 동시에 실행하려고 한다면 문제가 발생할 수 있습니다. 만약 두 software의 운영 체제가 다른 경우에 문제가 발생할 수 있습니다. 이때 해결법으로 두 Software에 대한 시스템을 각각 준비하는 방법이 있는데 시스템을 각각 준비할 경우 비용의 문제가 발생하게 된다. 이러한 문제점을 효율적으로 해결한 것이 바로 컨테이너이다. 컨테이너(Container)는 개별 Software의 실행에 필요한 실행환경을 독립적으로 운용할 수 있도록  <strong>“별도의 운영 환경을 제공해주는 기술”</strong> 이다. 이를 활용하면 다른 실행환경과의 간섭을 막으니 독립성을 확보해준다.</p>
+
+<hr />
+<h2 id="docker-사용이유">Docker 사용이유?</h2>
+<p>그러면 Docker는 어디서/왜? 사용할까?</p>
+
+<p>Docker는 이러한 컨테이너들을 관리하는 플랫폼이다.</p>
+
+<p>다양한 프로그램, 실행환경을 컨테이너로 추상화하고 동일한 인터페이스를 제공하여 프로그램의 배포 및 관리를 단순하게 해준다.</p>
+
+<p>사용하는 곳들은 백엔드 프로그램, 데이터베이스 서버, 메시지 큐 등 어떤 프로그램도 컨테이너로 추상화할 수 있고 조립PC, AWS, Azure, Google cloud등 어떤 환경에서도 실행이 가능하다.</p>
+
+<p>모든 개발자는 자신의 개발 환경에서 직접 컨테이너화된 애플리케이션을 개발한 다음, 이를 클라우드 프로덕션 환경에 이동 및 실행할 수 있다.</p>
+
+<hr />
+<h2 id="docker의-두-가지-주요-측면">Docker의 두 가지 주요 측면</h2>
+<p>Docker는 두 가지 서로 다른 측면에서 소프트웨어를 빌드, 제공 및 실행하는 방식을 변경합니다:</p>
+
+<ul>
+  <li>개발에서 프로덕션까지 애플리케이션을 안정적으로 구축할 수 있도록 프로세스를 개선한다.</li>
+  <li>온프레미스에서 클라우드로 이전할 수 있도록 표준 이미지 형식을 제공</li>
+</ul>
+
+<hr />
+<h2 id="이미지">이미지??</h2>
+<p>Docker를 찾아보면 이미지에 관한 이야기가 나온다. 컨테이너는 이 이미지를 실행한 상태이고, 여기서 이미지는 컨테이너 실행에 필요한 파일과 설정을 포함하고 있는 것으로 기본값을 가진다.</p>
+
+<p>추가되거나 변하는 값은 컨테이너에 저장되며 같은 이미지에서 여러 개의 컨테이너를 만들 수 있고 컨테이너의 상태가 바뀌거나 삭제되도 이미지는 변하지 않고 그대로 남아있다.</p>
+
+<p>Docker 이미지는 Docker hub에 등록하거나 Docker Registry 저장소를 직접 만들어 관리할 수 있다.</p>
+
+<p>모든 종속성을 갖춘 Docker 이미지를 생성한다면 <strong>자신의 개발 환경에서만 제대로 작동하는 문제</strong> 를 해결할 수 있다. Docker 이미지가 Git 같은 소스 코드 저장소의 빌드 파이프라인을 통해 자동으로 생성한다.</p>
+
+<p>이미지의 특성으로는 다음과 같다.</p>
+<ul>
+  <li>도커 이미지의 용량은 보통 수백 MB ~ 수 GB이지만 가상머신에 비하면 작은 용량이다</li>
+  <li>상태값을 가지지 않고 변하지 않는다</li>
+  <li>하나의 이미지를 통해 여러 컨테이너를 생성할 수 있고, 컨테이너를 삭제해도 이미지는 변하지 않는다</li>
+  <li>이미지들은 Docker Hub를 통해 버전 관리 및 배포가 가능</li>
+  <li>도커는 Dockerfile이라는 파일로 이미지를 만든다</li>
+</ul>
+
+<hr />
+<h2 id="dockerfile">Dockerfile??</h2>
+<p>도커 이미지를 만들기 위해선 Dockerfile이라는 파일에 DSL언어를 이용해 이미지를 생성할 수 있다. 이는 단순한 텍스트 파일이며 일반적으로 소스와 함께 관리한다. 서버에서 프로그램을 설치하려고 하면 Dockerfile을 통하여 관리하면 되는데 키워드는 20가지 정도 있지만 중요한 키워드는 <code class="language-plaintext highlighter-rouge">FROM</code>과 <code class="language-plaintext highlighter-rouge">RUN</code>이다. 이 두가지를 사용하여 이미지를 만들 수 있다.</p>
+<ul>
+  <li>FROM</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">FROM</span><span class="s"> &lt;image&gt;:&lt;tag&gt;</span>
+<span class="k">FROM</span><span class="s"> ubuntu:16.04</span>
+</code></pre></div></div>
+
+<p>이는 베이스 이미지를 지정한다. 반드시 베이스 이미지를 지정해줘야 하며 어떠한 이미지든 가능하다.</p>
+
+<ul>
+  <li>RUN</li>
+</ul>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">RUN </span>&lt;<span class="nb">command</span><span class="o">&gt;</span>
+<span class="k">RUN </span>bundle <span class="nb">install</span>
+</code></pre></div></div>
+<p>말 그대로 명령어를 실행한다. /bin/sh -c 뒤에 명령어를 실행하는 방식</p>
+
+<hr />
+<h2 id="docker-install">Docker install</h2>
+
+<p>마지막으로 설치방법에 대해서 말할려 했는데 이 블로그가 잘해주셔서 참조하면 됩니당.</p>
+
+<p>설치 설명 블로그 : https://javaworld.co.kr/131</p>
+
+<p>사이트에 들어가서 설치하시면 되구 좀 오래 걸림</p>
+
+<p><del>정작 본인은 설치 못함</del> 크흠~</p>
+:ET

@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : '개발하는 병르'
+title                    : 'Euihyunee'
 title_separator          : '|'
-subtitle                 : 'use spring'
-name                     : 'use spring'
-description              : '병르`s 블로그'
+subtitle                 : 'small positive message'
+name                     : 'euihyunee'
+description              : 'euihyunee blog'
 url                      : "https://Euihyunee.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"

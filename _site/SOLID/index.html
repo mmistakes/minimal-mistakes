@@ -1,0 +1,735 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>좋은 객체 지향 설계의 5가지 원칙 | Euihyunee</title>
+<meta name="description" content="SRP: 단일 책임 원칙(single responsibility principle)      한 클래스는 하나의 책임만 가져아 한다는 것이다.   중요한 기준은 변경이다. 변경이 있을 때 다른 곳에 파급되는 영향이 적다면 단일 책임 원칙을 잘 따라 설계한 것이다.   객체의 생성과 사용을 분리한다면 파급 효과가 적도록 설계할 수 있다.   추가로 스프링에서는 구현 객체를 생성해 객체를 생성하고 역활을 명시한 인터페이스를 사용하도록 하는 것이다.">
+
+
+  <meta name="author" content="Jeong eui hyun">
+  
+  <meta property="article:author" content="Jeong eui hyun">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="Euihyunee">
+<meta property="og:title" content="좋은 객체 지향 설계의 5가지 원칙">
+<meta property="og:url" content="http://localhost:4000/SOLID/">
+
+
+  <meta property="og:description" content="SRP: 단일 책임 원칙(single responsibility principle)      한 클래스는 하나의 책임만 가져아 한다는 것이다.   중요한 기준은 변경이다. 변경이 있을 때 다른 곳에 파급되는 영향이 적다면 단일 책임 원칙을 잘 따라 설계한 것이다.   객체의 생성과 사용을 분리한다면 파급 효과가 적도록 설계할 수 있다.   추가로 스프링에서는 구현 객체를 생성해 객체를 생성하고 역활을 명시한 인터페이스를 사용하도록 하는 것이다.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-09-11T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/SOLID/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "euihyunee",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Euihyunee Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/clapbear.gif" alt="Euihyunee"></a>
+        
+        <a class="site-title" href="/">
+          Euihyunee
+          <span class="site-subtitle">small positive message</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tag/">Tag</a>
+            </li><li class="masthead__menu-item">
+              <a href="/search/">Search</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+<div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/clapbear.gif" alt="Jeong eui hyun" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Jeong eui hyun</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>spring 알아보는 블로그</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Tech Universtiy of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="matilto:hey.lobil7782@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:lobil7782@gmail.com" rel="me" class="u-email">
+            <meta itemprop="email" content="lobil7782@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">이메일</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+   <!--전체 글 수를 세기 위한 연산. sum 변수에 전체 글 수 저장-->
+
+
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">토글 메뉴</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <!--전체 글 수-->
+      <li>
+            📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">11</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
+      </li>
+      <li>
+        <!--span 태그로 카테고리들을 크게 분류 -->
+        <span class="nav__sub-title">Tech</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                
+                    
+                        <li><a href="/categories/spring" class="">spring (2)</a></li>
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                        <li><a href="/categories/jpa" class="">JPA (3)</a></li>
+                    
+                
+            </ul>
+            <ul>
+                
+                    
+                
+                    
+                        <li><a href="/categories/java" class="">Java (2)</a></li>
+                    
+                
+                    
+                
+            </ul>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        <span class="nav__sub-title">Paper</span>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        <span class="nav__sub-title">etc.</span>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+      </li>
+  </ul>
+</nav> 
+</div>
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="좋은 객체 지향 설계의 5가지 원칙">
+    <meta itemprop="description" content="SRP: 단일 책임 원칙(single responsibility principle)  한 클래스는 하나의 책임만 가져아 한다는 것이다.  중요한 기준은 변경이다. 변경이 있을 때 다른 곳에 파급되는 영향이 적다면 단일 책임 원칙을 잘 따라 설계한 것이다.  객체의 생성과 사용을 분리한다면 파급 효과가 적도록 설계할 수 있다.  추가로 스프링에서는 구현 객체를 생성해 객체를 생성하고 역활을 명시한 인터페이스를 사용하도록 하는 것이다.">
+    <meta itemprop="datePublished" content="2022-09-11T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/SOLID/" class="u-url" itemprop="url">좋은 객체 지향 설계의 5가지 원칙
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-09-11T00:00:00+09:00">September 11, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <hr />
+<h2 id="srp-단일-책임-원칙single-responsibility-principle">SRP: 단일 책임 원칙(single responsibility principle)</h2>
+<hr />
+<ul>
+  <li>한 클래스는 하나의 책임만 가져아 한다는 것이다.</li>
+  <li><strong>중요한 기준은 변경</strong>이다. 변경이 있을 때 다른 곳에 파급되는 영향이 적다면 단일 책임 원칙을 잘 따라 설계한 것이다.</li>
+  <li>객체의 생성과 사용을 분리한다면 파급 효과가 적도록 설계할 수 있다.</li>
+  <li>추가로 스프링에서는 구현 객체를 생성해 객체를 생성하고 역활을 명시한 인터페이스를 사용하도록 하는 것이다.</li>
+</ul>
+
+<hr />
+<h2 id="ocp-개방-폐쇄-원칙openclosed-principle">OCP: 개방-폐쇄 원칙(Open/closed principle)</h2>
+<hr />
+<ul>
+  <li>소프트웨어 요소는 <strong>확장에는 열려</strong> 있으나 <strong>변경에는 닫혀</strong> 있어야 한다.</li>
+  <li>유연함과 관련된 원칙으로 변화하는 부분을 추상화하여 기존 코드를 수정하지 않고도, 확장을 할 수 있게 만들어 주는 원칙이다.</li>
+  <li>인터페이스를 구현한 새로운 클래스를 하나 만들어서 새로운 기능을 구현</li>
+  <li>-&gt; 기존 코드를 변경하는 것이 아니다.</li>
+  <li>다른 말로 하나의 변화가 다른 곳에 <strong>연쇄적으로 변화를 일으키는 것을 방지</strong>하기 위함이다.</li>
+</ul>
+
+<h3 id="문제점">문제점</h3>
+<ul>
+  <li>구현 객체를 변경하려면 클라이언트 코드를 변경해야 하고, 다형성 원칙으로 OCP 원칙을 전부 지킬 수는 없다는 것이다.</li>
+  <li>-&gt; 스프링의 DI나 DI컨테이너들을 이용해 보완이 가능하다.</li>
+</ul>
+
+<hr />
+<h2 id="lsp-리스코프-치환-원칙liskov-substitution-principle">LSP: 리스코프 치환 원칙(Liskov substitution principle)</h2>
+<hr />
+<ul>
+  <li>프로그램의 객체는 프로그램의 정확성을 깨뜨리지 않으면서 하위 타입의 인스턴스로 바꿀 수 있어야 한다.</li>
+  <li>다형성에서 하위 클래스는 인터페이스 규약을 다 지켜야 한다는 것, 다형성을 지원하기 위한 원칙, 인터페이스를 구현한 구현체는 믿고 사용하려면, 이 원칙이 필요하다.</li>
+</ul>
+
+<hr />
+<h2 id="isp-인터페이스-분리-원칙interface-segregation-principle">ISP: 인터페이스 분리 원칙(Interface segregation principle)</h2>
+<hr />
+<ul>
+  <li>특정 클라이언트를 위한 인터페이스 여러 개가 범용 인터페이스 하나보다 낫다</li>
+  <li>클라이언트가 자신이 이용하지 않는 메서드에 의존하지 않아야 한다는 원칙이다. 이 원칙은 큰 덩어리의 인터페이스를 작은 단위들로 분리시켜 특정 클라이언트들이 꼭 필요한 메서드들만 이용할 수 있게 한다.</li>
+  <li>이 원칙을 활용하면 인터페이스가 명확해지고, 대체 가능성이 높아진다.</li>
+</ul>
+
+<hr />
+<h2 id="dip-의존관계-역전-원칙dependency-inversion-principle">DIP: 의존관계 역전 원칙(Dependency inversion principle)</h2>
+<hr />
+<ul>
+  <li>“추상화에 의존해야지, 구체화에 의존하면 안된다.”</li>
+  <li>쉽게 이야기해서 구현 클래스에 의존하지 말고, 인터페이스에 의존하라는 뜻이다. 상위 모듈은 하위 모듈에 의존해서는 안되며 모든 모듈은 추상화에 의존해야 한다.</li>
+  <li>
+    <h2 id="추상화는-세부-사항에-의존해서는-안되며-세부-사항이-추상화에-의존하게-만들어야-한다">추상화는 세부 사항에 의존해서는 안되며 세부 사항이 추상화에 의존하게 만들어야 한다.</h2>
+  </li>
+</ul>
+
+<h2 id="정리">정리</h2>
+<ul>
+  <li>객체 지향의 핵심은 다형성이지만 다형성 만으로는 객체 지향 프로그램을 쉽게 개발할 수 없다.</li>
+  <li>다형성 만으로는 <strong>OCP, DIP를 지킬 수 없기에</strong> 다른 방법을 찾아야 한다.</li>
+  <li>스프링에서는 의존성 주입과 DI컨테이너와 같은 기능들을 제공한다. 스프링을 잘 사용하기 위해서는 다형성에 대한 기본 지식을과 앞서 소개한 원칙들을 잘 알고 스프링에 있는 기능들(DI컨테이너, 의존성 주입)을 어떻게 사용하는 지 필요하다.</li>
+</ul>
+
+<p><a href="https://imspear.tistory.com/148">객체지향 참고 글</a></p>
+
+<p><a href="https://velog.io/@re-deok/%EC%8A%A4%ED%94%84%EB%A7%81-IoC-DI-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88">Spring IoC/DI컨테이너</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-09-11T00:00:00+09:00">September 11, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%EC%A2%8B%EC%9D%80+%EA%B0%9D%EC%B2%B4+%EC%A7%80%ED%96%A5+%EC%84%A4%EA%B3%84%EC%9D%98+5%EA%B0%80%EC%A7%80+%EC%9B%90%EC%B9%99%20http%3A%2F%2Flocalhost%3A4000%2FSOLID%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2FSOLID%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2FSOLID%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/first/" class="pagination--pager" title="hello
+">이전</a>
+    
+    
+      <a href="/spring/Lombok/" class="pagination--pager" title="[Spring]Lombok
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/java/StringTokenizer/" rel="permalink">[Java]StringTokenizer사용법?
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-11-29T00:00:00+09:00">November 29, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">문자열 분리
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/jpa/SpringJPA/" rel="permalink">[JPA]Spring Data JPA
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-11-06T00:00:00+09:00">November 6, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Spring Data JPA에 대해서
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/jpa/persist/" rel="permalink">[JPA]영속성 컨텍스트
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-10-23T00:00:00+09:00">October 23, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">JPA와 영속성 컨텍스트
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/jpa/manytoone/" rel="permalink">[JPA]다대일[N:1] 연관관계 매핑
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-10-22T00:00:00+09:00">October 22, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">@ManyToOne
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 euihyunee. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/SOLID/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/SOLID"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://euihyunee.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

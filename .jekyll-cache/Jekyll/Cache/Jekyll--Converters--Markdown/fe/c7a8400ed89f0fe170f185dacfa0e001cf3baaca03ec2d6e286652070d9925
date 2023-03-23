@@ -1,0 +1,12 @@
+I"�<hr />
+
+<h2 id="srp-단일-책임-원칙single-responsibility-principle">SRP: 단일 책임 원칙(single responsibility principle)</h2>
+<hr />
+
+<ul>
+  <li>한 클래스는 하나의 책임만 가져아 한다는 것이다.</li>
+  <li><strong>중요한 기준은 변경</strong>이다. 변경이 있을 때 다른 곳에 파급되는 영향이 적다면 단일 책임 원칙을 잘 따라 설계한 것이다.</li>
+  <li>객체의 생성과 사용을 분리한다면 파급 효과가 적도록 설계할 수 있다.</li>
+  <li>추가로 스프링에서는 구현 객체를 생성해 객체를 생성하고 역활을 명시한 인터페이스를 사용하도록 하는 것이다.</li>
+</ul>
+:ET
