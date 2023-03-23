@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "ko-KR"
 title                    : "지은이의 블로그"
-title_separator          : "-"
+title_separator          : "|"
 subtitle                 : "Happy Virus"
 name                     : "임지은"
 description              : "An amazing website."
@@ -108,8 +108,8 @@ author:
   name             : "임지은"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **cute** person."
-  location         : "Busan"
-  email            :
+  location         : "South Korea"
+  email            : 2243255@donga.ac.kr
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
