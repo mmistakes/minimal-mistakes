@@ -1,8 +1,8 @@
 var store = [{
         "title": "hello",
-        "excerpt":"hello world  ","categories": [],
-        "tags": [],
-        "url": "/first/",
+        "excerpt":"hello world  ","categories": ["hello"],
+        "tags": ["python","blog","jekyll"],
+        "url": "/hello/first/",
         "teaser": null
       },{
         "title": "좋은 객체 지향 설계의 5가지 원칙",
