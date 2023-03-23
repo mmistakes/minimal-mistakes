@@ -28,7 +28,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 logo                     : "/assets/images/회동동.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 future                   : true
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -291,3 +291,4 @@ defaults:
       comments: # true
       share: true
       related: true
+      show_date: true
