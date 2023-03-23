@@ -15,15 +15,15 @@ sidebar:
 
 ## How Spring Process your application
 
-![](../images/2023-03-23-Constructor%20Injection/2023-03-23-03-14-48-image.png)
+![](/images/2023-03-23-Constructor%20Injection/2023-03-23-03-14-48-image.png)
 
 ## Process
 
-![](../images/2023-03-23-Constructor%20Injection/2023-03-23-03-29-03-image.png)
+![](/images/2023-03-23-Constructor%20Injection/2023-03-23-03-29-03-image.png)
 
-![](../images/2023-03-23-Constructor%20Injection/2023-03-23-03-29-13-image.png)
+![](/images/2023-03-23-Constructor%20Injection/2023-03-23-03-29-13-image.png)
 
-![](../images/2023-03-23-Constructor%20Injection/2023-03-23-03-29-29-image.png)
+![](/images/2023-03-23-Constructor%20Injection/2023-03-23-03-29-29-image.png)
 
 ## 정리
 
