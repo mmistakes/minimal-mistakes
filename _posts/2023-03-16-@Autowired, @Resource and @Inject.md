@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "@Autowired, @Resource and @inject"
+title: "@Autowired, @Resource, @inject"
 categories: Spring
 tag: [Java,@Autowired,@Resource,@]
 toc: true
