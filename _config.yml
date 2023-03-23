@@ -12,13 +12,13 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 title                    : "지은이의 블로그"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title_separator          : "|"
+subtitle                 : "Happy Virus"
 name                     : "임지은"
 description              : "An amazing website."
 url                      :  "https://Jieun-IM.github.io"
@@ -108,8 +108,8 @@ author:
   name             : "임지은"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **cute** person."
-  location         : "Busan"
-  email            :
+  location         : "South Korea"
+  email            : 2243255@donga.ac.kr
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
