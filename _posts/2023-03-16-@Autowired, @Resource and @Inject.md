@@ -2,7 +2,7 @@
 layout: single
 title: "@Autowired, @Resource, @inject"
 categories: Spring
-tag: [Java,@Autowired,@Resource,@]
+tag: [Java,"@Autowired","@Resource","@inject"]
 toc: true
 toc_sticky: true
 author_profile: false
