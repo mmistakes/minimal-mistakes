@@ -233,21 +233,14 @@ public class DemoController {
 }
 
 }
-
 ```
 
 ![](/images/2023-03-16-Inversion%20of%20Control%20(IoC)/2023-03-23-02-51-23-image.png)
-
-
 
 참고로 no usages 는 무시해도 된다.
 
 왜냐하면 스프링 내부에서 알아서 돌아가는데 IDE는 인식하지 못하는 경우가 있다.
 
 이런 경우에는 무시하면 된다.
-
-
-
-
 
 출처 유데미 & https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring
