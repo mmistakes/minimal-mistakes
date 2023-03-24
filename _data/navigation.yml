@@ -21,8 +21,8 @@ docs:
     # - title: "DeepLearning"
     #   url: /deeplearning/
     - title: "Spring"
-      url: /categories/#Spring/
-    # - title: "Algorithm & Data Structure"
-    #   url: /algorithmAndDataStructure/
+      url: /categories/
+    - title: "Algorithm & Data Structure"
+      url: /algo/
 
-  
+    

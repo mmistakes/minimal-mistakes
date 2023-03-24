@@ -69,8 +69,6 @@ public class DemoController {
 }
 ```
 
-
-
 ## Injection Types - Which one to use?
 
 - Constructor Injection
