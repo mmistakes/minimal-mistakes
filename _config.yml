@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KOR"
 title                    : "POTSICKERRRRR"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -106,8 +106,8 @@ analytics:
 author:
   name             : ""chovvi""
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : #""
-  location         : "South Korea"
+  bio              : "potstickerrrrr"
+  location         : "Korea"
   email            : "sinminju04@gmail.com"
   links:
     - label: "Email"
