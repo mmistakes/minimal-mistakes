@@ -106,7 +106,7 @@ analytics:
 # Site Author
 author:
   name             : "Yohan"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "assets/images/Yohan(2).png" 
   bio              : "I am an **amazing** person."
   location         : "South Korea"
   # email            : "yohan032yohan@gmail.com"

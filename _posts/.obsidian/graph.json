@@ -1,0 +1,30 @@
+{
+  "collapse-filter": false,
+  "search": "tag:ioc",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": false,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "tag:#LinkedList",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0.2,
+  "nodeSizeMultiplier": 1.4640398063475,
+  "lineSizeMultiplier": 2.59454545454545,
+  "collapse-forces": false,
+  "centerStrength": 0.540075309306079,
+  "repelStrength": 11.2834857450242,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 1.0358492499669194,
+  "close": false
+}

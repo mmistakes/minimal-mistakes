@@ -728,10 +728,10 @@ Now you can pull these links into any page by adding the following YAML Front Ma
 
 ```yaml
 sidebar:
-  nav: "docs"
+   
 ```
 
-**Note:** `nav: "docs"` references the `docs` key in `_data/navigation.yml` so make sure they match.
+**Note:** ` ` references the `docs` key in `_data/navigation.yml` so make sure they match.
 {: .notice--info}
 
 If you're adding a sidebar navigation menu to several pages the use of Front Matter Defaults is a better option. You can define them in `_config.yml` to avoid adding it to every page or post.
@@ -746,7 +746,7 @@ defaults:
       type: docs
     values:
       sidebar:
-        nav: "docs"
+         
 ```
 
 ---
