@@ -38,8 +38,8 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : 5 # 5 (default)
-    colorscheme          : "light" # "light" (default), "dark"
+    num_posts            : # 5 (default)
+    colorscheme          : #"light" (default), "dark"
   utterances:
     theme                : #"github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
@@ -70,7 +70,7 @@ algolia:
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
 google:
-  search_engine_id       :  "sinminju04@gmail.com"
+  search_engine_id       : #"sinminju04@gmail.com"
   instant_search         : # false (default), true
 # SEO Related
 google_site_verification :
@@ -104,11 +104,11 @@ analytics:
 
 # Site Author 자기소개 
 author:
-  name             : "minju-sin"
+  name             : "앤초비"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "안녕 난 초비야"
+  location         : "Korea"
+  email            : "sinminju04@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
