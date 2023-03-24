@@ -26,7 +26,7 @@ sidebar:
 
 ### Multiple Coach Implementations
 
-![](../images/2023-03-24-Annotation%20Autowiring%20and%20Qualifiers/2023-03-24-08-31-30-image.png)
+![](images/2023-03-24-Annotation%20Autowiring%20and%20Qualifiers/2023-03-24-08-31-30-image.png)
 
 - 다양한 Coach Implementation 이 있을 때 어떻게 될까?
 

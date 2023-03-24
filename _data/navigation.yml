@@ -20,9 +20,9 @@ docs:
     children:
     # - title: "DeepLearning"
     #   url: /deeplearning/
-    - title: "Spring"
+    - title: "카테고리"
       url: /categories/
     - title: "Algorithm & Data Structure"
-      url: /algo/
+      url: /categories/algo/
 
     
