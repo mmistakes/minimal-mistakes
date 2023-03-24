@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "chovvi"
-  avatar           : # "/assets/profile.png"
+  avatar           : #"/assets/profile.png"
   bio              : "potstickerrrrr"
   location         : "Busan"
   email            : "sinminju04@gmail.com"
@@ -127,7 +127,7 @@ author:
       url: "https://github.com/minju-sin"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       url: "https://instagram.com/potstickerrrrr"
+      url: "https://www.instagram.com/potstickerrrrr/"
 
 # Site Footer
 footer:
@@ -140,7 +140,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/minju-sin"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
