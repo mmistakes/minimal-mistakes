@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Platypustheater Money Matters",
-    "title": "Platypustheater Money Matters",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=bGk4OGU2cnM4MWFhM3ByajY0dXZicmVkdTggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2023-03-23T10:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2023-03-23T11:30:00+01:00"
-    },
-    "created": "2023-03-22T05:55:32.000Z",
-    "updated": "2023-03-22T05:55:32.874Z"
-  },
-  {
-    "image_path": null,
     "alt": "Einschränkungen im Unterricht und Hort möglich",
     "title": "Einschränkungen im Unterricht und Hort möglich",
     "excerpt": "Berlinweite Frauenvollversammlung",
@@ -100,5 +83,22 @@
     },
     "created": "2023-01-30T15:26:10.000Z",
     "updated": "2023-01-30T15:26:10.972Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Vera 3 Mathe",
+    "title": "Vera 3 Mathe",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=ODc2bmpwOWZwcTQ2cWtqaG9oNXNzYm0wMDggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2023-04-25",
+      "date_time": null
+    },
+    "end": {
+      "date": "2023-04-26",
+      "date_time": null
+    },
+    "created": "2023-03-22T05:59:15.000Z",
+    "updated": "2023-03-22T05:59:15.536Z"
   }
 ]
