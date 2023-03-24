@@ -129,10 +129,10 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/Jieun-IM"
+      url: "https://github.com/Jieun-IM"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/im_jieunn"
+      url: "https://instagram.com/im_jieunn"
 
 
 # Reading Files
