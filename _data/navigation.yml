@@ -4,6 +4,8 @@ main:
     url: /categories-grid/ #https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Tag"
     url: /tags/ #https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "By Year"
+    url: /year-archive-grid/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
