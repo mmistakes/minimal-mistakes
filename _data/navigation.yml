@@ -5,19 +5,13 @@ main:
    - title: "Tag"
      url: /tags/
 docs:
-  - title: "일상"
+  - title: "앤초비블로그"
     children:
       - title: "blog"
-        url: /categories/#blog
+        url: /categories/
       - title: "Tag"
         url: /tags/
 
-  - title: "공부일지"
-    children:
-      - title: "Java"
-        url: /categories/#java
-      - title: "Tag"
-        url: /tags/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
