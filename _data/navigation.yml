@@ -5,10 +5,17 @@ main:
    - title: "Tag"
      url: /tags/
 docs:
-  - title: "목차"
+  - title: "일상"
     children:
       - title: "Category"
-        url: /categories/
+        url: /categories/blog
+      - title: "Tag"
+        url: /tags/
+
+  - title: "Study"
+    children:
+      - title: "Category"
+        url: /categories/java
       - title: "Tag"
         url: /tags/
   # - title: "Sample Collections"
