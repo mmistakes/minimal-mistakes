@@ -126,10 +126,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/minju-sin"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-       url: "https://www.instagram.com/potstickerrrrr/"
-
 # Reading Files
 include:
   - .htaccess
