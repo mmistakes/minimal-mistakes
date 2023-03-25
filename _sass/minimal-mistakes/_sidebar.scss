@@ -74,7 +74,7 @@
 .sidebar__right {
   margin-bottom: 1em;
 
-  @include breakpoint($large) {
+  @include breakpoint($medium) {
     position: absolute;
     top: 0;
     right: 0;
@@ -89,6 +89,7 @@
       position: sticky;
       top: 2em;
       float: right;
+      opacity: 0.5;
 
       .toc {
         .toc__menu {
@@ -99,21 +100,23 @@
     }
   }
 
-  @include breakpoint($x-large) {
+  @include breakpoint($large) {
     width: $right-sidebar-width;
     margin-right: -1 * $right-sidebar-width;
   }
 }
 
 .splash .sidebar__right {
-  @include breakpoint($large) {
+  @include breakpoint($medium) {
     position: relative;
     float: right;
     margin-right: 0;
+    
   }
 
-  @include breakpoint($x-large) {
+  @include breakpoint($large) {
     margin-right: 0;
+    
   }
 }
 

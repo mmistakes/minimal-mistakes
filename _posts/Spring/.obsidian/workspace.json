@@ -134,7 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 245.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,7 +146,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d1f38cd97009ee7b",
+  "active": "934020dd4bd023fb",
   "lastOpenFiles": [
     "Application_Properties & Server/2023-03-22-Custom Application Properties.md",
     "Actuator/2023-03-17-Spring Boot Actuator.md",

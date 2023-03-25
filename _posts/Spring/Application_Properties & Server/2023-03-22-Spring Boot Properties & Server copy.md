@@ -8,7 +8,6 @@ toc_sticky: true
 author_profile: false
 sidebar:
   
-
 ---
 
 # 스프링 부트 Properties 간략히 보기

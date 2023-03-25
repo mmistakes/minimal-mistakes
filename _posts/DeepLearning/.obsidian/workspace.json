@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "e4fe2926140c1944",
+        "id": "6b04303da8d7e2bc",
         "type": "tabs",
         "children": [
           {
-            "id": "c1ce03f0e878d826",
+            "id": "cedb7b3fa1b1ff25",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "2023-03-25-Perceptron.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "1189296d4db3bce6",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "2023-03-25-Perceptron.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "2023-03-25-Perceptron.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,15 +125,17 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "2023-03-25-Perceptron.md"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -138,6 +147,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c1ce03f0e878d826",
-  "lastOpenFiles": []
+  "active": "4b3f0588c668e39b",
+  "lastOpenFiles": [
+    "2023-03-25-Perceptron.md",
+    "퍼셉트론"
+  ]
 }
