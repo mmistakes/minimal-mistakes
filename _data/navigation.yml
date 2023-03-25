@@ -5,14 +5,16 @@ main:
    - title: "Tag"
      url: /tags/
 docs:
-  - title: "앤초비블로그"
+  - title: "대목차"
     children:
-      - title: "blog"
+      - title: "Category"
         url: /categories/
       - title: "Tag"
         url: /tags/
 
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+counts:
+  - title: "카테고리"
+    use: true
+  - title: "태그"
+    use: true
+
