@@ -4,6 +4,15 @@ main:
      url: /categories/  
    - title: "Tag"
      url: /tags/
+   - title: "Search"
+
+docs:
+    - title: "study"
+      children:
+        - title: "Category"
+        url: /categories/ 
+        - title: "Tag"
+        url: /tags/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
