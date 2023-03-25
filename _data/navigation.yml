@@ -5,13 +5,6 @@ main:
    - title: "Tag"
      url: /tags/
 
-docs:
-    - title: "Study"
-      children:
-        - title: "Category"
-        url: /categories/ 
-        - title: "Tag"
-        url: /tags/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
