@@ -4,10 +4,9 @@ main:
      url: /categories/  
    - title: "Tag"
      url: /tags/
-   - title: "Search"
 
 docs:
-    - title: "study"
+    - title: "목차"
       children:
         - title: "Category"
         url: /categories/ 
