@@ -7,15 +7,15 @@ main:
 docs:
   - title: "일상"
     children:
-      - title: "Category"
-        url: /categories/blog
+      - title: "blog"
+        url: /categories/#blog
       - title: "Tag"
         url: /tags/
 
-  - title: "Study"
+  - title: "공부일지"
     children:
-      - title: "Category"
-        url: /categories/java
+      - title: "Java"
+        url: /categories/#java
       - title: "Tag"
         url: /tags/
   # - title: "Sample Collections"
