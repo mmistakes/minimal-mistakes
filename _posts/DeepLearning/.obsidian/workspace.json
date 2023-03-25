@@ -11,12 +11,8 @@
             "id": "cedb7b3fa1b1ff25",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2023-03-25-Perceptron.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -86,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-03-25-Perceptron.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-03-25-Perceptron.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "2023-03-25-Perceptron.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -147,7 +139,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4b3f0588c668e39b",
+  "active": "cedb7b3fa1b1ff25",
   "lastOpenFiles": [
     "2023-03-25-Perceptron.md",
     "퍼셉트론"
