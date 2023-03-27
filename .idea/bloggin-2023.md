@@ -9,9 +9,10 @@
   - starship prompt
   - git mzybe
   - VSCode
-  - ?
-3. Merging on multi-index dataframes
-4. How and when to use apply on dataframe
-5. Twitter BOT code Beschreibung (Serie über 3?)
-6. Sonett (CF?)
-7. 
+  - pipx
+  - pyenv
+1. Merging on multi-index dataframes
+1. How and when to use apply on dataframe
+1. Twitter BOT code Beschreibung (Serie über 3?)
+1. Sonett (CF?)
+1. 
