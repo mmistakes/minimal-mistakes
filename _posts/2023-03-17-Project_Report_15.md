@@ -213,6 +213,23 @@ sidebar:
 
 ## Back-end 개발
 
+### CreatedTimeEntity
+
+```java
+@Getter
+@MappedSuperclass
+@EntityListeners(AuditingEntityListener.class)
+public abstract class CreatedTimeEntity {
+
+    // Entity가 생성되서 저장될 때 시간이 자동 저장
+    @CreatedDate
+    private LocalDateTime createdDate;
+}
+```
+- 기존 `BaseTimeEntity`도 있지만, `BaseTimeEntity`는 생성일자와 수정일자가 들어간다.
+- 또한, `BaseTimeEntity`는 `yyyy-MM-dd`형식으로 format해서 시간을 활용할 수는 없다.
+- Movie Entity는 생성일자만 필요하며, 검색 시간을 통해 정렬할 것이기 때문에 `CreatedTimeEntity`를 따로 생성했다.
+
 ### Movie Entity
 
 사용자 정보 페이지에서는 사용자가 작성한 게시글과 최근 검색한 영화의 제목을 표시할 것이기 때문에 영화 관련 엔티티를 생성했다.
