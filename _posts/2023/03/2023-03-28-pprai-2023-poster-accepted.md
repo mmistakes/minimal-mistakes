@@ -16,7 +16,7 @@ Our three papers have been accepted to the [PP-RAI'2023](https://pp-rai.pl/) con
 
 * "Spotting advertisements from above: billboard detection and segmentation in UAV imagery" by Bartosz Ptak, Jan Dominiak, Marek Kraft
 
-* "SkyGrabber: An Edge AI Solution for Solar Irradiance Forecasting Using Image Regression" by Mateusz Piechocki, Marek Kraft, Tomasz Pajchrowski
+* "Fault Diagnosis in a Squirrel-Cage Induction Motor Using Thermal Imaging" by Mateusz Piechocki, Marek Kraft, Tomasz Pajchrowski
 
 ### Accepted papers for poster presentation
 
