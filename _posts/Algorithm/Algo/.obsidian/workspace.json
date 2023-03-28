@@ -1,34 +1,18 @@
 {
   "main": {
-    "id": "47d160d1cc57359c",
+    "id": "6710217426114199",
     "type": "split",
     "children": [
       {
-        "id": "ac0d338a326782fd",
+        "id": "18151127ced49a22",
         "type": "tabs",
         "children": [
           {
-            "id": "23ea0485448aac80",
+            "id": "7ae37704906080e9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Collection/List/2023-03-26-List(3).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2165ebe38921eab9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Collection/2023-03-06-Collection.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -37,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "49eddfc80aaa056a",
+    "id": "642986cc9bbb452f",
     "type": "split",
     "children": [
       {
-        "id": "d8a58b09be459c08",
+        "id": "60c816eb3f675e53",
         "type": "tabs",
         "children": [
           {
-            "id": "06fd611708045842",
+            "id": "d9caa9d73e429202",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -55,12 +39,12 @@
             }
           },
           {
-            "id": "04ea833f6af7fa26",
+            "id": "dacba0bf922ce68a",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#ArrayList",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +54,7 @@
             }
           },
           {
-            "id": "3c54a9133fbf82bb",
+            "id": "ab2ff55399f49d70",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -81,23 +65,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "307d2258e436d420",
+    "id": "3b2593f41b8f88cb",
     "type": "split",
     "children": [
       {
-        "id": "8136676362bcb989",
+        "id": "a9711ef282074166",
         "type": "tabs",
         "children": [
           {
-            "id": "9fa544f850ac2948",
+            "id": "37e90da1d17a60c5",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Collection/List/2023-03-26-List(3).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,19 +92,18 @@
             }
           },
           {
-            "id": "dc798b9e7bbdc319",
+            "id": "6b087e430fe8771b",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Collection/List/2023-03-26-List(3).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "2774372936294edc",
+            "id": "e4c118fc8c864c57",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -132,21 +114,19 @@
             }
           },
           {
-            "id": "59564ffb126b1d7b",
+            "id": "f2a359a4b12dfa0c",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Collection/List/2023-03-26-List(3).md"
-              }
+              "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -155,16 +135,9 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "23ea0485448aac80",
-  "lastOpenFiles": [
-    "Collection/2023-03-06-Collection.md",
-    "Collection/List/2023-03-24-List(1).md",
-    "Collection/List/2023-03-26-List(3).md",
-    "Collection/List/2023-03-24-List(2).md",
-    "Collection"
-  ]
+  "active": "7ae37704906080e9",
+  "lastOpenFiles": []
 }

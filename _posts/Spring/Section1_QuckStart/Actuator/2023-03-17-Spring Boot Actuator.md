@@ -254,4 +254,4 @@ src/main/resources/application.properties
 ![](https://i.imgur.com/Q7UbZP3.png)
 
 
-출처 유데미
+출처 유데미, https://incheol-jung.gitbook.io/docs/study/srping-in-action-5th/chap-16.

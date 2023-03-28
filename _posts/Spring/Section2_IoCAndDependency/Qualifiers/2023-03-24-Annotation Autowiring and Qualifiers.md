@@ -3,7 +3,7 @@ layout: single
 title: "Annotation Autowiring and Qualifiers"
 categories: Spring
 tag: [Java,IoC,Inversion of Control,Setter Injection
-,"@Autowired",Annotation]
+,"@Autowired",Annotation,"@Qualifier"]
 toc: true
 toc_sticky: true
 author_profile: false
@@ -26,11 +26,12 @@ sidebar:
 
 ### Multiple Coach Implementations
 
-![](images/2023-03-24-Annotation%20Autowiring%20and%20Qualifiers/2023-03-24-08-31-30-image.png)
+![](https://i.imgur.com/AE6I5K9.png)
 
-- 다양한 Coach Implementation 이 있을 때 어떻게 될까?
 
-- 오류남 -> 뭘 선택해야할지 모름
+- 다양한 Coach Implementation 이 존재하면 어떻게 될까?
+
+- 오류발생함 -> 왜냐하면 Spring이 뭘 선택해야할지 모름
 
 ### Solution: Be specific! - @Qualifer
 
@@ -45,7 +46,7 @@ public class DemoController {
     @Autowired
     public DemoController(@Qualifier("cricketCoach") Coach theCoach){
         myCoach = theCoach;
-} //@Qualifier 사용.
+} //Coach 앞에 @Qualifier("클래스 이름") 주입.
 
     @GetMapping("/dailyworkout")
     public String getDailyWorkout() {
@@ -54,9 +55,10 @@ public class DemoController {
 }
 ```
 
-- Specific the bean id: cricketCoach
+- Specific the ***bean id*:** cricketCoach
 
-- 이 bean id 는 CricketCoach와 같은 이름이면서 *소문자* 로 시작하면 된다.
+- 이 ***bean id*** 는 CricketCoach와 같은 이름이면서 *소문자* 로 시작하면 된다.
+- Other ***bean ids*** we could use: baseballCoach, trackCoach, tennisCoach..
 
 #### For Setter Injection
 
@@ -71,7 +73,7 @@ public class DemoController {
       @Autowired
       public void setCoach(@Qualifier("cricketCoach") Coach theCoach){
           myCoach = theCoach;
-  } //@Qualifier 똑같이 사
+  } //@Qualifier 똑같이 사용
   
       @GetMapping("/dailyworkout")
       public String getDailyWorkout() {
@@ -80,4 +82,5 @@ public class DemoController {
   }
   ```
 
-- Give bean id : cricketCoach with starting lower-case
+- Give ***bean id*** : cricketCoach with starting lower-case
+- Other ***bean ids*** we could use: baseballCoach, trackCoach, tennisCoach..
