@@ -1,0 +1,44 @@
+---
+layout: single
+title: "노드 프로퍼티"
+---
+
+##### innerHTML
+요소안의 html을 수정하는데 사용한다.
+추가만을 원한다면 +=을 사용할 수 있다.
+
+    <body>
+      <p>p 태그</p>
+      <div>div 태그</div>
+    
+      <script>
+        alert( document.body.innerHTML ); // 내용 읽기
+        document.body.innerHTML = '새로운 BODY!'; // 교체
+      </script>
+    
+    </body>
+	
+##### innerText
+요소안의 보여지는 텍스트 값을 불러온다. 텍스트가 display:none 등의 방법으로 보이지 않는다면 텍스트를 불러들이지 않는다.
+
+#####  textContent 
+ 요소안의 텍스트 값을 그대로 불러온다. 요소가 가려져 있더라도 정상적으로 불러올 수 있다.
+ 
+
+ 
+##### .data
+주석노드를 불러온다. nodeValue와 동일하지만 짧은 data를 많이 사용함
+
+##### .hidden
+요소를 숨긴다. display: none;과 동일함
+
+##### .value / .href/ / .id
+각각의 input값, a href="..."의 href속성값, id속성 값을 불러온다.
+
+    <input type="text" id="elem" value="value">
+    
+    <script>
+      alert(elem.type); // "text"
+      alert(elem.id); // "elem"
+      alert(elem.value); // value
+    </script>
