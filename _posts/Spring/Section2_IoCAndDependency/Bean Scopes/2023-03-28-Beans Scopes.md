@@ -2,7 +2,7 @@
 layout: single
 title: "What is Beans Scopes?"
 categories: Spring
-tag: [Java,IoC,Inversion of Control,Prototype Scope,Singleton,"@Scope"]
+tag: [Java,IoC,Inversion of Control,Prototype Scope,Singleton,"@Scope","Prototype Beans"]
 toc: true
 toc_sticky: true
 author_profile: false
@@ -133,3 +133,11 @@ public class CricketCoach implements Coach{
 
 ![](https://i.imgur.com/VRyKBAh.png)
 - It means each *cricketCoach* is different
+
+#### Prototype Beans and Destroy Lifecycle
+- **For "prototype" scoped beans, Spring does not call the destroy method.**
+- **_In contrast to the other scopes, Spring does not manage the complete lifecycle of a prototype bean_**_: the container instantiates, configures, and otherwise assembles a prototype object, and hands it to the client, with no further record of that prototype instance._
+- _Thus, although initialization lifecycle callback methods are called on all objects regardless of scope,_ **_in the case of prototypes, configured destruction lifecycle callbacks are not called_**_. The client code must clean up prototype-scoped objects and release expensive resources that the prototype bean(s) are holding._
+
+#### Prototype Beans and Lazy Initialization
+- Prototype beans are lazy by default. There is no need to use the @Lazy annotation for prototype scopes beans.

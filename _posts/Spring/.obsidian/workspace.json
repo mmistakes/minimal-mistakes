@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "eeff93e459522a7e",
+        "id": "43cdded231f16aa9",
         "type": "tabs",
         "children": [
           {
-            "id": "357444dc3ae53687",
+            "id": "1c6cebd8a8c5ac30",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Section2_IoCAndDependency/Primary/2023-03-28-@Primary annotation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "12a4e9c5e0a14cd0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Section2_IoCAndDependency/Lazy Initialization/2023-03-28-Lazy Initialization.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5ae9c23e86ee0dd3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Section2_IoCAndDependency/Bean Scopes/2023-03-28-Beans Scopes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bc2d60244def7a27",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Section2_IoCAndDependency/Bean Lifecycle Methods/2023-03-29-Bean lifecycle Methods.md",
+                "file": "Section3_DatabaseAccessWithHibernate_JPA_CRUD/JPA Annotations/2023-03-29-JPA Annotations.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 307.50206756591797
+    "width": 307.50206756591797,
+    "collapsed": true
   },
   "right": {
     "id": "3c82fc008517e921",
@@ -122,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Section2_IoCAndDependency/Bean Lifecycle Methods/2023-03-29-Bean lifecycle Methods.md",
+                "file": "Section3_DatabaseAccessWithHibernate_JPA_CRUD/JPA Annotations/2023-03-29-JPA Annotations.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -139,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Section2_IoCAndDependency/Bean Lifecycle Methods/2023-03-29-Bean lifecycle Methods.md",
+                "file": "Section3_DatabaseAccessWithHibernate_JPA_CRUD/JPA Annotations/2023-03-29-JPA Annotations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Section2_IoCAndDependency/Bean Lifecycle Methods/2023-03-29-Bean lifecycle Methods.md"
+                "file": "Section3_DatabaseAccessWithHibernate_JPA_CRUD/JPA Annotations/2023-03-29-JPA Annotations.md"
               }
             }
           }
@@ -184,10 +148,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bc2d60244def7a27",
+  "active": "1c6cebd8a8c5ac30",
   "lastOpenFiles": [
-    "Section2_IoCAndDependency/Bean Scopes/2023-03-28-Beans Scopes.md",
+    "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Hibernare_JPA_Overview/2023-03-29-Hibernate JPA Overview.md",
+    "Section3_DatabaseAccessWithHibernate_JPA_CRUD/JPA Annotations/2023-03-29-JPA Annotations.md",
+    "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Setting Up Development Environment/2023-03-29-Setting Up Development Environment.md",
+    "Section3_DatabaseAccessWithHibernate_JPA_CRUD/JPA Annotations",
+    "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Setting Up Development Environment",
     "Section2_IoCAndDependency/Bean Lifecycle Methods/2023-03-29-Bean lifecycle Methods.md",
+    "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Hibernare_JPA_Overview",
+    "Section2_IoCAndDependency/Java Config Bean/2023-03-29-Java Config Bean.md",
+    "Section3_DatabaseAccessWithHibernate_JPA_CRUD",
+    "Section2_IoCAndDependency/Java Config Bean",
+    "Section2_IoCAndDependency/Bean Scopes/2023-03-28-Beans Scopes.md",
     "Section2_IoCAndDependency/Bean Lifecycle Methods",
     "Section2_IoCAndDependency/Lazy Initialization/2023-03-28-Lazy Initialization.md",
     "Section2_IoCAndDependency/Primary/2023-03-28-@Primary annotation.md",
@@ -204,23 +177,15 @@
     "Section1_QuckStart/Beans/2023-03-16-Spring Framework Overview(Bean).md",
     "Others",
     "Section1_QuckStart",
-    "Section2_IoCAndDependency",
-    "Section2_IoCAndDependency/Primary",
     "Section1_QuckStart/Actuator/2023-03-17-Spring Boot Actuator.md",
     "Section1_QuckStart/Maven/2023-03-16-Spring Boot Maven.md",
     "images/2023-03-24-Annotation Autowiring and Qualifiers/2023-03-24-08-31-30-image.png.md",
-    "images/2023-03-24-Annotation Autowiring and Qualifiers",
-    "images",
     "Section1_QuckStart/Application_Properties & Server/2023-03-22-Spring Boot Properties & Server copy.md",
     "Section1_QuckStart/Application_Properties & Server/2023-03-22-Custom Application Properties.md",
     "images/2023-03-17-Spring Boot Actuator/2023-03-21-05-33-28-image.png.md",
-    "images/2023-03-17-Spring Boot Actuator",
     "images/2023-03-17-Spring Boot Actuator/2023-03-17-22-55-32-image.png.md",
     "2023-03-17-21-19-32-image.png",
     "images/2023-03-17-Spring Boot Actuator/2023-03-17-21-19-32-image.png.md",
-    "Section1_QuckStart/Initializr/2023-03-17-Spring Initializr.md",
-    "Section1_QuckStart/DevTools/2023-03-17-Spring Boot DevTools.md",
-    "Others/2023-03-16-spring others.md",
-    "Section1_QuckStart/Command_Line/2023-03-21-Run Spring Boot apps from the Command Line.md"
+    "Section1_QuckStart/Initializr/2023-03-17-Spring Initializr.md"
   ]
 }
