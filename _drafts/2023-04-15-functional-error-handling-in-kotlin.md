@@ -29,5 +29,33 @@ As you may guess, we'll use Maven to build the project. At the end of the articl
 ## 2. Why Exception Handling is not Functional
 
 First, we need to understand what's wrong with the traditional approach to error handling, which is based on exceptions. We need some context to understand the problem.
- 
+
+For sake of this examples, imagine we want to create an application that need to manage companies information:
+
+```kotlin
+data class Company(val name: String)
+```
+
+We can use a dedicated module to retrieve the companies information:
+
+```kotlin
+interface Companies {
+    fun findAll(): List<Company>
+}
+```
+
+Now that we have our `Companies` module, we can use it in a program, for example, to retrieve a list of all the companies available in the system:
+
+```kotlin
+class CompaniesService(private val companies: Companies) {
+    fun getAvailableCompaniesNames(): List<String> {
+        val retrievedCompanies = companies.findAll()
+        return try {
+            retrievedCompanies.map { it.name }
+        } catch (e: Exception) {
+            listOf()
+        }
+    }
+}
+```
 TODO
