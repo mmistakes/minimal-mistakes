@@ -107,4 +107,4 @@ x = 1 + 2;
 
 
 
-> **<span style='color:yellow'>이웅모, "모던 자바스크립트 Deep Dive", 위키북스(2020), p50-58.</span>** 
+> **<span style='color:yellow'>이웅모, "모던 자바스크립트 Deep Dive", 위키북스(2020), p50~58.</span>** 
