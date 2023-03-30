@@ -15,4 +15,3 @@ main:
 
 counts:
   - title: "카테고리"
-    use :true
