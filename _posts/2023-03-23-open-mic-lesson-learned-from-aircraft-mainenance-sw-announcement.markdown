@@ -9,3 +9,5 @@ The Open mic session starts on Friday 14 April 2023 at [this link](https://meet.
 ##### The abstract
 
 Within project [Improving effectiveness of aircraft maintenance planning and execution](https://starfos.tacr.cz/en/project/CK01000204) KBSS developed an information system that enables interactive creation of aircraft maintenance plans and a dashboard application that assesses the progress of ongoing plan executions. I will share the insights we acquired through processing and interpreting input data from the maintenance organization. I will also address the challenges we encountered when computing the actual state of the system that provided us with input data in the form of partial snapshots. Lastly, I will delve into the challenges that we faced in terms of formalizing statistics with domain experts.
+
+{% include figure image_path="assets/images/posts/aircraft-maintenance-sw.png" alt="Knowledge-based system for aircraft maintenance" %}
