@@ -1,0 +1,41 @@
+---
+title: "영상처리 이용한 ITS장비  SW개발"
+categories:
+  - opencv
+
+tags: [opencv,]
+toc : true
+comments: true
+
+---
+# 개요
+큰비젼 황태현 이사 교육 내용 
+
+
+
+#0  OpenCV 관련 설정
+
+
+
+## 실행 화면
+
+## 프로그램 설명
+
+
+
+
+
+##  전체 코드
+
+```cpp
+
+
+
+```
+
+
+##  사용 OpenCV 함수
+
+
+## 참조 링크
+https://docs.opencv.org/4.x/d7/d1b/group__imgproc__misc.html#ga366aae45a6c1289b341d140839f18717
