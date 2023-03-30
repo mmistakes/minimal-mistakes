@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "decembaek_Blog"       #"Site Title"
 title_separator          : "-"
-subtitle                 : "I want to find all the fun technologies in the world"  # site tagline that appears below site title in masthead
+subtitle                 : "developer"  # site tagline that appears below site title in masthead
 name                     : "Seunggyu Baek"   #"Your Name"
 description              : "An amazing website."
 url                      : "https://decembaek.github.io"
