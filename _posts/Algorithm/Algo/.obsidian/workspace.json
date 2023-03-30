@@ -8,11 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7ae37704906080e9",
+            "id": "83ef656fc6b44e35",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Lv.0/2023-03-31-sum numbers.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 237.5046501159668,
+    "collapsed": true
   },
   "right": {
     "id": "3b2593f41b8f88cb",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Lv.0/2023-03-31-sum numbers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Lv.0/2023-03-31-sum numbers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,15 +125,17 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Lv.0/2023-03-31-sum numbers.md"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 203.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -138,6 +147,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7ae37704906080e9",
-  "lastOpenFiles": []
+  "active": "83ef656fc6b44e35",
+  "lastOpenFiles": [
+    "Lv.0/2023-03-31-sum numbers.md",
+    "Lv.0/2023-03-31-sum numbers.md",
+    "Lv.0/2023-03-31-compare numbers.md",
+    "Pasted image 20230331012122.png",
+    "Lv.0"
+  ]
 }

@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "169db20bf8d007e5",
+            "id": "194eaf3df5eb4d97",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Transactions with JPA/2023-03-30-Transactions with JPA.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6910bb8b4c956610",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Deleteing Objects with JPA/2023-03-30-Deleteing Objects with JPA.md",
+                "file": "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Create Database Tables from Java Code/2023-03-30-Create Database Tables from Java Code.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Deleteing Objects with JPA/2023-03-30-Deleteing Objects with JPA.md",
+                "file": "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Create Database Tables from Java Code/2023-03-30-Create Database Tables from Java Code.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Deleteing Objects with JPA/2023-03-30-Deleteing Objects with JPA.md",
+                "file": "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Create Database Tables from Java Code/2023-03-30-Create Database Tables from Java Code.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Deleteing Objects with JPA/2023-03-30-Deleteing Objects with JPA.md"
+                "file": "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Create Database Tables from Java Code/2023-03-30-Create Database Tables from Java Code.md"
               }
             }
           }
@@ -148,7 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 513.5
+    "width": 274.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,10 +148,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6910bb8b4c956610",
+  "active": "194eaf3df5eb4d97",
   "lastOpenFiles": [
-    "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Hibernare_JPA_Overview/2023-03-29-Hibernate JPA Overview.md",
     "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Deleteing Objects with JPA/2023-03-30-Deleteing Objects with JPA.md",
+    "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Create Database Tables from Java Code/2023-03-30-Create Database Tables from Java Code.md",
+    "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Create Database Tables from Java Code",
+    "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Hibernare_JPA_Overview/2023-03-29-Hibernate JPA Overview.md",
     "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Transactions with JPA/2023-03-30-Transactions with JPA.md",
     "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Deleteing Objects with JPA",
     "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Setting Up Development Environment/2023-03-29-Setting Up Development Environment.md",
@@ -183,7 +172,6 @@
     "Section2_IoCAndDependency/Bean Lifecycle Methods/2023-03-29-Bean lifecycle Methods.md",
     "Section3_DatabaseAccessWithHibernate_JPA_CRUD/JPA Annotations",
     "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Setting Up Development Environment",
-    "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Hibernare_JPA_Overview",
     "Section2_IoCAndDependency/Java Config Bean/2023-03-29-Java Config Bean.md",
     "Section2_IoCAndDependency/Bean Scopes/2023-03-28-Beans Scopes.md",
     "Section2_IoCAndDependency/Lazy Initialization/2023-03-28-Lazy Initialization.md",
@@ -198,7 +186,6 @@
     "Others/2023-03-16-@Autowired, @Resource and @Inject.md",
     "Section1_QuckStart/Beans/2023-03-16-Spring Framework Overview(Bean).md",
     "Section1_QuckStart/Actuator/2023-03-17-Spring Boot Actuator.md",
-    "Section1_QuckStart/Maven/2023-03-16-Spring Boot Maven.md",
     "2023-03-17-21-19-32-image.png"
   ]
 }
