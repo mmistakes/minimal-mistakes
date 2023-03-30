@@ -40,7 +40,9 @@ value class Company(val name: String)
 @JvmInline
 value class Role(val name: String)
 @JvmInline
-value class Salary(val value: Double)
+value class Salary(val value: Double) {
+    operator fun compareTo(other: Salary): Int = value.compareTo(other.value)
+}
 ```
 
 We can use a dedicated module to retrieve the jobs information:
@@ -65,4 +67,56 @@ class JobsService(private val jobs: Jobs) {
     }
 }
 ```
-TODO
+
+Let's start with a trivial implementation of the `Jobs` interface:
+
+```kotlin
+class FakeJobs : Jobs {
+    override fun findAll(): List<Job> = throw RuntimeException("Boom!")
+}
+```
+
+As we can see, the `FakeJobs` class throws an exception when we call the `findAll` method. Now, let's see what happens when we run the program:
+
+```kotlin
+fun main() {
+    val jobsService = JobsService(FakeJobs())
+    val highlyPaidJobs = jobsService.getHighlyPaidJobs(Salary(100_000.00))
+    println("Best jobs on the market are: $highlyPaidJobs")
+}
+```
+
+As expected the program crashes with the following exception:
+
+```text
+Exception in thread "main" java.lang.RuntimeException: Boom!
+	at in.rcard.FakeJobs.findAll(FunctionalErrorHandling.kt:14)
+	at in.rcard.JobsService.getHighlyPaidJobs(FunctionalErrorHandling.kt:19)
+	at in.rcard.FunctionalErrorHandlingKt.main(FunctionalErrorHandling.kt:5)
+	at in.rcard.FunctionalErrorHandlingKt.main(FunctionalErrorHandling.kt)
+```
+
+Fair enough. The exception is thrown outside the `try-catch` block, and it bubbles up to the main method. 
+
+One of the main principle functional programming is referential transparency, which states that a function should always return the same result when called with the same arguments. In other words, a function should not have any side effects. One of the corollary of this principle is that an expression can be replaced with its value without changing the program's behavior. 
+
+Let's try it on our program. If we substitute the `jobs.findAll()` expression to the `retrievedJobs` variable, we get the following code:
+
+```kotlin
+class JobsService(private val jobs: Jobs) {
+    fun getHighlyPaidJobs(minimumSalary: Salary): List<Job> {
+        return try {
+            jobs.findAll().filter { it.salary > minimumSalary } // <== Substituted expression
+        } catch (e: Exception) {
+            listOf()
+        }
+    }
+}
+``` 
+
+If we execute this code in our program, we clearly obtain a different result, than the previous execution:
+
+```text
+Best jobs on the market are: []
+```
+
