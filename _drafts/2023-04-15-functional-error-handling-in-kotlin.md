@@ -30,28 +30,35 @@ As you may guess, we'll use Maven to build the project. At the end of the articl
 
 First, we need to understand what's wrong with the traditional approach to error handling, which is based on exceptions. We need some context to understand the problem.
 
-For sake of this examples, imagine we want to create an application that need to manage companies information:
+For sake of this examples, imagine we want to create an application that manages a jobs board. First, we need a simplified model of a job:
 
 ```kotlin
-data class Company(val name: String)
+data class Job(val company: Company, val role: Role, val salary: Salary)
+
+@JvmInline
+value class Company(val name: String)
+@JvmInline
+value class Role(val name: String)
+@JvmInline
+value class Salary(val value: Double)
 ```
 
-We can use a dedicated module to retrieve the companies information:
+We can use a dedicated module to retrieve the jobs information:
 
 ```kotlin
-interface Companies {
-    fun findAll(): List<Company>
+interface Jobs {
+    fun findAll(): List<Job>
 }
 ```
 
-Now that we have our `Companies` module, we can use it in a program, for example, to retrieve a list of all the companies available in the system:
+Now that we have our `Jobs` module, we can use it in a program, for example, to retrieve a list of all the jobs offering a minimum salary of 100k:
 
 ```kotlin
-class CompaniesService(private val companies: Companies) {
-    fun getAvailableCompaniesNames(): List<String> {
-        val retrievedCompanies = companies.findAll()
+class JobsService(private val jobs: Jobs) {
+    fun getHighlyPaidJobs(minimumSalary: Salary): List<Job> {
+        val retrievedJobs = jobs.findAll()
         return try {
-            retrievedCompanies.map { it.name }
+            retrievedJobs.filter { it.salary.value > minimumSalary.value }
         } catch (e: Exception) {
             listOf()
         }
