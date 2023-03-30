@@ -10,7 +10,7 @@ sidebar:
 
 ---
 
-# Bean Lifecycle
+# Bean Lifecycle 그림으로 보기
 
 ![](https://i.imgur.com/JNJ4wVI.png)
 
