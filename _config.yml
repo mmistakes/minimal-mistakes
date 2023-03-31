@@ -108,6 +108,9 @@ author:
   location: "Seoul, Korea"
   email: "adeliine.0618@gmail.com"
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:adliine.0618@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://adeline0618.github.io"
@@ -186,7 +189,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul
 
 # Plugins (previously gems:)
 plugins:
@@ -220,17 +223,17 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+#https://github.com/jekyll/jekyll-archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 # HTML Compression
 # - https://jch.penibelst.de/
