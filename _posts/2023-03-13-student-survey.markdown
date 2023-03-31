@@ -13,7 +13,7 @@ using enterprise-ready technologies such as Spring (Boot) and JPA, as well as un
 
 [Subject description on the faculty Web](https://fel.cvut.cz/en/education/bk/predmety/58/33/p5833906.html){: .btn .btn--info}
 
-41 of 64 students passed the course in the winter semester of 2022/2023. The subsequent annual survey showed generally positive reviews with an average
+Total number of 41 out of 64 students passed the course in the winter semester of 2022/2023. The subsequent annual survey showed generally positive reviews with an average
 score of 1.36 (on the scale 1-5, lower is better). Main feedback was towards the organizational and technical aspects of the course, and it will be
 taken into account for the next year.
 
