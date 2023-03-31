@@ -14,7 +14,6 @@
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-
 # Site Settingss
 locale: "ko-KR"
 title: "decembaek_Blog" #"Site Title"
@@ -26,24 +25,10 @@ url: "https://decembaek.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "decembaek/decembaek.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: "/assets/images/Original.png"  # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo: "/assets/images/Original.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs : true
+breadcrumbs: true
 words_per_minute: 200
-locale                   : "en-US"
-title                    : "decembaek_Blog"       #"Site Title"
-title_separator          : "-"
-subtitle                 : "developer"  # site tagline that appears below site title in masthead
-name                     : "Seunggyu Baek"   #"Your Name"
-description              : "An amazing website."
-url                      : "https://decembaek.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "decembaek/decembaek.github.io"    # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
 comments:
   provider: "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
@@ -111,10 +96,10 @@ social:
 
 # Analytics
 analytics:
-  provider: false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider: "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id:
-    anonymize_ip: # true, false (default)
+    tracking_id: "G-BERRX52KVC"
+    anonymize_ip: false # true, false (default)
 
 # Site Author
 author:
