@@ -2,7 +2,7 @@
 layout: single
 title: "Reading Objects with JPA"
 categories: Spring
-tag: [Java,JPA,"???"]
+tag: [Java,JPA,DAO]
 toc: true
 toc_sticky: true
 author_profile: false
@@ -10,6 +10,9 @@ sidebar:
 
 ---
 # Retrieving a Java Object with JPA
+- Hibernate/JPA CRUD (5)
+
+  
 ```java
 // retrieve/read from database using the primary key
 // in this example, retrieve Student with primary key: 1
@@ -34,10 +37,10 @@ public interface StudentDAO {
 }
 ```
 
-### Step 2: 
+### Step 2: Define DAO implementation
 ![](https://i.imgur.com/w85OG9T.png)
 
-### Step 3:
+### Step 3: Update main app
 ```java
 @SpringBootApplication  
 public class CruddemoApplication {  

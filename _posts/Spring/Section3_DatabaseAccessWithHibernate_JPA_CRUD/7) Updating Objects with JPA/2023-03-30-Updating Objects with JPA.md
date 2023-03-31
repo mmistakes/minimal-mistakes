@@ -2,7 +2,7 @@
 layout: single
 title: "JPA로 오브젝트 업데이트"
 categories: Spring
-tag: [Java,JPA,"??"]
+tag: [Java,JPA,update]
 toc: true
 toc_sticky: true
 author_profile: false
@@ -10,6 +10,8 @@ sidebar:
 
 ---
 # JPA를 사용해서 Objects 업데이트하기
+- Hibernate/JPA CRUD (7)
+
 
 ## Update a Student
 

@@ -10,7 +10,7 @@ sidebar:
 
 ---
 # Deleting Objects with JPA Overview
-
+- Hibernate/JPA CRUD (8)
 
 ## Delete a Student
 ```java
@@ -30,9 +30,7 @@ entityManager.remove(theStudent);
 
 ## Delete All Students
 ```java
-int numRowsDeleted = entityManager
-						.createQuery("DELETE FROM Student")
-						.excuteUpdate();
+int numRowsDeleted = entityManager.createQuery("DELETE FROM Student").excuteUpdate();
 ```
 
 ## Development Process
@@ -43,9 +41,7 @@ int numRowsDeleted = entityManager
 ### Step 1: Add new method to DAO interface
 ```java
 public interface StudentDAO {
-
 	void delete(Integer id);
-	
 }
 ```
 
@@ -53,14 +49,11 @@ public interface StudentDAO {
 ```java
 @Repository  
 public class StudentDAOImpl implements StudentDAO{  
-  
     private EntityManager entityManager;
     ...
-
 	@Override  
 	@Transactional  // <- Add @Transactional since we are performing a delete
 	public void delete(Integer id) {  
-  
 	    // retrieve the student  
 	    Student theStudent = entityManager.find(Student.class, id);  
 	    // delete the student  
@@ -79,13 +72,10 @@ public class CruddemoApplication {
 	          deleteAllStudents(studentDAO);  
    };  
 }
-
 private void deleteStudent(StudentDAO studentDAO) {  
-  
    int studentId = 2;  
    System.out.println("Deleting student id: " + studentId);  
    studentDAO.delete(studentId);  
-  
 }
 ```
 

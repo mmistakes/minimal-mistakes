@@ -10,6 +10,7 @@ sidebar:
 
 ---
 # JPA Query Language (JPQL)
+- Hibernate/JPA CRUD (6)
 - Query language for retrieving onjects
 - Similar in concept to SQL
 	- where, like, order by, join, in, etc...
@@ -31,6 +32,7 @@ sidebar:
 ## JPQL - Named Parameters
 
 ![](https://i.imgur.com/Gol9Mcb.png)
+- theLastName으로 들어오는 값을 "theData"에 넣어서 검색한다고 이해하면 됨
 
 ## Development Process
 1. Add new method to DAO interface

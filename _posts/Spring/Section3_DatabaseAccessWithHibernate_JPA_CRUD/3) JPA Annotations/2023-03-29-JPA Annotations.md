@@ -2,20 +2,22 @@
 layout: single
 title: "JPA Annotations Overview"
 categories: Spring
-tag: [Java,JPA,commandLineRunner,"@Entity","@Table","@Column","@GeneratedValue","@Id","Lombok"]
+tag: [Java,JPA,"@Entity","@Table","@Column","@GeneratedValue","@Id","Lombok","Entity Class"]
 toc: true
 toc_sticky: true
 author_profile: false
 sidebar:
 
 ---
+- Hibernate/JPA CRUD (3)
+- Hibernate 는 그냥 spring boot 디폴트 JPA implementation 이다?
 
 # JPA Dev Process - To do list
 1. Annotate Java Class
 2. Develop Java Code to perform database operations
 
 ## Let's just say "JPA"
-- As mentioned, Hibernate is the default JPA implementation in SpringBoot
+- As mentioned, ***Hibernate is the default JPA implementation in SpringBoot***
 - Going forward in this course, I will simply use the term:**JPA**
 	- Instead of saying "JPA Hibernate"
 - We know that by default, Hibernate is used behind the scenes
@@ -23,6 +25,7 @@ sidebar:
 ## Terminology
 - Entity Class
 	- Java class that is mapped to a database table
+
 
 ## Object-to-Relational Mapping(ORM)
 
@@ -78,7 +81,7 @@ public class Student {
 - Actually, the use of @Column is optional
 - If not specified, the column name is the same name as Java field
 - In general, I don't recommend this approach
-	- If you refactor the Jaca code, then it will not match existing database columns
+	- If you refactor the Java code, then it will not match existing database columns
 	- This is a breaking change and you will need to update database column
 - Same applies to @Table database table name is same as the class
 
@@ -130,7 +133,7 @@ public class Student {
 
 
 ## 근데 프로젝트에서 특정한 id를 사용해야되고 제약이 많고 뭐 그럴 경우에는 어떡하지?
-- At my company, on out project, nothing that JPA provides out of the box matches our requirement.
+- If at my company, on our project, nothing that JPA provides out of the box matches our requirement.
 	- You can define your own CUSTOM generation strategy
 	- Create implementation of ***org.hibernate.id.IdentifierGenerator***
 	- Override the method: ***public Serializable generate(...)***

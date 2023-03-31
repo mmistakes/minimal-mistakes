@@ -10,6 +10,7 @@ sidebar:
 
 ---
 # Create database tables: student
+- Hibernate/JPA CRUD (9)
 - Previously, we created database tables by running a SQL script
 - JPA/Hibernate provides an option to automagically create database tables
 - Creates tables based on Java code with JPA/Hibernate annotations
