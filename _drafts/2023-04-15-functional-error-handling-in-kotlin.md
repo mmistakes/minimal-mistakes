@@ -136,6 +136,9 @@ Somebody can say that the JVM also has checked exceptions, and that we can use t
 fun <A, B> map(list: List<A>, f: (A) -> B): List<B>
 ```
 
-TODO
+As we might guess, it's impossible to use checked exceptions for the function `f`, since it must to stay generic. The only possible way is to add some very generic exception to the signature of the function, such as a `RuntimeException` or an `Exception`, which is not very useful.
+
+So, we understood that we need a better approach to handle errors, at least in functional programming. Let's see how we can do it.
+
 
 
