@@ -114,9 +114,28 @@ class JobsService(private val jobs: Jobs) {
 }
 ``` 
 
-If we execute this code in our program, we clearly obtain a different result, than the previous execution:
+If we execute this code in our program, we clearly obtain a different result than the previous execution. In fact, the exception is now caught by the `try-catch` block, and the program returns an empty list.
 
 ```text
 Best jobs on the market are: []
 ```
+
+We've just proof that exceptions don't follow the substitution principle. In other words, exceptions are not referentially transparent, and can for this reason are considered a side effect. In other words, expressions throwing exceptions can't be reasoned about without a context of execution, aka the code around the expression. So, when we use expression, we also lose the locality of reasoning, and add a lot of cognitive load to understand the code.
+
+However, there is one more aspect we don't like about exceptions. Let's take the signature of the `getHighlyPaidJobs method:
+
+```kotlin
+fun getHighlyPaidJobs(minimumSalary: Salary): List<Job>
+```
+
+We expect the method to take a `Salary` object as input, and return list of `Job` objects. No reference to the exception is present in the signature. As developers, we want that the compilers help us to avoid errors. However, in this case, we're not aware that the method can throw an exception, and the compiler can not help us in any way. The only place where we become aware of the exception is during runtime execution, which is a bit late.
+
+Somebody can say that the JVM also has checked exceptions, and that we can use them to avoid the problem. In fact, if a method declares to throw a checked exception, the compiler will force us to handle it. However, checked exceptions don't work well with higher-order functions, which are a fundamental part of functional programming. In fact, if we want to use a higher-order function together with checked exception, we need to declare the exception in the signature of the lambda function, which is not feasible. Take the `map` function of any collection type:
+
+```kotlin
+fun <A, B> map(list: List<A>, f: (A) -> B): List<B>
+```
+
+TODO
+
 
