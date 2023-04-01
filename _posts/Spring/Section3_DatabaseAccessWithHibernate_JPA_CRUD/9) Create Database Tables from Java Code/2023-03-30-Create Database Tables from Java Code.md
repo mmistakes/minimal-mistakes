@@ -20,15 +20,24 @@ sidebar:
 ## Configuration
 - In Spring Boot configuration file:application.properties
 ```java
+# Add logging configs to display SQL statements  
+
+# Log SQL statements  
+logging.level.org.hibernate.SQL=debug  
+
+# Log values for SQL statement  
+logging.level.org.hibernate.orm.jdbc.bind=trace
+
+# # Configure JPA/Hibernate to auto create the tables
 spring.jpa.hibernate.ddl-auto=create
+-> DROP & CREATE evey time
 ```
 - When you run your app, JPA/Hibernate will ***drop*** tables then ***create*** them
 - Based on the JPA/Hibernate annotations in your Java code
 
 ## Creating Tables based on Java Code
-```java
+![](https://i.imgur.com/OXbE00U.png)
 
-```
 
 ## Configuration - application.properties
 
@@ -62,7 +71,7 @@ spring.jpa.hibernate.ddl-auto=update
 - However, will ALTER database schema based on latest code updates
 - Be VERY careful here ... only use for basic projects
 
-## Warning
+### Warning
 
 ```java
 spring.jpa.hibernate.ddl-auto=create
@@ -90,3 +99,6 @@ spring.jpa.hibernate.ddl-auto=create
 	- The SQL scripts can be customized and fine-turned for complex database designs
 	- The SQL scripts can be version-controlled
 	- Can also work with schema migration tools such as Liquibase and Flyway
+
+개인프로젝트가 아닌 이상
+웬만하면 SQL scripts 사용하는게 여러모로 좋다.

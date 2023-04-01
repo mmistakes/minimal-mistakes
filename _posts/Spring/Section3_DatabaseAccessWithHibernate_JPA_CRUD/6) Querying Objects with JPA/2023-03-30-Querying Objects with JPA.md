@@ -2,7 +2,7 @@
 layout: single
 title: "Querying Objects with JPA"
 categories: Spring
-tag: [Java,JPA,JPQL,"??"]
+tag: [Java,JPA,JPQL]
 toc: true
 toc_sticky: true
 author_profile: false

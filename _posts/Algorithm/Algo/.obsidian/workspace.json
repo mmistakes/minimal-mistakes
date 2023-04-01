@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "83ef656fc6b44e35",
+            "id": "01145595c876ecb1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lv.0/2023-03-31-sum numbers.md",
+                "file": "Lv.0/Day_2/2023-04-01-division.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 237.5046501159668,
-    "collapsed": true
+    "width": 237.5046501159668
   },
   "right": {
     "id": "3b2593f41b8f88cb",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lv.0/2023-03-31-sum numbers.md",
+                "file": "Lv.0/Day_2/2023-04-01-division.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lv.0/2023-03-31-sum numbers.md",
+                "file": "Lv.0/Day_2/2023-04-01-division.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lv.0/2023-03-31-sum numbers.md"
+                "file": "Lv.0/Day_2/2023-04-01-division.md"
               }
             }
           }
@@ -147,11 +146,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "83ef656fc6b44e35",
+  "active": "01145595c876ecb1",
   "lastOpenFiles": [
-    "Lv.0/2023-03-31-sum numbers.md",
-    "Lv.0/2023-03-31-sum numbers.md",
-    "Lv.0/2023-03-31-compare numbers.md",
+    "Lv.0/Day_2/2023-04-01-fraction.md",
+    "Lv.0/Day_2/2023-04-01-division.md",
+    "Lv.0/Day_1/2023-04-01-reminder.md",
+    "Lv.0/Day_2/2023-03-31-compare numbers.md",
+    "Lv.0/Day_1/2023-03-31-sum numbers.md",
+    "Lv.0/Day_2",
+    "Lv.0/Day_1",
+    "Lv.0/Day_1/2023-04-01-times numbers.md",
+    "Untitled.md",
+    "Lv.0/Day_1/2023-04-01-sub numbers.md",
     "Pasted image 20230331012122.png",
     "Lv.0"
   ]
