@@ -65,6 +65,9 @@ Tai Nguyen:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/taidng"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/taidnguyen"
 
 Patrick Chao:
   name             : "Patrick Chao"
