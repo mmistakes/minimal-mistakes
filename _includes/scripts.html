@@ -4,6 +4,7 @@
   {% endfor %}
 {% else %}
   <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
 {% endif %}
 
 {% if site.search == true or page.layout == "search" %}
@@ -25,4 +26,11 @@
   {% for script in site.after_footer_scripts %}
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
+{% endif %}
+
+{% if page.mathjax %}
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" defer
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 {% endif %}

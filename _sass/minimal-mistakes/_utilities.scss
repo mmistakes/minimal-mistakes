@@ -108,7 +108,7 @@ body:hover .visually-hidden button {
    ========================================================================== */
 
 .task-list {
-  padding:0;
+  padding: 0;
 
   li {
     list-style-type: none;
@@ -176,6 +176,20 @@ body:hover .visually-hidden button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* image width */
+
+.width-half {
+  width: 50%;
+}
+
+.width-quarter {
+  width: 25%;
+}
+
+.width-sm {
+  width: 15%;
 }
 
 /* file page content container */
@@ -388,7 +402,7 @@ body:hover .visually-hidden button {
 .greedy-nav__toggle {
   &:before {
     @supports (pointer-events: none) {
-      content: '';
+      content: "";
       position: fixed;
       top: 0;
       left: 0;

@@ -6,8 +6,8 @@ div.highlighter-rouge,
 figure.highlight {
   position: relative;
   margin-bottom: 1em;
-  background: $base00;
-  color: $base05;
+  background: #9aa0a4;
+  color: #fff;
   font-family: $monospace;
   font-size: $type-size-6;
   line-height: 1.8;
@@ -318,7 +318,8 @@ figure.highlight {
 }
 
 .gist {
-  th, td {
+  th,
+  td {
     border-bottom: 0;
   }
 }
