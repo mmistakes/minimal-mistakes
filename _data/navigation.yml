@@ -4,6 +4,16 @@ main:
     url: /categories/
   - title: "태그 | Tag"
     url: /tags/
+  - title: "검색 | Search"
+    url: /search/
+
+docs:
+  - title: "decembaek | Developer"
+    children:
+      - title: "카테고리 | Category"
+        url: /categories/
+      - title: "태그 | Tag"
+        url: /tags/python/
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
