@@ -108,7 +108,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "개발 낙서장 & 일상"
   location         : "suwon"
-  email            : "yjy850146@gmail.com"
+  # email            : "yjy850146@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
