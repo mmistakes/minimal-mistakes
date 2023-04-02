@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fc932234a5e7d2d2",
+            "id": "d5c30a9722c394c4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Section4_REST CRUD APIs/3) Spring Boot REST Controller/2023-04-02-Spring Boot REST Controller.md",
+                "file": "Section4_REST CRUD APIs/5) Spring REST - Path Variables/2023-04-02-Spring REST Path Variables.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b0a300ac70928788",
+            "id": "e42838fea94dcb26",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Section4_REST CRUD APIs/3) Spring Boot REST Controller/2023-04-02-Spring Boot REST Controller.md",
+                "file": "Section4_REST CRUD APIs/6) Spring REST - Exception Handling/2023-04-02-6) Spring REST Exception Handling.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 307.50206756591797
+    "width": 307.50206756591797,
+    "collapsed": true
   },
   "right": {
     "id": "3c82fc008517e921",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Section4_REST CRUD APIs/3) Spring Boot REST Controller/2023-04-02-Spring Boot REST Controller.md",
+                "file": "Section4_REST CRUD APIs/6) Spring REST - Exception Handling/2023-04-02-6) Spring REST Exception Handling.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Section4_REST CRUD APIs/3) Spring Boot REST Controller/2023-04-02-Spring Boot REST Controller.md",
+                "file": "Section4_REST CRUD APIs/6) Spring REST - Exception Handling/2023-04-02-6) Spring REST Exception Handling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Section4_REST CRUD APIs/3) Spring Boot REST Controller/2023-04-02-Spring Boot REST Controller.md"
+                "file": "Section4_REST CRUD APIs/6) Spring REST - Exception Handling/2023-04-02-6) Spring REST Exception Handling.md"
               }
             }
           }
@@ -147,7 +148,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 274.5
+    "width": 434.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -160,11 +161,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b0a300ac70928788",
+  "active": "e42838fea94dcb26",
   "lastOpenFiles": [
-    "Section4_REST CRUD APIs/2) Spring Boot REST HTTP/2023-04-01-Spring Boot REST HTTP.md",
+    "Section4_REST CRUD APIs/5) Spring REST - Path Variables/2023-04-02-Spring REST Path Variables.md",
+    "Section4_REST CRUD APIs/6) Spring REST - Exception Handling/2023-04-02-6) Spring REST Exception Handling.md",
+    "Section4_REST CRUD APIs/6) Spring REST - Exception Handling",
     "Section4_REST CRUD APIs/4) JSON Jackson Data Binding/2023-04-02-JSON Jackson Data Binding.md",
     "Section4_REST CRUD APIs/3) Spring Boot REST Controller/2023-04-02-Spring Boot REST Controller.md",
+    "Section4_REST CRUD APIs/5) Spring REST - Path Variables",
+    "Section4_REST CRUD APIs/2) Spring Boot REST HTTP/2023-04-01-Spring Boot REST HTTP.md",
     "Section4_REST CRUD APIs/4) JSON Jackson Data Binding",
     "Section3_DatabaseAccessWithHibernate_JPA_CRUD/9) Create Database Tables from Java Code/2023-03-30-Create Database Tables from Java Code.md",
     "Section4_REST CRUD APIs/3) Spring Boot REST Controller",
@@ -185,8 +190,6 @@
     "Section3_DatabaseAccessWithHibernate_JPA_CRUD/9) Create Database Tables from Java Code",
     "Section3_DatabaseAccessWithHibernate_JPA_CRUD/8) Deleteing Objects with JPA",
     "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Transactions with JPA",
-    "Section3_DatabaseAccessWithHibernate_JPA_CRUD/7) Updating Objects with JPA",
-    "Section3_DatabaseAccessWithHibernate_JPA_CRUD/6) Querying Objects with JPA",
     "Section2_IoCAndDependency/Bean Lifecycle Methods/2023-03-29-Bean lifecycle Methods.md",
     "Section2_IoCAndDependency/Java Config Bean/2023-03-29-Java Config Bean.md",
     "Section2_IoCAndDependency/Bean Scopes/2023-03-28-Beans Scopes.md",
@@ -196,8 +199,6 @@
     "Section2_IoCAndDependency/Inversion of Control (IoC)/2023-03-16-Inversion of Control (IoC).md",
     "Section2_IoCAndDependency/Inversion of Control (IoC)/2023-03-24-Setter Injection.md",
     "Section2_IoCAndDependency/Inversion of Control (IoC)/2023-03-24-Field Injection.md",
-    "Section2_IoCAndDependency/Inversion of Control (IoC)/2023-03-24-Component Scanning.md",
-    "Section2_IoCAndDependency/Inversion of Control (IoC)/2023-03-24-Compare Injection.md",
     "2023-03-17-21-19-32-image.png"
   ]
 }

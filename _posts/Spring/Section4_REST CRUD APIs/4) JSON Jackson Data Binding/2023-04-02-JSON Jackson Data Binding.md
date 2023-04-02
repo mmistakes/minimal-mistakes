@@ -74,7 +74,7 @@ sidebar:
 
 ### Step 2: Create @RestController
 
-![](https://i.imgur.com/c4gQEcP.png)
+![](https://i.imgur.com/Kd2uDlg.png)
 
 
 ### Convert Java POJO to JSON
