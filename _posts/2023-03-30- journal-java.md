@@ -24,8 +24,8 @@ title: "면접 준비: Java"
 
 - 개발자가 java 파일을 생성
 - build 실행
-- Java Compiler의 javac 명령어를 통해 바이트코드를 생성
-- Class Loader를 통해 Jvm 메모리 내로 로드
+- Java Compiler의 javac 명령어를 통해 바이트코드(class 파일)를 생성
+- Class Loader를 통해 class파일을 JVM 메모리에서 로드
 - 실행엔진을 통해 컴퓨터가 읽을 수 있는 기계어로 해석
 
 ---
@@ -107,7 +107,7 @@ title: "면접 준비: Java"
 
 ---
 
-### <mark style='background-color: #fff5b1'><font color='red'>가비지 컬렉션</font></mark>
+### <mark style='background-color: #fff5b1'><font color='#951d47'>가비지 컬렉션</font></mark>
 
 - 가비지 컬렉션은 JVM의 메모리 관리 기법 중 하나로 시스템에서 동적으로 할당됐던 메모리 영역 중에서 필요없어진 메모리 영억을 회수하여 메모리를 관리해주는 기법
 - 실행 과정
