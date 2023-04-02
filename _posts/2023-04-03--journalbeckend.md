@@ -1,5 +1,5 @@
 ---
-title: "백엔드"
+title: "면접 준비: 백엔드"
 
 ---
 
@@ -98,4 +98,5 @@ title: "백엔드"
   - Client - Server 구조
   - 계층형 구조
 
-참조: [NHN Cloud REST API](https://meetup.nhncloud.com/posts/92)
+참조
+- [NHN Cloud REST API](https://meetup.nhncloud.com/posts/92)
