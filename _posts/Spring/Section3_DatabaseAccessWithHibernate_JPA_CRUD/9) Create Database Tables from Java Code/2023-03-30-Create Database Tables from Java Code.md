@@ -19,6 +19,8 @@ sidebar:
 
 ## Configuration
 - In Spring Boot configuration file:application.properties
+
+
 ```java
 # Add logging configs to display SQL statements  
 
