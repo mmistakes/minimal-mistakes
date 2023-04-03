@@ -203,8 +203,8 @@ Well, Kotlin nullable type have nothing to envy to the Java `Optional` type. In 
 ```kotlin
 fun getJobsByCompanyMap(): Map<String, List<Job>> {
     val jobs = jobs.findAll()
-    jobs?.let { jobs ->
-        return jobs.groupBy { job -> job.company.name }
+    return jobs?.let {
+        it.groupBy { job -> job.company.name }
     } ?: return mapOf()
 }
 ```
