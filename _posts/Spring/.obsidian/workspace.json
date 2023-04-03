@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d5c30a9722c394c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Section4_REST CRUD APIs/5) Spring REST - Path Variables/2023-04-02-Spring REST Path Variables.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e42838fea94dcb26",
             "type": "leaf",
             "state": {
@@ -30,9 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b67ffd83ec2d16d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Section4_REST CRUD APIs/7) Spring REST Global Exception Handling/2023-04-03-Spring REST Global Exception Handling.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9c27b041679606ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Section4_REST CRUD APIs/8) Spring REST API Design/2023-04-03-Spring REST API Design.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -82,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 307.50206756591797,
+    "width": 200,
     "collapsed": true
   },
   "right": {
@@ -99,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Section4_REST CRUD APIs/6) Spring REST - Exception Handling/2023-04-02-6) Spring REST Exception Handling.md",
+                "file": "Section4_REST CRUD APIs/8) Spring REST API Design/2023-04-03-Spring REST API Design.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -116,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Section4_REST CRUD APIs/6) Spring REST - Exception Handling/2023-04-02-6) Spring REST Exception Handling.md",
+                "file": "Section4_REST CRUD APIs/8) Spring REST API Design/2023-04-03-Spring REST API Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Section4_REST CRUD APIs/6) Spring REST - Exception Handling/2023-04-02-6) Spring REST Exception Handling.md"
+                "file": "Section4_REST CRUD APIs/8) Spring REST API Design/2023-04-03-Spring REST API Design.md"
               }
             }
           }
@@ -148,7 +160,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5
+    "width": 335.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,10 +173,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e42838fea94dcb26",
+  "active": "9c27b041679606ec",
   "lastOpenFiles": [
-    "Section4_REST CRUD APIs/5) Spring REST - Path Variables/2023-04-02-Spring REST Path Variables.md",
+    "Section4_REST CRUD APIs/7) Spring REST Global Exception Handling/2023-04-03-Spring REST Global Exception Handling.md",
+    "Section4_REST CRUD APIs/8) Spring REST API Design/2023-04-03-Spring REST API Design.md",
+    "Section4_REST CRUD APIs/8) Spring REST API Design",
     "Section4_REST CRUD APIs/6) Spring REST - Exception Handling/2023-04-02-6) Spring REST Exception Handling.md",
+    "Section4_REST CRUD APIs/7) Spring REST Global Exception Handling",
+    "Section4_REST CRUD APIs/5) Spring REST - Path Variables/2023-04-02-Spring REST Path Variables.md",
     "Section4_REST CRUD APIs/6) Spring REST - Exception Handling",
     "Section4_REST CRUD APIs/4) JSON Jackson Data Binding/2023-04-02-JSON Jackson Data Binding.md",
     "Section4_REST CRUD APIs/3) Spring Boot REST Controller/2023-04-02-Spring Boot REST Controller.md",
@@ -188,8 +204,6 @@
     "Section3_DatabaseAccessWithHibernate_JPA_CRUD/2) Setting Up Development Environment/2023-03-29-Setting Up Development Environment.md",
     "Section3_DatabaseAccessWithHibernate_JPA_CRUD/1) Hibernare_JPA_Overview/2023-03-29-Hibernate JPA Overview.md",
     "Section3_DatabaseAccessWithHibernate_JPA_CRUD/9) Create Database Tables from Java Code",
-    "Section3_DatabaseAccessWithHibernate_JPA_CRUD/8) Deleteing Objects with JPA",
-    "Section3_DatabaseAccessWithHibernate_JPA_CRUD/Transactions with JPA",
     "Section2_IoCAndDependency/Bean Lifecycle Methods/2023-03-29-Bean lifecycle Methods.md",
     "Section2_IoCAndDependency/Java Config Bean/2023-03-29-Java Config Bean.md",
     "Section2_IoCAndDependency/Bean Scopes/2023-03-28-Beans Scopes.md",
@@ -197,8 +211,6 @@
     "Section2_IoCAndDependency/Primary/2023-03-28-@Primary annotation.md",
     "Section2_IoCAndDependency/Qualifiers/2023-03-24-Annotation Autowiring and Qualifiers.md",
     "Section2_IoCAndDependency/Inversion of Control (IoC)/2023-03-16-Inversion of Control (IoC).md",
-    "Section2_IoCAndDependency/Inversion of Control (IoC)/2023-03-24-Setter Injection.md",
-    "Section2_IoCAndDependency/Inversion of Control (IoC)/2023-03-24-Field Injection.md",
     "2023-03-17-21-19-32-image.png"
   ]
 }
