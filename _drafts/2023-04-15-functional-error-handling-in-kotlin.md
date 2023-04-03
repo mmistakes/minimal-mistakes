@@ -144,7 +144,7 @@ So, we understood that we need a better approach to handle errors, at least in f
 
 If we're not interested in the cause of the error, we can model the fact that an operation failed by returning a `null` value. In other languages returning a `null` is not considered a best practice. However, in Kotlin, the null check is built-in the language, and the compiler can help us to avoid errors. In Kotlin, we have Nullable Types. A Nullable Type is a type that can be either a value of the type or `null`. For example, the type `String?` is a nullable type, and it can be either a `String` or `null`.
 
-When we work with Nullable types, the compiler forces us to handle the case when the value is `null`. For example, let's change our main example trying to handle error using nullable types:
+When we work with nullable types, the compiler forces us to handle the case when the value is `null`. For example, let's change our main example trying to handle error using nullable types. First, we change the signature of the `findAll` method in the `Jobs` interface, letting it to return a nullable list, `List<Job>?`:
 
 ```kotlin
 interface NullableJobs {
@@ -154,6 +154,11 @@ interface NullableJobs {
 class LiveNullableJobs : NullableJobs {
     override fun findAll(): List<Job>? = null
 }
+```
+
+Then, we try to use it in the `getHighlyPaidJobs` method, as we did previously:
+
+```kotlin
 
 class NullableJobsService(private val jobs: NullableJobs) {
     fun getHighlyPaidJobs(minimumSalary: Salary): List<Job> =
@@ -168,5 +173,11 @@ If we try to compile the code, we get the following error:
 [ERROR] .../functional-error-handling-in-kotlin/src/main/kotlin/in/rcard/FunctionalErrorHandling.kt:[38,23] Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type List<Job>?
 ```
 
-TODO
+The compiler is warning us that we forgot to handle the case in which the list is `null`. As we can see, the compiler is helping us to avoid errors. Let's fix the code:
 
+```kotlin
+fun getHighlyPaidJobs(minimumSalary: Salary): List<Job> =
+        jobs.findAll()?.filter { it.salary > minimumSalary } ?: listOf()
+```
+
+Here, we used the `?.`operator, which allows to call a method on a nullable object only if it's not `null`. Finally, we use the "elvis" operator as a fallback value, in case the list is `null`.
