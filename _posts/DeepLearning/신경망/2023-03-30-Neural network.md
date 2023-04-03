@@ -85,6 +85,79 @@ def sigmoid(x):
 >6. 즉 선형 함수는 은닉층이 없음
 >7. 따라서 반드시 비선형 함수를 사용해야함
 
+##### 추가
+> 1. 3층 네트워크를 표현할 때 XOR은 뭐냐라고 질문을 받았었는데 XOR 게이트 같은 경우 곡선을 사용하기 때문에 이 부분은 비선형 영역이다.
+> 2. 하지만 XOR 게이트는 선형 함수로만 구성되어 있으며 이는 위와 같이 은닉층이 없는 네트워크로 표현할 수 있다. -> 층을 아무리 깊게 쌓아도 변화가 크게 없다.
+> 4. 또한 퍼셉트론과 신경망의 차이는 퍼셉트론은 가중치 값을 적절하게 정하는 작업을 여전히 사람이 해야된다.
+> 5. 이런 가중치 매개변수의 적절한 값을 데이터로부터 자동으로 학습하게 한 것이 신경망이다.
+> 6. 그러기 위해서는 선형 함수가 아닌 비선형 함수가 필요하다.
+> 7. 그리고 ReLU는 선으로 보여서 그런지 ReLU는 뭐냐고 물었는데
+> 8. ReLU는 ***비선형 함수*** 며 이는 비선형 함수는 직선 1개로는 그릴 수 없는 함수를 말한다.
+
+
+###### Why is Multi-layer Perceptron useless to use linear function for hidden layers?
+Multi-layer Perceptrons (MLPs) are designed to learn complex non-linear relationships between inputs and outputs. The key to their success is the ability to model non-linear transformations through the use of non-linear activation functions in the hidden layers.
+
+If a linear activation function is used in the hidden layers, then the output of the MLP will also be linear. This is because a linear combination of linear functions is still a linear function. Therefore, using a linear activation function in the hidden layers of an MLP essentially reduces the network to a single-layer perceptron, which can only model linear relationships between inputs and outputs.
+
+This limitation of MLPs with linear activation functions in the hidden layers can be seen mathematically as well. A linear activation function such as the identity function (f(x) = x) would result in a linear combination of the input features, which could be expressed as a matrix multiplication. In this case, the MLP would essentially be a linear regression model, which is not capable of modeling complex non-linear relationships.
+
+Therefore, to make the most of the MLP's ability to model complex non-linear relationships, it is necessary to use non-linear activation functions in the hidden layers. Examples of popular non-linear activation functions include the sigmoid function, the hyperbolic tangent function, and the Rectified Linear Unit (ReLU) function.
+
+> - 숨겨진 계층에서 선형 활성화 함수를 사용하면 MLP의출력도 선형이 된다.
+> - 왜냐하면 선형 함수의 선형 조합은 여전히 선형 함수이기 때문이다.
+> - 따라서 히든 레이어에서 선형활성화 함수를 사용하면 하나의 단층 퍼셉트론으로 축소시키게 되며 이는 입력과 출력 사이의 선형 관계만을 모델링할 수 있는 선형 회귀모델로 제한된다.
+
+
+##### 퍼셉트론과 신경망의차이는? 
+신경망과 퍼셉트론은 모두 인공지능 분야에서 사용되는 기계학습 알고리즘 중 하나다. 하지만 이 둘은 다르게 동작하며, 구조와 기능 측면에서 차이가 있다.
+
+###### 퍼셉트론
+
+1. 퍼셉트론은 하나의 층(layer)으로 구성된 간단한 신경망 알고리즘이다. 
+2. 퍼셉트론은 하나의 입력층과 하나의 출력층으로 구성되며, 입력층과 출력층 사이에는 가중치(weight)와 바이어스(bias)가 있다. 
+3. 퍼셉트론은 이러한 가중치와 바이어스를 조정하여 입력 값과 원하는 출력 값을 매핑할 수 있다. 
+4. 하지만 퍼셉트론은 하나의 층에서만 작동하기 때문에 비교적 단순한 문제만을 해결할 수 있습니다.
+
+###### 신경망
+
+1. 반면, 신경망은 여러 개의 층으로 구성된 더 복잡한 인공신경망 구조다. 
+2. 신경망은 입력층, 출력층, 그리고 중간에 여러 개의 숨겨진(hidden) 층이 있다. 
+3. 각 층은 여러 개의 노드(node)로 구성되며, 노드 간의 연결은 가중치와 바이어스로 표현된다. 
+4. 신경망은 이러한 가중치와 바이어스를 조정하여 입력 값과 원하는 출력 값을 매핑할 수 있다. 
+5. 신경망은 다양한 유형과 구조의 층을 사용하여 복잡한 문제를 해결할 수 있다.
+
+요약하면, 퍼셉트론은 단층으로 구성된 간단한 신경망 알고리즘이며, 신경망은 여러 층으로 구성된 복잡한 인공신경망 구조입니다.
+
+##### 그럼 다층 퍼셉트론과 신경망의 차이는?
+
+다층 퍼셉트론(Multi-layer Perceptron, MLP)과 신경망(Deep Neural Network, DNN)은 모두 다층으로 구성된 인공신경망 구조입니다. 그러나 이 둘은 구조와 기능적인 면에서 차이가 있습니다.
+
+###### 다층 퍼셉트론
+
+1. MLP는 입력층, 숨겨진 층(hidden layer), 출력층으로 구성되며, 숨겨진 층에는 여러 개의 뉴런이 포함된다. 이러한 뉴런은 입력층에서 들어오는 신호에 대해 가중치를 적용하고, 비선형 함수인 활성화 함수를 거쳐 출력값을 계산한다. 
+2. MLP는 숨겨진 층이 한 개 이상이기 때문에, 더 복잡한 비선형 함수를 모델링할 수 있다.
+
+
+###### 신경망
+
+1. DNN은 MLP와 같은 구조를 가지지만, 더 많은 층과 복잡한 구조를 가진다. DNN은 Convolutional Neural Network(CNN), Recurrent Neural Network(RNN), Long Short-Term Memory(LSTM) 등 다양한 유형의 층을 포함할 수 있으며, 이러한 다양한 층을 결합하여 복잡한 문제를 해결한다.
+2. 따라서, MLP는 MLP에서 숨겨진 층이 하나 이상인 간단한 형태의 신경망이며, DNN은 MLP와 같은 다층 구조를 가지고 있지만, 보다 복잡한 구조와 다양한 유형의 층을 가진 인공신경망 구조다.
+
+##### 다층 퍼셉트론에서 활성화 함수를 선형함수만 쓰는 이유는?
+
+***다층 퍼셉트론에서는 활성화 함수로 선형 함수를 사용하는 것이 큰 의미가 없다***. 
+이는 다층 퍼셉트론에서 선형 함수를 사용할 경우, 여러 층을 쌓아도 결국 하나의 선형 함수가 되어버리기 때문이다.
+
+예를 들어, 두 개의 숨겨진 층이 있는 다층 퍼셉트론에서 모든 층의 활성화 함수가 선형 함수인 경우, 다음과 같이 나타낼 수 있다.
+
+	y = W3(W2(W1x + b1) + b2) + b3
+
+위 식에서 W1, W2, W3은 가중치, b1, b2, b3은 편향을 나타냅니다. 이 식은 결국 입력 x에 대한 선형 함수가 되기 때문에, 다층 구조를 가진 이유가 없어진다.
+
+따라서, 다층 퍼셉트론에서는 비선형 함수인 활성화 함수를 사용하여 모델의 복잡성을 높이고, 더 다양한 패턴을 모델링할 수 있도록 한다. 
+예를 들어, 시그모이드 함수, 하이퍼볼릭 탄젠트 함수, 렐루(Rectified Linear Unit, ReLU) 함수 등의 비선형 함수를 활성화 함수로 사용할 수 있다.
+
 ### ReLU 함수
 - 요즘에는 시그모이드보다는 ReLU 함수를 주로 쓴다.
 - 왜냐하면 여로모로 성능이 시그모이드보다 좋다.
@@ -284,3 +357,5 @@ print(np.sum(y)) -> 1.0
 - 그림처럼 출력층 뉴런은 위에서부터 차례로 숫자 0,1,2,3, ....9에 대응하며, 뉴런의 색깔 농도가 해당 뉴런의 출력 값의 크기를 의미한다.
 - 여기서 색이 가장 짙은 뉴런 y_2가 가장 큰 값을 출력한다.
 - 그래서 이 신경망이 선택한 클래스 y_2 즉 입력 이미지 숫자 '2'로 판단했음을 의미한다.
+
+출처 : https://www.baeldung.com/cs/mlp-vs-dnn
