@@ -180,4 +180,33 @@ fun getHighlyPaidJobs(minimumSalary: Salary): List<Job> =
         jobs.findAll()?.filter { it.salary > minimumSalary } ?: listOf()
 ```
 
-Here, we used the `?.`operator, which allows to call a method on a nullable object only if it's not `null`. Finally, we use the "elvis" operator as a fallback value, in case the list is `null`.
+Here, we used the `?.`operator, which allows to call a method on a nullable object only if it's not `null`. Finally, we use the "elvis" operator, `?:`, as a fallback value, in case the list is `null`. With this new bulletproof code, we can now change the `main` method:
+
+```kotlin
+fun main() {
+    val jobsService = NullableJobsService(LiveNullableJobs())
+    val highlyPaidJobs = jobsService.getHighlyPaidJobs(Salary(100_000.00))
+    println("Best jobs on the market are: $highlyPaidJobs")
+}
+```
+
+If we run the program, we get the expected output, without any exception:
+
+```text
+Best jobs on the market are: []
+```
+
+At first glance, using nullable value seems to be less composable than using, for example, the Java `Optional` type. This last type has a lot of functions, `map`, `flatMap`, or `filter`, which make it easy to compose and chain operations.
+
+Well, Kotlin nullable type have nothing to envy to the Java `Optional` type. In fact, the Kotlin standard library provides a lot of functions to handle nullable types. For example, the `Optional.map` function is equivalent to using the `let` scoping function. For example, let's try to get the jobs by company, using the `let` function:
+
+```kotlin
+fun getJobsByCompanyMap(): Map<String, List<Job>> {
+    val jobs = jobs.findAll()
+    jobs?.let { jobs ->
+        return jobs.groupBy { job -> job.company.name }
+    } ?: return mapOf()
+}
+```
+
+As we can see, mixing up the `let` function with the `?.` operator, we can easily map a nullable value.
