@@ -209,4 +209,54 @@ fun getJobsByCompanyMap(): Map<String, List<Job>> {
 }
 ```
 
-As we can see, mixing up the `let` function with the `?.` operator, we can easily map a nullable value.
+As we can see, mixing up the `let` function with the `?.` operator, we can easily map a nullable value. In a similar way, we can simulate the `filter` function on a nullable value. In this case, we'll use the `?.` operator and the `takeIf` function. So, let's add a new function to our `NullableJobs` interface and a possible implementation on the live object:
+
+```kotlin
+interface NullableJobs { 
+    // ...
+    fun findFirstByCompany(company: Company): Job?
+}
+
+class LiveNullableJobs : NullableJobs {
+    // ...
+    override fun findFirstByCompany(company: Company): Job? =
+        findAll()?.firstOrNull { it.company == company }
+        
+}
+```
+
+Now, we can use the `findFirstByCompany` to implement a method in the service that takes the first job by company if it has a minimum salary:
+
+```kotlin
+class NullableJobsService(private val jobs: NullableJobs) {
+    // ...
+    fun getHighlyPaidJobByCompany(company: Company, minimumSalary: Salary): Job? {
+        val job = jobs.findFirstByCompany(company)
+        return job?.takeIf { it.salary > minimumSalary }
+    }
+}
+```
+
+As we can see, we used the `takeIf` in association with the `?.` operator to filter the nullable value. The `takeIf` receives as parameter a lambda with receiver, where the receiver is the original type (not the nullable type). 
+
+Now, we can change the `main` method to use the new function:
+
+```kotlin
+fun main() {
+    val minimumSalary = Salary(100_000.00)
+    val jobsService = NullableJobsService(LiveNullableJobs())
+    val apple = Company("Apple")
+    val job = jobsService.getHighlyPaidJobByCompany(apple, minimumSalary)
+    job?.apply { println("One of the best job at $apple on the market is: $this") }
+        ?: println("No job at $apple on the market is worth $minimumSalary")
+}
+```
+If we run the program, we get the expected output:
+
+```text
+No job at Company(name=Apple) on the market is worth Salary(value=100000.0)
+```
+
+Although nullable types offer a good degree of compositionality and a full support by the Kotlin language itself, the community of functional programmers is not very happy with this approach. The reason is that nullable types still require some boilerplate code to handle the case when the value is `null`.
+
+Fortunately, Kotlin and some of its libraries provide a more functional approach to handle errors. Let's see how we can use it.
