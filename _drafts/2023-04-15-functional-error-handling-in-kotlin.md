@@ -260,3 +260,11 @@ No job at Company(name=Apple) on the market is worth Salary(value=100000.0)
 Although nullable types offer a good degree of compositionality and a full support by the Kotlin language itself, the community of functional programmers is not very happy with this approach. The reason is that nullable types still require some boilerplate code to handle the case when the value is `null`.
 
 Fortunately, Kotlin and some of its libraries provide a more functional approach to handle errors. Let's see how we can use it.
+
+## 4. Handling Errors with `Option`
+
+Unlike Java, Kotlin doesn't provide a type for handling optional values. As we saw in the previous section, Kotlin creators preferred to introduce nullable values instead of having an `Option<T>` type. 
+
+However, the Kotlin community has created a library called `Arrow` that provides a lot of functional programming constructs, including an `Option` type. In the set up section, we already imported the dependency from Arrow, so we can use it in our code.
+
+TODO
