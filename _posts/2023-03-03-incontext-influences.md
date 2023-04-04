@@ -55,45 +55,48 @@ case_study:
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-> In-context learning is a powerful paradigm but its sensitivity to the input prompt makes it difficult to trust in practice. 
-We propose an influence-based example selection method that links the presence of examples directly to good ICL performance through the comptuation of in-context influences.
+> In-context learning is a powerful paradigm enabled with large language models. However, its sensitivity to the input prompt makes it difficult to trust in practice. 
+We propose an influence-based example selection method that links the presence of examples directly to good ICL performance 
+through the use of in-context influences.
 
 In recent advances, large language models (LLM) have offered a natural interface for users to interact with AI through the mode of **prompting**.
-By describing their needs in natural language, human can steer language models to generate a desired output, including writing computer programs, taking [standardized exams](https://www.cnn.com/2023/01/26/tech/chatgpt-passes-exams/index.html), 
+By describing their needs in natural language, human can steer language models to generate certain desired outputs such as writing computer programs, taking [standardized exams](https://www.cnn.com/2023/01/26/tech/chatgpt-passes-exams/index.html), 
 or coming up with original [Thanksgiving dinner recipes](https://www.nytimes.com/2022/11/04/dining/ai-thanksgiving-menu.html).
 
-To elicit more performance out of language models, the NLP research community has identified a bag of "tricks" for prompting.
-For example, one can help a model generate more precise outputs by specifying a task [instruction](https://arxiv.org/abs/2203.02155) or asking the models to think [step-by-step](https://arxiv.org/abs/2201.11903).
-This study focuses on another common, yet powerful approach to prompting called **In-context learning** (ICL).
+To elicit better performance out of LLMs, the research community has identified a bag of "tricks" for prompting.
+One can help a model generate more precise outputs by outlining a detailed task [instruction](https://arxiv.org/abs/2203.02155) or 
+asking the model to think [step-by-step](https://arxiv.org/abs/2201.11903).
+in this study, we focus on another common, yet powerful approach to prompting called *In-context learning* (ICL).
 
 ### Few-shot ICL
 ICL is originally introduced with the release of [GPT-3](https://arxiv.org/abs/2005.14165).
 This prompting paradigm involves providing the model with a set of high-quality examples (few-shot) and asking it to generate the next mostly likely text sequence.
-Compared to finetuning, ICL requires no parameter updates to the model - it "learns" to condition on given examples similar to how a human would learn when performing a task.
+Compared to finetuning, ICL requires no parameter updates to the model. 
+The model simply "learns" by conditioning on the examples provided in-context, analogous to how a human would learn when asked to perform a task.
 
-For instance, we can prompt GPT-3 to do sentiment analysis:
+As an example, we can prompt GPT-3 to do sentiment analysis:
 {% include gallery id="icl" type="center" layout="center" caption="An instance of few-shot ICL with GPT-3. Model completion is highlighted in blue." %}
 
-In the above example, GPT-3 is provided with examples for 3-shot prompting.
-The model recognizes the distribution of the inputs (restaurant reviews), the label space ("Positive" or "Negative"), the task. It correctly completes the sequence with label "Negative" on an input about the spice level of the dish.
-
+In the above prompt, we provide GPT-3 with 3 examples (3-shot) and ask it to analyze the sentiment of the last input.
+The model recognizes the distribution of the inputs (restaurant reviews), the label space ("Positive" or "Negative"), and the nature of the task. 
+It correctly completes the sequence with label "Negative".
 
 
 ### Perils of in-context learning
 
-Despite these promises, ICL comes with many known weaknesses. For example, the prompting paradigm is susceptible to
-factors such as prompt format (natural language template), example selection (variable effectiveness of demonstrations),
-and the order of in-context examples (later examples matter tend to swing model predictions) [[ACL tutorial](https://raw.githubusercontent.com/allenai/acl2022-zerofewshot-tutorial/main/acl2022-zerofewshot-tutorial.pdf)]. 
+Unfortunately , ICL comes with many known weaknesses. Its performance is susceptible to
+factors that have no relations meaningful prompt semantics or structure. These include prompt formats (the natural language template of an example), example selection (variable effectiveness of demonstrations),
+and the order of in-context examples (later examples matter tend to swing final prediction) [[ACL tutorial](https://raw.githubusercontent.com/allenai/acl2022-zerofewshot-tutorial/main/acl2022-zerofewshot-tutorial.pdf)]. 
 
 {% include gallery id="order" layout="" caption="Reordering examples flips the prediction of GPT-3." %}
 
-ICL is _brittle_. In the example above, simply reordering the examples has potentially exposed the model to recency bias.
+In other words, ICL is _brittle_. In the example above, simply reordering the examples has potentially exposed the model to recency bias.
 It wrongly predicts "Positive" by spuriously following the labels at later positions in the prompt.
-From a practicioner's perspective, given a language model, how can we understand the culprits behind poor ICL performance?
-It is unclear if the prompt, the model, or the examples themselves present the problem. 
+From a practicioner's perspective, it is difficult to pinpoint the culprit behind poor ICL performance?
+It is not lear if the prompt, the model, or the examples themselves present the problem. 
 
-In this study, we focus on example selection as basis for making few-shot ICL more robust. We propose an influence-based selection
-method that can select a set of high-performing (and stable) examples by optimizing against a performance metric.
+In this study, we focus on example selection as the basis for robustifying few-shot ICL. We propose an influence-based selection
+method that can select a set of high-performing examples against a performance metric that can generalize to test time.
 
 ### In-context influence
 Traditional ML frameworks present a variety of methods to understand how training data affects model performance.
@@ -129,7 +132,7 @@ in-context influences by leveraging [datamodels](https://arxiv.org/abs/2202.0062
 
 ### Influence-based example selection
 In the above section, we discuss the influence-based formula adapted to study in-context examples.
-The result of the above computations is a distribution of example influences over the entire train set:
+The above calculation result in a distribution of example influences over the entire train set:
 
 {% include gallery id="distribution" layout="" caption="Distribution of in-context influences on Hellaswag with OPT models." %}
 
@@ -143,17 +146,16 @@ The following figure highlights this effect when examples get selected in specif
 When example are grouped into their respective influence percentile bins and used for ICL,
 we observe a positive and steady validation improvements in most models and tasks. 
 
-Notably, there is a stark contrast between the top and the bottom in-context examples: specifically, a 22.2% 
-difference in the task WSC and 21.5% difference in the task WIC on OPT-30B.
-We note that this effect not only applies to the top and bottom examples but also extends to examples in the middle influence bins.
-Our influence-based example selection produces stable and predictable validation performance in this setting. 
+Notably, there is a stark contrast between the good and bad in-context examples: a 22.2% 
+difference on the task WSC and 21.5% difference on the task WIC when examples from the top bin are used instead of examples from the bottom bin on OPT-30B.
+This effect also extends to examples in the middle influence bins, where our selection method also produces stable and predictable results.
 
 
 ### What separate good examples?
 Since influence-based selection uncovers the disparity between the good and bad examples, a natural follow-up
-is trying to understand what makes these examples different. 
-Prior work has associated various characteristics with ICl examplars: character length, perplexity, and a similarity distance to the validation set.
-Quantitively, little to no correlation is seen between these characteristics and in-context influences:
+is asking what makes these examples different. 
+Prior work has associated various characteristics with ICL exemplars such as perplexity, and a similarity distance to the validation set.
+Quantitively, we find little to no correlation between these characteristics and in-context influences:
 
 {% include gallery id="signals" layout="" caption="On Superglue-WIC, in-context influences do not correlate with any known example characteristics in many-shot ICL." %}
 
@@ -208,7 +210,7 @@ robustly identify low- and high- performing examples.
 Our framework can quantify the marginal contribution of an example as well as different phenomena associated with ICL, such as the positional biases of examples.
 
 For more details, please check out our [paper](https://arxiv.org/abs/2302.11042) and [code](https://github.com/DebugML/incontext_influences).
-We have included in our pipeline in-context influence computations for the new [LLaMA](https://arxiv.org/abs/2302.13971) models 🦙.
+We have also included in our pipeline in-context influence calculations based on the new [LLaMA](https://arxiv.org/abs/2302.13971) models 🦙.
 
 Feel free to reach out with any questions!
 
