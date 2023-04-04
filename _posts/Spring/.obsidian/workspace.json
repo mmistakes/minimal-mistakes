@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e42838fea94dcb26",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Section4_REST CRUD APIs/6) Spring REST - Exception Handling/2023-04-02-6) Spring REST Exception Handling.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b67ffd83ec2d16d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Section4_REST CRUD APIs/7) Spring REST Global Exception Handling/2023-04-03-Spring REST Global Exception Handling.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "9c27b041679606ec",
             "type": "leaf",
             "state": {
@@ -43,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
