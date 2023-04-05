@@ -10,6 +10,7 @@ sidebar:
 
 ---
 # Global Exception Handling
+REST CRUD APIs(7)
 - Exception handler code is only for the specific REST controller
 - Can't be reused by other controllers <- Large projects will have multiple controllers
 - We need global exception handlers

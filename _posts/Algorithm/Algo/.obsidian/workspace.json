@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "01145595c876ecb1",
+            "id": "af0408d3bb014810",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lv.0/Day_2/2023-04-01-fraction.md",
+                "file": "Lv.0/Day_2/2023-04-05-2times array.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lv.0/Day_2/2023-04-01-fraction.md",
+                "file": "Lv.0/Day_2/2023-04-05-2times array.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lv.0/Day_2/2023-04-01-fraction.md",
+                "file": "Lv.0/Day_2/2023-04-05-2times array.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lv.0/Day_2/2023-04-01-fraction.md"
+                "file": "Lv.0/Day_2/2023-04-05-2times array.md"
               }
             }
           }
@@ -147,10 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "01145595c876ecb1",
+  "active": "af0408d3bb014810",
   "lastOpenFiles": [
-    "Lv.0/Day_2/2023-04-01-division.md",
     "Lv.0/Day_2/2023-04-01-fraction.md",
+    "Lv.0/Day_2/2023-04-01-division.md",
+    "Lv.0/Day_2/2023-04-05-2times array.md",
     "Lv.0/Day_1/2023-04-01-reminder.md",
     "Lv.0/Day_2/2023-03-31-compare numbers.md",
     "Lv.0/Day_1/2023-03-31-sum numbers.md",

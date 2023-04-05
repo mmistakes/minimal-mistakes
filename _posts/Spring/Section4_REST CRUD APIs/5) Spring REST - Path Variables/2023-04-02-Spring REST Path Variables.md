@@ -10,6 +10,7 @@ sidebar:
 
 ---
 # Path Variables
+REST CRUD APIs(5)
 - Retrieve a single student by id
 `GET -> /api/students{studentId} <- Retrieve a single student` (Known as a 'path variable') like /api/students/0 , /api/students/1, /api/students/2
 

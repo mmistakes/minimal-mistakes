@@ -10,6 +10,7 @@ sidebar:
 
 ---
 # REST over HTTP
+REST CRUD APIs(2)
 - Most common use of REST is over HTTP
 - Leverage HTTP methods for CRUD operations
 

@@ -10,6 +10,7 @@ sidebar:
 
 ---
 # Basic code
+REST CRUD APIs(3)
 
 ```java
 @RestController <- Adds REST support

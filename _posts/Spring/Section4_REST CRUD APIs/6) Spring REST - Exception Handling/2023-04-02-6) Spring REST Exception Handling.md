@@ -10,6 +10,7 @@ sidebar:
 
 ---
 # Problem!
+REST CRUD APIs(6)
 - if wrong student id like out of number
 
 ![](https://i.imgur.com/U3j6cXS.png)

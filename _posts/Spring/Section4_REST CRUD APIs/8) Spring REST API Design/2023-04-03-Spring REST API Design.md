@@ -2,7 +2,7 @@
 layout: single
 title: "Spring REST API Design"
 categories: Spring
-tag: [Java,REST,"REST API Design","@Service"]
+tag: [Java,REST,"REST API Design","@Service","@PathVariable","@RequestBody","@DeleteMapping","@PutMapping"]
 toc: true
 toc_sticky: true
 author_profile: false
@@ -10,6 +10,7 @@ sidebar:
 
 ---
 # Spring REST API Design
+REST CRUD APIs(8)
 - For real-time projects, who will use your API?
 - Also, how will they use your API?
 - Design the API based on requirements
@@ -226,22 +227,18 @@ public class EmployeeDAOJpaImpl implements EmployeeDAO{ <-Same interface for con
     // set up constructor injection  
     @Autowired  
     public EmployeeDAOJpaImpl(EntityManager theEntityManager) <- Constructor injection , Automatically created by Spring Boot
-    
     {  
         entityManager = theEntityManager;  
     }  
   
     @Override  
     public List<Employee> findAll() {  
-  
         // create a query  
         TypedQuery<Employee> theQuery = entityManager.createQuery(
         "from Employee" <- JPQL , Employee.class);  
-  
         // execute query and get result list  
         List<Employee> employees 
         = theQuery.getResultList(); <-Using Standard JPA API
-  
         // return the results  
         return employees;  
     }  
@@ -263,14 +260,11 @@ import java.util.List;
 @RestController  
 @RequestMapping("/api")  
 public class EmployeeRestController {  
-  
     private EmployeeService employeeService;  
-  
     // quick and dirty: inject employee dao (use constructor injection)    @Autowired  
     public EmployeeRestController(EmployeeService theEmployeeService) {  
         employeeService = theEmployeeService;  
     }  
-  
     // expose "/employee" and return a list of employees  
     @GetMapping("/employees")  
     public List<Employee> findAll() {  
@@ -316,7 +310,6 @@ public class EmployeeRestController {
 
 ```java
 public interface EmployeeService{
-
 	List<Employee> findAll();
 }
 ```
@@ -326,7 +319,6 @@ public interface EmployeeService{
 ```java
 @Service <- enables component scanning
 public class EmployeeServiceImpl implements EmployeeService{
-
 	//inject EmployeeDAO...
 	@Override
 	public List<Employee>findAll(){
@@ -341,9 +333,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 ```java
 @Service  
 public class EmployeeServiceImpl implements EmployeeService {  
-  
     private EmployeeDAO employeeDAO;  
-  
     @Autowired  
     public EmployeeServiceImpl (EmployeeDAO theEmployeeDAO) {  
         employeeDAO = theEmployeeDAO;  
@@ -360,17 +350,14 @@ public class EmployeeServiceImpl implements EmployeeService {
 @RestController  
 @RequestMapping("/api")  
 public class EmployeeRestController {  
-  
     // Refactor  
     // private EmployeeDAO employeeDAO; 
     private EmployeeService employeeService;   
     // quick and dirty: inject employee dao (use constructor injection)
-    
     @Autowired  
     public EmployeeRestController(EmployeeService theEmployeeService) {  
         employeeService = theEmployeeService;  
     }  
-  
     // expose "/employee" and return a list of employees  
     @GetMapping("/employees")  
     public List<Employee> findAll() {  
@@ -407,7 +394,6 @@ public Employee findById(int theId) {
 		-> theId 통일
 	// get employee
 	Employee theEmployee = entityManager.find(Employee.class, theId);
-
 	// return employee
 	return theEmployee; 
 }
@@ -420,11 +406,9 @@ public Employee findById(int theId) {
 					It will be handled at Service layer
 					
 public Employee save(Employee theEmployee) {
-
 	// save or update the employee
 	Employee dbEmployee = entityManager.merge(theEmployee);
 	-> if id == 0 then save/insert else update
-	
 	// return dbEmployee
 	return dbEmployee;
 	-> Return dbEmployee 
@@ -439,10 +423,8 @@ public Employee save(Employee theEmployee) {
 					It will be handled at Service layer
 					
 public void deleteById(int theId) {
-
 	// find the employee by id
 	Employee theEmployee = entityManager.find(Employee.class, theId);
-
 	// delete the employee
 	entityManager.remove(theEmployee);
 }
@@ -452,7 +434,6 @@ public void deleteById(int theId) {
 
 ```java
 public interface EmployeeDAO {  
-  
     List<Employee> findAll();  
   
     Employee findById(int theId);  
@@ -464,7 +445,6 @@ public interface EmployeeDAO {
 
 ```java
 public interface EmployeeService {  
-  
     List<Employee> findAll();  
   
     Employee findById(int theId);  
@@ -478,9 +458,7 @@ public interface EmployeeService {
 ```java
 @Service  
 public class EmployeeServiceImpl implements EmployeeService {  
-  
     private EmployeeDAO employeeDAO;  
-  
     @Autowired  
     public EmployeeServiceImpl (EmployeeDAO theEmployeeDAO) {  
         employeeDAO = theEmployeeDAO;  
@@ -507,15 +485,15 @@ public class EmployeeServiceImpl implements EmployeeService {
 }
 ```
 
-## Get Single Employee
+## Get Single Employee & Read & Add Employee
 -126-
 
 ### Step-by-step
 1. Set up Database Dev Environment
 2. Create Spring Boot project using Spring Initializr
 3. Get list of employees
-4. ***--Get single employee by ID--***
-5. ***--Add a new employee--***
+4. ***--Get single employee by ID--*** <---- **Rest Controller methods**
+5. ***--Add a new employee--*** <---- **Rest Controller methods**
 6. Update an existing employee
 7. Delete an existing employee
 
@@ -542,12 +520,135 @@ public class EmployeeServiceImpl implements EmployeeService {
 Content-Type 변경
 ![](https://i.imgur.com/ksqCEK7.png)
 
+### RestController: Read a Single Employee & Add Employee
 
-127
-## Update Employee
-127
+```java
 
-## Delete Employee
+@RestController  
+@RequestMapping("/api")  
+public class EmployeeRestController {  
+  
+    private EmployeeService employeeService;  
+  
+    // Refactor  
+    // private EmployeeDAO employeeDAO;  
+    // quick and dirty: inject employee dao (use constructor injection) 
+    @Autowired  
+    public EmployeeRestController(EmployeeService theEmployeeService) {  
+        employeeService = theEmployeeService;  
+    }  
+  
+    // expose "/employee" and return a list of employees  
+    @GetMapping("/employees")  
+    public List<Employee> findAll() {  
+        return employeeService.findAll();  
+    }  
+  -------------------------------------------------------------------------
+  
+    // add mapping for GET/ employees/{employeeId}  
+    @GetMapping("/employees/{employeeId}")  
+    public Employee getEmployee(@PathVariable int employeeId){  
+        Employee theEmployee = employeeService.findById(employeeId);  
+        if (theEmployee == null) {  
+            throw new RuntimeException("Employee id not found - " + employeeId);  
+        }  
+        return theEmployee;  
+    }  
+  
+    // add mapping for POST /employees - add new employee  
+    @PostMapping("/employees")  
+    public Employee addEmployee(@RequestBody Employee theEmployee) {  
+        // also just in case they pass an id in JSON... set id to 0  
+        // this is to force a save of new item... instead of update  
+        theEmployee.setId(0);  
+        Employee dbEmployee = employeeService.save(theEmployee);  
+        return dbEmployee;  
+    }  
+  -------------------------------------------------------------------------
 
+}
+```
 
-129
+## Update Employee & Delete Employee
+-128-
+### Step-by-step
+1. Set up Database Dev Environment
+2. Create Spring Boot project using Spring Initializr
+3. Get list of employees
+4. Get single employee by ID
+5. Add a new employee
+6. ***--Update an existing employee--***  <---- **Rest Controller methods**
+7. ***--Delete an existing employee--***   <---- **Rest Controller methods**
+
+### Update Employee
+
+![](https://i.imgur.com/LajQxaR.png)
+
+### Delete Employee
+
+![](https://i.imgur.com/lMT7dpx.png)
+
+```java
+
+@RestController  
+@RequestMapping("/api")  
+public class EmployeeRestController {  
+  
+    private EmployeeService employeeService;  
+  
+    // Refactor  
+    // private EmployeeDAO employeeDAO;  
+    // quick and dirty: inject employee dao (use constructor injection) 
+    @Autowired  
+    public EmployeeRestController(EmployeeService theEmployeeService) {  
+        employeeService = theEmployeeService;  
+    }  
+  
+    // expose "/employee" and return a list of employees  
+    @GetMapping("/employees")  
+    public List<Employee> findAll() {  
+        return employeeService.findAll();  
+    }  
+  
+    // add mapping for GET/ employees/{employeeId}  
+    @GetMapping("/employees/{employeeId}")  
+    public Employee getEmployee(@PathVariable int employeeId){  
+        Employee theEmployee = employeeService.findById(employeeId);  
+        if (theEmployee == null) {  
+            throw new RuntimeException("Employee id not found - " + employeeId);  
+        }  
+        return theEmployee;  
+    }  
+  
+    // add mapping for POST /employees - add new employee  
+    @PostMapping("/employees")  
+    public Employee addEmployee(@RequestBody Employee theEmployee) {  
+        // also just in case they pass an id in JSON... set id to 0  
+        // this is to force a save of new item... instead of update  
+        theEmployee.setId(0);  
+        Employee dbEmployee = employeeService.save(theEmployee);  
+        return dbEmployee;  
+    }  
+  -------------------------------------------------------------------------
+    // add mapping for PUT/ employees - update existing employess  
+    @PutMapping("/employees")  
+    public Employee updateEmployee(@RequestBody Employee theEmployee) {  
+        Employee dbEmployee = employeeService.save(theEmployee);  
+        return dbEmployee;  <- It has latest updates from the database
+  
+    }  
+  
+    // add mapping for DELETE / employees/{employeeId} - delete employee  
+  
+    @DeleteMapping("/employees/{employeeId}")  
+    public String deleteEmployee(@PathVariable int employeeId) {  
+        Employee tempEmployee = employeeService.findById(employeeId);  
+        // throw exception if null  
+        if (tempEmployee == null) {  
+            throw new RuntimeException("Employee id not found - " + employeeId);  
+        }  
+        employeeService.deleteById(employeeId);  
+        return "Deleted employee id - " + employeeId;  
+    }  
+}
+```
