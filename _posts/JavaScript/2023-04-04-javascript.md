@@ -1,5 +1,5 @@
 ---
-title: "JavaScript 기본문법"
+title: "JavaScript 기본 문법"
 categories:
   - JavaScript
 tags:
@@ -154,6 +154,13 @@ console.log(myConst); // "Hello World"
     ```
 - #### 논리합(||) 연산자
   - ##### 두 값 중 하나라도 true일 경우 true를 반환
+    ```javascript
+    console.log(!true); // false
+    console.log(!false); // true
+    console.log(!(2 > 1)); // false
+    ```
+- #### 논리부정(!) 연산자
+  - ##### true를 false로, false를 true로 바꾼다
     ```javascript
     console.log(!true); // false
     console.log(!false); // true
