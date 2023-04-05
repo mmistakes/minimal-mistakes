@@ -69,7 +69,7 @@ help direct the LLM to more accurate predictions. Another way to provide guidanc
 give the LLM examples of input-output pairs before asking for a new prediction. 
 In this work, we focus on this last approach to prompting often referred to as few-shot in-context learning (ICL). 
 
-### Few-shot ICL
+# Few-shot ICL
 <!-- In-context leaning (ICL) was originally introduced with the release of [GPT-3](https://arxiv.org/abs/2005.14165). -->
 In-context learning involves providing the model with a small set of high-quality examples (few-shot) via a prompt, followed by generating predictions on new examples. 
 As an example, consider [GPT-3](https://arxiv.org/abs/2005.14165), a general-purpose LLM that takes prompts as inputs. We can instruct GPT-3 to do sentiment analysis via the following prompt. This prompt contains 3 examples of review-answer pairs for sentiment analysis (3-shot), which are the in-context examples. We would like to classify a new review, `My Biryani can be a tad spicier`,  as either positive or negative, and so we append this to the end of our in-context examples: 
@@ -87,7 +87,8 @@ As an example, consider [GPT-3](https://arxiv.org/abs/2005.14165), a general-pur
 To do ICL, we give this prompt as input to GPT-3 and then attempt to generate the completion. To classify the final sentence, we simply calculate the probability of generating the word `Negative` versus the word `Positive`, and use the higher-probability word as the prediction. 
 In this case, it turns out that the model can correctly predict `Negative` as being a more likely completion than `Positive`. 
 
-Note that in this example, we were able to adapt the LLM to sentiment analysis with *no parameter updates to the model*. Instead of fine-tuning on a task-specific dataset, we have instead constructed a prompt containing both a few examples of input-output pairs as well as the new input to be classified. The LLM then learns by conditioning the prompt before generating new outputs without needing to calculate any gradients or update any weights. 
+Note that in this example, we were able to adapt the LLM to sentiment analysis with *no parameter updates to the model*. Instead of fine-tuning on a task-specific dataset, we have instead constructed a prompt containing both a few examples of input-output pairs as well as the new input to be classified. The LLM then learns by conditioning the prompt. 
+ <!-- before generating new outputs without needing to calculate any gradients or update any weights.  -->
 
 <!-- {% include gallery id="icl" type="center" layout="center" caption="An instance of few-shot ICL with GPT-3. Model completion is highlighted in blue." %} -->
 <!-- In the above prompt, we provide GPT-3 with examples (3-shot) and ask it to classify the sentiment of the last input.
@@ -97,11 +98,11 @@ It correctly completes the sequence with label "Negative". -->
 <!-- Compared to finetuning, ICL requires no parameter updates to the model. 
 The model simply "learns" by conditioning on the examples provided in-context, analogous to how a human would learn when asked to perform a task. -->
 
-### Perils of in-context learning
+## Perils of in-context learning
 
 ICL allows general-purpose LLMs to adapt to new tasks from a few examples without training. 
-This has the benefit of lowering the sample complexity and the computational cost of adapting the model. 
-However, these benefits also come with several drawbacks. 
+This lowers the sample complexity and the computational cost of adapting the model. 
+However, these benefits also come with drawbacks. 
 In particular, the performance of ICL can be susceptible to various
 design decision when constructing prompts. 
 For example, the natural language template used to format a prompt, 
@@ -129,14 +130,14 @@ It wrongly predicts "Positive" by spuriously following label pattern in the prom
 From a user perspective, this makes ICL unreliable in practice.
 It is not clear if the prompt, the model, or the examples themselves are the culprits behind poor performance.
  -->
-To make ICL more reliable, we study how example-selection techniques can stabilize and improve ICL performance. 
+<!-- To make ICL more reliable, we study how example-selection techniques can stabilize and improve ICL performance. 
 Specifically, we leverage the framework of influences to identify the set of examples that lead to high-performance in ICL. 
-It turns out that these highly influential examples can stabilize the impact of example order while improving performance!   
+It turns out that these highly influential examples can stabilize the impact of example order while improving performance!    -->
 <!-- In this study, we focus on *example selection* as the basis for robustifying few-shot ICL. We propose an influence-based selection
 method that can select a set of high-performing examples for a task and requires no further tuning at test time. -->
 
-### In-context influences
-There is a variety of methods that aim to quantify and understand how training data affects model performance.
+# In-context influences
+To address this unreliability, we look towards a variety of methods that aim to quantify and understand how training data affects model performance. 
 For example, [Data Shapley values](https://arxiv.org/abs/1904.02868) and [influence functions](https://arxiv.org/abs/1703.04730) 
 both aim to measure how much an example affects performance when included in the training dataset. 
 Inspired by these frameworks, our goal is to measure how much an in-context example affects ICL performance when included in the prompt. 
@@ -156,8 +157,10 @@ where $$M$$ is the number of total subsets used to estimate influences, $$N_j$$ 
 In other words, a higher score for $$\mathcal{I}(x_j)$$ corresponds to a higher average improvement in validation performance when $$x_j$$ was included in the prompt.
 This is analogous to the meaning of influences in the classic setting, but adapted to the ICL setting: instead of training models on a dataset, we are prompting models on examples.
 
-**Cost.** Computing influences is traditionally viewed as a highly costly operation. After all, influences typically require end-to-end training of $$M$$ models on $$M$$ different subsets, where $$M$$ can be in the thousands. Most people don't have the compute or time capabilities to train thousands of ML models! However, the cost of computing in-context influences is drastically lower---prompting a model on a random subset is equivalent to a single forward pass through the LLM.
-In contrast to training new models, calculating in-context influences is inexpensive!
+<!-- **Cost.** Computing influences is traditionally viewed as a highly costly operation. After all, influences typically require end-to-end training of $$M$$ models on $$M$$ different subsets, where $$M$$ can be in the thousands. Most people don't have the compute or time capabilities to train thousands of ML models! However, the cost of computing in-context influences is drastically lower---prompting a model on a random subset is equivalent to a single forward pass through the LLM.
+In contrast to training new models, calculating in-context influences is inexpensive! -->
+
+## Distribution of in-context influences
 
 In the following figure, we visualize the distribution of computed influences of training examples on ICL performance. 
 
@@ -180,7 +183,7 @@ $$^1$$This method of estimating influences with random subsets has similarities 
 in-context influences.
 {: .notice}
 
-### Influence-based example selection
+# Influence-based example selection
 <!-- Now that we have
 In the above section, we discuss the influence-based formula adapted to study in-context examples.
 The above calculation result in a distribution of example influences over the entire train set:
@@ -202,7 +205,7 @@ This provides one explanation for why the choice of examples can drastically aff
 <!-- This positive trend also extends to examples in the middle influence bins, where our selection method also produces stable and predictable results. -->
 
 
-### Examples with Positive/Negative Influence
+## Examples with Positive/Negative Influence
 <!-- Since influence-based selection uncovers the disparity between the good and bad examples, a natural follow-up
 is asking what makes these examples different. 
 Prior work has associated various characteristics with ICL exemplars such as perplexity and a similarity distance to test examples.
@@ -223,14 +226,14 @@ and <span style="font-family:Courier;">Answer</span> in the above example) could
 
 However, in general we found that differences between examples with positive or negative influences was not always immediately obvious (more examples are in our [paper](https://arxiv.org/abs/2302.11042)). Although we can separate examples into bins corresponding to positive and negative influence, identifying the underlying factors that resulted in better or worse ICL performance remains an open problem!   
 <!-- Here, we list other examples sampled from the top and bottom influence bins on GPT-NeoX (20B). -->
-<!-- Do you suspect any qualitative differences that separate the good and bad examples in these tasks?
+<!-- Do you suspect any qualitative differences that separate the good and bad examples in these tasks? -->
 
-|
--|-
-Arc<br>(Challenge)|**Bottom**<br>Question: Which unit is used to record distances between stars?<br>Answer: light years<br>**Top**<br>Question: Which of these is a function of all cells?<br>Answer: to extract energy from food to sustain life
-OpenBookQA|**Bottom**<br>Context: which one of these is false about the greenhouse effect?<br>Answer: it causes green air in the sky<br>**Top**<br>Context: One of the reasons some species go extinct is because predators<br>Answer: murder too many of them
-PIQA|**Bottom**<br>Goal: flashlight<br>Answer: shines a light<br>**Top**<br>Goal: To bind fabric before putting it through a sewing machine.<br>Answer: You should use small pins.
-WIC|**Bottom**<br>Pull a bank robbery.<br>He regularly pulls 12-hour days, sometimes 14.<br>question: Is the word ’pull’ used in the same sense in the two sentences above?<br>answer: true<br>**Top**<br>He longed for the touch of her hand.<br>This room needs a woman’s touch.<br>question: Is the word ’touch’ used in the same sense in the two sentences above?<br>answer: false -->
+<!-- | -->
+<!-- -|- -->
+<!-- Arc<br>(Challenge)|**Bottom**<br>Question: Which unit is used to record distances between stars?<br>Answer: light years<br>**Top**<br>Question: Which of these is a function of all cells?<br>Answer: to extract energy from food to sustain life -->
+<!-- OpenBookQA|**Bottom**<br>Context: which one of these is false about the greenhouse effect?<br>Answer: it causes green air in the sky<br>**Top**<br>Context: One of the reasons some species go extinct is because predators<br>Answer: murder too many of them -->
+<!-- PIQA|**Bottom**<br>Goal: flashlight<br>Answer: shines a light<br>**Top**<br>Goal: To bind fabric before putting it through a sewing machine.<br>Answer: You should use small pins. -->
+<!-- WIC|**Bottom**<br>Pull a bank robbery.<br>He regularly pulls 12-hour days, sometimes 14.<br>question: Is the word ’pull’ used in the same sense in the two sentences above?<br>answer: true<br>**Top**<br>He longed for the touch of her hand.<br>This room needs a woman’s touch.<br>question: Is the word ’touch’ used in the same sense in the two sentences above?<br>answer: false -->
 
 
 <!--WSC|Passage: We had hoped to place copies of our newsletter on all the chairs in the auditorium, but there were simply too many of them .<br>Question: In the passage above, does the pronoun ’them’ refer to chairs?<br>Answer: true|Passage: Sam took French classes from Adam , because he was known to speak it fluently.<br>Question: In the passage above, does the pronoun ’he’ refer to Adam?<br>Answer: true-->
