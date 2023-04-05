@@ -265,6 +265,6 @@ Fortunately, Kotlin and some of its libraries provide a more functional approach
 
 Unlike Java, Kotlin doesn't provide a type for handling optional values. As we saw in the previous section, Kotlin creators preferred to introduce nullable values instead of having an `Option<T>` type. 
 
-However, the Kotlin community has created a library called `Arrow` that provides a lot of functional programming constructs, including an `Option` type. In the set up section, we already imported the dependency from Arrow, so we can use it in our code.
+However, the Kotlin community has created a library called `Arrow` that provides a lot of functional programming constructs, including an `Option` type. In the set-up section, we already imported the dependency from Arrow, so we can use it in our code.
 
-TODO
+The type defined by the Arrow library to manage optional values is defined as `arrow.core.Option<out A>`. Basically, it's a [Algebraic Data Type (ADT)](https://blog.rockthejvm.com/algebraic-data-types/), technically a sum type, which can be either `Some` or `None`.
