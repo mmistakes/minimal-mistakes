@@ -54,25 +54,30 @@ case_study:
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
 > Large language models have recently enabled a prompting based, few-shot learning paradigm referred to as in-context learning (ICL). However, the ICL paradigm can be quite sensitive to small differences in the input prompt, such as the template of the prompt or the specific examples chosen. 
-To handle this variability, we leverage the framework of influences to select which examples to use in a prompt. These so-called in-context influences directly quantify the performance gain/loss when including a specific example in the prompt, enabling improved and stabler ICL performance.
+To handle this variability, we leverage the framework of influences to select which examples to use in a prompt.
+These so-called in-context influences directly quantify the performance gain/loss when including a specific example in the prompt, enabling improved and more stable ICL performance.
 
-Prompting is a recent interface for interacting with and training general-purpose large language models (LLMs). Instead of fine-tuning an LLM on a specific task and dataset, users can describe their needs in natural language in the form of a "prompt" to guide the LLM towards all kinds of task. 
+Prompting is a recent interface for interacting with general-purpose large language models (LLMs). Instead of fine-tuning an LLM on a specific task and dataset, users can describe their needs in natural language in the form of a "prompt" to guide the LLM towards all kinds of task. 
 For example, LLMs have been asked to write computer programs, take [standardized exams](https://www.cnn.com/2023/01/26/tech/chatgpt-passes-exams/index.html), 
 or even come up with original [Thanksgiving dinner recipes](https://www.nytimes.com/2022/11/04/dining/ai-thanksgiving-menu.html).
 
-To elicit better performance, the research community has identified techniques and guidelines for prompting LLMs.
-For example, providing detailed [instructions](https://arxiv.org/abs/2203.02155) 
-asking the model to think [step-by-step](https://arxiv.org/abs/2201.11903) can  
-help direct the LLM to more accurate predictions. Another way to provide guidance is to 
-give the LLM examples of input-output pairs before asking for a new prediction. 
+To elicit better performance, the research community has identified techniques for prompting LLMs.
+For example, providing detailed [instructions](https://arxiv.org/abs/2203.02155) or asking the model to think [step-by-step](https://arxiv.org/abs/2201.11903) can help direct it to make more accurate predictions.
+Another way to provide guidance is to give the model examples of input-output pairs before asking for a new prediction. 
 In this work, we focus on this last approach to prompting often referred to as few-shot in-context learning (ICL). 
 
 # Few-shot ICL
 <!-- In-context leaning (ICL) was originally introduced with the release of [GPT-3](https://arxiv.org/abs/2005.14165). -->
 In-context learning involves providing the model with a small set of high-quality examples (few-shot) via a prompt, followed by generating predictions on new examples. 
-As an example, consider [GPT-3](https://arxiv.org/abs/2005.14165), a general-purpose LLM that takes prompts as inputs. We can instruct GPT-3 to do sentiment analysis via the following prompt. This prompt contains 3 examples of review-answer pairs for sentiment analysis (3-shot), which are the in-context examples. We would like to classify a new review, `My Biryani can be a tad spicier`,  as either positive or negative, and so we append this to the end of our in-context examples: 
+As an example, consider [GPT-3](https://arxiv.org/abs/2005.14165), a general-purpose LLM that takes prompts as inputs. We can instruct GPT-3 to do sentiment analysis via the following prompt. 
+This prompt contains 3 examples of review-answer pairs for sentiment analysis (3-shot), which are the in-context examples. 
+We would like to classify a new review, `My Biryani can be a tad spicier`, as either positive or negative.
+We append the input to the end of our in-context examples: 
 
 > Review: The butter chicken is so creamy.  
 > Answer: Positive  
@@ -84,10 +89,13 @@ As an example, consider [GPT-3](https://arxiv.org/abs/2005.14165), a general-pur
 > Answer:  
 >> **Negative**
 
-To do ICL, we give this prompt as input to GPT-3 and then attempt to generate the completion. To classify the final sentence, we simply calculate the probability of generating the word `Negative` versus the word `Positive`, and use the higher-probability word as the prediction. 
+To classify the final sentence, we have given this prompt as input to GPT-3 to generate a completion. We simply consider the probability of the model generating the word `Negative` versus the word `Positive`, and use the higher-probability word (conditional on the examples) as the prediction. 
 In this case, it turns out that the model can correctly predict `Negative` as being a more likely completion than `Positive`. 
 
-Note that in this example, we were able to adapt the LLM to sentiment analysis with *no parameter updates to the model*. Instead of fine-tuning on a task-specific dataset, we have instead constructed a prompt containing both a few examples of input-output pairs as well as the new input to be classified. The LLM then learns by conditioning the prompt. 
+Note that in this example, we were able to adapt the LLM to do sentiment analysis with *no parameter updates* to the model.
+
+<!-- Instead of fine-tuning on a task-specific dataset, we have instead constructed a prompt containing both a few examples of input-output pairs as well as the new input to be classified. 
+The LLM then learns by conditioning on the prompt. --> 
  <!-- before generating new outputs without needing to calculate any gradients or update any weights.  -->
 
 <!-- {% include gallery id="icl" type="center" layout="center" caption="An instance of few-shot ICL with GPT-3. Model completion is highlighted in blue." %} -->
@@ -100,8 +108,8 @@ The model simply "learns" by conditioning on the examples provided in-context, a
 
 ## Perils of in-context learning
 
-ICL allows general-purpose LLMs to adapt to new tasks from a few examples without training. 
-This lowers the sample complexity and the computational cost of adapting the model. 
+ICL allows general-purpose LLMs to adapt to new tasks without training. 
+This lowers the sample complexity and the computational cost of repurposing the model. 
 However, these benefits also come with drawbacks. 
 In particular, the performance of ICL can be susceptible to various
 design decision when constructing prompts. 
@@ -111,7 +119,7 @@ and even the order of examples can all affect how well ICL performs [[ACL tutori
 
 <!-- {% include gallery id="order" layout="" caption="Reordering examples flips the prediction of GPT-3 for the same input." %} -->
 
-In other words, ICL is _brittle_ to small changes in the prompt For example, consider the previous prompt that we gave to GPT-3, but suppose we instead swap the order of the first two examples: 
+In other words, ICL is _brittle_ to small changes in the prompt. Consider the previous prompt that we gave to GPT-3, but suppose we instead swap the order of the first two examples: 
 
 > Review: Service is subpar.  
 > Answer: Negative  
@@ -165,6 +173,7 @@ In contrast to training new models, calculating in-context influences is inexpen
 In the following figure, we visualize the distribution of computed influences of training examples on ICL performance. 
 
 {% include gallery id="distribution" layout="" caption="Distribution of in-context influences on Hellaswag with OPT models." %}
+
 
 The two tails of the influence distribution identify highly impactful in-context examples.
 Examples with large positive influence tend to help ICL performance, whereas examples with large negative influence tend to hurt ICL performance. 
