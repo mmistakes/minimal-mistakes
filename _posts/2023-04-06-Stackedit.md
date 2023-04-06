@@ -25,30 +25,9 @@ StackEdit을 처음 열고 google계정으로 로그인을 하면, Main workspac
 
  5. 이 때 확인버튼을 누르지 말고, 각자의 브라우저에서 Develop tool을 열어야 한다. 사파리는 다음과 같다. 왼쪽 메뉴 바의 Develop을 누르고,  **Show JavaScript Console**(단축키: "**ctrl + cmd + c**")를 누르면 자바스크립트를 입력할 수 있는 콘솔창이 열린다. 콘솔 창에 밑의 코드를 입력한다.
 
-    enter code here window.XMLHttpRequest =  class MyXMLHttpRequest extends window.XMLHttpRequest {
-  open(...args){
-    if(args[1].startsWith("https://api.github.com/user?access_token=")) {
-      // apply fix as described by github
-      // https://developer.github.com/changes/2020-02-10-deprecating-auth-through-query-param/#changes-to-make
-  
-      const segments = args[1].split("?");
-      args[1] = segments[0]; // remove query params from url
-      const token = segments[1].split("=")[1]; // save the token
-      
-      const ret = super.open(...args);
-      
-      this.setRequestHeader("Authorization", `token ${token}`); // set required header
-      
-      return ret;
-    }
-    else {
-      return super.open(...args);
-    }
-  }
-}
-
+```inline code`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDM4MTUyNTQsLTEwNjUxMDEyMDcsOT
-kzODA4ODY2LDE3MzMwNzIzMywxNTA4NjY4MzkxLC0xNjU3NDg2
-MDRdfQ==
+eyJoaXN0b3J5IjpbLTUwNjAyODk2MiwtMTA2NTEwMTIwNyw5OT
+M4MDg4NjYsMTczMzA3MjMzLDE1MDg2NjgzOTEsLTE2NTc0ODYw
+NF19
 -->
