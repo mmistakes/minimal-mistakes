@@ -6,6 +6,7 @@ StackEdit의 장점은 인터넷만 연결되어있으면 어디서든 구글 �
 
 하지만 StackEdit에 sign up(in)한 후 Workspaces에 들어가서 깃허브로 연동하려고 하면 아래와 같은 에러가 자꾸 뜨는 것을 확인할 수 있다.
 
+![enter image description here](https://photos.app.goo.gl/SAr4g576U1CaH7U6A)
 
 # Files
 
@@ -146,5 +147,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MzQ2MDA4NV19
+eyJoaXN0b3J5IjpbLTkyODY5MjMwMCwyMDczNDYwMDg1XX0=
 -->
