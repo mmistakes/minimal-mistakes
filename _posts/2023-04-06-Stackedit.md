@@ -8,8 +8,10 @@ StackEdit을 처음 열고 google계정으로 로그인을 하면, Main workspac
 
 구글링을 한 결과 해결 방법을 찾아냈다. (~~사실 원인이 뭔지는 컴잘알이 아니라 모르겠다.~~)
 
-우선 
+우선 본인이 사용하는 브라우저의 Develop tool이 필요하다. 나는 이 계정을 사파리로 관리하고 있기 때문에 사파리를 기준으로 설명을 하겠다. (엣지 등의 크로미움 기반 브라우저는 딱히 다른 설정할 필요 없이 F12를 누르면 develop tool로 들어가지는 것으로 알고있다.)
+
+메뉴바 왼쪽에서 Safari
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAwOTM2MDgzLDE3MzMwNzIzMywxNTA4Nj
+eyJoaXN0b3J5IjpbNzY1MTk3MDc4LDE3MzMwNzIzMywxNTA4Nj
 Y4MzkxLC0xNjU3NDg2MDRdfQ==
 -->
