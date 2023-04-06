@@ -1,0 +1,163 @@
+<script>
+		fetch('../assets/other/incontext_influences/influence-bin-boolq.json')
+        .then(response => response.json())
+        .then(data => {
+          // extract the x and y values from the data
+          const datasets = data.map((datum, index) => ({
+            label: datum.model,
+            data: datum.y,
+            borderColor: ['#FF9F1C', '#2ECC71', '#3498DB', '#9B59B6'][index], // using fixed colors for the 3 models
+            fill: false
+          }));
+
+          // create the chart using Chart.js
+          const ctx = document.getElementById('boolq').getContext('2d');
+          const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+              labels: data[0].x, // round x axis labels to 4 decimals
+              datasets: datasets
+            },
+            options: {
+              plugins: {
+                title: {
+                  display: true,
+                  text: 'Task: BoolQ',
+                  font: {
+                    size: 18
+                  }
+                }
+              },
+              scales: {
+                x: {
+                  title: {
+                    display: true,
+                    text: 'Influence Bin'
+                  },
+                  ticks: {
+                    autoSkip: true, // auto skip x-axis labels if there are too many to fit
+                    maxTicksLimit: 10 // limit the number of x-axis labels to 10
+                  }
+                },
+                y: {
+                  title: {
+                    display: true,
+                    text: 'Avg. Val. Accuracy'
+                  }
+                },
+              },
+              layout: {
+                  padding: 10
+              }
+            }
+          });
+        });
+
+		fetch('../assets/other/incontext_influences/influence-bin-wic.json')
+        .then(response => response.json())
+        .then(data => {
+          // extract the x and y values from the data
+          const datasets = data.map((datum, index) => ({
+            label: datum.model,
+            data: datum.y,
+            borderColor: ['#FF9F1C', '#2ECC71', '#3498DB', '#9B59B6'][index], // using fixed colors for the 3 models
+            fill: false
+          }));
+
+          // create the chart using Chart.js
+          const ctx = document.getElementById('wic').getContext('2d');
+          const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+              labels: data[0].x, // round x axis labels to 4 decimals
+              datasets: datasets
+            },
+            options: {
+              plugins: {
+                title: {
+                  display: true,
+                  text: 'Task: WIC',
+                  font: {
+                    size: 18
+                  }
+                }
+              },
+              scales: {
+                x: {
+                  title: {
+                    display: true,
+                    text: 'Influence Bin'
+                  },
+                  ticks: {
+                    autoSkip: true, // auto skip x-axis labels if there are too many to fit
+                    maxTicksLimit: 10 // limit the number of x-axis labels to 10
+                  }
+                },
+                y: {
+                  title: {
+                    display: true,
+                    text: 'Avg. Val. Accuracy'
+                  }
+                },
+              },
+              layout: {
+                  padding: 10
+              }
+            }
+          });
+        });
+
+		fetch('../assets/other/incontext_influences/influence-bin-openbookqa.json')
+        .then(response => response.json())
+        .then(data => {
+          // extract the x and y values from the data
+          const datasets = data.map((datum, index) => ({
+            label: datum.model,
+            data: datum.y,
+            borderColor: ['#FF9F1C', '#2ECC71', '#3498DB', '#9B59B6'][index], // using fixed colors for the 3 models
+            fill: false
+          }));
+
+          // create the chart using Chart.js
+          const ctx = document.getElementById('openbookqa').getContext('2d');
+          const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+              labels: data[0].x, // round x axis labels to 4 decimals
+              datasets: datasets
+            },
+            options: {
+              plugins: {
+                title: {
+                  display: true,
+                  text: 'Task: OpenBookQA',
+                  font: {
+                    size: 18
+                  }
+                }
+              },
+              scales: {
+                x: {
+                  title: {
+                    display: true,
+                    text: 'Influence Bin'
+                  },
+                  ticks: {
+                    autoSkip: true, // auto skip x-axis labels if there are too many to fit
+                    maxTicksLimit: 10 // limit the number of x-axis labels to 10
+                  }
+                },
+                y: {
+                  title: {
+                    display: true,
+                    text: 'Avg. Val. Accuracy'
+                  }
+                },
+              },
+              layout: {
+                  padding: 20
+              }
+            }
+          });
+        });
+</script>
