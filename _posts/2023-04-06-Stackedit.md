@@ -52,8 +52,10 @@ window.XMLHttpRequest =  class MyXMLHttpRequest extends window.XMLHttpRequest {
 입력하고 엔터를 누른 후, OK버튼을 누르도록 하자. 그러면 완료!
 
 
+
+보면 오른쪽 Workspaces에 current로 _pages가 등록되어있는 것을 확인할 수 있다!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MDc0ODcxNSwtMTA2NTEwMTIwNyw5OT
-M4MDg4NjYsMTczMzA3MjMzLDE1MDg2NjgzOTEsLTE2NTc0ODYw
-NF19
+eyJoaXN0b3J5IjpbMTI5NTA1NjgwMywxNzQwNzQ4NzE1LC0xMD
+Y1MTAxMjA3LDk5MzgwODg2NiwxNzMzMDcyMzMsMTUwODY2ODM5
+MSwtMTY1NzQ4NjA0XX0=
 -->
