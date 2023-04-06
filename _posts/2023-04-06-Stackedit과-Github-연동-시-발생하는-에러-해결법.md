@@ -1,4 +1,4 @@
-# Stackedit과 Github 연동 시 발생하는 에러 해결법
+# #Github, #Markdown
 
 Github 페이지(블로그)를 만들고 나니 글 포스팅을 하려면 마크다운을 이용해서 해야한다는 것을 깨달았다. 마크다운 데이터로는 크게 Typora(타이포라)와 Stackedit(스택에디트) 두 개가 있는데, 타이포라는 유료인 점이 걸렸고, 스택에디트는 뭔가 LaTeX의 overleaf처럼 온라인으로 편집한다는 점이 마음에 들어 고르게 되었다.
 
@@ -57,5 +57,5 @@ window.XMLHttpRequest =  class MyXMLHttpRequest extends window.XMLHttpRequest {
 
 이렇게까지 하면 이제 깃허브 블로그에 글을 쓸 준비가 완료되었다는 뜻이다. 다른 컴퓨터로도 들어가보니 동기화도 빠르게 잘 되는 것 같다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MDI3NDQ2MV19
+eyJoaXN0b3J5IjpbLTMwMTc4MjU1XX0=
 -->
