@@ -4,7 +4,7 @@ Github 페이지(블로그)를 만들고 나니 글 포스팅을 하려면 마�
 
 StackEdit을 처음 열고 google계정으로 로그인을 하면, Main workspace가 구글로 되어있다. 나는 Github repository를 연동하고 바로바로 글을 써서 올리고 싶기 때문에 깃허브를 연동하기로 했는데, 연동을 시도하면 자꾸 밑의 이미지와 같은 창이 뜨면서 진행이 되지 않는다.
 
-![에러가 뜨는 모습](images/stackedit1.png)
+![에러가 뜨는 모습](https://raw.githubusercontent.com/arrow-economist/arrow-economist.github.io/master/images/stackedit1.png)
 
 구글링을 한 결과 해결 방법을 찾아냈다. (~~사실 원인이 뭔지는 컴잘알이 아니라 모르겠다.~~)
 
@@ -13,10 +13,12 @@ StackEdit을 처음 열고 google계정으로 로그인을 하면, Main workspac
 *참고: 내 맥미니는 미국에서 구매해서 언어 설정이 영어로 되어있어 한국어로 뭐라 되어있는지 잘 모른다. 그래서 단축키도 함께 남기도록 하겠다.*
 
 1. 메뉴바 왼쪽에서 **Safari**를 클릭 후 Settings를 누른다. (단축키: "**cmd + ,**")
-2. **advanced**(맨 오른쪽의 톱니바퀴 두 개)를 누른 후 맨 밑에 **Show Develop menu in menu bar**가 체크 해제되어있는 경우 체크를 한다.
+2. **Advanced**(맨 오른쪽의 톱니바퀴 두 개)를 누른 후 맨 밑에 **Show Develop menu in menu bar**가 체크 해제되어있는 경우 체크를 한다.
 
+![enter image description here](https://raw.githubusercontent.com/arrow-economist/arrow-economist.github.io/master/images/stackedit2.png)
 
+3. 그러면 이제 메뉴 바에서 Develop 탭이 있는 것을 확인할 수 있는데, 여기에서 Show JavaScript Console(단축키 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE1NTA1NTEyLDE3MzMwNzIzMywxNTA4Nj
-Y4MzkxLC0xNjU3NDg2MDRdfQ==
+eyJoaXN0b3J5IjpbLTU4NDIyMTA4OCwxNzMzMDcyMzMsMTUwOD
+Y2ODM5MSwtMTY1NzQ4NjA0XX0=
 -->
