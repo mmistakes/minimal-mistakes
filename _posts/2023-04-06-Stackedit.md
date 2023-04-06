@@ -12,9 +12,9 @@ StackEdit을 처음 열고 google계정으로 로그인을 하면, Main workspac
 
 *참고: 내 맥미니는 미국에서 구매해서 언어 설정이 영어로 되어있어 한국어로 뭐라 되어있는지 잘 모른다. 그래서 단축키도 함께 남기도록 하겠다.*
 
-1. 메뉴바 왼쪽에서 **Safari**를 클릭 후 Settings를 누른다. (단축키: "cmd + ,")
-2. advanced
+1. 메뉴바 왼쪽에서 **Safari**를 클릭 후 Settings를 누른다. (단축키: "**cmd + ,**")
+2. **advanced**(맨 오른쪽의 톱니바퀴 두 개)를 누른 후 맨 밑에 **Show Develop menu in menu bar**가 체크 해제되어있는 경
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjU1OTc5OTEsMTczMzA3MjMzLDE1MD
-g2NjgzOTEsLTE2NTc0ODYwNF19
+eyJoaXN0b3J5IjpbMTMyNTA2Nzk2NiwxNzMzMDcyMzMsMTUwOD
+Y2ODM5MSwtMTY1NzQ4NjA0XX0=
 -->
