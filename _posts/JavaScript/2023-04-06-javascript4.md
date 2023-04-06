@@ -9,7 +9,7 @@ toc: true
 toc_sticky: true
 
 author_profile: true
-date: 2023-04-05
+date: 2023-04-06
 ---
 
 ## JavaScript ES6 문법
