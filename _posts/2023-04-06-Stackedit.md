@@ -21,12 +21,14 @@ StackEdit을 처음 열고 google계정으로 로그인을 하면, Main workspac
 
 ![enter image description here](https://raw.githubusercontent.com/arrow-economist/arrow-economist.github.io/master/images/stackedit4.png)
 
-4. 내 깃허브 블로그 주소는 username.github.io이기 때문에 Repository URL에는 https://github.com/username/username.github.io 까지 입력을 해준다. 나는 _posts 폴더에 포스트를 해서 블로그에 업로드를 하므로 Folder path에는 _posts를 적어준다. 그리고 OK를 누르면 선
+4. 내 깃허브 블로그 주소는 username.github.io이기 때문에 Repository URL에는 https://github.com/username/username.github.io 까지 입력을 해준다. 나는 _posts 폴더에 포스트를 해서 블로그에 업로드를 하므로 Folder path에는 _posts를 적어준다. 그리고 OK를 누르면 private까지 허용할 거냐는 체크박스가 하나 뜬다.
 
-여기에서 **Show JavaScript Console**(단축키: "**ctrl + cmd + c**")를 누르면 자바스크립트를 입력할 수 있는 콘솔창이 열린다.
+5. 이 때 확인버튼을 누르지 말고, 각자의 브라우저에서 Develop tool을 열어야 한다. 사파리는 다음과 같다. 왼쪽 메뉴 바의 Develop을 누르고,  **Show JavaScript Console**(단축키: "**ctrl + cmd + c**")를 누르면 자바스크립트를 입력할 수 있는 콘솔창이 열린다. 콘솔 창에 밑의 코드를 입력한다.
+
+> Blockquote
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NzUzMDk2MCwtMTA2NTEwMTIwNyw5OT
-M4MDg4NjYsMTczMzA3MjMzLDE1MDg2NjgzOTEsLTE2NTc0ODYw
-NF19
+eyJoaXN0b3J5IjpbLTE4MDgyMTMyMDUsLTEwNjUxMDEyMDcsOT
+kzODA4ODY2LDE3MzMwNzIzMywxNTA4NjY4MzkxLC0xNjU3NDg2
+MDRdfQ==
 -->
