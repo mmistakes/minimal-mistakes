@@ -7,7 +7,7 @@ StackEdit의 장점은 인터넷만 연결되어있으면 어디서든 구글 �
 하지만 StackEdit에 sign up(in)한 후 Workspaces에 들어가서 깃허브로 연동하려고 하면 아래와 같은 에러가 자꾸 뜨는 것을 확인할 수 있다.
 
 
-
+![enter image description here](https://photos.app.goo.gl/TazMkauDt864R14E8)
 # Files
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
@@ -147,5 +147,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyODkwMDAyNV19
+eyJoaXN0b3J5IjpbNzI4NzE1NTAxLC01Mjg5MDAwMjVdfQ==
 -->
