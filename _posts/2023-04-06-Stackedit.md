@@ -19,13 +19,13 @@ StackEdit을 처음 열고 google계정으로 로그인을 하면, Main workspac
 
 3. 그러면 이제 메뉴 바에서 Develop 탭이 있는 것을 확인할 수 있는데, 이제 다시 StackEdit을 키고 Workspaces를 눌러서 Github 연동을 눌러보자. 그러면 밑의 이미지와 같은 화면이 뜬다.
 
-![enter image description here](https://raw.githubusercontent.com/arrow-economist/arrow-economist.github.io/master/images/stackedit4.png)
+
 
 4. 내 깃허브 블로그 주소는 username.github.io이기 때문에 Repository URL에는 https://github.com/username/username.github.io 까지 입력을 해준다. 나는 _
 
 여기에서 **Show JavaScript Console**(단축키: "**ctrl + cmd + c**")를 누르면 자바스크립트를 입력할 수 있는 콘솔창이 열린다.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkzODA4ODY2LDE3MzMwNzIzMywxNTA4Nj
-Y4MzkxLC0xNjU3NDg2MDRdfQ==
+eyJoaXN0b3J5IjpbLTEwNjUxMDEyMDcsOTkzODA4ODY2LDE3Mz
+MwNzIzMywxNTA4NjY4MzkxLC0xNjU3NDg2MDRdfQ==
 -->
