@@ -1,6 +1,8 @@
-# StackEdit과 Github
+# StackEdit과 Github 연동 시 404에러 해결방법
 
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
+깃허브 블로그를 시작했더니 md, 즉 마크다운 문법으로 글을 작성해야 된다는 것을 알았다. 그냥 블로그와는 쓰는게 조금 달라서 어색한데, 이 때 글 작성을 도와주는 좋은 온라인 사이트로 StackEdit을 많이 추천해주더라!
+
+StackEdit의 장점은 인터넷만 연결되어있으면 어디서든 구글 계정으로 접속하여 글을 쓸 수 있고, 깃허브를 연동할 수 있다는 점이다. (맹
 
 
 # Files
@@ -142,5 +144,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTQ2NDkzNF19
+eyJoaXN0b3J5IjpbMzM5MDk5ODUzXX0=
 -->
