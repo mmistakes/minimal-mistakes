@@ -1,5 +1,5 @@
 ---
-title: "JavaScript 2주차"
+title: "JavaScript ES6 문법"
 categories:
   - JavaScript
 tags:
