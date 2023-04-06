@@ -28,7 +28,8 @@ order:
 
 distribution:
   - image_path: "/assets/images/incontext_influences/distribution.svg"
-    title: "Distribution of in-context influences on BoolQ and SuperGLUE-RTE on OPT models."
+    title: "Distribution of in-context influences on OPT models for Hellaswag."
+  
 
 bins:
   - image_path: "/assets/images/incontext_influences/influence_bins.svg"
@@ -54,9 +55,7 @@ case_study:
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
-<script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 
 > Large language models have recently enabled a prompting based, few-shot learning paradigm referred to as in-context learning (ICL). However, the ICL paradigm can be quite sensitive to small differences in the input prompt, such as the template of the prompt or the specific examples chosen. 
 To handle this variability, we leverage the framework of influences to select which examples to use in a prompt.
@@ -172,7 +171,10 @@ In contrast to training new models, calculating in-context influences is inexpen
 
 In the following figure, we visualize the distribution of computed influences of training examples on ICL performance. 
 
-{% include gallery id="distribution" layout="" caption="Distribution of in-context influences on Hellaswag with OPT models." %}
+<div>
+  <canvas id="distribution_plot" width="800" height="450"></canvas>
+</div>
+{% include blog_incontext-influences_distribution.html %}
 
 
 The two tails of the influence distribution identify highly impactful in-context examples.
@@ -197,7 +199,6 @@ in-context influences.
 In the above section, we discuss the influence-based formula adapted to study in-context examples.
 The above calculation result in a distribution of example influences over the entire train set:
 
-
 Here, observing two tails of the influence distribution helps us identify highly impactful in-context examples.
 We can use the top influential examples to create the "best" prompt, or use the bottom influential examples to create the "worst" performing prompt for ICL. -->
 Once we have computed in-context influences, we can use these influences to select examples for ICL. 
@@ -205,7 +206,13 @@ Intuitively, examples with more positive influences should lead to better ICL pe
 
 In the following figure, we partition the training data into 10 percentile bins according to their influence scores, and measure the validation performance of prompts using examples from each bin. 
 
-{% include gallery id="bins" layout="" caption="Validation accuracy improves as examples are selected in increasing influence bins." %}
+<div>
+  <canvas id="boolq" width="800" height="450"></canvas>
+  <canvas id="wic" width="800" height="450"></canvas>
+  <canvas id="openbookqa" width="800" height="450"></canvas>
+
+</div>
+{% include blog_incontext-influences_influence-bin.html %}
 
 We find a steady and consistent trend: examples with higher influences do in fact result in higher test performance in most models and tasks! 
 Interestingly, we find a significant difference between examples with positive and negative influences: a 22.2% 

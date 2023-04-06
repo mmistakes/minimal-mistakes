@@ -1,0 +1,62 @@
+<script>
+		fetch('../assets/other/incontext_influences/distribution.json')
+        .then(response => response.json())
+        .then(data => {
+          // extract the x and y values from the data
+          const datasets = data.map((datum, index) => ({
+            label: datum.model,
+            data: datum.y,
+            borderColor: ['#FEE12B', '#4D71C8', '#E83E3E'][index], // using fixed colors for the 3 models
+            fill: false
+          }));
+
+          // create the chart using Chart.js
+          const ctx = document.getElementById('distribution_plot').getContext('2d');
+          const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+              labels: data[0].x.map(x => parseFloat(x).toFixed(4)), // round x axis labels to 4 decimals
+              datasets: datasets
+            },
+            options: {
+              plugins: {
+                title: {
+                  display: true,
+                  text: 'Task: Hellaswag',
+                  font: {
+                    size: 18
+                  }
+                },
+                // subtitle: {
+                //   display: true,
+                //   text: 'Distribution of in-context influences for Hellaswag on OPT models'
+                // }
+              },
+              scales: {
+                x: {
+                  title: {
+                    display: true,
+                    text: 'In-context Influence'
+                  },
+                  ticks: {
+                    autoSkip: true, // auto skip x-axis labels if there are too many to fit
+                    maxTicksLimit: 10 // limit the number of x-axis labels to 10
+                  }
+                },
+                y: {
+                  title: {
+                    display: true,
+                    text: 'Density'
+                  }
+                },
+              },
+              layout: {
+                  padding: 20
+              }
+            }
+          });
+          // adjust the chart size to make it longer
+          // chart.canvas.parentNode.style.width = '600px';
+          // chart.canvas.parentNode.style.height = '400px';
+        });
+</script>
