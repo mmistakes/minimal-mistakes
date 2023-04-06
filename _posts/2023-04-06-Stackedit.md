@@ -51,11 +51,13 @@ window.XMLHttpRequest =  class MyXMLHttpRequest extends window.XMLHttpRequest {
 
 입력하고 엔터를 누른 후, OK버튼을 누르도록 하자. 그러면 완료!
 
-
+![enter image description here](https://raw.githubusercontent.com/arrow-economist/arrow-economist.github.io/master/images/stackedit5.png)
 
 보면 오른쪽 Workspaces에 current로 _pages가 등록되어있는 것을 확인할 수 있다!
+
+이렇게까지 하면 이제 깃허브 블로그에 글을 쓸 준비가 완료되었다는 뜻이다. 다른 컴퓨터로도 들어가보니 동기화도 빠르게 잘 되는 것 같다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NTA1NjgwMywxNzQwNzQ4NzE1LC0xMD
-Y1MTAxMjA3LDk5MzgwODg2NiwxNzMzMDcyMzMsMTUwODY2ODM5
-MSwtMTY1NzQ4NjA0XX0=
+eyJoaXN0b3J5IjpbMTA3MjgxMDkzNSwxMjk1MDU2ODAzLDE3ND
+A3NDg3MTUsLTEwNjUxMDEyMDcsOTkzODA4ODY2LDE3MzMwNzIz
+MywxNTA4NjY4MzkxLC0xNjU3NDg2MDRdfQ==
 -->
