@@ -10,10 +10,11 @@ StackEdit을 처음 열고 google계정으로 로그인을 하면, Main workspac
 
 우선 본인이 사용하는 브라우저의 Develop tool이 필요하다. 나는 이 계정을 사파리로 관리하고 있기 때문에 사파리를 기준으로 설명을 하겠다. (엣지 등의 크로미움 기반 브라우저는 딱히 다른 설정할 필요 없이 F12를 누르면 develop tool로 들어가지는 것으로 알고있다.)
 
-참고: 내 맥미니는 미국에서 구매해서 언어 설정이 영어로 되어있어 한국어로 뭐라 되어있는지
+*참고: 내 맥미니는 미국에서 구매해서 언어 설정이 영어로 되어있어 한국어로 뭐라 되어있는지 잘 모른다. 그래서 단축키도 함께 남기도록 하겠다.*
 
-메뉴바 왼쪽에서 **Safari**를 클릭 후 Settings를 누른다.
+1. 메뉴바 왼쪽에서 **Safari**를 클릭 후 Settings를 누른다. (단축키: "cmd + ,")
+2. advanced
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4ODY5ODc3MSwxNzMzMDcyMzMsMTUwOD
-Y2ODM5MSwtMTY1NzQ4NjA0XX0=
+eyJoaXN0b3J5IjpbLTE0NjU1OTc5OTEsMTczMzA3MjMzLDE1MD
+g2NjgzOTEsLTE2NTc0ODYwNF19
 -->
