@@ -92,6 +92,7 @@ To classify the final sentence, we have given this prompt as input to GPT-3 to g
 In this case, it turns out that the model can correctly predict `Negative` as being a more likely completion than `Positive`. 
 
 Note that in this example, we were able to adapt the LLM to do sentiment analysis with *no parameter updates* to the model.
+In the fine-tuning paradigm, doing a similar task would often require more human-annotated data and extra training.
 
 <!-- Instead of fine-tuning on a task-specific dataset, we have instead constructed a prompt containing both a few examples of input-output pairs as well as the new input to be classified. 
 The LLM then learns by conditioning on the prompt. --> 
@@ -288,6 +289,11 @@ Our framework can quantify the marginal contribution of an example as well as di
 
 For more details and additional experiments (ablation studies, case studies on recency bias, and comparisons to baselines) please check out our [paper](https://arxiv.org/abs/2302.11042) and [code](https://github.com/DebugML/incontext_influences).
 <!-- We have also included in our pipeline in-context influence calculations based on the new [LLaMA](https://arxiv.org/abs/2302.13971) models 🦙. -->
+
+Concurrent to our work, Chang and Jia (2023) also employ influences to study in-context learning.
+They show the efficacy of influence-based selection on many non-SuperGLUE tasks.
+You can check out their work [here](https://arxiv.org/abs/2212.10378).
+{: .notice--info}
 
 ### Citation
 
