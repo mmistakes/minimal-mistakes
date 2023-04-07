@@ -267,4 +267,39 @@ Unlike Java, Kotlin doesn't provide a type for handling optional values. As we s
 
 However, the Kotlin community has created a library called `Arrow` that provides a lot of functional programming constructs, including an `Option` type. In the set-up section, we already imported the dependency from Arrow, so we can use it in our code.
 
-The type defined by the Arrow library to manage optional values is defined as `arrow.core.Option<out A>`. Basically, it's a [Algebraic Data Type (ADT)](https://blog.rockthejvm.com/algebraic-data-types/), technically a sum type, which can be either `Some` or `None`.
+The type defined by the Arrow library to manage optional values is defined as `arrow.core.Option<out A>`. Basically, it's a [Algebraic Data Type (ADT)](https://blog.rockthejvm.com/algebraic-data-types/), technically a sum type, which can be either `Some<A>` or `None`.
+
+The `Some<A>` type represents a value of type `A`, while the `None` type represents the absence of a value. In other words, `Option` is a type that can either contain a value or not.
+
+In Arrow, we can create an `Option` value using directly the available constructors:
+
+```kotlin
+val rockTheJvmJob: Some<Job> =
+    Some(Job(Company("Rock The Jvm"), Role("Technical Writer"), Salary(100_000.00)))
+val noJob: None = None
+```
+
+The library also provides some useful extension functions to create `Option` values:
+
+```kotlin
+val appleJob: Option<Job> = 
+    Job(Company("Apple, Inc."), Role("Software Engineer"), Salary(70_000.00)).some()
+val noAppleJob: Option<Job> = none()
+```
+
+Be careful: Invoking the `some()` function on a `null` value will return a `Some(null)`. If you want to create an `Option` value from a nullable value, you should use the `Option.fromNullable` function:
+
+```kotlin
+val microsoftJob: Job? =
+    Job(Company("Microsoft"), Role("Software Engineer"), Salary(80_000.00))
+val maybeMsJob: Option<Job> = Option.fromNullable(microsoftJob)
+val noMsJob: Option<Job> = Option.fromNullable(null)  // noMsJob is None
+```
+
+Instead, to convert a nullable value to an `Option` value, we can also use the `toOption()` extension function:
+
+```kotlin
+val googleJob: Option<Job> =
+    Job(Company("Google"), Role("Software Engineer"), Salary(90_000.00)).toOption()
+val noGoogleJob: Option<Job> = null.toOption()  // noGoogleJob is None
+```
