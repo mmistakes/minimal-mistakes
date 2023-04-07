@@ -63,6 +63,9 @@ window.XMLHttpRequest =  class MyXMLHttpRequest extends window.XMLHttpRequest {
 보면 오른쪽 Workspaces에 current로 _pages가 등록되어있는 것을 확인할 수 있다!
 
 이렇게까지 하면 이제 깃허브 블로그에 글을 쓸 준비가 완료되었다는 뜻이다. 다른 컴퓨터로도 들어가보니 동기화도 빠르게 잘 되는 것 같다.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTExOTk4OSwtMzAxNzgyNTVdfQ==
+eyJoaXN0b3J5IjpbMTY5MzM3NzUxMSwtMTc5MTE5OTg5LC0zMD
+E3ODI1NV19
 -->
