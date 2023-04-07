@@ -8,11 +8,6 @@
 
 /* http://www.456bereastreet.com/archive/200711/screen_readers_sometimes_ignore_displaynone/ */
 
-  /* buy me a coffe btn */
-.fa-coffee {
-  color: #FDDC3F;
-}
-
 .hidden,
 .is--hidden {
   display: none;
@@ -595,4 +590,9 @@ a.reversefootnote {
   .page__footer {
     position: static;
   }
+}
+
+/* buy me a coffe kakao pay btn */
+.fa-coffee {
+  color: #FDDC3F;
 }
