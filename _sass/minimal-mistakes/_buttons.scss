@@ -39,7 +39,7 @@
   (info, $info-color),
   (facebook, $facebook-color),
   (twitter, $twitter-color),
-  (linkedin, $linkedin-color)
+  (linkedin, $linkedin-color),
   (coffee, #FDDC3F);
 
   @each $buttoncolor, $color in $buttoncolors {
