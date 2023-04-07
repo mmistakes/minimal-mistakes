@@ -16,15 +16,19 @@
       <li>
         <a href="/categories/til" class="">TIL ({{ category[1].size }})</a>
       </li>
-      {% endif %} {% endfor %} {% for category in site.categories %} {% if
-      category[0] == "JavaScript" %}
+      {% endif %} {% endfor %}
+    </ul>
+    <ul>
+      {% for category in site.categories %} {% if category[0] == "JavaScript" %}
       <li>
         <a href="/categories/javascript" class=""
           >JavaScript ({{ category[1].size }})</a
         >
       </li>
-      {% endif %} {% endfor %} {% for category in site.categories %} {% if
-      category[0] == "Algorithm" %}
+      {% endif %} {% endfor %}
+    </ul>
+    <ul>
+      {% for category in site.categories %} {% if category[0] == "Algorithm" %}
       <li>
         <a href="/categories/algorithm" class=""
           >Algorithm ({{ category[1].size }})</a
