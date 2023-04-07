@@ -1,5 +1,5 @@
 ---
-categories: Posts
+categories: Markdown
 ---
 
 
