@@ -325,3 +325,48 @@ val googleJob: Option<Job> =
     ).toOption()
 val noGoogleJob: Option<Job> = null.toOption() // noGoogleJob is None
 ```
+
+Now that we know how to create an `Option` value, let's see how we can use it. First of all, we create the version of the `Jobs` module that uses the `Option` type:
+
+```kotlin
+TODO()
+```
+
+As you may guess, the `Option` type is defined as a sealed class, so we can use the `when` expression to handle the two possible cases:
+
+```kotlin
+fun printOptionJob(maybeJob: Option<Job>) {
+    when (maybeJob) {
+        is Some -> println("Job found: ${maybeJob.value}")
+        is None -> println("Job not found")
+    }
+}
+```
+
+In this case, we can call the `value` property of the `Some` type to get the actual value because Kotlin is smart casting the original `maybeJob` value to the `Some` type.
+
+If we call the above function with the `awsJob` value, we get the expected output:
+
+```text
+Job found: Job(id=JobId(value=1), company=Company(name=AWS), role=Role(name=Software Engineer), salary=Salary(value=100000.0))
+```
+
+However, working the pattern matching is not always very convenient. A lot of time, we need to transform and combine different `Option` values. As it happens in Scala, the `Option` type is a [monad](https://blog.rockthejvm.com/monads/), so we can use the `map`, `flatMap` function to transform and combine `Option` values. Let's see and example.
+
+Imagine we want to create a function that, given a job id, it returns the gap between the job salary and the maximum salary for the same company. If the job doesn't exist, we want to return `None`. We can implement a first version of such a function using directly `map` and `flatMap` functions:
+
+```kotlin
+class JobsService(private val jobs: Jobs) {
+
+    fun getSalaryGapWithMax(jobId: JobId): Option<Double> {
+        val maybeJob: Option<Job> = jobs.findById(jobId)
+        val maybeMaxSalary: Option<Salary> =
+            jobs.findAll().maxBy { it.salary.value }.toOption().map { it.salary }
+        return maybeJob.flatMap { job ->
+            maybeMaxSalary.map { maxSalary ->
+                maxSalary.value - job.salary.value
+            }
+        }
+    }
+}
+```
