@@ -107,7 +107,7 @@ author:
   name             : "Arrow"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "A Ph.D. student in economics."
-  location         : "United States"
+  location         : "Earth"
   email            : "arrow.economist@gmail.com"
   links:
     - label: "Email"
