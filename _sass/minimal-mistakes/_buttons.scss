@@ -40,7 +40,7 @@
   (facebook, $facebook-color),
   (twitter, $twitter-color),
   (linkedin, $linkedin-color)
-  (buy-me-a-coffee, #FDDC3F);
+  (coffee, #FDDC3F);
 
   @each $buttoncolor, $color in $buttoncolors {
     &--#{$buttoncolor} {
