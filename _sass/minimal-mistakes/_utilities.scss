@@ -319,6 +319,11 @@ body:hover .visually-hidden button {
   .fa-youtube {
     color: $youtube-color;
   }
+  
+  /* buy me a coffe kakao pay btn */
+  .fa-coffee {
+    color: $background-color;
+  }
 
   .fa-xing,
   .fa-xing-square {
@@ -590,9 +595,4 @@ a.reversefootnote {
   .page__footer {
     position: static;
   }
-}
-
-/* buy me a coffe kakao pay btn */
-.fa-coffee {
-  color: $background-color;
 }
