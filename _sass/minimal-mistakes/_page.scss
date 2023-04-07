@@ -30,7 +30,12 @@ body {
           flex-direction: column;
 }
 
-div.donation-btn {
+div#buy-me-a-coffee-btn {
+  text-align: center;
+  margin-top: 2em;
+}
+
+div#kakaopay-btn {
   text-align: center;
   margin-top: 2em;
 }
