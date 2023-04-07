@@ -41,7 +41,7 @@
   (twitter, $twitter-color),
   (linkedin, $linkedin-color),
   (coffee, #FDDC3F),
-  (comment, #CF7DFF;
+  (comment, #CF7DFF);
 
   @each $buttoncolor, $color in $buttoncolors {
     &--#{$buttoncolor} {
