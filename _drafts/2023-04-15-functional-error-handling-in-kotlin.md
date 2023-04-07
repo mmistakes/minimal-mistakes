@@ -274,16 +274,28 @@ The `Some<A>` type represents a value of type `A`, while the `None` type represe
 In Arrow, we can create an `Option` value using directly the available constructors:
 
 ```kotlin
-val rockTheJvmJob: Some<Job> =
-    Some(Job(Company("Rock The Jvm"), Role("Technical Writer"), Salary(100_000.00)))
+val awsJob: Some<Job> =
+    Some(
+        Job(
+            JobId(1),
+            Company("AWS"),
+            Role("Software Engineer"),
+            Salary(100_000.00),
+        ),
+    )
 val noJob: None = None
 ```
 
 The library also provides some useful extension functions to create `Option` values:
 
 ```kotlin
-val appleJob: Option<Job> = 
-    Job(Company("Apple, Inc."), Role("Software Engineer"), Salary(70_000.00)).some()
+val appleJob: Option<Job> =
+    Job(
+        JobId(2),
+        Company("Apple, Inc."),
+        Role("Software Engineer"),
+        Salary(70_000.00),
+    ).some()
 val noAppleJob: Option<Job> = none()
 ```
 
@@ -291,15 +303,25 @@ Be careful: Invoking the `some()` function on a `null` value will return a `Some
 
 ```kotlin
 val microsoftJob: Job? =
-    Job(Company("Microsoft"), Role("Software Engineer"), Salary(80_000.00))
+    Job(
+        JobId(3),
+        Company("Microsoft"),
+        Role("Software Engineer"),
+        Salary(80_000.00)
+    )
 val maybeMsJob: Option<Job> = Option.fromNullable(microsoftJob)
-val noMsJob: Option<Job> = Option.fromNullable(null)  // noMsJob is None
+val noMsJob: Option<Job> = Option.fromNullable(null) // noMsJob is None
 ```
 
 Instead, to convert a nullable value to an `Option` value, we can also use the `toOption()` extension function:
 
 ```kotlin
 val googleJob: Option<Job> =
-    Job(Company("Google"), Role("Software Engineer"), Salary(90_000.00)).toOption()
-val noGoogleJob: Option<Job> = null.toOption()  // noGoogleJob is None
+    Job(
+        JobId(4),
+        Company("Google"),
+        Role("Software Engineer"),
+        Salary(90_000.00),
+    ).toOption()
+val noGoogleJob: Option<Job> = null.toOption() // noGoogleJob is None
 ```
