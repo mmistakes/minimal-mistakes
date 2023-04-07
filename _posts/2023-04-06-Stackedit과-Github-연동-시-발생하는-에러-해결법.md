@@ -1,5 +1,6 @@
 ---
-categories: Markdown
+categories:
+  - Markdown
 ---
 
 
