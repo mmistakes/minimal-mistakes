@@ -5,7 +5,7 @@ title: "Jekyll Blog Setting"
 
 date: 2023-04-08
 show_date: true
-comment: true
+comments: true
 ---
 
 
