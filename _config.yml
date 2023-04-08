@@ -74,7 +74,7 @@ google:
 google_site_verification :
 bing_site_verification   :
 yandex_site_verification :
-naver_site_verification  :
+naver_site_verification  : "4cf16bf04bfdc2f386cf084f4cc8f8e089cd2e54"
 
 # Social Sharing
 twitter:
@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "Eric Kim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Prepare for becoming backend engineer"
+  bio              : "Prepare for becoming a backend engineer"
   location         : "South Korea, Incheon"
   email            :
   links:
