@@ -5,6 +5,7 @@ title: "Jekyll Blog Setting"
 
 date: 2023-04-08
 show_date: true
+comment: true
 ---
 
 
@@ -21,3 +22,6 @@ show_date: true
 Link: https://mmistakes.github.io/minimal-mistakes/docs/configuration/#post-dates
 
 ## 댓글 & 구글 애널리틱스 추가
+DISQUS
+https://disqus.com/home/
+
