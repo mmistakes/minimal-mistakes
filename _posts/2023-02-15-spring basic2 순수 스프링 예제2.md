@@ -1,5 +1,11 @@
 ---
 categories: "learning"
+tag: "inflearn"
+toc: true
+toc_sticky: true
+author_profile: false
+sidebar: 
+    nav: "docs"
 ---
 
 # 1. 주문과 할인 도메인 설계

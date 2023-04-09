@@ -1,5 +1,11 @@
 ---
 categories: "learning"
+tag: "inflearn"
+toc: true
+toc_sticky: true
+author_profile: false
+sidebar: 
+    nav: "docs"
 ---
 
 # 1. 빈 생명주기 콜백 시작

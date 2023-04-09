@@ -1,5 +1,11 @@
 ---
 categories: "learning"
+tag: "inflearn"
+toc: true
+toc_sticky: true
+author_profile: false
+sidebar: 
+    nav: "docs"
 ---
 
 # 1. 정적 컨텐츠

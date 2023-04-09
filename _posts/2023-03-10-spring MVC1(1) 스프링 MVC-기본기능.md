@@ -1,5 +1,11 @@
 ---
 categories: "learning"
+tag: "inflearn"
+toc: true
+toc_sticky: true
+author_profile: false
+sidebar: 
+    nav: "docs"
 ---
 
 # 1. 로깅 간단히 알아보기
