@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 0. JdbcTemplate 소개와 설정
 
 - SQL을 직접 사용하는 경우에 스프링이 제공하는 JdbcTemplate은 아주 좋은 선택지다. JdbcTemplate 은 JDBC를 매우 편리하게 사용할 수 있게 도와준다.

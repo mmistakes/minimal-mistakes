@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 0. view 환경 설정
 
 ## Welcome Page 만들기

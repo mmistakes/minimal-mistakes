@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 0. Bean Validation - 시작
 
 - `implementation 'org.springframework.boot:spring-boot-starter-validation'` 추가

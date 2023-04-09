@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 0. 요구사항 정리
 
 ## 요구사항

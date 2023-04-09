@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 0. 프로젝트 생성
 
 - spring initializer 로 프로젝트 생성한다. 이때 dependency 는 아무 것도 넣지 않는다.

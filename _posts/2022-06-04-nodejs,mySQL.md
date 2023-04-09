@@ -1,3 +1,8 @@
+---
+categories: "learning"
+---
+
+
 # 1. mySQL과 nodejs 연결
 
 - `npm install mysql`을 통해 모듈 다운로드

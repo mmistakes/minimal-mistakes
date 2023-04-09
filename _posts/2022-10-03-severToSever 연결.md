@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 0. Server 로의 연결
 
 - RestTemplate 을 통해 서버 연결

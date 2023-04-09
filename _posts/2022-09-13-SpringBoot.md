@@ -1,3 +1,8 @@
+---
+categories: "learning"
+---
+
+
 # 1. API 생성
 
 - Intellij에서 new project -> spring boot -> gradle, java 로 생성(파일 이름 springstart)

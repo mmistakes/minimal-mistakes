@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 0. 프론트 컨트롤러 패턴 소개
 
 - ![image-20230308211958964](../images/2023-03-08-spring MVC1(3) MVC 프레임워크 만들기/image-20230308211958964.png)

@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 1. 스프링 컨테이너 생성
 
 - ApplicationContext 를 스프링 컨테이너라 한다. 

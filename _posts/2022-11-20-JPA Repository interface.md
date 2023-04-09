@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # JpaRepository 
 
 - JPA 개론 파일과 이어짐(bookmanager)

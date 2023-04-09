@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 1. API 예외 처리 - 시작
 
 **API 예외 처리는 어떻게 해야할까?**

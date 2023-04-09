@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 0. 스프링 MVC 전체 구조
 
 - ![image-20230309173306041](../images/2023-03-09-spring MVC1 스프링 MVC-구조이해/image-20230309173306041.png)

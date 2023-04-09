@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 1. QueryMethod
 
 - UserRepository 에 jpa 에서 제공하는 *Query subject keywords* 를 통해 QueryMethod 생성가능

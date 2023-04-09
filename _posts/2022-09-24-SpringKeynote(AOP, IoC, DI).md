@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 0. Spring
 
 - 테스트의 용이성, 느슨한 결합에 중점을 두고 개발

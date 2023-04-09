@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 0. H2 데이터베이스 설정
 
 - H2 다운 및 설치 

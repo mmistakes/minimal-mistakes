@@ -1,3 +1,8 @@
+---
+categories: "learning"
+---
+
+
 # 1. Hello world
 
 - ```js

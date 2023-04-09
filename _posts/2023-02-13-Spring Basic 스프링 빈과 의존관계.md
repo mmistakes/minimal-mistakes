@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 1. 요구사항 정리
 
 - 데이터: 회원ID, 이름

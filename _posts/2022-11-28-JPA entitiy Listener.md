@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 0. Listener
 
 - listener 란 이벤트를 관찰하고 있다가 이벤트가 발생하면 특정 동작을 진행하는 것

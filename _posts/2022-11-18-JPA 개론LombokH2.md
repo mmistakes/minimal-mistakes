@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 0. JPA 소개
 
 ### ORM (Object Relational Mapping) 이란?

@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 1. Spring Boot Validation
 
 ### Validation이란

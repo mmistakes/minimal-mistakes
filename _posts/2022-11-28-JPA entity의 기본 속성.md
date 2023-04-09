@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 0. entity 구조
 
 - ```java

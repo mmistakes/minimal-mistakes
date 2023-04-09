@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 0. Spring Security 란
 
 ## 시큐리티가 필요한 이유

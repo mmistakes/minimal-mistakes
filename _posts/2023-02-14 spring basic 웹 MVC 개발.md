@@ -1,3 +1,7 @@
+---
+categories: "learning"
+---
+
 # 0. 홈화면 추가
 
 ## HomeController 추가
