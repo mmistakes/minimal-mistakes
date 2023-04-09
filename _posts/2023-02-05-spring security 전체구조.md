@@ -1,6 +1,6 @@
 ---
 categories: "learning"
-tag: "inflearn"
+tag: [inflearn,springSecurity]
 ---
 
 # 0. 스프링 시큐리티의 큰 그림
