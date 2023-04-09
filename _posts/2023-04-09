@@ -1,0 +1,155 @@
+---
+
+layout: single
+title: "JPA 시작하기"
+---
+
+# **JPA 시작하기**
+## **프로젝트 생성**
+1. DB 설치하기
+    - H2 사용 : 실습용 DB, 간단하게 사용 가능하고 웹 상황에서 콘솔창 볼 수 있음 <br><br>
+2. 프로젝트 생성하기
+    - pom.xml
+    ```java
+    <?xml version="1.0" encoding="UTF-8"?>
+    <project xmlns="http://maven.apache.org/POM/4.0.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        <modelVersion>4.0.0</modelVersion>
+        <groupId>jpa-basic</groupId>
+        <artifactId>ex1-hello-jpa</artifactId>
+        <version>1.0.0</version>
+        <properties>
+            <maven.compiler.source>18</maven.compiler.source>
+            <maven.compiler.target>18</maven.compiler.target>
+        </properties>
+        <dependencies>
+            <!-- JPA 하이버네이트 -->
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-entitymanager</artifactId>
+                <version>5.3.10.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.xml.bind</groupId>
+                <artifactId>jaxb-api</artifactId>
+                <version>2.3.0</version>
+            </dependency>
+            <!-- H2 데이터베이스 -->
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>2.1.214</version>
+            </dependency>
+        </dependencies>
+    </project>
+    ```
+    - persistence.xml
+    ```java
+    <?xml version="1.0" encoding="UTF-8"?>
+    <persistence version="2.2"
+                xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+
+        <persistence-unit name="hello">
+            <properties>
+                <!-- 필수 속성 -->
+                <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+                <property name="javax.persistence.jdbc.user" value="sa"/>
+                <property name="javax.persistence.jdbc.password" value=""/>
+                <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/test"/>
+                <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+
+                <!-- 옵션 -->
+                <property name="hibernate.show_sql" value="true"/>
+                <property name="hibernate.format_sql" value="true"/>
+                <property name="hibernate.use_sql_comments" value="true"/>
+                <!--<property name="hibernate.hbm2ddl.auto" value="create" />-->
+            </properties>
+        </persistence-unit>
+    </persistence>
+    ```
+<br>  
+
+## **JPA 구동 방식**
+<img width="492" alt="image" src="https://user-images.githubusercontent.com/114092152/230784849-65b57fe3-f6d1-4d35-a6a8-31ad55f404a9.png">
+
+<br>
+
+## **JpaMain 클래스 생성**
+
+```java
+package hellojpa;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+public class JpaMain {
+    public static void main(String[] args) {
+        EntityManagerFactory emf =  Persistence.createEntityManagerFactory("hello");
+        EntityManager em = emf.createEntityManager();
+        emf.close();
+    }
+}
+```
+- Persistence 클래스에서 persistence.xml의 persistenceUnitName을 인자 값으로 주면 해당 persistence Unit에 지정된 설정 정보들을 토대로 
+EntityManagerFactory를 만들어 줌
+- EntityManagerFactory에서 EntityManager를 만들어 줌
+- 생성된 EntityManager로 DB에 SQL을 전달하며 데이터를 CRUD 함
+
+<br>
+
+## **Member.java**
+```java
+package hellojpa;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Member {
+
+    @Id
+    private Long id;
+    private String name;
+
+    public Member() {
+
+    }
+    public Member(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+```
+- `@Entity` : JPA가 관리할 객체
+- `@Id` : 데이터베이스 PK와 매핑
+
+
+
+
+
+
+
+
+
+
+
