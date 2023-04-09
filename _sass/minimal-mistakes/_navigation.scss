@@ -504,18 +504,20 @@
      ========================================================================== */
 
 .toc {
+  min-width: 350px;
   font-family: $sans-serif-narrow;
-  color: $gray;
+  color: $dark;
   background-color: $background-color;
-  border: 1px solid $border-color;
+  border : none;   /* default : border: 1px solid $border-color; */
+  border-left: 1px solid $border-color;
   border-radius: $border-radius;
   -webkit-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
 
   .nav__title {
-    color: #fff;
+    color: $dark-gray;
     font-size: $type-size-6;
-    background: $primary-color;
+    background: none; /* default : $primary-color; */
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
@@ -540,10 +542,11 @@
   a {
     display: block;
     padding: 0.25rem 0.75rem;
-    color: $muted-text-color;
+    color: $dark-gray; /*default : $muted-text-color;*/
     font-weight: bold;
     line-height: 1.5;
-    border-bottom: 1px solid $border-color;
+    border:none; /* default : border-bottom: 1px solid $border-color; */
+    
 
     &:hover {
       color: $text-color;
