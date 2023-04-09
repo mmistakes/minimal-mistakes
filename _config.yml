@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Hobeen-Kim"
+title                    : "Andy_Note"
 title_separator          : "|"
-subtitle                 : "미래를 예측하는 가장 좋은 방법은 미래를 창조하는 것이다" # site tagline that appears below site title in masthead
+subtitle                 : "안심하세요! 대부분 버그입니다." # site tagline that appears below site title in masthead
 name                     : "KIM HOBEEN"
 description              : "김호빈의 블로그입니다."
 url                      : "https://hobeen-kim.github.io"
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Kim Hobeen"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "미래를 창조하는 중입니다."
+  bio              : "미래를 예측하는 가장 좋은 방법은 미래를 창조하는 것이다."
   location         : "South Korea"
   email            : "sksjsksh32@naver.com"
   links:
