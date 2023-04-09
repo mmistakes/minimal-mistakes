@@ -1,5 +1,6 @@
 ---
 categories: "learning"
+tag: "inflearn"
 ---
 
 # 0. 스프링 시큐리티의 큰 그림

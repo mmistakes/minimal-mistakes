@@ -1,5 +1,7 @@
 ---
 categories: "learning"
+tag: "inflearn"
+
 ---
 
 # 0. view 환경 설정
