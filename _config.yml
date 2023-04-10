@@ -18,14 +18,14 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "ko-KR"
 title                    : "모든 IT 전당포"
 title_separator          : "|"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "모든 물품 다 받습니다"
 name                     : "개발자 : Taemin KIM"
 description              : "프리랜서"
 url                      : "https://TaeminKIMsl.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "TaeminKIMsl/TaeminKIMsl.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/LOGO copy.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
