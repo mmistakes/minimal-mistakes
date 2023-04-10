@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Planet Dreren"
+title                    : ""
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "monsangter"
@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Sangdo Bae"
+  name             : "Monsangter"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I'm a future development master"
+  bio              : "I'm a future development grand master"
   location         : "South Korea"
   email            : sangdobae@icloud.com
   links:
