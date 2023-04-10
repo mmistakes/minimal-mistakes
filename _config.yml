@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Monsangter"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.jpeg"
   bio              : "I'm a future development grand master"
   location         : "South Korea"
   email            : 
