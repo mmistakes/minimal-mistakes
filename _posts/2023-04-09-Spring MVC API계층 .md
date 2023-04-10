@@ -142,6 +142,8 @@ Spring MVC는 XML이나 Java Config 등의 설정 파일을 이용하여 애플�
 
 <br>
 
+
+
 ## 2️⃣ Spring MVC의 동작방식과 구성요소
 
 ![image-20230410163858788](C:\Users\MIN\Desktop\github\mins-github-blog\mins-git.github.io\images\2023-04-09-Spring MVC API계층 \image-20230410163858788.png)
@@ -184,6 +186,8 @@ Spring MVC는 XML이나 Java Config 등의 설정 파일을 이용하여 애플�
 
 <br>
 
+
+
 #### 🔑**더 알기 쉽게 풀어서 정리:**   
 
 Spring MVC는 Model-View-Controller(MVC) 패턴을 기반으로 하는 웹 프레임워크입니다. Spring MVC는 클라이언트의 요청을 받아서 처리하고, 응답을 반환하는데 필요한 구성 요소들이 있습니다.  
@@ -214,6 +218,8 @@ Spring MVC는 Model-View-Controller(MVC) 패턴을 기반으로 하는 웹 프�
 
 <br>
 
+
+
 #### **핵심Point**  
 
 - Spring MVC의 요청 처리 흐름
@@ -231,6 +237,8 @@ Spring MVC는 Model-View-Controller(MVC) 패턴을 기반으로 하는 웹 프�
 <br>
 
 <br>
+
+
 
 ### 🔖 알아가야하는 용어
 
@@ -263,6 +271,8 @@ Spring MVC의 요청 처리 흐름을 가만히 살펴보면 `DispatcherServlet`
 <br>
 
 <br>
+
+
 
 ##### 🔗 도움될만한 url  
 
