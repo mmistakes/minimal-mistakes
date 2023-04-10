@@ -20,8 +20,7 @@ categories: "git"
 
 먼저 자신의 jekyll 버전은 github.io 폴더의 Gemfile.lock 에서 확인할 수 있습니다.
 
-![image-20230409215534402](images/2023-04-09-gitblog 에러(jemfile 에러) /image-20230409215534402.png)
-
+![image-20230409223240397](../../images/2023-04-09-gitblog 에러(jemfile 에러)/image-20230409223240397.png)
 사실 처음에는 jekyll 버전이 다른지도 모르고 지원되는 dependency version 과 Gemfile.lock 을 비교할 뻔했으나... 기적적으로 맷돌이 돌아간 덕분에 chatGPT 에  dependency version 과 Gemfile.lock 를 복붙해서 version 이 초과되는 부분을 알려달라고 했습니다. 
 
 덕분에 jekyll 버전이 4.2.2 인걸 확인했습니다.
