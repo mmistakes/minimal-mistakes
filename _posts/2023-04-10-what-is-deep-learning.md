@@ -67,9 +67,9 @@ It can be rather bad when it is necessary to repeat the results.
 
 **Machine learning vs deep learning**
 
-Traditional machine learning typically maximizes performance on structured data.
+Traditional machine learning typically maximizes performance on structured data. Google or Excel spreadsheet. 
 
-Google or Excel spreadsheet. Deep learning maximizes performance in unstructured data such as natural language and text shapes.
+Deep learning maximizes performance in unstructured data such as natural languages, text, shapes.
 
 
 
