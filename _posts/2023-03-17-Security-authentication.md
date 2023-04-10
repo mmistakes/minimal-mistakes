@@ -12,7 +12,7 @@ author_profile: false
 #     nav: "docs"
 # search: false
 ---
-
+ <br> <br> <br> <br>
 
 
 
@@ -22,11 +22,11 @@ author_profile: false
 # Spring Security 인증 구성 요소 이해
 
 
-
+<br> <br> <br> <br>
 
 
 **본 포스팅은 아래 게시글의 뒷 내용을 이어갑니다. ↓**
-
+<br>
 [Spring Security(ch.1)﻿](https://mininkorea.tistory.com/49)
 
 
