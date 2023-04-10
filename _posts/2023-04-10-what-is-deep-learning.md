@@ -13,7 +13,7 @@ typora-root-url: ../
 
 <span style ="color: red">**What is deep learning?**</span>
 
-An artificial neural network based on multilayer process layer.
+An artificial neural network based on multi process layer.
 
 **What is machine learning?**
 
