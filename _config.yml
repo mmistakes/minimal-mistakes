@@ -104,7 +104,6 @@ analytics:
 
 # Site Author
 author:
-  name             : "The Lifespan Informatics and Neuroimaging Center of the University of Pennsylvania and the Child Mind Institue"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
