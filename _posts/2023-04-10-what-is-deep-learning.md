@@ -32,7 +32,7 @@ Machine learning is at the bottom of artificial intelligence and deep learning i
 
 
 
-##**What is the difference between traditional programing and machine learning and deep learning programming?**
+## **What is the difference between traditional programing and machine learning and deep learning programming?**
 
 
 In traditional programming, output is generated through input codes.
