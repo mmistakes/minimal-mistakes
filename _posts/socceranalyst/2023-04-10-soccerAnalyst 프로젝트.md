@@ -4,7 +4,7 @@ categories: "socceranalyst"
 
 # soccerAnalyst 
 
-[제가만든 socceranalyst 페이지입니다.]: https://socceranalyst.net	"soccerAnalyst"
+[socceranalyst 링크입니다.](https://socceranalyst.net)
 
 [git 코드보기](https://github.com/hobeen-kim/socceranalyst.git)
 
