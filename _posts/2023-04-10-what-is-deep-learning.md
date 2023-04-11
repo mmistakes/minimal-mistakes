@@ -11,11 +11,15 @@ typora-root-url: ../
 
 ---
 
-<span style ="color: red">**What is deep learning?**</span>
+#<span style ="color: red">What is deep learning?</span>
+
+
+
+
 
 An artificial neural network based on multilayer process layer.
 
-**What is machine learning?**
+##**What is machine learning?**
 
 ![img](/images/2023-04-10-what-is-deep-learning/img.png)
 
@@ -27,7 +31,7 @@ Machine learning is at the bottom of artificial intelligence and deep learning i
 
 
 
-**What is the difference between traditional programing and machine learning and deep learning programming?**
+##**What is the difference between traditional programing and machine learning and deep learning programming?**
 
 In traditional programming, output is generated through input codes.
 
@@ -35,7 +39,7 @@ But, ml/dl algorithms inform the input datas and inform the ideal results.
 
 
 
-**Why we use machine learning, deep learning?**
+##**Why we use machine learning, deep learning?**
 
 If you were asked to program a code for self-driving car, could you design all those rules?
 
@@ -43,7 +47,7 @@ As long as it can be translated into numbers and patterns, we can machine-learn 
 
 
 
-**Bad case for applying deep learning.**
+##**Bad case for applying deep learning.**
 
 - If clear explanation is required
 
@@ -65,7 +69,7 @@ It can be rather bad when it is necessary to repeat the results.
 
 
 
-**Machine learning vs deep learning**
+##**Machine learning vs deep learning**
 
 Traditional machine learning typically maximizes performance on structured data.
 
@@ -73,7 +77,7 @@ Google or Excel spreadsheet. Deep learning maximizes performance in unstructured
 
 
 
-**Machine learning related algorithms**
+##**Machine learning related algorithms**
 
 Random forest
 
@@ -89,7 +93,7 @@ Since the advent of deep learning, these algorithms are usually called shallow a
 
 
 
-**Deep learning related algorithms**
+##**Deep learning related algorithms**
 
 neural network
 
@@ -111,7 +115,7 @@ However, these algorithms above are sometimes used depending on how you define t
 
 
 
-**What is a neural network?**
+##**What is a neural network?**
 
 It refers to the circuit or connection of neurons, and in the modern sense, it refers to an artificial node network consisting of artificial neurons and nodes.
 
@@ -127,7 +131,7 @@ Labeling work is done based on this representation values.
 
 
 
-**Atonomy of neural network**
+##**Atonomy of neural network**
 
 The first layer of the neural network is called the input layer.
 
@@ -139,7 +143,7 @@ embedding, weights, feature, representation, feature, vectors. All are used in a
 
 
 
-**Types of Learning**
+##**Types of Learning**
 
 There are supervised learning. semi-supervised learning, unsupervised learning, and transfer learning, etc.
 
@@ -167,13 +171,13 @@ Transfer learning can be said to be the flower of deep learning, and it is to re
 
 
 
-**What is deep learning used for?**
+##**What is deep learning used for?**
 
 Numerical Encoding -> Learning and Labeling with Model
 
 
 
-**Use cases of deep learning**
+##**Use cases of deep learning**
 
 recommendation system in Youtube, Google Translator, voice recognition, computer vision, natural language processing, etc
 
