@@ -10,8 +10,15 @@ main:
 docs:
   - title: "Category"
     children:
+      - title: "socceranalyst"
+        url: /categories/#socceranalyst/
+      - title: "TIL-codestates"
+      url: /categories/#TIL-codestates/
+      - title: "TIL-spring"
+        url: /categories/#TIL-spring/
       - title: "Learning"
         url: /categories/#learning/
+
 
   - title: "Tag"
     children:
