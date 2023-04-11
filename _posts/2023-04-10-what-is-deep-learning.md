@@ -11,15 +11,11 @@ typora-root-url: ../
 
 ---
 
-<<<<<<< HEAD
+
 #<span style ="color: red">What is deep learning?</span>
 
 
 
-
-=======
-#<span style ="color: red">**What is deep learning?**</span>
->>>>>>> 1cdc89f51159b97c6812048c66b3c89678567a61
 
 An artificial neural network based on multi process layer.
 
@@ -35,11 +31,9 @@ Machine learning is at the bottom of artificial intelligence and deep learning i
 
 
 
-<<<<<<< HEAD
+
 ##**What is the difference between traditional programing and machine learning and deep learning programming?**
-=======
-**What is the difference between traditional programming and machine learning and deep learning programming?**
->>>>>>> 1cdc89f51159b97c6812048c66b3c89678567a61
+
 
 In traditional programming, output is generated through input codes.
 
@@ -139,11 +133,9 @@ Labeling work is done based on this representation values.
 
 
 
-<<<<<<< HEAD
+
 ##**Atonomy of neural network**
-=======
-**Anatonomy of neural network**
->>>>>>> 1cdc89f51159b97c6812048c66b3c89678567a61
+
 
 The first layer of the neural network is called the input layer.
 
