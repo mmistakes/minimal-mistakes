@@ -19,7 +19,7 @@ typora-root-url: ../
 
 An artificial neural network based on multi process layer.
 
-## What is machine learning?**
+## What is machine learning?
 
 ![img](/images/2023-04-10-what-is-deep-learning/img.png)
 
