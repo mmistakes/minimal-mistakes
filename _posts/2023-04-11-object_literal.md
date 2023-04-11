@@ -17,9 +17,7 @@ sidebar:
 
 원시 값을 제외한 나머지 값은 모두 객체다.
 
-객체는 0개 이상의 프로퍼티로 구성된 집합이며, 프로퍼티는 키<sup>key</sup>와 값<sup>value</sup>으로 구성된다.
+객체는 0개 이상의 프로퍼티로 구성된 집합이며, 프로퍼티는 키<sup>key</sup>와 값<sup>value</sup>으로 구성된다..
+메서드라 부른다.
 
 <img src="/assets/images/object10-1.jpg">
-
-
-
