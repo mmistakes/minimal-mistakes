@@ -11,13 +11,17 @@ typora-root-url: ../
 
 ---
 
+<<<<<<< HEAD
 #<span style ="color: red">What is deep learning?</span>
 
 
 
 
+=======
+#<span style ="color: red">**What is deep learning?**</span>
+>>>>>>> 1cdc89f51159b97c6812048c66b3c89678567a61
 
-An artificial neural network based on multilayer process layer.
+An artificial neural network based on multi process layer.
 
 ##**What is machine learning?**
 
@@ -31,11 +35,15 @@ Machine learning is at the bottom of artificial intelligence and deep learning i
 
 
 
+<<<<<<< HEAD
 ##**What is the difference between traditional programing and machine learning and deep learning programming?**
+=======
+**What is the difference between traditional programming and machine learning and deep learning programming?**
+>>>>>>> 1cdc89f51159b97c6812048c66b3c89678567a61
 
 In traditional programming, output is generated through input codes.
 
-But, ml/dl algorithms inform the input datas and inform the ideal results.
+But, ml/dl algorithms inform the input data and inform the ideal results.
 
 
 
@@ -71,9 +79,9 @@ It can be rather bad when it is necessary to repeat the results.
 
 ##**Machine learning vs deep learning**
 
-Traditional machine learning typically maximizes performance on structured data.
+Traditional machine learning typically maximizes performance on structured data. Google or Excel spreadsheet. 
 
-Google or Excel spreadsheet. Deep learning maximizes performance in unstructured data such as natural language and text shapes.
+Deep learning maximizes performance in unstructured data such as natural languages, text, shapes.
 
 
 
@@ -119,7 +127,7 @@ However, these algorithms above are sometimes used depending on how you define t
 
 It refers to the circuit or connection of neurons, and in the modern sense, it refers to an artificial node network consisting of artificial neurons and nodes.
 
-Unstructured data is translated into numbers (nemeographic encoding) (tensor)
+Unstructured data is translated into numbers (numerical encoding) (tensor)
 
 When these numerized data is put into the neural network, it begins to learn patterns, characteristics, and weights.
 
@@ -131,11 +139,15 @@ Labeling work is done based on this representation values.
 
 
 
+<<<<<<< HEAD
 ##**Atonomy of neural network**
+=======
+**Anatonomy of neural network**
+>>>>>>> 1cdc89f51159b97c6812048c66b3c89678567a61
 
 The first layer of the neural network is called the input layer.
 
-There are a hidden layers in the middle, finds patterns in the data,
+There are hidden layers in the middle, finds patterns in the data,
 
 The output layer, Returns the representative value or predicted probability value learned in the output layer.
 
@@ -157,13 +169,13 @@ In supervised learning, images of all labeled foods are learned.
 
 
 
-In semi-supervised learning, there is a amount of data equivalent to supervised learning, but the mapping of labels is less. In other words, the unlabeled images get labeled.
+In semi-supervised learning, there is amount of data equivalent to supervised learning, but the mapping of labels is less. In other words, the unlabeled images get labeled.
 
 
 
 Unsupervised learning has only data and no labels.
 
-By inputting data into neural networks- machine learning, deep learning , any data outputs results.
+By inputting data into neural networks - machine learning, deep learning , any data outputs results.
 
 
 
@@ -179,7 +191,7 @@ Numerical Encoding -> Learning and Labeling with Model
 
 ##**Use cases of deep learning**
 
-recommendation system in Youtube, Google Translator, voice recognition, computer vision, natural language processing, etc
+recommendation system on Youtube, Google Translator, voice recognition, computer vision, natural language processing, etc
 
 YouTube recommend videos based on User's Browsing history
 
