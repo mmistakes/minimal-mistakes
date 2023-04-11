@@ -1,0 +1,12 @@
+---
+layout: single
+title:  "데이터베이스의 기본개념(종류,정의,특징)"
+categories: Orcle
+tag: [Orcle,DateBase,SQL]
+toc: true
+author_profile: false #옆에 정보 끄기
+sidebar: 
+    nav: "docs"
+typora-root-url: ../
+---
+
