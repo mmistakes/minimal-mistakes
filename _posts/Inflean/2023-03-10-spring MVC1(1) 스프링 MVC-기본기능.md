@@ -51,7 +51,7 @@ sidebar:
   - private final Logger log = LoggerFactory.getLogger(getClass()); 
     - 로그 라이브러리, log.info 를 통해 로그 출력이 가능하다
   - @Slf4j : 로그 인터페이스로 Logger 코드를 대체할 수 있다 (이거를 주로 쓴다.)
-  - ![image-20230310094943914](../images/2023-03-10-spring MVC1 스프링 MVC-기본기능/image-20230310094943914.png)
+  - ![image-20230310094943914](../../images/2023-03-10-spring MVC1 스프링 MVC-기본기능/image-20230310094943914.png)
     - 이렇게 시간, 로그 레벨, 프로세스 ID, 사용하는 쓰레드, 클래스, 로그 메세지 등을 출력할 수 있다.
 
 ## 로그 레벨 설정

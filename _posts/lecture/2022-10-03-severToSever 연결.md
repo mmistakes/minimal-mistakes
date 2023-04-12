@@ -49,7 +49,7 @@ categories: "learning"
 
     - Rest api를 호출할 수 있는  Spring 내장 클래스로, Rest api 호출이후 응답을 받을 때까지 기다리는 동기 방식	
     -  http 요청 후 JSON, XML, String 과 같은 응답을 받을 수 있는 템플릿
-    - ![img](../images/2022-10-03-severToSever 연결/images%2Fsoosungp33%2Fpost%2Fd02efacc-56e6-4abc-a390-12ecbb565c6b%2Fimage.png)
+    - ![img](../../images/2022-10-03-severToSever 연결/images%2Fsoosungp33%2Fpost%2Fd02efacc-56e6-4abc-a390-12ecbb565c6b%2Fimage.png)
 
   - ```java
     package com.example.client.service;

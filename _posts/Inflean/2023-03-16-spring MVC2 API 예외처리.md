@@ -309,7 +309,7 @@ sidebar:
 
 ### ExceptionResolver 적용 전
 
-- ![image-20230316161435385](../images/2023-03-16-spring MVC2 API 예외처리/image-20230316161435385.png)
+- ![image-20230316161435385](../../images/2023-03-16-spring MVC2 API 예외처리/image-20230316161435385.png)
 
 1. `http://localhost:8080/api/members/bad` 호출
 2. 예외 발생 : IllegalArgumentException
@@ -317,7 +317,7 @@ sidebar:
 
 ### ExceptionResolver 적용 후
 
-- ![image-20230316161706509](../images/2023-03-16-spring MVC2 API 예외처리/image-20230316161706509.png)
+- ![image-20230316161706509](../../images/2023-03-16-spring MVC2 API 예외처리/image-20230316161706509.png)
 
 1. `http://localhost:8080/api/members/bad` 호출
 2. 예외 발생 : IllegalArgumentException

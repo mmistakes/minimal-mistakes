@@ -148,7 +148,7 @@ sidebar:
 
 1. 데이터를 post 방식으로 서버에 넘겨준다. 
 
-   - ![image-20230214160233741](../images/2023-02-14 spring basic 웹 MVC 개발/image-20230214160233741.png)
+   - ![image-20230214160233741](../../images/2023-02-14 spring basic 웹 MVC 개발/image-20230214160233741.png)
 
 2. 이 때 /members/new 으로 name 태그의 이름대로 넘긴다. 즉, name = "name" 이므로 서버에서 받을 때는 생성자의 setName 으로 받는다.
 
@@ -251,5 +251,5 @@ sidebar:
   2. Model model 을 통해서 모든 멤버를 리스트 형식으로 model 에 넘겨준다.
      - model.addAttribute("members", memberService.findMembers());
   3. 웹에서 각 member 별로 id, name 을 렌더링
-     - ![image-20230214163628953](../images/2023-02-14 spring basic 웹 MVC 개발/image-20230214163628953.png)
+     - ![image-20230214163628953](../../images/2023-02-14 spring basic 웹 MVC 개발/image-20230214163628953.png)
   4. return "members/memberList" 페이지 렌더링

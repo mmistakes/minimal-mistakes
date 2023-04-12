@@ -9,7 +9,7 @@ tag: [inflearn,springSecurity]
 
 - 톰켓과 같은 웹 애플리케이션을 서블릿 컨테이너라고 부르는데, 이런 웹 애플리케이션(J2EE Application)은 기본적으로 필터와 서블릿으로 구성되어 있습니다.
 
-![img](../images/2023-02-05-spring security 전체구조/fig-1-servlet-container-1675584575330-1.png)
+![img](../../images/2023-02-05-spring security 전체구조/fig-1-servlet-container-1675584575330-1.png)
 
 - 필터는 체인처럼 엮여있기 때문에 필터 체인이라고도 불리는데, 모든 request 는 이 필터 체인을 반드시 거쳐야만 서블릿 서비스에 도착하게 됩니다.
 
@@ -17,7 +17,7 @@ tag: [inflearn,springSecurity]
 
 - 그래서 스프링 시큐리티는 DelegatingFilterProxy 라는 필터를 만들어 메인 필터체인에 끼워넣고, 그 아래 다시 SecurityFilterChain 그룹을 등록합니다.
 
-![img](../images/2023-02-05-spring security 전체구조/fig-2-spring-big-picture-1675584604419-4.png)
+![img](../../images/2023-02-05-spring security 전체구조/fig-2-spring-big-picture-1675584604419-4.png)
 
 - 이 필터체인은 반드시 한개 이상이고, url 패턴에 따라 적용되는 필터체인을 다르게 할 수 있습니다. 본래의 메인 필터를 반드시 통과해야만 서블릿에 들어갈 수 있는 단점을 보완하기 위해서 필터체인 Proxy 를 두었다고 할 수 있습니다.
 - web resource 의 경우 패턴을 따르더라도 필터를 무시(ignore)하고 통과시켜주기도 합니다.
@@ -26,7 +26,7 @@ tag: [inflearn,springSecurity]
 
 - 이 필터체인에는 다양한 필터들이 들어갑니다.
 
-![img](../images/2023-02-05-spring security 전체구조/fig-4-filters-1675584634502-7.png)
+![img](../../images/2023-02-05-spring security 전체구조/fig-4-filters-1675584634502-7.png)
 
 - 각각의 필터는 단일 필터 단일 책임(?) 원칙 처럼, 각기 서로 다른 관심사를 해결합니다.. 예를 들면 아래와 같습니다.
   - *HeaderWriterFilter* : Http 해더를 검사한다. 써야 할 건 잘 써있는지, 필요한 해더를 더해줘야 할 건 없는가?
@@ -61,7 +61,7 @@ tag: [inflearn,springSecurity]
 
 - 필터들 중에 일부 필터는 인증 정보에 관여합니다. 이들 필터가 하는 일은 AuthenticationManager 를 통해 Authentication 을 인증하고 그 결과를 SecurityContextHolder 에 넣어주는 일입니다.
 
-![img](../images/2023-02-05-spring security 전체구조/fig-3-authentication-1675584710991-10.png)
+![img](../../images/2023-02-05-spring security 전체구조/fig-3-authentication-1675584710991-10.png)
 
 - 인증 토큰(Authentication)을 제공하는 필터들
   - UsernamePasswordAuthenticationFilter : 폼 로그인 -> UsernamePasswordAuthenticationToken

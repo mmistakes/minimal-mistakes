@@ -224,7 +224,7 @@ categories: "learning"
 
 ### 미들웨어 만들기
 
-- ![image-20220606001117930](../images/2022-06-05-nodejs,express/image-20220606001117930.png)
+- ![image-20220606001117930](../../images/2022-06-05-nodejs,express/image-20220606001117930.png)
 
 - `fs.readdir('./data', function(err, filelist){})`를 미들웨어로 사용
 
@@ -362,7 +362,7 @@ categories: "learning"
 
 - 500 에러 처리(data를 호출할 때 잘못된 data 이름(html1)
 
-  - ![image-20220606115234255](../images/2022-06-05-nodejs,express/image-20220606115234255.png)
+  - ![image-20220606115234255](../../images/2022-06-05-nodejs,express/image-20220606115234255.png)
 
     - html1 파일이 없지만 호출됨
 
@@ -382,7 +382,7 @@ categories: "learning"
     ```
 
     - err가 있으면 err 호출
-    - ![image-20220606115433130](../images/2022-06-05-nodejs,express/image-20220606115433130.png)
+    - ![image-20220606115433130](../../images/2022-06-05-nodejs,express/image-20220606115433130.png)
 
   - err 핸들러 작성
 

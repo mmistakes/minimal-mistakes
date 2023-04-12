@@ -67,11 +67,11 @@ tag: "inflearn"
 
   - th:text 를 통해 키값(data) 로 value 값(hello!!) 을 받음
 
-- ![image-20230213122407517](../images/2023-02-12-Spring Basic/image-20230213122407517.png)
+- ![image-20230213122407517](../../images/2023-02-12-Spring Basic/image-20230213122407517.png)
 
 ### 동작환경 그림
 
-- ![image-20230213122501059](../images/2023-02-12-Spring Basic/image-20230213122501059.png)
+- ![image-20230213122501059](../../images/2023-02-12-Spring Basic/image-20230213122501059.png)
 
 - 컨트롤러에서 리턴값으로 문자를 반환하면 viewResolver 가 찾아서 처리한다.
 - 즉, return 값으로 "hello" 를 반환하였으므로 resources 에서 hello.html 을 찾음

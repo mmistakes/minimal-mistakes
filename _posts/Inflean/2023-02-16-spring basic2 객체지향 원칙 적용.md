@@ -80,7 +80,7 @@ sidebar:
   - discount() 는 정상적으로 작동
   - Notdiscount() 처럼 오류가 나는 케이스도 테스트 해봐야 한다.
   - @DIsplayName : 콘솔에서 테스트 이름이 나온다.
-    - ![image-20230216191907406](../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230216191907406.png)
+    - ![image-20230216191907406](../../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230216191907406.png)
 
 # 2. 새로운 할인 정책 적용과 문제점
 
@@ -109,7 +109,7 @@ sidebar:
 - 다형성도 활용하고 인터페이스와 구현객체도 분리했고,
 - OCP, DIP 같은 객체지향 설계 원칙도 충실히 준수했으나,
   - 그렇게 보이지만 사실은 아니다.
-- ![image-20230216232019468](../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230216232019468.png)
+- ![image-20230216232019468](../../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230216232019468.png)
 
 - 위 그림처럼 추상(인터페이스) 뿐만 아니라구체(구현) 클래스에도 의존하고 있다.
   - 추상(인터페이스) 의존: DiscountPolicy 
@@ -120,7 +120,7 @@ sidebar:
 
 - DIP를 위반하지 않도록 인터페이스에만 의존하도록 의존관계를 변경하면 된다.
 
-- ![image-20230216232827903](../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230216232827903.png)
+- ![image-20230216232827903](../../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230216232827903.png)
 
 - ```java
   public class OrderServiceImpl implements OrderService {
@@ -204,7 +204,7 @@ sidebar:
 
 ### 클래스 다이어그램
 
-- ![image-20230217144747219](../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230217144747219.png)
+- ![image-20230217144747219](../../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230217144747219.png)
 
 - 객체의 생성과 연결은 AppConfig 가 담당한다. 
 - DIP 완성: MemberServiceImpl 은 MemberRepository 인 추상에만 의존하면 된다. 이제 구체 클래스를 몰라도 된다. 
@@ -212,7 +212,7 @@ sidebar:
 
 ### 회원 객체 인스턴스 다이어그램
 
-- ![image-20230217144902160](../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230217144902160.png)
+- ![image-20230217144902160](../../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230217144902160.png)
 
 - appConfig 객체는 memoryMemberRepository 객체를 생성하고 그 참조값을 memberServiceImpl 을 생성하면서 생성자로 전달한다.
 - 클라이언트인 memberServiceImpl 입장에서 보면 의존관계를 마치 외부에서 주입해주는 것 같다고 해서 DI(Dependency Injection) 우리말로 의존관계 주입이라 한다.
@@ -270,7 +270,7 @@ sidebar:
 - 현재 AppConfig를 보면 중복이 있고, 역할에 따른 구현이 잘 안보인다.
 
 - 기대하는 그림
-  - ![image-20230217151129926](../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230217151129926.png)
+  - ![image-20230217151129926](../../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230217151129926.png)
 
 ### 리팩토링
 
@@ -302,7 +302,7 @@ sidebar:
 
 - 정액 할인 정책을 정률 할인 정책으로 변경
 - FixDiscountPolicy -> RateDiscountPolicy
-- ![image-20230217152439141](../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230217152439141.png)
+- ![image-20230217152439141](../../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230217152439141.png)
   - FixDiscountPolicy -> RateDiscountPolicy 로 변경해도 구성 영역만 영향을 받고, 사용 영역은 전혀 영향을 받지 않는다.
 
 ## 코드 변경
@@ -385,12 +385,12 @@ sidebar:
 - 클래스가 사용하는 import 코드만 보고 의존관계를 쉽게 판단할 수 있다. 정적인 의존관계는 애플리케이션을 실행하지 않아도 분석할 수 있다. 
 - 클래스 다이어그램을 보면 OrderServiceImpl 은 MemberRepository , DiscountPolicy 에 의존한다는 것을 알 수 있다. 
 - 그런데 이러한 클래스 의존관계 만으로는 실제 어떤 객체가 OrderServiceImpl 에 주입 될지 알 수 없다.
-- ![image-20230218201930108](../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230218201930108.png)
+- ![image-20230218201930108](../../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230218201930108.png)
 
 ### 동적인 객체 인스턴스 의존 관계
 
 - 애플리케이션 실행 시점에 실제 생성된 객체 인스턴스의 참조가 연결된 의존 관계다.
-- ![image-20230218202031785](../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230218202031785.png)
+- ![image-20230218202031785](../../images/2023-02-16-spring basic2 객체지향 원칙 적용/image-20230218202031785.png)
 
 - 애플리케이션 실행 시점(런타임)에 외부에서 실제 구현 객체를 생성하고 클라이언트에 전달해서 클라이언트와 서버의 실제 의존관계가 연결 되는 것을 의존관계 주입이라 한다. 
 - 객체 인스턴스를 생성하고, 그 참조값을 전달해서 연결된다. 

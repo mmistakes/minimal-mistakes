@@ -20,18 +20,18 @@ sidebar:
 
 - new AnnotationConfigApplicationContext(AppConfig.class) 생성 시
 - 스프링 컨테이너가 생성된다.
-- ![image-20230218212142950](../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230218212142950.png)
+- ![image-20230218212142950](../../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230218212142950.png)
 
 ## 스프링 빈 등록
 
 - 스프링 컨테이너는 파라미터로 넘어온 설정 클래스 정보를 사용해서 스프링 빈을 등록한다.
-- ![image-20230218212314491](../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230218212314491.png)
+- ![image-20230218212314491](../../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230218212314491.png)
 
 ## 스프링 빈 의존관계 설정
 
 - 스프링 컨테이너는 설정 정보를 참고해서 의존관계를 주입(DI)한다.
 - 스프링은 빈을 생성하고, 의존관계를 주입하는 단계가 나누어져 있다. 그런데 이렇게 자바 코드로 스프링 빈을 등록하면 생성자를 호출하면서 의존관계 주입도 한번에 처리된다.
-- ![image-20230218212351399](../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230218212351399.png)
+- ![image-20230218212351399](../../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230218212351399.png)
 
 # 2. 컨테이너에 등록된 모든 빈 조회
 
@@ -69,7 +69,7 @@ sidebar:
   - ac.getBeanDefinitionNames() : 스프링에 등록된 모든 빈 이름을 조회한다.
   - ac.getBean() : 빈 이름으로 빈 객체(인스턴스)를 조회한다.
   - 조회결과
-  - ![image-20230218215423528](../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230218215423528.png)
+  - ![image-20230218215423528](../../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230218215423528.png)
 
 ## 애플리케이션 빈 출력하기
 
@@ -247,7 +247,7 @@ sidebar:
 
   - ac.getBeansOfType 메서드는 클래스를 생성자로 하여 Map 으로 반환한다.
   - key 는 타입의 이름, value 는 구현체의 스프링 빈 값
-    - ![image-20230224222035893](../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230224222035893.png)
+    - ![image-20230224222035893](../../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230224222035893.png)
 
 # 5. 스프링 빈 조회 - 상속 관계
 
@@ -333,7 +333,7 @@ sidebar:
   ```
 
   - getBeanOfType 으로 부모 타입을 가진 자식 모두 조회
-  - ![image-20230224224901904](../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230224224901904.png)
+  - ![image-20230224224901904](../../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230224224901904.png)
 
 ## 부모 타입으로 모두 조회하기 - Object
 
@@ -350,13 +350,13 @@ sidebar:
   }
   ```
 
-- ![image-20230224225038457](../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230224225038457.png)
+- ![image-20230224225038457](../../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230224225038457.png)
 
   - 자세히 보면 rateDiscountPolicy 와 fixDiscountPolicy 도 밑에 있음
 
 # 6. BeanFactory 와 ApplicationContext
 
-- ![image-20230225175041114](../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230225175041114.png)
+- ![image-20230225175041114](../../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230225175041114.png)
 
 ## BeanFactory
 
@@ -372,7 +372,7 @@ sidebar:
 
 ### ApplicationContext 가 제공하는 부가기능
 
-- ![image-20230225175255463](../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230225175255463.png)
+- ![image-20230225175255463](../../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230225175255463.png)
 
 - MessageSource : 메시지소스를 활용한 국제화 기능
   - 예를 들어서 한국에서 들어오면 한국어로, 영어권에서 들어오면 영어로 출력
@@ -395,7 +395,7 @@ sidebar:
 - 스프링 컨테이너는 다양한 형식의 설정 정보를 받아드릴 수 있게 유연하게 설계되어 있다. 
 
   - 자바 코드, XML, Groovy 등등
-  - ![image-20230225183101805](../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230225183101805.png)
+  - ![image-20230225183101805](../../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230225183101805.png)
 
   - 하지만 스프링 부트를 많이 사용하면서 XML 기반의 설정은 잘 사용하지 않는다.
   - GenericXmlApplicationContext 를 사용하면서 xml 설정 파일을 넘기면 된다.
@@ -455,7 +455,7 @@ sidebar:
 - BeanDefinition 을 빈 설정 메타정보라 한다. 
   - @Bean , <bean> 당 각각 하나씩 메타 정보가 생성된다
 
-- ![image-20230225185954265](../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230225185954265.png)
+- ![image-20230225185954265](../../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230225185954265.png)
 
 - AnnotationConfigApplicationContext 는 AnnotatedBeanDefinitionReader 를 사용해서 AppConfig.class 를 읽고 BeanDefinition 을 생성한다.
 - GenericXmlApplicationContext 는 XmlBeanDefinitionReader 를 사용해서 appConfig.xml 설정 정보를 읽고 BeanDefinition 을 생성한다.
@@ -490,7 +490,7 @@ sidebar:
   
   ```
 
-- ![image-20230225190323588](../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230225190323588.png)
+- ![image-20230225190323588](../../images/2023-02-18-spring basic2 스프링 컨테이너와 스프링 빈.md/image-20230225190323588.png)
 
 ### BeanDefinition 정보
 

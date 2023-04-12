@@ -13,7 +13,7 @@ sidebar:
 - spring initializer 로 프로젝트 생성한다. 이때 dependency 는 아무 것도 넣지 않는다.
 - setting 에서 gradle 을 찾아서 build and run using 과 run tests using 을 Intellij IDEA 로 변한다. 
   - 이렇게 하면 Gradle 보다 실행속도가 더 빠르다.
-  - ![image-20230215185901649](../images/2023-02-15-spring basic2 순수 스프링 예제/image-20230215185901649.png)
+  - ![image-20230215185901649](../../images/2023-02-15-spring basic2 순수 스프링 예제/image-20230215185901649.png)
 
 * 참고: 프로젝트 환경설정을 편리하게 하려고 스프링 부트를 사용한 것이다. 지금은 스프링 없는 순수한 자바로만 개발을 진행한다는 점을 꼭 기억하자! 스프링 관련은 한참 뒤에 등장한다. 
 
@@ -38,20 +38,20 @@ sidebar:
 
 ## 회원 도메인 협력관계
 
-- ![image-20230215190416373](../images/2023-02-15-spring basic2 순수 스프링 예제/image-20230215190416373.png)
+- ![image-20230215190416373](../../images/2023-02-15-spring basic2 순수 스프링 예제/image-20230215190416373.png)
 
 - 회원 저장소는 따로 만든다.
 
 ## 회원 서비스 다이어그램
 
-- ![image-20230215190859460](../images/2023-02-15-spring basic2 순수 스프링 예제/image-20230215190859460-1676455740022-1.png)
+- ![image-20230215190859460](../../images/2023-02-15-spring basic2 순수 스프링 예제/image-20230215190859460-1676455740022-1.png)
 
 - MemberService 인터페이스로 역할을 만들고 그거에 대한 구현체로 MemberServiceImpl 생성
 - MemberRepository 도 인터페이스로 역할, 구현체는 따로 만든다.
 
 ## 회원 객체 다이어그램
 
-- ![image-20230215191110923](../images/2023-02-15-spring basic2 순수 스프링 예제/image-20230215191110923.png)
+- ![image-20230215191110923](../../images/2023-02-15-spring basic2 순수 스프링 예제/image-20230215191110923.png)
 
 # 3. 회원 도메인 개발
 

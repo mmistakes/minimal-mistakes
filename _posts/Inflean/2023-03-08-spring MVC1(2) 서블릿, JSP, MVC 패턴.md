@@ -198,7 +198,7 @@ sidebar:
   }
   ```
 
-- ![image-20230308175917265](../images/2023-03-08-spring MVC1 서블릿, JSP, MVC 패턴.md/image-20230308175917265.png)
+- ![image-20230308175917265](../../images/2023-03-08-spring MVC1 서블릿, JSP, MVC 패턴.md/image-20230308175917265.png)
 
 ## MemberSaveServlet - 회원 저장
 
@@ -258,7 +258,7 @@ sidebar:
   2. Member 객체를 MemberRepository를 통해서 저장한다. 
   3. Member 객체를 사용해서 결과 화면용 HTML을 동적으로 만들어서 응답한다.
 
-- ![image-20230308180049667](../images/2023-03-08-spring MVC1 서블릿, JSP, MVC 패턴.md/image-20230308180049667.png)
+- ![image-20230308180049667](../../images/2023-03-08-spring MVC1 서블릿, JSP, MVC 패턴.md/image-20230308180049667.png)
 
 ## MemberListServlet - 회원 목록
 
@@ -580,7 +580,7 @@ https://codevang.tistory.com/240
 - 컨트롤러: HTTP 요청을 받아서 파라미터를 검증하고, 비즈니스 로직을 실행한다. 그리고 뷰에 전달할 결과 데이터를 조회해서 모델에 담는다. 
 - 모델: 뷰에 출력할 데이터를 담아둔다. 뷰가 필요한 데이터를 모두 모델에 담아서 전달해주는 덕분에 뷰는 비즈니스 로직이나 데이터 접근을 몰라도 되고, 화면을 렌더링 하는 일에 집중할 수 있다. 
 - 뷰: 모델에 담겨있는 데이터를 사용해서 화면을 그리는 일에 집중한다. 여기서는 HTML을 생성하는 부분을 말한다.
-- ![image-20230308201457762](../images/2023-03-08-spring MVC1 서블릿, JSP, MVC 패턴.md/image-20230308201457762.png)
+- ![image-20230308201457762](../../images/2023-03-08-spring MVC1 서블릿, JSP, MVC 패턴.md/image-20230308201457762.png)
 
 # 4. MVC 패턴 - 적용
 

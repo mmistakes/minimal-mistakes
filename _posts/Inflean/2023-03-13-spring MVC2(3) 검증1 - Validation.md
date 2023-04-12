@@ -41,11 +41,11 @@ sidebar:
 
 ## 상품 저장 성공
 
-- ![image-20230313230355110](../images/2023-03-13-spring MVC2(3) 검증1 - Validation/image-20230313230355110.png)
+- ![image-20230313230355110](../../images/2023-03-13-spring MVC2(3) 검증1 - Validation/image-20230313230355110.png)
 
 ## 상품 저장 검증 실패
 
-- ![image-20230313230445514](../images/2023-03-13-spring MVC2(3) 검증1 - Validation/image-20230313230445514.png)
+- ![image-20230313230445514](../../images/2023-03-13-spring MVC2(3) 검증1 - Validation/image-20230313230445514.png)
 
 - 검증 오류가 발생하면, 고객에게 다시 상품 등록 폼을 보여주고, 어떤 값을 잘못 입력했는지 친절하게 알려주어야 한다.
 - model 에 검증 오류 결과를 포함해서 상품등록 폼(addForm.html) 을 다시 렌더링 해야 한다.
@@ -353,7 +353,7 @@ sidebar:
 ## BindingResult 동작
 
 - BindingResult 가 있으면 @ModelAttribute 에 데이터 바인딩 시 오류가 발생해도 컨트롤러가 호출된다!
-- ![image-20230314133821943](../images/2023-03-13-spring MVC2(3) 검증1 - Validation/image-20230314133821943.png)
+- ![image-20230314133821943](../../images/2023-03-13-spring MVC2(3) 검증1 - Validation/image-20230314133821943.png)
   - 스프링이 넘어온 오류를 new FieldError() 로 만들어서 자동으로 넘겨준다.
 
 ### BindingResult에 검증 오류를 적용하는 3가지 방법
@@ -1021,7 +1021,7 @@ sidebar:
 - WebDataBinder 는 브라우저를 통해 요청받은 값이 실제 서버의 객체에 바인딩될 때 중간 역할을 한다.
 
   - 스프링의 파라미터 바인딩의 역할을 해주고 검증 기능도 내부에 포함한다.
-  - ![화면 캡처 2023-03-14 175909](../images/2023-03-13-spring MVC2(3) 검증1 - Validation/화면 캡처 2023-03-14 175909.png)
+  - ![화면 캡처 2023-03-14 175909](../../images/2023-03-13-spring MVC2(3) 검증1 - Validation/화면 캡처 2023-03-14 175909.png)
 
 - ValidationItemControllerV2에 다음 코드를 추가
 

@@ -13,7 +13,7 @@ sidebar:
 - 개발이나 테스트 용도로 가볍고 편리한 DB, 웹 화면을 제공한다.
 - h2는 1.4.200 버전으로 설치
 - H2/bin/h2.bat 파일 실행 후 최초 jdhc:h2:~/test 로 실행한다.
-  - ![image-20230214171035504](../images/2023-02-14- spring basic 스프링 DB 접근 기술/image-20230214171035504.png)
+  - ![image-20230214171035504](../../images/2023-02-14- spring basic 스프링 DB 접근 기술/image-20230214171035504.png)
 
 - 이후부터는 jdbc:h2:tcp://localhost/~/test 로 실행한다.
   - 소켓으로 접속하는 방법이다.
@@ -94,14 +94,14 @@ sidebar:
 
 ### 구현클래스 이미지
 
-![image-20230214180221586](../images/2023-02-14- spring basic 스프링 DB 접근 기술/image-20230214180221586.png)
+![image-20230214180221586](../../images/2023-02-14- spring basic 스프링 DB 접근 기술/image-20230214180221586.png)
 
 - MemberService 는 memberRepository() 를 의존하고 있다.
 - MemberRepository 는 Memory~ 와 Jdbc~ 를 구현체로 가지고 있다.
 
 ### 스프링 설정 이미지
 
-![image-20230214180549141](../images/2023-02-14- spring basic 스프링 DB 접근 기술/image-20230214180549141.png)
+![image-20230214180549141](../../images/2023-02-14- spring basic 스프링 DB 접근 기술/image-20230214180549141.png)
 
 - 기존에 memory 를 스프링빈으로 등록했다면, 얘를 빼 다시 jdbc 버전으로 등
 
@@ -509,7 +509,7 @@ sidebar:
 - 페이징 기능 자동 제공
 - 복잡한 동적 쿼리는 Querydsl이라는 라이브러리를 사용하면 된다.
 - 이 조합으로 해결하기 어려운 쿼리는 JPA가 제공하는 네이티브 쿼리를 사용하거나, 앞서 학습한 스프링 JdbcTemplate를 사용하면 된다.
-- ![image-20230215002146189](../images/2023-02-14- spring basic 스프링 DB 접근 기술/image-20230215002146189.png)
+- ![image-20230215002146189](../../images/2023-02-14- spring basic 스프링 DB 접근 기술/image-20230215002146189.png)
 
 
 

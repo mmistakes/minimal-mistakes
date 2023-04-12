@@ -367,11 +367,11 @@ categories: "learning"
 ### 결과
 
 - User 로 http://localhost:9050/user 접근 시
-  - ![image-20230116210209844](../images/2023-01-16spring security/image-20230116210209844.png)
+  - ![image-20230116210209844](../../images/2023-01-16spring security/image-20230116210209844.png)
 
 - User 로 http://localhost:9050/admin 접근 시
   - 404 page
-  - ![image-20230116210149422](../images/2023-01-16spring security/image-20230116210149422.png)
+  - ![image-20230116210149422](../../images/2023-01-16spring security/image-20230116210149422.png)
 
 ### SecurityConfig 안에서 Id, Pw 설정
 

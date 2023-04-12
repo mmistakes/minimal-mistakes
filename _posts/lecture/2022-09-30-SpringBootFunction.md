@@ -39,7 +39,7 @@ categories: "learning"
 
 #### Validation Annotation
 
-- ![image-20220930195934607](../images/2022-09-30-SpringBootFunction/image-20220930195934607.png)
+- ![image-20220930195934607](../../images/2022-09-30-SpringBootFunction/image-20220930195934607.png)
 
 
 
@@ -951,7 +951,7 @@ public class ApiControllerAdvice {
 - **유일하게 ServletRequest, ServletResponse 의 객체를 변환할 수 있음**
 - 주로 Spring Framework 에서는 request/response 의 Logging 용도로 활용하거나, 인증과 관련된 Logic 들을 해당 Filter 에서 치러
 - 이를 선/후 처리함으로써 Service business logic 과 분리시킴
-- ![image-20221002143840244](../images/2022-09-30-SpringBootFunction/image-20221002143840244.png)
+- ![image-20221002143840244](../../images/2022-09-30-SpringBootFunction/image-20221002143840244.png)
 
 ### filter 예제
 

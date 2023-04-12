@@ -481,7 +481,7 @@ public class OrderControllerV3 {
 3. thread-A 의 호출이 끝나면서 nameStore 의 결과를 반환받는데, 이때 nameStore 는 앞의 2번에서 userB 의 값으로 대체되었다. 따라서 기대했던 userA 의 값이 아니라 userB 의 값이 반환된다.
 4. thread-B 의 호출이 끝나면서 nameStore 의 결과인 userB 를 반환받는다.
 
-![image-20230322124451857](../images/2023-03-22-스프링 핵심원리 고급편(2) - 쓰레드 로컬(ThreadLocal)/image-20230322124451857.png)
+![image-20230322124451857](../../images/2023-03-22-스프링 핵심원리 고급편(2) - 쓰레드 로컬(ThreadLocal)/image-20230322124451857.png)
 
 ### 동시성 문제
 
@@ -502,11 +502,11 @@ public class OrderControllerV3 {
 - 쓰레드 로컬을 사용하면 각 쓰레드마다 별도의 내부 저장소를 제공한다. 따라서 같은 인스턴스의 쓰레드 로컬 필드에 접근해도 문제 없다.
 
 1. thread-A 가 userA 라는 값을 저장하면 쓰레드 로컬은 thread-A 전용 보관소에 데이터를 안전하게 보관한다.
-   - ![image-20230322133246298](../images/2023-03-22-스프링 핵심원리 고급편(2) - 쓰레드 로컬(ThreadLocal)/image-20230322133246298.png)
+   - ![image-20230322133246298](../../images/2023-03-22-스프링 핵심원리 고급편(2) - 쓰레드 로컬(ThreadLocal)/image-20230322133246298.png)
 2. thread-B 가 userB 라는 값을 저장하면 쓰레드 로컬은 thread-B 전용 보관소에 데이터를 안전하게 보관한다.
-   - ![image-20230322133258250](../images/2023-03-22-스프링 핵심원리 고급편(2) - 쓰레드 로컬(ThreadLocal)/image-20230322133258250.png)
+   - ![image-20230322133258250](../../images/2023-03-22-스프링 핵심원리 고급편(2) - 쓰레드 로컬(ThreadLocal)/image-20230322133258250.png)
 3. 쓰레드 로컬을 통해서 데이터를 조회할 때도 thread-A 가 조회하면 쓰레드 로컬은 thread-A 전용 보관소에서 userA 데이터를 반환해준다. 물론 thread-B 가 조회하면 thread-B 전용 보관소에서 userB 데이터를 반환해준다.
-   - ![image-20230322133309360](../images/2023-03-22-스프링 핵심원리 고급편(2) - 쓰레드 로컬(ThreadLocal)/image-20230322133309360.png)
+   - ![image-20230322133309360](../../images/2023-03-22-스프링 핵심원리 고급편(2) - 쓰레드 로컬(ThreadLocal)/image-20230322133309360.png)
 
 *자바는 언어차원에서 쓰레드 로컬을 지원하기 위한 java.lang.ThreadLocal 클래스를 제공한다.*
 
@@ -775,7 +775,7 @@ public class OrderControllerV3 {
 
 ## 사용자A 저장 요청
 
-![image-20230322141124721](../images/2023-03-22-스프링 핵심원리 고급편(2) - 쓰레드 로컬(ThreadLocal)/image-20230322141124721.png)
+![image-20230322141124721](../../images/2023-03-22-스프링 핵심원리 고급편(2) - 쓰레드 로컬(ThreadLocal)/image-20230322141124721.png)
 
 1. 사용자A가 저장 HTTP를 요청했다.
 2. WAS는 쓰레드 풀에서 쓰레드를 하나 조회한다. 
@@ -785,7 +785,7 @@ public class OrderControllerV3 {
 
 ## 사용자A 저장 요청 종료
 
-![image-20230322141151659](../images/2023-03-22-스프링 핵심원리 고급편(2) - 쓰레드 로컬(ThreadLocal)/image-20230322141151659.png)
+![image-20230322141151659](../../images/2023-03-22-스프링 핵심원리 고급편(2) - 쓰레드 로컬(ThreadLocal)/image-20230322141151659.png)
 
 1. 사용자A의 HTTP 응답이 끝난다. 
 
@@ -797,7 +797,7 @@ public class OrderControllerV3 {
 
 ## 사용자B 조회 요청
 
-![image-20230322141230307](../images/2023-03-22-스프링 핵심원리 고급편(2) - 쓰레드 로컬(ThreadLocal)/image-20230322141230307.png)
+![image-20230322141230307](../../images/2023-03-22-스프링 핵심원리 고급편(2) - 쓰레드 로컬(ThreadLocal)/image-20230322141230307.png)
 
 1. 사용자B가 조회를 위한 새로운 HTTP 요청을 한다. 
 2. WAS는 쓰레드 풀에서 쓰레드를 하나 조회한다.

@@ -876,6 +876,6 @@ categories: "learning"
 
 # 6. 여러가지 Annotation
 
-- ![image-20220930195211047](../images/2022-09-24-SpringKeynote/image-20220930195211047.png)
+- ![image-20220930195211047](../../images/2022-09-24-SpringKeynote/image-20220930195211047.png)
 
-- ![image-20220930195223827](../images/2022-09-24-SpringKeynote/image-20220930195223827.png)
+- ![image-20220930195223827](../../images/2022-09-24-SpringKeynote/image-20220930195223827.png)

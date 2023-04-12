@@ -222,7 +222,7 @@ categories: "learning"
 
 - 아래와 같은 기능 구현 가능
 
-  - ![image-20220604190335933](../images/2022-06-04-nodejs,mySQL/image-20220604190335933.png)
+  - ![image-20220604190335933](../../images/2022-06-04-nodejs,mySQL/image-20220604190335933.png)
 
 
 

@@ -48,7 +48,7 @@ public Long join(Member member){
 
 - AOP: Aspect Oriented Programming 
 - 공통 관심 사항(cross-cutting concern) vs 핵심 관심 사항(core concern) 분리
-- ![image-20230215011951112](../images/2023-02-15-spring basic AOP/image-20230215011951112.png)
+- ![image-20230215011951112](../../images/2023-02-15-spring basic AOP/image-20230215011951112.png)
 
 ## AOP 예제
 
@@ -113,7 +113,7 @@ public Long join(Member member){
 
 ### 로그
 
-- ![image-20230215011929083](../images/2023-02-15-spring basic AOP/image-20230215011929083.png)
+- ![image-20230215011929083](../../images/2023-02-15-spring basic AOP/image-20230215011929083.png)
 
 ## AOP 장점
 
@@ -127,17 +127,17 @@ public Long join(Member member){
 
 ### AOP 적용 전
 
-- ![image-20230215012153872](../images/2023-02-15-spring basic AOP/image-20230215012153872.png)
+- ![image-20230215012153872](../../images/2023-02-15-spring basic AOP/image-20230215012153872.png)
 
 - AOP 적용전에는 컨트롤러가 바로 memberService 를 호출했다.
 
 ### AOP 적용 후
 
-- ![image-20230215012538683](../images/2023-02-15-spring basic AOP/image-20230215012538683.png)
+- ![image-20230215012538683](../../images/2023-02-15-spring basic AOP/image-20230215012538683.png)
 
 - 컨트롤러가 어디에 적용할 지 지정을 할때 AOP 가 있으면 가짜 memberService (프록시) 를 만든다.
 - 가짜 스프링 빈을 앞에 세워놓아 실행한 후 이후 joinPoin.proceed() 을 내부적으로 실행되어 그때 진짜 스프링이 실행된다.
 
 ### 전체 적용 큰 그림
 
-- ![image-20230215012632380](../images/2023-02-15-spring basic AOP/image-20230215012632380.png)
+- ![image-20230215012632380](../../images/2023-02-15-spring basic AOP/image-20230215012632380.png)

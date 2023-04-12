@@ -34,11 +34,11 @@ sidebar:
 
 - localhost:8080/hello-static.html 로 확인 가능하다.
 
-  - ![image-20230213130251720](../images/2023-02-12-Spring Basic 스프링 웹개발 기초/image-20230213130251720.png)
+  - ![image-20230213130251720](../../images/2023-02-12-Spring Basic 스프링 웹개발 기초/image-20230213130251720.png)
 
 ## 정적 컨텐츠 원리
 
-- ![image-20230213130345940](../images/2023-02-12-Spring Basic 스프링 웹개발 기초/image-20230213130345940.png)
+- ![image-20230213130345940](../../images/2023-02-12-Spring Basic 스프링 웹개발 기초/image-20230213130345940.png)
 
   1. 처음에 내장톰캣서버가 요청을 받고, 스프링한테 요청을 넘기면,
 
@@ -88,13 +88,13 @@ sidebar:
   ```
 
 - localhost:8080/hello-mvc?name=john 
-  - ![image-20230213132348241](../images/2023-02-12-Spring Basic 스프링 웹개발 기초/image-20230213132348241.png)
+  - ![image-20230213132348241](../../images/2023-02-12-Spring Basic 스프링 웹개발 기초/image-20230213132348241.png)
 
 
 
 ## Mvc, 템플릿 엔진 이미지
 
-- ![image-20230213132521063](../images/2023-02-12-Spring Basic 스프링 웹개발 기초/image-20230213132521063.png)
+- ![image-20230213132521063](../../images/2023-02-12-Spring Basic 스프링 웹개발 기초/image-20230213132521063.png)
 
   		1. 요청이 내장 톰캣 서버를 먼저 거쳐서 스프링에게 알려준다
   		2. 스프링에서는 요청(/hello-mvc) 가 helloController 에 매핑이 되어있으므로 메서드를 호출해준다
@@ -130,9 +130,9 @@ sidebar:
 ### html
 
 - Controller 의 return 값을 그대로 가진다
-- ![image-20230213134221687](../images/2023-02-12-Spring Basic 스프링 웹개발 기초/image-20230213134221687.png)
+- ![image-20230213134221687](../../images/2023-02-12-Spring Basic 스프링 웹개발 기초/image-20230213134221687.png)
   - 얼핏 보기에는 mvc 와 큰 차이가 없으나 소스를 보면 return 값 그대로임
-  - ![image-20230213134316537](../images/2023-02-12-Spring Basic 스프링 웹개발 기초/image-20230213134316537.png)
+  - ![image-20230213134316537](../../images/2023-02-12-Spring Basic 스프링 웹개발 기초/image-20230213134316537.png)
 
 
 
@@ -172,7 +172,7 @@ sidebar:
 
 - localhost:8080/hello-api?name=john
 
-- ![image-20230213135912627](../images/2023-02-12-Spring Basic 스프링 웹개발 기초/image-20230213135912627.png)
+- ![image-20230213135912627](../../images/2023-02-12-Spring Basic 스프링 웹개발 기초/image-20230213135912627.png)
 
 - json 방식으로 받게 된다.
 
@@ -180,7 +180,7 @@ sidebar:
 
 ## API 동작 원리
 
-- ![image-20230213140015454](../images/2023-02-12-Spring Basic 스프링 웹개발 기초/image-20230213140015454.png)
+- ![image-20230213140015454](../../images/2023-02-12-Spring Basic 스프링 웹개발 기초/image-20230213140015454.png)
 
     		1. 요청이 내장 톰캣 서버를 먼저 거쳐서 스프링에게 알려준다
 
