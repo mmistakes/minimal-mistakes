@@ -58,24 +58,24 @@ HTML 은 트리구조로 이루어져있습니다. html 태그 하위의 head �
 
 ## 자주 쓰이는 태그
 
-**<div>** : 웹페이지의 한 줄을 모두 차지하는 태그입니다.
+**`<div>`** : 웹페이지의 한 줄을 모두 차지하는 태그입니다.
 
 - 블록 레벨 요소이므로 블록 레벨 요소 안에 다른 블록 레벨 요소나 인라인 요소들을 포함할 수 있습니다. 
 - 주로 페이지 전체를 나누는 컨테이너 역할을 하거나, 특정한 요소를 그룹화하는데 사용됩니다.
 
 
 
-**<span>** : 웹페이지에서 컨텐츠의 해당 공간만큼만 차지하는 태그입니다. 
+**`<span>`** : 웹페이지에서 컨텐츠의 해당 공간만큼만 차지하는 태그입니다. 
 
 - 인라인 요소이므로 텍스트의 특정 부분을 묶어서 스타일을 적용하거나, 특정 부분에 이벤트를 적용할 때 사용됩니다. 
 - **또한 다른 인라인 요소 내부에 포함될 수 있습니다.** (만약에 블록레벨 요소를 사용하고 싶다면 `<div>`를 사용하는 것이 적절합니다. )
 
-**<img>** : image 를 삽입하는 태그입니다. 
+**`<img>`** : image 를 삽입하는 태그입니다. 
 
 - `<img src="test.jpg" alt="test">` 와 같이 사용합니다. img 가 로드안될 수도 있으니 alt 를 넣어줍니다. (alternative 인가요?)
 - img src 에는 PNG, JPEG, GIF, BMP 등이 있습니다. 특히 gif 로 움짤 등 첨부 가능합니다.
 
-<a href> : 링크를 삽입하는 태그입니다.
+**`<a href>`** : 링크를 삽입하는 태그입니다.
 
 - `<a href="https://socceranalyst.net">socceranalyst</a>` 로 적습니다.
 - a 태그와 href 는 단짝이니 같이 썼습니다.
@@ -111,13 +111,13 @@ ul 은 unOrderedList, ol 은 OrderedList 입니다. 이름에서 나오듯이 �
 </ol>
 ```
 
-**<input>** :  input 박스입니다. 여러가지 input type을 받을 수 있습니다.
+**`<input>`** :  input 박스입니다. 여러가지 input type을 받을 수 있습니다.
 
-- text : 텍스트를 입력받습니다. <input type="text">
+- text : 텍스트를 입력받습니다. `<input type="text">`
 
-- password : 암호를 입력받습니다. 타이핑하면 `*` 로 보입니다. <input type="password">
+- password : 암호를 입력받습니다. 타이핑하면 `*` 로 보입니다. `<input type="password">`
 
-- checkbox : 체크박스를 넣습니다. <input type="checkbox">
+- checkbox : 체크박스를 넣습니다. `<input type="checkbox">`
 
 - radio : 그룹을 설정해서 그룹 중 1개만 선택할 수 있습니다.
 
@@ -135,9 +135,9 @@ ul 은 unOrderedList, ol 은 OrderedList 입니다. 이름에서 나오듯이 �
     </div>
     ```
 
-- textarea : 텍스트를 입력받습니다. 줄바꿈이 가능합니다. <input type="textarea">
+- textarea : 텍스트를 입력받습니다. 줄바꿈이 가능합니다. `<input type="textarea">`
 
-- button : 버튼을 생성합니다. <input type="button">
+- button : 버튼을 생성합니다.` <input type="button">`
 
   
 
