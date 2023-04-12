@@ -380,3 +380,5 @@ public Object invoke(MethodInvocation invocation) throws Throwable {
 이건 제 토이프로젝트에 validation 을 적용하기 위해 공부하려고 포스팅한건데요. validation 은 지금은 컨트롤러 에서 @Valid 를 사용해야 겠다고 생각했습니다.
 
 근데 적용하는 것보다 동작 원리 파헤치는 게 훨씬 힘드네요. 이거 작성하는데 여기저기 찾아보느라 이틀이나 걸렸습니다 .. ㅎㅎ 일단 제가 제일 궁금했던 건 **어떤 원리로 각각 MethodArgumentNotValidException, ConstraintViolationException 이 반환되는지였습니다.** 이제 알았으니 적용해보도록 합시다. 
+
+[토이프로젝트에 validation 적용](https://hobeen-kim.github.io/socceranalyst/validation-%EC%84%A4%EC%A0%95/)
