@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "The Geek Cat's Blog"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : The Geek Cat
 name                     : "The Geek Cat"
 description              : "I'm the Geek Cat!"
 url                      : https://thegeekcat.github.io
