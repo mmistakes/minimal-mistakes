@@ -11,13 +11,13 @@ docs:
   - title: "Category"
     children:
       - title: "socceranalyst"
-        url: /categories/#socceranalyst/
+        url: /categories/#socceranalyst
       - title: "TIL-codestates"
-        url: /categories/#til-codestates/
+        url: /categories/#til-codestates
       - title: "TIL-spring"
-        url: /categories/#til-spring/
+        url: /categories/#til-spring
       - title: "Learning"
-        url: /categories/#learning/
+        url: /categories/#learning
 
 
   - title: "Tag"
