@@ -242,7 +242,28 @@ Here, we used the `?.` operator, which allows to call a method on a nullable obj
 
 At first glance, using nullable value seems to be less composable than using, for example, the Java `Optional` type. This last type has a lot of functions, `map`, `flatMap`, or `filter`, which make it easy to compose and chain operations.
 
-Well, Kotlin nullable types have nothing to envy to the Java `Optional` type. In fact, the Kotlin standard library provides a lot of functions to handle nullable types. For example, the `Optional.map` function is equivalent to using the `let` scoping function. For example, let's try to get the jobs by company, using the `let` function:
+Well, Kotlin nullable types have nothing to envy to the Java `Optional` type. In fact, the Kotlin standard library provides a lot of functions to handle nullable types. For example, the `Optional.map` function is equivalent to using the `let` scoping function. 
+
+To build an example, let's say that the salary of our jobs is in USD, and we want to convert it to EUR. We need a new service to do that:
+
+```kotlin
+class CurrencyConverter {
+    fun convertUsdToEur(value: Double): Double = value * 0.91
+}
+```
+
+We can pass the new service to the `JobsService` and use it to get the salary in EUR for a job:
+
+```kotlin
+class JobsService(private val jobs: Jobs, private val converter: CurrencyConverter) {
+    
+    // Omissis...
+    fun retrieveSalaryInEur(id: JobId): Double =
+        jobs.findById(id)?.let { converter.convertUsdToEur(it.salary.value) } ?: 0.0
+}
+```
+
+For example, let's try to get the jobs by company, using the `let` function:
 
 ```kotlin
 fun getJobsByCompanyMap(): Map<String, List<Job>> {
