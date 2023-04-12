@@ -195,63 +195,54 @@ So, we understood that we need a better approach to handle errors, at least in f
 
 ## 3. Handling Errors with Nullable Types
 
-If we're not interested in the cause of the error, we can model the fact that an operation failed by returning a `null` value. In other languages returning a `null` is not considered a best practice. However, in Kotlin, the null check is built-in the language, and the compiler can help us to avoid errors. In Kotlin, we have Nullable Types. A Nullable Type is a type that can be either a value of the type or `null`. For example, the type `String?` is a nullable type, and it can be either a `String` or `null`.
+If we're not interested in the cause of the error, we can model the fact that an operation failed by returning a `null` value. In other languages returning a `null` is not considered a best practice. However, in Kotlin, the null check is built-in the language, and the compiler can help us to avoid errors. In Kotlin, we have nullable types. A nullable type is a type that can be either a value of the type or `null`. For example, the type `String?` is a nullable type, and it can be either a `String` or `null`.
 
-When we work with nullable types, the compiler forces us to handle the case when the value is `null`. For example, let's change our main example trying to handle error using nullable types. First, we change the signature of the `findAll` method in the `Jobs` interface, letting it to return a nullable list, `List<Job>?`:
+When we work with nullable types, the compiler forces us to handle the case when the value is `null`. For example, let's change our main example trying to handle error using nullable types. First, we redefined the `Jobs` interface and its implementation to use nullable types:
 
 ```kotlin
-interface NullableJobs {
-    fun findAll(): List<Job>?
+interface Jobs {
+    fun findById(id: JobId): Job?
 }
 
-class LiveNullableJobs : NullableJobs {
-    override fun findAll(): List<Job>? = null
+class LiveJobs : Jobs {
+    override fun findById(id: JobId): Job? = try {
+        JOBS_DATABASE[id]
+    } catch (e: Exception) {
+        null
+    }
 }
 ```
 
-Then, we try to use it in the `getHighlyPaidJobs` method, as we did previously:
+As we said, using nullable types to handle failures means losing completely the cause of the error, which is not propagated in any way to the caller.
+
+Then, we change also the `JobsService`, and we try to use the dereference operator `.` to access directly the `salary` property of the `Job?` object:
 
 ```kotlin
-
-class NullableJobsService(private val jobs: NullableJobs) {
-    fun getHighlyPaidJobs(minimumSalary: Salary): List<Job> =
-        jobs.findAll().filter { it.salary > minimumSalary }
+class JobsService(private val jobs: Jobs) {
+    fun retrieveSalary(id: JobId): Double =
+        jobs.findById(id).salary.value
 }
 ```
 
 If we try to compile the code, we get the following error:
 
 ```text
- Compilation failure
-[ERROR] .../functional-error-handling-in-kotlin/src/main/kotlin/in/rcard/FunctionalErrorHandling.kt:[38,23] Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type List<Job>?
+Compilation failure
+[ERROR] /functional-error-handling-in-kotlin/src/main/kotlin/in/rcard/nullable/NullableTypeErrorHandling.kt:[21,26] Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type Job?
 ```
 
 The compiler is warning us that we forgot to handle the case in which the list is `null`. As we can see, the compiler is helping us to avoid errors. Let's fix the code:
 
 ```kotlin
-fun getHighlyPaidJobs(minimumSalary: Salary): List<Job> =
-        jobs.findAll()?.filter { it.salary > minimumSalary } ?: listOf()
+fun retrieveSalary(id: JobId): Double =
+    jobs.findById(id)?.salary?.value ?: 0.0
 ```
 
-Here, we used the `?.`operator, which allows to call a method on a nullable object only if it's not `null`. Finally, we use the "elvis" operator, `?:`, as a fallback value, in case the list is `null`. With this new bulletproof code, we can now change the `main` method:
-
-```kotlin
-fun main() {
-    val jobsService = NullableJobsService(LiveNullableJobs())
-    val highlyPaidJobs = jobsService.getHighlyPaidJobs(Salary(100_000.00))
-    println("Best jobs on the market are: $highlyPaidJobs")
-}
-```
-
-If we run the program, we get the expected output, without any exception:
-
-```text
-Best jobs on the market are: []
-```
+Here, we used the `?.` operator, which allows to call a method on a nullable object only if it's not `null`. If we have a chain of method calls, we must use the `?.` operator for every method call. Finally, we use the "elvis" operator, `?:`, as a fallback value, in case the job is `null`.
 
 At first glance, using nullable value seems to be less composable than using, for example, the Java `Optional` type. This last type has a lot of functions, `map`, `flatMap`, or `filter`, which make it easy to compose and chain operations.
 
-Well, Kotlin nullable type have nothing to envy to the Java `Optional` type. In fact, the Kotlin standard library provides a lot of functions to handle nullable types. For example, the `Optional.map` function is equivalent to using the `let` scoping function. For example, let's try to get the jobs by company, using the `let` function:
+Well, Kotlin nullable types have nothing to envy to the Java `Optional` type. In fact, the Kotlin standard library provides a lot of functions to handle nullable types. For example, the `Optional.map` function is equivalent to using the `let` scoping function. For example, let's try to get the jobs by company, using the `let` function:
 
 ```kotlin
 fun getJobsByCompanyMap(): Map<String, List<Job>> {
