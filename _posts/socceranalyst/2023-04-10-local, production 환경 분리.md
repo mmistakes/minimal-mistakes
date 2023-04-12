@@ -1,3 +1,10 @@
+---
+categories: "socceranalyst"
+tag: "setting"
+---
+
+
+
 # 로컬 환경과 배포 환경 분리
 
 socceranalyst 에 한해서, 스프링을 실행할 때 저는 주로 로컬 환경은 H2 DB 를 사용하고, 배포할 때는 mysql 입니다.
