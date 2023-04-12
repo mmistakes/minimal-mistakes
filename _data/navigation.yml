@@ -6,9 +6,9 @@ main:
     url: /search/
 
 docs:
-  - title: "DeepDiveJavaScript"
+  - title: "Category"
     children:
-      - title: "Category"
+      - title: "DeepDiveJavaScript"
         url: /categories/
 
   # - title: "Quick-Start Guide"
