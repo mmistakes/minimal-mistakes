@@ -18,13 +18,6 @@
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
 
-    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
-    <script>addBackToTop({
-      diameter: 56,
-      backgroundColor: 'rgb(255, 82, 82)',
-      textColor: '#fff'
-    })</script>
-    
     <div class="initial-content">
       {{ content }}
     </div>
@@ -36,6 +29,12 @@
     {% endif %}
 
     <div id="footer" class="page__footer">
+      <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+      <script>addBackToTop({
+      diameter: 56,
+      backgroundColor: 'rgb(255, 82, 82)',
+      textColor: '#fff'
+      })</script>
       <footer>
         {% include footer/custom.html %}
         {% include_cached footer.html %}
