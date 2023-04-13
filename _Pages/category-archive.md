@@ -1,7 +1,7 @@
 ---
 title: "Notice"
 layout: categories
-pemalink: /categories/
+pemalink: /Notice/
 author_profile: true
 sidebar_main: true
 ---
