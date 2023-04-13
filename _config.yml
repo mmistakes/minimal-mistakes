@@ -108,7 +108,7 @@ author:
   avatar           : "/assets/images/Title copy.png"
   bio              : "모든 물품 다 받습니다"
   location         : "South Korea"
-  홈페이지 관리자 메일       : "eysypsl@naver.com"
+  email      : "eysypsl@naver.com"
   links:
     - label: "모든IT전당포 대표 메일"
       icon: "fas fa-fw fa-envelope-square"
