@@ -1,7 +1,7 @@
 ---
 title: "Notice"
-layout: Notice
-pemalink: /Notice/
+layout: categories
+pemalink: /categories/
 author_profile: false
 sidebar_main: false
 ---
