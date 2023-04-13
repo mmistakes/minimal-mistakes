@@ -1,7 +1,7 @@
 ---
-title: 'Java'
+title: 'ComputerArchitecture'
 layout: category
-permalink: categories/Java
+permalink: categories/ComputerArchitecture
 author_profile: true
 sidebar_main: true
 ---
