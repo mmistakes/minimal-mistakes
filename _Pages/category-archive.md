@@ -1,8 +1,8 @@
 ---
 title: "Notice"
-layout: categories
-pemalink: /categories/
-author_profile: true
-sidebar_main: true
+layout: Notice
+pemalink: /Notice/
+author_profile: false
+sidebar_main: false
 ---
 
