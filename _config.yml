@@ -110,7 +110,7 @@ author:
   location         : "South Korea"
   email      : "eysypsl@naver.com"
   links:
-    - label: "모든IT전당포 대표 메일"
+    - label: "E-Mail"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:dksehdbs1028@naver.com"
     - label: "Website"
