@@ -1,7 +1,7 @@
 ---
 title: "공지사항"
-layout: Notice
-pemalink: /Notice/
+layout: category
+pemalink: /categories/
 author_profile: true
 sidebar_main: true
 ---
