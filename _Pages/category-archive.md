@@ -1,5 +1,5 @@
 ---
-title: "intro"
+title: "Notice"
 layout: notice
 pemalink: /notice/
 author_profile: true
