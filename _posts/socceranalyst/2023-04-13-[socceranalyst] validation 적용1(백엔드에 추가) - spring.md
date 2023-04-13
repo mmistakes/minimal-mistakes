@@ -377,6 +377,8 @@ spring validation 을 통해서 프론트에서 서버로 들어오는 RequestDt
 
 [@validated, @valid 관련 참고 포스팅 링크입니다.](https://wildeveloperetrain.tistory.com/158)
 
+[제가 작성한 @validated, @valid 관련 포스팅입니다.](https://hobeen-kim.github.io/til-spring/Spring-Validation-%EC%9D%98-@valid-%EC%99%80-@validated-%ED%8C%8C%EA%B3%A0-%EB%93%A4%EA%B8%B0/)
+
 결론적으로 MethodArgumentNotValidException 이 터졌고, 체크예외이기 때문에 RuntimeException 으로는 (당연히) 잡을 수 없어서 전역예외처리에 추가해야 했습니다.
 
 **GlobalExceptionHandler 클래스**
