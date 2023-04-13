@@ -25,7 +25,7 @@ url                      : "https://TaeminKIMsl.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "TaeminKIMsl/TaeminKIMsl.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/Title copy.png"
+logo                     : "/assets/images/LOGO copy.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "모든IT전당포"
-  avatar           : "/assets/images/LOGO copy.png"
+  avatar           : "/assets/images/Title copy.png"
   bio              : "모든 물품 다 받습니다"
   location         : "South Korea"
   email            : "dksehdbs1028@naver.com"
@@ -287,7 +287,8 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
       show_date: true
+date_format: "%Y-%d-%m"
