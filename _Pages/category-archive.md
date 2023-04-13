@@ -1,8 +1,8 @@
 ---
-title: "Notice"
+title: "공지사항"
 layout: categories
-pemalink: /categories/
-author_profile: false
-sidebar_main: false
+pemalink: /notice/
+author_profile: true
+sidebar_main: true
 ---
 
