@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "공지사항"
-    url: /공지사항/
+    url: /categories/
   - title: "회사소개"
-    url: /회사소개/
+    url: /hello/
 
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
