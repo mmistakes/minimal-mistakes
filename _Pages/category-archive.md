@@ -1,5 +1,5 @@
 ---
-title: "공지사항"
+title: "intro"
 layout: notice
 pemalink: /notice/
 author_profile: true
