@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "공지사항"
-    url: ./categories/#공지사항/
+    url: /#공지사항/
 
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
