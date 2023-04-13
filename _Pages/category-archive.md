@@ -1,5 +1,5 @@
 ---
-title: "공지사항"
+title: "category"
 layout: categories
 pemalink: /categories/
 author_profile: true
