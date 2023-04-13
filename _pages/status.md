@@ -39,10 +39,8 @@ fixing_fiqci_image:
 
 Helmi is accessible through the LUMI environment daily between 13:00 EET and 08:00 EET. 
 
-22 Dec 2022: Due to an unexpected technical issue, Helmi is currently down.
-
-23 Feb 2023: Helmi will soon be up again.
-{: .notice--danger}
+13 April 2023: Helmi is up!
+{: .notice--success}
 
 <center>
 <style type="text/css">
@@ -78,9 +76,6 @@ Helmi is accessible through the LUMI environment daily between 13:00 EET and 08:
 
  <h1 style="font-size:0.75vw">🟢 - Service is available</h1> 
  <h1 style="font-size:0.75vw">🔴 - Service is down</h1> 
-
-
-{% include gallery id="fixing_fiqci_image" %}
 
 
 
