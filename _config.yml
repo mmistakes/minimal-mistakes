@@ -108,11 +108,11 @@ author:
   avatar           : "/assets/images/Title copy.png"
   bio              : "모든 물품 다 받습니다"
   location         : "South Korea"
-  email            : "dksehdbs1028@naver.com"
+  email            : "eysypsl@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "eysypsl@naver.com"
+      url: "dksehdbs1028@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
