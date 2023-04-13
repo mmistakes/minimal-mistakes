@@ -1,6 +1,6 @@
 ---
 title: "공지사항"
-layout: categories
+layout: notice
 pemalink: /notice/
 author_profile: true
 sidebar_main: true
