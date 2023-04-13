@@ -1,6 +1,6 @@
 ---
 categories: "socceranalyst"
-tag: ["springboot", "aspect", "exception"]
+tag: ["springboot", "aspect", "exception", "toyproject"]
 ---
 
 # 현재 상태

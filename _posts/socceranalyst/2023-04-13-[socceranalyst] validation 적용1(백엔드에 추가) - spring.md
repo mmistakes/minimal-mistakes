@@ -1,6 +1,6 @@
 ---
 categories: "socceranalyst"
-tag: ["validation", "spring"]
+tag: ["validation", "spring", "toyproject"]
 ---
 
 
@@ -154,19 +154,19 @@ memberId 는 어차피 1부터 시작하니까 UN(unsigned) 를 붙여서 쥐톨
             <td>gameName</td>
             <td>String</td> 
             <td>NN</td> 
-            <td>글자수 1~100, 영문자, 한글, 숫자, 특수문자 가능</td>             
+            <td>글자수 1~100</td>             
         </tr>
         <tr>
             <td>opponent</td>
             <td>String</td> 
             <td>-</td>
-            <td>글자수 0~100, 영문자, 한글, 숫자, 특수문자 가능</td>             
+            <td>글자수 0~100</td>             
         </tr>
         <tr>
             <td>location</td>
             <td>String</td> 
             <td>-</td> 
-            <td>글자수 0~100, 영문자, 한글, 숫자, 특수문자 가능</td>             
+            <td>글자수 0~100</td>             
         </tr>
          <tr>
             <td>GA, GF</td>
@@ -182,6 +182,7 @@ memberId 는 어차피 1부터 시작하니까 UN(unsigned) 를 붙여서 쥐톨
         </tr>
     </tbody>
 </table>
+
 
 gameName, opponent, location, GA, GF 까지 넉넉하게 줬습니다.
 
@@ -349,6 +350,8 @@ gameTime 은 어차피 최대 120분이니 복잡할 것 없이 Int 로 범위 �
 
 # 백엔드 Validation 설정 바꾸기 
 
+
+
 이제 백엔드 스프링 코드를 하나하나 보면서 변경해봅시다. 
 
 **중요한 점은 Validation 을 직접 Entity 에 설정하지 않고 DTO (Data Transfer Object) 에 적용한다는 점입니다. 방금  검색하다가 깨달았습니다...**
@@ -414,11 +417,13 @@ public class GlobalExceptionHandler {
 - 에러는 여러 개일 수 있습니다. (ID 도 검증에 걸리고 Email 도 걸리고...) 따라서 에러를 String List 형태로 변환한 후 `String errorMessages`  로 받아서 한줄로 만들어주겠습니다. 
 - 그리고 badRequest 와 함께 반환합니다. 그러면 front 에서 alert 창으로 errorMessage 를 띄웁니다.
 
+## DTO 변경하기
 
+이제 정말로 Dto 에 Validation 을 추가해보도록 하겠습니다. Request 를 받는 dto 는 총 9개입니다. (별거 없는 서비스에 참 많습니다.)
 
 ### MemberRequestDto
 
-필요한 코드만 들고 왔습니다. builder 생성자나 oneToMany 는 지금은 필요없습니다.
+회원가입 시 사용하는 Dto 입니다. 필요한 코드만 들고 왔습니다. builder 생성자나 oneToMany 는 지금은 필요없습니다.
 
 ```java
 @Getter
@@ -426,56 +431,313 @@ public class GlobalExceptionHandler {
 @NoArgsConstructor
 @Builder
 public class MemberRequestDto {
-    
-    private String memberId;
-    private String email;
-    private String password;
-    private String name;
-    private String nickname;
-}
-```
-
-**email **
-
-- 공백미허용, email 형식 적용
-
-  - Spring 에서는 @Email 만 적용하면 OK 입니다.
-
-- 최종 어노테이션  
-
-  - ```java
-    @Email(message="이메일 형식을 확인해주세요.")
-    private String email;
-    ```
-
-    
-
-**memberId**
-
-- 글자수 4~20/소문자필수, 숫자선택, UQ, NN
-
-  - 어차피 Unique 는 서비스계층에서 처리하게 되니 여기선 빼줍시다.
-  - NN 은 @NotBlank 로 처리해줍니다. 공백도 되면 안되니깐요.
-  - 소문자 필수, 숫자 선택 : `regexp = "^[a-z]+\\d*$"` (이거 끝나고 정규식 공부를 좀 해야겠습니다. GPT 가 만들어줘도 교차검증이 안되네요.)
-  - 글자수 4~20 : @Size(min = 4, max = 20)
-
-- 최종 어노테이션
-
-  - ```java
     @NotBlank(message = "ID 를 입력해주세요.")
     @Pattern(regexp = "^[a-z]+\\d*$", message = "4~20글자의 소문자, 숫자로 구성해주세요.")
     @Size(min = 4, max = 20, message = "4~20글자의 소문자, 숫자로 구성해주세요.")
     private String memberId;
-    ```
+    @Email(message="이메일 형식을 확인해주세요.")
+    private String email;
+    @NotBlank(message = "PassWord 를 입력해주세요.")
+    @Pattern(regexp = "^(?=.[0-9])(?=.[a-zA-Z])(?=.*[@#$%^&+=])(?=\S+$).{8,30}$", message = "8~30글자의 소문자, 숫자, 특수문자로 구성해주세요.")
+    private String password;
+    @Pattern(regexp = "^[a-zA-Z가-힣]{1,100}$")
+    private String name;
+    @Pattern(regexp = "^[a-zA-Z가-힣][a-zA-Z가-힣0-9]{1,20}$")
+    private String nickname;
+}
+```
 
-  - 메세지는 @Pattern 과 @Size 는 통일했습니다. 구구절절 구분해도 이상할거같아서요.
+### ChangePasswordRequestDto
 
-- 
+비밀번호 변경 시 사용하는 Dto 입니다. 위와 똑같이 해줍니다.
 
+```java
+package soccer.backend.auth.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+public class ChangePasswordRequestDto {
+    @NotBlank(message = "ID 를 입력해주세요.")
+    @Pattern(regexp = "^[a-z]+\\d*$", message = "4~20글자의 소문자, 숫자로 구성해주세요.")
+    @Size(min = 4, max = 20, message = "4~20글자의 소문자, 숫자로 구성해주세요.")
+    private String memberId;
+    @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,30}$", message = "8~30글자의 소문자, 숫자, 특수문자로 구성해주세요.")
+    private String exPassword;
+    @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,30}$", message = "8~30글자의 소문자, 숫자, 특수문자로 구성해주세요.")
+    private String newPassword;
+}
+```
 
+### PlayerRequestDto
 
-작성중입니다... Ing
+Player 등록 시 사용하는 Dto 입니다. 간단하게 name, position 만 받습니다. 
 
-링크걸려고 미리 올렸습니다.
+Id 검증은 서비스에서 실시하니까 따로 Validation 으로 검증은 하지 않겠습니다. 나머지도 똑같습니다.
+
+```java
+public class PlayerRequestDto {
+
+    private Long id;
+    @Pattern(regexp = "^[a-zA-Z가-힣]{1,100}$", message="1~100글자의 영문자 또는 한글을 입력해주세요.")
+    private String name;
+    @NotNull(message="포지션을 확인해주세요.")
+    //position 은 Enum 타입이므로 NotNull 만 넣어줍니다.
+    private Position position;
+
+    }
+}
+```
+
+### GameCreateRequestDto
+
+경기를 생성할 때 사용하는 Dto 입니다.
+
+```java
+public class GameCreateRequestDto {
+
+    @NotBlank(message = "경기명을 입력해주세요.")
+    @Size(min=1, max=100, message="경기명은 1~100 글자 사이로 작성해주세요.")
+    private String gameName;
+    @Size(max=100, message="상대팀은 100 글자 이하로 작성해주세요.")
+    private String opponent;
+    @Size(max=100, message="위치는 100 글자 이하로 작성해주세요.")
+    private String location;
+    @Min(0) @Max(999)
+    private int gf;
+    @Min(0) @Max(999)
+    private int ga;
+    @NotNull(message="날짜를 확인해주세요.")
+    private LocalDate createdAt;
+    //경기에 참가하는 선수의 정보를 gamePlayerAddRequestDto 로 리스트형태로 받습니다. 
+    private List<GamePlayerAddRequestDto> gamePlayerAddRequestDto;
+}
+```
+
+- LocalDate : 기본적으로 Spring Boot와 Jackson은 ISO-8601 형식의 날짜 문자열을 자동으로 Java의 LocalDate 및 LocalDateTime 객체로 변환할 수 있습니다. 이때, 문자열이 시간 정보를 포함하지 않으면 LocalDate로, 시간 정보를 포함하면 LocalDateTime으로 변환합니다.
+
+### gamePlayerAddRequestDto
+
+경기에 참가하는 선수 정보를 받는 Dto 입니다. 몇몇은 playerRequestDto 와 똑같습니다. 
+
+```java
+public class GamePlayerAddRequestDto {
+
+    private Long playerId;
+    @NotNull(message="포지션을 확인해주세요.")
+    private Position gamePosition;
+    @Min(0) @Max(120)
+    private int timeIn;
+    @Min(0) @Max(120)
+    private int timeOut;
+    @NotNull(message="선발/교체 여부를 확인해주세요.")
+    private Main main;
+}
+
+```
+
+gamePosition 을 가지고 있지 않은 ananymous, blue player 가 있지만, 해당 익명값은 Position Enum 에 NONE 을 넣어서 해결해줬습니다.
+
+### GameUpdateRequestDto
+
+경기 내용을 업데이트할 때 필요한 Dto 입니다. 경기 내용에서는 수정할 부분이 '경기 정보'와 '경기에 참여한 선수 기록'으로 구분되는데요. 따로 구분하는 게 불필요한 http 요청을 줄일 수 있을 것 같아서 나눠놨습니다.
+
+```java
+public class GameUpdateRequestDto {
+
+    private Long id;
+    @Size(min=1, max=100, message="경기명은 1~100 글자 사이로 작성해주세요.")
+    private String gameName;
+    @Size(max=100, message="상대팀은 100 글자 이하로 작성해주세요.")
+    private String opponent;
+    @Size(max=100, message="위치는 100 글자 이하로 작성해주세요.")
+    private String location;
+    @Min(0) @Max(999)
+    private int gf;
+    @Min(0) @Max(999)
+    private int ga;
+    @NotNull(message="날짜를 확인해주세요.")
+    private LocalDate createdAt;
+
+}
+```
+
+`GameCreateRequestDto` 와 비슷하지만 `List<gamePlayerAddRequestDto>` 가 없습니다. 경기에 참여한 선수에 대한 정보는 필요없기 때문입니다.
+
+### RecordRequestDto
+
+다음은 선수 및 경기 내 record 를 담당하는 RecordRequestDto 입니다. 게임 생성 시에는 모든 기록이 default 값 (주로 0) 이 들어가서 생성됩니다. 그리고 경기 세부내용 조회 페이지에서 선수들의 기록을 변경할 수 있습니다. 
+
+```java
+public class RecordRequestDto {
+
+    private Long id;
+    @NotNull(message="포지션을 확인해주세요.")
+    private Position gamePosition;
+    @Min(0) @Max(120)
+    private int timeIn;
+    @Min(0) @Max(120)
+    private int timeOut;
+    @NotNull(message="선발/교체 여부를 확인해주세요.")
+    private Main main;
+    @Min(0) @Max(999) //아래에 min, max 를 합치는 코드를 만들었습니다.
+    private int touch;
+    private int goal;
+    private int assist;
+    private int chanceMaking;
+    private int shoot;
+    private int validShoot;
+    private int dribble;
+    private int successDribble;
+    private int pass;
+    private int successPass;
+    private int longPass;
+    private int successLongPass;
+    private int crossPass;
+    private int successCrossPass;
+    private int tackle;
+    private int intercept;
+    private int contention;
+    private int successContention;
+    private int turnover;
+}
+
+```
+
+**반복되는 @Min, @Max 합치기** 
+
+@Min(0) @Max(999) 가 반복되고, timeIn/timeOut/gameTime 등은 @Min(0) @Max(120) 이 반복되니 다음과 같이 custom validation annotation 을 만들어줍니다.
+
+```java
+package soccer.backend.annotation;
+
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Min(0)
+@Max(120)
+@Target({ElementType.FIELD})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface MinMax120 {
+}
+
+```
+
+```java
+@Min(0)
+@Max(999)
+@Target({ElementType.FIELD})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface MinMax999 {
+}
+```
+
+이제부터 @MinMax120, @MinMax999 를 적용하겠습니다. ***<u>사실 중복을 줄이려고 만든건데 큰 차이가 없습니다. 오히려 나중에 값을 바꿀 때 더 힘들어질 수도 있겠습니다... ㅎㅎ</u>***
+
+### GameFieldRequestDto
+
+다음은 핵심로직을 위한 Dto 입니다. 히트맵에서 작성된 정보를 받습니다.
+
+```java
+public class GameFieldRequestDto {
+
+    private Long id;
+    private DotRecordRequestDto[] dotRecordRequestDto;
+
+}
+```
+
+여기서는 경기의 id 와 각 DotRecord 의 기록을 받습니다. Validation 처리할 건 없습니다.
+
+### DotRecordRequestDto
+
+히트맵 상 점에 대한 기록을 받습니다. 
+
+```java
+public class DotRecordRequestDto {
+
+    private Long playerId;
+    @Pattern(regexp = "^[a-zA-Z가-힣]{1,100}$", message="1~100글자의 영문자 또는 한글을 입력해주세요.")
+    private String playerName;
+    //spring 에서는 float(10,4) 와 같이 지정할 수 없습니다.
+    //대신 스프링에서 데이터베이스와 상호 작용할 때, 이와 같은 제약 조건을 다음과 같이 데이터베이스 스키마에 적용할 수 있습니다.
+    //@Column(name = "x", columnDefinition = "float(10,4)") <- 하지만 원하는 건 아니니 사용하지 맙시다.
+    private Float x;
+    private Float y;
+    @NotNull
+    private Position gamePosition;
+    private boolean shoot;
+    private boolean validShoot;
+    private Float shootX;
+    private Float shootY;
+	@MinMax120
+    private Integer gameTime;
+}
+```
+
+적다보니 서비스 로직에서 DotRecordRequestDto 를 dotRecord 로 받을 때 player 검증이 없었습니다... ㅎㅎ 다음과 같이 추가해줬습니다. 다음 로직은 dotRecordRequestDto 를 받아서 dotRecord 에 저장하고, List<DotRecord> 를 반환합니다.
+
+```java
+public List<DotRecord> toDotRecordList(Game game, DotRecordRequestDto[] dotRecordRequestDto) {
+	//반환할 dotREcords 의 목록입니다.
+    List<DotRecord> dotRecords = new ArrayList<>();
+    
+    //DotRecordRequestDto 반복문을 돌립니다.
+    for (DotRecordRequestDto request : dotRecordRequestDto) {
+        //DotRecord 를 새로 만들고 Request 에서 값을 받아서 넣습니다.
+        DotRecord dotRecord = new DotRecord();
+        ...
+
+        //playerId 가 0 이 아니고, -1 이 아닌 player 가 repository 에 있는지 찾습니다.
+        //0은 ananymous, -1 은 blue player 입니다. 검증할 필요없이 dotRecord 를 만들면 됩니다.
+        if(request.getPlayerId() != 0 && request.getPlayerId() != -1){
+            Player player = playerRepository.findById(request.getPlayerId()).orElseThrow(
+                    () -> new IllegalArgumentException("해당 선수가 존재하지 않습니다.")
+            );
+            //playerRepository 에는 있지만 해당 member 의 player 가 아닐 수도 있으니 검증해봅니다.
+            //isPlayer(player) 는 해당 member 의 player 가 맞는지 boolean 으로 반환하는 클래스입니다.
+            if (!isPlayer(player)) {
+                throw new IllegalArgumentException("해당 선수가 존재하지 않습니다.");
+            }
+        }
+        dotRecord.setPlayerId(request.getPlayerId());
+        ...
+
+        dotRecords.add(dotRecord);
+        dotRecordRepository.save(dotRecord);
+        }
+    return dotRecords;
+}
+```
+
+만들면서 생각났는데, RequestDto 에는 playerName, gamePosition 을 빼고 playerId 만 받아서 `toDotRecordList` 에서 넣어주면 될 것 같습니다. 그리고 reponseDto 에서는 playerName, gamePosition 넣어주는거죠.
+
+**근데 다시 생각나는건, 만약 player 가 삭제되면? 서비스에서는  player 가 사라져도 해당 id 를 가진 dotRecord 는 남기고 싶은데요. 해당 dotRecord 에 player 정보를 기록해두지 않으면 안됩니다. 이 부분은 다음에 player hide 옵션을 만든 후에 손보도록 합시다.**
+
+결론적으로 toDotRecordList 에서 PlayerId 검증은 빼겠습니다. 나중에 생각합시다. 위에 toDotRecordList 는 무시해주도록 합시다.
+
+Dto 가 잘되는지 통합테스트로 검증해봤습니다. (비밀번호 변경 하나만 해봤습니다 ㅎ)
+
+![image-20230413202522220](../../images/2023-04-13-validation 적용 - spring/image-20230413202522220.png)
+
+프론트에는 아직 검증로직이 없어서 백엔드에서 오류를 받아옵니다. (경고창도 좀 예쁜걸로 바꿔야겠어요.)
+
+다음 포스팅은 DB, 프론트엔드에 검증로직을 추가해보겠습니다.
+
+# 추가 이슈
+
+<u>*+추가 : @NotBlank or @NotNull 과 @Size 가 중복되면 그냥 빼주도록 하겠습니다. 에러 검증도 두번이나 되고 중복인데 굳이 넣을 필요 없네요.*</u>  
+
+<u>*+추가 : 로그인 기능에서는 validation 을 빼겠습니다. 애초에 Id, pw 검증을 하니까요. 게다가 중간에 로그인 검증 hint 가 변경되면 기존 pw 로 로그인이 안되는 문제가 있습니다.*</u>
+
+- 예를 들어 비밀번호를 1234 로 설정했는데, 개발자가 중간에 비밀번호 Validation 을 8자리 이상으로 변경한다면? 그런데 로그인에 validation 이 걸려있으면? 비밀번호는 맞는데 로그인이 안되는 문제가 발생...
+- 같은 이유로 비밀번호를 변경하는 로직(ChangePasswordRequestDto) 에서 memberId 와 exPassword 는 검증하지 않도록 합시다.

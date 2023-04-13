@@ -1,6 +1,6 @@
 ---
 categories: "socceranalyst"
-tag: "setting"
+tag: ["setting", "toyproject"]
 ---
 
 
