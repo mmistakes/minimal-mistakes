@@ -263,43 +263,11 @@ class JobsService(private val jobs: Jobs, private val converter: CurrencyConvert
 }
 ```
 
-For example, let's try to get the jobs by company, using the `let` function:
+As we can see, mixing up the `let` function with the `?.` operator, we can easily map a nullable value. In a similar way, we can simulate the `filter` function on a nullable value. In this case, we'll use the `?.` operator and the `takeIf` function. So, let's add a new function to our service that returns if a job is an Apple job:
 
 ```kotlin
-fun getJobsByCompanyMap(): Map<String, List<Job>> {
-    val jobs = jobs.findAll()
-    return jobs?.let {
-        it.groupBy { job -> job.company.name }
-    } ?: return mapOf()
-}
-```
-
-As we can see, mixing up the `let` function with the `?.` operator, we can easily map a nullable value. In a similar way, we can simulate the `filter` function on a nullable value. In this case, we'll use the `?.` operator and the `takeIf` function. So, let's add a new function to our `NullableJobs` interface and a possible implementation on the live object:
-
-```kotlin
-interface NullableJobs { 
-    // ...
-    fun findFirstByCompany(company: Company): Job?
-}
-
-class LiveNullableJobs : NullableJobs {
-    // ...
-    override fun findFirstByCompany(company: Company): Job? =
-        findAll()?.firstOrNull { it.company == company }
-        
-}
-```
-
-Now, we can use the `findFirstByCompany` to implement a method in the service that takes the first job by company if it has a minimum salary:
-
-```kotlin
-class NullableJobsService(private val jobs: NullableJobs) {
-    // ...
-    fun getHighlyPaidJobByCompany(company: Company, minimumSalary: Salary): Job? {
-        val job = jobs.findFirstByCompany(company)
-        return job?.takeIf { it.salary > minimumSalary }
-    }
-}
+fun isAppleJob(id: JobId): Boolean =
+    jobs.findById(id)?.takeIf { it.company.name == "Apple" } != null
 ```
 
 As we can see, we used the `takeIf` in association with the `?.` operator to filter the nullable value. The `takeIf` receives as parameter a lambda with receiver, where the receiver is the original type (not the nullable type). 
@@ -308,18 +276,19 @@ Now, we can change the `main` method to use the new function:
 
 ```kotlin
 fun main() {
-    val minimumSalary = Salary(100_000.00)
-    val jobsService = NullableJobsService(LiveNullableJobs())
-    val apple = Company("Apple")
-    val job = jobsService.getHighlyPaidJobByCompany(apple, minimumSalary)
-    job?.apply { println("One of the best job at $apple on the market is: $this") }
-        ?: println("No job at $apple on the market is worth $minimumSalary")
+    val jobs: Jobs = LiveJobs()
+    val currencyConverter = CurrencyConverter()
+    val jobsService = JobsService(jobs, currencyConverter)
+    val appleJobId = JobId(1)
+    val isAppleJob = jobsService.isAppleJob(appleJobId)
+    println("Q: Is the job with id $appleJobId an Apple job?\nA: $isAppleJob")
 }
 ```
 If we run the program, we get the expected output:
 
 ```text
-No job at Company(name=Apple) on the market is worth Salary(value=100000.0)
+Q: Is the job with id JobId(value=1) an Apple job?
+A: false
 ```
 
 Although nullable types offer a good degree of compositionality and a full support by the Kotlin language itself, the community of functional programmers is not very happy with this approach. The reason is that nullable types still require some boilerplate code to handle the case when the value is `null`.
