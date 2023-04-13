@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "intro"
-    url: https://taeminkimsl.github.io/intro/
+  - title: "공지사항"
+    url: https://taeminkimsl.github.io/Notice/notice
 
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
