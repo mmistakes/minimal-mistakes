@@ -16,7 +16,7 @@ return  0;
 /* C++은 Hello, World! print하기도 힘들다!*/
 ```
 
-이렇게 하면 **Hello, World!**가 출력이 된다. 사실 `int main() {`까지만 입력해도 알아서 자동완성 해주더라.
+이렇게 하면 **Hello, World!**가 출력이 된다. 사실 `int main() {`까지만 입력해도 알아서 자동완성 해주더라. (이거는 아마 내가 **Github copilot**을 쓰기 때문인거 같다)
 
 ### 1. Include <>
 `include <>`는 R에서 `library()` 혹은 Python에서는 `import`와 비슷한 역할을 하는 것 같다. 여기서 `stdio.h`는 입출력을 위한 라이브러리라고 한다.
@@ -34,6 +34,8 @@ return  0;
 
 ### 4. 주석
 C++(혹은 C)에서 주석은 ` /* */`를 활용해서 여러 줄 주석을 달거나 `// //`를 이용해서 한 줄만 주석처리를 하는 방법이 있다고 한다. 주석 다는 방법은 언어마다 다 달라서 항상 헷갈린다.
+
+다음에는 기본적인 산수를 공부해봐야겠다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzAwMjEzMjRdfQ==
+eyJoaXN0b3J5IjpbLTEzNjg1MDg2MjFdfQ==
 -->
