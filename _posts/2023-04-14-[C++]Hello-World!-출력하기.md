@@ -24,7 +24,12 @@ return  0;
 > Input and Output operations can also be performed in C++ using the **C**  **St**andar**d**  **I**nput and **O**utput Library (**cstdio**, known as stdio.h in the C language). This library uses what are called _streams_ to operate with physical devices such as keyboards, printers, terminals or with any other type of files supported by the system. Streams are an abstraction to interact with these in an uniform way; All streams have similar properties independently of the individual characteristics of the physical media they are associated with.
 > 출처 : https://cplusplus.com/reference/cstdio/
 
-이거는 다른 언어에서도 자주 보던거라 익숙하다.
+다른 프로그래밍 언어에서도 자주 접하는 그런 느낌의 문구라 오케이
+
+### 2. int main()
+`int main()`은 프로그램 맨 처음에 넣는거라고 하는데, 아직 프로그램을 길게 안짜봐서 이거는 더 공부를 해봐야 알것같다. `{}` 괄호로 열고 닫는데, 이거는 R과 똑같아서 이것도 금방 기억할 수 있을 것 같다.
+
+### 3. return 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTc5Nzg3NDRdfQ==
+eyJoaXN0b3J5IjpbMTA2NDYzNzE4NF19
 -->
