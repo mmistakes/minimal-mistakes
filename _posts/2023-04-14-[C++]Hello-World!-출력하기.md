@@ -18,7 +18,8 @@ return  0;
 
 이렇게 하면 **Hello, World!**가 출력이 된다. 사실 `int main() {`까지만 입력해도 알아서 자동완성 해주더라.
 
-
+### 1. Include <>
+`include <>`는 R에서 `library()` 혹은 Python에서는 `import`와 비슷한 역할을 하는 것 같다. 여기서 `stdio.h`는 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5Nzc4MzM4XX0=
+eyJoaXN0b3J5IjpbMTc3NDIzMzg3MV19
 -->
