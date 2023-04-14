@@ -29,7 +29,8 @@ return  0;
 ### 2. int main()
 `int main()`은 프로그램 맨 처음에 넣는거라고 하는데, 아직 프로그램을 길게 안짜봐서 이거는 더 공부를 해봐야 알것같다. `{}` 괄호로 열고 닫는데, 이거는 R과 똑같아서 이것도 금방 기억할 수 있을 것 같다.
 
-### 3. return 
+### 3. return 0;
+`return 0;`는 프로그램이 무사히 종료됨을 컴퓨터에게 알리는 신호라고 한다. `return 1;`이라고 하면 에러가 있다는 뜻이라고 하는데, 이 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NDYzNzE4NF19
+eyJoaXN0b3J5IjpbLTM2ODgzMjQ0NF19
 -->
