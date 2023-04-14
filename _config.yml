@@ -107,8 +107,8 @@ author:
   name             : "Arielle_SeoHeeKim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "From Tree to Forest."
-  location         : "Somewhere"
-  email            :
+  location         : "ko-KR"
+  email            : "seohee70428@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
