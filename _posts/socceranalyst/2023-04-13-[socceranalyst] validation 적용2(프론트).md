@@ -520,3 +520,63 @@ validation 내용은 모두 똑같습니다. 경기를 생성하는 `gameCtx.cre
 저는 VARCHAR(255) 이면 무조건 255 만큼의 공간을 차지한다고 생각했었는데요. 그게 아니라 입력된 값만큼만 공간을 차지한다고 합니다... ㅎㅎ
 
 그래서 웬만한 필드는 VARCHAR(255) 로 지정하고, 한글 100글자 이상은 VARCHAR(302) 으로 지정하겠습니다.
+
+# 마치며
+
+이렇게 validation 이 끝났습니다. 아직 부족한 점이 많지만 급한 불은 껐다고 생각하겠습니다.
+
+Validation 에서 중요 변경사항이 있으면 다시 포스팅해보겠습니다.
+
+# 이슈 추가
+
++추가 1 : gameDetail 페이지에서 선수 추가 시 validation 이 없습니다.
+
+- 다음과 같이 현재 game 내 player 를 filter 로  돌려서 그 id 와 추가되는 player 의 id 를 비교합니다.
+
+- 같은 id 가 있으면 alert('이미 추가된 플레이어입니다.') 를 띄웁니다.
+
+- 함수 내에서 변수 `let state = true` 를 설정해서 false 이면 addPlayer 를 진행하지 않습니다.
+
+- ```react
+  const handleAddPlayer = async () => {
+      let state = true;
+      setAddPlayerState(true);
+      const gameId = selectedGame.id;
+      const playerId = parseInt(AddplayerIdInputRef.current.value);
+      const gamePosition = AddGamePositionInputRef.current.value;
+      const mainSub = AddMainSubInputRef.current.value;
+  
+      selectedGame.gamePlayerResponseDto.filter(player => {
+        if(player.id == playerId) {
+          window.alert('이미 추가된 플레이어입니다.');
+          state = false;
+        }
+      })
+      if(state){
+        setIsLoading(true);
+        await gameCtx.addPlayer(gameId, playerId, gamePosition, mainSub);
+        setIsLoading(false);
+        setAddPlayerState(false);
+      }
+    }
+  ```
+
+  
+
++추가 2 : gameName, Location, Opponent 에 숫자를 못넣습니다.
+
+- 다음과 같은 검증식을 만들어서 적용하겠습니다. (min ~ max 글자 수, 모든 글자 허용)
+
+- ```react
+  const volumnValidator = (value, min, max) => {
+      const volumnRegex = new RegExp(`^.{${min},${max}}$`);
+      if (!volumnRegex.test(value)) return `글자 수 ${min}~${max} 사이의 값을 입력해주세요.`;
+      else return '';
+  };
+  ```
+
++추가 3 : DB 에서 타입 에러 발생
+
+![image-20230414231212649](../../images/2023-04-13-[socceranalyst] validation 적용2(프론트)/image-20230414231212649.png)
+
+잘 안보이네요... MYSQL 에 location 이 int 로 지정되어있었습니다. 그래서 ec2 의 백엔드 로그파일에 `Incorrect integer value: '' for column 'location' at row 1` 와 같은 오류가 떴습니다.
