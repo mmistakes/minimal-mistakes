@@ -14,7 +14,11 @@ tag: [github,daily,typora]
 
 test
 
-![image-20230415012550336](../../assets/images/2023-04-15-imagePaths/image-20230415012550336.png)
+![test1](../assets/images/2023-04-15-imagePaths/test1.png)
+
+
+
+
 
 <h3>Issues</h3>
 
