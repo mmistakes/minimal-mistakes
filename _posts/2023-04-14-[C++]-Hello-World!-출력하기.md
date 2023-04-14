@@ -1,13 +1,13 @@
 ---
 categories:
-  - C++
+  - C
 ---
 
-# #C++ #HelloWorld!
+# #C #HelloWorld!
 
-C++은 내가 평소에 쓰던 MATLAB이나 R 혹은 Python과는 언어가 전혀 다르게 생겼다. 그나마 파이썬이랑은 좀 비슷해보이기는 한데, 느낌이 전혀 달라서 배우기가 좀 난감하다. **Hello, World!** 하나 출력하는 것도 되게 어렵다.
+C는 내가 평소에 쓰던 MATLAB이나 R 혹은 Python과는 언어가 전혀 다르게 생겼다. 그나마 파이썬이랑은 좀 비슷해보이기는 한데, 느낌이 전혀 달라서 배우기가 좀 난감하다. **Hello, World!** 하나 출력하는 것도 되게 어렵다.
 
-```c++
+```c
 #include  <stdio.h>
 int  main() {
 printf("Hello, World!");
@@ -37,5 +37,5 @@ C++(혹은 C)에서 주석은 `/* */`를 활용해서 여러 줄 주석을 달�
 
 다음에는 기본적인 산수를 공부해봐야겠다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE4NzkyNzA5XX0=
+eyJoaXN0b3J5IjpbMTE2MTg0OTM5Myw3MTg3OTI3MDldfQ==
 -->
