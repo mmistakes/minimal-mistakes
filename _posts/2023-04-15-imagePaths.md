@@ -13,7 +13,7 @@ tag: [github,daily,typora]
 
 test
 
-![image-20230415011052254](../../assets/images/2023-04-15-imagePaths/image-20230415011052254.png)
+![image-20230415011052254](../assets/images/2023-04-15-imagePaths/image-20230415011052254.png)
 
 
 
