@@ -51,13 +51,13 @@ Configuration file: D:/GitHub/Blog/_config.yml
 jekyll 4.3.2 | Error:  tzinfo
 ```
 
-![1](../assets/images/2023-04-14-tzinfoError/1.PNG)
+![tzinfo_error](../../assets/images/2023-04-14-tzinfoError/tzinfo_error.PNG)
 
 Well, the same issue is still happened.
 
 
 
-2. Install `tzinfo-data`
+2. **Install `tzinfo-data`**
 
 Try to install tzinfo-data.
 
