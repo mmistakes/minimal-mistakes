@@ -28,9 +28,9 @@ Ensure users can effortlessly identify errors (e.g., send emails/SMS confirmatio
 Inform users about who made each change and when.
 Support error correction with "undo" and "revert" options.
 
-For example, in product management software, I'd like to see ticket reassignments without receiving email notifications for each change.
+For example, in product management software, I'd like to see ticket reassignments history but I don't want to receive email notifications for each change.
 However, when a team member is added or removed from a project, I prefer to be notified.
 
 ---
 
-This approach fosters trust and accelerates team collaboration. Good luck, fellow designers!
+I hope these three principles will help you craft products that foster trust and accelerate team collaboration. Good luck, fellow designers!
