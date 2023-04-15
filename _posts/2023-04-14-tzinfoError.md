@@ -4,6 +4,9 @@ title: "tzinfoError"
 categories: blogging
 tag: [github,daily,jekyll]
 toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
 ---
 
 # Dependency Error: tzinfo

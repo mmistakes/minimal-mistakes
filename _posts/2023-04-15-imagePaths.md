@@ -4,6 +4,9 @@ title: "Image Paths Issue"
 categories: blogging
 tag: [github,daily,typora]
 toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
 ---
 
 
