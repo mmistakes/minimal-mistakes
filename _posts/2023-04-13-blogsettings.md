@@ -6,6 +6,7 @@ tag: [github,daily]
 author_profile: false
 sidebar:
     nav: "docs"
+search: true
 ---
 
 

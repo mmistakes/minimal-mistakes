@@ -4,6 +4,8 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
+  - title: "Search"
+    url: /search/
 
 docs:
   - title: "The Geek Cat's BLog"
@@ -12,6 +14,7 @@ docs:
         url: /categories/
       - title: "Tags"
         url: /tags/
+
 
 
   # - title: "About"
