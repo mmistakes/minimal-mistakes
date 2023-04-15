@@ -9,7 +9,7 @@ bld.ai teams have built hundreds of products and many of them contain real-time 
 
 To address this, let's explore three principles:
 
-# 🎮 1. Cater to beginners and advanced users
+# 🎮 1. Cater to beginners and experts
 
 Design interfaces that accommodate users with different skill levels.
 Place documentation near actions to enhance discoverability, and provide advanced users with shortcuts, batch edits, and composable operations.
