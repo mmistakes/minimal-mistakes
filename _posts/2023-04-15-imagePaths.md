@@ -20,7 +20,7 @@ I'm using Typor the Markdown editor for my GitHub Blog.
 
 The setting was okay to upload images to GitHub; but a new issue has been happened since I made categories for my posts.
 
-<br >
+
 
 
 
@@ -29,6 +29,8 @@ The setting was okay to upload images to GitHub; but a new issue has been happen
 ​	My current settings are below:
 
 ​	![imagePaths01]({{site.url}}/assets/images/2023-04-15-imagePaths/imagePaths01.PNG)
+
+
 
 
 
@@ -74,7 +76,7 @@ The setting was okay to upload images to GitHub; but a new issue has been happen
 
 ​	Based on the error messages, the newly set 'category' is also set as a part of the image path which I have never set. This post belongs to the 'blogging' category, so the 'blogging' is added to the top path.
 
-<br >
+
 
 
 
@@ -82,7 +84,7 @@ The setting was okay to upload images to GitHub; but a new issue has been happen
 
 I have no idea what is the exam reason causing the path error; however, I have found it's a common error who made categories on this theme.
 
-<br >
+
 
 
 
@@ -96,7 +98,7 @@ I have got a solution from TeddyNote YouTube video:
 
    Firstly, I check whether the url in `config.yml` is good.
 
-​	![image-5-1]({{site.url}}}/assets/images/2023-04-15-imagePaths/imagePaths05-1.png)
+![image-5-1]({{site.url}}}/assets/images/2023-04-15-imagePaths/imagePaths05-1.png)
 
 
 
