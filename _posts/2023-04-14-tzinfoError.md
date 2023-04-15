@@ -3,13 +3,14 @@ layout: single
 title: "tzinfoError"
 categories: blogging
 tag: [github,daily,jekyll]
+toc: true
 ---
 
-<h2>Dependency Error: tzinfo</h2>
+# Dependency Error: tzinfo
 
 <br />
 
-<h3>Issues</h3>
+## Issues
 
 I'm using `bundle exec jekyll serve`  to preview updates for my GitHub blog on my local live server for convenience; however, an unexpected error has been happened like below:
 
@@ -22,19 +23,19 @@ jekyll 4.3.2 | Error:  tzinfo
 
 <br /><br />
 
-<h3>Reasons </h3>
+## Reasons
 
 When the Ruby intepretor runs the IANA timezone information, `tz` is needed on Windows as Windows doesn't include it.
 
 <br /><br />
 
-<h3>Solutions</h3>
+## Solutions
 
 <br />
 
 
 
-1. **Install `tzinfo`**
+### 1. Install `tzinfo`
 
 One of the reasons for the error is tzinfo is not installed, so try to install ```tzinfo``` first.
 
@@ -53,7 +54,7 @@ Well, the same issue is still happened.
 
 <br />
 
-2. **Install `tzinfo-data`**
+### 2. Install `tzinfo-data`
 
 Try to install tzinfo-data.
 
@@ -77,7 +78,7 @@ Uh... it's not solved yet.
 
 <br />
 
-3. **Add `tzinfo` in `Gemfile`**
+### 3. Add `tzinfo` in `Gemfile`
 
 Only two lines of `tzinfo` and `tzinfo-data` are added in Gemfile under the GitHub blog folder and it works!
 
@@ -194,7 +195,7 @@ Run in verbose mode to see all warnings.
 
 <br /><br />
 
-<h3>Conclusion</h3>
+## Conclusion
 
 Just try the number 3!
 

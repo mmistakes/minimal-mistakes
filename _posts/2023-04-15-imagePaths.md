@@ -3,7 +3,7 @@ layout: single
 title: "Image Paths Issue"
 categories: blogging
 tag: [github,daily,typora]
-#typora-root-url: ../../
+toc: true
 ---
 
 
@@ -12,13 +12,13 @@ tag: [github,daily,typora]
 
 
 
+# Image Path Issues on GitHub Blog
 
 
-<h2>Image Path Issues on GitHub Blog</h2>
 
 <br />
 
-<h3>Issues</h3>
+## Issues
 
 I'm using Typor the Markdown editor for my GitHub Blog. 
 
@@ -26,7 +26,7 @@ The setting was okay to upload images to GitHub; but a new issue has been happen
 
 <br />
 
-**1. Current Settings: Looks okay**
+### **1. Current Settings: Looks okay**
 
 ​	My current settings are below:
 
@@ -34,7 +34,7 @@ The setting was okay to upload images to GitHub; but a new issue has been happen
 
 <br />
 
-**2. Paths on the editors: Looks okay**
+### **2. Paths on the editors: Looks okay**
 
 ​	And its path looks okay:
 
@@ -42,7 +42,7 @@ The setting was okay to upload images to GitHub; but a new issue has been happen
 
 <br />
 
-**3. Images in the folder: Looks okay**
+### **3. Images in the folder: Looks okay**
 
 ​	Images are uploaded in the right path as its paths on Settings.
 
@@ -52,7 +52,7 @@ The setting was okay to upload images to GitHub; but a new issue has been happen
 
 <br />
 
-**4. Image errors on posts: Issue happend**
+### **4. Image errors on posts: Issue happend**
 
 ​	It looks okay above, however, images are not shown on posts:
 
@@ -60,7 +60,7 @@ The setting was okay to upload images to GitHub; but a new issue has been happen
 
 <br />
 
-**5. Image errors on server: Issue happened**
+### 5. Image errors on server: Issue happened
 
 ​	When a post containing images is updated on a local live server, there are error meesages:		
 
@@ -80,7 +80,7 @@ The setting was okay to upload images to GitHub; but a new issue has been happen
 
 <br />
 
-<h3>Reasons </h3>
+## Reasons
 
 I have no idea what is the exam reason causing the path error; however, I have found it's a common error who made categories on this theme.
 
@@ -88,13 +88,13 @@ I have no idea what is the exam reason causing the path error; however, I have f
 
 <br />
 
-<h3>Solutions</h3>
+## Solutions
 
 I have got a solution from TeddyNote YouTube video:
 
 
 
-**1. Check the url in `config.yml**`**
+### 1. Check the url in `config.yml`
 
 Firstly, I check whether the url in `config.yml` is good.
 
@@ -106,7 +106,7 @@ Firstly, I check whether the url in `config.yml` is good.
 
 <br />
 
-**2. Add `{{ site.ur l}}` to the beginning of each image path**
+### 2. Add `{ { s i t e.u r l } }` to the beginning of each image path
 
 ​	When I add an image in Typora, an image path is automatically set based on the preference.
 
@@ -120,11 +120,13 @@ Firstly, I check whether the url in `config.yml` is good.
 
 ​	The url path is correct and it works in a common situation; however, due to the category, the path doesn't work and images are now shown in the post. 
 
-​	So, here is my solution. Add `{{ site.url }}` to the beginning of each image path:
+​	So, here is my solution. Add `{ { s i t e.u r l } }` to the beginning of each image path:
 
 ```powershell
-{{ site.url }}}/assets/images/2023-04-15-imagePaths/imagePaths05-1.png
+{ { s i t e.u r l } }/assets/images/2023-04-15-imagePaths/imagePaths05-1.png
 ```
+
+* Notes: Please remove all space in `{ { s i t e . u r l}}`
 
 ​	Then, it works successfully!
 
