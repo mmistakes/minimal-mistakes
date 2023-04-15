@@ -22,14 +22,11 @@ Trust users by granting them the freedom to perform operations beyond their "rol
 
 For instance, I allow calendar invite recipients to make modifications, saving everyone time. Has this power been abused? No. This convenience enables rescheduling without consulting me.
 
-# 🔧 3. Support error prevention and recovery
+# 🔧 3. Support error prevention
 
-Ensure users can effortlessly identify errors (e.g., send emails/SMS confirmations for significant operations), and maintain a log of all changes made in the system.
-Inform users about who made each change and when.
-Support error correction with "undo" and "revert" options.
+Ensure users can effortlessly identify errors (e.g., send emails/SMS confirmations for significant operations), and maintain a history of all changes made. A chronological history of changes made should be front and center, or easy to find. Inform users about who made each change and when. Support recovery with "undo" and "revert" (to a previous state in history) options.
 
-For example, in product management software, I'd like to see ticket reassignments history but I don't want to receive email notifications for each change.
-However, when a team member is added or removed from a project, I prefer to be notified.
+For example, in product management software, I'd like to see ticket reassignments history but I don't want to receive email notifications for each change. However, when a team member is added or removed from a project, I prefer to be notified.
 
 ---
 
