@@ -7,7 +7,7 @@ Design is not reserved for designers alone; it's a collaborative process that te
 
 bld.ai teams have built hundreds of products and many of them contain real-time collaborative elements. Common mistakes made by our designers are to assume that users will be beginners forever and to define roles/permissions, which inadvertently constrain users.
 
-To address this, let's explore three key principles:
+To address this, let's explore three principles:
 
 # 🎮 1. Cater to beginners and advanced users
 
