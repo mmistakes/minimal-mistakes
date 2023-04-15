@@ -51,7 +51,7 @@ Configuration file: D:/GitHub/Blog/_config.yml
 jekyll 4.3.2 | Error:  tzinfo
 ```
 
-![tzinfo_error](../../assets/images/2023-04-14-tzinfoError/tzinfo_error.PNG)
+![tzinfo_error]({{site.url}}/assets/images/2023-04-14-tzinfoError/tzinfo_error.PNG)
 
 Well, the same issue is still happened.
 
