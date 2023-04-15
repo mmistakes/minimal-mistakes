@@ -20,6 +20,8 @@ I'm using Typor the Markdown editor for my GitHub Blog.
 
 The setting was okay to upload images to GitHub; but a new issue has been happened since I made categories for my posts.
 
+<br >
+
 
 
 1. **Current Settings: Looks okay**
@@ -46,11 +48,13 @@ The setting was okay to upload images to GitHub; but a new issue has been happen
 
 ​	![image-3-2]({{site.url}}/assets/images/2023-04-15-imagePaths/imagePaths03-2.png)	
 
+
+
 4. **Image errors on posts: Issue happend**
 
-   It looks okay above, however, images are not shown on posts:
+​	It looks okay above, however, images are not shown on posts:
 
-   ![image-4-1]({{site.url}}/assets/images/2023-04-15-imagePaths/imagePaths04-1.png)
+![image-4-1]({{site.url}}/assets/images/2023-04-15-imagePaths/imagePaths04-1.png)
 
 
 
@@ -70,13 +74,15 @@ The setting was okay to upload images to GitHub; but a new issue has been happen
 
 ​	Based on the error messages, the newly set 'category' is also set as a part of the image path which I have never set. This post belongs to the 'blogging' category, so the 'blogging' is added to the top path.
 
+<br >
+
 
 
 <h3>Reasons </h3>
 
 I have no idea what is the exam reason causing the path error; however, I have found it's a common error who made categories on this theme.
 
-
+<br >
 
 
 
@@ -94,7 +100,7 @@ I have got a solution from TeddyNote YouTube video:
 
 
 
-2. **Add `{{site.url}}` to the beginning of each image path**
+2. **Add `{{ site.ur l}}` to the beginning of each image path**
 
 ​	When I add an image in Typora, an image path is automatically set based on the preference.
 
@@ -108,10 +114,10 @@ I have got a solution from TeddyNote YouTube video:
 
 ​	The url path is correct and it works in a common situation; however, due to the category, the path doesn't work and images are now shown in the post. 
 
-​	So, here is my solution. Add `{{site.url}}` to the beginning of each image path:
+​	So, here is my solution. Add `{{ site.url }}` to the beginning of each image path:
 
 ```powershell
-{{site.url}}}/assets/images/2023-04-15-imagePaths/imagePaths05-1.png
+{{ site.url }}}/assets/images/2023-04-15-imagePaths/imagePaths05-1.png
 ```
 
 ​	Then, it works successfully!
