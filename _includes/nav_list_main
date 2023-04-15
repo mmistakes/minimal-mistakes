@@ -43,5 +43,14 @@
       </li>
       {% endif %} {% endfor %}
     </ul>
+    <ul>
+      {% for category in site.categories %} {% if category[0] == "MongoDB" %}
+      <li>
+        <a href="/categories/mongodb" class=""
+          >MongoDB ({{ category[1].size }})</a
+        >
+      </li>
+      {% endif %} {% endfor %}
+    </ul>
   </ul>
 </nav>
