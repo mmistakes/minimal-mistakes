@@ -1,5 +1,5 @@
 ---
-title: Cater, Empower, and Support Collaboration in Product Design
+title: Cater, empower, and support collaboration in product design
 toc: true
 ---
 
