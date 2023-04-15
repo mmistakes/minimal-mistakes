@@ -12,12 +12,6 @@ tag: [github,daily,typora]
 
 <h2>Image Path Issues on GitHub Blog</h2>
 
-test
-
-
-
-
-
 
 
 <h3>Issues</h3>
