@@ -1,5 +1,5 @@
 ---
-title: The Art of Embracing Speed
+title: The art of embracing speed
 category: "Product Development"
 ---
 
