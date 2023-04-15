@@ -7,7 +7,7 @@ tag: [github,daily,jekyll]
 
 <h2>Dependency Error: tzinfo</h2>
 
-
+<br />
 
 <h3>Issues</h3>
 
@@ -20,21 +20,17 @@ Configuration file: D:/GitHub/Blog/_config.yml
 jekyll 4.3.2 | Error:  tzinfo
 ```
 
-
-
-
+<br /><br />
 
 <h3>Reasons </h3>
 
 When the Ruby intepretor runs the IANA timezone information, `tz` is needed on Windows as Windows doesn't include it.
 
-
-
-
+<br /><br />
 
 <h3>Solutions</h3>
 
-
+<br />
 
 
 
@@ -55,7 +51,7 @@ jekyll 4.3.2 | Error:  tzinfo
 
 Well, the same issue is still happened.
 
-
+<br />
 
 2. **Install `tzinfo-data`**
 
@@ -79,7 +75,7 @@ Uh... it's not solved yet.
 
 
 
-
+<br />
 
 3. **Add `tzinfo` in `Gemfile`**
 
@@ -196,7 +192,7 @@ Run in verbose mode to see all warnings.
 
 ```
 
-
+<br /><br />
 
 <h3>Conclusion</h3>
 
