@@ -4,7 +4,189 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+  <style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+      }
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.fullScreen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slowFade {
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    border: 1px solid rgba(0, 4, 255, 0.526);
+}
+.slowFade .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    background: #000;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    opacity: 0;
+    transform: scale(1.5) rotate(15deg);
+    -webkit-animation: slowFade 32s infinite;
+            animation: slowFade 32s infinite;
+}
+.slowFade .slide:nth-child(1) img {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+}
+.slowFade .slide:nth-child(9) img {
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+}
+.slowFade .slide:nth-child(8) img {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+}
+.slowFade .slide:nth-child(7) img {
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+}
+.slowFade .slide:nth-child(6) img {
+    -webkit-animation-delay: 20s;
+            animation-delay: 20s;
+}
+.slowFade .slide:nth-child(5) img {
+    -webkit-animation-delay: 25s;
+            animation-delay: 25s;
+}
+.slowFade .slide:nth-child(4) img {
+    -webkit-animation-delay: 30s;
+            animation-delay: 30s;
+}
+.slowFade .slide:nth-child(3) img {
+    -webkit-animation-delay: 35s;
+            animation-delay: 35s;
+}
+.slowFade .slide:nth-child(2) img {
+    -webkit-animation-delay: 40s;
+            animation-delay: 40s;
+}
+.slowFade .slide:nth-child(1) img {
+    -webkit-animation-delay: 45s;
+            animation-delay: 45s;
+}
+@keyframes slowFade {
+    25% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slowFade {
+    25% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+    40% {
+        opacity: 0;
+    }
+}
+  </style>
+
+</head>
+<body>
+  
+
+  <div class="slides slowFade">
+    <div class="slide">
+        <img src="/assets/images/Zap (1).png" alt="Zapping & Nuking Game Screenshot 1"/>
+    </div>
+    <div class="slide">
+        <img src="/assets/images/soccer1.png" alt="Soccer Game Screenshot 1"/>
+    </div>
+    <div class="slide">
+        <img src="/assets/images/runner1.png" alt="Runner Game Screenshot 1"/>
+    </div>
+    <div class="slide">
+        <img src="/assets/images/rrr1.png" alt="RRR Game Screenshot 1"/>
+    </div>
+    <div class="slide">
+        <img src="/assets/images/Zap (2).png" alt="Zapping & Nuking Game Screenshot 2"/>
+    </div>
+    <div class="slide">
+        <img src="/assets/images/soccer2.png" alt="Soccer Game Screenshot 2"/>
+    </div>
+    <div class="slide">
+        <img src="/assets/images/runner2.png" alt="Runner Game Screenshot 2"/>
+    </div>
+    <div class="slide">
+        <img src="/assets/images/rrr2.png" alt="RRR Game Screenshot 2"/>
+    </div>
+    <div class="slide">
+        <img src="/assets/images/Zap (3).png" alt="Zapping & Nuking Game Screenshot 3"/>
+    </div>
+    <div class="slide">
+        <img src="/assets/images/soccer3.png" alt="Soccer Game Screenshot 3"/>
+    </div>
+    <div class="slide">
+        <img src="/assets/images/runner3.png" alt="Runner Game Screenshot 3"/>
+    </div>
+    <div class="slide">
+        <img src="/assets/images/rrr3.png" alt="RRR Game Screenshot 3"/>
+    </div>
+  </div>
+
+  
+  <div class = "about"> 
+    <hr>
+    <a href = "/games/"><strong>View All Games</strong></a>
+    <hr>
+    <p>
+        My name is Tirupathi and I am a Game developer/Programmer.
+        I have a passion for making video games and I have been doing it for over 2+ years.
+        I have experience in programming, game design, level design, and more.
+        I love to work on all aspects of game development, from the initial concept to the final product.
+    </p>
+    <p>
+        I am always pushing myself to learn new things and I am always looking for new challenges.
+        I have a strong perseverance for learning new things and taking on challenges, and I always like to put some extra time in polishing my creations, to make sure the creative vision is achieved in the best possible way. I’ve always been extremely curious in the technical side of games, and sometimes this curiosity has led me to projects
+        <br>
+    </p>
+    <p>
+        Here you can <a href="/games/">See and Play</a> some of the projects I’ve had the opportunity of contributing to, and some of the personal-fun-things I’ve been working on.
+    </p>
+  </div>
+  
+</body>
+</html>
+
+
 
 {% if paginator %}
   {% assign posts = paginator.posts %}

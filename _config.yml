@@ -10,9 +10,16 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
+<<<<<<< Updated upstream
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+=======
+#theme                  : "minimal-mistakes-jekyll"
+remote_theme             : "mmistakes/minimal-mistakes"
+#theme: minimal-mistakes-jekyll
+minimal_mistakes_skin    : "aqua" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+>>>>>>> Stashed changes
 
 # Site Settings
 locale                   : "en-US"
@@ -104,11 +111,19 @@ analytics:
 
 # Site Author
 author:
+<<<<<<< Updated upstream
   name             : "Your Name"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
   location         : "Somewhere"
   email            :
+=======
+  name             : "K Tirupathi Rao"
+  avatar           : "/assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I am a **Game Programmer**"
+  #location         : "Hyderabad"
+  email            : "tirupathi9436@gmail.com"
+>>>>>>> Stashed changes
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -290,3 +305,17 @@ defaults:
       comments: # true
       share: true
       related: true
+<<<<<<< Updated upstream
+=======
+      
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+
+
+>>>>>>> Stashed changes

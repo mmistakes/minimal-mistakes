@@ -1,9 +1,21 @@
 # main links
 main:
+<<<<<<< Updated upstream
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
+=======
+  #- title: "Quick-Start Guide"
+  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+ 
+  - title: "Game Projects"
+    url: https://ktr-hub.github.io/games/
+  - title: "Resume"
+    url: https://ktr-hub.github.io/resume/
+
+
+>>>>>>> Stashed changes
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
