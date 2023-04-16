@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Image Paths Issue"
+title: "Image Path Issues on GitHub Blog"
 categories: blogging
 tag: [github,daily,typora]
 toc: true
@@ -9,14 +9,6 @@ sidebar:
     nav: "docs"
 search: true
 ---
-
-
-
-
-
-
-
-# Image Path Issues on GitHub Blog
 
 
 

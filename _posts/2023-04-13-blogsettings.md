@@ -10,9 +10,6 @@ search: true
 ---
 
 
-<h2> Blog Settings</h2>
-
-
 
 <h3>Conversion</h3>
 

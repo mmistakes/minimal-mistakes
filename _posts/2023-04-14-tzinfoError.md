@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "tzinfoError"
+title: "Dependency Error: tzinfo"
 categories: blogging
 tag: [github,daily,jekyll]
 toc: true
@@ -10,7 +10,7 @@ sidebar:
 search: true
 ---
 
-# Dependency Error: tzinfo
+
 
 <br />
 
