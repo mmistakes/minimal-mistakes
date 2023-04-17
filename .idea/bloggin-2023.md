@@ -4,15 +4,21 @@
 
 ## Topics
 
-1. Tools I use and love
+1. Tools I use and love (EN)
   - bash
   - starship prompt
   - git mzybe
   - VSCode
   - pipx
   - pyenv
-1. Merging on multi-index dataframes
-1. How and when to use apply on dataframe
-1. Twitter BOT code Beschreibung (Serie über 3?)
-1. Sonett (CF?)
-1. 
+1. Merging on multi-index dataframes (EN)
+1. How and when to use apply on dataframe (EN)
+1. Twitter BOT code Beschreibung (Serie über 3?) (EN)
+1. Sonett (DE)
+1. Build your own Tansformer with sklearn (EN)
+1. Timeline Jamba Sparabo (DE)
+1. Why do I follow / admire X
+  - Elon
+  - Paul Graham
+  - Lex
+  - Federer
