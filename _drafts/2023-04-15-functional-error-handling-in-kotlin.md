@@ -291,6 +291,39 @@ Q: Is the job with id JobId(value=1) an Apple job?
 A: false
 ```
 
+Despite the fact that the `?.` operator and the `let` function are extremely powerful, it's quite easy to end with a code that has a lot of nested calls. For example, let's create a function in out service that returns the sum of the salaries of two jobs:
+
+```kotlin
+fun sumSalaries(jobId1: JobId, jobId2: JobId): Double? {
+    val maybeJob1: Job? = jobs.findById(jobId1)
+    val maybeJob2: Job? = jobs.findById(jobId2)
+    return maybeJob1?.let { job1 ->
+        maybeJob2?.let { job2 ->
+            job1.salary.value + job2.salary.value
+        }
+    }
+}
+```
+
+To overcome the above problem, we can use some sweet functionalities provided by the Kotlin Arrow library. In the set-up section, we already imported the dependency from Arrow, so we can use it in our code.
+
+The Arrow library provides a lot of functional programming constructs. In detail, it provides some form of monadic list-comprehension (in Scala, it's called _for-comprehension_) that allows us to write code in a more functional way and avoid the nested calls.
+
+For nullable type, Arrow offers the `nullable` DSL. Inside the DSL, we have access to some useful functions, such as the `ensureNotNull` function and the `bind` extension function. Let's rewrite the `sumSalaries` function using the `nullable` DSL, and then we'll analyze the code:
+
+```kotlin
+fun sumSalaries2(jobId1: JobId, jobId2: JobId): Double? = nullable.eager {
+    val job1: Job = jobs.findById(jobId1).bind()
+    val job2: Job = ensureNotNull(jobs.findById(jobId2))
+    job1.salary.value + job2.salary.value
+}
+```
+
+As we can see, the two functions extract the value from the nullable type. If the value is `null`, then the `nullable.eager` block returns `null` immediately. Here, we use the `eager` function, which accepts a not suspendable function. If we want to use a suspendable function, we can use the `nullable` DSL directly.
+
+Both the `nullable` and the `nullable.eager` DSL have a scope as receiver, respectively a `arrow.core.continuations.NullableEagerEffectScope`and a `arrow.core.continuations.NullableEffectScope`. The library defines the `ensureNotNull` and the `bind` extension functions on these scopes. To be fair, the `bind` function is just a wrapper to the same function defined in the `Optional` type that we'll see it in the next section.
+
+
 Although nullable types offer a good degree of compositionality and a full support by the Kotlin language itself, the community of functional programmers is not very happy with this approach. The reason is that nullable types still require some boilerplate code to handle the case when the value is `null`.
 
 Fortunately, Kotlin and some of its libraries provide a more functional approach to handle errors. Let's see how we can use it.
