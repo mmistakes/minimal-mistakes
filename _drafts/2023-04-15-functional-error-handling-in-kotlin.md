@@ -321,8 +321,35 @@ fun sumSalaries2(jobId1: JobId, jobId2: JobId): Double? = nullable.eager {
 
 As we can see, the two functions extract the value from the nullable type. If the value is `null`, then the `nullable.eager` block returns `null` immediately. Here, we use the `eager` function, which accepts a not suspendable function. If we want to use a suspendable function, we can use the `nullable` DSL directly.
 
-Both the `nullable` and the `nullable.eager` DSL have a scope as receiver, respectively a `arrow.core.continuations.NullableEagerEffectScope`and a `arrow.core.continuations.NullableEffectScope`. The library defines the `ensureNotNull` and the `bind` extension functions on these scopes. To be fair, the `bind` function is just a wrapper to the same function defined in the `Optional` type that we'll see it in the next section.
+Clearly, giving two existing jobs to the `sumSalaries` and to the `sumSalaries2`functions we get the same result. We changed the `main` function to call both the functions: 
 
+```kotlin
+fun main() {
+    val jobs: Jobs = LiveJobs()
+    val currencyConverter = CurrencyConverter()
+    val jobsService = JobsService(jobs, currencyConverter)
+    val salarySum1 = jobsService.sumSalaries(JobId(1), JobId(2))
+    val salarySum2 = jobsService.sumSalaries2(JobId(1), JobId(2))
+    println("The sum of the salaries using 'sumSalaries' is $salarySum1")
+    println("The sum of the salaries using 'sumSalaries2' is $salarySum2")
+}
+```
+
+The output of the program is the expected one:
+
+```text
+The sum of the salaries using 'sumSalaries' is 150000.0
+The sum of the salaries using 'sumSalaries2' is 150000.0
+```
+
+If we pass a job id that doesn't exist, we get the expected result from both the functions:
+
+```text
+The sum of the salaries using 'sumSalaries' is null
+The sum of the salaries using 'sumSalaries2' is null
+```
+
+Both the `nullable` and the `nullable.eager` DSL have a scope as receiver, respectively a `arrow.core.continuations.NullableEagerEffectScope`and a `arrow.core.continuations.NullableEffectScope`. The library defines the `ensureNotNull` and the `bind` extension functions on these scopes. To be fair, the `bind` function is just a wrapper to the same function defined in the `Optional` type that we'll see it in the next section.
 
 Although nullable types offer a good degree of compositionality and a full support by the Kotlin language itself, the community of functional programmers is not very happy with this approach. The reason is that nullable types still require some boilerplate code to handle the case when the value is `null`.
 
