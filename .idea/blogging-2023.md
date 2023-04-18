@@ -6,8 +6,8 @@
 
 1. Tools I use and love (EN)
   - bash
-  - starship prompt
-  - git mzybe
+  - Jekyll https://jekyllrb.com/
+  - starship prompt https://starship.rs/
   - VSCode
   - pipx
   - pyenv
