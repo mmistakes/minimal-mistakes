@@ -15,3 +15,9 @@ To ensure proper use within WLS2 run this command:
 ```console
 bundle exec jekyll serve --livereload
 ```
+
+If you want to show future posts as well run:
+
+```console
+bundle exec jekyll serve --livereload --future
+```
