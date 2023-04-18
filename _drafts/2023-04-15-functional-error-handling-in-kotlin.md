@@ -307,7 +307,7 @@ fun sumSalaries(jobId1: JobId, jobId2: JobId): Double? {
 
 To overcome the above problem, we can use some sweet functionalities provided by the Kotlin Arrow library. In the set-up section, we already imported the dependency from Arrow, so we can use it in our code.
 
-The Arrow library provides a lot of functional programming constructs. In detail, it provides some form of monadic list-comprehension (in Scala, it's called _for-comprehension_) that allows us to write code in a more functional way and avoid the nested calls.
+The Arrow library provides a lot of functional programming constructs. In detail, it provides some form of monadic list-comprehension (in Scala, it's called _for-comprehension_) that allows us to write functional code in a more imperative and declarative way and avoid the nested calls.
 
 For nullable type, Arrow offers the `nullable` DSL. Inside the DSL, we have access to some useful functions, such as the `ensureNotNull` function and the `bind` extension function. Let's rewrite the `sumSalaries` function using the `nullable` DSL, and then we'll analyze the code:
 
@@ -351,9 +351,9 @@ The sum of the salaries using 'sumSalaries2' is null
 
 Both the `nullable` and the `nullable.eager` DSL have a scope as receiver, respectively a `arrow.core.continuations.NullableEagerEffectScope`and a `arrow.core.continuations.NullableEffectScope`. The library defines the `ensureNotNull` and the `bind` extension functions on these scopes. To be fair, the `bind` function is just a wrapper to the same function defined in the `Optional` type that we'll see it in the next section.
 
-Although nullable types offer a good degree of compositionality and a full support by the Kotlin language itself, the community of functional programmers is not very happy with this approach. The reason is that nullable types still require some boilerplate code to handle the case when the value is `null`.
+Although nullable types offer a good degree of compositionality and a full support by the Kotlin language itself, there are some use cases when you can't use it to handle errors. There are some domains where the `null` value is a valid value, and we can't use it to represent an error. Other times, we need to work with some external libraries that don't support nullable types, such as RxJava or the project Reactor.
 
-Fortunately, Kotlin and some of its libraries provide a more functional approach to handle errors. Let's see how we can use it.
+Fortunately, Kotlin and the Arrow library provide a lot of alternatives to handle errors in a functional way. Let's start with the `Option` type.
 
 ## 4. Handling Errors with `Option`
 
