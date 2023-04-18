@@ -97,7 +97,7 @@ author:
   name             : "mjt91"
   avatar           : "assets/images/bio.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I turn coffee into code ☕"
-  location         : "Bonn, Germany"
+  location         : "Germany"
   email            : 
   links:
     - label: "Email"
