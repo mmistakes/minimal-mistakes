@@ -8,10 +8,6 @@ sidebar:
 ---
 
 
-# Document Structure:
-This document is for the beginners out there who are interested in Self Sovereign Identity/Decentralized Identity. The space is huge, but this should at least give you a place to start.
-
-The document is structured to start simple and get more complicated as you progress through it.
 
 <!-- Throughout this document we'll have reference to some of the prompts that this information could apply to. -->
 <!-- Not sure about this -->
@@ -20,7 +16,7 @@ The document is structured to start simple and get more complicated as you progr
 
 ## What is Decentralized Identity:
 Decentralized Identity Explained - https://www.youtube.com/watch?v=Ew-_F-OtDFI 
-Good summary doc: https://www.okta.com/blog/2021/01/what-is-decentralized-identity/ & matched video https://www.youtube.com/watch?v=gWfAIYXcyH4
+Good summary doc: https://www.okta.com/blog/2021/01/what-is-decentralized-identity/ & matching video https://www.youtube.com/watch?v=gWfAIYXcyH4
 
 
 ## What are the core technologies of Decentralized Identity:
@@ -31,6 +27,7 @@ Asymmetric Encryption:
 
 Decentralized Identity Documents(DIDs): 
  - What are Decentralize Identifiers(DIDs) - https://www.youtube.com/watch?v=gWgAgpfLEIQ
+ - The Power of DIDs - https://www.youtube.com/watch?v=yb9ATkwBFJA
 
 Verfiable Credentials:
  - Verifiable Credentials: The Ultimate Guide 2023 - https://www.dock.io/post/verifiable-credentials
@@ -38,7 +35,17 @@ Verfiable Credentials:
 
 
 
-## Now to get a little more specific
+## 3 Ecosystems
+
+By no means are these the only Ecosystems built on and expanding the technologies above. But these are a good place to start
+
+<!-- There are multiple different implementations for acheiving Decentralized Identity. Each are quite involved on their own.
+
+TrustOverIP - https://trustoverip.org/toip-model/
+Hyperledger Aires- https://www.edx.org/course/identity-in-hyperledger-aries-indy-and-ursa -->
+
+
+
 
 <!-- Credential Exchange:
 - DIF(PE)
@@ -49,7 +56,7 @@ Verifying Credentials:
 - DID Document -->
 
 
-https://tno-ssi-lab.github.io/standardisation-overview/docs.html
+<!-- https://tno-ssi-lab.github.io/standardisation-overview/docs.html -->
 
 
 
@@ -71,6 +78,8 @@ https://github.com/Sphereon-Opensource/pex
 Wallet Rendering - https://identity.foundation/wallet-rendering/
 Presentation Exchange(not beginner) - https://identity.foundation/presentation-exchange/
 Credential Manifest - https://identity.foundation/credential-manifest/
+
+DIF Specs -  All repos have links to their specs https://github.com/decentralized-identity
 
  -->
 
