@@ -359,7 +359,7 @@ Fortunately, Kotlin and the Arrow library provide a lot of alternatives to handl
 
 Unlike Java, Kotlin doesn't provide a type for handling optional values. As we saw in the previous section, Kotlin creators preferred to introduce nullable values instead of having an `Option<T>` type. 
 
-However, the Kotlin community has created a library called `Arrow` that provides a lot of functional programming constructs, including an `Option` type. In the set-up section, we already imported the dependency from Arrow, so we can use it in our code.
+We can add optional types to the language using the `Arrow` library, which provides a lot of functional programming constructs, including an `Option` type.
 
 The type defined by the Arrow library to manage optional values is defined as `arrow.core.Option<out A>`. Basically, it's a [Algebraic Data Type (ADT)](https://blog.rockthejvm.com/algebraic-data-types/), technically a sum type, which can be either `Some<A>` or `None`.
 
@@ -423,26 +423,54 @@ val noGoogleJob: Option<Job> = null.toOption() // noGoogleJob is None
 Now that we know how to create an `Option` value, let's see how we can use it. First of all, we create the version of the `Jobs` module that uses the `Option` type:
 
 ```kotlin
-TODO()
+interface Jobs {
+
+    fun findById(id: JobId): Option<Job>
+}
+
+class LiveJobs : Jobs {
+    
+    override fun findById(id: JobId): Option<Job> = try {
+        JOBS_DATABASE[id].toOption()
+    } catch (e: Exception) {
+        none()
+    }
+}
+```
+
+Again, we're not interested in the cause of the error, we just want to handle it. If the `findById` function fails, we return a `None` value. Now, we can define a function that prints the job information of a job id if it exists:
+
+```kotlin
+
 ```
 
 As you may guess, the `Option` type is defined as a sealed class, so we can use the `when` expression to handle the two possible cases:
 
 ```kotlin
-fun printOptionJob(maybeJob: Option<Job>) {
-    when (maybeJob) {
-        is Some -> println("Job found: ${maybeJob.value}")
-        is None -> println("Job not found")
+class JobsService(private val jobs: Jobs) {
+
+    fun printOptionJob(jobId: JobId) {
+        val maybeJob: Option<Job> = jobs.findById(jobId)
+        when (maybeJob) {
+            is Some -> println("Job found: ${maybeJob.value}")
+            is None -> println("Job not found for id $jobId")
+        }
     }
 }
 ```
 
 In this case, we can call the `value` property of the `Some` type to get the actual value because Kotlin is smart casting the original `maybeJob` value to the `Some` type.
 
-If we call the above function with the `awsJob` value, we get the expected output:
+If we call the above function with the id of a job present in the database, aka `JobId(1)`, we get the expected output:
 
 ```text
-Job found: Job(id=JobId(value=1), company=Company(name=AWS), role=Role(name=Software Engineer), salary=Salary(value=100000.0))
+Job found: Job(id=JobId(value=2), company=Company(name=Apple, Inc.), role=Role(name=Software Engineer), salary=Salary(value=70000.0))
+```
+
+However, if we use a job id that is not associated with any job, we get the following output:
+
+```text
+Job not found for id JobId(value=42)
 ```
 
 However, working the pattern matching is not always very convenient. A lot of time, we need to transform and combine different `Option` values. As it happens in Scala, the `Option` type is a [monad](https://blog.rockthejvm.com/monads/), so we can use the `map`, `flatMap` function to transform and combine `Option` values. Let's see and example.
