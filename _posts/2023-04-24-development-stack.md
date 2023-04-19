@@ -1,11 +1,11 @@
 ---
 title: "Tools I love - my development stack 2023"
-# permalink: "bob/aug22"
 categories:
-  - dev
+  - blog
 tags:
   - python
   - linux
+  - dev
 ---
 
 # All the tools I love to work with nowadays (2023)
