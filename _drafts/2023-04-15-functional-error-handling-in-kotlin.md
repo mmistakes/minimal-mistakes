@@ -438,13 +438,7 @@ class LiveJobs : Jobs {
 }
 ```
 
-Again, we're not interested in the cause of the error, we just want to handle it. If the `findById` function fails, we return a `None` value. Now, we can define a function that prints the job information of a job id if it exists:
-
-```kotlin
-
-```
-
-As you may guess, the `Option` type is defined as a sealed class, so we can use the `when` expression to handle the two possible cases:
+Again, we're not interested in the cause of the error, we just want to handle it. If the `findById` function fails, we return a `None` value. As you may guess, the `Option` type is defined as a sealed class, so we can use the `when` expression to handle the two possible cases. We can define a function that prints the job information of a job id if it exists:
 
 ```kotlin
 class JobsService(private val jobs: Jobs) {
@@ -475,7 +469,23 @@ Job not found for id JobId(value=42)
 
 However, working the pattern matching is not always very convenient. A lot of time, we need to transform and combine different `Option` values. As it happens in Scala, the `Option` type is a [monad](https://blog.rockthejvm.com/monads/), so we can use the `map`, `flatMap` function to transform and combine `Option` values. Let's see and example.
 
-Imagine we want to create a function that, given a job id, it returns the gap between the job salary and the maximum salary for the same company. If the job doesn't exist, we want to return `None`. We can implement a first version of such a function using directly `map` and `flatMap` functions:
+Imagine we want to create a function that, given a job id, it returns the gap between the job salary and the maximum salary for the same company. If the job doesn't exist, we want to return `None`. To implement such function, first, we need to add a `findAll` method to our `Jobs` interface:
+
+```kotlin
+interface Jobs {
+
+    // Omissis...
+    fun findAll(): List<Job>
+}
+
+class LiveJobs : Jobs {
+    
+    // Omissis...
+    override fun findAll(): List<Job> = JOBS_DATABASE.values.toList()
+}
+```
+
+Then, we can implement a first version of the function calculating the salary gap using directly `map` and `flatMap` functions:
 
 ```kotlin
 class JobsService(private val jobs: Jobs) {
@@ -492,3 +502,5 @@ class JobsService(private val jobs: Jobs) {
     }
 }
 ```
+
+As we said, the Kotlin language does not support the _for-comprehension_ syntax, so the sequences of nested calls to `flatMap` and `map` functions repeatedly can be a bit confusing. Again, the Arrow library gives us an help, defining a `option` DSL to calling functions on `Option` values in a more readable way.
