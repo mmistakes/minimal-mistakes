@@ -2,7 +2,7 @@
 main:
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
- - title: "Best of BILD"
+  - title: "Best of BILD"
     url: /categories/#best-of-boulevard
- - title: "About"
+  - title: "About"
     url: https://github.com/mjt91
