@@ -1,0 +1,595 @@
+---
+title: "Secuirty Configuration in Http4s"
+date: 2023-03-30
+header:
+  image: "/images/blog cover.jpg"
+tags: []
+excerpt: "Security configuration in http4s excerp."
+toc: true
+toc_label: "In this article"
+---
+
+## 1. Introduction
+
+With the growing number of cyber attacks are ever increasing, there's a growing need for security in the applications we build.
+Http4s comes with a number of easily configurable security features and in this article we will cover the two most common, CORS and CSRF.
+
+## 2. Setting Up
+
+In order to run the code in this article, we'll need to add the following dependencies to our project build:
+
+```scala
+lirbary ++= Seq(
+    "org.typelevel" %% "cats-core" % "2.8.0",
+    "org.typelevel" %% "cats-effect" % "3.3.14"
+    "org.http4s" %% "http4s-dsl" % "0.23.16"
+    "org.http4s" %% "http4s-ember-server" % "0.23.16"
+)
+
+```
+
+We'll also need these two programs installed to follow along.
+The Curl command line tool for sending requests in the terminal.
+The serve npm package, a light weight server for static pages.
+
+## 3. Cross Origin Resource Sharing
+
+Many developers have come across the CORS acronym at some point in their careers, but what does it mean exactly? CORS stands for Cross Origin Resource Sharing, it's a technique used by browsers to ensure secure requests and data transfers from any origin other than its own. Heres how this would work in 3 simple steps.
+
+1. `foo.com` needs to load images on its landing page but these images are hosted on `bar.com`
+2. When someone visits `foo.com`, his/her browser will send a request for images to `bar.com`, this is called a cross origin request.
+3. If `bar.com` setup cross origin resource sharing to include `foo.com`, then the browser will proceed and load these requests, otherwise the request will be cancelled and the images will fail to load.
+
+Imagine for a second CORS didnt exist, malicious sites could easily request and acquire information from any site by making cross origin requests. Typically your site's server should contain a list of approved sites to which cross origin resource sharing is approved, any requests made from sites outside this list should be denied.
+
+## 4. CORS and Http4s
+
+Http4s provides CORS as part of it `middleware`, the `CORS` package comes with a number of methods that help in implementing CORS within Http4s.
+Lets create our our minimalistic server to show how CORS works:
+
+```scala
+import cats.effect._
+import org.http4s._
+import org.http4s.dsl.io._
+
+object CorsExample extends IOApp{
+    val imageService = HttpRoutes.of[IO]{
+        case GET -> Root / "image" / name =>
+            Ok(s"Processing image: $name." )
+    }.orNotFound
+
+    override def run(args: List[String]): IO[ExitCode] = ???
+}
+```
+
+Here we implement our `imageService` that processes images when provided with the name, it recieves a `GET` request and responds with a message telling the user that the image is being processed.
+Once the service is created, we need to bind it to a port number where the requests will be routed, for this we will use ember server:
+
+```scala
+import org.http4s.ember.server.EmberServerBuilder
+import com.comcast.ip4s._
+
+    val server = EmberServerBuilder
+        .default[IO]
+        .withHost(ipv4"0.0.0.0")
+        .withPort(port"8080")
+        .withHttpApp(imageService)
+        .build
+
+    override def run(args: List[String]): IO[ExitCode] = server.use(_ => IO.never).as(ExitCode.Success)
+```
+
+We use the `EmberServerBuilder` to assign a port number to which we will send our requests on `localhost`. We also configured the server to run indefinitely using `IO.never` on the `run()` method.
+
+Now lets test the server with `curl` and see what kind of result we get:
+
+```
+curl -v http://localhost:8080/image/personal.jpg
+
+*   Trying ::1:8080...
+* Connected to localhost (::1) port 8080 (#0)
+> GET /image/personal.jpg HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.71.1
+> Accept: */*
+>
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Date: Thu, 13 Apr 2023 18:28:44 GMT
+< Connection: keep-alive
+< Content-Type: text/plain; charset=UTF-8
+< Content-Length: 31
+<
+* Connection #0 to host localhost left intact
+Processing image: personal.jpg.⏎
+
+```
+
+When `curl` is run with the `-v` or `--verbose` flag, it displays the headers that are sent as well as what is returned. Looking at the bottom of the response from the server, we confirm that we recieve the appropriate response, `Processing image: personal.jpg`.
+
+Scrutinizing the output reveals that theres no `Origin` Header. This means that CORS has not yet been implimented. Lets fix that now:
+
+```scala
+    import org.http4s.server.middleware.CORS
+
+    val corsService = CORS.policy
+         .withAllowOriginAll(imageService)
+
+    val server = EmberServerBuilder
+        .default[IO]
+        .withHost(ipv4"0.0.0.0")
+        .withPort(port"8080")
+        .withHttpApp(corsService)
+        .build
+```
+
+Our first implementation of CORS uses the `withAllowOriginAll()` method on the `CORS.policy` object, this method opens the server to process requests from any origin as seen in the output below:
+
+```
+curl -v http://localhost:8080/image/personal.jpg -H 'Origin: http://foo.com'
+
+*   Trying ::1:8080...
+* Connected to localhost (::1) port 8080 (#0)
+> GET /image/personal.jpg HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.71.1
+> Accept: */*
+> Origin:http://foo.com
+>
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Date: Thu, 13 Apr 2023 18:58:50 GMT
+< Connection: keep-alive
+< Content-Type: text/plain; charset=UTF-8
+< Content-Length: 31
+< Access-Control-Allow-Origin: *
+<
+* Connection #0 to host localhost left intact
+Processing image: personal.jpg.⏎
+
+```
+
+`Curl` has the ability to pass headers when sending requests, this is done with the `-H` flag and in our example we passed the `Origin` header as `http://foo.com`.
+With in the respose we see a new header added, the `Access-Control-Allow-Origin` is now displayed with a value `*`, the asterisk signifies that requests from all origins will be accepted by our server. Its worth noting if you donnot supply the `Origin` header you will not recieve the `Access-Control-Allow-Origin header` from the server.
+
+Its really important to note that CORS configuration won't prevent non browser request from going through. CORS is browser specific. The servers sends CORS specific headers to the browser which it uses to either block or load requests.
+With CORS implimented, we realise that even malicious sites can make requests for our `personal.jpg` image.
+
+We can specify the sites that can access our server by replacing the `withAllowOriginAll()` method with the `withAllowOriginHost()` method. This would be implemented as follows:
+
+```scala
+import org.http4s.headers.Origin
+
+    val corsService = CORS.policy
+            .withAllowOriginHost(Set(
+                Origin.Host(Uri.Scheme.http, Uri.RegName("localhost"), Some(5000)),
+                                   ))
+            .apply(imageService)
+```
+
+This method takes a Host object where we specify the scheme as either `http` or `https`, a host name and port number. Here we configured our server to only accept requests from `localhost:5000`. None browser requests such as those from `curl` will always go through since theres no mechanism to restrict access based on the type of CORS header returned. Lets prove this:
+
+```
+curl -v http://localhost:8080/image/personal.jpg -H '
+Origin:http://foo.com'
+*   Trying ::1:8080...
+* Connected to localhost (::1) port 8080 (#0)
+> GET /image/personal.jpg HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.71.1
+> Accept: */*
+> Origin:http://foo.com
+>
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Date: Tue, 18 Apr 2023 12:42:05 GMT
+< Connection: keep-alive
+< Content-Type: text/plain; charset=UTF-8
+< Content-Length: 31
+< Vary: Origin
+<
+* Connection #0 to host localhost left intact
+Processing image: personal.jpg.⏎
+```
+
+Instead of the `Access-Control-Allow-Origin`, we now recieve a `Vary` header, with the value `Origin`. This means that access to our servers resources is now restricted for some origins. However access should have been restricted only to `localhost:5000` but our `personal.jpg` image still gets processed because `curl` doesn't care about CORS headers.
+
+Knowing this lets send the request through a browser. First lets create a folder to store our html file called `testFolder` and within it create a `test.html` page and save the following code:
+
+```
+<!DOCTYPE html>
+<html>
+  <script>
+    async function fetchdata() {
+      url = "http://localhost:8080/image/personal.jpg";
+      const response = await fetch(url);
+      await console.log(response.text());
+    }
+    fetchdata();
+  </script>
+</html>
+```
+
+We embed our request code in javascript within the `<script>` tag. Here we use the javascript's `fetch()` API to send the request to our server url, when the `fetchdata()` function is called the response is logged in the console using `await console.log(response.text())`.
+
+We can server our `test.html` page using the `serve` console command as follows:
+
+```
+serve testFolder
+   ┌───────────────────────────────────────────────┐
+   │                                               │
+   │   Serving!                                    │
+   │                                               │
+   │   - Local:            http://localhost:5000   │
+   │   - On Your Network:  http://undefined:5000   │
+   │                                               │
+   │   Copied local address to clipboard!          │
+   │                                               │
+   └───────────────────────────────────────────────┘
+```
+
+Great, now that our server is set up, we can run localhost:5000/test in the browser. Navigate to the console through your browsers developer tools, this should be the output:
+
+![passedrequest](../images/http4s-security/passedrequest.png)
+
+This is the expected behaviour when CORS is implemented correctly. Assuming we change the port number in our server to `9000`:
+
+```scala
+    val corsService = CORS.policy
+            .withAllowOriginHost(Set(
+                Origin.Host(Uri.Scheme.http, Uri.RegName("localhost"), Some(9000)),
+                                   ))
+            .apply(imageService)
+```
+
+If we run `localhost:5000/test` again in the browser, our request should be blocked with the following console log.
+
+![failedrequest](../images/http4s-security/failedrequest.png)
+
+We can see that CORS is now being implemented correctly in our server.
+
+Heres the full code for our server:
+
+```scala
+import cats.effect.{IO,IOApp,ExitCode}
+import org.http4s._
+import org.http4s.dsl.io._
+import org.http4s.ember.server.EmberServerBuilder
+import com.comcast.ip4s._
+import org.http4s.server.middleware.CORS
+import org.http4s.headers.Origin
+
+
+object securityHttp4s extends IOApp{
+    val imageService = HttpRoutes.of[IO]{
+        case GET -> Root / "image" / name =>
+            Ok(s"Processing image: $name." )
+    }.orNotFound
+
+    val corsService = CORS.policy
+            .withAllowOriginHost(Set(
+                Origin.Host(Uri.Scheme.http, Uri.RegName("localhost"), Some(5000)),
+                                   ))
+            .apply(imageService)
+
+    val server = EmberServerBuilder
+        .default[IO]
+        .withHost(ipv4"0.0.0.0")
+        .withPort(port"8080")
+        .withHttpApp(corsService)
+        .build
+
+    override def run(args: List[String]): IO[ExitCode] = server.use(_ => IO.never).as(ExitCode.Success)
+}
+```
+
+## 5. The workings of a CSRF attack
+
+### 5.1 The Problem
+
+CSRF stands for Cross Site Request Forgery, this is a malicious attack by a third party where unsanctioned requests are sent without the knowledge of the user to sites the user is logged into.
+
+Here's a simple example of a CSRF attack
+Lets assume that a user hosts all his/her important photos on photos.com.
+The attacker decides to send the user such an email:
+
+```
+Subject: Free Subscription
+
+Hello User,
+We realise your birthday is coming up soon, we would love to offer you free subscription for the coming month for being a loyal photos.com user.
+Use this link if you are interested.
+```
+
+The link in the above message will lead to a forged url:
+
+```
+<a href="http://photos.com/transfer-images?authorize=true&destination='hacker@email.com'">Grab your free subscription here</a>
+```
+
+Even worse the attacker could use an image to perform a malicious action:
+
+```
+<img src="http://photos.com/transfer-images?authorize=true&destination='hacker@email.com'">
+```
+
+If photos.com allows image transfers with GET requests, such a link would authorize a transfer of private photos to the hackers email account without the user noticing.
+
+In a situation where image transfers were done with POST requests:
+
+```
+<form action="http://photos.com/transfer-images" method="POST", id="malicious-form">
+    <input type="hidden" name="authorize" value="true" />
+    <input type="hidden" name="email" value="hacker@email.com">
+    <input type="submit" value="Click to get free subscription!" />
+</form>
+```
+
+Such a form could be embeded in an email or within a fake copy of the website. Once this link is clicked, the form would be submitted and the private images would be trnsferred to the hackers email.
+
+JavaScript can also be used to submit the above form, just by adding this extra code after the form:
+
+```
+<Script>
+    document.getElementById("malicious-form").submit();
+</Script>
+```
+
+In this case the form will automatically be submitted as soon as the html has loaded.
+
+### 5.2 The solution
+
+If `photos.com` implemented CSRF protection correctly, this is how the above attack would be stopped the following way.
+
+1. Each time photos.com display the html form used to transfer pictures to the user, it would generate a CSRF token and insert it within a hidden field in the form.
+2. Once the `POST` request is recieved, `photos.com` checks and verifies the `CSRF token` against its database. If the token is present and valid, the request would go through, however if the token is missing or wrong, the transfer request would be rejected.
+
+## 6. CSRF protection in Http4s
+
+The CSRF module is also part of the Http4s middleware package. Lets start by creating the server we shall use in this section:
+
+```scala
+import cats.effect._
+import org.http4s._
+import org.http4s.dsl.io._
+import org.http4s.ember.server.EmberServerBuilder
+import com.comcast.ip4s._
+
+object csrfExample extends IOApp{
+    val service = HttpRoutes.of[IO]{
+        case GET -> Root / "testing" =>
+            Ok(s"Testing" )
+    }.orNotFound
+
+    override def run(args: List[String]): IO[ExitCode] = server.use(_ => IO.never).as(ExitCode.Success)
+}
+```
+
+Lets test our server, we should recieve the string testing:
+
+```
+curl -v http://localhost:8080/testing
+
+*   Trying ::1:8080...
+* Connected to localhost (::1) port 8080 (#0)
+> GET /testing HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.71.1
+> Accept: */*
+>
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Date: Thu, 13 Apr 2023 21:31:27 GMT
+< Connection: keep-alive
+< Content-Type: text/plain; charset=UTF-8
+< Content-Length: 7
+<
+* Connection #0 to host localhost left intact
+Testing⏎
+```
+
+From the output we see our expected string "Testing".
+Lets recap and see how photos.com would implement CSRF prtection with in its server.
+First of all, we need a way to recieve post requests fromt the client. Lets implement this by adding another route to the photoService:
+
+```scala
+    val photoService = HttpRoutes.of[IO]{
+        case GET -> Root / "testing" =>
+            Ok(s"Testing" )
+        case POST -> Root/"photos" =>
+            Ok("Processing")
+    }.orNotFound
+```
+
+```
+curl -v -X POST http://localhost:8080/photos
+*   Trying ::1:8080...
+* Connected to localhost (::1) port 8080 (#0)
+> POST /photos HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.71.1
+> Accept: */*
+>
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Date: Thu, 13 Apr 2023 21:51:47 GMT
+< Connection: keep-alive
+< Content-Type: text/plain; charset=UTF-8
+< Content-Length: 10
+<
+* Connection #0 to host localhost left intact
+Processing⏎
+```
+
+`Curl` can handle `POST` requests by passing the `-X POST` flag as one of its arguments. In this case we did not provide a payload to keep the example simple. From the result we can we receive the expected string "Processing".
+Now let's implement CSRF middleware into our server:
+
+```scala
+import cats.effect.unsafe.IORuntime
+import org.http4s.server.middleware.CSRF
+
+    implicit override val runtime: IORuntime = IORuntime.global
+    val cookieName = "csrf-token"
+    val token = CSRF.generateSigningKey[IO]().unsafeRunSync()
+
+    val defaultOriginCheck: Request[IO] => Boolean =
+        CSRF.defaultOriginCheck[IO](_,"localhost",Uri.Scheme.http, None)
+    val csrfBuilder = CSRF[IO,IO](token,defaultOriginCheck)
+
+    val csrf = csrfBuilder
+        .withCookieName(cookieName)
+        .withCookieDomain(Some("localhost"))
+        .withCookiePath(Some("/"))
+        .build
+
+    val csrfServer = csrf.validate()(photoService)
+
+        val server = EmberServerBuilder
+        .default[IO]
+        .withHost(ipv4"0.0.0.0")
+        .withPort(port"8080")
+        .withHttpApp(csrfServer)
+        .build
+```
+
+We start by generating our csrf `token` which is done by running `CSRF.generateSigningKey[IO]().unsafeRunSync()`, this gives us a value of type `SecretKey`.
+The `defaultOriginCheck` is a function from `Request[IO] => Boolean` used to check the origin of the request, in our case it is `localhost`.
+The first argument to the `defaultOriginCheck` method is the request, we provided an underscore since the request will be coming through ember server, however scala http4s also has a utility for creating Requests within the application.
+The third input is the `Uri` scheme which can be `http` or `https` and finally the port number which was provided as `None`.
+
+The next step is assembling the `csrfBuilder` of type `CSRFBuillder[IO,IO]`, this is done by calling the `CSRF[IO,IO]()` function which takes as arguments our `token` and the `defaultOriginCheck` function.
+The `csrfBuilder` is the heart of the CSRF implementation in http4s, in our example we provide 4 methods, first the `withCookieName()` method which takes `cookieName`, the name of the cookie as an argument, second is the `withCookieDomain()` which in our case is `localhost`, third is the `withCookiePath()` to which we provided `Some("/")`, this is the path through which we will request for the csrf token. Finally the build method which bundles all these values into a `CSRF` object.
+
+The `csrfServer` now has a `validate()` method which confirms the csrf token recieved through the `GET` request with what it generated. We also make sure we pass the `csrfServer` to our `server` through the `withHttpApp()` method.
+
+Let's test our application and see how it responds to csrf attacks. First lets send a request without any csrf token:
+
+```
+curl -v -X POST http://localhost:8080/photos
+*   Trying ::1:8080...
+* Connected to localhost (::1) port 8080 (#0)
+> POST /photos HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.71.1
+> Accept: */*
+>
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 403 Forbidden
+< Date: Thu, 13 Apr 2023 22:52:49 GMT
+< Connection: keep-alive
+< Content-Length: 0
+<
+* Connection #0 to host localhost left intact
+
+```
+
+We recieve a `403 Forbidden error`, this is a step in the right direction. In a normal front end application, when the page loads, a request would be sent to the server to recieve the csrf token, which is then placed within a form. The `withCookiePath()` method from the `csrfBuilder` contains this path which we set to `Some("/")`, lets request for our csrf token:
+
+```
+curl -v http://localhost:8080
+*   Trying ::1:8080...
+* Connected to localhost (::1) port 8080 (#0)
+> GET / HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.71.1
+> Accept: */*
+>
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 404 Not Found
+< Date: Thu, 13 Apr 2023 23:21:24 GMT
+< Connection: keep-alive
+< Content-Type: text/plain; charset=UTF-8
+< Content-Length: 9
+< Set-Cookie: csrf-token=731EB4B0C3387DA4E1A99289ADEA4BB3006640EB4D0002D5F80F54E718654C7B-1681428084141-8C1AA35A16C2E13DC8AEEB4A0F680103882B4F8B; Domain=localhost; Path=/; SameSite=Lax; HttpOnly
+<
+* Connection #0 to host localhost left intact
+Not found⏎
+```
+
+Notice that this is a `GET` request, the server sends the csrf token to the browser using the `Set-Cookie` header, this means that the csrf token is set as a cookie on the clients browser with the name csrf-token.
+
+Now we can send a `POST` request to the server with the csrf token inorder to fetch our photos:
+
+```
+curl -v -X POST http://localhost:8080/photos -H "Origin:http://localhost" -H "X-Csrf-Token:731EB4B0C3387DA4E1A99289ADEA4BB3006640EB4D0002D5F80F54E718654C7B-1681428084141-8C1AA35A16C2E13DC8AEEB4A0F680103882B4F8B" --cookie "csrf-token=731EB4B0C3387DA4E1A99289ADEA4BB3006640EB4D0002D5F80F54E718654C7B-1681428084141-8C1AA35A16C2E13DC8AEEB4A0F680103882B4F8B"
+
+*   Trying ::1:8080...
+* Connected to localhost (::1) port 8080 (#0)
+> POST /photos HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.71.1
+> Accept: */*
+> Cookie: csrf-token=731EB4B0C3387DA4E1A99289ADEA4BB3006640EB4D0002D5F80F54E718654C7B-1681428084141-8C1AA35A16C2E13DC8AEEB4A0F680103882B4F8B
+> Origin:http://localhost
+> X-Csrf-Token:731EB4B0C3387DA4E1A99289ADEA4BB3006640EB4D0002D5F80F54E718654C7B-1681428084141-8C1AA35A16C2E13DC8AEEB4A0F680103882B4F8B
+>
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Date: Thu, 13 Apr 2023 23:25:06 GMT
+< Connection: keep-alive
+< Content-Type: text/plain; charset=UTF-8
+< Content-Length: 10
+< Set-Cookie: csrf-token=731EB4B0C3387DA4E1A99289ADEA4BB3006640EB4D0002D5F80F54E718654C7B-1681428306255-7C434E5B03A3AF02DFFE25726C224F107B1E3C4D; Domain=localhost; Path=/; SameSite=Lax; HttpOnly
+<
+* Connection #0 to host localhost left intact
+Processing⏎
+```
+
+CSRF is now working since we recieve the `Processing` message from the server. In the `curl`, we command sent a `POST` request by using the `-X POST` flag, this is then followed by the server url which is `http://localhost:8080/photos`.
+We then supply the headers `Origin` and `X-Csrf-Token` with their respective values and finally we passed the `csrf-token` cookie which was set by the server.
+
+Some gotcha's in this request, this does not apply if your requests are sent through the browser:
+If the `Origin` header is missing, the request will fail, this is because the CSRF middleware through the defaultOriginCheck method confirms the origin of the request.
+If the cookie `csrf-token` is missing, the request will also fail, the cookie needs to be set in the browser before the post request is made.
+
+Here's the full code for the csrf implementation.
+
+```scala
+import cats.effect._
+import org.http4s._
+import org.http4s.dsl.io._
+import org.http4s.ember.server.EmberServerBuilder
+import com.comcast.ip4s._
+import cats.effect.unsafe.IORuntime
+import org.http4s.server.middleware.CSRF
+import javax.crypto.SecretKey
+
+object csrfExample extends IOApp{
+
+    val photoService = HttpRoutes.of[IO]{
+        case GET -> Root / "testing" =>
+            Ok(s"Testing" )
+        case POST -> Root/"photos" =>
+            Ok("Processing")
+    }.orNotFound
+
+    implicit override val runtime: IORuntime = IORuntime.global
+    val cookieName = "csrf-token"
+    val token: SecretKey = CSRF.generateSigningKey[IO]().unsafeRunSync()
+
+    val defaultOriginCheck: Request[IO] => Boolean =
+        CSRF.defaultOriginCheck[IO](_,"localhost",Uri.Scheme.http, None)
+    val csrfBuilder = CSRF[IO,IO](token,defaultOriginCheck)
+
+    val csrf = csrfBuilder
+        .withCookieName(cookieName)
+        .withCookieDomain(Some("localhost"))
+        .withCookiePath(Some("/"))
+        .build
+
+    val csrfServer = csrf.validate()(photoService)
+
+    val server = EmberServerBuilder
+        .default[IO]
+        .withHost(ipv4"0.0.0.0")
+        .withPort(port"8080")
+        .withHttpApp(csrfServer)
+        .build
+
+    override def run(args: List[String]): IO[ExitCode] = server.use(_ => IO.never).as(ExitCode.Success)
+}
+```
+
+## 7. Conclusion
+
+In this article we went through Cross Origin Resource Sharing, what it is and how its implemented. We also went through Cross-site request forgery attacks, how they occur and how to prevent them. Both these topics have well though out implementations in Http4s which we covered, and i encourage you to implement them in your servers.
