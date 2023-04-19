@@ -5,12 +5,14 @@
 ## Topics
 
 1. Tools I use and love (EN)
-  - bash
-  - Jekyll https://jekyllrb.com/
-  - starship prompt https://starship.rs/
-  - VSCode
-  - pipx
-  - pyenv
+  - bash ✅
+  - Jekyll https://jekyllrb.com/ ✅
+  - starship prompt https://starship.rs/ ✅
+  - VSCode ✅
+  - pipx ✅
+  - pyenv ✅
+  - poetry ✅
+  - pandoc
 1. Merging on multi-index dataframes (EN)
 1. How and when to use apply on dataframe (EN)
 1. Twitter BOT code Beschreibung (Serie über 3?) (EN)

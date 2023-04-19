@@ -4,5 +4,7 @@ main:
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Best of BILD"
     url: /categories/#best-of-boulevard
+  - title: "Posts"
+    url: /year-archive/
   - title: "About"
     url: https://github.com/mjt91
