@@ -1,0 +1,81 @@
+name: Bug Report
+description: There is something wrong with the theme. 99% of the time you should select Support below.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before opening a new issue please:
+
+        - Verify you have the latest versions of Jekyll and Minimal Mistakes
+          installed by running `bundle update`.
+        - Thoroughly read the theme's documentation at
+          https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+        - Search all issues at https://github.com/mmistakes/minimal-mistakes/issues
+          for solutions and to avoid duplication.
+        - Ask for help at https://talk.jekyllrb.com/
+
+        If none of the above solved your problem, you can continue below.
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: What happened?
+      description: |
+        Please include theme version, Jekyll version, public git repository, whether
+        you are hosting with GitHub Pages, and the operating system you tested with.
+
+        Issues without a link to a public repository or ZIP file will likely go ignored.
+        Being able to see your actual files is necessary to troubleshoot, as most
+        issues stem from invalid/missing YAML Front Matter, a mis-configured _config.yml
+        file, or problematic site content.
+      value: |-
+        - Minimal Mistakes version:
+        - Ruby gem or remote theme version:
+        - Jekyll version:
+        - Git repository URL:
+        - Hosted on GitHub Pages (if yes provide URL to site):
+        - Operating system:
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: |
+        Please describe the expected behavior and the actual result you got.
+      placeholder: >
+        What is it you expected to happen? This should be a description of how the
+        functionality you tried to use is supposed to work.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce the behavior
+      description: |
+        Describe the steps you took for this problem to come up. Such as: you installed
+        the theme, customized _config.yml, added your own posts, and started up a
+        Jekyll server locally.
+
+        If an error occurred on GitHub Pages when pushing, please test a local version
+        following these setup instructions:
+        https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
+
+        Then provide a complete log by running `bundle exec jekyll build --trace --verbose`
+        and include this output in the filed issue.
+
+        Screenshots can also be included if they help illustrate a behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: other
+    attributes:
+      label: Other
+      description: |
+        Please provide a code repository, gist, code snippet, sample files,
+        screenshots, or anything else you think will aid in reproducing the issue.
+    validations:
+      required: false

@@ -12,6 +12,8 @@
     {% include /comments-providers/staticman_v2.html %}
   {% when "utterances" %}
     {% include /comments-providers/utterances.html %}
+  {% when "giscus" %}
+    {% include /comments-providers/giscus.html %}
   {% when "custom" %}
     {% include /comments-providers/custom_scripts.html %}
 {% endcase %}
