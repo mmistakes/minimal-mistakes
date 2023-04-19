@@ -29,8 +29,8 @@ libraryDependencies ++= Seq(
 ```
 
 We'll also need these two programs installed to follow along.
-The Curl command line tool for sending requests in the terminal.
-The serve npm package, a lightweight server for static pages.
+The [curl](https://curl.se/) command line tool for sending requests in the terminal.
+The [serve](https://www.npmjs.com/package/serve) npm package, a lightweight server for static pages.
 
 ## 3. Cross-Origin Resource Sharing
 
