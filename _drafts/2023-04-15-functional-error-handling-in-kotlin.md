@@ -503,4 +503,46 @@ class JobsService(private val jobs: Jobs) {
 }
 ```
 
-As we said, the Kotlin language does not support the _for-comprehension_ syntax, so the sequences of nested calls to `flatMap` and `map` functions repeatedly can be a bit confusing. Again, the Arrow library gives us an help, defining a `option` DSL to calling functions on `Option` values in a more readable way.
+We can check that everything is working invoking the `getSalaryGapWithMax` in out `main` function:
+
+```kotlin
+fun main() {
+    val jobs: Jobs = LiveJobs()
+    val jobsService = JobsService(jobs)
+    val appleJobId = JobId(1)
+    val salaryGap: Option<Double> = jobsService.getSalaryGapWithMax(appleJobId)
+    println("The salary gap between $appleJobId and the max salary is ${salaryGap.getOrElse { 0.0 }}")
+}
+```
+
+If we run the above code, we get the expected following output:
+
+```text
+The salary gap between JobId(value=1) and the max salary is 20000.0
+```
+
+As we said, the Kotlin language does not support the _for-comprehension_ syntax, so the sequences of nested calls to `flatMap` and `map` functions repeatedly can be a bit confusing. Again, the Arrow library gives us an help, defining a `option` DSL to calling functions on `Option` values in a more readable way. 
+
+The `option` DSL is very similar to the `nullable` DSL, but it works on the `Option` type, instead. As for the `nullable` counterpart, we have two flavors of the DSL. The one accepting a suspendable lambda with receiver, called simply `option`, and the once accepting a non-suspendable lambda with receiver, called `option.eager`. The receiver of the former DSL is a `arrow.core.continuations.OptionEffectScope`, whereas the latter DSL accepts a `arrow.core.continuations.OptionEagerEffectScope`.
+
+Let's change the above function to use the `option` DSL:
+
+```kotlin
+fun getSalaryGapWithMax2(jobId: JobId): Option<Double> = option.eager {
+    val job: Job = jobs.findById(jobId).bind()
+    val maxSalaryJob: Job = jobs.findAll().maxBy { it.salary.value }.toOption().bind()
+    maxSalaryJob.salary.value - job.salary.value
+}
+```
+
+Again, the `bind` function defined as an extension function of the `Option` type, and  
+
+```kotlin
+fun getSalaryGapWithMax3(jobId: JobId): Option<Double> = option.eager {
+    val job: Job = jobs.findById(jobId).bind()
+    val maxSalaryJob: Job = ensureNotNull(
+            jobs.findAll().maxBy { it.salary.value },
+    )
+    maxSalaryJob.salary.value - job.salary.value
+}
+```
