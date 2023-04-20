@@ -1,6 +1,23 @@
 [
   {
     "image_path": null,
+    "alt": "Zuckerfest",
+    "title": "Zuckerfest",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N3BmZmFpNzBsbW9rcWwyNWxmdHRqNTUwYXMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2023-04-21",
+      "date_time": null
+    },
+    "end": {
+      "date": "2023-04-22",
+      "date_time": null
+    },
+    "created": "2023-04-19T05:09:06.000Z",
+    "updated": "2023-04-19T05:09:06.282Z"
+  },
+  {
+    "image_path": null,
     "alt": "Vera 3 Mathe",
     "title": "Vera 3 Mathe",
     "excerpt": null,
@@ -52,8 +69,8 @@
   },
   {
     "image_path": null,
-    "alt": "Elteraktionstag",
-    "title": "Elteraktionstag",
+    "alt": "Elteraktionstag: Helfen und Angebote für Kinder",
+    "title": "Elteraktionstag: Helfen und Angebote für Kinder",
     "excerpt": null,
     "url": "https://www.google.com/calendar/event?eid=Mmw3NWxpdTk1MW41dTF2bWg2aGRoanZwaTcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
@@ -65,7 +82,7 @@
       "date_time": "2023-05-06T13:00:00+02:00"
     },
     "created": "2023-02-28T14:01:26.000Z",
-    "updated": "2023-04-17T07:36:52.232Z"
+    "updated": "2023-04-19T05:09:33.902Z"
   },
   {
     "image_path": null,
@@ -83,22 +100,5 @@
     },
     "created": "2023-03-22T06:00:47.000Z",
     "updated": "2023-03-22T06:00:47.559Z"
-  },
-  {
-    "image_path": null,
-    "alt": "unterrichtsfrei",
-    "title": "unterrichtsfrei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=azRjdTU4MmtlMjlmMDdtb3Ztc3BpNjgwYzQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2023-05-30",
-      "date_time": null
-    },
-    "end": {
-      "date": "2023-05-31",
-      "date_time": null
-    },
-    "created": "2023-02-11T08:32:15.000Z",
-    "updated": "2023-02-11T08:32:15.893Z"
   }
 ]
