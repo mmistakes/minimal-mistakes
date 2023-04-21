@@ -535,13 +535,27 @@ fun getSalaryGapWithMax2(jobId: JobId): Option<Double> = option.eager {
 }
 ```
 
-Again, the `bind` function defined as an extension function of the `Option` type, and  
+Again, inside the DSL, the `bind` function is available. If you remember from the previous section, the  `bind` function is defined as an extension function of the `Option` type, and it extracts the value from the `Option` if it is a `Some` value, otherwise it eagerly returns `None` to the whole DSL.
+
+In addition, the `option` DSL integrates also with nullable types through the `ensureNotNull` function. In this case, the function extracts the value from a nullable type if present, otherwise it collapses the execution of the whole lambda in input to the `option` DSL, returning the `None` value. The, we can rewrite the above example as follows:
 
 ```kotlin
 fun getSalaryGapWithMax3(jobId: JobId): Option<Double> = option.eager {
     val job: Job = jobs.findById(jobId).bind()
     val maxSalaryJob: Job = ensureNotNull(
             jobs.findAll().maxBy { it.salary.value },
+    )
+    maxSalaryJob.salary.value - job.salary.value
+}
+```
+
+Last but not least, the `nullable` DSL we've seen in the previous section integrates smoothly with the `Option` type. In this case, the `bind` function called on an `None` type will eagerly end the whole block returning a `null` value:
+
+```kotlin
+fun getSalaryGapWithMax4(jobId: JobId): Double? = nullable.eager {
+    val job: Job = jobs.findById(jobId).bind()
+    val maxSalaryJob: Job = ensureNotNull(
+        jobs.findAll().maxBy { it.salary.value },
     )
     maxSalaryJob.salary.value - job.salary.value
 }
