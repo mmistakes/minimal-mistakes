@@ -1,12 +1,5 @@
 # main links
 main:
-  - title: "Data and Derivatives"
-    url: https://reprobrainchart.github.io/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "NKI"
+    url: https://reprobrainchart.github.io/NKI
+    
