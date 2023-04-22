@@ -94,14 +94,14 @@ analytics:
 # Site Author
 author:
   name             : "Riley Juenemann"
-  avatar           : "/assets/images/Riley_Juenemann_headshot.jpg"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/Riley Juenemann_square.jpg"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Second-year PhD student passionate about research at the intersection of mathematics, computer science, and biology."
   location         : "Stanford University"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:rjuenemann@tulane.edu"
+      url: "mailto:rjuene@stanford.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
