@@ -309,45 +309,42 @@ To overcome the above problem, we can use some sweet functionalities provided by
 
 The Arrow library provides a lot of functional programming constructs. In detail, it provides some form of monadic list-comprehension (in Scala, it's called _for-comprehension_) that allows us to write functional code in a more imperative and declarative way and avoid the nested calls.
 
-For nullable type, Arrow offers the `nullable` DSL. Inside the DSL, we have access to some useful functions, such as the `ensureNotNull` function and the `bind` extension function. Let's rewrite the `sumSalaries` function using the `nullable` DSL, and then we'll analyze the code:
+For nullable type, Arrow offers the `nullable` DSL. Inside the DSL, we have access to some useful functions, such as the `ensureNotNull` function and the `bind` extension function. Let's rewrite the `sumSalaries` function using the `nullable` DSL, adding a few logs that we'll use to understand what's going on:
 
 ```kotlin
 fun sumSalaries2(jobId1: JobId, jobId2: JobId): Double? = nullable.eager {
+    println("Searching for the job with id $jobId1")
     val job1: Job = jobs.findById(jobId1).bind()
+    println("Job found: $job1")
+    println("Searching for the job with id $jobId2")
     val job2: Job = ensureNotNull(jobs.findById(jobId2))
+    println("Job found: $job2")
     job1.salary.value + job2.salary.value
 }
 ```
 
 As we can see, the two functions extract the value from the nullable type. If the value is `null`, then the `nullable.eager` block returns `null` immediately. Here, we use the `eager` function, which accepts a not suspendable function. If we want to use a suspendable function, we can use the `nullable` DSL directly.
 
-Clearly, giving two existing jobs to the `sumSalaries` and to the `sumSalaries2`functions we get the same result. We changed the `main` function to call both the functions: 
+We can give to the function a job id that doesn't exist, and then we can check its behavior:
 
 ```kotlin
 fun main() {
     val jobs: Jobs = LiveJobs()
     val currencyConverter = CurrencyConverter()
     val jobsService = JobsService(jobs, currencyConverter)
-    val salarySum1 = jobsService.sumSalaries(JobId(1), JobId(2))
-    val salarySum2 = jobsService.sumSalaries2(JobId(1), JobId(2))
-    println("The sum of the salaries using 'sumSalaries' is $salarySum1")
-    println("The sum of the salaries using 'sumSalaries2' is $salarySum2")
+    val salarySum = jobsService.sumSalaries2(JobId(42), JobId(2)) ?: 0.0
+    println("The sum of the salaries using 'sumSalaries' is $salarySum")
 }
 ```
 
-The output of the program is the expected one:
+The output of the program is the following:
 
 ```text
-The sum of the salaries using 'sumSalaries' is 150000.0
-The sum of the salaries using 'sumSalaries2' is 150000.0
+Searching for the job with id JobId(value=42)
+The sum of the salaries using 'sumSalaries' is 0.0
 ```
 
-If we pass a job id that doesn't exist, we get the expected result from both the functions:
-
-```text
-The sum of the salaries using 'sumSalaries' is null
-The sum of the salaries using 'sumSalaries2' is null
-```
+As we might expect, the function returns `null` immediately after the search of the `JobId(42)` returns `null`.
 
 Both the `nullable` and the `nullable.eager` DSL have a scope as receiver, respectively a `arrow.core.continuations.NullableEagerEffectScope`and a `arrow.core.continuations.NullableEffectScope`. The library defines the `ensureNotNull` and the `bind` extension functions on these scopes. To be fair, the `bind` function is just a wrapper to the same function defined in the `Optional` type that we'll see it in the next section.
 
@@ -529,13 +526,35 @@ Let's change the above function to use the `option` DSL:
 
 ```kotlin
 fun getSalaryGapWithMax2(jobId: JobId): Option<Double> = option.eager {
+    println("Searching for the job with id $jobId")
     val job: Job = jobs.findById(jobId).bind()
+    println("Job found: $job")
+    println("Searching for the job with the max salary")
     val maxSalaryJob: Job = jobs.findAll().maxBy { it.salary.value }.toOption().bind()
+    println("Job found: $maxSalaryJob")
     maxSalaryJob.salary.value - job.salary.value
 }
 ```
 
 Again, inside the DSL, the `bind` function is available. If you remember from the previous section, the  `bind` function is defined as an extension function of the `Option` type, and it extracts the value from the `Option` if it is a `Some` value, otherwise it eagerly returns `None` to the whole DSL.
+
+Let's check it out. We change the `main` function to call the `getSalaryGapWithMax2` function, passing a not existing job id:
+
+```kotlin
+fun main() {
+    val jobs: Jobs = LiveJobs()
+    val jobsService = JobsService(jobs)
+    val salarySum = jobsService.getSalaryGapWithMax2(JobId(42))
+    println("The sum of the salaries using 'sumSalaries' is ${salarySum.getOrElse { 0.0 }}")
+}
+```
+
+We can check that the function returns immediately the `None` value, without executing the rest of the code:
+
+```text
+Searching for the job with id JobId(value=42)
+The sum of the salaries using 'sumSalaries' is 0.0
+```
 
 In addition, the `option` DSL integrates also with nullable types through the `ensureNotNull` function. In this case, the function extracts the value from a nullable type if present, otherwise it collapses the execution of the whole lambda in input to the `option` DSL, returning the `None` value. The, we can rewrite the above example as follows:
 
@@ -553,10 +572,33 @@ Last but not least, the `nullable` DSL we've seen in the previous section integr
 
 ```kotlin
 fun getSalaryGapWithMax4(jobId: JobId): Double? = nullable.eager {
+    println("Searching for the job with id $jobId")
     val job: Job = jobs.findById(jobId).bind()
+    println("Job found: $job")
+    println("Searching for the job with the max salary")
     val maxSalaryJob: Job = ensureNotNull(
-        jobs.findAll().maxBy { it.salary.value },
+            jobs.findAll().maxBy { it.salary.value },
     )
+    println("Job found: $maxSalaryJob")
     maxSalaryJob.salary.value - job.salary.value
 }
+```
+
+We can easily test it, giving to the `getSalaryGapWithMax4` function a job id that is not present in the database, and checking logs:
+
+```kotlin
+fun main() {
+    val jobs: Jobs = LiveJobs()
+    val jobsService = JobsService(jobs)
+    val fakeJobId = JobId(42)
+    val salaryGap: Double? = jobsService.getSalaryGapWithMax4(fakeJobId)
+    println("The salary gap between $fakeJobId and the max salary is ${salaryGap ?: 0.0}")
+}
+```
+
+The logs we get are the following, highlighting the fact that the `bind` function is called on a `None` value, and the whole block is immediately ended:
+
+```text
+Searching for the job with id JobId(value=42)
+The salary gap between JobId(value=42) and the max salary is 0.0
 ```
