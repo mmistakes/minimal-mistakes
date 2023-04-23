@@ -2,5 +2,5 @@
 title: "Parents and Children Coming Together"
 excerpt: "PACCT"
 sitemap: false
-permalink: /docs/PACCT.html
+permalink: /docs/PACCT
 ---
