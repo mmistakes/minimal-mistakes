@@ -3,17 +3,17 @@ main:
   - title: "About & Projects"
     url: /about/
 
-  # - title: "Sights & Things"
-  #   url: categories/#places/
-
-  - title: "Data Tidbits"
+  - title: "Data"
     url: "categories/#data"
 
-  - title: "Tech Tidbits"
+  - title: "Tech"
     url: "categories/#tech"
 
-  - title: "Things I like"
+  - title: "Lists"
     url: /things-i-like/
 
-  - title: "GitBook on Data Science"
+  - title: "Substack"
+    url: "https://doodlingdata.substack.com/"
+
+  - title: "Data Science GitBook"
     url: "https://martinapugliese.gitbook.io/tales-of-science-and-data/"
