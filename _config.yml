@@ -120,7 +120,7 @@ analytics:
 author:
   name             : "Martina Pugliese"
   avatar           : "assets/avatars/off-we-go_cut.png"
-  bio              : "I try to make sense of things, but I love too many of them."
+  bio              : "Data, adventures and a 1000 wonderful things"
   location         : "Edinburgh, Scotland"
   email            :
   links:
@@ -130,18 +130,18 @@ author:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label : "m_letitbe"
-      icon  : "fab fa-fw fa-twitter"
-      url   : "https://twitter.com/m_letitbe"
+    # - label : "m_letitbe"
+    #   icon  : "fab fa-fw fa-twitter"
+    #   url   : "https://twitter.com/m_letitbe"
     # - label : "DoodleDatCard"
     #   icon  : "fab fa-fw fa-twitter"
     #   url   : "https://twitter.com/DoodleDatCard"
     # - label: "Facebook"
     #   icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "mart.pugliese"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/mart.pugliese/"
+    - label: "martinapugliese"
+      icon: "fab fa-mastodon"
+      url: "https://fosstodon.org/@martinapugliese"
     # - label: "doodledatcard"
     #   icon: "fab fa-fw fa-behance-square"
     #   url: "https://www.behance.net/martinapugliese"
@@ -154,12 +154,12 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url   : "https://twitter.com/m_letitbe"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/mart.pugliese/"
+    - label: "Mastodon"
+      icon: "fab fa-mastodon"
+      url   : "https://fosstodon.org/@martinapugliese"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://www.instagram.com/mart.pugliese/"
     #   # url:
     # - label: "martinapugliese"
     #   icon: "fab fa-fw fa-linkedin"
