@@ -3,13 +3,13 @@ main:
   - title: "NKI"
     url: /docs/NKI/
   - title: "PNC"
-      url: /docs/PNC/
+    url: /docs/PNC/
   - title: "HBN"
-      url: /docs/HBN
+    url: /docs/HBN
   - title: "PACCT"
-      url: /docs/PACCT
+    url: /docs/PACCT
   - title: "HBRC"
-      url: /docs/HBRC
+    url: /docs/HBRC
   - title: "dCCNP"
-      url: /docs/dCCNP    
+    url: /docs/dCCNP    
 
