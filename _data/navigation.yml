@@ -1,15 +1,15 @@
 # main links
 main:
   - title: "NKI"
-    url: /docs/NKI/
+    url: /docs/NKI.html/
   - title: "PNC"
-    url: /docs/PNC/
+    url: /docs/PNC.html/
   - title: "HBN"
-    url: /docs/HBN
+    url: /docs/HBN.html/
   - title: "PACCT"
-    url: /docs/PACCT
+    url: /docs/PACCT.html/
   - title: "HBRC"
-    url: /docs/HBRC
+    url: /docs/HBRC.html/
   - title: "dCCNP"
-    url: /docs/dCCNP    
+    url: /docs/dCCNP.html/   
 
