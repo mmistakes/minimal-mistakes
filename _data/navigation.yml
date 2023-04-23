@@ -1,15 +1,15 @@
 # main links
 main:
   - title: "NKI"
-    url: https://reprobrainchart.github.io/NKI
-  # - title: "PNC"
-  #     url: https://reprobrainchart.github.io/PNC
-  # - title: "HBN"
-  #     url: https://reprobrainchart.github.io/HBN
-  # - title: "PACCT"
-  #     url: https://reprobrainchart.github.io/PACCT
-  # - title: "HBRC"
-  #     url: https://reprobrainchart.github.io/HBRC
-  # - title: "dCCNP"
-  #     url: https://reprobrainchart.github.io/dCCNP    
+    url: https://reprobrainchart.github.io/docs/NKI
+  - title: "PNC"
+      url: https://reprobrainchart.github.io/docs/PNC
+  - title: "HBN"
+      url: https://reprobrainchart.github.io/docs/HBN
+  - title: "PACCT"
+      url: https://reprobrainchart.github.io/docs/PACCT
+  - title: "HBRC"
+      url: https://reprobrainchart.github.io/docs/HBRC
+  - title: "dCCNP"
+      url: https://reprobrainchart.github.io/docs/dCCNP    
 
