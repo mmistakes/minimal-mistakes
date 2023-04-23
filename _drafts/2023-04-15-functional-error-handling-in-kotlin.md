@@ -1,5 +1,5 @@
 ---
-title: "Functional Error Handling in Kotlin"
+title: "Functional Error Handling in Kotlin: Part 1"
 date: 2023-04-15
 header:
 image: "/images/blog cover.jpg"
@@ -7,7 +7,7 @@ tags: [kotlin]
 excerpt: "A functional approach to error handling in Kotlin"
 ---
 
-The Kotlin language is a multi-paradigm, general-purpose programming language. Whether we develop using an object-oriented approach, or a functional one, we always have the problem of handling errors. Kotlin offers a lot of different approaches to handle errors, but in this article, we will focus on the functional approaches, introducing also the `arrow-kt` library. So, without further ado, let's get started.
+The Kotlin language is a multi-paradigm, general-purpose programming language. Whether we develop using an object-oriented approach, or a functional one, we always have the problem of handling errors. Kotlin offers a lot of different approaches to handle errors, but in this article, we will focus on the functional approaches, introducing also the Arrow library. This article is the first part of a series, and we'll focus on methods that don't manage the cause of error, i.e. nullable types and Arrow `Option` type. So, without further ado, let's get started.
 
 ## 1. Setup
 
