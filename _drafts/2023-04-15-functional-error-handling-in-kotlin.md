@@ -605,4 +605,4 @@ The salary gap between JobId(value=42) and the max salary is 0.0
 
 ## 5. Conclusions
 
-In this article, we introduced the meaning of functional error handling in Kotlin. We started showing why we shouldn't rely on exceptions to handle errors. Then we introduced two strategies to handling errors that forget the cause of errors: Kotlin nullable types and the Arrow `Option` type. In the next part of this series we will see different strategies that allow us to propagate the cause of errors, such as the Kotlin `Result<T>` type, and the Arrow `Either<L, R>` type.
+In this article, we introduced the meaning of functional error handling in Kotlin. We started showing why we shouldn't rely on exceptions to handle errors. Then we introduced two strategies to handling errors that forget the cause of errors: Kotlin nullable types and the Arrow `Option` type. Moreover, we saw how the Arrow library provides useful DSL to work with both nullable types and the `Option` type. In the next part of this series we will see different strategies that allow us to propagate the cause of errors, such as the Kotlin `Result<T>` type, and the Arrow `Either<L, R>` type.
