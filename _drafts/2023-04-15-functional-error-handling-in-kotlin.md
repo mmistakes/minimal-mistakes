@@ -353,15 +353,15 @@ Fortunately, Kotlin and the Arrow library provide a lot of alternatives to handl
 
 ## 4. Handling Errors with `Option`
 
-Unlike Java, Kotlin doesn't provide a type for handling optional values. As we saw in the previous section, Kotlin creators preferred to introduce nullable values instead of having an `Option<T>` type. 
+Unlike Java, Kotlin doesn't provide a type for handling optional values. As we saw in the previous section, Kotlin creators preferred introducing nullable values instead of having an `Option<T>` type.
 
 We can add optional types to the language using the `Arrow` library, which provides a lot of functional programming constructs, including an `Option` type.
 
-The type defined by the Arrow library to manage optional values is defined as `arrow.core.Option<out A>`. Basically, it's a [Algebraic Data Type (ADT)](https://blog.rockthejvm.com/algebraic-data-types/), technically a sum type, which can be either `Some<A>` or `None`.
+The type defined by the Arrow library to manage optional values is the `arrow.core.Option<out A>` type. Basically, it's a [Algebraic Data Type (ADT)](https://blog.rockthejvm.com/algebraic-data-types/), technically a sum type, which can be either `Some<A>` or `None`.
 
 The `Some<A>` type represents a value of type `A`, while the `None` type represents the absence of a value. In other words, `Option` is a type that can either contain a value or not.
 
-In Arrow, we can create an `Option` value using directly the available constructors:
+In Arrow, we can create an `Option` value using the available constructors directly:
 
 ```kotlin
 val awsJob: Some<Job> =
@@ -376,7 +376,7 @@ val awsJob: Some<Job> =
 val noJob: None = None
 ```
 
-The library also provides some useful extension functions to create `Option` values:
+The library also provides some helpful extension functions to create `Option` values:
 
 ```kotlin
 val appleJob: Option<Job> =
@@ -416,7 +416,7 @@ val googleJob: Option<Job> =
 val noGoogleJob: Option<Job> = null.toOption() // noGoogleJob is None
 ```
 
-Now that we know how to create an `Option` value, let's see how we can use it. First of all, we create the version of the `Jobs` module that uses the `Option` type:
+Now that we know how to create an `Option` value let's see how to use it. First of all, we make the version of the `Jobs` module that uses the `Option` type:
 
 ```kotlin
 interface Jobs {
@@ -434,7 +434,7 @@ class LiveJobs : Jobs {
 }
 ```
 
-Again, we're not interested in the cause of the error, we just want to handle it. If the `findById` function fails, we return a `None` value. As you may guess, the `Option` type is defined as a sealed class, so we can use the `when` expression to handle the two possible cases. We can define a function that prints the job information of a job id if it exists:
+Again, we're not interested in the cause of the error. We want to handle it. If the `findById` function fails, we return a `None` value. As you may guess, the `Option` type is a sealed class, so we can use the `when` expression to handle the two possible cases. We can define a function that prints the job information of a job id if it exists:
 
 ```kotlin
 class JobsService(private val jobs: Jobs) {
@@ -463,9 +463,9 @@ However, if we use a job id that is not associated with any job, we get the foll
 Job not found for id JobId(value=42)
 ```
 
-However, working the pattern matching is not always very convenient. A lot of time, we need to transform and combine different `Option` values. As it happens in Scala, the `Option` type is a [monad](https://blog.rockthejvm.com/monads/), so we can use the `map`, `flatMap` function to transform and combine `Option` values. Let's see and example.
+However, working the pattern matching is only sometimes very convenient. A lot of time, we need to transform and combine different `Option` values. As in Scala, the `Option` type is a [monad](https://blog.rockthejvm.com/monads/), so we can use the `map` and `flatMap` functions to transform and combine `Option` values. Let's see an example.
 
-Imagine we want to create a function that, given a job id, it returns the gap between the job salary and the maximum salary for the same company. If the job doesn't exist, we want to return `None`. To implement such function, first, we need to add a `findAll` method to our `Jobs` interface:
+Imagine we want to create a function that, given a job id, it returns the gap between the job salary and the maximum salary for the same company. We want to return `None` if the job doesn't exist. To implement such a function, first, we need to add a `findAll` method to our `Jobs` interface:
 
 ```kotlin
 interface Jobs {
@@ -481,7 +481,7 @@ class LiveJobs : Jobs {
 }
 ```
 
-Then, we can implement a first version of the function calculating the salary gap using directly `map` and `flatMap` functions:
+Then, we can implement the first version of the function calculating the salary gap using direct `map` and `flatMap` functions:
 
 ```kotlin
 class JobsService(private val jobs: Jobs) {
@@ -499,7 +499,7 @@ class JobsService(private val jobs: Jobs) {
 }
 ```
 
-We can check that everything is working invoking the `getSalaryGapWithMax` in out `main` function:
+We can check that everything is working by invoking the `getSalaryGapWithMax` in our `main` function:
 
 ```kotlin
 fun main() {
@@ -517,9 +517,9 @@ If we run the above code, we get the expected following output:
 The salary gap between JobId(value=1) and the max salary is 20000.0
 ```
 
-As we said, the Kotlin language does not support the _for-comprehension_ syntax, so the sequences of nested calls to `flatMap` and `map` functions repeatedly can be a bit confusing. Again, the Arrow library gives us an help, defining a `option` DSL to calling functions on `Option` values in a more readable way. 
+As we said, the Kotlin language does not support the _for-comprehension_ syntax, so the sequences of nested calls to the `flatMap` and `map` function repeatedly can be a bit confusing. Again, the Arrow library gives us help to define an `option` DSL to call functions on `Option` values in a more readable way.
 
-The `option` DSL is very similar to the `nullable` DSL, but it works on the `Option` type, instead. As for the `nullable` counterpart, we have two flavors of the DSL. The one accepting a suspendable lambda with receiver, called simply `option`, and the once accepting a non-suspendable lambda with receiver, called `option.eager`. The receiver of the former DSL is a `arrow.core.continuations.OptionEffectScope`, whereas the latter DSL accepts a `arrow.core.continuations.OptionEagerEffectScope`.
+The `option` DSL is similar to the `nullable` DSL, but it works on the `Option` type instead. As for the `nullable` counterpart, we have two flavors of the DSL. The one accepting a suspendable lambda with receiver is `option`, and the one taking a non-suspendable lambda with receiver is called `option.eager`. The receiver of the former DSL is an `arrow.core.continuations.OptionEffectScope`. In contrast, the latter DSL accepts an `arrow.core.continuations.OptionEagerEffectScope`.
 
 Let's change the above function to use the `option` DSL:
 
@@ -535,7 +535,7 @@ fun getSalaryGapWithMax2(jobId: JobId): Option<Double> = option.eager {
 }
 ```
 
-Again, inside the DSL, the `bind` function is available. If you remember from the previous section, the  `bind` function is defined as an extension function of the `Option` type, and it extracts the value from the `Option` if it is a `Some` value, otherwise it eagerly returns `None` to the whole DSL.
+Again, inside the DSL, the `bind` function is available. If you remember from the previous section, the  `bind` function is defined as an extension function of the `Option` type. It extracts the value from the `Option` if it is a `Some` value. Otherwise, it eagerly returns `None` to the whole DSL.
 
 Let's check it out. We change the `main` function to call the `getSalaryGapWithMax2` function, passing a not existing job id:
 
@@ -548,14 +548,14 @@ fun main() {
 }
 ```
 
-We can check that the function returns immediately the `None` value, without executing the rest of the code:
+We can check that the function immediately returns the `None` value without executing the rest of the code:
 
 ```text
 Searching for the job with id JobId(value=42)
 The sum of the salaries using 'sumSalaries' is 0.0
 ```
 
-In addition, the `option` DSL integrates also with nullable types through the `ensureNotNull` function. In this case, the function extracts the value from a nullable type if present, otherwise it collapses the execution of the whole lambda in input to the `option` DSL, returning the `None` value. The, we can rewrite the above example as follows:
+In addition, the `option` DSL also integrates with nullable types through the `ensureNotNull` function. In this case, if present, the function extracts the value from a nullable type. Otherwise, it collapses the execution of the whole lambda in input to the `option` DSL, returning the `None` value. Then, we can rewrite the above example as follows:
 
 ```kotlin
 fun getSalaryGapWithMax3(jobId: JobId): Option<Double> = option.eager {
@@ -567,7 +567,7 @@ fun getSalaryGapWithMax3(jobId: JobId): Option<Double> = option.eager {
 }
 ```
 
-Last but not least, the `nullable` DSL we've seen in the previous section integrates smoothly with the `Option` type. In this case, the `bind` function called on an `None` type will eagerly end the whole block returning a `null` value:
+Last but not least, the `nullable` DSL we've seen in the previous section integrates smoothly with the `Option` type. In this case, the `bind` function called on a `None` type will eagerly end the whole block returning a `null` value:
 
 ```kotlin
 fun getSalaryGapWithMax4(jobId: JobId): Double? = nullable.eager {
@@ -583,7 +583,7 @@ fun getSalaryGapWithMax4(jobId: JobId): Double? = nullable.eager {
 }
 ```
 
-We can easily test it, giving to the `getSalaryGapWithMax4` function a job id that is not present in the database, and checking logs:
+We can quickly test it by giving the `getSalaryGapWithMax4` function a job id that is not present in the database and checking logs:
 
 ```kotlin
 fun main() {
@@ -604,11 +604,10 @@ The salary gap between JobId(value=42) and the max salary is 0.0
 
 ## 5. Conclusions
 
-In this article, we introduced the meaning of functional error handling in Kotlin. We started showing why we shouldn't rely on exceptions to handle errors. Then we introduced two strategies to handling errors that forget the cause of errors: Kotlin nullable types and the Arrow `Option` type. Moreover, we saw how the Arrow library provides useful DSL to work with both nullable types and the `Option` type. In the next part of this series we will see different strategies that allow us to propagate the cause of errors, such as the Kotlin `Result<T>` type, and the Arrow `Either<L, R>` type.
+This article introduced the meaning of functional error handling in Kotlin. We started showing why we shouldn't rely on exceptions to handle errors. Then we introduced two strategies to handling errors that forget the cause of errors: Kotlin nullable types and the Arrow `Option` type. Moreover, we saw how the Arrow library provides useful DSL to work with both nullable types and the `Option` type. In the next part of this series, we will see different strategies that allow us to propagate the cause of errors, such as the Kotlin `Result<T>` type and the Arrow `Either<L, R>` type.
 
 ## 6. Appendix: Maven Configuration
 
-As usual, we give you the maven configuration we used during the examples. Here it is the `pom.xml` file:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
