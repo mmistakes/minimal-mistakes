@@ -4,10 +4,10 @@ date: 2023-04-15
 header:
 image: "/images/blog cover.jpg"
 tags: [kotlin]
-excerpt: "A functional approach to error handling in Kotlin"
+excerpt: "Whether we develop using an object-oriented or functional approach, we always have the problem of handling errors. Kotlin offers a lot of different methods to do it. Here, we'll focus on strategies that don't manage the cause of the error, i.e., nullable types and Arrow `Option` types."
 ---
 
-The Kotlin language is a multi-paradigm, general-purpose programming language. Whether we develop using an object-oriented or functional approach, we always have the problem of handling errors. Kotlin offers a lot of different methods to handle errors. Still, this article will focus on the functional approaches and introduce the Arrow library. This article is the first part of a series. We'll focus on methods that don't manage the cause of the error, i.e., nullable types and Arrow `Option` types. So, without further ado, let's get started.
+The Kotlin language is a multi-paradigm, general-purpose programming language. Whether we develop using an object-oriented or functional approach, we always have the problem of handling errors. Kotlin offers a lot of different methods to handle errors. Still, this article will focus on the functional approaches and introduce the Arrow library. This article is the first part of a series. We'll focus on strategies that don't manage the cause of the error, i.e., nullable types and Arrow `Option` types. So, without further ado, let's get started.
 
 ## 1. Setup
 
@@ -189,7 +189,7 @@ Somebody can say that the JVM also has checked exceptions and that we can use th
 fun <A, B> map(list: List<A>, f: (A) -> B): List<B>
 ```
 
-As we might guess, using checked exceptions for the function `f` is impossible since it must stay generic. The only possible way is to add some very generic exception to the function's signature, such as a `RuntimeException` or an `Exception`, which is useless.
+As we might guess, using checked exceptions for the function `f` is impossible since it must stay generic. The only possible way is to add some generic exception to the function's signature, such as a `RuntimeException` or an `Exception`, which is useless.
 
 So, we understood that we need a better approach to handle errors, at least in functional programming. Let's see how we can do it.
 
@@ -290,7 +290,7 @@ Q: Is the job with id JobId(value=1) an Apple job?
 A: false
 ```
 
-Although the `?.` operator and the `let` function are extremely powerful, it's pretty easy to end with a code with many nested calls. For example, let's create a function in our service that returns the sum of the salaries of two jobs:
+Although the `?.` operator and the `let` function are extremely powerful, ending with a code with many nested calls is pretty straightforward. For example, let's create a function in our service that returns the sum of the salaries of two jobs:
 
 ```kotlin
 fun sumSalaries(jobId1: JobId, jobId2: JobId): Double? {
@@ -322,7 +322,7 @@ fun sumSalaries2(jobId1: JobId, jobId2: JobId): Double? = nullable.eager {
 }
 ```
 
-As we can see, the two functions extract the value from the nullable type. If the value is `null`, then the `nullable.eager` block returns `null` immediately. Here, we use the `eager` function, which accepts a not-suspendable function. We can use the `nullable` DSL directly if we want to use a suspendable function.
+As we can see, the two functions extract the value from the nullable type. If the value is `null`, then the `nullable.eager` block returns `null` immediately. Here, we use the `eager` function, which accepts a not-suspendable function. We can use the `nullable` DSL directly to use a suspendable function.
 
 We can give the function a job id that doesn't exist, and then we can check its behavior:
 
@@ -347,7 +347,7 @@ As we might expect, the function returns `null` immediately after searching for 
 
 Both the `nullable` and the `nullable.eager` DSL have a scope as the receiver, respectively an `arrow.core.continuations.NullableEagerEffectScope`and an `arrow.core.continuations.NullableEffectScope`. The library defines the `ensureNotNull` and the `bind` extension functions on these scopes. The `bind` function is just a wrapper to the same function defined in the `Optional` type that we'll see in the next section.
 
-Although nullable types offer a reasonable degree of compositionality and full support by the Kotlin language, there are some use cases when you can't use it to handle errors. There are some domains where the `null` value is valid, and we can't use it to represent an error. Other times, we need to work with some external libraries that don't support nullable types, such as RxJava or the project Reactor.
+Although nullable types offer a reasonable degree of compositionality and full support by the Kotlin language, there are some cases when you can't use it to handle errors. There are some domains where the `null` value is valid, and we can't use it to represent an error. Other times, we need to work with some external libraries that don't support nullable types, such as RxJava or the project Reactor.
 
 Fortunately, Kotlin and the Arrow library provide a lot of alternatives to handle errors functionally. Let's start with the `Option` type.
 
@@ -463,7 +463,7 @@ However, if we use a job id that is not associated with any job, we get the foll
 Job not found for id JobId(value=42)
 ```
 
-However, working the pattern matching is only sometimes very convenient. A lot of time, we need to transform and combine different `Option` values. As in Scala, the `Option` type is a [monad](https://blog.rockthejvm.com/monads/), so we can use the `map` and `flatMap` functions to transform and combine `Option` values. Let's see an example.
+However, working pattern matching is only sometimes very convenient. A lot of time, we need to transform and combine different `Option` values. As in Scala, the `Option` type is a [monad](https://blog.rockthejvm.com/monads/), so we can use the `map` and `flatMap` functions to transform and combine `Option` values. Let's see an example.
 
 Imagine we want to create a function that, given a job id, it returns the gap between the job salary and the maximum salary for the same company. We want to return `None` if the job doesn't exist. To implement such a function, first, we need to add a `findAll` method to our `Jobs` interface:
 
@@ -519,7 +519,7 @@ The salary gap between JobId(value=1) and the max salary is 20000.0
 
 As we said, the Kotlin language does not support the _for-comprehension_ syntax, so the sequences of nested calls to the `flatMap` and `map` function repeatedly can be a bit confusing. Again, the Arrow library gives us help to define an `option` DSL to call functions on `Option` values in a more readable way.
 
-The `option` DSL is similar to the `nullable` DSL, but it works on the `Option` type instead. As for the `nullable` counterpart, we have two flavors of the DSL. The one accepting a suspendable lambda with receiver is `option`, and the one taking a non-suspendable lambda with receiver is called `option.eager`. The receiver of the former DSL is an `arrow.core.continuations.OptionEffectScope`. In contrast, the latter DSL accepts an `arrow.core.continuations.OptionEagerEffectScope`.
+The `option` DSL is similar to the `nullable` DSL, but works on the `Option` type instead. As for the `nullable` counterpart, we have two flavors of the DSL. The one accepting a suspendable lambda with receiver is `option`, and the one taking a non-suspendable lambda with receiver is called `option.eager`. The receiver of the former DSL is an `arrow.core.continuations.OptionEffectScope`. In contrast, the latter DSL accepts an `arrow.core.continuations.OptionEagerEffectScope`.
 
 Let's change the above function to use the `option` DSL:
 
