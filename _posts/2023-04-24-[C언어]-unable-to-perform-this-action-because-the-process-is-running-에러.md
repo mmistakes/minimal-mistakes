@@ -43,6 +43,9 @@ int  main()
 
 바로 **Code Runner**라는 Extension을 깔면 된다.
 
+![enter image description here](https://raw.githubusercontent.com/arrow-economist/imageslibrary/main/coderunner1.png?token=GHSAT0AAAAAACBN6GXKRIWFXOFVL4PEM4ECZCG7NIA)
+
+유사품이 많으니 잘 찾아봐야한다. **Code Runner**는 저렇게 다운로드 수가 가장 많은 녀석이다. 저걸 설치한 다음 **Settings > Code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjI2MDU5NjBdfQ==
+eyJoaXN0b3J5IjpbLTQ3OTAxNzQwMywtMTk2MjYwNTk2MF19
 -->
