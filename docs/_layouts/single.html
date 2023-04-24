@@ -24,7 +24,6 @@
           {% include page__meta.html %}
         </header>
       {% endunless %}
-      <p style="background-image: url('docs/assets/images/BigBrain.png');">
       <section class="page__content" itemprop="text">
         {% if page.toc %}
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
@@ -36,7 +35,6 @@
         {% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-      </p>
       </section>
 
       <footer class="page__meta">
