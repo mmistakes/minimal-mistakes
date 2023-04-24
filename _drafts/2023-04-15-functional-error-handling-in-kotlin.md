@@ -242,7 +242,19 @@ Here, we used the `?.` operator to call a method on a nullable object only if it
 
 At first, using a nullable value seems less composable than using, for example, the Java `Optional` type. This last type has a lot of functions, `map`, `flatMap`, or `filter`, which make it easy to compose and chain operations.
 
-Kotlin nullable types have nothing to envy to the Java `Optional` type. In fact, the Kotlin standard library provides a lot of functions to handle nullable types. For example, **the `Optional.map` function is equivalent to the `let` scoping function**.
+Kotlin nullable types have nothing to envy to the Java `Optional` type. In fact, the Kotlin standard library provides a lot of functions to handle nullable types. For example, **the `Optional.map` function is equivalent to the `let` scoping function**:
+
+```kotlin
+// Kotlin SDK
+public inline fun <T, R> T.let(block: (T) -> R): R {
+    contract {
+        callsInPlace(block, InvocationKind.EXACTLY_ONCE)
+    }
+    return block(this)
+}
+```
+
+The `let` function takes a lambda function as input, applying it to the receiver type, as the `map` function (ed., [contracts](https://kotlinlang.org/docs/whatsnew13.html#contracts) is a powerful tool of the language to give the compiler some hints).
 
 To build an example, let's say that the salary of our jobs is in USD, and we want to convert it to EUR. We need a new service to do that:
 
