@@ -1,10 +1,6 @@
 ---
 title: "Nathan Kline Institute - Rockland Sample"
 excerpt: "NKI Sample"
-layout: default
-has_children: false
-has_toc: false
-nav_order: 1
 permalink: /docs/NKI/
 ---
 # About the dataset: 
