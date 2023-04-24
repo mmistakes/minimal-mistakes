@@ -45,7 +45,10 @@ int  main()
 
 ![enter image description here](https://raw.githubusercontent.com/arrow-economist/imageslibrary/main/coderunner1.png?token=GHSAT0AAAAAACBN6GXKRIWFXOFVL4PEM4ECZCG7NIA)
 
-유사품이 많으니 잘 찾아봐야한다. **Code Runner**는 저렇게 다운로드 수가 가장 많은 녀석이다. 저걸 설치한 다음 **Settings > Code
+유사품이 많으니 잘 찾아봐야한다. **Code Runner**는 저렇게 다운로드 수가 가장 많은 녀석이다. 저걸 설치한 다음 ***Settings > Code-runner 검색 > Run In Terminal 체크박스 체크*** 까지 해주면 된다. 그러면 세팅이 모두 끝났다.
+
+이제 다시 내 코드를 실행하면 인풋을 넣어도 에러메시지 없이 잘 실행되는 모습을 볼 수 있을 것이다!
+~~(사실 이 에러는 내가 debug code와 run code의 차이점을 잘 모르는 무지에서 비롯된 것 같다.)~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3OTAxNzQwMywtMTk2MjYwNTk2MF19
+eyJoaXN0b3J5IjpbMTE1MDMyNjgxMywtMTk2MjYwNTk2MF19
 -->
