@@ -11,7 +11,7 @@ The Kotlin language is a multi-paradigm, general-purpose programming language. W
 
 ## 1. Setup
 
-As usual, let's first create the setup we'll use through all the article. We'll use the last version of Kotlin available at the moment of writing, version 1.8.10. 
+As usual, let's first create the setup we'll use through all the article. We'll use the last version of Kotlin available at the moment of writing, version 1.8.20. 
 
 As we said, we're gonna use the [Arrow](https://arrow-kt.io/) libraries. Arrow adds functional types to the Kotlin standard library. In details, we'll use the [core](https://arrow-kt.io/docs/core/) library. Here, it is the dependency we need:
 
@@ -606,3 +606,75 @@ The salary gap between JobId(value=42) and the max salary is 0.0
 ## 5. Conclusions
 
 In this article, we introduced the meaning of functional error handling in Kotlin. We started showing why we shouldn't rely on exceptions to handle errors. Then we introduced two strategies to handling errors that forget the cause of errors: Kotlin nullable types and the Arrow `Option` type. Moreover, we saw how the Arrow library provides useful DSL to work with both nullable types and the `Option` type. In the next part of this series we will see different strategies that allow us to propagate the cause of errors, such as the Kotlin `Result<T>` type, and the Arrow `Either<L, R>` type.
+
+## 6. Appendix: Maven Configuration
+
+As usual, we give you the maven configuration we used during the examples. Here it is the `pom.xml` file:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>in.rcard</groupId>
+    <artifactId>functional-error-handling-in-kotlin</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <properties>
+        <kotlin.version>1.8.20</kotlin.version>
+        <arrow-core.version>1.1.5</arrow-core.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib</artifactId>
+            <version>${kotlin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.arrow-kt</groupId>
+            <artifactId>arrow-core</artifactId>
+            <version>${arrow-core.version}</version>
+            <type>pom</type>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
+        <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
+
+        <plugins>
+            <plugin>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-maven-plugin</artifactId>
+                <version>${kotlin.version}</version>
+
+                <executions>
+                    <execution>
+                        <id>compile</id>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+
+                    <execution>
+                        <id>test-compile</id>
+                        <goals>
+                            <goal>test-compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+```
