@@ -2,6 +2,7 @@
 title: "Brazil High Risk Cohort"
 excerpt: "BHRC"
 sitemap: false
+layout: single
 permalink: /docs/BHRC
 ---
 # About the dataset: 

@@ -2,6 +2,7 @@
 title: "Philadelphia Neurodevelopmental Cohort"
 excerpt: "PNC"
 sitemap: false
+layout: single
 permalink: /docs/PNC
 ---
 # About the dataset: 

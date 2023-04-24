@@ -2,6 +2,7 @@
 title: "Parents and Children Coming Together"
 excerpt: "PACCT"
 sitemap: false
+layout: single
 permalink: /docs/PACCT
 ---
 # About the dataset: 
