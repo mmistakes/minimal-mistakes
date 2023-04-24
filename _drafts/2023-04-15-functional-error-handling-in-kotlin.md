@@ -195,9 +195,9 @@ So, we understood that we need a better approach to handle errors, at least in f
 
 ## 3. Handling Errors with Nullable Types
 
-If we're not interested in the cause of the error, we can model the fact that an operation failed by returning a `null` value. In other languages returning a `null` is not considered a best practice. However, in Kotlin, the null check is built-in the language, and the compiler can help us to avoid errors. In Kotlin, we have nullable types. A nullable type is a type that can be either a value of the type or `null`. For example, the type `String?` is a nullable type, and it can be either a `String` or `null`.
+Suppose we're not interested in the cause of the error. In that case, we can model that an operation failed by returning a `null` value. In other languages returning a `null` is not considered a best practice. However, in Kotlin, the null check is built-in the language, and the compiler can help us to avoid errors. In Kotlin, we have nullable types. A nullable type is a type that can be either a value of the class or `null`. For example, the type `String?` is a nullable type, and it can be either a `String` or `null`.
 
-When we work with nullable types, the compiler forces us to handle the case when the value is `null`. For example, let's change our main example trying to handle error using nullable types. First, we redefined the `Jobs` interface and its implementation to use nullable types:
+When we work with nullable types, the compiler forces us to handle the case when the value is `null`. For example, let's change our primary example, trying to take an error using nullable types. First, we redefined the `Jobs` interface and its implementation to use nullable types:
 
 ```kotlin
 interface Jobs {
@@ -213,9 +213,9 @@ class LiveJobs : Jobs {
 }
 ```
 
-As we said, using nullable types to handle failures means losing completely the cause of the error, which is not propagated in any way to the caller.
+As we said, using nullable types to handle failures means completely losing the cause of the error, which is not propagated in any way to the caller.
 
-Then, we change also the `JobsService`, and we try to use the dereference operator `.` to access directly the `salary` property of the `Job?` object:
+Then, we also change the `JobsService`, and we try to use the dereference operator `.` to access the `salary` property of the `Job directly?` object:
 
 ```kotlin
 class JobsService(private val jobs: Jobs) {
@@ -231,18 +231,17 @@ Compilation failure
 [ERROR] /functional-error-handling-in-kotlin/src/main/kotlin/in/rcard/nullable/NullableTypeErrorHandling.kt:[21,26] Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type Job?
 ```
 
-The compiler is warning us that we forgot to handle the case in which the list is `null`. As we can see, the compiler is helping us to avoid errors. Let's fix the code:
+The compiler is warning us that we forgot to handle the case where the list is `null`. As we can see, the compiler is helping us to avoid errors. Let's fix the code:
 
 ```kotlin
 fun retrieveSalary(id: JobId): Double =
     jobs.findById(id)?.salary?.value ?: 0.0
 ```
 
-Here, we used the `?.` operator, which allows to call a method on a nullable object only if it's not `null`. If we have a chain of method calls, we must use the `?.` operator for every method call. Finally, we use the "elvis" operator, `?:`, as a fallback value, in case the job is `null`.
+Here, we used the `?.` operator to call a method on a nullable object only if it's not `null`. We must use the `?.` operator for every method call if we have a chain of method calls. Finally, we use the "Elvis" operator, `?:`, as a fallback value, in case the job is `null`.
 
-At first glance, using nullable value seems to be less composable than using, for example, the Java `Optional` type. This last type has a lot of functions, `map`, `flatMap`, or `filter`, which make it easy to compose and chain operations.
-
-Well, Kotlin nullable types have nothing to envy to the Java `Optional` type. In fact, the Kotlin standard library provides a lot of functions to handle nullable types. For example, the `Optional.map` function is equivalent to using the `let` scoping function. 
+At first, using a nullable value seems less composable than using, for example, the Java `Optional` type. This last type has a lot of functions, `map`, `flatMap`, or `filter`, which make it easy to compose and chain operations.
+Kotlin nullable types have nothing to envy to the Java `Optional` type. In fact, the Kotlin standard library provides a lot of functions to handle nullable types. For example, the `Optional.map` function is equivalent to the `let` scoping function.
 
 To build an example, let's say that the salary of our jobs is in USD, and we want to convert it to EUR. We need a new service to do that:
 
