@@ -12,4 +12,5 @@ main:
     url: /docs/HBRC
   - title: "dCCNP"
     url: /docs/dCCNP
-
+  - title: "HCPD"
+    url: /docs/HCPD
