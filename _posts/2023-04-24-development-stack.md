@@ -70,13 +70,23 @@ Let the _pipx claim_ speak for itself:
 And it does exactly that. It is awesome.
 I like to install commandline tools like black or poetry with pipx.
 
-Example of looking what is globally installed:
+Example of looking at what is globally installed:
 
 ```bash
 $ pipx list --short
 black 18.9b0
 pipx 0.10.0
 ```
+
+One more interesting command is the `pipx inject` functionality.
+It allows to install packages _inside_ the virtual environment specified.
+I mainly use it to set up my jupyter environment like this:
+
+```bash
+$ pipx inject jupyterlab numpy
+```
+
+This allows me to use numpy inside jupyter-lab (using the default kernel).
 
 
 ## [poetry](https://python-poetry.org/)
