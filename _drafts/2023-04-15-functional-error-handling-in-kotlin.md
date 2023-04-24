@@ -7,13 +7,13 @@ tags: [kotlin]
 excerpt: "A functional approach to error handling in Kotlin"
 ---
 
-The Kotlin language is a multi-paradigm, general-purpose programming language. Whether we develop using an object-oriented approach, or a functional one, we always have the problem of handling errors. Kotlin offers a lot of different approaches to handle errors, but in this article, we will focus on the functional approaches, introducing also the Arrow library. This article is the first part of a series, and we'll focus on methods that don't manage the cause of error, i.e. nullable types and Arrow `Option` type. So, without further ado, let's get started.
+The Kotlin language is a multi-paradigm, general-purpose programming language. Whether we develop using an object-oriented or functional approach, we always have the problem of handling errors. Kotlin offers a lot of different methods to handle errors. Still, in this article, we will focus on the functional approaches and introduce the Arrow library. This article is the first part of a series. We'll focus on methods that don't manage the cause of the error, i.e., nullable types and Arrow `Option` types. So, without further ado, let's get started.
 
 ## 1. Setup
 
-As usual, let's first create the setup we'll use through all the article. We'll use the last version of Kotlin available at the moment of writing, version 1.8.20. 
+Let's first create the setup we'll use throughout the article as usual. We'll use the last version of Kotlin available at the moment of writing, version 1.8.20.
 
-As we said, we're gonna use the [Arrow](https://arrow-kt.io/) libraries. Arrow adds functional types to the Kotlin standard library. In details, we'll use the [core](https://arrow-kt.io/docs/core/) library. Here, it is the dependency we need:
+As we said, we will use the [Arrow](https://arrow-kt.io/) libraries. Arrow adds functional types to the Kotlin standard library. In detail, we'll use the [core](https://arrow-kt.io/docs/core/) library. Here, it is the dependency we need:
 
 ```xml
 <dependency>
@@ -24,13 +24,13 @@ As we said, we're gonna use the [Arrow](https://arrow-kt.io/) libraries. Arrow a
 </dependency>
 ```
 
-As you may guess, we'll use Maven to build the project. At the end of the article, you'll find the complete `pom.xml` file.
+We'll use Maven to build the project. You'll find the complete `pom.xml` file at the end of the article.
 
-## 2. Why Exception Handling is not Functional
+## 2. Why Exception Handling is Not Functional
 
 First, we need to understand what's wrong with the traditional approach to error handling, which is based on exceptions. We need some context to understand the problem.
 
-For sake of this examples, imagine we want to create an application that manages a jobs board. First, we need a simplified model of a job:
+Imagine we want to create an application that manages a job board. First, we need a simplified model of a job:
 
 ```kotlin
 data class Job(val id: JobId, val company: Company, val role: Role, val salary: Salary)
@@ -75,7 +75,7 @@ val JOBS_DATABASE: Map<JobId, Job> = mapOf(
 )
 ```
 
-We can use a dedicated module to retrieve the jobs information. As a first operation, we want to retrieve a job by its id:
+We can use a dedicated module to retrieve the job information. As a first operation, we want to retrieve a job by its id:
 
 ```kotlin
 interface Jobs {
@@ -98,9 +98,9 @@ class LiveJobs : Jobs {
 }
 ```
 
-For this first implementation, we decided to throw a `NoSuchElementException` when the job is not found.
+We threw a `NoSuchElementException` for this first implementation when the job was not found.
 
-Now that we have our `Jobs` module, we can use it in a program. Let's say we want to retrieve the salary associated to a particular job. The program is very easy, but it's enough to show the problem:
+Now that we have our `Jobs` module, we can use it in a program. Let's say we want to retrieve the salary associated with a particular job. The program is straightforward, but it's enough to show the problem:
 
 ```kotlin
 class JobsService(private val jobs: Jobs) {
@@ -127,7 +127,7 @@ fun main() {
 }
 ```
 
-As expected the program crashes with the following exception:
+As expected, the program crashes with the following exception:
 
 ```text
 Exception in thread "main" java.util.NoSuchElementException: Job not found
@@ -137,9 +137,9 @@ Exception in thread "main" java.util.NoSuchElementException: Job not found
 	at in.rcard.MainKt.main(Main.kt)
 ```
 
-Fair enough. The exception is thrown outside the `try-catch` block, and it bubbles up to the main method. 
+Fair enough. The exception is thrown outside the `try-catch` block and bubbles up to the `main` method.
 
-One of the main principle functional programming is referential transparency, which states that a function should always return the same result when called with the same arguments. In other words, a function should not have any side effects. One of the corollary of this principle is that an expression can be replaced with its value without changing the program's behavior. 
+One of the main principles of functional programming is referential transparency, which states that a function should always return the same result when called with the same arguments. In other words, a function should not have any side effects. One of the results of this principle is that an expression can be replaced with its value without changing the program's behavior.
 
 Let's try it on our program. If we substitute the `jobs.findById(42)` expression to the `job` variable in the `retrieveSalary`method, we get the following code:
 
@@ -167,29 +167,29 @@ fun retrieveSalary(id: JobId): Double {
 }
 ```
 
-If we execute this code in our program, we clearly obtain a different result than the previous execution. In fact, the exception is now caught by the `try-catch` block, and the program generates the following output.
+If we execute this code in our program, we obtain a different result than the previous execution. In fact, the exception is now caught by the `try-catch` block, and the program generates the following output.
 
 ```text
 The salary of the job 42 is 0.0
 ```
 
-We've just proof that exceptions don't follow the substitution principle. In other words, exceptions are not referentially transparent, and, for this reason, are considered a side effect. In other words, expressions throwing exceptions can't be reasoned about without a context of execution, aka the code around the expression. So, when we use expression, we also lose the locality of reasoning, and add a lot of cognitive load to understand the code.
+We've just proven that exceptions don't follow the substitution principle. In other words, exceptions are not referentially transparent and, for this reason, are considered a side effect. In other words, expressions throwing exceptions can't be reasoned about without a context of execution, aka the code around the expression. So, when we use the expression, we also lose the locality of reasoning and add a lot of cognitive loads to understand the code.
 
-However, there is one more aspect we don't like about exceptions. Let's take the signature of the `retrieveSalary` method:
+However, there is one more aspect we would like to change about exceptions. Let's take the signature of the `retrieveSalary` method:
 
 ```kotlin
 fun retrieveSalary(id: JobId): Double
 ```
 
-We expect the method to take a job id as input, and return a salary as a `Double`. No reference to the exception is present in the signature. As developers, we want that the compilers help us to avoid errors. However, in this case, we're not aware that the method can throw an exception, and the compiler can not help us in any way. The only place where we become aware of the exception is during runtime execution, which is a bit late.
+We expect the method to take a job id as input and return a salary as a `Double`. No reference to the exception is present in the signature. As developers, we want that the compilers to help us avoid errors. However, in this case, we're not aware that the method can throw an exception, and the compiler can not help us in any way. The only place we become aware of the exception is during runtime execution, which is a bit late.
 
-Somebody can say that the JVM also has checked exceptions, and that we can use them to avoid the problem. In fact, if a method declares to throw a checked exception, the compiler will force us to handle it. However, checked exceptions don't work well with higher-order functions, which are a fundamental part of functional programming. In fact, if we want to use a higher-order function together with checked exception, we need to declare the exception in the signature of the lambda function, which is not feasible. Take the `map` function of any collection type:
+Somebody can say that the JVM also has checked exceptions and that we can use them to avoid the problem. In fact, if a method declares to throw a checked exception, the compiler will force us to handle it. However, checked exceptions don't work well with higher-order functions, which are fundamental to functional programming. In fact, if we want to use a higher-order function together with checked exceptions, we need to declare the exception in the signature of the lambda function, which is not feasible. Take the `map` function of any collection type:
 
 ```kotlin
 fun <A, B> map(list: List<A>, f: (A) -> B): List<B>
 ```
 
-As we might guess, it's impossible to use checked exceptions for the function `f`, since it must to stay generic. The only possible way is to add some very generic exception to the signature of the function, such as a `RuntimeException` or an `Exception`, which is not very useful.
+As we might guess, using checked exceptions for the function `f` is impossible since it must stay generic. The only possible way is to add some very generic exception to the function's signature, such as a `RuntimeException` or an `Exception`, which is not very useful.
 
 So, we understood that we need a better approach to handle errors, at least in functional programming. Let's see how we can do it.
 
