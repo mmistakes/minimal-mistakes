@@ -2,7 +2,7 @@
 title: "Human Connectome Project - Developmental"
 excerpt: "HCPD"
 sitemap: false
-
+layout: single
 permalink: /docs/HCPD
 ---
 ## About the dataset: 

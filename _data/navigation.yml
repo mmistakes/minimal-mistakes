@@ -8,8 +8,8 @@ main:
     url: /docs/HBN
   - title: "PACCT"
     url: /docs/PACCT
-  - title: "HBRC"
-    url: /docs/HBRC
+  - title: "BHRC"
+    url: /docs/BHRC
   - title: "dCCNP"
     url: /docs/dCCNP
   - title: "HCPD"

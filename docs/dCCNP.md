@@ -2,6 +2,7 @@
 title: "Developmental Chinese Color Nest Project"
 excerpt: "dCCNP"
 sitemap: false
+layout: single
 permalink: /docs/dCCNP
 ---
 # About the dataset
