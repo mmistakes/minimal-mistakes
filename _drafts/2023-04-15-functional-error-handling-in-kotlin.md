@@ -1,8 +1,8 @@
 ---
 title: "Functional Error Handling in Kotlin: Part 1"
-date: 2023-04-15
+date: 2023-04-27
 header:
-image: "/images/blog cover.jpg"
+    image: "/images/blog cover.jpg"
 tags: [kotlin]
 excerpt: "Whether we develop using an object-oriented or functional approach, we always have the problem of handling errors. Kotlin offers a lot of different methods to do it. Here, we'll focus on strategies that don't manage the cause of the error, i.e., nullable types and Arrow `Option` types."
 ---
@@ -55,19 +55,19 @@ Then, we can simulate a database of jobs using a `Map<JobId, Job>`:
 ```kotlin
 val JOBS_DATABASE: Map<JobId, Job> = mapOf(
     JobId(1) to Job(
-        JobId(2),
+        JobId(1),
         Company("Apple, Inc."),
         Role("Software Engineer"),
         Salary(70_000.00),
     ),
     JobId(2) to Job(
-        JobId(3),
+        JobId(2),
         Company("Microsoft"),
         Role("Software Engineer"),
         Salary(80_000.00),
     ),
     JobId(3) to Job(
-        JobId(4),
+        JobId(3),
         Company("Google"),
         Role("Software Engineer"),
         Salary(90_000.00),
@@ -98,7 +98,7 @@ class LiveJobs : Jobs {
 }
 ```
 
-When the job was not found, we threw a `NoSuchElementException` for this first implementation.
+When the job was not found, we threw a `NoSuchElementException`. Easy peasy.
 
 Now that we have our `Jobs` module, we can use it in a program. Let's say we want to retrieve the salary associated with a particular job. The program is straightforward, but it's enough to show the problem:
 
@@ -139,7 +139,7 @@ Exception in thread "main" java.util.NoSuchElementException: Job not found
 
 Fair enough. The exception is thrown outside the `try-catch` block and bubbles up to the `main` method.
 
-One of the main principles of functional programming is referential transparency, which states that a function should always return the same result when called with the same arguments. In other words, a function should not have any side effects. One of the results of this principle is that an expression can be replaced with its value without changing the program's behavior.
+One of the main principles of functional programming is referential transparency, which states that a function should always return the same result when called with the same arguments. In other words, a function should not have any side effects. One of the results of this principle is that **an expression can be replaced with its value without changing the program's behavior**.
 
 Let's try it on our program. If we substitute the `jobs.findById(42)` expression to the `job` variable in the `retrieveSalary`method, we get the following code:
 
@@ -173,23 +173,23 @@ If we execute this code in our program, we obtain a different result than the pr
 The salary of the job 42 is 0.0
 ```
 
-We've just proven that exceptions don't follow the substitution principle. In other words, exceptions are not referentially transparent and, for this reason, are considered a side effect. In other words, expressions throwing exceptions can't be reasoned about without a context of execution, aka the code around the expression. So, when we use the expression, we also lose the locality of reasoning and add a lot of cognitive loads to understand the code.
+We've just proven that exceptions don't follow the substitution principle. In other words, exceptions are not referentially transparent and, for this reason, are considered a side effect. In other words, **an expression throwing exceptions can't be reasoned about without a context of execution, aka the code around the expression**. So, when we use the expression, we also lose the locality of reasoning and add a lot of cognitive loads to understand the code.
 
-However, there is one more aspect we would like to change about exceptions. Let's take the signature of the `retrieveSalary` method:
+Moreover, there is one more aspect we would like to change about exceptions. Let's take the signature of the `retrieveSalary` method:
 
 ```kotlin
 fun retrieveSalary(id: JobId): Double
 ```
 
-We expect the method to take a job id as input and return a salary as a `Double`. No reference to the exception is present in the signature. As developers, we want that the compilers to help us avoid errors. However, in this case, we're not aware that the method can throw an exception, and the compiler can not help us in any way. The only place we become aware of the exception is during runtime execution, which is a bit late.
+We expect the method to take a job id as input and return a salary as a `Double`. No reference to the exception is present in the signature. **As developers, we want the compilers to help us avoid errors**. However, in this case, we're not aware that the method can throw an exception, and the compiler can not help us in any way. The only place we become aware of the exception is during runtime execution, which is a bit late.
 
-Somebody can say that the JVM also has checked exceptions and that we can use them to avoid the problem. In fact, if a method declares to throw a checked exception, the compiler will force us to handle it. However, checked exceptions don't work well with higher-order functions, which are fundamental to functional programming. In fact, if we want to use a higher-order function together with checked exceptions, we need to declare the exception in the signature of the lambda function, which is not feasible. Take the `map` function of any collection type:
+Somebody can say that the JVM also has checked exceptions and that we can use them to avoid the problem. In fact, if a method declares to throw a checked exception, the compiler will force us to handle it. However, **checked exceptions don't work well with higher-order functions**, which are fundamental to functional programming. In fact, if we want to use a higher-order function together with checked exceptions, we need to declare the exception in the signature of the lambda function, which is not feasible. Take the `map` function of any collection type:
 
 ```kotlin
 fun <A, B> map(list: List<A>, f: (A) -> B): List<B>
 ```
 
-As we might guess, using checked exceptions for the function `f` is impossible since it must stay generic. The only possible way is to add some generic exception to the function's signature, such as a `RuntimeException` or an `Exception`, which is useless.
+As we might guess, using checked exceptions for the function `f` is impossible since it must stay generic. The only possible way is to add some generic exception to the function's signature, such as an `Exception`, which is useless.
 
 So, we understood that we need a better approach to handle errors, at least in functional programming. Let's see how we can do it.
 
