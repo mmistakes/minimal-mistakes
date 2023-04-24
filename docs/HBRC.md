@@ -5,7 +5,7 @@ sitemap: false
 layout: single
 permalink: /docs/BHRC
 ---
-
+<html>
 <p style="background-image: url('docs/assets/images/BigBrain.png');">
 
 ## About the dataset: 
