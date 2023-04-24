@@ -1,6 +1,6 @@
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
-<p style="background-image: url('docs/assets/images/BigBrain.png');">
+
+
+
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% elsif page.header.video.id and page.header.video.provider %}
@@ -14,7 +14,6 @@
 {% endif %}
 <div id="main" role="main">
   {% include sidebar.html %}
-
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
@@ -28,9 +27,10 @@
           {% include page__meta.html %}
         </header>
       {% endunless %}
-
+      
       <section class="page__content" itemprop="text">
         {% if page.toc %}
+        <p style="background-image: url('docs/assets/images/BigBrain.png');"></p>
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
@@ -40,6 +40,7 @@
         {% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        </p>
       </section>
 
       <footer class="page__meta">
@@ -93,5 +94,3 @@
     </div>
   {% endif %}
 </div>
-</p>
-</html>
