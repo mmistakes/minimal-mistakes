@@ -26,7 +26,7 @@ As can bee seen from the trend in the following image, the course's rating has b
 Ontologies and Semantic Web is a master's degree subject focused on bringing meaning to the data and its processing in this way. The course guides students through current trends and technologies in the semantic web field.
 
 [Subject description on the faculty Web](https://fel.cvut.cz/en/education/bk/predmety/58/33/p5833706.html){: .btn .btn--info}
-[Details for students at CourseWare](https://cw.fel.cvut.cz/b{{ currentYear }}1/courses/b4m36osw/start){: .btn .btn--info}
+[Details for students at CourseWare](https://cw.fel.cvut.cz/b221/courses/b4m36osw/start){: .btn .btn--info}
 
 In the winter semester 2022/23 the teachers assigned to the course were [Petr Křemen](https://kbss.felk.cvut.cz/web/team#petr-křemen) and [Michal Med](https://kbss.felk.cvut.cz/web/team#michal-med). During the whole semester, students got the theoretical basis in the semantics and ontologies and in the tutorials they were practicing new knowledge on the real data. During the course, students processed semestral work with three checkpoints, in which students proved the understanding of semantics and ontologies and ability to process the data in this way.
 
