@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arrow-economist.github.io/sitemap.xml
