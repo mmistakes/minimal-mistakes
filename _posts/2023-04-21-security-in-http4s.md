@@ -1,10 +1,18 @@
 ---
+<<<<<<< HEAD
 title: "Configuring Http4s Security: CORS and CSRF"
+=======
+title: "Security Configuration in Http4s"
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 date: 2023-03-30
 header:
   image: "/images/blog cover.jpg"
 tags: []
+<<<<<<< HEAD
 excerpt: "In this article, we will show you how to set up an Http4s server so that it correctly protects against cross-origin requests and CSRF."
+=======
+excerpt: "Security configuration in http4s excerpt."
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 toc: true
 toc_label: "In this article"
 ---
@@ -13,11 +21,18 @@ toc_label: "In this article"
 
 With the growing number of cyber-attacks ever increasing, there's a growing need for security in the applications we build.
 Http4s comes with several easily configurable security features and in this article, we will cover the two most common, CORS and CSRF.
+<<<<<<< HEAD
 If you are not familiar with http4s, a good introduction to the library can be found [here](https://blog.rockthejvm.com/http4s-tutorial/)
 
 ## 2. Setting Up
 
 To run the code in this article, we'll need to add the following dependencies in our project build:
+=======
+
+## 2. Setting Up
+
+To run the code in this article, we'll need to add the following dependencies to our project build:
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 
 ```scala
 libraryDependencies ++= Seq(
@@ -37,16 +52,28 @@ The [serve](https://www.npmjs.com/package/serve) npm package, a lightweight serv
 
 Many developers have come across the CORS acronym at some point in their careers, but what does it mean exactly? CORS stands for Cross-Origin Resource Sharing, it's a technique used by browsers to ensure secure requests and data transfers from any origin other than its own. Here's how this would work in 3 simple steps.
 
+<<<<<<< HEAD
 1. `img.com` needs to load images on its landing page but these images are hosted on `imagebucket.com`
 2. When someone visits `img.com`, his/her browser will send a request for images to `imagebucket.com`, this is called a cross-origin request.
 3. If `imagebucket.com` setup cross-origin resource sharing to include `img.com`, then the browser will proceed and load these requests, otherwise the request will be canceled and the images will fail to load.
 
 Imagine for a second that CORS didn't exist, malicious sites could easily request and acquire information from any site by making cross-origin requests. Typically a server should contain a list of approved sites to which cross-origin resource sharing is approved, any requests made from sites outside this list should be denied.
+=======
+1. `foo.com` needs to load images on its landing page but these images are hosted on `bar.com`
+2. When someone visits `foo.com`, his/her browser will send a request for images to `bar.com`, this is called a cross-origin request.
+3. If `bar.com` setup cross-origin resource sharing to include `foo.com`, then the browser will proceed and load these requests, otherwise the request will be canceled and the images will fail to load.
+
+Imagine for a second that CORS didn't exist, malicious sites could easily request and acquire information from any site by making cross-origin requests. Typically your site's server should contain a list of approved sites to which cross-origin resource sharing is approved, any requests made from sites outside this list should be denied.
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 
 ## 4. CORS and Http4s
 
 Http4s provides CORS as part of it's `middleware`, the `CORS` package comes with a number of methods that help in implementing CORS within Http4s.
+<<<<<<< HEAD
 Let's create our minimalistic server to show how CORS works. The code that follows is written in Scala 3, but can also work with Scala 2:
+=======
+Let's create our minimalistic server to show how CORS works:
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 
 ```scala
 import cats.effect.*
@@ -63,8 +90,13 @@ object CorsExample extends IOApp{
 }
 ```
 
+<<<<<<< HEAD
 Here we implement our `imageService` that returns an image when provided a name, it receives a `GET` request and responds with a message telling the user that the image is being returned.
 Once the service is created, we will need to bind it to a port number where the requests will be routed, for this, we will use `ember` server:
+=======
+Here we implement our `imageService` that processes images when provided with the name, it receives a `GET` request and responds with a message telling the user that the image is being processed.
+Once the service is created, we need to bind it to a port number where the requests will be routed, for this, we will use `ember` server:
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 
 ```scala
 import org.http4s.ember.server.EmberServerBuilder
@@ -150,10 +182,17 @@ Processing image: personal.jpg.⏎
 
 ```
 
+<<<<<<< HEAD
 `Curl` can pass headers when sending requests through the `-H` flag, in our example, we passed the `Origin` header as `http://img.com`.
 Within the response, we see a new header added, `Access-Control-Allow-Origin` which is now displayed with a value `*`, the asterisk signifies that requests from all origins will be accepted by our server.
 It's important to note that the CORS configuration won't prevent non-browser requests from going through. CORS is browser specific. The server sends CORS specific headers to the browser which it uses to either block or load requests. The `Origin` header is added automatically by the browser whenever requests are sent, however since we are using `curl`, we add it in manually.
 
+=======
+`Curl` can pass headers when sending requests through the `-H` flag, in our example we passed the `Origin` header as `http://foo.com`.
+Within the response, we see a new header added, the `Access-Control-Allow-Origin` is now displayed with a value `*`, the asterisk signifies that requests from all origins will be accepted by our server. It's worth noting if you don't supply the `Origin` header you will not receive the `Access-Control-Allow-Origin header` from the server.
+
+It's important to note that the CORS configuration won't prevent non-browser requests from going through. CORS is browser specific. The server sends CORS specific headers to the browser which it uses to either block or load requests.
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 With CORS implemented, we realize that even malicious sites can make requests for our `personal.jpg` image.
 
 We can specify the sites that can access our server by replacing the `withAllowOriginAll()` method with the `withAllowOriginHost()` method. This would be implemented as follows:
@@ -168,10 +207,14 @@ val corsService = CORS.policy
     .apply(imageService)
 ```
 
+<<<<<<< HEAD
 The `withAllowOriginHost` method takes a Set of URLs described as `Origin` objects, the `Host` method takes a URI scheme as either `http` or `https`, a hostname and port number. Here we configured our server to only accept requests from `localhost:5000`. Non-browser requests such as those from `curl` will always go through since there's no mechanism to restrict access based on the type of CORS header returned. Let's prove this:
 
 ```bash
 curl -v http://localhost:8080/image/personal.jpg -H 'Origin:http://img.com'
+=======
+This method takes a Host object where we specify the scheme as either `http` or `https`, a hostname and port number. Here we configured our server to only accept requests from `localhost:5000`. Non-browser requests such as those from `curl` will always go through since there's no mechanism to restrict access based on the type of CORS header returned. Let's prove this:
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 
 *   Trying ::1:8080...
 * Connected to localhost (::1) port 8080 (#0)
@@ -195,7 +238,11 @@ Processing image: personal.jpg.⏎
 
 Instead of the `Access-Control-Allow-Origin`, we now receive a `Vary` header, with the value `Origin`. This means that access to our server resources is now restricted for some origins. However, access should have been restricted only to `localhost:5000` but our `personal.jpg` image still gets processed because `curl` doesn't care about CORS headers.
 
+<<<<<<< HEAD
 Knowing this let's send the request through a browser. First, we create a folder to store our `HTML` file called `testFolder` and within it, create a `test.html` page to which we save the following code:
+=======
+Knowing this let's send the request through a browser. First, we create a folder to store our `HTML` file called `testFolder` and within it create a `test.html` page and save the following code:
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 
 ```html
 <!DOCTYPE html>
@@ -211,7 +258,11 @@ Knowing this let's send the request through a browser. First, we create a folder
 </html>
 ```
 
+<<<<<<< HEAD
 We embed our request code in JavaScript within the `<script>` tag. Here we use the javascript's `fetch()` API to send the request to our server URL, when the `Fetch Image` button is clicked, the `fetchdata()` function is called and a request is sent to the server URL and the response is logged in the `console` using `await console.log(response.text())`.
+=======
+We embed our request code in javascript within the `<script>` tag. Here we use the javascript's `fetch()` API to send the request to our server URL, when the `fetchdata()` function is called the response is logged in the console using `await console.log(response.text())`.
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 
 We can serve our `test.html` page using the `serve` console command as follows:
 
@@ -233,7 +284,11 @@ Great, now that our server is set up, we can run `localhost:5000/test` in the br
 
 ![passedrequest](../images/http4s-security/passedrequest.png)
 
+<<<<<<< HEAD
 This is the expected behavior if CORS is implemented correctly. Assuming we change the port number in our server to `9000`:
+=======
+This is the expected behavior when CORS is implemented correctly. Assuming we change the port number in our server to `9000`:
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 
 ```scala
 val corsService = CORS.policy
@@ -291,7 +346,11 @@ object securityHttp4s extends IOApp{
 CSRF stands for Cross-Site Request Forgery, this is a malicious attack by a third party where unsanctioned requests are sent without the knowledge of the user to sites the user is logged into.
 
 Here's a simple example of a CSRF attack
+<<<<<<< HEAD
 Let's assume that a user hosts all his/her important photos on `photos.com`.
+=======
+Let's assume that a user hosts all his/her important photos on photos.com.
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 The attacker decides to send the user such an email:
 
 ```
@@ -319,6 +378,7 @@ Even worse the attacker could use an image to perform a malicious action:
 />
 ```
 
+<<<<<<< HEAD
 If `photos.com` allows image transfers with `GET` requests, such a link would authorize a transfer of private photos to the hackers' email account without the user noticing.
 
 In a situation where image transfers were done with POST requests:
@@ -333,6 +393,17 @@ In a situation where image transfers were done with POST requests:
   <input type="hidden" name="authorize" value="true" />
   <input type="hidden" name="email" value="hacker@email.com" />
   <input type="submit" value="Click to get a free subscription!" />
+=======
+If photos.com allows image transfers with GET requests, such a link would authorize a transfer of private photos to the hackers' email account without the user noticing.
+
+In a situation where image transfers were done with POST requests:
+
+```
+<form action="http://photos.com/transfer-images" method="POST", id="malicious-form">
+    <input type="hidden" name="authorize" value="true" />
+    <input type="hidden" name="email" value="hacker@email.com">
+    <input type="submit" value="Click to get a free subscription!" />
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 </form>
 ```
 
@@ -352,12 +423,21 @@ In this case, the form will automatically be submitted as soon as the HTML has l
 
 If `photos.com` implemented CSRF protection correctly, this is how the above attack would be stopped.
 
+<<<<<<< HEAD
 1. Whenever an HTML form is used to send `POST` requests authorizing transfer photos from `photos.com`, a `CSRF token` must be inserted within a hidden field in the form.
 2. Once the `POST` request is received by the `photos.com` server, it checks and verifies the `CSRF token` against its database. If the token is present and valid, the request would go through, however, if the token is missing or wrong, the transfer request would be rejected.
 
 ## 6. CSRF protection in Http4s
 
 The `CSRF` module is also part of the Http4s `middleware` package. Let's start by creating the server we shall use in this section:
+=======
+1. Each time photos.com display the HTML form used to transfer pictures to the user, it would generate a CSRF token and insert it within a hidden field in the form.
+2. Once the `POST` request is received, `photos.com` checks and verifies the `CSRF token` against its database. If the token is present and valid, the request would go through, however, if the token is missing or wrong, the transfer request would be rejected.
+
+## 6. CSRF protection in Http4s
+
+The CSRF module is also part of the Http4s middleware package. Let's start by creating the server we shall use in this section:
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 
 ```scala
 import cats.effect.*
@@ -376,7 +456,11 @@ object csrfExample extends IOApp{
 }
 ```
 
+<<<<<<< HEAD
 If we test our server, we should receive the string `Testing`:
+=======
+Let's test our server, we should receive the string testing:
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 
 ```bash
 curl -v http://localhost:8080/testing
@@ -399,7 +483,11 @@ curl -v http://localhost:8080/testing
 Testing⏎
 ```
 
+<<<<<<< HEAD
 From the output, we see our expected string.
+=======
+From the output, we see our expected string "Testing".
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 We need a way to receive post requests from the client. To implement this, we shall add another route to the photoService:
 
 ```scala
@@ -432,8 +520,13 @@ curl -v -X POST http://localhost:8080/photos
 Processing⏎
 ```
 
+<<<<<<< HEAD
 `Curl` handles `POST` requests by passing the `-X POST` flag as one of its arguments. In this case, we did not provide a payload to keep the example simple. From the result, we receive the expected string `Processing`.
 Next, we'll implement the `CSRF` `middleware` into our server:
+=======
+`Curl` can handle `POST` requests by passing the `-X POST` flag as one of its arguments. In this case, we did not provide a payload to keep the example simple. From the result, we receive the expected string "Processing".
+Next, we'll implement the CSRF middleware into our server:
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 
 ```scala
 import cats.effect.unsafe.IORuntime
@@ -465,11 +558,19 @@ val csrfServer = csrf.validate()(photoService)
 
 We start by generating our csrf `token` which is done by running `CSRF.generateSigningKey[IO]().unsafeRunSync()`, this gives us a value of type `SecretKey`.
 The `defaultOriginCheck` is a function from `Request[IO] => Boolean` used to check the origin of the request, in our case it is `localhost`.
+<<<<<<< HEAD
 The first argument to the `defaultOriginCheck` method is the request, we provided an underscore since the request will be coming through `ember` server, however, scala http4s also has a utility for creating Requests within the application.
 The third input is the `Uri` scheme which can be `http` or `https` and finally the port number which was provided as `None`.
 
 The next step is assembling the `csrfBuilder` of type `CSRFBuillder[IO,IO]`, this is done by calling the `CSRF[IO,IO]()` function which takes as arguments our `token` and the `defaultOriginCheck` function.
 The `csrfBuilder` is the heart of the CSRF implementation in http4s, in our example we provide 4 methods, first the `withCookieName()` method which takes `cookieName`, the name of the cookie as an argument, second is the `withCookieDomain()` which in our case is `localhost`, third is the `withCookiePath()` to which we provided `Some("/")`, this is the path through which we will request for the csrf token. Finally, the `build` method which bundles all these values into a `CSRF` object.
+=======
+The first argument to the `defaultOriginCheck` method is the request, we provided an underscore since the request will be coming through ember server, however, scala http4s also has a utility for creating Requests within the application.
+The third input is the `Uri` scheme which can be `http` or `https` and finally the port number which was provided as `None`.
+
+The next step is assembling the `csrfBuilder` of type `CSRFBuillder[IO,IO]`, this is done by calling the `CSRF[IO,IO]()` function which takes as arguments our `token` and the `defaultOriginCheck` function.
+The `csrfBuilder` is the heart of the CSRF implementation in http4s, in our example we provide 4 methods, first the `withCookieName()` method which takes `cookieName`, the name of the cookie as an argument, second is the `withCookieDomain()` which in our case is `localhost`, third is the `withCookiePath()` to which we provided `Some("/")`, this is the path through which we will request for the csrf token. Finally, the build method which bundles all these values into a `CSRF` object.
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 
 The `csrfServer` now has a `validate()` method which confirms the csrf token received through the `GET` request with what it generated. We also make sure we pass the `csrfServer` to our `server` through the `withHttpApp()` method.
 
@@ -518,7 +619,11 @@ curl -v http://localhost:8080
 Not found⏎
 ```
 
+<<<<<<< HEAD
 Notice that this is a `GET` request, the server sends the csrf token to the browser using the `Set-Cookie` header, this means that the csrf token is set as a cookie on the client's browser with the name `csrf-token`.
+=======
+Notice that this is a `GET` request, the server sends the csrf token to the browser using the `Set-Cookie` header, this means that the csrf token is set as a cookie on the client's browser with the name csrf-token.
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 
 Now we can send a `POST` request to the server with the csrf token in order to fetch our photos:
 
@@ -549,7 +654,12 @@ curl -v -X POST http://localhost:8080/photos -H "Origin:http://localhost"
 Processing⏎
 ```
 
+<<<<<<< HEAD
 CSRF is now working since we receive the `Processing` message from the server. Using `curl`, we send a `POST` request by supplying the `-X POST` flag, this is then followed by the server URL which is `http://localhost:8080/photos`. We then add the headers `Origin` and `X-Csrf-Token` with their respective values and finally, we passed the `csrf-token` cookie which was set by the server.
+=======
+CSRF is now working since we receive the `Processing` message from the server. In the `curl`, we command sent a `POST` request by using the `-X POST` flag, this is then followed by the server URL which is `http://localhost:8080/photos`.
+We then supply the headers `Origin` and `X-Csrf-Token` with their respective values and finally we passed the `csrf-token` cookie which was set by the server.
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
 
 Some gotcha's in this request, this does not apply if your requests are sent through the browser:
 If the `Origin` header is missing, the request will fail, this is because the CSRF middleware through the defaultOriginCheck method confirms the origin of the request. The browser will automatically add the Origin header, however, it's the developer's responsibility to add the Origin header for non-browser requests.
@@ -605,4 +715,8 @@ object csrfExample extends IOApp{
 
 ## 7. Conclusion
 
+<<<<<<< HEAD
 In this article we went through Cross-Origin Resource Sharing, what it is, and how it's implemented. We also went through Cross-site request forgery attacks, how they occur, and how to prevent them. Both these topics have well-thought-out implementations in Http4s which we covered, and I encourage you to implement them in your servers.
+=======
+In this article we went through Cross-Origin Resource Sharing, what it is, and how its implemented. We also went through Cross-site request forgery attacks, how they occur, and how to prevent them. Both these topics have well-thought-out implementations in Http4s which we covered, and I encourage you to implement them in your servers.
+>>>>>>> c47a09d691f5e8e0800c45c914aa3c02d61677ec
