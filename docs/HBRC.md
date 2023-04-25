@@ -3,8 +3,7 @@ title: "Brazil High Risk Cohort"
 excerpt: "BHRC"
 sitemap: false
 layout: single
-permalink: /docs/BHRC
-background: https://github.com/ReproBrainChart/ReproBrainChart.github.io/blob/master/assets/BigBrain.png?raw=true 
+permalink: /docs/BHRC 
 ---
 
 ## About the dataset: 
