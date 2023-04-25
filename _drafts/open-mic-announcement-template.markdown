@@ -16,3 +16,8 @@ Here attach the link to the place where session takes place.
 ##### The abstract
 
 Text of the abstract will be here. It may be also as a short summary.
+
+In the end, you may include further reading.
+
+Further reading:
+* [Link text](https://linkadre.ss)
