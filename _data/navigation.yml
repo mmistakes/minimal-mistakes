@@ -1,6 +1,5 @@
 # main links
-main:
-sidebar: 
+sidebar-sample:
   - title: "Data and Derivatives"
     children:
       - title: "PACCT"
