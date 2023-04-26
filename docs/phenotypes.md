@@ -8,6 +8,7 @@ sidebar:
   nav: sidebar
 ---
 | Participant | Pheno 1 | Pheno 2 |  
+| ------------- | ---------- | ------- |
 | Participant | Pheno 1 | Pheno 2 |  
 
 
