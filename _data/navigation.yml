@@ -1,6 +1,6 @@
 main:
 - title: <font size="6"><p style="color:green;"> Get data </p> </font>
-    url: /docs/get_data
+  url: /docs/get_data
 sidebar:
   - title: "Home"
     url: https://reprobrainchart.github.io/
