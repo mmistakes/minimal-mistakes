@@ -1,5 +1,6 @@
 # main links
 main:
+sidebar: 
   - title: "Data and Derivatives"
     children:
       - title: "PACCT"
