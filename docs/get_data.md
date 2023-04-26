@@ -10,4 +10,4 @@ sidebar:
 
 ### Information about how to get data
 - For each study
-- Figure out how to make this tab's font green 
+
