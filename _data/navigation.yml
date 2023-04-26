@@ -37,7 +37,7 @@ sidebar:
     url: /docs/contribute
   - title: "Publications"
     url: /docs/publications
-  - title: <font size="12"><p style="color:green;"> Get data </p> </font>
+  - title: <font size="6"><p style="color:green;"> Get data </p> </font>
     url: /docs/get_data
    
     
