@@ -1,9 +1,7 @@
 ---
-title: "(Re)using EU controlled vocabularies to enrich Semantic Governemnt Vocabulary"
+title: "(Re)using EU controlled vocabularies to enrich Semantic Government Vocabulary"
 categories: [Open Mic Announcement, Open Mic]
 ---
-
-<!-- Naming convention: post MUST be named beginning with YEAR-MM-DD-title.MARKDOWN. Create a COPY of this file in _posts and rename it according to the convention. The date is not date of presentation, but date of publication of the announcement. The title in human readable form is put in the quotes to the title parameter in front matter  -->
 
 The Open mic session starts on Friday 28th April 2023 at [this link](https://meet.jit.si/open-mic-kbss). The speaker [Michal Med](https://kbss.felk.cvut.cz/web/team#michal-med) analyses Controlled vocabularies and models provided and published by the Publication Office of the European Union in the context of enrichment or domain anchoring of Semantic Government Vocabulary (SGoV).
 
