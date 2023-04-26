@@ -21,9 +21,10 @@ sidebar:
     url: /docs/demographics
   - title: "Phenotypes"
     url: /docs/phenotypes
-  - title: "Imaging"
-    url: /docs/imaging
-        children:
+  - title: "Scanning and Processing"
+    children:
+      - title: "Imaging"
+        url: /docs/imaging
       - title: "fMRIPrep"
         url: /docs/fMRIPrep
       - title: "XCP"
