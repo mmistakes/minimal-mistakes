@@ -1,17 +1,13 @@
 # main links
 main:
-  - title: "NKI"
-    url: /docs/NKI
-  - title: "PNC"
-    url: /docs/PNC
-  - title: "HBN"
-    url: /docs/HBN
-  - title: "PACCT"
-    url: /docs/PACCT
-  - title: "BHRC"
-    url: /docs/BHRC
-  - title: "dCCNP"
-    url: /docs/dCCNP
-  - title: "HCPD"
-    url: /docs/HCPD
+  - title: "Data and Derivatives"
+    children:
+      - title: "PACCT"
+        url: /docs/PACCT
+      - title: "Child Page A2"
+        url: /
+      - title: "Child Page A3"
+        url: /
+      - title: "Child Page A4"
+        url: /
 
