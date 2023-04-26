@@ -1,5 +1,5 @@
 main:
-- title: <font size="6"><p style="color:green;"> Get data </p> </font>
+- title: <font size="6"><p style="color:green;"> GET DATA </p> </font>
   url: /docs/get_data
 sidebar:
   - title: "Home"
