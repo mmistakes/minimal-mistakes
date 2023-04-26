@@ -51,6 +51,17 @@ Kvasi, the Atos Quantum Learning Machine, is a quantum computing simulator with 
 
 Other quantum resources will continuously be added to the FiQCI infrastructure.
 
+## Scientific and Technical Advisory Group 
+
+The Scientific and Technical Advisory Group (STAG) provides input for the operation of the infrastructure. The current (2023) members of the STAG are:
+
+* Dr. Valeria Bartsch, Fraunhofer Institute for Industrial Mathematics, Germany
+* Dr. Alba Cervera Lierta, Barcelona Supercomputing Center (BSC), Spain
+* Prof. Tommi Mikkonen, University of Jyväskylä, Finland
+* Prof. Martin Schulz, Technical University of Munich, Germany
+* Prof. Göran Wendin, Chalmers University of Technology, Sweden
+
+
 ## Supported by
 
 {% include gallery id="funders_gallery" %}
