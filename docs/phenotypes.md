@@ -1,6 +1,6 @@
 ---
-title: "Phenotypes"
-excerpt: "Phenotypes"
+title: "Psychiatric Phenotyping"
+excerpt: "Psychiatric Phenotyping"
 sitemap: false
 layout: single
 permalink: /docs/phenotypes

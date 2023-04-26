@@ -1,9 +1,9 @@
 ---
-title: "Demographics"
-excerpt: "Demographics"
+title: "Sample Characteristics"
+excerpt: "Sample Characteristics"
 sitemap: false
 layout: single
-permalink: /docs/demographics
+permalink: /docs/sample_characteristics
 sidebar: 
   nav: sidebar
 ---
