@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+locale                   : "ko-KR"
+title                    : "GroovyCat"
+title_separator          : "|"
+subtitle                 : "Always start slowly" # site tagline that appears below site title in masthead
 name                     : "GroovyCat"
-description              : "An amazing website."
+description              : "그루비캣의 IT 및 잡다 블로그입니다!!"
 url                      : "https://GroovyCat.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "GroovyCat/GroovyCat.github.io"
@@ -106,13 +106,13 @@ analytics:
 author:
   name             : "GroovyCat"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am person."
-  location         : "Korea"
-  email            : "kodeep11@gmail.cim"
+  bio              : "그루비캣의 블로그"
+  location         : "South Korea"
+  email            : "kodeep11@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "kodeep11@email.com"
+      # url: "kodeep11@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
