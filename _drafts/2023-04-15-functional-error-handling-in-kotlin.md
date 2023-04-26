@@ -254,7 +254,7 @@ public inline fun <T, R> T.let(block: (T) -> R): R {
 }
 ```
 
-The `let` function takes a lambda function as input, applying it to the receiver type, as the `map` function (ed., [contracts](https://kotlinlang.org/docs/whatsnew13.html#contracts) is a powerful tool of the language to give the compiler some hints).
+The `let` function takes a lambda function as input, applying it to the receiver type, and returning the result, as the `map` function (ed., [contracts](https://kotlinlang.org/docs/whatsnew13.html#contracts) is a powerful tool of the language to give the compiler some hints).
 
 To build an example, let's say that the salary of our jobs is in USD, and we want to convert it to EUR. We need a new service to do that:
 
@@ -282,7 +282,18 @@ fun isAppleJob(id: JobId): Boolean =
     jobs.findById(id)?.takeIf { it.company.name == "Apple" } != null
 ```
 
-As we can see, we used the `takeIf` in association with the `?.` operator to filter the nullable value. The `takeIf` receives a lambda with receiver as a parameter, where the receiver is the original type (not the nullable type).
+As we can see, we used the `takeIf` in association with the `?.` operator to filter the nullable value. The `takeIf` is an extension function that receives a lambda predicate as a parameter and applies the lambda to the receiver type (not the nullable type):
+
+```kotlin
+// Kotlin SDK
+@OptIn(ExperimentalContracts::class)
+public inline fun <T> T.takeIf(predicate: (T) -> Boolean): T? {
+    contract {
+        callsInPlace(predicate, InvocationKind.EXACTLY_ONCE)
+    }
+    return if (predicate(this)) this else null
+}
+```
 
 Now, we can change the `main` method to use the new function:
 
@@ -319,7 +330,7 @@ fun sumSalaries(jobId1: JobId, jobId2: JobId): Double? {
 
 To overcome the above problem, we can use some sweet functionalities provided by the Kotlin Arrow library. We already imported the dependency from Arrow in the setup section, so we can use it in our code.
 
-The Arrow library provides a lot of functional programming constructs. In detail, it provides some form of monadic list-comprehension (in Scala, it's called _for-comprehension_) that allows us to write functional code more imperatively and declaratively and avoid the nested calls.
+The Arrow library provides a lot of functional programming constructs. In detail, **it provides some form of monadic list-comprehension** (in Scala, it's called _for-comprehension_) that allows us to write functional code more imperatively and declaratively and avoid the nested calls.
 
 For nullable type, Arrow offers the `nullable` DSL. We can access helpful functions inside the DSL, such as the `ensureNotNull` function and the `bind` extension function. Let's rewrite the `sumSalaries` function using the `nullable` DSL, adding a few logs that we'll use to understand what's going on:
 
@@ -335,7 +346,7 @@ fun sumSalaries2(jobId1: JobId, jobId2: JobId): Double? = nullable.eager {
 }
 ```
 
-As we can see, the two functions extract the value from the nullable type. If the value is `null`, then the `nullable.eager` block returns `null` immediately. Here, we use the `eager` function, which accepts a not-suspendable function. We can use the `nullable` DSL directly to use a suspendable function.
+As we can see, the two functions extract the value from the nullable type. If the value is `null`, then the `nullable.eager` block returns `null` immediately. Here, we use the `eager` function, which accepts a not-suspendable function. We can use the `nullable` DSL directly to use a suspendable function (in the upcoming version 2.0 of Arrow, there will be only a single `nullable` DSL managing both cases).
 
 We can give the function a job id that doesn't exist, and then we can check its behavior:
 
@@ -358,7 +369,61 @@ The sum of the salaries using 'sumSalaries' is 0.0
 
 As we might expect, the function returns `null` immediately after searching for the `JobId(42)` returns `null`.
 
-Both the `nullable` and the `nullable.eager` DSL have a scope as the receiver, respectively an `arrow.core.continuations.NullableEagerEffectScope`and an `arrow.core.continuations.NullableEffectScope`. The library defines the `ensureNotNull` and the `bind` extension functions on these scopes. The `bind` function is just a wrapper to the same function defined in the `Optional` type that we'll see in the next section.
+Both the `nullable` and the `nullable.eager` DSL have a scope as the receiver, respectively an `arrow.core.continuations.NullableEagerEffectScope`and an `arrow.core.continuations.NullableEffectScope`:
+
+```kotlin
+// Arrow SDK
+public object nullable {
+  public inline fun <A> eager(crossinline f: suspend NullableEagerEffectScope.() -> A): A? =
+    // Omissis
+
+  public suspend inline operator fun <A> invoke(crossinline f: suspend NullableEffectScope.() -> A): A? =
+    // Omissis
+}
+```
+
+The function `ensureNotNull` is an extension function defined on the scope `NullableEagerEffectScope` that calls the same function defined on the scope `EagerEffectScope`, from which it inherits:
+
+```kotlin
+// Arrow SDK
+@OptIn(ExperimentalContracts::class)
+public suspend fun <B> NullableEffectScope.ensureNotNull(value: B?): B {
+    contract { returns() implies (value != null) }
+    return ensureNotNull(value) { null }
+}
+
+@OptIn(ExperimentalContracts::class)
+public suspend fun <R, B : Any> EagerEffectScope<R>.ensureNotNull(value: B?, shift: () -> R): B {
+    contract { returns() implies (value != null) }
+    return value ?: shift(shift())
+}
+```
+
+The `shift` function basically short-circuits the execution of the effect that calls it. In the case of the `NullableEffectScope` effect, returning `null` immediately.
+
+
+The `bind` is declared as a member extension function in the `NullableEagerEffectScope` class, making it available only inside the scope created using an object of type `NullableEagerEffectScope`:
+
+```kotlin
+// Arrow SDK
+public value class NullableEagerEffectScope(/* Omissis */): EagerEffectScope<Nothing?> {
+    
+    // Omissis...
+    
+    public suspend fun <B> Option<B>.bind(): B =
+            bind { null }
+
+    @OptIn(ExperimentalContracts::class)
+    public suspend fun <B> B?.bind(): B {
+        contract { returns() implies (this@bind != null) }
+        return this ?: shift(null)
+    }
+
+    // Omissis...
+} 
+```
+
+In Kotlin, we said that the `NullableEagerEffectScope` is the **dispatch receiver** of the `bind` function, whereas the `B?` type is the **extension receiver**. In reality, the `bind` function is just a wrapper to the same function defined in the `Option` type that we'll see in the next section.
 
 Although nullable types offer a reasonable degree of compositionality and full support by the Kotlin language, there are some cases when you can't use it to handle errors. There are some domains where the `null` value is valid, and we can't use it to represent an error. Other times, we need to work with some external libraries that don't support nullable types, such as RxJava or the project Reactor.
 
