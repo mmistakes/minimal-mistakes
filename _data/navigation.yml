@@ -1,13 +1,20 @@
 # main links
 sidebar-sample:
-  - title: "Data and Derivatives"
+  - title: "Datasets"
     children:
       - title: "PACCT"
         url: /docs/PACCT
-      - title: "Child Page A2"
-        url: /
-      - title: "Child Page A3"
-        url: /
-      - title: "Child Page A4"
-        url: /
-
+      - title: "dCCNP"
+        url: /docs/dCCNP
+      - title: "HBN"
+        url: /docs/HBN
+      - title: "HBRC"
+        url: /docs/HBRC
+      - title: "HCPD"
+        url: /docs/HCPD
+      - title: "NKI"
+        url: /docs/NKI
+      - title: "PNC"
+        url: /docs/PNC
+        
+    
