@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Vera 3 Mathe",
-    "title": "Vera 3 Mathe",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=ODc2bmpwOWZwcTQ2cWtqaG9oNXNzYm0wMDggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2023-04-25",
-      "date_time": null
-    },
-    "end": {
-      "date": "2023-04-26",
-      "date_time": null
-    },
-    "created": "2023-03-22T05:59:15.000Z",
-    "updated": "2023-03-22T05:59:15.536Z"
-  },
-  {
-    "image_path": null,
     "alt": "Vera 3 De",
     "title": "Vera 3 De",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2023-02-11T08:32:15.000Z",
     "updated": "2023-02-11T08:32:15.893Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Klassenfahrt 5b",
+    "title": "Klassenfahrt 5b",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Mm8zbGhvb2djOWZjcjJ1a2llbGNsOGt0bWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2023-06-05",
+      "date_time": null
+    },
+    "end": {
+      "date": "2023-06-10",
+      "date_time": null
+    },
+    "created": "2023-03-22T06:01:53.000Z",
+    "updated": "2023-03-22T06:01:53.447Z"
   }
 ]
