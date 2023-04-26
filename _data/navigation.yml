@@ -1,5 +1,4 @@
-# main links
-sidebar-sample:
+sidebar:
   - title: "Datasets"
     children:
       - title: "PACCT"
