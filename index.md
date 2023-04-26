@@ -1,5 +1,6 @@
 ---
 layout: home
+title: "Reproducible Brain Charts"
 author_profile: false
 sidebar:
   nav: sidebar
