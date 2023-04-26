@@ -18,36 +18,23 @@ sidebar:
       - title: "PNC"
         url: /docs/PNC
   - title: "Demographics"
-    children:
-      - title: "PACCT"
-        url: /docs/PACCTDemo
-      - title: "dCCNP"
-        url: /docs/dCCNPDemo
-      - title: "HBN"
-        url: /docs/HBNDemo
-      - title: "BHRC"
-        url: /docs/BHRCDemo
-      - title: "HCPD"
-        url: /docs/HCPDDemo
-      - title: "NKI"
-        url: /docs/NKIDemo
-      - title: "PNC"
-        url: /docs/PNCDemo
+    url: /docs/demographics
   - title: "Phenotypes"
-    children:
-      - title: "PACCT"
-        url: /docs/PACCTPheno
-      - title: "dCCNP"
-        url: /docs/dCCNPPheno
-      - title: "HBN"
-        url: /docs/HBNPheno
-      - title: "BHRC"
-        url: /docs/BHRCPheno
-      - title: "HCPD"
-        url: /docs/HCPDPheno
-      - title: "NKI"
-        url: /docs/NKIPheno
-      - title: "PNC"
-        url: /docs/PNCPheno
-        
+    url: /docs/phenotypes
+  - title: "Imaging"
+    url: /docs/imaging
+        children:
+      - title: "fMRIPrep"
+        url: /docs/fMRIPrep
+      - title: "XCP"
+        url: /docs/XCP
+  - title: "Contributors"
+    url: /docs/contributors
+  - title: "Contribute"
+    url: /docs/contribute
+  - title: "Publications"
+    url: /docs/publications
+  - title: "Get data"
+    url: /docs/get_data
+   
     
