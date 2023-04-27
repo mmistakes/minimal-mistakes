@@ -9,6 +9,8 @@ toc: true
 toc_label: "In this article"
 ---
 
+_This article is brought to you by [Herbert Kateu](https://github.com/hkateu), a new contributor. He got started after applying for the fresh new Technical Writer position at our new [Job Board](https://jobs.rockthejvm.com/)!_
+
 ## 1. Introduction
 
 With the growing number of cyber-attacks ever increasing, there's a growing need for security in the applications we build.
