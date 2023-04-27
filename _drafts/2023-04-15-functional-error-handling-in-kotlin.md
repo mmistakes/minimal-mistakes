@@ -652,7 +652,7 @@ fun getSalaryGapWithMax2(jobId: JobId): Option<Double> = option.eager {
 }
 ```
 
-Again, inside the DSL, the `bind` function is available. If you remember from the previous section, the  `bind` function is defined as an extension function of the `Option` type. It extracts the value from the `Option` if it is a `Some` value. Otherwise, it eagerly returns `None` to the whole DSL:
+Again, inside the DSL, the `bind` function is available. If you remember from the previous section, the  `bind` function is defined as a member extension function of the `EagerEffectScope` on the `Option` type. It extracts the value from the `Option` if it is a `Some` value. Otherwise, it eagerly returns `None` to the whole DSL:
 
 ```kotlin
 // Arrow SDK
@@ -736,10 +736,11 @@ The salary gap between JobId(value=42) and the max salary is 0.0
 
 ## 5. Conclusions
 
-This article introduced the meaning of functional error handling in Kotlin. We started showing why we shouldn't rely on exceptions to handle errors. Then we introduced two strategies to handling errors that forget the cause of errors: Kotlin nullable types and the Arrow `Option` type. Moreover, we saw how the Arrow library provides useful DSL to work with both nullable types and the `Option` type. In the next part of this series, we will see different strategies that allow us to propagate the cause of errors, such as the Kotlin `Result<T>` type and the Arrow `Either<L, R>` type.
+This article introduced the meaning of functional error handling in Kotlin. We started showing why we shouldn't rely on exceptions to handle errors. Then, we introduced two strategies to handling errors that forget the cause of errors: Kotlin nullable types and the Arrow `Option` type. Moreover, we saw how the Arrow library provides useful DSL to work with both nullable types and the `Option` type. In the next part of this series, we will see different strategies that allow us to propagate the cause of errors, such as the Kotlin `Result<T>` type and the Arrow `Either<L, R>` type.
 
 ## 6. Appendix: Maven Configuration
 
+We give you the maven configuration we used during the examples. Here is the `pom.xml` file:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
