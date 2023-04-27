@@ -28,11 +28,13 @@ jobs:
     - name: Commit changes
       run: |
         git add .
-        git commit -m "Added file with user name"
+        git config --global user.email "${{ github.event.sender.email }}"
+        git config --global user.name "${{ github.event.sender.login }}"
+        git commit -m "[New] Open mic announcement for ${{ github.event.inputs.open_mic_session_date }}"
     - name: Create pull request
       uses: peter-evans/create-pull-request@v3
       with:
-        title: '[New] Open mic announcement for ${{ github.event.inputs.open_mic_session_date }}'
+        title: 'Open mic announcement for ${{ github.event.inputs.open_mic_session_date }}'
         commit-message: 'Open-mic announcement for "${{ github.event.inputs.open_mic_session_title }}" that will be run at ${{ github.event.inputs.open_mic_session_date }}.'
         branch: 'open-mic-session-${{ github.event.inputs.open_mic_session_date }}'
         base: 'main'
