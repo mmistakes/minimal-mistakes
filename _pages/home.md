@@ -8,6 +8,8 @@ header:
   actions:
     - label: "<i class='fas fa-download'></i> Download Resume"
       url: "https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0"
+    - label: "<i class='fa fa-external-link' aria-hidden='true'></i> Download Resume"
+      url: "https://app.powerbi.com/view?r=eyJrIjoiZDA1ZTljYTItMjdkMy00YmY3LWI1ZGUtN2EwM2IwZTg3ZWVhIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"      
 excerpt: >
   A  two-column Jekyll themeeeee. Perfect for building personal sites, blogs, and portfolios.<br />
   <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0">Latest release v4.24.0</a></small>
