@@ -306,6 +306,7 @@ defaults:
       layout: single
       author_profile: false
       share: true
+      author_profile: true
 
 
 
