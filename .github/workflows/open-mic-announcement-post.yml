@@ -1,4 +1,4 @@
-name: Open mic summary post
+name: Post open-mic announcement
 
 on:
   workflow_dispatch:
@@ -38,4 +38,4 @@ jobs:
         title: 'Open mic announcement for ${{ github.event.inputs.open_mic_session_date }}'
         commit-message: 'Open-mic announcement for "${{ github.event.inputs.open_mic_session_title }}" that will be run at ${{ github.event.inputs.open_mic_session_date }}.'
         branch: 'open-mic-session-${{ github.event.inputs.open_mic_session_date }}'
-        base: 'main'
+        base: 'master'
