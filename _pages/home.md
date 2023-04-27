@@ -16,7 +16,7 @@ feature_row:
     alt: "customizable"
     title: "Super customizable"
     excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
-    url: "_portfolio/ginger-gulp-identity.md"
+    url: "/portfolio/first"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/mm-responsive-feature.png
@@ -30,21 +30,21 @@ feature_row:
     alt: "100% free"
     title: "100% free"
     excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-    url: "/docs/license/"
+    url: "/portfolio/first"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/mm-free-feature.png
     alt: "100% free"
     title: "100% free"
     excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-    url: "/docs/license/"
+    url: "/portfolio/first"
     btn_class: "btn--primary"
     btn_label: "Learn more" 
   - image_path: /assets/images/mm-free-feature.png
     alt: "100% free"
     title: "100% free"
     excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-    url: "/docs/license/"
+    url: "/portfolio/first"
     btn_class: "btn--primary"
     btn_label: "Learn more"               
   - image_path: /assets/images/mm-free-feature.png
