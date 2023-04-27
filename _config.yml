@@ -316,9 +316,6 @@ collections:
 
 
 
-
-
-
 defaults:
   # _portfolio
   - scope:
