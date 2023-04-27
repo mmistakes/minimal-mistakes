@@ -7,16 +7,17 @@ header:
   overlay_image: /assets/images/mm-home-page-feature.jpg
   actions:
     - label: "<i class='fas fa-download'></i> Download Resume"
-      url: "https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0"
+      url: "https://onedrive.live.com/?authkey=%21AJq%5Ft%5F5sjSjCzdc&id=CEA95E92A534446E%217167&cid=CEA95E92A534446E&parId=root&parQt=sharedby&o=OneUp"
 excerpt: >
-  A  two-column Jekyll themeeeee. Perfect for building personal sites, blogs, and portfolios.<br />
-  <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0">Latest release v4.24.0</a></small>
+  Collection of Projects>
 feature_row:
   - image_path: /assets/images/mm-customizable-feature.png
     alt: "customizable"
     title: "Super customizable"
     excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
     url: "/portfolio/first"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/mm-responsive-feature.png
