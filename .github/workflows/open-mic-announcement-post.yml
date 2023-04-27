@@ -17,7 +17,7 @@ jobs:
     - name: Checkout repository with new branch
       uses: actions/checkout@v2
       with:
-        ref: "refs/heads/open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}"
+        ref: "open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}"
         fetch-depth: 0
     - name: Create announcement post from template
       run: |
