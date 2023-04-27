@@ -1,7 +1,7 @@
 ---
 title: "An introduction to SPipes modules and their usage"
 categories: [Open Mic Session, Open Mic]
-excerpt: "Data integration is one of the common problems occurring in modern distributed applications. Data integration is a problem where data needs to be integrated across multiple applications with their own data storage that may have different schemas."
+excerpt: "SPipes Modules is a collection of specific module types used in SPipes, a tool for managing semantic pipelines defined in RDF. These modules are stateless transformations of input data that can be instantiated in a pipeline. They are implemented in Java and defined in RDF."
 ---
 
 On the 17th March, speaker [Matěj Kulich](https://kbss.felk.cvut.cz/web/team#matěj-kulich) held the presentation about the SPipes modules. It is a follow-up presentation on [SPipes](https://kbss.felk.cvut.cz/web/open-mic-pipeline) given in November by [Miroslav Blaško](https://kbss.felk.cvut.cz/web/team#miroslav-blaško), going into more details regarding SPipes modules.
