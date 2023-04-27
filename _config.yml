@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "대영 블로그"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "안드로이드 개발자를 꿈꾸는 "
 name                     : "Your Name"
 description              : "An amazing website."
 url                      : "https://DaeYoungee.github.io"
