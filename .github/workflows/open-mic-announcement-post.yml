@@ -1,0 +1,36 @@
+name: Open mic summary post
+
+on:
+  workflow_dispatch:
+    inputs:
+      open_mic_session_date:
+        description: 'Date of open-mic session in YYYY-MM-DD format (e.g. 2023-01-31)'
+        required: true
+      open_mic_session_title:
+        description: 'Title of open-mic session'
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository with new branch
+      uses: actions/checkout@v2
+      with:
+        ref: "refs/heads/open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}"
+        fetch-depth: 0
+    - name: Create announcement post from template
+      run: |
+        TITLE_ID=$(echo ${{ github.event.inputs.open_mic_session_title }} | sed 's/ /-/g' | tr [A-Z] [a-z])
+        cp kbss-website/_drafts/open-mic-announcement-template.markdown  kbss-website/_drafts/${{ github.event.inputs.open_mic_session_date }}-${TITLE_ID}-announcement.markdown
+    - name: Commit changes
+      run: |
+        git add .
+        git commit -m "Added file with user name"
+    - name: Create pull request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        title: '[New] Open mic announcement for ${{ github.event.inputs.open_mic_session_date }}'
+        commit-message: 'Open-mic announcement for "${{ github.event.inputs.open_mic_session_title }}" that will be run at ${{ github.event.inputs.open_mic_session_date }}.'
+        branch: 'open-mic-session-${{ github.event.inputs.open_mic_session_date }}'
+        base: 'main'
