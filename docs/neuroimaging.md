@@ -1,5 +1,5 @@
 ---
-title: "Neuromaging"
+title: "Neuroimaging"
 excerpt: "Neuroimaging"
 sitemap: false
 layout: single
