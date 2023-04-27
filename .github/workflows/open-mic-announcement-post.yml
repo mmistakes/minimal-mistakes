@@ -31,7 +31,7 @@ jobs:
         git config --global user.email "${{ github.event.sender.email }}"
         git config --global user.name "${{ github.event.sender.login }}"
         git commit -m "[New] Open mic announcement for ${{ github.event.inputs.open_mic_session_date }}"
-        git push
+        git push --set-upstream origin open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}
     - name: Create pull request
       uses: peter-evans/create-pull-request@v3
       with:
