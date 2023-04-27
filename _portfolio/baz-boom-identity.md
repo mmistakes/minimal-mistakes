@@ -24,6 +24,8 @@ gallery:
     alt: "placeholder image 3"
 ---
 
+<iframe title="E-commerce Case Study" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiNmE4NDk1MzMtNjA5YS00NzA2LWJiZjgtMTMxZThjMGEzZTA0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+
 Pictures of Goats section West Seattle Blog dingbat newspaper rubber cement Google+ newsroom cafe news.me rubber cement, Ushahidi Kindle Single syndicated Instagram HuffPo community mthomps, Mozilla iPhone app should isn't a business model curmudgeon Snarkmarket Tim Carmody production of innocence. Fuego tweets community DocumentCloud metered model Gardening & War section YouTube social media SEO information overload analytics Aron Pilhofer Journal Register data visualization WikiLeaks Groupon, collaboration Steve Jobs we need a Nate Silver AP What Would Google Do the power of the press belongs to the person who owns one Clay Shirky curmudgeon Voice of San Diego free as in beer dead trees the notion of the public Lucius Nieman.
 
 {% include gallery caption="This is a sample gallery to go along with this case study." %}
