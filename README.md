@@ -5,6 +5,8 @@ Czech Technical University in Prague.
 
 It is based on the [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/).
 
+GitHub Pages deployment of the website is available at https://kbss-cvut.github.io/kbss-website/.
+
 ## Deploy
 
 There are two ways of deploying the website.
@@ -21,7 +23,7 @@ There is a Dockerfile to simplify deployment. So the steps to get the website wo
 
 `docker run --volume="$PWD:/srv/jekyll" -p 4000:4000 -t kbss-website`
 
-3. The website is now available at `http://localhost:4000/kbss-website`
+3. The website is now available at `http://0.0.0.0:4000/kbss-website`
 
 
 ### Docker compose
