@@ -39,7 +39,7 @@ There is a Dockerfile to simplify deployment. So the steps to get the website wo
 
 `docker-compose up -d`
 
-3. The website is now available at `http://localhost:4000/kbss-website`
+3. The website is now available at `http://0.0.0.0:4000/kbss-website`
 
 ### Without Docker
 
