@@ -26,9 +26,7 @@ gallery:
 
 Pictures of Goats section West Seattle Blog dingbat
 
-https://github.com/bhanu-thakur/friendly-sniffle/blob/main/SQL/Customer%20Revenue%20Data%20Analysis/README.md
-
-<iframe title="E-commerce Case Study" width="1024" height="612" src="https://onedrive.live.com/view.aspx?resid=CEA95E92A534446E!1277&ithint=file%2cxlsx&authkey=!ALtdbBkuIvT3gAw" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="E-commerce Case Study" width="1024" height="612" src="https://github.com/bhanu-thakur/friendly-sniffle/blob/main/SQL/Customer%20Revenue%20Data%20Analysis/README.md" frameborder="0" allowFullScreen="true"></iframe>
 
 Pictures of Goats section West Seattle Blog dingbat newspaper rubber cement Google+ newsroom cafe news.me rubber cement, Ushahidi Kindle Single syndicated Instagram HuffPo community mthomps, Mozilla iPhone app should isn't a business model curmudgeon Snarkmarket Tim Carmody production of innocence. Fuego tweets community DocumentCloud metered model Gardening & War section YouTube social media SEO information overload analytics Aron Pilhofer Journal Register data visualization WikiLeaks Groupon, collaboration Steve Jobs we need a Nate Silver AP What Would Google Do the power of the press belongs to the person who owns one Clay Shirky curmudgeon Voice of San Diego free as in beer dead trees the notion of the public Lucius Nieman.
 
