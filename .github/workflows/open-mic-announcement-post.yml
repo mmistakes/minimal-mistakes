@@ -14,11 +14,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout repository with new branch
+    - name: Checkout repository
       uses: actions/checkout@v2
       with:
-        ref: "open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}"
         fetch-depth: 0
+    - name: Checkout new branch
+      run: |
+        git checkout -B open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}
     - name: Create announcement post from template
       run: |
         TITLE_ID=$(echo ${{ github.event.inputs.open_mic_session_title }} | sed 's/ /-/g' | tr [A-Z] [a-z])
