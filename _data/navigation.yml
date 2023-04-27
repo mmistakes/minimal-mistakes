@@ -2,8 +2,8 @@
 main:
   - title: "Home"
     url: /
-  - title: "Contact"
-    url: "https://www.linkedin.com/in/-bhanu-thakur/""
+  - title: "About"
+    url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Sample Posts"
     url: /year-archive/
   - title: "Sample Collections"
