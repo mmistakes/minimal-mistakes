@@ -1,5 +1,4 @@
 ---
-layout: splash
 title: "Baz Boom Identity"
 excerpt: "Baz Boom design system including logo mark, website design, and branding applications."
 permalink: /portfolio/second
@@ -25,7 +24,7 @@ gallery:
     alt: "placeholder image 3"
 ---
 
-<iframe title="E-commerce Case Study" width="1024" height="612" src="https://1drv.ms/x/s!Am5ENKWSXqnOiX27XWwZLiL094AM?e=7zS5mI" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="E-commerce Case Study" width="1024" height="612" src="https://onedrive.live.com/view.aspx?resid=CEA95E92A534446E!1277&ithint=file%2cxlsx&authkey=!ALtdbBkuIvT3gAw" frameborder="0" allowFullScreen="true"></iframe>
 
 Pictures of Goats section West Seattle Blog dingbat newspaper rubber cement Google+ newsroom cafe news.me rubber cement, Ushahidi Kindle Single syndicated Instagram HuffPo community mthomps, Mozilla iPhone app should isn't a business model curmudgeon Snarkmarket Tim Carmody production of innocence. Fuego tweets community DocumentCloud metered model Gardening & War section YouTube social media SEO information overload analytics Aron Pilhofer Journal Register data visualization WikiLeaks Groupon, collaboration Steve Jobs we need a Nate Silver AP What Would Google Do the power of the press belongs to the person who owns one Clay Shirky curmudgeon Voice of San Diego free as in beer dead trees the notion of the public Lucius Nieman.
 
