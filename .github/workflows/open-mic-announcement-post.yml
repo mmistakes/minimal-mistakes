@@ -24,6 +24,7 @@ jobs:
     - name: Create announcement post from template
       run: |
         TITLE_ID=$(echo ${{ github.event.inputs.open_mic_session_title }} | sed 's/ /-/g' | tr [A-Z] [a-z])
+        ls -l
         cp kbss-website/_drafts/open-mic-announcement-template.markdown  kbss-website/_drafts/${{ github.event.inputs.open_mic_session_date }}-${TITLE_ID}-announcement.markdown
     - name: Commit changes
       run: |
