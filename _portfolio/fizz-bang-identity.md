@@ -4,7 +4,7 @@ excerpt: "Baz Boom design system including logo mark, website design, and brandi
 permalink: /portfolio/second
 header:
 #   image: /assets/images/unsplash-gallery-image-1.jpg
-  teaser: assets/images/PowerBI.png
+  # teaser: assets/images/PowerBI.png
 sidebar:
   - title: "Role"
     image: http://placehold.it/350x250
