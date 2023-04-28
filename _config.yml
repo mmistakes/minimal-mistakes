@@ -291,6 +291,7 @@ defaults:
       comments: # true
       share: true
       related: true
+      sticky: true
   # _pages
   - scope:
       path: ""
@@ -298,6 +299,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      sticky: true
 
   # _portfolio
   - scope:
@@ -307,6 +309,7 @@ defaults:
       layout: single
       author_profile: false
       share: true
+      sticky: true
 
 
 
