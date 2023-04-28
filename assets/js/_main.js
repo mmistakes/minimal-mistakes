@@ -148,3 +148,17 @@ function detectmob() {
 if (detectmob()){
 top.location.href="portfolio";
 }
+
+
+
+function detectmob() {
+  if($(window).width() <= 800 || $(window).height() <= 600) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+if (detectmob()){
+  top.location.href = "portfolio";
+}
