@@ -2,7 +2,10 @@
 title: "Retail Analysis"
 excerpt: "Power BI Dashboard on Supermarket Dataset"
 permalink: /four
-classes: wide
+# classes: wide
+toc: true
+toc_label: "TOC"
+toc_sticky: true
 header:
   # image: /assets/images/unsplash-gallery-image-1.jpg
   teaser: assets/images/PowerBI/Retail_Dashboard.png
@@ -11,8 +14,8 @@ sidebar:
     image: /assets/images/Excel/Excel_Logo.png
     image_alt: "logo"
     text: " Text of Another"
-  - title: "In page Title 2 of Another"
-    text: "In pageText 2 of Another"
+  # - title: "In page Title 2 of Another"
+    # text: "In page Text 2 of Another"
 gallery:
   - url: assets/images/PowerBI/Retail_Dashboard.png
     image_path: assets/images/PowerBI/Retail_Dashboard.png
@@ -26,14 +29,17 @@ gallery:
 ---
 View Live Project on <a href="https://public.tableau.com/views/SuperstoreSalesOverviewDashboard_16817475061410/ExecOverview?:language=en-US&:display_count=n&:origin=viz_share_link">Tableau HERE</a>
 
-Heloooooooooooo
+## TOC 1
 
-![alt]({{ site.url }}{{ site.baseurl }}/assets/images/Excel.png)
+Hello TOC 1
 
-Heloooooooooooo
+![alt]({{ site.url }}{{ site.baseurl }}/assets/images/PowerBI/Retail_Dashboard.png)
+
+## TOC 2
+
+Hello TOC 1
 
 
-![alt]({{ site.url }}{{ site.baseurl }}/assets/images/Small_screenshot.png)
 
 Pictures of Goats section West Seattle Blog dingbat newspaper rubber cement Google+ newsroom cafe news.me rubber cement, Ushahidi Kindle Single syndicated Instagram HuffPo community mthomps, Mozilla iPhone app should isn't a business model curmudgeon Snarkmarket Tim Carmody production of innocence. Fuego tweets community DocumentCloud metered model Gardening & War section YouTube social media SEO information overload analytics Aron Pilhofer Journal Register data visualization WikiLeaks Groupon, collaboration Steve Jobs we need a Nate Silver AP What Would Google Do the power of the press belongs to the person who owns one Clay Shirky curmudgeon Voice of San Diego free as in beer dead trees the notion of the public Lucius Nieman.
 
