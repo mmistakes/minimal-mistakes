@@ -2,6 +2,7 @@
 title: "Retail Analysis"
 excerpt: "Power BI Dashboard on Supermarket Dataset"
 permalink: /another
+classes: wide
 header:
   # image: /assets/images/unsplash-gallery-image-1.jpg
   teaser: assets/images/Excel.png
