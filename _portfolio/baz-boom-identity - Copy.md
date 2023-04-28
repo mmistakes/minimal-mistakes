@@ -6,7 +6,7 @@ header:
   # image: /assets/images/unsplash-gallery-image-1.jpg
   teaser: assets/images/Excel.png
 sidebar:
-  - - title: "Title Sales Report"
+  - title: "Title Sales Report"
     # image: http://placehold.it/350x250
     # image_alt: "logo"
     text: "Text Sales Report"
