@@ -6,12 +6,12 @@ header:
 #   image: /assets/images/unsplash-gallery-image-1.jpg
   teaser: assets/images/Excel.png
 sidebar:
-  - title: "Role"
-    image: http://placehold.it/350x250
-    image_alt: "logo"
-    text: "Designer, Front-End Developer"
-  - title: "Responsibilities"
-    text: "Reuters try PR stupid commenters should isn't a business model"
+  - title: "Title Sales Report"
+    # image: http://placehold.it/350x250
+    # image_alt: "logo"
+    text: "Text Sales Report"
+  - title: "Title 2 Sales Report"
+    text: "Text 2 Sales Report"
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
     image_path: assets/images/unsplash-gallery-image-1-th.jpg
