@@ -7,3 +7,156 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+
+
+
+// #main {
+
+//     margin-left: 4em;
+//     margin-right: 0;
+//     padding-right: 0;
+// }
+
+
+
+// .wide {
+//     .page {
+//         // new added
+//         padding-left: 2em;
+//         padding-right: 0;
+//         }
+// }
+
+
+
+
+
+
+
+@media (min-width: 375px) {
+  
+    
+
+}
+  
+  
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 410px) {
+        
+    #scrolling_section {
+        width: 100%;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+        
+    #scrolling_section {
+        width: 100%;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    
+    #scrolling_section {
+        width: 100%;
+        }
+    #body_wrapper {
+        width: 90%
+    }
+
+    #main {
+
+        margin-left: 4em;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+    .wide {
+        .page {
+            // new added
+            padding-left: 2em;
+            padding-right: 0;
+            }
+    }
+
+    #main {
+
+        margin-left: 4em;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    
+}
+
+
+
+
+
+
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .wide {
+        .page {
+            // new added
+            padding-left: 2em;
+            padding-right: 0;
+            }
+    }
+    #main {
+
+        margin-left: 4em;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    
+}
+

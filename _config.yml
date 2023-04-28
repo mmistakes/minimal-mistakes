@@ -105,8 +105,8 @@ analytics:
 # Site Author
 author:
   name             : "Bhanu Thakur"
-  avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  avatar           : "assets/images/Profile/Profile_Picture.png"
+  # bio              : "I am an **amazing** personpersonpersonpersonpersonpersona."
   location         : "New Delhi"
   email            :
   links:
