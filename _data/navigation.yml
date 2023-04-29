@@ -1,7 +1,12 @@
 # main links
 main:
+  
   - title: "Home"
     url: /
+
+  - title: "Resume"
+    url: https://onedrive.live.com/?authkey=%21AJq%5Ft%5F5sjSjCzdc&id=CEA95E92A534446E%217167&cid=CEA95E92A534446E&parId=root&parQt=sharedby&o=OneUp
+  
   - title: "Contact"
     url: https://www.linkedin.com/in/-bhanu-thakur/
   # - title: "Sample Posts"
