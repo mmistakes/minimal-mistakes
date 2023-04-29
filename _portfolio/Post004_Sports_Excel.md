@@ -1,14 +1,14 @@
 ---
-title: "Consumer Complaints Analysis"
-excerpt: "Analysis of Complaint Resolution using Excel"
-permalink: /Consumer-Complaints-Analysis-two
+title: "Excel: Sports Data Analysis"
+excerpt: "Analysis of players in a Sports Dataset using Excel"
+permalink: /Sports-Analysis-Excel
 # classes: wide
 toc: true
 toc_label: "Contents"
 toc_sticky: true
 header:
   # image: /assets/images/unsplash-gallery-image-1.jpg
-  teaser: assets/images/PowerBI/Retail_Dashboard.png
+  teaser: assets/images/Excel/Teasers/Sports_Data/Teaser.png
 sidebar:
   - title: "In page upper Title of Another"
     image: /assets/images/Excel/Excel_Logo.png
@@ -30,9 +30,9 @@ gallery:
 
 ## Excel Workbook
 
-Live Excel Workbook (View Workbook in <a href="https://onedrive.live.com/view.aspx?resid=CEA95E92A534446E!1277&ithint=file%2cxlsx&authkey=!ALtdbBkuIvT3gAw"> New Tab</a>) :
+Live Excel Workbook (View Workbook in <a href="https://onedrive.live.com/view.aspx?resid=CEA95E92A534446E!1290&ithint=file%2cxlsx&authkey=!AImokmU1ZLtbdfw"> New Tab</a>) :
 
-<iframe title="E-commerce Case Study" width="745" height="430" src="https://onedrive.live.com/view.aspx?resid=CEA95E92A534446E!1277&ithint=file%2cxlsx&authkey=!ALtdbBkuIvT3gAw" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="E-commerce Case Study" width="745" height="430" src="https://onedrive.live.com/view.aspx?resid=CEA95E92A534446E!1290&ithint=file%2cxlsx&authkey=!AImokmU1ZLtbdfw" frameborder="0" allowFullScreen="true"></iframe>
 
 ## Gallery
 

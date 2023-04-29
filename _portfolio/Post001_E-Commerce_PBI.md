@@ -1,14 +1,14 @@
 ---
-title: "Retail Analysis"
-excerpt: "Power BI Dashboard on Supermarket Dataset"
-permalink: /Retail-Analysis
+title: "Power BI: Customer Behaviour Insights"
+excerpt: "Power BI Dashboard on an E-Commerce visitors Dataset"
+permalink: /Customers-E_Commerce-Power-BI
 # classes: wide
 toc: true
 toc_label: "Contents"
 toc_sticky: true
 header:
   # image: /assets/images/unsplash-gallery-image-1.jpg
-  teaser: assets/images/PowerBI/Retail_Dashboard.png
+  teaser: assets/images/PowerBI/Teasers/E-Commerce/Teaser.png
 sidebar:
   - title: "In page upper Title of Another"
     image: /assets/images/PowerBI/PowerBI_Logo.png

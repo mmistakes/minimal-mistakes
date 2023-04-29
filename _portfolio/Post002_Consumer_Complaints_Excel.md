@@ -1,14 +1,14 @@
 ---
-title: "Consumer Complaints Analysis"
+title: "Excel: Consumer Complaints Analysis"
 excerpt: "Analysis of Complaint Resolution using Excel"
-permalink: /Consumer-Complaints-Analysis
+permalink: /Consumer-Complaints-Analysis-Excel
 # classes: wide
 toc: true
 toc_label: "Contents"
 toc_sticky: true
 header:
   # image: /assets/images/unsplash-gallery-image-1.jpg
-  teaser: assets/images/PowerBI/Retail_Dashboard.png
+  teaser: assets/images/Excel/Teasers/Consumer_Complaints/Teaser.png
 sidebar:
   - title: "In page upper Title of Another"
     image: /assets/images/Excel/Excel_Logo.png
