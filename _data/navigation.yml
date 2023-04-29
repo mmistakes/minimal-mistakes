@@ -22,23 +22,11 @@ sidebar:
         url: /docs/PACCT
       - title: "PNC"
         url: /docs/PNC
-  - title: "Sample Characteristics"
-    url: /docs/sample_characteristics
-  - title: "Psychiatric Phenotyping"
-    url: /docs/phenotypes
-  - title: "Neuroimaging"
-    url: /docs/neuroimaging
-  - title: "Image Processing"
-    url: /docs/image_processing
-  - title: "Image Quality Assurance"
-    url: /docs/image_QA
-  - title: "Sample Construction"
-    url: /docs/sample_construction
-  - title: "Contributors"
-    url: /docs/contributors
-  - title: "Contribute"
-    url: /docs/contribute
-  - title: "Publications"
-    url: /docs/publications
+  - title: "The Sample"
+    url: /docs/sample
+  - title: "Imaging"
+    url: /docs/imaging
+  - title: About the RBC Community
+    url: /docs/community
    
     

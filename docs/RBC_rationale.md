@@ -7,3 +7,6 @@ permalink: /docs/RBCrationale
 sidebar: 
   nav: sidebar 
 ---
+
+
+#### Insert infographic
