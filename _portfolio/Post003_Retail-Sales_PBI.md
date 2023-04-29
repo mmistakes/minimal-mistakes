@@ -10,22 +10,24 @@ header:
   # image: /assets/images/unsplash-gallery-image-1.jpg
   teaser: assets/images/PowerBI/Teasers/Sales/Teaser.png
 sidebar:
-  - title: "In page upper Title of Another"
+  - title: "Retail Sales KPIs Dashboard"
     image: /assets/images/PowerBI/PowerBI_Logo.png
     image_alt: "logo"
-    text: " Text of Another"
+    text: " KPIs and detailed insights of fictional retail dataset."
   # - title: "In page Title 2 of Another"
     # text: "In page Text 2 of Another"
-gallery:
-  - url: assets/images/PowerBI/Retail_Dashboard.png
-    image_path: assets/images/PowerBI/Retail_Dashboard.png
-    alt: "placeholder image 1"
-  - url: assets/images/PowerBI/Retail_Dashboard.png
-    image_path: assets/images/PowerBI/Retail_Dashboard.png
-    alt: "placeholder image 2"
-  - url: assets/images/PowerBI/Retail_Dashboard.png
-    image_path: assets/images/PowerBI/Retail_Dashboard.png
-    alt: "placeholder image 3"
+
+
+# gallery:
+#   - url: assets/images/PowerBI/Retail_Dashboard.png
+#     image_path: assets/images/PowerBI/Retail_Dashboard.png
+#     alt: "placeholder image 1"
+#   - url: assets/images/PowerBI/Retail_Dashboard.png
+#     image_path: assets/images/PowerBI/Retail_Dashboard.png
+#     alt: "placeholder image 2"
+#   - url: assets/images/PowerBI/Retail_Dashboard.png
+#     image_path: assets/images/PowerBI/Retail_Dashboard.png
+#     alt: "placeholder image 3"
 ---
 
 ## Live Power BI Dashboard

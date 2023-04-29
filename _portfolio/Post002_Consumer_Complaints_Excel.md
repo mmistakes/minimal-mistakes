@@ -10,22 +10,24 @@ header:
   # image: /assets/images/unsplash-gallery-image-1.jpg
   teaser: assets/images/Excel/Teasers/Consumer_Complaints/Teaser.png
 sidebar:
-  - title: "In page upper Title of Another"
+  - title: "Complaints Analysis"
     image: /assets/images/Excel/Excel_Logo.png
     image_alt: "logo"
-    text: " Text of Another"
-  - title: "In page Title 2 of Another"
-    text: "In pageText 2 of Another"
-gallery:
-  - url: assets/images/PowerBI/Retail_Dashboard.png
-    image_path: assets/images/PowerBI/Retail_Dashboard.png
-    alt: "placeholder image 1"
-  - url: assets/images/PowerBI/Retail_Dashboard.png
-    image_path: assets/images/PowerBI/Retail_Dashboard.png
-    alt: "placeholder image 2"
-  - url: assets/images/PowerBI/Retail_Dashboard.png
-    image_path: assets/images/PowerBI/Retail_Dashboard.png
-    alt: "placeholder image 3"
+    text: " Dataset Containing consumer review ratings and resolution times."
+  # - title: "In page Title 2 of Another"
+  #   text: "In pageText 2 of Another"
+
+
+# gallery:
+#   - url: assets/images/PowerBI/Retail_Dashboard.png
+#     image_path: assets/images/PowerBI/Retail_Dashboard.png
+#     alt: "placeholder image 1"
+#   - url: assets/images/PowerBI/Retail_Dashboard.png
+#     image_path: assets/images/PowerBI/Retail_Dashboard.png
+#     alt: "placeholder image 2"
+#   - url: assets/images/PowerBI/Retail_Dashboard.png
+#     image_path: assets/images/PowerBI/Retail_Dashboard.png
+#     alt: "placeholder image 3"
 ---
 
 ## Excel Workbook
