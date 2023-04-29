@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "en-US"
 title                    : "Bhanu Thakur"
 title_separator          : "-"
-subtitle                 : Analytics Portfolio.
+subtitle                 : Data to Insights
 name                     : "Bhanu Thakur"
 description              : "Analytics Portfolio."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -106,9 +106,9 @@ analytics:
 author:
   name             : "Bhanu Thakur"
   avatar           : "assets/images/Profile/Profile_Picture.png"
-  bio              : "Completed Projects."
+  bio              : "Data into Insights"
   location         : "New Delhi"
-  email            :
+  email            : 
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"

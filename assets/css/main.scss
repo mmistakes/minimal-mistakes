@@ -37,7 +37,7 @@ search: false
 }
   
   
-
+// Motorola Edge 20 and smartphones
 @media (min-width: 410px) {
 
     .h-card {
@@ -45,7 +45,7 @@ search: false
     }
 
     .author__avatar img{
-        max-width: 3em;
+        max-width: 4.5em;
     }
     
     .author__content {
@@ -225,4 +225,3 @@ search: false
         max-height: fit-content;
     }
 }
-
