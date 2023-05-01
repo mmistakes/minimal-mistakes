@@ -4,10 +4,10 @@ date: 2023-04-27
 header:
     image: "/images/blog cover.jpg"
 tags: [kotlin]
-excerpt: "Whether we develop using an object-oriented or functional approach, we always have the problem of handling errors. Kotlin offers a lot of different methods to do it. Here, we'll focus on strategies that don't manage the cause of the error, i.e., nullable types and Arrow `Option` types."
+excerpt: "Whether we develop using an object-oriented or functional approach, we always have the problem of handling errors. Kotlin offers a lot of different methods to do it. Here, we'll focus on strategies that deal with the error without managing its cause, i.e., nullable types and Arrow Option types."
 ---
 
-The Kotlin language is a multi-paradigm, general-purpose programming language. Whether we develop using an object-oriented or functional approach, we always have the problem of handling errors. Kotlin offers a lot of different methods to handle errors. Still, this article will focus on the functional approaches and introduce the Arrow library. This article is the first part of a series. We'll focus on strategies that don't manage the cause of the error, i.e., nullable types and Arrow `Option` types. So, without further ado, let's get started.
+The Kotlin language is a multi-paradigm, general-purpose programming language. Whether we develop using an object-oriented or functional approach, we always have the problem of handling errors. Kotlin offers a lot of different methods to handle errors. Still, this article will focus on the functional approaches and introduce the Arrow library. This article is the first part of a series. We'll focus on strategies that deal with the error without managing its cause, i.e., nullable types and Arrow Option types. So, without further ado, let's get started.
 
 ## 1. Setup
 
@@ -183,7 +183,7 @@ fun retrieveSalary(id: JobId): Double
 
 We expect the method to take a job id as input and return a salary as a `Double`. No reference to the exception is present in the signature. **As developers, we want the compilers to help us avoid errors**. However, in this case, we're not aware that the method can throw an exception, and the compiler can not help us in any way. The only place we become aware of the exception is during runtime execution, which is a bit late.
 
-Somebody can say that the JVM also has checked exceptions and that we can use them to avoid the problem. However, **Kotlin doesn't have checked exceptions**. Let's try to act as it has them. If a method declares to throw a checked exception, the compiler will force us to handle it. But, **checked exceptions don't work well with higher-order functions**, which are fundamental to functional programming. In fact, if we want to use a higher-order function together with checked exceptions, we need to declare the exception in the signature of the lambda function, which is not feasible. Take the `map` function of any collection type:
+Somebody can say that the JVM also has checked exceptions and that we can use them to avoid the problem. However, **Kotlin doesn't have checked exceptions**. Let's try to act as if it has them. If a method declares to throw a checked exception, the compiler will force us to handle it. But, **checked exceptions don't work well with higher-order functions**, which are fundamental to functional programming. In fact, if we want to use a higher-order function together with checked exceptions, we need to declare the exception in the signature of the lambda function, which is not feasible. Take the `map` function of any collection type:
 
 ```kotlin
 fun <A, B> map(list: List<A>, f: (A) -> B): List<B>
@@ -260,7 +260,7 @@ To build an example, let's say that the salary of our jobs is in USD, and we wan
 
 ```kotlin
 class CurrencyConverter {
-    fun convertUsdToEur(amount: Double): Double = amout * 0.91
+    fun convertUsdToEur(amount: Double): Double = amount * 0.91
 }
 ```
 
