@@ -175,13 +175,7 @@ search: false
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-    .wide {
-        .page {
-            // new added
-            padding-left: 2em;
-            padding-right: 0;
-            }
-    }
+    
     #main {
 
         margin-left: 3em;
@@ -189,17 +183,29 @@ search: false
         padding-right: 0;
         max-width: 90%;
     }
+
+
+    .wide {
+        .page {
+            // new added
+            padding-left: 2em;
+            // padding-right: 20rem;
+            }
+    }
+
     
-    .sidebar img {
-        // width: 50%;
-        margin-left: 0;
+    .page {
+        padding-right: 12rem;
+        width: calc(100% - 10rem);
     }
 
 
-    
-    // .sidebar img {
-    //     width: 50%;
-    // }
+    .sidebar{
+        width: calc(200px - 1em);
+    }
+    .sidebar img {
+        margin-left: 0;
+    }
 
     #Sidebar_Image{
         width: 60%;
@@ -220,12 +226,13 @@ search: false
         padding-bottom: 1%;
     }
 
-
+    .archive {
+        width: calc(100% - 10rem);
+    }
     .grid__item .archive__item-teaser {
         max-height: fit-content;
     }
 }
-
 
 
 
