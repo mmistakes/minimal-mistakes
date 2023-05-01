@@ -34,7 +34,7 @@ sidebar:
 
 Live Excel Workbook (View Live Workbook <a href="https://onedrive.live.com/view.aspx?resid=CEA95E92A534446E!1277&ithint=file%2cxlsx&authkey=!ALtdbBkuIvT3gAw">HERE</a>) :
 
-<iframe title="E-commerce Case Study" width="745" height="430" src="https://onedrive.live.com/view.aspx?resid=CEA95E92A534446E!1277&ithint=file%2cxlsx&authkey=!ALtdbBkuIvT3gAw" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="E-commerce Case Study" width="860" height="480" src="https://onedrive.live.com/view.aspx?resid=CEA95E92A534446E!1277&ithint=file%2cxlsx&authkey=!ALtdbBkuIvT3gAw" frameborder="0" allowFullScreen="true"></iframe>
 
 
 ## Gallery

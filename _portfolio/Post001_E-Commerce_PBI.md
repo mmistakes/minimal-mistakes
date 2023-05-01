@@ -51,7 +51,7 @@ gallery:
 ## Live Power BI Dashboard
 
 Live Power BI Dashboard (Expand for full screen, navigation at bottom) :
-<iframe title="E-commerce Case Study" width="745" height="430" src="https://app.powerbi.com/view?r=eyJrIjoiNmE4NDk1MzMtNjA5YS00NzA2LWJiZjgtMTMxZThjMGEzZTA0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="E-commerce Case Study" width="860" height="480" src="https://app.powerbi.com/view?r=eyJrIjoiNmE4NDk1MzMtNjA5YS00NzA2LWJiZjgtMTMxZThjMGEzZTA0IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" frameborder="0" allowFullScreen="true"></iframe>
 
 
 
