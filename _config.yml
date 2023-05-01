@@ -112,29 +112,26 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "kodeep11@gmail.com"
+      url: "kodeep11@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://groovycat.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/GroovyCat"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/kodeep11"
 
 # Site Footer
 footer:
   links:
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
+      url: "https://github.com/GroovyCat"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/kodeep11"
 
 
 # Reading Files
