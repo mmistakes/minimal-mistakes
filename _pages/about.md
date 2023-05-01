@@ -2,7 +2,7 @@
 layout: single
 title:  "About"
 author_profile: true
-date:   2023-04-01 20:49:38 +0000
+date:   2023-05-01 20:49:38 +0000
 categories: jekyll update
 ---
 
@@ -78,9 +78,11 @@ Connect with me on:
 
 <p align="center">
   <img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" />
+  <img alt="Arch" src="https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=flat" />
+  <img alt="Fedora" src="https://img.shields.io/badge/Fedora-black?style=flat&logo=Fedora" />
   <img alt="Debian" src="https://img.shields.io/badge/Debian-A81D33?style=flat&logo=debian&logoColor=white" />
   <img alt="Ubuntu" src="https://img.shields.io/badge/-Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white" />
-  <img alt="kali" src="https://img.shields.io/badge/Kali_Linux-557C94?style=flat&logo=kali-linux&logoColor=white" />
+  <img alt="Kali" src="https://img.shields.io/badge/Kali_Linux-557C94?style=flat&logo=kali-linux&logoColor=white" />
   <img alt="Windows" src="https://img.shields.io/badge/-Windows-007ACC?style=flat&logo=windows&logoColor=white" />
 </p>
 
@@ -131,7 +133,7 @@ Connect with me on:
     1250 ┤ ╰╯
 
 User: christopsy666, Rating type: Bullet on lichess.org
-Last update: 11.02.2023 16:46:32
+Last update: 13.04.2023 05:09:28
 </code>
 </pre>
 Lichess stats generated via [lichess-ascii-rating-tracker](https://github.com/cschindlbeck/lichess-ascii-rating-tracker.git).
