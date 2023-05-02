@@ -1,6 +1,4 @@
 main:
-- title: "Home"
-  url: https://reprobrainchart.github.io/
 - title: "Why RBC?"
   url: /docs/RBCrationale
 - title: "Datasets"
