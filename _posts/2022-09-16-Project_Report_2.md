@@ -81,16 +81,23 @@ public abstract class BaseTimeEntity {
 @Getter
 @NoArgsConstructor
 public class User extends BaseTimeEntity{
-
+    
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "USER_PK")
     private Long id;
+
+    @Column(length = 40, nullable = false)
     private String userName;
+
+    @Column(length = 40, nullable = false)
     private String userId;
+
+    @Column(length = 50, nullable = false)
     private String password;
 
     @Enumerated(EnumType.STRING)
     @Setter
+    @Column(length = 20)
     private Role role;
 
 }

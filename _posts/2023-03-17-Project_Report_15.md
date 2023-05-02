@@ -190,7 +190,7 @@ sidebar:
             <div class="title">
                 <text>회원 탈퇴</text>
             </div>
-            <form th:action="@{/memberInfo/withdrawal_member}" th:object="${checkPassword}" method="post">
+            <form th:method="delete" th:action="@{/memberInfo/popup}" th:object="${checkPassword}">
                 <div class="txt_field">
                     <input type="password" required th:field="*{password}" th:errorclass="field-error">
                     <span></span>
@@ -241,11 +241,14 @@ public abstract class CreatedTimeEntity {
 public class Movie extends CreatedTimeEntity {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "movie_pk")
     private Long id;
+
+    @Column(length = 70, nullable = false)
     private String movie_title;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "USER_PK")
+    @JoinColumn(name = "USER_PK", nullable = false)
     private User user;
 
     public Movie(String movie_title, User user) {
@@ -269,18 +272,26 @@ public class Movie extends CreatedTimeEntity {
 public class Posting extends BaseTimeEntity {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "posting_id")
+    @Column(name = "posting_pk")
     private Long id;
 
+    @Column(length = 100, nullable = false)
     private String title;   // 제목
+
+    @Column(nullable = false)
     private String content; // 내용
+
+    @Column(length = 40, nullable = false)
     private String writer; //글쓴이
+
+    @Column(nullable = false)
     private int hits; // 조회수
 
+    @Column(length = 50, nullable = false)
     private String password; // 수정, 삭제시 사용할 패스워드
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "USER_PK")
+    @JoinColumn(name = "USER_PK", nullable = false)
     private User user;
 
     (...)
@@ -300,12 +311,19 @@ public class User extends BaseTimeEntity{
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "USER_PK")
     private Long id;
+
+    @Column(length = 40, nullable = false)
     private String userName;
+
+    @Column(length = 40, nullable = false)
     private String userId;
+
+    @Column(length = 50, nullable = false)
     private String password;
 
     @Enumerated(EnumType.STRING)
     @Setter
+    @Column(length = 20)
     private Role role;
 
     /*
