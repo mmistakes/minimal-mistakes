@@ -7,7 +7,7 @@ sidebar:
   - title: "Why RBC?"
     url: /docs/RBCrationale
   - title: "Datasets"
-    children:
+    sublinks:
       - title: "BHRC"
         url: /docs/BHRC
       - title: "dCCNP"
