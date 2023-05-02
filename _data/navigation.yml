@@ -1,7 +1,7 @@
 main:
-- title: "Why RBC?"
+- title: Why RBC?
   url: /docs/RBCrationale
-- title: "Datasets"
+- title: Datasets
   sublinks:
     - title: "BHRC"
       url: /docs/BHRC
@@ -17,7 +17,7 @@ main:
       url: /docs/PACCT
     - title: "PNC"
       url: /docs/PNC
-- title: "The Sample"
+- title:  Sample
   sublinks:
     - title: "Sample Construction"
     - utl: /docs/sample_construction
@@ -25,7 +25,7 @@ main:
     - utl: /docs/phenotypes
     - title: "Sample Characteristics"
     - utl: /docs/sample_characteristics
-- title: "Imaging"
+- title: Imaging
   sublinks: 
     - title: "Neuroimaging"
     - utl: /docs/neuroimaging
@@ -41,6 +41,6 @@ main:
     - utl: /docs/publications
     - title: "Contribute"
     - utl: /docs/contribute
-- title: <p style="color:green;"> GET DATA </p>
+- title: <p style="color:green;"> Get Data </p>
   url: /docs/get_data
   
