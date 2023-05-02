@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-US"
-title                    : <em style="color:light-blue;">RBC<em style="color:light-blue;">
+title                    : RBC
 title_separator          : "-"
 subtitle                 : Reproducible Brain Charts
 name                     : RBC

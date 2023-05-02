@@ -33,8 +33,6 @@ main:
     - utl: /docs/image_processing
     - title: "Image Quality Assurance"
     - utl: /docs/image_QA  
-- title: <em style="color:green;"> Get Data </em>
-  url: /docs/get_data
 - title: Community
   sublinks: 
     - title: "Contributors"
@@ -43,4 +41,6 @@ main:
     - utl: /docs/publications
     - title: "Contribute"
     - utl: /docs/contribute
+- title: <em style="color:green;"> Get Data </em>
+  url: /docs/get_data
 
