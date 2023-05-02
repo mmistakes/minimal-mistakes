@@ -182,13 +182,13 @@
     a {
       display: block;
       margin: 0 1rem;
-      color: grey;
+      color: $masthead-link-color;
       text-decoration: none;
       -webkit-transition: none;
       transition: none;
   
       &:hover {
-        color: grey;
+        color: $masthead-link-color-hover;
       }
   
       &.site-logo {
@@ -308,7 +308,7 @@
         font-size: $type-size-5;
   
         &:hover {
-          color: grey;
+          color: $masthead-link-color-hover;
           background: $navicon-link-color-hover;
         }
       }
