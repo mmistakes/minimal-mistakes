@@ -47,15 +47,23 @@ sidebar:
 @NoArgsConstructor
 public class Posting extends BaseTimeEntity {
 
-    @Id @GeneratedValue
-    @Column(name = "posting_id")
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "posting_pk")
     private Long id;
 
+    @Column(length = 100, nullable = false)
     private String title;   // 제목
+
+    @Column(nullable = false)
     private String content; // 내용
+
+    @Column(length = 40, nullable = false)
     private String writer; //글쓴이
+
+    @Column(nullable = false)
     private int hits; // 조회수
-    
+
+    @Column(length = 50, nullable = false)
     private String password; // 수정, 삭제시 사용할 패스워드
 
     public Posting(String title, String content, String writer, String password, int hits) {

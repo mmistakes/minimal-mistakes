@@ -319,7 +319,8 @@ public class MemberInfoController {
             <div class="title">
                 <text>회원 탈퇴</text>
             </div>
-            <form th:action="@{/memberInfo/withdrawal_member}" th:object="${checkPassword}" method="post">
+            
+            <form th:method="delete" th:action="@{/memberInfo/popup}" th:object="${checkPassword}">
                 <div class="txt_field">
                     <input type="password" required th:field="*{password}" th:errorclass="field-error">
                     <span></span>
@@ -360,7 +361,7 @@ public class MemberInfoController {
     /*
     * 팝업창에서 진행하는 회원탈퇴 처리 로직
     * */
-    @PostMapping("/withdrawal_member")
+    @DeleteMapping("/popup")
     public String membership_withdrawal(@ModelAttribute("checkPassword") CheckPasswordDto passwordDto, HttpServletRequest request,
                                         BindingResult bindingResult, Model model) {
         User session_user = LoginSessionCheck.check_loginUser(request);
@@ -389,6 +390,14 @@ public class MemberInfoController {
 - UserService의 `membership_withdrawal_pass`메소드를 통해서 사용자가 입력한 패스워드가 회원의 패스워드와 일치한지 체크
 - 일치한다면 세션 정보를 삭제하고, message창을 통해 회원탈퇴가 완료 되었음을 알림.
 - 실패시 팝업창 내에 오류 메시지를 출력하고, 다시 팝업창을 리턴.
+
+>**[참고]** <br>
+DELETE, PUT 메소드를 사용하기 위해서는 application.properties에 다음 코드를 추가해줘야 한다.
+
+```properties
+# thymeleaf에서 PUT,DELETE 메소드 사용 허용
+spring.mvc.hiddenmethod.filter.enabled=true
+```
 
 ## UserService(+)
 
