@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Reproducible Brain Chart"
+title                    : "RBC"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : Reproducible Brain Charts
 name                     : "RBC"
-description              : "An amazing website."
+description              : "The official website for the Reproducible Brain Charts project."
 url                      : https://ReproBrainChart.github.io
 baseurl                  : 
 repository               : "ReproBrainChart/ReproBrainChart.github.io"
