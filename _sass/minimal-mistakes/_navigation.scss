@@ -182,13 +182,13 @@
     a {
       display: block;
       margin: 0 1rem;
-      color: $masthead-link-color;
+      color: grey;
       text-decoration: none;
       -webkit-transition: none;
       transition: none;
   
       &:hover {
-        color: $masthead-link-color-hover;
+        color: grey;
       }
   
       &.site-logo {
@@ -266,7 +266,7 @@
       .dropdown-content {
         display: none;
         position: absolute;
-        background-color: gray;
+        background-color: $code-background-color;
         min-width: 160px;
         box-shadow: $box-shadow;
         z-index: 1;
@@ -308,7 +308,7 @@
         font-size: $type-size-5;
   
         &:hover {
-          color: $masthead-link-color-hover;
+          color: grey;
           background: $navicon-link-color-hover;
         }
       }
