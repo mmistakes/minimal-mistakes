@@ -33,7 +33,7 @@ main:
     - utl: /docs/image_processing
     - title: "Image Quality Assurance"
     - utl: /docs/image_QA  
-- title: RBC Community
+- title: Community
   sublinks: 
     - title: "Contributors"
     - utl: /docs/contributors
