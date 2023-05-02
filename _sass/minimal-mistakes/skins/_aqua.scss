@@ -8,13 +8,13 @@ $dark-gray                  : mix(#000, $gray, 40%) !default;
 $darker-gray                : mix(#000, $gray, 60%) !default;
 $light-gray                 : mix(#fff, $gray, 50%) !default;
 $lighter-gray               : mix(#fff, $gray, 90%) !default;
-
+$white                      : #fff;
 $body-color                 : #fff !default;
 $background-color           : #f0fff0 !default;
-$code-background-color      : $lighter-gray !default;
-$code-background-color-dark : $light-gray !default;
-$text-color                 : $dark-gray !default;
-$border-color               : $lighter-gray !default;
+$code-background-color      : $white !default;
+$code-background-color-dark : $white !default;
+$text-color                 : $white !default;
+$border-color               : $white !default;
 
 $primary-color              : $gray !default;
 $success-color              : #27ae60 !default;
