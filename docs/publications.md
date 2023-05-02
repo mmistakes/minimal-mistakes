@@ -4,8 +4,7 @@ excerpt: "publications"
 sitemap: false
 layout: single
 permalink: /docs/publications
-sidebar: 
-  nav: sidebar
+
 ---
  
 ### Publications related to this project

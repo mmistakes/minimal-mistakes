@@ -4,8 +4,7 @@ excerpt: "Get Data"
 sitemap: false
 layout: single
 permalink: /docs/get_data
-sidebar: 
-  nav: sidebar
+
 ---
 
 ### Information about how to get data

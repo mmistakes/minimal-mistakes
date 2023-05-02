@@ -4,8 +4,7 @@ excerpt: "Contribute"
 sitemap: false
 layout: single
 permalink: /docs/contribute
-sidebar: 
-  nav: sidebar
+
 ---
 1. Email us at xxxx@yyy.com
 2. Get your data in BIDS format

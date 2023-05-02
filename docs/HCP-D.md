@@ -4,8 +4,7 @@ excerpt: "HCP-D"
 sitemap: false
 layout: single
 permalink: /docs/HCP-D
-sidebar: 
-  nav: sidebar 
+ 
 ---
 ## [About the dataset](https://www.humanconnectome.org/study/hcp-lifespan-development):
 

@@ -4,8 +4,7 @@ excerpt: "dCCNP"
 sitemap: false
 layout: single
 permalink: /docs/dCCNP
-sidebar: 
-  nav: sidebar
+
 ---
 ## [About the dataset](https://www.sciencedirect.com/science/article/pii/S1878929321001109):
 

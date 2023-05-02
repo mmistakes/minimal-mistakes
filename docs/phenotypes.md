@@ -4,8 +4,7 @@ excerpt: "Psychiatric Phenotyping"
 sitemap: false
 layout: single
 permalink: /docs/phenotypes
-sidebar: 
-  nav: sidebar
+
 ---
 | Participant | Pheno 1 | Pheno 2 |  
 | ------------- | ---------- | ------- |

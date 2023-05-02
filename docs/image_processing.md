@@ -4,8 +4,7 @@ excerpt: "Image Processing"
 sitemap: false
 layout: single
 permalink: /docs/image_processing
-sidebar: 
-  nav: sidebar
+
 ---
 ### - DataLad + FAIRly BIG
 ### - Curation with CuBIDS

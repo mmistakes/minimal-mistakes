@@ -4,8 +4,7 @@ excerpt: "Sample Characteristics"
 sitemap: false
 layout: single
 permalink: /docs/sample_characteristics
-sidebar: 
-  nav: sidebar
+
 ---
 
 | Participant | Demo 1 | Demo 2 |  

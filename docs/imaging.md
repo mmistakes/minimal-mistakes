@@ -4,8 +4,7 @@ excerpt: "Imaging"
 sitemap: false
 layout: single
 permalink: /docs/imaging
-sidebar: 
-  nav: sidebar
+
 ---
 
 1. [Neuroimaging](/docs/neuroimaging)
