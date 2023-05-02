@@ -35,7 +35,7 @@ main:
     - utl: /docs/image_processing
     - title: "Image Quality Assurance"
     - utl: /docs/image_QA  
-- title: About the RBC Community
+- title: RBC Community
   sublinks: 
     - title: "Contributors"
     - utl: /docs/contributors
@@ -43,6 +43,6 @@ main:
     - utl: /docs/publications
     - title: "Contribute"
     - utl: /docs/contribute
-- title: <font size="6"><p style="color:green;"> GET DATA </p> </font>
+- title: <p style="color:green;"> GET DATA </p>
   url: /docs/get_data
   
