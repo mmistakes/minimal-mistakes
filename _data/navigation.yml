@@ -20,11 +20,29 @@ main:
     - title: "PNC"
       url: /docs/PNC
 - title: "The Sample"
-  url: /docs/sample
+  sublinks:
+    - title: "Sample Construction"
+    - utl: /docs/sample_construction
+    - title: "Psychiatric Phenotypes"
+    - utl: /docs/phenotypes
+    - title: "Sample Characteristics"
+    - utl: /docs/sample_characteristics
 - title: "Imaging"
-  url: /docs/imaging
+  sublinks: 
+    - title: "Neuroimaging"
+    - utl: /docs/neuroimaging
+    - title: "Image Processing"
+    - utl: /docs/image_processing
+    - title: "Image Quality Assurance"
+    - utl: /docs/image_QA  
 - title: About the RBC Community
-  url: /docs/community
+  sublinks: 
+    - title: "Contributors"
+    - utl: /docs/contributors
+    - title: "Publications"
+    - utl: /docs/publications
+    - title: "Contribute"
+    - utl: /docs/contribute
 - title: <font size="6"><p style="color:green;"> GET DATA </p> </font>
   url: /docs/get_data
   
