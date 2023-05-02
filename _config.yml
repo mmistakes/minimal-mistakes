@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-US"
-title                    : RBC
+title                    : <em style="color:light-blue;">RBC<em style="color:light-blue;">
 title_separator          : "-"
 subtitle                 : Reproducible Brain Charts
-name                     : <p style="color:light-blue;">RBC<p style="color:light-blue;">
+name                     : RBC
 description              : "The official website for the Reproducible Brain Charts project."
 url                      : https://ReproBrainChart.github.io
 baseurl                  : 
