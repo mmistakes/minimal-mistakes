@@ -1,32 +1,30 @@
 main:
+- title: "Home"
+  url: https://reprobrainchart.github.io/
+- title: "Why RBC?"
+  url: /docs/RBCrationale
+- title: "Datasets"
+  children:
+    - title: "BHRC"
+      url: /docs/BHRC
+    - title: "dCCNP"
+      url: /docs/dCCNP
+    - title: "HBN"
+      url: /docs/HBN
+    - title: "HCP-D"
+      url: /docs/HCP-D
+    - title: "NKI"
+      url: /docs/NKI
+    - title: "PACCT"
+      url: /docs/PACCT
+    - title: "PNC"
+      url: /docs/PNC
+- title: "The Sample"
+  url: /docs/sample
+- title: "Imaging"
+  url: /docs/imaging
+- title: About the RBC Community
+  url: /docs/community
 - title: <font size="6"><p style="color:green;"> GET DATA </p> </font>
   url: /docs/get_data
-sidebar:
-  - title: "Home"
-    url: https://reprobrainchart.github.io/
-  - title: "Why RBC?"
-    url: /docs/RBCrationale
-  - title: "Datasets"
-    sublinks:
-      - title: "BHRC"
-        url: /docs/BHRC
-      - title: "dCCNP"
-        url: /docs/dCCNP
-      - title: "HBN"
-        url: /docs/HBN
-      - title: "HCP-D"
-        url: /docs/HCP-D
-      - title: "NKI"
-        url: /docs/NKI
-      - title: "PACCT"
-        url: /docs/PACCT
-      - title: "PNC"
-        url: /docs/PNC
-  - title: "The Sample"
-    url: /docs/sample
-  - title: "Imaging"
-    url: /docs/imaging
-  - title: About the RBC Community
-    url: /docs/community
-   
-    
+  
