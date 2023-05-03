@@ -28,7 +28,7 @@ _________________
 
 # Conference Presentations
 
-* **Ahmed, M. I.**, Shook, K., Pietroniro, A., Stadnyk, T., Pomeroy, J. W., Pers, C., and Gustafsson, D. (2023). Incorporating The Variable Contributing Area Concept in The HYPE Modelling Framework, EGU General Assembly 2023, Vienna, Austria, 24–28 Apr 2023, EGU23-10593, https://doi.org/10.5194/egusphere-egu23-10593, 2023 (Oral presentation).
+* **Ahmed, M. I.**, Shook, K., Pietroniro, A., Stadnyk, T., Pomeroy, J. W., Pers, C., and Gustafsson, D. (2023). Incorporating The Variable Contributing Area Concept in The HYPE Modelling Framework, EGU General Assembly 2023, Vienna, Austria, 24–28 Apr 2023, EGU23-10593, https://doi.org/10.5194/egusphere-egu23-10593 (Oral presentation).
 * **Ahmed, M. I.**, Stadnyk, T., Pietroniro, A., Awoye, H., et al. (2022). Learning From Hydrological Model Failure: A Case from Phase 1 of The Nelson-MIP Project, AGU Fall Meeting, Chicago, IL, December 2022. (Oral presentation).
 * **Ahmed M. I.**, Shook K., Pietroniro A., Stadnyk T., Pomeroy J. W., Pers C., Gustafsson D. (2022). Accounting For Dynamic Contributing Areas in The HYPE Model Framework, AGU Fall Meeting, Chicago, IL, December 2022. (Poster presentation).
 * **Ahmed, M. I.**, Shook, K., Pietroniro, A., Stadnyk, T., Pomeroy, J. (2022) An agnostic modelling framework for prairie potholes, CWRA National Conference, Canmore, June 2022. (Oral presentation).
