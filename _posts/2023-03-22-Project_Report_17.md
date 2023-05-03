@@ -182,7 +182,7 @@ public class RecordPostingDto {
 }
 ```
 
-### RecordService(+)
+### RecordServiceTest(+)
 
 ```java
 @SpringBootTest
