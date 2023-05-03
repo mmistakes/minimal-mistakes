@@ -18,7 +18,9 @@
 {% if authorCount == 1 %}
   {% include author-profile-single.html %}
 {% else %}
-  {% for authorid in authors %}
+  {% for author_entry in authors %}
+    {% assign author_data = author_entry | split: '|' %}
+    {% assign authorid = author_data[0] %}
     {% assign author = site.data.authors[authorid] %}
     <div itemscope itemtype="https://schema.org/Person" class="h-card">
       <div class="author__avatar">

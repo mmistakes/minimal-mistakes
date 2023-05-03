@@ -15,11 +15,14 @@
 {% if document.read_time or document.show_date %}
   <p class="page__meta">
     <!-- new: add authors meta -->
-    {% for authorid in authors %}
+    {% for author_entry in authors %}
+      {% assign author_data = author_entry | split: '|' %}
+      {% assign authorid = author_data[0] %}
+      {% assign equal_contribution = author_data[1] %}
       {% assign author = site.data.authors[authorid] %}
       {% if author.home %}
-      <a class="u-url" rel="me" href="{{ author.home | default: '/' | absolute_url }}" itemprop="url">{% endif %}{{ author.name }}{% if author.home %}</a>{% endif %}{% unless forloop.last %},{% endunless %}
-    {% endfor %} 
+      <a class="u-url" rel="me" href="{{ author.home | default: '/' | absolute_url }}" itemprop="url">{% endif %}{{ author.name }}{% if equal_contribution == 'equal' %}*{% endif %}{% if author.home %}</a>{% endif %}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
     {% if document.show_date and document.date %}
       {% assign date = document.date %}
       <span class="page__meta-sep"></span>
