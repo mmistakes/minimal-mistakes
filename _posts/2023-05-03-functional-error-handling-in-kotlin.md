@@ -1,11 +1,19 @@
 ---
-title: "Functional Error Handling in Kotlin: Part 1"
+title: "Functional Error Handling in Kotlin, Part 1: Absent values, Nullables, Options"
 date: 2023-04-27
 header:
     image: "/images/blog cover.jpg"
 tags: [kotlin]
 excerpt: "Whether we develop using an object-oriented or functional approach, we always have the problem of handling errors. Kotlin offers a lot of different methods to do it. Here, we'll focus on strategies that deal with the error without managing its cause, i.e., nullable types and Arrow Option types."
+toc: true
+toc_label: "In this article"
 ---
+
+_This article is brought to you by [Riccardo Cardin](https://github.com/rcardin). Riccardo is a proud alumnus of Rock the JVM, now a senior engineer working on critical systems written in Scala and Kotlin._
+
+If you'd like to watch the video form of this article, please enjoy:
+
+{% include video id="783eGYfsVuU" provider="youtube" %}
 
 The Kotlin language is a multi-paradigm, general-purpose programming language. Whether we develop using an object-oriented or functional approach, we always have the problem of handling errors. Kotlin offers a lot of different methods to handle errors. Still, this article will focus on the functional approaches and introduce the Arrow library. This article is the first part of a series. We'll focus on strategies that deal with the error without managing its cause, i.e., nullable types and Arrow Option types. So, without further ado, let's get started.
 
