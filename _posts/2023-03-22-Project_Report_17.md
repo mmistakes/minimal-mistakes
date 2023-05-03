@@ -323,6 +323,7 @@ public class MemberInfoController {
             <div class="title">
                 <text>회원 탈퇴</text>
             </div>
+            
             <form th:method="delete" th:action="@{/memberInfo/popup}" th:object="${checkPassword}">
                 <div class="txt_field">
                     <input type="password" required th:field="*{password}" th:errorclass="field-error">
