@@ -43,14 +43,6 @@ toc: true
 <p>SKMD - Olaya Herrera - Medellin, Colombia</p>
   --->
 
-# Costa Rica
-	
-## [MROC - Juan Santamaria International Airport - San Jose, Costa Rica](https://vpilotdesigns.github.io/MROC/)
-
-<p><a href="https://vpilotdesigns.github.io/MROC/"><strong>Galeria/Gallery</strong></a><br>
-  <br></p>
-{% include figure image_path="/assets/images/MROC/Block_03.jpg" alt="mroc" caption="Juan Santamaria International Airport - San Jose, Costa Rica for MSFS" %}
-	
 # Panama
 	
 ## [MPTO - Tocumen Intl Airport - Panama, Panama](https://vpilotdesigns.github.io/MPTO/)
