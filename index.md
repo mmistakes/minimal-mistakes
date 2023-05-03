@@ -9,7 +9,7 @@ header:
   overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
 ---
 
-Dr. Ahmed is a postdoctoral associate at the University of Calgary - Hydrologic Analysis Lab ([UC-HAL](https://live-ucalgary.ucalgary.ca/labs/hydrological-analysis/team)) in Calgary, Alberta, CA. He is also a registered Professional Engineer (P.Eng.) in Saskatchewan, CA, with more than 4 years of international work experience as a hydrologic and hydrogeologic engineer.
+Dr. Ahmed is a research associate at the University of Calgary - Hydrologic Analysis Lab ([UC-HAL](https://live-ucalgary.ucalgary.ca/labs/hydrological-analysis/team)) in Calgary, Alberta, CA. He is also a registered Professional Engineer (P.Eng.) in Saskatchewan, CA, with more than 4 years of international work experience as a hydrologic and hydrogeologic engineer.
 Dr. Ahmed is currently leading and managing a couple of projects that are funded under the Global Water Futures program ([GWF](https://gwf.usask.ca/)).  
 {: .text-justify}
 
