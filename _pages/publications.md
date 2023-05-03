@@ -16,6 +16,7 @@ header:
 
 # Journal Articles
 
+* Bajracharya, A.R., **Ahmed, M.I.**, Stadnyk, T., Asadzadeh, M. (2023). Process based calibration of a continental-scale hydrological model using soil moisture and streamflow data. Journal of Hydrology: Regional Studies 47, 101391. https://doi.org/10.1016/j.ejrh.2023.101391.
 * **Ahmed, M. I.**, Elshorbagy, A., Pietroniro, A., Princz, D. (2021). Improving the representation of the non-contributing area dynamics in land surface models for better simulation of prairie hydrology. J. Hydrol. 600, 126562. https://doi.org/10.1016/j.jhydrol.2021.126562.
 * **Ahmed, M. I.**, Elshorbagy, A., Pietroniro, A. (2020). A novel model for storage dynamics simulation and inundation mapping in the prairies. Environ. Model. Softw. 133, 104850. https://doi.org/10.1016/j.envsoft.2020.104850.
 * **Ahmed, M. I.**, Elshorbagy, A., Pietroniro, A. (2020) Towards simple modelling practices in the complex Canadian prairie watersheds, J. Hydrolo. Eng. https://doi.org/10.1061/(ASCE)HE.1943-5584.0001922.
@@ -27,6 +28,7 @@ _________________
 
 # Conference Presentations
 
+* **Ahmed, M. I.**, Shook, K., Pietroniro, A., Stadnyk, T., Pomeroy, J. W., Pers, C., and Gustafsson, D. (2023). Incorporating The Variable Contributing Area Concept in The HYPE Modelling Framework, EGU General Assembly 2023, Vienna, Austria, 24–28 Apr 2023, EGU23-10593, https://doi.org/10.5194/egusphere-egu23-10593, 2023 (Oral presentation).
 * **Ahmed, M. I.**, Stadnyk, T., Pietroniro, A., Awoye, H., et al. (2022). Learning From Hydrological Model Failure: A Case from Phase 1 of The Nelson-MIP Project, AGU Fall Meeting, Chicago, IL, December 2022. (Oral presentation).
 * **Ahmed M. I.**, Shook K., Pietroniro A., Stadnyk T., Pomeroy J. W., Pers C., Gustafsson D. (2022). Accounting For Dynamic Contributing Areas in The HYPE Model Framework, AGU Fall Meeting, Chicago, IL, December 2022. (Poster presentation).
 * **Ahmed, M. I.**, Shook, K., Pietroniro, A., Stadnyk, T., Pomeroy, J. (2022) An agnostic modelling framework for prairie potholes, CWRA National Conference, Canmore, June 2022. (Oral presentation).
