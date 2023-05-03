@@ -37,12 +37,20 @@ toc: true
 ## [SKUI - El Caraño Airport - Quibdo, Colombia](https://vpilotdesigns.github.io/SKUI/)
 <p><a href="https://vpilotdesigns.github.io/SKUI/"><strong>Galeria/Gallery</strong></a><br>
   <br></p>
-{% include figure image_path="/assets/images/SKUI/Block_04.jpg" alt="skui" caption="El Caraño Airport - Quibdo, Colombia for MSFS" %}
+{% include figure image_path="/assets/images/SKUI/Block_04.jpg" alt="skui" caption="El Caraño Airport - Quibdo, Colombia for MSFS" %}  
   
 <!---## [SKMD - Olaya Herrera - Medellin, Colombia](https://vpilotdesigns.github.io/SKMD/)
 <p>SKMD - Olaya Herrera - Medellin, Colombia</p>
   --->
 
+# Costa Rica
+	
+## [MROC - Juan Santamaria International Airport - San Jose, Costa Rica](https://vpilotdesigns.github.io/MROC/)
+
+<p><a href="https://vpilotdesigns.github.io/MROC/"><strong>Galeria/Gallery</strong></a><br>
+  <br>/p>
+{% include figure image_path="/assets/images/MROC/Block_01.jpg" alt="mroc" caption="Juan Santamaria International Airport - San Jose, Costa Rica for MSFS" %}  
+	
 # Panama
 	
 ## [MPTO - Tocumen Intl Airport - Panama, Panama](https://vpilotdesigns.github.io/MPTO/)
