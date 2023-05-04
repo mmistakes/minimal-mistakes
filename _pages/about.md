@@ -56,7 +56,7 @@ Other quantum resources will continuously be added to the FiQCI infrastructure.
 The Scientific and Technical Advisory Group (STAG) provides input for the operation of the infrastructure. The current (2023) members of the STAG are:
 
 * Dr. Valeria Bartsch, Fraunhofer Institute for Industrial Mathematics, Germany
-* Dr. Alba Cervera Lierta, Barcelona Supercomputing Center (BSC), Spain
+* Dr. Alba Cervera Lierta, Barcelona Supercomputing Center, Spain
 * Prof. Tommi Mikkonen, University of Jyväskylä, Finland
 * Prof. Martin Schulz, Technical University of Munich, Germany
 * Prof. Göran Wendin, Chalmers University of Technology, Sweden
