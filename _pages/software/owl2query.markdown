@@ -15,7 +15,7 @@ OWL2Query is an expressive query and meta-query engine and visualization kit wit
 - OWLAPI integration
 - [Protégé plugin](http://protegewiki.stanford.edu/wiki/OWL2Query) (documentation - TODO)
 
-The project is hosted at [GitHub](https://github.com/kbss-cvut/owl2query). OWL2Query artifacts can be downloaded from the Maven repository [http://kbss.felk.cvut.cz/m2repo](http://kbss.felk.cvut.cz/m2repo):
+The project is hosted at [GitHub](https://github.com/kbss-cvut/owl2query). OWL2Query artifacts can be downloaded from the Maven repository [https://kbss.felk.cvut.cz/m2repo](https://kbss.felk.cvut.cz/m2repo):
 
 __Visualization library__
 
@@ -23,7 +23,6 @@ __Visualization library__
 <dependency>
     <groupId>cz.cvut.kbss</groupId>
     <artifactId>owl2querygraph</artifactId>
-    <version>0.1</version>
 </dependency>
 ```
 __Reasoning library__
@@ -31,19 +30,18 @@ __Reasoning library__
 <dependency>
     <groupId>cz.cvut.kbss</groupId>
     <artifactId>owl2query</artifactId>
-    <version>0.6</version>
 </dependency>
 ```
 
 ## Examples
-Here are three query examples. In the screen shots we show the plug-in integrated in Protégé 4.1. The query is drawn in the graph area
+Here are three query examples. In the screenshots we show the plug-in integrated in Protégé 4.1. The query is drawn in the graph area,
 and it is executed with the pellet reason. The name of the file that is currently associated with the query is shown in the title at the top of the tab.
-The tool bar under it contains tools as : demo query , new query , open query, save query, switch between graph and SPARQL view,
+The toolbar under it contains tools as : demo query , new query , open query, save query, switch between graph and SPARQL view,
 undo and redo graph changes. On the next line in the GUI we have a split view that contains on the left prefix editor and
 on the right a tab view with var editor and layout editor. Under this view there is the graph area. On the right side of the graph
 area we can see a node editor. Under the graph is a serialization of the query in SPARQL-DL syntax. Last row in the GUI is the
-result area with a run button and a result table. On the right of the screen-shots we can see other protege views.
-They are present to show selection integration between the plug-in and other parts of protege.
+result area with a run button and a result table. On the right of the screenshots we can see other Protégé views.
+They are present to show selection integration between the plug-in and other parts of Protégé.
 
 ### Example 1
 
@@ -63,7 +61,7 @@ On the right in the Protégé's Idividuals view we can see that individual Gradu
 ### Example 2
 
 This query is used to find all the students who are also employees and find what kind of employee. This is a mixed ABox TBox query.
-In SPARQL-DL the query is represented with two type atoms and one sub class of atom:
+In SPARQL-DL the query is represented with two type atoms and one subclass of atom:
 
 `Q(C, x) :- Type(?C, ?x) T(<Student>, ?x), SubClassOf(?C, <Employee>).`
 
@@ -83,10 +81,10 @@ and one sub property atom:
 
 {% include figure image_path="/assets/images/owl2query/sparqlexample3.png" alt="OWL2Query query example 3" %}
 
-In the graph the sub property of atom is represented as an arrow between two rbox nodes in the RBox area with a "SubPropertyOf" stereotype.
+In the graph the sub property of atom is represented as an arrow between two Rbox nodes in the RBox area with a "SubPropertyOf" stereotype.
 This graph has two nodes that contain the label representing the variable y. This means that the nodes reference the same term from different
-parts of the query. This fact is represented in the graph interactively. When the user tries to interact with the node the node's borders
-that reference the same term are emphasized. Also a dashed line drawn to the other nodes using the same term.
+parts of the query. This fact is represented in the graph interactively. When the user tries to interact with the node's borders
+that reference the same term are emphasized. Also, a dashed line drawn to the other nodes using the same term.
 
 ## Publications
 
