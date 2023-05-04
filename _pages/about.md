@@ -61,6 +61,11 @@ The Scientific and Technical Advisory Group (STAG) provides input for the operat
 * Prof. Martin Schulz, Technical University of Munich, Germany
 * Prof. Göran Wendin, Chalmers University of Technology, Sweden
 
+## Management
+
+* Prof. Mika Prunnila, VTT, FiQCI director
+* Dr. Mikael Johansson, CSC, FiQCI vice-director
+* Prof. Tapio Ala-Nissilä, Aalto University, FiQCI vice-director
 
 ## Supported by
 
