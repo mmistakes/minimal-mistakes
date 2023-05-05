@@ -1,5 +1,5 @@
 ---
-title: "(Re)using EU controlled vocabularies to enrich Semantic Government Vocabulary"
+title: "Upcoming Open Mic - (Re)using EU controlled vocabularies to enrich Semantic Government Vocabulary"
 categories: [Open Mic Announcement, Open Mic]
 ---
 
