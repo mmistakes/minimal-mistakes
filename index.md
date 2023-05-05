@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Reproducible Brain Charts"
+title: "Reproducible Braincharts"
 author_profile: false
 ---
 ### Insert logo

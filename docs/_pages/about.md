@@ -1,7 +1,7 @@
 ---
 permalink: /about/
 title: "About"
-excerpt: "Reproducible Brain Charts Project."
+excerpt: "Reproducible Braincharts Project."
 # layouts_gallery:
 #   - url: /assets/images/mm-layout-splash.png
 #     image_path: /assets/images/mm-layout-splash.png

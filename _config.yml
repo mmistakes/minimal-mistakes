@@ -18,9 +18,9 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   : "en-US"
 title                    : RBC
 title_separator          : "-"
-subtitle                 : Reproducible Brain Charts
+subtitle                 : Reproducible Braincharts
 name                     : RBC
-description              : "The official website for the Reproducible Brain Charts project."
+description              : "The official website for the Reproducible Braincharts project."
 url                      : https://ReproBrainChart.github.io
 baseurl                  : 
 repository               : "ReproBrainChart/ReproBrainChart.github.io"
