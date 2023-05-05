@@ -15,7 +15,7 @@ Templates are located in the folder _draft and contain instructions:
 -  Create new post both for announcement and past session.
 -  Create **PULL REQUEST** and send it for **REVIEW** and **MERGE**
 ### Where Can I Find The Open Mic Session Link
-- KBSS calender: includes info  **where** and **when** and the **topic** of open mic session
+- KBSS calendar: includes info  **where** and **when** and the **topic** of open mic session
 - KBSS website: it should be a public link to join the session
 ## Open Mic Software
 There are two options :
