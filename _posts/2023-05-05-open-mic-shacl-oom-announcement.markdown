@@ -1,5 +1,5 @@
 ---
-title: "SHACL-based Object-ontological Mapping"
+title: "Upcoming Open Mic - SHACL-based Object-ontological Mapping"
 categories: [Open Mic Announcement, Open Mic]
 ---
 
