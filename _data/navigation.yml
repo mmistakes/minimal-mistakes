@@ -20,27 +20,27 @@ main:
 - title:  Sample
   sublinks:
     - title: "Sample Construction"
-    - utl: /docs/sample_construction
+    - url: /docs/sample_construction
     - title: "Psychiatric Phenotypes"
-    - utl: /docs/phenotypes
+    - url: /docs/phenotypes
     - title: "Sample Characteristics"
-    - utl: /docs/sample_characteristics
+    - url: /docs/sample_characteristics
 - title: Imaging
   sublinks: 
     - title: "Neuroimaging"
-    - utl: /docs/neuroimaging
+    - url: /docs/neuroimaging
     - title: "Image Processing"
-    - utl: /docs/image_processing
+    - url: /docs/image_processing
     - title: "Image Quality Assurance"
-    - utl: /docs/image_QA  
+    - url: /docs/image_QA  
 - title: Community
   sublinks: 
     - title: "Contributors"
-    - utl: /docs/contributors
+    - url: /docs/contributors
     - title: "Publications"
-    - utl: /docs/publications
+    - url: /docs/publications
     - title: "Contribute"
-    - utl: /docs/contribute
+    - url: /docs/contribute
 - title: <em style="color:green;"> Get Data </em>
   url: /docs/get_data
 
