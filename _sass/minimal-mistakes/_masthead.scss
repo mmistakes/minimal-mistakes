@@ -23,7 +23,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    font-family: $sans-serif-narrow;
+    font-family: $arial-narrow;
 
     @include breakpoint($x-large) {
       max-width: $max-width;

@@ -51,12 +51,12 @@
   h5,
   h6 {
     margin-bottom: 0;
-    font-family: $sans-serif-narrow;
+    font-family: $arial-narrow;
   }
 
   p,
   li {
-    font-family: $sans-serif;
+    font-family: $arial;
     font-size: $type-size-6;
     line-height: 1.5;
   }
@@ -173,7 +173,7 @@
   }
 }
 .sidebar .author__name {
-  font-family: $sans-serif;
+  font-family: $arial;
   font-size: $type-size-5;
 }
 
@@ -190,7 +190,7 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  font-family: $sans-serif;
+  font-family: $arial;
   z-index: 20;
   cursor: pointer;
 
