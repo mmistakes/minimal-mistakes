@@ -5,7 +5,7 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
       <li>
-        📂 <span style="font-family:'Sono';">Total number of posts</style> <span style="font-family:'Coming Soon';">{{sum}}</style>
+        📂 <span style="font-family:'Sono';">Total number of posts</style> <span style="font-family:'Sono';">{{sum}}</style>
       </li>
       <li>
         <span class="nav__sub-title">LeetCode</span>
