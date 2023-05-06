@@ -146,8 +146,51 @@ If we execute the above method using a valid `JobId`, we'll get the following ou
 Job found: Job(id=JobId(value=1), company=Company(name=Apple, Inc.), role=Role(name=Software Engineer), salary=Salary(value=70000.0))
 ```
 
+However, it far more idiomatic to transform and react to values of a `Result` rather than extracting it. To apply a transformation to the value of a `Result`, we can use the classic `map` function:
 
+```kotlin
+val appleJobSalary: Result<Salary> = appleJob.map { it.salary }
+```
 
+Instead, we can use the `mapCatching` function if the transformation to apply to the value of the `Result` can throw an exception. Let's reuse our `CurrencyConverter` class. This time, we add a validation on the input amount:
+
+```kotlin
+class CurrencyConverter {
+    @Throws(IllegalArgumentException::class)
+    fun convertUsdToEur(amount: Double?): Double =
+        if (amount != null && amount >= 0.0) {
+            amount * 0.91
+        } else {
+            throw IllegalArgumentException("Amount must be positive")
+        }
+}
+```
+
+The converter will throw an exception if the input amount is present and not negative. Let's think about the converter as an external library that we can't change. We can use the `mapCatching` function to convert the salary of a job from USD to EUR, handling the fact that the conversion can fail throwing an exception:
+
+```kotlin
+fun getSalaryInEur(jobId: JobId): Result<Double> =
+    jobs.findById(jobId)
+        .map { it?.salary }
+        .mapCatching { currencyConverter.convertUsdToEur(it?.value) }
+```
+
+If we execute the above function using a invalid `JobId`, we'll get a `Result` containing the exception thrown by the `convertUsdToEur` function:
+
+```kotlin
+fun main() {
+    val currencyConverter = CurrencyConverter()
+    val jobs = LiveJobs()
+    val maybeSalary = JobService(jobs, currencyConverter).getSalaryInEur(JobId(42))
+    println(maybeSalary)
+}
+```
+
+The output is the following:
+
+```text
+Failure(java.lang.IllegalArgumentException: Amount must be positive)
+```
 
 
 
