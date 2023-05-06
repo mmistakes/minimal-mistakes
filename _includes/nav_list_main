@@ -5,7 +5,7 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
       <li>
-        📂 <span style="font-family:'Cafe24Oneprettynight';">Total number of posts</style> <span style="font-family:'Coming Soon';">{{sum}}</style>
+        📂 <span style="font-family:'Sono';">Total number of posts</style> <span style="font-family:'Coming Soon';">{{sum}}</style>
       </li>
       <li>
         <span class="nav__sub-title">LeetCode</span>
@@ -22,6 +22,13 @@
                 {% for category in site.categories %}
                     {% if category[0] == "JS" %}
                         <li><a href="/categories/js" class="">JavaScript ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "CS" %}
+                        <li><a href="/categories/cs" class="">C# ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -71,13 +78,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "CS" %}
-                        <li><a href="/categories/cs" class="">C# ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+
 
         <span class="nav__sub-title">Coding Practice</span>
             <ul>
@@ -93,6 +94,13 @@
                 {% for category in site.categories %}
                     {% if category[0] == "Resource" %}
                         <li><a href="/categories/resource" class="">Resources ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Eng_Interview" %}
+                        <li><a href="/categories/eng_interview" class="">Interview Prep ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
