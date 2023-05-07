@@ -18,9 +18,9 @@ minimal_mistakes_skin   : "neon" # "default" # "air", "aqua", "contrast", "dark"
 locale                   : "en-US"
 title                    : "Tim Sadler"
 title_separator          : "-"
-subtitle                 : "Quantitative Marketing | Data Scientist" # site tagline that appears below site title in masthead
+subtitle                 : "Data Scientist (Business Analytics & Pricing)" # site tagline that appears below site title in masthead
 name                     : "Tim Sadler"
-description              : "Quantitative Marketing | Data Scientist"
+description              : "Data Scientist (Business Analytics & Pricing)"
 url                      : "https://tim-sadler.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "tim-sadler/tim-sadler.github.io"
@@ -99,7 +99,7 @@ analytics:
 author:
   name             : "Tim Sadler"
   avatar           : "/assets/img/tim_klein.jpg"
-  bio              : "I love data, problem solving and beautiful simplicity."
+  bio              : "I love building data product to inform and automate decision-making."
   location         : "Hamburg, Germany"
   email            : "tim.sadler@uni-hamburg.de"
   links:
