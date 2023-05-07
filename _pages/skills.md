@@ -2,7 +2,7 @@
 permalink: /skills/
 title: "Skills"
 excerpt: "This is my tech and methodology stack."
-last_modified_at: 2021-02-22T14:51:23-04:00
+last_modified_at: 2023-05-02T14:51:23-04:00
 classes: wide
 toc: true
 author_profile: true
