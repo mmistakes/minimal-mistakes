@@ -19,7 +19,7 @@ Without further ado, let's get started!
 
 Nullable types and the `Option` type we've seen so far are great for handling errors in a functional way, they don't store the cause of the error. In other words, they don't tell us _why_ the error happened.
 
-We can represent an error using different approaches. The first one is reusing the `Throwable` type and all its exceptions subtypes. The Kotlin programming language has the `Result<A>` type for that, which models the result of an operation that may succeed or may result in an exception. In that, it's similar to the `Try<A>` type we've seen in the Scala programming language.
+We can represent an error using different approaches. The first one is reusing the `Throwable` type and all its exceptions subtypes. The Kotlin programming language has the `Result<A>` type for that since version 1.3, which models the result of an operation that may succeed or may result in an exception. In that, it's similar to the `Try<A>` type we've seen in the Scala programming language.
 
 Despite what you may guess, the `Result<A` type is not defined as a sealed class. It's a value class, without any subclass:
 
@@ -190,6 +190,67 @@ The output is the following:
 
 ```text
 Failure(java.lang.IllegalArgumentException: Amount must be positive)
+```
+
+If we want to recover from an failure `Result`, we can use the `recover` function. This function takes a lambda that will be executed if the `Result` is a failure. The lambda takes as input the exception contained in the `Result.Failure` instance, and returns a new value of the same type of the original `Result`:
+
+```kotlin
+// Kotlin SDK
+public inline fun <R, T : R> Result<T>.recover(transform: (exception: Throwable) -> R): Result<R> {
+    contract {
+        callsInPlace(transform, InvocationKind.AT_MOST_ONCE)
+    }
+    return when (val exception = exceptionOrNull()) {
+        null -> this
+        else -> Result.success(transform(exception))
+    }
+}
+```
+
+The original `T` type must be a subtype of the new `R` type since we return the original value if the `Result` is a success.
+
+In our example, we can use the `recover` function to return a default value if no job is found:
+
+```kotlin
+val maybeSalary: Result<Double> = JobService(jobs, currencyConverter).getSalaryInEur(JobId(42))
+val recovered = maybeSalary.recover {
+    when (it) {
+        is IllegalArgumentException -> println("The amount must be positive")
+        else -> println("An error occurred ${it.message}")
+    }
+    0.0
+}
+println(recovered)
+```
+
+If we execute the above code with the same input as the previous example, we can get a more detailed and clearer output than the previous one:
+
+```text
+The amount must be positive
+Success(0.0)
+```
+
+As we did for the `map` function, we can use the `recoverCatching` variant if the lambda passed to the `recover` function can throw an exception.
+
+To execute some side effect with the value of a `Result`, both if it's successful or a failure, we can use the dedicated methods the SDK gives us, i.e. the functions `onSuccess` and `onFailure`. Both function return the original `Result` instance, so we can chain them:
+
+```kotlin
+// Kotlin SDK
+public inline fun <T> Result<T>.onSuccess(action: (value: T) -> Unit): Result<T> {
+    contract {
+        callsInPlace(action, InvocationKind.AT_MOST_ONCE)
+    }
+    if (isSuccess) action(value as T)
+    return this
+}
+
+public inline fun <T> Result<T>.onFailure(action: (exception: Throwable) -> Unit): Result<T> {
+    contract {
+        callsInPlace(action, InvocationKind.AT_MOST_ONCE)
+    }
+    exceptionOrNull()?.let { action(it) }
+    return this
+}
 ```
 
 
