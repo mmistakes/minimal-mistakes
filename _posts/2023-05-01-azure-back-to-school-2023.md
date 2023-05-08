@@ -19,7 +19,7 @@ tags:
   gtag('config', 'G-JXSLGQQ0VC');
 </script>
 
-![Azure Back to School Logo](/images/azurebacktoschool-logo1.png)
+![Azure Back to School Logo](/images/Azure_rectangular_logo_without_background.png)
 
 ## **2023 Call for Speakers/Presenters**
 
