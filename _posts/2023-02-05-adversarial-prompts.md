@@ -206,13 +206,13 @@ This adversarial prompt forces every word to have the letter `q` by repeating th
 In this post, we introduced adversarial prompts--strings that, when prepended to normal prompts, can drastically alter the resulting image or text generation. For many more adversarial prompting examples, check out our [paper](https://arxiv.org/abs/2302.04237)! 
 
 ### Citation
-> @article{maus2023adversarialprompting,  
+```
+@article{maus2023adversarialprompting,  
       author = {Maus, Natalie and Chao, Patrick and Wong, Eric and Gardner, Jacob},  
       title = {Adversarial Prompting for Black Box Foundation Models},  
   journal = {arXiv},  
   year = {2023},  
-}
-
+```
 
 
 
