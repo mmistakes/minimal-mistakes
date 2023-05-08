@@ -24,8 +24,8 @@ description              : "An annual event for the community by the community."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/images/azurebacktoschool-logo1.png"
-logo                     : "/images/azurebacktoschool-logo1.png"
+teaser                   : "/images/Azure_vertical_logo.png"
+logo                     : "/images/Azure_rectangular_logo_without_background.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
