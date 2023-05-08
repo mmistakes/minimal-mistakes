@@ -253,6 +253,78 @@ public inline fun <T> Result<T>.onFailure(action: (exception: Throwable) -> Unit
 }
 ```
 
+We can refactor our main example to use the `onSuccess` and `onFailure` functions:
 
+```kotlin
+val notFoundJobId = JobId(42)
+val maybeSalary: Result<Double> = JobService(jobs, currencyConverter).getSalaryInEur(notFoundJobId)
+maybeSalary.onSuccess {
+    println("The salary of jobId $notFoundJobId is $it")
+}.onFailure {
+    when (it) {
+        is IllegalArgumentException -> println("The amount must be positive")
+        else -> println("An error occurred ${it.message}")
+    }
+}
+```
+
+Clearly, the output of the above code is the following since the `JobId`42 is not present in our database:
+
+```text
+The amount must be positive
+```
+
+If we want to give both the lambda to apply in case of success and the lambda to apply in case of failure, we can use the `fold` function:
+
+```kotlin
+// Kotlin SDK
+public inline fun <R, T> Result<T>.fold(
+    onSuccess: (value: T) -> R,
+    onFailure: (exception: Throwable) -> R
+): R {
+    contract {
+        callsInPlace(onSuccess, InvocationKind.AT_MOST_ONCE)
+        callsInPlace(onFailure, InvocationKind.AT_MOST_ONCE)
+    }
+    return when (val exception = exceptionOrNull()) {
+        null -> onSuccess(value as T)
+        else -> onFailure(exception)
+    }
+}
+```
+
+As we can see, the `fold` function is not only used to apply side effects. It can be used to transform a `Result` to another type. In fact, many of the transformations we've seen so far are shorthands for the application of `fold` function in particular cases.
+
+The above example can be rewritten using the `fold` function as follows:
+
+```kotlin
+maybeSalary.fold({
+    println("The salary of jobId $notFoundJobId is $it")
+}, {
+    when (it) {
+        is IllegalArgumentException -> println("The amount must be positive")
+        else -> println("An error occurred ${it.message}")
+    }
+})
+```
+
+As we saw in the previous article, when dealing with _effects_, _monads_, _container types_ or whatever we want to call them, one crucial point is how we can compose and combine them. For example, let say we want to refactor the example of retrieving the gap between the salary of a job with the maximum salary available in the database. First, we need to add the `findAll` function to the `Jobs` interface and implementation:
+
+```kotlin 
+interface Jobs {
+
+    fun findAll(): Result<List<Job>>
+    // Omissis...
+}
+
+class LiveJobs : Jobs {
+
+    override fun findAll(): Result<List<Job>> = 
+        Result.success(JOBS_DATABASE.values.toList())
+    // Omissis...
+}
+```
+
+To calculate the gap with the max salary, we need to both retrieve a job with a given id, and all the jobs available. So, we need to compose two `Result` instances.
 
 
