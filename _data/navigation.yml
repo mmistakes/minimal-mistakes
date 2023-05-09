@@ -9,7 +9,7 @@ main:
   - title: "공부내역"
     sublinks:
     - title : python
-    - url: /tags/#python
+      url: /tags/#python
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
