@@ -6,6 +6,8 @@ main:
      url: /about/
    - title: "Abstract Submission"
      url: /abstract/
+   - title: "News"
+     url: /news/
    - title: "Practical Information"
      url: /info/
    - title: "Program"
