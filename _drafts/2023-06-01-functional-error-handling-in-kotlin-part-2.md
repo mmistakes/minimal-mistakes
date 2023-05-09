@@ -329,16 +329,28 @@ To calculate the gap with the max salary, we need to both retrieve a job with a 
 
 The Kotlin SDK doesn't provide any form of `flatMap` like function for the `Result` type. So, how the heck can we compose subsequent computations resulting in a `Result`? Remember that two of the most important principle of Kotlin are pragmatism and ergonomic. If we think about it, we already have all the tools to build some monadic style list-comprehension without the need of using `flatMap`. 
 
-For sure, it should be sound very strange that Kotlin provides so many `getOrSomething` types of functions. One of the main properties of monadic list-comprehension is the ability to short-circuit the computation if one of the steps fails. Exceptions are very good at doing short-circuiting, so why not use them? We saw that on a `Result` we can call the `getOrThrow` function to get the value of a `Result` or throw an exception if the `Result` is a failure. So, we can use the `getOrThrow` function to short-circuit the computation if one of the steps fails. However, we don't want to deal with raw exceptions handling in our program. So, we can use the `runCatching` function to wrap again the computation in a `Result`:
+For sure, it should be sound very strange that Kotlin provides so many `getOrSomething` types of functions. One of the main properties of monadic list-comprehension is the ability to short-circuit the computation if one of the steps fails. Exceptions are very good at doing short-circuiting, so why not use them? We saw that on a `Result` we can call the `getOrThrow` function to get the value of a `Result` or throw an exception if the `Result` is a failure. So, we can use the `getOrThrow` function to short-circuit the computation if one of the steps fails. However, we don't want to deal with raw exceptions handling in our program. So, we can use the `runCatching` function to wrap again the computation in a `Result`.
+
+To make the code we'll use more readable, first, we define an extension function that returns the maximum salary of a list of `Job`:
+
+```kotlin
+fun List<Job>.maxSalary(): Result<Salary> = runCatching {
+    if (this.isEmpty()) {
+        throw NoSuchElementException("No job present")
+    } else {
+        this.maxBy { it.salary.value }.salary
+    }
+}
+```
+
+We decided to throw a `NoSuchElementException` if the list is empty, wrapping all together in a `Result`. Then, we can use the new function to implement the `getSalaryGapWithMax` function as follows:
 
 ```kotlin
 fun getSalaryGapWithMax(jobId: JobId): Result<Double> = runCatching {
     val maybeJob: Job? = jobs.findById(jobId).getOrThrow()
-    val jobSalary = maybeJob?.salary ?: throw NoSuchElementException("Job not found")
-    val maxSalary: Salary =
-        jobs.findAll().map { jobsList ->
-            jobsList.maxBy { it.salary.value }.salary
-        }.getOrThrow()
+    val jobSalary = maybeJob?.salary ?: Salary(0.0)
+    val jobList = jobs.findAll().getOrThrow()
+    val maxSalary: Salary = jobList.maxSalary().getOrThrow()
     maxSalary.value - jobSalary.value
 }
 ```
