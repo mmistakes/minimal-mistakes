@@ -11,6 +11,31 @@
           {{ site.masthead_title | default: site.title }}
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
         </a>
+
+        <ul class="visible-links"> <!-- 서브 링크 보여주기-->
+          {%- for link in site.data.navigation.main -%}
+              {% assign class = nil %}
+              {% if page.url contains link.url %}
+                  {% assign class = 'active' %}
+              {% endif %}
+              {% if link.sublinks %}
+                  <li class="dropdown {{ class }}">
+                      <a class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ link.title }}  <i class="fa fa-caret-down fa-sm" aria-hidden="true"></i><span class="caret"></span></a>
+       
+                      <ul class="dropdown-content" >
+                          {% for sublink in link.sublinks %}
+                              <a class = "dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">    {{ sublink.title }}</a>
+                          {% endfor %}
+                      </ul>
+                  </li>
+              {% else %}
+                  <li class="masthead__menu-item">
+                      <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                  </li>
+              {% endif %}
+          {% endfor %}
+       </ul>
+
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
             <li class="masthead__menu-item">
