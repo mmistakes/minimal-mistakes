@@ -22,7 +22,7 @@ subtitle                 : "A conference about transients" # site tagline that a
 name                     : "Nicolas Rodriguez-Segovia"
 description              : "Transients Down Under - 2024 Conference"
 url                      : "https://transientsdownunder.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/home" # the subpath of your site, e.g. "/blog"
+baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "TransientsDownUnder/transientsdownunder.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # ICON! path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -283,9 +283,16 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: splash
+      layout: single
       author_profile: true
       read_time: true
       comments: # true
       share: true
       related: true
+      
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: splash
