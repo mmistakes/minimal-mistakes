@@ -5,11 +5,11 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mm-home-page-feature.jpg
   actions:
-    - label: "<i class='fas fa-download'></i> Register now"
+    - label: "<i class='fas fa-calendar'></i> Register now"
       url: "/registration/"
 excerpt: >
   A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
-  <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0">Latest release v4.24.0</a></small>
+  <small><a href="https://transientsdownunder.github.io/news">Latest Information</a></small>
 feature_row:
   - image_path: /assets/images/mm-customizable-feature.png
     alt: "customizable"
