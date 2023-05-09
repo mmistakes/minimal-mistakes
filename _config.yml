@@ -12,14 +12,14 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "TransientsDownUnder"
 title_separator          : "-"
 subtitle                 : "A conference about transients" # site tagline that appears below site title in masthead
-name                     : "Transients Down Under"
+name                     : "Nicolas Rodriguez-Segovia"
 description              : "Transients Down Under - 2024 Conference"
 url                      : "https://transientsdownunder.github.io/"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,7 +104,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Nicolas Rodriguez-Segovia"
+  name             : "Transients Down Under"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Brief description **Here**."
   location         : "Conference Location -- Details from Ashley"
