@@ -10,6 +10,7 @@ header:
 excerpt: >
   Mon Jan 29 - Fri Feb 2, 2024 @ Swinburne Institute of Technology, Melbourne, Australia.<br />
   <small><a href="https://transientsdownunder.github.io/news">Latest Information</a></small>
+  <small style="font-size:10px;"><a href="https://www.eso.org/public/images/eso2214a/">Background image</a> credit: ESO/VPHAS+ team. Acknowledgement: Cambridge Astronomical Survey Unit</small>
 feature_row:
   - image_path: /assets/images/mm-customizable-feature.png
     alt: "customizable"
