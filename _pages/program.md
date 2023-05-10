@@ -23,11 +23,10 @@ TBD. Table as example, but can use pdf or something else instead.
 ## Monday
 
 | Time        | Speaker | Title          | Abstract |
-|-------------|---------|----------------|----------|
-| 08:00-18:00 | First   | Stars are cool | Twinkle  |
+|-------------|---------|----------------|------------------------------------------------------------|
+| 08:00-18:00 | First   | Stars are cool | Twinkle, twinkle, little star, How I wonder what you are!<br>Up above the world so high, Like a diamond in the sky.<br>Twinkle, twinkle, little star, How I wonder what you are! |
 |             | Second  |                |          |
 |             | Third   |                |          |
-
 ## Tuesday
 ## Wednesday
 ## Thursday
