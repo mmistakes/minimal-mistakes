@@ -8,7 +8,7 @@ header:
     - label: "<i class='fas fa-calendar'></i> Register now"
       url: "/registration/"
 excerpt: >
-  A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
+  Mon Jan 29 - Fri Feb 2, 2024 @ Swinburne Institute of Technology, Melbourne, Australia.<br />
   <small><a href="https://transientsdownunder.github.io/news">Latest Information</a></small>
 feature_row:
   - image_path: /assets/images/mm-customizable-feature.png
