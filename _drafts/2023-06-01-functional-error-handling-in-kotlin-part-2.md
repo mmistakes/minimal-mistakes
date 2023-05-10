@@ -355,6 +355,26 @@ fun getSalaryGapWithMax(jobId: JobId): Result<Double> = runCatching {
 }
 ```
 
+As we can see, we can forget about the `Result` type during the composition process with this approach, focusing on the success values. The rising of exception together with the use of the `runCatching` function allows us to short-circuit the computation if one of the steps fails.
+
+What about the Arrow library and the `Result` type? As we saw for the nullable types, Arrow offers some interesting extension to the basic type. First, Arrow adds the `flatMap` function to the `Result` type. If we are Haskell lovers, we can't live without it, and we can use the `flatMap` to compose subsequent computations resulting in a `Result`. Let's try to rewrite the previous example using the `flatMap` function:
+
+```kotlin
+fun getSalaryGapWithMax2(jobId: JobId): Result<Double> =
+    jobs.findById(jobId).flatMap { maybeJob ->
+        val jobSalary = maybeJob?.salary ?: Salary(0.0)
+        jobs.findAll().flatMap { jobList ->
+            jobList.maxSalary().map { maxSalary ->
+                maxSalary.value - jobSalary.value
+            }
+        }
+    } 
+```
+
+As we said in the previous article, the absence of any native support for monadic list-comprehension in Kotlin makes the code less readable. However, as we saw both for nullable types and for the `Option` type, Arrow gives us a nice DSL, the `result` DSL. 
+
+
+
 
 
 
