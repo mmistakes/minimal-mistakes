@@ -78,18 +78,15 @@ HTTP 요청 -> WAS -> 필터 -> 서블릿 -> 인터셉터1 -> 인터셉터2 -> �
 [스프링 인터셉터](https://kangtaegong.github.io/spring_mvc/springmvc-21/)
 
 ```java
-@Slf4j
 public class LoginCheckInterceptor implements HandlerInterceptor {
     
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String requestURI = request.getRequestURI();
-        log.info("Login 체크 인터셉터 실행 {}", requestURI);
 
         HttpSession session = request.getSession(false);
         
         if(session == null || session.getAttribute(SessionConst.LOGIN_USER) == null) {
-            log.info("미인증 사용자 요청");
 
             /*
             * 인증이 필요한 페이지를 URL로 직접 접근시 LoginForm으로 이동
@@ -103,13 +100,26 @@ public class LoginCheckInterceptor implements HandlerInterceptor {
             response.sendRedirect("/login?redirectURI=" + requestURI);
             return false;
         }
+
+        // 로그인 이후에 강제로 접속 시 list화면으로 내보냄
+        if(requestURI.contains("/modify") || requestURI.contains("/delete")) {
+            if (PostingController.check_posting == null) {
+                response.sendRedirect("/community/list");
+                return false;
+            }
+
+        }
         return true;
     }
 }
 ```
 - 우선 `request.getSession(false)`를 통해서 세션이 존재하면 가져온다.
 - 가져온 세션의 존재 여부를 파악해서 존재하면 그대로 `return true`, 존재하지 않으면 미인증 사용자 요청이므로 if문 조건에 부합하게 된다.
-- 접근한 페이지가 게시글 수정/삭제 페이지라면 로그인 화면으로 리다이렉트 시키고, 이때 리스트 URI를 파라미터로 같이 넘겨준다.
+- 접근한 페이지가 게시글 수정/삭제 페이지라면 로그인 화면으로 리다이렉트 시키고, 이때 게시판 메인 페이지 URI를 파라미터로 같이 넘겨준다.
+- 실제 테스트를 해보니 로그인된 사용자지만 URI를 조작해서 다른 사람의 게시글의 수정/삭제 페이지로 들어갈 수 있었다.
+    - 그리하여  `check_posting` 변수를 만들고, 이를 통해 실제로 게시글 비밀번호 인증을 통해 접근하는 것인지 확인.
+    - 만약 `check_posting` 값이 `null`이라면 인증하지 않은 사용자이기 때문에 게시판 메인 페이지로 이동시킨다.
+
 - 그 외의 인증이 필요한 페이지에 접근시 마찬가지로 로그인 화면으로 리다이렉트 시키고, 파라미터는 현재 접근한 URI정보를 넘겨준다.(로그인이 완료되면 접근 페이지로 바로 이동할 수 있도록)
 
 ## WebConfig
@@ -124,11 +134,8 @@ public class WebConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new LoginCheckInterceptor())
                 .order(1)
-                .addPathPatterns("/community/**")
-                .excludePathPatterns(
-                        "/", "/community/list", "/login", "/join",
-                        "/community/*/read"
-                );
+                .addPathPatterns("/community/**", "/memberInfo/**")
+                .excludePathPatterns("/community/list", "/community/read/*");
     }
 }
 ```

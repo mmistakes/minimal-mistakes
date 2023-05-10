@@ -370,12 +370,9 @@ public class MemberInfoController {
                                         BindingResult bindingResult, Model model) {
         User session_user = LoginSessionCheck.check_loginUser(request);
 
-        /*
-        * 회원 탈퇴 로직
-        * 성공하면 true
-        * 실패하면 false
-        * */
-        Boolean check_password = userService.membership_withdrawal_pass(session_user, passwordDto.getPassword());
+
+        // 회원 탈퇴 로직(성공 여부 : true/false)
+        Boolean check_password = userService.membership_withdrawal_checkPw(session_user, passwordDto.getPassword());
 
         if (check_password) {
             HttpSession session = request.getSession(false);
@@ -391,7 +388,7 @@ public class MemberInfoController {
     }
 }
 ```
-- UserService의 `membership_withdrawal_pass`메소드를 통해서 사용자가 입력한 패스워드가 회원의 패스워드와 일치한지 체크
+- UserService의 `membership_withdrawal_pass()`메소드를 통해서 사용자가 입력한 패스워드가 회원의 패스워드와 일치한지 체크
 - 일치한다면 세션 정보를 삭제하고, message창을 통해 회원탈퇴가 완료 되었음을 알림.
 - 실패시 팝업창 내에 오류 메시지를 출력하고, 다시 팝업창을 리턴.
 
@@ -417,11 +414,8 @@ public class UserService {
     
     (...)
 
-    /*
-    * 회원 탈퇴시 패스워드 확인 - 인코딩된 패스워드가 입력한 패스워드와 일치하는지 확인
-    *
-    * */
-    public Boolean membership_withdrawal_pass(User sessionUser, String input_password) {
+    // 회원 탈퇴시 패스워드 확인 - 인코딩된 패스워드가 입력한 패스워드와 일치하는지 확인
+    public Boolean membership_withdrawal_checkPw(User sessionUser, String input_password) {
 
         if(bCryptPasswordEncoder.matches(input_password, sessionUser.getPassword())) {
             /*
