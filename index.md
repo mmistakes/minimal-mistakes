@@ -3,7 +3,7 @@ layout: splash
 permalink: /
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/mm-home-page-feature.jpg
+  overlay_image: /assets/images/eso_header.jpg
   actions:
     - label: "<i class='fas fa-calendar'></i> Register now"
       url: "/registration/"
