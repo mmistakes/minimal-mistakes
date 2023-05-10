@@ -122,6 +122,7 @@ public class LoginController {
 
         return "redirect:/";
     }
+}
 ```
 - `bindingResult`에 값이 들어있으면 다시 로그인 페이지로 이동(로그인 실패)
 - Service 로직을 통해서 값을 가져오는데 실패(null)하면 `bindingResult`에 오류 정보를 넣고, 다시 로그인 페이지로 이동

@@ -184,7 +184,7 @@ public class JoinFailException extends RuntimeException{
 }
 ```
 
-### UserController
+### JoinController
 
 ```java
     @PostMapping("/join")
