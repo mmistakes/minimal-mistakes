@@ -267,3 +267,128 @@ function foo() {}
 호출할 수 없는 객체는 함수 객체가 아니므로 함수로서 기능하는 객체, 즉 함수 객체는 반드시 callable이어야 한다. 따라서 모든 함수 객체는 내부 메서드 [[Call]]을 갖고 있으므로 호출할 수 있다. 하지만 모든 함수 객체가 [[Construct]]를 갖는 것은 아니다. 다시 말해, 함수 객체는 construtor일 수도 있고 non-constructor일 수도 있다. 
 
 결론적으로 함수 객체는 callable이면서 constructor이거나 callable이면서 non-constructor다. 즉, 모든 함수 객체는 호출할 수 있지만 모든 함수 객체를 생성자 함수로서 호출할 수 있는 것은 아니다. 
+
+<img src="/assets/images/constructor1.jpg">
+
+### constructor와  non-constructor의 구분
+
+자바스크립트 엔진은 함수 정의를 평가하여 함수 객체를 생성할 때 함수 정의 방식에 따라 함수를 constructor와 non-constructor로 구분한다.
+
+* constructor: 함수 선언문, 함수 표현식, 클래스(클래스도 함수다)
+* non-constructor: 메서드(ES6 메서드 축약 표현), 화살표 함수
+
+이때 주의할 것은 ECMAScript 사양에서 메서드로 인정하는 범위가 일반적인 의미의 메서드보다 좁다는 것이다.
+
+```javascript
+// 일반 함수 정의: 함수 선언문, 함수 표현식
+function foo() {}
+const bar = function () {};
+// 프로퍼티 x의 값으로 할당된 것은 일반 함수로 정의된 함수다. 이는 메서드로 인정하지 않는다.
+const baz = {
+    x: function () {}
+};
+
+// 일반 함수로 정의된 함수만이 constructor다.
+new foo(); // -> foo {}
+new bar(); // -> bar {}
+new baz.x(); // -> x {}
+
+// 화살표 함수 정의
+const arrow = () => {};
+
+new arrow(); // TypeError: arrow is not a constructor
+
+// 메서드 정의: ES6의 메서드 축약 표현만 메서드로 인정한다.
+const obj = {
+    x() {}
+};
+new obj.x(); // TypeError: obj.x is not a constructor
+```
+
+함수를 프로퍼티 값으로 사용하면 일반적으로 메서드로 통칭한다. 하지만 ECMAScript 사양에서 메서드란 ES6의 메서드 축약 표현만을 의미한다. 다시 말해 함수가 어디에 할당되어 있는지에 따라 메서드인지를 판단하는 것이 아니라 함수 정의 방식에 따라 constructor와 non-constructor를 구분한다. 따라서 위 예제와 같이 일반 함수, 즉 함수 선언문과 함수 표현식으로 정의된 함수만이 constructor이고 ES6의 화살표 함수와 메서드 축약 표현으로 정의된 함수는 non-constructor다.
+
+### new 연산자
+
+일반 함수와 생성자 함수에 특별한 형식적 차이는 없다. new 연산자와 함께 함수를 호출하면 해당 함수는 생성자 함수로 동작한다.
+
+```javascript
+// 생성자 함수로서 정의하지 않은 일반 함수
+function add(x, y) {
+    return x + y;
+}
+
+// 생성자 함수로서 정의하지 않은 일반 함수를 new 연산자와 함께 호출
+let inst = new add();
+
+// 함수가 객체를 반환하지 않았으므로 반환문이 무시된다. 따라서 빈 객체가 생성되어 반환된다.
+console.log(inst); // {}
+
+// 객체를 반환하는 일반 함수
+function createUser(name, role) {
+    return {name, role};
+}
+
+// 일반 함수를 new 연산자와 함께 호출
+inst = new createUser('Kwon', 'admin');
+// 함수가 생성한 객체를 반환한다.
+console.log(inst); // {name: "Kwon", role: "admin"}
+```
+
+반대로 new 연산자 없이 생성자 함수를 호출하면 일반 함수로 호출된다. 
+
+```javascript
+// 생성자 함수
+function Circle(radius) {
+    this.radius = radius; 
+    this.getDiameter = function () {
+        return 2 * this.radius;
+    };
+}
+
+// new 연산자 없이 생성자 함수를 호출하면 일반 함수로서 호출된다.
+const circle = Circle(5);
+console.log(circle); // undefined
+
+// 일반 함수 내부와 this는 전역 객체 window를 가리킨다.
+console.log(radius); // 5
+console.log(getDiameter()); // 10
+
+circle.getDiameter();
+// TypeError: Cannot read property 'getDiameter' of undefined
+```
+
+Circle 함수를 생성자 함수로 호출하면 함수 내부의 this는 해당 생성자 함수가 생성할 인스턴스를 가리키지만, 일반 함수로 호출하면 this는 전역 객체 window를 가리킨다.
+
+따라서 위 예제처럼 Circle 함수를 일반 함수로 호출하면 radius 프로퍼티와 getDiameter 메서드가 전역 객체의 프로퍼티와 메서드로 정의된다.
+
+일반 함수와 생성자 함수에 특별한 형식적 차이는 없다. 따라서 생성자 함수는 일반적으로 첫 문자를 대문자로 기술하는 파스칼 케이스로 명명하여 일반 함수와 구별할 수 있도록 노력한다.
+
+### new.target
+
+ES6에서는 new.target 메타 프로퍼티를 제공하여 생성자 함수가 new 연산자 없이 호출되는 것을 방지한다. 
+
+함수 내부에서 new.target을 사용하면 함수가 생성자 함수로서 호출되었는지 확인할 수 있다. **new 연산자와 함께 생성자 함수로서 호출된 경우 new.target은 함수 자신을 가리키고, 일반 함수로 호출된 경우 undefined를 반환한다.** 
+
+이를 활용하여 생성자 함수로서 호출되지 않은 경우 재귀 호출을 통해 생성자 함수로서 호출할 수 있다.
+
+```javascript
+// 생성자 함수
+function Circle(radius) {
+    // 이 함수가 new 연산자와 함께 호출되지 않았다면 new.target은 undefined다.
+    if (!new.target) {
+        // new 연산자와 함께 생성자 함수를 재귀 호출하여 생성된 인스턴스를 반환한다.
+        return new Circle(radius);
+    }
+    this.radius = radius;
+    this.getDiameter = function () {
+        return 2 * this.radius;
+    };
+}
+
+// new 연산자 없이 생성자 함수를 호출하여도 new.target을 통해 생성자 함수로서 호출된다.
+const circle = Circle(5);
+console.log(circle.getDiameter());
+```
+
+> **<span style='color: grey'>이웅모, "모던 자바스크립트 Deep Dive", 위키북스(2020), p233-248.</span>**
+
