@@ -24,7 +24,7 @@ main:
     - title: "Psychiatric Phenotypes"
       url: /docs/phenotypes
     - title: "Sample Characteristics"
-       url: /docs/sample_characteristics
+      url: /docs/sample_characteristics
 - title: Imaging
   sublinks: 
     - title: "Neuroimaging"
