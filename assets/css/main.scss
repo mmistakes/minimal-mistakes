@@ -4,6 +4,11 @@ search: false
 ---
 
 @charset "utf-8";
+.page__meta-sep::before {
+  content: "\2023";
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
