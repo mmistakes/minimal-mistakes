@@ -1,7 +1,27 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    - title: About Me
+    url: /
+  - title: python
+    url: /python/
+  - title: go
+    url: /go/
+  - title: c
+    url: /c/
+  - title: kuernetes
+    url: /kuernetes/
+  - title: linux
+    url: /linux/
+  - title: Blogs
+    url: /blogs/ 
+  #- title: "About Me"
+  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  #- title: "python"
+  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  #- title: "go"
+  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  #- title: "blog"
+  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
