@@ -14,6 +14,7 @@ layouts_gallery:
     alt: "archive layout example"
 last_modified_at: 2023-05-10T13:25:00+10:00
 toc: true
+toc_sticky: true
 ---
 
 This conference will bring together international researchers working in transient astronomy and gravitational wave electromagnetic follow up to share ideas, strategies, tools, and recent progress in research (observation and theory), instrumentation, and data processing and analysis techniques. 

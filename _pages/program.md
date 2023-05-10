@@ -14,6 +14,7 @@ layouts_gallery:
     alt: "archive layout example"
 last_modified_at: 2023-05-10T13:45:00+10:00
 toc: true
+toc_sticky: true
 ---
 
 TBD. Table as example, but can use pdf or something else instead.
@@ -22,10 +23,11 @@ TBD. Table as example, but can use pdf or something else instead.
 ## Monday
 
 | Time        | Speaker | Title          | Abstract |
-|-------------|---------|----------------|------------------------------------------------------------|
-| 08:00-18:00 | First   | Stars are cool | Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are! |
+|-------------|---------|----------------|----------|
+| 08:00-18:00 | First   | Stars are cool | Twinkle  |
 |             | Second  |                |          |
 |             | Third   |                |          |
+
 ## Tuesday
 ## Wednesday
 ## Thursday
