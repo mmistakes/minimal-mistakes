@@ -14,7 +14,7 @@ main:
     - title : python
       url: /tags/#python
     - title : C++
-      url:  /test
+      url:  /c++/mfc/%EA%B8%B0%EC%88%A0-C++%EB%AA%A9%EB%A1%9D/
  # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
