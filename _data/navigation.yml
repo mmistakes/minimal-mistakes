@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: Blogs
-    url: /
+  - title: About Me
+    url: /About Me/
   - title: python
     url: /python/
   - title: go
@@ -12,8 +12,8 @@ main:
     url: /kuernetes/
   - title: linux
     url: /linux/
-  - title: About Me
-    url: /AboutMe/
+  - title: Blogs
+    url: /Blogs/
   #- title: "About Me"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   #- title: "python"
