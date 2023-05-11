@@ -371,7 +371,19 @@ fun getSalaryGapWithMax2(jobId: JobId): Result<Double> =
     } 
 ```
 
-As we said in the previous article, the absence of any native support for monadic list-comprehension in Kotlin makes the code less readable. However, as we saw both for nullable types and for the `Option` type, Arrow gives us a nice DSL, the `result` DSL. 
+As we said in the previous article, the absence of any native support for monadic list-comprehension in Kotlin makes the code less readable if we use sequences of `flatMap` and `map` invocations. However, as we saw both for nullable types and for the `Option` type, Arrow gives us a nice DSLs to deal with the readability problem. For the `Result`type, the DSL is called `result`.
+
+```kotlin
+fun getSalaryGapWithMax3(jobId: JobId): Result<Double> = result.eager {
+    val maybeJob: Job? = jobs.findById(jobId).bind()
+    val job = ensureNotNull(maybeJob) { NoSuchElementException("Job not found") }
+    val jobSalary = maybeJob.salary
+    val jobList = jobs.findAll().bind()
+    val maxSalary: Salary = jobList.maxSalary().bind()
+    maxSalary.value - jobSalary.value
+}
+```
+
 
 
 
