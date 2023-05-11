@@ -24,8 +24,8 @@ description              : "Technology Changes Life, Learning Changes Yourself"
 url                      : "https://technology1521.github.io/technology1521.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "technology1521.github.io/technology1521.com" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : /assets/images/500x300.png # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "favicon-32x32.png"# path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+teaser                   : "/assets/images/500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "/assets/images/favicon-32x32.png"# path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -113,7 +113,8 @@ author:
   location         : "HangZhou_CN"
   email            :
   links:
-    - label: "Email"
+    #- label: "Email"
+    - label: "technology1521@163.com"
       icon: "fas fa-fw fa-envelope-square"
       url: "technology1521@163.com"
     - label: "Website"
