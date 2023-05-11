@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /AboutMe/index.html
+permalink: /About Me/index.html
 title: About Me
 ---
 
