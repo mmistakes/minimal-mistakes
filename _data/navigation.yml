@@ -8,6 +8,8 @@ main:
     sublinks:
     - title : python
       url: /tags/#python
+    - title : AI 그림 그리기
+      url : /test
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
