@@ -13,7 +13,7 @@ main:
   - title: linux
     url: /linux/
   - title: About Me
-    url: /About Me/ 
+    url: /About Me.md
   #- title: "About Me"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   #- title: "python"
