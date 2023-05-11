@@ -371,15 +371,38 @@ fun getSalaryGapWithMax2(jobId: JobId): Result<Double> =
     } 
 ```
 
-As we said in the previous article, the absence of any native support for monadic list-comprehension in Kotlin makes the code less readable if we use sequences of `flatMap` and `map` invocations. However, as we saw both for nullable types and for the `Option` type, Arrow gives us a nice DSLs to deal with the readability problem. For the `Result`type, the DSL is called `result`.
+As we said in the previous article, the absence of any native support for monadic list-comprehension in Kotlin makes the code less readable if we use sequences of `flatMap` and `map` invocations. However, as we saw both for nullable types and for the `Option` type, Arrow gives us a nice DSLs to deal with the readability problem. For the `Result`type, the DSL is called `result`:
+
+```kotlin
+// Arrow SDK
+public object result {
+    public inline fun <A> eager(crossinline f: suspend ResultEagerEffectScope.() -> A): Result<A> 
+    // Omissis
+
+    public suspend inline operator fun <A> invoke(crossinline f: suspend ResultEffectScope.() -> A): Result<A> 
+    // Omissis
+}
+```
+
+Both the `suspend` and the `eager` ve   rsion of the DSL define a scope as receiver, respectively `arrow.core.continuations.ResultEffectScope` and `arrow.core.continuations.ResultEagerEffectScope`.
+
+This time, we'll change a little the main workflow of the example. We'll use a `NoSuchElementException` to signal the job with the given `jobId` is not present in the database.
+
+As for the nullable types and the `Option` type, the `result` DSL gives us the `bind` extension function to unwrap the value of a `Result` and use it in the next computation. If the `Result` is a failure, the `bind` function will short-circuit the computation and return the failure. The `bind` function is defined as an extension function inside the 
 
 ```kotlin
 fun getSalaryGapWithMax3(jobId: JobId): Result<Double> = result.eager {
+    println("Searching for the job with id $jobId")
     val maybeJob: Job? = jobs.findById(jobId).bind()
-    val job = ensureNotNull(maybeJob) { NoSuchElementException("Job not found") }
+    ensureNotNull(maybeJob) { NoSuchElementException("Job not found") }
     val jobSalary = maybeJob.salary
+    println("Job found: $maybeJob")
+    println("Getting all the available jobs")
     val jobList = jobs.findAll().bind()
+    println("Jobs found: $jobList")
+    println("Searching for max salary")
     val maxSalary: Salary = jobList.maxSalary().bind()
+    println("Max salary found: $maxSalary")
     maxSalary.value - jobSalary.value
 }
 ```
