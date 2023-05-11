@@ -17,13 +17,14 @@ toc: true
 toc_sticky: true
 ---
 
-This conference will bring together international researchers working in transient astronomy and gravitational wave electromagnetic follow up to share ideas, strategies, tools, and recent progress in research (observation and theory), instrumentation, and data processing and analysis techniques. 
+This conference will bring together researchers working in transient astronomy and gravitational wave electromagnetic follow up to share ideas, strategies, tools, and recent progress in research, instrumentation, and data processing and analysis techniques. This is a general transient conference for cataclysmic and GW events that focuses on observational, theory, data science and tools, instrumentation, and cultural astronomy.
 
-## Invited Speakers
+## Confirmed Invited Speakers
 
-- One
-- Two
-- Three
+- Gemma Anderson
+- Iair Arcavi
+- Jarita Holbrook
+- ...
 
 ## SOC
 
