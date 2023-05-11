@@ -57,9 +57,9 @@ This conference will bring together researchers working in transient astronomy a
 
 ## Contact
 
-[Transients Down Under email address](mailto:transientsdownunder2024@gmail.com)
+[email link](mailto:transientsdownunder2024@gmail.com) to transientsdownunder2024 [at] gmail . com
 
 ## Sponsors
 
-{% include gallery id="layouts_gallery" caption="Relevant logos instead of these images." %}
+<!--{% include gallery id="layouts_gallery" caption="Relevant logos instead of these images." %}-->
 ![ozgrav_logo_array_tk005_final_invert](https://github.com/TransientsDownUnder/transientsdownunder.github.io/assets/125625411/6462a77e-cf1b-4a53-81ad-0695d42a0a7e)
