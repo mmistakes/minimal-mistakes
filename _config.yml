@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -20,7 +20,7 @@ title                    : "DragonPS"
 title_separator          : "|"
 subtitle                 : "for tomorrow's me"
 name                     : "ParkUiYong"
-description              : "개발 및 일상 블로그입니다."
+description              : "의용의 소프트웨어 개발 및 일상 블로그입니다."
 url                      : "https://upark153.github.io"
 baseurl                  : 
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
