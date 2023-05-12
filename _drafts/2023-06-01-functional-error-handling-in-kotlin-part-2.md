@@ -384,11 +384,21 @@ public object result {
 }
 ```
 
-Both the `suspend` and the `eager` ve   rsion of the DSL define a scope as receiver, respectively `arrow.core.continuations.ResultEffectScope` and `arrow.core.continuations.ResultEagerEffectScope`.
+Both the `suspend` and the `eager` version of the DSL define a scope as receiver, respectively `arrow.core.continuations.ResultEffectScope` and `arrow.core.continuations.ResultEagerEffectScope`. As we did in the previous article, we'll use the _eager_ flavor of the DSL.
 
-This time, we'll change a little the main workflow of the example. We'll use a `NoSuchElementException` to signal the job with the given `jobId` is not present in the database.
+As for the nullable types and the `Option` type, the `result` DSL gives us the `bind` extension function to unwrap the value of a `Result` and use it in the next computation. If the `Result` is a failure, the `bind` function will short-circuit the computation and return the failure. The `bind` function is defined as an extension function inside the `ResultEagerEffectScope`:
 
-As for the nullable types and the `Option` type, the `result` DSL gives us the `bind` extension function to unwrap the value of a `Result` and use it in the next computation. If the `Result` is a failure, the `bind` function will short-circuit the computation and return the failure. The `bind` function is defined as an extension function inside the 
+```kotlin
+// Arrow SDK
+public value class ResultEagerEffectScope(/* Omissis */) : EagerEffectScope<Throwable> {
+   
+    // Omissis
+    public suspend fun <B> Result<B>.bind(): B =
+        fold(::identity) { shift(it) }
+}
+```
+
+The `shift` function short-circuits the computation and returns the failure, terminating the continuation chain. Remember, Arrow implements all the scopes concerning error handling using a continuation style approach.
 
 ```kotlin
 fun getSalaryGapWithMax3(jobId: JobId): Result<Double> = result.eager {
@@ -407,7 +417,71 @@ fun getSalaryGapWithMax3(jobId: JobId): Result<Double> = result.eager {
 }
 ```
 
+This time, we'll change a little the main workflow of the example. We'll use a `NoSuchElementException` to signal the job with the given `jobId` is not present in the database. We used the `ensureNotNull` function to check if a nullable value is not null and apply. In case of the scope defined in the `result` DSL, the function short-circuit the execution with a `Result` containing the given exception as a failure.
 
+Let's change the `main` function to use the new `getSalaryGapWithMax3` function:
+
+```kotlin
+fun main() {
+    val currencyConverter = CurrencyConverter()
+    val jobs = LiveJobs()
+    val notFoundJobId = JobId(42)
+    val salaryGap: Result<Double> =
+        JobService(jobs, currencyConverter).getSalaryGapWithMax3(notFoundJobId)
+    salaryGap.fold({
+        println("Salary gap for job $notFoundJobId is $it")
+    }, {
+        println("There was an error during execution: $it")
+    })
+}
+```
+
+If we run the previous example giving the `JobId` 42 as input, we'll get the following expected output:
+
+```text
+Searching for the job with id JobId(value=42)
+There was an error during execution: java.util.NoSuchElementException: Job not found
+```
+
+As we can see, the execution was short-circuited when the `ensureNotNull` function returned a `Result` containing the `NoSuchElementException` as a failure. However, be aware that the `result` DSL is not equal to the `runCatching` function. If we throw an exception inside the `result` DSL, it will be propagated to the caller and bubble up through the call stack. Let's try to throw an exception inside the `result` DSL:
+
+```kotlin
+fun main() {
+    val result: Result<Nothing> = result.eager {
+        throw RuntimeException("Boom!")
+    }
+}
+```
+
+If we run the above code, we `RuntimeException` will escape the `result` DSL, printing the following stack trace:
+
+```text
+Exception in thread "main" java.lang.RuntimeException: Boom!
+	at in.rcard.result.ResultTypeErroHandlingKt$main$$inlined$eager-IoAF18A$1.invokeSuspend(result.kt:43)
+	at in.rcard.result.ResultTypeErroHandlingKt$main$$inlined$eager-IoAF18A$1.invoke(result.kt)
+	at in.rcard.result.ResultTypeErroHandlingKt$main$$inlined$eager-IoAF18A$1.invoke(result.kt)
+	at arrow.core.continuations.DefaultEagerEffect$fold$1.invokeSuspend(EagerEffect.kt:190)
+	at arrow.core.continuations.DefaultEagerEffect$fold$1.invoke(EagerEffect.kt)
+	at arrow.core.continuations.DefaultEagerEffect$fold$1.invoke(EagerEffect.kt)
+	at arrow.core.continuations.DefaultEagerEffect.fold(EagerEffect.kt:192)
+	at arrow.core.continuations.ResultKt.toResult(result.kt:10)
+	at in.rcard.result.ResultTypeErroHandlingKt.main(ResultTypeErroHandling.kt:122)
+	at in.rcard.result.ResultTypeErroHandlingKt.main(ResultTypeErroHandling.kt)
+```
+
+If we want to use some computation that can throw an exception, we can use the `runCatching` function inside the `result` DSL:
+
+```kotlin
+fun main() {
+    result.eager {
+        runCatching<Int> {
+            throw RuntimeException("Boom!")
+        }.bind()
+    }
+}
+```
+
+However, sometimes we want to map errors in custom types that don't belong to the `Throwable` hierarchy. For example, we can map a `NoSuchElementException` to a `JobNotFound` type, or any rich and meaningful type we want. To do this, we need another strategy to handle errors. It's time to introduce the `Either` type.
 
 
 
