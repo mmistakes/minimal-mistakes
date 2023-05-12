@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "ParkUiYong"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "의용의 소프트웨어 개발 및 일상 블로그입니다."
+  location         : "South Koera"
+  email            : "yuiyong5204@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
