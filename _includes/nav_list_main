@@ -59,6 +59,15 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "Disc-Math" %}
+                        <li><a href="/categories/disc-math" class="">Discrete Mathematics ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <span class="nav__sub-title">School</span>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "Computer" %}
                         <li><a href="/categories/computer" class="">Computer Fundatmentals ({{category[1].size}})</a></li>
                     {% endif %}
