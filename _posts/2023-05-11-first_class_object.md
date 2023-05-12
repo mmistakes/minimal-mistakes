@@ -6,10 +6,9 @@ tag: [JavaScript]
 toc: true
 author_profile: false
 sidebar:
-  nav: "docs"
+  nav: "counts"
 ---
 
 # 함수와 일급 객체
 
 ## 일급 객체
-

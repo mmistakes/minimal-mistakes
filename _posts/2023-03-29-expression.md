@@ -6,7 +6,7 @@ tag: [JavaScript]
 toc: true
 author_profile: false
 sidebar:
-  nav: "docs"
+  nav: "counts"
 ---
 
 # 표현식과 문

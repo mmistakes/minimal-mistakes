@@ -6,7 +6,7 @@ tag: [JavaScript]
 toc: true
 author_profile: false
 sidebar:
-  nav: "docs"
+  nav: "counts"
 ---
 
 # 제어문
@@ -22,7 +22,7 @@ sidebar:
 ```javascript
 // 블록문
 {
-    var foo = 10;
+  var foo = 10;
 }
 ```
 
@@ -36,9 +36,9 @@ sidebar:
 
 ```javascript
 if (조건식) {
-    // 조건식이 참이면 이 코드 블록이 실행된다.
+  // 조건식이 참이면 이 코드 블록이 실행된다.
 } else {
-    // 조건식이 거짓이면 이 코드 블록이 실행된다.
+  // 조건식이 거짓이면 이 코드 블록이 실행된다.
 }
 ```
 
@@ -50,38 +50,38 @@ var kind;
 
 // if 문
 if (num > 0) {
-    kind = '양수'; // 음수는 구별할 수 없다.
+  kind = "양수"; // 음수는 구별할 수 없다.
 }
 console.log(kind); // 양수
 
 // if ... else 문
 if (num > 0) {
-    kind = '양수';
+  kind = "양수";
 } else {
-    kind = '음수'; // 0은 음수가 아니다.
+  kind = "음수"; // 0은 음수가 아니다.
 }
 console.log(kind); // 양수
 
 // if ... else if 문
 if (num > 0) {
-    kind = '양수';
+  kind = "양수";
 } else if (num < 0) {
-    kind = '음수';
+  kind = "음수";
 } else {
-    kind = '영';
+  kind = "영";
 }
 console.log(kind); // 양수
 ```
 
-**만약 코드 블록 내의 문이 하나뿐이라면 중괄호를 생략할 수 있다.** 
+**만약 코드 블록 내의 문이 하나뿐이라면 중괄호를 생략할 수 있다.**
 
 ```javascript
 var num = 2;
 var kind;
 
-if (num > 0) kind = '양수';
-else if (num < 0) kind = '음수';
-else kind = '영';
+if (num > 0) kind = "양수";
+else if (num < 0) kind = "음수";
+else kind = "영";
 
 console.log(kind); //양수
 ```
@@ -107,7 +107,5 @@ while 문은 주어진 조건식의 평가 결과가 참이면 코드 블록을 
 ### do ... while 문
 
 do ... while 문은 코드 블록을 먼저 실행하고 조건식을 평가한다. 따라서 코드 블록은 무조건 한 번 이상 실행된다.
-
-
 
 > **<span style='color: grey'>이웅모, "모던 자바스크립트 Deep Dive", 위키북스(2020), p93-107.</span>**

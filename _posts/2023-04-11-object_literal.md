@@ -6,7 +6,7 @@ tag: [JavaScript]
 toc: true
 author_profile: false
 sidebar:
-  nav: "docs"
+  nav: "counts"
 ---
 
 # 객체 리터럴
@@ -25,20 +25,20 @@ sidebar:
 
 <img src="/assets/images/object10-2.jpg">
 
-* **프로퍼티**: 객체의 상태를 나타내는 값(data)
-* **메서드**: 프로퍼티(상태 데이터)를 참조하고 조작할 수 있는 동작(behavior)
+- **프로퍼티**: 객체의 상태를 나타내는 값(data)
+- **메서드**: 프로퍼티(상태 데이터)를 참조하고 조작할 수 있는 동작(behavior)
 
 ## 객체 리터럴에 의한 객체 생성
 
-C++나 자바 같은 클래스 기반 객체지향 언어는 클래스를 사전에 정의하고 필요한 시점에 new 연산자와 함께 생성자<sup>constructor</sup>를 호출하여 인스턴스를 생성하는 방식으로 객체를 생성한다. 
+C++나 자바 같은 클래스 기반 객체지향 언어는 클래스를 사전에 정의하고 필요한 시점에 new 연산자와 함께 생성자<sup>constructor</sup>를 호출하여 인스턴스를 생성하는 방식으로 객체를 생성한다.
 
 자바스크립트는 프로토타입 기반 객체지향 언어로서 클래스 기반 객체지향 언어와는 달리 다양한 객체 생성 방법을 지원한다.
 
-* 객체 리터럴
-* Object 생성자 함수
-* 생성자 함수
-* Object.create 메서드
-* 클래스(ES6)
+- 객체 리터럴
+- Object 생성자 함수
+- 생성자 함수
+- Object.create 메서드
+- 클래스(ES6)
 
 가장 일반적이고 간단한 방법은 객체 리터럴을 사용하는 방법이다. 객체 리터럴은 객체를 생성하기 위한 표기법이다.
 
@@ -46,10 +46,10 @@ C++나 자바 같은 클래스 기반 객체지향 언어는 클래스를 사전
 
 ```javascript
 var person = {
-    name: 'Lee',
-    sayHello: function () {
-        console.log(`Hello! My name is ${this.name}.`);
-    }
+  name: "Lee",
+  sayHello: function () {
+    console.log(`Hello! My name is ${this.name}.`);
+  },
 };
 
 console.log(typeof person); // object
@@ -65,21 +65,21 @@ console.log(typeof empty); // object
 
 객체 리터럴은 값으로 평가되는 표현식이다. 따라서 객체 리터럴의 닫는 중괄호 뒤에는 세미콜론을 붙인다.
 
-##  프로퍼티
+## 프로퍼티
 
 **객체는 프로퍼티의 집합이며, 프로퍼티는 키와 값으로 구성된다.**
 
 ```javascript
 var person = {
-    name: 'Lee',
-    age: 20
+  name: "Lee",
+  age: 20,
 };
 ```
 
 프로퍼티 키과 프로퍼티 값으로 사용할 수 있는 값은 다음과 같다.
 
-* **프로퍼티 키**: 빈 문자열을 포함하는 모든 문자열 또는 심벌 값
-* **프로퍼티 값**: 자바스크립트에서 사용할 수 있는 모든 값
+- **프로퍼티 키**: 빈 문자열을 포함하는 모든 문자열 또는 심벌 값
+- **프로퍼티 값**: 자바스크립트에서 사용할 수 있는 모든 값
 
 프로퍼티 키는 프로퍼티 값에 접근할 수 있는 이름으로서 식별자 역할을 한다. 하지만 반드시 식별자 네이밍 규칙을 따라야 하는 것은 아니다. 단, 식별자 네이밍 규칙을 준수하는 프로퍼티 키와 그렇지 않은 프로퍼티 키는 미묘한 차이가 있다.
 
@@ -89,10 +89,10 @@ var person = {
 
 ```javascript
 var obj = {};
-var key = 'hello';
+var key = "hello";
 
 // ES5: 프로퍼티 키 동적 생성
-obj[key] = 'world';
+obj[key] = "world";
 // ES6: 계산된 프로퍼티 이름
 // var obj = { [key]: 'world' };
 
@@ -101,12 +101,12 @@ console.log(obj); // {hello: "world"}
 
 프로퍼티 키에 문자열이나 심벌 값 외의 값을 사용하면 암묵적 타입 변환을 통해 문자열이 된다. 예를 들어, 프로퍼티 키로 숫자 리터럴을 사용하면 따옴표는 붙지 않지만 내부적으로는 문자열로 변환된다.
 
-이미 존재하는 프로퍼티 키를 중복 선언하면 나중에 선언한 프로퍼티가 먼저 선언한 프로퍼티를 덮어쓴다. 이때 에러가 발생하지 앟는다는 점에 주의해야 한다. 
+이미 존재하는 프로퍼티 키를 중복 선언하면 나중에 선언한 프로퍼티가 먼저 선언한 프로퍼티를 덮어쓴다. 이때 에러가 발생하지 앟는다는 점에 주의해야 한다.
 
 ```javascript
 var foo = {
-    name: 'Lee',
-    name: 'Kim',
+  name: "Lee",
+  name: "Kim",
 };
 
 console.log(foo); // {name: "Kim"}
@@ -118,12 +118,13 @@ console.log(foo); // {name: "Kim"}
 
 ```javascript
 var circle = {
-    radius: 5, // 프로퍼티
-    
-    // 원의 지름
-    getDiameter: function () { // 메서드
-        return 2 * this.radius; // this는 circle을 가리킨다.
-    }
+  radius: 5, // 프로퍼티
+
+  // 원의 지름
+  getDiameter: function () {
+    // 메서드
+    return 2 * this.radius; // this는 circle을 가리킨다.
+  },
 };
 
 console.log(circle.getDiameter()); // 10
@@ -133,26 +134,26 @@ console.log(circle.getDiameter()); // 10
 
 프로퍼티에 접근하는 방법은 다음과 같이 두 가지다.
 
-* 마침표 프로퍼티 접근 연산자(.)를 사용하는 **마침표 표기법<sup>dot notation</sup>**
-* 대괄호 프로퍼티 접근 연산자([...])를 사용하는 **대괄호 표기법<sup>bracket notation</sup>**
+- 마침표 프로퍼티 접근 연산자(.)를 사용하는 **마침표 표기법<sup>dot notation</sup>**
+- 대괄호 프로퍼티 접근 연산자([...])를 사용하는 **대괄호 표기법<sup>bracket notation</sup>**
 
 ```javascript
 var person = {
-    name: 'Lee'
+  name: "Lee",
 };
 
 // 마침표 표기법에 의한 프로퍼티 접근
 console.log(person.name); // Lee
 
 // 대괄호 표기법에 의한 프로퍼티 접근
-console.log(person['name']); // Lee
+console.log(person["name"]); // Lee
 ```
 
 대괄호 표기법을 사용하는 경우 **대괄호 프로퍼티 접근 연산자 내부에 지정하는 프로퍼티 키는 반드시 따옴표로 감싼 문자열**이어야 한다. 따옴표로 감싸지 않은 이름을 프로퍼티 키로 사용하면 식별자로 해석한다.
 
 ```javascript
 var person = {
-    name: 'Lee'
+  name: "Lee",
 };
 
 console.log(person[name]); // ReferenceError: name is not defined
@@ -162,7 +163,7 @@ console.log(person[name]); // ReferenceError: name is not defined
 
 ```javascript
 var person = {
-    name: 'Lee'
+  name: "Lee",
 };
 
 console.log(person.age); // undefined
@@ -176,11 +177,11 @@ console.log(person.age); // undefined
 
 ```javascript
 var person = {
-    name: 'Lee'
+  name: "Lee",
 };
 
 // person 객체에 name 프로퍼티가 존재하므로 name 프로퍼티의 값이 갱신된다.
-person.name = 'Kim';
+person.name = "Kim";
 
 console.log(person); // {name: "Kim"}
 ```
@@ -191,7 +192,7 @@ console.log(person); // {name: "Kim"}
 
 ```javascript
 var person = {
-    name: 'Lee'
+  name: "Lee",
 };
 
 // person 객체에는 age 프로퍼티가 존재하지 않는다.
@@ -207,7 +208,7 @@ delete 연산자는 객체의 프로퍼티를 삭제한다. 만약 존재하지 
 
 ```javascript
 var person = {
-    name: 'Lee'
+  name: "Lee",
 };
 
 // 프로퍼티 동적 생성
@@ -230,11 +231,12 @@ console.log(person); // {name: "Lee"}
 
 ```javascript
 // ES5
-var x = 1, y = 2;
+var x = 1,
+  y = 2;
 
 var obj = {
-    x: x,
-    y: y,
+  x: x,
+  y: y,
 };
 
 console.log(obj); // {x: 1, y: 2}
@@ -244,10 +246,11 @@ ES6에서는 프로퍼티 값으로 변수를 사용하는 경우 변수 이름�
 
 ```javascript
 // ES6
-let x = 1, y = 2;
+let x = 1,
+  y = 2;
 
 // 프로퍼티 축약 표현
-const obj = {x, y};
+const obj = { x, y };
 
 console.log(obj); // {x: 1, y: 2}
 ```
@@ -260,32 +263,32 @@ ES5에서 계산된 프로퍼티 이름으로 프로퍼티 키를 동적 생성�
 
 ```javascript
 // ES5
-var prefix = 'prop';
+var prefix = "prop";
 var i = 0;
 
 var obj = {};
 
 // 계산된 프로퍼티 이름으로 프로퍼티 키 동적 생성
 
-obj[prefix + '-' + ++i] = i
-obj[prefix + '-' + ++i] = i
-obj[prefix + '-' + ++i] = i
+obj[prefix + "-" + ++i] = i;
+obj[prefix + "-" + ++i] = i;
+obj[prefix + "-" + ++i] = i;
 
 console.log(obj); // {prop-1: 1, prop-2: 2, prop-3: 3}
 ```
 
-ES6에서는 객체 리터럴 내부에서도 계산된 프로퍼티 이름으로 프로퍼티 키를 동적 생성할 수 있다. 
+ES6에서는 객체 리터럴 내부에서도 계산된 프로퍼티 이름으로 프로퍼티 키를 동적 생성할 수 있다.
 
 ```javascript
 // ES6
-const prefix = 'prop';
+const prefix = "prop";
 let i = 0;
 
 // 객체 리터럴 내부에서 계산된 프로퍼티 이름으로 프로퍼티 키를 동적 생성
 const obj = {
-    [`${prefix}-${++i}`]: i,
-    [`${prefix}-${++i}`]: i,
-    [`${prefix}-${++i}`]: i,
+  [`${prefix}-${++i}`]: i,
+  [`${prefix}-${++i}`]: i,
+  [`${prefix}-${++i}`]: i,
 };
 
 console.log(obj); // {prop-1: 1, prop-2: 2, prop-3: 3}
@@ -298,10 +301,10 @@ ES5에서 메서드를 정의하려면 프로퍼티 값으로 함수를 할당�
 ```javascript
 // ES5
 var obj = {
-    name: 'Lee',
-    sayHi: function() {
-        console.log('Hi! ' + this.name);
-    }
+  name: "Lee",
+  sayHi: function () {
+    console.log("Hi! " + this.name);
+  },
 };
 
 obj.sayHi(); // Hi! Lee
@@ -312,11 +315,11 @@ ES6에서는 메서드를 정의할 때 function 키워드를 생략한 축약 �
 ```javascript
 // ES6
 const obj = {
-    name: 'Lee',
-    // 메서드 축약 표현
-    sayHi() {
-        console.log('Hi! ' + this.name);
-    }
+  name: "Lee",
+  // 메서드 축약 표현
+  sayHi() {
+    console.log("Hi! " + this.name);
+  },
 };
 
 obj.sayHi(); // Hi! Lee

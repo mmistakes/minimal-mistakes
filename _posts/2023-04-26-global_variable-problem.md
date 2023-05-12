@@ -6,12 +6,10 @@ tag: [JavaScript]
 toc: true
 author_profile: false
 sidebar:
-  nav: "docs"
+  nav: "counts"
 ---
 
 # 전역 변수의 문제점
-
-
 
 **<mark>전역 변수의 무분별한 사용은 위험하다. 전역 변수를 반드시 사용해야 할 이유를 찾지 못한다면 지역 변수를 사용해야 한다.</mark>**
 
@@ -21,13 +19,13 @@ sidebar:
 
 변수는 생물과 유사하게 생성되고 소멸되는 생명 주기<sup>life cycle</sup>가 있다. 변수에 생명 주기가 없다면 한번 선언된 변수는 프로그램을 종료하지 않는 한 영원히 메모리 공간을 점유하게 된다.
 
-변수는 자신이 선언된 위치에서 생성되고 소멸한다. 전역 변수의 생명 주기는 애플리케이션의 생명 주기와 같다. 하지만 함수 내부에서 선언된 지역 변수는 함수가 호출되면 생성되고 함수가 종료하면 소멸한다. 
+변수는 자신이 선언된 위치에서 생성되고 소멸한다. 전역 변수의 생명 주기는 애플리케이션의 생명 주기와 같다. 하지만 함수 내부에서 선언된 지역 변수는 함수가 호출되면 생성되고 함수가 종료하면 소멸한다.
 
 ```javascript
 function foo() {
-    var x = 'local';
-    console.log(x); // local
-    return x;
+  var x = "local";
+  console.log(x); // local
+  return x;
 }
 
 foo();
@@ -38,18 +36,18 @@ console.log(x); // ReferenceError: x is not defined
 
 <img src="/assets/images/global_variable1.jpg">
 
-함수 몸체 내부에서 선언된 지역 변수의 생명 주기는 함수의 생명 주기와 대부분 일치하지만 지역 변수가 함수보다 오래 생존하는 경우도 있다. 
+함수 몸체 내부에서 선언된 지역 변수의 생명 주기는 함수의 생명 주기와 대부분 일치하지만 지역 변수가 함수보다 오래 생존하는 경우도 있다.
 
 변수는 하나의 값을 저장하기 위해 확보한 메모리 공간 자체 또는 그 메모리 공간을 식별하기 위해 붙인 이름이다. 따라서 변수의 생명 주기는 메모리 공간이 확보<sup>allocate</sup>된 시점부터 메모리 공간이 해제<sup>release</sup>되어 가용 메모리 풀<sup>memory pool</sup>에 반환되는 시점까지다.
 
 누군가 메모리 공간을 참조하고 있으면 해제되지 않고 확보된 상태로 남아있게 된다. 이는 스코프도 마찬가지다. 누군가 스코프를 참조하고 있으면 스코프는 소멸하지 않고 생존하게 된다.
 
 ```javascript
-var x = 'global';
+var x = "global";
 
 function foo() {
-    console.log(x); // ①
-    var x = 'local';
+  console.log(x); // ①
+  var x = "local";
 }
 foo();
 console.log(x); // global
@@ -65,7 +63,7 @@ foo 함수 내부에서 선언된 지역 변수 x는 ①의 시점에 이미 선
 
 var 키워드로 선언한 전역 변수는 전역 객체의 프로퍼티가 된다. 이는 전역 변수의 생명 주기가 전역 객체의 생명 주기와 일치한다는 것을 말한다.
 
-브라우저 환경에서 전역 객체는 window이므로 브라우저 환경에서 var 키워드로 선언한 전역 변수는 전역 객체 window의 프로퍼티다. 전역 객체 window는 웹페이지를 닫기 전까지 유효하다. 따라서 브라우저 환경에서 var 키워드로 선언한 전역 변수는 웹페이지를 닫을 때까지 유효하다. 즉, **var 키워드로 선언한 전역 변수의 생명 주기는 전역 객체의 생명 주기와 일치한다.** 
+브라우저 환경에서 전역 객체는 window이므로 브라우저 환경에서 var 키워드로 선언한 전역 변수는 전역 객체 window의 프로퍼티다. 전역 객체 window는 웹페이지를 닫기 전까지 유효하다. 따라서 브라우저 환경에서 var 키워드로 선언한 전역 변수는 웹페이지를 닫을 때까지 유효하다. 즉, **var 키워드로 선언한 전역 변수의 생명 주기는 전역 객체의 생명 주기와 일치한다.**
 
 <img src="/assets/images/global_variable2.jpg">
 
@@ -77,7 +75,7 @@ var 키워드로 선언한 전역 변수는 전역 객체의 프로퍼티가 된
 
 <span style='color:green'>긴 생명 주기</span>
 
-**전역 변수는 생명 주기가 길다.** 따라서 메모리 리소스도 오랜 기간 소비한다. 또한 전역 변수의 상태를 변경할 수 있는 시간도 길고 기회도 많다. 더욱이 var 키워드는 변수의 중복 선언을 허용하므로 생명 주기가 긴 전역 변수는 변수 이름이 중복될 가능성이 있다. 변수 이름이 중복되면 의도치 않은 재할당이 이뤄진다. 
+**전역 변수는 생명 주기가 길다.** 따라서 메모리 리소스도 오랜 기간 소비한다. 또한 전역 변수의 상태를 변경할 수 있는 시간도 길고 기회도 많다. 더욱이 var 키워드는 변수의 중복 선언을 허용하므로 생명 주기가 긴 전역 변수는 변수 이름이 중복될 가능성이 있다. 변수 이름이 중복되면 의도치 않은 재할당이 이뤄진다.
 
 <span style='color:green'>스코프 체인 상에서 종점에 존재</span>
 
@@ -97,9 +95,9 @@ var 키워드로 선언한 전역 변수는 전역 객체의 프로퍼티가 된
 
 ```javascript
 (function () {
-    var foo = 10; // 즉시 실행 함수의 지역 변수
-    // ...
-}());
+  var foo = 10; // 즉시 실행 함수의 지역 변수
+  // ...
+})();
 
 console.log(foo); // ReferenceError: foo is not defined
 ```
@@ -112,7 +110,7 @@ console.log(foo); // ReferenceError: foo is not defined
 
 ```javascript
 var MYAPP = {}; // 전역 네임스페이스 객체
-MYAPP.name = 'Lee';
+MYAPP.name = "Lee";
 console.log(MYAPP.name); // Lee
 ```
 
@@ -121,8 +119,8 @@ console.log(MYAPP.name); // Lee
 ```javascript
 var MYAPP = {}; // 전역 네임스페이스 객체
 MYAPP.person = {
-    name: 'Lee',
-    address: 'Seoul'
+  name: "Lee",
+  address: "Seoul",
 };
 console.log(MYAPP.person.name); // Lee
 ```
@@ -141,19 +139,19 @@ console.log(MYAPP.person.name); // Lee
 
 ```javascript
 var Counter = (function () {
-    // private 변수
-    var num = 0;
-    
-    // 외부로 공개할 데이터나 메서드를 프로퍼티로 추가한 객체를 반환한다.
-    return {
-        increase() {
-            return ++num;
-        },
-        decrease() {
-            return --num;
-        }
-    };
-}());
+  // private 변수
+  var num = 0;
+
+  // 외부로 공개할 데이터나 메서드를 프로퍼티로 추가한 객체를 반환한다.
+  return {
+    increase() {
+      return ++num;
+    },
+    decrease() {
+      return --num;
+    },
+  };
+})();
 // private 변수는 외부로 노출되지 않는다.
 console.log(Counter.num); // undefined
 
@@ -163,11 +161,11 @@ console.log(Counter.decrease()); // 1
 console.log(Counter.decrease()); // 0
 ```
 
-위 예제의 즉시 실행 함수는 객체를 반환한다. 이 객체에는 외부에 노출하고 싶은 변수나 함수를 담아 반환한다. 이때 반환되는 객체의 프로퍼티는 외부에 노출되는 퍼블릭 멤버<sup>public member</sup>다. 외부로 노출하고 싶지 않은 변수나 함수는 반환하는 객체에 추가하지 않으면 외부에서 접근할 수 업슨 프라이빗 멤버<sup>private member</sup>가 된다. 
+위 예제의 즉시 실행 함수는 객체를 반환한다. 이 객체에는 외부에 노출하고 싶은 변수나 함수를 담아 반환한다. 이때 반환되는 객체의 프로퍼티는 외부에 노출되는 퍼블릭 멤버<sup>public member</sup>다. 외부로 노출하고 싶지 않은 변수나 함수는 반환하는 객체에 추가하지 않으면 외부에서 접근할 수 업슨 프라이빗 멤버<sup>private member</sup>가 된다.
 
 ### ES6 모듈
 
-ES6 모듈을 사용하면 더는 전역 변수를 사용할 수 없다. **ES6 모듈은 파일 자체의 독자적인 모듈 스코프를 제공한다.** 따라서 모듈 내에서 var 키워드로 선언한 변수는 더는 전역 변수가 아니며 window 객체의 프로퍼티도 아니다. 
+ES6 모듈을 사용하면 더는 전역 변수를 사용할 수 없다. **ES6 모듈은 파일 자체의 독자적인 모듈 스코프를 제공한다.** 따라서 모듈 내에서 var 키워드로 선언한 변수는 더는 전역 변수가 아니며 window 객체의 프로퍼티도 아니다.
 
 모던 브라우저에서는 ES6 모듈을 사용할 수 있다. script 태그에 type="module" 어트리뷰트를 추가하면 로드된 자바스크립트 파일은 모듈로서 동작한다. 모듈의 파일 확장자는 mjs를 권장한다.
 
