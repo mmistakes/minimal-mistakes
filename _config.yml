@@ -19,7 +19,7 @@ locale                   : "Korea"
 title                    : "용용노트"
 title_separator          : "-"
 subtitle                 : "for tomorrow's me"
-name                     : "Park Ui Yong"
+name                     : "ParkUiYong"
 description              : "개발 및 일상 블로그입니다."
 url                      : "https://upark153.github.io"
 baseurl                  : 
