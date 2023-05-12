@@ -6,7 +6,7 @@ tag: [JavaScript]
 toc: true
 author_profile: false
 sidebar:
-  nav: "docs"
+  nav: "counts"
 ---
 
 # 원시 값과 객체의 비교
