@@ -10,9 +10,8 @@ main:
       url : /webui/ai/Ai%EA%B7%B8%EB%A6%BC_%EA%B7%B8%EB%A6%AC%EA%B8%B0%EB%AA%A9%EB%A1%9D/
     - title : DWIN
       url : /gdxg
-    -title : 개발 진행 내역
+    - title : 개발 진행 내역
      url : /test
-
   - title: "공부내역"
     sublinks:
     - title : python
