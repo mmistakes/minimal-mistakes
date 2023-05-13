@@ -10,7 +10,7 @@ main:
       url : /webui/ai/Ai%EA%B7%B8%EB%A6%BC_%EA%B7%B8%EB%A6%AC%EA%B8%B0%EB%AA%A9%EB%A1%9D/
     - title : DWIN
       url : /dwin/%EA%B8%B0%EC%88%A0-DWIN-%EB%AA%A9%EB%A1%9D/
-    - title : 개발 진행 내역
+    - title : 개발 포트폴리오
       url : /tags/#python
   - title: "공부내역"
     sublinks:
@@ -18,6 +18,9 @@ main:
       url: /tags/#python
     - title : C++
       url:  /c++/mfc/%EA%B8%B0%EC%88%A0-C++%EB%AA%A9%EB%A1%9D/
+
+    - title : OpenCV 관련 내역
+      url: /opencv/OpenCV%EA%B3%B5%EB%B6%80%EB%82%B4%EC%97%AD-%EB%AA%A9%EB%A1%9D/
  # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
