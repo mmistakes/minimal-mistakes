@@ -8,7 +8,11 @@ main:
     sublinks:
     - title : AI 그림 그리기
       url : /webui/ai/Ai%EA%B7%B8%EB%A6%BC_%EA%B7%B8%EB%A6%AC%EA%B8%B0%EB%AA%A9%EB%A1%9D/
-
+    - title : DWIN
+      url : /
+    -title : 개발 진행 내역
+     url : /
+     
   - title: "공부내역"
     sublinks:
     - title : python
