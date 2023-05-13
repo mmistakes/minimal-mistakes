@@ -7,3 +7,36 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.image-container {
+    display: flex; /* This makes the container a flex container. */
+    justify-content: center; /* This centers the child elements horizontally. */
+    align-items: top; /* This centers the child elements vertically. */
+    position: relative;
+    width: 100%;
+    max-width: 200px; /* This limits the width of the container. */
+    min-width: 150px;
+    overflow: hidden;
+    margin: auto; /* This centers the container if it's smaller than its parent. */
+    margin-right: 30px; /* Add this line to shift the image down by 100 pixels */
+    margin-bottom: 100px; /* Add this line to shift the image down by 100 pixels */
+}
+
+.team-member-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* This makes the image circular. */
+}
+
+.team-member {
+    height: 100
+}
+
+.team-member-name {
+    font-size: 36px; /* Adjust to the desired size */
+    margin-bottom: 0; /* This eliminates extra space below the name */
+}
+
+.team-member-role {
+    font-size: 24px; /* Adjust to the desired size */
+}
