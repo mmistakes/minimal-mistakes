@@ -23,7 +23,7 @@ There is a Dockerfile to simplify deployment. So the steps to get the website wo
 
 `docker run --volume="$PWD:/srv/jekyll" -p 4000:4000 -t kbss-website`
 
-3. The website is now available at `http://0.0.0.0:4000/kbss-website`
+3. The website is now available at `http://0.0.0.0:4000/kbss-website/`
 
 
 ### Docker compose
