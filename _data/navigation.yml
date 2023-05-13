@@ -18,7 +18,6 @@ main:
       url: /tags/#python
     - title : C++
       url:  /c++/mfc/%EA%B8%B0%EC%88%A0-C++%EB%AA%A9%EB%A1%9D/
-
     - title : OpenCV 관련 내역
       url: /opencv/OpenCV%EA%B3%B5%EB%B6%80%EB%82%B4%EC%97%AD-%EB%AA%A9%EB%A1%9D/
  # - title: "About"
