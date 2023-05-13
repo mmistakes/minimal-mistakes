@@ -11,8 +11,8 @@ main:
     - title : DWIN
       url : /
     -title : 개발 진행 내역
-     url : /
-     
+     url : /test
+
   - title: "공부내역"
     sublinks:
     - title : python
