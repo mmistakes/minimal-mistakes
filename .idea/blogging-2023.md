@@ -24,3 +24,4 @@
   - Paul Graham
   - Lex
   - Federer
+1. How expensive is it to pay by card 
