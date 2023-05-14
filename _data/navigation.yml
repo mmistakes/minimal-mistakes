@@ -15,7 +15,7 @@ main:
   - title: "공부내역"
     sublinks:
     - title : python
-      url: /tags/#python
+      url: /%EB%AA%A9%EB%A1%9D%20%EB%AA%A8%EC%9D%8C/Python-python%EA%B4%80%EB%A0%A8%EB%AA%A9%EB%A1%9D/
     - title : C++
       url:  /c++/mfc/%EA%B8%B0%EC%88%A0-C++%EB%AA%A9%EB%A1%9D/
     - title : OpenCV 관련 내역

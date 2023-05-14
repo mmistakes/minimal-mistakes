@@ -10,8 +10,8 @@ comments: true
 
 # Python 관련 목록
 
-1. [파일 이미지 읽기 ]
-(https://leejeunghun.github.io/python/python-%ED%8C%8C%EC%9D%BC%EA%B7%B8%EB%A6%BC%EC%9D%BD%EA%B8%B0/)
+1. [파일 이미지 읽기 ](https://leejeunghun.github.io/python/python-%ED%8C%8C%EC%9D%BC%EA%B7%B8%EB%A6%BC%EC%9D%BD%EA%B8%B0/)
+
  * 파일 이미지 읽기
  * 도로 크랙 검출 코드 포함
 
