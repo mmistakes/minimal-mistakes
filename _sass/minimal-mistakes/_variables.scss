@@ -14,7 +14,7 @@ $indent-var: 1.3em !default;
 
 /* system typefaces */ //폰트 변수 현재 Dongle을 추가함
 $serif: Georgia, Times, serif !default;
-$sans-serif: -apple-system, BlinkMacSystemFont, "Dongle","Roboto", "Segoe UI",
+$sans-serif: -apple-system, BlinkMacSystemFont, "Gowun Dodum","Dongle","Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 
@@ -171,3 +171,5 @@ $navicon-width: 1.5rem !default;
 $navicon-height: 0.25rem !default;
 $global-transition: all 0.2s ease-in-out !default;
 $intro-transition: intro 0.3s both !default;
+
+$toc-color: #ffc00f !default; //toc컬러 변수 선언 _navaigation 515번쯤 줄에서 toc컬러 지정에서 사용

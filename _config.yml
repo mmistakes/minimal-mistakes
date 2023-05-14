@@ -102,7 +102,7 @@ analytics:
     anonymize_ip         : false # true, false (default)
 
 
-# Site Author
+# Site Author 왼쪽 창
 author:
   name             : "NoviceHog"
   avatar           : "/images/hog사진.jpg"
@@ -129,7 +129,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
-# Site Footer
+# Site Footer 맨 아래 창
 footer:
   links:
     - label: "Twitter"
