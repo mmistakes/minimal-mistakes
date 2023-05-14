@@ -10,8 +10,11 @@ main:
       url : /webui/ai/Ai%EA%B7%B8%EB%A6%BC_%EA%B7%B8%EB%A6%AC%EA%B8%B0%EB%AA%A9%EB%A1%9D/
     - title : DWIN
       url : /dwin/%EA%B8%B0%EC%88%A0-DWIN-%EB%AA%A9%EB%A1%9D/
+    - title : pyAI-K210
+      url : /test/
     - title : 개발 포트폴리오
       url : /%EA%B0%9C%EB%B0%9C%20%EB%82%B4%EC%97%AD/%EB%AA%A9%EB%A1%9D%20%EB%AA%A8%EC%9D%8C/%EC%97%85%EB%AC%B4-%EC%97%85%EB%AC%B4%EA%B4%80%EB%A0%A8%EB%AA%A9%EB%A1%9D/
+   
   - title: "공부내역"
     sublinks:
     - title : python

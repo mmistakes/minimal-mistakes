@@ -5,10 +5,11 @@ categories:
 
 tags: [목록 모음]
 comments: true
+
 ---
 
 
-# Python 관련 목록
+# Python 활용 코드
 
 1. [파일 이미지 읽기 ](https://leejeunghun.github.io/python/python-%ED%8C%8C%EC%9D%BC%EA%B7%B8%EB%A6%BC%EC%9D%BD%EA%B8%B0/)
 
@@ -24,7 +25,8 @@ comments: true
  * python 데이터 프로그램
 
 
- ----
+ -----------------------
+ 
  # Fastapi 관련
 
 1. [ FASTAPI_데이터베이스 연동](https://leejeunghun.github.io/%EA%B8%B0%EC%88%A0/python/fastapi/mysql/%EA%B8%B0%EC%88%A0-FastAPI_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/)
