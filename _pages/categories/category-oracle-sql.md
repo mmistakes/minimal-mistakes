@@ -1,7 +1,7 @@
 ---
-title: "Intro to Database"
+title: "Oracle SQL"
 layout: archive
-permalink: categories/intro-db
+permalink: categories/oracle-sql
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ---
 
-{% assign posts = site.categories.Intro-DB %}
+{% assign posts = site.categories.Oracle-Sql %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

@@ -33,6 +33,15 @@
                 {% endfor %}
             </ul>
 
+        <span class="nav__sub-title">DataBase</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Oracle-Sql" %}
+                        <li><a href="/categories/oracle-sql" class="">Oracle SQL ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
         <span class="nav__sub-title">Tech</span>
             <ul>
                 {% for category in site.categories %}
@@ -96,13 +105,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Intro-DB" %}
-                        <li><a href="/categories/intro-db" class="">Intro to Database ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+
 
 
         <span class="nav__sub-title">Coding Practice</span>
