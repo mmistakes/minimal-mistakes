@@ -5,5 +5,6 @@ categories:
 
 tags: [openCV, python]
 toc : true
+toc_sticky: true
 comments: true
 ---
