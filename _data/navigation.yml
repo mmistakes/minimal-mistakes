@@ -9,10 +9,10 @@ main:
 
 
 docs:
-  - title: "대목차1"
+  - title: "C#"
     children:
-      - title: "Category"
-        url: /categories/
+      - title: "C#"
+        url: /categories/#c
       - title: "Tag"
         url: /tags/
 
