@@ -12,6 +12,17 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+
+    <!-- 스크롤바 꾸미기  #4b4f52 #5e6265-->
+    <style> 
+      ::-webkit-scrollbar{width: 16px;}
+      ::-webkit-scrollbar-track {background-color:#b19b60; border-radius: 16px;}
+      ::-webkit-scrollbar-thumb {background-color:#ddd358; border-radius: 16px;}
+      ::-webkit-scrollbar-thumb:hover {background: #ffd24c;}
+      ::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment 
+      { width:12px;height:12px;background:transparent;}
+      
+    </style>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
