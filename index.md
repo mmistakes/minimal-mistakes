@@ -29,7 +29,7 @@ feature_row:
     btn_label: "Learn more"
     excerpt: >
        Some text.<br />
-       <small style="font-size:12px;"><a href="https://www.eso.org/public/images/potw1222a/">Image credit</a>: ESO/B. <a href="twanight.org">Tafreshi</a></small>
+       <small style="font-size:12px;"><a href="https://www.eso.org/public/images/potw1222a/">Image credit:</a> ESO/<a href="https://twanight.org">B. Tafreshi</a></small>
   - image_path: /assets/images/raq.jpg
     alt: "third"
     title: "Third"
@@ -38,7 +38,7 @@ feature_row:
     btn_label: "Learn more"      
     excerpt: >
        Some text.<br />
-       <small style="font-size:12px;"><a href="https://www.eso.org/public/images/potw1850a/">Image credit</a>: ESO</small>
+       <small style="font-size:12px;"><a href="https://www.eso.org/public/images/potw1850a/">Image credit:</a> ESO</small>
 ---
 
 {% include feature_row %}
