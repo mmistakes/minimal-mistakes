@@ -483,6 +483,20 @@ fun main() {
 
 However, sometimes we want to map errors in custom types that don't belong to the `Throwable` hierarchy. For example, we can map a `NoSuchElementException` to a `JobNotFound` type, or any rich and meaningful type we want. To do this, we need another strategy to handle errors. It's time to introduce the `Either` type.
 
+## 2. Type-safe Error Handling: The `Either` Type
+
+Let's now introduce the `Either` type for error handling. Kotlin doesn't ship the `Either` type with the standard SDK. We need Arrow to add it to the game. Basically, the `Either<E, A>` type is an [Algebraic Data Type](https://blog.rockthejvm.com/algebraic-data-types/) (ADT). In detail, it's a sum type that can contain either a value `A` wrapped in the type `Right<A>` or a value `E` wrapped in a the type `Left<E>`. It's common to associated `Left` instances with the result of a failed computation, and `Right` instances with the result of a successful computation. The `Either` type is defined as follows:
+
+```kotlin
+// Arrow SDK
+public sealed class Either<out A, out B>
+public data class Left<out A> constructor(val value: A) : Either<A, Nothing>()
+public data class Right<out B> constructor(val value: B) : Either<Nothing, B>()
+```
+
+The `Either` type is a sealed class, so it cannot be extended outside the Arrow library, and the compiler can check if all the possible cases are handled in a `when` expression.
+
+
 
 
 
