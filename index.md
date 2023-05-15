@@ -19,7 +19,8 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"
     excerpt: >
-    Some text.<br /><small style="font-size:12px;">Image credit: Marie Martig, Swinburne University</small>
+       Some text.<br />
+       <small style="font-size:12px;">Image credit: Marie Martig, Swinburne University</small>
   - image_path: /assets/images/milkyway.jpg
     alt: "second"
     title: "Second"
@@ -27,7 +28,8 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"
     excerpt: >
-    Some text.<br /><small style="font-size:12px;"><a href="https://www.eso.org/public/images/potw1222a/">Image credit</a>: ESO/B. <a href="twanight.org">Tafreshi</a> </small>
+       Some text.<br />
+       <small style="font-size:12px;"><a href="https://www.eso.org/public/images/potw1222a/">Image credit</a>: ESO/B. <a href="twanight.org">Tafreshi</a></small>
   - image_path: /assets/images/raq.jpg
     alt: "third"
     title: "Third"
@@ -35,7 +37,8 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"      
     excerpt: >
-    Some text.<br /><small style="font-size:12px;"><a href="https://www.eso.org/public/images/potw1850a/">Image credit</a>: ESO</small>
+       Some text.<br />
+       <small style="font-size:12px;"><a href="https://www.eso.org/public/images/potw1850a/">Image credit</a>: ESO</small>
 ---
 
 {% include feature_row %}
