@@ -8,8 +8,8 @@ main:
   #   url: /news/
    - title: "Practical Information"
      url: /info/
-   - title: "Program"
-     url: /program/
+  # - title: "Program"
+  #   url: /program/
    - title: "Registration"
      url: /registration/
   # - title: "Sample Collections"
