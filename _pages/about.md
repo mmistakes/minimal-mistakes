@@ -12,7 +12,7 @@ layouts_gallery:
   - url: /assets/images/mm-layout-archive.png
     image_path: /assets/images/mm-layout-archive.png
     alt: "archive layout example"
-last_modified_at: 2023-05-10T13:25:00+10:00
+last_modified_at: 2023-05-16T13:25:00+10:00
 toc: true
 toc_sticky: true
 ---
@@ -58,7 +58,7 @@ This conference will bring together researchers working in transient astronomy a
 
 ## Contact
 
-[email link](mailto:transientsdownunder2024@gmail.com) to transientsdownunder2024 [at] gmail . com
+[transientsdownunder2024 [at] gmail . com](mailto:transientsdownunder2024@gmail.com)
 
 ## Sponsors
 
