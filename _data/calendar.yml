@@ -1,6 +1,23 @@
 [
   {
     "image_path": null,
+    "alt": "Unterrichtsfrei",
+    "title": "Unterrichtsfrei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=ZTk3MjEwZzMycmU4cDkxOGo2c2UwOWtmc2MgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2023-05-19",
+      "date_time": null
+    },
+    "end": {
+      "date": "2023-05-20",
+      "date_time": null
+    },
+    "created": "2023-05-14T15:25:50.000Z",
+    "updated": "2023-05-14T15:25:50.031Z"
+  },
+  {
+    "image_path": null,
     "alt": "4. Gesamtkonferenz",
     "title": "4. Gesamtkonferenz",
     "excerpt": null,
