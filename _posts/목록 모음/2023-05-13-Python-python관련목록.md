@@ -24,7 +24,9 @@ comments: true
  
  * python 데이터 프로그램
 
+4. [라즈베리파이 카메라 UI ](https://leejeunghun.github.io/python/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4/%EC%B9%B4%EB%A9%94%EB%9D%BC/python-%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4_%EC%B9%B4%EB%A9%94%EB%9D%BC_UI/)
 
+* 라즈베리파이 UI 활용 + 카메라 활용
  -----------------------
  
  # Fastapi 관련

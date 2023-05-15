@@ -17,8 +17,11 @@ comments: true
  * 코드 중에 시리얼 통신을 통해 카메라 영상 촬영하는 코드 포함
  * 단독 촬영이 아닌 연속 촬영으로 10장 찍음
  * GPIO 관련 사용하지 않는데 사용있으니 추후 해당 부분 삭제 후 활용하면 됩니다.
+ * 참고 링크
+ -> 개인 저장소입니다.
+ https://github.com/Leejeunghun/R210502-------LED--_SRC
 
-'''python
+```python
 import serial
 import threading 
 from time import sleep
@@ -421,5 +424,4 @@ while True:
     print ("\n")
 
 
-
-'''
+```
