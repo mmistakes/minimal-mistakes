@@ -496,9 +496,26 @@ public data class Right<out B> constructor(val value: B) : Either<Nothing, B>()
 
 The `Either` type is a sealed class, so it cannot be extended outside the Arrow library, and the compiler can check if all the possible cases are handled in a `when` expression.
 
+First, let's see how to create an `Either` instance. Both the `Left` and `Right` classes have a constructor that takes a single parameter. Here's an example of how to create a `Right` instance:
 
+```kotlin
+val appleJobId = JobId(1)
+val appleJob: Either<JobError, Job> = Right(JOBS_DATABASE[appleJobId]!!)
+```
 
+The `Left` instance is created in the same way. Since we can now use any type for representing errors, we can take advantage of the type system and create an ADT on errors causes. For example, we can create a `JobError` sealed class and extend it with the `JobNotFound` and `GenericError` classes:
 
+```kotlin
+sealed interface JobError
+data class JobNotFound(val jobId: JobId) : JobError
+data class GenericError(val cause: String) : JobError
+```
+
+Now, we can create our `Left` type instance:
+
+```kotlin
+val jobNotFound: Either<JobError, JobNotFound> = Left(JobNotFound(appleJobId))
+```
 
 
 
