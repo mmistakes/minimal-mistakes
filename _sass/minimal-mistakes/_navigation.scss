@@ -513,7 +513,7 @@
   box-shadow: $box-shadow;
 
   .nav__title {
-    color: #fff;
+    color: #fff; //폰트색깔
     font-size: $type-size-6;
     background: $toc-color; /*$primary-color;*/
     border-top-left-radius: $border-radius;
