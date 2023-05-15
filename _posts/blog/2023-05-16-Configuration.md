@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "minimal mistakes configuration 정리"
+title:  "minimal mistakes configuration 해석"
 categories: 
     - blog
 tag: [blog, minimal mistakes]
@@ -24,6 +24,8 @@ date: 2023-05-16
 last_modified_at: 2023-05-16
 typora-root-url: ../
 ---
+오역이 많습니다.
+{: .notice--danger}
 
 # Configuration 구성
 
