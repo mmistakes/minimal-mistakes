@@ -36,6 +36,9 @@ Helmi is accessible through the LUMI environment daily between 13:00 EET and 08:
 Helmi will be unavailable due to maintenance from 26.06.2023 - 02.07.2023
 {: .notice--info}
 
+Helmi experienced issues on Friday 12.05. We are working on resolving the issue. We apologize for this inconvenience.
+{: .notice--danger}
+
 <center>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -60,7 +63,7 @@ Helmi will be unavailable due to maintenance from 26.06.2023 - 02.07.2023
 <tbody>
   <tr>
     <td class="tg-tbqi">LUMI-Helmi</td>
-    <td class="tg-49rs">🟢</td>
+    <td class="tg-49rs">🔴</td>
   </tr>
 </tbody>
 </table>
