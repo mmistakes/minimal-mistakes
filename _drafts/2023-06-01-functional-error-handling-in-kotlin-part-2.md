@@ -517,6 +517,15 @@ Now, we can create our `Left` type instance:
 val jobNotFound: Either<JobError, JobNotFound> = Left(JobNotFound(appleJobId))
 ```
 
+For those who prefer extension functions, Arrow provides the `left` and `right` functions to create `Left` and `Right` instances:
+
+```kotlin
+val anotherAppleJob = JOBS_DATABASE[appleJobId]!!.right()
+val anotherJobNotFound: Either<JobError, JobNotFound> = JobNotFound(appleJobId).left()
+```
+
+
+
 
 
 
