@@ -1,11 +1,12 @@
 ---
 layout: single
-title:  "minimal mistakes configuration 해석"
+title:  "Configuration 해석"
+
+
 categories: 
     - blog
 tag: [blog, minimal mistakes]
 published: true
-
 
 
 toc: true #테이블
@@ -88,5 +89,57 @@ locale                   :  "ko-KR"
 {: .notice--warning}
 
 ### Site title
-커밋
+당신의 사이트 이름입니다.
+사이트 마스트헤드 및 `<title>` 태그와 같은 위치에서 테마 전체에 사용됩니다.
+
+*예시*: `title: "{{site.title}}"`
+
+"`SEO(검색 엔진 최적화)`와 친화적인 페이지 제목"에 사용되는 구분 문자를 설정할 수 있습니다.
+
+*예시*: {{ page.title }} `|` {{ site.title }}
+
+**메모 :**  긴 사이트 타이틀은 마스터헤드 공간을 깨부숴버립니다. 제목을 길게하지 마세요. 
+실제로도 제목이 길면 마스터헤드 레이아웃에 구분 문자가 사용되지 않습니다.
+{: .notice--warning}
+
+
+### Site subtitle 부제목
+부제목입니다. 그게 답니다.
+
+현재 저의 부제목은 `{{site.subtitle}}` 입니다.
+
+### Site name
+사이트 작성자입니다.
+특정 게시물, 페이지, 문서 모음에서 따로 재정의 할 수 있습니다.
+제 사이트 네임은 `{{site.name}}`입니다. 작성자는 사이트의 footer, 즉 맨 페이지 맨 아래로 내려보면 확인할 수 있숨다.
+```yaml
+name: "{{site.name}}" 
+```
+하고 설정 값을 준 것이지요.
+
+**앙 꿀팁띠 :**  얍삽하고 교묘하고 야비하고 야무지게 YAML언어를 사용하고 쉽다구요? 이럴땐 [anchors를 사용하세요.](https://yaml.org/spec/1.2-old/spec.html#id2785586)   
+값이 중복되서 사용될 때는 변수 선언을 하고 변수를 사용함으로 야무지게 재사용 할 수 있습니다.
+ `_config.yml` 파일 안이면 어디서든지요! 간단합니다.
+`$변수명 변수값` 가 선언이구요 `*변수명`이 변수 호출입니당.
+예를들어 다음과 같이 `&sivar "안녕"`이라고 변수를 선언했다면 `*sivar`을 사용하여 `"안녕"`이라는 값을 재사용 할 수 있어요.
+{: .notice--info}
+
+
+### Site description 사이트 설명
+말 그대롭니다. 사이트를 설명하는 글을 적으면 됩니다.
+`SEO(검색 엔진 최적화)` 개선을 위해 주로 사용됩니다. 즉, 여기에 적어주는 값을 통해 단서를 얻어
+검색 엔진이 검색을 입력받고 이 사이트를 띄울지 말지에 대해 정하게합니다.
+만일 요리 블로그를 만들고 싶다면 대충 이렇게 작성하면 좋겠죠?
+```yaml
+description: : "다양한 요리를 연구하고 공유하는 블로그"
+```
+
+### Site URL 사이트 주소
+사이트의 기본 호스트 이름 및 프로토콜입니다.
+깃허브를 통해 호스팅하고 있는 경우
+```yaml
+ url: "https://mmistakes.github.io"
+```
+와 비슷한 형태일 겁니다.
+
 
