@@ -526,14 +526,18 @@ val anotherJobNotFound: Either<JobError, JobNotFound> = JobNotFound(appleJobId).
 
 Using typed errors has many advantages. First, we can use the type system to check if all the possible cases are handled. Second, the possible causes of failure are listed directly in the signature of the function, as the left part of the `Either` type. Understanding exactly the possible causes of failure lets us build better tests and better error handling strategies. Moreover, typed errors compose better than exceptions.
 
-To prove the above advantages, as we previously did for the `Result` type, it's time to use the `Either` type in our example. Let's change the `Jobs` module, its implementation and the `JobService` class to return an `Either` type instead of a `Result` type:
+To prove the above advantages, as we previously did for the `Result` type, it's time to use the `Either` type in our example. Let's change the `Jobs` module to return an `Either` type instead of a `Result` type:
 
 ```kotlin
 interface Jobs {
 
     fun findById(id: JobId): Either<JobError, Job>
 }
+```
 
+Here we are using the `JobError` ADT we defined so far. At this point, we can know exactly how the function can fail just by looking at the signature. Now, we can implement the `LiveJobs` class:
+
+```kotlin
 class LiveJobs : Jobs {
 
     override fun findById(id: JobId): Either<JobError, Job> =
@@ -545,7 +549,47 @@ class LiveJobs : Jobs {
 } 
 ```
 
-Here we are using the `JobError` ADT we defined so far. At this point, we can know exactly how the function can fail just by looking at the signature. 
+As we might expect, we're wrapping the happy path with a `Right` instance, and all the available error cases with a `Left` instance. We are treating the absence of a job as a logic error, and we're wrapping it with a `JobNotFound` instance using the recommended and idiomatic syntax:
+
+```kotlin
+value?.right() ?: error.left()
+```
+
+On the other hand, we catch all the exceptions and wrap them in a `GenericError` instance. The pattern of catching exceptions and wrapping them in a `Left` instance is so common that Arrow provides the `catch` function to do it for us in the companion object of the `Either` type:
+
+```kotlin
+@JvmStatic
+@JvmName("tryCatch")
+public inline fun <R> catch(f: () -> R): Either<Throwable, R> =
+  try {
+    f().right()
+  } catch (t: Throwable) {
+    t.nonFatalOrThrow().left()
+  }
+```
+
+the `nonFatalOrThrow` function checks if the exception should be handled or not. The fatal exception are the following and their subclasses:
+
+* `VirtualMachineError`
+* `ThreadDeath` 
+* `InterruptedException`
+* `LinkageError`
+* `ControlThrowable`
+* `CancellationException`
+
+Then, we can rewrite the `LiveJobs` class using the `catch` function:
+
+```kotlin
+class LiveJobs : Jobs {
+    
+    override fun findById(id: JobId): Either<JobError, Job> = catch {
+        JOBS_DATABASE[id]
+    }.mapLeft { GenericError(it.message ?: "Unknown error") }
+        .flatMap { maybeJob -> maybeJob?.right() ?: JobNotFound(id).left() }
+}
+```
+
+
 
 
 
