@@ -17,7 +17,7 @@
             <ul>
                 <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
-                {% for category in site.categories %}
+                {% for category in site.tags %}
                     {% if category[0] == "think" %}
                         <li><a href="/tags/think" class="">think ({{category[1].size}})</a></li>
                     {% endif %}
