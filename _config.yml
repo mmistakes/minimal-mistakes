@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KR"
+locale                   : "ko-KR" #"en-US"
 title                    : "Hog블로그"
 title_separator          : "|"
 subtitle                 : "아무거나 올리는 곳"
