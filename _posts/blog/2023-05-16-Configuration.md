@@ -81,8 +81,12 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   :  "ko-KR" 
 ```
 
-**메모 :**  이 테마는 영어를 기본적으로 제공합니다.`en', 'en-US', 'en-GB`
+**메모 :**  이 테마는 영어를 기본적으로 제공합니다.(`en', 'en-US', 'en-GB`)
 만약 `_config.yml`안의 `locale`을 바꾼다면 대부분의 UI text는 비어있을거에요.
 이를 피하기 위해 일치하는 로케일 키와 번역된 텍스트를 `_data/ui-text.yml`에 추가하세요.
 (구버전 메모같습니다? 지금은 신경쓰지 않아도 됩니다.)
 {: .notice--warning}
+
+### Site title
+
+
