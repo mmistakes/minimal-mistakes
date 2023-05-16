@@ -117,7 +117,7 @@ name: "{{site.name}}"
 ```
 하고 설정 값을 준 것이지요.
 
-**앙 꿀팁띠 :**  얍삽하고 교묘하고 야비하고 야무지게 YAML언어를 사용하고 쉽다구요? 이럴땐 [anchors를 사용하세요.](https://yaml.org/spec/1.2-old/spec.html#id2785586)   
+**앙 꿀팁띠 :**  야무지게 YAML언어를 사용하고 싶다구요? 이럴땐 [anchors를 사용하세요.](https://yaml.org/spec/1.2-old/spec.html#id2785586)   
 값이 중복되서 사용될 때는 변수 선언을 하고 변수를 사용함으로 야무지게 재사용 할 수 있습니다.
  `_config.yml` 파일 안이면 어디서든지요! 간단합니다.
 `$변수명 변수값` 가 선언이구요 `*변수명`이 변수 호출입니당.
@@ -138,7 +138,7 @@ description: : "다양한 요리를 연구하고 공유하는 블로그"
 사이트의 기본 호스트 이름 및 프로토콜입니다.
 깃허브를 통해 호스팅하고 있는 경우
 ```yaml
- url: "https://mmistakes.github.io"
+ url: `"https://mmistakes.github.io"`
 ```
 와 비슷한 형태일 겁니다.
 
