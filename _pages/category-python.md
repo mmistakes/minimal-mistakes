@@ -2,6 +2,7 @@
 title : "python"
 layout : archive
 permalink : tags/python
+author_profile : true
 sidebar_main : true
 ---
 

@@ -2,6 +2,7 @@
 title : "numpy_pandas"
 layout : archive
 permalink : tags/numpy_pandas
+author_profile : true
 sidebar_main : true
 ---
 

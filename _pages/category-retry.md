@@ -2,6 +2,7 @@
 title : "retry"
 layout : archive
 permalink : tags/retry
+author_profile : true
 sidebar_main : true
 ---
 

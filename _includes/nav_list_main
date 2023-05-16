@@ -56,7 +56,7 @@
             <ul>
                 {% for category in site.tags %}
                     {% if category[0] == "Computer_architecture" %}
-                        <li><a href="/tags/Computer_architecture" class="">Computer_architecture ({{category[1].size}})</a></li>
+                        <li><a href="/tags/Computer_architecture" class="">컴퓨터구조 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -71,6 +71,14 @@
                 {% for category in site.tags %}
                     {% if category[0] == "numpy_pandas" %}
                         <li><a href="/tags/numpy_pandas" class="">numpy_pandas ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">수학</span>
+            <ul>
+                {% for category in site.tags %}
+                    {% if category[0] == "Computer_architecture" %}
+                        <li><a href="/tags/Computer_architecture" class="">## ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

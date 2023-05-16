@@ -2,6 +2,7 @@
 title : "markdown"
 layout : archive
 permalink : tags/markdown
+author_profile : true
 sidebar_main : true
 ---
 

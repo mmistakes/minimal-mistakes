@@ -2,6 +2,7 @@
 title : "other"
 layout : archive
 permalink : tags/other
+author_profile : true
 sidebar_main : true
 ---
 

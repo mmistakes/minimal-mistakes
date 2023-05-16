@@ -110,8 +110,8 @@ author:
   location         : "South Korea"
   email            : "noir1458@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+    #- label: "Email"
+      #icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
     #- #label: "Website"
       #icon: "fas fa-fw fa-link"
@@ -128,9 +128,9 @@ author:
     #- #label: "Instagram"
       #icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-    - label: "Youtube"
-      icon: "fab fa-fw fa-youtube"
-      url: "https://github.com/noir1458"
+    #- label: "Youtube"
+      #icon: "fab fa-fw fa-youtube"
+      #url: "https://github.com/noir1458"
 
 # Site Footer
 footer:
