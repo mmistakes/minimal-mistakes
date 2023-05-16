@@ -63,7 +63,7 @@ Helmi experienced issues on Friday 12.05. The issue was resolved on the 15.05. W
 <tbody>
   <tr>
     <td class="tg-tbqi">LUMI-Helmi</td>
-    <td class="tg-49rs">🔴</td>
+    <td class="tg-49rs">🟢</td>
   </tr>
 </tbody>
 </table>
