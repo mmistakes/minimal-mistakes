@@ -589,6 +589,16 @@ class LiveJobs : Jobs {
 }
 ```
 
+Wait. We introduced a bunch of new functions here. Let's see them in detail. First of all, the `Either` type is right-based, so, the usual transformations like `map` and `flatMap` apply to the `Right` instances of the `Either`. In this case, we applied the `flatMap` function to check if the retrieved job was null or not, eventually creating a `Left` value using the pattern we've seen a moment ago.
+
+Moreover, we introduced the `mapLeft` function. This function is similar to the `map` function, but it applies to the `Left` instances of the `Either` type. In this case, we're mapping the `Throwable` instance to a `GenericError` instance. The `mapLeft` function is defined as follows:
+
+```kotlin
+public inline fun <C> mapLeft(f: (A) -> C): Either<C, B> =
+    fold({ Left(f(it)) }, { Right(it) })
+```
+
+As we can see, the definition of the `mapLeft` function gives us the chance to introduce another important function, the `fold` function.
 
 
 
