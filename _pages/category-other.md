@@ -1,9 +1,9 @@
 ---
-title : "BOJ"
+title : "other"
 layout : archive
-permalink : tags/BOJ
+permalink : tags/other
 sidebar_main : true
 ---
 
-{% assign posts = site.tags.BOJ %}
+{% assign posts = site.tags.other %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

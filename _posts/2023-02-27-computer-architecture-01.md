@@ -1,7 +1,7 @@
 ---
 layout: single
-title: computer-architecture-01 컴퓨터 구조
-tags: 컴퓨터구조
+title: 컴퓨터 구조 01
+tags: Computer_architecture
 ---
 
 ## 컴퓨터 구조

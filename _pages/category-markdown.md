@@ -1,9 +1,9 @@
 ---
-title : "BOJ"
+title : "markdown"
 layout : archive
-permalink : tags/BOJ
+permalink : tags/markdown
 sidebar_main : true
 ---
 
-{% assign posts = site.tags.BOJ %}
+{% assign posts = site.tags.markdown %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

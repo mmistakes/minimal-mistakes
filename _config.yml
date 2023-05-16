@@ -296,3 +296,5 @@ defaults:
       show_date: true
       toc : true
       toc_sticky: true
+      use_math: true
+      sidebar_main: true
