@@ -16,7 +16,7 @@ tags:
 
 <!-- # Open Call for pilot projects for access to the Helmi quantum computer -->
 
-Update 11.05.2023: The pilot phase is expected to be extended until the end of August 2023. 
+Update 11.05.2023: The pilot phase is expected to run until 31 August 2023. 
 {: .notice--info}
 
 *Pilot access to the Helmi quantum computer is now open for users from Finnish higher-education 
@@ -49,7 +49,7 @@ During the pilot phase, the service is provided "as is". Changes in the environm
 are possible, even probable, as the service is continuously developed. Service breaks
 can take place with short or no notice. User support is limited to technical issues.
 
-The pilot phase is expected to run for three months, starting 1 November 2022.
+The pilot phase is expected to run until the end of August 2023.
 
 ### Feedback
 
