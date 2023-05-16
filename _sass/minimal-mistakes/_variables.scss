@@ -13,9 +13,9 @@ $paragraph-indent: false !default; // true, false (default)
 $indent-var: 1.3em !default;
 
 /* system typefaces */
-//$nanum : 'Nanum Myeongjo', serif;
+$nanum : 'Nanum Myeongjo', serif;
 $serif: Georgia, Times, serif !default;
-$sans-serif: 'Nanum Myeongjo',-apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+$sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 
@@ -156,9 +156,9 @@ $max-width: $x-large !default;
    Grid
    ========================================================================== */
 
-$right-sidebar-width-narrow: 200px !default;
-$right-sidebar-width: 300px !default;
-$right-sidebar-width-wide: 400px !default;
+$right-sidebar-width-narrow: 170px !default; // default 200px
+$right-sidebar-width: 250px !default; // default 300px
+$right-sidebar-width-wide: 300px !default; // default 400px
 
 /*
    Other
