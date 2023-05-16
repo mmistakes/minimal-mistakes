@@ -76,8 +76,13 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 적절한 locale설정은 [UI Text](https://mmistakes.github.io/minimal-mistakes/docs/ui-text/) data file(date/ui-text.yml)안에 있는 적응형 텍스트 연결에 중요한 역할을 합니다. 잘못된 값을 넣으면 UI일부가 없어집니다 (예 버튼 라벨, 섹션 제목)
 
-
 한국어 설정은 다음과 같이 하면 됩니다.
 ```yaml
 locale                   :  "ko-KR" 
 ```
+
+**메모 :**  이 테마는 영어를 기본적으로 제공합니다.`en', 'en-US', 'en-GB`
+만약 `_config.yml`안의 `locale`을 바꾼다면 대부분의 UI text는 비어있을거에요.
+이를 피하기 위해 일치하는 로케일 키와 번역된 텍스트를 `_data/ui-text.yml`에 추가하세요.
+(이미 거의다 채워져있어서 걱정안해도됩니다.)
+{: .notice--warning}
