@@ -138,9 +138,21 @@ description: : "다양한 요리를 연구하고 공유하는 블로그"
 사이트의 기본 호스트 이름 및 프로토콜입니다.
 깃허브를 통해 호스팅하고 있는 경우
 ```yaml
- url: `"https://mmistakes.github.io"`
+url: `"https://mmistakes.github.io"`
 ```
-와 비슷한 형태일 겁니다.
-커밋커밋
-커밋커밋2
+이런 형태거나 커스텀 도메인 이름이 있다면 다음과 비슷 할 것입니다.
+```yaml
+url: "https://mademistakes.com"
+```
+
+GitHub Pages는 이제 새 사이트에 대해 https://를 강제 적용하므로 혼합 콘텐츠 경고를 피하기 위해 URL을 설정할 때 이 점에 유의하십시오. (http를 쓰지말라는 것 같습니다.)
+
+**메모 :**  Jekyll 3.3은 개발 중 위에서 우리가 쓴 url값을 로컬 서버에서 실행될 때 http://localhost:4000로 덮어 씌웁니다. 
+이 동작을 피하려면 JEKYLL_ENV=production을 설정하여 production으로 
+ [환경을 설정하세요.](https://jekyllrb.com/docs/configuration/environments/)   
+{: .notice--warning}
+기본으로 JEKYLL_ENV의 값은 developement로 설정되는데 이로인해 http://localhost:4000로 덮어 씌워지는 것을 방지하려면
+JEKYLL_ENV의 값을 production으로 바꾸라는 소리 같습니다.(이게 뭔소리지 무시해도 될 것 같습니다)
+
+### Site base URL 
 
