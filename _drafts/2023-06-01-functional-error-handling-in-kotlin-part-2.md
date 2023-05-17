@@ -524,6 +524,15 @@ val anotherAppleJob = JOBS_DATABASE[appleJobId]!!.right()
 val anotherJobNotFound: Either<JobError, Job> = JobNotFound(appleJobId).left()
 ```
 
+Since Arrow defines the `Either` type as a sealed class, we can use the `when` expression to handle all the possible cases taking advantage of the smart casting. for example, in the following `printSalary`function, we can access to the `value` attribute of the `Right` instance without any explicit cast:
+
+```kotlin
+fun printSalary(maybeJob: Either<JobError, Job>) = when (maybeJob) {
+    is Right -> println("Job salary is ${maybeJob.value.salary}")
+    is Left -> println("No job found")
+}
+```
+
 Using typed errors has many advantages. First, we can use the type system to check if all the possible cases are handled. Second, the possible causes of failure are listed directly in the signature of the function, as the left part of the `Either` type. Understanding exactly the possible causes of failure lets us build better tests and better error handling strategies. Moreover, typed errors compose better than exceptions.
 
 To prove the above advantages, as we previously did for the `Result` type, it's time to use the `Either` type in our example. Let's change the `Jobs` module to return an `Either` type instead of a `Result` type:
