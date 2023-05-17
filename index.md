@@ -10,7 +10,7 @@ header:
 excerpt: >
   Mon Jan 29 - Fri Feb 2, 2024 @ Swinburne Institute of Technology, Melbourne, Australia.<br />
   <small><a href="https://transientsdownunder.github.io/news">Latest Information</a></small><br />
-  <small style="bottom: 0; font-size:12px;">Background image: Vela supernova remnant. <a href="https://www.eso.org/public/images/eso2214a/">Image credit</a>: ESO/VPHAS+ team. Acknowledgement: Cambridge Astronomical Survey Unit</small>
+  <small style="position: absolute; bottom: 0; font-size:12px;">Background image: Vela supernova remnant. <a href="https://www.eso.org/public/images/eso2214a/">Image credit</a>: ESO/VPHAS+ team. Acknowledgement: Cambridge Astronomical Survey Unit</small>
 feature_row:
   - image_path: /assets/images/high-redshift-supernova.jpg
     alt: "first"
