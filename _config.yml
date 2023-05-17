@@ -293,7 +293,6 @@ defaults:
       related: true
       futrue: true
       show_date: true
-      sidebar:
-        nav: "docs"
       search: true #false로 변경시 검색해도 안뜨게함
+      sidebar_main: true
       

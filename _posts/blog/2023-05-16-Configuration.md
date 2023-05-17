@@ -17,8 +17,6 @@ toc_icon: "fa-solid fa-list" #https://fontawesome.com/v5/search?o=r&m=free&s=sol
 
 author_profile: true # 옆에뜨는 프로파일
 
-sidebar:
-    nav: "docs"
 search: true #검색해도 안뜨게함
 
 date: 2023-05-16
