@@ -56,6 +56,15 @@ This conference will bring together researchers working in transient astronomy a
 - Tony Travouillon (ANU) 
 - Lilia Ferrario (ANU) 
 
+## LOC 
+
+- Jeff Cooke (Swinburne) 
+- Alex Heger (Monash) 
+- Ryosuke Hirai (Monash) 
+- Evgeni Grishin (Monash)
+- Duane Hamacher (Melbourne) 
+- Karelle Seillez (UTas)
+- Ashley Ruiter (UNSW Canberra) 
 
 ## Contact
 
