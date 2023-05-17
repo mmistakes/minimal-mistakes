@@ -226,3 +226,34 @@ console.log(bar.name); // bar
 모든 객체는 [[Prototype]]이라는 내부 슬롯을 갖는다. [[Prototype]] 내부 슬롯은 객체지향 프로그래밍의 상속을 구현하는 프로토타입 객체를 가리킨다.
 
 \_\_proto\_\_ 프로퍼티는 [[Prototype]] 내부 슬롯이 가리키는 프로토타입 객체에 간접적으로 접근하기 위해 사용하는 접근자 프로퍼티다. 내부 슬롯에는 직접적으로 접근할 수 없고, \_\_proto\_\_ 프로퍼티를 통해 간접적인 접근 방법을 제공한다.
+
+```javascript
+const obj = { a: 1 };
+// 객체 리터럴 방식으로 생성한 객체의 프로토타입 객체는 Object.prototype이다.
+console.log(obj.__proto__ === Object.prototype); // true
+
+// 객체 리터럴 방식으로 생성한 객체는 프로토타입 객체인 Object.prototype의 프로퍼티를 상속받는다.
+// hasOwnProperty 메서드는 Object.prototype의 메서드다.
+console.log(obj.hasOwnProperty('a')); // true
+console.log(obj.hasOwnProperty('__proto__')); // false
+```
+
+<span style="color:orange">hasOwnProperty 메서드</span>
+
+<div style="background-color: silver">hasOwnProperty 메서드는 이름에서 알 수 있듯이 전달받은 프로퍼티 키가 객체 고유의 프로퍼티 키인 경우에만 true를 반환하고 상속받은 프로토타입의 프로퍼티 키인 경우 false를 반환한다.</div>
+
+### prototype 프로퍼티
+
+prototype 프로퍼티는 생성자 함수로 호출할 수 있는 함수 객체 즉, constructor만이 소유하는 프로퍼티다. 일반 객체와 생성자 함수로 호출할 수 없는 non-constructor에는 prototype 프로퍼티가 없다.
+
+```javascript
+// 함수 객체는 prototype 프로퍼티를 소유한다.
+(function (){}).hasOwnProperty('prototype'); // true
+
+// 일반 객체는 prototype 프로퍼티를 소유하지 않는다.
+({}).hasOwnProperty('prototype'); // false
+```
+
+prototype 프로퍼티는 함수가 객체를 생성하는 생성자 함수로 호출될 때 생성자 함수가 생성할 인스턴스의 프로토타입 객체를 가리킨다.
+
+**<span style='color: grey'>이웅모, "모던 자바스크립트 Deep Dive", 위키북스(2020), p249-258.</span>**
