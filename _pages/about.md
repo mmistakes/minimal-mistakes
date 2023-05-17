@@ -19,7 +19,7 @@ toc_sticky: true
 
 This conference will bring together researchers working in transient astronomy and gravitational wave electromagnetic follow up to share ideas, strategies, tools, and recent progress in research, instrumentation, and data processing and analysis techniques. This is a general transient conference for cataclysmic and GW events that focuses on observational, theory, data science and tools, instrumentation, and cultural astronomy.
 
-## Confirmed Invited Speakers (as of May 15)
+## Confirmed Invited Speakers (as of May 17)
 
 - Gemma Anderson (Curtin, Australia)
 - Iair Arcavi (Tel Aviv, Israel)
@@ -36,6 +36,7 @@ This conference will bring together researchers working in transient astronomy a
 - Anais Möller (Swinburne, Australia) 
 - Friedrich Röpke (HITS/Heidelberg University, Germany)
 - Ken Shen (Berkeley, USA)
+- Tony Travouillon (ANU, Australia) 
 
 
 ## SOC 
