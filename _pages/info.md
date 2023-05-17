@@ -13,6 +13,8 @@ More information will become available in the coming weeks/months.
 
 ## Google Maps
 
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d20010.739716467113!2d145.03595510063988!3d-37.82532296611944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSwinburne%20University%20of%20Technology!5e0!3m2!1sen!2sau!4v1684295890204!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 ## Accommodation
 
 ## Financial assistance for invited and/or early career scientists 
