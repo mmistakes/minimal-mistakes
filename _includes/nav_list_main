@@ -42,6 +42,15 @@
                 {% endfor %}
             </ul>
 
+        <span class="nav__sub-title">Operating System</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Unix-Linux" %}
+                        <li><a href="/categories/unix-linux" class="">Unix & Linux ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
         <span class="nav__sub-title">Tech</span>
             <ul>
                 {% for category in site.categories %}
