@@ -295,4 +295,8 @@ defaults:
       show_date: true
       search: true #false로 변경시 검색해도 안뜨게함
       sidebar_main: true
+      toc: true #테이블 설정
+      toc_sticky: true
+      toc_label: 
+      toc_icon: "fa-solid fa-list" #https://fontawesome.com/v5/search?o=r&m=free&s=solid 아이콘 링크
       
