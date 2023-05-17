@@ -514,14 +514,14 @@ data class GenericError(val cause: String) : JobError
 Now, we can create our `Left` type instance:
 
 ```kotlin
-val jobNotFound: Either<JobError, JobNotFound> = Left(JobNotFound(appleJobId))
+val jobNotFound: Either<JobError, Job> = Left(JobNotFound(appleJobId))
 ```
 
 For those who prefer extension functions, Arrow provides the `left` and `right` functions to create `Left` and `Right` instances:
 
 ```kotlin
 val anotherAppleJob = JOBS_DATABASE[appleJobId]!!.right()
-val anotherJobNotFound: Either<JobError, JobNotFound> = JobNotFound(appleJobId).left()
+val anotherJobNotFound: Either<JobError, Job> = JobNotFound(appleJobId).left()
 ```
 
 Using typed errors has many advantages. First, we can use the type system to check if all the possible cases are handled. Second, the possible causes of failure are listed directly in the signature of the function, as the left part of the `Either` type. Understanding exactly the possible causes of failure lets us build better tests and better error handling strategies. Moreover, typed errors compose better than exceptions.
@@ -594,13 +594,29 @@ Wait. We introduced a bunch of new functions here. Let's see them in detail. Fir
 Moreover, we introduced the `mapLeft` function. This function is similar to the `map` function, but it applies to the `Left` instances of the `Either` type. In this case, we're mapping the `Throwable` instance to a `GenericError` instance. The `mapLeft` function is defined as follows:
 
 ```kotlin
+// Arrow SDK
 public inline fun <C> mapLeft(f: (A) -> C): Either<C, B> =
     fold({ Left(f(it)) }, { Right(it) })
 ```
 
-As we can see, the definition of the `mapLeft` function gives us the chance to introduce another important function, the `fold` function.
+As we can see, the definition of the `mapLeft` function gives us the chance to introduce another important function, the `fold` function. We already saw this function in the `Result` type, and we can use it to transform both the `Left` and `Right` instances of the `Either` type into a target type. The `fold` function is defined as follows:
 
+```kotlin
+// Arrow SDK
+public inline fun <C> fold(ifLeft: (left: A) -> C, ifRight: (right: B) -> C): C =
+    when (this) {
+        is Right -> ifRight(value)
+        is Left -> ifLeft(value)
+    }
+```
 
+For example, if we want to get the salary of a job, whether it's a `Left` or a `Right` instance, we can use the `fold` function:
+
+```kotlin
+val jobSalary: Salary = jobNotFound.fold({ Salary(0.0) }, { it.salary })
+```
+
+In the above example, we return a default salary of 0.0 if the job is not found, otherwise we return the salary of the job.
 
 
 
