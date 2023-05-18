@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "꾸꾸까까"
+title                    : "지리는 기록장"
 title_separator          : "|"
 subtitle                 : "마지막 블로그"
-name                     : "SH"
+name                     : "HYEON"
 description              : "문제없을꺼야"
 url                      : "https://ksh956.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "HYOEN"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "샘플블로그"
+  bio              : "매일매일 기록을 하쟈"
   location         : "South Korea"
   email            : "ksh956@naver.com"
   links:
