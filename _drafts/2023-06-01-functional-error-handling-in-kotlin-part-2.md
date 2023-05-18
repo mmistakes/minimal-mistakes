@@ -533,6 +533,35 @@ fun printSalary(maybeJob: Either<JobError, Job>) = when (maybeJob) {
 }
 ```
 
+If we want to extract the contained value from an `Either` we have some functions to do it. The `getOrNull` function returns a nullable type containing the value if it's a `Right` instance. We can use it if we want to discard the error:
+
+```kotlin
+val appleJobOrNull: Job? = appleJob.getOrNull()
+```
+
+In a similar way, we can transform an `Either` instance in an `Option` instance using the `getOrNone` function:
+
+```kotlin
+val maybeAppleJob: Option<Job> = appleJob.getOrNone()
+```
+
+Then, the `getOrElse` function lets us extract the value contained in a `Right` instance or a default value if it's a `Left` instance:
+
+```kotlin
+val jobCompany: String = appleJob.map { it.company.name }.getOrElse { "Unknown company" }
+```
+
+To be fair, the `getOrElse` function takes a lambda with the error as a parameter, so we can use it to react in a different way to different errors:
+
+```kotlin
+val jobCompany2: String = appleJob.map { it.company.name }.getOrElse { jobError ->
+    when (jobError) {
+        is JobNotFound -> "Job not found"
+        is GenericError -> "Generic error"
+    }
+}
+```
+
 Using typed errors has many advantages. First, we can use the type system to check if all the possible cases are handled. Second, the possible causes of failure are listed directly in the signature of the function, as the left part of the `Either` type. Understanding exactly the possible causes of failure lets us build better tests and better error handling strategies. Moreover, typed errors compose better than exceptions.
 
 To prove the above advantages, as we previously did for the `Result` type, it's time to use the `Either` type in our example. Let's change the `Jobs` module to return an `Either` type instead of a `Result` type:
