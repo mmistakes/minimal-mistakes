@@ -37,6 +37,35 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        <span class="nav__sub-title">Study</span>
+        <ul>
+            {% for category in site.tags %}
+                {% if category[0] == "ENG" %}
+                    <li><a href="/tags/ENG" class="">ENG ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.tags %}
+                {% if category[0] == "JPN" %}
+                    <li><a href="/tags/JPN" class="">JPN ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.tags %}
+                {% if category[0] == "finance" %}
+                    <li><a href="/tags/finance" class="">finance ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.tags %}
+                {% if category[0] == "physics" %}
+                    <li><a href="/tags/physics" class="">physics ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
         <span class="nav__sub-title">Coding Test</span>
             <ul>
                 {% for category in site.tags %}
@@ -55,8 +84,43 @@
         <span class="nav__sub-title">컴퓨터공학, 언어</span>
             <ul>
                 {% for category in site.tags %}
-                    {% if category[0] == "Computer_architecture" %}
-                        <li><a href="/tags/Computer_architecture" class="">컴퓨터구조 ({{category[1].size}})</a></li>
+                    {% if category[0] == "ComputerArchitecture" %}
+                        <li><a href="/tags/ComputerArchitecture" class="">ComputerArchitecture ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.tags %}
+                    {% if category[0] == "DataStructure" %}
+                        <li><a href="/tags/DataStructure" class="">DataStructure ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.tags %}
+                    {% if category[0] == "algorithm" %}
+                        <li><a href="/tags/algorithm" class="">algorithm ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.tags %}
+                    {% if category[0] == "OS" %}
+                        <li><a href="/tags/OS" class="">OS ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.tags %}
+                    {% if category[0] == "DB" %}
+                        <li><a href="/tags/DB" class="">DB ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.tags %}
+                    {% if category[0] == "network" %}
+                        <li><a href="/tags/network" class="">network ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
