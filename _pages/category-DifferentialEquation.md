@@ -7,6 +7,7 @@ sidebar_main : true
 ---
 <div class="notice--primary" markdown="1">
 미분방정식
+<br>
 교재 : Elementary Differential Equations and Boundary Value Problems / William E. Boyce 11판
 </div>
 
