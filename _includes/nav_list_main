@@ -160,6 +160,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.tags %}
+                    {% if category[0] == "DifferentialEquation" %}
+                        <li><a href="/tags/DifferentialEquation" class="">DifferentialEquation ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
       </li>
   </ul>
 </nav>
