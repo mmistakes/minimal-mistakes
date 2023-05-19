@@ -648,13 +648,30 @@ public inline fun <C> fold(ifLeft: (left: A) -> C, ifRight: (right: B) -> C): C 
     }
 ```
 
-For example, if we want to get the salary of a job, whether it's a `Left` or a `Right` instance, we can use the `fold` function:
+For example, if we want to get the salary of a job, whether it's a `Left` or a `Right` instance, we can use the `fold` function, which is defined as follows:
+
+```kotlin
+// Arrow SDK
+public inline fun <C> fold(ifLeft: (left: A) -> C, ifRight: (right: B) -> C): C =
+    when (this) {
+        is Right -> ifRight(value)
+        is Left -> ifLeft(value)
+    }
+```
+
+Basically, the `fold` function is a wrapper around the `when` expression. It's very important in the library, and many of the `getOr*` are implemented using it. For example, let's say we want to get the salary of a job, whether it's a `Left` or a `Right` instance. We can use the `fold` function, and return a default value if the job is not found: 
 
 ```kotlin
 val jobSalary: Salary = jobNotFound.fold({ Salary(0.0) }, { it.salary })
 ```
 
-In the above example, we return a default salary of 0.0 if the job is not found, otherwise we return the salary of the job.
+The same thing can be done using a composition of `map` and `getOrElse` functions:
+
+```kotlin
+val jobSalary2: Salary = jobNotFound.map { it.salary }.getOrElse { Salary(0.0) }
+```
+
+
 
 
 
