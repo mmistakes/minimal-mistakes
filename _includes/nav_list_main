@@ -75,6 +75,13 @@
                 {% endfor %}
             </ul>
             <ul>
+                {% for category in site.programmers %}
+                    {% if category[0] == "programmers" %}
+                        <li><a href="/tags/programmers" class="">programmers ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
                 {% for category in site.tags %}
                     {% if category[0] == "retry" %}
                         <li><a href="/tags/retry" class="">retry ({{category[1].size}})</a></li>
