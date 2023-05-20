@@ -21,3 +21,8 @@ gem "jekyll-include-cache", "~> 0.2.1"
 
 gem "kramdown-parser-gfm", "~> 1.1"
 
+gem "tzinfo", ">= 1.2.9"
+
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'jekyll-archives'
