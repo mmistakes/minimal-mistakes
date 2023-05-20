@@ -75,7 +75,7 @@
                 {% endfor %}
             </ul>
             <ul>
-                {% for category in site.programmers %}
+                {% for category in site.tags %}
                     {% if category[0] == "programmers" %}
                         <li><a href="/tags/programmers" class="">programmers ({{category[1].size}})</a></li>
                     {% endif %}
