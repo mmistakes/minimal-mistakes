@@ -27,15 +27,17 @@ Past the entrance gate head for the B area (SCALA B)
 ![stairs gate](/assets/images/checkin/gate-2.jpg)
 
 
-next to the mailboxes you will find a locker with keys in it
+the mailbox no.24 (DELFINO) is open, inside you will finda locker with the keys in it
 
-FOTO LOCKER
+![mailboxes](/assets/images/checkin/mailbox-1.jpg)
+
+![locker](/assets/images/checkin/mailbox-2.jpg)
 
 the code to open the locker is **1-9-7-2**
 
-take the keys and also the locker (**you will need it for check-out**). The gold key you can use for the second gate, which will allow you to enter the stairs.
+take the keys and also the locker with you (**you will need it for check-out**). The gold key you can use for the second gate, which will allow you to enter the stairs.
 
-The apartment is number 24, on floor 5.
+The apartment is the number 24, on the 5th floor.
 
 ![front door](/assets/images/checkin/gate-3.jpg)
 
