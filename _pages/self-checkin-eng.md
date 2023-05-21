@@ -22,9 +22,33 @@ To access the apartment there are 2 gates. The first one can be opened pressing 
 
 ![key](/assets/images/checkin/key-1-2-3-4-5.png)
 
+superato il cancello di ingresso dirigiti verso la scala B
 
+FOTO SCALA B
 
+in corrispondenza delle buche delle lettere troveri un locker con dentro le chiavi
 
+FOTO LOCKER
+
+il codice per aprire il locker è 1-9-7-2
+
+prendi le chiavi ed anche il locker (ti servirà per il check-out). La chiave gold la potrai usare per il secondo cancello, che ti permetter\a di entrare nelle scale.
+
+l'appartamento è il numero 24, al piano 5.
+
+FOTO PORTA INGRESSO
+
+Una volta dentro la casa troveri sulla tavola:
+
+* 2 contratti da firmare
+* ricevuta per la CITY TAX
+* Manuale della casa
+
+Firma i 2 contratti (uno per te, l'alto è necessario per le mie tasse).
+
+per qualsiasi esigenza o dubbio, puoi contattarmi attraverso la chat nell'applicazione AirBnb o al numero +39 348 2201 205
+
+Buona permanenza!
 
 
 
