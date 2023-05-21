@@ -7,12 +7,11 @@ author_profile: false
 
 # Directions
 
-the apartment is in **VIA BALDASSARRE PERUZZI 19 00054 FIUMICINO**. 
+The apartment is in **VIA BALDASSARRE PERUZZI 19 00054 FIUMICINO**. 
 
-If you're arriving by train, once you get to **PARCO LEONARDO** Station, head towards the mall **CENTRO LEONARDO** (cross the tracks if you're coming from the airport) and from there use Google maps to get to the address, the distance is about 3/400 meters from the Station. Make sure the navigator doesn't take you around the one-way streets but takes you through the pedestrian plaza. 
+If you're arriving by train, once you get to **PARCO LEONARDO** station, head towards the mall **CENTRO LEONARDO** (cross the tracks if you're coming from the airport) and from there use Google Maps to get to the address, the distance is about 3/400 meters from the train station. Make sure the navigator doesn't take you around the one-way streets but takes you through the pedestrian plaza. 
 
-> If you're arriving by car/Taxi/Uber, remember to clearly indicate to the driver **FIUMICINO** and not **ROME** 😁
-
+> If you're arriving by car/Taxi/CAB/Uber, remember to clearly indicate to the driver **FIUMICINO** and not **ROME** 😁
 
 ![front gate](/assets/images/checkin/gate-1.jpg)
 
@@ -22,22 +21,21 @@ To access the apartment there are 2 gates. The first one can be opened pressing 
 
 ![key](/assets/images/checkin/key-1-2-3-4-5.png)
 
-Past the entrance gate head for the B area (SCALA B)
+Past the entrance gate head for the B area (SCALA B).
 
 ![stairs gate](/assets/images/checkin/gate-2.jpg)
 
-
-the mailbox no.24 (DELFINO) is open, inside you will finda locker with the keys in it
+The mailbox no.24 (DELFINO) is open, inside you will find a locker with the keys in it.
 
 ![mailboxes](/assets/images/checkin/mailbox-1.jpg)
 
 ![locker](/assets/images/checkin/mailbox-2.jpg)
 
-the code to open the locker is **1-9-7-2**
+The code to open the locker is **1-9-7-2**
 
-take the keys and also the locker with you (**you will need it for check-out**). The gold key you can use for the second gate, which will allow you to enter the stairs.
+Take the keys and also the locker with you (**you will need it for check-out**). The gold key you can use for the second gate, which will allow you to enter the stairs.
 
-The apartment is the number 24, on the 5th floor.
+The apartment is the **number 24, on the 5th floor**.
 
 ![front door](/assets/images/checkin/gate-3.jpg)
 
@@ -45,11 +43,11 @@ Once inside the house you will find on the table:
 
 * 2 contracts to sign
 * CITY TAX recipt
-* house manual
+* House manual
 
-please sign the 2 contracts (one for you, the other is needed for my taxes).
+Please sign both 2 contracts (one for you, the other is needed for my taxes).
 
-for any needs or concerns, you can contact me through the **AirBnb app** or at **+39 348 2201 205**
+For any needs or concerns, you can contact me through the **AirBnb app** or at **+39 348 2201 205**
 
 Enjoy your stay!
 
