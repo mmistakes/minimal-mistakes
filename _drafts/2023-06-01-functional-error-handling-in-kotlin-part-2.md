@@ -671,6 +671,25 @@ The same thing can be done using a composition of `map` and `getOrElse` function
 val jobSalary2: Salary = jobNotFound.map { it.salary }.getOrElse { Salary(0.0) }
 ```
 
+It's time to talk about how to compose different `Either` instances. As you might imagine, since the `Either` type is a monad if we fix the left type, we can use the `map` and `flatMap` functions to compose different instances (remember, monads just have a single type parameters, while the `Either` type has two of them).
+
+We will implement the `getSalaryGapWithMax` function again, this time using the `Either` type to handle errors. First, we need to add the `findAll` function to our `Jobs` module:
+
+```kotlin
+interface Jobs {
+
+    // Omissis
+    fun findAll(): Either<JobError, List<Job>>
+}
+
+class LiveJobs : Jobs {
+    
+    // Omissis
+    override fun findAll(): Either<JobError, List<Job>> =
+        JOBS_DATABASE.values.toList().right()
+}
+```
+
 
 
 
