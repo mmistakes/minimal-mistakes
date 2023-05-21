@@ -33,7 +33,7 @@ The mailbox no.24 (DELFINO) is open, inside you will find a locker with the keys
 
 The code to open the locker is **1-9-7-2**
 
-Take the keys and also the locker with you (**you will need it for check-out**). The gold key you can use for the second gate, which will allow you to enter the stairs.
+Take the keys and also the locker with you (**you will need it for check-out**). Use the gold key to open the second gate, which will allows you to enter the stairs.
 
 The apartment is the **number 24, on the 5th floor**.
 
