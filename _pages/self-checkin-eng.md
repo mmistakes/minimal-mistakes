@@ -37,7 +37,7 @@ take the keys and also the locker (**you will need it for check-out**). The gold
 
 The apartment is number 24, on floor 5.
 
-FOTO PORTA INGRESSO
+![front door](/assets/images/checkin/gate-3.jpg)
 
 Once inside the house you will find on the table:
 
