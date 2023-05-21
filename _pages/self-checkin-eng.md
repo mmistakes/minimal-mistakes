@@ -20,7 +20,7 @@ FOTO DELL'INGRESSO del palazzo
 
 To access the apartment there are 2 gates. The first one can be opened pressing the button “key” (button on the right of the “0”, see below) and then the sequence 1-2-3-4-5.
 
-![key](assets/images/checkin/key-1-2-3-4-5.png)
+![key](/assets/images/checkin/key-1-2-3-4-5.png)
 
 
 
