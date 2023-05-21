@@ -22,33 +22,33 @@ To access the apartment there are 2 gates. The first one can be opened pressing 
 
 ![key](/assets/images/checkin/key-1-2-3-4-5.png)
 
-superato il cancello di ingresso dirigiti verso la scala B
+Past the entrance gate head for the B area (SCALA B)
 
 FOTO SCALA B
 
-in corrispondenza delle buche delle lettere troveri un locker con dentro le chiavi
+next to the mailboxes you will find a locker with keys in it
 
 FOTO LOCKER
 
-il codice per aprire il locker è 1-9-7-2
+the code to open the locker is 1-9-7-2
 
-prendi le chiavi ed anche il locker (ti servirà per il check-out). La chiave gold la potrai usare per il secondo cancello, che ti permetter\a di entrare nelle scale.
+take the keys and also the locker (**you will need it for check-out**). The gold key you can use for the second gate, which will allow you to enter the stairs.
 
-l'appartamento è il numero 24, al piano 5.
+The apartment is number 24, on floor 5.
 
 FOTO PORTA INGRESSO
 
-Una volta dentro la casa troveri sulla tavola:
+Once inside the house you will find on the table:
 
-* 2 contratti da firmare
-* ricevuta per la CITY TAX
-* Manuale della casa
+* 2 contracts to sign
+* CITY TAX recipt
+* house manual
 
-Firma i 2 contratti (uno per te, l'alto è necessario per le mie tasse).
+please sign the 2 contracts (one for you, the other is needed for my taxes).
 
-per qualsiasi esigenza o dubbio, puoi contattarmi attraverso la chat nell'applicazione AirBnb o al numero +39 348 2201 205
+for any needs or concerns, you can contact me through the **AirBnb app** or at **+39 348 2201 205**
 
-Buona permanenza!
+Enjoy your stay!
 
 
 
