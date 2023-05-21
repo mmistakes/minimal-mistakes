@@ -1,9 +1,45 @@
 ---
-title: "self checkin info"
-permalink: /self-check-in/ita/
+title: "come accedere a "
+permalink: /self-check-in/eng/
 layout: archive
 author_profile: false
 ---
+
+# Directions
+
+the apartment is in **VIA BALDASSARRE PERUZZI 19 00054 FIUMICINO**. 
+
+If you're arriving by train, once you get to **PARCO LEONARDO** Station, head towards the mall **CENTRO LEONARDO** (cross the tracks if you're coming from the airport) and from there use Google maps to get to the address, the distance is about 3/400 meters from the Station. Make sure the navigator doesn't take you around the one-way streets but takes you through the pedestrian plaza. 
+
+> If you're arriving by car/Taxi/Uber, remember to clearly indicate to the driver **FIUMICINO** and not **ROME** 😁
+
+
+FOTO DELL'INGRESSO del palazzo
+
+# Check in information
+
+To access the apartment there are 2 gates. The first one can be opened pressing the button “key” (button on the right of the “0”, see below) and then the sequence 1-2-3-4-5.
+
+![key](assets/images/checkin/key-1-2-3-4-5.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 A variety of common markup showing how the theme styles them.
 
