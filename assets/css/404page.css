@@ -1,0 +1,34 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body
+  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: fill; 
+
+
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.image-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px black;
+}
