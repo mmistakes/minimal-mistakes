@@ -1,5 +1,5 @@
 ---
-title: "come accedere a "
+title: "CASA PERUZZI"
 permalink: /self-check-in/eng/
 layout: archive
 author_profile: false
@@ -14,7 +14,7 @@ If you're arriving by train, once you get to **PARCO LEONARDO** Station, head to
 > If you're arriving by car/Taxi/Uber, remember to clearly indicate to the driver **FIUMICINO** and not **ROME** 😁
 
 
-FOTO DELL'INGRESSO del palazzo
+![front gate](/assets/images/checkin/gate-1.png)
 
 # Check in information
 
@@ -24,13 +24,14 @@ To access the apartment there are 2 gates. The first one can be opened pressing 
 
 Past the entrance gate head for the B area (SCALA B)
 
-FOTO SCALA B
+![stairs gate](/assets/images/checkin/gate-2.png)
+
 
 next to the mailboxes you will find a locker with keys in it
 
 FOTO LOCKER
 
-the code to open the locker is 1-9-7-2
+the code to open the locker is **1-9-7-2**
 
 take the keys and also the locker (**you will need it for check-out**). The gold key you can use for the second gate, which will allow you to enter the stairs.
 
