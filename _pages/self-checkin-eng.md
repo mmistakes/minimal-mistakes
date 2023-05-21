@@ -14,7 +14,7 @@ If you're arriving by train, once you get to **PARCO LEONARDO** Station, head to
 > If you're arriving by car/Taxi/Uber, remember to clearly indicate to the driver **FIUMICINO** and not **ROME** 😁
 
 
-![front gate](/assets/images/checkin/gate-1.png)
+![front gate](/assets/images/checkin/gate-1.jpg)
 
 # Check in information
 
@@ -24,7 +24,7 @@ To access the apartment there are 2 gates. The first one can be opened pressing 
 
 Past the entrance gate head for the B area (SCALA B)
 
-![stairs gate](/assets/images/checkin/gate-2.png)
+![stairs gate](/assets/images/checkin/gate-2.jpg)
 
 
 next to the mailboxes you will find a locker with keys in it
