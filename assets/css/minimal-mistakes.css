@@ -1,0 +1,65 @@
+/*
+Error: File to import not found or unreadable: mixins/breakpoints.
+        on line 1 of _sass/minimal-mistakes/_variables.scss
+        from line 4 of _sass/minimal-mistakes/_input.scss
+
+1: /* Markdown 문서의 Front Matter 구문이므로, Sass 컴파일에서 무시되도록 처리한다. *\/
+2: 
+3: 
+4: @import "variables";
+5: @import "base";
+6: @import "layouts-home";
+
+Backtrace:
+_sass/minimal-mistakes/_variables.scss:1
+_sass/minimal-mistakes/_input.scss:4
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `map'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:290:in `render'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+C:/Ruby32-x64/bin/sass:32:in `load'
+C:/Ruby32-x64/bin/sass:32:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: mixins/breakpoints.\A         on line 1 of _sass/minimal-mistakes/_variables.scss\A         from line 4 of _sass/minimal-mistakes/_input.scss\A \A 1: /* Markdown 문서의 Front Matter 구문이므로, Sass 컴파일에서 무시되도록 처리한다. */\A 2: \A 3: \A 4: @import \"variables\";\A 5: @import \"base\";\A 6: @import \"layouts-home\";"; }
