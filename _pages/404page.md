@@ -11,5 +11,4 @@ permalink: /404.html
 <div class="image-wrapper">
   <img src="{{ site.baseurl }}/assets/img/404page.png" alt="404 page not found">
   <div class="image-caption">Page not found.</div>
-  <button>Go back to home</button>
 </div>
