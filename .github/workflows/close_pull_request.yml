@@ -1,16 +1,14 @@
-name: Close Pull Request
+name: Labeler
 
-on:
-  pull_request_target:
-    types:
-      - opened
+on: [pull_request]
 
 jobs:
-  close_pull_request:
+  label:
     runs-on: ubuntu-latest
     steps:
-      - name: Close pull request
-        uses: peter-evans/close-pull-request@v1
+      - name: Run Labeler
+        uses: actions/labeler@v3
         with:
-          repo-token: ${{ secrets.MY_GITHUB_BLOG_TOKEN_PULL_REQUEST }}
-          delete-branch: true # PR의 기능 브랜치를 삭제하려면 true로 설정하십시오.
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          configuration-path: .github/labeler.yml
+          sync-labels: true
