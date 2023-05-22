@@ -8,6 +8,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
       - name: Run Labeler
         uses: actions/labeler@v3
         with:
