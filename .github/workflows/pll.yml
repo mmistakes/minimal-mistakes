@@ -6,14 +6,13 @@ on:
   pull_request_target:
     types: [opened, edited]
 jobs:
-  labeler:
+  close_pr:
     runs-on: ubuntu-latest
     steps:
-      - name: 라벨러 실행
+      - name: 프로세스 실행
         uses: actions/labeler@v3
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          configuration-path: .github/pll.yml # 라벨 설정 파일 경로
-          sync-labels: true 
-
+          configuration-path: .github/labeler.yml
+          sync-labels: true
 
