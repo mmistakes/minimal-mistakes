@@ -14,6 +14,6 @@ jobs:
       - name: Labeler
         uses: actions/labeler@bf91c7e87bbf8be60165a97dd46b245f76a18289
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.my_token_blog_pull_request  }}
           configuration-path: .github/labeler.yml
           sync-labels: ''
