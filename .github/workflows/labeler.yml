@@ -9,6 +9,6 @@ jobs:
       - name: Run Labeler
         uses: actions/labeler@v3
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.MY_GITHUB_BLOG_TOKEN_PULL_REQUEST }}
           configuration-path: .github/labeler.yml
           sync-labels: true
