@@ -5,15 +5,12 @@ on:
     types: [opened, edited]
   pull_request_target:
     types: [opened, edited]
-
 jobs:
-  labeling:
+  labeler:
     runs-on: ubuntu-latest
     steps:
-      - name: Labeler
-        uses: actions/labeler@v4
+      - name: 라벨러 실행
+        uses: actions/labeler@v3
         with:
-          configuration-path: .github/labeler.yml
-          repo-token: ${{ secrets.MY_GITHUB_BLOG_TOKEN_PULL_REQUEST }}
-        if: github.event.pull_request.merged == true
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
 
