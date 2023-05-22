@@ -643,6 +643,12 @@ ko: &DEFAULT_KO
   back_to_top                : "맨 위로 이동"
 ko-KR:
   <<: *DEFAULT_KO
+  labels:
+    categories: 카테고리
+    posts: 게시물
+    related_posts: 관련글
+
+
 
 # Russian / Русский
 # -----------------

@@ -1,13 +1,15 @@
 # main links
 main:
-  - title: "Home"
+  - title: "홈"
     url: "/"
-  - title: "Blog"
-    url: "/categories/category1/"
-  - title: "category"
-    url: "/categories/"
-  - title: "Tag"
-    url: "/tags/"
+  - title: "나의 생각"
+    url: "/categories/나의%20생각/"
+  - title: "복습"
+    url: "/categories/복습/"
+  - title: "과제"
+    url: "/categories/과제/"
+
+
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
