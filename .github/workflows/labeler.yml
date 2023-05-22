@@ -1,0 +1,19 @@
+name: Labeler
+
+on:
+  # 액션을 실행할 트리거 이벤트 (여기서는 pull request)
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  # Job 설정
+  labeler-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      # 액션 설정
+      - name: Execute Labeler
+        uses: actions/labeler@v3
+        with:
+          configuration-path: .github/labeler.yml
+          repo-token: ${{ secrets.MY_GITHUB_BLOG_TOKEN_PULL_REQUEST }}
+          sync-labels: true
