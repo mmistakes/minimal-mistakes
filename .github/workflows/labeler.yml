@@ -11,21 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Labeler
-        uses: actions/labeler@v4
+        uses: actions/labeler@v3
         with:
           configuration-path: .github/labeler.yml
           repo-token: ${{ secrets.MY_GITHUB_BLOG_TOKEN_PULL_REQUEST }}
+          sync-labels: true
         if: github.event.pull_request.merged == true
 
-
-  # Pull Request가 병합되었을 경우 해외 PR에 해당하는 브랜치를 삭제하고, 해당 PR을 닫습니다.
-  close-pr:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Labeler
-        uses: actions/labeler@v4
-        with:
-          configuration-path: .github/labeler.yml
-          repo-token: ${{ secrets.MY_GITHUB_BLOG_TOKEN_PULL_REQUEST }}
-        if: github.event.pull_request.merged == true
+  
