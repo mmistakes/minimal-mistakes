@@ -717,7 +717,22 @@ class JobsService(private val jobs: Jobs) {
 }
 ```
 
-Apart from the type used to express failures, the `getSalaryGapWithMax` function is very similar to the one we implemented using the `Result` type, or the `Option` type in the part one. 
+Apart from the type used to express failures, the `getSalaryGapWithMax` function is very similar to the one we implemented using the `Result` type, or the `Option` type in the part one. Another thing that is similar to the previous implementations is the pain in reading such code. We have a lot of nested calls, no monadic support, and it's not easy to understand what's going on.
+
+As we might guess, Arrow offers us the usual DSL to simplify the composition of `Either` instances, and it's called `either`. The `either.eager` DSL is the non suspending counterpart:
+
+```kotlin
+// Arrow SDK
+public object either {
+    public inline fun <E, A> eager(noinline f: suspend EagerEffectScope<E>.() -> A): Either<E, A> =
+        // Omissis...
+
+    public suspend operator fun <E, A> invoke(f: suspend EffectScope<E>.() -> A): Either<E, A> =
+        // Omissis...
+}
+```
+
+Both the DSL are builders for two different scopes they defined as receivers, respectively `arrow.core.continuations.EagerEffectScope<A>`, and `arrow.core.continuations.EffectScope<A>`.
 
 
 
