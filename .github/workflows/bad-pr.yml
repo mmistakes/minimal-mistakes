@@ -1,19 +1,22 @@
-name: Your Workflow Name
+name: 라벨링
+
 on:
-  push:
-    branches:
-      - main
   pull_request:
-    branches:
-      - main
+    types:
+      - opened
 
 jobs:
-  labeler:
+  labeling:
     runs-on: ubuntu-latest
     steps:
-      - name: Labeler
-        uses: actions/labeler@bf91c7e87bbf8be60165a97dd46b245f76a18289
+      - name: 라벨 적용
+        uses: actions/github-script@v6
         with:
-          repo-token: ${{ secrets.my_token_blog_pull_request  }}
-          configuration-path: .github/labeler.yml
-          sync-labels: ''
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: ['Type: Invalid']
+            });
