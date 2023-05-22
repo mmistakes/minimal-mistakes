@@ -15,4 +15,5 @@ jobs:
         with:
           configuration-path: .github/labeler.yml
           repo-token: ${{ secrets.MY_GITHUB_BLOG_TOKEN_PULL_REQUEST }}
-        if: github어야 합니다. 라벨러 작동 여부를 확인하려면 이슈나 풀 리퀘스트를 생성하거나 수정해 확인해 보시기 바랍니다.
+        if: github.event.pull_request.merged == true
+
