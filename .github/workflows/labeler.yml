@@ -6,14 +6,11 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  # Job 설정
-  labeler-workflow:
+  apply-labels:
     runs-on: ubuntu-latest
     steps:
-      # 액션 설정
-      - name: Execute Labeler
-        uses: actions/labeler@v3
-        with:
-          configuration-path: .github/labeler.yml
-          repo-token: ${{ secrets.MY_GITHUB_BLOG_TOKEN_PULL_REQUEST }}
-          sync-labels: true
+    - name: Labeler
+      uses: actions/labeler@v3
+      with:
+        configuration-path: .github/labeler.yml
+        repo-token: ${{ secrets.MY_GITHUB_BLOG_TOKEN_PULL_REQUEST }}
