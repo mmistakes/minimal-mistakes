@@ -8,8 +8,26 @@ main:
     url: "/categories/복습/"
   - title: "과제"
     url: "/categories/과제/"
+  - title: "Search"
+    url: /search/
 
 
+docs:
+  - title: "대목차"
+    children:
+    - title: "카테고리 모음"
+      url: /categories/
+    - title: "태그 모음"
+      url: /tags/
+
+  - title: "카테고리로 이동"
+    children:
+    - title: "나의 생각"
+      url: "/categories/나의-생각/"
+    - title: "복습"
+      url: "/categories/복습/" 
+    - title: "과제"
+      url: "/categories/과제" 
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
