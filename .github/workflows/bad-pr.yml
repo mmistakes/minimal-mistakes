@@ -1,28 +1,20 @@
-name: Cleanup bad PR
-
+name: Your Workflow Name
 on:
-  pull_request_target:
-    types: [opened, reopened]
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  close-pr:
+  labeler:
     runs-on: ubuntu-latest
-    if: "contains(github.event.pull_request.body, 'by deleting this comment block') || github.event.pull_request.body == ''"
     steps:
-      - uses: actions/labeler@v3
+      - name: Labeler
+        uses: actions/labeler@v3
         with:
-          labels: 'Type: Invalid'
-          repo-token: ${{ secrets.YOUR_CUSTOM_TOKEN }}
-      - uses: superbrothers/close-pull-request@v3
-        with:
-          # Optional. Post an issue comment just before closing a pull request.
-          comment: |
-            **You have created a Pull Request to the wrong repository.** This is the repository for [Minimal Mistakes][1], the free Jekyll theme. See [GitHub Docs: About pull requests][2] if you need help.
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          configuration-path: .github/labeler.yml
+          sync-labels: '' # 이 입력은 선택 사항이므로 추가할 수도 있고 아닐 수도 있습니다.
 
-              [1]: https://mmistakes.github.io/minimal-mistakes/
-              [2]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
-      - uses: sudo-bot/action-pull-request-lock@v1.0.5
-        with:
-          github-token: ${{ secrets.MY_GITHUB_TOKEN_BLOG }}
-          number: ${{ github.event.pull_request.number }}
-          lock-reason: spam
