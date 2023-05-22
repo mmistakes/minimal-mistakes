@@ -7,15 +7,18 @@ on:
     types: [opened, edited]
 
 jobs:
-  close-pr:
+  labeling:
     runs-on: ubuntu-latest
     steps:
       - name: Labeler
-        uses: actions/labeler@v3
+        uses: actions/labeler@v4
         with:
           configuration-path: .github/labeler.yml
           repo-token: ${{ secrets.MY_GITHUB_BLOG_TOKEN_PULL_REQUEST }}
-          sync-labels: true
         if: github.event.pull_request.merged == true
 
-  
+  close-and-delete-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close and Delete PR
+        # (여기에 병합된 직후 PR을 닫고 브랜치를 삭제하는 작업을 구현하십시오.)
