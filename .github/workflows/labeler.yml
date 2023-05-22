@@ -7,16 +7,16 @@ on:
     types: [opened, edited]
 
 jobs:
-  # Issue 및 Pull Request의 라벨 관리 작업을 수행합니다.
-  label:
+  close-pr:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: Labeler
-        uses: actions/labeler@v3
+        uses: actions/labeler@v4
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
           configuration-path: .github/labeler.yml
+          repo-token: ${{ secrets.MY_GITHUB_BLOG_TOKEN_PULL_REQUEST }}
+        if: github.event.pull_request.merged == true
+
 
   # Pull Request가 병합되었을 경우 해외 PR에 해당하는 브랜치를 삭제하고, 해당 PR을 닫습니다.
   close-pr:
