@@ -1,8 +1,10 @@
 ---
-layout: archive
-taxonomy: category1
-title: "category1"
-permalink: "/categories/category1"
+layout: category
+title: "Category1"
+permalink: "/categories/category1/"
+taxonomy: Category1
 ---
+
+
 
 카테고리1 아카이브
