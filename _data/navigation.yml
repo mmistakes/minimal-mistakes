@@ -3,7 +3,7 @@ main:
   - title: "홈"
     url: "/"
   - title: "나의 생각"
-    url: "/categories/나의%20생각/"
+    url: "/categories/나의-생각/"
   - title: "복습"
     url: "/categories/복습/"
   - title: "과제"
