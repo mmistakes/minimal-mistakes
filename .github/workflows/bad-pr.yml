@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Labeler
-        uses: actions/labeler@v3
+        uses: actions/labeler@bf91c7e87bbf8be60165a97dd46b245f76a18289
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           configuration-path: .github/labeler.yml
-          sync-labels: '' 
+          sync-labels: ''
