@@ -9,9 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     if: "contains(github.event.pull_request.body, 'by deleting this comment block') || github.event.pull_request.body == ''"
     steps:
-      - uses: actions-ecosystem/action-add-labels@v1
+      - uses: actions/labeler@v3
         with:
           labels: 'Type: Invalid'
+          repo-token: ${{ secrets.YOUR_CUSTOM_TOKEN }}
       - uses: superbrothers/close-pull-request@v3
         with:
           # Optional. Post an issue comment just before closing a pull request.
@@ -22,6 +23,6 @@ jobs:
               [2]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
       - uses: sudo-bot/action-pull-request-lock@v1.0.5
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.MY_GITHUB_TOKEN_BLOG }}
           number: ${{ github.event.pull_request.number }}
           lock-reason: spam
