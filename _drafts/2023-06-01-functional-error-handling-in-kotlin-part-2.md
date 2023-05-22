@@ -690,8 +690,34 @@ class LiveJobs : Jobs {
 }
 ```
 
+Then, we can use `map` and `flatMap` to compose the `findAll` and `findById` functions, and implement the `getSalaryGapWithMax` function. As we did for the `Result` type, we define a utility function getting the maximum salary from a list of jobs, this time using an `Either` instance as a result:
 
+```kotlin
+private fun List<Job>.maxSalary(): Either<GenericError, Salary> =
+    if (this.isEmpty()) {
+        GenericError("No jobs found").left()
+    } else {
+        this.maxBy { it.salary.value }.salary.right()
+    }
+```
 
+Then, we can assemble all the pieces together, in our first version of the `getSalaryGapWithMax` function:
+
+```kotlin
+class JobsService(private val jobs: Jobs) {
+
+    fun getSalaryGapWithMax(jobId: JobId): Either<JobError, Double> =
+        jobs.findById(jobId).flatMap { job ->
+            jobs.findAll().flatMap { jobs ->
+                jobs.maxSalary().map { maxSalary ->
+                    (maxSalary.value - job.salary.value)
+                }
+            }
+        }
+}
+```
+
+Apart from the type used to express failures, the `getSalaryGapWithMax` function is very similar to the one we implemented using the `Result` type, or the `Option` type in the part one. 
 
 
 
