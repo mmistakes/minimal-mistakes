@@ -10,8 +10,8 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run Labeler
-        uses: actions/labeler@v3
-        with:
-          repo-token: ${{ BLOG_TOKEN_PULL_REQUEST }}
-          configuration-path: .github/labeler.yml
-          sync-labels: true
+        uses: andymckay/labeler@1.0.3
+         with:
+    repo-token: "${{ secrets.GITHUB_TOKEN }}"
+    add-labels: "your_label_name"
+
