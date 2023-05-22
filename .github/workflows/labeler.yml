@@ -6,13 +6,11 @@ on:
   pull_request_target:
     types: [opened, edited]
 jobs:
-  close_pr:
+  my_job:
     runs-on: ubuntu-latest
     steps:
-      - name: 프로세스 실행
-        uses: actions/labeler@v3
+      - name: 워크플로 시작
+        uses: some_action@v1
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          configuration-path: .github/labeler.yml
-          sync-labels: true
+          repo-token: ${{ MY_GITHUB_BLOG_TOKEN_PULL_REQUEST }}
 
