@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Jason Park"
 description              : "An amazing website."
 url                      : "https://icebear93.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
