@@ -13,7 +13,7 @@ jobs:
         uses: actions/labeler@v3
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          configuration-path: .github/labeler.yml # 라벨 설정 파일경로
+          configuration-path: .github/pll.yml # 라벨 설정 파일 경로
           sync-labels: true 
 
 
