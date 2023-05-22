@@ -8,4 +8,4 @@ jobs:
     - name: My Action Step
       uses: some-owner/some-action@v1
       with:
-        repo-token: ${{ secrets.my_token_blog_pull_request  }}
+        repo-token: ${{ secrets.MY_TOKEN_BLOG_PULL_REQUEST  }}
