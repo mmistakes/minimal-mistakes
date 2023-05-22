@@ -1,11 +1,20 @@
-name: Pull request labeler
+name: Your Workflow Name
 on:
-  - pull_request
+  # 작업 스케줄링에 필요한 트리거 설정 (예: push, pull_request 등)
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
-  my-job:
+  labeler:
     runs-on: ubuntu-latest
     steps:
-    - name: My Action Step
-      uses: some-owner/some-action@v1
-      with:
-        repo-token: ${{ secrets.MY_TOKEN_BLOG_PULL_REQUEST  }}
+      - name: Labeler
+        uses: actions/labeler@v3
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          configuration-path: .github/labeler.yml
+          sync-labels: '' # 이 입력은 선택 사항이므로 추가할 수도 있고 아닐 수도 있습니다.
