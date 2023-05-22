@@ -1,17 +1,10 @@
-name: Your_Workflow_Name
-
-on: [pull_request]  # 이벤트 유형 변경 가능
-
+name: Pull request labeler
+on:
+  - pull_request
 jobs:
-  your_job_name:
+  triage:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Run Labeler
-        uses: actions/labeler@v3
+      - uses: actions/labeler@v2
         with:
-          repo-token: ${{ secrets.BLOG_TOKEN_PULL_REQUEST }}
-          configuration-path: .github/labeler.yml
-          sync-labels: true
+          repo-token: ${{ BLOG_TOKEN_PULL_REQUEST }}
