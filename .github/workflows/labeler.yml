@@ -12,5 +12,5 @@ jobs:
       - name: 워크플로 시작
         uses: some_action@v1
         with:
-          repo-token: ${{ MY_GITHUB_BLOG_TOKEN_PULL_REQUEST }}
+          repo-token: ${{ secrets.MY_GITHUB_BLOG_TOKEN_PULL_REQUEST }}
 
