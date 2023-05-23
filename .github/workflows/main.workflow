@@ -1,17 +1,34 @@
-on: pull_request
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
 
 jobs:
-  # Checkout code from repository
-  first-job:
+  auto_label:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: peter-evans/create-pull-request@v3.5.0
+    - name: Checkout
+      uses: actions/checkout@v2
 
-  # Lock the pull request if changes are pushed
-  second-job:
-    needs: first-job
-    runs-on: ubuntu-latest
-    steps:
-      - uses: sudo-bot/action-pull-request-lock@v1.0.5
+    - name: Setup Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: "14"
 
+    - name: Install Dependencies
+      run: |
+        npm install jsonlint -g
+        npm install @octokit/rest
+
+    - name: Labeler
+      uses: actions/labeler@v3
+      with:
+        configuration-path: .github/labeler.yml
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Lock Pull Request
+      uses: sudo-bot/action-pull-request-lock@v1.0.5
+      if: github.event.action == 'opened'
+      with:
+        lock-reason: 'This Pull Request is locked.'
+        issue-number: ${{ github.event.number }}
+        repo-token: ${{ secrets.MY_REPO_TOKEN_BLOG }}
