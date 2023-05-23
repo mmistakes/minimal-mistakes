@@ -23,6 +23,7 @@ jobs:
       - name: Lock pull request
         uses: sudo-bot/action-pull-request-lock@v1.0.5
         with:
+          pull-request-number: ${{ secrets.MY_REPO_TOKEN_BLOG }}
           lock-note: "Repository is locked at this time until once the owner reviews your changes."
           lock-reason: "repo-lock"
           allow-merge: false
