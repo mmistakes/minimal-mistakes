@@ -732,7 +732,16 @@ public object either {
 }
 ```
 
-Both the DSL are builders for two different scopes they defined as receivers, respectively `arrow.core.continuations.EagerEffectScope<A>`, and `arrow.core.continuations.EffectScope<A>`.
+Both the DSL are builders for two different scopes they defined as receivers, respectively `arrow.core.continuations.EagerEffectScope<A>`, and `arrow.core.continuations.EffectScope<A>`. As you might notice, the `either` DSL doesn't work with an `EitherScope`, but with an `EffectScope`. We will see why in a moment. For now, let's try to make the `getSalaryGapWithMax` function more readable using the `either` DSL:
+
+```kotlin
+fun getSalaryGapWithMax2(jobId: JobId): Either<JobError, Double> = either.eager {
+    val job = jobs.findById(jobId).bind()
+    val jobsList = jobs.findAll().bind()
+    val maxSalary = jobsList.maxSalary().bind()
+    maxSalary.value - job.salary.value
+}
+```
 
 
 
