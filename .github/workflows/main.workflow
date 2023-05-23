@@ -11,7 +11,7 @@ jobs:
       - name: Run actions/labeler
         uses: actions/labeler@v3
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.MY_REPO_TOKEN_BLOG }}
 
       - name: Close pull request
         uses: superbrothers/close-pull-request@v3
