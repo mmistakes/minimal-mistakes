@@ -1,13 +1,18 @@
+name: Close pull request
+on:
+  pull_request:
+    types: [closed]
+
 jobs:
   close-pr:
     runs-on: ubuntu-latest
     steps:
-       - name: Run actions/labeler
-         uses: actions/labeler@v3
-         with:
-           repo-token: ${{ secrets.PULL_REQUEST_ACCESS_TOKEN }}
-           configuration-path: .github/labeler.yml
-           sync-labels: false
+      - name: Run actions/labeler
+        uses: actions/labeler@v3
+        with:
+          repo-token: ${{ secrets.PULL_REQUEST_ACCESS_TOKEN }}
+          configuration-path: .github/labeler.yml
+          sync-labels: false
 
       - name: Close pull request
         uses: superbrothers/close-pull-request@v3
