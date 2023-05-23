@@ -1,29 +1,25 @@
+name: Auto Merge Pull Request Based on Label
+
 on:
   pull_request:
-    types: [opened, edited, synchronize]
+    types:
+      - labeled
+      - unlabeled
+      - synchronize
+
+  push:
+    branches:
+      - main
 
 jobs:
-  auto_label:
+  auto_merge:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Setup Node
-      uses: actions/setup-node@v2
-      with:
-        node-version: "14"
-
-    - name: Labeler
-      uses: actions/labeler@v3
-      with:
-        configuration-path: .github/labeler.yml
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Lock Pull Request
-      uses: sudo-bot/action-pull-request-lock@v1.0.5
-      if: github.event.action == 'opened'
-      with:
-        lock-reason: 'This Pull Request is locked.'
-        issue-number: ${{ github.event.number }}
-        repo-token: ${{ secrets.MY_REPO_TOKEN_BLOG }}
+      - name: Merge pull request based on label
+        uses: pascalgn/automerge-action@v0.13.1
+        env:
+          GITHUB_TOKEN: "${{ secrets.PULL_REQUEST_ACCESS_TOKEN }}"
+          MERGE_LABELS: "automerge, !wip"
