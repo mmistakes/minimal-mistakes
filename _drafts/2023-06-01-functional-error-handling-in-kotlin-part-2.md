@@ -743,6 +743,35 @@ fun getSalaryGapWithMax2(jobId: JobId): Either<JobError, Double> = either.eager 
 }
 ```
 
+The `either` DSL gives us access to the `bind` member extension function on the `EagerEffectScope` to extract `Right` values from an`Either` instance or to shot-circuit the entire computation if a`Left` instance is found. The `bind` function is defined as follows:
+
+```kotlin
+// Arrow SDK
+public interface EagerEffectScope<in R> {
+
+    // Omissis...
+    public suspend fun <A> Either<R, A>.bind(): A =
+        when (this) {
+            is Right -> value
+            is Left -> throw BindException(value)
+        }
+}
+```
+
+Similarly, we have access to the `ensureNotNull` extension function, which short-circuits the computation if a `null` value is found, and it's defined as follows:
+
+```kotlin
+// Arrow SDK
+@OptIn(ExperimentalContracts::class)
+public suspend fun <R, B : Any> EagerEffectScope<R>.ensureNotNull(value: B?, shift: () -> R): B {
+    contract { returns() implies (value != null) }
+    return value ?: shift(shift())
+}
+```
+
+TODO
+
+
 
 
 
