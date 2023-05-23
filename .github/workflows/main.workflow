@@ -6,10 +6,13 @@ jobs:
   close-pr:
     runs-on: ubuntu-latest
     steps:
-      - name: Run actions/labeler
-        uses: actions/labeler@v3
-        with:
-          repo-token: ${{ secrets.MY_REPO_TOKEN_BLOG }}
+       - name: Run actions/labeler
+         uses: actions/labeler@v3
+         with:
+           repo-token: ${{ secrets.MY_REPO_TOKEN_BLOG }}
+           configuration-path: .github/labeler.yml
+           sync-labels: false
+
 
       - name: Close pull request
         uses: superbrothers/close-pull-request@v3
