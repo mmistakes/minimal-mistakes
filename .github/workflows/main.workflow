@@ -1,3 +1,21 @@
+defaults:
+  run:
+    working-directory: ${{ github.workspace }}
+    shell: bash -e {0}
+
+runs-on: ubuntu-latest
+
+env:
+  CI: 1
+  NODE_VERSION: 16.x
+
+steps:
+  - uses: actions/checkout@v2
+  - uses: actions/setup-node@v2
+    with:
+      node-version: ${{ env.NODE_VERSION }}
+
+
 name: Close pull request
 on:
   pull_request:
