@@ -14,16 +14,11 @@ jobs:
       with:
         node-version: "14"
 
-    - name: Install Dependencies
-      run: |
-        npm install jsonlint -g
-        npm install @octokit/rest
-
     - name: Labeler
       uses: actions/labeler@v3
       with:
         configuration-path: .github/labeler.yml
-        repo-token: ${{ secrets.GITHUB_TOKEN }} # Or use: ${{ secrets.MY_REPO_TOKEN }}
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Lock Pull Request
       uses: sudo-bot/action-pull-request-lock@v1.0.5
