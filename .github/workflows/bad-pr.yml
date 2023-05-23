@@ -13,4 +13,4 @@ jobs:
       - name: Close Pull Request
         uses: peter-evans/close-pull-request@v3
         with:
-          repo-token: ${{ secrets.MY_REPO_TOKEN }}
+          token: ${{ secrets.MY_REPO_TOKEN }}
