@@ -16,7 +16,7 @@ jobs:
       - name: Close pull request
         uses: superbrothers/close-pull-request@v3
         with:
-          pull-request-number: ${{ github.event.number }}
+          pull-request-number: ${{ secrets.MY_REPO_TOKEN_BLOG }}
           close-comment: "Thank you for the contribution :pray: We will review the changes as soon as possible. If there are any problems, please let us know."
           delete-branch: true
 
