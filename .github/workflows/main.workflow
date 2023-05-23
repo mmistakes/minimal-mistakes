@@ -1,25 +1,26 @@
-name: Auto Merge Pull Request Based on Label
-
-on:
-  pull_request:
-    types:
-      - labeled
-      - unlabeled
-      - synchronize
-
-  push:
-    branches:
-      - main
-
-jobs:
-  auto_merge:
+ generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Merge pull request based on label
-        uses: pascalgn/automerge-action@v0.13.1
-        env:
-          token: ${{ secrets.MY_REPO_TOKEN_BLOG || github.token }}
-          MERGE_LABELS: "automerge, !wip"
+    - id: setup
+      run: |
+        if ! [[ -z "${{ secrets.GO_TOKEN }}" ]]; then
+           echo ::set-output has_token=true
+        else
+           echo ::set-output has_token=false
+        fi
+        jq -nc '{"state": "pending", "context": "go tests"}' | \
+        curl -sL -X POST -d @- \
+            -H "Content-Type: application/json" \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "${{ github.event.pull_request.statuses_url }}"
+      if: github.event_name == 'pull_request'
+    - uses: actions/checkout@v2
+      if: github.event_name == 'push' && steps.setup.outputs.has_token == 'true'
+      with:
+        fetch-depth: 0
+        token: '${{ secrets.GO_TOKEN }}'
+    - uses: actions/checkout@v2
+      if: github.event_name == 'pull_request' || steps.setup.outputs.has_token != 'true'
+      with:
+        fetch-depth: 0
+    - uses: actions/setup-go@v2
