@@ -1,7 +1,3 @@
-on:
-  pull_request:
-    types: [closed]
-
 jobs:
   close-pr:
     runs-on: ubuntu-latest
@@ -12,7 +8,6 @@ jobs:
            repo-token: ${{ secrets.PULL_REQUEST_ACCESS_TOKEN }}
            configuration-path: .github/labeler.yml
            sync-labels: false
-
 
       - name: Close pull request
         uses: superbrothers/close-pull-request@v3
