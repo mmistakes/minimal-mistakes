@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "jsNote"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/bear.PNG"
   bio              : "Hi, my name is Jason"
   location         : "South Korea"
   email            :
