@@ -1,18 +1,16 @@
-name: 라벨링
+name: Close Pull Request
 
 on:
   pull_request:
     types:
-      - opened
+      - closed
 
 jobs:
-  labeling:
+  close-pr:
     runs-on: ubuntu-latest
+
     steps:
-      - name: 라벨 적용
-        uses: actions/github-script@v6
+      - name: Close Pull Request
+        uses: peter-evans/close-pull-request@v3
         with:
-          repo-token: ${{ secrets.my_repo_token_blog }}
-          labels: Type:Invalid
-          configuration-path: .github/labeler.yml
-          sync-labels: false
+          repo-token: ${{ secrets.MY_REPO_TOKEN }}
