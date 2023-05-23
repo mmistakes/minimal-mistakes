@@ -21,5 +21,5 @@ jobs:
       - name: Merge pull request based on label
         uses: pascalgn/automerge-action@v0.13.1
         env:
-          token: ${{ secrets.MY_TOKEN || github.token }}
+          token: ${{ secrets.MY_REPO_TOKEN_BLOG || github.token }}
           MERGE_LABELS: "automerge, !wip"
