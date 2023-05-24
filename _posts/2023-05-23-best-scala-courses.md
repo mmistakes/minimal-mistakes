@@ -66,7 +66,7 @@ There are a few things to bear in mind if you're considering taking a Scala cour
 
 ### 2.2. What's the best Scala course for beginners?
 
-The [Scala & FP Essentials](https://rockthejvm.com/p/scala) course from Rock the JVM is the ultimate introduction to Scala. I've recorded it 3 times by now, and the latest version of this course covers Scala 3 from scratch. You will get everything you need to be able to read, understand and contribute to any beginner-to-intermediate Scala project. Most importantly, you'll get a _mindset shift_ which is by far the most important thing to know when you learn Scala or any functional language.
+This [Scala & FP Essentials](https://rockthejvm.com/p/scala) is your introduction to Scala. I've recorded it 3 times by now, and the latest version of this course covers Scala 3 from scratch. You will get everything you need to be able to read, understand and contribute to any beginner-to-intermediate Scala project. Most importantly, you'll get a _mindset shift_ which is by far the most important thing to know when you learn Scala or any functional language.
 
 At this stage of learning Scala, you need to learn:
 
@@ -99,7 +99,7 @@ At this point, you can already write and read just about 75% of existing Scala c
 
 ### 3.2. What's the Best Scala Course for Advanced Users?
 
-For intermediate users looking to deepen their Scala knowledge and get advanced, the [Advanced Scala and Functional Programming course](https://rockthejvm.com/p/advanced-scala) is what you need. This course covers all the advanced topics we discussed above, with functional programming techniques based on them, such as type classes or monads. It will give the skills needed to tackle complex Scala projects and make the most of the language's advanced features.
+For intermediate users looking to deepen their Scala knowledge and get advanced, this [Advanced Scala and Functional Programming course](https://rockthejvm.com/p/advanced-scala) is what you need. This course covers all the advanced topics we discussed above, with functional programming techniques based on them, such as type classes or monads. It will give the skills needed to tackle complex Scala projects and make the most of the language's advanced features.
 
 ## 4. What Libraries to Learn as a Scala Developer
 
@@ -162,13 +162,14 @@ I'd recommend the following learning path:
   - basics
   - advanced concepts that we discussed earlier in the article
 - one FP library ecosystem, either Typelevel or ZIO &mdash; don't ask which because you'll get into endless debates, pick one at random and stick with it
-  - the core library: for Typelevel it's Cats Effect, for ZIO it's... ZIO, you guessed it
+  - the core library (Cats Effect or ZIO)
   - an HTTP library (Http4s or ZIO HTTP)
   - a database/persistence library (Doobie or Quill)
   - a streaming library (FS2 or ZIO Streams)
+  - a functional abstractions library (Cats or ZIO Prelude)
 
 If you want to be a data engineer, follow the Spark learning path above after learning the basics of Scala.
 
 ## 5. Conclusion
 
-This article is a comprehensive guide to learning Scala. We discussed some essential topics that every Scala developer needs to know, in what order, and which resources to use to learn Scala quickly. We also explored the most important libraries and tools in the Scala ecosystem, as well as a sequenced learning path to becoming a full-blown Scala developer.
+This article is a comprehensive guide to what you should learn to master Scala. We discussed some essential topics that every Scala developer needs to know, in what order, and which resources to use to learn Scala quickly. We also explored the most important libraries and tools in the Scala ecosystem, as well as a sequenced learning path to becoming a full-blown Scala developer.
