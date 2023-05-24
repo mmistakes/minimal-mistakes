@@ -55,14 +55,18 @@ This conference will bring together researchers working in transient astronomy a
 - Linqing Wen (UWA) 
 - Tony Travouillon (ANU) 
 - Lilia Ferrario (ANU) 
+- Nicolas Rodriguez-Segovia (UNSW Canberra)
 
 ## LOC 
 
 - Jeff Cooke (Swinburne) 
+- Simon Stevenson (Swinburne)
+- Jade Powell (Swinburne)
 - Alex Heger (Monash) 
 - Ryosuke Hirai (Monash) 
 - Evgeni Grishin (Monash)
 - Duane Hamacher (Melbourne) 
+- Katie Auchettl (Melbourne)
 - Karelle Seillez (UTas)
 - Ashley Ruiter (UNSW Canberra) 
 
