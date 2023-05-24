@@ -3,16 +3,10 @@ permalink: about/
 title: "About"
 excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
 layouts_gallery:
-  - url: /assets/images/mm-layout-splash.png
-    image_path: /assets/images/mm-layout-splash.png
-    alt: "splash layout example"
-  - url: /assets/images/mm-layout-single-meta.png
-    image_path: /assets/images/mm-layout-single-meta.png
-    alt: "single layout with comments and related posts"
-  - url: /assets/images/mm-layout-archive.png
-    image_path: /assets/images/mm-layout-archive.png
-    alt: "archive layout example"
-last_modified_at: 2023-05-16T13:25:00+10:00
+  - url: /assets/images/ozgrav-logo.png
+    image_path: /assets/images/ozgrav-logo.png
+    alt: "OzGrav logo"
+last_modified_at: 2023-05-24T15:00:00+10:00
 toc: true
 toc_sticky: true
 ---
@@ -76,5 +70,5 @@ This conference will bring together researchers working in transient astronomy a
 
 ## Sponsors
 
+{% include gallery id="layouts_gallery" %}
 <!--{% include gallery id="layouts_gallery" caption="Relevant logos instead of these images." %}-->
-![ozgrav_logo_array_tk005_final_invert](https://github.com/TransientsDownUnder/transientsdownunder.github.io/assets/125625411/6462a77e-cf1b-4a53-81ad-0695d42a0a7e)
