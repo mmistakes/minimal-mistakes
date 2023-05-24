@@ -1,15 +1,19 @@
 import time
 fpath, fmode = 'C:/Users/noir1/Documents/git/noir1458.github.io/_posts/', 'w'
 def other_type():
+    tags = ['markdown','ENG','JPN','finance','physics','programmers','ComputerArchitecture','DataStructure','algorithm','OS','DB','network','python','numpy_pandas','calculus','LinearAlgebra','AdvancedEngineeringMathematics','DifferentialEquation']
+    for idx in range(len(tags)):
+        print(idx,'-',tags[idx])
+    idx_tags = int(input('태그 앞 번호를 입력하여 태그 설정 : '))
+    set_tag = tags[idx_tags]
+
     fdate = time.strftime('%Y-%m-%d-')
-    fname = input('날짜 뒤의 파일명을 입력하세요 : ')
-    fname2 = fname.replace(' ','-')
-    fhandle = open(fpath+fdate+fname2+'.md',fmode)
+    fhandle = open(fpath+fdate+set_tag+'.md',fmode)
     
     infile = '''---
 layout: single
-title: ''' + fname + '''
-tags: other
+title: ''' + set_tag + '''
+tags: ''' + set_tag + '''
 ---
     '''
     fhandle.write(infile)
@@ -46,9 +50,8 @@ tags: BOJ
 
 def think_type():
     fdate = time.strftime('%Y-%m-%d-')
-    fname = input('날짜 뒤의 파일명을 입력하세요 : ')
-    fname2 = fname.replace(' ','-')
-    fhandle = open(fpath+fdate+fname2+'.md',fmode)
+    fname = fdate.replace('-','') + '_'+ 'think'
+    fhandle = open(fpath+fdate+fname+'.md',fmode)
     
     infile = '''---
 layout: single
