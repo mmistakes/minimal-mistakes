@@ -769,9 +769,51 @@ public suspend fun <R, B : Any> EagerEffectScope<R>.ensureNotNull(value: B?, shi
 }
 ```
 
+To demonstrate the `ensureNotNull` function, let's try to implement a variant of the `getSalaryGapWithMax` function using a new version of the extension function `maxSalary` we implemented before:
+
+```kotlin
+private fun List<Job>.maxSalary2(): Salary? = this.maxBy { it.salary.value }.salary
+```
+
+The above version of the function returns a nullable `Salary` instance, instead of an `Either` instance. We can use the `ensureNotNull` function to short-circuit the computation if a `null` value is found in the the `getSalaryGapWithMax` function:
+
+```kotlin
+fun getSalaryGapWithMax3(jobId: JobId): Either<JobError, Double> = either.eager {
+    val job = jobs.findById(jobId).bind()
+    val jobsList = jobs.findAll().bind()
+    val maxSalary = ensureNotNull(jobsList.maxSalary2()) { GenericError("No jobs found") }
+    maxSalary.value - job.salary.value
+}
+```
+
+If the `jobsList.maxSalary2()` statement returns a `null` value, we short-circuit the computation with a `Left` instance containing a `GenericError` instance.
+
+The `ensure` extension function is similar to the `ensureNotNull` function, but it works with a predicate instead of a nullable value. The `ensure` function is defined as follows:
+
+```kotlin
+// Arrow SDK 
+public suspend fun ensure(condition: Boolean, shift: () -> R): Unit =
+    if (condition) Unit else shift(shift())
+```
+
+We can use the `ensure` function when implementing smart-constractors. For example, let's implement a smart-constructor for the `Salary` type, which checks if the given value is a positive integer:
+
+```kotlin
+object NegativeAmount : JobError
+
+@JvmInline
+value class Salary private constructor(val value: Double) {
+    // Omissis...
+    companion object {
+        operator fun invoke(value: Double): Either<JobError, Salary> = either.eager {
+            ensure(value >= 0.0) { NegativeAmount }
+            Salary(value)
+        }
+    }
+}
+```
+
+Here, we're using the `ensure` function to short-circuit the computation if the given value is negative. We can easily test the smart-constructor and check if it works as expected:
+
 TODO
-
-
-
-
 
