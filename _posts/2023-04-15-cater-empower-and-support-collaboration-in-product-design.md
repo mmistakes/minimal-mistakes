@@ -16,7 +16,7 @@ Place documentation near actions to enhance discoverability, and provide advance
 
 For example, in Age of Empires IV, beginners can use the mouse to select units and issue commands with tooltips for descriptions and shortcuts, while advanced users can efficiently control entire armies with just a few keystrokes.
 
-# 🚀 2 Empower and trust users
+# 🚀 2. Empower and trust users
 
 Trust users by granting them the freedom to perform operations beyond their "role," even those perceived as incorrect or unlikely.
 
