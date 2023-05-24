@@ -12,6 +12,7 @@ To address this, let's explore three principles:
 # 🎮 1. Cater to beginners and experts
 
 Design interfaces that accommodate users with different skill levels.
+
 Place documentation near actions to enhance discoverability, and provide advanced users with shortcuts, batch edits, and composable operations.
 
 For example, in Age of Empires IV, beginners can use the mouse to select units and issue commands with tooltips for descriptions and shortcuts, while advanced users can efficiently control entire armies with just a few keystrokes.
@@ -20,7 +21,7 @@ For example, in Age of Empires IV, beginners can use the mouse to select units a
 
 Trust users by granting them the freedom to perform operations beyond their "role," even those perceived as incorrect or unlikely.
 
-For instance, I allow calendar invite recipients to make modifications, saving everyone time. Has this power been abused? No. This convenience enables rescheduling without consulting me.
+For instance, I allow calendar invite recipients to make modifications, saving everyone time. Has this power been abused? No. This convenience enables rescheduling without consulting the organizer.
 
 # 🔧 3. Support error prevention
 
