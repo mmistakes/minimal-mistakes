@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "TransientsDownUnder"
+title                    : "Transients Down Under"
 title_separator          : "-"
-subtitle                 : "A conference about transients" # site tagline that appears below site title in masthead
+subtitle                 : "A conference about astrophysical transients" # site tagline that appears below site title in masthead
 name                     : "Nicolas Rodriguez-Segovia"
 description              : "Transients Down Under - 2024 Conference"
 url                      : "https://transientsdownunder.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
