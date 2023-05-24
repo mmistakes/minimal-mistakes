@@ -13,30 +13,30 @@ excerpt: >
 feature_row:
   - image_path: /assets/images/high-redshift-supernova.jpg
     alt: "first"
-    title: "Registration"
-    url: "/registration"
+    title: "About"
+    url: "/about"
     btn_class: "btn--primary"
     btn_label: "Learn more"
     excerpt: >
-       Coming soon.<br />
+       General information about the conference: Confirmed speakers, SOC, LOC, contact and more.<br />
        <small style="font-size:12px;">Image credit: Marie Martig, Swinburne University</small>
   - image_path: /assets/images/milkyway.jpg
     alt: "second"
-    title: "Second"
-    url: "/"
+    title: "Practical Information"
+    url: "/info"
     btn_class: "btn--primary"
     btn_label: "Learn more"
     excerpt: >
-       Some text.<br />
+       Information related to the venue, accommodation and financial assistance.<br />
        <small style="font-size:12px;"><a href="https://www.eso.org/public/images/potw1222a/">Image credit:</a> ESO/<a href="https://twanight.org">B. Tafreshi</a></small>
   - image_path: /assets/images/raq.jpg
     alt: "third"
-    title: "Third"
-    url: "/"
+    title: "Registration"
+    url: "/registration"
     btn_class: "btn--primary"
     btn_label: "Learn more"      
     excerpt: >
-       Some text.<br />
+       More information coming soon.<br />
        <small style="font-size:12px;"><a href="https://www.eso.org/public/images/potw1850a/">Image credit:</a> ESO</small>
 ---
 
