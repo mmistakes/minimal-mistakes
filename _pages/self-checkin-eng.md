@@ -9,7 +9,7 @@ author_profile: false
 
 The apartment is in **VIA BALDASSARRE PERUZZI 19 00054 FIUMICINO**. 
 
-If you're arriving by train, once you get to **PARCO LEONARDO** station, head towards the mall **CENTRO LEONARDO** (cross the tracks if you're coming from the airport) and from there use Google Maps to get to the address, the distance is about 3/400 meters from the train station. Make sure the navigator doesn't take you around the one-way streets but takes you through the pedestrian plaza. 
+If you're arriving by train, once you get to **PARCO LEONARDO** station, head towards the mall **The WOW Side** (cross the tracks if you're coming from the airport) and from there use Google Maps to get to the address, the distance is about 3/400 meters from the train station. Make sure the navigator doesn't take you around the one-way streets but takes you through the pedestrian plaza. 
 
 > If you're arriving by car/Taxi/CAB/Uber, remember to clearly indicate to the driver **FIUMICINO** and not **ROME** 😁
 
