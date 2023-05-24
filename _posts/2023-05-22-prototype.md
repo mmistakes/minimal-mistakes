@@ -23,17 +23,17 @@ sidebar:
 
 객체지향 프로그래밍은 실세계의 실체(사물이나 개념)를 인식하는 철학적 사고를 프로그래밍에 접목하려는 시도에서 시작한다. 실체는 특징이나 성질을 나타내는 **속성<sup>attribute/property</sup>**을 가지고 있고, 이를 통해 실체를 인식하거나 구별할 수 있다.
 
-예를 들어, 사람은 이름, 주소, 성별, 나이, 신장, 체중, 학력, 성격, 직업 등 다양한 속성을 갖는다. 이때 "이름이 아무개이고 성별은 여성이며 나이는 20세인 사람"과 같이 속성을 구체적으로 표현하면 특정한 사람을 다른 사람과 구별하여 인식할 수 있다. 
+예를 들어, 사람은 이름, 주소, 성별, 나이, 신장, 체중, 학력, 성격, 직업 등 다양한 속성을 갖는다. 이때 "이름이 아무개이고 성별은 여성이며 나이는 20세인 사람"과 같이 속성을 구체적으로 표현하면 특정한 사람을 다른 사람과 구별하여 인식할 수 있다.
 
 이러한 방식을 프로그래밍에 접목시켜보자. 사람에게는 다양한 속성이 있으나 우리가 구현하려는 프로그램에서는 사람의 "이름"과 "주소"라는 속성에만 관심이 있다고 가정하자. 이처럼 다양한 속성 중에서 프로그램에 필요한 속성만 간추려 내어 표현하는 것을 **추상화<sup>abstraction</sup>**라 한다.
 
-"이름"과 "주소"라는 속성을 갖는 `person`이라는 객체를 자바스크립트로 표현하면 다음과 같다. 
+"이름"과 "주소"라는 속성을 갖는 `person`이라는 객체를 자바스크립트로 표현하면 다음과 같다.
 
 ```javascript
 // 이름과 주소 속성을 갖는 객체
 const person = {
-    name: 'Kwon',
-    address: 'Seoul'
+  name: "Kwon",
+  address: "Seoul",
 };
 console.log(person); // {name: "Kwon", address: "Seoul"}
 ```
@@ -44,19 +44,19 @@ console.log(person); // {name: "Kwon", address: "Seoul"}
 
 ```javascript
 const circle = {
-    radius: 5, // 반지름
-    // 원의 지름: 2r
-    getDiameter() {
-        return 2 * this.radius;
-    },
-    // 원의 둘레: 2πr
-    getPerimeter() {
-        return 2 * Math.PI * this.radius;
-    },
-    // 원의 넓이: πrr
-    getArea() {
-        return Math.PI * this.radius ** 2;
-    }
+  radius: 5, // 반지름
+  // 원의 지름: 2r
+  getDiameter() {
+    return 2 * this.radius;
+  },
+  // 원의 둘레: 2πr
+  getPerimeter() {
+    return 2 * Math.PI * this.radius;
+  },
+  // 원의 넓이: πrr
+  getArea() {
+    return Math.PI * this.radius ** 2;
+  },
 };
 console.log(circle);
 // {radius: 5, getDiameter: f, getPerimeter: f, getArea: f}
@@ -78,11 +78,11 @@ console.log(circle.getArea()); // 78.53981633974483
 ```javascript
 // 생성자 함수
 function Circle(radius) {
-    this.radius = radius;
-    this.getArea = function () {
-        // Math.PI는 원주율을 나타내는 상수다.
-        return Math.PI * this.radius ** 2;
-    };
+  this.radius = radius;
+  this.getArea = function () {
+    // Math.PI는 원주율을 나타내는 상수다.
+    return Math.PI * this.radius ** 2;
+  };
 }
 // 반지름이 1인 인스턴스 생성
 const circle1 = new Circle(1);
@@ -97,5 +97,43 @@ console.log(circle1.getArea()); // 3.141592653589793
 console.log(circle2.getArea()); // 12.566370614359172
 ```
 
+앞서 "성성자 함수"에서 살펴본 바와 같이 생성자 함수는 동일한 프로퍼티(메서드 포함) 구조를 갖는 객체를 여러 개 생성할 때 유용하다. 하지만 위 예제의 생성자 함수는 문제가 있다.
 
+Circle 생성자 함수가 생성하는 모든 객체(인스턴스)는 radius 프로퍼티와 getArea 메서드를 갖는다. radius 프로퍼티 값은 일반적으로 인스턴스마다 다르다. 하지만 getArea 메서드는 모든 인스턴스가 동일한 내용의 메서드를 사용하므로 단 하나만 생성하여 인스턴스가 공유해서 사용하는 것이 바람직하다. 그런데 Circle 생성자 함수는 인스턴스를 생성할 때마다 getArea 메서드를 중복 생성하고 모든 인스턴스가 중복 소유한다.
 
+<img src="/assets/images/prototype1.jpg">
+
+이처럼 동일한 생성자 함수에 의해 생성된 모든 인스턴스가 동일한 메서드를 중복 소유하는 것은 메모리를 불필요하게 낭비한다. 또한 인스턴스를 생성할 때마다 메서드를 생성하므로 퍼포먼스에도 악영향을 준다. 만약 10개의 인스턴스를 생성하면 내용이 동일한 메서드도 10개 생성된다.
+
+상속을 통해 불필요한 중복을 제거해 보자. **자바스크립트는 프로토타입<sup>prototype</sup>을 기반으로 상속을 구현한다.**
+
+```javascript
+// 생성자 함수
+function Circle(radius) {
+  this.radius = radius;
+}
+// Circle 생성자 함수가 생성한 모든 인스턴스가 getArea 메서드를
+// 공유해서 사용할 수 있도록 프로토타입에 추가한다.
+// 프로토타입은 Circle 생성자 함수의 prototype 프로퍼티에 바인딩되어 있다.
+Circle.prototype.getArea = function () {
+  return Math.PI * this.radius ** 2;
+};
+// 인스턴스 생성
+const circle1 = new Circle(1);
+const circle2 = new Circle(2);
+
+// Circle 생성자 함수가 생성한 모든 인스턴스는 부모 객체의 역할을 하는
+// 프로토타입 Circle.prototype으로부터 getArea 메서드를 상속받는다.
+// 즉, Circle 생성자 함수가 생성하는 모든 인스턴스는 하나의 getArea 메서드를 공유한다.
+console.log(circle1.getArea === circle2.getArea); // true
+console.log(circle1.getArea()); // 3.141592653589793
+console.log(circle2.getArea()); // 12.566370614359172
+```
+
+<img src="/assets/images/prototype2.jpg">
+
+Circle 생성자 함수가 생성한 모든 인스턴스는 자신의 프로토타입, 즉 상위(부모) 객체 역할을 하는 Circle.prototype의 모든 프로퍼티와 메서드를 상속받는다. 
+
+getArea 메서드는 단 하나만 생성되어 프로토타입인 Circle.prototype의 메서드로 할당되어 있다. 따라서 Circle 생성자 함수가 생성하는 모든 인스턴스는 getArea 메서드를 상속받아 사용할 수 있다. 즉, 자신의 상태를 나타내는 radius 프로퍼티만 개별적으로 소유하고 내용이  동일한 메서드는 상속을 통해 공유하여 사용하는 것이다.
+
+상속은 코드의 재사용이란 관점에서 매우 유용하다. 생성자 함수가 생성할 모든 인스턴스가 공통적으로 사용할 프로퍼티나 메서드를 프로토타입에 미리 구현해 두면 생성자 함수가 생성할 모든 인스턴스는 별도의 구현없이 상위(부모) 객체인 프로토타입의 자산을 공유하여 사용할 수 있다. 
