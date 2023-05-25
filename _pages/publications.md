@@ -10,6 +10,10 @@ author_profile: true
 * **Teamwork Is Not Always Good: An Empirical Study of Classifier Drift in Class-incremental Information Extraction**<br>
   **Minqian Liu**, Lifu Huang<br>
   In ***ACL***, 2023. (Findings) \[[code](https://github.com/VT-NLP/Incremental_Prompting)]
+  
+  * **Iteratively Improving Biomedical Entity Linking and Event Extraction via Hard Expectation-Maximization**<br>
+  Xiaochu Li\*, **Minqian Liu\***, Zhiyang Xu\*, Lifu Huang<br>
+  In *Arxiv*, 2023.  \[[paper](https://arxiv.org/abs/2305.14645)]
 
 * **Incremental Prompting: Episodic Memory Prompt for Lifelong Event Detection**<br>
   **Minqian Liu**, Shiyu Chang, Lifu Huang<br>
