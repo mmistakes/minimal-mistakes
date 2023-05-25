@@ -15,6 +15,14 @@ author_profile: true
   Xiaochu Li\*, **Minqian Liu\***, Zhiyang Xu\*, Lifu Huang<br>
   In *Arxiv*, 2023.  \[[paper](https://arxiv.org/abs/2305.14645)]
 
+* **The Art of SOCRATIC QUESTIONING: Zero-shot Multimodal Reasoning with Recursive Thinking and Self-Questioning**<br>
+  Jingyuan Qi\*, Zhiyang Xu\*, Ying Shen, **Minqian Liu**, Di Jin, Qifan Wang, Lifu Huang<br>
+  In *Arxiv*, 2023.  \[[paper](https://arxiv.org/abs/2305.14999)]
+
+* **AMELI: Enhancing Multimodal Entity Linking with Fine-Grained Attributes**<br>
+  Barry Menglong Yao, Yu Chen, Qifan Wang, Sijia Wang, Minqian Liu, Zhiyang Xu, Licheng Yu, Lifu Huang<br>
+  In *Arxiv*, 2023.  \[[paper](https://arxiv.org/abs/2305.14725)]
+
 * **Incremental Prompting: Episodic Memory Prompt for Lifelong Event Detection**<br>
   **Minqian Liu**, Shiyu Chang, Lifu Huang<br>
   In ***COLING***, 2022. (Short) \[[pdf](https://arxiv.org/pdf/2204.07275.pdf)] \[[code](https://github.com/VT-NLP/ICE)]
@@ -22,7 +30,6 @@ author_profile: true
 * **Co-attention Network with Label Embedding for Text Classification**<br>
   **Minqian Liu\***, Lizhao Liu\*, Junyi Cao, Qing Du<br>
   In ***Neurocomputing***, 2021.
-
 
 * **Progressive Dialogue State Tracking for Multi-domain Dialogue Systems**<br>
   Jiahao Wang, **Minqian Liu**, Xiaojun Quan<br>
