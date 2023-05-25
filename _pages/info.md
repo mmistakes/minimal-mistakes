@@ -7,7 +7,7 @@ toc: true
 toc_sticky: true
 ---
 
-The conference will take place at the Swinburne University of Technology in Melbourne, Australia, between January 29 - February 2, 2024, following the Australian Open. 
+The conference will take place at the Swinburne University of Technology in Melbourne, Australia, between January 29 - February 2, 2024, during the Australian Open. 
 
 More information will become available in the coming weeks/months. 
 
