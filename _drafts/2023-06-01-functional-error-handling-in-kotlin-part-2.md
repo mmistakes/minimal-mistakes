@@ -732,7 +732,7 @@ public object either {
 }
 ```
 
-Both the DSL are builders for two different scopes they defined as receivers, respectively `arrow.core.continuations.EagerEffectScope<A>`, and `arrow.core.continuations.EffectScope<A>`. As you might notice, the `either` DSL doesn't work with an `EitherScope`, but with an `EffectScope`. We will see why in a moment. For now, let's try to make the `getSalaryGapWithMax` function more readable using the `either` DSL:
+Both the DSL are builders for two different scopes they defined as receivers, respectively `arrow.core.continuations.EagerEffectScope<A>`, and `arrow.core.continuations.EffectScope<A>`. Let's try to make the `getSalaryGapWithMax` function more readable using the `either` DSL:
 
 ```kotlin
 fun getSalaryGapWithMax2(jobId: JobId): Either<JobError, Double> = either.eager {
@@ -796,18 +796,21 @@ public suspend fun ensure(condition: Boolean, shift: () -> R): Unit =
     if (condition) Unit else shift(shift())
 ```
 
-We can use the `ensure` function when implementing smart-constractors. For example, let's implement a smart-constructor for the `Salary` type, which checks if the given value is a positive integer:
+We can use the `ensure` function when implementing smart-constructors. For example, let's implement a pimped version of the `Salary` type containing a smart-constructor, which checks if the given value is a positive integer:
 
 ```kotlin
 object NegativeAmount : JobError
 
-@JvmInline
-value class Salary private constructor(val value: Double) {
-    // Omissis...
-    companion object {
-        operator fun invoke(value: Double): Either<JobError, Salary> = either.eager {
-            ensure(value >= 0.0) { NegativeAmount }
-            Salary(value)
+object EitherJobDomain {
+    
+    @JvmInline
+    value class Salary private constructor(val value: Double) {
+        
+        companion object {
+            operator fun invoke(value: Double): Either<JobError, Salary> = either.eager {
+                ensure(value >= 0.0) { NegativeAmount }
+                Salary(value)
+            }
         }
     }
 }
@@ -815,5 +818,21 @@ value class Salary private constructor(val value: Double) {
 
 Here, we're using the `ensure` function to short-circuit the computation if the given value is negative. We can easily test the smart-constructor and check if it works as expected:
 
-TODO
+```kotlin
+fun main() {
+    val salaryOrError: Either<JobError, Salary> = Salary(-1.0)
+    println(salaryOrError)
+}
+```
 
+The above code produces the following expected output if executed:
+
+```
+Either.Left(in.rcard.either.NegativeAmount@246b179d)
+```
+
+And that's it, folk!
+
+## 4. Conclusions
+
+In this second part of the series dedicated to error handling in Kotlin, we introduced the `Result` and the `Either`type. These type represent both the happy path and the error path, unlike the types we saw in the first part of the series. We explored their APIs in deep, and see which features the Arrow library offers us to simplify the composition of `Result` and `Either` instances. In the last part of this series we will introduce the upcoming features of the next versions of the Arrow library, which will simplify further the functional handling of errors.  
