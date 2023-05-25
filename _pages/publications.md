@@ -11,7 +11,7 @@ author_profile: true
   **Minqian Liu**, Lifu Huang<br>
   In ***ACL***, 2023. (Findings) \[[code](https://github.com/VT-NLP/Incremental_Prompting)]
   
-  * **Iteratively Improving Biomedical Entity Linking and Event Extraction via Hard Expectation-Maximization**<br>
+* **Iteratively Improving Biomedical Entity Linking and Event Extraction via Hard Expectation-Maximization**<br>
   Xiaochu Li\*, **Minqian Liu\***, Zhiyang Xu\*, Lifu Huang<br>
   In *Arxiv*, 2023.  \[[paper](https://arxiv.org/abs/2305.14645)]
 
