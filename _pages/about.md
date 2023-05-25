@@ -54,15 +54,14 @@ This conference will bring together researchers working in transient astronomy a
 ## LOC 
 
 - Jeff Cooke (Swinburne) 
-- Simon Stevenson (Swinburne)
 - Jade Powell (Swinburne)
+- Simon Stevenson (Swinburne)
 - Alex Heger (Monash) 
 - Ryosuke Hirai (Monash) 
 - Evgeni Grishin (Monash)
 - Duane Hamacher (Melbourne) 
 - Katie Auchettl (Melbourne)
 - Karelle Seillez (UTas)
-- Ashley Ruiter (UNSW Canberra) 
 
 ## Contact
 
