@@ -7,6 +7,8 @@ author_profile: true
 
 (* indicates equal contribution)
 
+## 2023
+
 * **Teamwork Is Not Always Good: An Empirical Study of Classifier Drift in Class-incremental Information Extraction**<br>
   **Minqian Liu**, Lifu Huang<br>
   In ***ACL***, 2023. (Findings) \[[code](https://github.com/VT-NLP/Incremental_Prompting)]
@@ -20,8 +22,10 @@ author_profile: true
   In *Arxiv*, 2023.  \[[paper](https://arxiv.org/abs/2305.14999)]
 
 * **AMELI: Enhancing Multimodal Entity Linking with Fine-Grained Attributes**<br>
-  Barry Menglong Yao, Yu Chen, Qifan Wang, Sijia Wang, Minqian Liu, Zhiyang Xu, Licheng Yu, Lifu Huang<br>
+  Barry Menglong Yao, Yu Chen, Qifan Wang, Sijia Wang, **Minqian Liu**, Zhiyang Xu, Licheng Yu, Lifu Huang<br>
   In *Arxiv*, 2023.  \[[paper](https://arxiv.org/abs/2305.14725)]
+
+## 2022 and Before
 
 * **Incremental Prompting: Episodic Memory Prompt for Lifelong Event Detection**<br>
   **Minqian Liu**, Shiyu Chang, Lifu Huang<br>
