@@ -9,14 +9,14 @@ toc: false
 Registration and abstract submission will open in July 2023. We will be accepting abstracts for contributed talks as well as posters. 
 
 
-<--! ## Useful Links
+<--! ## Useful Links -->
 
-Should create google forms for the following
+<--!Should create google forms for the following -->
 
-If you wish to present a talk, register through the following link:
+<--!If you wish to present a talk, register through the following link: -->
 
-[Present a talk]({{ "/" | relative_url }}){: .btn .btn--success .btn--large}
+<--![Present a talk]({{ "/" | relative_url }}){: .btn .btn--success .btn--large} -->
 
-Otherwise, if you do not plan on presenting or are unsure about it, use this link instead:
+<--!Otherwise, if you do not plan on presenting or are unsure about it, use this link instead: -->
 
-[No talk]({{ "/" | relative_url }}){: .btn .btn--success .btn--large} -->
+<--![No talk]({{ "/" | relative_url }}){: .btn .btn--success .btn--large} -->
