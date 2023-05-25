@@ -12,12 +12,12 @@
   - pipx ✅
   - pyenv ✅
   - poetry ✅
-  - pandoc
-1. Merging on multi-index dataframes (EN)
-1. How and when to use apply on dataframe (EN)
-1. Twitter BOT code Beschreibung (Serie über 3?) (EN)
+  - pandoc https://pandoc.org/
+1. Merging on multi-index dataframes ✅
+1. How and when to use apply on dataframe
+1. Twitter BOT code Beschreibung (Serie über 3?)
 1. Sonett (DE)
-1. Build your own Tansformer with sklearn (EN)
+1. Build your own Tansformer with sklearn
 1. Timeline Jamba Sparabo (DE)
 1. Why do I follow / admire X
   - Elon
@@ -25,3 +25,4 @@
   - Lex
   - Federer
 1. How expensive is it to pay by card 
+1. Build your own transformer with sklearn
