@@ -6,7 +6,8 @@ last_modified_at: 2023-05-10T13:35:00+10:00
 toc: false
 ---
 
-Something about the registration fee and other info.
+Registration and abstract submission will open in July 2023. We will be accepting abstracts for contributed talks as well as posters. 
+
 
 ## Useful Links
 
