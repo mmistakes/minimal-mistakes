@@ -107,10 +107,10 @@ author:
   name             : "littleduck"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  location         : "Asia/Seoul"
   email            :
   links:
-    - label: "Email"
+    - label: "littleduck's Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "littleduck1219@gmail.com"
     # - label: "Website"
@@ -122,7 +122,7 @@ author:
     # - label: "Facebook"
     #   icon: "fab fa-fw fa-facebook-square"
     #   # url: "https://facebook.com/"
-    - label: "GitHub"
+    - label: "littleduck's GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/littleduck1219"
     # - label: "Instagram"
