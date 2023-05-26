@@ -107,7 +107,7 @@ author:
   name             : "littleduck"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
-  location         : "Asia/Seoul"
+  location         : "Korea/Seoul"
   email            :
   links:
     - label: "littleduck's Email"

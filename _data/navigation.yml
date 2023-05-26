@@ -15,6 +15,8 @@ main:
     url: /categories/
   - title: "Tag"
     url: /tags/
+  - title: "Search"
+    url: /search/
 
 docs:
   - title: "목차"
