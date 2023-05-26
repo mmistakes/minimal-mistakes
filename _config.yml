@@ -129,7 +129,9 @@ author:
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   # url: "https://instagram.com/"
-
+   - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-square"
+      url: "www.linkedin.com/in/ai-duck"
 # Site Footer
 footer:
   links:
@@ -151,6 +153,9 @@ footer:
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   # url:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "www.linkedin.com/in/ai-duck"
 
 
 # Reading Files
