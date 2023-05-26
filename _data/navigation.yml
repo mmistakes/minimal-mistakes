@@ -13,6 +13,20 @@ main:
 
   - title: "Category"
     url: /categories/
-  
   - title: "Tag"
     url: /tags/
+
+docs:
+  - title: "목차"
+    children:
+      - title: "category"
+        url: /categories/
+      - title: "Tag"
+        url: /tags/
+
+  - title: "TIL"
+    children:
+      - title: "Java"
+        url: /categories/Java/
+      - title: "Web"
+        url: /categories/Web
