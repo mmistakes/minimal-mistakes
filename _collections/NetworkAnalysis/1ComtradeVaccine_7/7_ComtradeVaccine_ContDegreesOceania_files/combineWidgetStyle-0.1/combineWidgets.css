@@ -1,0 +1,67 @@
+/* Copyright © 2016 RTE Réseau de transport d’électricité */
+
+.cw-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.cw-subcontainer {
+  flex:1;
+  -webkit-flex:1;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+
+.cw-title {
+  text-align: center;
+  margin: 5px 0;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.cw-content {
+  flex:1;
+  -webkit-flex:1;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.cw-content.cw-by-col {
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+
+.cw-row {
+  align-items: stretch;
+  -webkit-align-items: stretch;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+
+.cw-row.cw-by-col {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.cw-col {
+  align-items: stretch;
+  -webkit-align-items: stretch;
+  position: relative;
+  margin:5px;
+}
+
+.cw-widget {
+  width:100%;
+  height:100%;
+  position:absolute;
+}
