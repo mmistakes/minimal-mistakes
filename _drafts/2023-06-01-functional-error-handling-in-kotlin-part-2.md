@@ -15,6 +15,61 @@ For the setup of the project, please refer to the first part of this series, in 
 
 Without further ado, let's get started!
 
+## 1. Setup
+
+For the Maven setup, please refer to the first part of this series. However, we'll use extensively the domain model we introduced in the last article. We want to create an application that manages a job board. The main types modelling the domain are:
+
+```kotlin
+data class Job(val id: JobId, val company: Company, val role: Role, val salary: Salary)
+
+@JvmInline
+value class JobId(val value: Long)
+
+@JvmInline
+value class Company(val name: String)
+
+@JvmInline
+value class Role(val name: String)
+
+@JvmInline
+value class Salary(val value: Double) {
+    operator fun compareTo(other: Salary): Int = value.compareTo(other.value)
+}
+```
+
+Moreover, we'll simulate a database of jobs using a `Map<JobId, Job>`:
+
+```kotlin
+val JOBS_DATABASE: Map<JobId, Job> = mapOf(
+    JobId(1) to Job(
+        JobId(1),
+        Company("Apple, Inc."),
+        Role("Software Engineer"),
+        Salary(70_000.00),
+    ),
+    JobId(2) to Job(
+        JobId(2),
+        Company("Microsoft"),
+        Role("Software Engineer"),
+        Salary(80_000.00),
+    ),
+    JobId(3) to Job(
+        JobId(3),
+        Company("Google"),
+        Role("Software Engineer"),
+        Salary(90_000.00),
+    ),
+)
+```
+
+A `Jobs` module will handle the integration with the database:
+
+```kotlin
+interface Jobs
+```
+
+Now that we have define the domain model and the module that will contain the algebra to access it, it's time to start implementing the different approaches to handle errors in a functional way. 
+
 ## 1. Lifting the Try-Catch Approach to a Higher Level: The `Result` Type
 
 Nullable types and the `Option` type we've seen so far are great for handling errors in a functional way, they don't store the cause of the error. In other words, they don't tell us _why_ the error happened.
@@ -166,7 +221,7 @@ class CurrencyConverter {
 }
 ```
 
-The converter will throw an exception if the input amount is present and not negative. Let's think about the converter as an external library that we can't change. We can use the `mapCatching` function to convert the salary of a job from USD to EUR, handling the fact that the conversion can fail throwing an exception:
+The converter will throw an exception if the input amount is `null` or negative. Let's think about the converter as an external library that we can't change. We can use the `mapCatching` function to convert the salary of a job from USD to EUR, handling the fact that the conversion can fail throwing an exception:
 
 ```kotlin
 fun getSalaryInEur(jobId: JobId): Result<Double> =
@@ -831,8 +886,10 @@ The above code produces the following expected output if executed:
 Either.Left(in.rcard.either.NegativeAmount@246b179d)
 ```
 
+What if we have to accumulate many errors, for example during the creation of an object? The `Either` type, in the version 1.1.5 of Arrow is not the right type. In fact, the `Validated` type suits better this use case. However, in the next version of Arrow, the 1.2.0 the `Validated` type will be deprecated. In the next part of this series, we will see how to accumulate errors directly using the new version of the `Either` type.
+
 And that's it, folk!
 
 ## 4. Conclusions
 
-In this second part of the series dedicated to error handling in Kotlin, we introduced the `Result` and the `Either`type. These type represent both the happy path and the error path, unlike the types we saw in the first part of the series. We explored their APIs in deep, and see which features the Arrow library offers us to simplify the composition of `Result` and `Either` instances. In the last part of this series we will introduce the upcoming features of the next versions of the Arrow library, which will simplify further the functional handling of errors.  
+In this second part of the series dedicated to error handling in Kotlin, we introduced the `Result` and the `Either`type. These type represent both the happy path and the error path, unlike the types we saw in the first part of the series. We explored their APIs in deep, and see which features the Arrow library offers us to simplify the composition of `Result` and `Either` instances. In the last part of this series we will introduce the upcoming features of the next versions of the Arrow library, the 1.2.0, which will simplify further the functional handling of errors.
