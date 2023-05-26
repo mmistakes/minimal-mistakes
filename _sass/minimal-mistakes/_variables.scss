@@ -147,7 +147,7 @@ $base0f: #ff5370 !default;
 $small: 600px !default;
 $medium: 768px !default;
 $medium-wide: 900px !default;
-$large: 1024px !default;
+$large: 1280px !default;
 $x-large: 1280px !default;
 $max-width: $x-large !default;
 
@@ -156,8 +156,11 @@ $max-width: $x-large !default;
    ========================================================================== */
 
 $right-sidebar-width-narrow: 200px !default;
-$right-sidebar-width: 300px !default;
-$right-sidebar-width-wide: 400px !default;
+$right-sidebar-width: 200px !default;
+$right-sidebar-width-wide: 250px !default;
+// $right-sidebar-width-narrow: 200px !default;
+// $right-sidebar-width: 300px !default;
+// $right-sidebar-width-wide: 400px !default;
 
 /*
    Other
@@ -171,3 +174,6 @@ $navicon-width: 1.5rem !default;
 $navicon-height: 0.25rem !default;
 $global-transition: all 0.2s ease-in-out !default;
 $intro-transition: intro 0.3s both !default;
+
+
+$toc-color: #cda7e7b5 !default;
