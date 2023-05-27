@@ -3,7 +3,9 @@ main:
   - title: "Category"
     url: /categories/
   - title: "Tag"
-    url: /tags/ 
+    url: /tags/
+  - title: "Search"
+    url: /search/
 
 docs:
   - title: "대목차"
