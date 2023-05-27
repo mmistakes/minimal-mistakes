@@ -70,7 +70,7 @@ interface Jobs
 
 Now that we have define the domain model and the module that will contain the algebra to access it, it's time to start implementing the different approaches to handle errors in a functional way. 
 
-## 1. Lifting the Try-Catch Approach to a Higher Level: The `Result` Type
+## 2. Lifting the Try-Catch Approach to a Higher Level: The `Result` Type
 
 Nullable types and the `Option` type we've seen so far are great for handling errors in a functional way, they don't store the cause of the error. In other words, they don't tell us _why_ the error happened.
 
@@ -363,6 +363,8 @@ maybeSalary.fold({
 })
 ```
 
+## 3. Composing `Result` Instances
+
 As we saw in the previous article, when dealing with _effects_, _monads_, _container types_ or whatever we want to call them, one crucial point is how we can compose and combine them. In the first part of this series, we implemented a function that returns the gap between the job salary given a job id and the maximum salary for the same company. We called the function `getSalaryGapWithMax`.
 
 Let's say we want to refactor the example using the `Result` type. First, we need to add the `findAll` function to the `Jobs` interface and implementation:
@@ -540,7 +542,7 @@ fun main() {
 
 However, sometimes we want to map errors in custom types that don't belong to the `Throwable` hierarchy. For example, we can map a `NoSuchElementException` to a `JobNotFound` type, or any rich and meaningful type we want. To do this, we need another strategy to handle errors. It's time to introduce the `Either` type.
 
-## 2. Type-safe Error Handling: The `Either` Type
+## 4. Type-safe Error Handling: The `Either` Type
 
 Let's now introduce the `Either` type for error handling. Kotlin doesn't ship the `Either` type with the standard SDK. We need Arrow to add it to the game. Basically, the `Either<E, A>` type is an [Algebraic Data Type](https://blog.rockthejvm.com/algebraic-data-types/) (ADT). In detail, it's a sum type that can contain either a value `A` wrapped in the type `Right<A>` or a value `E` wrapped in a the type `Left<E>`. It's common to associated `Left` instances with the result of a failed computation, and `Right` instances with the result of a successful computation. The `Either` type is defined as follows:
 
@@ -728,6 +730,8 @@ The same thing can be done using a composition of `map` and `getOrElse` function
 val jobSalary2: Salary = jobNotFound.map { it.salary }.getOrElse { Salary(0.0) }
 ```
 
+## 5. Composing `Either` Instances
+
 It's time to talk about how to compose different `Either` instances. As you might imagine, since the `Either` type is a monad if we fix the left type, we can use the `map` and `flatMap` functions to compose different instances (remember, monads just have a single type parameters, while the `Either` type has two of them).
 
 We will implement the `getSalaryGapWithMax` function again, this time using the `Either` type to handle errors. First, we need to add the `findAll` function to our `Jobs` module:
@@ -807,13 +811,15 @@ The `either` DSL gives us access to the `bind` member extension function on the 
 public interface EagerEffectScope<in R> {
 
     // Omissis...
-    public suspend fun <A> Either<R, A>.bind(): A =
+    public suspend fun <B> Either<R, B>.bind(): B =
         when (this) {
-            is Right -> value
-            is Left -> throw BindException(value)
+            is Either.Left -> shift(value)
+            is Either.Right -> value
         }
 }
 ```
+
+Nothing new in here.
 
 Similarly, we have access to the `ensureNotNull` extension function, which short-circuits the computation if a `null` value is found, and it's defined as follows:
 
@@ -892,6 +898,6 @@ What if we have to accumulate many errors, for example during the creation of an
 
 And that's it, folk!
 
-## 4. Conclusions
+## 6. Conclusions
 
 In this second part of the series dedicated to error handling in Kotlin, we introduced the `Result` and the `Either`type. These type represent both the happy path and the error path, unlike the types we saw in the first part of the series. We explored their APIs in deep, and see which features the Arrow library offers us to simplify the composition of `Result` and `Either` instances. After two articles of this series, we can say that we are not interested in the cause that generates an error, we can use nullable types and the `Option` type. In Kotlin, such types are quite similar. If we want to know the cause of an error, we can use the `Result` type. Here, we use the subclasses of the `Throwable` type to express the cause. Finally, if we want to avoid the `Throwable` type at all, and we want to handle errors using a hierarchy of custom typed errors, we use the `Either` type. In the last part of this series we will introduce the upcoming features of the next versions of the Arrow library, the 1.2.0, which will simplify further the functional handling of errors.
