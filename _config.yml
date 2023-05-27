@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "ParkUiYong"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/uiyong_By_Wix.jpg"
   bio              : "의용의 소프트웨어 개발 및 일상 블로그입니다."
   location         : "South Koera"
   email            : "yuiyong5204@naver.com"
