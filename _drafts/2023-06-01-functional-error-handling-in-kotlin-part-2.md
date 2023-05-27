@@ -363,7 +363,9 @@ maybeSalary.fold({
 })
 ```
 
-As we saw in the previous article, when dealing with _effects_, _monads_, _container types_ or whatever we want to call them, one crucial point is how we can compose and combine them. For example, let say we want to refactor the example of retrieving the gap between the salary of a job with the maximum salary available in the database. First, we need to add the `findAll` function to the `Jobs` interface and implementation:
+As we saw in the previous article, when dealing with _effects_, _monads_, _container types_ or whatever we want to call them, one crucial point is how we can compose and combine them. In the first part of this series, we implemented a function that returns the gap between the job salary given a job id and the maximum salary for the same company. We called the function `getSalaryGapWithMax`.
+
+Let's say we want to refactor the example using the `Result` type. First, we need to add the `findAll` function to the `Jobs` interface and implementation:
 
 ```kotlin 
 interface Jobs {
