@@ -110,9 +110,6 @@ author:
   location         : "South Koera"
   email            : "yuiyong5204@naver.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:yuiyong5204@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://upark153.github.io"
