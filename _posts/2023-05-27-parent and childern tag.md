@@ -22,9 +22,10 @@ toc_icon: "fas fa-list"
 ## 1.자식 선택자
 
 -자식 선택자는 부모요소에 포함된 자식 선택자에 스타일을 적용할 때 사용한다.<br/>
--형식 : 부모명 자식명{...}
+-형식 : 부모명 자식명{...}<br/>
 
-**HTML 예제**
+ **HTML 예제**
+
 ```html
 <div class = "content">
     <b>안녕하세요.</b>
@@ -36,6 +37,7 @@ toc_icon: "fas fa-list"
 ```
 
 **CSS 예제**
+
 ```css
 .content p{
     color : red;
@@ -52,20 +54,22 @@ class가 content인 div 태그의 자식요소 중 p 태그만 색깔을 빨강�
 ## 2.직속자식 선택자
 
 -부모자식 바로 아래에 있는 직속 자식에게 스타일을 적용할 때 사용한다.<br/>
--형식 : 부모명>자식명{...}
+-형식 : 부모명>자식명{...}<br/>
 
-**HTML 예제**
+ **HTML 예제**
+
 ```html
 <div class = "content">
    <ol>
-       <li> HTML<i>html</i></li>
-       <li> CSS<i>css</i></li>
-       <li> JavaScript<i>js</i></li>
+       <li> HTML<i>(html)</i></li>
+       <li> CSS<i>(css)</i></li>
+       <li> JavaScript<i>(js)</i></li>
   </ol>
 </div>
 ```
 
 **CSS 예제**
+
 ```css
 ol>li>i {
     color : bule;
@@ -81,10 +85,10 @@ ol 태그의 자식요소인 li 태그의 자식요소의 i의 태그 색깔이 
 
 ## 3.부모요소의 클래스 선택자
 
--부모요소의 클래스 선택자를 사용하여 자식요소에 스타일을 적용한다.<br/>
--형식 : 부모명.class 이름{...}
+-부모요소의 클래스 선택자을 활용하여 부모요소에 포함된 모든 자식요소에 스타일을 적용한다.<br/>
+-형식 : 부모명.class 이름{...}<br/>
 
-**HTML 예제**
+ **HTML 예제**
 
 ```html
 <div class="content1">
