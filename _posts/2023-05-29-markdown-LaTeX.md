@@ -165,7 +165,7 @@ $$a^{b+1}$$
 $$a^{b+1}$$
 
 ### greek letters
-$백슬래쉬 + 문자철자$
+\$백슬래쉬 + 문자철자\$
 ```
 $\pi$
 $\alpha$
@@ -177,7 +177,7 @@ $S=\pi r^2$
 원의 넓이처럼 다른 문자와 붙이고 싶다면, 한칸 띄고 작성해야 한다.
 
 ### 삼각함수
-$백슬래쉬 + 삼각함수{}$
+\$백슬래쉬 + 삼각함수{}\$
 ```
 $\sin{x}$
 ```
@@ -185,7 +185,7 @@ $\sin{x}$
 
 
 ### 로그함수
-$백슬래쉬+log{}$
+\$백슬래쉬+log{}\$
 ```
 $\log{x}$
 $\log_5{x}$
@@ -206,3 +206,67 @@ $\sqrt{2}$
 $\sqrt[3]{2}$  
 $\sqrt{x^2+y^2}$  
 $\sqrt{1+\sqrt{x}}$  
+
+### 분수 fractions
+displaystyle을 적용하면 커진다
+```
+About 2/3 
+About $2/3$ 
+About $\frac{2}{3}$ 
+About $\displaystyle{\frac{2}{3}}$ 
+$\frac{x}{x^2+x+1}$
+$\frac{\sqrt{x+1}}{\sqrt{x-1}}$
+$\frac{1}{1+\frac{1}{x}}$
+$\sqrt{\frac{x}{x^2+x+1}}$
+```
+About 2/3   
+About $2/3$   
+About $\frac{2}{3}$   
+About $\displaystyle{\frac{2}{3}}$   
+$\frac{x}{x^2+x+1}$  
+$\frac{\sqrt{x+1}}{\sqrt{x-1}}$  
+$\frac{1}{1+\frac{1}{x}}$  
+$\sqrt{\frac{x}{x^2+x+1}}$  
+
+
+### 괄호
+```
+$(x+1)$
+$3[2+(x+1)]$
+${a,b,c}$
+$\{a,b,c\}$
+$\$12.55$
+
+$3{\frac{2}{5}}$
+$3\left(\frac{2}{5}\right)$
+$3\left[\frac{2}{5}\right]$
+$3\left\{\frac{2}{5}\right\}$
+
+$\left\{x^2\right\}$
+$\left\{x^2\right.$
+```
+$(x+1)$  
+$3[2+(x+1)]$  
+${a,b,c}$  
+$\{a,b,c\}$  
+$\$12.55$  
+  
+$3{\frac{2}{5}}$  
+$3\left(\frac{2}{5}\right)$  
+$3\left[\frac{2}{5}\right]$  
+$3\left\{\frac{2}{5}\right\}$  
+  
+$\left\{x^2\right\}$  
+$\left\{x^2\right.$  
+
+
+### 절댓값
+그냥 | 기호 입력시 작게 나온다, 크게 입력하려면 위치+기호로 작성
+```
+$|x|$
+$|\frac{x}{x+1}|$
+$\left|\frac{x}{x+1}\right|$
+```
+$|x|$  
+$|\frac{x}{x+1}|$  
+$\left|\frac{x}{x+1}\right|$  
