@@ -41,6 +41,38 @@ $$줄바꿈후 중앙에 위치한 수식$$
 띄어쓰기와 엔터가 여러번 입력되었다고 해도, 1번으로 인식한다.  
 줄바꿈을 하려면 한줄을 직접 띄워도 되고, \\\\을 사용해도 된다 (정렬방식에 차이가 있다.)
 
+## 참고용 예제
+```
+$A + B - C \times D \div E$
+$$\frac{A}{B}$$
+$$\sum_{i=0}^{n}{log{(i)}}$$
+$$\frac{df(x)}{dx} = \lim_{h\to0} \frac{f(x+h)-f(x)}{h}$$
+$$\int_{0}^{1}{f(x)dx}$$
+$A=\begin{bmatrix}
+0 & 1 & 2\\
+3 & 4 & 5\\
+6 & 7 & 8
+\end{bmatrix}
+$
+$x=a^{y} \Longleftrightarrow y=log_{a}{x}$
+```
+$A + B - C \times D \div E$  
+  
+$$\frac{A}{B}$$  
+  
+$$\sum_{i=0}^{n}{log{(i)}}$$  
+  
+$$\frac{df(x)}{dx} = \lim_{h\to0} \frac{f(x+h)-f(x)}{h}$$  
+  
+$$\int_{0}^{1}{f(x)dx}$$  
+  
+$A=\begin{bmatrix}
+0 & 1 & 2\\
+3 & 4 & 5\\
+6 & 7 & 8
+\end{bmatrix}$  
+  
+$x=a^{y} \Longleftrightarrow y=log_{a}{x}$
 
 ## 수식
 ### 연산과 표기
@@ -318,7 +350,6 @@ $\mathscr{P}$
 ```
 $\begin{align}a&=b\\&=c\\&=d\end{align}$
 ```
-$\begin{align}a&=b\\&=c\\&=d\end{align}$  
 정렬 용도로 eqnarray 대신 사용하라는것 같은데 마크다운 문서에서 안보이는듯  
 
 ## enumerate, itemize 환경
