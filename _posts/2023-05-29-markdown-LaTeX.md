@@ -12,9 +12,9 @@ Tex, LaTex 수식 문법 정리
 어디에 왜 오류가 발생하는지 알수도 없어서 글을 일부분만 조금씩 업데이트하면서 여러번 수정했다.  
 
 참고하기  
-[참고1](http://mrskrummel.com/tutorials)  
-[참고2](http://tomoyo.ivyro.net/123/wiki.php/TeX_%EB%B0%8F_LaTeX_%EC%88%98%EC%8B%9D_%EB%AC%B8%EB%B2%95)  
-[참고3](https://an-seunghwan.github.io/github.io/mathjax-error/)  
+ - [참고1](http://mrskrummel.com/tutorials)  
+ - [참고2](http://tomoyo.ivyro.net/123/wiki.php/TeX_%EB%B0%8F_LaTeX_%EC%88%98%EC%8B%9D_%EB%AC%B8%EB%B2%95)  
+ - [참고3](https://an-seunghwan.github.io/github.io/mathjax-error/)  
 오류가 발생해도 Tex 에디터에서는 정상적으로 보인다.
 
 
@@ -175,8 +175,6 @@ subscripts : 행렬표기. X12를 원하면앞에 1을 중괄호로 묶고 언�
 ```
 $x_1$
 $x_{12}$
-${x_1}_2$
-${{x_1}_2}_3$
 ```  
 
 $x_1$  
