@@ -240,10 +240,10 @@ $\$12.55$
 $3{\frac{2}{5}}$
 $3\left(\frac{2}{5}\right)$
 $3\left[\frac{2}{5}\right]$
-$3\left\{\frac{2}{5}\right\}$
+$3\left\{\frac{2}{5}\right\}$ - 오류발생
 
-$\left\{x^2\right\}$
-$\left\{x^2\right.$
+$\left\{x^2\right\}$ - 오류발생
+$\left\{x^2\right.$ - 오류발생
 ```
 $(x+1)$  
 $3[2+(x+1)]$  
@@ -254,10 +254,6 @@ $\$12.55$
 $3{\frac{2}{5}}$  
 $3\left(\frac{2}{5}\right)$  
 $3\left[\frac{2}{5}\right]$  
-$3\left\{\frac{2}{5}\right\}$  
-  
-$\left\{x^2\right\}$  
-$\left\{x^2\right.$  
 
 
 ### 절댓값
@@ -270,3 +266,36 @@ $\left|\frac{x}{x+1}\right|$
 $|x|$  
 $|\frac{x}{x+1}|$  
 $\left|\frac{x}{x+1}\right|$  
+
+### 미적분
+```
+$\int$
+$\iint$
+$\iiint$
+$\oint$
+
+$\dot{x}$
+$\ddot{x}$
+$\overset{...}{x}$
+$\overset{::}{x}$
+$x^{\prime}$
+```
+$\int$  
+$\iint$  
+$\iiint$  
+$\oint$  
+
+$\dot{x}$  
+$\ddot{x}$  
+$\overset{...}{x}$  
+$\overset{::}{x}$  
+$x^{\prime}$  
+
+#### textstyle과 displaystyle
+\inlinestyle 이 아니다.
+```
+$\textstyle \int_a^b f \sum_c^d g$
+$\displaystyle \int_a^b f \sum_c^d g$
+```
+$\textstyle \int_a^b f \sum_c^d g$
+$\displaystyle \int_a^b f \sum_c^d g$
