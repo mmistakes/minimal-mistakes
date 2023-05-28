@@ -363,6 +363,7 @@ $\begin{align}a&=b\\&=c\\&=d\end{align}$
 
 
 ## 문서, 차례
+```
 \section{} - 절  
 \subsection{} - 소절  
   
@@ -388,5 +389,6 @@ $\begin{align}a&=b\\&=c\\&=d\end{align}$
   
 \begin{quote} 내용 \end{quote} - 인용문, 구절, 예문  
 \begin{verse} 내용 \end{verse} - 줄바꿈이 중요한 시를 표시할때 유용.(각 행은 \\\\로, 각 연은 빈 줄로 구분)  
+```
   
 다만 이런 내용들은 마크다운 문서에서 사용하지는 않을 것으로 보인다.
