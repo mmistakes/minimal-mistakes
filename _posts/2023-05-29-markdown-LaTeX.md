@@ -116,7 +116,8 @@ $f:A\to B, A\overset{f}{\to}B$
 $f:a\mapsto b, x\mapsto f(x)$  
 $\bar{x}$  
 $\overline{OQ}$  
-$\underline{fff}$   
+$\underline{fff}$  
+$$\cancel{text}$$  
 $\not\nabla$  
 $\sim$  
 $\tilde{x}$  
@@ -164,15 +165,3 @@ $$a^{b+1}$$
 ```
 $$a^{b+1}$$
 
-### 행렬 표기
-subscripts : 행렬표기. X12를 원하면앞에 1을 중괄호로 묶고 언더바로 입력
-```
-$$x_1$$
-$$x_{12}$$
-$${x_1}_2$$
-$${{x_1}_2}_3$$
-```
-$$x_1$$  
-$$x_{12}$$  
-$${x_1}_2$$  
-$${{x_1}_2}_3$$  
