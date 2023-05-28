@@ -5,15 +5,16 @@ tags: markdown
 ---
 
 ## Tex, LaTex 수식 문법
-Tex, LaTex 수식 문법 정리  
-https://ko.overleaf.com/  
-overleaf 사이트를 이용하여 사용하면 편하다고 한다.  
+Tex, LaTex 수식 문법 정리    
+[overleaf](https://ko.overleaf.com/) 사이트를 이용하여 사용하면 편하다고 한다.  
   
 이 글을 작성하면서 느낀점은, 마크다운 문서로 작성하고 깃 페이지에 출력할때 오류가 많이 발생하며, 가급적 앞뒤 간격을 띄워주고 작성하고 outline style로 크게 수식을 작성해야 문제가 적게 발생하는것으로 보인다.
 
 참고하기  
 [참고1](http://mrskrummel.com/tutorials)  
-[참고2](http://tomoyo.ivyro.net/123/wiki.php/TeX_%EB%B0%8F_LaTeX_%EC%88%98%EC%8B%9D_%EB%AC%B8%EB%B2%95)
+[참고2](http://tomoyo.ivyro.net/123/wiki.php/TeX_%EB%B0%8F_LaTeX_%EC%88%98%EC%8B%9D_%EB%AC%B8%EB%B2%95)  
+[참고3](https://an-seunghwan.github.io/github.io/mathjax-error/)  
+3번 사이트를 참고하여 수식 나오는 script를 다시 세팅했는데, 참고했던 글 안에도 오류가 보이는 모습이다, Tex 에디터에서는 정상적으로 보인다.
 
 
 
@@ -174,15 +175,7 @@ $x_{12}$
 ${x_1}_2$
 ${{x_1}_2}_3$
 ```
-  
-$$x_1$$  
-  
-$$x_{12}$$  
-  
-$${x_1}_2$$  
-  
-$${{x_1}_2}_3$$  
-  
+다 안됨
 
 ### greek letters
 ```
