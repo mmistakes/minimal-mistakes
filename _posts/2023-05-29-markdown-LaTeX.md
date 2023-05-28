@@ -10,8 +10,9 @@ https://ko.overleaf.com/
 overleaf 사이트를 이용하여 사용하면 편하다고 한다.
 
 참고하기
-http://mrskrummel.com/tutorials
-http://tomoyo.ivyro.net/123/wiki.php/TeX_%EB%B0%8F_LaTeX_%EC%88%98%EC%8B%9D_%EB%AC%B8%EB%B2%95
+(참고1)[http://mrskrummel.com/tutorials]
+(참고2)[http://tomoyo.ivyro.net/123/wiki.php/TeX_%EB%B0%8F_LaTeX_%EC%88%98%EC%8B%9D_%EB%AC%B8%EB%B2%95]
+
 
 
 ## 기본 템플릿
@@ -127,7 +128,7 @@ $\widehat{wxyz}$
 
 ### 표기 2
 ```
-$\begin{cases}a&b\\cde&fg\end{cases}$
+$\begin{cases}a&b\\cde&fg\end{cases}$ - 마크다운 문서에서 \\2개가 \임에 유의
 $\overbrace{abc\cdots xyz}^{\rm alphabets}$
 $v\underbrace{oi}_{52}d$
 $\lim_{a \to b}c$
@@ -136,14 +137,14 @@ $\det A$
 $a \bmod c$
 $x\equiv a \pmod{b}$
 ```
-$\begin{cases}a&b\\cde&fg\end{cases}$  
-$\overbrace{abc\cdots xyz}^{\rm alphabets}$  
-$v\underbrace{oi}_{52}d$  
-$\lim_{a \to b}c$  
-$\exp x, e^x$  
-$\det A$  
-$a \bmod c$  
-$x\equiv a \pmod{b}$  
+$$\begin{cases}a&b\\\\cde&fg\end{cases}$$  
+$$\overbrace{abc\cdots xyz}^{\rm alphabets}$$  
+$$v\underbrace{oi}_{52}d$$  
+$$\lim_{a \to b}c$$  
+$$\exp x, e^x$$  
+$$\det A$$  
+$$a \bmod c$$  
+$$x\equiv a \pmod{b}$$  
   
 ### 벡터, 텐서
 ```
@@ -156,3 +157,66 @@ $\vec{a}\cdot\vec{b}$
 $\vec{c}\times\vec{d}$  
 $\otimes$  
 $\ast *$ 
+
+### 지수 표기
+superscripts : 지수로 올리고 싶은 부분은 {} 중괄호로 묶어주어야 한다.
+```
+$a^{b+1}$
+```
+$a^{b+1}$
+
+### 행렬 표기
+subscripts : 행렬표기. X12를 원하면앞에 1을 중괄호로 묶고 언더바로 입력
+```
+$x_1$
+$x_{12}$
+${x_1}_2$
+${{x_1}_2}_3$
+```
+$x_1$  
+$x_{12}$  
+${x_1}_2$  
+${{x_1}_2}_3$  
+
+### greek letters
+$백슬래쉬 + 문자철자$
+```
+$\pi$
+$\alpha$
+$S=\pi r^2$
+```
+$\pi$  
+$\alpha$  
+$S=\pi r^2$  
+원의 넓이처럼 다른 문자와 붙이고 싶다면, 한칸 띄고 작성해야 한다.
+
+### 삼각함수
+$백슬래쉬 + 삼각함수{}$
+```
+$\sin{x}$
+```
+$\sin{x}$
+
+
+### 로그함수
+$백슬래쉬+log{}$
+```
+$\log{x}$
+$\log_5{x}$
+$\ln{x}$
+```
+$\log{x}$  
+$\log_5{x}$  
+$\ln{x}$  
+
+### 제곱근 square roots
+```
+$\sqrt{2}$
+$\sqrt[3]{2}$
+$\sqrt{x^2+y^2}$
+$\sqrt{1+\sqrt{x}}$
+```
+$\sqrt{2}$  
+$\sqrt[3]{2}$  
+$\sqrt{x^2+y^2}$  
+$\sqrt{1+\sqrt{x}}$  
