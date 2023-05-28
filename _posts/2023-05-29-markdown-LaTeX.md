@@ -94,7 +94,7 @@ $f:a\mapsto b, x\mapsto f(x)$
 $\bar{x}$
 $\overline{OQ}$
 $\underline{fff}$
-$\cancel{text}$
+$\cancel{text}$ - 적용안됨
 $\not\nabla$
 $\sim$
 $\tilde{x}$
@@ -116,11 +116,43 @@ $f:A\to B, A\overset{f}{\to}B$
 $f:a\mapsto b, x\mapsto f(x)$  
 $\bar{x}$  
 $\overline{OQ}$  
-$\underline{fff}$  
-$\cancel{text}$  
+$\underline{fff}$   
 $\not\nabla$  
 $\sim$  
 $\tilde{x}$  
 $\widetilde{xyz}$  
 $\hat{k}$  
 $\widehat{wxyz}$  
+
+
+### 표기 2
+```
+$\begin{cases}a&b\\cde&fg\end{cases}$
+$\overbrace{abc\cdots xyz}^{\rm alphabets}$
+$v\underbrace{oi}_{52}d$
+$\lim_{a \to b}c$
+$\exp x, e^x$
+$\det A$
+$a \bmod c$
+$x\equiv a \pmod{b}$
+```
+$\begin{cases}a&b\\cde&fg\end{cases}$  
+$\overbrace{abc\cdots xyz}^{\rm alphabets}$  
+$v\underbrace{oi}_{52}d$  
+$\lim_{a \to b}c$  
+$\exp x, e^x$  
+$\det A$  
+$a \bmod c$  
+$x\equiv a \pmod{b}$  
+  
+### 벡터, 텐서
+```
+$\vec{a}\cdot\vec{b}$
+$\vec{c}\times\vec{d}$
+$\otimes$
+$\ast *$
+```
+$\vec{a}\cdot\vec{b}$  
+$\vec{c}\times\vec{d}$  
+$\otimes$  
+$\ast *$ 
