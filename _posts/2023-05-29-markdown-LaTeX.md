@@ -308,8 +308,11 @@ _{내용} 형태
 $\left| \frac{dy}{dx} \right|_{x=1}$
 $\left. \frac{dy}{dx} \right|_{x=1}$
 ```
-$\left| \frac{dy}{dx} \right|_{x=1}$  
-$\left. \frac{dy}{dx} \right|_{x=1}$  
+  
+$$\left| \frac{dy}{dx} \right|_{x=1}$$  
+  
+$$\left. \frac{dy}{dx} \right|_{x=1}$$  
+  
 
 ### calligraphic font, script font
 ```
@@ -333,10 +336,21 @@ $\mathscr{P}$
 
 ## align
 ```
-$$\begin{align}a&=b\\&=c\\&=d\end{align}$$
+$$\begin{align}
+a&=b\\
+&=c\\
+&=d
+\end{align}$$
 ```
-정렬 용도로 eqnarray 대신 사용하라는것 같은데 $$ 사이에 넣어야 작동한다.
-$$\begin{align}a&=b\\&=c\\&=d\end{align}$$
+정렬 용도로 eqnarray 대신 사용하라는것 같은데 $$ 사이에 넣어야 작동한다.  
+
+$$\begin{align}
+a&=b\\
+&=c\\
+&=d
+\end{align}$$
+  
+오류가 생긴다면 앞뒤로 줄을 띄워주면 된다.
 
 ## enumerate, itemize 환경
 번호를 붙여서 나열하거나 특수문자로 단순 나열하는것.
