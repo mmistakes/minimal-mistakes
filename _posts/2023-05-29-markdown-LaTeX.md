@@ -69,11 +69,13 @@ $$\frac{df(x)}{dx} = \lim_{h\to0} \frac{f(x+h)-f(x)}{h}$$
   
 $$\int_{0}^{1}{f(x)dx}$$  
   
-$A=\begin{bmatrix}
-0 & 1 & 2\\
-3 & 4 & 5\\
+$$
+A=\begin{bmatrix}
+0 & 1 & 2\\\\
+3 & 4 & 5\\\\
 6 & 7 & 8
-\end{bmatrix}$  
+\end{bmatrix}
+$$  
   
 $x=a^{y} \Longleftrightarrow y=log_{a}{x}$
 
@@ -172,8 +174,6 @@ subscripts : 행렬표기. X12를 원하면앞에 1을 중괄호로 묶고 언�
 ```
 $x_1$
 $x_{12}$
-${x_1}_2$
-${{x_1}_2}_3$
 ```
 다 안됨
 
