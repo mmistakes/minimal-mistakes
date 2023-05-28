@@ -9,9 +9,9 @@ Tex, LaTex 수식 문법 정리
 https://ko.overleaf.com/  
 overleaf 사이트를 이용하여 사용하면 편하다고 한다.
 
-참고하기
-(참고1)[http://mrskrummel.com/tutorials]
-(참고2)[http://tomoyo.ivyro.net/123/wiki.php/TeX_%EB%B0%8F_LaTeX_%EC%88%98%EC%8B%9D_%EB%AC%B8%EB%B2%95]
+참고하기  
+[참고1](http://mrskrummel.com/tutorials)
+[참고2](http://tomoyo.ivyro.net/123/wiki.php/TeX_%EB%B0%8F_LaTeX_%EC%88%98%EC%8B%9D_%EB%AC%B8%EB%B2%95)
 
 
 
@@ -22,14 +22,13 @@ overleaf 사이트를 이용하여 사용하면 편하다고 한다.
 \begin{document} - 주요 부분 시작
 \end{document} - 문서의 끝
 ```
-class - 문서의 유형을 의미. proc article, report, slides 등
-option - 의도에 맞게 형식을 조절, 옵션의 구분은 쉼표로 한다. 10pt, a4paper, letterpaper, fleqn, titlepage, onecolumn, landscape 옵션 등
-package - 패키지 이름으로 주로 kotex 사용
-
+class - 문서의 유형을 의미. proc article, report, slides 등  
+option - 의도에 맞게 형식을 조절, 옵션의 구분은 쉼표로 한다. 10pt, a4paper, letterpaper, fleqn, titlepage, onecolumn, landscape 옵션 등  
+package - 패키지 이름으로 주로 kotex 사용  
 - amsfonts - 자연수, 정수, 실수 등 수학기호 입력시
 - graphicx - 그림삽입을 위한 패키지
 - fullpage - 문서를 꽉 차게 출력시키기
-
+  
 ```
 $수식$
 \(수식\)
@@ -158,3 +157,22 @@ $\vec{c}\times\vec{d}$
 $\otimes$  
 $\ast *$ 
 
+### 지수 표기
+superscripts : 지수로 올리고 싶은 부분은 {} 중괄호로 묶어주어야 한다.
+```
+$a^{b+1}$
+```
+$a^{b+1}$
+
+### 행렬 표기
+subscripts : 행렬표기. X12를 원하면앞에 1을 중괄호로 묶고 언더바로 입력
+```
+$x_1$
+$x_{12}$
+${x_1}_2$
+${{x_1}_2}_3$
+```
+$x_1$  
+$x_{12}$  
+${x_1}_2$  
+${{x_1}_2}_3$  
