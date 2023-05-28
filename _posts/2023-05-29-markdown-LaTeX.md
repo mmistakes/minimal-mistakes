@@ -348,9 +348,10 @@ $\mathscr{P}$
 
 ## align
 ```
-$\begin{align}a&=b\\&=c\\&=d\end{align}$
+$$\begin{align}a&=b\\&=c\\&=d\end{align}$$
 ```
-정렬 용도로 eqnarray 대신 사용하라는것 같은데 마크다운 문서에서 안보이는듯  
+정렬 용도로 eqnarray 대신 사용하라는것 같은데 $$ 사이에 넣어야 작동한다.
+$$\begin{align}a&=b\\&=c\\&=d\end{align}$$
 
 ## enumerate, itemize 환경
 번호를 붙여서 나열하거나 특수문자로 단순 나열하는것.
