@@ -116,8 +116,7 @@ $f:A\to B, A\overset{f}{\to}B$
 $f:a\mapsto b, x\mapsto f(x)$  
 $\bar{x}$  
 $\overline{OQ}$  
-$\underline{fff}$  
-$$\cancel{text}$$  
+$\underline{fff}$   
 $\not\nabla$  
 $\sim$  
 $\tilde{x}$  
@@ -165,3 +164,45 @@ $$a^{b+1}$$
 ```
 $$a^{b+1}$$
 
+### greek letters
+$백슬래쉬 + 문자철자$
+```
+$\pi$
+$\alpha$
+$S=\pi r^2$
+```
+$\pi$  
+$\alpha$  
+$S=\pi r^2$  
+원의 넓이처럼 다른 문자와 붙이고 싶다면, 한칸 띄고 작성해야 한다.
+
+### 삼각함수
+$백슬래쉬 + 삼각함수{}$
+```
+$\sin{x}$
+```
+$\sin{x}$
+
+
+### 로그함수
+$백슬래쉬+log{}$
+```
+$\log{x}$
+$\log_5{x}$
+$\ln{x}$
+```
+$\log{x}$  
+$\log_5{x}$  
+$\ln{x}$  
+
+### 제곱근 square roots
+```
+$\sqrt{2}$
+$\sqrt[3]{2}$
+$\sqrt{x^2+y^2}$
+$\sqrt{1+\sqrt{x}}$
+```
+$\sqrt{2}$  
+$\sqrt[3]{2}$  
+$\sqrt{x^2+y^2}$  
+$\sqrt{1+\sqrt{x}}$  
