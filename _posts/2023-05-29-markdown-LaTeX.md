@@ -11,7 +11,7 @@ Tex, LaTex 수식 문법 정리
 이 글을 작성하면서 느낀점은, 마크다운 문서로 작성하고 깃 페이지에 출력할때 오류가 많이 발생하며, 가급적 앞뒤 간격을 띄워주고 작성하고 outline style로 크게 수식을 작성해야 문제가 적게 발생하는것으로 보인다.  
 어디에 왜 오류가 발생하는지 알수도 없어서 글을 일부분만 조금씩 업데이트하면서 여러번 수정했다.  
 
-참고하기  
+참고하기
  - [참고1](http://mrskrummel.com/tutorials)  
  - [참고2](http://tomoyo.ivyro.net/123/wiki.php/TeX_%EB%B0%8F_LaTeX_%EC%88%98%EC%8B%9D_%EB%AC%B8%EB%B2%95)  
  - [참고3](https://an-seunghwan.github.io/github.io/mathjax-error/)  
@@ -27,12 +27,12 @@ Tex, LaTex 수식 문법 정리
 \begin{document} - 주요 부분 시작
 \end{document} - 문서의 끝
 ```
-class - 문서의 유형을 의미. proc article, report, slides 등  
-option - 의도에 맞게 형식을 조절, 옵션의 구분은 쉼표로 한다. 10pt, a4paper, letterpaper, fleqn, titlepage, onecolumn, landscape 옵션 등  
-package - 패키지 이름으로 주로 kotex 사용  
-- amsfonts - 자연수, 정수, 실수 등 수학기호 입력시
-- graphicx - 그림삽입을 위한 패키지
-- fullpage - 문서를 꽉 차게 출력시키기
+- class - 문서의 유형을 의미. proc article, report, slides 등  
+- option - 의도에 맞게 형식을 조절, 옵션의 구분은 쉼표로 한다. 10pt, a4paper, letterpaper, fleqn, titlepage, onecolumn, landscape 옵션 등  
+- package - 패키지 이름으로 주로 kotex 사용  
+    - amsfonts - 자연수, 정수, 실수 등 수학기호 입력시
+    - graphicx - 그림삽입을 위한 패키지
+    - fullpage - 문서를 꽉 차게 출력시키기
   
 ```
 $수식$
@@ -164,14 +164,14 @@ $$\vec{c}\times\vec{d}$$
 $$\otimes$$  
 $$\ast *$$ 
 
-### 지수 표기
+### 지수 표기 (superscripts)
 superscripts : 지수로 올리고 싶은 부분은 {} 중괄호로 묶어주어야 한다.
 ```
 $$a^{b+1}$$
 ```
 $$a^{b+1}$$
 
-### 행렬 표기
+### 행렬 표기 (subscripts)
 subscripts : 행렬표기. X12를 원하면앞에 1을 중괄호로 묶고 언더바로 입력
 ```
 $x_1$
@@ -273,7 +273,8 @@ $\$12.55$
 $3{\frac{2}{5}}$  
 $3\left(\frac{2}{5}\right)$  
 $3\left[\frac{2}{5}\right]$  
-
+  
+중괄호 입력시 오류 발생, 입력방법이 있을텐데 지금은 모르겠다.  
 
 ### 절댓값
 그냥 | 기호 입력시 작게 나온다, 크게 입력하려면 위치+기호로 작성
@@ -409,4 +410,4 @@ a&=b\\
 \begin{verse} 내용 \end{verse} - 줄바꿈이 중요한 시를 표시할때 유용.(각 행은 \\\\로, 각 연은 빈 줄로 구분)  
 ```
   
-다만 이런 내용들은 마크다운 문서에서 사용하지는 않을 것으로 보인다.
+이런 내용들은 마크다운 문서에서 사용하지는 않을 것으로 보인다.
