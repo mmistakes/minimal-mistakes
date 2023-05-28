@@ -165,8 +165,8 @@ $$a^{b+1}$$
 $$a^{b+1}$$
 
 ### greek letters
-\$백슬래쉬 + 문자철자\$
 ```
+$백슬래쉬 + 문자철자$
 $\pi$
 $\alpha$
 $S=\pi r^2$
@@ -177,16 +177,16 @@ $S=\pi r^2$
 원의 넓이처럼 다른 문자와 붙이고 싶다면, 한칸 띄고 작성해야 한다.
 
 ### 삼각함수
-\$백슬래쉬 + 삼각함수{}\$
 ```
+$백슬래쉬 + 삼각함수{}$
 $\sin{x}$
 ```
 $\sin{x}$
 
 
 ### 로그함수
-\$백슬래쉬+log{}\$
 ```
+$백슬래쉬+log{}$
 $\log{x}$
 $\log_5{x}$
 $\ln{x}$
@@ -297,5 +297,83 @@ $x^{\prime}$
 $\textstyle \int_a^b f \sum_c^d g$
 $\displaystyle \int_a^b f \sum_c^d g$
 ```
-$\textstyle \int_a^b f \sum_c^d g$
-$\displaystyle \int_a^b f \sum_c^d g$
+$\textstyle \int_a^b f \sum_c^d g$  
+$\displaystyle \int_a^b f \sum_c^d g$  
+
+
+### 작은 첨자(미적분)
+```
+_{내용} 형태
+$\left| \frac{dy}{dx} \right|_{x=1}$
+$\left. \frac{dy}{dx} \right|_{x=1}$
+```
+$\left| \frac{dy}{dx} \right|_{x=1}$  
+$\left. \frac{dy}{dx} \right|_{x=1}$  
+
+### calligraphic font, script font
+```
+$\mathcal{L}$ - 라플라스 변환
+$\mathcal{E}$ - 기전력
+
+$\mathscr{L}$
+$\mathscr{E}$
+$\mathscr{P}$ - 멱집합
+```
+$\mathcal{L}$  
+$\mathcal{E}$  
+  
+$\mathscr{L}$  
+$\mathscr{E}$  
+$\mathscr{P}$  
+
+
+## tabular, eqnarray 환경
+표 만들고 방정식을 줄맞춤하여 작성하는 용도로 보이는데, 마크다운 글을 작성할때 적용되지 않는 것으로 보인다.
+
+## align
+```
+$$\begin{align}a&=b\\&=c\\&=d\end{align}$$
+```
+정렬 용도로 eqnarray 대신 사용하라는것 같은데 $$ 사이에 넣어야 작동한다.
+$$\begin{align}a&=b\\&=c\\&=d\end{align}$$
+
+## enumerate, itemize 환경
+번호를 붙여서 나열하거나 특수문자로 단순 나열하는것.
+```
+\item[Commutative] $a+b=b+a$
+\item[Associative] $a+(b+c)=(a+b)+c$
+\item[Distributive] $a(b+c)=ab+ac$
+```
+마크다운 작성할때 사용하기 어려워 보인다.
+
+
+## 문서, 차례
+```
+\section{} - 절  
+\subsection{} - 소절  
+  
+\part - 문서를 몇 개의 부로 나눌때 사용(번호매기는 것에 영향받지않는다)  
+\frontmatter - \begin{document} 다음에 위치 (쪽 번호를 로마 숫자로 바꾼다.)  
+\mainmatter - 책의 첫 장 바로 앞에 위치 (쪽 번호를 아라비아 숫자로 바꾸고 쪽 번호 매김을 다시 시작)  
+\appendix - 인자를 취하지 않고, 장의 번호 매김을 숫자에서 문자로 변경 (보통 책의 부록 부분 시작을 표시)  
+  
+\tableofcontents - 차례를 만드는 명령  
+  
+\title{} - 문서의 제목  
+\author{} - 저자명, 여러명 작성시 \and쓰고 추가  
+\date{\today} - 날짜 작성이고 \today써서 오늘 날짜 출력  
+\maketitle - 마지막에 이것을 작성해야 출력된다.  
+  
+  
+\textit{} - 이탤릭체  
+\textbt{} - 볼드체  
+\textsc{} - small caps  
+\texttt{} - typewriter  
+  
+\begin{center,flushleft,flushright} 내용 \end{center,flushleft,flushright} - 정렬  
+  
+\begin{quote} 내용 \end{quote} - 인용문, 구절, 예문  
+\begin{verse} 내용 \end{verse} - 줄바꿈이 중요한 시를 표시할때 유용.(각 행은 \\\\로, 각 연은 빈 줄로 구분)  
+```
+  
+다만 이런 내용들은 마크다운 문서에서 사용하지는 않을 것으로 보인다.
