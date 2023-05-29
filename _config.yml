@@ -75,7 +75,7 @@ google:
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-naver_site_verification  :
+naver_site_verification  : "0b86b8aa423a8648b49223d8527466978f9e986c"
 yandex_site_verification :
 baidu_site_verification  :
 
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "languor98"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/img1.jpg"
   bio              : "공부하고 복습하는 블로그입니다."
   location         : "South Korea"
   email            :
