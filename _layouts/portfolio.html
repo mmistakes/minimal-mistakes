@@ -1,0 +1,989 @@
+---
+layout: splash
+---
+<style>
+  /* cspell:disable-file */
+  /* webkit printing magic: print all background colors */
+  html {
+    -webkit-print-color-adjust: exact;
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media only screen {
+    body {
+      color: rgb(55, 53, 47);
+    }
+    article {
+      margin: 0 auto;
+		  max-width: 900px;
+    }
+  }
+
+  a,
+  a.visited {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  .pdf-relative-link-path {
+    font-size: 80%;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.75em;
+  }
+
+  h1 {
+    font-size: 1.875rem;
+    margin-top: 1.875rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+  }
+
+  .source {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 1.5em;
+    word-break: break-all;
+  }
+
+  .callout {
+    border-radius: 3px;
+    padding: 1rem;
+  }
+
+  figure {
+    margin: 1.25em 0;
+    page-break-inside: avoid;
+  }
+
+  figcaption {
+    opacity: 0.5;
+    font-size: 85%;
+    margin-top: 0.5em;
+  }
+
+  mark {
+    background-color: transparent;
+  }
+
+  .indented {
+    padding-left: 1.5em;
+  }
+
+  hr {
+    background: transparent;
+    display: block;
+    width: 100%;
+    height: 1px;
+    visibility: visible;
+    border: none;
+    border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  @media only print {
+    img {
+      max-height: 100vh;
+      object-fit: contain;
+    }
+  }
+
+  @page {
+    margin: 1in;
+  }
+
+  .collection-content {
+    font-size: 0.875rem;
+  }
+
+  .column-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .column {
+    padding: 0 1em;
+  }
+
+  .column:first-child {
+    padding-left: 0;
+  }
+
+  .column:last-child {
+    padding-right: 0;
+  }
+
+  .table_of_contents-item {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.3;
+    padding: 0.125rem;
+  }
+
+  .table_of_contents-indent-1 {
+    margin-left: 1.5rem;
+  }
+
+  .table_of_contents-indent-2 {
+    margin-left: 3rem;
+  }
+
+  .table_of_contents-indent-3 {
+    margin-left: 4.5rem;
+  }
+
+  .table_of_contents-link {
+    text-decoration: none;
+    opacity: 0.7;
+    border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid rgba(55, 53, 47, 0.09);
+    border-collapse: collapse;
+  }
+
+  table {
+    border-left: none;
+    border-right: none;
+  }
+
+  th,
+  td {
+    font-weight: normal;
+    padding: 0.25em 0.5em;
+    line-height: 1.5;
+    min-height: 1.5em;
+    text-align: left;
+  }
+
+  th {
+    color: rgba(55, 53, 47, 0.6);
+  }
+
+  .to-do-children-checked {
+    text-decoration: line-through;
+    opacity: 0.375;
+  }
+
+  ol {
+    padding-inline-start: 1.6em;
+  }
+
+  ol>li {
+    padding-left: 0.2em;
+  }
+
+  .mono ol {
+    padding-inline-start: 2em;
+  }
+
+  .mono ol>li {
+    text-indent: -0.4em;
+  }
+
+  .toggle {
+    padding-inline-start: 0em;
+    list-style-type: none;
+  }
+
+  /* Indent toggle children */
+  .toggle>li>details {
+    padding-left: 1.7em;
+  }
+
+  .toggle>li>details>summary {
+    margin-left: -1.1em;
+  }
+
+  .selected-value {
+    display: inline-block;
+    padding: 0 0.5em;
+    background: rgba(206, 205, 202, 0.5);
+    border-radius: 3px;
+    margin-right: 0.5em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    white-space: nowrap;
+  }
+
+  .collection-title {
+    display: inline-block;
+    margin-right: 1em;
+  }
+
+  .page-description {
+    margin-bottom: 2em;
+  }
+
+  .simple-table {
+    margin-top: 1em;
+    font-size: 0.875rem;
+    empty-cells: show;
+  }
+
+  .simple-table td {
+    height: 29px;
+    min-width: 120px;
+  }
+
+  .simple-table th {
+    height: 29px;
+    min-width: 120px;
+  }
+
+  .simple-table-header-color {
+    background: rgb(247, 246, 243);
+    color: black;
+  }
+
+  .simple-table-header {
+    font-weight: 500;
+  }
+
+  time {
+    opacity: 0.5;
+  }
+
+  .icon {
+    display: inline-block;
+    max-width: 1.2em;
+    max-height: 1.2em;
+    text-decoration: none;
+    vertical-align: text-bottom;
+    margin-right: 0.5em;
+  }
+
+  img.icon {
+    border-radius: 3px;
+  }
+
+  .user-icon {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100%;
+    margin-right: 0.5rem;
+  }
+
+  .user-icon-inner {
+    font-size: 0.8em;
+  }
+
+  .text-icon {
+    border: 1px solid #000;
+    text-align: center;
+  }
+
+  .page-cover-image {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    max-height: 30vh;
+  }
+
+  .page-header-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .page-header-icon-with-cover {
+    margin-top: -0.72em;
+    margin-left: 0.07em;
+  }
+
+  .page-header-icon img {
+    border-radius: 3px;
+  }
+
+  .link-to-page {
+    margin: 1em 0;
+    padding: 0;
+    border: none;
+    font-weight: 500;
+  }
+
+  p>.user {
+    opacity: 0.5;
+  }
+
+  td>.user,
+  td>time {
+    white-space: nowrap;
+  }
+
+  input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 0.6em;
+    vertical-align: middle;
+  }
+
+  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .image {
+    border: none;
+    margin: 1.5em 0;
+    padding: 0;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  .code,
+  code {
+    background: rgba(135, 131, 120, 0.15);
+    border-radius: 3px;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 85%;
+    tab-size: 2;
+  }
+
+  code {
+    color: #eb5757;
+  }
+
+  .code {
+    padding: 1.5em 1em;
+  }
+
+  .code-wrap {
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+
+  .code>code {
+    background: none;
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+  }
+
+  blockquote {
+    font-size: 1.25em;
+    margin: 1em 0;
+    padding-left: 1em;
+    border-left: 3px solid rgb(55, 53, 47);
+  }
+
+  .bookmark {
+    text-decoration: none;
+    max-height: 8em;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .bookmark-title {
+    font-size: 0.85em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 1.75em;
+    white-space: nowrap;
+  }
+
+  .bookmark-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bookmark-info {
+    flex: 4 1 180px;
+    padding: 12px 14px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .bookmark-image {
+    width: 33%;
+    flex: 1 1 180px;
+    display: block;
+    position: relative;
+    object-fit: cover;
+    border-radius: 1px;
+  }
+
+  .bookmark-description {
+    color: rgba(55, 53, 47, 0.6);
+    font-size: 0.75em;
+    overflow: hidden;
+    max-height: 4.5em;
+    word-break: break-word;
+  }
+
+  .bookmark-href {
+    font-size: 0.75em;
+    margin-top: 0.25em;
+  }
+
+  .sans {
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  .code {
+    font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
+  }
+
+  .serif {
+    font-family: Lyon-Text, Georgia, ui-serif, serif;
+  }
+
+  .mono {
+    font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  }
+
+  .pdf .sans {
+    font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP';
+  }
+
+  .pdf:lang(zh-CN) .sans {
+    font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC';
+  }
+
+  .pdf:lang(zh-TW) .sans {
+    font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC';
+  }
+
+  .pdf:lang(ko-KR) .sans {
+    font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR';
+  }
+
+  .pdf .code {
+    font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP';
+  }
+
+  .pdf:lang(zh-CN) .code {
+    font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC';
+  }
+
+  .pdf:lang(zh-TW) .code {
+    font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC';
+  }
+
+  .pdf:lang(ko-KR) .code {
+    font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR';
+  }
+
+  .pdf .serif {
+    font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP';
+  }
+
+  .pdf:lang(zh-CN) .serif {
+    font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC';
+  }
+
+  .pdf:lang(zh-TW) .serif {
+    font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC';
+  }
+
+  .pdf:lang(ko-KR) .serif {
+    font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR';
+  }
+
+  .pdf .mono {
+    font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP';
+  }
+
+  .pdf:lang(zh-CN) .mono {
+    font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC';
+  }
+
+  .pdf:lang(zh-TW) .mono {
+    font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC';
+  }
+
+  .pdf:lang(ko-KR) .mono {
+    font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR';
+  }
+
+  .highlight-default {
+    color: rgba(55, 53, 47, 1);
+  }
+
+  .highlight-gray {
+    color: rgba(120, 119, 116, 1);
+    fill: rgba(120, 119, 116, 1);
+  }
+
+  .highlight-brown {
+    color: rgba(159, 107, 83, 1);
+    fill: rgba(159, 107, 83, 1);
+  }
+
+  .highlight-orange {
+    color: rgba(217, 115, 13, 1);
+    fill: rgba(217, 115, 13, 1);
+  }
+
+  .highlight-yellow {
+    color: rgba(203, 145, 47, 1);
+    fill: rgba(203, 145, 47, 1);
+  }
+
+  .highlight-teal {
+    color: rgba(68, 131, 97, 1);
+    fill: rgba(68, 131, 97, 1);
+  }
+
+  .highlight-blue {
+    color: rgba(51, 126, 169, 1);
+    fill: rgba(51, 126, 169, 1);
+  }
+
+  .highlight-purple {
+    color: rgba(144, 101, 176, 1);
+    fill: rgba(144, 101, 176, 1);
+  }
+
+  .highlight-pink {
+    color: rgba(193, 76, 138, 1);
+    fill: rgba(193, 76, 138, 1);
+  }
+
+  .highlight-red {
+    color: rgba(212, 76, 71, 1);
+    fill: rgba(212, 76, 71, 1);
+  }
+
+  .highlight-gray_background {
+    background: rgba(241, 241, 239, 1);
+  }
+
+  .highlight-brown_background {
+    background: rgba(244, 238, 238, 1);
+  }
+
+  .highlight-orange_background {
+    background: rgba(251, 236, 221, 1);
+  }
+
+  .highlight-yellow_background {
+    background: rgba(251, 243, 219, 1);
+  }
+
+  .highlight-teal_background {
+    background: rgba(237, 243, 236, 1);
+  }
+
+  .highlight-blue_background {
+    background: rgba(231, 243, 248, 1);
+  }
+
+  .highlight-purple_background {
+    background: rgba(244, 240, 247, 0.8);
+  }
+
+  .highlight-pink_background {
+    background: rgba(249, 238, 243, 0.8);
+  }
+
+  .highlight-red_background {
+    background: rgba(253, 235, 236, 1);
+  }
+
+  .block-color-default {
+    color: inherit;
+    fill: inherit;
+  }
+
+  .block-color-gray {
+    color: rgba(120, 119, 116, 1);
+    fill: rgba(120, 119, 116, 1);
+  }
+
+  .block-color-brown {
+    color: rgba(159, 107, 83, 1);
+    fill: rgba(159, 107, 83, 1);
+  }
+
+  .block-color-orange {
+    color: rgba(217, 115, 13, 1);
+    fill: rgba(217, 115, 13, 1);
+  }
+
+  .block-color-yellow {
+    color: rgba(203, 145, 47, 1);
+    fill: rgba(203, 145, 47, 1);
+  }
+
+  .block-color-teal {
+    color: rgba(68, 131, 97, 1);
+    fill: rgba(68, 131, 97, 1);
+  }
+
+  .block-color-blue {
+    color: rgba(51, 126, 169, 1);
+    fill: rgba(51, 126, 169, 1);
+  }
+
+  .block-color-purple {
+    color: rgba(144, 101, 176, 1);
+    fill: rgba(144, 101, 176, 1);
+  }
+
+  .block-color-pink {
+    color: rgba(193, 76, 138, 1);
+    fill: rgba(193, 76, 138, 1);
+  }
+
+  .block-color-red {
+    color: rgba(212, 76, 71, 1);
+    fill: rgba(212, 76, 71, 1);
+  }
+
+  .block-color-gray_background {
+    background: rgba(241, 241, 239, 1);
+  }
+
+  .block-color-brown_background {
+    background: rgba(244, 238, 238, 1);
+  }
+
+  .block-color-orange_background {
+    background: rgba(251, 236, 221, 1);
+  }
+
+  .block-color-yellow_background {
+    background: rgba(251, 243, 219, 1);
+  }
+
+  .block-color-teal_background {
+    background: rgba(237, 243, 236, 1);
+  }
+
+  .block-color-blue_background {
+    background: rgba(231, 243, 248, 1);
+  }
+
+  .block-color-purple_background {
+    background: rgba(244, 240, 247, 0.8);
+  }
+
+  .block-color-pink_background {
+    background: rgba(249, 238, 243, 0.8);
+  }
+
+  .block-color-red_background {
+    background: rgba(253, 235, 236, 1);
+  }
+
+  .select-value-color-pink {
+    background-color: rgba(245, 224, 233, 1);
+  }
+
+  .select-value-color-purple {
+    background-color: rgba(232, 222, 238, 1);
+  }
+
+  .select-value-color-green {
+    background-color: rgba(219, 237, 219, 1);
+  }
+
+  .select-value-color-gray {
+    background-color: rgba(227, 226, 224, 1);
+  }
+
+  .select-value-color-translucentGray {
+    background-color: rgba(255, 255, 255, 0.0375);
+  }
+
+  .select-value-color-orange {
+    background-color: rgba(250, 222, 201, 1);
+  }
+
+  .select-value-color-brown {
+    background-color: rgba(238, 224, 218, 1);
+  }
+
+  .select-value-color-red {
+    background-color: rgba(255, 226, 221, 1);
+  }
+
+  .select-value-color-yellow {
+    background-color: rgba(253, 236, 200, 1);
+  }
+
+  .select-value-color-blue {
+    background-color: rgba(211, 229, 239, 1);
+  }
+
+  .checkbox {
+    display: inline-flex;
+    vertical-align: text-bottom;
+    width: 16;
+    height: 16;
+    background-size: 16px;
+    margin-left: 2px;
+    margin-right: 5px;
+  }
+
+  .checkbox-on {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+  }
+
+  .checkbox-off {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+  }
+</style>
+<article id="26b6c3a9-f123-43b6-9c93-ed857f5f26a3">
+  <header>
+    <img class="page-cover-image"
+      src="/assets/images/portfolio/img-3.jpg"
+      style="object-position:center 50%" />
+    <div class="page-header-icon page-header-icon-with-cover"><img class="icon"
+        src="/assets/images/portfolio/img-4.jpg" />
+    </div>
+    <h1 class="page-title">이지윤</h1>
+    <p class="page-description"></p>
+  </header>
+  <div class="page-body">
+    <h2 id="55abfc5a-fed3-4f9e-9dca-86b0890e8708" class="">👨‍💻 Frontend Engineer</h2>
+    <p id="cbfc8231-23e5-49da-9ef3-58d60d2b9e81" class="">Birthday: 1996.04.19</p>
+    <p id="3dbf8f26-8912-454d-a492-323626529736" class="">Email: <a
+        href="mailto:jiyoon3421@gmail.com">jiyoon3421@gmail.com</a> </p>
+    <p id="607ec9a4-0a3a-4624-ae44-e71f4c48e9e5" class="">Mobile: <a href="tel:010-8384-8558">010-8384-8558</a></p>
+    <p id="00a18166-56ea-44f2-a620-daee8ab65308" class="">Contact: <a href="https://joyellow.tistory.com/">Blog</a>,
+      <a href="https://github.com/jiyoon-lee">Github</a>
+    </p>
+    <p id="b01255c9-e00a-4f9b-aba5-bd67d888201f" class="">Address: 경기도 성남시 분당구</p>
+    <p id="9aabcc24-29c2-41f5-897f-ffab2bae7010" class="">
+    </p>
+    <h2 id="8a26a268-b836-4db3-aabf-271f2f56c146" class="">✨ 소개 / About Me</h2>
+    <ul id="b931f12b-a978-4bdb-ac55-b6c066ff3918" class="bulleted-list">
+      <li style="list-style-type:disc">Front-End Framework(Vue.js) 3년 이상 활용 경험</li>
+    </ul>
+    <ul id="66fb77ed-ea2f-4480-9cde-0a4a6f3000e8" class="bulleted-list">
+      <li style="list-style-type:disc">자바스크립트 엔진에 대한 깊은 이해</li>
+    </ul>
+    <ul id="30b383ca-da75-4b8c-84de-343f17582cc9" class="bulleted-list">
+      <li style="list-style-type:disc">모던 CSS 기법 활용 능력</li>
+    </ul>
+    <ul id="1f60d6d2-4e99-4ba2-80a8-691a51927003" class="bulleted-list">
+      <li style="list-style-type:disc">TypeScript를 이용한 개발 경험</li>
+    </ul>
+    <ul id="1120eae6-ced3-4bea-a52b-f10e25f0e327" class="bulleted-list">
+      <li style="list-style-type:disc">Azure devops, jira등 협업도구 기반의 애자일 개발 경험</li>
+    </ul>
+    <ul id="e99ef484-a743-40e6-a284-f69aa955b20a" class="bulleted-list">
+      <li style="list-style-type:disc">Azure devops를 통한 CI/CD 구축 경험</li>
+    </ul>
+    <ul id="abc4ea89-3cce-4e61-8781-1b41cfbeec9f" class="bulleted-list">
+      <li style="list-style-type:disc">CSR, SSR 방식을 사용하여 웹 애플리케이션 개발 경험</li>
+    </ul>
+    <ul id="580a07b7-1baf-4263-a54d-a59fdfc6693c" class="bulleted-list">
+      <li style="list-style-type:disc">기술의 철학과 서비스의 아키텍처를 이해함으로써 확장성 있고 유연한 코드 개발</li>
+    </ul>
+    <p id="6ab0d75f-9ab0-46cd-abdb-4956b603b0e2" class="">
+    </p>
+    <h2 id="2c394821-2a01-48a6-882a-c2e254f860c0" class="">📈 왜 당신을 뽑아야 하나요?</h2>
+    <figure id="b2f9e115-4f77-4d39-ab0d-33c8f7ec213c" class="image"><a
+        href="/assets/images/portfolio/img-1.png"><img
+          style="width:2667px"
+          src="/assets/images/portfolio/img-1.png" /></a>
+    </figure>
+    <p id="905691e6-f045-4aec-bc30-bf79060c334d" class="">
+    </p>
+    <h2 id="815ff52c-d66e-4960-b97b-8c5cbef86a93" class="">🤹 기술스택 / Skill Set</h2>
+    <ul id="d561fcab-b6d4-43b2-b331-c557f5a76bb0" class="bulleted-list">
+      <li style="list-style-type:disc">JS Framework<ul id="3fade592-3bac-4865-b220-6026b6727962" class="bulleted-list">
+          <li style="list-style-type:circle">Vue3, Vue2</li>
+        </ul>
+        <ul id="a740c1c3-b509-458e-808d-87581b5439fb" class="bulleted-list">
+          <li style="list-style-type:circle">React</li>
+        </ul>
+      </li>
+    </ul>
+    <ul id="e152a122-49e6-4503-a4a8-c2fb5f3e891e" class="bulleted-list">
+      <li style="list-style-type:disc">Next</li>
+    </ul>
+    <ul id="ddbe6079-b688-44e4-85d6-1ea3915e8a53" class="bulleted-list">
+      <li style="list-style-type:disc">Nuxt</li>
+    </ul>
+    <ul id="ef54a412-57ed-4762-884e-c8c4fd9a855f" class="bulleted-list">
+      <li style="list-style-type:disc">Node.js</li>
+    </ul>
+    <figure id="e7d72c2b-01cf-405b-8097-81364acabf43" class="image">
+      <img style="width:3203px" src="/assets/images/portfolio/img-5.png" /></a>
+    </figure>
+    <p id="7ec868ac-ce62-4b6c-86dc-e7976b959960" class="">
+    </p>
+    <h2 id="92091c05-a55c-4f84-b0a7-e58f63ff6e72" class="">👩‍💼 경력 사항 / Work Experience</h2>
+    <figure id="c2a9ed85-ffd1-4b4e-986b-a88fb9adf7a6" class="image">
+      <img
+          style="width:3887px"
+          src="/assets/images/portfolio/img-6.png" /></a>
+    </figure>
+    <p id="469325f7-5d97-48cb-a800-fa069af70250" class="">
+    </p>
+    <h2 id="73e5aeb4-da86-43c9-8172-358f94ff0521" class="">👩‍💻 주요 프로젝트 / Projects</h2>
+    <h3 id="20894dba-35e7-4967-a514-22d60a829040" class="">소프트캠프/Security365 Portal</h3>
+    <figure id="b62d5791-fe35-4790-b6dd-8feca680c791" class="image">
+      <img
+          style="width:2667px"
+          src="/assets/images/portfolio/img-7.png" />
+    </figure>
+    <figure id="c52d0cf9-f90a-45f8-a599-a3a4022f6e44" class="image">
+      <img
+          style="width:2667px"
+          src="/assets/images//portfolio/img-8.png" />
+    </figure>
+    <figure id="78468621-2d4e-4fa9-89c2-302fdad29271" class="image">
+      <img
+          style="width:2667px"
+          src="/assets/images/portfolio/img-9.png" />
+    </figure>
+    <figure id="1969b595-9d43-48c8-90f9-c966f214725e" class="image">
+      <img
+          style="width:2667px"
+          src="/assets/images/portfolio/img-10.png" />
+    </figure>
+    <p id="1fdefe8d-3690-4608-b2ab-6b752a1b6e28" class="">
+    </p>
+    <h3 id="43885e05-f43c-4b24-afda-8dd65a826a3c" class="">소프트캠프/SHIELD@Home</h3>
+    <figure id="3676d8b8-49d7-46a8-8ac0-96abed5baa6c" class="image">
+      <img
+          style="width:2667px"
+          src="/assets/images/portfolio/img-11.png" />
+    </figure>
+    <figure id="435bbb3a-c974-4632-becb-9c1684c7123b" class="image">
+      <img
+          style="width:2667px"
+          src="/assets/images//portfolio/img-12.png" />
+    </figure>
+    <p id="bcebcf31-39c7-47e8-a59f-af0bb48df4af" class="">
+    </p>
+    <h3 id="c53b8de0-32d3-4c8b-9803-6433efdf7bd1" class="">NEOCAREER/Calling</h3>
+    <figure id="341df4e3-4b4c-4b5e-8c77-d637d8d9c84d" class="image">
+      <img
+          style="width:2667px"
+          src="/assets/images/portfolio/img-13.png" />
+    </figure>
+    <p id="c9c7f9a2-3475-4ce8-bcc5-d4a1657a850a" class="">
+    </p>
+    <h2 id="9c9888d7-0535-4aaa-bc09-95bec5b9b48e" class="">🤙 개발자가 되겠습니다.</h2>
+    <hr id="5707821f-feda-445a-a63a-cbb7ea8db9ec" />
+    <figure id="e6b7d12e-4805-4726-a3e6-170163cd946f" class="image">
+      <img
+          style="width:2667px"
+          src="/assets/images/portfolio/img-14.png" /></a>
+    </figure>
+    <p id="941508b5-1d77-4529-a420-458c2814a84c" class="">
+    </p>
+    <h2 id="b22e912d-3ed9-4ddd-ab1d-22e59e6db9e3" class="">🎸 기타 사항</h2>
+    <h3 id="8bc7d367-f4f1-46a1-bce4-13c218ec7c1d" class="">학력</h3>
+    <ul id="4618bdb1-e48c-43cd-b2ee-54d8c3374a9e" class="bulleted-list">
+      <li style="list-style-type:disc">영진 전문대학 졸업 (2016.03 ~ 2019.02)<table id="a4764737-520c-4156-aaf2-7887b7262993"
+          class="simple-table">
+          <tbody>
+            <tr id="26a5c39d-3d7e-45ca-b665-5bce16e4dbdb">
+              <th id="=iZm" class="simple-table-header-color simple-table-header" style="width:85px">전공</th>
+              <td id="DBfu" class="" style="width:574px">컴퓨터 정보계열 / 웹 데이터베이스</td>
+            </tr>
+            <tr id="d78fe074-119f-460e-a474-fde283d59f74">
+              <th id="=iZm" class="simple-table-header-color simple-table-header" style="width:85px">학점</th>
+              <td id="DBfu" class="" style="width:574px">3.69/ 4.50</td>
+            </tr>
+          </tbody>
+        </table>
+        <figure id="4618ef8d-7770-42df-99a3-8f2aa5ef49a9">
+          <a href="https://photos.app.goo.gl/MbSu83Zhk51CFa1H9"
+            class="bookmark source">
+            <div class="bookmark-info">
+              <div class="bookmark-text">
+                <div class="bookmark-title">New video by JIYOON LEE</div>
+              </div>
+              <div class="bookmark-href"><img
+                  src="https://ssl.gstatic.com/social/photosui/images/logo/1x/photos_64dp.png"
+                  class="icon bookmark-icon" />https://photos.app.goo.gl/MbSu83Zhk51CFa1H9</div>
+            </div><img
+              src="https://lh3.googleusercontent.com/pfkDSyg5nsUgzikf2XoxMveQBDS8reBmqTBE1FVeb_BSXeWlH1-ijY4YC9rXEzS2dLfBDEMJ17g8pQ1_GN8oZoiKF-0VJF6oLgxgZugxDSj3cHVH7yx8-Z2-sLVymblRRKWhsC9lAOw=w600-h315-p-k-no"
+              class="bookmark-image" />
+          </a>
+          <figcaption>학교생활을 마무리하며 제작한 영상</figcaption>
+        </figure>
+      </li>
+    </ul>
+    <figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+      id="5115bd8a-bd66-43fd-8d6f-80a08999e5b1">
+      <div style="font-size:1.5em"><span class="icon">💡</span></div>
+      <div style="width:100%">일본 취업당시 작성한 포트폴리오와 자소서입니다.
+        이를 통해 총 7개사에 내정받는 성과를 얻었습니다.</div>
+    </figure>
+    <figure id="e28eba63-b49b-4a8f-9519-f091fd49651a"><a
+        href="https://drive.google.com/file/d/1P_OBihWZ_luqIY0-5q6jQ7hjaInxIKFS/view?usp=sharing"
+        class="bookmark source">
+        <div class="bookmark-info">
+          <div class="bookmark-text">
+            <div class="bookmark-title">LEE_JIYOON_PORTFOLIO.pdf</div>
+          </div>
+          <div class="bookmark-href"><img src="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png"
+              class="icon bookmark-icon" />https://drive.google.com/file/d/1P_OBihWZ_luqIY0-5q6jQ7hjaInxIKFS/view?usp=sharing
+          </div>
+        </div>
+      </a></figure>
+    <figure id="03bcecf0-a67e-4794-a0c4-31c70261b510"><a
+        href="https://drive.google.com/file/d/1cod4nzHn87MgKUekQJKt8-0f3CAW4dDE/view?usp=sharing"
+        class="bookmark source">
+        <div class="bookmark-info">
+          <div class="bookmark-text">
+            <div class="bookmark-title">2018_YJC_IT_Resume_Skillsheet_ES_Lee Jiyoon.pdf</div>
+          </div>
+          <div class="bookmark-href"><img src="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png"
+              class="icon bookmark-icon" />https://drive.google.com/file/d/1cod4nzHn87MgKUekQJKt8-0f3CAW4dDE/view?usp=sharing
+          </div>
+        </div>
+      </a></figure>
+    <p id="fd2f00b0-63d5-4f9e-9f02-a9157dd1d32d" class="">
+    </p>
+    <h3 id="a1e89339-67ac-4b70-8ecf-a30c7f20462a" class="">교육 및 대외 활동</h3>
+    <ul id="cdbbb07e-3dc4-4db7-8db4-8bf86da07235" class="bulleted-list">
+      <li style="list-style-type:disc">「テレ・コミュニケーションアカデミー」일본어 어학당 수료(2017.08.01 ~ 2017.09.09)</li>
+    </ul>
+    <ul id="19c037c1-b794-4c43-9c8d-36cd7560caca" class="bulleted-list">
+      <li style="list-style-type:disc">Philippines Tarlac University(TSU) 영어 어학 연수(2016.10.03 ~ 2016.12.09)</li>
+    </ul>
+    <ul id="be08d770-fe84-463c-b613-012effb1e41e" class="bulleted-list">
+      <li style="list-style-type:disc">WORDJOB+ 해외취업 우수사례 장려상 수상</li>
+    </ul>
+  </div>
+</article>
