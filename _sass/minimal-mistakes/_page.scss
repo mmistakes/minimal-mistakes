@@ -110,14 +110,14 @@ body {
 		}
 	}
 
+  p,
   li,
   dl {
-    font-size: 1em;
+    font-size: .8em;
   }
 
   /* paragraph indents */
   p {
-    font-size: .8em;
     margin: 0 0 $indent-var;
 
     /* sibling indentation*/
