@@ -489,7 +489,9 @@
 }
 
 .nav__sub-title {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0.5rem 0;
   padding: 0.25rem 0;
   font-family: $sans-serif-narrow;
