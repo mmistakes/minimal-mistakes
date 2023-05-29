@@ -544,7 +544,7 @@ However, sometimes we want to map errors in custom types that don't belong to th
 
 ## 4. Type-safe Error Handling: The `Either` Type
 
-Let's now introduce the `Either` type for error handling. Kotlin doesn't ship the `Either` type with the standard SDK. We need Arrow to add it to the game. Basically, the `Either<E, A>` type is an [Algebraic Data Type](https://blog.rockthejvm.com/algebraic-data-types/) (ADT). In detail, it's a sum type that can contain either a value `A` wrapped in the type `Right<A>` or a value `E` wrapped in a the type `Left<E>`. It's common to associated `Left` instances with the result of a failed computation, and `Right` instances with the result of a successful computation. The `Either` type is defined as follows:
+Let's now introduce the `Either` type for error handling. Kotlin doesn't ship the `Either` type with the standard SDK. We need Arrow to add it to the game. Basically, the `Either<E, A>` type is an [Algebraic Data Type](https://blog.rockthejvm.com/algebraic-data-types/) (ADT). In detail, it's a sum type that can contain either a value `A` wrapped in the type `Right<A>` or a value `E` wrapped in a type `Left<E>`. It's common to associate `Left` instances with the result of a failed computation and `Right` instances with the result of a successful calculation. The `Either` type is defined as follows:
 
 ```kotlin
 // Arrow SDK
@@ -555,14 +555,14 @@ public data class Right<out B> constructor(val value: B) : Either<Nothing, B>()
 
 The `Either` type is a sealed class, so it cannot be extended outside the Arrow library, and the compiler can check if all the possible cases are handled in a `when` expression.
 
-First, let's see how to create an `Either` instance. Both the `Left` and `Right` classes have a constructor that takes a single parameter. Here's an example of how to create a `Right` instance:
+First, let's see how to create an `Either` instance. The `Left` and `Right` classes have a constructor that takes a single parameter. Here's an example of how to create a `Right` instance:
 
 ```kotlin
 val appleJobId = JobId(1)
 val appleJob: Either<JobError, Job> = Right(JOBS_DATABASE[appleJobId]!!)
 ```
 
-The `Left` instance is created in the same way. Since we can now use any type for representing errors, we can take advantage of the type system and create an ADT on errors causes. For example, we can create a `JobError` sealed class and extend it with the `JobNotFound` and `GenericError` classes:
+The `Left` instance is created in the same way. Since we can now use any type to represent errors, we can use the type system and create an ADT on error causes. For example, we can create a `JobError` sealed class and extend it with the `JobNotFound` and `GenericError` classes:
 
 ```kotlin
 sealed interface JobError
@@ -583,7 +583,7 @@ val anotherAppleJob = JOBS_DATABASE[appleJobId]!!.right()
 val anotherJobNotFound: Either<JobError, Job> = JobNotFound(appleJobId).left()
 ```
 
-Since Arrow defines the `Either` type as a sealed class, we can use the `when` expression to handle all the possible cases taking advantage of the smart casting. for example, in the following `printSalary`function, we can access to the `value` attribute of the `Right` instance without any explicit cast:
+Since Arrow defines the `Either` type as a sealed class, we can use the `when` expression to handle all the possible cases taking advantage of the smart casting. For example, in the following `printSalary`function, we can access the `value` attribute of the `Right` instance without any explicit cast:
 
 ```kotlin
 fun printSalary(maybeJob: Either<JobError, Job>) = when (maybeJob) {
@@ -592,13 +592,13 @@ fun printSalary(maybeJob: Either<JobError, Job>) = when (maybeJob) {
 }
 ```
 
-If we want to extract the contained value from an `Either` we have some functions to do it. The `getOrNull` function returns a nullable type containing the value if it's a `Right` instance. We can use it if we want to discard the error:
+If we want to extract the contained value from an `Either`, we have some functions. The `getOrNull` function returns a nullable type containing the value if it's a `Right` instance. We can use it if we want to discard the error:
 
 ```kotlin
 val appleJobOrNull: Job? = appleJob.getOrNull()
 ```
 
-In a similar way, we can transform an `Either` instance in an `Option` instance using the `getOrNone` function:
+Similarly, we can transform an `Either` instance into an `Option` instance using the `getOrNone` function:
 
 ```kotlin
 val maybeAppleJob: Option<Job> = appleJob.getOrNone()
@@ -610,7 +610,7 @@ Then, the `getOrElse` function lets us extract the value contained in a `Right` 
 val jobCompany: String = appleJob.map { it.company.name }.getOrElse { "Unknown company" }
 ```
 
-To be fair, the `getOrElse` function takes a lambda with the error as a parameter, so we can use it to react in a different way to different errors:
+The `getOrElse` function takes a lambda with the error as a parameter, so we can use it to react differently to different errors:
 
 ```kotlin
 val jobCompany2: String = appleJob.map { it.company.name }.getOrElse { jobError ->
@@ -621,7 +621,11 @@ val jobCompany2: String = appleJob.map { it.company.name }.getOrElse { jobError 
 }
 ```
 
-Using typed errors has many advantages. First, we can use the type system to check if all the possible cases are handled. Second, the possible causes of failure are listed directly in the signature of the function, as the left part of the `Either` type. Understanding exactly the possible causes of failure lets us build better tests and better error handling strategies. Moreover, typed errors compose better than exceptions.
+Using typed errors has many advantages:
+
+ 1. We can use the type system to check if all the possible cases are handled.
+ 2. The possible causes of failure are listed directly in the function's signature as the left part of the `Either` type. Understanding the possible causes of failure lets us build better tests and error-handling strategies.
+ 3. Typed errors compose better than exceptions.
 
 To prove the above advantages, as we previously did for the `Result` type, it's time to use the `Either` type in our example. Let's change the `Jobs` module to return an `Either` type instead of a `Result` type:
 
@@ -632,7 +636,7 @@ interface Jobs {
 }
 ```
 
-Here we are using the `JobError` ADT we defined so far. At this point, we can know exactly how the function can fail just by looking at the signature. Now, we can implement the `LiveJobs` class:
+Here we are using the `JobError` ADT we defined so far. At this point, we can know precisely how the function can fail by looking at the signature. Now, we can implement the `LiveJobs` class:
 
 ```kotlin
 class LiveJobs : Jobs {
@@ -646,7 +650,7 @@ class LiveJobs : Jobs {
 } 
 ```
 
-As we might expect, we're wrapping the happy path with a `Right` instance, and all the available error cases with a `Left` instance. We are treating the absence of a job as a logic error, and we're wrapping it with a `JobNotFound` instance using the recommended and idiomatic syntax:
+As we might expect, we're wrapping the happy path with a `Right` instance and all the available error cases with a `Left` instance. We are treating the absence of a job as a logic error, and we're wrapping it with a `JobNotFound` object using the recommended and idiomatic syntax:
 
 ```kotlin
 value?.right() ?: error.left()
@@ -665,10 +669,10 @@ public inline fun <R> catch(f: () -> R): Either<Throwable, R> =
   }
 ```
 
-the `nonFatalOrThrow` function checks if the exception should be handled or not. The fatal exception are the following and their subclasses:
+The `nonFatalOrThrow` function checks whether the exception should be handled. The fatal exceptions are the following and their subclasses:
 
 * `VirtualMachineError`
-* `ThreadDeath` 
+* `ThreadDeath`
 * `InterruptedException`
 * `LinkageError`
 * `ControlThrowable`
@@ -686,9 +690,9 @@ class LiveJobs : Jobs {
 }
 ```
 
-Wait. We introduced a bunch of new functions here. Let's see them in detail. First of all, the `Either` type is right-based, so, the usual transformations like `map` and `flatMap` apply to the `Right` instances of the `Either`. In this case, we applied the `flatMap` function to check if the retrieved job was null or not, eventually creating a `Left` value using the pattern we've seen a moment ago.
+Wait. We introduced a bunch of new functions here. Let's see them in detail. First, the `Either` type is right-based, so the usual transformations like `map` and `flatMap` apply to the `Right` instances of the `Either`. In this case, we applied the `flatMap` function to check if the retrieved job was null, eventually creating a `Left` value using the pattern we saw a moment ago.
 
-Moreover, we introduced the `mapLeft` function. This function is similar to the `map` function, but it applies to the `Left` instances of the `Either` type. In this case, we're mapping the `Throwable` instance to a `GenericError` instance. The `mapLeft` function is defined as follows:
+Moreover, we introduced the `mapLeft` function. This function is similar to the `map` function but applies to the `Left` instances of the `Either` type. In this case, we're mapping the `Throwable` instance to a `GenericError` instance. The `mapLeft` function is defined as follows:
 
 ```kotlin
 // Arrow SDK
@@ -696,7 +700,7 @@ public inline fun <C> mapLeft(f: (A) -> C): Either<C, B> =
     fold({ Left(f(it)) }, { Right(it) })
 ```
 
-As we can see, the definition of the `mapLeft` function gives us the chance to introduce another important function, the `fold` function. We already saw this function in the `Result` type, and we can use it to transform both the `Left` and `Right` instances of the `Either` type into a target type. The `fold` function is defined as follows:
+As we can see, the definition of the `mapLeft` function allows us to introduce another essential function, the `fold` function. We already saw this function in the `Result` type, and we can use it to transform both the `Left` and `Right` instances of the `Either` class into a target type. The `fold` function is defined as follows:
 
 ```kotlin
 // Arrow SDK
@@ -718,7 +722,7 @@ public inline fun <C> fold(ifLeft: (left: A) -> C, ifRight: (right: B) -> C): C 
     }
 ```
 
-Basically, the `fold` function is a wrapper around the `when` expression. It's very important in the library, and many of the `getOr*` are implemented using it. For example, let's say we want to get the salary of a job, whether it's a `Left` or a `Right` instance. We can use the `fold` function, and return a default value if the job is not found: 
+The `fold` function is a wrapper around the `when` expression. It's crucial in the library, and many of the `getOr*` are implemented using it. For example, let's say we want to get the salary of a job, whether it's a `Left` or a `Right` instance. We can use the `fold` function and return a default value if the job is not found:
 
 ```kotlin
 val jobSalary: Salary = jobNotFound.fold({ Salary(0.0) }, { it.salary })
