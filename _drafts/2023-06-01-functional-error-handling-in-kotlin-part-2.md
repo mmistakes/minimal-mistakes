@@ -1,5 +1,5 @@
 ---
-title: "Functional Error Handling in Kotlin, Part 2: Result, Either, and the Raise DSL"
+title: "Functional Error Handling in Kotlin, Part 2: Result and Either"
 date: 2023-06-01
 header:
     image: "/images/blog cover.jpg"
@@ -9,15 +9,15 @@ toc: true
 toc_label: "In this article"
 ---
 
-In the [first part](https://blog.rockthejvm.com/functional-error-handling-in-kotlin/) of this series, we introduced some of the available strategies to handle errors in a functional fashion using Kotlin and the Arrow library. In this second part, we'll continue our journey by looking at the `Result` and `Either` data types, and how to use them to handle errors in a functional way. In the end, we'll also introduce the Raise DSL, a pragmatic approach to functional error handling implemented in the Arrow library. 
+In this series [first part](https://blog.rockthejvm.com/functional-error-handling-in-kotlin/), we introduced some of the available strategies to handle errors in a functional fashion using Kotlin and the Arrow library. In this second part, we'll continue our journey by looking at the `Result` and `Either` data types and how to use them to handle errors in a functional way. We'll also introduce the Raise DSL, a pragmatic approach to functional error handling implemented in the Arrow library.
 
-For the setup of the project, please refer to the first part of this series, in which we set up Maven and the needed dependencies.
+For the project's setup, please refer to the first part of this series, in which we set up Maven and the needed dependencies.
 
 Without further ado, let's get started!
 
-## 1. Setup
+## 1. The Domain
 
-For the Maven setup, please refer to the first part of this series. However, we'll use extensively the domain model we introduced in the last article. We want to create an application that manages a job board. The main types modelling the domain are:
+We'll use extensively the domain model we introduced in the last article. We want to create an application that manages a job board. The main types of the domain are:
 
 ```kotlin
 data class Job(val id: JobId, val company: Company, val role: Role, val salary: Salary)
@@ -68,15 +68,15 @@ A `Jobs` module will handle the integration with the database:
 interface Jobs
 ```
 
-Now that we have define the domain model and the module that will contain the algebra to access it, it's time to start implementing the different approaches to handle errors in a functional way. 
+Now that we have defined the domain model and the module that will contain the algebra to access it, it's time to start implementing the different approaches to handle errors in a functional way.
 
-## 2. Lifting the Try-Catch Approach to a Higher Level: The `Result` Type
+## 2. The `Result` Type: Lifting the Try-Catch Approach to a Higher Level
 
-Nullable types and the `Option` type we've seen so far are great for handling errors in a functional way, they don't store the cause of the error. In other words, they don't tell us _why_ the error happened.
+Nullable types and the `Option` type we've seen so far are great for handling errors in a functional way. They don't store the cause of the error. In other words, they don't tell us _why_ the error happened.
 
-We can represent an error using different approaches. The first one is reusing the `Throwable` type and all its exceptions subtypes. The Kotlin programming language has the `Result<A>` type for that since version 1.3, which models the result of an operation that may succeed or may result in an exception. In that, it's similar to the `Try<A>` type we've seen in the Scala programming language.
+We can represent an error using different approaches. The first is reusing the `Throwable` type and all its exception subtypes. The Kotlin programming language has the `Result<A>` type for that since version 1.3, which models the result of an operation that may succeed or may result in an exception. It's similar to the `Try<A>` type we've seen in the Scala programming language.
 
-Despite what you may guess, the `Result<A` type is not defined as a sealed class. It's a value class, without any subclass:
+Despite what you may guess, the `Result<A` type is not defined as a sealed class. It's a value class without any subclass:
 
 ```kotlin
 // Kotlin SDK
@@ -87,7 +87,7 @@ public value class Result<out T> @PublishedApi internal constructor(
 ) : Serializable
 ```
 
-If you're asking, the `@PublishedApi` marks the `internal` constructor and the `value` as accessible from public extension inline functions, but not from anywhere else. Here, the trick to represent success and failure results as values of the `value` attribute, which has type `Any?`, and not `T?`. In case of success, the `value` attribute will contain the value of type `T`, while in case of failure, it will contain an instance of the `Result.Failure` class, defined as follows:
+If you're asking, the `@PublishedApi` marks the `internal` constructor and the `value` as accessible from public extension inline functions but not from anywhere else. Here, the trick to represent success and failure results as values of the `value` attribute, which has the type `Any?` and not `T?`. In case of success, the `value` attribute will contain the value of type `T`, while in case of failure, it will contain an instance of the `Result.Failure` class, defined as follows:
 
 ```kotlin
 // Kotlin SDK
@@ -97,7 +97,7 @@ internal class Failure(
     ) : Serializable
 ```
 
-Now that we introduced a bit of internals, let's see how we can create instances of the `Result<A>` type. Kotlin defines two different smart constructors for that:
+Now that we introduced a bit of internals let's see how we can create instances of the `Result<A>` type. Kotlin defines two different smart constructors for that:
 
 ```kotlin
 val appleJob: Result<Job> = Result.success(
@@ -112,7 +112,7 @@ val appleJob: Result<Job> = Result.success(
 val notFoundJob: Result<Job> = Result.failure(NoSuchElementException("Job not found")) 
 ```
 
-Unfortunately. we've no fancy extension functions defined on the `Result<A>` type, so we can't write anything similar to `job.toResult()`. _C'est la vie_. To be fair, it's not that hard to define such an extension function:
+Unfortunately, we've no fancy extension functions defined on the `Result<A>` type, so we can't write anything similar to `job.toResult()`. _C'est la vie_. It's not that hard to define such an extension function:
 
 ```kotlin
 fun <T> T.toResult(): Result<T> =
@@ -121,7 +121,7 @@ fun <T> T.toResult(): Result<T> =
 val result = 42.toResult()
 ```
 
-Now that we know how to build a `Result`, how can we use it? First of all, let's create the version of our `Jobs` module that uses the `Result` type:
+How can we use it now that we know how to build a `Result`? First of all, let's create the version of our `Jobs` module that uses the `Result` type:
 
 ```kotlin
 interface Jobs {
@@ -139,7 +139,7 @@ class LiveJobs : Jobs {
 }
 ```
 
-Nothing fancy here. We decided to handle only real errors using the `Result` type, and not the case in which the job is not found.
+We decided to handle only unexpected errors with the `Result` type by catching exceptions, not the case in which the job is not found.
 
 The `findById` function is implemented using the `try-catch` approach. However, the fact that using the `Result` type together with a `try-catch` block is so common, that the Kotlin SDK defines a `runCatching` function that does exactly that:
 
@@ -170,8 +170,7 @@ override fun findById(id: JobId): Result<Job?> = id.runCatching {
 }
 ```
 
-
-Once we have a `Result`, we can use it in different ways. The first one is to check if the result is a success or a failure. We can do that using the `isSuccess` and `isFailure` properties. To show them, as we made for other types, we can create our `JobsService` using the new flavor of the `Jobs` module:
+Once we have a `Result`, we can use it differently. The first is to check if the result is a success or failure. We can use the `isSuccess` and `isFailure` properties. To show them, as we made for other types, we can create our `JobsService` using the new flavor of the `Jobs` module:
 
 ```kotlin
 class JobService(private val jobs: Jobs) {
@@ -187,13 +186,14 @@ class JobService(private val jobs: Jobs) {
 }
 ```
 
-The above code introduces also some of the extractor methods defined on the `Result` type: 
-* `getOrNull` returns the value of the `Result`, or `null` otherwise.
-* `getOrThrow` returns the value of the `Result`, or the throw the exception contained in the `Result.Failure` instance.
-* `getOrDefault` returns the value of the `Result`, or a given default value if the `Result` is a failure.
+The above code also introduces some of the extractor methods defined on the `Result` type:
+
+* `getOrNull` returns the value of the `Result` or `null` otherwise.
+* `getOrThrow` returns the value of the `Result` or the throw of the exception contained in the `Result.Failure` instance.
+* `getOrDefault` returns the value of the `Result` or a given default value if the `Result` is a failure.
 * `getOrElse` returns the value of the `Result`, or the result of a given lambda, `onFailure: (exception: Throwable) -> R` if the `Result` is a failure.
 
-On the other end, the method `exceptionOrNull` returns the exception contained in the `Result.Failure` instance, or `null` otherwise.
+Conversely, the method `exceptionOrNull` returns the exception in the `Result.Failure` instance or `null` otherwise.
 
 If we execute the above method using a valid `JobId`, we'll get the following output:
 
@@ -201,13 +201,13 @@ If we execute the above method using a valid `JobId`, we'll get the following ou
 Job found: Job(id=JobId(value=1), company=Company(name=Apple, Inc.), role=Role(name=Software Engineer), salary=Salary(value=70000.0))
 ```
 
-However, it far more idiomatic to transform and react to values of a `Result` rather than extracting it. To apply a transformation to the value of a `Result`, we can use the classic `map` function:
+However, it's far more idiomatic to transform and react to values of a `Result` rather than extracting it. To apply a transformation to the value of a `Result`, we can use the classic `map` function:
 
 ```kotlin
 val appleJobSalary: Result<Salary> = appleJob.map { it.salary }
 ```
 
-Instead, we can use the `mapCatching` function if the transformation to apply to the value of the `Result` can throw an exception. Let's reuse our `CurrencyConverter` class. This time, we add a validation on the input amount:
+Instead, we can use the `mapCatching` function if the transformation to apply to the value of the `Result` can throw an exception. Let's reuse our `CurrencyConverter` class. This time, we add validation on the input amount:
 
 ```kotlin
 class CurrencyConverter {
@@ -221,7 +221,7 @@ class CurrencyConverter {
 }
 ```
 
-The converter will throw an exception if the input amount is `null` or negative. Let's think about the converter as an external library that we can't change. We can use the `mapCatching` function to convert the salary of a job from USD to EUR, handling the fact that the conversion can fail throwing an exception:
+The converter will throw an exception if the input amount is `null` or negative. Let's think about the converter as an external library that we can't change. We can use the `mapCatching` function to convert the salary of a job from USD to EUR, handling the fact that the conversion can fail, throwing an exception:
 
 ```kotlin
 fun getSalaryInEur(jobId: JobId): Result<Double> =
@@ -230,7 +230,7 @@ fun getSalaryInEur(jobId: JobId): Result<Double> =
         .mapCatching { currencyConverter.convertUsdToEur(it?.value) }
 ```
 
-If we execute the above function using a invalid `JobId`, we'll get a `Result` containing the exception thrown by the `convertUsdToEur` function:
+If we execute the above function using an invalid `JobId`, we'll get a `Result` containing the exception thrown by the `convertUsdToEur` function:
 
 ```kotlin
 fun main() {
@@ -247,7 +247,7 @@ The output is the following:
 Failure(java.lang.IllegalArgumentException: Amount must be positive)
 ```
 
-If we want to recover from an failure `Result`, we can use the `recover` function. This function takes a lambda that will be executed if the `Result` is a failure. The lambda takes as input the exception contained in the `Result.Failure` instance, and returns a new value of the same type of the original `Result`:
+If we want to recover from a failure `Result`, we can use the `recover` function. This function takes a lambda that will be executed if the `Result` is a failure. The lambda takes as input the exception contained in the `Result. Failure` instance and returns a new value of the same type as the original `Result`:
 
 ```kotlin
 // Kotlin SDK
@@ -262,7 +262,7 @@ public inline fun <R, T : R> Result<T>.recover(transform: (exception: Throwable)
 }
 ```
 
-The original `T` type must be a subtype of the new `R` type since we return the original value if the `Result` is a success.
+The original `T` type must be a subtype of the new `R` type since we return the initial value if the `Result` succeeds.
 
 In our example, we can use the `recover` function to return a default value if no job is found:
 
@@ -278,7 +278,7 @@ val recovered = maybeSalary.recover {
 println(recovered)
 ```
 
-If we execute the above code with the same input as the previous example, we can get a more detailed and clearer output than the previous one:
+If we execute the above code with the same input as the previous example, we can get a more detailed and more precise output than the previous one:
 
 ```text
 The amount must be positive
@@ -287,7 +287,7 @@ Success(0.0)
 
 As we did for the `map` function, we can use the `recoverCatching` variant if the lambda passed to the `recover` function can throw an exception.
 
-To execute some side effect with the value of a `Result`, both if it's successful or a failure, we can use the dedicated methods the SDK gives us, i.e. the functions `onSuccess` and `onFailure`. Both function return the original `Result` instance, so we can chain them:
+To execute some side effect with the value of a `Result`, whether successful or a failure, we can use the reliable methods the SDK gives us, i.e., the functions `onSuccess` and `onFailure`. Both functions return the original `Result` instance, so we can chain them:
 
 ```kotlin
 // Kotlin SDK
@@ -308,7 +308,7 @@ public inline fun <T> Result<T>.onFailure(action: (exception: Throwable) -> Unit
 }
 ```
 
-We can refactor our main example to use the `onSuccess` and `onFailure` functions:
+We can refactor our primary example to use the `onSuccess` and `onFailure` functions:
 
 ```kotlin
 val notFoundJobId = JobId(42)
@@ -323,7 +323,7 @@ maybeSalary.onSuccess {
 }
 ```
 
-Clearly, the output of the above code is the following since the `JobId`42 is not present in our database:
+Clearly, the output of the above code is the following since the `JobId` 42 is not present in our database:
 
 ```text
 The amount must be positive
@@ -348,7 +348,7 @@ public inline fun <R, T> Result<T>.fold(
 }
 ```
 
-As we can see, the `fold` function is not only used to apply side effects. It can be used to transform a `Result` to another type. In fact, many of the transformations we've seen so far are shorthands for the application of `fold` function in particular cases.
+As we can see, the `fold` function is not only used to apply side effects. It can be used to transform a `Result` into another type. In fact, many of the transformations we've seen so far are shorthands for applying the `fold` function in particular cases.
 
 The above example can be rewritten using the `fold` function as follows:
 
