@@ -17,15 +17,7 @@ toc_icon: "fas fa-list"
 
 # ◆그리드(grid) 사용방법
 
--그리드는 배치될 컨테이너(container), 배치될 아이템(item)으로 구성되어 있으며 display 속성을 gird로 지정해서 사용한다.<br/>
-
-
-
-
-
-
-
-## ◆컨테이너 속성
+-CSS에서 layout을 다루기 위해 사용한다.<br/>-그리드는 배치될 컨테이너(container), 배치될 아이템(item)으로 구성되어 있으며 **display 속성을 gird**로 지정해서 사용한다.<br/>
 
 **예제)**
 
@@ -92,7 +84,13 @@ toc_icon: "fas fa-list"
 
 ![CSS gird_1]({{site.url}}/images/2023-05-30-CSS layout grid/CSS gird_1.png)
 
+<br/>
 
+
+
+
+
+# ◆컨테이너 속성
 
 ### 1)gird-template-culumns
 
