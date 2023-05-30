@@ -387,9 +387,9 @@ class LiveJobs : Jobs {
 
 To calculate the gap with the max salary, we need to retrieve a job with a given id and all the jobs available. So, we need to compose two `Result` instances.
 
-The Kotlin SDK doesn't provide any form of `flatMap` like function for the `Result` type. So, how can we compose subsequent computations resulting in a `Result`? Remember that two of the most essential principle of Kotlin are pragmatism and ergonomics. If we think about it, we already have all the tools to build some monadic style list comprehension without using `flatMap`.
+The Kotlin SDK doesn't provide any form of `flatMap` like function for the `Result` type. So, how can we compose subsequent computations resulting in a `Result`? **Remember that two of the most essential principle of Kotlin are pragmatism and ergonomics**. If we think about it, we already have all the tools to build some monadic style list comprehension without using `flatMap`.
 
-It should sound bizarre that Kotlin provides so many `getOrSomething` functions. One of the main properties of monadic list-comprehension is the ability to short-circuit the computation if one of the steps fails. Exceptions are very good at doing short-circuiting, so why not use them? We saw that on a `Result`, we can call the `getOrThrow` function to get the value of a `Result` or throw an exception if the `Result` is a failure. So, we can use the `getOrThrow` function to short-circuit the computation if one of the steps fails. However, we want to avoid handling raw exceptions in our program. So, we can use the `runCatching` function to wrap the computation again in a `Result`.
+One of the main properties of monadic list-comprehension is the ability to short-circuit the computation if one of the steps fails. Exceptions are very good at doing short-circuiting, so why not use them? We saw that on a `Result`, we can call the `getOrThrow` function to get the value of a `Result` or throw an exception if the `Result` is a failure. So, we can use the `getOrThrow` function to short-circuit the computation if one of the steps fails. However, we want to avoid handling exceptions through `try-catch` blocks. So, we can use the `runCatching` function to wrap the computation again in a `Result`.
 
 To make the code more readable, first, we define an extension function that returns the maximum salary of a list of `Job`:
 
@@ -415,9 +415,9 @@ fun getSalaryGapWithMax(jobId: JobId): Result<Double> = runCatching {
 }
 ```
 
-As we can see, we can forget about the `Result` type during the composition process with this approach, focusing on the success values. The rise of exceptions and the use of the `runCatching` function allows us to short-circuit the computation if one of the steps fails.
+As we can see, **we can forget about the `Result` type during the composition process with this approach, focusing on the success values**. The rise of exceptions and the use of the `runCatching` function allows us to short-circuit the computation if one of the steps fails.
 
-What about the Arrow library and the `Result` type? As we saw for the nullable types, Arrow offers some exciting extensions to the type. First, Arrow adds the `flatMap` function to the `Result` type. If we are Haskell lovers, we can't live without it, and we can use the `flatMap` to compose subsequent computations resulting in a `Result`. Let's try to rewrite the previous example using the `flatMap` function:
+What about the Arrow library and the `Result` type? As we saw for the nullable types, Arrow offers some exciting extensions. First, Arrow adds the `flatMap` function to the `Result` type. If we are Haskell lovers, we can't live without it, and we can use the `flatMap` to compose subsequent computations resulting in a `Result`. Let's try to rewrite the previous example using the `flatMap` function:
 
 ```kotlin
 fun getSalaryGapWithMax2(jobId: JobId): Result<Double> =
@@ -431,7 +431,7 @@ fun getSalaryGapWithMax2(jobId: JobId): Result<Double> =
     } 
 ```
 
-As we said in the previous article, the absence of native support for monadic list-comprehension in Kotlin makes the code less readable if we use sequences of `flatMap` and `map` invocations. However, as we saw both for nullable types and for the `Option` type, Arrow gives us a nice DSL to deal with the readability problem. For the `Result`type, the DSL is called `result`:
+As we said in the previous article, the absence of native support for monadic list-comprehension in Kotlin makes the code less readable if we use sequences of `flatMap` and `map` invocations. However, as we saw both for nullable types and for the `Option` type, **Arrow gives us nice DSLs to deal with the readability problem**. For the `Result`type, the DSL is called `result`:
 
 ```kotlin
 // Arrow SDK
@@ -444,9 +444,9 @@ public object result {
 }
 ```
 
-The `suspend` and the `eager` version of the DSL define scope as the receiver, respectively `arrow.core.continuations.ResultEffectScope` and `arrow.core.continuations.ResultEagerEffectScope`. As we did in the previous article, we'll use the _eager_ flavor of the DSL.
+The `suspend` and the `eager` version of the DSL define a scope object as the receiver, respectively `arrow.core.continuations.ResultEffectScope` and `arrow.core.continuations.ResultEagerEffectScope`. As we did in the previous article, we'll use the _eager_ flavor of the DSL.
 
-As for the nullable types and the `Option` type, the `result` DSL gives us the `bind` extension function to unwrap the value of a `Result` and use it in the following computation. If the `Result` fails, the `bind` function will short-circuit the calculation and return the failure. The `bind` function is defined as an extension function inside the `ResultEagerEffectScope`:
+As for the nullable types and the `Option` type, the `result` DSL gives us the `bind` extension function to unwrap the value of a `Result` and use it. If the `Result` fails, the `bind` function will short-circuit the calculation and the whole block inside the `result` DSL returns the failure. The `bind` function is defined as an extension function inside the `ResultEagerEffectScope`:
 
 ```kotlin
 // Arrow SDK
@@ -458,7 +458,7 @@ public value class ResultEagerEffectScope(/* Omissis */) : EagerEffectScope<Thro
 }
 ```
 
-The `shift` function short-circuits the computation and returns the failure, terminating the continuation chain. Remember, Arrow implements all the scopes concerning error handling using a continuation-style approach.
+The `shift` function short-circuits the computation and returns the failure, terminating the continuation chain. Remember, **Arrow implements all the scopes concerning error handling using a continuation-style approach**.
 
 ```kotlin
 fun getSalaryGapWithMax3(jobId: JobId): Result<Double> = result.eager {
