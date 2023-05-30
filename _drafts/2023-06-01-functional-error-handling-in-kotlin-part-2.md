@@ -388,7 +388,7 @@ To calculate the gap with the max salary, we need to retrieve a job with a given
 
 The Kotlin SDK doesn't provide any form of `flatMap` like function for the `Result` type. So, how can we compose subsequent computations resulting in a `Result`? Remember that two of the most essential principle of Kotlin are pragmatism and ergonomics. If we think about it, we already have all the tools to build some monadic style list comprehension without using `flatMap`.
 
-It should sound bizarre that Kotlin provides so many `getOrSomething` types of functions. One of the main properties of monadic list-comprehension is the ability to short-circuit the computation if one of the steps fails. Exceptions are very good at doing short-circuiting, so why not use them? We saw that on a `Result`, we can call the `getOrThrow` function to get the value of a `Result` or throw an exception if the `Result` is a failure. So, we can use the `getOrThrow` function to short-circuit the computation if one of the steps fails. However, we want to avoid handling raw exceptions in our program. So, we can use the `runCatching` function to wrap the computation again in a `Result`.
+It should sound bizarre that Kotlin provides so many `getOrSomething` functions. One of the main properties of monadic list-comprehension is the ability to short-circuit the computation if one of the steps fails. Exceptions are very good at doing short-circuiting, so why not use them? We saw that on a `Result`, we can call the `getOrThrow` function to get the value of a `Result` or throw an exception if the `Result` is a failure. So, we can use the `getOrThrow` function to short-circuit the computation if one of the steps fails. However, we want to avoid handling raw exceptions in our program. So, we can use the `runCatching` function to wrap the computation again in a `Result`.
 
 To make the code more readable, first, we define an extension function that returns the maximum salary of a list of `Job`:
 
@@ -402,7 +402,7 @@ fun List<Job>.maxSalary(): Result<Salary> = runCatching {
 }
 ```
 
-We threw a `NoSuchElementException` if the list is empty, wrapping it all together in a `Result`. Then, we can use the new function to implement the `getSalaryGapWithMax` function as follows:
+We threw a `NoSuchElementException` if the list is empty, wrapping it together in a `Result`. Then, we can use the new function to implement the `getSalaryGapWithMax` function as follows:
 
 ```kotlin
 fun getSalaryGapWithMax(jobId: JobId): Result<Double> = runCatching {
@@ -414,7 +414,7 @@ fun getSalaryGapWithMax(jobId: JobId): Result<Double> = runCatching {
 }
 ```
 
-As we can see, we can forget about the `Result` type during the composition process with this approach, focusing on the success values. The rising of exceptions and the use of the `runCatching` function allow us to short-circuit the computation if one of the steps fails.
+As we can see, we can forget about the `Result` type during the composition process with this approach, focusing on the success values. The rise of exceptions and the use of the `runCatching` function allows us to short-circuit the computation if one of the steps fails.
 
 What about the Arrow library and the `Result` type? As we saw for the nullable types, Arrow offers some exciting extensions to the type. First, Arrow adds the `flatMap` function to the `Result` type. If we are Haskell lovers, we can't live without it, and we can use the `flatMap` to compose subsequent computations resulting in a `Result`. Let's try to rewrite the previous example using the `flatMap` function:
 
@@ -502,7 +502,7 @@ Searching for the job with id JobId(value=42)
 There was an error during execution: java.util.NoSuchElementException: Job not found
 ```
 
-As we can see, the execution was short-circuited when the `ensureNotNull` function returned a `Result` containing the `NoSuchElementException` as a failure. However, be aware that the `result` DSL does not equal the `runCatching` function. If we throw an exception inside the `result` DSL, it will be propagated to the caller and bubble up through the call stack. Let's try to throw an exception inside the `result` DSL:
+As we can see, the execution was short-circuited when the `ensureNotNull` function returned a `Result` containing the `NoSuchElementException` as a failure. However, the `result` DSL does not equal the `runCatching` function. If we throw an exception inside the `result` DSL, it will be propagated to the caller and bubble up through the call stack. Let's try to throw an exception inside the `result` DSL:
 
 ```kotlin
 fun main() {
@@ -722,7 +722,7 @@ public inline fun <C> fold(ifLeft: (left: A) -> C, ifRight: (right: B) -> C): C 
     }
 ```
 
-The `fold` function is a wrapper around the `when` expression. It's crucial in the library, and many of the `getOr*` are implemented using it. For example, let's say we want to get the salary of a job, whether it's a `Left` or a `Right` instance. We can use the `fold` function and return a default value if the job is not found:
+The `fold` function wraps around the `when` expression. It's crucial in the library, and many of the `getOr*` are implemented using it. For example, let's say we want to get the salary of a job, whether it's a `Left` or a `Right` instance. We can use the `fold` function and return a default value if the job is not found:
 
 ```kotlin
 val jobSalary: Salary = jobNotFound.fold({ Salary(0.0) }, { it.salary })
@@ -736,9 +736,9 @@ val jobSalary2: Salary = jobNotFound.map { it.salary }.getOrElse { Salary(0.0) }
 
 ## 5. Composing `Either` Instances
 
-It's time to talk about how to compose different `Either` instances. As you might imagine, since the `Either` type is a monad if we fix the left type, we can use the `map` and `flatMap` functions to compose different instances (remember, monads just have a single type parameters, while the `Either` type has two of them).
+It's time to talk about how to compose different `Either` instances. As you might imagine, since the `Either` type is a monad, if we fix the left type, we can use the `map` and `flatMap` functions to compose different instances (remember, monads have a single type parameters, while the `Either` type has two of them).
 
-We will implement the `getSalaryGapWithMax` function again, this time using the `Either` type to handle errors. First, we need to add the `findAll` function to our `Jobs` module:
+We will again implement the `getSalaryGapWithMax` function, this time using the `Either` type to handle errors. First, we need to add the `findAll` function to our `Jobs` module:
 
 ```kotlin
 interface Jobs {
@@ -755,7 +755,7 @@ class LiveJobs : Jobs {
 }
 ```
 
-Then, we can use `map` and `flatMap` to compose the `findAll` and `findById` functions, and implement the `getSalaryGapWithMax` function. As we did for the `Result` type, we define a utility function getting the maximum salary from a list of jobs, this time using an `Either` instance as a result:
+Then, we can use `map` and `flatMap` to compose the `findAll` and `findById` functions and implement the `getSalaryGapWithMax` function. As we did for the `Result` type, we define a utility function getting the maximum salary from a list of jobs, this time using an `Either` instance as a result:
 
 ```kotlin
 private fun List<Job>.maxSalary(): Either<GenericError, Salary> =
@@ -766,7 +766,7 @@ private fun List<Job>.maxSalary(): Either<GenericError, Salary> =
     }
 ```
 
-Then, we can assemble all the pieces together, in our first version of the `getSalaryGapWithMax` function:
+Then, we can assemble all the pieces together in our first version of the `getSalaryGapWithMax` function:
 
 ```kotlin
 class JobsService(private val jobs: Jobs) {
@@ -782,9 +782,9 @@ class JobsService(private val jobs: Jobs) {
 }
 ```
 
-Apart from the type used to express failures, the `getSalaryGapWithMax` function is very similar to the one we implemented using the `Result` type, or the `Option` type in the part one. Another thing that is similar to the previous implementations is the pain in reading such code. We have a lot of nested calls, no monadic support, and it's not easy to understand what's going on.
+Apart from the type used to express failures, the `getSalaryGapWithMax` function is similar to the one we implemented using the `Result` type or the `Option` type in part one. Another thing similar to the previous implementations is the pain of reading such code. We have a lot of nested calls, no monadic support, and it's not easy to understand what's going on.
 
-As we might guess, Arrow offers us the usual DSL to simplify the composition of `Either` instances, and it's called `either`. The `either.eager` DSL is the non suspending counterpart:
+As we might guess, Arrow offers us a DSL to simplify the composition of `Either` instances, and it's called `Either`. The `either.eager` DSL is the non-suspending counterpart:
 
 ```kotlin
 // Arrow SDK
@@ -808,7 +808,7 @@ fun getSalaryGapWithMax2(jobId: JobId): Either<JobError, Double> = either.eager 
 }
 ```
 
-The `either` DSL gives us access to the `bind` member extension function on the `EagerEffectScope` to extract `Right` values from an`Either` instance or to shot-circuit the entire computation if a`Left` instance is found. The `bind` function is defined as follows:
+The `either` DSL gives us access to the `bind` member extension function on the `EagerEffectScope` to extract `Right` values from an `Either` instance or to short-circuit the entire computation if a `Left` instance is found. The `bind` function is defined as follows:
 
 ```kotlin
 // Arrow SDK
@@ -842,7 +842,7 @@ To demonstrate the `ensureNotNull` function, let's try to implement a variant of
 private fun List<Job>.maxSalary2(): Salary? = this.maxBy { it.salary.value }.salary
 ```
 
-The above version of the function returns a nullable `Salary` instance, instead of an `Either` instance. We can use the `ensureNotNull` function to short-circuit the computation if a `null` value is found in the the `getSalaryGapWithMax` function:
+The above version of the function returns a nullable `Salary` object instead of an `Either`. We can use the `ensureNotNull` function to short-circuit the computation if a `null` value is found in the `getSalaryGapWithMax` function:
 
 ```kotlin
 fun getSalaryGapWithMax3(jobId: JobId): Either<JobError, Double> = either.eager {
@@ -853,9 +853,9 @@ fun getSalaryGapWithMax3(jobId: JobId): Either<JobError, Double> = either.eager 
 }
 ```
 
-If the `jobsList.maxSalary2()` statement returns a `null` value, we short-circuit the computation with a `Left` instance containing a `GenericError` instance.
+If the `jobsList.maxSalary2()` statement returns a `null` value, we short-circuit the computation with a `Left` instance containing a `GenericError`.
 
-The `ensure` extension function is similar to the `ensureNotNull` function, but it works with a predicate instead of a nullable value. The `ensure` function is defined as follows:
+The `ensure` extension function is similar to the `ensureNotNull` function but works with a predicate instead of a nullable value. The `ensure` function is defined as follows:
 
 ```kotlin
 // Arrow SDK 
@@ -863,7 +863,7 @@ public suspend fun ensure(condition: Boolean, shift: () -> R): Unit =
     if (condition) Unit else shift(shift())
 ```
 
-We can use the `ensure` function when implementing smart-constructors. For example, let's implement a pimped version of the `Salary` type containing a smart-constructor, which checks if the given value is a positive integer:
+We can use the `ensure` function when implementing smart constructors. For example, let's implement a pimped version of the `Salary` type containing a smart constructor, which checks if the given value is a positive integer:
 
 ```kotlin
 object NegativeAmount : JobError
@@ -883,7 +883,7 @@ object EitherJobDomain {
 }
 ```
 
-Here, we're using the `ensure` function to short-circuit the computation if the given value is negative. We can easily test the smart-constructor and check if it works as expected:
+Here, we use the `ensure` function to short-circuit the computation if the given value is negative. We can quickly test the smart constructor and check if it works as expected:
 
 ```kotlin
 fun main() {
@@ -898,7 +898,7 @@ The above code produces the following expected output if executed:
 Either.Left(in.rcard.either.NegativeAmount@246b179d)
 ```
 
-What if we have to accumulate many errors, for example during the creation of an object? The `Either` type, in the version 1.1.5 of Arrow is not the right type. In fact, the `Validated` type suits better this use case. However, in the next version of Arrow, the 1.2.0 the `Validated` type will be deprecated. In the next part of this series, we will see how to accumulate errors directly using the new version of the `Either` type.
+What if we have to accumulate many errors, for example, while creating an object? The `Either` type in version 1.1.5 of Arrow is incorrect. In fact, the `Validated` type suits better this use case. However, in the next version of Arrow, 1.2.0, the `Validated` class will be deprecated. In the next part of this series, we will learn how to accumulate errors directly using the new version of the `Either` type.
 
 And that's it, folk!
 
