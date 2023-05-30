@@ -4,12 +4,12 @@ date: 2023-06-01
 header:
     image: "/images/blog cover.jpg"
 tags: [kotlin]
-excerpt: ""
+excerpt: "In this article, we continue our journey through functional error handling by looking at the `Result` and `Either` data types and how to use them."
 toc: true
 toc_label: "In this article"
 ---
 
-In this series [first part](https://blog.rockthejvm.com/functional-error-handling-in-kotlin/), we introduced some of the available strategies to handle errors in a functional fashion using Kotlin and the Arrow library. In this second part, we'll continue our journey by looking at the `Result` and `Either` data types and how to use them to handle errors in a functional way. We'll also introduce the Raise DSL, a pragmatic approach to functional error handling implemented in the Arrow library.
+In this series [first part](https://blog.rockthejvm.com/functional-error-handling-in-kotlin/), we introduced some of the available strategies to handle errors in a functional fashion using Kotlin and the Arrow library. In this second part, we'll continue our journey by looking at the `Result` and `Either` data types and how to use them to handle errors in a functional way.
 
 For the project's setup, please refer to the first part of this series, in which we set up Maven and the needed dependencies.
 
