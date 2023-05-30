@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "languor98"
-  avatar           : "/images/img1.jpg"
+  avatar           : "/assets/images/jekyll_blog.jpg"
   bio              : "공부하고 복습하는 블로그입니다."
   location         : "South Korea"
   email            :
@@ -267,11 +267,13 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
       share: true
       related: true
       show_date: true
+    sidebar:
+      nav: "docs"
 
 date_format: "%Y-%m-%d"

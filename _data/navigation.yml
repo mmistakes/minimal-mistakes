@@ -4,6 +4,8 @@ main:
     url: /categories/
   - title: "Tag"
     url: /tags/
+  - title: "By Year"
+    url: /year-archive/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
@@ -12,3 +14,26 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+docs:
+  - title: "Blog"
+    children:
+      - title: "blog"
+        url: /blogs/
+  
+  - title: "Front-end"
+    children:
+      - title: "HTML"
+        url: /htmls/
+      - title: "Css"
+        url: /csss/
+      - title: "Javascript"
+        url: /javascripts/
+      - title: "React"
+        url: /reacts/
+
+counts:
+  - title: "Blog"
+  use: true
+  - title: "Front-end"
+  use: true
