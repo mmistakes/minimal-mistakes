@@ -16,12 +16,12 @@ main:
   #   url: /sitemap/
 
 docs:
-  - title: Blog
+  - title: "Blog"
     children:
       - title: "blog"
         url: /blogs/
   
-  - title: Front-end
+  - title: "Front-end"
     children:
       - title: "HTML"
         url: /htmls/
@@ -31,3 +31,9 @@ docs:
         url: /javascripts/
       - title: "React"
         url: /reacts/
+
+counts:
+  - title: "Blog"
+  use: true
+  - title: "Front-end"
+  use: true
