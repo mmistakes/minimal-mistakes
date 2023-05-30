@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "CSS - box model"
-categories: HTML
+categories: CSS
 tag: [CSS, CSS box model]
 author_profile: true
 toc: true

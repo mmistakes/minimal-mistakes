@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "CSS - layout grid"
-categories: HTML
+categories: CSS
 tag: [CSS, layout]
 author_profile: true
 toc: true

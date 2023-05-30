@@ -2,7 +2,7 @@
 layout: single
 title:  "CSS - 기본개념"
 categories: CSS
-tag: [CSS, tag, CSS box modle, layout]
+tag: [CSS, CSS box modle, layout]
 author_profile: true
 toc: true
 toc_label: 목차
