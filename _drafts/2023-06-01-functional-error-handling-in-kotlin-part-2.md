@@ -563,7 +563,9 @@ val appleJobId = JobId(1)
 val appleJob: Either<JobError, Job> = Right(JOBS_DATABASE[appleJobId]!!)
 ```
 
-The `Left` instance is created in the same way. Since we can now use any type to represent errors, we can use the type system and create an ADT on error causes. For example, we can create a `JobError` sealed class and extend it with the `JobNotFound` and `GenericError` classes:
+Here, we forced the type of the left part of the `Either` to be `JobError`. Notice that the constructor returns an `Either` with the left part defined as `Nothing`. The compiler allows us to do this because the `Nothing` type is a subtype of any other type, and **the `Either<A, B>` is covariant on the left part since it's defined using the `out` keyword** (we already saw variance in previous articles on Scala, [Variance Positions in Scala, Demystified](https://blog.rockthejvm.com/scala-variance-positions/)).
+
+The `Left` instance is created in the same way. Since we can now use any type to represent errors, we can create an ADT on error causes. For example, we can define a `JobError` sealed class and extend it with the `JobNotFound` and `GenericError` classes:
 
 ```kotlin
 sealed interface JobError
@@ -614,11 +616,12 @@ val jobCompany: String = appleJob.map { it.company.name }.getOrElse { "Unknown c
 The `getOrElse` function takes a lambda with the error as a parameter, so we can use it to react differently to different errors:
 
 ```kotlin
-val jobCompany2: String = appleJob.map { it.company.name }.getOrElse { jobError ->
-    when (jobError) {
-        is JobNotFound -> "Job not found"
-        is GenericError -> "Generic error"
-    }
+val jobCompany2: String = 
+    appleJob.map { it.company.name }.getOrElse { jobError -> 
+        when (jobError) {
+            is JobNotFound -> "Job not found"
+            is GenericError -> "Generic error"
+        }
 }
 ```
 
