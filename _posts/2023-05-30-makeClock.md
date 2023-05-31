@@ -2,7 +2,7 @@
 layout: single
 title: "makeClock"
 categories: Problem_Solving
-tag: [HTML, JavaScript, CSS]
+tag: [HTML, JavaScript]
 toc: true
 author_profile: false
 sidebar:
