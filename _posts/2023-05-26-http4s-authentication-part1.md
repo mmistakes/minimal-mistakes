@@ -9,11 +9,11 @@ toc: true
 toc_label: "In this article"
 ---
 
-## Introduction
+## 1. Introduction
 
 As a backend developer, authentication is a topic you will encounter numerous times in your career. With numerous authentication methods available, it becomes a challenge not only to choose but also to implement in your application. In this article, we will go through 4 authentication methods and how to implement them in Scala using the Http4s library namely, Basic Authentication, Digest Authentication, Session Authentication, and Token Authentication.
 
-### Requirements
+### 1.1 Requirements
 
 To follow along, you will need to add the following to your build.sbt file.
 
@@ -48,7 +48,7 @@ lazy val authentication = project
 
 The code in this article will be written in Scala 3 but can still be implemented for Scala 2 with very minor changes.
 
-# Authentication
+## 2. Authentication
 
 Throughout this article, we will be using the different authentication methods to grant a user access to Http4s `Routes`. Here's a simple implementation of how this will be done.
 
@@ -82,7 +82,7 @@ In this example, the routes are accessed without authentication. We define our r
 
 We use `Ember` server through port `8080` to receive requests.
 
-For an in-depth explanation on how to use `Http4s`, there's a good explanation of most concepts [here]("https://blog.rockthejvm.com/http4s-tutorial/").
+For an in-depth explanation of how to use `Http4s`, there's a good explanation of most concepts [here]("https://blog.rockthejvm.com/http4s-tutorial/").
 
 Let's test our server.
 
@@ -109,7 +109,7 @@ Welcome, john⏎
 When we send a request `http://localhost:8080/welcome/john` to our Rest API, we receive our expected response `Welcome, john`.
 At this point we realize anyone can access this route, to limit access to verified users, the solution is authentication.
 
-## Basic Authentication
+## 3. Basic Authentication
 
 Basic authentication is an authentication scheme where user credentials are sent through `HTTP` headers to the server for authentication. The specifications for Basic Authentication are defined in [RFC 7617](https://datatracker.ietf.org/doc/html/rfc7617). Here's how it works.
 
@@ -119,7 +119,7 @@ Basic authentication is an authentication scheme where user credentials are sent
 4. The `Authorization` header in the request would be defined as `Authorization:Basic Base64(username:password)`
 5. When the request is received by the server, the credentials are decoded and used to either grant access to a user with a `200 Ok Success` status code or deny access usually with a `401 Unauthorized` status.
 
-### Http4s Implementation
+### 3.1 Http4s Implementation
 
 Http4s provides an easy way to implement basic authentication using `Middleware` which is simply a function that takes a service and returns another service.
 To begin with we will need a data structure to hold our user information.
@@ -136,7 +136,7 @@ import org.http4s.Credentials
 import org.http4s.headers.Authorization
 
 val authUserEither: Kleisli[IO, Request[IO], Either[String, User]] = Kleisli{req =>
-    val authHeader: Option[Header] = req.headers.get[Authorization]
+    val authHeader: Option[Authorization] = req.headers.get[Authorization]
     authHeader match
         case Some(value) => value match
             case Authorization(BasicCredentials(creds)) =>  IO(Right(User(1,creds._1)))
@@ -145,9 +145,12 @@ val authUserEither: Kleisli[IO, Request[IO], Either[String, User]] = Kleisli{req
 }
 ```
 
-In this example, we define our Kleisli function `authUserEither` which will take a `Request` and returns an `Either[String,User]`. The function signature `Kleisli[IO, Request[IO], Either[String, User]]` simply translates to `IO[Request[IO]] => IO[Either[String, User]]`
+There still a few more steps to make our code work, so keep reading.
+
+We define our Kleisli function `authUserEither` which will take a `Request` and returns an `Either[String,User]`. The function signature `Kleisli[IO, Request[IO], Either[String, User]]` simply translates to `Request[IO] => IO[Either[String, User]]`.
 
 The function checks for the availability of an `Authorization` header which is stored in `authHeader` giving us an `Option[Header]`. Pattern matching on `authHeader` provides us with two cases for the presence or absence of the `Authorization` header.
+
 In case the header is present, we further check for `BasicCredentials` and map those to the `User` case class. The credentials `creds` is a tuple of the form (username,password). At this point in the implementation, one may check against the database to verify the user's credentials, but for simplicity, we return `IO(Right(User(1,creds._1)))` where `creds._1` is the username.
 In case we don't receive something other than an `Authorization` header we return a `Left("No basic credentials")` and in case there's no `Authorization` header, we return a `Left("Unauthorized)`.
 
@@ -234,6 +237,8 @@ $ curl -v -H "Authorization:Basic dXNlcm5hbWU6cGFzc3dvcmQK" http://localhost:808
 Welcome, username⏎
 ```
 
+We can also run `curl -vv http://localhost:8080/welcome -u username:password` to give use the same result.
+
 Let's test the failure case.
 
 ```bash
@@ -311,7 +316,7 @@ object BasicExample extends IOApp:
 
 ```
 
-## Digest Authentication
+## 4. Digest Authentication
 
 Similar to Basic Authentication, Digest Authentication also involves passing credentials through the `Authorization` header to the server, however, the Digest Authentication scheme is a two-step process, here's how it works.
 
@@ -326,7 +331,7 @@ Similar to Basic Authentication, Digest Authentication also involves passing cre
 
 I realize there are a lot of new words in the explanation, however, this is beyond the scope of this article, I encourage you to read the [RFC 2617]('https://datatracker.ietf.org/doc/html/rfc2617') specification for Digest Authentication for a more in-depth explanation.
 
-### Digest Authentication in http4s
+### 4.1 Digest Authentication in http4s
 
 Digest Authentication in Http4s is easily implemented using the `DigestAuth` function, but first, we need to define our `User` case class.
 
@@ -334,27 +339,38 @@ Digest Authentication in Http4s is easily implemented using the `DigestAuth` fun
 case class User(id: Long, name: String)
 ```
 
-The `DigestAuth` function takes two arguments, the `realm` and a function of type `String => IO[Option[(User, String)]]` where the input `String` represents the username and the `String` in `IO[Option[(User,String)]]` represents our password. Let's define this function.
+The `DigestAuth` function takes two arguments, the `realm` and a function of type `String => IO[Option[(User, String)]]`. This translates to `"username" => IO[Option(User,"password")]`
+
+Let's define this function.
 
 ```scala
 import cats.effect.*
+import org.http4s.server.middleware.authentication.DigestAuth.Md5HashedAuthStore
+
+val ha1: IO[String] = Md5HashedAuthStore.precomputeHash[IO]("username","http://localhost:8080/welcome","password")
 
 val funcPass: String => IO[Option[(User, String)]] = (usr_name: String) =>
-  usr_name match
-      case "username" => IO(Some(User(1,"username"),"password"))
-      case _ => IO(None)
+    usr_name match
+        case "username" => ha1.flatMap(hash => IO(Some(User(1,"username"), hash)))
+        case _ => IO(None)
 ```
 
-The function `funcPass` receives the username and which it matches to find the correct `User`. The resulting value `IO[Option[User,String]]` is also checked to contain to correct password. The implementation above is straightforward but can be modified for your specific needs.
+The function `funcPass()` receives the username, which it matches to find the correct `User`. The resulting value `IO[Option[User,String]]` is also checked to contain to correct password. It's important to note that the `funcPass()` function can receive either a plaintext or hashed password.
+
+For this example, we decided to use a hashed password. The Http4s digest middleware will check for an `MD5` hashed password in the form `MD5(username:realm:password)` and matches it against the credentials passed in the request. We use the `Md5HashedAuthStore.precomputeHash[IO]()` function to create our hashed value, it takes the `username`, `realm`, and `password` as arguments and returns an `IO[String]`.
 
 ```scala
 import org.http4s.server.*
 import org.http4s.server.middleware.authentication.DigestAuth
 
-val middleware:AuthMiddleware[IO, User] = DigestAuth[IO,User]("http://localhost:8080/welcome", funcPass)
+   val middleware: IO[AuthMiddleware[IO, User]] = DigestAuth.applyF[IO,User]("http://localhost:8080/welcome", Md5HashedAuthStore(funcPass))
 ```
 
-Here we provide the arguments to `DigestAuth`, which returns a value of type `AuthMiddleware[IO, User]`.
+To create our `middleware` we use the `.applyF` method on the `DigestAuth` object which takes a `realm` of type `String` and a `store` of type `AuthStore[F, A]`. For our example, we passed the realm as `http://localhost:8080/welcome` and `store` as `Md5HashedAuthStore(funcPass)`.
+
+In case you want to supply a plaintext password, use `PlainTextAuthStore(funcPass)` as your argument, this is imported as follows, `import org.http4s.server.middleware.authentication.DigestAuth.PlainTextAuthStore`.
+
+Your choice of `store` determines how the `username` and `password` will be validated.
 
 Just like Basic Authentication, we'll also need `AuthedRoutes`.
 
@@ -369,11 +385,14 @@ val authedRoutes: AuthedRoutes[User,IO] =
     }
 ```
 
-To create our service, we call our routes through the middleware function defined previously.
+To create our service, we call our routes through our `AuthMiddleware[IO, User]()` (middleware) function defined previously.
 
 ```scala
-val digestService: HttpRoutes[IO] = middleware(authedRoutes)
+val digestService: IO[HttpRoutes[IO]] =
+    middleware.map(wrapper => wrapper(authedRoutes))
 ```
+
+Because `AuthMiddleware[IO, User]` is wrapped in an `IO` we need to call `map` on `middleware` to use it. This gives us a service (`digestService`) of type `HttpRoutes[IO]` also wrapped in an `IO`.
 
 Finally, we pass our service to the Ember server and run it.
 
@@ -381,21 +400,27 @@ Finally, we pass our service to the Ember server and run it.
 import org.http4s.ember.server.*
 import com.comcast.ip4s.*
 
-val server = EmberServerBuilder
-  .default[IO]
-  .withHost(ipv4"0.0.0.0")
-  .withPort(port"8080")
-  .withHttpApp(digestService.orNotFound)
-  .build
+def server(service: IO[HttpRoutes[IO]]): IO[Resource[cats.effect.IO, Server]] =
+    service.map{svc =>
+        EmberServerBuilder
+            .default[IO]
+            .withHost(ipv4"0.0.0.0")
+            .withPort(port"8080")
+            .withHttpApp(svc.orNotFound)
+            .build
+    }
 
-override def run(args: List[String]): IO[ExitCode] = server.use(_ => IO.never).as(ExitCode.Success)
+ override def run(args: List[String]): IO[ExitCode] = server(digestService).flatMap(s => s.use(_ => IO.never)).as(ExitCode.Success)
 ```
 
-Let's test our server.
+Here we define a function `server()` which pulls our service out of the `IO` and passes it to the `EmberServiceBuilder`'s `.withHttpApp()` method. This returns our server `Resource` of type `IO[Resource[IO, Server]]` also wrapped in an `IO`.
+
+To run our server we need to call `flatMap` on `server(digestService)` then call `.use(_ => IO.never)` on `Resource[cats.effect.IO, Server]`, and finally end with `ExitCode.Success`.
+
+We can now test our server.
 
 ```bash
- curl -vv http://localhost:8080/welcome --digest -u username:password
-
+curl -vv http://localhost:8080/welcome --digest -u username:password
 *   Trying ::1:8080...
 * Connected to localhost (::1) port 8080 (#0)
 * Server auth using Digest with user 'username'
@@ -406,26 +431,26 @@ Let's test our server.
 >
 * Mark bundle as not supporting multiuse
 < HTTP/1.1 401 Unauthorized
-< Date: Sat, 13 May 2023 13:55:27 GMT
+< Date: Wed, 31 May 2023 10:36:45 GMT
 < Connection: keep-alive
-< WWW-Authenticate: Digest realm="http://localhost:8080/welcome",qop="auth",nonce="b5dca735c6c67c0fe45259e9804e8240487b6a01"
+< WWW-Authenticate: Digest realm="http://localhost:8080/welcome",qop="auth",nonce="296df178c6088b7dbd962177f58270f74475e42b"
 < Content-Length: 0
 <
 * Connection #0 to host localhost left intact
 * Issue another request to this URL: 'http://localhost:8080/welcome'
-* Found bundle for host localhost: 0x55f1a55e9650 [serially]
+* Found bundle for host localhost: 0x557f7bfc1650 [serially]
 * Re-using existing connection! (#0) with host localhost
 * Connected to localhost (::1) port 8080 (#0)
 * Server auth using Digest with user 'username'
 > GET /welcome HTTP/1.1
 > Host: localhost:8080
-> Authorization: Digest username="username", realm="http://localhost:8080/welcome", nonce="b5dca735c6c67c0fe45259e9804e8240487b6a01", uri="/welcome", cnonce="YWQ1YzEzOTZiOTk3NGNhNGIyMjE1ODUzZjkxNDVjMDE=", nc=00000001, qop=auth, response="66f87d38f4a2105e4ead0333c2a650b0"
+> Authorization: Digest username="username", realm="http://localhost:8080/welcome", nonce="296df178c6088b7dbd962177f58270f74475e42b", uri="/welcome", cnonce="MzFmMGVkNzAzZTU2YmNmOGEwODcwZjdhYTM0NjBlYjI=", nc=00000001, qop=auth, response="4b73fd6215bd05b30fc8bcd845ef449c"
 > User-Agent: curl/7.71.1
 > Accept: */*
 >
 * Mark bundle as not supporting multiuse
 < HTTP/1.1 200 OK
-< Date: Sat, 13 May 2023 13:55:27 GMT
+< Date: Wed, 31 May 2023 10:36:45 GMT
 < Connection: keep-alive
 < Content-Type: text/plain; charset=UTF-8
 < Content-Length: 17
@@ -445,20 +470,22 @@ import cats.effect.*
 import org.http4s.*
 import org.http4s.dsl.io.*
 import org.http4s.server.*
-import org.http4s.implicits.*
 import org.http4s.ember.server.*
 import com.comcast.ip4s.*
 import org.http4s.server.middleware.authentication.DigestAuth
+import org.http4s.server.middleware.authentication.DigestAuth.Md5HashedAuthStore
 
 object DigestExample extends IOApp:
     case class User(id: Long, name: String)
 
-    val funcPass: String => IO[Option[(User, String)]] = (hashedVal: String) =>
-    hashedVal match
-        case "username" => IO(Some(User(1,"username"),"password"))
-        case _ => IO(None)
+    val ha1: IO[String] = Md5HashedAuthStore.precomputeHash[IO]("username","http://localhost:8080/welcome","password")
+    val funcPass: String => IO[Option[(User, String)]] = (usr_name: String) =>
+        usr_name match
+            case "username" => ha1.flatMap(hash => IO(Some(User(1,"username"), hash)))
+            case _ => IO(None)
 
-    val middleware:AuthMiddleware[IO, User] = DigestAuth[IO,User]("http://localhost:8080/welcome", funcPass)
+
+    val middleware: IO[AuthMiddleware[IO, User]] = DigestAuth.applyF[IO,User]("http://localhost:8080/welcome", Md5HashedAuthStore(funcPass))
 
     val authedRoutes: AuthedRoutes[User,IO] =
         AuthedRoutes.of{
@@ -466,20 +493,23 @@ object DigestExample extends IOApp:
                 Ok(s"Welcome, ${user.name}")
         }
 
-    val digestService: HttpRoutes[IO] =
-        middleware(authedRoutes)
+    val digestService: IO[HttpRoutes[IO]] =
+        middleware.map(wrapper => wrapper(authedRoutes))
 
-    val server = EmberServerBuilder
-    .default[IO]
-    .withHost(ipv4"0.0.0.0")
-    .withPort(port"8080")
-    .withHttpApp(digestService.orNotFound)
-    .build
+    def server(service: IO[HttpRoutes[IO]]): IO[Resource[IO, Server]] =
+        service.map{svc =>
+            EmberServerBuilder
+                .default[IO]
+                .withHost(ipv4"0.0.0.0")
+                .withPort(port"8080")
+                .withHttpApp(svc.orNotFound)
+                .build
+        }
 
-    override def run(args: List[String]): IO[ExitCode] = server.use(_ => IO.never).as(ExitCode.Success)
+    override def run(args: List[String]): IO[ExitCode] = server(digestService).flatMap(s => s.use(_ => IO.never)).as(ExitCode.Success)
 ```
 
-## Session Authentication
+## 5. Session Authentication
 
 Session authentication is an authentication technique where the server keeps track of session information after the user has logged in. It works in the following way.
 
@@ -488,7 +518,7 @@ Session authentication is an authentication technique where the server keeps tra
 3. This cookie can also be valid for a specific amount of time, after which it expires and is automatically removed on the client side.
 4. If the client logs out, the server will remove the cookie from the client side as well.
 
-### Session Authentication in Http4s
+### 5.1 Session Authentication in Http4s
 
 For this implementation, we are going to reuse our code from the Digest Authentication section.
 
@@ -541,40 +571,47 @@ val cookieAccessRoutes = HttpRoutes.of[IO]{
   case GET -> Root / "statement" =>
     Ok("Financial statement processing...")
   case GET -> Root / "logout" =>
-    Ok("Logging out...").map(_.removeCookie("sessioncookie").headers)
+    Ok("Logging out...").map(_.removeCookie("sessioncookie"))
 }
 ```
 
 The `cookieAccessRoutes` service contains two routes, `/statement` which returns financial statement information, and `/logout` which removes the `sessioncookie` token when the user is logging out. It uses the `removeCookie` function on the `Response` object.
 
-We will now need to check for the presence of our `sessioncookie` token when requests come in, here's how this can be done.
+We can now define our session authentication service.
 
 ```scala
 import cats.data.*
 import org.http4s.headers.Cookie
 
+def checkSessionCookie(cookie: Cookie):Option[RequestCookie] =
+    cookie.values.toList.find(_.name == "sessioncookie")
+
+def modifyPath(user: String):Path =
+    Uri.Path.fromString(s"/statement/$user")
+
 def cookieCheckerService(service: HttpRoutes[IO]): HttpRoutes[IO] = Kleisli{req =>
-    val authHeader:Option[Cookie] = req.headers.get[Cookie]
-    OptionT.liftF{authHeader match
-        case Some(cookie) =>
-            cookie.values.toList.find{x =>
-                x.name == "sessioncookie"
-            } match
-                case Some(token) =>
-                    getUser(token.content) match
-                        case Success(user) =>
-                            service.orNotFound.run((req.withPathInfo(Uri.Path.fromString(s"/statement/$user"))))
-                        case Failure(_) => Ok("Invalid token")
-                case None => Ok("No token")
-        case None => Ok("No cookies")
+    val authHeader: Option[Cookie] = req.headers.get[Cookie]
+    OptionT.liftF{authHeader.fold(Ok("No cookies")){cookie =>
+        checkSessionCookie(cookie).fold(Ok("No token")){token =>
+            getUser(token.content).fold(
+                _ => Ok("Invalid token"),
+                user => service.orNotFound.run((req.withPathInfo(modifyPath(user))))
+                )
         }
+    }
+    }
 }
 ```
 
-In http4s one can define custom middleware through the use of a `Kleisli`, here we define a function that takes a service of type `HttpRoutes[IO]` and returns another service. We first intercept the request and check if it contains any cookies, this is done using the `.get[Cookie]` function on the request headers, which returns an `Option[Cookie]`.
-If the cookies are present, we then check for our `sessioncookie` within the list of cookies otherwise, we respond with `Ok("No cookies")`.
-If the `sessioncookie` is present, we call the `getUser(token.content)` function with the token value which returns a `Try[String]`, we match against this to either get the user name or respond with `Ok("Invalid token")`.
-If the user name is present, we pass it to our `service` by modifying the path info using the `withPathInfo()` function on our request. This takes a `URI` which we provide as `Uri.Path.fromString(s"/statement/$user")` with the username passed in.
+In http4s one can define custom middleware through the use of a `Kleisli`, here we define a function `cookieCheckerService()` that takes a service of type `HttpRoutes[IO]` and returns another service. This Kleisli contains three helper functions, `checkSessionCookie()`, `getUser()`, and `modifyPath()` which we will break down in the following section.
+
+The `cookieCheckerService()` function will intercept the request and check if it contains any cookies, this is done using the `.get[Cookie]` function on the request headers, which returns an `Option[Cookie]`. When we call `fold` on `authHeader`, we handle the absence of cookies by responding with `Ok("No cookies)` otherwise if cookies are present we check for our `sessioncookie`.
+
+The `checkSessionCookie()` function is then called to check for the presence of the `sessioncookie` within the list of cookies sent through the request, this is done by running `cookie.values.toList.find(_.name == "sessioncookie")` and returns an `Option[RequestCookie]`.
+
+When we call `fold` on the `checkSessionCookie(cookie)` we handle the absence of the `sessioncookie` by returning `Ok("No token")`, otherwise we retrieve the user name by calling `getUser(token.content)`. `token.content` is the token string passed within the `sessioncookie` cookie. `getUser()` returns a Try[String].
+
+If the `getUser()` function fails, we return `Ok("Invalid token")`, otherwise we return a `service` of type `HttpRoutes[IO]` with a modified path. The `.withPathInfo()` method on our request object takes a new `Path` object to which it will forward the request. The `modifyPath()` function takes our user as an argument and returns a new path, `s"/statement/$user"` with the user name inserted. This is done by calling `Uri.Path.fromString(s"/statement/$user")`.
 
 Let's define a router to handle our two services.
 
@@ -753,14 +790,14 @@ object SessionAuth extends IOApp:
     override def run(args: List[String]): IO[ExitCode] = server.use(_ => IO.never).as(ExitCode.Success)
 ```
 
-## JSON Web Token Authentication
+## 6. JSON Web Token Authentication
 
 For JWT authentication to work, a payload containing information for authentication is transmitted between the client and service as a JSON object. JSON Web Tokens are digitally signed using a secret or a private/public key pair so that the tokens' integrity can be verified by both the server and the client.
 
-### JWT authentication in http4s
+### 6.1 JWT authentication in http4s
 
 We'll be using the `http4s-jwt-auth` library to implement JWT's in Http4s.
-First let's create our token that we will send to the client once he/she logs in.
+First, let's create our token that we will send to the client once he/she logs in.
 
 ```scala
 import pdi.jwt.*
@@ -825,8 +862,6 @@ val authenticate: JwtToken => JwtClaim => IO[Option[AuthUser]] =
         (claim: JwtClaim)
         => decode[TokenPayLoad](claim.content) match
                 case Right(payload) =>
-                    println(payload)
-                    println(payload.user)
                     IO(database.get(payload.user))
                 case Left(_) => IO(None)
 ```
@@ -848,9 +883,11 @@ AuthedRoutes.of{
 }
 ```
 
-The middleware is defined by calling `JwtAuthMiddleware[IO, AuthUser](jwtAuth, authenticate)` which is basically a Kleisli that receives the JSON Web Token and authenticates it to retrieve our `AuthUser`. It takes the `authenticate` function and a `JwtAuth` object which holds the `key` and `algo` values.
+The middleware is defined by calling `JwtAuthMiddleware[IO, AuthUser](jwtAuth, authenticate)`. It takes the `authenticate` function and a `JwtAuth` object which holds the `key` and `algo` values.
 
-The routes are defined as `AuthedRoutes` for this implementation.
+The signature for `middleware` is `Kleisli[[_] =>> cats.data.OptionT[cats.effect.IO, _], ContextRequest[cats.effect.IO, AuthUser], Response[cats.effect.IO]] => Kleisli[[_] =>> cats.data.OptionT[cats.effect.IO, _], Request[cats.effect.IO], Response[cats.effect.IO]]`. This seems daunting but it's important to remember, middleware in Http4s is a service that returns another service.
+
+In our case, this `Kleisli` receives the request, authenticates our `token` then forwards the request to `authRoutes` which is the second service that matches against the routes and returns a `Response`.
 
 ```scala
 import cats.implicits.*
@@ -860,8 +897,8 @@ val securedRoutes: HttpRoutes[IO] = middleware(authedRoutes)
 val service = loginRoutes <+> securedRoutes
 ```
 
-`securedRoutes` is now our authentication service since our request first goes through the middleware and then responds with the authedRoutes service.
-The final service is composed using the `<+>` operator.
+`securedRoutes` is now our authentication service created by calling `middleware(authedRoutes)` and returns an `HttpRoutes[IO]`.
+We then compose `service` using the `<+>` operator. `service` now gives us access to both `loginRoutes` and `securedRoutes`.
 
 Finally, we can run our server.
 
@@ -902,7 +939,7 @@ curl -vv http://localhost:8080/login
 Logged In⏎
 ```
 
-First, we log into the server and receive the JSON Web Token, then we can be connected to the rest of the site as an authroized user.
+First, we log into the server and receive the JSON Web Token, then we can be connected to the rest of the site as an authorized user.
 
 ```bash
 curl -vv -H "Authorization:Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE4NDI1NDU2NjQsImlhdCI6MTY4NDc2MDkwNCwidXNlciI6IkpvaG4iLCAibGV2ZWwiOiJiYXNpYyJ9.VjkUrL6Ud0SINNWhUV8M_fFi9YgU8zxevcasiosRIKg" http://localhost:8080/welcome
@@ -926,6 +963,11 @@ Welcome, JohnDoe⏎
 ```
 
 We receive the expected welcome message `Welcome, JohnDoe⏎ `, note that the JWT token is passed as a `Bearer` token using the `Authorization` header.
+
+In case we receive a wrong token, the server will respond with a `403 Forbidden` status code and an `Invalid access token` message.
+
+In case we receive a request without the `Authorization:Bearer` header or anything other than this specific header, the server will respond with a `403 Forbidden` status code and a `Bearer token not found` message.
+
 Here's the full code.
 
 ```scala
@@ -970,8 +1012,6 @@ object TokenAuth extends IOApp:
             (claim: JwtClaim)
             => decode[TokenPayLoad](claim.content) match
                     case Right(payload) =>
-                        println(payload)
-                        println(payload.user)
                         IO(database.get(payload.user))
                     case Left(_) => IO(None)
 
@@ -1003,3 +1043,5 @@ object TokenAuth extends IOApp:
 
     override def run(args: List[String]): IO[ExitCode] = server.use(_ => IO.never).as(ExitCode.Success)
 ```
+
+This article taught us four different ways of implementing authentication in Scala using Http4s, these include Basic, Digest, Session, and Token authentication methods. We discovered common techniques used and the important role middleware plays when carrying our authentication in Http4s. This article mainly focused on implementation, I would encourage you to read more about the pros and cons of each authentication method to get more context for your application needs.
