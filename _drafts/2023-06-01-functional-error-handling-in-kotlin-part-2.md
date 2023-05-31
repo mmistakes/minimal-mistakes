@@ -731,7 +731,7 @@ val jobSalary2: Salary = jobNotFound.map { it.salary }.getOrElse { Salary(0.0) }
 
 ## 5. Composing `Either` Instances
 
-It's time to talk about how to compose different `Either` instances. As you might imagine, since the `Either` type is a monad, if we fix the left type, we can use the `map` and `flatMap` functions to compose different instances (remember, monads have a single type parameters, while the `Either` type has two of them).
+It's time to talk about how to compose different `Either` instances. As you might imagine, since **the `Either` type is a monad on the right type**, we can use the `map` and `flatMap` functions to compose different instances (remember, monads have a single type parameters, while the `Either` type has two of them).
 
 We will again implement the `getSalaryGapWithMax` function, using the `Either` type to handle errors. First, we need to add the `findAll` function to our `Jobs` module:
 
@@ -777,9 +777,9 @@ class JobsService(private val jobs: Jobs) {
 }
 ```
 
-Apart from the type used to express failures, the `getSalaryGapWithMax` function is similar to the one we implemented using the `Result` type or the `Option` type in part one. Another thing similar to the previous implementations is the pain of reading such code. We have a lot of nested calls, no monadic support, and it's not easy to understand what's going on.
+Apart from the type used to express failures, the `getSalaryGapWithMax` function is similar to the one we implemented using the `Result` type or the `Option` type in part one. Another thing similar to the previous implementations is the pain of reading such code. We have a lot of nested calls, no monadic list-comprehension support, and it's not easy to understand what's going on.
 
-As we might guess, Arrow offers us a DSL to simplify the composition of `Either` instances, and it's called `Either`. The `either.eager` DSL is the non-suspending counterpart:
+As we might guess, Arrow offers a DSL to simplify the composition of `Either` instances, and it's called `either`. The `either.eager` DSL is the non-suspending counterpart:
 
 ```kotlin
 // Arrow SDK
@@ -796,9 +796,15 @@ Both the DSL are builders for two different scopes they defined as receivers, re
 
 ```kotlin
 fun getSalaryGapWithMax2(jobId: JobId): Either<JobError, Double> = either.eager {
+    println("Searching for the job with id $jobId")
     val job = jobs.findById(jobId).bind()
+    println("Job found: $job")
+    println("Getting all the available jobs")
     val jobsList = jobs.findAll().bind()
+    println("Jobs found: $jobsList")
+    println("Searching for max salary")
     val maxSalary = jobsList.maxSalary().bind()
+    println("Max salary found: $maxSalary")
     maxSalary.value - job.salary.value
 }
 ```
@@ -818,7 +824,11 @@ public interface EagerEffectScope<in R> {
 }
 ```
 
-Nothing new in here.
+Nothing new in here. If we run the `getSalaryGapWithMax2` function with the `JobId(42)`, the execution will be short-circuited after the call to the `jobs.findById(jobId)` statement, and we get the following output:
+
+```text
+Searching for the job with id JobId(value=42)
+```
 
 Similarly, we have access to the `ensureNotNull` extension function, which short-circuits the computation if a `null` value is found, and it's defined as follows:
 
