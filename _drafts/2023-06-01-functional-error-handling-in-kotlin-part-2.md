@@ -682,6 +682,8 @@ The `nonFatalOrThrow` function checks whether the exception should be handled. T
 * `ControlThrowable`
 * `CancellationException`
 
+In detail, it's essential not catching `CancellationException` because it's used by Kotlin to [cancel coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/#7-cancellation).
+
 Then, we can rewrite the `LiveJobs` class using the `catch` function:
 
 ```kotlin
@@ -690,13 +692,13 @@ class LiveJobs : Jobs {
     override fun findById(id: JobId): Either<JobError, Job> = catch {
         JOBS_DATABASE[id]
     }.mapLeft { GenericError(it.message ?: "Unknown error") }
-        .flatMap { maybeJob -> maybeJob?.right() ?: JobNotFound(id).left() }
+     .flatMap { maybeJob -> maybeJob?.right() ?: JobNotFound(id).left() }
 }
 ```
 
-Wait. We introduced a bunch of new functions here. Let's see them in detail. First, the `Either` type is right-based, so the usual transformations like `map` and `flatMap` apply to the `Right` instances of the `Either`. In this case, we applied the `flatMap` function to check if the retrieved job was null, eventually creating a `Left` value using the pattern we saw a moment ago.
+Wait. We introduced a bunch of new functions here. Let's see them in detail. First, **the `Either` type is right-based**, so the usual transformations like `map` and `flatMap` apply to the `Right` instances of the `Either`. In this case, we applied the `flatMap` function to check if the retrieved job was null, eventually creating a `Left` value using the pattern we saw a moment ago.
 
-Moreover, we introduced the `mapLeft` function. This function is similar to the `map` function but applies to the `Left` instances of the `Either` type. In this case, we're mapping the `Throwable` instance to a `GenericError` instance. The `mapLeft` function is defined as follows:
+Moreover, we introduced the `mapLeft` function. This function is similar to the `map` function but applies to the `Left` part of the `Either` type. In this case, we're mapping `Throwable` exceptions to a `GenericError` object. The `mapLeft` function is defined as follows:
 
 ```kotlin
 // Arrow SDK
@@ -705,17 +707,6 @@ public inline fun <C> mapLeft(f: (A) -> C): Either<C, B> =
 ```
 
 As we can see, the definition of the `mapLeft` function allows us to introduce another essential function, the `fold` function. We already saw this function in the `Result` type, and we can use it to transform both the `Left` and `Right` instances of the `Either` class into a target type. The `fold` function is defined as follows:
-
-```kotlin
-// Arrow SDK
-public inline fun <C> fold(ifLeft: (left: A) -> C, ifRight: (right: B) -> C): C =
-    when (this) {
-        is Right -> ifRight(value)
-        is Left -> ifLeft(value)
-    }
-```
-
-For example, if we want to get the salary of a job, whether it's a `Left` or a `Right` instance, we can use the `fold` function, which is defined as follows:
 
 ```kotlin
 // Arrow SDK
