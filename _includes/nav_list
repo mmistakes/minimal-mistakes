@@ -32,3 +32,9 @@
     {% endfor %}
   </ul>
 </nav>
+<script>
+  const hello = document.querySelector('#hello')
+  hello.addEventListener('click', (e) => {
+    console.log('hello', e)
+  })
+</script>

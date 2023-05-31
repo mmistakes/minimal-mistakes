@@ -6,6 +6,10 @@ $(function() {
   // FitVids init
   $("#main").fitVids();
 
+  $('#hello').click((e) => {
+    console.log('hello hello', e)
+  })
+
   // Sticky sidebar
   var stickySideBar = function() {
     var show =
