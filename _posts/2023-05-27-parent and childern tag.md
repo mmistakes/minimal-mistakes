@@ -1,8 +1,8 @@
 ---
 layout: single
 title:  "HTML - 부모자식 선택자"
-Categories: HTML
-Tag: [HTML, 부모와 자식 tag, CSS]
+categories: HTML
+tag: [HTML, 부모와 자식 tag, CSS]
 author_profile: true
 toc: true
 toc_label: 목차

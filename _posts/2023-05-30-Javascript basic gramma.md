@@ -1,8 +1,8 @@
 ---
 layout: single
 title:  "Javascript - 기본개념"
-Categories: Javascirpt
-Tag: [Javascirpt]
+categories: Javascirpt
+tag: [Javascirpt]
 author_profile: true
 toc: true
 toc_label: 목차

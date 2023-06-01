@@ -1,8 +1,8 @@
 ---
 layout: single
 title:  "CSS - 기본개념"
-Categories: CSS
-Tag: [CSS, CSS box model, CSS layout]
+categories: CSS
+tag: [CSS, CSS box model, CSS layout]
 author_profile: true
 toc: true
 toc_label: 목차
