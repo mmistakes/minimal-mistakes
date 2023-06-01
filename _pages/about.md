@@ -2,7 +2,7 @@
 layout: single
 title:  "About"
 author_profile: true
-date:   2023-05-01 20:49:38 +0000
+date:   2023-06-01 20:49:38 +0000
 categories: jekyll update
 ---
 
@@ -89,8 +89,10 @@ Connect with me on:
 ### Web Development
 
 <p align="center">
+  <img alt="react" src="https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=React&logoColor=%2361DAFB" />
   <img alt="html" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
   <img alt="css" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3" />
+  <img alt="mui" src="https://img.shields.io/badge/MUI-%230081CB.svg?style=flat&logo=mui&logoColor=white" />
   <img alt="javascript" src="https://img.shields.io/badge/JavaScript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E" />
   <img alt="bootstrap" src="https://img.shields.io/badge/-Bootstrap-563D7C?style=flat&logo=bootstrap" />
   <img alt="flask" src="https://img.shields.io/badge/-Flask-000000?style=flat&logo=Flask&logoColor=ffffff)" />
@@ -133,7 +135,7 @@ Connect with me on:
     1250 ┤ ╰╯
 
 User: christopsy666, Rating type: Bullet on lichess.org
-Last update: 13.04.2023 05:09:28
+Last update: 19.05.2023 16:09:05
 </code>
 </pre>
 Lichess stats generated via [lichess-ascii-rating-tracker](https://github.com/cschindlbeck/lichess-ascii-rating-tracker.git).
