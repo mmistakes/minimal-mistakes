@@ -2,11 +2,11 @@
 main:
   - title: "Category"
     url: /Categories/
-  - title: "Tag"
-    url: /Tags/
+  - title: "tag"
+    url: /tags/
   - title: "Search"
     url: /search/ 
-  - title: "project"
+  - title: "Project"
     url: /projects/  
 
 docs:
