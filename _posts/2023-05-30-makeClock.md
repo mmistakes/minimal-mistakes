@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "makeClock"
+title: "Date Object"
 categories: Problem_Solving
 tag: [HTML, JavaScript]
 toc: true
