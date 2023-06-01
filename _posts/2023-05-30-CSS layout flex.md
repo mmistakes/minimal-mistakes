@@ -1,8 +1,8 @@
 ---
 layout: single
 title:  "CSS - layout flex"
-categories: CSS
-tag: [CSS, CSS layout]
+Categories: CSS
+Tag: [CSS, CSS layout]
 author_profile: true
 toc: true
 toc_label: 목차

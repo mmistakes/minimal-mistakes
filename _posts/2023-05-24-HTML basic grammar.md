@@ -1,8 +1,8 @@
 ---
 layout: single
 title:  "HTML - 기본개념"
-categories: HTML
-tag: [HTML, Hyperlink, 주석, 부모와 자식 tag]
+Categories: HTML
+Tag: [HTML, Hyperlink, 주석, 부모와 자식 tag]
 author_profile: true
 toc: true
 toc_label: 목차

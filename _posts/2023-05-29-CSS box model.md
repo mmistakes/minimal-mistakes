@@ -1,8 +1,8 @@
 ---
 layout: single
 title:  "CSS - box model"
-categories: CSS
-tag: [CSS, CSS box model]
+Categories: CSS
+Tag: [CSS, CSS box model]
 author_profile: true
 toc: true
 toc_label: 목차
