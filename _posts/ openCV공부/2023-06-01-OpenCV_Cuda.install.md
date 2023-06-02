@@ -141,3 +141,5 @@ https://ko.wikipedia.org/wiki/CUDA
 https://www.youtube.com/watch?v=tjXkW0-4gME
 
 https://www.youtube.com/watch?v=5NwU1MmmqWo
+
+https://prlabhotelshoe.tistory.com/24
