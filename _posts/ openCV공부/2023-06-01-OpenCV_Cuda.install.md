@@ -29,7 +29,7 @@ GPU와 알맞은 연산 능력 버젼 확인
 
 [OpenCV 소스](https://opencv.org/releases/)
 
-[OpenCV 확장 모듈)(https://github.com/opencv/opencv_contrib/tags)
+[OpenCV 확장 모듈](https://github.com/opencv/opencv_contrib/tags)
 
 OpenCV 4.7.0 소스와 확장 모듈까지 소스 다운로드한다
 압축 파일이기에 원하는 공간에 압축 풀어준다.
@@ -39,12 +39,15 @@ OpenCV 4.7.0 소스와 확장 모듈까지 소스 다운로드한다
 
 4. CMAKE 파일 다운로드
 
+
 [CMAKE 다운로드 링크](https://cmake.org/download/)
+
 
 5. Visual Studio 다운로드
 
-이
-6. CUDA 설치 
+
+==================
+# CUDA 와 cuDNN 설치
 
 [CUDA 설치 링크 ](https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_local)
 
@@ -70,11 +73,9 @@ pip uninstall opencv-python
 ```
 
  [삭제 확인](/assets/img//%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/openCV%20%EC%82%AD%EC%A0%9C.png)
-=======
-# CUDA 와 cuDNN 설치
 
 
-====
+===================
 
 
 3. Cmake 이용하여 OpenCV 만들기
@@ -82,7 +83,7 @@ pip uninstall opencv-python
 [환경설정](/assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/configuration.png)
 
 
-필수적인 설택 사항으로
+필수적인 선택 사항으로
 
 1. OPENCV_DNN_CUDA 
 
