@@ -68,16 +68,47 @@ toc_icon: "fas fa-list"
 
 ## 2)justifiy-content
 
+-가로 축을 기준으로 좌우에 대한 정렬을 지정하는 속성이다.<br/>
+
 -메인축 방향의 아이템을 정렬을 지정하는 속성이다.<br/>
 
 
 
-### 2_1.justify-content: center; 
+### 2_1. justify-content: flex-start;
 
--아이템을 센터로 정렬해준다.<br/>
+-아이템을 왼쪽으로 정렬해준다.<br/>
 
 ```css
-/*CSS*/
+.container {
+      display: flex;
+      justify-content: flex-start;
+    }
+```
+
+![CSS flex start]({{site.url}}/images/2023-05-30-CSS layout flex/CSS flex start.png)
+
+
+
+### 2_2. justify-content: flex-end;
+
+-아이템을 오른쪽으로 정렬해준다.<br/>
+
+```css
+.container {
+      display: flex;
+      justify-content: flex-end;
+    }
+```
+
+![CSS flex end]({{site.url}}/images/2023-05-30-CSS layout flex/CSS flex end.png)
+
+
+
+### 2_3. justify-content: center; 
+
+-아이템을 중앙으로 정렬해준다.<br/>
+
+```css
 .container {
       display: flex;
       justify-content: center;
@@ -88,12 +119,11 @@ toc_icon: "fas fa-list"
 
 
 
-### 2_2.justify-content: space-between;
+### 2_4. justify-content: space-between;
 
 -아이템과 아이템 사이에 동일 간격을 생성해준다.<br/>
 
 ```css
-/*CSS*/
 .container {
       display: flex;
       justify-content: space-between;
@@ -104,12 +134,11 @@ toc_icon: "fas fa-list"
 
 
 
-### 2_3.justify-content: space-around;
+### 2_5. justify-content: space-around;
 
 -아이템과 아이템 사이 + 컨테이너와 아이템 사이 동일 간격 생성을 생성해준다.<br/>
 
 ```css
-/*CSS*/
 .container {
       display: flex;
       justify-content: space-around;
@@ -117,6 +146,75 @@ toc_icon: "fas fa-list"
 ```
 
 ![CSS flex space-around]({{site.url}}/images/2023-05-30-CSS layout flex/CSS flex space-around.png)
+
+<br/>
+
+
+
+## 3)align-items
+
+-세로축을 기준으로 위아래에 대한 정렬을 지정하는 속성이다.<br/>
+
+### 3_1. align-items: flex-start;
+
+-아이템을 최상단으로 정렬한다.<br/>
+
+```css
+.container {
+      display: flex;
+      align-items: flex-start;
+    }
+```
+
+![CSS align start]({{site.url}}/images/2023-05-30-CSS layout flex/CSS align start.png)
+
+### 3_2. align-items: flex-end;
+
+-아이템을 최하단으로 정렬한다.<br/>-height: 100vh로 설정하여 container이 페이지 전체를 감싸고 있는 형태로 만들어 아이템이 세로축으로 이동이  가능하도록 만든다.<br/>
+
+```css
+.container {
+      display: flex;
+      align-items: flex-end;
+      height: 100vh;
+    }
+```
+
+![CSS align end]({{site.url}}/images/2023-05-30-CSS layout flex/CSS align end.png)
+
+### 3_3. align-items: center;
+
+-아이템을 세로 축의 중앙으로 정렬한다.<br/>
+
+```
+.container {
+      display: flex;
+      align-items: center;
+      height: 100vh;
+    }
+```
+
+![CSS align center]({{site.url}}/images/2023-05-30-CSS layout flex/CSS align center.png)
+
+### 3_4. align-items: stretch;
+
+-아이템을 컨테이너에 맞게 늘린다.<br/>-아이템 height속성의 값을 auto로 지정해주어야 된다.<br/>
+
+```css
+.container {
+      display: flex;
+      align-items: stretch;
+      height: 100vh;
+    }
+.item {
+  width: 100px;
+  height: auto;
+  background-color: mediumpurple;
+  border: 10px solid black;
+}
+```
+
+![CSS align stretch]({{site.url}}/images/2023-05-30-CSS layout flex/CSS align stretch.png)
 
 <br/>
 
