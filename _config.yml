@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "MJT"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Busting the myths of cloud engineering."
+  location         : "England, UK"
+  email            : "matt@archops.blog"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
