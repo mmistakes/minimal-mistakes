@@ -15,17 +15,67 @@ main:
 
 
 docs:
+<<<<<<< HEAD
   - title: "대목차1"
+=======
+  - title: "FRONTEND"
+    children:
+      - title: "REACT"
+        url: /categories/react
+      - title: "VUE"
+        url: /categories/vue
+      - title: "Typescript"
+        url: /categories/typescript
+      - title: "Javascript"
+        url: /categories/javascript
+      - title: "HTML"
+        url: /categories/html
+      - title: "CSS"
+        url: /categories/css
+      - title: "Bundling"
+        url: /categories/bundling
+      - title: "Third-party libraries"
+        url: /categories/third-party
+  - title: "BACKEND"
+    children:
+      - title: "Node.js"
+        url: /categories/nodejs
+      - title: "NEXT"
+        url: /categories/nextjs
+  - title: "TDD"
+>>>>>>> 8afc738e29667b67a83e4658767115d2719a619e
     children:
       - title: "Category"
         url: /categories/
       - title: "Tag"
+<<<<<<< HEAD
         url: /tags/
   - title: "대목차2"
+=======
+        url: /categories/
+  - title: "THEORY"
+    children:
+      - title: "ICT - NETWORK" # 네트워크
+        url: /categories/network
+      - title: "Operation SYSTEM" # 운영체제
+        url: /categories/os
+      - title: "DATABASE" # 데이터베이스
+        url: /categories/db
+      - title: "Computer Architecture" # 컴퓨터 구조
+        url: /categories/ca
+      - title: "Data Structures" # 자료 구조
+        url: /categories/data-structures
+      - title: "Algorithms" # 알고리즘
+        url: /categories/algorithms
+      - title: "CS(Computer Science)" # 알고리즘
+        url: /categories/cs
+  - title: "TIL(TODAY I LEARNED)"
+>>>>>>> 8afc738e29667b67a83e4658767115d2719a619e
     children:
       - title: "Category"
         url: /categories/
       - title: "Tag"
+<<<<<<< HEAD
         url: /tags/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
@@ -35,3 +85,14 @@ docs:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+=======
+        url: /categories/
+  - title: "ETC"
+    children:
+      - title: "development convenience"
+        url: /categories/
+
+counts:
+  - title: "카테고리"
+    use: true
+>>>>>>> 8afc738e29667b67a83e4658767115d2719a619e

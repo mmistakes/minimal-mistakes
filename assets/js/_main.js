@@ -1,10 +1,13 @@
 /* ==========================================================================
    jQuery plugin settings and other scripts
    ========================================================================== */
-
 $(function() {
   // FitVids init
   $("#main").fitVids();
+
+  $('#hello').click((e) => {
+    console.log('hello hello', e)
+  })
 
   // Sticky sidebar
   var stickySideBar = function() {

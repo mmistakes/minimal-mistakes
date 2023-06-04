@@ -14,8 +14,12 @@ $indent-var: 1.3em !default;
 
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
+<<<<<<< HEAD
 $sans-serif: -apple-system, BlinkMacSystemFont, "Gowun Dodum", "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+=======
+$sans-serif: -apple-system, BlinkMacSystemFont, "Gowun Dodum", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+>>>>>>> 8afc738e29667b67a83e4658767115d2719a619e
 $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 
 /* sans serif typefaces */
@@ -44,9 +48,9 @@ $type-size-7: 0.6875em !default; // ~11px
 $type-size-8: 0.625em !default; // ~10px
 
 /* headline scale */
-$h-size-1: 1.563em !default; // ~25.008px
-$h-size-2: 1.25em !default; // ~20px
-$h-size-3: 1.125em !default; // ~18px
+$h-size-1: 1.4em !default; // ~25.008px
+$h-size-2: 1.2em !default; // ~20px
+$h-size-3: 1.0em !default; // ~18px
 $h-size-4: 1.0625em !default; // ~17px
 $h-size-5: 1.03125em !default; // ~16.5px
 $h-size-6: 1em !default; // ~16px
@@ -156,7 +160,7 @@ $max-width: $x-large !default;
    ========================================================================== */
 
 $right-sidebar-width-narrow: 200px !default;
-$right-sidebar-width: 300px !default;
+$right-sidebar-width: 220px !default;
 $right-sidebar-width-wide: 400px !default;
 
 /*
