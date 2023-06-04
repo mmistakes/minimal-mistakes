@@ -174,7 +174,7 @@ background-color: lightyellow;
 
 # ◆CSS box model
 
--모든 HTML 요소는 Box 형태의 영역을 가지고 있다.<br/>-박스모델은 패딩(padding), 테두리(border), 마진(margin), 내용(content)로 구성된다.<br/>-참고 :<a href ="https://pueser.github.io/html/CSS-box-model/" target="_blank" title="box model">CSS box model 참고</a><br/>
+-모든 HTML 요소는 Box 형태의 영역을 가지고 있다.<br/>-박스모델은 패딩(padding), 테두리(border), 마진(margin), 내용(content)로 구성된다.<br/>-참고 :<a href ="https://pueser.github.io/css/CSS-box-model/" target="_blank" title="box model">CSS box model 참고</a><br/>
 
 ![CSS box model img]({{site.url}}/images/2023-05-24-second/CSS box model img.jpg)
 
@@ -189,6 +189,44 @@ background-color: lightyellow;
 
 
 
+# ◆블록 레벨 및 인라인 레벨
+
+
+
+## 1)블록 레벨(block-level)
+
+-태그를 사용해 요소를 삽입했을 때 혼자 한줄을 차지하는 요소이며 양옆으로 붙을 공간이 없어서 줄넘기 효과가 있다.<br/> -margin, width, height속성이 모두 적용이 된다.<br/>
+
+```
+태그 : <p>, <h1>~<h6>, <ul>, <ol>, <div>
+```
+
+
+
+
+
+## 2)인라인 레벨(inline-level)
+
+-줄을 차지하지 않은 요소로써 한줄에 여러개의 컨텐츠가 올 수 있다.<br/>-margin, width, height속성이 적용이 안된다.<br/>
+
+```
+태그 : <a>, <img>, <br>, <span>, <input>, <button> 
+```
+
+
+
+
+
+## 3)inline-block
+
+-속성은 인라인과 같이 한줄에 여러개의 컨텐츠가 올수 있지만 margin, width, height속성이 적용된다.
+
+<br/>
+
+
+
+
+
 # ◆플렉스(flex)&그리드(grid) 문법
 
--플렉스(flex) : 가로세로 단일 방향레이아웃 배치할 때 사용. 참고 : <a href="https://pueser.github.io/html/CSS-layout-flex/" target='_blank' title="layout flex">플렉스 참고</a><br/>-그리드(grid) : 행과 열로 구성된 레이아웃 배치할 때 사용. 참고 : <a href="https://pueser.github.io/html/CSS-layout-grid/" target="_blank" title="layout grid">그리드 참고</a> <br/>
+-플렉스(flex) : 가로세로 단일 방향레이아웃 배치할 때 사용. 참고 : <a href="https://pueser.github.io/css/CSS-layout-flex/" target='_blank' title="layout flex">플렉스 참고</a><br/>-그리드(grid) : 행과 열로 구성된 레이아웃 배치할 때 사용. 참고 : <a href="https://pueser.github.io/css/CSS-layout-grid/" target="_blank" title="layout grid">그리드 참고</a> <br/>
