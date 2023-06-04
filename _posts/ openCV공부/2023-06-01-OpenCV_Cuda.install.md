@@ -15,7 +15,9 @@ comments: true
 # 사전 준비
 
 1. GPU 검사
+
 장치 관리자 에서 확인
+
 ![GPU 스펙 보기](/assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/GPU%20%EC%82%AC%EC%96%91.png)
 
 GPU와 알맞은 연산 능력 버젼 확인
