@@ -90,6 +90,28 @@ toc_icon: "fas fa-list"
 
 ## 1) 고전방식
 
+
+
+### 1_1. 인라인 방식
+
+-HTML에서 inline방식으로 이벤트를 등록할 수 있다.<br/>
+
+**형식**
+
+```
+<div 이벤트명 = "실행할 이벤트속성"></div>
+```
+
+**예제**
+
+```html
+<div onclick="alert('hello');">click</div>
+```
+
+
+
+### 1_2. javascript 에 등록
+
 **형식**
 
 ```
@@ -128,6 +150,10 @@ inputclick.onclick = handlerClick
 ```
 
 <img src="{{site.url}}/images/2023-06-03-javascript - Event/on event.png" alt="on event" style="zoom:200%;" />
+
+<br/>
+
+
 
 
 
@@ -204,6 +230,10 @@ btn1.removeEventListener("click", handlerclick)
 ```
 
 <img src="{{site.url}}/images/2023-06-03-javascript - Event/addEventListener 2.png" alt="addEventListener 2" style="zoom:200%;" />
+
+<br/>
+
+
 
 
 
