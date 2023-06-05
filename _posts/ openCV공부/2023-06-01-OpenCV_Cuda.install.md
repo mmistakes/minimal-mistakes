@@ -23,7 +23,11 @@ comments: true
 
 GPU와 알맞은 연산 능력 버젼 확인
 
+
+<br>
 ![위키피디아 CUDA](https://ko.wikipedia.org/wiki/CUDA)
+
+
 
 ![GPU 버젼 8.6](/assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/GPU_%EB%B2%84%EC%A0%BC.png)
 
@@ -54,7 +58,7 @@ OpenCV 4.7.0 소스와 확장 모듈까지 소스 다운로드한다
 
 [CUDA 설치 링크 ](https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_local)
 
-[CUDA 설치 예시](/assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/CUDA%20%EC%84%A4%EC%B9%98.png)
+![CUDA 설치 예시](/assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/CUDA%20%EC%84%A4%EC%B9%98.png)
 
 해당 설정에 맞게 설치 진행한다
 
@@ -63,7 +67,7 @@ OpenCV 4.7.0 소스와 확장 모듈까지 소스 다운로드한다
 cuDNN 인경우 Nvidia 회원 가입이 필요하다
 
 
-[cuDNN 설치](/assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/cuDNN%20%EC%84%A4%EC%B9%98.png)
+![cuDNN 설치](/assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/cuDNN%20%EC%84%A4%EC%B9%98.png)
 
 CUDA 설치후 설치 폴더 경로에 cuDNN 파일 을 덮어 넣습니다.
 
@@ -75,7 +79,7 @@ CUDA 설치후 설치 폴더 경로에 cuDNN 파일 을 덮어 넣습니다.
 pip uninstall opencv-python
 ```
 
- [삭제 확인](/assets/img//%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/openCV%20%EC%82%AD%EC%A0%9C.png)
+![삭제 확인](/assets/img//%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/openCV%20%EC%82%AD%EC%A0%9C.png)
 
 
 ===================
@@ -83,7 +87,7 @@ pip uninstall opencv-python
 
 3. Cmake 이용하여 OpenCV 만들기
 
-[환경설정](/assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/configuration.png)
+![환경설정](/assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/configuration.png)
 
 
 필수적인 선택 사항으로
@@ -97,11 +101,12 @@ pip uninstall opencv-python
 4. OPENCV_EXTRA_MODULES_PATH (확장 모듈 경로 선택)
 ex) D:\CUDA\opencv_contrib-4.7.0\opencv_contrib-4.7.0\modules
 
-5. OPENCV_PYTHON#_VERSION
-#
+5. OPENCV_PYTHON_VERSION
+
 
 5. INSTALL_PYTHON_EXAMPLES (선택)
 
+6. WITH_OPENGL
  이후 Configure 이후 다시 체크해줘야하는것이 
 
 1. WITH_CUDNN
