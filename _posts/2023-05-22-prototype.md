@@ -101,7 +101,7 @@ console.log(circle2.getArea()); // 12.566370614359172
 
 Circle 생성자 함수가 생성하는 모든 객체(인스턴스)는 radius 프로퍼티와 getArea 메서드를 갖는다. radius 프로퍼티 값은 일반적으로 인스턴스마다 다르다. 하지만 getArea 메서드는 모든 인스턴스가 동일한 내용의 메서드를 사용하므로 단 하나만 생성하여 인스턴스가 공유해서 사용하는 것이 바람직하다. 그런데 Circle 생성자 함수는 인스턴스를 생성할 때마다 getArea 메서드를 중복 생성하고 모든 인스턴스가 중복 소유한다.
 
-<img src="/assets/images/prototype1.jpg">
+<img src="/assets/images/prototype/prototype1.jpg">
 
 이처럼 동일한 생성자 함수에 의해 생성된 모든 인스턴스가 동일한 메서드를 중복 소유하는 것은 메모리를 불필요하게 낭비한다. 또한 인스턴스를 생성할 때마다 메서드를 생성하므로 퍼포먼스에도 악영향을 준다. 만약 10개의 인스턴스를 생성하면 내용이 동일한 메서드도 10개 생성된다.
 
@@ -130,7 +130,7 @@ console.log(circle1.getArea()); // 3.141592653589793
 console.log(circle2.getArea()); // 12.566370614359172
 ```
 
-<img src="/assets/images/prototype2.jpg">
+<img src="/assets/images/prototype/prototype2.jpg">
 
 Circle 생성자 함수가 생성한 모든 인스턴스는 자신의 프로토타입, 즉 상위(부모) 객체 역할을 하는 Circle.prototype의 모든 프로퍼티와 메서드를 상속받는다. 
 
@@ -146,4 +146,4 @@ getArea 메서드는 단 하나만 생성되어 프로토타입인 Circle.protot
 
 모든 객체는 하나의 프로토타입을 갖는다. 그리고 모든 프로토타입은 생성자 함수와 연결되어 있다. 즉, 객체와 프로토타입과 생성자 함수는 다음 그림과 같이 서로 연결되어 있다.
 
-<img src="/assets/images/prototype3.jpg">
+<img src="/assets/images/prototype/prototype3.jpg">

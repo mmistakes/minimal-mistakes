@@ -21,13 +21,13 @@ sidebar:
 
 한 번 콘솔에서 실행해보겠습니다.
 
-<img src="/assets/images/console1.PNG">
+<img src="/assets/images/makeClock/console1.PNG">
 
 Date 객체는 위 사진에 나오는 메서드 이외에도 날짜와 시간을 다루는 다양한 메서드를 제공합니다.
 
 우선 제가 원하는 시간, 분, 초를 얻을 수 있게되었습니다.
 
-<img src="/assets/images/console2.PNG">
+<img src="/assets/images/makeClock/console2.PNG">
 
 그렇지만 여기서 문제가 있습니다. 1초마다 현재 시간을 업데이트하고, 업데이트된 시간을 보여줘야 하는데 위 코드로는 업데이트는 힘들어 보입니다. 어떻게 해야 할까요? 바로 `setInterval()`함수가 있습니다.
 
@@ -47,7 +47,7 @@ setInterval(callback, delay, arg1, arg2, ...)
 
 `setInterval()`을 통해서 한 번 콘솔에 현재 시간을 출력해보겠습니다.
 
-<img src="/assets/images/console3.gif">
+<img src="/assets/images/makeClock/console3.gif">
 
 위의 코드는 1초마다 현재 시간을 업데이트합니다. 이를 사용하여 웹 페이지에 실시간으로 시간을 표시할 수 있습니다.
 
@@ -89,7 +89,7 @@ setInterval(getClock, 1000);
 
   예를들어 현재시간이 오전 1시 10분 1초일 경우 => 1:10:1
 
-  <img src="/assets/images/console4.gif">
+  <img src="/assets/images/makeClock/console4.gif">
 
 ## 해결방법
 
@@ -146,7 +146,7 @@ setInterval(getClock, 1000);
 
 `padStart()` 메서드를 사용하여 시간, 분, 초가 한 자리일 경우 앞에 0을 추가하여 두 자리 수로 표현하도록 수정되었습니다. 이렇게 수정하면 예를 들어 현재 시간이 "오전 1시 10분 1초"인 경우에도 "01:10:01" 형식으로 정확히 표현됩니다.
 
-<img src="/assets/images/console5.gif">
+<img src="/assets/images/makeClock/console5.gif">
 
 ## 정리
 

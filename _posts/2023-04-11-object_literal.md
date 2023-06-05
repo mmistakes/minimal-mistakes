@@ -19,11 +19,11 @@ sidebar:
 
 객체는 0개 이상의 프로퍼티로 구성된 집합이며, 프로퍼티는 키<sup>key</sup>와 값<sup>value</sup>으로 구성된다.
 
-<img src="/assets/images/object10-1.jpg">
+<img src="/assets/images/object/object10-1.jpg">
 
 자바스크립트에서 사용할 수 있는 모든 값은 프로퍼티 값이 될 수 있다. 자바스크립트의 함수는 일급 객체이므로 값으로 취급할 수 있다. 따라서 함수도 프로퍼티 값으로 사용할 수 있다. **프로퍼티 값이 함수일 경우, 일반 함수와 구분하기 위해 <mark>메서드<sup>method</sup></mark>라 부른다.**
 
-<img src="/assets/images/object10-2.jpg">
+<img src="/assets/images/object/object10-2.jpg">
 
 - **프로퍼티**: 객체의 상태를 나타내는 값(data)
 - **메서드**: 프로퍼티(상태 데이터)를 참조하고 조작할 수 있는 동작(behavior)

@@ -266,7 +266,7 @@ new foo();
 
 결론적으로 함수 객체는 callable이면서 constructor이거나 callable이면서 non-constructor다. 즉, 모든 함수 객체는 호출할 수 있지만 모든 함수 객체를 생성자 함수로서 호출할 수 있는 것은 아니다.
 
-<img src="/assets/images/constructor1.jpg">
+<img src="/assets/images/constructor/constructor1.jpg">
 
 ### constructor와 non-constructor의 구분
 

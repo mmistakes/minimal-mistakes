@@ -74,7 +74,7 @@ console.dir(square);
 
 ### 함수 객체의 프로퍼티
 
-<img src="/assets/images/first_class1.PNG">
+<img src="/assets/images/firstClass/first_class1.PNG">
 
 square 함수의 모든 프로퍼티의 프로퍼티 어트리뷰트를 `Object.getOwnPropertyDescriptors` 메서드로 확인해 보면 다음과 같다.
 
@@ -128,7 +128,7 @@ console.log(multiply(1, 2, 3)) // 2
 
 위 예제를 브라우저 콘솔에서 실행해서 보자.
 
-<img src="/assets/images/first_class2.PNG">
+<img src="/assets/images/firstClass/first_class2.PNG">
 
 arguments 객체는 인수를 프로퍼티 값으로 소유하며 프로퍼티 키는 인수의 순서를 나타낸다. arguments 객체의 callee 프로퍼티는 호출되어 arguments 객체를 생성한 함수, 즉 함수 자신을 가리키고 arguments 객체의 length 프로퍼티는 인수의 개수를 가리킨다.
 
