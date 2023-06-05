@@ -41,7 +41,7 @@ console.log(o); // {a: 1}
 
 원시 값은 변경 불가능한 값, 즉 읽기 전용 값이다. 원시 값은 어떤 일이 있어도 불변한다. **이러한 원시 값의 특성은 데이터의 신뢰성을 보장한다.**
 
-<img src="/assets/images/primitive11-1.jpg">
+<img src="/assets/images/primitive/primitive11-1.jpg">
 
 원시 값은 변경 불가능한 값이기 때문에 값을 직접 변경할 수 없다. 따라서 변수 값을 변경하기 위해 원시 값을 재할당하면 새로운 메모리 공간을 확보하고 재할당한 값을 저장한 후, 변수가 참조하던 메모리 공간의 주소를 변경한다. 값의 이러한 특성을 **불변성<sup>immutability</sup>**이라 한다.
 
@@ -73,7 +73,7 @@ console.log(score === copy); // true
 
 이때 score 변수와 copy 변수는 숫자 값 80을 갖는다는 점에서는 동일하다. 하지만!!! **score 변수와 copy 변수의 값 80은 다른 메모리 공간에 저장된 별개의 값이다.**
 
-<img src="/assets/images/primitive11-2.jpg">
+<img src="/assets/images/primitive/primitive11-2.jpg">
 
 ```javascript
 var score = 80;
@@ -114,7 +114,7 @@ var person = {
 
 원시 값을 할당한 변수가 기억하는 메모리 주소를 통해 메모리 공간에 접근하면 원시 값에 접근할 수 있다. 하지만 객체를 할당한 변수가 기억하는 메모리 주소를 통해 메모리 공간에 접근하면 **참조 값<sup>reference value</sup>**에 접근할 수 있다. 참조 값은 생성된 객체가 저장된 메모리 공간의 주소, 그 자체다.
 
-<img src="/assets/images/primitive11-3.jpg">
+<img src="/assets/images/primitive/primitive11-3.jpg">
 
 ```javascript
 // 할당이 이뤄지는 시점에 객체 리터럴이 해석되고, 그 결과 객체가 생성된다.
@@ -153,7 +153,7 @@ var copy = person;
 
 객체를 가리키는 변수(원본, person)를 다른 변수(사본, copy)에 할당하면 원본의 **참조 값이 복사되어 전달**된다. 이를 **참조에 의한 전달**이라 한다.
 
-<img src="/assets/images/primitive11-4.jpg">
+<img src="/assets/images/primitive/primitive11-4.jpg">
 
 위 그림처럼 원본 person을 사본 copy에 할당하면 원본 person의 참조 값을 복사해서 copy에 저장한다. 이때 원본과 사본은 저장된 메모리 주소는 다르지만 동일한 참조 값을 갖는다. 다시 말해, 원본 person과 사본 copy 모두 동일한 객체를 가리킨다. 이것은 **두 개의 식별자가 하나의 객체를 공유**한다는 것을 의미한다. 따라서 원본 또는 사본 중 어느 한쪽에서 객체를 변경(변수에 새로운 객체를 재할당하는 것이 아니라 객체의 프로퍼티 값을 변경하거나 추가, 삭제)하면 **서로 영향을 주고 받는다.**
 

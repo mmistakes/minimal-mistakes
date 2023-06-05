@@ -34,7 +34,7 @@ console.log(x); // ReferenceError: x is not defined
 
 위 예제의 foo 함수를 호출하면 함수 몸체의 다른 문들이 순차적으로 실행되기 이전에 x 변수의 선언문이 자바스크립트 엔진에 의해 가장 먼저 실행되어 x 변수가 선언되고 undefined로 초기화된다. 그 후, 함수 몸체를 구성하는 문들이 순차적으로 실행되기 시작하고 변수 할당문이 실행되면 x 변수에 값이 할당된다. 그리고 함수가 종료하면 x 변수도 소멸되어 생명 주기가 종료된다. **지역 변수의 생명 주기는 함수의 생명 주기와 일치한다.**
 
-<img src="/assets/images/global_variable1.jpg">
+<img src="/assets/images/globalVariable/global_variable1.jpg">
 
 함수 몸체 내부에서 선언된 지역 변수의 생명 주기는 함수의 생명 주기와 대부분 일치하지만 지역 변수가 함수보다 오래 생존하는 경우도 있다.
 
@@ -65,7 +65,7 @@ var 키워드로 선언한 전역 변수는 전역 객체의 프로퍼티가 된
 
 브라우저 환경에서 전역 객체는 window이므로 브라우저 환경에서 var 키워드로 선언한 전역 변수는 전역 객체 window의 프로퍼티다. 전역 객체 window는 웹페이지를 닫기 전까지 유효하다. 따라서 브라우저 환경에서 var 키워드로 선언한 전역 변수는 웹페이지를 닫을 때까지 유효하다. 즉, **var 키워드로 선언한 전역 변수의 생명 주기는 전역 객체의 생명 주기와 일치한다.**
 
-<img src="/assets/images/global_variable2.jpg">
+<img src="/assets/images/globalVariable/global_variable2.jpg">
 
 ## 전역 변수의 문제점
 

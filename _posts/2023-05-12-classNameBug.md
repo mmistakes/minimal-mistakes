@@ -50,7 +50,7 @@ h1.addEventListener("click", handleTitleClick);
 
 위 코드는 Click me! 라는 텍스트를 눌렀을 때 TextColor가 바뀌게 해주는 코드이다. 
 
-<img src="/assets/images/noclass.gif">
+<img src="/assets/images/className/noclass.gif">
 
 JavaScript 코드에 있는 **handleTitleClick** 함수는 다음과 같이 작동한다.
 
@@ -92,7 +92,7 @@ h1 {
 }
 ```
 
-<img src="/assets/images/bug.gif">
+<img src="/assets/images/className/bug.gif">
 
 처음에는 분명 class가 my-font로 시작되지만 click 하는 순간 최초의 class name은 없어진다. 난 꼭 폰트를 적용하고 싶은데 말이다.
 
@@ -117,7 +117,7 @@ function handleTitleClick() {
 }
 ```
 
-<img src="/assets/images/solve.gif">
+<img src="/assets/images/className/solve.gif">
 
 자 이제 my-font 클래스가 그대로 유지되고 clicked만 추가/제거가 된다!!
 
