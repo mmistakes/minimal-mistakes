@@ -130,21 +130,24 @@ Cmake 에서 Generate 클릭후
 # 5. 검증하기
 
 ```python 
-import numpy as np
+
 import cv2 as cv
 
-npTmp = np.random.random((1024, 1024)).astype(np.float32)
 
-npMat1 = np.stack([npTmp,npTmp],axis=2)
-npMat2 = npMat1
+vod = cv.VideoCapture(0)
+ret, frame = vod.read()
 
-cuMat1 = cv.cuda_GpuMat()
-cuMat2 = cv.cuda_GpuMat()
-cuMat1.upload(npMat1)
-cuMat2.upload(npMat2)
+gpu_frame = cv.cuda_GpuMat()
 
-print(%timeit cv.cuda.gemm(cuMat1, cuMat2,1,None,0,None,1))
-print(%timeit cv.gemm(npMat1,npMat2,1,None,0,None,1))
+# as long as the last frame was successfully read
+while ret:
+
+  # send current frame to GPU
+  gpu_frame.upload(frame)
+
+  # grab next frame with CPU
+  ret, frame = vod.read()
+  cv.imshow("test",frame)
 
 ```
 
