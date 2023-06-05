@@ -7,10 +7,11 @@ tags: [OpenCV]
 toc : true
 comments: true
 ---
+====================
 1. [사전 준비](#사전 준비) 
 2. [CUDA 와 cuDNN 설치](#cuda-와-cudnn-설치)
-3. Cmake 이용하여 OpenCV 만들기
-4. Visual studio 이용하여 OpenCV build 하기
+3. Cmake 이용하여 OpenCV 만들기(#CUDA 와 cuDNN 설치)
+4. Visual studio 이용하여 OpenCV build 하기(#Visual studio 이용하여 OpenCV build 하기)
 =======
 # 사전 준비
 
@@ -96,6 +97,9 @@ pip uninstall opencv-python
 4. OPENCV_EXTRA_MODULES_PATH (확장 모듈 경로 선택)
 ex) D:\CUDA\opencv_contrib-4.7.0\opencv_contrib-4.7.0\modules
 
+5. OPENCV_PYTHON#_VERSION
+#
+
 5. INSTALL_PYTHON_EXAMPLES (선택)
 
  이후 Configure 이후 다시 체크해줘야하는것이 
@@ -111,6 +115,9 @@ RTX 3060Ti = 8.6
 
 Cmake 에서 Generate 클릭후
 
+
+# 4. Visual studio 이용하여 OpenCV build 하기
+
 [build](/assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/build.png)
 
 
@@ -120,24 +127,27 @@ Cmake 에서 Generate 클릭후
 =====
 
 
+# 5. 검증하기
 
+```python 
+import numpy as np
+import cv2 as cv
 
-2. OpenCV 소스 다운로드
-4.7.0
-https://github.com/opencv/opencv_contrib
-OpenCV_Contrib  추가 모듈 설치 
-설치
-https://opencv.org/releases/
+npTmp = np.random.random((1024, 1024)).astype(np.float32)
 
-CMake 설
+npMat1 = np.stack([npTmp,npTmp],axis=2)
+npMat2 = npMat1
 
+cuMat1 = cv.cuda_GpuMat()
+cuMat2 = cv.cuda_GpuMat()
+cuMat1.upload(npMat1)
+cuMat2.upload(npMat2)
 
-쿠다 버젼 확인 
+print(%timeit cv.cuda.gemm(cuMat1, cuMat2,1,None,0,None,1))
+print(%timeit cv.gemm(npMat1,npMat2,1,None,0,None,1))
 
-7.5	튜링	TU102, TU104, TU106, TU116, TU117	엔비디아 타이탄 RTX, 지포스 RTX 2080Ti, RTX 2080, RTX 2070, RTX 2060, 지포스 GTX 1660 Ti, GTX 1660, GTX 1650
+```
 
-
-CUDA ARCHBIN 없음
 
 https://ko.wikipedia.org/wiki/CUDA
 # 출처
