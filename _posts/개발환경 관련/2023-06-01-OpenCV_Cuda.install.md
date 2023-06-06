@@ -7,13 +7,13 @@ tags: [OpenCV]
 toc : true
 comments: true
 ---
-================================
+>>>>
 1. [사전 준비](#사전 준비) 
 2. [CUDA 와 cuDNN 설치](#cuda-와-cudnn-설치)
 3. [Cmake 이용하여 OpenCV 만들기](#CUDA 와 cuDNN 설치)
 4. [Visual studio 이용하여 OpenCV build 하기](#Visual studio 이용하여 OpenCV build 하기)
-5. [검증하기](#검증하기)
-===================================
+5. [검증하기 ](#검증하기)
+>>>
 
 
 # 사전 준비
@@ -26,8 +26,8 @@ comments: true
 
 GPU와 알맞은 연산 능력 버젼 확인
 
+<br/>
 
-<br>
 ![위키피디아 CUDA](https://ko.wikipedia.org/wiki/CUDA)
 
 
@@ -106,9 +106,12 @@ ex) D:\CUDA\opencv_contrib-4.7.0\opencv_contrib-4.7.0\modules
 
 5. OPENCV_PYTHON_VERSION (Release 모드로 선택할떄)
 
-5. INSTALL_PYTHON_EXAMPLES (선택)
+6. INSTALL_PYTHON_EXAMPLES (선택)
 
-6. WITH_OPENGL
+7. WITH_OPENGL
+
+8. BUILD_opencv_world //라이브러리 통합 할경우
+>>>
  이후 Configure 이후 다시 체크해줘야하는것이 
 
 1. WITH_CUDNN
