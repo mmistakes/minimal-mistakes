@@ -8,8 +8,8 @@
   {%- assign entries = entries | reverse -%}
 {%- endif -%}
 
-{%-- for post in entries --%}
-  {%-- unless post.hidden --%}
+{%- for post in entries -%}
+  {%- unless post.hidden -%}
     {%- include archive-single.html -%}
-  {%-- endunless --%}
-{%-- endfor --%}
+  {%- endunless -%}
+{%- endfor -%}

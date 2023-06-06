@@ -13,7 +13,7 @@
         </a>
 
         <ul class="visible-links"> <!-- 서브 링크 보여주기-->
-          {%-- for link in site.data.navigation.main --%}
+          {%- for link in site.data.navigation.main -%}
               {%- assign class = nil -%}
               {%- if page.url contains link.url -%}
                   {%- assign class = 'active' -%}
