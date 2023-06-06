@@ -11,6 +11,9 @@ toc_label: "In this article"
 
 _by [Herbert Kateu](https://github.com/hkateu)_
 
+> Hey, it's Daniel here. You're reading a big article about the Http4s library.
+> Http4s is one of the most powerful libraries in the Scala ecosystem, and it's part of the Typelevel stack. If you want to master the Typelevel Scala libraries with real-life practice, check out the [Typelevel Rite of Passage](https://rockthejvm.com/p/typelevel-rite-of-passage) course, a full-stack project-based course. It's my biggest and most jam-packed course yet.
+
 ## 1. Introduction
 
 As a backend developer, authentication is a topic you will encounter numerous times in your career. With numerous authentication methods available, it becomes a challenge not only to choose but also to implement in your application. In this article, we will go through 4 authentication methods and how to implement them in Scala using the Http4s library namely, Basic Authentication, Digest Authentication, Session Authentication, and Token Authentication.
