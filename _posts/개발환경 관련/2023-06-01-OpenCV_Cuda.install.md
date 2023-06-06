@@ -6,6 +6,7 @@ categories:
 tags: [OpenCV]
 toc : true
 comments: true
+classes: wide
 ---
 ================================
 1. [사전 준비](#사전 준비) 
@@ -125,7 +126,7 @@ Cmake 에서 Generate 클릭후
 
 # Visual studio 이용하여 OpenCV build 하기
 
-[build](/assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/build.png)
+![build](/assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/build.png)
 
 
 빌드 모드르 Release 변경후 ALL_BUILD 빌드 하면된다 (1시간 이상 걸림)
