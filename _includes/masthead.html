@@ -1,47 +1,47 @@
-{% capture logo_path %}{{ site.logo }}{% endcapture %}
+{%- capture logo_path -%}{{ site.logo }}{%- endcapture -%}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        {% unless logo_path == empty %}
+        {%- unless logo_path == empty -%}
           <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
-        {% endunless %}
+        {%- endunless -%}
         <a class="site-title" href="{{ '/' | relative_url }}">
           {{ site.masthead_title | default: site.title }}
-          {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
+          {%- if site.subtitle -%}<span class="site-subtitle">{{ site.subtitle }}</span>{%- endif -%}
         </a>
 
         <ul class="visible-links"> <!-- 서브 링크 보여주기-->
-          {%- for link in site.data.navigation.main -%}
-              {% assign class = nil %}
-              {% if page.url contains link.url %}
-                  {% assign class = 'active' %}
-              {% endif %}
-              {% if link.sublinks %}
+          {%-- for link in site.data.navigation.main --%}
+              {%- assign class = nil -%}
+              {%- if page.url contains link.url -%}
+                  {%- assign class = 'active' -%}
+              {%- endif -%}
+              {%- if link.sublinks -%}
                   <li class="dropdown {{ class }}">
                       <a class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ link.title }}  <i class="fa fa-caret-down fa-sm" aria-hidden="true"></i><span class="caret"></span></a>
        
                       <ul class="dropdown-content" >
-                          {% for sublink in link.sublinks %}
+                          {%- for sublink in link.sublinks -%}
                               <a class = "dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">    {{ sublink.title }}</a>
-                          {% endfor %}
+                          {%- endfor -%}
                       </ul>
                   </li>
-              {% else %}
+              {%- else -%}
                   <li class="masthead__menu-item">
                       <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
                   </li>
-              {% endif %}
-          {% endfor %}
+              {%- endif -%}
+          {%- endfor -%}
        </ul>
 
-        {% if site.search == true %}
+        {%- if site.search == true -%}
         <button class="search__toggle" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
           <i class="fas fa-search"></i>
         </button>
-        {% endif %}
+        {%- endif -%}
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
           <div class="navicon"></div>

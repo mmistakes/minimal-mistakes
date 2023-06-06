@@ -1,10 +1,10 @@
 <meta charset="utf-8">
 
-{% include seo.html %}
+{%- include seo.html -%}
 
-{% unless site.atom_feed.hide %}
-  <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-{% endunless %}
+{%- unless site.atom_feed.hide -%}
+  <link href="{%- if site.atom_feed.path -%}{{ site.atom_feed.path }}{%- else -%}{{ '/feed.xml' | relative_url }}{%- endif -%}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+{%- endunless -%}
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,8 +18,8 @@
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
 
-{% if site.head_scripts %}
-  {% for script in site.head_scripts %}
+{%- if site.head_scripts -%}
+  {%- for script in site.head_scripts -%}
     <script src="{{ script | relative_url }}"></script>
-  {% endfor %}
-{% endif %}
+  {%- endfor -%}
+{%- endif -%}

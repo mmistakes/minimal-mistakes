@@ -1,4 +1,4 @@
-{% if site.repository and site.comments.staticman.branch %}
+{%- if site.repository and site.comments.staticman.branch -%}
   <script>
     (function ($) {
     $('#new_comment').submit(function () {
@@ -37,4 +37,4 @@
     }
   })(jQuery);
   </script>
-{% endif %}
+{%- endif -%}
