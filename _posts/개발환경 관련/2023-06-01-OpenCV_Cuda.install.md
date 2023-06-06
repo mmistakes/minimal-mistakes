@@ -6,7 +6,6 @@ categories:
 tags: [OpenCV]
 toc : true
 comments: true
-classes: wide
 ---
 ================================
 1. [사전 준비](#사전 준비) 
@@ -19,7 +18,7 @@ classes: wide
 
 # 사전 준비
 
-1. GPU 검사
+## GPU 검사
 
 장치 관리자 에서 확인
 
@@ -36,7 +35,7 @@ GPU와 알맞은 연산 능력 버젼 확인
 ![GPU 버젼 8.6](/assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/GPU_%EB%B2%84%EC%A0%BC.png)
 
 
-2. OpenCV 소스 다운로드
+## 2. OpenCV 소스 다운로드
 
 [OpenCV 소스](https://opencv.org/releases/)
 
@@ -48,13 +47,13 @@ OpenCV 4.7.0 소스와 확장 모듈까지 소스 다운로드한다
 
 
 
-4. CMAKE 파일 다운로드
+## 3. CMAKE 파일 다운로드
 
 
 [CMAKE 다운로드 링크](https://cmake.org/download/)
 
 
-5. Visual Studio 다운로드
+## 4. Visual Studio 다운로드
 
 
 ==================
@@ -89,7 +88,7 @@ pip uninstall opencv-python
 ===================
 
 
-3. Cmake 이용하여 OpenCV 만들기
+##  Cmake 이용하여 OpenCV 만들기
 
 ![환경설정](/assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/configuration.png)
 
@@ -158,15 +157,15 @@ while ret:
   cv.imshow("test",frame)
 
 ```
-
-
-https://ko.wikipedia.org/wiki/CUDA
 # 출처
+1. 쿠다 버젼
+https://ko.wikipedia.org/wiki/CUDA  
+2. 참고 영상
 https://www.youtube.com/watch?v=tjXkW0-4gME
 
 https://www.youtube.com/watch?v=5NwU1MmmqWo
-
+3. 한글 자료
 https://prlabhotelshoe.tistory.com/24
 
-
+4. Cmake 옵션
 https://docs.opencv.org/4.x/db/d05/tutorial_config_reference.html
