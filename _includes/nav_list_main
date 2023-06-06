@@ -145,6 +145,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.tags %}
+                    {% if category[0] == "Arduino" %}
+                        <li><a href="/tags/Arduino" class="">Arduino ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">Math</span>
             <ul>
                 {% for category in site.tags %}

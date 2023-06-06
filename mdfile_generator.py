@@ -1,7 +1,7 @@
 import time
 fpath, fmode = 'C:/Users/noir1/Documents/git/noir1458.github.io/_posts/', 'w'
 def other_type():
-    tags = ['markdown','ENG','JPN','finance','physics','programmers','ComputerArchitecture','DataStructure','algorithm','OS','DB','network','python','numpy_pandas','calculus','LinearAlgebra','AdvancedEngineeringMathematics','DifferentialEquation']
+    tags = ['markdown','ENG','JPN','finance','physics','programmers','ComputerArchitecture','DataStructure','algorithm','OS','DB','network','python','numpy_pandas','Arduino','calculus','LinearAlgebra','AdvancedEngineeringMathematics','DifferentialEquation']
     for idx in range(len(tags)):
         print(idx,'-',tags[idx])
     idx_tags = int(input('태그 앞 번호를 입력하여 태그 설정 : '))
