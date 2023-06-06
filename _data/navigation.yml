@@ -15,9 +15,6 @@ main:
 
 
 docs:
-<<<<<<< HEAD
-  - title: "대목차1"
-=======
   - title: "FRONTEND"
     children:
       - title: "REACT"
@@ -43,15 +40,10 @@ docs:
       - title: "NEXT"
         url: /categories/nextjs
   - title: "TDD"
->>>>>>> 8afc738e29667b67a83e4658767115d2719a619e
     children:
       - title: "Category"
         url: /categories/
       - title: "Tag"
-<<<<<<< HEAD
-        url: /tags/
-  - title: "대목차2"
-=======
         url: /categories/
   - title: "THEORY"
     children:
@@ -70,29 +62,8 @@ docs:
       - title: "CS(Computer Science)" # 알고리즘
         url: /categories/cs
   - title: "TIL(TODAY I LEARNED)"
->>>>>>> 8afc738e29667b67a83e4658767115d2719a619e
     children:
       - title: "Category"
         url: /categories/
       - title: "Tag"
-<<<<<<< HEAD
         url: /tags/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
-=======
-        url: /categories/
-  - title: "ETC"
-    children:
-      - title: "development convenience"
-        url: /categories/
-
-counts:
-  - title: "카테고리"
-    use: true
->>>>>>> 8afc738e29667b67a83e4658767115d2719a619e
