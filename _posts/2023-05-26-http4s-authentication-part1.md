@@ -1,13 +1,15 @@
 ---
-title: "Authentication with Http4s Part 1"
-date: 2023-02-23
+title: "HTTP Authentication with Scala and Http4s"
+date: 2023-06-06
 header:
   image: "/images/blog cover.jpg"
 tags: []
-excerpt: "There are several authentication methods available, each with its pros and cons, here, we will look at implementations of these different methods in scala using the Http4s library"
+excerpt: "Learn how you can implement HTTP authentication with Scala and http4s, with 4 different methods: basic, digest, session and JWT tokens."
 toc: true
 toc_label: "In this article"
 ---
+
+_by [Herbert Kateu](https://github.com/hkateu)_
 
 ## 1. Introduction
 
@@ -1044,4 +1046,6 @@ object TokenAuth extends IOApp:
     override def run(args: List[String]): IO[ExitCode] = server.use(_ => IO.never).as(ExitCode.Success)
 ```
 
-This article taught us four different ways of implementing authentication in Scala using Http4s, these include Basic, Digest, Session, and Token authentication methods. We discovered common techniques used and the important role middleware plays when carrying our authentication in Http4s. This article mainly focused on implementation, I would encourage you to read more about the pros and cons of each authentication method to get more context for your application needs.
+## 7. Conclusion
+
+This article taught us four different ways of implementing HTTP authentication in Scala using Http4s, these include Basic, Digest, Session, and Token authentication methods. We discovered common techniques used and the important role middleware plays when carrying our authentication in Http4s. This article mainly focused on implementation, I would encourage you to read more about the pros and cons of each authentication method to get more context for your application needs.
