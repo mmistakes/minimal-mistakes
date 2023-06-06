@@ -7,13 +7,13 @@ tags: [OpenCV]
 toc : true
 comments: true
 ---
->>>>
+>>
 1. [사전 준비](#사전 준비) 
 2. [CUDA 와 cuDNN 설치](#cuda-와-cudnn-설치)
 3. [Cmake 이용하여 OpenCV 만들기](#CUDA 와 cuDNN 설치)
 4. [Visual studio 이용하여 OpenCV build 하기](#Visual studio 이용하여 OpenCV build 하기)
 5. [검증하기 ](#검증하기)
->>>
+>>
 
 
 # 사전 준비
@@ -56,7 +56,6 @@ OpenCV 4.7.0 소스와 확장 모듈까지 소스 다운로드한다
 ## 4. Visual Studio 다운로드
 
 
-==================
 # CUDA 와 cuDNN 설치
 
 [CUDA 설치 링크 ](https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_local)
@@ -65,7 +64,7 @@ OpenCV 4.7.0 소스와 확장 모듈까지 소스 다운로드한다
 
 해당 설정에 맞게 설치 진행한다
 
-[cuDNN](https://developer.nvidia.com/cudnn)
+[cuDNN 다운로드 링크 ](https://developer.nvidia.com/cudnn)
 
 cuDNN 인경우 Nvidia 회원 가입이 필요하다
 
@@ -84,8 +83,6 @@ pip uninstall opencv-python
 
 ![삭제 확인](/assets/img//%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/openCV%20%EC%82%AD%EC%A0%9C.png)
 
-
-===================
 
 
 ##  Cmake 이용하여 OpenCV 만들기
@@ -111,7 +108,7 @@ ex) D:\CUDA\opencv_contrib-4.7.0\opencv_contrib-4.7.0\modules
 7. WITH_OPENGL
 
 8. BUILD_opencv_world //라이브러리 통합 할경우
->>>
+>
  이후 Configure 이후 다시 체크해줘야하는것이 
 
 1. WITH_CUDNN
@@ -133,8 +130,6 @@ Cmake 에서 Generate 클릭후
 
 빌드 모드르 Release 변경후 ALL_BUILD 빌드 하면된다 (1시간 이상 걸림)
 -> 오류 없이완료후 아래 INSTALL 빌드 실행
-
-=====
 
 
 # 검증하기
@@ -164,6 +159,7 @@ while ret:
 1. 쿠다 버젼
 https://ko.wikipedia.org/wiki/CUDA  
 2. 참고 영상
+
 https://www.youtube.com/watch?v=tjXkW0-4gME
 
 https://www.youtube.com/watch?v=5NwU1MmmqWo
