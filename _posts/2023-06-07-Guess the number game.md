@@ -15,6 +15,8 @@ toc_icon: "fas fa-list"
 
 
 
+ <a href ="https://guess-number-game932.netlify.app/" target="_blank">Guess the number game project 주소</a>
+
 # ◆Guess the number game - javascript
 
 ```javascript
