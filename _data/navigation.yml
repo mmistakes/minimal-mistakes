@@ -22,6 +22,8 @@ sidebar-category:
         url: /categories/react
       - title: 'Github'
         url: /categories/github
+      - title: 'Node'
+        url: /categories/node
   - title: 'BOOK REVIEW'
     children:
       - title: 'IT'
