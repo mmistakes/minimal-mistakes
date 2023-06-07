@@ -74,16 +74,19 @@ cuDNN 인경우 Nvidia 회원 가입이 필요하다
 CUDA 설치후 설치 폴더 경로에 cuDNN 파일 을 덮어 넣습니다.
 
 
+
 * 사전 세팅
  기존에 설치 되어있던 OpenCV 버젼 삭제 진행한다.
-
 ```bash
 pip uninstall opencv-python
 ```
 
 ![삭제 확인](/assets/img//%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/openCV%20%EC%82%AD%EC%A0%9C.png)
 
-
+# numpy 설치 필요
+```bash
+pip install numpy
+```
 
 ##  Cmake 이용하여 OpenCV 만들기
 
