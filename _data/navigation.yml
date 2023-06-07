@@ -5,7 +5,7 @@ main:
   - title: "Tag"
     url: /tags/
   - title: "Project"
-    url: /projects/  
+    url: /Projects/  
   - title: "Search"
     url: /search/ 
 
