@@ -3,7 +3,6 @@ layout: single
 title:  "Javascript - Event"
 categories: Javascirpt
 tag: [Javascirpt]
-Projects: Guess the number game
 author_profile: true
 toc: true
 toc_label: 목차
