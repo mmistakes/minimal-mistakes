@@ -528,7 +528,7 @@ Session authentication is an authentication technique where the server keeps tra
 
 ### 5.1 Session Authentication in Http4s
 
-For this implementation, we are going to reuse our code from the Digest Authentication section.
+For this implementation, we are going to reuse our code from the Digest Authentication section. We're going to illustrate this technique with an easy cipher &mdash; which should otherwise not be used in production &mdash; for you to understand the mechanics.
 
 The first thing we need is a way to generate the unique code that we will send to the client.
 
@@ -540,6 +540,10 @@ import java.nio.charset.StandardCharsets
 val today: String = LocalDateTime.now().toString()
 def setToken(user: String, date: String):String = Base64.getEncoder.encodeToString(s"${user}:{$today}".getBytes(StandardCharsets.UTF_8))
 ```
+
+> NOTE: do not use this exact encoding in production! 
+> This example is for illustration to ease understanding. Base64 is easily deciphered, and an attacker can easily impersonate someone by knowing their username and a rough time when the server was started.
+> For true security, such tokens should be signed by a private key. Look [here](https://http4s.org/v1/docs/auth.html#cookies) for more info.
 
 Here we create the unique code or token using the `setToken` function which takes a username as `user` and a date computed by `LocalDateTime.now().toString()`, these values are then combined and encoded using Java's `Base64` utility.
 
