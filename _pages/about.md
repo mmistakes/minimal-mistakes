@@ -22,7 +22,7 @@ My research interests lie in the field of **natural language processing** and it
 <!-- 3) **Natural language generation:** text summarization, machine translation, and automatic evaluation for text generation. <br> -->
 
 ## News
-**\[2023.05]** I'm thrilled to join AWS AI Lab as an Applied Scientist Intern! <br>
+**\[2023.05]** I'm thrilled to start my Applied Scientist internship at AWS AI Lab in this summer! <br>
 **\[2023.05]** Our work on continual information extraction is accepted by ACL 2023 (Findings). Great thanks to all my co-authors! Stay tuned for the paper and code. <br>
 **\[2022.10]** Our team HokieBot has been selected as one of 9 teams to participate in the [Alexa Prize SocialBot Grand Challenge](https://www.amazon.science/alexa-prize/socialbot-grand-challenge). <br>
 **\[2022.08]** Our work on [lifelong event detection](https://arxiv.org/abs/2204.07275) is accepted by COLING 2022. Great thanks to all my co-authors!<br>
