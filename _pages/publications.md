@@ -11,7 +11,11 @@ author_profile: true
 
 * **Teamwork Is Not Always Good: An Empirical Study of Classifier Drift in Class-incremental Information Extraction**<br>
   **Minqian Liu**, Lifu Huang<br>
-  In ***ACL***, 2023. (Findings)  \[[paper](http://arxiv.org/abs/2305.16559)] \[[code](https://github.com/VT-NLP/Incremental_Prompting)]
+  In ***ACL** (Findings)*, 2023.  \[[paper](http://arxiv.org/abs/2305.16559)] \[[code](https://github.com/VT-NLP/Incremental_Prompting)]
+
+* **KnowledgeBot: Improving Assistive Robot for Task Completion and Live Interaction via Neuro-symbolic Reasoning**<br>
+  **Minqian Liu**, Ying Shen, Barry Menglong Yao, Sijia Wang, Jingyuan Qi, Zhiyang Xu, Lifu Huang<br>
+  In ***Alexa Prize SimBot Challenge Proceedings***, 2023.  \[[paper](https://www.amazon.science/alexa-prize/proceedings/knowledgebot-improving-assistive-robot-for-task-completion-and-live-interaction-via-neuro-symbolic-reasoning)]
   
 * **Iteratively Improving Biomedical Entity Linking and Event Extraction via Hard Expectation-Maximization**<br>
   Xiaochu Li\*, **Minqian Liu\***, Zhiyang Xu\*, Lifu Huang<br>
