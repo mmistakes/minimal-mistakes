@@ -14,6 +14,10 @@ _by [Herbert Kateu](https://github.com/hkateu)_
 > Hey, it's Daniel here. You're reading a big article about the Http4s library.
 > Http4s is one of the most powerful libraries in the Scala ecosystem, and it's part of the Typelevel stack. If you want to master the Typelevel Scala libraries with real-life practice, check out the [Typelevel Rite of Passage](https://rockthejvm.com/p/typelevel-rite-of-passage) course, a full-stack project-based course. It's my biggest and most jam-packed course yet.
 
+For the video version, watch below:
+
+{% include video id="DxZIuvSDvyA" provider="youtube" %}
+
 ## 1. Introduction
 
 As a backend developer, authentication is a topic you will encounter numerous times in your career. With numerous authentication methods available, it becomes a challenge not only to choose but also to implement in your application. In this article, we will go through 4 authentication methods and how to implement them in Scala using the Http4s library namely, Basic Authentication, Digest Authentication, Session Authentication, and Token Authentication.
@@ -87,7 +91,7 @@ In this example, the routes are accessed without authentication. We define our r
 
 We use `Ember` server through port `8080` to receive requests.
 
-For an in-depth explanation of how to use `Http4s`, there's a good explanation of most concepts [here]("https://blog.rockthejvm.com/http4s-tutorial/").
+For an in-depth explanation of how to use `Http4s`, there's a good explanation of most concepts [here](/http4s-tutorial/).
 
 Let's test our server.
 
@@ -140,7 +144,7 @@ import cats.data.*
 import org.http4s.Credentials
 import org.http4s.headers.Authorization
 
-val authUserEither: Kleisli[IO, Request[IO], Either[String, User]] = Kleisli{req =>
+val authUserEither: Kleisli[IO, Request[IO], Either[String, User]] = Kleisli { req =>
     val authHeader: Option[Authorization] = req.headers.get[Authorization]
     authHeader match
         case Some(value) => value match
@@ -170,7 +174,7 @@ To use the middleware, we'll need to modify our routes to the `AuthedRoutes` typ
 
 ```scala
 val authedRoutes: AuthedRoutes[User,IO] =
-    AuthedRoutes.of{
+    AuthedRoutes.of {
         case GET -> Root / "welcome" as user =>
             Ok(s"Welcome, ${user.name}")
     }
@@ -179,9 +183,8 @@ val authedRoutes: AuthedRoutes[User,IO] =
 Previously the `user` value was passed as part of the `URI` in the `GET` request, in this case, the `user` value comes in through the `authUserEither` `Kleisli` function. We will also need Routes to handle failure, which we define next.
 
 ```scala
-val onFailure: AuthedRoutes[String, IO] = Kleisli{(req: AuthedRequest[IO,String]) =>
-    req.req match
-        case _ => OptionT.pure[IO](Response[IO](status = Status.Unauthorized))
+val onFailure: AuthedRoutes[String, IO] = Kleisli {(_: AuthedRequest[IO,String]) =>
+    OptionT.pure[IO](Response[IO](status = Status.Unauthorized))
 }
 ```
 
@@ -283,7 +286,7 @@ import org.http4s.headers.Authorization
 
 object BasicExample extends IOApp:
 
-  val authUserEither: Kleisli[IO, Request[IO], Either[String, User]] = Kleisli{req =>
+  val authUserEither: Kleisli[IO, Request[IO], Either[String, User]] = Kleisli { req =>
       val authHeader: Option[Header] = req.headers.get[Authorization]
       authHeader match
           case Some(value) => value match
@@ -296,12 +299,12 @@ object BasicExample extends IOApp:
     AuthMiddleware(authUserEither)
 
   val authedRoutes: AuthedRoutes[User,IO] =
-    AuthedRoutes.of{
+    AuthedRoutes.of {
         case GET -> Root / "welcome" as user =>
             Ok(s"Welcome, ${user.name}")
     }
 
-  val onFailure: AuthedRoutes[String, IO] = Kleisli{(req: AuthedRequest[IO,String]) =>
+  val onFailure: AuthedRoutes[String, IO] = Kleisli { (req: AuthedRequest[IO,String]) =>
     req.req match
         case _ => OptionT.pure[IO](Response[IO](status = Status.Unauthorized))
   }
@@ -384,7 +387,7 @@ import org.http4s.*
 import org.http4s.dsl.io.*
 
 val authedRoutes: AuthedRoutes[User,IO] =
-    AuthedRoutes.of{
+    AuthedRoutes.of {
         case GET -> Root / "welcome" as user =>
             Ok(s"Welcome, ${user.name}")
     }
@@ -406,7 +409,7 @@ import org.http4s.ember.server.*
 import com.comcast.ip4s.*
 
 def server(service: IO[HttpRoutes[IO]]): IO[Resource[cats.effect.IO, Server]] =
-    service.map{svc =>
+    service.map { svc =>
         EmberServerBuilder
             .default[IO]
             .withHost(ipv4"0.0.0.0")
@@ -493,7 +496,7 @@ object DigestExample extends IOApp:
     val middleware: IO[AuthMiddleware[IO, User]] = DigestAuth.applyF[IO,User]("http://localhost:8080/welcome", Md5HashedAuthStore(funcPass))
 
     val authedRoutes: AuthedRoutes[User,IO] =
-        AuthedRoutes.of{
+        AuthedRoutes.of {
             case GET -> Root / "welcome" as user =>
                 Ok(s"Welcome, ${user.name}")
         }
@@ -502,7 +505,7 @@ object DigestExample extends IOApp:
         middleware.map(wrapper => wrapper(authedRoutes))
 
     def server(service: IO[HttpRoutes[IO]]): IO[Resource[IO, Server]] =
-        service.map{svc =>
+        service.map { svc =>
             EmberServerBuilder
                 .default[IO]
                 .withHost(ipv4"0.0.0.0")
@@ -561,7 +564,7 @@ import org.http4s.dsl.io.*
 
 case class User(id: Long, name: String)
 val authedRoutes: AuthedRoutes[User,IO] =
-    AuthedRoutes.of{
+    AuthedRoutes.of {
         case GET -> Root / "welcome" as user =>
             Ok(s"Welcome, ${user.name}").map(_.addCookie(ResponseCookie("sessioncookie", setToken(user.name, today), maxAge = Some(86400))))
     }
@@ -572,7 +575,7 @@ We set our session token as a cookie on the client side using the `addCookie` fu
 Separate routes are also defined that will be accessed using our session data.
 
 ```scala
-val cookieAccessRoutes = HttpRoutes.of[IO]{
+val cookieAccessRoutes = HttpRoutes.of[IO] {
   case GET -> Root / "statement" =>
     Ok("Financial statement processing...")
   case GET -> Root / "logout" =>
@@ -594,17 +597,16 @@ def checkSessionCookie(cookie: Cookie):Option[RequestCookie] =
 def modifyPath(user: String):Path =
     Uri.Path.fromString(s"/statement/$user")
 
-def cookieCheckerService(service: HttpRoutes[IO]): HttpRoutes[IO] = Kleisli{req =>
+def cookieCheckerService(service: HttpRoutes[IO]): HttpRoutes[IO] = Kleisli { req =>
     val authHeader: Option[Cookie] = req.headers.get[Cookie]
-    OptionT.liftF{authHeader.fold(Ok("No cookies")){cookie =>
-        checkSessionCookie(cookie).fold(Ok("No token")){token =>
+    OptionT.liftF(authHeader.fold(Ok("No cookies")) { cookie =>
+        checkSessionCookie(cookie).fold(Ok("No token")) { token =>
             getUser(token.content).fold(
                 _ => Ok("Invalid token"),
-                user => service.orNotFound.run((req.withPathInfo(modifyPath(user))))
-                )
+                user => service.orNotFound.run(req.withPathInfo(modifyPath(user)))
+             )
         }
-    }
-    }
+    })
 }
 ```
 
@@ -735,7 +737,7 @@ object SessionAuth extends IOApp:
     case class User(id: Long, name: String)
     val today: String = LocalDateTime.now().toString()
     def setToken(user: String, date: String):String = Base64.getEncoder.encodeToString(s"${user}:{$today}".getBytes(StandardCharsets.UTF_8))
-    def getUser(token: String): Try[String] = Try((new String(Base64.getDecoder.decode(token))).split(":")(0))
+    def getUser(token: String): Try[String] = Try(new String(Base64.getDecoder.decode(token)).split(":")(0))
 
     val funcPass: String => IO[Option[(User, String)]] = (user_val: String) =>
         user_val match
@@ -745,7 +747,7 @@ object SessionAuth extends IOApp:
     val middleware:AuthMiddleware[IO, User] = DigestAuth[IO,User]("http://localhost:8080/welcome", funcPass)
 
     val authedRoutes: AuthedRoutes[User,IO] =
-        AuthedRoutes.of{
+        AuthedRoutes.of {
             case GET -> Root / "welcome" as user =>
                 Ok(s"Welcome, ${user.name}").map(_.addCookie(ResponseCookie("sessioncookie", setToken(user.name, today), maxAge = Some(86400))))
         }
@@ -754,7 +756,7 @@ object SessionAuth extends IOApp:
         middleware(authedRoutes)
 
 
-    val cookieAccessRoutes = HttpRoutes.of[IO]{
+    val cookieAccessRoutes = HttpRoutes.of[IO] {
         case GET -> Root / "statement" / user =>
             Ok(s"Welcome back $user, Financial statement processing...")
         case GET -> Root / "logout" =>
@@ -763,9 +765,9 @@ object SessionAuth extends IOApp:
 
     def cookieCheckerService(service: HttpRoutes[IO]): HttpRoutes[IO] = Kleisli{req =>
         val authHeader: Option[Cookie] = req.headers.get[Cookie]
-        OptionT.liftF{authHeader match
+        OptionT.liftF(authHeader match
             case Some(cookie) =>
-                cookie.values.toList.find{x =>
+                cookie.values.toList.find { x =>
                     x.name == "sessioncookie"
                 } match
                     case Some(token) =>
@@ -775,7 +777,7 @@ object SessionAuth extends IOApp:
                             case Failure(_) => Ok("Invalid token")
                     case None => Ok("No token")
             case None => Ok("No cookies")
-            }
+       )
     }
 
 
@@ -828,7 +830,7 @@ import org.http4s.*
 import org.http4s.dsl.io.*
 
 val loginRoutes: HttpRoutes[IO] =
-    HttpRoutes.of[IO]{
+    HttpRoutes.of[IO] {
         case GET -> Root / "login" =>
             Ok(s"Logged In").map(_.addCookie(ResponseCookie("token", token)))
     }
@@ -844,7 +846,7 @@ import io.circe.*
 case class TokenPayLoad(user: String, level: String)
 
 object TokenPayLoad:
-    given decoder: Decoder[TokenPayLoad] = Decoder.instance{h =>
+    given decoder: Decoder[TokenPayLoad] = Decoder.instance { h =>
         for
             user <- h.get[String]("user")
             level <- h.get[String]("level")
@@ -882,7 +884,7 @@ val jwtAuth = JwtAuth.hmac(key, algo)
 val middleware = JwtAuthMiddleware[IO, AuthUser](jwtAuth, authenticate)
 
 val authedRoutes: AuthedRoutes[AuthUser,IO] =
-AuthedRoutes.of{
+AuthedRoutes.of {
     case GET -> Root / "welcome" as user =>
         Ok(s"Welcome, ${user.name}")
 }
@@ -994,7 +996,7 @@ object TokenAuth extends IOApp:
     case class TokenPayLoad(user: String, level: String)
 
     object TokenPayLoad:
-        given decoder: Decoder[TokenPayLoad] = Decoder.instance{h =>
+        given decoder: Decoder[TokenPayLoad] = Decoder.instance { h =>
             for
                 user <- h.get[String]("user")
                 level <- h.get[String]("level")
@@ -1013,12 +1015,11 @@ object TokenAuth extends IOApp:
     val database = Map("John" -> AuthUser(123,"JohnDoe"))
 
     val authenticate: JwtToken => JwtClaim => IO[Option[AuthUser]] =
-        (token: JwtToken) =>
-            (claim: JwtClaim)
-            => decode[TokenPayLoad](claim.content) match
-                    case Right(payload) =>
-                        IO(database.get(payload.user))
-                    case Left(_) => IO(None)
+        (token: JwtToken) => (claim: JwtClaim) => 
+           decode[TokenPayLoad](claim.content) match
+              case Right(payload) =>
+                  IO(database.get(payload.user))
+              case Left(_) => IO(None)
 
     val jwtAuth = JwtAuth.hmac(key, algo)
     val middleware = JwtAuthMiddleware[IO, AuthUser](jwtAuth, authenticate)
@@ -1030,7 +1031,7 @@ object TokenAuth extends IOApp:
     }
 
     val loginRoutes: HttpRoutes[IO] =
-        HttpRoutes.of[IO]{
+        HttpRoutes.of[IO] {
             case GET -> Root / "login" =>
                 Ok(s"Logged In").map(_.addCookie(ResponseCookie("token", token)))
         }
