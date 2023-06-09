@@ -337,7 +337,7 @@ Similar to Basic Authentication, Digest Authentication also involves passing cre
 
 3. If the credentials checkout, the user will be granted access otherwise access will be denied with the `401 status code`.
 
-I realize there are a lot of new words in the explanation, however, this is beyond the scope of this article, I encourage you to read the [RFC 2617]('https://datatracker.ietf.org/doc/html/rfc2617') specification for Digest Authentication for a more in-depth explanation.
+I realize there are a lot of new words in the explanation, however, this is beyond the scope of this article, I encourage you to read the [RFC 2617](https://datatracker.ietf.org/doc/html/rfc2617) specification for Digest Authentication for a more in-depth explanation.
 
 ### 4.1 Digest Authentication in http4s
 
