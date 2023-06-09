@@ -76,7 +76,7 @@ Nullable types and the `Option` type we've seen so far are great for handling er
 
 We can represent an error using different approaches. The first is reusing the `Throwable` type and all its exception subtypes. The Kotlin programming language has the `Result<A>` type for that since version 1.3, **which models the result of an operation that may succeed with an instance of `A` or may result in an exception**. It's similar to the `Try<A>` type we've seen in the Scala programming language.
 
-Despite what you may guess, the `Result<A` type is not defined as a sealed class. It's a value class without any subclass:
+Despite what you may guess, the `Result<A>` type is not defined as a sealed class. It's a value class without any subclass:
 
 ```kotlin
 // Kotlin SDK
@@ -221,13 +221,16 @@ class CurrencyConverter {
 }
 ```
 
-The converter will throw an exception if the input amount is `null` or negative. Let's think about the converter as an external library that we can't change. We can use the `mapCatching` function to convert the salary of a job from USD to EUR, handling the fact that the conversion can fail, throwing an exception:
+The converter will throw an exception if the input amount is `null` or negative. Let's think about the converter as an external library that we can't change. We can use the `mapCatching` function to convert the salary of a job from USD to EUR, handling the fact that the conversion can fail, throwing an exception. Let's add the converter as a dependency to our `JobService` class, and let's use it to implement a new method:
 
 ```kotlin
-fun getSalaryInEur(jobId: JobId): Result<Double> =
-    jobs.findById(jobId)
-        .map { it?.salary }
-        .mapCatching { currencyConverter.convertUsdToEur(it?.value) }
+class JobService(private val jobs: Jobs, private val currencyConverter: CurrencyConverter) {
+    
+    fun getSalaryInEur(jobId: JobId): Result<Double> =
+        jobs.findById(jobId)
+            .map { it?.salary }
+            .mapCatching { currencyConverter.convertUsdToEur(it?.value) }
+}
 ```
 
 If we execute the above function using an invalid `JobId`, we'll get a `Result` containing the exception thrown by the `convertUsdToEur` function:
@@ -366,7 +369,7 @@ maybeSalary.fold({
 
 ## 3. Composing `Result` Instances
 
-As we saw in the previous article, when dealing with _effects_, _monads_, _container types_ or whatever we want to call them, one crucial point is how we can compose and combine them. In the first part of this series, we implemented a function that returns the gap between the job salary given a job id and the maximum compensation for the same company. We called the function `getSalaryGapWithMax`.
+As we saw in the previous article, we often deal with types (usually some containers) that are "chainable" or "monadic" in structure (more details on [Another Take at Monads: A Way to Generalize Chained Computations](https://blog.rockthejvm.com/another-take-on-monads/)), so the crucial point is how we can compose and combine them.. In the first part of this series, we implemented a function that returns the gap between the job salary given a job id and the maximum compensation for the same company. We called the function `getSalaryGapWithMax`.
 
 We want to refactor the example using the `Result` type. First, we need to add the `findAll` function to the `Jobs` interface and implementation:
 
@@ -403,32 +406,42 @@ fun List<Job>.maxSalary(): Result<Salary> = runCatching {
 }
 ```
 
-If the list is empty, we threw a `NoSuchElementException`, wrapping it together in a `Result`. Then, we can use the new function to implement the `getSalaryGapWithMax` function as follows:
+If the list is empty, we threw a `NoSuchElementException`, wrapping it together in a `Result`. Then, we can use the new function to implement the `getSalaryGapWithMax` function in the `JobService` as follows:
 
 ```kotlin
-fun getSalaryGapWithMax(jobId: JobId): Result<Double> = runCatching {
-    val maybeJob: Job? = jobs.findById(jobId).getOrThrow()
-    val jobSalary = maybeJob?.salary ?: Salary(0.0)
-    val jobList = jobs.findAll().getOrThrow()
-    val maxSalary: Salary = jobList.maxSalary().getOrThrow()
-    maxSalary.value - jobSalary.value
+class JobService(private val jobs: Jobs, private val currencyConverter: CurrencyConverter) {
+
+    // Omissis...
+    fun getSalaryGapWithMax(jobId: JobId): Result<Double> = runCatching {
+        val maybeJob: Job? = jobs.findById(jobId).getOrThrow()
+        val jobSalary = maybeJob?.salary ?: Salary(0.0)
+        val jobList = jobs.findAll().getOrThrow()
+        val maxSalary: Salary = jobList.maxSalary().getOrThrow()
+        maxSalary.value - jobSalary.value
+    }
 }
 ```
 
 As we can see, **we can forget about the `Result` type during the composition process with this approach, focusing on the success values**. The rise of exceptions and the use of the `runCatching` function allows us to short-circuit the computation if one of the steps fails.
 
-What about the Arrow library and the `Result` type? As we saw for the nullable types, Arrow offers some exciting extensions. First, Arrow adds the `flatMap` function to the `Result` type. If we are Haskell lovers, we can't live without it, and we can use the `flatMap` to compose subsequent computations resulting in a `Result`. Let's try to rewrite the previous example using the `flatMap` function:
+What about the Arrow library and the `Result` type? As we saw for the nullable types, Arrow offers some exciting extensions. First, Arrow adds the `flatMap` function to the `Result` type. If we are Haskell lovers, we can't live without it, and we can use the `flatMap` to compose subsequent computations resulting in a `Result`. Let's try to rewrite the previous example using the `flatMap` function from the Arrow library:
 
 ```kotlin
-fun getSalaryGapWithMax2(jobId: JobId): Result<Double> =
-    jobs.findById(jobId).flatMap { maybeJob ->
-        val jobSalary = maybeJob?.salary ?: Salary(0.0)
-        jobs.findAll().flatMap { jobList ->
-            jobList.maxSalary().map { maxSalary ->
-                maxSalary.value - jobSalary.value
+import arrow.core.flatMap
+
+class JobService(private val jobs: Jobs, private val currencyConverter: CurrencyConverter) {
+
+    // Omissis...
+    fun getSalaryGapWithMax2(jobId: JobId): Result<Double> =
+        jobs.findById(jobId).flatMap { maybeJob ->
+            val jobSalary = maybeJob?.salary ?: Salary(0.0)
+            jobs.findAll().flatMap { jobList ->
+                jobList.maxSalary().map { maxSalary ->
+                    maxSalary.value - jobSalary.value
+                }
             }
         }
-    } 
+}
 ```
 
 As we said in the previous article, the absence of native support for monadic list-comprehension in Kotlin makes the code less readable if we use sequences of `flatMap` and `map` invocations. However, as we saw both for nullable types and for the `Option` type, **Arrow gives us nice DSLs to deal with the readability problem**. For the `Result`type, the DSL is called `result`:
@@ -545,7 +558,7 @@ However, sometimes we want to map errors in custom types that don't belong to th
 
 ## 4. Type-safe Error Handling: The `Either` Type
 
-Let's now introduce the `Either` type for error handling. Kotlin doesn't ship the `Either` type with the standard SDK. We need Arrow to add it to the game. Basically, the `Either<E, A>` type is an [Algebraic Data Type](https://blog.rockthejvm.com/algebraic-data-types/) (ADT). In detail, it's a sum type that can contain either a value `A` wrapped in the type `Right<A>` or a value `E` wrapped in a type `Left<E>`. It's common to associate `Left` instances with the result of a failed computation and `Right` instances with the result of a successful calculation. The `Either` type is defined as follows:
+Let's now introduce the `Either` type for error handling. Kotlin doesn't ship the `Either` type with the standard SDK. We need Arrow to add it to the game. The structure of `Either<E, A>` is that of an [Algebraic Data Type](https://blog.rockthejvm.com/algebraic-data-types/) (ADT). In detail, it's a sum type that can contain either a value `A` wrapped in the type `Right<A>` or a value `E` wrapped in a type `Left<E>`. It's common to associate `Left` instances with the result of a failed computation and `Right` instances with the result of a successful calculation. The `Either` type is defined as follows:
 
 ```kotlin
 // Arrow SDK
@@ -554,9 +567,17 @@ public data class Left<out A> constructor(val value: A) : Either<A, Nothing>()
 public data class Right<out B> constructor(val value: B) : Either<Nothing, B>()
 ```
 
-The `Either` type is a sealed class, so it cannot be extended outside the Arrow library, and the compiler can check if all the possible cases are handled in a `when` expression.
+The `Either` type is a sealed class, so it cannot be extended outside the Arrow library, and the compiler can check if all the possible cases are handled in a `when` expression. 
 
-First, let's see how to create an `Either` instance. The `Left` and `Right` classes have a constructor that takes a single parameter. Here's an example of how to create a `Right` instance:
+Since we can now use any type to represent errors, we can create an ADT on error causes. For example, we can define a `JobError` sealed class and extend it with the `JobNotFound` and `GenericError` classes:
+
+```kotlin
+sealed interface JobError
+data class JobNotFound(val jobId: JobId) : JobError
+data class GenericError(val cause: String) : JobError
+```
+
+Let's see how to create an `Either` instance. The `Left` and `Right` classes have a constructor that takes a single parameter. Here's an example of how to create a `Right` instance:
 
 ```kotlin
 val appleJobId = JobId(1)
@@ -564,14 +585,6 @@ val appleJob: Either<JobError, Job> = Right(JOBS_DATABASE[appleJobId]!!)
 ```
 
 Here, we forced the type of the left part of the `Either` to be `JobError`. Notice that the constructor returns an `Either` with the left part defined as `Nothing`. The compiler allows us to do this because the `Nothing` type is a subtype of any other type, and **the `Either<A, B>` is covariant on the left part since it's defined using the `out` keyword** (we already saw variance in previous articles on Scala, [Variance Positions in Scala, Demystified](https://blog.rockthejvm.com/scala-variance-positions/)).
-
-The `Left` instance is created in the same way. Since we can now use any type to represent errors, we can create an ADT on error causes. For example, we can define a `JobError` sealed class and extend it with the `JobNotFound` and `GenericError` classes:
-
-```kotlin
-sealed interface JobError
-data class JobNotFound(val jobId: JobId) : JobError
-data class GenericError(val cause: String) : JobError
-```
 
 Now, we can create our `Left` type instance:
 
@@ -682,7 +695,7 @@ The `nonFatalOrThrow` function checks whether the exception should be handled. T
 * `ControlThrowable`
 * `CancellationException`
 
-In detail, it's essential not catching `CancellationException` because it's used by Kotlin to [cancel coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/#7-cancellation).
+The subtypes of these errors should not be caught. For example, CancellationException should not be caught because it's used by Kotlin to [cancel coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/#7-cancellation), and catching it can break normal functioning of coroutines.
 
 Then, we can rewrite the `LiveJobs` class using the `catch` function:
 
@@ -696,7 +709,7 @@ class LiveJobs : Jobs {
 }
 ```
 
-Wait. We introduced a bunch of new functions here. Let's see them in detail. First, **the `Either` type is right-based**, so the usual transformations like `map` and `flatMap` apply to the `Right` instances of the `Either`. In this case, we applied the `flatMap` function to check if the retrieved job was null, eventually creating a `Left` value using the pattern we saw a moment ago.
+Wait. We introduced a bunch of new functions here. Let's see them in detail. First, **the `Either` type is right-based**, which means  that `Right` is assumed to be the default case to operate on. If it is `Left`, operations like `map`, `flatMap`, ... return the `Left` value unchanged. In this case, we applied the `flatMap` function to check if the retrieved job was null, eventually creating a `Left` value using the pattern we saw a moment ago.
 
 Moreover, we introduced the `mapLeft` function. This function is similar to the `map` function but applies to the `Left` part of the `Either` type. In this case, we're mapping `Throwable` exceptions to a `GenericError` object. The `mapLeft` function is defined as follows:
 
@@ -905,7 +918,7 @@ Either.Left(in.rcard.either.NegativeAmount@246b179d)
 
 What if we have to accumulate many errors, for example, while creating an object? The `Either` type in version 1.1.5 of Arrow does not fit this need. In fact, the `Validated` type suits better this use case. However, in the next version of Arrow, 1.2.0, the `Validated` class will be deprecated. In the next part of this series, we will learn how to accumulate errors directly using the new version of the `Either` type.
 
-And that's it, folk!
+[And that's all, folk!](https://www.youtube.com/watch?v=0FHEeG_uq5Y)
 
 ## 6. Conclusions
 
