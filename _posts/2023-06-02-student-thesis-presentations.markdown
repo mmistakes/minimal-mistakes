@@ -1,6 +1,6 @@
 ---
 title: "Student Thesis Presentations"
-categories: [Open Mic]
+categories: [Open Mic, Teaching]
 ---
 
 On Friday 2nd June, the regular Open Mic session gave way to presentations of theses of students affiliated with KBSS.
