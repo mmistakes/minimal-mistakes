@@ -709,7 +709,7 @@ class LiveJobs : Jobs {
 }
 ```
 
-Wait. We introduced a bunch of new functions here. Let's see them in detail. First, **the `Either` type is right-based**, which means  that `Right` is assumed to be the default case to operate on. If it is `Left`, operations like `map`, `flatMap`, ... return the `Left` value unchanged. In this case, we applied the `flatMap` function to check if the retrieved job was null, eventually creating a `Left` value using the pattern we saw a moment ago.
+Wait. We introduced a bunch of new functions here. Let's see them in detail. First, **the `Either` type is right-based**, which means  that `Right` is assumed to be the default case to operate on. If it is `Left`, operations like `map`, `flatMap`, return the `Left` value unchanged. In this case, we applied the `flatMap` function to check if the retrieved job was null, eventually creating a `Left` value using the pattern we saw a moment ago.
 
 Moreover, we introduced the `mapLeft` function. This function is similar to the `map` function but applies to the `Left` part of the `Either` type. In this case, we're mapping `Throwable` exceptions to a `GenericError` object. The `mapLeft` function is defined as follows:
 
