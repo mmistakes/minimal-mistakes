@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Byeong Jun An"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/avatar.jpg"
   bio              : "프론트엔드 개발자를 꿈꾸는 안병준 기술블로그 입니다."
   location         : "Somewhere"
   email            :
