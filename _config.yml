@@ -234,6 +234,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-archives
   - jemoji
+  - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -242,7 +243,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
+  - jekyll-redirect-from  
 
 # Archives
 #  Type
@@ -288,16 +289,16 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false     #프로필 사진 보이게 할건지?
       read_time: true
       comments: true
       share: true
       related: true
       show_date: true
-      toc : true
-      toc_sticky: true
-      toc_label: 목차	
-      toc_icon: "fa-sharp fa-light fa-list"
+      toc : true  #오른쪽 목차 활성화 여부
+      toc_sticky: true  # 목차 스티키
+      toc_label: 목차	 # 목차 제목
+      toc_icon: "fa-sharp fa-light fa-list" #목차 아이콘 변경(폰트 어썸에서 확인)
 date_format: "%Y-%m-%d"
 
 # _config.yml 로컬 jekyll 서버 실시간 반영
