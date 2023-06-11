@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "안녕하세요!"
 ---
 
