@@ -21,9 +21,9 @@ title_separator: '-'
 # subtitle: 'version 1.0' # site tagline that appears below site title in masthead
 name: '이승현(SeungHyunLee)'
 description: '🔥'
-url: 'https://222SeungHyun.github.io'
+url: 'https://seungsimdang.github.io'
 baseurl: # the subpath of your site, e.g. "/blog"
-repository: '222SeungHyun/222SeungHyun.github.io' # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository: 'seungsimdang/seungsimdang.github.io' # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: 'StudyRoom' # overrides the website title displayed in the masthead, use " " for no title
@@ -114,10 +114,10 @@ author:
       url: mailto:oak20005@naver.com
     - label: 'GitHub'
       icon: 'fab fa-fw fa-github'
-      url: 'https://github.com/222SeungHyun'
+      url: 'https://github.com/seungsimdang'
     - label: 'Instagram'
       icon: 'fab fa-fw fa-instagram'
-      url: 'https://www.instagram.com/222seunghyun'
+      url: 'https://www.instagram.com/seungsimdang'
 
 # Site Footer
 footer:
@@ -133,7 +133,7 @@ footer:
       # url:
     - label: 'GitHub'
       icon: 'fab fa-fw fa-github'
-      url: 'https://github.com/222SeungHyun'
+      url: 'https://github.com/seungsimdang'
     - label: 'GitLab'
       icon: 'fab fa-fw fa-gitlab'
       # url:
@@ -142,7 +142,7 @@ footer:
       # url:
     - label: 'Instagram'
       icon: 'fab fa-fw fa-instagram'
-      url: 'https://www.instagram.com/222seunghyun'
+      url: 'https://www.instagram.com/seungsimdang'
 
 # Reading Files
 include:
