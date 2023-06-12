@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "안녕하세요!"
-categories: 첫 게시글
+categories: first
 ---
 
 # 블로그 첫 게시글
