@@ -6,6 +6,7 @@ tag: [java, blog]
 toc: true
 author_profile: false
 typora-root-url: ../
+search: false
 ---
 
 # 블로그 첫 게시글
@@ -17,6 +18,8 @@ typora-root-url: ../
 ## Second
 
 ### Third
+
+`search: false`
 
 ```java
   System.out.println("hi");
