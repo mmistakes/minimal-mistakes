@@ -4,6 +4,7 @@ title:  "안녕하세요!"
 categories: first
 tag: [java, blog]
 toc: true
+author_profile: false
 typora-root-url: ../
 ---
 
