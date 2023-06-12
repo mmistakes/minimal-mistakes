@@ -2,6 +2,8 @@
 layout: single
 title:  "안녕하세요!"
 categories: first
+tag: [java, blog]
+typora-root-url: ../
 ---
 
 # 블로그 첫 게시글
@@ -14,4 +16,4 @@ categories: first
   System.out.println("hi");
 ```
 
-![bikini-bottom](../images/2023-06-11-first-post/bikini-bottom-1686473091408-5.jpg)
+![bikini-bottom](/images/2023-06-11-first-post/bikini-bottom-1686473091408-5.jpg)
