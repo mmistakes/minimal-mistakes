@@ -16,4 +16,4 @@ typora-root-url: ../
   System.out.println("hi");
 ```
 
-![bikini-bottom](/images/2023-06-11-first-post/bikini-bottom-1686473091408-5.jpg)
+![bikini-bottom](/images/2023-06-11-first-post/bikini-bottom-1686550396265-1.jpg)
