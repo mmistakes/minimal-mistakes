@@ -11,12 +11,6 @@ excerpt: >
   <small></small>
 intro: 
   - excerpt: 'View the status of the Quantum Connections'
-fixing_fiqci_image:
- - url: /assets/images/Fixing-FiQCI.jpg
-   image_path: /assets/images/Fixing-FiQCI.jpg
-   alt: "Cat fixing FiQCI"
-   title: "We are on it!"
-   
 ---
 
 {% include feature_row id="intro" type="center" %}
@@ -39,8 +33,11 @@ fixing_fiqci_image:
 
 Helmi is accessible through the LUMI environment daily between 13:00 EET and 08:00 EET. 
 
-13 April 2023: Helmi is up!
-{: .notice--success}
+Helmi will be unavailable due to maintenance from 26.06.2023 - 02.07.2023
+{: .notice--info}
+
+Helmi will be undergoing a software update starting from 12.06.2023.
+{: .notice--info}
 
 <center>
 <style type="text/css">

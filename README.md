@@ -35,7 +35,7 @@ Using the default configuration files:
 
 1. Run `bundle clean` to clean up the directory
 2. `bundle install` installs the necessary packages such as `jekyll` etc.
-3. `bundle exec jekyll serve`
+3. `bundle exec jekyll serve` (use the `--watch` flag for live reloading)
 4. Then navigate to [http://localhost:4000/](http://localhost:4000/).
 
 You can also use `./build.sh` for quick use of these commands above. 
