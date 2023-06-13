@@ -344,7 +344,7 @@ class EmailService(token: String):
 
   val credentials = Credentials(
       Username("karlsambade@gmail.com"),
-      Password("zaydhljtakmznety")
+      Password("password")
   )
 
   val action: IO[Replies] =
@@ -573,7 +573,7 @@ object OtpAuth extends IOApp:
 
         val credentials = Credentials(
             Username("karlsambade@gmail.com"),
-            Password("zaydhljtakmznety")
+            Password("password")
         )
 
         val action: IO[Replies] =
