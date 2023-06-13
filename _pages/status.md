@@ -36,7 +36,7 @@ Helmi is accessible through the LUMI environment daily between 13:00 EET and 08:
 Helmi will be unavailable due to maintenance from 26.06.2023 - 02.07.2023
 {: .notice--info}
 
-Helmi will be undergoing a software update starting from 12.06.2023.
+Helmi will be undergoing a software update between 13.06.2023 and 17.06.2023.
 {: .notice--info}
 
 <center>
@@ -63,7 +63,7 @@ Helmi will be undergoing a software update starting from 12.06.2023.
 <tbody>
   <tr>
     <td class="tg-tbqi">LUMI-Helmi</td>
-    <td class="tg-49rs">🟢</td>
+    <td class="tg-49rs">🔴</td>
   </tr>
 </tbody>
 </table>
