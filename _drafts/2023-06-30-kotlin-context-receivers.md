@@ -53,6 +53,60 @@ value class Salary(val value: Double)
 
 In the above code snippet, we have a `Job` data class that represents a job posting. Each `Job` has an `id`, `company`, `role`, and `salary`. The `JobId`, `Company`, `Role`, and `Salary` are inline classes that wrap primitive types to provide type safety and semantic meaning to the data.
 
+Finally, we can define a map of jobs to mimic a database of job postings:
+
+```kotlin
+val JOBS_DATABASE: Map<JobId, Job> = mapOf(
+    JobId(1) to Job(
+        JobId(1),
+        Company("Apple, Inc."),
+        Role("Software Engineer"),
+        Salary(70_000.00),
+    ),
+    JobId(2) to Job(
+        JobId(2),
+        Company("Microsoft"),
+        Role("Software Engineer"),
+        Salary(80_000.00),
+    ),
+    JobId(3) to Job(
+        JobId(3),
+        Company("Google"),
+        Role("Software Engineer"),
+        Salary(90_000.00),
+    ),
+)
+```
+
 Now that we have our domain objects set up, let's dive into how context receivers can simplify our code and make our job search application more efficient.
 
+## 2. The Road to Context Receivers
 
+To better introduce the context receivers feature, we need an example to work with. Let's consider function that needs to print the JSON representation of a list of jobs. We'll call this function `printAsJson`:
+
+```kotlin
+fun printAsJson(objs: List<Job>) =
+    objs.map { it.toJson() }.joinToString(separator = ", ", prefix = "[", postfix = "]")
+```
+
+If we try to compile this code, we'll get an error, since there is not `toJson` function defined on the `Job` class:
+
+```
+Unresolved reference: toJson
+```
+
+Since we don't want to pollute our domain model, we implement the `toJson` extension function for `Job` domain object.
+
+```kotlin
+fun Job.toJson(): String =
+    """
+        {
+            "id": ${id.value},
+            "company": "${company.name}",
+            "role": "${role.name}",
+            "salary": $salary.value}
+        }
+    """.trimIndent()
+```
+
+In Kotlin, we call the `Job` type the _receiver_ of the `toJson` function. The receiver is the object on which the function is invoked.
