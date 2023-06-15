@@ -189,7 +189,37 @@ Moreover, if you have a Scala of Haskell background, you might notice some inter
 
 The differences between Kotlin and Scala/Haskell is that we have not any implicit and automatic mechanism to find the right instance of the type class. In Scala 2, we have the `implicit` classes, and in Scala 3 we have `given` classes. In Kotlin, we still not have any auto-magic mechanism.
 
-## 3. Context Receivers
+## 3. Entering the Future: Context Receivers
+
+The approach we used so far reached the goal. However, it has some limitations. 
+
+The first one is that we add the `printAsJson` method to the `JsonScope` interface. However, the function has nothing to do with the `JsonScope` type. We placed there because it was the only technical possible solution offered. It's somewhat misleading: The `printAsJson` is not a method of the `JsonScope` type!
+
+Second, extension functions are only available on objects, and this is not always that we desire. For example, we don't want our developers to use the `printAsJson` in the following way:
+
+```kotlin
+jobJsonScope.printAsJson(JOBS_DATABASE.values.toList())
+```
+
+The problem here is that we can't avoid in any way the above usage of our DSL.
+
+Third, using extension functions with scopes we are limited to having only one receiver. For example, let's define a `Logger` interface, and an implementation that logs to the console:
+
+```kotlin
+interface Logger {
+    fun log(level: Level, message: String)
+}
+
+val consoleLogger = object : Logger {
+    override fun log(level: Level, message: String) {
+        println("[$level] $message")
+    }
+}
+```
+
+If we want to add the capability of logging to our `printAsJson` function, we can't do it, because it's defined on as an extension of the `JsonScope` interface, and we can't add a second receiver to the `printAsJson` function.
+
+To overcome these limitations, we need to introduce a new concept: the context receivers. Introduced as an experimental feature in Kotlin 1.6.20, their aim is to solve the above problems and to provide a more flexible maintainable code.
 
 
 
