@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "SW Yoo's blog"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title                    : "SW Yoo's note"
+title_separator          : "|"
+subtitle                 : "Whoever knocks presistently, ends by entering."
 name                     : "SW Yoo"
-description              : "An amazing website."
+description              : "SWYoo의 블로그입니다."
 url                      : "https://swyoo5.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
