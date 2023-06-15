@@ -138,7 +138,16 @@ interface JsonScope<T> {
 }
 ```
 
-Here, we introduced another characteristics of extension functions. In Kotlin, we call the `JsonScope<T>` the dispatcher receiver of the `toJson` function. In this way, we limit the visibility of the `toJson` function allowing to call it only inside the scope. We can access the dispatcher receiver in the function body as `this`. As we might guess, Kotlin represents the `this` reference as a union type of the dispatcher receiver and the receiver of the extension function.  
+Here, we introduced another characteristics of extension functions. In Kotlin, we call the `JsonScope<T>` the dispatcher receiver of the `toJson` function. In this way, we limit the visibility of the `toJson` function allowing to call it only inside the scope. We say that the `toJson` function is a context-dependent construct.
+
+We can access the dispatcher receiver in the function body as `this`. As we might guess, Kotlin represents the `this` reference as a union type of the dispatcher receiver and the receiver of the extension function. 
+
+```kotlin
+interface JsonScope<T> {    // <- dispatcher receiver
+    fun T.toJson(): String  // <- extension function receiver
+    // 'this' type in 'toJson' function is JsonScope<T> & T
+}
+```
 
 The `JsonScope<T>` is a safe place where we can call the `printAsJson` function since we know for sure we have access to a concrete implementation of the `toJson` function. Then, we define the `printAsJson` function as an extension function on the `JsonScope` interface:
 
@@ -173,6 +182,14 @@ fun main() {
     }
 }
 ```
+
+Did you feel we already encountered this pattern? Yes, we did. The [Kotlin coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/) heavily rely on the same pattern. All the coroutines builders, a.k.a. `launch`, `async`, are defined as extensions of the `CoroutineScope`, the dispatcher receiver and the safe place where we can call the `suspend` functions.
+
+Moreover, if you have a Scala of Haskell background, you might notice some interesting similarities with the [Type Classes](https://blog.rockthejvm.com/why-are-typeclasses-useful/). In fact, the `JsonScope` interface is a type class, and the `jobJsonScope` is an instance of the `JsonScope` type class for the `Job` type. If we were in Scala, we would have called the `JsonScope` type class as `Jsonable` or something like that.
+
+The differences between Kotlin and Scala/Haskell is that we have not any implicit and automatic mechanism to find the right instance of the type class. In Scala 2, we have the `implicit` classes, and in Scala 3 we have `given` classes. In Kotlin, we still not have any auto-magic mechanism.
+
+## 3. Context Receivers
 
 
 
