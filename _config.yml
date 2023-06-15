@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "SW Yoo"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Writing a blog for programming"
+  bio              : "blog for programming"
   location         : "South Korea, Busan"
   email            :
   links:
