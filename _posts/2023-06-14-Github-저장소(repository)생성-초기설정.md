@@ -75,10 +75,12 @@ git push
 ```
 
 - git add . : 수정된 모든 파일을 업로드하는 명령어
+
 - git commit : git commit 명령으로 파일들을 commit합니다. 이때 기록을 남겨 어떤 내용을 수정하였는지 등을 작성할 수 있습니다.
+
 - git push : 최종 업로드를 위해 git push를 합니다.
 
-  3.모든 작업이 완료된 후 Gituhb Repository로 이동하면 파일이 업로드 된 것을 확인할 수 있습니다.
+3.모든 작업이 완료된 후 Gituhb Repository로 이동하면 파일이 업로드 된 것을 확인할 수 있습니다.
 
 <img src="/assets/images/2023-06-14/9.png" width="600" height="100"/>
 
