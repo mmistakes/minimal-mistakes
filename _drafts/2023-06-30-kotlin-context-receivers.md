@@ -80,13 +80,13 @@ val JOBS_DATABASE: Map<JobId, Job> = mapOf(
 
 Now that we have our domain objects set up, let's dive into how context receivers can simplify our code and make our job search application more efficient.
 
-## 2. The Road to Context Receivers
+## 2. Dispatchers and Receivers
 
 To better introduce the context receivers feature, we need an example to work with. Let's consider function that needs to print the JSON representation of a list of jobs. We'll call this function `printAsJson`:
 
 ```kotlin
 fun printAsJson(objs: List<Job>) =
-    objs.map { it.toJson() }.joinToString(separator = ", ", prefix = "[", postfix = "]")
+    objs.joinToString(separator = ", ", prefix = "[", postfix = "]") { it.toJson() }
 ```
 
 If we try to compile this code, we'll get an error, since there is not `toJson` function defined on the `Job` class:
@@ -109,4 +109,74 @@ fun Job.toJson(): String =
     """.trimIndent()
 ```
 
-In Kotlin, we call the `Job` type the _receiver_ of the `toJson` function. The receiver is the object on which the function is invoked.
+In Kotlin, we call the `Job` type the _receiver_ of the `toJson` function. The receiver is the object on which the extension function is invoked and that is available in the function body as `this`.
+
+So far so good. We can now compile our code and print the JSON representation of a list of jobs:
+
+```kotlin
+fun main() {
+    JOBS_DATABASE.values.toList().let(::printAsJson)
+}
+```
+
+Now, we recognize the value of having a function that prints list of objects as JSON. We want to reuse this function in other parts of our application. However, we don't want to limit ourselves to printing only jobs as JSON. We want to be able to print any list of objects as JSON. So we decide to make the `printAsJson` function generic:
+
+```kotlin
+fun <T> printAsJson(objs: List<T>) =
+    objs.joinToString(separator = ", ", prefix = "[", postfix = "]") { it.toJson() }
+```
+
+However, we return to the original problem. We still don't have a `toJson` function defined on the `T` type. Moreover, we don't want to change the `Job` or any other type adding the implementation from some weird interface that adds the `toJson()` methods. For example, we could not have access to the code of the class to modify it.
+
+So, we want to execute our new parametric version of the `printAsJson` only in a scope where we know for sure there exist a `toJson` function defined on the `T` type. Let's start building all the pieces we need to achieve this goal.
+
+First, we need to define the safe scope. We start implementing it as an interface that defines the `toJson` function:
+
+```kotlin
+interface JsonScope<T> {
+    fun T.toJson(): String
+}
+```
+
+Here, we introduced another characteristics of extension functions. In Kotlin, we call the `JsonScope<T>` the dispatcher receiver of the `toJson` function. In this way, we limit the visibility of the `toJson` function allowing to call it only inside the scope. We can access the dispatcher receiver in the function body as `this`. As we might guess, Kotlin represents the `this` reference as a union type of the dispatcher receiver and the receiver of the extension function.  
+
+The `JsonScope<T>` is a safe place where we can call the `printAsJson` function since we know for sure we have access to a concrete implementation of the `toJson` function. Then, we define the `printAsJson` function as an extension function on the `JsonScope` interface:
+
+```kotlin
+fun <T> JsonScope<T>.printAsJson(objs: List<T>) =
+    objs.joinToString(separator = ", ", prefix = "[", postfix = "]") { it.toJson() }
+```
+
+The last part is to define the `JsonScope` implementation for the `Job` type. We can implement it as an anonymous object:
+
+```kotlin
+val jobJsonScope = object : JsonScope<Job> {
+    override fun Job.toJson(): String {
+        return """
+            {
+                "id": ${id.value},
+                "company": "${company.name}",
+                "role": "${role.name}",
+                "salary": $salary.value}
+            }
+        """.trimIndent()
+    }
+}
+```
+
+The last ring of the chain is to call the `printAsJson` function in the safe scope of the `jobJsonScope`. How can we do that? We can use one of the available scope functions in Kotlin. Usually, the `with` function is the preferred in such situations. This function takes a receiver and a lambda as arguments, and it executes the lambda in the scope of the receiver. In this way, we can call the `printAsJson` function in the safe scope of the `jobJsonScope`:
+
+```kotlin
+fun main() {
+    with(jobJsonScope) {
+        println(printAsJson(JOBS_DATABASE.values.toList()))
+    }
+}
+```
+
+
+
+
+
+
+
