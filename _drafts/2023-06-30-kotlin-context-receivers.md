@@ -304,7 +304,7 @@ fun <T> printAsJson(objs: List<T>): String {
 
 In this way, we can disambiguate the context we want to use in the case of multiple contexts defining functions with colliding names.
 
-Another interesting thing is that the `context` is part of the function signature. As we saw, we can have more than one function with the same signature with different contexts. How is it possible? The answer is in how the function looks like once it's compiled by the Kotlin compiler. The contexts are explicitly passed as arguments to the compiled function. For example, in the case of our last version of the `printAsJson` function  the Kotlin compiler generates the following signature:
+Another interesting thing is that the `context` is part of the function signature. As we saw, we can have more than one function with the same signature with different contexts. How is it possible? The answer is in how the function looks like once it's expanded by the Kotlin compiler. The contexts are explicitly passed as arguments to the compiled function. For example, in the case of our last version of the `printAsJson` function  the Kotlin compiler generates the following signature:
 
 ```java
 public static final <T> String printAsJson(JsonScope<T> jsonScope, Logger logger, List<T> objs)
