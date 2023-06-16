@@ -221,9 +221,91 @@ If we want to add the capability of logging to our `printAsJson` function, we ca
 
 To overcome these limitations, we need to introduce a new concept: the context receivers. Introduced as an experimental feature in Kotlin 1.6.20, their aim is to solve the above problems and to provide a more flexible maintainable code.
 
+In detail, context receivers are a way to add a context or a scope to a function, without the need to pass this context as an argument. If we revised how we solved the problem of the `printAsJson` function, we can see that we passed the context as an argument. In fact, the receiver of an extension function is passed to the function as an argument by the JVM once the function is interpreted in bytecode.
 
+Kotlin introduced a new keyword, `context` that allow us to specify the context needed by the function to execute. In our case, we can define a new version of the `printAsJson` function as:
 
+```kotlin
+context (JsonScope<T>)
+fun <T> printAsJson(objs: List<T>) =
+    objs.joinToString(separator = ", ", prefix = "[", postfix = "]") { it.toJson() } 
+```
 
+The `context` keyword is followed by the type of the context receiver. The context receivers are available as the `this`reference inside the function body. In our example, we can access the `toJson` extension function defined in the `JsonScope` interface.
 
+How can we bring a `JsonScope` instance into the scope of the `printAsJson` function? We can use the `with` function as we did before: (call-site)
 
+```kotlin
+fun main() {
+    with(jobJsonScope) {
+        println(printAsJson(JOBS_DATABASE.values.toList()))
+    }
+}
+```
 
+We just solved one of our problems with the previous solution. In fact, the `printAsJson` function is not available as a method of the `JsonScope` interface. We can't call it in the following way:
+
+```kotlin
+// Compilation error
+jobJsonScope.printAsJson(JOBS_DATABASE.values.toList())
+```
+
+Yuppy! We solved the first and the problems. What about having more than one context for our function? Fortunately, we can do it. In fact, the `context` keyword takes an array of types as arguments. For example, we can define a `printAsJson` function that takes a `JsonScope` and a `Logger` as context receivers, and uses the methods of both:
+
+```kotlin
+context (JsonScope<T>, Logger)
+fun <T> printAsJson(objs: List<T>): String {
+    log(Level.INFO, "Serializing $objs list as JSON")
+    return objs.joinToString(separator = ", ", prefix = "[", postfix = "]") { it.toJson() }
+} 
+```
+
+As we can see, we're using the `log` method of the `Logger` interface.
+
+Calling the new pimped version of the `printAsJson` function is straightforward. We can provide both contexts using the `with` function, as we did before:
+
+```kotlin
+fun main() {
+    with(jobJsonScope) {
+        with(consoleLogger) {
+            println(printAsJson(JOBS_DATABASE.values.toList()))
+        }
+    }
+} 
+```
+
+Finally, we solved all the problems we found with the previous solution.
+
+Inside the function using the `context` keyword, we can't access the context directly using the `this` keyword. For example, the following code doesn't compile:
+
+```kotlin
+context (JsonScope<T>, Logger)
+fun <T> printAsJson(objs: List<T>): String {
+    this.log(Level.INFO, "Serializing $objs list as JSON")
+    return objs.joinToString(separator = ", ", prefix = "[", postfix = "]") { it.toJson() }
+}
+```
+
+In fact, the compiler complains with the following error:
+
+```
+'this' is not defined in this context
+```
+
+However, we can access referencing a particular function from a context using the `@` notation, as follows:
+
+```kotlin
+context (JsonScope<T>, Logger)
+fun <T> printAsJson(objs: List<T>): String {
+    this@Logger.log(Level.INFO, "Serializing $objs list as JSON")
+    return objs.joinToString(separator = ", ", prefix = "[", postfix = "]") { it.toJson() }
+}
+```
+
+In this way, we can disambiguate the context we want to use in the case of multiple contexts defining functions with colliding names.
+
+Another interesting thing is that the `context` is part of the function signature. As we saw, we can have more than one function with the same signature with different contexts. How is it possible? The answer is in how the function looks like once it's compiled by the Kotlin compiler. The contexts are explicitly passed as arguments to the compiled function. For example, in the case of our last version of the `printAsJson` function  the Kotlin compiler generates the following signature:
+
+```java
+public static final <T> String printAsJson(JsonScope<T> jsonScope, Logger logger, List<T> objs)
+```
