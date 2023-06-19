@@ -309,3 +309,35 @@ Another interesting thing is that the `context` is part of the function signatur
 ```java
 public static final <T> String printAsJson(JsonScope<T> jsonScope, Logger logger, List<T> objs)
 ```
+
+Context receivers are available also at class level. For example, imagine we want to define a `Jobs` algebra, or module, that provides a set of functions to retrieve and persist the `Job` type. We can define it as follows:
+
+```kotlin
+interface Jobs {
+    suspend fun findById(id: JobId): Job?
+}
+```
+
+A possible implementation would need to produce some logging during the execution of its methods. To be sure an instance of the `Logger` interface is available, we can implement the `Jobs` interface as follows:
+
+```kotlin
+context (Logger)
+class LiveJobs : Jobs {
+    override suspend fun findById(id: JobId): Job? {
+        log(Level.INFO, "Searching job with id $id")
+        return JOBS_DATABASE[id]
+    }
+}
+```
+
+As we can see, we declared the `Logger` context at class level. In this way, we can access the `log` method of the `Logger` interface from any method of the `LiveJobs` implementation. To instantiate the `LiveJobs` class, we can use the `with` function as usual:
+
+```kotlin
+fun main() {
+    with(consoleLogger) {
+        val jobs = LiveJobs()
+    }
+}
+```
+
+The above code opens to an interesting question: should we use context receivers to implement an idiomatic form of dependency injection?
