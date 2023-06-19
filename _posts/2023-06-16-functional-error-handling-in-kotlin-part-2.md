@@ -1,6 +1,6 @@
 ---
 title: "Functional Error Handling in Kotlin, Part 2: Result and Either"
-date: 2023-06-01
+date: 2023-06-16
 header:
     image: "/images/blog cover.jpg"
 tags: [kotlin]
@@ -8,6 +8,8 @@ excerpt: "In this article, we continue our journey through functional error hand
 toc: true
 toc_label: "In this article"
 ---
+
+_By [Riccardo Cardin](https://github.com/rcardin)_
 
 In this series [first part](https://blog.rockthejvm.com/functional-error-handling-in-kotlin/), we introduced some of the available strategies to handle errors in a functional fashion using Kotlin and the Arrow library. In this second part, we'll continue our journey by looking at the `Result` and `Either` data types and how to use them to handle errors in a functional way.
 
@@ -369,7 +371,7 @@ maybeSalary.fold({
 
 ## 3. Composing `Result` Instances
 
-As we saw in the previous article, we often deal with types (usually some containers) that are "chainable" or "monadic" in structure (more details on [Another Take at Monads: A Way to Generalize Chained Computations](https://blog.rockthejvm.com/another-take-on-monads/)), so the crucial point is how we can compose and combine them.. In the first part of this series, we implemented a function that returns the gap between the job salary given a job id and the maximum compensation for the same company. We called the function `getSalaryGapWithMax`.
+As we saw in the previous article, we often deal with types (usually some containers) that are "chainable" or "monadic" in structure (more details on [Another Take at Monads: A Way to Generalize Chained Computations](https://blog.rockthejvm.com/another-take-on-monads/)), so the crucial point is how we can compose and combine them. In the first part of this series, we implemented a function that returns the gap between the job salary given a job id and the maximum compensation for the same company. We called the function `getSalaryGapWithMax`.
 
 We want to refactor the example using the `Result` type. First, we need to add the `findAll` function to the `Jobs` interface and implementation:
 
@@ -444,7 +446,7 @@ class JobService(private val jobs: Jobs, private val currencyConverter: Currency
 }
 ```
 
-As we said in the previous article, the absence of native support for monadic list-comprehension in Kotlin makes the code less readable if we use sequences of `flatMap` and `map` invocations. However, as we saw both for nullable types and for the `Option` type, **Arrow gives us nice DSLs to deal with the readability problem**. For the `Result`type, the DSL is called `result`:
+As we said in the previous article, the absence of native support for monadic comprehension in Kotlin makes the code less readable if we use sequences of `flatMap` and `map` invocations. However, as we saw both for nullable types and for the `Option` type, **Arrow gives us nice DSLs to deal with the readability problem**. For the `Result`type, the DSL is called `result`:
 
 ```kotlin
 // Arrow SDK
@@ -918,7 +920,7 @@ Either.Left(in.rcard.either.NegativeAmount@246b179d)
 
 What if we have to accumulate many errors, for example, while creating an object? The `Either` type in version 1.1.5 of Arrow does not fit this need. In fact, the `Validated` type suits better this use case. However, in the next version of Arrow, 1.2.0, the `Validated` class will be deprecated. In the next part of this series, we will learn how to accumulate errors directly using the new version of the `Either` type.
 
-[And that's all, folk!](https://www.youtube.com/watch?v=0FHEeG_uq5Y)
+And that's all, folks!
 
 ## 6. Conclusions
 
