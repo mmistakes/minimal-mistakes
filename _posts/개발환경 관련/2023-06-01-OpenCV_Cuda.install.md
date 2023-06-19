@@ -158,6 +158,21 @@ while ret:
   cv.imshow("test",frame)
 
 ```
+
+# 결론
+ C ++ 관련해서 동작확인 했지만 python 실행시 
+ 빌드하고 나서 
+python import cv 해보니 관련 오류가 발생했습니다
+
+ >>ImportError: DLL load failed while importing cv2: 지정된 모듈을 찾을 수 없습니다.
+
+ 물론 아무 개발 환경이 설치 되어있는 환경에서 설치에서 문제 없이 동작했으니 참고하셔서 개발 환경 구축에 성공하시기 바랍니다.
+ 
+ 혹시 이 글을 보시고 해당 문제 해결 법을 아시면 알려주시면 감사합니다.
+ 
+ 
+
+
 # 출처
 1. 쿠다 버젼
 https://ko.wikipedia.org/wiki/CUDA  
