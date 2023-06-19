@@ -17,6 +17,10 @@ For the project's setup, please refer to the first part of this series, in which
 
 Without further ado, let's get started!
 
+For the video version, watch below:
+
+{% include video id="C0B44WBJJmY" provider="youtube" %}
+
 ## 1. The Domain
 
 We'll use extensively the domain model we introduced in the last article. We want to create an application that manages a job board. The main types of the domain are:
