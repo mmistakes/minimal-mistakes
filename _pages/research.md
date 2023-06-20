@@ -7,7 +7,7 @@ toc: 	true # Optional	Show table of contents. (boolean)	false
 toc_label: Contents	# Optional	Table of contents title. (string)	toc_label in UI Text data file.
 #toc_icon:	Optional	Table of contents icon, displays before the title. (string)	Font Awesome  file-alt icon. Other FA icons can be used instead.
 toc_sticky: true	# Optional	Stick table of contents to top of screen.	false
-last_modified_at: 20-05-2022
+last_modified_at: 20-06-2022
 header:
   overlay_image: /assets/images/research_banner.jpg
   overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
@@ -19,10 +19,20 @@ The following are the projecting that Dr. Ahmed is contributing to.
 
 ![IMPC logo](/assets/images/IMPC_logo.png "Integrated Modelling Program for Canada"){: .align-right style="width: 20%;"}
 
-Dr. Ahmed is managing and leading the modelling efforts of Nelson-MiP project, which is funded by the Integrated Modelling Program for Canada (IMPC - Theme A6). The project involves testing multiple hydrologic models over the international Nelson-Churchill River basin in North America. The work is being conducted in collaboration with researchers and practitioners across Canada under the umbrella of this project. This project includes two-way knowledge transfer between researchers and practitioners to build better hydrologic models of the area. The participating models are test for their ability to simulate the streamflow and other hydrologic signatures of that complex basin.
+Dr. Ahmed is managing and leading the modelling efforts of Nelson-MIP project, which is funded by the Integrated Modelling Program for Canada (IMPC - Theme A6). The project involves testing multiple hydrologic models over the international Nelson-Churchill River basin in North America. The work is being conducted in collaboration with researchers and practitioners across Canada under the umbrella of this project. This project includes two-way knowledge transfer between researchers and practitioners to build better hydrologic models of the area. The participating models are test for their ability to simulate the streamflow and other hydrologic signatures of that complex basin.
+[Learn more](https://gwf.usask.ca/impc/science/research-themes/theme-a6.php){: .btn .btn--info}
+
+This study (Phase 0 and 1 only) was accepted for publication in Journal of Hydrology [DOI: 10.1016/j.jhydrol.2023.129820](https://doi.org/10.1016/j.jhydrol.2023.129820). The dataset for this study is pulished on the [Federated Research Data Repository](https://doi.org/10.20383/102.0705) and an interactive maps showing the models results are available below.
+
+### Phase 0 streamflow results:
+The following map displays the streamflow simulation results of the participating models using uncalibrated model setups.
+[Go to interactive map](https://uc-hal.github.io/Nelson-MIP/Phase_0_flow_map.html){: .btn .btn--info} 
+
+### Phase 1 streamflow results:
+The following map displays the streamflow simulation results of the participating models using calibrated model setups.
+[Go to interactive map](https://uc-hal.github.io/Nelson-MIP/Phase_1_flow_map.html){: .btn .btn--info} 
 {: .text-justify}
 
-[Learn more](https://gwf.usask.ca/impc/science/research-themes/theme-a6.php){: .btn .btn--info}
 
 ## Improving Current Hydrologic Models
 
