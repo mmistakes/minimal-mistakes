@@ -377,3 +377,44 @@ suspend fun main() {
 ```
 
 We can see that the `JobController` class has three context receivers: `Jobs`, `JsonScope<Job>`, and `Logger`. Inside the `findJobById` method, the contexts are accessed without any specification. The `log` method and the `findById` function are called as if they were part of the `JobController` class.
+
+With the above code, we totally lack the responsibility of each method. Who owns the function `findById` or the function `log`? In general, implicit function resolution is harder to read and understand, and thus it's harder to maintain. Moreover, we can't avoid name clashes when we start to use multiple contexts.
+
+We can change it and make it more explicit by using the `@` notation to access the context receivers. For example, we can rewrite the `findJobById` method as follows:
+
+```kotlin
+context (Jobs, JsonScope<Job>, Logger)
+class JobController {
+    suspend fun findJobById(id: String): String {
+        this@Logger.log(Level.INFO, "Searching job with id $id")
+        val jobId = JobId(id.toLong())
+        return this@Jobs.findById(jobId)?.let {
+            this@Logger.log(Level.INFO, "Job with id $id found")
+            return it.toJson()
+        } ?: "No job found with id $id"
+    }
+}
+```
+
+However, the notation is very verbose and makes the code less readable. Moreover, we can't avoid that a developer miss to use it.
+
+In Scala, we had a very close problem with the [Tagless Final encoding](https://blog.rockthejvm.com/tagless-final/) pattern. In the past, many Scala developers started to use the pattern to implement dependency injection. Using a similar approach of context receivers, Scala allows us to define type constraints. The `JobController` class would look like the following:
+
+```scala
+class JobController[F[_]: Monad: Jobs: JsonScope: Logger]: F[String] {
+    def findJobById(id: String): F[String] = {
+        Logger[F].log(Level.INFO, s"Searching job with id $id") *>
+        Jobs[F].findById(JobId(id.toLong)).flatMap {
+            case Some(job) =>
+                Logger[F].log(Level.INFO, s"Job with id $id found") *>
+                job.toJson.pure[F]
+            case None =>
+                s"No job found with id $id".pure[F]
+        }
+    }
+}
+```
+
+If you're not familiar with monads and higher-kinded types, forget about them. With the syntax `JobController[F[_]: Monad...` we're just saying that the `JobController` class performs some I/O, and we want to be able to describe such operations and chain them without effectively executing them. 
+
+
