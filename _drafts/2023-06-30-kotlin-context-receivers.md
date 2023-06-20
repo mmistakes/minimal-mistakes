@@ -341,3 +341,39 @@ fun main() {
 ```
 
 The above code opens to an interesting question: should we use context receivers to implement an idiomatic form of dependency injection?
+
+## 4. What Are Context Receivers Suitable For?
+
+Now that we understand the basics of context receivers, we can ask ourselves: what are they suitable for? In the previous section, we already saw how to use them to implement a form of type classes, or ad-hoc polymorphism. However, the last example we made using them at `class` definition level seems to fit quite well with the concept of dependency injection.
+
+Let's try to understand if context receivers are suitable for dependency injection with an example. Let's say we have a `JobsController` class that exposes jobs as JSON, and uses a `Jobs` module to retrieve them. We can define it as follows:
+
+```kotlin
+context (Jobs, JsonScope<Job>, Logger)
+class JobController {
+    suspend fun findJobById(id: String): String {
+        log(Level.INFO, "Searching job with id $id")
+        val jobId = JobId(id.toLong())
+        return findById(jobId)?.let {
+            log(Level.INFO, "Job with id $id found")
+            return it.toJson()
+        } ?: "No job found with id $id"
+    }
+}
+```
+
+To use the `JobController` class, we need to provide the three contexts it requires. We can do it using the `with` scope function, as we previously did:
+
+```kotlin
+suspend fun main() {
+    with(jobJsonScope) {
+        with(consoleLogger) {
+            with(LiveJobs()) {
+                JobController().findJobById("1").also(::println)
+            }
+        }
+    }
+}
+```
+
+We can see that the `JobController` class has three context receivers: `Jobs`, `JsonScope<Job>`, and `Logger`. Inside the `findJobById` method, the contexts are accessed without any specification. The `log` method and the `findById` function are called as if they were part of the `JobController` class.
