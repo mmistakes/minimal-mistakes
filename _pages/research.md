@@ -19,17 +19,20 @@ The following are the projecting that Dr. Ahmed is contributing to.
 
 ![IMPC logo](/assets/images/IMPC_logo.png "Integrated Modelling Program for Canada"){: .align-right style="width: 20%;"}
 
-Dr. Ahmed is managing and leading the modelling efforts of Nelson-MIP project, which is funded by the Integrated Modelling Program for Canada (IMPC - Theme A6). The project involves testing multiple hydrologic models over the international Nelson-Churchill River basin in North America. The work is being conducted in collaboration with researchers and practitioners across Canada under the umbrella of this project. This project includes two-way knowledge transfer between researchers and practitioners to build better hydrologic models of the area. The participating models are test for their ability to simulate the streamflow and other hydrologic signatures of that complex basin.
+Dr. Ahmed is managing and leading the modelling efforts of Nelson-MIP project, which is funded by the Integrated Modelling Program for Canada (IMPC - Theme A6). The project involves testing multiple hydrologic models over the international Nelson-Churchill River basin in North America. The work is being conducted in collaboration with researchers and practitioners across Canada under the umbrella of this project. This project includes two-way knowledge transfer between researchers and practitioners to build better hydrologic models of the area. The participating models are tested for their ability to simulate the streamflow and other hydrologic signatures of that complex basin.
+
 [Learn more](https://gwf.usask.ca/impc/science/research-themes/theme-a6.php){: .btn .btn--info}
 
-This study (Phase 0 and 1 only) was accepted for publication in Journal of Hydrology [DOI: 10.1016/j.jhydrol.2023.129820](https://doi.org/10.1016/j.jhydrol.2023.129820). The dataset for this study is pulished on the [Federated Research Data Repository](https://doi.org/10.20383/102.0705) and an interactive maps showing the models results are available below.
+This study (Phase 0 and 1 only) was accepted for publication in the Journal of Hydrology [link](https://doi.org/10.1016/j.jhydrol.2023.129820). The dataset for this study is published on the [Federated Research Data Repository](https://doi.org/10.20383/102.0705) and interactive maps showing the models' results are available below.
 
 ### Phase 0 streamflow results:
 The following map displays the streamflow simulation results of the participating models using uncalibrated model setups.
+
 [Go to interactive map](https://uc-hal.github.io/Nelson-MIP/Phase_0_flow_map.html){: .btn .btn--info} 
 
 ### Phase 1 streamflow results:
 The following map displays the streamflow simulation results of the participating models using calibrated model setups.
+
 [Go to interactive map](https://uc-hal.github.io/Nelson-MIP/Phase_1_flow_map.html){: .btn .btn--info} 
 {: .text-justify}
 
@@ -38,14 +41,14 @@ The following map displays the streamflow simulation results of the participatin
 
 ![GWF logo](/assets/images/GWF_logo.png "Global Water Futures"){: .align-right style="width: 20%;"}
 
-Currently available hydrologic models cannot simulate the hydrology of the prairies quite well because they do not have a proper representation of prairie potholes and their dynamics. Therefore, this project focuses on enhancing current models by properly representing the prairie pothole in them. Two models are being modified: Canadian MESH land surface model (used by ECCC) and the HYPE model (used in Canada and Europe). This project improves the estimation of the flow quantities in prairie rivers.
+Currently available hydrologic models cannot simulate the hydrology of the prairies quite well because they do not have a proper representation of prairie potholes and their dynamics. Therefore, this project focuses on enhancing current models by properly representing the prairie pothole in them. Two models are being modified: the Canadian MESH land surface model (used by ECCC) and the HYPE model (used in Canada and Europe). This project improves the estimation of the flow quantities in prairie rivers.
 {: .text-justify}
 
 [Learn more](https://gwf.usask.ca/core-modelling/index.php){: .btn .btn--info}
 
 ## Flood Inundation Mapping
 
-Dr. Ahmed is involved in multiple projects that invistigate how the flooding extents will change under future climate for multiple cities/communities across Western Canada. The projects also look at tries to identify the change in the flooding extents when altering regulation scenarios of major lakes/reservoirs that are nearby the studied areas.
+Dr. Ahmed is involved in multiple projects that investigate how the flooding extents will change under future climate for multiple cities/communities across Western Canada. The projects also look at trying to identify the change in the flooding extent when altering regulation scenarios of major lakes/reservoirs that are nearby the studied areas.
 {: .text-justify}
 ______________
 
