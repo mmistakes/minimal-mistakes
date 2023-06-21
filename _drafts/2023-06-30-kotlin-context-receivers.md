@@ -415,6 +415,40 @@ class JobController[F[_]: Monad: Jobs: JsonScope: Logger]: F[String] {
 }
 ```
 
-If you're not familiar with monads and higher-kinded types, forget about them. With the syntax `JobController[F[_]: Monad...` we're just saying that the `JobController` class performs some I/O, and we want to be able to describe such operations and chain them without effectively executing them. 
+If you're not familiar with monads and higher-kinded types in Scala, don't worry. With the syntax `JobController[F[_]: Monad...` we're just saying that the `JobController` class performs some I/O, and we want to be able to describe such operations and chain them without effectively executing them. It's the same reason for which we added the `suspend` keyword to the `findJobById` method in the Kotlin example. The rest of type constraints define the contexts we need to perform the I/O operations. Then, the Scala compiler tries to implicitly resolve the contexts every time it finds a `Jobs[F]` or a `Logger[F]` in the code (Kotlin still doesn't implement automatic resolution of implicit contexts). It's called summoned value pattern, and it's implemented by a code similar to the following:
+
+```scala
+object Jobs {
+  def apply[F[_]](implicit jobs: Jobs[F]): Jobs[F] = jobs
+}
+```
+
+Anyway, in Scala, the above approach is considered an anti-pattern. In fact, while the `Monad[F]` and  `JsonScope[F]` are type classes and then represent classes that have a coherent behavior among their concrete implementations, the `Jobs[F]` and `Logger[F]` are not. So, we're mixing apples with oranges.
+
+Business logic algebras should always be passed explicitly.
+
+We can make an exception for common effects that would be share by many of the services of our application, such as the `Logger` context in our example. In this way, we can avoid pollution of the constructors signatures with the `Logger` context everywhere.
+
+Summing up, our `JobController` class should be rewritten as follows:
+
+```kotlin
+context (JsonScope<Job>, Logger)
+class JobController(private val jobs: Jobs) {
+    suspend fun findJobById(id: String): String {
+        log(Level.INFO, "Searching job with id $id")
+        val jobId = JobId(id.toLong())
+        return jobs.findById(jobId)?.let {
+            log(Level.INFO, "Job with id $id found")
+            return it.toJson()
+        } ?: "No job found with id $id"
+    }
+}
+```
+
+As we can see, the code it's easier to read. The responsibilities of each method call are clear and explicit.
+
+So, although it's possible to implement dependency injection through context receivers, the final solution has a lot of concerns and should be avoided.
+
+The final use case for context receivers is to help dealing with typed errors. In fact, newer version of the Arrow library uses context receivers to implement a smart mechanism to handle typed errors when using functional error handling. However, we'll see this in the next article of the series "Functional Error Handling in Kotlin". You can find the first two parts of the series [here](https://blog.rockthejvm.com/functional-error-handling-in-kotlin/) and [here](https://blog.rockthejvm.com/functional-error-handling-in-kotlin-part-2/).
 
 
