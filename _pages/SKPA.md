@@ -12,10 +12,6 @@ gallery1:
     image_path: /assets/images/SKPA/Block_02.jpg
     alt: "placeholder image 5"
     title: "Juan Jose Rondon Airport, Paipa, Colombia"
-  - url: /assets/images/SKPA/Block_03.jpg
-    image_path: /assets/images/SKPA/Block_03.jpg
-    alt: "placeholder image 5"
-    title: "Juan Jose Rondon Airport, Paipa, Colombia"
   - url: /assets/images/SKPA/Block_04.jpg
     image_path: /assets/images/SKPA/Block_04.jpg
     alt: "placeholder image 5"
@@ -73,7 +69,7 @@ Available in the MSFS Marketplace
 
 Disponible en el Marketplace de MSFS
 
-{% include figure image_path="/assets/images/SKPA/Block_01.jpg" alt="SKPA" caption="Juan Jose Rondon Airport, Paipa, Colombia" %}
+{% include figure image_path="/assets/images/SKPA/Block_07.jpg" alt="SKPA" caption="Juan Jose Rondon Airport, Paipa, Colombia" %}
 Juan Jose Rondon Airport
 
 Created by V Pilot Designs
