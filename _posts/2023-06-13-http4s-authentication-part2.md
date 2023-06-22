@@ -67,7 +67,7 @@ Each time a user requests for the HOTP, the counter is incremented. When the ser
 It is possible to generate many HOTP tokens without validating with the server, this throws the two entities out of sync, because of this, different HOTP generators provide different methods for resynchronization.
 The HOTP standard is defined under [RFC 4226](https://www.ietf.org/rfc/rfc4226.txt) which gives a detailed explanation of how HOTP operates.
 
-#### 2.1.0 HOTP scala implementation
+**HOTP scala implementation**
 
 HOTP generation is quite tedious, therefore for simplicity, we will use a java library, [otp-java](https://github.com/BastiaanJansen/otp-java) by Bastiaan Jansen.
 First, we'll need to acquire a secret key. The library provides a mechanism to generate this.
@@ -108,7 +108,7 @@ Remember the client and server must keep their counters in sync for the verifica
 
 The TOTP token is generated similarly to HOTP with the main difference being the moving factor. Here the moving factor is based on a time counter. The time counter is calculated by dividing the current Unix time by a timestep value which is the life span of a TOTP usually 30 seconds.
 
-#### 2.2.0 TOTP scala implementation
+**TOTP scala implementation**
 
 Otp-java also provides an implementation for TOTP token generation.
 
