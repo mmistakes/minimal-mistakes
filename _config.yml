@@ -132,6 +132,12 @@ author:
       url: "/categories/#error"
     - label: "CONCEPT"
       url: "/categories/#concept"
+    - label: "ANDROID"
+      url: "/categories/#android"
+    - label: "IOS"
+      url: "/categories/#ios"
+    - label: "잡담"
+      url: "/categories/#잡담"
 
 # Site Footer
 footer:

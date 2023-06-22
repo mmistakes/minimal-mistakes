@@ -24,7 +24,12 @@ docs:
         url: /categories/#error
       - title: "CONCEPT"
         url: /categories/#concept
-        
+      - title: "ANDROID"
+        url: /categories/#android
+      - title: "IOS"
+        url: /categories/#ios
+      - title: "잡담"
+        url: /categories/#잡담
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
