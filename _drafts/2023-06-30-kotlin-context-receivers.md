@@ -191,19 +191,19 @@ The difference between Kotlin and Scala/Haskell is that we do not have any impli
 
 ## 3. Entering the Future: Context Receivers
 
-The approach we used so far reached the goal. However, it has some limitations. 
+The approach we used so far reached the goal. However, it has some limitations.
 
-The first one is that we add the `printAsJson` method to the `JsonScope` interface. However, the function has nothing to do with the `JsonScope` type. We placed there because it was the only technical possible solution offered. It's somewhat misleading: The `printAsJson` is not a method of the `JsonScope` type!
+First, we add the `printAsJson` method to the `JsonScope` interface. However, the function has nothing to do with the `JsonScope` type. We placed it there because it was the only technical possible solution offered. It's somewhat misleading: The `printAsJson` is not a method of the `JsonScope` type!
 
-Second, extension functions are only available on objects, and this is not always that we desire. For example, we don't want our developers to use the `printAsJson` in the following way:
+Second, extension functions are only available on objects, which is only sometimes what we desire. For example, we don't want our developers to use the `printAsJson` in the following way:
 
 ```kotlin
 jobJsonScope.printAsJson(JOBS_DATABASE.values.toList())
 ```
 
-The problem here is that we can't avoid in any way the above usage of our DSL.
+The problem here is that we can't avoid the above usage of our DSL.
 
-Third, using extension functions with scopes we are limited to having only one receiver. For example, let's define a `Logger` interface, and an implementation that logs to the console:
+Third, we are limited to having only one receiver using extension functions with scopes. For example, let's define a `Logger` interface and an implementation that logs to the console:
 
 ```kotlin
 interface Logger {
@@ -217,13 +217,13 @@ val consoleLogger = object : Logger {
 }
 ```
 
-If we want to add the capability of logging to our `printAsJson` function, we can't do it, because it's defined on as an extension of the `JsonScope` interface, and we can't add a second receiver to the `printAsJson` function.
+Suppose we want to add logging capability to our `printAsJson` function. In that case, we can't do it because it's defined as an extension of the `JsonScope` interface, and we can't add a second receiver to the `printAsJson` function.
 
-To overcome these limitations, we need to introduce a new concept: the context receivers. Introduced as an experimental feature in Kotlin 1.6.20, their aim is to solve the above problems and to provide a more flexible maintainable code.
+To overcome these limitations, we must introduce a new concept: context receivers. Presented as an experimental feature in Kotlin 1.6.20, their aim is to solve the above problems and to provide a more flexible maintainable code.
 
-In detail, context receivers are a way to add a context or a scope to a function, without the need to pass this context as an argument. If we revised how we solved the problem of the `printAsJson` function, we can see that we passed the context as an argument. In fact, the receiver of an extension function is passed to the function as an argument by the JVM once the function is interpreted in bytecode.
+In detail, context receivers are a way to add a context or a scope to a function without passing this context as an argument. If we revised how we solved the problem of the `printAsJson` function problem, we could see that we passed the context as an argument. In fact, the receiver of an extension function is passed to the function as an argument by the JVM once the function is interpreted in bytecode.
 
-Kotlin introduced a new keyword, `context` that allow us to specify the context needed by the function to execute. In our case, we can define a new version of the `printAsJson` function as:
+Kotlin introduced a new keyword, `context`, that allows us to specify the context the function needs to execute. In our case, we can define a new version of the `printAsJson` function as:
 
 ```kotlin
 context (JsonScope<T>)
@@ -231,9 +231,9 @@ fun <T> printAsJson(objs: List<T>) =
     objs.joinToString(separator = ", ", prefix = "[", postfix = "]") { it.toJson() } 
 ```
 
-The `context` keyword is followed by the type of the context receiver. The context receivers are available as the `this`reference inside the function body. In our example, we can access the `toJson` extension function defined in the `JsonScope` interface.
+The `context` keyword is followed by the type of the context receiver. The context receivers are available as the `this` reference inside the function body. Our example allows us to access the `toJson` extension function defined in the `JsonScope` interface.
 
-How can we bring a `JsonScope` instance into the scope of the `printAsJson` function? We can use the `with` function as we did before: (call-site)
+How can we bring a `JsonScope` instance into the scope of the `printAsJson` function? We can use the `with` function as we did before (call-site):
 
 ```kotlin
 fun main() {
@@ -250,7 +250,7 @@ We just solved one of our problems with the previous solution. In fact, the `pri
 jobJsonScope.printAsJson(JOBS_DATABASE.values.toList())
 ```
 
-Yuppy! We solved the first and the problems. What about having more than one context for our function? Fortunately, we can do it. In fact, the `context` keyword takes an array of types as arguments. For example, we can define a `printAsJson` function that takes a `JsonScope` and a `Logger` as context receivers, and uses the methods of both:
+Yuppy! We solved the first and the problems. What about having more than one context for our function? Fortunately, we can do it. In fact, the `context` keyword takes an array of types as arguments. For example, we can define a `printAsJson` function that takes a `JsonScope` and a `Logger` as context receivers and uses the methods of both:
 
 ```kotlin
 context (JsonScope<T>, Logger)
@@ -304,13 +304,13 @@ fun <T> printAsJson(objs: List<T>): String {
 
 In this way, we can disambiguate the context we want to use in the case of multiple contexts defining functions with colliding names.
 
-Another interesting thing is that the `context` is part of the function signature. As we saw, we can have more than one function with the same signature with different contexts. How is it possible? The answer is in how the function looks like once it's expanded by the Kotlin compiler. The contexts are explicitly passed as arguments to the compiled function. For example, in the case of our last version of the `printAsJson` function  the Kotlin compiler generates the following signature:
+Another exciting thing is that the `context` is part of the function signature. As we saw, we can have multiple functions with the same signature in different contexts. How is it possible? The answer is how the function looks once it's expanded by the Kotlin compiler. The contexts are explicitly passed as arguments to the compiled function. For example, in the case of our last version of the `printAsJson` function, the Kotlin compiler generates the following signature:
 
 ```java
 public static final <T> String printAsJson(JsonScope<T> jsonScope, Logger logger, List<T> objs)
 ```
 
-Context receivers are available also at class level. For example, imagine we want to define a `Jobs` algebra, or module, that provides a set of functions to retrieve and persist the `Job` type. We can define it as follows:
+Context receivers are also available at the class level. For example, imagine we want to define a `Jobs` algebra, or module, that provides a set of functions to retrieve and persist the `Job` type. We can define it as follows:
 
 ```kotlin
 interface Jobs {
@@ -330,7 +330,7 @@ class LiveJobs : Jobs {
 }
 ```
 
-As we can see, we declared the `Logger` context at class level. In this way, we can access the `log` method of the `Logger` interface from any method of the `LiveJobs` implementation. To instantiate the `LiveJobs` class, we can use the `with` function as usual:
+As we can see, we declared the `Logger` context at the class level. In this way, we can access the `log` method of the `Logger` interface from any `LiveJobs` implementation methods. To instantiate the `LiveJobs` class, we can use the `with` function as usual:
 
 ```kotlin
 fun main() {
@@ -340,7 +340,7 @@ fun main() {
 }
 ```
 
-The above code opens to an interesting question: should we use context receivers to implement an idiomatic form of dependency injection?
+The above code opens an interesting question: should we use context receivers to implement an idiomatic form of dependency injection?
 
 ## 4. What Are Context Receivers Suitable For?
 
