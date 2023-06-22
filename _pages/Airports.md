@@ -37,7 +37,7 @@ toc: true
 ## [SKPA - Juan Jose Rondon Airport - Paipa, Colombia](https://vpilotdesigns.github.io/SKPA/)
 <p><a href="https://vpilotdesigns.github.io/SKPA/"><strong>Galeria/Gallery</strong></a><br>
   <br></p>
-{% include figure image_path="/assets/images/SKPA/Block_06.jpg" alt="mpto" caption="Juan Jose Rondon Airport - Paipa, Colombia for MSFS" %}
+{% include figure image_path="/assets/images/SKPA/Block_07.jpg" alt="mpto" caption="Juan Jose Rondon Airport - Paipa, Colombia for MSFS" %}
 
 ## [SKUI - El Caraño Airport - Quibdo, Colombia](https://vpilotdesigns.github.io/SKUI/)
 <p><a href="https://vpilotdesigns.github.io/SKUI/"><strong>Galeria/Gallery</strong></a><br>
