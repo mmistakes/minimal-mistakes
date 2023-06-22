@@ -9,21 +9,21 @@ toc: true
 toc_label: ""
 ---
 
-This article will explore a powerful feature of the Kotlin programming language called context receivers. If you're a Kotlin developer looking to write cleaner and more expressive code, context receivers are a tool you'll definitely want in your toolbox.
+This article will explore a powerful feature of the Kotlin programming language called context receivers. If you're a Kotlin developer looking to write cleaner and more expressive code, context receivers are a tool you'll want in your toolbox.
 
 In Kotlin, context receivers provide a convenient way to access functions and properties of multiple receivers within a specific scope. Whether you're working with interfaces, classes, or type classes, context receivers allow you to streamline your code and enhance its maintainability.
 
-We'll take a deep dive into context receivers, starting with their purpose and benefits. We'll explore practical examples and demonstrate how context receivers can make your Kotlin code more expressive and efficient. So let's get started and unlock the full potential of context receivers in Kotlin!
+We'll dive deeply into context receivers, starting with their purpose and benefits. We'll explore practical examples and demonstrate how context receivers can make your Kotlin code more expressive and efficient. So let's get started and unlock the full potential of context receivers in Kotlin!
 
 ## 1. Setup
 
-To start harnessing the power of context receivers in your Kotlin project, let's go through the setup steps. We'll be using Gradle with the Kotlin DSL and enabling the context receivers compiling option. Make sure you have Kotlin version 1.8.22 or later installed before proceeding.
+Let's go through the setup steps to harness the power of context receivers in your Kotlin project. We'll use Gradle with the Kotlin DSL and enable the context receivers compiling option. Make sure you have Kotlin version 1.8.22 or later installed before proceeding.
 
 We'll use nothing more than the Kotlin standard library this time on top of Java 19. At the end of the article, we'll provide the complete `build.gradle.kts` file for your reference.
 
-If you want to try generating the project you own, just type `gradle init` on a command line, and answer to the questions you'll be asked.
+If you want to try generating the project you own, just type `gradle init` on a command line, and answer the questions you'll be asked.
 
-Context receivers are still an experimental feature. Hence, they're not enabled by default. To enable the context receivers compiling option, we need to modify the Gradle configuration. Add the `kotlinOptions` block within the `tasks.withType<KotlinCompile>` block in your `build.gradle.kts` file:
+Context receivers are still an experimental feature. Hence, they're not enabled by default. We need to modify the Gradle configuration. Add the `kotlinOptions` block within the `tasks.withType<KotlinCompile>` block in your `build.gradle.kts` file:
 
 ```kotlin
 tasks.withType<KotlinCompile>().configureEach {
@@ -455,3 +455,53 @@ The final use case for context receivers is to help dealing with typed errors. I
 
 It's time to sum up. In this article, we introduced the experimental feature of context receivers in Kotlin. First, we saw the problem it addresses using the use case of type classes, and we first implemented it through extension functions and dispatcher receivers. Then, we saw how context receivers could improve the solution. Finally, we focused on strengths and weaknesses of context receivers, and we proved that they're not a good solution for dependency injection, as Tagless final encoding isn't for Scala in this case. In the next article, we will see how context receivers can help us to handle typed errors in a functional way and how they'll be used in the next version of the Arrow library.
 
+## 6. Appendix: Gradle Configuration
+
+As we promised you, here is the Gradle configuration we used to compile the code in this article.
+
+TODO: Verify it
+
+```kotlin
+plugins {
+    // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
+    id("org.jetbrains.kotlin.jvm") version "1.8.22"
+
+    // Apply the application plugin to add support for building a CLI application in Java.
+    application
+}
+
+repositories {
+    // Use Maven Central for resolving dependencies.
+    mavenCentral()
+}
+
+dependencies {
+    // Use the Kotlin JUnit 5 integration.
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
+
+    // Use the JUnit 5 integration.
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.9.1")
+}
+
+// Apply a specific Java toolchain to ease working on different environments.
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(19))
+    }
+}
+
+application {
+    // Define the main class for the application.
+    mainClass.set("in.rcard.context.receivers.AppKt")
+}
+
+tasks.named<Test>("test") {
+    // Use JUnit Platform for unit tests.
+    useJUnitPlatform()
+}
+tasks.withType<KotlinCompile>().configureEach {
+    kotlinOptions {
+        freeCompilerArgs = freeCompilerArgs + "-Xcontext-receivers"
+    }
+}
+```
