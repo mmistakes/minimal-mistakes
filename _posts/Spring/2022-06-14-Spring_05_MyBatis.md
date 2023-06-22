@@ -1,7 +1,7 @@
 ---
 layout : single
 title : Spring MyBatis Mapper
-categories: SPRING
+categories: Spring
 tags: [SPRING]
 toc:  true
 toc_icon: "bars"

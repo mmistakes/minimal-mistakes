@@ -1,7 +1,7 @@
 ---
 layout : single
 title : Spring RedirectAttributes
-categories: SPRING
+categories: Spring
 tags: [SPRING]
 toc:  true
 toc_icon: "bars"
