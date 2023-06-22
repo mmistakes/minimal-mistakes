@@ -451,4 +451,7 @@ So, although it's possible to implement dependency injection through context rec
 
 The final use case for context receivers is to help dealing with typed errors. In fact, newer version of the Arrow library uses context receivers to implement a smart mechanism to handle typed errors when using functional error handling. However, we'll see this in the next article of the series "Functional Error Handling in Kotlin". You can find the first two parts of the series [here](https://blog.rockthejvm.com/functional-error-handling-in-kotlin/) and [here](https://blog.rockthejvm.com/functional-error-handling-in-kotlin-part-2/).
 
+## 5. Conclusion
+
+It's time to sum up. In this article, we introduced the experimental feature of context receivers in Kotlin. First, we saw the problem it addresses using the use case of type classes, and we first implemented it through extension functions and dispatcher receivers. Then, we saw how context receivers could improve the solution. Finally, we focused on strengths and weaknesses of context receivers, and we proved that they're not a good solution for dependency injection, as Tagless final encoding isn't for Scala in this case. In the next article, we will see how context receivers can help us to handle typed errors in a functional way and how they'll be used in the next version of the Arrow library.
 
