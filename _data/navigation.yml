@@ -7,34 +7,34 @@ main:
   - title: "Search"
     url: /search/
 
-docs:
-  - title: "목록"
-    children:
-      - title: "JAVA"
-        url: /categories/#java
-      - title: "SQL"
-        url: /categories/#sql
-      - title: "JSP"
-        url: /categories/#jsp
-      - title: "SPRING"
-        url: /categories/#spring
-      - title: "PROJECT"
-        url: /categories/#project
-      - title: "ERROR"
-        url: /categories/#error
-      - title: "CONCEPT"
-        url: /categories/#concept
-      - title: "ANDROID"
-        url: /categories/#android
-      - title: "IOS"
-        url: /categories/#ios
-      - title: "잡담"
-        url: /categories/#잡담
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+#docs:
+#  - title: "목록"
+#    children:
+#      - title: "JAVA"
+#        url: /categories/#java
+#      - title: "SQL"
+#        url: /categories/#sql
+#      - title: "JSP"
+#        url: /categories/#jsp
+#      - title: "SPRING"
+#        url: /categories/#spring
+#      - title: "PROJECT"
+#        url: /categories/#project
+#      - title: "ERROR"
+#        url: /categories/#error
+#      - title: "CONCEPT"
+#        url: /categories/#concept
+#      - title: "ANDROID"
+#        url: /categories/#android
+#      - title: "IOS"
+#        url: /categories/#ios
+#      - title: "잡담"
+#        url: /categories/#잡담
+#   - title: "About"
+#     url: https://mmistakes.github.io/minimal-mistakes/about/
+#   - title: "Sample Posts"
+#     url: /year-archive/
+#   - title: "Sample Collections"
+#     url: /collection-archive/
+#   - title: "Sitemap"
+#     url: /sitemap/
