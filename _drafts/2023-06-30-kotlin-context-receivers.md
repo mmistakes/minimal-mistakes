@@ -128,7 +128,7 @@ fun <T> printAsJson(objs: List<T>) =
 
 However, we return to the original problem. We still don't have a `toJson` function defined on the `T` type. Moreover, we don't want to change the `Job` or any other type adding the implementation from some weird interface that adds the `toJson()` methods. For example, we could not have access to the code of the class to modify it.
 
-So, we want to execute our new parametric version of the `printAsJson` only in a scope where we know there is a `toJson` function defined on the `T` type. Let's start building all the pieces we need to achieve this goal.
+So, we want to execute our new parametric version of the `printAsJson` only in a scope where we know a `toJson` function is defined on the `T` type. Let's start building all the pieces we need to achieve this goal.
 
 First, we need to define the safe scope. We start implementing it as an interface that defines the `toJson` function:
 
@@ -149,7 +149,7 @@ interface JsonScope<T> {    // <- dispatcher receiver
 }
 ```
 
-The `JsonScope<T>` is a safe place where we can call the `printAsJson` function since we know we have access to a concrete implementation of the `toJson` function. Then, we define the `printAsJson` function as an extension function on the `JsonScope` interface:
+The `JsonScope<T>` is a safe place to call the `printAsJson` function since we know we have access to a concrete implementation of the `toJson` function. Then, we define the `printAsJson` function as an extension function on the `JsonScope` interface:
 
 ```kotlin
 fun <T> JsonScope<T>.printAsJson(objs: List<T>) =
@@ -201,7 +201,7 @@ Second, extension functions are only available on objects, which is only sometim
 jobJsonScope.printAsJson(JOBS_DATABASE.values.toList())
 ```
 
-The problem here is that we can't avoid the above usage of our DSL.
+The problem is that we can't avoid the above usage of our DSL.
 
 Third, we are limited to having only one receiver using extension functions with scopes. For example, let's define a `Logger` interface and an implementation that logs to the console:
 
@@ -344,9 +344,9 @@ The above code opens an interesting question: should we use context receivers to
 
 ## 4. What Are Context Receivers Suitable For?
 
-Now that we understand the basics of context receivers, we can ask ourselves: what are they suitable for? In the previous section, we already saw how to use them to implement a form of type classes, or ad-hoc polymorphism. However, the last example we made using them at `class` definition level seems to fit quite well with the concept of dependency injection.
+Now that we understand the basics of context receivers, we can ask ourselves: what are they suitable for? In the previous section, we already saw how to use them to implement type classes or ad-hoc polymorphism. However, the last example we made using them at the `class` definition level seems to fit quite well with the concept of dependency injection.
 
-Let's try to understand if context receivers are suitable for dependency injection with an example. Let's say we have a `JobsController` class that exposes jobs as JSON, and uses a `Jobs` module to retrieve them. We can define it as follows:
+Let's try to understand if context receivers are suitable for dependency injection with an example. Let's say we have a `JobsController` class that exposes jobs as JSON and uses a `Jobs` module to retrieve them. We can define it as follows:
 
 ```kotlin
 context (Jobs, JsonScope<Job>, Logger)
@@ -362,7 +362,7 @@ class JobController {
 }
 ```
 
-To use the `JobController` class, we need to provide the three contexts it requires. We can do it using the `with` scope function, as we previously did:
+To use the `JobController` class, we must provide the three required contexts. We can do it using the `with` scope function, as we previously did:
 
 ```kotlin
 suspend fun main() {
@@ -376,11 +376,11 @@ suspend fun main() {
 }
 ```
 
-We can see that the `JobController` class has three context receivers: `Jobs`, `JsonScope<Job>`, and `Logger`. Inside the `findJobById` method, the contexts are accessed without any specification. The `log` method and the `findById` function are called as if they were part of the `JobController` class.
+We can see that the `JobController` class has three context receivers: `Jobs`, `JsonScope<Job>`, and `Logger`. Inside the `findJobById` method, the contexts are accessed without specification. The `log` method and the `findById` function are called as part of the `JobController` class.
 
-With the above code, we totally lack the responsibility of each method. Who owns the function `findById` or the function `log`? In general, implicit function resolution is harder to read and understand, and thus it's harder to maintain. Moreover, we can't avoid name clashes when we start to use multiple contexts.
+With the above code, we totally need more responsibility for each method. Who owns the function `findById` or the function `log`? In general, implicit function resolution is harder to read and understand and, thus, harder to maintain. Moreover, we can't avoid name clashes when using multiple contexts.
 
-We can change it and make it more explicit by using the `@` notation to access the context receivers. For example, we can rewrite the `findJobById` method as follows:
+We can change and make it more explicit by using the `@` notation to access the context receivers. For example, we can rewrite the `findJobById` method as follows:
 
 ```kotlin
 context (Jobs, JsonScope<Job>, Logger)
@@ -396,9 +396,9 @@ class JobController {
 }
 ```
 
-However, the notation is very verbose and makes the code less readable. Moreover, we can't avoid that a developer miss to use it.
+However, the notation is very verbose and makes the code less readable. Moreover, we must ensure that a developer uses it.
 
-In Scala, we had a very close problem with the [Tagless Final encoding](https://blog.rockthejvm.com/tagless-final/) pattern. In the past, many Scala developers started to use the pattern to implement dependency injection. Using a similar approach of context receivers, Scala allows us to define type constraints. The `JobController` class would look like the following:
+In Scala, we had a very close problem with the [Tagless Final encoding](https://blog.rockthejvm.com/tagless-final/) pattern. In the past, many Scala developers started to use the pattern to implement dependency injection. Using a similar approach to context receivers, Scala allows us to define type constraints. The `JobController` class would look like the following:
 
 ```scala
 class JobController[F[_]: Monad: Jobs: JsonScope: Logger]: F[String] {
@@ -415,7 +415,9 @@ class JobController[F[_]: Monad: Jobs: JsonScope: Logger]: F[String] {
 }
 ```
 
-If you're not familiar with monads and higher-kinded types in Scala, don't worry. With the syntax `JobController[F[_]: Monad...` we're just saying that the `JobController` class performs some I/O, and we want to be able to describe such operations and chain them without effectively executing them. It's the same reason for which we added the `suspend` keyword to the `findJobById` method in the Kotlin example. The rest of type constraints define the contexts we need to perform the I/O operations. Then, the Scala compiler tries to implicitly resolve the contexts every time it finds a `Jobs[F]` or a `Logger[F]` in the code (Kotlin still doesn't implement automatic resolution of implicit contexts). It's called summoned value pattern, and it's implemented by a code similar to the following:
+If you need to get more familiar with monads and higher-kinded types in Scala, don't worry. With the syntax `JobController[F[_]: Monad...`, we're just saying that the `JobController` class performs some I/O, and we want to be able to describe such operations and chain them without effectively executing them. It's the same reason we added the `suspend` keyword to the `findJobById` method in the Kotlin example.
+
+The rest of the type constraints define the contexts we need to perform the I/O operations. Then, the Scala compiler tries to implicitly resolve the contexts every time it finds a `Jobs[F]` or a `Logger[F]` in the code (Kotlin still doesn't implement the automatic resolution of implicit contexts). It's called summoned value pattern, and it's implemented by a code similar to the following:
 
 ```scala
 object Jobs {
@@ -427,7 +429,7 @@ Anyway, in Scala, the above approach is considered an anti-pattern. In fact, whi
 
 Business logic algebras should always be passed explicitly.
 
-We can make an exception for common effects that would be share by many of the services of our application, such as the `Logger` context in our example. In this way, we can avoid pollution of the constructors signatures with the `Logger` context everywhere.
+We can make an exception for common effects that would be shared by many of the services of our application, such as the `Logger` context in our example. This way, we can avoid pollution of the constructor's signatures with the `Logger` context everywhere.
 
 Summing up, our `JobController` class should be rewritten as follows:
 
@@ -449,15 +451,15 @@ As we can see, the code it's easier to read. The responsibilities of each method
 
 So, although it's possible to implement dependency injection through context receivers, the final solution has a lot of concerns and should be avoided.
 
-The final use case for context receivers is to help dealing with typed errors. In fact, newer version of the Arrow library uses context receivers to implement a smart mechanism to handle typed errors when using functional error handling. However, we'll see this in the next article of the series "Functional Error Handling in Kotlin". You can find the first two parts of the series [here](https://blog.rockthejvm.com/functional-error-handling-in-kotlin/) and [here](https://blog.rockthejvm.com/functional-error-handling-in-kotlin-part-2/).
+The final use case for context receivers is to help with typed errors. In fact, the newer version of the Arrow library uses context receivers to implement an intelligent mechanism to handle typed errors when using functional error handling. However, we'll see this in the next series article, "Functional Error Handling in Kotlin". You can find the first two parts of the series [here](https://blog.rockthejvm.com/functional-error-handling-in-kotlin/) and [here](https://blog.rockthejvm.com/functional-error-handling-in-kotlin-part-2/).
 
 ## 5. Conclusion
 
-It's time to sum up. In this article, we introduced the experimental feature of context receivers in Kotlin. First, we saw the problem it addresses using the use case of type classes, and we first implemented it through extension functions and dispatcher receivers. Then, we saw how context receivers could improve the solution. Finally, we focused on strengths and weaknesses of context receivers, and we proved that they're not a good solution for dependency injection, as Tagless final encoding isn't for Scala in this case. In the next article, we will see how context receivers can help us to handle typed errors in a functional way and how they'll be used in the next version of the Arrow library.
+It's time we sum up what we saw. In this article, we introduced the experimental feature of context receivers in Kotlin. First, we saw the problem it addresses using the use case of type classes, and we first implemented it through extension functions and dispatcher receivers. Then, we saw how context receivers could improve the solution. Finally, we focused on the strengths and weaknesses of context receivers, and we proved that there are better solutions for dependency injection, as Tagless final encoding isn't for Scala in this case. In the next article, we will see how context receivers can help us handle typed errors functionally and how they'll be used in the next version of the Arrow library.
 
 ## 6. Appendix: Gradle Configuration
 
-As we promised you, here is the Gradle configuration we used to compile the code in this article.
+As promised, here is the Gradle configuration we used to compile the code in this article.
 
 TODO: Verify it
 
