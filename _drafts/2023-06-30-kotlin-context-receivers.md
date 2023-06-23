@@ -372,7 +372,7 @@ class JobController {
 }
 ```
 
-To use the `JobController` class, we must provide the three required contexts. We can do it using the `with` scope function, as we previously did:
+We must provide the three required contexts to use the `JobController` class. We can do it using the `with` scope function, as we previously did:
 
 ```kotlin
 suspend fun main() {
@@ -388,7 +388,7 @@ suspend fun main() {
 
 We can see that the `JobController` class has three context receivers: `Jobs`, `JsonScope<Job>`, and `Logger`. Inside the `findJobById` method, the contexts are accessed without specification. The `log` method and the `findById` function are called as part of the `JobController` class.
 
-The above code makes it unclear which method belongs to which class. Who owns the function `findById` or the function `log`? In general, **implicit function resolution is harder to read and understand** and, thus, harder to maintain. Moreover, we can't avoid name clashes when using multiple contexts.
+The above code makes it unclear which method belongs to which class. Who owns the function `findById` or the function `log`? In general, **implicit function resolution is harder to read and understand** and, thus, to maintain. Moreover, we can't avoid name clashes when using multiple contexts.
 
 We can change and make it more explicit by using the `@` notation to access the context receivers. For example, we can rewrite the `findJobById` method as follows:
 
