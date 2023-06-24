@@ -1,3 +1,8 @@
+---
+author_profile: true
+sidebar:
+  nav: "docs"
+---
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
@@ -108,9 +113,6 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "개발 공부하는 비전공자"
   location         : "South Korea"
-  author_profile: true
-  sidebar:
-    nav: "docs"
   email            :
   links:
     # - label: "GitHub"
