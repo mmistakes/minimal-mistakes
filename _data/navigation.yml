@@ -2,6 +2,7 @@
 main:
   - title: "HTB Boxes"
     url: https://yosef0x01.github.io
+  - title: "Research"
   - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
