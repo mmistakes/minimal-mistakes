@@ -107,7 +107,7 @@ author:
   name             : "GeunBeom Kim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "ANDROID DEVELOPER"
-  location         : "South Korea"
+  location         : #"South Korea"
   email            : #"agfalcon12@gmail.com"
   links:
     - label: "Email"
@@ -124,6 +124,12 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:agfalcon12@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://agfalcon.tistory.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/agfalcon"
