@@ -5,7 +5,13 @@ main:
   - title: "Category"
     url: /categories/
   - title: "Tag"
-    url: /tags/  
+    url: /tags/
+  - title: "Search"
+    url: /search/
+
+docs:
+  - title: "About me"
+    url: /introduction/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

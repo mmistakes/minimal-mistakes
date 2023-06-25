@@ -1,7 +1,7 @@
 ---
 title: "About me"
 layout: categories
-permalink: /categories/
+permalink: /introduction/
 author_profile: true
 sidebar_main: true
 ---
