@@ -33,7 +33,7 @@ main:
       url: /docs/image_processing
     - title: "Image Quality Assurance"
       url: /docs/image_QA  
-- title: Community
+- title: Community and Impact
   sublinks: 
     - title: "Contributors"
       url: /docs/contributors
