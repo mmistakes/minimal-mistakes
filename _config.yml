@@ -275,3 +275,9 @@ defaults:
       share: false
       related: true
       show_date: true
+
+#Collections
+collections:
+  project:
+    output: true
+    permalink: /:collection/:path/
