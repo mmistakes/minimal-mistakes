@@ -1,5 +1,7 @@
 ---
 title: "블로그 만들기"
+layout: archive
+author_profile: true
 property: "개인 프로젝트(Smilegate winter dev camp)"
 period: "2022/11/16 ~ 2023/12/07"
 excerpt: "Android / Kotlin / Retrofit2 / Node.js / Express / Goorm / MySQL / GitHub"
