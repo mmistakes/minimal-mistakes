@@ -1,8 +1,8 @@
 ---
-title: "Planet Love Lamp"
-property: "기업 외주"
-period: "2022/12/7 ~ 2023/03/07"
-excerpt: "Android / Kotlin / Bluetooth / GitHub"
+title: "장애인 맞춤형 취업 추천 앱"
+property: "팀 프로젝트"
+period: "2023/02/23 ~ 2023/06/09"
+excerpt: "Android / Kotlin / Jetpack Compose / Multi module / Dagger Hilt / Retrofit2 / Postman / Notion / Github / Recommend System"
 header:
   image: /assets/images/controlpanel.png
   teaser: assets/images/controlpanel.png

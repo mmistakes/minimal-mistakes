@@ -284,11 +284,10 @@ defaults:
       share: false
       related: true
       show_date: true
-      
   # _project
   - scope:
       path: ""
-      type: collection
+      type: project
     values:
       layout: single
       author_profile: true

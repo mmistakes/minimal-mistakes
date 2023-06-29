@@ -1,8 +1,8 @@
 ---
-title: "Planet Love Lamp"
-property: "기업 외주"
-period: "2022/12/7 ~ 2023/03/07"
-excerpt: "Android / Kotlin / Bluetooth / GitHub"
+title: "sMarket"
+property: "팀 프로젝트(Smilegate winter dev camp)"
+period: "2022/12/08 ~ 2023/02/23"
+excerpt: "Android / Kotlin / Retrofit2 / STOMP / Notion / Slack / Zem / GitHub / Postman"
 header:
   image: /assets/images/controlpanel.png
   teaser: assets/images/controlpanel.png

@@ -2,7 +2,7 @@
 title: "지중화 제어반 관리 앱"
 property: "기업 연계 프로젝트"
 period: "2022/02/18 ~ 2023/09/01"
-excerpt: "Android / Kotlin / AR Core / Google Maps API / Room(SQLite) / Retrofit2 / AWS / YOLO4"
+excerpt: "Android / Kotlin / AR Core / Google Maps API / Room(SQLite) / Retrofit2 / GitHub"
 header:
   image: /assets/images/controlpanel.png
   teaser: assets/images/controlpanel.png

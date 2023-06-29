@@ -1,8 +1,8 @@
 ---
-title: "Planet Love Lamp"
-property: "기업 외주"
-period: "2022/12/7 ~ 2023/03/07"
-excerpt: "Android / Kotlin / Bluetooth / GitHub"
+title: "고추 질병해 진단 앱"
+property: "연구 과제"
+period: "2022/11/17 ~ 2023/04/15"
+excerpt: "Android / Kotlin / Retrofit2 / Postman / GitHub"
 header:
   image: /assets/images/controlpanel.png
   teaser: assets/images/controlpanel.png
