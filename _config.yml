@@ -288,7 +288,7 @@ defaults:
   # _project
   - scope:
       path: ""
-      type: proejct
+      type: collection
     values:
       layout: single
       author_profile: true

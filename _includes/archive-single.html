@@ -10,8 +10,8 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: 'list' }}__item" >
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork" style="width:400px; height:auto; border: 0.3px solid #DDDDDD; border-radius: 6px 6px 6px 6px; padding: 6px;">
+<div class="{{ include.type | default: 'list' }}__item"  style="width:400px; height:420px; border: 0.3px solid #DDDDDD; border-radius: 6px 6px 6px 6px;  padding: 12px;">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser" style="width: 100%; height: auto;">
         <img src="{{ teaser | relative_url }}" alt="">

@@ -1,8 +1,8 @@
 ---
-title: "Planet Love Lamp"
-property: "기업 외주"
-period: "2022/12/7 ~ 2023/03/07"
-excerpt: "Android / Kotlin / Bluetooth"
+title: "New Run"
+property: "팀 프로젝트"
+period: "2023/03/2 ~ 2023/06/12"
+excerpt: "Android / Kotlin / Google Maps API / Retrofit2 / Flask / Node.js / Goorm / Stable Diffusion"
 header:
   image: /assets/images/controlpanel.png
   teaser: assets/images/controlpanel.png
