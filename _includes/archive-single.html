@@ -17,17 +17,17 @@
         <img src="{{ teaser | relative_url }}" alt="">
       </div>
     {% endif %}
-    <h2 class="archive__item-title no_toc" itemprop="headline" style="text-decoration: none; color: #DBCFB0; font-size: 22px;">
+    <h2 class="archive__item-title no_toc" itemprop="headline" style="text-decoration: none; color: #7000D8; font-size: 22px;">
       {% if post.link %}
-        <a href="{{ post.link }}" style=" text-decoration: none; color: #DBCFB0;">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink" style=" text-decoration: none; color: #DBCFB0;"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        <a href="{{ post.link }}" style=" text-decoration: none; color: #7000D8;">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink" style=" text-decoration: none; color: #7000D8;"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
-        <a href="{{ post.url | relative_url }}" style=" text-decoration: none; color: #DBCFB0;" rel="permalink">{{ title }}</a>
+        <a href="{{ post.url | relative_url }}" style=" text-decoration: none; color: #7000D8;" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
     {% include page__meta.html type=include.type %}
     <temp style="font-size: 16px;">&#183; {{ post.property | markdownify | strip_html | truncate: 160 }}<br>
       &#183; {{ post.period | markdownify | strip_html | truncate: 160 }}<p/>
     </temp>
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description" style="font-size: 16px;">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description" style="font-size: 16px;;"><strong>{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</strong></p>{% endif %}
   </article>
 </div>
