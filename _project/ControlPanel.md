@@ -1,6 +1,8 @@
 ---
 title: "지중화 제어반 관리 앱"
-excerpt: "매립된 제어반을 휴대폰으로 관리하고, GPS와 구글 지도를 활용하여 제어반의 위치를 확인 및 길찾기 기능을 제공하고, AR 기능과 주변 상황 인식 기술을 통해 매립 위치를 정확히 파악가능한 앱"
+property: "기업 연계 프로젝트"
+period: "2022/02/18 ~ 2023/09/01"
+excerpt: "Android / Kotlin / AR Core / Google Maps API / Room(SQLite) / Retrofit2 / AWS / YOLO4"
 header:
   image: /assets/images/controlpanel.png
   teaser: assets/images/controlpanel.png

@@ -212,6 +212,7 @@
   .archive__item-title {
     margin-top: 0.5em;
     font-size: $type-size-5;
+    color: #DBCFB0;
   }
 
   .archive__item-excerpt {
@@ -225,11 +226,11 @@
 
   .archive__item-teaser {
     @include breakpoint($small) {
-      max-height: 200px;
+      max-height: 600px;
     }
 
     @include breakpoint($medium) {
-      max-height: 120px;
+      max-height: 600px;
     }
   }
 }
