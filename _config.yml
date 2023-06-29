@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -194,6 +194,9 @@ kramdown:
   enable_coderay: false
 
 
+
+
+
 # Sass/SCSS
 sass:
   sass_dir: _sass
@@ -260,6 +263,12 @@ compress_html:
   ignore:
     envs: development
 
+#Collections
+collections:
+  project:
+    output: true
+    permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
@@ -275,9 +284,13 @@ defaults:
       share: false
       related: true
       show_date: true
-
-#Collections
-collections:
-  project:
-    output: true
-    permalink: /:collection/:path/
+      
+  # _project
+  - scope:
+      path: ""
+      type: proejct
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
