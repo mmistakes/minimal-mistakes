@@ -4,8 +4,8 @@ property: "팀 프로젝트"
 period: "2023/03/2 ~ 2023/06/12"
 excerpt: "Android / Kotlin / Google Maps API / Retrofit2 / Flask / Stable Diffusion / GitHub / Notion / Postman"
 header:
-  image: /assets/images/controlpanel.png
-  teaser: assets/images/controlpanel.png
+  image: /assets/images/newrun.png
+  teaser: assets/images/newrun.png
 sidebar:
   - title: "Role"
     text: "Android Developer"

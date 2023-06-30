@@ -4,8 +4,8 @@ property: "기업 외주"
 period: "2022/12/7 ~ 2023/03/07"
 excerpt: "Android / Kotlin / Bluetooth / GitHub"
 header:
-  image: /assets/images/controlpanel.png
-  teaser: assets/images/controlpanel.png
+  image: /assets/images/PlanetLove.png
+  teaser: assets/images/PlanetLove.png
 sidebar:
   - title: "Role"
     text: "Android Developer"

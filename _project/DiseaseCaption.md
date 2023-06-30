@@ -4,8 +4,8 @@ property: "연구 과제"
 period: "2022/11/17 ~ 2023/04/15"
 excerpt: "Android / Kotlin / Retrofit2 / Postman / GitHub"
 header:
-  image: /assets/images/controlpanel.png
-  teaser: assets/images/controlpanel.png
+  image: /assets/images/plantdisease.png
+  teaser: assets/images/plantdisease.png
 sidebar:
   - title: "Role"
     text: "Android Developer"

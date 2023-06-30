@@ -4,8 +4,8 @@ property: "기업 연계 프로젝트"
 period: "2022/02/18 ~ 2023/09/01"
 excerpt: "Android / Kotlin / AR Core / Google Maps API / Room(SQLite) / Retrofit2 / GitHub"
 header:
-  image: /assets/images/controlpanel.png
-  teaser: assets/images/controlpanel.png
+  image: /assets/images/control_panel.png
+  teaser: assets/images/control_panel.png
 sidebar:
   - title: "Role"
     text: "Android Developer"

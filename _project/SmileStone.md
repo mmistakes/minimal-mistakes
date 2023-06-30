@@ -1,11 +1,11 @@
 ---
 title: "sMarket"
-property: "팀 프로젝트(Smilegate winter dev camp)"
+property: "외부 프로그램 프로젝트(Smilegate winter dev camp)"
 period: "2022/12/08 ~ 2023/02/23"
 excerpt: "Android / Kotlin / Retrofit2 / STOMP / Notion / Slack / Zem / GitHub / Postman"
 header:
-  image: /assets/images/controlpanel.png
-  teaser: assets/images/controlpanel.png
+  image: /assets/images/sMarket.png
+  teaser: assets/images/sMarket.png
 sidebar:
   - title: "Role"
     text: "Android Developer"
