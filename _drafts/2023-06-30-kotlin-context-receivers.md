@@ -197,7 +197,7 @@ The difference between Kotlin and Scala/Haskell is that we do not have any impli
 
 The approach we used so far reached the goal. However, it has some limitations.
 
-First, we add the `printAsJson` method to the `JsonScope` interface. However, the function has nothing to do with the `JsonScope` type. We placed it there because it was the only technical possible solution offered. It's somewhat misleading: The `printAsJson` is not a method of the `JsonScope` type!
+First, we add the `printAsJson` function as an extension to the `JsonScope` interface. However, the function has nothing to do with the `JsonScope` type. We placed it there because it was the only technical possible solution offered. It's somewhat misleading: The `printAsJson` is not a method of the `JsonScope` type!
 
 Second, extension functions are only available on objects, which is only sometimes what we desire. For example, we don't want our developers to use the `printAsJson` in the following way:
 
@@ -211,12 +211,12 @@ Third, we are limited to having only one receiver using extension functions with
 
 ```kotlin
 interface Logger {
-    fun log(level: Level, message: String)
+    fun info(message: String)
 }
 
 val consoleLogger = object : Logger {
-    override fun log(level: Level, message: String) {
-        println("[$level] $message")
+    override fun info(message: String) {
+        println("[INFO] $message")
     }
 }
 ```
@@ -261,14 +261,14 @@ Yuppy! We solved the first and the problems. What about having more than one con
 ```kotlin
 context (JsonScope<T>, Logger)
 fun <T> printAsJson(objs: List<T>): String {
-    log(Level.INFO, "Serializing $objs list as JSON")
+    info("Serializing $objs list as JSON")
     return objs.joinToString(separator = ", ", prefix = "[", postfix = "]") { 
         it.toJson() 
     }
 } 
 ```
 
-As we can see, we're using the `log` method of the `Logger` interface.
+As we can see, we're using the `info` method of the `Logger` interface.
 
 Calling the new pimped version of the `printAsJson` function is straightforward. We can provide both contexts using the `with` function, as we did before:
 
@@ -289,7 +289,7 @@ Inside the function using the `context` keyword, we can't access the context dir
 ```kotlin
 context (JsonScope<T>, Logger)
 fun <T> printAsJson(objs: List<T>): String {
-    this.log(Level.INFO, "Serializing $objs list as JSON")
+    this.info("Serializing $objs list as JSON")
     return objs.joinToString(separator = ", ", prefix = "[", postfix = "]") { 
         it.toJson() 
     }
@@ -307,7 +307,7 @@ However, **we can access referencing a particular function from a context using 
 ```kotlin
 context (JsonScope<T>, Logger)
 fun <T> printAsJson(objs: List<T>): String {
-    this@Logger.log(Level.INFO, "Serializing $objs list as JSON")
+    this@Logger.info("Serializing $objs list as JSON")
     return objs.joinToString(separator = ", ", prefix = "[", postfix = "]") { it.toJson() }
 }
 ```
@@ -334,13 +334,13 @@ A possible implementation would need to produce some logging during the executio
 context (Logger)
 class LiveJobs : Jobs {
     override suspend fun findById(id: JobId): Job? {
-        log(Level.INFO, "Searching job with id $id")
+        info("Searching job with id $id")
         return JOBS_DATABASE[id]
     }
 }
 ```
 
-As we can see, we declared the `Logger` context at the class level. In this way, we can access the `log` method of the `Logger` interface from any `LiveJobs` implementation methods. To instantiate the `LiveJobs` class, we can use the `with` function as usual:
+As we can see, we declared the `Logger` context at the class level. In this way, we can access the `info` method of the `Logger` interface from any `LiveJobs` implementation methods. To instantiate the `LiveJobs` class, we can use the `with` function as usual:
 
 ```kotlin
 fun main() {
@@ -362,10 +362,10 @@ Let's try to understand if context receivers are suitable for dependency injecti
 context (Jobs, JsonScope<Job>, Logger)
 class JobController {
     suspend fun findJobById(id: String): String {
-        log(Level.INFO, "Searching job with id $id")
+        info("Searching job with id $id")
         val jobId = JobId(id.toLong())
         return findById(jobId)?.let {
-            log(Level.INFO, "Job with id $id found")
+            info("Job with id $id found")
             return it.toJson()
         } ?: "No job found with id $id"
     }
@@ -386,9 +386,9 @@ suspend fun main() {
 }
 ```
 
-We can see that the `JobController` class has three context receivers: `Jobs`, `JsonScope<Job>`, and `Logger`. Inside the `findJobById` method, the contexts are accessed without specification. The `log` method and the `findById` function are called as part of the `JobController` class.
+We can see that the `JobController` class has three context receivers: `Jobs`, `JsonScope<Job>`, and `Logger`. Inside the `findJobById` method, the contexts are accessed without specification. The `info` method and the `findById` function are called as part of the `JobController` class.
 
-The above code makes it unclear which method belongs to which class. Who owns the function `findById` or the function `log`? In general, **implicit function resolution is harder to read and understand** and, thus, to maintain. Moreover, we can't avoid name clashes when using multiple contexts.
+The above code makes it unclear which method belongs to which class. Who owns the function `findById` or the function `info`? In general, **implicit function resolution is harder to read and understand** and, thus, to maintain. Moreover, we can't avoid name clashes when using multiple contexts.
 
 We can change and make it more explicit by using the `@` notation to access the context receivers. For example, we can rewrite the `findJobById` method as follows:
 
@@ -396,10 +396,10 @@ We can change and make it more explicit by using the `@` notation to access the 
 context (Jobs, JsonScope<Job>, Logger)
 class JobController {
     suspend fun findJobById(id: String): String {
-        this@Logger.log(Level.INFO, "Searching job with id $id")
+        this@Logger.info("Searching job with id $id")
         val jobId = JobId(id.toLong())
         return this@Jobs.findById(jobId)?.let {
-            this@Logger.log(Level.INFO, "Job with id $id found")
+            this@Logger.info("Job with id $id found")
             return it.toJson()
         } ?: "No job found with id $id"
     }
@@ -413,10 +413,10 @@ In Scala, we had a very close problem with the [Tagless Final encoding](https://
 ```scala
 class JobController[F[_]: Monad: Jobs: JsonScope: Logger]: F[String] {
     def findJobById(id: String): F[String] = {
-        Logger[F].log(Level.INFO, s"Searching job with id $id") *>
+        Logger[F].info(s"Searching job with id $id") *>
         Jobs[F].findById(JobId(id.toLong)).flatMap {
             case Some(job) =>
-                Logger[F].log(Level.INFO, s"Job with id $id found") *>
+                Logger[F].info(s"Job with id $id found") *>
                 job.toJson.pure[F]
             case None =>
                 s"No job found with id $id".pure[F]
@@ -447,10 +447,10 @@ Summing up, our `JobController` class should be rewritten as follows:
 context (JsonScope<Job>, Logger)
 class JobController(private val jobs: Jobs) {
     suspend fun findJobById(id: String): String {
-        log(Level.INFO, "Searching job with id $id")
+        info("Searching job with id $id")
         val jobId = JobId(id.toLong())
         return jobs.findById(jobId)?.let {
-            log(Level.INFO, "Job with id $id found")
+            info("Job with id $id found")
             return it.toJson()
         } ?: "No job found with id $id"
     }
