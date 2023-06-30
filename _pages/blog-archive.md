@@ -1,9 +1,9 @@
 ---
-title: "Blog"
+title: blog
 layout: collection
-entries_layout: grid
+permalink: /blog/
 collection: blog
-permalink: /Blog/
+entries_layout: grid
 author_profile: true
 sidebar_main: true
 classes: wide

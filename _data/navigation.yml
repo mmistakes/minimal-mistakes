@@ -11,7 +11,7 @@ main:
   - title: "Education"
     url: /Education/
   - title: "Blog"
-    url: /Blog/
+    url: /blog/
   
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
