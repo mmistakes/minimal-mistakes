@@ -107,7 +107,7 @@ author:
   name             : "Sam Newman"
   avatar           : "/assets/images/headshot.JPEG"
   bio              : "Research Assistant"
-  location         : "Waltham, Massachusetts"
+  location         : "Waltham, MA"
   email            :
   links:
     - label: "Email"
@@ -117,7 +117,7 @@ author:
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "LinkedIn"
-      icon: "fas fa-fw fa-linkedin"
+      icon: "/assets/icons/linkedin-icon"
       url: "https://www.linkedin.com/in/sam-newman-b9a1b1270/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
