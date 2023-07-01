@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "Sam Newman"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "A Curriculum Vitae"
 name                     : "Sam Newman"
 description              : "A Curriculum Vitae"
 url                      : "https://snewman-aa.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -58,7 +58,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
+  hide                   : true # true, false (default)
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Sam Newman"
   avatar           : "/assets/images/headshot.JPEG"
-  bio              : "Student"
+  bio              : "Research Assistant for the Brandeis Lab for Linguistics and Computation"
   location         : "Waltham, Massachusetts"
   email            :
   links:
