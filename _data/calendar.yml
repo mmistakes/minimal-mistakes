@@ -1,19 +1,36 @@
 [
   {
     "image_path": null,
-    "alt": "Klassenfahrt 5b",
-    "title": "Klassenfahrt 5b",
+    "alt": "Fotograf bis Jahrgangsstufe 5",
+    "title": "Fotograf bis Jahrgangsstufe 5",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Mm8zbGhvb2djOWZjcjJ1a2llbGNsOGt0bWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=N2p1c2Nxa3V0dGswN3Zsb2ViM3QwaTJtdTYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
-      "date": "2023-06-05",
+      "date": "2023-10-09",
       "date_time": null
     },
     "end": {
-      "date": "2023-06-10",
+      "date": "2023-10-12",
       "date_time": null
     },
-    "created": "2023-03-22T06:01:53.000Z",
-    "updated": "2023-03-22T06:01:53.447Z"
+    "created": "2023-06-30T10:56:47.000Z",
+    "updated": "2023-06-30T11:11:24.160Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Fotograf 6. Klassen",
+    "title": "Fotograf 6. Klassen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MGFtYzE2NDM3bXUybWFsMjZlZ2M1aWU5OGwgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2024-04-24",
+      "date_time": null
+    },
+    "end": {
+      "date": "2024-04-25",
+      "date_time": null
+    },
+    "created": "2023-06-30T11:12:09.000Z",
+    "updated": "2023-06-30T11:12:09.866Z"
   }
 ]
