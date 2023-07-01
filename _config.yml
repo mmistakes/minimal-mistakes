@@ -110,12 +110,15 @@ author:
   location         : "Waltham, Massachusetts"
   email            :
   links:
-    - label: "snewman-aa at gmail dot com"
+    - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:snewman-aa@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
+    - label: "LinkedIn"
+      icon: "fas fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/sam-newman-b9a1b1270/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
