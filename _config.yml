@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "Sam Newman"
 title_separator          : "-"
-subtitle                 : "A Curriculum Vitae"
+subtitle                 : ""
 name                     : "Sam Newman"
 description              : "A Curriculum Vitae"
 url                      : "https://snewman-aa.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Sam Newman"
   avatar           : "/assets/images/headshot.JPEG"
-  bio              : "Research Assistant for the Brandeis Lab for Linguistics and Computation"
+  bio              : "Research Assistant"
   location         : "Waltham, Massachusetts"
   email            :
   links:
