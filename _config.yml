@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Site Title"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+title                    : "희민이의 개발노트"
+title_separator          : "|"
+subtitle                 : "efficient, reasonable, competent" # site tagline that appears below site title in masthead
+name                     : "HEEMIN SHIN"
+description              : "22살에 시작된 희민이의 개발일지"
 url                      : "https://Vida0822.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
