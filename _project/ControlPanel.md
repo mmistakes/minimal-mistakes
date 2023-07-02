@@ -35,10 +35,6 @@ Android : https://github.com/agfalcon/aos_project_ControlPanel_ver-3.0 (private)
 - Google Maps, Google ARCore<br>
 - Retrofit2, SlidingUpPanel, Room, javagl<br>
 - Figma, Postman, GitHub<br>
-- AWS<br>
-- Node.js, Flask<br>
-- Darkent & YOLOv4<br>
-- MySQL<br>
 </p>
 
 

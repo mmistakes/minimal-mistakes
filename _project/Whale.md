@@ -37,9 +37,6 @@ Server :  https://github.com/whale2023/job-recommendation-backend
 - navigation, Icons, coil, pager, kalendar<br>
 - Timber<br>
 - Figma, Postman, GitHub<br>
-- AWS<br>
-- Spring boot, Flask<br>
-- MySQL<br>
 </p>
 
 

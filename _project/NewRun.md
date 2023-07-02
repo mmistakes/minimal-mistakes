@@ -12,7 +12,7 @@ header:
 
 Source
 
-Android : https://github.com/agfalcon/lbs_newrun
+Project : https://github.com/agfalcon/lbs_newrun
 
 
 
@@ -36,12 +36,10 @@ Android : https://github.com/agfalcon/lbs_newrun
 - Google Maps<br>
 - Retrofit2<br>
 - kizitonwose<br>
-- Firebase, Kakao SDK, Naver oauth
+- Firebase, Kakao SDK, Naver oauth<br>
 - Figma, Postman, GitHub<br>
-- Goorm<br>
-- Node.js, Flask<br>
+- Flask<br>
 - Stable Diffusion & Control Net<br>
-- MySQL<br>
 </p>
 
 
