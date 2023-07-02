@@ -22,3 +22,14 @@ classes: wide
 #### 💻&nbsp;UNIVERSITY
 
 **금오공과대학교 컴퓨터공학과**<br>2018.03. ~ (재학)
+
+
+#### 💳&nbsp;CERTIFICATE
+
+**1. 정보처리기사**
+**2. Microsoft Azure AI Fundamentals(AI-900)**
+**3. Microsoft Azure Fundamentals(AZ-900)**
+
+#### 🅰&nbsp;LANGUAGE
+
+**TOEIC 835점**
