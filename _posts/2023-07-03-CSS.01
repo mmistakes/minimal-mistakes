@@ -1,8 +1,7 @@
 ---
-style: single
+layout: single
 title: CSS란? & CSS 스타일 적용 방법 3가지  
 ---
-바뀐
 ## Briefing
 CSS는 무엇인지, CSS는 왜 사용하는지에 대해 알아본 후
 CSS를 적용하는 3가지 방법에 대해서 알아볼 것이다.
