@@ -15,14 +15,6 @@ layout: archive
   {% endfor %}
 </ul>
 
-{% if page.tags %}
-  {% for tag in page.tags %}
-    {% if site.data.tags contains tag %}
-      <span class="tag">{{ site.data.format[tag] }}</span>
-    {% endif %}
-  {% endfor %}
-{% endif %}
-
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 {% assign postsByYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
 {% for year in postsByYear %}
