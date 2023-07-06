@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "6/9"
-categories: [끄적끄적, Programming, c++]
+categories: [끄적끄적, Programming, C++]
 tag: [Programming, C++, 알고리즘]
 toc: true
 author_profile: false
