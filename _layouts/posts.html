@@ -18,7 +18,7 @@ layout: archive
 {% if page.tags %}
   {% for tag in page.tags %}
     {% if site.data.tags contains tag %}
-      <span class="tag">{{ tag }}</span>
+      <span class="tag">{{ site.data.format[tag] }}</span>
     {% endif %}
   {% endfor %}
 {% endif %}
