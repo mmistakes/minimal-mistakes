@@ -1,4 +1,4 @@
----rockthejvm
+---
 title: "Http Authentication with Scala and Http4s Part 2"
 date: 2023-06-17
 header:
@@ -15,7 +15,7 @@ This article is a continuation of the authentication methods that were covered i
 
 ### 1.1 Requirements.
 
-To follow along with this tutorial, you will need to add the following to your build.sbt file.
+To follow along with this tutorial, you will need to add the following to your build.sbt file:
 
 ```scala
 val scala3Version = "3.2.2"
@@ -23,32 +23,44 @@ val scala3Version = "3.2.2"
 val Http4sVersion = "0.23.18"
 val OtpJavaVersion = "2.0.1"
 val ZxingVersion = "3.5.1"
-val SendGridVersion = "4.9.3
+val SendGridVersion = "4.9.3"
+val Log4CatsVersion = "2.6.0"
+val Sl4jApiVersion =  "2.0.7"
 
 val http4sDsl =       "org.http4s"                  %% "http4s-dsl"          % Http4sVersion
 val emberServer =     "org.http4s"                  %% "http4s-ember-server" % Http4sVersion
+val emberClient =     "org.http4s"                  %% "http4s-ember-client" % Http4sVersion
 val otpJava =         "com.github.bastiaanjansen"    % "otp-java"            % OtpJavaVersion
 val zxing =           "com.google.zxing"             % "javase"              % ZxingVersion
 val sendGrid =        "com.sendgrid"                 % "sendgrid-java"       % SendGridVersion
+val log4CatsCore =    "org.typelevel"               %% "log4cats-core"       % Log4CatsVersion
+val log4CatsSlf4j =   "org.typelevel"               %% "log4cats-slf4j"      % Log4CatsVersion
+val sl4jApi =         "org.slf4j"                    % "slf4j-api"           % Sl4jApiVersion
+val sl4jSimple =      "org.slf4j"                    % "slf4j-simple"        % Sl4jApiVersion
 
 lazy val otpauth = project
-  .in(file("otpauth"))
-  .settings(
+    .in(file("otpauth"))
+    .settings(
     name := "othauth",
     version := "0.1.0-SNAPSHOT",
     scalaVersion := scala3Version,
     scalacOptions ++= Seq("-java-output-version", "11"),
     libraryDependencies ++= Seq(
-      http4sDsl,
-      otpJava,
-      zxing,
-      emberServer,
-      sendGrid
+        http4sDsl,
+        emberServer,
+        emberClient,
+        otpJava,
+        zxing,
+        sendGrid,
+        log4CatsCore,
+        log4CatsSlf4j,
+        sl4jApi,
+        sl4jSimple
     )
-  )
+)
 ```
 
-The latest version of java `sendgrid-java` uses is java 11, therefore we needed to add `scalacOptions ++= Seq("-java-output-version", "11")` to our build.
+The latest version of java `sendgrid-java` uses java 11, therefore we needed to add `scalacOptions ++= Seq("-java-output-version", "11")` to our build.
 
 ## 2. One Time Password (OTP)
 
@@ -70,7 +82,7 @@ The HOTP standard is defined under [RFC 4226](https://www.ietf.org/rfc/rfc4226.t
 **HOTP scala implementation**
 
 HOTP generation is quite tedious, therefore for simplicity, we will use a java library, [otp-java](https://github.com/BastiaanJansen/otp-java) by Bastiaan Jansen.
-First, we'll need to acquire a secret key. The library provides a mechanism to generate this.
+First, we'll need to acquire a secret key. The library provides a mechanism to generate this:
 
 ```scala
 import com.bastiaanjansen.otp.*
@@ -87,7 +99,7 @@ val hotp = new HOTPGenerator.Builder(secret)
               .build()
 ```
 
-Here we instantiate a new `HOTPGenerator` class, pass it the `secret`, password length as 6, and algorithm type as `SHA256`. We can now use `hotp` to generate the code.
+Here we instantiate a new `HOTPGenerator` class, pass it the `secret`, a password length of 6, and an algorithm type as `SHA256`. We can now use `hotp` to generate the code.
 
 ```scala
 val counter = 5
@@ -96,7 +108,7 @@ val code = hotp.generate(counter)
 
 In the code above, we initialized the counter to 5 and used that to generate the `hotp` code.
 
-When the server receives this code, it can verify it in the following way.
+When the server receives this code, it can verify it in the following way:
 
 ```scala
 val isValid = hotp.verify(code, counter)
@@ -110,7 +122,7 @@ The TOTP token is generated similarly to HOTP with the main difference being the
 
 **TOTP scala implementation**
 
-Otp-java also provides an implementation for TOTP token generation.
+Otp-java also provides an implementation for TOTP token generation:
 
 ```scala
 import java.time.Duration
@@ -133,7 +145,7 @@ val codeValue = totp.now()
 ```
 
 The `now()` method on the `TOTPGenerator` class is used to generate the token.
-In order to verify totp tokens, we also use the `verify()` method.
+In order to verify totp tokens, we also use the `verify()` method:
 
 ```scala
 totp.verify(code)
@@ -153,122 +165,144 @@ The code or token is the One Time Password that we generated in the previous sec
 
 In this section, we will create a small application to showcase 2FA using java-otp, Http4s, SendGrid, Google Zxing, and Google Authenticator.
 
-**Creating the User case class.**
-
-We will need to simulate a user who has gone through the first step to login to the application, we do this by defining a `User` case class with required fields. Create a User.scala file and add the following information.
+We will need to simulate a user who has gone through the first step to login to the application, we do this by defining a `User` case class with required fields. Create a User.scala file and add the following information:
 
 ```scala
 package com.rockthejvm
 
-case class User(username: String, email: String, var counterValue: Long = 1){
-    def incrementCounter =  counterValue += 1
+case class User(username: String, email: String) {
+  private var counter = 1L
+  def getCounter = counter
+  def incrementCounter = counter += 1
 }
 ```
 
-This case class will hold the `username`, `email`, and `counterValue` that we will need in case of `Hotp`. It also has one method `incrementCounter()` that increments the `counterValue` by 1, we'll call this function after we have successfully verified the `Hotp` code.
+The User case class will hold the `username` and `email`. The case class also contains the `counter` variable, `getCounter()`, and `incrementCounter()` methods that we will use in the case of `Hotp`.
 
-**Creating the Generator sealed trait.**
-
-Create a Generator.scala file and add the following code.
+Let's create a Generator.scala file and add the following code:
 
 ```scala
 package com.rockthejvm
 
-sealed trait Generator
-
-object Generator{
-    case object Hotp extends Generator
-    case object Totp extends Generator
+enum Generator {
+  case Hotp, Totp
 }
 ```
 
-Generator is a sealed trait with two case objects, we will this to choose between `Hotp` and `Totp` implementations depending on our needs.
+`Generator` is an `enum` with two cases that will help us choose between `Hotp` and `Totp` implementations depending on our needs.
 
-**Creating the BarCodeService object.**
-
-Google Authenticator gives us two options to capture the OTP code, we can type it manually or scan a bar code. In this section, we will use the Google Zxing library to create barcode images for our application. Let's create a new scala file called `BarCodeService.scala` where we will add our code.
+Google Authenticator gives us two options to capture the OTP code, we can type it manually or scan a bar code. Here we create a `BarCodeService.scala` where we make use of the Google zxing library for barcode generation.
 
 ```scala
 package com.rockthejvm
 
 import com.rockthejvm.Generator.*
-import cats.effect.IO
 
-object BarCodeService{
-    def getGoogleAuthenticatorBarCode(secretKey: String, account: String, issuer: String, generator: Generator): IO[String] =
-      IO{generator match
-            case Hotp =>
-                s"otpauth://hotp/$issuer:$account?secret=$secretKey&issuer=$issuer&algorithm=SHA256&counter=0"
-            case Totp =>
-                s"otpauth://totp/$issuer:$account?secret=$secretKey&issuer=$issuer&algorithm=SHA256"
-      }
+object BarCodeService {
+  def getGoogleAuthenticatorBarCode(
+      secretKey: String,
+      account: String,
+      issuer: String,
+      generator: Generator
+  ): String =
+    generator match
+      case Hotp =>
+        s"otpauth://hotp/$issuer:$account?secret=$secretKey&issuer=$issuer&algorithm=SHA256&counter=0"
+      case Totp =>
+        s"otpauth://totp/$issuer:$account?secret=$secretKey&issuer=$issuer&algorithm=SHA256"
+}
 ```
 
-The `getGoogleAuthenticatorBarCode()` method takes a `secretKey` which we create with `otp-java`, an `account` and `issuer` which are the email address and name of the business or person issuing the barcode, and a `generator` which is a string of either `Hotp` or `Totp` (used to choose the type of `otp`), this gives us an `IO[String]`. This function creates a `URI` in the format `otpauth://TYPE/LABEL?PARAMETERS` that we'll use to create the QR Bar Code image in the next section.
+The `getGoogleAuthenticatorBarCode()` method takes a `secretKey`, an `account` and `issuer` which is the email address and name of the business or person issuing the barcode respectively, and a `generator` which is of type `Hotp` or `Totp` (used to choose the type of `otp`). This function creates a `URI` in the format `otpauth://TYPE/LABEL?PARAMETERS` that we'll use to create the QR Bar Code image in the next section.
 We also specify the algorithm as `SHA256` for both cases and set `counter` to 0 only for `Hotp`.
 
 ```scala
-import scala.util.*
 import com.google.zxing.common.BitMatrix
 import com.google.zxing.MultiFormatWriter
 import com.google.zxing.BarcodeFormat
 import java.io.FileOutputStream
 import com.google.zxing.client.j2se.MatrixToImageWriter
+import cats.effect.IO
 
 object BarCodeService{
     ...
-    def createQRCode(barCodeData: IO[String], filePath: String = "barCode.png", height: Int = 400, width: Int = 400): IO[Either[String, Unit]] =
-        barCodeData.map{data =>
-                Try{
-                    val matrix: BitMatrix = new MultiFormatWriter().encode(data, BarcodeFormat.QR_CODE, width, height)
-                    val outVal: FileOutputStream = new FileOutputStream(filePath)
-                    MatrixToImageWriter.writeToStream(matrix,"png",outVal)
-                }.toEither.left.map(_.getMessage)
-            }
+  def createQRCode(
+      barCodeData: String,
+      filePath: String = "barCode.png",
+      height: Int = 400,
+      width: Int = 400
+  ): IO[Unit] =
+    IO {
+      val matrix: BitMatrix = new MultiFormatWriter().encode(
+        barCodeData,
+        BarcodeFormat.QR_CODE,
+        width,
+        height
+      )
+      val outVal: FileOutputStream = new FileOutputStream(filePath)
+      MatrixToImageWriter.writeToStream(matrix, "png", outVal)
+    }
 }
 ```
 
-The `createQRCode()` function creates the BarCode image. It takes as parameters, `barCodeData` which is our `URI`, a `filePath`, and `height` and `width` of our image, all of which we initialize to `barCode.png`, `400` and `400` respectively giving use an `IO[Either[String, Unit]]`. The barCodeData will come from the `getGoogleAuthenticatorBarCode()`.
+The `createQRCode()` function creates the BarCode image. It takes as parameters, `barCodeData` which is our `URI`, a `filePath`, and `height` and `width` of our image, all of which we initialize to `barCode.png`, `400` and `400` respectively giving use an `IO[Unit]`.
 The `MultiFormatWriter` class has an `encode()` method that takes our arguments and creates a 2D matrix of bits.
-The `writeToStream` method on the `MatrixToImageWriter` object takes the `matrix` (of type `BitMatrix`), `"png"` as the image format and a `FileOutputStream`, writes the image to a png file and saves it to the file path.
+The `writeToStream()` method on the `MatrixToImageWriter` object takes the `matrix` (of type `BitMatrix`), `"png"` as the image format and a `FileOutputStream`, writes the image to a png file and saves it to the file path.
 
-Here's the full code
+Here's the full code:
 
 ```scala
 package com.rockthejvm
 
-import scala.util.*
+import com.rockthejvm.Generator.*
 import com.google.zxing.common.BitMatrix
 import com.google.zxing.MultiFormatWriter
 import com.google.zxing.BarcodeFormat
 import java.io.FileOutputStream
 import com.google.zxing.client.j2se.MatrixToImageWriter
-import com.rockthejvm.Generator.*
 import cats.effect.IO
 
-object BarCodeService{
-    def getGoogleAuthenticatorBarCode(secretKey: String, account: String, issuer: String, generator: Generator): IO[String] =
-      IO{generator match
-            case Hotp =>
-                s"otpauth://hotp/$issuer:$account?secret=$secretKey&issuer=$issuer&algorithm=SHA256&counter=0"
-            case Totp =>
-                    s"otpauth://totp/$issuer:$account?secret=$secretKey&issuer=$issuer&algorithm=SHA256"
-      }
+object BarCodeService {
+  def getGoogleAuthenticatorBarCode(
+      secretKey: String,
+      account: String,
+      issuer: String,
+      generator: Generator
+  ): String =
+    generator match
+      case Hotp =>
+        s"otpauth://hotp/$issuer:$account?secret=$secretKey&issuer=$issuer&algorithm=SHA256&counter=0"
+      case Totp =>
+        s"otpauth://totp/$issuer:$account?secret=$secretKey&issuer=$issuer&algorithm=SHA256"
 
-    def createQRCode(barCodeData: IO[String], filePath: String = "barCode.png", height: Int = 400, width: Int = 400): IO[Either[String, Unit]] =
-        barCodeData.map{data =>
-                Try{
-                    val matrix: BitMatrix = new MultiFormatWriter().encode(data, BarcodeFormat.QR_CODE, width, height)
-                    val outVal: FileOutputStream = new FileOutputStream(filePath)
-                    MatrixToImageWriter.writeToStream(matrix,"png",outVal)
-                }.toEither.left.map(_.getMessage)
-            }
+  def createQRCode(
+      barCodeData: String,
+      filePath: String = "barCode.png",
+      height: Int = 400,
+      width: Int = 400
+  ): IO[Unit] =
+    IO {
+      val matrix: BitMatrix = new MultiFormatWriter().encode(
+        barCodeData,
+        BarcodeFormat.QR_CODE,
+        width,
+        height
+      )
+      val outVal: FileOutputStream = new FileOutputStream(filePath)
+      MatrixToImageWriter.writeToStream(matrix, "png", outVal)
+    }
 }
 ```
 
-**Creating the OtpService.**
+Let's create a `secret.env` file and store it in the root of our project. This will contain our the `secret` value that we will use for the next section. You can generate your own `secret` by using the code in the previous section:
 
-Let's create a scala file and save it as `OtpService.scala`. This service will contain the implementation for `Hotp` and `Totp` that we will use for this application.
+```bash
+export SECRET_KEY='VFI5NSVMHTC2SGYDFSJHVGOH4R4276XI'
+```
+
+Note, the env file should always be added to your .gitignore file for security purposes, and access to this file should also be limited by changing the file's permission.
+
+Create an `OtpService.scala` file that will contain our implementation for `Hotp` and `Totp`, and add the following code:
 
 ```scala
 package com.rockthejvm
@@ -276,12 +310,13 @@ package com.rockthejvm
 import scala.util.*
 import com.rockthejvm.Generator
 
-class OtpService(generator: Generator, user: User){
-    private val secret: Array[Byte] = SecretGenerator.generate()
+class OtpService(generator: Generator, user: User) {
+  private val secret: Array[Byte] =
+    Properties.envOrElse("SECRET_KEY", "").getBytes()
 }
 ```
 
-We create it as a class in order to pass a `Generator` and `User` as constructor arguments during instantiation. A new `secret` value is generated by otp-java every time a user tries to sign in and saved as an `Array[Byte]` in a private val.
+We create `OtpService` as a class in order to pass a `Generator` and `User` as constructor arguments during instantiation. The `secret` value is accessed by calling `Properties.envOrElse()`, if the environmental variable is not present the function assigns an empty string, and the `getBytes()` stores the `secret` as an `Array[Byte]`.
 
 ```scala
 import com.bastiaanjansen.otp.*
@@ -289,23 +324,25 @@ import java.time.Duration
 
 class OtpService(generator: Generator, user: User){
     ...
-    private object GenInstance {
-        def hotpGen(secretValue: Array[Byte]) = new HOTPGenerator.Builder(secretValue)
-            .withPasswordLength(6)
-            .withAlgorithm(HMACAlgorithm.SHA256)
-            .build()
-        def totpGen(secretValue: Array[Byte]) = new TOTPGenerator.Builder(secretValue)
-                .withHOTPGenerator(builder => {
-                        builder.withPasswordLength(6)
-                        builder.withAlgorithm(HMACAlgorithm.SHA256)
-                })
-                .withPeriod(Duration.ofSeconds(30))
-                .build()
-    }
+ private object GenInstance {
+    def hotpGen(secretValue: Array[Byte]) =
+      new HOTPGenerator.Builder(secretValue)
+        .withPasswordLength(6)
+        .withAlgorithm(HMACAlgorithm.SHA256)
+        .build()
+    def totpGen(secretValue: Array[Byte]) =
+      new TOTPGenerator.Builder(secretValue)
+        .withHOTPGenerator(builder => {
+          builder.withPasswordLength(6)
+          builder.withAlgorithm(HMACAlgorithm.SHA256)
+        })
+        .withPeriod(Duration.ofSeconds(30))
+        .build()
+  }
 }
 ```
 
-The `GenInstance` object contains two functions `hotpGen()` and `totpGen()` used to provide instances of `HOTPGenerator` and `TOTPGenerator` respectively. They both take a `secret` as a parameter. Note that Google Authenticator displays a token length of 6, we supply the same value to our function implementations. We also use the same algorithm type `SHA256` as our `URI`. This object is created as `private` so that it's only used within this class.
+The `GenInstance` object contains two functions `hotpGen()` and `totpGen()` used to provide instances of `HOTPGenerator` and `TOTPGenerator` respectively, they both take an `Array[Byte]` as a parameter. Note that Google Authenticator displays a token length of 6 therefore we supply the same value to our function implementations. We also use the same algorithm type, `SHA256` that we defined in our `URI` string. This object is created as `private` so that it's only used within this class.
 
 ```scala
 import cats.effect.IO
@@ -313,51 +350,56 @@ import com.rockthejvm.Generator.*
 
 class OtpService(generator: Generator, user: User){
     ...
-    def getToken(generator: Generator = generator, counter: Long = user.counterValue): IO[Either[String,String]] =
-            IO{generator match
-                case Hotp =>
-                    Try{GenInstance.hotpGen(secret).generate(counter)}.toEither.left.map(_.getMessage)
-                case Totp =>
-                    Try{GenInstance.totpGen(secret).now()}.toEither.left.map(_.getMessage)
-            }
+  def getToken: IO[String] =
+    IO {
+      generator match
+        case Hotp =>
+          GenInstance.hotpGen(secret).generate(user.getCounter)
+        case Totp =>
+          GenInstance.totpGen(secret).now()
+    }
 }
 ```
 
-The `getToken()` function takes two optional arguments, a `Generator` and a `User`, both of which are passed through the `OtpService` constructor. We pattern match on `Generator` to give us an `IO[Either[String,String]]`. The `hotpGen` and `totpGen` functions could fail when supplied with a wrong argument, therefore we map the error message from the Try to a `Left` of an `Either` by calling `.toEither.left.map(_.getMessage)`.
+The `getToken()` function generates a token and returns an `IO[String]` depending on the type of generator supplied. It uses arguments from the class constructor in its implementation.
 
 ```scala
 class OtpService(generator: Generator, user: User){
     ...
-    def verifyCode(code: String, user: User = user , generator: Generator = generator): IO[Either[String,Boolean]] =
-            IO{generator  match
-                case Hotp =>
-                    Try{GenInstance
-                        .hotpGen(secret)
-                        .verify(code, user.counterValue)
-                    }.toEither.left.map(_.getMessage)
-                case Totp =>
-                    Try{GenInstance
-                        .totpGen(secret)
-                        .verify(code)
-                    }.toEither.left.map(_.getMessage)
-            }
+  def verifyCode(code: String): IO[Boolean] =
+    IO {
+      generator match
+        case Hotp =>
+          GenInstance
+            .hotpGen(secret)
+            .verify(code, user.getCounter)
+        case Totp =>
+          GenInstance
+            .totpGen(secret)
+            .verify(code)
+    }
 }
 ```
 
-The `verifyCode()` function is used to check if the code the user sends our service is genuine. It takes a `code` (the otp token), a `User` (from the constructor), and a `Generator` as arguments. Again we pattern match on `Generator` and use the `verify()` function to authenticate our code, this produces an `IO[Either[String,Boolean]]` with the `String` representing an error message in case `verify()` fails and a `Boolean` otherwise.
+The `verifyCode()` function is used to check if the code the user sends to our service is genuine. It takes the `code` (the otp token) and counter value `user.getCounter()` for the case of `Hotp` and returns an `IO[Boolean]` which shows if verification has failed or passed.
 
 ```scala
 class OtpService(generator: Generator, user: User){
-    ...
-    def makeBarCodeImg: IO[Either[String, Unit]] = BarCodeService.createQRCode(
-        BarCodeService.getGoogleAuthenticatorBarCode(new String(secret), "<youremail@email.com>","you", generator)
+  ...
+  def makeBarCodeImg: IO[Unit] = BarCodeService.createQRCode(
+    BarCodeService.getGoogleAuthenticatorBarCode(
+      new String(secret),
+      "<youremail@email.com>",
+      "you",
+      generator
     )
+  )
 }
 ```
 
 The `makeBarCodeImg()` function calls `createQRCode()` with `getGoogleAuthenticatorBarCode()` from the `BarCodeService` as a parameter representing the bar code `URI`. You can provide your name and email address to the `getGoogleAuthenticatorBarCode()` function.
 
-Here is the full code.
+Here is the full code:
 
 ```scala
 package com.rockthejvm
@@ -368,60 +410,67 @@ import java.time.Duration
 import scala.util.*
 import com.rockthejvm.Generator.*
 
-class OtpService(generator: Generator, user: User){
-    private val secret: Array[Byte] = SecretGenerator.generate()
+class OtpService(generator: Generator, user: User) {
+  private val secret: Array[Byte] =
+    Properties.envOrElse("SECRET_KEY", "").getBytes()
 
-    private object GenInstance {
-        def hotpGen(secretValue: Array[Byte]) = new HOTPGenerator.Builder(secretValue)
-            .withPasswordLength(6)
-            .withAlgorithm(HMACAlgorithm.SHA256)
-            .build()
-        def totpGen(secretValue: Array[Byte]) = new TOTPGenerator.Builder(secretValue)
-                .withHOTPGenerator(builder => {
-                        builder.withPasswordLength(6)
-                        builder.withAlgorithm(HMACAlgorithm.SHA256)
-                })
-                .withPeriod(Duration.ofSeconds(30))
-                .build()
+  private object GenInstance {
+    def hotpGen(secretValue: Array[Byte]) =
+      new HOTPGenerator.Builder(secretValue)
+        .withPasswordLength(6)
+        .withAlgorithm(HMACAlgorithm.SHA256)
+        .build()
+    def totpGen(secretValue: Array[Byte]) =
+      new TOTPGenerator.Builder(secretValue)
+        .withHOTPGenerator(builder => {
+          builder.withPasswordLength(6)
+          builder.withAlgorithm(HMACAlgorithm.SHA256)
+        })
+        .withPeriod(Duration.ofSeconds(30))
+        .build()
+  }
+
+  def getToken: IO[String] =
+    IO {
+      generator match
+        case Hotp =>
+          GenInstance.hotpGen(secret).generate(user.getCounter)
+        case Totp =>
+          GenInstance.totpGen(secret).now()
     }
 
-    def getToken(generator: Generator = generator, counter: Long = user.counterValue): IO[Either[String,String]] =
-            IO{generator match
-                case Hotp =>
-                    Try{GenInstance.hotpGen(secret).generate(counter)}.toEither.left.map(_.getMessage)
-                case Totp =>
-                    Try{GenInstance.totpGen(secret).now()}.toEither.left.map(_.getMessage)
-            }
+  def verifyCode(code: String): IO[Boolean] =
+    IO {
+      generator match
+        case Hotp =>
+          GenInstance
+            .hotpGen(secret)
+            .verify(code, user.getCounter)
+        case Totp =>
+          GenInstance
+            .totpGen(secret)
+            .verify(code)
+    }
 
-    def verifyCode(code: String, user: User = user , generator: Generator = generator): IO[Either[String,Boolean]] =
-            IO{generator  match
-                case Hotp =>
-                    Try{GenInstance
-                        .hotpGen(secret)
-                        .verify(code, user.counterValue)
-                    }.toEither.left.map(_.getMessage)
-                case Totp =>
-                    Try{GenInstance
-                        .totpGen(secret)
-                        .verify(code)
-                    }.toEither.left.map(_.getMessage)
-            }
-
-    def makeBarCodeImg: IO[Either[String, Unit]] = BarCodeService.createQRCode(
-        BarCodeService.getGoogleAuthenticatorBarCode(new String(secret), "<youremail@email.com>","you", generator)
+  def makeBarCodeImg: IO[Unit] = BarCodeService.createQRCode(
+    BarCodeService.getGoogleAuthenticatorBarCode(
+      new String(secret),
+      "hkateu@gmail.com",
+      "herbert",
+      generator
     )
+  )
 }
+
 ```
 
-**Creating the OtpInteractiveService**
-
-Let's create an OtpInteractiveService.scala file and add the following contents.
+Let's create an `OtpInteractiveService.scala` file and add the following contents:
 
 ```scala
 package com.rockthejvm
 
 class OtpInteractiveService(generator: Generator, user: User){
-    def otpService = new OtpService(generator, user)
+  def otpService = new OtpService(generator, user)
 }
 ```
 
@@ -501,7 +550,7 @@ Follow these steps to get your API Key
 
    ![Contacts](../images/httpAuthPart2/step18.png)
 
-Now let's define our `send2FA()` function.
+Now let's define our `send2FA()` function:
 
 ```scala
 import com.sendgrid.helpers.mail.objects.{Email, Content}
@@ -509,25 +558,26 @@ import java.nio.file.Paths
 
 class OtpInteractiveService(generator: Generator, user: User){
     ...
-    def send2FA(sendto: User): IO[Either[String,Response]] = {
-        val from = new Email("hkateu@gmail.com")
-        val to = new Email(sendto.email)
+  def send2FA(sendto: User): IO[Either[String, Response]] = {
+    val from = new Email("hkateu@gmail.com")
+    val to = new Email(sendto.email)
 
-        val subject = "Sending with SendGrid is Fun"
-        val message = s"""
+    val subject = "OtpAuth Test Application"
+    val message = s"""
             |<H3>Website Login</H3>
             |<p>Please complete the login process using google authenticator</p>
             |<p>Scan the QR Barcode attached and send us the token number.</p>
             """.stripMargin
 
-        val file = Paths.get("barCode.png")
-        val content = new Content("text/html", message)
+    val file = Paths.get("barCode.png")
+    val content = new Content("text/html", message)
+  }
 }
 ```
 
 We start by defining some variables needed to send an email. The `from` and `to` variables represent the person sending the email and the person to whom the email will be sent. SendGrid provides an `Email` class to structure these email addresses. Notice that we pass the email address of the person we are sending to as a function parameter.
 
-We also define `subject` as a string and `message` as a string containing HTML. The `file` variable is a `Path` to the BarCode png image. `content` is an instance of the `Content` class that tells SendGrid what type of message we are sending, in our case `text/html`.
+We also define `subject` as a string and `message` as a string containing HTML. The `file` variable is a `Path` to the BarCode png image. `content` is an instance of the `Content` class that tells SendGrid what type of message we are sending, in our case `text/html`:
 
 ```scala
 import com.sendgrid.helpers.mail.objects.{Email, Content, Attachments}
@@ -544,7 +594,8 @@ def send2FA(sendto: User): IO[Either[String,Response]] = {
     attachments.setType("application/png")
     attachments.setDisposition("attachment")
     val attachmentContentBytes = Files.readAllBytes(file)
-    val attachmentContent = Base64.getEncoder().encodeToString(attachmentContentBytes)
+    val attachmentContent =
+      Base64.getEncoder().encodeToString(attachmentContentBytes)
     attachments.setContent(attachmentContent)
     mail.addAttachments(attachments)
 }
@@ -563,18 +614,18 @@ import com.sendgrid.{SendGrid, Method, Request, Response}
 ...
 def send2FA(sendto: User): IO[Either[String,Response]] = {
 ...
-    val sg = new SendGrid(Properties.envOrElse("SENDGRID_API_KEY","undefined"))
+    val sg = new SendGrid(Properties.envOrElse("SENDGRID_API_KEY", "undefined"))
     val request = new Request()
-    val response: IO[Either[String,Response]] =
-        IO{
-            Try {
-                request.setMethod(Method.POST)
-                request.setEndpoint("mail/send")
-                request.setBody(mail.build())
-                val res = sg.api(request)
-                res
-            }.toEither.left.map(_.getMessage)
-        }
+    val response: IO[Either[String, Response]] =
+      IO {
+        Try {
+          request.setMethod(Method.POST)
+          request.setEndpoint("mail/send")
+          request.setBody(mail.build())
+          val res = sg.api(request)
+          res
+        }.toEither.left.map(_.getMessage)
+      }
 
     response
 }
@@ -584,7 +635,7 @@ def send2FA(sendto: User): IO[Either[String,Response]] = {
 
 We create a `Request` class and use that to build our mail. Within the response variable we call `setMethod()`, `setEndpoint()`, and `setBody()` methods on the `request` class and return `sg.api(request)` as a `Try[Response]` then call `.toEither.left.map(_.getMessage)` to convert it to an `Either[String,Response]`. `Response` will hold the response from the SendGrid server, however, if an error occurred sending the email, the error message is mapped to a `Left`. Finally, we return our `response` on the last line of the function.
 
-Here is the full code.
+Here is the full code:
 
 ```scala
 package com.rockthejvm
@@ -597,143 +648,203 @@ import java.util.Base64
 import scala.util.*
 import cats.effect.IO
 
-class OtpInteractiveService(generator: Generator, user: User){
-    def otpService = new OtpService(generator, user)
+class OtpInteractiveService(generator: Generator, user: User) {
+  def otpService = new OtpService(generator, user)
 
-    def send2FA(sendto: User): IO[Either[String,Response]] = {
-        val from = new Email("hkateu@gmail.com")
-        val to = new Email(sendto.email)
+  def send2FA(sendto: User): IO[Either[String, Response]] = {
+    val from = new Email("hkateu@gmail.com")
+    val to = new Email(sendto.email)
 
-        val subject = "Sending with SendGrid is Fun"
-        val message = s"""
+    val subject = "OtpAuth Test Application"
+    val message = s"""
             |<H3>Website Login</H3>
             |<p>Please complete the login process using google authenticator</p>
             |<p>Scan the QR Barcode attached and send us the token number.</p>
             """.stripMargin
 
-        val file = Paths.get("barCode.png")
-        val content = new Content("text/html", message)
+    val file = Paths.get("barCode.png")
+    val content = new Content("text/html", message)
 
-        val mail = new Mail(from, subject, to, content)
-        val attachments = new Attachments()
-        attachments.setFilename(file.getFileName().toString())
-        attachments.setType("application/png")
-        attachments.setDisposition("attachment")
-        val attachmentContentBytes = Files.readAllBytes(file)
-        val attachmentContent = Base64.getEncoder().encodeToString(attachmentContentBytes)
-        attachments.setContent(attachmentContent)
-        mail.addAttachments(attachments)
+    val mail = new Mail(from, subject, to, content)
+    val attachments = new Attachments()
+    attachments.setFilename(file.getFileName().toString())
+    attachments.setType("application/png")
+    attachments.setDisposition("attachment")
+    val attachmentContentBytes = Files.readAllBytes(file)
+    val attachmentContent =
+      Base64.getEncoder().encodeToString(attachmentContentBytes)
+    attachments.setContent(attachmentContent)
+    mail.addAttachments(attachments)
 
-        val sg = new SendGrid(Properties.envOrElse("SENDGRID_API_KEY","undefined"))
-        val request = new Request()
-        val response: IO[Either[String,Response]] =
-            IO{
-                Try {
-                    request.setMethod(Method.POST)
-                    request.setEndpoint("mail/send")
-                    request.setBody(mail.build())
-                    val res = sg.api(request)
-                    res
-                }.toEither.left.map(_.getMessage)
-            }
+    val sg = new SendGrid(Properties.envOrElse("SENDGRID_API_KEY", "undefined"))
+    val request = new Request()
+    val response: IO[Either[String, Response]] =
+      IO {
+        Try {
+          request.setMethod(Method.POST)
+          request.setEndpoint("mail/send")
+          request.setBody(mail.build())
+          val res = sg.api(request)
+          res
+        }.toEither.left.map(_.getMessage)
+      }
 
-        response
-    }
+    response
+  }
 }
 ```
 
-**Http4s Routes and Server.**
-
-In this section, we create the routes and server using http4s. Let's create a new scala file called OtpAuth.scala and add the following.
+In the next section, we create the routes and server using http4s. First, we create `OtpAuth.scala` and add the following code:
 
 ```scala
 import cats.effect.{IOApp, IO, ExitCode}
 import com.rockthejvm.OtpInteractiveService
 import com.rockthejvm.User
 import com.rockthejvm.Generator.*
+import org.typelevel.log4cats.Logger
+import org.typelevel.log4cats.slf4j.Slf4jLogger
 
-object OtpAuth extends IOApp:
-    val user = User("john", "john@email.com")
-    val tokenService = new OtpInteractiveService(Hotp, user)
+object OtpAuth extends IOApp {
+  val user = User("john", "john@email.com")
+  val tokenService = new OtpInteractiveService(Hotp, user)
 
-    override def run(args: List[String]): IO[ExitCode] =  ???
+  given logger: Logger[IO] = Slf4jLogger.getLogger[IO]
+
+  override def run(args: List[String]): IO[ExitCode] = ???
+}
 ```
 
-Here we create an instance of `OtpInteractiveService` to which we supply a `Generator` of type `Hotp` and a `User` as constructor arguments.
+Here we create an instance of `OtpInteractiveService` to which we supply a `Generator` of type `Hotp` and a `User` as constructor arguments. We also define a `given`, `logger` from `log4cats` which we will use for logging some messages to the console.
 
 ```scala
 import org.http4s.*
 import org.http4s.dsl.io.*
 import scala.util.*
     ...
-    val routes: HttpRoutes[IO] =
-        HttpRoutes.of[IO]{
-            case GET -> Root / "login" =>
-                tokenService.otpService.makeBarCodeImg.flatMap{value =>
-                    value match
-                        case Right(_) =>
-                            tokenService.otpService.getToken().map(println) >>
-                            tokenService.send2FA(user).flatMap{response =>
-                                response match
-                                    case Right(res) =>
-                                        IO(println(res.getBody())) >>
-                                        IO(println(res.getStatusCode())) >>
-                                        IO(println(res.getHeaders())) >>
-                                        Ok("We sent you an email, please follow the steps to complete the signin process.")
-                                    case Left(ex) =>
-                                        IO(println(s"Error: $ex")) >>
-                                        Ok("Oops, something went wrong, please try again later.")
-                            }
-                        case Left(ex) => Ok("Error occurred generating QR Code...")
+  val routes: HttpRoutes[IO] =
+    HttpRoutes.of[IO] {
+      case GET -> Root / "login" =>
+        // create barcode image
+        tokenService.otpService.makeBarCodeImg.attempt
+          .flatMap {
+            // successful barcode image creation
+            case Right(_) =>
+              // Log token
+              tokenService.otpService.getToken
+                .flatMap { token =>
+                  logger.info(s"Token value: $token")
                 }
-        }
-
+                .handleErrorWith { ex =>
+                  logger.error(s"GetToken Error: ${ex.getMessage}")
+                } *>
+                // send email
+                tokenService.send2FA(user).flatMap {
+                  // successful email
+                  case Right(res) =>
+                    logger.info(s"Response Body: ${res.getBody()}") *>
+                    logger.info(s"Response Status Code: ${res.getStatusCode()}") *>
+                    logger.info(s"Response Headers: ${res.getHeaders()}") *>
+                    Ok("We sent you an email, please follow the steps to complete the signin process.")
+                  // failed email
+                  case Left(ex) =>
+                    logger.error(s"Response Error: $ex") *>
+                    Ok("Oops, something went wrong, please try again later.")
+                }
+            // failed bar code image creation
+            case Left(ex) =>
+              logger.error(s"QR Code Error: ${ex.getMessage}") *>
+              Ok("Error occurred generating QR Code...")
+          }
+    }
     override def run(args: List[String]): IO[ExitCode] =  ???
 ```
 
-Next, we create our routes using the `HttpRoutes.of[IO]` method. When a user tries to log into the application using the `/login` route, we use the `tokenService` to try to create the bar code image by running `tokenService.otpService.makeBarCodeImg`, this gives us an `IO[Either[String, Unit]]` that we `flatMap` and match.
-If the bar code image was successfully created we get the token value and print it to the console for debugging purposes otherwise for security reasons it should be removed. This is done by running `println(tokenService.otpService.getToken())`.
+Let's break this down section by section
+We create our routes using the `HttpRoutes.of[IO]` method. When a user tries to log into the application using the `/login` route, we use the `tokenService` to try to create the bar code image by running `tokenService.otpService.makeBarCodeImg`, the `attempt()` method creates `IO[Either[String, Unit]]` that we `flatMap` on and pattern match.
 
-We then proceed to send our email by calling `tokenService.send2FA(user)` which we `flatMap` and `match` on the `response`. If the email was sent successfully, we print the body, status code and headers to the console for debugging purposes by calling `res.getBody()`, `res.getStatusCode()`, and `res.getHeaders()` on `response` respectively, and inform the user to check his or her email, otherwise we print the error to the console and inform the user that an error occurred.
+If the bar code image was successfully created, we ignore the `unit` value in `Right(_)` and proceed to acquire the token value using the following code:
 
-In case an error occurred creating the bar code image, we also inform the user by returning `Ok("Error occurred generating QR Code...")`.
+```scala
+tokenService.otpService.getToken
+.flatMap { token =>
+    logger.info(s"Token value: $token")
+}
+.handleErrorWith { ex =>
+    logger.error(s"GetToken Error: ${ex.getMessage}")
+} *>
+```
+
+In case the token was successfully created we log the token value by calling `logger.info(s"Token value: $token")` otherwise we handle the error and also log it to the console by calling `logger.error(s"GetToken Error: ${ex.getMessage}")`. The `*>` means that we are going to replace the result of the previous computation with that of the next, which is sending our email:
+
+```scala
+// send email
+tokenService.send2FA(user).flatMap {
+    // successful email
+    case Right(res) =>
+        logger.info(s"Response Body: ${res.getBody()}") *>
+        logger.info(s"Response Status Code: ${res.getStatusCode()}") *>
+        logger.info(s"Response Headers: ${res.getHeaders()}") *>
+        Ok("We sent you an email, please follow the steps to complete the signin process.")
+    // failed email
+    case Left(ex) =>
+        logger.error(s"Response Error: $ex") *>
+        Ok("Oops, something went wrong, please try again later.")
+}
+```
+
+Here we pattern match on our `Either[String, Response]` from the `tokenService.send2FA(user)` function. If the email was sent successfully, we log the body, status code, and headers to the console for debugging purposes by calling `res.getBody()`, `res.getStatusCode()`, and `res.getHeaders()` on `response` respectively, and inform the user to check his or her email, otherwise, we print the error to the console and inform the user that an error occurred.
+
+In case an error occurred creating the bar code image, we log the error to the console and notify the user as shown below:
+
+```scala
+// failed bar code image creation
+case Left(ex) =>
+    logger.error(s"QR Code Error: ${ex.getMessage}") *>
+    Ok("Error occurred generating QR Code...")
+```
+
+The `/code/value` route receives the code from the user and verifies it by calling `tokenService.otpService.verifyCode(value)` where `value` is the 6-digit code:
 
 ```scala
 val routes: HttpRoutes[IO] =
     HttpRoutes.of[IO]{
     ...
-        case GET -> Root / "code" / value =>
-            tokenService.otpService.verifyCode(value).flatMap{value =>
-                value match
-                    case Right(result) =>
-                        if(true) then
-                            IO(user.incrementCounter) >>
-                            Ok(s"Code Verified?: $result")
-                        else
-                            Ok(s"Code Verified?: $result")
-                    case Left(ex) =>
-                        IO(println(ex)) >>
-                        Ok("An error occurred during verification")
-            }
+      case GET -> Root / "code" / value =>
+        // verify code
+        tokenService.otpService
+          .verifyCode(value)
+          .flatMap { result =>
+            if (result) then
+              IO(user.incrementCounter) *>
+              Ok(s"Code verification passed")
+            else Ok(s"Code verification failed")
+
+          }
+          .handleErrorWith { ex =>
+            logger.error(s"Verification Error: ${ex.getMessage}") *>
+            Ok("An error occured during verification")
+          }
     }
 ```
 
-The `/code/value` route receives the code from the user and verifies it by calling `tokenService.otpService.verifyCode(value)` where `value` is the 6-digit code. If the code is correctly verified we increment the user's counter by 1 and respond with `Ok(s"Code Verified?: true")`, assuming that the verification failed, we respond with `Ok(s"Code Verified?: false")`.
+If the code is correctly verified we increment the user's counter by 1 and respond with `Ok(s"Code verification passed")`, assuming that the verification failed, we respond with `Ok(s"Code verification failed")`.
 
-Supposing an error occurred during the verification process, we print the error to the console and respond with `Ok("An error occurred during verification")`.
+Supposing an error occurred during the verification process, we log the error to the console and respond with `Ok("An error occurred during verification")`.
 
 ```scala
 import com.comcast.ip4s.*
 import org.http4s.ember.server.EmberServerBuilder
-    ...
-    val server = EmberServerBuilder
-        .default[IO]
-        .withHost(ipv4"0.0.0.0")
-        .withPort(port"8080")
-        .withHttpApp(routes.orNotFound)
-        .build
+  ...
+  val server =
+    EmberServerBuilder
+      .default[IO]
+      .withHost(ipv4"0.0.0.0")
+      .withPort(port"8080")
+      .withHttpApp(routes.orNotFound)
+      .build
 
-    override def run(args: List[String]): IO[ExitCode] =  server.use(_ => IO.never).as(ExitCode.Success)
+  override def run(args: List[String]): IO[ExitCode] =
+    server.use(_ => IO.never).as(ExitCode.Success)
 ```
 
 Finally, we use ember to create our `server` and add it the the `run` function.
@@ -741,7 +852,8 @@ Finally, we use ember to create our `server` and add it the the `run` function.
 Here is the full code.
 
 ```scala
-import cats.effect.{IOApp, IO, ExitCode}
+import cats.effect.*
+import cats.implicits.*
 import org.http4s.*
 import org.http4s.dsl.io.*
 import com.comcast.ip4s.*
@@ -749,67 +861,101 @@ import org.http4s.ember.server.EmberServerBuilder
 import com.rockthejvm.OtpInteractiveService
 import com.rockthejvm.User
 import com.rockthejvm.Generator.*
+import org.typelevel.log4cats.Logger
+import org.typelevel.log4cats.slf4j.Slf4jLogger
 
-object OtpAuth extends IOApp:
-    val user = User("john", "john@email.com")
-    val tokenService = new OtpInteractiveService(Totp, user)
+object OtpAuth extends IOApp {
+  val user = User("john", "john@email.com")
+  val tokenService = new OtpInteractiveService(Hotp, user)
 
+  given logger: Logger[IO] = Slf4jLogger.getLogger[IO]
 
-    val routes: HttpRoutes[IO] =
-        HttpRoutes.of[IO]{
-            case GET -> Root / "login" =>
-                tokenService.otpService.makeBarCodeImg.flatMap{value =>
-                    value match
-                        case Right(_) =>
-                            tokenService.otpService.getToken().map(println) >>
-                            tokenService.send2FA(user).flatMap{response =>
-                                response match
-                                    case Right(res) =>
-                                        IO(println(res.getBody())) >>
-                                        IO(println(res.getStatusCode())) >>
-                                        IO(println(res.getHeaders())) >>
-                                        Ok("We sent you an email, please follow the steps to complete the signin process.")
-                                    case Left(ex) =>
-                                        IO(println(s"Error: $ex")) >>
-                                        Ok("Oops, something went wrong, please try again later.")
-                            }
-                        case Left(ex) => Ok("Error occurred generating QR Code...")
+  val routes: HttpRoutes[IO] =
+    HttpRoutes.of[IO] {
+      case GET -> Root / "login" =>
+        // create barcode image
+        tokenService.otpService.makeBarCodeImg.attempt
+          .flatMap {
+            // successful barcode image creation
+            case Right(_) =>
+              // Log token
+              tokenService.otpService.getToken
+                .flatMap { token =>
+                  logger.info(s"Token value: $token")
                 }
-            case GET -> Root / "code" / value =>
-                tokenService.otpService.verifyCode(value).flatMap{value =>
-                    value match
-                        case Right(result) =>
-                            if(true) then
-                                IO(user.incrementCounter) >>
-                                Ok(s"Code Verified?: $result")
-                            else
-                                Ok(s"Code Verified?: $result")
-                        case Left(ex) =>
-                            IO(println(ex)) >>
-                            Ok("An error occured during verification")
+                .handleErrorWith { ex =>
+                  logger.error(s"GetToken Error: ${ex.getMessage}")
+                } *>
+                // send email
+                tokenService.send2FA(user).flatMap {
+                  // successful email
+                  case Right(res) =>
+                    logger.info(s"Response Body: ${res.getBody()}") *>
+                      logger
+                        .info(
+                          s"Response Status Code: ${res.getStatusCode()}"
+                        ) *>
+                      logger.info(s"Response Headers: ${res.getHeaders()}") *>
+                      Ok(
+                        "We sent you an email, please follow the steps to complete the signin process."
+                      )
+                  // failed email
+                  case Left(ex) =>
+                    logger.error(s"Response Error: $ex") *>
+                      Ok("Oops, something went wrong, please try again later.")
                 }
-        }
+            // failed bar code image creation
+            case Left(ex) =>
+              logger.error(s"QR Code Error: ${ex.getMessage}") *>
+                Ok("Error occurred generating QR Code...")
+          }
+      case GET -> Root / "code" / value =>
+        // verify code
+        tokenService.otpService
+          .verifyCode(value)
+          .flatMap { result =>
+            if (result) then
+              IO(user.incrementCounter) *>
+                Ok(s"Code verification passed")
+            else Ok(s"Code verification failed")
 
-    val server =
-        EmberServerBuilder
-            .default[IO]
-            .withHost(ipv4"0.0.0.0")
-            .withPort(port"8080")
-            .withHttpApp(routes.orNotFound)
-            .build
+          }
+          .handleErrorWith { ex =>
+            logger.error(s"Verification Error: ${ex.getMessage}") *>
+              Ok("An error occured during verification")
+          }
+    }
 
-    override def run(args: List[String]): IO[ExitCode] =  server.use(_ => IO.never).as(ExitCode.Success)
+  val server =
+    EmberServerBuilder
+      .default[IO]
+      .withHost(ipv4"0.0.0.0")
+      .withPort(port"8080")
+      .withHttpApp(routes.orNotFound)
+      .build
+
+  override def run(args: List[String]): IO[ExitCode] =
+    server.use(_ => IO.never).as(ExitCode.Success)
+}
 ```
 
-Finally can run our server and test our application.
-Make sure you provide an actual email to our user, this is where the token will be sent.
+Before we start our server and test our application, make sure you provide an actual email to our user, this is where the token will be sent.
 
 ```scala
 val user = User("john", "john@email.com")
 
 ```
 
-**Testing our application.**
+Also, make sure you run the following in your root folder:
+
+```bash
+source secret.env
+source sendgrid.env
+```
+
+So that the environmental variables are present.
+
+Now let's test our application.
 
 ```bash
 curl -vv http://localhost:8080/login
@@ -822,7 +968,7 @@ curl -vv http://localhost:8080/login
 >
 * Mark bundle as not supporting multiuse
 < HTTP/1.1 200 OK
-< Date: Fri, 16 Jun 2023 14:59:55 GMT
+< Date: Thu, 06 Jul 2023 16:02:41 GMT
 < Connection: keep-alive
 < Content-Type: text/plain; charset=UTF-8
 < Content-Length: 77
@@ -837,33 +983,36 @@ Here's what we printed to the console.
 829449
 
 202
-{Strict-Transport-Security=max-age=600; includeSubDomains, Server=nginx, Access-Control-Allow-Origin=https://sendgrid.api-docs.io,
-Access-Control-Allow-Methods=POST, Connection=keep-alive, X-Message-Id=w46GLwNYTLuqboNNO7gqAw, X-No-CORS-Reason=https://sendgrid.com/docs/Classroom/Basics/
-API/cors.html, Content-Length=0, Access-Control-Max-Age=600, Date=Fri, 16 Jun 2023 14:59:46 GMT, Access-Control-Allow-Headers=Authorization, Content-Type,
-On-behalf-of, x-sg-elas-acl}
+[info] running OtpAuth
+[io-compute-4] INFO org.http4s.ember.server.EmberServerBuilderCompanionPlatform - Ember-Server service bound to address: [::]:8080
+[io-compute-4] INFO <empty>.OtpAuth - Token value: 486981
+[io-compute-4] INFO <empty>.OtpAuth - Response Body:
+[io-compute-4] INFO <empty>.OtpAuth - Response Status Code: 202
+[io-compute-4] INFO <empty>.OtpAuth - Response Headers: {Strict-Transport-Security=max-age=600; includeSubDomains, Server=nginx, Access-Control-Allow-Origin=https://sendgrid.api-docs.io, Access-Control-Allow-Methods=POST, Connection=keep-alive, X-Message-Id=qsasLSGIQbaptS_obj_ZSg, X-No-CORS-Reason=https://sendgrid.com/docs/Classroom/Basics/API/cors.html, Content-Length=0, Access-Control-Max-Age=600, Date=Thu, 06 Jul 2023 16:02:38 GMT, Access-Control-Allow-Headers=Authorization, Content-Type, On-behalf-of, x-sg-elas-acl}
+
 ```
 
 We can see that SendGrid successfully sent our email.
-You can now open your mail and scan the BarCode image with Google Authenticator then pass the 6-digit code to the verification URL. The code outputted by Google Authenticator should be the same as what's displayed in our console.
+You can now open your mail and scan the BarCode image with Google Authenticator then pass the 6-digit code to the verification URL. The code outputted by Google Authenticator should be the same as what's displayed in your console.
 
 ```bash
-curl -vv http://localhost:8080/code/829449
+curl -vv http://localhost:8080/code/486981
 *   Trying ::1:8080...
 * Connected to localhost (::1) port 8080 (#0)
-> GET /code/829449 HTTP/1.1
+> GET /code/486981 HTTP/1.1
 > Host: localhost:8080
 > User-Agent: curl/7.71.1
 > Accept: */*
 >
 * Mark bundle as not supporting multiuse
 < HTTP/1.1 200 OK
-< Date: Fri, 16 Jun 2023 15:01:10 GMT
+< Date: Thu, 06 Jul 2023 16:03:49 GMT
 < Connection: keep-alive
 < Content-Type: text/plain; charset=UTF-8
-< Content-Length: 20
+< Content-Length: 24
 <
 * Connection #0 to host localhost left intact
-Code Verified?: true⏎
+Code verification passed⏎
 ```
 
 The server feedback should be the same as above.
@@ -874,9 +1023,9 @@ Repeat the same process for `Totp` by making the following change to OtpAuth.sca
 val tokenService = new OtpInteractiveService("Totp", user)
 ```
 
-Note that for `Totp` to work, make sure your phone and computer date and time down to the seconds are the same and current. You can use the network time for both devices, this should give you the same results.
+Note that for `Totp` to work, **make sure your phone and computer date and time down to the seconds are the same and current**. You can use the network time for both devices, this should give you the same results.
 
-One may also limit the time the user takes to submit the code as an extra security measure.
+One may also limit the time the user takes to submit the code as an extra security measure for the case of `Hotp`.
 
 ## 3. Conclusion
 
