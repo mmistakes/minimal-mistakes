@@ -33,7 +33,7 @@ intro:
 
 Helmi is accessible through the LUMI environment daily between 13:00 EET and 08:00 EET. 
 
-Helmi will be unavailable due to maintenance from 26.06.2023 - 07.07.2023
+Helmi will be unavailable due to maintenance from 26.06.2023 - 17.07.2023
 {: .notice--info}
 
 <center>
