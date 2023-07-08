@@ -7,7 +7,7 @@ main:
   - title: "Categories"
     url: /categories/
   - title: "Business"
-    url: /categories/business/technical-due-diligence
+    url: /categories/business
 interview_prep:
   - title: "Interview Prep"
     children:
