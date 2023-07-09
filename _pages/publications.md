@@ -5,9 +5,9 @@ permalink: /publications/
 author_profile: true
 ---
 
-(* indicates equal contribution)
-
 ## Selected Papers
+
+(* indicates equal contribution)
 
 ### 2023
 
