@@ -1,13 +1,15 @@
 ---
-title: "Kotlin from the Future: Context Receivers"
-date: 2023-06-30
+title: "Kotlin Context Receivers: A Comprehensive Guide"
+date: 2023-07-10
 header:
     image: "/images/blog cover.jpg"
 tags: [kotlin]
 excerpt: ""
 toc: true
-toc_label: ""
+toc_label: "In this article"
 ---
+
+_By [Riccardo Cardin](https://github.com/rcardin)_
 
 This article will explore a powerful feature of the Kotlin programming language called context receivers. If you're a Kotlin developer looking to write cleaner and more expressive code, context receivers are a tool you'll want in your toolbox.
 
@@ -15,10 +17,14 @@ In Kotlin, context receivers provide a convenient way to access functions and pr
 
 We'll dive deeply into context receivers, starting with their purpose and benefits. We'll explore practical examples and demonstrate how context receivers can make your Kotlin code more expressive and effective. So let's get started and unlock the full potential of context receivers in Kotlin!
 
+If you'd like to watch the video version, please find it below:
+
+{% include video id="TVdFAftHzPE" provider="youtube" %}
+
 ## 1. Setup
 
-Let's go through the setup steps to harness the power of context receivers in your Kotlin project. **We'll use Gradle with the Kotlin DSL** and enable the context receivers compiling option. Make sure you have Kotlin version 1.8.22 or later installed before proceeding.
-
+Let's go thr[132 - kotlin context receivers.mp4](..%2F..%2F..%2F..%2F..%2FDesktop%2F132%20-%20kotlin%20context%20receivers.mp4)ough the setup steps to harness the power of context receivers in your Kotlin project. **We'll use Gradle with the Kotlin DSL** and enable the context receivers compiling option. Make sure you have Kotlin version 1.8.22 or later installed before proceeding.
+[132 - kotlin context receivers.mp4](..%2F..%2F..%2F..%2F..%2FDesktop%2F132%20-%20kotlin%20context%20receivers.mp4)
 We'll use nothing more than the Kotlin standard library this time on top of Java 19. At the end of the article, we'll provide the complete `build.gradle.kts` file for your reference.
 
 If you want to try generating the project you own, just type `gradle init` on a command line, and answer the questions you'll be asked.
@@ -408,7 +414,11 @@ class JobController {
 
 However, the notation is very verbose and makes the code less readable. Moreover, we must ensure that a developer uses it.
 
-In Scala, we had a very close problem with the [Tagless Final encoding](https://blog.rockthejvm.com/tagless-final/) pattern. In the past, many Scala developers started to use the pattern to implement dependency injection. Using a similar approach to context receivers, Scala allows us to define type constraints in the type parameters definition. The `JobController` class would look like the following in Scala:
+In Scala, we had a very close problem with the [Tagless Final encoding](https://blog.rockthejvm.com/tagless-final/) pattern. 
+
+> If you don't know Scala or Tagless Final, just skip the Scala code - it's a small comparison.
+
+In the past, many Scala developers started to use the pattern to implement dependency injection. Using a similar approach to context receivers, Scala allows us to define type constraints in the type parameters definition. The `JobController` class would look like the following in Scala:
 
 ```scala
 class JobController[F[_]: Monad: Jobs: JsonScope: Logger]: F[String] {
