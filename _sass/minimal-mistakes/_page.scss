@@ -72,6 +72,11 @@ body {
   margin-top: 0;
   line-height: 1;
 
+  a {
+    color: $text-color;
+    text-decoration: none;
+  }
+
   & + .page__meta {
     margin-top: -0.5em;
   }
@@ -131,6 +136,20 @@ body {
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);
       }
+    }
+  }
+
+  :not(pre) > code {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    font-size: 0.8em;
+    background: $code-background-color;
+    border-radius: $border-radius;
+
+    &::before,
+    &::after {
+      letter-spacing: -0.2em;
+      content: "\00a0"; /* non-breaking space*/
     }
   }
 
@@ -299,6 +318,12 @@ body {
   text-transform: uppercase;
 }
 
+.page__meta-sep::before {
+  content: "\2022";
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
 /*
    Page taxonomy
    ========================================================================== */
@@ -352,11 +377,11 @@ body {
 
 .taxonomy__title {
   margin-bottom: 0.5em;
-  color: lighten($text-color, 60%);
+  color: $muted-text-color;
 }
 
 .taxonomy__count {
-  color: lighten($text-color, 50%);
+  color: $muted-text-color;
 }
 
 .taxonomy__index {
@@ -389,7 +414,7 @@ body {
 .back-to-top {
   display: block;
   clear: both;
-  color: lighten($text-color, 50%);
+  color: $muted-text-color;
   font-size: 0.6em;
   text-transform: uppercase;
   text-align: right;

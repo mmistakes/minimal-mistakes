@@ -1,5 +1,5 @@
 ---
-layout: null
+layout: none
 ---
 
 var idx = lunr(function () {
