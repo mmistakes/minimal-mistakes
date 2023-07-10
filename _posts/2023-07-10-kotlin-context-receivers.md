@@ -4,7 +4,7 @@ date: 2023-07-10
 header:
     image: "/images/blog cover.jpg"
 tags: [kotlin]
-excerpt: ""
+excerpt: "This tutorial describes Kotlin context receivers, a new feature of the Kotlin language for nice and controllable abstractions."
 toc: true
 toc_label: "In this article"
 ---
