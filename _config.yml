@@ -126,8 +126,8 @@ author:
       icon: "fab fa-fw fa-paypal"
       url: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6T46LTPJDBWKY&source=url"
     - label: "Contact/Support"
-      icon: "fab fa-fw fa-envelope"
-      url: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6T46LTPJDBWKY&source=url"
+      icon: "fab fa-duotone fa-envelope"
+      url: "https://vpilotdesigns.github.io/contact/"
 
 # Site Footer
 footer:
