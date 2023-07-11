@@ -8,6 +8,7 @@ tags:
   - iTerm2
   - Keymap
 classes: wide
+image: "_posts/2023-07-11-iTerm-Keymap.png"
 ---
 
 iTerm에서 HOME/END(혹은 Command+방향키), 단어 단위 이동(Option+방향키) 가 안 될 때, 
@@ -18,4 +19,4 @@ iTerm에서 HOME/END(혹은 Command+방향키), 단어 단위 이동(Option+방�
 
 `iTerm2 > Preferences > Profiles > Keys > Load Preset... > Natural Text Editing`
 
-![-](/_posts/iterm_natural_text_editing.png | relative_url)
+![{{ page.image }}]( {{ page.image }} )
