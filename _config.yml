@@ -125,6 +125,9 @@ author:
     - label: "Donation/Paypal"
       icon: "fab fa-fw fa-paypal"
       url: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6T46LTPJDBWKY&source=url"
+    - label: "Contact/Support"
+      icon: "fab fa-fw fa-envelope"
+      url: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6T46LTPJDBWKY&source=url"
 
 # Site Footer
 footer:
