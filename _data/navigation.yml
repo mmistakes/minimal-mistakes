@@ -4,10 +4,10 @@ main:
     url: /Airports/
   - title: "Free Addons"
     url: /sceneries/
-  - title: "Liveries"
-    url: /liveries/
-  - title: "Videos"
-    url: /video-archive/
+  #- title: "Liveries"
+  # url: /liveries/
+  - title: "Contact"
+    url: /contact/
   #- title: "Utilities/Links"
   #  url: /utilities/
   # - title: "Sample Collections"
