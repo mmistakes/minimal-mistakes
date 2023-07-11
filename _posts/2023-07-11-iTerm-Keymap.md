@@ -18,4 +18,4 @@ iTerm에서 HOME/END(혹은 Command+방향키), 단어 단위 이동(Option+방�
 
 `iTerm2 > Preferences > Profiles > Keys > Load Preset... > Natural Text Editing`
 
-![-](_posts/iterm_natural_text_editing.png)
+![-](/_posts/iterm_natural_text_editing.png | relative_url)
