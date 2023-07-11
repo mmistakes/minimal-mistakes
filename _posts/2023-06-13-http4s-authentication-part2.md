@@ -834,6 +834,7 @@ val routes: HttpRoutes[IO] =
           .flatMap { result =>
             if (result) then
               IO(user.incrementCounter) *>
+              IO(user.isSecretUpdated = false) *>
               Ok(s"Code verification passed")
             else Ok(s"Code verification failed")
 
@@ -845,19 +846,9 @@ val routes: HttpRoutes[IO] =
     }
 ```
 
-If the code is correctly verified we increment the user's counter by 1 and respond with `Ok(s"Code verification passed")`, assuming that the verification failed, we respond with `Ok(s"Code verification failed")`.
+If the code is correctly verified we increment the user's counter by 1, set `user.isSecretUpdated` back to `false` and respond with `Ok(s"Code verification passed")`, this way every time the user logs in, a new secret is generated. Assuming that the verification failed, we respond with `Ok(s"Code verification failed")`.
 
 Supposing an error occurred during the verification process, we log the error to the console and respond with `Ok("An error occurred during verification")`.
-
-```scala
-...
-      case GET -> Root / "logout" =>
-        IO(user.isSecretUpdated = false) *>
-        Ok(s"logging Out")
-...
-```
-
-The `/logout` route sets isSecretUpdated back to false so that the next time the user logs back in, another `secret` is issued.
 
 ```scala
 import com.comcast.ip4s.*
@@ -932,12 +923,12 @@ object OtpAuth extends IOApp {
                   // failed email
                   case Left(ex) =>
                     logger.error(s"Response Error: $ex") *>
-                      Ok("Oops, something went wrong, please try again later.")
+                    Ok("Oops, something went wrong, please try again later.")
                 }
             // failed bar code image creation
             case Left(ex) =>
               logger.error(s"QR Code Error: ${ex.getMessage}") *>
-                Ok("Error occurred generating QR Code...")
+              Ok("Error occurred generating QR Code...")
           }
       case GET -> Root / "code" / value =>
         // verify code
@@ -946,7 +937,8 @@ object OtpAuth extends IOApp {
           .flatMap { result =>
             if (result) then
               IO(user.incrementCounter) *>
-                Ok(s"Code verification passed")
+              IO(user.isSecretUpdated = false) *>
+              Ok(s"Code verification passed")
             else Ok(s"Code verification failed")
 
           }
@@ -954,9 +946,6 @@ object OtpAuth extends IOApp {
             logger.error(s"Verification Error: ${ex.getMessage}") *>
               Ok("An error occured during verification")
           }
-      case GET -> Root / "logout" =>
-        IO(user.isSecretUpdated = false) *>
-        Ok(s"logging Out")
     }
 
   val server =
