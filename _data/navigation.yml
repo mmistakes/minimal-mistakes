@@ -6,7 +6,7 @@ main:
     url: /sceneries/
   #- title: "Liveries"
   # url: /liveries/
-  - title: "Contact"
+  - title: "Contact/Support"
     url: /contact/
   #- title: "Utilities/Links"
   #  url: /utilities/
