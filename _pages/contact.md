@@ -5,7 +5,6 @@ layout: single
 toc: true
 ---
 
-
 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/moqoqpve" method="post">
   <fieldset id="fs-frm-inputs">
     <label for="full-name">Full Name/Nombre Completo</label>
@@ -15,9 +14,9 @@ toc: true
     <label for="transaction-id">Marketplace Transaction Number(Required) / Numero de Transacción de la compra (Obligatorio)</label>
     <input type="number" name="tid" id="tid" placeholder="XXXXXXXXXX" required="">
     <label for="Gamertag">XBOX/MS Gamertag (Required)</label>
-    <input type="number" name="tid" id="tid" placeholder="-------------" required="">
+    <input type="text" name="gamertag" id="gamertag" placeholder="" required="">
     <label for="message">Message</label>
-    <textarea rows="5" name="message" id="message" placeholder="..." required=""></textarea>
+    <textarea rows="5" name="message" id="message" placeholder="" required=""></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
   </fieldset>
   <input type="submit" value="Submit">
