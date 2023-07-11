@@ -24,8 +24,4 @@ toc: true
 </form>
 
 
-<a href="https://www.buymeacoffee.com/oliveiralberto"><img src="https://img.buymeacoffee.com/button-api/?text=Gastale una pizza a Alberto&emoji=🍕&slug=vpilot&button_colour=79D6B5&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"></a>
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6T46LTPJDBWKY)
-
 <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="vpilot" data-description="Apoyame comprandome un Café!" data-message="Gracias por descargar. Ahora puedes invitarme a un Café!" data-color="#79D6B5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
