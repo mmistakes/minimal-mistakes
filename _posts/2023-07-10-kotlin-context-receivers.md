@@ -23,8 +23,8 @@ If you'd like to watch the video version, please find it below:
 
 ## 1. Setup
 
-Let's go thr[132 - kotlin context receivers.mp4](..%2F..%2F..%2F..%2F..%2FDesktop%2F132%20-%20kotlin%20context%20receivers.mp4)ough the setup steps to harness the power of context receivers in your Kotlin project. **We'll use Gradle with the Kotlin DSL** and enable the context receivers compiling option. Make sure you have Kotlin version 1.8.22 or later installed before proceeding.
-[132 - kotlin context receivers.mp4](..%2F..%2F..%2F..%2F..%2FDesktop%2F132%20-%20kotlin%20context%20receivers.mp4)
+Let's go through the setup steps to harness the power of context receivers in your Kotlin project. **We'll use Gradle with the Kotlin DSL** and enable the context receivers compiling option. Make sure you have Kotlin version 1.8.22 or later installed before proceeding.
+
 We'll use nothing more than the Kotlin standard library this time on top of Java 19. At the end of the article, we'll provide the complete `build.gradle.kts` file for your reference.
 
 If you want to try generating the project you own, just type `gradle init` on a command line, and answer the questions you'll be asked.
