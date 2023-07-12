@@ -7,7 +7,7 @@ author_profile: true
 
 ## Selected Papers
 
-See full publication list [here]((https://scholar.google.com/citations?user=xCR8nrwAAAAJ&hl=en)) (* indicates equal contribution)
+See full publication list [here](https://scholar.google.com/citations?user=xCR8nrwAAAAJ&hl=en) (* indicates equal contribution)
 
 ### 2023
 
