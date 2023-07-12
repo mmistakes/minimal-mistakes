@@ -11,7 +11,8 @@ toc: true
     <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
     <label for="email-address">Email Address</label>
     <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-    <label for="transaction-id">Marketplace Transaction Number(Required) / Numero de Transacción de la compra (Obligatorio)</label>
+    <label for="transaction-id">Marketplace Transaction Number(Required)</label>
+    <label for="transaction-id">Numero de Transacción de la compra (Obligatorio)</label>
     <input type="number" name="tid" id="tid" placeholder="XXXXXXXXXX" required="">
     <label for="Gamertag">XBOX/MS Gamertag (Required)</label>
     <input type="text" name="gamertag" id="gamertag" placeholder="" required="">
