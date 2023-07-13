@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "OSY LAB"
+title                    : "OSY-LAB"
 title_separator          : "|"
 subtitle                 : "My Log"
 name                     : "Seungyep OH"
@@ -32,7 +32,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" #"disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : "OSY LAB"
+    shortname            : "OSY-LAB"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
