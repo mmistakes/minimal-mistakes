@@ -57,10 +57,10 @@ gallery1:
 Available in the MSFS Marketplace  
 
 
-{% include figure image_path="/assets/images/KHDN/Block_01.jpg" alt="KHDN" caption="Yampa Valley Airport, CO, USA" %}
+{% include figure image_path="/assets/images/KHDN/Block_07.jpg" alt="KHDN" caption="Yampa Valley Airport, CO, USA" %}
 Yampa Valley Airport
 
-Created by Arka506 and V Pilot Designs
+Created by V Pilot Designs
 
 KHDN - Yampa Valley Airport - CO, USA
 
