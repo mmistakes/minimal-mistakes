@@ -49,6 +49,9 @@ gallery1:
     alt: "placeholder image 7"
     title: "Yampa Valley Airport, CO, USA"
   - url: /assets/images/KHDN/Block_12.jpg
+    image_path: /assets/images/KHDN/Block_12.jpg
+    alt: "placeholder image 7"
+    title: "Yampa Valley Airport, CO, USA"
     
 ---
 ### **Yampa Valley Airport, CO, USA**
