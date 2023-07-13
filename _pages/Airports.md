@@ -72,7 +72,7 @@ toc: true
 ## [KHDN Yampa Valley Airport - Hayden, CO](https://vpilotdesigns.github.io/KHDN/)
 <p><a href="https://vpilotdesigns.github.io/KHDN/"><strong>Galeria/Gallery</strong></a><br>
   <br></p>
-{% include figure image_path="/assets/images/KHDN/Block_14.jpg" alt="khdn" caption="Yampa Valley Airport - Hayden, CO for MSFS" %}
+{% include figure image_path="/assets/images/KHDN/Block_02.jpg" alt="khdn" caption="Yampa Valley Airport - Hayden, CO for MSFS" %}
 	
 ## [KMAF - Midland International Air and Space Port - Midland, TX](https://vpilotdesigns.github.io/KMAF/)
 <p><a href="https://vpilotdesigns.github.io/KMAF/"><strong>Galeria/Gallery</strong></a><br>
