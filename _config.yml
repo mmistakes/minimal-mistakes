@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Your Name"
 description              : "An amazing website."
-url                      :  "https://kchair777.github.io"
+url                      : "https://kchair777.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -73,10 +73,10 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
-bing_site_verification   :
-naver_site_verification  :
-yandex_site_verification :
+google_site_verification : "kchstar@gmail.com"
+bing_site_verification   : "kchstar@hotmail.com"
+naver_site_verification  : "kchair777@naver.com"
+yandex_site_verification : 
 baidu_site_verification  :
 
 # Social Sharing
@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Kim Chun Ho"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "I live in Seoul, S.Korea"
+  location         : "Seoul,Korea"
+  email            : "kimchunho777@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
