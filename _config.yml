@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "dark" # "default", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "KIM CHUN HO Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Kim Chun Ho"
 description              : "An amazing website."
 url                      : "https://kchair777.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
