@@ -15,12 +15,12 @@
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Carpe Diem"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "MERx88"
-description              : "메르의 기술 블로그입니다"
+locale                   : "ko-KR"
+title                    : "MERx88"
+title_separator          : "|"
+subtitle                 : "Carpe Diem"
+name                     : "MER"
+description              : "메르의 블로그입니다"
 url                      : "https://MERx88.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
