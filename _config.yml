@@ -108,7 +108,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "💻 Back-end developer"
   location         : "Gumi, South Korea"
-  email            : jschoe410@gmail.com
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
