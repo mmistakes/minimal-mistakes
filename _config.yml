@@ -108,7 +108,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "메르의 기록 공간입니다"
   location         : "South Korea"
-  email            : "wjang07@gmail.com"
+  # email            : "wjang07@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
