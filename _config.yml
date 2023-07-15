@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "CHOE-JAESEONG"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "💻 Back-end developer"
+  location         : "Gumi, South Korea"
+  email            : jschoe410@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
