@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "JARRY NOTE"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "JARRY NOTE"
+name                     : "Jaeseong Choe"
 description              : "An amazing website."
 url                      : "https://choe-jaeseong.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
