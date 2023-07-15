@@ -32,13 +32,7 @@ These are things I'm curating at the moment or perennial works-in-progress.
 
 ### Doodling Data Cards
 
-[**Doodling Data Cards**](https://doodlingdata.substack.com/) is my newsletter (hosted on Substack), I create hand-drawn data visualisations and write data stories. It will expand in time with different types of content related to the whole world of data.
-
-### Tales of Science & Data
-
- <a href="https://martinapugliese.gitbook.io/tales-of-science-and-data/" target="_blank">**Tales of Science & Data**</a> is a collection of notes I wrote (as a GitBook) on data science topics, it is occasionally edited and updated. This project started when I had a bunch of notebooks with hand-written notes, it was about time I'd give them a digital form, both for myself and in order to share with others and give back to the community.
-
- There are still lots of sections that would deserve expansions or major improvements - I have a list of tasks. But these days I'm only erratically adding to the book when I feel like it.
+[**Doodling Data**](https://doodlingdata.substack.com/) is my newsletter (hosted on Substack), I create hand-drawn data visualisations and write data stories. It will expand in time with different types of content related to the whole world of data.
 
 ## Speaking
 
