@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Hwang hye jin"
-  avatar           : "/images/images/블로그 이미지.jpg"
+  avatar           : "/images/블로그 이미지.jpg"
   bio              : "혜진이의 개발 블로그 입니다"
   location         : "South Korea"
   email            : 
