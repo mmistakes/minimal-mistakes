@@ -183,6 +183,7 @@ incremental: false
 # Markdown Processing
 kramdown:
   input: GFM
+  syntax_highlighter: rouge
   hard_wrap: false
   auto_ids: true
   footnote_nr: 1
