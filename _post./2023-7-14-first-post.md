@@ -1,2 +1,4 @@
-
-print("hello world")
+----
+layout: post
+title: hello world
+----
