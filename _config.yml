@@ -104,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Deepika Vadlamudi"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Machine Learning Engineer | All things Computer Science | Tech enthusiast"
+  location         : "California"
   email            :
   links:
     - label: "Email"
