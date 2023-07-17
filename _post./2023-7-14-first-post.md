@@ -1,4 +1,5 @@
 ----
-layout: post
+layout: single
 title: "hello world"
 ----
+ahffkdflsfd
