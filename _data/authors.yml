@@ -90,9 +90,6 @@ Natalie Maus:
       icon: "fas fa-fw fa-link"
       url: "https://sites.google.com/seas.upenn.edu/natalie-maus/home"
 
-
-
-
 Jake Gardner:
   name             : "Jake Gardner"
   avatar           : https://jacobrgardner.github.io/images/me.jpg
@@ -100,3 +97,34 @@ Jake Gardner:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://jacobrgardner.github.io/"
+
+Anton Xue:
+  name    : "Anton Xue"
+  avatar  : "/assets/images/avatar/anton.jpg"
+  bio     : "CS PhD Student at UPenn"
+  home    : https://antonxue.github.io/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:antonxue@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://antonxue.github.io/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/AntonXue"
+
+
+Rajeev Alur:
+  name    : "Rajeev Alur"
+  avatar  : "/assets/images/avatar/rajeev.jpg"
+  bio     : "Zisman Family Professor at UPenn"
+  home    : https://www.cis.upenn.edu/~alur/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:alur@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.cis.upenn.edu/~alur/"
+
