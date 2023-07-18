@@ -15,12 +15,12 @@
 minimal_mistakes_skin    : "dark" # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise" , "air"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "KIM CHUN HO Blog"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+locale                   : "kr-KO"
+title                    : "김천호 블로그"
+title_separator          : "|"
+subtitle                 :  "kchstar blog"
 name                     : "Kim Chun Ho"
-description              : "An amazing website."
+description              : "like is wonderful"
 url                      : "https://kchair777.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
