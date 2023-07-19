@@ -260,14 +260,16 @@ Indeed, modern neural architectures like [Vision Transformers](https://arxiv.org
 -->
 
 
-### Q2: (Lack of) Stability in Feature Attributions
+### Q2: Stability as an Expected Behavior
 Having picked a metric of quality, we next consider how an explanation should behave with respect to this metric.
 Principally, we argue that a satisfactory explanation should be strongly confident in its claims, and we express this in two properties.
 First, the explanation should be **consistent**: $$\alpha$$ should contain enough of the salient features such that $$f(x \odot \alpha)$$ and $$f(x)$$ both yield the same prediction.
-Second, the explanation should be **stable**: $$\alpha$$ should contain so much of the salienty features, such thatincluding any more features does not alter the prediction of $$f(x \odot \alpha)$$.
+Second, the explanation should be **stable**: $$\alpha$$ should contain so much of the salient features, such that including any more features does not alter the prediction of $$f(x \odot \alpha)$$.
 
 In this post we focus on stability, which necessarily implies consistency.
-As an example of non-stability, consider the following example.
+We argue that stability is a desirable property, as it allows for greater predictablity when manipulating explanations.
+However, _**many feature attribution methods are not stable!**_
+An example of this is shown in the following.
 
 
 <!--
@@ -305,8 +307,8 @@ However, many feature attribution methods are not designed with stability in min
 </div>
 
 <figcaption>
-  The difference is highlighted in a green box.
-  This box is not visible to the model.
+  A single added patch of perturbation causes a prediction flip from "Goldfish" to "Axolotl".
+  The difference is highlighted in a green box; this box is not visible to the model.
 </figcaption>
 </figure>
 
@@ -409,7 +411,7 @@ The class of a prediction $$y$$ is then the index of its largest coordinate (i.e
 
 
 Before presenting stability, it will be useful to present the notion of including and containing features in an explanation.
-For two binary vetors $$\alpha, \alpha'$$, we write $$\alpha \succeq \alpha'$$ iff $$\alpha$$ includes all the features selected by $$\alpha'$$.
+For two binary vectors $$\alpha, \alpha'$$, we write $$\alpha \succeq \alpha'$$ iff $$\alpha$$ includes all the features selected by $$\alpha'$$.
 That is, $$\alpha \succeq \alpha'$$ iff at every coordinate $$\alpha_i \geq \alpha_i '$$.
 This then gives us the sufficient vocabulary to formalize the stability principle described earlier.
 
@@ -496,7 +498,7 @@ We next show how this Lipschitz smoothness is attained using our technique, MuS.
 
 
 
-## Multplicative Smoothing for Lipschitz Smoothness
+## MuS for Lipschitz Smoothness
 
 The goal of smoothing is to transform a base classifier $$h : \mathbb{R}^n \to [0,1]^m$$ into a smoothed classifier $$f : \mathbb{R}^n \to [0,1]^m$$, such that $$f$$ is $$\lambda$$-Lipschitz with respect to the masking of features.
 Our key insight is that randomly dropping features from the input attains the desired smoothness.
@@ -626,8 +628,7 @@ We show that MuS yields strong stability guarantees at only a small cost to accu
 
 ### Citation
 
-```
-@misc{xue2023stability,  
+> @misc{xue2023stability,  
       author = {Anton Xue and Rajeev Alur and Eric Wong},  
       title = {Stability Guarantees for Feature Attributions with Multiplicative Smoothing},  
       year = {2023},  
@@ -635,7 +636,6 @@ We show that MuS yields strong stability guarantees at only a small cost to accu
       archivePrefix = {arXiv},  
       primaryClass = {cs.LG}  
 }
-```
 
 
 
