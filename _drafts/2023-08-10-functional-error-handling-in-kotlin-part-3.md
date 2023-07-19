@@ -11,6 +11,15 @@ toc_label: "In this article"
 
 _By [Riccardo Cardin](https://github.com/rcardin)_
 
+It's time to end our journey on functional error handling in Kotlin with the new features introduced by the Arrow library in version 1.2.0, which are a preview of the big rewrite we'll have in version 2.0.0. We'll mainly focus on the `Raise` DSL, a new way to handle typed error using [Kotlin contexts](https://blog.rockthejvm.com/kotlin-context-receivers/). This article is part of a series: We can always reference the previous parts using this links:
+
+* [Functional Error Handling in Kotlin, Part 1: Absent values, Nullables, Options](https://blog.rockthejvm.com/functional-error-handling-in-kotlin/)
+* [Functional Error Handling in Kotlin, Part 2: Result and Either](https://blog.rockthejvm.com/functional-error-handling-in-kotlin-part-2/)
+
+Without further ado, let's start!
+
+## 1. Setup
+
 TODO
 
 ## 1. The Domain
