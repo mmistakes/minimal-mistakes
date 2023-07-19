@@ -21,7 +21,7 @@ toc_icon: "fas fa-list"
 
 **-비트 -> 바이트 -> 킬로바이트 -> 메가바이트 -> 기가바이트 -> 테라바이트**
 
-![images](\images\Users\hwang\OneDrive\사진\스크린샷\화면 캡처 2023-07-08 132836.png){: .img-row-center}
+![화면 캡처 2023-07-08 132836](C:\Users\hwang\github blog\pueser.github.io\images\20223-07-19-Java basic gramma\화면 캡처 2023-07-08 132836.png)
 
 <br/>
 
@@ -149,7 +149,7 @@ Java EE플랫폼은 Java SE플랫폼 기반으로 그 위에 탑재된다. 대�
 
 ## 1)연산자 종류
 
-![images](\images\Users\hwang\github blog\pueser.github.io\images\20223-07-10-Java basic gramma\연산자 종류.png){: .img-row-center}
+![연산자 종류](C:\Users\hwang\github blog\pueser.github.io\images\20223-07-19-Java basic gramma\연산자 종류.png)
 
 연산자 중 자주 사용하는 산술연산자, 대입연산자, 논리연산자에 대해 더 자세히 정리해 보았다.
 
@@ -159,7 +159,7 @@ Java EE플랫폼은 Java SE플랫폼 기반으로 그 위에 탑재된다. 대�
 
 ## 1.1 산술연산자
 
-![images](\images\Users\hwang\github blog\pueser.github.io\images\20223-07-10-Java basic gramma\산술연산자-1689520346061-8.png){: .img-row-center}
+![산술연산자](C:\Users\hwang\github blog\pueser.github.io\images\20223-07-19-Java basic gramma\산술연산자.png)
 
 <br/>
 
@@ -167,7 +167,7 @@ Java EE플랫폼은 Java SE플랫폼 기반으로 그 위에 탑재된다. 대�
 
 ## 1.2 대입연산자
 
-![images](\images\Users\hwang\github blog\pueser.github.io\images\20223-07-10-Java basic gramma\비교연산자-1689520384055-10.png){: .img-row-center}
+![비교연산자](C:\Users\hwang\github blog\pueser.github.io\images\20223-07-19-Java basic gramma\비교연산자.png)
 
 <br/>
 
@@ -175,7 +175,7 @@ Java EE플랫폼은 Java SE플랫폼 기반으로 그 위에 탑재된다. 대�
 
 ## 1.3 논리연산자
 
-![images](\images\Users\hwang\github blog\pueser.github.io\images\20223-07-10-Java basic gramma\논리연산자-1689520392146-12.png){: .img-row-center}
+![논리연산자](C:\Users\hwang\github blog\pueser.github.io\images\20223-07-19-Java basic gramma\논리연산자.png)
 
 <br/>
 
@@ -404,7 +404,7 @@ public class Main{
 
 -형식 : ``[접근제한자 ] [리턴타입] [메소드명] [(매개변수)]{}``
 
- ![images](\images\Users\hwang\github blog\pueser.github.io\images\20223-07-10-Java basic gramma\메소드.png){: .img-row-center}
+![메소드](C:\Users\hwang\github blog\pueser.github.io\images\20223-07-19-Java basic gramma\메소드.png)
 
 **매개변수 표현식**<br/>
 
