@@ -106,7 +106,49 @@ A `Jobs` module will handle the integration with the database:
 interface Jobs
 ```
 
-Now that we have defined the domain model and the module that will contain the algebra to access it, it's time to start to show how the new Raise DSL works.
+Since we'll use a lot of typed errors during the article, we need to define also a hierarchy of errors that the `Jobs` module can raise:
+
+```kotlin
+sealed interface JobError
+data class JobNotFound(val jobId: JobId) : JobError
+data class GenericError(val cause: String) : JobError
+data object NegativeAmount : JobError
+```
+
+Now that we have defined the domain model and the module that will contain the algebra to access it together with the errors we'll use along the way, it's time to start to show how the new Raise DSL works.
+
+## 3. The Raise DSL
+
+The Raise DSL is a new way to handle typed errors in Kotlin. Instead of using a wrapper type to handle both the happy path and errors, the `Raise<E>` type describes the possibility that a function can raise a logical error of type `E`. So, instead of returning a `Raise<E>`, a function that can raise an error of type `E` must execute in a scope that is also able to handle the error.
+
+In this sense, the `Raise<E>` is very similar the `CoroutineScope`, which describes the possibility for a function to execute suspending functions using structural concurrency (see the article [Kotlin Coroutines - A Comprehensive Introduction](https://blog.rockthejvm.com/kotlin-coroutines-101/) for further details).
+
+As we saw in the article [Kotlin Context Receivers: A Comprehensive Guide](https://blog.rockthejvm.com/kotlin-context-receivers/), Kotlin models such scopes using receivers instead.
+
+The easier way to define a function that can raise an error of type `E` is to use the `Raise<E>` type as the receiver of an extension function:
+
+```kotlin
+fun Raise<JobNotFound>.appleJob(): Job = JOBS_DATABASE[JobId(1)]!!
+```
+
+Inside the `Raise<E>` context, we have a lot of useful functions. One of this is the `raise(r: E)`, which let's us to short-circuit the execution of the function and raise an error of type `E`:
+
+```kotlin
+fun Raise<JobNotFound>.jobNotFound(): Job = raise(JobNotFound(JobId(42)))
+```
+
+As we can see from the signature of the `raise` function, the only type of logical error that a function can raise is the one that is defined in the receiver of the function. If we try to cheat, the compiler will complain immediately. The following code doesn't compile:
+
+```kotlin
+fun Raise<JobNotFound>.jobNotFound(): Job = raise(GenericError("Job not found"))
+```
+
+In fact, the compilation error is:
+
+```text
+Type mismatch: inferred type is GenericError but JobNotFound was expected
+
+```
 
 ## X. Appendix: Maven Configuration
 
