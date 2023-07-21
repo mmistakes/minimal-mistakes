@@ -2,6 +2,7 @@
 layout: single
 title:  "첫 포스팅입니다."
 categories: coding
+tags: [python, blog, jekyll]
 ---
 
 # 첫 포스팅 내용 테스트 중입니다.
