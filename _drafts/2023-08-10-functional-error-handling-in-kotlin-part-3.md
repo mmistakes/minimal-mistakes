@@ -125,13 +125,25 @@ In this sense, the `Raise<E>` is very similar the `CoroutineScope`, which descri
 
 As we saw in the article [Kotlin Context Receivers: A Comprehensive Guide](https://blog.rockthejvm.com/kotlin-context-receivers/), Kotlin models such scopes using receivers instead.
 
-The easier way to define a function that can raise an error of type `E` is to use the `Raise<E>` type as the receiver of an extension function:
+The easiest way to define a function that can raise an error of type `E` is to use the `Raise<E>` type as the receiver of an extension function:
 
 ```kotlin
 fun Raise<JobNotFound>.appleJob(): Job = JOBS_DATABASE[JobId(1)]!!
 ```
 
-Inside the `Raise<E>` context, we have a lot of useful functions. One of this is the `raise(r: E)`, which let's us to short-circuit the execution of the function and raise an error of type `E`:
+Inside the `Raise<E>` context, we have a lot of useful functions. One of this is the `raise` function:
+
+```kotlin
+// Arrow Kt Library
+public interface Raise<in Error> {
+    @RaiseDSL
+    public fun raise(r: Error): Nothing
+    
+    // Omissis
+}
+```
+
+The above function let us short-circuit an execution and raise an error of type `E`:
 
 ```kotlin
 fun Raise<JobNotFound>.jobNotFound(): Job = raise(JobNotFound(JobId(42)))
@@ -147,8 +159,68 @@ In fact, the compilation error is:
 
 ```text
 Type mismatch: inferred type is GenericError but JobNotFound was expected
-
 ```
+
+We may have noticed that one advantage of using the `Raise<E>` context is that the return type of the function listed only the happy path. In fact, the `jobNotFound` function returns a `Job` and not a `Raise<JobNotFound, Job>`. As we'll see in a moment, this is a huge advantage when we want to compose functions that can raise errors.
+
+However, using extension functions to define functions that can raise errors is not convenient. As you might remember, we can't have more than one receiver in an extension function. Let's see an example. First of all, let's start to implement our `Jobs` module. As we did in the previous articles, we'll start from the `findById` function:
+
+```kotlin
+interface Jobs {
+
+    fun Raise<JobError>.findById(id: JobId): Job
+}
+
+class LiveJobs : Jobs {
+    override fun Raise<JobError>.findById(id: JobId): Job =
+        JOBS_DATABASE[id] ?: raise(JobNotFound(id))
+}
+```
+
+As we said, the return type of the `findById` function is just `Job`. Another important thing to notice is that the `Raise<E>` type is covariant in the `E` type parameter. In fact, we raised a `JobNotFound` from the `findById` function, but the extension function is defined on the `Raise<JobError>` type instead. Wow, a lot of useful features!
+
+Let's say now that we want to add logging to the function. First, let's define a `Logger` module and its implementation.
+
+```kotlin
+interface Logger {
+    fun info(message: String)
+}
+
+val consoleLogger = object : Logger {
+    override fun info(message: String) {
+        println("[INFO] $message")
+    }
+}
+```
+
+As we did in the article [Kotlin Context Receivers: A Comprehensive Guide](https://blog.rockthejvm.com/kotlin-context-receivers/), we can't do it, since the only available receiver is already taken by the `Raise<JobError>` type. Fortunately, Kotlin context receivers can rescue us. In fact, we can treat the `Raise<JobError>` receiver as a context receiver, obtaining the following equivalent code:
+
+```kotlin
+interface Jobs {
+
+    context (Raise<JobError>)
+    fun findById(id: JobId): Job
+}
+
+class LiveJobs : Jobs {
+
+    context (Raise<JobError>)
+    override fun findById(id: JobId): Job =
+        JOBS_DATABASE[id] ?: raise(JobNotFound(id))
+} 
+```
+
+Since Kotlin allows more than one context receiver at time, we can add the `Logger` module as a context receiver:
+
+```kotlin
+context (Logger, Raise<JobError>)
+override fun findById(id: JobId): Job {
+    info("Retrieving job with id $id")
+    return JOBS_DATABASE[id] ?: raise(JobNotFound(id))
+}
+```
+
+For the rest of the article, we'll use the context receivers syntax, since it's more convenient.
 
 ## X. Appendix: Maven Configuration
 
