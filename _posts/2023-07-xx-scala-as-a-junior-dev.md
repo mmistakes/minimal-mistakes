@@ -63,13 +63,29 @@ That's how I landed on Scala and started going "in depth". Before the internship
 
 Once it finished, I was a little bit frustrated not to have been able to do more, but it motivated me to keep learning Scala. I did this by following both the beginner and advanced courses on [RockTheJVM!](https://rockthejvm.com/) and by doing some puzzles with Scala on [CodinGame](https://www.codingame.com/). Even though I had the "thing start motivation", I was surprised not to have many difficulties following these video-based courses and keeping a certain rhythm in it (I had lots of difficulties following online courses during the COVID pandemic).
 
-#### 2. Internship at the [Scala Center](https://scala.epfl.ch/)
+### 2. Internship at the [Scala Center](https://scala.epfl.ch/)
 
-<!-- Waiting for validation -->
+As I was moving forward with Scala, I became more and more enthusiast about it, and I wanted to learn more about it. At the same time, I thought of beginning to contribute to open source projects: to learn, help others (even though at this stage it was more learning than helping :smile:), and also for the possibilities open-source can provide. While searching for companies using Scala, a teacher of my school ([Polytech Montpellier](https://www.polytech.umontpellier.fr/english/)) in charge of the Scala/FP course told me about the Scala Center, a non-for-profit Scala language foundation, situated in the EPFL (Ecole Polytechnique Fédérale de Lausanne) aiming at promoting the language, contributing to and coordinating its ecosystem (among other things, you can find more details on their [5-year report](https://scala.epfl.ch/records/first-five-years/)). It seemed to correspond to what I was looking for, so I applied for an internship there.
 
-#### 3. Next steps
+And I got accepted for a 5-month internship on the scala implementation of the debugger in VS Code ([scala-debug-adapter](https://github.com/scalacenter/scala-debug-adapter)) ! My job was to create a new evaluation mode that would be faster, allows more expression (access to private members, access to runtime type... since we are in a debug session). There I learnt a huge amount of things about Scala and more general concepts:
 
-<!-- Waiting for validation -->
+* quick view of how an IDE interacts with build tools (sbt...)
+* compiler concepts (type-checking, overloads resolution...)
+* scala compiler academy ([link here](https://www.scala-lang.org/blog/2022/11/02/compiler-academy.html))
+* implementation of interoperability with Java in the bytecode
+* first steps in open-source contributions
+* meta-programming & code manipulation with scalameta (AST, trees, symbols, tokens...)
+* write more expressive Scala code and my own monad
+* created a video script & slides about asynchronous programming with `Future` and made some research about Loom as it appears to be a game changer for asynchronous programming on the JVM
+* etc.
+
+### 3. Next steps
+
+One big default of mine is my shyness. I am not comfortable at all in entering new areas, to the point where I wait for people to come to me instead of going to them. Thankfully, on these two internships, they all did, so it helped me a lot in integrating with the team. But still, I need to work on it, so I started participating a little in the organization of conferences.
+
+A French Scala user Discord server was launched not long ago by some ScalaIO members, and since they were looking for volunteers, I decided to join them after a first experience in conference organization.
+
+I also had the chance to join the volunteering team of Scala Days Madrid 2023 (co-organized by the Scala Center), thanks to [Darja Jovanovic](https://www.linkedin.com/in/darjajovanovic/) (Executive Director of the Scala Center) who asked if I wanted to and transmitted my request to the organization team, after my school gave me the authorization. I will be hosting a track for the two conference days. I am really looking forward to it but also a bit stressed :upside_down_face:
 
 ### Learning process
 
