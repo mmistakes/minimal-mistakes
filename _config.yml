@@ -110,9 +110,9 @@ author:
   location         : "Seoul, South Korea"
   #email            : jobsenior25@gmail.com
   links:
-    - label: "Email"
+    - label: "jobsenior25@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:jobsenior25@gmail.com"
+      #url: "mailto:jobsenior25@gmail.com"
     - #label: "Website"
       #icon: "fas fa-fw fa-link"
       #url: "https://map-jun.github.io"
