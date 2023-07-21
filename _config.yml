@@ -138,9 +138,6 @@ footer:
     - #label: "Facebook"
       #icon: "fab fa-fw fa-facebook-square"
       # url:
-    - label: "jobsenior25@gmail.com" #Email
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:jobsenior25@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/map-jun"
