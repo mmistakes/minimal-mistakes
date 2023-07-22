@@ -98,11 +98,11 @@ In order to fully wield the power of such models while ensuring reliability and 
 At its core, explanations of model behavior aim to accurately and succinctly describe why a decision was made, often with human comprehension as the objective.
 However, what constitutes the form and content of a good explanation is highly context dependent.
 A good explanation varies by problem domain (e.g. vision vs. language), the objective function (e.g. classification vs. regression), and the intended audience (e.g. beginners vs. experts).
-All of these are critical factors to consider when engineering for comprehesion.
+All of these are critical factors to consider when engineering for comprehension.
 In this post we will focus on a popular family of explanation methods known as _feature attributions_ and study the notion of _stability_ as a formal guarantee.
 
 
-For extensive surveys on explainability methods in explainable AI (XAI), we refer to
+For extensive surveys on explanation methods in explainable AI (XAI), we refer to
 [Burkart et al.](https://arxiv.org/abs/2011.07876)
 and
 [Nauta et al.](https://arxiv.org/abs/2201.08164).
@@ -110,7 +110,7 @@ and
 
 
 ## Explanations with Feature Attributions
-Feature attribution methods aim to idenitfy the input features (e.g. pixels) most important to the prediction.
+Feature attribution methods aim to identify the input features (e.g. pixels) most important to the prediction.
 Given a model and input, a feature attribution method assigns each input feature a score of its importance to the model output.
 Well known feature attribution methods include:
 gradient saliency-based
@@ -172,7 +172,7 @@ That is, given a model $$f$$ and input $$x$$ that yields prediction $$y = f(x)$$
 Although many feature attribution methods exist with various heuristics for attribution scores, it is unclear whether they serve as good explanations.
 In fact, there are surprisingly few papers about their formal mathematical properties as relevant to explanations.
 However, this gives us considerable freedom when studying feature attribution-based explanations, and we therefore begin with broader considerations about what makes a good explanation.
-In particular, we propose that to effectively use _any_ explanation, the user must at minimum consider the following two questions:
+In particular, to effectively use _any_ explanation, the user should at minimum consider the following two questions:
 
 
 * **Q1.** What is the appropriate metric of quality for evaluating the explanation?
@@ -186,10 +186,8 @@ A reasonable explanation promotes confidence as it allows one to "explain the ex
 
 
 ### Q1: Quality Metric for Explanations
-We propose to evaluate an explanation with the original model $$f$$.
-In particular, consider a given input vector $$x$$ on classifier $$f$$ with output prediction $$y = f(x)$$.
-The goal of the feature attribution method $$\varphi$$ is to generate a binary mask $$\alpha = \varphi(x)$$, where element-wise vector multiplication $$\odot$$ is used to yield an explanation-masked input $$x \odot \alpha$$.
-We then evaluate the quality of $$\alpha$$ via the prediction of $$f(x \odot \alpha)$$.
+We measure the quality of an explanation $$\alpha$$ with the original model $$f$$.
+In particular, we evaluate the behavior of $$f(x \odot \alpha)$$, where $$\odot$$ is the element-wise vector multiplication.
 
 
 <!--
@@ -246,7 +244,7 @@ In particular, it is desirable that an explanation $$\alpha$$ can induce the ori
 
 **Definition.** (Consistency) An explanation $$\alpha = \varphi(x)$$ is consistent if $$f(x) \cong f(x \odot \alpha)$$.
 
-We use the congruence operator $$\cong$$ means that two model outputs indicate the same class.
+Here $$\cong$$ means that two model outputs $$y, y'$$ indicate the same class.
 In particular, we consider classifier models $$f : \mathbb{R}^n \to [0,1]^m$$, where the output $$y = f(x)$$ is a vector in $$[0,1]^m$$ whose coordinates denote the confidence scores for the $$m$$ classes.
 Two model outputs therefore satisfy $$y \cong y'$$ when they are most confident on the same class.
 
@@ -255,11 +253,11 @@ Two model outputs therefore satisfy $$y \cong y'$$ when they are most confident 
 
 ### Q2: Stability as an Expected Behavior
 We next consider how an explanation should behave with respect to the above quality metric.
-Principally, we argue that a good explanation $$\alpha = \varphi(x)$$ should be strongly confident in its claims, and we express this in two properties.
+Principally, a good explanation $$\alpha = \varphi(x)$$ should be strongly confident in its claims, and we express this in two properties.
 First, the explanation should be _consistent_, as introduced above in Q1.
 Second, the explanation should be _stable_: $$\alpha$$ should contain enough salient features, such that including any more features does not alter the induced class.
 
-We propose stability as a desirable property because it allows for greater predictablity when manipulating explanations.
+We present stability as a desirable property because it allows for greater predictability when manipulating explanations.
 However, _**many feature attribution methods are not stable!**_
 An example of this is shown in the following.
 
@@ -292,7 +290,7 @@ An example of this is shown in the following.
 
 
 
-We argue that a lack of stability is undesirable, since revealing _more_ of the image should intuitively yield stronger evidence towards the overall prediction.
+A lack of stability is undesirable, since revealing _more_ of the image should intuitively yield stronger evidence towards the overall prediction.
 Without stability, slightly modifying an explanation may induce a very different class, which suggests that $$\alpha$$ is merely a _plausible_ explanation rather than a _convincing_ explanation.
 This may undermine user confidence, as a non-stable $$\alpha$$ indicates a deficiency of salient features.
 We summarize these ideas below:
@@ -309,11 +307,10 @@ We introduce a smoothing method, MuS, that can provide stability guarantees on t
 
 
 ## Stability Properties
-
 In this section we formalize the aforementioned notion of stability.
 Importantly, we show how a relaxed variant of stability is easily provable if the model is Lipschitz smooth to the masking of features.
 However, many existing and popular models do not have useful Lipschitz guarantees by construction.
-We therefore propose a smoothing method, Multiplicative Smoothing (MuS), that is can yield strong Lipschitz guarantees on _any_ classifier model.
+We therefore present a smoothing method, Multiplicative Smoothing (MuS), that is can yield strong Lipschitz guarantees on _any_ classifier model.
 To begin, we define stability as follows.
 
 <!--
@@ -332,13 +329,26 @@ This definition of stability means that augmenting $$\alpha$$ with additional fe
 We also remark that stability of $$\alpha$$ necessarily implies its _consistency_: which recall is when $$f(x) \cong f(x \odot \alpha)$$.
 
 
+However, it is a challenge to efficiently enforce stability in practice.
+This is because stability is defined as _all_ $$\alpha' \succeq \alpha$$, of which there are exponentially many.
 
-However, it is not clear how to efficiently enforce stability in practice.
-This is because stability is defined as _all_ $$\alpha' \succeq \alpha$$, and so there is $$2^{n - k}$$ different choices of $$\alpha'$$ to consider, where $$k$$ is the number of selected features in $$\alpha = \varphi(x)$$.
+### Our Method: The Big Picture
+In order to extract useful guarantees from the jaws of computational intractability, we take the following approach:
+1. We observe that if the model $$f$$ is _Lipschitz smooth_ to the masking of features, one can provably guarantee variants of stability, in particular _incremental stability_.
+2. However, many existing and popular models do not have useful Lipschitz smoothness properties by construction.
+3. We introduce a smoothing method, MuS, that can provably impose the sufficient Lipschitz smoothness on _any_ model.
+
+Crucially, our smoothing method can provably yield guarantees like incremental stability on _any_ model with _any_ feature attribution method.
+This is an important result, since prior to our work, stability-like guarantees such as this did not exist for feature attribution methods.
+
+
+<!--
+and so there is $$2^{n - k}$$ different choices of $$\alpha'$$ to consider, where $$k$$ is the number of selected features in $$\alpha = \varphi(x)$$.
 This challenge of enforcing the above criteria, especially for complex models like neural networks, motivates us to introduce _incremental stability_.
+-->
 
 
-
+<!--
 ### Incremental Stability
 
 Rather than enforcing a property over all $$\alpha' \succeq \alpha$$, we instead aim for local versions.
@@ -364,17 +374,16 @@ Different inputs may have different radii, and we need $$r \geq 1$$ to have a gu
 Note that incremental stability does not imply consistency, in contrast to stability.
 In our broader context, we would like an explanation that is both _consistent_ and _incrementally stable_ with radius $$r \geq 1$$.
 Consistency means that $$\alpha$$ contains sufficient features to induce the original prediction, while incremental stability means that $$\alpha$$ is sufficiently convincing.
+-->
 
 
 
-### Lipschitz Smoothness for Incremental Stability
-
-It is easy to check whether incremental stability holds provided that we have smoothness information about $$f$$.
-In particular, we will use the notion of _Lipschitz smoothness_ to the masking of features.
-If $$f$$ is Lipschitz in this manner, then we can provably guarantee a radius of incremental stability.
-
-
+## Lipschitz Smoothness to Incremental Stability
 Fundamentally, Lipschitz smoothness aims to measure the change of a function in response to input perturbations.
+To quantify perturbations over explanations, we introduce a metric of dissimilarity that counts the number of differences between binary vectors:
+
+$$ \Delta (\alpha, \alpha') = \# \{i : \alpha_i \neq \alpha_i '\} $$
+
 In the context of masking inputs, the goal is to compare the difference between $$f(x \odot \alpha)$$ and $$f(x \odot \alpha')$$ as a function of $$\Delta (\alpha, \alpha')$$.
 Given a scalar $$\lambda > 0$$, we say that $$f$$ is $$\lambda$$-Lipschitz to the masking of features if
 
@@ -382,9 +391,22 @@ $$ \mathsf{outputDiff}(f(x \odot \alpha), f(x \odot \alpha')) \leq \lambda \Delt
 
 where $$\mathsf{outputDiff}$$ is a metric on the classifier outputs that we detail in our
 [paper](https://arxiv.org/abs/2307.05902).
-The above posits that the change in confidence scores from $$f(x \odot \alpha)$$ to $$f(x \odot \alpha')$$ is bounded by $$\lambda \Delta (\alpha, \alpha')$$, and that under this assumption:
+This Lipschitz smoothness means that the change in confidence scores from $$f(x \odot \alpha)$$ to $$f(x \odot \alpha')$$ is bounded by $$\lambda \Delta (\alpha, \alpha')$$.
+Under this condition:
 a sufficiently small $$\lambda \Delta (\alpha, \alpha')$$ can provably guarantee that $$f(x \odot \alpha) \cong f(x \odot \alpha')$$.
 Observe that a smaller $$\lambda$$ is generally desirable, as it allows one to tolerate larger deviations between $$\alpha$$ and $$\alpha'$$.
+
+
+### Incremental Stability
+Lipschitz smoothness gives us the theoretical tooling to examine variants of stability for $$\alpha'$$ close to $$\alpha$$.
+In this post we consider _incremental stability_ as one such variant, and consider others in our
+[paper](https://arxiv.org/abs/2307.05902).
+
+**Definition.** (Incremental Stability) An explanation $$\alpha = \varphi(x)$$ is incrementally stable with radius $$r$$ if $$f(x \odot \alpha') \cong f(x \odot \alpha)$$ for all $$\alpha' \succeq \alpha$$ where $$\Delta(\alpha, \alpha') \leq r$$.
+
+The radius $$r$$ is a conservative theoretical bound on the allowable change to $$\alpha$$.
+Incremental stability of radius $$r$$ means that, provably, up to $$r$$ features may be added to $$\alpha$$ without altering its induced class.
+Different inputs may have different radii, and note that we need $$r \geq 1$$ to have a guarantee of non-trivial perturbation.
 
 Quantifying the incremental stability radius of an explanation in relation to the Lipschitz smoothness of $$f$$ is one of our main results, which we sketch below.
 
@@ -461,12 +483,12 @@ We take our classifier $$f$$ to be [Vision Transformer](https://arxiv.org/abs/20
 and sample $$N = 2000$$ images from 
 [ImageNet1K](https://www.image-net.org/challenges/LSVRC/2012/index.php).
 We are interested in the different qualities of guarantees obtained as one varies the smoothing parameter $$\lambda$$.
-Below we plot the fraction of images that satisfy incrementaly stability (and consistency) up to some radius, where we express this radius as a fraction $$r/n$$ of the total features.
+Below we plot the fraction of images that satisfy incremental stability (and consistency) up to some radius, where we express this radius as a fraction $$r/n$$ of the total features.
 
 {% include gallery id="gallery_experiment_inc_stable" layout="half" caption="The fraction of the sample that satisfies a property vs. the certifiable radius. Here $$f$$ is Vision Transformer and $$\varphi$$ is SHAP top-25%. (Left) The property of consistent and incrementally stable. (Right) The property of only incrementally stable. Every $$\alpha = \varphi(x)$$ is trivially incrementally stable with $$r \geq 0$$, but may not be consistent." %}
 
 
-For instance with $$\lambda = 1/8$$, about $$20\%$$ of the samples achieve both conistency and incremental stability with radius $$\geq 1\%$$ of the image ($$(3 \times 224 \times 224) \times 0.01 \approx 1500$$ features).
+For instance with $$\lambda = 1/8$$, about $$20\%$$ of the samples achieve both consistency and incremental stability with radius $$\geq 1\%$$ of the image ($$(3 \times 224 \times 224) \times 0.01 \approx 1500$$ features).
 If we omit the consistency requirement, then even more images achieve the same radius.
 These are important results: prior to our work there were no formal guarantees for stability-like properties on general feature attribution methods for generic models.
 In addition, SHAP is not explicitly designed for stability, so it is significant that even a simple modification like top-25% selection can yield non-trivial guarantees.
