@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "BadaTree Blog"
+title                    : "BadaTree Blog_ikigai "
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Bada Lim"
@@ -104,9 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Bada Lim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+- Martin Fowler "
   location         : "Somewhere"
   email            :
   links:
