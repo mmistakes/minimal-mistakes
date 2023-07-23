@@ -104,9 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "임형준(Tony) / 맵준"
-  avatar           :  "/assets/images/세로 색깔.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "삶의 태도<br> 맵준의 블로그입니다."
+  name             : "맵준(MapJun)"
+  avatar           : "/assets/images/세로 색깔.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "맵준의 기술 블로그 <br>
+<br> 실력과 생산성을 끌어올려 <br> 내 삶을 완벽히 통제하고 <br> 꼭 남에게 베풀어야 한다."
+
   location         : "Seoul, South Korea"
   #email            : jobsenior25@gmail.com
   links:
