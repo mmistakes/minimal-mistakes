@@ -27,6 +27,7 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # logo                     : "/assets/images/icon.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+future                   : true
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -207,8 +208,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: #Asia/Seoul
-# future: true 
+timezone: Asia/Seoul
 
 
 # Plugins (previously gems:)
