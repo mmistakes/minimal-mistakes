@@ -222,6 +222,66 @@ override fun findById(id: JobId): Job {
 
 For the rest of the article, we'll use the context receivers syntax, since it's more convenient.
 
+Now that we know how to create a function that can raise an error, let's see how to handle it. The most generic way to execute a function that can raise an error of type `E` and that is defined in the context of a `Raise<E>` is the `fold` function, which is defined as follows:
+
+```kotlin
+// Arrow Kt Library
+@JvmName("_fold")
+public inline fun <E, A, B> fold(
+  @BuilderInference block: Raise<E>.() -> A,
+  catch: (throwable: Throwable) -> B,
+  recover: (error: E) -> B,
+  transform: (value: A) -> B,
+): B
+```
+
+Let's split the above function in its parts. The `block` parameter is the function that we want to execute. The `catch` parameter is a function that is executed when the `block` function throws an exception. The `recover` parameter is a function that is executed when the `block` function raises an logical typed error of type `E`. Finally, the `transform` parameter is a function that is executed when the `block` function returns a value of type `A`. As we can see, all the handling blocks return the same value of type `B`.
+
+As we did in the previous articles, let's implement a service using the `Jobs` module and function that prints the salary of a `JobId`:
+
+```kotlin
+class JobsService(private val jobs: Jobs) {
+
+    fun printSalary(jobId: JobId) = fold(
+        block = { jobs.findById(jobId) },
+        recover = { error: JobError ->
+            when (error) {
+                is JobNotFound -> println("Job with id ${jobId.value} not found")
+                else -> println("An error was raised: $error")
+            }
+        },
+        transform = { job: Job ->
+            println("Job salary for job with id ${jobId.value} is ${job.salary}")
+        },
+    )
+}
+```
+
+To be fair, here, we used the version of the `fold` function that do not handle exceptions. In fact, the `catch` parameter is not defined. Let's use the `printSalary` function to print the salary of a job that exists in the database:
+
+```kotlin
+fun main() {
+    val appleJobId = JobId(1)
+    val jobs = LiveJobs()
+    val jobService = JobsService(jobs)
+    jobService.printSalary(appleJobId)
+}
+```
+
+Obviously, the output is the following:
+
+```text
+Job salary for job with id 1 is Salary(value=70000.0)
+```
+
+Whereas, if we try to print the salary of a job that doesn't exist in the database, we obtain the following output:
+
+```text
+Job with id 42 not found
+```
+
+The `printSalary` function doesn't need to
+
 ## X. Appendix: Maven Configuration
 
 As promised, here is the full Maven configuration we used in this article:
