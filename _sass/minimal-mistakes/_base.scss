@@ -126,7 +126,7 @@ blockquote {
 /* links */
 
 a {
-  text-decoration: none;                // 밑줄 제거를 위해 추가된 코드입니다.
+  text-decoration: none;                // 제목 밑줄 제거를 위해 추가된 코드입니다.
   &:focus {
     @extend %tab-focus;
   }
