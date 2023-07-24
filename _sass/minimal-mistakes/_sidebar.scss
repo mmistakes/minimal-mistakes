@@ -134,12 +134,12 @@
   }
 
   img {
-    max-width: 110px;
-    border-radius: 50%;
+    max-width: 150px;
+    border-radius: 30%;
 
     @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
+      padding: 3px;                     // border 와의 거리 
+      border: 2px solid $border-color;  // border 속성
     }
   }
 }
