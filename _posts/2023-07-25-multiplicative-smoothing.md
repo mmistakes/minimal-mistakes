@@ -336,11 +336,10 @@ This is because stability is defined as _all_ $$\alpha' \succeq \alpha$$, of whi
 ### The Plan
 In order to extract useful guarantees from the pits of computational intractability, we take the following approach:
 1. We observe that if the model $$f$$ is _Lipschitz smooth_ to the masking of features, one can provably guarantee variants of stability, in particular _incremental stability_.
-2. However, many existing and popular models do not have useful Lipschitz smoothness properties by construction.
-3. We introduce a smoothing method, MuS, that can provably impose the sufficient Lipschitz smoothness on _any_ model.
+2. However, many existing and popular models do not have useful Lipschitz smoothness properties by construction. We therefore introduce a smoothing method, MuS, that can provably impose the sufficient Lipschitz smoothness on _any_ model.
+3. One can then extract guarantees like incremental stability on with _any_ feature attribution method and MuS-smoothed model.
 
-Crucially, our smoothing method can provably yield guarantees like incremental stability on _any_ model with _any_ feature attribution method.
-This is an important result, since, to our knowledge, stability-like guarantees such as this did not previously exist for feature attributions.
+Our stability guarantees are an important result, since, to our knowledge, stability-like guarantees such as this did not previously exist for feature attributions.
 
 
 <!--
@@ -408,7 +407,7 @@ In this post we consider _incremental stability_ as one such variant, and consid
 The radius $$r$$ is a conservative theoretical bound on the allowable change to $$\alpha$$.
 A radius of $$r$$ means that, provably, up to $$r$$ features may be added to $$\alpha$$ without altering its induced class.
 Different inputs may have different radii, and note that we need $$r \geq 1$$ to have a non-trivial incremental stability guarantee.
-Quantifying this radius in relation to the Lipschitz smoothness of $$f$$ is one of our main results, which we sketch below.
+Quantifying this radius in relation to the Lipschitz smoothness of $$f$$ is one of our main results (Step 3 of The Plan), sketched below.
 
 **Theorem Sketch.** (Radius of Incremental Stability)
 Suppose that $$f$$ is $$\lambda$$-Lipschitz to the masking of features, then an explanation $$\alpha = \varphi(x)$$ is incrementally stable with radius $$r = \mathsf{confidenceGap}(f(x \odot \alpha)) / (2 \lambda)$$.
@@ -425,11 +424,11 @@ This thereby motivates using a smoothing method, like MuS, to impose such smooth
 ## MuS for Lipschitz Smoothness
 
 The goal of smoothing is to transform a base classifier $$h : \mathbb{R}^n \to [0,1]^m$$ into a smoothed classifier $$f : \mathbb{R}^n \to [0,1]^m$$, such that $$f$$ is $$\lambda$$-Lipschitz with respect to the masking of features.
-This base classifier $$h$$ may be _any_ existing model, e.g. [ResNet](https://arxiv.org/abs/1512.03385), [Vision Transformer](https://arxiv.org/abs/2010.11929), etc.
-Our key insight is that randomly dropping features from input attains the desired smoothness, which we will simulate by sampling $$N$$ binary masks $$s^{(1)}, \ldots, s^{(N)} \sim \mathcal{D}$$.
+This base classifier may be any classifier, e.g. [ResNet](https://arxiv.org/abs/1512.03385), [Vision Transformer](https://arxiv.org/abs/2010.11929), etc.
+Our key insight is that randomly dropping features from the input attains the desired smoothness, which we will simulate by sampling $$N$$ binary masks $$s^{(1)}, \ldots, s^{(N)} \sim \mathcal{D}$$.
 Many choices of $$\mathcal{D}$$ in fact work, but one may intuit it as the $$n$$-dimensional coordinate-wise iid $$\lambda$$-parameter Bernoulli distribution $$\mathcal{B}^n(\lambda)$$.
 
-Given input $$x$$ and base classifier $$h$$, the evaluation of $$f(x)$$ is shown in the following and can be understood in three stages.
+Given input $$x$$ and base classifier $$h$$, the evaluation of $$f(x)$$ may be understood in three stages.
 
 {% include gallery id="gallery_mus_pipeline" layout="" caption="The frequency of the $$h(x \odot s^{(1)}), \ldots, h(x \odot s^{(N)})$$ predictions are plotted in the bar chart. The output of $$f(x)$$ is an average (majority vote) of these $$N$$ predictions." %}
 
@@ -455,11 +454,10 @@ Consider any $$h$$ and define $$f(x) = \underset{s \sim \mathcal{D}}{\mathbb{E}}
 
 This generic form of $$\mathcal{D}$$ has strong implications for efficiently evaluating $$f$$:
 if $$\mathcal{D}$$ were coordinate-wise independent (e.g. $$\mathcal{B}^n(\lambda)$$),
-then one needs $$N = 2^n$$ deterministic samples of $$s \sim \mathcal{D}$$ to exactly evaluate $$f$$, which may be prohibitively expensive.
+then one needs $$N = 2^n$$ deterministic samples of $$s \sim \mathcal{D}$$ to exactly compute $$f(x)$$, which may be expensive.
 We further discuss in our
 [paper](https://arxiv.org/abs/2307.05902)
-how one can inject structured statistical dependence into $$\mathcal{D}$$ to enable efficient evaluations of $$f$$ in $$N \ll 2^n$$ samples.
-
+how one can contruct $$\mathcal{D}$$ with statistical dependence to allow for efficient evaluations of $$f$$ in $$N \ll 2^n$$ samples.
 
 
 ## Empirical Evaluations
