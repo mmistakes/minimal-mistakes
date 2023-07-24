@@ -1,13 +1,11 @@
 # main links
 main:
-  - title: "공지사항"
-    url: /blog notice/
 
   - title: "카테고리"
     url: /categories/
 
   - title: "태그"
-    url: /Tags/`  
+    url: /Tags/
 
   - title: "검색"
     url: /search/
