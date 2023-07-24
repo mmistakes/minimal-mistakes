@@ -280,7 +280,68 @@ Whereas, if we try to print the salary of a job that doesn't exist in the databa
 Job with id 42 not found
 ```
 
-The `printSalary` function doesn't need to
+So far so good. As we might notice, the `printSalary` method has no context defined. In fact, the `fold` function "consumes" the context, creating a concrete instance of a `Raise<E>`type and executing the `block` lambda in the context of that instance. Let's look at the implementation of the `fold` function for a moment:
+
+```kotlin
+// Arrow Kt Library
+public inline fun <Error, A, B> fold(
+  block: Raise<Error>.() -> A,
+  catch: (throwable: Throwable) -> B,
+  recover: (error: Error) -> B,
+  transform: (value: A) -> B,
+): B {
+  contract {
+    callsInPlace(catch, AT_MOST_ONCE)
+    callsInPlace(recover, AT_MOST_ONCE)
+    callsInPlace(transform, AT_MOST_ONCE)
+  }
+  val raise = DefaultRaise(false)
+  return try {
+    val res = block(raise)
+    raise.complete()
+    transform(res)
+  } catch (e: CancellationException) {
+    raise.complete()
+    recover(e.raisedOrRethrow(raise))
+  } catch (e: Throwable) {
+    raise.complete()
+    catch(e.nonFatalOrThrow())
+  }
+}
+```
+
+First, the library gives some hints to the Kotlin compiler inside the `contract` block. In details, it says that the `catch`, `recover` and `transform` functions are called at most once, and only inside the `fold` function.
+
+Now, it comes the interesting part. The `fold` function creates a `DefaultRaise` instance, which is one of the available concrete implementations of the `Raise<E>` interface. The `block` is a lambda expression with a receiver, and in Kotlin, we can pass the receiver in different ways to the lambda, which are:
+
+```kotlin
+val raise = DefaultRaise(false)
+// Method 1
+block.invoke(raise)
+// Method 2
+block(raise)
+// Method 3
+raise.block()
+```
+
+The Arrow library chose the second method. The `DefaultRaise` implementation of the `Raise<E>` interface is the following:
+
+```kotlin
+// Arrow Kt Library
+@PublishedApi
+internal class DefaultRaise(@PublishedApi internal val isTraced: Boolean) : Raise<Any?> {
+    private val isActive = AtomicBoolean(true)
+
+    @PublishedApi
+    internal fun complete(): Boolean = isActive.getAndSet(false)
+    override fun raise(r: Any?): Nothing = when {
+        isActive.value -> throw if (isTraced) RaiseCancellationException(r, this) else RaiseCancellationExceptionNoTrace(r, this)
+        else -> throw RaiseLeakedException()
+    }
+}
+```
+
+Basically, if implementation of the `DefaultRaise.raise` throws a subclass of a `CancellationException` if the method was called inside a its scope, a.k.a. the execution was not leaked. TODO.
 
 ## X. Appendix: Maven Configuration
 
