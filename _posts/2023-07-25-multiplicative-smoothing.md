@@ -97,7 +97,7 @@ In order to fully wield the power of such models while ensuring reliability and 
 
 At its core, explanations of model behavior aim to accurately and succinctly describe why a decision was made, often with human comprehension as the objective.
 However, what constitutes the form and content of a good explanation is highly context dependent.
-A good explanation varies by problem domain (e.g. vision vs. language), the objective function (e.g. classification vs. regression), and the intended audience (e.g. beginners vs. experts).
+A good explanation varies by problem domain (e.g. medical imaging vs. chatbots), the objective function (e.g. classification vs. regression), and the intended audience (e.g. beginners vs. experts).
 All of these are critical factors to consider when engineering for comprehension.
 In this post we will focus on a popular family of explanation methods known as _feature attributions_ and study the notion of _stability_ as a formal guarantee.
 
