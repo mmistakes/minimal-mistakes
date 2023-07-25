@@ -13,4 +13,4 @@ I also collaborated with Prof. Veronica Ciocanel (Duke University), Prof. Adrian
 
 <img src="https://github.com/rjuenemann/rjuenemann.github.io/blob/master/assets/images/guitar.png?raw=true" alt="poster" style="height:300px;"/>    
 
-In my free time, I enjoy playing jazz and classical guitar and attending festivals in New Orleans.
+In my free time, I enjoy playing jazz and classical guitar and completing escape rooms.
