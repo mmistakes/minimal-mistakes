@@ -341,7 +341,38 @@ internal class DefaultRaise(@PublishedApi internal val isTraced: Boolean) : Rais
 }
 ```
 
-Basically, if implementation of the `DefaultRaise.raise` throws a subclass of a `CancellationException` if the method was called inside a its scope, a.k.a. the execution was not leaked. TODO.
+Basically, the implementation of the `DefaultRaise.raise` throws a subclass of a `CancellationException` if the method was called inside a its scope, a.k.a. the execution was not leaked. The exception contains a reference `r` to the typed error.
+
+The `fold` function catches the `CancellationException` and calls the `recover` lambda with the typed error, if the error was risen by the current `Raise<E>` instance. Otherwise, it rethrows the exception. The library performs this check using the `raisedOrRethrow` extension function:
+
+```kotlin
+// Arrow Kt Library
+@PublishedApi
+@Suppress("UNCHECKED_CAST")
+internal fun <R> CancellationException.raisedOrRethrow(raise: DefaultRaise): R =
+    when {
+        this is RaiseCancellationExceptionNoTrace && this.raise === raise -> raised as R
+        this is RaiseCancellationException && this.raise === raise -> raised as R
+        else -> throw this
+    }
+```
+
+It's important notice that the typed error is handled only if the exception is an instance of `RaiseCancellationExceptionNoTrace` or `RaiseCancellationException`. Otherwise, if the exception is a true `CancellationException`, it is rethrown. In fact, `CancellationException` should not be caught because it’s used by Kotlin to cancel coroutines, and catching it can break normal functioning of coroutines.
+
+The last `catch` expression of the `fold` function catches all the other exceptions, and calls the `catch` lambda with the exception, if the exception is not fatal. Otherwise, it rethrows the exception. The library performs this check using the `nonFatalOrThrow` extension function. In case you need to know them, fatal exceptions are the following:
+
+- `VirtualMachineError`
+- `ThreadDeath`
+- `InterruptedException`
+- `LinkageError`
+- `ControlThrowable`
+- `CancellationException` 
+
+The subtypes of these errors should not be caught.
+
+Every branch of the `fold` function completes the `DefaultRaise` instance, calling the `complete` method. The default implementation just delimits the scope of the `Raise<E>` instance.
+
+
 
 ## X. Appendix: Maven Configuration
 
