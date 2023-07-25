@@ -372,7 +372,11 @@ The subtypes of these errors should not be caught.
 
 Every branch of the `fold` function completes the `DefaultRaise` instance, calling the `complete` method. The default implementation just delimits the scope of the `Raise<E>` instance.
 
+TODO: Describe the "catch" function.
 
+What if we want to convert a computation in the `Raise<E>` context to a function returning an `Either<E, A>`, a `Result<A>`, an `Option<A>` or a `A?`? Well, nothing easier than that. The Arrow library provides all the tools to convert a computation in the `Raise<E>` context to a wrapped type. We can use the `either`, `result`, `option`, and `nullable` builders we saw in the previous articles. In fact, version 1.2.0 of Arrow completely review the implementation of such builders, defining them as wrappers around the `fold` function. 
+
+```kotlin
 
 ## X. Appendix: Maven Configuration
 
