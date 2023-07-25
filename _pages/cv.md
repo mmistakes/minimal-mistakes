@@ -2,9 +2,9 @@
 permalink: /CV/
 ---
 <img src="https://github.com/rjuenemann/rjuenemann.github.io/blob/master/assets/images/SUSig_Seal_Stacked_Left.png?raw=true" alt="stanford" style="width:300px;"/>       
-Computational and Mathematical Engineering PhD Candidate
-GPA: 4.01/4.00
-August 2021 - June 2026     
+Computational and Mathematical Engineering PhD Candidate        
+GPA: 4.01/4.00           
+August 2021 - June 2026          
 
 <img src="https://github.com/rjuenemann/rjuenemann.github.io/blob/master/assets/images/%C6%92%C6%92TUshield-word_2c%20(1).png?raw=true" alt="tulane" style="width:300px;"/>     
 Undergraduate Student  
