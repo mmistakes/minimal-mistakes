@@ -3,6 +3,7 @@ permalink: /CV/
 ---
 <img src="https://github.com/rjuenemann/rjuenemann.github.io/blob/master/assets/images/SUSig_Seal_Stacked_Left.png?raw=true" alt="stanford" style="width:300px;"/>       
 Computational and Mathematical Engineering PhD Candidate        
+Supported by NSF Graduate Research Fellowship, Stanford Graduate Fellowship: Inventec Fellow, Enhancing Diversity in Graduate Education Doctoral Fellowship        
 GPA: 4.01/4.00           
 August 2021 - June 2026          
 
