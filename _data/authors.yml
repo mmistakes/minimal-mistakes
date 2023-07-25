@@ -180,3 +180,92 @@ Mayur Naik:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/AI4Code"
+
+Qing Lyu:
+  name             : "Qing Lyu"
+  avatar           : /assets/images/avatar/veronica.jpg
+  bio              : "PhD Student at Penn"
+  home             : https://veronica320.github.io/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:lyuqing@sas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://veronica320.github.io/"
+
+Shreya Havaldar:
+  name             : "Shreya Havaldar"
+  avatar           : https://avatars.githubusercontent.com/u/31292956?v=4
+  bio              : "PhD Student at Penn"
+  home             : https://shreyahavaldar.com/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:shreyah@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://shreyahavaldar.com/"      
+
+Adam Stein:
+  name             : "Adam Stein"
+  avatar           : https://seas.upenn.edu/~steinad/march_2023.jpg
+  bio              : "PhD Student at Penn"
+  home             : https://seas.upenn.edu/~steinad
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:steinad@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://seas.upenn.edu/~steinad"
+
+Li Zhang:
+  name             : "Li Zhang"
+  avatar           : https://zharry29.github.io/image/drums.jpg
+  bio              : "PhD Student at Penn"
+  home             : https://zharry29.github.io/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:zharry@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://zharry29.github.io/"
+
+Delip Rao:
+  name             : "Delip Rao"
+  avatar           : https://deliprao.com/img/delip.jpeg
+  home             : https://deliprao.com/about
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:deliprao@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://deliprao.com/about"      
+
+Marianna Apidianaki:
+  name             : "Marianna Apidianaki"
+  avatar           : https://mariannaapi.github.io/assets/images/pic.jpg
+  home             : https://mariannaapi.github.io/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:marapi@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://mariannaapi.github.io/"     
+
+Chris Callison-Burch:
+  name             : "Chris Callison-Burch"
+  avatar           : /assets/images/avatar/ccb.jpeg
+  home             : https://www.cis.upenn.edu/~ccb/index.html
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:ccb@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.cis.upenn.edu/~ccb/index.html"          
+

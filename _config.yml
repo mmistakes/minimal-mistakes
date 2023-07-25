@@ -276,6 +276,10 @@ compress_html:
   ignore:
     envs: development
 
+# extra scripts
+head_scripts: 
+  - /assets/js/tabs.js
+
 
 # Defaults
 defaults:
