@@ -104,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "GSHS 40th"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "시뮬레이션 with p5.js"
+  location         : "경남과학고등학교"
   email            :
   links:
     - label: "Email"
