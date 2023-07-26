@@ -374,9 +374,52 @@ Every branch of the `fold` function completes the `DefaultRaise` instance, calli
 
 TODO: Describe the "catch" function.
 
-What if we want to convert a computation in the `Raise<E>` context to a function returning an `Either<E, A>`, a `Result<A>`, an `Option<A>` or a `A?`? Well, nothing easier than that. The Arrow library provides all the tools to convert a computation in the `Raise<E>` context to a wrapped type. We can use the `either`, `result`, `option`, and `nullable` builders we saw in the previous articles. In fact, version 1.2.0 of Arrow completely review the implementation of such builders, defining them as wrappers around the `fold` function. 
+What if we want to convert a computation in the `Raise<E>` context to a function returning an `Either<E, A>`, a `Result<A>`, an `Option<A>` or a `A?`? Well, nothing easier than that. The Arrow library provides all the tools to convert a computation in the `Raise<E>` context to a wrapped type. We can use the `either`, `result`, `option`, and `nullable` builders we saw in the previous articles. In fact, version 1.2.0 of Arrow completely reviewed the implementation of such builders, defining them as wrappers around the `fold` function. 
+
+Let's start with `Either<E, A>`. The `either` builder is defined as:
 
 ```kotlin
+// Arrow Kt Library
+public inline fun <Error, A> either(@BuilderInference block: Raise<Error>.() -> A): Either<Error, A> =
+  fold({ block.invoke(this) }, { Either.Left(it) }, { Either.Right(it) })
+```
+
+The implementation is quite straightforward. Here, we're using the flavor of the `fold` function that simply rethrow any unhandled exception. The `recover` lambda builds an `Either.Left` instance with the typed error, while the `transform` lambda builds an `Either.Right` instance with the value returned by the `block` lambda.
+
+In our domain, we can implement a function that retrieves the Company associated with a `JobId` using the `either` builder in this way:
+
+```kotlin
+class JobsService(private val jobs: Jobs) {
+    // Omissis
+    fun company(jobId: JobId): Either<JobError, Company> = either {
+        jobs.findById(jobId)
+    }.map { job ->
+        job.company
+    }
+}
+```
+
+Here, the `either` builder creates the context of type `Raise<JobError>`, handling it properly. It's possible also to make the backward conversion, from an `Either<E, A>` to a `Raise<E>`, using the `bind` function. In the `JobService` module we can add the following function:
+
+```kotlin
+context (Raise<JobError>)
+fun companyWithRaise(jobId: JobId): Company = company(jobId).bind()
+```
+
+As we can see, any reference to the `Either<E, A>` wrapper type is vanished. The `bind` function is defined as:
+
+```kotlin
+// Arrow Kt Library
+@RaiseDSL
+public fun <A> Either<Error, A>.bind(): A = when (this) {
+    is Either.Left -> raise(value)
+    is Either.Right -> value
+}
+```
+
+The `bind` function simply calls the `raise` function if the `Either` instance is a `Left`, otherwise it returns the value wrapped by the `Right` instance. 
+
+TODO: Describe why the raise function is available.
 
 ## X. Appendix: Maven Configuration
 
