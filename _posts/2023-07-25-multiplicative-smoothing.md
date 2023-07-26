@@ -96,7 +96,7 @@ In order to fully wield the power of such models while ensuring reliability and 
 
 
 At its core, explanations of model behavior aim to accurately and succinctly describe why a decision was made, often with human comprehension as the objective.
-However, what constitutes the form and content of a good explanation is highly context dependent.
+However, what constitutes the form and content of a good explanation is highly context-dependent.
 A good explanation varies by problem domain (e.g. vision vs. language), the objective function (e.g. classification vs. regression), and the intended audience (e.g. beginners vs. experts).
 All of these are critical factors to consider when engineering for comprehension.
 In this post we will focus on a popular family of explanation methods known as _feature attributions_ and study the notion of _stability_ as a formal guarantee.
@@ -384,7 +384,7 @@ To quantify perturbations over explanations, we introduce a metric of dissimilar
 
 $$ \Delta (\alpha, \alpha') = \# \{i : \alpha_i \neq \alpha_i '\} $$
 
-In the context of masking inputs, the goal is to compare the difference between $$f(x \odot \alpha)$$ and $$f(x \odot \alpha')$$ as a function of $$\Delta (\alpha, \alpha')$$.
+In the context of masking inputs, Lipschitz smoothness measures the difference between $$f(x \odot \alpha)$$ and $$f(x \odot \alpha')$$ as a function of $$\Delta (\alpha, \alpha')$$.
 Given a scalar $$\lambda > 0$$, we say that $$f$$ is $$\lambda$$-Lipschitz to the masking of features if
 
 $$ \mathsf{outputDiff}(f(x \odot \alpha), f(x \odot \alpha')) \leq \lambda \Delta (\alpha, \alpha') $$
@@ -457,7 +457,7 @@ if $$\mathcal{D}$$ were coordinate-wise independent (e.g. $$\mathcal{B}^n(\lambd
 then one needs $$N = 2^n$$ deterministic samples of $$s \sim \mathcal{D}$$ to exactly compute $$f(x)$$, which may be expensive.
 We further discuss in our
 [paper](https://arxiv.org/abs/2307.05902)
-how one can contruct $$\mathcal{D}$$ with statistical dependence to allow for efficient evaluations of $$f$$ in $$N \ll 2^n$$ samples.
+how one can construct $$\mathcal{D}$$ with statistical dependence to allow for efficient evaluations of $$f$$ in $$N \ll 2^n$$ samples.
 
 
 ## Empirical Evaluations
