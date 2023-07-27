@@ -2,7 +2,6 @@
 title: Home
 layout: home
 permalink: /home/
-author_profile: false
-sidebar:
-    nav: "docs"
+author_profile: true
+sidebar_main: true
 ---
