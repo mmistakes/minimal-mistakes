@@ -1,9 +1,12 @@
 # main links
 main:
-  - title: "Search"
-    url: /search/
   - title: "Home"
     url: /home/
+  - title: "Search"
+    url: /search/
+  - title: "Category"
+    url: /categories/
+  
 
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
