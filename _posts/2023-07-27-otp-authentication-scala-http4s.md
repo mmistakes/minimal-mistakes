@@ -1,19 +1,25 @@
 ---
-title: "Http Authentication with Scala and Http4s Part 2"
-date: 2023-06-17
+title: "Two-Factor Authentication in Scala with Http4s"
+date: 2023-07-27
 header:
   image: "/images/blog cover.jpg"
 tags: []
-excerpt: "Learn about One Time Passwords such as HOTP and TOTP and create a small application showcasing Two Factor Authentication."
+excerpt: "Learn how to write a two-factor authentication mechanism using one-time passwords (HOTP and TOTP) with Scala and Http4s."
 toc: true
 toc_label: "In this article"
 ---
 
+_by [Herbert Kateu](https://github.com/hkateu)_
+
+> Hey, it's Daniel here. You're reading a giant article about a real-life use of the Http4s library.
+> 
+> If you want to master the Typelevel Scala libraries (including Http4s) with real-life practice, check out the [Typelevel Rite of Passage](https://rockthejvm.com/p/typelevel-rite-of-passage) course, a full-stack project-based course. It's my biggest and most jam-packed course yet.
+
 ## 1. Introduction
 
-This article is a continuation of the authentication methods that were covered in [part1](https://blog.rockthejvm.com/http4s-authentication-part1/). Here we will cover two more advanced authentication methods which include One Time Password(OTP) and Two Factor Authentication (2FA).
+This article is a continuation of the authentication methods that were covered in [part1](/scala-http4s-authentication). Here we will cover two more advanced authentication methods which include One Time Password (OTP) and Two Factor Authentication (2FA).
 
-### 1.1 Requirements.
+### 1.1 Requirements
 
 To follow along with this tutorial, you will need to add the following to your build.sbt file:
 
@@ -161,7 +167,7 @@ Two Factor Authentication is an authentication method that requires a user to pr
 
 The code or token is the One Time Password that we generated in the previous sections
 
-### 3.1 2FA implementation in Scala
+### 3.1. Two Factor Authentication (2FA) Implementation in Scala
 
 In this section, we will create a small application to showcase 2FA using java-otp, Http4s, SendGrid, Google Zxing, and Google Authenticator.
 
@@ -1058,3 +1064,5 @@ One may also limit the time the user takes to submit the code as an extra securi
 ## 3. Conclusion
 
 In this tutorial we learned about One Time Password Authentication, we explored HMAC-based One Time Password (HOTP) and Time-based One Time Password (TOTP) and created a small application where we implemented Two Factor Authentication using the knowledge we learned. 2FA has gained traction in recent years and as displayed, adds another layer of security to your application.
+
+The code for this implementation can be found on [GitHub](https://github.com/hkateu/MyHttp4sCode/tree/main/otpauth/src/main/scala/com/xonal).
