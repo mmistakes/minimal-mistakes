@@ -417,9 +417,11 @@ public fun <A> Either<Error, A>.bind(): A = when (this) {
 }
 ```
 
-The `bind` function simply calls the `raise` function if the `Either` instance is a `Left`, otherwise it returns the value wrapped by the `Right` instance. 
+The `bind()` function simply calls the `raise` function if the `Either` instance is a `Left`, otherwise it returns the value wrapped by the `Right` instance. As we saw at the beginning of this section, the `raise()` function is defined as an extension function of the `Raise<E>` type. For this reason, calling `bind()`, which calls `raise()`, adds the `Raise<E>` context to the resulting function.
 
-TODO: Describe why the raise function is available.
+Similarly, we can convert a computation in the `Raise<E>` context to a `Result<A>` using the `result` builder:
+
+TODO: Describe the "result" builder.
 
 ## X. Appendix: Maven Configuration
 
