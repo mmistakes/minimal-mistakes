@@ -524,43 +524,44 @@
   padding: 0;
   width: 100%;
   list-style: none;
-  font-size: $type-size-6;
-
-  @include breakpoint($large) {
-    font-size: $type-size-7;
-  }
+  font-size: 1rem;
 
   a {
     display: block;
-    padding: 0.25rem 0.75rem;
-    color: $muted-text-color;
+    padding: 0.5rem 1rem;
+    color: $gray;
+    font-size: $type-size-7;
     font-weight: bold;
     line-height: 1.5;
     border-bottom: 1px solid $border-color;
 
     &:hover {
-      color: $text-color;
+      color: #000;
+      background: $lighter-gray;
+    }
+  }
+
+  > li:last-child {
+    a {
+      border-bottom: none;
     }
   }
 
   li ul > li a {
-    padding-left: 1.25rem;
+    padding-left: 1rem;
     font-weight: normal;
   }
 
-  li ul li ul > li a {
-    padding-left: 1.75rem;
+  li > ul {
+    padding-left: 1rem;
   }
 
-  li ul li ul li ul > li a {
-    padding-left: 2.25rem;
-  }
+  /* hide sub sub links on small screens*/
+  li > ul li {
+    display: none;
 
-  li ul li ul li ul li ul > li a {
-    padding-left: 2.75rem;
-  }
-
-  li ul li ul li ul li ul li ul > li a {
-    padding-left: 3.25rem
+    @include breakpoint($medium) {
+      display: block;
+    }
   }
 }
