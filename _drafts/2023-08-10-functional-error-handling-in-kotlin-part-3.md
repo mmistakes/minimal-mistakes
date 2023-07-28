@@ -372,7 +372,58 @@ The subtypes of these errors should not be caught.
 
 Every branch of the `fold` function completes the `DefaultRaise` instance, calling the `complete` method. The default implementation just delimits the scope of the `Raise<E>` instance.
 
-TODO: Describe the "catch" function.
+Please, be aware that any exception thrown inside the `Raise<E>` context will bubble up, and not will not be transformed automagically into a logical typed error. For example, imagine we need to convert amounts from dollars to euros. We can define a `CurrencyConverter` module as follows:
+
+```kotlin
+class CurrencyConverter {
+    @Throws(IllegalArgumentException::class)
+    fun convertUsdToEur(amount: Double?): Double =
+        if (amount == null || amount < 0.0) {
+            throw IllegalArgumentException("Amount must be positive")
+        } else {
+            amount * 0.91
+        }
+}
+```
+
+The `convertUsdToEur` throws an exception when the amount is `null` or negative. If we try to use it inside the `Raise<E>` context, the exception will bubble up. For example, let's create a wrapper around the converter, defining a context of type `Raise<Throwable>` and try to use it:
+
+```kotlin
+class RaiseCurrencyConverter(private val currencyConverter: CurrencyConverter) {
+
+    context (Raise<Throwable>)
+    fun convertUsdToEur(amount: Double?): Double =
+        currencyConverter.convertUsdToEur(amount)
+}
+```
+
+Now, we can try to use the `convertUsdToEur` function and see what happens:
+
+```kotlin
+fun main() {
+    val converter = RaiseCurrencyConverter(CurrencyConverter())
+    fold(
+        block = { converter.convertUsdToEur(-100.0) },
+        catch = { ex: Throwable ->
+            println("An exception was thrown: $ex")
+        },
+        recover = { error: Throwable ->
+            println("An error was raised: $error")
+        },
+        transform = { salaryInEur: Double ->
+            println("Salary in EUR: $salaryInEur")
+        },
+    )
+}
+```
+
+As we said, we expect the exception to be caught by the `catch` lambda. In fact, if we run the code, we get the following output:
+
+```text
+An exception was thrown: java.lang.IllegalArgumentException: Amount must be positive
+```
+
+TODO Catch
 
 What if we want to convert a computation in the `Raise<E>` context to a function returning an `Either<E, A>`, a `Result<A>`, an `Option<A>` or a `A?`? Well, nothing easier than that. The Arrow library provides all the tools to convert a computation in the `Raise<E>` context to a wrapped type. We can use the `either`, `result`, `option`, and `nullable` builders we saw in the previous articles. In fact, version 1.2.0 of Arrow completely reviewed the implementation of such builders, defining them as wrappers around the `fold` function. 
 
@@ -410,18 +461,28 @@ As we can see, any reference to the `Either<E, A>` wrapper type is vanished. The
 
 ```kotlin
 // Arrow Kt Library
-@RaiseDSL
-public fun <A> Either<Error, A>.bind(): A = when (this) {
-    is Either.Left -> raise(value)
-    is Either.Right -> value
+public interface Raise<in Error> {
+    // Omissis
+    
+    @RaiseDSL
+    public fun <A> Either<Error, A>.bind(): A = when (this) {
+        is Either.Left -> raise(value)
+        is Either.Right -> value
+    }
 }
 ```
 
-The `bind()` function simply calls the `raise` function if the `Either` instance is a `Left`, otherwise it returns the value wrapped by the `Right` instance. As we saw at the beginning of this section, the `raise()` function is defined as an extension function of the `Raise<E>` type. For this reason, calling `bind()`, which calls `raise()`, adds the `Raise<E>` context to the resulting function.
+The `bind()` function simply calls the `raise` function if the `Either` instance is a `Left`, otherwise it returns the value wrapped by the `Right` instance. As we saw at the beginning of this section, the `raise()` function is defined in the context of the `Raise<E>` type. As we can see from its definition, also `bind()` needs a `Raise<E>` context. For this reason, calling `bind()` adds the `Raise<E>` context to the resulting function.
 
-Similarly, we can convert a computation in the `Raise<E>` context to a `Result<A>` using the `result` builder:
+The conversion between a `Result<A>` and a `Raise<E>` is a little more tricky. In fact, the `Result<A>` type uses as error type the `Throwable` type. Hence, we can convert it only to a `Raise<Throwable>` type. The case is so special that the Arrow library provides a dedicated implementation of the `Raise<E>` interface, the `ResultRaise` class:
 
-TODO: Describe the "result" builder.
+```kotlin
+// Arrow Kt Library
+public class ResultRaise(private val raise: Raise<Throwable>) : Raise<Throwable> by raise
+```
+
+
+
 
 ## X. Appendix: Maven Configuration
 
