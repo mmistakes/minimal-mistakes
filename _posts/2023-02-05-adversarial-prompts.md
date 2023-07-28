@@ -175,7 +175,7 @@ For more details on our framework and text-to-image adversarial prompt examples,
 
 ## Adversarial Prompts for Text-to-Text Models
 
-In the previous section, we mainly discussed adversarial prompts for text-to-image models. However, our framework can also create adversarial prompts for text-to-text generation. In this last section, we briefly showcase some of our results in attacking text generation models, specifically [Vicuna v1.1](https://huggingface.co/docs/transformers/model_doc/opt). 
+In the previous section, we mainly discussed adversarial prompts for text-to-image models. However, our framework can also create adversarial prompts for text-to-text generation. In this last section, we briefly showcase some of our results in attacking text generation models, specifically [Vicuna v1.1](https://huggingface.co/docs/transformers/model_doc/opt), the SOTA open-source model at the time.
 
 In text generation, what is the goal of the adversary? Rather than generating images of a certain class, we consider adversaries that wish to alter certain characteristics of generated text. We explore the task of *increasing the perplexity of the output*, or generating nonsensical text.
 
@@ -184,7 +184,7 @@ In text generation, what is the goal of the adversary? Rather than generating im
 Consider the prompt ``Explain list comprehension in Python.`` This prompt reliably generates describing list comprehension, such as the following: 
 > ```List comprehension is a way to create a new list from an existing list or other iterable by applying a function to each element...```
 
-Applying our framework to generate nonsensical text, we find that appending the text ``coordinate hip arts ... filled via`` causes the model to generate nonsense, for example: 
+Applying our framework to generate nonsensical text, we find that the prompt ``coordinate hip arts ... filled via Explain list comprehension in Python.`` causes the model to generate nonsense, for example:
 >```I’d like to be called "Alexa," as it is short, simple, and easy to remember. Plus, it has a nice ring to it!```
 
 
