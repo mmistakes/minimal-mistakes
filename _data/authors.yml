@@ -3,7 +3,7 @@ First Last:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : # "Bio Here"
   location         : # "Philadelphia, PA"
-  home             : 
+  home             :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -50,6 +50,25 @@ Eric Wong:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
+Tai Nguyen:
+  name             : "Tai Nguyen"
+  avatar           : "/assets/images/avatar/tai.jpg"
+  bio              : "MS Student at UPenn"
+  home             : https://taidnguyen.github.io/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:taing@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://taidnguyen.github.io/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/taidng"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/taidnguyen"
+
 Patrick Chao:
   name             : "Patrick Chao"
   avatar           : https://faculty.wharton.upenn.edu/wp-content/uploads/2016/11/Chao_Patrick-129x139.jpg
@@ -70,9 +89,6 @@ Natalie Maus:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://sites.google.com/seas.upenn.edu/natalie-maus/home"
-  
-
-
 
 Jake Gardner:
   name             : "Jake Gardner"
@@ -81,3 +97,175 @@ Jake Gardner:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://jacobrgardner.github.io/"
+
+Anton Xue:
+  name    : "Anton Xue"
+  avatar  : "/assets/images/avatar/anton.jpg"
+  bio     : "CS PhD Student at UPenn"
+  home    : https://antonxue.github.io/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:antonxue@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://antonxue.github.io/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/AntonXue"
+
+Rajeev Alur:
+  name    : "Rajeev Alur"
+  avatar  : "/assets/images/avatar/rajeev.jpg"
+  bio     : "Zisman Family Professor at UPenn"
+  home    : https://www.cis.upenn.edu/~alur/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:alur@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.cis.upenn.edu/~alur/"
+
+Aaditya Naik:
+  name: "Aaditya Naik"
+  avatar: "/assets/images/avatar/aaditya.jpeg"
+  bio: "CS PhD Student at UPenn"
+  home: https://www.seas.upenn.edu/~asnaik
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:asnaik@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.seas.upenn.edu/~asnaik"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/aaditya_naik"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/aadityanaik"
+
+Yinjun Wu:
+  name: "Yinjun Wu"
+  avatar: "/assets/images/avatar/yinjun.jpg"
+  bio: "CS PostDoc at UPenn"
+  home: https://www.seas.upenn.edu/~wuyinjun
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:wuyinjun@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.seas.upenn.edu/~asnaik"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/wu_yinjun"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/thuwuyinjun"
+
+Mayur Naik:
+  name: "Mayur Naik"
+  avatar: "/assets/images/avatar/mayur.png"
+  bio: "Professor at UPenn"
+  home: https://www.seas.upenn.edu/~mhnaik
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:mhnaik@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.seas.upenn.edu/~mhnaik"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/AI4Code"
+
+Qing Lyu:
+  name             : "Qing Lyu"
+  avatar           : /assets/images/avatar/veronica.jpg
+  bio              : "PhD Student at Penn"
+  home             : https://veronica320.github.io/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:lyuqing@sas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://veronica320.github.io/"
+
+Shreya Havaldar:
+  name             : "Shreya Havaldar"
+  avatar           : https://avatars.githubusercontent.com/u/31292956?v=4
+  bio              : "PhD Student at Penn"
+  home             : https://shreyahavaldar.com/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:shreyah@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://shreyahavaldar.com/"      
+
+Adam Stein:
+  name             : "Adam Stein"
+  avatar           : https://seas.upenn.edu/~steinad/march_2023.jpg
+  bio              : "PhD Student at Penn"
+  home             : https://seas.upenn.edu/~steinad
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:steinad@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://seas.upenn.edu/~steinad"
+
+Li Zhang:
+  name             : "Li Zhang"
+  avatar           : https://zharry29.github.io/image/drums.jpg
+  bio              : "PhD Student at Penn"
+  home             : https://zharry29.github.io/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:zharry@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://zharry29.github.io/"
+
+Delip Rao:
+  name             : "Delip Rao"
+  avatar           : https://deliprao.com/img/delip.jpeg
+  home             : https://deliprao.com/about
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:deliprao@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://deliprao.com/about"      
+
+Marianna Apidianaki:
+  name             : "Marianna Apidianaki"
+  avatar           : https://mariannaapi.github.io/assets/images/pic.jpg
+  home             : https://mariannaapi.github.io/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:marapi@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://mariannaapi.github.io/"     
+
+Chris Callison-Burch:
+  name             : "Chris Callison-Burch"
+  avatar           : /assets/images/avatar/ccb.jpeg
+  home             : https://www.cis.upenn.edu/~ccb/index.html
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:ccb@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.cis.upenn.edu/~ccb/index.html"          
+

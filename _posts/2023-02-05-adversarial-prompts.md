@@ -101,7 +101,7 @@ prompting_pipeline:
 >In this post, we discuss how to generate adversarial prompts for unstructured image and text generation. These prompts, which can be standalone or prepended to benign prompts, induce specific behaviors into the generative process. 
 For example, "turbo lhaff&#10003;" can be prepended to "a picture of a mountain" to generate the dog in the banner photo of this page. 
 
-{% include gallery id="gallery_flagship" layout="half" caption="Images generated with the prompts (left) ``a picture of a mountain`` and (right) ``turbo lhaff&#10003;a picture of a mountain``." %}
+{% include gallery id="gallery_flagship" layout="half" caption="Images generated with the prompts (left) ``a picture of a mountain`` and (right) ``turbo lhaff✓a picture of a mountain``." %}
 
 <!-- --- -->
 
@@ -198,7 +198,6 @@ In this post, we introduced adversarial prompts--strings that, when prepended to
   journal = {arXiv},  
   year = {2023},  
 }
-
 
 
 
