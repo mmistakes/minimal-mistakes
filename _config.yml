@@ -26,18 +26,13 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/map-jun/map-jun.github.io"
 teaser                   : # "/assets/images/500x300.png" # 홈페이지 기본 티져(?) 이미지
 logo                     : "/assets/images/horizon invisible.png"
-<<<<<<< Updated upstream
 masthead_title           : " " #overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs            : true # true, false (default)
-=======
-masthead_title           : " "
 # breadcrumbs            : false # true, false (default)
->>>>>>> Stashed changes
+
 words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-<<<<<<< Updated upstream
     shortname            : "mapjun-com"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
@@ -59,28 +54,21 @@ comments:
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
-=======
-    shortname            : mapjun-com # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 
->>>>>>> Stashed changes
 reCaptcha:
   siteKey                :
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-<<<<<<< Updated upstream
   hide                   : # true, false (default)
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
   search_within_pages    : # true, false (default)
-=======
-
 search                   : true #, false (default)
 search_full_content      : true #, false (default)
 search_provider          : algolia # lunr (default), algolia, google
->>>>>>> Stashed changes
 algolia:
   application_id         : KJGTS9AE89
   index_name             : MapJun.com
