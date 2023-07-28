@@ -71,7 +71,7 @@ search_full_content      : true #, false (default)
 search_provider          : algolia # lunr (default), algolia, google
 algolia:
   application_id         : KJGTS9AE89
-  index_name             : MapJun.com
+  index_name             : mapjun.com
   search_only_api_key    : 5c2df9a0f85deb09da222a60f984255d
   powered_by             : # true (default), false
 google:
