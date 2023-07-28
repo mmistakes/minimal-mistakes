@@ -10,6 +10,7 @@ group :jekyll_plugins do
     gem "jekyll"
     gem "jekyll-feed"
     gem "jekyll-seo-tag"
+    gem “jekyll_plugins”
     gem "jekyll-sitemap"
     gem "jekyll-paginate"
     gem "jekyll-include-cache"
