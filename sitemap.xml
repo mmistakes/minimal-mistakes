@@ -1,29 +1,87 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
-    <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
-      {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-      {% endif %}
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-      {% if post.sitemap.changefreq == null %}
-        <changefreq>weekly</changefreq>
-      {% else %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-      {% endif %}
 
-      {% if post.sitemap.priority == null %}
-          <priority>0.5</priority>
-      {% else %}
-        <priority>{{ post.sitemap.priority }}</priority>
-      {% endif %}
+<url>
+  <loc>http://mapjun.com/</loc>
+  <lastmod>2023-07-28T06:19:19+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://mapjun.com/categories/</loc>
+  <lastmod>2023-07-28T06:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mapjun.com/%ED%8A%B9%EC%88%98%EB%8C%80%ED%95%99%EC%9B%90/</loc>
+  <lastmod>2023-07-28T06:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mapjun.com/mathematical_statistics/</loc>
+  <lastmod>2023-07-28T06:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mapjun.com/regression/</loc>
+  <lastmod>2023-07-28T06:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mapjun.com/linear_algebra/</loc>
+  <lastmod>2023-07-28T06:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mapjun.com/python_data_preprocessing/</loc>
+  <lastmod>2023-07-28T06:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mapjun.com/python_visualization/</loc>
+  <lastmod>2023-07-28T06:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mapjun.com/python_data_analysis/</loc>
+  <lastmod>2023-07-28T06:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mapjun.com/r_data_preprocessing/</loc>
+  <lastmod>2023-07-28T06:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mapjun.com/r_visualization/</loc>
+  <lastmod>2023-07-28T06:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mapjun.com/r_data_analysis/</loc>
+  <lastmod>2023-07-28T06:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mapjun.com/%ED%8A%B9%EC%88%98%EB%8C%80%ED%95%99%EC%9B%90/%ED%8A%B9%EC%88%98%EB%8C%80%ED%95%99%EC%9B%90-24%EB%85%84%EB%8F%84-%EC%A0%84%EA%B8%B0-%EB%8C%80%EB%B9%84/</loc>
+  <lastmod>2023-07-28T06:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mapjun.com/%ED%8A%B9%EC%88%98%EB%8C%80%ED%95%99%EC%9B%90/%ED%8A%B9%EC%88%98%EB%8C%80%ED%95%99%EC%9B%90-23%EB%85%84%EB%8F%84-%ED%9B%84%EA%B8%B0-%EB%8C%80%EB%B9%84/</loc>
+  <lastmod>2023-07-28T06:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://mapjun.com/tags/</loc>
+  <lastmod>2023-07-28T06:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
-    </url>
-  {% endfor %}
+
 </urlset>

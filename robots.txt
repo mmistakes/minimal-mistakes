@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://map-jun.github.io/sitemap.xml
