@@ -15,7 +15,8 @@
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
+    /* padding: 1em; 메뉴바 패딩 조절 */
+    padding: 0.6em;
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -50,12 +51,14 @@
   -ms-flex-item-align: center;
   align-self: center;
   font-weight: bold;
-  // z-index: 20;
+  font-size: $type-size-4;
+  z-index: 20;
 }
 
 .site-subtitle {
   display: block;
-  font-size: $type-size-5;
+  font-size: $type-size-6;
+  font-weight: bold;
 }
 
 .masthead__menu {

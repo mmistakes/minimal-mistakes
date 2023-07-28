@@ -1,38 +1,59 @@
 # main links
 main:
-
+  - title: "Categories"
+    url: /categories/
   - title: "태그"
     url: /Tags/
 
-  - title: "카테고리"
-    url: /categories/
+# main links
+sidebar-category:
+  - title: "데이터사이언스 특수대학원"
+    children:
+    - title: "🖊️ 24년도 전기 합격 Tip"
+      url: /특수대학원/
+      category: "특수대학원"
 
-  - title: "검색"
-    url: /search/
+  - title: "Statistics"
+    children:
+    - title: "📁 수리통계학"
+      url: /mathematical_statistics/
+      category: "mathematical_statistics"
+      
+    - title: "📁 회귀분석"
+      url: /regression/
+      category: "regression"
 
+    - title: "📁 선형대수학"
+      url: /linear_algebra/
+      category: "linear_algebra"
+  
+  - title: "Python"
+    children:
+    - title: "📁 데이터 전처리"
+      url: /python_data_preprocessing/
+      category: "python_data_preprocessing"
 
-# docs:
-#    - title: "내 목차1"
-#      children:
-#       - title: "Category"
-#         url: /categories/
-#       - title: "tag"
-#         url: /tags/
+    - title: "📁 시각화"
+      url: /python_visualization/
+      category: "python_visualization"
 
-#    - title: "내 목차2"
-#      children:
-#       - title: "Category"
-#         url: /categories/
-#       - title: "tag"
-#         url: /tags/
+    - title: "📁 데이터 분석"
+      url: /python_data_analysis/
+      category: "python_data_analysis"
 
+  - title: "R programming"
+    children:
+    - title: "📁 데이터 전처리"
+      url: /r_data_preprocessing/
+      category: "r_data_preprocessing"
+      
+    - title: "📁 시각화"
+      url: /r_visualization/
+      category: "r_visualization"
 
+    - title: "📁 데이터 분석"
+      url: /r_data_analysis/
+      category: "r_data_analysis"
 
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+#  - title: "Posts"
+#    url: /posts/

@@ -15,23 +15,29 @@
 minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KR"
+locale                   : "en-KR"
 title                    : "맵준.com"
 title_separator          : "|"
 subtitle                 : "데이터 분석 & 인공지능 공부 기록"
-name                     : "맵준"
-description              : "MapJun.com"
+name                     : "MapJun"
+description              : # "메타 태그에 들어가는 영역"
 url                      : "https://map-jun.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+repository               : "https://github.com/map-jun/map-jun.github.io"
+teaser                   : # "/assets/images/500x300.png" # 홈페이지 기본 티져(?) 이미지
 logo                     : "/assets/images/horizon invisible.png"
+<<<<<<< Updated upstream
 masthead_title           : " " #overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : true # true, false (default)
+=======
+masthead_title           : " "
+# breadcrumbs            : false # true, false (default)
+>>>>>>> Stashed changes
 words_per_minute         : 200
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "disqus" # false (default), "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
+<<<<<<< Updated upstream
     shortname            : "mapjun-com"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
@@ -53,21 +59,32 @@ comments:
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+=======
+    shortname            : mapjun-com # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+
+>>>>>>> Stashed changes
 reCaptcha:
   siteKey                :
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
+<<<<<<< Updated upstream
   hide                   : # true, false (default)
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
   search_within_pages    : # true, false (default)
+=======
+
+search                   : true #, false (default)
+search_full_content      : true #, false (default)
+search_provider          : algolia # lunr (default), algolia, google
+>>>>>>> Stashed changes
 algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+  application_id         : KJGTS9AE89
+  index_name             : MapJun.com
+  search_only_api_key    : 5c2df9a0f85deb09da222a60f984255d
   powered_by             : # true (default), false
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
@@ -75,9 +92,8 @@ google:
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-naver_site_verification  :
 yandex_site_verification :
-baidu_site_verification  :
+naver_site_verification  :
 
 # Social Sharing
 twitter:
@@ -96,65 +112,59 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          : "G-JGX71JFMNX"
-    anonymize_ip         : false # true, false (default)
-
+    anonymize_ip         : # true, false (default)
 
 # Site Author
 author:
   name             : "맵준(MapJun)"
   avatar           : "/assets/images/세로 색깔.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "맵준의 기술 블로그 <br>
-<br> 실력과 생산성을 끌어올려 <br> 삶을 완벽히 통제하고 <br> 꼭 남에게 베풀고 싶습니다."
-
-  location         : "Seoul, South Korea"
-  #email            : jobsenior25@gmail.com
+  bio              : "맵준의 기술 블로그 <br><br> 실력과 생산성을 끌어올려 <br> 삶을 완벽히 통제하고 <br> 꼭 남에게 베풀고 싶습니다."
+  location         : "South Korea"
+  email            : # "jobsenior25@gmail.com"
   links:
-    - label: "jobsenior25@gmail.com" #Email
+    - label: "Email : jobsenior25@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:jobsenior25@gmail.com"
-    - #label: "Website"
-      #icon: "fas fa-fw fa-link"
-      #url: "https://map-jun.github.io"
-    - #label: "Twitter"
-      #icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - #label: "Facebook"
-      #icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    # - label: "GitHub"
-    #   icon: "fab fa-fw fa-github"
-    #   url: "https://github.com/map-jun"
-    - #label: "Instagram"
-      #icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: mailto:jobsenior25@gmail.com
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   url: "https://naver.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/map-jun"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: " "
+    # - label: "Blog"
+    #   icon: "fas fa-fw fa-link"
+    #   url: " "
 
 # Site Footer
 footer:
   links:
-    - label: "jobsenior25@gmail.com" #Email
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:jobsenior25@gmail.com"
-    - #label: "Twitter"
-      #icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - #label: "Facebook"
-      #icon: "fab fa-fw fa-facebook-square"
-      # url:
-    # - label: "GitHub"
-    #   icon: "fab fa-fw fa-github"
-    #   url: "https://github.com/map-jun"
-    - #label: "GitLab"
-      #icon: "fab fa-fw fa-gitlab"
-      # url:
-    - #label: "Bitbucket"
-      #icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - #label: "Instagram"
-      #icon: "fab fa-fw fa-instagram"
-      # url:
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://naver.com/"
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   url: "https://naver.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/map-jun"
+    # - label: "GitLab"
+    #   icon: "fab fa-fw fa-gitlab"
+    #   url: "https://naver.com/"
+    # - label: "Bitbucket"
+    #   icon: "fab fa-fw fa-bitbucket"
+    #   url: "https://naver.com/"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://naver.com/"
 
 
 # Reading Files
@@ -235,6 +245,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-algolia
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -262,16 +273,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: archive-taxonomy
-    tag: archive-taxonomy
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
 
 
 # HTML Compression
@@ -281,6 +292,9 @@ compress_html:
   ignore:
     envs: development
 
+# Languages
+languages: ["ko", "en"]
+# exclude_from_localizations: ["javascript", "images", "css"]
 
 # Defaults
 defaults:
@@ -295,5 +309,20 @@ defaults:
       comments: true
       share: true
       related: true
-      show_date: true
-date_format: "%Y-%m-%d"
+      sidebar:
+        nav: "sidebar-category"
+      toc_sticky: true
+  
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    value:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: true
+      sidebar:
+        nav: "sidebar-category"

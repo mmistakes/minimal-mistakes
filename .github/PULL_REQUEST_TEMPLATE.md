@@ -24,7 +24,3 @@
 <!--
   Is this related to any GitHub issue(s)?
 -->
-
-<!--
-  Please confirm that you want to submit this Pull Request to Minimal Mistakes, the free Jekyll theme by Michael Rose, by deleting this comment block.
--->

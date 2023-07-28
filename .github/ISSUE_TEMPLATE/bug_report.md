@@ -14,7 +14,7 @@ about: "Is something not working as expected?"
     for solutions and to avoid duplication.
   - Ask for help at http://talk.jekyllrb.com/
   
-  If none of the above solved your problem, you can continue below.
+  After exhausting these suggestions use the format below.
 -->
 
 ## Environment
@@ -25,7 +25,7 @@ about: "Is something not working as expected?"
 
   Issues without a link to a public repository or ZIP file will likely go ignored.
   Being able to see your actual files is necessary to troubleshoot, as most 
-  issues stem from invalid/missing YAML Front Matter, a mis-configured _config.yml 
+  issues stem from invalid/missing YAML Front Matter, a mis-configured _config.sys 
   file, or problematic site content. 
 -->
 
@@ -33,7 +33,7 @@ about: "Is something not working as expected?"
 - Ruby gem or remote theme version:
 - Jekyll version:
 - Git repository URL:
-- Hosted on GitHub Pages (if yes provide URL to site):
+- GitHub Pages hosted (if yes provide URL to site):
 - Operating system:
 
 ## Expected behavior
@@ -46,7 +46,7 @@ about: "Is something not working as expected?"
 ## Steps to reproduce the behavior
 
 <!--
-  Describe the steps you took for this problem to come up. Such as: you installed
+  Describe the steps you took for this problem to exist. Such as: you installed
   the theme, customized _config.yml, added your own posts, and started up a 
   Jekyll server locally.
 

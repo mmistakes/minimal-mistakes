@@ -1,6 +1,6 @@
 /**
- * lunr - http://lunrjs.com - A bit like Solr, but much smaller and not as bright - 2.3.9
- * Copyright (C) 2020 Oliver Nightingale
+ * lunr - http://lunrjs.com - A bit like Solr, but much smaller and not as bright - 2.3.5
+ * Copyright (C) 2018 Oliver Nightingale
  * @license MIT
  */
 
@@ -54,10 +54,10 @@ var lunr = function (config) {
   return builder.build()
 }
 
-lunr.version = "2.3.9"
+lunr.version = "2.3.5"
 /*!
  * lunr.utils
- * Copyright (C) 2020 Oliver Nightingale
+ * Copyright (C) 2018 Oliver Nightingale
  */
 
 /**
@@ -177,7 +177,7 @@ lunr.FieldRef.prototype.toString = function () {
 }
 /*!
  * lunr.Set
- * Copyright (C) 2020 Oliver Nightingale
+ * Copyright (C) 2018 Oliver Nightingale
  */
 
 /**
@@ -211,8 +211,8 @@ lunr.Set.complete = {
     return other
   },
 
-  union: function () {
-    return this
+  union: function (other) {
+    return other
   },
 
   contains: function () {
@@ -389,7 +389,7 @@ lunr.Token.prototype.clone = function (fn) {
 }
 /*!
  * lunr.tokenizer
- * Copyright (C) 2020 Oliver Nightingale
+ * Copyright (C) 2018 Oliver Nightingale
  */
 
 /**
@@ -424,7 +424,7 @@ lunr.tokenizer = function (obj, metadata) {
     })
   }
 
-  var str = obj.toString().toLowerCase(),
+  var str = obj.toString().trim().toLowerCase(),
       len = str.length,
       tokens = []
 
@@ -465,7 +465,7 @@ lunr.tokenizer = function (obj, metadata) {
 lunr.tokenizer.separator = /[\s\-]+/
 /*!
  * lunr.Pipeline
- * Copyright (C) 2020 Oliver Nightingale
+ * Copyright (C) 2018 Oliver Nightingale
  */
 
 /**
@@ -509,8 +509,8 @@ lunr.Pipeline.registeredFunctions = Object.create(null)
  * or mutate (or add) metadata for a given token.
  *
  * A pipeline function can indicate that the passed token should be discarded by returning
- * null, undefined or an empty string. This token will not be passed to any downstream pipeline
- * functions and will not be added to the index.
+ * null. This token will not be passed to any downstream pipeline functions and will not be
+ * added to the index.
  *
  * Multiple tokens can be returned by returning an array of tokens. Each token will be passed
  * to any downstream pipeline functions and all will returned tokens will be added to the index.
@@ -673,7 +673,7 @@ lunr.Pipeline.prototype.run = function (tokens) {
     for (var j = 0; j < tokens.length; j++) {
       var result = fn(tokens[j], j, tokens)
 
-      if (result === null || result === void 0 || result === '') continue
+      if (result === void 0 || result === '') continue
 
       if (Array.isArray(result)) {
         for (var k = 0; k < result.length; k++) {
@@ -732,7 +732,7 @@ lunr.Pipeline.prototype.toJSON = function () {
 }
 /*!
  * lunr.Vector
- * Copyright (C) 2020 Oliver Nightingale
+ * Copyright (C) 2018 Oliver Nightingale
  */
 
 /**
@@ -929,7 +929,7 @@ lunr.Vector.prototype.toJSON = function () {
 /* eslint-disable */
 /*!
  * lunr.stemmer
- * Copyright (C) 2020 Oliver Nightingale
+ * Copyright (C) 2018 Oliver Nightingale
  * Includes code from - http://tartarus.org/~martin/PorterStemmer/js.txt
  */
 
@@ -1151,7 +1151,7 @@ lunr.stemmer = (function(){
 lunr.Pipeline.registerFunction(lunr.stemmer, 'stemmer')
 /*!
  * lunr.stopWordFilter
- * Copyright (C) 2020 Oliver Nightingale
+ * Copyright (C) 2018 Oliver Nightingale
  */
 
 /**
@@ -1316,7 +1316,7 @@ lunr.stopWordFilter = lunr.generateStopWordFilter([
 lunr.Pipeline.registerFunction(lunr.stopWordFilter, 'stopWordFilter')
 /*!
  * lunr.trimmer
- * Copyright (C) 2020 Oliver Nightingale
+ * Copyright (C) 2018 Oliver Nightingale
  */
 
 /**
@@ -1343,7 +1343,7 @@ lunr.trimmer = function (token) {
 lunr.Pipeline.registerFunction(lunr.trimmer, 'trimmer')
 /*!
  * lunr.TokenSet
- * Copyright (C) 2020 Oliver Nightingale
+ * Copyright (C) 2018 Oliver Nightingale
  */
 
 /**
@@ -1469,49 +1469,41 @@ lunr.TokenSet.fromFuzzyString = function (str, editDistance) {
       })
     }
 
-    if (frame.editsRemaining == 0) {
-      continue
-    }
-
-    // insertion
-    if ("*" in frame.node.edges) {
-      var insertionNode = frame.node.edges["*"]
-    } else {
-      var insertionNode = new lunr.TokenSet
-      frame.node.edges["*"] = insertionNode
-    }
-
-    if (frame.str.length == 0) {
-      insertionNode.final = true
-    }
-
-    stack.push({
-      node: insertionNode,
-      editsRemaining: frame.editsRemaining - 1,
-      str: frame.str
-    })
-
     // deletion
     // can only do a deletion if we have enough edits remaining
     // and if there are characters left to delete in the string
-    if (frame.str.length > 1) {
-      stack.push({
-        node: frame.node,
-        editsRemaining: frame.editsRemaining - 1,
-        str: frame.str.slice(1)
-      })
+    if (frame.editsRemaining > 0 && frame.str.length > 1) {
+      var char = frame.str.charAt(1),
+          deletionNode
+
+      if (char in frame.node.edges) {
+        deletionNode = frame.node.edges[char]
+      } else {
+        deletionNode = new lunr.TokenSet
+        frame.node.edges[char] = deletionNode
+      }
+
+      if (frame.str.length <= 2) {
+        deletionNode.final = true
+      } else {
+        stack.push({
+          node: deletionNode,
+          editsRemaining: frame.editsRemaining - 1,
+          str: frame.str.slice(2)
+        })
+      }
     }
 
     // deletion
     // just removing the last character from the str
-    if (frame.str.length == 1) {
+    if (frame.editsRemaining > 0 && frame.str.length == 1) {
       frame.node.final = true
     }
 
     // substitution
     // can only do a substitution if we have enough edits remaining
     // and if there are characters left to substitute
-    if (frame.str.length >= 1) {
+    if (frame.editsRemaining > 0 && frame.str.length >= 1) {
       if ("*" in frame.node.edges) {
         var substitutionNode = frame.node.edges["*"]
       } else {
@@ -1521,19 +1513,40 @@ lunr.TokenSet.fromFuzzyString = function (str, editDistance) {
 
       if (frame.str.length == 1) {
         substitutionNode.final = true
+      } else {
+        stack.push({
+          node: substitutionNode,
+          editsRemaining: frame.editsRemaining - 1,
+          str: frame.str.slice(1)
+        })
+      }
+    }
+
+    // insertion
+    // can only do insertion if there are edits remaining
+    if (frame.editsRemaining > 0) {
+      if ("*" in frame.node.edges) {
+        var insertionNode = frame.node.edges["*"]
+      } else {
+        var insertionNode = new lunr.TokenSet
+        frame.node.edges["*"] = insertionNode
       }
 
-      stack.push({
-        node: substitutionNode,
-        editsRemaining: frame.editsRemaining - 1,
-        str: frame.str.slice(1)
-      })
+      if (frame.str.length == 0) {
+        insertionNode.final = true
+      } else {
+        stack.push({
+          node: insertionNode,
+          editsRemaining: frame.editsRemaining - 1,
+          str: frame.str
+        })
+      }
     }
 
     // transposition
     // can only do a transposition if there are edits remaining
     // and there are enough characters to transpose
-    if (frame.str.length > 1) {
+    if (frame.editsRemaining > 0 && frame.str.length > 1) {
       var charA = frame.str.charAt(0),
           charB = frame.str.charAt(1),
           transposeNode
@@ -1547,13 +1560,13 @@ lunr.TokenSet.fromFuzzyString = function (str, editDistance) {
 
       if (frame.str.length == 1) {
         transposeNode.final = true
+      } else {
+        stack.push({
+          node: transposeNode,
+          editsRemaining: frame.editsRemaining - 1,
+          str: charA + frame.str.slice(2)
+        })
       }
-
-      stack.push({
-        node: transposeNode,
-        editsRemaining: frame.editsRemaining - 1,
-        str: charA + frame.str.slice(2)
-      })
     }
   }
 
@@ -1605,10 +1618,6 @@ lunr.TokenSet.fromString = function (str) {
 /**
  * Converts this TokenSet into an array of strings
  * contained within the TokenSet.
- *
- * This is not intended to be used on a TokenSet that
- * contains wildcards, in these cases the results are
- * undefined and are likely to cause an infinite loop.
  *
  * @returns {string[]}
  */
@@ -1827,7 +1836,7 @@ lunr.TokenSet.Builder.prototype.minimize = function (downTo) {
 }
 /*!
  * lunr.Index
- * Copyright (C) 2020 Oliver Nightingale
+ * Copyright (C) 2018 Oliver Nightingale
  */
 
 /**
@@ -1994,7 +2003,7 @@ lunr.Index.prototype.query = function (fn) {
      */
     var clause = query.clauses[i],
         terms = null,
-        clauseMatches = lunr.Set.empty
+        clauseMatches = lunr.Set.complete
 
     if (clause.usePipeline) {
       terms = this.pipeline.runString(clause.term, {
@@ -2319,7 +2328,7 @@ lunr.Index.load = function (serializedIndex) {
 }
 /*!
  * lunr.Builder
- * Copyright (C) 2020 Oliver Nightingale
+ * Copyright (C) 2018 Oliver Nightingale
  */
 
 /**
