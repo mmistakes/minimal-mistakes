@@ -609,7 +609,7 @@ When you click the link, you will be redirected to github and prompted to author
 
 ![permission](../images/oauth/authorize.png)
 
-Once authorization is provided, you will be redirected to our application with the following response.
+Once authorization is provided, you will be redirected to our application with a similar response.
 
 ![response](../images/oauth/response.png)
 
