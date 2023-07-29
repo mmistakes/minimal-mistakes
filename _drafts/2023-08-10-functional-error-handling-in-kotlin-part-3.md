@@ -112,7 +112,7 @@ Since we'll use a lot of typed errors during the article, we need to define also
 sealed interface JobError
 data class JobNotFound(val jobId: JobId) : JobError
 data class GenericError(val cause: String) : JobError
-data object NegativeAmount : JobError
+data object NegativeSalary : JobError
 ```
 
 Now that we have defined the domain model and the module that will contain the algebra to access it together with the errors we'll use along the way, it's time to start to show how the new Raise DSL works.
@@ -423,7 +423,31 @@ As we said, we expect the exception to be caught by the `catch` lambda. In fact,
 An exception was thrown: java.lang.IllegalArgumentException: Amount must be positive
 ```
 
-TODO Catch
+What if we want to convert the exception into a typed error? For example, we want to convert the `IllegalArgumentException` into a `NegativeSalary`. Well, we can do it using the `catch` function. Let's change the `RaiseCurrencyConverter.convertUsdToEur` function as follows:
+
+```kotlin
+context (Raise<NegativeSalary>)
+fun convertUsdToEur(amount: Double?): Double = catch ({
+    currencyConverter.convertUsdToEur(amount)
+}) {_: IllegalArgumentException ->
+    raise(NegativeSalary)
+}
+```
+
+The implementation of the `catch` function is quite straightforward:
+
+```kotlin
+// Arrow Kt Library
+@RaiseDSL
+public inline fun <A> catch(block: () -> A, catch: (throwable: Throwable) -> A): A =
+    try {
+        block()
+    } catch (t: Throwable) {
+        catch(t.nonFatalOrThrow())
+    }
+```
+
+As we can see, there's nothing special with the `catch` function. It just catches the exception and calls the `catch` lambda with the exception. The `nonFatalOrThrow` extension function is used to check if the exception is fatal or not. If the exception is fatal, it is rethrown. Otherwise, it is processed. However, no reference to the `Raise<E>` context is present. In fact, it's the call to the `raise` function we did that introduces the reference to the `Raise<E>` context. 
 
 What if we want to convert a computation in the `Raise<E>` context to a function returning an `Either<E, A>`, a `Result<A>`, an `Option<A>` or a `A?`? Well, nothing easier than that. The Arrow library provides all the tools to convert a computation in the `Raise<E>` context to a wrapped type. We can use the `either`, `result`, `option`, and `nullable` builders we saw in the previous articles. In fact, version 1.2.0 of Arrow completely reviewed the implementation of such builders, defining them as wrappers around the `fold` function. 
 
