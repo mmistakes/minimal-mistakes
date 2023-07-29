@@ -6,11 +6,11 @@ gem 'jekyll-admin', group: :jekyll_plugins
 gem 'wdm', '>= 0.1.0'
 gem "webrick", "~> 1.8"
 gem "faraday-retry"
+
 group :jekyll_plugins do
     gem "jekyll"
     gem "jekyll-feed"
     gem "jekyll-seo-tag"
-    gem “jekyll_plugins”
     gem "jekyll-sitemap"
     gem "jekyll-paginate"
     gem "jekyll-include-cache"

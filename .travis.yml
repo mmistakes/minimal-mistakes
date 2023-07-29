@@ -1,8 +1,11 @@
 language: ruby
 cache: bundler
-gemfile: Gemfile
+
 before_install:
   - gem install bundler
+
+gemfile: Gemfile
+
 script:
   - bundle exec jekyll algolia --config _config.yml
 branches:
