@@ -149,18 +149,21 @@ import ciris.circe.circeConfigDecoder
 import io.circe.Decoder
 ...
 
-object ApiConfig:
-    given apiDecoder: Decoder[ApiConfig] = Decoder.instance{h =>
-        for
-            key <- h.get[String]("key")
-            secret <- h.get[String]("secret")
-        yield ApiConfig(key,Secret(secret))
-        }
+object ApiConfig{
+  given apiDecoder: Decoder[ApiConfig] = Decoder.instance { h =>
+    for
+      key <- h.get[String]("key")
+      secret <- h.get[String]("secret")
+    yield ApiConfig(key, Secret(secret))
+  }
 
-    given apiConfigDecoder: ConfigDecoder[String, ApiConfig] =
-        circeConfigDecoder("ApiConfig")
+  given apiConfigDecoder: ConfigDecoder[String, ApiConfig] =
+    circeConfigDecoder("ApiConfig")
+}
 
-val apiConfig: ConfigValue[Effect, ApiConfig] = file(Paths.get("oauth/src/main/resources/apiConfig.json")).as[ApiConfig]
+val apiConfig: ConfigValue[Effect, ApiConfig] = file(
+  Paths.get("oauth/src/main/resources/apiConfig.json")
+).as[ApiConfig]
 ```
 
 This section can be confusing so pay attention, we will start from the bottom up.
@@ -194,21 +197,23 @@ import java.nio.file.Paths
 final case class ServerConfig(hostValue: Host, portValue: Port)
 
 object ServerConfig{
-    given serverDecoder: Decoder[ServerConfig] = Decoder.instance{h =>
-        for
-            hostValue <- h.get[String]("host")
-            portValue <- h.get[String]("port")
-        yield ServerConfig(
-            Host.fromString(hostValue).getOrElse(host"0.0.0.0"),
-            Port.fromString(portValue).getOrElse(port"5555")
-            )
-    }
+  given serverDecoder: Decoder[ServerConfig] = Decoder.instance { h =>
+    for
+      hostValue <- h.get[String]("host")
+      portValue <- h.get[String]("port")
+    yield ServerConfig(
+      Host.fromString(hostValue).getOrElse(host"0.0.0.0"),
+      Port.fromString(portValue).getOrElse(port"5555")
+    )
+  }
 
-    given serverConfigDecoder: ConfigDecoder[String, ServerConfig] =
-        circeConfigDecoder("ServerConfig")
+  given serverConfigDecoder: ConfigDecoder[String, ServerConfig] =
+    circeConfigDecoder("ServerConfig")
 }
 
-val serverConfig: ConfigValue[Effect, ServerConfig] = file(Paths.get("oauth/src/main/resources/serverConfig.json")).as[ServerConfig]
+val serverConfig: ConfigValue[Effect, ServerConfig] = file(
+  Paths.get("oauth/src/main/resources/serverConfig.json")
+).as[ServerConfig]
 ```
 
 The logic for `ServerConfig.scala` is similar to `ApiConfig.scala`, we create a `ServerConfig` case class to hold the configuration data and then a companion object to handle JSON parsing with Ciris. For this section, we use the `fromString()` method available in `Host` and `Port` for our `serverDecoder` and then chain the `getOrElse()` method to set default values for our configuration.
@@ -224,10 +229,10 @@ import cats.syntax.all.*
 final case class Config(api: ApiConfig, server: ServerConfig)
 
 val configuration: ConfigValue[Effect, Config] =
-    (
-        apiConfig,
-        serverConfig
-    ).parMapN(Config.apply)
+  (
+    apiConfig,
+    serverConfig
+  ).parMapN(Config.apply)
 ```
 
 Here the `Config` case class acts as a master configuration class through which we access all the other configurations. In case more configurations are needed, they are eventually added to `Config`.
@@ -243,7 +248,11 @@ Create an `OauthImpl.scala` file with the following path, `src/main/scala/com/xo
 package com.xonal.oAuth
 
 object OauthImpl{
-    final case class GithubResponse(accessToken: String, tokenType: String, scope: String)
+  final case class GithubResponse(
+      accessToken: String,
+      tokenType: String,
+      scope: String
+  )
 }
 ```
 
@@ -258,17 +267,18 @@ import io.circe.parser.decode
 
 object OauthImpl{
   ...
-  private object GithubResponse:
-      given decoder: Decoder[GithubResponse] = Decoder.instance{h =>
-          for
-              access_token <- h.get[String]("access_token")
-              token_type <- h.get[String]("token_type")
-              scope <- h.get[String]("scope")
-          yield GithubResponse(access_token,token_type,scope)
-      }
+  private object GithubResponse{
+    given decoder: Decoder[GithubResponse] = Decoder.instance { h =>
+      for
+        access_token <- h.get[String]("access_token")
+        token_type <- h.get[String]("token_type")
+        scope <- h.get[String]("scope")
+      yield GithubResponse(access_token, token_type, scope)
+    }
+  }
 
-  private def decodeJson(jsonString: String):Either[Error, GithubResponse] =
-      decode[GithubResponse](jsonString)
+  private def decodeJson(jsonString: String): Either[Error, GithubResponse] =
+    decode[GithubResponse](jsonString)
 
 }
 ```
@@ -286,7 +296,10 @@ import org.http4s.*
 object OauthImpl{
   ...
   private def getJsonString[F[_]: Async](req: Request[F]): F[String] =
-      EmberClientBuilder.default[F].build.use(client => client.expect[String](req))
+    EmberClientBuilder
+      .default[F]
+      .build
+      .use(client => client.expect[String](req))
 }
 ```
 
@@ -304,18 +317,21 @@ import org.http4s.headers.{Accept,Authorization}
 
 object OauthImpl{
   ...
-  private def fetchJsonString[F[_]: Async](code: String, config: Config): F[String] = {
+  private def fetchJsonString[F[_]: Async](
+      code: String,
+      config: Config
+  ): F[String] = {
     val form = UrlForm(
-                    "client_id" -> config.api.key,
-                    "client_secret" -> config.api.secret.value,
-                    "code" -> code
-                )
+      "client_id" -> config.api.key,
+      "client_secret" -> config.api.secret.value,
+      "code" -> code
+    )
 
     val req = Request[F](
-        Method.POST,
-        uri"https://github.com/login/oauth/access_token",
-        headers = Headers(Accept(MediaType.application.json))
-        ).withEntity(form)
+      Method.POST,
+      uri"https://github.com/login/oauth/access_token",
+      headers = Headers(Accept(MediaType.application.json))
+    ).withEntity(form)
 
     getJsonString(req)
   }
@@ -331,16 +347,19 @@ We eventually use our `getJsonString()` utility function to send the request and
 ```scala
 object OauthImpl{
   ...
-    private def fetchGithubDetails[F[_]: Async](access_token: String): F[String] = {
-        val req = Request[F](
-            Method.GET,
-            uri"https://api.github.com/user/emails",
-            headers = Headers(
-                Accept(MediaType.application.json),
-                Authorization(Credentials.Token(AuthScheme.Bearer, access_token)))
-            )
-        getJsonString(req)
-    }
+  private def fetchGithubDetails[F[_]: Async](
+      access_token: String
+  ): F[String] = {
+    val req = Request[F](
+      Method.GET,
+      uri"https://api.github.com/user/emails",
+      headers = Headers(
+        Accept(MediaType.application.json),
+        Authorization(Credentials.Token(AuthScheme.Bearer, access_token))
+      )
+    )
+    getJsonString(req)
+  }
 }
 ```
 
@@ -354,13 +373,13 @@ import cats.syntax.all.*
 object OauthImpl{
   ...
   def getOauthResults[F[_]: Async](code: String): F[String] =
-      for
-          config <- configuration.load[F]
-          decodedJson <- fetchJsonString[F](code, config).map(decodeJson(_))
-          githubDetails <- decodedJson match
-              case Right(v) => fetchGithubDetails(v.accessToken)
-              case Left(err) => err.pure[F].map(_.getMessage)
-      yield githubDetails
+    for
+      config <- configuration.load[F]
+      decodedJson <- fetchJsonString[F](code, config).map(decodeJson(_))
+      githubDetails <- decodedJson match
+        case Right(v)  => fetchGithubDetails(v.accessToken)
+        case Left(err) => err.pure[F].map(_.getMessage)
+    yield githubDetails
 }
 ```
 
@@ -386,62 +405,76 @@ import cats.effect.Async
 import org.http4s.*
 import com.xonal.config.{Config, configuration}
 import org.http4s.implicits.uri
-import org.http4s.headers.{Accept,Authorization}
+import org.http4s.headers.{Accept, Authorization}
 import cats.syntax.all.*
 
-object OauthImpl{
-    final case class GithubResponse(accessToken: String, tokenType: String, scope: String)
+object OauthImpl {
+  final case class GithubResponse(
+      accessToken: String,
+      tokenType: String,
+      scope: String
+  )
 
-    private object GithubResponse:
-        given decoder: Decoder[GithubResponse] = Decoder.instance{h =>
-            for
-                access_token <- h.get[String]("access_token")
-                token_type <- h.get[String]("token_type")
-                scope <- h.get[String]("scope")
-            yield GithubResponse(access_token,token_type,scope)
-        }
-
-    private def decodeJson(jsonString: String):Either[Error, GithubResponse] =
-        decode[GithubResponse](jsonString)
-
-    private def getJsonString[F[_]: Async](req: Request[F]): F[String] =
-        EmberClientBuilder.default[F].build.use(client => client.expect[String](req))
-
-    private def fetchJsonString[F[_]: Async](code: String, config: Config): F[String] = {
-        val form = UrlForm(
-                        "client_id" -> config.api.key,
-                        "client_secret" -> config.api.secret.value,
-                        "code" -> code
-                    )
-
-        val req = Request[F](
-            Method.POST,
-            uri"https://github.com/login/oauth/access_token",
-            headers = Headers(Accept(MediaType.application.json))
-            ).withEntity(form)
-
-        getJsonString(req)
+  private object GithubResponse{
+    given decoder: Decoder[GithubResponse] = Decoder.instance { h =>
+      for
+        access_token <- h.get[String]("access_token")
+        token_type <- h.get[String]("token_type")
+        scope <- h.get[String]("scope")
+      yield GithubResponse(access_token, token_type, scope)
     }
+  }
 
-    private def fetchGithubDetails[F[_]: Async](access_token: String): F[String] = {
-        val req = Request[F](
-            Method.GET,
-            uri"https://api.github.com/user/emails",
-            headers = Headers(
-                Accept(MediaType.application.json),
-                Authorization(Credentials.Token(AuthScheme.Bearer, access_token)))
-            )
-        getJsonString(req)
-    }
+  private def decodeJson(jsonString: String): Either[Error, GithubResponse] =
+    decode[GithubResponse](jsonString)
 
-    def getOauthResults[F[_]: Async](code: String): F[String] =
-        for
-            config <- configuration.load[F]
-            decodedJson <- fetchJsonString[F](code, config).map(decodeJson(_))
-            githubDetails <- decodedJson match
-                case Right(v) => fetchGithubDetails(v.accessToken)
-                case Left(err) => err.pure[F].map(_.getMessage)
-        yield githubDetails
+  private def getJsonString[F[_]: Async](req: Request[F]): F[String] =
+    EmberClientBuilder
+      .default[F]
+      .build
+      .use(client => client.expect[String](req))
+
+  private def fetchJsonString[F[_]: Async](
+      code: String,
+      config: Config
+  ): F[String] = {
+    val form = UrlForm(
+      "client_id" -> config.api.key,
+      "client_secret" -> config.api.secret.value,
+      "code" -> code
+    )
+
+    val req = Request[F](
+      Method.POST,
+      uri"https://github.com/login/oauth/access_token",
+      headers = Headers(Accept(MediaType.application.json))
+    ).withEntity(form)
+
+    getJsonString(req)
+  }
+
+  private def fetchGithubDetails[F[_]: Async](
+      access_token: String
+  ): F[String] = {
+    val req = Request[F](
+      Method.GET,
+      uri"https://api.github.com/user/emails",
+      headers = Headers(
+        Accept(MediaType.application.json),
+        Authorization(Credentials.Token(AuthScheme.Bearer, access_token))
+      )
+    )
+    getJsonString(req)
+  }
+
+  def getOauthResults[F[_]: Async](code: String): F[String] =
+    for
+      config <- configuration.load[F]
+      decodedJson <- fetchJsonString[F](code, config).map(decodeJson(_))
+      githubDetails <- decodedJson match
+        case Right(v)  => fetchGithubDetails(v.accessToken)
+        case Left(err) => err.pure[F].map(_.getMessage)
+    yield githubDetails
 
 }
 ```
@@ -460,13 +493,19 @@ import cats.effect.Async
 import fs2.io.file.Path
 
 object GithubRoutes{
-    def githubRoutes[F[_]: Async]: HttpRoutes[F] = {
-        val dsl = Http4sDsl[F]
-        import dsl.{Path as _, *}
-        case request @ GET -> Root / "index.html" =>
-          StaticFile.fromPath(Path("oauth/src/main/scala/com/xonal/index.html"), Some(request))
+  def githubRoutes[F[_]: Async]: HttpRoutes[F] = {
+    val dsl = Http4sDsl[F]
+    import dsl.{Path as _, *}
+    HttpRoutes.of[F] {
+      case request @ GET -> Root / "index.html" =>
+        StaticFile
+          .fromPath(
+            Path("oauth/src/main/scala/com/xonal/index.html"),
+            Some(request)
+          )
           .getOrElseF(NotFound()) // In case the file doesn't exist
     }
+  }
 }
 ```
 
@@ -479,12 +518,13 @@ import com.xonal.oAuth.OauthImpl.getOauthResults
 import cats.syntax.all.*
 
 object GithubRoutes{
-    object GithubTokenQueryParamMatcher extends QueryParamDecoderMatcher[String]("code")
-    def githubRoutes[F[_]: Async]: HttpRoutes[F] = {
+  object GithubTokenQueryParamMatcher
+      extends QueryParamDecoderMatcher[String]("code")
+  def githubRoutes[F[_]: Async]: HttpRoutes[F] = {
       ...
       case GET -> Root / "callback" :? GithubTokenQueryParamMatcher(code) =>
         getOauthResults(code).handleError(_.getMessage).flatMap(Ok(_))
-    }
+  }
 }
 ```
 
@@ -507,21 +547,27 @@ import cats.effect.Async
 import fs2.io.file.Path
 import cats.syntax.all.*
 
-object GithubRoutes{
-    object GithubTokenQueryParamMatcher extends QueryParamDecoderMatcher[String]("code")
+object GithubRoutes {
+  object GithubTokenQueryParamMatcher
+      extends QueryParamDecoderMatcher[String]("code")
 
-    def githubRoutes[F[_]: Async]: HttpRoutes[F] = {
-        val dsl = Http4sDsl[F]
-        import dsl.{Path as _, *}
-        HttpRoutes.of[F]{
-            case request @ GET -> Root / "index.html" =>
-                StaticFile.fromPath(Path("oauth/src/main/scala/com/xonal/index.html"), Some(request))
-                .getOrElseF(NotFound()) // In case the file doesn't exist
-            case GET -> Root / "callback" :? GithubTokenQueryParamMatcher(code) =>
-                getOauthResults(code).handleError(_.getMessage).flatMap(Ok(_))
-        }
+  def githubRoutes[F[_]: Async]: HttpRoutes[F] = {
+    val dsl = Http4sDsl[F]
+    import dsl.{Path as _, *}
+    HttpRoutes.of[F] {
+      case request @ GET -> Root / "index.html" =>
+        StaticFile
+          .fromPath(
+            Path("oauth/src/main/scala/com/xonal/index.html"),
+            Some(request)
+          )
+          .getOrElseF(NotFound()) // In case the file doesn't exist
+      case GET -> Root / "callback" :? GithubTokenQueryParamMatcher(code) =>
+        getOauthResults(code).handleError(_.getMessage).flatMap(Ok(_))
     }
+  }
 }
+
 ```
 
 Now let's create our index.html file in the following path, `oauth/src/main/scala/com/xonal/index.html` and paste the following code.
@@ -556,14 +602,19 @@ import cats.effect.Resource
 import org.http4s.ember.server.EmberServerBuilder
 import org.http4s.server.Server
 
-object ServerUtil{
-    def oauthServer[F[_]: Async](config: Config, service: HttpRoutes[F]): Stream[F, Resource[F, Server]] =
-        Stream(EmberServerBuilder
-                .default[F]
-                .withHost(config.server.hostValue)
-                .withPort(config.server.portValue)
-                .withHttpApp(service.orNotFound)
-                .build)
+object ServerUtil {
+  def oauthServer[F[_]: Async](
+      config: Config,
+      service: HttpRoutes[F]
+  ): Stream[F, Resource[F, Server]] =
+    Stream(
+      EmberServerBuilder
+        .default[F]
+        .withHost(config.server.hostValue)
+        .withPort(config.server.portValue)
+        .withHttpApp(service.orNotFound)
+        .build
+    )
 }
 ```
 
@@ -584,14 +635,17 @@ import com.xonal.config.configuration
 import com.xonal.routes.GithubRoutes.githubRoutes
 import org.http4s.server.Server
 
-object OauthMain extends IOApp{
-    def program[F[_]: Async]: Stream[F, Resource[F,Server]] =
-        for
-            sconfig <- Stream.eval(configuration.load[F])
-            server <- ServerUtil.oauthServer(sconfig, githubRoutes)
-        yield server
+object OauthMain extends IOApp {
+  def program[F[_]: Async]: Stream[F, Resource[F, Server]] =
+    for
+      sconfig <- Stream.eval(configuration.load[F])
+      server <- ServerUtil.oauthServer(sconfig, githubRoutes)
+    yield server
 
-    def run(args: List[String]): IO[ExitCode] = program[IO].compile.last.flatMap(_.get.use(_ => IO.never)).as(ExitCode.Success)
+  def run(args: List[String]): IO[ExitCode] =
+    program[IO].compile.last
+      .flatMap(_.get.use(_ => IO.never))
+      .as(ExitCode.Success)
 }
 ```
 
