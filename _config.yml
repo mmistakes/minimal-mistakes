@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 future                   : true
 locale                   : "ko-KR"
-title                    : "또코딩"
+title                    : "또영's Blog"
 title_separator          : "|"
-subtitle                 : "또영이의 코딩 블로그."
-name                     : "또코딩"
-description              : "또영이의 코딩 블로그(또코딩)."
+subtitle                 : 
+name                     : "또영's Blog"
+description              : "또영이의 코딩 블로그"
 url                      : "https://qwp0.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -105,8 +105,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "또영"
-  avatar           : "/assets/images/스누피.jpeg"
+  name             : #"또영"
+  avatar           : #"/assets/images/스누피.jpeg"
   bio              : 
   location         : 
   email            :
@@ -260,7 +260,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: true
       share: true
       related: true
