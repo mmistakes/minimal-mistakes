@@ -14,7 +14,7 @@ sidebar_main: true
 즉, 웹 브라우저에 내용을 보여주는 텍스트, 이미지, 영상 등의 위치를 표시하는 것을 의미한다.
 
 ## HTML 기본 문법
-![HTML 태그, 요소](/images/2023-07-29-html/HTML 태그, 요소.png)
+![HTML 태그, 요소](/images/2023-07-29-HTML_start/HTML 태그, 요소.png)
 
 - ### 요소(Element)
 
@@ -30,7 +30,7 @@ sidebar_main: true
     - Global Attribut
         - 모든 HTML 요소가 공통으로 사용할 수 있는 속성이다. 몇몇 요소에는 효과가 적용되지 않을 수 있지만 대체로 모든 요소에 사용 가능하다.
     
-    ![global_attributes](/images/2023-07-29-html/global_attributes.png)
+    ![global_attributes](/images/2023-07-29-HTML_start/global_attributes.png)
 
 ## HTML 구조
 ### <!DOCTYPE html>
@@ -57,5 +57,4 @@ sidebar_main: true
 
 ### <body> 태그
 - **웹 브라우저에 내용을 표시**하는 태그
-
 
