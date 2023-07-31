@@ -187,14 +187,7 @@ for i in range(len(data)):
 
         data_array.clear()
         data_array_header.clear()
-        ''' 문자라서 생긴 문제
-        data_array.append("0x{:02x}".format(0x5A))
-        data_array.append("0x{:02x}".format(0xA5))
-        data_array.append("0x{:02x}".format(i_length))
-        data_array.append("0x{:02x}".format(0x82))
-        data_array.append("0x{:02x}".format(int(i_address/0x100)))
-        data_array.append("0x{:02x}".format(i_address%0x100))
-        '''
+
         i_length=3
         if ser.readable(): #시리얼 응답 대기 (정확히 응답 되는지 확인 작업 필요)
            s= ser.read()
