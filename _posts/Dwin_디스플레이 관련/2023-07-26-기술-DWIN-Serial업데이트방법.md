@@ -116,6 +116,146 @@ F4 F5 F6 F7 F8 F9 FA FF C4 00 1F 01 00 03 01 01
 
 5A A5 07 82 00 04 55 AA 5A A5
 
+
+# python 업로드 소스코드 
+
+- 참고
+원격 업데이트.txt 는 41.icl 파일을 비트 단위로 보낸것
+DataBlock.txt 은 보낼 데이터를 파싱하여 정상적으로 만든지 확인 방법
+
+```python
+
+# 시리얼 통신 플로그램 예시
+
+''' 해결 해야하는 문제 
+1. 시리얼 블록 제대로 만들기 (완료)
+- 헤더 만들고 내용물 넣을수 있게 만들기
+2. 주소값 위치 정보 문서 (50% 진행)
+
+3. 원격 업데이트 완료
+
+'''
+import serial
+import time
+
+ser = serial.Serial(port='COM6', baudrate=115200, parity=serial.PARITY_NONE,
+                    stopbits=serial.STOPBITS_ONE, bytesize=serial.EIGHTBITS)
+
+f = open("원격 업데이트.txt", 'r')
+f_write =open("DataBlock.txt",'w')
+
+data =f.readline()
+data =data.split(" ")
+
+count = 0
+data_array_header:list = []
+data_array:list =[]
+
+
+i_length = 3
+i_address = 0x8000
+
+for i in range(len(data)):
+    f_write.write(data[i]+" ")
+    data_array.append(int(data[i],16))
+
+    i_length = i_length +1
+
+    if (i % 16 ==0 and i !=0)  : #줄바꾸기
+        f_write.write("\n")
+
+    if (i)% 240 ==0 and i !=0 : #보내는 블록
+        f_write.write("\n")
+
+        data_array_header.append((0x5A))
+        data_array_header.append((0xA5))
+        data_array_header.append((i_length))
+        data_array_header.append((0x82))
+        if int(i_address/0x100) >=256:
+            data_array_header.append((int(i_address/0x100) -256))
+        else:
+            data_array_header.append((int(i_address/0x100)))
+        data_array_header.append((i_address%0x100))
+
+        data_array = data_array_header+ data_array
+
+        print(data_array)
+        ser.write(bytearray(data_array))
+        #초기화 작업
+        print(i_length)
+        i_address = i_address +int((i_length-3)/2)
+
+        data_array.clear()
+        data_array_header.clear()
+        ''' 문자라서 생긴 문제
+        data_array.append("0x{:02x}".format(0x5A))
+        data_array.append("0x{:02x}".format(0xA5))
+        data_array.append("0x{:02x}".format(i_length))
+        data_array.append("0x{:02x}".format(0x82))
+        data_array.append("0x{:02x}".format(int(i_address/0x100)))
+        data_array.append("0x{:02x}".format(i_address%0x100))
+        '''
+        i_length=3
+        if ser.readable(): #시리얼 응답 대기 (정확히 응답 되는지 확인 작업 필요)
+           s= ser.read()
+    
+    if (i+1 == len(data)): # 마지막인 경우
+        data_array_header.append((0x5A))
+        data_array_header.append((0xA5))
+        data_array_header.append((i_length))
+        data_array_header.append((0x82))
+        if int(i_address/0x100) >=256:
+            data_array_header.append((int(i_address/0x100) -256))
+        else:
+            data_array_header.append((int(i_address/0x100)))
+        data_array_header.append((i_address%0x100))
+        
+        data_array = data_array_header+ data_array
+
+        print(data_array)
+        ser.write(bytearray(data_array))
+        print(i_length)
+        i_length=3
+
+  
+
+f.close()   
+f_write.close()
+
+#끝났다는것 알려주는 신호
+data_array.clear()
+
+data_array.append(0x5A)
+data_array.append(0xA5)
+data_array.append(0x0F)
+data_array.append(0x82)
+data_array.append(0x00)
+data_array.append(0xAA)
+data_array.append(0x5A)
+data_array.append(0x02)
+data_array.append(0x01)  #42.icl 주소 0150 #41.icl 0148
+data_array.append(0x48)  # 41*8 주소 
+data_array.append(0x80)
+data_array.append(0x00)
+data_array.append(0x00)
+data_array.append(0x14)
+data_array.append(0x00)
+data_array.append(0x00)
+data_array.append(0x00)
+data_array.append(0x00)
+
+ser.write(bytearray(data_array))
+
+
+if ser.readable(): #시리얼 응답 대기 (정확히 응답 되는지 확인 작업 필요)
+    s= ser.read()
+    
+values = bytearray([0x5a,0xa5 ,0x07 ,0x82, 0x00, 0x84, 0x5a, 0x01, 0x00, 0x01])  #시스템 리부팅
+ser.write(values)
+
+
+```
+
 # 참고 자료
 1. 유투브 영상
 https://www.youtube.com/watch?v=5a3kzkY-joo
