@@ -498,6 +498,31 @@ public interface Raise<in Error> {
 
 The `bind()` function simply calls the `raise` function if the `Either` instance is a `Left`, otherwise it returns the value wrapped by the `Right` instance. As we saw at the beginning of this section, the `raise()` function is defined in the context of the `Raise<E>` type. As we can see from its definition, also `bind()` needs a `Raise<E>` context. For this reason, calling `bind()` adds the `Raise<E>` context to the resulting function.
 
+On the contrary, if we are not interested in the type of the logical error but only in the fact that an error occurred, we can transform a computation in the `Raise<E>` context to a `Option<A>` or into a nullable object. Let's start with the `Option<A>` case.
+
+First, we need to introduce how the builder for the `Option<A>` type is defined:
+
+```kotlin
+// Arrow Kt Library
+public inline fun <A> option(block: OptionRaise.() -> A): Option<A> =
+    fold({ block(OptionRaise(this)) }, ::identity, ::Some)
+```
+
+Despite the implementation using the `fold` function, the `option` builder is defined on a specific implementation of the `Raise<E>` type, the `OptionRaise` class. The `OptionRaise` class is defined as follows:
+
+```kotlin
+// Arrow Kt Library
+public class OptionRaise(private val raise: Raise<None>) : Raise<None> by raise
+```
+
+What does it mean? Well, we can only raise a `None` inside a `OptionRaise` context. We can't raise a typed error. Probably, the library is designed in this way to avoid to accidentally lose the error information. So, there is no chance to convert a `Raise<E>` context to an `Option<A>` type. We can only convert a `Raise<None>` context to an `Option<A>` type.
+
+For example, say we want to add a method to the `JobService` class that retrieves the salary associated with a `JobId`. If the `JobId` is not valid, we want to return `None`. For what we said, we can't use the `findById` function we defined in the `Jobs` module, but we need to implement a new version of it::
+
+```kotlin
+TODO
+```
+
 The conversion between a `Result<A>` and a `Raise<E>` is a little more tricky. In fact, the `Result<A>` type uses as error type the `Throwable` type. Hence, we can convert it only to a `Raise<Throwable>` type. The case is so special that the Arrow library provides a dedicated implementation of the `Raise<E>` interface, the `ResultRaise` class:
 
 ```kotlin
