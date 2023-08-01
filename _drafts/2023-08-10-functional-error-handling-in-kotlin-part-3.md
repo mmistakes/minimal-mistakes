@@ -565,6 +565,47 @@ public class OptionRaise(private val raise: Raise<None>) : Raise<None> by raise 
 }
 ```
 
+Another option we have to discard the error information is to convert a `Raise<E>` context to a nullable object. The builder for the nullable object is called `nullable` and is defined as:
+
+```kotlin
+// Arrow Kt Library
+public inline fun <A> nullable(block: NullableRaise.() -> A): A? =
+    merge { block(NullableRaise(this)) }
+```
+
+As we can see, we have another dedicated implementation of the `Raise` interface, called `NullableRaise`. The `NullableRaise` class is defined as:
+
+```kotlin
+// Arrow Kt Library
+public class NullableRaise(private val raise: Raise<Null>) : Raise<Null> by raise
+```
+
+The `NullableRaise` represents a context where the error is represented using a `null` value. Let's play with it. Say we want to add a new version of the `findById` function to the `Jobs` module. If the `JobId` is not valid, we want to return `null` this time Let's call the new function `findByIdWithNullable`:
+
+```kotlin
+interface Jobs {
+    // Omissis
+    context (NullableRaise)
+    fun findByIdWithNullable(id: JobId): Job
+}
+```
+
+Here is its implementation:
+
+```kotlin
+class LiveJobs : Jobs {
+    // Omissis
+    context(NullableRaise)
+    override fun findByIdWithNullable(id: JobId): Job {
+        return JOBS_DATABASE[id] ?: raise(null)
+    }
+}
+```
+
+As we should notice, the function doesn't return a nullable type. We represent the possible nullability of the result with the `NullableRaise` context. In this way, working with nullable types becomes very easy, since we don't have to deal with `?.` notation and Elvis operators.
+
+TODO
+
 The conversion between a `Result<A>` and a `Raise<E>` is a little more tricky. In fact, the `Result<A>` type uses as error type the `Throwable` type. Hence, we can convert it only to a `Raise<Throwable>` type. The case is so special that the Arrow library provides a dedicated implementation of the `Raise<E>` interface, the `ResultRaise` class:
 
 ```kotlin
