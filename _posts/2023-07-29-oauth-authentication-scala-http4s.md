@@ -1,5 +1,5 @@
 ---
-title: "Oauth Authentication in Scala with Http4s"
+title: "OAuth Authentication in Scala with Http4s"
 date: 2023-07-27
 header:
   image: "/images/blog cover.jpg"
@@ -9,9 +9,9 @@ toc: true
 toc_label: "In this article"
 ---
 
-## Introduction
+## 1. Introduction
 
-This is a follow up to the [Two Factor Authentication](https://blog.rockthejvm.com/otp-authentication-scala-http4s/) article that wass written earlier, and as such is the third article in the series.
+This is a follow-up to the [Two Factor Authentication](https://blog.rockthejvm.com/otp-authentication-scala-http4s/) article that was written earlier, and as such is the third article in the series.
 
 OAuth which stands for Open Authorization is an open standard framework that allows the user to permit a website or application to interact with another without giving up his or her password.
 
@@ -22,13 +22,13 @@ OAuth which stands for Open Authorization is an open standard framework that all
 1. The authorization server on app2 will respond with a token id and an access token
 1. app1 can now request the user's information from app2's API using the access token.
 
-The OAuth standard is defined under [RFC 6749](https://www.ietf.org/rfc/rfc6749.txt), here we'll find an in-depth explanation of how the framework works.
+The OAuth standard is defined under [RFC 6749](https://www.ietf.org/rfc/rfc6749.txt), here we'll find an in-depth explanation of how the mechanism works.
 
-## Accessing the Github API through OAuth.
+## 2. Accessing the Github API through OAuth.
 
-### Setting Up.
+### 2.1. Setting Up.
 
-In this section, we'll build an application that connects to GitHub using OAuth and requests user's information using the GitHub API.
+In this section, we'll build an application that connects to GitHub using OAuth and request user information using the GitHub API.
 
 To build this application we will need to add the following to our build.sbt file:
 
@@ -65,9 +65,9 @@ val circeLibs =  Seq(
   )
 ```
 
-We'll be using Scala 3 for this tutorial however one can still use Scala 2.13 with minimal code changes.
+We use Scala 3 in this tutorial, if you need to use Scala 2.13, you can do so with minimal code changes.
 
-### Registering our OAuth App on GitHub.
+### 2.2. Registering our OAuth App on GitHub.
 
 Before we dive into Scala code, we need to register our application on github.com, Github will provide us with important credentials relevant for our app to function.
 
@@ -95,7 +95,7 @@ Follow the following steps to register our app with GitHub:
 
 1. Click the update application button at the bottom of the page.
 
-### Configuring our application.
+### 2.3. Configuring our application.
 
 In the following sections, we'll build our Scala application using [Http4s](https://blog.rockthejvm.com/http4s-tutorial/) for the routing and serving the application, Circe for JSON parsing, and Ciris for configuration.
 
@@ -123,7 +123,7 @@ We will be using Ciris for configuration in the coming section. At this point, o
 
 ![directory](../images/oauth/dir1.png)
 
-Let's create an `ApiConfig.scala` file in the following path, `src/main/scala/com/xonal/config/ApiConfig.scala` and add the following code.
+Let's create an `ApiConfig.scala` file in the following path, `src/main/scala/com/xonal/config/ApiConfig.scala`, and add the following code.
 
 ```scala
 package com.xonal.config
@@ -134,7 +134,7 @@ final case class ApiConfig(key: String, secret: Secret[String])
 
 The `ApiConfig` final case class will hold the `key` and `secret` values when retrieved from `apiConfig.json`. Ciris provides a `Secret` class that replaces our `secret` value with the first 7 characters of the SHA-1 hash, convenient for passing around sensitive details within our application.
 
-When handling configuration with Ciris, values are passed around as `ConfigValue`s. Here's how the official ciris website defines a ConfigValue:
+When handling configuration with Ciris, values are passed around as `ConfigValue`s. Here's how the official Ciris website defines a ConfigValue:
 
 > "`ConfigValue` is the central concept in the library. It represents a single configuration value or a composition of multiple values."
 
@@ -166,7 +166,7 @@ val apiConfig: ConfigValue[Effect, ApiConfig] = file(
 ).as[ApiConfig]
 ```
 
-This section can be confusing so pay attention, we will start from the bottom up.
+This section can be confusing, so we'll explain starting from the bottom.
 
 The value `apiConfig` is of type `ConfigValue[Effect, ApiConfig]` which is the format we will use passing config values. `Ciris` provides a `file()` function that takes the path to our configuration file. This function returns a type `ConfigValue[Effect, String]`, we use the `as()` function to convert our value to a `ConfigValue[Effect, ApiConfig]` type however it requires an implicit `ConfigDecoder` value, here's the function signature:
 
@@ -238,7 +238,7 @@ val configuration: ConfigValue[Effect, Config] =
 Here the `Config` case class acts as a master configuration class through which we access all the other configurations. In case more configurations are needed, they are eventually added to `Config`.
 We use the `parMapN()` method to add the `serverConfig` and `apiConfig` configurations to the `Config` apply method.
 
-### OAuth application logic.
+### 2.4. OAuth application logic.
 
 In this section, we'll define `OauthImpl` which is an object that will house all the OAuth implementation logic for the application.
 
@@ -479,7 +479,7 @@ object OauthImpl {
 }
 ```
 
-### The application routes.
+### 2.5. The application routes.
 
 The next step is to define routes for our application. Let's create `AppRoutes.scala` in the following path, `oauth/src/main/scala/com/xonal/routes/AppRoutes.scala`.
 In this section we will define two routes, the first will show our landing page which will be static HTML and the second will handle the call back from GitHub after the user authorizes our Oauth application.
@@ -585,9 +585,9 @@ Now let's create our index.html file in the following path, `oauth/src/main/scal
 </html>
 ```
 
-This HTML page prompts the user to click the link to receive his or her GitHub details. The link contains a scope and client_id as URL parameters. When the user clicks the link, he or she will be directed to GitHub and asked to sign in if not already. The user will then be prompted to authorize our oauth app with the defined scope, after which GitHub will redirect the user to the above callback route.
+This HTML page prompts the user to click the link to receive his or her GitHub details. The link contains a scope and client_id as URL parameters. When the user clicks the link, he or she will be directed to GitHub and asked to sign in if not already. The user will then be prompted to authorize our OAuth app with the defined scope, after which GitHub will redirect the user to the above callback route.
 
-### The application server.
+### 2.6. The application server.
 
 In this section, we'll work on the server. Create a `ServerUtil.scala` file in the following path, `oauth/src/main/scala/com/xonal/server/ServerUtil.scala` and add the following code.
 
@@ -621,7 +621,7 @@ object ServerUtil {
 The `ServerUtil` object contains the `oauthServer()` function which takes `Config` and `HttpRoutes[F]` as parameters and returns a `Stream[F, Resource[F, Server]]`. The reason for wrapping our `Resource` in a `Stream` will become evident in the next section.
 We configure our server using `EmberServerBuilder` and pass it host and port values as `config.server.hostValue` and `config.server.portValue` respectfully. It also takes our `service` as a parameter through the `withHttpApp()` method.
 
-### The applications entry point.
+### 2.7. The application's entry point.
 
 In this last section, we create our main function. Create a file called `OauthMain.scala` and save it in the following path, `oauth/src/main/scala/com/xonal/OauthMain.scala`. Add the following code.
 
@@ -659,7 +659,7 @@ We can now run the application and then navigate to `localhost:8080/index.html` 
 
 ![index](../images/oauth/indexpage.png)
 
-When you click the link, you will be redirected to github and prompted to authorize our OauthHttp4s app.
+When you click the link, you will be redirected to GitHub and prompted to authorize our OauthHttp4s app.
 
 ![permission](../images/oauth/authorize.png)
 
@@ -667,6 +667,6 @@ Once authorization is provided, you will be redirected to our application with a
 
 ![response](../images/oauth/response.png)
 
-## Conclusion
+## 3. Conclusion
 
-We have learnt about OAuth, and how to connect an application to another using this framework protocal, once you have learnt the OAuth [flow](https://auth0.com/docs/get-started/authentication-and-authorization-flow/which-oauth-2-0-flow-should-i-use), implementing it becomes non-trivial. For more information on GitHub's web application flow, check out this [link](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps). You can find the full code on my [GitHub](https://github.com/hkateu/MyHttp4sCode/tree/main/oauth/src/main) page.
+We have learned about OAuth, and how to connect an application to another using this framework protocol. Once you are familiar with the OAuth [flow](https://auth0.com/docs/get-started/authentication-and-authorization-flow/which-oauth-2-0-flow-should-i-use), implementing it becomes non-trivial. For more information on GitHub's web application flow, check out this [link](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps). You can find the full code on my [GitHub](https://github.com/hkateu/MyHttp4sCode/tree/main/oauth/src/main) page.
