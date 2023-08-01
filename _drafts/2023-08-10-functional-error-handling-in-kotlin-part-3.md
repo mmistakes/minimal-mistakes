@@ -467,14 +467,14 @@ In our domain, we can implement a function that retrieves the Company associated
 class JobsService(private val jobs: Jobs) {
     // Omissis
     fun company(jobId: JobId): Either<JobError, Company> = either {
-        jobs.findById(jobId)
-    }.map { job ->
-        job.company
+        jobs.findById(jobId).company
     }
 }
 ```
 
-Here, the `either` builder creates the context of type `Raise<JobError>`, handling it properly. It's possible also to make the backward conversion, from an `Either<E, A>` to a `Raise<E>`, using the `bind` function. In the `JobService` module we can add the following function:
+Here, the `either` builder creates the context of type `Raise<JobError>`, handling it properly. Please, praise the simplicity and the total absence of boilerplate code, like calls to `map` functions or `when` expressions.
+
+It's possible also to make the backward conversion, from an `Either<E, A>` to a `Raise<E>`, using the `bind` function. In the `JobService` module we can add the following function:
 
 ```kotlin
 context (Raise<JobError>)
@@ -517,11 +517,37 @@ public class OptionRaise(private val raise: Raise<None>) : Raise<None> by raise
 
 What does it mean? Well, we can only raise a `None` inside a `OptionRaise` context. We can't raise a typed error. Probably, the library is designed in this way to avoid to accidentally lose the error information. So, there is no chance to convert a `Raise<E>` context to an `Option<A>` type. We can only convert a `Raise<None>` context to an `Option<A>` type.
 
-For example, say we want to add a method to the `JobService` class that retrieves the salary associated with a `JobId`. If the `JobId` is not valid, we want to return `None`. For what we said, we can't use the `findById` function we defined in the `Jobs` module, but we need to implement a new version of it::
+For example, say we want to add a method to the `JobService` class that retrieves the salary associated with a `JobId`. If the `JobId` is not valid, we want to return `None`. For what we said, we can't use the `findById` function we defined in the `Jobs` module, but we need to implement a new version of it. Let's call it `findByIdWithOption`:
 
 ```kotlin
-TODO
+interface Jobs {
+    // Omissis
+    context (Raise<None>)
+    fun findByIdWithOption(id: JobId): Job
+}
 ```
+
+The implementation is quite straightforward:
+
+```kotlin
+class LiveJobs : Jobs {
+    // Omissis
+    context (Raise<None>)
+    override fun findByIdWithOption(id: JobId): Job {
+        return JOBS_DATABASE[id] ?: raise(None)
+    }
+}
+```
+
+As we said, in case of error we'll raise a `None` object, since we're not interested in the error happened. Now, we can use the new `findByIdWithOption` function in the `JobService` module to get the salary associated with a `JobId`. We want the new function to return an `Option<Salary>` type. We can use the `option` builder to do that:
+
+```kotlin
+fun salary(jobId: JobId): Option<Salary> = option { 
+    jobs.findByIdWithOption(jobId).salary
+}
+```
+
+As we saw for the `Either` case, the code is linear, easy to understand and maintain.
 
 The conversion between a `Result<A>` and a `Raise<E>` is a little more tricky. In fact, the `Result<A>` type uses as error type the `Throwable` type. Hence, we can convert it only to a `Raise<Throwable>` type. The case is so special that the Arrow library provides a dedicated implementation of the `Raise<E>` interface, the `ResultRaise` class:
 
