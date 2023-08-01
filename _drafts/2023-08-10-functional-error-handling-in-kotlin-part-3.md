@@ -547,7 +547,23 @@ fun salary(jobId: JobId): Option<Salary> = option {
 }
 ```
 
-As we saw for the `Either` case, the code is linear, easy to understand and maintain.
+As we saw for the `Either` case, the code is linear, easy to understand and maintain. We can revert the conversion from an `Option<A>` to a `Raise<None>` context using the `bind` function:
+
+```kotlin
+context (OptionRaise)
+fun salaryWithRaise(jobId: JobId): Salary = salary(jobId).bind()
+```
+
+Be aware that the `bind` function is defined in the context of the `OptionRaise` type. The `bind` function is defined as:
+
+```kotlin
+// Arrow Kt Library
+public class OptionRaise(private val raise: Raise<None>) : Raise<None> by raise {
+    // Omissis
+    @RaiseDSL
+    public fun <A> Option<A>.bind(): A = getOrElse { raise(None) }
+}
+```
 
 The conversion between a `Result<A>` and a `Raise<E>` is a little more tricky. In fact, the `Result<A>` type uses as error type the `Throwable` type. Hence, we can convert it only to a `Raise<Throwable>` type. The case is so special that the Arrow library provides a dedicated implementation of the `Raise<E>` interface, the `ResultRaise` class:
 
