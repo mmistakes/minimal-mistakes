@@ -17,7 +17,7 @@ access data and not only through URLs, across the web.
 
 ## 2. Setting Up
 
-Let's start by adding our dependency on our sbt files. 
+Let's start by adding our dependencies on our sbt files. 
 
 On `plugins.sbt` add the following plugins. PlayScala plugin defines default settings for Scala-based applications. 
 
@@ -173,6 +173,7 @@ case class RepositoryError(message: String)
 ```
 ## 3.2 Managers
 On this layer we define our managers. Usually containing logic to manage other resources like repositories, transactions, connections, security etc and contains business logic (here is too simple) of our application.
+
 Here we define a simple manager for car entities:
 ![alt "Managers structure"](../images/play-rest-api/managers_structure.jpeg)
 ```scala
@@ -252,6 +253,62 @@ object CarDTO{
 ```
 We use this pattern cause we want each layer to be independent from the layer below.
 
+The example in the code above is very simple because we simply invoke methods from the repository. But assume we also wanted to keep track of the most popular cars that were requested (so that the marketing department can do their thing with the data), so we'd do some more than just fetching the cars from the database. We could keep for example a field on our database entity for how many sales does a car model do in a month. We would then modify our manager to fetch the cars and order them by the new sales field. 
+
+Below you can see how our entity and manager would change. We add the filed for sales on our entity. We modify the trait of our manager and add the method for retrieving the cars ordered by sales field.
+
+```scala
+case class Car(id: Long, brand: String, model: String, cc: Int, sales: Long)
+
+trait Manager{
+  def get(id: Long): Either[ManagerError, Option[CarDTO]]
+  def save(car: CarDTO): Either[ManagerError, CarDTO]
+  def update(car: CarDTO): Either[ManagerError, Unit]
+  def delete(car: CarDTO): Either[ManagerError, Unit]
+  def getAll(): Either[ManagerError, List[CarDTO]]
+  def getCarsOrderedBySales(): Either[ManagerError, List[CarDTO]]
+}
+
+class CarManager(repository: CarRepository) extends Manager {
+  override def get(id: Long): Either[ManagerError, Option[CarDTO]] =
+    repository
+      .findById(id)
+      .fold(error => Left(toManagerError(error)), car => Right(car.map(_.toDTO())))
+
+
+
+  override def save(carDTO: CarDTO): Either[ManagerError, CarDTO] =
+    repository
+      .save(carDTO.toDB())
+      .fold(error => Left(toManagerError(error)), car => Right(car.toDTO()))
+
+
+  override def update(carDTO: CarDTO): Either[ManagerError, Unit] =
+    repository
+      .update(carDTO.toDB())
+      .fold(error => Left(toManagerError(error)), _ => Right(()))
+
+  override def delete(carDTO: CarDTO): Either[ManagerError, Unit] =
+    repository
+      .delete(carDTO.id.getOrElse(0L))
+      .fold(error => Left(toManagerError(error)), _ => Right(()))
+
+  override def getAll(): Either[ManagerError, List[CarDTO]] =
+    repository
+      .findAll()
+      .fold(error => Left(toManagerError(error)), carList => Right(carList.map(_.toDTO())))
+
+  override def getCarsOrderedBySales(): Either[ManagerError, List[CarDTO]] =
+    repository
+      .findAll()
+      .sortBy(_.sales)
+      .reverse
+      .fold(error => Left(toManagerError(error)), carList => Right(carList.map(_.toDTO())))
+
+  private def toManagerError(repositoryError: RepositoryError) = ManagerError(repositoryError.message)
+
+}
+```
 ## 3.3 Controllers
 This is the layer where we define ouρ APIs public endpoints.
 
@@ -325,10 +382,21 @@ class HomeController(val carManager: CarManager, val controllerComponents: Contr
 }
 ```
 
-We use the Action Component that is a function of type Request => Result. The component receives an http request and after we pass this through all our layers and transformations our application responts with a valid http response or a respective error code with an informative message.
+[Actions](https://www.playframework.com/documentation/2.8.x/ScalaActions) are the building block for Play framework. It is the way the web client makes an HTTP request and receives back an HTTP Response.
+An Action is essentially a Request[A] => Result function that handles the communication with the web client. The A type parameter represents the type of the request body.
+Actions provide some minimum operations on the Requests like providing a parser for the body. Depending on the content type of our request (json, xml etc) we can implement how our application will decode the Requests body, by providing a [BodyParser](https://www.playframework.com/documentation/2.8.x/JavaBodyParsers#What-is-a-body-parser?) to our Action. We have for free the DefaultBodyParsers that can handle any common type of request body(text/plain, application/json, application/xml, application/text-xml, application/XXX+xml, application/x-www-form-urlencoded, multipart/form-data)
+On Actions we implement the `apply` function that contains the logic we apply on a request to get the desired result back. 
+```scala
+ val echo = Action { request =>
+   Ok("Got request [" + request + "]")
+ }
+```
+In the above example taken for play frameworks documentation we see how we can implement a simple echo Action that return an HTTP `200 OK` response with the request as the content of the response.
 
-We can define our own Actions throw ActionBuilders as we do with CarAction on CarActions trait.
+We usually use [ActioBuilder](https://www.playframework.com/documentation/2.8.x/ScalaActionsComposition#Custom-action-builders), as we do on our project, to create chainnable `Actions` composing the apply function of each one. This is especially helpful if we want to compose together common logic to many different actions.
+We could have for example a LogginAction that could log any useful information we want for our `Actions`. 
 
+Below we define our simple Actions to implement our application.
 ```scala
 package controllers.actions
 
@@ -642,7 +710,7 @@ class RestApiComponents(context: ApplicationLoader.Context)
   override def httpFilters: Seq[EssentialFilter] = super.httpFilters
 }
 ```
-We combine the ManagerComponets and RepositoryComponents and we have our instances with minimum effort to initialize them. For this example this is an over engineered change, but in a more complex project this could be very usefull.
+We combine the ManagerComponets and RepositoryComponents and we have our instances with minimum effort to initialize them. For this example this is an over engineered change, but in a more complex project this could be very useful.
 
 We need to add the framework dependency on build.sbt
 ```scala
