@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "5/4"
+title:  "5/4 program counter"
 categories: [OS, 끄적끄적]
 tag: OS
 toc: true

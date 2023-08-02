@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "5/13"
+title:  "5/13 운영체제"
 categories: [OS, 끄적끄적]
 tag: OS
 toc: true

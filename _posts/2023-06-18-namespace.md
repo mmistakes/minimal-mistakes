@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "6/9"
+title:  "6/9 namespace"
 categories: [끄적끄적, Programming, C++]
 tag: [Programming, C++, 알고리즘]
 toc: true
