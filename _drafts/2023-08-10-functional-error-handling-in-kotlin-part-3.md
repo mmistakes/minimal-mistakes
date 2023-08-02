@@ -643,6 +643,26 @@ public class NullableRaise(private val raise: Raise<Null>) : Raise<Null> by rais
 
 The `contract` defined in the first line of the gives the hint to the compiler that if the `bind` function returns then the receiver object is not null for sure.
 
+Finally, we saw in the previous article that the Arrow library lets us easily convert an `Option<A>` to nullable type. This sentence stands true also in case of a `Raise<E>` context. In fact, we can convert an `Option<A>` to a function in the `NullableRaise` context using a dedicated `bind` function:
+
+```kotlin
+// Arrow Kt Library
+public class NullableRaise(private val raise: Raise<Null>) : Raise<Null> by raise {
+    // Omissis
+    @RaiseDSL
+    public fun <A> Option<A>.bind(): A = getOrElse { raise(null) }
+}
+```
+
+If we want to apply this function to our example, we can rewrite the `salary` function as:
+
+```kotlin
+context (NullableRaise)
+fun salaryWithNullableRaise(jobId: JobId): Salary = salary(jobId).bind()
+```
+
+Remember that the original `salary` function returns an `Option<Salary`.
+
 The conversion between a `Result<A>` and a `Raise<E>` is a little more tricky. In fact, the `Result<A>` type uses as error type the `Throwable` type. Hence, we can convert it only to a `Raise<Throwable>` type. The case is so special that the Arrow library provides a dedicated implementation of the `Raise<E>` interface, the `ResultRaise` class:
 
 ```kotlin
