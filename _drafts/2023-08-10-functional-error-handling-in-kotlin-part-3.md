@@ -602,9 +602,46 @@ class LiveJobs : Jobs {
 }
 ```
 
-As we should notice, the function doesn't return a nullable type. We represent the possible nullability of the result with the `NullableRaise` context. In this way, working with nullable types becomes very easy, since we don't have to deal with `?.` notation and Elvis operators.
+As we should notice, the function doesn't return a nullable type. We represent the possible nullability of the result with the `NullableRaise` context. As we said, in case of logical error, we raised a `null` value. 
 
-TODO
+Now, it's time to convert the `Raise<Null>` context to a nullable object. As we said, we can use the `nullable` builder to do that. For example, we'll add a function to the `JosService` module to retrieve the role of a `JobId`, or `null` if the `JobId` is not valid:
+
+```kotlin
+class JobsService(private val jobs: Jobs, private val converter: CurrencyConverter) {
+    // Omissis
+    fun role(jobId: JobId): Role? = nullable {
+        jobs.findByIdWithNullable(jobId).role
+    }
+}
+```
+
+Working with nullable types in this way becomes very easy, since we don't have to deal with `?.` notation and Elvis operators. Note that to access the `role` property of the job we didn't need to use the `?.` operator, since the nullability is expressed by the `NullableRaise` context. 
+
+As we did for the previous wrapper types, we can revert the conversion from a nullable object to a `NullableRaise` context using the `bind` function:
+
+```kotlin
+class JobsService(private val jobs: Jobs, private val converter: CurrencyConverter) {
+    // Omissis
+    context (NullableRaise)
+    fun roleWithRaise(jobId: JobId): Role = role(jobId).bind()
+}
+```
+
+It's worth noting that the `bind` function returns a computation ending with a non-nullable type. In our case, the return type of the `roleWithRaise` function is `Role`, and not `Role?` as in the original `role` function. The `bind` behavior is due to it's implementation:
+
+```kotlin
+// Arrow Kt Library
+public class NullableRaise(private val raise: Raise<Null>) : Raise<Null> by raise {
+    // Omissis
+    @RaiseDSL
+    public fun <A> A?.bind(): A {
+        contract { returns() implies (this@bind != null) }
+        return this ?: raise(null)
+    }
+}
+```
+
+The `contract` defined in the first line of the gives the hint to the compiler that if the `bind` function returns then the receiver object is not null for sure.
 
 The conversion between a `Result<A>` and a `Raise<E>` is a little more tricky. In fact, the `Result<A>` type uses as error type the `Throwable` type. Hence, we can convert it only to a `Raise<Throwable>` type. The case is so special that the Arrow library provides a dedicated implementation of the `Raise<E>` interface, the `ResultRaise` class:
 
