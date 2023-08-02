@@ -49,10 +49,12 @@ Please sign both contracts (one for you, the other is needed for my taxes, so le
 
 ![table](/assets/images/checkin/table-1.jpg)
 
+Inside the 3d printer there is a security camera I have already disconnected and turned off for you, so your privascy.
+
 For any needs or concerns, you can contact me through the **AirBnb app** or at **+39 348 2201 205**
 
 Enjoy your stay!
-
+Nicola
 
 
 
