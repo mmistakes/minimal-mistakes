@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <title>SingePendulum</title>
+</head>
+<body>
+    <script>
+        
+    let angle;
+    let bob;
+    let len;
+    let origin;
+    let w = 0;
+    let a = 0;
+    let gravity;
+
+    function setup() {
+        createCanvas(600, 400);
+        origin = createVector(300, 0);
+        angle = PI/4;
+        bob = createVector();
+        len = 200;    
+    }
+
+    function draw() {
+        background(0);
+  
+        gravity = 100;
+        a = -1 * gravity * sin(angle) / (len*len);
+        w += a;
+        angle += w;
+  
+        bob.x = len * sin(angle) + origin.x;
+        bob.y = len * cos(angle) + origin.y;
+  
+        stroke(255);
+        strokeWeight(8);
+        fill(127);
+        line(origin.x,origin.y,bob.x,bob.y);
+        circle(bob.x,bob.y,64);
+  
+    }
+    </script>
+</body>
+</html>
