@@ -45,7 +45,9 @@ Once inside the house you will find on the table:
 * CITY TAX recipt
 * House manual
 
-Please sign both 2 contracts (one for you, the other is needed for my taxes).
+Please sign both contracts (one for you, the other is needed for my taxes, so leave it in the apartment when you check out).
+
+![table](/assets/images/checkin/table-1.jpg)
 
 For any needs or concerns, you can contact me through the **AirBnb app** or at **+39 348 2201 205**
 
