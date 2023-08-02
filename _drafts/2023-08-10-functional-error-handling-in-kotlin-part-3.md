@@ -663,15 +663,68 @@ fun salaryWithNullableRaise(jobId: JobId): Salary = salary(jobId).bind()
 
 Remember that the original `salary` function returns an `Option<Salary`.
 
-The conversion between a `Result<A>` and a `Raise<E>` is a little more tricky. In fact, the `Result<A>` type uses as error type the `Throwable` type. Hence, we can convert it only to a `Raise<Throwable>` type. The case is so special that the Arrow library provides a dedicated implementation of the `Raise<E>` interface, the `ResultRaise` class:
+Last but not lease, we have the `Result<A>` wrapper type. As you may remember from the [previous article of the series](https://blog.rockthejvm.com/functional-error-handling-in-kotlin-part-2/), the `Result<A>` uses subclasses of `Throwable` to represent the error information. In fact, the Arrow library has got an implementation of the `Raise<E>` interface for the `Result<A>` type. which uses `Throwable` for the `E` type variable. The `ResultRaise` class is defined as:
 
 ```kotlin
 // Arrow Kt Library
 public class ResultRaise(private val raise: Raise<Throwable>) : Raise<Throwable> by raise
 ```
 
+To see it in action, we can change the function `convertUsdToEur` we defined in the `RaiseCurrencyConverter` class, letting it raise an exception in case of error instead of a logical typed error:
 
+```kotlin
+class RaiseCurrencyConverter(private val currencyConverter: CurrencyConverter) {
+    // Omissis
+    context (ResultRaise)
+    fun convertUsdToEurRaiseException(amount: Double?): Double = catch({
+        currencyConverter.convertUsdToEur(amount)
+    }) { ex: IllegalArgumentException ->
+        raise(ex)
+    }
+}
+```
 
+You may remember that the `currencyConverter.convertUsdToEur(amount)` statement throws an exception in case of negative or `null` amount. As we may expect, we have also a builder function to convert a computation in the `ResultRaise` context to a `Result<A>` object. It's called `result` and it's defined as:
+
+```kotlin
+// Arrow Kt Library
+public inline fun <A> result(block: ResultRaise.() -> A): Result<A> =
+    fold({ block(ResultRaise(this)) }, Result.Companion::failure, Result.Companion::failure, Result.Companion::success)
+```
+
+The definition is a bit cumbersome due to the definition of the two possible values of a `Result<A>` object. Despite the look, the `result` function is very easy to use. If we want to convert the `convertUsdToEurRaiseException` function to a `Result<A>` object, we can write:
+
+```kotlin
+fun main() {
+    val converter = RaiseCurrencyConverter(CurrencyConverter())
+    val maybeSalaryInEur: (Double) -> Result<Double> = { salary: Double ->
+        result {
+            converter.convertUsdToEurRaiseException(salary)
+        }
+    }
+}
+```
+
+Here, we used lambda expression to avoid adding a useless function in the `JobService` class. Obviously, it's possible to convert back a `Result<A>` object to a function in the `ResultRaise` context using the `bind` function:
+
+```kotlin
+val maybeSalaryInEurRaise: context(ResultRaise) (Double) -> Double = { salary: Double ->
+    maybeSalaryInEur(salary).bind()
+}
+```
+
+The `bind` function is defined as:
+
+```kotlin
+// Arrow Kt Library
+public class ResultRaise(private val raise: Raise<Throwable>) : Raise<Throwable> by raise {
+    @RaiseDSL
+    public fun <A> Result<A>.bind(): A = fold(::identity) { raise(it) }
+    // Omissis
+}
+```
+
+Here the `fold` function is the one defined in the `Result<A>` type, which takes two lambdas: The first one is called in case of success and the second one in case of failure.
 
 ## X. Appendix: Maven Configuration
 
