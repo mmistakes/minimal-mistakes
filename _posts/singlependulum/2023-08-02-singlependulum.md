@@ -1,15 +1,3 @@
 # 단진자
-```html
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script src="pendulum.js"></script>
-</body>
-</html>
+[HTML FILE LINK](file:///C:/Users/%EB%82%A8%EC%82%B0%EC%A4%91%ED%95%99%EA%B5%90/Desktop/kndllab/danjinja.html)
