@@ -30,3 +30,6 @@ _site
 
 # IntelliJ
 .idea
+
+# VSCode
+.vscode
