@@ -33,7 +33,7 @@ In this section, we'll build an application that connects to GitHub using OAuth 
 To build this application we will need to add the following to our build.sbt file:
 
 ```scala
-val scala3Version = "3.2.2"
+val scala3Version = "3.3.0"
 val Http4sVersion = "0.23.18"
 val CirisVersion = "3.2.0"
 val CirceVersion = "0.14.1"
@@ -367,15 +367,14 @@ Similar to `fetchJsonString()`, the `fetchGithubDetails()` defines a Request and
 For this request, we specify an `Accept` request HTTP header as `json` and pass the `access_token` to a second `Authorization Bearer` header. Some REST endpoints may require additional headers therefore it's important to check the GitHub API documentation.
 
 ```scala
-import com.xonal.config.{Config, configuration}
+import com.xonal.config.Config
 import cats.syntax.all.*
 
 object OauthImpl{
   ...
-  def getOauthResults[F[_]: Async](code: String): F[String] =
+  def getOauthResults[F[_]: Async](code: String, config: Config): F[String] =
     for
-      config <- configuration.load[F]
-      decodedJson <- fetchJsonString[F](code, config).map(decodeJson(_))
+      decodedJson <- fetchJsonString[F](code, config).map(decodeJson)
       githubDetails <- decodedJson match
         case Right(v)  => fetchGithubDetails(v.accessToken)
         case Left(err) => err.pure[F].map(_.getMessage)
@@ -385,9 +384,7 @@ object OauthImpl{
 
 In the code above, we compose all the functions defined previously to mimic the OAuth flow defined in the introduction by using a for comprehension for the body of the `getOauthResults()` function.
 
-The `load[F]` method from `configuration.load[F]` returns an `F[Config]` object from a ` ConfigValue[Effect, Config]`. The `import cats.syntax.all.*` makes it possible to FlatMap the `F[Config]` value, giving us `config`, our `Config` case class.
-
-We then call `fetchJsonString()` and pass it `code` and `config`, this returns a JSON string of type `F[String]`. We further map this result to `decodeJson` which gives us an `F[Either[Error, GithubResponse]]`, on which we flatmap and store the `Either` in `decodedJson`.
+The `getOauthResults()` function takes a `code` and `Config` value as arguments which are passed to the `fetchJsonString()`, this returns a JSON string of type `F[String]`. We further `map` this result to `decodeJson` which gives us an `F[Either[Error, GithubResponse]]`, on which we `flatMap` and store the `Either` in `decodedJson`.
 
 In the next line, we pattern match on the `Either`, in case of a `Right` (successfully decoded JSON), we pass the access token from `GithubResponse` to `fetchGithubDetails()` otherwise we call `pure[F]` on the `Error` object from `circe`, this returns F[Error], which we map on and conclude by calling the `getMessage()` method on the `Error` object yielding an `F[String]`.
 
@@ -403,7 +400,7 @@ import io.circe.parser.decode
 import org.http4s.ember.client.EmberClientBuilder
 import cats.effect.Async
 import org.http4s.*
-import com.xonal.config.{Config, configuration}
+import com.xonal.config.Config
 import org.http4s.implicits.uri
 import org.http4s.headers.{Accept, Authorization}
 import cats.syntax.all.*
@@ -467,10 +464,9 @@ object OauthImpl {
     getJsonString(req)
   }
 
-  def getOauthResults[F[_]: Async](code: String): F[String] =
+  def getOauthResults[F[_]: Async](code: String, config: Config): F[String] =
     for
-      config <- configuration.load[F]
-      decodedJson <- fetchJsonString[F](code, config).map(decodeJson(_))
+      decodedJson <- fetchJsonString[F](code, config).map(decodeJson)
       githubDetails <- decodedJson match
         case Right(v)  => fetchGithubDetails(v.accessToken)
         case Left(err) => err.pure[F].map(_.getMessage)
@@ -490,17 +486,17 @@ package com.xonal.routes
 import org.http4s.*
 import org.http4s.dsl.Http4sDsl
 import cats.effect.Async
-import fs2.io.file.Path
+import com.xonal.config.Config
 
 object GithubRoutes{
-  def githubRoutes[F[_]: Async]: HttpRoutes[F] = {
+  def githubRoutes[F[_]: Async](config: Config): HttpRoutes[F] = {
     val dsl = Http4sDsl[F]
-    import dsl.{Path as _, *}
+    import dsl.*
     HttpRoutes.of[F] {
       case request @ GET -> Root / "index.html" =>
         StaticFile
-          .fromPath(
-            Path("oauth/src/main/scala/com/xonal/index.html"),
+          .fromString(
+            "oauth/src/main/scala/com/xonal/index.html",
             Some(request)
           )
           .getOrElseF(NotFound()) // In case the file doesn't exist
@@ -509,8 +505,8 @@ object GithubRoutes{
 }
 ```
 
-Above, we define a `githubRoutes()` function within the `GithubRoutes` object that returns `HttpRoutes[F]`. We import everything from `Http4sDsl` except `Path` so that it doesn't conflict with the `Path` import from `fs2.io.file`.
-The `/index.html` route serves an `index.html` static file to the browser. We use `StaticFile.fromPath()` which takes the path to our file and an `Option` of `request` passed from `case request @ GET`. Finally, we call `getOrElseF(NotFound())` that returns `404` status code in case the file is not found.
+Above, we define a `githubRoutes()` function within the `GithubRoutes` object which takes `Config` as an argument and returns `HttpRoutes[F]`. We import everything from `Http4sDsl` except `Path` so that it doesn't conflict with the `Path` import from `fs2.io.file`.
+The `/index.html` route serves an `index.html` static file to the browser. We use `StaticFile.fromString()` which takes the URL to our file as a `String` and an `Option` of `request` passed from `case request @ GET`. Finally, we call `getOrElseF(NotFound())` that returns `404` status code in case the file is not found.
 
 ```scala
 import org.http4s.dsl.impl.QueryParamDecoderMatcher
@@ -532,7 +528,7 @@ The second route `/callback?code={single-use authorization code}` contains the U
 
 We apply this class by extending `GithubTokenQueryParamMatcher` and calling it as part of the route, `case GET -> Root / "callback" :? GithubTokenQueryParamMatcher(code)`.
 
-We then call `getOauthResults(code)` which returns an F[String] containing the response from GitHub's API, however in case the function fails for any reason we use the `handleError(_.getMessage)` method to take care of any errors. We conclude by sending the result back to the browser by calling .flatMap(Ok(\_)). Here the result is either the error message or the GitHub server response.
+We then call `getOauthResults(code)` which returns an F[String] containing the response from GitHub's API, however in case the function fails for any reason we use the `handleError(_.getMessage)` method to take care of any errors. We conclude by sending the result back to the browser by calling `.flatMap(Ok(_))`. Here the result is either the error message or the GitHub server response.
 
 Here's the full code:
 
@@ -544,30 +540,29 @@ import org.http4s.*
 import org.http4s.dsl.Http4sDsl
 import com.xonal.oAuth.OauthImpl.getOauthResults
 import cats.effect.Async
-import fs2.io.file.Path
 import cats.syntax.all.*
+import com.xonal.config.Config
 
 object GithubRoutes {
   object GithubTokenQueryParamMatcher
       extends QueryParamDecoderMatcher[String]("code")
 
-  def githubRoutes[F[_]: Async]: HttpRoutes[F] = {
+  def githubRoutes[F[_]: Async](config: Config): HttpRoutes[F] = {
     val dsl = Http4sDsl[F]
-    import dsl.{Path as _, *}
+    import dsl.*
     HttpRoutes.of[F] {
       case request @ GET -> Root / "index.html" =>
         StaticFile
-          .fromPath(
-            Path("oauth/src/main/scala/com/xonal/index.html"),
+          .fromString(
+            "oauth/src/main/scala/com/xonal/index.html",
             Some(request)
           )
           .getOrElseF(NotFound()) // In case the file doesn't exist
       case GET -> Root / "callback" :? GithubTokenQueryParamMatcher(code) =>
-        getOauthResults(code).handleError(_.getMessage).flatMap(Ok(_))
+        getOauthResults(code, config).handleError(_.getMessage).flatMap(Ok(_))
     }
   }
 }
-
 ```
 
 Now let's create our index.html file in the following path, `oauth/src/main/scala/com/xonal/index.html` and paste the following code.
@@ -577,7 +572,7 @@ Now let's create our index.html file in the following path, `oauth/src/main/scal
   <p>
     Click
     <a
-      href="https://github.com/login/oauth/authorize?scope=user:email&client_id=0131cd2e9eacae1854c5"
+      href="https://github.com/login/oauth/authorize?scope=user:email&client_id=YOUR_CLIENT_ID_HERE"
       >here</a
     >
     to view your github details.
@@ -595,7 +590,6 @@ In this section, we'll work on the server. Create a `ServerUtil.scala` file in t
 package com.xonal.server
 
 import cats.effect.Async
-import fs2.Stream
 import com.xonal.config.Config
 import org.http4s.HttpRoutes
 import cats.effect.Resource
@@ -606,19 +600,17 @@ object ServerUtil {
   def oauthServer[F[_]: Async](
       config: Config,
       service: HttpRoutes[F]
-  ): Stream[F, Resource[F, Server]] =
-    Stream(
+  ): Resource[F, Server] =
       EmberServerBuilder
         .default[F]
         .withHost(config.server.hostValue)
         .withPort(config.server.portValue)
         .withHttpApp(service.orNotFound)
         .build
-    )
 }
 ```
 
-The `ServerUtil` object contains the `oauthServer()` function which takes `Config` and `HttpRoutes[F]` as parameters and returns a `Stream[F, Resource[F, Server]]`. The reason for wrapping our `Resource` in a `Stream` will become evident in the next section.
+The `ServerUtil` object contains the `oauthServer()` function which takes `Config` and `HttpRoutes[F]` as parameters and returns a `Resource[F, Server]`.
 We configure our server using `EmberServerBuilder` and pass it host and port values as `config.server.hostValue` and `config.server.portValue` respectfully. It also takes our `service` as a parameter through the `withHttpApp()` method.
 
 ### 2.7. The application's entry point.
@@ -630,30 +622,27 @@ package com.xonal
 
 import cats.effect.*
 import com.xonal.server.ServerUtil
-import fs2.Stream
 import com.xonal.config.configuration
 import com.xonal.routes.GithubRoutes.githubRoutes
 import org.http4s.server.Server
 
 object OauthMain extends IOApp {
-  def program[F[_]: Async]: Stream[F, Resource[F, Server]] =
+  def program: IO[Resource[IO,Server]] =
     for
-      sconfig <- Stream.eval(configuration.load[F])
-      server <- ServerUtil.oauthServer(sconfig, githubRoutes)
+      configValue <- configuration.load[IO]
+      server <- IO(ServerUtil.oauthServer[IO](configValue, githubRoutes(configValue)))
     yield server
 
   def run(args: List[String]): IO[ExitCode] =
-    program[IO].compile.last
-      .flatMap(_.get.use(_ => IO.never))
-      .as(ExitCode.Success)
+    program.flatMap(_.use(_ => IO.never)).as(ExitCode.Success)
 }
 ```
 
-We define a function `program()` as a for comprehension that yields our server. We decided to wrap our Resource in a `Stream` in the previous section since it would be easier to pass the configuration value to the server.
-In the first line we call `configuration.load[F]` which gives us an `F[Config]` wrapped in `Stream.eval`, flatmapping on this expression gives us access to `sconfig` (our `Config`).
-In the second line of the for comprehension, we pass `sconfig` and `githubRoutes` as parameters to `oauthServer` and finally yield our server which results in a `Stream[F, Resource[F,Server]]`.
+We define a function `program()` as a for comprehension that yields our `server`. In the first line we call `configuration.load[IO]` which gives us an `IO[Config]`, flatmapping on this expression gives us access to `configValue` (our `Config`).
 
-For the run method, we call `program` with `IO` as the effect type and `compile` the `Stream`. The `last.flatMap()` method gives us an `Option[Resource[IO, Server]]`, calling `get()` on the `Option` gives us access to the `Resource` while `use()` allocates the `Resource` which we assign to `IO.never`, this lets our server run indefinitely then we finally return `ExitCode.Success` using the `as()` method.
+In the second line of the for comprehension, we pass `configValue` to `oauthServer[IO]()` and `githubRoutes()`, the latter being passed as a second parameter to the `oauthServer[IO]()` function as well. We finally yield our server which results in an `IO[Resource[IO,Server]]`.
+
+For the run method, we call `program` and `flatMap` on it to give us access to the `Resource`. The `use()` method allocates the `Resource` which we assign to `IO.never`. This lets our server run indefinitely, we finally return `ExitCode.Success` using the `as()` method.
 
 We can now run the application and then navigate to `localhost:8080/index.html` in the browser.
 
@@ -669,4 +658,4 @@ Once authorization is provided, you will be redirected to our application with a
 
 ## 3. Conclusion
 
-We have learned about OAuth, and how to connect an application to another using this framework protocol. Once you are familiar with the OAuth [flow](https://auth0.com/docs/get-started/authentication-and-authorization-flow/which-oauth-2-0-flow-should-i-use), implementing it becomes non-trivial. For more information on GitHub's web application flow, check out this [link](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps). You can find the full code on my [GitHub](https://github.com/hkateu/MyHttp4sCode/tree/main/oauth/src/main) page.
+We have learned about OAuth, and how to connect an application to another using this framework protocol. Once you are familiar with the OAuth [flow](https://auth0.com/docs/get-started/authentication-and-authorization-flow/which-oauth-2-0-flow-should-i-use), implementing it becomes easier. For more information on GitHub's web application flow, check out this [link](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps). You can find the full code on my [GitHub](https://github.com/hkateu/MyHttp4sCode/tree/main/oauth/src/main) page.
