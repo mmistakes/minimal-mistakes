@@ -505,7 +505,7 @@ object GithubRoutes{
 }
 ```
 
-Above, we define a `githubRoutes()` function within the `GithubRoutes` object which takes `Config` as an argument and returns `HttpRoutes[F]`. We import everything from `Http4sDsl` except `Path` so that it doesn't conflict with the `Path` import from `fs2.io.file`.
+Above, we define a `githubRoutes()` function within the `GithubRoutes` object which takes `Config` as an argument and returns `HttpRoutes[F]`.
 The `/index.html` route serves an `index.html` static file to the browser. We use `StaticFile.fromString()` which takes the URL to our file as a `String` and an `Option` of `request` passed from `case request @ GET`. Finally, we call `getOrElseF(NotFound())` that returns `404` status code in case the file is not found.
 
 ```scala
