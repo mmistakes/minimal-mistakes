@@ -9,6 +9,8 @@ toc: true
 toc_label: "In this article"
 ---
 
+_by [Herbert Kateu](https://github.com/hkateu)_
+
 ## 1. Introduction
 
 This is a follow-up to the [Two Factor Authentication](https://blog.rockthejvm.com/otp-authentication-scala-http4s/) article that was written earlier, and as such is the third article in the series.
