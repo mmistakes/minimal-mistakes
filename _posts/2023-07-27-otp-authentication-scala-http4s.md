@@ -11,13 +11,15 @@ toc_label: "In this article"
 
 _by [Herbert Kateu](https://github.com/hkateu)_
 
-> Hey, it's Daniel here. You're reading a giant article about a real-life use of the Http4s library.
+> Hey, it's Daniel here. You're reading a big article about a real-life use of the Http4s library. Herbert outdid himself in this article!
 > 
 > If you want to master the Typelevel Scala libraries (including Http4s) with real-life practice, check out the [Typelevel Rite of Passage](https://rockthejvm.com/p/typelevel-rite-of-passage) course, a full-stack project-based course. It's my biggest and most jam-packed course yet.
 
 ## 1. Introduction
 
-This article is a continuation of the authentication methods that were covered in [part1](/scala-http4s-authentication). Here we will cover two more advanced authentication methods which include One Time Password (OTP) and Two Factor Authentication (2FA).
+This article is a continuation of the authentication methods that were covered in [the other article on http4s authentication](/scala-http4s-authentication). Here we will cover two more advanced authentication methods which include One Time Password (OTP) and Two Factor Authentication (2FA).
+
+You can find the entire code on [GitHub](https://github.com/hkateu/MyHttp4sCode/tree/main/otpauth/src/main/scala/com/xonal). 
 
 ### 1.1 Requirements
 

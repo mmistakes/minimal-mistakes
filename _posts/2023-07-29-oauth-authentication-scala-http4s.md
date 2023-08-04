@@ -4,7 +4,7 @@ date: 2023-07-27
 header:
   image: "/images/blog cover.jpg"
 tags: []
-excerpt: "Learn about OAuth authentication using Http4s."
+excerpt: "Learn how to implement OAuth authentication in Scala using Http4s, using GitHub as an OAuth provider."
 toc: true
 toc_label: "In this article"
 ---
@@ -626,23 +626,22 @@ import com.xonal.config.configuration
 import com.xonal.routes.GithubRoutes.githubRoutes
 import org.http4s.server.Server
 
-object OauthMain extends IOApp {
-  def program: IO[Resource[IO,Server]] =
-    for
-      configValue <- configuration.load[IO]
-      server <- IO(ServerUtil.oauthServer[IO](configValue, githubRoutes(configValue)))
-    yield server
-
+object OauthMain extends IOApp.Simple {
   def run(args: List[String]): IO[ExitCode] =
-    program.flatMap(_.use(_ => IO.never)).as(ExitCode.Success)
+    for {
+      configValue <- configuration.load[IO]
+      server <- ServerUtil
+        .oauthServer[IO](configValue, githubRoutes(configValue))
+        .use(_ => IO.never)
+    } yield ()
 }
 ```
 
-We define a function `program()` as a for comprehension that yields our `server`. In the first line we call `configuration.load[IO]` which gives us an `IO[Config]`, flatmapping on this expression gives us access to `configValue` (our `Config`).
+In the first line we call `configuration.load[IO]` which gives us an `IO[Config]`, flatmapping on this expression gives us access to `configValue` (our `Config`).
 
-In the second line of the for comprehension, we pass `configValue` to `oauthServer[IO]()` and `githubRoutes()`, the latter being passed as a second parameter to the `oauthServer[IO]()` function as well. We finally yield our server which results in an `IO[Resource[IO,Server]]`.
+In the second line of the for comprehension, we pass `configValue` to `oauthServer[IO]()` and `githubRoutes()`, the latter being passed as a second parameter to the `oauthServer[IO]()` function as well.
 
-For the run method, we call `program` and `flatMap` on it to give us access to the `Resource`. The `use()` method allocates the `Resource` which we assign to `IO.never`. This lets our server run indefinitely, we finally return `ExitCode.Success` using the `as()` method.
+Finally, we call `use()` on the `Resource` returned by the server builder which we keep alive by using `IO.never`. This lets our server run indefinitely.
 
 We can now run the application and then navigate to `localhost:8080/index.html` in the browser.
 
