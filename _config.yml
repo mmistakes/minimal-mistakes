@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Promesis"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "A programmer who is toughly trying, to be more **pragmatic.**"
   location         : "China"
   email            :
