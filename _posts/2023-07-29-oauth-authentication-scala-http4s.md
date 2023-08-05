@@ -26,9 +26,9 @@ OAuth which stands for Open Authorization is an open standard framework that all
 
 The OAuth standard is defined under [RFC 6749](https://www.ietf.org/rfc/rfc6749.txt), here we'll find an in-depth explanation of how the mechanism works.
 
-## 2. Accessing the Github API through OAuth.
+## 2. Accessing the Github API through OAuth
 
-### 2.1. Setting Up.
+### 2.1. Setting Up
 
 In this section, we'll build an application that connects to GitHub using OAuth and request user information using the GitHub API.
 
@@ -69,7 +69,7 @@ val circeLibs =  Seq(
 
 We use Scala 3 in this tutorial, if you need to use Scala 2.13, you can do so with minimal code changes.
 
-### 2.2. Registering our OAuth App on GitHub.
+### 2.2. Registering our OAuth App on GitHub
 
 Before we dive into Scala code, we need to register our application on github.com, Github will provide us with important credentials relevant for our app to function.
 
@@ -477,7 +477,7 @@ object OauthImpl {
 }
 ```
 
-### 2.5. The application routes.
+### 2.5. The application routes
 
 The next step is to define routes for our application. Let's create `AppRoutes.scala` in the following path, `oauth/src/main/scala/com/xonal/routes/AppRoutes.scala`.
 In this section we will define two routes, the first will show our landing page which will be static HTML and the second will handle the call back from GitHub after the user authorizes our Oauth application.
@@ -584,7 +584,7 @@ Now let's create our index.html file in the following path, `oauth/src/main/scal
 
 This HTML page prompts the user to click the link to receive his or her GitHub details. The link contains a scope and client_id as URL parameters. When the user clicks the link, he or she will be directed to GitHub and asked to sign in if not already. The user will then be prompted to authorize our OAuth app with the defined scope, after which GitHub will redirect the user to the above callback route.
 
-### 2.6. The application server.
+### 2.6. The application server
 
 In this section, we'll work on the server. Create a `ServerUtil.scala` file in the following path, `oauth/src/main/scala/com/xonal/server/ServerUtil.scala` and add the following code.
 
@@ -615,7 +615,7 @@ object ServerUtil {
 The `ServerUtil` object contains the `oauthServer()` function which takes `Config` and `HttpRoutes[F]` as parameters and returns a `Resource[F, Server]`.
 We configure our server using `EmberServerBuilder` and pass it host and port values as `config.server.hostValue` and `config.server.portValue` respectfully. It also takes our `service` as a parameter through the `withHttpApp()` method.
 
-### 2.7. The application's entry point.
+### 2.7. The application's entry point
 
 In this last section, we create our main function. Create a file called `OauthMain.scala` and save it in the following path, `oauth/src/main/scala/com/xonal/OauthMain.scala`. Add the following code.
 
