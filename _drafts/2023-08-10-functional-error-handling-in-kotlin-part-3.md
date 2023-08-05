@@ -449,6 +449,23 @@ public inline fun <A> catch(block: () -> A, catch: (throwable: Throwable) -> A):
 
 As we can see, there's nothing special with the `catch` function. It just catches the exception and calls the `catch` lambda with the exception. The `nonFatalOrThrow` extension function is used to check if the exception is fatal or not. If the exception is fatal, it is rethrown. Otherwise, it is processed. However, no reference to the `Raise<E>` context is present. In fact, it's the call to the `raise` function we did that introduces the reference to the `Raise<E>` context. 
 
+Different story if we want to recover or react to a typed error. As a rule of thumb, we should try to model errors that are expected to happen as typed errors. We can call them as logical errors. We've seen many examples during the previous articles. The `JobNotFound` and `NegativeSalary` errors are examples of errors that are expected to happen. On the contrary, we should use exceptions to model faults, that is, errors that are not expected to happen. Often, this kind of errors are related to the environment, or are due to bugs in our code, and we can't do anything to recover from them. 
+
+Many programming languages such as Java decided to use exceptions to model both logical errors and faults. To be fair, Java architects tried to give us a way to distinguish between logical errors and faults, introducing the concept of checked and unchecked exceptions. However, nobody listen to them, and the distinction is not clear, and the checked exceptions are often misused.
+
+As we said, what if we want to recover from a logical error in a computation in the `Raise<E>` context? Well, we can use the `recover` function. Let's make an example. We have the `RaiseCurrencyConverter.convertUsdToEur` function that raises a `NegativeSalary` error when the amount is negative. We want to recover such situation returning a default value, let's say zero, instead. We can do it as follows:
+
+```kotlin
+fun main() {
+    val converter = RaiseCurrencyConverter(CurrencyConverter())
+    recover({ converter.convertUsdToEur(-1.0) }) { _: JobError ->
+        0.0
+    }
+}
+```
+
+TODO
+
 What if we want to convert a computation in the `Raise<E>` context to a function returning an `Either<E, A>`, a `Result<A>`, an `Option<A>` or a `A?`? Well, nothing easier than that. The Arrow library provides all the tools to convert a computation in the `Raise<E>` context to a wrapped type. We can use the `either`, `result`, `option`, and `nullable` builders we saw in the previous articles. In fact, version 1.2.0 of Arrow completely reviewed the implementation of such builders, defining them as wrappers around the `fold` function. 
 
 Let's start with `Either<E, A>`. The `either` builder is defined as:
