@@ -3,14 +3,11 @@ main:
   - title: "About & Projects"
     url: /about/
 
-  - title: "Data"
-    url: "categories/#data"
-
-  - title: "Tech"
-    url: "categories/#tech"
-
   - title: "Lists"
     url: /things-i-like/
 
-  - title: "Substack"
+  - title: Quotes
+    url: /quotes/
+
+  - title: "Data Newsletter"
     url: "https://doodlingdata.substack.com/"

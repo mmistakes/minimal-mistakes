@@ -67,16 +67,6 @@ There's plenty of resources to learn languages online (some are obvious), but he
 * I am following the courses of the [Deutsche Welle](https://learngerman.dw.com/en/overview), they're really good as they lead you through your learning in an engaging yet serious way
 * I use Duolinguo too, but only coupled with grammar studying and the above
 * I am also using (with much fun) the [podcast](https://coffeebreaklanguages.com/coffeebreakgerman/) from the Coffee break series, it's really well made and very useful!
-* Currently trialling italki
-
-
-## Travelling
-
-I don't use any particular resource to plan travels, I generally look for information from various places and manually plan my itineraries. I use the Tripadvisor travel map to visually record where I've been though.
-
-## Weather
-
-BBC Weather for its simplicity
 
 ## Cooking 
 
