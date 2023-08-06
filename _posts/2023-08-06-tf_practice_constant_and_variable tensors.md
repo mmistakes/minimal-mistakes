@@ -1,3 +1,8 @@
+---
+layout: single
+title: "Tensorflow2 Practice: Constant & Variable Tensors"
+---
+
 ```python
 import numpy as np
 import tensorflow as tf
