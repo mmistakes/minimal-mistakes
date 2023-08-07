@@ -54,7 +54,7 @@ piechocki-mateusz:
   firstname   : "Mateusz"
   surname     : "Piechocki"
   title       : #
-  bio         : "Ph.D. student."
+  bio         : "Ph.D. student. Efficient and low-cost deep learning algorithms for edge and embedded devices."
   avatar      : "/assets/images/bio/mateuszpiechocki.webp"
   links:
     - label: "Email"
