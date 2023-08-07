@@ -14,3 +14,8 @@ nvidia:
   name   : "NVidia Corporation"
   url    : "https://www.nvidia.com/en-us/"
   logo   : "/assets/images/partners/nvidia.webp"
+
+edge_impulse:
+  name   : "Edge Impulse Inc."
+  url    : "https://edgeimpulse.com/"
+  logo   : "/assets/images/partners/edge_impulse.webp"
