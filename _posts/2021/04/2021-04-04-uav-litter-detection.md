@@ -4,7 +4,7 @@ title: "Autonomous, Onboard Vision-Based Trash and Litter Detection in Low Altit
 author: [kraft-marek, piechocki-mateusz, ptak-bartosz]
 modified: 2021-04-04
 tags: [uav, object detection]
-category: [publication]
+category: [publication, dataset]
 teaser: "/assets/images/posts/2021/04/uav-litter.webp"
 ---
 

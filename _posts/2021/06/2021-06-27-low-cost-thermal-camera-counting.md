@@ -4,7 +4,7 @@ title: "Low-Cost Thermal Camera-Based Counting Occupancy Meter Facilitating Ener
 author: [kraft-marek, aszkowski-przemyslaw, pieczynski-dominik, fularz-michal]
 modified: 2021-06-27
 tags: [thermal, unet]
-category: [publication]
+category: [publication, dataset]
 teaser: "/assets/images/posts/2021/06/thermal.webp"
 ---
 

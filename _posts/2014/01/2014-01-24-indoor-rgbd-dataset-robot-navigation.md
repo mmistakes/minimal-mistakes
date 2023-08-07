@@ -4,7 +4,7 @@ title: "An Indoor RGB-D Dataset for the Evaluation of Robot Navigation Algorithm
 author: [fularz-michal, kraft-marek]
 modified: 2014-01-24
 tags: [rgbd, navigation, database]
-category: [database]
+category: [dataset]
 teaser: "/assets/images/posts/2014/01/wifibot.webp"
 ---
 

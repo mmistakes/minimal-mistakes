@@ -4,7 +4,7 @@ title: "PUT video surveillance database"
 author: [fularz-michal]
 modified: 2015-09-09
 tags: [object tracking, database]
-category: [database]
+category: [dataset]
 teaser: "/assets/images/posts/2015/09/surv.webp"
 ---
 

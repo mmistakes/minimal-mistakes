@@ -4,7 +4,7 @@ title: "Unraveling Induction Motor State through Thermal Imaging and Edge Proces
 author: [piechocki-mateusz, kraft-marek]
 modified: 2023-08-03
 tags: [thermal imaging, fault diagnosis, squirrel-cage induction motor, convolutional neural networks, explainability, edge processing]
-category: [publication]
+category: [publication, dataset]
 teaser: "/assets/images/posts/2023/08/workswell_post_img.webp"
 ---
 
