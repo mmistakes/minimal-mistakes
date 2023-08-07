@@ -1,3 +1,3 @@
 # https://daeyoungee.github.io
 
-모든 일에 후회없이 최선을 다하자
+내가 보려고 만드는 블로그
