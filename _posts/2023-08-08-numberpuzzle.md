@@ -268,13 +268,16 @@ puzzle.jsp
 </body>
 ```
 
-
+공백칸 옆의 숫자 이미지를 클릭하면, 공백과 숫자의 위치를 바꿔준다.
 
 ```js
 puzzle.jsp
 ...
 <script type="text/javascript">
 ...
+	//img태그 src값에서 숫자만 추출하기 위한 정규식
+	const regex = /\d{2}/;
+
 	function move(cur_idx)
 	{
 		var cur;
@@ -287,7 +290,7 @@ puzzle.jsp
 		cur_loc = cur.match(regex);
 		//alert(cur_loc);
 		
-		//클릭한 숫자판의 위치가 사각형 왼쪽면에 접하지 않는경우
+		//클릭한 숫자판의 위치가 사각형 맨 좌측면에 접하지 않는경우
 		if (idx % 4 != 0) 
 		{
 			var next_loc = cur_idx-1;
@@ -303,7 +306,7 @@ puzzle.jsp
 			}
 		}
 		
-		//클릭한 숫자판의 위치가 사각형 오른쪽면에 접하지 않는경우
+		//클릭한 숫자판의 위치가 사각형 맨 우측면에 접하지 않는경우
 		if (idx % 4 != 3)
 		{
 			var next_loc = cur_idx+1;
@@ -314,8 +317,7 @@ puzzle.jsp
 				$("."+cur_idx).attr("src", next);	
 				$("."+next_loc).attr("src", cur);
 				$("button#"+cur_idx).attr("disabled", true);	
-				$("button#"+next_loc).attr("disabled", false);
-				
+				$("button#"+next_loc).attr("disabled", false);			
 				next_loc_confirm = next_loc;
 			}
 		}
@@ -324,7 +326,7 @@ puzzle.jsp
 		//몫을 구하기 위해서 parseInt(idx/4)와 같은 형태로 해주어야 정상 동작한다.
 		//안그러면 몫이되는 정수부분만 구해지지 않는다.	
 		
-		//클릭한 숫자판의 위치가 사각형 위쪽면에 접하지 않는경우
+		//클릭한 숫자판의 위치가 사각형 맨 위측면에 접하지 않는경우
 	 	if (parseInt(idx/4) != 0) 
 		{
 			var next_loc = cur_idx-4;
@@ -335,13 +337,12 @@ puzzle.jsp
 				$("."+cur_idx).attr("src", next);	
 				$("."+next_loc).attr("src", cur);
 				$("button#"+cur_idx).attr("disabled", true);	
-				$("button#"+next_loc).attr("disabled", false);
-				
+				$("button#"+next_loc).attr("disabled", false);				
 				next_loc_confirm = next_loc;
 			}
 		}
 	 	
-	 	//클릭한 숫자판의 위치가 사각형 아래쪽면에 접하지 않는경우
+	 	//클릭한 숫자판의 위치가 사각형 맨 아랫면에 접하지 않는경우
 	 	if (parseInt(idx/4) != 3) 
 		{
 			var next_loc = cur_idx+4;
@@ -352,14 +353,77 @@ puzzle.jsp
 				$("."+cur_idx).attr("src", next);	
 				$("."+next_loc).attr("src", cur);
 				$("button#"+cur_idx).attr("disabled", true);	
-				$("button#"+next_loc).attr("disabled", false);
-				
-				next_loc_confirm = next_loc;
-				
+				$("button#"+next_loc).attr("disabled", false);				
+				next_loc_confirm = next_loc;				
 			}
 		}
+    	...
 	}
 ...
 </script>
 ...    
 ```
+
+숫자의 위치가 바뀐 후 퍼즐 완성 여부를 확인한다.
+
+
+```js
+puzzle.jsp
+...
+<script type="text/javascript">
+...
+	function move(cur_idx)
+	{
+		...
+	 	var incre=0;
+		for(var i=1; i<16; i++)
+		{	
+			cur = $("."+i).attr("src");
+			cur_loc = cur.match(regex);
+			if(cur_loc == i)
+			{
+				incre +=1;					
+			}
+		}
+		var time_r = $('#time').html()
+		
+	 	//퍼즐 완성여부 검사
+	 	if(incre == 15)
+	 	{
+			$.ajax
+			({
+				type: 'POST',
+				url: './Time_record',
+				data: 
+				{
+					id : '<%=id%>',
+					gname : 'puzzle',
+					time : time,
+					mod : 0
+				}		
+			});	
+	 		
+	 	 	//setTimeout(function() {함수의 내용}, 시간(밀리초));
+	 	 	//특정 시간이 지난후 함수의 내용을 실행한다.
+	 	 	
+	 	 	//setTimeout을 사용하지 않으면, 마지막 버튼이 옮겨진 후 전체 
+	 	 	//퍼즐이 완성된 모습이 보이기전 정답을 알리는 메시지가 뜬다. 		
+		 	setTimeout(function() 
+		 	{	 		
+	 			//alert("정답입니다.");
+	 			//alert("기록 : " + time);
+				$('#messageType').html('퍼즐을 완성했습니다.');
+				$('#messageContent').html("기록 : " + time_r);
+				$('#messageCheck').attr('class', 'modal-content panel-success'); 
+				//팝업 창을 띄운다.
+				$('#messageModal').modal('show');		
+	 			end();			
+		 	}, 100);
+	 	 	
+	 	}        
+	}
+...
+</script>
+...   	
+```
+
