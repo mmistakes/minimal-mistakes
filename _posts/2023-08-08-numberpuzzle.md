@@ -624,26 +624,28 @@ puzzle.jsp
 
 Start버튼 클릭후 버튼 완성 전 Quit버튼을 누른다면 'onclick="end()"'에 의해 end함수가 실행된다.
 
-	puzzle.jsp
-	...
-	<body>
-	<table style="border-right:hidden; border-left:hidden; border-top:hidden; border-bottom:hidden; margin-top:100px;  margin-left:auto; margin-right:auto;">
-		<tr>
+```jsp
+puzzle.jsp
+...
+<body>
+<table style="border-right:hidden; border-left:hidden; border-top:hidden; border-bottom:hidden; margin-top:100px;  margin-left:auto; margin-right:auto;">
+	<tr>
+		...
+		<td>
+			<table style="border:1px solid black">
 			...
-			<td>
-				<table style="border:1px solid black">
-				...
-					<tr>
-						<td style="border:1px solid black" height="50" align="center" colspan="4">
-							<input id="end" style="width:100%;height:100%; font-size:30px; 
-							background-color:#ffa1b9" type="button" onclick="end()" value="Quit" disabled=true>							</input>	
-						</td>			
-					</tr>		 
-				</table>							
-			</td>			
-		</tr>			
-	</table>
-	</body>
+				<tr>
+					<td style="border:1px solid black" height="50" align="center" colspan="4">
+						<input id="end" style="width:100%;height:100%; font-size:30px; 
+						background-color:#ffa1b9" type="button" onclick="end()" value="Quit" disabled=true>							</input>	
+					</td>			
+				</tr>		 
+			</table>							
+		</td>			
+	</tr>			
+</table>
+</body>
+```
 
 실행화면
 
