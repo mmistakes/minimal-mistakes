@@ -226,7 +226,7 @@ puzzle.jsp
 ...    
 ```
 
-아래를 보면 <button type="button" id=<%=idx%> onclick="move(<%=idx%>)" disabled="disabled"></button>라 코딩이 되어 있기에, 숫자 이미지를 클릭한다면, move 함수가 실행된다.
+아래를 보면 "<button type="button" id=<%=idx%> onclick="move(<%=idx%>)" disabled="disabled">...</button>"라 코딩이 되어 있기에, 숫자 이미지를 클릭한다면, move 함수가 실행된다.
 
 ```html
 puzzle.jsp
