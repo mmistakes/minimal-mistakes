@@ -407,9 +407,9 @@ puzzle.jsp
 </script>
 ...   	
 ```
-비동기 통신으로 받은 id,gname,time,mod값을 이용해 "new Time_record_DAO().time_record_renewal
+비동기 통신으로 받은 id,gname,time,mod값을 이용해 "new Time_record_DAO()
 
-(id,gname,time);"를 수행한다.
+.time_record_renewal(id,gname,time);"를 수행한다.
 
 
 ```java
@@ -550,7 +550,7 @@ public class Time_record_DAO
 }
 ```
 
-오라클에 기록을 올린 뒤, 결과를 보여주는 모달창을 뜨워준다.
+오라클에 기록을 올린 뒤, 결과를 보여주는 모달창을 뜨워준다. 그리고 end함수를 실행한다.
 
 
 ```js
@@ -584,4 +584,33 @@ puzzle.jsp
 ...
 </script>
 ...   		
+```
+```js
+puzzle.jsp
+...
+<script type="text/javascript">
+...
+    function end() 
+    {
+        clearInterval(timer);
+        $('#time').html("00:00:00");
+        time = 0;		
+        $("#start").attr("disabled", false);
+        $("#end").attr("disabled", true);
+
+        //퍼즐을 원상태로 바꾸어 놓는다.
+        <%
+        for(int i=1;i<16;i++)
+        {
+            String filepath = String.format("./r_number/%02d.jpg", i);%>	
+            var num = <%=i%>;
+            $("button#"+num).attr("disabled", true);	
+            $("."+num).attr("src", '<%=filepath%>');		
+      <%}%>
+        $("button#"+16).attr("disabled", true);	
+        $(".16").attr("src", "./r_number/16.jpg");	
+    }
+...
+</script>
+...  
 ```
