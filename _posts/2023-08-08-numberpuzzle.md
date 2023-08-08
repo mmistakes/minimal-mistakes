@@ -648,9 +648,5 @@ puzzle.jsp
 ```
 
 실행화면
+![문제1](../../images/2022-12-14-IU_and_boardgame/문제1.png){: width="100%" height="100%"}
 
-![re1](../../images/2023-08-08-numberpuzzle/re1.png){: width="100%" height="100%"}
-
-![re2](../../images/2023-08-08-numberpuzzle/re2.png){: width="100%" height="100%"}
-
-![re3](../../images/2023-08-08-numberpuzzle/re3.png){: width="100%" height="100%"}
