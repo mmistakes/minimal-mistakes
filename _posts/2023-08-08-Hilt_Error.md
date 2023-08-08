@@ -6,7 +6,7 @@ writer: DaeYoungEE
 categories:
   - kotlin
 tags:
-  - [Blog, jekyll, Github, Git, markdown]
+  - [Kotlin, Compose]
 
 toc: true
 toc_sticky: true
