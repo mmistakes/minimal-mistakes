@@ -31,7 +31,8 @@ search: true #false로 주면 검색해도 안나온다.
 						String filepath = String.format("./r_number/%02d.jpg", (i*4)+j+1);
 					%>
 						<td style="border:1px solid black">				
-							<button type="button" id=<%=idx%> onclick="move(<%=idx%>)" disabled="disabled">
+							<button type="button" id=<%=idx%> 
+                            onclick="move(<%=idx%>)"disabled="disabled">
 								<img class=<%=idx%> src=<%=filepath%> width=100; height=100;>
 							</button>
 						</td>						
@@ -40,7 +41,9 @@ search: true #false로 주면 검색해도 안나온다.
 			  <%}%>
 				<tr>
 					<td style="border:1px solid black" height="50" align="center" colspan="4">
-						<input id="start" style="width:100%;height:100%; font-size:30px; background-color:#54d5ff" type="button" onclick="start()" value="Start"></input>	
+						<input id="start" style="width:100%;height:100%; font-size:30px; 
+                        background-color:#54d5ff" type="button"
+                        onclick="start()" value="Start"></input>	
 					</td>				
 				</tr>
 				...	 
