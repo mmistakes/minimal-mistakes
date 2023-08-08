@@ -19,7 +19,7 @@ published: true
 
 ## Gradle
 
-### project
+### project 수준
 
 ```kotlin
 buildscript {
@@ -37,7 +37,7 @@ plugins {
 }
 ```
 
-### module
+### module 수준
 
 ```kotlin
 android {
