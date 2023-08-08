@@ -57,7 +57,7 @@ puzzle.jsp
 ...    
 ```
 
-<input id="start" ... onclick="start()" value="Start"></input>로 정의한 버튼을 누르면 start함수가 실행된다.	
+<input id="start" ... onclick="start()" value="Start"></input>로 코딩한 버튼을 누르면 start함수가 실행된다.	
 
 	puzzle.jsp
 	...
