@@ -364,7 +364,7 @@ puzzle.jsp
 ...    
 ```
 
-숫자의 위치가 바뀐 후 퍼즐 완성 여부를 확인한다.
+숫자의 위치가 바뀐 후 퍼즐 완성 여부를 확인하고, 완성되었다면,  ajax로 비동기 통신을 한다.
 
 
 ```js
@@ -402,28 +402,60 @@ puzzle.jsp
 					mod : 0
 				}		
 			});	
-	 		
-	 	 	//setTimeout(function() {함수의 내용}, 시간(밀리초));
-	 	 	//특정 시간이 지난후 함수의 내용을 실행한다.
-	 	 	
-	 	 	//setTimeout을 사용하지 않으면, 마지막 버튼이 옮겨진 후 전체 
-	 	 	//퍼즐이 완성된 모습이 보이기전 정답을 알리는 메시지가 뜬다. 		
-		 	setTimeout(function() 
-		 	{	 		
-	 			//alert("정답입니다.");
-	 			//alert("기록 : " + time);
-				$('#messageType').html('퍼즐을 완성했습니다.');
-				$('#messageContent').html("기록 : " + time_r);
-				$('#messageCheck').attr('class', 'modal-content panel-success'); 
-				//팝업 창을 띄운다.
-				$('#messageModal').modal('show');		
-	 			end();			
-		 	}, 100);
-	 	 	
+            ...
 	 	}        
 	}
 ...
 </script>
 ...   	
+```
+비동기 통신으로 받은 id,gname,time,mod값을 이용해 "new Time_record_DAO().time_record_renewal(id,gname,time);"를 수행한다.
+
+
+```java
+package games;
+...
+@WebServlet("/Time_record")
+public class Time_record extends HttpServlet
+{
+	private static final long serialVersionUID = 1L;
+	...
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
+		actionDo(request, response);
+	}
+
+	private void actionDo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+			
+		HttpSession session	= request.getSession();	
+		
+		String id = (request.getParameter("id") != null) 
+				? request.getParameter("id") : "";
+		
+		String gname  = (request.getParameter("gname") != null) 
+						? request.getParameter("gname") : "";		
+		
+		int time  = (request.getParameter("time") != null) 
+					? Integer.parseInt(request.getParameter("time")) : 0;
+		int current_page = (request.getParameter("current_page") == null)?
+				1:Integer.parseInt(request.getParameter("current_page"));		
+		int mod  = Integer.parseInt(request.getParameter("mod"));
+
+
+		RankingList list;
+		
+		//새로새운 기록 올리기
+		if(mod == 0)
+		{
+			new Time_record_DAO().time_record_renewal(id,gname,time);				
+		}
+		...	
+	}
+
+}
+
 ```
 
