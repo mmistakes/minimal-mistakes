@@ -90,10 +90,11 @@ analytics:
 
 # Site Author
 author:
-  name: "Your Name"
-  avatar: "/assets/images/bio-photo.jpg"
-  bio: "I am an **amazing** person."
-  location: "Somewhere"
+  name: "DaeYoung"
+  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: "daeyoung tech blog"
+  location: "South Korea"
+  email: "eodud1025@naver.com"
   links:
     - label: "Email"
       icon: "fab fa-fw fa-envelope-square"
