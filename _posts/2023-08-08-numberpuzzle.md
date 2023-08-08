@@ -57,9 +57,7 @@ puzzle.jsp
 ...    
 ```
 
-<input id="start" ... onclick="start()" value="Start"></input>로 코딩한 버튼을 누르면 start함수가 실행된다.	
-
-start함수에서 setInterval를 이용해 초시계를 구현해 준다.
+<input id="start" ... onclick="start()" value="Start"></input>로 코딩한 버튼을 누르면 start함수가 실행된다. start함수에서 setInterval를 이용해 초시계를 구현해 준다.
 
 ```js
 puzzle.jsp
