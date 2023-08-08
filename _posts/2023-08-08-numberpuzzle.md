@@ -117,7 +117,7 @@ function start()
 ...
 ```
 
-start함수에서 setInterval 실행뒤 mix함수를 실행해서 1~15까지의 숫자를 섞어준다.
+start함수에서 setInterval 실행 뒤 mix함수를 실행해서 1~15까지의 숫자를 섞어준다.
 
 ```js
 puzzle.jsp
@@ -191,7 +191,7 @@ puzzle.jsp
 ...       
 ```
 
-mix함수에서 숫자판을 섞는 작업을 한후, 만에 하나라도 초기 숫자의 배치와 같은 경우가 생긴다면, start함수를 다시 실행해준다.
+mix함수에서 숫자판을 섞는 작업을 한 후, 만에 하나라도 초기 숫자의 배치와 같은 경우가 생긴다면, start함수를 다시 실행해준다.
 
 ```js
 puzzle.jsp
@@ -362,7 +362,7 @@ puzzle.jsp
 ...    
 ```
 
-숫자의 위치가 바뀐 후 퍼즐 완성 여부를 확인하고, 완성되었다면,  ajax로 비동기 통신을 한다.
+숫자의 위치를 바꾼 후 퍼즐 완성 여부를 확인하고, 완성되었다면,  ajax로 비동기 통신을 한다.
 
 
 ```js
@@ -604,7 +604,8 @@ puzzle.jsp
     	//Quit버튼 비활성화한다.
         $("#end").attr("disabled", true);
 
-        //숫자를 오름차순으로 배치해 둔다..
+        //숫자를 오름차순으로 배치해 둔다.
+    	//버튼 완성전 Quit버튼 눌렀을 때를 위해 필요하다.
         <%
         for(int i=1;i<16;i++)
         {
@@ -620,3 +621,34 @@ puzzle.jsp
 </script>
 ...  
 ```
+
+Start버튼 클릭후 버튼 완성 전 Quit버튼을 누른다면 'onclick="end()"'에 의해 end함수가 실행된다.
+
+	puzzle.jsp
+	...
+	<body>
+	<table style="border-right:hidden; border-left:hidden; border-top:hidden; border-bottom:hidden; margin-top:100px;  margin-left:auto; margin-right:auto;">
+		<tr>
+			...
+			<td>
+				<table style="border:1px solid black">
+				...
+					<tr>
+						<td style="border:1px solid black" height="50" align="center" colspan="4">
+							<input id="end" style="width:100%;height:100%; font-size:30px; 
+							background-color:#ffa1b9" type="button" onclick="end()" value="Quit" disabled=true>							</input>	
+						</td>			
+					</tr>		 
+				</table>							
+			</td>			
+		</tr>			
+	</table>
+	</body>
+
+실행화면
+
+![res1](../../images/2023-08-08-numberpuzzle/res1.png){: width="100%" height="100%"}
+
+![res2](../../images/2023-08-08-numberpuzzle/res2.png){: width="100%" height="100%"}
+
+![res3](../../images/2023-08-08-numberpuzzle/res3.png){: width="100%" height="100%"}
