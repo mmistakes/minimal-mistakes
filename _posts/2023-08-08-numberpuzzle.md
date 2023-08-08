@@ -407,9 +407,9 @@ puzzle.jsp
 </script>
 ...   	
 ```
-비동기 통신으로 받은 id,gname,time,mod값을 이용해 "new Time_record_DAO()
+비동기 통신으로 받은 id,gname,time,mod값을 이용해 
 
-.time_record_renewal(id,gname,time);"를 수행한다.
+"new Time_record_DAO().time_record_renewal(id,gname,time);"를 수행한다.
 
 
 ```java
