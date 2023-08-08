@@ -649,7 +649,7 @@ puzzle.jsp
 
 실행화면
 
-![res1](../../images/2023-08-08-numberpuzzle/res1.png){: width="100%" height="100%"}
+![res1](../../images/res1.png){: width="100%" height="100%"}
 
 ![res2](../../images/res2.png){: width="100%" height="100%"}
 
