@@ -648,8 +648,9 @@ puzzle.jsp
 ```
 
 실행화면
-![re1](../../images/2023-08-08-numberpuzzle/re1-1691499479497-23.png){: width="100%" height="100%"}
 
-![re2](../../images/2023-08-08-numberpuzzle/re2-1691499491494-25.png){: width="100%" height="100%"}
+![re1](../../images/2023-08-08-numberpuzzle/re1.png){: width="100%" height="100%"}
 
-![re3](../../images/2023-08-08-numberpuzzle/re3-1691499499138-27.png){: width="100%" height="100%"}
+![re2](../../images/2023-08-08-numberpuzzle/re2.png){: width="100%" height="100%"}
+
+![re3](../../images/2023-08-08-numberpuzzle/re3.png){: width="100%" height="100%"}
