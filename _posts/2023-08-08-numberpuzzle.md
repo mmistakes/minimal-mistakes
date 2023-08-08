@@ -461,7 +461,7 @@ public class Time_record extends HttpServlet
 }	
 ```
 
-
+"time_record_renewal(String ID, String GAME, int TIME)"함수에서 조건에 맞게 sql문을 실행하고 오라클에 기록을 올린다.
 
 ```java
 Time_record_DAO.java
@@ -550,4 +550,40 @@ public class Time_record_DAO
 		return 0;	
 	}
 }
+```
+
+오라클에 기록을 올린 뒤, 결과를 보여주는 모달창을 뜨워준다.
+
+
+```js
+puzzle.jsp
+...
+<script type="text/javascript">
+...
+	function move(cur_idx)
+	{
+		...	
+	 	//퍼즐 완성여부 검사
+	 	if(incre == 15)
+	 	{
+			...	 		
+	 	 	//setTimeout(function() {함수의 내용}, 시간(밀리초));
+	 	 	//특정 시간이 지난후 함수의 내용을 실행한다.
+	 	 	
+	 	 	//setTimeout을 사용하지 않으면, 마지막 버튼이 옮겨진 후 전체 
+	 	 	//퍼즐이 완성된 모습이 보이기전 정답을 알리는 메시지가 뜬다. 		
+		 	setTimeout(function() 
+		 	{	 		
+				$('#messageType').html('퍼즐을 완성했습니다.');
+				$('#messageContent').html("기록 : " + time_r);
+				$('#messageCheck').attr('class', 'modal-content panel-success'); 
+				//팝업 창을 띄운다.
+				$('#messageModal').modal('show');		
+	 			end();			
+		 	}, 100);	 	 	
+	 	}
+	}
+...
+</script>
+...   		
 ```
