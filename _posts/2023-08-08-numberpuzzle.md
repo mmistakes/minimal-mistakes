@@ -195,32 +195,171 @@ puzzle.jsp
 
 mix함수에서 숫자판을 섞는 작업을 한후, 만에 하나라도 초기 숫자의 배치와 같은 경우가 생긴다면, start함수를 다시 실행해준다.
 
-	puzzle.jsp
-	...
-	<script type="text/javascript">
-	...
-	    function start() 
-	    {	
-	    	...
-	        var incre=0;
-	        for(var i=1; i<16; i++)
-	        {	
-	            cur = $("."+i).attr("src");
-	            cur_loc = cur.match(regex);
-	            if(cur_loc == i)
-	            {
-	                incre +=1;					
-	            }
-	        }
-	
-	        //만에하나 mix()를 수행하였음에도, 숫자판을 섞기 전과 같은 결과일 경우를 대비해
-	        //아래와 같이 재귀함수를 사용한다.
-	        if(incre == 15)
-	        {
-	            start(); 		
-	        }		
-	    }
-	...
-	</script>
-	...    
+```js
+puzzle.jsp
+...
+<script type="text/javascript">
+...
+    function start() 
+    {	
+    	...
+        var incre=0;
+        for(var i=1; i<16; i++)
+        {	
+            cur = $("."+i).attr("src");
+            cur_loc = cur.match(regex);
+            if(cur_loc == i)
+            {
+                incre +=1;					
+            }
+        }
 
+        //만에하나 mix()를 수행하였음에도, 숫자판을 섞기 전과 같은 결과일 경우를 대비해
+        //아래와 같이 재귀함수를 사용한다.
+        if(incre == 15)
+        {
+            start(); 		
+        }		
+    }
+...
+</script>
+...    
+```
+
+아래를 보면 <button type="button" id=<%=idx%> onclick="move(<%=idx%>)" disabled="disabled"></button>라 코딩이 되어 있기에, 숫자 이미지를 클릭한다면, move 함수가 실행된다.
+
+```html
+puzzle.jsp
+...
+<body>
+...
+<!--margin top bottom 이 auto이면 0으로 잡는다-->
+<table style="border-right:hidden; border-left:hidden; border-top:hidden; border-bottom:hidden; margin-top:100px;  margin-left:auto; margin-right:auto;">
+	<tr>
+		...
+		<td>
+			<table style="border:1px solid black">
+				...	
+				<%
+				for(int i=0;i<4;i++)
+				{				
+				%>
+					<tr>	
+					<%
+					for(int j=0;j<4;j++)
+					{	
+						int idx= ((i*4)+j+1);
+						String filepath = String.format("./r_number/%02d.jpg", (i*4)+j+1);
+					%>
+						<td style="border:1px solid black">				
+							<button type="button" id=<%=idx%> onclick="move(<%=idx%>)" disabled="disabled">
+								<img class=<%=idx%> src=<%=filepath%> width=100; height=100;>
+							</button>
+						</td>						
+				  <%}%>
+					</tr>		
+			  <%}%>
+			...		 
+			</table>							
+		</td>			
+	</tr>			
+</table>
+...
+</body>
+```
+
+
+
+```js
+puzzle.jsp
+...
+<script type="text/javascript">
+...
+	function move(cur_idx)
+	{
+		var cur;
+		var next;
+		var cur_loc;
+		var next_loc_confirm;
+		var idx = cur_idx-1;
+		
+		cur = $("."+cur_idx).attr("src");
+		cur_loc = cur.match(regex);
+		//alert(cur_loc);
+		
+		//클릭한 숫자판의 위치가 사각형 왼쪽면에 접하지 않는경우
+		if (idx % 4 != 0) 
+		{
+			var next_loc = cur_idx-1;
+			next = $("."+next_loc).attr("src");
+			
+			if (next.match("16")) 
+			{
+				$("."+cur_idx).attr("src", next);	
+				$("."+next_loc).attr("src", cur);
+				$("button#"+cur_idx).attr("disabled", true);	
+				$("button#"+next_loc).attr("disabled", false);		
+				next_loc_confirm = next_loc;
+			}
+		}
+		
+		//클릭한 숫자판의 위치가 사각형 오른쪽면에 접하지 않는경우
+		if (idx % 4 != 3)
+		{
+			var next_loc = cur_idx+1;
+			next = $("."+next_loc).attr("src");
+			
+			if (next.match("16")) 
+			{
+				$("."+cur_idx).attr("src", next);	
+				$("."+next_loc).attr("src", cur);
+				$("button#"+cur_idx).attr("disabled", true);	
+				$("button#"+next_loc).attr("disabled", false);
+				
+				next_loc_confirm = next_loc;
+			}
+		}
+		
+	 	//주의
+		//몫을 구하기 위해서 parseInt(idx/4)와 같은 형태로 해주어야 정상 동작한다.
+		//안그러면 몫이되는 정수부분만 구해지지 않는다.	
+		
+		//클릭한 숫자판의 위치가 사각형 위쪽면에 접하지 않는경우
+	 	if (parseInt(idx/4) != 0) 
+		{
+			var next_loc = cur_idx-4;
+			next = $("."+next_loc).attr("src");
+			
+			if (next.match("16")) 
+			{
+				$("."+cur_idx).attr("src", next);	
+				$("."+next_loc).attr("src", cur);
+				$("button#"+cur_idx).attr("disabled", true);	
+				$("button#"+next_loc).attr("disabled", false);
+				
+				next_loc_confirm = next_loc;
+			}
+		}
+	 	
+	 	//클릭한 숫자판의 위치가 사각형 아래쪽면에 접하지 않는경우
+	 	if (parseInt(idx/4) != 3) 
+		{
+			var next_loc = cur_idx+4;
+			next = $("."+next_loc).attr("src");
+			
+			if (next.match("16")) 
+			{
+				$("."+cur_idx).attr("src", next);	
+				$("."+next_loc).attr("src", cur);
+				$("button#"+cur_idx).attr("disabled", true);	
+				$("button#"+next_loc).attr("disabled", false);
+				
+				next_loc_confirm = next_loc;
+				
+			}
+		}
+	}
+...
+</script>
+...    
+```
