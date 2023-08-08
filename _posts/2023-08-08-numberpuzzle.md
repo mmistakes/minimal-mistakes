@@ -653,4 +653,3 @@ puzzle.jsp
 
 ![res2](../../images/res2.png){: width="100%" height="100%"}
 
-![res3](../../images/res3.png){: width="100%" height="100%"}
