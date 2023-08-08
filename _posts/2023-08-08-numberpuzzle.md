@@ -409,10 +409,14 @@ puzzle.jsp
 </script>
 ...   	
 ```
-비동기 통신으로 받은 id,gname,time,mod값을 이용해 "new Time_record_DAO().time_record_renewal(id,gname,time);"를 수행한다.
+비동기 통신으로 받은 id,gname,time,mod값을 이용해 "new Time_record_DAO().time_record_renewal
+
+(id,gname,time);"를 수행한다.
 
 
 ```java
+Time_record.java
+ 
 package games;
 ...
 @WebServlet("/Time_record")
@@ -454,8 +458,96 @@ public class Time_record extends HttpServlet
 		}
 		...	
 	}
-
-}
-
+}	
 ```
 
+
+
+```java
+Time_record_DAO.java
+
+package games;
+...
+public class Time_record_DAO 
+{
+	private Connection conn = null;
+	private PreparedStatement pstmt = null;
+	private ResultSet rs = null;
+	static String sql;
+	
+	static int time;
+	static int hour;
+	static int min;
+	static int sec;
+	static int id_rank;	
+	
+	static RankingList result_T;
+	public Time_record_DAO() 
+	{
+		try 
+		{
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			String url = "jdbc:oracle:thin:@localhost:1521:xe";
+			conn = DriverManager.getConnection(url,"koreait","1011");	
+		} 
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	public int time_record_renewal(String ID, String GAME, int TIME)
+	{	
+		Timestamp timestamp;
+		try 
+		{
+			String sq1 = "select TIME from TIMERECORD where ID=? and GNAME=?"; 	
+			pstmt = conn.prepareStatement(sq1);
+			pstmt.setString(1, ID);
+			pstmt.setString(2, GAME);
+			rs = pstmt.executeQuery();
+			
+			//이전의 게임기록이 존재하는 경우
+			if(rs.next())
+			{
+				int prev_time_record = rs.getInt("TIME");
+				
+				//현재의 기록이 이전의 것보다 더 좋은경우
+				if(prev_time_record > TIME)
+				{
+					
+					timestamp = new Timestamp(System.currentTimeMillis());
+					String sql2 = "update TIMERECORD set TIME=?, WRITEDATE=? where ID=? and GNAME=?";
+					pstmt = conn.prepareStatement(sql2);
+					pstmt.setInt(1, TIME);
+					pstmt.setTimestamp(2,timestamp);					
+					pstmt.setString(3, ID);
+					pstmt.setString(4, GAME);		
+					pstmt.executeUpdate();
+				}
+			}
+			
+			//이전의 게임기록이 없는경우
+			else
+			{
+				String sql3 = "insert into TIMERECORD(ID,GNAME,TIME) values(?,?,?)";
+				pstmt = conn.prepareStatement(sql3);
+				pstmt.setString(1, ID);
+				pstmt.setString(2, GAME);
+				pstmt.setInt(3, TIME);
+				pstmt.executeUpdate();	
+			}
+			
+			conn.close();
+			pstmt.close();
+			rs.close();
+		} 
+		catch (SQLException e) 
+		{
+			e.printStackTrace();
+		}
+			
+		return 0;	
+	}
+}
+```
