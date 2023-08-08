@@ -585,6 +585,8 @@ puzzle.jsp
 </script>
 ...   		
 ```
+end함수에서 Start버튼을 활성화, Quit버튼을 비활성화 한다.
+
 ```js
 puzzle.jsp
 ...
@@ -595,10 +597,14 @@ puzzle.jsp
         clearInterval(timer);
         $('#time').html("00:00:00");
         time = 0;		
+    
+    	//Start버튼 활성화한다.
         $("#start").attr("disabled", false);
+    
+    	//Quit버튼 비활성화한다.
         $("#end").attr("disabled", true);
 
-        //퍼즐을 원상태로 바꾸어 놓는다.
+        //숫자를 오름차순으로 배치해 둔다..
         <%
         for(int i=1;i<16;i++)
         {
