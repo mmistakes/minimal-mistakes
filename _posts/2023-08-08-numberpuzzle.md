@@ -9,6 +9,10 @@ search: true #false로 주면 검색해도 안나온다.
 아래와 같이 코딩해서 숫자 배치(왼쪽 위에서 오른쪽 아래로 오름차순 정렬) 및  Start버튼 새팅을 해준다.
 
 ```html
+puzzle.jsp
+
+...
+<body>
 <!--margin top bottom 이 auto이면 0으로 잡는다-->
 <table style="border-right:hidden; border-left:hidden; border-top:hidden; border-bottom:hidden; margin-top:100px;  margin-left:auto; margin-right:auto;">
 	<tr>
@@ -48,4 +52,9 @@ search: true #false로 주면 검색해도 안나온다.
 		</td>			
 	</tr>			
 </table>
+...
+</body>   
+...    
 ```
+
+<input id="start" ... onclick="start()" value="Start"></input>를 누르면 start함수가 실행된다.	
