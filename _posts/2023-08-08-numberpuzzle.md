@@ -648,6 +648,6 @@ puzzle.jsp
 ```
 
 실행화면
-![re1](qlqlzh.github.io/images/2023-08-08-numberpuzzle/re1.png){: width="100%" height="100%"}
-![re2](qlqlzh.github.io/images/2023-08-08-numberpuzzle/re2.png){: width="100%" height="100%"}
-![re3](qlqlzh.github.io/images/2023-08-08-numberpuzzle/re3.png){: width="100%" height="100%"}
+![re1](../../images/023-08-08-numberpuzzle/re1.png){: width="100%" height="100%"}
+![re2](../../images/023-08-08-numberpuzzle/re2.png){: width="100%" height="100%"}
+![re3](../../images/023-08-08-numberpuzzle/re3.png){: width="100%" height="100%"}
