@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "눈떠보니 컴공이었다"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Machine Learning & Anything"
 name                     : "Dirac042"
 description              : "dirac042's coding playground"
 url                      : "https://dirac042.github.io"
