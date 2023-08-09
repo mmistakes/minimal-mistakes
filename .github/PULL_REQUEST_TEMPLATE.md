@@ -26,6 +26,5 @@
 -->
 
 <!--
-  Please delete this comment if you confirm that you want to submit this Pull Request.
-  CHECK_PR_DID_NOT_CONFIRM
+  Please confirm that you want to submit this Pull Request to Minimal Mistakes, the free Jekyll theme by Michael Rose, by deleting this comment block.
 -->
