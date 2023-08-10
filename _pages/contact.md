@@ -19,7 +19,7 @@ toc: true
     <label for="message">Message</label>
     <textarea rows="5" name="message" id="message" placeholder="" required=""></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-    <label for="transaction-id">Screenshots/Capturas</label>
+    <label for="transaction-id">Screenshots/Capturas (max 25MB)</label>
     <input type="file" name="attachment" accept="image/png, image/jpeg">
   </fieldset>
   <input type="submit" value="Submit">
