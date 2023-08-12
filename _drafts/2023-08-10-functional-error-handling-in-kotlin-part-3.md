@@ -464,7 +464,18 @@ fun main() {
 }
 ```
 
-TODO
+The `recover` function takes a lambda in the context of a logical error of type `E`, and a second lambda that is a function having as input the error of the same type. Both lambda must return a value of type `A`. The formal definition of the function is the following:
+
+```kotlin
+// Arrow Kt Library
+@RaiseDSL
+public inline fun <Error, A> recover(
+    @BuilderInference block: Raise<Error>.() -> A,
+    @BuilderInference recover: (error: Error) -> A,
+): A = fold(block, { throw it }, recover, ::identity)
+```
+
+As we can see, the `recover` function is just a wrapper around a `fold` function that doesn't handle exception and doesn't transform the result of the `block` lambda.
 
 What if we want to convert a computation in the `Raise<E>` context to a function returning an `Either<E, A>`, a `Result<A>`, an `Option<A>` or a `A?`? Well, nothing easier than that. The Arrow library provides all the tools to convert a computation in the `Raise<E>` context to a wrapped type. We can use the `either`, `result`, `option`, and `nullable` builders we saw in the previous articles. In fact, version 1.2.0 of Arrow completely reviewed the implementation of such builders, defining them as wrappers around the `fold` function. 
 
