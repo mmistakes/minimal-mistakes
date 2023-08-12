@@ -29,22 +29,6 @@ _“It’s one of the great fallacies, it seems to me,” said Lee, “that time
 
 -- J Steinbeck, "East of Eden"
 
-_I hope I’m not so small-souled as to take satisfaction in being missed._
-
--- J Steinbeck, "East of Eden"
-
-_All great and precious things are lonely._
-
--- J Steinbeck, "East of Eden"
-
-_The split second has been growing more and more important to us. And as human activities become more and more intermeshed and integrated, the split tenth of a second will emerge, and then a new name must be made for the split hundredth, until one day, although I don’t believe it, we’ll say, “Oh, the hell with it. What’s wrong with an hour?”_
-
--- J Steinbeck, "East of Eden"
-
-_Every man has a retirement picture in which he does those things he never had time to do—makes the journeys, reads the neglected books he always pretended to have read._
-
--- J Steinbeck, "East of Eden"
-
 ## Appearing vs being
 
 _You can boast about anything if it’s all you have. Maybe the less you have, the more you are required to boast._
@@ -154,7 +138,7 @@ _In human affairs of danger and delicacy successful conclusion is sharply limite
 
 -- J Steinbeck, "East of Eden"
 
-## Society
+## Society & emotions
 
 _The church and the whorehouse arrived in the Far West simultaneously. And each would have been horrified to think it was a different facet of the same thing. But surely they were both intended to accomplish the same thing: the singing, the devotion, the poetry of the churches took a man out of his bleakness for a time, and so did the brothels._
 
@@ -171,6 +155,30 @@ _Isn’t it strange that today we have forgotten this? We remember World War I a
 they kept order the way our poor species has ever learned to keep order. We think there must be better ways but we never learn them—always the whip, the rope, and the rifle.
 
 -- J Steinbeck, "East of Eden"
+
+_I hope I’m not so small-souled as to take satisfaction in being missed._
+
+-- J Steinbeck, "East of Eden"
+
+_All great and precious things are lonely._
+
+-- J Steinbeck, "East of Eden"
+
+_The split second has been growing more and more important to us. And as human activities become more and more intermeshed and integrated, the split tenth of a second will emerge, and then a new name must be made for the split hundredth, until one day, although I don’t believe it, we’ll say, “Oh, the hell with it. What’s wrong with an hour?”_
+
+-- J Steinbeck, "East of Eden"
+
+_Every man has a retirement picture in which he does those things he never had time to do—makes the journeys, reads the neglected books he always pretended to have read._
+
+-- J Steinbeck, "East of Eden"
+
+_"And I like large parties. They're so intimate. At small parties there isn't any privacy."_
+
+-- F S Fitzgerald, "The great Gatsby"
+
+_"Everyone suspects himself of at least one of the cardinal virtues"_
+
+-- F S Fitzgerald, "The great Gatsby"
 
 ### Hierarchy and class
 
@@ -210,17 +218,30 @@ _“Maybe everyone is too rich. I have noticed that there is no dissatisfaction 
 
 -- J Steinbeck, "East of Eden"
 
-_And in our time, when a man dies—if he has had wealth and influence and power and all the vestments that arouse envy, and after the living take stock of the dead man’s property and his eminence and works and monuments—the question is still there: Was his life good or was it evil?—which is another way of putting Croesus’s question. Envies are gone, and the measuring stick is: “Was he loved or was he hated? Is his death felt as a loss or does a kind of joy come of it?”_
+_And in our time, when a man dies — if he has had wealth and influence and power and all the vestments that arouse envy, and after the living take stock of the dead man’s property and his eminence and works and monuments — the question is still there: Was his life good or was it evil? — which is another way of putting Croesus’s question. Envies are gone, and the measuring stick is: “Was he loved or was he hated? Is his death felt as a loss or does a kind of joy come of it?”_
 
 -- J Steinbeck, "East of Eden"
 
-_He thought of Sam Hamilton. He had knocked on so many doors. He had the most schemes and plans, and no one would give him any money. But of course—he had so much, he was so rich. You couldn’t give him any more. Riches seem to come to the poor in spirit, the poor in interest and joy. To put it straight—the very rich are a poor bunch of bastards. He wondered if that were true. They acted that way sometimes._
+_Riches seem to come to the poor in spirit, the poor in interest and joy. To put it straight — the very rich are a poor bunch of bastards._
 
 -- J Steinbeck, "East of Eden"
 
 
-## Knowledge
+## On being knowledgeable
 
 _The medical profession is unconsciously irritated by lay knowledge._
 
 -- J Steinbeck, "East of Eden"
+
+
+## Learning
+
+_There is only one corner of the universe you can be certain of improving, and that is your own self._
+
+-- A Huxley
+
+## Mathematics 
+
+_One of the most painful parts about teaching mathematics is seeing students damaged by the cult of the genius. The genius cult tells students it's not worth doing mathematics unless you're the best at mathematics, because those special few are the only ones whose contributions matter. We don't treat any other subject that way!_
+
+-- J Ellenberg, "How not to be wrong"
