@@ -782,7 +782,38 @@ class LiveJobs : Jobs {
 }
 ```
 
-We decided to handle any possible error from the communication with our hypothetical database with a `GenericError` typed error.   
+We decided to handle any possible error from the communication with our hypothetical database with a `GenericError` typed error. 
+
+Next, we need to add a function on a list of `Job` that retrieve the maximum salary. Let's call it `maxSalary`:
+
+```kotlin
+context (Raise<JobError>)
+private fun List<Job>.maxSalary(): Salary =
+    if (isEmpty()) {
+        raise(GenericError("No jobs found"))
+    } else {
+        this.maxBy { it.salary.value }.salary
+    }
+```
+
+Again, we decided to raise a `GenericError` in case of an empty list. Now, we have all the bricks to implement the `getSalaryGapWithMax` function. We can do it in the `JobService` class:
+
+```kotlin
+class JobsService(private val jobs: Jobs, private val converter: CurrencyConverter) {
+    // Omissis
+    context (Raise<JobError>)
+    fun getSalaryGapWithMax(jobId: JobId): Double {
+        val job: Job = jobs.findById(jobId)
+        val jobList: List<Job> = jobs.findAll()
+        val maxSalary: Salary = jobList.maxSalary()
+        return maxSalary.value - job.salary.value
+    }
+}
+```
+
+It should be clear which is the advantage of using the `Raise<E>` context: We can write the `getSalaryGapWithMax` function without the need to call any transformation or handle any possible error. We used just plain types as if we were interested only in the happy path. The `Raise<E>` context will do everything else for us. We didn't even need to use the `bind` function to compose the computations. Perfection.
+
+TODO: Add the code of the main function
 
 ## X. Appendix: Maven Configuration
 
