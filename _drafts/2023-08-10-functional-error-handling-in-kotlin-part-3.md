@@ -477,6 +477,8 @@ public inline fun <Error, A> recover(
 
 As we can see, the `recover` function is just a wrapper around a `fold` function that doesn't handle exception and doesn't transform the result of the `block` lambda.
 
+## 4. Converting `Raise<E>` Computations to a Wrapped Type
+
 What if we want to convert a computation in the `Raise<E>` context to a function returning an `Either<E, A>`, a `Result<A>`, an `Option<A>` or a `A?`? Well, nothing easier than that. The Arrow library provides all the tools to convert a computation in the `Raise<E>` context to a wrapped type. We can use the `either`, `result`, `option`, and `nullable` builders we saw in the previous articles. In fact, version 1.2.0 of Arrow completely reviewed the implementation of such builders, defining them as wrappers around the `fold` function. 
 
 Let's start with `Either<E, A>`. The `either` builder is defined as:
@@ -753,6 +755,34 @@ public class ResultRaise(private val raise: Raise<Throwable>) : Raise<Throwable>
 ```
 
 Here the `fold` function is the one defined in the `Result<A>` type, which takes two lambdas: The first one is called in case of success and the second one in case of failure.
+
+## 5. Composing `Raise<E>` Computations
+
+We saw in the previous articles of the series that one of the main strengths of the Arrow library is the ability to compose computations returning a wrapper type without the need to use the `map` and `flatMap` functions.
+
+For the computations in the `Raise<E>` context, the above sentence is true also. As we did in the previous articles, we'll prove it implementing a function that returns the gap between the salary of a given job and the salary of the job with the highest salary among all companies. We'll call this function `getSalaryGapWithMax`.
+
+To implement it, we need first to ass a new method to the `Jobs` module, the `findAll` function returning all the jobs listed in our database:
+
+```kotlin
+interface Jobs {
+    // Omissis
+    context (Raise<JobError>)
+    fun findAll(): List<Job>
+}
+
+class LiveJobs : Jobs {
+    // Omissis
+    context(Raise<JobError>)
+    override fun findAll(): List<Job> = catch({
+        JOBS_DATABASE.values.toList()
+    }) { _: Throwable ->
+        raise(GenericError("An error occurred while retrieving all the jobs"))
+    }
+}
+```
+
+We decided to handle any possible error from the communication with our hypothetical database with a `GenericError` typed error.   
 
 ## X. Appendix: Maven Configuration
 
