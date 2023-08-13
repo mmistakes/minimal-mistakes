@@ -793,3 +793,7 @@ partial_dependence_plot(estimator, df[features], ["serum_creatinine", "ejection_
 
 
 The resulting contour plot comes with no surprises. As such, patients with the highest probability of survival have ejection fractions in the range from 35% to 60% with serum creatinine readings below 1 mg/dL. On the other hand, for serum creatinine levels above 2 mg/dL, patients with either very low or very high ejection fractions are associated with the highest probabilities of dying. 
+
+# References
+
+1. Chicco, D., Jurman, G. Machine learning can predict survival of patients with heart failure from serum creatinine and ejection fraction alone. BMC Med Inform Decis Mak 20, 16 (2020). https://doi.org/10.1186/s12911-020-1023-5
