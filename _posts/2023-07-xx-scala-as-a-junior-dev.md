@@ -45,9 +45,7 @@ add1ToAll() // List(2, 3, 4)
 add1ToAll() // List(3, 4, 5)
 ```
 
-This produces non-deterministic code with side-effects, which can lead to bugs that are hard to find because they might appear only after a very specific and/or long sequence of events.
-
-Another benefit of the functional programming approach is that it makes it easier to reason about the code. We can have "local" reasoning, meaning that we can operate on a scope without having to worry about the rest of the program:
+Because we have side effects, it's hard to tell what the behavior of the program is (what it does and in which cases), which can lead to an incorrect reading of the code and to bugs. That's another benefit of the functional programming approach: it is easier to reason about the code. We can have "local" reasoning, meaning that we can operate on a scope without having to worry about the rest of the program:
 
 ```scala
 // non-local reasoning
@@ -75,19 +73,16 @@ Being able to pass functions as arguments, and to return functions, helps to wri
 class MyArray[A](size: Int) {
   private val container = ???
   // ...
-  def map[B](f: A => B): MyArray[B] = {
-    val a = new MyArray[B](size)
-    for (i <- 0 until size)
-      a(i) = f(container(i))
-    a
-  }
+  def map[B](f: A => B): MyArray[B] = ???
 }
 
 MyArray(1, 2, 3).map(x => x + 1) // MyArray(2, 3, 4)
 MyArray("a", "b", "c").map(x => x + "z") // MyArray("az", "bz", "cz")
 ```
 
-In imperative-style, we can't really do that. For each transformation, we need to manually initialize a new collection, iterate over the original one, and then apply the transformation to each element. This is not only more code, but it's also less readable (we need to read the entire block to understand it).
+You can find a complete example in the [Scala Essential Courses](https://rockthejvm.com/courses/enrolled/830425)
+
+You could ask, "why would I use `map` when I can use loops ?". Well, for each transformation, we need to manually initialize a new collection, iterate over the original one, and then apply the transformation to each element. This is not only more code, but it's also less readable (we need to read the entire block to understand it).
 
 ```scala
 // imperative-style
@@ -134,6 +129,8 @@ val longUglyThing: Int =
     .sum
 ```
 
+You can activate an option in Metals (a scala language server for IDEs) to show the inferred types as a decoration in the editor, which I now use most of the time. I recommend the "minimal" setting option because it shows only relevant types (parameters, return types...).
+
 #### 1.2.2. Mix of object-oriented programming and functional programming
 
 Scala has been a pioneer in the mixing of these two paradigms and has been (and still is!) an inspiration for many languages. We benefit from the modularity of objects while having the safety and expressivity of functional programming. Also, unlike some other functional languages, it allows the usage of mutable variables, which can lead to performance improvements.
@@ -168,7 +165,38 @@ Future(1 + 1)
   .flatMap(x => Future(x + 1))
 ```
 
-Which is much more pleasant to read. But implicits comes with a trade-off: they can be hard to understand at first, and might lead to unexpected behaviors where the wrong implicit is injected. Especially when there are multiple implicits of the same type in the scope (look at the implicit resolution process to avoid this). Still, it is a very powerful feature that helps in making the code more expressive by masking some boilerplates (I know that I'm giving `global` as execution context, so I don't want to see it each time).
+Which is much more pleasant to read.
+
+Implicits allows to have `type classes`, which define a generic behavior that is to be implemented with a specific type. It can be seen as a way to automatically extends a type with new behaviors if and only if their corresponding implementations are present in the current scope. It is particularly powerful in library design as it helps in decoupling the code by keeping the core behavior in the class and the "required" behavior in the type class. For instance:
+
+```scala
+trait Animal
+case class Cat(name: String, age: Int) extends Animal
+case class Dog(name: String, age: Int) extends Animal
+
+trait InfoExtractor[T]:
+  def extractInfo(t: T): String
+
+extension [T <: Animal](t: T) def serialize(using s: InfoExtractor[T]): String = s.extractInfo(t)
+
+given InfoExtractor[Cat] with { def extractInfo(t: Cat) = s"Cat: ${t.name}, ${t.age}" }
+given InfoExtractor[Dog] with { def extractInfo(t: Dog) = s"Dog: ${t.name}, ${t.age}" }
+
+val cat = Cat("Scala", 11)
+val dog = Dog("Java", 25)
+
+cat.serialize // "Cat: Scala, 11"
+dog.serialize // "Dog: Java, 25"
+```
+
+We could use standard interfaces to reproduce type classes, but then we would have to manually pass the implementation each time which has 2 drawbacks:
+
+- it is cumbersome to write and it pollutes the code with "context" arguments (arguments that will always be the same in the current scope)
+- when changing the implementation, it must be done everywhere to keep the same behavior and we might forget some places, leading to unexpected behaviors
+
+You can find more about implicits (also called given/using clauses in Scala 3) in this [article](https://blog.rockthejvm.com/scala-3-given-using/)
+
+But implicits comes with a trade-off: they can be hard to understand at first, and might lead to unexpected behaviors where the wrong implicit is injected. Especially when there are multiple implicits of the same type in the scope (look at the implicit resolution process to avoid this). Still, it is a very powerful feature that helps in making the code more expressive by masking some boilerplates (I know that I'm giving `global` as execution context, so I don't want to see it each time).
 
 #### 1.2.5. Conciseness
 
@@ -266,7 +294,7 @@ I have also had the chance to join the volunteering team of Scala Days Madrid 20
 
 #### 2.2.1. Personal difficulties
 
-##### 2.2.1.1. Functions
+##### 2.2.1.1. Functions as value
 
 I was already a bit familiar with functions as parameters (callbacks in JavaScript, usage of `map`, `filter`, etc.), so this part was okay. But the one that was a bit more difficult was the usage of functions as return values. However, after a few examples and some practice, it became easier. It is another mindset, but it is so helpful once you get it. For instance when you have a method with several parameters and some of them are always the same, you can create a function that takes the "common" parameters and returns a function that takes the rest of the parameters. This way, only the "relevant" parameters appear in the call.
 
@@ -327,7 +355,7 @@ val res: Option[B] = getA.flatMap(a => getB(a))
 
 This is possible because the return type of the function of `flatMap` is constraint to be an `Option`
 
-##### 2.2.1.2 Variance
+##### 2.2.1.3 Variance
 
 I had a hard time understanding variance at first because the first time I encountered it was when I got an error like `[...] is in covariance position` and had absolutely no idea what it meant. After a few researches, I understood the reason behind it. Coming from OOP, covariance felt like an extension of inheritance (with some constraints to guarantee type-safety), so it was okay. But contravariance is like "reverse inheritance," which was a disturbing concept at first (I liked the example of `Animal` and `Vet` from the courses).
 
@@ -341,13 +369,55 @@ There are some constraints to guarantee type-safety, but the idea is here
 
 #### 2.2.2. Tips
 
-##### 2.2.2.1. Implicits
+##### 2.2.2.1 Evaluation
 
-Implicits are awesome, they give us so much power, but they can be very confusing. So it might be a good thing to understand them properly before using them, and especially how the implicit resolution is done. And also take a few minutes to think "am I using it because it's fun / looks smart or because it will save me from passing the same arguments tens of times ?". It can really helps in "cleaning" the code by keeping only the relevant arguments on sight, but abusing them produce code that is hard to understand. Because we need to keep the context in mind, and it's not always easy to do so.
+In Scala, everything is an expression, meaning that it is evaluated and has a value. It contrasts to imperative languages where everything is an instruction that may not return a value (such as `void` in Java). Scala wraps the `void` type from Java into `Unit`. Additionally, there are two modes of evaluating method/function parameters:
 
-There is an option in Metals to show the implicits as a decoration in the editor, that I personally use most of the time.
+- by-value: the value is evaluated before the method is called
+- by-name: the value is evaluated when it is used in the method (and each time it is used). It is represented by an arrow before the parameter's type: `=> ...`
 
-##### 2.2.2.2 `Option`, `Try`... and monads in general
+```scala
+import scala.util.Random
+
+def byValue(t: Int): Seq[Int] =
+  for 
+    _ <- 0 until 3
+  yield t
+
+def byName(t: => Int): Seq[Int] =
+  for 
+    _ <- 0 until 3
+  yield t
+
+byValue(Random.nextInt(10000))  // : Seq[Int] = Seq(2551, 2551, 2551)
+byName(Random.nextInt(10000))   // : Seq[Int] = Seq(6419, 9607, 1189)
+```
+
+It is very important to understand the difference between these two, especially when dealing with side effects or if you want to enhance performances (e.g. when a parameter is not used because of a condition, it is not necessary to evaluate it, especially if it is a long computation).
+
+##### 2.2.2.2. Immutability
+
+To guarantee immutability you obviously need a value (which is immutable otherwise it is a variable), but also immutable types. For instance
+
+```scala
+class A(var x: Int) // mutable type
+
+val a = new A(1)
+a.x = 2
+a.x                 // : Int = 2 <-- no immutability
+```
+
+If you don't have these 2 criteria, then you do not have immutability, and your code is subject to side-effects
+
+##### 2.2.2.3. Implicits
+
+Implicits are awesome, they give us so much power, but they can be very confusing. So it might be a good thing to understand them properly before using them, and especially how the implicit resolution is done. And also take a few minutes to think "am I using it because it's fun / looks smart or because it will save me from passing the same arguments tens of times ?".
+
+Because implicits can really help in "cleaning" the code by keeping only the relevant arguments on sight, but abusing them produce code that is hard to understand. Because we need to keep the context in mind, and it's not always easy to do so.
+
+There is an option in Metals to show the implicits as a decoration in the editor, that I use when dealing with a code with lots of implicits.
+
+##### 2.2.2.4 `Option`, `Try`... and monads in general
 
 Monads are a bit strange at first and you might feel like writing more code than necessary, but it's worth it, in both readability and maintainability. It makes a certain behavior explicit (possible nullity for `Option`, possible failure for `Try`...) and forces you to handle it, so the code is more robust.
 
@@ -384,7 +454,7 @@ Each monads has its own behavior (we can not use a `Try` to handle nullability f
 - filter the result with `filter` / `filterNot`
 - ...
 
-##### 2.2.2.3. Recursion instead of loops
+##### 2.2.2.5. Recursion instead of loops
 
 If you are not familiar with recursion, it is definitely worth learning it as Scala is working very nicely with recursion. They are usually more expressive and cleaner than loops, but the trade-off is that they are a bit less efficient.
 
@@ -458,7 +528,7 @@ def fiboWL(n: Int): Int = {
 
 I personally prefer the tail-rec approach as it is more expressive and easier to read. But if performances are critical, then the while-loop is the best solution.
 
-##### 2.2.2.4 `for-comprehension`
+##### 2.2.2.6. `for-comprehension`
 
 `for-comprehension` is syntactic sugar for `map` / `flatMap` / `filter` and can be used with any type that has these methods. It is very useful to chain operations on collections or on monads without having to nest them. They are Scala's idiomatic way to chain operations and help a lot in making the code easy to read. Therefore, you should get familiar with them. For instance, if we want to do a cartesian product of three lists:
 
@@ -508,3 +578,21 @@ for
   j <- list3
 yield (i, j)
 ```
+
+## 2.2.2.7. Type Inference
+
+Type inference is an awesome feature that makes developing much more pleasant. However, it is recommended to specify the type of public methods and fields as it helps in understanding the code. Personally, while I'm creating the method/fields, I don't specify the type, but once I'm done, I add it. This way, my screen does not turn red while coding, and if I need to refactor/correct the implementation and end up with the wrong type, the compiler will tell me instead of crashing at call-sites.
+
+## 3. Conclusion
+
+Scala is a very rich language with lots of features, and it can be a bit overwhelming at first. But it's actually all these features that attracted me to this language, for all the possibilities they offer. Thankfully, you don't need to master them all to start writing good Scala code (there are still a few advanced features for which I have had no usage yet). From my (short) experience, here is an example of a learning path:
+
+![Scala learning path](../images/learning-path.png)
+
+The recursive type one is literally mind-blowing; you won't believe it :exploding_head: (and here is a clickbait title for free :smile:)
+
+Also, don't hesitate to ask questions on the forums or community channels that you can find on the [Scala website](https://scala-lang.org/community/). The community is very welcoming and will be happy to help you.
+
+I hope you enjoyed reading this article and that it will help you in your journey with Scala. I tried to make it as complete as possible, but I might have forgotten some things. If you have any questions, feel free to ask me or the community.
+
+Happy coding! :technologist:

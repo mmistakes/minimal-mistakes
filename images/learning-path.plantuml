@@ -1,0 +1,75 @@
+@startuml learning-path
+
+' left to right direction
+skinparam ranksep 20
+
+(Object-oriented prog.) as OOP
+(Functional prog.) as FP
+circle " " as L1
+note left of FP
+  functions as value
+  recursion
+  immutability
+  higher-order functions
+end note
+note right of OOP
+  classes
+  interfaces
+  inheritance
+  polymorphism
+end note
+
+OOP   --> L1
+FP    --> L1
+
+(Generics) as Gen
+(Pattern matching) as Pattern
+(By-name & by-value) as NameVsValue
+(Sealed modifier) as Sealed
+(Type bounds) as Bounds
+(Lazy evaluation) as Lazy
+
+L1      --> Gen
+L1      --> Pattern
+L1      --> Lazy
+Gen     --> Bounds
+Lazy    --> NameVsValue
+Pattern --> Sealed
+
+(Monads) as Monads
+(Exceptions handling) as Exc
+(For-comprehensions) as ForComp
+circle " " as L2
+
+Bounds      --> L2
+Sealed      --> L2
+NameVsValue --> L2
+L2          --> Monads
+Monads      --> ForComp
+Monads      --> Exc
+
+(Implicits)
+(Type classes) as TP
+(Variance) as Var
+(Concurrent programming) as Conc
+circle " " as L3
+
+ForComp   --> L3
+Exc       --> L3
+L3        --> Implicits
+L3        --> Var
+Implicits --> Conc
+Implicits --> TP
+
+(Higher-kinded types) as HKT
+(Self types) as Self
+(Recursive types) as RecTpe
+circle " " as L4
+
+Conc    --> L4
+TP      --> L4
+Var     --> L4
+L4      --> HKT
+L4      --> Self
+Self    --> RecTpe
+@enduml
