@@ -1,7 +1,7 @@
 @startuml learning-path
 
 ' left to right direction
-skinparam ranksep 20
+skinparam ranksep 30
 
 (Object-oriented prog.) as OOP
 (Functional prog.) as FP
@@ -25,6 +25,7 @@ FP    --> L1
 (Generics) as Gen
 (Pattern matching) as Pattern
 (By-name & by-value) as NameVsValue
+(Case classes/object) as Case
 (Sealed modifier) as Sealed
 (Type bounds) as Bounds
 (Lazy evaluation) as Lazy
@@ -35,6 +36,7 @@ L1      --> Lazy
 Gen     --> Bounds
 Lazy    --> NameVsValue
 Pattern --> Sealed
+Pattern --> Case
 
 (Monads) as Monads
 (Exceptions handling) as Exc
@@ -42,6 +44,7 @@ Pattern --> Sealed
 circle " " as L2
 
 Bounds      --> L2
+Case        --> L2
 Sealed      --> L2
 NameVsValue --> L2
 L2          --> Monads
