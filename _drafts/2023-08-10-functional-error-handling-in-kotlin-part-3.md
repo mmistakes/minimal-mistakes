@@ -813,7 +813,30 @@ class JobsService(private val jobs: Jobs, private val converter: CurrencyConvert
 
 It should be clear which is the advantage of using the `Raise<E>` context: We can write the `getSalaryGapWithMax` function without the need to call any transformation or handle any possible error. We used just plain types as if we were interested only in the happy path. The `Raise<E>` context will do everything else for us. We didn't even need to use the `bind` function to compose the computations. Perfection.
 
-TODO: Add the code of the main function
+We can try the `getSalaryGapWithMax` function in the `main` function to get the gap between the salary of an Software Engineer at Apple and the maximum salary among all the jobs:
+
+```kotlin
+fun main() {
+    val service = JobsService(LiveJobs(), CurrencyConverter())
+    fold({ service.getSalaryGapWithMax(JobId(1)) },
+        { error -> println("An error was raised: $error") },
+        { salaryGap -> println("The salary gap is $salaryGap") })
+}
+```
+
+Since the salary of the Software Engineer at Apple is 70.000 USD and the maximum salary among all the jobs is 90.000 USD, the output of the program is the following:
+
+```text
+The salary gap is 20000.0
+```
+
+However, if we try to get the salary gap of a job that doesn't exist, let's say the `JobId(42)`, we'll get the following output:
+
+```text
+An error was raised: JobNotFound(jobId=JobId(value=42))
+```
+
+Everything works as expected.
 
 ## X. Appendix: Maven Configuration
 
