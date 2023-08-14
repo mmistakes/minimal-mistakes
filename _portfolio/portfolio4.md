@@ -3,11 +3,11 @@ title: "Re-QGAN: an optimized adversarial quantum circuit learning framework"
 excerpt: "Tech: Python, Qiskit, Git"
 header:
   image: assets/images/headerimg.png 
-  teaser: /assets/images/pandasteaser.png
+  teaser: /assets/images/reqgan.png
 collection: portfolio
 gallery:
-  - url: /assets/images/pandasgallery.png
-    image_path: /assets/images/pandasgallery.png
+  - url: /assets/images/reqgan.png
+    image_path: /assets/images/reqgan.png
    
 ---
 
