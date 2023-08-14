@@ -15,4 +15,4 @@ Adversarial learning represents a powerful technique for generating data statist
 
 {% include gallery caption="-" %}
 
-[Gihub Repository]([https://github.com/sandra-nguemto/data_wrangling_pandas](https://github.com/sandra-nguemto/Re-QGAN)https://github.com/sandra-nguemto/Re-QGAN)
+[Gihub Repository](https://github.com/sandra-nguemto/Re-QGAN)
