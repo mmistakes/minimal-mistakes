@@ -27,7 +27,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "utterance"
+  provider               : "utterances"
   disqus:
     shortname            : #"iamniddi"
   discourse:
