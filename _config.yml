@@ -12,19 +12,19 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "코더네임:니띠"
+title                    : "코더네임 : 니띠"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Robotics & ML"
 name                     : "iamniddi"
 description              : "오늘도 파이팅..."
 url                      : "https://iamniddi.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "iamniddi/iamniddi.github.io" #GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/icon.png"
 futrue                   : true
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "utterances"
@@ -93,15 +93,15 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : "G-M9VHDYQGSM"
+    anonymize_ip         : "false" #true, false (default)
 
 
 # Site Author
 author:
-  name             : "윤용원"
+  name             : "iamniddi"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "나는 놀라운 사람이다"
   location         : "부산"
@@ -287,3 +287,6 @@ defaults:
       comments:  true
       share: true
       related: true
+      show_date: true
+
+date_format: "%Y-%m-%d"
