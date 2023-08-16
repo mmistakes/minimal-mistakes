@@ -285,8 +285,9 @@ defaults:
       comments: true
       # share: true
       related: true
+      sidebar_main: true
       sidebar:
-        nav: "categories"
+        nav: "categories_"
 
 date_format: "%Y-%m-%d"
 
