@@ -9,17 +9,33 @@
 #   - title: "Sitemap"
 #     url: /sitemap/
 categories_:
-  - title: Title1
+  - title: Machine Learning
     children:
-      - title: "Categories1"
+      - title: "RL"
+        url: /categories/ROS
+      - title: "Classification"
+        url: /categories/Classification
+
+  - title: Robotics
+    children:
+      - title: "ROS"
+        url: /categories/ROS
+      - title: "EV3"
+        url: /categories/EV3
+      - title: "Deepracer"
+        url: /categories/Deepracer
+
+
+  - title: Electronic Engineering
+    children:
+      - title: "전자기학"
         url: /categories/categories1
-
-  - title: Title2
-    children:
-      - title: "Categories2"
-        url: /categories/categories2/
-
-  - title: Title3
-    children:
-      - title: "Categories3"
-        url: /categories/categories3/
+      - title: "전자회로"
+        url: /categories/categories2
+      - title: "회로이론"
+        url: /categories/categories3
+      - title: "논리회로"
+        url: /categories/categories4
+      - title: "신호와시스템"
+        url: /categories/categories5
+      - title: "C언어"
