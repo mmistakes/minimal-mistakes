@@ -254,6 +254,23 @@ compress_html:
     envs: development
 
 
+# # Defaults
+# defaults:
+#   # _posts
+#   - scope:
+#       path: ""
+#       type: posts
+#     values:
+#       layout: single
+#       author_profile: true
+#       read_time: true
+#       comments:  true
+#       share: true
+#       related: true
+#       show_date: true
+#       sidebar:
+#         nav: "main"
+      
 # Defaults
 defaults:
   # _posts
@@ -263,20 +280,22 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments:  true
-      share: true
-      related: true
+      read_time: #true
       show_date: true
+      comments: true
+      # share: true
+      related: true
+      sidebar:
+        nav: "categories"
 
 date_format: "%Y-%m-%d"
 
-sidebar-category:
-  - title: "카테고리"
-    children:
-      - title: "블로그"
-        url: "/blog"
-      - title: "카테고리B"
-        url:  "/CategoryB"
-      - title: "카테고리C"
-        url:  "/CategoryC"
+# sidebar-category:
+#   - title: "카테고리"
+#     children:
+#       - title: "블로그"
+#         url: "/blog"
+#       - title: "카테고리B"
+#         url:  "/CategoryB"
+#       - title: "카테고리C"
+#         url:  "/CategoryC"
