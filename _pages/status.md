@@ -31,9 +31,12 @@ intro:
 
 <!-- <center>Helmi 🟢 </center> -->
 
-Helmi is accessible through the LUMI environment daily between 13:00 EET and 08:00 EET. 
-Helmi will be unavailable due to maintenance on 25.08.2023
+Helmi is accessible through the LUMI environment daily between 13:00 EET and 08:00 EET.
 {: .notice--info}
+
+
+Helmi will be unavailable due to maintenance on 25.08.2023
+{: .notice--danger}
 
 <center>
 <style type="text/css">
