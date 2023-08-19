@@ -13,30 +13,41 @@ categories_:
     children:
       - title: "RL"
         url: /categories/RL
+        category: "RL"
       - title: "Classification"
         url: /categories/Classification
+        category: "Classification"
 
   - title: Robotics
     children:
       - title: "ROS"
         url: /categories/ROS
+        category: "ROS"
       - title: "EV3"
         url: /categories/EV3
+        category: "EV3"
       - title: "Deepracer"
         url: /categories/Deepracer
+        category: "Deepracer"
 
 
   - title: Electronic Engineering
     children:
       - title: "전자기학"
         url: /categories/electromagnetism
+        category: "electromagnetism"
       - title: "전자회로"
         url: /categories/electronic_circuit
+        category: "electronic_circuit"
       - title: "회로이론"
         url: /categories/circuit_theory
+        category: "circuit_theory"
       - title: "논리회로"
         url: /categories/logic_circuit
+        category: "logic_circuit"
       - title: "신호와시스템"
         url: /categories/signalling_system
+        category: "signalling_system"
       - title: "C언어"
         url: /categories/c_language
+        category: "c_language"

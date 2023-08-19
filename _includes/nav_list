@@ -7,7 +7,7 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
   <ul class="nav__items">
     <li>
-      <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
+      <span style="font-family:'global-font-family';font-size:70%">전체 글 수</style> <span style="font-family:'Coming Soon';font-size:110%">({{sum}})</style> 
     </li>
     {% for nav in navigation %}
       <li>
@@ -21,7 +21,11 @@
         <ul>
           {% for child in nav.children %}
           {% assign category = site.categories[child.category] | where_exp: "item", "item.hidden != true" %}
-            <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }} ({{ category.size }})</a></li>
+          {% assign count = 0 %}
+            {% if category.size != 0 %}
+              {% assign count = category.size %}
+            {% endif %}
+            <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }} ({{ count }})</a></li>
           {% endfor %}
         </ul>
         {% endif %}
