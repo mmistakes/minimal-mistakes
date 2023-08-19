@@ -12,7 +12,7 @@ categories_:
   - title: Machine Learning
     children:
       - title: "RL"
-        url: /categories/ROS
+        url: /categories/RL
       - title: "Classification"
         url: /categories/Classification
 
@@ -29,13 +29,14 @@ categories_:
   - title: Electronic Engineering
     children:
       - title: "전자기학"
-        url: /categories/categories1
+        url: /categories/electromagnetism
       - title: "전자회로"
-        url: /categories/categories2
+        url: /categories/electronic_circuit
       - title: "회로이론"
-        url: /categories/categories3
+        url: /categories/circuit_theory
       - title: "논리회로"
-        url: /categories/categories4
+        url: /categories/logic_circuit
       - title: "신호와시스템"
-        url: /categories/categories5
+        url: /categories/signalling_system
       - title: "C언어"
+        url: /categories/c_language
