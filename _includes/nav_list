@@ -1,4 +1,5 @@
 {% assign navigation = site.data.navigation[include.nav] %}
+{% assign sum = site.posts | size %}
 
 <nav class="nav__list">
   {% if page.sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>{% endif %}
