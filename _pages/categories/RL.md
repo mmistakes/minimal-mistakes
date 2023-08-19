@@ -4,6 +4,8 @@ layout: archive
 permalink: categories/RL
 author_profile: true
 sidebar_main : true
+categories:
+  - categories1
 ---
 
 {% assign posts = site.categories['RL']%}
