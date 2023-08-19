@@ -2,10 +2,9 @@
 title: "강화학습"
 layout: archive
 permalink: categories/RL
+published: true
 author_profile: true
 sidebar_main : true
-categories:
-  - categories1
 ---
 
 {% assign posts = site.categories['RL']%}
