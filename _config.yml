@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "iamniddi"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "나는 놀라운 사람이다"
+  bio              : #"나는 놀라운 사람이다"
   location         : "부산, 코리아"
   email            : "kksofum@naver.com"
   links:
