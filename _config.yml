@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "iamniddi"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : #"나는 놀라운 사람이다"
+  bio              : ""
   location         : "부산, 코리아"
   email            : "kksofum@naver.com"
   links:
@@ -114,9 +114,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/iamniddi"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/yong_1_e"
+    #- label: "Instagram"
+      #icon: "fab fa-fw fa-instagram"
+      #url: "https://www.instagram.com/yong_1_e"
 
 # Site Footer
 footer:
