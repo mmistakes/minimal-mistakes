@@ -1,11 +1,11 @@
 # main links
 main:
   - title: "Introduce"
-    url: "/about/"
+    #url: "/about/"
   - title: "Category"
-    url: "/categories/"
+    #url: "/categories/"
   - title: "Tags"
-    url: /tags/
+    #url: /tags/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
