@@ -925,6 +925,20 @@ fun getSalaryGapWithMaxInEur(jobId: JobId): Double {
 
 So, the `convertUsdToEurRaisingNegativeAmount` eventually rises an `NegativeAmount` typed error that is transformed into a `NegativeSalary` typed error and raised again.
 
+Well, now, we know how to compose different functions that can raise typed errors. What if we want to accumulate more than one error in a dedicated data structure? It's time to introduce the typed error accumulation in Arrow.
+
+## 6. Typed Error Accumulation
+
+Until now, we've seen how to raise and handle typed errors. However, we've always handled only one error at a time. What if we want to accumulate more than one error in a dedicated data structure? For example, say we have a list of `Job` and we want to find the gap with the maximum available salary in the database for each one.
+
+To better understand the need, let's define the signature of our function. To keep things simple, we'll use the `Either` data type to accumulate the errors:
+
+```kotlin
+fun getSalaryGapWithMax(jobIdList: List<JobId>): Either<NonEmptyList<JobError>, List<Double>>
+```
+
+We used the `arrow.core.NonEmptyList<A>` type from the Arrow library for the left part. In fact, if the computation fails for at least one of the `JobId` in the list, we know for sure that the returned list of error will have at least a value. So, we can use the `NonEmptyList<A>` type to model this constraint. The Arrow library defines also a type alias for the `NonEmptyList<A>` called `Nel<A>`. We'll not enter the details of the `NonEmptyList<A>` type, since this article is focused on typed errors rather than on data structures.
+
 ## X. Appendix: Maven Configuration
 
 As promised, here is the full Maven configuration we used in this article:
