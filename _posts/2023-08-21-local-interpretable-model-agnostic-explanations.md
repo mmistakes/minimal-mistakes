@@ -895,7 +895,7 @@ sns.barplot(feature_importances_tree, y="features", x="importance");
     
 **Figure 1. Feature Importances**
 <p align='center'>
-    <img src='/assets/img/posts/lime/feature_importance.png' width=800>
+    <img src='/assets/img/posts/LIME/feature_importance.png' width=800>
 </p>
     
 
@@ -1028,7 +1028,7 @@ explanation.plot()
     
 **Figure 2. Explanation. LIMExplainer**
 <p align='center'>
-    <img src='/assets/img/posts/lime/explanation_LIMExplainer.png' width=800>
+    <img src='/assets/img/posts/LIME/explanation_LIMExplainer.png' width=800>
 </p>
     
 
@@ -1201,7 +1201,7 @@ partial_dependence_plot_1d(estimator, X_train, "ejection_fraction")
     
 **Figure 3. Partial Dependence Plot. Ejection Fraction**
 <p align='center'>
-    <img src='/assets/img/posts/lime/pdp_ejection_fraction.png' width=800>
+    <img src='/assets/img/posts/LIME/pdp_ejection_fraction.png' width=800>
 </p>
     
 
@@ -1218,7 +1218,7 @@ partial_dependence_plot_1d(estimator, X_train, "serum_sodium")
     
 **Figure 4. Partial Dependence Plot. Serum Sodium**
 <p align='center'>
-    <img src='/assets/img/posts/lime/pdp_serum_sodium.png' width=800>
+    <img src='/assets/img/posts/LIME/pdp_serum_sodium.png' width=800>
 </p>
     
 
@@ -1271,7 +1271,7 @@ lime_explanation.show_in_notebook()
 
 **Figure 5. Explanation. LimeTabularExplainer**
 <p align='center'>
-    <img src='/assets/img/posts/lime/explanation_LimeTabularExplainer.png' width=800>
+    <img src='/assets/img/posts/LIME/explanation_LimeTabularExplainer.png' width=800>
 </p>
 
 
