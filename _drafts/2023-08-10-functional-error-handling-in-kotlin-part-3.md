@@ -838,6 +838,62 @@ An error was raised: JobNotFound(jobId=JobId(value=42))
 
 Everything works as expected.
 
+It could happen that in the same method we need to handle logic errors coming from different type hierarchies. For example, imagine we want to get the above salary gap in EUR and not in USD. We need to use the converter we already introduced in the previous sections. However, to show how to handle different error type hierarchies, we'll slightly change the previous definition of the converter, introducing a new error type:
+
+```kotlin
+sealed interface CurrencyConversionError
+data object NegativeAmount : CurrencyConversionError
+```
+
+Then, we change the `convertUsdToEur` function to raise the new `NegativeAmount` error in case of a negative amount:
+
+```kotlin
+class RaiseCurrencyConverter(private val currencyConverter: CurrencyConverter) {
+    // Omissis
+    context (Raise<NegativeAmount>)
+    fun convertUsdToEurRaisingNegativeAmount(amount: Double?): Double = catch({
+        currencyConverter.convertUsdToEur(amount)
+    }) { _: IllegalArgumentException ->
+        raise(NegativeAmount)
+    }
+}
+```
+
+Now, we can use this new method to get the salary gap in EUR:
+
+```kotlin
+class JobsService(private val jobs: Jobs, private val converter: RaiseCurrencyConverter) {
+    // Omissis
+    context (Raise<JobError>)
+    fun getSalaryGapWithMaxInEur(jobId: JobId): Double {
+        val job: Job = jobs.findById(jobId)
+        val jobList: List<Job> = jobs.findAll()
+        val maxSalary: Salary = jobList.maxSalary()
+        val salaryGap = maxSalary.value - job.salary.value
+        return converter.convertUsdToEurRaisingNegativeAmount(salaryGap)
+    }
+}
+```
+
+However, if we try to compile the above code, we hurt the compiler complaining about the following error:
+
+```text
+[ERROR] /Users/rcardin/Documents/functional-error-handling-in-kotlin/src/main/kotlin/in/rcard/raise/RaiseErrorHandling.kt:[119,26] No required context receiver found: Cxt { context(arrow.core.raise.Raise<`in`.rcard.raise.NegativeAmount>) public final fun convertUsdToEurRaisingNegativeAmount(amount: kotlin.Double?): kotlin.Double defined in `in`.rcard.raise.RaiseCurrencyConverter[SimpleFunctionDescriptorImpl@3d8d926f] }
+```
+
+In fact, the `getSalaryGapWithMaxInEur` defines only the `Raise<JobError>` context, but not the `Raise<NegativeAmount>` context. So, it can't use a function that defines also the `Raise<NegativeAmount>`, as the `convertUsdToEurRaisingNegativeAmount` does. Here, we have two options. The first one is to add the missing context to the `getSalaryGapWithMaxInEur` function:
+
+```kotlin
+context (Raise<JobError>, Raise<NegativeAmount>)
+fun getSalaryGapWithMaxInEur(jobId: JobId): Double
+```
+
+In this way, we're exposing the internals of the function, saying that we cannot handle the `NegativeAmount` error locally, and asking the caller to handle it for us.
+
+The second option is to handle the error locally and transform the `NegativeAmount` error into a `JobError` error.
+
+TODO
+
 ## X. Appendix: Maven Configuration
 
 As promised, here is the full Maven configuration we used in this article:
