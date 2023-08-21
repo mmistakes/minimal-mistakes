@@ -890,9 +890,40 @@ fun getSalaryGapWithMaxInEur(jobId: JobId): Double
 
 In this way, we're exposing the internals of the function, saying that we cannot handle the `NegativeAmount` error locally, and asking the caller to handle it for us.
 
-The second option is to handle the error locally and transform the `NegativeAmount` error into a `JobError` error.
+The second option is to handle the error locally and transform the `NegativeAmount` error into a `JobError` error. The Arrow library provides an handy function to do this: the `withError` function:
 
-TODO
+```kotlin
+// Arrow library
+@RaiseDSL
+public inline fun <Error, OtherError, A> Raise<Error>.withError(
+    transform: (OtherError) -> Error,
+    @BuilderInference block: Raise<OtherError>.() -> A
+): A {
+    contract {
+        callsInPlace(transform, AT_MOST_ONCE)
+    }
+    return recover(block) { raise(transform(it)) }
+}
+```
+
+The `withError` function takes a function that transforms an error of type `OtherError` (`NegativeAmount` in our example) into an error of type `Error` (`NegativeSalary` belonging to the `JobError` hierarchy), and a block of code that can raise an error of type `OtherError`. If the block of code raises an error of type `OtherError`, the `withError` function will transform it into an error of type `Error` and raise it. Otherwise, it will return the result of the block of code.
+
+Applied to our example, the `getSalaryGapWithMaxInEur` function becomes:
+
+```kotlin
+context (Raise<JobError>)
+fun getSalaryGapWithMaxInEur(jobId: JobId): Double {
+    val job: Job = jobs.findById(jobId)
+    val jobList: List<Job> = jobs.findAll()
+    val maxSalary: Salary = jobList.maxSalary()
+    val salaryGap = maxSalary.value - job.salary.value
+    return withError({ NegativeSalary }) {
+        converter.convertUsdToEurRaisingNegativeAmount(salaryGap)
+    }
+}
+```
+
+So, the `convertUsdToEurRaisingNegativeAmount` eventually rises an `NegativeAmount` typed error that is transformed into a `NegativeSalary` typed error and raised again.
 
 ## X. Appendix: Maven Configuration
 
