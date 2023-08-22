@@ -2,8 +2,6 @@
 title: "Sring core"
 layout: single
 permalink: /spring/spring-core/
-categories: spring
-tag: [java, spring]
 author_profile: false
 toc: true
 sidebar:

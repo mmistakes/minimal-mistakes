@@ -1,15 +1,21 @@
 # main links
 main:
-  - title: "Category"
-    url: /categories/
-  - title: "Tag"
-    url: /tags/
+  - title: "운영체제"
+    url: /
+  - title: "데이터베이스"
+    url: /
+  - title: "알고리즘"
+    url: /
   - title: "Search"
     url: /search/
   - title: "Java"
     url: /java/java-basic/
   - title: "Spring"
     url: /spring/spring-core/
+  - title: "Category"
+    url: /categories/
+  - title: "Tag"
+    url: /tags/
   - title: "All"
     url: /collection-archive/
 
@@ -25,9 +31,6 @@ docs:
     children:
       - title: "Array"
         url: "/"
-        children:
-          - title: "test"
-          url: "/"
       - title: "LinkedList"
         url: "/"
       - title: "Stack"
