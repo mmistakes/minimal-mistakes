@@ -931,13 +931,59 @@ Well, now, we know how to compose different functions that can raise typed error
 
 Until now, we've seen how to raise and handle typed errors. However, we've always handled only one error at a time. What if we want to accumulate more than one error in a dedicated data structure? For example, say we have a list of `Job` and we want to find the gap with the maximum available salary in the database for each one.
 
-To better understand the need, let's define the signature of our function. To keep things simple, we'll use the `Either` data type to accumulate the errors:
+To better understand the need, let's define the signature of our function in our `JobsService` module. As usual, we'll use the `Raise<A>` context to express the typed error part of the computation:
 
 ```kotlin
-fun getSalaryGapWithMax(jobIdList: List<JobId>): Either<NonEmptyList<JobError>, List<Double>>
+
+context (Raise<NonEmptyList<JobError>>)
+fun getSalaryGapWithMax(jobIdList: List<JobId>): List<Double>
 ```
 
-We used the `arrow.core.NonEmptyList<A>` type from the Arrow library for the left part. In fact, if the computation fails for at least one of the `JobId` in the list, we know for sure that the returned list of error will have at least a value. So, we can use the `NonEmptyList<A>` type to model this constraint. The Arrow library defines also a type alias for the `NonEmptyList<A>` called `Nel<A>`. We'll not enter the details of the `NonEmptyList<A>` type, since this article is focused on typed errors rather than on data structures.
+We used the `arrow.core.NonEmptyList<A>` type from the Arrow library for the error part. In fact, if the computation fails for at least one of the `JobId` in the list, we know for sure that the returned list of error will have at least a value. So, we can use the `NonEmptyList<A>` type to model this constraint. The Arrow library defines also a type alias for the `NonEmptyList<A>` called `Nel<A>`. We'll not enter the details of the `NonEmptyList<A>` type, since this article is focused on typed errors rather than on data structures. If you want to know more about the non-empty collections, you can read the [official documentation](https://arrow-kt.io/learn/collections-functions/non-empty/).
+
+As you might guess, the Arrow library gives us a dedicated function to execute a transformation on a list of value and accumulate the errors in a `NonEmptyList<A>`. The function is called `mapOrAccumulate` and has the following structure:
+
+```kotlin
+// Arrow Kt library
+@RaiseDSL
+public inline fun <Error, A, B> Raise<NonEmptyList<Error>>.mapOrAccumulate(
+    iterable: Iterable<A>,
+    @BuilderInference transform: RaiseAccumulate<Error>.(A) -> B
+): List<B> {
+    val error = mutableListOf<Error>()
+    val results = ArrayList<B>(iterable.collectionSizeOrDefault(10))
+    for (item in iterable) {
+        fold<NonEmptyList<Error>, B, Unit>(
+            { transform(RaiseAccumulate(this), item) },
+            { errors -> error.addAll(errors) },
+            { results.add(it) }
+        )
+    }
+    return error.toNonEmptyListOrNull()?.let { raise(it) } ?: results
+}
+```
+
+Quite surprisingly, applies the `fold` function to each element of the collection. In case of tyoed error during the application of the `transform` lambda, it is accumulated in a dedicated list. The same happens if the execution of the `transform` lambda succeeds. Finally, the if the list of errors is not empty, it is raised, otherwise the list of results is returned.
+
+As we can see, the `mapOrAccumulate` function uses a dedicated implementation of the `Raise<A>` context called `RaiseAccumulate<A>`:
+
+```kotlin
+// Arrow Kt library
+public open class RaiseAccumulate<Error>(
+  public val raise: Raise<NonEmptyList<Error>>
+) : Raise<Error>
+```
+
+The `RaiseAccumulate<A>` context specializes the `raise` method to create a `NonEmptyList<E>` containing the risen logic typed error:
+
+```kotlin
+// Arrow Kt library
+@RaiseDSL
+public override fun raise(r: Error): Nothing = 
+    raise.raise(nonEmptyListOf(r))
+```
+
+TODO
 
 ## X. Appendix: Maven Configuration
 
