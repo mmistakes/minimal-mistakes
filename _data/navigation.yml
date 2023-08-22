@@ -25,6 +25,9 @@ docs:
     children:
       - title: "Array"
         url: "/"
+        children:
+          - title: "test"
+          url: "/"
       - title: "LinkedList"
         url: "/"
       - title: "Stack"
