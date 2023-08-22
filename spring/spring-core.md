@@ -2,10 +2,15 @@
 title: "Sring core"
 permalink: /spring/spring-core/
 excerpt: "spring-core"
+categories: spring
+tag: [java, spring]
+author_profile: false
 last_modified_at: 2023-08-22T08:48:05-04:00
 redirect_from:
   - /theme-setup/
 toc: true
+sidebar:
+  nav: "docs"
 ---
 
 ## Spring Core
