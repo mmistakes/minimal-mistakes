@@ -1,5 +1,6 @@
 ---
 title: "Sring core"
+layout: "single"
 permalink: /spring/spring-core/
 excerpt: "spring-core"
 categories: spring
