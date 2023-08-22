@@ -7,9 +7,9 @@ main:
   - title: "Search"
     url: /search/
   - title: "Java"
-    url: /java/
+    url: /java/java-basic
   - title: "Spring"
-    url: /spring/
+    url: /spring/spring-core
 
 docs:
   - title: "대목차"
