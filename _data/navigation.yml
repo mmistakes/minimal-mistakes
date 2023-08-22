@@ -12,28 +12,39 @@ main:
     url: /spring/spring-core
 
 docs:
-  - title: "대목차"
-    children:
-      - title: "Category"
-        url: "/categories/"
-      - title: "Tag"
-        url: "/tags/"
+  # - title: "대목차"
+  #   children:
+  #     - title: "Category"
+  #       url: "/categories/"
+  #     - title: "Tag"
+  #       url: "/tags/"
 
-  - title: "DataStructure"
+  - title: "자료구조"
     children:
       - title: "Array"
         url: "/"
       - title: "LinkedList"
         url: "/"
+      - title: "Stack"
+        url: "/"
+      - title: "Queue"
+        url: "/"
 
-  - title: "OS"
+  - title: "알고리즘"
+
+  - title: "운영체제"
     children:
       - title: "OS1"
         url: "/"
       - title: "OS2"
         url: "/"
 
-  - title: "Database"
+  - title: "네트워크"
+    children:
+      - title: "네트워크 7계층"
+        url: "/"
+
+  - title: "데이터베이스"
     children:
       - title: "DB1"
         url: "/"
@@ -49,8 +60,14 @@ docs:
 
   - title: "Spring"
     children:
-      - title: "스프링기본"
+      - title: "스프링 Core"
         url: "/spring/spring-core/"
+      - title: "스프링 MVC"
+        url: "/spring/spring-mvc/"
+      - title: "스프링 DB"
+        url: "/spring/spring-db/"
+      - title: "스프링 JPA"
+        url: "/spring/spring-jpa/"
 
   - title: "SQL"
     children:
