@@ -136,7 +136,7 @@ footer:
       icon: "fab fa-fw fa-twitter-square"
       # url:
     - label: "Facebook"
-       icon: "fab fa-fw fa-facebook-square"
+      icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
