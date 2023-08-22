@@ -8,6 +8,8 @@ main:
     url: /search/
   - title: "Java"
     url: /java/
+  - title: "Spring"
+    url: /spring/
 
 docs:
   - title: "대목차"
@@ -48,7 +50,7 @@ docs:
   - title: "Spring"
     children:
       - title: "스프링기본"
-        url: "/"
+        url: "/spring/spring-core/"
 
   - title: "SQL"
     children:
