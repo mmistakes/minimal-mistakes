@@ -4,6 +4,57 @@ main:
     url: /categories/
   - title: "Tag"
     url: /tags/
+  - title: "Search"
+    url: /search/
+
+docs:
+  - title: "대목차"
+    children:
+      - title: "Category"
+        url: "/categories/"
+      - title: "Tag"
+        url: "/tags/"
+
+  - title: "DataStructure"
+    children:
+      - title: "Array"
+        url: "/"
+      - title: "LinkedList"
+        url: "/"
+
+  - title: "OS"
+    children:
+      - title: "OS1"
+        url: "/"
+      - title: "OS2"
+        url: "/"
+
+  - title: "Database"
+    children:
+      - title: "DB1"
+        url: "/"
+      - title: "DB2"
+        url: "/"
+
+  - title: "Java"
+    children:
+      - title: "1. 자바기본"
+        url: "/"
+      - title: "2. JVM"
+        url: "/"
+
+  - title: "Spring"
+    children:
+      - title: "스프링기본"
+        url: "/"
+
+  - title: "SQL"
+    children:
+      - title: "SQL 기본"
+        url: "/"
+      - title: "SQL 응용"
+        url: "/"
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
