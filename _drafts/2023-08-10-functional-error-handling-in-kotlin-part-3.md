@@ -974,13 +974,55 @@ public open class RaiseAccumulate<Error>(
 ) : Raise<Error>
 ```
 
-The `RaiseAccumulate<A>` context specializes the `raise` method to create a `NonEmptyList<E>` containing the risen logic typed error:
+The `RaiseAccumulate<A>` context specializes the `raise` method to create a `NonEmptyList<E>` containing only the risen logic typed error:
 
 ```kotlin
 // Arrow Kt library
 @RaiseDSL
 public override fun raise(r: Error): Nothing = 
     raise.raise(nonEmptyListOf(r))
+```
+
+Now that we have all the pieces of the puzzle, we can implement our `getSalaryGapWithMax` function using the `mapOrAccumulate` function:
+
+```kotlin
+context (Raise<NonEmptyList<JobError>>)
+fun getSalaryGapWithMax(jobIdList: List<JobId>): List<Double> =
+    mapOrAccumulate(jobIdList) { getSalaryGapWithMax(it) }
+```
+
+As we can see, it quite straightforward to implement our use case with the `mapOrAccumulate` function and `getSalaryGapWithMax` function that we defined previously on a single `JobId`. Then, let's try it. First, we give the function a list with containing `JobId`s that are present in the database:
+
+```kotlin
+fun main() {
+    val service = JobsService(LiveJobs(), RaiseCurrencyConverter(CurrencyConverter()))
+    fold({ service.getSalaryGapWithMax(listOf(JobId(1), JobId(2))) },
+        { error -> println("The risen errors are: $error") },
+        { salaryGap -> println("The list of salary gaps is $salaryGap") })
+}
+```
+
+The output is the expected one:
+
+```text
+The list of salary gaps is [20000.0, 10000.0]
+```
+
+Now, it's time to try the function giving some fake `JobId`s that are not present in the database:
+
+```kotlin
+fun main() {
+    val service = JobsService(LiveJobs(), RaiseCurrencyConverter(CurrencyConverter()))
+    fold({ service.getSalaryGapWithMax(listOf(JobId(1), JobId(42), JobId(-1))) },
+        { error -> println("The risen errors are: $error") },
+        { salaryGap -> println("The list of salary gaps is $salaryGap") })
+}
+```
+
+This time, we can see that the execution returns the list of errors:
+
+```text
+The risen errors are: NonEmptyList(JobNotFound(jobId=JobId(value=42)), JobNotFound(jobId=JobId(value=-1)))
 ```
 
 TODO
