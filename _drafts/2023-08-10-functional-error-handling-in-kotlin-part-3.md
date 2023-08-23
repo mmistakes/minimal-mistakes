@@ -1025,7 +1025,42 @@ This time, we can see that the execution returns the list of errors:
 The risen errors are: NonEmptyList(JobNotFound(jobId=JobId(value=42)), JobNotFound(jobId=JobId(value=-1)))
 ```
 
-TODO
+If we use directly the `RaiseAccumulate<E>` context in the signature of the `getSalaryGapWithMax` function, we can even use the extension function defined on the `Iterable<A>` type to execute the transformation:
+
+```kotlin
+// Arrow Kt library
+public open class RaiseAccumulate<Error>(
+    public val raise: Raise<NonEmptyList<Error>>
+) : Raise<Error> {
+    // Omissis
+    @RaiseDSL
+    public inline fun <A, B> Iterable<A>.mapOrAccumulate(
+        transform: RaiseAccumulate<Error>.(A) -> B
+    ): List<B> = raise.mapOrAccumulate(this, transform)
+}
+```
+
+Then, the `getSalaryGapWithMax` function can be rewritten as the following:
+
+```kotlin
+context (RaiseAccumulate<JobError>)
+fun getSalaryGapWithMax(jobIdList: List<JobId>): List<Double> =
+    jobIdList.mapOrAccumulate{ getSalaryGapWithMax(it) } 
+```
+
+We can even get an `Either<NonEmptyList<JobError>, List<Double>>` instead of using `Raise<E>` as context. In fact, the Arrow library defines a version of the `mapOrAccumulate` function that work with the `Either` type:
+
+```kotlin
+// Arrow Kt library
+@OptIn(ExperimentalTypeInference::class)
+public inline fun <Error, A, B> Iterable<A>.mapOrAccumulate(
+  @BuilderInference transform: RaiseAccumulate<Error>.(A) -> B,
+): Either<NonEmptyList<Error>, List<B>> = either {
+  mapOrAccumulate(this@mapOrAccumulate, transform)
+}
+```
+
+As expected, this version calls the `mapOrAccumulate` function defined on the `Raise<E>` context, inside an `either` builder to convert the result. If you were asking `this@mapOrAccumulate` refers to the receiver object of the external function, in this case the `Iterable<A>` object. 
 
 ## X. Appendix: Maven Configuration
 
