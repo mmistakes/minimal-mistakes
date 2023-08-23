@@ -1062,6 +1062,10 @@ public inline fun <Error, A, B> Iterable<A>.mapOrAccumulate(
 
 As expected, this version calls the `mapOrAccumulate` function defined on the `Raise<E>` context, inside an `either` builder to convert the result. If you were asking `this@mapOrAccumulate` refers to the receiver object of the external function, in this case the `Iterable<A>` object. 
 
+## 7. Zipping Errors
+
+TODO
+
 ## X. Appendix: Maven Configuration
 
 As promised, here is the full Maven configuration we used in this article:
