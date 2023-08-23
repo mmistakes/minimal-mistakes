@@ -1,9 +1,22 @@
 ---
 title: "KVM의 Bridege를 OVS-switch로 바꾸기"
+escerpt: "윈도우에서 Jekyll 이용하여 깃허브 블로그 만들어보기"
+
+categories:
+  - Openstack
+tags:
+  - [Openstack,devops]
+
+toc: true
+toc_sticky: true
+
+breadcrumbs: true
+
 date: 2020-06-23 13:12
-categories: openstack
-tags: openstack,devops
+last_modified_at: 2020-06-23 13:12
+
 comments: true
+
 ---
 
 # 개요
