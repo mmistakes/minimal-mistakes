@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Site Title"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title                    : "성욱이의 기록"
+title_separator          : "|"
+subtitle                 : "small positive action"
 name                     : "OhYesLee"
-description              : "An amazing website."
+description              : "성욱이의 성장을 기록하는 블로그 입니다."
 url                      : "https://OhYesLee.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
