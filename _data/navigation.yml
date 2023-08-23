@@ -30,7 +30,7 @@ docs:
   - title: "Spring"
     children:
       - title: "객체지향설계와 스프링"
-        url: "/spring/oop_spring"
+        url: "/spring/oop_spring/"
 
   - title: "자료구조"
     children:
@@ -66,9 +66,9 @@ docs:
 
   - title: "Java"
     children:
-      - title: "1. 자바기본"
-        url: "/"
-      - title: "2. JVM"
+      - title: "자바 기본"
+        url: "/java/java-basic"
+      - title: "JVM"
         url: "/"
 
   - title: "Spring"
