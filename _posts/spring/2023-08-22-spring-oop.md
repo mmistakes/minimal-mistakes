@@ -1,7 +1,7 @@
 ---
 title: "Sring core"
 layout: single
-permalink: /spring/oop_spring/
+permalink: /spring/oop_spring
 categories: spring
 tag: [spring]
 author_profile: false

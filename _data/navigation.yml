@@ -1,23 +1,11 @@
 # main links
 main:
-  - title: "운영체제"
-    url: /
-  - title: "데이터베이스"
-    url: /
-  - title: "알고리즘"
-    url: /
-  - title: "Search"
-    url: /search/
-  - title: "Java"
-    url: /java/java-basic/
-  - title: "Spring"
-    url: /spring/spring-core/
   - title: "Category"
     url: /categories/
   - title: "Tag"
     url: /tags/
-  - title: "All"
-    url: /collection-archive/
+  - title: "Search"
+    url: /search/
 
 docs:
   # - title: "대목차"
@@ -27,67 +15,54 @@ docs:
   #     - title: "Tag"
   #       url: "/tags/"
 
-  - title: "Spring"
-    children:
-      - title: "객체지향설계와 스프링"
-        url: "/spring/oop_spring/"
-
-  - title: "자료구조"
-    children:
-      - title: "Array"
-        url: "/"
-      - title: "LinkedList"
-        url: "/"
-      - title: "Stack"
-        url: "/"
-      - title: "Queue"
-        url: "/"
-
-  - title: "알고리즘"
-
-  - title: "운영체제"
-    children:
-      - title: "OS1"
-        url: "/"
-      - title: "OS2"
-        url: "/"
-
-  - title: "네트워크"
-    children:
-      - title: "네트워크 7계층"
-        url: "/"
-
-  - title: "데이터베이스"
-    children:
-      - title: "DB1"
-        url: "/"
-      - title: "DB2"
-        url: "/"
-
   - title: "Java"
     children:
       - title: "자바 기본"
-        url: "/java/java-basic"
+        url: "/java/java-basic/"
       - title: "JVM"
         url: "/"
 
   - title: "Spring"
     children:
-      - title: "스프링 Core"
-        url: "/spring/spring-core/"
-      - title: "스프링 MVC"
-        url: "/spring/spring-mvc/"
-      - title: "스프링 DB"
-        url: "/spring/spring-db/"
-      - title: "스프링 JPA"
-        url: "/spring/spring-jpa/"
+      - title: "객체지향설계와 스프링"
+        url: "/spring/oop_spring/"
 
-  - title: "SQL"
-    children:
-      - title: "SQL 기본"
-        url: "/"
-      - title: "SQL 응용"
-        url: "/"
+  # - title: "자료구조"
+  #   children:
+  #     - title: "Array"
+  #       url: "/"
+  #     - title: "LinkedList"
+  #       url: "/"
+  #     - title: "Stack"
+  #       url: "/"
+  #     - title: "Queue"
+  #       url: "/"
+
+  # - title: "운영체제"
+  #   children:
+  #     - title: "OS1"
+  #       url: "/"
+  #     - title: "OS2"
+  #       url: "/"
+
+  # - title: "네트워크"
+  #   children:
+  #     - title: "네트워크 7계층"
+  #       url: "/"
+
+  # - title: "데이터베이스"
+  #   children:
+  #     - title: "DB1"
+  #       url: "/"
+  #     - title: "DB2"
+  #       url: "/"
+
+  # - title: "SQL"
+  #   children:
+  #     - title: "SQL 기본"
+  #       url: "/"
+  #     - title: "SQL 응용"
+  #       url: "/"
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/

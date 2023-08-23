@@ -1,10 +1,10 @@
 ---
 layout: single
 title:  "Java"
-excerpt: "자바의 특징, JDK, JRE, JVM등 단어에 대한 요약 정리"
-permalink: /java/java-basic
-categories: java
-tag: [java]
+excerpt: "자바 단어정리 : JDK, JRE, JDK 등"
+permalink: /java/java-basic/
+categories: Java
+tag: Java
 toc: true
 author_profile: false
 sidebar:
