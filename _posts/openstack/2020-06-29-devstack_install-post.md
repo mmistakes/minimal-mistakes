@@ -1,11 +1,24 @@
 ---
 title: "devsatck install in multi node"
-description: "multi node에 devstack install"
-comments: true
+escerpt: "multi node에 devstack install"
+
+categories:
+  - Openstack
+tags:
+  - [Openstack,devops]
+
+toc: true
+toc_sticky: true
+
+breadcrumbs: true
+
 date: 2020-06-29 13:12
-categories: openstack
-tags: openstack,devops
+last_modified_at: 2020-06-29 13:12
+
+comments: true
+
 ---
+
 
 # conceptual architecture openstack
 ![openstack017](/assets/images/017.png)

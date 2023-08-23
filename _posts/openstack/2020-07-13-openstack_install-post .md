@@ -1,9 +1,22 @@
 ---
 title: "SELinux에서 step by step 방식으로 openstack 설치"
+escerpt: "openstack install"
+
+categories:
+  - Openstack
+tags:
+  - [Openstack,devops]
+
+toc: true
+toc_sticky: true
+
+breadcrumbs: true
+
 date: 2020-07-13 13:12
-categories: openstack
-tags: openstack,devops
+last_modified_at: 2020-07-13 13:12
+
 comments: true
+
 ---
 
 # SUSE Linux란?

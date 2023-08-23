@@ -1,6 +1,6 @@
 ---
 title: "KVM의 Bridege를 OVS-switch로 바꾸기"
-escerpt: "윈도우에서 Jekyll 이용하여 깃허브 블로그 만들어보기"
+escerpt: "OVS-switch 환경세팅하기"
 
 categories:
   - Openstack
