@@ -11,7 +11,7 @@ sidebar:
   nav: "docs"
 typora-root-rul: ../
 ---
-ddd
+dddㅁㄴㅇㄹㅁㄴㅇㄹ
 # Variable(변수)
 
 > 자바의 정석에는 이런 말이 나와 있다.
