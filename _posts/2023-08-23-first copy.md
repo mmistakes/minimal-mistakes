@@ -18,3 +18,4 @@ toc: true
 <img src="../images/2023-08-23-first/java-2776392.png" alt="java" style="zoom:33%;" />
 
 <img src="../images/2023-08-23-first/web.png" alt="web" style="zoom:33%;" />
+![프로그래머](https://github.com/OhYesLee/OhYesLee.github.io/assets/103974953/a3dbb358-800d-4f3a-a7b4-64afc9418acc)
