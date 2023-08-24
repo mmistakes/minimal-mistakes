@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "코드 테스트 입니다."
+title:  "이미지 업로드 방법"
 categories: coding
-tag: [Java, Python, blog, jekyll, java, python]
+tag: [Java, Python, blog, jekyll, java, python, image, github, gitblog]
 toc: true
 ---
 
