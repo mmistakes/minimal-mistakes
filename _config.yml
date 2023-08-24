@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "My world"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "성욱이의 성장기록 블로그입니다."
+  location         : "South Korea"
+  email            : "otto920811@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
