@@ -90,7 +90,7 @@ typora-root-rul: ../
 
 * 물론, 사이에 많은 과정들이 더 있다. 자세한 과정은 JVM에서 추가적으로 다룰 예정
 
-#### Reference
+### Reference
 
 * 자바의 정석 - 남궁성 저
 

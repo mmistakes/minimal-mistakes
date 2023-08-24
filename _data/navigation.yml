@@ -19,8 +19,8 @@ docs:
     children:
       - title: "자바 기본"
         url: "/java/java-basic/"
-      - title: "JVM"
-        url: "/"
+      - title: "자바 변수"
+        url: "/java/java-variable/"
 
   - title: "Spring"
     children:
