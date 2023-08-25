@@ -28,7 +28,27 @@ docs:
     children:
       - title: "객체지향설계와 스프링"
         url: "/spring/oop_spring/"
-
+  
+  - title: "컴퓨터구조"
+    children:
+      - title:
+        url: "/"
+  
+  - title: "운영체제"
+    children:
+      - title: ""
+        url: "/"
+  
+  - title: "데이터 모델링"
+    children:
+      - title: ""
+        url: "/"
+  
+  - title: "SQL"
+    children:
+      - title: ""
+        url: "/"
+        
   # - title: "자료구조"
   #   children:
   #     - title: "Array"
