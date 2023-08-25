@@ -14,12 +14,14 @@ docs:
         url: /categories/
       - title: "Tag"
         url: /tags/
-    - title: "대목차2"
+
+  - title: "대목차2"
     children:
       - title: "Category"
         url: /categories/
       - title: "Tag"
         url: /tags/
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
