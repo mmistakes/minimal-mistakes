@@ -1064,7 +1064,29 @@ As expected, this version calls the `mapOrAccumulate` function defined on the `R
 
 ## 7. Zipping Errors
 
-TODO
+As we said, the `mapOrAccumulate` function allows to combine the results of a trasformation applied to a collection of elements of the same type. What if we want to combine transformations applied to objects of different type? 
+
+A classic example is the validation during the creation of an object. Let's build an example together. Say we want to have a pimped version of our `Salary` type that adds also the currency of the salary. We can define it as the following:
+
+```kotlin
+data class Salary(val amount: Double, val currency: String)
+```
+
+However, the above definition doesn't prevent us to create objects that are not valid. For example, a `Salary` with an amount that is less than zero, or with a currency that is not made of three capital letters:
+
+```kotlin
+val wrongSalary = Salary(-1000.0, "eu")
+```
+
+In general, we want to avoid the creation of invalid objects. To do so, we can define what we call a smart constructor. Smart constructors are essentially factories that look like regular constructor but that performs validations, and, generally, returns the valid object or some form of typed error.
+
+In Kotlin, the application of the pattern requires to turn the scope of the main construct to `private`:
+
+```kotlin
+data class Salary private constructor(val amount: Double, val currency: String)
+```
+
+As we have a `data class`, it's still possible to bypass the `private` constructor using the `copy` function. There is an [interesting thread](https://youtrack.jetbrains.com/issue/KT-11914/Confusing-data-class-copy-with-private-constructor) on the JetBrains tracking system about this topic. However, for the sake of simplicity, we can ignore this problem for the article.
 
 ## X. Appendix: Maven Configuration
 
