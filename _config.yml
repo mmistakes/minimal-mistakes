@@ -75,7 +75,7 @@ google:
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-naver_site_verification  :
+naver_site_verification  : "<meta name="naver-site-verification" content="7002e5b42273f8969f9f0a49b25abc760c9937a8" />"
 yandex_site_verification :
 baidu_site_verification  :
 
