@@ -6,3 +6,4 @@ collection: articles
 entries_layout: grid
 classes: wide
 ---
+test
