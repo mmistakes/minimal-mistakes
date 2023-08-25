@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "ko_KR.UTF-8"
 title                    : "Liebero Note"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : 여러 생각들....
 name                     : "Liebero Note"
 description              : "An amazing website."
 url                      : "http://liebero.github.io"
