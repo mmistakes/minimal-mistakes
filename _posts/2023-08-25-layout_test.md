@@ -1,8 +1,8 @@
 ---
 layout: collection
-title:  "Layout test"
+title:  "Layout test: collection"
 categories: [blog, jekyll]
-tag: [blog, jekyll]
+tag: [blog, jekyll, github]
 toc: true
 ---
 
