@@ -291,13 +291,13 @@ defaults:
       share: true
       related: true
   # _articles
-    - scope:
-        path: ""
-        type: articles
-      values:
-        layout: single
-        author_profile: false
-        share: true
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 collections:
   articles:
