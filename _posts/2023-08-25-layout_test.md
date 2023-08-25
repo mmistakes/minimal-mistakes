@@ -1,5 +1,5 @@
 ---
-layout: collection
+layout: single
 title:  "Layout test: collection"
 categories: [blog, jekyll]
 tag: [blog, jekyll, github]

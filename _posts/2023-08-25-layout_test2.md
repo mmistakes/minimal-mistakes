@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: single
 title:  "Layout test: home"
 categories: [blog, jekyll]
 tag: [blog, jekyll, github]
