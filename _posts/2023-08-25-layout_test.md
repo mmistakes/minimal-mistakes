@@ -4,6 +4,7 @@ title:  "Layout test: collection"
 categories: [blog, jekyll]
 tag: [blog, jekyll, github]
 toc: true
+author_profile: false
 ---
 
 # 레이아웃 테스트입니다.
