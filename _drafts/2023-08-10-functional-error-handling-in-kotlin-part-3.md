@@ -1156,9 +1156,74 @@ public inline fun <Error, A, B, C, D, E, F, G, H, I, J> Raise<NonEmptyList<Error
 }
 ```
 
+To be fair, there exist many different versions of the function that differ for the number of input parameters. the above is the one with the maximum number of parameters. The function takes a list of functions that return a value of type `A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I` and a function that takes all the previous values and returns a value of type `J`. The function returns the value of type `J` and, if any error occurs, it raises the list of errors. So, remember: The maximum number of single input parameters is 9. If we need more, we need to apply the function recursively multiple times.
+
+It's worth noting the use of the `unbox` function, an Arrow library function that is used to handle possible `null` values. The function is defined as the following:
+
+```kotlin
+// Arrow Kt library
+@PublishedApi
+internal object EmptyValue {
+    @Suppress("UNCHECKED_CAST", "NOTHING_TO_INLINE")
+    public inline fun <A> unbox(value: Any?): A =
+        if (value === this) null as A else value as A
+}
+```
+
+The `EmptyValue` is intended only for internal use and it's used to handle the `null` values withing generic types instead of using the `Option` wrapper.
+
+As you may guess, we'll use the version of the function taking two different input parameters, and the functions we'll apply to them are the validations we need to perform on the input data: 
+
+```kotlin
+context (Raise<NonEmptyList<SalaryError>>)
+operator fun invoke(amount: Double, currency: String): Salary =
+    zipOrAccumulate(
+        { ensure(amount >= 0.0) { NegativeAmount } },
+        {
+            ensure(currency.isNotEmpty() && currency.matches("[A-Z]{3}".toRegex())) {
+                InvalidCurrency("Currency must be not empty and valid")
+            }
+        },
+    ) { _, _ ->
+        Salary(amount, currency)
+    }
+```
+
+We already saw the `ensure` function in the previous articles of the series. The function checks if the expression given as the first parameter is true and, if not, it raises the error given as the second parameter. The `ensure` function is defined as the following:
+
+```kotlin
+// Arrow Kt library
+@RaiseDSL
+public inline fun <Error> Raise<Error>.ensure(condition: Boolean, raise: () -> Error) {
+    contract {
+        callsInPlace(raise, AT_MOST_ONCE)
+        returns() implies condition
+    }
+    return if (condition) Unit else raise(raise())
+}
+```
+
+So, let's try to create an invalid `Salary`:
+
+```kotlin
+fun main() {
+    fold({ ValidatedJob.Salary(-1.0, "eu") },
+        { error -> println("The risen errors are: $error") },
+        { salary -> println("The valid salary is $salary") })
+}
+```
+
+As expected, the output of the program contains both the errors, and it's the following:
+
+```text
+The risen errors are: NonEmptyList(NegativeAmount, InvalidCurrency(message=Currency must be not empty and valid))
+```
+
+## 8. Conclusions
+
 TODO
 
-## X. Appendix: Maven Configuration
+## 9. Appendix: Maven Configuration
 
 As promised, here is the full Maven configuration we used in this article:
 
