@@ -49,7 +49,7 @@ typora-root-rul: ../
 
 * 관계의 표기시에는 3가지를 명확하게 해야한다.(관계명, 관계차수, 선택사양)
 
-**관계명(Membership)** : 관계의 이름
+**관계명(Membership)** : 관계의 이름, Verb가 들어간다 ex) 가르치다
 
 **관계차수(Cardinality)**
 
