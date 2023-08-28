@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "데이터 모델링의 이해"
+title:  "식별자(Identifier)"
 excerpt: "데이터 모델링의 개념과 과정, 데이터 모델링의 기능 등"
 permalink: /data-modeling/identifier/
 categories: DataModeling

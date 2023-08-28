@@ -46,19 +46,18 @@ docs:
       - title: "엔티티"
         url: "/data-modeling/entity/"
       - title: "속성"
-        url: "/"
+        url: "/data-modeling/attribute/"
       - title: "관계"
-        url: "/"
-  
-  - title: "성능 데이터 모델링"
-    children:
-      - title: "성능 데이터 모델링 개요"
+        url: "/data-modeling/relationship/"
+      - title: "식별자"
+        url: "/data-modeling/identifier/"
+      - title: "성능 데이터 모델링"
         url: "/"
       - title: "정규화"
         url: "/"
       - title: "반정규화"
         url: "/"
-    
+  
   - title: "SQL"
     children:
       - title: ""
