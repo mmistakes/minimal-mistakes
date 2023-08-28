@@ -1080,13 +1080,83 @@ val wrongSalary = Salary(-1000.0, "eu")
 
 In general, we want to avoid the creation of invalid objects. To do so, we can define what we call a smart constructor. Smart constructors are essentially factories that look like regular constructor but that performs validations, and, generally, returns the valid object or some form of typed error.
 
-In Kotlin, the application of the pattern requires to turn the scope of the main construct to `private`:
+In Kotlin, the application of the pattern requires to change the scope of the main construct to `private`:
 
 ```kotlin
 data class Salary private constructor(val amount: Double, val currency: String)
 ```
 
 As we have a `data class`, it's still possible to bypass the `private` constructor using the `copy` function. There is an [interesting thread](https://youtrack.jetbrains.com/issue/KT-11914/Confusing-data-class-copy-with-private-constructor) on the JetBrains tracking system about this topic. However, for the sake of simplicity, we can ignore this problem for the article.
+
+Now, we need to create a hierarchy of the possible logical typed errors we can have during the creation of a `Salary` object. We'll check for the following two errors:
+
+1. The amount must be greater than zero
+2. The currency must be made of three capital letters
+
+We define the following hierarchy of types to rappresent the above errors:
+
+```kotlin
+sealed interface SalaryError
+data object NegativeAmount : SalaryError
+data class InvalidCurrency(val message: String) : SalaryError
+```
+
+Once we have changed the scope of the constructor, we need a method to effectively crete a valid instance of the `Salary` type. Then, let's override the `invoke` operator in the `companion object` to create a smart constructor that looks like the regular main constructor:
+
+```kotlin
+data class Salary private constructor(val amount: Double, val currency: String) {
+    companion object {
+        context (Raise<NonEmptyList<SalaryError>>)
+        operator fun invoke(amount: Double, currency: String): Salary = TODO()
+    }
+}
+```
+
+If we don't like to override the `invoke` operator, we can define a regular function (factory method) in the `companion object`. Usually, we use the `of` name for this kind of functions.
+
+The smart constructor must perform all the needed validation on input data before creating a concrete instance of the object. For this reason, we added the context `Raise<NonEmptyList<SalaryError>>`. We used the `NonEmptyList<SalaryError>` since we want to accumulate all possible errors during the validation. For example, invoking the smart constructor with the input data `-1.0` and `eu` must return the following list of errors:
+
+```kotlin
+// CHECK THIS
+NonEmptyList(NegativeAmount, InvalidCurrency("The currency must be made of three capital letters"))
+```
+
+We can't use the `mapOrAccumulate` function we previously saw because the function returns a list of objects of the same type `B` starting from a input list containing objects of the same type `A`. Here, we have an `Double` and `String` as input. We need to find something else.
+
+Fortunately, the Arrow library provides the `zipOrAccumulate` function, which is exactly what we need. The function is defined as the following:
+
+```kotlin
+// Arrow Kt library
+@RaiseDSL
+public inline fun <Error, A, B, C, D, E, F, G, H, I, J> Raise<NonEmptyList<Error>>.zipOrAccumulate(
+    @BuilderInference action1: RaiseAccumulate<Error>.() -> A,
+    @BuilderInference action2: RaiseAccumulate<Error>.() -> B,
+    @BuilderInference action3: RaiseAccumulate<Error>.() -> C,
+    @BuilderInference action4: RaiseAccumulate<Error>.() -> D,
+    @BuilderInference action5: RaiseAccumulate<Error>.() -> E,
+    @BuilderInference action6: RaiseAccumulate<Error>.() -> F,
+    @BuilderInference action7: RaiseAccumulate<Error>.() -> G,
+    @BuilderInference action8: RaiseAccumulate<Error>.() -> H,
+    @BuilderInference action9: RaiseAccumulate<Error>.() -> I,
+    block: (A, B, C, D, E, F, G, H, I) -> J
+): J {
+    contract { callsInPlace(block, AT_MOST_ONCE) }
+    val error: MutableList<Error> = mutableListOf()
+    val a = recover({ action1(RaiseAccumulate(this)) }) { error.addAll(it); EmptyValue }
+    val b = recover({ action2(RaiseAccumulate(this)) }) { error.addAll(it); EmptyValue }
+    val c = recover({ action3(RaiseAccumulate(this)) }) { error.addAll(it); EmptyValue }
+    val d = recover({ action4(RaiseAccumulate(this)) }) { error.addAll(it); EmptyValue }
+    val e = recover({ action5(RaiseAccumulate(this)) }) { error.addAll(it); EmptyValue }
+    val f = recover({ action6(RaiseAccumulate(this)) }) { error.addAll(it); EmptyValue }
+    val g = recover({ action7(RaiseAccumulate(this)) }) { error.addAll(it); EmptyValue }
+    val h = recover({ action8(RaiseAccumulate(this)) }) { error.addAll(it); EmptyValue }
+    val i = recover({ action9(RaiseAccumulate(this)) }) { error.addAll(it); EmptyValue }
+    error.toNonEmptyListOrNull()?.let { raise(it) }
+    return block(unbox(a), unbox(b), unbox(c), unbox(d), unbox(e), unbox(f), unbox(g), unbox(h), unbox(i))
+}
+```
+
+TODO
 
 ## X. Appendix: Maven Configuration
 
