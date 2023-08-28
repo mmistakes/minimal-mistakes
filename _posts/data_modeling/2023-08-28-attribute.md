@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "속성(Attribute)"
-excerpt: "데이터 모델링의 개념과 과정, 데이터 모델링의 기능 등"
+excerpt: "속성 내용"
 permalink: /data-modeling/attribute/
 categories: DataModeling
 tag: [Data, Data Modeling]
