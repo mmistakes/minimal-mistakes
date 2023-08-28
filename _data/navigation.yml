@@ -44,7 +44,7 @@ docs:
       - title: "데이터 모델링의 이해"
         url: "/data-modeling/data-modeling-basic/"
       - title: "엔티티"
-        url: "/"
+        url: "/data-modeling/entity/"
       - title: "속성"
         url: "/"
       - title: "관계"
