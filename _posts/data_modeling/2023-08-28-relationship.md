@@ -21,9 +21,11 @@ typora-root-rul: ../
 >
 > 관계의 표기법과 관계를 이루는 3대요소(관계명, 관계차수, 선택사양)을 집중적으로 봐주세요.
 >
+> 추가적으로, ERD를 표시하는 여러 모형이 있습니다. 해당 모형에 대해선 차후 포스팅을 하도록 하겠습니다.
+>
 > **혹시 틀린 내용이 있다면, 지적해주시면 감사드리겠습니다.
 
-(ERD에서 관계표시에 빨간색 동그라미)
+![relationship](../../images/2023-08-28-relationship/relationship.jpg)
 
 # 관계(Relationship)
 
@@ -38,30 +40,22 @@ typora-root-rul: ../
 ### 관계의 페어링
 
 * 엔티티 내의 인스턴스가 개별적으로 관계가지는 것을 '관계의 페어링'이라고 함
+
 * 페어링의 집합이 관계
-* 예시(관계 페어링 그림 예시)
+
+  ![relation_pairing](../../images/2023-08-28-relationship/relation_pairing.jpg)
 
 ### 관계의 표기법
 
 * 관계의 표기시에는 3가지를 명확하게 해야한다.(관계명, 관계차수, 선택사양)
 
-**관계명(Membership)** : 관계의 이름
+**관계명(Membership)** : 관계의 이름, Verb가 들어간다 ex) 가르치다
 
 **관계차수(Cardinality)**
 
 * 2개의 엔티티 간에 관계 참여자 수, 1:1, 1:N, M:N
 
-* 1 : 1 관계
-
-  그림
-
-* 1 : N 관계
-
-  그림
-
-* 1 : M 관계
-
-  그림
+  ![cardinality](../../images/2023-08-28-relationship/cardinality.jpg)
 
 **선택사양(Optionality)**
 
@@ -86,7 +80,7 @@ typora-root-rul: ../
 
 * 아래와 같은 고객/주문 엔티티가 존재한다.
 
-* (엔티티 그림)
+  ![read_relation](../../images/2023-08-28-relationship/read_relation.jpg)
 
 * 해당 ERD의 주문한다라는 관계를 읽는 방법은 아래와 같다.
 
