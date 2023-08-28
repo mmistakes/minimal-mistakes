@@ -1,36 +1,104 @@
 [
   {
     "image_path": null,
-    "alt": "Fotograf bis Jahrgangsstufe 5",
-    "title": "Fotograf bis Jahrgangsstufe 5",
+    "alt": "1. Elternabend A4 - Fr. Henkel",
+    "title": "1. Elternabend A4 - Fr. Henkel",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2p1c2Nxa3V0dGswN3Zsb2ViM3QwaTJtdTYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=MmN1b2p0a2cxaDJodjc3ZHNvNGQ2MjJwdmUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
-      "date": "2023-10-09",
-      "date_time": null
+      "date": null,
+      "date_time": "2023-09-04T17:45:00+02:00"
     },
     "end": {
-      "date": "2023-10-12",
-      "date_time": null
+      "date": null,
+      "date_time": "2023-09-04T19:15:00+02:00"
     },
-    "created": "2023-06-30T10:56:47.000Z",
-    "updated": "2023-06-30T11:11:24.160Z"
+    "created": "2023-08-27T06:41:35.000Z",
+    "updated": "2023-08-27T06:41:35.547Z"
   },
   {
     "image_path": null,
-    "alt": "Fotograf 6. Klassen",
-    "title": "Fotograf 6. Klassen",
+    "alt": "1. Elternabend A3 - Fr. Blum",
+    "title": "1. Elternabend A3 - Fr. Blum",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MGFtYzE2NDM3bXUybWFsMjZlZ2M1aWU5OGwgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=MmY4YTF2aGJzNDduMTVhdW1obmV0Mmw2bGEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
-      "date": "2024-04-24",
-      "date_time": null
+      "date": null,
+      "date_time": "2023-09-05T16:30:00+02:00"
     },
     "end": {
-      "date": "2024-04-25",
-      "date_time": null
+      "date": null,
+      "date_time": "2023-09-05T18:00:00+02:00"
     },
-    "created": "2023-06-30T11:12:09.000Z",
-    "updated": "2023-06-30T11:12:09.866Z"
+    "created": "2023-08-27T06:43:13.000Z",
+    "updated": "2023-08-27T06:43:13.147Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. Elternabend A1 - Fr. Stahn",
+    "title": "1. Elternabend A1 - Fr. Stahn",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NmtrcjFjMzZxbGtnY3I1bmNoNHQwcTQ1NWYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2023-09-05T16:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2023-09-05T18:00:00+02:00"
+    },
+    "created": "2023-08-27T06:42:24.000Z",
+    "updated": "2023-08-27T06:42:24.786Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. Elternabend A2 - Fr. Bartel",
+    "title": "1. Elternabend A2 - Fr. Bartel",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N2wyMDl1cnUwaDRsbWc3cGFhdmZ1c3M3bTEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2023-09-05T17:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2023-09-05T18:30:00+02:00"
+    },
+    "created": "2023-08-27T06:42:59.000Z",
+    "updated": "2023-08-27T06:42:59.730Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. Elternabend 5c - Hr. Orth",
+    "title": "1. Elternabend 5c - Hr. Orth",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MmhybXFia3R1OTJic3B0ZGZiaG1rcWFnZ2EgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2023-09-05T17:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2023-09-05T19:00:00+02:00"
+    },
+    "created": "2023-08-27T06:43:59.000Z",
+    "updated": "2023-08-27T06:43:59.004Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. Elternabend 6a - Hr. Wieting",
+    "title": "1. Elternabend 6a - Hr. Wieting",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MzQ5aHJpdWgxOG0wcHBvNGhydGtrZHUwcnYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2023-09-05T17:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2023-09-05T19:00:00+02:00"
+    },
+    "created": "2023-08-27T06:44:13.000Z",
+    "updated": "2023-08-27T06:44:22.979Z"
   }
 ]
