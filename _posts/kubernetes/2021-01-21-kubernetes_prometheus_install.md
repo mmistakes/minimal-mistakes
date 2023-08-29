@@ -3,9 +3,9 @@ title: "kubernetes prometheus install"
 escerpt: "prometheus install"
 
 categories:
-  - kubernetes
+  - Kubernetes
 tags:
-  - [kubernetes, devops]
+  - [Kubernetes, devops]
 
 toc: true
 toc_sticky: true
@@ -17,6 +17,7 @@ last_modified_at: 2021-01-21
 
 comments: true
 ---
+
 
 
 ## Prometheus
