@@ -1,7 +1,7 @@
 ---
 title: "kubernetes"
 layout: archive
-permalink: categories/Git
+permalink: categories/kubernetes
 author_profile: true
 sidebar_main: true
 
