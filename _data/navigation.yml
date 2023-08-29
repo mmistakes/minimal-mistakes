@@ -66,6 +66,9 @@ docs:
         url: "/data-modeling/relationship/"
       - title: "식별자"
         url: "/data-modeling/identifier/"
+      - title: "식별자/비식별자 관계"
+        url: "/data-modeling/identifier-relationship/"
+        
       - title: "성능 데이터 모델링"
         url: "/"
       - title: "정규화"
