@@ -3,9 +3,9 @@ title: "kubernetes dashboard install"
 escerpt: "dashboard install"
 
 categories:
-  - kubernetes
+  - Kubernetes
 tags:
-  - [kubernetes, devops]
+  - [Kubernetes, devops]
 
 toc: true
 toc_sticky: true

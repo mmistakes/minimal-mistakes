@@ -3,10 +3,10 @@ title: "kubernetes testbed 환경구축"
 escerpt: "kubernetes의 testbed를 위한 환경구축"
 
 categories:
-  - kubernetes
+  - Kubernetes
 tags:
-  - [kubernetes, devops]
-
+  - [Kubernetes, devops]
+  
 toc: true
 toc_sticky: true
 

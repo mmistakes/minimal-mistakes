@@ -3,9 +3,9 @@ title: "kubernetes 설치"
 escerpt: "kubernetes 설치하기"
 
 categories:
-  - kubernetes
+  - Kubernetes
 tags:
-  - [kubernetes, devops]
+  - [Kubernetes, devops]
 
 toc: true
 toc_sticky: true

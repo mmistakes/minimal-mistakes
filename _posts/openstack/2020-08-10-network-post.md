@@ -1,8 +1,20 @@
 ---
 title: "Cloud에서 알아야할 network"
+escerpt: "Cloud에서 알아야할 network"
+
+categories:
+  - Openstack
+tags:
+  - [Openstack,devops]
+
+toc: true
+toc_sticky: true
+
+breadcrumbs: true
+
 date: 2020-08-10 13:12
-categories: openstack
-tags: openstack,devops
+last_modified_at: 2020-08-10 13:12
+
 comments: true
 ---
 

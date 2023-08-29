@@ -3,9 +3,9 @@ title: "kubernetes Architecture"
 escerpt: "kubernetes의 구조확인"
 
 categories:
-  - kubernetes
+  - Kubernetes
 tags:
-  - [kubernetes, devops]
+  - [Kubernetes, devops]
 
 toc: true
 toc_sticky: true

@@ -3,9 +3,9 @@ title: "kubernetes helm install"
 escerpt: "helm install"
 
 categories:
-  - kubernetes
+  - Kubernetes
 tags:
-  - [kubernetes, devops]
+  - [Kubernetes, devops]
 
 toc: true
 toc_sticky: true

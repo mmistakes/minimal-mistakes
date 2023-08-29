@@ -3,9 +3,9 @@ title: "kubernetes 설치전 작업목록"
 escerpt: "kubernetes 설치전에 작업목록 체크사항"
 
 categories:
-  - kubernetes
+  - Kubernetes
 tags:
-  - [kubernetes, devops]
+  - [Kubernetes, devops]
 
 toc: true
 toc_sticky: true

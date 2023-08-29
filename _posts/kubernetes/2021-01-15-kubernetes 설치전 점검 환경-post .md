@@ -3,9 +3,9 @@ title: "kubernetes 설치전 점검 환경"
 escerpt: "kubernetes 설치전에 점검환경 사항"
 
 categories:
-  - kubernetes
+  - Kubernetes
 tags:
-  - [kubernetes, devops]
+  - [Kubernetes, devops]
 
 toc: true
 toc_sticky: true
