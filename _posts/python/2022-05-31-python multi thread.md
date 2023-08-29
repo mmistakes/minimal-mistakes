@@ -3,9 +3,9 @@ title:  "multi threading"
 excerpt: " python을 활용한 multi threading 구현"
 
 categories:
-  - python
+  - Python
 tags:
-  - [python, thread, multi, threading, list, dictionary, sort, queue]
+  - [Python, thread, multi, threading, list, dictionary, sort, queue]
 
 toc: true
 toc_sticky: true
