@@ -1,0 +1,288 @@
+# **C언어 기초 100제**
+
+1001번
+```cpp
+#include <stdio.h>
+int main()
+{
+    printf("Hello");
+    return 0;
+}
+```
+1002번
+```cpp
+#include <stdio.h>
+int main()
+{
+    printf("Hello World");
+    return 0;
+}
+```
+1003번
+```cpp
+#include <stdio.h>
+int main()
+{
+    printf("Hello\nWorld");
+    return 0;
+}
+```
+1004번
+```cpp
+#include <stdio.h>
+int main()
+{
+    printf("\'Hello\'");
+    return 0;
+}
+```
+1005번
+```cpp
+#include <stdio.h>
+int main()
+{
+    printf("\"Hello World\"");
+    return 0;
+}
+```
+1006번
+```cpp
+#include <stdio.h>
+int main()
+{
+    printf("\"!@#$%%^&*()\"");
+    return 0;
+}
+```
+1007번
+```cpp
+#include <stdio.h>
+int main()
+{
+    printf("\"C:\\Download\\hello.cpp\"");
+    return 0;
+}
+```
+1008번
+```cpp
+#include <stdio.h>
+int main()
+{
+ printf("\u250C\u252C\u2510\n");
+ printf("\u251C\u253C\u2524\n");
+ printf("\u2514\u2534\u2518\n");
+}
+```
+1009번
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    printf("%d",a);
+    return 0;
+}
+```
+1010번
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    printf("%d",a);
+    return 0;
+}
+```
+1011번
+```cpp
+#include <stdio.h>
+
+int main()
+{
+	char x;
+	scanf("%c",&x);
+	printf("%c",x);
+	return 0;
+}
+```
+1012번
+```cpp
+#include <stdio.h>
+int main()
+{
+    float a;
+    scanf("%f",&a);
+    printf("%f",a);
+    return 0;
+}
+```
+1013번
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    printf("%d %d",a,b);
+    return 0;
+}
+```
+1014번
+```cpp
+#include <stdio.h>
+
+int main()
+{
+	char x,y;
+	scanf("%c %c",&x,&y);
+	printf("%c %c",y,x);
+	return 0;
+}
+```
+1015번
+```cpp
+#include <stdio.h>
+int main()
+{
+    float a;
+    scanf("%f",&a);
+    printf("%.2f",a);
+    return 0;
+}
+```
+1017번
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    printf("%d %d %d",a,a,a);
+    return 0;
+}
+```
+1018번
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d:%d",&a,&b);
+    printf("%d:%d",a,b);
+    return 0;
+}
+```
+1019번
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a,b,c;
+    scanf("%d.%d.%d",&a,&b,&c);
+    printf("%04d.%02d.%02d",a,b,c);
+    return 0;
+}
+```
+1020번
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d-%d",&a,&b);
+    printf("%06d%07d",a,b);
+    return 0;
+}
+```
+1021번
+```cpp
+#include <stdio.h>
+
+int main()
+{
+	char data[51]="";
+	scanf("%s",data);
+	printf("%s",data);
+	return 0;
+}
+```
+1022번
+```cpp
+#include <stdio.h>
+
+int main()
+{
+	char data[2001];
+	fgets(data,2000,stdin);
+	printf("%s",data);
+	return 0;
+}
+```
+1023번
+```cpp
+#include <stdio.h>
+
+int main()
+{
+	int a,b;
+	scanf("%d.%d",&a,&b);
+	printf("%d\n%d",a,b);
+	
+	return 0;
+}
+```
+1024번
+```cpp
+#include <stdio.h>
+
+int main()
+{
+	char d[21];
+	int i;
+	scanf("%s",&d);
+	for(i=0;d[i]!='\0';i++)
+	{
+		printf("\'%c\'\n",d[i]);
+	}
+	return 0;
+}
+```
+1025번
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a,b,c,d,e;
+    scanf("%1d%1d%1d%1d%d",&a,&b,&c,&d,&e);
+    printf("[%d]\n",a*10000);
+    printf("[%d]\n",b*1000);
+    printf("[%d]\n",c*100);
+    printf("[%d]\n",d*10);
+    printf("[%d]",e);
+    return 0;
+}
+```
+1026번
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a,b,c;
+    scanf("%d:%d:%d",&a,&b,&c);
+    printf("%d",b);
+    return 0;
+}
+```
+1027번
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a,b,c;
+    scanf("%d.%d.%d",&a,&b,&c);
+    printf("%02d-%02d-%04d",c,b,a);
+    return 0;
+}
+```
