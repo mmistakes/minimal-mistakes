@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "고종현의 알코올성 치매 예방 블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "고종현"
 description              : "An amazing website."
 url                      : "https://rhwhdgus.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
