@@ -1062,6 +1062,13 @@ public inline fun <Error, A, B> Iterable<A>.mapOrAccumulate(
 
 As expected, this version calls the `mapOrAccumulate` function defined on the `Raise<E>` context, inside an `either` builder to convert the result. If you were asking `this@mapOrAccumulate` refers to the receiver object of the external function, in this case the `Iterable<A>` object. 
 
+For sake of simplicity, the Arrow library defines a type alias for the `Either<NonEmptyList<E>, A>` type, called `EitherNel<E, A>`:
+
+```kotlin
+// Arrow Kt library
+public typealias EitherNel<E, A> = Either<NonEmptyList<E>, A>
+```
+
 There is one last version of the `mapOrAccumulate` function that is worth mentioning. Instead of accumulating in a `NonEmptyList<E>` all the errors, it is possible to accumulate them in a custom type. To accumulate on it, the type must define combining function and a zero element. For example, let's first define a new error type that takes a string message as input
 
 ```kotlin
