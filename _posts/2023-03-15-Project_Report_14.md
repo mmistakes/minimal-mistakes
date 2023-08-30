@@ -100,7 +100,7 @@ sidebar:
 - 각 컨트롤러에서 model을 통해 출력할 메시지와 redirect할 링크를 넘겨준다.
 - 회원 탈퇴는 예외적으로 따로 진행
     - 회원 탈퇴는 따로 팝업창을 띄워서 진행하게 되는데, 확인 버튼을 누르면 팝업창이 닫히고 메인창이 지정된 링크로 이동해야 한다.
-    - `window.self.close();`는 현제 페이지를 닫는다.
+    - `window.self.close();`는 현재 페이지를 닫는다.
     - `window.opener.location.replace()`는 부모창(메인창)에서 지정된 링크로 이동하기 위해 작성한 코드이다.(Redirect)
         - `window`인터페이스의 `opener` 속성은 `open()`을 사용해 현재 창을 열었던 창의 참조를 반환.(부모창)
 
@@ -155,7 +155,7 @@ sidebar:
     }
 ```
 - 기존에는 회원가입에 실패하면 `IllegalStateException` 예외를 던졌지만, 회원 가입에 대한 예외를 따로 추가했다.
-- `JoinFailException`은 런타임 에러이기 때문에 `throws`로 던지지 안아도 되지만, 발생한 에러를 놓치는 일이 생기지 않도록 선언했다.
+- `JoinFailException`은 런타임 에러이기 때문에 `throws`로 던지지 않아도 되지만, 발생한 에러를 놓치는 일이 생기지 않도록 선언했다.
 
 #### JoinFailException
 
