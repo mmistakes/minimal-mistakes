@@ -1062,9 +1062,54 @@ public inline fun <Error, A, B> Iterable<A>.mapOrAccumulate(
 
 As expected, this version calls the `mapOrAccumulate` function defined on the `Raise<E>` context, inside an `either` builder to convert the result. If you were asking `this@mapOrAccumulate` refers to the receiver object of the external function, in this case the `Iterable<A>` object. 
 
+There is one last version of the `mapOrAccumulate` function that is worth mentioning. Instead of accumulating in a `NonEmptyList<E>` all the errors, it is possible to accumulate them in a custom type. To accumulate on it, the type must define combining function and a zero element. For example, let's first define a new error type that takes a string message as input
+
+```kotlin
+data class JobErrors(val messages: String = "")
+```
+
+As we can see, the type as the empty string as default value for the `message` property. The empty string represent the zero element of the `JobErrors` type. Then, it's quite straightforward to define the combining function on that zero element:
+
+```kotlin
+operator fun JobErrors.plus(other: JobErrors): JobErrors = JobErrors("$messages, ${other.messages}")
+```
+
+We chose the `plus` operator as a convenient combining function. The combination just creates a new `JobErrors` object with the concatenation of the two messages using  the `','` character. For those of us that loves functional programming, **such a type is defined as a monoid**.
+
+Now, we can define a new version of the `getSalaryGapWithMax` function that uses the `mapOrAccumulate` function with the `JobErrors` type:
+
+```kotlin
+context (Raise<JobErrors>)
+fun getSalaryGapWithMaxJobErrors(jobIdList: List<JobId>) =
+    mapOrAccumulate(jobIdList, JobErrors::plus) {
+        withError({ jobError -> JobErrors(jobError.toString()) }) {
+            getSalaryGapWithMax(it)
+        }
+    }
+```
+
+We used the `withError` function we introduced in the previous sections to convert the `JobError` type to the `JobErrors` type. The alternate version of the `mapOrAccumulate` function take the accumulating function as the second input parameter. The rest remains the same.
+
+As usual, let's give the new shiny function a try:
+
+```kotlin
+fun main() {
+    val jobService = JobsService(LiveJobs(), RaiseCurrencyConverter(CurrencyConverter()))
+    fold({ jobService.getSalaryGapWithMaxJobErrors(listOf(JobId(-1), JobId(42))) },
+        { error -> println("The risen errors are: $error") },
+        { salaryGaps -> println("The salary gaps are $salaryGaps") })
+}
+```
+
+If we did everything correctly, we should see the following output after the execution:
+
+```text
+The risen errors are: JobErrors(messages=JobNotFound(jobId=JobId(value=-1)), JobNotFound(jobId=JobId(value=42)))
+```
+
 ## 7. Zipping Errors
 
-As we said, the `mapOrAccumulate` function allows to combine the results of a trasformation applied to a collection of elements of the same type. What if we want to combine transformations applied to objects of different type? 
+As we said, the `mapOrAccumulate` function allows to combine the results of a transformation applied to a collection of elements of the same type. What if we want to combine transformations applied to objects of different type? 
 
 A classic example is the validation during the creation of an object. Let's build an example together. Say we want to have a pimped version of our `Salary` type that adds also the currency of the salary. We can define it as the following:
 
