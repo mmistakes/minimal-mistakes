@@ -8,7 +8,7 @@ author: Lexie Newbery
 
 # Fractals
 
-A group of the children were analysing cauliflower and noticed that the smaller parts of the cauliflower that we are able to remove from it, re much like the larger branch of cauliflower, just much smaller. This is a great example of fractals, which are "infinite patterns in which that each section of the pattern is almost identical to the pattern as a whole".  
+A group of the children were analysing cauliflower and noticed that the smaller parts of the cauliflower that we are able to remove from it, are much like the larger branch of cauliflower, just much smaller. This is a great example of fractals, which are "infinite patterns in which that each section of the pattern is almost identical to the pattern as a whole".  
 
 ![A photo showing nursery children looking at a cauliflower](/assets/img/lookingatcauliflower.png "Children looking at cauliflower")
 <img src="My files/Downloads/Nuffield/image/lookingatcauliflower.png">
