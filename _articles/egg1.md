@@ -1,0 +1,17 @@
+---
+topic: shapes, circles
+related: numbers
+nurseries: Group 1
+Author: Milly McGowan
+---
+
+# Eggs and spaces
+
+One of the children was interested in the open eggs that sit in the egg cartons. They were easily able to tell their teacher the different colours of the eggs as well as the sizes of the eggs.
+
+<img src="image/egg1.png" alt="drawing" width="100%"/>
+
+What is interesting about this activity is that the eggs take up two spaces in the carton. It could be said that it would be hard to fill up the whole carton because these open eggs take up two neighbouring holes. It may be possible that the whole carton cannot be filled up and perhaps one hole would be left. So, how could this be avoided?
+
+This would depend on how many holes there are. If it is a 9 by 9 carton, then there would be 81 holes and so one hole would be left. This type of problem is known as "dominoes on a chessboard". 
+
