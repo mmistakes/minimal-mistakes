@@ -1,0 +1,20 @@
+Sam Fearn:
+  name        : "Sam Fearn"
+  bio         : "Associate Professor, Education Track, Durham University Maths Department."
+  avatar      : "/assets/img/samfearn_profile_pic.jpg"
+  location: "Durham, UK"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:s.m.fearn@durham.ac.uk"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.maths.dur.ac.uk/users/s.m.fearn/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/samfearn"
+      
+Lexie Newbery:
+  name: "Lexie Newbury"
+  bio: "Student at a Sixth Form College in the North East, studying Maths as one of her A Levels. Other than enjoying Mathematics, she likes art, watching musicals and going to concerts/festivals."
+  
