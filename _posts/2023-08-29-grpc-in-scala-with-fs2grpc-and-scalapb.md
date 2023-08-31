@@ -568,7 +568,7 @@ object MyRoutes {
 ```
 
 ## 6. Index.html
-Create the `index.html` file in the following path, `src/main/scala/index.html`, this file is quite lengthy, we can copy the contents from this [link]().
+Create the `index.html` file in the following path, `src/main/scala/index.html`, this file is quite lengthy, we can copy the contents from this [link](https://github.com/hkateu/orderbuffer/blob/main/src/main/scala/index.html).
 It consists of 3 forms each with the following format:
 
 ```html
@@ -963,4 +963,4 @@ In this article, we've looked at how to create, a `gRPC` service in Scala using 
 
 `Scalapb` has a lot more to offer than what was discussed in this article such as more customizations, transformations, extra sbt settings as well as some extra guides on usage with other Scala libraries, I encourage you to dig into the documentation for more in depth knowledge on `gRPC` in Scala.
 
-The complete code for this article can be found over on my [GitHub]() account.
+The complete code for this article can be found over on my [GitHub](https://github.com/hkateu/orderbuffer) account.
