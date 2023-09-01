@@ -1,6 +1,6 @@
 ---
 topic: shapes,tiles,triangles,circles
-related:area,triangle
+related: area,triangle
 nurseries: Group 1
 Author: Milly McGowan
 ---
