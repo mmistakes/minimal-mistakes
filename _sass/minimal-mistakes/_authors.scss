@@ -1,0 +1,278 @@
+/*
+   Author profile and links
+   ========================================================================== */
+
+.author__avatar {
+  display: table-cell;
+  vertical-align: top;
+  width: 36px;
+  height: 36px;
+
+  @include breakpoint($large) {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+  
+
+  img {
+    max-width: 110px;
+    border-radius: 50%;
+
+    @include breakpoint($large) {
+      padding: 5px;
+      border: 1px solid $border-color;
+    }
+  }
+}
+
+.authorpage .h-card {
+    @include breakpoint($small) {
+      display:flex;
+    }
+}
+//
+.authorpage .author__avatar {
+    padding-bottom:10px;
+    @include breakpoint($small) {
+        display:inline-flex;
+        min-width:fit-content;
+        min-height:fit-content;
+        padding-right: 10px;
+        a {
+            margin:auto;
+        }
+    }
+    img {
+      max-width: 110px;
+      border-radius: 20%;
+      padding: 0px;
+      border: 0px;
+
+    }
+}
+
+.author__content {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 15px;
+  padding-right: 25px;
+  line-height: 1;
+
+  @include breakpoint($large) {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.authorpage .author__content {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.author__name {
+  margin: 0;
+
+  @include breakpoint($large) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+.sidebar .author__name {
+  font-family: $sans-serif;
+  font-size: $type-size-5;
+}
+
+.author__bio {
+  margin: 0;
+
+  @include breakpoint($large) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.author__urls-wrapper {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: $sans-serif;
+  z-index: 20;
+  cursor: pointer;
+
+  li:last-child {
+    a {
+      margin-bottom: 0;
+    }
+  }
+
+  .author__urls {
+    span.label {
+      padding-left: 5px;
+    }
+  }
+
+  @include breakpoint($large) {
+    display: block;
+  }
+
+  button {
+    position: relative;
+    margin-bottom: 0;
+
+    &:before {
+      @supports (pointer-events: none) {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+    }
+
+    &.open {
+      &:before {
+        pointer-events: auto;
+      }
+    }
+
+    @include breakpoint($large) {
+      display: none;
+    }
+  }
+}
+
+.authorpage .author__urls-wrapper{
+    z-index:auto;
+    @include breakpoint($small) {
+      display: block;
+    }
+    button {
+      @include breakpoint($small) {
+        display: none;
+      }
+    }
+}
+
+
+.author__urls {
+  display: none;
+  position: absolute;
+  right: 0;
+  margin-top: 15px;
+  padding: 10px;
+  list-style-type: none;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: $background-color;
+  box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
+  cursor: default;
+
+  &.is--visible {
+    display: block;
+  }
+
+  @include breakpoint($large) {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: calc(50% - 10px);
+    width: 0;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: $border-color transparent;
+    z-index: 0;
+
+    @include breakpoint($large) {
+      display: none;
+    }
+  }
+
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 10px);
+    width: 0;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: $background-color transparent;
+    z-index: 1;
+
+    @include breakpoint($large) {
+      display: none;
+    }
+  }
+
+  ul {
+    padding: 10px;
+    list-style-type: none;
+  }
+
+  li {
+    white-space: nowrap;
+  }
+
+  a {
+    display: block;
+    margin-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: inherit;
+    font-size: $type-size-5;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.authorpage .author__urls-wrapper .author__urls {
+    z-index:1;
+    @include breakpoint($small) {
+        display: inline-flex;
+        li {
+            padding-right:10px;
+        }
+        position: relative;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+        &:before {
+            @include breakpoint($small) {
+              display: none;
+            }
+        }
+        &:after {
+          @include breakpoint($large) {
+            display: none;
+          }
+        }
+    }
+}
