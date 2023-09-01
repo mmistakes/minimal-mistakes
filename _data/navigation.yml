@@ -2,6 +2,8 @@
 main:
   - title: "All Articles"
     url: /articles/
+  - title: "Authors"
+    url: /authors/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
