@@ -39,9 +39,9 @@
         min-width:fit-content;
         min-height:fit-content;
         padding-right: 10px;
-        a {
-            margin:auto;
-        }
+        //a {
+//            margin:auto;
+//        }
     }
     img {
       max-width: 110px;
@@ -89,6 +89,10 @@
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
+}
+
+.authorpage .author__name {
+    margin:0;
 }
 
 .author__bio {
