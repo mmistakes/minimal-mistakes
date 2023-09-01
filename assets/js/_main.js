@@ -29,8 +29,9 @@ $(function() {
 
   // Follow menu drop down
   $(".author__urls-wrapper").find("button").on("click", function() {
-    $(".author__urls").toggleClass("is--visible");
-    $(".author__urls-wrapper").find("button").toggleClass("open");
+    var author = $(this).attr("author");
+    $("[author='"+author+"'].author__urls").toggleClass("is--visible");
+    $("[author='"+author+"'].author__urls-wrapper").find("button").toggleClass("open");
   });
 
   // Close search screen with Esc key
