@@ -12,5 +12,5 @@ toc_sticky: true
 ---
 {% for authormap in site.data.authors %}
   {% assign author=authormap[1] %}
-  {% include author-profile.html author=author %}
+  {% include author-profile.html author=author longbio=true %}
 {% endfor %}

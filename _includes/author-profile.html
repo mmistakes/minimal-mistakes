@@ -18,6 +18,9 @@
     {% if author.bio %}
       <div class="author__bio p-note" itemprop="description">
         {{ author.bio | markdownify }}
+        {% if include.longbio and author.longbio %}
+          {{ author.longbio | markdownify }}
+        {% endif %}
       </div>
     {% endif %}
   </div>
