@@ -3,7 +3,9 @@ topic: fractals, patterns in nature
 related: same and different    
 nurseries: Group 5 
 author: Lexie Newbery
-# excerpt: test
+# excerpt: test #
+header:
+  teaser: /assets/img/lookingatcauliflower.png
 ---
 
 # Fractals
