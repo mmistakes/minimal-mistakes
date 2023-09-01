@@ -1,6 +1,10 @@
 Sam Fearn:
   name        : "Sam Fearn"
   bio         : "Associate Professor, Education Track, Durham University Maths Department."
+  longbio     : |
+    I currently have a focus on formative assessment in higher mathematics, and in particular on the role computer-aided assessment can play in this.
+    
+    Aside from mathematics, I’m interested in computing and technology, gaming and climbing.
   avatar      : "/assets/img/samfearn_profile_pic.jpg"
   location: "Durham, UK"
   links:
@@ -16,5 +20,17 @@ Sam Fearn:
       
 Lexie Newbery:
   name: "Lexie Newbury"
-  bio: "Student at a Sixth Form College in the North East, studying Maths as one of her A Levels. Other than enjoying Mathematics, she likes art, watching musicals and going to concerts/festivals."
+  bio: "Student at a Sixth Form College in the North East, studying Maths as one of her A Levels."
+  longbio: "Other than enjoying Mathematics, she likes art, watching musicals and going to concerts/festivals."
   
+Milly McGowan:
+  name: "Milly McGowan"
+  bio: "Currently attending college in the Northeast of England."
+  longbio: |
+    I have enjoyed being able to make my little contributions to this website. I hope that anyone who is interested in YMBM enjoys what has been written by myself and others.
+    
+    However, whilst I do have a passion for mathematics, it is not the only thing that I like to revolve myself around. Since I was eight, I have been playing the piano. It’s been classical music mainly but after, hopefully, achieving my Grade 8 in 2024, I would like to branch out into other genres. I could only dream of being at Elton John’s level but that’s always something to strive for!
+    
+    Along with this, I really love reading at whatever chance I can get and, perhaps to many mathematicians’ horrors, I’m an English Literature lover at heart. Hopefully, I would like to one day be able to say that I’ve read my fair share of gothic novels, such as The Vampyre and The Picture of Dorian Grey.
+    
+    Thank you to anyone who has taken time to read about me and I hope that you also enjoy exploring the different parts of this website!
