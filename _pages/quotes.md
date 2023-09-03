@@ -184,6 +184,10 @@ _"Everyone suspects himself of at least one of the cardinal virtues"_
 
 -- F S Fitzgerald, "The great Gatsby"
 
+_"and I do not know, Mrs Elton, whether the uncertainty of our meetings, the sort of constant expectation there will be of his coming today or tomorrow, and at any hour, may not be more friendly to happiness than having him actually in the house. It think it is so. I think it is the state of mind which gives most spirit and delight."_
+
+-- J Austen, "Emma"
+
 ### Hierarchy and class
 
 _I don’t know where being a servant came into disrepute. It is the refuge of a philosopher, the food of the lazy, and, properly carried out, it is a position of power, even of love. I can’t understand why more intelligent people don’t take it as a career—learn to do it well and reap its benefits. A good servant has absolute security, not because of his master’s kindness, but because of habit and indolence. It’s a hard thing for a man to change spices or lay out his own socks. He’ll keep a bad servant rather than change. But a good servant, and I am an excellent one, can completely control his master, tell him what to think, how to act, whom to marry, when to divorce, reduce him to terror as a discipline, or distribute happiness to him, and finally be mentioned in his will._
