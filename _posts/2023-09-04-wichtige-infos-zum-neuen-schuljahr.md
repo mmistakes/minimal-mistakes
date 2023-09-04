@@ -2,7 +2,7 @@
 layout: elternbrief
 title: "Wichtige Infos zum neuen Schuljahr"
 date: "2023-09-04 21:33:27"
-modified: "2023-09-04 21:34:42"
+modified: "2023-09-04 21:45:51"
 category: elternbrief
 ---
 
@@ -12,8 +12,8 @@ Sie erhalten diese Nachricht über den Verteiler des letzten Schuljahres (Bsp. a
 
 Ich hoffe, Sie hatten eine Sommerzeit schöne Sommerferien und heiße Sie willkommen im neuen Schuljahr 2023/24, das morgen (Mo., 28.08.) um 8:00 Uhr beginnt. Der Unterricht gestaltet sich in der kommenden Woche zeitlich wie folgt:
 
- Klassen A1 - A9, Wikoklasse und 5b  8:00 -  11:30 Uhr
- Klassen 4a, 4b, 4c, 5a, 5c, 6a, 6c 8:00 - 12:45 Uhr
+- Klassen A1 - A9, Wikoklasse und 5b  8:00 -  11:30 Uhr
+- Klassen 4a, 4b, 4c, 5a, 5c, 6a, 6c 8:00 - 12:45 Uhr
 
 Denken Sie bitte daran, Ihrem Kind alle mit den Lehrkräften vereinbarten nötigen Materialien mit in die Schule zu geben und schlagen Sie die an Ihr Kind für dieses Schuljahr ausgeliehenen Bücher gleich in der ersten Woche mit einem durchsichtigen Umschlag ein! 
 
