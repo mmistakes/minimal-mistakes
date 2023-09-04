@@ -23,7 +23,7 @@
 /// @ignore _su-calc-sum
 /// @ignore _su-needs-calc-output
 
-@use "sass:math";
+
 
 // Su Span
 // -------
@@ -90,7 +90,7 @@
   @if unitless($span-width) {
     $container-spread: su-valid-spread($container-spread);
     $container: _su-sum($columns, $gutters, $container-spread, $validate: false);
-    @return percentage(math.div($span-width, $container));
+    @return percentage($span-width / $container);
   }
 
   @return $span-width;
@@ -141,7 +141,7 @@
   }
 
   $container: _su-sum($columns, $gutters, $container-spread);
-  @return percentage(math.div($gutters, $container));
+  @return percentage($gutters / $container);
 }
 
 

@@ -24,7 +24,6 @@
   "devDependencies": {
     "npm-run-all": "^4.1.5",
     "onchange": "^7.1.0",
-    "sass": "~1.39.2",
     "uglify-js": "^3.13.6"
   },
   "scripts": {
