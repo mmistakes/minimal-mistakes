@@ -6,7 +6,6 @@ categories:
 tags:
   - CodeComplete2
 classes: wide
-published: false
 ---
 
 # 14장: 순차적 코드 구성하기
