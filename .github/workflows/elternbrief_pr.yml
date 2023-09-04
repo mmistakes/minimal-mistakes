@@ -1,0 +1,77 @@
+# This defines the name of the workflow as it will appear in the "Actions" tab of the GitHub repository.
+name: 'Create Elternbrief from issue!'
+
+# The `on` key lets you define the events that trigger when the workflow is run. You can define multiple events here. For more information, see "[AUTOTITLE](/actions/using-workflows/triggering-a-workflow#using-events-to-trigger-workflows)."
+on:
+  issues:
+    types: [opened, edited, labeled]
+# Add the `workflow_dispatch` event if you want to be able to manually run this workflow from the UI. For more information, see [`workflow_dispatch`](/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch).
+  # workflow_dispatch:
+  # # Add the `push` event, so that the workflow runs automatically every time a commit is pushed to a branch called `main`. For more information, see [`push`](/actions/using-workflows/events-that-trigger-workflows#push).
+  # push:
+  #   branches:
+  #     - main
+  # # Add the `pull_request` event, so that the workflow runs automatically every time a pull request is created or updated. For more information, see [`pull_request`](/actions/using-workflows/events-that-trigger-workflows#pull_request).
+  # pull_request:
+
+# This modifies the default permissions granted to `GITHUB_TOKEN`. This will vary depending on the needs of your workflow. For more information, see "[AUTOTITLE](/actions/using-jobs/assigning-permissions-to-jobs)."
+#
+# In this example, the `pull-requests: read` permission is needed for the `trilom/file-changes-action` action that is used later in this workflow.
+permissions:
+  contents: write
+  pull-requests: write
+# The `concurrency` key ensures that only a single workflow in the same concurrency group will run at the same time. For more information, see "[AUTOTITLE](/actions/using-jobs/using-concurrency)."
+# `concurrency.group` generates a concurrency group name from the workflow name and pull request information. The `||` operator is used to define fallback values. 
+# `concurrency.cancel-in-progress` cancels any currently running job or workflow in the same concurrency group.
+concurrency:
+  group: '${{ github.workflow }} @ elternbrief/${{ github.event.issue.number }}'
+  cancel-in-progress: true
+
+# The `jobs` key groups together all the jobs that run in the workflow file.
+jobs:
+  # This line defines a job with the ID `check-links` that is stored within the `jobs` key.
+  elternbrief_pr:
+    # The `runs-on` key in this example configures the job to run on a GitHub-hosted runner or a self-hosted runner, depending on the repository running the workflow. 
+    # 
+    # In this example, the job will run on a self-hosted runner if the repository is named `docs-internal` and is within the `github` organization. If the repository doesn't match this path, then it will run on an `ubuntu-latest` runner hosted by GitHub. For more information on these options, see "[AUTOTITLE](/actions/using-jobs/choosing-the-runner-for-a-job)."
+    # runs-on: ${{ fromJSON('["ubuntu-latest", "self-hosted"]')[github.repository == 'github/docs-internal'] }}
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'elternbrief')
+    # The `steps` key groups together all the steps that will run as part of the `check-links` job. Each job in a workflow has its own `steps` section.
+    steps:
+      - run: |
+          echo $EVENT
+        env:
+          EVENT: ${{ toJson(github.event) }}
+      # The `uses` key tells the job to retrieve the action named `actions/checkout`. This is an action that checks out your repository and downloads it to the runner, allowing you to run actions against your code (such as testing tools). You must use the checkout action any time your workflow will use the repository's code or you are using an action defined in the repository.
+      - name: Checkout
+        uses: actions/checkout@v3
+      - run: |
+          pip install python-dateutil python-slugify
+      - run: |
+          python .github/workflows/create_post.py
+        env:
+          ISSUE_ID: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_CREATED_AT: ${{ github.event.issue.created_at }}
+          ISSUE_UPDATED_AT: ${{ github.event.issue.updated_at }}
+      - run: |
+          git status
+          git diff
+      - name: Create Pull Request for New / Updated Post
+        id: cpr
+        uses: peter-evans/create-pull-request@v5
+        with:
+          branch: "posts/issue-${{ github.event.issue.number }}"
+          commit-message: "Create / Update Post based on #${{ github.event.issue.number }}"
+          title: "Create / Update Post based on #${{ github.event.issue.number }}"
+          body: "Post #${{ github.event.issue.number }}: `${{ github.event.issue.title }}`"
+          add-paths: |
+            _posts/*.md
+      - name: Check outputs
+        if: ${{ steps.cpr.outputs.pull-request-number }}
+        run: |
+          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
+          echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
+
