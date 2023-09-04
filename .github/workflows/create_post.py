@@ -24,8 +24,8 @@ def main():
 
     post = {
         'id': os.environ['ISSUE_ID'],
-        'title': os.environ['ISSUE_TITLE'],
-        'body': os.environ['ISSUE_BODY'],
+        'title': os.environ['ISSUE_TITLE'].strip(),
+        'body': os.environ['ISSUE_BODY'].replace('\r', ''),
         'created_at': parse_date(os.environ['ISSUE_CREATED_AT']), # 2023-09-04T15:34:54Z
         'updated_at': parse_date(os.environ['ISSUE_UPDATED_AT']), # 2023-09-04T15:34:54Z
     }
