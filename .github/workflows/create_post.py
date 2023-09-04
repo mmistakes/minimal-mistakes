@@ -2,8 +2,7 @@ from string import Template
 
 OUTPUT_FOLDER='_posts'
 
-post_template = Template("""
----
+post_template = Template("""---
 layout: elternbrief
 title: "${title}"
 date: "${date}"
@@ -24,9 +23,9 @@ def main():
         return datetime
 
     post = {
-        'id': os.environ['ISSUE_ID'], 
-        'title': os.environ['ISSUE_TITLE'], 
-        'body': os.environ['ISSUE_BODY'], 
+        'id': os.environ['ISSUE_ID'],
+        'title': os.environ['ISSUE_TITLE'],
+        'body': os.environ['ISSUE_BODY'],
         'created_at': parse_date(os.environ['ISSUE_CREATED_AT']), # 2023-09-04T15:34:54Z
         'updated_at': parse_date(os.environ['ISSUE_UPDATED_AT']), # 2023-09-04T15:34:54Z
     }
@@ -40,7 +39,7 @@ def main():
 
     def to_jekyll_date(date):
         return date.strftime("%Y-%m-%d %H:%M:%S") # YYYY-MM-DD HH:MM:SS
-    
+
     template_post = dict(**post)
     template_post['date'] = to_jekyll_date(template_post['created_at'])
     template_post['modified'] = to_jekyll_date(template_post['updated_at'])
