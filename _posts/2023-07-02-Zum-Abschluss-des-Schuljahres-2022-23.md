@@ -19,7 +19,7 @@ Die Teilnahme am Mittagessen wird ab August 2023 nur noch nach digitaler Anmeldu
 Online-Anmeldung:Bitte rufen Sie www.kundennah-bestellung.de/registrierung/neukunde
 auf und folgen Sie den Anweisungen!
 
-Wir sind bei Youtube: https://www.youtube.com/@GrundschuleAmBrandwerder
+Wir sind bei Youtube: [https://www.youtube.com/@GrundschuleAmBrandwerder](https://www.youtube.com/@GrundschuleAmBrandwerder)
 Hier kann man unseren Jubiläumsfilm und den Brandwerdersong genießen. Herr Seitz hat diesen erstellt und damit uns allen eine große Freude bereitet!
 
 Der Hort hat für die Sommerferien wieder buntes Programm zusammengestellt (siehe Aushang auf dem Schulgelände). Allen Kindern viel Spaß!
@@ -33,10 +33,10 @@ Hier noch einmal zusammengefasst die Planung für die nächsten Tage und die ers
 | Dienstag, 11.07.2022 | Unterrichtsschluss 11:30 Uhr für alle Kinder! | 12:00 Uhr: Verabschiedung der 6. Klassen |
 | Mittwoch, 12.07.2022 | Unterrichtsschluss 10:45 Uhr | Letzter Schultag, Zeugnisse |
 | 13.07. – 25.08.2022 | Sommerferien | |
-| Montag, 28.08.2022 1. Schultag, Unterrichtszeit | Unterricht am 1. Schultag: Jül-Klassen (A1 – A9) 8 – 11:30 Uhr | 4a, 4b, 4c, 5a, 5b, 5c, 6a, 6b: 8 - 12:45 Uhr |
-| Erste Schulwoche 28.08. – 01.09.2022 | A1 – A9 und Wikoklasse: 8 -  11:30 Uhr; 4a, 4b, 4c, 5a, 5b,5c, 6a, 6b: 8 - 12:45 Uhr | Methoden- und Findungstage mit Klassenleitung und Fachlehrkräften im Wechsel |
+| Montag, 28.08.2022 1. Schultag, Unterrichtszeit | Unterricht am 1. Schultag: Jül-Klassen (A1 – A9) 8 – 11:30 Uhr<br> 4a, 4b, 4c, 5a, 5b, 5c, 6a, 6b: 8 - 12:45 Uhr | |
+| Erste Schulwoche 28.08. – 01.09.2022 | A1 – A9 und Wikoklasse: 8 -  11:30 Uhr<br> 4a, 4b, 4c, 5a, 5b,5c, 6a, 6b: 8 - 12:45 Uhr | Methoden- und Findungstage mit Klassenleitung und Fachlehrkräften im Wechsel |
 | 04.-08.09.2023 | Der erste Elternabend findet statt! Die Klassenleitung lädt Sie ein! | Bitte vormerken! |
-| Samstag, 02.09.2023 | Einschulungsfeiern 9 – 12 Uhr; Wir freuen uns über Eltern als Helfer- und Unterstützer*innen beim Begrüßen (Kaffee und Kuchen)!! | Siehe „Kuchenbrief“ zur Einschulung. |
+| Samstag, 02.09.2023 | Einschulungsfeiern 9 – 12 Uhr<br> Wir freuen uns über Eltern als Helfer- und Unterstützer*innen beim Begrüßen (Kaffee und Kuchen)!! | Siehe „Kuchenbrief“ zur Einschulung. |
 
 
 Nun heißt es für die Kinder „Endlich Sommerferien!“ Ich wünsche Ihnen und Ihrer Familie einen wunderbaren Sommer, ein Abschalten, eine tolle Zeit mit Ihrem Kind und dann eine gesunde und erholte Rückkehr in die Grundschule am Brandwerder. Wir sehen uns wieder am Montag, 28.08.2022. Passen Sie auf sich auf!
