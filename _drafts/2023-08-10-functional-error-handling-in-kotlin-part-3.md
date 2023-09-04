@@ -501,7 +501,7 @@ class JobsService(private val jobs: Jobs) {
 }
 ```
 
-Here, the `either` builder creates the context of type `Raise<JobError>`, handling it properly. Please praise the simplicity and absence of boilerplate code, like calls to `map` functions or `when` expressions.
+Here, the `either` builder creates the context of type `Raise<JobError>`, handling it properly. Please praise **the simplicity and absence of boilerplate code**, like calls to `map` functions or `when` expressions.
 
 It's also possible to make the backward conversion from an `Either<E, A>` to a `Raise<E>` using the `bind` function. In the `JobService` module, we can add the following function:
 
@@ -525,7 +525,7 @@ public interface Raise<in Error> {
 }
 ```
 
-The `bind()` function calls the `raise` function if the `Either` instance is a `Left`; otherwise, it returns the value wrapped by the `Right` instance. As we saw at the beginning of this section, the `raise()` function is defined in the context of the `Raise<E>` type. As explained, `bind()` needs a `Raise<E>` context. For this reason, calling `bind()` adds the `Raise<E>` context to the resulting function.
+The `bind()` function calls the `raise` function if the `Either` instance is a `Left`; otherwise, it returns the value wrapped by the `Right` instance. As we saw at the beginning of this section, the `raise()` function is defined in the context of the `Raise<E>` type.
 
 On the contrary, if we are not interested in the type of the logical error but only in the fact that an error occurred, we can transform a computation in the `Raise<E>` context to an `Option<A>` or a nullable object. Let's start with the `Option<A>` case.
 
@@ -537,14 +537,14 @@ public inline fun <A> option(block: OptionRaise.() -> A): Option<A> =
     fold({ block(OptionRaise(this)) }, ::identity, ::Some)
 ```
 
-Despite the implementation using the `fold` function, the `option` builder is defined on a specific implementation of the `Raise<E>` type, the `OptionRaise` class. The `OptionRaise` class is defined as follows:
+Despite the implementation using the `fold` function, the `option` builder is defined on a specific implementation of the `Raise<E>` type, the `OptionRaise` class. The definition of the `OptionRaise` class is the following:
 
 ```kotlin
 // Arrow Kt Library
 public class OptionRaise(private val raise: Raise<None>) : Raise<None> by raise
 ```
 
-What does it mean? We can only raise a `None` inside an `OptionRaise` context. We can't raise a typed error. The library is designed to avoid accidentally losing the error information. So, there is no chance to convert a `Raise<E>` context to an `Option<A>` type. We can only convert a `Raise<None>` context to an `Option<A>` type.
+What does it mean? We can only raise a `None` inside an `OptionRaise` context. We can't raise a typed error. The library is designed to avoid accidentally losing the error information. So, **there is no chance to convert a `Raise<E>` context to an `Option<A>` type losing the error of type `E`**. We can only convert a `Raise<None>` context to an `Option<A>` type.
 
 For example, say we want to add a method to the `JobService` class that retrieves the salary associated with a `JobId`. If the `JobId` is invalid, we want to return `None`. As we said, we can't use the `findById` function we defined in the `Jobs` module, but we need to implement a new version. Let's call it `findByIdWithOption`:
 
@@ -583,7 +583,7 @@ context (OptionRaise)
 fun salaryWithRaise(jobId: JobId): Salary = salary(jobId).bind()
 ```
 
-Be aware that the `bind` function is defined in the context of the `OptionRaise` type. The `bind` function is defined as:
+Be aware that the `bind` function is defined in the context of the `OptionRaise` type, and it's not available if we use the type `Raise<None>` as context. The `bind` function is defined as:
 
 ```kotlin
 // Arrow Kt Library
@@ -602,7 +602,7 @@ public inline fun <A> nullable(block: NullableRaise.() -> A): A? =
     merge { block(NullableRaise(this)) }
 ```
 
-As we can see, we have another dedicated implementation of the `Raise` interface called `NullableRaise`. The `NullableRaise` class is defined as:
+As we can see, we have another dedicated implementation of the `Raise` interface called `NullableRaise`:
 
 ```kotlin
 // Arrow Kt Library
@@ -631,7 +631,7 @@ class LiveJobs : Jobs {
 }
 ```
 
-As we should notice, the function doesn't return a nullable type. We represent the possible nullability of the result with the `NullableRaise` context. As we said, we raised a `null` value in case of logical error.
+As we should notice, **the function doesn't return a nullable type**. We represent the possible nullability of the result with the `NullableRaise` context. As we said, we raised a `null` value in case of logical error.
 
 It's time to convert the `Raise<Null>` context to a nullable object. As we said, we can use the `nullable` builder. For example, we'll add a function to the `JosService` module to retrieve the role of a `JobId` or `null` if the `JobId` is not valid:
 
@@ -644,7 +644,7 @@ class JobsService(private val jobs: Jobs, private val converter: CurrencyConvert
 }
 ```
 
-Working with nullable types this way becomes very easy since we don't have to deal with `?.` notation and Elvis operators. Note that we didn't need to use the `?.` operator to access the' sole' property of the job since the nullability is expressed by the `NullableRaise` context.
+Working with nullable types this way becomes very easy since we don't have to deal with `?.` notation and Elvis operators. Note that we didn't need to use the `?.` operator to access the `role` property of the job since the nullability is expressed by the `NullableRaise` context.
 
 As we did for the previous wrapper types, we can revert the conversion from a nullable object to a `NullableRaise` context using the `bind` function:
 
@@ -656,7 +656,7 @@ class JobsService(private val jobs: Jobs, private val converter: CurrencyConvert
 }
 ```
 
-It's worth noting that the `bind` function returns a computation ending with a non-nullable type. In our case, the return type of the `roleWithRaise` function is `Role` and not `Role?` as in the original `role` function. The `bind` behavior is due to its implementation:
+It's worth noting that also the `bind` function returns a computation ending with a non-nullable type. In our case, the return type of the `roleWithRaise` function is `Role` and not `Role?` as in the original `role` function. The `bind` behavior is due to its implementation:
 
 ```kotlin
 // Arrow Kt Library
@@ -670,7 +670,7 @@ public class NullableRaise(private val raise: Raise<Null>) : Raise<Null> by rais
 }
 ```
 
-The `contract` defined in the first line of the gives the hint to the compiler that if the `bind` function returns, then the receiver object is not null for sure.
+The `contract` defined in the first line gives the hint to the compiler that if the `bind` function returns, then the receiver object is not null for sure.
 
 Finally, we saw in the previous article that the Arrow library lets us easily convert an `Option<A>` to a nullable type. This sentence also stands true in the case of a `Raise<E>` context. In fact, we can convert an `Option<A>` to a function in the `NullableRaise` context using a dedicated `bind` function:
 
@@ -690,16 +690,16 @@ context (NullableRaise)
 fun salaryWithNullableRaise(jobId: JobId): Salary = salary(jobId).bind()
 ```
 
-Remember that the original `salary` function returns an `Option<Salary`.
+Remember that the original `salary` function returns an `Option<Salary>`.
 
-Last, we have the `Result<A>` wrapper type. As you may remember from the [previous article of the series](https://blog.rockthejvm.com/functional-error-handling-in-kotlin-part-2/), the `Result<A>` uses subclasses of `Throwable` to represent the error information. In fact, the Arrow library has an implementation of the `Raise<E>` interface for the `Result<A>` type. Which uses `Throwable` for the `E` type variable. The `ResultRaise` class is defined as:
+Last, we have the `Result<A>` wrapper type. As you may remember from the [previous article of the series](https://blog.rockthejvm.com/functional-error-handling-in-kotlin-part-2/), the `Result<A>` uses subclasses of `Throwable` to represent the error information. In fact, the Arrow library has an implementation of the `Raise<E>` interface for the `Result<A>` type. It uses `Throwable` for the `E` type variable:
 
 ```kotlin
 // Arrow Kt Library
 public class ResultRaise(private val raise: Raise<Throwable>) : Raise<Throwable> by raise
 ```
 
-To see it in action, we can change the function `convertUsdToEur` we defined in the `RaiseCurrencyConverter` class, letting it raise an exception in case of error instead of a logically typed error:
+To see it in action, we can change the function `convertUsdToEur` we defined in the `RaiseCurrencyConverter` class, letting it raise an exception in case of error instead of a logical typed error. You may remember that the `currencyConverter.convertUsdToEur(amount)` statement throws an exception in case of a negative or `null` amount:
 
 ```kotlin
 class RaiseCurrencyConverter(private val currencyConverter: CurrencyConverter) {
@@ -713,7 +713,7 @@ class RaiseCurrencyConverter(private val currencyConverter: CurrencyConverter) {
 }
 ```
 
-You may remember that the `currencyConverter.convertUsdToEur(amount)` statement throws an exception in case of a negative or `null` amount. As we may expect, we also have a builder function to convert a computation in the `ResultRaise` context to a `Result<A>` object. It's called `result`, and it's defined as:
+As we may expect, we also have a builder function to convert a computation in the `ResultRaise` context to a `Result<A>` object. It's called `result`, and it's defined as:
 
 ```kotlin
 // Arrow Kt Library
@@ -742,7 +742,7 @@ val maybeSalaryInEurRaise: context(ResultRaise) (Double) -> Double = { salary: D
 }
 ```
 
-The `bind` function is defined as:
+The definition of the `bind` function is as follows:
 
 ```kotlin
 // Arrow Kt Library
