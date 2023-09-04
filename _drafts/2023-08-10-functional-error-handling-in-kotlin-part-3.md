@@ -234,9 +234,9 @@ public inline fun <E, A, B> fold(
 ): B
 ```
 
-Let's split the above function into parts. The `block` parameter is the function that we want to execute. The `catch` parameter is a function that is executed when the `block` function throws an exception. The `recover` parameter is a function that is executed when the `block` function raises a logically typed error of type `E`. Finally, the `transform` parameter is a function that is executed when the `block` function returns a value of type `A`. As we can see, all the handling blocks return the exact value of type `B`.
+Let's split the above function into parts. The `block` parameter is the function that we want to execute. The `catch` parameter is a function that is executed when the `block` function throws an exception. The `recover` parameter is a function that is executed when the `block` function raises a logical typed error of type `E`. Finally, the `transform` parameter is a function that is executed when the `block` function returns a value of type `A`, which is the happy path. As we can see, all the handling blocks return the exact value of type `B`.
 
-As we did in the previous articles, let's implement a service using the `Jobs` module and function that prints the salary of a `JobId`:
+As we did in the previous articles, let's implement a service using the `Jobs` module and a function that prints the salary of a `JobId`:
 
 ```kotlin
 class JobsService(private val jobs: Jobs) {
@@ -256,7 +256,7 @@ class JobsService(private val jobs: Jobs) {
 }
 ```
 
-Here, we used the version of the `fold` function that does not handle exceptions. In fact, the `catch` parameter is not defined. Let's use the `printSalary` function to print the salary of a job that exists in the database:
+Here, we used the version of the `fold` function that does not handle exceptions but simply rethrows them. In fact, the `catch` parameter is not defined. Let's use the `printSalary` function to print the salary of a job that exists in the database:
 
 ```kotlin
 fun main() {
@@ -279,7 +279,7 @@ Whereas, if we try to print the salary of a job that doesn't exist in the databa
 Job with id 42 not found
 ```
 
-So far, so good. As we might notice, the `printSalary` method has no context defined. In fact, the `fold` function "consumes" the context, creating a concrete instance of a `Raise<E>` type and executing the `block` lambda in the context of that instance. Let's look at the implementation of the `fold` function for a moment:
+So far, so good. As we might notice, the `printSalary` method has no context defined. In fact, **the `fold` function "consumes" the context**, creating a concrete instance of a `Raise<E>` type and executing the `block` lambda in the context of that instance. Let's look at the implementation of the `fold` function for a moment:
 
 ```kotlin
 // Arrow Kt Library
@@ -356,7 +356,7 @@ internal fun <R> CancellationException.raisedOrRethrow(raise: DefaultRaise): R =
     }
 ```
 
-It's essential to notice that the typed error is handled if the exception is an instance of `RaiseCancellationExceptionNoTrace` or `RaiseCancellationException`. Otherwise, if the exception is a true `CancellationException`, it is rethrown. In fact, `CancellationException` should not be caught because it’s used by Kotlin to cancel coroutines, and catching it can break the normal functioning of coroutines.
+It's essential to notice that the typed error is handled if the exception is an instance of `RaiseCancellationExceptionNoTrace` or `RaiseCancellationException`. Otherwise, if the exception is a true `CancellationException`, it is rethrown. In fact, **`CancellationException` should not be caught because it’s used by Kotlin to cancel coroutines**, and catching it can break the normal functioning of coroutines.
 
 The last `catch` expression of the `fold` function catches all the other exceptions and calls the `catch` lambda with the exception if the exception is not fatal. Otherwise, it rethrows the exception. The library performs this check using the `nonFatalOrThrow` extension function. In case you need to know them, fatal exceptions are the following:
 
@@ -369,9 +369,9 @@ The last `catch` expression of the `fold` function catches all the other excepti
 
 The subtypes of these errors should not be caught.
 
-Every branch of the `fold` function completes the `DefaultRaise` instance, calling the `complete` method. The default implementation delimits the scope of the `Raise<E>` instance.
+Every branch of the `fold` function completes the `DefaultRaise` instance, calling the `complete` method. The default implementation delimits the scope of the `Raise<E>` instance setting the `isActive` flag to `false`.
 
-Please be aware that any exception thrown inside the `Raise<E>` context will bubble up and not be transformed automatically into a logically typed error. For example, imagine we need to convert amounts from dollars to euros. We can define a `CurrencyConverter` module as follows:
+Please be aware that any exception thrown inside the `Raise<E>` context will bubble up and not be transformed automatically into a logical typed error. For example, imagine we need to convert amounts from dollars to euros. We can define a `CurrencyConverter` module as follows:
 
 ```kotlin
 class CurrencyConverter {
@@ -422,7 +422,7 @@ As we said, we expect the `catch` lambda to catch the exception. In fact, if we 
 An exception was thrown: java.lang.IllegalArgumentException: Amount must be positive
 ```
 
-What if we want to convert the exception into a typed error? For example, we want to convert the `IllegalArgumentException` into a `NegativeSalary`. Well, we can do it using the `catch` function. Let's change the `RaiseCurrencyConverter.convertUsdToEur` function as follows:
+What if we want to convert the exception into a typed error? For example, we want to convert the `IllegalArgumentException` into a `NegativeSalary`. Well, we can do it using a function called `catch` provided by the Arrow library. Let's change the `RaiseCurrencyConverter.convertUsdToEur` function as follows:
 
 ```kotlin
 context (Raise<NegativeSalary>)
@@ -446,11 +446,11 @@ public inline fun <A> catch(block: () -> A, catch: (throwable: Throwable) -> A):
     }
 ```
 
-As we can see, there's nothing special with the `catch` function. It just catches the exception and calls the `catch` lambda with the exception. The `nonFatalOrThrow` extension function checks whether the exception is fatal. If the exception is fatal, it is rethrown. Otherwise, it is processed. However, no reference to the `Raise<E>` context is present. In fact, the call to the `raise` function we did introduces the connection to the `Raise<E>` context.
+As we can see, there's nothing special with the `catch` function. It just catches the exception and calls the `catch` lambda with the exception. The `nonFatalOrThrow` extension function checks whether the exception is fatal. If the exception is fatal, it is rethrown. Otherwise, it is processed.
 
-It's a different story if we want to recover or react to a typed error. As a rule of thumb, we should model errors expected to happen as typed errors. We can call them logical errors. We've seen many examples in the previous articles. The `JobNotFound` and `NegativeSalary` errors are examples of errors that are expected to happen. On the contrary, we should use exceptions to model faults, that is, errors that are not likely to happen. Often, these kinds of errors are related to the environment or are due to bugs in our code, and we can't do anything to recover from them.
+It's a different story if we want to recover or react to a typed error. As a rule of thumb, **we should model errors expected to happen as typed errors**. We called them logical errors. We've seen many examples in the previous articles. The `JobNotFound` and `NegativeSalary` errors are examples of errors that are expected to happen. On the contrary, **we should use exceptions to model faults**, that is, errors that are not likely to happen. Often, these kinds of errors are related to the environment or are due to bugs in our code, and we can't do anything to recover from them.
 
-Many programming languages, like Java, model logical errors and faults with exceptions. Java architects tried to give us a way to distinguish between logical errors and faults, introducing the concept of checked and unchecked exceptions. However, nobody listens to them, and the distinction needs to be clarified, and the checked exceptions are often misused.
+Many programming languages, like Java, model logical errors and faults with exceptions. Java architects tried to give us a way to distinguish between logical errors and faults, introducing the concept of checked and unchecked exceptions. However, nobody listens to them, and the checked exceptions are often misused.
 
 As we said, what if we want to recover from a logical error in a computation in the `Raise<E>` context? Well, we can use the `recover` function. Let's make an example. The `RaiseCurrencyConverter.convertUsdToEur` function raises a `NegativeSalary` error when the amount is negative. We want to recover such a situation by returning a zero default value. We can do it as follows:
 
