@@ -1,4 +1,3 @@
-
 ---
 layout: elternbrief
 title: "Wichtige Infos zum neuen Schuljahr"
