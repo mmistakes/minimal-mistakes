@@ -12,4 +12,13 @@ main:
   #   url: /category-archive/
   - title: "About"
     url: https://mmistakes.github.io/minimal-mistakes/about/
+
+docs:
+  - title: "대목차"
+    children:
+      - title: "Category"
+        url: /categories/
+      - title: "Tag"
+        url: /tags/
+
   
