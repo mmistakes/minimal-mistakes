@@ -761,7 +761,7 @@ We saw in the previous articles of the series that one of the main strengths of 
 
 The above sentence is also true for the computations in the `Raise<E>` context. As we did in the previous articles, we'll prove it by implementing a function that returns the gap between the salary of a given job and the salary of the job with the highest salary among all companies. We'll call this function `getSalaryGapWithMax`.
 
-To implement it, we need first to ass a new method to the `Jobs` module, the `findAll` function returning all the jobs listed in our database:
+To implement it, we need first to add a new method to the `Jobs` module, the `findAll` function returning all the jobs listed in our database:
 
 ```kotlin
 interface Jobs {
@@ -810,7 +810,7 @@ class JobsService(private val jobs: Jobs, private val converter: CurrencyConvert
 }
 ```
 
-It should be clear which is the advantage of using the `Raise<E>` context: We can write the `getSalaryGapWithMax` function without the need to call any transformation or handle any possible error. We used plain types as if we were only interested in the happy path. The `Raise<E>` context will do everything else for us. We didn't need the `bind` function to compose the computations. Perfection.
+It should be clear which is the advantage of using the `Raise<E>` context: We can write the `getSalaryGapWithMax` function without the need to call any transformation or handle any possible error. **We used plain types as if we were only interested in the happy path**. The `Raise<E>` context will do everything else for us. We didn't need the `bind` function to compose the computations. Perfection.
 
 We can try the `getSalaryGapWithMax` function in the `main` function to get the gap between the salary of a Software Engineer at Apple and the maximum salary among all the jobs:
 
@@ -837,7 +837,7 @@ An error was raised: JobNotFound(jobId=JobId(value=42))
 
 Everything works as expected.
 
-We need to handle logic errors from different hierarchies in the same method. For example, imagine we want the above salary gap in EUR, not USD. We need to use the converter we already introduced in the previous sections. However, to show how to handle different error type hierarchies, we'll slightly change the last definition of the converter, introducing a new error type:
+Sometimes, we need to handle logic errors from different hierarchies in the same method. For example, imagine we want the above salary gap in EUR, not USD. We need to use the converter we already introduced in the previous sections. However, to show how to handle different error type hierarchies, we'll slightly change the last definition of the converter, introducing a new error type:
 
 ```kotlin
 sealed interface CurrencyConversionError
@@ -892,7 +892,7 @@ In this way, we're exposing the internals of the function, saying that we cannot
 The second option is to handle the error locally and transform the `NegativeAmount` error into a `JobError` error. The Arrow library provides a handy function to do this: the `withError` function:
 
 ```kotlin
-// Arrow Library
+// Arrow Kt Library
 @RaiseDSL
 public inline fun <Error, OtherError, A> Raise<Error>.withError(
     transform: (OtherError) -> Error,
@@ -933,7 +933,6 @@ Until now, we've seen how to raise and handle typed errors. However, we've alway
 To better understand the need, let's define the signature of our function in our `JobsService` module. As usual, we'll use the `Raise<A>` context to express the typed error part of the computation:
 
 ```kotlin
-
 context (Raise<NonEmptyList<JobError>>)
 fun getSalaryGapWithMax(jobIdList: List<JobId>): List<Double>
 ```
@@ -962,7 +961,7 @@ public inline fun <Error, A, B> Raise<NonEmptyList<Error>>.mapOrAccumulate(
 }
 ```
 
-Quite surprisingly, the `fold` function applies to each element of the collection. In case of a tired error when using the `transform` lambda, it is accumulated in a dedicated list. The same happens if the execution of the `transform` lambda succeeds. Finally, if the list of errors is not empty, it is raised. Otherwise, the list of results is returned.
+Quite surprisingly, the `fold` function applies to each element of the collection. In case of error during the execution of the `transform` lambda, it is accumulated in a dedicated list. Finally, if the list of errors is not empty, it is raised. Otherwise, the list of results is returned.
 
 As we can see, the `mapOrAccumulate` function uses a dedicated implementation of the `Raise<A>` context called `RaiseAccumulate<A>`:
 
@@ -973,7 +972,7 @@ public open class RaiseAccumulate<Error>(
 ) : Raise<Error>
 ```
 
-The `RaiseAccumulate<A>` context specializes in the `raise` method to create a `NonEmptyList<E>` containing only the risen logic typed error:
+The `RaiseAccumulate<A>` context overrides the `raise` method to create a `NonEmptyList<E>` containing only the risen logic typed error:
 
 ```kotlin
 // Arrow Kt library
@@ -1024,7 +1023,7 @@ This time, we can see that the execution returns the list of errors:
 The risen errors are: NonEmptyList(JobNotFound(jobId=JobId(value=42)), JobNotFound(jobId=JobId(value=-1)))
 ```
 
-Suppose we directly use the `RaiseAccumulate<E>` context in the signature of the `getSalaryGapWithMax` function. In that case, we can even use the extension function defined on the `Iterable<A>` type to execute the transformation:
+Suppose we directly use the `RaiseAccumulate<E>` context in the signature of the `getSalaryGapWithMax` function. In that case, we can even use the extension function defined on the `Iterable<A>` type to execute the transformation on each element of the list:
 
 ```kotlin
 // Arrow Kt library
@@ -1061,7 +1060,7 @@ public inline fun <Error, A, B> Iterable<A>.mapOrAccumulate(
 
 As expected, this version calls the `mapOrAccumulate` function defined on the `Raise<E>` context inside an `either` builder to convert the result. If you were asking, `this@mapOrAccumulate` refers to the receiver object of the external function, in this case, the `Iterable<A>` object.
 
-For the sake of simplicity, the Arrow library defines a type alias for the `Either<NonEmptyList<E>, A>` type, called `EitherNel<E, A>`:
+For the sake of simplicity, the Arrow library gives us a type alias for the `Either<NonEmptyList<E>, A>` type, called `EitherNel<E, A>`:
 
 ```kotlin
 // Arrow Kt library
@@ -1074,7 +1073,7 @@ There is one last version of the `mapOrAccumulate` function that is worth mentio
 data class JobErrors(val messages: String = "")
 ```
 
-As we can see, the type is the empty string as the default value for the `message` property. The empty string represents the zero element of the `JobErrors` type. Then, it's pretty straightforward to define the combining function on that zero element:
+As we can see, the type has the empty string as the default value for the `message` property. The empty string represents the zero element of the `JobErrors` type. Then, it's pretty straightforward to define the combining function on that zero element:
 
 ```kotlin
 operator fun JobErrors.plus(other: JobErrors): JobErrors = JobErrors("$messages, ${other.messages}")
