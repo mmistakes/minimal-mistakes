@@ -100,7 +100,7 @@ analytics:
   google:
     tracking_id          :G-GDKL62M01B
 
-    anonymize_ip         : false # true, false (default)
+    # anonymize_ip         : false # true, false (default)
 
 
 # Site Author
@@ -216,7 +216,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# timezone: Asia/Seoul
 
 
 # Plugins (previously gems:)
