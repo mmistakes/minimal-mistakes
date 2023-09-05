@@ -1,10 +1,10 @@
 ---
 title: "Functional Error Handling in Kotlin, Part 3: The Raise DSL"
-date: 2023-08-10
+date: 2023-09-05
 header:
     image: "/images/blog cover.jpg"
 tags: [kotlin]
-excerpt: ""
+excerpt: "It's time to end our journey on functional error handling in Kotlin with the new features introduced by the Arrow library in version 1.2.0. We'll focus on the `Raise` DSL, a new way to handle typed errors using Kotlin contexts."
 toc: true
 toc_label: "In this article"
 ---
@@ -1116,7 +1116,7 @@ The risen errors are: JobErrors(messages=JobNotFound(jobId=JobId(value=-1)), Job
 
 As we said, the `mapOrAccumulate` function allows the combination of the results of a transformation applied to a collection of elements of the same type. What if we want to combine transformations applied to objects of different types?
 
-A classic example is the validation during the creation of an object. Let's build an example together. Say we want to have a pimped version of our `Salary` type that also adds the salary currency. We can define it as the following:
+A classic example is **the validation during the creation of an object**. Let's build an example together. Say we want to have a pimped version of our `Salary` type that also adds the salary currency. We can define it as the following:
 
 ```kotlin
 data class Salary(val amount: Double, val currency: String)
@@ -1128,9 +1128,9 @@ However, the above definition doesn't prevent us from creating objects that are 
 val wrongSalary = Salary(-1000.0, "eu")
 ```
 
-In general, we want to avoid the creation of invalid objects. To do so, we can define what we call a smart constructor. Smart constructors are factories that look like regular constructors but perform validations and generally return the valid object or some typed error.
+In general, we want to avoid the creation of invalid objects. To do so, we can define what we call a smart constructor. **Smart constructors are factories that look like regular constructors but perform validations and generally return the valid object or some typed error**.
 
-In Kotlin, the application of the pattern requires to change the scope of the main construct to `private`:
+In Kotlin, the application of the pattern requires to change the scope of the main construct to `private` to avoid the creation of objects outside the factory:
 
 ```kotlin
 data class Salary private constructor(val amount: Double, val currency: String)
@@ -1167,13 +1167,12 @@ If we don't like to override the `invoke` operator, we can define a regular func
 The smart constructor must perform all the needed validation on input data before creating a concrete instance of the object. For this reason, we added the context `Raise<NonEmptyList<SalaryError>>`. We used the `NonEmptyList<SalaryError>` to accumulate all possible errors during the validation. For example, invoking the smart constructor with the input data `-1.0` and `eu` must return the following list of errors:
 
 ```kotlin
-// CHECK THIS
 NonEmptyList(NegativeAmount, InvalidCurrency("The currency must be made of three capital letters"))
 ```
 
-We can't use the `mapOrAccumulate` function we previously saw because the function returns a list of objects of the same type `B` starting from an input list containing objects of the same type `A`. Here, we have a `Double` and `String` as input. We need to find something else.
+We can't use the `mapOrAccumulate` function we previously saw because we don't have a list of objects of the same type as input. Here, we have a `Double` and `String` as input. We need to find something else.
 
-Fortunately, the Arrow library provides the `zipOrAccumulate` function, which we need. The function is defined as the following:
+Fortunately, the Arrow library provides the `zipOrAccumulate` function, which we need. The function is defined as follows:
 
 ```kotlin
 // Arrow Kt library
@@ -1206,9 +1205,9 @@ public inline fun <Error, A, B, C, D, E, F, G, H, I, J> Raise<NonEmptyList<Error
 }
 ```
 
-Many different versions of the function differ in the number of input parameters. The above is the one with the maximum number of parameters. The function takes a list of functions that return a value of type `A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I`, and a function that takes all the previous values and returns a value of type `J`. The function returns the value of type `J`; if any error occurs, it raises the list of errors. So, remember: The maximum number of single input parameters is 9. If we need more, we must apply the function recursively multiple times.
+Many different versions of the function differ in the number of input parameters. The above is the one with the maximum number of parameters. The function takes a list of functions that return a value of type `A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I`, and a function that takes all the previous values and returns a value of type `J`. The function returns the value of type `J`; if any error occurs, it raises the list of errors. So, remember: **The maximum number of single input parameters is 9**. If we need more, we must apply the function recursively multiple times.
 
-It's worth noting the use of the `unbox` function, an Arrow library function used to handle possible `null` values. The function is defined as the following:
+It's worth noting the use of the `unbox` function, an Arrow library internal function used to handle possible `null` values. The function is defined as follows:
 
 ```kotlin
 // Arrow Kt library
@@ -1271,7 +1270,7 @@ The risen errors are: NonEmptyList(NegativeAmount, InvalidCurrency(message=Curre
 
 ## 8. Conclusions
 
-The long journey throughout the new error-handling style in the Arrow 1.2.0 library has ended. During the path, we introduced the central concept of this article, the `Raise<E>` context, and all its implementing flavors. We saw how to use it to transform and recover a computation in its context. Then we saw how easy it is to pass from the `Raise<E>` context to any of the available wrapper types, like `Either<E, A>`, `Option<A>`, and `Result<A>`. Finally, we saw how to use the `Raise<E>` context to accumulate errors. The article should have given you a good overview of the new error handling style in Arrow and how the Arrow guys decided to get rid of a lot of category theory types (did you see any reference to a monoid, monad, applicative, or _traverse_ application?) in favor of a more straight, idiomatic and Kotlinsh approach.
+The long journey throughout the new error-handling style in the Arrow 1.2.0 library has ended. During the path, we introduced the central concept of this article, the `Raise<E>` context, and all its implementing flavors. We saw how to use it to transform and recover a computation in its context. Then, we saw how easy it is to pass from the `Raise<E>` context to any of the available wrapper types, like `Either<E, A>`, `Option<A>`, and `Result<A>`. We appreciated how smooth is the composition of functions defined in the `Raise<E>` context. Finally, we saw how to use the `Raise<E>` context to accumulate errors. The article should have given you a good overview of the new error handling style in Arrow and how the Arrow guys decided to get rid of a lot of category theory types (did you see any reference to a monoid, monad, applicative, or _traverse_ application?) in favor of a more straight, idiomatic and Kotlinsh approach.
 
 ## 9. Appendix: Maven Configuration
 
