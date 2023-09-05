@@ -240,7 +240,7 @@ val configuration: ConfigValue[Effect, Config] =
 Here the `Config` case class acts as a master configuration class through which we access all the other configurations. In case more configurations are needed, they are eventually added to `Config`.
 We use the `parMapN()` method to add the `serverConfig` and `apiConfig` configurations to the `Config` apply method.
 
-### 2.4. OAuth application logic.
+### 2.4. OAuth application logic
 
 In this section, we'll define `OauthImpl` which is an object that will house all the OAuth implementation logic for the application.
 
@@ -511,8 +511,8 @@ Above, we define a `githubRoutes()` function within the `GithubRoutes` object wh
 The `/index.html` route serves an `index.html` static file to the browser. We use `StaticFile.fromString()` which takes the URL to our file as a `String` and an `Option` of `request` passed from `case request @ GET`. Finally, we call `getOrElseF(NotFound())` that returns `404` status code in case the file is not found.
 
 ```scala
-import org.http4s.dsl.impl.QueryParamDecoderMatcher
 import com.xonal.oAuth.OauthImpl.getOauthResults
+import org.http4s.dsl.impl.QueryParamDecoderMatcher
 import cats.syntax.all.*
 
 object GithubRoutes{
