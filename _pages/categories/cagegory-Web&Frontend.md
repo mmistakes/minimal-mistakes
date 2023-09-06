@@ -1,5 +1,5 @@
 ---
-title: "Web & Frontend"
+title: "Web&Frontend"
 layout: archive
 permalink: categories/Web&Frontend
 author_profile: true
