@@ -1,11 +1,12 @@
 ---
-topic: numbers
+title: "Counting milk"
+topic: numbers, counting, addition and subtraction
 related: addition, subtraction
 nurseries: Group 1
 Author: Milly McGowan
+header:
+  teaser: /assets/img/count1.png
 ---
-
-# Counting milk
 
 One of the children enjoyed counting the amount of milk cartons needed for the group. This activity was understandably difficult for this child as they had to count the number of milk cartons and then the number of children, and the children were moving. This way of thinking is arguably quite systematic and natural. 
 

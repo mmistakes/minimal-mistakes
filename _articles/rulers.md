@@ -1,11 +1,12 @@
----------------------------------
-topic:Rulers              
+---
+title: "Rulers"
+topic: Rulers              
 related: 
 nurseries: Group 6
 author: Lexie Newbery
----------------------------------
-
-#Rulers
+header:
+  teaser: /assets/img/couchlength.png
+---
 
 Some of the children were experimenting with different ways of measuring the lengths of objects, using different units. Naturally, many children and adults will automatically jump to grab a ruler when being told to measure something, however that is not the only unit that is available. 
 
@@ -15,7 +16,7 @@ For example, in cushions, a couch's length is 3, but when it comes to the couch'
 
 The image below gives a visual example of above: 
 
-<img src="My files/Downloads/Nuffield/image/couchlength.png">
+![A sofa, measured in units of cushions and books]({{site.baseurl}}/assets/img/couchlength.png "How long is a sofa?")
 
 In order to gain a full understanding of the importance of units, it may be helpful to have this repeated with many different objects. 
 
@@ -23,9 +24,10 @@ It may also be useful to try using the larger unit, in this case the cushion, as
 
 The children may also wish to make their own "rulers" using a bit of paper or cardboard, which is also another way of measuring something, without using a regular ruler, so this is still going to push their cognitive and creative thinking skills. Some examples of this are below: 
 
-<img src="My files/Downloads/Nuffield/image/makingruler.png">
-<img src="My files/Downloads/Nuffield/image/orderedwood.png">
-<img src="My files/Downloads/Nuffield/image/ruler.png">
-<img src="My files/Downloads/Nuffield/image/ruler(2).png">
-<img src="My files/Downloads/Nuffield/image/measuringcar.png">
-<img src="My files/Downloads/Nuffield/image/measuringhand.png"> 
+![A child making a ruler by writing numbers on a piece of cardboard]({{site.baseurl}}/assets/img/makingruler.png "Making a ruler")
+![A child putting  numbers in order]({{site.baseurl}}/assets/img/orderedwood.png "Ordering numbers")
+![A ruler, made by a child by writing numbers on a piece of card]({{site.baseurl}}/assets/img/ruler.png "Cardboard ruler")
+![A second cardboard ruler, made by another child]({{site.baseurl}}/assets/img/ruler2.png "Second cardboard ruler")
+![A child measuring a small green car using a cardboard ruler]({{site.baseurl}}/assets/img/measuringcar.png "How long is a car?")
+![Children measuring their hands using their cardboard rulers]({{site.baseurl}}/assets/img/measuringhand.png "How long is my hand?")
+

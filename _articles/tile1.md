@@ -1,17 +1,18 @@
 ---
-topic: shapes,tiles,triangles,circles
+title: "Shapes in 2D"
+topic: shapes,tiles,triangles,circles, 2D
 related: area,triangle
 nurseries: Group 1
 Author: Milly McGowan
+header:
+  teaser: /assets/img/symmetry_peacock.png
 ---
-
-# Shapes in 2D
 
 One of the children used different shaped tiles to build a house. For example, they used a square-shaped tile as the main part of the house and a triangular-shaped tile as the roof of a house.
 
 The picture below depicts how they were thinking of 3D objects (a house) in 2D and can infer that this child was comfortable with the difference between adding and taking away a dimension to represent what they wanted to create.
 
-<img src="images/tile1.png" alt="drawing" width="100%"/>
+![A child making representations of houses with 2D shaped tiles]({{site.baseurl}}/assets/img/tile1.png "Houses")
 
 These ideas then led to the question of whether this child would need to be older to have the dexterity to be comfortable with creating a 3D version of her house by slotting these shapes together. She is already happy to create 3D objects in 2D and thus this question is arguably significant to how far her mathematical thinking is able to take her at this stage.
 
@@ -19,7 +20,7 @@ Some shapes that are the same as each other (for example, they are equilateral t
 
 By further going down this train of thought, we can bring in the idea of circles and how this is a shape that, arguably, has an infinite number of tiny sides and an infinite number of "straight" corners. For exmaple, if you draw different shapes inside the circle (e.g a triangle, then a square, then a hexagon) then each shape has less area than the circle. It takes up an amount of the circle but there are still bits around the edge that are being left out. This idea is depicted in the image below.
 
-<img src="images/tile2.png" alt="drawing" width="100%"/>
+![A circle, containing a triangle, a rectangle and a hexagon]({{site.baseurl}}/assets/img/tile2.png "Partially filled circle")
 
 Each time another shape is added into the circle more of its area is taken up. However, if you were to have another circle and you put a shape in that had twenty sides then you can say that this shape leaves less area (edges) of the circle than the triangle, hexagon and square that can be viewed in the image.
 

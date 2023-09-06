@@ -1,11 +1,13 @@
 ---
+title: "Water and funnels"
 topic: volume, shape, funnels, water
 related: sand, equivalence
 nurseries: Group 1
 Author: Milly McGowan
----
+header:
+  teaser: /assets/img/funnel1.png
 
-# Water and funnels
+---
 
 At one of the nurseries there was an outdoor tap, where the children could fill up whatever they wanted to with water. One of the children enjoyed filling up an empty water bottle with water. However, during this activity they struggled to fill the bottle through the small opening at the top without it spilling out at the sides.
 

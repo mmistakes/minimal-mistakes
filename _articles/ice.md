@@ -1,10 +1,12 @@
 ---------------------------------
+title: "Melting ice"
 topic: ice, surface area               
 related: volume    
 nurseries:  Group 1  
 author: Lexie Newbery
+header:
+  teaser: /assets/img/cupice.png
 ---------------------------------
-# Ice And Its Surface Area
 
 Some of the children were experimenting with warm water and ice cubes. The time it took for the ice to melt depended on the ways they tried to melt the ice with the water. 
 

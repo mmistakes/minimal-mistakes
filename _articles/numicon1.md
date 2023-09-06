@@ -1,11 +1,12 @@
 ---
-topic: numbers, shapes, multiples
+title: "Numicon"
+topic: numbers, shapes, multiples, patterns, numicon
 related: addition, subtraction,
 nurseries:
 author: Milly McGowan
+header:
+  teaser: /assets/img/numicon3.png
 ---
-
-# Numicons
 
 Numicons is a new approach to teaching maths to early years that can help children see the connection between numbers. These are flat plastic tiles that represent numbers from 1 to 10.
 

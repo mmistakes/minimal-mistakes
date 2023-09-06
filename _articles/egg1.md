@@ -1,12 +1,12 @@
 ---
+title: "Eggs and spaces"
 topic: shapes, circles
 related: numbers
 nurseries: Group 1
 Author: Milly McGowan
+header:
+  teaser: /assets/img/egg1.png
 ---
-
-# Eggs and spaces
-
 One of the children was interested in the open eggs that sit in the egg cartons. They were easily able to tell their teacher the different colours of the eggs as well as the sizes of the eggs.
 
 ![A child standing next to two egg boxes, each with some plastic egg shells sitting in the holes]({{site.baseurl}}/assets/img/egg1.png "Egg boxes and plastic egg shells")
