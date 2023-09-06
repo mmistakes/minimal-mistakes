@@ -8,9 +8,7 @@
     
 ## Preprints
 
-- Le Denmat, P, Verguts, T., & Desender, K. (2023). A low-dimensional approximation of optimal confidence. [BioArxiv](https://www.biorxiv.org/content/10.1101/2023.03.15.532729v1)
-
-- Beeckmans, M., Huycke, P., Verguts, T., & Verbeke, P. (2023). How much data do we need to estimate computational models of decision making? The COMPASS toolbox. [PsyArxiv](https://psyarxiv.com/dexyk/)
+- Le Denmat, P, Verguts, T., & Desender, K. (2023). A low-dimensional approximation of optimal confidence. [BioArxiv.](https://www.biorxiv.org/content/10.1101/2023.03.15.532729v1)
 
 - Verbeke, P., & Verguts, T. (2023). Humans adaptively select different computational strategies in different learning environments. [BioArxiv.](https://www.biorxiv.org/content/10.1101/2023.01.27.525944v1)
 
@@ -18,18 +16,23 @@
 
 - Turkakin, E., Verguts, T., Desender, K., & Lesage, E. (2023). Should I Sample or Should I Go? An approximately optimal model for deciding when to stop sampling information. [PsyArxiv.](https://psyarxiv.com/tfe94/)
 
-- Xu, S., Simoens, J., Verguts, T., & Braem, S. (2022). Learning where to be flexible: Using environmental cues to regulate cognitive control. [PsyArxiv.](https://doi.org/10.31234/osf.io/y5h78)
-
 - Van Marcke, H., Le Denmat, P., Verguts, T., & Desender, K. (2022). Manipulating prior beliefs causally induces under- and overconfidence. [BioRxiv.](https://doi.org/10.1101/2022.03.01.482511)
 
 - Lesage, E., & Verguts, T. (2022). Contextual overtraining accelerates habit formation in new stimuli.  [PsyArXiv.](https://doi.org/10.31234/osf.io/7m6bh)
 
 ## Recent publications
 
+2023:
+- Xu, S., Simoens, J., Verguts, T., & Braem, S. (2022). Learning where to be flexible: Using environmental cues to regulate cognitive control. Journal of Experimental Psychology: General. [PsyArxiv version.](https://doi.org/10.31234/osf.io/y5h78) 
+
+
+- Beeckmans, M., Huycke, P., Verguts, T., & Verbeke, P. (2023). How much data do we need to estimate computational models of decision making? The COMPASS toolbox. [Behavior Research Methods](https://link.springer.com/article/10.3758/s13428-023-02165-7) [PsyArxiv version.](https://psyarxiv.com/dexyk/) 
+
+
 2022: 
 - Peng, Z., He, L., Wen, R., Verguts, T., Seger, C. A., & Chen, Q. (2022). Obsessive-compulsive disorder is characterized by decreased Pavlovian influence on goal-directed instrumental behavior. [PLoS Computational Biology.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009945)
 
-- Huycke, P. Lesage, E., Boehler, C. Nico, & Verguts, T. (in press). Computational investigations of learning and synchronization in cognitive control. Journal of Cognition. [PsyArXiv version](https://psyarxiv.com/jhmku/)
+- Huycke, P. Lesage, E., Boehler, C. Nico, & Verguts, T. (2022). Computational investigations of learning and synchronization in cognitive control. [Journal of Cognition.](https://journalofcognition.org/articles/10.5334/joc.239) [PsyArXiv version.](https://psyarxiv.com/jhmku/)
 
 - Liu, M., Dong, W., Wu, Y., Verbeke, P., Verguts, T., & Chen, Q. (2022). Modulating hierarchical learning by high-definition transcranial alternating current stimulation at theta frequency. [Cerebral Cortex.](https://doi.org/10.1093/cercor/bhab245) [BioRxiv version.](https://www.biorxiv.org/content/10.1101/2022.06.28.497899v1)
 
