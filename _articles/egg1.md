@@ -9,7 +9,7 @@ Author: Milly McGowan
 
 One of the children was interested in the open eggs that sit in the egg cartons. They were easily able to tell their teacher the different colours of the eggs as well as the sizes of the eggs.
 
-<img src="image/egg1.png" alt="drawing" width="100%"/>
+![A child standing next to two egg boxes, each with some plastic egg shells sitting in the holes]({{site.baseurl}}/assets/img/egg1.png "Egg boxes and plastic egg shells")
 
 What is interesting about this activity is that the eggs take up two spaces in the carton. It could be said that it would be hard to fill up the whole carton because these open eggs take up two neighbouring holes. It may be possible that the whole carton cannot be filled up and perhaps one hole would be left. So, how could this be avoided?
 
