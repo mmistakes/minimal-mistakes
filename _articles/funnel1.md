@@ -11,7 +11,7 @@ At one of the nurseries there was an outdoor tap, where the children could fill 
 
 To try to fix this problem, the teacher introduced this child to a funnel and drew their attention to the neck of the funnel and its size. The child understood that this funnel was supposed to make filling up the water bottle more efficient and was eager to put this idea into motion.
 
-<img src="image/funnel1.png" alt="drawing" width="100%"/>
+![Two children filling a water bottle through a funnel at an outdoor tap]({{site.baseurl}}/assets/img/funnel1.png "Using a funnel")
 
 As the water bottle was being filled up with the help of the funnel, the teacher asked this child how much water was in the bottle. This child could identify when the bottle was "half full" and "nearly full". This language links with volume; this child is verbalising the volume of water that is in the bottle, and showing some level of mathematical thinking.
 
@@ -23,7 +23,7 @@ One reason is that the top of the funnel is much wider than that of the bottle i
 
 Another part of this acitvity was how much more efficient the water was at going through the funnel. This relates to the speed at which the water was flowing into the funnel. This mainly depends upon the cross section of the thinner part of the funnel at the bottom. To imagine this, you can think about the "stick" of water which comes out at the end.
 
-<img src="image/funnel2.png" alt="drawing" width="80%"/>
+![Children playing with water and funnels]({{site.baseurl}}/assets/img/funnel2.png "Water play")
 
 If we begin to think about this in further detail, we can ask: if the funnel were to begin full, how long would it take to be empty?
 
@@ -31,5 +31,5 @@ Thinking back to the idea that a "stick" of water is coming out of the funnel, w
 
 Relating this back to the child's water bottle, we can think about how this complex idea of the  volume of water in the funnel is the same as how when you go to fill up any regular water bottle with water, as it reaches the top/neck of the bottle, the water begins to fill up much faster. This child could identify when the water was "half full" and when it was "nearly full"; one could assume that they said it was "nearly full" a small amount of time after saying it was "half full" due to the change in the bottles shape at the neck as it fills up faster. We could pose these questions to the children themselves on whether they take any notice of the height of these bottles (or other fillable objects like a bucket) as well as the width and the depth, and possibly introduce them to the idea of the cross section. 
 
-<img src="image/funnel3.png" alt="drawing" width="100%"/>
+![A child using an outdoor tap]({{site.baseurl}}/assets/img/funnel3.png "Outdoor tap")
 
