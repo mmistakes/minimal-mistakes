@@ -83,6 +83,7 @@ $ git merge 이름
 ![image](https://user-images.githubusercontent.com/46878973/175804589-edbf8d92-5dd1-43c8-9348-e53be928b08e.png)
 
 - a에다가 b를 병합하고 싶다면 a branch로 이동 후 git merge b 를 하면 a branch에 b가 병합된다. 
+- 즉, 현재위치에서 남에꺼를 가져와서 자신한테 병합해버린다.
 
 ![image](https://user-images.githubusercontent.com/46878973/175805280-eb052c01-dbf1-4db3-9d77-9b6463ca10e2.png)
 

@@ -35,13 +35,13 @@
                 {% endfor %}
             </ul>
         <span class="nav__sub-title"> Development </span>
-        <ul>
-            {% for category in site.categories %}
-                {% if category[0] == "Python" %}
-                    <li><a href="/categories/Python" class=""> Python ({{category[1].size}})</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Python" %}
+                        <li><a href="/categories/Python" class=""> Python ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Git" %}
@@ -53,6 +53,14 @@
                 {% for category in site.categories %}
                     {% if category[0] == "Linux" %}
                         <li><a href="/categories/Linux" class=""> Linux ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Web&Frontend" %}
+                        <li><a href="/categories/Web&Frontend" class=""> Linux ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
