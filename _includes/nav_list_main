@@ -59,8 +59,8 @@
 
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Web&Frontend" %}
-                        <li><a href="/categories/Web&Frontend" class=""> Web & Frontend ({{category[1].size}})</a></li>
+                    {% if category[0] == "Frontend" %}
+                        <li><a href="/categories/Frontend" class=""> Web & Frontend ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

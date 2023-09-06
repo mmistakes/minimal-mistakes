@@ -1,9 +1,9 @@
 ---
-title: "clone coding_github_1"
+title: "clone coding_github"
 escerpt: "HTML & CSS & JS"
 
 categories:
-  - Web&Frontend
+  - Frontend
 tags:
   - [Web, Frontend, Bootstrap, clone coding, github]
 
