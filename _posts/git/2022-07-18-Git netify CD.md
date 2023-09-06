@@ -32,7 +32,7 @@ part3 : ch6_10.netify CD 한번더보기
 - aws의 ec2나 s3같은거로 복잡하게하는것보단 netify이용하면 손쉽게 정적웹사이트 배포가능
 
 ## 1. Branch 생성
-https://www.netlify.com/
+[Netlify](https://www.netlify.com/)
 
 ~~~
 git branch 이름
