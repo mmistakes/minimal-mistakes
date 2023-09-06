@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "DGO"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "**hello**"
   location         : "Somewhere"
   email            :
   links:
