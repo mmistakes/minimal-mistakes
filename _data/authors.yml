@@ -18,6 +18,29 @@ Sam Fearn:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/samfearn"
       
+Rachel Oughton:
+  name        : "Rachel Oughton"
+  bio         : "Associate Professor, Statistics, Durham University Maths Department."
+  longbio     : |
+    My research in statistics focusses on adapting methodology to model complex situations. I am (or have been) involved in projects about educational interventions, criminology, petroleum geoscience, flood modelling and health care provision. 
+  
+    I'm also involved in maths outreach and enjoy talking about maths with people who might not so often hear about it. Young Minds Big Maths is a big part of this! 
+
+    In my spare time, I enjoy sewing, knitting and reading, and spending time with my family.
+    
+  avatar      : "/assets/img/RachelOughton.jpg"
+  location: "Durham, UK"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:r.h.oughton@durham.ac.uk"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.durham.ac.uk/staff/r-h-oughton/"
+    - label: "Researchgate"
+      icon: "fab fa-fw fa-github"
+      url: "https://www.researchgate.net/profile/Rachel-Oughton"
+
 Lexie Newbery:
   name: "Lexie Newbury"
   bio: "Student at a Sixth Form College in the North East, studying Maths as one of her A Levels."

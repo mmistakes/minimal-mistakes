@@ -1,12 +1,12 @@
 ---
+title: "Concentric circles and spirals"
 topic: concentric circles, spirals, drawing, equivalence              
 related: spirals    
 nurseries:    
 author: Lexie Newbery
+header:
+  teaser: /assets/img/spiralsandcircles.png
 ---
-
-# Concentric circles and spirals
-
 A group of the children were sat together, drawing spirals and concentric circles, after discussing the idea of concentric circles and how they were "circles that share a common centre". This allowed the children to really push their cognitive skills on their own as they were able to discuss each other's drawings together, leading to others joining in and forming a much larger and deeper discussion than what will potentially have been made if they were pushed into having this conversation. They took the time to draw various versions of both spirals and concentric circles and discussed how to identify which was which. The children themselves discovered that the concentric circles were the ones that were circles inside of other, bigger circles, but they all remain as separate circles, compared to a spiral, which appears to many circles that overlap. Therefore, it is clear that this activity allowed the children to push their critical mathematical thinking skills as they were able to demonstrate their own understanding of previous learning material and also create their own definition, in which they were able to understand and use to analyse a larger group of circular shapes.   
 
 ![Children laying on the floor, drawing spirals and sets of concentric circles on a large piece of paper]({{site.baseurl}}/assets/img/spiralsandcircles.png "Children drawing spirals and concentric circles")

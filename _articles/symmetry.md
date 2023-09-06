@@ -1,12 +1,13 @@
 ---
+topic_overview: true
 topic: symmetry
 related: patterns
 nurseries: HCNS
 author: Rachel Oughton
+title: "Symmetry"
+header:
+  teaser: /assets/img/symmetry_peacock.png
 ---
-
-# Symmetry
-
 The word **symmetry** stems from Greek, meaning (very roughly) 'having the same measure' or 'being in agreement'. Put simply, symmetry is concerned with whether a shape still looks the same if you move it in some way, and if so, how. There several types of symmetry, but the two that come up most often are **reflectional** and **rotatational**.
 
 
@@ -14,18 +15,17 @@ The word **symmetry** stems from Greek, meaning (very roughly) 'having the same 
 
 This is the type of symmetry we are most used to: there is some line through the shape, such that one side is a reflection of the other. Butterflies have reflectional symmetry, for example.  
 
-<img src="image/symmetry_peacock.jpg" alt="drawing" width="90%"/>
+![A peacock butterfly, with the line of symmetry shown]({{site.baseurl}}/assets/img/symmetry_peacock.png "Peacock butterfly")
 
 Any such line is called a 'line of symmetry'. In the case of the butterfly, there is only one line of symmetry (shown above in purple). If we were to draw a different line through the butterfly, one side would not be a mirror image of the other. Our faces (approximately) have reflectional symmetry, but it can sometime be surprising to see how not-symmetric they are, for example by placing a mirror on a photo, or by using a computer to create a face of both left halves or both right.
 
-<img src="image/ro_line.jpg" alt="drawing" width="90%"/>
-<img src="image/ro_right.png" alt="drawing" width="90%"/>
-<img src="image/ro_left.png" alt="drawing" width="90%"/>
-
+![Rachel's face, with approximate line of symmetry shown]({{site.baseurl}}/assets/img/ro_line.png "Face")
+![Rachel's face, with the right side reflected]({{site.baseurl}}/assets/img/ro_right.png "Face - two right sides")
+![Rachel's face, with the left side reflected]({{site.baseurl}}/assets/img/ro_left.png "Face - two left sides")
 
 Some shapes have more than one line of symmetry, for example this ice crystal. 
 
-<img src="image/symmetry_ice.jpg" alt="drawing" width="90%"/>
+![An ice crystal, with all six lines of reflective symmetry shown]({{site.baseurl}}/assets/img/symmetry_ice.jpp "Ice crystal")
 
 We could place a mirror along any of the purple lines and the reflection would look the same as the other half of the shape.
 
@@ -38,6 +38,6 @@ The butterfly does not have rotational symmetry, because if we spin it round all
 
 There are shapes that have rotational symmetry but not reflectional symmetry, such as the icon on the Isle of Man flag, which has rotational symmetry of order three.
 
-<img src="image/isle_of_man.png" alt="drawing" width="90%"/>
+![The Isle of Man flag: A shape with rotational, but not reflectional, symmetry]({{site.baseurl}}/assets/img/isle_of_man.png "Isle of Man flag")
 
 These sorts of shapes are not easy to find in nature.

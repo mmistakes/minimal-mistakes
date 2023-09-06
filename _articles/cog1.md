@@ -1,12 +1,12 @@
 ---
+title: "Stacking cogs"
 topic: shapes, sizes
 related: area
 nurseries: Group 1
 Author: Milly McGowan
+header:
+  teaser: /assets/img/cog1.png
 ---
-
-# Stacking cogs
-
 One of the games that the children can play is stacking a set of cogs on top of one another. These cogs are different shapes, colours and sizes which means that you could do this in a sequence (pattern) or the children could simply stack them however they wanted.
 
 ![A child stacking differently sized cogs onto a threaded pole, almost in size order]({{site.baseurl}}/assets/img/cog1.png "A child stacking cogs")

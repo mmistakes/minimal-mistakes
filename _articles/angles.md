@@ -1,11 +1,13 @@
 ---
+title: "Angles"
 topic: angles
+topic_overview: true
 related: ramps, circles, triangles
 nurseries: HCNS
 author: Rachel Oughton
+header:
+  teaser: /assets/img/angle_photos.png
 ---
-
-# Angles
 
 When two lines meet each other, they form an **angle**.
 
