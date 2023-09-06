@@ -3,7 +3,7 @@ title: "clone coding_github_1"
 escerpt: "HTML & CSS & JS"
 
 categories:
-  - Web
+  - Web&Frontend
 tags:
   - [Web, Frontend, Bootstrap, clone coding, github]
 
@@ -163,30 +163,5 @@ body {
 [맨 위로 이동하기](#){: .btn .btn--primary }{: .align-right}
 
 
-git설치
-사용자정보등록
-버전생성
-브랜치생성,삭제,이동
-브랜치병합,충돌해결
-버전되돌리기
-원격 저장소 업로드
-github 예제 업로드
-Netify cd 배포
 
-## 계정정보 확인
-git config --global --list
 
-## 계정등록
-git config --global user.name 'xxx'
-git config --global user.email 'xx@xx'
-
-git config --global core.autocrlf true # 줄바꿈문자(개행문자)
-
-git init 버전관리 시작하겠다는 초기화.
-git status 깃 현재상태확인
-git add . 커밋할것들을 지정.
-git commit -m 'xxx' message를 작성하고 커밋하겠다는 명령어
-git log 커밋내역확인.
-
-head : 현재버전을 지칭
-head->master : 현재버전이 master라는 브랜치로 만들어져있다는 의미
