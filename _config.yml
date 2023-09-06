@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "KDG의 개발노트 | 천리길도 한걸음부터 "
+title                    : "코딩귀신의 개발노트 | 우공이산(愚公移山): 산을 옮기는 것은 결국 끈기와 인내를 가진 사람이다 "
 title_separator          : "|"
 subtitle                 : "개발자 지망생"
 name                     : "KDG"
