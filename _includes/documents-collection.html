@@ -13,3 +13,6 @@
     {% include archive-single.html %}
   {%- endunless -%}
 {%- endfor -%}
+  <div class="{{ include.type | default: 'list' }}__item" id="noarticles" style="display:none">
+	  <h2>No posts match all selected categories</h2>
+  </div>
