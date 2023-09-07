@@ -461,3 +461,55 @@
 		display: inline-block;
 	}
 }
+
+.topicFilterMenu {
+    text-align: center;
+    padding: 15px;
+	button {
+		padding: 10px;
+		text-align: center;
+		border-radius: 8px;
+		border: 1px solid $primary-color;
+		color: darken($primary-color,10%);
+		background-color: white;
+		&.toggled {
+			color: white;
+			background-color: darken($primary-color,10%);
+		}
+	}
+	.topics {
+		background-color: scale-color($primary-color,$alpha: -80%);
+		border-radius: 10px 10px 10px 10px;
+        box-shadow:0px 0px 10px #0c6c70;
+        margin-top:10px;
+        button{
+            margin: 5px;
+        }
+	}
+    .topics.menuVisible{
+        padding: 15px 15px;
+    }
+	.menuHidden {
+		max-height: 0em;
+		transition: max-height 300ms ease 300ms;
+	}
+	.menuVisible {
+		height: auto;
+        max-height: 230px;
+        overflow: scroll;
+		transition: max-height 1000ms;
+        @include breakpoint($small) {
+          max-height: $number-categories*4rem;
+        }
+	}
+	.buttonVisible {
+		visibility: visible;
+		opacity: 1;
+		transition: visibility 0s linear 0ms, opacity 1000ms ease 200ms;
+	}
+	.buttonHidden {
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s linear 1000ms, opacity 500ms;
+	}
+}

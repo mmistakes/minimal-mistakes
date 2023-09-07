@@ -2,8 +2,13 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 search: false
 ---
-
 @charset "utf-8";
+
+{% for article in site.articles %}
+  {% capture all_topics %}{% if all_topics %}{{all_topics}},{{article.topics| join: ","}}{% else %}{{article.topics| join: ","}}{% endif %}{% endcapture %}
+{% endfor %}
+{% assign all_topics = all_topics | split: "," | uniq | sort_natural  %}
+$number-categories: {{ all_topics | size }};
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
