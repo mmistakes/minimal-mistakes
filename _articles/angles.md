@@ -24,11 +24,11 @@ The size of an angle is determined by *how far around* we have to go from one li
 
 In the image above, angle A is bigger than angle  B, because you have to go further round to get from one line to the other.
 
-Engineers and scientists tend to measure angles in degrees, in which case there are 360 degrees all the way around the point. Mathematicians tend to use Radians, in which case there are $2\pi$ (where $pi$ is the Greek letter 'pi', and represents the number 3.141592...).
+Engineers and scientists tend to measure angles in degrees, in which case there are 360 degrees all the way around the point. Mathematicians tend to use Radians, in which case there are $$2\pi$$ (where $$\pi$$ is the Greek letter 'pi', and represents the number 3.141592...).
 
-![All the way around is 360 degrees, or $2pi$ radians]({{site.baseurl}}/assets/img/full_angle.png "All the way around the point")
+![All the way around is 360 degrees, or $$2pi$$ radians]({{site.baseurl}}/assets/img/full_angle.png "All the way around the point")
 
-Neither of these measuring systems is very suitable for young children, since degrees involve very large numbers, and Radians involve strange decimal numbers (like $pi$). One way that is simpler is to think of 'how many of this angle fit into a circle?'.
+Neither of these measuring systems is very suitable for young children, since degrees involve very large numbers, and Radians involve strange decimal numbers (like $$\pi$$). One way that is simpler is to think of 'how many of this angle fit into a circle?'.
 
 
 ![Examples of how many of a certain angle fit into a circle. For the largest angle, only four fit together. For the smallest, eight can fit together.]({{site.baseurl}}/assets/img/angles_howmany.png "Examples of how many angles fit into a circle")
