@@ -135,3 +135,61 @@ $(function() {
     }
   });
 });
+
+var articles = document.querySelectorAll("div.grid__item:not(#noarticles),div.list__item:not(#noarticles)");
+var article;
+var displayedTopics = [];
+var noarticle = document.querySelector("#noarticles");
+var topicFilterButton = document.querySelector("#topicFilter");
+topicFilterButton.style.display = "inline-block"
+var buttonsContainer = document.querySelector(".topics");
+var topicButtons = document.querySelectorAll(".topics button");
+
+function displayMenu(elt) {
+	elt.classList.toggle("toggled")
+	if (buttonsContainer.classList.contains("menuHidden")) {
+		buttonsContainer.setAttribute("aria-hidden","false");
+		buttonsContainer.style.display = "block";
+		buttonsContainer.classList.remove("menuHidden");
+		buttonsContainer.classList.add("menuVisible");
+		for (var button of topicButtons) {
+			button.classList.remove("buttonHidden");
+			button.classList.add("buttonVisible");
+		}
+	} else {
+		buttonsContainer.setAttribute("aria-hidden","true");
+		buttonsContainer.classList.add("menuHidden");
+		buttonsContainer.classList.remove("menuVisible");
+		for (var button of topicButtons) {
+			button.classList.add("buttonHidden");
+			button.classList.remove("buttonVisible");
+		}
+	}
+}
+
+function toggleTopic(elt,topicToggle) {
+	var noarticles = true;
+	var topicButton = elt;
+	topicButton.classList.toggle("toggled");
+	if (displayedTopics.includes(topicToggle)) {
+		displayedTopics = displayedTopics.filter(e => e!=topicToggle);
+	} else {
+		displayedTopics.push(topicToggle)
+	}
+	for (article of articles){
+		var topics = article.getAttribute('topics').split('_');
+		var hide = true;
+		var overlapTopics = displayedTopics.filter(top => !topics.includes(top));
+		if (overlapTopics.length > 0) {
+			article.style.display = "none";
+		} else {
+			article.style.display = "block";
+			noarticles = false;
+		}
+	}
+	if (noarticles) {
+		noarticle.style.display = "block";
+	} else {
+		noarticle.style.display = "none";
+	}
+}
