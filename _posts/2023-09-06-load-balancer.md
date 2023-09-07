@@ -57,7 +57,7 @@ final case class Urls(values: Vector[Url]) extends AnyVal {
       .getOrElse(Urls.empty)
 
   /**
-   * Safa access to head
+   * Safe access to head
    */
   def currentOpt: Option[Url] =
     Try(currentUnsafe).toOption
@@ -485,7 +485,7 @@ object SendAndExpect {
 }
 ```
 
-Awesome! Let's write some tests to make sure that our definitions meets the criteria:
+Awesome! Let's write some tests to make sure that our definitions meet the criteria:
 
 ```scala
 package com.ghurtchu.loadbalancer.services
