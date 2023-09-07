@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "1. Elternabend 6b - Fr. Dauns",
-    "title": "1. Elternabend 6b - Fr. Dauns",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NnMxaWViZWczY3ZjbWJnYjdxY3F0N2NtZW0gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2023-09-06T17:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2023-09-06T18:30:00+02:00"
-    },
-    "created": "2023-08-27T06:45:14.000Z",
-    "updated": "2023-08-27T06:45:14.711Z"
-  },
-  {
-    "image_path": null,
     "alt": "1. Elternabend A6 - Fr. Bingöl ",
     "title": "1. Elternabend A6 - Fr. Bingöl ",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2023-08-28T09:32:48.000Z",
     "updated": "2023-08-28T09:32:48.690Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. Elternabend 4c - Fr. Marschner",
+    "title": "1. Elternabend 4c - Fr. Marschner",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N2tydmZudTM0NG03MTFyaGRzNW81cGo3NHUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2023-09-07T18:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2023-09-07T19:30:00+02:00"
+    },
+    "created": "2023-08-27T06:46:22.000Z",
+    "updated": "2023-08-27T06:46:22.223Z"
   }
 ]
