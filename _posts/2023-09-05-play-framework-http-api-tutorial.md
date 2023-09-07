@@ -22,8 +22,6 @@ Let's start by adding our dependencies on our sbt files.
 On `plugins.sbt` add the following plugins. PlayScala plugin defines default settings for Scala-based applications. 
 
 ```scala
-ThisBuild / libraryDependencySchemes += "org.scala-lang.modules" %% "scala-xml" % VersionScheme.Always
-
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.8.19")
 addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.8.1")
 ```
@@ -40,6 +38,7 @@ ThisBuild / scalaVersion := "2.13.11"
 val playVersion = "2.8.19"
 val macWireVersion = "2.5.8"
 
+// this one is redundant as the PlayScala plugin already brings it, but showing here for completeness
 val playFramework = "com.typesafe.play" %% "play" % playVersion
 val macwire = "com.softwaremill.macwire" %% "macros" % macWireVersion % "provided"
 
@@ -68,7 +67,7 @@ It is the layer where we define the basic persistence entities and persistence m
 
 On a persistence trait we define basic functions given from our underlying persistence mechanism. Here we define the mechanism for example purposes. As we can see basic operations on a persisted dataset are defined. We use types A, B, C[_] to make our Persistence layer as abstract as possible. 
 
-A defines the types we save in our datastore. B defines the type of our primary key and C[_] defines the type of data structure that we use for persisting our entities. As you will see on the sections that follows for our specific example A corresponds to Car type, B corresponds to Long and C[_] to a ListBuffer. 
+`A` defines the types we save in our datastore. `B` defines the type of our primary key and `C[_]` defines the type of data structure that we use for persisting our entities. As you will see on the sections that follows for our specific example A corresponds to Car type, B corresponds to Long and C[_] to a ListBuffer. 
 With this implementation we can easily swap this Layer and use other persistent types.
 
 ```scala
@@ -589,6 +588,8 @@ After running sbt compile you should see something like this:
 
 After running sbt run you should see something like this:
 ![sbt run](../images/play-rest-api/sbt_run.jpeg)
+
+The app truly starts on the first request, and reloads automatically upon code changes.
 
 ## 6 Conclusion
 
