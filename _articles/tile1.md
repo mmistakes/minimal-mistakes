@@ -5,7 +5,7 @@ related: area,triangle
 nurseries: Group 1
 Author: Milly McGowan
 header:
-  teaser: /assets/img/symmetry_peacock.png
+  teaser: /assets/img/tile1.png
 ---
 
 One of the children used different shaped tiles to build a house. For example, they used a square-shaped tile as the main part of the house and a triangular-shaped tile as the roof of a house.
