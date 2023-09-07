@@ -29,7 +29,7 @@ Our load balancer must be featuring the following characteristics:
 
 In practice, every non-trivial application should have:
 - `domain` - data models which describe the domain
-- `services` - bundle of logic which use `domain` and other `services` to achieve something
+- `services` - bundle of logic which uses `domain` and other `services` to achieve something
 
 Let's start with Domain Modeling.
 
@@ -173,9 +173,9 @@ class UrlsTest extends FunSuite {
   }
 }
 ```
-What's next? What about making load balancer configurable?
+What's next? What about making load balancer configurable? This way it will be more flexible and easy to tweak.
 
-so the configuration file might look like:
+So, the configuration file might look like:
 ```conf
 port="8080", // load blanacer port
 host="localhost", // load balancer host
@@ -274,9 +274,9 @@ It is apparent that the load balancer will have to handle concurrent requests fr
 
 For that we can make use of `cats.effect.Ref`, however we need to distinguish between two completely separate problems:
 - forwarding requests to the backends and returning the response to the clients (main feature)
-- checking the health of the backend (secondary feature)
+- checking the health of the backends (secondary feature)
 
-So, clearly we see that we need to have two separate instances which wrap `cats.effect.Ref`. We can name them as `Backends` and `HealthChecks`:
+So, clearly we see that we need to have two separate instances which wrap `cats.effect.Ref`. Let's name them as `Backends` and `HealthChecks`:
 
 ```scala
 package com.ghurtchu.loadbalancer.domain
@@ -299,7 +299,7 @@ With this we finished modeling the domain and tested it. Now we can move on to t
 
 There are a few handful services which we can be useful to abstract over to make them reusable, isolated and testable:
 - constructing proper URI-s for sending requests (parser)
-- having the abstraction of HTTP client for sending requests which will make testing dependent services easier (http client)
+- having the abstraction of HTTP client for sending requests which will make testing dependent services easier
 - sending requests to backends (main feature) and health checks (secondary feature)
 - applying Round Robin to `HealthChecks` and `Backends` on each request (through the `cats.effect.Ref` API)
 - updating `Backends` based on health check responses (adding or removing backends through `cats.effect.Ref` API)
@@ -559,6 +559,8 @@ class SendAndExpectTest extends FunSuite {
 ```
 Cool!
 
+We need a few more services before we write the whole logic for load balancer or backend health checks, so, let's move on.
+
 Now we need a special service which will be responsible for applying Round Robin logic to `UrlsRef`-s, so to the `Backends` and `HealthChecks` which we defined in the `domain` part.
 ```scala
 package com.ghurtchu.loadbalancer.services
@@ -697,10 +699,10 @@ With these services available we have everything we need to implement two main b
 
 Let's start with the simpler one - `HealthCheckBackends`.
 
-This service will use definitions from `domain` and `services` to check the availability of backends, so effectively it will::
+This service will use definitions from `domain` and `services` to check the availability of backends, so effectively it will:
 - apply Round Robin to `HealthChecks`
-- parse uri
-- ping the uri
+- parse uri string to `Uri`
+- ping the `Uri`
 - sleep for the predetermined amount of time and do the same again (functional `while (true)` loop if I can say so)
 
 Let's express this idea as code:
@@ -739,7 +741,7 @@ object HealthCheckBackends {
 
 As you can see `HealthCheckBackends` is just a piece of logic which uses the services which we defined above.
 
-We can move to `LoadBalancer`.
+We can move to `LoadBalancer` now.
 
 This will be a service which:
 - accepts any request (let's say `"localhost:8080/users/1"`)
@@ -791,7 +793,7 @@ object LoadBalancer {
 ```
 Awesome, we defined the `LoadBalancer` which will return `HttpRoutes[IO]` and `http4s` will run it.
 
-Let's see how the `Main` object and `run` look like:
+Now, let's see how "the end of the world" would look like:
 
 ```scala
 import cats.effect.{IO, IOApp}
@@ -850,9 +852,11 @@ object Main extends IOApp.Simple {
 }
 ```
 
+Almost done!
+
 Before testing the load balancer manually we need to have some backends.
 
-For that I wrote really simple Python flask application for having a basic backend for manual testing:
+For that I wrote really simple Python flask application which looks like this:
 
 ```python
 from flask import Flask
@@ -893,7 +897,7 @@ and a separate shell script - `lb`, for running the load balancer:
 scala lb.jar $1
 ```
 
-You can see what the manual testing of load blanacer looks like:
+In this video you can see the live testing of load balancer:
 {% include video id="SkQ6s_nwCgY" provider="youtube" %}
 
 If you want to see the whole project you can view _[Source code](https://github.com/Ghurtchu/lb)_
