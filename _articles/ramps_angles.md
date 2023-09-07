@@ -1,6 +1,9 @@
 ---
 title: "Angles in ramps"
-topic: ramps, angles, triangles
+topics:
+  - ramps
+  - angles
+  - triangles
 related: speed, experiments
 nurseries: HCNS
 author: Rachel Oughton

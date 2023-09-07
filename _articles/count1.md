@@ -1,6 +1,10 @@
 ---
 title: "Counting milk"
-topic: numbers, counting, addition and subtraction
+topics: 
+  - numbers
+  - counting
+  - addition
+  - subtraction
 related: addition, subtraction
 nurseries: Group 1
 Author: Milly McGowan

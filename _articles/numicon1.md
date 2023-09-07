@@ -1,6 +1,11 @@
 ---
 title: "Numicon"
-topic: numbers, shapes, multiples, patterns, numicon
+topics: 
+  - numbers
+  - shapes
+  - multiples
+  - patterns
+  - numicon
 related: addition, subtraction,
 nurseries:
 author: Milly McGowan

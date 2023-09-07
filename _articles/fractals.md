@@ -1,6 +1,9 @@
 ---
 title: "Fractals"
-topic: fractals, patterns in nature
+topics: 
+  - fractals
+  - patterns in nature
+  - patterns
 related: same and different    
 nurseries: Group 5 
 author: Lexie Newbery

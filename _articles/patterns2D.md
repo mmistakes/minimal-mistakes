@@ -1,6 +1,11 @@
 ---
 title: "Patterns in 2 dimensions"
-topic: patterns, sequences, wallpaper, 2D, symmetry
+topics:
+  - patterns
+  - sequences
+  - wallpaper
+  - 2d
+  - symmetry
 related: transformations
 nurseries: Group 1
 author: Milly McGowan

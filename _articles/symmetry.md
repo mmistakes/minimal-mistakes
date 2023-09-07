@@ -1,6 +1,6 @@
 ---
 topic_overview: true
-topic: symmetry
+topics: symmetry
 related: patterns
 nurseries: HCNS
 author: Rachel Oughton

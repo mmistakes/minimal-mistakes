@@ -1,6 +1,11 @@
 ---
 title: "Making equal shapes in playdough"
-topic: shapes, volume, playdough, equivalence, same
+topics: 
+  - shapes
+  - volume
+  - playdough
+  - equivalence
+  - same
 related: ratio
 nurseries: Group 1, Group 5
 Author: Milly McGowan

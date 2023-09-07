@@ -1,6 +1,11 @@
 ---
 title: "Rocks in water"
-topic: rocks, water, splashes, relationships, models
+topics:
+  - rocks
+  - water
+  - splashes
+  - relationships
+  - models
 related: patterns in nature     
 nurseries:   unsure 
 author: Lexie Newbery

@@ -1,6 +1,8 @@
 ---
 title: "Eggs and spaces"
-topic: shapes, circles
+topics: 
+  - shapes
+  - circles
 related: numbers
 nurseries: Group 1
 Author: Milly McGowan

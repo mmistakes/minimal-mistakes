@@ -1,6 +1,6 @@
 ---
 title: "Rulers"
-topic: Rulers              
+topics: rulers              
 related: 
 nurseries: Group 6
 author: Lexie Newbery

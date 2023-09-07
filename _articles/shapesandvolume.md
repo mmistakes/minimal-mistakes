@@ -1,6 +1,9 @@
 ---
 title: "Shapes and volume"
-topic: shapes, volume, playdough          
+topics:
+  - shapes
+  - volume
+  - playdough          
 related: 
 nurseries: Group 5 
 author: Lexie Newbery

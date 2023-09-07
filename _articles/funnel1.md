@@ -1,6 +1,10 @@
 ---
 title: "Water and funnels"
-topic: volume, shape, funnels, water
+topics: 
+  - volume
+  - shapes
+  - funnels
+  - water
 related: sand, equivalence
 nurseries: Group 1
 Author: Milly McGowan

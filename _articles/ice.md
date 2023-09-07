@@ -1,6 +1,8 @@
 ---------------------------------
 title: "Melting ice"
-topic: ice, surface area               
+topics: 
+  - ice
+  - surface area               
 related: volume    
 nurseries:  Group 1  
 author: Lexie Newbery

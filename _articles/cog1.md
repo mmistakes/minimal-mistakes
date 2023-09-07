@@ -1,6 +1,8 @@
 ---
 title: "Stacking cogs"
-topic: shapes, sizes
+topics: 
+  - shapes
+  - sizes
 related: area
 nurseries: Group 1
 Author: Milly McGowan

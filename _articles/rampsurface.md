@@ -1,6 +1,9 @@
 ---
 title: "Ramps and their surfaces"
-topic: ramp, surface, friction               
+topics:
+  - ramps
+  - surface
+  - friction               
 related: experiments     
 nurseries: Group 3   
 author: Lexie Newbery

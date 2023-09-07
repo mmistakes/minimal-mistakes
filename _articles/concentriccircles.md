@@ -1,6 +1,10 @@
 ---
 title: "Concentric circles and spirals"
-topic: concentric circles, spirals, drawing, equivalence              
+topics: 
+  - concentric circles
+  - spirals
+  - drawing
+  - equivalence              
 related: spirals    
 nurseries:    
 author: Lexie Newbery

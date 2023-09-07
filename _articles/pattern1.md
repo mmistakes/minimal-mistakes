@@ -1,6 +1,10 @@
 ---
 title: "Repeating patterns"
-topic: patterns, sequences, paint, caterpillars
+topics:
+  - patterns
+  - sequences
+  - paint
+  - caterpillars
 related: transformations
 nurseries: Group 1
 author: Milly McGowan

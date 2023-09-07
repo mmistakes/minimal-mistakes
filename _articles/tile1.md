@@ -1,6 +1,11 @@
 ---
 title: "Shapes in 2D"
-topic: shapes,tiles,triangles,circles, 2D
+topics:
+  - shapes
+  - tiles
+  - triangles
+  - circles
+  - 2d
 related: area,triangle
 nurseries: Group 1
 Author: Milly McGowan

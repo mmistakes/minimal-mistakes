@@ -1,6 +1,9 @@
 ---
 title: "Ratios in 'cake' making"
-topic: ratio, numbers, baking
+topics:
+  - ratio
+  - numbers
+  - baking
 related: experiments
 nurseries: Group 1
 Author: Milly McGowan

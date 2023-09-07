@@ -1,6 +1,9 @@
 ---
 title: "Equivalent shapes"
-topic: shapes, equivalence, playdough
+topics:
+  - shapes
+  - equivalence
+  - playdough
 related:
 nurseries: Group 1
 Author: Milly McGowan

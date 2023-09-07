@@ -1,6 +1,7 @@
 ---
 title: "Angles"
-topic: angles
+topics: 
+  - angles
 topic_overview: true
 related: ramps, circles, triangles
 nurseries: HCNS
