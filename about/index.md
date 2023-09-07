@@ -10,7 +10,9 @@
     - [Jonas Simoens](#jonas-simoens)
     - [Haopeng Chen](#haopeng-chen)
 4. [Visiting researchers](#visiting-researchers)
-5. [Internship students](#internship-students) 
+5. [Internship students](#internship-students)
+    - [Noe De Rijck](#noe-de-rijck)
+   
 
 # Principal Investigator
 
@@ -129,7 +131,13 @@ Currently, we have no visiting researchers working in our lab.
 
 # Internship students
 
-Currently, we have no internship students working in our lab.   
+### Noe De Rijck 
+
+<img src="/images/profile_pic_noe.jpg" alt="Noe De Rijck" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
+
+I'm a master's student from Université Libre de Bruxelles, interning with Haopeng. My internship focuses on understanding how prediction errors (PE) affect learning. Previous research suggests that stimuli falling within a 'sweet spot' of PE are preferred from an aestetic standpoint. With a focus on modeling, we'll be investigating whether the impact of PE on learning follows a similar trend, such that learning could be improved if new information was just surprising enough.
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Noe.De.Rijck@UGent.be" href="mailto:Noe.De.Rijck@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Noe.De.Rijck@UGent.be</a></div>
 
 ---
 
