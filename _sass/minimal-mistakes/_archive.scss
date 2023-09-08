@@ -462,6 +462,10 @@
 	}
 }
 
+/*
+   Topic Filter Menu
+   ========================================================================== */
+
 .topicFilterMenu {
     text-align: center;
     padding: 15px;
@@ -482,22 +486,25 @@
 		border-radius: 10px 10px 10px 10px;
         box-shadow:0px 0px 10px #0c6c70;
         margin-top:10px;
+        padding: 15px 15px;
         button{
             margin: 5px;
         }
 	}
     .topics.menuVisible{
-        padding: 15px 15px;
+        
     }
 	.menuHidden {
 		max-height: 0em;
-		transition: max-height 300ms ease 300ms;
+		transition: opacity 100ms ease-in 500ms, max-height 300ms ease 300ms;
+        opacity:0;
 	}
 	.menuVisible {
 		height: auto;
         max-height: 230px;
         overflow: scroll;
-		transition: max-height 1000ms;
+		transition: max-height 1000ms, opacity 300ms ease-out;
+        opacity:1;
         @include breakpoint($small) {
           max-height: $number-categories*4rem;
         }
