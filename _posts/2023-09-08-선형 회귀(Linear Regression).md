@@ -23,6 +23,7 @@
 ### 단순 선형 회귀(Simple Linear Regrssion\)
 
 ![Untitled](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/09372296-0ae3-4b26-b363-519519d63761)
+
 단순 선형 회귀란 위의 수식과 같이 독립 변수가 1개인 선형 회귀를 말합니다.
 
 ???:그럼 저기서 w랑 b는 도대체 뭐임??
