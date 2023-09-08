@@ -1,104 +1,36 @@
 [
   {
     "image_path": null,
-    "alt": "1. Elternabend A6 - Fr. Bingöl ",
-    "title": "1. Elternabend A6 - Fr. Bingöl ",
+    "alt": "Fotograf bis Jahrgangsstufe 5",
+    "title": "Fotograf bis Jahrgangsstufe 5",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NTdhaXV1ODFiOHNlaXVka2Zpb2c3Y2pnZGkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=N2p1c2Nxa3V0dGswN3Zsb2ViM3QwaTJtdTYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
-      "date": null,
-      "date_time": "2023-09-07T16:00:00+02:00"
+      "date": "2023-10-09",
+      "date_time": null
     },
     "end": {
-      "date": null,
-      "date_time": "2023-09-07T17:30:00+02:00"
+      "date": "2023-10-12",
+      "date_time": null
     },
-    "created": "2023-08-27T06:45:26.000Z",
-    "updated": "2023-08-27T06:45:26.909Z"
+    "created": "2023-06-30T10:56:47.000Z",
+    "updated": "2023-06-30T11:11:24.160Z"
   },
   {
     "image_path": null,
-    "alt": "1. Elternabend A5 - Fr. Kilinc",
-    "title": "1. Elternabend A5 - Fr. Kilinc",
+    "alt": "Fotograf 6. Klassen",
+    "title": "Fotograf 6. Klassen",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MDkxZGwxMGs1c3BoZmRtajBrYWNmaWdpNWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=MGFtYzE2NDM3bXUybWFsMjZlZ2M1aWU5OGwgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
-      "date": null,
-      "date_time": "2023-09-07T17:00:00+02:00"
+      "date": "2024-04-24",
+      "date_time": null
     },
     "end": {
-      "date": null,
-      "date_time": "2023-09-07T18:30:00+02:00"
+      "date": "2024-04-25",
+      "date_time": null
     },
-    "created": "2023-08-27T06:45:37.000Z",
-    "updated": "2023-08-27T06:45:37.005Z"
-  },
-  {
-    "image_path": null,
-    "alt": "1. Elternabend A7 - Fr. Kiki ",
-    "title": "1. Elternabend A7 - Fr. Kiki ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MjF0ZWtqbDFpZzEyZWFxYTNnbjIzb2JianEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2023-09-07T18:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2023-09-07T19:30:00+02:00"
-    },
-    "created": "2023-08-28T09:32:09.000Z",
-    "updated": "2023-08-28T09:32:08.999Z"
-  },
-  {
-    "image_path": null,
-    "alt": "1. Elternabend 4b - Fr. Baerwald-Diedrich",
-    "title": "1. Elternabend 4b - Fr. Baerwald-Diedrich",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NDhwaW8xanYxdmZwdms4bWtkdHZhcXN2bTkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2023-09-07T18:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2023-09-07T19:30:00+02:00"
-    },
-    "created": "2023-08-27T06:45:48.000Z",
-    "updated": "2023-08-27T06:45:48.337Z"
-  },
-  {
-    "image_path": null,
-    "alt": "1. Elternabend 5b - Fr. Esch",
-    "title": "1. Elternabend 5b - Fr. Esch",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NXU1M3FxOGZwc3VmbTZkMXQxZjVkbWJwa2MgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2023-09-07T18:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2023-09-07T19:30:00+02:00"
-    },
-    "created": "2023-08-28T09:32:48.000Z",
-    "updated": "2023-08-28T09:32:48.690Z"
-  },
-  {
-    "image_path": null,
-    "alt": "1. Elternabend 4c - Fr. Marschner",
-    "title": "1. Elternabend 4c - Fr. Marschner",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2tydmZudTM0NG03MTFyaGRzNW81cGo3NHUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2023-09-07T18:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2023-09-07T19:30:00+02:00"
-    },
-    "created": "2023-08-27T06:46:22.000Z",
-    "updated": "2023-08-27T06:46:22.223Z"
+    "created": "2023-06-30T11:12:09.000Z",
+    "updated": "2023-06-30T11:12:09.866Z"
   }
 ]
