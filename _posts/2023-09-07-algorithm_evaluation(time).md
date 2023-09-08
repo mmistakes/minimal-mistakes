@@ -212,25 +212,23 @@ def linear_search_algorithm(target_element, my_list):
            = O(n) (최고차항 제외 제거)
 ```
 <br>
-<br>
 ```python
 <이진 검색>
 
 def binary_search_algorithm(target_element, my_list):
-    first_index = 0
-    last_index = len(my_list) - 1
+    first_index = 0  # O(1): 상수 시간
+    last_index = len(my_list) - 1  # O(1): 상수 시간
 
-    while first_index <= last_index:
-        middle = (first_index + last_index) // 2
-        if my_list[middle] == target_element:  
+    while first_index <= last_index:  # O(lg n): O(1) * 반복 회수 lg n
+        middle = (first_index + last_index) // 2  # O(1), 상수 시간
+        if my_list[middle] == target_element:  # O(1), 상수 시간  
             return middle
-        elif my_list[middle] > target_element:
+        elif my_list[middle] > target_element:  # O(1), 상수 시간
             last_index = middle - 1
         else:              
-             first_index = middle + 1  
-    return None   
+             first_index = middle + 1  # O(1), 상수 시간  
+    return None  # O(1), 상수 시간   
 
-시간 복잡도 = O(n) + O(1) + O(1) + O(1) = O(n) + 3*O(1)           
-           = O(n) (최고차항 제외 제거)
+시간 복잡도 = O lg(n) (최고차항 제외 제거, log는 이진 로그(밑이 2)인 경우 lg로 표현 가능)
 
 ```
