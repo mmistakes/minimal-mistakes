@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "알고리즘 평가의 기준 1: 시간 복잡도(Time Complexity)"
+title:  "알고리즘 평가의 기준: 시간 복잡도(Time Complexity)와 공간 복잡도(Space Complexity)"
 toc: true
 author_profile: false
 categories: Algorithm
@@ -85,16 +85,16 @@ toc_sticky: true
 <span style="font-size:13px;">
 </span>
 <br>
-<br>
-![image](https://github.com/gyun97/Baekjoon_Solution/assets/143414166/a8626d52-b21b-4c33-be46-a6bcece11507)
+![image](https://github.com/gyun97/Baekjoon_Solution/assets/143414166/9aebf320-78ef-4075-a32c-dee1e741c88e)
+
 <br>
 <br>
 알고리즘을 구상하고 평가할 때 우리가 고려해야 할 사항은 앞서 잠깐 언급했듯이 '시간과 공간'이다.<br>
 이번 포스팅에서는 그 중 알고리즘의 가장 중요한 시간과 관련된 평가 기준인 시간 복잡도에 대해 이야기할 것이다.   
  
-## **알고리즘 평가 기준 1: 시간 복잡도(Time Complexity)**
+## **시간 복잡도(Time Complexity)란?**
 <span style = "color:blue; font-weight:bold;">
-시간복잡도는 데이터가 많아질수록 걸리는 시간이 얼마나 급격히 증가하는가를 점근 표기법(Big-O)로 나타낸 것이다.</span>
+시간복잡도는 알고리즘의 성능과 관련하여 데이터가 많아질수록 해당 알고리즘의 소요 시간이 얼마나 급격히 증가하는가를 점근 표기법(Big-O)로 나타낸 것이다.</span>
 시간적인 측면에서 가장 이상적인 알고리즘은 특정 문제를 해결하거나 서비스를 제공하는 데에 있어 돌아가는 시간이 가장 짧은 프로그램이다.<br>
 그렇다면 왜 단순히 프로그램이 돌아가는 시간을 측정하여 알고리즘을 평가하지 않고 어렵고 복잡하게 시간 복잡도를 사용하여 알고리즘을 평가하는 것일까??<br>
 그 이유는 프로그램이 돌아가는 시간은 컴퓨터의 사양, 인터넷 환경과 프로그래밍 언어의 속도 등 매우 다양한 외부 환경 요인의 영향을 받기 때문에 프로그램이 돌아가는 시간으로 알고리즘을 평가하는 것은 비합리적이다. 이러한 이유로 컴퓨터 과학에서는 알고리즘의 평가 척도로 시간 복잡도를 이용하는 것이다.<br>
@@ -230,5 +230,10 @@ def binary_search_algorithm(target_element, my_list):
     return None  # O(1), 상수 시간   
 
 시간 복잡도 = O lg(n) (최고차항 제외 제거, log는 이진 로그(밑이 2)인 경우 lg로 표현 가능)
-
 ```
+
+## **공간 복잡도(Space Complexity)란?**
+<span style = "color:blue; font-weight:bold;">
+공간 복잡도는 알고리즘의 성능과 관련하여 데이터가 많아질수록 해당 알고리즘이 차지하는 메모리 공간이 얼마나 급격히 증가하는가를 점근 표기법(Big-O)로 나타낸 것이다.</span><br>
+<span style = "font-weight: bold;">다만 현재는 컴퓨터의 발달로 메모리 공간은 여유가 있는 경우가 많아 일반적으로 해당 알고리즘이 사용하는 메모리 공간보다 알고리즘의 실행속도를 더 중요하게 여기기 때문에 시간 복잡도가 공간 복잡도보다 훨씬 더 중요하다.</span>
+따라서 공간 복잡도에 대해서는 시간 복잡도보다는 덜 심도 있게 다룰 예정이다.
