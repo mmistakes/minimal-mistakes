@@ -115,7 +115,7 @@ data class GenericError(val cause: String) : JobError
 data object NegativeSalary : JobError
 ```
 
-Now that we have defined the domain model, the module containing the algebra to access it and the errors we'll use along the way, it's time to show how the new Raise DSL works.
+Now that we have defined the domain model, the module containing the functions to access it and the errors we'll use along the way, it's time to show how the new Raise DSL works.
 
 ## 3. The Raise DSL
 
@@ -131,7 +131,7 @@ The easiest way to define a function that can raise an error of type `E` is to u
 fun Raise<JobNotFound>.appleJob(): Job = JOBS_DATABASE[JobId(1)]!!
 ```
 
-Inside the `Raise<E>` context, we have a lot of valuable functions. One of these is the `raise` function:
+The Arrow library defines the `Raise<E>` type and many other handful functions in the `arrow.core.raise.*` package. Inside the `Raise<E>` context, we have a lot of valuable functions. One of these is the `raise` function:
 
 ```kotlin
 // Arrow Kt Library
@@ -159,6 +159,17 @@ In fact, the compilation error is:
 ```text
 Type mismatch: The inferred type is GenericError, but JobNotFound was expected
 ```
+
+At first, it could seem a limitation and a little misleading. However, it's not. In fact, the `Raise<E>` type is a **context**, giving us some capabilities once we run a function in its scope. We should remember that in Kotlin, we can run a lambda inside a context using the `with` function:
+
+```kotlin
+val raiseScope = TODO()
+with(raiseScope) {
+    val job = appleJob()
+}
+```
+
+In the above code, we can run the `appleJob` function inside the `Raise<E>` context. In this sense, the `Raise<E>` type is similar to the `CoroutineScope` type. The scope lets us access features we can't access outside the scope. In the case of the `CoroutineScope`, we can run suspending functions using structural concurrency. In the case of the `Raise<E>` scope, we can run functions that can raise errors of type `E`.
 
 We may have noticed that one advantage of **using the `Raise<E>` context** is that **the return type of the function listed only the happy path**. In fact, the `jobNotFound` function returns a `Job` and not a `Raise<JobNotFound, Job>`. As we'll see in a moment, this is a huge advantage when we want to compose functions that can raise errors.
 
@@ -810,7 +821,7 @@ class JobsService(private val jobs: Jobs, private val converter: CurrencyConvert
 }
 ```
 
-It should be clear which is the advantage of using the `Raise<E>` context: We can write the `getSalaryGapWithMax` function without the need to call any transformation or handle any possible error. **We used plain types as if we were only interested in the happy path**. The `Raise<E>` context will do everything else for us. We didn't need the `bind` function to compose the computations. Perfection.
+The advantage of using the `Raise<E>` context should be clear: We can write the `getSalaryGapWithMax` function without the need to call any transformation or handle any possible error. **We used plain types as if we were only interested in the happy path**. The `Raise<E>` context will do everything else for us. We didn't need the `bind` function to compose the computations. Perfection.
 
 We can try the `getSalaryGapWithMax` function in the `main` function to get the gap between the salary of a Software Engineer at Apple and the maximum salary among all the jobs:
 
@@ -961,7 +972,7 @@ public inline fun <Error, A, B> Raise<NonEmptyList<Error>>.mapOrAccumulate(
 }
 ```
 
-Quite surprisingly, the `fold` function applies to each element of the collection. In case of error during the execution of the `transform` lambda, it is accumulated in a dedicated list. Finally, if the list of errors is not empty, it is raised. Otherwise, the list of results is returned.
+Quite surprisingly, the `fold` function applies to each collection element. In case of error during the execution of the `transform` lambda, it is accumulated in a dedicated list. Finally, if the list of errors is not empty, it is raised. Otherwise, the list of results is returned.
 
 As we can see, the `mapOrAccumulate` function uses a dedicated implementation of the `Raise<A>` context called `RaiseAccumulate<A>`:
 
@@ -1079,7 +1090,13 @@ As we can see, the type has the empty string as the default value for the `messa
 operator fun JobErrors.plus(other: JobErrors): JobErrors = JobErrors("$messages, ${other.messages}")
 ```
 
-We chose the `plus` operator as a convenient combining function. The combination creates a new `JobErrors` object, concatenating the two messages using the `','` character. For those who love functional programming, **such a type is a monoid**.
+We chose the `plus` operator as a convenient combining function. We could also have implemented the operation using a proper method:
+
+```kotlin
+fun JobErrors.combine(other: JobErrors): JobErrors = JobErrors("$messages, ${other.messages}")
+```
+
+The combination creates a new `JobErrors` object, concatenating the two messages using the `','` character. For those who love functional programming, **such a type is a monoid**.
 
 Now, we can define a new version of the `getSalaryGapWithMax` function that uses the `mapOrAccumulate` function with the `JobErrors` type:
 
@@ -1116,7 +1133,7 @@ The risen errors are: JobErrors(messages=JobNotFound(jobId=JobId(value=-1)), Job
 
 As we said, the `mapOrAccumulate` function allows the combination of the results of a transformation applied to a collection of elements of the same type. What if we want to combine transformations applied to objects of different types?
 
-A classic example is **the validation during the creation of an object**. Let's build an example together. Say we want to have a pimped version of our `Salary` type that also adds the salary currency. We can define it as the following:
+A classic example is **the validation during the creation of an object**. Let's build an example together. Say we want a pimped version of our `Salary` type that also adds the salary currency. We can define it as the following:
 
 ```kotlin
 data class Salary(val amount: Double, val currency: String)
