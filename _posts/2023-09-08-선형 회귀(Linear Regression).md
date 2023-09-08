@@ -102,7 +102,7 @@
 
 즉 선형 회귀는 데이터에 잘 맞는 직선을 찾는 것을 의미하며, 데이터에 잘 맞는 직선이 어떤 건지 알기 위해 세우는 것이 가설입니다.
 
-![Untitled 4](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/c8f4acde-9eae-44b7-a436-13a3474c6db0)
+![Untitled 1](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/c410abe8-3a73-4d13-a4eb-60cdb6cedf3e)
 
 그리고 우리가 아까 봤던 이 그림이 바로 선형 회귀에서 가설을 세우는 그림입니다.
 
@@ -120,7 +120,8 @@
         
     - **???:다른거 아님? 다르니까 종류가 2가지나 있는거 아님?**
         
-        ![Untitled 5](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/5e99a2c1-a3a1-4168-b938-3edca6876f17)
+        ![Untitled 4](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/c8f4acde-9eae-44b7-a436-13a3474c6db0)
+
 
         
         머신 러닝에서는 같다고!!!!!!!!!!!!!!!!!!!!!
@@ -141,7 +142,8 @@
 손실 값이란 실제 데이터와 모델이 예측한 데이터값 간의 오차를 계산하는 것입니다.
 아래의 그림을 보시면 좀 더 이해하기 쉬울 것 입니다.
 
-![Untitled 6](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/91cf441c-ab86-408e-b86d-c702354f7a20)
+![Untitled 5](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/5e99a2c1-a3a1-4168-b938-3edca6876f17)
+
 
 
 그림을 보면 위에서 제가 예시를 들었던 것과 같이 실제 데이터를 점으로 표현하였고 해당 점을 이어주는 직선을 모델이 표현하였습니다.
@@ -164,7 +166,8 @@
 
 그럼 총 손실값은 어떻게 구할까요?
 
-![Untitled 7](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/cd2c4ee5-b36e-48f8-897e-4cf31b0d5806)
+![Untitled](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/09372296-0ae3-4b26-b363-519519d63761)
+
 
 위의 수식으로 구할 수 있습니다. y는 실제 데이터 값 H(x)는 모델이 예측한 값 입니다.
 
@@ -174,7 +177,7 @@
 
 그렇게하면 총 손실 값을 구할 수가 없습니다.
 
-![Untitled 8](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/3409a961-718f-440b-a300-c8b4a5ef3897)
+![Untitled 6](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/91cf441c-ab86-408e-b86d-c702354f7a20)
 
 위의 결과 표와 같이 모델이 예측한 값은 실제 데이터 값보다 클 수도 작을 수도 있기 때문에 만약 모델이 예측한 값이 실제 데이터 값보다 커버리게 되면 음수가 나오기 때문에 총 손실값이 0이 나올 수도 있고, 음수가 나올 수도 있고 양수가 나오더라도 정확한 총 손실 값이 아니기 때문입니다.
 
@@ -182,11 +185,11 @@
 
 그리고 총 손실 값을 이용해 평균 손실을 구해주도록 하겠습니다.
 
-![Untitled 9](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/4e15bc2d-fb03-4827-be46-092d57062801)
+![Untitled 7](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/cd2c4ee5-b36e-48f8-897e-4cf31b0d5806)
 
 평균 손실 값은 총 손실 값에서 데이터의 개수 만큼 나누어주면 끝입니다.
 
-![Untitled 10](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/db3c7262-3d79-4711-b35e-84d987d44954)
+![Untitled 8](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/3409a961-718f-440b-a300-c8b4a5ef3897)
 
 
 우리는 이렇게 평균 손실 값을 구할 수 있고 평균 손실을 Mean Squared Error 줄여서 MSE라고 부릅니다.
@@ -195,7 +198,7 @@
 
 앞에서 말했다 싶이 우리는 손실 값을 통해서 해당 모델이 실제 데이터를 잘 예측했는지 알 수 있고 손실 값을 통해 모델의 성능을 개선할 수 있다고 했습니다.
 
-![Untitled 11](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/9c680a34-0494-46b3-bf83-aa8b01e5a096)
+![Untitled 9](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/4e15bc2d-fb03-4827-be46-092d57062801)
 
 
 우리는 위의 수식으로 선형 회귀를 나타낼 수 있고 weight값과 bias값에 따라서 그려지는 직선이 달라지는 것을 배웠습니다.
@@ -206,7 +209,7 @@
 
 그리고 해당 weight와 bias값을 구하기 위해 가장 최적화 된 식이 바론 손실 함수(loss function)입니다.
 
-![Untitled 12](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/b4580203-8a97-433a-9297-8674b71e87cf)
+![Untitled 10](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/db3c7262-3d79-4711-b35e-84d987d44954)
 
 
 손실 함수를 나타내는 수식이 바로 평균 손실의 구하는 함수입니다.
@@ -238,7 +241,7 @@
 
 그럼 경사하강법(Gradient Descent algorithm)은 무엇일까요?
 
-![Untitled 13](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/ffed4e11-f305-4f82-9256-79386f24ee26)
+![Untitled 11](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/9c680a34-0494-46b3-bf83-aa8b01e5a096)
 
 위의 그래프를 예시로 한번 봐봅시다.
 
@@ -264,7 +267,7 @@ bias가 어떻게 적용되는지는 먼저 이 설명을 마친 뒤 마지막�
 
 그럼 이 사실을 바탕으로 이를 loss함수의 결과 값과 weight와의 관계를 나타내는 그래프를 한번 그려봅시다.
 
-![Untitled 14](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/36e4a4e7-ef76-4a44-905b-2f1112208558)
+![Untitled 12](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/b4580203-8a97-433a-9297-8674b71e87cf)
 
 제가 앞에서 말했다 싶이 weight가 너무 작아져도 loss가 커지고 weight가 너무 커져도 loss가 커지는 y=x^2형태의 그래프가 완성이 되었습니다.
 
@@ -276,7 +279,7 @@ bias가 어떻게 적용되는지는 먼저 이 설명을 마친 뒤 마지막�
 
 우리의 목표는 가장 작아지는 loss값을  찾는거죠 
 
-![Untitled 15](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/be33557d-c450-4f99-9298-201a64b57fb5)
+![Untitled 13](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/ffed4e11-f305-4f82-9256-79386f24ee26)
 
 위의 사진을 자세하게 봐봅시다.  loss가 가장 작은 부분의 접선의 기울기는 0이라는 것을 알 수 있습니다.
 
@@ -296,8 +299,7 @@ y=x^2그래프에서의 접선의 기울기를 구하는 방법은 y=x^2그래�
 
 - **기울기가 음수인 경우:weight값을 증가시켜야함**
     
-    ![Untitled 16](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/f105696c-d0ad-43d2-8aac-8a78705c30be)
-
+![Untitled 14](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/36e4a4e7-ef76-4a44-905b-2f1112208558)
     
     기울기가 음수일 경우에는 현재의 weight값이 위의 그림과 같이 접선의 기울기가 0인 weigt값보다 작은 것을 의미합니다. 그렇기 때문에 접선의 기울기가 0인 부분의 weight값에 도달하기 위해선 현재의 weight값을 더 크게 만들어 줘야합니다.
     
@@ -305,7 +307,7 @@ y=x^2그래프에서의 접선의 기울기를 구하는 방법은 y=x^2그래�
     
 - **기울기가 양수인 경우:weight값을 감소 시켜야함**
     
-    ![Untitled](%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%BC%20%E1%84%92%E1%85%AC%E1%84%80%E1%85%B1(Linear%20Regression)%20c819bc01a1694fe7a766ec06bd391046/Untitled%2015.png)
+![Untitled 15](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/be33557d-c450-4f99-9298-201a64b57fb5)
     
     그럼 접선의 기울기가 양수인 경우에는 현재의 weight값이 접선의 기울기가 0인 지점의 weight값보다 크다는 것을 의미합니다.
     
@@ -342,7 +344,7 @@ y=x^2그래프에서의 접선의 기울기를 구하는 방법은 y=x^2그래�
 
 ### ???:그래도 하기 싫어요
 
-![Untitled](%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%BC%20%E1%84%92%E1%85%AC%E1%84%80%E1%85%B1(Linear%20Regression)%20c819bc01a1694fe7a766ec06bd391046/Untitled%2016.png)
+![Untitled 16](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/f105696c-d0ad-43d2-8aac-8a78705c30be)
 
 [선형 회귀 실습](%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%BC%20%E1%84%92%E1%85%AC%E1%84%80%E1%85%B1(Linear%20Regression)%20c819bc01a1694fe7a766ec06bd391046/%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%BC%20%E1%84%92%E1%85%AC%E1%84%80%E1%85%B1%20%E1%84%89%E1%85%B5%E1%86%AF%E1%84%89%E1%85%B3%E1%86%B8%20c4d03699f4f54c9494f230ff77170519.md)
 
