@@ -150,19 +150,87 @@ O(n^2)
 ```
 
 ## **빅오 표기법 종류**
-
-1. O(1): 입력 데이터의 크기에 영향을 받지 않는다.<br>
-- 입력 데이터의 크기가 100, 200, 10000.. 무엇이든 소요 시간 변함 없다.
+<span style = "color:blue; font-weight:bold;">
+1) O(1): 입력 데이터의 크기에 영향을 받지 않는다.
+<br></span>
+ -입력 데이터의 크기가 100, 200, 10000.. 무엇이든 소요 시간 변함 없다.
 <br>
 <br>
-2. O(n): 입력 데이터의 크기가 n배 증가하면 소요 시간이 n배 증가한다.<br>
+<span style = "color:blue; font-weight:bold;">
+2) O(log n): : 입력 크기의 로그에 비례하는 실행 시간을 갖는다.<br></span>
+-입력 데이터의 크기가 n배 증가하면 소요 시간이 log n배 증가한다.<br>
 <br>
-3. O(n^2): 입력 데이터의 크기가 n^2배 증가하면 소요 시간이 n^2배 증가한다.<br>
+<span style = "color:blue; font-weight:bold;">
+3) O(n): 입력 크기와 선형으로 비례하는 실행 시간을 갖는다.</span><br> 
+ -입력 데이터의 크기가 n배 증가하면 소요 시간이 n배 증가한다.<br>
 <br>
-4. O(n^3): 입력 데이터의 크기가 n^3배 증가하면 소요 시간이 n^3배 증가한다.<br>
+<span style = "color:blue; font-weight:bold;">
+4) O(n log n): 입력 크기와 로그에 비례하는 실행 시간을 갖는다.</span><br>
+-입력 데이터의 크기가 n배 증가하면 소요 시간이 n log n배 증가한다.<br>
+<br>
+<span style = "color:blue; font-weight:bold;">
+5) O(n^2): 입력 크기의 제곱에 비례하는 실행 시간을 갖는다.</span><br>
+ -입력 데이터의 크기가 n배 증가하면 소요 시간이 n^2배 증가한다.<br>
+<br>
+<span style = "color:blue; font-weight:bold;">
+6) O(n^3): 입력 크기의 세제곱에 비례하는 실행 시간을 갖는다.</span><br>
+ -입력 데이터의 크기가 n배 증가하면 소요 시간이 n^3배 증가한다.<br>
+<br>
+<span style = "color:blue; font-weight:bold;">
+7) O(2^n): 입력 크기에 대해 2의 지수로 비례하는 실행 시간을 갖는다.<br></span>
+-입력 데이터의 크기가 n배 증가하면 소요 시간이 2^n배 증가한다.<br>
+<br>
+<span style = "color:blue; font-weight:bold;">
+8) O(n!): 입력 크기의 팩토리얼에 비례하는 실행 시간을 갖는다.<br></span>
+-입력 데이터의 크기가 n배 증가하면 소요 시간이 n!배 증가한다.<br>
+<br>
+
+-이 중에서 많이 사용되는 시간 복잡도는 O(1), O(log n), O(n), O(n log n),O(n^2), O(n^3) 정도이다. 
+ <br>
+ <br>
+![image](https://github.com/gyun97/Baekjoon_Solution/assets/143414166/ba1c5f92-36e7-483e-948e-f9314b3a4bfb)    
+<span style = "font-size:12px;">
+(출처: http://bigocheatsheet.com/)
 
 
+## **선형 탐색과 이진 탐색을 이용한 시간 복잡도 계산 예시**
 
 
-![image](https://github.com/gyun97/Baekjoon_Solution/assets/143414166/ba1c5f92-36e7-483e-948e-f9314b3a4bfb)
+앞에서 공부한 선형 탐색과 이진 탐색을 이용하여 시간 복잡도를 어떻게 계산하는지 예시를 들어보겠다.
+<br>
+<br>
+```python
+<선형 검색>
 
+def linear_search_algorithm(target_element, my_list):
+    for element in range(len(my_list)):   # O(n): n은 리스트의 길이   
+        if my_list[element] == target_element: # O(1): 단일 요소 비교
+            return element  # O(1): 단일 요소를 찾았으므로 바로 반환
+    return None   # O(1): 모든 요소를 검색하고 찾지 못한 경우 None 반환
+
+시간 복잡도 = O(n) + O(1) + O(1) + O(1) = O(n) + 3*O(1)           
+           = O(n) (최고차항 제외 제거)
+```
+<br>
+<br>
+```python
+<이진 검색>
+
+def binary_search_algorithm(target_element, my_list):
+    first_index = 0
+    last_index = len(my_list) - 1
+
+    while first_index <= last_index:
+        middle = (first_index + last_index) // 2
+        if my_list[middle] == target_element:  
+            return middle
+        elif my_list[middle] > target_element:
+            last_index = middle - 1
+        else:              
+             first_index = middle + 1  
+    return None   
+
+시간 복잡도 = O(n) + O(1) + O(1) + O(1) = O(n) + 3*O(1)           
+           = O(n) (최고차항 제외 제거)
+
+```
