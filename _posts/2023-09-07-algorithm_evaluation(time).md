@@ -235,5 +235,40 @@ def binary_search_algorithm(target_element, my_list):
 ## **공간 복잡도(Space Complexity)란?**
 <span style = "color:blue; font-weight:bold;">
 공간 복잡도는 알고리즘의 성능과 관련하여 데이터가 많아질수록 해당 알고리즘이 차지하는 메모리 공간이 얼마나 급격히 증가하는가를 점근 표기법(Big-O)로 나타낸 것이다.</span><br>
-<span style = "font-weight: bold;">다만 현재는 컴퓨터의 발달로 메모리 공간은 여유가 있는 경우가 많아 일반적으로 해당 알고리즘이 사용하는 메모리 공간보다 알고리즘의 실행속도를 더 중요하게 여기기 때문에 시간 복잡도가 공간 복잡도보다 훨씬 더 중요하다.</span>
-따라서 공간 복잡도에 대해서는 시간 복잡도보다는 덜 심도 있게 다룰 예정이다.
+<span style = "font-weight: bold;">다만 현재는 컴퓨터의 발달로 메모리 공간은 여유가 있는 경우가 많 은 데다가 시간과 공간은 반비례하는 경향이 있어 일반적으로 해당 알고리즘이 사용하는 메모리 공간보다 알고리즘의 실행속도를 더 중요하게 여기기 때문에 시간 복잡도가 공간 복잡도보다 훨씬 더 중요하다.</span><br>공간 복잡도는 간단한 코드 예시를 통해 간략하게 설명하겠다.
+<br>
+<br>
+```python
+<O(1): 고정된 양의 메모리를 사용하는 경우>
+
+def add(a, b):
+    result = a + b  # 추가 메모리를 사용하지 않고 입력과 결과를 계산
+    return result
+```
+<br>
+```python
+<O(n):  입력 크기에 비례하여 추가 메모리를 사용>
+
+def copy_list(input_list):
+    new_list = []  # 입력 리스트와 동일한 크기의 새로운 리스트 생성 (O(n) 공간 사용)
+    
+    for item in input_list:
+        new_list.append(item)  # 입력 리스트의 요소를 새로운 리스트에 복사
+    
+    return new_list
+```
+<br>
+```python
+<O(n^2): 입력 크기의 제곱에 비례하여 추가 메모리를 사용>
+
+def create_square_matrix(n):
+    matrix = []
+    for i in range(n):
+        row = []
+        for j in range(n):
+            row.append(0)  # 이차원 배열의 모든 요소를 0으로 초기화
+        matrix.append(row)
+
+    return matrix
+``` 
+
