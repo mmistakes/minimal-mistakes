@@ -48,7 +48,7 @@ The initial project skeleton:
 Let's have a look at the libraries listed in `build.sbt`:
 - first three dependencies which start with `org.http4s` are concerned with the HTTP server & client and handy dsl for creating `HttpRoutes`
 - `munit`and `munit-cats-effect-3` are libraries which will help us in testing both, synchronous and effectful (IO-based) code
-- Last two libraries will be used for logging and loading project configuration respectively
+- last two libraries will be used for logging and loading project configuration respectively
 
 ```scala
 val Http4sVersion          = "0.23.23"
@@ -80,69 +80,71 @@ lazy val root = (project in file("."))
   )
 ```
 
+Every non-trivial project must include at least two packages:
+- `domain` - which describes the business entities of the application
+- `services` - isolated piece of logics which use `domain` and other `services` to achieve some goals
+
+In our case we will also have additional two packages:
+- `errors` - for enumerating the error values
+- `http` - for grouping `HttpClient`, `HttpServer`, `HttpServerStatus` and related entities
+
+With that we can move on and start defining data models.
 
 ## 3. Domain Modeling
 The domain of load balancer is really simple. Let's unfold it step by step. 
 
-First of all, we need some sort of immutable blueprint which will represent the different states of backend URL-s.
+In a load balancer, you often need to handle requests and route them to different backend servers based on the URL or other request attributes. The `Url` case class which we'll write provides a convenient way to represent and manipulate URLs in a strongly-typed manner, making it easier to work with URL-related logic in the load balancer. Using a dedicated `Url` type makes the code more self-explanatory and easier to understand for other developers working on the project. It provides a clear and meaningful abstraction for URLs.
 
-Let's call that `Urls`:
+So, let's define it in the `domain` package, extend `AnyVal` for the compiler to optimize boxing where it's possible (we could have used Scala 3 `opaque type` but it doesn't work well with `pureconfig` unfortunately) and override its `toString` method for logging purposes:
+
 ```scala
-package com.ghurtchu.loadbalancer.domain
+package com.rockthejvm.loadbalancer.domain
 
-import com.ghurtchu.loadbalancer.domain.Urls.Url
+final case class Url(value: String) extends AnyVal:
+  override def toString: String = value
+```
+
+In a load balancer, we typically need to manage a collection of backend server URLs to distribute incoming requests. The `Urls` case class which we will define in `domain` module provides a structured and type-safe way to store and manipulate these URLs as a collection:
+
+```scala
+package com.rockthejvm.loadbalancer.domain
 
 import scala.util.Try
 
-final case class Urls(values: Vector[Url]) extends AnyVal {
+final case class Urls(values: Vector[Url]):
 
-  /**
-   * Applies Round Robin algorithm to itself
-   * (1, 2, 3) -> (2, 3, 1) -> (3, 1, 2) -> (1, 2, 3)
-   */
   def next: Urls =
     Try(copy(values.tail :+ values.head))
       .getOrElse(Urls.empty)
 
-  /**
-   * Safe access to head
-   */
   def currentOpt: Option[Url] =
     Try(currentUnsafe).toOption
 
-  /**
-   * Unsafe access to head
-   */
   def currentUnsafe: Url =
     values.head
 
-  /**
-   * Drops the passed url
-   */
   def remove(url: Url): Urls =
     copy(values.filter(_ != url))
 
-  /**
-   * adds the passed url
-   */
   def add(url: Url): Urls =
     if (values contains url) this
     else copy(values :+ url)
-}
 
-object Urls {
-
-  final case class Url(value: String) extends AnyVal {
-    override def toString: String = value
-  }
-
-  implicit def stringToBackendUrl: String => Url = Url
+object Urls:
 
   def empty: Urls = Urls(Vector.empty)
-}
 ```
 
-We can also write some tests to make sure that `Urls` API is sound, for that `munit` library will suffice:
+It is worth to mention that The `next` method implements a round-robin algorithm for cycling through the backend server URLs. This is a common load balancing strategy where each request is routed to the next server in the list. The next method ensures that requests are evenly distributed among the available servers, which is a fundamental aspect of load balancing.
+
+The `add` and `remove` methods allow you to dynamically manage the list of backend servers. This is valuable because in a real-world scenario, backend servers may come online or go offline, and the load balancer needs to adapt accordingly. These methods ensure that you don't have duplicate URLs in the list, which could lead to uneven load distribution.
+
+`currentUnsafe` and `currentOpt` methods are pretty much self-explanatory.
+
+As a next step we can write some unit tests to make sure that `Urls` API is sound. Such unit tests help ensure the correctness of the `Urls` class's functionality and behavior in various scenarios. They are essential for catching bugs or regressions when making changes to the `Urls` class. 
+
+So, let's introduce `munit` library and create `UrlsTest.scala`:
+
 ```scala
 package com.ghurtchu.loadbalancer.domain
 
@@ -221,97 +223,80 @@ class UrlsTest extends FunSuite {
   }
 }
 ```
-What's next? What about making load balancer configurable? This way it will be more flexible and easy to tweak.
 
-So, the configuration file might look like:
+Later we will need to define the model for working with configuration - a case class `Config`, but it will require to have a model for describing the health check intervals in a type safe manner:
+```scala
+package com.rockthejvm.loadbalancer.domain
+
+final case class HealthCheckInterval(value: Long) extends AnyVal
+```
+
+`HealthCheckInterval` will indicate the delay between checking server healths in a Round Robin fashion.
+
+What's next? How about making load balancer configurable? This way it will be more flexible and easy to tweak.
+
+By default, the configuration file locations is: `src/main/resources/application.conf` and it follows `HOCON` format.
+
+You may have different ideas as to what to configure, but I believe there are four must have things:
+- `port` - load balancer port
+- `host` - load balancer host (port + host = url)
+- `backends` - this setting is crucial for a load balancer as it defines the pool of backend servers that the load balancer will distribute incoming requests to, so a collection of backend url-s
+- `health-check-interval` - this setting specifies the frequency at which the load balancer should conduct health checks on the backend servers. (`HealthCheckInterval` which we defined above)
+
+So, the actual `application.conf` may look like:
+
 ```conf
-port="8080", // load blanacer port
-host="localhost", // load balancer host
+port="8080",
+host="localhost",
 backends=[
  "http://localhost:8081",
  "http://localhost:8082",
  "http://localhost:8083"
-], // backend server URL-s
-health-check-interval="1" // check backend health per every new second
+], 
+health-check-interval="1"
 ```
+
+In summary, this configuration is important when implementing a load balancer because it determines how incoming client requests are received, which backend servers they are forwarded to, and how the health and availability of these servers are monitored. Proper configuration and management of these settings are crucial for ensuring that the load balancer operates effectively, efficiently balances the load, and provides high availability for the application or service it serves.
 
 Now we can create the `Config` model for capturing the aforementioned idea:
 
 ```scala
-package com.ghurtchu.loadbalancer.domain
+package com.rockthejvm.loadbalancer.domain
 
-import com.ghurtchu.loadbalancer.domain.Config.HealthCheckInterval
+import com.rockthejvm.loadbalancer.domain.Url
+import pureconfig.ConfigReader
+import pureconfig._
+import pureconfig.generic.derivation.default._
 
 import scala.util.Try
 
+import Config._
+
 final case class Config(
-  port: String,
-  host: String,
-  backends: Urls,
-  healthCheckInterval: HealthCheckInterval
-) {
+    port: Int,
+    host: String,
+    backends: Urls,
+    healthCheckInterval: HealthCheckInterval,
+) derives ConfigReader
 
-  def hostOr(fallback: String): String =
-    if (host.isEmpty) fallback
-    else host
+object Config:
+  given urlsReader: ConfigReader[Urls] = ConfigReader[Vector[Url]].map(Urls.apply)
 
-  def portOr(fallback: Int): Int =
-    Try(port.toInt).toOption
-      .getOrElse(fallback)
-}
+  given urlReader: ConfigReader[Url] = ConfigReader[String].map(Url.apply)
 
-object Config {
-
-  type InvalidConfig = InvalidConfig.type
-
-  final case object InvalidConfig extends Throwable {
-    override def getMessage: String =
-      "Invalid port or host, please fix Config"
-  }
-
-  final case class HealthCheckInterval(value: Long) extends AnyVal
-}
+  given healthCheckReader: ConfigReader[HealthCheckInterval] =
+  ConfigReader[Long].map(HealthCheckInterval.apply)
 ```
 
-And we can also write a few tests for `Config` to verify its public API:
-```scala
-package com.ghurtchu.loadbalancer.domain
+Let's explain what these `givens` do in the companion object of `Config`:
 
-import munit.FunSuite
-import Config.HealthCheckInterval
+First ofa ll the `derives ConfigReader` annotation instructs `PureConfig` to automatically derive a configuration reader for this case class, allowing it to be used to parse configuration files into `Config` instances.
 
-class ConfigTest extends FunSuite {
+`given urlsReader: ConfigReader[Urls]:` This custom reader is defined for the `Urls` type and instructs `PureConfig` to read a configuration value of type `Vector[Url]` and map it to an `Urls` instance using the `Urls.apply` constructor.
 
-  val config = Config(
-    port = "8081",
-    host = "localhost",
-    backends = Urls.empty,
-    healthCheckInterval = HealthCheckInterval(1),
-  )
+`given urlReader: ConfigReader[Url]:` This custom reader is defined for the Url type and instructs `PureConfig` to read a configuration value of type `String` and map it to a `Url` instance using the `Url.apply` constructor.
 
-  test("hostOr") {
-    val obtained = config.hostOr("0.0.0.0")
-    val expected = "localhost"
-    assertEquals(obtained, expected)
-
-    val configWithEmptyHost = config.copy(host = "")
-    val obtainedDefault     = configWithEmptyHost.hostOr("0.0.0.0")
-    val expectedDefault     = "0.0.0.0"
-    assertEquals(obtainedDefault, expectedDefault)
-  }
-
-  test("portOr") {
-    val obtained = config.portOr(8080)
-    val expected = 8081
-    assertEquals(obtained, expected)
-
-    val configWithEmptyPort = config.copy(port = "invalid port")
-    val obtainedDefault     = configWithEmptyPort.portOr(8080)
-    val expectedDefault     = 8080
-    assertEquals(obtainedDefault, expectedDefault)
-  }
-}
-```
+`given healthCheckReader: ConfigReader[HealthCheckInterval]:` This custom reader is defined for the `HealthCheckInterval` type and instructs `PureConfig` to read a configuration value of type `Long` and map it to a `HealthCheckInterval` instance using the `HealthCheckInterval.apply` constructor.
 
 Splendid!
 
@@ -327,20 +312,20 @@ For that we can make use of `cats.effect.Ref`, however we need to distinguish be
 So, clearly we see that we need to have two separate instances which wrap `cats.effect.Ref`. Let's name them as `Backends` and `HealthChecks`:
 
 ```scala
-package com.ghurtchu.loadbalancer.domain
+package com.rockthejvm.loadbalancer.domain
 
 import cats.effect.{IO, Ref}
 
-sealed trait UrlsRef {
-  def urls: Ref[IO, Urls]
-}
-
-
-final case class Backends(urls: Ref[IO, Urls])     extends UrlsRef
-final case class HealthChecks(urls: Ref[IO, Urls]) extends UrlsRef
+enum UrlsRef(val urls: Ref[IO, Urls]):
+  case Backends(override val urls: Ref[IO, Urls])     extends UrlsRef(urls)
+  case HealthChecks(override val urls: Ref[IO, Urls]) extends UrlsRef(urls)
 ```
 
-With this we finished modeling the domain and tested it. Now we can move on to the more interesting part - defining services.
+In this code, the `UrlsRef` enumeration is used to represent different types of references (possibly mutable state) related to URL management in a load balancer or a similar application. The use of `Ref[IO, Urls]` suggests that these references are handled within the Cats Effect's IO monad, which is used for handling effectful operations in a purely functional manner.
+
+The actual usage and behavior of these references would depend on the rest of the codebase where this enumeration is used. They might be used for managing, updating, or querying the URLs or health checks in a load balancer system in a thread-safe and functional way.
+
+With this we have finished modeling the domain and tested it. Now we can move on to the more interesting part - defining services.
 
 ## 3. Services
 
