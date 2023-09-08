@@ -33,7 +33,55 @@ In practice, every non-trivial application should have:
 
 Let's start with Domain Modeling.
 
-## 2. Domain Modeling
+## 2. Project Structure
+
+We will use Scala 3.3.0, SBT 1.9.4 and several monumental libraries to complete our project. 
+
+The initial project skeleton: 
+- `src/main/scala` groups production code 
+- `src/main/test` groups tests
+- `src/main/resources/application.conf` defines the project configuration
+- `.scalafmt.conf` is used to format the code
+- `build.sbt` is responsible for building the project and generating `lb.jar` which we can run with `java` or `scala`
+![alt "Project skeleton"](../images/load-balancer-project-skeleton.png)
+
+Let's have a look at the libraries listed in `build.sbt`:
+- first three dependencies which start with `org.http4s` are concerned with the HTTP server & client and handy dsl for creating `HttpRoutes`
+- `munit`and `munit-cats-effect-3` are libraries which will help us in testing both, synchronous and effectful (IO-based) code
+- Last two libraries will be used for logging and loading project configuration respectively
+
+```scala
+val Http4sVersion          = "0.23.23"
+val CirceVersion           = "0.14.5"
+val MunitVersion           = "0.7.29"
+val LogbackVersion         = "1.4.11"
+val MunitCatsEffectVersion = "1.0.7"
+
+lazy val root = (project in file("."))
+  .settings(
+    organization                     := "com.rockthejvm",
+    name                             := "loadbalancer",
+    scalaVersion                     := "3.3.0",
+    libraryDependencies ++= Seq(
+      "org.http4s"            %% "http4s-ember-server" % Http4sVersion,
+      "org.http4s"            %% "http4s-ember-client" % Http4sVersion,
+      "org.http4s"            %% "http4s-dsl"          % Http4sVersion,
+      "org.scalameta"         %% "munit"               % MunitVersion           % Test,
+      "org.typelevel"         %% "munit-cats-effect-3" % MunitCatsEffectVersion % Test,
+      "ch.qos.logback"         % "logback-classic"     % LogbackVersion         % Runtime,
+      "com.github.pureconfig" %% "pureconfig-core"     % "0.17.4",
+    ),
+    assembly / assemblyMergeStrategy := {
+      case "module-info.class" => MergeStrategy.discard
+      case x                   => (assembly / assemblyMergeStrategy).value.apply(x)
+    },
+    assembly / mainClass             := Some("Main"),
+    assembly / assemblyJarName       := "lb.jar",
+  )
+```
+
+
+## 3. Domain Modeling
 The domain of load balancer is really simple. Let's unfold it step by step. 
 
 First of all, we need some sort of immutable blueprint which will represent the different states of backend URL-s.
