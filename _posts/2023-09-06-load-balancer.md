@@ -15,17 +15,17 @@ _by [Anzori (Nika) Ghurtchumelia](https://github.com/ghurtchu)_
 
 ~ Richard Feynman
 
-In this blogpost we will make use of `cats.effect.Ref`, `cats.effect.IO` and `http4s` to build an application layer load balancer.
+In this article we will make use of `cats.effect.Ref`, `cats.effect.IO` and `http4s` to build an application layer load balancer.
 
-Load balancer usually sits in front of a few servers and forwards the HTTP requests to them based on some algorithm. The goal of load balancer is
-to basically "balance the load" by distributing it to the available backends.
+A load balancer usually sits in front of a few servers and forwards the HTTP requests to them based on some algorithm. The goal of a load balancer is
+to "balance the load" by distributing it to the available backends.
 
 There are different algorithms that can be used to achieve this goal, in this case we're going to be using Round Robin algorithm.
 
-Our load balancer must be featuring the following characteristics:
-- Being effective in distributing requests to the backends (Round Robin Algorithm)
-- Making sure that requests are forwarded only to the available backends (Reliability)
-- Managing the state safely while the backends die and come back online (Periodic health checks)
+Our load balancer must:
+- be effective in distributing requests to the backends (Round Robin Algorithm)
+- make sure that requests are forwarded only to the available backends (Reliability)
+- manage the state safely while the backends die and come back online (Periodic health checks)
 
 In practice, every non-trivial application should have:
 - `domain` - data models which describe the domain
@@ -270,7 +270,7 @@ Splendid!
 Ok, what about the fact that our load balancer should incorporate concurrency and thread-safety?
 
 It is apparent that the load balancer will have to handle concurrent requests from different clients which can be issued even the same time! So we need to make sure that the state updates for 
-`Urls` is atomic.
+`Urls` are atomic.
 
 For that we can make use of `cats.effect.Ref`, however we need to distinguish between two completely separate problems:
 - forwarding requests to the backends and returning the response to the clients (main feature)
@@ -283,21 +283,20 @@ package com.ghurtchu.loadbalancer.domain
 
 import cats.effect.{IO, Ref}
 
-trait UrlsRef {
+sealed trait UrlsRef {
   def urls: Ref[IO, Urls]
 }
 
-object UrlsRef {
-  final case class Backends(urls: Ref[IO, Urls])     extends UrlsRef
-  final case class HealthChecks(urls: Ref[IO, Urls]) extends UrlsRef
-}
+
+final case class Backends(urls: Ref[IO, Urls])     extends UrlsRef
+final case class HealthChecks(urls: Ref[IO, Urls]) extends UrlsRef
 ```
 
 With this we finished modeling the domain and tested it. Now we can move on to the more interesting part - defining services.
 
 ## 3. Services
 
-There are a few handful services which we can be useful to abstract over to make them reusable, isolated and testable:
+There are a handful of services which we can be useful to abstract over to make them reusable, isolated and testable:
 - constructing proper URI-s for sending requests (parser)
 - having the abstraction of HTTP client for sending requests which will make testing dependent services easier
 - sending requests to backends (main feature) and health checks (secondary feature)
