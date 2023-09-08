@@ -585,11 +585,7 @@ Type inference is an awesome feature that makes developing much more pleasant. H
 
 ## 3. Conclusion
 
-Scala is a very rich language with lots of features, and it can be a bit overwhelming at first. But it's actually all these features that attracted me to this language, for all the possibilities they offer. Thankfully, you don't need to master them all to start writing good Scala code (there are still a few advanced features for which I have had no usage yet). From my (short) experience, here is an example of a learning path:
-
-![Scala learning path](../images/learning-path.png)
-
-The recursive type one is literally mind-blowing; you won't believe it :exploding_head: (and here is a clickbait title for free :smile:)
+Scala is a very rich language with lots of features, and it can be a bit overwhelming at first. But it's actually all these features that attracted me to this language, for all the possibilities they offer. Thankfully, you don't need to master them all to start writing good Scala code; there are still advanced features for which I have had no usage yet, like recursive types (this one is funny)
 
 Also, don't hesitate to ask questions on the forums or community channels that you can find on the [Scala website](https://scala-lang.org/community/). The community is very welcoming and will be happy to help you.
 
