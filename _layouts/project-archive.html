@@ -1,0 +1,23 @@
+---
+layout: archive
+categories: [project]
+---
+
+{{ content }}
+
+{% assign project_posts = site.posts | where: "categories", "project" %}
+{% assign categories_max = project_posts | map: "categories" | map: "size" | max %}
+
+<ul class="taxonomy__index">
+  {% for i in (1..categories_max) reversed %}
+    {% for post in site.posts %}
+      {% if post.categories.size == i and "project" not in post.categories %}
+        <li>
+          <a href="#{{ post.categories | first | slugify }}">
+            <strong>{{ post.categories | first }}</strong> <span class="taxonomy__count">{{ i }}</span>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</ul>
