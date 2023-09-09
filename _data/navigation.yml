@@ -1,19 +1,24 @@
 # main links
 main:
-  - title: "Project"
-    url: /projects/
-  - title: "Study"
-    url: /studies/    
-  - title: "TAG"
+  - title: "검색"
+    url: /search/
+  - title: "카테고리"
+    url: /categories/  
+  - title: "태그"
     url: /tags/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Category"
   #   url: /category-archive/
-  - title: "About"
+  - title: "About Me"
     url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Search"
-    url: /search/
+
+
+counts:
+  - title: "카테고리"
+    use: true
+  - tilte: "태그"
+    use: false
 
 # docs:
 #   - title: "대목차"
