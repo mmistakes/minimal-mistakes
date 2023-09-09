@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "코몬의 개발노트 | 우공이산(愚公移山): 산을 옮기는 것은 결국 끈기와 인내를 가진 사람이다 "
+title                    : "코인남의 개발노트 | 우공이산(愚公移山): 산을 옮기는 것은 결국 끈기와 인내를 가진 사람이다 "
 title_separator          : "|"
-subtitle                 : "비전공자 개발자 지망생"
+subtitle                 : "코딩에 인생 걸고 싶은 남자"
 name                     : "KDG"
 description              : "An amazing website."
 url                      : "https://gyun97.github.io"
