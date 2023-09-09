@@ -27,12 +27,6 @@ Our load balancer must:
 - make sure that requests are forwarded only to the available backends (Reliability)
 - manage the state safely while the backends die and come back online (Periodic health checks)
 
-In practice, every non-trivial application should have:
-- `domain` - data models which describe the domain
-- `services` - bundle of logic which uses `domain` and other `services` to achieve something
-
-Let's start with Domain Modeling.
-
 ## 2. Project Structure
 
 We will use Scala 3.3.0, SBT 1.9.4 and several monumental libraries to complete our project. 
