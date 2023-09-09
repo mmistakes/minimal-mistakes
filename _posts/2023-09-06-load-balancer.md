@@ -1359,10 +1359,10 @@ sbt:loadbalancer> assembly
 [success] Total time: 7 s, completed Sep 9, 2023, 1:00:51 PM
 ```
 
-move `lb.jar` from:
-- `mv target/scala-3.3.0/lb.jar lb.jar
+move `lb.jar` from `target/scala-3.3.0/` to the root directory: 
+- `mv target/scala-3.3.0/lb.jar lb.jar`
 
-and finally write the separate shell script - `lb`, for running the load balancer:
+and finally write the separate shell script - `lb` in order to runn the load balancer:
 ```shell
 #!/bin/sh
 
