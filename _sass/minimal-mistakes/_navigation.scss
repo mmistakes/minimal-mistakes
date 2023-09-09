@@ -197,7 +197,8 @@
     }
 
     &.site-title {
-      margin-left: 0;
+      margin-left: 1;
+      font-size: 22px;
     }
   }
 
@@ -216,6 +217,32 @@
     cursor: pointer;
   }
 
+  
+  // to be shared by both hidden link and visible link
+  .dropdown {
+    // float: left;
+    width: auto;
+    box-sizing: border-box;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: darken($background-color, 3%);
+    // min-width: 160px;
+    box-shadow: $box-shadow;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    // font-size: 17px;
+  }
+  .dropdown-item {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  
   .visible-links {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -1,28 +1,26 @@
 # main links
 main:
-  - title: "Search"
-    url: /search/
   - title: "Project"
-    url: /projects/
-  - title: "Categories"
-    url: /categories/  
-  - title: "Tags"
+    sublinks:
+      - title: 설계 도면 인식 과제
+        url: /projects/PnID/
+      - title: 법률 문서 분석 과제
+        url: /projects/ITB/
+  - title: "Study"
+    url: /studies/
+  - title: "Tag"
     url: /tags/
   - title: "About Me"
     url: https://mmistakes.github.io/minimal-mistakes/about/
-    
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Category"
-  #   url: /category-archive/
-
+  - title: "Search"
+    url: /search/
 
 counts:
-  - title: "프로젝트"
+  - title: "Porject"
     use: true
-  - title: "카테고리"
+  - title: "Study"
     use: true
-  - tilte: "태그"
+  - tilte: "Category"
     use: true
 
 # docs:
