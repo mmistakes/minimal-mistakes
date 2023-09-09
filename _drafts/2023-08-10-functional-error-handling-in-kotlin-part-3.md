@@ -160,16 +160,15 @@ In fact, the compilation error is:
 Type mismatch: The inferred type is GenericError, but JobNotFound was expected
 ```
 
-At first, it could seem a limitation and a little misleading. However, it's not. In fact, the `Raise<E>` type is a **context**, giving us some capabilities once we run a function in its scope. We should remember that in Kotlin, we can run a lambda inside a context using the `with` function:
+At first, it could seem a limitation and a little misleading. However, it's not. In fact, the `Raise<E>` type is a **context**, giving us some capabilities once we run a function in its scope. For example, we have access to the above `raise` function. If you remember, we did the same in the article [Kotlin Context Receivers: A Comprehensive Guide](https://blog.rockthejvm.com/kotlin-context-receivers/), where we defined a context in which it's possible to serialize an object to JSON:
 
 ```kotlin
-val raiseScope = TODO()
-with(raiseScope) {
-    val job = appleJob()
+interface JsonScope<T> {
+    fun T.toJson(): String
 }
 ```
 
-In the above code, we can run the `appleJob` function inside the `Raise<E>` context. In this sense, the `Raise<E>` type is similar to the `CoroutineScope` type. The scope lets us access features we can't access outside the scope. In the case of the `CoroutineScope`, we can run suspending functions using structural concurrency. In the case of the `Raise<E>` scope, we can run functions that can raise errors of type `E`.
+Here, we have the same. The `Raise<E>` type is the equivalent of the `JsonScope<T>`, and the `raise` function is the equivalent of the `toJson` function. The only difference is that we can't instantiate a `Raise<E>` ourselves, but we need to use the utilities given by the Arrow library. Moreover, as we will see in a moment, the `Raise<E>` is an interface: Its implementation will differ depending on the type of error representation we want our function to raise.
 
 We may have noticed that one advantage of **using the `Raise<E>` context** is that **the return type of the function listed only the happy path**. In fact, the `jobNotFound` function returns a `Job` and not a `Raise<JobNotFound, Job>`. As we'll see in a moment, this is a huge advantage when we want to compose functions that can raise errors.
 
