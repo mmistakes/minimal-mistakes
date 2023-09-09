@@ -269,7 +269,7 @@ com.rockthejvm.loadbalancer.domain.UrlsTest:
 
 Good start!
 
-Later we will need to define the model for working with configuration - a case class `Config`, but it will require to have a model for describing the health check intervals in a type safe manner:
+Later we will need to define the model for working with configuration - a case class `Config`, but it will require to have a model for describing the health check intervals in a type safe manner, let's put it under `domain` as well:
 ```scala
 package com.rockthejvm.loadbalancer.domain
 
@@ -303,7 +303,7 @@ health-check-interval="1"
 
 In summary, this configuration is important when implementing a load balancer because it determines how incoming client requests are received, which backend servers they are forwarded to, and how the health and availability of these servers are monitored. Proper configuration and management of these settings are crucial for ensuring that the load balancer operates effectively, efficiently balances the load, and provides high availability for the application or service it serves.
 
-Now we can create the `Config` model for capturing the aforementioned idea:
+Now we can create the `Config` model under `domain` package for capturing the aforementioned idea:
 
 ```scala
 package com.rockthejvm.loadbalancer.domain
@@ -368,7 +368,7 @@ For that we can make use of `cats.effect.Ref`, however we need to distinguish be
 - forwarding requests to the backends and returning the response to the clients (main feature)
 - checking the health of the backends (secondary feature)
 
-So, clearly we see that we need to have two separate instances which wrap `cats.effect.Ref`. Let's name them as `Backends` and `HealthChecks`:
+So, clearly we see that we need to have two separate instances which wrap `cats.effect.Ref`. Let's name them as `Backends` and `HealthChecks` and put them under `domain` package:
 
 ```scala
 package com.rockthejvm.loadbalancer.domain
@@ -419,7 +419,7 @@ trait ParseUri:
   def apply(uri: String): Either[Throwable, Uri]
 
 object ParseUri:
-
+  
   object Impl extends ParseUri:
     /**
      * Either returns proper Uri or InvalidUri
@@ -453,15 +453,15 @@ trait ParseUri:
   def apply(uri: String): Either[InvalidUri, Uri]
 
   object ParseUri:
-
-  object Impl extends ParseUri:
-  /**
-   * Either returns proper Uri or InvalidUri
-   */
-  override def apply(uri: String): Either[InvalidUri, Uri] =
-    Uri
-      .fromString(uri)
-      .leftMap(_ => InvalidUri(uri))
+    
+    object Impl extends ParseUri:
+    /**
+     * Either returns proper Uri or InvalidUri
+     */
+    override def apply(uri: String): Either[InvalidUri, Uri] =
+      Uri
+        .fromString(uri)
+        .leftMap(_ => InvalidUri(uri))
 ```
 
 And the tests for `ParseUri`:
@@ -606,11 +606,11 @@ trait HttpClient:
 
   object HttpClient:
 
-  def of(client: Client[IO]): HttpClient = new HttpClient:
-  override def sendAndReceive(uri: Uri, requestOpt: Option[Request[IO]]): IO[String] =
-    requestOpt match
-  case Some(request) => client.expect[String](request.withUri(uri))
-  case None          => client.expect[String](uri)
+    def of(client: Client[IO]): HttpClient = new HttpClient:
+      override def sendAndReceive(uri: Uri, requestOpt: Option[Request[IO]]): IO[String] =
+        requestOpt match
+          case Some(request) => client.expect[String](request.withUri(uri))
+          case None          => client.expect[String](uri)
 ```
 
 It's worthwile to mention, that:
@@ -781,22 +781,22 @@ import cats.syntax.option._
 trait RoundRobin[F[_]]:
   def apply(ref: UrlsRef): IO[F[Url]]
 
-  object RoundRobin:
+object RoundRobin:
 
   type BackendsRoundRobin     = RoundRobin[Option]
   type HealthChecksRoundRobin = RoundRobin[Id]
 
   def forBackends: BackendsRoundRobin = new BackendsRoundRobin:
-  override def apply(ref: UrlsRef): IO[Option[Url]] =
-    ref.urls
-      .getAndUpdate(_.next)
-      .map(_.currentOpt)
+    override def apply(ref: UrlsRef): IO[Option[Url]] =
+      ref.urls
+        .getAndUpdate(_.next)
+        .map(_.currentOpt)
 
   def forHealthChecks: HealthChecksRoundRobin = new HealthChecksRoundRobin:
-  override def apply(ref: UrlsRef): IO[Id[Url]] =
-    ref.urls
-      .getAndUpdate(_.next)
-      .map(_.currentUnsafe)
+    override def apply(ref: UrlsRef): IO[Id[Url]] =
+      ref.urls
+        .getAndUpdate(_.next)
+        .map(_.currentUnsafe)
 
   val TestId: RoundRobin[Id]            = _ => IO.pure(Url("localhost:8081"))
   val LocalHost8081: RoundRobin[Option] = _ => IO.pure(Some(Url("localhost:8081")))
@@ -1294,6 +1294,77 @@ hostAndPort private method - a function takes a `host` (as a string) and a `port
 - uses `Host.fromString` and `Port.fromInt` to convert the host and port values into `Host` and `Port` instances, respectively.
 - `.tupled` method combines the two `Option` values into an `Option` of a tuple.
 - `.toRight(InvalidConfig)` converts the `Option` into an `Either`, where `InvalidConfig` is returned if either the host or port conversion fails.
+
+Let's compile:
+```shell
+sbt:loadbalancer> compile
+[info] compiling 7 Scala sources to ~/loadbalancer/target/scala-3.3.0/classes ...
+[success] Total time: 4 s, completed Sep 9, 2023, 1:26:52 PM
+```
+
+and test:
+```shell
+sbt:loadbalancer> test
+[info] compiling 2 Scala sources to ~/loadbalancer/target/scala-3.3.0/test-classes ...
+Urls(Vector(url1))
+com.rockthejvm.loadbalancer.domain.UrlsTest:
+  + next [success] 0.013s
+  + next [1 value] 0.002s
+  + currentOpt [success] 0.001s
+  + currentOpt [failure] 0.0s
+  + currentUnsafe [success] 0.0s
+  + currentUnsafe [failure] 0.0s
+  + remove 0.001s
+  + add 0.0s
+com.rockthejvm.loadbalancer.services.UpdateBackendsAndGetTest:
+  + Add the passed url to the Backends when the server status is Alive 0.028s
+com.rockthejvm.loadbalancer.services.RoundRobinTest:
+  + forBackends [Some, one url] 0.028s
+  + Add the passed url to the Backends when the server status is Dead 0.003s
+Urls(Vector(localhost:8081, localhost:8083, localhost:8082))
+  + forBackends [Some, multiple urls] 0.009s
+  + forBackends [None] 0.001s
+  + forHealthChecks [Some, one url] 0.002s
+  + forHealthChecks [Some, multiple urls] 0.003s
+  + forHealthChecks [Exception, empty urls] 0.003s
+  + forBackends [Some, with stateful Ref updates] 0.004s
+com.rockthejvm.loadbalancer.services.ParseUriTest:
+  + try parsing valid URI and return Right(Uri(...)) 0.244s
+  + try parsing invalid URI and return Left(InvalidUri(...)) 0.007s
+13:28:04.636 [io-compute-8] INFO com.rockthejvm.loadbalancer.services.SendAndExpect -- [HEALTH-CHECK] checking localhost:8081 health
+13:28:04.647 [io-compute-3] INFO com.rockthejvm.loadbalancer.services.SendAndExpect -- localhost:8081 is alive
+com.rockthejvm.loadbalancer.services.HealthCheckBackendsTest:
+13:28:04.652 [io-compute-5] INFO com.rockthejvm.loadbalancer.services.SendAndExpect -- [HEALTH-CHECK] checking localhost:8081 health
+com.rockthejvm.loadbalancer.services.AddRequestPathToBackendUrlTest:
+  + with request path 0.328s
+  + without request path 0.0s
+13:28:04.679 [io-compute-2] INFO com.rockthejvm.loadbalancer.services.SendAndExpect -- [LOAD-BALANCER] sending request to localhost:8080
+com.rockthejvm.loadbalancer.services.SendAndExpectTest:
+13:28:04.689 [io-compute-2] INFO com.rockthejvm.loadbalancer.services.SendAndExpect -- [LOAD-BALANCER] sending request to localhost:8080
+13:28:04.691 [io-compute-2] WARN com.rockthejvm.loadbalancer.services.SendAndExpect -- server with uri: localhost:8080 is dead
+13:28:04.692 [io-compute-4] INFO com.rockthejvm.loadbalancer.services.SendAndExpect -- [HEALTH-CHECK] checking localhost:8080 health
+13:28:04.692 [io-compute-0] INFO com.rockthejvm.loadbalancer.services.SendAndExpect -- localhost:8080 is alive
+13:28:04.693 [io-compute-2] INFO com.rockthejvm.loadbalancer.services.SendAndExpect -- [HEALTH-CHECK] checking localhost:8080 health
+com.rockthejvm.loadbalancer.services.LoadBalancerTest:
+13:28:04.705 [io-compute-3] INFO com.rockthejvm.loadbalancer.services.SendAndExpect -- [LOAD-BALANCER] sending request to localhost:8081/items/1
+13:28:04.706 [io-compute-3] WARN com.rockthejvm.loadbalancer.services.SendAndExpect -- resource was not found
+  + All backends are inactive because Urls is empty 0.268s
+  + Success case 0.002s
+  + Resource not found (404) case 0.004s
+13:28:09.663 [io-compute-5] WARN com.rockthejvm.loadbalancer.services.SendAndExpect -- localhost:8081 is dead
+  + add backend url to the Backends as soon as health check returns success 0.218s
+  + remove backend url from the Backends as soon as health check returns failure 5.013s
+13:28:09.698 [io-compute-7] WARN com.rockthejvm.loadbalancer.services.SendAndExpect -- localhost:8080 is dead
+13:28:09.700 [io-compute-0] INFO com.rockthejvm.loadbalancer.services.SendAndExpect -- [HEALTH-CHECK] checking localhost:8080 health
+13:28:09.701 [io-compute-3] WARN com.rockthejvm.loadbalancer.services.SendAndExpect -- localhost:8080 is dead
+  + toBackend [Success] 0.01s
+  + toBackend [Failure] 0.002s
+  + toHealthCheck [Alive] 0.001s
+  + toHealthCheck [Dead due to timeout] 5.007s
+  + toHealthCheck [Dead due to exception] 0.003s
+[info] Passed: Total 31, Failed 0, Errors 0, Passed 31
+[success] Total time: 6 s, completed Sep 9, 2023, 1:28:09 PM
+```
 
 Almost done!
 
