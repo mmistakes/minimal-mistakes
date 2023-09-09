@@ -80,6 +80,11 @@ lazy val root = (project in file("."))
   )
 ```
 
+and a one line definition in `project/plugins.sbt`:
+```scala
+addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "2.1.1") // SBT plugin for using assembly command
+```
+
 Every non-trivial project must include at least two packages:
 - `domain` - which describes the business entities of the application
 - `services` - isolated piece of logics which use `domain` and other `services` to achieve some goals
@@ -88,10 +93,40 @@ In our case we will also have additional two packages:
 - `errors` - for enumerating the error values
 - `http` - for grouping `HttpClient`, `HttpServer`, `HttpServerStatus` and related entities
 
-With that we can move on and start defining data models.
+Let's compile and run the initial project, this is what `Main.scala` looks like:
+```scala
+package com.rockthejvm.loadbalancer
+
+import cats.effect.{IO, IOApp}
+
+object Main extends IOApp.Simple {
+  override val run: IO[Unit] =
+    IO.println("Balancing the load...")
+      .void
+}
+```
+
+So, we can start `sbt` and run the app:
+
+```shell
+➜  balancer sbt
+[info] welcome to sbt 1.9.4 (Homebrew Java 17.0.8.1)
+[info] loading global plugins from ~/.sbt/1.0/plugins
+[info] loading settings for project balancer-build from plugins.sbt ...
+[info] loading project definition from ~/loadbalancer/project
+[info] loading settings for project root from build.sbt ...
+[info] started sbt server
+sbt:loadbalancer> run
+info] compiling 1 Scala source to loadbalancer/target/scala-3.3.0/classes ...
+[info] running com.rockthejvm.loadbalancer.Main
+Balancing the load...
+[success] Total time: 2 s, completed Sep 9, 2023, 10:41:38 AM
+```
+
+Great! with that we can move on and start defining data models.
 
 ## 3. Domain Modeling
-The domain of load balancer is really simple. Let's unfold it step by step. 
+The domain of load balancer is pretty straightforward. Let's unfold it step by step. 
 
 In a load balancer, you often need to handle requests and route them to different backend servers based on the URL or other request attributes. The `Url` case class which we'll write provides a convenient way to represent and manipulate URLs in a strongly-typed manner, making it easier to work with URL-related logic in the load balancer. Using a dedicated `Url` type makes the code more self-explanatory and easier to understand for other developers working on the project. It provides a clear and meaningful abstraction for URLs.
 
@@ -137,7 +172,7 @@ object Urls:
 
 It is worth to mention that The `next` method implements a round-robin algorithm for cycling through the backend server URLs. This is a common load balancing strategy where each request is routed to the next server in the list. The next method ensures that requests are evenly distributed among the available servers, which is a fundamental aspect of load balancing.
 
-The `add` and `remove` methods allow you to dynamically manage the list of backend servers. This is valuable because in a real-world scenario, backend servers may come online or go offline, and the load balancer needs to adapt accordingly. These methods ensure that you don't have duplicate URLs in the list, which could lead to uneven load distribution.
+The `add` and `remove` methods allow you to dynamically manage the list of backend servers. This is valuable because in a real-world scenario, backend servers may come online or go offline, and the load balancer needs to adapt accordingly. These methods ensure that you don't incorrect set of URLs, which could lead to uneven load distribution.
 
 `currentUnsafe` and `currentOpt` methods are pretty much self-explanatory.
 
@@ -146,9 +181,9 @@ As a next step we can write some unit tests to make sure that `Urls` API is soun
 So, let's introduce `munit` library and create `UrlsTest.scala`:
 
 ```scala
-package com.ghurtchu.loadbalancer.domain
+package com.rockthejvm.loadbalancer.domain
 
-import com.ghurtchu.loadbalancer.domain.Urls._
+import com.rockthejvm.loadbalancer.domain.{Url, Urls}
 import munit.FunSuite
 
 class UrlsTest extends FunSuite {
@@ -159,24 +194,23 @@ class UrlsTest extends FunSuite {
       .toVector
   }
 
-  test("next [success]") {
+  test("Urls(...).next must put url1 in the end of the list and url2 at the top") {
     val urls     = sequentialUrls(1, 5)
     val obtained = urls.next
-    val expected = Urls(sequentialUrls(2, 5).values :+ "url1")
+    val expected = Urls(sequentialUrls(2, 5).values :+ Url("url1"))
 
     assertEquals(obtained, expected)
   }
 
-  test("next [1 value]") {
-    val urls     = Urls(Vector("url1"))
+  test("Urls(url1).next must return the same - Urls(url1)") {
+    val urls     = Urls(Vector(Url("url1")))
     val obtained = urls.next
-    println(obtained)
     val expected = urls
 
     assertEquals(obtained, expected)
   }
 
-  test("currentOpt [success]") {
+  test("Urls(url1, url2, ...).currentOpt must return Some(url1)") {
     val urls     = sequentialUrls(1, 5)
     val obtained = urls.currentOpt.map(_.value)
     val expected = Some("url1")
@@ -184,15 +218,13 @@ class UrlsTest extends FunSuite {
     assertEquals(obtained, expected)
   }
 
-  test("currentOpt [failure]") {
-    val urls     = Urls.empty
-    val obtained = urls.currentOpt.map(_.value)
-    val expected = None
+  test("Urls.empty.currentOpt must return None") {
+    val obtained = Urls.empty.currentOpt.map(_.value)
 
-    assertEquals(obtained, expected)
+    assertEquals(obtained, None)
   }
 
-  test("currentUnsafe [success]") {
+  test("Urls(url1, url2, ...).currentUnsafe must return url1") {
     val urls     = sequentialUrls(1, 5)
     val obtained = urls.currentUnsafe.value
     val expected = "url1"
@@ -200,29 +232,48 @@ class UrlsTest extends FunSuite {
     assertEquals(obtained, expected)
   }
 
-  test("currentUnsafe [failure]") {
+  test("Urls.empty.currentUnsafe should throw NoSuchElementException (based on Vector implementation)") {
     intercept[NoSuchElementException] {
       Urls.empty.currentUnsafe
     }
   }
 
-  test("remove") {
+  test("Urls(url1, url2, ...).remove should drop url1") {
     val urls     = sequentialUrls(1, 5)
-    val obtained = urls.remove("url1")
+    val obtained = urls.remove(Url("url1"))
     val expected = sequentialUrls(2, 5)
 
     assertEquals(obtained, expected)
   }
 
-  test("add") {
+  test("Urls(url2, url3, ...).add should append url1 to the end of the Vector") {
     val urls     = sequentialUrls(2, 5)
-    val obtained = urls.add("url1")
-    val expected = Urls(urls.values :+ "url1")
+    val obtained = urls.add(Url("url1"))
+    val expected = Urls(urls.values :+ Url("url1"))
 
     assertEquals(obtained, expected)
   }
 }
 ```
+
+Let's run tests in SBT:
+```shell
+sbt:loadbalancer> test
+[info] compiling 1 Scala source to ~/loadbalancer/target/scala-3.3.0/test-classes ...
+com.rockthejvm.loadbalancer.domain.UrlsTest:
+  + Urls(...).next must put url1 in the end of the list and url2 at the top 0.005s
+  + Urls(url1).next must return the same - Urls(url1) 0.0s
+  + Urls(url1, url2, ...).currentOpt must return Some(url1) 0.001s
+  + Urls.empty.currentOpt must return None 0.0s
+  + Urls(url1, url2, ...).currentUnsafe must return url1 0.001s
+  + Urls.empty.currentUnsafe should throw NoSuchElementException (based on Vector implementation) 0.0s
+  + Urls(url1, url2, ...).remove should drop url1 0.0s
+  + Urls(url2, url3, ...).add should append url1 to the end of the Vector 0.0s
+[info] Passed: Total 8, Failed 0, Errors 0, Passed 8
+[success] Total time: 0 s, completed Sep 9, 2023, 10:58:09 AM
+```
+
+Good start!
 
 Later we will need to define the model for working with configuration - a case class `Config`, but it will require to have a model for describing the health check intervals in a type safe manner:
 ```scala
@@ -290,7 +341,7 @@ object Config:
 
 Let's explain what these `givens` do in the companion object of `Config`:
 
-First ofa ll the `derives ConfigReader` annotation instructs `PureConfig` to automatically derive a configuration reader for this case class, allowing it to be used to parse configuration files into `Config` instances.
+First of all the `derives ConfigReader` annotation instructs `PureConfig` to automatically derive a configuration reader for this case class, allowing it to be used to parse configuration files into `Config` instances.
 
 `given urlsReader: ConfigReader[Urls]:` This custom reader is defined for the `Urls` type and instructs `PureConfig` to read a configuration value of type `Vector[Url]` and map it to an `Urls` instance using the `Urls.apply` constructor.
 
@@ -299,6 +350,20 @@ First ofa ll the `derives ConfigReader` annotation instructs `PureConfig` to aut
 `given healthCheckReader: ConfigReader[HealthCheckInterval]:` This custom reader is defined for the `HealthCheckInterval` type and instructs `PureConfig` to read a configuration value of type `Long` and map it to a `HealthCheckInterval` instance using the `HealthCheckInterval.apply` constructor.
 
 Splendid!
+
+It may happen that the `application.conf` is configured incorrectly, and we should not allow the app to be run, for that let's create some sort of error type. In order to do to that we first need to create `errors` package under `com.rockthejvm.loadbalancer` and put the following code there under `config` object:
+```scala
+package com.rockthejvm.loadbalancer.errors
+
+object config:
+
+  type InvalidConfig = InvalidConfig.type
+
+  case object InvalidConfig extends Throwable:
+    override def getMessage: String =
+      "Invalid port or host, please fix Config"
+```
+
 
 Ok, what about the fact that our load balancer should incorporate concurrency and thread-safety?
 
@@ -325,12 +390,20 @@ In this code, the `UrlsRef` enumeration is used to represent different types of 
 
 The actual usage and behavior of these references would depend on the rest of the codebase where this enumeration is used. They might be used for managing, updating, or querying the URLs or health checks in a load balancer system in a thread-safe and functional way.
 
+Before moving on let's actually make sure that our code compiles:
+```shell
+sbt:loadbalancer> compile
+[info] compiling 2 Scala sources to ~/loadbalancer/target/scala-3.3.0/classes ...
+[success] Total time: 1 s, completed Sep 9, 2023, 11:01:17 AM
+```
+
 With this we have finished modeling the domain and tested it. Now we can move on to the more interesting part - defining services.
 
 ## 3. Services
 
 There are a handful of services which we can be useful to abstract over to make them reusable, isolated and testable:
-- constructing proper URI-s for sending requests (parser)
+- parsing `org.http4s.Uri`-s from strings (since we work with `http4s` we need to build `org.http4s.Uri`-s, otherwise we won't be able to make HTTP requests)
+- adding request paths to the backend urls (we may receive the request on the url: `http://localhost:8080/items/1` and the current backend url is `http://localhost:8082`, we need some piece of logic which creates the following URL: `http://localhost:8082/items/1`)
 - having the abstraction of HTTP client for sending requests which will make testing dependent services easier
 - sending requests to backends (main feature) and health checks (secondary feature)
 - applying Round Robin to `HealthChecks` and `Backends` on each request (through the `cats.effect.Ref` API)
@@ -338,120 +411,230 @@ There are a handful of services which we can be useful to abstract over to make 
 
 Let's gradually follow the list above: 
 
-We need a proper service for constructing `org.http4s.Uri` because we'll be using `http4s` and its inclusive ecosystem to write the HTTP server for our load balancer.
+As we mentioned, we need a proper service for constructing `org.http4s.Uri` because we'll be using `http4s` and its inclusive ecosystem to write the HTTP server for our load balancer.
 
-So, `Uri` parser could look like:
+So, the initial `Uri` parser could look like:
 
 ```scala
-package com.ghurtchu.loadbalancer.services
+package com.rockthejvm.loadbalancer.services
 
 import cats.syntax.either._
-import com.ghurtchu.loadbalancer.services.LoadBalancer.InvalidUri
 import org.http4s.Uri
 
-trait ParseUri {
-  def apply(uri: String): Either[InvalidUri, Uri]
-}
+trait ParseUri:
+  def apply(uri: String): Either[Throwable, Uri]
 
-object ParseUri {
-  
-  def impl: ParseUri = new ParseUri {
+object ParseUri:
+
+  object Impl extends ParseUri:
     /**
      * Either returns proper Uri or InvalidUri
      */
-    override def apply(uri: String): Either[InvalidUri, Uri] =
+    override def apply(uri: String): Either[Throwable, Uri] =
       Uri
         .fromString(uri)
-        .leftMap(_ => InvalidUri(uri))
-  }
-}
+        .leftMap(_ => ???)
+```
+
+There's a room for improvement here, instead of `Throwable` we could create some sort of error representation under `parsers` object in the `errores` package and use that here. We can name it `InvalidConfig` which will look like this:
+```scala
+package com.rockthejvm.loadbalancer.errors
+
+object parsing:
+
+  final case class InvalidUri(uri: String) extends Throwable:
+    override def getMessage: String =
+      s"Could not construct proper URI from $uri"
+```
+
+So, now let's refactor our initial `ParseUri`:
+```scala
+package com.rockthejvm.loadbalancer.services
+
+import com.rockthejvm.loadbalancer.errors.parsing.InvalidUri
+import cats.syntax.either._
+import org.http4s.Uri
+
+trait ParseUri:
+  def apply(uri: String): Either[InvalidUri, Uri]
+
+  object ParseUri:
+
+  object Impl extends ParseUri:
+  /**
+   * Either returns proper Uri or InvalidUri
+   */
+  override def apply(uri: String): Either[InvalidUri, Uri] =
+    Uri
+      .fromString(uri)
+      .leftMap(_ => InvalidUri(uri))
 ```
 
 And the tests for `ParseUri`:
 ```scala
-package com.ghurtchu.loadbalancer.services
+package com.rockthejvm.loadbalancer.services
 
-import com.ghurtchu.loadbalancer.services.LoadBalancer.InvalidUri
+import com.rockthejvm.loadbalancer.errors.parsing.InvalidUri
 import munit.FunSuite
 import org.http4s.Uri
+import cats.syntax.either._
 
-class ParseUriTest extends FunSuite {
+class ParseUriTest extends FunSuite:
 
-  val parseUri = ParseUri.impl
+  val parseUri = ParseUri.Impl
 
-  test("valid URI") {
+  test("try parsing valid URI and return Right(Uri(...))"):
     val uri      = "0.0.0.0/8080"
     val obtained = parseUri(uri)
-    val expected = Right(Uri.unsafeFromString(uri))
 
-    assertEquals(obtained, expected)
-  }
+    assertEquals(obtained, Uri.unsafeFromString(uri).asRight)
 
-  test("invalid URI") {
+  test("try parsing invalid URI and return Left(InvalidUri(...))"):
     val uri      = "definitely invalid uri XD"
     val obtained = parseUri(uri)
-    val expected = Left(InvalidUri(uri))
 
-    assertEquals(obtained, expected)
-  }
-}
+    assertEquals(obtained, InvalidUri(uri).asLeft)
 ```
 
-Going good!
+And run them via SBT:
+```shell
+sbt:loadbalancer> test
+[info] compiling 1 Scala source to ~/loadbalancer/target/scala-3.3.0/classes ...
+[info] compiling 2 Scala sources to ~/loadbalancer/target/scala-3.3.0/test-classes ...
+com.rockthejvm.loadbalancer.domain.UrlsTest:
+  + Urls(...).next must put url1 in the end of the list and url2 at the top 0.025s
+  + Urls(url1).next must return the same - Urls(url1) 0.001s
+  + Urls(url1, url2, ...).currentOpt must return Some(url1) 0.001s
+  + Urls.empty.currentOpt must return None 0.0s
+  + Urls(url1, url2, ...).currentUnsafe must return url1 0.0s
+  + Urls.empty.currentUnsafe should throw NoSuchElementException (based on Vector implementation) 0.0s
+  + Urls(url1, url2, ...).remove should drop url1 0.001s
+  + Urls(url2, url3, ...).add should append url1 to the end of the Vector 0.0s
+com.rockthejvm.loadbalancer.services.ParseUriTest:
+  + try parsing valid URI and return Right(Uri(...)) 0.235s
+  + try parsing invalid URI and return Left(InvalidUri(...)) 0.014s
+[info] Passed: Total 10, Failed 0, Errors 0, Passed 10
+[success] Total time: 2 s, completed Sep 9, 2023, 11:23:36 AM
+```
+
+Going good so far!
+
+Now we need some sort of service which correctly maps the load balancer request URL to the appropriate backend URL. I decided to name it as `AddRequestPathToBackendUrl`:
+```scala
+package com.rockthejvm.loadbalancer.services
+
+import cats.effect.IO
+import org.http4s.Request
+
+trait AddRequestPathToBackendUrl:
+  def apply(backendUrl: String, request: Request[IO]): String
+
+object AddRequestPathToBackendUrl:
+
+  object Impl extends AddRequestPathToBackendUrl:
+    override def apply(backendUrl: String, request: Request[IO]): String =
+      val requestPath = request.uri.path.renderString
+        .dropWhile(_ != '/')
+
+      backendUrl concat requestPath
+```
+
+Let's explain what's going on in the implementation:
+- `val requestPath = request.uri.path.renderString` extracts the request path from the `request.uri.` (e.g the request URL can be `http://localhost:8080/items/1`)
+- `dropWhile(_ != '/')` removes characters from the beginning of the request path until the first `/` is encountered. (e.g if the request URL is `http://localhost:8080/items/1` it will return `/items/1`)
+- `backendUrl concat requestPath` concatenates the `backendUrl` and the modified `requestPath` to form the final URL. (if the backend url is `http://localhost:8082` and request path is `/items/1` then the proper backend url becomes `http://localhost:8082/items/1`)
+
+I believe tests should explain the intentions better:
+```scala
+package com.rockthejvm.loadbalancer.services
+
+import munit.FunSuite
+import org.http4s.{EntityBody, *}
+
+class AddRequestPathToBackendUrlTest extends FunSuite:
+
+  val impl          = AddRequestPathToBackendUrl.Impl
+  val backendUrl = "http://localhost:8082"
+
+  test("add '/items/1 to backendUrl"):
+    val obtained = impl(backendUrl = backendUrl, Request(uri = Uri.unsafeFromString("localhost:8080/items/1")))
+    val expected = "http://localhost:8082/items/1"
+
+    assertEquals(obtained, expected)
+
+  test("since request doesn't have path just return backendUrl"):
+    val obtained = impl(backendUrl = backendUrl, Request(uri = Uri.unsafeFromString("localhost:8080")))
+    val expected = backendUrl
+
+    assertEquals(obtained, expected)
+```
+
+Let's run all the tests once again:
+```shell
+sbt:loadbalancer> test
+[info] compiling 1 Scala source to ~/loadbalancer/target/scala-3.3.0/test-classes ...
+com.rockthejvm.loadbalancer.domain.UrlsTest:
+  + Urls(...).next must put url1 in the end of the list and url2 at the top 0.004s
+  + Urls(url1).next must return the same - Urls(url1) 0.001s
+  + Urls(url1, url2, ...).currentOpt must return Some(url1) 0.0s
+  + Urls.empty.currentOpt must return None 0.0s
+  + Urls(url1, url2, ...).currentUnsafe must return url1 0.0s
+  + Urls.empty.currentUnsafe should throw NoSuchElementException (based on Vector implementation) 0.0s
+  + Urls(url1, url2, ...).remove should drop url1 0.003s
+  + Urls(url2, url3, ...).add should append url1 to the end of the Vector 0.0s
+com.rockthejvm.loadbalancer.services.ParseUriTest:
+  + try parsing valid URI and return Right(Uri(...)) 0.187s
+  + try parsing invalid URI and return Left(InvalidUri(...)) 0.015s
+com.rockthejvm.loadbalancer.services.AddRequestPathToBackendUrlTest:
+  + add '/items/1 to backendUrl 0.267s
+  + since request doesn't have path just return backendUrl 0.0s
+[info] Passed: Total 12, Failed 0, Errors 0, Passed 12
+[success] Total time: 1 s, completed Sep 9, 2023, 11:33:13 AM
+```
 
 What about HTTP Client? This part is important because it will be used by other services which we will define later.
 
-If we create even the simplest abstraction for HTTP Client it will definitely help us easily test the dependent services:
+If we create even the simplest abstraction for HTTP Client it will definitely help us easily test the dependent services.
+
+For that let's create `http` package under `com.rockthejvm.loadbalancer` and put the following code there:
 
 ```scala
-package com.ghurtchu.loadbalancer.http
+package com.rockthejvm.loadbalancer.http
 
 import cats.effect.IO
-import org.http4s.client.Client
+import org.http4s.client.{Client, UnexpectedStatus}
 import org.http4s.{Request, Uri}
 
 import scala.concurrent.duration.DurationInt
 
-trait HttpClient {
+trait HttpClient:
   def sendAndReceive(uri: Uri, requestOpt: Option[Request[IO]]): IO[String]
-}
 
-object HttpClient {
+  object HttpClient:
 
-  def of(client: Client[IO]): HttpClient = new HttpClient {
-    /**
-     * sends requestOpt to uri if requestOpt is defined, or else only pings it
-     */
-    override def sendAndReceive(uri: Uri, requestOpt: Option[Request[IO]]): IO[String] =
-      IO.println(s"sending request to $uri") *>
-        requestOpt.fold(
-          client.expect[String](uri),
-        ) { request => 
-          client.expect[String](request.withUri(uri)) 
-        }
-  }
-
-  // Below are some useful values for tests
-  val testSuccess: HttpClient = new HttpClient {
-    override def sendAndReceive(uri: Uri, requestOpt: Option[Request[IO]]): IO[String] =
-      IO.pure("Hello")
-  }
-
-  val testFailure: HttpClient = new HttpClient {
-    override def sendAndReceive(uri: Uri, requestOpt: Option[Request[IO]]): IO[String] =
-      IO.raiseError(new RuntimeException("Server is dead"))
-  }
-
-  val testTimeout: HttpClient = new HttpClient {
-    override def sendAndReceive(uri: Uri, requestOpt: Option[Request[IO]]): IO[String] =
-      IO.sleep(6.seconds)
-        .as("Hello")
-  }
-}
+  def of(client: Client[IO]): HttpClient = new HttpClient:
+  override def sendAndReceive(uri: Uri, requestOpt: Option[Request[IO]]): IO[String] =
+    requestOpt match
+  case Some(request) => client.expect[String](request.withUri(uri))
+  case None          => client.expect[String](uri)
 ```
+
+It's worthwile to mention, that:
+- `def of(client: Client[IO]): HttpClient:` - This is a factory method that creates an instance of `HttpClient`. It takes a `Client[IO]` as a parameter, which is presumably an HTTP client provided by the `http4s` library. It returns a new `HttpClient` instance.
+
+- `override def sendAndReceive(uri: Uri, requestOpt: Option[Request[IO]]): IO[String]`: This method overrides the `sendAndReceive` method declared in the `HttpClient` trait. It takes a `Uri` and an optional `Request[IO]`. Depending on whether a request is provided `(Some(request))` or not `(None)`, it uses the `client.expect[String]` method to send an HTTP request and receive a response. The response body is expected to be of type `String`, and it is returned wrapped in an `IO` monad.  If a request is provided `(Some(request))`, it sends the request with the specified uri.  If no request is provided `(None)`, it just pings the specified uri directly.
 
 Now that we have `HttpClient` in place we can move on and implement more interesting services, such as `SendAndExpect[A]` which directly uses `HttpClient`.
 
+But before we do so we need to define the data type for understanding whether the server is alive or not, this will be pretty straightforward:
+```scala
+package com.rockthejvm.loadbalancer.http
+
+enum ServerHealthStatus:
+  case Alive, Dead
+```
+
+Now, back to `SendAndExpect[A]`,
 
 This will be a special service which:
 - forwards request to the backend, receives response and returns it to the client
@@ -459,270 +642,256 @@ This will be a special service which:
 
 Let's translate this to code:
 ```scala
-package com.ghurtchu.loadbalancer.services
 
-import cats.effect.IO
-import com.ghurtchu.loadbalancer.http.HttpClient
+import com.rockthejvm.loadbalancer.http.{HttpClient, ServerHealthStatus}
 import org.http4s.client.UnexpectedStatus
 import org.http4s.{Request, Uri}
-import cats.syntax.option._
+import cats.syntax.option.*
+import cats.effect.IO
+import org.typelevel.log4cats.Logger
+import org.typelevel.log4cats.slf4j.Slf4jLogger
+import org.typelevel.log4cats.syntax.*
+import cats.syntax.applicative._
 
 import scala.concurrent.duration.DurationInt
 
-trait SendAndExpect[A] {
+trait SendAndExpect[A]:
   def apply(uri: Uri): IO[A]
-}
 
-object SendAndExpect {
+object SendAndExpect:
 
-  sealed trait Status
+  implicit def logger: Logger[IO] = Slf4jLogger.getLogger[IO]
 
-  object Status {
-    case object Alive extends Status
-    case object Dead  extends Status
-  }
-  
-  import Status._
+    def toBackend(httpClient: HttpClient, req: Request[IO]): SendAndExpect[String] =
+      new SendAndExpect[String]:
+        override def apply(uri: Uri): IO[String] =
+          info"[LOAD-BALANCER] sending request to $uri" *> httpClient
+            .sendAndReceive(uri, req.some)
+            .handleErrorWith:
+                case UnexpectedStatus(org.http4s.Status.NotFound, _, _) =>
+                s"resource was not found"
+                  .pure[IO]
+                  .flatTap(msg => warn"$msg")
+                case _                   =>
+                  s"server with uri: $uri is dead"
+                    .pure[IO]
+                    .flatTap(msg => warn"$msg")
 
-  def toBackend(httpClient: HttpClient, req: Request[IO]): SendAndExpect[String] =
-    new SendAndExpect[String] {
-      /**
-       * sends the request to the backend
-       * receives response and returns to the client
-       * if errors are occurred returns the special message
-       */
-      override def apply(uri: Uri): IO[String] =
-        httpClient
-          .sendAndReceive(uri, req.some)
-          .handleError {
-            case _: UnexpectedStatus => s"resource at uri: [$uri] was not found"
-            case _                   => s"server with uri: [$uri] is dead"
-          }
-    }
-
-  def toHealthCheck(httpClient: HttpClient): SendAndExpect[Status] =
-    new SendAndExpect[Status] {
-      /**
-       * pings the backend, if the response is successful it maps it to Status.Alive
-       * if receiving the response takes more than 5 seconds or some other error pops up it returns Status.Dead
-       */
-      override def apply(uri: Uri): IO[Status] =
-        httpClient
-          .sendAndReceive(uri, none)
-          .as(Status.Alive)
-          .timeout(5.seconds)
-          .handleError(_ => Status.Dead)
-    }
-
-}
+    def toHealthCheck(httpClient: HttpClient): SendAndExpect[ServerHealthStatus] =
+      new SendAndExpect[ServerHealthStatus]:
+        override def apply(uri: Uri): IO[ServerHealthStatus] =
+          info"[HEALTH-CHECK] checking $uri health" *>
+            httpClient
+              .sendAndReceive(uri, none)
+              .as(ServerHealthStatus.Alive)
+              .flatTap(_ => info"$uri is alive")
+              .timeout(5.seconds)
+              .handleErrorWith(_ => warn"$uri is dead" *> IO.pure(ServerHealthStatus.Dead))
 ```
 
-Awesome! Let's write some tests to make sure that our definitions meet the criteria:
 
+The code above a trait `SendAndExpect[A]` and companion object `SendAndExpect`. This code is all about HTTP client functionality for sending requests and handling responses. Let me break down the code for you:
+
+- import statements: The code starts with several import statements that import necessary libraries and modules, such as HTTP client libraries, logging libraries, and other utility libraries.
+- `SendAndExpect[A]` trait: defines a single abstract method `apply(uri: Uri): IO[A]`. It represents a function that sends an HTTP request to a given URI and returns an effectful result of type `A` wrapped in `IO`. This trait is intended to be extended to create specific implementations for sending requests and handling responses.
+- `SendAndExpect` companion object: The companion object `SendAndExpect` contains some utility methods and implicit instances. 
+- `logger`: It defines an implicit logger for the IO effect using the `Slf4jLogger` library. This logger can be used for logging messages within the code. 
+- `toBackend`: This method takes an `HttpClient` and an HTTP request `(Request[IO])` and creates an implementation of `SendAndExpect[String]`. It sends the HTTP request to the specified URI using the `HttpClient` and handles errors, such as a `"Not Found"` response, by returning appropriate messages.  
+- `toHealthCheck`: This method takes an `HttpClient` and creates an implementation of `SendAndExpect[ServerHealthStatus]`. It performs a health check by sending a request to the specified URI using the `HttpClient` and returning the health status. It also handles timeouts and errors.  
+
+Overall, this code defines a flexible way to send HTTP requests and handle responses in a functional and effectful manner using the IO monad. It also provides logging functionality for monitoring the process. The implementations of `SendAndExpect` can be used to send different types of requests and handle different types of responses, making it a versatile tool for working with HTTP requests and responses. 
+
+Awesome! Let's write some tests to make sure that our definitions meet the criteria but for that we will need to add one mock value in `SendAndExpect` companion object, such as:
 ```scala
-package com.ghurtchu.loadbalancer.services
-
-import cats.effect.IO
-import cats.effect.unsafe.implicits.global
-import com.ghurtchu.loadbalancer.http.{HttpClient, HttpServer}
-import munit.FunSuite
-import org.http4s.{Request, Uri}
-
-class SendAndExpectTest extends FunSuite {
-
-  val emptyRequest  = Request[IO]()
-  
-  test("toBackend [Success]") {
-    val sendAndExpect = SendAndExpect.toBackend(HttpClient.testSuccess, emptyRequest)
-    val backend       = Uri.fromString("localhost:8080").toOption.get
-
-    sendAndExpect(backend)
-      .map { obtained =>
-        assertEquals(obtained, "Hello")
-      }
-      .unsafeRunSync()
-  }
-
-  test("toBackend [Failure]") {
-    val sendAndExpect = SendAndExpect.toBackend(HttpClient.testFailure, emptyRequest)
-    val uri           = "localhost:8080"
-    val backend       = Uri.fromString(uri).toOption.get
-
-    sendAndExpect(backend)
-      .map { obtained =>
-        assertEquals(obtained, s"server with uri: [$uri] is dead")
-      }
-      .unsafeRunSync()
-  }
-
-  test("toHealthCheck [Alive]") {
-    val sendAndExpect = SendAndExpect.toHealthCheck(HttpClient.testSuccess)
-    val backend       = Uri.fromString("localhost:8080").toOption.get
-
-    sendAndExpect(backend)
-      .map { obtained =>
-        assertEquals(obtained, HttpServer.Status.Alive)
-      }
-      .unsafeRunSync()
-  }
-
-  test("toHealthCheck [Dead due to timeout]") {
-    val sendAndExpect = SendAndExpect.toHealthCheck(HttpClient.testTimeout)
-    val backend       = Uri.fromString("localhost:8080").toOption.get
-
-    sendAndExpect(backend)
-      .map { obtained =>
-        assertEquals(obtained, HttpServer.Status.Dead)
-      }
-      .unsafeRunSync()
-  }
-
-  test("toHealthCheck [Dead due to exception]") {
-    val sendAndExpect = SendAndExpect.toHealthCheck(HttpClient.testFailure)
-    val backend       = Uri.fromString("localhost:8080").toOption.get
-
-    sendAndExpect(backend)
-      .map { obtained =>
-        assertEquals(obtained, HttpServer.Status.Dead)
-      }
-      .unsafeRunSync()
-  }
-}
+// Inside SendAndExpect companion object:
+val BackendSuccessTest: SendAndExpect[String] = _ => IO("Success")
 ```
+
+Moreover, it is apparent that testing this service will require us to use some sort of `HttpClient`. So, going to `HttpClient` companion object and putting a few mock values there will be useful:
+```scala
+// Inside HttpClient companion object:
+  val Hello: HttpClient                   = (_, _) => IO.pure("Hello")
+  val RuntimeException: HttpClient        = (_, _) => IO.raiseError(new RuntimeException("Server is dead"))
+  val TestTimeoutFailure: HttpClient      = (_, _) => IO.sleep(6.seconds).as("")
+  val BackendResourceNotFound: HttpClient = (_, _) =>
+    IO.raiseError:
+      UnexpectedStatus(
+        org.http4s.Status.NotFound,
+        org.http4s.Method.GET,
+        Uri.unsafeFromString("localhost:8081"),
+      )
+```
+
+Now we're ready to write unit tests for `SendAndExpect[A]` with the help of `CatsEffectSuite` - suite which helps you to run IO-based tests:
+```scala
+package com.rockthejvm.loadbalancer.services
+
+import com.rockthejvm.loadbalancer.http.{HttpClient, HttpServer, ServerHealthStatus}
+import cats.effect.IO
+import org.http4s.{Request, Uri}
+import munit.{CatsEffectSuite, FunSuite}
+
+class SendAndExpectTest extends CatsEffectSuite:
+
+  val localhost8080 = "localhost:8080"
+  val backend       = Uri.fromString(localhost8080).toOption.get
+  val emptyRequest  = Request[IO]()
+
+  test("toBackend [Success]"):
+    val sendAndExpect = SendAndExpect.toBackend(HttpClient.Hello, emptyRequest)
+    val obtained      = sendAndExpect(backend)
+
+    assertIO(obtained, "Hello")
+
+  test("toBackend [Failure]"):
+    val sendAndExpect = SendAndExpect.toBackend(HttpClient.RuntimeException, emptyRequest)
+    val obtained      = sendAndExpect(backend)
+
+    assertIO(obtained, s"server with uri: $localhost8080 is dead")
+
+  test("toHealthCheck [Alive]"):
+    val sendAndExpect = SendAndExpect.toHealthCheck(HttpClient.Hello)
+    val obtained      = sendAndExpect(backend)
+
+    assertIO(obtained, ServerHealthStatus.Alive)
+
+  test("toHealthCheck [Dead due to timeout]"):
+    val sendAndExpect = SendAndExpect.toHealthCheck(HttpClient.TestTimeoutFailure)
+    val obtained      = sendAndExpect(backend)
+
+    assertIO(obtained, ServerHealthStatus.Dead)
+
+  test("toHealthCheck [Dead due to exception]"):
+    val sendAndExpect = SendAndExpect.toHealthCheck(HttpClient.RuntimeException)
+    val obtained      = sendAndExpect(backend)
+
+    assertIO(obtained, ServerHealthStatus.Dead)
+```
+
 Cool!
 
 We need a few more services before we write the whole logic for load balancer or backend health checks, so, let's move on.
 
-Now we need a special service which will be responsible for applying Round Robin logic to `UrlsRef`-s, so to the `Backends` and `HealthChecks` which we defined in the `domain` part.
-```scala
-package com.ghurtchu.loadbalancer.services
+Now we need a special piece of logic which will be responsible for applying Round Robin logic to `UrlsRef`-s, so to the `Backends` and `HealthChecks` which we defined in the `domain` part.
 
+I would implement that in the following way:
+```scala
+package com.rockthejvm.loadbalancer.services
+
+import com.rockthejvm.loadbalancer.domain.Url
+import com.rockthejvm.loadbalancer.domain.UrlsRef
 import cats.Id
 import cats.effect.IO
-import com.ghurtchu.loadbalancer.domain.Urls.Url
-import com.ghurtchu.loadbalancer.domain.{Backends, UrlsRef}
+import cats.syntax.option._
 
-trait RoundRobin[F[_]] {
+trait RoundRobin[F[_]]:
   def apply(ref: UrlsRef): IO[F[Url]]
-}
 
-object RoundRobin {
+  object RoundRobin:
 
   type BackendsRoundRobin     = RoundRobin[Option]
   type HealthChecksRoundRobin = RoundRobin[Id]
 
-  def forBackends: BackendsRoundRobin = new BackendsRoundRobin {
-    override def apply(ref: UrlsRef): IO[Option[Url]] =
-      ref.urls
-        .getAndUpdate(_.next)
-        .map(_.currentOpt)
+  def forBackends: BackendsRoundRobin = new BackendsRoundRobin:
+  override def apply(ref: UrlsRef): IO[Option[Url]] =
+    ref.urls
+      .getAndUpdate(_.next)
+      .map(_.currentOpt)
 
-  }
+  def forHealthChecks: HealthChecksRoundRobin = new HealthChecksRoundRobin:
+  override def apply(ref: UrlsRef): IO[Id[Url]] =
+    ref.urls
+      .getAndUpdate(_.next)
+      .map(_.currentUnsafe)
 
-  def forHealthChecks: HealthChecksRoundRobin = new HealthChecksRoundRobin {
-    override def apply(ref: UrlsRef): IO[Id[Url]] =
-      ref.urls
-        .getAndUpdate(_.next)
-        .map(_.currentUnsafe)
-  }
-
-  val testId: RoundRobin[Id] = new RoundRobin[Id] {
-    override def apply(ref: UrlsRef): IO[Id[Url]] =
-      IO.pure(Url("localhost:8081"))
-  }
-
-  val testOpt: RoundRobin[Option] = new RoundRobin[Option] {
-    override def apply(ref: UrlsRef): IO[Option[Url]] =
-      IO.pure(Some(Url("localhost:8081")))
-  }
-}
-
+  val TestId: RoundRobin[Id]            = _ => IO.pure(Url("localhost:8081"))
+  val LocalHost8081: RoundRobin[Option] = _ => IO.pure(Some(Url("localhost:8081")))
 ```
+
+What's happening up there?
+
+- `RoundRobin` is a trait with a type parameter `F[_]`. It defines a single abstract method `apply(ref: UrlsRef): IO[F[Url]]`. This trait represents a round-robin load balancing strategy, where `UrlsRef` is a reference to a list of URLs or backends, and F is a type constructor that determines the return type of the selected URL.
+- `RoundRobin` companion object provides type aliases and factory methods for creating instances of `RoundRobin`.
+- `BackendsRoundRobin`: a type alias for `RoundRobin[Option]`, which means it selects backends and returns them wrapped in an `Option`. This implies that it might return `Some(Url)` if a backend is available or `None` if not.
+- `HealthChecksRoundRobin`: a type alias for `RoundRobin[Id]`, which means it selects health check URLs and returns them directly as an `Id[Url]`. In this context, `Id` is used to indicate that no additional wrapping is applied, and the URL is returned as is because we never remove or add new urls to `HealthChecks`.
+- `forBackends`: creates an instance of `BackendsRoundRobin`. It selects a backend from the `UrlsRef` by invoking its `next` method and returns the current backend as an `Option[Url]`.
+- `forHealthChecks`: creates an instance of `HealthChecksRoundRobin`. It selects a health check URL from the `UrlsRef` by invoking its `next` method and returns the current health check URL as an `Id[Url]`.
+- `TestId`: predefined instance of `RoundRobin[Id]` that always returns the URL `"localhost:8081"`. It will be useful for testing purposes later.
+- `LocalHost8081`: predefined instance of `RoundRobin[Option]` that always returns `Some(Url("localhost:8081"))`. It is also useful for testing and may represent a local backend.
+
+Overall, this code provides a flexible and generic way to implement round-robin load balancing for different types of URLs or backends. It allows you to select URLs or backends based on your application's needs, and the `RoundRobin` trait abstracts away the load-balancing logic.
 
 (I omitted the tests for `RoundRobin` because it's really huge, you can view whole the source code in the end)
 
 Nice! 
 
-It's time to create something that based on `Status` will update the `Backends` atomically - either remove or add new `Url` to it:
+It's time to create something that based on `ServerHealthStatus` will update the `Backends` atomically - either remove or add new `Url` to it:
 
 ```scala
-package com.ghurtchu.loadbalancer.services
+package com.rockthejvm.loadbalancer.services
 
+import com.rockthejvm.loadbalancer.domain.*
+import com.rockthejvm.loadbalancer.domain.UrlsRef.Backends
+import com.rockthejvm.loadbalancer.domain.Url
+import com.rockthejvm.loadbalancer.domain.Urls
+import com.rockthejvm.loadbalancer.http.ServerHealthStatus
 import cats.effect.IO
-import com.ghurtchu.loadbalancer.domain.Backends.Backends
-import com.ghurtchu.loadbalancer.domain.Urls.Url
-import com.ghurtchu.loadbalancer.domain.{Backends, Urls}
-import com.ghurtchu.loadbalancer.services.SendAndExpect.Status
 
-trait UpdateBackendsAndGet {
-  def apply(backends: Backends, url: Url, status: Status): IO[Urls]
-}
+trait UpdateBackendsAndGet:
+  def apply(backends: Backends, url: Url, status: ServerHealthStatus): IO[Urls]
 
-object UpdateBackendsAndGet {
+object UpdateBackendsAndGet:
 
-  def impl: UpdateBackendsAndGet = new UpdateBackendsAndGet {
-    /**
-     * if status is Alive it adds url to backends atomically
-     * if status is Dead it removes url from backends atomically
-     */
-    override def apply(backends: Backends, url: Url, status: Status): IO[Urls] =
-      status match {
-        case Status.Alive =>
-          IO.println(s"$url is alive") *>
-            backends.urls
-              .updateAndGet(_.add(url))
-        case Status.Dead  =>
-          IO.println(s"$url is dead") *>
-            backends.urls
-              .updateAndGet(_.remove(url))
+  object Impl extends UpdateBackendsAndGet:
+    override def apply(backends: Backends, url: Url, status: ServerHealthStatus): IO[Urls] = 
+      backends.urls.updateAndGet { urls =>
+        status match
+          case ServerHealthStatus.Alive => urls.add(url)
+          case ServerHealthStatus.Dead  => urls.remove(url)
       }
-  }
-}
 ```
 
-Looks so simple, right? 
+- `UpdateBackendsAndGet` trait - defines a single abstract method `apply(backends: Backends, url: Url, status: ServerHealthStatus): IO[Urls]`. This trait represents an operation that updates the list of backends (`Backends`) based on the provided `Url` and its `ServerHealthStatus`. It returns the updated list of URLs (`Urls`) wrapped in an `IO` effect.
+- `UpdateBackendsAndGet` companion object - provides an implementation of the `UpdateBackendsAndGet` trait using the `Impl` object.
+- `Impl object`: defines the apply method, which takes the current backends, a url, and a status. Depending on the status (whether it's "Alive" or "Dead"), it updates the list of URLs (urls) inside the backends by adding or removing the provided url. It uses the `updateAndGet` method to perform this operation atomically. If the status is "Alive," the url is added to the list of backends; if the status is "Dead," the url is removed from the list. 
+- `apply` - returns the updated urls wrapped in an `IO` effect.
 
-It's no brainer that tests will also look pretty straightforward:
+So, the code above updates the list of `Backends` based on the `ServerHealthStatus`. It's designed to be flexible and can be used to add or remove backends from the list depending on their health. The use of `IO` suggests that this operation is performed in a safe and asynchronous manner, which is common in functional programming and asynchronous environments.
+
+Let's have a look at tests for `UpdateBackendsAndGet`:
 
 ```scala
-package com.ghurtchu.loadbalancer.services
+package com.rockthejvm.loadbalancer.services
 
+import com.rockthejvm.loadbalancer.domain.{Url, Urls}
+import com.rockthejvm.loadbalancer.domain.UrlsRef.Backends
+import com.rockthejvm.loadbalancer.http.ServerHealthStatus
 import cats.effect.IO
-import cats.effect.unsafe.implicits.global
-import com.ghurtchu.loadbalancer.domain.Urls
-import com.ghurtchu.loadbalancer.domain.Urls._
-import com.ghurtchu.loadbalancer.domain.Backends._
-import com.ghurtchu.loadbalancer.services.SendAndExpect._
-import munit.FunSuite
+import munit.CatsEffectSuite
 
-class UpdateRefUrlsAndGetTest extends FunSuite {
+class UpdateBackendsAndGetTest extends CatsEffectSuite:
 
-  val updateBackendsAndGet = UpdateBackendsAndGet.impl
-  val localhost            = Url("localhost:8083")
+  val updateBackendsAndGet = UpdateBackendsAndGet.Impl
+  val localhost8083            = "localhost:8083"
+  val initialUrls = Vector("localhost:8081", "localhost:8082").map(Url.apply)
 
-  test("Alive") {
-    val status = Status.Alive
-    val urls   = Urls(Vector("localhost:8081", "localhost:8082"))
-
-    (for {
+  test("Add the passed url to the Backends when the server status is Alive"):
+    val urls = Urls(initialUrls)
+    val obtained = for
       ref     <- IO.ref(urls)
-      updated <- updateBackendsAndGet(Backends(ref), localhost, status)
-    } yield updated.values == (urls.values :+ localhost))
-      .unsafeRunSync()
-  }
+      updated <- updateBackendsAndGet(Backends(ref), Url(localhost8083), ServerHealthStatus.Alive)
+    yield updated 
 
-  test("Dead") {
-    val status = Status.Dead
-    val urls   = Urls(Vector("localhost:8081", "localhost:8082", localhost))
+    assertIO(obtained, Urls(initialUrls :+ Url(localhost8083)))
 
-    (for {
+  test("Add the passed url to the Backends when the server status is Dead"):
+    val urls   = Urls(initialUrls :+ Url(localhost8083))
+    val obtained = for
       ref     <- IO.ref(urls)
-      updated <- updateBackendsAndGet(Backends(ref), localhost, status)
-    } yield updated.values == Vector("localhost:8081", "localhost:8082"))
-      .unsafeRunSync()
-  }
+    updated   <- updateBackendsAndGet(Backends(ref), Url(localhost8083), ServerHealthStatus.Dead)
+    yield updated
 
-}
+    assertIO(obtained, Urls(initialUrls))
 ```
 
 With these services available we have everything we need to implement two main bosses:
@@ -739,17 +908,17 @@ This service will use definitions from `domain` and `services` to check the avai
 
 Let's express this idea as code:
 ```scala
-package com.ghurtchu.loadbalancer.services
+package com.rockthejvm.loadbalancer.services
 
+import com.rockthejvm.loadbalancer.domain.*
+import com.rockthejvm.loadbalancer.domain.UrlsRef.*
+import com.rockthejvm.loadbalancer.http.ServerHealthStatus
+import com.rockthejvm.loadbalancer.services.RoundRobin.HealthChecksRoundRobin
 import cats.effect.IO
-import com.ghurtchu.loadbalancer.domain.Config.HealthCheckInterval
-import com.ghurtchu.loadbalancer.domain.Backends.{Backends, HealthChecks}
-import com.ghurtchu.loadbalancer.services.SendAndExpect.Status
-import com.ghurtchu.loadbalancer.services.RoundRobin.HealthChecksRoundRobin
 
 import scala.concurrent.duration.DurationLong
 
-object HealthCheckBackends {
+object HealthCheckBackends:
 
   def periodically(
     healthChecks: HealthChecks,
@@ -757,23 +926,96 @@ object HealthCheckBackends {
     parseUri: ParseUri,
     updateBackendsAndGet: UpdateBackendsAndGet,
     healthChecksRoundRobin: HealthChecksRoundRobin,
-    sendAndExpectStatus: SendAndExpect[Status],
-    healthCheckInterval: HealthCheckInterval
+    sendAndExpectStatus: SendAndExpect[ServerHealthStatus],
+    healthCheckInterval: HealthCheckInterval,
   ): IO[Unit] =
-    (for {
+    checkHealthAndUpdateBackends(
+      healthChecks,
+      backends,
+      parseUri,
+      updateBackendsAndGet,
+      healthChecksRoundRobin,
+      sendAndExpectStatus,
+    ).flatMap(_ => IO.sleep(healthCheckInterval.value.seconds)).foreverM
+
+  private[services] def checkHealthAndUpdateBackends(
+    healthChecks: HealthChecks,
+    backends: Backends,
+    parseUri: ParseUri,
+    updateBackendsAndGet: UpdateBackendsAndGet,
+    healthChecksRoundRobin: HealthChecksRoundRobin,
+    sendAndExpectStatus: SendAndExpect[ServerHealthStatus],
+  ): IO[Urls] =
+    for
       currentUrl <- healthChecksRoundRobin(healthChecks)
       uri        <- IO.fromEither(parseUri(currentUrl.value))
       status     <- sendAndExpectStatus(uri)
-      _          <- updateBackendsAndGet(backends, currentUrl, status)
-    } yield ())
-      .flatMap(_ => IO.sleep(healthCheckInterval.value.seconds))
-      .foreverM
-}
+      updated    <- updateBackendsAndGet(backends, currentUrl, status)
+    yield updated
 ```
 
-As you can see `HealthCheckBackends` is just a piece of logic which uses the services which we defined above.
+The code above defines an object `HealthCheckBackends`, which periodically checks the health of backends (URLs) and updating `Backends` based on the results of health checks.
 
-We can move to `LoadBalancer` now.
+`periodically` method - takes several parameters, including `healthChecks`, `backends`, `parseUri`, `updateBackendsAndGet`, `healthChecksRoundRobin`, `sendAndExpectStatus` and `healthCheckInterval`.  It calls the `checkHealthAndUpdateBackends` method and then sleeps for a specified interval (determined by `healthCheckInterval`) using `IO.sleep`. The `foreverM` method ensures that this process runs indefinitely.
+
+Breaking down the algorithm of `checkHealthAndUpdateBackends`: 
+- selects a `URL` from `healthChecks` using `healthChecksRoundRobin`.
+- parses the selected `URL` into a `org.http4s.URI`.
+- sends an HTTP request to the parsed `URI` using `sendAndExpectStatus` to determine the health status.
+- updates the `Backends` (removes or adds `currentUrl`) using `updateBackendsAndGet`.
+- returns the updated list of URLs `(Urls)`.
+
+So, this piece of logic provides a mechanism for periodically checking the health of backends, and updating the `Backends` based on the results of health checks. It leverages the provided `sendAndExpectStatus` to perform the requests and `updateBackendsAndGet` to update the `Backends`. The process runs in a loop with a specified interval to ensure continuous health monitoring.
+
+We can write tests for `LoadBalancer.checkHealthAndUpdateBackends`, that's why it's extracted with `private[services]` modifier so that we can call that in tests.
+
+```scala
+package com.rockthejvm.loadbalancer.services
+
+import com.rockthejvm.loadbalancer.domain.*
+import com.rockthejvm.loadbalancer.domain.UrlsRef.*
+import com.rockthejvm.loadbalancer.http.HttpClient
+import munit.{CatsEffectSuite, FunSuite}
+import cats.effect.IO
+
+class HealthCheckBackendsTest extends CatsEffectSuite:
+
+  test("add backend url to the Backends as soon as health check returns success"):
+    val healthChecks = Urls(Vector("localhost:8081", "localhost:8082").map(Url.apply))
+    val obtained = for
+      backends     <- IO.ref(Urls(Vector(Url("localhost:8082"))))
+      healthChecks <- IO.ref(healthChecks)
+      result       <- HealthCheckBackends.checkHealthAndUpdateBackends(
+        HealthChecks(healthChecks),
+        Backends(backends),
+        ParseUri.Impl,
+        UpdateBackendsAndGet.Impl,
+        RoundRobin.forHealthChecks,
+        SendAndExpect.toHealthCheck(HttpClient.Hello)
+      )
+    yield result
+
+    assertIO(obtained, Urls(Vector("localhost:8082", "localhost:8081").map(Url.apply)))
+
+  test("remove backend url from the Backends as soon as health check returns failure"):
+    val urls = Urls(Vector("localhost:8081", "localhost:8082").map(Url.apply))
+    val obtained = for
+      backends     <- IO.ref(urls)
+      healthChecks <- IO.ref(urls)
+      result       <- HealthCheckBackends.checkHealthAndUpdateBackends(
+        HealthChecks(healthChecks),
+        Backends(backends),
+        ParseUri.Impl,
+        UpdateBackendsAndGet.Impl,
+        RoundRobin.forHealthChecks,
+        SendAndExpect.toHealthCheck(HttpClient.TestTimeoutFailure)
+      )
+    yield result
+
+    assertIO(obtained, Urls(Vector("localhost:8082").map(Url.apply)))
+```
+
+Awesome, we've come the long way and we can move to `LoadBalancer` now, finally!
 
 This will be a service which:
 - accepts any request (let's say `"localhost:8080/users/1"`)
@@ -784,109 +1026,284 @@ This will be a service which:
 - sends response to the client
 
 ```scala
-package com.ghurtchu.loadbalancer.services
+package com.rockthejvm.loadbalancer.services
 
-import cats.effect.IO
-import com.ghurtchu.loadbalancer.domain.Backends.Backends
-import com.ghurtchu.loadbalancer.services.RoundRobin.BackendsRoundRobin
+import com.rockthejvm.loadbalancer.domain.*
+import com.rockthejvm.loadbalancer.domain.UrlsRef.*
+import com.rockthejvm.loadbalancer.services.RoundRobin.BackendsRoundRobin
+import org.http4s.Uri.Path.Segment
 import org.http4s.dsl.Http4sDsl
 import org.http4s.{HttpRoutes, Request}
+import cats.effect.IO
 
-object LoadBalancer {
+object LoadBalancer:
 
   def from(
     backends: Backends,
     sendAndExpectResponse: Request[IO] => SendAndExpect[String],
     parseUri: ParseUri,
+    addRequestPathToBackendUrl: AddRequestPathToBackendUrl,
     backendsRoundRobin: BackendsRoundRobin,
-  ): HttpRoutes[IO] = {
+  ): HttpRoutes[IO] =
     val dsl = new Http4sDsl[IO] {}
     import dsl._
-    HttpRoutes.of[IO] { case request =>
+    HttpRoutes.of[IO] { request =>
       backendsRoundRobin(backends).flatMap {
-        _.fold(Ok("All backends are inactive")) { currentUrl =>
-          val urlUpdated = currentUrl.value
-            .concat(request.uri.path.renderString)
-          for {
-            uri      <- IO.fromEither(parseUri(urlUpdated))
+        _.fold(Ok("All backends are inactive")) { backendUrl =>
+          val url = addRequestPathToBackendUrl(backendUrl.value, request)
+          for
+            uri      <- IO.fromEither(parseUri(url))
             response <- sendAndExpectResponse(request)(uri)
             result   <- Ok(response)
-          } yield result
+          yield result
         }
       }
     }
-  }
-
-  final case class InvalidUri(uri: String) extends Throwable {
-    override def getMessage: String =
-      s"Could not construct proper URI from $uri"
-  }
-}
 ```
-Awesome, we defined the `LoadBalancer` which will return `HttpRoutes[IO]` and `http4s` will run it.
 
-Now, let's see how "the end of the world" would look like:
+The code above looks similar to `HealthCheckBackends` but it's a bit different and also returns `HttpRoutes[IO]`.
+
+`from` - takes several parameters, including `backends`, `sendAndExpectResponse`, `parseUri`, `addRequestPathToBackendUrl`, and `backendsRoundRobin`. It creates an HTTP route using the HttpRoutes.of[IO] constructor.
+- it uses the `backendsRoundRobin` function to select a backend URL from the `Backends`.
+- if there are no active backends (i.e., no backend URL could be selected), it responds client with `"All backends are inactive"` using `Ok("All backends are inactive").`
+- of an active backend URL is selected, it constructs a new URL by adding the request path from the incoming HTTP request to the selected backend URL using the `addRequestPathToBackendUrl` function.
+- it then parses the constructed URL into a `org.http4s.Uri` using the `parseUri` function.
+- next, it sends an HTTP request to the parsed URI using the `sendAndExpectResponse` function. This function takes an HTTP request and returns a `SendAndExpect[String]`, which is expected to send the request to the selected backend and return a response.
+- finally, it responds with the received response body by wrapping it in an `Ok` response using `Ok(response)`.
+
+In summary, this code defines a load balancer that routes incoming HTTP requests to one of the available backend URLs based on a round-robin selection mechanism. It assumes that the provided functions (sendAndExpectResponse, parseUri, addRequestPathToBackendUrl, and backendsRoundRobin) are correctly implemented to handle the load balancing logic and backend communication.
+
+Now we can write tests for that:
 
 ```scala
+package com.rockthejvm.loadbalancer.services
+
+import com.rockthejvm.loadbalancer.domain.Urls
+import com.rockthejvm.loadbalancer.domain.Url
+import com.rockthejvm.loadbalancer.domain.UrlsRef.Backends
+import com.rockthejvm.loadbalancer.http.HttpClient
+import org.http4s.{Request, Uri}
+import munit.{CatsEffectSuite, FunSuite}
+import cats.effect.IO
+import cats.effect.unsafe.implicits.global
+
+class LoadBalancerTest extends CatsEffectSuite:
+
+  test("All backends are inactive because Urls is empty"):
+    val obtained = (for
+      backends <- IO.ref(Urls.empty)
+      loadBalancer = LoadBalancer.from(
+        Backends(backends),
+        _ => SendAndExpect.BackendSuccessTest,
+        ParseUri.Impl,
+        AddRequestPathToBackendUrl.Impl,
+        RoundRobin.forBackends
+      )
+      result <- loadBalancer.orNotFound.run(Request[IO]())
+    yield result.body.compile.toVector.map(bytes => String(bytes.toArray)))
+      .flatten
+
+    assertIO(obtained, "All backends are inactive")
+
+  test("Success case"):
+    val obtained = (for
+      backends <- IO.ref(Urls(Vector("localhost:8081", "localhost:8082").map(Url.apply)))
+      loadBalancer = LoadBalancer.from(
+        Backends(backends),
+        _ => SendAndExpect.BackendSuccessTest,
+        ParseUri.Impl,
+        AddRequestPathToBackendUrl.Impl,
+        RoundRobin.LocalHost8081
+      )
+      result <- loadBalancer.orNotFound.run(Request[IO](uri = Uri.unsafeFromString("localhost:8080/items/1")))
+    yield result.body.compile.toVector.map(bytes => String(bytes.toArray)))
+      .flatten
+
+    assertIO(obtained, "Success")
+
+  test("Resource not found (404) case"):
+    val obtained = (for
+      backends <- IO.ref(Urls(Vector("localhost:8081", "localhost:8082").map(Url.apply)))
+      emptyRequest = Request[IO]()
+      loadBalancer = LoadBalancer.from(
+        Backends(backends),
+        _ => SendAndExpect.toBackend(HttpClient.BackendResourceNotFound, Request[IO]()),
+        ParseUri.Impl,
+        AddRequestPathToBackendUrl.Impl,
+        RoundRobin.forBackends
+      )
+      result <- loadBalancer.orNotFound.run(Request[IO](uri = Uri.unsafeFromString("localhost:8080/items/1")))
+    yield result.body.compile.toVector.map(bytes => String(bytes.toArray)))
+      .flatten
+
+    assertIO(obtained, s"resource was not found")
+```
+
+Awesome, we defined the `LoadBalancer` which will return `HttpRoutes[IO]` and `http4s` will run it.
+
+What's left are
+- `HttpServer`
+- `Main`
+
+We can define `HttpServer` as follows:
+```scala
+package com.rockthejvm.loadbalancer.http
+
+import com.rockthejvm.loadbalancer.domain.*
+import com.rockthejvm.loadbalancer.domain.UrlsRef.{Backends, HealthChecks}
+import com.rockthejvm.loadbalancer.services.RoundRobin.{BackendsRoundRobin, HealthChecksRoundRobin}
+import com.rockthejvm.loadbalancer.services.{
+  AddRequestPathToBackendUrl,
+  HealthCheckBackends,
+  LoadBalancer,
+  ParseUri,
+  SendAndExpect,
+  UpdateBackendsAndGet,
+}
+import cats.effect.IO
+import com.comcast.ip4s.*
+import org.http4s.ember.client.EmberClientBuilder
+import org.http4s.ember.server.EmberServerBuilder
+import org.http4s.server.middleware.Logger
+
+object HttpServer:
+
+  def start(
+    backends: Backends,
+    healthChecks: HealthChecks,
+    port: Port,
+    host: Host,
+    healthCheckInterval: HealthCheckInterval,
+    parseUri: ParseUri,
+    updateBackendsAndGet: UpdateBackendsAndGet,
+    backendsRoundRobin: BackendsRoundRobin,
+    healthChecksRoundRobin: HealthChecksRoundRobin,
+  ): IO[Unit] =
+    (for
+      client <- EmberClientBuilder
+        .default[IO]
+        .build
+      httpClient = HttpClient.of(client)
+      httpApp    = Logger
+        .httpApp(logHeaders = false, logBody = true):
+          LoadBalancer
+            .from(
+              backends,
+              SendAndExpect.toBackend(httpClient, _),
+              parseUri,
+              AddRequestPathToBackendUrl.Impl,
+              backendsRoundRobin,
+            )
+            .orNotFound
+      _ <- EmberServerBuilder
+        .default[IO]
+        .withHost(host)
+        .withPort(port)
+        .withHttpApp(httpApp)
+        .build
+      _ <- HealthCheckBackends
+        .periodically(
+          healthChecks,
+          backends,
+          parseUri,
+          updateBackendsAndGet,
+          healthChecksRoundRobin,
+          SendAndExpect.toHealthCheck(httpClient),
+          healthCheckInterval,
+        )
+        .toResource
+    yield ()).useForever
+```
+
+Let's break down what's going on up there:
+
+
+`start` takes several parameters, things which we defined in `domain` and `services`
+
+Inside the method, it performs the following actions:
+- uses the `EmberClientBuilder` to build an `HTTP` client (httpClient) for making HTTP requests to backend servers. This client is constructed using the `EmberClientBuilder.default[IO].build` method
+- defines an HTTP application (httpApp) by creating a `LoadBalancer` using the `LoadBalancer.from` method. This application routes incoming HTTP requests to available backend servers based on a round-robin selection mechanism. It also performs logging using the `Logger.httpApp` middleware.
+- configures and starts an HTTP server using EmberServerBuilder. The server listens on the specified host and port and uses the httpApp as the HTTP application.
+- sets up periodic health checks for backends using the `HealthCheckBackends.periodically` method. The health checks run at regular intervals (healthCheckInterval) and use the provided `updateBackendsAndGet` function to update the health status of backends. Health checks are performed using the `SendAndExpect.toHealthCheck(httpClient)` function.
+- `useForever` method is used to keep the resources acquired during server and health check setup running indefinitely.
+
+To sum up, this code sets up an HTTP server that acts as a load balancer and performs health checks on the backends it balances requests to. It uses the Ember HTTP client and server libraries and integrates them with other load balancing and health checking components to create a functioning load balancer with health monitoring.
+
+And now finally time has come to see how "the end of the world" would look like:
+
+```scala
+import com.rockthejvm.loadbalancer.domain.UrlsRef.*
+import com.rockthejvm.loadbalancer.domain.*
+import com.rockthejvm.loadbalancer.domain.Url
+import com.rockthejvm.loadbalancer.errors.config.InvalidConfig
+import com.rockthejvm.loadbalancer.http.HttpServer
+import com.rockthejvm.loadbalancer.services.{ParseUri, RoundRobin, UpdateBackendsAndGet}
 import cats.effect.{IO, IOApp}
 import cats.implicits.{catsSyntaxTuple2Parallel, catsSyntaxTuple2Semigroupal}
 import com.comcast.ip4s.{Host, Port}
-import com.ghurtchu.loadbalancer.domain.{Config, Urls}
-import com.ghurtchu.loadbalancer.domain.Backends.{Backends, HealthChecks}
-import com.ghurtchu.loadbalancer.http.HttpServer
-import com.ghurtchu.loadbalancer.services.{ParseUri, RoundRobin, UpdateBackendsAndGet}
-import pureconfig._
-import pureconfig.generic.auto._
+import org.typelevel.log4cats.Logger
+import org.typelevel.log4cats.slf4j.Slf4jLogger
+import org.typelevel.log4cats.syntax.*
+import pureconfig.{ConfigReader, ConfigSource}
 
-object Main extends IOApp.Simple {
+object Main extends IOApp.Simple:
+
+  implicit def logger: Logger[IO] = Slf4jLogger.getLogger[IO]
 
   override def run: IO[Unit] =
-    for {
-      config                   <- IO(ConfigSource.default.loadOrThrow[Config])
-      (backends, healthChecks) <- refs(config.backends)
-      (host, port)             <- IO.fromEither {
-        hostAndPort(
-          config.hostOr(fallback = "0.0.0.0"),
-          config.portOr(fallback = 8080),
-        )
-      }
-      _                        <- IO.println(s"Starting server on URL: $host:$port")
-      _                        <- HttpServer.start(
-        backends,
-        healthChecks,
+    for 
+      config <- IO(ConfigSource.default.loadOrThrow[Config])
+      backendUrls = config.backends
+      backends     <- IO.ref(backendUrls)
+      healthChecks <- IO.ref(backendUrls)
+      hostAndPort  <- IO.fromEither(hostAndPort(config.host, config.port))
+      (host, port) = hostAndPort
+      _ <- info"Starting server on $host:$port"
+      _ <- HttpServer.start(
+        Backends(backends),
+        HealthChecks(healthChecks),
         port,
         host,
         config.healthCheckInterval,
-        ParseUri.impl,
-        UpdateBackendsAndGet.impl,
+        ParseUri.Impl,
+        UpdateBackendsAndGet.Impl,
         RoundRobin.forBackends,
         RoundRobin.forHealthChecks,
       )
-    } yield ()
-
-  private def refs(urls: Urls): IO[(Backends, HealthChecks)] =
-    (
-      IO.ref(urls),
-      IO.ref(urls),
-    ).parMapN { case (backendsRef, healthChecksRef) =>
-      (Backends(backendsRef), HealthChecks(healthChecksRef))
-    }
+    yield ()
 
   private def hostAndPort(
-    host: String,
-    port: Int,
-  ): Either[Config.InvalidConfig, (Host, Port)] =
+   host: String,
+   port: Int,
+  ): Either[InvalidConfig, (Host, Port)] =
     (
       Host.fromString(host),
       Port.fromInt(port),
     ).tupled
-      .toRight(Config.InvalidConfig)
-}
+      .toRight(InvalidConfig)
 ```
+
+- `import` Statements - the code includes various import statements to import necessary libraries and modules, such as domain definitions, error handling, HTTP server setup, and logging.
+
+- `Main` object: the Main object extends `IOApp.Simple`, which is a convenient trait for creating a simple `IO-based` app.
+- `run` method (override): - an entry point of the application, and it returns an IO effect representing the program's execution.
+
+Inside the run method, the following steps are performed:
+- It loads the application configuration from the default configuration source using `PureConfig` and stores it in the config variable.
+- the backend URLs are extracted from the configuration.
+- `IO.ref` is used to create two IO references: `backends` and `healthChecks`. These references are initialized with the backend URLs from the configuration.
+- the `host` and `port` are extracted from the configuration and stored in the `(host, port)` tuple.
+- logging messages are printed to indicate that the server is starting on a specific host and port.
+- the `HttpServer.start` method is called to start the HTTP server. It is configured with various parameters, including references to the backend and health check URLs, the host, port, health check interval, and implementations for parsing URIs, updating backends, and round-robin selection.
+
+hostAndPort private method - a function takes a `host` (as a string) and a `port` (as an integer) and returns an `Either` that represents either a successful tuple of `(Host, Port)` or an `InvalidConfig` error.
+- uses `Host.fromString` and `Port.fromInt` to convert the host and port values into `Host` and `Port` instances, respectively.
+- `.tupled` method combines the two `Option` values into an `Option` of a tuple.
+- `.toRight(InvalidConfig)` converts the `Option` into an `Either`, where `InvalidConfig` is returned if either the host or port conversion fails.
 
 Almost done!
 
-Before testing the load balancer manually we need to have some backends.
+Before testing the load balancer manually we need to have some backends up and running.
 
 For that I wrote really simple Python flask application which looks like this:
 
