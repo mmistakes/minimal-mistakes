@@ -81,10 +81,10 @@ addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "2.1.1") // SBT plugin for using 
 
 Every non-trivial project must include at least two packages:
 - `domain` - which describes the business entities of the application
-- `services` - isolated piece of logics which use `domain` and other `services` to achieve some goals
+- `services` - isolated pieces of logic which use `domain` and other `services` to achieve some goals
 
 In our case we will also have additional two packages:
-- `errors` - for enumerating the error values
+- `errors` - for grouping different error representations
 - `http` - for grouping `HttpClient`, `HttpServer`, `HttpServerStatus` and related entities
 
 Let's compile and run the initial project, this is what `Main.scala` looks like:
@@ -122,7 +122,7 @@ Great! with that we can move on and start defining data models.
 ## 3. Domain Modeling
 The domain of load balancer is pretty straightforward. Let's unfold it step by step. 
 
-In a load balancer, you often need to handle requests and route them to different backend servers based on the URL or other request attributes. The `Url` case class which we'll write provides a convenient way to represent and manipulate URLs in a strongly-typed manner, making it easier to work with URL-related logic in the load balancer. Using a dedicated `Url` type makes the code more self-explanatory and easier to understand for other developers working on the project. It provides a clear and meaningful abstraction for URLs.
+In a load balancer, you often need to handle requests and route them to different backend servers based on the URL or other request attributes. The `Url` case class which we'll write provides a convenient way to represent and manipulate URLs in a strongly-typed manner, making it easier to work with URL-related logic in the load balancer. Using a dedicated `Url` type makes the code more self-explanatory and provides a clear and meaningful abstraction for URLs.
 
 So, let's define it in the `domain` package, extend `AnyVal` for the compiler to optimize boxing where it's possible (we could have used Scala 3 `opaque type` but it doesn't work well with `pureconfig` unfortunately) and override its `toString` method for logging purposes:
 
@@ -166,7 +166,7 @@ object Urls:
 
 It is worth to mention that The `next` method implements a round-robin algorithm for cycling through the backend server URLs. This is a common load balancing strategy where each request is routed to the next server in the list. The next method ensures that requests are evenly distributed among the available servers, which is a fundamental aspect of load balancing.
 
-The `add` and `remove` methods allow you to dynamically manage the list of backend servers. This is valuable because in a real-world scenario, backend servers may come online or go offline, and the load balancer needs to adapt accordingly. These methods ensure that you don't incorrect set of URLs, which could lead to uneven load distribution.
+The `add` and `remove` methods allow you to dynamically manage the list of backend servers. This is valuable because in a real-world scenario, backend servers may come online or go offline, and the load balancer needs to adapt accordingly. These methods ensure that you don't deal with incorrect set of URLs, which could lead to uneven load distribution.
 
 `currentUnsafe` and `currentOpt` methods are pretty much self-explanatory.
 
@@ -291,14 +291,14 @@ You may have different ideas as to what to configure, but I believe there are fo
 So, the actual `application.conf` may look like:
 
 ```conf
-port="8080",
+port=8080,
 host="localhost",
 backends=[
  "http://localhost:8081",
  "http://localhost:8082",
  "http://localhost:8083"
 ], 
-health-check-interval="1"
+health-check-interval=3
 ```
 
 In summary, this configuration is important when implementing a load balancer because it determines how incoming client requests are received, which backend servers they are forwarded to, and how the health and availability of these servers are monitored. Proper configuration and management of these settings are crucial for ensuring that the load balancer operates effectively, efficiently balances the load, and provides high availability for the application or service it serves.
@@ -395,7 +395,7 @@ With this we have finished modeling the domain and tested it. Now we can move on
 
 ## 3. Services
 
-There are a handful of services which we can be useful to abstract over to make them reusable, isolated and testable:
+There are a handful of services which can be useful to abstract over to make them reusable, isolated and testable:
 - parsing `org.http4s.Uri`-s from strings (since we work with `http4s` we need to build `org.http4s.Uri`-s, otherwise we won't be able to make HTTP requests)
 - adding request paths to the backend urls (we may receive the request on the url: `http://localhost:8080/items/1` and the current backend url is `http://localhost:8082`, we need some piece of logic which creates the following URL: `http://localhost:8082/items/1`)
 - having the abstraction of HTTP client for sending requests which will make testing dependent services easier
@@ -680,7 +680,7 @@ object SendAndExpect:
               .as(ServerHealthStatus.Alive)
               .flatTap(_ => info"$uri is alive")
               .timeout(5.seconds)
-              .handleErrorWith(_ => warn"$uri is dead" *> IO.pure(ServerHealthStatus.Dead))
+              .handleErrorWith(_ => warn"$uri is dead" *> ServerHealthStatus.Dead.pure[IO])
 ```
 
 
@@ -1405,7 +1405,7 @@ We can write a shell script - `be`, with which we can run the python flask app:
 ```shell
 #!/bin/sh
 
-python3 echoer.py $1
+python3 backend.py $1
 ```
 
 Before writing the shell script for running the load balancer we need to:
