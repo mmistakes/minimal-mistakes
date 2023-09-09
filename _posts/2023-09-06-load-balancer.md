@@ -1303,9 +1303,11 @@ hostAndPort private method - a function takes a `host` (as a string) and a `port
 
 Almost done!
 
+## 4. Backends, binaries and shell scripts
+
 Before testing the load balancer manually we need to have some backends up and running.
 
-For that I wrote really simple Python flask application which looks like this:
+For that I wrote really simple Python flask application (`backend.py`) which looks like this:
 
 ```python
 from flask import Flask
@@ -1330,7 +1332,9 @@ if __name__ == '__main__':
     app.run(host=host, port=port, debug=True)
 ```
 
-Now we can create two shell scripts for running load balancer and backends easily.
+Put `backend.py` in the root folder of the project.
+
+Now we can create two shell scripts for running load balancer and backends easily and put both of them in the project root directory as well.
 
 We can write a shell script - `be`, with which we can run the python flask app:
 ```shell
@@ -1339,12 +1343,57 @@ We can write a shell script - `be`, with which we can run the python flask app:
 python3 echoer.py $1
 ```
 
-and a separate shell script - `lb`, for running the load balancer:
+Before writing the shell script for running the load balancer we need to:
+- compile it
+- create `lb.jar`
+- put it in the root directory
+
+So, let's do it step by step, start SBT and run `assembly`:
+```shell
+sbt:loadbalancer> assembly
+[info] compiling 2 Scala sources to ~/loadbalancer/target/scala-3.3.0/classes ...
+[info] 5 file(s) merged using strategy 'Rename' (Run the task at debug level to see the details)
+[info] 45 file(s) merged using strategy 'Discard' (Run the task at debug level to see the details)
+[info] Built: ~/loadbalancer/target/scala-3.3.0/lb.jar
+[info] Jar hash: 14436864ac45f76c460b16df6020b615a01c842a
+[success] Total time: 7 s, completed Sep 9, 2023, 1:00:51 PM
+```
+
+move `lb.jar` from:
+- `mv target/scala-3.3.0/lb.jar lb.jar
+
+and finally write the separate shell script - `lb`, for running the load balancer:
 ```shell
 #!/bin/sh
 
 scala lb.jar $1
 ```
+
+## 5. Conclusion
+
+We have built together an application layer load balancer with health checking capabilities. Here's a summary of what we've accomplished, the tools and libraries used, and how we did it:
+
+**What We Built:**
+We built an HTTP load balancer that distributes incoming HTTP requests to a set of backend servers or URLs. The load balancer selects backends using a round-robin algorithm. Additionally, it periodically performs health checks on the backends to ensure they are responsive and healthy. If a backend is found to be unhealthy, it is temporarily removed from the pool of available backends.
+
+**Tools and Libraries Used:**
+- `Scala 3`: The code is written in the Scala programming language.
+- `SBT`: Build tool which helped us to `run`, `test` and `assembly` the `lb.jar`
+- `Cats Effect`: We used the Cats Effect library for managing asynchronous and effectful operations using the IO monad.
+- `HTTP4s`: The HTTP4s library is used for building HTTP clients and servers, handling HTTP requests and responses, and defining routes.
+- `PureConfig`: PureConfig is used for loading application configuration from a configuration file.
+- `Ember`: The Ember library is used for building the HTTP client and server.
+- `Log4Cats`: Log4Cats is used for logging messages within the application.
+
+**How We Did It:**
+- `Round-Robin Load Balancing`: We implemented round-robin load balancing logic to evenly distribute incoming requests across a pool of backend servers.
+- `Health Checking`: We periodically perform health checks on the backend servers using HTTP requests. If a server is found to be unhealthy, it is temporarily removed from the pool of available backends.
+- `Functional Programming`: The code is designed using functional programming principles, leveraging the Cats Effect library for handling side effects and IO operations.
+- `Configurability`: Application configuration is loaded from a configuration file using `PureConfig`, allowing flexibility in configuring backend URLs, host, port, and other settings.
+- `Logging`: We use `Log4Cats` for logging messages, which can be helpful for monitoring and debugging.
+- `Testability`: The code is designed to be testable. It uses dependency injection to pass components (e.g., HTTP clients, round-robin strategies) as arguments to functions and objects, making it easy to substitute mock implementations for testing.
+
+In summary, we have built a scalable and configurable HTTP load balancer with health checking capabilities using Scala and various functional programming libraries. The code is designed to be modular, testable, and extensible, making it suitable for real-world applications where load balancing and health monitoring of backend servers are required.
 
 In this video you can see the live testing of load balancer:
 {% include video id="SkQ6s_nwCgY" provider="youtube" %}
