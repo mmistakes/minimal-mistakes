@@ -80,11 +80,10 @@ toc_sticky: true
 
   </style>
 </head>
-<br>
 ![image](https://github.com/gyun97/Baekjoon_Solution/assets/143414166/ca43b8c9-9d37-4d47-97c3-f3d7c2dbb50a)
 ## **Brute Force란?**
 <span style = "color:blue; font-weight:bold;">
-Brute Force 알고리즘은 어떤 문제에 대해서 가능한 모든 경우의 수를 시도하여 원하는 결과를 찾는 방법을 의미한다.</span><br>
+Brute Force 알고리즘은 어떤 문제에 대해서 가능한 모든 경우의 수를 시도하여 원하는 결과를 찾는 방법을 의미한다.</span>
 <br>
 <br>
 ## **Brute Force 단계**
