@@ -23,14 +23,17 @@ Ax < b
 의 형태로 행렬로 나타내야하는데, 이게 생각보다 어렵고 귀찮다. 하지만 Julia는 이런 형식으로 최적화문제를 설계하지 않아도 된다고 들었다. 나중에 더 공부해봐야 알 수 있는 부분이다.
 
 ### 3. 기초적인 문법
-```
-julia> δ = 0.00001
+``` julia
+δ = 0.00001
 1.0e-5
 
-julia> 안녕하세요 = "Hello"
+안녕하세요 = "Hello"
 "Hello"
+```
+줄리아 공식 홈페이지에서 가져온 부분인데, 줄리아 언어는 Unicode name을 사용할 수 있다고 한다. 여기에 안녕하세요가 적혀있는게 그냥 귀여워서 가져와봤다.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNDEwOTc1Miw3OTQxNjYzOTksLTEyNj
+eyJoaXN0b3J5IjpbMTI5NzcyMTU2MSw3OTQxNjYzOTksLTEyNj
 UwMDcwMywtMjA3ODA3MjAyMl19
 -->
