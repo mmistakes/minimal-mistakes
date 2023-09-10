@@ -6,7 +6,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/blog-cover.jpg
 excerpt: >
-  A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
+  Welcome. Exploring AI projects and research, my tech blog documents the development journey of an AI Engineer, delving into interestful papers and growth experiences. 🚀<br />
 feature_row:
   - image_path: /assets/images/project.jpg
     alt: "Project"
@@ -22,7 +22,6 @@ feature_row:
     excerpt: "Feel free to [reach out](mailto:dhtkdwls537@gmail.com){: .btn--large } anytime if you'd like to have a conversation!"
 
 ---
-
 ### <img src="assets/images/home/contact.png" alt="contact" style="zoom:6%;" /> Connect with me!
 
 {% include feature_row %}
