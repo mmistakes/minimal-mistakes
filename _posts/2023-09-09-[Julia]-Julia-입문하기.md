@@ -40,8 +40,8 @@ a
 
 기본적으로 벡터 정의는 매트랩과 비슷하다. 내가 생각하는 파이썬의 가장 큰 단점은 index가 0부터 시작한다는 점이다. 이게 행렬 연산을 하는 사람에게는 직관적이지 않아 실수가 자주 발생하는데, julia는 1부터 시작하기 때문에 나에겐 직관적이라 좋다.
 
-앞으로 줄리아를 잘 배워서 나의 CV에 또 ㅎ
+앞으로 줄리아를 잘 배워서 나의 CV에 또 새로운 언어를 추가해야겠다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MDAwODg3Niw3OTQxNjYzOTksLTEyNj
+eyJoaXN0b3J5IjpbMTE2NDQ1Mzc5Niw3OTQxNjYzOTksLTEyNj
 UwMDcwMywtMjA3ODA3MjAyMl19
 -->
