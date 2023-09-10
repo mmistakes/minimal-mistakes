@@ -15,8 +15,14 @@ categories:
 ### 2. Julia language
 ![enter image description here](https://raw.githubusercontent.com/arrow-economist/imageslibrary/main/benchmarks.svg)
 
-Julia 공식 홈페이지에서 밝힌 벤치마크 비교에 따르면, Julia의 속도는 보통 경제학에서 쓰는 MATLAb, R, python에 비해 압도적으로 빠르다. 심지어 이 언어의 장점은, 또 optimization에서 나오는데, Matlab의 단점
+Julia 공식 홈페이지에서 밝힌 벤치마크 비교에 따르면, Julia의 속도는 보통 경제학에서 쓰는 MATLAb, R, python에 비해 압도적으로 빠르다. 심지어 이 언어의 장점은, 또 optimization에서 나오는데, Matlab의 단점 중 하나인 최적화 문제 제약조건 설정을 극복했다. Matlab에서 최적화 문제를 설계할 때, 제약 조건은 
+
+``` latex
+Ax < b
+```
+의 형
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjM4MDY3MDcsNzk0MTY2Mzk5LC0xMj
-Y1MDA3MDMsLTIwNzgwNzIwMjJdfQ==
+eyJoaXN0b3J5IjpbLTI0NzM3NDg1Niw3OTQxNjYzOTksLTEyNj
+UwMDcwMywtMjA3ODA3MjAyMl19
 -->
