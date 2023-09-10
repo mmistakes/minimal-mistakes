@@ -1,0 +1,109 @@
+---
+layout: newhome
+author_profile: false
+sidebar: false
+---
+<header>
+	<div class="container">
+		<div class="column">
+			<div>
+				<p class="editable">Hi, my name is </p>
+				<h1 class="editable">Chae Rim Kim; </h1>
+				<p class="editable">
+					I'm a Korea-based Technical Specialist currently working at Dell Technologies.
+					<br>
+					I am experienced in different sides of IT, starting from <b>software engineering to technical strategy</b>, and now I’ve been building up my expertise in <b>Infrastructure Solutions such as storage and servers.</b>
+					<br>
+				</p>
+			</div>
+		</div>
+		<div class="column">
+			<img src="{{ site.baseurl }}/assets/images/banner.png" alt="banner image">
+		</div>
+	</div>
+</header>
+
+
+<div class="container">
+	<h2 class="editable" style="text-align: center;">😊 A little bit about me</h2>
+
+	<div id="terminal">
+		<div id="bar"></div>
+
+	<div id="screen">
+		<!-- start of the screen -->
+		<p class="command">cat README.md</p>
+		<p class="response">👋🏼 Hi! I am an IT all-arounder experienced & interested in Software Engineering all the way to Infrastructure Solutions. I focus on delivering the best solutions with a high level of understanding and domain knowledge, thriving to become a better & more knowledgable person everyday. </p>
+
+		<p class="command">cat MORE.md</p>
+		<p class="response">👩🏻‍💻 Academically, I have obtained a First-Class Honours degree in BSc Computer Science from the University of Leeds, where I graduated with an exceptional dissertation grade. </p>
+
+		<p class="command">ls programming skills</p>
+		<p class="response array">
+			<span class="array-element">Python</span>,
+			<span class="array-element">Java</span>,
+			<span class="array-element">Flask & Django </span>,
+			<span class="array-element">HTML/CSS </span>,
+			<span class="array-element">MySQL</span>,
+			<span class="array-element">Git</span>
+		</p>
+
+		<p class="command">
+			<span class="cursor">&nbsp</span>
+		</p>
+	</div>
+	</div>
+
+
+	<!-- <div class="cli">
+		<img src="/assets/images/terminal.jpg" alt="terminal skills" class="center">
+	</div> -->
+</div>
+
+
+<div class="container">
+	<h2 class="editable" style="text-align: center;">📨 Connect with me! </h2>
+		<ul class="thirds">
+
+			<li class = "narrow">
+				<div class="image">{% include icon.html icon="look" %}</div>
+				<h3 class="editable">Look Around</h3>
+				<p class="editable">Look through my <a href="https://chaerim-kim.github.io/projects/">projects</a>, what I'm working on and the issues I'm currently interested in! </p>
+			</li>
+
+			<li class = "narrow">
+				<div class="image"> <a href="https://github.com/chaerim-kim/">{% include icon.html icon="github" %}</a> </div>
+				<h3 class="editable">Github</h3>
+				<p class="editable">See the details of my projects <a href="https://github.com/chaerim-kim/"> here</a>. </p>
+			</li>
+
+			<li class = "narrow">
+				<div class="image"><a href="mailto:kcl0720@gmail.com">{% include icon.html icon="email" %}</a></div>
+				<h3 class="editable">Email</h3>
+				<p class="editable">If you’d like to chat, <a href="mailto:kcl0720@gmail.com"> get in touch </a> with me! </p>
+			</li>
+	</ul>
+</div>
+
+
+<div class="container">
+	<h2 class="editable" style="text-align:center;">✍🏼 Recent Posts </h2>
+		<div class="posts">
+			{% for post in paginator.posts limit:4 %}
+				{% include recent-posts.html type="grid" %}
+			{% endfor %}
+		</div>
+</div>
+
+
+
+<div class="container">
+	<blockquote>
+		<p class="quote editable"> 저는 항상 발전하는 사람으로서, 후에 누군가를 멘토링 해 줄 수 있는 역량을 가진 사람이 되고싶습니다. <br> 시작한 일에 대해서는 결과를 도출해내고, 지난 일에 대해서는 아쉬웠던 점을 드릴 다운하여 완연한 내 것으로 만든다는 마인드로 임하고 있습니다. </p>
+		<div class="attribute">
+			<p class="meta">
+				<span class="author editable"><strong> 💡 나의 목표</strong></span>
+			</p>
+		</div>
+	</blockquote>
+</div>
