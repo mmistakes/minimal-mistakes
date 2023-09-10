@@ -32,8 +32,10 @@ Ax < b
 ```
 줄리아 공식 홈페이지에서 가져온 부분인데, 줄리아 언어는 Unicode name을 사용할 수 있다고 한다. 여기에 안녕하세요가 적혀있는게 그냥 귀여워서 가져와봤다.
 
-
+``` julia
+a = [1, 1, 2]
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NzcyMTU2MSw3OTQxNjYzOTksLTEyNj
-UwMDcwMywtMjA3ODA3MjAyMl19
+eyJoaXN0b3J5IjpbLTEzMDYxMzAzNjIsNzk0MTY2Mzk5LC0xMj
+Y1MDA3MDMsLTIwNzgwNzIwMjJdfQ==
 -->
