@@ -1,5 +1,6 @@
 ---
 layout: splash
+title: "Fine-grAIned Engineer Tech Blog"
 permalink: "/"
 hidden: true
 header:
