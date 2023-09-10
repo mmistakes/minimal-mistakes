@@ -34,8 +34,12 @@ Ax < b
 
 ``` julia
 a = [1, 1, 2]
+a[1] = 0
+a
 ```
+
+기본적으로 벡터 정의는 매트랩과 비슷하다. 내가 생각하는 파이썬의 가장 큰 단점은 index가 0부터 시작한다는 점이다. 이게 행렬 연산을 하는 사람에게는 직관적이지 않아 실수가 자주 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDYxMzAzNjIsNzk0MTY2Mzk5LC0xMj
-Y1MDA3MDMsLTIwNzgwNzIwMjJdfQ==
+eyJoaXN0b3J5IjpbNTc1MzYwMzY4LDc5NDE2NjM5OSwtMTI2NT
+AwNzAzLC0yMDc4MDcyMDIyXX0=
 -->
