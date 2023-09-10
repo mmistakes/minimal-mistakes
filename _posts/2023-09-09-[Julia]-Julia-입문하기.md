@@ -11,6 +11,10 @@ categories:
 줄리아는 [줄리아 공식 홈페이지](https://julialang.org)에서 다운로드를 받을 수 있고 내용을 확인할 수 있다. 여기에서 다운로드를 해보자.
 
 줄리아는 여타 다른 언어처럼 terminal을 통해서 실행할 수 있는데, 이보다는 역시 Microsoft VS code를 활용하는게 더 편하다. VS code를 들어가면 Extension에서 **Julia**를 다운 받은 뒤 줄리아 언어를 사용할 수 있다.
+
+### 2. Julia language
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjUwMDcwMywtMjA3ODA3MjAyMl19
+eyJoaXN0b3J5IjpbNzk0MTY2Mzk5LC0xMjY1MDA3MDMsLTIwNz
+gwNzIwMjJdfQ==
 -->
