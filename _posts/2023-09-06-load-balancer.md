@@ -1431,7 +1431,7 @@ and finally write the separate shell script - `lb` in order to runn the load bal
 ```shell
 #!/bin/sh
 
-scala lb.jar $1
+scala lb.jar
 ```
 
 ## 5. Conclusion
