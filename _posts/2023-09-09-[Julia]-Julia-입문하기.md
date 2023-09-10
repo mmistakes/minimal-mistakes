@@ -20,9 +20,17 @@ Julia 공식 홈페이지에서 밝힌 벤치마크 비교에 따르면, Julia�
 ``` latex
 Ax < b
 ```
-의 형
+의 형태로 행렬로 나타내야하는데, 이게 생각보다 어렵고 귀찮다. 하지만 Julia는 이런 형식으로 최적화문제를 설계하지 않아도 된다고 들었다. 나중에 더 공부해봐야 알 수 있는 부분이다.
+
+### 3. 기초적인 문법
+```
+julia> δ = 0.00001
+1.0e-5
+
+julia> 안녕하세요 = "Hello"
+"Hello"
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NzM3NDg1Niw3OTQxNjYzOTksLTEyNj
+eyJoaXN0b3J5IjpbMTcyNDEwOTc1Miw3OTQxNjYzOTksLTEyNj
 UwMDcwMywtMjA3ODA3MjAyMl19
 -->
