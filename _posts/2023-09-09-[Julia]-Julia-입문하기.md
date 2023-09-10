@@ -13,8 +13,10 @@ categories:
 줄리아는 여타 다른 언어처럼 terminal을 통해서 실행할 수 있는데, 이보다는 역시 Microsoft VS code를 활용하는게 더 편하다. VS code를 들어가면 Extension에서 **Julia**를 다운 받은 뒤 줄리아 언어를 사용할 수 있다.
 
 ### 2. Julia language
+![enter image description here](https://raw.githubusercontent.com/arrow-economist/imageslibrary/main/benchmarks.svg)
 
+Julia 공식 홈페이지에서 밝힌 벤치마크 비교에 따르면, Julia의 속도는 보통 경제학에서 쓰는 MATLAb, R, python에 비해 압도적으로 빠르다. 심지어 이 언어의 장점은, 또 optimization에서 나오는데, Matlab의 단점
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk0MTY2Mzk5LC0xMjY1MDA3MDMsLTIwNz
-gwNzIwMjJdfQ==
+eyJoaXN0b3J5IjpbLTE0MjM4MDY3MDcsNzk0MTY2Mzk5LC0xMj
+Y1MDA3MDMsLTIwNzgwNzIwMjJdfQ==
 -->
