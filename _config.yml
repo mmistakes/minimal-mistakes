@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "ko-KR"
 title                    : "오상진의 기술 블로그"
 title_separator          : "|"
-subtitle                 : "미세한 버그와 끊임없는 디버깅 그리고 해결"
+subtitle                 : "미세한 버그와 끊임없는 디버깅"
 name                     : "SangJin Oh"
 description              : "오상진의 AI 기술 블로그입니다."
 url                      : https://sangjinoh.github.io/
