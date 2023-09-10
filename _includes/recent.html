@@ -1,0 +1,14 @@
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% if page.recent %}
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+{% for post in posts limit:4 %}
+    {% include recent-posts.html type="grid" %}
+{% endfor %}
+</div>
+{% endif %}

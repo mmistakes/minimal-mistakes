@@ -22,7 +22,11 @@ feature_row:
     title: "Get in Touch"
     excerpt: "Feel free to [reach out](mailto:dhtkdwls537@gmail.com){: .btn--large } anytime if you'd like to have a conversation!"
 
+recent: true
 ---
 ### <img src="assets/images/home/contact.png" alt="contact" style="zoom:6%;" /> Connect with me!
 
 {% include feature_row %}
+
+### <img src="C:/Users/dhtkd/Downloads/post-it.png" alt="recent-post" style="zoom:6%;" /> Recent Posts
+{% include recent.html %}
