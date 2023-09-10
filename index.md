@@ -22,7 +22,7 @@ feature_row:
     excerpt: "Feel free to [reach out](mailto:dhtkdwls537@gmail.com){: .btn--large } anytime if you'd like to have a conversation!"
 
 ---
-
+Fine-grAIned Engineer의 기술블로그 
 ### <img src="assets/images/home/contact.png" alt="contact" style="zoom:6%;" /> Connect with me!
 
 {% include feature_row %}
