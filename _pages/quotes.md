@@ -144,6 +144,9 @@ _It isn't what we say or think that defines us, but what we do._
 
 -- Jane Austen, "Sense and Sensibility"
 
+_When power is scarce, a little of it is tempting._
+-- M Atwood, "The Handmaid's tale"
+
 _The church and the whorehouse arrived in the Far West simultaneously. And each would have been horrified to think it was a different facet of the same thing. But surely they were both intended to accomplish the same thing: the singing, the devotion, the poetry of the churches took a man out of his bleakness for a time, and so did the brothels._
 
 -- J Steinbeck, "East of Eden"
