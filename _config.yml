@@ -22,7 +22,7 @@ subtitle                 : "미세한 버그와 끊임없는 디버깅 그리고
 name                     : "SangJin Oh"
 description              : "오상진의 AI 기술 블로그입니다."
 url                      : https://sangjinoh.github.io/
-baseurl                  : "/home"
+baseurl                  : #"/"
 repository               : # "sangjinoh/home"
 teaser                   : # "/assets/images/blog-cover.jpg"
 logo                     : "/assets/images/blog-favicon.png"
