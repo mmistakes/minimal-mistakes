@@ -12,7 +12,12 @@ Julia를 쓰려면, VS code나 주피터노트북을 쓰는 것이 일반적이�
 여기에서는 이미 Julia가 설치되어 있음을 가정한다. [내 블로그](https://arrow-economist.github.io/julia/Julia-Julia-%EC%9E%85%EB%AC%B8%ED%95%98%EA%B8%B0/)에서도 그 내용을 확인할 수 있지만, 역시 제일 좋은건 [공홈](https://julialang.org)아닐까?!
 
 ### 2. 터미널에서 작동시키기
-우선 내 Julia가 내 맥의 application에 있는지 확인하고 맞게 깔려
+우선 내 Julia가 내 맥의 application에 있는지 확인하고 맞게 깔렸으면 이제 터미널을 킨다. 그리고 ``` Julia ``` 라고 써보자. 아마 에러가 나면서 제대로 실행되지 않을 것이다. 따라서 터미널 내에서 Path를 지정해줘야 한다.
+
+``` 
+sudo mkdir -p /usr/local/bin sudo rm -f /usr/local/bin/julia
+sudo ln -s /Applications/Julia-1.9.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNjg1MzMxOCw3Mjk2OTk5ODZdfQ==
+eyJoaXN0b3J5IjpbOTAzMzQzMjYwLDcyOTY5OTk4Nl19
 -->
