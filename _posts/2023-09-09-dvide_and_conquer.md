@@ -134,13 +134,13 @@ print(sum_of_range(1, 12))
 합병 정렬(Merge Sort)은 분할 정복(Divide and Conquer) 알고리즘의 일종으로, 대규모 데이터 집합을 작은 부분으로 분할하고 이를 정렬(정복)한 다음 병합하여 전체 데이터를 정렬(정복)하는 정렬 알고리즘 중 하나이다.</span><br>
 <br>
 <span style ="font-weight:bold;">
-분할(Divide)</span>: 정렬할 배열을 두 개의 작은 배열로 분할한다. 배열을 반으로 나누는 방법은 임의의 중간 지점을 선택하거나 배열의 크기를 기준으로 나누는 것이다.<br>
+1) 분할(Divide)</span>: 정렬할 배열을 두 개의 작은 배열로 분할한다. 배열을 반으로 나누는 방법은 임의의 중간 지점을 선택하거나 배열의 크기를 기준으로 나누는 것이다.<br>
 <br>
 <span style ="font-weight:bold;">
-정복(Conquer)</span>: 분할된 두 개의 작은 배열에 대해 재귀적으로 병합 정렬을 호출한다. 작은 배열은 더 이상 나눌 수 없을 때까지 계속 분할 및 정렬된다. 이 과정에서 기저 조건(작은 배열의 크기가 1 이하)이 적용된다.<br>
+2) 정복(Conquer)</span>: 분할된 두 개의 작은 배열에 대해 재귀적으로 병합 정렬을 호출한다. 작은 배열은 더 이상 나눌 수 없을 때까지 계속 분할 및 정렬된다. 이 과정에서 기저 조건(작은 배열의 크기가 1 이하)이 적용된다.<br>
 <br>
 <span style ="font-weight:bold;">
-병합(Combine)</span>: 정렬된 작은 배열을 병합하여 하나의 큰 정렬된 배열로 만든다. 이때 두 개의 작은 배열을 비교하면서 순서대로 합치는데, 작은 값을 선택하여 결과 배열에 추가한다. 이 과정을 두 작은 배열 중 하나가 완전히 사용될 때까지 반복한다.<br>
+3) 병합(Combine)</span>: 정렬된 작은 배열을 병합하여 하나의 큰 정렬된 배열로 만든다. 이때 두 개의 작은 배열을 비교하면서 순서대로 합치는데, 작은 값을 선택하여 결과 배열에 추가한다. 이 과정을 두 작은 배열 중 하나가 완전히 사용될 때까지 반복한다.<br>
 <br>
 <img width="662" alt="image" src="https://github.com/gyun97/Baekjoon_Solution/assets/143414166/d000150d-368b-4194-a646-fc74d5dc430c"><br>
 예시로 위와 같이 정렬되지 않은 리스트([10,7,23,19,4,15,38,2])가 존재한다고 해보자.
@@ -229,4 +229,93 @@ print(merge_sort(arr))
 ```
 <br>
 <br>
-### **1. 퀵 정렬(Quick Sort)**
+### **2. 퀵 정렬(Quick Sort)**
+<span style = "color:blue; font-weight:bold;">
+퀵 정렬(Quick Sort)이란 매우 효율적인 정렬 알고리즘 중 하나로, 분할 정복(Divide and Conquer) 방식을 기반으로 작동한다. 퀵 정렬은 평균적으로 매우 빠른 정렬 알고리즘으로 알려져 있다.</span><br>
+<br>
+<span style = "font-weight:bold;">
+1) 피벗 선택 (Pivot Selection)</span>: 배열에서 하나의 원소(일반적으로 처음, 중간, 마지막 중 하나)를 선택하여 피벗(기준점)으로 설정한다. 피벗은 정렬 과정에서 비교 기준이 된다.<br>
+<br>
+<span style = "font-weight:bold;">
+2) 파티션 (Partitioning)</span>: 배열을 피벗을 기준으로 두 개의 하위 배열로 분할한다. 피벗보다 작은 원소는 왼쪽 배열로, 큰 원소는 오른쪽 배열로 이동한다. 피벗 자체는 제자리에 위치하게 된다. 이 과정을 퀵 정렬의 핵심 단계로, 배열을 정렬하는 역할을 한다.<br>
+<br>
+<span style = "font-weight:bold;">
+3) 재귀 호출 (Recursion)</span>: 두 개의 하위 배열에 대해 재귀적으로 퀵 정렬을 수행한다. 각 하위 배열은 독립적으로 정렬된다. 이렇게 분할된 작은 배열들이 계속해서 정렬된다.
+<br>
+<br>
+<span style = "font-weight:bold;">
+4) 병합 (Combination)</span>: 정렬된 하위 배열을 병합하여 최종적으로 정렬된 배열을 얻는다. 병합은 추가적인 작업 없이 두 배열을 연결하면 된다.<br>
+<br>
+<br>
+위 단계들을 Divide & Conquer로 구분하자면<br>
+<br>
+<span style = "font-weight:bold;">
+Divide</span>: 피벗을 정하고 피벗보다 더 작은 요소들은 피벗 왼쪽, 더 큰 요소들은 오른쪽에 배치
+<br>
+<br>
+<span style = "font-weight:bold;">
+Conquer</span>: 피벗 왼쪽, 오른쪽에 있는 리스트들을 각각 정렬
+<br>
+<br>
+<span style = "font-weight:bold;">
+Combine</span>: 하위 배열들 병합하여 최종 배열 획득
+<br>
+<br>
+<br>
+<img width="700" alt="image" src="https://github.com/gyun97/Baekjoon_Solution/assets/143414166/3499cd12-99c4-4056-b5f9-94ff86bd1d27">
+예시로 위와 같은 정렬되지 않은 리스트([13,6,1,15,22,18,3,9])가 있다고 하자.
+<br>
+<br>
+<img width="700" alt="image" src="https://github.com/gyun97/Baekjoon_Solution/assets/143414166/36949340-6a0e-4574-85f9-961adc6dbf52">
+우선 리스트 중 하나의 요소를 피벗(기준점)으로 선택한다. 리스트의 맨 마지막 요소(9)를 피벗으로 선택한다.
+<br>
+<br>
+<img width="700" alt="image" src="https://github.com/gyun97/Baekjoon_Solution/assets/143414166/b5941a19-81ad-48b4-84f4-00f1f29c06b5">
+그 다음은 파티션 과정으로 피벗을 기준으로 피벗보다 더 작은 요소들은 피벗의 왼쪽 배열로, 피벗보다 더 큰 요소들은 오른쪽 배열로 이동시킨다. 이제 피벗을 정하고 피벗과 크기 비교를 통해 피벗 양쪽에 요소들을 배치했던 여태까지의 과정을 재귀를 통해 base case(양쪽 리스트의 요소의 수가 각각 1개)가 될 때까지 반복적으로 수행한다.
+<br>
+<br>
+<img width="700" alt="image" src="https://github.com/gyun97/Baekjoon_Solution/assets/143414166/0f6b4f71-e905-4415-905d-7ac22b131114">
+<br>
+<br>
+<img width="700" alt="image" src="https://github.com/gyun97/Baekjoon_Solution/assets/143414166/f6318bba-c1db-4af6-a114-b0e19355d6b4">
+<br>
+<br>
+<img width="700" alt="image" src="https://github.com/gyun97/Baekjoon_Solution/assets/143414166/9e8aa477-9f20-4302-9eba-7ccd10634591">
+피벗 양쪽으로 리스트의 값이 각각 1개밖에 없기 때문에 base case이고, 리스트의 요소가 1개이기 때문에 양쪽에 있는 값들도 자연스럽게 정복(정렬)되었다고 할 수 있다. 이후 아직 정렬되지 않은 절반의 리스트 부분([13,15,22,18])도 마찬가지의 방식으로 리스트를 정복(정렬)한다.
+<br>
+<br>
+<br>
+<img width="700" alt="image" src="https://github.com/gyun97/Baekjoon_Solution/assets/143414166/41df3300-c770-43a1-8649-55dab41f8c40">
+<br>
+<br>
+<img width="700" alt="image" src="https://github.com/gyun97/Baekjoon_Solution/assets/143414166/b00cf75f-8f2f-42b7-a4e7-1ec475dbfa45">
+<br>
+<br>
+<img width="700" alt="image" src="https://github.com/gyun97/Baekjoon_Solution/assets/143414166/14e67be8-e859-468d-8925-172af79bad55">
+<br>
+<br>
+<img width="700" alt="image" src="https://github.com/gyun97/Baekjoon_Solution/assets/143414166/f7e13cdb-d64c-43db-9856-336522748d98">
+이러한 방식의 반복으로 리스트가 전부 정렬되면 퀵 정렬도 종료된다.
+<br>
+<br>
+<br>
+퀵 정렬을 파이썬 코드로 구현하면 다음과 같다.
+```python
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+
+    pivot = arr[-1]  # 맨 마지막 원소를 피벗으로 선택
+    left = [x for x in arr[:-1] if x <= pivot]  # 피벗보다 작거나 같은 원소들을 모아 왼쪽 배열 생성
+    right = [x for x in arr[:-1] if x > pivot]  # 피벗보다 큰 원소들을 모아 오른쪽 배열 생성
+
+    # 왼쪽과 오른쪽 배열을 재귀적으로 정렬한 후 피벗과 함께 병합
+    return quick_sort(left) + [pivot] + quick_sort(right)
+
+# 테스트 코드
+arr = [13, 6, 1, 15, 22, 18, 3, 9]
+print(quick_sort(arr))
+출력 결과: [1, 3, 6, 9, 13, 15, 18, 22]
+``` 
+<br>
+이외에도 유명한 Divide & Conqer을 이용한 알고리즘 예시로는 <a href="https://gyun97.github.io/algorithm/search/">이진 탐색</a>, 푸리에 변환 등이 있다.
