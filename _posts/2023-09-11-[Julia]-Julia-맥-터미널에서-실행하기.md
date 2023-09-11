@@ -21,11 +21,12 @@ sudo ln -s /Applications/Julia-1.9.app/Contents/Resources/julia/bin/julia /usr/l
 ```
 여기에서 만약 Julia의 버젼이 다르다면 저기있는 버젼만 다르게 입력해주면 된다. 이걸 복사해서 그대로 붙여넣기 하고 실행을 하면 패스워드를 입력하라는 창이 뜨고, 패스워드를 입력하면 끝이 난다.
 
-### e
+### 3. Julia 실행하기
+Julia를 실행하기 위해 필요한 명령어는 ```Julia``` 이게 끝이다. 입력하면 밑의 화면처럼 예쁜 Julia가 등장한다!
 
 ![enter image description here](https://raw.githubusercontent.com/arrow-economist/imageslibrary/main/SCR-20230911-btde.png)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MzAwNTcyOSw3Mjk2OTk5ODZdfQ==
+eyJoaXN0b3J5IjpbODUwMzE0NTAyLDcyOTY5OTk4Nl19
 -->
