@@ -278,9 +278,11 @@ final case class HealthCheckInterval(value: Long) extends AnyVal
 
 `HealthCheckInterval` will indicate the delay between checking server healths in a Round Robin fashion.
 
-What's next? How about making load balancer configurable? This way it will be more flexible and easy to tweak.
+Now it's time to make load balancer configurable, this way it will be more flexible and easy to tweak.
 
 By default, the configuration file locations is: `src/main/resources/application.conf` and it follows `HOCON` format.
+
+(We could have also taken the command line argument for parsing config file location, but let's keep it simple and default for now)
 
 You may have different ideas as to what to configure, but I believe there are four must have things:
 - `port` - load balancer port
@@ -314,8 +316,6 @@ import pureconfig._
 import pureconfig.generic.derivation.default._
 
 import scala.util.Try
-
-import Config._
 
 final case class Config(
     port: Int,
@@ -898,6 +898,7 @@ This service will use definitions from `domain` and `services` to check the avai
 - apply Round Robin to `HealthChecks`
 - parse uri string to `Uri`
 - ping the `Uri`
+- update the `Backends` based on `ServerHealthStatus`
 - sleep for the predetermined amount of time and do the same again (functional `while (true)` loop if I can say so)
 
 Let's express this idea as code:
@@ -1427,7 +1428,7 @@ sbt:loadbalancer> assembly
 move `lb.jar` from `target/scala-3.3.0/` to the root directory: 
 - `mv target/scala-3.3.0/lb.jar lb.jar`
 
-and finally write the separate shell script - `lb` in order to runn the load balancer:
+and finally write the separate shell script - `lb` in order to run the load balancer:
 ```shell
 #!/bin/sh
 
@@ -1457,8 +1458,6 @@ We built an HTTP load balancer that distributes incoming HTTP requests to a set 
 - `Configurability`: Application configuration is loaded from a configuration file using `PureConfig`, allowing flexibility in configuring backend URLs, host, port, and other settings.
 - `Logging`: We use `Log4Cats` for logging messages, which can be helpful for monitoring and debugging.
 - `Testability`: The code is designed to be testable. It uses dependency injection to pass components (e.g., HTTP clients, round-robin strategies) as arguments to functions and objects, making it easy to substitute mock implementations for testing.
-
-In summary, we have built a scalable and configurable HTTP load balancer with health checking capabilities using Scala and various functional programming libraries. The code is designed to be modular, testable, and extensible, making it suitable for real-world applications where load balancing and health monitoring of backend servers are required.
 
 In this video you can see the live testing of load balancer:
 {% include video id="SkQ6s_nwCgY" provider="youtube" %}
