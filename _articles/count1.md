@@ -7,7 +7,7 @@ topics:
   - subtraction
 related: addition, subtraction
 nurseries: Group 1
-Author: Milly McGowan
+author: Milly McGowan
 header:
   teaser: /assets/img/count1.png
 ---

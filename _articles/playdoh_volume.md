@@ -8,7 +8,7 @@ topics:
   - same
 related: ratio
 nurseries: Group 1, Group 5
-Author: Milly McGowan
+author: Milly McGowan
 header:
   teaser: /assets/img/playdoughvol1.png
 ---

@@ -6,7 +6,7 @@ topics:
   - playdough
 related:
 nurseries: Group 1
-Author: Milly McGowan
+author: Milly McGowan
 header:
   teaser: /assets/img/shape1.png
 ---

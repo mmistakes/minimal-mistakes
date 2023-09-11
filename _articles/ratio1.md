@@ -6,7 +6,7 @@ topics:
   - baking
 related: experiments
 nurseries: Group 1
-Author: Milly McGowan
+author: Milly McGowan
 header:
   teaser: /assets/img/cake2.png
 ---

@@ -5,7 +5,7 @@ topics:
   - sizes
 related: area
 nurseries: Group 1
-Author: Milly McGowan
+author: Milly McGowan
 header:
   teaser: /assets/img/cog1.png
 ---

@@ -7,7 +7,7 @@ topics:
   - water
 related: sand, equivalence
 nurseries: Group 1
-Author: Milly McGowan
+author: Milly McGowan
 header:
   teaser: /assets/img/funnel1.png
 
