@@ -19,7 +19,7 @@ sudo mkdir -p /usr/local/bin
 sudo rm -f /usr/local/bin/julia
 sudo ln -s /Applications/Julia-1.9.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia
 ```
-여기에서 만약 Julia의 버젼이 다르다면 저기있는 버젼만 다르게 입력해주면 된다. 이걸 복사해서 그대로 붙여넣기 하고 실행을 하면 패스워드를 입력하라는 창
+여기에서 만약 Julia의 버젼이 다르다면 저기있는 버젼만 다르게 입력해주면 된다. 이걸 복사해서 그대로 붙여넣기 하고 실행을 하면 패스워드를 입력하라는 창이 뜨고, 패스워드를 입력하면 끝이 난다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTU1OTIxMjUsNzI5Njk5OTg2XX0=
+eyJoaXN0b3J5IjpbMTY5MTMzNjYwMCw3Mjk2OTk5ODZdfQ==
 -->
