@@ -123,6 +123,10 @@ def sum_of_range(first, last):
 print(sum_of_range(1, 12))
 출력 : 78
 ``` 
+<br>
+## **Divide and Conquer 종류**
+### **1. 합병 정렬(Merge Sort)**
+
 
 
 
