@@ -28,5 +28,5 @@ recent: true
 
 {% include feature_row %}
 
-### <img src="C:/Users/dhtkd/Downloads/post-it.png" alt="recent-post" style="zoom:6%;" /> Recent Posts
+### <img src="assets/images/home/post-it.png" alt="recent-post" style="zoom:6%;" /> Recent Posts
 {% include recent.html %}

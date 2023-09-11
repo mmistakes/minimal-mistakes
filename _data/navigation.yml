@@ -15,20 +15,19 @@ main:
   - title: "Search"
     url: /search/
 
+docs:
+  - title: "Project"
+    children:
+      - title: "P&ID"
+        url: /projects/PnID/
+      - title: "ITB"
+        url: /projects/ITB/
+
 counts:
   - title: "Porject"
     use: true
-  - title: "Study"
-    use: true
-  - tilte: "Category"
-    use: true
+  - title: "tag"
+    use: false
 
-# docs:
-#   - title: "대목차"
-#     children:
-#       - title: "Category"
-#         url: /categories/
-#       - title: "Tag"
-#         url: /tags/
 
   
