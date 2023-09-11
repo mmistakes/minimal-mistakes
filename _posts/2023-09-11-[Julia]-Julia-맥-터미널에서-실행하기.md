@@ -14,10 +14,12 @@ Julia를 쓰려면, VS code나 주피터노트북을 쓰는 것이 일반적이�
 ### 2. 터미널에서 작동시키기
 우선 내 Julia가 내 맥의 application에 있는지 확인하고 맞게 깔렸으면 이제 터미널을 킨다. 그리고 ``` Julia ``` 라고 써보자. 아마 에러가 나면서 제대로 실행되지 않을 것이다. 따라서 터미널 내에서 Path를 지정해줘야 한다.
 
-``` 
-sudo mkdir -p /usr/local/bin sudo rm -f /usr/local/bin/julia
+``` bash
+sudo mkdir -p /usr/local/bin
+sudo rm -f /usr/local/bin/julia
 sudo ln -s /Applications/Julia-1.9.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia
 ```
+여기에서 만약 Julia의 버젼이 다르다면 저기있는 버젼만 다르게 입력해주면 된다. 이걸 복사해서 그대로 붙여넣기 하고 실행을 하면 패스워드를 입력하라는 창
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAzMzQzMjYwLDcyOTY5OTk4Nl19
+eyJoaXN0b3J5IjpbLTE1MTU1OTIxMjUsNzI5Njk5OTg2XX0=
 -->
