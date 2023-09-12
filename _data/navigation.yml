@@ -15,13 +15,23 @@ main:
   - title: "Search"
     url: /search/
 
-docs:
-  - title: "Project"
+docs1:
+  - title: "Project1"
+    url: /projects/pnid/
     children:
-      - title: "P&ID"
-        url: /projects/PnID/
+      - title: "P&ID1"
+        url: /projects/pnid/01
+      - title: "P&ID2"
+        url: /projects/pnid/02
+
+docs2:
+  - title: "Project2"
+    url: /projects/itb/
+    children:
       - title: "ITB"
-        url: /projects/ITB/
+        url: /projects/itb/01
+      - title: "ITB2"
+        url: /projects/itb/02
 
 counts:
   - title: "Porject"
