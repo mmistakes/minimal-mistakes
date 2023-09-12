@@ -16,6 +16,7 @@ last_modified_at: 2023-09-12T11:59:26-04:00
 toc: true
 ---
 
+___
 
 # Seungho BAE 
 
@@ -37,7 +38,7 @@ Fax.: +82-43-870-5669
 
 Email: baesh1219@korea.kr / givnhevn@gmail.com 
 
-
+___
 
 ## EDUCATION: 
 
@@ -172,5 +173,3 @@ International Workshop and Symposium:
 [6] Poster Session: “Decentralized Detection with Empirically Collected Statistics in Wireless Sensor Networks,” The Korea-Japan Joint Workshop 2006 on Advanced Digital Circuit and Systems, January 2006, Japan
 
 ---
-
- -->
