@@ -3,9 +3,9 @@ main:
   - title: "Project"
     sublinks:
       - title: 설계 도면 인식 과제
-        url: /projects/PnID/
+        url: /projects/pnid/
       - title: 법률 문서 분석 과제
-        url: /projects/ITB/
+        url: /projects/itb/
   - title: "Study"
     url: /studies/
   - title: "Tag"
