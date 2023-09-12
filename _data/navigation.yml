@@ -15,6 +15,15 @@ main:
   - title: "Search"
     url: /search/
 
+docs:
+  - title: "Project"
+    url: /project-archive/
+    children:
+      - title: "P&ID"
+        url: /projects/pnid/
+      - title: "ITB"
+        url: /projects/itb/
+
 docs1:
   - title: "Project1"
     url: /projects/pnid/
