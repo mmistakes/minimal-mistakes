@@ -34,6 +34,9 @@ intro:
 Helmi is accessible through the LUMI environment daily between 13:00 EET and 08:00 EET.
 {: .notice--info}
 
+Helmi will be unavailable on the 13.09. due to maintenance. The service is expected to be restored in the afternoon.  
+{: .notice--danger}
+
 <center>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
