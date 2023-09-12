@@ -17,9 +17,7 @@ toc: true
 ---
 
 
-<center>
-
-Seungho BAE 
+# Seungho BAE 
 
 Deputy Director
 
@@ -36,9 +34,10 @@ Phone: +82-10-2515-0774
 Office: +82-43-870-5428
 
 Fax.: +82-43-870-5669
+
 Email: baesh1219@korea.kr / givnhevn@gmail.com 
 
- </center>
+
 
 ## EDUCATION: 
 
