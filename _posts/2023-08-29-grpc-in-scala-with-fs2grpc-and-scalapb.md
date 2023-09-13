@@ -1,10 +1,10 @@
 ---
-title: "Grpc in scala with Fs2Grpc and Scalapb."
+title: "Grpc in Scala with Fs2Grpc and Scalapb."
 date: 2023-08-29
 header:
   image: "/images/blog cover.jpg"
 tags: []
-excerpt: "Understand how to implement grpc in scala."
+excerpt: "Understand how to implement gRPC in Scala."
 toc: true
 toc_label: "In this article"
 ---
@@ -13,11 +13,12 @@ toc_label: "In this article"
 
 RPC stands for Remote Procedure Call, it's a client-server communication protocol where one program can request a service on a different address that may be on the same or different system connected by a network. It enables users to work with remote procedures as if they were local.
 
-In this article we will cover `gRPC` which is a modern Open Source RPC framework designed by Google that uses `protocol buffers` for data serialization and `HTTP/2` as a transport layer. `gRPC` is language independent therefore it's possible for a client written in one language to communication with a server written in another. 
+In this article we will cover `gRPC` which is a modern Open Source RPC framework designed by Google that uses `Protocol Buffers` for data serialization and `HTTP/2` as a transport layer. `gRPC` is language independent therefore it's possible for a client written in one language to communication with a server written in another. 
 
-At the time of writitng this article, `gRPC` officially supports 11 programming languages including Python, Java, Kotlin, and C++ to mention a few. Scala is not officially supported at the moment however the `ScalaPB` library provides a good wrapper around the official `gRPC Java` implementation and it provides an easy API that enables translation of Protocol Buffers to Scala case classes with support for Scala3, Scala.js, and Java Interoperability.
+At the time of writing this article, `gRPC` officially supports 11 programming languages which include Python, Java, Kotlin, and C++ to mention but a few. Scala is not officially supported at the moment however the `ScalaPB` library provides a good wrapper around the official `gRPC Java` implementation, it provides an easy API that enables translation of `Protocol Buffers` to Scala case classes with support for Scala3, Scala.js, and Java Interoperability.
 
-One of the main use cases for `gRPC` is communication between internal microservices, in this tutorial, we'll simulate communication with an order service using `gRPC` to process streams of orders from an e-commerce platform.
+One of the main use cases for `gRPC` is communication between internal microservices. In the following sections, we'll create a `gRPC` server and client that will process streams of orders sent from an online store. 
+We'll also learn how to write a `.proto` file which we'll use to generate necessary case classes and `traits` using the `Fs2Grpc` library and finally dig into `Scalapb` to generate custom types for our application.
 
 ## 2. Setting Up.
 
@@ -32,17 +33,14 @@ Also add the following code to your `build.sbt` file.
 ```scala
 val scala3Version = "3.3.0"
 val http4sVersion = "0.23.23"
-val circeVersion = "0.14.5"
-val squantsVersion = "1.8.3"
+val weaverVersion = "0.8.3"
 
 lazy val protobuf =
   project
     .in(file("protobuf"))
     .settings(
       name := "protobuf",
-      scalaVersion := scala3Version,
-      libraryDependencies += "com.thesamet.scalapb" %% "scalapb-runtime" % scalapb.compiler.Version.scalapbVersion % "protobuf",
-      libraryDependencies += "org.typelevel" %% "squants" % squantsVersion
+      scalaVersion := scala3Version
     )
     .enablePlugins(Fs2Grpc)
 
@@ -57,42 +55,34 @@ lazy val root =
         "org.http4s" %% "http4s-ember-server" % http4sVersion,
         "org.http4s" %% "http4s-dsl" % http4sVersion,
         "org.http4s" %% "http4s-circe" % http4sVersion,
-        "com.disneystreaming" %% "weaver-cats" % "0.8.3" % Test,
+        "com.disneystreaming" %% "weaver-cats" % weaverVersion % Test
       ),
       testFrameworks += new TestFramework("weaver.framework.CatsEffect")
     )
     .dependsOn(protobuf)
 ```
 
-Here we have a `root` project which depends on `protobuf`, with this design, when `root` is compiled, the `Fs2-grpc` plugin which depends on `Scalapb` will automatically generates case classes from our `.proto` file.
+Here we have a `root` project which depends on `protobuf`, with this design, when `root` is compiled, the `Fs2Grpc` plugin will automatically generate case classes from our `.proto` file.
 
-We'll also use `circe` for JSON encoding and decoding, and `http4s` to develope our REST server from which we'll forward orders to the gRPC order service.
+We'll also use `circe` for `JSON` encoding and decoding, and `http4s` to develop our `REST` server from which we'll forward orders to the `gRPC` order service.
 
 ## 3. The .proto file
 
 Create a folder called `protobuf` in the root of your project and add an `orders.proto` file in the following path, `protobuf/src/main/protobuf/orders.proto`.
 
-Now add the following to the file.
+Now add the following code to the file.
 
 ```proto
 syntax = "proto3";
 
-package com.xonal.protos;
+package com.rockthejvm.protos;
 ```
 
 A `.proto` file contains Google's `protocol buffer` language which is used to structure protocol buffer data. `Scalapb` supports both proto2 and proto3 versions. 
 
-In the first line of the file, we define `syntax` as `proto3` which is the protobuf language version, next we specify `package` as `com.xonal.protos`, this will be the namespace through which we access the case classes generated by `Fs2-grpc`.
+In the first line of the file, we define `syntax` as `proto3` which is the protobuf language version, next we specify `package` as `com.rockthejvm.protos`, this will be the namespace through which we access the case classes generated by `Fs2Grpc`.
 
-```proto
-...
-// The order service definition.
-service Order {
-  rpc SendOrderStream (stream OrderRequest) returns (stream OrderReply) {}
-}
-```
-
-Here we define our `Order` service which contains a single function, `SendOrderStream()` that takes a stream of `OrderRequest` and returns a stream of `OrderReply`. The `Order` service will be translated to a Scala `trait` through which we can access our function.
+Let's define some data structures that will be used in our application.
 
 ```proto
 ...
@@ -103,7 +93,7 @@ message Item{
 }
 ```
 
-A `message` is a data structure containing a set of typed fields. We define `Item` which contains three fields `name`, `qty`, and `amount` of type `string`, `int32`, and `double` respectfully. The "= 1", "= 2" and "= 3" are unique tags used by each field in binary encoding. `message` gets translated to a case class during compilation.
+A `message` is a data structure containing a set of typed fields. `Item` contains data for each product in an order, it has three fields `name`, `qty`, and `amount` of type `string`, `int32`, and `double` respectfully. The "= 1", "= 2" and "= 3" are unique tags used by each field in binary encoding. `message` gets translated to a case class during compilation.
 
 ```proto
 ...
@@ -119,24 +109,29 @@ message OrderReply {
 }
 ```
 
-Above we define two more `message` types, `OrderRequest`, and `OrderReply`. `OrderRequest` consists of `orderid` of type `int32` and `items` of type `Item`, this shows that we can nest a `message` within a `message`. The `repeated` annotation means that `items` can be repeated any number of times, in scala this becomes a `Seq` of `Item`.
+Above we define two more `message` types, `OrderRequest`, and `OrderReply`. `OrderRequest` consists of `orderid` of type `int32` and `items` of type `Item`, this shows that we can nest a `message` within a `message`. The `repeated` annotation means that `items` can be repeated any number of times, in Scala this becomes a `Seq` of `Item`.
 `OrderReply` also consists of an `orderid` of type `int32`, `items`, a `repeated` `Item`, and `total` of type `double`.
+
+```proto
+...
+service Order {
+  rpc SendOrderStream (stream OrderRequest) returns (stream OrderReply) {}
+}
+```
+
+Lastly, we define our `Order` service which contains a single function, `SendOrderStream()` that takes a stream of `OrderRequest` and returns a stream of `OrderReply`. The `Order` service will be translated to a Scala `trait` through which we can access our function.
 
 Here's the full code:
 
 ```proto
 syntax = "proto3";
 
-package com.xonal.protos;
-
-service Order {
-  rpc SendOrderStream (stream OrderRequest) returns (stream OrderReply) {}
-}
+package com.rockthejvm.protos;
 
 message Item{
   string name =1;
   int32 qty = 2;
-  double amount = 3;
+  double amount = 3 [(scalapb.field).type = "squants.market.Money"];
 }
 
 message OrderRequest {
@@ -147,33 +142,38 @@ message OrderRequest {
 message OrderReply {
   int32 orderid = 1;
   repeated Item items = 2;
-  double total = 3;
+  double total = 3 [(scalapb.field).type = "squants.market.Money"];
+}
+
+service Order {
+  rpc SendOrderStream (stream OrderRequest) returns (stream OrderReply) {}
 }
 ```
+Now we can head over to our terminal, navigate to our project directory and run `sbt compile`, `Fs2Grpc` should generate the necessary Scala files according to what we defined in `orders.proto`.
 
-When we compile our project and check `protobuf/target/scala-3.3.0/src_managed/main`, we'll find two sets of generated files, one under a `Fs2-grpc` folder that contains our `trait` while the rest are cases classes will be under a `Scalapb` folder. If we look at the top of each of these files, we'll find that they are all under the `com.xonal.protos.orders` package namespace that we defined in our `orders.proto` file.
+After compilation, we'll find two sets of generated files in `protobuf/target/scala-3.3.0/src_managed/main`, one under a `Fs2Grpc` folder that contains our `trait` while the rest are cases classes will be under a `Scalapb` folder. If we look at the top of each of these files, we'll find that they are all under the `com.rockthejvm.protos.orders` package namespace that we defined in our `orders.proto` file.
 
 ## 4. The gRPC server.
-Let's take a look at the `OrderFs2Grpc.scala` file generated by `Fs2-grpc`:
+Let's take a look at the `OrderFs2Grpc.scala` file generated by `Fs2Grpc`:
 
 ```scala
 trait OrderFs2Grpc[F[_], A] {
-  def sendOrderStream(request: _root_.fs2.Stream[F, com.xonal.protos.orders.OrderRequest], ctx: A): _root_.fs2.Stream[F, com.xonal.protos.orders.OrderReply]
+  def sendOrderStream(request: _root_.fs2.Stream[F, com.rockthejvm.protos.orders.OrderRequest], ctx: A): _root_.fs2.Stream[F, com.rockthejvm.protos.orders.OrderReply]
 }
 ```
-We'll notice that an `OrderFs2Grpc` `trait` was created with a single function `sendOrderStream()` similar to what we defined in orders.proto, however, this function has no implementation, this is what we'll need to provide in the next.
+We'll notice that an `OrderFs2Grpc` `trait` was created with a single function `sendOrderStream()` similar to what we defined in `orders.proto`, however, this function has no implementation, this is what we'll need to provide in the next step.
 
-Create `OrderService.scala` in the following path `src/main/scala/com/xonal/service/OrderService.scala` and add the following code:
+Create `OrderService.scala` in the following path `src/main/scala/OrderService.scala` and add the following code:
 
 ```scala
-package com.xonal.service
+package com.rockthejvm.service
 
-import com.xonal.protos.orders.*
+import com.rockthejvm.protos.orders.*
 import cats.effect.*
-import _root_.io.grpc.*
+import io.grpc.*
 import fs2.Stream
 
-private class OrderService extends OrderFs2Grpc[IO, Metadata] {
+class OrderService extends OrderFs2Grpc[IO, Metadata] {
   override def sendOrderStream(
       request: Stream[IO, OrderRequest],
       ctx: Metadata
@@ -188,12 +188,12 @@ private class OrderService extends OrderFs2Grpc[IO, Metadata] {
   }
 }
 ```
-Here we create a new class `OrderService` that extends our `OrderFs2Grpc` trait, it requires an effect type and context which we provide as `IO` from `cats.effect` and `Metadata` from `io.grpc`. `Metadata` provides access to read and write metadata values to be exchanged during a call. 
+Here we create a new class `OrderService` that extends our `OrderFs2Grpc` trait, it requires type parameters, an effect type, and a context which we provide as `IO` from `cats.effect` and `Metadata` from `io.grpc`. `Metadata` provides access to read and write metadata values to be exchanged during a call. 
 
 In our implementation of `sendOrderStream` above, we map on `request` which is an `fs2` stream of type `Stream[IO, OrderRequest]` and for each `OrderRequest`, we produce an `OrderReply` with the same `orderid`, `items` and the `total` amount spent calculated using the `reduce(_+_)` function.
 
 ```scala
-import _root_.io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder
+import io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder
 import fs2.grpc.syntax.all.*
 
 ...
@@ -212,22 +212,22 @@ object Server {
   val grpcServer = orderService.use(srvr => runServer(srvr))
 }
 ```
-Above we create our gRPC service by calling the `bindServiceResource()` method on `OrderFs2Grpc` and passing it a service implementation, in our case a new instance of `OrderService`, this returns a `Resource[IO, ServerServiceDefinition]`.
+Above we create our `gRPC` service by calling the `bindServiceResource()` method on `OrderFs2Grpc` and passing it a service implementation, in our case a new instance of `OrderService`, this returns a `Resource[IO, ServerServiceDefinition]`.
 
 The `runServer` function uses `NettyServerBuilder` to create our server which will run on port `9999`. In the last line, we call the `use()` method on our `orderService` `Resource` and pass the `ServerServiceDefinition` to `runServer()`.
 
 Here's the full code:
 ```scala
-package com.xonal.service
+package com.rockthejvm.service
 
-import com.xonal.protos.orders.*
+import com.rockthejvm.protos.orders.*
 import cats.effect.*
-import _root_.io.grpc.*
+import io.grpc.*
 import fs2.Stream
-import _root_.io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder
+import io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder
 import fs2.grpc.syntax.all.*
 
-private class OrderService extends OrderFs2Grpc[IO, Metadata] {
+class OrderService extends OrderFs2Grpc[IO, Metadata] {
   override def sendOrderStream(
       request: Stream[IO, OrderRequest],
       ctx: Metadata
@@ -257,18 +257,18 @@ object Server {
 }
 ```
 ## 4. The gRPC client.
-Create `OrderClient.scala` in the following path, `src/main/scala/com/xonal/client/OrderClient.scala` and add the following code.
+Create `OrderClient.scala` in the following path, `src/main/scala/com/rockthejvm/client/OrderClient.scala` and add the following code.
 
 ```scala
-package com.xonal.client
+package com.rockthejvm.client
 
 import cats.effect.*
-import _root_.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder
-import _root_.io.grpc.*
+import io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder
+import io.grpc.*
 import fs2.grpc.syntax.all.*
 
 object Client {
-  val managedChannelResource: Resource[IO, ManagedChannel] =
+  private val managedChannelResource: Resource[IO, ManagedChannel] =
     NettyChannelBuilder
       .forAddress("127.0.0.1", 9999)
       .usePlaintext()
@@ -276,125 +276,135 @@ object Client {
 }
 ```
 Here we create a `Client` object with its first element, `managedChannelResource`. We use `NettyChannelBuilder` to construct a channel that uses Netty transport. A channel provides a connection to a network socket or component that is capable of I/O operations such as read, write, connect, and bind. 
-The `forAddress()` method adds host and port (same as our server) values while the `usePlaintext()` method sets the negotiation type for the Http/2 connection to `PLAINTEXT` since `ManagedChannel`'s use `TLS` by default and lastly the `resource()` method builds the `ManagedChannel` into a `Resource`.
+The `forAddress()` method adds host and port values (same as our server) while the `usePlaintext()` method sets the negotiation type for the Http/2 connection to `PLAINTEXT` instead of `TLS` which is the default for a `ManagedChannel`, and lastly the `resource()` method builds the `ManagedChannel` into a `Resource`.
+
+The `gRPC` client will enable us to directly call methods on the server application, therefore we'll be able to process multiple orders from an `fs2` stream by invoking the `sendOrderStream()` function from our server. 
+
+Here's how we can implement this:
 
 ```scala
 ...
-import com.xonal.protos.orders.*
+import com.rockthejvm.protos.orders.*
 import fs2.Stream
 
 object Client {
   ...
-  def formatItemsToStr(items: Seq[Item]): Seq[String] = {
+  private def formatItemsToStr(items: Seq[Item]): Seq[String] = {
     items.map(x => s"[${x.qty} of ${x.name}]")
   }
 
-  def processorFn(orders: Stream[IO, OrderRequest]) = {
-    def processor(orderStub: OrderFs2Grpc[IO, Metadata]): IO[List[String]] = {
-      for {
-        response <- orderStub.sendOrderStream(orders, new Metadata())
-        str <- Stream.eval(
-          IO(
-            s"Processed orderid: ${response.orderid} for items: ${formatItemsToStr(response.items)
-                .mkString(" and ")}, totaling to USD ${response.total}"
-          )
-      } yield str
-    }.compile.toList
-  }
+  private def processor(
+      orderStub: OrderFs2Grpc[IO, Metadata],
+      orders: Stream[IO, OrderRequest]
+  ): IO[List[String]] = {
+    for {
+      response <- orderStub.sendOrderStream(
+        orders,
+        new Metadata()
+      )
+      str <- Stream.eval(
+        IO(
+          s"Processed orderid: ${response.orderid} for items: ${formatItemsToStr(response.items)
+              .mkString(" and ")}, totaling to ${response.total.toString}"
+        )
+      )
+    } yield str
+  }.compile.toList
 }
 ```
-Within `processorFn()` is a nested function, `processor()` that takes an `orderStub` of type `OrderFs2Grpc[IO, Metadata]` and calls `sendOrderStream(orders, new Metadata())`, this returns a `Stream[IO, OrderReply]`, which we `flatMap` to format each `OrderReply` into a `String` that informs the user of their `orderid`, the `items` they bought and the `total` they spent for each order, this `Stream` is compiled to return an `IO[List[String]]`. We use the `formatItemsToStr()` function to format the `Seq[Item]` as part of the returned `String`.
+We define `processor()`, a function that takes an `orderStub` of type `OrderFs2Grpc[IO, Metadata]` and `orders` of type `Stream[IO, OrderRequest]` as arguments. When we call `sendOrderStream(orders, new Metadata())` on `orderStub`, we get a `Stream[IO, OrderReply]`, which we `flatMap` to format each `OrderReply` into a `String` that informs the user of their `orderid`, the `items` they bought and the `total` amount they spent for each order, this `Stream` is compiled to return an `IO[List[String]]`. 
+
+We use the `formatItemsToStr()` function to format the `Seq[Item]` as part of the returned `String`.
 
 ```scala
 ...
-def processorFn(orders: Stream[IO, OrderRequest]): IO[List[String]] = {
-  ...
-  def runClient: IO[List[String]] =
-      managedChannelResource
-        .flatMap(ch => OrderFs2Grpc.stubResource[IO](ch))
-        .use(processor)
-
-  runClient
+object Client {
+...
+  def runClient(orders: Stream[IO, OrderRequest]): IO[List[String]] =
+    managedChannelResource
+      .flatMap(ch => OrderFs2Grpc.stubResource[IO](ch))
+      .use(orderResource => processor(orderResource, orders))
 }
 ```
-Still, within the `processorFn()` function, we define a `runClient()` function where we `flatMap` our `managedChannelResource` and pass the `ManagedChannel` to `OrderFs2Grpc.stubResource[IO]()` to create a `Resource[IO, OrderFs2Grpc[IO, Metadata]]`, the `use()` function gives us access to `OrderFs2Grpc[IO, Metadata]]` which we pass to `processor()` resulting in an `IO[List[String]]`. Finally, we call `runClient()` as the last line in `processorFn()`.
+Lastly, we define a `runClient()` function which takes `orders`, a `Stream[IO, OrderRequest]` as an argument.  Here we `flatMap` on `managedChannelResource` and pass the `ManagedChannel` to the `OrderFs2Grpc.stubResource[IO]()` function to create a `Resource[IO, OrderFs2Grpc[IO, Metadata]]`. We then call the `use()` function which gives us access to `OrderFs2Grpc[IO, Metadata]]` which we pass to `processor()` along with `orders` resulting in an `IO[List[String]]`..
 
 Here's the full code:
 
 ```scala
-package com.xonal.client
+package com.rockthejvm.client
 
 import cats.effect.*
-import _root_.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder
-import _root_.io.grpc.*
+import io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder
+import io.grpc.*
 import fs2.grpc.syntax.all.*
-import com.xonal.protos.orders.*
+import com.rockthejvm.protos.orders.*
 import fs2.Stream
 
 object Client {
-  val managedChannelResource: Resource[IO, ManagedChannel] =
+  private val managedChannelResource: Resource[IO, ManagedChannel] =
     NettyChannelBuilder
       .forAddress("127.0.0.1", 9999)
       .usePlaintext()
       .resource[IO]
 
-  def formatItemsToStr(items: Seq[Item]): Seq[String] = {
+  private def formatItemsToStr(items: Seq[Item]): Seq[String] = {
     items.map(x => s"[${x.qty} of ${x.name}]")
   }
 
-  def processorFn(orders: Stream[IO, OrderRequest]): IO[List[String]] = {
-    def processor(orderStub: OrderFs2Grpc[IO, Metadata]): IO[List[String]] = {
-      for {
-        response <- orderStub.sendOrderStream(orders, new Metadata())
-        str <- Stream.eval(
-          IO(
-            s"Processed orderid: ${response.orderid} for items: ${formatItemsToStr(response.items)
-                .mkString(" and ")}, totaling to USD ${response.total}"
-          )
+  private def processor(
+      orderStub: OrderFs2Grpc[IO, Metadata],
+      orders: Stream[IO, OrderRequest]
+  ): IO[List[String]] = {
+    for {
+      response <- orderStub.sendOrderStream(
+        orders,
+        new Metadata()
+      )
+      str <- Stream.eval(
+        IO(
+          s"Processed orderid: ${response.orderid} for items: ${formatItemsToStr(response.items)
+              .mkString(" and ")}, totaling to ${response.total.toString}"
         )
-      } yield str
-    }.compile.toList
+      )
+    } yield str
+  }.compile.toList
 
-    def runClient: IO[List[String]] =
-      managedChannelResource
-        .flatMap(ch => OrderFs2Grpc.stubResource[IO](ch))
-        .use(processor)
-
-    runClient
-  }
+  def runClient(orders: Stream[IO, OrderRequest]): IO[List[String]] =
+    managedChannelResource
+      .flatMap(ch => OrderFs2Grpc.stubResource[IO](ch))
+      .use(orderResource => processor(orderResource, orders))
 }
-
 ```
 
 ## 5. The Routes
-In this section, we define the logic to handle incoming requests to our REST server. Create `AppRoutes.scala` in the following path `src/main/scala/com/xonal/routes/AppRoutes.scala`, and add the code below:
+In this section, we define the logic to handle incoming requests to our `REST` server. Create `AppRoutes.scala` in the following path `src/main/scala/com/rockthejvm/routes/AppRoutes.scala`, and add the code below:
 
 ```scala
-package com.xonal.routes
+package com.rockthejvm.routes
 
 import cats.effect.IO
 import org.http4s.*
 import org.http4s.dsl.io.*
 
-object MyRoutes {
+object AppRoutes {
   def restService = HttpRoutes.of[IO] {
     case req @ GET -> Root / "index.html" =>
       StaticFile
         .fromString[IO](
-          "src/main/scala/index.html",
+          "src/main/resources/index.html",
           Some(req)
         )
         .getOrElseF(NotFound())
   }
 }
 ```
-Above we define our first route `/index.html` that serves the client with an HTML page where one can make orders from our E-Commerce store. It uses the `fromString()` method from `Http4s`'s `StaticFile` object which takes a `url` to an `HTML` file and an `Option` of a `Request[IO]`. If the URL is incorrect the client receives status code `404`, meaning the page is not available.
+Above we define our first route `/index.html` which serves the client with an `HTML` page where one can make orders from our online store. It uses the `fromString()` method from `Http4s`'s `StaticFile` object which takes a `URL` `String`  to an `HTML` file and an `Option` of a `Request[IO]`. If the `URL` is incorrect the client receives status code `404`, meaning the page is not available.
 
 ```scala
 ...
-import com.xonal.protos.orders.OrderRequest
+import com.rockthejvm.protos.orders.OrderRequest
 
-object MyRoutes {
+object AppRoutes {
   case class Orders(values: Seq[OrderRequest])
 
   def restService = HttpRoutes.of[IO] {
@@ -403,52 +413,56 @@ object MyRoutes {
   }
 }
 ```
-Here we create our second route, `/submit` which will receive `POST` requests with a user's orders. We create an `Orders` case class to capture the `Seq` of `OrderRequest`s that the user sends. However, to parse our request, we'll need an `EntityDecoder` for `Orders` in scope. We'll also need `Decoder`s for `Orders`, `OrderRequest`, and `Item` in scope.
+Next, we create our second route, `/submit` which will receive `POST` requests with a user's orders. We create an `Orders` case class to capture the `Seq` of `OrderRequest`s that the user sends. However, to parse our request, we'll need an `EntityDecoder` for `Orders` in scope. We'll also need `Decoder`s for `Orders`, `OrderRequest`, and `Item` in scope.
 
 ```scala
-import com.xonal.protos.orders.{OrderRequest, Item}
+import com.rockthejvm.protos.orders.{OrderRequest, Item}
 import org.http4s.circe.*
 import io.circe.Decoder
 import io.circe.syntax.*
 import scala.util.Random
-import scala.math.BigDecimal
 
-object MyRoutes {
+object AppRoutes {
   case class Orders(values: Seq[OrderRequest])
-  given ordersEntityDecoder: EntityDecoder[IO, Orders] = jsonOf[IO, Orders]
 
-  given ordersDecoder: Decoder[Orders] = Decoder.instance { h =>
-    h.get[Seq[OrderRequest]]("orders").map { orders =>
-      Orders(orders)
+  object Orders{
+    private given itemDecoder: Decoder[Item] = Decoder.instance { h =>
+      for
+        name <- h.get[String]("name")
+        qty <- h.get[Int]("quantity")
+        amount <- h.get[Double]("amount")
+      yield Item.of(
+        name,
+        qty,
+        amount
+      )
     }
-  }
 
-  given itemDecoder: Decoder[Item] = Decoder.instance { h =>
-    for
-      name <- h.get[String]("name")
-      qty <- h.get[Int]("quantity")
-      amount <- h.get[BigDecimal]("amount")
-    yield Item.of(
-      name,
-      qty,
-      amount
-    )
-  }
-
-  given orDecoder: Decoder[OrderRequest] = Decoder.instance { h =>
-    h.get[Seq[Item]]("items").map { items =>
-      OrderRequest.of(Random.between(1000, 2000), items)
+    private given orDecoder: Decoder[OrderRequest] = Decoder.instance { h =>
+        h.get[Seq[Item]]("items").map { items =>
+          OrderRequest.of(Random.between(1000, 2000), items)
+      }
     }
+
+    given ordersDecoder: Decoder[Orders] = Decoder.instance { h =>
+      h.get[Seq[OrderRequest]]("orders").map { orders =>
+        Orders(orders)
+      }
+    }
+
+    given ordersEntityDecoder: EntityDecoder[IO, Orders] = jsonOf[IO, Orders]
   }
   ...
 }
 ```
-We added an `EntityDecoder` for `Orders` using the `jsonOf[IO, Orders]` function provided by `http4s.circe`. For this `EntityDecoder` to work, we also need to provide a `given` of type `Decoder[Orders]` which we do with the help of `circe`'s `Decoder.instance` function. We target the `orders` key from the incoming JSON string and pass its value to the `Orders` case class. 
 
-A similar process is done for the `Item` and `OrderRequest` `Decoder`s. For the `OrderRequest` `Decoder`, we use a `Random` `Int` between 1000 and 2000 to simulate the `orderid`. 
+Here we create a companion object for `Orders`, the last line is an `EntityDecoder` for `Orders` which uses the `jsonOf[IO, Orders]` function provided by `http4s.circe`. For this `EntityDecoder` to work, we needed to provide a `given` of type `Decoder[Orders]`, `ordersDecoder`, which is implemented with the help of `circe`'s `Decoder.instance` function. We target the `orders` key from the incoming `JSON` string and pass its value to the `Orders` case class. 
+
+The `ordersDecorder` also requires the presence of `given` `Decoder`s for `Item` and `OrderRequest` in scope, which were also added to the `Orders` companion object. When creating the `OrderRequest` `Decoder`, we use a `Random` `Int` between 1000 and 2000 to simulate the `orderid`. 
+
 `Scalapb` provides a convenient `of()` function to pass data to our case class without having to deal with `UnknownFieldSet.empty` which if you check on the generated code is part of every case class. 
 
-We can pass values to these classes in different ways depending on your preference, here are some examples with `OrderRequest`:
+We can also pass values to these case classes in different ways depending on your preference, here are some examples with `OrderRequest`:
 
 ```scala
 // Using the of() method
@@ -469,14 +483,14 @@ OrderRequest(
 )
 ```
 
-Now we can process the incoming `POST` request.
+Let's see how to process the incoming `POST` requests.
 
 ```scala
 ...
-import com.xonal.client.Client.processorFn
+import com.rockthejvm.client.Client
 import fs2.Stream
 
-object MyRoutes {
+object AppRoutes {
   ...
   def restService = HttpRoutes.of[IO] {
     ...
@@ -484,74 +498,66 @@ object MyRoutes {
       req
         .as[Orders]
         .flatMap { x =>
-          processorFn(Stream.emits(x.values).covary[IO])
+          Client.runClient(Stream.emits(x.values).covary[IO])
         }
         .handleError(x => List(x.getMessage))
         .flatMap(x => Ok(x.asJson))
   }
 }
 ```
-Using the `as()` method on the request parses our JSON string returning `IO[Orders]`. We `flatMap` on this to pass `Orders` to our `processorFn()` function which communicates with the `gRPC` server to process them. This returns either an `IO[List[String]]` in case of success or an error message which we package as a `List` in case of failure. This `List` is then passed back to the browser as a JSON array of strings.
+Using the `as()` method on the request parses our JSON string returning `IO[Orders]`. We then `flatMap` on this to pass `Orders` to our `runClient()` function which communicates with the `gRPC` server to process them. This returns either an `IO[List[String]]` in case of success or an error message which we package as a `List` in case of failure. This `List` is then passed back to the browser as a `JSON` array of strings.
 
 Here's the full code:
 
 ```scala
-package com.xonal.routes
+package com.rockthejvm.routes
 
 import cats.effect.IO
 import org.http4s.*
 import org.http4s.dsl.io.*
-import com.xonal.protos.orders.{OrderRequest, Item}
+import com.rockthejvm.protos.orders.{OrderRequest, Item}
 import org.http4s.circe.*
 import io.circe.Decoder
 import io.circe.syntax.*
 import scala.util.Random
-import com.xonal.client.Client.processorFn
+import com.rockthejvm.client.Client
 import fs2.Stream
 
-object MyRoutes {
+object AppRoutes {
   case class Orders(values: Seq[OrderRequest])
-  given ordersEntityDecoder: EntityDecoder[IO, Orders] = jsonOf[IO, Orders]
-
-  given ordersDecoder: Decoder[Orders] = Decoder.instance { h =>
-    h.get[Seq[OrderRequest]]("orders").map { orders =>
-      Orders(orders)
+  object Orders{
+    private given itemDecoder: Decoder[Item] = Decoder.instance { h =>
+      for
+        name <- h.get[String]("name")
+        qty <- h.get[Int]("quantity")
+        amount <- h.get[Double]("amount")
+      yield Item.of(
+        name,
+        qty,
+        amount
+      )
     }
-  }
 
-  given itemDecoder: Decoder[Item] = Decoder.instance { h =>
-    for
-      name <- h.get[String]("name")
-      qty <- h.get[Int]("quantity")
-      amount <- h.get[Double]("amount")
-    yield Item.of(
-      name,
-      qty,
-      amount
-    ) // Item().withName(name).withQty(qty).withAmount(amount)
-  }
-
-  given orDecoder: Decoder[OrderRequest] = Decoder.instance { h =>
-    h.get[Seq[Item]]("items").map { items =>
-      OrderRequest.of(Random.between(1000, 2000), items)
-
-      // OrderRequest()
-      //  .withOrderid(Random.between(1000,2000))
-      //  .withItems(items)
-
-      // OrderRequest(
-      //   Random.between(1000,2000),
-      //   items,
-      //   _root_.scalapb.UnknownFieldSet.empty
-      // )
+    private given orDecoder: Decoder[OrderRequest] = Decoder.instance { h =>
+        h.get[Seq[Item]]("items").map { items =>
+          OrderRequest.of(Random.between(1000, 2000), items)
+      }
     }
+
+    given ordersDecoder: Decoder[Orders] = Decoder.instance { h =>
+      h.get[Seq[OrderRequest]]("orders").map { orders =>
+        Orders(orders)
+      }
+    }
+
+    given ordersEntityDecoder: EntityDecoder[IO, Orders] = jsonOf[IO, Orders]
   }
 
   def restService = HttpRoutes.of[IO] {
     case req @ GET -> Root / "index.html" =>
       StaticFile
         .fromString[IO](
-          "src/main/scala/index.html",
+          "src/main/resources/index.html",
           Some(req)
         )
         .getOrElseF(NotFound())
@@ -559,7 +565,7 @@ object MyRoutes {
       req
         .as[Orders]
         .flatMap { x =>
-          processorFn(Stream.emits(x.values).covary[IO])
+          Client.runClient(Stream.emits(x.values).covary[IO])
         }
         .handleError(x => List(x.getMessage))
         .flatMap(x => Ok(x.asJson))
@@ -568,7 +574,7 @@ object MyRoutes {
 ```
 
 ## 6. Index.html
-Create the `index.html` file in the following path, `src/main/scala/index.html`, this file is quite lengthy, we can copy the contents from this [link](https://github.com/hkateu/orderbuffer/blob/main/src/main/scala/index.html).
+Create the `index.html` file in the following path, `src/main/resources/index.html`, this file is quite lengthy, we can copy the contents from this [link](https://github.com/hkateu/orderbuffer/blob/main/src/main/scala/index.html).
 It consists of 3 forms each with the following format:
 
 ```html
@@ -631,7 +637,7 @@ const forms = document.getElementsByTagName("form");
 const submitButton = document.getElementById("submitBtn");
 const replyDiv = document.getElementById("reply");
 ```
-To process the forms we first create two objects containing the phone prices and phone names. We also get all the form elements and assign them to `forms` using the `document.getElementsByTagName("form")` function. We also get the submit button and div to post our response and assign them to `submitButton` and `replyDiv` respectively using the `document.getElementById()` function.
+To process the forms we first create two objects containing the phone prices and phone names. We also get all the form elements and assign them to `forms` using the `document.getElementsByTagName("form")` function. Next, we get the submit button and div to post our response and assign them to `submitButton` and `replyDiv` respectively using the `document.getElementById()` function.
 
 ```js
 ...
@@ -658,7 +664,7 @@ submitButton.addEventListener("click", (event) => {
   }
 }
 ```
-Next, we create an event listener for a `click` event on the submit Button. When the button is clicked we run through all the forms using a `for loop` and fetch the data from each by calling `new FormData(forms[i])`. 
+Here, we create an event listener for a `click` event on the submit Button. When the button is clicked we run through all the forms using a `for loop` and fetch the data from each by calling `new FormData(forms[i])`. 
 We then reformat the data to resemble our Scala case classes and assign each form's data to `jsonFormatted`, this is then pushed to `orderObj` which is now an `object` containing an `Array` of `orders`.
 
 ```js
@@ -682,7 +688,7 @@ submitButton.addEventListener("click", (event) => {
     .catch((err) => (replyDiv.innerHTML = err));
 }
 ```
-The last section is an `async` function `sendForm()` that uses JavaScripts `fetch API` to submit our from data as JSON and append the response to the a `div`.
+The last section is an `async` function `sendForm()` that uses JavaScripts `fetch API` to submit our from data as `JSON` and append the response to the a `div`.
 
 Heres the full javaScript code:
 
@@ -778,13 +784,12 @@ In this section, we bring everything together to run our program. First, we'll n
 
 ```scala
 import cats.effect.*
-import fs2.Stream
 import org.http4s.ember.server.EmberServerBuilder
 import com.comcast.ip4s.*
-import com.xonal.routes.MyRoutes.restService
+import com.rockthejvm.routes.AppRoutes.restService
 
 object Main extends IOApp {
-  def httpServerStream = Stream.eval(
+  def httpServerStream =
     EmberServerBuilder
       .default[IO]
       .withHost(host"0.0.0.0")
@@ -792,26 +797,23 @@ object Main extends IOApp {
       .withHttpApp(restService.orNotFound)
       .build
       .use(_ => IO.never)
-  )
 }
 ```
 We use `EmberServerBuilder` to create our server with port number 8080 and build it with our `restService`. 
 
 ```scala
-import com.xonal.service.Server.grpcServer
+import com.rockthejvm.service.Server.grpcServer
+import cats.syntax.parallel.*
 
 object Main extends IOApp {
   ...
-  val grpcServerStream = Stream.eval(grpcServer)
-
-  def run(args: List[String]): IO[ExitCode] = grpcServerStream
-    .concurrently(httpServerStream)
-    .compile
-    .toList
-    .as(ExitCode.Success)
+  def run(args: List[String]): IO[ExitCode] =
+    (httpServerStream, grpcServer)
+      .parMapN((http, grpc) => ())
+      .as(ExitCode.Success)
 }
 ```
-We wrap both `httpServerStream` and `grpcServerStream` in an fs2 `Stream` so that we can run them `concurrently` in the last line.
+In the `run()` function we call both `httpServerStream` and `grpcServerStream` in parellel using `parMapN()` from `cats.syntax.parallel`.
 
 Now Let's test our application.
 When we run our server and navigate to `localhost:8080/index.html`, we should be greeted with the following page.
@@ -823,9 +825,9 @@ Once the form is filled and submitted, we should see a response similar to the f
 ![server response](../images/grpc/results.png)
 
 ## 8. Managing currency with Squants.
-Throughout the article we've been representing money as `BigDecimal`, we could improve our code by using the `Squants` library to manage currency values, specifically `Squants`' `Money` type. 
+Throughout the article we've been representing money as `Double`, we could improve our code by using the `Squants` library to manage currency values, specifically `Squants`' `Money` type. 
 
-Therefore the question arises, if case classes are generated by `Scalapb`, how can we make it so that `Scalapb` generates `Squants`' `Money` type for `amount` and `total`? `Scalapb` provides a mechanism for customising generated types convenient for such scenarios. 
+Therefore the question arises, if the case classes are generated by `Scalapb`, how can we make it so that `Scalapb` generates `Squants`' `Money` type for `amount` and `total`? `Scalapb` provides a mechanism for customizing generated types convenient for such scenarios. 
 
 We'll need to add the following two libraries to our `protobuf` project inside `build.sbt`.
 
@@ -843,16 +845,17 @@ lazy val protobuf =
     .enablePlugins(Fs2Grpc)
 ...
 ```
-Once we compile our project, we'll notice an extra file `scalapb.proto` in the following path `protobuf/target/protobuf_external/scalapb/scalapb.proto` which contains the necessary methods to make our type conversion.
+Once we compile our project, we'll notice a new file, `scalapb.proto` in the following path `protobuf/target/protobuf_external/scalapb/scalapb.proto` which contains the necessary methods to make our type conversion. 
 Still in `orders.proto`, let's import this new proto file into scope. 
 
 ```proto
 syntax = "proto3";
 
-package com.xonal.protos;
+package com.rockthejvm.protos;
 
 import "scalapb/scalapb.proto";
 ```
+Note: If you are using IntelliJ, this import might show `red` because the proto plugin hasn't scanned the `protobuf_external` path, therefore, you'll need to add it there. IntelliJ will show this as a suggestion.
 
 Now we can make changes to the `amount` and `total` for `Item` and `OrderReply`.
 
@@ -877,7 +880,7 @@ Above, we set `(scalapb.field).type` to `squants.market.Money` which is the cust
 A few more extra steps are still required, let's create a `Customtype.scala` file in the following path `protobuf/src/main/protobuf/Customtype.scala` and add the following code.
 
 ```scala
-package com.xonal.protos
+package com.rockthejvm.protos
 
 import squants.market.{USD, Money}
 import scalapb.TypeMapper
@@ -885,7 +888,7 @@ import scalapb.TypeMapper
 given typeMapper: TypeMapper[Double, Money] =
   TypeMapper[Double, Money](s => USD(s))(_.amount.toDouble)
 ```
-`Scalapb` provides a `TypeMapper` object whose `apply` method takes two arguments, a function from the base type to a custom type i.e. `Double` to `Money`, and a function from the custom type back to the base type i.e. `Money` to `Double`. We provide `typeMapper` as a `given` so that when in scope, the generated `Scalapb` case classes will be able to convert the `Double` to our expected `Money` type.
+`Scalapb` provides a `TypeMapper` object whose `apply` method takes two arguments, a function from the base type to a custom type i.e. `Double` to `Money`, and a function from the custom type back to the base type i.e. `Money` to `Double`. We provide `typeMapper` as a `given` so that when in scope, the generated `Scalapb` case classes will contain the expected `Money` type instead of `Double`.
 
 To bring this `given` into scope when the case classes are generated, we'll need to add this import as a `File-level` option inside our `orders.proto` file.
 
@@ -894,15 +897,15 @@ To bring this `given` into scope when the case classes are generated, we'll need
 import "scalapb/scalapb.proto";
 
 + option (scalapb.options) = {
-+  import: "com.xonal.protos.given"
++  import: "com.rockthejvm.protos.given"
 + };
 ...
 ```
-Now that everything is set, let's compile our project and take a look at the cases classes generated by `Scalapb`. We'll notice at the top of each of them is our import.
+Now that everything is set, let's compile our project and take a look at the cases classes generated by `Scalapb`. We'll notice at the top of each of them is our `given` import.
 
 ```scala
-package com.xonal.protos.orders
-import com.xonal.protos.given
+package com.rockthejvm.protos.orders
+import com.rockthejvm.protos.given
 ...
 ```
 And `Item` and `OrderReply` now have `amount` and `total` for `Item` and `OrderReply` respectively of type `Money`.
@@ -911,18 +914,23 @@ And `Item` and `OrderReply` now have `amount` and `total` for `Item` and `OrderR
 final case class Item(
     name: _root_.scala.Predef.String = "",
     qty: _root_.scala.Int = 0,
-    amount: squants.market.Money = com.xonal.protos.orders.Item._typemapper_amount.toCustom(0.0),
+    amount: squants.market.Money = com.rockthejvm.protos.orders.Item._typemapper_amount.toCustom(0.0),
     unknownFields: _root_.scalapb.UnknownFieldSet = _root_.scalapb.UnknownFieldSet.empty
     ) 
 ```
 Let's also make the following change to `OrderClient.scala`.
 
 ```diff
-  def processorFn(orders: Stream[IO, OrderRequest]): IO[List[String]] = {
-    def processor(orderStub: OrderFs2Grpc[IO, Metadata]): IO[List[String]] = {
-      for {
-        response <- orderStub.sendOrderStream(orders, new Metadata())
-        str <- Stream.eval(
+  private def processor(
+      orderStub: OrderFs2Grpc[IO, Metadata],
+      orders: Stream[IO, OrderRequest]
+  ): IO[List[String]] = {
+    for {
+      response <- orderStub.sendOrderStream(
+        orders,
+        new Metadata()
+      )
+      str <- Stream.eval(
 -          IO(s"Processed orderid: ${response.orderid} for items ${response.names
 -              .mkString(",")} totaling to USD ${response.total}") 
 +         IO(s"Processed orderid: ${response.orderid} for items: ${formatItemsToStr(response.items)
@@ -930,9 +938,7 @@ Let's also make the following change to `OrderClient.scala`.
           )
         )
       } yield str
-    }.compile.toList
-    ...
-  }
+  }.compile.toList
 ```
 Here we use `Squants`' `toString` method which formats our currency values as follows: `xxx USD`.
 
@@ -944,7 +950,7 @@ Lastly, let's edit `AppRoutes.scala` as well.
     for
       name <- h.get[String]("name")
       qty <- h.get[Int]("quantity")
-      amount <- h.get[BigDecimal]("amount")
+      amount <- h.get[Double]("amount")
     yield Item.of(
       name,
       qty,
@@ -954,13 +960,13 @@ Lastly, let's edit `AppRoutes.scala` as well.
   }
 ...
 ```
-Here we add `USD(amount)` of type Money to our `itemDecoder`.
+Here we add `USD(amount)` of type `Money` for our `itemDecoder`.
 
 The application should now run with the updated changes.
 
 ## 9. Conclusion
-In this article, we've looked at how to create, a `gRPC` service in Scala using `Fs2-grpc`, this includes server and client implementations and how they communicate with each other. `gRPC` is particularly popular for communication between microservices and uses `http/2` which provides better performance and reduced latency.
+In this article, we've looked at how to create a `gRPC` service in Scala using `Fs2Grpc`, this includes server and client implementations and how they communicate with each other. `gRPC` is particularly popular for communication between microservices and uses `HTTP/2` which provides better performance and reduced latency.
 
-`Scalapb` has a lot more to offer than what was discussed in this article such as more customizations, transformations, extra sbt settings as well as some extra guides on usage with other Scala libraries, I encourage you to dig into the documentation for more in depth knowledge on `gRPC` in Scala.
+`Scalapb` has a lot more to offer than what's been discussed in this article such as more customizations, transformations, extra sbt settings as well as some extra guides on usage with other Scala libraries, I encourage you to dig into the documentation for more in-depth knowledge on `gRPC` in Scala.
 
 The complete code for this article can be found over on my [GitHub](https://github.com/hkateu/orderbuffer) account.
