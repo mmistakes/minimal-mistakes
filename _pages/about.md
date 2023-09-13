@@ -39,15 +39,21 @@ Product Safety Surveillance Division  <em>(to be updated) </em>
 
 #### <strong> Technical Research Officer </strong>, February 2013 – December 2021
 
-#### Technical Regulation Policy Division<em>(to be updated) </em>
+Technical Regulation Policy Division<em>(to be updated) </em>
+* Overhaul TBT information system(www.knowTBT.kr, operated from 2008) and then secured implementation budget, December 2021(<em> Ministry of Science and ICT ‘Digital Public Service Innovation Project’, ***1,560 million won******</em>)
+  * TBT (Technical Barriers to Trade) : technical regulations, standards, and conformity assessment procedures creating unnecessary obstacles to trade)
+* Initiated and Leaded in opening the World-wide information Map service of Mandatory Technical Regulations, April 2021, [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=163984&bbs_cd_n=81&currentPage=1&search_key_n=user_nm_v&cate_n=1&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
 
-#### Metrology & Measurement Division <em>(to be updated ) </em>
 
-#### Electronics & Information Standards Division<em>(to be updated) </em>
+Metrology & Measurement Division <em>(to be updated ) </em>
+* Organized ‘Smart Metering Forum’ with participation of overt 100 industry, academia, and research institutes as a private voluntary forum, July 2017, [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=159457&bbs_cd_n=81&currentPage=11&search_key_n=user_nm_v&cate_n=1&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
 
-* Establishment of the Standardization Strategy 
-  -	‘The National Standardization Strategy for Health Informatics’, June 2014
-  -	‘The Standardization Promotion Strategy to support the spread of Smart Factory(manufacturing innovation’, July 2015
+
+Electronics & Information Standards Division<em>(to be updated) </em>
+
+* Establishment of the Standardization Strategies 
+  -	‘The National Standardization Strategy for Health Informatics’, June 2014,  [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=156561&bbs_cd_n=81&currentPage=11&search_key_n=user_nm_v&cate_n=&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
+  -	‘The Standardization Promotion Strategy to support the spread of Smart Factory(manufacturing innovation), July 2015, [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=157412&bbs_cd_n=81&currentPage=11&search_key_n=user_nm_v&cate_n=&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8) 
 
 * Official of mirror TCs/SCs/WGs related to international IT Standardization committees or working groups:
   -	JTC 1 : SC 6, SC 27, SC 31, SC 34, SC 38, WG 7, WG 9, WG 10
