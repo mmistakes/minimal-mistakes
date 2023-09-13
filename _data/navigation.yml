@@ -12,11 +12,11 @@ main:
     url: /tags/
   - title: "About Me"
     url: /assets/docs/cv.pdf
-  - title: "Search"
+  - title: "🔍"
     url: /search/
 
 docs:
-  - title: "Project"
+  - title: "👨🏻‍💻 Project"
     url: /projects/
     children:
       - title: "설계 도면 인식"
@@ -25,7 +25,7 @@ docs:
         url: /projects/itb/
 
 docs1:
-  - title: "설계 도면 인식"
+  - title: "📐 설계 도면 인식"
     url: /projects/pnid/
     children:
       - title: "프로젝트 배경"
@@ -34,7 +34,7 @@ docs1:
         url: /projects/pnid/02
 
 docs2:
-  - title: "법률 문서 분석"
+  - title: "⚖️ 법률 문서 분석"
     url: /projects/itb/
     children:
       - title: "프로젝트 배경"
