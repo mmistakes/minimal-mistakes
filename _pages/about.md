@@ -120,7 +120,7 @@ Study on the lower power communications and networking techniques for Massively 
 *	Standards: IEEE 802.16e(Mobile WiMAX), 3GPP(WCDMA, LTE Layer 2~Layer 7), IETF RFCs(TCP, IP, HTTP, Authentication, Authorization, and Accounting etc.), OMA(Over The Air Device Management)
 *	Design Applications: MATLAB
 *	Programming: C/C++, VHDL
-*	**Swimming** :satisfied:	(생활스포츠지도사 2급 수영, Lifetime sports instructor, Level 2, 문화체육관광부, 2021년 12월)
+*	**Swimming** 😏	(생활스포츠지도사 2급 수영, Lifetime sports instructor, Level 2, 문화체육관광부, 2021년 12월)
 
 
 ## PERSONAL PARTICULARS
