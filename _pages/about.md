@@ -29,7 +29,7 @@ author_profile: true
 * B.S. in Electronics Engineering
 
 
-## WORK EXPERIENCE<em>( to be updated ) </em>:
+## WORK EXPERIENCE<em>( to be updated ) </em>
 ###	KATS(Korean Agency for Technology and Standards)
 
 #### <strong> Deputy Director </strong>, December 2021 – Present
@@ -40,8 +40,8 @@ Product Safety Surveillance Division  <em>(to be updated) </em>
 #### <strong> Technical Research Officer </strong>, February 2013 – December 2021
 
 Technical Regulation Policy Division<em>(to be updated) </em>
-* Overhaul TBT information system(www.knowTBT.kr, operated from 2008) and then secured implementation budget, December 2021(<em> Ministry of Science and ICT ‘Digital Public Service Innovation Project’, ***1,560 million won******</em>)
-  * TBT (Technical Barriers to Trade) : technical regulations, standards, and conformity assessment procedures creating unnecessary obstacles to trade)
+* Overhaul TBT information system(www.knowTBT.kr, operated from 2008) and then secured implementation budget(<em>Ministry of Science and ICT ‘Digital Public Service Innovation Project’, ***1,560 million won***</em>), December 2021
+  * TBT (Technical Barriers to Trade) : technical regulations, standards, and conformity assessment procedures creating unnecessary obstacles to trade
 * Initiated and Leaded in opening the World-wide information Map service of Mandatory Technical Regulations, April 2021, [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=163984&bbs_cd_n=81&currentPage=1&search_key_n=user_nm_v&cate_n=1&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
 
 
@@ -85,7 +85,7 @@ Electronics & Information Standards Division<em>(to be updated) </em>
   -	Protocol testing and Certification
 
 
-## RESEARCH PROJECTS<em>(to be updated) </em>:
+## RESEARCH PROJECTS<em>(to be updated) </em>
 
 Provision of measures assisting in international standardization and certification acquisition in Mobile Communication 
  - July 2012 – June 2013 
@@ -108,7 +108,7 @@ Study on the lower power communications and networking techniques for Massively 
   -	Keywords: Wireless Sensor networks, Distributed detection, fusion techniques, data fusion algorithms
 
 
-## CURRENT INTERESTS: 
+## CURRENT INTERESTS 
 * Reliable/Safety AI products
 * Smart Manufacturing(Industrie 4.0)
 * Mobile(cellular) / wireless communication Protocol
@@ -123,7 +123,7 @@ Study on the lower power communications and networking techniques for Massively 
 *	Programming: C/C++, VHDL
 
 
-## PERSONAL PARTICULARS:
+## PERSONAL PARTICULARS
 *	Date of Birth: December 19, 1978
 *	Citizenship: Korea
 *	Gender: Male
@@ -131,7 +131,7 @@ Study on the lower power communications and networking techniques for Massively 
 *	Military Service: Completed with honorable discharge from Republic of Korea Army(26 months)
 
 
-## HONORS AND AWARDS: 
+## HONORS AND AWARDS 
 *	Commendation for the Exemplary Official of the year 2021(The Prime Minister’s Office, June 2021)
 
 *	Commendation for the Excellent Official of the year 2018(Ministry of Trade, Industry and Energy, December 2018)
@@ -144,7 +144,7 @@ Study on the lower power communications and networking techniques for Massively 
 
 
 
-## PUBLICATIONS AND PRESENTATIONS(selected, academic): 
+## PUBLICATIONS AND PRESENTATIONS(selected, academic) 
 #### International Journal:
 
 [1]  Seungho Bae, Insoo Koo, Kiseon Kim, "Empirical Detection Strategy Based on Histogram Information in Wireless Sensor Networks" GESTS International Transactions on Computer Science and Engineering Volume 36, Number 1, pp. 198-290, January 2007
