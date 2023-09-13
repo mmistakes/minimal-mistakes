@@ -13,7 +13,7 @@ excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
 #     image_path: /assets/images/mm-layout-archive.png
 #     alt: "archive layout example"
 layout: single
-last_modified_at: 2023-09-12T11:59:26-04:00
+last_modified_at: 2023-09-13T11:59:26-04:00
 # toc: true
 author_profile: true
 ---
@@ -29,76 +29,81 @@ author_profile: true
 * B.S. in Electronics Engineering
 
 
-## WORK EXPERIENCE:
+## WORK EXPERIENCE<em>( to be updated ) </em>:
 ###	KATS(Korean Agency for Technology and Standards)
 
-February 2013 – Present, Deputy Director
+#### <strong> Deputy Director </strong>, December 2021 – Present
 
-#### Product Safety Surveillance Division
+Product Safety Surveillance Division  <em>(to be updated) </em>
+ 
 
+#### <strong> Technical Research Officer </strong>, February 2013 – December 2021
 
-Establishment of the Standardization Strategy 
+#### Technical Regulation Policy Division<em>(to be updated) </em>
+
+#### Metrology & Measurement Division <em>(to be updated ) </em>
+
+#### Electronics & Information Standards Division<em>(to be updated) </em>
+
+* Establishment of the Standardization Strategy 
   -	‘The National Standardization Strategy for Health Informatics’, June 2014
   -	‘The Standardization Promotion Strategy to support the spread of Smart Factory(manufacturing innovation’, July 2015
 
-Official of mirror TCs/SCs/WGs related to international IT Standardization committees or working groups:
+* Official of mirror TCs/SCs/WGs related to international IT Standardization committees or working groups:
   -	JTC 1 : SC 6, SC 27, SC 31, SC 34, SC 38, WG 7, WG 9, WG 10
   -	ISO : TC 184/SC 4 and SC 5
   -	IEC : TC 65, TC 80, TC 86, SyC AAL
 
-Official of domestic standardization study groups:
+* Official of domestic standardization study groups:
   -	Power Line Communication
   -	Smart manufacturing(corresponding with IEC/SMB/SG 8)
 
 ### TTA (Telecommunications Technology Associations)
 
-April 2006 - February 2013, Senior Research Engineer
+<strong> Senior Research Engineer </Strong>, April 2006 - February 2013
 
-GSM/WCDMA testing(3GPP and ETSI)
--	Protocol(Data link layer(2) ~ Application layer(7)) testing and certification
-
-Mobile WiMAX Validation(IEEE 802.16e and ETSI)
--	November 2006 – April 2008, <ins> Dispatched to AT4wireless Headquarter in Spain<ins>
--	Validation of Mobile WiMAX testing equipments(Agilent, Anite)
--	Validation of IEEE standards, Mobile WiMAX testing procedures and specifications 
--	Validation of ETSI test suite and executable test cases(TTCN-3)
-
-Mobile WiMAX testing (IEEE 802.16e)
--	May 2008 – December 2010 
--	Protocol testing and certification (Mobile Station, Base Station and network system)
--	Interoperability testing by setting up the test-bed consisted of Base Station, Mobile Station, Network servers
-
-LTE  testing and standardization(3GPP and ETSI)
--	January 2011 – February 2013
--	3GPP RAN5(Radio Assess Network 5) Standardization
--	Protocol testing and Certification
+* GSM/WCDMA testing(3GPP and ETSI)
+  -	Protocol(Data link layer(2) ~ Application layer(7)) testing and certification
+* Mobile WiMAX Validation(IEEE 802.16e and ETSI)
+  -	November 2006 – April 2008, <strong> <em> Dispatched to AT4wireless Headquarter in Spain</em></strong>
+  -	Validation of Mobile WiMAX testing equipments(Agilent, Anite)
+  -	Validation of IEEE standards, Mobile WiMAX testing procedures and specifications 
+  -	Validation of ETSI test suite and executable test cases(TTCN-3)
+* Mobile WiMAX testing (IEEE 802.16e)
+  -	May 2008 – December 2010 
+  -	Protocol testing and certification (Mobile Station, Base Station and network system)
+  -	Interoperability testing by setting up the test-bed consisted of Base Station, Mobile Station, Network servers
+* LTE  testing and standardization(3GPP and ETSI)
+  -	January 2011 – February 2013
+  -	3GPP RAN5(Radio Assess Network 5) Standardization
+  -	Protocol testing and Certification
 
 
-## RESEARCH PROJECTS(ACADEMIC):
+## RESEARCH PROJECTS<em>(to be updated) </em>:
 
-•	Provision of measures assisting in international standardization and certification acquisition in Mobile Communication 
+Provision of measures assisting in international standardization and certification acquisition in Mobile Communication 
  - July 2012 – June 2013 
  - Sponsor: Ministry of Knowledge Economy
  - Keywords: mobile communication, standardization, certification
 
-•	Quality assessment of Korea’s mobile(cellular) communication services
+Quality assessment of Korea’s mobile(cellular) communication services
   - March 2012 – December 2012
   -	Sponsor: Korea Communications Commission
   -	Keywords: mobile communication, WCDMA, Voice Quality, Quality of Service 
 
-•	Distributed detection method based on value of information for wireless sensor network
+Distributed detection method based on value of information for wireless sensor network
   -	July 2005 – February 2006,
   -	Sponsor: Korea Research Foundation
   -	Keywords: Wireless Sensor networks, Distributed detection, Data fusion, information theory
 
-•	Study on the lower power communications and networking techniques for Massively Distributed Sensor Networks (MDSNs)
+Study on the lower power communications and networking techniques for Massively Distributed Sensor Networks (MDSNs)
   -	March 2004 –December 2005, 
   -	Sponsor: Gwangju Institute of Science and Technology (GIST)
   -	Keywords: Wireless Sensor networks, Distributed detection, fusion techniques, data fusion algorithms
 
 
 ## CURRENT INTERESTS: 
-* Reliable AI product
+* Reliable/Safety AI products
 * Smart Manufacturing(Industrie 4.0)
 * Mobile(cellular) / wireless communication Protocol
 * IoT, Ubiquitous communication techniques, wireless sensor networks 
@@ -107,9 +112,9 @@ LTE  testing and standardization(3GPP and ETSI)
 
 
 ## SPECIALTIES
-*	Standards:                      IEEE 802.16e(Mobile WiMAX), 3GPP(WCDMA, LTE Layer 2~Layer 7), IETF RFCs(TCP, IP, HTTP, Authentication, Authorization, and Accounting etc.), OMA(Over The Air Device Management)
-*	Design Applications:     MATLAB
-*	Programming:                C/C++, VHDL
+*	Standards: IEEE 802.16e(Mobile WiMAX), 3GPP(WCDMA, LTE Layer 2~Layer 7), IETF RFCs(TCP, IP, HTTP, Authentication, Authorization, and Accounting etc.), OMA(Over The Air Device Management)
+*	Design Applications: MATLAB
+*	Programming: C/C++, VHDL
 
 
 ## PERSONAL PARTICULARS:
@@ -150,7 +155,8 @@ LTE  testing and standardization(3GPP and ETSI)
 
 [5]  Seungho Bae, Hyunduk Kang and Kiseon Kim, "Histogram Data Fusion in Sequential Detection Networks," Korean Institute of Communication and Sciences (KICS) 2005, pp. 201-205, May 2005, Korea.
 
-International Workshop and Symposium:
+#### International Workshop and Symposium:
+
 [6] Poster Session: “Decentralized Detection with Empirically Collected Statistics in Wireless Sensor Networks,” The Korea-Japan Joint Workshop 2006 on Advanced Digital Circuit and Systems, January 2006, Japan
 
 ---
