@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: categories
 taxonomy: Study Note
 title: Study Note
 permalink: "/studies/"
