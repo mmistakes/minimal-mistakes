@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
 title                    : "인공지능 정리하는 학부생"
-title_separator          : "-"
+title_separator          : "|"
 subtitle                 : "version 1.0" # site tagline that appears below site title in masthead
 name                     : "이주성(Jusung-Lee)" #프로필이름
-description              : "인공지능을 공부하는 전자공학부 학부생입니다." #설명란
+description              : "인공지능을 공부하는 학부생입니다." #설명란
 url                      : "https://jusunglee-ai.github.io/"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/jusunglee-ai/jusunglee-ai.github.io " # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -108,7 +108,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "인공지능을 공부하는 학부생입니다.<br>공부한 것들에 대해 정리하고 있습니다."
   location         : "Republic of Korea"
-  email            :
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
