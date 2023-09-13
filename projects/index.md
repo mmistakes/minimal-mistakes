@@ -1,8 +1,7 @@
 ---
 layout: category
-taxonomy: Projects
 title: Projects
-# permalink: "/project-archive/"
+taxonomy: Projects
 entries_layout: grid
 author_profile: true
 classes: wide
