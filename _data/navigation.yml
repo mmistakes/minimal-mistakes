@@ -41,12 +41,4 @@ docs2:
         url: /projects/itb/01
       - title: "ITB2"
         url: /projects/itb/02
-
-counts:
-  - title: "Porject"
-    use: true
-  - title: "tag"
-    use: false
-
-
   
