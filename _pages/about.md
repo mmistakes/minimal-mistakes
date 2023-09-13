@@ -35,7 +35,11 @@ author_profile: true
 #### <strong> Deputy Director </strong>, December 2021 – Present
 
 Product Safety Surveillance Division  <em>(to be updated) </em>
- 
+
+* Cowork with civil society groups, autority agency and product retailers [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=166668&bbs_cd_n=81&currentPage=1&search_key_n=user_nm_v&cate_n=&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
+* Cowork with local government [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=167451&bbs_cd_n=81&currentPage=1&search_key_n=user_nm_v&cate_n=&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
+
+
 
 #### <strong> Technical Research Officer </strong>, February 2013 – December 2021
 
