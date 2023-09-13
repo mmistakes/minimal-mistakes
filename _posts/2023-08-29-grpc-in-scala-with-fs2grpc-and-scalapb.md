@@ -574,7 +574,7 @@ object AppRoutes {
 ```
 
 ## 6. Index.html
-Create the `index.html` file in the following path, `src/main/resources/index.html`, this file is quite lengthy, we can copy the contents from this [link](https://github.com/hkateu/orderbuffer/blob/main/src/main/scala/index.html).
+Create the `index.html` file in the following path, `src/main/resources/index.html`, this file is quite lengthy, we can copy the contents from this [link](https://github.com/hkateu/orderbuffer/blob/main/src/main/resources/index.html).
 It consists of 3 forms each with the following format:
 
 ```html
