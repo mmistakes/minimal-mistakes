@@ -27,7 +27,7 @@ repository               : # "sangjinoh/home"
 teaser                   : # "/assets/images/blog-cover.jpg"
 logo                     : "/assets/images/blog-favicon.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title"
-breadcrumbs              : true
+breadcrumbs              : false
 words_per_minute         : 200
 comments:
   provider               : "disqus" # (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
