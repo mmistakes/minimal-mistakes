@@ -33,7 +33,7 @@ We will use Scala 3.3.0, SBT 1.9.4 and several monumental libraries to complete 
 
 The initial project skeleton: 
 - `src/main/scala` groups production code 
-- `src/main/test` groups tests
+- `src/test/scala` groups tests
 - `src/main/resources/application.conf` defines the project configuration
 - `.scalafmt.conf` is used to format the code
 - `build.sbt` is responsible for building the project and generating `lb.jar` which we can run with `java` or `scala`
@@ -87,37 +87,7 @@ In our case we will also have additional two packages:
 - `errors` - for grouping different error representations
 - `http` - for grouping `HttpClient`, `HttpServer`, `HttpServerStatus` and related entities
 
-Let's compile and run the initial project, this is what `Main.scala` looks like:
-```scala
-package com.rockthejvm.loadbalancer
-
-import cats.effect.{IO, IOApp}
-
-object Main extends IOApp.Simple {
-  override val run: IO[Unit] =
-    IO.println("Balancing the load...")
-      .void
-}
-```
-
-So, we can start `sbt` and run the app:
-
-```shell
-➜  balancer sbt
-[info] welcome to sbt 1.9.4 (Homebrew Java 17.0.8.1)
-[info] loading global plugins from ~/.sbt/1.0/plugins
-[info] loading settings for project balancer-build from plugins.sbt ...
-[info] loading project definition from ~/loadbalancer/project
-[info] loading settings for project root from build.sbt ...
-[info] started sbt server
-sbt:loadbalancer> run
-info] compiling 1 Scala source to loadbalancer/target/scala-3.3.0/classes ...
-[info] running com.rockthejvm.loadbalancer.Main
-Balancing the load...
-[success] Total time: 2 s, completed Sep 9, 2023, 10:41:38 AM
-```
-
-Great! with that we can move on and start defining data models.
+With that we can move on to defining some data models.
 
 ## 3. Domain Modeling
 The domain of load balancer is pretty straightforward. Let's unfold it step by step. 
@@ -140,11 +110,7 @@ package com.rockthejvm.loadbalancer.domain
 
 import scala.util.Try
 
-final case class Urls(values: Vector[Url]):
-
-  def next: Urls =
-    Try(copy(values.tail :+ values.head))
-      .getOrElse(Urls.empty)
+final case class Urls(values: Vector[Url]) extends AnyVal:
 
   def currentOpt: Option[Url] =
     Try(currentUnsafe).toOption
@@ -163,8 +129,6 @@ object Urls:
 
   def empty: Urls = Urls(Vector.empty)
 ```
-
-It is worth to mention that The `next` method implements a round-robin algorithm for cycling through the backend server URLs. This is a common load balancing strategy where each request is routed to the next server in the list. The next method ensures that requests are evenly distributed among the available servers, which is a fundamental aspect of load balancing.
 
 The `add` and `remove` methods allow you to dynamically manage the list of backend servers. This is valuable because in a real-world scenario, backend servers may come online or go offline, and the load balancer needs to adapt accordingly. These methods ensure that you don't deal with incorrect set of URLs, which could lead to uneven load distribution.
 
@@ -186,22 +150,6 @@ class UrlsTest extends FunSuite {
     (from to to)
       .map(i => Url(s"url$i"))
       .toVector
-  }
-
-  test("Urls(...).next must put url1 in the end of the list and url2 at the top") {
-    val urls     = sequentialUrls(1, 5)
-    val obtained = urls.next
-    val expected = Urls(sequentialUrls(2, 5).values :+ Url("url1"))
-
-    assertEquals(obtained, expected)
-  }
-
-  test("Urls(url1).next must return the same - Urls(url1)") {
-    val urls     = Urls(Vector(Url("url1")))
-    val obtained = urls.next
-    val expected = urls
-
-    assertEquals(obtained, expected)
   }
 
   test("Urls(url1, url2, ...).currentOpt must return Some(url1)") {
@@ -282,8 +230,6 @@ Now it's time to make load balancer configurable, this way it will be more flexi
 
 By default, the configuration file locations is: `src/main/resources/application.conf` and it follows `HOCON` format.
 
-(We could have also taken the command line argument for parsing config file location, but let's keep it simple and default for now)
-
 You may have different ideas as to what to configure, but I believe there are four must have things:
 - `port` - load balancer port
 - `host` - load balancer host (port + host = url)
@@ -315,8 +261,6 @@ import pureconfig.ConfigReader
 import pureconfig._
 import pureconfig.generic.derivation.default._
 
-import scala.util.Try
-
 final case class Config(
     port: Int,
     host: String,
@@ -335,7 +279,7 @@ object Config:
 
 Let's explain what these `givens` do in the companion object of `Config`:
 
-First of all the `derives ConfigReader` annotation instructs `PureConfig` to automatically derive a configuration reader for this case class, allowing it to be used to parse configuration files into `Config` instances.
+First of all the `derives ConfigReader` annotation instructs `PureConfig` to automatically derive a configuration reader for this case class, allowing it to be used to parse configuration files into `Config` instances. This requires that there must be `given` ConfigReaders for all members (recursively). Because extending `AnyVal` prevents using `derives` clauses, so need to define the `given`-s ourselves.
 
 `given urlsReader: ConfigReader[Urls]:` This custom reader is defined for the `Urls` type and instructs `PureConfig` to read a configuration value of type `Vector[Url]` and map it to an `Urls` instance using the `Urls.apply` constructor.
 
@@ -455,13 +399,13 @@ trait ParseUri:
   object ParseUri:
     
     object Impl extends ParseUri:
-    /**
-     * Either returns proper Uri or InvalidUri
-     */
-    override def apply(uri: String): Either[InvalidUri, Uri] =
-      Uri
-        .fromString(uri)
-        .leftMap(_ => InvalidUri(uri))
+      /**
+       * Either returns proper Uri or InvalidUri
+       */
+      override def apply(uri: String): Either[InvalidUri, Uri] =
+        Uri
+          .fromString(uri)
+          .leftMap(_ => InvalidUri(uri))
 ```
 
 And the tests for `ParseUri`:
@@ -772,15 +716,16 @@ I would implement that in the following way:
 ```scala
 package com.rockthejvm.loadbalancer.services
 
-import com.rockthejvm.loadbalancer.domain.Url
-import com.rockthejvm.loadbalancer.domain.UrlsRef
 import cats.Id
 import cats.effect.IO
-import cats.syntax.option._
+import com.rockthejvm.loadbalancer.domain.{Url, Urls, UrlsRef}
+import cats.syntax.option.*
+
+import scala.util.Try
 
 trait RoundRobin[F[_]]:
   def apply(ref: UrlsRef): IO[F[Url]]
-
+  
 object RoundRobin:
 
   type BackendsRoundRobin     = RoundRobin[Option]
@@ -789,14 +734,18 @@ object RoundRobin:
   def forBackends: BackendsRoundRobin = new BackendsRoundRobin:
     override def apply(ref: UrlsRef): IO[Option[Url]] =
       ref.urls
-        .getAndUpdate(_.next)
+        .getAndUpdate(next)
         .map(_.currentOpt)
 
   def forHealthChecks: HealthChecksRoundRobin = new HealthChecksRoundRobin:
     override def apply(ref: UrlsRef): IO[Id[Url]] =
       ref.urls
-        .getAndUpdate(_.next)
+        .getAndUpdate(next)
         .map(_.currentUnsafe)
+
+  private def next(urls: Urls): Urls =
+    Try(Urls(urls.values.tail :+ urls.values.head))
+      .getOrElse(Urls.empty)
 
   val TestId: RoundRobin[Id]            = _ => IO.pure(Url("localhost:8081"))
   val LocalHost8081: RoundRobin[Option] = _ => IO.pure(Some(Url("localhost:8081")))
@@ -808,8 +757,9 @@ What's happening up there?
 - `RoundRobin` companion object provides type aliases and factory methods for creating instances of `RoundRobin`.
 - `BackendsRoundRobin`: a type alias for `RoundRobin[Option]`, which means it selects backends and returns them wrapped in an `Option`. This implies that it might return `Some(Url)` if a backend is available or `None` if not.
 - `HealthChecksRoundRobin`: a type alias for `RoundRobin[Id]`, which means it selects health check URLs and returns them directly as an `Id[Url]`. In this context, `Id` is used to indicate that no additional wrapping is applied, and the URL is returned as is because we never remove or add new urls to `HealthChecks`.
-- `forBackends`: creates an instance of `BackendsRoundRobin`. It selects a backend from the `UrlsRef` by invoking its `next` method and returns the current backend as an `Option[Url]`.
+- `forBackends`: creates an instance of `BackendsRoundRobin`. It selects a backend from the `UrlsRef` by invoking the private `next` method and returns the current backend as an `Option[Url]`.
 - `forHealthChecks`: creates an instance of `HealthChecksRoundRobin`. It selects a health check URL from the `UrlsRef` by invoking its `next` method and returns the current health check URL as an `Id[Url]`.
+- `next`: implements a round-robin algorithm for cycling through the backend server URLs. This is a common load balancing strategy where each request is routed to the next server in the list. The next method ensures that requests are evenly distributed among the available servers, which is a fundamental aspect of load balancing.
 - `TestId`: predefined instance of `RoundRobin[Id]` that always returns the URL `"localhost:8081"`. It will be useful for testing purposes later.
 - `LocalHost8081`: predefined instance of `RoundRobin[Option]` that always returns `Some(Url("localhost:8081"))`. It is also useful for testing and may represent a local backend.
 
@@ -1144,6 +1094,8 @@ We can define `HttpServer` as follows:
 ```scala
 package com.rockthejvm.loadbalancer.http
 
+import cats.effect.IO
+import com.comcast.ip4s.*
 import com.rockthejvm.loadbalancer.domain.*
 import com.rockthejvm.loadbalancer.domain.UrlsRef.{Backends, HealthChecks}
 import com.rockthejvm.loadbalancer.services.RoundRobin.{BackendsRoundRobin, HealthChecksRoundRobin}
@@ -1155,8 +1107,6 @@ import com.rockthejvm.loadbalancer.services.{
   SendAndExpect,
   UpdateBackendsAndGet,
 }
-import cats.effect.IO
-import com.comcast.ip4s.*
 import org.http4s.ember.client.EmberClientBuilder
 import org.http4s.ember.server.EmberServerBuilder
 import org.http4s.server.middleware.Logger
@@ -1174,40 +1124,40 @@ object HttpServer:
     backendsRoundRobin: BackendsRoundRobin,
     healthChecksRoundRobin: HealthChecksRoundRobin,
   ): IO[Unit] =
-    (for
+    (for {
       client <- EmberClientBuilder
         .default[IO]
         .build
       httpClient = HttpClient.of(client)
-      httpApp    = Logger
+      httpApp = Logger
         .httpApp(logHeaders = false, logBody = true):
-          LoadBalancer
-            .from(
-              backends,
-              SendAndExpect.toBackend(httpClient, _),
-              parseUri,
-              AddRequestPathToBackendUrl.Impl,
-              backendsRoundRobin,
-            )
-            .orNotFound
+        LoadBalancer
+        .from(
+      backends,
+      SendAndExpect.toBackend(httpClient, _),
+      parseUri,
+      AddRequestPathToBackendUrl.Impl,
+      backendsRoundRobin,
+      )
+      .orNotFound
       _ <- EmberServerBuilder
         .default[IO]
-        .withHost(host)
-        .withPort(port)
-        .withHttpApp(httpApp)
-        .build
+      .withHost(host)
+      .withPort(port)
+      .withHttpApp(httpApp)
+      .build
       _ <- HealthCheckBackends
-        .periodically(
-          healthChecks,
-          backends,
-          parseUri,
-          updateBackendsAndGet,
-          healthChecksRoundRobin,
-          SendAndExpect.toHealthCheck(httpClient),
-          healthCheckInterval,
-        )
-        .toResource
-    yield ()).useForever
+      .periodically(
+      healthChecks,
+      backends,
+      parseUri,
+      updateBackendsAndGet,
+      healthChecksRoundRobin,
+      SendAndExpect.toHealthCheck(httpClient),
+      healthCheckInterval,
+      )
+      .toResource
+    } yield ()).useForever
 ```
 
 Let's break down what's going on up there:
