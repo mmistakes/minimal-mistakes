@@ -61,7 +61,7 @@ Helmi will be unavailable on the 13.09. due to maintenance. The service is expec
 <tbody>
   <tr>
     <td class="tg-tbqi">LUMI-Helmi</td>
-    <td class="tg-49rs">🟢</td>
+    <td class="tg-49rs">🔴</td>
   </tr>
 </tbody>
 </table>
