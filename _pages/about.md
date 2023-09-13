@@ -44,22 +44,17 @@ Technical Regulation Policy Division<em>(to be updated) </em>
   * TBT (Technical Barriers to Trade) : technical regulations, standards, and conformity assessment procedures creating unnecessary obstacles to trade
 * Initiated and Leaded in opening the World-wide information Map service of Mandatory Technical Regulations, April 2021, [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=163984&bbs_cd_n=81&currentPage=1&search_key_n=user_nm_v&cate_n=1&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
 
-
-Metrology & Measurement Division <em>(to be updated ) </em>
+Metrology & Measurement Division <em>(to be updated) </em>
 * Organized ‘Smart Metering Forum’ with participation of overt 100 industry, academia, and research institutes as a private voluntary forum, July 2017, [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=159457&bbs_cd_n=81&currentPage=11&search_key_n=user_nm_v&cate_n=1&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
 
-
 Electronics & Information Standards Division<em>(to be updated) </em>
-
 * Establishment of the Standardization Strategies 
   -	‘The National Standardization Strategy for Health Informatics’, June 2014,  [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=156561&bbs_cd_n=81&currentPage=11&search_key_n=user_nm_v&cate_n=&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
   -	‘The Standardization Promotion Strategy to support the spread of Smart Factory(manufacturing innovation), July 2015, [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=157412&bbs_cd_n=81&currentPage=11&search_key_n=user_nm_v&cate_n=&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8) 
-
 * Official of mirror TCs/SCs/WGs related to international IT Standardization committees or working groups:
   -	JTC 1 : SC 6, SC 27, SC 31, SC 34, SC 38, WG 7, WG 9, WG 10
   -	ISO : TC 184/SC 4 and SC 5
   -	IEC : TC 65, TC 80, TC 86, SyC AAL
-
 * Official of domestic standardization study groups:
   -	Power Line Communication
   -	Smart manufacturing(corresponding with IEC/SMB/SG 8)
@@ -121,6 +116,7 @@ Study on the lower power communications and networking techniques for Massively 
 *	Standards: IEEE 802.16e(Mobile WiMAX), 3GPP(WCDMA, LTE Layer 2~Layer 7), IETF RFCs(TCP, IP, HTTP, Authentication, Authorization, and Accounting etc.), OMA(Over The Air Device Management)
 *	Design Applications: MATLAB
 *	Programming: C/C++, VHDL
+*	**Swimming** :satisfied:	(생활스포츠지도사 2급 수영, Lifetime sports instructor, Level 2, 문화체육관광부, 2021년 12월)
 
 
 ## PERSONAL PARTICULARS
