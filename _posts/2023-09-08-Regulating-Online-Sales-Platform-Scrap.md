@@ -1,12 +1,13 @@
 ---
-title: "Scraps on Regulation on Online Sales Platfrom"
+title: "News Scraps : Regulation on Online Product Sale Platfrom"
 categories:
   - Regulation
 tags:
   - Scraps
   - product safty
+  - news scraps
 
-last_modified_at: 2023-09-08T08:14:50-14:56
+last_modified_at: 2023-09-11T10:45:50-11:56
 ---
 
 ### 해외사례 : 미국 통신품위법 230조

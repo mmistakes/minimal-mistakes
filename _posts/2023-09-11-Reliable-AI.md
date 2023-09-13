@@ -5,8 +5,9 @@ categories:
 tags:
   - AI
   - Reliable AI
+  - news scraps
 
-last_modified_at: 2023-09-11T16:44:50-17:00
+last_modified_at: 2023-09-13T10:44:50-11:00
 ---
 
 ### 국내 News 
