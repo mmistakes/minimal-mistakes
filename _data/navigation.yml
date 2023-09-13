@@ -19,25 +19,25 @@ docs:
   - title: "Project"
     url: /project-archive/
     children:
-      - title: "P&ID"
+      - title: "설계 도면 인식"
         url: /projects/pnid/
-      - title: "ITB"
+      - title: "법률 문서 분석"
         url: /projects/itb/
 
 docs1:
-  - title: "Project1"
+  - title: "설계 도면 인식"
     url: /projects/pnid/
     children:
-      - title: "P&ID1"
+      - title: "프로젝트 배경"
         url: /projects/pnid/01
       - title: "P&ID2"
         url: /projects/pnid/02
 
 docs2:
-  - title: "Project2"
+  - title: "법률 문서 분석"
     url: /projects/itb/
     children:
-      - title: "ITB"
+      - title: "프로젝트 배경"
         url: /projects/itb/01
       - title: "ITB2"
         url: /projects/itb/02
