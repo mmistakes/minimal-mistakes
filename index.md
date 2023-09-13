@@ -12,7 +12,7 @@ feature_row:
   - image_path: /assets/images/project.jpg
     alt: "Project"
     title: "Explore My Projects"
-    excerpt: "Explore [my projects](/project-archive){: .btn--large }, delve into what I'm currently working on, and discover the topics that pique my interest!"
+    excerpt: "Explore [my projects](/projects){: .btn--large }, delve into what I'm currently working on, and discover the topics that pique my interest!"
   - image_path: /assets/images/github.jpeg
     alt: "GitHub"
     title: "Check Out My GitHub"

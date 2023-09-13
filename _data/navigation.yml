@@ -11,13 +11,13 @@ main:
   - title: "Tag"
     url: /tags/
   - title: "About Me"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
+    url: /assets/docs/cv.pdf
   - title: "Search"
     url: /search/
 
 docs:
   - title: "Project"
-    url: /project-archive/
+    url: /projects/
     children:
       - title: "설계 도면 인식"
         url: /projects/pnid/
