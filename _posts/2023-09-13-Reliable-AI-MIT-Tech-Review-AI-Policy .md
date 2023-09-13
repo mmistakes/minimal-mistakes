@@ -1,5 +1,5 @@
 ---
-title: "AI Regulations"
+title: "MIT Technolgy Review on AI-Policy"
 categories:
   - AI Regulation
 tags:
