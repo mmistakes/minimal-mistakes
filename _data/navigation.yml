@@ -12,7 +12,7 @@ main:
     url: /categories/
   #- title: "Sample Collections"
   #  url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
-  - title: "External Link"
-    url: https://google.com
+  # - title: "Sitemap"
+  #   url: /sitemap/
+  # # - title: "External Link"
+  # #   url: https://google.com
