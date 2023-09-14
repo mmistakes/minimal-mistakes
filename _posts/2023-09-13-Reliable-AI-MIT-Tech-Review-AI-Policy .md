@@ -11,12 +11,11 @@ tags:
 last_modified_at: 2023-09-13T16:50:50-11:00
 ---
 
-## Six ways that AI could change politics
+## Six ways that AI could change politics [Link](https://www.technologyreview.com/2023/07/28/1076756/six-ways-that-ai-could-change-politics/)
 A new era of AI-powered domestic politics may be coming. Watch for these milestones to know when it’s arrived.
 
 By Bruce Schneier & Nathan E. Sanders
 July 28, 2023
-[Link](https://www.technologyreview.com/2023/07/28/1076756/six-ways-that-ai-could-change-politics/)
 
 ### Summary 
 AI가 민주주의를 어떻게 위협할지 다루는 공적 논의 미흡. AI가 주도하는 새로운 민주정치 시대를 예고하는 6가지 단계가 정리됨. 
@@ -39,23 +38,25 @@ AI가 민주주의를 어떻게 위협할지 다루는 공적 논의 미흡. AI�
 
 
 
-## What to know about Congress’s inaugural AI meeting
+## What to know about Congress’s inaugural AI meeting [Link](https://www.technologyreview.com/2023/09/11/1079244/what-to-know-congress-ai-insight-forum-meeting/)
+
 We’re going to be hearing a lot about various plans and positions on AI regulation in the coming weeks.
 
 By Tate Ryan-Mosleyarchive page
 September 11, 2023
-[Link](https://www.technologyreview.com/2023/09/11/1079244/what-to-know-congress-ai-insight-forum-meeting/)
 
 ### Summary 
-미국 의회가 다시 회기를 시작하면서 AI에 대한 논의가 본격화되고 있습니다. 수요일에 열리는 척 슈머 상원 원내대표의 첫 번째 AI 인사이트 포럼을 시작으로 앞으로 몇 주 동안 AI 규제에 대한 다양한 계획과 입장에 대해 많은 이야기를 듣게 될 것입니다. 이번 포럼과 향후 예정된 포럼에서는 AI 분야의 최고 전문가들이 모여 이 기술의 발전으로 인한 위험과 기회, 그리고 이를 해결하기 위한 의회의 법안 작성 방법에 대해 논의할 예정
+미국 의회가 다시 회기를 시작하면서 AI에 대한 논의가 본격화
+<br> 수요일에 열리는 척 슈머 상원 원내대표의 첫 번째 AI 인사이트 포럼을 시작으로 앞으로 몇 주 동안 AI 규제에 대한 다양한 계획과 입장에 대해 많은 이야기를 듣게 될 것
+<br> 이번 포럼과 향후 예정된 포럼에서는 AI 분야의 최고 전문가들이 모여 이 기술의 발전으로 인한 위험과 기회, 그리고 이를 해결하기 위한 의회의 법안 작성 방법에 대해 논의할 예정
 
 
-## There’s never been a more important time in AI policy 
+## There’s never been a more important time in AI policy [Link](https://www.technologyreview.com/2023/09/12/1079315/theres-never-been-a-more-important-time-for-ai-policy/)
 Plus: How to talk to your kid about AI.
 
 By Melissa Heikkiläarchive page
 September 12, 2023
-[Link](https://www.technologyreview.com/2023/09/12/1079315/theres-never-been-a-more-important-time-for-ai-policy/)
+
 
 ### Summary 
 

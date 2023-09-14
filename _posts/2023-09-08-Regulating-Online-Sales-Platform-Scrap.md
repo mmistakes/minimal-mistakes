@@ -7,12 +7,21 @@ tags:
   - product safty
   - news scraps
 
-last_modified_at: 2023-09-11T10:45:50-11:56
+last_modified_at: 2023-09-14T09:30:50-09:46
 ---
 
-### 해외사례 : 미국 통신품위법 230조
+### [미국] 통신품위법 230조
  * 빅테크 면책특권 없어질까…美대법원 '통신품위법 230조' 심리 시작 2023.02.21.  
    [link](https://www.asiae.co.kr/article/2023022109375981247)
+
+
+### [유럽] EU 디지털시장법 
+* 유럽연합(EU) 집행위원회가 알파벳(구글), 아마존, 애플, 바이트댄스, 메타, 마이크로소프트 6개 기업을 ‘게이트키퍼(Gatekeeper)’로 지정, 2023.09.11.
+ [link](https://www.donga.com/news/It/article/all/20230911/121130930/1)
+  * 게이트키퍼 : 올해 5월부터 EU에서 시행하는 디지털시장법(Digital Markets Act)에서 규정하는 시장지배적 영향력을 지닌 핵심 플랫폼 서비스를 보유한 사업자
+   * 참고 : NEWNEEK 기사, 2020.12.18. [디지털시장법 초안.txt](https://newneek.co/post/KwpjQr/?utm_medium=email&utm_source=newsletter&utm_campaign=20230913&utm_content=/post/KwpjQr)
+
+
 
 ### 기재부 주재 `범부처 플랫폼 정책협의체` 
  * 네이버 '자율규제 위원회' 발족…쿠팡, 중소상공인 해외진출 지원 29일 기재부 주재 제3차 범부처 플랫폼 정책협의체 개최 2023/08/29 
