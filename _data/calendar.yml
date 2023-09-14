@@ -18,6 +18,23 @@
   },
   {
     "image_path": null,
+    "alt": "Herbstferien",
+    "title": "Herbstferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=dmgydmhzZG8yNWg5ZXVrNmNkZXRqcHBnZnMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2023-10-23",
+      "date_time": null
+    },
+    "end": {
+      "date": "2023-11-04",
+      "date_time": null
+    },
+    "created": "2023-09-13T04:01:20.000Z",
+    "updated": "2023-09-13T04:01:20.761Z"
+  },
+  {
+    "image_path": null,
     "alt": "Fotograf 6. Klassen",
     "title": "Fotograf 6. Klassen",
     "excerpt": null,
