@@ -44,6 +44,8 @@ layout: default
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
+      {% include subscribe.html %}
+
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
@@ -60,6 +62,8 @@ layout: default
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
       {% include comments.html %}
     {% endif %}
+
+
   </article>
 
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}

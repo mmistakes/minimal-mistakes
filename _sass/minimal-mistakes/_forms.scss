@@ -6,6 +6,9 @@ form {
   margin: 0 0 5px 0;
   padding: 1em;
   background-color: $form-background-color;
+  border: $form-border;
+  border-radius: $form-border-radius;
+  box-shadow: $form-shadow;
 
   fieldset {
     margin-bottom: 5px;
@@ -391,3 +394,12 @@ select:focus {
 #goog-wm-sb {
   @extend .btn;
 }
+
+
+/* Daniel added */
+/* Subscribe box */
+.subscribe-box {
+    display: inline-block;
+    width: 100%;
+}
+/* end Daniel added */
