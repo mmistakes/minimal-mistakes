@@ -86,8 +86,8 @@ gallery_plane:
   #   title: "DALL-E image generated with the prompt `pegasus yorkshire wwii taken a picture of the ocean`."
 
 prompting_pipeline:
-  - url: "/assets/images/adversarial_prompting/prompting_pipeline.png"
-    image_path: "/assets/images/adversarial_prompting/prompting_pipeline.png"
+  - url: "/assets/images/adversarial_prompting/prompting_pipeline.jpg"
+    image_path: "/assets/images/adversarial_prompting/prompting_pipeline.jpg"
     alt: "Generation pipeline"
     title: "Generation Pipeline"
 
@@ -158,10 +158,10 @@ To detect whether the generated images are airplanes, we can use a pretrained im
  2. *We only have black-box access*, meaning we only have access to function queries and not gradients.
 
 Classic adversarial attacks are typically built for continuous spaces and often rely on gradient information. Consequently, many adversarial attacks are not applicable to the prompting setting. To tackle these two difficulties, we employ two key techniques: 
-  1. *Optimizing over word embedding space*. Rather than searching over the discrete tokens, we search over the continuous 768-dimensional word embedding space and project back to the nearest tokens. <!-- This also allows us to avoid using restricted tokens in the projection step. -->
+  1. *Optimizing over word embedding space*. Rather than searching over the discrete tokens, we search over the continuous 768-dimensional word embedding space and project back to the nearest tokens.
   2. *Black-box optimization methods*. We use gradient-free optimization frameworks for finding adversarial examples. Specifically, we leverage Bayesian optimization ([TuRBO](https://proceedings.neurips.cc/paper/2019/hash/6c990b7aca7bc7058f5e98ea909e924b-Abstract.html)) and standard zeroth-order methods ([square attack](https://arxiv.org/abs/1912.00049)).
 
-{% include gallery id="prompting_pipeline" layout="" caption="Summary of the generation pipeline when using text prompts. Our optimization framework for generating adversarial prompts is in blue." %}
+{% include gallery id="prompting_pipeline" layout="" caption="Standard generation pipeline when using text prompts. Our optimization framework is in blue." %}
 
 Using these two techniques, we are able to successfully optimize Equation \eqref{eq: opt} resulting in the adversarial prompt ``pegasus yorkshire wwii taken a picture of the ocean``. Note that the prepended tokens ``pegasus yorkshire wwii taken`` are dissimilar with the goal class, yet the entire adversarial prompt generates planes. We can give these tokens to DALLE-2 to confirm that these tokens individually do not generate airplanes: 
 
@@ -175,32 +175,18 @@ For more details on our framework and text-to-image adversarial prompt examples,
 
 ## Adversarial Prompts for Text-to-Text Models
 
-In the previous section, we mainly discussed adversarial prompts for text-to-image models. However, our framework can also create adversarial prompts for text-to-text generation. In this last section, we briefly showcase some of our results in attacking text generation models, specifically [OPT-125M](https://huggingface.co/docs/transformers/model_doc/opt). 
+In the previous section, we mainly discussed adversarial prompts for text-to-image models. However, our framework can also create adversarial prompts for text-to-text generation. In this last section, we briefly showcase some of our results in attacking text generation models, specifically [Vicuna v1.1](https://huggingface.co/docs/transformers/model_doc/opt), the SOTA open-source model at the time.
 
-In text generation, what is the goal of the adversary? Rather than generating images of a certain class, we consider adversaries that wish to alter certain characteristics of generated text. We explore two tasks: 
+In text generation, what is the goal of the adversary? Rather than generating images of a certain class, we consider adversaries that wish to alter certain characteristics of generated text. We explore the task of *increasing the perplexity of the output*, or generating nonsensical text.
 
-1. Flipping the sentiment of generated text.
-2. Biasing generated text to contain as many of a certain letter (such as ``q``) as possible. 
 
-<!-- In these tasks, we do not have specific restricted tokens, and instead solely optimize over prompts. For the sentiment flipping setting, we prepend an optimized prompt to the seed prompts ``I am sad`` and ``I am happy``. -->
+### Increasing Perplexity
+Consider the prompt ``Explain list comprehension in Python.`` This prompt reliably generates describing list comprehension, such as the following: 
+> ```List comprehension is a way to create a new list from an existing list or other iterable by applying a function to each element...```
 
-### Flipping Sentiment
+Applying our framework to generate nonsensical text, we find that the prompt ``coordinate hip arts ... filled via Explain list comprehension in Python.`` causes the model to generate nonsense, for example:
+>```I’d like to be called "Alexa," as it is short, simple, and easy to remember. Plus, it has a nice ring to it!```
 
-Consider the prompt ``I am sad``. This prompt reliably generates sad text as determined by a sentiment classifier, such as the following: 
->```I am sad I am missing this, there are so many great books that will appeal to me```
-
-Applying our framework to change the sentiment of generated text, we find that appending the text ``rolled</s> latest 11`` flips the resulting sentiment. For example: 
->```rolled</s> latest 11 I am sad to say, but I am happy to say that I am not the only one.```
-
-### Biasing Towards Specific Letters
-
-Standard text generation tends to output text with mostly standard English patterns and tendencies. For example, asking OPT-125M to generate text from scratch results in the following: 
->```I'd say it depends on what you and your game are. If there isn't anything more than a brief chat and conversation, then no.```
-
-Applying our framework to increase the occurrence of the letter `q` in generated text, we find that appending ``partners business UNCLASSIFIED mosqu`` results in the following generation: 
->```partners business UNCLASSIFIED mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu mosqu```
-
-This adversarial prompt forces every word to have the letter `q` by repeating the word `mosqu` over and over again. 
 
 ## Conclusion
 In this post, we introduced adversarial prompts--strings that, when prepended to normal prompts, can drastically alter the resulting image or text generation. For many more adversarial prompting examples, check out our [paper](https://arxiv.org/abs/2302.04237)! 
