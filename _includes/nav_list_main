@@ -43,8 +43,15 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Oracle-Sql" %}
+                    {% if category[0] == "Ad-Oracle-Sql" %}
                         <li><a href="/categories/ad-oracle-sql" class="">Advanced SQL ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Mongo-DB" %}
+                        <li><a href="/categories/mongo-db" class="">Mongo DB ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
