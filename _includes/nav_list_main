@@ -17,6 +17,36 @@
                 {% endfor %}
             </ul>
 
+        <span class="nav__sub-title">MERN</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Mongo-DB" %}
+                        <li><a href="/categories/mongo-db" class="">Mongo DB ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Express" %}
+                        <li><a href="/categories/express" class="">Express ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "React" %}
+                        <li><a href="/categories/react" class="">React ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Node-JS" %}
+                        <li><a href="/categories/node-js" class="">Node.js ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
         <span class="nav__sub-title">Language</span>
             <ul>
                 {% for category in site.categories %}
@@ -48,13 +78,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Mongo-DB" %}
-                        <li><a href="/categories/mongo-db" class="">Mongo DB ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+
 
         <span class="nav__sub-title">Operating System</span>
             <ul>
