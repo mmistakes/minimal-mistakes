@@ -22,9 +22,15 @@ categories:
 ```
 > Juliaprogramming
 ```
-처럼 결과물이 출력된다. 즉 * 연산자는 두 string variable을 concatenate, combine 하는 역할이다. 띄어쓰기가 안되어있는게 좀 불편할 수 있는데, 이는 `Julia` 뒤나 `programming` 앞에 띄어쓰기를 넣은 상태로 입력해주면 된다.
-혹은,
+처럼 결과물이 출력된다. 즉 * 연산자는 두 string variable을 concatenate, combine 하는 역할이다. 띄어쓰기가 안되어있는게 좀 불편할 수 있는데, 이는 `Julia` 뒤나 `programming` 앞에 띄어쓰기를 넣은 상태로 입력해주면 된다. 혹은,
 
+```Julia
+"Julia" * "" * "programming"
+```
+과 같이 공백을 하나 따로 넣어주는 것도 가능하다.
+
+  
+다음 연산자는 ^이다. 제곱표시인데, 예상 가능하듯, Julia에서는 같은 string을 여러번 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMDk2MDc5Ml19
+eyJoaXN0b3J5IjpbNDAxMTA1NDY0XX0=
 -->
