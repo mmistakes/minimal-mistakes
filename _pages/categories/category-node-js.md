@@ -1,7 +1,7 @@
 ---
-title: "English Studying"
+title: "Node JS"
 layout: archive
-permalink: categories/english
+permalink: categories/node-js
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ---
 
-{% assign posts = site.categories.English %}
+{% assign posts = site.categories.Node-JS %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

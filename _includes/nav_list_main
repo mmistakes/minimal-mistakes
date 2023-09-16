@@ -57,6 +57,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "Java" %}
+                        <li><a href="/categories/java" class="">Java ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "CS" %}
                         <li><a href="/categories/cs" class="">C# ({{category[1].size}})</a></li>
                     {% endif %}
@@ -137,7 +144,7 @@
                 {% endfor %}
             </ul>
 
-        <span class="nav__sub-title">School</span>
+        <span class="nav__sub-title">Fundatmentals</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Computer" %}
@@ -152,8 +159,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-
-
 
         <span class="nav__sub-title">Coding Practice</span>
             <ul>
@@ -181,8 +186,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "English" %}
-                        <li><a href="/categories/english" class="">English Studying ({{category[1].size}})</a></li>
+                    {% if category[0] == "B-English" %}
+                        <li><a href="/categories/b-english" class="">Business English ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
