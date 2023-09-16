@@ -43,7 +43,7 @@ categories:
 
 ## Unicode letter
 
-추가적으로 $\alpha$와 같은 유니코드 문자를 어떻게 넣을 수 있는지에 대해서 설명하도록 하겠다. 이건 Markdown 문법이나 LaTeX와 똑같다고 볼 수 있는데 `\alpha`와 같이 백슬래쉬(\)를 이용해 원하는 문자를 입력한 다음, 탭버튼을 누르면 $\alpha$로 전환되는 것을 확인할 수 있다.
+추가적으로 $$\alpha$$와 같은 유니코드 문자를 어떻게 넣을 수 있는지에 대해서 설명하도록 하겠다. 이건 Markdown 문법이나 LaTeX와 똑같다고 볼 수 있는데 `\alpha`와 같이 백슬래쉬(\)를 이용해 원하는 문자를 입력한 다음, 탭버튼을 누르면 $\alpha$로 전환되는 것을 확인할 수 있다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNTAyNjA1OV19
+eyJoaXN0b3J5IjpbMTEzNjk2MTQwNywxMTE1MDI2MDU5XX0=
 -->
