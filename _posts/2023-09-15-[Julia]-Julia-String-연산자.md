@@ -30,7 +30,15 @@ categories:
 과 같이 공백을 하나 따로 넣어주는 것도 가능하다.
 
   
-다음 연산자는 ^이다. 제곱표시인데, 예상 가능하듯, Julia에서는 같은 string을 여러번 
+다음 연산자는 ^이다. 제곱표시인데, 예상 가능하듯, Julia에서는 같은 string을 여러번 반복할 때 사용할 수 있다.
+```Julia
+"Hello"^3
+```
+이렇게 입력한다면,
+```Julia
+> HelloHelloHello
+```
+와 같은 결과가 생성될 것이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAxMTA1NDY0XX0=
+eyJoaXN0b3J5IjpbLTExNzc1Mjk5NzRdfQ==
 -->
