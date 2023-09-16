@@ -211,7 +211,7 @@
 
   .archive__item-title {
     margin-top: 0.5em;
-    font-size: $type-size-5;
+    font-size: 0.82em;
   }
 
   .archive__item-excerpt {
@@ -219,7 +219,7 @@
 
     @include breakpoint($medium) {
       display: block;
-      font-size: $type-size-6;
+      font-size: $type-size-8;
     }
   }
 
