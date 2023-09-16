@@ -37,7 +37,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Oracle-Sql" %}
-                        <li><a href="/categories/oracle-sql" class="">Oracle SQL ({{category[1].size}})</a></li>
+                        <li><a href="/categories/oracle-sql" class="">SQL ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Oracle-Sql" %}
+                        <li><a href="/categories/ad-oracle-sql" class="">Advanced SQL ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
