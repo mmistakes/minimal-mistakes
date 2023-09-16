@@ -47,6 +47,15 @@
                 {% endfor %}
             </ul>
 
+        <span class="nav__sub-title">Mobile</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "IOS" %}
+                        <li><a href="/categories/ios" class="">iOS ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
         <span class="nav__sub-title">Language</span>
             <ul>
                 {% for category in site.categories %}
