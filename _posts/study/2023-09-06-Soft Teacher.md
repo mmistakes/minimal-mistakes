@@ -1,14 +1,12 @@
 ---
 layout: single
-title: "Distilling the Knowledge in a Neural Network"
+title: "End-to-End Semi-Supervised Object Detection with Soft Teacher"
 tags:
   - Paper
 categories:
   - 📄 paper
 
-author_profile: false
-sidebar:
-  nav: "docs"
+author_profile: true
 typora_root_url: ../
 use_math: true
 ---
