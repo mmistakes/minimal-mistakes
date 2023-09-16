@@ -39,6 +39,10 @@ categories:
 > HelloHelloHello
 ```
 와 같은 결과가 생성될 것이다. 
+
+## Unicode letter
+
+추가적으로 $\alpha$와 같은 유니코드 문자를 어떻게 넣을 수 있는지에 대해서 설명하도록 하겠다. 이건 Markdown 문법이나 LaTeX와 똑같다고 볼 수 있는데 `\alpha`와 같이 백슬래쉬(\)를 이용해 원하는 ㅇ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzc1Mjk5NzRdfQ==
+eyJoaXN0b3J5IjpbLTE4MjYxMjQ5ODJdfQ==
 -->
