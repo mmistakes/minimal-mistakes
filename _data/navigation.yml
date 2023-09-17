@@ -30,8 +30,16 @@ docs1:
     children:
       - title: "프로젝트 배경"
         url: /projects/pnid/01
-      - title: "P&ID2"
+      - title: "심볼 인식 1편"
         url: /projects/pnid/02
+      - title: "심볼 인식 2편"
+        url: /projects/pnid/03
+      - title: "텍스트 탐지&인식 1편"
+        url: /projects/pnid/04
+      - title: "텍스트 탐지&인식 2편"
+        url: /projects/pnid/05
+      - title: "라인 인식"
+        url: /projects/pnid/06
 
 docs2:
   - title: "⚖️ 법률 문서 분석"
