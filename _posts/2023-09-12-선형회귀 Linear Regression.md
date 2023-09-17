@@ -1,3 +1,9 @@
+---
+layout: single
+title: "선형 회귀(Linear Regression)"
+categories: DeepLearning
+---
+
 # 선형 회귀(Linear Regression)
 
 ---
