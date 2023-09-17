@@ -4,10 +4,10 @@ main:
     sublinks:
       - title: 설계 도면 인식 과제
         url: /projects/pnid/
-      - title: 설계 도면 인식 과제2
-        url: /projects/pnid2/
       - title: 법률 문서 분석 과제
         url: /projects/itb/
+      - title: 임시 프로젝트
+        url: /projects/tmp/
   - title: "Study"
     url: /studies/
   - title: "Tag"
