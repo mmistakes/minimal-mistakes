@@ -1,7 +1,7 @@
 ---
 title: "Multi-cluster database migration using logical replication"
 header: 
-  og_image: /images/pg-replication/header.svg
+  og_image: /images/pg-replication/header.png
 tags: [databases, postgres, kubernetes]
 excerpt: "Migrating a Postgres database from AWS RDS to k8s with near-zero downtime."
 ---
