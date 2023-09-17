@@ -5,4 +5,4 @@ excerpt: "문의"
 toc: true
 ---
 
-E-mail: pjh9996@kookmin.ac.kr (박정현)
+E-mail: koder0205@gmail.com (박성훈)

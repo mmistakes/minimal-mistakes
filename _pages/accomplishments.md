@@ -14,6 +14,12 @@ toc: true
 - SCPC - Samsung Collegiate Programming Competition
 - 국민대학교 교내 알고리즘 경진대회
 
+## 2023
+
+| 대회명                                                                                        | 팀명               | 팀 멤버 | #               |
+| --------------------------------------------------------------------------------------------- | ------------------ | ------- | ----------------|
+| [2023 국민대학교 & 중앙대학교 프로그래밍 경진대회](https://www.acmicpc.net/contest/view/1100) | -                  |         | 연합 대회 개최  |
+
 ## 2022
 
 | 대회명                                                                      | 팀명               | 팀 멤버                                                                                                       | #                                         |
@@ -50,9 +56,9 @@ toc: true
 | 대회명                                                                                                            | 팀명            | 팀 멤버                                                                                                   | #                                   |
 | ----------------------------------------------------------------------------------------------------------------- | --------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------- |
 | [ICPC Seoul Regional Onsite Regional Contest](https://icpc.global/regionals/finder/Seoul-2019/standings)          | Taste Why Frame | [박정현](http://boj.kr/u/pjh9996), [윤상건](http://boj.kr/u/ggj06281), [장병준](http://boj.kr/u/sunjbs98) | 18                                  |
-| [ICPC Seoul Regional Onsite Regional Contest](https://icpc.global/regionals/finder/Seoul-2019/standings)          | SIGHUP          | [박종흠](http://boj.kr/u/whdgmawkd), 이강희, 이시현                                                       | 23                                  |
+| [ICPC Seoul Regional Onsite Regional Contest](https://icpc.global/regionals/finder/Seoul-2019/standings)          | SIGHUP          | [박종흠](http://boj.kr/u/whdgmawkd), [이강희](http://boj.kr/ganghe74), 이시현                             | 23                                  |
 | ICPC Seoul Regional Preliminary Contest                                                                           | Taste Why Frame | [박정현](http://boj.kr/u/pjh9996), [윤상건](http://boj.kr/u/ggj06281), [장병준](http://boj.kr/u/sunjbs98) | 1 / 60 (국민대 참가팀 중), 본선진출 |
-| ICPC Seoul Regional Preliminary Contest                                                                           | SIGHUP          | [박종흠](http://boj.kr/u/whdgmawkd), 이강희, 이시현                                                       | 2 / 60 (국민대 참가팀 중), 본선진출 |
+| ICPC Seoul Regional Preliminary Contest                                                                           | SIGHUP          | [박종흠](http://boj.kr/u/whdgmawkd), [이강희](http://boj.kr/ganghe74), 이시현                             | 2 / 60 (국민대 참가팀 중), 본선진출 |
 | Samsung Collegiate Programming Competition                                                                        | -               | [박정현](http://boj.kr/u/pjh9996)                                                                         | Finalist                            |
 | Samsung Collegiate Programming Competition                                                                        | -               | [윤상건](http://boj.kr/u/ggj06281)                                                                        | Finalist                            |
 | Samsung Collegiate Programming Competition                                                                        | -               | [장병준](http://boj.kr/u/sunjbs98)                                                                        | Finalist                            |
