@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Jusung Lee"
-  avatar           : "assets/images/github-profile.md"
+  avatar           : ![github-profile](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/61a48a24-8502-4525-a1a9-42ca40578f82)
   bio              : "인공지능을 공부하는 학부생입니다.<br>공부한 것들에 대해 정리하고 있습니다."
   location         : "Republic of Korea"
   email            : 
