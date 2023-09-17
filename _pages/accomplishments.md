@@ -22,11 +22,13 @@ toc: true
 
 ## 2022
 
-| 대회명                                                                      | 팀명               | 팀 멤버                                                                                                       | #                                         |
-| --------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
-| [제6회 천하제일 코딩대회 예선](https://www.acmicpc.net/contest/view/821)    | -                  | [심준](http://boj.kr/u/wesley2003)                                                                            | 문제출제                                  |
-| [2022 선린 정보 알고리즘경시대회](https://www.acmicpc.net/contest/view/857) | -                  | [심준](http://boj.kr/u/wesley2003)                                                                            | 문제출제                                  |
-| [UCPC 2022 예선](https://www.acmicpc.net/contest/spotboard/827)             | Taste Why Frame v3 | [서형빈](http://boj.kr/u/antifly55), [손강민](http://boj.kr/u/gangminson), [윤상건](http://boj.kr/u/ggj06281) | 63 / 294 (국민대 참가팀 중: #1), 본선진출 |
+| 대회명                                                                                             | 팀명               | 팀 멤버                                                                                                       | #                                          |
+| -------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| [ACM-ICPC Asia Seoul Regional Contest](http://static.icpckorea.net/20221119/scoreboard/)           | FastIO             | [김태우](http://boj.kr/ktw020406), [최호경](http://boj.kr/herdson), [한창훈](http://boj.kr/noye)              | 24 / 71 (국민대 참가팀 중: 2/4)            |
+| [ICPC Seoul Regional Preliminary Contest](http://static.icpckorea.net/2022/scoreboard_preliminary) | FastIO             | [김태우](http://boj.kr/ktw020406), [최호경](http://boj.kr/herdson), [한창훈](http://boj.kr/noye)              | 33 / 353 (국민대 참가팀 중: 1/9), 본선진출 |
+| [제6회 천하제일 코딩대회 예선](https://www.acmicpc.net/contest/view/821)                           | -                  | [심준](http://boj.kr/u/wesley2003)                                                                            | 문제출제                                   |
+| [2022 선린 정보 알고리즘경시대회](https://www.acmicpc.net/contest/view/857)                        | -                  | [심준](http://boj.kr/u/wesley2003)                                                                            | 문제출제                                   |
+| [UCPC 2022 예선](https://www.acmicpc.net/contest/spotboard/827)                                    | Taste Why Frame v3 | [서형빈](http://boj.kr/u/antifly55), [손강민](http://boj.kr/u/gangminson), [윤상건](http://boj.kr/u/ggj06281) | 63 / 294 (국민대 참가팀 중: #1), 본선진출  |
 
 ## 2021
 
