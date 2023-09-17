@@ -119,7 +119,7 @@ x를 3x2형태의 2차원 텐서(벡터)로 표현하고 weight를 2x3크기의 
 
 그럼 y=XW+B라고 쉽게 표현 할 수 있습니다.
 
-![Untitled 11](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/e7d53039-fb49-4624-bca3-e7bd9d1ec300)
+![Untitled 28](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/0b118ce7-bb10-4071-a0eb-adfae5d2cea6)
 
 
 그럼 우리가 다루었던 개념들을 pytorch로 표현해봅시다.
