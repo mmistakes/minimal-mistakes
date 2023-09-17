@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: "선형 회귀(Linear Regression)"
 categories: DeepLearning
 ---
