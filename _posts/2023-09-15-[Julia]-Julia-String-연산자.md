@@ -60,11 +60,19 @@ println(x)
 ```
 이렇게 `\`를 넣으면 그 다음에 오는 `"`나 `$`, `\`의 기호를 하나의 character로 입력하게 해준다.
 
-백슬래쉬는 또 다른 역할이 ㅇ
+백슬래쉬는 또 다른 역할이 있는데, `\n` 이나 `\t`를 입력하면 줄 간격을 띄우거나 탭 버튼과 같은 역할을 하게 할 수 있다.
+
+```
+x = "He said  \n \"Hello, World!\"";
+println(x)
+> He said
+ "Hello, World!"
+```
+와 같이 말이다.
 
 +) Stackedit(나의 Markdown 편집기) 상에서는 분명 alpha가 잘 보이는데, 왜 내 블로그에서 보면 깨져서 나오는지 모르겠다. 아시는 분 있으면 댓글 부탁드립니다ㅜㅜ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwODg1OTU5OSwtNTM0MjkwNjE0LDEzND
+eyJoaXN0b3J5IjpbMTc4Njk3OTUzNywtNTM0MjkwNjE0LDEzND
 U4MTk1NDMsMjEzNjM2MDQ3MSwxNjAyNzQ1NDgzLDExMTUwMjYw
 NTldfQ==
 -->
