@@ -1,3 +1,9 @@
+---
+layout: single
+title: "다중 선형 회귀(Multi Linear Regression)"
+categories: DeepLearning
+---
+
 # 다중 선형 회귀(Multi Linear Regression)
 
 이번에는 한번 다중 선형 회귀 (Multi Linear Regression)에 대해 다루어 봅시다.
