@@ -47,11 +47,15 @@ categories:
 
 ## Escape
 
-
+```
+x = "He said "Hello, World!"";
+println(x)
+```
+과 같이 입력하면 에러가 뜰 것이다. 그 이유는 Julia에서 `x = "He said "`까지만을 변수로 받아들이기 때문이다. 여기에서 `"`를 하나의 character 변수로 인지하게끔 하기 위해선
 
 +) Stackedit(나의 Markdown 편집기) 상에서는 분명 alpha가 잘 보이는데, 왜 내 블로그에서 보면 깨져서 나오는지 모르겠다. 아시는 분 있으면 댓글 부탁드립니다ㅜㅜ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMjE5Mzg2NSwtNTM0MjkwNjE0LDEzND
-U4MTk1NDMsMjEzNjM2MDQ3MSwxNjAyNzQ1NDgzLDExMTUwMjYw
-NTldfQ==
+eyJoaXN0b3J5IjpbMzE2MTgyMzM2LC01MzQyOTA2MTQsMTM0NT
+gxOTU0MywyMTM2MzYwNDcxLDE2MDI3NDU0ODMsMTExNTAyNjA1
+OV19
 -->
