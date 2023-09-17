@@ -4,6 +4,7 @@ title: "선형 회귀(Linear Regression)"
 categories: DeepLearning
 ---
 
+
 이번에는 인공지능에서 가장 기본 적인 선형 회귀 바로 Linear Regression에 대해 알아보도록 합시다.
 
 ### 그래서 선형 회귀가 뭐임? 첨 들어봄
