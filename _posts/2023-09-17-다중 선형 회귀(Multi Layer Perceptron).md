@@ -1,8 +1,8 @@
 ---
-layout: single
-title: "다중 선형 회귀(Multi Linear Regression)"
+layout: post
+title: "선형 회귀(Linear Regression)"
 categories: DeepLearning
-tag: [python, coding, DeepLearning, LinearRegression]  
+tag: [DeepLearning, coding, python, LinearRegression]
 ---
 
 # 다중 선형 회귀(Multi Linear Regression)
