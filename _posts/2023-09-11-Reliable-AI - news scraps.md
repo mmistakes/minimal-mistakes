@@ -1,5 +1,5 @@
 ---
-title: "AI Regulations"
+title: "AI Regulations - News Scraps"
 categories:
   - AI Regulation
 tags:

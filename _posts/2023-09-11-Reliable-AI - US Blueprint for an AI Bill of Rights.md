@@ -1,5 +1,5 @@
 ---
-title: "AI Regulations"
+title: "AI Regulation - Blueprint for an AI Bill of Rights(OCTOBER 2022) "
 categories:
   - AI Regulation
 tags:
