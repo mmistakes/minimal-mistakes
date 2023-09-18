@@ -10,7 +10,7 @@ tags:
 
 last_modified_at: 2023-09-18T16:20:50-16:30
 ---
-### Basic information: 
+## Basic information: 
 SEPTEMBER 13, 2023
 
 The first of nine sessions <strong> Senate Majority Leader Chuck Schumer</strong> has scheduled. These meetings will compliment upcoming public hearings addressing AI’s impacts on a wide range of issues, including national security, workers, the economy, copyright protections, transparency and disclosure, social challenges and ethical issues. 
@@ -34,7 +34,11 @@ Summary :  미국 빅테크 총수들은 AI의 부정적 영향에 대한 우려
   
   행사를 주최한 척 슈머 상원 원내대표는 행사 후 인터뷰를 통해 참석자 전원이 AI 규제에 찬성한다는 뜻을 밝힘
 
-  ![foo](https://images.chosun.com/resizer/KCW6rQfi67Yzi8Qtsgql0zwRAwM=/480x365/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/BEULKYTPAFHYJFAHLOZSI7KBRU.png)
+<figure>
+    <img src="https://images.chosun.com/resizer/KCW6rQfi67Yzi8Qtsgql0zwRAwM=/480x365/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/BEULKYTPAFHYJFAHLOZSI7KBRU.png"
+         alt="Albuquerque, New Mexico">
+    <figcaption> 출처 : 조선일보</figcaption>
+</figure>
 
   ![foo](https://images.chosun.com/resizer/sKx3zD2LRZvKpS4zvwOEfE78Jqg=/480x1699/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/V4DSLNK43VCY7GSNKIB5OENFOU.png)
 
