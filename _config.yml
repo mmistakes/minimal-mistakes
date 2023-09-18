@@ -17,13 +17,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 title                    : "감자닮은 사람 개발블로그"
-title_separator          : "현재 백준, 파이썬, 학교에서 배우는 거 정리용도
-추후에 게임쪽 개발목표"
-subtitle                 : 현재 백준, 파이썬, 학교에서 배우는 거 정리용도
-추후에 게임쪽 개발목표# site tagline that appears below site title in masthead
+title_separator          : "현재 백준, 파이썬, 학교에서 배우는 거 정리용도"
+subtitle                 : 현재 백준, 파이썬, 학교에서 배우는 거 정리용도" # site tagline that appears below site title in masthead
 name                     : "Gamchachip"
-description              : "현재 백준, 파이썬, 학교에서 배우는 거 정리용도
-추후에 게임쪽 개발목표"
+description              : "현재 백준, 파이썬, 학교에서 배우는 거 정리용도"
 url                      : "https://gamchachip.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -107,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Younhan"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "백준, 파이썬, 학교에서 배운 거등 정리용 블로그"
   location         : "Somewhere"
   email            :
   links:
