@@ -28,7 +28,7 @@ docs1:
   - title: "📐 설계 도면 인식"
     url: /projects/pnid/
     children:
-      - title: "- 프로젝트 배경"
+      - title: "- 프로젝트 소개"
         url: /projects/pnid/01
       - title: "- 심볼 인식 1편"
         url: /projects/pnid/02
