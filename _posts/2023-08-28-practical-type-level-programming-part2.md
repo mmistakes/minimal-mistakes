@@ -4,6 +4,7 @@ date: 2023-08-28
 header:
   image: "/images/blog cover.jpg"
 tags: []
+toc: true
 excerpt: "JSON serialization of a concrete class with type-level techniques."
 ---
 
@@ -36,6 +37,13 @@ In the pseudo-code we are referring to the fields of a class as if it's a list, 
 
 If we try to do something like this:
 ```scala
+val user = User(
+  Email(
+    primary = "bilbo@baggins.com", 
+    secondary = Some("frodo@baggins.com")),
+  Phone(number = "555-555-00", prefix = 88),
+  Address(country = "Shire", city = "Hobbiton"))
+
 val fields = user.productIterator
 ```
 
@@ -104,13 +112,15 @@ To implement our own `map`-like function on tuples we are going to use the analo
 
 Suppose we have a `List` and we want to convert each element to JSON and aggregate the results into a new `List`. Here's a simplified, and non-tail-recursive[^tailRecursion] solution for this problem:
 ```scala
-def listToJson(ls: List[X]): List[Json]
+def listToJson[X: Encoder](ls: List[X]): List[Json]
   ls match 
     case Nil => Nil
     case h :: t => 
+      val encoder = summon[Encoder[X]]
+      
       val json = encoder(h) 
       
-      json :: listToJson(f, t)
+      json :: listToJson(t)
 ```
 
 [^tailRecursion]: A non-tail-recursive version is much more natural in these circumstances, and thus easier to implement. Although it is not acceptable in Scala for the `List` type, it will be perfectly fine for the tuple code that we are writing. Since tuples are usually not that big.

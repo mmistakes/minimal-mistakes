@@ -4,6 +4,7 @@ date: 2023-08-27
 header:
   image: "/images/blog cover.jpg"
 tags: []
+toc: true
 excerpt: "Learn how to use type-level programming to solve practical problems."
 ---
 
