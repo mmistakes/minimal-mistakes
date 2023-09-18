@@ -9,15 +9,15 @@ header:
 excerpt: >
   Welcome. Exploring AI projects and research, my tech blog documents the development journey of an AI Engineer, delving into interestful papers and growth experiences. 🚀<br />
 feature_row:
-  - image_path: /assets/images/project.jpg
+  - image_path: /assets/images/home/project.jpg
     alt: "Project"
     title: "Explore My Projects"
     excerpt: "Explore [my projects](/projects){: .btn--large }, delve into what I'm currently working on, and discover the topics that pique my interest!"
-  - image_path: /assets/images/github.jpeg
+  - image_path: /assets/images/home/github.jpeg
     alt: "GitHub"
     title: "Check Out My GitHub"
     excerpt: "Explore comprehensive project details on my [GitHub](https://github.com/sangjinoh){: .btn--large } profile."
-  - image_path: /assets/images/email.jpg
+  - image_path: /assets/images/home/email.jpg
     alt: "E-Mail"
     title: "Get in Touch"
     excerpt: "Feel free to [reach out](mailto:dhtkdwls537@gmail.com){: .btn--large } anytime if you'd like to have a conversation!"
