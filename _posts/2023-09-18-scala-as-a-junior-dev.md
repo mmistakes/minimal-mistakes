@@ -1,13 +1,20 @@
 ---
-title: "Scala as a junior developer"
-date: 2023-07-xx
+title: "Scala as a Junior Developer"
+date: 2023-09-18
 header:
-  image: ""
+  image: "/images/blog cover.jpg"
 tags: []
-excerpt: "My beginner's story with Scala"
+excerpt: "A story of a beginner developer learning and working with Scala."
 toc: true
-toc_label: "Table of contents"
+toc_label: "The Story"
 ---
+
+_By [Lucas Nouguier](https://github.com/iusildra)_
+
+> Hey everyone, Daniel here. Lucas' story is shared by lots of beginner Scala developers, which is why I wanted to post it here on the blog. I've watched thousands of developers learn Scala from scratch, and, like Lucas, they love it!
+> 
+> If you want to learn Scala well **and** fast, take a look at my [Scala Essentials](https://rockthejvm.com/p/scala) course at Rock the JVM.
+> Enjoy!
 
 ## 1. Why Scala?
 
