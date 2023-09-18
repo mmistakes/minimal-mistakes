@@ -2,7 +2,7 @@
 layout: post
 title: "선형 회귀(Linear Regression)"
 categories: DeepLearning
-tag: [DeepLearning, coding, python]
+tag: [DeepLearning, coding, python, LinearRegression]
 ---
 
 
