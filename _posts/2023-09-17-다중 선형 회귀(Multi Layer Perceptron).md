@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "다중 선형 회귀(Multi Linear Regression)"
 categories: DeepLearning
 tag: [DeepLearning, coding, python, LinearRegression]
