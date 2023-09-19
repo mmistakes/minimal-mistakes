@@ -2,8 +2,6 @@
 permalink: /about/
 title: "About"
 excerpt: "Mi cuento de doula del final de la vida."
-header:
-  teaser: assets/images/MH - EOLD - LOGO.png
 last_modified_at: 2023-09-19T13:30:26-05:00
 toc: true
 ---
