@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 excerpt: "Mi cuento de doula del final de la vida."
 last_modified_at: 2023-09-19T13:30:26-05:00
-toc: true
+toc: false
 ---
 
 Yo me crie en Veracruz, Panama y siempre he estado interesado en la muerte. Desde el punto de visto científico, como el cuerpo simplemente “para” y su repercusión en lo espiritual nuestra alma/espíritu continua a otra vida? 
