@@ -202,19 +202,22 @@ object Server {
   private val orderService: Resource[IO, ServerServiceDefinition] =
     OrderFs2Grpc.bindServiceResource[IO](new OrderService)
 
-  private def runServer(service: ServerServiceDefinition) = NettyServerBuilder
-    .forPort(9999)
-    .addService(service)
-    .resource[IO]
-    .evalMap(server => IO(server.start()))
-    .useForever
+  private def runServer(
+      service: ServerServiceDefinition
+  ): Resource[IO, Server] =
+    NettyServerBuilder
+      .forPort(9999)
+      .addService(service)
+      .resource[IO]
 
-  val grpcServer = orderService.use(srvr => runServer(srvr))
+  val grpcServer: Resource[IO, Server] =
+    orderService
+      .flatMap(x => runServer(x))
 }
 ```
 Above we create our `gRPC` service by calling the `bindServiceResource()` method on `OrderFs2Grpc` and passing it a service implementation, in our case a new instance of `OrderService`, this returns a `Resource[IO, ServerServiceDefinition]`.
 
-The `runServer` function uses `NettyServerBuilder` to create our server which will run on port `9999`. In the last line, we call the `use()` method on our `orderService` `Resource` and pass the `ServerServiceDefinition` to `runServer()`.
+The `runServer` function uses `NettyServerBuilder` to create our server which will run on port `9999`. In the last line, we create our final `Resource` by calling `flatMap` on the `orderService` `Resource` and passing the `ServerServiceDefinition` to `runServer()`.
 
 Here's the full code:
 ```scala
@@ -246,14 +249,17 @@ object Server {
   private val orderService: Resource[IO, ServerServiceDefinition] =
     OrderFs2Grpc.bindServiceResource[IO](new OrderService)
 
-  private def runServer(service: ServerServiceDefinition) = NettyServerBuilder
-    .forPort(9999)
-    .addService(service)
-    .resource[IO]
-    .evalMap(server => IO(server.start()))
-    .useForever
+  private def runServer(
+      service: ServerServiceDefinition
+  ): Resource[IO, Server] =
+    NettyServerBuilder
+      .forPort(9999)
+      .addService(service)
+      .resource[IO]
 
-  val grpcServer = orderService.use(srvr => runServer(srvr))
+  val grpcServer: Resource[IO, Server] =
+    orderService
+      .flatMap(x => runServer(x))
 }
 ```
 ## 4. The gRPC client.
@@ -808,12 +814,17 @@ import cats.syntax.parallel.*
 object Main extends IOApp {
   ...
   def run(args: List[String]): IO[ExitCode] =
-    (httpServerStream, grpcServer)
+    (
+      httpServerStream,
+      grpcServer
+        .evalMap(svr => IO(svr.start()))
+        .useForever
+    )
       .parMapN((http, grpc) => ())
       .as(ExitCode.Success)
 }
 ```
-In the `run()` function we call both `httpServerStream` and `grpcServerStream` in parellel using `parMapN()` from `cats.syntax.parallel`.
+In the `run()` function we call both `httpServerStream` and `grpcServerStream` in parellel using `parMapN()` from `cats.syntax.parallel`. We also call `evalMap()` on the `grpcServer` `Resource` to start the server and make sure it keeps running by calling `useForever()`.
 
 Now Let's test our application.
 When we run our server and navigate to `localhost:8080/index.html`, we should be greeted with the following page.
