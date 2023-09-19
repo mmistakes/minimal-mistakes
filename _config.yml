@@ -99,7 +99,7 @@ analytics:
   provider               : "google" #false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : "UA-6363363-2"
-    anonymize_ip         : # true, false (default)
+    anonymize_ip         : false # true, false (default)
 
 
 # Site Author
