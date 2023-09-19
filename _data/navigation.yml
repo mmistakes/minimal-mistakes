@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "About"
-    url: mhermoso/mhermoso.github.io/_pages/about.md
+    url: _pages/about.md
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
