@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "es-PA" #"es-US"
-title                    : "Miguel Hermoso End-of-Life-Doula / Doula al final de la vida / Live Doula / Death Doula" #"Site Title"
+title                    : "Miguel Hermoso End-of-life-Doula" #"Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Miguel Hermoso"
