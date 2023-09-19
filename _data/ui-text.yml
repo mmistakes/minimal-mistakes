@@ -113,6 +113,8 @@ es-ES:
   <<: *DEFAULT_ES
 es-CO:
   <<: *DEFAULT_ES
+ es-PA:
+  <<: *DEFAULT_ES
 
 # French
 # ------
