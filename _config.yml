@@ -15,24 +15,24 @@
 minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 title                    : "감자닮은 사람 개발블로그"
-title_separator          : "현재 백준, 파이썬, 학교에서 배우는 거 정리용도"
-subtitle                 : 현재 백준, 파이썬, 학교에서 배우는 거 정리용도" # site tagline that appears below site title in masthead
+title_separator          : "|"
+subtitle                 : "small positve action" # site tagline that appears below site title in masthead
 name                     : "Gamchachip"
 description              : "현재 백준, 파이썬, 학교에서 배우는 거 정리용도"
 url                      : "https://gamchachip.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/siba.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs            : ture #false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "Gamchachip"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -104,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Younhan"
+  name             : "Yoonhan"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "백준, 파이썬, 학교에서 배운 거등 정리용 블로그"
-  location         : "Somewhere"
+  location         : "south korea"
   email            :
   links:
     - label: "Email"
@@ -287,6 +287,9 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+      show_date: true
+
+date_format: "%Y-%m-%d"
