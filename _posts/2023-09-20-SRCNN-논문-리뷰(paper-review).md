@@ -1,3 +1,9 @@
+---
+layout: single
+title: "SRCNN 논문 리뷰(Paper Review)"
+categories: DeepLearning
+tag: [DeepLearning, paper-reveiw, SRCNN, Super-Resolution] 
+---
 # SRCNN paper review(논문 리뷰)
 
 논문 명: Image Super-Resolution Using Deep Convolutional Networks
