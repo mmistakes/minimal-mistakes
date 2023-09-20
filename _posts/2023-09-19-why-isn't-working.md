@@ -1,6 +1,8 @@
 ---
 layout: single
 title:  "안녕하세요 !"
+tag: [python, jekyll, blog]
+categories: 백준
 summary: This is a sample post 2 by HG !
 author: SHG
 date: '2020-09-19 09:21:00 +0900'
