@@ -37,7 +37,7 @@ SRCNN이 나오기 전에 SR 분야에서 적용 시킨 방법은 아래와 같�
     
     해당 방식은 external example인 저 해상도/고 해상도 이미지 patch의 쌍을 매핑하는 함수를 학습시키는 방식이라고 합니다. 혹은 동일한 이미지의 내부 유사성을 활용 하는 방법이라고 합니다.
     
-    ![Untitled](SRCNN%20paper%20review(%E1%84%82%E1%85%A9%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AB%20%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2)%20aa62cf62b1a848ec90125d1bcf60183a/Untitled.png)
+    ![Untitled](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/a3f3af28-e8fd-44ea-bb14-77e1c715e3bf)
     
     [출처:[https://www.researchgate.net/publication/315954141_Multi-sensor_image_super-resolution_with_fuzzy_cluster_by_using_multi-scale_and_multi-view_sparse_coding_for_infrared_image](https://www.researchgate.net/publication/315954141_Multi-sensor_image_super-resolution_with_fuzzy_cluster_by_using_multi-scale_and_multi-view_sparse_coding_for_infrared_image)]
     
@@ -47,7 +47,7 @@ SRCNN이 나오기 전에 SR 분야에서 적용 시킨 방법은 아래와 같�
     
     해당 방식은 solution pipeline에 여러 단계가 포함이 됩니다.
     
-    ![Untitled](SRCNN%20paper%20review(%E1%84%82%E1%85%A9%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AB%20%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2)%20aa62cf62b1a848ec90125d1bcf60183a/Untitled%201.png)
+    ![Untitled 1](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/d6225e77-182f-4274-840c-7af52f6f6523)
     
     [출처:
     
@@ -149,7 +149,7 @@ SRCNN이 나오기 전에 SR 분야에서 적용 시킨 방법은 아래와 같�
     
     ---
     
-    ![Untitled](SRCNN%20paper%20review(%E1%84%82%E1%85%A9%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AB%20%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2)%20aa62cf62b1a848ec90125d1bcf60183a/Untitled%202.png)
+    ![Untitled 2](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/32494535-3472-48d5-b2a1-d6a920cd3f8f)
     
     [출처:[https://arxiv.org/abs/1501.00092](https://arxiv.org/abs/1501.00092)]
     
@@ -179,7 +179,7 @@ SRCNN이 나오기 전에 SR 분야에서 적용 시킨 방법은 아래와 같�
     
     ---
     
-    ![Untitled](SRCNN%20paper%20review(%E1%84%82%E1%85%A9%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AB%20%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2)%20aa62cf62b1a848ec90125d1bcf60183a/Untitled%202.png)
+    ![Untitled 2](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/32494535-3472-48d5-b2a1-d6a920cd3f8f)
     
     사실 위의 설명이 굉장히 복잡하고 어렵지만 위의 사진과 같이, SRCNN은 결국 Convolution layer에 Low-resolution image를 input에 넣고 선형 계산과 비선형 계산을 굉장히 많이 해서 high-resolution image를 최종적으로 출력 하는 얕은 CNN모델이라는 것 입니다.
     
@@ -191,8 +191,8 @@ SRCNN이 나오기 전에 SR 분야에서 적용 시킨 방법은 아래와 같�
     
     저자는 CNN과 Sparse-coding-based SR methods간의 관계를 설명해주며 Sparse-coding-based SR methods가 CNN으로 표현이 가능하다는 것을 보여줍니다.
     
-    ![Untitled](SRCNN%20paper%20review(%E1%84%82%E1%85%A9%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AB%20%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2)%20aa62cf62b1a848ec90125d1bcf60183a/Untitled%203.png)
-    
+    ![Untitled 3](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/d88eaf35-eb80-4325-afed-bbb34b7e848c)
+  
     1) input에서 f1 x f1 low resolution patch를 뽑아냅니다.
     
     2) 이후 뽑아낸 patch를  sparse coding solver를 통해 low resolution dictionary로 project한다고 합니다.
@@ -238,7 +238,7 @@ SRCNN이 나오기 전에 SR 분야에서 적용 시킨 방법은 아래와 같�
     
     MSE의 값이 낮아질수록 PSNR이 높아지므로 PSNR수치가 높으면 초 해상화가 잘 된 이미지라고 할 수 있습니다.
     
-    ![Untitled](SRCNN%20paper%20review(%E1%84%82%E1%85%A9%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AB%20%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2)%20aa62cf62b1a848ec90125d1bcf60183a/Untitled%204.png)
+    ![Untitled 4](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/def09213-c023-4bb4-9214-6edfa850509e)
     
     훈련과정에서 ground truth image인 X(i)는 훈련 이미지들로부터 f x f x c크기로 잘려진 sub-image 라고 합니다. 
     
@@ -256,7 +256,7 @@ SRCNN이 나오기 전에 SR 분야에서 적용 시킨 방법은 아래와 같�
     
     이전 SR연구에 따르면  YCbCr채널에서 Y채널만 적용이 되었다고 합니다. 그래서 1 채널만 적용을 했기 때문에 input채널과 output채널이 1이었다고 합니다. 그리고 마지막에는 컬러 이미지 네트워크로 확장 시켜서 각 각 다른 채널들의 성능도 평가했다고 합니다.
     
-    ![Untitled](SRCNN%20paper%20review(%E1%84%82%E1%85%A9%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AB%20%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2)%20aa62cf62b1a848ec90125d1bcf60183a/Untitled%205.png)
+    ![Untitled 5](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/fdcac50d-e62a-4ad2-b7d6-73dc0a0ef8ee)
     
     위의 사진은 input layer에 컬러 이미지를 넣었을 때 어떻게 채널이 분리 되는지 과정을 나타낸 사진입니다.
     
@@ -268,7 +268,7 @@ SRCNN이 나오기 전에 SR 분야에서 적용 시킨 방법은 아래와 같�
     
     마지막으로는 모델의 구조 및 데이터에 따른 실험 결과 입니다.
     
-    ![Untitled](SRCNN%20paper%20review(%E1%84%82%E1%85%A9%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AB%20%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2)%20aa62cf62b1a848ec90125d1bcf60183a/Untitled%206.png)
+  ![Untitled 6](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/aa370931-19c7-4d97-a41b-5ce4fb915ad5)
     
     훈련 데이터로는 ImageNet, 91 image 두 가지를 사용하였으며, 위의 그래프는 훈련 데이터에 따른 PSNR 수치 입니다.
     
@@ -276,8 +276,8 @@ SRCNN이 나오기 전에 SR 분야에서 적용 시킨 방법은 아래와 같�
     
     다음은 필터의 개수에 따른 성능 비교 입니다.
     
-    ![Untitled](SRCNN%20paper%20review(%E1%84%82%E1%85%A9%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AB%20%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2)%20aa62cf62b1a848ec90125d1bcf60183a/Untitled%207.png)
-    
+    ![Untitled 7](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/bc52faa7-6a70-486f-85d6-d83c9f1fc6ec)
+
     모델의 구조는 f1=9, f2=1, f3=5, n1=64, n2=32이 입니다.
     
     여기서 f1의 의미는 첫 번째 레이어의 필터의 크기가 9x9이며 n1은 첫번째 레이어의 필터의 개수가 64개라는 의미 입니다.
@@ -290,14 +290,14 @@ SRCNN이 나오기 전에 SR 분야에서 적용 시킨 방법은 아래와 같�
     
     그 다음은 필터의 크기에 따른 성능 지표 입니다.
     
-    ![Untitled](SRCNN%20paper%20review(%E1%84%82%E1%85%A9%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AB%20%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2)%20aa62cf62b1a848ec90125d1bcf60183a/Untitled%208.png)
-    
+    ![Untitled 8](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/70717c94-566c-41db-aea3-96fbdf8e02f3)
+
     위의 그래프는 필터의 크기에 따른 성능 지표이며 1번째 레이어 필터 크기가 9 X 9, 2번째 레이어 필터 크기가 5X5, 3번째 레이어 필터 크기가 5X5일 때 가장 좋은 성능을 보여주고 있습니다.
     
     다음은 모델의 깊이 즉 레이어의 개수에 따른 성능 비교 입니다.
     
-    ![Untitled](SRCNN%20paper%20review(%E1%84%82%E1%85%A9%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AB%20%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2)%20aa62cf62b1a848ec90125d1bcf60183a/Untitled%209.png)
-    
+    ![Untitled 9](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/7ca642e6-73ce-437e-9d24-737e3c32d279)
+
 
 위의 그래프는 각 모델의 필터 크기와 레이어의 개수를 다르게 했을 때 성능을 비교한 그래프 입니다.
 
@@ -307,7 +307,7 @@ SRCNN이 나오기 전에 SR 분야에서 적용 시킨 방법은 아래와 같�
 
 다음은 기존의 SR기법과 SRCNN의 성능 차이를 나타내주는 그래프 입니다.
 
-![Untitled](SRCNN%20paper%20review(%E1%84%82%E1%85%A9%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AB%20%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2)%20aa62cf62b1a848ec90125d1bcf60183a/Untitled%2010.png)
+![Untitled 10](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/12b7ae85-cd15-4d31-8107-2d00bce3c2ea)
 
 위 그래프에서는 이전에 많이 쓰였던 SR기법들과 SRCNN의 PSNR수치를 나타내는 그래프 입니다.
 
@@ -319,13 +319,13 @@ SRCNN은 기존의 SOTA 방법들에 비해 매우 우수한 성능을 보여 �
 
 논문 원본의 결과 물을 보더라도 SRCNN이 기존의 SOTA 방법들 보다 훨씬 더 선명하고 흐림이 없는 이미지 화질 개선을 이루어 냈습니다.
 
-![Untitled](SRCNN%20paper%20review(%E1%84%82%E1%85%A9%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AB%20%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2)%20aa62cf62b1a848ec90125d1bcf60183a/Untitled%2011.png)
+![Untitled 11](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/5440eea1-1dac-4dfc-8755-a63223c15401)
 
 또한 SRCNN은 다른 SOTA 방법들에 비해 초 해상화 된 이미지를 생성하는 속도도 훨씬 빨랐으며 PSNR수치도 높다는 것을 말해주고 있습니다.
 
 마지막으로 훈련 방법에 따른 각 채널별 평균 PSNR입니다.
 
-![Untitled](SRCNN%20paper%20review(%E1%84%82%E1%85%A9%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AB%20%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2)%20aa62cf62b1a848ec90125d1bcf60183a/Untitled%2012.png)
+![Untitled 12](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/03376002-4c9f-4a02-8e9c-142cbfb46f97)
 
 위의 지표는 각 훈련 방법에 따른 Y , Cb, Cr , RGB 컬러 이미지 채널에 따른 PSNR 평균 수치 입니다.
 
