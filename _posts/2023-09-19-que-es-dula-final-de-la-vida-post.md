@@ -1,14 +1,15 @@
 ---
-title: "Quienes son Doulas al final de la vida"
+title: "Quienes son Doulas al final de la vida?"
 tags:
-  - table of contents
+  - doulas al final de la vida
+  - End-of-life-doula
+  - EOLD
 toc: true
 toc_label: "Contenido"
 toc_icon: "heart"
 ---
 
 ![Logo](/assets/images/MH - EOLD - LOGO.png)
-{: .image-right}+
 
 ## Doula al Final de la Vida
 
@@ -52,13 +53,15 @@ Estos términos son utilizados para describir a profesionales que ofrecen apoyo 
 
 ### Otros Nombres
 
-#### En español, a las doulas al final de la vida también se les conoce como:
+#### En español,
+  a las doulas al final de la vida también se les conoce como:
 
 - Acompañantes del Final de la Vida
 - Doula de la Muerte
 - Doula del Tránsito
 
-#### En inglés, se les refiere como:
+#### En inglés, 
+  se les refiere como:
 
 - End-of-Life Doula
 - Death Doula
