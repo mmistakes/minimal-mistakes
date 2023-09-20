@@ -1,5 +1,6 @@
 ---
 title: "Quienes son Doulas al final de la vida?"
+excerpt: "Persona entrenada y dedicada a brindar apoyo emocional, espiritual."
 tags:
   - doulas al final de la vida
   - End-of-life-doula
@@ -7,6 +8,8 @@ tags:
 toc: true
 toc_label: "Contenido"
 toc_icon: "heart"
+header:
+  teaser: "assets/images/MH - EOLD - LOGO.png"
 ---
 
 ![Logo](/assets/images/MH - EOLD - LOGO.png)
