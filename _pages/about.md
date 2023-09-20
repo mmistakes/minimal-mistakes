@@ -17,4 +17,13 @@ Por estas razones y la virtuosa influencia de mi esposa, complete la [certificac
 
 Mi enfoque será en la educación y difusión de este mensaje y la noción de utilizar el poder de la muerte como parte importante de nuestra vida y como un proceso natural que puede ser enfrentado con cariño y paciencia, acompañando no solo al que muere, también a sus seres queridos. 
 
+<div style="position: relative; width: 100%; height: 0; padding-top: 100.0000%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFu6QvRIPA&#x2F;watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFu6QvRIPA&#x2F;watch?utm_content=DAFu6QvRIPA&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"> MH - EOLD - LOGO</a> by Crystal Hair
+
 [credly-eold]: https://www.credly.com/badges/d8fb49bd-dc17-4479-8993-ba644b9850d8/linked_in?t=rzee3d
