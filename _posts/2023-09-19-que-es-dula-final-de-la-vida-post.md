@@ -1,6 +1,6 @@
 ---
 title: "Quienes son Doulas al final de la vida?"
-excerpt: "Persona entrenada y dedicada a brindar apoyo emocional, espiritual."
+excerpt: "Una doula al final de la vida es una persona entrenada y dedicada a brindar apoyo emocional, espiritual y práctico a individuos y sus familias durante la transición hacia el final de la vida. A diferencia de un profesional de la salud, las doulas al final de la vida se centran en el bienestar emocional y espiritual, proporcionando consuelo y compañía en momentos difíciles."
 tags:
   - doulas al final de la vida
   - End-of-life-doula
