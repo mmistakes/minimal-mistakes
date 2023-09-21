@@ -58,7 +58,7 @@ gültig ab 01.04.2022
     * Ich gehe langsam! Rennen verboten!
     * Ich spreche leise! Schreien verboten!
     * Ich mache keine Spaßkämpfe und raufe/rangele nicht!
-18. **Nutzung von Mobiltelefonen**
+19. **Nutzung von Mobiltelefonen**
 
     <u>Für Eltern und Besucher und Besucherinnen:</u>: \\
     **Die Nutzung von Mobiltelefonen und anderen elektronischen Geräten ist
@@ -77,5 +77,8 @@ gültig ab 01.04.2022
     <u>Personal</u>: \\
     Pädagogischem Personal ist die Nutzung des Mobiltelefons als Arbeitsmittel
     im Unterricht erlaubt.
+20. Bei Klassenübernachtungen sowie Klassenfahrten ist das Mitführen und benutzen von mobilen Endgeräten wie Mobiltelefonen, Smartwatches, Trackinguhren, Tablets etc. aus datenschutzrechtlichen und pädagogischen Gründen verboten. Bei Zuwiderhandlung muss das Kind umgehend durch die Erziehungsberechtigten abgeholt werden. Die schriftliche Einverständnis-erklärung der Erziehungsberechtigen hierzu vor der Veranstaltung (Fahrt, Übernachtung…) ist Voraussetzung für die Teilnahme. 
+
+  
 
 Die Schulleitung
