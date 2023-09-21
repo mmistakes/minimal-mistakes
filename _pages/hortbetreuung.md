@@ -41,10 +41,13 @@ im Unterricht.
 | 17.08.2018 | Schließtag |
 -->
 
-| 22.12.2022 - 01.01.2023 | Weihnachtsschließzeit |
-| 19.05.2023 | Pfingstferien |
-| 02.10.2023 | Hebrstferien |
+| 23.08.2023 | Studientag geschlossen |
+| 02.10.2023 | Schließung / Brückentag |
 | 27.12.2023 - 01.01.2024 | Weihnachtsschließzeit |
+| 10.05.2024 | Schließung / Brückentag |
+| 18.07.2024 - 30.08.2024 | Sommerferien (3 Wochen Urlaub für jedes Kind) |
+| 04.10.2024 | Schließung / Brückentag |
+| 23.12.2024 - 01.01.2025 | Weihnachtsschließzeit |
 
 
 # eFöB-Gebäude und Außengelände
