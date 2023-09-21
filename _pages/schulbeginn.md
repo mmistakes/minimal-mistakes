@@ -19,16 +19,16 @@ sidebar:
 
 <!-- {% include outdated.md %} -->
 
-Die wichtigsten Daten zum Schuljahr **2023/24** in einem Überblick.
+Die wichtigsten Daten zum Schuljahr **2024/25** in einem Überblick.
 
 | Termine |  Veranstaltung |
 |---|---|
-| | Ihr Kind wurde im Zeitraum vom 1. Oktober 2016 bis zum 30. September 2017 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
-| Montag, 10.10.2022 bis Freitag, 21.10.2022  | {% include icon_link text="<b>Anmeldung</b>" icon="fa-file-text-o" url="#anmeldung" %} der Schulanfänger*innen im Sekretariat. Sie erhalten einen Termin per Post. |
+| | Ihr Kind wurde im Zeitraum vom 1. Oktober 2017 bis zum 30. September 2018 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
+| Montag, 09.10.2023 bis Freitag, 20.10.2023  | {% include icon_link text="<b>Anmeldung</b>" icon="fa-file-text-o" url="#anmeldung" %} der Schulanfänger*innen im Sekretariat. Sie erhalten einen Termin per Post. |
 |  | **Hospitation:** Sie können in der Schule hospitieren und sich mit den Abläufen vertraut machen. Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren Sie hierzu einen Termin im Sekretariat. |
-| Dienstag, 31.07.2023 | Melden Sie Ihr Kind rechtzeitig zur {% include icon_link text="<b>Hortbetreuung (eFöB)</b>" icon="fa-child" url="#hort" %} an, so dass Ihr Kind am 01.08.2023 von unserem Hort betreut werden kann.  |
-| Samstag, 02.09.2023 | Endlich! Wir feiern die Einschulung in der Sporthalle |
-| Montag, 04.09.2023 | Der **erste Schultag.** |
+| Dienstag, 31.07.2024 | Melden Sie Ihr Kind rechtzeitig zur {% include icon_link text="<b>Hortbetreuung (eFöB)</b>" icon="fa-child" url="#hort" %} an, so dass Ihr Kind am 01.08.2024 von unserem Hort betreut werden kann.  |
+| Samstag, 07.09.2024 | Endlich! Wir feiern die Einschulung in der Sporthalle |
+| Montag, 09.09.2024 | Der **erste Schultag.** |
 
 {{comment}}<!--
 **TODO**:
@@ -53,9 +53,9 @@ Jugend und Familie
 ](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/)
 nachsehen.<br/><br/>
 {% comment %}
-<!-- {% include download_link text="Info zur Anmeldung der Schulanfänger 2021/22" url="https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/plakat_schulanmeldung_fuer_2021.pdf" button="success" %} -->
+{% include download_link text="Info zur Anmeldung der Schulanfänger 2024/25" url="https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/aushang-schulanmeldung.pdf?ts=1689254690" button="success" %}
 {% endcomment %}
-{% include download_link text="Umfangreiche Informationen zum Schulbeginn 2023/24" url="https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/schulanmeldung-2023.pdf" button="success" %}
+{% include download_link text="Umfangreiche Informationen zum Schulbeginn 2024/25" url="https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/schulanmeldung.pdf?ts=1686838857" button="success" %}
 </p>
 
 ---
@@ -65,9 +65,9 @@ nachsehen.<br/><br/>
 
 <!-- {% include outdated.md %} -->
 
-Wir sind eine zweizügige, [verlässliche Halbtagsgrundschule](/hortbetreuung/#vhg)
-in Spandau mit rund 350 Kindern, die von 32
-Lehrer\*innen und 10 Erzieher\*innen unterrichtet und gefördert werden.
+Wir sind eine dreizügige, [verlässliche Halbtagsgrundschule](/hortbetreuung/#vhg)
+in Spandau mit rund 400 Kindern, die von 36
+Lehrer\*innen und 11 Erzieher\*innen unterrichtet und gefördert werden.
 Verlässlich bedeutet, dass Ihr Kind in der Schulzeit von 7:30 - 13:30 Uhr
 untergebracht ist. Die Betreuung kann kostenpflichtig auf die Zeiten von 6:00
 bis 18:00 ausgeweitet werden ([eFöB/Hort](/hortbetreuung/#hort)).
@@ -109,7 +109,7 @@ und 54% Schüler haben, die von 13 Erziehern und 24 Lehrkräften betreut werden
 
 <!-- {% include outdated.md %} -->
 
-In der Zeit vom 10. Oktober bis 21. Oktober 2022 melden Sie ihr
+In der Zeit vom 09. Oktober bis 20. Oktober 2023 melden Sie ihr
 schulpflichtiges Kind in der [für Sie zuständigen
 Grundschule](https://www.bildung.berlin.de/Umkreissuche/) an.
 Sie bekommen von uns einen Termin per Post zugeschickt.
