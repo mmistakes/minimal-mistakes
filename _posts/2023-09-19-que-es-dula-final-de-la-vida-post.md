@@ -10,7 +10,7 @@ toc_label: "Contenido"
 toc_icon: "heart"
 header:
   teaser: "assets/images/MH - EOLD - LOGO - Animated.gif"
-layout: collection
+layout: posts
 ---
 
 ![Logo](/assets/images/MH - EOLD - LOGO.png)
