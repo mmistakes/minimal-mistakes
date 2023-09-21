@@ -64,7 +64,7 @@ treten gegeneinander an. Teamwork steht hier im Mittelpunkt.
 
 ## Unser Team
 
-{% include figure image_path="/assets/images/kollegium_2022_23.jpg" alt="Team der Grundschule am Brandwerder vom Schuljahr 2022/2023." caption="" %}
+{% include figure image_path="/assets/images/kollegium 2023_24.jpg" alt="Team der Grundschule am Brandwerder vom Schuljahr 2023/2024." caption="Team der Grundschule am Brandwerder vom Schuljahr 2023/2024." %}
 
 ## JÜL-Konzept:
 {: #juel_konzept}
