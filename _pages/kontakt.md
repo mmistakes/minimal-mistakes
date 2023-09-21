@@ -85,7 +85,7 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 | Herr Weichert | {% include email email='L.weichert@brandwerder.de' %} |
 | Frau Wendt | {% include email email='n.wendt@brandwerder.de' %} |
 | Herr Wieting | {% include email email='m.wieting@brandwerder.de' %} |
-| Frau Zdjelar | {% include email email='k.zdjelar@brandwerder.de' %} |
+
 
 ## Schulsozialarbeit
 {: #schulsozialarbeit}
