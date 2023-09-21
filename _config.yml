@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-US"
-title                    : "개발 일기장"
+title                    : "개발 다이어리"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "김진성"
