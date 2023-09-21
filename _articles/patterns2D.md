@@ -8,7 +8,7 @@ topics:
   - symmetry
 related: transformations
 nurseries: Group 1
-author: Milly McGowan
+author: Milly McGowan, Rachel Oughton
 header:
   teaser: /assets/img/blockprint2.jpg
 ---

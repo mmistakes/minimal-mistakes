@@ -8,7 +8,7 @@ topics:
   - 2d
 related: area,triangle
 nurseries: Group 1
-Author: Milly McGowan
+author: Milly McGowan
 header:
   teaser: /assets/img/tile1.png
 ---
