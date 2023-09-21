@@ -18,8 +18,10 @@ Unsere Kontaktseite finden Sie [hier](/kontakt/).
 
 ## Über die Grundschule am Brandwerder
 
+<!-- {% include outdated.md %} -->
+
 Wir sind eine zweizügige, verlässliche Halbtagsgrundschule in Spandau/Staaken,
-die in diesem Schuljahr von rund 350 Kindern besucht wird.
+die in diesem Schuljahr von rund 400 Kindern besucht wird.
 
 Wir setzen Schwerpunkte im selbstständigen und sozialen Lernen. Die
 unterschiedlichen Interessen und Begabungen des Kindes werden aufgegriffen und
@@ -53,7 +55,7 @@ Wir pflegen Kooperationen mit
 {% include external_link text="Al-Farabi Musikakademie" url="https://www.al-farabi.de" %}.
 <!-- Die Kinder haben hier die Möglichkeit, sich für eine Fußball-AG mit Anthony anzumelden oder in einer Chor-AG mit Kian zu singen. -->
 Hier werden Talente erkannt und individuell gefördert.
-Unsere Schule nimmt am Projekt "{% include external_link text="ErzählZeit" url="https://erzaehlzeit.de/" %}" teil.
+<!-- Unsere Schule nimmt am Projekt "{% include external_link text="ErzählZeit" url="https://erzaehlzeit.de/" %}" teil. -->
 
 ### Veranstaltungen der Schulgemeinschaft
 
@@ -136,7 +138,7 @@ Aktuelle Ferien von Berlin auf {% include external_link text="schulferien.org" u
 
 ## Im Krankheitsfall
 
-Wenn Ihr Kind die Schule nicht besuchen kann, rufen Sie bitte bis 8:30 Uhr des
+Wenn Ihr Kind die Schule nicht besuchen kann, rufen Sie bitte bis 8:00 Uhr des
 gleichen Tages in der Schule an ([Sekretariat](/kontakt/#sekretariat)). Bitte
 geben Sie Ihrem Kind bei der Rückkehr in die Schule  eine schriftliche
 Entschuldigung mit, aus der sich die Dauer des Fernbleibens sowie der Grund
