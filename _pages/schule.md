@@ -182,6 +182,8 @@ nachsehen.<br/><br/>
 {% include download_link text="Ausführungsvorschriften über Beurlaubung und Befreiung vom Unterricht (AV Schulbesuchspflicht) (pdf)" url="https://www.berlin.de/sen/bildung/schule/rechtsvorschriften/mdb-sen-bildung-rechtsvorschriften-av_schulpflicht.pdf" button="success" %}
 {: .notice--info}
 
+{% comment %}
+
 ## Schulsozialarbeit Casablanca
 
 {% include author-profile.html author='Peter Krauthäuser' %}{: .align-right}
@@ -201,6 +203,8 @@ Er bietet an:
 Wir unterliegen der Schweigepflicht und behandeln alle Gespräche vertraulich!
 
 Sprechzeiten und Kontaktdaten finden Sie [hier](/kontakt/#schulsozialarbeit).
+
+{% endcomment %}
 
 ## Hausordnung
 

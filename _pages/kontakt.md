@@ -87,6 +87,8 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 | Herr Wieting | {% include email email='m.wieting@brandwerder.de' %} |
 
 
+{% comment %}
+
 ## Schulsozialarbeit
 {: #schulsozialarbeit}
 
@@ -100,7 +102,7 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 * Web: {% include website_link url="https://www.g-casablanca.de/taetigkeitsfelder/jugendhilfe-und-schule/sozial-und-elternberatung-an-schulen" text="Casablanca in Spandau" %}
 * Sprechzeiten: Mo-Fr 7:30 - 16:00 Uhr
 
-{% comment %}
+
 ### Franziska Hanisch
 
 {% include author-profile.html author='Franziska Hanisch' %}{: .align-right}
@@ -111,9 +113,10 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 * Mobil: 0176 34523357
 * Web: {% include website_link url="https://www.g-casablanca.de/taetigkeitsfelder/jugendhilfe-und-schule/sozial-und-elternberatung-an-schulen" text="Casablanca in Spandau" %}
 
-{% endcomment %}
 
 {% include download_link text="Flyer zur Schulsozialarbeit von Casablanca" url="/assets/files/Sozialberatung_Casablanca_Flyer.pdf" button="success" %}
+
+{% endcomment %}
 
 ## Ihre Ansprechpartner*innen
 
