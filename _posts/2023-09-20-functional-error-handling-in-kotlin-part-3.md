@@ -1,6 +1,6 @@
 ---
 title: "Functional Error Handling in Kotlin, Part 3: The Raise DSL"
-date: 2023-09-05
+date: 2023-09-20
 header:
     image: "/images/blog cover.jpg"
 tags: [kotlin]
