@@ -9,7 +9,7 @@ toc: true
 toc_label: "Contenido"
 toc_icon: "heart"
 header:
-  teaser: "assets/images/MH - EOLD - LOGO.png"
+  teaser: "assets/images/MH - EOLD - LOGO - Animated.gif"
 ---
 
 ![Logo](/assets/images/MH - EOLD - LOGO.png)
