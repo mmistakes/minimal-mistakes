@@ -16,6 +16,10 @@ It's time to end our journey on functional error handling in Kotlin with the new
 * [Functional Error Handling in Kotlin, Part 1: Absent values, Nullables, Options](https://blog.rockthejvm.com/functional-error-handling-in-kotlin/)
 * [Functional Error Handling in Kotlin, Part 2: Result and Either](https://blog.rockthejvm.com/functional-error-handling-in-kotlin-part-2/)
 
+For the video version, watch here:
+
+{% include video id="pOtET_i1v-w" provider="youtube" %}
+
 Without further ado, let's start!
 
 ## 1. Setup

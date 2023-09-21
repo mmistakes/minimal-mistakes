@@ -26,6 +26,10 @@ OAuth which stands for Open Authorization is an open standard framework that all
 
 The OAuth standard is defined under [RFC 6749](https://www.ietf.org/rfc/rfc6749.txt), here we'll find an in-depth explanation of how the mechanism works.
 
+For the video version of this tutorial, check below:
+
+{% include video id="NZwnZhwVPrs" provider="youtube" %}
+
 ## 2. Accessing the Github API through OAuth
 
 ### 2.1. Setting Up
