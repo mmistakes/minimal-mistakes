@@ -4,13 +4,13 @@ title: "Hausordnung"
 permalink: /hausordnung/
 author_profile: false
 excerpt: "Die Hausordnung der Grundschule am Brandwerder"
-modified: 2022-04-01T12:00:00+01:00
+modified: 2023-06-15T12:00:00+01:00
 header:
  overlay_color: "#fff"
  overlay_image: /assets/images/mm-home-page-feature.jpg
 ---
 
-gültig ab 01.04.2022
+gültig ab 15.06.2023
 {: .text-right}
 
 # Hausordnung
