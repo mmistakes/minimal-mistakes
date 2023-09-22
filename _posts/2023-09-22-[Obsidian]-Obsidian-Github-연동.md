@@ -43,7 +43,11 @@ git config --global user.name "timcook"
 
 ### 2.3 Github Desktop 설치
 
-나처럼 git못알들은 터미널로 commit, push 이런거 몰라 응애이기 때문에 편리한 깃헙데스크톱을 설치해준다. 
+나처럼 git못알들은 터미널로 commit, push 이런거 몰라 응애이기 때문에 편리한 깃헙데스크톱을 설치해준다. [설치 사이트](https://desktop.github.com/)
+
+## 3. 옵시디언 플러그인
+
+이제 옵시디언에서 플러그인을 설치해줄 차례이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1OTQxOTUyNSwtNTU0NzkwMTg4XX0=
+eyJoaXN0b3J5IjpbMTg4ODI1MjM0NywtNTU0NzkwMTg4XX0=
 -->
