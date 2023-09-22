@@ -17,9 +17,9 @@ categories:
 이번 포스팅은 [여기](https://dannyhatcher.com/obsidian-git-for-beginners/) 사이트를 거의 번역한 것에 가깝다.
 
 ## 2. git 설치
-혹시 git이 설치가 안되어있는 사람들을 위해 Git 설치부터 안내하고자 한다. 우선 나는 Mac mini M2를 쓰고 있으므로 Mac에 초점이 맞추어져있다.
+혹시 git이 설치가 안되어있는 사람들을 위해 git 설치부터 안내하고자 한다. 우선 나는 Mac mini M2를 쓰고 있으므로 Mac에 초점이 맞추어져있다.
 
-### 2.1 Git 확인하기
+### 2.1 git 확인하기
 기본적으로 맥은 Git이 깔려있다.
 ```bash
 git --version
@@ -31,7 +31,9 @@ brew install git
 ```
 이 명령어를 통해 git을 설치(혹은 업데이트)할 수 있다. 나도 버젼이 살짝 낮은 단계여서 이 명령어를 통해 최신버젼으로 업데이트했다.
 
-### 2.2 
+### 2.2 git 설정하기
+
+터미너
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NTA5ODI2NywtNTU0NzkwMTg4XX0=
+eyJoaXN0b3J5IjpbMTkzNDQzOTU3MiwtNTU0NzkwMTg4XX0=
 -->
