@@ -9,11 +9,11 @@ toc: true
 toc_label: "Contenido"
 toc_icon: "heart"
 header:
-  teaser: "assets/images/MH - EOLD - LOGO - Animated.gif"
+  teaser: "assets/images/MH - EOLD - LOGO.png"
 layout: single
 ---
 
-![Logo](/assets/images/MH - EOLD - LOGO.png)
+![Logo](/assets/images/MH - EOLD - LOGO - Animated.gif){: .align-center}
 
 ## Doula al Final de la Vida
 
@@ -51,9 +51,10 @@ Una **doula al final de la vida** es una persona entrenada y dedicada a brindar 
 10. **Normalización de la Conversación sobre la Muerte**:
     - Promueven una cultura que reconoce la muerte como una parte natural de la vida, fomentando la aceptación y la preparación.
 
-Las doulas al final de la vida desempeñan un papel invaluable en el apoyo a individuos y familias durante uno de los momentos más sensibles de la vida. Su presencia y cuidado contribuyen a una experiencia de final de vida más compasiva y significativa para todos los involucrados.
+Las doulas al final de la vida desempeñan un papel invaluable en el apoyo a individuos y familias durante uno de los ![image-left](/assets/images/eye-protection.gif){: .align-left} momentos más sensibles de la vida. Su presencia y cuidado contribuyen a una experiencia de final de vida más compasiva y significativa para todos los involucrados.
 
 Estos términos son utilizados para describir a profesionales que ofrecen apoyo durante el proceso de final de vida.
+![image-left](/assets/images/eye-protection.gif){: .align-right}
 
 ### Otros Nombres
 
