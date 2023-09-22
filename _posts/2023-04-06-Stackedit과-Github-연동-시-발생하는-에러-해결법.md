@@ -1,8 +1,5 @@
----
-categories:
-  - Markdown
-  - Github
----
+
+
 
 
 # #Github, #Markdown
@@ -66,6 +63,6 @@ window.XMLHttpRequest =  class MyXMLHttpRequest extends window.XMLHttpRequest {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MzM3NzUxMSwtMTc5MTE5OTg5LC0zMD
-E3ODI1NV19
+eyJoaXN0b3J5IjpbNDk0NjE3MTcsMTY5MzM3NzUxMSwtMTc5MT
+E5OTg5LC0zMDE3ODI1NV19
 -->
