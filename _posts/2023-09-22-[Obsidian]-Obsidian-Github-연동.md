@@ -58,8 +58,8 @@ Settings > Community Plugins > Browse에서 Obsidian Git을 검색하면 위 사
 ## 4. Github 연동하기
 
 내가 참고한 사이트에서는 Github desktop에 들어가서 로그인을 해주고 **Create new repository**를 해준 뒤 이름도 대충, 경로도 대충 설정해주고 확인하고 **Publish repository**를 해주는 등등의 과정을 거치게 된다.
-나는 그런데 그냥 깃허브에 들어가서 새로운 repository를 하나 **private**으로 설정해주고 Github desktop에 들어가서 **Clone Repository**를 한 뒤
+나는 그런데 그냥 깃허브에 들어가서 새로운 repository를 하나 **private**으로 설정해주고 Github desktop에 들어가서 **Clone Repository**를 한 뒤 내가 만든 repository를 고르면 된다. 이 때 repository는 "my-obsidian"으로 해주었는데 어짜피 private이니 나만 확인가능하게끔 이름을 잘 설정해주면 될 것 같다. 클론을 할 때 내 로컬 경로를 설정하게 되어있는데 이 때 경로는 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NjY2Nzg1Niw0NjgwNzQwNzgsLTU1ND
+eyJoaXN0b3J5IjpbMTczNjA0NTkyOSw0NjgwNzQwNzgsLTU1ND
 c5MDE4OF19
 -->
