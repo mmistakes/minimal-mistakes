@@ -37,9 +37,11 @@ brew install git
 
 ```bash
 git config --global user.email "abcd@gmail.com"
-git config --global user.name "Timcook"
+git config --global user.name "timcook"
 ```
-여기에서 `abcd@gmail.com`에
+여기에서 `abcd@gmail.com`에는 자신이 깃허브에 가입한(혹은 가입할) 이메일을 적어주면 되고, `timcook`에는 이름을 적어주면 된다. 나는 깃허브 이름? 아이디?를 그대로 적어주었다. 사실 이름은 다르게 설정해도 되는지 안되는지 거기까지는 모르겠어서 혹시 몰라서 동일하게 설정했다.
+
+### 2.3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA0MTAyMTM5LC01NTQ3OTAxODhdfQ==
+eyJoaXN0b3J5IjpbLTExODMwOTMwNzAsLTU1NDc5MDE4OF19
 -->
