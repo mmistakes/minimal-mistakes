@@ -71,3 +71,5 @@ Estos términos son utilizados para describir a profesionales que ofrecen apoyo 
 - Death Doula
 - Transition Doula
 - Soul Midwife
+
+![image-left](/assets/images/eye-protection.gif){: .align-left}
