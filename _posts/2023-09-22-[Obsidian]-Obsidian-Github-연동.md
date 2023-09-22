@@ -51,6 +51,14 @@ git config --global user.name "timcook"
 
 ![enter image description here](https://raw.githubusercontent.com/arrow-economist/imageslibrary/main/Obs1.png)
 Settings > Community Plugins > Browse에서 Obsidian Git을 검색하면 위 사진과 같은 플러그인이 뜨는데 이걸 설치해주고 Enable을 누르면 뭔가 안됐다고 뜨게 된다. 
+
+![enter image description here](https://raw.githubusercontent.com/arrow-economist/imageslibrary/main/Obs2.png)
+지금은 설정을 마친 상태라서 Git Backup settings 밑에 아무것도 뜨지 않는데, 원래는 여기에 세팅이 안되었다는 메시지가 뜨게 된다.
+
+## 4. Github 연동하기
+
+이제 Github desktop에 들어가서 로그인을 해주고 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY4MDc0MDc4LC01NTQ3OTAxODhdfQ==
+eyJoaXN0b3J5IjpbODYxMTUxMDEzLDQ2ODA3NDA3OCwtNTU0Nz
+kwMTg4XX0=
 -->
