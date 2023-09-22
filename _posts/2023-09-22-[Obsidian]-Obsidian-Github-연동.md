@@ -48,6 +48,9 @@ git config --global user.name "timcook"
 ## 3. 옵시디언 플러그인
 
 이제 옵시디언에서 플러그인을 설치해줄 차례이다. 
+
+![enter image description here](https://raw.githubusercontent.com/arrow-economist/imageslibrary/main/Obs1.png)
+Settings > 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4ODI1MjM0NywtNTU0NzkwMTg4XX0=
+eyJoaXN0b3J5IjpbNDE0MTk2MTQ3LC01NTQ3OTAxODhdfQ==
 -->
