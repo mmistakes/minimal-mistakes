@@ -33,7 +33,13 @@ brew install git
 
 ### 2.2 git 설정하기
 
-터미너
+터미널에 이제 다음의 명령어를 복사 붙여넣기 하면 초기 설정이 된다.
+
+```bash
+git config --global user.email "abcd@gmail.com"
+git config --global user.name "Timcook"
+```
+여기에서 `abcd@gmail.com`에
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNDQzOTU3MiwtNTU0NzkwMTg4XX0=
+eyJoaXN0b3J5IjpbNTA0MTAyMTM5LC01NTQ3OTAxODhdfQ==
 -->
