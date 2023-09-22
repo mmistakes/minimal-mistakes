@@ -1,7 +1,10 @@
 # main links
 main:
   - title: "Project"
+    url: /projects/
     sublinks:
+      - title: 🚀 전체
+        url: /projects/
       - title: 설계 도면 인식 과제
         url: /projects/pnid/
       - title: 법률 문서 분석 과제
