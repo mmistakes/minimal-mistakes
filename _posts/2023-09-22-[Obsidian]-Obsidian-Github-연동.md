@@ -59,8 +59,8 @@ Settings > Community Plugins > Browse에서 Obsidian Git을 검색하면 위 사
 
 내가 참고한 사이트에서는 Github desktop에 들어가서 로그인을 해주고 **Create new repository**를 해준 뒤 이름도 대충, 경로도 대충 설정해주고 확인하고 **Publish repository**를 해주는 등등의 과정을 거치게 된다.
 
-나는 그런데 그냥 깃허브에 들어가서 새로운 repository를 하나 **private**으로 설정해주고 Github desktop에 들어가서 **Clone Repository**를 한 뒤 내가 만든 repository를 고르면 된다. 이 때 repository는 "my-obsidian"으로 해주었는데 어짜피 private이니 나만 확인가능하게끔 이름을 잘 설정해주면 될 것 같다. 클론을 할 때 내 로컬 경로를 설정하게 되어있는데 이 때 경로는 내 Obsidian Vault로 설정해주었다. 만약 경로가 제대로 설정되지 않아도 괜찮은게, **Cmd+Shift+.**을 눌러서 숨김파일을 보이게 한 뒤 *.git* 폴더를 잘라서(**Cmd+C**) Obis
+나는 그런데 그냥 깃허브에 들어가서 새로운 repository를 하나 **private**으로 설정해주고 Github desktop에 들어가서 **Clone Repository**를 한 뒤 내가 만든 repository를 고르면 된다. 이 때 repository는 "my-obsidian"으로 해주었는데 어짜피 private이니 나만 확인가능하게끔 이름을 잘 설정해주면 될 것 같다. 클론을 할 때 내 로컬 경로를 설정하게 되어있는데 이 때 경로는 내 Obsidian Vault로 설정해주었다. 만약 경로가 제대로 설정되지 않아도 괜찮은게, **Cmd+Shift+.**을 눌러서 숨김파일을 보이게 한 뒤 *.git* 폴더를 잘라서(**Cmd+C**) Obsidian Vault 폴더 안에 잘라붙이기(**Cmd+Option+V**)를 하면 된다. Github Desktop에서 현재 내 Repository가 잘 보이는지 다시 확인한 뒤에 Obsidian의 Obsidian
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MDc2NDA5Miw0NjgwNzQwNzgsLTU1ND
+eyJoaXN0b3J5IjpbLTIxMTk0NTUyOSw0NjgwNzQwNzgsLTU1ND
 c5MDE4OF19
 -->
