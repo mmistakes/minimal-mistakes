@@ -64,8 +64,8 @@ Settings > Community Plugins > Browse에서 Obsidian Git을 검색하면 위 사
 ## 5. Push interval 설정
 나는 10분으로 설정을 해두었는데 이건 기호에 맞게 설정하면 된다. 
 
-이제 옵시디언을 드롭박스에 싱크하면서 깃허브에
+이제 옵시디언을 드롭박스에 싱크하면서 깃허브에도 백업을 할 수 있게 되었다. ୧( “̮ )୨✧ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzg2OTMxODEsNDY4MDc0MDc4LC01NT
+eyJoaXN0b3J5IjpbLTEzNzg4MDI1MzAsNDY4MDc0MDc4LC01NT
 Q3OTAxODhdfQ==
 -->
