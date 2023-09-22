@@ -50,7 +50,7 @@ git config --global user.name "timcook"
 이제 옵시디언에서 플러그인을 설치해줄 차례이다. 
 
 ![enter image description here](https://raw.githubusercontent.com/arrow-economist/imageslibrary/main/Obs1.png)
-Settings > 
+Settings > Community Plugins > Browse에서 Obsidian Git을 검색하면 위 사진과 같은 플러그인이 뜨는데 이걸 설치해주고 Enable을 누르면 뭔가 안됐다고 뜨게 된다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE0MTk2MTQ3LC01NTQ3OTAxODhdfQ==
+eyJoaXN0b3J5IjpbNDY4MDc0MDc4LC01NTQ3OTAxODhdfQ==
 -->
