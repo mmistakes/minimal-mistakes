@@ -57,8 +57,8 @@ Settings > Community Plugins > Browse에서 Obsidian Git을 검색하면 위 사
 
 ## 4. Github 연동하기
 
-이제 Github desktop에 들어가서 로그인을 해주고 
+이제 Github desktop에 들어가서 로그인을 해주고 **Create new repository**를 해준다. 이름도 대충, 경로도 대충 설정해주고 확인한다. **Publish repository**를 해준다. 이렇게 하지 않는다면, 깃허브에 로그인해서 새로운 respo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYxMTUxMDEzLDQ2ODA3NDA3OCwtNTU0Nz
-kwMTg4XX0=
+eyJoaXN0b3J5IjpbLTE1NzMyMzA3NTQsNDY4MDc0MDc4LC01NT
+Q3OTAxODhdfQ==
 -->
