@@ -24,7 +24,11 @@ categories:
 ```bash
 git --version
 ```
-터미널(ㅎ
+터미널(혹은 내가 설치한 [iterm2](https://arrow-economist.github.io/mac/%EB%A7%A5-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%84%B8%ED%8C%85%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/))에서 위 명령어를 복사 붙여넣기 후 실행을 하면 현재 내 버젼을 확인할 수 있다. 없어도 걱정하지 않아도 된다.
+
+```bash
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MDEwNDUsLTU1NDc5MDE4OF19
+eyJoaXN0b3J5IjpbNzM5MjQ3MDAsLTU1NDc5MDE4OF19
 -->
