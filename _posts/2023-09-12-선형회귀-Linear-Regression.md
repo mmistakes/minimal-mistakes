@@ -2,7 +2,7 @@
 layout: single
 title: "선형 회귀(Linear Regression)"
 categories: DeepLearning
-tag: [DeepLearning, coding, python, LinearRegression]
+tag: [DeepLearning , coding , python , LinearRegression]
 toc: true
 ---
 
