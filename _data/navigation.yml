@@ -1,7 +1,7 @@
 # main links
 main:
    - title: "About"
-     url: https://arrow-economist.github.io/minimal-mistakes/about/
+     url: /about/
    - title: "Posts"
      url: /categories/
   # - title: "Sample Collections"
