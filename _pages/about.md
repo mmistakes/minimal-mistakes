@@ -3,9 +3,6 @@ permalink: /about/
 title: "about"
 excerpt: "About me"
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
 경제학 박사과정 2년차 학생입니다.  
