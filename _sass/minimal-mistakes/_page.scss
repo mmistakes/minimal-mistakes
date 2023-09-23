@@ -64,7 +64,9 @@ div#kakaopay-btn {
     width: 100%;
     clear: both;
 
-    .page__content,
+    .page__content {
+      text-align: justify;
+    }
     .page__meta,
     .page__share {
       position: relative;
