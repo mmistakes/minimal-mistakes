@@ -3,6 +3,7 @@ layout: single
 title: "SRCNN 논문 리뷰(Paper Review)"
 categories: DeepLearning
 tag: [DeepLearning, paper-reveiw, SRCNN, Super-Resolution] 
+toc: true
 ---
 
 
