@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Goldtg"
+name                     : "goldtg"
 description              : "An amazing website."
 url                      : "https://goldtg.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
