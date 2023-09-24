@@ -29,7 +29,7 @@ layout: archive
 {% for i in (1..categories_max) reversed %}
   {% for category in site.categories %}
     {% if category[1].size == i %}
-      <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section">
+      <section id="{{ category[0] | slugify }}" class="taxonomy__section">
         <h2 class="archive__subtitle">{{ category[0] }}</h2>
         <div class="entries-{{ entries_layout }}">
           {% for post in category.last %}
