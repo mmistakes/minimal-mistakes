@@ -3,7 +3,7 @@ main:
   - title: "Project"
     url: /projects/
     sublinks:
-      - title: 🚀 전체
+      - title: 🚀 전체 프로젝트
         url: /projects/
       - title: 설계 도면 인식 과제
         url: /projects/pnid/
