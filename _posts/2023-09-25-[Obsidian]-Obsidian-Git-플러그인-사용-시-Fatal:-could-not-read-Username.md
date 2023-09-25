@@ -19,7 +19,15 @@ Fatal: Could not read Username for "https://github.com", No such device or addre
 
 # 해결방법
 
-해결방법은 의외로 간단했다. personal token을 발급받고 HTTPS 상에 이걸 사용해줘야 하는데(?) (뭔말인지 나도 ㅁ
+해결방법은 의외로 간단했다. personal token을 발급받고 HTTPS 상에 이걸 사용해줘야 하는데(?) (뭔말인지 나도 모릅니다)
+
+```bash
+git clone https://github.com/USERNAME/REPO.git
+```
+
+이걸 입력해주면 된다. 여기에 `USERNAME`은 내 깃허브 네임, `REPO`는 내 깃허브와 옵시디언을 연동해주는 repository 이름이다. 이걸 터미널에 입력하고 실행하면
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM3MjUwMjE4LC0zNDUyMjM4OThdfQ==
+eyJoaXN0b3J5IjpbMTI4ODYwNDg0LC0zNDUyMjM4OThdfQ==
 -->
