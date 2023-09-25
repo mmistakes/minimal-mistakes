@@ -15,8 +15,9 @@ $$
 
 우선 `\left` `\right`를 안쓰면 된다. 그러면 괄호가 작아지는데 그 대신 우리는 `\biggl` `\biggr`을 쓰면 된다. 역할은 `\left` `\right`와 동일한데 크기가 큰 상태로 fixed되어있는 명령어다.
 
-\frac{1}{n^2h_1^2h_2^2} \biggl\{ \int\int f(x_1)f(x_2)k^2\left( \frac{X_{1i}-x_1}{h_1}\right)  k^2 \left( \frac{X_{2i}-x_2}{h_2} \right)dx_2dx_1 \\
-    &\qquad - \left[\int\int f(x_1)f(x_2)k\left( \frac{X_{1i}-x_1}{h_1}\right)  k \left( \frac{X_{2i}-x_2}{h_2} \right)dx_2dx_1 \right]^2 \biggr\}\\
+$$
+= \frac{1}{n^2h_1^2h_2^2} \biggl\{ \int\int f(x_1)f(x_2)k^2\left( \frac{X_{1i}-x_1}{h_1}\right)  k^2 \left( \frac{X_{2i}-x_2}{h_2} \right)dx_2dx_1 \\ - \left[\int\int f(x_1)f(x_2)k\left( \frac{X_{1i}-x_1}{h_1}\right)  k \left( \frac{X_{2i}-x_2}{h_2} \right)dx_2dx_1 \right]^2 \biggr\}\\
+$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1Njg2ODg4M119
+eyJoaXN0b3J5IjpbLTIwNjIyMDg3OF19
 -->
