@@ -1,12 +1,12 @@
 ---
 categories:
-  - Obsidian
+  - Ob
   - Github
 ---
 
 # #Obsidian #Github
 
-내가 요즘 매일같이 쓰는 메모 앱이 있는데, 바로 Obsidian이다. Obsidian은 제텔카스텐 기반의 메모앱이라고 하는데, 사실 그런건 잘 모르겠고 그냥 편하고 예뻐서 쓴다.
+내가 요즘 매일같이 쓰는 메모 앱이 있는데, 바로 Obsidian이다. Obsidian은제텔카스텐 기반의 메모앱이라고 하는데, 사실 그런건 잘 모르겠고 그냥 편하고 예뻐서 쓴다.
 
 [노마드 코더 유튜브 옵시디언](https://youtu.be/h6rxKbbgI28?si=oTGFANvcMW-I0H4e) << 이 유튜브 영상을 보면 옵시디언이 뭔지 이해를 좀 더 할 수 있고 간략하게 체험해볼 수 있다.
 
@@ -68,6 +68,6 @@ Settings > Community Plugins > Browse에서 Obsidian Git을 검색하면 위 사
 
 이제 옵시디언을 드롭박스에 싱크하면서 깃허브에도 백업을 할 수 있게 되었다. ୧( “̮ )୨✧ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NTI1MTU1NCwtMTM3ODgwMjUzMCw0Nj
-gwNzQwNzgsLTU1NDc5MDE4OF19
+eyJoaXN0b3J5IjpbLTE4NTg5NDU0ODAsLTQ0NTI1MTU1NCwtMT
+M3ODgwMjUzMCw0NjgwNzQwNzgsLTU1NDc5MDE4OF19
 -->
