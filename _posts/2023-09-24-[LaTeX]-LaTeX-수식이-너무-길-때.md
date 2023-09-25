@@ -13,7 +13,7 @@ $$
 \frac{1}{n^2h_1^2h_2^2} \left\{ \int\int f(x_1)f(x_2)k^2\left( \frac{X_{1i}-x_1}{h_1}\right)  k^2 \left( \frac{X_{2i}-x_2}{h_2} \right)dx_2dx_1 - \left[\int\int f(x_1)f(x_2)k\left( \frac{X_{1i}-x_1}{h_1}\right)  k \left( \frac{X_{2i}-x_2}{h_2} \right)dx_2dx_1 \right]^2 \right\}\\
 $$
 ```
-와 같은 수식을 쓰려고 한다면 수식이 길어져 짤리므로 줄을 한칸 띄워야한다. 하지만 `\\`로 줄을 띄우면 `\left` `\right`가 한 줄에 있지 않아서 코드에러가 발생한다. 해결 방법은 생각보다 간단했다.
+와 같은 수식을 쓰려고 한다면 수식이 길어져 compile을 했을 때 결과물이 짤리므로 줄을 한칸 띄워야한다. 하지만 `\\`로 줄을 띄우면 `\left` `\right`가 한 줄에 있지 않아서 코드에러가 발생한다. 해결 방법은 생각보다 간단했다.
 
 우선 `\left` `\right`를 안쓰면 된다. 그러면 괄호가 작아지는데 그 대신 우리는 `\biggl` `\biggr`을 쓰면 된다. 역할은 `\left` `\right`와 동일한데 크기가 큰 상태로 fixed되어있는 명령어다.
 
@@ -28,5 +28,5 @@ $$
 
 Stackedit상에서 수식이 자꾸 표현이 안되어서 사진으로 대체했다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgzNTYzNzk3XX0=
+eyJoaXN0b3J5IjpbLTU0MjE3ODA3OF19
 -->
