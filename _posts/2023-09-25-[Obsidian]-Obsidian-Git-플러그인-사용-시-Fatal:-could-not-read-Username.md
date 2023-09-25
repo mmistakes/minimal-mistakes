@@ -11,8 +11,11 @@ categories:
 하지만 계속 쓰는데 어느 순간부터 문제가 발생했다. 갑자기
 
 ```
-
+Fatal: Could not read Username for "https://github.com", No such device or address
 ```
+이런 메시지가 자꾸 옵시디언에 떴다. 이유를 곰곰이 생각해보니 깃을 푸시하다가 personal token을 쓰라는 메시지를 보고 그걸 발급받고 나서부터 뭔가 제대로 연동이 안되었나보다. 그래서 commit까지는 되어도 push는 꼭 터미널로 해줘야했는데 상당히 귀찮았다.
+
+그래서 열심히 뒤지다가 해결방법을 찾았는데, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEyMjQxNDQ3LC0zNDUyMjM4OThdfQ==
+eyJoaXN0b3J5IjpbLTE3ODg4OTA2NzYsLTM0NTIyMzg5OF19
 -->
