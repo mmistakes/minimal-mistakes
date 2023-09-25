@@ -22,8 +22,8 @@ $$
 = \frac{1}{n^2h_1^2h_2^2} \biggl\{ \int\int f(x_1)f(x_2)k^2\left( \frac{X_{1i}-x_1}{h_1}\right)  k^2 \left( \frac{X_{2i}-x_2}{h_2} \right)dx_2dx_1 \\ - \left[\int\int f(x_1)f(x_2)k\left( \frac{X_{1i}-x_1}{h_1}\right)  k \left( \frac{X_{2i}-x_2}{h_2} \right)dx_2dx_1 \right]^2 \biggr\}\\
 $$
 ```
-
+![수식을 완성한 모습](https://raw.githubusercontent.com/arrow-economist/imageslibrary/main/SCR-20230924-rtgm.png)
 처럼 쓴다면 두 줄로 한 수식을 나눠서 쓸 수 있다. 지금 여기에는 에러가 나서 안썼지만 `&=`과 `&\qquad -`등으로 수식 정렬을 하면 깔끔하게 쓸 수 있고 한 수식이 끝나지 않았음을 `&\qquad`로 들여쓰기 해서 표현할 수 있다!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTQ0MzM4ODFdfQ==
+eyJoaXN0b3J5IjpbMTA2MzU3NjA0OV19
 -->
