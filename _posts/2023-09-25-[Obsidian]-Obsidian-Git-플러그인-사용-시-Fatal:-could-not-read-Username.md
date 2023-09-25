@@ -25,10 +25,12 @@ Fatal: Could not read Username for "https://github.com", No such device or addre
 git clone https://github.com/USERNAME/REPO.git
 ```
 
-이걸 입력해주면 된다. 여기에 `USERNAME`은 내 깃허브 네임, `REPO`는 내 깃허브와 옵시디언을 연동해주는 repository 이름이다. 이걸 터미널에 입력하고 실행하면 username과 password를 입력하라는 창이 차례로 뜨게 된다. 이 때 password는 저장해둔 personal token을 입력하면 clone이 되고 이제 옵시디언에서 더이
+이걸 입력해주면 된다. 여기에 `USERNAME`은 내 깃허브 네임, `REPO`는 내 깃허브와 옵시디언을 연동해주는 repository 이름이다. 이걸 터미널에 입력하고 실행하면 username과 password를 입력하라는 창이 차례로 뜨게 된다. 이 때 password는 저장해둔 personal token을 입력하면 clone이 되고 이제 옵시디언에서 더이상 에러가 뜨지 않게 된다!
 
 ![enter image description here](https://raw.githubusercontent.com/arrow-economist/imageslibrary/main/SCR-20230924-uptq.png)
+
+git에 대해 더 찬찬히 알아가야겠다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA3Njg5ODY1LDEyODg2MDQ4NCwtMzQ1Mj
-IzODk4XX0=
+eyJoaXN0b3J5IjpbMTQ2MTMxNDI3NywxMjg4NjA0ODQsLTM0NT
+IyMzg5OF19
 -->
