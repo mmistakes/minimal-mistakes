@@ -9,9 +9,9 @@ LaTeX로 수식을 쓰다보면, 수식이 너무 길어질 때가 있다. 그�
 
 예를들어
 $$
-\frac{1}{n^2h_1^2h_2^2} \biggl\{ \int\int f(x_1)f(x_2)k^2\left( \frac{X_{1i}-x_1}{h_1}\right)  k^2 \left( \frac{X_{2i}-x_2}{h_2} \right)dx_2dx_1 \\
-    &\qquad - \left[\int\int f(x_1)f(x_2)k\left( \frac{X_{1i}-x_1}{h_1}\right)  k \left( \frac{X_{2i}-x_2}{h_2} \right)dx_2dx_1 \right]^2 \biggr\}\\
+\frac{1}{n^2h_1^2h_2^2} \left\{ \int\int f(x_1)f(x_2)k^2\left( \frac{X_{1i}-x_1}{h_1}\right)  k^2 \left( \frac{X_{2i}-x_2}{h_2} \right)dx_2dx_1 - \left[\int\int f(x_1)f(x_2)k\left( \frac{X_{1i}-x_1}{h_1}\right)  k \left( \frac{X_{2i}-x_2}{h_2} \right)dx_2dx_1 \right]^2 \right\}\\
 $$
+와 같은 수식을 쓰려고 한다면 수식이 길어져 짤리므로 줄을 한칸 띄워야한다. 하지만 `\\`로 줄을 띄우면 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTg5MTYyOTVdfQ==
+eyJoaXN0b3J5IjpbNzE0MjUzMzQxXX0=
 -->
