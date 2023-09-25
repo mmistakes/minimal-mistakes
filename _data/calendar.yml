@@ -35,6 +35,40 @@
   },
   {
     "image_path": null,
+    "alt": "Schule und Hort geschlossen: Brückentag",
+    "title": "Schule und Hort geschlossen: Brückentag",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NHI1NzBpN2FpYXJydWZoOHVkdTJhZXJqbDggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2023-10-02",
+      "date_time": null
+    },
+    "end": {
+      "date": "2023-10-03",
+      "date_time": null
+    },
+    "created": "2023-09-24T09:29:27.000Z",
+    "updated": "2023-09-24T09:29:27.489Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Feiertag",
+    "title": "Feiertag",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=ZWxjYTA2djJqNG45c3Rjdmo0NjJnNHZkZGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2023-10-03",
+      "date_time": null
+    },
+    "end": {
+      "date": "2023-10-04",
+      "date_time": null
+    },
+    "created": "2023-09-24T09:29:47.000Z",
+    "updated": "2023-09-24T09:29:47.295Z"
+  },
+  {
+    "image_path": null,
     "alt": "Hort ab 13:30 geschlossen: Personalversammlung",
     "title": "Hort ab 13:30 geschlossen: Personalversammlung",
     "excerpt": null,
@@ -66,39 +100,5 @@
     },
     "created": "2023-09-22T03:59:08.000Z",
     "updated": "2023-09-22T03:59:08.038Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Fotograf bis Jahrgangsstufe 5",
-    "title": "Fotograf bis Jahrgangsstufe 5",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2p1c2Nxa3V0dGswN3Zsb2ViM3QwaTJtdTYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2023-10-09",
-      "date_time": null
-    },
-    "end": {
-      "date": "2023-10-12",
-      "date_time": null
-    },
-    "created": "2023-06-30T10:56:47.000Z",
-    "updated": "2023-06-30T11:11:24.160Z"
-  },
-  {
-    "image_path": null,
-    "alt": "1. Schulkonferenz",
-    "title": "1. Schulkonferenz",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NnZjcTBmanIyc2huNm5jN2tjNm81am5wdTQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2023-10-12T15:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2023-10-12T16:30:00+02:00"
-    },
-    "created": "2023-09-22T03:59:47.000Z",
-    "updated": "2023-09-22T03:59:47.578Z"
   }
 ]
