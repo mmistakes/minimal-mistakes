@@ -15,7 +15,7 @@ Fatal: Could not read Username for "https://github.com", No such device or addre
 ```
 이런 메시지가 자꾸 옵시디언에 떴다. 이유를 곰곰이 생각해보니 깃을 푸시하다가 personal token을 쓰라는 메시지를 보고 그걸 발급받고 나서부터 뭔가 제대로 연동이 안되었나보다. 그래서 commit까지는 되어도 push는 꼭 터미널로 해줘야했는데 상당히 귀찮았다.
 
-그래서 열심히 뒤지다가 해결방법을 찾았는데, 
+그래서 열심히 뒤지다가 깃허브 공식 홈페이지에서 해결방법을 찾았다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODg4OTA2NzYsLTM0NTIyMzg5OF19
+eyJoaXN0b3J5IjpbMTYzNTg4MDE4NywtMzQ1MjIzODk4XX0=
 -->
