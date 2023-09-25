@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Jin"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/icon.png"
   bio              : "한 걸음씩 천천히."
   location         : "KoreaTech"
   email            : "xx1541zz@naver.com"
@@ -212,6 +212,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -220,6 +221,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 
 # Archives
@@ -273,5 +275,9 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: true
+      toc_sticky: true
+      toc_label: 목차
+      toc_icon: "fa-solid fa-file"
 
 date_format: "%Y-%m-%d"
