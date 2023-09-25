@@ -1,6 +1,6 @@
 ---
 categories:
-  - Ob
+  - Obsidian
   - Github
 ---
 
@@ -68,6 +68,6 @@ Settings > Community Plugins > Browse에서 Obsidian Git을 검색하면 위 사
 
 이제 옵시디언을 드롭박스에 싱크하면서 깃허브에도 백업을 할 수 있게 되었다. ୧( “̮ )୨✧ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTg5NDU0ODAsLTQ0NTI1MTU1NCwtMT
+eyJoaXN0b3J5IjpbLTE1MTc0MzE0ODgsLTQ0NTI1MTU1NCwtMT
 M3ODgwMjUzMCw0NjgwNzQwNzgsLTU1NDc5MDE4OF19
 -->
