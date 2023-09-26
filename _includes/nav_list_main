@@ -84,7 +84,7 @@
 
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "딥러닝" %}
+                    {% if category[0] == "DeepLearning" %}
                         <li><a href="/categories/DeepLearning" class=""> 딥러닝 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
