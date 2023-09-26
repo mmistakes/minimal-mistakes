@@ -44,15 +44,16 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Git" %}
-                        <li><a href="/categories/Git" class=""> Git & GitHub ({{category[1].size}})</a></li>
+                    {% if category[0] == "Flask" %}
+                        <li><a href="/categories/Flask" class=""> Flask ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
+
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Linux" %}
-                        <li><a href="/categories/Linux" class=""> Linux ({{category[1].size}})</a></li>
+                    {% if category[0] == "Git" %}
+                        <li><a href="/categories/Git" class=""> Git & GitHub ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -64,12 +65,27 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        
+        <span class="nav__sub-title"> 운영체제 </span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Linux" %}
+                        <li><a href="/categories/Linux" class=""> Linux ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title"> AI </span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "AI" %}
-                        <li><a href="/categories/AI" class=""> 논문리뷰 ({{category[1].size}})</a></li>
+                    {% if category[0] == "Review" %}
+                        <li><a href="/categories/AI_Review" class=""> 논문리뷰 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "딥러닝" %}
+                        <li><a href="/categories/DeepLearning" class=""> 딥러닝 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
