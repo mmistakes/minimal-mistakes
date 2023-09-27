@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Son_logs"
+title                    : "Son_log"
 title_separator          : "|"
 subtitle                 : "Proverbs 4:6"
 name                     : "Jaewon-Son"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Jaewon-Son"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "🐣"
+  bio              : "🐣열심히!!🐣"
   location         : "South Korea"
   email            : "johsjw@gmail.com"
   links:
