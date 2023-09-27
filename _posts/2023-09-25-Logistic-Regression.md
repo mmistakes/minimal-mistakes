@@ -1,5 +1,10 @@
-# Logistic Regression
-
+---
+layout: single
+title: 로지스틱 회귀(Logistic Regression)
+category: deeplearning
+tag: [deeplearning , Python , Pytorch, logistic regression , coding]
+toc: true
+---
 이번에는 Logistic Regression에 대해 알아보도록 하겠습니다.
 
 Logistic Regression은 이진 분류 (Binary Classification)을 하기 위해 사용 될 수 있습니다.
@@ -12,13 +17,13 @@ Logistic Regression은 이진 분류 (Binary Classification)을 하기 위해 �
 
 ### 이진 분류(Binary Classification)
 
-![Untitled](Logistic%20Regression%202b2b39ea3a2b47b8906f62e584a80a97/Untitled.png)
+![Untitled](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/c29dd366-7c8d-4385-9d31-3afd11164383)
 
 위의 데이터처럼 시험 점수를 기반으로 합격 불합격을 나누어 보도록 합시다.
 
 그리고 합격을 1, 불합격을 0으로 가정 하였을 때 시험 점수와 합격, 불합격에 대한 그래프를 만들어 봅시다.
 
-![Untitled](Logistic%20Regression%202b2b39ea3a2b47b8906f62e584a80a97/Untitled%201.png)
+![Untitled 1](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/f7cec831-6305-4c5b-a974-57ac7c1e64fe)
 
 해당 그래프를 한번 자세하게 분석 해보도록 합시다.
 
@@ -28,7 +33,7 @@ Logistic Regression은 이진 분류 (Binary Classification)을 하기 위해 �
 
 **???:그래도 직선이니까 선형 회귀 쓰면 되는거 아님?**
 
-![Untitled](Logistic%20Regression%202b2b39ea3a2b47b8906f62e584a80a97/Untitled%202.png)
+![Untitled 2](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/3344a902-dba3-4fd0-97a0-286e67e99d86)
 
 그렇게 생각 하실 수 있을거 같아 위의 자료를 가져왔습니다.
 
@@ -46,7 +51,7 @@ Logistic Regression은 이진 분류 (Binary Classification)을 하기 위해 �
 
 ### 시그모이드 함수(Sigmoid Function)
 
-![Untitled](Logistic%20Regression%202b2b39ea3a2b47b8906f62e584a80a97/Untitled%203.png)
+![Untitled 3](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/19183ed1-92fc-4c83-acf4-af66b0c94dbe)
 
 Sigmoid 함수는 위와 같이 정의가 됩니다.
 
@@ -79,7 +84,7 @@ plt.show()
 
 해당 코드의 결과로 나온 sigmoid함수 그래프는 아래와 같습니다.
 
-![Untitled](Logistic%20Regression%202b2b39ea3a2b47b8906f62e584a80a97/Untitled%204.png)
+![Untitled 4](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/a136f37e-47a6-4648-94cc-b10883727535)
 
 s자 모양으로 만들어진 그래프가 보이죠
 
@@ -104,7 +109,7 @@ plt.show()
 
 해당 코드를 이용해서 weight와 bias값이 서로 다른 sigmoid 함수를 만들어 보도록 하겠습니다.
 
-![Untitled](Logistic%20Regression%202b2b39ea3a2b47b8906f62e584a80a97/Untitled%205.png)
+![Untitled 5](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/6231c7bb-5fc8-4ad6-9912-465383e2612b)
 
 위의 그림에서 빨간색 점선은 weight가 0.5인 sigmoid이며 
 
@@ -135,7 +140,7 @@ plt.show()
 
 위의 코드에서 x앞에 있는 weight를 모두 지운 뒤 bias만 추가하여 실행 했을 때 나오는 그래프입니다.
 
-![Untitled](Logistic%20Regression%202b2b39ea3a2b47b8906f62e584a80a97/Untitled%206.png)
+![Untitled 6](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/7a5c0f50-4135-4b83-86b5-3195a1d0e5e9)
 
 bias는 그래프의 좌우 이동 값을 나타내 줍니다.
 
@@ -165,11 +170,11 @@ Sigmoid함수의 특징은 입력 데이터 x의 값이 커지면 커질 수록 
 
 그럼 loss함수는 그대로 mse를 사용해야 할까요?
 
-![Untitled](Logistic%20Regression%202b2b39ea3a2b47b8906f62e584a80a97/Untitled%207.png)
+![Untitled 7](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/b288d36c-aded-4922-9290-3784158d3c32)
 
 먼저 mse함수를 보도록 합시다. 해당 함수의 H(x) 부분에 우리가 앞에서 배운 Sigmoid함수를 넣게 되었을 때 loss와 weight간의 관계를 한번 그래프로 그려보도록 합시다.
 
-![Untitled](Logistic%20Regression%202b2b39ea3a2b47b8906f62e584a80a97/Untitled%208.png)
+![Untitled 8](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/92330744-4664-4b94-983e-c9c6b0035ebc)
 
 위의 그래프를 보면 로컬 미니멈과 글로벌 미니멈이 있으며 굴곡이 여러 군데 져있습니다.
 
@@ -185,7 +190,7 @@ Sigmoid함수의 특징은 입력 데이터 x의 값이 커지면 커질 수록 
 
 그럼 이 문제를 개선하기 위해서 한번 sigmoid함수와 mse에 대해 그래프를 그려서 분석 해보도록 합시다.
 
-![Untitled](Logistic%20Regression%202b2b39ea3a2b47b8906f62e584a80a97/Untitled%209.png)
+![Untitled 9](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/bcc79c63-fd3e-485b-99e3-014376fd105e)
 
 해당 그래프는 loss함수 mse의 값과 H(x) 즉 Sigmoid함수의 결과 값에 대해 나타낸 그래프입니다.
 
@@ -195,15 +200,15 @@ Sigmoid함수 특성 상 결과 값이 1과 0으로만 분류가 되며 실제 �
 
 위의 두 그래프를 로그 함수로 표현하였을 때 아래와 같은 식으로 표현이 됩니다.
 
-![Untitled](Logistic%20Regression%202b2b39ea3a2b47b8906f62e584a80a97/Untitled%2010.png)
+![Untitled 10](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/af8af132-4e9c-48cc-98f1-1910c0909bb7)
 
 이 식을 하나로 통일하여 쓰게 된다면 아래와 같이 표현을 할 수 있습니다.
 
-![Untitled](Logistic%20Regression%202b2b39ea3a2b47b8906f62e584a80a97/Untitled%2011.png)
+![Untitled 11](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/a136e334-1da5-43e4-82f8-9b1a29d77cd6)
 
 그럼 이 식을 mse에 대입하여 적용 시켜보도록 하겠습니다.
 
-![Untitled](Logistic%20Regression%202b2b39ea3a2b47b8906f62e584a80a97/Untitled%2012.png)
+![Untitled 12](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/87a720b0-2e65-49d8-8f84-5c5e84bcd100)
 
 이렇게 Sigmoid함수를 적용한 mse가 완성이 됩니다.
 
