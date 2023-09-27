@@ -83,6 +83,7 @@ toc_sticky: true
 </head>
 
 <span style="font-size:13px;">
+해당 포스팅은 코드잇의 강의를 참고하였습니다.
 </span>
 <br>
 ![image](https://github.com/gyun97/Baekjoon_Solution/assets/143414166/9aebf320-78ef-4075-a32c-dee1e741c88e)

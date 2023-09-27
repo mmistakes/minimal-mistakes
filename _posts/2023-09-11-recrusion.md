@@ -80,6 +80,10 @@ toc_sticky: true
 
   </style>
 </head>
+<span style="font-size:13px;">
+해당 포스팅은 코드잇의 강의를 참고하였습니다.
+</span><br>
+<br>
 ![image](https://github.com/gyun97/Baekjoon_Solution/assets/143414166/0985f553-fe59-4423-ad0b-cf0388a7ad6e)
 
 ## **재귀 함수(Recursive Function)란?**

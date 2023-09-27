@@ -77,9 +77,13 @@ toc_sticky: true
   .page__content p > strong {
     font-size: 0.8rem !important;
   }
+  
 
   </style>
 </head>
+<span style="font-size:13px;">
+해당 포스팅은 코드잇의 강의를 참고하였습니다.
+</span>
 ![image](https://github.com/gyun97/Baekjoon_Solution/assets/143414166/ca43b8c9-9d37-4d47-97c3-f3d7c2dbb50a)
 ## **Brute Force란?**
 <span style = "color:blue; font-weight:bold;">

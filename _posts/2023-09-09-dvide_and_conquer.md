@@ -80,6 +80,9 @@ toc_sticky: true
 
   </style>
 </head>
+<span style="font-size:13px;">
+해당 포스팅은 코드잇의 강의를 참고하였습니다.
+</span>
 ![image](https://github.com/gyun97/Baekjoon_Solution/assets/143414166/75cc2769-7184-4ab1-9edb-a9df633663a8)
 ※Divide and Conquer 포스팅 정독 전에 재귀 함수에 대해 잘 모르거나 익숙하지 않은 분들은 <a href="https://gyun97.github.io/algorithm/recrusion/">재귀 함수</a>에 대해 보고 오시는 것을 권장합니다.
 
