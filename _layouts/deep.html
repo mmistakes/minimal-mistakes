@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONNX.js Example</title>
-    <!-- ONNX.js 라이브러리 불러오기 -->
-    <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
-</head>
-<body>
-    <h1>ONNX.js Example</h1>
-    <div id="output"></div>
+<html>
+    <header>
+        <title>ONNX Runtime JavaScript examples: Quick Start - Web (using script tag)</title>
+    </header>
+    <body>
+        <!-- import ONNXRuntime Web from CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+        <script>
+            // use an async context to call onnxruntime functions.
+            async function main() {
+                try {
+                    // create a new session and load the specific model.
+                    //
+                    // the model in this example contains a single MatMul node
+                    // it has 2 inputs: 'a'(float32, 3x4) and 'b'(float32, 4x3)
+                    // it has 1 output: 'c'(float32, 3x3)
+                    const session = await ort.InferenceSession.create('./my_model.onnx');
 
-    <script>
-        // ONNX.js로 모델 로드
-        const session = new onnx.InferenceSession();
-        session.loadModel("assets\model\super_resolution.onnx").then(() => {
-            console.log("ONNX 모델이 성공적으로 로드되었습니다.");
+                    // prepare inputs. a tensor need its corresponding TypedArray as data
+                    const dataA = Float32Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
+                    const dataB = Float32Array.from([10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120]);
+                    const tensorA = new ort.Tensor('float32', dataA, [3, 4]);
+                    const tensorB = new ort.Tensor('float32', dataB, [4, 3]);
 
-            // 예제 입력 데이터 생성 (모델 입력 크기에 맞춰 변경하세요)
-            const inputTensor = new Float32Array(1 * 3 * 224 * 224); // 예제 입력 크기에 맞춰 변경하세요
+                    // prepare feeds. use model input names as keys.
+                    const feeds = { a: tensorA, b: tensorB };
 
-            // 모델 실행
-            const inputName = session.inputNames[0];
-            const outputName = session.outputNames[0];
-            const inputData = new onnx.Tensor(inputTensor, "float32");
-            const feedDict = {};
-            feedDict[inputName] = inputData;
-            session.run(feedDict).then(output => {
-                // 모델 실행 결과 출력
-                const outputData = output.values().next().value;
-                const result = outputData.data;
-                document.getElementById("output").innerText = "모델 실행 결과: " + result;
-            }).catch(err => {
-                console.error("모델 실행 중 오류 발생:", err);
-            });
-        }).catch(err => {
-            console.error("ONNX 모델 로드 중 오류 발생:", err);
-        });
-    </script>
-</body>
+                    // feed inputs and run
+                    const results = await session.run(feeds);
+
+                    // read from results
+                    const dataC = results.c.data;
+                    document.write(`data of result tensor 'c': ${dataC}`);
+
+                } catch (e) {
+                    document.write(`failed to inference ONNX model: ${e}.`);
+                }
+            }
+
+            main();
+        </script>
+    </body>
 </html>
