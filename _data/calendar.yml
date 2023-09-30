@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Klassenfahrt 5a, 5b Blankensee",
-    "title": "Klassenfahrt 5a, 5b Blankensee",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=czE1M2N0Z3U0YnZmcXNqZ3I1YThhOWhscjQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2023-09-25",
-      "date_time": null
-    },
-    "end": {
-      "date": "2023-09-30",
-      "date_time": null
-    },
-    "created": "2023-09-19T04:27:52.000Z",
-    "updated": "2023-09-19T04:27:52.878Z"
-  },
-  {
-    "image_path": null,
     "alt": "Schule und Hort geschlossen: Brückentag",
     "title": "Schule und Hort geschlossen: Brückentag",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2023-06-30T10:56:47.000Z",
     "updated": "2023-06-30T11:11:24.160Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. Fachkonferenz Deutsch ",
+    "title": "1. Fachkonferenz Deutsch ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NHR0MWxubTdxOWx0dmlsZ2U5MnJhdWtxZjYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2023-10-10T15:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2023-10-10T16:30:00+02:00"
+    },
+    "created": "2023-09-27T08:43:13.000Z",
+    "updated": "2023-09-27T08:43:13.372Z"
   }
 ]
