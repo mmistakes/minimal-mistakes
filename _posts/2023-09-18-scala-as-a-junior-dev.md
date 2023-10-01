@@ -586,7 +586,7 @@ for
 yield (i, j)
 ```
 
-## 2.2.2.7. Type Inference
+##### 2.2.2.7. Type Inference
 
 Type inference is an awesome feature that makes developing much more pleasant. However, it is recommended to specify the type of public methods and fields as it helps in understanding the code. Personally, while I'm creating the method/fields, I don't specify the type, but once I'm done, I add it. This way, my screen does not turn red while coding, and if I need to refactor/correct the implementation and end up with the wrong type, the compiler will tell me instead of crashing at call-sites.
 
