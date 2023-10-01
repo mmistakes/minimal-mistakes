@@ -10,8 +10,8 @@ docs:
     children:
       - title: "Category"
         url: /categories/
-      - title: "Tag"
-        url: /tags/
+      - title: "Search"
+        url: /Search/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
