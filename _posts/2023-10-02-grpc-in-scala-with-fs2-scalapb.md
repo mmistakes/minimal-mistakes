@@ -1,13 +1,15 @@
 ---
-title: "Grpc in Scala with Fs2Grpc and Scalapb."
-date: 2023-08-29
+title: "gRPC in Scala with Fs2 and Scalapb"
+date: 2023-10-02
 header:
   image: "/images/blog cover.jpg"
 tags: []
-excerpt: "Understand how to implement gRPC in Scala."
+excerpt: "A long-form guide on how to make microservices communicate with gRPC in Scala."
 toc: true
 toc_label: "In this article"
 ---
+
+_by [Herbert Kateu](https://github.com/hkateu)_
 
 ## 1. Introduction
 
@@ -22,13 +24,13 @@ We'll also learn how to write a `.proto` file which we'll use to generate necess
 
 ## 2. Setting Up.
 
-In our new Scala project, let's create a `plugins.sbt` file in the project folder with the following code.
+In our new Scala project, let's create a `plugins.sbt` file in the `project` folder with the following code:
 
 ```scala
 addSbtPlugin("org.typelevel" % "sbt-fs2-grpc" % "2.7.4")
 ```
 
-Also add the following code to your `build.sbt` file.
+Also add the following code to your `build.sbt` file:
 
 ```scala
 val scala3Version = "3.3.0"
@@ -274,17 +276,18 @@ import io.grpc.*
 import fs2.grpc.syntax.all.*
 
 object Client {
-  private val managedChannelResource: Resource[IO, ManagedChannel] =
+  private val resource: Resource[IO, OrderFs2Grpc[IO, Metadata]] =
     NettyChannelBuilder
       .forAddress("127.0.0.1", 9999)
       .usePlaintext()
       .resource[IO]
+      .flatMap(ch => OrderFs2Grpc.stubResource[IO](ch))
 }
 ```
-Here we create a `Client` object with its first element, `managedChannelResource`. We use `NettyChannelBuilder` to construct a channel that uses Netty transport. A channel provides a connection to a network socket or component that is capable of I/O operations such as read, write, connect, and bind. 
-The `forAddress()` method adds host and port values (same as our server) while the `usePlaintext()` method sets the negotiation type for the Http/2 connection to `PLAINTEXT` instead of `TLS` which is the default for a `ManagedChannel`, and lastly the `resource()` method builds the `ManagedChannel` into a `Resource`.
+Here we create a `Client` object with its first element, `resource`. We use `NettyChannelBuilder` to construct a channel that uses Netty transport. A channel provides a connection to a network socket or component that is capable of I/O operations such as read, write, connect, and bind. 
+The `forAddress()` method adds host and port values (same as our server) while the `usePlaintext()` method sets the negotiation type for the Http/2 connection to `PLAINTEXT` instead of `TLS` which is the default for a `ManagedChannel`, and the `resource()` extension method from FS2 builds the `ManagedChannel` into a `Resource`. We then create a `stubResource` out of that channel, finally returning an instance of `OrderFs2Grpc[IO, Metadata]`.
 
-The `gRPC` client will enable us to directly call methods on the server application, therefore we'll be able to process multiple orders from an `fs2` stream by invoking the `sendOrderStream()` function from our server. 
+The gRPC client will enable us to directly call methods on this instance, therefore we'll be able to process multiple orders from an `fs2` stream by invoking the `sendOrderStream()` function, ignoring that the actual implementation of that method involves a remote connection to a different service, completing the RPC protocol. 
 
 Here's how we can implement this:
 
@@ -299,7 +302,7 @@ object Client {
     items.map(x => s"[${x.qty} of ${x.name}]")
   }
 
-  private def processor(
+  private def processOrders(
       orderStub: OrderFs2Grpc[IO, Metadata],
       orders: Stream[IO, OrderRequest]
   ): IO[List[String]] = {
@@ -318,21 +321,9 @@ object Client {
   }.compile.toList
 }
 ```
-We define `processor()`, a function that takes an `orderStub` of type `OrderFs2Grpc[IO, Metadata]` and `orders` of type `Stream[IO, OrderRequest]` as arguments. When we call `sendOrderStream(orders, new Metadata())` on `orderStub`, we get a `Stream[IO, OrderReply]`, which we `flatMap` to format each `OrderReply` into a `String` that informs the user of their `orderid`, the `items` they bought and the `total` amount they spent for each order, this `Stream` is compiled to return an `IO[List[String]]`. 
+We define `processOrders()`, a function that takes a `service` of type `OrderFs2Grpc[IO, Metadata]` and `orders` of type `Stream[IO, OrderRequest]` as arguments. When we call `sendOrderStream(orders, new Metadata())` on `orderStub`, we get a `Stream[IO, OrderReply]`, which we `flatMap` to format each `OrderReply` into a `String` that informs the user of their `orderid`, the `items` they bought and the `total` amount they spent for each order, this `Stream` is compiled to return an `IO[List[String]]`. 
 
 We use the `formatItemsToStr()` function to format the `Seq[Item]` as part of the returned `String`.
-
-```scala
-...
-object Client {
-...
-  def runClient(orders: Stream[IO, OrderRequest]): IO[List[String]] =
-    managedChannelResource
-      .flatMap(ch => OrderFs2Grpc.stubResource[IO](ch))
-      .use(orderResource => processor(orderResource, orders))
-}
-```
-Lastly, we define a `runClient()` function which takes `orders`, a `Stream[IO, OrderRequest]` as an argument.  Here we `flatMap` on `managedChannelResource` and pass the `ManagedChannel` to the `OrderFs2Grpc.stubResource[IO]()` function to create a `Resource[IO, OrderFs2Grpc[IO, Metadata]]`. We then call the `use()` function which gives us access to `OrderFs2Grpc[IO, Metadata]]` which we pass to `processor()` along with `orders` resulting in an `IO[List[String]]`..
 
 Here's the full code:
 
@@ -347,22 +338,23 @@ import com.rockthejvm.protos.orders.*
 import fs2.Stream
 
 object Client {
-  private val managedChannelResource: Resource[IO, ManagedChannel] =
+  private val resource: Resource[IO, OrderFs2Grpc[IO, Metadata]] =
     NettyChannelBuilder
       .forAddress("127.0.0.1", 9999)
       .usePlaintext()
       .resource[IO]
+      .flatMap(ch => OrderFs2Grpc.stubResource[IO](ch))
 
   private def formatItemsToStr(items: Seq[Item]): Seq[String] = {
     items.map(x => s"[${x.qty} of ${x.name}]")
   }
 
-  private def processor(
-      orderStub: OrderFs2Grpc[IO, Metadata],
+  private def processOrders(
+      service: OrderFs2Grpc[IO, Metadata],
       orders: Stream[IO, OrderRequest]
   ): IO[List[String]] = {
     for {
-      response <- orderStub.sendOrderStream(
+      response <- service.sendOrderStream(
         orders,
         new Metadata()
       )
@@ -374,11 +366,6 @@ object Client {
       )
     } yield str
   }.compile.toList
-
-  def runClient(orders: Stream[IO, OrderRequest]): IO[List[String]] =
-    managedChannelResource
-      .flatMap(ch => OrderFs2Grpc.stubResource[IO](ch))
-      .use(orderResource => processor(orderResource, orders))
 }
 ```
 
@@ -498,20 +485,20 @@ import fs2.Stream
 
 object AppRoutes {
   ...
-  def restService = HttpRoutes.of[IO] {
+  def restService(service: OrderFs2Grpc[IO, Metadata]) = HttpRoutes.of[IO] {
     ...
      case req @ POST -> Root / "submit" =>
       req
         .as[Orders]
         .flatMap { x =>
-          Client.runClient(Stream.emits(x.values).covary[IO])
+          Client.processOrders(service, Stream.emits(x.values).covary[IO])
         }
         .handleError(x => List(x.getMessage))
         .flatMap(x => Ok(x.asJson))
   }
 }
 ```
-Using the `as()` method on the request parses our JSON string returning `IO[Orders]`. We then `flatMap` on this to pass `Orders` to our `runClient()` function which communicates with the `gRPC` server to process them. This returns either an `IO[List[String]]` in case of success or an error message which we package as a `List` in case of failure. This `List` is then passed back to the browser as a `JSON` array of strings.
+Using the `as()` method on the request parses our JSON string returning `IO[Orders]`. We then `flatMap` on this to pass `Orders` to our `processOrders()` function which communicates with the `gRPC` server to process them. This returns either an `IO[List[String]]` in case of success or an error message which we package as a `List` in case of failure. This `List` is then passed back to the browser as a `JSON` array of strings.
 
 Here's the full code:
 
@@ -559,7 +546,7 @@ object AppRoutes {
     given ordersEntityDecoder: EntityDecoder[IO, Orders] = jsonOf[IO, Orders]
   }
 
-  def restService = HttpRoutes.of[IO] {
+  def restService(service: OrderFs2Grpc[IO, Metadata]) = HttpRoutes.of[IO] {
     case req @ GET -> Root / "index.html" =>
       StaticFile
         .fromString[IO](
@@ -571,7 +558,7 @@ object AppRoutes {
       req
         .as[Orders]
         .flatMap { x =>
-          Client.runClient(Stream.emits(x.values).covary[IO])
+          Client.processOrders(service, Stream.emits(x.values).covary[IO])
         }
         .handleError(x => List(x.getMessage))
         .flatMap(x => Ok(x.asJson))
@@ -792,17 +779,15 @@ In this section, we bring everything together to run our program. First, we'll n
 import cats.effect.*
 import org.http4s.ember.server.EmberServerBuilder
 import com.comcast.ip4s.*
-import com.rockthejvm.routes.AppRoutes.restService
 
 object Main extends IOApp {
-  def httpServerStream =
+  def httpServerResource(remoteService: OrderFs2Grpc[IO, Metadata]) =
     EmberServerBuilder
       .default[IO]
       .withHost(host"0.0.0.0")
       .withPort(port"8080")
-      .withHttpApp(restService.orNotFound)
+      .withHttpApp(AppRoutes.restService(remoteService).orNotFound)
       .build
-      .use(_ => IO.never)
 }
 ```
 We use `EmberServerBuilder` to create our server with port number 8080 and build it with our `restService`. 
@@ -813,18 +798,17 @@ import cats.syntax.parallel.*
 
 object Main extends IOApp {
   ...
-  def run(args: List[String]): IO[ExitCode] =
-    (
-      httpServerStream,
-      grpcServer
+  def run(args: List[String]): IO[ExitCode] = for {
+    remoteService <- grpcServer
         .evalMap(svr => IO(svr.start()))
         .useForever
-    )
-      .parMapN((http, grpc) => ())
-      .as(ExitCode.Success)
+        .fork
+    httpServer <- httpServerResource(remoteService).useForever.fork
+    _ <- IO.never
+  } yield ()
 }
 ```
-In the `run()` function we call both `httpServerStream` and `grpcServerStream` in parellel using `parMapN()` from `cats.syntax.parallel`. We also call `evalMap()` on the `grpcServer` `Resource` to start the server and make sure it keeps running by calling `useForever()`.
+In the `run()` function we call both `httpServer` and `grpcServer` in parellel. We also call `evalMap()` on the `grpcServer` `Resource` to start the server and make sure it keeps running by calling `useForever()`.
 
 Now Let's test our application.
 When we run our server and navigate to `localhost:8080/index.html`, we should be greeted with the following page.
@@ -932,7 +916,7 @@ final case class Item(
 Let's also make the following change to `OrderClient.scala`.
 
 ```diff
-  private def processor(
+  private def processOrders(
       orderStub: OrderFs2Grpc[IO, Metadata],
       orders: Stream[IO, OrderRequest]
   ): IO[List[String]] = {
@@ -980,4 +964,4 @@ In this article, we've looked at how to create a `gRPC` service in Scala using `
 
 `Scalapb` has a lot more to offer than what's been discussed in this article such as more customizations, transformations, extra sbt settings as well as some extra guides on usage with other Scala libraries, I encourage you to dig into the documentation for more in-depth knowledge on `gRPC` in Scala.
 
-The complete code for this article can be found over on my [GitHub](https://github.com/hkateu/orderbuffer) account.
+The complete code for this article can be found (in a slightly modified version) over on [GitHub](https://github.com/hkateu/orderbuffer).
