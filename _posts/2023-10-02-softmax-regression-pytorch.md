@@ -40,7 +40,7 @@ print(x_train.shape)
 print(y_train.shape)
 ```
 
-![Untitled](Pytorch%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%84%8B%E1%85%A7%20Softmax%20Regression%E1%84%8B%E1%85%B3%E1%86%AF%20%E1%84%80%E1%85%AE%E1%84%92%E1%85%A7%E1%86%AB%E1%84%92%E1%85%A1%20b79ad3277c9a4c12bd14674aa0059358/Untitled.png)
+![Untitled](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/abfb9a35-601a-43e8-b31a-1d1dac722f4b)
 
 그럼 각 샘플의 shape을 한번 알아보도록 합시다.
 
@@ -87,7 +87,7 @@ for epoch in range(epochs+1):
 
 그럼 학습을 진행 한 뒤 결과를 보도록 하겠습니다.
 
-![Untitled](Pytorch%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%84%8B%E1%85%A7%20Softmax%20Regression%E1%84%8B%E1%85%B3%E1%86%AF%20%E1%84%80%E1%85%AE%E1%84%92%E1%85%A7%E1%86%AB%E1%84%92%E1%85%A1%20b79ad3277c9a4c12bd14674aa0059358/Untitled%201.png)
+![Untitled 1](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/55cd7138-98a4-4f36-923a-d08a70911064)
 
 loss는 충분히 점점 줄어들며 weight와 bias가 개선이 되었다는 것을 알 수 있습니다.
 
@@ -128,7 +128,7 @@ for epoch in range(epochs + 1):
         ))
 ```
 
-![Untitled](Pytorch%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%84%8B%E1%85%A7%20Softmax%20Regression%E1%84%8B%E1%85%B3%E1%86%AF%20%E1%84%80%E1%85%AE%E1%84%92%E1%85%A7%E1%86%AB%E1%84%92%E1%85%A1%20b79ad3277c9a4c12bd14674aa0059358/Untitled%202.png)
+![Untitled 2](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/74c88fe0-5171-4d6c-9724-7857a61ad7cb)
 
 loss가 충분히 잘 개선이 되고 있음을 확인 할 수 있습니다.
 
