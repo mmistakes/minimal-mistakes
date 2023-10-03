@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Schule und Hort geschlossen: Brückentag",
-    "title": "Schule und Hort geschlossen: Brückentag",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NHI1NzBpN2FpYXJydWZoOHVkdTJhZXJqbDggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2023-10-02",
-      "date_time": null
-    },
-    "end": {
-      "date": "2023-10-03",
-      "date_time": null
-    },
-    "created": "2023-09-24T09:29:27.000Z",
-    "updated": "2023-09-24T09:29:27.489Z"
-  },
-  {
-    "image_path": null,
     "alt": "Feiertag",
     "title": "Feiertag",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2023-09-27T08:43:13.000Z",
     "updated": "2023-09-27T08:43:13.372Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. Schulkonferenz",
+    "title": "1. Schulkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NnZjcTBmanIyc2huNm5jN2tjNm81am5wdTQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2023-10-12T15:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2023-10-12T16:30:00+02:00"
+    },
+    "created": "2023-09-22T03:59:47.000Z",
+    "updated": "2023-09-22T03:59:47.578Z"
   }
 ]
