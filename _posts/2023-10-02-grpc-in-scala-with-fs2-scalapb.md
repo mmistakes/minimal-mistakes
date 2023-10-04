@@ -11,6 +11,10 @@ toc_label: "In this article"
 
 _by [Herbert Kateu](https://github.com/hkateu)_
 
+The video version is here:
+
+{% include video id="CpUBZI1mr7w" provider="youtube" %}
+
 ## 1. Introduction
 
 RPC stands for Remote Procedure Call, it's a client-server communication protocol where one program can request a service on a different address that may be on the same or different system connected by a network. It enables users to work with remote procedures as if they were local.
