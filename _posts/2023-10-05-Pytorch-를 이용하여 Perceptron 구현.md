@@ -6,6 +6,7 @@ tag: [deeplearning , coding , Perceptron , Python , Pytorch]
 toc: true
 ---
 
+
 이번에는 Pytorch를 이용해서  Perceptron을 만들고 Perceptron으로 AND, OR ,NAND문제를 풀어보도록 하겠습니다.
 
 ```python
