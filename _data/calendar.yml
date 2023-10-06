@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Hort ab 13:30 geschlossen: Personalversammlung",
-    "title": "Hort ab 13:30 geschlossen: Personalversammlung",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=cTlyZnNnYmhjYTlmdDBqbjRxbGkwYXFlMmMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2023-10-05",
-      "date_time": null
-    },
-    "end": {
-      "date": "2023-10-06",
-      "date_time": null
-    },
-    "created": "2023-09-22T03:58:36.000Z",
-    "updated": "2023-09-22T03:58:36.779Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Kinderparlament",
-    "title": "Kinderparlament",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=cG1tYjRqZTJnZnJ0YmR2Y2g1dGNwOWFhczggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2023-10-05T10:25:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2023-10-05T11:25:00+02:00"
-    },
-    "created": "2023-09-22T03:59:08.000Z",
-    "updated": "2023-09-22T03:59:08.038Z"
-  },
-  {
-    "image_path": null,
     "alt": "Fotograf bis Jahrgangsstufe 5",
     "title": "Fotograf bis Jahrgangsstufe 5",
     "excerpt": null,
@@ -100,5 +66,39 @@
     },
     "created": "2023-09-27T08:46:00.000Z",
     "updated": "2023-09-27T08:46:00.136Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Herbstferien",
+    "title": "Herbstferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=dmgydmhzZG8yNWg5ZXVrNmNkZXRqcHBnZnMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2023-10-23",
+      "date_time": null
+    },
+    "end": {
+      "date": "2023-11-04",
+      "date_time": null
+    },
+    "created": "2023-09-13T04:01:20.000Z",
+    "updated": "2023-09-13T04:01:20.761Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. Fachkonferenz Sport",
+    "title": "1. Fachkonferenz Sport",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MWQzcW5ubmk2dWU3Y2gzajdsNmpkam0wbzcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2023-11-08T15:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2023-11-08T16:30:00+01:00"
+    },
+    "created": "2023-09-27T09:35:03.000Z",
+    "updated": "2023-09-27T09:35:03.546Z"
   }
 ]
