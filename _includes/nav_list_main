@@ -81,7 +81,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Vision" %}
+                        <li><a href="/categories/Vision" class=""> 컴퓨터비전 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "DeepLearning" %}
