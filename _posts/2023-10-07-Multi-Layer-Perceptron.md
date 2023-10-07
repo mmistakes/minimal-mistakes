@@ -3,7 +3,10 @@ layout: single
 title: Multi Layer Perceptron(MLP)
 category: deeplearning
 tag: [deeplearning , MLP , Perceptron , Pytorch , Python , coding]
-toc: True
+toc: true
+toc_sticky : true
+toc_label : 목차
+author_profile: false 
 ---
 이번에는 Pytorch를 이용하여 Multi layer Perceptron을 구현 해보도록 하겠습니다. 그리고 해당 Perceptron을 이용해서 xor문제를 풀어 보도록 하겠습니다.
 
