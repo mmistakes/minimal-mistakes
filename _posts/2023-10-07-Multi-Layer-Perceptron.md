@@ -3,10 +3,7 @@ layout: single
 title: Multi Layer Perceptron(MLP)
 category: deeplearning
 tag: [deeplearning , MLP , Perceptron , Pytorch , Python , coding]
-toc: true
-toc_sticky : true
-toc_label : 목차
-author_profile: false 
+
 ---
 이번에는 Pytorch를 이용하여 Multi layer Perceptron을 구현 해보도록 하겠습니다. 그리고 해당 Perceptron을 이용해서 xor문제를 풀어 보도록 하겠습니다.
 
@@ -41,7 +38,8 @@ hidden layer와 output layer에서의 활성 함수로는 sigmoid 함수입니�
 
 위의 인공 신경망을 그림으로 표현한다면 아래의 그림과 같습니다.
 
-![Untitled](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/bf914b92-ef83-4fe5-96f8-5bbf14e2f346)
+![Untitled](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/bf914b92-ef83-4fe5-96f8-5bbf14e2f346){: .img-width-half
+}
 
 ```python
 criterion=torch.nn.BCELoss()
