@@ -38,8 +38,7 @@ hidden layer와 output layer에서의 활성 함수로는 sigmoid 함수입니�
 
 위의 인공 신경망을 그림으로 표현한다면 아래의 그림과 같습니다.
 
-![Untitled](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/bf914b92-ef83-4fe5-96f8-5bbf14e2f346){: .img-width-half
-}
+![Untitled](https://github.com/jusunglee-ai/jusunglee-ai.github.io/assets/125032849/bf914b92-ef83-4fe5-96f8-5bbf14e2f346){: .img-width-half .align-center} 
 
 ```python
 criterion=torch.nn.BCELoss()
