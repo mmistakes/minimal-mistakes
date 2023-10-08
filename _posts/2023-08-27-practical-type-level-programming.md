@@ -1,18 +1,98 @@
 ---
-title: "Practical Type-Level Programming in Scala 3, Part 2: Serializing a Concrete Class"
-date: 2023-08-28
+title: "Practical Type-Level Programming in Scala 3"
+date: 2023-08-27
 header:
   image: "/images/blog cover.jpg"
 tags: []
 toc: true
-excerpt: "JSON serialization of a concrete class with type-level techniques."
+excerpt: "Learn how to use type-level programming to solve practical problems."
 ---
 
-Welcome to the second installation of this series. I'm assuming that you've read the [first part](/practical-type-level-programming-part1), and are familiar with the "flat JSON" problem we are trying to solve.
+# Introduction
+
+Scala 3 boasts many features that are meant to simplify and enhance type-level programming: match types, inlines, diverse compile-time operations, and the list goes on. With all these new features it is quite easy to get lost when trying to solve a concrete problem using type-level techniques.
+
+In this article my aim is to bridge that gap by showing, step by step, how to solve a concrete problem using many of the new type-level features that Scala 3 provides. Let's dig in!
+
+## The Problem
+
+The problem that we are going to solve is inspired by an actual use-case that I had at work. So hopefully it will be realistic enough as to be useful for your own endeavors.
+
+Imagine that you have the following data model[^badModel] that you need to store as JSON:
+```scala
+case class User(email: Email, phone: Phone, address: Address)
+
+case class Email(primary: String, secondary: Option[String])
+
+case class Phone(number: String, prefix: Int)
+
+case class Address(country: String, city: String) 
+```
+
+[^badModel]: This is a very loosely-typed model for example purposes only, please use better and more precise types for real code.
+
+But, you can't store this data in any format you want, it has to be "flat". More specifically, each field in the top-level class has to be inlined into the top-level JSON that you produce[^whyFlat].
+
+[^whyFlat]: I'll leave it up to you to imagine why you might have such a requirement.
+
+Suppose you have the following data:
+```scala
+User(
+  Email(
+    primary = "bilbo@baggins.com", 
+    secondary = Some("frodo@baggins.com")),
+  Phone(number = "555-555-00", prefix = 88),
+  Address(country = "Shire", city = "Hobbiton"))
+```
+
+The resulting JSON should be the following:
+```json
+{
+  "primary": "bilbo@baggins.com",
+  "secondary": "frodo@baggins.com",
+  "number": "555-555-00",
+  "prefix": 88,
+  "country": "Shire",
+  "city": "Hobbiton"
+}
+```
+
+Notice how we no longer have the top-level fields, and instead have the data they contained at the top-level[^goodIdea].
+
+[^goodIdea]: I'm going to side-step the issue of whether tying your internal model to serialization concerns is a good idea (it's not), and just go with the problem as is.
+
+As stated it wouldn't be difficult to solve the problem at runtime with some JSON munging. But there are at least two reasons why that's not good enough for us. A runtime penalty for creating redundant intermediate JSON structures, and more importantly; we want this as safe at compile-time as possible. We don't want our users discovering some silly mistake after they deployed to production. Safety for our purposes would mean that:
+- If the top-level class has a primitive field - fail to compile
+- If the inlined classes have overlapping field names - fail to compile
+
+We'll see later why these are actual safety issues, but for now these conditions are enough to force us to use compile-time techniques[^manually].
+
+[^manually]: Or we could do it "manually" by creating another class with the desired flat format and then convert between the original nested classes and the new flat one. We could, but it would be tedious, and not as magical...
+
+Broadly speaking, Scala has two classes of compile-time techniques: type-level programming and macros. Although we could solve the flat JSON problem with macros, we won't be doing this here. Macros are quite powerful, but they also tend to be a very "one-off" kind of solution. Tailored to a specific problem, rather than made up of reusable components. On the other hand, type-level techniques are usually made up from existing and reusable language features. Every type-level feature we are going to learn about can become a new tool that you can reuse in different contexts. So in this article we'll focus exclusively on type-level programming, using only existing language features, rather than inventing our own with macros[^otherLibraries].
+
+[^otherLibraries]: There are libraries that can somewhat simplify meta-programming in Scala, such as [Magnolia](https://github.com/softwaremill/magnolia) and [Shapeless 3](https://github.com/typelevel/shapeless-3). These libraries are useful, but as of writing they are not powerful enough to solve the problem as stated.
+
+I will add a disclaimer, that as of writing some of the new type-level capabilities in Scala 3 have their rough edges, and not everything will go smoothly for us[^issues]. Hopefully we'll make it out with minimal damage to our psyche. If you do find yourself debating between using type-level programming and macros, macros may be the less painful choice (again, as of writing; things are improving all the time).
+
+[^issues]: I found myself discovering and reporting a couple of issues while researching the material for this article. And to add some further entertainment, occasionally Metals would refuse to compile on some spurious errors, only after hitting "recompile workspace" the errors would go away.
+
+In Scala 2 type-level programming is somewhat notorious for creating inscrutable compilation errors. Luckily, Scala 3 added tools that let us provide custom errors of our own. Since we would like our users to have nice ergonomics, we'll add one last condition to our problem: provide readable compilation errors in case something fails to compile.
+
+To conclude, here's what we are going to do:
+1. Given a class
+1. Provide a JSON serializer/deserializer for its flat format
+1. Fail to compile if the class doesn't meet the safety criteria
+1. Without using any macros
+1. With reasonably informative compilation errors
+
+The full code for all the steps can be found in [this](https://github.com/ncreep/scala3-flat-json-blog/) repo.
 
 Let us now proceed to flat serializing a concrete class. This will allow us to dip our toes into a bit of type-level programming without going into the deep end straight away.
 
-## Serializing a Concrete Class
+# Serializing a Concrete Class
+
+## Pseudocode
 
 Since we'll be dealing with JSON, we'll need a JSON library to do the JSON work for us. I'll be using [Circe](https://github.com/circe/circe), but pretty much any other Scala JSON library (of which there are plenty) will do just fine. I won't spend too much time explaining the mechanics of Circe, in the hope that the JSON code we'll be writing is sufficiently self-explanatory.
 
@@ -20,7 +100,7 @@ You can see the full setup for the post in [this](https://github.com/ncreep/scal
 
 [^buildTool]: This is a [Scala CLI](https://scala-cli.virtuslab.org/) project.
 
-So for today's part our goal is to take any instance of the `User` class and serialize it as a flat JSON. In Circe-speak, what we need is an `Encoder` for the `User` type.
+So for this part our goal is to take any instance of the `User` class and serialize it as a flat JSON. In Circe-speak, what we need is an `Encoder` for the `User` type.
 
 Because metaprogramming in most languages isn't as readable as plain code, when tackling a metaprogramming problem I find it helpful to first sketch a solution in pseudo-code. Let's do that for the JSON `Encoder`:
 1. Given a `User` instance
@@ -501,6 +581,247 @@ val json: Json = {
 
 Finally, we are done!
 
-The full code can be found at the accompanying [repo](https://github.com/ncreep/scala3-flat-json-blog/blob/master/flat_concrete.scala).
+The full code for the `Encoder` can be found in the accompanying [repo](https://github.com/ncreep/scala3-flat-json-blog/blob/master/flat_concrete.scala).
 
-In the next part we are going create a matching flat `Decoder` for our `User` class. Until next time...
+# Deserializing a Concrete Class
+
+Now it's time to read the flat JSON back from the flat format.
+
+## Pseudocode
+
+To deserialize something in Circe, we will need a `Decoder` instance for the `User` type.
+
+As in the last part we'll start with some pseudo-code to sketch the construction of the flat JSON `Decoder`:
+1. Given the `User` type
+1. For each field type in the class
+1. Find the appropriate `Decoder`
+1. Combine the resulting `Decoder`s into a single `Decoder`
+1. Read a `User` instance with the combined `Decoder`
+
+This pseudo-code is quite similar to the pseudo-code for the `Encoder`, but the notable difference is that instead of starting with some values (the fields of `User`) we start out with some types (the types of the fields of `User`). This makes sense, since the process of deserialization begins with JSON, and only after the `Decoder`s do their job do we get back a `User` instance.
+
+This poses a new issue: how do we get a handle on the field types of `User`?
+
+## Mirrors
+
+Here too Scala 3 has new machinery for us to use: the [`Mirror`](https://blog.philipp-martini.de/blog/magic-mirror-scala3/) type.
+
+`Mirror`s are special values that provide us with an interface for metaprogramming over [various types](https://docs.scala-lang.org/scala3/reference/contextual/derivation.html#mirror), case classes in particular. Each instance of a `Mirror` is synthesized by the compiler on-the-fly for the class we are interested in[^generic]. We can summon a `Mirror` for our `User` type like so:
+```scala
+import scala.deriving.Mirror
+
+scala> val mirror = summon[Mirror.Of[User]]
+val mirror:
+  scala.deriving.Mirror.Product{
+    type MirroredMonoType = User;
+      type MirroredType = User;
+      type MirroredLabel = "User";
+      type MirroredElemTypes = (Email, Phone, Address);
+      type MirroredElemLabels = ("email", "phone", "address")
+  } = User
+  ```
+
+[^generic]: Similar to the functionality of the `Generic` type in the [Shapeless](https://github.com/milessabin/shapeless) library in Scala 2.
+
+Note that the resulting `Mirror` value is a very detailed refinement of the rather boring base `Mirror` type. The interesting bit for our purposes is the `MirroredElemTypes` type member:
+```scala
+type MirroredElemTypes = (Email, Phone, Address)
+```
+
+This is exactly the representation of the `User` type as tuple of its field types. And so, this is the tuple type that we will iterate on. Additionally, the `Mirror` provides us with utilities to convert `User` to/from tuples, which we will use later on.
+
+But there's a wrinkle, perviously, when we iterated over a tuple, we had a tuple **value**, something concrete that we actually operate on at runtime. Here, on the other hand, all we have is a tuple **type**? What can we possibly do with just a type7
+
+## Erased Values
+
+Actually, we can do quite a bit. Recall how we used `inline` and `inline match` to achieve compile-time evaluation of code. We can apply the same tools here as well, all we need is a way to pull a type into a value. 
+
+That's where [`scala.compiletime.erasedValue`](https://www.scala-lang.org/api/3.3.1/scala/compiletime.html#erasedValue-fffff7c4) comes into play:
+> Use this method when you have a type, do not have a value for it but want to pattern match on it.
+
+Sounds exactly like what we need.
+
+`erasedValue` lets us take a type and turn it into a (fake) value that we can pattern match on. The caveat is that this must happen within an `inline` that gets expanded at compile-time[^fakeValue]. Here's an example usage:
+```scala
+import scala.compiletime.*
+
+inline def size[T <: Tuple]: Int = // 1
+  inline erasedValue[T] match // 2
+    case _: EmptyTuple => 0 // 3
+    case _: (h *: t) => 1 + size[t] // 4
+
+size[(String, Int, Double)] // 5
+```
+
+We're defining a way to compute the size of a tuple-type. We do it as an `inline` function that accepts any `Tuple` type (1). We then pattern-match on the `erasedValue` of the tuple type (2). This lets us use the regular pattern matching syntax to branch over the two cases for tuples. First, the empty case (3) where we return the size of an empty tuple, which is 0. Next we hit the non-empty case (4), where there is a head (`h`) and a tail (`t`). The size in such case is the size of the head, 1, plus the size of the tail, which we compute using a recursive call to `size`.
+
+The result is that if we call `size[(String, Int, Double)]` we get back a `3`.
+
+It is important to note that I'm using `_` instead of naming the value in the pattern match. This is a non-negotiable limitation of `erasedValue`. Since all we have is a type, there isn't any value that we can **actually** use at runtime. As a result, the pattern match that we are performing is not allowed to ever use the (fake) value we are pattern-matching on. All we can do is react to the types that we are encountering on each branch[^atRuntime].
+
+[^atRuntime]: You can actually name the branches, instead of using `_`. But if, by mistake, you try to use the named value the compiler will complain and abort compilation.
+
+Now we can use `inline`s and `erasedValue` to iterate over tuple types.
+
+## Tuple Iteration Again
+
+With these tools in hand we can now partially implement our pseudo-code. Ignoring for the moment the `User` type, let us solve the problem of creating a flat `Decoder` for arbitrary tuples. Having solved that, we'll use the `Mirror` to create a `User` instance from a tuple.
+
+Without further ado, here's our code:
+```scala
+inline def decodeTuple[T <: Tuple]: Decoder[T] =  // 1
+  inline erasedValue[T] match // 2
+    case _: EmptyTuple => Decoder.const(EmptyTuple) // 3
+    case _: (h *: t) => // 4
+      val decoder = summonInline[Decoder[h]] // 5
+
+      combineDecoders(decoder, decodeTuple[t]) // 6
+
+def combineDecoders[H, T <: Tuple](dh: Decoder[H], dt: Decoder[T]): Decoder[H *: T] = // 7
+  dh.product(dt).map(_ *: _)
+```
+
+Let's follow it step by step:
+- We have an `inline` function (1) that works for any sub-type of a tuple, producing a decoder for that specific tuple type.
+- We proceed to pattern match on the `erasedValue` of our tuple type (2).
+- In the `EmptyTuple` case (3), we create a new `Decoder` that always returns `EmptyTuple`.
+- In the non-empty case (4), we have the head type `h`, and the tail type `t`.
+- We `summonInline` the `Decoder` for the head type (5). Recall that `summonInline` will be deferred to the use-site of our function, and will succeed only if the actual `h` type has a given `Decoder` in scope.
+- We then do a recursive call (6) and create a `Decoder` for the tail type, and use `combineDecoders` to build up a `Decoder` for the full tuple, from the `Decoder[h]` we just summoned and the `Decoder[t]` that we just created with the recursive call.
+- `combineDecoders` (7) is small utility function that takes a `Decoder` for the head of tuple (`H`), and `Decoder` for the tail of a tuple (`T`), and creates a composite `Decoder[H *: T]`for the head and tail combined. This utilizes the `product` function on `Decoder` to apply both `Decoder`s on the same JSON and tuples the results. Which is what we need to read the tuple from a flat JSON. The call to `map` build up the final tuple `H *: T` from the result of `product`.
+
+This pretty much matches the description in our pseudo-code. Too bad it's broken:
+```scala
+-- [E007] Type Mismatch Error: -------------------------------------------------
+3 |    case _: EmptyTuple => Decoder.const(EmptyTuple) // 3
+  |                                        ^^^^^^^^^^
+  |          Found:    EmptyTuple.type
+  |          Required: T
+  |
+  |          where:    T is a type in method decodeTuple with bounds <: Tuple
+  |
+  | longer explanation available when compiling with `-explain`
+-- [E007] Type Mismatch Error: -------------------------------------------------
+7 |      combineDecoders(decoder, decodeTuple[t]) // 6
+  |      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |      Found:    io.circe.Decoder[h *: t]
+  |      Required: io.circe.Decoder[T]
+  |
+  |      where:    T is a type in method decodeTuple with bounds <: Tuple
+  |                h is a type in method decodeTuple with bounds
+  |                t is a type in method decodeTuple with bounds <: Tuple
+  |
+  | longer explanation available when compiling with `-explain`
+```
+
+Apparently the compiler can't figure out that if we matched the branch `EmptyTuple` then `T = EmptyTuple`, and if we matched the branch `h *: t` then `T = h *: t`.
+
+So close...
+
+## Type Hackery
+
+What we are lacking here is type-unification. The compiler should've figured out that it can unify the type of each case branch with the type argument `T`.  I would claim that it's a bug that the compiler can't do this, but I have a hack to circumvent this issue. 
+
+Apparently the compiler is better at unifying type-arguments to real types[^realTypes]. To trigger this, we need to make our pattern match include a type-argument. We can do this artificially, like so:
+```scala
+trait Is[A] // 1
+
+inline def decodeTuple[T <: Tuple]: Decoder[T] = 
+  inline erasedValue[Is[T]] match // 2
+    case _: Is[EmptyTuple] => Decoder.const(EmptyTuple) // 3
+    case _: Is[h *: t] => // 4
+      val decoder = summonInline[Decoder[h]]
+
+      combineDecoders(decoder, decodeTuple[t])
+```
+
+[^realTypes]: Traits, classes, etc., but not type aliases.
+
+We created a dummy wrapper with a single type-argument (1)[^doesntMatter]. Now, instead of pattern-matching directly on `T`, we pattern match on `Is[T]` (2). Each branch (3) and (4) is wrapped in `Is`, and this somehow makes the compiler understand that `T` should unify with the type in each branch.
+
+[^doesntMatter]: The specific name of the wrapper doesn't matter. The only thing that matters is that it has a single type-parameter.
+
+This code now compiles!
+We can even check that it works by decoding a tuple from the flat JSON we created with our flat `Encoder`:
+```scala
+scala>  val json = encoder(user)
+val json: Json = {
+  "primary" : "bilbo@baggins.com",
+  "secondary" : "frodo@baggins.com",
+  "number" : "555-555-00",
+  "prefix" : 88,
+  "country" : "Shire",
+  "city" : "Hobbiton"
+}
+
+scala> decodeTuple[mirror.MirroredElemTypes].decodeJson(json)
+val res1:
+  Decoder.Result[mirror.MirroredElemTypes] = 
+    Right(
+      (Email(bilbo@baggins.com,Some(frodo@baggins.com)),
+      Phone(555-555-00,88),
+      Address(Shire,Hobbiton)))
+```
+
+Notice how we are using `mirror.MirroredElemTypes` at the type argument. This is a path-dependent type, recall that it is just an alias to the field types of `User` (`(Email, Phone, Address)`).
+
+We managed to decode a tuple of all the fields types of `User` directly from the flat JSON that we generated in the previous part. We're almost done, we just need to wrap this code with conversion from tuples to the `User` type.
+
+## From Types to Values
+
+The last piece of the puzzle is how do we convert the result of our `Decoder`, which is a tuple **value** back to a `User` **value**. It's `Mirror` to the rescue yet again: `mirror.fromTuple` will take a tuple value that matches the `User` type, and produce back a `User` instance:
+```scala
+scala> val tuple = (
+     |      Email("bilbo@baggins.com", Some("frodo@baggins.com")),
+     |      Phone("555-555-00", 88),
+     |      Address("Shire", "Hobbiton"))
+     |
+     | val user = mirror.fromTuple(tuple)
+
+val user: User = User(
+ Email(bilbo@baggins.com,Some(frodo@baggins.com)),
+ Phone(555-555-00,88),
+ Address(Shire,Hobbiton))
+```
+
+With this in hand we can finally create our final `Decoder` instance:
+```scala
+val mirror = summon[Mirror.Of[User]] // 1
+
+val decoder =
+  decodeTuple[mirror.MirroredElemTypes] // 2
+    .map(mirror.fromTuple) // 3
+```
+
+We first summon the `Mirror` for the `User` type (1). We then create a flat `Decoder` (2) for the field types of `User` that we fetch from the mirror. And lastly, we convert that tuple result of the `Decoder` into a `User` instance (3) using the `mirror.fromTuple` function.
+
+## Putting It All Together
+
+Before we test our final `Decoder`, lets combine it together with the `Encoder` into a single `Codec`:
+```scala
+val codec = Codec.from(decoder, encoder)
+```
+
+This is now a fully-functional `Codec` that can serialize/deserialize `User` instances into/from a flat JSON format. As we can easily demonstrate:
+```scala
+scala> val json = codec(user)
+     | val decodedUser = codec.decodeJson(json)
+
+val json: Json = {
+  "primary" : "bilbo@baggins.com",
+  "secondary" : "frodo@baggins.com",
+  "number" : "555-555-00",
+  "prefix" : 88,
+  "country" : "Shire",
+  "city" : "Hobbiton"
+}
+val decodedUser: Decoder.Result[User] = Right(
+  User(
+    Email(bilbo@baggins.com,Some(frodo@baggins.com)),
+    Phone(555-555-00,88),
+    Address(Shire,Hobbiton)))
+```
+
+A successful roundtrip with flat JSON!
+
+The full code for the `Decoder` and `Codec` can be found in the accompanying [repo](https://github.com/ncreep/scala3-flat-json-blog/blob/master/flat_concrete.scala).
