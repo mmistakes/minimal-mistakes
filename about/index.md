@@ -127,7 +127,7 @@ My research topic is the "behavioral and neural nature of the testing effect". T
 
 ### Xiaoyu Zhang
 
-<img src="/images/profile_pic_xiaoyu.jpg" alt="Xiaoyu Zhang" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
+<img src="/images/profile_pic_xiaoyu.jpg" alt="Xiaoyu Zhang" max-width="20%" height="auto" align="left" hspace="10" vspace="10">
 
 My research interest is how human attention works in learning different tasks and how to model this procession with neural networks and oscillation. Humans can learn new tasks with transferable knowledge and adapt to different environments quickly. Among these activities, attention plays an important role, which has been proposed to be implemented via oscillation in the brain. We build models with neural networks and oscillations and investigate how the models implement cognitive flexibility, particularly generalization with well-designed complex psychological tasks. Then, we will compare the model performance with the EEG results from human behavioral experiments. Using computational modeling, EEG, and behavioral methods, I am collaborating with Tom Verguts and Mehdi Senoussi for this research.
 
