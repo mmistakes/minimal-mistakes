@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Divide and Conquer(분할 정복)"
+title:  "Divide and Conquer(분할 정복):합병 정렬과 퀵 정렬"
 toc: true
 author_profile: false
 categories: Algorithm
