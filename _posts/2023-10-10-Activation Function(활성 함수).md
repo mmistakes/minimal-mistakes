@@ -6,6 +6,7 @@ tag: [deeplearning , Activation Function , Pytorch , Python , coding]
 toc: true
 ---
 
+
 이번에는 다양한 Activation Function을 알아보도록 하겠습니다.
 
 우리가 주로 사용하는 Activation Function은 binary classification을 할 때는 Sigmoid Function, Multiclass Classification을 할 때는 Softmax Function을 사용했습니다.
