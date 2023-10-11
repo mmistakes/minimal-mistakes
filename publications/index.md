@@ -4,9 +4,13 @@
 
 - Verguts, T. (2022). Introduction to modeling cognitive processes. [MIT Press](https://mitpress.mit.edu/books/introduction-modeling-cognitive-processes) [GitHub](https://github.com/CogComNeuroSci/modeling-master)
 
-<img src="/images/MCP_cover.jpg" alt="MCP book cover" max-width="50%" height="auto" align="center" hspace="10" vspace="10">
-    
+<div align = "center">
+  <img src="/images/MCP_cover.jpg" alt="MCP book cover" max-width="50%" height="auto" align="center" hspace="10" vspace="10">
+</div>    
+
 ## Preprints
+
+- Chen, H., Hauspie, C., Ergo, K., Calderon, C. B., & Verguts, T. (2023). Prediction error as the basis of the testing effect: Empirical and Modelling Evidence. [PsyArxiv.](https://osf.io/preprints/psyarxiv/ar5yd/)
 
 - Le Denmat, P, Verguts, T., & Desender, K. (2023). A low-dimensional approximation of optimal confidence. [BioArxiv.](https://www.biorxiv.org/content/10.1101/2023.03.15.532729v1)
 
@@ -23,8 +27,9 @@
 ## Recent publications
 
 2023:
-- Xu, S., Simoens, J., Verguts, T., & Braem, S. (2022). Learning where to be flexible: Using environmental cues to regulate cognitive control. Journal of Experimental Psychology: General. [PsyArxiv version.](https://doi.org/10.31234/osf.io/y5h78) 
+- Huo, H., et al. (2023). The neural substrats of how model-based learning affects risk-taking: functional coupling between right cerebellum and left caudate. [Brain & Cognition.](https://www.sciencedirect.com/science/article/pii/S0278262623001471?dgcid=coauthor)
 
+- Xu, S., Simoens, J., Verguts, T., & Braem, S. (2022). Learning where to be flexible: Using environmental cues to regulate cognitive control. Journal of Experimental Psychology: General. [PsyArxiv version.](https://doi.org/10.31234/osf.io/y5h78) 
 
 - Beeckmans, M., Huycke, P., Verguts, T., & Verbeke, P. (2023). How much data do we need to estimate computational models of decision making? The COMPASS toolbox. [Behavior Research Methods](https://link.springer.com/article/10.3758/s13428-023-02165-7) [PsyArxiv version.](https://psyarxiv.com/dexyk/) 
 
