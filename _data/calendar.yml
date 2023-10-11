@@ -18,23 +18,6 @@
   },
   {
     "image_path": null,
-    "alt": "1. Fachkonferenz Deutsch ",
-    "title": "1. Fachkonferenz Deutsch ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NHR0MWxubTdxOWx0dmlsZ2U5MnJhdWtxZjYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2023-10-10T15:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2023-10-10T16:30:00+02:00"
-    },
-    "created": "2023-09-27T08:43:13.000Z",
-    "updated": "2023-09-27T08:43:13.372Z"
-  },
-  {
-    "image_path": null,
     "alt": "1. Schulkonferenz",
     "title": "1. Schulkonferenz",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2023-09-27T09:35:03.000Z",
     "updated": "2023-09-27T09:35:03.546Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. Fachkonferenz GeWi",
+    "title": "1. Fachkonferenz GeWi",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MmFmOGFmdDBhY2hlMTdvcmgzamF0NGl1ajggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2023-11-09T15:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2023-11-09T16:30:00+01:00"
+    },
+    "created": "2023-09-27T10:17:12.000Z",
+    "updated": "2023-09-27T10:17:12.868Z"
   }
 ]
