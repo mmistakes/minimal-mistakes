@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Fotograf bis Jahrgangsstufe 5",
-    "title": "Fotograf bis Jahrgangsstufe 5",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2p1c2Nxa3V0dGswN3Zsb2ViM3QwaTJtdTYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2023-10-09",
-      "date_time": null
-    },
-    "end": {
-      "date": "2023-10-12",
-      "date_time": null
-    },
-    "created": "2023-06-30T10:56:47.000Z",
-    "updated": "2023-06-30T11:11:24.160Z"
-  },
-  {
-    "image_path": null,
     "alt": "1. Schulkonferenz",
     "title": "1. Schulkonferenz",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2023-09-27T10:17:12.000Z",
     "updated": "2023-09-27T10:17:12.868Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. Fachkonferenz Englisch",
+    "title": "1. Fachkonferenz Englisch",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MzFia2R2c2FoNzRmdm05c2oxbjBwbW8xODQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2023-11-09T17:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2023-11-09T18:30:00+01:00"
+    },
+    "created": "2023-09-27T08:47:01.000Z",
+    "updated": "2023-09-27T08:47:01.543Z"
   }
 ]
