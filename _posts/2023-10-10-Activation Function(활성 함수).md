@@ -1,4 +1,4 @@
----
+--- 
 layout: single
 title: Activation Function(활성화 함수)
 category: deeplearning
