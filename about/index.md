@@ -13,6 +13,7 @@
 4. [Visiting researchers](#visiting-researchers)
 5. [Internship students](#internship-students)
     - [Noe De Rijck](#noe-de-rijck)
+    - [Xinyi Yuan](#xiny-yuan)
    
 
 # Principal Investigator
@@ -147,6 +148,14 @@ Currently, we have no visiting researchers working in our lab.
 I'm a master's student from Université Libre de Bruxelles, interning with Haopeng. My internship focuses on understanding how prediction errors (PE) affect learning. Previous research suggests that stimuli falling within a 'sweet spot' of PE are preferred from an aestetic standpoint. With a focus on modeling, we'll be investigating whether the impact of PE on learning follows a similar trend, such that learning could be improved if new information was just surprising enough.
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Noe.De.Rijck@UGent.be" href="mailto:Noe.De.Rijck@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Noe.De.Rijck@UGent.be</a></div>
+
+### Xinyi Yuan
+
+<img src="/images/profile_pic_xiny.jpg" alt="Xinyi Yuan" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
+
+I’m a senior student majoring in psychology and minoring in mathematics. In my internship with Pieter Verbeke, I intend to further develop the <a href=https://github.com/CogComNeuroSci/COMPASS><u>COMPASS toolbox.</u></a> This is a computational tool that allows to estimate the number of participants required to fit computational models to behavioural data. While this tool is currently limited to the basic RW model, I aim to extend it to a wider range of models.
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Xinyi.yuan@UGent.be" href="mailto:Xinyi.Yuan@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Xinyi.Yuan@UGent.be</a></div>
 
 ---
 
