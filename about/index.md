@@ -151,7 +151,7 @@ I'm a master's student from Université Libre de Bruxelles, interning with Haope
 
 ### Xinyi Yuan
 
-<img src="/images/profile_pic_xinyi.jpg" alt="Xinyi Yuan" max-width="2%" height="auto" align="left" hspace="10" vspace="10">
+<img src="/images/profile_pic_xinyi.png" alt="Xinyi Yuan" max-width="2%" height="auto" align="left" hspace="10" vspace="10">
 
 I’m a senior student majoring in psychology and minoring in mathematics. In my internship with Pieter Verbeke, I intend to further develop the <a href = "https://github.com/CogComNeuroSci/COMPASS"><u>COMPASS toolbox.</u></a>This is a computational tool that allows to estimate the number of participants required to fit computational models to behavioural data. While this tool is currently limited to the basic RW model, I aim to extend it to a wider range of models.
 
