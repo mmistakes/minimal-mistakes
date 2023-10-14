@@ -6,6 +6,7 @@ tag: [deeplearning , codinig , Perceptron , Python , Pytorch]
 toc: true
 ---
 
+
 드디어 Perceptron의 마지막 부분인 MNIST데이터 셋 분류 입니다.
 
 도대체 왜 맨날 뭐만 하면 MNIST 데이터 셋이냐 할 수 있겠지만
