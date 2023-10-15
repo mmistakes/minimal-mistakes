@@ -6,7 +6,7 @@ on:
       - main  # Set a branch name to trigger deployment
   pull_request:
 
-jobs: 
+jobs:
   deploy:
     runs-on: ubuntu-20.04
     permissions:
