@@ -13,7 +13,7 @@ baseURL: 'https://jacob-morrison.github.io/' # Website URL
 defaultContentLanguage: en
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
-removePathAccents: true 
+removePathAccents: true
 
 ############################
 ## MODULES
