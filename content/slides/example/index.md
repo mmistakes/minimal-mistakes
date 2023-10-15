@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Slides
 summary: An introduction to using Wowchemy's Slides feature.
 authors: []
@@ -166,4 +166,4 @@ Create `assets/css/reveal_custom.css` with:
 
 [Ask](https://discord.gg/z8wNYzb)
 
-[Documentation](https://wowchemy.com/docs/content/slides/)
+[Documentation](https://wowchemy.com/docs/content/slides/) -->
