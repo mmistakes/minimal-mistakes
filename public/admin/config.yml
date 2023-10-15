@@ -1,0 +1,834 @@
+backend:
+  branch: main
+  name: git-gateway
+  squash_merges: true
+collections:
+- create: true
+  fields:
+  - label: Widget Type (https://wowchemy.com/docs/page-builder/)
+    name: widget
+    required: true
+    widget: string
+  - default: my-widget-123
+    label: Your reference for this widget (e.g. recent-posts)
+    name: widget_id
+    widget: string
+  - default: true
+    label: Headless?
+    name: headless
+    widget: hidden
+  - default: 10
+    label: Widget position
+    max: 1001
+    min: 0
+    name: weight
+    step: 10
+    value_type: int
+    widget: number
+  - label: Title
+    name: title
+    required: false
+    widget: string
+  - label: Subtitle
+    name: subtitle
+    required: false
+    widget: string
+  - default: true
+    label: Enabled?
+    name: active
+    required: false
+    widget: boolean
+  - fields:
+    - default: "2"
+      label: 'Columns (options: `1` or `2`)'
+      name: columns
+      required: false
+      widget: string
+    - fields:
+      - allowInput: true
+        enableAlpha: true
+        label: Solid color
+        name: color
+        required: false
+        widget: color
+      - allowInput: true
+        enableAlpha: true
+        label: Gradient start
+        name: gradient_start
+        required: false
+        widget: color
+      - allowInput: true
+        enableAlpha: true
+        label: Gradient end
+        name: gradient_end
+        required: false
+        widget: color
+      - default: false
+        label: Use a light text color?
+        name: text_color_light
+        required: false
+        widget: boolean
+      - label: Image
+        media_folder: /assets/media
+        media_library:
+          config:
+            multiple: false
+        name: image
+        public_folder: ""
+        required: false
+        widget: image
+      - default: 0
+        label: Darken the image? (0 is transparent & 1 is opaque)
+        max: 1
+        min: 0
+        name: image_darken
+        required: false
+        step: 0.1
+        value_type: float
+        widget: number
+      label: Background
+      name: background
+      required: false
+      widget: object
+    label: Widget Style
+    name: design
+    required: false
+    widget: object
+  - label: Body
+    name: body
+    required: false
+    widget: markdown
+  folder: content/home
+  identifier_field: widget_id
+  label: Homepage
+  media_folder: /assets/media
+  name: home
+  path: '{{slug}}'
+  public_folder: ""
+  summary: '{{filename}}: {{title}}'
+- create: true
+  fields:
+  - label: Display name (such as your full name)
+    name: title
+    widget: string
+  - label: Position or tagline (such as Professor of AI)
+    name: role
+    required: false
+    widget: string
+  - default: avatar
+    label: Avatar (upload an image named `avatar.jpg/png`)
+    media_library:
+      config:
+        multiple: false
+    name: avatar_filename
+    required: false
+    widget: image
+  - label: Short biography (shown in author boxes)
+    name: bio
+    required: false
+    widget: string
+  - label: Full biography (shown in About widget)
+    name: body
+    required: false
+    widget: markdown
+  - label: Interests (shown in About widget)
+    name: interests
+    required: false
+    widget: list
+  - fields:
+    - label: Link
+      name: link
+      widget: string
+    - label: Icon pack
+      multiple: false
+      name: icon_pack
+      options:
+      - label: None
+        value: ""
+      - label: Solid
+        value: fas
+      - label: Regular
+        value: far
+      - label: Brand
+        value: fab
+      - label: Academic
+        value: ai
+      widget: select
+    - label: Icon (see https://wowchemy.com/docs/page-builder/#icons)
+      name: icon
+      widget: string
+    - label: Label (tooltip)
+      name: label
+      required: false
+      widget: string
+    - fields:
+      - default: false
+        label: Header (main menu)
+        name: header
+        required: false
+        widget: boolean
+      label: Display in About widget and...
+      name: display
+      widget: object
+    label: Social links
+    name: social
+    required: false
+    widget: list
+  - fields:
+    - label: Organization
+      name: name
+      required: true
+      widget: string
+    - label: Link
+      name: url
+      required: false
+      widget: string
+    label: Organizations you belong to or are affiliated with (shown in About widget)
+    name: organizations
+    required: false
+    widget: list
+  - fields:
+    - fields:
+      - label: Course
+        name: course
+        required: true
+        widget: string
+      - label: Institution
+        name: institution
+        required: true
+        widget: string
+      - label: Year
+        name: year
+        required: false
+        value_type: int
+        widget: number
+      label: Courses
+      name: courses
+      required: false
+      widget: list
+    label: Education
+    name: education
+    required: false
+    widget: object
+  - label: Email (to use a Gravatar.com avatar)
+    name: email
+    required: false
+    widget: string
+  - default: false
+    label: Super user (is this the primary site user?)
+    name: superuser
+    widget: boolean
+  - label: User groups (only for organization websites)
+    name: user_groups
+    required: false
+    widget: list
+  filter:
+    field: cms_exclude
+  folder: content/authors
+  label: Authors
+  label_singular: Author
+  name: authors
+  path: '{{slug}}/_index'
+- create: true
+  fields:
+  - label: Title
+    name: title
+    widget: string
+  - label: Subtitle
+    name: subtitle
+    required: false
+    widget: string
+  - label: Body
+    name: body
+    widget: markdown
+  - label: Publish this page on
+    name: date
+    widget: datetime
+  - label: Summary
+    name: summary
+    required: false
+    widget: markdown
+  - default: false
+    label: Draft
+    name: draft
+    required: false
+    widget: boolean
+  - default: false
+    label: Featured
+    name: featured
+    required: false
+    widget: boolean
+  - label: Authors
+    name: authors
+    required: false
+    widget: list
+  - label: Tags
+    name: tags
+    required: false
+    widget: list
+  - label: Categories
+    name: categories
+    required: false
+    widget: list
+  - label: Projects
+    name: projects
+    required: false
+    widget: list
+  - fields:
+    - default: featured
+      label: Upload an image named `featured.jpg/png`
+      media_library:
+        config:
+          multiple: false
+      name: filename
+      required: false
+      widget: image
+    - label: Caption
+      name: caption
+      required: false
+      widget: string
+    - label: Description for screen readers
+      name: alt_text
+      required: false
+      widget: string
+    - default: Smart
+      label: Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight,
+        Left, Right, BottomLeft, Bottom, BottomRight.
+      name: focal_point
+      required: false
+      widget: string
+    - default: false
+      label: Thumbnail Only?
+      name: preview_only
+      required: false
+      widget: boolean
+    label: Featured Image
+    name: image
+    required: false
+    widget: object
+  filter:
+    field: cms_exclude
+  folder: content/post
+  label: Posts
+  label_singular: Post
+  name: posts
+  path: '{{slug}}/index'
+- create: true
+  fields:
+  - label: Title
+    name: title
+    widget: string
+  - label: Subtitle
+    name: subtitle
+    required: false
+    widget: string
+  - label: Body
+    name: body
+    required: false
+    widget: markdown
+  - label: Publish this page on
+    name: date
+    widget: datetime
+  - label: Summary
+    name: summary
+    required: false
+    widget: markdown
+  - default: false
+    label: Draft
+    name: draft
+    required: false
+    widget: boolean
+  - default: false
+    label: Featured
+    name: featured
+    required: false
+    widget: boolean
+  - label: Authors
+    name: authors
+    required: false
+    widget: list
+  - label: Tags
+    name: tags
+    required: false
+    widget: list
+  - label: Categories
+    name: categories
+    required: false
+    widget: list
+  - label: External link (optional - replaces link to project page)
+    name: external_link
+    required: false
+    widget: string
+  - fields:
+    - label: Link
+      name: url
+      widget: string
+    - label: Link text
+      name: name
+      required: false
+      widget: string
+    - label: Icon pack
+      multiple: false
+      name: icon_pack
+      options:
+      - label: None
+        value: ""
+      - label: Solid
+        value: fas
+      - label: Regular
+        value: far
+      - label: Brand
+        value: fab
+      - label: Academic
+        value: ai
+      required: false
+      widget: select
+    - label: Icon (see https://wowchemy.com/docs/page-builder/#icons)
+      name: icon
+      required: false
+      widget: string
+    label: Links
+    name: links
+    required: false
+    widget: list
+  - fields:
+    - default: featured
+      label: Upload an image named `featured.jpg/png`
+      media_library:
+        config:
+          multiple: false
+      name: filename
+      required: false
+      widget: image
+    - label: Caption
+      name: caption
+      required: false
+      widget: string
+    - label: Description for screen readers
+      name: alt_text
+      required: false
+      widget: string
+    - default: Smart
+      label: Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight,
+        Left, Right, BottomLeft, Bottom, BottomRight.
+      name: focal_point
+      required: false
+      widget: string
+    - default: false
+      label: Thumbnail Only?
+      name: preview_only
+      required: false
+      widget: boolean
+    label: Featured Image
+    name: image
+    required: false
+    widget: object
+  filter:
+    field: cms_exclude
+  folder: content/project
+  label: Projects
+  label_singular: Project
+  name: projects
+  path: '{{slug}}/index'
+- create: true
+  fields:
+  - label: Title
+    name: title
+    widget: string
+  - label: Abstract
+    name: abstract
+    widget: text
+  - label: Where
+    name: location
+    widget: text
+  - label: From
+    name: date
+    widget: datetime
+  - default: ""
+    label: To
+    name: date_end
+    widget: datetime
+  - default: false
+    label: All day event?
+    name: all_day
+    widget: boolean
+  - fields:
+    - label: Link
+      name: url
+      widget: string
+    - label: Link text
+      name: name
+      required: false
+      widget: string
+    - label: Icon pack
+      multiple: false
+      name: icon_pack
+      options:
+      - label: None
+        value: ""
+      - label: Solid
+        value: fas
+      - label: Regular
+        value: far
+      - label: Brand
+        value: fab
+      - label: Academic
+        value: ai
+      required: false
+      widget: select
+    - label: Icon (see https://wowchemy.com/docs/page-builder/#icons)
+      name: icon
+      required: false
+      widget: string
+    label: Links/Tickets
+    name: links
+    required: false
+    widget: list
+  - label: Event
+    name: event
+    widget: string
+  - label: Event link
+    name: event_url
+    widget: string
+  - label: Publish this page on
+    name: publishDate
+    widget: datetime
+  - label: Markdown slides (reference a deck in 'content/slides/')
+    name: slides
+    required: false
+    widget: string
+  - default: false
+    label: Draft
+    name: draft
+    required: false
+    widget: boolean
+  - default: false
+    label: Featured
+    name: featured
+    required: false
+    widget: boolean
+  - label: Authors
+    name: authors
+    required: false
+    widget: list
+  - label: Tags
+    name: tags
+    required: false
+    widget: list
+  - label: Categories
+    name: categories
+    required: false
+    widget: list
+  - label: Projects (reference projects in 'content/project/')
+    name: projects
+    required: false
+    widget: list
+  - fields:
+    - default: featured
+      label: Upload an image named `featured.jpg/png`
+      media_library:
+        config:
+          multiple: false
+      name: filename
+      required: false
+      widget: image
+    - label: Caption
+      name: caption
+      required: false
+      widget: string
+    - label: Description for screen readers
+      name: alt_text
+      required: false
+      widget: string
+    - default: Smart
+      label: Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight,
+        Left, Right, BottomLeft, Bottom, BottomRight.
+      name: focal_point
+      required: false
+      widget: string
+    - default: false
+      label: Thumbnail Only?
+      name: preview_only
+      required: false
+      widget: boolean
+    label: Featured Image
+    name: image
+    required: false
+    widget: object
+  - label: Details
+    name: body
+    required: false
+    widget: markdown
+  filter:
+    field: cms_exclude
+  folder: content/event
+  label: Events
+  label_singular: Event
+  name: events
+  path: '{{slug}}/index'
+- create: true
+  fields:
+  - label: Title
+    name: title
+    widget: string
+  - label: Subtitle
+    name: subtitle
+    required: false
+    widget: string
+  - default:
+    - "0"
+    label: Publication type
+    multiple: true
+    name: publication_types
+    options:
+    - label: Uncategorized
+      value: "0"
+    - label: Conference paper
+      value: "1"
+    - label: Journal article
+      value: "2"
+    - label: Preprint / Working Paper
+      value: "3"
+    - label: Report
+      value: "4"
+    - label: Book
+      value: "5"
+    - label: Book section
+      value: "6"
+    - label: Thesis
+      value: "7"
+    - label: Patent
+      value: "8"
+    required: true
+    widget: select
+  - label: Authors
+    name: authors
+    required: true
+    widget: list
+  - label: Author Notes (contributions or affiliations for each author)
+    name: author_notes
+    required: false
+    widget: list
+  - label: DOI
+    name: doi
+    required: false
+    widget: string
+  - label: Publication
+    name: publication
+    required: false
+    widget: string
+  - label: Publication (abbreviated)
+    name: publication_short
+    required: false
+    widget: string
+  - label: Abstract
+    name: abstract
+    required: false
+    widget: text
+  - default: false
+    label: Draft
+    name: draft
+    required: false
+    widget: boolean
+  - default: false
+    label: Featured
+    name: featured
+    required: false
+    widget: boolean
+  - label: Tags
+    name: tags
+    required: false
+    widget: list
+  - label: Categories
+    name: categories
+    required: false
+    widget: list
+  - label: Projects
+    name: projects
+    required: false
+    widget: list
+  - label: Markdown slides (reference a deck in 'content/slides/')
+    name: slides
+    required: false
+    widget: string
+  - fields:
+    - default: featured
+      label: Upload an image named `featured.jpg/png`
+      media_library:
+        config:
+          multiple: false
+      name: filename
+      required: false
+      widget: image
+    - label: Caption
+      name: caption
+      required: false
+      widget: string
+    - label: Description for screen readers
+      name: alt_text
+      required: false
+      widget: string
+    - default: Smart
+      label: Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight,
+        Left, Right, BottomLeft, Bottom, BottomRight.
+      name: focal_point
+      required: false
+      widget: string
+    - default: false
+      label: Thumbnail Only?
+      name: preview_only
+      required: false
+      widget: boolean
+    label: Featured Image
+    name: image
+    required: false
+    widget: object
+  - label: Summary (shortened abstract)
+    name: summary
+    required: false
+    widget: text
+  - label: Details
+    name: body
+    required: false
+    widget: markdown
+  - label: Publish this page on
+    name: date
+    widget: datetime
+  filter:
+    field: cms_exclude
+  folder: content/publication
+  label: Publications
+  label_singular: Publication
+  name: publications
+  path: '{{slug}}/index'
+- create: true
+  fields:
+  - label: Title
+    name: title
+    widget: string
+  - label: Slides (separate with `---`)
+    name: body
+    widget: markdown
+  - label: Publish on
+    name: date
+    widget: datetime
+  - label: Summary
+    name: summary
+    required: false
+    widget: text
+  - default: false
+    label: Draft
+    name: draft
+    required: false
+    widget: boolean
+  - label: Tags
+    name: tags
+    required: false
+    widget: list
+  - fields:
+    - default: black
+      label: Theme (see https://github.com/hakimel/reveal.js#theming)
+      name: theme
+      required: false
+      widget: string
+    label: Slide options
+    name: slides
+    required: false
+    widget: object
+  - fields:
+    - default: featured
+      label: Upload an image named `featured.jpg/png`
+      media_library:
+        config:
+          multiple: false
+      name: filename
+      required: false
+      widget: image
+    - label: Caption
+      name: caption
+      required: false
+      widget: string
+    - label: Description for screen readers
+      name: alt_text
+      required: false
+      widget: string
+    - default: Smart
+      label: Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight,
+        Left, Right, BottomLeft, Bottom, BottomRight.
+      name: focal_point
+      required: false
+      widget: string
+    - default: false
+      label: Thumbnail Only?
+      name: preview_only
+      required: false
+      widget: boolean
+    label: Featured Image
+    name: image
+    required: false
+    widget: object
+  filter:
+    field: cms_exclude
+  folder: content/slides
+  label: Slides
+  label_singular: Slides
+  name: slides
+  path: '{{slug}}/index'
+- files:
+  - fields:
+    - label: Title
+      name: title
+      widget: string
+    - label: Publish Date
+      name: date
+      widget: datetime
+    - label: Subtitle
+      name: subtitle
+      required: false
+      widget: string
+    - label: Summary
+      name: summary
+      required: false
+      widget: markdown
+    - default: false
+      label: Draft
+      name: draft
+      required: false
+      widget: boolean
+    - label: Body
+      name: body
+      widget: markdown
+    file: content/privacy.md
+    label: Privacy Policy
+    name: privacy
+  - fields:
+    - label: Title
+      name: title
+      widget: string
+    - label: Publish Date
+      name: date
+      widget: datetime
+    - label: Subtitle
+      name: subtitle
+      required: false
+      widget: string
+    - label: Summary
+      name: summary
+      required: false
+      widget: markdown
+    - default: false
+      label: Draft
+      name: draft
+      required: false
+      widget: boolean
+    - label: Body
+      name: body
+      widget: markdown
+    file: content/terms.md
+    label: Terms
+    name: terms
+  label: Pages
+  name: pages
+local_backend: false
+media_folder: assets/media
+public_folder: /media
