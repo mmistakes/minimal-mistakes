@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://jacob-morrison.github.io/sitemap.xml
