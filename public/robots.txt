@@ -1,3 +1,0 @@
-User-agent: *
-
-Sitemap: https://jacob-morrison.github.io/sitemap.xml

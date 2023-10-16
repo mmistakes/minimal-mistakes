@@ -1,0 +1,7 @@
+main:
+  - title: Home
+    url: /
+  - title: "Publications"
+    url: /publications/
+  - title: "CV"
+    url: /assets/CV_April_2023.pdf
