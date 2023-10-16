@@ -58,16 +58,16 @@ plugins:
 
 author:
   name   : 
-  avatar           : "/assets/images/my_profile_picture.jpeg"
+  avatar           : "/assets/images/avatar.png" # "/assets/images/my_profile_picture.jpeg"
   bio              : "*computers*"
   location         : "Seattle, WA"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:jacobm00@cs.washington.edu"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/jacob-morrison"
+      url: "mailto:jacob@jdm.ai"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/jacob-morrison"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/jacobcares"
