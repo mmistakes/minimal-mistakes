@@ -12,11 +12,11 @@ og_image: "/assets/images/banner2.jpg"
 #### Disclosures in accordance with § 5 TMG
 
 #### Company Name: 
-learningProoG UG (haftungsbeschränkt)
+learningProof UG (haftungsbeschränkt)
 
 #### Address: 
-Kopenhagenerstr. 8 und viersig
-10437 Berlin
+Kiefholzstraße Neun
+12435 Berlin
 Germany
 
 #### Contact
@@ -31,7 +31,7 @@ Registry court: Amtsgericht Berlin (Charlottenburg)
 * HRB 222871 B
 * USt-IdNr: DE 3624902298
 * MWSt-Nr: DE 339336615
-
+~~~~
 #### Managing Directors
 Juan Caballero (Berlin)
 Balázs Nemethi (Berlin)
