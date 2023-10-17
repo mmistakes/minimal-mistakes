@@ -11,6 +11,7 @@ author_profile: false
 sidebar :
     nav: "counts"
 ---
+
 깃허브 블로그에서 이미지에 커스텀 스타일을 적용시키려면   
 
 `_sass\minimal-mistakes\_utilities.scss`
@@ -35,7 +36,7 @@ sidebar :
 
 ```
 
-![sena2](./image/2023-10-17-post_rules/IMG_1788.JPG){: .img-quarter .align-center}
-![sena2](../image/2023-10-17-post_rules/IMG_1788.JPG){: .img-half .align-center}
+![sena2]({{site.url}}/image/2023-10-17-post_rules/IMG_1788.JPG){: .img-quarter .align-center}
+<img src="{{ site.url }}/image/2023-10-17-post_rules/IMG_1788.JPG" alt="">{: .img-half .align-center}
 ![sena2](/image/2023-10-17-post_rules/IMG_1788.JPG){: .align-center}
-{{site.url}}
+
