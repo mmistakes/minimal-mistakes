@@ -35,7 +35,7 @@ sidebar :
 
 ```
 
-![sena2](/image/2023-10-17-post_rules/IMG_1788.JPG){: .img-quarter .align-center}
-![sena2](/image/2023-10-17-post_rules/IMG_1788.JPG){: .img-half .align-center}
+![sena2](./image/2023-10-17-post_rules/IMG_1788.JPG){: .img-quarter .align-center}
+![sena2](../image/2023-10-17-post_rules/IMG_1788.JPG){: .img-half .align-center}
 ![sena2](/image/2023-10-17-post_rules/IMG_1788.JPG){: .align-center}
-
+{{site.url}}
