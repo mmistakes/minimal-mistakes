@@ -1,6 +1,6 @@
 # LearningProof.xyz website
 
-Not updates as often as we should, but hey, we've got learning to proof.
+The information on here isn't updated as often as it should be, but hey, we've got learning to proof. Email bumblefudge@ with any important questions or inquiries.
 
 ## Made using Minimal Mistakes + Jekyll; see links before for details
 [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
