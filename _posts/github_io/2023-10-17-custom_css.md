@@ -35,7 +35,6 @@ sidebar :
 
 ```
 
-![sena2](/image/2023-10-17-post_rules/IMG_1788.JPG){: .img-quarter .align-center}
-![sena2](/image/2023-10-17-post_rules/IMG_1788.JPG){: .img-half .align-center}
-![sena2](/image/2023-10-17-post_rules/IMG_1788.JPG){: .align-center}
-
+<img src="https://onedrive.live.com/embed?resid=91EF77F7B9E9A70C%21341684&authkey=%21ANOluIMc4E5Kt2Q&width=4032&height=3024">{: .img-quarter .align-center}
+<img src="https://onedrive.live.com/embed?resid=91EF77F7B9E9A70C%21341684&authkey=%21ANOluIMc4E5Kt2Q&width=4032&height=3024">{: .img-half .align-center}
+<img src="https://onedrive.live.com/embed?resid=91EF77F7B9E9A70C%21341684&authkey=%21ANOluIMc4E5Kt2Q&width=4032&height=3024">{: .align-center}
