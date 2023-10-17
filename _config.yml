@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "neon" #"default" "air", "aqua", "contrast", "dark", 
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "kanu's home"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "kwanwoo kim"
 description              : "An amazing website."
 url                      : "https://kanu-kim.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "kwanwoo"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  location         : "Seoul, Korea"
+  email            : "kanu7546@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
