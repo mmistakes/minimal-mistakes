@@ -11,6 +11,7 @@ author_profile: false
 sidebar :
     nav: "counts"
 ---
+
 깃허브 블로그에서 이미지에 커스텀 스타일을 적용시키려면   
 
 `_sass\minimal-mistakes\_utilities.scss`
