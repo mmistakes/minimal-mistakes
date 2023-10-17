@@ -8,9 +8,9 @@ tags: "string"
 author_profile: false
 
 toc: true
+toc_sticky:	true
 toc_label: false
 toc_icon: false
-toc_sticky:	false
 
 last_modified_at: 
 
