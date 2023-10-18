@@ -106,25 +106,25 @@ analytics:
 author:
   name             : "Dukgukim"
   avatar           : "/assets/images/sena.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : " - "
+  bio              : " \- "
   location         : "Republic of Korea"
   email            : 
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: jinhg93@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://jinhg0214.github.io/"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: jinhg93@email.com"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://jinhg0214.github.io/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jinhg0214"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/dukgukim0214"
-    - label: "Youtube"
-      icon: "fab fa-fw fa-youtube"
-      url: ""
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/dukgukim0214"
+    # - label: "Youtube"
+    #   icon: "fab fa-fw fa-youtube"
+    #   url: ""
       
 
 # Site Footer
