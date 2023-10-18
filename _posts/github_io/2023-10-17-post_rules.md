@@ -4,10 +4,10 @@ excerpt: "Markdown & Kramdown 문법을 따름"
 categories: "github.io"
 tags: 
 toc: true
-toc_label: false
-toc_icon: false
-toc_sticky:	false
-last_modified_at: 
+toc_label: " - "
+toc_icon: true
+toc_sticky:	true
+last_modified_at: "2023-10-18"
 author_profile: false
 sidebar :
     nav: "docs"
@@ -25,8 +25,8 @@ Jekyll로 생성한 Github.io는 Markdown & Kramdown 문법을 따른다
 | categories | 카테고리 |
 | tags | 태그 |
 | toc | Table of Contents. 글 구조 생성할것인지? true or false | 
-| toc_label | toc의 이름. true or false |
-| toc_icon | 아이콘 넣을지 true or false |
+| toc_label | toc의 이름. |
+| toc_icon | 아이콘 |
 | toc_sticky | 스크롤시 toc가 따라올지 true or false |
 | date | 글 작성 시간 |
 | last_modified_at | 마지막 수정 일자 |
@@ -57,7 +57,7 @@ author_profile: false
 sidebar :
     nav: "counts"
 ```
-이렇게 만들어놓고 쓰는 중
+이렇게 템플릿 만들어놓고 쓰는 중
 
 # 2. 텍스트 정렬 규칙
 ---
