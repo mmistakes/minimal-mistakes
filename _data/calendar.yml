@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "1. Fachkonferenz NaWi",
-    "title": "1. Fachkonferenz NaWi",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2hocWlzNGozcmFzdGtxY3FvaDg1dDRjanEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2023-10-17T17:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2023-10-17T18:30:00+02:00"
-    },
-    "created": "2023-09-27T08:46:00.000Z",
-    "updated": "2023-09-27T08:46:00.136Z"
-  },
-  {
-    "image_path": null,
     "alt": "Herbstferien",
     "title": "Herbstferien",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2023-09-27T08:44:41.000Z",
     "updated": "2023-09-27T08:44:41.888Z"
+  },
+  {
+    "image_path": null,
+    "alt": "2. Gesamtkonferenz",
+    "title": "2. Gesamtkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=a2k1bWE2MW5xZmZkcWJhcjY5bzBtdWpqMnMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2023-11-28T16:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2023-11-28T18:00:00+01:00"
+    },
+    "created": "2023-10-12T18:06:55.000Z",
+    "updated": "2023-10-12T18:06:55.619Z"
   }
 ]
