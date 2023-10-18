@@ -1,0 +1,74 @@
+# Site
+name: "Memoirs"
+title: "Memoirs"
+description: "기록하는 습관"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: 
+
+# disqus: 'demowebsite'
+# mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+include: ["_pages"]
+permalink: /:title/
+email: # wowthemesnet@gmail.com
+
+# 활성화 됐는지 확인 필요
+naver_site_verification  : "a41a2ab49a045087a565f381a082f21dd40b48ba"
+google_analytics: 'G-XY4KZGREDG'
+
+# Authors
+authors:
+  sal:
+    name: Dukgukim
+    display_name: 김덕구
+    avatar: # 'assets/images/avatar-sal.png'
+    # email: wowthemesnet@gmail.com
+    # web: https://www.wowthemes.net/donate/
+    # twitter: https://twitter.com/wowthemesnet
+    description: "소개문."
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-figure
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+highlighter: none
+markdown: kramdown
+kramdown:
+   syntax_highlighter_opts:
+      disable : true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3412143450191416"
+adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+# Post Author Box ("enabled" or "disabled")
+authorbox: "enabled"
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]

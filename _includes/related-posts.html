@@ -1,0 +1,54 @@
+<!-- Related Posts
+================================================== -->
+<div class="{% unless page.categories == empty %} related-posts {% endunless %}">  
+
+    {% unless page.categories == empty %}
+    <h2 class="text-center mb-4">Explore more like this</h2>
+    {% endunless %}
+    
+    <div class="d-flex justify-content-center align-items-center">
+    
+    <!-- Categories -->
+    {% assign sortedCategories = page.categories | sort %}
+    {% for category in sortedCategories %}
+    <a class="smoothscroll badge badge-primary text-capitalize" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">{{ category }}</a>                
+    {% endfor %}
+
+    <!-- Tags -->  
+    {% assign sortedTags = page.tags | sort %}
+    {% for tag in sortedTags %}                
+    <a class="smoothscroll badge badge-primary text-capitalize" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}">{{ tag }}</a>               
+    {% endfor %}
+
+    </div>
+
+    {% assign maxRelated = 3 %}
+    {% assign minCommonTags =  1 %}
+    {% assign maxRelatedCounter = 0 %}
+    <div class="blog-grid-container">
+        {% for post in site.posts %}
+        
+            {% assign sameTagCount = 0 %}
+            {% assign commonTags = '' %}
+        
+            {% for category in post.categories %}
+            {% if post.url != page.url %}
+                {% if page.categories contains category %}
+                {% assign sameTagCount = sameTagCount | plus: 1 %}
+                {% capture tagmarkup %} {{ category }} {% endcapture %}
+                {% assign commonTags = commonTags | append: tagmarkup %}
+                {% endif %}
+            {% endif %}
+            {% endfor %}
+        
+            {% if sameTagCount >= minCommonTags %}
+            {% include postbox.html %}
+            {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+            {% if maxRelatedCounter >= maxRelated %}
+                {% break %}
+            {% endif %}
+            {% endif %}
+        
+        {% endfor %}
+        </div>        
+</div>

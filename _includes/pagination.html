@@ -1,0 +1,28 @@
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; </a>
+  {% else %}
+    <span>&laquo; </span>
+  {% endif %}
+
+  {% assign from = paginator.page | minus: 3 | at_least: 1 %}
+  {% assign to = from | plus: 3 | at_most: paginator.total_pages %}
+
+  {% for page in (from..to) %}
+    {% if page == paginator.page %}
+      <span class="ml-1 mr-1">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a class="ml-1 mr-1" href="{{ site.baseurl | append: '/' | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a class="ml-1 mr-1" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a class="ml-1 mr-1" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> &raquo;</a>
+  {% else %}
+    <span> &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}

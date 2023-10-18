@@ -1,0 +1,20 @@
+<script src="{{site.baseurl}}/assets/js/lunr.js"></script>
+
+<style>
+    
+</style>
+
+<div class="wrap-search">
+    <div class="d-flex align-items-center ml-auto">
+        <i class="fas fa-search show-search"></i>
+        <form class="bd-search ml-3" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+            <input type="text" class="form-control bigradius text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+        </form>
+    </div>
+</div>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="{{site.baseurl}}/assets/js/lunrsearchengine.js"></script>

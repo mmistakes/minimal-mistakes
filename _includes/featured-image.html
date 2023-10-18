@@ -1,0 +1,9 @@
+{% if page.image %}
+<div class="entry-featured-image">
+    {% if site.lazyimages == "enabled" %}
+    <img class="featured-image lazyimg {% if page.imageshadow %} image-shadow {% endif %}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+    {% else %}
+    <img class="featured-image {% if page.imageshadow %} image-shadow {% endif %}" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+    {% endif %}
+</div>
+{% endif %}

@@ -1,0 +1,12 @@
+<!-- Comments
+================================================== -->
+{% if page.comments != false %} 
+<div class="comments mt-5">
+    <button class="btn btn-outline-dark py-2 px-5 d-block w-100 show-comments"><i class="fa fa-comments text-muted"></i> &nbsp; Load Comments</button>         
+    <div id="comments">  
+        <h4 class="mb-4">Comments</h4>                 
+            {% include disqus.html %}     
+    <div class="clearfix"></div>              
+    </div>    
+</div>       
+{% endif %}

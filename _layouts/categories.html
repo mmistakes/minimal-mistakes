@@ -1,0 +1,22 @@
+---
+title: "Categories"
+layout: default
+permalink: "/categories.html"
+---
+
+
+{% for category in site.categories %}
+<h4 class="mt-5 mb-neg-30" id="{{ category[0] | replace: " ","-" }}"><span class="text-capitalize badge badge-primary text-small">{{ category[0] }}</span></h4>
+<div class="blog-grid-container">
+{% assign pages_list = category[1] %}
+{% for post in pages_list %}
+{% if post.title != null %}
+{% if group == null or group == post.group %}
+{% include postbox.html %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% assign pages_list = nil %}
+{% assign group = nil %}
+</div>
+{% endfor %}
