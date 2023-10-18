@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Strat Zoom - Business Consulting"
+title                    : "StratZoom - Business Consulting"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "PushIdeas"
@@ -104,32 +104,32 @@ analytics:
 
 # Site Author
 author:
-  name             : "by Lucas Silveira"
+  name             : #""
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "" #A web developer and designer from Brazil."
+  bio              : #"" #A web developer and designer from Brazil."
   location         : "USA"
   email            : "stratzoom@gmail.com"
   links:
     # - label: "Email"
       # icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:stratzoom@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
+    # - label: "Website"
+      # icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+    # - label: "Twitter"
+      # icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+    # - label: "Facebook"
+      # icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+    # - label: "GitHub"
+      # icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+    # - label: "Instagram"
+      # icon: "fab fa-fw fa-instagram"
     # - label: "Phone Number"
-      # icon: "fas fa-fw fa-phone-square"
-      # url: "+1(425)598-6941"
+      icon: "fas fa-fw fa-phone-square"
+      url: "tel:+1(425)598-6941"
     - label: "WhatsApp"
       icon: "fab fa-fw fa-whatsapp-square"
       url: "https://wa.me/14255986941?text=Hello%2C%20I%20have%20a%20question%20about%20your%20service.%20Can%20you%20please%20help%20me%3F"
@@ -139,24 +139,30 @@ footer:
   links:
     - label: 'Phone Number'
       icon: 'fas fa-fw fa-phone-square'
-      # text: '+1(425)598-6941'
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      url: 'tel:+1(425)598-6941'
+    - label: "WhatsApp"
+      icon: "fab fa-fw fa-whatsapp-square"
+      url: "https://wa.me/14255986941?text=Hello%2C%20I%20have%20a%20question%20about%20your%20service.%20Can%20you%20please%20help%20me%3F"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:stratzoom@gmail.com"
+    # - label: "Twitter"
+      # icon: "fab fa-fw fa-twitter-square"
       # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+    # - label: "Facebook"
+      # icon: "fab fa-fw fa-facebook-square"
       # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+    # - label: "GitHub"
+      # icon: "fab fa-fw fa-github"
       # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
+    # - label: "GitLab"
+      # icon: "fab fa-fw fa-gitlab"
       # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
+    # - label: "Bitbucket"
+      # icon: "fab fa-fw fa-bitbucket"
       # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+    # - label: "Instagram"
+      # icon: "fab fa-fw fa-instagram"
       # url:
 
 
@@ -284,17 +290,16 @@ compress_html:
   ignore:
     envs: development
 
-
 # Defaults
 defaults:
-  # _posts
+  # _pages
   - scope:
       path: ""
-      type: posts
+      type: pages
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
+      read_time: false
+      comments: false
+      share: false
+      related: false

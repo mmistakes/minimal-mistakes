@@ -1,11 +1,13 @@
 # main links
 main:
   # - title: "Quick-Start Guide"
-    # url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: /fofo
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "About Us"
+    url: /_pages/about_us/
+  - title: "Our Services"
+    url: /_pages/our_services/
+  - title: "Contact Us"
+    url: "mailto:stratzoom@gmail.com"
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
