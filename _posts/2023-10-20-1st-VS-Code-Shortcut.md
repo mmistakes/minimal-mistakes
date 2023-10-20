@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Visual Studio Code 단축키"
-
+categories: coding
 ---
 
 # VS Code Shortcuts
