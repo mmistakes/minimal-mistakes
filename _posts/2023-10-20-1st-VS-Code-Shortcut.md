@@ -2,7 +2,8 @@
 layout: single
 title: "Visual Studio Code 단축키"
 categories: coding
-tag: VS Code # 여러개 tag 달고 싶을 때 사용법 => tag: [tag1], [tag2], ...
+tag: VS Code # 여러개 tag 달고 싶을 때 사용법 => tag: [tag1, tag2, ...]
+toc: true
 ---
 
 # VS Code Shortcuts
