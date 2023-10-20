@@ -97,7 +97,8 @@ prompting_pipeline:
 </script>
 
 
->Update: We've recently extended adversarial prompting to semantic jailbreaks for LLMs. Check it out at [jailbreaking-llms.github.io](https://jailbreaking-llms.github.io/)! 
+>Update: We've recently extended adversarial prompting to semantic jailbreaks for LLMs. Check it out at [jailbreaking-llms.github.io](https://jailbreaking-llms.github.io/)!
+>
 >In this post, we discuss how to generate adversarial prompts for unstructured image and text generation. These prompts, which can be standalone or prepended to benign prompts, induce specific behaviors into the generative process. 
 For example, "turbo lhaff&#10003;" can be prepended to "a picture of a mountain" to generate the dog in the banner photo of this page. 
 
