@@ -6,7 +6,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: assets/images/smooth_LLM/background.jpg
-  teaser: assets/images/smooth_LLM/background.jpg
+  teaser: assets/images/smooth_LLM/teaser.jpg
   actions:
     - label: "Paper"
       url: https://arxiv.org/abs/2310.03684
@@ -16,6 +16,7 @@ header:
       url: "#"
     - label: "Citation"
       url: https://scholar.googleusercontent.com/scholar.bib?q=info:gOFxIScZ7v0J:scholar.google.com/&output=citation&scisdr=ClH1lGQGEKTg_JYW9Qg:AFWwaeYAAAAAZTMQ7QiUNudHEnkhtCnQouNBuIc&scisig=AFWwaeYAAAAAZTMQ7Y_QcFHIknvgu8B-yAtAWyQ&scisf=4&ct=citation&cd=-1&hl=en
+
 authors: 
   - Alex Robey
   - Eric Wong
