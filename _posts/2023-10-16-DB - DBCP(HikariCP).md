@@ -22,7 +22,7 @@ toc_icon: "fas fa-list"
 
 커넥션 풀이란? was가 실행되면서 DB와 미리 connection(연결)을 해놓은 객체들을 pool에 저장해 두었다가, 클라이언트 요청이 오면 connection을 빌려주고, 처리가 끝나면 실행된 상태로 다시 connection을 반납받아 pool에 저장하는 방식을 말한다.
 
-![DBCP](C:\Users\hwang\pueser.github.io\images\2023-10-16-DB - DBCP\DBCP.png)
+![DBCP](https://github.com/pueser/pueser.github.io/assets/117990884/75c45ff2-49ff-485f-bd15-667c7d960ad0)
 
 <br>
 
