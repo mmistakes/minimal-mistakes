@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "JAVA - String cut function"
+title:  "JAVA - 문자열 합치기"
 categories: Java
 tag: [JAVA]
 author_profile: true
