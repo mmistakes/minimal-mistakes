@@ -37,7 +37,7 @@ toc_icon: "fas fa-list"
 
 객체가 메모리에 할당되어 실제 사용될 때 ‘인스턴스’라고 부른다.
 
-![인스턴스](C:\Users\hwang\pueser.github.io\images\2023-07-22 - Java - object\인스턴스.png)
+![인스턴스](https://github.com/pueser/pueser.github.io/assets/117990884/db6a9186-2769-4c41-81b6-b448cc50051e)
 <br>
 
 
@@ -51,7 +51,8 @@ toc_icon: "fas fa-list"
 
 -형식 : ``[접근제한자 ] [지정자(생략가능)] [리턴타입] [메소드명] [(매개변수)]{}``
 
-![메서드 문법](C:\Users\hwang\pueser.github.io\images\2023-07-22 - Java - object\메서드 문법.png)
+
+![메서드 문법](https://github.com/pueser/pueser.github.io/assets/117990884/5c30d0e3-bc20-4994-9382-6dca1830fa92)
 
 <br>
 
@@ -212,7 +213,7 @@ public class Main {
 
 # ◆변수
 
-![변수종류](C:\Users\hwang\pueser.github.io\images\2023-07-22 - Java - object\변수종류.png)
+![변수종류](https://github.com/pueser/pueser.github.io/assets/117990884/e0627a40-03ed-4e9f-8bac-a1cb51424681)
 
 **이때 인스턴스변수는 멤버필드, 글로벌변수 등등 으로 불린다.**
 
