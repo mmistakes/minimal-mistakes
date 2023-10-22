@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Disgin pattern - Singleton pattern"
-categories: Disgin pattern
+categories: Disgin_pattern
 tag: [Disgin pattern]
 author_profile: true
 toc: true
