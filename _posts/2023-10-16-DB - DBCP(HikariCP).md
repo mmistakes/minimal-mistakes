@@ -2,7 +2,7 @@
 layout: single
 title:  "DB - DBCP"
 categories: oracle
-tag: [oracle]
+tag: [DB]
 author_profile: true
 toc: true
 toc_label: 목차
