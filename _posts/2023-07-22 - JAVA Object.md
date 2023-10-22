@@ -38,6 +38,8 @@ toc_icon: "fas fa-list"
 객체가 메모리에 할당되어 실제 사용될 때 ‘인스턴스’라고 부른다.
 
 ![인스턴스](C:\Users\hwang\pueser.github.io\images\2023-07-22 - Java - object\인스턴스.png)
+<br>
+
 
 
 
@@ -70,7 +72,7 @@ toc_icon: "fas fa-list"
 |  **default**  | 아무런 접근 제한자를 명시하지 않으면 default 값이 되며, 동일한 패키지 내에서만 접근이 가능합니다. |
 |  **private**  | 자기 자신의 클래스 내에서만 접근이 가능합니다.               |
 
-<br/>
+<br>
 
 
 
@@ -332,8 +334,7 @@ public class PersonDTO {
 	}
 }
 ```
-
-<br/>
+<br>
 
 
 
