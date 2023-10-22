@@ -21,8 +21,7 @@ toc_icon: "fas fa-list"
 -비트 :  컴퓨터는 0과 1로만 표현이 되는데 이때, 0 또는 1을 bit라고 한다. 즉, 1bit는 컴퓨터에서 신호를 내보내는 최소단위라고 보면 된다.<br/>-바이트 : 정보를 표현을 하기 위해서 즉 한개의 문자를 만들기 위해서는 8개의 bit가 필요한데 이를 1 Byte라고 한다. 따라서 1Btye는 0과 1의 두 종류의 Bit가 8개로 구성되어 있기 때문에 2의 8승으로 계산해서 256개의 정보를 나타낼 수 있다.<br/>-데이터의 단위의 기준은 1,024 이며 0과 1의 2진법에서 2의 10승을 기준으로 단위를 구분한다.<br/>
 
 **-비트 -> 바이트 -> 킬로바이트 -> 메가바이트 -> 기가바이트 -> 테라바이트**
-
-![화면 캡처 2023-07-08 132836](C:\Users\hwang\github blog\pueser.github.io\images\2023-07-19-Java basic gramma\화면 캡처 2023-07-08 132836.png)
+<img width="466" alt="스크린샷 2023-10-22 134833" src="https://github.com/pueser/pueser.github.io/assets/117990884/dee39f82-aa72-43ba-b29e-3d849231759e">
 
 <br/>
 
@@ -89,8 +88,7 @@ Java EE플랫폼은 Java SE플랫폼 기반으로 그 위에 탑재된다. 대�
 
 
 # ◆JAVA 환경구조
-
-![images](\images\Users\hwang\github blog\pueser.github.io\images\2023-07-10-Java basic gramma\JAVA 환경구조.png){: .img-row-center}
+![JAVA 환경구조](https://github.com/pueser/pueser.github.io/assets/117990884/28b1a4b6-8b80-4a9f-a4a4-4b0b248678bd)
 
 
 
@@ -162,7 +160,7 @@ Java EE플랫폼은 Java SE플랫폼 기반으로 그 위에 탑재된다. 대�
 
 ## 1.1 산술연산자
 
-![산술연산자](C:\Users\hwang\github blog\pueser.github.io\images\2023-07-19-Java basic gramma\산술연산자.png)
+![산술연산자-1689520346061-8](https://github.com/pueser/pueser.github.io/assets/117990884/acbdbf18-d955-4ba3-b53f-1c58401f3975)
 
 <br/>
 
@@ -170,7 +168,7 @@ Java EE플랫폼은 Java SE플랫폼 기반으로 그 위에 탑재된다. 대�
 
 ## 1.2 대입연산자
 
-![비교연산자](C:\Users\hwang\github blog\pueser.github.io\images\2023-07-19-Java basic gramma\비교연산자.png)
+![비교연산자-1689520384055-10](https://github.com/pueser/pueser.github.io/assets/117990884/9f830b6f-7ea5-47b3-8bc5-42af059c2bc4)
 
 <br/>
 
@@ -178,7 +176,7 @@ Java EE플랫폼은 Java SE플랫폼 기반으로 그 위에 탑재된다. 대�
 
 ## 1.3 논리연산자
 
-![논리연산자](C:\Users\hwang\github blog\pueser.github.io\images\2023-07-19-Java basic gramma\논리연산자.png)
+![논리연산자-1689520392146-12](https://github.com/pueser/pueser.github.io/assets/117990884/532da327-07e7-4e9a-b484-770a7ff13b27)
 
 <br/>
 
