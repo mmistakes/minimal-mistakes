@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "DB - DBCP"
-categories: oracle
+categories: DB
 tag: [DB]
 author_profile: true
 toc: true
