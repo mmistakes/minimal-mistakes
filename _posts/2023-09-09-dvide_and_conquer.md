@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Divide and Conquer(분할 정복):합병 정렬과 퀵 정렬"
+title:  "Divide and Conquer(분할 정복 feat. 합병 정렬과 퀵 정렬)"
 toc: true
 author_profile: false
 categories: Algorithm
@@ -231,6 +231,10 @@ print(merge_sort(arr))
 출력 결과: [2, 4, 7, 10, 15, 19, 23, 38]
 ```
 <br>
+각 분할 단계에서 배열의 크기를 대략 반으로 줄이기 때문에 O(log n) 단계가 필요하고, 각 단계에서 모든 요소를 한 번씩 비교하고 병합해야 하므로 O(n) 시간이 걸립니다.<br>
+<span style = "color:red; font-weight:bold;">
+따라서 합병 정렬의 Best, Average, Worst 모두 시간 복잡도는 O(n log n)이다.</span>
+<br>
 <br>
 ### **2. 퀵 정렬(Quick Sort)**
 <span style = "color:blue; font-weight:bold;">
@@ -322,3 +326,8 @@ print(quick_sort(arr))
 ``` 
 <br>
 이외에도 유명한 Divide & Conqer을 이용한 알고리즘 예시로는 <a href="https://gyun97.github.io/algorithm/search/">이진 탐색</a>, 푸리에 변환 등이 있다.
+
+<span style = "color:red; font-weight:bold;">
+퀵 정렬은 Best와 Average가 O(n log n)의 시간 복잡도를 가지며, 빠른 정렬 알고리즘으로 알려져 있다.</span> 이 알고리즘은 분할 정복(divide and conquer) 방식을 사용하여 평균적으로 배열을 두 개의 하위 배열로 분할하고 정렬하는 데 O(n log n) 시간이 걸린다. 분할 과정에서 피벗(pivot) 요소를 사용하여 배열을 두 개의 하위 배열로 나누고, 각 하위 배열을 재귀적으로 정렬하는 과정에서 O(n)의 시간이 소비된다.<br><br>
+<span style = "color:red; font-weight:bold;">
+퀵 정렬의 최악의 경우 시간 복잡도는 O(n^2)로, 배열이 이미 정렬되어 있어 양끝의 피벗이 항상 배열의 최솟값 또는 최댓값으로 선택될 때이다.</span> 이 경우에는 피벗을 통한 분할이 전혀 이루어지지 않고 모든 요소가 하나의 하위 배열에 모이기 때문에 정렬 시간이 급증한다. 이러한 최악의 경우는 피벗 선택 전략과 관련이 있으며, 랜덤한 피벗 선택 또는 중앙값(median-of-three) 피벗 선택 전략을 사용함으로써 최악의 경우 시간 복잡도를 피할 수 있다.
