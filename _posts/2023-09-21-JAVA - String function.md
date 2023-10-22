@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "JAVA - 문자열 합치기"
+title:  "JAVA - String function"
 categories: Java
 tag: [JAVA]
 author_profile: true
@@ -302,6 +302,42 @@ String str2 = str.replace("[ab]", "00"); // "000000000000"
 a00ba00ba00b // "ab"에 해당하는 문자열 치환
 000000000000 // 정규식 "[ab]"에 해당하는 문자열 치환 즉, a 또는 b인 문자를 치환
 ```
+
+<br>
+
+
+
+
+
+
+
+
+# ◆concat()
+
+문자열을 합치는 메서드
+
+문법
+
+```java
+str.concat("붙여줄 문자")
+```
+
+
+
+```java
+String str = "ABC";
+
+String strResult = str.concat("DE").concat("FG");
+
+System.out.println(strResult); 
+```
+
+결과:
+
+```java
+ABCDEFG
+```
+
 
 
 
