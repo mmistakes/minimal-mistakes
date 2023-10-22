@@ -37,8 +37,10 @@ toc_icon: "fas fa-list"
 
 객체가 메모리에 할당되어 실제 사용될 때 ‘인스턴스’라고 부른다.
 
-![인스턴스](https://github.com/pueser/pueser.github.io/assets/117990884/db6a9186-2769-4c41-81b6-b448cc50051e)
+![인스턴스](https://github.com/pueser/pueser.github.io/assets/117990884/1b0ebff5-6818-4f1e-9b3e-c36d15df4a40)
+
 <br>
+
 
 
 
@@ -51,8 +53,7 @@ toc_icon: "fas fa-list"
 
 -형식 : ``[접근제한자 ] [지정자(생략가능)] [리턴타입] [메소드명] [(매개변수)]{}``
 
-
-![메서드 문법](https://github.com/pueser/pueser.github.io/assets/117990884/5c30d0e3-bc20-4994-9382-6dca1830fa92)
+![메서드 문법](https://github.com/pueser/pueser.github.io/assets/117990884/ca528169-fa7d-49d4-93a3-4daa32f12f82)
 
 <br>
 
@@ -213,11 +214,14 @@ public class Main {
 
 # ◆변수
 
-![변수종류](https://github.com/pueser/pueser.github.io/assets/117990884/e0627a40-03ed-4e9f-8bac-a1cb51424681)
+![변수종류](https://github.com/pueser/pueser.github.io/assets/117990884/3a3cc389-3e01-48bb-9757-43070e3c1396)
 
 **이때 인스턴스변수는 멤버필드, 글로벌변수 등등 으로 불린다.**
 
 <br/>
+
+
+
 
 **변수 초기화**
 
