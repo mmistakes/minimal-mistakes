@@ -22,7 +22,7 @@ toc_icon: "fas fa-list"
 
 **-비트 -> 바이트 -> 킬로바이트 -> 메가바이트 -> 기가바이트 -> 테라바이트**
 
-![화면 캡처 2023-07-08 132836](C:\Users\hwang\github blog\pueser.github.io\images\20223-07-19-Java basic gramma\화면 캡처 2023-07-08 132836.png)
+![화면 캡처 2023-07-08 132836](C:\Users\hwang\github blog\pueser.github.io\images\2023-07-19-Java basic gramma\화면 캡처 2023-07-08 132836.png)
 
 <br/>
 
@@ -90,7 +90,7 @@ Java EE플랫폼은 Java SE플랫폼 기반으로 그 위에 탑재된다. 대�
 
 # ◆JAVA 환경구조
 
-![images](\images\Users\hwang\github blog\pueser.github.io\images\20223-07-10-Java basic gramma\JAVA 환경구조.png){: .img-row-center}
+![images](\images\Users\hwang\github blog\pueser.github.io\images\2023-07-10-Java basic gramma\JAVA 환경구조.png){: .img-row-center}
 
 
 
@@ -152,7 +152,7 @@ Java EE플랫폼은 Java SE플랫폼 기반으로 그 위에 탑재된다. 대�
 
 ## 1)연산자 종류
 
-![연산자 종류](C:\Users\hwang\github blog\pueser.github.io\images\20223-07-19-Java basic gramma\연산자 종류.png)
+![연산자 종류](C:\Users\hwang\github blog\pueser.github.io\images\2023-07-19-Java basic gramma\연산자 종류.png)
 
 연산자 중 자주 사용하는 산술연산자, 대입연산자, 논리연산자에 대해 더 자세히 정리해 보았다.
 
@@ -162,7 +162,7 @@ Java EE플랫폼은 Java SE플랫폼 기반으로 그 위에 탑재된다. 대�
 
 ## 1.1 산술연산자
 
-![산술연산자](C:\Users\hwang\github blog\pueser.github.io\images\20223-07-19-Java basic gramma\산술연산자.png)
+![산술연산자](C:\Users\hwang\github blog\pueser.github.io\images\2023-07-19-Java basic gramma\산술연산자.png)
 
 <br/>
 
@@ -170,7 +170,7 @@ Java EE플랫폼은 Java SE플랫폼 기반으로 그 위에 탑재된다. 대�
 
 ## 1.2 대입연산자
 
-![비교연산자](C:\Users\hwang\github blog\pueser.github.io\images\20223-07-19-Java basic gramma\비교연산자.png)
+![비교연산자](C:\Users\hwang\github blog\pueser.github.io\images\2023-07-19-Java basic gramma\비교연산자.png)
 
 <br/>
 
@@ -178,7 +178,7 @@ Java EE플랫폼은 Java SE플랫폼 기반으로 그 위에 탑재된다. 대�
 
 ## 1.3 논리연산자
 
-![논리연산자](C:\Users\hwang\github blog\pueser.github.io\images\20223-07-19-Java basic gramma\논리연산자.png)
+![논리연산자](C:\Users\hwang\github blog\pueser.github.io\images\2023-07-19-Java basic gramma\논리연산자.png)
 
 <br/>
 
@@ -413,7 +413,7 @@ public class Main{
 
 -형식 : ``[접근제한자 ] [리턴타입] [메소드명] [(매개변수)]{}``
 
-![메소드](C:\Users\hwang\github blog\pueser.github.io\images\20223-07-19-Java basic gramma\메소드.png)
+![메소드](C:\Users\hwang\github blog\pueser.github.io\images\2023-07-19-Java basic gramma\메소드.png)
 
 **매개변수 표현식**<br/>
 
