@@ -1,0 +1,1 @@
+{"pred": "stingray", "prob": 0.7938, "logits": 12.9436, "mask_score_self_pred": 0.0676, "mask_score_aggr_pred": 0.0676, "count": 1, "nnz": 45056}

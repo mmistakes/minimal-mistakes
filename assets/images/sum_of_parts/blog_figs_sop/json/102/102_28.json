@@ -1,0 +1,1 @@
+{"pred": "hammerhead", "prob": 0.8791, "logits": 10.3931, "mask_score_self_pred": 0.0, "mask_score_aggr_pred": 0.0, "count": 1, "nnz": 44288}

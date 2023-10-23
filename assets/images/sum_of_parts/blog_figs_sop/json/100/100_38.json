@@ -1,0 +1,1 @@
+{"pred": "cock", "prob": 0.6427, "logits": 11.6681, "mask_score_self_pred": 0.022, "mask_score_aggr_pred": 0.022, "count": 1, "nnz": 49408}

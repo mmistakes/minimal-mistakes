@@ -1,0 +1,52 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    fetch('../assets/other/sum_of_parts/cosmogrid_hist.json')
+    .then(response => response.json())
+    .then(datasets => {
+        datasets.forEach(data => {
+            // Create a bar chart for each dataset in the JSON
+            const ctx = document.getElementById(data.type).getContext('2d');
+            const chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: data.x,
+                    datasets: [{
+                        label: data.caption,
+                        data: data.y,
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: data.caption,
+                            font: {
+                                size: 18
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Bins'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Frequency'
+                            }
+                        },
+                    },
+                    layout: {
+                        padding: 10
+                    }
+                }
+            });
+        });
+    });
+</script>

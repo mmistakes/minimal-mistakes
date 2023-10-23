@@ -1,0 +1,1 @@
+{"pred": "great white shark", "prob": 0.5509, "logits": 10.804, "mask_score_self_pred": 0.1278, "mask_score_aggr_pred": 0.0616, "count": 1, "nnz": 46336}

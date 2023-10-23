@@ -1,0 +1,1 @@
+{"pred": "hen", "prob": 0.6773, "logits": 5.5341, "mask_score_self_pred": 0.042, "mask_score_aggr_pred": 0.0231, "count": 1, "nnz": 36096}

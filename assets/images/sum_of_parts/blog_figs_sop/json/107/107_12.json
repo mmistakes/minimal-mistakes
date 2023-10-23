@@ -1,0 +1,1 @@
+{"pred": "goldfish", "prob": 0.9769, "logits": 5.6251, "mask_score_self_pred": 0.0479, "mask_score_aggr_pred": 0.0479, "count": 1, "nnz": 40704}

@@ -1,0 +1,1 @@
+{"pred": "ostrich", "prob": 1.0, "logits": 15.5336, "mask_score_self_pred": 0.0464, "mask_score_aggr_pred": 0.0464, "count": 1, "nnz": 41472}

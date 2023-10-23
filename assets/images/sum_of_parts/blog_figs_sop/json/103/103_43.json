@@ -1,0 +1,1 @@
+{"pred": "electric ray", "prob": 0.3281, "logits": 7.6387, "mask_score_self_pred": 0.0, "mask_score_aggr_pred": 0.0, "count": 1, "nnz": 20224}
