@@ -6,6 +6,8 @@ categories:
 tags: [OpenCV]
 toc : true
 comments: true
+date: 2023-06-01
+last_modified_at: 2023-10-23
 ---
 >>
 1. [사전 준비](#사전 준비) 
@@ -13,6 +15,11 @@ comments: true
 3. [Cmake 이용하여 OpenCV 만들기](#CUDA 와 cuDNN 설치)
 4. [Visual studio 이용하여 OpenCV build 하기](#Visual studio 이용하여 OpenCV build 하기)
 5. [검증하기 ](#검증하기)
+
+
+10월 23일 추가
+
+6. Nvidia Codec 추가
 >>
 
 
@@ -171,7 +178,27 @@ python import cv 해보니 관련 오류가 발생했습니다
  혹시 이 글을 보시고 해당 문제 해결 법을 아시면 알려주시면 감사합니다.
  
  
+ # 6. Nvidia Video Codec 추가
 
+ 1.  최신 Nvidia Video Codec 을 다운 받습니다. (압축풀어 줍니다)
+
+https://developer.nvidia.com/nvidia-video-codec-sdk/download
+
+2. 다운 받은 Codec 을 자신의 Cuda 버젼 이 있는 폴더에 확인합니다.
+
+보통 
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\<버젼정보>
+
+위치에 존재합니다
+
+3. Codec 파일에 lib 폴더에 있는 폴더는 cuda 에 lib 옮겨주고 
+Codec 파일에 lib 폴더에 있는 폴더는 cuda 버젼 include 옮겨 줍니다
+
+위에 build 과정을 진행합니다
+
+Cmake에서 Nvidia 설정이 되었는지 확인할 수 있습니다
+
+![Nvidia codec 설치](/assets/img/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/OpenCV_CUDA/NvidiaCodec%EC%84%A4%EC%B9%98%ED%99%95%EC%9D%B8.png)
 
 # 출처
 1. 쿠다 버젼
