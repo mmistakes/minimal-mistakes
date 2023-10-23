@@ -9,8 +9,67 @@ toc_label: 목차
 toc_icon: "fas fa-list"
 
 ---
+<br>
+
+
+
+
+
+
+
+
+
+# ◆데이터 정의어
+
+## DML(Data Manipulation Language)
+
+- insert
+- update
+- delete
+- select
+
+<a hrdf="https://pueser.github.io/oracle/DB-DML/">DML</a>
 
 <br>
+
+
+
+## DDL(Data Definition Language)
+
+- create
+- alter
+- drop
+- truncate
+- rename
+
+<a hrdf="https://pueser.github.io/oracle/DB-DDL/">DDL</a>
+
+<br>
+
+
+
+## DCL(Data Control Language)
+
+- grant
+- revoke
+
+<a hrdf="https://pueser.github.io/oracle/DB-DCL/">DCL</a>
+
+<br>
+
+
+
+## TCL(Transaction Control Language)
+
+- commit
+- rollback
+- savepoint
+
+<a hrdf="https://pueser.github.io/oracle/DB-TCL/">TCL</a>
+
+<br>
+
+
 
 
 
