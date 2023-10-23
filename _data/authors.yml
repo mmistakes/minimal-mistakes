@@ -269,6 +269,55 @@ Chris Callison-Burch:
       icon: "fas fa-fw fa-link"
       url: "https://www.cis.upenn.edu/~ccb/index.html"
 
+Alex Robey:
+  name              : "Alex Robey"
+  avatar            : /assets/images/avatar/alex.png
+  home              : https://arobey1.github.io/
+  links             :
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:arobey1@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: https://arobey1.github.io/
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/AlexRobey23"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/arobey1"
+
+Hamed Hassani:
+  name              : "Hamed Hassani"
+  avatar            : /assets/images/avatar/hamed.jpeg
+  home              : https://www.seas.upenn.edu/~hassani/
+  links             :
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:hassani@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.seas.upenn.edu/~hassani/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/HamedSHassani"
+
+
+George J. Pappas:
+  name              : "George J. Pappas"
+  avatar            : /assets/images/avatar/george.jpeg
+  home              : https://www.georgejpappas.org/
+  links             :
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:pappasg@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.georgejpappas.org/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/pappasg69"
+
 Weiqiu You:
   name    : "Weiqiu You"
   avatar  : "/assets/images/avatar/weiqiu.jpeg"

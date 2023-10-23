@@ -239,6 +239,62 @@ figure {
       width: 100%;
     }
   }
+  
+  &.double-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    // Left Column with Single Image
+    .left-column {
+      flex: 1;
+      max-width: 53.5%; // Adjust width as needed. Make sure to account for the gap between columns.
+      
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    // Right Column with Two Stacked Images
+    .right-column {
+      flex: 1;
+      max-width: 42.5%; // Adjust width as needed.
+      display: flex;
+      flex-direction: column;
+      gap: 10px; // Gap between images in right column
+      
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .image-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    figcaption {
+      width: 100%;
+    }
+  }
+
+  // Responsive design for smaller screens
+  > a,
+  > img {
+    @include breakpoint($small) {
+      &.double-column {
+        flex-direction: column;
+  
+        .left-column,
+        .right-column {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  
 }
 
 /* Figure captions */
