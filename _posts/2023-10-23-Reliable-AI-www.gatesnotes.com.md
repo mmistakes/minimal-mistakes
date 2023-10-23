@@ -1,5 +1,5 @@
 ---
-title: "MIT Technolgy Review on AI-Policy"
+title: "Bill Gates, The risks of AI are real but manageable"
 categories:
   - AI Regulation
 tags:
@@ -11,7 +11,7 @@ tags:
 last_modified_at: 2023-10-23T17:17:43-17:49
 ---
 
-### 빌 게이츠, The risks of AI are real but manageable [Link](https://www.gatesnotes.com/The-risks-of-AI-are-real-but-manageable)
+### The risks of AI are real but manageable [Link](https://www.gatesnotes.com/The-risks-of-AI-are-real-but-manageable)
 
 
 빌게이츠가 인공지능의 위험성에 우려를 표명하는 기술 분야의 저명인사 대열에 동참했다. 결론부터 말하자면, 빌 게이츠는 AI의 위험을 그리 걱정하지는 않는다. 전에도 이런 일이 있었기 때문
