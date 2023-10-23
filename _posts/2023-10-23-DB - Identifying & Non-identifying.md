@@ -59,7 +59,7 @@ CREATE TABLE memberAttach (
 );
 ```
 
-![식별관계](C:\Users\hwang\pueser.github.io\images\2023-10-23-DB - Identifying & Non-identifying\식별관계.png)
+<img width="212" alt="식별관계" src="https://github.com/pueser/pueser.github.io/assets/117990884/dd916b7a-5c70-4c32-895e-458be76c3255">
 
 <br>
 
@@ -98,4 +98,5 @@ CREATE TABLE memberAttach (
 );
 ```
 
-![비식별관계](C:\Users\hwang\pueser.github.io\images\2023-10-23-DB - Identifying & Non-identifying\비식별관계.png)
+<img width="214" alt="비식별관계" src="https://github.com/pueser/pueser.github.io/assets/117990884/2021848c-5332-42ca-b73c-6d2de3c29f0f">
+
