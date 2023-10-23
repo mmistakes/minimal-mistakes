@@ -28,7 +28,7 @@ toc_icon: "fas fa-list"
 - delete
 - select
 
-<a hrdf="https://pueser.github.io/oracle/DB-DML/">DML</a>
+<a href="https://pueser.github.io/oracle/DB-DML/">DML</a>
 
 <br>
 
@@ -42,7 +42,7 @@ toc_icon: "fas fa-list"
 - truncate
 - rename
 
-<a hrdf="https://pueser.github.io/oracle/DB-DDL/">DDL</a>
+<a href="https://pueser.github.io/oracle/DB-DDL/">DDL</a>
 
 <br>
 
@@ -53,7 +53,7 @@ toc_icon: "fas fa-list"
 - grant
 - revoke
 
-<a hrdf="https://pueser.github.io/oracle/DB-DCL/">DCL</a>
+<a href="https://pueser.github.io/oracle/DB-DCL/">DCL</a>
 
 <br>
 
@@ -65,7 +65,7 @@ toc_icon: "fas fa-list"
 - rollback
 - savepoint
 
-<a hrdf="https://pueser.github.io/oracle/DB-TCL/">TCL</a>
+<a href="https://pueser.github.io/oracle/DB-TCL/">TCL</a>
 
 <br>
 
