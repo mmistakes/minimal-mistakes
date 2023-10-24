@@ -14,3 +14,19 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+docs:
+  - title: "Table of Contents"
+    children:
+      - title: "Category"
+        url: /categories/
+      - title: "Tag"
+        url: /tags/
+
+  # 추가목차 지정
+  # - title: "Table of Contents2"
+  #   children:
+  #     - title: "Category"
+  #       url: /categories/
+  #     - title: "Tag"
+  #       url: /tags/
