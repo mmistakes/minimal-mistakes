@@ -74,3 +74,23 @@ toc_icon: "fas fa-list"
   <when test="조건2">SQL</when>
   <otherwise>SQL</otherwise>
 <choose>``
+
+```java
+<select id="findActiveBlogLike" resultType="Blog">
+  SELECT * FROM BLOG WHERE state = ‘ACTIVE’
+  <choose>
+ 	 <when test="title != null">
+    		AND title like #{title}    
+   	 </when>
+ 	 <when test=test="author != null and author.name != null">
+  	  	AND author_name like #{author.name}    
+  	 </when>    
+  </choose>
+     <otherwise>AND author_name = '혜진'</otherwise>
+</select>
+```
+
+
+
+
+
