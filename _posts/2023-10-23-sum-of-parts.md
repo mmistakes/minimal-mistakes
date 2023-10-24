@@ -126,7 +126,7 @@ $(document).ready(function(){
 
 
 > We identify a fundamental barrier for feature attributions in faithfulness tests.
-> To overcome this limitation, we propose grouped attributions as opposed to individual feature attributions.
+> To overcome this limitation, we use grouped attributions as opposed to individual feature attributions.
 <!-- where groups of features are selected with each given an attribution score, and develop a model to generate and use the groups. -->
 > Our model finds faithful groups and helps cosmologists discover knowledge about dark matter and galaxy formation.
 
@@ -134,24 +134,7 @@ ML models can assist physicians in diagnosing a variety of lung, heart, and othe
 However, physicians only trust the decision of the model if an explanation identifies regions of the X-ray that make sense.
 This identification of input features relevant to the prediction is feature attribution.
 
-<!-- Feature attribution is a type of explanations for machine learning (ML) models.
-Specifically, it identifies input features that are relevant to the prediction.
-For example, in medicine, ML models can assist physicians in diagnosing a variety of lung, heart, and other chest conditions from X-ray images.
-However, physicians only trust the decision of the model if an explanation identifies regions of the X-ray that make sense. -->
-
-To obtain useful attributions, researchers have proposed various methods.
-For example, post-hoc methods include building surrogate models ([LIME](https://arxiv.org/abs/1602.04938),
-[SHAP](https://arxiv.org/abs/1705.07874)), inspecting the gradients ([Grad-CAM](https://arxiv.org/abs/1610.02391), [Integrated Gradients](https://arxiv.org/abs/1703.01365)), or perturbing the inputs ([RISE](https://arxiv.org/abs/1806.07421), [Anchor](https://homes.cs.washington.edu/~marcotcr/aaai18.pdf)).
-Other works have the attributions built into the ML models ([FRESH](https://arxiv.org/abs/2005.00115), [NAM](https://arxiv.org/abs/2004.13912), [GAM](https://www.cs.cornell.edu/~yinlou/papers/lou-kdd12.pdf), [GA$^2$M](https://www.cs.cornell.edu/~yinlou/papers/lou-kdd13.pdf)).
-In this work, we discuss common barriers from faithfulness in both lines of research.
-
-## Lack of Faithfulness in Feature Attributions
-Feature attribution methods aim at attributing how much each feature $x_i$ contributes to the final prediction $y = f(x)$.
-In attribution $\alpha = \phi(x)$, larger score $\alpha_i \in [0, 1]$ shows that feature $x_i$ is more important in predicting $y$.
-<!-- Larger $\alpha_i$ means that feature $x_i$ is more important for prediction $y$. -->
-
-Let's look at what existing feature attribution methods offer:
-<!-- Let's look at some examples of what existing feature attribution methods offer: -->
+Here are some examples of feature attributions:
 
 <ul class="tab" data-tab="other-x-examples" data-name="otherxeg">
 {% for i in (0..9) %}
@@ -209,19 +192,47 @@ Let's look at what existing feature attribution methods offer:
 
 </ul>
 
-The scores in each saliency map are hard to interpret as they mean different things.
-It is unclear if these attributions are faithful.
+<!-- Feature attribution is a type of explanations for machine learning (ML) models.
+Specifically, it identifies input features that are relevant to the prediction.
+For example, in medicine, ML models can assist physicians in diagnosing a variety of lung, heart, and other chest conditions from X-ray images.
+However, physicians only trust the decision of the model if an explanation identifies regions of the X-ray that make sense. -->
+
+The saliency maps show that feature attribution methods for images aim at attributing how much each patch or pixel contributes to the prediction.
+
+To obtain useful attributions, researchers have proposed various methods.
+For example, post-hoc methods include building surrogate models ([LIME](https://arxiv.org/abs/1602.04938),
+[SHAP](https://arxiv.org/abs/1705.07874)), inspecting the gradients ([Grad-CAM](https://arxiv.org/abs/1610.02391), [Integrated Gradients](https://arxiv.org/abs/1703.01365)), or perturbing the inputs ([RISE](https://arxiv.org/abs/1806.07421), [Anchor](https://homes.cs.washington.edu/~marcotcr/aaai18.pdf)).
+Other works have the attributions built into the ML models ([FRESH](https://arxiv.org/abs/2005.00115), [NAM](https://arxiv.org/abs/2004.13912), [GAM](https://www.cs.cornell.edu/~yinlou/papers/lou-kdd12.pdf), [GA$^2$M](https://www.cs.cornell.edu/~yinlou/papers/lou-kdd13.pdf)).
+
+In this post, we discuss a common barrier from faithfulness in both lines of research.
+
+## Lack of Faithfulness in Feature Attributions
+
+<!-- Larger $\alpha_i$ means that feature $x_i$ is more important for prediction $y$. -->
+Let's first formalize feature attributions a bit more.
+
+Given a model $f$, an input $x$ and a prediction $y = f(x)$, a feature attribution method $\phi$ produces $\alpha = \phi(x)$.
+Each score $\alpha_i \in [0, 1]$ indicates the level of importance of feature $x_i$ in predicting $y$.
+
+<!-- Feature attribution methods aim at attributing how much each feature $x_i$ contributes to the final prediction $y = f(x)$.
+In attribution $\alpha = \phi(x)$, larger score $\alpha_i \in [0, 1]$ shows that feature $x_i$ is more important in predicting $y$. -->
+<!-- Let's look at what existing feature attribution methods offer: -->
+
+<!-- The scores in each saliency map are hard to interpret as they mean different things. -->
+<!-- It is unclear if these attributions are faithful. -->
 
 An explanation of a machine learning model is considered "faithful" [if it accurately reflects the model's decision-making process](https://arxiv.org/abs/2209.11326).
 For a feature attribution method, this means that the highlighted features should actually influence the model's prediction.
-<!-- Built-in methods then have the advantage of being faithful by construction. -->
 
-However, when inputs highly correlate with each other, even faithful-by-construction models can have a potential failure.
+Built-in methods then have the advantage of being faithful by construction.
+
+<!-- However, when inputs highly correlate with each other, all feature attribution methods can have a potential failure. -->
+<!-- However, when inputs highly correlate with each other, even faithful-by-construction models can have a potential failure. -->
 
 ### Curse of Dimensionality in Faithfulness Tests
 
 <!-- Perturbation tests are a widely-used technique for evaluating faithfulness of an explanation. -->
-One widely-used faithfulness test is _deletion_.
+One widely-used test of faithfulness is _deletion_.
 It measures how well the total attribution from a subset of features $S$ aligns with the change in model prediction when we remove the features from input $x$.
 
 **Definition.** (Deletion error) The _deletion error_ of an feature attribution $\alpha\in\mathbb{R}^d$ for a model $f:\mathbb R^d\rightarrow\mathbb R$ when removing a subset of features $S$ from an input $x$ is
@@ -271,14 +282,19 @@ The concept of groups is then formalized as following:
 **Grouped Attribution:** Let $x\in\mathbb R^d$ be an example, and let $S_1, \dots, S_G \in \{0,1\}^d$ designate $G$ groups of features where $j \in S_i$ if feature $j$ is included in the $i$th group. Then,  a grouped feature attribution is a collection $\beta = \{(S_i,c_i)\}_{i=1}^G$ where $c_i\in\mathbb R$ is the attributed score for the $i$th group of features $m_i$.
 {: .notice--info}
 
-If we use one group for all the input features, and assign a score of 1 for the group, then we can achieve zero deletion error for the monomial example.
+<!-- If we use one group for all the input features, and assign a score of 1 for the group, then we can achieve zero deletion error for the monomial example. -->
+We can prove that there is a constant sized group attribution that achieves zero deletion error.
+
+**Corollary.** Consider the monimial from the Theorem Sketch. Then, there exists a grouped attribution with zero deletion error for the monomial.
+{: .notice--info}
 
 Grouped attributions are thus able to overcome exponentially growing deletion errors when the features interact with each other.
 
-In our work, we develop a class of models, SOP, that can generate and select important groups for attribution for any existing model.
-
 ## Our Approach: Sum-of-Parts Models
-Our proposed grouped attributions consist of two parts: the subsets of features called groups $(S_1,\dots, S_G) \in [0,1]^d $ and the scores for each group $(c_1, \dots, c_G)$.
+<!-- In our work, we develop a class of models, SOP, that can generate and select important groups for attribution for any existing model. -->
+Now that we understand the need for grouped attributions, how do we ensure they are faithful?
+
+We develop a class of models, Sum-of-Parts (SOP), which consist of two parts: the subsets of features called groups $(S_1,\dots, S_G) \in [0,1]^d $ and the scores for each group $(c_1, \dots, c_G)$.
 
 We divide our approach into two main modules: $\mathsf{GroupGen}$ which generates the groups $S_i$ of features from an input, and $\mathsf{GroupSelect}$ which assigns scores $c_i$ to select which groups to use for prediction.
 The final prediction is then a weighted average of predictions from each group $y_i$ by score $c_i$, as shown in the following figure.
@@ -337,9 +353,9 @@ Here are some examples groups our model obtain for ImageNet:
 
 </ul>
 
+## Case Study: Cosmology
 To validate the usability of our approach for solving real problems, we collaborate with cosmologists to see if we can use the groups for scientific discovery.
 
-## Case Study: Cosmology
 Weak lensing maps in cosmology calculate the spatial distribution of matter density in the universe ([Gatti et al. 2021](https://academic.oup.com/mnras/article/504/3/4312/6211014?login=true)).
 Cosmologists hope to use weak lensing maps to predict two key parameters related to the initial state of the universe: $\Omega_m$ and $\sigma_8$.
 
@@ -354,7 +370,7 @@ Here is an example weak lensing map.
         </a>
     </div>
     <figcaption style="display: block; margin-left: auto; margin-right: auto">
-      Example of a weak lensing map.
+      Example of a weak lensing map. This map has $\Omega_m = 0.1021$ and $\sigma_8 = 1.023$. The large area being dark matches the low $\Omega_m$.
     </figcaption>
 </figure>
 
@@ -379,15 +395,17 @@ Voids are wide areas of negative density and appear as dark regions, whereas clu
 <!-- {% include gallery id="gallery_void_cluster" layout="third" caption="(Left) Voids. (Right) Clusters." %} -->
 
 
-Matilla et al. ([2020](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.102.123506)) and Ribli et al. ([2019](https://academic.oup.com/mnras/article/490/2/1843/5571096?login=true)) have developed CNN models to predict $\Omega_m$ and $\sigma_8$ from simulated weak lensing maps.
-The following remains an open question in cosmology:
+Matilla et al. ([2020](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.102.123506)) and Ribli et al. ([2019](https://academic.oup.com/mnras/article/490/2/1843/5571096?login=true)) have developed CNN models to predict $\Omega_m$ and $\sigma_8$ from simulated weak lensing maps [CosmoGridV1](http://www.cosmogrid.ai/).
+<!-- The following remains an open question in cosmology: -->
+With the existing models, we can then ask a question:
 
 _**What structures from weak lensing maps can we use to infer $\Omega_m$ and $\sigma_8$?**_
 
-We then use SOP on the trained CNN model and analyze the groups found by combining the segments.
-We use watershed to pre-segment the images from [CosmoGridV1](http://www.cosmogrid.ai/) dataset into segments, and consider each segment as a feature.
+We then use SOP on the trained CNN model and analyze the groups from the attributions.
+<!-- found by combining the segments. -->
+<!-- We use watershed to pre-segment the images from [CosmoGridV1](http://www.cosmogrid.ai/) dataset into segments, and consider each segment as a feature. -->
 
-One of our findings most surprising to cosmologists relates to the distinction between the two parameters $\Omega_m$ and $\sigma_8$.
+One of our findings that intrigue cosmologists relates to the distinction between the two parameters $\Omega_m$ and $\sigma_8$.
 
 We find that voids have especially higher weights for predicting $\Omega_m$, with average of 55.4% weight for $\Omega_m$ over 54.0% weight for $\sigma_8$. Clusters, especially high-significance ones, have higher weights for predicting $\sigma_8$, with average of 14.8% weight for $\sigma_8$ over 8.8% weight for $\Omega_m$.
 
@@ -406,7 +424,7 @@ Also, clusters have more low weights in the 0~0.1 bin for predicting $\sigma_8$ 
 
 
 ## Conclusion
-In this blog post, we propose group attributions to overcome a fundamental barrier for feature attributions in satisfying faithfulness perturbation tests.
+In this blog post, we show that group attributions can overcome a fundamental barrier for feature attributions in satisfying faithfulness perturbation tests.
 Our Sum-of-Parts models generate groups that are semantically meaningful to cosmologists and revealed new properties in cosmological structures such as voids and clusters.
 
 For more details in thoeretical proofs and quantitative experiments, see our [paper](https://fallcat.github.io/assets/pdf/sop_preprint.pdf) and [code](https://github.com/DebugML/sop).
