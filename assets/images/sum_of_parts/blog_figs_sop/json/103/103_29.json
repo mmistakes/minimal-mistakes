@@ -1,1 +1,0 @@
-{"pred": "tiger shark", "prob": 0.7303, "logits": 10.6585, "mask_score_self_pred": 0.0468, "mask_score_aggr_pred": 0.0468, "count": 1, "nnz": 43520}

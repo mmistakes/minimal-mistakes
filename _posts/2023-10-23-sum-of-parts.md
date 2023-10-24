@@ -291,7 +291,7 @@ Here are some examples groups our model obtain for ImageNet:
 {% for i in (0..9) %}
 <li class="{% if forloop.first %}active{% endif %}" style="width: 10%; padding: 0; margin: 0">
     <!-- <a href="#">{{ i | plus: 1 }} </a> -->
-    <a href="#" style="padding: 5%; margin: 0"><img src="/assets/images/sum_of_parts/blog_figs_sop2/figs/{{ i }}/original.png" alt="{{ i | plus: 1 }}"></a>
+    <a href="#" style="padding: 5%; margin: 0"><img src="/assets/images/sum_of_parts/blog_figs_sop/figs/{{ i }}/original.png" alt="{{ i | plus: 1 }}"></a>
 </li>
 {% endfor %}
 </ul>
@@ -306,8 +306,8 @@ Here are some examples groups our model obtain for ImageNet:
             {% assign img_idx = row | times: 3 | plus: j %}
             <figure class="center sopfig" style="margin-top: 0; margin-bottom: 0pt;">
             <figcaption style="width: 95%">{{ img_idx }}</figcaption>
-                <a href="/assets/images/sum_of_parts/blog_figs_sop2/figs/{{ i }}/good/{{ img_idx }}.png" title="Example {{ forloop.parentloop.index }}" class="image-popup">
-                    <img src="/assets/images/sum_of_parts/blog_figs_sop2/figs/{{ i }}/good/{{ img_idx }}.png" alt="Masked Image {{ forloop.index }} for {{ forloop.parentloop.index }}" style="width: 95%">
+                <a href="/assets/images/sum_of_parts/blog_figs_sop/figs/{{ i }}/good/{{ img_idx }}.png" title="Example {{ forloop.parentloop.index }}" class="image-popup">
+                    <img src="/assets/images/sum_of_parts/blog_figs_sop/figs/{{ i }}/good/{{ img_idx }}.png" alt="Masked Image {{ forloop.index }} for {{ forloop.parentloop.index }}" style="width: 95%">
                 </a>
             </figure>
         {% endfor %}
@@ -320,8 +320,8 @@ Here are some examples groups our model obtain for ImageNet:
             {% assign img_idx = row | times: 3 | plus: j %}
             <figure class="center sopfig" style="margin-top: 0; margin-bottom: 0;">
             <figcaption style="width: 95%">{{ img_idx }}</figcaption>
-                <a href="/assets/images/sum_of_parts/blog_figs_sop2/figs/{{ i }}/bad/{{ img_idx }}.png" title="Example {{ forloop.parentloop.index }}" class="image-popup">
-                    <img src="/assets/images/sum_of_parts/blog_figs_sop2/figs/{{ i }}/bad/{{ img_idx }}.png" alt="Masked Image {{ forloop.index }} for {{ forloop.parentloop.index }}" style="width: 95%">
+                <a href="/assets/images/sum_of_parts/blog_figs_sop/figs/{{ i }}/bad/{{ img_idx }}.png" title="Example {{ forloop.parentloop.index }}" class="image-popup">
+                    <img src="/assets/images/sum_of_parts/blog_figs_sop/figs/{{ i }}/bad/{{ img_idx }}.png" alt="Masked Image {{ forloop.index }} for {{ forloop.parentloop.index }}" style="width: 95%">
                 </a>
             </figure>
         {% endfor %}
