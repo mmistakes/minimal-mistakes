@@ -1,7 +1,7 @@
 ---
 title: "News Scraps : Regulation on Online Product Sale Platfrom"
 categories:
-  - Regulation
+  - Product Regulation
 tags:
   - Scraps
   - product safty
