@@ -9,7 +9,6 @@ tags:
   - AI policy
   - news scraps
   - 인공지능
-  - 안전
   - 정책
   - 표준
   - 표준화
