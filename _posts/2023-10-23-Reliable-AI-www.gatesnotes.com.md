@@ -28,4 +28,4 @@ By Bill Gates| July 11, 2023  12 minute read
 > 
 > 1980년대와 90년대에는 워드 프로세스와 스프레드시트 프로그램이 사무 업무를 변화시켰다. 이러한 변화는 게이츠의 마이크로소프트가 주도한 것
 >
-> <em> Finally, I encourage everyone to follow developments in AI as much as possible. It’s the most transformative innovation any of us will see in our lifetimes, and a healthy public debate will depend on everyone being knowledgeable about the technology, its benefits, and its risks. The benefits will be massive, and the best reason to believe that we can manage the risks is that we have done it before. </em>
+>> <em> I encourage everyone to follow developments in AI as much as possible. It’s the most transformative innovation any of us will see in our lifetimes, and a healthy public debate will depend on everyone being knowledgeable about the technology, its benefits, and its risks. The benefits will be massive, and the best reason to believe that we can manage the risks is that we have done it before. </em>

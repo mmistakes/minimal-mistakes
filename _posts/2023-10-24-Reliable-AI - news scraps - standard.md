@@ -1,5 +1,5 @@
 ---
-title: "AI Standardizaiton - News Scraps - AI standard"
+title: "AI Standardizaiton - News Scraps"
 categories:
   - AI Stadards
 tags:
@@ -37,13 +37,12 @@ AI 산업을 키우려면 연성(軟性) 규제
 
 유연한 윤리 및 가이드라인으로 모범 AI가 되도록 유도하는 지혜로운 정책 구사가 긴요
 
-
 1. 신·구 업계 갈등 속 ‘적정 규제’ 필요
    
 2. 공공 규제와 민간 자율규제 간 조화가 핵심 
 
 3. AI 강국’ 위해선 산업별 표준부터 정비해야(산업표준에도 국제·국가·업계·기업 표준의 여러 층이 존재)
-    ![텍스트](https://image.munhwa.com/gen_news/202310/20231004010325050090012_b.jpg?v=20231024130307)
+    ![국내외 주요 표준화 기구](https://image.munhwa.com/gen_news/202310/20231004010325050090012_b.jpg?v=20231024130307)
 
 
 ### 문화산업의 대처 방안
