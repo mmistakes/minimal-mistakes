@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "어썸한 블로그로군요"
 title_separator          : "-"
 subtitle                 :  # site tagline that appears below site title in masthead
-name                     : "Sungwon Choi"
+name                     : "zhtmr"
 description              : "공부한 내용을 올리는 블로그 입니다."
 url                      : "https://zhtmr.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
