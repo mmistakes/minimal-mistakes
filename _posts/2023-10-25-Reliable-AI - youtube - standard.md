@@ -1,7 +1,7 @@
 ---
-title: "AI Standardizaiton - News Scraps"
+title: "AI Standardizaiton - Youtube"
 categories:
-  - AI Stadards
+  - AI Standards
 tags:
   - AI
   - standard
