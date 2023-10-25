@@ -6,6 +6,11 @@ tags:
   - Scraps
   - product safty
   - news scraps
+  - 온라인쇼핑
+  - 온라인플랫폼
+  - 제품안전
+  - 정책
+  - 규제
 
 last_modified_at: 2023-09-14T09:30:50-09:46
 ---

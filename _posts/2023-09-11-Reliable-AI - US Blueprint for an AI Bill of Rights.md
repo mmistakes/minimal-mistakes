@@ -7,6 +7,11 @@ tags:
   - Reliable AI
   - AI policy
   - Blueprint for an AI Bill
+  - 인공지능
+  - 안전
+  - 신뢰
+  - 정책
+  - 표준
 
 last_modified_at: 2023-09-13T16:50:50-11:00
 ---

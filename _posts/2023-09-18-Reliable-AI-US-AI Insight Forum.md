@@ -7,6 +7,10 @@ tags:
   - Reliable AI
   - AI policy
   - AI Insight Forum
+  - 인공지능
+  - 안전
+  - 신뢰
+  - 정책
 
 last_modified_at: 2023-09-18T16:20:50-16:30
 ---

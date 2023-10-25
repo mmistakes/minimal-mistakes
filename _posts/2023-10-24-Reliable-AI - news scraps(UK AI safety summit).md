@@ -7,6 +7,9 @@ tags:
   - Reliable AI
   - AI policy
   - news scraps
+  - 인공지능
+  - 안전
+  - 정책
 
 last_modified_at: 2023-10-25T117:10:50-17:17
 ---

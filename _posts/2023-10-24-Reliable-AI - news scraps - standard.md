@@ -8,6 +8,11 @@ tags:
   - Reliable AI
   - AI policy
   - news scraps
+  - 인공지능
+  - 안전
+  - 정책
+  - 표준
+  - 표준화
 
 last_modified_at: 2023-10-24T113:24:50-13:30
 ---
