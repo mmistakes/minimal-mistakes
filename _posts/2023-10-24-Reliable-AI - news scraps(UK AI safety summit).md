@@ -1,5 +1,5 @@
 ---
-title: "AI Standardizaiton - News Scraps - World's first global AI safety summit"
+title: "AI Policy - World's first global AI safety summit"
 categories:
   - AI Safety
 tags:

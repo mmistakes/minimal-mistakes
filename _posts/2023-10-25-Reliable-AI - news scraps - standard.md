@@ -1,5 +1,5 @@
 ---
-title: "AI Standardizaiton - News Scraps"
+title: "AI 윤리 국가표준(KS)"
 categories:
   - AI Stadards
 tags:
