@@ -17,7 +17,7 @@ last_modified_at: 2023-10-24T10:00:19-10:30
 
 _________________
 
-### China has a new plan for judging the safety of generative AI—and it’s packed with details  [Link1](https://www.technologyreview.kr/generative-ai-safety-censorship-china/)(한글), [Link2](https://www.technologyreview.com/2023/10/18/1081846/generative-ai-safety-censorship-china/)(영문)
+### China has a new plan for judging the safety of generative AI—and it’s packed with details  [Link-한글](https://www.technologyreview.kr/generative-ai-safety-censorship-china/)(한글), [Link-영문](https://www.technologyreview.com/2023/10/18/1081846/generative-ai-safety-censorship-china/)(영문)
 
 중국이 기업이 AI의 안전성을 평가하고 AI 모델에 대한 검열을 시행할 때 따라야 할 매우 구체적인 방법이 명시된 새로운 표준안 초안을 공개
 
