@@ -9,3 +9,21 @@
 
   <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script>
+  Kakao.init("0dc882d71ec5c97bd9f80a08982914b9");   // 아까 복사해둔 JavaScript 키
+  function sendLink() {
+    Kakao.Link.sendCustom({
+      templateId: 100011,   // 복사해둔 템플릿 ID
+      templateArgs: {
+        title: "{{ page.title }}",
+        description: "{{ page.excerpt }}",
+        url : "{{ page.url }}",
+      },
+    });
+  }
+</script>
+<a id="kakao-link-btn" href="javascript:sendLink()" class="btn btn--comment">
+  <i class="fa-fw fas fa-comment" aria-hidden="true"></i>
+  <span>KakaoTalk</span>
+</a>

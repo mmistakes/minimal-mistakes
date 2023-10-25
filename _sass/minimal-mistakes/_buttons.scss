@@ -39,9 +39,10 @@
   (info, $info-color),
   (facebook, $facebook-color),
   (twitter, $twitter-color),
+  (comment, #FDDC3F),
   (linkedin, $linkedin-color);
 
-  @each $buttoncolor, $color in $buttoncolors {
+@each $buttoncolor, $color in $buttoncolors {
     &--#{$buttoncolor} {
       @include yiq-contrasted($color);
       @if ($buttoncolor == inverse) {
