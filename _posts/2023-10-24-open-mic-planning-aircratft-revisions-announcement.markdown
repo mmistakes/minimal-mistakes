@@ -3,7 +3,7 @@ title: "Upcoming Open Mic - Planning Aircraft Revisions Based on Work Session Re
 categories: [Open Mic Announcement, Open Mic]
 ---
 
-The Open mic session starts on Friday 3rd November 2023 at 9:30 at [this link](https://meet.jit.si/open-mic-kbss). Speaker [Bogdan Kostov](https://kbss.felk.cvut.cz/web/team#bogdan-kostov) introduces the topic of Planning Aircraft Revisions Based on Work Session Records.
+The Open mic session starts on Friday 27nd November 2023 at 9:30 at [this link](https://meet.jit.si/open-mic-kbss). Speaker [Bogdan Kostov](https://kbss.felk.cvut.cz/web/team#bogdan-kostov) introduces the topic of Planning Aircraft Revisions Based on Work Session Records.
 
 
 ##### The abstract
