@@ -1,7 +1,7 @@
 ---
 title: "AI 산업표준, 자율과 규제 사이"
 categories:
-  - AI Stadards
+  - AI Standards
 tags:
   - AI
   - standard

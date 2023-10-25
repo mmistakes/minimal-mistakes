@@ -1,7 +1,7 @@
 ---
 title: "AI 윤리 국가표준(KS)"
 categories:
-  - AI Stadards
+  - AI Standards
 tags:
   - AI
   - standard
