@@ -2,6 +2,7 @@
 published: true
 layout: single
 title:  "[JavaScript] Deep Copy vs Shallow Copy"
+excerpt: "깊은 복사와 얕은 복사에 대해 알아봅니다."
 categories:
   - JavaScript
 tags:
