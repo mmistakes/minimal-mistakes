@@ -2,6 +2,10 @@
    SINGLE PAGE/POST
    ========================================================================== */
 
+* {
+  font-family: $sans-serif;
+}
+
 #main {
   @include clearfix;
   margin-left: auto;
@@ -27,7 +31,11 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
+}
+
+div.donation-btn {
+  text-align: center;
 }
 
 .initial-content,
@@ -73,7 +81,7 @@ body {
   line-height: 1;
 
   a {
-    color: $text-color;
+    color: $primary-color;
     text-decoration: none;
   }
 
@@ -88,27 +96,33 @@ body {
 }
 
 .page__content {
+
+  img {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+  }
+
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
   }
 
-	h1, h2, h3, h4, h5, h6 {
-		.header-link {
-			position: relative;
-			left: 0.5em;
-			opacity: 0;
-			font-size: 0.8em;
-			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
-			-moz-transition: opacity 0.2s ease-in-out 0.1s;
-			-o-transition: opacity 0.2s ease-in-out 0.1s;
-			transition: opacity 0.2s ease-in-out 0.1s;
-		}
+  h1, h2, h3, h4, h5, h6 {
+    .header-link {
+      position: relative;
+      left: 0.5em;
+      opacity: 0;
+      font-size: 0.8em;
+      -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+      -moz-transition: opacity 0.2s ease-in-out 0.1s;
+      -o-transition: opacity 0.2s ease-in-out 0.1s;
+      transition: opacity 0.2s ease-in-out 0.1s;
+    }
 
-		&:hover .header-link {
-			opacity: 1;
-		}
-	}
+    &:hover .header-link {
+      opacity: 1;
+    }
+  }
 
   p,
   li,
@@ -139,20 +153,6 @@ body {
     }
   }
 
-  :not(pre) > code {
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
-    font-size: 0.8em;
-    background: $code-background-color;
-    border-radius: $border-radius;
-
-    &::before,
-    &::after {
-      letter-spacing: -0.2em;
-      content: "\00a0"; /* non-breaking space*/
-    }
-  }
-
   dt {
     margin-top: 1em;
     font-family: $sans-serif;
@@ -174,6 +174,10 @@ body {
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+}
+
+#page-title {
+  color: $primary-color;
 }
 
 .page__hero {
@@ -298,7 +302,6 @@ body {
    ========================================================================== */
 
 .page__meta {
-  margin-top: 2em;
   color: $muted-text-color;
   font-family: $sans-serif;
   font-size: $type-size-6;
@@ -329,19 +332,22 @@ body {
    ========================================================================== */
 
 .page__taxonomy {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+
   .sep {
     display: none;
   }
 
   strong {
     margin-right: 10px;
+    font-size: $type-size-6;
   }
 }
 
 .page__taxonomy-item {
   display: inline-block;
   margin-right: 5px;
-  margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
   border: 1px solid mix(#000, $border-color, 25%);

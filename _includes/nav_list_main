@@ -1,0 +1,95 @@
+{% assign sum = site.posts | size %}
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <!--전체 글 수-->
+      <li>
+            ✨ <span>전체 글 수</style> <span>{{sum}}</style> <span>개</style>
+      </li>
+      <li>
+
+                {% for category in site.categories %}
+                    {% if category[0] == "Project" %}
+                        <a href="/categories/project" class=""><span class="nav__sub-title">Project ({{category[1].size}})</span></a>
+                    {% endif %}
+                {% endfor %}
+        <span class="nav__sub-title">BackEnd</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Spring" %}
+                        <li><a href="/categories/spring" class="">Spring ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">Native App</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Android" %}
+                        <li><a href="/categories/android" class="">Android ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        <span class="nav__sub-title">Computer Science</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Database" %}
+                        <li><a href="/categories/database" class="">Database ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Algorithm" %}
+                        <li><a href="/categories/algorithm" class="">Algorithm ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        {% for category in site.categories %}
+            {% if category[0] == "PS" %}
+                <a href="/categories/ps" class=""><span class="nav__sub-title">Problem Solving ({{category[1].size}})</span></a>
+            {% endif %}
+        {% endfor %}
+
+        <span class="nav__sub-title">Etc</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "About Dev" %}
+                        <li><a href="/categories/aboutdev" class="">About Dev ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Trouble Shooting" %}
+                        <li><a href="/categories/troubleshooting" class="">Trouble Shooting ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Github Blog" %}
+                        <li><a href="/categories/githubblog" class="">Github Blog ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Retrospect" %}
+                        <li><a href="/categories/retrospect" class="">회고 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Etc" %}
+                        <li><a href="/categories/etc" class=""> 잡동사니 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+  </ul>
+</nav>

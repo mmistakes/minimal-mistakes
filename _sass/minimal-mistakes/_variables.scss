@@ -14,9 +14,13 @@ $indent-var: 1.3em !default;
 
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
-$sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
-  "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$monospace: Monaco, Consolas, "Lucida Console", monospace !default;
+$sans-serif: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Roboto", "Segoe UI",
+"Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+$monospace: 'NanumGothicCoding', Monaco, Consolas, "Lucida Console", monospace !default;
+$D2coding: 'NanumGothicCoding', Monaco, Consolas, "Lucida Console", monospace !default;
+$Ubuntu: 'Ubuntu Mono', Monaco, Consolas, "Lucida Console", monospace !default;
+$NotoSansKR: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Roboto", "Segoe UI",
+"Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
@@ -45,6 +49,7 @@ $type-size-8: 0.625em !default; // ~10px
 
 /* headline scale */
 $h-size-1: 1.563em !default; // ~25.008px
+$h-size-2: 1.25em !default; // ~20px
 $h-size-3: 1.125em !default; // ~18px
 $h-size-4: 1.0625em !default; // ~17px
 $h-size-5: 1.03125em !default; // ~16.5px
@@ -65,18 +70,17 @@ $code-background-color: #fafafa !default;
 $code-background-color-dark: $light-gray !default;
 $text-color: $dark-gray !default;
 $muted-text-color: mix(#fff, $text-color, 20%) !default;
-$h-size-2: 1.25em !default; // ~20px
 $border-color: $lighter-gray !default;
 $form-background-color: $lighter-gray !default;
 $footer-background-color: $lighter-gray !default;
 
-$primary-color: #6f777d !default;
+$primary-color: #542C85 !default;
 $success-color: #3fa63f !default;
 $warning-color: #d67f05 !default;
 $danger-color: #ee5f5b !default;
 $info-color: #3b9cba !default;
 $focus-color: $primary-color !default;
-$active-color: mix(#fff, $primary-color, 80%) !default;
+$active-color: mix(#fff, $primary-color, 60%) !default;
 
 /* YIQ color contrast */
 $yiq-contrasted-dark-default: $dark-gray !default;
@@ -97,6 +101,8 @@ $instagram-color: #517fa4 !default;
 $keybase-color: #ef7639 !default;
 $lastfm-color: #d51007 !default;
 $linkedin-color: #007bb6 !default;
+$kakaotalk-color: #FDDC3F !default;
+$toss-color: #0064FF !default;
 $mastodon-color: #2b90d9 !default;
 $pinterest-color: #cb2027 !default;
 $reddit-color: #ff4500 !default;
@@ -111,7 +117,7 @@ $youtube-color: #bb0000 !default;
 $xing-color: #006567 !default;
 
 /* links */
-$link-color: mix(#000, $info-color, 20%) !default;
+$link-color: #BA0682 !default;
 $link-color-hover: mix(#000, $link-color, 25%) !default;
 $link-color-visited: mix(#fff, $link-color, 15%) !default;
 $masthead-link-color: $primary-color !default;
@@ -122,23 +128,99 @@ $navicon-link-color-hover: mix(#fff, $primary-color, 75%) !default;
 $notice-background-mix: 80% !default;
 $code-notice-background-mix: 90% !default;
 
-/* syntax highlighting (base16) */
-$base00: #263238 !default;
-$base01: #2e3c43 !default;
-$base02: #314549 !default;
-$base03: #546e7a !default;
-$base04: #b2ccd6 !default;
-$base05: #eeffff !default;
-$base06: #eeffff !default;
-$base07: #ffffff !default;
-$base08: #f07178 !default;
-$base09: #f78c6c !default;
-$base0a: #ffcb6b !default;
-$base0b: #c3e88d !default;
-$base0c: #89ddff !default;
-$base0d: #82aaff !default;
-$base0e: #c792ea !default;
-$base0f: #ff5370 !default;
+/*
+   Code Highlight
+   ========================================================================== */
+
+/* my custom */
+// $base00: #282c34 !default;
+// $base01: #2e3c43 !default;
+// $base02: #314549 !default;
+// $base03: #546e7a !default;
+// $base04: #9fa8ac !default;
+// $base05: #eeffff !default;
+// $base06: #eeffff !default;
+// $base07: #ffffff !default;
+// $base08: #f07178 !default;
+// $base09: #f78c6c !default;
+// $base0a: #ffcb6b !default;
+// $base0b: #c3e88d !default;
+// $base0c: #d4e2e7 !default;
+// $base0d: #82aaff !default;
+// $base0e: #c792ea !default;
+// $base0f: #ff5370 !default;
+
+/* one dark */
+$base00: #282c34 !default;
+$base01: #353b45 !default;
+$base02: #3e4451 !default;
+$base03: #545862 !default;
+$base04: #727a85 !default; // default: #565c64
+$base05: #bfc7d4 !default; // default: #abb2bf
+$base06: #b6bdca !default;
+$base07: #c8ccd4 !default;
+$base08: #e06c75 !default;
+$base09: #d19a66 !default;
+$base0a: #e5c07b !default;
+$base0b: #98c379 !default;
+$base0c: #56b6c2 !default;
+$base0d: #61afef !default;
+$base0e: #c678dd !default;
+$base0f: #be5046 !default;
+
+/* one light */
+// $base00: #fafafa !default;
+// $base01: #f0f0f1 !default;
+// $base02: #e5e5e6 !default;
+// $base03: #a0a1a7 !default;
+// $base04: #696c77 !default;
+// $base05: #383a42 !default;
+// $base06: #202227 !default;
+// $base07: #090a0b !default;
+// $base08: #ca1243 !default;
+// $base09: #d75f00 !default;
+// $base0a: #c18401 !default;
+// $base0b: #50a14f !default;
+// $base0c: #0184bc !default;
+// $base0d: #4078f2 !default;
+// $base0e: #a626a4 !default;
+// $base0f: #986801 !default;
+
+/* monokai */
+// $base00: #272822 !default;
+// $base01: #383830 !default;
+// $base02: #49483e !default;
+// $base03: #75715e !default;
+// $base04: #a59f85 !default;
+// $base05: #f8f8f2 !default;
+// $base06: #f5f4f1 !default;
+// $base07: #f9f8f5 !default;
+// $base08: #f92672 !default;
+// $base09: #fd971f !default;
+// $base0a: #f4bf75 !default;
+// $base0b: #a6e22e !default;
+// $base0c: #a1efe4 !default;
+// $base0d: #66d9ef !default;
+// $base0e: #ae81ff !default;
+// $base0f: #cc6633 !default;
+
+// /* syntax highlighting (base16) - default */
+// $base00: #263238 !default;
+// $base01: #2e3c43 !default;
+// $base02: #314549 !default;
+// $base03: #546e7a !default;
+// $base04: #b2ccd6 !default;
+// $base05: #eeffff !default;
+// $base06: #eeffff !default;
+// $base07: #ffffff !default;
+// $base08: #f07178 !default;
+// $base09: #f78c6c !default;
+// $base0a: #ffcb6b !default;
+// $base0b: #c3e88d !default;
+// $base0c: #89ddff !default;
+// $base0d: #82aaff !default;
+// $base0e: #c792ea !default;
+// $base0f: #ff5370 !default;
 
 /*
    Breakpoints
@@ -155,12 +237,9 @@ $max-width: $x-large !default;
    Grid
    ========================================================================== */
 
-//$right-sidebar-width-narrow: 200px !default;
-//$right-sidebar-width: 300px !default;
-//$right-sidebar-width-wide: 400px !default;
-$right-sidebar-width-narrow: 100px !default;
-$right-sidebar-width: 200px !default;
-$right-sidebar-width-wide: 250px !default;
+$right-sidebar-width-narrow: 100px !default;    // default 200px
+$right-sidebar-width: 200px !default;           // default 300px
+$right-sidebar-width-wide: 250px !default;      // default 400px
 
 /*
    Other

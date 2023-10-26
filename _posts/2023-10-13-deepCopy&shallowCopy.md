@@ -8,6 +8,7 @@ categories:
 tags:
   - JavaScript
 toc: true
+toc_sticky: true
 ---
 
 # 깊은 복사(Deep Copy)   
