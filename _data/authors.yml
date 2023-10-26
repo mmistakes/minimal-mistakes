@@ -330,12 +330,13 @@ Weiqiu You:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://fallcat.github.io/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/fallcat"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/youweiqiu"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/fallcat"
+
 
 Helen Qu:
   name    : "Helen Qu"
@@ -349,9 +350,14 @@ Helen Qu:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://helenqu.com/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/_helenqu"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/helenqu"
+
+
 
 Marco Gatti:
   name    : "Marco Gatti"
