@@ -1,0 +1,68 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    fetch('../assets/other/sum_of_parts/cosmogrid_hist.json')
+        .then(response => response.json())
+        .then(data => {
+
+            // Filter the data for voids and clusters
+            let voidsData = data.filter(d => d.type.includes("void"));
+            let clustersData = data.filter(d => d.type.includes("cluster"));
+
+            // Create a function to generate the datasets needed for Chart.js
+            function generateDatasets(dataArray) {
+                return dataArray.map((datum, index) => ({
+                    label: datum.caption, // Label from caption
+                    data: datum.y,
+                    borderColor: ['#FAF089', '#A8DADC'][index], // Border colors
+                    backgroundColor: ['rgba(255, 159, 28, 0.5)', 'rgba(46, 204, 113, 0.5)'][index], // Background colors with some transparency
+                    fill: false
+                }));
+            }
+
+            function generateDatasets(data) {
+                const colors = {
+                    'void_omega': '#72A0B3', // Pastel Blue
+                    'void_sigma': '#F0D367', // Pastel Yellow
+                    'cluster_omega': '#72A0B3',
+                    'cluster_sigma': '#F0D367'
+                };
+
+                return data.map(datum => ({
+                    label: datum.caption,
+                    data: datum.y,
+                    backgroundColor: colors[datum.type],
+                    borderColor: colors[datum.type],
+                    borderWidth: 1
+                }));
+            }
+
+
+
+            // Void plot
+            const voidsCtx = document.getElementById('voids-canvas').getContext('2d');
+            const voidsChart = new Chart(voidsCtx, {
+                type: 'bar',
+                data: {
+                    labels: voidsData[0].x,  // Assuming both datasets have the same x axis values (bins)
+                    datasets: generateDatasets(voidsData)
+                },
+                options: {
+                    // Your chart options here...
+                }
+            });
+
+            // Cluster plot
+            const clustersCtx = document.getElementById('clusters-canvas').getContext('2d');
+            const clustersChart = new Chart(clustersCtx, {
+                type: 'bar',
+                data: {
+                    labels: clustersData[0].x,  // Assuming both datasets have the same x axis values (bins)
+                    datasets: generateDatasets(clustersData)
+                },
+                options: {
+                    // Your chart options here...
+                }
+            });
+
+        });
+</script>

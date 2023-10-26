@@ -205,7 +205,7 @@ Shreya Havaldar:
       url: "mailto:shreyah@seas.upenn.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://shreyahavaldar.com/"      
+      url: "https://shreyahavaldar.com/"
 
 Adam Stein:
   name             : "Adam Stein"
@@ -235,7 +235,7 @@ Li Zhang:
 
 Delip Rao:
   name             : "Delip Rao"
-  avatar           : https://deliprao.com/img/delip.jpeg
+  avatar           : /assets/images/avatar/delip.jpeg
   home             : https://deliprao.com/about
   links:
     - label: "Email"
@@ -243,7 +243,7 @@ Delip Rao:
       url: "mailto:deliprao@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://deliprao.com/about"      
+      url: "https://deliprao.com/about"
 
 Marianna Apidianaki:
   name             : "Marianna Apidianaki"
@@ -255,7 +255,7 @@ Marianna Apidianaki:
       url: "mailto:marapi@seas.upenn.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://mariannaapi.github.io/"     
+      url: "https://mariannaapi.github.io/"
 
 Chris Callison-Burch:
   name             : "Chris Callison-Burch"
@@ -267,7 +267,7 @@ Chris Callison-Burch:
       url: "mailto:ccb@seas.upenn.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://www.cis.upenn.edu/~ccb/index.html"          
+      url: "https://www.cis.upenn.edu/~ccb/index.html"
 
 Alex Robey:
   name              : "Alex Robey"
@@ -317,3 +317,70 @@ George J. Pappas:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/pappasg69"
+
+Weiqiu You:
+  name    : "Weiqiu You"
+  avatar  : "/assets/images/avatar/weiqiu.jpeg"
+  bio     : "CS PhD Student at UPenn"
+  home    : https://fallcat.github.io/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:weiqiuy@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://fallcat.github.io/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/youweiqiu"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/fallcat"
+
+
+Helen Qu:
+  name    : "Helen Qu"
+  avatar  : "/assets/images/avatar/helenqu.jpeg"
+  bio     : "Physics PhD Student at UPenn"
+  home    : https://helenqu.com/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:helenqu@sas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://helenqu.com/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/_helenqu"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/helenqu"
+
+
+
+Marco Gatti:
+  name    : "Marco Gatti"
+  avatar  : "/assets/images/avatar/marco.jpeg"
+  bio     : "Physics PostDoc at UPenn"
+  home    : https://www.researchgate.net/profile/Marco-Gatti-5
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:mgatti29@sas.upenn.edu"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/mgatti29"
+
+Bhuvnesh Jain:
+  name    : "Bhuvnesh Jain"
+  avatar  : "/assets/images/avatar/bhuv.jpeg"
+  bio     : "Walter H. and Leonore C. Annenberg Professor at UPenn"
+  home    : https://live-sas-physics.pantheon.sas.upenn.edu/people/standing-faculty/bhuvnesh-jain/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:bjain@physics.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://live-sas-physics.pantheon.sas.upenn.edu/people/standing-faculty/bhuvnesh-jain/"
