@@ -425,6 +425,6 @@ Also, clusters have more low weights in the 0~0.1 bin for predicting $\sigma_8$ 
 In this blog post, we show that group attributions can overcome a fundamental barrier for feature attributions in satisfying faithfulness perturbation tests.
 Our Sum-of-Parts models generate groups that are semantically meaningful to cosmologists and revealed new properties in cosmological structures such as voids and clusters.
 
-For more details in thoeretical proofs and quantitative experiments, see our [paper](https://fallcat.github.io/assets/pdf/sop_preprint.pdf) and [code](https://github.com/DebugML/sop).
+For more details in thoeretical proofs and quantitative experiments, see our [paper](https://arxiv.org/abs/2310.16316) and [code](https://github.com/DebugML/sop).
 
 ### Citation
