@@ -185,7 +185,7 @@ Click on the thumbnails to see different examples of feature attributions:
 
 </ul>
 
-<figcaption style="margin-top: 0; margin-bottom: 25pt;">The overlaying on top of images show the feature attribution scores each attribution method. Red overlay indicates higher importance from the method, and blue overlay indicates lower importance.</figcaption>
+<figcaption style="margin-top: 0; margin-bottom: 25pt;">The overlaying on top of images show the feature attribution scores each attribution method. Green overlay indicates high positive importance from the method for predicting the class, and red overlay indicates negative importance.</figcaption>
 
 
 The maps overlaying on top of images above show the attribution scores from different methods.
