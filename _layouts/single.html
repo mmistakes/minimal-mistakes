@@ -33,7 +33,10 @@ layout: default
           {% if page.title %}<h1 id="page-title" class="page__title p-name" itemprop="headline">
             <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
           </h1>{% endif %}
+          <!-- 업로드 날짜 -->
           {% include page__meta.html %}
+          <!-- 카테고리,테그 -->
+          {% include page__taxonomy.html %}
         </header>
       {% endunless %}
 
@@ -54,8 +57,11 @@ layout: default
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
-        {% include page__taxonomy.html %}
-        {% include page__date.html %}
+<!--        {% include page__taxonomy.html %}-->
+<!--        {% include page__date.html %}-->
+        <div class="notice">
+          방문해 주셔서 감사합니다! 댓글,지적,피드백 언제나 환영합니다😊
+        </div>
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}

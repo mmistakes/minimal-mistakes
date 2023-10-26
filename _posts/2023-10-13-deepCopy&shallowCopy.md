@@ -7,9 +7,11 @@ categories:
   - JavaScript
 tags:
   - JavaScript
+toc: true
 ---
 
-> 깊은 복사(Deep Copy)
+# 깊은 복사(Deep Copy)   
+
 ---  
 
 다음과 같은 코드가 있다.
@@ -53,8 +55,8 @@ tags:
 
 
 
-> 얕은 복사(Shallow Copy)   
----
+# 얕은 복사(Shallow Copy)   
+
 
 ```javascript
     const obj1 = {
