@@ -15,6 +15,21 @@
                         <a href="/categories/project" class=""><span class="nav__sub-title">Project ({{category[1].size}})</span></a>
                     {% endif %}
                 {% endfor %}
+        <span class="nav__sub-title">Language</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Java" %}
+                        <li><a href="/categories/java" class="">Java ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "JavaScript" %}
+                        <li><a href="/categories/javascript" class="">JavaScript ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">BackEnd</span>
             <ul>
                 {% for category in site.categories %}
@@ -23,14 +38,52 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Native App</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Android" %}
-                        <li><a href="/categories/android" class="">Android ({{category[1].size}})</a></li>
+                    {% if category[0] == "Spring Boot" %}
+                        <li><a href="/categories/springboot" class="">Spring Boot({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Spring Security" %}
+                        <li><a href="/categories/springsecurity" class="">Spring Security({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">DevOps</span>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Docker" %}
+                    <li><a href="/categories/docker" class="">Docker ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "AWS" %}
+                    <li><a href="/categories/aws" class="">AWS ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+        <span class="nav__sub-title">Git</span>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "Git" %}
+                    <li><a href="/categories/git" class="">Git ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <span class="nav__sub-title">GitHub</span>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "GitHub" %}
+                    <li><a href="/categories/github" class="">github ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
 
         <span class="nav__sub-title">Computer Science</span>
             <ul>
@@ -47,7 +100,21 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-
+        <span class="nav__sub-title">Study</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Design Pattern" %}
+                        <li><a href="/categories/designpattern" class="">Design Pattern ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Effective Java" %}
+                        <li><a href="/categories/effectivejava" class="">Effective Java ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         {% for category in site.categories %}
             {% if category[0] == "PS" %}
                 <a href="/categories/ps" class=""><span class="nav__sub-title">Problem Solving ({{category[1].size}})</span></a>
@@ -57,39 +124,12 @@
         <span class="nav__sub-title">Etc</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "About Dev" %}
-                        <li><a href="/categories/aboutdev" class="">About Dev ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
                     {% if category[0] == "Trouble Shooting" %}
                         <li><a href="/categories/troubleshooting" class="">Trouble Shooting ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Github Blog" %}
-                        <li><a href="/categories/githubblog" class="">Github Blog ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Retrospect" %}
-                        <li><a href="/categories/retrospect" class="">회고 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Etc" %}
-                        <li><a href="/categories/etc" class=""> 잡동사니 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+
       </li>
   </ul>
 </nav>

@@ -16,16 +16,16 @@ minimal_mistakes_skin    : "air" #"default" ,"aqua", "air", , "contrast", "dark"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "어썸한 블로그로군요"
+title                    : "awesome!"
 title_separator          : "-"
 subtitle                 :  # site tagline that appears below site title in masthead
-name                     : "zhtmr"
+name                     : "awesome!"
 description              : "공부한 내용을 올리는 블로그 입니다."
 url                      : "https://zhtmr.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "zhtmr/zhtmr.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "assets/logo.ico/earth-asia-solid.svg"# path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 future                   : true
 # breadcrumbs            : false # true, false (default)
@@ -106,9 +106,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Awesome!"
   avatar           : "/assets/images/profile.jpg"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "공부한 내용을 정리합니다."
   #location         : "Somewhere"
   email            :
   links:
