@@ -61,6 +61,8 @@ toc_icon: "fas fa-list"
 
 
 
+
+
 # ◆다중 조건문 : < choose >, < when >, < otherwise >
 
 <choose> 태그내의 여러개의 <when> 태그문의 경우 조건식이 true를 반환하는 <when>태그를 찾으면 거기서 멈추고 해당 <when>태그의 쿼리만 실행합니다.<br>만약 <when>태그의 조건식중 true 반환한 것이 없다면 <otherwise> 태그 내에 작성된 쿼리문이 실행됩니다. <otherwise>태그는 생략 가능합니다.
@@ -89,8 +91,6 @@ toc_icon: "fas fa-list"
      <otherwise>AND author_name = '혜진'</otherwise>
 </select>
 ```
-
-
 
 
 
