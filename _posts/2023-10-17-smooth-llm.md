@@ -6,16 +6,17 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: assets/images/smooth_LLM/background.jpg
-  teaser: assets/images/smooth_LLM/background.jpg
+  teaser: assets/images/smooth_LLM/teaser.jpg
   actions:
     - label: "Paper"
       url: https://arxiv.org/abs/2310.03684
     - label: "Code"
       url: https://github.com/arobey1/smooth-llm
     - label: "Tweet"
-      url: "#"
+      url: "https://twitter.com/AlexRobey23/status/1716824249737085272"
     - label: "Citation"
       url: https://scholar.googleusercontent.com/scholar.bib?q=info:gOFxIScZ7v0J:scholar.google.com/&output=citation&scisdr=ClH1lGQGEKTg_JYW9Qg:AFWwaeYAAAAAZTMQ7QiUNudHEnkhtCnQouNBuIc&scisig=AFWwaeYAAAAAZTMQ7Y_QcFHIknvgu8B-yAtAWyQ&scisf=4&ct=citation&cd=-1&hl=en
+
 authors: 
   - Alex Robey
   - Eric Wong
@@ -114,7 +115,9 @@ Unfortunately, there's a catch.  Although LLMs are trained to be [aligned with h
 
 {% include gallery id="gallery_LLM_generation" layout="half" caption="**Chatting with aligned LLMs.** (Left) When directly asked, public chatbots will rarely output objectionable content. (Right) However, by adversarially modifiying prompts requesting objectionable content, LLMs can be coerced into generating toxic text." %}
 
-Imagine this. You just got access to a friendly, garden-variety LLM that is eager to assist you.  You're rightfully impressed by its ability to [summarize the Harry Potter novels](https://www.microsoft.com/en-us/research/project/physics-of-agi/articles/whos-harry-potter-making-llms-forget-2/) and amused by its [sometimes pithy, sometimes sinister marital advice](https://www.nytimes.com/2023/02/16/technology/bing-chatbot-microsoft-chatgpt.html).  But in the midst of all this fun, someone whispers a secret code to your trusty LLM, and all of a sudden, your chatbot is [listing bomb building instructions](https://www.nytimes.com/2023/07/27/business/ai-chatgpt-safety-research.html), [generating recipes for concocting illegal drugs](https://www.wired.com/story/ai-adversarial-attacks/), and [giving tips for destroying humanity](https://www.cnn.com/videos/business/2023/08/15/hackers-defcon-ai-chat-gpt-google-bard-donie-pkg-biz-vpx.cnn).  Given the widespread use of LLMs, it might not surprise you to learn that such jailbreaks, which are often hard to detect or resolve, have been called "[generative AI's biggest security flaw](https://www.wired.com/story/generative-ai-prompt-injection-hacking/)."
+Imagine this. You just got access to a friendly, garden-variety LLM that is eager to assist you.  You're rightfully impressed by its ability to [summarize the Harry Potter novels](https://www.microsoft.com/en-us/research/project/physics-of-agi/articles/whos-harry-potter-making-llms-forget-2/) and amused by its [sometimes pithy, sometimes sinister marital advice](https://www.nytimes.com/2023/02/16/technology/bing-chatbot-microsoft-chatgpt.html).  But in the midst of all this fun, someone whispers a secret code to your trusty LLM, and all of a sudden, your chatbot is [listing bomb building instructions](https://www.nytimes.com/2023/07/27/business/ai-chatgpt-safety-research.html), [generating recipes for concocting illegal drugs](https://www.wired.com/story/ai-adversarial-attacks/), and [giving tips for destroying humanity](https://www.cnn.com/videos/business/2023/08/15/hackers-defcon-ai-chat-gpt-google-bard-donie-pkg-biz-vpx.cnn).  
+
+> Given the widespread use of LLMs, it might not surprise you to learn that such jailbreaks, which are often hard to detect or resolve, have been called "[generative AI's biggest security flaw](https://www.wired.com/story/generative-ai-prompt-injection-hacking/)."
 
 **What's in this post?** This blog post will cover the history and current state-of-the-art of adversarial attacks on language models.  We'll start by providing a brief overview of malicious attacks on language models, which encompasses decades-old shallow recurrent networks to the modern era of billion-parameter LLMs.  Next, we'll discuss state-of-the-art jailbreaking algorithms, how they differ from past attacks, and what the future could hold for adversarial attacks on language generation models.  And finally, we'll tell you about [SmoothLLM](https://arxiv.org/pdf/2310.03684.pdf), the first defense against jailbreaking attacks.
 
@@ -250,7 +253,7 @@ Depending on what appeals to you, here are three different ways of describing pr
 1. Create $N$ copies of the input prompt $P$.
 2. Independently perturb $q$% of the characters in each copy.
 3. Pass each perturbed copy through the LLM.
-4. Determines whether each response constitutes a jailbreak.
+4. Determine whether each response constitutes a jailbreak.
 5. Aggregate the results and return a response that is consistent with the majority.
 
 Notice that this procedure only requires query access to the LLM.  That is, unlike jailbreaking schemes like GCG that require computing the gradients of the model with respect to its input, SmoothLLM is broadly applicable to any queriable LLM.
@@ -301,7 +304,7 @@ In our paper, we show that one cannot directly attack SmoothLLM due to GCG.  The
 
 ## Conclusion
 
-SmoothLLM is a strong algorithm for defending against jailbreaking attacks.  The key idea is to randomly perturb multiple copies of each input prompt passed as input to an LLM, and to carefully aggregate the predictions of these perturbed prompts.  
+In this post, we provided a brief overview of attacks on language models and discussed the exciting new field surrounding LLM jailbreaks.  This context set the stage for the introduction of SmoothLLM, the first algorithm for defending LLMs against jailbreaking attacks.  The key idea in this approach is to randomly perturb multiple copies of each input prompt passed as input to an LLM, and to carefully aggregate the predictions of these perturbed prompts.  And as demonstrated in the experiments, SmoothLLM effectively mitigates the GCG jailbreak.
 
 If you're interested in this line of research, please feel free to email us at `arobey1@upenn.edu`.  And if you find this work useful in your own research please consider citing our work.
 
