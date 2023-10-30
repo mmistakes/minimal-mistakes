@@ -13,7 +13,7 @@ header:
     - label: "Code"
       url: https://github.com/arobey1/smooth-llm
     - label: "Tweet"
-      url: "#"
+      url: "https://twitter.com/AlexRobey23/status/1716824249737085272"
     - label: "Citation"
       url: https://scholar.googleusercontent.com/scholar.bib?q=info:gOFxIScZ7v0J:scholar.google.com/&output=citation&scisdr=ClH1lGQGEKTg_JYW9Qg:AFWwaeYAAAAAZTMQ7QiUNudHEnkhtCnQouNBuIc&scisig=AFWwaeYAAAAAZTMQ7Y_QcFHIknvgu8B-yAtAWyQ&scisf=4&ct=citation&cd=-1&hl=en
 
