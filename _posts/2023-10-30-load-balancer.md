@@ -1,19 +1,22 @@
 ---
-title: "Functional Load Balancer"
-date: 2023-09-06
+title: "A Functional Load Balancer with Scala, Http4s and Cats Effect"
+date: 2023-10-30
 header:
     image: "/images/blog cover.jpg"
 tags: [scala,http4s,cats,fp]
-excerpt: "Building an application load balancer with the help of Scala & cats, featuring efficiency and concurrency "
+excerpt: "How to build an application load balancer with Scala & Cats Effect, featuring efficiency and concurrency. Tests included!"
 ---
 
 _by [Anzori (Nika) Ghurtchumelia](https://github.com/ghurtchu)_
 
+Video version:
+
+{% include video id="V9t_inPRKMU" provider="youtube" %}
+
 ## 1. Introduction
 
-"What I cannot build, I do not understand"
-
-~ Richard Feynman
+> _"What I cannot build, I do not understand"_
+> Richard Feynman
 
 In this article we will make use of `cats.effect.Ref`, `cats.effect.IO` and `http4s` to build an application layer load balancer.
 
