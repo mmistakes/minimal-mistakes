@@ -1,5 +1,5 @@
 ---
-title: "From NIO to Fs2 for UDP"
+title: "A guide to UDP in Scala with Fs2"
 date: 2023-10-19
 header:
   image: "/images/blog cover.jpg"
