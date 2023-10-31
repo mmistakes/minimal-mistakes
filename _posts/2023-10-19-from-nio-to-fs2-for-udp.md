@@ -4,7 +4,7 @@ date: 2023-10-19
 header:
   image: "/images/blog cover.jpg"
 tags: []
-excerpt: "Understanding how UDP works in NIO then transitioning to a highier level API like Fs2."
+excerpt: "Understanding how UDP works in NIO then transitioning to a higher level API like Fs2."
 toc: true
 toc_label: "In this article"
 ---
@@ -15,7 +15,7 @@ The video version is here:
 
 <!-- {% include video id="CpUBZI1mr7w" provider="youtube" %} -->
 
-## 1. Introduction.
+## 1. Introduction
 UDP stands for User Datagram Protocol, it's a transport layer communication protocol built on top of IP that is used to transmit data across a network. It works by bundling up data in a UDP packet, adding header information, and sending these packets to the target destination. 
 The UDP header is fixed at 8 bytes and contains a source port, destination port, the checksum used to verify packet integrity by the receiving device, and the length of the packet which equates to the sum of the payload and header.
 
@@ -28,7 +28,7 @@ UDP is mainly used for time-sensitive communications where occasionally dropping
 
 In this article, we will first understand how to implement UDP with Java NIO and gradually transition to [Fs2's](https://blog.rockthejvm.com/fs2/) io library which provides binding for UDP networking. In the last section, we'll create a live audio streaming server with the knowledge we've gained.
 
-## 2. Setting Up.
+## 2. Setting Up
 Let's create a new Scala 3 project and add the following to your `build.sbt` file.
 
 ```scala
@@ -50,7 +50,7 @@ To follow along, we'll need `fs2`'s core and io libraries, this installs [cats](
 
 We'll also need the [FFplay](https://ffmpeg.org/ffplay.html) library which is installed as part of [FFmpeg](https://ffmpeg.org/download.html). We can confirm it's installed by running `ffplay -version`. 
 
-## 3. UDP with NIO.
+## 3. UDP with NIO
 In this section, we'll learn how to create a UDP echo server and client using Java NIO and get an in-depth explanation of how this API works.
 ## 3.1 The UDP Server
 To implement UDP in NIO we'll make use of the `DatagramChannel` class which supports concurrent reading and writing, however at most one thread may be reading and at most one thread may be writing at any given time. Create a `NioUdp.scala` file in the following path, `src/main/scala/com/rockthejvm/nioUdp/NioUdp.scala`, and add the following code:
@@ -88,11 +88,12 @@ object NioUdp extends IOApp {
       } else {
           println("[server] The channel cannot be opened!")
         }
-    }match
-          case Failure(ex) =>
-            println(s"[server] ${ex.getMessage}")
-          case Success(_) =>
-            println("[server] Everything works fine")
+    } match {
+      case Failure(ex) =>
+        println(s"[client] ${ex.getMessage}")
+      case Success(_) =>
+        println("[client] Everything works fine")
+    }
   }
   ...
 }
@@ -123,7 +124,7 @@ if (datagramChannel.isOpen()) {
 ```
 Here we define some socket options using the `setOption()` method which takes a `SocketOption` and it's associated value. 
 
-The `StandardSocketOptions.SO_RCVBUF` and `StandardSocketOptions.SO_SNDBUF` are options for the datagram socket receive buffer and socket send buffer respectively which we set to 4 megabytes each. 
+The `StandardSocketOptions.SO_RCVBUF` and `StandardSocketOptions.SO_SNDBUF` are options for the datagram socket receive buffer and socket send buffer respectively which we set to 4 kilobytes each. 
 
 The size could be increased for high-volume connections and in the case of the receive buffer, reduced to limit the possible backlog of incoming data. StandardSocketOptions provides multiple options for fine-grained control of a DatagramChannel:
 
@@ -208,11 +209,12 @@ object NioUdp extends IOApp {
       } else {
         println("[server] The channel cannot be opened!")
       }
-    } match
+    } match {
       case Failure(ex) =>
         println(s"[server] ${ex.getMessage}")
       case Success(_) =>
         println("[server] Everything works fine")
+    }
   }
 
     def run(args: List[String]): IO[ExitCode] = ???
@@ -262,11 +264,12 @@ object NioUdp extends IOApp {
       } else {
         println("[client] The channel cannot be opened!")
       }
-    } match
+    } match {
       case Failure(ex) =>
         println(s"[client] ${ex.getMessage}")
       case Success(_) =>
         println("[client] Everything works fine")
+    }
   }
   ...
 }
@@ -303,7 +306,7 @@ Here we wrap both functions in `IO` and then run them concurrently using the `pa
 ```
 Looking at the output everything works, notice that we didn't bind an address and port number to the `client`, this was done automatically by NIO, if we run this program again, a different address will be assigned.
 
-## 3.3 A Connected Client.
+## 3.3 A Connected Client
 NIO provides an alternative client implementation where the client first connects to the server before sending and receiving packets, there are some minor changes compared to the previous section, here's the code:
 
 ```scala
@@ -343,11 +346,12 @@ NIO provides an alternative client implementation where the client first connect
       } else {
         println("[client] The channel cannot be opened!")
       }
-    } match
+    } match {
       case Failure(ex) =>
         println(s"[client] ${ex.getMessage}")
       case Success(_) =>
         println("[client] Everything works fine")
+    }
   }
 ```
 After the `datagramChannel` is open, we connect to the server by calling `datagramChannel.connect()` and passing it an `InetSocketAddress`, this is the main difference. We also check if the connection is established by calling `datagramChannel.isConnected()`, then implement our code.
@@ -368,7 +372,7 @@ Let's recap on how we implemented UDP:
 
 Can we do the same with a higher-level API like Fs2?
 
-## 4. UDP with Fs2.
+## 4. UDP with Fs2
 Fs2 supports UDP through the `fs2.io.net package`, this provides abstractions on top of NIO but provides the resource safety guarantees known in fs2 streams.
 
 ## 4.1 The UDP Server
@@ -392,7 +396,7 @@ object Fs2Udp extends IOApp {
         )
       )
 
-    def run(args: List[String]): IO[ExitCode] = ???
+  def run(args: List[String]): IO[ExitCode] = ???
 }
 ```
 Just like Java NIO, we start by opening a `DatagramChannel`, or in this case a `DatagramSocket` using the `Network[IO].openDatagramSocket()` method and passing it `address` and `port` values. 
@@ -573,7 +577,7 @@ object Fs2Udp extends IOApp {
 }
 ```
 
-## 4.2 The UDP Client.
+## 4.2 The UDP Client
 The UDP client will look very similar to our server with a few minor changes. Let's define the client function:
 
 ```scala
@@ -704,7 +708,7 @@ Just like before we run both `server` and `client` concurrently but give the ser
 ```
 The `fs2.io.net` NIO abstractions use the `DatagramChannel`'s `send()` and `receive()` methods under the hood since it's possible to send and receive datagrams to and from different addresses.
 
-## 5. Multicasting.
+## 5. Multicasting
 Multicasting is a group communication protocol where a sender can send data to multiple receivers simultaneously. Here's how it works:
 1. A multicast group is created with a multicast IP address which should be between 224.0.0.1 and 239.255.255.255.
 2. A server streams to a multicast socket address while a client should connect to the associated multicast group to start listening for incoming datagrams.
@@ -740,13 +744,14 @@ import java.net.NetworkInterface
 import java.util.Enumeration
 import java.net.InetAddress
 
-object GetInterfaces extends IOApp:
+object GetInterfaces extends IOApp {
   def getInterfaces = {
-      val enumInterfaces: Enumeration[NetworkInterface] = NetworkInterface.getNetworkInterfaces()
-      while (enumInterfaces.hasMoreElements()) {
-        val ni: NetworkInterface = enumInterfaces.nextElement()
-        val enumIP: Enumeration[InetAddress] = ni.getInetAddresses()
-        println(s"""
+    val enumInterfaces: Enumeration[NetworkInterface] =
+      NetworkInterface.getNetworkInterfaces()
+    while (enumInterfaces.hasMoreElements()) {
+      val ni: NetworkInterface = enumInterfaces.nextElement()
+      val enumIP: Enumeration[InetAddress] = ni.getInetAddresses()
+      println(s"""
           Network Interface: ${ni.getDisplayName()}
           - Up and running: ${ni.isUp()}
           - Supports Multicasting: ${ni.supportsMulticast()}
@@ -754,15 +759,17 @@ object GetInterfaces extends IOApp:
           - Is virtual: ${ni.isVirtual()}
           - Ip Addresses:
         """)
-        while (enumIP.hasMoreElements()) {
-          val ip: InetAddress = enumIP.nextElement()
-          println(s"""
+      while (enumIP.hasMoreElements()) {
+        val ip: InetAddress = enumIP.nextElement()
+        println(s"""
                -$ip 
           """)
-        }
       }
     }
-  def run(args: List[String]): IO[ExitCode] = IO(getInterfaces).as(ExitCode.Success)
+  }
+  def run(args: List[String]): IO[ExitCode] =
+    IO(getInterfaces).as(ExitCode.Success)
+}
 ```
 
 Here we call `NetworkInterface.getNetworkInterfaces()` to get `Enumeration[NetworkInterface]`, an Enumeration only traverses the collection but doesn`t allow for modifications. We traverse this using a while loop and printing out details of the `NetworkInterface` and its associated IP addresses.
@@ -798,7 +805,7 @@ Here are my results:
 ```
 Notice `enp1s0` didn't appear since its state is `DOWN`.
 
-## 5.1. Multicast Server in NIO.
+## 5.1. Multicast Server in NIO
 For this example, we'll create a server that sends the current date and time as an endless stream to any client that connects to the multicast group. Create a file called `NioUdpMulticast.scala` in the following path, `src/main/scala/com/rockthejvm/nioUdp/NioUdpMulticast.scala` and add the following code:
 
 ```scala
@@ -831,7 +838,9 @@ object NioUdpMulticast extends IOApp {
         println("[multicast server] Udp server is successfully opened")
 
         val networkInterface: NetworkInterface =
-          NetworkInterface.getByName("wlxb4b024bc35a7")
+          NetworkInterface.getByName(
+            "wlxb4b024bc35a7"
+          ) // Pass the interface name that matches what you have.
 
         datagramChannel.setOption(
           StandardSocketOptions.IP_MULTICAST_IF,
@@ -866,23 +875,24 @@ object NioUdpMulticast extends IOApp {
       } else {
         println("[multicast server] The channel cannot be opened!")
       }
-    } match
+    } match {
       case Failure(ex) =>
         println(s"[multicast server] ${ex.getMessage}")
       case Success(_) =>
         println("[multicast server] Everything works fine")
+    }
   }
 
   def run(args: List[String]): IO[ExitCode] = ???
 }
 ```
-There go through and compare the changes to the previous NIO server implementation:
+Let's go through and compare the changes to the previous NIO server implementation:
 
 First, we changed the IP address from localhost to a Multicast address, `225.4.5.6`. This address will form the multicast group and is where the datagrams will be sent.
 
 We also added two new socketOptions, `StandardSocketOptions.IP_MULTICAST_IF` and `StandardSocketOptions.SO_REUSEADDR`. 
 
-The `IP_MULTICAST_IF` option is used to set the network interface that will be used for sending multicast datagrams, here I'll be using my wifi network adapter by calling `NetworkInterface.getByName("wlxb4b024bc35a7")` and passing the interface display name. 
+The `IP_MULTICAST_IF` option is used to set the network interface that will be used for sending multicast datagrams, here I'll be using my wifi network adapter by calling `NetworkInterface.getByName("wlxb4b024bc35a7")` and passing the interface display name. Make sure you use the name of the multicast interface that you have on your computer or laptop.
 
 The `SO_REUSEADDR` option is used to tell the system if the address can be reused, this enables multiple programs to bind to the same address and is essential for multicasting.
 
@@ -890,7 +900,7 @@ When calling the bind method, we only provide the `port` number, the `InetSocket
 
 Lastly, we have an infinite while loop that sends a date string every 10,000 milliseconds to all members of the multicast group by calling `datagramChannel.send()` and passing it the date, and the multicast socket address got by calling `new InetSocketAddress(InetAddress.getByName(groupIp), port)`.
 
-## 5.2. Multicast Client in NIO.
+## 5.2. Multicast Client in NIO
 Let's start by creating our client function and add the following code:
 
 ```scala
@@ -944,11 +954,12 @@ object NioUdpMulticast extends IOApp {
       } else {
         println("[multicast client] This is not multicast address")
       }
-    } match
+    } match {
       case Failure(ex) =>
         println(s"[multicast client] ${ex.getMessage}")
       case Success(_) =>
         println("[multicast client] Everything works fine")
+    }
   }
   ...
 }
@@ -1007,7 +1018,7 @@ Here's a recap of how UDP multicasting works:
 
 Let's see if we can translate this to Fs2.
 
-## 5.3. Multicast Server in Fs2.
+## 5.3. Multicast Server in Fs2
 Let's create a new file, `Fs2UdpMulticast.scala` in the following path, `src/main/scala/com/rockthejvm/fs2Udp/Fs2UdpMulticast.scala` and add the following server code:
 
 ```scala
@@ -1089,7 +1100,7 @@ Before we write our values, the stream is `metered` so that any client that join
 
 We end by handling any errors with `handleErrorWith()`.
 
-## 5.4. Multicast Client in Fs2.
+## 5.4. Multicast Client in Fs2
 
 Append the following client code still within the `Fs2UdpMulticasting` object:
 
@@ -1174,7 +1185,7 @@ Tue Oct 24 15:22:20 EAT 2023
 ```
 The output is similar to our NIO example.
 
-## 6. A Practical Example.
+## 6. A Practical Example
 In this section, we'll cover a common use case, streaming live audio, for this build we'll be streaming live audio from a pair of earphones or headset that should have a microphone inbuilt. To do this we will make use of the `javax.sound.sampled` library. 
 
 Let's create a new file, `CaptureSound.scala` in the following path, `src/main/scala/com/rockthejvm/sound/CaptureSound.scala`, and add the following code.
@@ -1236,11 +1247,11 @@ object CaptureSound extends IOApp{
       line.start()
       println("Start capturing...")
       while (line.isOpen()) {
-        val numBytesRead = line.read(data, 0, data.length)
+        val numBytesRead: Int = line.read(data, 0, data.length)
         out.write(data, 0, numBytesRead)
       }
     } else {
-      println("line not supported")   
+      println("line not supported")
     }
   }
   ...
@@ -1316,6 +1327,97 @@ Let's define our run method:
   def run(args: List[String]): IO[ExitCode] =
     server.compile.drain.as(ExitCode.Success)
 ```
+Here's the full code:
+```scala
+package com.rockthejvm.sound
+
+import cats.effect.{IO, IOApp, ExitCode}
+import javax.sound.sampled.AudioFormat
+import java.io.OutputStream
+import javax.sound.sampled.DataLine
+import javax.sound.sampled.DataLine.Info
+import javax.sound.sampled.TargetDataLine
+import javax.sound.sampled.AudioSystem
+import com.comcast.ip4s.*
+import fs2.{io, Stream}
+import fs2.io.net.{Network, SocketOption, Datagram}
+import java.net.StandardSocketOptions
+import java.net.NetworkInterface
+import java.net.StandardProtocolFamily
+
+object CaptureSound extends IOApp {
+  private def getAudioFormat: AudioFormat = {
+    val sampleRate = 44100.0f
+    val sampleSizeInBits = 16
+    val channels = 2
+    val signed = true
+    val bigEdian = true
+
+    new AudioFormat(
+      sampleRate,
+      sampleSizeInBits,
+      channels,
+      signed,
+      bigEdian
+    )
+  }
+
+  private def capture(out: OutputStream): Unit = {
+    val info: Info = new DataLine.Info(classOf[TargetDataLine], getAudioFormat)
+    val line: TargetDataLine =
+      AudioSystem.getLine(info).asInstanceOf[TargetDataLine]
+    val data: Array[Byte] = new Array[Byte](1024)
+
+    if (AudioSystem.isLineSupported(info)) {
+      line.open()
+      line.start()
+      println("Start capturing...")
+      while (line.isOpen()) {
+        val numBytesRead: Int = line.read(data, 0, data.length)
+        out.write(data, 0, numBytesRead)
+      }
+    } else {
+      println("line not supported")
+    }
+  }
+
+  def server = {
+    val address = SocketAddress(ip"225.4.5.6", port"5555")
+    Stream
+      .resource(
+        Network[IO].openDatagramSocket(
+          port = Some(port"5555"),
+          options = List(
+            SocketOption(
+              StandardSocketOptions.IP_MULTICAST_IF,
+              NetworkInterface.getByName("wlxb4b024bc35a7")
+            ),
+            SocketOption(
+              StandardSocketOptions.SO_REUSEADDR,
+              true
+            )
+          ),
+          protocolFamily = Some(StandardProtocolFamily.INET)
+        )
+      )
+      .flatMap { socket =>
+        io.readOutputStream(1024)(out => IO(capture(out)))
+          .chunks
+          .map(data => Datagram(address, data))
+          .through(socket.writes)
+          .drain
+      }
+      .handleErrorWith { error =>
+        Stream.eval(
+          IO.println(s"[multicast client] Error: ${error.getMessage}")
+        )
+      }
+  }
+
+  def run(args: List[String]): IO[ExitCode] =
+    server.compile.drain.as(ExitCode.Success)
+}
+```
 
 Now that our server is defined, we need a client that can play audio from a UDP stream, to do this we'll be using the FFplay, a simple and portable media player that comes bundled with FFmpeg. Let's ensure FFplay is installed in our system by running `ffplay -version` in our terminal.
 
@@ -1374,7 +1476,7 @@ Here is an image of me running the server at the bottom, and two clients at the 
 
 ![udp screenshot](../images/fs2udp/udp.png)
 
-## 7. Conclusion.
+## 7. Conclusion
 In this article, we've learned how to implement a UDP server and client in NIO and then used that knowledge to implement the same application in Fs2. 
 
 We covered what multicasting is, how it works, and we developed a UDP server that streams live audio from a pair of earphones or headsets using its built-in microphone. 
