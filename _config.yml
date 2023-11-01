@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "NYD"
-  avatar           : "/assets/images/NYD_profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "../assets/images/NYD_profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "김태환입니다."
   location         : "South Korea, Seoul"
   email            : # "taehwan08@naver.com"

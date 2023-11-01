@@ -9,19 +9,13 @@ main:
 
 docs:
   children:
-    - title: "Category"
-      url: /categories/
-    - title: "태그"
-      children:
-        - title: "java"
-          url: /tags/java
-        - title: "blog"
-          url: /tags/blog
-        - title: "coding"
-          url: /tags/coding
+    - title: "java"
+      url: /tags/java
+    - title: "blog"
+      url: /tags/blog
+    - title: "coding"
+      url: /tags/coding
 
 counts:
-  - title: "카테고리"
-    use: true
   - title: "태그"
     use: true
