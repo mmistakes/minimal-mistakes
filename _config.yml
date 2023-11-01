@@ -25,7 +25,7 @@ url                      : "https://Dangtae.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/dangtae.png"
+logo                     : # "/assets/images/logo.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Dangtae"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/dangtae.png"
   bio              : "who wants to be a data engineer"
   location         : "South Korea"
   email            : 
@@ -119,6 +119,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Dangtae"
+    - label: "YouTube"
+      icon: "fab fa-youtube"
+      url: "https://youtube.com/@youngtae0818?si=j6Ftii7vDUC1xcp_"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
@@ -129,6 +132,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Dangtae"
+    - label: "YouTube"
+      icon: "fab fa-youtube"
+      url: "https://youtube.com/@youngtae0818?si=j6Ftii7vDUC1xcp_"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
       # url:
