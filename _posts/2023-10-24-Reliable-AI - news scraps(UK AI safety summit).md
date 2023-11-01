@@ -1,5 +1,5 @@
 ---
-title: "AI Policy - World's first global AI safety summit"
+title: "World's first global AI safety summit"
 categories:
   - AI Safety
 tags:
