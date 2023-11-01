@@ -1,7 +1,7 @@
 ---
-title:  "SHACL-based Object-ontological Mapping"
+title:  "Planning Aircraft Revisions Based on Work Session Records"
 categories: [Open Mic Session, Open Mic]
-excerpt: "Using SHACL integrity constraints to map an ontology to an application object model with closed world semantics."
+excerpt: "During aircraft maintenance the mechanics investigate the state of the aircraft and replace worn or damaged parts and equipment in order to reduce the risk of failure during operation. Aircraft maintenance in civil aviation is organized in maintenance blocks or revisions which are packages of maintenance tasks."
 ---
 
 On Friday 27th October speaker [Bogdan Kostov](https://kbss.felk.cvut.cz/web/team#bogdan-kostov) held an Open Mic session with the topic \"Planning Aircraft Revisions Based on Work Session Records.\". Video and presentation included.
@@ -14,7 +14,8 @@ In order to operate aircraft safely maintenance is required [1]. During aircraft
 
 The discussion about evaluation is also par of the record.
 
-The presentation slides are available [at this link](replace link).
+The presentation slides are available [at this link](https://drive.google.com/file/d/1q_vyhzq5nNypsrphdtClED_9TRFb7Oe4/view?usp=sharing).
 
 Further reading:
-* [Aircraft Maintenance](https://en.wikipedia.org/wiki/Aircraft_maintenance), including refrences to international standards
+
+[1] [Aircraft Maintenance](https://en.wikipedia.org/wiki/Aircraft_maintenance), including refrences to international standards
