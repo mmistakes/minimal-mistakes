@@ -428,3 +428,11 @@ Our Sum-of-Parts models generate groups that are semantically meaningful to cosm
 For more details in thoeretical proofs and quantitative experiments, see our [paper](https://arxiv.org/abs/2310.16316) and [code](https://github.com/DebugML/sop).
 
 ### Citation
+@misc{you2023sumofparts,
+    title={Sum-of-Parts Models: Faithful Attributions for Groups of Features},
+    author={Weiqiu You and Helen Qu and Marco Gatti and Bhuvnesh Jain and Eric Wong},
+    year={2023},
+    eprint={2310.16316},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
