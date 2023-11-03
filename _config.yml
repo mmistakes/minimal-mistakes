@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "짱먹어라"
+title                    : "**뭐가 있을지도 모르는 사이트**"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "석현 짱"
@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "석현 짱"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "**짱** 먹어라"
   location         : "Somewhere"
   email            :
   links:
