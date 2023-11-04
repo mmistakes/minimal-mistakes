@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Herbstferien",
-    "title": "Herbstferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=dmgydmhzZG8yNWg5ZXVrNmNkZXRqcHBnZnMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2023-10-23",
-      "date_time": null
-    },
-    "end": {
-      "date": "2023-11-04",
-      "date_time": null
-    },
-    "created": "2023-09-13T04:01:20.000Z",
-    "updated": "2023-09-13T04:01:20.761Z"
-  },
-  {
-    "image_path": null,
     "alt": "1. Fachkonferenz Sport",
     "title": "1. Fachkonferenz Sport",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2023-10-12T18:06:55.000Z",
     "updated": "2023-10-12T18:06:55.619Z"
+  },
+  {
+    "image_path": null,
+    "alt": "2. Schulkonferenz",
+    "title": "2. Schulkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NXExcTR0Y2Nodm5vZ3R0dnZmaWZmYWIyNm8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2023-12-07T15:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2023-12-07T17:00:00+01:00"
+    },
+    "created": "2023-10-12T18:06:03.000Z",
+    "updated": "2023-10-12T18:06:03.074Z"
   }
 ]
