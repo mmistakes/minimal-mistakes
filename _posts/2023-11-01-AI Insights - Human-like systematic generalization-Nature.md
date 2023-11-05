@@ -5,16 +5,19 @@ categories:
 tags:
   - AI
 #  - standard
+#  - safety
   - Reliable AI
 #  - AI policy
   - 인공지능
+#  - 안전
+#  - 제품
 #  - 표준
 #  - 표준화
 
 last_modified_at: 2023-11-01T117:41:50-17:50
 ---
 
-### 조선비즈 [Link]](https://biz.chosun.com/science-chosun/technology/2023/10/26/6K2FEQZ225G3PPUWVKALELFZW4/)
+### 조선비즈 [Link](https://biz.chosun.com/science-chosun/technology/2023/10/26/6K2FEQZ225G3PPUWVKALELFZW4/)
 
 인간처럼 생각하는 새로운 AI 모델 나왔다... 단어 조합하며 이해할 수 있어
 국제 연구진, 학술지 ‘네이처’에 25일 연구 발표
@@ -22,7 +25,7 @@ last_modified_at: 2023-11-01T117:41:50-17:50
 홍아름 기자
 입력 2023.10.26 00:01
 
-
+------------
 
 ### 매일경제 [Link](https://www.mk.co.kr/news/it/10859509)
 
@@ -33,13 +36,13 @@ TOP
 고재원 기자 ko.jaewon@mk.co.kr
 입력 :  2023-10-26 17:24:34
 
-
+---------
 
 ### Human-like systematic generalization through a meta-learning neural network
-[nature지 논문 Link](https://www.nature.com/articles/s41586-023-06668-3)
-Published: 25 October 2023
-Brenden M. Lake & Marco Baroni 
-Nature (2023)
+[Nature지 논문 Link](https://www.nature.com/articles/s41586-023-06668-3)
+<br> 
+Published: 25 October 2023 <br>
+Brenden M. Lake & Marco Baroni Nature (2023)
 
 
 #### Abstract
