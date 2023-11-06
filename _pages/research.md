@@ -6,7 +6,7 @@ permalink: /research/
 
 **Whole-cell modeling of _E.coli_**       
 **Collaborators: [Prof. Markus Covert](https://www.covert.stanford.edu/) and lab**     
-**Check out the model on our GitHub repo: [github.com/CovertLab/wcEcoli](https://github.com/CovertLab/wcEcoli]**      
+**Check out the model on our GitHub repo: [github.com/CovertLab/wcEcoli](https://github.com/CovertLab/wcEcoli)**      
          
 
 **A first-pass statistical dashboard for categorizing diverse particle movement patterns**  
