@@ -113,7 +113,7 @@ package com.rockthejvm.loadbalancer.domain
 
 import scala.util.Try
 
-final case class Urls(values: Vector[Url]) extends AnyVal:
+final case class Urls(values: Vector[Url]) extends AnyVal {
 
   def currentOpt: Option[Url] =
     Try(currentUnsafe).toOption
@@ -127,10 +127,11 @@ final case class Urls(values: Vector[Url]) extends AnyVal:
   def add(url: Url): Urls =
     if (values contains url) this
     else copy(values :+ url)
+}
 
-object Urls:
-
+object Urls {
   def empty: Urls = Urls(Vector.empty)
+}
 ```
 
 The `add` and `remove` methods allow you to dynamically manage the list of backend servers. This is valuable because in a real-world scenario, backend servers may come online or go offline, and the load balancer needs to adapt accordingly. These methods ensure that you don't deal with incorrect set of URLs, which could lead to uneven load distribution.
@@ -268,16 +269,17 @@ final case class Config(
     port: Int,
     host: String,
     backends: Urls,
-    healthCheckInterval: HealthCheckInterval,
+    healthCheckInterval: HealthCheckInterval
 ) derives ConfigReader
 
-object Config:
+object Config {
   given urlsReader: ConfigReader[Urls] = ConfigReader[Vector[Url]].map(Urls.apply)
 
   given urlReader: ConfigReader[Url] = ConfigReader[String].map(Url.apply)
 
   given healthCheckReader: ConfigReader[HealthCheckInterval] =
   ConfigReader[Long].map(HealthCheckInterval.apply)
+}
 ```
 
 Let's explain what these `givens` do in the companion object of `Config`:
@@ -296,13 +298,14 @@ It may happen that the `application.conf` is configured incorrectly, and we shou
 ```scala
 package com.rockthejvm.loadbalancer.errors
 
-object config:
-
+object config {
   type InvalidConfig = InvalidConfig.type
 
-  case object InvalidConfig extends Throwable:
+  case object InvalidConfig extends Throwable {
     override def getMessage: String =
       "Invalid port or host, please fix Config"
+  }
+}
 ```
 
 
@@ -322,9 +325,10 @@ package com.rockthejvm.loadbalancer.domain
 
 import cats.effect.{IO, Ref}
 
-enum UrlsRef(val urls: Ref[IO, Urls]):
+enum UrlsRef(val urls: Ref[IO, Urls]) {
   case Backends(override val urls: Ref[IO, Urls])     extends UrlsRef(urls)
   case HealthChecks(override val urls: Ref[IO, Urls]) extends UrlsRef(urls)
+}
 ```
 
 In this code, the `UrlsRef` enumeration is used to represent different types of references (possibly mutable state) related to URL management in a load balancer or a similar application. The use of `Ref[IO, Urls]` suggests that these references are handled within the Cats Effect's IO monad, which is used for handling effectful operations in a purely functional manner.
@@ -362,12 +366,13 @@ package com.rockthejvm.loadbalancer.services
 import cats.syntax.either._
 import org.http4s.Uri
 
-trait ParseUri:
+trait ParseUri {
   def apply(uri: String): Either[Throwable, Uri]
+}
 
-object ParseUri:
+object ParseUri {
   
-  object Impl extends ParseUri:
+  object Impl extends ParseUri {
     /**
      * Either returns proper Uri or InvalidUri
      */
@@ -375,17 +380,20 @@ object ParseUri:
       Uri
         .fromString(uri)
         .leftMap(_ => ???)
+  }
+}
 ```
 
 There's a room for improvement here, instead of `Throwable` we could create some sort of error representation under `parsers` object in the `errores` package and use that here. We can name it `InvalidConfig` which will look like this:
 ```scala
 package com.rockthejvm.loadbalancer.errors
 
-object parsing:
-
-  final case class InvalidUri(uri: String) extends Throwable:
+object parsing {
+  final case class InvalidUri(uri: String) extends Throwable {
     override def getMessage: String =
       s"Could not construct proper URI from $uri"
+  }
+}
 ```
 
 So, now let's refactor our initial `ParseUri`:
@@ -396,12 +404,11 @@ import com.rockthejvm.loadbalancer.errors.parsing.InvalidUri
 import cats.syntax.either._
 import org.http4s.Uri
 
-trait ParseUri:
+trait ParseUri {
   def apply(uri: String): Either[InvalidUri, Uri]
 
-  object ParseUri:
-    
-    object Impl extends ParseUri:
+  object ParseUri {
+    object Impl extends ParseUri {
       /**
        * Either returns proper Uri or InvalidUri
        */
@@ -409,6 +416,9 @@ trait ParseUri:
         Uri
           .fromString(uri)
           .leftMap(_ => InvalidUri(uri))
+    }
+  }
+}
 ```
 
 And the tests for `ParseUri`:
@@ -420,21 +430,23 @@ import munit.FunSuite
 import org.http4s.Uri
 import cats.syntax.either._
 
-class ParseUriTest extends FunSuite:
-
+class ParseUriTest extends FunSuite {
   val parseUri = ParseUri.Impl
 
-  test("try parsing valid URI and return Right(Uri(...))"):
+  test("try parsing valid URI and return Right(Uri(...))") {
     val uri      = "0.0.0.0/8080"
     val obtained = parseUri(uri)
 
     assertEquals(obtained, Uri.unsafeFromString(uri).asRight)
+  }
 
-  test("try parsing invalid URI and return Left(InvalidUri(...))"):
+  test("try parsing invalid URI and return Left(InvalidUri(...))") {
     val uri      = "definitely invalid uri XD"
     val obtained = parseUri(uri)
 
     assertEquals(obtained, InvalidUri(uri).asLeft)
+  }
+}
 ```
 
 And run them via SBT:
@@ -467,17 +479,19 @@ package com.rockthejvm.loadbalancer.services
 import cats.effect.IO
 import org.http4s.Request
 
-trait AddRequestPathToBackendUrl:
+trait AddRequestPathToBackendUrl {
   def apply(backendUrl: String, request: Request[IO]): String
+}
 
-object AddRequestPathToBackendUrl:
-
-  object Impl extends AddRequestPathToBackendUrl:
+object AddRequestPathToBackendUrl {
+  object Impl extends AddRequestPathToBackendUrl {
     override def apply(backendUrl: String, request: Request[IO]): String =
       val requestPath = request.uri.path.renderString
         .dropWhile(_ != '/')
 
       backendUrl concat requestPath
+  }
+}
 ```
 
 Let's explain what's going on in the implementation:
@@ -492,22 +506,25 @@ package com.rockthejvm.loadbalancer.services
 import munit.FunSuite
 import org.http4s.{EntityBody, *}
 
-class AddRequestPathToBackendUrlTest extends FunSuite:
+class AddRequestPathToBackendUrlTest extends FunSuite {
 
   val impl          = AddRequestPathToBackendUrl.Impl
   val backendUrl = "http://localhost:8082"
 
-  test("add '/items/1 to backendUrl"):
+  test("add '/items/1 to backendUrl") {
     val obtained = impl(backendUrl = backendUrl, Request(uri = Uri.unsafeFromString("localhost:8080/items/1")))
     val expected = "http://localhost:8082/items/1"
 
     assertEquals(obtained, expected)
-
-  test("since request doesn't have path just return backendUrl"):
+  }
+  
+  test("since request doesn't have path just return backendUrl") {
     val obtained = impl(backendUrl = backendUrl, Request(uri = Uri.unsafeFromString("localhost:8080")))
     val expected = backendUrl
 
     assertEquals(obtained, expected)
+  }
+}
 ```
 
 Let's run all the tests once again:
@@ -548,16 +565,20 @@ import org.http4s.{Request, Uri}
 
 import scala.concurrent.duration.DurationInt
 
-trait HttpClient:
+trait HttpClient {
   def sendAndReceive(uri: Uri, requestOpt: Option[Request[IO]]): IO[String]
 
-  object HttpClient:
+  object HttpClient {
 
-    def of(client: Client[IO]): HttpClient = new HttpClient:
+    def of(client: Client[IO]): HttpClient = new HttpClient {
       override def sendAndReceive(uri: Uri, requestOpt: Option[Request[IO]]): IO[String] =
-        requestOpt match
+        requestOpt match {
           case Some(request) => client.expect[String](request.withUri(uri))
           case None          => client.expect[String](uri)
+        }
+    }
+  }
+}
 ```
 
 It's worthwile to mention, that:
@@ -571,8 +592,9 @@ But before we do so we need to define the data type for understanding whether th
 ```scala
 package com.rockthejvm.loadbalancer.http
 
-enum ServerHealthStatus:
+enum ServerHealthStatus {
   case Alive, Dead
+}
 ```
 
 Now, back to `SendAndExpect[A]`,
@@ -596,19 +618,20 @@ import cats.syntax.applicative._
 
 import scala.concurrent.duration.DurationInt
 
-trait SendAndExpect[A]:
+trait SendAndExpect[A] {
   def apply(uri: Uri): IO[A]
+}
 
-object SendAndExpect:
+object SendAndExpect {
 
   implicit def logger: Logger[IO] = Slf4jLogger.getLogger[IO]
 
     def toBackend(httpClient: HttpClient, req: Request[IO]): SendAndExpect[String] =
-      new SendAndExpect[String]:
+      new SendAndExpect[String] {
         override def apply(uri: Uri): IO[String] =
           info"[LOAD-BALANCER] sending request to $uri" *> httpClient
             .sendAndReceive(uri, req.some)
-            .handleErrorWith:
+            .handleErrorWith {
                 case UnexpectedStatus(org.http4s.Status.NotFound, _, _) =>
                 s"resource was not found"
                   .pure[IO]
@@ -617,9 +640,11 @@ object SendAndExpect:
                   s"server with uri: $uri is dead"
                     .pure[IO]
                     .flatTap(msg => warn"$msg")
+            }
+      }
 
     def toHealthCheck(httpClient: HttpClient): SendAndExpect[ServerHealthStatus] =
-      new SendAndExpect[ServerHealthStatus]:
+      new SendAndExpect[ServerHealthStatus] {
         override def apply(uri: Uri): IO[ServerHealthStatus] =
           info"[HEALTH-CHECK] checking $uri health" *>
             httpClient
@@ -628,6 +653,8 @@ object SendAndExpect:
               .flatTap(_ => info"$uri is alive")
               .timeout(5.seconds)
               .handleErrorWith(_ => warn"$uri is dead" *> ServerHealthStatus.Dead.pure[IO])
+      }
+}
 ```
 
 
@@ -655,12 +682,13 @@ Moreover, it is apparent that testing this service will require us to use some s
   val RuntimeException: HttpClient        = (_, _) => IO.raiseError(new RuntimeException("Server is dead"))
   val TestTimeoutFailure: HttpClient      = (_, _) => IO.sleep(6.seconds).as("")
   val BackendResourceNotFound: HttpClient = (_, _) =>
-    IO.raiseError:
+    IO.raiseError {
       UnexpectedStatus(
         org.http4s.Status.NotFound,
         org.http4s.Method.GET,
         Uri.unsafeFromString("localhost:8081"),
       )
+    }
 ```
 
 Now we're ready to write unit tests for `SendAndExpect[A]` with the help of `CatsEffectSuite` - suite which helps you to run IO-based tests:
@@ -672,41 +700,47 @@ import cats.effect.IO
 import org.http4s.{Request, Uri}
 import munit.{CatsEffectSuite, FunSuite}
 
-class SendAndExpectTest extends CatsEffectSuite:
+class SendAndExpectTest extends CatsEffectSuite {
 
   val localhost8080 = "localhost:8080"
   val backend       = Uri.fromString(localhost8080).toOption.get
   val emptyRequest  = Request[IO]()
 
-  test("toBackend [Success]"):
+  test("toBackend [Success]") {
     val sendAndExpect = SendAndExpect.toBackend(HttpClient.Hello, emptyRequest)
     val obtained      = sendAndExpect(backend)
 
     assertIO(obtained, "Hello")
+  }
 
-  test("toBackend [Failure]"):
+  test("toBackend [Failure]") {
     val sendAndExpect = SendAndExpect.toBackend(HttpClient.RuntimeException, emptyRequest)
     val obtained      = sendAndExpect(backend)
 
     assertIO(obtained, s"server with uri: $localhost8080 is dead")
+  }
 
-  test("toHealthCheck [Alive]"):
+  test("toHealthCheck [Alive]") {
     val sendAndExpect = SendAndExpect.toHealthCheck(HttpClient.Hello)
     val obtained      = sendAndExpect(backend)
 
     assertIO(obtained, ServerHealthStatus.Alive)
+  }
 
-  test("toHealthCheck [Dead due to timeout]"):
+  test("toHealthCheck [Dead due to timeout]") {
     val sendAndExpect = SendAndExpect.toHealthCheck(HttpClient.TestTimeoutFailure)
     val obtained      = sendAndExpect(backend)
 
     assertIO(obtained, ServerHealthStatus.Dead)
+  }
 
-  test("toHealthCheck [Dead due to exception]"):
+  test("toHealthCheck [Dead due to exception]") {
     val sendAndExpect = SendAndExpect.toHealthCheck(HttpClient.RuntimeException)
     val obtained      = sendAndExpect(backend)
 
     assertIO(obtained, ServerHealthStatus.Dead)
+  }
+}
 ```
 
 Cool!
@@ -726,10 +760,11 @@ import cats.syntax.option.*
 
 import scala.util.Try
 
-trait RoundRobin[F[_]]:
+trait RoundRobin[F[_]] {
   def apply(ref: UrlsRef): IO[F[Url]]
+}
   
-object RoundRobin:
+object RoundRobin {
 
   type BackendsRoundRobin     = RoundRobin[Option]
   type HealthChecksRoundRobin = RoundRobin[Id]
@@ -752,6 +787,7 @@ object RoundRobin:
 
   val TestId: RoundRobin[Id]            = _ => IO.pure(Url("localhost:8081"))
   val LocalHost8081: RoundRobin[Option] = _ => IO.pure(Some(Url("localhost:8081")))
+}
 ```
 
 What's happening up there?
@@ -784,18 +820,22 @@ import com.rockthejvm.loadbalancer.domain.Urls
 import com.rockthejvm.loadbalancer.http.ServerHealthStatus
 import cats.effect.IO
 
-trait UpdateBackendsAndGet:
+trait UpdateBackendsAndGet {
   def apply(backends: Backends, url: Url, status: ServerHealthStatus): IO[Urls]
+}
 
-object UpdateBackendsAndGet:
+object UpdateBackendsAndGet {
 
-  object Impl extends UpdateBackendsAndGet:
+  object Impl extends UpdateBackendsAndGet {
     override def apply(backends: Backends, url: Url, status: ServerHealthStatus): IO[Urls] = 
       backends.urls.updateAndGet { urls =>
-        status match
+        status match {
           case ServerHealthStatus.Alive => urls.add(url)
           case ServerHealthStatus.Dead  => urls.remove(url)
+        }
       }
+  }
+}
 ```
 
 - `UpdateBackendsAndGet` trait - defines a single abstract method `apply(backends: Backends, url: Url, status: ServerHealthStatus): IO[Urls]`. This trait represents an operation that updates the list of backends (`Backends`) based on the provided `Url` and its `ServerHealthStatus`. It returns the updated list of URLs (`Urls`) wrapped in an `IO` effect.
@@ -816,13 +856,13 @@ import com.rockthejvm.loadbalancer.http.ServerHealthStatus
 import cats.effect.IO
 import munit.CatsEffectSuite
 
-class UpdateBackendsAndGetTest extends CatsEffectSuite:
+class UpdateBackendsAndGetTest extends CatsEffectSuite {
 
   val updateBackendsAndGet = UpdateBackendsAndGet.Impl
   val localhost8083            = "localhost:8083"
   val initialUrls = Vector("localhost:8081", "localhost:8082").map(Url.apply)
 
-  test("Add the passed url to the Backends when the server status is Alive"):
+  test("Add the passed url to the Backends when the server status is Alive") {
     val urls = Urls(initialUrls)
     val obtained = for
       ref     <- IO.ref(urls)
@@ -830,8 +870,9 @@ class UpdateBackendsAndGetTest extends CatsEffectSuite:
     yield updated 
 
     assertIO(obtained, Urls(initialUrls :+ Url(localhost8083)))
+  }
 
-  test("Add the passed url to the Backends when the server status is Dead"):
+  test("Add the passed url to the Backends when the server status is Dead") {
     val urls   = Urls(initialUrls :+ Url(localhost8083))
     val obtained = for
       ref     <- IO.ref(urls)
@@ -839,6 +880,8 @@ class UpdateBackendsAndGetTest extends CatsEffectSuite:
     yield updated
 
     assertIO(obtained, Urls(initialUrls))
+  }
+}
 ```
 
 With these services available we have everything we need to implement two main bosses:
@@ -866,7 +909,7 @@ import cats.effect.IO
 
 import scala.concurrent.duration.DurationLong
 
-object HealthCheckBackends:
+object HealthCheckBackends {
 
   def periodically(
     healthChecks: HealthChecks,
@@ -894,12 +937,13 @@ object HealthCheckBackends:
     healthChecksRoundRobin: HealthChecksRoundRobin,
     sendAndExpectStatus: SendAndExpect[ServerHealthStatus],
   ): IO[Urls] =
-    for
+    for {
       currentUrl <- healthChecksRoundRobin(healthChecks)
       uri        <- IO.fromEither(parseUri(currentUrl.value))
       status     <- sendAndExpectStatus(uri)
       updated    <- updateBackendsAndGet(backends, currentUrl, status)
-    yield updated
+    } yield updated
+}
 ```
 
 The code above defines an object `HealthCheckBackends`, which periodically checks the health of backends (URLs) and updating `Backends` based on the results of health checks.
@@ -926,9 +970,9 @@ import com.rockthejvm.loadbalancer.http.HttpClient
 import munit.{CatsEffectSuite, FunSuite}
 import cats.effect.IO
 
-class HealthCheckBackendsTest extends CatsEffectSuite:
+class HealthCheckBackendsTest extends CatsEffectSuite {
 
-  test("add backend url to the Backends as soon as health check returns success"):
+  test("add backend url to the Backends as soon as health check returns success") {
     val healthChecks = Urls(Vector("localhost:8081", "localhost:8082").map(Url.apply))
     val obtained = for
       backends     <- IO.ref(Urls(Vector(Url("localhost:8082"))))
@@ -944,8 +988,9 @@ class HealthCheckBackendsTest extends CatsEffectSuite:
     yield result
 
     assertIO(obtained, Urls(Vector("localhost:8082", "localhost:8081").map(Url.apply)))
+  }
 
-  test("remove backend url from the Backends as soon as health check returns failure"):
+  test("remove backend url from the Backends as soon as health check returns failure") {
     val urls = Urls(Vector("localhost:8081", "localhost:8082").map(Url.apply))
     val obtained = for
       backends     <- IO.ref(urls)
@@ -961,6 +1006,8 @@ class HealthCheckBackendsTest extends CatsEffectSuite:
     yield result
 
     assertIO(obtained, Urls(Vector("localhost:8082").map(Url.apply)))
+  }
+}
 ```
 
 Awesome, we've come the long way and we can move to `LoadBalancer` now, finally!
@@ -984,29 +1031,30 @@ import org.http4s.dsl.Http4sDsl
 import org.http4s.{HttpRoutes, Request}
 import cats.effect.IO
 
-object LoadBalancer:
-
+object LoadBalancer {
   def from(
     backends: Backends,
     sendAndExpectResponse: Request[IO] => SendAndExpect[String],
     parseUri: ParseUri,
     addRequestPathToBackendUrl: AddRequestPathToBackendUrl,
     backendsRoundRobin: BackendsRoundRobin,
-  ): HttpRoutes[IO] =
+  ): HttpRoutes[IO] = {
     val dsl = new Http4sDsl[IO] {}
     import dsl._
     HttpRoutes.of[IO] { request =>
       backendsRoundRobin(backends).flatMap {
         _.fold(Ok("All backends are inactive")) { backendUrl =>
           val url = addRequestPathToBackendUrl(backendUrl.value, request)
-          for
+          for {
             uri      <- IO.fromEither(parseUri(url))
             response <- sendAndExpectResponse(request)(uri)
             result   <- Ok(response)
-          yield result
+          } yield result
         }
       }
     }
+  }
+}
 ```
 
 The code above looks similar to `HealthCheckBackends` but it's a bit different and also returns `HttpRoutes[IO]`.
@@ -1035,54 +1083,59 @@ import munit.{CatsEffectSuite, FunSuite}
 import cats.effect.IO
 import cats.effect.unsafe.implicits.global
 
-class LoadBalancerTest extends CatsEffectSuite:
+class LoadBalancerTest extends CatsEffectSuite {
 
-  test("All backends are inactive because Urls is empty"):
-    val obtained = (for
-      backends <- IO.ref(Urls.empty)
-      loadBalancer = LoadBalancer.from(
-        Backends(backends),
-        _ => SendAndExpect.BackendSuccessTest,
-        ParseUri.Impl,
-        AddRequestPathToBackendUrl.Impl,
-        RoundRobin.forBackends
-      )
-      result <- loadBalancer.orNotFound.run(Request[IO]())
-    yield result.body.compile.toVector.map(bytes => String(bytes.toArray)))
-      .flatten
+  test("All backends are inactive because Urls is empty") {
+    val obtained = (
+      for {
+          backends <- IO.ref(Urls.empty)
+          loadBalancer = LoadBalancer.from(
+            Backends(backends),
+            _ => SendAndExpect.BackendSuccessTest,
+            ParseUri.Impl,
+            AddRequestPathToBackendUrl.Impl,
+            RoundRobin.forBackends
+          )
+          result <- loadBalancer.orNotFound.run(Request[IO]())
+        } yield result.body.compile.toVector.map(bytes => String(bytes.toArray))
+      ).flatten
 
     assertIO(obtained, "All backends are inactive")
+  }
 
-  test("Success case"):
-    val obtained = (for
-      backends <- IO.ref(Urls(Vector("localhost:8081", "localhost:8082").map(Url.apply)))
-      loadBalancer = LoadBalancer.from(
-        Backends(backends),
-        _ => SendAndExpect.BackendSuccessTest,
-        ParseUri.Impl,
-        AddRequestPathToBackendUrl.Impl,
-        RoundRobin.LocalHost8081
-      )
-      result <- loadBalancer.orNotFound.run(Request[IO](uri = Uri.unsafeFromString("localhost:8080/items/1")))
-    yield result.body.compile.toVector.map(bytes => String(bytes.toArray)))
-      .flatten
+  test("Success case") {
+    val obtained = (
+      for {
+          backends <- IO.ref(Urls(Vector("localhost:8081", "localhost:8082").map(Url.apply)))
+          loadBalancer = LoadBalancer.from(
+            Backends(backends),
+            _ => SendAndExpect.BackendSuccessTest,
+            ParseUri.Impl,
+            AddRequestPathToBackendUrl.Impl,
+            RoundRobin.LocalHost8081
+          )
+          result <- loadBalancer.orNotFound.run(Request[IO](uri = Uri.unsafeFromString("localhost:8080/items/1")))
+        } yield result.body.compile.toVector.map(bytes => String(bytes.toArray))
+      ).flatten
 
     assertIO(obtained, "Success")
+  }
 
-  test("Resource not found (404) case"):
-    val obtained = (for
-      backends <- IO.ref(Urls(Vector("localhost:8081", "localhost:8082").map(Url.apply)))
-      emptyRequest = Request[IO]()
-      loadBalancer = LoadBalancer.from(
-        Backends(backends),
-        _ => SendAndExpect.toBackend(HttpClient.BackendResourceNotFound, Request[IO]()),
-        ParseUri.Impl,
-        AddRequestPathToBackendUrl.Impl,
-        RoundRobin.forBackends
-      )
-      result <- loadBalancer.orNotFound.run(Request[IO](uri = Uri.unsafeFromString("localhost:8080/items/1")))
-    yield result.body.compile.toVector.map(bytes => String(bytes.toArray)))
-      .flatten
+  test("Resource not found (404) case") {
+    val obtained = (
+      for {
+          backends <- IO.ref(Urls(Vector("localhost:8081", "localhost:8082").map(Url.apply)))
+          emptyRequest = Request[IO]()
+          loadBalancer = LoadBalancer.from(
+            Backends(backends),
+            _ => SendAndExpect.toBackend(HttpClient.BackendResourceNotFound, Request[IO]()),
+            ParseUri.Impl,
+            AddRequestPathToBackendUrl.Impl,
+            RoundRobin.forBackends
+          )
+          result <- loadBalancer.orNotFound.run(Request[IO](uri = Uri.unsafeFromString("localhost:8080/items/1")))
+        } yield result.body.compile.toVector.map(bytes => String(bytes.toArray))
+      ).flatten
 
     assertIO(obtained, s"resource was not found")
 ```
@@ -1114,7 +1167,7 @@ import org.http4s.ember.client.EmberClientBuilder
 import org.http4s.ember.server.EmberServerBuilder
 import org.http4s.server.middleware.Logger
 
-object HttpServer:
+object HttpServer {
 
   def start(
     backends: Backends,
@@ -1127,40 +1180,37 @@ object HttpServer:
     backendsRoundRobin: BackendsRoundRobin,
     healthChecksRoundRobin: HealthChecksRoundRobin,
   ): IO[Unit] =
-    (for {
-      client <- EmberClientBuilder
-        .default[IO]
-        .build
-      httpClient = HttpClient.of(client)
-      httpApp = Logger
-        .httpApp(logHeaders = false, logBody = true):
-        LoadBalancer
-        .from(
-      backends,
-      SendAndExpect.toBackend(httpClient, _),
-      parseUri,
-      AddRequestPathToBackendUrl.Impl,
-      backendsRoundRobin,
-      )
-      .orNotFound
-      _ <- EmberServerBuilder
-        .default[IO]
-      .withHost(host)
-      .withPort(port)
-      .withHttpApp(httpApp)
-      .build
-      _ <- HealthCheckBackends
-      .periodically(
-      healthChecks,
-      backends,
-      parseUri,
-      updateBackendsAndGet,
-      healthChecksRoundRobin,
-      SendAndExpect.toHealthCheck(httpClient),
-      healthCheckInterval,
-      )
-      .toResource
-    } yield ()).useForever
+    (
+      for {
+          client <- EmberClientBuilder.default[IO].build
+          httpClient = HttpClient.of(client)
+          httpApp = Logger.httpApp(logHeaders = false, logBody = true)(
+              LoadBalancer.from(
+                  backends,
+                  SendAndExpect.toBackend(httpClient, _),
+                  parseUri,
+                  AddRequestPathToBackendUrl.Impl,
+                  backendsRoundRobin,
+                ).orNotFound
+              )
+          _ <- EmberServerBuilder
+              .default[IO]
+              .withHost(host)
+              .withPort(port)
+              .withHttpApp(httpApp)
+              .build
+          _ <- HealthCheckBackends.periodically(
+                  healthChecks,
+                  backends,
+                  parseUri,
+                  updateBackendsAndGet,
+                  healthChecksRoundRobin,
+                  SendAndExpect.toHealthCheck(httpClient),
+                  healthCheckInterval,
+              ).toResource
+        } yield ()
+      ).useForever
+}
 ```
 
 Let's break down what's going on up there:
@@ -1194,12 +1244,21 @@ import org.typelevel.log4cats.slf4j.Slf4jLogger
 import org.typelevel.log4cats.syntax.*
 import pureconfig.{ConfigReader, ConfigSource}
 
-object Main extends IOApp.Simple:
+object Main extends IOApp.Simple {
 
   implicit def logger: Logger[IO] = Slf4jLogger.getLogger[IO]
 
+  private def hostAndPort(
+   host: String,
+   port: Int,
+  ): Either[InvalidConfig, (Host, Port)] =
+    (
+      Host.fromString(host),
+      Port.fromInt(port),
+    ).tupled.toRight(InvalidConfig)
+    
   override def run: IO[Unit] =
-    for 
+    for {
       config <- IO(ConfigSource.default.loadOrThrow[Config])
       backendUrls = config.backends
       backends     <- IO.ref(backendUrls)
@@ -1218,17 +1277,8 @@ object Main extends IOApp.Simple:
         RoundRobin.forBackends,
         RoundRobin.forHealthChecks,
       )
-    yield ()
-
-  private def hostAndPort(
-   host: String,
-   port: Int,
-  ): Either[InvalidConfig, (Host, Port)] =
-    (
-      Host.fromString(host),
-      Port.fromInt(port),
-    ).tupled
-      .toRight(InvalidConfig)
+    } yield ()
+}
 ```
 
 - `import` Statements - the code includes various import statements to import necessary libraries and modules, such as domain definitions, error handling, HTTP server setup, and logging.
