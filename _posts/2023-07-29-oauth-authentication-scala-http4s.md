@@ -153,14 +153,14 @@ import java.nio.file.Paths
 import ciris.{ConfigDecoder,ConfigValue,file,Effect,Secret}
 import ciris.circe.circeConfigDecoder
 import io.circe.Decoder
-...
+// ...
 
-object ApiConfig{
+object ApiConfig {
   given apiDecoder: Decoder[ApiConfig] = Decoder.instance { h =>
-    for
+    for {
       key <- h.get[String]("key")
       secret <- h.get[String]("secret")
-    yield ApiConfig(key, Secret(secret))
+    } yield ApiConfig(key, Secret(secret))
   }
 
   given apiConfigDecoder: ConfigDecoder[String, ApiConfig] =
@@ -204,10 +204,10 @@ final case class ServerConfig(hostValue: Host, portValue: Port)
 
 object ServerConfig{
   given serverDecoder: Decoder[ServerConfig] = Decoder.instance { h =>
-    for
+    for {
       hostValue <- h.get[String]("host")
       portValue <- h.get[String]("port")
-    yield ServerConfig(
+    } yield ServerConfig(
       Host.fromString(hostValue).getOrElse(host"0.0.0.0"),
       Port.fromString(portValue).getOrElse(port"5555")
     )
@@ -272,14 +272,14 @@ import io.circe.{Decoder, Error}
 import io.circe.parser.decode
 
 object OauthImpl{
-  ...
+  // ...
   private object GithubResponse{
     given decoder: Decoder[GithubResponse] = Decoder.instance { h =>
-      for
+      for {
         access_token <- h.get[String]("access_token")
         token_type <- h.get[String]("token_type")
         scope <- h.get[String]("scope")
-      yield GithubResponse(access_token, token_type, scope)
+      } yield GithubResponse(access_token, token_type, scope)
     }
   }
 
@@ -294,13 +294,13 @@ To achieve this, we create a companion object for `GithubResponse` and add a `gi
 The `decodeJson()` method takes the JSON string as an argument and produces an `Either[Error, GithubResponse]`. It makes use of the `decode` method from `io.circe.parser` to produce the `Either` with a `circe.Error` object and a `GithubResponse` case class in case of decoding failure and success respectfully.
 
 ```scala
-...
+// ...
 import org.http4s.ember.client.EmberClientBuilder
 import cats.effect.Async
 import org.http4s.*
 
 object OauthImpl{
-  ...
+  // ...
   private def getJsonString[F[_]: Async](req: Request[F]): F[String] =
     EmberClientBuilder
       .default[F]
@@ -316,13 +316,13 @@ Note: `client.expect` could fail for several reasons and will return an appropri
 Since this function is polymorphic in `F`, we'll need to bind an implicit `Async` from cats effect for this function to work. All the functions in this application will be polymoprhic in `F` to allow for the use of any effect type, not necessarily `IO`.
 
 ```scala
-...
+// ...
 import com.xonal.config.Config
 import org.http4s.implicits.uri
 import org.http4s.headers.{Accept,Authorization}
 
 object OauthImpl{
-  ...
+  // ...
   private def fetchJsonString[F[_]: Async](
       code: String,
       config: Config
@@ -352,7 +352,7 @@ We eventually use our `getJsonString()` utility function to send the request and
 
 ```scala
 object OauthImpl{
-  ...
+  // ...
   private def fetchGithubDetails[F[_]: Async](
       access_token: String
   ): F[String] = {
@@ -376,15 +376,16 @@ For this request, we specify an `Accept` request HTTP header as `json` and pass 
 import com.xonal.config.Config
 import cats.syntax.all.*
 
-object OauthImpl{
-  ...
+object OauthImpl {
+  // ...
   def getOauthResults[F[_]: Async](code: String, config: Config): F[String] =
-    for
+    for {
       decodedJson <- fetchJsonString[F](code, config).map(decodeJson)
-      githubDetails <- decodedJson match
+      githubDetails <- decodedJson match {
         case Right(v)  => fetchGithubDetails(v.accessToken)
         case Left(err) => err.pure[F].map(_.getMessage)
-    yield githubDetails
+      }
+    } yield githubDetails
 }
 ```
 
@@ -420,11 +421,11 @@ object OauthImpl {
 
   private object GithubResponse{
     given decoder: Decoder[GithubResponse] = Decoder.instance { h =>
-      for
+      for {
         access_token <- h.get[String]("access_token")
         token_type <- h.get[String]("token_type")
         scope <- h.get[String]("scope")
-      yield GithubResponse(access_token, token_type, scope)
+      } yield GithubResponse(access_token, token_type, scope)
     }
   }
 
@@ -471,12 +472,13 @@ object OauthImpl {
   }
 
   def getOauthResults[F[_]: Async](code: String, config: Config): F[String] =
-    for
+    for {
       decodedJson <- fetchJsonString[F](code, config).map(decodeJson)
-      githubDetails <- decodedJson match
+      githubDetails <- decodedJson match {
         case Right(v)  => fetchGithubDetails(v.accessToken)
         case Left(err) => err.pure[F].map(_.getMessage)
-    yield githubDetails
+      }
+    } yield githubDetails
 
 }
 ```
@@ -523,7 +525,7 @@ object GithubRoutes{
   object GithubTokenQueryParamMatcher
       extends QueryParamDecoderMatcher[String]("code")
   def githubRoutes[F[_]: Async]: HttpRoutes[F] = {
-      ...
+      // ...
       case GET -> Root / "callback" :? GithubTokenQueryParamMatcher(code) =>
         getOauthResults(code).handleError(_.getMessage).flatMap(Ok(_))
   }
