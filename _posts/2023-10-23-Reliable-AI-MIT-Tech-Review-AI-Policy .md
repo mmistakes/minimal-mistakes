@@ -1,5 +1,5 @@
 ---
-title: "MIT Technolgy Reviews on AI-Policy"
+title: "MIT Technolgy Reviews on AI-Policies"
 categories:
   - AI Regulation
 tags:
@@ -27,9 +27,9 @@ Zeyi Yang
 #### Summary 
 > 생성형 AI 규제안이 실제로 어떻게 적용할지가 대략적으로나마 명확알 수 있음
 >
-> 중국 정부 기관인 국가정보보안표준화기술위원회(National Information Security Standardization Technical Committee, TC260)[^1]이 11일 생성형 AI 모델에 문제가 있는지 여부를 판단하는 방법에 관한 세부안이 담긴 ‘표준초안’을 발표, 중국이 그동안 내놓은 다른 많은 AI 규제와 달리 매우 구체적
+> 중국 정부 기관인 국가정보보안표준화기술위원회(National Information Security Standardization Technical Committee, TC260)이 11일 생성형 AI 모델에 문제가 있는지 여부를 판단하는 방법에 관한 세부안이 담긴 ‘표준초안’을 발표, 중국이 그동안 내놓은 다른 많은 AI 규제와 달리 매우 구체적
 > 
->> [^1]: TC260으로 불리기도 하는 이 위원회는 기업 대표, 학자, 규제 당국과 협의해 사이버 보안에서 개인정보 보호, 정보기술(IT) 인프라에 이르는 다양한 문제를 아우르는 기술 산업 규칙을 수립하는 역할
+> >>>TC260으로 불리기도 하는 이 위원회는 기업 대표, 학자, 규제 당국과 협의해 사이버 보안에서 개인정보 보호, 정보기술(IT) 인프라에 이르는 다양한 문제를 아우르는 기술 산업 규칙을 수립하는 역할
 >  
 > 1. 훈련 : 기업은 하나의 소스에서 4,000개의 ‘데이터 조각’을 무작위로 샘플링해야 한다. 이때 데이터의 5% 이상이 ’불법 및 부정적 정보’로 간주되면 이 말뭉치는 향후 학습을 위해 블랙리스트에 추가해놔야 함
 > 

@@ -16,7 +16,7 @@ tags:
 last_modified_at: 2023-10-27T110:20:50-10:30
 ---
 
-### [ET시론]AI와 함께하는 디지털 사회로의 여정 - 전자신문 [link](https://www.etnews.com/20231026000015)
+### [ET시론] AI와 함께하는 디지털 사회로의 여정 - 전자신문 [link](https://www.etnews.com/20231026000015)
 
 
 전자신문 <br>
