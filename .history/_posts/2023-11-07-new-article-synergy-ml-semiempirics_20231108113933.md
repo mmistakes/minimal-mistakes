@@ -1,0 +1,22 @@
+---
+layout: single
+title: "📢 Featured article: synergy of ML semiempirical models"
+date: 2023-11-07
+categories: [category1, category2]
+tags: [news, publication]
+author_profile: true
+---
+
+
+Exciting news! Our article has been featured on the front cover of the September issue of the [Journal of Chemical Physic](https://pubs.aip.org/aip/jcp/article-split/159/11/110901/2911476/Synergy-of-semiempirical-models-and-machine). Moreover, it is open-acess! 
+
+I am thrilled to see how ML enhances old-school quantum mechanics. Note the need for new flexible optimization tools and datasets was marked by James Stewart, Mr. Mopac, back in 2002:
+> quote
+
+![image-center](https://aipp.silverchair-cdn.com/aipp/content_public/journal/jcp/issue/159/11/2/jcp.2023.159.issue-11.largecover.jpeg?Expires=1702411324&Signature=3vpixDcobC8sPgQYHEfG8COtoLTShmhIl1CMxblRgUA4FonHU-94hhjVOE7K6h-krW6mzNL9wpBspMdhQ6h74sLsnGLajdeAs0lV6V5UuR9BHh8Puy9RY8LmPS9JZDMWbUfYPqD9ePjQDtN9EdlVvkUXf1wdJM7CMr8RcHKeEDyL5ha7X1EZ1LHrbS8-D0hqMB3LVt6w5mx8gvBKwzzsfqyr2wK9-lXD7NOE7RQtyB5DMtF0jtbFY8BDGQOGNLCQFled24dtsFHGNH7JXk7wXVbS-6Yamyanf3VsBeu8~UBS5ngKtOsxIrvg8P258vWuXfhQnAPHccA4PSXWs8vRXA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA){: height="50%" width="50%" .align-center}
+
+
+
+  <iframe src="https://watermark.silverchair.com/110901_1_5.0151833.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAzMwggMvBgkqhkiG9w0BBwagggMgMIIDHAIBADCCAxUGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQM3tQFd6TtRrWRsaaiAgEQgIIC5px9b7a_4DXkfa9xV70S02cmR613epkWQJqCEERRp8JnHFI8Jwfit8HDxsINXB4kaDUhKYWlpZHfMQNLAe9DOQq7DK2P5XvsqSJ0CirHt_t02EZG4QxJXHF8kVMrSW4EF_n20k3caAcP9Q8gRG0HlhQL3eZv0zzVLEp2GAwkxMj0f3IaEjXV5k-wNToCtpL9c2s68THbewilDrdCNMBk6yynzBubiMFJiMA0YUSVqRePi9iBcLQg08JOVXYr58ZtB8MUZRCnev_PuKIpm9Hysmu3MxhYaiIcqO8PMjDDTtw_fEOiX45DOKIAHmcS6Gi7mqKoGL3SfCaDu05HrddQn2eh30jcn_5mHnk-FunIdmcpK9AGncJZDAPgt_6X6vUvCjn_6PfzgAXiJE2loDW9LiM0_El6T9UyZzUsyC25gljFhnP_5GA3FteC23hpxQNRdXSpj9SRfGEwutcQNpewwNfMzEB4Fg7M5jaZhxCYMu4wCGUfytL5dpucvILfXpBmKOAd51wlAI6LGT4x9DSuOSkFhCmSVoUv3qC2yS3g0TPRlICEK_8WvPAZ263IY0CqdEU5looTSffM2TOALKWaOuNlhSNQ7jQJUz_7vFiuDMqIqSitj0zpQKxXbMI_eixqSkvcNq5h4oG8SraVyQ5wCd9fIg3C7e9ER9zCITqyxWXU1WSCArnNbIv58AYD8PZQYrby1MAfMYA5csecT7yq-pFTfOdMbzaqkmN8bJfaJSlqaBLcfdV7oYqJQm5i8YiqSKFkluALLDQ_PeQAi0ebJ3SnjEQu0Zm_rYmdjfK-I09MQH9aKh7ZxJU2GALpIhZCFAJq2n4IL4ZYcsmwAzUbI1GrkNWuslav1iP5qNuZCUzVZAxOkJVqlZgw0-iKNsJfTm5w7IyoPmUOnc7Ijr82Vw8fYdazHAayy4EsFxzWztkJs3oS30gi5DhFy9LpkHxrFmU9o5vOio3wNVmEhLzayH4hE9hhPOU" frameborder="0"><iframe>
+
+
