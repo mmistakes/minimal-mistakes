@@ -3,7 +3,7 @@ title: "Upcoming Open Mic - Design Science"
 categories: [Open Mic Announcement, Open Mic]
 ---
 
-The Open mic session starts on Friday 10th November 2023 at 9:30 at [this link](https://meet.jit.si/open-mic-kbss). Speaker [Max Chopart](https://www.linkedin.com/in/max-chopart) gives a talk about Design Science.
+The Open mic session starts on Friday 10th November 2023 at 10:30 at [this link](https://meet.jit.si/open-mic-kbss). Speaker [Max Chopart](https://www.linkedin.com/in/max-chopart) gives a talk about Design Science.
 
 
 ##### The abstract
