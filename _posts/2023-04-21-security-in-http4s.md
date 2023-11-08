@@ -55,7 +55,7 @@ import cats.effect.*
 import org.http4s.*
 import org.http4s.dsl.io.*
 
-object CorsExample extends IOApp{
+object CorsExample extends IOApp {
     val imageService = HttpRoutes.of[IO]{
         case GET -> Root / "image" / name =>
             Ok(s"Processing image: $name." )
@@ -263,7 +263,7 @@ import org.http4s.server.middleware.CORS
 import org.http4s.headers.Origin
 
 
-object securityHttp4s extends IOApp{
+object securityHttp4s extends IOApp {
     val imageService = HttpRoutes.of[IO]{
         case GET -> Root / "image" / name =>
             Ok(s"Processing image: $name." )
@@ -282,7 +282,8 @@ object securityHttp4s extends IOApp{
         .withHttpApp(corsService)
         .build
 
-    override def run(args: List[String]): IO[ExitCode] = server.use(_ => IO.never).as(ExitCode.Success)
+    override def run(args: List[String]): IO[ExitCode] = 
+      server.use(_ => IO.never).as(ExitCode.Success)
 }
 ```
 
@@ -368,7 +369,7 @@ import org.http4s.dsl.io.*
 import org.http4s.ember.server.EmberServerBuilder
 import com.comcast.ip4s.*
 
-object csrfExample extends IOApp{
+object csrfExample extends IOApp {
     val service = HttpRoutes.of[IO]{
         case GET -> Root / "testing" =>
             Ok(s"Testing" )
@@ -569,7 +570,7 @@ import cats.effect.unsafe.IORuntime
 import org.http4s.server.middleware.CSRF
 import javax.crypto.SecretKey
 
-object csrfExample extends IOApp{
+object csrfExample extends IOApp {
 
     val photoService = HttpRoutes.of[IO]{
         case GET -> Root / "testing" =>

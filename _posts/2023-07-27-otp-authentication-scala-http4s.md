@@ -226,12 +226,12 @@ object BarCodeService {
       generator: Generator,
       counter: Int
   ): String =
-    generator match
+    generator match {
       case Hotp =>
         s"otpauth://hotp/$issuer:$account?secret=$secretKey&issuer=$issuer&algorithm=SHA256&counter=$counter"
       case Totp =>
         s"otpauth://totp/$issuer:$account?secret=$secretKey&issuer=$issuer&algorithm=SHA256"
-
+    }
 }
 ```
 
@@ -247,7 +247,7 @@ import com.google.zxing.client.j2se.MatrixToImageWriter
 import cats.effect.IO
 
 object BarCodeService{
-    ...
+    // ...
   def createQRCode(
       barCodeData: String,
       filePath: String = "barCode.png",
@@ -292,11 +292,12 @@ object BarCodeService {
       generator: Generator,
       counter: Int
   ): String =
-    generator match
+    generator match {
       case Hotp =>
         s"otpauth://hotp/$issuer:$account?secret=$secretKey&issuer=$issuer&algorithm=SHA256&counter=$counter"
       case Totp =>
         s"otpauth://totp/$issuer:$account?secret=$secretKey&issuer=$issuer&algorithm=SHA256"
+    }
 
 
   def createQRCode(
@@ -333,7 +334,6 @@ class OtpService(generator: Generator, user: UserDB) {
     }
 
   private val secret: Array[Byte] = user.getSecret.getBytes()
-
 }
 ```
 
@@ -345,7 +345,7 @@ We then retrieve the secret value from the `UserDB` and assign it to the variabl
 import java.time.Duration
 
 class OtpService(generator: Generator, user: UserDB) {
-    ...
+    // ...
   private val hotpGen =
     new HOTPGenerator.Builder(secret)
       .withPasswordLength(6)
@@ -354,10 +354,10 @@ class OtpService(generator: Generator, user: UserDB) {
 
   private val totpGen =
     new TOTPGenerator.Builder(secret)
-      .withHOTPGenerator(builder => {
+      .withHOTPGenerator { builder => 
         builder.withPasswordLength(6)
         builder.withAlgorithm(HMACAlgorithm.SHA256)
-      })
+      }
       .withPeriod(Duration.ofSeconds(30))
       .build()
 }
@@ -370,14 +370,15 @@ import cats.effect.IO
 import com.rockthejvm.Generator.*
 
 class OtpService(generator: Generator, user: UserDB) {
-    ...
+ // ...
   def getToken: IO[String] =
     IO {
-      generator match
+      generator match {
         case Hotp =>
           hotpGen.generate(user.getCounter)
         case Totp =>
           totpGen.now()
+      }
     }
 }
 ```
@@ -386,16 +387,15 @@ The `getToken()` function generates a token and returns an `IO[String]` dependin
 
 ```scala
 class OtpService(generator: Generator, user: UserDB) {
-    ...
+    // ...
   def verifyCode(code: String): IO[Boolean] =
     IO {
-      generator match
+      generator match {
         case Hotp =>
-          hotpGen
-            .verify(code, user.getCounter)
+          hotpGen.verify(code, user.getCounter)
         case Totp =>
-          totpGen
-            .verify(code)
+          totpGen.verify(code)
+      }
     }
 }
 ```
@@ -404,7 +404,7 @@ The `verifyCode()` function is used to check if the code the user sends to our s
 
 ```scala
 class OtpService(generator: Generator, user: UserDB) {
-  ...
+  // ...
   def makeBarCodeImg(account: String, issuer: String): IO[Unit] =
     BarCodeService.createQRCode(
       BarCodeService.getGoogleAuthenticatorBarCode(
@@ -447,31 +447,31 @@ class OtpService(generator: Generator, user: UserDB) {
 
   private val totpGen =
     new TOTPGenerator.Builder(secret)
-      .withHOTPGenerator(builder => {
+      .withHOTPGenerator { builder => 
         builder.withPasswordLength(6)
         builder.withAlgorithm(HMACAlgorithm.SHA256)
-      })
+      }
       .withPeriod(Duration.ofSeconds(30))
       .build()
 
   def getToken: IO[String] =
     IO {
-      generator match
+      generator match {
         case Hotp =>
           hotpGen.generate(user.getCounter)
         case Totp =>
           totpGen.now()
+      }
     }
 
   def verifyCode(code: String): IO[Boolean] =
     IO {
-      generator match
+      generator match {
         case Hotp =>
-          hotpGen
-            .verify(code, user.getCounter)
+          hotpGen.verify(code, user.getCounter)
         case Totp =>
-          totpGen
-            .verify(code)
+          totpGen.verify(code)
+      }
     }
 
   def makeBarCodeImg(account: String, issuer: String): IO[Unit] =
@@ -507,7 +507,7 @@ import cats.effect.IO
 import com.sendgrid.Response
 
 class OtpInteractiveService(generator: Generator, user: UserDB) {
-    ...
+  // ...
   def send2FA(sendto: UserDB): IO[Either[String, Response]] = ???
 }
 ```
@@ -581,7 +581,7 @@ import com.sendgrid.helpers.mail.objects.{Email, Content}
 import java.nio.file.Paths
 
 class OtpInteractiveService(generator: Generator, user: UserDB) {
-    ...
+  // ...
   def send2FA(sendto: UserDB): IO[Either[String, Response]] = {
     val from = new Email("hkateu@gmail.com")
     val to = new Email(sendto.email)
@@ -609,9 +609,9 @@ import com.sendgrid.helpers.mail.Mail
 import java.util.Base64
 import java.nio.file.{Paths, Files}
 
-...
+// ...
 def send2FA(sendto: UserDB): IO[Either[String, Response]] = {
-...
+// ...
     val mail = new Mail(from, subject, to, content)
     val attachments = new Attachments()
     attachments.setFilename(file.getFileName().toString())
@@ -635,9 +635,9 @@ We then call `attachments.setContent(attachmentContent)` and `mail.addAttachment
 import scala.util.*
 import com.sendgrid.{SendGrid, Method, Request, Response}
 
-...
+// ...
 def send2FA(sendto: UserDB): IO[Either[String, Response]] = {
-...
+// ...
     val sg = new SendGrid(Properties.envOrElse("SENDGRID_API_KEY", "undefined"))
     val request = new Request()
     val response: IO[Either[String, Response]] =
@@ -744,7 +744,7 @@ Here we create an instance of `OtpInteractiveService` to which we supply a `Gene
 import org.http4s.*
 import org.http4s.dsl.io.*
 import scala.util.*
-    ...
+  // ...
   val routes: HttpRoutes[IO] =
     HttpRoutes.of[IO] {
       case GET -> Root / "login" =>
@@ -792,12 +792,12 @@ If the bar code image was successfully created, we ignore the `unit` value in `R
 
 ```scala
 tokenService.otpService.getToken
-.flatMap { token =>
-    logger.info(s"Token value: $token")
-}
-.handleErrorWith { ex =>
-    logger.error(s"GetToken Error: ${ex.getMessage}")
-} *>
+   .flatMap { token =>
+       logger.info(s"Token value: $token")
+   }
+   .handleErrorWith { ex =>
+       logger.error(s"GetToken Error: ${ex.getMessage}")
+   }
 ```
 
 In case the token was successfully created we log the token value by calling `logger.info(s"Token value: $token")` otherwise we handle the error and also log it to the console by calling `logger.error(s"GetToken Error: ${ex.getMessage}")`. The `*>` means that we are going to replace the result of the previous computation with that of the next, which is sending our email:
@@ -833,19 +833,18 @@ The `/code/value` route receives the code from the user and verifies it by calli
 
 ```scala
 val routes: HttpRoutes[IO] =
-    HttpRoutes.of[IO]{
-    ...
+    HttpRoutes.of[IO] {
+    // ...
       case GET -> Root / "code" / value =>
         // verify code
         tokenService.otpService
           .verifyCode(value)
           .flatMap { result =>
-            if (result) then
+            if (result) {
               IO(user.incrementCounter) *>
               IO(user.isSecretUpdated = false) *>
               Ok(s"Code verification passed")
-            else Ok(s"Code verification failed")
-
+            } else Ok(s"Code verification failed")
           }
           .handleErrorWith { ex =>
             logger.error(s"Verification Error: ${ex.getMessage}") *>
@@ -861,7 +860,7 @@ Supposing an error occurred during the verification process, we log the error to
 ```scala
 import com.comcast.ip4s.*
 import org.http4s.ember.server.EmberServerBuilder
-  ...
+  // ...
   val server =
     EmberServerBuilder
       .default[IO]
@@ -943,12 +942,11 @@ object OtpAuth extends IOApp {
         tokenService.otpService
           .verifyCode(value)
           .flatMap { result =>
-            if (result) then
+            if (result) {
               IO(user.incrementCounter) *>
               IO(user.isSecretUpdated = false) *>
               Ok(s"Code verification passed")
-            else Ok(s"Code verification failed")
-
+            } else Ok(s"Code verification failed")
           }
           .handleErrorWith { ex =>
             logger.error(s"Verification Error: ${ex.getMessage}") *>

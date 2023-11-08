@@ -70,7 +70,7 @@ import org.http4s.implicits.*
 import org.http4s.ember.server.*
 import com.comcast.ip4s.*
 
-object SimpleRoutes extends IOApp:
+object SimpleRoutes extends IOApp {
     val routes: HttpRoutes[IO] =
         HttpRoutes.of {
             case GET -> Root / "welcome" / user =>
@@ -84,7 +84,9 @@ object SimpleRoutes extends IOApp:
         .withHttpApp(routes.orNotFound)
         .build
 
-    override def run(args: List[String]): IO[ExitCode] = server.use(_ => IO.never).as(ExitCode.Success)
+    override def run(args: List[String]): IO[ExitCode] = 
+       server.use(_ => IO.never).as(ExitCode.Success)
+}
 ```
 
 In this example, the routes are accessed without authentication. We define our routes using the `HttpRoutes.of` function through which `Http4s` pattern matches against each defined `case`. For our implementation, we have one `case` that accepts `GET` requests from `/welcome/user` where the server responds with `Ok(s"Welcome, ${user}")`. `user` is any alphanumeric value that's passed in the request.
@@ -146,11 +148,12 @@ import org.http4s.headers.Authorization
 
 val authUserEither: Kleisli[IO, Request[IO], Either[String, User]] = Kleisli { req =>
     val authHeader: Option[Authorization] = req.headers.get[Authorization]
-    authHeader match
+    authHeader match {
         case Some(value) => value match
             case Authorization(BasicCredentials(creds)) =>  IO(Right(User(1,creds._1)))
             case _ => IO(Left("No basic credentials"))
         case None => IO(Left("Unauthorized"))
+    }
 }
 ```
 
@@ -284,15 +287,15 @@ import com.comcast.ip4s.*
 import org.http4s.Credentials
 import org.http4s.headers.Authorization
 
-object BasicExample extends IOApp:
+object BasicExample extends IOApp {
 
   val authUserEither: Kleisli[IO, Request[IO], Either[String, User]] = Kleisli { req =>
       val authHeader: Option[Header] = req.headers.get[Authorization]
-      authHeader match
-          case Some(value) => value match
-              case Authorization(BasicCredentials(creds)) =>  IO(Right(User(1,creds._1)))
-              case _ => IO(Left("No basic credentials"))
+      authHeader match {
+          case Some(Authorization(BasicCredentials(creds))) => IO(Right(User(1,creds._1)))
+          case Some(_) => IO(Left("No basic credentials"))
           case None => IO(Left("Unauthorized"))
+      }
   }
 
   val userMiddleware: AuthMiddleware[IO,User] =
@@ -304,9 +307,8 @@ object BasicExample extends IOApp:
             Ok(s"Welcome, ${user.name}")
     }
 
-  val onFailure: AuthedRoutes[String, IO] = Kleisli { (req: AuthedRequest[IO,String]) =>
-    req.req match
-        case _ => OptionT.pure[IO](Response[IO](status = Status.Unauthorized))
+  val onFailure: AuthedRoutes[String, IO] = Kleisli { _ =>
+     OptionT.pure[IO](Response[IO](status = Status.Unauthorized))
   }
 
   val authMiddleware: AuthMiddleware[IO,User] = AuthMiddleware(authUserEither, onFailure)
@@ -320,8 +322,9 @@ object BasicExample extends IOApp:
     .withHttpApp(serviceKleisli.orNotFound)
     .build
 
-  override def run(args: List[String]): IO[ExitCode] = server.use(_ => IO.never).as(ExitCode.Success)
-
+  override def run(args: List[String]): IO[ExitCode] = 
+     server.use(_ => IO.never).as(ExitCode.Success)
+}
 ```
 
 ## 4. Digest Authentication
@@ -358,9 +361,10 @@ import org.http4s.server.middleware.authentication.DigestAuth.Md5HashedAuthStore
 val ha1: IO[String] = Md5HashedAuthStore.precomputeHash[IO]("username","http://localhost:8080/welcome","password")
 
 val funcPass: String => IO[Option[(User, String)]] = (usr_name: String) =>
-    usr_name match
-        case "username" => ha1.flatMap(hash => IO(Some(User(1,"username"), hash)))
-        case _ => IO(None)
+    usr_name match {
+      case "username" => ha1.flatMap(hash => IO(Some(User(1, "username"), hash)))
+      case _ => IO(None)
+    }
 ```
 
 The function `funcPass()` receives the username, which it matches to find the correct `User`. The resulting value `IO[Option[User,String]]` is also checked to contain to correct password. It's important to note that the `funcPass()` function can receive either a plaintext or hashed password.
@@ -371,7 +375,8 @@ For this example, we decided to use a hashed password. The Http4s digest middlew
 import org.http4s.server.*
 import org.http4s.server.middleware.authentication.DigestAuth
 
-   val middleware: IO[AuthMiddleware[IO, User]] = DigestAuth.applyF[IO,User]("http://localhost:8080/welcome", Md5HashedAuthStore(funcPass))
+   val middleware: IO[AuthMiddleware[IO, User]] = 
+      DigestAuth.applyF[IO,User]("http://localhost:8080/welcome", Md5HashedAuthStore(funcPass))
 ```
 
 To create our `middleware` we use the `.applyF` method on the `DigestAuth` object which takes a `realm` of type `String` and a `store` of type `AuthStore[F, A]`. For our example, we passed the realm as `http://localhost:8080/welcome` and `store` as `Md5HashedAuthStore(funcPass)`.
@@ -471,7 +476,7 @@ Welcome, username⏎
 
 If the wrong password or username is provided, the server will respond with a `401 Unauthorized`, its also important to note that if the Authorization header is missing or the scheme is anything but `Digest`, the request will fail with a `401 Unauthorized` as well.
 
-Here's the full code
+Here's the full code:
 
 ```scala
 import cats.effect.*
@@ -483,17 +488,18 @@ import com.comcast.ip4s.*
 import org.http4s.server.middleware.authentication.DigestAuth
 import org.http4s.server.middleware.authentication.DigestAuth.Md5HashedAuthStore
 
-object DigestExample extends IOApp:
+object DigestExample extends IOApp {
     case class User(id: Long, name: String)
 
     val ha1: IO[String] = Md5HashedAuthStore.precomputeHash[IO]("username","http://localhost:8080/welcome","password")
     val funcPass: String => IO[Option[(User, String)]] = (usr_name: String) =>
-        usr_name match
-            case "username" => ha1.flatMap(hash => IO(Some(User(1,"username"), hash)))
-            case _ => IO(None)
-
-
-    val middleware: IO[AuthMiddleware[IO, User]] = DigestAuth.applyF[IO,User]("http://localhost:8080/welcome", Md5HashedAuthStore(funcPass))
+        usr_name match {
+          case "username" => ha1.flatMap(hash => IO(Some(User(1, "username"), hash)))
+          case _ => IO(None)
+        }
+              
+    val middleware: IO[AuthMiddleware[IO, User]] = 
+       DigestAuth.applyF[IO,User]("http://localhost:8080/welcome", Md5HashedAuthStore(funcPass))
 
     val authedRoutes: AuthedRoutes[User,IO] =
         AuthedRoutes.of {
@@ -514,7 +520,9 @@ object DigestExample extends IOApp:
                 .build
         }
 
-    override def run(args: List[String]): IO[ExitCode] = server(digestService).flatMap(s => s.use(_ => IO.never)).as(ExitCode.Success)
+    override def run(args: List[String]): IO[ExitCode] = 
+       server(digestService).flatMap(s => s.use(_ => IO.never)).as(ExitCode.Success)
+}
 ```
 
 ## 5. Session Authentication
@@ -538,7 +546,8 @@ import java.util.Base64
 import java.nio.charset.StandardCharsets
 
 val today: String = LocalDateTime.now().toString()
-def setToken(user: String, date: String):String = Base64.getEncoder.encodeToString(s"${user}:{$today}".getBytes(StandardCharsets.UTF_8))
+def setToken(user: String, date: String):String = 
+   Base64.getEncoder.encodeToString(s"${user}:{$today}".getBytes(StandardCharsets.UTF_8))
 ```
 
 > NOTE: do not use this exact encoding in production! 
@@ -737,16 +746,17 @@ import java.util.Base64
 import java.nio.charset.StandardCharsets
 import scala.util.*
 
-object SessionAuth extends IOApp:
+object SessionAuth extends IOApp {
     case class User(id: Long, name: String)
     val today: String = LocalDateTime.now().toString()
     def setToken(user: String, date: String):String = Base64.getEncoder.encodeToString(s"${user}:{$today}".getBytes(StandardCharsets.UTF_8))
     def getUser(token: String): Try[String] = Try(new String(Base64.getDecoder.decode(token)).split(":")(0))
 
     val funcPass: String => IO[Option[(User, String)]] = (user_val: String) =>
-        user_val match
+        user_val match {
             case "username" => IO(Some(User(1,"username"),"password"))
             case _ => IO(None)
+        }
 
     val middleware:AuthMiddleware[IO, User] = DigestAuth[IO,User]("http://localhost:8080/welcome", funcPass)
 
@@ -767,21 +777,23 @@ object SessionAuth extends IOApp:
             Ok("Logging out...").map(_.removeCookie("sessioncookie"))
     }
 
-    def cookieCheckerService(service: HttpRoutes[IO]): HttpRoutes[IO] = Kleisli{req =>
+    def cookieCheckerService(service: HttpRoutes[IO]): HttpRoutes[IO] = Kleisli{ req =>
         val authHeader: Option[Cookie] = req.headers.get[Cookie]
-        OptionT.liftF(authHeader match
+        OptionT.liftF(authHeader match {
             case Some(cookie) =>
                 cookie.values.toList.find { x =>
                     x.name == "sessioncookie"
-                } match
+                } match {
                     case Some(token) =>
-                        getUser(token.content) match
+                        getUser(token.content) match {
                             case Success(user) =>
                                 service.orNotFound.run((req.withPathInfo(Uri.Path.fromString(s"/statement/$user"))))
                             case Failure(_) => Ok("Invalid token")
+                        }
                     case None => Ok("No token")
+                }
             case None => Ok("No cookies")
-       )
+        })
     }
 
 
@@ -792,13 +804,14 @@ object SessionAuth extends IOApp:
         )
 
     val server = EmberServerBuilder
-    .default[IO]
-    .withHost(ipv4"0.0.0.0")
-    .withPort(port"8080")
-    .withHttpApp(serviceRouter.orNotFound)
-    .build
+       .default[IO]
+       .withHost(ipv4"0.0.0.0")
+       .withPort(port"8080")
+       .withHttpApp(serviceRouter.orNotFound)
+       .build
 
-    override def run(args: List[String]): IO[ExitCode] = server.use(_ => IO.never).as(ExitCode.Success)
+    override def run(args: List[String]): IO[ExitCode] = 
+       server.use(_ => IO.never).as(ExitCode.Success)
 ```
 
 ## 6. JSON Web Token Authentication
@@ -814,7 +827,8 @@ First, let's create our token that we will send to the client once he/she logs i
 import pdi.jwt.*
 import java.time.Instant
 
-val claim = JwtClaim(content = """{"user":"John", "level":"basic"}""", expiration = Some(Instant.now.plusSeconds(157784760).getEpochSecond), issuedAt = Some(Instant.now.getEpochSecond))
+val claim = JwtClaim(content = """{"user":"John", "level":"basic"}""", expiration = 
+   Some(Instant.now.plusSeconds(157784760).getEpochSecond), issuedAt = Some(Instant.now.getEpochSecond))
 
 val key = "secretKey"
 
@@ -849,13 +863,14 @@ import io.circe.*
 
 case class TokenPayLoad(user: String, level: String)
 
-object TokenPayLoad:
+object TokenPayLoad {
     given decoder: Decoder[TokenPayLoad] = Decoder.instance { h =>
-        for
+        for {
             user <- h.get[String]("user")
             level <- h.get[String]("level")
-        yield TokenPayLoad(user,level)
+        } yield TokenPayLoad(user,level)
     }
+}
 ```
 
 We can parse the JSON string with the help of `Circe`, first we define a case class named `TokenPayLoad` which will hold our payload information. The companion object `TokenPayLoad` contains a `given` or `implicit` decoder method that `yields` a `Decoder[TokenPayLoad]` object from the JSON string.
@@ -871,10 +886,11 @@ val database = Map("John" -> AuthUser(123,"JohnDoe"))
 val authenticate: JwtToken => JwtClaim => IO[Option[AuthUser]] =
     (token: JwtToken) =>
         (claim: JwtClaim)
-        => decode[TokenPayLoad](claim.content) match
+        => decode[TokenPayLoad](claim.content) match {
                 case Right(payload) =>
                     IO(database.get(payload.user))
                 case Left(_) => IO(None)
+        }
 ```
 
 The `authenticate` function signature is of type `JwtToken => JwtClaim => IO[Option[AuthUser]]`. This function receives a `JwtToken` and transforms it into a `JWTClaim`, the payload represented as `claim.content` is then extracted and passed to our decoder function. This function results in an `Either[circe.error, TokenPayLoad]`, we can then pattern match against this value to check if the user exists in our simple database by calling `database.get(payload.user)` and returning either a `Left` with circe.error or `Right` with the `TokenPayLoad`. The final result will be an `IO[Option[AuthUser]]`.
@@ -918,13 +934,14 @@ import org.http4s.ember.server.*
 import com.comcast.ip4s.*
 
 val server = EmberServerBuilder
-.default[IO]
-.withHost(ipv4"0.0.0.0")
-.withPort(port"8080")
-.withHttpApp(service.orNotFound)
-.build
+   .default[IO]
+   .withHost(ipv4"0.0.0.0")
+   .withPort(port"8080")
+   .withHttpApp(service.orNotFound)
+   .build
 
-override def run(args: List[String]): IO[ExitCode] = server.use(_ => IO.never).as(ExitCode.Success)
+override def run(args: List[String]): IO[ExitCode] = 
+   server.use(_ => IO.never).as(ExitCode.Success)
 ```
 
 Let's test our server.
@@ -995,20 +1012,21 @@ import java.time.Instant
 import io.circe.*
 import io.circe.parser.*
 
-object TokenAuth extends IOApp:
+object TokenAuth extends IOApp {
     case class AuthUser(id: Long, name: String)
     case class TokenPayLoad(user: String, level: String)
 
-    object TokenPayLoad:
+    object TokenPayLoad {
         given decoder: Decoder[TokenPayLoad] = Decoder.instance { h =>
-            for
+            for {
                 user <- h.get[String]("user")
                 level <- h.get[String]("level")
-            yield TokenPayLoad(user,level)
+            } yield TokenPayLoad(user,level)
         }
+    }
 
-    val claim = JwtClaim(content = """{"user":"John", "level":"basic"}""",expiration = Some(Instant.now.plusSeconds(157784760).getEpochSecond),
-    issuedAt = Some(Instant.now.getEpochSecond))
+    val claim = JwtClaim(content = """{"user":"John", "level":"basic"}""",expiration = 
+       Some(Instant.now.plusSeconds(157784760).getEpochSecond), issuedAt = Some(Instant.now.getEpochSecond))
 
     val key = "secretKey"
 
@@ -1020,10 +1038,10 @@ object TokenAuth extends IOApp:
 
     val authenticate: JwtToken => JwtClaim => IO[Option[AuthUser]] =
         (token: JwtToken) => (claim: JwtClaim) => 
-           decode[TokenPayLoad](claim.content) match
-              case Right(payload) =>
-                  IO(database.get(payload.user))
+           decode[TokenPayLoad](claim.content) match {
+              case Right(payload) => IO(database.get(payload.user))
               case Left(_) => IO(None)
+           }
 
     val jwtAuth = JwtAuth.hmac(key, algo)
     val middleware = JwtAuthMiddleware[IO, AuthUser](jwtAuth, authenticate)
@@ -1045,13 +1063,15 @@ object TokenAuth extends IOApp:
     val service = loginRoutes <+> securedRoutes
 
     val server = EmberServerBuilder
-    .default[IO]
-    .withHost(ipv4"0.0.0.0")
-    .withPort(port"8080")
-    .withHttpApp(service.orNotFound)
-    .build
+       .default[IO]
+       .withHost(ipv4"0.0.0.0")
+       .withPort(port"8080")
+       .withHttpApp(service.orNotFound)
+       .build
 
-    override def run(args: List[String]): IO[ExitCode] = server.use(_ => IO.never).as(ExitCode.Success)
+    override def run(args: List[String]): IO[ExitCode] = 
+       server.use(_ => IO.never).as(ExitCode.Success)
+}
 ```
 
 ## 7. Conclusion
