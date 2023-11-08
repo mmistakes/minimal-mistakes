@@ -202,7 +202,7 @@ In our implementation of `sendOrderStream` above, we map on `request` which is a
 import io.grpc.netty.shaded.io.grpc.netty.NettyServerBuilder
 import fs2.grpc.syntax.all.*
 
-...
+// ...
 
 object Server {
   private val orderService: Resource[IO, ServerServiceDefinition] =
@@ -296,12 +296,12 @@ The gRPC client will enable us to directly call methods on this instance, theref
 Here's how we can implement this:
 
 ```scala
-...
+// ...
 import com.rockthejvm.protos.orders.*
 import fs2.Stream
 
 object Client {
-  ...
+  // ...
   private def formatItemsToStr(items: Seq[Item]): Seq[String] = {
     items.map(x => s"[${x.qty} of ${x.name}]")
   }
@@ -398,14 +398,14 @@ object AppRoutes {
 Above we define our first route `/index.html` which serves the client with an `HTML` page where one can make orders from our online store. It uses the `fromString()` method from `Http4s`'s `StaticFile` object which takes a `URL` `String`  to an `HTML` file and an `Option` of a `Request[IO]`. If the `URL` is incorrect the client receives status code `404`, meaning the page is not available.
 
 ```scala
-...
+// ...
 import com.rockthejvm.protos.orders.OrderRequest
 
 object AppRoutes {
   case class Orders(values: Seq[OrderRequest])
 
   def restService = HttpRoutes.of[IO] {
-    ...
+    // ...
     case req @ POST -> Root / "submit" => ???
   }
 }
@@ -422,13 +422,13 @@ import scala.util.Random
 object AppRoutes {
   case class Orders(values: Seq[OrderRequest])
 
-  object Orders{
+  object Orders {
     private given itemDecoder: Decoder[Item] = Decoder.instance { h =>
-      for
+      for {
         name <- h.get[String]("name")
         qty <- h.get[Int]("quantity")
         amount <- h.get[Double]("amount")
-      yield Item.of(
+      } yield Item.of(
         name,
         qty,
         amount
@@ -449,7 +449,7 @@ object AppRoutes {
 
     given ordersEntityDecoder: EntityDecoder[IO, Orders] = jsonOf[IO, Orders]
   }
-  ...
+  //...
 }
 ```
 
@@ -483,14 +483,14 @@ OrderRequest(
 Let's see how to process the incoming `POST` requests.
 
 ```scala
-...
+// ...
 import com.rockthejvm.client.Client
 import fs2.Stream
 
 object AppRoutes {
-  ...
+  // ...
   def restService(service: OrderFs2Grpc[IO, Metadata]) = HttpRoutes.of[IO] {
-    ...
+    // ...
      case req @ POST -> Root / "submit" =>
       req
         .as[Orders]
@@ -522,13 +522,13 @@ import fs2.Stream
 
 object AppRoutes {
   case class Orders(values: Seq[OrderRequest])
-  object Orders{
+  object Orders {
     private given itemDecoder: Decoder[Item] = Decoder.instance { h =>
-      for
+      for {
         name <- h.get[String]("name")
         qty <- h.get[Int]("quantity")
         amount <- h.get[Double]("amount")
-      yield Item.of(
+      } yield Item.of(
         name,
         qty,
         amount
@@ -801,7 +801,7 @@ import com.rockthejvm.service.Server.grpcServer
 import cats.syntax.parallel.*
 
 object Main extends IOApp {
-  ...
+  // ...
   def run(args: List[String]): IO[ExitCode] = for {
     remoteService <- grpcServer
         .evalMap(svr => IO(svr.start()))
@@ -946,11 +946,11 @@ Lastly, let's edit `AppRoutes.scala` as well.
 ```diff
 ...
   given itemDecoder: Decoder[Item] = Decoder.instance { h =>
-    for
+    for {
       name <- h.get[String]("name")
       qty <- h.get[Int]("quantity")
       amount <- h.get[Double]("amount")
-    yield Item.of(
+    } yield Item.of(
       name,
       qty,
 -     amount
