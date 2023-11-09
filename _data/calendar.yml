@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "1. Fachkonferenz Sport",
-    "title": "1. Fachkonferenz Sport",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MWQzcW5ubmk2dWU3Y2gzajdsNmpkam0wbzcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2023-11-08T15:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2023-11-08T16:30:00+01:00"
-    },
-    "created": "2023-09-27T09:35:03.000Z",
-    "updated": "2023-09-27T09:35:03.546Z"
-  },
-  {
-    "image_path": null,
     "alt": "1. Fachkonferenz GeWi",
     "title": "1. Fachkonferenz GeWi",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2023-10-12T18:06:03.000Z",
     "updated": "2023-10-12T18:06:03.074Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Weihnachtsbasteln für alle",
+    "title": "Weihnachtsbasteln für alle",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NjlyZnNvaG1lYnQ2NWJ1c29qYjZtaWJ1OTQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2023-12-15T15:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2023-12-15T18:00:00+01:00"
+    },
+    "created": "2023-09-29T04:32:32.000Z",
+    "updated": "2023-09-29T04:32:32.524Z"
   }
 ]
