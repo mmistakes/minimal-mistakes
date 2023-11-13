@@ -1298,6 +1298,8 @@ Here's a picture of this program running on Ubuntu 22.04 with two clients connec
 
 ![udp screenshot](../images/fs2udp/udp.png)
 
+Note: The application may fail incase the online radio link is unreachable, you can always replace it with a working link of your choosing.
+
 ## 7. Conclusion
 In this article, we've learned how to implement a UDP server and client in NIO and then used that knowledge to implement the same application in Fs2. 
 
