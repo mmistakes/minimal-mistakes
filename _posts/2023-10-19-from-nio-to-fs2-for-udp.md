@@ -1206,13 +1206,13 @@ import java.net.{
 }
 
 object RadioServer extends IOApp {
-  def radioServer = {
+  def radioServer(link: String) = {
     val multicastAddress: SocketAddress[IpAddress] =
       SocketAddress(ip"225.4.5.6", port"5555")
     val url: Stream[IO, Byte] = io.readInputStream[IO](
       IO(
         new URL(
-          "http://media-ice.musicradio.com:80/ClassicFM-M-Movies"
+          link
         ).openConnection.getInputStream
       ),
       1024
@@ -1259,11 +1259,13 @@ object RadioServer extends IOApp {
   }
 
   override def run(args: List[String]): IO[ExitCode] =
-    radioServer.compile.drain
+    radioServer(
+      "http://media-ice.musicradio.com:80/ClassicFM-M-Movies"
+    ).compile.drain
       .as(ExitCode.Success)
 }
 ```
-This code should be familiar now, here we create a `radioServer()` function that sends audio to a multicast address which is on port `5555` and IP address `225.4.5.6`.
+This code should be familiar now, here we create a `radioServer()` function that sends audio to a multicast address which is on port `5555` and IP address `225.4.5.6`. It takes a link to the online radio stream as an argument.
 
 To create our byte stream, `url`, we use the `io.readInputStream[IO]()` function that reads bytes from a specified `InputStream` to a buffer with a specified `chunkSize`. Here's the function signature.
 
@@ -1274,7 +1276,7 @@ def readInputStream[F[_$1]](
   closeAfterUse: Boolean = true)
   (implicit F: Sync[F]): fs2.Stream[F, Byte]
 ```
-To create this stream we create a Java `URL` class, pass it the link to our online radio station, then call `.openConnection.getInputStream` on the result to return an `InputStream` that reads from this open connection.
+To create this stream we create a Java `URL` class, pass it the `link` to our online radio station, then call `.openConnection.getInputStream` on the result to return an `InputStream` that reads from this open connection.
 
 We set `F[_]` to `IO` on `io.readInputStream[IO]()` and also wrap our `InputStream` in `IO` as required by the function. `chunkSize` is set `1024` and `closeAfterUse` is left as the default.
 
