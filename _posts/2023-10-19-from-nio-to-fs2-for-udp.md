@@ -1186,104 +1186,37 @@ Tue Oct 24 15:22:20 EAT 2023
 The output is similar to our NIO example.
 
 ## 6. A Practical Example
-In this section, we'll cover a common use case, streaming live audio, for this build we'll be streaming live audio from a pair of earphones or headset that should have a microphone inbuilt. To do this we will make use of the `javax.sound.sampled` library. 
+In this section, we'll cover a common use case, streaming live audio, for this build we'll be streaming audio from an online radio station and interested listeners will be able to listen through FFplay.
 
-Let's create a new file, `CaptureSound.scala` in the following path, `src/main/scala/com/rockthejvm/sound/CaptureSound.scala`, and add the following code.
-
-```scala
-package com.rockthejvm.sound
-
-import cats.effect.{IO, IOApp, ExitCode}
-import javax.sound.sampled.AudioFormat
-
-object CaptureSound extends IOApp{
-  private def getAudioFormat: AudioFormat = {
-    val sampleRate = 44100.0f
-    val sampleSizeInBits = 16
-    val channels = 2
-    val signed = true
-    val bigEdian = true
-
-    new AudioFormat(
-      sampleRate,
-      sampleSizeInBits,
-      channels,
-      signed,
-      bigEdian
-    )
-  }
-
-  def run(args: List[String]): IO[ExitCode] = ???
-}
-```
-We start by defining a private function, `getAudioFormat` that returns an `AudioFormat`. `AudioFormat` is a class from `javax.sound.sampled` that specifies the particular arrangement of data in a sound stream. The provided parameters mean the following:
-
-- `sampleRate` is the number of samples played or recorded per second.
-- `sampleSizeInBits` is the number of bits in each sample of a sound.
-- `channels` is the number of audio channels, 1 for mono and 2 for stereo.
-- `signed` indicates whether the data is signed or unsigned.
-- `bigEdian` indicates whether the data for a single sample is stored in big-endian byte order if true or little-endian if false.
-
-Next, we define a capture function that will capture the sound from our earphones or headset:
+Let's create a new file, `RadioServer.scala` in the following path, `src/main/scala/com/rockthejvm/radio/RadioServer.scala`, and add the following code.
 
 ```scala
-...
-import java.io.OutputStream
-import javax.sound.sampled.DataLine
-import javax.sound.sampled.DataLine.Info
-import javax.sound.sampled.TargetDataLine
-import javax.sound.sampled.AudioSystem
+package com.rockthejvm.radio
 
-object CaptureSound extends IOApp{
-  ...
-  private def capture(out: OutputStream): Unit = {
-    val info: Info = new DataLine.Info(classOf[TargetDataLine], getAudioFormat)
-    val line: TargetDataLine =
-      AudioSystem.getLine(info).asInstanceOf[TargetDataLine]
-    val data: Array[Byte] = new Array[Byte](1024)
-
-    if (AudioSystem.isLineSupported(info)) {
-      line.open()
-      line.start()
-      println("Start capturing...")
-      while (line.isOpen()) {
-        val numBytesRead: Int = line.read(data, 0, data.length)
-        out.write(data, 0, numBytesRead)
-      }
-    } else {
-      println("line not supported")
-    }
-  }
-  ...
-}
-```
-`capture` takes an `OutputStream` as a parameter and returns `Unit`. In our implementation, we start by instantiating a `DataLine.Info` class that provides useful information about a specific audio interface, in this case, the information is about a specific port and data line. 
-
-The `DataLine.Info` class constructor takes as parameters `classOf[TargetDataLine]`, a runtime representation of `TargetDataLine` which is a type of `DataLine` from which audio data can be read, and an `AudioFormat`.
-
-We then call `AudioSystem.getLine(info)` that obtains a line that matches the description from `info`, the result of which is cast as a `TargetDataLine`, and in the next line, we define `data` as an `Array[Byte]` of size 1024. 
-
-Next, we check whether the system supports any lines that match the specified `Line.Info` object by calling `AudioSystem.isLineSupported(info)`, if this is true we call `line.open()` which acquires any required system resources and becomes operational then `line.start()` that allows a line to engage in data I/O after which we print a message showing the user we are starting to capture the audio.
-
-We use a `while` loop that checks if `line` is still open and for each iteration, calls `line.read()` which takes audio data from the data line's input buffer and reads the requested number of bytes into the specified array, `data`. The `read()` method takes as parameters an `Array[Bytes]`, the offset and the number of bytes to be read which is also what is returned. 
-
-Lastly, we call `out.write()` that writes the supplied bytes from the `data` byte array starting at an offset of `0` to `out`, an `OutputStream` passed in as a function parameter.
-
-Let's define our server function:
-
-```scala
-...
+import cats.effect.{IOApp, ExitCode, IO}
 import com.comcast.ip4s.*
-import fs2.{io, Stream}
+import fs2.io
+import java.net.URL
+import fs2.Stream
 import fs2.io.net.{Network, SocketOption, Datagram}
-import java.net.StandardSocketOptions
-import java.net.NetworkInterface
-import java.net.StandardProtocolFamily
+import java.net.{
+  StandardSocketOptions,
+  StandardProtocolFamily,
+  NetworkInterface
+}
 
-object CaptureSound extends IOApp{
-  ...
-  def server = {
-    val address = SocketAddress(ip"225.4.5.6", port"5555")
+object RadioServer extends IOApp {
+  def radioServer = {
+    val multicastAddress: SocketAddress[IpAddress] =
+      SocketAddress(ip"225.4.5.6", port"5555")
+    val url: Stream[IO, Byte] = io.readInputStream[IO](
+      IO(
+        new URL(
+          "http://media-ice.musicradio.com:80/ClassicFM-M-Movies"
+        ).openConnection.getInputStream
+      ),
+      1024
+    )
     Stream
       .resource(
         Network[IO].openDatagramSocket(
@@ -1301,185 +1234,74 @@ object CaptureSound extends IOApp{
           protocolFamily = Some(StandardProtocolFamily.INET)
         )
       )
-      .flatMap { socket =>
-        io.readOutputStream(1024)(out => IO(capture(out)))
-          .chunks
-          .map(data => Datagram(address, data))
-          .through(socket.writes)
-          .drain
-      }
-      .handleErrorWith { error =>
-        Stream.eval(
-          IO.println(s"[multicast client] Error: ${error.getMessage}")
-        )
-      }
-  }
-  ...
-}
-```
-Here we use `io.readOutputStream` which requires two parameters, a `chunkSize` of type `Int` and a function of type `OutputStream => F[Unit]` which when run will emit the bytes recorded in the `OutputStream` as an `fs2.Stream`. 
-
-We provide a chunk size value of `1024` and `out => IO(capture(out))` as the required function passing `out`, the `OutputStream` to the `capture()` function wrapped in `IO`. We then call chunks and map to our audio data to a `Datagram` which is then sent to a multicast group address by calling `socket.writes`.
-
-Let's define our run method:
-
-```scala
-  def run(args: List[String]): IO[ExitCode] =
-    server.compile.drain.as(ExitCode.Success)
-```
-Here's the full code:
-```scala
-package com.rockthejvm.sound
-
-import cats.effect.{IO, IOApp, ExitCode}
-import javax.sound.sampled.AudioFormat
-import java.io.OutputStream
-import javax.sound.sampled.DataLine
-import javax.sound.sampled.DataLine.Info
-import javax.sound.sampled.TargetDataLine
-import javax.sound.sampled.AudioSystem
-import com.comcast.ip4s.*
-import fs2.{io, Stream}
-import fs2.io.net.{Network, SocketOption, Datagram}
-import java.net.StandardSocketOptions
-import java.net.NetworkInterface
-import java.net.StandardProtocolFamily
-
-object CaptureSound extends IOApp {
-  private def getAudioFormat: AudioFormat = {
-    val sampleRate = 44100.0f
-    val sampleSizeInBits = 16
-    val channels = 2
-    val signed = true
-    val bigEdian = true
-
-    new AudioFormat(
-      sampleRate,
-      sampleSizeInBits,
-      channels,
-      signed,
-      bigEdian
-    )
-  }
-
-  private def capture(out: OutputStream): Unit = {
-    val info: Info = new DataLine.Info(classOf[TargetDataLine], getAudioFormat)
-    val line: TargetDataLine =
-      AudioSystem.getLine(info).asInstanceOf[TargetDataLine]
-    val data: Array[Byte] = new Array[Byte](1024)
-
-    if (AudioSystem.isLineSupported(info)) {
-      line.open()
-      line.start()
-      println("Start capturing...")
-      while (line.isOpen()) {
-        val numBytesRead: Int = line.read(data, 0, data.length)
-        out.write(data, 0, numBytesRead)
-      }
-    } else {
-      println("line not supported")
-    }
-  }
-
-  def server = {
-    val address = SocketAddress(ip"225.4.5.6", port"5555")
-    Stream
-      .resource(
-        Network[IO].openDatagramSocket(
-          port = Some(port"5555"),
-          options = List(
-            SocketOption(
-              StandardSocketOptions.IP_MULTICAST_IF,
-              NetworkInterface.getByName("wlxb4b024bc35a7")
-            ),
-            SocketOption(
-              StandardSocketOptions.SO_REUSEADDR,
-              true
+      .evalTap { socket =>
+        IO.println("[multicast server] Udp server is successfully opened") *>
+          socket.localAddress.flatMap(addr =>
+            IO.println(
+              s"[multicast server] Udp server is bound to: ${addr.toString}"
             )
-          ),
-          protocolFamily = Some(StandardProtocolFamily.INET)
-        )
-      )
+          ) *>
+          IO.println(
+            "[multicast server] The Radio stream is starting..."
+          )
+      }
       .flatMap { socket =>
-        io.readOutputStream(1024)(out => IO(capture(out)))
-          .chunks
-          .map(data => Datagram(address, data))
+        url.chunks
+          .map(data => Datagram(multicastAddress, data))
           .through(socket.writes)
           .drain
       }
       .handleErrorWith { error =>
         Stream.eval(
-          IO.println(s"[multicast client] Error: ${error.getMessage}")
+          IO.println(s"[multicast server] Error: ${error.getMessage}")
         )
       }
   }
 
-  def run(args: List[String]): IO[ExitCode] =
-    server.compile.drain.as(ExitCode.Success)
+  override def run(args: List[String]): IO[ExitCode] =
+    radioServer.compile.drain
+      .as(ExitCode.Success)
 }
 ```
+This code should be familiar now, here we create a `radioServer()` function that sends audio to a multicast address which is on port `5555` and IP address `225.4.5.6`.
 
-Now that our server is defined, we need a client that can play audio from a UDP stream, to do this we'll be using the FFplay, a simple and portable media player that comes bundled with FFmpeg. Let's ensure FFplay is installed in our system by running `ffplay -version` in our terminal.
+To create our byte stream, `url`, we use the `io.readInputStream[IO]()` function that reads bytes from a specified `InputStream` to a buffer with a specified `chunkSize`. Here's the function signature.
+
+```scala
+def readInputStream[F[_$1]](
+  fis: F[InputStream], 
+  chunkSize: Int, 
+  closeAfterUse: Boolean = true)
+  (implicit F: Sync[F]): fs2.Stream[F, Byte]
+```
+To create this stream we create a Java `URL` class, pass it the link to our online radio station, then call `.openConnection.getInputStream` on the result to return an `InputStream` that reads from this open connection.
+
+We set `F[_]` to `IO` on `io.readInputStream[IO]()` and also wrap our `InputStream` in `IO` as required by the function. `chunkSize` is set `1024` and `closeAfterUse` is left as the default.
+
+To create our datagrams we use the `url.chunks` method and pass the data chunk to the `Datagram()` case class then pipe these to `socket.writes`.
+
+Before we run our server, we should make sure our multicast interface is connected, if everything runs correctly, we should get the following output:
 
 ```bash
-> ffplay -version
-
-ffplay version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2003-2021 the FFmpeg developers
-built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
-configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
-libavutil      56. 70.100 / 56. 70.100
-libavcodec     58.134.100 / 58.134.100
-libavformat    58. 76.100 / 58. 76.100
-libavdevice    58. 13.100 / 58. 13.100
-libavfilter     7.110.100 /  7.110.100
-libswscale      5.  9.100 /  5.  9.100
-libswresample   3.  9.100 /  3.  9.100
-libpostproc    55.  9.100 / 55.  9.100
+[info] running com.rockthejvm.radio.RadioServer 
+[multicast server] Udp server is successfully opened
+[multicast server] Udp server is bound to: 0.0.0.0:5555
+[multicast server] The Radio stream is starting...
 ```
-Since our server will be streaming 16-bit PCM signed audio at 44100Hz, in order for FFplay to properly play this, we'll need to pass an appropriate format. If we run `ffmpeg -formats | grep PCM` in the terminal, we can use the output as a guide:
+We can now connect to our stream using `FFplay` in the following way:
 
 ```bash
-> ffmpeg -formats | grep PCM
-
-...
- DE alaw            PCM A-law
- DE f32be           PCM 32-bit floating-point big-endian
- DE f32le           PCM 32-bit floating-point little-endian
- DE f64be           PCM 64-bit floating-point big-endian
- DE f64le           PCM 64-bit floating-point little-endian
- DE mulaw           PCM mu-law
- DE s16be           PCM signed 16-bit big-endian
- DE s16le           PCM signed 16-bit little-endian
- DE s24be           PCM signed 24-bit big-endian
- DE s24le           PCM signed 24-bit little-endian
- DE s32be           PCM signed 32-bit big-endian
- DE s32le           PCM signed 32-bit little-endian
- DE s8              PCM signed 8-bit
- DE u16be           PCM unsigned 16-bit big-endian
- DE u16le           PCM unsigned 16-bit little-endian
- DE u24be           PCM unsigned 24-bit big-endian
- DE u24le           PCM unsigned 24-bit little-endian
- DE u32be           PCM unsigned 32-bit big-endian
- DE u32le           PCM unsigned 32-bit little-endian
- DE u8              PCM unsigned 8-bit
- DE vidc            PCM Archimedes VIDC
+ffplay udp://225.4.5.6:5555
 ```
-This output shows a list of formats and their associated meanings when dealing with PCM data. From the list above we see that the `s16be` matches our required format. 
-
-We play our live audio stream by running `ffplay -f s16be -ar 44100 -ac 2  udp://225.4.5.6:5555` where `-f` stands for format, `-ar` the sample rate and `-ac` the number of channels. Remember these values were used when defining `AudioFormat`.
-
-To run our application make sure our multicast interface is up and running, ensure that your earphones or headsets are plugged into the computer, start the server then run `ffplay -f s16be -ar 44100 -ac 2  udp://225.4.5.6:5555` in the terminal to start the client, this should bring a popup window when ffplay starts playing the stream. 
-
-If you talk into your mic, you should be able to hear yourself and the the ffplay pop-up window should show some visualizations as it plays.
-
-Here is an image of me running the server at the bottom, and two clients at the top:
+This should bring up a popup screen with some audio visualizations while the radio station is playing. 
+Here's a picture of this program running on Ubuntu 22.04 with two clients connected.
 
 ![udp screenshot](../images/fs2udp/udp.png)
 
 ## 7. Conclusion
 In this article, we've learned how to implement a UDP server and client in NIO and then used that knowledge to implement the same application in Fs2. 
 
-We covered what multicasting is, how it works, and we developed a UDP server that streams live audio from a pair of earphones or headsets using its built-in microphone. 
+We covered what multicasting is, how it works, and we developed a UDP multicast server to stream an online radio station to multiple clients. 
 
 We've seen that the `fs2.io.net` package provides an easier purely functional interface for building UDP applications, the implementation is shorter, more concise, and readable code compared to NIO. 
 
