@@ -8,7 +8,7 @@
 
 *부트스트랩* [Link] (https://getbootstrap.com/docs/5.3/getting-started/introduction/) .
 
-''' html
+```html
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,7 +22,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
-'''
+```
 
 로그인 페이지에는 username을 넣을 수 있는 박스와 password 를 넣을 수 있는 박스가 필요합니다.
 
@@ -30,14 +30,14 @@
 ![이미지](/assets/부트스트랩_username.png)
 
 해당 코드를 붙여넣기 해줍니다.
-'''html
+```html
 <div class="input-group flex-nowrap">
   <span class="input-group-text" id="addon-wrapping">@</span>
   <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
 </div>
-'''
+```
 
-''' html
+```html
 <!doctype html>
 <html lang="en">
   <head>
@@ -59,10 +59,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
-'''
+```
 
 username 박스가 2개가 있으므로 아래 박스를 password로 수정하겠습니다.
-''' html
+```html
 <!doctype html>
 <html lang="en">
   <head>
@@ -84,7 +84,7 @@ username 박스가 2개가 있으므로 아래 박스를 password로 수정하�
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
-'''
+```
 
 버튼을 만들어야 합니다.
 버튼을 만들기 위해 *Components*에 있는 *Buttons*에서 찾아보겠습니다.
@@ -93,7 +93,7 @@ username 박스가 2개가 있으므로 아래 박스를 password로 수정하�
 
 두 박스를 지운 뒤 이걸 쓰고 수정을 하도록 하겠습니다.
 
-''' html
+``` html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -123,8 +123,7 @@ username 박스가 2개가 있으므로 아래 박스를 password로 수정하�
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
-
-'''
+```
 
 로그인 페이지를 완성했습니다.
 
@@ -132,7 +131,7 @@ username : admin
 password : password
 만 작동하도록 간단한 php코드를 만들겠습니다.
 
-'''php
+```php
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
@@ -145,7 +144,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
-'''
+```
 
 로그인 화면입니다.![이미지](/assets/login_test_html.png)
 
