@@ -1,22 +1,18 @@
 ---
-title: "Fill the title here"
+title: "Debugging SPARQL queries through algebra"
 categories: [Open Mic Announcement, Open Mic]
 ---
 
 <!-- Naming convention: post MUST be named beginning with YEAR-MM-DD-title.MARKDOWN. Create a COPY of this file in _posts and rename it according to the convention. The date is not date of presentation, but date of publication of the announcement. The title in human readable form is put in the quotes to the title parameter in front matter  -->
 
-Content: Fill in when and where the next open mic session will take place. Remember, first paragraph is also an excerpt, so keep it short and informative. The best practice is: The Open mic session starts on Friday 14 April 2023 at [this link](https://meet.jit.si/open-mic-kbss). The speaker is [Miroslav Blaško](https://kbss.felk.cvut.cz/web/team#miroslav-blaško) who is going to talk about something really interesting.
-
-You may also include picture. For pictures, place them somewhere in assets/images/... and use following code:
-
-{% include figure image_path="/assets/images/path_to_the_image" alt="title on popup or when it cannot be shown" %}{: .align-right .profile-photo}
+The Open mic session starts on Friday 24th November 2023 at 10:30 at [this link](https://meet.jit.si/open-mic-kbss). The speaker is [Miroslav Blaško](https://kbss.felk.cvut.cz/web/team#miroslav-blaško) who opens the topic of Debugging SPARQL Queries using algebra.
 
 
 ##### The abstract
 
-Text of the abstract will be here. It may be also as a short summary.
-
-In the end, you may include further reading.
+Semantics of SPARQL queries can be expressed by SPARQL Algebra. Tools like [SPARQL Validator](http://sparql.org/query-validator.html) provides [translation of SPARQL queries into its algebraic representation](https://www.w3.org/TR/2013/REC-sparql11-query-20130321/#sparqlQuery). 
+The talk will explore a few perplexing examples of SPARQL queries, illustrating how the translation can be used to understand/debug such queries. 
 
 Further reading:
-* [Link text](https://linkadre.ss)
+* [SPARQL 1.1 Query Language / 18.5 SPARQL Algebra](https://www.w3.org/TR/sparql11-query/#sparqlAlgebra)
+* "[Knowledge Graphs, Lecture 6: SPARQL Semantics](https://iccl.inf.tu-dresden.de/w/images/c/c9/KG2021-Lecture-06-overlay.pdf)", TU Dresden, Faculry of Computer Science, 2021.
