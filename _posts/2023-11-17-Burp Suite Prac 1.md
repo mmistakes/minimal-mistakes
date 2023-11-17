@@ -15,7 +15,7 @@ Burp Suite prac 1
 Burp Suite로 링크를 다시 열어 interecept를 하겠습니다.
 ![이미지](/assets/intercept_prac1.png)
 
-==User-Agent== 헤더에 segfaultDevice를 넣어서 Forward 시키겠습니다.
+<span style="background-color:#fff5b1"> User-Agent </span> 헤더에 segfaultDevice를 넣어서 Forward 시키겠습니다.
 ![이미지](/assets/prac1_result.png)
 
 아까와는 다른 페이지가 나왔습니다.
