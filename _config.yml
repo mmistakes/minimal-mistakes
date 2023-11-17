@@ -15,12 +15,12 @@
 minimal_mistakes_skin    : "sunrise" #"default" "air", "aqua", "contrast", "dark", "dirt", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 title                    : "kanu's home"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title_separator          : "|"
+subtitle                 : "no pain no gain"
 name                     : "kwanwoo kim"
-description              : "An amazing website."
+description              : "카누의 블로그 입니다."
 url                      : "https://kanu-kim.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
