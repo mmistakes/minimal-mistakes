@@ -17,10 +17,10 @@
 ![이미지](/assets/a.html.png)
 
 <span style="font-size: 18px;">별 소득이 없으므로 이번엔 b.html 문서를 확인하겠습니다.</span>
-![이미지](/assets/b.html.png.png)
+![이미지](/assets/b.html.png)
 
 <span style="font-size: 18px;">a.html 문서와 비슷해보입니다.</span>
 <span style="font-size: 18px;">a.html 문서와 b.html 문서를 comparer로 비교해보겠습니다. </span>
 ![이미지](/assets/comparer.png)
-    
+
 <span style="font-size: 18px;">두 문서 사이에 flag가 숨겨져 있었습니다.</span>
