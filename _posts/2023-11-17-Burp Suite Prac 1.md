@@ -24,3 +24,4 @@ Burp Suite로 링크를 다시 열어 Intercept를 하겠습니다.
 ![이미지](/assets/sourcecode2.png)
 
 <span style="font-size: 18px;">Flag를 얻었습니다.</span>
+
