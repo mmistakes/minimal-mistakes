@@ -1,4 +1,4 @@
-Burp Suite를 이용해 Segfault 워게임을 풀어보겠습니다.
+<span style="font-size: 18px;">Burp Suite를 이용해 Segfault 워게임을 풀어보겠습니다.</span>
 
 Burp Suite prac 1
 ![이미지](/assets/burpsuite_prac1.png)
@@ -9,7 +9,7 @@ Burp Suite prac 1
 정보가 없으므로 소스코드를 통해 확인해보겠습니다.
 ![이미지](/assets/sourcecode1.png)
 
-==header User-Agent에 segfaultDevice 라고 넣어서 보내보세요!==
+<span style="background-color:#fff5b1"> header User-Agent에 segfaultDevice 라고 넣어서 보내보세요! </span>
 라는 주석이 달려있습니다.
 
 Burp Suite로 링크를 다시 열어 interecept를 하겠습니다.
