@@ -18,16 +18,16 @@ minimal_mistakes_skin    : "sunrise" #"default" "air", "aqua", "contrast", "dark
 locale                   : "ko-KR"
 title                    : "kanu's home"
 title_separator          : "|"
-subtitle                 : "no pain no gain"
+subtitle                 : "simple and clear"
 name                     : "kwanwoo kim"
 description              : "카누의 블로그 입니다."
 url                      : "https://kanu-kim.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/sin.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "kwanwoo"
+  name             : "Kanu"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "Kanu의 블로그 입니다."
   location         : "Seoul, Korea"
   email            : "kanu7546@gmail.com"
   links:
@@ -283,10 +283,13 @@ defaults:
   - scope:
       path: ""
       type: posts
-    values:
+    values: 
       layout: single
       author_profile: true
       read_time: true
       comments: # true
       share: true
       related: true
+      show_date: true
+
+date_format: "%Y-%m-%d"
