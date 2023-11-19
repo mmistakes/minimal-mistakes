@@ -13,8 +13,11 @@
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+#youtube comment
+future                   : true
 
 # Site Settings
+pulished                 : true
 locale                   : "en-US"
 title                    : "Site Title"
 title_separator          : "-"
