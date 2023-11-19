@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Kanu"
   avatar           : "/assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Kanu의 블로그 입니다."
+  bio              : "분석 블로그 입니다."
   location         : "Seoul, Korea"
   email            : "kanu7546@gmail.com"
   links:
