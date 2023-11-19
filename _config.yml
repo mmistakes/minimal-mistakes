@@ -17,7 +17,6 @@ minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt"
 future                   : true
 
 # Site Settings
-pulished                 : true
 locale                   : "en-US"
 title                    : "Site Title"
 title_separator          : "-"
