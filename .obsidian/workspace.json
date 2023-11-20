@@ -1,0 +1,164 @@
+{
+  "main": {
+    "id": "dc363ecc6916a8c8",
+    "type": "split",
+    "children": [
+      {
+        "id": "61cea0b6325ac3cc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "67698f40f3cf6f52",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "screenshot.png"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "faa5d1c97e8b9e7e",
+    "type": "split",
+    "children": [
+      {
+        "id": "43c2e66a0012daee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae0154df16ab3aee",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "86fc0ff284092c89",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "58ce77bd50fe2c47",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6e64f1f009108d81",
+    "type": "split",
+    "children": [
+      {
+        "id": "ada73b3c5380f0ad",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "245cce1b7a4cf9ab",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "screenshot.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "731cd112099844d7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "screenshot.png",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2451deb40641a319",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "4ebca21bcf69ac51",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "screenshot.png"
+              }
+            }
+          },
+          {
+            "id": "ff3dad52b3d6fa12",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "ae0154df16ab3aee",
+  "lastOpenFiles": [
+    "_posts",
+    "screenshot-layouts.png",
+    "screenshot.png",
+    "README.md",
+    "test/assets/images/mm-github-edit-config.gif"
+  ]
+}

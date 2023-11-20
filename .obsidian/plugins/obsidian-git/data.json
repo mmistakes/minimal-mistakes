@@ -1,0 +1,53 @@
+{
+  "commitMessage": "vault backup: {{date}}",
+  "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
+  "autoSaveInterval": 0,
+  "autoPushInterval": 0,
+  "autoPullInterval": 0,
+  "autoPullOnBoot": false,
+  "disablePush": false,
+  "pullBeforePush": true,
+  "disablePopups": false,
+  "listChangedFilesInMessageBody": false,
+  "showStatusBar": true,
+  "updateSubmodules": false,
+  "syncMethod": "merge",
+  "customMessageOnAutoBackup": false,
+  "autoBackupAfterFileChange": false,
+  "treeStructure": false,
+  "refreshSourceControl": true,
+  "basePath": "",
+  "differentIntervalCommitAndPush": false,
+  "changedFilesInStatusBar": false,
+  "showedMobileNotice": true,
+  "refreshSourceControlTimer": 7000,
+  "showBranchStatusBar": true,
+  "setLastSaveToLastCommit": false,
+  "submoduleRecurseCheckout": false,
+  "gitDir": "",
+  "showFileMenu": true,
+  "lineAuthor": {
+    "show": false,
+    "followMovement": "inactive",
+    "authorDisplay": "initials",
+    "showCommitHash": false,
+    "dateTimeFormatOptions": "date",
+    "dateTimeFormatCustomString": "YYYY-MM-DD HH:mm",
+    "dateTimeTimezone": "viewer-local",
+    "coloringMaxAge": "1y",
+    "colorNew": {
+      "r": 255,
+      "g": 150,
+      "b": 150
+    },
+    "colorOld": {
+      "r": 120,
+      "g": 160,
+      "b": 255
+    },
+    "textColorCss": "var(--text-muted)",
+    "ignoreWhitespace": false,
+    "gutterSpacingFallbackLength": 5
+  },
+  "autoCommitMessage": "vault backup: {{date}}"
+}
