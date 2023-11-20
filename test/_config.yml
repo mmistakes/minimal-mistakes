@@ -13,7 +13,7 @@ locale                   : "en-US"
 title                    : "Minimal Mistakes"
 title_separator          : "-"
 subtitle                 : "Development Test Site"
-name                     : "Jung"
+name                     : "Jeong"
 description              : "Minimal Mistakes theme test."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/test"
@@ -92,7 +92,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jung"
+  name             : "Jeong"
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "meowmew"
   location         : "Somewhere"
