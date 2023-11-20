@@ -11,9 +11,11 @@
             "id": "67698f40f3cf6f52",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "screenshot.png"
+                "file": "_posts/2023-11-20-What are Git and GitHub_.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "screenshot.png",
+                "file": "_posts/2023-11-20-What are Git and GitHub_.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "screenshot.png",
+                "file": "_posts/2023-11-20-What are Git and GitHub_.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "screenshot.png"
+                "file": "_posts/2023-11-20-What are Git and GitHub_.md"
               }
             }
           },
@@ -153,11 +155,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ae0154df16ab3aee",
+  "active": "67698f40f3cf6f52",
   "lastOpenFiles": [
+    "screenshot.png",
+    "_posts/2023-11-20-What are Git and GitHub_.md",
     "_posts",
     "screenshot-layouts.png",
-    "screenshot.png",
     "README.md",
     "test/assets/images/mm-github-edit-config.gif"
   ]
