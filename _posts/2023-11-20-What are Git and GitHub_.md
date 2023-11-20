@@ -79,33 +79,22 @@ author_profile: false
 </head>
 
 
-# What are Git and GitHub?
-
+# Git과 GitHub란?
 ---
 
-## Git과 GitHub란?
-
-</br>  
-
-
+![](https://blog.kakaocdn.net/dn/mClmk/btszK7QNjBW/KrWV3gJdMNROm7lxK4YD41/img.png)
 
 팀 단위 프로젝트를 진행할 때, 누구나 한 번쯤 들어본 말이 있다.   
 **"Git에 커밋해주세요."**   
 오늘은 'Git'과 'GitHub'의 차이와 사용 방법에 대해 말해보고자 한다.  
 
-</br>  
-
-
-
 가장 직관적으로 설명하자면 Git은 로컬 저장소, Github는 원격 저장소라고 할 수 있다.   
 로컬 저장소란 작업을 진행하고 있는 PC 자체에서 작업물의 형상을 관리할 수 있는 저장소, 원격 저장소란 로컬 저장소에서 작업을 진행한 후 타인과의 협업을   위해 웹 사이트(예를 들어 github, gitlab 등)에 저장하여 다수의 작업자가 특정 작업물의 형상을 관리할 수 있는 저장로를 말한다.  
 
-![image.png](attachment:image.png)  
+![](https://blog.kakaocdn.net/dn/bskYn6/btszKCcnmCX/IztEhAbDIuonyAYB9Jv8Ik/img.png)
 
 Git과 GitHub의 연관관계를 이해를 했다면, 그 다음은 실제로 어떤 명령어로 Git과 GitHub에 수정된 작업물을 저장하는지 알아보자.  
 수정한 작업물에 대한 형상관리 흐름을 파악하기 위해서는 기본적으로 'init', 'add', 'commit', 'push', 'clone', 'pull' 이 6가지의 명령어를 알아둘 필요가 있다.  
-
-</br>  
 
 |명령어|설명
 |:---|:---|
@@ -116,12 +105,12 @@ Git과 GitHub의 연관관계를 이해를 했다면, 그 다음은 실제로 �
 |git clone [레파지토리 url]|원격 저장소의 레파지토리를 로컬 저장소에 추가한다.|
 |git pull origin master|원격 저장소의 변경된 항목들을 로컬 저장소에 추가한다.(설정에 따라 origin과 master는 변경이 된다.)|  
 
-</br>   
+위의 표를 참고하여 깃 협업의 기본적인 플로우를 도식화한다면 아래와 같다.
+
+![](https://blog.kakaocdn.net/dn/c1LG9Z/btszNT0nQ0b/1jpLFgbNwMXLPLiXpLkBck/img.png)
+
 이처럼 'init - add - commit - push - clone - pull'의 과정을 이해하면 git의 다양한 기능을 이해하는 것 또한 어렵지 않을 것이다.  
 
-</br>  
-
-</br>  
 
 ## 글을 마치며  
 
