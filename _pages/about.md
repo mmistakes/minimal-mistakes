@@ -2,11 +2,11 @@
 permalink: /about/
 title: "About"
 layout: single
-excerpt: "Impedance Mismatch is a blog for coding, projects, and cool tech stuff."
+excerpt: "Impedance Mismatch is a blog for tech projects, personal ramblings, and cool tech stuff."
 modified: 2017-03-01T14:28:13-05:00
 ---
 
-Impedance Mismatch is a blog for me to record my side projects, cool tech finds, and ramblings about code.
+Impedance Mismatch is a blog for me to record my side projects, cool tech finds, and ramblings.
 
 
 ---
@@ -21,4 +21,4 @@ Impedance Mismatch is a blog for me to record my side projects, cool tech finds,
 
 ---
 
-This blog is authored and maintained by Jacob DePriest - an engineer, dad, and tech hobbyist.
+This blog is authored and maintained by Jacob DePriest - an engineer, security leader, dad, and whisky nerd.

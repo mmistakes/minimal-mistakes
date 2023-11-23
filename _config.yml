@@ -19,7 +19,7 @@ locale                   : "en"
 title                    : "Impedance Mismatch"
 title_separator          : "-"
 name                     : "Jacob DePriest"
-description              : "A blog about tech projects and coding."
+description              : "A personal blog about tech projects, fitness, and other random things."
 url                      : "https://www.impedancemismatch.io" # the base hostname & protocol for your site
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : jdepriest/jdepriest.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -105,7 +105,7 @@ analytics:
 author:
   name             : "Jacob DePriest"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Engineer, coder, tech hobbyist, and dad."
+  bio              : "Engineer, security leader, dad, and whisky nerd."
   location         : "Somewhere"
   email            :
   links:
