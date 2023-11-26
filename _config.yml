@@ -28,7 +28,7 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : '../assets/images/logo.png'
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : True # 디렉토리 표시 
+breadcrumbs              : True # 계층구조 표시
 words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
