@@ -2,6 +2,7 @@
 layout: posts
 title: "소개"
 permalink: /about/
+background: /assets/project1.jpeg/
 ---
 
 ## University Student, who doesn't get afraid of challenging.
