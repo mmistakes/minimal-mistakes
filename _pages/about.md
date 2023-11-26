@@ -1,10 +1,10 @@
 ---
-title: "소개"
+title: "About me"
 permalink: /about/
 layout: single
 ---
 
-## 가천대학교 컴퓨터공학과
+## University Student, who doesn't get afraid of challenging.
 
 간단한 이력소개
 
