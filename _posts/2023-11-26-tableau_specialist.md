@@ -4,6 +4,8 @@ title: 'Tableau Desktop Specialist'
 categories: tableau
 tag: [tableau]
 author_profile: false
+published: false
+
 ---
 
 ## Connecting to & Prepareing Data
