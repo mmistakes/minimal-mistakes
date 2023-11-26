@@ -1,12 +1,10 @@
 ---
+layout: posts
 title: "소개"
 permalink: /about/
-layout: single
 ---
 
 ## University Student, who doesn't get afraid of challenging.
-
-간단한 이력소개
 
 * 안드로이드 스튜디오를 사용한 Kotlin 모바일 프로그래밍 <br/>
 * Intelij를 사용한 SpringBoot 백엔드 개발 <br/>
