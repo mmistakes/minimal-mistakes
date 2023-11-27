@@ -18,7 +18,7 @@ future                   : true
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "KWON_JJAZZ's Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Your Name"
@@ -106,7 +106,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "KWON JJAZZ"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
   location         : "Somewhere"
