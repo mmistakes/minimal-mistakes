@@ -113,8 +113,11 @@ Study on the lower power communications and networking techniques for Massively 
 * Smart Manufacturing(Industrie 4.0)
 * Mobile(cellular) / wireless communication Protocol
 * IoT, Ubiquitous communication techniques, wireless sensor networks 
+* Statistics
 * Information theory 
-* IT security 
+<!-- * IT security  -->
+
+
 
 
 ## SPECIALTIES
@@ -129,7 +132,7 @@ Study on the lower power communications and networking techniques for Massively 
 *	Citizenship: Korea
 *	Gender: Male
 *	Marital Status: Married
-*	Military Service: Completed with honorable discharge from Republic of Korea Army(26 months)
+*	Military Service: Completed with honorable discharge from Republic of Korea Army (26 months)
 
 
 ## HONORS AND AWARDS 
@@ -145,10 +148,16 @@ Study on the lower power communications and networking techniques for Massively 
 
 
 
-## PUBLICATIONS AND PRESENTATIONS(selected, academic) 
+## PUBLICATIONS AND PRESENTATIONS
+
+### 
+ 
+
+### Academic(<em> Seletcted</em>)
 #### International Journal:
 
-[1]  Seungho Bae, Insoo Koo, Kiseon Kim, "Empirical Detection Strategy Based on Histogram Information in Wireless Sensor Networks" GESTS International Transactions on Computer Science and Engineering Volume 36, Number 1, pp. 198-290, January 2007
+[1]  Seungho Bae, Insoo Koo, Kiseon Kim,      
+"Empirical Detection Strategy Based on Histogram Information in Wireless Sensor Networks" GESTS International Transactions on Computer Science and Engineering Volume 36, Number 1, pp. 198-290, January 2007
 
 #### International Conference:
 
