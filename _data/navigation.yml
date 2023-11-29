@@ -5,6 +5,17 @@ main:
   - title: "Tag"
     url: /tags/
 
+docs:
+  - title: "Language"
+    children:
+      - title: C
+        url: /categories/c
+      - title: Python
+        url: /categories/python
+
+sidebar-category:
+  - title: "Category"
+    url: ""
 
 counts:
   - title: "Category"
