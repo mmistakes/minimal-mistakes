@@ -13,9 +13,6 @@ docs:
       - title: Python
         url: /categories/python
 
-sidebar-category:
-  - title: "Category"
-    url: ""
 
 counts:
   - title: "Category"
