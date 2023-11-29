@@ -1,5 +1,5 @@
 ---
-title: "Debugging SPARQL queries through algebra"
+title: "Upcoming Open Mic - Debugging SPARQL queries through algebra"
 categories: [Open Mic Announcement, Open Mic]
 ---
 
