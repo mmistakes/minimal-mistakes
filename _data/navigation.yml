@@ -4,6 +4,14 @@ main:
     url: /categories/
   - title: "Tag"
     url: /tags/
+
+
+counts:
+  - title: "Category"
+    use: true
+  - title: "Tag"
+    use: true
+  
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
