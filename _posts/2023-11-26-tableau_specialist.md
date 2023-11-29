@@ -20,54 +20,59 @@ Tableau Desktop Specialist 자격증을 공부하면서 개념들을 정리해 �
 2) Selcet Data on the toolbar, selecting the data source, and then selecting Add to Saved Data Source. 
 
 ### Metadata
-Renaming fields and Changing the defaults for formatting or aggregation are metadata management tasks that can be handled in Tableau
+**Renaming fields** and **Changing the defaults for formatting** or **aggregation** are metadata management tasks that can be handled in Tableau
 
-Cannor change the data type, the number of rows in the data 
+Cannot change the data type, the number of rows in the data 
 
 ### Between Join and Relationship
+**Relationships** are created in the **logical layer**, while **joins** are created in the **physical layer**.
 
-Relationships are created in the logical layer, while joins are created in the physical layer.
 ### Relationship
 Relationship connect tables using noodles in the logical layer. 
+
 ### Join 
 
 cross database join can combine tables stored in different databases.
 
 A join queries **all the specified tables**, regardless of whether fields from those tables are used in the view. 
 
-Join create an extract using the denormalized table. When you use the physical table option, The denormalized table resulting from the join is saved
-
+Join create an extract using the **denormalized table**. When you use the physical table option, The denormalized table resulting from the join is saved
 
 #### outer join
-outer join will include all rows from both tables, even when the join criteria is not met, while a blend will not include rows from the secondary table unless there is a match on the linking field.
+outer join will include **all rows from both tables**, even when the join criteria is not met, while a blend will not include rows from the secondary table unless there is a match on the linking field.
 
 
 ### Union 
 Union is a method for appending values (rows) to table. you can use this method if both tables have the same columns
 
-If the field names do not match, the fields will be included in the UNION but will contain null values for the rows from the table that is missing the field.
+If the field names do not match, the fields will be included in the UNION but will contain **null values** for the rows from the table that is missing the field.
+
 
 ![Alt text]({{site.url}}/images/2023-11-26-tableau_specialist/union.png){: .align-center .img-height-half }  
 
 
 Describes how to create a union of two table.
 
-1) On the datasource page, drag the first table into the canvas. Then drag a second table onto the canvas, below the first table.
+1) On the datasource page, drag the first table into the canvas. Then drag a second table onto the canvas, **below the first table**.
 
-2) On the data source page, double-check the "New union" icon. A Union menu will appear, Drag both tables to the Union Menu, then click OK.
+2) On the data source page, double-check the **"New union" icon**. A Union menu will appear, Drag both tables to the Union Menu, then click OK.
 
 ### Blend
-blends avoid duplicated when the tables are at different levels of granularity, making them preferable to join in some situation.
+blends **avoid duplicated when the tables are at different levels of granularity**, making them preferable to join in some situation.
 
-blends can combine tables stored in different databases. it involves a primary and secondary data source. 
+blends can combine tables stored in **different databases**. it involves a **primary** and **secondary** data source. 
 
-Tables are kept as sepatare data sources, with the highlighted paperclip icon linking them
+Tables are kept as sepatare data sources, with the **highlighted paperclip icon** linking them
 
-**Data blending** simulates a tranditional **left join** . The main difference between the two is when the aggregation is performed. A join combines the data and then aggregates, A blend aggregated and the combines the data
+**Data blending** simulates a tranditional **left join** . The main difference between the two is when the aggregation is performed. 
+
+A join combines the data and then aggregates, A blend aggregated and the combines the data
 
 Data blending is performed on a **sheet-by-sheet** basis and is established when a field from a second data source is used in the view
 
-Primary ata source appears with a Blue tick-mark and the secondary data source appears with a Orange tick-mark.
+Primary data source appears with a **Blue tick-mark** and the secondary data source appears with a **Orange tick-mark**.
+
+![Alt text]({{site.url}}/images/2023-11-26-tableau_specialist/blend.png){: .align-center .img-height-half }  
 
 
 ### Union 
@@ -75,18 +80,19 @@ To append rows from one table to rows from another table
 
 ### Live connection
 
-If your organization enforces user-level permissions to databases, use a live connection for workbooks that connect those databases.
-That ways, users who interact with workbooks and data source that require authentication will be prompted for credentioals. 
+If your organization enforces user-level **permissions to databases**, use a live connection for workbooks that connect those databases.
+
+That ways, users who interact with workbooks and data source that **require authentication will be prompted for credentioals**. 
 
 ### File Type
 
-(1) **.TDS file** : TDS files save the data source metadata, such as the connection information, default filed formatting, and sort order. They don't save the data source itself, and hence you should use this format if everyone who will use the data source hass access to the underlying file or database defined in the connection information.
+(1) **.tds(Tableau Data Source)** :  TDS files save the data source metadata, such as the **connection information, default filed formatting, and sort order**. They don't save the data source itself, and hence you should use this format if everyone who will use the data source hass access to the underlying file or database defined in the connection information.
 
 TDS 파일은 데이터 소스의 설정 정보를 저장하는데 사용되며, 실제 데이터 소스 자체를 저장하지는 않습니다. 데이터 원본 파일은 자주 사용하는 원본 데이터에 빠르게 연결하기 위한 바로 가기입니다. 이 파일 형식은 데이터 소스를 사용하는 모든 사용자가 연결된 파일 또는 데이터베이스에 액세스 할 수 있는 경우에 적합합니다.
 
 TDS files are data source files which do not contain the data. but to include the connection information.
 
-To not contain the actual data but rather the information necessary to connect to the actual data as well as any modification you've made on top of the actual data such as changing default properties, creating calculated field etc. 
+**To not contain the actual data** but rather the information necessary to connect to the actual data as well as any modification you've made on top of the actual data such as **changing default properties, creating calculated field etc.** 
 
 Tableau 데이터 소스를 나타내며, 이는 실제 데이터를 포함하지 않고 대신에 실제 데이터에 연결하고 해당 데이터 위에 만든 변경 사항을 포함하는 정보를 나타냅니다. 이 변경 사항에는 기본 속성 변경, 계산된 필드 생성 등이 포함될 수 있습니다.
 
@@ -111,16 +117,16 @@ It contains viz, info needed to build the viz, and a copy of the data source.
 
 이는 데이터 세트의 일부 또는 전체에 대한 로컬 복사본을 생성하는 데 사용됩니다. 이를 통해 데이터를 다른 사람들과 공유하거나 오프라인에서 작업하거나 성능을 향상시킬 수 있습니다. 
 
-(4) **TWB** : twb stands for tableau workbook. it include the worksheet and dashboards (if any) but not the connection information. 
+(4)  **.twb (Workbook)** : twb stands for tableau workbook. it include the worksheet and dashboards (if any) but not the connection information. 
 
  To hold one or more worksheet plus zero or more dashboards and stories  
 
 이 파일 형식은 하나 이상의 워크시트와 0개 이상의 대시보드 및 스토리를 포함할 수 있습니다. 
 
 
-(5) **.TDSX** : TDSX is a zip file containing the data source file(tds) as well as any extra files and local files 
+(5) **.tdsx (Tableau packed data source)** : TDSX is a zip file containing the data source file(tds) as well as any extra files and local files 
 
- 데이터 원본 파일(.tds)뿐만 아니라 추출 파일(.hyper), 텍스트 파일, Excel 파일, Access 파일 및 로컬 큐브 파일과 같은 모든 로컬 파일 데이터도 포함하는 zip 파일입니다. 
+ 데이터 파일(.tds)뿐만 아니라 추출 파일(.hyper), 텍스트 파일, Excel 파일, Access 파일 및 로컬 큐브 파일과 같은 모든 로컬 파일 데이터도 포함하는 zip 파일입니다. 
 
 (6) **.twm (bookmark)** - To contain a single worksheet and quickly share your work
 
@@ -130,16 +136,13 @@ Which file type can include an extract?
 tds do not contain the actial data. twb can connect to extracts. but they do not themselves include extract 
 
 
-e actial data. twb can connect to extracts. but they do not themselves include extract 
-
-
 ### Field
 
 ![Alt text]({{site.url}}/images/2023-11-25-tableau1/field.png){: .align-center} 
 
-**Continuous** means "forming an unbroken whole, without interruption". These fields are colored **green**. When a continuous field is put on the Rows or Columns shelf, an axis is created in the view.
+**Continuous** means "forming an unbroken whole, without interruption". These fields are colored **green**. When a continuous field is put on the Rows or Columns shelf, an **axis** is created in the view.
 
-**Discrete** means "individually separate and distinct." These fields are colored **blue**. When a discrete field is put on the Rows or Columns shelf, a header is created in the view.
+**Discrete** means "individually separate and distinct." These fields are colored **blue**. When a discrete field is put on the Rows or Columns shelf, a **header** is created in the view.
 
 Table auto-generate **1 Dimension, 4 Measure**
 
@@ -166,15 +169,15 @@ Dimensions can only create header. Measures will create header axis both.
 
 #### Extracts are advantageous for several reasons
 
-1. Supports large data sets: You can create extracts that contain billions of rows of data.
+1. **Supports large data sets**: You can create extracts that contain billions of rows of data.
 
-2. Help improve performance: When you interact with views that use extract data sources, you generally experience better performance than when interacting with views based on connections to the original data.
+2. **Help improve performance**: When you interact with views that use extract data sources, you generally experience better performance than when interacting with views based on connections to the original data.
 
-3. Support additional functionality: Extracts allow you to take advantage of Tableau functionality that's not available or supported by the original data, such as the ability to compute Count Distinct.
+3. **Support additional functionality**: Extracts allow you to take advantage of Tableau functionality that's not available or supported by the original data, such as the ability to compute Count Distinct.
 
-4. Provide offline access to your data: If you are using Tableau Desktop, extracts allow you to save and work with the data locally when the original data is not available. For example, when you are traveling.
+4. **Provide offline access to your data**: If you are using Tableau Desktop, extracts allow you to save and work with the data locally when the original data is not available. For example, when you are traveling.
 
-5. Fast to create : If You're working with large data sets, creating and working with extracts can be faster than working with the original data.
+5. **Fast to create** : If You're working with large data sets, creating and working with extracts can be faster than working with the original data.
 
 #### The things that can be configured when creating an extract.
 
@@ -193,24 +196,24 @@ Dimensions can only create header. Measures will create header axis both.
 
 ![Alt text]({{site.url}}/images/2023-11-26-tableau_specialist/extract_size.png){: .align-center .img-height-half }  
 
-Physical Table option can potentially improvemance and help reduce the size of the extract file.
+Physical Table option can potentially improvemance and help **reduce the size of the extract file.**
 
-Using the incrementa fresh option should not impact the size of the extract . it should only impact whether the refresh works by removing the old extract completely and recreating it, or whether it adds new rows to the existing extract .
+Using the incrementa fresh option should not impact the size of the extract . it should only impact whether the refresh works by **removing the old extract completely and recreating it, or whether it adds new rows to the existing extract .**
 
-Materializinf calculations may reduce the time to open the workbook since the results of the calculations will be saved in the extract, bu will no reduce the workbook size.
+Materializing calculations may reduce the time to open the workbook since the results of the calculations will be saved in the extract, bu will no reduce the workbook size.
 
 ### Data pane 
 ![Alt text]({{site.url}}/images/2023-11-25-tableau1/data_pane_.png){: .align-center .img-height-half}
 
 
 
-**Dimension fields** - Fields that contain qualitative (정성적) values (such as names, dates, or geographical data). Dimensions affect the level of detail in the view. 
+**Dimension fields** - Fields that contain qualitative (정성적) values (such as names, dates, or geographical data). **Dimensions affect the level of detail in the view.**
 
-**Measure fields** - Fields that contain numeric, quantitative(정략적) values can be measured. (such as Sales, profit ..)
+**Measure fields** - Fields that contain numeric, quantitative(정량적) values can be measured. (such as Sales, profit ..)
 
 **Calculated field** - You can create new fields in Tableau using calculations and then save them as part of your data source. 
 
-**Sets** - Subsets of data that you define. Sets are custom fields based on exsiting dimension and criteria that you specify. 
+**Sets** - Subsets of data that you define. **Sets are custom fields based on exsiting dimension** and criteria that you specify. 
 
 **Parameters** - Values that can be used as placeholders in formulas, or replace constant values in calculated fields and filters.
 
@@ -222,14 +225,14 @@ Materializinf calculations may reduce the time to open the workbook since the re
 
 ### Rename, Alias
 #### Rename
-Field names, parameters amd sets may be renamed. 
+**Field names, parameters amd sets may be renamed. **
 
 Column values can be aliased but cannot be renamed. Generated fields such as measure names cannot be renamed.
 
 #### Alias
 Aliases can be applied only to **discrete dimension** values.
 
-Aliases can be set only for discrete dimension, not for measures, field name, or dates. 
+Aliases can be set only for discrete dimension, **not for measures, field name, or dates.** 
 
 Aliases allow you to show more relevant or descriptive dimension values in your view
 
@@ -246,6 +249,7 @@ When users connected to Tableau, the data fields in their data set are automatic
 #### Role
 1) Dimension
 2) Measure
+
 #### Type
 1) String
 2) Number
@@ -254,7 +258,7 @@ When users connected to Tableau, the data fields in their data set are automatic
 5) Date
 6) Date and Time 
 
-When users connected a nre data source, Tableau assigns each field in the data source as dimension or measure in the Data pane
+When users connect to a data source, Tableau assigns each field in the data source as dimension or measure in the Data pane
 
 ####  Geographic role
 
@@ -262,24 +266,24 @@ When users connected a nre data source, Tableau assigns each field in the data s
 
 ### Default properties
 
-default properties for a dimension
+**default properties for a dimension**
 
 - Comment, Color, Shape, Sort
 
-default properties for a measure
+**default properties for a measure**
 
 - Comment, Number Format, Aggregation, Color, Total using 
 
 ![Alt text]({{site.url}}/images/2023-11-26-tableau_specialist/default_properties.png){: .align-center .img-height-half }  
 
 ### Total 
-1) On the Analysis Pnae, drag Totals into the view and deop on the [ex: Row Grand Total area]
+1) On the Analysis Pnae, drag Totals into the view and drop on the [ex: Row Grand Total area]
 
 2) Select the Analysis option on the toolbar, then Totals and Add [ex: Row Grand Total area]
 
 ### Date type
 
-When the data type is mapped as numbers, text is treated as null whie dates are treated as the number of days since 1/1/1900. 
+When the data type is mapped as numbers, text is treated as null while dates are treated as the number of days since 1/1/1900. 
 
 If chaging type to date doesn't work, you should change the back to string and use a date parse function.
 
@@ -287,10 +291,7 @@ If chaging type to date doesn't work, you should change the back to string and u
 
 ![Alt text]({{site.url}}/images/2023-11-25-tableau1/quick_table.png){: .align-center} 
 
-
-### Table calculation
-
-Runnung Total, Percent Difference, Difference, Percent if Total, Rank, Percentile
+Runnung Total, Percent Difference, Difference, Percent of Total, Rank, Percentile, Moving Average
 
 ### Aggregate function
 
@@ -322,9 +323,9 @@ Relativedate filters work relative to the anchor date. By the default this will 
 ![Alt text]({{site.url}}/images/2023-11-25-tableau1/order_of_operations.png){: .align-center}
 
 #### Context filter
-1) Improve performance - If you set a lot of filters or have a large data source, the queries can be slow. You can set one or more context filters to improve performance.
+1) **Improve performance** - If you set a lot of filters or have a large data source, the queries can be slow. You can set one or more context filters to improve performance.
 
-2) Create a dependent numerical or top N filter - You can set a context filter to include only the data of interest, and then set a numerical or top N filter. 
+2) **Create a dependent numerical or top N filter** - You can set a context filter to include only the data of interest, and then set a numerical or top N filter. 
 
 
 #### Quick Filter 
@@ -339,18 +340,20 @@ Hierachies organize multiple dimensions based on higher and lower levels. Groups
 #### Sets
 Sets determine which values of a dimension are in the Top N or Bottom N on a related measure
 
-Sets are custom fields that are **created** within Tableau Desktop **based on dimensions** from your data source. Either dimensions or measures can be used to determine whqt is included or excluded from a set using conditional logic
+Sets are custom fields that are **created** within Tableau Desktop **based on dimensions** from your data source. Either dimensions or measures can be used to determine what is included or excluded from a set using conditional logic
 
 
-#### To create a dynamic set
-1) In the Data pane, right click a dimension and select Create > Set
+-  To create a dynamic set
 
-2) In the Create Set dialog box, configure your set. You can configure your set using the following tabs
+    - 1) In the Data pane, right click a dimension and select Create > Set
+
+    - 2) In the Create Set dialog box, configure your set. You can configure your set using the following tabs
 
 ![Alt text]({{site.url}}/images/2023-11-25-tableau1/set.png){: .align-center}
 
 
-- Groups can be created on measures and dimensions.
+#### Groups 
+Groups can be created on measures and dimensions.
 
 #### Ways to group data
 1) Marks
@@ -369,48 +372,48 @@ Sets are custom fields that are **created** within Tableau Desktop **based on di
 #### Scatter plot
 scatter plots to visualuze relationships between numerical variables. 
 
-scatter plots are used to understand the relationship between two or more variables rather than a single mwasure.
+scatter plots are used to understand the relationship between two or more variables rather than a single measure.
 
 #### Bar chart
 bar charts  to compare data across categories
 
 #### Line chart
-Line charts connect individual data points in a view. They provided a simple wqy to visualize a sequence of values and are useful when you want to see trends over time
+Line charts connect individual data points in a view. They provided a simple wqy to visualize a sequence of values and are useful when you want to see trends **over time**
 
 line chart compare numeric data over time 
 
 #### Pareto Chart
-Pareto Chart is a type of contains both bars and line graph, where individual values are represented in decending order by bars, and aecending cumulative total is represented by the line
+Pareto Chart is a type of contains both bars and line graph, where individual values are represented in **decending order by bars**, and **aecending cumulative total is represented by the line**
 
 #### Stacked bar
-stacked bar charts compare numeric data over two dimwnsion
+stacked bar charts compare numeric data over two dimension
 
 #### Histogram
-A histogram is a chart that displays the shape of distribution. A histogram looks like a bar chart but groups values for a continuous measure into ranges, or bins.
+A histogram is a chart that displays the shape of **distribution**. A histogram looks like a bar chart but groups values for **a continuous measure into ranges, or bins.**
 
 histogram uses bins to subdivide a continuous measure into a discrete bins.
 
-histogram always bins data and uses the COUNT or COUNT DISTINCT function to count the number of occurences withib the bin.
+histogram always bins data and uses the **COUNT or COUNT DISTINCT function** to count the number of occurences within the bin.
 
 #### bulet chart
-A bullet graph is a variation of a bar graph developed to replace dashboard gauges and meters. A bullet graph is useful for comparing the performance of a **primary measure to one or more other measures.**
+A bullet graph is a variation of a bar graph developed to replace dashboard **gauges and meters**. A bullet graph is useful for comparing the performance of a **primary measure to one or more other measures.**
 
-Bullet chart combines a barchart with a reference line 
+Bullet chart combines a **barchart with a reference line** 
 
 #### Tree map 
 
-Try adjusting size on a tree map and you will see it is not an option
+Try **adjusting size** on a tree map and you will see it is **not an option**
 
 #### Showing trends over time 
-Some of the best visualization for showing trends over time are line charts, area charts, and vbar charts
+Some of the best visualization for showing trends over time are **line charts, area charts, and bar charts**
 
 #### To visualize the distribution of a single continuous measure
 Box plot, Histogram
 
 ### Bin
-bin can be created on a continuous measure or numeric dimension
+bin can be created on a **continuous measure or numeric dimension**
 
-Create bins from a measure you can create a dimension
+Create bins from a measure you can **create a dimension**
 
 It's sometimes useful to convert a **continuous measure**(or a **nemeric dimension**) into bins.
 
@@ -418,13 +421,13 @@ It's sometimes useful to convert a **continuous measure**(or a **nemeric dimensi
 #### Add a reference line
 On the analytics pane, click on reference line and drag into the view.
 
-On rhe Show Me menu, select bullet graph (bullet graphes include reference line)
+On the Show Me menu, select bullet graph (bullet graphes include reference line)
 
 You can add a reference line at a **constant or computed value** on the axis. Computed values can be based on a specified field : **Calculated Fields, Measures**
 
 ### Trend Line
 
-To add trend lines to a view, both axes must contain a field that can be interpreted as a number. However, you can add a trend line to a view of sales over time because both sales and time can be interpreted as numeric values. 
+To add trend lines to a view,** both axes must contain a field that can be interpreted as a number.** However, you can add a trend line to a view of sales over time because both sales and time can be interpreted as numeric values. 
 
 For multidimensional data sources, the date hierarchies actually contain strings rather than numbers. Therefore, trend lines are not allowed. Additionally, the ‘m/d/yy’ and ‘mmmm yyyy’ date formats on all data sources do not allow trend lines.
 
@@ -460,8 +463,8 @@ Default layout
 Remove a legend
 
 - click the x to remove it 
-- click the arrow on the legend and select "Remove from dashboard"
-- select the legend by clicking and drag it out of the dashboard canvas
+- click the arrow on the legend and select "**Remove from dashboard**"
+- select the legend by clicking and **drag it out of the dashboard canva**s
 
 #### Action
 1) Select
@@ -473,17 +476,17 @@ Remove a legend
 
 #### Replace a worksheet in a dashboard
 
-Click the swap sheet icon next to the new worksheet on the dashboard pane
+Click the **swap sheet icon** next to the new worksheet on the dashboard pane
 
 -------
                                             
 ## Understanding Tableau Concepts
 ### Measure Names
-Create a view with multiple measures on a single continuopus axis, Tableau will autimatically add Measure Names to the view.
+Create a view with multiple measures on a single continuous axis, Tableau will autimatically add Measure Names to the view.
 
 
 ### Rule
-A rule of thumb is to put the most important data on the X- or Y- axis and less important data on color, size, or shape.
+A rule of thumb is to put the **most important data on the X- or Y-axis** and **less important data on color, size, or shape.**
 
 ### aggregation
 #### AGG
@@ -497,15 +500,19 @@ If you try to aggregate an aggregated field, you will get the error message sayi
 
 ### Color palette
 
-If the values are all positive then a sequential color gradient will be used. If there are negative values then a diverging color gradient will be used. if the data is discrete a categorical pallete will be used
+If the values are all positive then a sequential color gradient will be used. 
 
-A continuous field will create a color gradient, while a discrete field will create a color palete. 
+If there are negative and positive values then a diverging color gradient will be used. 
+
+if the data is discrete a categorical pallete will be used
+
+A **continuous** field will create a **color gradient**, while a **discrete** field will create a **color palete**. 
 
 - all negative values are shown in one color and all positive values are shown in a second color
 Click the arrow on the colors mark, select edit colors, select a diverging palette from the dropdown and check stepped color with 2 steps and check center on zero
 
 
-Discrete field on Color in the Marks card, Tableau displays a categorical palette and assigns a color to each value of field
+Discrete field on Color in the Marks card, Tableau displays a categorical palette and assigns a color to each vlue of field
 
 Continuous field on Color, Tableau displays a quantiative(정량적) legend with a continuous range of colors . 
 
@@ -530,18 +537,18 @@ show the color legend
 
 #### Story point
 
-A story is a sheet, so the methods you use to create, name, and manage worksheets and dashboards also apply to stories (for more details, see Workbooks and Sheets). At the same time, a story is also a collection of sheets, arranged in a sequence. **Each individual sheet in a story is called a story point.**
+A story is a sheet, so the methods you use to create, name, and manage worksheets and dashboards also apply to stories (for more details, see Workbooks and Sheets). At the same time, a story is also a **collection of sheets**, arranged in a sequence. **Each individual sheet in a story is called a story point.**
 
 동시에 story는 시퀀스로 정렬된 시트의 컬렉션입니다. 이야기의 각 개별 시트를 'story point'라고 합니다."
 
 ![Alt text]({{site.url}}/images/2023-11-25-tableau1/story_point.png){: .align-center} 
 
 #### Preserving the existig story point
-Preserving the existig story point before modiofication - Select "Save as New" on the existing story point
+Preserving the existig story point before modiofication - Select "**Save as New**" on the existing story point
 
 ### Mark Size
 
-Polygin cannot have its size adjusted.
+Polygon cannot have its size adjusted.
 
 Mark size option
 
@@ -602,17 +609,17 @@ Sequential animations take more time but make complex changes clear by presentin
 ### Dashboard action
 To create dashboard action
 
-1) Click the "More Options" arroe on the worksheet included in the dashboard layout. then select "**use as filter**"
+1) Click the "More Options" arrow on the worksheet included in the dashboard layout. then select "**use as filter**"
 
 Default action is On select 
 
-❗ Click the "More Options" arroe on the worksheet included in the dashboard layout, then select "Filter" and the field you wish to use in the filter action. (Add a quick filter to the dashboard)
+❗ Click the "More Options" arrow on the worksheet included in the dashboard layout, then select "Filter" and the field you wish to use in the filter action. (Add a quick filter to the dashboard)
 
 ❗Right-click on a header value shown in the worksheet in the dashboard layout and select "exclude" or "keep only" (Create a context filter)
 
 ❗Click the "More Options" arrow on the worksheet included in the dashboard layout, then select "action" (No action option in the "More Options")
 
-The available dashboard options are shown below.
+The available dashboard Actopn options are shown below.
 
 - Filter, HIghlight, Go to URL, Go to Sheet, Change Parameter, Change Set Value
 
