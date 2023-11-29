@@ -13,7 +13,6 @@ docs:
       - title: Python
         url: /categories/python
 
-
 counts:
   - title: "Category"
     use: true
