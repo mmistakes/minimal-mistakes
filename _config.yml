@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Sengho Bae"
-  avatar           : "/assets/images/seungho.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/seungho1.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
   location         : "South Koarea"
   email            :
