@@ -278,6 +278,10 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+      sidebar_main: true
+      lunr:
+        search_within_pages: true
+        search_full_content: true
