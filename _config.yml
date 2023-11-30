@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "leejongseok"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/jerry.jpg"
   bio              : "Study Note"
   location         : "South Korea"
   email            :
