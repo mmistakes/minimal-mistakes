@@ -109,7 +109,7 @@ author:
   name             : "leejongseok"
   avatar           : "/assets/jerry.jpg"
   bio              : "Study Note"
-  location         : "South Korea"
+  location         : "Republic of Korea"
   email            :
   links:
     - label: "Email"
@@ -277,7 +277,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
+      show_date: true
       comments: true
       share: false
       related: true
