@@ -1,5 +1,5 @@
 ---
-title: "[MIT Technolgy Reviews] The messy, secretive reality behind OpenAI’s bid to save the world 1부"
+title: "[MIT Technolgy Reviews] The messy, secretive reality behind OpenAI’s bid to save the world"
 categories:
   - AI Regulation
 tags:
@@ -22,14 +22,14 @@ ARTIFICIAL INTELLIGENCE
 
 # The messy, secretive reality behind OpenAI’s bid to save the world
 
-### The AI moonshot was founded in the spirit of transparency. This is the inside story of how competitive pressure eroded that idealism.
+#### The AI moonshot was founded in the spirit of transparency. This is the inside story of how competitive pressure eroded that idealism.
 
-#### By Karen Hao
-#### February 17, 2020
+##### By Karen Hao
+##### February 17, 2020
 ---
 
 
-  * MIT Technolgy Reviews에 2020년 2월 17일, AI분야 기자 [Karen Hao](https://www.technologyreview.com/author/karen-hao/)이 작성한 [기사](https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/)를 DeepL로 번역 후, "포괄적요약"과 "저의 의견"을 작성한 내용
+  * MIT Technolgy Reviews에 2020년 2월 17일, AI분야 기자 [Karen Hao](https://www.technologyreview.com/author/karen-hao/)이 작성한 [기사](https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/)를 DeepL로 번역 후, "포괄적 요약"하고, "저의 의견"을 추가하여 작성한 내용
   * 2022년 ChatGPT로 일반인들(나 포함)에게 알려지기 까지, 2019년 2020년 초에 OpenAI가 어떤 기업이였는지 알 수 있는 자료
   * 만약 저작권에 문제가 있다면 바로 알려주세요!!
 
@@ -39,7 +39,9 @@ ARTIFICIAL INTELLIGENCE
 >
 > 그리고 startup 기업이 초창기 목표와 비전을 지켜나가기 위해서 어떤 갈등이 있고, 어떻게 해쳐나가는지도 느껴질 수 있음
 > 
-> 우리나라도 그간 중공업과 건설 발전 사례 등처럼 국가차원과 이제 세계적인 기업들차원에서 선택과 집중이 필요 시점이 아닐까 한다
+> 어떻게 OpenAI와 같은 기업을 우리가 기대할 수 있을까? 가장 중요한 인력확보? 그리고 투자자? 
+> 우리나라도 세계적인 경쟁력을 가진 기업들과 국가(정부)가 역할을 분담하여, AI에 대한 선택과 집중할 분야를 선정하여 투자할 필요가 있을 듯하다. 분명히 AI산업에서 우리가 들어갈 수 있는 틈새가 있을 것이며, 우리가 잘 하는 부분도 있을 것이기 때문이다. 
+> 아니면 다양한 기업과 국가들 사이에서 기술력이 아니라 관계력을 발휘할 수도...
     
 
 ---
@@ -62,7 +64,7 @@ OpenAI는 설립 4년이라는 짧은 기간 동안 세계 최고의 AI 연구�
 직원들의 급여가 결정될 정도로 중요한 이 [헌장](https://openai.com/charter/)에는 OpenAI의 "일차적 신탁 의무는 인류에 대한 것"이라고 선언
 
 AGI를 안전하게 달성하는 것은 매우 중요하기 때문에, 다른 조직이 AGI를 먼저 달성하는 데 가까워지면 OpenAI는 경쟁을 중단하고 대신 협력할 것이라는 것은 투자자와 언론에 잘 먹혔고, 7월에 Microsoft가 10억 달러를 투자
-<!-- 
+
 <figure>
     <img src="https://cdn.technologyreview.com/i/images/cf3a2394.jpg?sw=700&cx=0&cy=0&cw=3000&ch=2000"
          alt="OpenAI's logo hanging in its office">
@@ -74,7 +76,7 @@ AGI를 안전하게 달성하는 것은 매우 중요하기 때문에, 다른 �
 시간이 지남에 따른 치열한 경쟁과 더 많은 자금 조달 압박 때문에 투명성, 개방성, 협업이라는 창립 이념이 약화
 
 
-
+<!-- 
 ---
 ### OpenAI 등장 배경
 
