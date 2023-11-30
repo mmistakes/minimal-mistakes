@@ -12,8 +12,7 @@ sidebar:
 
 Tableau Desktop Specialist 자격증을 공부하면서 정리한 내용입니다
 
-파트별로 명확한 기준으로 분류되지 않았고, 순서도 혼재되어 있어서 정리보다는 그냥 때려넣은 수준입니다 ^^
-
+파트별 분류 기준이 정확하지 않고 순서도 혼재되어 있어 있는 점을 참고하시기 바랍니다!
 
 ## Connecting to & Prepareing Data
 
