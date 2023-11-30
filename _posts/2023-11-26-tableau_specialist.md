@@ -400,6 +400,9 @@ A bullet graph is a variation of a bar graph developed to replace dashboard **ga
 
 Bullet chart combines a **barchart with a reference line** 
 
+### Heatmap
+By default, the shape that a Heap map uses is a "Square". 
+
 #### Tree map 
 
 Try **adjusting size** on a tree map and you will see it is **not an option**
