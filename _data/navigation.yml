@@ -5,13 +5,13 @@ main:
   - title: "Tag"
     url: /tags/
 
-docs:
-  - title: "Language"
-    children:
-      - title: C
-        url: /categories/c
-      - title: Python
-        url: /categories/python
+# docs:
+#   - title: "Language"
+#     children:
+#       - title: C
+#         url: /categories/c
+#       - title: Python
+#         url: /categories/python
 
 counts:
   - title: "Category"
