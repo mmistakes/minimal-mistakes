@@ -34,6 +34,15 @@ ARTIFICIAL INTELLIGENCE
   * 만약 저작권에 문제가 있다면 바로 알려주세요!!
 
 ---
+
+> 2015년 설립 당시, AI 개발과 실행에 드는 비용때문에 소수에게 권력이 집중되는 경향을 예측하여, 비영리기관이라는 업계의 이목을 집중시켜, 경쟁사와는 다른 출발한 것에 대해 실리콘밸리 사람들의 대단한 예측력과 사업추진력을 알수 있음
+>
+> 그리고 startup 기업이 초창기 목표와 비전을 지켜나가기 위해서 어떤 갈등이 있고, 어떻게 해쳐나가는지도 느껴질 수 있음
+> 
+> 우리나라도 그간 중공업과 건설 발전 사례 등처럼 국가차원과 이제 세계적인 기업들차원에서 선택과 집중이 필요 시점이 아닐까 한다
+    
+
+---
 ### OpenAI 개략 소개
 
 매년 OpenAI의 직원들은 인공 일반 인공지능(AGI)이 언제쯤 도래할 것이라고 생각하는지 투표
@@ -53,7 +62,7 @@ OpenAI는 설립 4년이라는 짧은 기간 동안 세계 최고의 AI 연구�
 직원들의 급여가 결정될 정도로 중요한 이 [헌장](https://openai.com/charter/)에는 OpenAI의 "일차적 신탁 의무는 인류에 대한 것"이라고 선언
 
 AGI를 안전하게 달성하는 것은 매우 중요하기 때문에, 다른 조직이 AGI를 먼저 달성하는 데 가까워지면 OpenAI는 경쟁을 중단하고 대신 협력할 것이라는 것은 투자자와 언론에 잘 먹혔고, 7월에 Microsoft가 10억 달러를 투자
-
+<!-- 
 <figure>
     <img src="https://cdn.technologyreview.com/i/images/cf3a2394.jpg?sw=700&cx=0&cy=0&cw=3000&ch=2000"
          alt="OpenAI's logo hanging in its office">
@@ -63,15 +72,6 @@ AGI를 안전하게 달성하는 것은 매우 중요하기 때문에, 다른 �
 하지만 3일 동안 OpenAI의 사무실에서 전현직 직원, 협력자, 친구, 이 분야의 다른 전문가들과 진행한 인터뷰를 진행한 결과, 회사가 공개적으로 지지하는 것과 비공개적으로 운영되는 방식 사이에는 불일치가 존재
 
 시간이 지남에 따른 치열한 경쟁과 더 많은 자금 조달 압박 때문에 투명성, 개방성, 협업이라는 창립 이념이 약화
-
-
- 
-    2015년 설립 당시, AI 개발과 실행에 드는 비용때문에 소수에게 권력이 집중되는 경향을 예측하여, 비영리기관이라는 업계의 이목을 집중시켜, 경쟁사와는 다른 출발한 것에 대해 실리콘밸리 사람들의 대단한 예측력과 사업추진력을 알수 있음
-
-    그리고 startup 기업이 초창기 목표와 비전을 지켜나가기 위해서 어떤 갈등이 있고, 어떻게 해쳐나가는지도 느껴질 수 있음
-
-    우리나라도 그간 중공업과 건설 발전 사례 등처럼 국가차원과 이제 세계적인 기업들차원에서 선택과 집중이 필요 시점이 아닐까 한다
-    
 
 
 
@@ -351,4 +351,4 @@ On November 17, 2023, the board removed Altman as CEO, while Brockman was remove
  
  [^14]:"OpenAI has received just a fraction of Microsoft's $10 billion investment". Semafor. November 18, 2023. Retrieved November 27, 2023.
 
- [^15]:"OpenAI brings Sam Altman back as CEO less than a week after he was fired by board". CNBC. November 22, 2023.
+ [^15]:"OpenAI brings Sam Altman back as CEO less than a week after he was fired by board". CNBC. November 22, 2023. -->
