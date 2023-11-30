@@ -3,7 +3,7 @@ published: true
 title: "Complexity"
 
 categories: CodingTest
-tag: [codingtest, complexity]
+tag: [codingtest, complexity, algorithm]
 
 toc: true
 toc_sticky: true
