@@ -10,6 +10,10 @@ sidebar:
 
 ---
 
+Tableau Desktop Specialist  는 Tableau Desktop에 대한 기본적인 기술과 이해가 있고, 최소 3개월의 제품 사용 경험이 있는 사람을 위한 시험이라고 명시되어 있습니다. 
+
+데이터 분석 분야의 취업 공고에서는 Tableau 경험이 중요시되고 있어, 관련 자격증을 취득해두면 좋을 것 같아 Tableau Desktop Specialist 취득 목표를 새웠습니다. 
+
 ### Tableau Desktop Specialist 정보 
 
 - 시험방식 : 온라인
