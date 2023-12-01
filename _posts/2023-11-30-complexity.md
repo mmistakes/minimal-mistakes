@@ -2,7 +2,7 @@
 published: true
 title: "Complexity"
 
-categories: CodingTest
+categories: Algorithm
 tag: [codingtest, complexity, algorithm]
 
 toc: true
