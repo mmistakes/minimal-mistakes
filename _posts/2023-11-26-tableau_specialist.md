@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 'Tableau Desktop Specialist'
-categories: tableau
+categories: 태블로자격증
 tag: [tableau]
 author_profile: false
 published: true
