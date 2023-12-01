@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Home"
+title                    : "개발노트"
 title_separator          : "|"
-subtitle                 : #"small positive action"
+subtitle                 : "백엔드를 좋아하는 개발자 노트"
 name                     : "MinWoo Jeon"
 description              : ""
 url                      : "https://minwoo-jeon.github.io"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "MinWooJeon"
   avatar           : "assets/images/min.png"
-  bio              : "주니어 개발자 전민우 입니다"
+  bio              : "Backend Developer"
   location         : "yongin, Korea"
   email            : 
   links:
