@@ -3,6 +3,7 @@ title: "[MIT Technolgy Reviews] The messy, secretive reality behind OpenAI’s b
 categories:
   - AI Regulation
 tags:
+  - OpenAI
   - AI
   - MIT Technolgy Reviews
   - Reliable AI
@@ -12,8 +13,6 @@ tags:
   - 안전
   - 신뢰
 #  - 정책
-  - OpenAI
-  - 
 
 last_modified_at: 2023-12-01T15:00:11-15:10
 ---
