@@ -10,7 +10,9 @@ sidebar:
 
 ---
 
-Tableau Desktop Specialist 자격증을 공부하면서 정리한 내용입니다
+태블로 자격증을 공부하면서 정리한 내용입니다
+
+<a href = 'https://www.udemy.com/share/109aDW3@zuowhuRjqeK2luvGrvusvcnU5h0xhZRAzu7tv8gDsKQLcWH5jI9xkH7xh68ocCU_5A==/'>【한글자막】 Tableau Desktop Specialist 자격증 준비하기! (태블로 자격 시험)</a> 와 <a href='https://www.udemy.com/share/103jVM3@13s1KZe4InAHLjghMRLSMOet-KoWmUnDwYftUDhzWR7_HyhyI9FRXoQ0WRga3PeSbw==/'> Tableau Desktop Specialist Certification Practice Tests </a> 을 참고하여 정리했습니다. 
 
 파트별 분류 기준이 정확하지 않고 순서도 혼재되어 있어 있는 점을 참고하시기 바랍니다!
 
@@ -112,7 +114,7 @@ Primary data source appears with a **Blue tick-mark** and the secondary data sou
 ![Alt text]({{site.url}}/images/2023-11-26-tableau_specialist/blend.png){: .align-center .img-height-half }  
 
 
-### Live connectionF
+### Live connection
 By default, when you connect a data source to Tableau, Tableau will create a live connection to the data.
 
 If your organization enforces user-level **permissions to databases**, use a live connection for workbooks that connect those databases.
@@ -1007,8 +1009,11 @@ show the color legend
 3) Right-click in the space below the marks card and select Legend>Color Legend
 
 #### Show mark label
+
 1) Click on Show Mark Labels Icon in Toolbar
+
 2) Drag the measure to the Text label in the Marks Card
+
 3) Click on Analysis -> Show mark labels from the Tableau menu bar 
 
 ### Add a reference line
