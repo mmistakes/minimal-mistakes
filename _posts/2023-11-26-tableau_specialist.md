@@ -14,7 +14,7 @@ sidebar:
 
 <a href = 'https://www.udemy.com/share/109aDW3@zuowhuRjqeK2luvGrvusvcnU5h0xhZRAzu7tv8gDsKQLcWH5jI9xkH7xh68ocCU_5A==/'>【한글자막】 Tableau Desktop Specialist 자격증 준비하기! (태블로 자격 시험)</a> 와 <a href='https://www.udemy.com/share/103jVM3@13s1KZe4InAHLjghMRLSMOet-KoWmUnDwYftUDhzWR7_HyhyI9FRXoQ0WRga3PeSbw==/'> Tableau Desktop Specialist Certification Practice Tests </a> 을 참고하여 정리했습니다. 
 
-파트별 분류 기준이 정확하지 않고 순서도 혼재되어 있어 있는 점을 참고하시기 바랍니다!
+파트별 분류 기준이 정확하지 않고 순서도 혼재되어 있는 점을 참고하시기 바랍니다!
 
 ## Connecting to & Prepareing Data
 
@@ -751,17 +751,7 @@ A story is a sheet, so the methods you use to create, name, and manage worksheet
 ![Alt text]({{site.url}}/images/2023-11-25-tableau1/story_point.png){: .align-center} 
 
 #### Preserving the existig story point
-Preserving the existig story point before modiofication - Select "**Save as New**" on the existing story point
-
-### Mark Size
-
-Polygon cannot have its size adjusted.
-
-Mark size option
-
-- Reversed, By range, 
-
-Not By parameter, Stepped 
+Preserving the existig story point before modiofication - Select "**Save as New**" on the existing story point 
 
 ### Font
 #### Font size
