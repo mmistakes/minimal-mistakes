@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-12-01-second.md",
+                "file": "_posts/Chapter 01 C 언어.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-12-01-second.md",
+                "file": "_posts/Chapter 01 C 언어.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-12-01-second.md",
+                "file": "_posts/Chapter 01 C 언어.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-12-01-second.md"
+                "file": "_posts/Chapter 01 C 언어.md"
               }
             }
           }
@@ -148,20 +148,22 @@
   },
   "active": "bcc96669a83b4c4b",
   "lastOpenFiles": [
-    "_posts/2023-12-01-third.md",
+    "_posts/Chapter 02 C 프로그래밍.md",
+    "_posts/Chapter 03 C 프로그램의 특징.md",
+    "_posts/Chapter 04 printf() 함수.md",
+    "_posts/Chapter 01 C 언어.md",
+    "_site/Chapter-03-C-프로그램의-특징/index.html",
+    "_site/Chapter-03-C-프로그램의-특징",
+    "_site/Chapter-02-C-프로그래밍/index.html",
+    "_site/Chapter-02-C-프로그래밍",
+    "_site/Chapter-01-C-언어/index.html",
+    "_site/Chapter-01-C-언어",
+    "banner.js",
     "Gemfile.lock",
-    "_posts/2023-12-01-second.md",
     "_site/staticman.yml",
     "_site/screenshot.png",
     "_site/screenshot-layouts.png",
     "_site/minimal-mistakes-jekyll.gemspec",
-    "_site/third/index.html",
-    "_site/third",
-    "_site/second/index.html",
-    "_site/second",
-    "_site/first/index.html",
-    "_site/first",
-    "_site/banner.js",
     "test/assets/images/unsplash-image-9.jpg",
     "test/assets/images/unsplash-image-8.jpg",
     "test/assets/images/unsplash-image-7.jpg",
@@ -191,8 +193,6 @@
     "test/_posts/2012-03-15-layout-header-overlay-image.md",
     "test/_posts/2012-03-15-layout-more-tag.md",
     "test/_posts/2012-03-15-layout-header-image-vertical.md",
-    "test/_posts/2012-03-15-layout-header-overlay-color.md",
-    "test/_posts/2012-03-15-layout-header-image-text-readability.md",
-    "test/_posts/2012-03-15-layout-header-image-horizontal.md"
+    "test/_posts/2012-03-15-layout-header-overlay-color.md"
   ]
 }
