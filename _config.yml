@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "개발노트"
+title                    : "MinWoo TIL"
 title_separator          : "|"
-subtitle                 : "백엔드를 좋아하는 개발자 노트"
+subtitle                 : "Today I Learned"
 name                     : "MinWoo Jeon"
 description              : ""
 url                      : "https://minwoo-jeon.github.io"
