@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Chapter 03 C 프로그램의 특징"
+title: Chapter 03 C 프로그램의 특징
 ---
 
 C 프로그램의 특징에 관한 글입니다.
