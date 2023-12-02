@@ -15,19 +15,19 @@
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"  
-title                    : "Blog"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "EunChong"
-description              : "Study & Develop"
+locale                   : "ko-KR"  
+title                    : "DEVLOG"
+title_separator          : "|"
+subtitle                 : "HELLO, WORLD!"
+name                     : "EUNCHONG"
+description              : "DON’T WORRY IF IT DOESN’T WORK RIGHT. IF EVERYTHING DID, YOU’D BE OUT OF A JOB"
 url                      : "https://EunChong999.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/DEV.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -104,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "EunChong"
+  name             : "EUNCHONG"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Study & Develop"
-  # location         : "Somewhere"
+  bio              : “DON’T WORRY IF IT DOESN’T WORK RIGHT. IF EVERYTHING DID, YOU’D BE OUT OF A JOB”
+  location         : "South Korea"
   email            :
   links:
     - label: "Email"
@@ -257,16 +257,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -290,3 +290,6 @@ defaults:
       comments: # true
       share: true
       related: true
+      show_date : true
+
+date_format: "%Y-%m-%d"
