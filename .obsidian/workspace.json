@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Chapter 01 C 언어.md",
+                "file": "_posts/Chapter-04-printf()-함수.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/Chapter 01 C 언어.md",
+                "file": "_posts/Chapter-04-printf()-함수.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/Chapter 01 C 언어.md",
+                "file": "_posts/Chapter-04-printf()-함수.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/Chapter 01 C 언어.md"
+                "file": "_posts/Chapter-04-printf()-함수.md"
               }
             }
           }
@@ -148,9 +148,13 @@
   },
   "active": "bcc96669a83b4c4b",
   "lastOpenFiles": [
-    "_posts/Chapter 02 C 프로그래밍.md",
-    "_posts/Chapter 03 C 프로그램의 특징.md",
+    "_posts/Chapter-03-C-프로그램의-특징.md",
+    "_posts/Chapter-02-C-프로그래밍.md",
+    "_posts/Chapter-01-C-언어.md",
     "_posts/Chapter 04 printf() 함수.md",
+    "_posts/Chapter-04-printf()-함수.md",
+    "_posts/Chapter 03 C 프로그램의 특징.md",
+    "_posts/Chapter 02 C 프로그래밍.md",
     "_posts/Chapter 01 C 언어.md",
     "_site/Chapter-03-C-프로그램의-특징/index.html",
     "_site/Chapter-03-C-프로그램의-특징",
@@ -189,10 +193,6 @@
     "test/_posts/2012-03-15-layout-sidebar-nav-list.md",
     "test/_posts/2012-05-22-markup-text-readability-wide-page.md",
     "test/_posts/2012-03-15-layout-sidebar-custom.md",
-    "test/_posts/2012-03-15-layout-header-overlay-image-tagline.md",
-    "test/_posts/2012-03-15-layout-header-overlay-image.md",
-    "test/_posts/2012-03-15-layout-more-tag.md",
-    "test/_posts/2012-03-15-layout-header-image-vertical.md",
-    "test/_posts/2012-03-15-layout-header-overlay-color.md"
+    "test/_posts/2012-03-15-layout-header-overlay-image-tagline.md"
   ]
 }
