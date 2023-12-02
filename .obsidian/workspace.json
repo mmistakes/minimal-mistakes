@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-12-01-third.md",
+                "file": "_posts/2023-12-01-second.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-12-01-third.md",
+                "file": "_posts/2023-12-01-second.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-12-01-third.md",
+                "file": "_posts/2023-12-01-second.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-12-01-third.md"
+                "file": "_posts/2023-12-01-second.md"
               }
             }
           }
@@ -148,6 +148,8 @@
   },
   "active": "bcc96669a83b4c4b",
   "lastOpenFiles": [
+    "_posts/2023-12-01-third.md",
+    "Gemfile.lock",
     "_posts/2023-12-01-second.md",
     "_site/staticman.yml",
     "_site/screenshot.png",
@@ -160,7 +162,6 @@
     "_site/first/index.html",
     "_site/first",
     "_site/banner.js",
-    "_site/assets/js/main.min.js",
     "test/assets/images/unsplash-image-9.jpg",
     "test/assets/images/unsplash-image-8.jpg",
     "test/assets/images/unsplash-image-7.jpg",
@@ -192,7 +193,6 @@
     "test/_posts/2012-03-15-layout-header-image-vertical.md",
     "test/_posts/2012-03-15-layout-header-overlay-color.md",
     "test/_posts/2012-03-15-layout-header-image-text-readability.md",
-    "test/_posts/2012-03-15-layout-header-image-horizontal.md",
-    "test/_posts/2012-03-15-layout-header-image-external.md"
+    "test/_posts/2012-03-15-layout-header-image-horizontal.md"
   ]
 }
