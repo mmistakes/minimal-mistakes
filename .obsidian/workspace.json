@@ -11,8 +11,12 @@
             "id": "bcc96669a83b4c4b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2023-12-01-third.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_posts/2023-12-01-third.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "_posts/2023-12-01-third.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "_posts/2023-12-01-third.md"
+              }
             }
           }
         ]
@@ -140,6 +148,7 @@
   },
   "active": "bcc96669a83b4c4b",
   "lastOpenFiles": [
+    "_posts/2023-12-01-second.md",
     "_site/staticman.yml",
     "_site/screenshot.png",
     "_site/screenshot-layouts.png",
@@ -152,7 +161,6 @@
     "_site/first",
     "_site/banner.js",
     "_site/assets/js/main.min.js",
-    "_site/assets/js/lunr/lunr.min.js",
     "test/assets/images/unsplash-image-9.jpg",
     "test/assets/images/unsplash-image-8.jpg",
     "test/assets/images/unsplash-image-7.jpg",

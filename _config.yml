@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"  
-title                    : "EunChong"
+title                    : "Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "EunChong"
 description              : "An amazing website."
 url                      : "https://EunChong999.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
