@@ -11,12 +11,8 @@
             "id": "bcc96669a83b4c4b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/Chapter-04-printf()-함수.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/Chapter-04-printf()-함수.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/Chapter-04-printf()-함수.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "_posts/Chapter-04-printf()-함수.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -148,51 +140,51 @@
   },
   "active": "bcc96669a83b4c4b",
   "lastOpenFiles": [
-    "_posts/Chapter-03-C-프로그램의-특징.md",
-    "_posts/Chapter-02-C-프로그래밍.md",
-    "_posts/Chapter-01-C-언어.md",
-    "_posts/Chapter 04 printf() 함수.md",
-    "_posts/Chapter-04-printf()-함수.md",
-    "_posts/Chapter 03 C 프로그램의 특징.md",
-    "_posts/Chapter 02 C 프로그래밍.md",
-    "_posts/Chapter 01 C 언어.md",
-    "_site/Chapter-03-C-프로그램의-특징/index.html",
-    "_site/Chapter-03-C-프로그램의-특징",
-    "_site/Chapter-02-C-프로그래밍/index.html",
-    "_site/Chapter-02-C-프로그래밍",
-    "_site/Chapter-01-C-언어/index.html",
-    "_site/Chapter-01-C-언어",
-    "banner.js",
-    "Gemfile.lock",
-    "_site/staticman.yml",
+    "_site/language/3/index.html",
+    "_site/language/3",
+    "_site/language/4/index.html",
+    "_site/language/4",
+    "_site/language/5/index.html",
+    "_site/language/5",
+    "_site/language/7/index.html",
+    "_site/language/7",
+    "_site/language/6/index.html",
+    "_site/language/6",
+    "_site/language/8/index.html",
+    "_site/_pages/tag-archive.md",
+    "_pages/tag-archive.md",
+    "_posts/2023-12-02-95.md",
+    "_posts/2023-12-02-94.md",
+    "_posts/2023-12-02-93.md",
+    "_posts/2023-12-02-92.md",
+    "_posts/2023-12-02-91.md",
+    "_posts/2023-12-02-10.md",
+    "_posts/2023-12-02-9-1.md",
+    "_posts/2023-12-02-9.md",
+    "_posts/2023-12-02-8.md",
+    "_posts/2023-12-02-7.md",
+    "_posts/2023-12-02-14.md",
+    "_posts/2023-12-02-13.md",
+    "_posts/2023-12-02-12.md",
+    "_posts/2023-12-02-11.md",
+    "_posts/2023-12-02-6.md",
+    "_posts/2023-12-02-5.md",
+    "_posts/2023-12-02-4.md",
+    "_posts/2023-12-02-3.md",
+    "_site/_pages/category-archive.md",
+    "_pages/category-archive.md",
+    "_site/assets/images/DEV.png",
+    "assets/images/DEV.png",
+    "_site/assets/images/d76c4a17-9336-4f69-acb5-1a5352a99ef7.png",
+    "assets/images/d76c4a17-9336-4f69-acb5-1a5352a99ef7.png",
+    "_site/assets/images/a788cc85-0df7-4225-8137-5612f739a97c.png",
+    "assets/images/a788cc85-0df7-4225-8137-5612f739a97c.png",
+    "_posts/2023-12-02-15.md",
+    "_posts/2023-12-02-2.md",
+    "_posts/2023-12-02-1.md",
     "_site/screenshot.png",
     "_site/screenshot-layouts.png",
-    "_site/minimal-mistakes-jekyll.gemspec",
     "test/assets/images/unsplash-image-9.jpg",
-    "test/assets/images/unsplash-image-8.jpg",
-    "test/assets/images/unsplash-image-7.jpg",
-    "test/assets/images/unsplash-image-6.jpg",
-    "test/assets/images/unsplash-image-5.jpg",
-    "test/assets/images/unsplash-image-4.jpg",
-    "test/assets/images/unsplash-image-3.jpg",
-    "test/assets/images/unsplash-image-2.jpg",
-    "test/_recipes/peanut-butter-cookies.md",
-    "test/_recipes/oatmeal-cookies.md",
-    "test/_recipes/chocolate-chip-cookies.md",
-    "test/_posts/2017-11-28-post-exclude-search.md",
-    "test/_posts/2017-01-23-layout-header-video.md",
-    "test/_posts/2016-02-24-welcome-to-jekyll.md",
-    "test/_posts/2013-08-16-markup-syntax-highlighting.md",
-    "test/_posts/2013-05-22-markup-more-images.md",
-    "test/_posts/2013-01-11-markup-html-tags-and-formatting.md",
-    "test/_posts/2013-01-10-markup-image-alignment.md",
-    "test/_posts/2013-01-09-markup-text-alignment.md",
-    "test/_posts/2013-01-05-markup-title-with-special-characters.md",
-    "test/_posts/2013-01-05-markup-title-with-markup.md",
-    "test/_posts/2012-05-22-markup-text-readability.md",
-    "test/_posts/2012-03-15-layout-sidebar-nav-list.md",
-    "test/_posts/2012-05-22-markup-text-readability-wide-page.md",
-    "test/_posts/2012-03-15-layout-sidebar-custom.md",
-    "test/_posts/2012-03-15-layout-header-overlay-image-tagline.md"
+    "test/assets/images/unsplash-image-8.jpg"
   ]
 }
