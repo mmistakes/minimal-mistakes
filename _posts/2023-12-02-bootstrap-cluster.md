@@ -32,7 +32,7 @@ This guide will walk you through the steps to bootstrap an RKE2 cluster with Arg
 
 ### 1. Create a new namespace for ArgoCD
 
-```bash
+```yaml
 # first switch to proper context
 kubectl config use-context <cluster-name>
 kubectl create namespace argocd
@@ -60,7 +60,7 @@ Using Argo CD simplifies and streamlines the deployment and management of Kubern
 
 I prefer to use a separate VM/controller to perform all Helm installations. This is not required, but it is recommended. __Note__ this does not need to be performed on the RKE2 server.
 
-```bash
+```yaml
 # Use curl to download release and untar
 curl -L https://get.helm.sh/helm-v3.13.2-linux-amd64.tar.gz | tar xz
 cd linux-amd64
@@ -72,7 +72,7 @@ rm -rf linux-amd64
 
 Add Argo repo to helm
 
-```bash
+```yaml
 helm repo add argo https://argoproj.github.io/argo-helm
 helm repo update
 ```
@@ -136,7 +136,7 @@ EOF
 
 Now install the chart:
 
-```bash
+```yaml
 helm install argocd \
   -n argocd \
   --create-namespace \
@@ -145,13 +145,13 @@ helm install argocd \
 
 Now wait for all pods to be running:
 
-```bash
+```yaml
 kubectl -n argocd get pods -w
 ```
 
 ### 3. Login to ArgoCD
 
-```bash
+```yaml
 password=$(kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d)
 # port forward to argocd server
 kubectl -n argocd port-forward svc/argocd-server 8080:80
@@ -160,7 +160,7 @@ argocd login localhost:8080 --username admin --password $password --insecure
 
 ### 4. Update Password
 
-```bash
+```yaml
 argocd account update-password --account admin --current-password $password --new-password <new-password>
 # delete initial secret
 kubectl -n argocd delete secret argocd-initial-admin-secret
@@ -172,7 +172,7 @@ _Note_ steps 5 and 6 have been added to the [argocd-setup.sh](scripts/argo.setup
 
 Let us add the prometheus, jetstack and bitnami repositories to ArgoCD. This will allow us to install applications from these repositories.
 
-```bash
+```yaml
 argocd repo add https://charts.bitnami.com/bitnami --type helm --name bitnami
 argocd repo add https://charts.jetstack.io --type helm --name jetstack
 argocd repo add https://kubernetes-charts.storage.googleapis.com --type helm --name stable
@@ -181,7 +181,7 @@ argocd repo add https://prometheus-community.github.io/helm-chart --type helm --
 
 ### 6. Create a new project
 
-```bash
+```yaml
 argocd proj create monitoring
 ```
 
@@ -189,7 +189,7 @@ argocd proj create monitoring
 
 I have experienced issues with installing the kube-prometheus-stack chart using ArgoCD. I suspect that the issue is related to the Prometheus CRDs, therefore, I have decided to install the chart using the `Helm`:
 
-```bash
+```yaml
 helm repo add prometheus-community https://prometheus-community.github.io/helm-chart
 helm repo update
 helm install --namespace monitoring-system --create-namespace monitoring prometheus-community/kube-prometheus-stack
@@ -197,7 +197,7 @@ helm install --namespace monitoring-system --create-namespace monitoring prometh
 
 #### Using ArgoCD
 
-```bash
+```yaml
 argocd app create monitoring --repo https://prometheus-community.github.io/helm-chart \
    --helm-chart kube-prometheus-stack \
    --revision 54.2.0 \
@@ -228,7 +228,7 @@ By using cert-manager, Kubernetes users can ensure that their applications are u
 
 We will use ArgoCD to manage the installation of cert-manager. You can either use the web UI or the CLI to install the application. I will use the CLI.
 
-```bash
+```yaml
 echo "Adding cert-manager repo"
 argocd repo add https://charts.jetstack.io --type helm --name jetstack
 echo "Creating cert-manager namespace"
