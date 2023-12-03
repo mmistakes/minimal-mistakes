@@ -7,10 +7,3 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-
-@font-face {
-    font-family: 'GowunDodum-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
