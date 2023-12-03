@@ -55,7 +55,9 @@ We will be using the second cluster that we previously [created](https://mitchmu
 
 ## RBAC Configuration
 
-First, follow this [guide](https://argo-cd.readthedocs.io/en/stable/operator-manual/user-management/keycloak/) on how to configure ArgoCD to use Keycloak for authentication. This will allow us to use Keycloak for authentication and authorization. Now we need to update the ArgoCD Helm chart to enable RBAC. We can do this by specifying a values file:
+First, follow this [guide](https://argo-cd.readthedocs.io/en/stable/operator-manual/user-management/keycloak/) on how to configure ArgoCD to use Keycloak for authentication. This will allow us to use Keycloak for authentication and authorization. You must create a group named `smig2-team` and then add user(s) to this group. This will be the group that we will use for RBAC.
+
+Now we need to update the ArgoCD Helm chart to enable RBAC. We can do this by specifying a values file:
 
 ```yaml
 cat <<EOF > argocd-rbac-values.yaml
