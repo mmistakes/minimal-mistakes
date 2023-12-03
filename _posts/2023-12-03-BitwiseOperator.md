@@ -1,10 +1,11 @@
 ---
 layout: single
 title: Chapter 15 비트 연산자
-date: 2023-12-03 11:58:45 +0700
+date: 2023-12-03 11:58:45 +09:00
 categories: Language
 tags: C
 excerpt: 비트 연산자에 관한 글입니다.
+toc: true
 ---
 
 # 1 비트 연산자(bitwise operator)

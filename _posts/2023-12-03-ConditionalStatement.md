@@ -1,10 +1,11 @@
 ---
 layout: single
 title: Chapter 17 조건문
-date: 2023-12-03 11:59:00 +0700
+date: 2023-12-03 11:59:00 +09:00 
 categories: Language
 tags: C
 excerpt: 조건문에 관한 글입니다.
+toc: true
 ---
 
 # 1 제어문(control flow statements)

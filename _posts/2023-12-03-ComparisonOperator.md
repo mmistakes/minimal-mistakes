@@ -1,10 +1,11 @@
 ---
 layout: single
 title: Chapter 13 비교 연산자
-date: 2023-12-03 11:58:29 +0700
+date: 2023-12-03 11:58:29 +09:00
 categories: Language
 tags: C
 excerpt: 비교 연산자에 관한 글입니다.
+toc: true
 ---
 
 # 1 비교 연산자(comparison operator)
