@@ -19,7 +19,7 @@ sidebar:
 
 첫 수업은 AI의 최신 트렌드와 데이터 사이언티스트 직군에 대한 내용이었다
 
-AI 4대 요소 (모델, 데이터, 인프라, 사람)에 대해 각각의 관점에서 잘 설명해 주셔서 아주 흥미로웠다. 데이터 분석을 본격적으로 공부한 지 6개월이 넘어가지만 4대 요소에 관해 생각해 본 적이 없었는데 이번 기회에 데이터 분석에 관한 시각이 넓어진 것 같아서 좋았다 ㅎㅎ
+AI 4대 요소 (모델, 데이터, 인프라, 사람)에 대해 각각의 관점에서 잘 설명해 주셔서 아주 흥미로웠다. 데이터 분석을 본격적으로 공부한 지 6개월이 넘어가지만 4대 요소에 관해 자세히 생각한 건 처음인것 같다.
 
 데이터 사이언스 직군에게 필요한 역량에 대해서도 알려주셨는데 역시,,, 통계학을 알고 있어야 데이터 분석을 제대로 할 수 있는 것을 다시 한번 느꼈다.
 
@@ -31,7 +31,7 @@ SQL 입문부터 활용까지 직무 부트 캠프는 SQL 기초를 강의하는
 
 교재로는 <a href='https://search.shopping.naver.com/book/catalog/32487801113?query=%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C%20%EB%B0%B0%EC%9A%B0%EB%8A%94%20SQL%20%EC%9E%85%EB%AC%B8&NaPm=ct%3Dlpn8mkyw%7Cci%3D6a602588c5310d490e1662a058139f575fb4c14c%7Ctr%3Dboksl%7Csn%3D95694%7Chk%3Dc49ed53055a96c43fc13f1e755499fdf7d6775e0'>그림으로 배우는 SQL 입문</a>을 추천해주셨다. 
 
-![Alt Image]({{site.url}}/images/2023-12-02-comento_ot/sql_book.png){: .align-center .img-width-half }
+![Alt Image]({{site.url}}/images/2023-12-02-comento_first/sql_book.png){: .align-center .img-width-half }
 
 입문서로 유명한 책이라 SQL 기초를 다지기에 좋은 것 같다! 
 

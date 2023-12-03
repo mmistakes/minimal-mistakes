@@ -123,7 +123,7 @@ Tableau Desktop Specialist  는 Tableau Desktop에 대한 기본적인 기술과
 
 공부하면서 개념들은 정리한 내용은 다음과 같다
 
-> <a href = '{{site.url}}/태블로자격증/tableau_specialist/'>Tableau Desktop Specialist 개념 정리</a>
+<a href = '{{site.url}}/태블로자격증/tableau_specialist/'>Tableau Desktop Specialist 개념 정리</a>
 
 
 ### 후기
