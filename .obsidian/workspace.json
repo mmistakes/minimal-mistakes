@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-12-03-IncrementAndDecrementOperator.md",
+                "file": "_posts/2023-12-03-ValidRangeOfVariable.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-12-03-IncrementAndDecrementOperator.md",
+                "file": "_posts/2023-12-03-ValidRangeOfVariable.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-12-03-IncrementAndDecrementOperator.md",
+                "file": "_posts/2023-12-03-ValidRangeOfVariable.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-12-03-IncrementAndDecrementOperator.md"
+                "file": "_posts/2023-12-03-ValidRangeOfVariable.md"
               }
             }
           }
@@ -148,50 +148,50 @@
   },
   "active": "bcc96669a83b4c4b",
   "lastOpenFiles": [
+    "_posts/2023-12-03-Variable.md",
+    "_posts/2023-12-03-OtherOperator.md",
+    "_posts/2023-12-03-LogicalOperator.md",
     "_posts/2023-12-03-IterationStatement.md",
+    "_posts/2023-12-03-IncrementAndDecrementOperator.md",
+    "_posts/2023-12-03-CProgramming.md",
+    "_posts/2023-12-03-CProgram.md",
+    "_posts/2023-12-03-ControlStatement.md",
+    "_posts/2023-12-03-Constant.md",
+    "_posts/2023-12-03-ConditionalStatement.md",
+    "_posts/2023-12-03-ComparisonOperator.md",
+    "_posts/2023-12-03-CLanguageFunction.md",
+    "_posts/2023-12-03-TypeCasting.md",
+    "_posts/2023-12-03-BasicType.md",
+    "_posts/2023-12-03-Printf().md",
+    "_posts/2023-12-03-ValidRangeOfVariable.md",
+    "_site/language/ValidRangeOfVariable/index.html",
+    "_site/language/ValidRangeOfVariable",
+    "_site/language/ValidRangeOf-variables/index.html",
+    "_site/language/ValidRangeOf-variables",
+    "_site/language/CLanguageFunction-1/index.html",
+    "_site/language/CLanguageFunction-1",
+    "_site/page5/index.html",
+    "_site/page5",
+    "_site/language/CLanguageFunction/index.html",
+    "_site/language/CLanguageFunction",
+    "_posts/2023-12-03-ArithmeticOperator.md",
+    "_posts/2023-12-03-AssignmentOperator.md",
+    "_posts/2023-12-03-BitwiseOperator.md",
+    "_posts/2023-12-03-C.md",
+    "_posts/2023-12-03-Scanf().md",
     "_site/Pasted image 20231203142032.png",
     "Pasted image 20231203142032.png",
     "_site/Pasted image 20231203140231.png",
     "Pasted image 20231203140231.png",
     "_site/Pasted image 20231203135844.png",
     "Pasted image 20231203135844.png",
-    "_posts/2023-12-03-IncrementAndDecrementOperator.md",
-    "_site/language/IterationStatement/index.html",
-    "_site/language/IterationStatement",
-    "_site/IterationStatement/index.html",
-    "_site/IterationStatement",
-    "_posts/2023-12-03-CProgram.md",
-    "_posts/2023-12-03-ArithmeticOperator.md",
     "_site/assets/images/404.png",
     "assets/images/404.png",
     "_site/images/2023-12-01-second/404.png",
-    "_site/images/2023-12-01-second",
-    "_site/images",
     "images/2023-12-01-second/404.png",
-    "_site/404.html",
     "_site/_pages/404.md",
-    "_site/_pages",
     "_pages/404.md",
-    "_posts/2023-12-03-Variable.md",
-    "_site/language/Variable/index.html",
-    "_site/language/Variable",
-    "_posts/2023-12-03-CProgramming.md",
-    "_posts/2023-12-03-AssignmentOperator.md",
-    "_posts/2023-12-03-BasicType.md",
-    "_posts/2023-12-03-BitwiseOperator.md",
-    "_posts/2023-12-03-C.md",
-    "_posts/2023-12-03-ComparisonOperator.md",
-    "_posts/2023-12-03-ConditionalStatement.md",
-    "_posts/2023-12-03-Constant.md",
     "_posts/2023-12-03--BitwiseOperator.md",
-    "_posts/2023-12-03--AssignmentOperator.md",
-    "_posts/2023-12-01-C.md",
-    "_posts/2023-12-03--C.md",
-    "_posts/2023-12-03--BasicType.md",
-    "_posts/2023-12-03--ArithmeticOperator.md",
-    "_posts/2023-12-03--ComparisonOperator.md",
-    "_posts/2023-12-03--ConditionalStatement.md",
-    "_posts/2023-12-03--Constant.md",
-    "_posts/2023-12-03--IncrementAndDecrementOperator.md"
+    "_posts/2023-12-03--AssignmentOperator.md"
   ]
 }
