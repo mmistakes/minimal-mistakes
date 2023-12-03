@@ -1,11 +1,11 @@
 ---
 layout: single
 title: Chapter 02 C 프로그래밍
-categories : Language
-tag : C
+date: 2023-12-03 11:55:35
+categories: Language
+tags: C
+excerpt: C 프로그래밍에 관한 글입니다.
 ---
-
-C 프로그래밍에 관한 글입니다.
 
 # 1 프로그래밍(programming)
 

@@ -1,11 +1,11 @@
 ---
 layout: single
 title: Chapter 16 기타 연산자
-categories : Language
-tag : C
+date: 2023-12-03 11:58:52
+categories: Language
+tags: C
+excerpt: 기타 연산자에 관한 글입니다.
 ---
-
-기타 연산자에 관한 글입니다.
 
 # 1 삼항 연산자(ternary operator)
 

@@ -1,11 +1,11 @@
 ---
 layout: single
 title: Chapter 14 논리 연산자
-categories : Language
-tag : C
+date: 2023-12-03 11:58:35
+categories: Language
+tags: C
+excerpt: 논리 연산자에 관한 글입니다.
 ---
-
-논리 연산자에 관한 글입니다.
 
 # 1 논리 연산자(logical operator)
 
