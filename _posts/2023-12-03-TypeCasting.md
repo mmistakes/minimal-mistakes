@@ -1,10 +1,11 @@
 ---
 layout: single
 title: Chapter 09 타입 변환
-date: 2023-12-03 11:57:46 +0700
+date: 2023-12-03 11:57:46 +09:00
 categories: Language
 tags: C
 excerpt: 타입 변환에 관한 글입니다.
+toc: true
 ---
 
 # 1 타입 변환(type conversion)

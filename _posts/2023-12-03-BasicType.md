@@ -1,10 +1,11 @@
 ---
 layout: single
 title: Chapter 08 기본 타입
-date: 2023-12-03 11:57:38 +0700
+date: 2023-12-03 11:57:38 +09:00
 categories: Language
 tags: C
 excerpt: 기본 타입에 관한 글입니다.
+toc: true
 ---
 
 # 1 기본 타입

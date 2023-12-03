@@ -1,10 +1,11 @@
 ---
 layout: single
 title: Chapter 11 대입 연산자
-date: 2023-12-03 11:58:07 +0700
+date: 2023-12-03 11:58:07 +09:00
 categories: Language
 tags: C
 excerpt: 대입 연산자에 관한 글입니다.
+toc: true
 ---
 
 # 1 대입 연산자(assignment operator)

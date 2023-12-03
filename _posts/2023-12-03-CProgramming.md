@@ -1,10 +1,11 @@
 ---
 layout: single
 title: Chapter 02 C 프로그래밍
-date: 2023-12-03 11:55:35 +0700
+date: 2023-12-03 11:55:35 +09:00
 categories: Language
 tags: C
 excerpt: C 프로그래밍에 관한 글입니다.
+toc: true
 ---
 
 # 1 프로그래밍(programming)

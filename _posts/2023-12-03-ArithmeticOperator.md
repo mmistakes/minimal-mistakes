@@ -1,10 +1,11 @@
 ---
 layout: single
 title: Chapter 10 산술 연산자
-date: 2023-12-03 11:58:02 +0700
+date: 2023-12-03 11:58:02 +09:00
 categories: Language
 tags: C
 excerpt: 산술 연산자에 관한 글입니다.
+toc: true
 ---
 
 # 1 연산자(operator)
