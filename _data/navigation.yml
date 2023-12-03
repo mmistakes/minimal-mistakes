@@ -5,13 +5,48 @@ main:
   - title: "Tag"
     url: /tags/
 
-# docs:
-#   - title: "Language"
-#     children:
-#       - title: C
-#         url: /categories/c
-#       - title: Python
-#         url: /categories/python
+docs:
+  - title: Programming
+    children:
+      - title: "C/C++"
+        url: c-cpp/
+        category: "c-cpp"
+      - title: "Python"
+        url: python/
+        category: "python"
+  - title: Algorithm & CodingTest
+    children:
+      - title: "Algorithm"
+        url: algorithm/
+        category: "algorithm"
+      - title: "Coding Test"
+        url: codingtest/
+        category: "codingtest"
+  - title: ML & DL
+    children:
+      - title: "Machine Learning"
+        url: machinelearning/
+        category: machinelearning
+      - title: "Deep Learning"
+        url: deeplearning/
+        category: "deeplearning"
+      - title: "Data Analysis"
+        url: dataanalysis/
+        category: "dataanalysis"
+  - title: Database & Server
+    children:
+      - title: "My-SQL"
+        url: mysql/
+        category: "mysql"
+  - title: Etc
+    children:
+      - title: "etc"
+        url: etc/
+        category: "etc"
+
+  
+
+
 
 counts:
   - title: "Category"
