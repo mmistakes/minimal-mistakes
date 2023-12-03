@@ -1,6 +1,6 @@
 ---
 title: "Boostrapping RKE2"
-date: 2022-11-23
+date: 2022-12-02
 excerpt: "Howto guide for ensuring RKE2 is bootstrapped with ArgoCD, Prometheus, and Cert-Manager"
 tags: [rke2, argocd, devops, cluster, prometheus, cert-manager]
 header:

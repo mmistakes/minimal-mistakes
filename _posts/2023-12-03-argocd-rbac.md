@@ -1,6 +1,6 @@
 ---
 title: "ArgoCD RBAC"
-date: 2022-11-23
+date: 2022-12-03
 excerpt: "Howto guide for setting up ArgoCD RBAC"
 tags: [rbac, argocd, devops, cluster, keycloak]
 header:
