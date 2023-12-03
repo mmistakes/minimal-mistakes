@@ -1,11 +1,11 @@
 ---
 layout: single
 title: Chapter 12 증감 연산자
-categories : Language
-tag : C
+date: 2023-12-03 11:58:18 +0700
+categories: Language
+tags: C
+excerpt: 증감 연산자에 관한 글입니다.
 ---
-
-증감 연산자에 관한 글입니다.
 
 # 1 증감 연산자(increment and decrement operator)
 

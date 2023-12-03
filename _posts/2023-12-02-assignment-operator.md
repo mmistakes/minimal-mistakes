@@ -1,11 +1,11 @@
 ---
 layout: single
 title: Chapter 11 대입 연산자
-categories : Language
-tag : C
+date: 2023-12-03 11:58:07 +0700
+categories: Language
+tags: C
+excerpt: 대입 연산자에 관한 글입니다.
 ---
-
-대입 연산자에 관한 글입니다.
 
 # 1 대입 연산자(assignment operator)
 
