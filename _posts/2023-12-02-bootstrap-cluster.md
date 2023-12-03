@@ -22,6 +22,30 @@ Date: 2023-12-02
 
 This guide will walk you through the steps to bootstrap an RKE2 cluster with ArgoCD. This guide assumes you have a working RKE2 cluster and ArgoCD instance. If you do not have these, please refer to my previous post on installing RKE2 with Cilium: [here](https://mitchmurphy.io/cilium-rke2/)
 
+## Table of Contents
+
+- [How to Guide: Boostrapping RKE2 with ArgoCD, Prometheus, and Cert-Manager](#how-to-guide-boostrapping-rke2-with-argocd-prometheus-and-cert-manager)
+  - [Introduction](#introduction)
+  - [Table of Contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Steps](#steps)
+    - [1. Create a new namespace for ArgoCD](#1-create-a-new-namespace-for-argocd)
+    - [2. ArgoCD](#2-argocd)
+      - [Argo Components](#argo-components)
+    - [2.1 Install Helm](#21-install-helm)
+    - [3. Login to ArgoCD](#3-login-to-argocd)
+    - [4. Update Password](#4-update-password)
+    - [5. Add Repositories](#5-add-repositories)
+    - [6. Create a new project](#6-create-a-new-project)
+    - [7. Install Prometheus](#7-install-prometheus)
+      - [Using ArgoCD](#using-argocd)
+    - [Cert-Manager](#cert-manager)
+      - [CM Components](#cm-components)
+      - [Install Cert-Manager](#install-cert-manager)
+      - [Cluster Issuer](#cluster-issuer)
+    - [Ingress Controller](#ingress-controller)
+
+
 ## Prerequisites
 
 - RKE2 Cluster
