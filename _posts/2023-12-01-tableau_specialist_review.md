@@ -10,11 +10,11 @@ sidebar:
 
 ---
 
-Tableau Desktop Specialist  는 Tableau Desktop에 대한 기본적인 기술과 이해가 있고, 최소 3개월의 제품 사용 경험이 있는 사람을 위한 시험이라고 명시되어 있습니다. 
+2023년 버전의 태블로 자격증 후기가 많이 없어서, 자격증 합격까지의 후기와 관련 정보들을 정리해봤습니다.
 
-데이터 분석 분야의 취업 공고에서는 Tableau 경험이 중요시되고 있어, 관련 자격증을 취득해두면 좋을 것 같아 Tableau Desktop Specialist 취득 목표를 새웠습니다. 
 
 ### Tableau Desktop Specialist 정보 
+Tableau Desktop Specialist  는 Tableau Desktop에 대한 기본적인 기술과 이해가 있고, 최소 3개월의 제품 사용 경험이 있는 사람을 위한 시험이라고 명시되어 있습니다. 
 
 - 시험방식 : 온라인
 - 문항수 : 45
@@ -52,8 +52,6 @@ Tableau Desktop Specialist  는 Tableau Desktop에 대한 기본적인 기술과
 
 
 #### 시험 결과  
-
-오늘 아침에 바로 보고 온 따끈한 결과이다 !!
 
 높은 점수를 달성하지 못한게 아쉽지만.. 750점 이상을 받아 결과는 통과이다 
 
@@ -128,12 +126,16 @@ Tableau Desktop Specialist  는 Tableau Desktop에 대한 기본적인 기술과
 > <a href = '{{site.url}}/태블로자격증/tableau_specialist/'>Tableau Desktop Specialist 개념 정리</a>
 
 
------
+### 후기
+Tableau Desktop Specialist 자격증은 실습보다는 이론 위주라 이해보다는 그냥 외우는 개념들이 많아 공부를 하는 과정이 너무 지루했다.
 
-2023년 버전의 태블로 자격증 후기가 많이 없어서,  자격증 취득 기념 관련 내용들을 정리해봤습니다.
+가격도 10만 원이 넘고 2회 까지는 기간 제한 없이 신청할 수 있지만 3회 부터는 2개월의 텀이 있어야 해서 한 번에 취득하는 것을 목표로 단기간에 빡세게 공부해서 취득하는 것이 베스트 인 것 같다. 
 
-자격증 취득을 원하시는 분들에게 도움이 됐으면 좋겠습니다!!
+며칠 동안 계속 로봇처럼 개념을 외우다 보니 점점 공부하기가 지쳐갔는데 한 번에 취득해서 다행이다!
 
+추가적으로 전세계 태블로 자격증 합격자들은 <a href ='https://www.credly.com/organizations/tableau/directory?filter%5Bbadge_name%5D=Tableau%20Desktop%20Specialist&filter%5Blocation_name%5D=Korea%2C%20Republic%20of'>www.credly.com </a> 에서 확인 할 수 있다. 참고로 한국에서 Tableau Desktop Specialist 를 취득한 사람은 333명이다. 
+
+고득점을 목표로 하는 분들은 한 달 정도의 기간을 잡으시고 이론을 공부하면서 실습도 같이 진행하는 것을 추천 한다.
 
 
 
