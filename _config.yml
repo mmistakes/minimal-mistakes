@@ -286,3 +286,11 @@ defaults:
       lunr:
         search_within_pages: true
         search_full_content: true
+
+
+markdown: kramdown
+kramdown:
+    highlighter: rouge
+    syntax_highlighter_opts:
+        block:
+            line_numbers: true
