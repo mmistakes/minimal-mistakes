@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Chapter 10 산술 연산자
-date: 2023-12-03 11:58:02
+date: 2023-12-03 11:58:02 +0700
 categories: Language
 tags: C
 excerpt: 산술 연산자에 관한 글입니다.

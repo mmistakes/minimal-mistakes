@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Chapter 16 기타 연산자
-date: 2023-12-03 11:58:52
+date: 2023-12-03 11:58:52 +0700
 categories: Language
 tags: C
 excerpt: 기타 연산자에 관한 글입니다.

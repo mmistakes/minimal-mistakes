@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Chapter 14 논리 연산자
-date: 2023-12-03 11:58:35
+date: 2023-12-03 11:58:35 +0700
 categories: Language
 tags: C
 excerpt: 논리 연산자에 관한 글입니다.

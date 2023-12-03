@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Chapter 11 대입 연산자
-date: 2023-12-03 11:58:07
+date: 2023-12-03 11:58:07 +0700
 categories: Language
 tags: C
 excerpt: 대입 연산자에 관한 글입니다.
