@@ -27,7 +27,7 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # "/assets/images/spaceblh.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : True # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Dev. 김민혁"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "총명하고 빛나라."
+  bio              : "총명하고 빛나는"
   location         : "South Korea"
   email            : "hyeok8920@gmail.com"
   links:
@@ -137,7 +137,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/xvihaan"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -287,3 +287,4 @@ defaults:
       comments: # true
       share: true
       related: true
+      show_date: true
