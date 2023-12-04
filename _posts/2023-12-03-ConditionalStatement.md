@@ -154,7 +154,7 @@ else
 
 > if / else if / else 문을 순서도로 표현하면 다음 그림과 같다.
 
-![업로드중..](blob:https://velog.io/f80b6e3f-728b-4b36-8a48-cc5e26eb2faa)
+![image](https://github.com/EunChong999/Project-SHOOTER/assets/136239807/0f3d12d8-e175-4d81-ae18-a02ce9f73e56)
 
 > C 언어에서 else if 문의 문법은 다음과 같다.
 
