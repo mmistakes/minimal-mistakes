@@ -10,6 +10,8 @@
 
 ## Preprints
 
+- Verbeke, P., & Verguts, T. (2023). Reinforcement learning and meta-decision making. [PsyArxiv.](https://osf.io/preprints/psyarxiv/uvfhe)
+  
 - Chen, H., Hauspie, C., Ergo, K., Calderon, C. B., & Verguts, T. (2023). Prediction error as the basis of the testing effect: Empirical and Modelling Evidence. [PsyArxiv.](https://osf.io/preprints/psyarxiv/ar5yd/)
 
 - Le Denmat, P, Verguts, T., & Desender, K. (2023). A low-dimensional approximation of optimal confidence. [BioArxiv.](https://www.biorxiv.org/content/10.1101/2023.03.15.532729v1)
