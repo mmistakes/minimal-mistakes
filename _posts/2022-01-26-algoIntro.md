@@ -20,8 +20,6 @@ search: true
 [코드없는 프로그래밍](https://www.youtube.com/channel/UCHcG02L6TSS-StkSbqVy6Fg)
 {: .notice--danger}
 
-개인적으로 많은 도움이 되었던 유튜버님이기 때문에 작게나마 홍보 했습니다. 
-
 
 
 ### 알고리즘 카테고리의 방향성 
