@@ -1,5 +1,5 @@
 ---
-title: "AI Insight Forum"
+title: "US AI Insight Forum"
 categories:
   - AI Regulation
 tags:

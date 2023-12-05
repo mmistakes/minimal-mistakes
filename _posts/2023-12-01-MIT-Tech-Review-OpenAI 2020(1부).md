@@ -1,7 +1,7 @@
 ---
-title: "[MIT Technolgy Reviews] The messy, secretive reality behind OpenAI’s bid to save the world (1부)"
+title: "[MIT Technolgy Reviews - OpenAI] The messy, secretive reality behind OpenAI’s bid to save the world (1부)"
 categories:
-  - AI Regulation
+  - AI Company
 tags:
   - OpenAI
   - AI
@@ -20,7 +20,7 @@ _________________
 
 ARTIFICIAL INTELLIGENCE
 
-# The messy, secretive reality behind OpenAI’s bid to save the world
+# The messy, secretive reality behind OpenAI’s bid to save the world(1/5)
 
 #### The AI moonshot was founded in the spirit of transparency. This is the inside story of how competitive pressure eroded that idealism.
 
@@ -30,16 +30,18 @@ ARTIFICIAL INTELLIGENCE
 
 
   * MIT Technolgy Reviews에 2020년 2월 17일, AI분야 기자 [Karen Hao](https://www.technologyreview.com/author/karen-hao/)이 작성한 [기사](https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/)를 DeepL로 번역 후, "포괄적 요약"하고, "저의 의견"을 추가하여 작성한 내용
+  * 아주 긴 기사를 나름 5부로 나누어 OpenAI에 대해서 공부할 겸 정리해보았음
   * 2022년 ChatGPT로 일반인들(나 포함)에게 알려지기 까지, 2019년 2020년 초에 OpenAI가 어떤 기업이였는지 알 수 있는 자료
   * 만약 저작권에 문제가 있다면 바로 알려주세요!!
 
 ---
 
-> 2015년 설립 당시, AI 개발과 실행에 드는 비용때문에 소수에게 권력이 집중되는 경향을 예측하여, 비영리기관이라는 업계의 이목을 집중시켜, 경쟁사와는 다른 출발한 것에 대해 실리콘밸리 사람들의 대단한 예측력과 사업추진력을 알수 있음
+> 2015년 설립 당시 OpenAI 설립을 주도했던 사람들은, AI 개발과 실행에 드는 천문학적 소요 비용때문에 결국, 소수에게 AI관련 권력이 집중되는 경향을 예측하고, OpenAI가 비영리기관이라는 컨셉으로 업계에게 이목을 집중시켜 유명한 AI 개발 경쟁사들와는 다른 출발한 것은 결국, 실리콘밸리 사람들의 대단한 예측력과 사업추진력을 가지고 있었다는 것을 느낌
 >
-> 그리고 startup 기업이 초창기 목표와 비전을 지켜나가기 위해서 어떤 갈등이 있고, 어떻게 해쳐나가는지도 느껴질 수 있음
+> 그리고 startup 기업이 설립 초창기에 세웠던 목표와 비전을 지켜나가기 위해서 어떤 갈등이 있고, 어떻게 그러한 갈등들을 해쳐나가는지도 느껴질 수 있음
+> ChatGPT라는 상품으로 결국 일반인들까지 알려진 OpenAI에 2020년까지 어떻게 성장했는지 알 수 있는 중요한 기사임 
 > 
-> 어떻게 OpenAI와 같은 기업을 우리가 기대할 수 있을까? 가장 중요한 인력확보? 그리고 투자자? 
+> 근데, 과연 우리나라는 OpenAI와 같은 기업들 기대할 수 있을까? 가장 중요한 인력확보부터 그리고 투자 유치 등등 
 > 우리나라도 세계적인 경쟁력을 가진 기업들과 국가(정부)가 역할을 분담하여, AI에 대한 선택과 집중할 분야를 선정하여 투자할 필요가 있을 듯하다. 분명히 AI산업에서 우리가 들어갈 수 있는 틈새가 있을 것이며, 우리가 잘 하는 부분도 있을 것이기 때문이다. 
 > 아니면 다양한 기업과 국가들 사이에서 기술력이 아니라 관계력을 발휘할 수도...
     

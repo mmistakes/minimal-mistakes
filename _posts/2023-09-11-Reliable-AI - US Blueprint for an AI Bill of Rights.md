@@ -1,5 +1,5 @@
 ---
-title: "AI Regulation - Blueprint for an AI Bill of Rights(OCTOBER 2022) "
+title: "US Blueprint for an AI Bill of Rights(OCTOBER 2022) "
 categories:
   - AI Regulation
 tags:
@@ -13,7 +13,7 @@ tags:
   - 정책
   - 표준
 
-last_modified_at: 2023-09-13T16:50:50-11:00
+last_modified_at: 2023-12-05T14:25:50-14:28
 ---
 
 ## 미국 - Blueprint for an AI Bill of Rights 

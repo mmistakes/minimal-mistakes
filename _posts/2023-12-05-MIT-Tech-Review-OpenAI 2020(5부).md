@@ -1,7 +1,7 @@
 ---
 title: "[MIT Technolgy Reviews] The messy, secretive reality behind OpenAI’s bid to save the world (5부)"
 categories:
-  - AI Regulation
+  - AI Company
 tags:
   - OpenAI
   - AI
@@ -20,7 +20,7 @@ _________________
 
 ARTIFICIAL INTELLIGENCE
 
-# The messy, secretive reality behind OpenAI’s bid to save the world
+# The messy, secretive reality behind OpenAI’s bid to save the world(5/5)
 
 #### The AI moonshot was founded in the spirit of transparency. This is the inside story of how competitive pressure eroded that idealism.
 
@@ -30,10 +30,12 @@ ARTIFICIAL INTELLIGENCE
 
 
   * MIT Technolgy Reviews에 2020년 2월 17일, AI분야 기자 [Karen Hao](https://www.technologyreview.com/author/karen-hao/)이 작성한 [기사](https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/)를 DeepL로 번역 후, "포괄적 요약"하고, "저의 의견"을 추가하여 작성한 내용
+  * 아주 긴 기사를 나름 5부로 나누어 OpenAI에 대해서 공부할 겸 정리해보았음
   * 2022년 ChatGPT로 일반인들(나 포함)에게 알려지기 까지, 2019년 2020년 초에 OpenAI가 어떤 기업이였는지 알 수 있는 자료
   * 만약 저작권에 문제가 있다면 바로 알려주세요!!
 
 ---
+
 
 > 2015년 설립 당시, AI 개발과 실행에 드는 비용때문에 소수에게 권력이 집중되는 경향을 예측하여, 비영리기관이라는 업계의 이목을 집중시켜, 경쟁사와는 다른 출발한 것에 대해 실리콘밸리 사람들의 대단한 예측력과 사업추진력을 알수 있음
 >

@@ -1,5 +1,5 @@
 ---
-title: "AI Standardizaiton - Youtube"
+title: "[Youtube] 생성AI 표준과 인증체계"
 categories:
   - AI Standards
 tags:

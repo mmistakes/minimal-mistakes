@@ -1,7 +1,7 @@
 ---
 title: "[MIT Technolgy Reviews] The messy, secretive reality behind OpenAI’s bid to save the world (3부)"
 categories:
-  - AI Regulation
+  - AI Company
 tags:
   - OpenAI
   - AI
@@ -20,13 +20,22 @@ _________________
 
 ARTIFICIAL INTELLIGENCE
 
-# The messy, secretive reality behind OpenAI’s bid to save the world
+# The messy, secretive reality behind OpenAI’s bid to save the world(3/5)
 
 #### The AI moonshot was founded in the spirit of transparency. This is the inside story of how competitive pressure eroded that idealism.
 
 ##### By Karen Hao
 ##### February 17, 2020
 ---
+
+
+  * MIT Technolgy Reviews에 2020년 2월 17일, AI분야 기자 [Karen Hao](https://www.technologyreview.com/author/karen-hao/)이 작성한 [기사](https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/)를 DeepL로 번역 후, "포괄적 요약"하고, "저의 의견"을 추가하여 작성한 내용
+  * 아주 긴 기사를 나름 5부로 나누어 OpenAI에 대해서 공부할 겸 정리해보았음
+  * 2022년 ChatGPT로 일반인들(나 포함)에게 알려지기 까지, 2019년 2020년 초에 OpenAI가 어떤 기업이였는지 알 수 있는 자료
+  * 만약 저작권에 문제가 있다면 바로 알려주세요!!
+
+---
+
 
 
 [헌장](https://openai.com/charter/)은 OpenAI의 근간입니다. 헌장은 연구소의 모든 전략과 행동의 발판 역할을 합니다. 점심 식사 내내 브록먼은 회사의 모든 측면을 설명하는 경전처럼 이 헌장을 낭독했습니다. (한 대사를 암송하는 도중에 그는 "그런데 이 모든 대사를 정확히 알아듣기 위해 많은 시간을 들여 꼼꼼히 살펴봤기 때문에 잘 알고 있는 것 같다"고 설명합니다. 회의 전에 이 글을 읽었던 것과는 전혀 달라요.")
