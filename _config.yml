@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "neon" # "default" # "air", "aqua", "contrast", "dark
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "#bBright"
+title                    : "Be Bright and bright"
 title_separator          : "|"
-subtitle                 : "be Bright and bright"
+subtitle                 : "민혁의 개발 블로그."
 name                     : "minhyeok"
 description              : 
 url                      : "https://xvihaan.github.io"
