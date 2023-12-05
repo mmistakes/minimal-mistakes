@@ -19,11 +19,8 @@ last_modified_at: 2023-12-05T15:00:11-15:10
 _________________
 
 
-AAA
+A <iframe src="/assets/test.pdf" title="example" width="100%" height="500" frameborder="0"></iframe>
+ 
+B <object type="application/pdf" data="/assets/test.pdf" width="100%" heigh="650"></object>
 
-
-<iframe src="/assets/제품안전관리 제도 설명자료 2023(제품출시후 중심)v3.7 - o.pdf" title="example" width="100%" height="500" frameborder="0"></iframe>
-
-<object type="application/pdf" data="/assets/제품안전관리 제도 설명자료 2023(제품출시후 중심)v3.7 - o.pdf" width="100%" heigh="650"></object>
-
-<embed type="application/pdf" scr="/assets/제품안전관리 제도 설명자료 2023(제품출시후 중심)v3.7 - o.pdf" width="100%" heigh="650">
+C <embed type="application/pdf" scr="/assets/test.pdf" width="100%" heigh="650">
