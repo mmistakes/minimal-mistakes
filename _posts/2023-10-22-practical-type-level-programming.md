@@ -1635,17 +1635,16 @@ type ZipWithSource[L] <: Tuple = L match // 1
     ZipWithConst[elemLabels, label] // 3
   
 type ZipWithConst[T <: Tuple, A] = 
-  Map[T, // 4 
-      [t] =>> (t, A)] // 5
+  T Map ([t] =>> (t, A)) // 4
 ```
 
 Here we:
 - Define `ZipWithSource` (1) which takes an argument `Labelling`. The type bound indicates tha the result is going to be some `Tuple`.
 - Match on the `Labelling` (2) so that we deconstruct it into the class label (`label`) and the field labels (`elemLabels`).
 - Invoke the `ZipWithConst` type "function" (3) on the labels.
-- `ZipWithConst` is just an alias (4) to an invocation of `Map` that we've seen before, which is the `Tuple` equivalent of `List.map`.
+- `ZipWithConst` is just an alias (4) to an invocation of `Map` that we've seen before, which is the `Tuple` equivalent of `List.map`. Notice that we're using an infix application of `Map`, which gives it a nice "collections" vibe.
 - `ZipWithConst` takes a tuple and a fixed type `A` as an argument.
-- The "function" that we apply to each element of the tuple is a [type-lambda](https://docs.scala-lang.org/scala3/reference/new-types/type-lambdas.html) (5), type-lambdas are the equivalent of anonymous functions at the type-level. In this case it takes each element in the original tuple and pairs it with `A`.
+- The "function" that we apply to each element of the tuple is a [type-lambda](https://docs.scala-lang.org/scala3/reference/new-types/type-lambdas.html), denoted by `=>>`. Type-lambdas are the equivalent of anonymous functions at the type-level. In this case it takes each element in the original tuple and pairs it with `A`.
 
 Let's "run" `ZipWithSource`:
 ```scala
@@ -1690,10 +1689,10 @@ import scala.compiletime.ops.boolean.* // 1
 import scala.compiletime.ops.any.*
 
 type FindLabel[Label, T <: Tuple] = // 2
-  Filter[T, [ls] =>> HasLabel[Label, ls]] Map Second // 3
+  T Filter ([ls] =>> HasLabel[Label, ls]) Map Second // 3
 
 type RemoveLabel[Label, T <: Tuple] = // 4
-  Filter[T, [ls] =>> ![HasLabel[Label, ls]]] // 5
+  T Filter ([ls] =>> ![HasLabel[Label, ls]]) // 5
 
 type HasLabel[Label, LS] <: Boolean = LS match // 6
   case (l, s) => Label == l // 7
@@ -1768,7 +1767,7 @@ The result is that now we have pairs, where the first element is a label, and th
 ```scala
 import scala.compiletime.ops.int.* // 1
 
-type OnlyDuplicates[Labels <: Tuple] = Filter[Labels, [t] =>> Size[Second[t]] > 1] // 2
+type OnlyDuplicates[Labels <: Tuple] = Labels Filter ([t] =>> Size[Second[t]] > 1) // 2
 
 type FindDuplicates[Labellings <: Tuple] = 
   OnlyDuplicates[GroupByLabels[ZipAllWithSource[Labellings]]] // 3
@@ -1817,13 +1816,13 @@ type GroupByLabels[Labels <: Tuple] <: Tuple = Labels match
     ((label, source *: FindLabel[label, t])) *: GroupByLabels[RemoveLabel[label, t]]
 
 type OnlyDuplicates[Labels <: Tuple] = 
-  Filter[Labels, [t] =>> Size[Second[t]] > 1]
+  Labels Filter ([t] =>> Size[Second[t]] > 1)
 
 type FindLabel[Label, T <: Tuple] =
-  Filter[T, [ls] =>> HasLabel[Label, ls]] Map Second
+  T Filter ([ls] =>> HasLabel[Label, ls]) Map Second
 
 type RemoveLabel[Label, T <: Tuple] =
-  Filter[T, [ls] =>> ![HasLabel[Label, ls]]]
+  T Filter ([ls] =>> ![HasLabel[Label, ls]])
 
 type HasLabel[Label, LS] <: Boolean = LS match
   case (l, s) => Label == l
@@ -1843,7 +1842,7 @@ type Size[T] <: Int = T match
 
 Some observations about this code:
 - This almost looks like we're writing in a real, functional, language!
-- Especially with the high-level functions like `Map`, `FlatMap`, and `Filter`.
+- Especially with the high-level functions like `Map`, `FlatMap`, and `Filter`. The infix syntax gives it extra familiarity.
 - Having the ability to define anonymous functions with `=>>` is a very nice touch. How's that for a reusable tool?
 - The type-level code mimics [value-level](https://github.com/ncreep/scala3-flat-json-blog/blob/master/value_level_find_duplicates.scala) code very well. If you were to start from some regular value-level code, translating to a type-level equivalent is fairly straightforward[^rules].
 - Compared to the ad-hoc Prolog feel that we had in similar situations in the past in Scala 2 with implicits, this is a great improvement[^prologIsGreat].
