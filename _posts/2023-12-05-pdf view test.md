@@ -22,17 +22,13 @@ _________________
 A 
 <iframe src="/assets/test.pdf" title="example" width="100%" height="500" frameborder="0"></iframe>
 
-A-1
-<iframe src="/assets/test.pdf"></iframe>
+A-4 
+<iframe
+    src="/assets/test.pdf"
+    frameBorder="0"
+    scrolling="auto"
+    height="100%"
+    width="100%"
+></iframe>
 
-A-2
-<iframe src="/assets/test.pdf#toolbar=0&navpanes=0&scrollbar=0"></iframe>
- 
-B 
-<object type="application/pdf" data="/assets/test.pdf" width="100%" heigh="650"></object>
 
-C
-<embed type="application/pdf" scr="/assets/test.pdf" width="100%" heigh="650">
-
-C-1
-<embed src="/assets/test.pdf" type="application/pdf" />
