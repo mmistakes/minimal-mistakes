@@ -1563,11 +1563,13 @@ A brief explanation of this rewrite:
 
 [^differentIssue]: This is a somewhat different manifestation of [18011](https://github.com/lampepfl/dotty/issues/18011), where instead of failing to compile we just lose the precise types.
 
-The whole thing is very fragile[^complexity], seemingly benign code modifications break it in different and surprising ways[^tests]. If there's a reason to choose macros over type-level techniques, this would be it. This area of novelties in Scala 3 is far from being mature. Let's hope that it improves over time.
+The whole thing is very fragile[^complexity], seemingly benign code modifications break it in different and surprising ways[^tests]. For these kinds of computations (i.e., computing types from values) the Scala 2 style "Prolog with implicits" is actually more robust, and works without any surprises[^implicitLabelling]. This area of novelties in Scala 3 is far from being mature. Let's hope that it improves over time.
 
 [^complexity]: [According](https://github.com/lampepfl/dotty/issues/18011#issuecomment-1605394436) to Martin Odersky, the relevant area of the compiler has "crazily complicated algorithms"...
 
 [^tests]: When writing such code it's very important to have some tests to make sure that it actually does what you think it does. It will be very unpleasant if after some benign refactor code silently stops working.
+
+[^implicitLabelling]: If you're curious what that would look like, I've implemented the same logic using implicits in the [repo](https://github.com/ncreep/scala3-flat-json-blog/blob/master/labelling_implicit.scala).
 
 Be that as it may, it works!
 ```scala
@@ -1935,7 +1937,7 @@ Which is better than nothing, but if we can't do any complex manipulations on ou
 
 Recall that when we wrote code with `inline`s the resulting code got recursively evaluated at compile-time. In theory, we could make a recursive function that would take our complex data and recursively convert it to string literals a bunch of `+` calls.
 
-This could definitely work[^exercise], but it's going to be very low-level string manipulation, as we won't have any access to the standard string utility functions. This sounds tedious, working at the value-level does not buy as much. But we do have an alternative though.
+This could definitely work[^exercise], but it's going to be very low-level string manipulation, as we won't have any access to the standard string utility functions. This sounds tedious, working at the value-level does not buy us much. But we do have an alternative though.
 
 [^exercise]: As per usual, feel free to make into an exercise: given the results of `FindDuplicates` turn it into a value, and then into a single error message that can be passed to `error`.
 
