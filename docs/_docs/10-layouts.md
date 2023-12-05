@@ -128,7 +128,7 @@ Auto-generated table of contents list for your posts and pages can be enabled by
 | ---------   | -------- | ----------- | ------- |
 | **toc**     | Optional | Show table of contents. (boolean) | `false` |
 | **toc_label** | Optional | Table of contents title. (string) | `toc_label` in UI Text data file. |
-| **toc_icon**  | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fontawesome.com/icons?d=gallery&s=solid&m=free) <i class="fas fa-file-alt"></i> **file-alt** icon. Other FA icons can be used instead. |
+| **toc_icon**  | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fontawesome.com/v5/search?s=solid&m=free) <i class="fas fa-file-alt"></i> **file-alt** icon. Other FA icons can be used instead. |
 | **toc_sticky** | Optional | Stick table of contents to top of screen.                   | `false` |
 
 **TOC example with custom title and icon**
@@ -593,7 +593,7 @@ defaults:
 **Note:** To disable the author sidebar profile for a specific post or page, add `author_profile: false` to the YAML Front Matter instead.
 {: .notice--warning}
 
-To assign more author links, add to the `author.links` array  in [`_config.yml`]({{ "/docs/configuration/" | relative_url }}) link so. Any of [Font Awesome's icons](https://fontawesome.com/icons?d=gallery) are available for use.
+To assign more author links, add to the `author.links` array  in [`_config.yml`]({{ "/docs/configuration/" | relative_url }}) link so. Any of [Font Awesome's icons](https://fontawesome.com/v5/search) are available for use.
 
 ```yaml
 author:
@@ -837,10 +837,10 @@ Add some Liquid tags for the new configuration to `_includes/footer/custom.html`
 {% endif %}
 ```{% endraw %}
 
-Next, add `page_js` to any page's YAML Front Matter to have your CSS loaded for that page.
+Next, add `page_js` to any page's YAML Front Matter to have your JavaScript loaded for that page.
 ```yaml
 page_js:
-  - /path/to/your/custom.css
+  - /path/to/your/custom.js
 ```
 
 ---
