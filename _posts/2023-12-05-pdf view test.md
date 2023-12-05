@@ -34,13 +34,4 @@ A-4
 
 
 A-5
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>pdf 뷰어 테스트</title>
-</head>
-<body>
     <iframe width="100%" height="600" src="/assets/test.pdf"></iframe>
-</body>
-</html>
