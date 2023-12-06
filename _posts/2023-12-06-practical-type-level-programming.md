@@ -1,6 +1,6 @@
 ---
 title: "Practical Type-Level Programming in Scala 3"
-date: 2023-10-22
+date: 2023-12-06
 header:
   image: "/images/blog cover.jpg"
 tags: []
