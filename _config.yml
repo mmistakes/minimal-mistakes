@@ -231,6 +231,7 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
   - jekyll-include-cache
+  - github-pages
 
 # mimic GitHub Pages with --safe
 whitelist:
