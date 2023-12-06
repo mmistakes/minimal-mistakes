@@ -8,6 +8,8 @@ toc: true
 excerpt: "Learn how to use type-level programming to solve practical problems."
 ---
 
+_by [Daniel Beskin](https://www.linkedin.com/in/daniel-beskin-02b594137)_
+
 # 1. Introduction
 
 Scala 3 boasts many features that are meant to simplify and enhance type-level programming: match types, inlines, diverse compile-time operations, and the list goes on. With all these new features it is quite easy to get lost when trying to solve a concrete problem using type-level techniques.
