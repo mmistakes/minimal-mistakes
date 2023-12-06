@@ -5,3 +5,5 @@ gem "github-pages", group: :jekyll_plugins
 gem "jekyll-remote-theme"
 
 gem "minimal-mistakes-jekyll"
+
+gem "webrick", "~> 1.8"
