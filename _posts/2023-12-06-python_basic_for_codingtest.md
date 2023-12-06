@@ -199,6 +199,7 @@ print(result)  # >>> 56
 **파이썬에서 반복되는 데이터를 처리하는 기능을 포함하고 있는 라이브러리**
 
 - **permutations** : iterable 객체에서 r개의 데이터를 뽑아 일렬로 나열하는 모든 경우(순열)을 계산해줌
+  
 ```python
 from itertools import permutations
 
@@ -209,6 +210,7 @@ print(result)
 # output
 >>> [('A', 'B', 'C'), ('A', 'C', 'B'), ('B', 'A', 'C'), ('B', 'C', 'A'), ('C', 'A', 'B'), ('C', 'B', 'A')]
 ```
+
 ```python
 from itertools import product
 
@@ -231,6 +233,7 @@ print(result)
 # output
 >>> [('A', 'B'), ('A', 'C'), ('B', 'C')]
 ```
+
 ```python
 # 중복을 포함해 r개를 뽑아 순서에 상관없이 나열하는 모든 경우
 from itertools import combinations_with_replacement
