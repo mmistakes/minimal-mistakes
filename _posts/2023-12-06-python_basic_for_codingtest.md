@@ -292,5 +292,5 @@ math.gcd(21, 14) # 최대공약수
 
 - iterable 객체 : 반복 가능한 객체 (리스트, 사전, 튜플 등)
 - if~ continue - 반복문 처음으로 돌아감
-
+- find(), replace(), enumerate(), 
             
