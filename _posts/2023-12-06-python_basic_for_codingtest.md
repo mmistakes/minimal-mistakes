@@ -224,6 +224,7 @@ print(result)
 
 
 - **combinations** : iterable 객체에서 r개의 데이터를 뽑아 순서를 고려하지 않고 나열하는 모든 경우(조합)을 계산해줌
+  
 ```python
 from itertools import combinations
 data = ['A', 'B', 'C']
