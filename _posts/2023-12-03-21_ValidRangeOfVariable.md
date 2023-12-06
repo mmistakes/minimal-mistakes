@@ -9,6 +9,7 @@ tags:
 excerpt: 변수의 유효 범위에 관한 글입니다.
 toc: true
 ---
+
 # 1 변수의 유효 범위(variable scope)
 
 > C 언어에서는 변수의 선언 위치에 따라 해당 변수의 유효 범위, 
