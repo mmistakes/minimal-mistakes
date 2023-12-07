@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-12-04-31_MemoryStructure.md",
+                "file": "_posts/2023-12-04-33_DynamicMemoryAllocation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-12-04-31_MemoryStructure.md",
+                "file": "_posts/2023-12-04-33_DynamicMemoryAllocation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-12-04-31_MemoryStructure.md",
+                "file": "_posts/2023-12-04-33_DynamicMemoryAllocation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-12-04-31_MemoryStructure.md"
+                "file": "_posts/2023-12-04-33_DynamicMemoryAllocation.md"
               }
             }
           }
@@ -148,6 +148,10 @@
   },
   "active": "61669096ec41de77",
   "lastOpenFiles": [
+    "_site/Pasted image 20231207191701.png",
+    "Pasted image 20231207191701.png",
+    "_posts/2023-12-04-32_StackFrame.md",
+    "_posts/2023-12-04-31_MemoryStructure.md",
     "_posts/2023-12-04-30_PointerArrayAndArrayPointers.md",
     "_site/Pasted image 20231206205417.png",
     "Pasted image 20231206205417.png",
@@ -175,8 +179,6 @@
     "_posts/2023-12-03-14_LogicalOperator.md",
     "_posts/2023-12-03-15_BitwiseOperator.md",
     "_posts/2023-12-03-16_OtherOperator.md",
-    "_posts/2023-12-03-17_ConditionalStatement.md",
-    "_posts/2023-12-03-19_ControlStatement.md",
     "_site/language/31_MemoryStructure/index.html",
     "_site/language/31_MemoryStructure",
     "_site/language/28_VariousPointers/index.html",
@@ -195,8 +197,6 @@
     "무제 파일 3.canvas",
     "무제 파일 2.canvas",
     "무제 파일 1.canvas",
-    "Pasted image 20231204212405.png",
-    "Pasted image 20231204195434.png",
     "_site/무제 파일 3.canvas",
     "_site/무제 파일 2.canvas",
     "_site/무제 파일 1.canvas",
