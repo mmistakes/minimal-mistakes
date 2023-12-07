@@ -150,9 +150,6 @@ Study on the lower power communications and networking techniques for Massively 
 
 ## PUBLICATIONS AND PRESENTATIONS
 
-### 
- 
-
 ### Academic(<em> Seletcted</em>)
 #### International Journal:
 
@@ -174,5 +171,7 @@ Study on the lower power communications and networking techniques for Massively 
 #### International Workshop and Symposium:
 
 [6] Poster Session: “Decentralized Detection with Empirically Collected Statistics in Wireless Sensor Networks,” The Korea-Japan Joint Workshop 2006 on Advanced Digital Circuit and Systems, January 2006, Japan
+
+
 
 ---
