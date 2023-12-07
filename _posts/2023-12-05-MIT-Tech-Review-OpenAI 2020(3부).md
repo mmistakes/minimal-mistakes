@@ -74,7 +74,7 @@ Brockman에게 있어 문서에 대한 엄격한 준수는 OpenAI의 구조를 �
 <figure>
     <img src="https://cdn.technologyreview.com/i/images/cf3a2285final-web.jpg?sw=700&cx=30&cy=411&cw=1940&ch=2587"
          alt="Jack Clark">
-    <figcaption> <br> Jack Clark, policy director.</br> Christie Hemm Klok </figcaption>
+    <figcaption> Jack Clark, policy director. Christie Hemm Klok </figcaption>
 </figure>
 
 5월이 되자 OpenAI는 입장을 수정하여 "단계적 출시" 계획을 발표. 그 후 몇 달에 걸쳐 점점 더 강력한 버전의 GPT-2를 순차적으로 출시. 그 사이에도 여러 연구 기관과 협력하여 알고리즘의 악용 가능성을 면밀히 조사하고 대응책을 개발. 마침내 11월에 전체 코드를 공개하면서 "아직까지 오용의 강력한 증거는 발견되지 않았다"고 밝힘
@@ -88,7 +88,7 @@ Brockman에게 있어 문서에 대한 엄격한 준수는 OpenAI의 구조를 �
 <figure>
     <img src="https://cdn.technologyreview.com/i/images/cf3a2404.jpg?sw=700&cx=0&cy=0&cw=3000&ch=2000"
          alt="OpenAI office wall">
-    <figcaption> <br> Cover images of OpenAI's research releases hang on its office wall.</br> Christie Hemm Klok </figcaption>
+    <figcaption> Cover images of OpenAI's research releases hang on its office wall. Christie Hemm Klok </figcaption>
 </figure>
 
 
@@ -114,7 +114,7 @@ Brockman에게 있어 문서에 대한 엄격한 준수는 OpenAI의 구조를 �
 <figure>
     <img src="https://cdn.technologyreview.com/i/images/cf3a2366final.jpg?sw=700&cx=0&cy=223&cw=1333&ch=1777"
          alt="Ilya Sutskever">
-    <figcaption> <br>Ilya Sutskever, co-founder and chief scientist. </br> Christie Hemm Klok </figcaption>
+    <figcaption> Ilya Sutskever, co-founder and chief scientist. Christie Hemm Klok </figcaption>
 </figure>
 
 ---

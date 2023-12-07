@@ -50,7 +50,7 @@ OpenAI의 전략을 주도하는 사람은 구글러 출신으로 현재 연구 
 <figure>
     <img src="https://cdn.technologyreview.com/i/images/cf3a2296final.jpg?sw=700&cx=0&cy=193&cw=1355&ch=1807"
          alt="Dario Amodei">
-    <figcaption> <br>Dario Amodei, research director. </br> Christie Hemm Klok </figcaption>
+    <figcaption> Dario Amodei, research director. Christie Hemm Klok </figcaption>
 </figure>
 
 
@@ -85,7 +85,7 @@ OpenAI의 전략을 주도하는 사람은 구글러 출신으로 현재 연구 
 <figure>
     <img src="https://cdn.technologyreview.com/i/images/cf3a2401.jpg?sw=700&cx=0&cy=0&cw=3000&ch=2000"
          alt="--">
-    <figcaption> <br>DChristie Hemm Klok </figcaption>
+    <figcaption> DChristie Hemm Klok </figcaption>
 </figure>
 
 럿거스 대학의 브릿 패리스는 "인공지능으로 사회 문제에 답하려고 정교한 기술 방식을 사용하고 있습니다."라고 말합니다. "그들은 실제로 사회를 이해할 수 있는 능력이 없는 것 같습니다. 그들은 단지 지금 이 분야가 자신들을 포지셔닝할 수 있는 일종의 수익성 있는 분야라는 것만 알고 있을 뿐입니다."

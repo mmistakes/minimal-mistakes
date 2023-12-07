@@ -69,7 +69,7 @@ AGI를 안전하게 달성하는 것은 매우 중요하기 때문에, 다른 �
 <figure>
     <img src="https://cdn.technologyreview.com/i/images/cf3a2394.jpg?sw=700&cx=0&cy=0&cw=3000&ch=2000"
          alt="OpenAI's logo hanging in its office">
-    <figcaption> <br> OpenAI's logo hanging in its office.</br> Christie Hemm Klok </figcaption>
+    <figcaption> OpenAI's logo hanging in its office. Christie Hemm Klok </figcaption>
 </figure>
 
 하지만 3일 동안 OpenAI의 사무실에서 전현직 직원, 협력자, 친구, 이 분야의 다른 전문가들과 진행한 인터뷰를 진행한 결과, 회사가 공개적으로 지지하는 것과 비공개적으로 운영되는 방식 사이에는 불일치가 존재
@@ -91,7 +91,7 @@ AGI이 항상 모호한 상태로 남아 있음. 어떤 모습일지, 최소한 
 <figure>
     <img src="https://cdn.technologyreview.com/i/images/cf3a2415.jpg?sw=700&cx=0&cy=0&cw=2100&ch=1400"
          alt="A conference room">
-    <figcaption> <br> A conference room on the first floor named Infinite Jest.</br> Christie Hemm Klok </figcaption>
+    <figcaption> A conference room on the first floor named Infinite Jest. Christie Hemm Klok </figcaption>
 </figure>
 
 

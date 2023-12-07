@@ -61,7 +61,7 @@ ARTIFICIAL INTELLIGENCE
 <figure>
     <img src="https://cdn.technologyreview.com/i/images/pioneertrunkfactory-c-a-malmco-2012-09-0115-43-33-2.jpg?sw=700&cx=0&cy=0&cw=2560&ch=1838"
          alt="The Pioneer Building">
-    <figcaption> <br> The Pioneer Building.</br> wikimedia commons / tfinc </figcaption>
+    <figcaption> The Pioneer Building. wikimedia commons / tfinc </figcaption>
 </figure>
 
 
@@ -82,7 +82,7 @@ ARTIFICIAL INTELLIGENCE
 <figure>
     <img src="https://cdn.technologyreview.com/i/images/cf3a2258final.jpg?sw=700&cx=133&cy=611&cw=1792&ch=2389"
          alt=" Greg Brockman">
-    <figcaption> <br> Greg Brockman, co-founder and CTO.</br> Christie Hemm Klok / tfinc </figcaption>
+    <figcaption> Greg Brockman, co-founder and CTO. Christie Hemm Klok </figcaption>
 </figure>
 
 브록먼은 OpenAI가 얼마나 위험한 도박을 하고 있는지, 그리고 그것이 냉소주의와 의심의 눈초리를 불러일으킨다는 사실을 잘 알고 있으나, 하지만 그가 전하는 메시지는 분명 : "사람들은 자신이 원하는 만큼(얼마든지) 회의적일 수 있다. 이것은 대담한 도전의 대가이다"
@@ -113,7 +113,7 @@ ARTIFICIAL INTELLIGENCE
 <figure>
     <img src="https://cdn.technologyreview.com/i/images/cf3a2221final.jpg?sw=700&cx=0&cy=0&cw=3000&ch=1688"
          alt=" From left to right">
-    <figcaption> <br>From left to right: Daniela Amodei, Jack Clark, Dario Amodei, Jeff Wu (technical staff member), Greg Brockman, Alec Radford (technical language team lead), Christine Payne (technical staff member), Ilya Sutskever, and Chris Berner (head of infrastructure).</br> Christie Hemm Klok </figcaption>
+    <figcaption> From left to right: Daniela Amodei, Jack Clark, Dario Amodei, Jeff Wu (technical staff member), Greg Brockman, Alec Radford (technical language team lead), Christine Payne (technical staff member), Ilya Sutskever, and Chris Berner (head of infrastructure). Christie Hemm Klok </figcaption>
 </figure>
 
 
