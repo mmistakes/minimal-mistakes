@@ -2,7 +2,7 @@
 layout: single
 title:  "[Github] 원격저장소 URL 변경"
 categories:
-tag: [python, blog, jekyll] 
+tag: [github, git] 
 author_profile: false
 ---
 ## Git 원격 리포지토리 URL 변경.
