@@ -28,7 +28,6 @@ ARTIFICIAL INTELLIGENCE
 ##### February 17, 2020
 ---
 
-
   * MIT Technolgy Reviews에 2020년 2월 17일, AI분야 기자 [Karen Hao](https://www.technologyreview.com/author/karen-hao/)이 작성한 [기사](https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/)를 DeepL로 번역 후, "포괄적 요약"하고, "저의 의견"을 추가하여 작성한 내용
   * 아주 긴 기사를 나름 5부로 나누어 OpenAI에 대해서 공부할 겸 정리해보았음
   * 2022년 ChatGPT로 일반인들(나 포함)에게 알려지기 까지, 2019년 2020년 초에 OpenAI가 어떤 기업이였는지 알 수 있는 자료
