@@ -8,7 +8,7 @@ toc: true
 excerpt: "Learn how to use type-level programming to solve practical problems."
 ---
 
-_by [Daniel Beskin](https://www.linkedin.com/in/daniel-beskin-02b594137)_
+_by [Daniel Beskin](https://linksta.cc/@ncreep)_
 
 # 1. Introduction
 
