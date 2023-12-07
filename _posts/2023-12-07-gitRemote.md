@@ -7,8 +7,9 @@ author_profile: false
 ---
 ## Git 원격 리포지토리 URL 변경.
 기존에 있던 원격 주소 변경하기 위해서는, 우선 로컬 인텔리제이 터미널 창에서 
-<span style="background-color:#fff5b1"> git remote -v </span> 명령어로
+<span style="background-color:#fff5b1">  git remote -v </span> 명령어로
 현재 해당 로컬의  원격 URL 리포지토리를 확인할수있다.
+
 ```
 git remote -v
 
