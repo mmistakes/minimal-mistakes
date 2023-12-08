@@ -52,10 +52,14 @@ Product Safety Surveillance Division  <em>(to be updated) </em>
 #### <strong> Technical Research Officer </strong>, February 2013 – December 2021
 
 Technical Regulation Policy Division<em>(to be updated) </em>
-* Overhaul TBT information system(www.knowTBT.kr, operated from 2008) and then secured implementation budget(<em>Ministry of Science and ICT ‘Digital Public Service Innovation Project’, ***1,560 million won***</em>), December 2021
+* Overhaul TBT[^1] information system(www.knowTBT.kr, operated from 2008) and then secured implementation budget(<em>Ministry of Science and ICT ‘Digital Public Service Innovation Project’, ***1,560 million won***</em>), December 2021
 * 전세계 기술규제(인증제도, 기술기준 등) 맵 서비스 개시
-        * TBT (무역기술장벽, Technical Barriers to Trade) : technical regulations, standards, and conformity assessment procedures creating unnecessary obstacles to trade
+
+
+[^1]: TBT (무역기술장벽, Technical Barriers to   Trade) : technical regulations, standards, and conformity assessment procedures creating unnecessary obstacles to trade
+
 * Initiated and Leaded in opening the World-wide information Map service of Mandatory Technical Regulations, April 2021, [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=163984&bbs_cd_n=81&currentPage=1&search_key_n=user_nm_v&cate_n=1&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
+
 
 Metrology & Measurement Division <em>(to be updated) </em>
 * Organized ‘Smart Metering Forum’ with participation of overt 100 industry, academia, and research institutes as a private voluntary forum, July 2017, [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=159457&bbs_cd_n=81&currentPage=11&search_key_n=user_nm_v&cate_n=1&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
@@ -140,8 +144,8 @@ Study on the lower power communications and networking techniques for Massively 
 *	Standards: IEEE 802.16e(Mobile WiMAX) Protocol layer, 3GPP(WCDMA, LTE) Protocol layer(L2~L7), IETF RFCs(TCP, IP, HTTP, Authentication, Authorization, and Accounting etc.), OMA(Over The Air Device Management)
 *	Design Applications: MATLAB
 *	Programming: C/C++, VHDL
-*	**Swimming** 🏊😏	([생활스포츠지도사](https://sqms.kspo.or.kr/index.kspo) 2급 수영, Lifetime sports instructor, Level 2, 문화체육관광부, 2021년 12월)
-*	Tennis🎾(intermediate level)
+*	**Swimming** 🏊(😏[생활스포츠지도사](https://sqms.kspo.or.kr/index.kspo) 2급 수영, Lifetime sports instructor, Level 2, 문화체육관광부, 2021년 12월)
+*	Tennis🎾(🙂intermediate level)
 
 
 ## PERSONAL PARTICULARS
@@ -190,5 +194,7 @@ Study on the lower power communications and networking techniques for Massively 
 [6] Poster Session: “Decentralized Detection with Empirically Collected Statistics in Wireless Sensor Networks,” The Korea-Japan Joint Workshop 2006 on Advanced Digital Circuit and Systems, January 2006, Japan
 
 ### Professional(<em>to be updated</em>)
+
+2015년 7월 22일 스마트공장 표준 심포지움 ‘스마트공장 표준화 추진 전략’(https://kidd.co.kr/news/181038, https://www.electimes.com/news/articleView.html?idxno=125723)
 
 ---
