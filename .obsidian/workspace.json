@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-12-04-33_DynamicMemoryAllocation.md",
+                "file": "_posts/2023-12-03-08_BasicType.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-12-04-33_DynamicMemoryAllocation.md",
+                "file": "_posts/2023-12-03-08_BasicType.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-12-04-33_DynamicMemoryAllocation.md",
+                "file": "_posts/2023-12-03-08_BasicType.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-12-04-33_DynamicMemoryAllocation.md"
+                "file": "_posts/2023-12-03-08_BasicType.md"
               }
             }
           }
@@ -148,6 +148,19 @@
   },
   "active": "61669096ec41de77",
   "lastOpenFiles": [
+    "_posts/2023-12-03-07_Constant.md",
+    "_posts/2023-12-03-08_BasicType.md",
+    "_posts/2023-12-03-06_Variable.md",
+    "_posts/2023-12-03-05_Scanf().md",
+    "_posts/2023-12-03-04_Printf().md",
+    "_posts/2023-12-03-03_CProgram.md",
+    "_posts/2023-12-03-02_CProgramming.md",
+    "_posts/2023-12-03-01_C.md",
+    "_posts/2023-12-04-33_DynamicMemoryAllocation.md",
+    "_posts/2023-12-04-34_BasicIO.md",
+    "_posts/2023-12-04-35_CharacterInputOutputFunction.md",
+    "_posts/2023-12-04-40_PointersAndStructures.md",
+    "_posts/2023-12-04-43_ConsoleIO.md",
     "_site/Pasted image 20231207191701.png",
     "Pasted image 20231207191701.png",
     "_posts/2023-12-04-32_StackFrame.md",
@@ -163,22 +176,10 @@
     "_posts/2023-12-04-26_PointerOperation.md",
     "_site/Pasted image 20231206191149.png",
     "Pasted image 20231206191149.png",
-    "_posts/2023-12-03-01_C.md",
-    "_posts/2023-12-03-02_CProgramming.md",
-    "_posts/2023-12-03-03_CProgram.md",
-    "_posts/2023-12-03-04_Printf().md",
-    "_posts/2023-12-03-05_Scanf().md",
-    "_posts/2023-12-03-06_Variable.md",
-    "_posts/2023-12-03-07_Constant.md",
-    "_posts/2023-12-03-08_BasicType.md",
     "_posts/2023-12-03-09_TypeCasting.md",
     "_posts/2023-12-03-10_ArithmeticOperator.md",
     "_posts/2023-12-03-11_AssignmentOperator.md",
     "_posts/2023-12-03-12_IncrementAndDecrementOperator.md",
-    "_posts/2023-12-03-13_ComparisonOperator.md",
-    "_posts/2023-12-03-14_LogicalOperator.md",
-    "_posts/2023-12-03-15_BitwiseOperator.md",
-    "_posts/2023-12-03-16_OtherOperator.md",
     "_site/language/31_MemoryStructure/index.html",
     "_site/language/31_MemoryStructure",
     "_site/language/28_VariousPointers/index.html",
