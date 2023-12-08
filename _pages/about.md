@@ -167,7 +167,7 @@ Study on the lower power communications and networking techniques for Massively 
 
 ## PUBLICATIONS AND PRESENTATIONS
 
-### Academic(<em> Seletcted</em>)
+### Academic(<em>Seletcted</em>)
 #### International Journal:
 
 [1]  Seungho Bae, Insoo Koo, Kiseon Kim,      
@@ -189,6 +189,6 @@ Study on the lower power communications and networking techniques for Massively 
 
 [6] Poster Session: “Decentralized Detection with Empirically Collected Statistics in Wireless Sensor Networks,” The Korea-Japan Joint Workshop 2006 on Advanced Digital Circuit and Systems, January 2006, Japan
 
-
+### Professional(<em>to be updated</em>)
 
 ---
