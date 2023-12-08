@@ -13,7 +13,7 @@ excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
 #     image_path: /assets/images/mm-layout-archive.png
 #     alt: "archive layout example"
 layout: single
-last_modified_at: 2023-09-13T11:59:26-04:00
+last_modified_at: 2023-12-08T13:30:26-04:00
 # toc: true
 author_profile: true
 ---
@@ -39,18 +39,33 @@ Product Safety Surveillance Division  <em>(to be updated) </em>
 * Cowork with civil society groups, autority agency and product retailers [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=166668&bbs_cd_n=81&currentPage=1&search_key_n=user_nm_v&cate_n=&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
 * Cowork with local government [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=167451&bbs_cd_n=81&currentPage=1&search_key_n=user_nm_v&cate_n=&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
 
-
+* 국내 주요 15개 온라인쇼핑몰 협의체 운영
+  * 자발적 위해제품 유통 관리 역량 지원(콜센터 구축, 전문 교육 체계 구축)
+  * 매월 예상 불법제품 유통 정보 제공
+* 과태료 부과 등 행정조치에 대한 사업자의 이의제기 대응(과태료 재판 등)
+    * 법률자문을 통해, 대응논리 마련
+    * 제품안전관리원, 지자체 등과 대응체계 구축
+* 기술적 조치 가이드라인 등 온라인쇼핑몰 및 seller Tool 플랫폼 사업자 자율규제 방안 마련
+* 불법제품 기획조사 체계 마련
+  * 품목 선정 및 법률 자문 등을 위해 '불법제품 단속 자문 체계' 구축
 
 #### <strong> Technical Research Officer </strong>, February 2013 – December 2021
 
 Technical Regulation Policy Division<em>(to be updated) </em>
 * Overhaul TBT information system(www.knowTBT.kr, operated from 2008) and then secured implementation budget(<em>Ministry of Science and ICT ‘Digital Public Service Innovation Project’, ***1,560 million won***</em>), December 2021
+* 전세계 기술규제(인증제도, 기술기준 등) 맵 서비스 개시
   * TBT (Technical Barriers to Trade) : technical regulations, standards, and conformity assessment procedures creating unnecessary obstacles to trade
 * Initiated and Leaded in opening the World-wide information Map service of Mandatory Technical Regulations, April 2021, [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=163984&bbs_cd_n=81&currentPage=1&search_key_n=user_nm_v&cate_n=1&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
 
 Metrology & Measurement Division <em>(to be updated) </em>
 * Organized ‘Smart Metering Forum’ with participation of overt 100 industry, academia, and research institutes as a private voluntary forum, July 2017, [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=159457&bbs_cd_n=81&currentPage=11&search_key_n=user_nm_v&cate_n=1&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
 * Cowork with gas-meter(utility) manufactures, repair companies and testing-lab. [Press Release](http://www.gasnews.com/news/articleView.html?idxno=82528)
+* 업무 디지털 전환 
+  * 계량정보 시스템 클라우드 전환을 위한 기획 및 구축 예산 확보
+  * 수입계량기(저울)에 대해 통관 승인/확인 정보시스템 구축(관세청 시스템 연계)
+  * 비법정단위(야드, 평 등) 사용 식별 시스템 구축: 인터넷사이트(상품판매 및 언론매채 기사 등)에서 사용되는 비법정 측정단위 추출(Text mining 기술 활용) 기술 활용
+* 국제법정계량기구 상호인정프로그램 국가 대표 활동
+  * 저울 수출 시스템 구축
 
 Electronics & Information Standards Division<em>(to be updated) </em>
 * Establishment of the Standardization Strategies 
@@ -109,7 +124,7 @@ Study on the lower power communications and networking techniques for Massively 
 
 
 ## CURRENT INTERESTS 
-* Reliable/Safety AI products
+* Certification/validation Framework for reliable/Safety AI products/architecture
 * Smart Manufacturing(Industrie 4.0)
 * Mobile(cellular) / wireless communication Protocol
 * IoT, Ubiquitous communication techniques, wireless sensor networks 
@@ -118,9 +133,8 @@ Study on the lower power communications and networking techniques for Massively 
 <!-- * IT security  -->
 
 
-
-
 ## SPECIALTIES
+*	Regulation: surveillance, investigation of illegal products and products with potential risks at the stages of their distribution for the Product Safety 
 *	Standards: IEEE 802.16e(Mobile WiMAX), 3GPP(WCDMA, LTE Layer 2~Layer 7), IETF RFCs(TCP, IP, HTTP, Authentication, Authorization, and Accounting etc.), OMA(Over The Air Device Management)
 *	Design Applications: MATLAB
 *	Programming: C/C++, VHDL
