@@ -14,7 +14,7 @@ tags:
   - 신뢰
 #  - 정책
 
-last_modified_at: 2023-12-05T15:00:11-15:10
+last_modified_at: 2023-12-08T11:00:11-11:30
 ---
 _________________
 
@@ -36,17 +36,7 @@ ARTIFICIAL INTELLIGENCE
 
 ---
 
-
-> 2015년 설립 당시, AI 개발과 실행에 드는 비용때문에 소수에게 권력이 집중되는 경향을 예측하여, 비영리기관이라는 업계의 이목을 집중시켜, 경쟁사와는 다른 출발한 것에 대해 실리콘밸리 사람들의 대단한 예측력과 사업추진력을 알수 있음
->
-> 그리고 startup 기업이 초창기 목표와 비전을 지켜나가기 위해서 어떤 갈등이 있고, 어떻게 해쳐나가는지도 느껴질 수 있음
-> 
-> 어떻게 OpenAI와 같은 기업을 우리가 기대할 수 있을까? 가장 중요한 인력확보? 그리고 투자자? 
-> 우리나라도 세계적인 경쟁력을 가진 기업들과 국가(정부)가 역할을 분담하여, AI에 대한 선택과 집중할 분야를 선정하여 투자할 필요가 있을 듯하다. 분명히 AI산업에서 우리가 들어갈 수 있는 틈새가 있을 것이며, 우리가 잘 하는 부분도 있을 것이기 때문이다. 
-> 아니면 다양한 기업과 국가들 사이에서 기술력이 아니라 관계력을 발휘할 수도...
-    
----
-
+### 왜 OpenAI는 Open이 아닌가 : 다른 누구보다 먼저 AGI에 도달하려는 전략적 선택때문인가?
 
 지난 여름(2019년), 수익 제한 모델로 전환하고 Microsoft로부터 10억 달러를 투자받은 후 몇 주 동안 경영진은 직원들에게 이러한 업데이트가 OpenAI의 연구 접근 방식을 기능적으로 변화시키지 않을 것이라고 확신했습니다. Microsoft는 연구소의 가치와 잘 맞아떨어지며, 상업화 노력은 먼 훗날의 일이고 근본적인 질문의 추구는 여전히 연구 활동의 핵심으로 남을 것이라는 것이었습니다.
 
@@ -64,6 +54,7 @@ ARTIFICIAL INTELLIGENCE
 
 "하지만 제게는 그들이 뭔가 조금은 제대로 하고 있는 것 같습니다."라고 그녀는 말합니다. "그곳에 있는 사람들이 진지하게 노력하고 있다는 느낌을 받았습니다."
 
+
 업데이트: OpenAI에서 그렉 브록먼이 AI를 개발할 때 "처음부터 윤리를 넣는 것은 불가능하다고 생각한다"고 말한 것은 처음부터 윤리적 문제를 해결할 수 없다는 뜻이 아니라 처음부터 윤리적 문제를 다룰 수 없다는 뜻이라는 점을 명확히 해달라는 요청에 따라 이 이야기를 일부 수정했습니다. 또한 하버드를 중퇴한 후 1년을 기다리지 않고 바로 MIT로 편입한 것도 마찬가지입니다. 또한 그는 "농장에서"가 아니라 "취미 농장에서" 자랐습니다. 브록먼은 이 구분이 중요하다고 생각합니다.
 
 또한, OpenAI가 실제로 "비영리 단체의 지위를 내려놓긴 했지만" 여전히 비영리 단체의 일부인 이사회가 이를 감독하고 있으며, 연구 논문을 대신하는 것이 아니라 회사 블로그 게시물 형태로 연구를 발표하고 있다는 점을 명확히 했습니다. 또한 외부 연구자의 논문 발표 날짜와 피터 에커슬리(현재가 아닌 전, 최근 퇴사한 파트너십 온 AI의 연구 책임자)의 소속도 정정했습니다.
@@ -71,7 +62,7 @@ ARTIFICIAL INTELLIGENCE
 
 
 
-#### 참고 : OpenAI(from [Wikipedia](https://en.wikipedia.org/wiki/OpenAI))
+### 참고 : OpenAI(from [Wikipedia](https://en.wikipedia.org/wiki/OpenAI))
 
 The organization was founded in December 2015 by Ilya Sutskever, Greg Brockman, Trevor Blackwell, Vicki Cheung, Andrej Karpathy, Durk Kingma, Jessica Livingston, John Schulman, Pamela Vagata, and Wojciech Zaremba, with Sam Altman and Elon Musk serving as the initial board members.[^9] [^10] [^11] Microsoft provided OpenAI Global LLC with a $1 billion investment in 2019 and a $10 billion investment in 2023,[^12] [^13] with a significant portion of the investment in the form of compute resources on Microsoft's Azure cloud service.[^14]
     
