@@ -54,7 +54,7 @@ Product Safety Surveillance Division  <em>(to be updated) </em>
 Technical Regulation Policy Division<em>(to be updated) </em>
 * Overhaul TBT information system(www.knowTBT.kr, operated from 2008) and then secured implementation budget(<em>Ministry of Science and ICT ‘Digital Public Service Innovation Project’, ***1,560 million won***</em>), December 2021
 * 전세계 기술규제(인증제도, 기술기준 등) 맵 서비스 개시
-  * TBT (Technical Barriers to Trade) : technical regulations, standards, and conformity assessment procedures creating unnecessary obstacles to trade
+        * TBT (무역기술장벽, Technical Barriers to Trade) : technical regulations, standards, and conformity assessment procedures creating unnecessary obstacles to trade
 * Initiated and Leaded in opening the World-wide information Map service of Mandatory Technical Regulations, April 2021, [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=163984&bbs_cd_n=81&currentPage=1&search_key_n=user_nm_v&cate_n=1&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
 
 Metrology & Measurement Division <em>(to be updated) </em>
@@ -64,8 +64,8 @@ Metrology & Measurement Division <em>(to be updated) </em>
   * 계량정보 시스템 클라우드 전환을 위한 기획 및 구축 예산 확보
   * 수입계량기(저울)에 대해 통관 승인/확인 정보시스템 구축(관세청 시스템 연계)
   * 비법정단위(야드, 평 등) 사용 식별 시스템 구축: 인터넷사이트(상품판매 및 언론매채 기사 등)에서 사용되는 비법정 측정단위 추출(Text mining 기술 활용) 기술 활용
-* 국제법정계량기구 상호인정프로그램 국가 대표 활동
-  * 저울 수출 시스템 구축
+* 국제법정계량기구 상호인증 인정 프로그램 국가 대표 활동
+  * 저울 수출 체계 구축
 
 Electronics & Information Standards Division<em>(to be updated) </em>
 * Establishment of the Standardization Strategies 
@@ -125,20 +125,23 @@ Study on the lower power communications and networking techniques for Massively 
 
 ## CURRENT INTERESTS 
 * Certification/validation Framework for reliable/Safety AI products/architecture
+* AGI, Clouding Computing(AWS etc.)
 * Smart Manufacturing(Industrie 4.0)
 * Mobile(cellular) / wireless communication Protocol
 * IoT, Ubiquitous communication techniques, wireless sensor networks 
 * Statistics
-* Information theory 
+* Information theory
+
 <!-- * IT security  -->
 
 
 ## SPECIALTIES
 *	Regulation: surveillance, investigation of illegal products and products with potential risks at the stages of their distribution for the Product Safety 
-*	Standards: IEEE 802.16e(Mobile WiMAX), 3GPP(WCDMA, LTE Layer 2~Layer 7), IETF RFCs(TCP, IP, HTTP, Authentication, Authorization, and Accounting etc.), OMA(Over The Air Device Management)
+*	Standards: IEEE 802.16e(Mobile WiMAX) Protocol layer, 3GPP(WCDMA, LTE) Protocol layer(L2~L7), IETF RFCs(TCP, IP, HTTP, Authentication, Authorization, and Accounting etc.), OMA(Over The Air Device Management)
 *	Design Applications: MATLAB
 *	Programming: C/C++, VHDL
-*	**Swimming** 😏	([생활스포츠지도사](https://sqms.kspo.or.kr/index.kspo) 2급 수영, Lifetime sports instructor, Level 2, 문화체육관광부, 2021년 12월)
+*	**Swimming** 🏊😏	([생활스포츠지도사](https://sqms.kspo.or.kr/index.kspo) 2급 수영, Lifetime sports instructor, Level 2, 문화체육관광부, 2021년 12월)
+*	Tennis🎾(intermediate level)
 
 
 ## PERSONAL PARTICULARS
