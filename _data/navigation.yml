@@ -3,9 +3,9 @@ main:
   - title: "All Posts"
     url: /posts/
   - title: "GitHub"
-    url: https://debugml.github.io/
+    url: https://github.com/brachiolab
   - title: "About"
-    url: /about/
+    url: https://brachiolab.github.io/
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
