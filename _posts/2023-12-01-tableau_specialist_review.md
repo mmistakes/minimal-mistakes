@@ -64,7 +64,7 @@ Tableau Desktop Specialist  는 Tableau Desktop에 대한 기본적인 기술과
 3. scatter -> density 로 바꾸기 
 4. join, relationship
 5. tableau sever 
-6. combline axis
+6. combine axis
 7. dashboard device option 설정 
 8. LEFT, CONTAINS function
 9. twbx 포함 파일 
