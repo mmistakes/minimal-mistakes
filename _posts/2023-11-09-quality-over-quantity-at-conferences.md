@@ -3,6 +3,8 @@ title: Quality Over Quantity at Conferences
 toc: false
 ---
 
+*Disclaimer: this was not written by artificial intelligence (e.g., an LLM). I did use it, however, to check my syntax and small errors to improve readability. I prefer to avoid it as much as possible to stay more authentic and credible.*
+
 Over 70,000 people are headed to Dubai for [COP28](https://www.cop28.com). That's overwhelming. Here's the advice I've given my team at bld.ai, which has served me well in the past and may help you too.
 
 Large conferences can be chaotic and draining. The fear of missing out is real.

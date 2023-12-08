@@ -3,6 +3,8 @@ title: Ambiguous jobs that require confidence pay more
 category: "Knowledge work"
 ---
 
+*Disclaimer: this was not written by artificial intelligence (e.g., an LLM). I did use it, however, to check my syntax and small errors to improve readability. I prefer to avoid it as much as possible to stay more authentic and credible.*
+
 Confidence is essential for success in knowledge work, which involves always learning, being creative, and problem solving. But what exactly is confidence, where does it come from, and how can we develop it?
 
 In simple terms, confidence is the ability to manage risk by estimating what the future might be like and taking actions that lead to good outcomes. It's like playing a video game where you explore new paths and try new things, but also learn from mistakes and make adjustments. This is similar to a type of artificial intelligence called reinforcement learning, which helps machines learn and improve over time (see Google's [AlphaGo](https://www.nature.com/articles/nature16961) or OpenAI's [Five](https://openai.com/research/openai-five)).

@@ -3,7 +3,7 @@ title: On Selling
 toc: true
 ---
 
-Disclaimer: this was not written by artificial intelligence (e.g., an LLM). I prefer to avoid it to stay more authentic and credible.
+*Disclaimer: this was not written by artificial intelligence (e.g., an LLM). I did use it, however, to check my syntax and small errors to improve readability. I prefer to avoid it as much as possible to stay more authentic and credible.*
 
 I find it surprising when people seek my guidance on how to sell because selling isn't what I consider part of my identity. I see myself as an individual contributor who enjoys hands-on problem-solving and tinkering. This inclination makes me more chaotic and creative, traits that differ from the arguably more predictable nature required in sales.
 

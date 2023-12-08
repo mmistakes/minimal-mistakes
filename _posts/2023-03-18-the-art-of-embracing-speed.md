@@ -3,6 +3,8 @@ title: The art of embracing speed
 category: "Product Development"
 ---
 
+*Disclaimer: this was not written by artificial intelligence (e.g., an LLM). I did use it, however, to check my syntax and small errors to improve readability. I prefer to avoid it as much as possible to stay more authentic and credible.*
+
 I often share the same guidance with teams at both [bld.ai](https://bld.ai) and [l2m.vc](https://l2m.vc), so I thought it would be valuable to discuss it here as well.
 
 In AI product development, speed is crucial. It's more important than cost and quality. We want all three, but speed comes first.
