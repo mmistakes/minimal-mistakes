@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-12-03-09_TypeCasting.md",
+                "file": "_posts/2023-12-03-10_ArithmeticOperator.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-12-03-09_TypeCasting.md",
+                "file": "_posts/2023-12-03-10_ArithmeticOperator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-12-03-09_TypeCasting.md",
+                "file": "_posts/2023-12-03-10_ArithmeticOperator.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-12-03-09_TypeCasting.md"
+                "file": "_posts/2023-12-03-10_ArithmeticOperator.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "61669096ec41de77",
   "lastOpenFiles": [
-    "_posts/2023-12-03-10_ArithmeticOperator.md",
     "_posts/2023-12-03-09_TypeCasting.md",
+    "_posts/2023-12-03-10_ArithmeticOperator.md",
     "_posts/2023-12-03-08_BasicType.md",
     "_posts/2023-12-03-07_Constant.md",
     "_posts/2023-12-03-06_Variable.md",
