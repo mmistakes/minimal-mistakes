@@ -1215,7 +1215,7 @@ scala.compiletime.summonAll
 Which is described as:
 > Given a tuple `T`, summons each of its member types and returns them in a `Tuple`.
 
-[^summonExercise]: Feel free to solve this as an exercise. This yet another instance of tuple iteration.
+[^summonExercise]: Feel free to solve this as an exercise. This is yet another instance of tuple iteration.
 
 So we can simply do this:
 ```scala
