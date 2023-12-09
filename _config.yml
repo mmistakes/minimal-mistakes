@@ -15,12 +15,12 @@
 minimal_mistakes_skin    : "neon" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Just recording it"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "JBSH"
-description              : "Just recording it"
+locale                   : "ko-KR"
+title                    : "Just recording it" # "그냥 기록"
+title_separator          : "|"
+subtitle                 : "steadily" # "꾸준히" 
+name                     : "JBSH" # "준~" 
+description              : "그냥 꾸준히 기록 한다." #"Just recording it"
 url                      : "https://just-record.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,18 +104,18 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "JBSH" # "준~"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "The developer who's back ..." # "다시 돌아온 개발자" # "I am an **amazing** person."
+  location         : "Development Office or Home" # "개발실 또는 집" # "Somewhere"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:opmorn@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://just-record.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -124,7 +124,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/just-record"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -143,7 +143,7 @@ footer:
       # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-      # url:
+      url: "https://just-record.github.io/"
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
