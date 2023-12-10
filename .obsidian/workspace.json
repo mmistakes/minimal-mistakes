@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Language/C/2023-12-04-34_BasicIO.md",
+                "file": "_posts/Language/C/2023-12-04-35_CharacterInputOutputFunction.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/Language/C/2023-12-04-34_BasicIO.md",
+                "file": "_posts/Language/C/2023-12-04-35_CharacterInputOutputFunction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/Language/C/2023-12-04-34_BasicIO.md",
+                "file": "_posts/Language/C/2023-12-04-35_CharacterInputOutputFunction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/Language/C/2023-12-04-34_BasicIO.md"
+                "file": "_posts/Language/C/2023-12-04-35_CharacterInputOutputFunction.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "61669096ec41de77",
   "lastOpenFiles": [
-    "_posts/Language/C/2023-12-04-33_DynamicMemoryAllocation.md",
     "_posts/Language/C/2023-12-04-34_BasicIO.md",
+    "_posts/Language/C/2023-12-04-33_DynamicMemoryAllocation.md",
     "_posts/Language/C/2023-12-04-32_StackFrame.md",
     "_posts/Language/C/2023-12-04-31_MemoryStructure.md",
     "_posts/Language/C/2023-12-04-30_PointerArrayAndArrayPointers.md",
