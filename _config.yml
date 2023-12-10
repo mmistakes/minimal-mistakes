@@ -105,14 +105,14 @@ analytics:
 # Site Author
 author:
   name             : "Abhijeet"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Just another blog"
   location         : "Pune, India"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:abhijeet.ghawade12@gmail.com"
+      # url: "mailto:abhijeet.ghawade12@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
