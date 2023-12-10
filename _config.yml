@@ -81,7 +81,7 @@ baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : "nowjeet"
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -140,7 +140,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: 
+      # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
