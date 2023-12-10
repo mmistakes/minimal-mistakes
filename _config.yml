@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Abhijeet"
-  avatar           : "/assets/images/bio-photo.jpg"
+  # avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Just another blog"
   location         : "Pune, India"
   email            :
