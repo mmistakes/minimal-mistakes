@@ -1,6 +1,6 @@
 ---
 layout: single
-title: '2023 태블로 자격증 합격 후기'
+title: '태블로 자격증 합격 후기 (2023.12.01)'
 categories: 태블로자격증
 tag: [tableau]
 author_profile: false
@@ -131,7 +131,7 @@ Tableau Desktop Specialist 자격증은 실습보다는 이론 위주라 이해�
 
 며칠 동안 계속 로봇처럼 개념을 외우다 보니 점점 공부하기가 지쳐갔는데 한 번에 취득해서 다행이다!
 
-추가적으로 전세계 태블로 자격증 합격자들은 <a href ='https://www.credly.com/organizations/tableau/directory?filter%5Bbadge_name%5D=Tableau%20Desktop%20Specialist&filter%5Blocation_name%5D=Korea%2C%20Republic%20of'>www.credly.com </a> 에서 확인 할 수 있다. 참고로 한국에서 Tableau Desktop Specialist 를 취득한 사람은 333명이다. 
+추가적으로 전세계 태블로 자격증 합격자들은 <a href ='https://www.credly.com/organizations/tableau/directory?filter%5Bbadge_name%5D=Tableau%20Desktop%20Specialist&filter%5Blocation_name%5D=Korea%2C%20Republic%20of'>www.credly.com </a> 에서 확인 할 수 있다. 참고로  2023.12.01 기준 한국에서 Tableau Desktop Specialist 를 취득한 사람은 333명이다. 
 
 고득점을 목표로 하는 분들은 한 달 정도의 기간을 잡으시고 이론을 공부하면서 실습도 같이 진행하는 것을 추천 한다.
 
