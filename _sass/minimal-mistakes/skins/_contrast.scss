@@ -10,8 +10,8 @@ $border-color: mix(#fff, $text-color, 75%) !default;
 $footer-background-color: #000 !default;
 $link-color: #000000 !default;
 $masthead-link-color: $text-color !default;
-$masthead-link-color-hover: $text-color !default;
-$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+$masthead-link-color-hover: mix(#000000, $text-color, 80%) !default;
+$navicon-link-color-hover: mix(#000000, $text-color, 80%) !default;
 
 /* contrast syntax highlighting (base16) */
 $base00: #000000 !default;
