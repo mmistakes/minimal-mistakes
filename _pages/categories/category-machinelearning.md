@@ -7,5 +7,5 @@ sidebar_main: true
 ---
 
 
-{% assign posts = site.categories.['Machine Learning'] %}
+{% assign posts = site.categories['Machine Learning'] %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
