@@ -60,9 +60,9 @@ Jana is a Ph.D student in the study programme Artificial intelligence and Biocyb
 
 {% include figure image_path="/assets/images/team/bogdan.jpg" alt="Bogdan Kostov" %}{: .align-right .profile-photo}
 
-Bogdan Kostov is a Ph.D student at FEE CTU. His professional interests are effective querying of semantic 
-knowledge bases in the context of information systems and ontology engineering. He is involved in teaching 
-B0B36DBS (Database systems) and B6B36EAR (Enterprise architectures). 
+Bogdan Kostov is a Ph.D student at FEE CTU. His professional interests are effective querying of semantic
+knowledge bases in the context of information systems and ontology engineering. He is involved in teaching
+B0B36DBS (Database systems) and B6B36EAR (Enterprise architectures).
 
 
 <!-- ### Lama Saeeda
