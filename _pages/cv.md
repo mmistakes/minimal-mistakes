@@ -14,12 +14,16 @@ My resume is available [here](https://rebrand.ly/NguemtoResume)
 
 Education
 ======
-* Ph.D in Mathematics, University of Tennessee Knoxville, 2023 (Expected). 
+* Ph.D in Mathematics, University of Tennessee Knoxville, 2023. 
 * M.S. in Applied Mathematics, Columbia University in the City of New York, 2016.
 * B.S. in Mathematics, University of Buea, 2014.
 
 Work experience
 ======
+* 2023: Postdoctoral Fellow
+  * Johns Hopkins University
+  * Project: Defense Threat Reduction Agency
+    
 * 2023: Graduate Research Intern, Quantum Computational Sciences
   * Oak Ridge National Laboratory
   * Project: Variational and Kernel based Quantum Classifiers.
