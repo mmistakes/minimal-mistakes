@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "개발 레이크"
+title                    : "코딩하고싶은사람"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Yundev"
