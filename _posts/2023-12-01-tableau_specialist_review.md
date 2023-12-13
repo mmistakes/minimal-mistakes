@@ -10,11 +10,11 @@ sidebar:
 
 ---
 
-2023년 버전의 태블로 자격증 후기가 많이 없어서, 자격증 취득 과정과 공부 방법을 작성했습니다!
+2023년 버전의 태블로 자격증 후기가 많이 없어서, 자격증 취득 과정과 공부 방법을 작성했습니다.
 
 
 ### Tableau Desktop Specialist 정보 
-Tableau Desktop Specialist  는 Tableau Desktop에 대한 기본적인 기술과 이해가 있고, 최소 3개월의 제품 사용 경험이 있는 사람을 위한 시험이라고 명시되어 있습니다. 
+Tableau Desktop Specialist  는 Tableau Desktop에 대한 기본적인 기술과 이해가 있고, 최소 3개월의 제품 사용 경험이 있는 사람을 위한 시험이라고 명시되어 있다. 
 
 - 시험방식 : 온라인
 - 문항수 : 45
