@@ -247,7 +247,7 @@ int strncmp(const char *s1, const char *s2, size_t n);  
 strcmp() 함수는 문자열을 비교하는 함수이므로,     
 문자를 비교할 때에는 관계연산자 '=='를 사용해야 한다.
 
-##### 예제
+- 예제
 
 ```c
 #include <stdio.h>
@@ -283,7 +283,7 @@ int main(void)
 }
 ```
 
-##### 실행 결과
+- 실행 결과
 
 ```c
 미국의 수도를 입력하세요 : 
