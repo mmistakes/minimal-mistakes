@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Language/C/2023-12-04-38_StringProcessingFunction.md",
+                "file": "_posts/Language/C/2023-12-03-01_C.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/Language/C/2023-12-04-38_StringProcessingFunction.md",
+                "file": "_posts/Language/C/2023-12-03-01_C.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/Language/C/2023-12-04-38_StringProcessingFunction.md",
+                "file": "_posts/Language/C/2023-12-03-01_C.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/Language/C/2023-12-04-38_StringProcessingFunction.md"
+                "file": "_posts/Language/C/2023-12-03-01_C.md"
               }
             }
           }
@@ -148,8 +148,11 @@
   },
   "active": "61669096ec41de77",
   "lastOpenFiles": [
-    "_posts/Language/C/2023-12-04-39_BasicStructure.md",
+    "_posts/Language/C/2023-12-03-03_CProgram.md",
+    "_posts/Language/C/2023-12-03-02_CProgramming.md",
+    "_posts/Language/C/2023-12-03-01_C.md",
     "_posts/Language/C/2023-12-04-38_StringProcessingFunction.md",
+    "_posts/Language/C/2023-12-04-39_BasicStructure.md",
     "_posts/Language/C/2023-12-04-37_StringIOFunction.md",
     "_posts/Language/C/2023-12-04-36_String.md",
     "_posts/Language/C/2023-12-04-35_CharacterInputOutputFunction.md",
@@ -171,9 +174,6 @@
     "_posts/Language/C/2023-12-03-19_ControlStatement.md",
     "_posts/Language/C/2023-12-03-18_IterationStatement.md",
     "_posts/Language/C/2023-12-03-17_ConditionalStatement.md",
-    "_posts/Language/C/2023-12-03-16_OtherOperator.md",
-    "_posts/Language/C/2023-12-03-15_BitwiseOperator.md",
-    "_posts/Language/C/2023-12-03-14_LogicalOperator.md",
     "_posts/Game Development Knowledge/Design Pattern",
     "_posts/Game Development Knowledge/Computer Graphic",
     "_posts/Game Development Knowledge/Game Math",
