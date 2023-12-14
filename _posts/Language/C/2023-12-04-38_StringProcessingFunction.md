@@ -304,7 +304,7 @@ int main(void)
 
 >atoi(), atol(), atoll(), atof() 함수의 원형은 각각 다음과 같다.
 
-##### 원형
+- 원형
 
 ```c
 #include <stdlib.h>
