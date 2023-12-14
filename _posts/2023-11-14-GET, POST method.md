@@ -1,3 +1,6 @@
+---
+categories: web basic
+---
 ![이미지](/assets/blog1.jpg)
 
 ## 들어가기에 앞서
