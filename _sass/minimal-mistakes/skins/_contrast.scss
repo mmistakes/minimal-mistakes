@@ -46,6 +46,7 @@ $base0f: #b18a3d !default;
   color: #fff !important; // override
 }
 
-.page__footer-follow .social-icons .svg-inline--fa {
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa  {
   color: inherit;
 }

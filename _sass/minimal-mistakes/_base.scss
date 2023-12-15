@@ -35,27 +35,27 @@ h6 {
 
 h1 {
   margin-top: 0;
-  font-size: $type-size-3;
+  font-size: $h-size-1;
 }
 
 h2 {
-  font-size: $type-size-4;
+  font-size: $h-size-2;
 }
 
 h3 {
-  font-size: $type-size-5;
+  font-size: $h-size-3;
 }
 
 h4 {
-  font-size: $type-size-6;
+  font-size: $h-size-4;
 }
 
 h5 {
-  font-size: $type-size-6;
+  font-size: $h-size-5;
 }
 
 h6 {
-  font-size: $type-size-6;
+  font-size: $h-size-6;
 }
 
 small,
@@ -158,24 +158,6 @@ pre {
 
 pre {
   overflow-x: auto; /* add scrollbars to wide code blocks*/
-}
-
-p > code,
-a > code,
-li > code,
-figcaption > code,
-td > code {
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
-  font-size: 0.8em;
-  background: $code-background-color;
-  border-radius: $border-radius;
-
-  &:before,
-  &:after {
-    letter-spacing: -0.2em;
-    content: "\00a0"; /* non-breaking space*/
-  }
 }
 
 /* horizontal rule */

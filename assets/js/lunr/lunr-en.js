@@ -1,5 +1,5 @@
 ---
-layout: null
+layout: none
 ---
 
 var idx = lunr(function () {
@@ -21,8 +21,6 @@ var idx = lunr(function () {
     })
   }
 });
-
-console.log( jQuery.type(idx) );
 
 $(document).ready(function() {
   $('input#search').on('keyup', function () {

@@ -104,6 +104,27 @@ body:hover .visually-hidden button {
 }
 
 /*
+   Task lists
+   ========================================================================== */
+
+.task-list {
+  padding:0;
+
+  li {
+    list-style-type: none;
+  }
+
+  .task-list-item-checkbox {
+    margin-right: 0.5em;
+    opacity: 1;
+  }
+}
+
+.task-list .task-list {
+  margin-left: 1em;
+}
+
+/*
    Alignment
    ========================================================================== */
 
@@ -228,14 +249,12 @@ body:hover .visually-hidden button {
     color: $gitlab-color;
   }
 
-  .fa-google-plus,
-  .fa-google-plus-square,
-  .fa-google-plus-g {
-    color: $google-plus-color;
-  }
-
   .fa-instagram {
     color: $instagram-color;
+  }
+
+  .fa-keybase {
+    color: $keybase-color;
   }
 
   .fa-lastfm,
@@ -363,6 +382,33 @@ body:hover .visually-hidden button {
   &:after {
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
     transform: rotate3d(0, 0, 1, -45deg);
+  }
+}
+
+.greedy-nav__toggle {
+  &:before {
+    @supports (pointer-events: none) {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background-color: $background-color;
+      -webkit-transition: $global-transition;
+      transition: $global-transition;
+      pointer-events: none;
+    }
+  }
+
+  &.close {
+    &:before {
+      opacity: 0.9;
+      -webkit-transition: $global-transition;
+      transition: $global-transition;
+      pointer-events: auto;
+    }
   }
 }
 
