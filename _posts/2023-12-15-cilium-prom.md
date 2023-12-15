@@ -13,7 +13,7 @@ header:
 ```yaml
 Title: Expose Cilium Metrics to Prometheus
 Author: Mitch Murphy
-Date: 2023-15-02
+Date: 2023-12-15
 ```
 
 ---
