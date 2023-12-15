@@ -228,7 +228,7 @@ hubble:
       enabled: true
     serviceMonitor:
       enabled: true
-      namespace: default
+      namespace: monitoring
       labels:
         release: prometheus-stack
   relay:
@@ -237,7 +237,7 @@ hubble:
       enabled: true
       serviceMonitor:
         enabled: true
-        namespace: default
+        namespace: monitoring
         labels:
           release: prometheus-stack
   ui:
@@ -249,7 +249,7 @@ operator:
     enabled: true
     serviceMonitor:
       enabled: true
-      namespace: default
+      namespace: monitoring
       labels:
         release: prometheus-stack
   dashboards:
@@ -259,7 +259,7 @@ envoy:
     enabled: true
     serviceMonitor:
       enabled: true
-      namespace: default
+      namespace: monitoring
       labels:
         release: prometheus-stack
 clustermesh:
@@ -268,7 +268,7 @@ clustermesh:
       enabled: false
       serviceMonitor:
         enabled: true
-        namespace: default
+        namespace: monitoring
         labels:
           release: prometheus-stack
 ```
