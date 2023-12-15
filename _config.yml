@@ -96,16 +96,16 @@ social:
 
 # Analytics
 analytics:
-  provider: false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider: "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id:
-    anonymize_ip: # true, false (default)
+    tracking_id: "G-C95675KKR5"
+    anonymize_ip: false
 
 # Site Author
 author:
   name: "Jeon Soo Min"
   avatar: "/assets/images/profile.jpg"
-  bio: "백앤드 개발자 전수민 입니다. \n 구글, 스포티파이 등 해외기업 입사를 목표로 하고 있습니다."
+  bio: "백앤드 개발자 전수민 입니다. 구글, 스포티파이 등 해외기업 입사를 목표로 하고 있습니다."
   location: "Ulsan, South Korea"
   # email: "wjsaos2081@gmail.com"
   links:
