@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Language/C/2023-12-04-40_PointersAndStructures.md",
+                "file": "_posts/Language/C/2023-12-04-41_UtilizationOfStructures.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/Language/C/2023-12-04-40_PointersAndStructures.md",
+                "file": "_posts/Language/C/2023-12-04-41_UtilizationOfStructures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/Language/C/2023-12-04-40_PointersAndStructures.md",
+                "file": "_posts/Language/C/2023-12-04-41_UtilizationOfStructures.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/Language/C/2023-12-04-40_PointersAndStructures.md"
+                "file": "_posts/Language/C/2023-12-04-41_UtilizationOfStructures.md"
               }
             }
           }
@@ -148,6 +148,13 @@
   },
   "active": "61669096ec41de77",
   "lastOpenFiles": [
+    "_posts/Language/C/2023-12-04-42_CommonAndEnumeration.md",
+    "_posts/Language/C/2023-12-04-41_UtilizationOfStructures.md",
+    "_posts/Language/C/2023-12-04-43_ConsoleIO.md",
+    "_site/language/42_CommonAndEnumeration/index.html",
+    "_site/language/42_CommonAndEnumeration",
+    "_posts/Language/C/2023-12-04-44_FileIO.md",
+    "_posts/Language/C/2023-12-04-40_PointersAndStructures.md",
     "_posts/Language/C/2023-12-04-39_BasicStructure.md",
     "_posts/Language/C/2023-12-04-38_StringProcessingFunction.md",
     "_posts/Language/C/2023-12-04-37_StringIOFunction.md",
@@ -168,12 +175,6 @@
     "_posts/Language/C/2023-12-03-13_ComparisonOperator.md",
     "_posts/Language/C/2023-12-03-12_IncrementAndDecrementOperator.md",
     "_posts/Language/C/2023-12-03-11_AssignmentOperator.md",
-    "_posts/Language/C/2023-12-03-10_ArithmeticOperator.md",
-    "_posts/Language/C/2023-12-03-09_TypeCasting.md",
-    "_posts/Language/C/2023-12-03-08_BasicType.md",
-    "_posts/Language/C/2023-12-03-07_Constant.md",
-    "_posts/Language/C/2023-12-03-06_Variable.md",
-    "_posts/Language/C/2023-12-03-05_Scanf().md",
     "_posts/Game Development Knowledge/Design Pattern",
     "_posts/Game Development Knowledge/Computer Graphic",
     "_posts/Game Development Knowledge/Game Math",
@@ -182,8 +183,6 @@
     "_posts/Basic Development Knowledge/Software Computer Science",
     "_posts/Basic Development Knowledge/Algorithm",
     "_posts/Game Development Knowledge",
-    "_posts/Basic Development Knowledge/Data Structure",
-    "_posts/Basic Development Knowledge",
     "_site/Pasted image 20231207191701.png",
     "Pasted image 20231207191701.png",
     "_site/Pasted image 20231206205417.png",
