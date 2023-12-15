@@ -67,7 +67,7 @@ printf("% 연산자에 의한 결괏값은 %d입니다.\n", num01 % num02);
 
 ![](https://velog.velcdn.com/images/ecg/post/a43c5d73-8507-4abb-bc7c-749e8bbcc0d6/image.png)
  
-> 연산자의 결합 방향은 수식 내에 우선순위가 같은 연산자가 둘 이상 있을 때, 
+> 연산자의 결합 방향은 수식 내에 우선순위가 같은 연산자가 둘 이상 있을 때,        
 먼저 어느 연산을 수행할 것인가를 결정한다.
 
 ![](https://velog.velcdn.com/images/ecg/post/480e8a55-87ff-484a-9b39-384f0364c058/image.png)

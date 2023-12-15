@@ -12,7 +12,8 @@ toc: true
 
 - 증감 연산자(increment and decrement operator)
 
-> 증감 연산자(increment and decrement operator)란 피연산자를 1씩 증가 혹은 1씩 감소시킬 때 사용하는 연산자를 의미한다.
+> 증감 연산자(increment and decrement operator)란        
+> 피연산자를 1씩 증가 혹은 1씩 감소시킬 때 사용하는 연산자를 의미한다.
 
 > 이 연산자는 피연산자가 단 하나뿐인 단항 연산자이다.
 

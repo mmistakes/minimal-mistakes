@@ -40,7 +40,6 @@ toc: true
 4. 힙(heap) 영역
 
 
-
 ## 1.2 지역 변수(local variable)
 
 - 지역 변수(local variable)
@@ -168,8 +167,6 @@ main() 함수에서 전역 변수 var로 접근할 방법이 없어진다.
 > 또한, 여러 개의 파일로 구성된 프로그램에서 외부 파일의 전역 변수를 사용하기 위해서는         
 > extern 키워드를 사용해 다시 선언해야 줘야한다.
 
-
-
 ## 1.4 정적 변수(static variable)
 
 - 정적 변수(static variable)
@@ -235,8 +232,6 @@ staticVar() 함수가 3 번째 호출되었습니다.
 >단 한 번만 수행되며, 두 번째부터는 수행되지 않는다.                 
 또한, static_count는 전역 변수와는 달리 자신이 선언된 staticVar() 함수                   
 이외의 영역에서는 호출할 수 없다.
-
----
 
 ## 1.5 레지스터 변수(register variable)
 
