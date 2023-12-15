@@ -24,7 +24,7 @@ description: "Spring, Vue, Algorithm analysis, CS"
 url: "https://dalcheonroadhead.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser: "/assets/images/teaser.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: "/assets/images/Starlogo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: true # true, false (default)
@@ -128,17 +128,25 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:wjsaos2081@gmail.com"
+
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
+      url: "https://github.com/dalcheonroadhead"
+
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/dalcheonroadhead/"
+
+    - label: "art"
+      icon: "fas fa-palette"
+      url: "https://www.instagram.com/quanxiumin_brain/"
+
+    - label: "soundCloud"
+      icon: "fab fa-soundcloud"
+      url: "https://on.soundcloud.com/4NAvJ"
       # url:
 
 # Reading Files
@@ -205,7 +213,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul
 
 # Plugins (previously gems:)
 plugins:
