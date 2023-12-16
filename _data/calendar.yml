@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Weihnachtsbasteln für alle",
-    "title": "Weihnachtsbasteln für alle",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NjlyZnNvaG1lYnQ2NWJ1c29qYjZtaWJ1OTQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2023-12-15T15:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2023-12-15T17:30:00+01:00"
-    },
-    "created": "2023-09-29T04:32:32.000Z",
-    "updated": "2023-11-18T11:24:08.810Z"
-  },
-  {
-    "image_path": null,
     "alt": "2. Fachkonferenz Jül",
     "title": "2. Fachkonferenz Jül",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2023-09-27T08:49:26.000Z",
     "updated": "2023-09-27T08:49:26.165Z"
+  },
+  {
+    "image_path": null,
+    "alt": "3. Schulkonferenz",
+    "title": "3. Schulkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MjE2aHM3dDRmOHQ2MHU3ZHE4ajA1YzhhMmMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-04-11T15:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-04-11T17:00:00+02:00"
+    },
+    "created": "2023-12-01T04:55:37.000Z",
+    "updated": "2023-12-01T04:55:37.202Z"
   }
 ]
