@@ -105,8 +105,8 @@ analytics:
 # Site Author
 author:
   name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  avatar           : "C:\Users\russelman\Documents\Florida_Tech\Laboratory\Webpage\Usselman.jpg"
+  bio              : "Qaibio Lab"
   location         : "Melbourne, FL"
   email            :
   links:
