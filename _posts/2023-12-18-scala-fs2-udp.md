@@ -1,5 +1,5 @@
 ---
-title: "A guide to UDP in Scala with Fs2"
+title: "A guide to UDP in Scala with FS2"
 date: 2023-12-18
 header:
   image: "/images/blog cover.jpg"
