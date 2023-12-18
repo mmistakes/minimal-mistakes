@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
+title                    : "Usselman Lab"
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Robert Usselman"
-description              : "An amazing website, someday."
+description              : "Assistant Professor in Chemistry"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,8 +104,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "Prof. Robert J. Usselman, Ph.D."
+  avatar           : "C:\Users\russelman\Documents\Florida_Tech\Laboratory\Webpage\Usselman.jpg"
   bio              : "I am an **amazing** person."
   location         : "Melbourne, Fl"
   email            : "russelman@fit.edu"
