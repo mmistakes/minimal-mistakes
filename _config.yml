@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Prof. Robert J. Usselman, Ph.D."
   avatar           : "usselman.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "Assistant Professor in Chemistry"
   location         : "Melbourne, Fl"
   email            : "russelman@fit.edu"
   links:
