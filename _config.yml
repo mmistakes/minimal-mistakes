@@ -125,12 +125,12 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url:  "https://github.com/johyeongseob"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
     - label: "Linkedin"
       icon: "fas fa-fw fa-linkedin-square"
       # url: "https://linkedin.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/lubydubyhenry"
 
 # Site Footer
 footer:
