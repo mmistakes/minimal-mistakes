@@ -1,4 +1,4 @@
-on# Welcome to Jekyll!
+# Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
@@ -12,21 +12,21 @@ on# Welcome to Jekyll!
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Qaibio"
+title                    : "Usselman Lab"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Robert Usselman"
-description              : "Usselman Research Lab"
+description              : "Assistant Professor in Chemistry"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : " "
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -81,7 +81,7 @@ baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : "RobertUsselman"
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -104,18 +104,18 @@ analytics:
 
 # Site Author
 author:
-  name             : "Robert Usselman"
-  avatar           : 
-  bio              : "Assistant Professor in Chemistry, Florida Institute of Technology"
-  location         : "Melbourne, FL"
-  email            : 
+  name             : "Prof. Robert J. Usselman, Ph.D."
+  avatar           : "usselman.jpg"
+  bio              : "I am an **amazing** person."
+  location         : "Melbourne, Fl"
+  email            : "russelman@fit.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:russelman@fit.edu"
+      # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://robertusselman.github.io/usselmanlab/"
+      # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -134,7 +134,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
