@@ -1,19 +1,15 @@
 ---
 title: "A guide to UDP in Scala with Fs2"
-date: 2023-10-19
+date: 2023-12-18
 header:
   image: "/images/blog cover.jpg"
 tags: []
-excerpt: "Understanding how UDP works in NIO then transitioning to a higher level API like Fs2."
+excerpt: "Understand how UDP works, and how you can transition from an old Java NIO implementation to a higher level API like FS2 in Scala."
 toc: true
 toc_label: "In this article"
 ---
 
 _by [Herbert Kateu](https://github.com/hkateu)_
-
-The video version is here:
-
-<!-- {% include video id="CpUBZI1mr7w" provider="youtube" %} -->
 
 ## 1. Introduction
 UDP stands for User Datagram Protocol, it's a transport layer communication protocol built on top of IP that is used to transmit data across a network. It works by bundling up data in a UDP packet, adding header information, and sending these packets to the target destination. 
