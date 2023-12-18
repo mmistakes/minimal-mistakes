@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "en-US"
 title                    : "Usselman Lab"
-title_separator          : "-"
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Robert Usselman"
 description              : "An amazing website, someday."
@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Prof. Robert J. Usselman Ph.D."
   avatar           : "usselman"
   bio              : "Qaibio Lab"
   location         : "Melbourne, FL"
-  email            :
+  email            : "russelman@fit.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
