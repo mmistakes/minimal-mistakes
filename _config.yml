@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Prof. Robert J. Usselman Ph.D."
-  avatar           : "usselman"
+  avatar           : 
   bio              : "Assistant Professor in Chemistry, Florida Institute of Technology"
   location         : "Melbourne, FL"
   email            : 
@@ -118,13 +118,13 @@ author:
       # url: "https://robertusselman.github.io/usselmanlab/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/RobertUsselman"
+      # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/RobertUsselman"
+      # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -134,7 +134,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/RobertUsselman"
+      # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
