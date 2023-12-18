@@ -704,7 +704,7 @@ Let's follow it step by step:
 - In the non-empty case (4), we have the head type `h`, and the tail type `t`.
 - We `summonInline` the `Decoder` for the head type (5). Recall that `summonInline` will be deferred to the use-site of our function, and will succeed only if the actual `h` type has a given `Decoder` in scope.
 - We then do a recursive call (6) and create a `Decoder` for the tail type, and use `combineDecoders` to build up a `Decoder` for the full tuple, from the `Decoder[h]` we just summoned and the `Decoder[t]` that we just created with the recursive call.
-- `combineDecoders` (7) is small utility function that takes a `Decoder` for the head of tuple (`H`), and `Decoder` for the tail of a tuple (`T`), and creates a composite `Decoder[H *: T]`for the head and tail combined. This utilizes the `product` function on `Decoder` to apply both `Decoder`s on the same JSON and tuples the results. Which is what we need to read the tuple from a flat JSON. The call to `map` build up the final tuple `H *: T` from the result of `product`.
+- `combineDecoders` (7) is small utility function that takes a `Decoder` for the head of tuple (`H`), and `Decoder` for the tail of a tuple (`T`), and creates a composite `Decoder[H *: T]`for the head and tail combined. This utilizes the `product` function on `Decoder` to apply both `Decoder`s on the same JSON and tuples the results. Which is what we need to read the tuple from a flat JSON. The call to `map` builds up the final tuple `H *: T` from the result of `product`.
 
 This pretty much matches the description in our pseudo-code. Too bad it's broken:
 ```scala
@@ -734,7 +734,7 @@ So close...
 
 What we are lacking here is type-unification. The compiler should've figured out that it can unify the type of each case branch with the type argument `T`.  I would claim that it's a bug that the compiler can't do this, but I have a hack to circumvent this issue. 
 
-Apparently the compiler is better at unifying type-arguments to real types[^realTypes]. To trigger this, we need to make our pattern match include a type-argument. We can do this artificially, like so:
+Apparently the compiler is better at unifying type-arguments of real types[^realTypes]. To trigger this, we need to make our pattern match include a type-argument. We can do this artificially, like so:
 ```scala
 trait Is[A] // 1
 
@@ -785,7 +785,7 @@ We managed to decode a tuple of all the fields types of `User` directly from the
 
 ## 3.6. From Types to Values
 
-The last piece of the puzzle is how do we convert the result of our `Decoder`, which is a tuple **value** back to a `User` **value**. It's `Mirror` to the rescue yet again: `mirror.fromTuple` will take a tuple value that matches the `User` type, and produce back a `User` instance:
+The last piece of the puzzle is how do we convert the result of our `Decoder`, which is a tuple value back to a `User` value. It's `Mirror` to the rescue yet again: `mirror.fromTuple` will take a tuple value that matches the `User` type, and produce back a `User` instance:
 ```scala
 scala> val tuple = (
             Email("bilbo@baggins.com", Some("frodo@baggins.com")),
@@ -993,7 +993,7 @@ This now compiles successfully.
 
 The important lesson that we can learn here is that `inline` is somewhat viral. If you use `inline` somewhere deep in your code, you need to propagate it up the stack until the types involved are concrete enough for the compiler to be able to analyze them.
 
-As you might recall though, once we are `inline`-land, compiling doesn't necessarily means that everything works correctly. Since the actual code to be executed is going to be fully known only at the call-site. That is, we must check that calling `makeCodec` with a concrete type works as well. Let's use the `makeCodec` to make a JSON roundtrip like we did before:
+As you might recall though, once we are `inline`-land, compiling doesn't necessarily mean that everything works correctly. Since the actual code to be executed is going to be fully known only at the call-site. That is, we must check that calling `makeCodec` with a concrete type works as well. Let's use the `makeCodec` to make a JSON roundtrip like we did before:
 ```scala
 scala> val codec = makeCodec[User]
       
@@ -1052,7 +1052,7 @@ What if for some other problem we might want the iteration but not the summoning
 
 The way `decodeTuple` is currently written does not allow for such modifications. But we can do better.
 
-One way to regain some modularity is to split things into functions and arguments. Instead of iterating a step then summoning one `Decoder`, we can pass in on the all the `Decoder`s as a tuple and iterate over that. This way we fully separate summoning from iteration.
+One way to regain some modularity is to split things into functions and arguments. Instead of iterating a step then summoning one `Decoder`, we can pass in all the `Decoder`s as a tuple and iterate over that. This way we fully separate summoning from iteration.
 
 ## 5.2. Match Types
 
@@ -1068,7 +1068,7 @@ Which states that for any tuple type, we can produce a `Decoder` for that type. 
 def decodeTuple[T <: Tuple](decoders: T): Decoder[...]
 ```
 
-We are stating that we receive tuple input with all the `Decoder`s that we will iterate on. This tuple would presumably have the shape `(Decoder[A1], Decoder[A2], ..., Decoder[AN])`. Which means that our type-signature is missing some information, as the actual input has more structure than just any random tuple[^patternMatch]. Not only that, but it also makes it difficult to relate the input type with the output type. If all we have as input is `T <: Tuple`, what kind of `Decoder` should the result be[^alternativeSolution]? We have no access to that hypothetical `(A1, A2, ..., AN)` tuple. Hence the missing type-parameter in the return type.
+We are stating that we receive a tuple input with all the `Decoder`s that we will iterate on. This tuple would presumably have the shape `(Decoder[A1], Decoder[A2], ..., Decoder[AN])`. Which means that our type-signature is missing some information, as the actual input has more structure than just any random tuple[^patternMatch]. Not only that, but it also makes it difficult to relate the input type with the output type. If all we have as input is `T <: Tuple`, what kind of `Decoder` should the result be[^alternativeSolution]? We have no access to that hypothetical `(A1, A2, ..., AN)` tuple. Hence the missing type-parameter in the return type.
 
 [^patternMatch]: This can be fine, as we can pattern match on the tuple to verify the shape with an `inline match` at compile-time. But this leads as into the land of being "dynamically-typed at compile-time". Indeed, a very strange place to be.
 
@@ -1086,10 +1086,9 @@ Tuple.Map[(A1, A2, ..., AN), Decoder]
 `Tuple.Map` is a special kind of type called a "[match type](https://docs.scala-lang.org/scala3/reference/new-types/match-types.html)". It allows us to specify non-trivial relationships between types by writing them down as pattern and recursive calls. `Tuple.Map` is defined roughly as follows:
 ```scala
 type Map[T <: Tuple, F[_]] <: Tuple = // 1
-  T match { // 2
+  T match // 2
     case EmptyTuple => EmptyTuple // 3
     case h *: t => F[h] *: Map[t, F] // 4
-  }
 ```
 
 We can read this as follows:
@@ -1216,7 +1215,7 @@ scala.compiletime.summonAll
 Which is described as:
 > Given a tuple `T`, summons each of its member types and returns them in a `Tuple`.
 
-[^summonExercise]: Feel free to solve this as an exercise. This yes another instance of tuple iteration.
+[^summonExercise]: Feel free to solve this as an exercise. This is yet another instance of tuple iteration.
 
 So we can simply do this:
 ```scala
@@ -1345,7 +1344,7 @@ Let us implement the last safety requirement, that will prevent these errors at 
 
 Content warning: this is by far the most incomprehensible part of this post as well as the most speculative. I hope we make it out okay...
 
-Before we can check for duplicate fields we need to somehow get a list of all the fields we are going to write. The `Mirror` for our types can provide us with this. Let us summon all the relevant `Mirror`s:
+Before we can check for duplicate fields we need to somehow get a list of all the fields we are going to write. The `Mirror`s for our types can provide us with this. Let us summon all the relevant `Mirror`s:
 ```scala
 scala> val emailMirror = summon[Mirror.Of[Email]]
        val phoneMirror = summon[Mirror.Of[Phone]]
@@ -1421,7 +1420,7 @@ class Typed[A]:
   type Value = A
 ```
 
-Instances of `Typed` will be **values** that capture some type as their type argument. For example the previous example can be "computed" into a `Typed` value as follows:
+Instances of `Typed` will be **values** that capture some **type** as their type argument. For example the previous example can be "computed" into a `Typed` value as follows:
 ```scala
 val typedResult = Typed[
   Labelling[emailMirror.MirroredLabel, emailMirror.MirroredElemLabels] *:
@@ -1641,7 +1640,7 @@ type ZipWithConst[T <: Tuple, A] =
 ```
 
 Here we:
-- Define `ZipWithSource` (1) which takes an argument `Labelling`. The type bound indicates tha the result is going to be some `Tuple`.
+- Define `ZipWithSource` (1) which takes an argument `Labelling`. The type bound indicates that the result is going to be some `Tuple`.
 - Match on the `Labelling` (2) so that we deconstruct it into the class label (`label`) and the field labels (`elemLabels`).
 - Invoke the `ZipWithConst` type "function" (3) on the labels.
 - `ZipWithConst` is just an alias (4) to an invocation of `Map` that we've seen before, which is the `Tuple` equivalent of `List.map`. Notice that we're using an infix application of `Map`, which gives it a nice "collections" vibe.
@@ -1665,7 +1664,7 @@ Now we can take a tuple of `Labelling`s and apply `ZipWithSource` to all of them
 type ZipAllWithSource[Labellings <: Tuple] = Labellings FlatMap ZipWithSource
 ```
 
-This takes a tuple of `Labelling`s and applies `ZipWithSource` to each one of them, then flattens the result. `FlatMap`, which is used in an infix form here, is the tuple equivalent of `List.flatMap` and does exactly what you imagine it to do:
+This takes a tuple of `Labelling`s and applies `ZipWithSource` to each one of them, then flattens the result. `FlatMap`, which is used in infix form here, is the tuple equivalent of `List.flatMap` and does exactly what you imagine it to do:
 ```scala
 
 scala> type Labellings = (
@@ -1708,7 +1707,7 @@ type Second[T] = T match // 8
 - It then uses the `Filter` "function" (3), the equivalent of `List.filter`, to keep only those elements that have the input `Label`. This again uses type-lambdas as the equivalent of anonymous functions. Since the result is a tuple of pairs, we `Map` the `Second` function to extract only the second element of a pair, in this case the source of the label.
 - Similarly, `RemoveLabel` (4) filters away (5) all the pairs that do not have the provided label, notice the type `!` (it comes from `compiletime.ops.boolean`) we apply to the boolean type-literal.
 - The `HasLabel` type definition (6) takes in a label and a pair of a label with a source.
-- It deconstructs the pair (7) and extracts the label, it then uses `==` to compare the extracted label with the provided `Label` argument. This `==` a is type comparison that comes from the `compiletime.ops.any` package. It lets us check whether two type are equal and produces a type-level boolean. In our case we are comparing string type-literals.
+- It deconstructs the pair (7) and extracts the label, it then uses `==` to compare the extracted label with the provided `Label` argument. This `==` is type comparison that comes from the `compiletime.ops.any` package. It lets us check whether two type literals are equal and produces a type-level boolean. In our case we are comparing string type-literals.
 - The `Second` match type (8) extracts the second element of a pair by matching on it.
 
 Feels like we're working with regular value-level collections. Lets try this out:
@@ -2062,7 +2061,7 @@ In this final snippet:
 - Since `Duplicates` is only a type and not a value, we use `erasedValue` to match on it (3) as if it's a value.
 - If `Duplicates` is empty (4), there's nothing for us to do and we return without any fuss.
 - If it is not empty (5), we take the resulting tuple[^alias] and apply `RenderError` to it. The result is a type-level string literal which we can pass to [`constValue`](https://docs.scala-lang.org/scala3/reference/metaprogramming/compiletime-ops.html#constvalue-and-constvalueopt-1) to turn it into a string value. Since the result of `constValue` is a literal string, we can safely pass it to the `error` function.
-- To apply this logic to an actual class, we define one last function `checkDuplicateFields` (6), which take a type and its `Mirror`.
+- To apply this logic to an actual class, we define one last function `checkDuplicateFields` (6), which takes a type and its `Mirror`.
 - The field types of the class are then passed to `makeLabellings` (7) to create a tuple with all the labels of the fields of `A`.
 - Once again we fear losing type precision, for this reason we cannot assign the result of `makeLabellings` to a `val` as it makes the compiler completely forget the precise types we obtain from `makeLabellings`. Instead we use the `inline match`ing hack on the result to preserve its type.
 - At last, we extract the type of the labellings (8) and pass it on to `renderDuplicatesError`.
@@ -2161,4 +2160,4 @@ My hope is that this blog post will spark your curiosity to venture into the lan
 
 Once again, the full code can be found at the [repo](https://github.com/ncreep/scala3-flat-json-blog/).
 
-Thanks for reading so far, I hope found some of this interesting and/or useful. Until next time!
+Thanks for reading so far, I hope you found some of this interesting and/or useful. Until next time!
