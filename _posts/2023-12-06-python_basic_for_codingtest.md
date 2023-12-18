@@ -3,7 +3,7 @@ published: true
 title: "[Python] 기초 문법 정리"
 
 categories: Python
-tag: [Python]
+tag: [python]
 
 toc: true
 toc_sticky: true
