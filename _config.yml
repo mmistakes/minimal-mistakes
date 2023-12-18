@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Usselman Lab"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Robert Usselman"
