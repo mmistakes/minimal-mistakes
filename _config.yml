@@ -104,15 +104,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Prof. Robert J. Usselman, Ph.D."
+  name             : "Robert Usselman"
   avatar           : "usselman.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Melbourne, Fl"
-  email            : "russelman@fit.edu"
+  bio              : "Assistant Professor in Chemistry, Florida Institute of Technology"
+  location         : "Melbourne, FL"
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      # url: "mailto:russelman@fit.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
