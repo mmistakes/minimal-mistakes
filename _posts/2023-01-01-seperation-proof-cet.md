@@ -39,9 +39,17 @@ $$
 (I \otimes U) \frac{1}{\sqrt{2}}^n(\sum(\lvert \alpha \rangle_A \otimes \lvert \beta \rangle_B)) = \frac{1}{\sqrt{2}}^n(\sum(I \lvert \alpha \rangle_A \otimes U \lvert \beta \rangle_B)) = \frac{1}{\sqrt{2}}^n(\sum(\lvert \alpha \rangle_A \otimes U \lvert \beta \rangle_B))
 $$
 
-That of course shows that subystem A is not affected by (I \otimes U), hence maximum entangled is retained.
+That of course shows that subystem A is not affected by (I \otimes U), hence maximum entangled is retained. Of coruse exactly same reasoning can be used
+for $V$.
 
-##
+## Claim 2: States $(I \otimes U)\lvert \phi^n \rangle$ and $(I \otimes V)\lvert \phi^n \rangle$ have fidelity $\frac{1}{2}\frac{1}{2^n}\lVert U - V \rVert^2_F$
+
+First, let us note that both $(I \otimes U)\lvert \phi^n \rangle$ and $(I \otimes V)\lvert \phi^n \rangle$ are _pure_ states -- we already described them as a single ket vector in proof of previous claim (it was a sum, but that is still a single ket vector). Fidelity between two pure states can be described by ([source](https://en.wikipedia.org/wiki/Fidelity_of_quantum_states)) $\lvert\langle \psi \lvert \phi \rangle\rvert^2$ which is simply an inner product between $\psi$ and $\phi$. 
+
+$$
+\langle \psi^n \rvert (I \otimes U^H)(I \otimes V) \lvert \psi^n \rangle = 
+$$
+
 
 
 
