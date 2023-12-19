@@ -10,15 +10,15 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Piotr Lewandowski - Blog"
+title                    : "Piotr Lewandowski"
 title_separator          : "-"
-subtitle                 : "Notes of not too smart and too serious"
+subtitle                 : "Personal blog"
 name                     : "Piotr Lewandowski"
 description              : "Piotr Lewandowski - Blog"
 url                      : "https://petlew.com"
@@ -112,13 +112,13 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:piotr.w.lewandowski@gmail.com
+      url: mailto:piotr.w.lewandowski@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://navaro1.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://twitter.com/petlew1"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://www.facebook.com/petlew1/"
