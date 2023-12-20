@@ -66,17 +66,15 @@ When it comes to `5`, it includes not only having high integrity even at a perso
 
 Now, I don't know that I have the courage to operate at a `5` consistently. I do encourage my team and organization to adopt certain values (e.g., integrity, transparency, creativity, fitness, learning, experimenting, ownership, courage, etc.) but I don't go as far as holding them accountable. Leaving room for saving face is a bit like adding lubricant to a wheel/axel.
 
-I find it easier to hold people accountable for tangible objectives such as .
-
-The things I'm confortable to hold people accountable to are easier to achieve, such as maintaining professionalism, delivering quality work, adhering to ethical standards, and complying with legal requirements and our policies.
+I find it easier to hold people accountable for tangible objectives such as  maintaining professionalism, delivering quality work, adhering to ethical standards, and complying with legal requirements and policies.
 
  Perhaps people like Elon Musk, and Paul Graham are a few that come to mind who might score a `5` consistently. But maybe that’s because they have so much going for them?
 
 # Is the Stanford grid wrong or are we collectively wrong?
 
-I've heard wise people tell me things like “only the hypochondriac survive”, or “don’t be out of coverage”, or “fight like a pack/pride of wolves/lion”.
+I've had mentors tell me things like “only the hypochondriac survive” or “don’t be out of coverage”. There's clearly a lot of wisdom in being risk averse and aligning with people inside the "inner circle".
 
-There's clearly a lot of wisdom in being risk averse and aligning with people inside the "inner circle". Are you honest and refuse to change your principles when ultimately you go with what your inner circle tells you to do? In many cases, integrity is not a well defined and constant measure. By taking the time to reflect with others, you may arrive at a different set of conclusions, especially in cases where the words have irreversible effects.
+In many cases, integrity is not a well defined and constant measure. By taking the time to reflect with others, you may arrive at a different set of conclusions, especially in cases where the words have irreversible effects.
 
 ## A good risk reward ratio for the courageous few?
 
