@@ -157,5 +157,5 @@ Which is exactly where we want to be based on trance distance-fidelity relations
 
 ## Claim 3: $\eta$-net on a $n(\lambda)$-qubit unitaries for normalized Frobenius norm has size $(\frac{1}{\eta})^{\Omega(2^{2n(\lambda)})}$
 
-
+Another packed statement for my limited brain. 
 

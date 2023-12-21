@@ -18,10 +18,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "Piotr Lewandowski"
 title_separator          : "-"
-subtitle                 : "Personal blog"
+subtitle                 : "Personal notes about topics I find interesting"
 name                     : "Piotr Lewandowski"
 description              : "Piotr Lewandowski - Blog"
-url                      : "https://petlew.com"
+url                      : "navaro1.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -106,8 +106,8 @@ analytics:
 author:
   name             : "Piotr Lewandowski"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : # "Chcę rozwiązywać trudne problemy"
-  location         : "Gdańsk"
+  bio              : #""
+  location         : "Polkowice, Poland"
   email            : "piotr.w.lewandowski@gmail.com"
   links:
     - label: "Email"
@@ -286,7 +286,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: false
+      read_time: true
       comments: # true
       share: true
       related: true
