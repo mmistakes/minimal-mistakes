@@ -1,8 +1,8 @@
 ---
-title: "Notes on Lemma 4.1 from ''Computational Quantum Entanglement paper'''"
+title: "Notes on Lemma 4.1 from ''Computational Quantum Entanglement paper''"
 excerpt: "Wrappng my head around the proof"
 categories: [quantum computing, computational quantum entanglement]
-tags: [proof]
+tags: [proving things]
 classes: wide
 ---
 
@@ -42,14 +42,120 @@ $$
 That of course shows that subystem A is not affected by (I \otimes U), hence maximum entangled is retained. Of coruse exactly same reasoning can be used
 for $V$.
 
-## Claim 2: States $(I \otimes U)\lvert \phi^n \rangle$ and $(I \otimes V)\lvert \phi^n \rangle$ have fidelity $\frac{1}{2}\frac{1}{2^n}\lVert U - V \rVert^2_F$
+## Claim 2: States $(I \otimes U)\lvert \phi^n \rangle$ and $(I \otimes V)\lvert \phi^n \rangle$ have fidelity $1- \frac{1}{2}\frac{1}{2^n}\lVert U - V \rVert^2_F$
 
-First, let us note that both $(I \otimes U)\lvert \phi^n \rangle$ and $(I \otimes V)\lvert \phi^n \rangle$ are _pure_ states -- we already described them as a single ket vector in proof of previous claim (it was a sum, but that is still a single ket vector). Fidelity between two pure states can be described by ([source](https://en.wikipedia.org/wiki/Fidelity_of_quantum_states)) $\lvert\langle \psi \lvert \phi \rangle\rvert^2$ which is simply an inner product between $\psi$ and $\phi$. 
+To be more precise, we need to show that:
 
 $$
-\langle \psi^n \rvert (I \otimes U^H)(I \otimes V) \lvert \psi^n \rangle = 
+\text{Re}( \langle \phi^n \rvert (I \otimes U^H)(I \otimes V)\rvert \phi^n \rangle) = 1 - \frac{1}{2}\frac{1}{2^n}\lVert U - V \rVert^2_F
 $$
 
+First, let us note that both $(I \otimes U)\lvert \phi^n \rangle$ and $(I \otimes V)\lvert \phi^n \rangle$ are _pure_ states -- we already described them as a single ket vector in proof of previous claim (it was a sum, but that is still a single ket vector). 
+
+Trying to directly attack the issue via the definition of fidelity brought me nowhere, but you might now that fidelity and [trace distance](https://en.wikipedia.org/wiki/Trace_distance) as related. Fortunately, we have the following relationship ([source](https://en.wikipedia.org/wiki/Trace_distance#Fidelity)):
+
+$$
+T(\rho, \sigma) = \sqrt{1 - F(\rho, \sigma)^2} \\
+$$
+
+Okay, so that means that we want to show that:
+
+$$
+T(\rho, \sigma) = \frac{1}{2}\frac{1}{2^n}\lVert U - V \rVert^2_F
+$$
+
+Where $\rho$, $\sigma$ are density matrices of pure states.
+Intuitively, it does make sense. We take _same_ pure state, apply two different unitaries to the _same_ state, hence it should be a function of distance _between those two unitaries_. Now let us define _trace distance_ $T$
+
+$$
+T(\rho, \sigma) = \frac{1}{2}\text{Tr}(\sqrt{(\rho-\sigma)^H(\rho-\sigma)}) 
+$$
+
+Now of course -- how we can prove that equality? I spent half a day with my limited mathematical skills and fell short, but fortunately I found [this paper](https://arxiv.org/pdf/1903.11738.pdf), from which equation 5 fell from the sky on my laps. For those sweet, sweet pure states we have:
+
+$$
+T(\rho, \sigma)^2 = \frac{1}{2}\lVert\rho-\sigma\rVert^2_F
+$$
+
+Plugging that in, we need to prove that:
+
+$$
+\lVert\rho-\sigma\rVert^2_F = (\frac{1}{2^n}\lVert U - V \rVert^2_F)^2
+$$
+
+And that is something we can work with. First, let us simplify lefthand side:
+
+$$
+\lVert\rho-\sigma\rVert^2_F  = \text{Tr}((\rho - \sigma)^H(\rho-\sigma)) \\
+= \text{Tr}(\rho^H\rho - \rho^H\sigma - \sigma^H\rho + \sigma^H\sigma) \\
+= \text{Tr}(\rho - \rho^H\sigma - \sigma^H\rho + \sigma) \\
+= \text{Tr}(\rho) +  \text{Tr}(\sigma) - \text{Tr}(\rho^H\sigma + \sigma^H\rho) \\
+= 2 - \text{Tr}(\rho^H\sigma + \sigma^H\rho) \\
+= 2 - \text{Tr}(\rho\sigma + \sigma\rho) \\
+= 2 - \text{Tr}(\rho\sigma) + \text{Tr}(\sigma\rho) \\
+= 2 - 2\text{Tr}(\rho\sigma) \\
+= 2(1 - \text{Tr}(\rho\sigma))
+$$
+
+Now let's move to $\text{Tr}(\rho\sigma)$. 
+
+$$
+\text{Tr}(\rho\sigma) = \text{Tr}((I \otimes U)\lvert \phi^n \rangle \langle \phi^n \rvert (I \otimes U^H)(I \otimes V)\lvert \phi^n \rangle \langle \phi^n \rvert (I \otimes V^H)) \\
+= \text{Tr}(\langle \phi^n \rvert(I \otimes V^H U)\lvert \phi^n \rangle \langle \phi^n \rvert (I \otimes U^HV)\lvert \phi^n \rangle)
+$$
+
+Now that is interesting, because both $\langle \phi^n \rvert(I \otimes V^H U)\lvert \phi^n \rangle$ and $\langle \phi^n \rvert (I \otimes U^HV)\lvert \phi^n \rangle$ are scalars, so we can drop the trace! But what is even _more_ interesting is how we can leverage Exercise 9.16 from Nielsen and Chuang (be sure to check errata), Let $\lvert i \rangle, \lvert j \rangle$ be orthonormal basis set, now define $\lvert m \rangle = \sum_{i}\lvert i \rangle, \lvert j \rangle$, we get:
+
+$$
+\text{Tr}(A^HB) = \langle m \rvert (A \otimes B) \lvert m \rangle
+$$
+
+Now, let us recall that we can write $\lvert \phi^n \rangle = \frac{1}{\sqrt{2}}^n \lvert \tilde{\phi} \rangle$, where $\lvert \tilde{\phi} \rangle$ meets the requirement above! Back to our trace calculations:
+
+$$
+\text{Tr}(\langle \phi^n \rvert(I \otimes V^H U)\lvert \phi^n \rangle \langle \phi^n \rvert (I \otimes U^HV)\lvert \phi^n \rangle) \\
+= \langle \phi^n \rvert(I \otimes V^H U)\lvert \phi^n \rangle  \langle \phi^n \rvert (I \otimes U^HV)\lvert \phi^n \rangle = \\
+= \frac{1}{2}^n\text{Tr}(V^HU)\frac{1}{2}^n\text{Tr}(U^HV)
+$$
+
+Now let us recall that by original claim we are interested in only the _real_ part, so we obtain:
+
+$$
+\text{Tr}(\rho\sigma) = ((\frac{1}{2})^n\text{Re}(\text{Tr}(U^HV)))^2
+$$
+
+Okay, now let us try to simplify $\frac{1}{2^n}\lVert U - V \rVert^2_F$
+
+$$
+\frac{1}{2^n}\lVert U - V \rVert^2_F \\
+= \frac{1}{2^n}\text{Tr}(U^HU - U^HV - V^HU + V^HV) \\
+= \frac{1}{2^n}\text{Tr}(I - U^HV - V^HU + I)
+= \frac{1}{2^n} 2 \text{Tr}(I) - \frac{1}{2^n}\text{Tr}(U^HV + V^HU) \\
+= 2 - \frac{1}{2^n}\text{Tr}(U^HV + V^HU) \\
+= 2 - \frac{1}{2^n}(\text{Tr}(U^HV) + \text{Tr}(V^HU)) \\
+= \frac{1}{2^n}\text{Tr}(U^HV) + \text{Tr}(U^HV)^* \\
+=  2\frac{1}{2^n}\text{Re}(\text{Tr}(U^HV))
+$$
+
+Now, let us try to simplify to convince ourselves about the claim.
+
+$$
+\text{Re}( \langle \phi^n \rvert (I \otimes U^H)(I \otimes V)\rvert \phi^n \rangle) = 1 - \frac{1}{2}\frac{1}{2^n}\lVert U - V \rVert^2_F \\
+\text{Re}( \langle \phi^n \rvert (I \otimes U^H)(I \otimes V)\rvert \phi^n \rangle) = 1 - \frac{1}{2}2\frac{1}{2^n}\text{Re}(\text{Tr}(U^HV)) \\ 
+\text{Re}( \langle \phi^n \rvert (I \otimes U^H)(I \otimes V)\rvert \phi^n \rangle) = 1 - \frac{1}{2^n}\text{Re}(\text{Tr}(U^HV))
+$$
+
+Switch gears to trace distance:
+
+$$
+T(\rho, \sigma)^2 = \frac{1}{2}\lVert\rho-\sigma\rVert^2_F \\
+T(\rho, \sigma)^2 = \frac{1}{2}2(1 - \text{Tr}(\rho\sigma)) \\ 
+T(\rho, \sigma)^2 = 1 - \frac{1}{2}((\frac{1}{2})^n\text{Re}(\text{Tr}(U^HV)))^2
+$$
+
+Which is exactly where we want to be based on trance distance-fidelity relationship. Reasoning can be simplified, but I want to leave a bit of personal touch to show how I was wondering (and wandering!) around.
+
+## Claim 3: $\eta$-net on a $n(\lambda)$-qubit unitaries for normalized Frobenius norm has size $(\frac{1}{\eta})^{\Omega(2^{2n(\lambda)})}$
 
 
 
