@@ -77,12 +77,6 @@ $$
 T(\rho, \sigma)^2 = \frac{1}{2}\lVert\rho-\sigma\rVert^2_F
 $$
 
-Plugging that in, we need to prove that:
-
-$$
-\lVert\rho-\sigma\rVert^2_F = (\frac{1}{2^n}\lVert U - V \rVert^2_F)^2
-$$
-
 And that is something we can work with. First, let us simplify lefthand side:
 
 $$
@@ -164,8 +158,8 @@ Now let us think a little about size of an $\eta$-net. The smaller the $\eta$ th
 ## Claim 4: Construction and properties of $S_\lambda$
 
 Within this section we will deal with all the properties and construction of $S_\lambda$. Here, we will just extract a list of what we need to show. Quick recap of how $S_\lambda$ is constructed. We start with $S_\lambda = \emptyset$, then:
-1. Let take a $U$ $n$-qubit unitary and construct $\lvert \psi \rangle = (I \otimes U)\lvert \phi^n$. If $\lvert \psi \rangle$ has fidelity less than $1 - \eta$ with every state already in $S_\lambda$, then add $\lvert \psi \rangle$ to the set, otherwise stop.
-2. Add $2^{2n}$ pure states {$ (I \otimes \sigma_X(a)\sigma_Z(b)) \lvert \psi \rangle : a, b \in \{0, 1\}^n$} to the set $S_\lambda$.
+1. Let take a $U$ $n$-qubit unitary and construct $\lvert \psi \rangle = (I \otimes U)\lvert \phi^n \rangle$. If $\lvert \psi \rangle$ has fidelity less than $1 - \eta$ with every state already in $S_\lambda$, then add $\lvert \psi \rangle$ to the set, otherwise stop.
+2. Add $2^{2n}$ (?) pure states {$ (I \otimes \sigma_X(a)\sigma_Z(b)) \lvert \psi \rangle : a, b \in \{0, 1\}^n$} to the set $S_\lambda$. My understanding here is that for $a, b = 0$ we are adding the original state again, so we are actually adding $2^{2n} - 1$ new states, but we end up with $2^{2n}$, because it was added in step 1.
 
 Now for the properties:
 1. Any pair of elements from $S_\lambda$ has fidelity at most $1 - \eta$.
@@ -177,7 +171,102 @@ For me to feel comfortable, we need to split first property into few smaller one
 - $(I \otimes \sigma_X(a)\sigma_Z(b)) \lvert \psi \rangle$ and $\lvert \psi \rangle$ has fidelity at most $1 - \eta$
 - Let $\lvert \psi_1 \rangle$, $\lvert \psi_2 \rangle \in S_\lambda$. $(I \otimes \sigma_X(a)\sigma_Z(b)) \lvert \psi_1 \rangle$ and $\lvert \psi_2 \rangle$ has fidelity at most $1 - \eta$
 
-Additionally we need to be sure that $(I \otimes \sigma_X(a)\sigma_Z(b))$ are actually pure states.
+Additionally, we need to be sure that $(I \otimes \sigma_X(a)\sigma_Z(b))$ are actually pure states.
 
-### Claim 4.1: {$ (I \otimes \sigma_X(a)\sigma_Z(b)) \lvert \psi \rangle : a, b \in \{0, 1\}^n$} are all pure states.
+### Claim 4.1: $\\{(I \otimes \sigma_X(a)\sigma_Z(b)) \lvert \psi \rangle : a, b \in \\{0, 1\\}^n\\}$ are all pure states.
+
+All maximally entangled states are pure. In [Claim 1](#claim-1-for-n-qubits-unitaries-u-and-v-and-lvert-phin-rangle-the-tensor-product-of-n-epr-pairs-the-states-i-otimes-ulvert-phin-rangle-and-i-otimes-vlvert-phin-rangle-are-both-maximally-entangled) we showed that applying operations in form $I \otimes A$ does not affect status of being maximally entangled. Because of that, $\\{(I \otimes \sigma_X(a)\sigma_Z(b)) \lvert \psi \rangle : a, b \in \\{0, 1\\}^n\\}$ will remain maximally entangled, hence all  $\\{(I \otimes \sigma_X(a)\sigma_Z(b)) \lvert \psi \rangle : a, b \in \\{0, 1\\}^n\\}$ are pure.
+
+### Claim 4.2: $(I \otimes \sigma_X(a)\sigma_Z(b)) \lvert \psi \rangle$ and $\lvert \psi \rangle$ has fidelity at most $1 - \eta$
+
+Ah, fidelity again! So let us write everything we know, starting with states:
+
+$$
+\lvert \psi \rangle = (I \otimes U)\lvert \phi^n \rangle \\ 
+\lvert \psi_{a, b} \rangle = (I \otimes \sigma_X(a)\sigma_Z(b)) \lvert \psi \rangle = (I \otimes \sigma_X(a)\sigma_Z(b))(I \otimes U)\lvert \phi^n \rangle
+$$
+
+Okay, as we have fidelity formula for pure states
+
+$$
+\langle \phi^n \rvert (I \otimes U^H)(I \otimes \sigma_X(a)\sigma_Z(b))(I \otimes U)\lvert \phi^n \rangle
+$$
+
+This claim is relatively intuitive if you know what $\sigma_X(a)\sigma_Z(b)$ will do. What this operation will do is generate an orthogonal state to $(I \otimes U)\lvert \phi^n \rangle$, and orthogonal states have $0$ fidelity. $0 \leq 1 - \eta$, They are also orthogonal with each other.
+
+### Claim 4.3: Let $\lvert \psi_1 \rangle, \lvert \psi_2 \rangle \in S_\lambda$. $(I \otimes \sigma_X(a)\sigma_Z(b)) \lvert \psi_1 \rangle$ and $(I \otimes \sigma_X(c)\sigma_Z(d)) \lvert \psi_2 \rangle$ has fidelity at most $1 - \eta$
+
+Now, we want to check if added orthogonal states coming from two different unitaries will still be far apart from each other. For me, it is not obvious that the fidelity will be "preserved" (or at least _not_ increased). Good that those are all pure states, we also now that fidelity between $\lvert \psi_1 \rangle, \lvert \psi_2 \rangle$ is at most $1 - \eta$. So, let us inner product that!
+
+$$
+\langle \psi_1 \rvert (I \otimes \sigma_Z(b)^H\sigma_X(a)^H)(I \otimes \sigma_X(c)\sigma_Z(d)) \lvert \psi_2 \rangle \\
+= \langle \psi_1 \rvert (I \otimes \sigma_Z(b)^H\sigma_X(a)^H\sigma_X(c)\sigma_Z(d)) \lvert \psi_2 \rangle
+$$
+
+It seems that we need to investigate all the combinations of $a, b, c, d$. Fortunately, we can simplify it because to consider _individual_  bit flips as it will directly scale to higher dimensions.
+
+#### $a = c, b = d $
+
+Here operations will "cancel out":
+
+$$
+\langle \psi_1 \rvert (I \otimes \sigma_Z(b)^H\sigma_X(a)^H\sigma_X(c)\sigma_Z(d)) \lvert \psi_2 \rangle \\
+= \langle \psi_1 \rvert (I \otimes \sigma_Z(b)^H\sigma_X(a)^H\sigma_X(a)\sigma_Z(b)) \lvert \psi_2 \rangle \\
+= \langle \psi_1 \rvert (I \otimes I) \lvert \psi_2 \rangle \\
+= \langle \psi_1 \rvert \psi_2 \rangle \leq 1 - \eta
+$$
+
+#### $a = c, b \neq d$
+
+First, non-trivial case, let us see what happens:
+
+$$
+\langle \psi_1 \rvert (I \otimes \sigma_Z(b)^H\sigma_X(a)^H\sigma_X(c)\sigma_Z(d)) \lvert \psi_2 \rangle \\
+= \langle \psi_1 \rvert (I \otimes \sigma_Z(b)^H\sigma_X(a)^H\sigma_X(a)\sigma_Z(d)) \lvert \psi_2 \rangle \\
+= \langle \psi_1 \rvert (I \otimes \sigma_Z(b)\sigma_Z(d)) \lvert \psi_2 \rangle
+$$
+
+Now, that means that one of the $b, d$ parameters are $0$, so one of the gates can be discarded. Let us say $d = 0$, we end up with:
+
+$$
+\langle \psi_1 \rvert (I \otimes \sigma_Z(b)) \lvert \psi_2 \rangle
+$$
+
+Fortunately, we can start with very simple example - of single EPR pair as it will scale _directly_ to n copies.
+
+$$ 
+\lvert \psi_1 \rangle = a_1 \lvert 00 \rangle + a_2 \lvert 01 \rangle + a_3 \lvert 10 \rangle + a_4 \lvert 11 \rangle \\
+\lvert \psi_2 \rangle = b_1 \lvert 00 \rangle + b_2 \lvert 01 \rangle + b_3 \lvert 10 \rangle + b_4 \lvert 11 \rangle \\
+$$
+
+The Z gate flips the phase of the \lvert 1 \rangle state but leaves \lvert 0 \rangle unchanged:
+
+$$
+(I \otimes \sigma_Z) \lvert \psi_2 \rangle = \lvert \psi_2 \rangle =  b_1 \lvert 00 \rangle - b_2 \lvert 01 \rangle + b_3 \lvert 10 \rangle - b_4 \lvert 11 \rangle
+$$
+
+The inner product $\langle \psi_1 \rvert (I \otimes \sigma_Z) \lvert \psi_2 \rangle$ expands to:
+
+$$
+(a_1^* \langle 00 \rvert + a_2^* \langle 01 \rvert + a_3^* \langle 10 \rvert + a_4^* \langle 11 \rvert)(b_1 \lvert 00 \rangle - b_2 \lvert 01 \rangle + b_3 \lvert 10 \rangle - b_4 \lvert 11 \rangle = \\
+a_1^* b_1 - a_2^* b_2 + a_3^* b_3 - a_4^* b_4
+$$
+
+This means that our fidelity is:
+$$
+|a_1^* b_1 - a_2^* b_2 + a_3^* b_3 - a_4^* b_4|^2
+$$
+
+And with that we are _sure_ that it will not be _greater_ than original fidelity.
+
+#### $a \neq c, b = d$
+
+TODO:
+
+
+#### $a \neq c, b \neq d$
+
+As we are combining previous cases we are still _not_ increasing fidelity.
+
+### Claim 4.4: For any $\lvert \psi \rangle \in S_\lambda, E(\lvert \psi \rangle \langle \psi \lvert) = n(\lambda)$
 
