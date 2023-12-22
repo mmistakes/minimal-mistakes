@@ -15,7 +15,7 @@ search: true
 os 내용 들어가기 전에 전체적인 그림을 보는 파트 입니다. 
 전체적으로 컴퓨터 구조가 어떻게 이루어져 있는지 알 수 있습니다. 
 
-<a href="https://sullivan.github.io/pdfs/basicOS.pdf">Basic_of_OSpdf</a>
+<a href="{{site.url}}/pdfs/basicOS.pdf">Basic_of_OSpdf</a>
 
 
 
@@ -30,7 +30,7 @@ os 내용 들어가기 전에 전체적인 그림을 보는 파트 입니다.
 
 
 
-![화면 캡처 2022-07-09 194116](C:\github_blog\sullivan.github.io\images\2022-07-09-Basic_of_OS\화면 캡처 2022-07-09 194116.png)
+![화면 캡처 2022-07-09 194116]({{site.url}}/images/2022-07-09-Basic_of_OS/화면 캡처 2022-07-09 194116.png)
 
 
 
@@ -78,7 +78,7 @@ os 내용 들어가기 전에 전체적인 그림을 보는 파트 입니다.
 >   * 다른 종류의 OS의 상호작용을 위한 software program
 > * 
 
-![blog_2](C:\github_blog\sullivan.github.io\images\2022-07-09-Basic_of_OS\blog_2.png)
+![blog_2]({{site.url}}/images/2022-07-09-Basic_of_OS/blog_2.png)
 
 
 

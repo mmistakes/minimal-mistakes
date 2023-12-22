@@ -19,7 +19,7 @@ search: true
 Activation Record의 개념과 static link, dynamic link의 구조에 대해서 알수있습니다. 
 
 
-<a href="https://sullivan.github.io/pdfs/Function_Semantic.pdf">Function_Semantic one note pdf</a>
+<a href="{{site.url}}/pdfs/Function_Semantic.pdf">Function_Semantic one note pdf</a>
 
 
 

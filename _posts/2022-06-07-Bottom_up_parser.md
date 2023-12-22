@@ -15,7 +15,7 @@ search: true
 Bottom up parser에 대한 내용과 LR Parser에 대한 내용 및 parser table 적용하는 내용은 아래 PDF 링크에 내용이 있습니다. 
 
 
-<a href="https://sullivan.github.io/pdfs/Bottom_up_Parsing.pdf">Bottom up Parser One Note PDF</a>
+<a href="{{site.url}}/pdfs/Bottom_up_Parsing.pdf">Bottom up Parser One Note PDF</a>
 
 
 

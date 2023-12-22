@@ -14,7 +14,7 @@ search: true
 
 Top down parser중에 Backtraking이 없는 predictive parser에 대해서 정리한 pdf가 아래에 링크에 있습니다. 
 
-<a href="https://sullivan.github.io/pdfs/Top_down_Parsing.pdf">Top Down Parser One Note PDF</a>
+<a href="{{site.url}}/pdfs/Top_down_Parsing.pdf">Top Down Parser One Note PDF</a>
 
 
 

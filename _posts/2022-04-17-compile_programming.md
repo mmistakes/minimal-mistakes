@@ -22,7 +22,7 @@ search: true
 
  
 
-<a href="https://meang123.github.io/pdfs/compiler_onenote.pdf">중간고사이전내용pdf</a>
+<a href="{{site.url}}/pdfs/compiler_onenote.pdf">중간고사이전내용pdf</a>
 
 
 

@@ -123,7 +123,7 @@ search: true
 
 
 
-![shop image](C:\github_blog\sullivan.github.io\images\2023-12-05-market_analyze\image.png)
+![shop image]({{site.url}}/images/2023-12-05-market_analyze/image.png)
 
 
 
@@ -139,7 +139,7 @@ search: true
 <br>
 
 
-![min_max_sclaer](C:\github_blog\sullivan.github.io\images\2023-12-05-market_analyze\image2.png)
+![min_max_sclaer]({{site.url}}/images/2023-12-05-market_analyze/image2.png)
 
 <br>
 
@@ -151,7 +151,7 @@ search: true
 
 
 
-![knn score](C:\github_blog\sullivan.github.io\images\2023-12-05-market_analyze\image3.png)
+![knn score]({{site.url}}/images/2023-12-05-market_analyze/image3.png)
 
 
 
@@ -167,7 +167,7 @@ search: true
 <br>
 
 
-![cluster result](C:\github_blog\sullivan.github.io\images\2023-12-05-market_analyze\image4.png)
+![cluster result]({{site.url}}/images/2023-12-05-market_analyze/image4.png)
 
 <br>
 
@@ -177,10 +177,10 @@ search: true
 <br>
 
 
-![직장인인기영역](C:\github_blog\sullivan.github.io\images\2023-12-05-market_analyze\image5.png)
+![직장인인기영역]({{site.url}}/images/2023-12-05-market_analyze/image5.png)
 
 
-![직장인 상권영역](C:\github_blog\sullivan.github.io\images\2023-12-05-market_analyze\image6.png)
+![직장인 상권영역]({{site.url}}/images/2023-12-05-market_analyze/image6.png)
 
 <br>
 
@@ -190,12 +190,12 @@ search: true
 <br>
 
 
-![유동인구영역](C:\github_blog\sullivan.github.io\images\2023-12-05-market_analyze\image7.png)
+![유동인구영역]({{site.url}}/images/2023-12-05-market_analyze/image7.png)
 
 <br>
 
 
-![유동인구상권영역](C:\github_blog\sullivan.github.io\images\2023-12-05-market_analyze\image8.png)
+![유동인구상권영역]({{site.url}}/images/2023-12-05-market_analyze/image8.png)
 
 골목 상권이 100%로 나왔는데 합친 데이터에서 결측치 제거 할때나 아니면 합칠때 문제가 있었을것으로 예상한다 
 
@@ -212,7 +212,7 @@ search: true
 
 **20대 매출금액**
 
-![20 매출금액](C:\github_blog\sullivan.github.io\images\2023-12-05-market_analyze\image9.png)
+![20 매출금액]({{site.url}}/images/2023-12-05-market_analyze/image9.png)
 
 <br>
 
@@ -221,7 +221,7 @@ search: true
 **30대 매출금액**
 
 
-![30 매출금액](C:\github_blog\sullivan.github.io\images\2023-12-05-market_analyze\image10.png)
+![30 매출금액]({{site.url}}/images/2023-12-05-market_analyze/image10.png)
 
 <br>
 
@@ -236,7 +236,7 @@ search: true
 <br>
 
 
-![40 매출금액](C:\github_blog\sullivan.github.io\images\2023-12-05-market_analyze\image11.png)
+![40 매출금액]({{site.url}}/images/2023-12-05-market_analyze/image11.png)
 <br>
 
 
@@ -244,7 +244,7 @@ search: true
 **20대 매출건수**
 
 
-![20 매출건수](C:\github_blog\sullivan.github.io\images\2023-12-05-market_analyze\image12.png)
+![20 매출건수]({{site.url}}/images/2023-12-05-market_analyze/image12.png)
 <br>
 
 
@@ -252,7 +252,7 @@ search: true
 **30대 매출건수**
 
 
-![30매출건수](C:\github_blog\sullivan.github.io\images\2023-12-05-market_analyze\image13.png)
+![30매출건수]({{site.url}}/images/2023-12-05-market_analyze/image13.png)
 
 <br>
 
@@ -261,7 +261,7 @@ search: true
 **40대 매출건수**
 
 
-![40매출건수](C:\github_blog\sullivan.github.io\images\2023-12-05-market_analyze\image14.png)
+![40매출건수]({{site.url}}/images/2023-12-05-market_analyze/image14.png)
 
 
 <br>
@@ -300,14 +300,14 @@ search: true
 
 
 
-https:\\github.com\meang123\market_analyze
+https://github.com/meang123/market_analyze
 
 <br>
 
 
 # 참고 링크 
 
-https:\\github.com\chenni0531\data-seoul-market-analysis
+https://github.com/chenni0531/data-seoul-market-analysis
 
 <br>
 

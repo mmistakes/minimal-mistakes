@@ -22,7 +22,7 @@ clite에서 type check를 어떻게 진행하는지는 정리한 pdf에서 알 �
 원노트에서 정리한 기반의 내용의 pdf는 아래 링크에서 확인 할 수 있습니다. 
 
 
-<a href="https://sullivan.github.io/pdfs/TypeChecker.pdf">Static Type Checker one note pdf</a>
+<a href="{{site.url}}/pdfs/TypeChecker.pdf">Static Type Checker one note pdf</a>
 
 
 

@@ -17,7 +17,7 @@ search: true
 아래에 원노트로 정리한 파일이 있습니다. 
 
 
-<a href="https://sullivan.github.io/pdfs/Semantic.pdf">Semantic one note pdf</a>
+<a href="{{site.url}}/pdfs/Semantic.pdf">Semantic one note pdf</a>
 
 
 

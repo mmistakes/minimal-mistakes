@@ -108,7 +108,7 @@ int main()
 		auto duration = high_resolution_clock::now() - start;
 
 		cout << i << " threads" << " sum = " << sum;
-		cout << " Duration = " << duration_cast<milliseconds>(duration).count() << " milliseonds\n";
+		cout << " Duration = " << duration_cast<milliseconds>(duration).count() << " milliseonds/n";
 	}
 	return 0;
 }
@@ -116,7 +116,7 @@ int main()
 
 
 
-![화면 캡처 2022-07-21 201055](C:\github_blog\sullivan.github.io\images\2022-07-21-multi_thread_syn\화면 캡처 2022-07-21 201055.png)
+![화면 캡처 2022-07-21 201055]({{site.url}}/images/2022-07-21-multi_thread_syn/화면 캡처 2022-07-21 201055.png)
 
 
 
@@ -197,7 +197,7 @@ int main()
 		auto duration = high_resolution_clock::now() - start;
 
 		cout << i << " threads" << " sum = " << sum;
-		cout << " Duration = " << duration_cast<milliseconds>(duration).count() << " milliseonds\n";
+		cout << " Duration = " << duration_cast<milliseconds>(duration).count() << " milliseonds/n";
 	}
 	return 0;
 }
@@ -205,7 +205,7 @@ int main()
 
 
 
-![화면 캡처 2022-07-21 203944](C:\github_blog\sullivan.github.io\images\2022-07-21-multi_thread_syn\화면 캡처 2022-07-21 203944.png)
+![화면 캡처 2022-07-21 203944]({{site.url}}/images/2022-07-21-multi_thread_syn/화면 캡처 2022-07-21 203944.png)
 
 
 
@@ -426,7 +426,7 @@ condition_variable cv;
 
 void waitFn()
 {
-	cout << "wait"<<'\n';
+	cout << "wait"<<'/n';
 	unique_lock<mutex> lck(mtx);
 	
 	cv.wait(lck, [] {return readFlag; });
@@ -434,12 +434,12 @@ void waitFn()
 	//critical section 
 	lck.unlock();
 
-	cout << "re run " << '\n';
+	cout << "re run " << '/n';
 
 }
 void signalFn()
 {
-	cout << "signal" << '\n';
+	cout << "signal" << '/n';
 	unique_lock<mutex> lck(mtx);
 	readFlag = true;
 	lck.unlock();
@@ -587,13 +587,13 @@ counting_semaphore<10> sp(0);	//counting semaphore를 10으로 설정하고 초�
 
 void waitFn()
 {
-	cout << "waiting" << '\n';
+	cout << "waiting" << '/n';
 	sp.acquire();
-	cout << "rerun" << '\n';
+	cout << "rerun" << '/n';
 }
 void signalFn()
 {
-	cout << "signal" << '\n';
+	cout << "signal" << '/n';
 	sp.release();
 }
 int main()
@@ -645,12 +645,12 @@ std::latch lt{3};
 
 void fn()
 {
-	cout << "decrease counter" << '\n';
-	cout << "wait" << '\n';
+	cout << "decrease counter" << '/n';
+	cout << "wait" << '/n';
 	
 	lt.arrive_and_wait();		//count_down() && wait()
 
-	cout << "re run" << '\n';
+	cout << "re run" << '/n';
 
 }
 

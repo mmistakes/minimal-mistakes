@@ -26,7 +26,7 @@ search: true
 
 
 
-<a href="https://sullivan.github.io/pdfs/scheduling.pdf">Scheduling_PDF</a>
+<a href="{{site.url}}/pdfs/scheduling.pdf">Scheduling_PDF</a>
 
 
 
@@ -96,11 +96,11 @@ search: true
 >
 >   
 >
->   ![ffff](C:\github_blog\sullivan.github.io\images\2022-07-14-Scheduling\ffff.png)
+>   ![ffff]({{site.url}}/images/2022-07-14-Scheduling/ffff.png)
 >
 >   
 >
->   ![dfg](C:\github_blog\sullivan.github.io\images\2022-07-14-Scheduling\dfg.png)
+>   ![dfg]({{site.url}}/images/2022-07-14-Scheduling/dfg.png)
 >
 >   
 >

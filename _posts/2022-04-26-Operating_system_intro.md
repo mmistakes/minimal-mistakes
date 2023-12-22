@@ -19,7 +19,7 @@ search: true
 제가 필기한 것을 원하지 않을 경우 아래의 pdf를 확인하시면 될것 같습니다.(단, 이후에 나오는 자료와 차이가 있을 수 있습니다.)
 
 
-<a href="https://sullivan.github.io/pdfs/compiler_onenote.pdf">중간고사이전내용OSpdf</a>
+<a href="{{site.url}}/pdfs/compiler_onenote.pdf">중간고사이전내용OSpdf</a>
 
 
 

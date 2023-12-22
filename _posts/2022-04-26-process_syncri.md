@@ -19,7 +19,7 @@ search: true
 
 아래 pdf 링크에서 정리 했던 내용을 확인 할수있습니다. 
 
-<a href="https://sullivan.github.io/pdfs/Process_Syn.pdf">process_thread_syn_pdf</a>
+<a href="{{site.url}}/pdfs/Process_Syn.pdf">process_thread_syn_pdf</a>
 
 
 
@@ -39,7 +39,7 @@ search: true
 
 
 
-![ㅁㄴㅇㄹ없는 그림](C:\github_blog\sullivan.github.io\images\2022-04-26-process_syncri\ㅁㄴㅇㄹ없는 그림.png)
+![ㅁㄴㅇㄹ없는 그림]({{site.url}}/images/2022-04-26-process_syncri/ㅁㄴㅇㄹ없는 그림.png)
 
 
 
@@ -118,7 +118,7 @@ lock을 획득하는 함수는 atomic operation이다
 
 
 
-![화면 캡처 2022-07-19 162618](C:\github_blog\sullivan.github.io\images\2022-04-26-process_syncri\화면 캡처 2022-07-19 162618.png)
+![화면 캡처 2022-07-19 162618]({{site.url}}/images/2022-04-26-process_syncri/화면 캡처 2022-07-19 162618.png)
 
 
 
@@ -177,7 +177,7 @@ wait,signal로 조작 된다 wait 하거나 signal중에는 semaphore 변수를 
 
 
 
-![제목 dfdfd그림](C:\github_blog\sullivan.github.io\images\2022-04-26-process_syncri\제목 dfdfd그림.png)
+![제목 dfdfd그림]({{site.url}}/images/2022-04-26-process_syncri/제목 dfdfd그림.png)
 
 
 
@@ -244,7 +244,7 @@ wait 상태 들어가기 전에 lock을 release하고 들어간다
 
 
 
-![화면 캡처 2022-07-21 155003](C:\github_blog\sullivan.github.io\images\2022-04-26-process_syncri\화면 캡처 2022-07-21 155003.png)
+![화면 캡처 2022-07-21 155003]({{site.url}}/images/2022-04-26-process_syncri/화면 캡처 2022-07-21 155003.png)
 
 ​															**[출처]** [쉬운코드 유튜브 모니터 영상](https://www.youtube.com/watch?v=Dms1oBmRAlo)|**작성자** 
 
