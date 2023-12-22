@@ -377,3 +377,55 @@ ORDER BY o.OrderDate;
 
 ----
 
+다시 질문을 던져보자
+
+##### 2021년 7월은 역대 최고 매출이다. 다른 연도와 비교해 매출액이 상승한 이유는 무엇일까?
+##### 특정 카테고리의 매출이 증가한걸까? 아니면 특정 회사의 매출이 증가한건가?
+
+위 질문에 대한 해답을 찾아봤다.
+
+```sql
+SELECT YEAR(o.OrderDate) YEAR, DATE_FORMAT(o.OrderDate, '%m-%d') MD, SUM(od.UnitPrice * od.Quantity) AS Sales
+FROM Customer c LEFT JOIN Orders o ON c.Id = o.CustomerId
+LEFT JOIN OrderDetail od ON o.Id = od.OrderId
+GROUP BY YEAR, MD
+HAVING MD LIKE '07%'
+ORDER BY YEAR, MD;
+```
+
+![Alt text]({{site.url}}\images\2023-12-14-hypothesis\sales_july_plot.png){: .align-center}
+
+
+위 그래프를 보자 7월 19일에 눈에띄게 매출이 증가했는데 이유가 뭘? 란 질문이 떠올랐다.
+
+7월 19일에 어떤일이 발생한건지 디테일하게 데이터를 보자.
+
+```sql
+SELECT 
+    c.CompanyName,
+    SUM(od.UnitPrice * od.Quantity) AS Sales,
+    CONCAT(ROUND(SUM(od.UnitPrice * od.Quantity) / total.TotalSales, 2), '%') AS SalesRatio
+FROM 
+    Customer c 
+    LEFT JOIN Orders o ON c.Id = o.CustomerId
+    LEFT JOIN OrderDetail od ON o.Id = od.OrderId
+    LEFT JOIN (
+    SELECT 
+        SUM(od2.UnitPrice * od2.Quantity) AS TotalSales
+    FROM 
+        Orders o2
+        LEFT JOIN OrderDetail od2 ON o2.Id = od2.OrderId
+    WHERE 
+        DATE_FORMAT(o2.OrderDate, '%Y-%m-%d') = '2021-07-19'
+) total ON 1=1
+WHERE 
+    DATE_FORMAT(o.OrderDate, '%Y-%m-%d') = '2021-07-19'
+GROUP BY 
+    c.CompanyName, total.TotalSales
+ORDER BY 
+    Sales DESC;
+```
+
+
+![Alt text]({{site.url}}\images\2023-12-14-hypothesis\july_19_plot.png){: .align-center}
+
