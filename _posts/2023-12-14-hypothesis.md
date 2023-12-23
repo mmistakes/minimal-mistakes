@@ -3,7 +3,7 @@ layout: single
 title: '데이터 분석을 위한 가설 수립하기 '
 categories: 데이터분석
 author_profile: false
-published: true
+published: false
 sidebar:
     nav: "counts"
 ---
