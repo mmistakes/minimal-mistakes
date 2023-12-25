@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "[Github] 원격저장소 URL 변경"
-categories:
+categories: [git]
 tag: [github, git] 
 author_profile: false
 ---
