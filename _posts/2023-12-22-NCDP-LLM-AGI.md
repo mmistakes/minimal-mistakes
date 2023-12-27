@@ -137,8 +137,8 @@ This model needs to be calibrated/validated to represent reality. But the implic
 In other words, if this is true, then
 
 1. The war for talent is well and alive, and great/outstanding performers are key to making stuff people want.
-2. The number of teams can ship useful products is increasing.
-3. The great benefit, in absolute value is captured by the few.
+2. The number of teams that can ship useful products is increasing.
+3. The greatest benefit, in absolute value, is captured by the few.
 
 Now, this raises another interesting question around productivity for creative work. If the task is to lay a brick wall or to pack and ship packages, then productivity can be measured using a single dimension. Creative work is much harder to capture. Can creative knowledge work be narrowly defined as number of users or revenue? That's what venture capitalists have to do for lack of a better metric. For a lot of applications, the amount of work required is not necessarily in the 100,000. Coming back to the bus app for NTU, this may well have been accomplished by team of two good people over 10 weeks (e.g., `(2 * 2) ^ 3 * 10 = 640X`).
 
@@ -150,7 +150,7 @@ Overall, this is all fantastic news for innovation worldwide, as long as it is d
 
 I should perhaps establish my credibility (or lack thereof!). I've been thinking about artificial intelligence for around 30 years. I'm 41 years old now and in the 1990s, I was interested in how bots were programmed in games like Quake, Poker and Go. That's how I learned about `malloc()`. Later on, I went to McGill University and studied under Shie Mannor, Doina Precup, Benoit Boulet, Jeremy Cooperstock. In the early 2000s, the Natural Sciences and Engineering Research Council of Canada funded many PhD students/professors and included the likes of Geoffrey Hinton (deep learning), Joshua Bengio (also deep learning), and Rich Sutton (reinforcement learning). I was at the right place and perhaps just a few years early before everything blew up. I’m probably a little better in engineering than in math, and I’m probably a little better in business than in engineering! But my love for pure math runs all the way down.
 
-I have a decent network of friends who have been at this game for several decades, both in academia and in business, and nobody can speak with certain about AGI. I do not believe that AGI is around the corner for a few reasons.
+I have a decent network of friends who have been at this game for several decades, both in academia and in business, and nobody can speak with certainty about AGI. I do not believe that AGI is around the corner for a few reasons.
 
 ## 3.2 General Intelligence
 
@@ -191,7 +191,7 @@ In addition, GPT-4 has a context window of 128K tokens, while each of our neuron
 | Autonomic Functions   | Neurons in the autonomic system     | Estimated several hundred thousand |
 | Pain and Temperature  | Nociceptors and thermoreceptors     | Estimated several hundred thousand |
 
-# 3.3 AGI
+# 3.3 AGI - DRAFT
 
 This is making me think about, you know, artificial versus natural. Could we compare a little bit artificial intelligence to like a car versus leopard or an eagle, right? If we try to make a comparison that artificial general intelligence is similar to, let's say, the speed of running down a track, then the car will never be a leopard. It'll never be as complicated, etc. But in terms of useful work to go down a track, the car always beats the leopard. Similarly, the airplane jet always beats the the eagle. So, in that sense, the artifice and the brutality of the artificial technology that we build simplifies the rules of the game such that it can perform an action much more efficiently. We organize material and physics in a way that it achieves, whether it's driving down a line or whether it's flying across the air, much faster. But it makes me wonder, is artificial intelligence, artificial general intelligence, similarly, can it also be narrowly defined as moving into a certain dimension, like going from point A to point B, except that it's around for the dimension of cognition, which kind of asks fundamental question about what is cognition? Because the key word here is general, right? Is general cognition something that fundamentally could be brought down to just a few dimensions? Because it sounds to me like, by definition, general artificial intelligence is always going to be that which goes into high dimension. So, any form of artificial intelligence, by definition, would be bounded by the dimension that it supports. A bit like, okay, the car can go faster than the leopard, but it cannot climb a tree, right? And no matter how advanced we make the machine, there's always going to be something about the leopard that it can do that the car cannot do. And in the same way, it's very unlikely, maybe even mathematically, I hope, or something like this, like it could be proven that you'll never have artificial general intelligence by the same argument. Is there something to that or am I just not making sense?
 
