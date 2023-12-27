@@ -78,7 +78,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "database" %}
-                        <li><a href="/categories/sql" class="">database ({{category[1].size}})</a></li>
+                        <li><a href="/categories/database" class="">DataBase ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
