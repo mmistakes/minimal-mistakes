@@ -70,8 +70,8 @@
         <span class="nav__sub-title">Database & Server</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "My SQL" %}
-                        <li><a href="/categories/mysql" class="">My SQL ({{category[1].size}})</a></li>
+                    {% if category[0] == "SQL" %}
+                        <li><a href="/categories/sql" class="">My SQL ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
