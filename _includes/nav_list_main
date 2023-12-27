@@ -67,11 +67,18 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Database & Server</span>
+        <span class="nav__sub-title">DataBase & Server</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "SQL" %}
                         <li><a href="/categories/sql" class="">SQL ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "database" %}
+                        <li><a href="/categories/sql" class="">database ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
