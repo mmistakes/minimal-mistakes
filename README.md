@@ -18,8 +18,7 @@ Installation has followed the quick-start guide above and then the gemified vers
 
 ### Update theme
 
-Keep the repo up to date with new features from the upstream. If there's too many changed as you've been lazy and haven't updated in a while, so have way too many conflicts to be solved, the best way is create a branch updated with the minima mistakes master and apply your changes on that one.
-
+Keep the repo up to date with new features from the upstream. If there's too many changed as you've been lazy and haven't updated in a while, so have way too many conflicts to be solved, the best way is create a branch updated with the Minimal Mistakes master and apply your changes on that one.
 
 ## On general edits
 
