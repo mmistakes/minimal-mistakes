@@ -3,7 +3,7 @@ published: true
 title: "[DB] Database 1"
 
 categories: database
-tag: [database]
+tag: [DB]
 
 toc: true
 toc_sticky: true
