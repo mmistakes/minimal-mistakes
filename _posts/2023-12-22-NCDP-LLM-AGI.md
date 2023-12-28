@@ -148,7 +148,7 @@ Overall, this is all fantastic news for innovation worldwide, as long as it is d
 
 ## 3.1 Humbling question for everyone
 
-I should perhaps establish my credibility (or lack thereof!). I've been thinking about artificial intelligence for around 30 years. I'm 41 years old now and in the 1990s, I was interested in how bots were programmed in games like Quake, Poker and Go. That's how I learned about `malloc()`. Later on, I went to McGill University and studied under Shie Mannor, Doina Precup, Benoit Boulet, Jeremy Cooperstock. In the early 2000s, the Natural Sciences and Engineering Research Council of Canada funded many PhD students/professors and included the likes of Geoffrey Hinton (deep learning), Joshua Bengio (also deep learning), and Rich Sutton (reinforcement learning). I was at the right place and perhaps just a few years early before everything blew up. I’m probably a little better in engineering than in math, and I’m probably a little better in business than in engineering! But my love for pure math runs all the way down.
+I should perhaps establish my credibility (or lack thereof!) first. I've been thinking about artificial intelligence for around 30 years. I'm 41 years old now and in the 1990s, I was interested in how bots were programmed in games like Quake, Poker and Go. That's how I learned about `malloc()` in my early teenage years. Later on, I went to McGill University and studied machine learning under Shie Mannor, Doina Precup, Benoit Boulet, Jeremy Cooperstock. In the early 2000s, the Natural Sciences and Engineering Research Council of Canada funded many PhD students/professors and included the likes of Geoffrey Hinton (deep learning), Joshua Bengio (also deep learning), and Rich Sutton (reinforcement learning). I was at the right place and perhaps just a few years early before things took off. I’m probably a little better in engineering than in math, and I’m probably a little better in business than in engineering! But my love for pure math runs all the way down.
 
 I have a decent network of friends who have been at this game for several decades, both in academia and in business, and nobody can speak with certainty about AGI. I do not believe that AGI is around the corner for a few reasons.
 
@@ -156,18 +156,12 @@ I have a decent network of friends who have been at this game for several decade
 
 Let's consider our intelligence, which emerges, it seems, from our [meat brains](https://en.wikipedia.org/wiki/They%27re_Made_Out_of_Meat), which is pretty funny. Perhaps a side by side comparison will help us put things in perspective:
 
-| Aspect                          | Human Brain                        | GPT-4                               |
+starting with soft
+
+| Soft Aspect | Human Brain                        | GPT-4                               |
 |---------------------------------|------------------------------------|-------------------------------------|
 | Training Time                   | Lifetime (continuous learning)     | Years (since inception of GPT models)|
-| Energy Consumption              | Around 20 Watts                    | Requires substantial computational resources (varies based on infrastructure)|
 | Learning Method                 | Online (real-time learning)        | Primarily offline (trained on a dataset, then updated periodically) |
-| Neurons                         | Approx. 86 billion neurons         | Not applicable (digital neural network) |
-| Connections per Neuron          | Approx. 1,000 to 10,000 synapses   | Not applicable (digital neural network) |
-| Total Parameters                | 86 to 860 trillion analogue connections         | 175 billion parameters (in GPT-4 model) |
-| Nature                          | Analog (biochemical processes)     | Digital (based on binary computation) |
-| Input/Output Neurons            | Approx. 86 billion (all are I/O)   | Input/Output defined by model architecture (not neuron-based) |
-| Affected by Biochemical Signals | Yes                                | No                                  |
-| Quantum Effects                 | Minimal impact                     | No (classical computing)             |
 | Fundamental Mechanism     | Neural Plasticity                  | Backpropagation with Gradient Descent      |
 | Learning Structure        | Hebbian Learning, Multiple Memory Systems | Transformer Architecture               |
 | Context Understanding     | Context derived from sensory inputs and cognitive processes | Self-Attention Mechanism              |
@@ -176,7 +170,22 @@ Let's consider our intelligence, which emerges, it seems, from our [meat brains]
 | Sub-Processors            | Specialized brain regions for different functions | Multi-Head Attention                      |
 | Regularization            | Sleep, synaptic pruning, etc.      | Dropout, Label Smoothing                   |
 | Adaptation and Specialization | Lifelong learning and adaptation based on experiences | Fine-Tuning and Transfer Learning       |
+
+ and hard
+
+| Hard Aspect                          | Human Brain                        | GPT-4                               |
+|---------------------------------|------------------------------------|-------------------------------------|
+| Energy Consumption              | Around 20 Watts                    | Requires substantial computational resources (varies based on infrastructure)|
+| Neurons                         | Approx. 86 billion neurons         | Not applicable (digital neural network) |
+| Connections per Neuron          | Approx. 1,000 to 10,000 synapses   | Not applicable (digital neural network) |
+| Total Parameters                | 86 to 860 trillion analogue connections         | 175 billion parameters (in GPT-4 model) |
+| Nature                          | Analog (biochemical processes)     | Digital (based on binary computation) |
+| Input/Output Neurons            | Approx. 86 billion (all are I/O)   | Input/Output defined by model architecture (not neuron-based) |
+| Affected by Biochemical Signals | Yes                                | No                                  |
+| Quantum Effects                 | Minimal impact                     | No (classical computing)             |
 | Activation/Processing Functions | Various neurotransmitters and neurochemical processes | Activation Functions like GELU          |
+
+
 
 In addition, GPT-4 has a context window of 128K tokens, while each of our neurons are fully I/O capable. Notably:
 
@@ -190,9 +199,5 @@ In addition, GPT-4 has a context window of 128K tokens, while each of our neuron
 | Motor Control         | Motor neurons                       | Approx. 500,000                     |
 | Autonomic Functions   | Neurons in the autonomic system     | Estimated several hundred thousand |
 | Pain and Temperature  | Nociceptors and thermoreceptors     | Estimated several hundred thousand |
-
-# 3.3 AGI - DRAFT
-
-This is making me think about, you know, artificial versus natural. Could we compare a little bit artificial intelligence to like a car versus leopard or an eagle, right? If we try to make a comparison that artificial general intelligence is similar to, let's say, the speed of running down a track, then the car will never be a leopard. It'll never be as complicated, etc. But in terms of useful work to go down a track, the car always beats the leopard. Similarly, the airplane jet always beats the the eagle. So, in that sense, the artifice and the brutality of the artificial technology that we build simplifies the rules of the game such that it can perform an action much more efficiently. We organize material and physics in a way that it achieves, whether it's driving down a line or whether it's flying across the air, much faster. But it makes me wonder, is artificial intelligence, artificial general intelligence, similarly, can it also be narrowly defined as moving into a certain dimension, like going from point A to point B, except that it's around for the dimension of cognition, which kind of asks fundamental question about what is cognition? Because the key word here is general, right? Is general cognition something that fundamentally could be brought down to just a few dimensions? Because it sounds to me like, by definition, general artificial intelligence is always going to be that which goes into high dimension. So, any form of artificial intelligence, by definition, would be bounded by the dimension that it supports. A bit like, okay, the car can go faster than the leopard, but it cannot climb a tree, right? And no matter how advanced we make the machine, there's always going to be something about the leopard that it can do that the car cannot do. And in the same way, it's very unlikely, maybe even mathematically, I hope, or something like this, like it could be proven that you'll never have artificial general intelligence by the same argument. Is there something to that or am I just not making sense?
 
 
