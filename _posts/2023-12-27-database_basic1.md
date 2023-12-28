@@ -31,6 +31,22 @@ date: 2023-12-27
 출력
 - 생성한 데이터를 읽음 **R**ead
 
+|id|title|description|
+|:--:|:--:|:--:|                   
+|1|MySQL|MySQL is..|
+|2|Oracle|Oracle is..|
+(3 column, 2 row)
+
+**table, 표**
+
+**row, record, 행** | 데이터 하나하나, 데이터 자체
+
+**column, 열** | 데이터의 타입, 데이터 구조
+
+
+<br>
+<br>
+
 ## 스키마와 테이블의 관계
 
 폴더와 파일같은 관계
@@ -38,6 +54,9 @@ date: 2023-12-27
 스키마는 테이블들의 집합
 
 데이터베이스는 스키마들의 집합
+
+<br>
+<br>
 
 
 # File, Spreadsheet
@@ -54,6 +73,9 @@ File에 대비해서 `Spreadsheet`는 `Database`로 가는 길목에 있음
 
 일반적으로 `Spreadsheet`를 `Database`로 보지는 않지만 넓게 보면 `Database`적인 특성을 가지고 있음
 
+<br>
+<br>
+
 # DBMS
 
 데이터베이스 시장의 절대 강자는 `Relational DBMS`임.
@@ -67,6 +89,9 @@ File에 대비해서 `Spreadsheet`는 `Database`로 가는 길목에 있음
 공통적인 부분을 배우게 된다면 데이터베이스의 본질적인 것일 가능성이 크고 
 
 다른 특성들을 배우게 된다면 데이터베이스가 꼭 이래야 되는 것은 아니구나 하는 고정관념을 환기 시켜주는 역할을 해줄 것이다.
+
+<br>
+<br>
 
 # RDBMS vs Spreadsheet
 
