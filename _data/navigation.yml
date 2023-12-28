@@ -1,13 +1,22 @@
 # main links
 main:
-  - title: "About & Projects"
+  - title: "About"
     url: /about/
 
-  - title: "Lists"
-    url: /things-i-like/
+  # - title: "Lists"
+  #   url: /things-i-like/
+
+  - title: 🎨 Doodling Data
+    url: /categories/#data/
+
+  - title: 🤖 Tech Stuff
+    url: /categories/#tech/
+
+  - title: 📚 Excursus
+    url: /categories/#excursus/
 
   - title: Quotes
     url: /quotes/
 
-  - title: "Data Newsletter"
-    url: "https://doodlingdata.substack.com/"
+  - title: "Newsletter"
+    url: "https://buttondown.email/martinapugliese"
