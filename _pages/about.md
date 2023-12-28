@@ -16,7 +16,7 @@ I am a scientist by background and I've been working in data science for many ye
 
 ## The longer version
 
-My name is Martina Pugliese, I am a physicist by studies and work in/with **data science** (since the glorious times it was uncool, the pre-2010s era). I love **science**, you can read some of my thinking and journey in this <a href="{{ site.url }}/crossing-the-barriers" target="_blank">old post</a>. On the side, I do **hand-drawn data vizs** which I share on my [Substack](https://doodlingdata.substack.com/). Since I started it, it has become my primary writing platform, so this blog may not host many posts anymore.
+My name is Martina Pugliese, I am a physicist by studies and work in/with **data science** (since the glorious times it was uncool, the pre-2010s era). I love **science**, you can read some of my thinking and journey in this <a href="{{ site.url }}/crossing-the-barriers" target="_blank">old post</a>. On the side, I do **hand-drawn data vizs** which I share on my [newsletter](https://buttondown.email/martinapugliese). Since I started it, it has become my primary writing platform, so this blog may not host many posts anymore.
 
 I'm Italian and a great fan of **linguistics** and languages, some of my research when in academia was indeed about the evolution of natural languages - I've done a PhD in Physics with a focus on quantitative Linguistics, which may seem like a weird coupling but it's actually a very fruitful one: coming from the Physics of complex systems you can apply methodologies and frameworks to other disciplines and help investigate open questions quantitatively. If you want to know more about my research you can have a look at my [scientific publications](https://github.com/martinapugliese/martinapugliese/blob/main/scientific_publications.md){:target="_blank"}.
 
@@ -32,7 +32,7 @@ These are things I'm curating at the moment or perennial works-in-progress.
 
 ### Doodling Data Cards
 
-[**Doodling Data**](https://doodlingdata.substack.com/) is my newsletter (hosted on Substack), I create hand-drawn data visualisations and write data stories. It will expand in time with different types of content related to the whole world of data.
+[**Doodling Data**](https://buttondown.email/martinapugliese) is my newsletter (hosted on Buttondown), I create hand-drawn data visualisations and write data stories. I also write about more nerdy/techy stuff.
 
 ## Speaking
 
