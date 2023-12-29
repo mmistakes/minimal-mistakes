@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "contrast" # "default" # "air", "aqua", "contrast", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Be Bright and bright"
+title                    : "be Bright and bright"
 title_separator          : "|"
 subtitle                 : "민혁의 개발 블로그."
 name                     : "minhyeok"
@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Dev. 김민혁"
+  name             : "민혁"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "총명하고 빛나는"
+  bio              : "총명하며 빛나라"
   location         : "South Korea"
   email            : "hyeok8920@gmail.com"
   links:
