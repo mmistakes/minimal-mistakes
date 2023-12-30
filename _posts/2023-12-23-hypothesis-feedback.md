@@ -1,6 +1,6 @@
 ---
 layout: single
-title: '코멘토 3차 과제 피드백 '
+title: '코멘토 SQL 입문부터 활용까지 3주차 피드백과 회고 '
 categories: 코멘토
 tag: [코멘토]
 author_profile: false
