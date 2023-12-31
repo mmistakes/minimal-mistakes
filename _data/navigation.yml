@@ -9,14 +9,17 @@ main:
   - title: 🎨 Doodling Data
     url: /categories/#data/
 
-  - title: 🤖 Tech Stuff
+  - title: 🤖 Tech
     url: /categories/#tech/
 
   # - title: 📚 Excursus
   #   url: /categories/#excursus/
 
+  - title: ✨ Awesome Material
+    url: /material/
+
   - title: Quotes
     url: /quotes/
 
-  - title: "Newsletter"
+  - title: ✉️ Newsletter
     url: "https://buttondown.email/martinapugliese"
