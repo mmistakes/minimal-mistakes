@@ -4,14 +4,14 @@ services:
 
   jekyll:
     container_name: jekyll
-    image: jekyll/jekyll:4.2.0
+    image: jekyll/jekyll:4.2.2
     volumes:
       - ./:/srv/jekyll:z
     ports:
       - 4000:4000
     networks:
       - troccoli-github-io
-    command: jekyll serve --watch --force_polling --drafts --unpublished --incremental
+    command:   jekyll serve --watch --force_polling --drafts --future --unpublished --incremental
 
   ngrok:
     container_name: ngrok
