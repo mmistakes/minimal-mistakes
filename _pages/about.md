@@ -2,15 +2,15 @@
 layout: single
 title:  "About"
 author_profile: true
-date:   2023-12-01 20:49:38 +0000
+date:   2024-01-01 20:49:38 +0000
 categories: jekyll update
 ---
 
-## Hi there, I'm Chris! 👋
+# Hi there, I'm Chris! 👋
 
 I am a Software Development Engineer interested in Robotics, AI, and Blockchain with a ❤️ for DevOps.
 
-Connect with me on: 
+Connect with me on:
 
 [![Website Badge](https://img.shields.io/badge/Website-3b5998?style=flat&logo=google-chrome&logoColor=white)](https://cschindlbeck.github.io/)
 [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chrisschindlbeck/)
@@ -71,6 +71,7 @@ Connect with me on:
   <img alt="GitHub Pages" src="https://img.shields.io/badge/GitHub%20Pages-327FC7.svg?logo=github&logoColor=white">
   <img alt="gitlab" src="https://img.shields.io/badge/GitLab-330F63?style=flat&logo=gitlab&logoColor=white" />
   <img alt="gitlab_ci" src="https://img.shields.io/badge/GitLab%20CI-%23181717.svg?style=flat&logo=gitlab&logoColor=white" />
+  <img alt="azure_devops" src="https://img.shields.io/badge/Azure_DevOps-0078D7?style=flat&logo=azure-devops&logoColor=white" />
   <img alt="ansible" src="https://img.shields.io/badge/ansible-%231A1918.svg?style=flat&logo=ansible&logoColor=white" />
 </p>
 
@@ -135,7 +136,7 @@ Connect with me on:
     1250 ┤ ╰╯
 
 User: christopsy666, Rating type: Bullet on lichess.org
-Last update: 01.11.2023 01:22:28
+Last update: 28.12.2023 14:37:14
 </code>
 </pre>
 Lichess stats generated via [lichess-ascii-rating-tracker](https://github.com/cschindlbeck/lichess-ascii-rating-tracker.git).
