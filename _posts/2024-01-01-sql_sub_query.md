@@ -288,6 +288,8 @@ WHERE SAL > (SELECT AVG(S.SAL)
 - 서브쿼리에서 메인쿼리의 칼럼과 서브쿼리의 칼럼 간 비교가 이루어짐
   - 메인쿼리에서는 서브쿼리의 칼럼 사용 불가
 
+<br>
+
 ### 단일행 다중칼럼 서브쿼리
 
 - 서브쿼리의 결과로 여러 칼럼, 단일행이 반환됨
@@ -301,6 +303,8 @@ WHERE (HEIGHT, POSITION) =
     FROM PLAYER
     WHERE PLAYER_ID = '2007188');
 ```
+
+<br>
 
 ### 다중행 다중칼럼 서브쿼리
 
@@ -395,7 +399,7 @@ FROM EMP A;
   DROP VIEW V_PLAYER_TEAM
   ```
 - 생성된 뷰는 테이블과 동일한 형태로 사용 가능
-- 파싱 시점에 DBMS가 내주벚긍로 뷰에 해당하는 DDL을 SQL문으로 재작성해줌
+- 파싱 시점에 DBMS가 내부적으로 뷰에 해당하는 DDL을 SQL문으로 재작성해줌
   ```sql
   SELECT PLAYER_NAME, BACK_NO, TEAM_ID, TEAM_NAME
   FROM V_PLAYER_TEAM
@@ -448,9 +452,9 @@ FROM V_EMP_DEPT;
 
 ## Inline View
 
-- FROM 절에서 사용되는 서브쿼리
+- **FROM 절에서 사용**되는 서브쿼리
 - 실행 순간에만 임시적으로 생성되며 DB에 저장되지 않음
-  - 인라인 뷰(Inline View) = 동적 뷰(Dynamic View) / 쿼리가 끝나면 날라감
+  - 인라인 뷰(Inline View) = 동적 뷰(Dynamic View) / **쿼리가 끝나면 날라감**
   - 일반 뷰 = 정적 뷰(Static View) / 저장이 됨
 - Inline View의 SELECT 문에서 정의된 칼럼만 메인쿼리에서 사용 가능
   - cf) 일반적으로 서브쿼리에서 정의된 칼럼은 메인쿼리에서 사용 불가능함
