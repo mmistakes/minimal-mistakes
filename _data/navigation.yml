@@ -3,7 +3,7 @@ main:
   # - title: "Get to know me"
   #   url: https://www.wikipedia.org/
   - title: "About"
-    url: https://www.wikipedia.org/
+    url: /_pages/about.md/
   - title: "Blogs"
     url: /_posts/
   # - title: "Sample Collections"
