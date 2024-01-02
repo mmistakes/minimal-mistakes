@@ -1,7 +1,7 @@
 ---
 layout: single
-title: '플레이 데이터 1주차 회고 '
-categories: 플레이데이터
+title: '플레이데이터 1주차 회고 '
+categories: playdata
 tag: [회고]
 author_profile: false
 published: true
