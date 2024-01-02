@@ -1,4 +1,18 @@
-## About me
+---
+title: About Me
+permalink: /about/
+---
+
+<!-- # About Me
+
+Hello, I'm [Your Name]. Welcome to my personal space on the internet.
+
+
+## Contact
+
+Feel free to reach out to me on [social media](#) or via email at [your@email.com]. -->
+
+## About me 
 
 Hello! thanks for visiting my personal website! I am Abhijeet, working as a Data Analyst Engineer at SLB (Schlumberger) working on Statistical Model, Data Analysis amonh other things. 
 

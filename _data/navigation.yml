@@ -3,7 +3,7 @@ main:
   - title: "Get to know me"
     url: /pages/about.md/
   - title: "About"
-    url: /pages/about.md/
+    url: /about/
   - title: "Blogs"
     url: /posts/
   # - title: "Sample Collections"
