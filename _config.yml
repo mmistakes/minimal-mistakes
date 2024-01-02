@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "JJuni"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Kim jjuni"
 description              : "An amazing website."
 url                      : "https://khj5877.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
