@@ -7,10 +7,10 @@ main:
         url: /projects/
       - title: 설계 도면 인식 과제
         url: /projects/pnid/
-      - title: 법률 문서 분석 과제
-        url: /projects/itb/
+      # - title: 법률 문서 분석 과제
+      #   url: /projects/itb/
   - title: "Study"
-    url: /studies/
+    url: studies/
   - title: "Tag"
     url: /tags/
   - title: "About Me"
@@ -24,8 +24,8 @@ docs:
     children:
       - title: "- 설계 도면 인식"
         url: /projects/pnid/
-      - title: "- 법률 문서 분석"
-        url: /projects/itb/
+      # - title: "- 법률 문서 분석"
+      #   url: /projects/itb/
 
 docs1:
   - title: "📐 설계 도면 인식"
@@ -44,12 +44,12 @@ docs1:
       - title: "- 라인 인식"
         url: /projects/pnid/06
 
-docs2:
-  - title: "⚖️ 법률 문서 분석"
-    url: /projects/itb/
-    children:
-      - title: "- 프로젝트 배경"
-        url: /projects/itb/01
-      - title: "- ITB2"
-        url: /projects/itb/02
+# docs2:
+#   - title: "⚖️ 법률 문서 분석"
+#     url: /projects/itb/
+#     children:
+#       - title: "- 프로젝트 배경"
+#         url: /projects/itb/01
+#       - title: "- ITB2"
+#         url: /projects/itb/02
   
