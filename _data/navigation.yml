@@ -1,11 +1,11 @@
 # main links
 main:
-  # - title: "Get to know me"
-  #   url: https://www.wikipedia.org/
+  - title: "Get to know me"
+    url: /../_pages/about.md/
   - title: "About"
-    url: /_pages/about.md/
+    url: /../_pages/about.md/
   - title: "Blogs"
-    url: /_posts/
+    url: /../_posts/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
