@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
-      #with: 
+      uses: actions/checkout@v4
+      #with:
       #repository: cschindlbeck/cv
       #ref: refs/heads/main
     - name: About
