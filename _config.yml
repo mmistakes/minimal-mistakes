@@ -12,13 +12,13 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Love2J"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title                    : "jaehee831"
+title_separator          : "|"
+subtitle                 : "Be Creative" # site tagline that appears below site title in masthead
 name                     : "Jaehee Lee"
 description              : "하고 싶은 건 다 하는 개발자"
 url                      : "https://jaehee831.github.io"
