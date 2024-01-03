@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Get to know me"
-    url: /pages/about.md/
+    url: /about/
   - title: "About"
     url: /about/
   - title: "Blogs"
