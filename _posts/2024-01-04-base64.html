@@ -1,0 +1,99 @@
+---
+layout: single
+title:  "Base64 인코딩 디코딩"
+future : true
+published : true
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Base64 인코딩/디코딩</title>
+  <style>
+    /*body {*/
+    /*  font-family: Arial, sans-serif;*/
+    /*  margin: 0;*/
+    /*  padding: 0;*/
+    /*  display: flex;*/
+    /*  justify-content: center;*/
+    /*  align-items: center;*/
+    /*  height: 100vh;*/
+    /*  background-color: #f4f4f4;*/
+    /*}*/
+    .container {
+      width: 60%;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      height: 100px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .swap-button {
+      background-color: #007bff;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      display: inline-block;
+      margin: 5px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <textarea id="inputText" placeholder="여기에 텍스트를 입력하세요..."></textarea>
+  <div>
+    <button onclick="encodeText()">인코딩</button>
+    <button onclick="decodeText()">디코딩</button>
+    <button onclick="swapText()" class="swap-button">&#x2195;</button>
+  </div>
+  <textarea id="outputText" placeholder="결과가 여기에 표시됩니다..."></textarea>
+</div>
+
+<script>
+  function encodeText() {
+    var input = document.getElementById("inputText").value;
+    var encoded = btoa(input);
+    document.getElementById("outputText").value = encoded;
+  }
+
+  function decodeText() {
+    var input = document.getElementById("inputText").value;
+    try {
+      var decoded = atob(input);
+      document.getElementById("outputText").value = decoded;
+    } catch(e) {
+      document.getElementById("outputText").value = "잘못된 Base64 문자열입니다.";
+    }
+  }
+
+  function swapText() {
+    var inputText = document.getElementById("inputText").value;
+    var outputText = document.getElementById("outputText").value;
+
+    document.getElementById("inputText").value = outputText;
+    document.getElementById("outputText").value = inputText;
+  }
+</script>
+</body>
+
+</html>
