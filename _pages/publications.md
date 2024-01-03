@@ -12,7 +12,7 @@ See full publication list [here](https://scholar.google.com/citations?user=xCR8n
 ### 2024
 
 * **MultiSipt: Multimodal Sript Learning for Supporting Open Domain Everyday Tasks**<br>
-  Jingyuan Qi*, **Minqian Liu\***, Ying Shen, Zhiyang Xu, Lifu Huang
+  Jingyuan Qi*, **Minqian Liu\***, Ying Shen, Zhiyang Xu, Lifu Huang<br>
   In ***AAAI***, 2024. \[[paper](https://arxiv.org/abs/2310.04965)] \[[code](https://github.com/VT-NLP/MultiScript)]
 
 ### 2023
