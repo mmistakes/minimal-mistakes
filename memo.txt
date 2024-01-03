@@ -1,0 +1,2 @@
+cd C:\Users\82104\Desktop\Study\git-blog\khj5877.github.io
+bundle exec jekyll serve
