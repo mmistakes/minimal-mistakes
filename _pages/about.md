@@ -22,11 +22,14 @@ My research interests lie in the field of **natural language processing** and it
 <!-- 3) **Natural language generation:** text summarization, machine translation, and automatic evaluation for text generation. <br> -->
 
 ## News
+**\[2023.12]** One paper is accepted by AAAI 2024. Congrats to my co-authors! <br>
+**\[2023.10]** One paper is accepted by EMNLP 2023 (Oral). Congrats to my co-authors! <br>
+**\[2023.09]** Our team HokieBot won **Third Place** in scientific innovation of Amazon Alexa Prize SocialBot Grand Challenge 5 (awarded $25,000)! Check out the [news](https://www.amazon.science/alexa-prize/socialbot-grand-challenge/2022) from Amazon Science. <br>
 **\[2023.05]** I'm thrilled to start my Applied Scientist internship at AWS AI Lab in this summer! <br>
 **\[2023.05]** Our work on continual information extraction is accepted by ACL 2023 (Findings). Great thanks to all my co-authors! <br>
-**\[2022.10]** Our team HokieBot has been selected as one of 9 teams to participate in the [Alexa Prize SocialBot Grand Challenge](https://www.amazon.science/alexa-prize/socialbot-grand-challenge). <br>
+<!--  **\[2022.10]** Our team HokieBot has been selected as one of 9 teams to participate in the [Alexa Prize SocialBot Grand Challenge](https://www.amazon.science/alexa-prize/socialbot-grand-challenge). <br>
 **\[2022.08]** Our work on [lifelong event detection](https://arxiv.org/abs/2204.07275) is accepted by COLING 2022. Great thanks to all my co-authors!<br>
-**\[2021.11]** Our team KnowledgeBot has been selected as one of 10 teams to participate in the [Alexa Prize SimBot Challenge](https://developer.amazon.com/alexaprize/challenges/current-challenge/simbot). <br>
+**\[2021.11]** Our team KnowledgeBot has been selected as one of 10 teams to participate in the [Alexa Prize SimBot Challenge](https://developer.amazon.com/alexaprize/challenges/current-challenge/simbot). <br> -->
 <!-- **\[2022.08]** Served as a PC member at AAAI 2023. <br> -->
 <!-- **\[2022.03]** Our Simbot team is featured on [VT News](https://vtx.vt.edu/articles/2022/03/virginia-tech-team-selected-as-finalist-in-alexa-prize.html)!<br>  -->
 <!-- **\[2020.07]** One paper accepted by ACM Multimedia 2020. Great thanks to all my co-authors! -->
