@@ -9,7 +9,17 @@ author_profile: true
 
 See full publication list [here](https://scholar.google.com/citations?user=xCR8nrwAAAAJ&hl=en) (* indicates equal contribution)
 
+### 2024
+
+* **MultiSipt: Multimodal Sript Learning for Supporting Open Domain Everyday Tasks**<br>
+  Jingyuan Qi*, **Minqian Liu\***, Ying Shen, Zhiyang Xu, Lifu Huang
+  In ***AAAI***, 2024. \[[paper](https://arxiv.org/abs/2310.04965)] \[[code](https://github.com/VT-NLP/MultiScript)]
+
 ### 2023
+
+* **X-Eval: Generalizable Multi-aspect Text Evaluation via Augmented Instruction Tuning with Auxiliary Evaluation Aspects**<br>
+  **Minqian Liu**, Ying Shen, Zhiyang Xu, Yixin Cao, Eunah Cho, Vaibhav Kumar, Reza Ghanadan, Lifu Huang<br>
+  In *Arxiv*, 2023.  \[[paper](https://arxiv.org/abs/2311.08788)] \[[code](https://github.com/VT-NLP/XEval)]
 
 * **Teamwork Is Not Always Good: An Empirical Study of Classifier Drift in Class-incremental Information Extraction**<br>
   **Minqian Liu**, Lifu Huang<br>
@@ -17,7 +27,7 @@ See full publication list [here](https://scholar.google.com/citations?user=xCR8n
 
 * **The Art of SOCRATIC QUESTIONING: Zero-shot Multimodal Reasoning with Recursive Thinking and Self-Questioning**<br>
   Jingyuan Qi\*, Zhiyang Xu\*, Ying Shen, **Minqian Liu**, Di Jin, Qifan Wang, Lifu Huang<br>
-  In *Arxiv*, 2023.  \[[paper](https://arxiv.org/abs/2305.14999)]
+  In ***EMNLP** (Oral)*, 2023.  \[[paper](https://arxiv.org/abs/2305.14999)] \[[code](https://github.com/VT-NLP/SOCRATIC-QUESTIONING)]
 
 ### 2022 and Before
 
