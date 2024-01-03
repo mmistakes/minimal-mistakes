@@ -104,7 +104,7 @@ analytics:
 # Site Author
 author:
   name: "GennYoon"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar: "/assets/images/avatar.jpeg"
   bio: "GennYoon의 블로그입니다."
   location: "South Korea"
   email:
@@ -127,6 +127,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/genn.dev.log/"
+    # - label: "Youtube"
+    #   icon: "fab fa-fw fa-youtube"
+    #   url: "https://www.instagram.com/genn.dev.log/"
 
 # Site Footer
 footer:
@@ -281,5 +284,9 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: true
+      toc_sticky: true
+      toc_label: 목차
+      toc_icon: fas fa-utensils
 
 date_format: "%Y-%m-%d"
