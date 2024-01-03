@@ -14,9 +14,15 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-      #with:
-      #repository: cschindlbeck/cv
-      #ref: refs/heads/main
+    - name: Git config
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    - if: ${{ github.event_name == 'pull_request' }}
+      name: Fetch and reset hard to origin on a PR
+      run: |
+        git fetch origin ${{ github.event.pull_request.head.ref }}
+        git reset --hard origin/${{ github.event.pull_request.head.ref }}
     - name: Build Resume
       run: |
         # Cloning via PAT
@@ -26,13 +32,16 @@ jobs:
         cd ..
         cp cv/resume_cschindlbeck.pdf assets/docs/resume_cschindlbeck.pdf
         rm -rf cv
-    - name: Push code
+    - name: Add and commit
       run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git status
-        git add -f assets/docs/resume_cschindlbeck.pdf
+        git add assets/docs/resume_cschindlbeck.pdf
         # Prevent empty add to result in error
         git diff-index --quiet HEAD || git commit -m "Updated Resume"
-        git pull origin ${GITHUB_REF##*/} --rebase
+    - if: ${{ github.event_name == 'pull_request' }}
+      name: Push on PR
+      run: |
+        git push origin HEAD:${{ github.event.pull_request.head.ref }}
+    - if: ${{ github.event_name == 'push' }}
+      name: Push on PR
+      run: |
         git push

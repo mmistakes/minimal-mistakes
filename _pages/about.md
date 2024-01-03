@@ -2,10 +2,9 @@
 layout: single
 title:  "About"
 author_profile: true
-date:   2024-01-02 20:49:38 +0000
+date:   2024-01-05 20:49:38 +0000
 categories: jekyll update
 ---
-
 # Hi there, I'm Chris! 👋
 
 I am a Software Development Engineer interested in Robotics, AI, and Blockchain with a ❤️ for DevOps.
@@ -136,7 +135,7 @@ Connect with me on:
     1250 ┤ ╰╯
 
 User: christopsy666, Rating type: Bullet on lichess.org
-Last update: 01.01.2024 01:33:58
+Last update: 03.01.2024 19:13:26
 </code>
 </pre>
 Lichess stats generated via [lichess-ascii-rating-tracker](https://github.com/cschindlbeck/lichess-ascii-rating-tracker.git).

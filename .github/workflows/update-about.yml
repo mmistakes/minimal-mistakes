@@ -14,10 +14,16 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-      #with:
-      #repository: cschindlbeck/cv
-      #ref: refs/heads/main
-    - name: About
+    - name: Git config
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    - if: ${{ github.event_name == 'pull_request' }}
+      name: Setup for PR
+      run: |
+        git fetch origin ${{ github.event.pull_request.head.ref }}
+        git reset --hard origin/${{ github.event.pull_request.head.ref }}
+    - name: Update about and about_template
       run: |
         # replace date, time, and time offset in template
         sed -ri "s/[12][0-9]{3}-[01][0-9]-[0-3][0-9]/$(date '+%Y-%m-%d')/g" _pages/about_template.md
@@ -26,13 +32,17 @@ jobs:
         # clone cschindlbeck, get about and concatenate it to template
         git clone https://github.com/cschindlbeck/cschindlbeck.git
         cat _pages/about_template.md cschindlbeck/README.md > _pages/about.md
-    - name: Push code
+    - name: Add and commit the changed files
       run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        # Force add since README is on gitignore
         git add _pages/about.md
         git add _pages/about_template.md
         # Prevent empty add to result in error
         git diff-index --quiet HEAD || git commit -m "Updated about"
+    - if: ${{ github.event_name == 'pull_request' }}
+      name: Push on PR
+      run: |
+        git push origin HEAD:${{ github.event.pull_request.head.ref }}
+    - if: ${{ github.event_name == 'push' }}
+      name: Push code on push event
+      run: |
         git push
