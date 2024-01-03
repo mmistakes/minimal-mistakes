@@ -4,6 +4,8 @@ main:
     url: /categories/
   - title: "Tag"
     url: /tags/
+  - title: "By Year"
+    url: /year-archive/
   - title: "Search"
     url: /search/
   # - title: "About"
@@ -22,3 +24,9 @@ docs:
         url: /categoires/
       - title: "Tag"
         url: /tags/
+
+counts:
+  - title: "카테고리"
+    use: true
+  - title: "태그"
+    use: true
