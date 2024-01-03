@@ -13,7 +13,13 @@ Hello, I'm [Your Name]. Welcome to my personal space on the internet.
 Feel free to reach out to me on [social media](#) or via email at [your@email.com]. -->
 
 ## About me 
-
+feature_row_left:
+  - image_path: /assets/splash/cover.jpg
+    title: "Me"
+    excerpt: "Abhijeet"
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
 Hello! 
 thanks for visiting my personal website! 
 I am Abhijeet, working as a Data Analyst Engineer at SLB (Schlumberger) working primarily on Statistical Model, Data Analysis. 
