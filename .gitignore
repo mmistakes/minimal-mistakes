@@ -27,3 +27,9 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/markdown-navigator.xml
+.idea/markdown-navigator-enh.xml
+.idea/khj5877.github.io.iml
