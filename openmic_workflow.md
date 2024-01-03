@@ -23,7 +23,7 @@ for [announcements](_drafts/open-mic-announcement-template.markdown). Templates 
 contain instructions:
 
 - CREATE A COPY TO THE _POSTS FOLDER AND RENAME IT TO [date]-[name].markdown and then follow instructions in it how it
-  shall look like. Use the current date for the file name, otherwise it will not be displayed.
+  shall look like. **Use the current date for the file name, otherwise it will not be displayed.**
 - Create new post both for announcement and past session.
 - Create a **PULL REQUEST** and send it for **REVIEW** and **MERGE**
 
