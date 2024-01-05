@@ -20,7 +20,7 @@ future                   : true
 locale                   : "en-US"
 title                    : "KWON JJAZZ"
 title_separator          : "|"
-subtitle                 : #"subtitle"
+subtitle                 : "On a winning streak"
 name                     : "kwonjjazz"
 description              : #"description"
 url                      : "https://kwonjjazz.github.io"
