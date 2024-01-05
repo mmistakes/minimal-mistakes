@@ -18,14 +18,14 @@ minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon
 locale: "ko-KR"
 title: "GennYoon의 블로그"
 title_separator: "|"
-subtitle: "small positive action"
+subtitle: ""
 name: "GennYoon"
 description: "GennYoon의 블로그 입니다."
 url: "https://gennyoon.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "GennYoon/GennYoon.github.io"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: "/assets/images/avatar.jpeg"
+logo: "/assets/images/logo.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: true # true, false (default)
 words_per_minute: 200
