@@ -1,5 +1,5 @@
 ---
-title: "Semantic Web - What Is Coming in 2024?"
+title: "Upcoming Open Mic - Semantic Web, What Is Coming in 2024?"
 categories: [Open Mic Announcement, Open Mic]
 ---
 
