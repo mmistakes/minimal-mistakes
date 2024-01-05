@@ -1,14 +1,12 @@
 ---
 layout: single
-title: "MacOS - OH MY ZSH Setup (2/3)"
+title: "MacOS - OH MY ZSH Setup (2/5)"
 category: setup
 tag: [macos, setup, zsh]
 author_profile: false
 sidebar:
   nav: counts
 typora-root-url: ../
-
-
 
 ---
 
@@ -43,7 +41,7 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ### Download Resource
 
-[다운로드](https://github.com/GennYoon/iTerm)
+<a href="https://github.com/GennYoon/iTerm" target="_blank" rel="noreferrer noopener">다운로드</a>
 
 위의 링크는 필자가 사용하는 테마와 폰트로 `3024 Night Theme`와 `MesloLGS NF Font`, `D2 Coding Font`가 올라가있습니다.  자신만의 설정을 위해 찾는 것이 아니라면 사용해보세요.
 
@@ -51,7 +49,7 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ### Font 설치 및 변경
 
-ZSH_THEME를 변경하면 Command에 아이콘이 깨진듯하게 보입니다.  [D2Coding Font](https://github.com/naver/d2codingfont)의 폰트를 설치해줍니다.    서체 설치 이후에 iTerm2에서 `Command + ,`를 눌러서 Profile > Text > Font에서 D2coding Font를 선택해줍니다.
+ZSH_THEME를 변경하면 Command에 아이콘이 깨진듯하게 보입니다.  <a href="https://github.com/naver/d2codingfont" target="_blank" rel="noreferrer noopener">D2Coding Font</a> 의 폰트를 설치해줍니다.    서체 설치 이후에 iTerm2에서 `Command + ,`를 눌러서 Profile > Text > Font에서 D2coding Font를 선택해줍니다.
 
 ![iTerm2 Font Setting](/images/2024-01-03-macos-setup2/iTerm2 Font Setting.png)
 
@@ -59,7 +57,7 @@ ZSH_THEME를 변경하면 Command에 아이콘이 깨진듯하게 보입니다. 
 
 ### Theme 변경
 
-테마는 [iTerm2 Color Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes)에서 선택해서 설치 후에 iTerm2에서 `Command + ,`를 눌러서 Profiles > Colors > Color Presets > Import 하여 원하는 Color Scheme를 선택해줍니다.
+테마는 <a href="https://github.com/mbadolato/iTerm2-Color-Schemes" target="_blank" rel="noreferrer noopener">iTerm2 Color Schemes</a>에서 선택해서 설치 후에 iTerm2에서 `Command + ,`를 눌러서 Profiles > Colors > Color Presets > Import 하여 원하는 Color Scheme를 선택해줍니다.
 
 ![iTerm2 Theme Setting](/images/2024-01-03-macos-setup2/iTerm2 Theme Setting.png)
 

@@ -1,15 +1,12 @@
 ---
 layout: single
-title: "MacOS - NVM (3/3)"
+title: "MacOS - NVM (3/5)"
 category: setup
 tag: [macos, setup, node, nvm]
 author_profile: false
 sidebar:
   nav: counts
 typora-root-url: ../
-
-
-
 
 ---
 
@@ -42,7 +39,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm install {node-version}
 ```
 
-여기서 {node-version}은 [NodeJS 공식사이트](https://nodejs.org/)에서 설치할 버전을 체크하거나 회사, 커뮤니티에서 사용하고 있는 Node 버전을 설정해주셔도 됩니다. ( 여러버전을 설치하고 변경 가능합니다. )
+여기서 {node-version}은 <a href="https://nodejs.org/" target="_blank" rel="noreferrer noopener">NodeJS 공식사이트</a>에서 설치할 버전을 체크하거나 회사, 커뮤니티에서 사용하고 있는 Node 버전을 설정해주셔도 됩니다. ( 여러버전을 설치하고 변경 가능합니다. )
 
 
 
