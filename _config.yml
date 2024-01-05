@@ -20,7 +20,7 @@ future                   : true
 locale                   : "en-US"
 title                    : "KWON JJAZZ"
 title_separator          : "|"
-subtitle                 : "On a winning streak"
+subtitle                 : "On a hot streak"
 name                     : "kwonjjazz"
 description              : #"description"
 url                      : "https://kwonjjazz.github.io"
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Jaehyun Kwon"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : " "
+  bio              : "Kyung Hee univ."
   location         : "Seoul, Korea"
   email            : #"topkjh300@gmail.com"
   links:
