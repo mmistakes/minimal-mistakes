@@ -26,21 +26,38 @@ vi Brewfile
 
 ```bash
 # Brewfile
+tap "AdoptOpenJDK/openjdk"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
 
 brew "cask"
-brew ""
+brew "ruby"
+brew "cocoapods"
 brew "git"
 brew "neovim"
 brew "nvm"
+brew "go"
+brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 brew "hashicorp/tap/terraform"
 
-cask "visual-studio-code"
-cask "notion"
+cask "adoptopenjdk8"
+cask "slack"
+cask "1password"
+cask "typora"
+cask "obsidian"
+cask "iterm2"
+cask "google-chrome"
+cask "postman"
+cask "flutter"
 cask "docker"
+cask "visual-studio-code"
+cask "android-studio"
+cask "notion"
+
+
+
 ```
 
 위의 내용을 모두 작성 후 저장합니다.
