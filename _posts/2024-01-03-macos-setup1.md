@@ -55,9 +55,6 @@ cask "docker"
 cask "visual-studio-code"
 cask "android-studio"
 cask "notion"
-
-
-
 ```
 
 위의 내용을 모두 작성 후 저장합니다.
