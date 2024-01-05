@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "MacOS - Homebrew Setup & App Store (1/3)"
+title: "MacOS - Homebrew Setup & App Store (1/5)"
 category: setup
 tag: [macos, setup]
 author_profile: false
@@ -8,10 +8,9 @@ sidebar:
   nav: counts
 typora-root-url: ../
 
-
 ---
 
-### Homebrew 설치 ([링크](https://brew.sh/))
+### Homebrew 설치 (<a href="https://brew.sh/" target="_blank" rel="noreferrer noopener">링크</a>)
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
