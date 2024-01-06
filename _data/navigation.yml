@@ -29,15 +29,15 @@ sidebar-category:
   - title: "💻 Development"
     children:
       - title: "MacOS"
-        url: "/categories/macos/"
+        url: "/categories/#macos/"
         category: "macos"
   - title: "Life"
     children:
       - title: "Daily"
-        url: "/categories/daily/"
+        url: "/categories/#daily/"
         category: "daily"
   - title: "Docs"
     children:
       - title: "Docs"
-        url: "/categories/docs/"
+        url: "/categories/#docs/"
         category: "docs"
