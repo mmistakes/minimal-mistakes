@@ -20,6 +20,7 @@ _**This list is continuously updated.**_
 * [**Seeing Theory**]("https://seeing-theory.brown.edu/index.html), a visual introduction to probability and statistics, a site built by students at Brown University.
 * *W Chen*, [**Probability Cheatsheet**](https://static1.squarespace.com/static/54bf3241e4b0f0d81bf7ff36/t/55e9494fe4b011aed10e48e5/1441352015658/probability_cheatsheet.pdf).
 * [**The Scipy Lecture Notes**](http://scipy-lectures.org/index.html), brilliant and obviously focussed on Python, but useful for general concepts too.
+* [book] W Mckinney, [**Python for Data Analysis**](https://wesmckinney.com/book/) (O'Reilly 2022), freely available online.
 
 ## 🤖 Machine Learning - general material
 
@@ -28,14 +29,16 @@ _**This list is continuously updated.**_
 * [book] *C Molnar*, [**Interpretable Machine Learning**](https://christophm.github.io/interpretable-ml-book/) (Leanpub 2019), freely available.
 * [book] *T Hastie, R Tibshirani, J Friedman*, [**The Elements of Statistical Learning**](https://hastie.su.domains/Papers/ESLII.pdf) (Springer 2001), freely available.
 * [book], *G James, D Witten, T Hastie, R Tibshirani*, [**Introduction to Statistical Learning**](https://www.statlearning.com/) (Springer 2013), a more high-level book by some of the same authors of the above. Again, freely available - it exists in versions with R and Python code examples (the latter adds J Taylor as author).
-* [scikit-learn docs](https://scikit-learn.org/stable/), tutorials and extensive explanations for every supported algorithm as well as general notes on Machine Learning concepts.
+* The [**scikit-learn docs**](https://scikit-learn.org/stable/) have tutorials and extensive explanations for every supported algorithm as well as general notes on Machine Learning concepts.
+* [**MLU-Explain**](https://mlu-explain.github.io/), a website by Amazon that also presents ML concepts in a visual way
 
 ## 🧠 Neural Networks & Deep Learning
 
 * [book] *M Nielsen*, [**Neural Networks & Deep Learning**](http://neuralnetworksanddeeplearning.com/index.html)(Determination Press 2015), a fantastic online book, free.
-* *V Maggio*, [**>Deep Learning with Keras & Tensorflow**](https://github.com/leriomaggio/deep-learning-keras-tensorflow), a set of tutorials in Jupyter notebooks.
+* *V Maggio*, [**Deep Learning with Keras & Tensorflow**](https://github.com/leriomaggio/deep-learning-keras-tensorflow), a set of tutorials in Jupyter notebooks.
 * [book] *F Chollet*, **Deep Learning with Python** (Manning 2017), a book by the creator of Keras (not free).
 * [**The TensorFlow Neural Network playground**](http://playground.tensorflow.org/#activation=tanh&amp;batchSize=10&amp;dataset=circle&amp;regDataset=reg-plane&amp;learningRate=0.03&amp;regularizationRate=0&amp;noise=0&amp;networkShape=4,2&amp;seed=0.26634&amp;showTestData=false&amp;discretize=false&amp;percTrainData=50&amp;x=true&amp;y=true&amp;xTimesY=false&amp;xSquared=false&amp;ySquared=false&amp;cosX=false&amp;sinX=false&amp;cosY=false&amp;sinY=false&amp;collectStats=false&amp;problem=classification&amp;initZero=false&amp;hideText=false), an interactive tool to visualise the inner workings of ANNs.
+* [**Practical Deep Learning for Coders**](https://course.fast.ai/), a *fast.ai* course, with annexed book (freely available) and more material, see all at the link
 
 ## 👀 Computer Vision
 
@@ -48,6 +51,8 @@ _**This list is continuously updated.**_
 * [book] *Gayle Laakmann McDowell*, **Cracking the Coding Interview** (CareerCup 2008), general resource not just to prepare for interviews but for general challenges.
 
 ### 🐍 Python
+
+These resources are general to Python, regardless of its use for data science.
 
 * *C Moffitt*, [**Practical Business Python**](https://pbpython.com/), website devoted to best practices on using Python for practical reasons.
 * [book] *K Reitz, T Schlusser*, [**The Hitchhiker's guide to Python**](https://docs.python-guide.org/) (O'Reilly 2016), freely available.
