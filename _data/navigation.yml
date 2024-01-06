@@ -25,8 +25,19 @@ docs:
       - title: "태그"
         url: /tags/
 
-counts:
-  - title: "카테고리"
-    use: true
-  - title: "태그"
-    use: true
+sidebar-category:
+  - title: "💻 Development"
+    children:
+      - title: "MacOS"
+        url: "/categories/macos/"
+        category: "macos"
+  - title: "Life"
+    children:
+      - title: "Daily"
+        url: "/categories/daily/"
+        category: "daily"
+  - title: "Docs"
+    children:
+      - title: "Docs"
+        url: "/categories/docs/"
+        category: "docs"
