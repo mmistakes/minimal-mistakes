@@ -62,7 +62,7 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Data Analysis" %}
+                    {% if category[0] == "DA" %}
                         <li><a href="/categories/dataanalysis" class="">Data Analysis ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
