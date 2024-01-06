@@ -2,7 +2,7 @@
 published: true
 title: "[DA] 구내식당 이용인원 예측 (회귀)"
 
-categories: - Data Analysis
+categories: 'Data Analysis'
 tag: [DA]
 
 toc: true
