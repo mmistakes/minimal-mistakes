@@ -7,10 +7,6 @@ author_profile: false
 typora-root-url: ../
 ---
 
-테스트!
-
-{}
-
 MAC을 초기화 하거나 새로운 장비를 받아서 재설치 하는 경우가 있습니다. 빠른 업무 투입을 위해 내용을 정리해 보았습니다.
 
 ### Homebrew 설치 (<a href="https://brew.sh/" target="_blank" rel="noreferrer noopener">링크</a>)
