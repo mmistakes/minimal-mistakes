@@ -18,7 +18,7 @@ minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon
 locale: "ko-KR"
 title: "GennYoon의 블로그"
 title_separator: "|"
-subtitle: ""
+subtitle: "Version 1.0.0"
 name: "GennYoon"
 description: "GennYoon의 블로그 입니다."
 url: "https://gennyoon.github.io"
@@ -27,7 +27,7 @@ repository: "GennYoon/GennYoon.github.io"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: "/assets/images/logo.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs: true # true, false (default)
+breadcrumbs: false # true, false (default)
 words_per_minute: 200
 comments:
   provider: "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -106,12 +106,12 @@ author:
   name: "GennYoon"
   avatar: "/assets/images/avatar.jpeg"
   bio: "GennYoon의 블로그입니다."
-  location: "South Korea"
-  email:
+  # location: "South Korea"
+  # email:
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:yoonwonyoul@webchemist.net"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "mailto:yoonwonyoul@webchemist.net"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://gennyoon.github.io"
@@ -215,7 +215,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 10 # amount of posts to show
+paginate: 15 # amount of posts to show
 paginate_path: /page:num/
 timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 

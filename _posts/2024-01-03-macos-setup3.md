@@ -1,9 +1,8 @@
 ---
 layout: single
 title: "MacOS Setup 3장 - NVM"
-category: macos
+categories: [macos]
 tag: [macos, setup, node, nvm]
-author_profile: false
 typora-root-url: ../
 ---
 
