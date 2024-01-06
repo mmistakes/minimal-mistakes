@@ -28,7 +28,7 @@
     }
 
     &.sticky {
-      top: 80px;
+      top: 0;
       overflow-y: auto;
       /* calculate height of nav list
          viewport height - nav height - masthead x-padding
@@ -88,7 +88,7 @@
       @include clearfix();
       position: -webkit-sticky;
       position: sticky;
-      top: 100px;
+      top: 20px;
       float: right;
 
       .toc {

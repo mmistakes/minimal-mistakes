@@ -6,6 +6,7 @@
   @include clearfix;
   margin-left: auto;
   margin-right: auto;
+  // margin-top: 90px;
   padding-left: 1em;
   padding-right: 1em;
   -webkit-animation: $intro-transition;
@@ -36,6 +37,9 @@ body {
 }
 
 .page {
+  // position: sticky;
+  // top: 90px;
+
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
