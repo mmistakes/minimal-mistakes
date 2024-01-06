@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "MacOS - NVM (3/5)"
+title: "MacOS Setup 3장 - NVM Setup"
 category: setup
 tag: [macos, setup, node, nvm]
 author_profile: false

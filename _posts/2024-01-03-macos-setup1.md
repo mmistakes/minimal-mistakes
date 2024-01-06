@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "MacOS - Homebrew Setup & App Store (1/5)"
+title: "MacOS Setup 1장 - Homebrew Setup & App Store"
 category: setup
 tag: [macos, setup]
 author_profile: false
@@ -57,7 +57,7 @@ cask "android-studio"
 cask "notion"
 ```
 
-위의 내용을 모두 작성 후 저장합니다.
+위의 내용을 모두 작성 후 저장합니다. ( 위의 내용은 사용자에 따라 수정합니다. )
 
 ```bash
 brew bundle

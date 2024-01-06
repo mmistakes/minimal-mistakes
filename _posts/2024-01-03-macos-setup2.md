@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "MacOS - OH MY ZSH Setup (2/5)"
+title: "MacOS Setup 2장 - OH MY ZSH Setup"
 category: setup
 tag: [macos, setup, zsh]
 author_profile: false
