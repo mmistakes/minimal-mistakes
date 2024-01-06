@@ -28,6 +28,7 @@
     }
 
     &.sticky {
+      top: 80px;
       overflow-y: auto;
       /* calculate height of nav list
          viewport height - nav height - masthead x-padding
@@ -216,7 +217,7 @@
 
     &:before {
       @supports (pointer-events: none) {
-        content: '';
+        content: "";
         position: fixed;
         top: 0;
         left: 0;
@@ -350,4 +351,3 @@
     margin-right: initial;
   }
 }
-
