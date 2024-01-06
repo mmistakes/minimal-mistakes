@@ -1,9 +1,8 @@
 ---
 layout: single
 title: "MacOS Setup 2장 - OH MY ZSH"
-category: macos
+categories: [macos]
 tag: [macos, setup, zsh]
-author_profile: false
 typora-root-url: ../
 ---
 
