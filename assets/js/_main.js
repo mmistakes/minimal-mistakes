@@ -15,9 +15,6 @@ $(function() {
     if (show) {
       // fix
       $(".sidebar").addClass("sticky");
-    } else {
-      // unfix
-      $(".sidebar").removeClass("sticky");
     }
   };
 
