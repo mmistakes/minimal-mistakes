@@ -45,7 +45,22 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">ML & DL</span>
+        <span class="nav__sub-title">Data</span>
+
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "DA" %}
+                        <li><a href="/categories/dataanalysis" class="">Data Analysis ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Tableau" %}
+                        <li><a href="/categories/tableau" class="">Tableau ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Machine Learning" %}
@@ -60,13 +75,8 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "DA" %}
-                        <li><a href="/categories/dataanalysis" class="">Data Analysis ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+            
+
         <span class="nav__sub-title">DataBase & Server</span>
             <ul>
                 {% for category in site.categories %}
