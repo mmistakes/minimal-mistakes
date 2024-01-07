@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="update test md file" />
+    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="update test md file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +42,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704638777509</updated>
-      <workItem from="1704638778732" duration="4288000" />
+      <workItem from="1704638778732" duration="5011000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1704640911664</created>
@@ -77,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704647355382</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update test md file">
+      <created>1704647773010</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704647773010</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
