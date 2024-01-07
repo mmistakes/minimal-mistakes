@@ -22,7 +22,6 @@ vi Brewfile
 
 ```bash
 # Brewfile
-tap "AdoptOpenJDK/openjdk"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
 
@@ -36,9 +35,9 @@ brew "go"
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
+brew "awscli"
 brew "hashicorp/tap/terraform"
 
-cask "adoptopenjdk8"
 cask "slack"
 cask "1password"
 cask "typora"
@@ -51,6 +50,7 @@ cask "docker"
 cask "visual-studio-code"
 cask "android-studio"
 cask "notion"
+cask "temurin"
 ```
 
 위의 내용을 모두 작성 후 저장합니다. ( 위의 내용은 사용자에 따라 수정합니다. )
