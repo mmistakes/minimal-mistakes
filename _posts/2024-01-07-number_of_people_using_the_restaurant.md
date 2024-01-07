@@ -214,7 +214,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_9_0.png)
+![](/posts/images/asd_files/asd_9_0.png)
     
 
 
@@ -235,7 +235,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_11_0.png)
+![](/posts/images/asd_files/asd_11_0.png)
     
 
 
@@ -456,7 +456,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_14_0.png)
+![](/posts/images/asd_files/asd_14_0.png)
     
 
 
@@ -479,7 +479,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_17_0.png)
+![](/posts/images/asd_files/asd_17_0.png)
     
 
 
@@ -711,7 +711,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_21_0.png)
+![](/posts/images/asd_files/asd_21_0.png)
     
 
 
@@ -1616,31 +1616,31 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_41_0.png)
+![](/posts/images/asd_files/asd_41_0.png)
     
 
 
 
     
-![](./posts/images/asd_files/asd_41_1.png)
+![](/posts/images/asd_files/asd_41_1.png)
     
 
 
 
     
-![](./posts/images/asd_files/asd_41_2.png)
+![](/posts/images/asd_files/asd_41_2.png)
     
 
 
 
     
-![](./posts/images/asd_files/asd_41_3.png)
+![](/posts/images/asd_files/asd_41_3.png)
     
 
 
 
     
-![](./posts/images/asd_files/asd_41_4.png)
+![](/posts/images/asd_files/asd_41_4.png)
     
 
 
@@ -1929,7 +1929,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_47_0.png)
+![](/posts/images/asd_files/asd_47_0.png)
     
 
 
@@ -1950,7 +1950,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_49_0.png)
+![](/posts/images/asd_files/asd_49_0.png)
     
 
 
@@ -1965,7 +1965,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_51_0.png)
+![](/posts/images/asd_files/asd_51_0.png)
     
 
 
@@ -1986,7 +1986,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_53_0.png)
+![](/posts/images/asd_files/asd_53_0.png)
     
 
 
@@ -2013,7 +2013,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_55_0.png)
+![](/posts/images/asd_files/asd_55_0.png)
     
 
 
@@ -2035,7 +2035,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_57_0.png)
+![](/posts/images/asd_files/asd_57_0.png)
     
 
 
@@ -2052,7 +2052,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_59_0.png)
+![](/posts/images/asd_files/asd_59_0.png)
     
 
 
@@ -2074,7 +2074,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_61_0.png)
+![](/posts/images/asd_files/asd_61_0.png)
     
 
 
@@ -2094,7 +2094,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_63_0.png)
+![](/posts/images/asd_files/asd_63_0.png)
     
 
 
@@ -2585,7 +2585,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_79_0.png)
+![](/posts/images/asd_files/asd_79_0.png)
     
 
 
@@ -2735,7 +2735,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_82_0.png)
+![](/posts/images/asd_files/asd_82_0.png)
     
 
 
@@ -2809,7 +2809,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_87_0.png)
+![](/posts/images/asd_files/asd_87_0.png)
     
 
 
@@ -2843,7 +2843,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_88_0.png)
+![](/posts/images/asd_files/asd_88_0.png)
     
 
 
@@ -2894,7 +2894,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_90_0.png)
+![](/posts/images/asd_files/asd_90_0.png)
     
 
 
@@ -2930,7 +2930,7 @@ plt.show()
 
 
     
-![](./posts/images/asd_files/asd_91_0.png)
+![](/posts/images/asd_files/asd_91_0.png)
     
 
 
