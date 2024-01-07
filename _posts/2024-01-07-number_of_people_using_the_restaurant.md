@@ -17,6 +17,12 @@ date: 2024-01-07
 구내식당 이용인원 예측
 
 <br>
+
+markdown에 이미지 삽입했을 때 로컬에서는 잘 보이지만
+
+블로그에서 안보이는 문제 해결해야 함.
+
+<br>
 <br>
 
 # 데이터 불러오기
@@ -475,7 +481,7 @@ plt.hlines(y=50, xmin=0, xmax=1230, color='red', linestyle='dotted')
 plt.show()
 ```
 
-<img src="../images/asd_files/asd_17_0.png" width="60%" height="40%">
+<img src="/leejongseok1.github.io/images/asd_files/asd_17_0.png" width="60%" height="40%">
 
     
 <!-- ![png](/leejongseok1.github.io/images/asd_files/asd_17_0.png) -->
@@ -487,8 +493,6 @@ plt.show()
 # 석식계 이상치 추출
 train[train['석식계'] == 0].head(10)
 ```
-
-
 
 
 <div>
