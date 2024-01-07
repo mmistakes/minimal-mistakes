@@ -170,15 +170,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url:  "https://github.com/martinapugliese/martinapugliese.github.io"
-    # - label: "GitLab"
-    #   icon: "fab fa-fw fa-gitlab"
-    #   # url:
-    # - label: "Bitbucket"
-    #   icon: "fab fa-fw fa-bitbucket"
-      # url:
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-      # url:
+    - label: "Newsletter"
+      icon: "fab fa-fw fa-envelope"
+      url: "https://buttondown.email/martinapugliese"
 
 # Reading Files
 include:
