@@ -123,22 +123,40 @@ $notice-background-mix: 80% !default;
 $code-notice-background-mix: 90% !default;
 
 /* syntax highlighting (base16) */
-$base00: #263238 !default;
-$base01: #2e3c43 !default;
-$base02: #314549 !default;
-$base03: #546e7a !default;
-$base04: #b2ccd6 !default;
-$base05: #eeffff !default;
-$base06: #eeffff !default;
-$base07: #ffffff !default;
-$base08: #f07178 !default;
-$base09: #f78c6c !default;
-$base0a: #ffcb6b !default;
-$base0b: #c3e88d !default;
-$base0c: #89ddff !default;
-$base0d: #82aaff !default;
-$base0e: #c792ea !default;
-$base0f: #ff5370 !default;
+// $base00: #263238 !default;
+// $base01: #2e3c43 !default;
+// $base02: #314549 !default;
+// $base03: #546e7a !default;
+// $base04: #b2ccd6 !default;
+// $base05: #eeffff !default;
+// $base06: #eeffff !default;
+// $base07: #ffffff !default;
+// $base08: #f07178 !default;
+// $base09: #f78c6c !default;
+// $base0a: #ffcb6b !default;
+// $base0b: #c3e88d !default;
+// $base0c: #89ddff !default;
+// $base0d: #82aaff !default;
+// $base0e: #c792ea !default;
+// $base0f: #ff5370 !default;
+
+/* custom syntax highlighting (base16) */
+$base00: #f5f5f5ef !default;
+$base01: #073642 !default;
+$base02: #0f0f0f !default;
+$base03: #d7e3f07e !default;
+$base04: #0b105c !default;
+$base05: #3e3f3f !default;
+$base06: #eee8d5 !default;
+$base07: #fdf6e3 !default;
+$base08: #dc322f !default;
+$base09: #0ab443 !default;
+$base0a: #b58900 !default;
+$base0b: #094781 !default;
+$base0c: #17809b !default;
+$base0d: #e21e69e0 !default;
+$base0e: #8643df !default;
+$base0f: #d33682 !default;
 
 /*
    Breakpoints
