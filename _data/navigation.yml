@@ -12,8 +12,8 @@ main:
   - title: 🤖 Tech
     url: /categories/#tech/
 
-  # - title: 📚 Excursus
-  #   url: /categories/#excursus/
+  - title: 📚 Excursus
+    url: /categories/#excursus/
 
   - title: ✨ Awesome Material
     url: /material/
