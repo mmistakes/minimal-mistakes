@@ -233,7 +233,7 @@ plt.show()
 
 
     
-![png](/leejongseok1.github.io/images/asd_files/asd_11_0.png)
+![png1](/leejongseok1.github.io/images/asd_files/asd_11_0.png?raw=True)
     
 
 
