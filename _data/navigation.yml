@@ -63,7 +63,7 @@ sidebar-category:
       - title: "Daily"
         url: "/daily"
         category: "daily"
-  - title: "📘 Docs"
+  - title: "📘 Document"
     children:
       - title: "Docs"
         url: "/docs"
