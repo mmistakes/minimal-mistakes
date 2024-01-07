@@ -112,7 +112,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "corsair17@navver.com"
+      # url: "corsair17@navver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -140,7 +140,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url:
+      url:  "https://github.com/fernandokang"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url: "https://github.com/fernandokang"
