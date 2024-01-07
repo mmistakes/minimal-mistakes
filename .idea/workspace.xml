@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="update test md file">
+    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="update blog setting">
+      <change afterPath="$PROJECT_DIR$/_pages/category-archive.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2009-06-01-edge-case-many-tags.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2024-01-07-edge-case-nested-and-mixed-lists.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/navigation.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/navigation.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2024-01-07-first.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2024-01-07-first.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704638777509</updated>
-      <workItem from="1704638778732" duration="6238000" />
+      <workItem from="1704638778732" duration="7423000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1704640911664</created>
@@ -102,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1704649069643</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update blog setting">
+      <created>1704649484314</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704649484314</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update blog setting">
+      <created>1704649843749</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704649843749</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +138,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="update test md file" />
-    <option name="LAST_COMMIT_MESSAGE" value="update test md file" />
+    <MESSAGE value="update blog setting" />
+    <option name="LAST_COMMIT_MESSAGE" value="update blog setting" />
   </component>
 </project>
