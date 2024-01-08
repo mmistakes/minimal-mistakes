@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="fix. 코드펜 작업 수정">
+    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="중간 저장">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2024-01-08-record.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2024-01-08-record.md" afterDir="false" />
     </list>
@@ -64,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704638777509</updated>
       <workItem from="1704638778732" duration="8641000" />
-      <workItem from="1704674602322" duration="17472000" />
+      <workItem from="1704674602322" duration="18260000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1704640911664</created>
@@ -248,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704709379500</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="중간 저장">
+      <created>1704710700910</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1704710700910</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,8 +288,8 @@
     <MESSAGE value="fix. add 2024-01-08-css-diner.md 사이트 링크 추가" />
     <MESSAGE value="test. codepen 적용 테스트" />
     <MESSAGE value="fix. 내용 수정" />
-    <MESSAGE value="중간 저장" />
     <MESSAGE value="fix. 코드펜 작업 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix. 코드펜 작업 수정" />
+    <MESSAGE value="중간 저장" />
+    <option name="LAST_COMMIT_MESSAGE" value="중간 저장" />
   </component>
 </project>
