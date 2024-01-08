@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="feat. add 2024-01-08-css-diner.md" />
+    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="fix. add 2024-01-08-css-diner.md 사이트 링크 추가">
+      <change afterPath="$PROJECT_DIR$/_posts/2024-01-08-record.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/draw.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704638777509</updated>
       <workItem from="1704638778732" duration="8641000" />
-      <workItem from="1704674602322" duration="9624000" />
+      <workItem from="1704674602322" duration="11130000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1704640911664</created>
@@ -203,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704702063285</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="fix. add 2024-01-08-css-diner.md 사이트 링크 추가">
+      <created>1704702539480</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1704702539480</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +244,7 @@
     <MESSAGE value="feat. 실행 결과 페이지 추가" />
     <MESSAGE value="fix. 링크 수정" />
     <MESSAGE value="feat. add 2024-01-08-css-diner.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat. add 2024-01-08-css-diner.md" />
+    <MESSAGE value="fix. add 2024-01-08-css-diner.md 사이트 링크 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix. add 2024-01-08-css-diner.md 사이트 링크 추가" />
   </component>
 </project>
