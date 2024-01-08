@@ -158,7 +158,7 @@ print(f"map : {list(map(lambda x:x.startswith('a'), lst))}")
 map : [True, False, False, False, False, False]
 ```
 
-map 은 filter 와 다르게 조건에 따른 피터링에 대한 True, False 결과를 리턴해준다.
+map 은 filter 와 다르게 조건에 따른 필터링에 대한 True, False 결과를 리턴해준다.
 
 ----
 
