@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="fix. 내용 수정">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="중간 저장">
       <change beforePath="$PROJECT_DIR$/_posts/2024-01-08-record.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2024-01-08-record.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/draw.html" beforeDir="false" afterPath="$PROJECT_DIR$/result/draw.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704638777509</updated>
       <workItem from="1704638778732" duration="8641000" />
-      <workItem from="1704674602322" duration="15060000" />
+      <workItem from="1704674602322" duration="15394000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1704640911664</created>
@@ -228,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704704403375</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="중간 저장">
+      <created>1704708251915</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1704708251915</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +266,7 @@
     <MESSAGE value="fix. add 2024-01-08-css-diner.md 사이트 링크 추가" />
     <MESSAGE value="test. codepen 적용 테스트" />
     <MESSAGE value="fix. 내용 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix. 내용 수정" />
+    <MESSAGE value="중간 저장" />
+    <option name="LAST_COMMIT_MESSAGE" value="중간 저장" />
   </component>
 </project>
