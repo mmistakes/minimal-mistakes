@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="fix. 링크 수정">
-      <change afterPath="$PROJECT_DIR$/_posts/2024-01-08-css-diner.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/2024-01-08-css-diner/lv1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/2024-01-08-css-diner/lv2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/2024-01-08-css-diner/lv3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/2024-01-08-css-diner/lv4.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/2024-01-08-css-diner/lv5.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="feat. add 2024-01-08-css-diner.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704638777509</updated>
       <workItem from="1704638778732" duration="8641000" />
-      <workItem from="1704674602322" duration="9112000" />
+      <workItem from="1704674602322" duration="9624000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1704640911664</created>
@@ -204,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704687063692</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="feat. add 2024-01-08-css-diner.md">
+      <created>1704702063285</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1704702063285</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +232,7 @@
     <MESSAGE value="feat. 링크 삽입 테스트" />
     <MESSAGE value="feat. 실행 결과 페이지 추가" />
     <MESSAGE value="fix. 링크 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix. 링크 수정" />
+    <MESSAGE value="feat. add 2024-01-08-css-diner.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat. add 2024-01-08-css-diner.md" />
   </component>
 </project>
