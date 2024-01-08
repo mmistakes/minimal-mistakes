@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="update 2024-01-05-assignment.md">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2024-01-05-assignment.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2024-01-05-assignment.md" afterDir="false" />
+    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="fix. 이미지 출력 안되는 현상 해결">
+      <change afterPath="$PROJECT_DIR$/result/2024-01-05-practice/2024-01-05-practice-code.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2024-01-05-practice.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2024-01-05-practice.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,6 +34,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -50,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704638777509</updated>
       <workItem from="1704638778732" duration="8641000" />
-      <workItem from="1704674602322" duration="2478000" />
+      <workItem from="1704674602322" duration="3349000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1704640911664</created>
@@ -150,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704676002569</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix. 이미지 출력 안되는 현상 해결">
+      <created>1704677143255</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1704677143255</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +189,7 @@
     <MESSAGE value="update blog setting" />
     <MESSAGE value="update 2024-01-05-practice.md" />
     <MESSAGE value="update 2024-01-05-assignment.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 2024-01-05-assignment.md" />
+    <MESSAGE value="fix. 이미지 출력 안되는 현상 해결" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix. 이미지 출력 안되는 현상 해결" />
   </component>
 </project>
