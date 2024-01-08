@@ -12,6 +12,8 @@ sidebar:
     nav: "docs"
     nav: "counts"
 
+use_math: true
+
 date: 2024-01-08
 ---
 # 에라토스테네스의 체 - 소수 찾기
