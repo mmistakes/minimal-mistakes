@@ -8,9 +8,9 @@ toc: true
 
 # 과제 내용
 아래와 같은 화면을 html로 작성해보자
-![](../images/2024-01-05-assignment/assignment1.PNG)
-![](../images/2024-01-05-assignment/assignment2.PNG)
-![](../images/2024-01-05-assignment/assignment3.PNG)
+![](../../images/2024-01-05-assignment/assignment1.PNG)
+![](../../images/2024-01-05-assignment/assignment2.PNG)
+![](../../images/2024-01-05-assignment/assignment3.PNG)
 # 코드
 ```html
 <!DOCTYPE html>

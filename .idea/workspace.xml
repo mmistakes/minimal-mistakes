@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="update 2024-01-05-practice.md">
+    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="update 2024-01-05-assignment.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2024-01-05-assignment.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2024-01-05-assignment.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2024-01-05-practice.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2024-01-05-practice.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/2024-01-04-record/image.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/2024-01-05-practice/image.PNG" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704638777509</updated>
       <workItem from="1704638778732" duration="8641000" />
-      <workItem from="1704674602322" duration="1061000" />
+      <workItem from="1704674602322" duration="2478000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1704640911664</created>
@@ -144,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704675360122</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update 2024-01-05-assignment.md">
+      <created>1704676002569</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1704676002569</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +174,7 @@
     <MESSAGE value="update blog fonts" />
     <MESSAGE value="update blog setting" />
     <MESSAGE value="update 2024-01-05-practice.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 2024-01-05-practice.md" />
+    <MESSAGE value="update 2024-01-05-assignment.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 2024-01-05-assignment.md" />
   </component>
 </project>
