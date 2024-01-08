@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="feat. 링크 삽입 테스트">
-      <change afterPath="$PROJECT_DIR$/result/2024-01-05-assignment-code.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2024-01-05-assignment.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2024-01-05-assignment.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2024-01-05-practice.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2024-01-05-practice.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/2024-01-05-practice/2024-01-05-practice-code.html" beforeDir="false" afterPath="$PROJECT_DIR$/result/2024-01-05-practice-code.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/2024-01-05-practice/est.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result/image/est.jpg" afterDir="false" />
-    </list>
+    <list default="true" id="3496844b-ef29-4a92-9592-16488de8eb46" name="Changes" comment="feat. 실행 결과 페이지 추가" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704638777509</updated>
       <workItem from="1704638778732" duration="8641000" />
-      <workItem from="1704674602322" duration="4486000" />
+      <workItem from="1704674602322" duration="4813000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1704640911664</created>
@@ -188,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704685963717</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat. 실행 결과 페이지 추가">
+      <created>1704686773198</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1704686773198</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +215,7 @@
     <MESSAGE value="update 2024-01-05-assignment.md" />
     <MESSAGE value="fix. 이미지 출력 안되는 현상 해결" />
     <MESSAGE value="feat. 링크 삽입 테스트" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat. 링크 삽입 테스트" />
+    <MESSAGE value="feat. 실행 결과 페이지 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat. 실행 결과 페이지 추가" />
   </component>
 </project>
