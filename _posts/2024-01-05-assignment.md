@@ -138,3 +138,6 @@ toc: true
 </body>
 </html>
 ```
+
+# 결과
+[실행 결과 보기](https://fernandokang.github.io/result/2024-01-04-record-code.html)
