@@ -9,7 +9,7 @@ sidebar:
     nav: "counts"
 ---
 
-어느덧 플레이데이터 엔지니어링 부트캠프를 들은지 2주차 회고를 써야할 때이다. 순식간에 2024년도 다가왔다..
+벌써 플레이데이터 엔지니어링 부트캠프를 들은지 2주차 회고를 쓰고있다. 순식간에 2024년도 다가왔다..
 
 2주차도 1주차와 마찬가지로 파이썬 기본 문법에 대해 수강했다. 나는 이전 부트캠프와 학부때 전공 수업으로 파이썬을 수강했기 때문에 1주차에는 수업 내용의 대부분은 이미 알고있던 내용이라 가벼운 마음으로 들었지만 2주차부터는 헷갈리는 개념이나 잘못 이해하고 넘어갔던 내용들이 나오기 시작했다. 
 
@@ -22,7 +22,7 @@ sidebar:
 
 ### 가변인자(Var args) 파라미터
 
-전달받을 값의 개수가 가변(정해지지 않은경우)일 경우 입력 데이터의 개수는 다양할 것이다. 
+전달받을 값의 개수가 정해지지 않은경우 가변인자 파라미터를 사용할 수 있다. 
 
 #### 1. *변수명 가변인자 : positional argument 
 
@@ -62,7 +62,7 @@ result2 : 11
 ```
 
 
-<span style = " font-weight:bold;" >*변수명 가변인자</span>는 전달된 값을 tuple로 받아서 처리하므로  positional arguments 이며, 관례적으로 변수명은 <span style = "color : #3E49E6; font-weight:bold;" >*args</span>로 표현한다. 
+<span style = " font-weight:bold;" >*변수명 가변인자</span>는 전달된 값을 tuple로 받아서 처리하므로  positional arguments 이며, 변수명은 <span style = "color : #3E49E6; font-weight:bold;" >*args</span>로 표현한다. 
 
 
 ```python
@@ -127,7 +127,7 @@ bmi :23.15
 ```
 전달된 값들은 dictionary로 받아서 처리된다 ! 
 
-keyword argument 을 이용하여 값을 입력 밪는 경우 가변인자를 이용해 함수를 간단하게 표현할 수 있다. 
+keyword argument 을 이용하여 값을 입력 받는 경우 가변인자를 이용해 함수를 간단하게 표현할 수 있다. 
 
 ### iterable 관련 함수 : Filter, Map 
 
