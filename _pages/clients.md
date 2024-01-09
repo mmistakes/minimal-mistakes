@@ -23,7 +23,7 @@ og_image: "/assets/images/banner2.jpg"
 
 ### Governmental Grants and Contracts
 
-- [Sovereign Tech Fund](https://sovereigntechfund.de/en/) Digital Infrastructure contract to support the reboot of activity at W3C around the [ActivityPub](https://activitypub.rocks/) standard for the Fediverse, with the [SocialWeb Coöp](https://socialweb.coop)
+- [Sovereign Tech Fund](https://sovereigntechfund.de/en/) Digital Infrastructure contract to support the reboot of activity at W3C around the [ActivityPub](https://activitypub.rocks/) standard for the Fediverse, and in the process bootstrapping the [SocialWeb Coöp](https://socialweb.coop) for ongoing public-good social-web innovation and stewardship
 - [ESSIF-LAB](https://essif-lab.eu/) Project: A self-serve identity verification dApp for creators based on [ISCC](https://iscc.codes) self-publication and the Rebase Protocol for identity self-verification
 - Mozilla Foundation [Grant for the Web](https://foundation.mozilla.org/en/blog/grant-web-opens-call-proposals/) Project: Honorbox, a lightweight self-publication platform for e-books using with an early form of [C2PA](https://contentauthenticity.org) embedded authenticity statement
 - Department of Homeland Security [Silicon Valley Innovation Project](https://www.dhs.gov/science-and-technology/svip) Project: Prototype for a Customs & Border Protection imports documentation system, with [Spherity GmbH](https://spherity.com)
