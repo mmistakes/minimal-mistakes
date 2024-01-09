@@ -14,7 +14,7 @@ share: true
 related: true
 description: "2023 in retrospect and 2024 in circumspect"
 excerpt: >
-  How a public-good services contract from the German federal government could help bootstrap a real source of good in the social web
+  Bumblefudge here, clearing his throat and mind before hitting reset on various expectations for myself and the world.
 defaults:
   # _posts
   - scope:
