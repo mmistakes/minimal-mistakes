@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 ---
 
-# rosuawkfy
+# 개념정리
 -------------------
 
 시간을 측정하기 위해서 타이머를 사용한다
