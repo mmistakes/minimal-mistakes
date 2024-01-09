@@ -3,6 +3,7 @@ layout: single
 title: "MacOS Setup - OH MY ZSH 설치 및 설정"
 categories: [macos]
 tag: [macos, setup, zsh]
+order: 2
 published: true
 typora-root-url: ../
 ---
@@ -53,3 +54,5 @@ ZSH_THEME를 변경하면 Command에 아이콘이 깨진듯하게 보입니다. 
 이후 같은 곳을 선택 후 설치한 Theme를 선택해줍니다.
 
 ### 마치면서
+
+여러가지의 테마와 프롬프트를 만들 수 있지만, 가벼운 개발환경과 사용자의 눈건강이 중요합니다. 모두 좋은 환경에서 개발하세요.

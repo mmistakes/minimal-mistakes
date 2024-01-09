@@ -22,7 +22,7 @@ subtitle: "Version 1.0.0"
 name: "GennYoon"
 description: "GennYoon의 블로그 입니다."
 url: "https://gennyoon.github.io"
-baseurl: # the subpath of your site, e.g. "/blog"
+# baseurl: # the subpath of your site, e.g. "/blog"
 repository: "GennYoon/GennYoon.github.io"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: "/assets/images/logo.png"
@@ -288,7 +288,7 @@ defaults:
       toc: true
       toc_sticky: true
       toc_label: 목차
-      toc_icon: fas fa-utensils
+      toc_icon: fas fa-book
       sidebar:
         nav: sidebar-category
 

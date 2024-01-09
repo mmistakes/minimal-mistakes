@@ -17,7 +17,6 @@ foo:
       - title: "Child Link 3"
         url: /child-3-page-url/
 
-
 # main links
 main:
   - title: "Quick-Start Guide"
@@ -30,7 +29,6 @@ main:
     url: /collection-archive/
   - title: "Terms &amp; Privacy Policy"
     url: /terms/
-
 
 # documentation links
 docs:
