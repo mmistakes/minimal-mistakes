@@ -58,11 +58,6 @@ sidebar-category:
       - title: "ETC"
         url: "/etc"
         category: "etc"
-  - title: "✨ Life"
-    children:
-      - title: "Daily"
-        url: "/daily"
-        category: "daily"
   - title: "📘 Document"
     children:
       - title: "Docs"
