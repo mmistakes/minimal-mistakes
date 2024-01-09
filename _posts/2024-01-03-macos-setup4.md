@@ -1,8 +1,9 @@
 ---
 layout: single
-title: "MacOS Setup 4장 - Git"
+title: "MacOS Setup - Git 설정"
 categories: [macos]
-tag: [macos, setup, neovim, lua]
+tag: [macos, setup, git, github, multi]
+published: true
 typora-root-url: ../
 ---
 

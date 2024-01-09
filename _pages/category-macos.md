@@ -8,5 +8,7 @@ sidebar:
   nav: sidebar-category
 ---
 
-{% assign posts = site.categories.macos %}
+{% if site.categories.macos %}
+{% assign posts = site.categories.macos | sort: 'order' %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+{% endif %}

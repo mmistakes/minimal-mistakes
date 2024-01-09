@@ -8,5 +8,7 @@ sidebar:
   nav: sidebar-category
 ---
 
-{% assign posts = site.categories.flutter %}
+{% if site.categories.flutter %}
+{% assign posts = site.categories.flutter | sort: 'order' %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+{% endif %}

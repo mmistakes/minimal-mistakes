@@ -1,6 +1,6 @@
 ---
 title: "연도별"
-permalink: /archives/
+permalink: /years/
 layout: posts
 author_profile: true
 ---

@@ -1,8 +1,9 @@
 ---
 layout: single
-title: "MacOS Setup 1장 - Homebrew Setup & App Store"
+title: "MacOS Setup - Homebrew 설치 및 설정 & App Store"
 categories: [macos]
 tag: [macos, brew, setup]
+published: true
 typora-root-url: ../
 ---
 

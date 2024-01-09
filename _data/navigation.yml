@@ -7,7 +7,7 @@ main:
   - title: "태그"
     url: /tags/
   - title: "연도"
-    url: /year-archive/
+    url: /years/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

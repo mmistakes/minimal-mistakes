@@ -8,5 +8,7 @@ sidebar:
   nav: sidebar-category
 ---
 
-{% assign posts = site.categories.spring-boot %}
+{% if site.categories.spring-boot %}
+{% assign posts = site.categories.spring-boot | sort: 'order' %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+{% endif %}

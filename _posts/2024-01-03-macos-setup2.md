@@ -1,8 +1,9 @@
 ---
 layout: single
-title: "MacOS Setup 2장 - OH MY ZSH"
+title: "MacOS Setup - OH MY ZSH 설치 및 설정"
 categories: [macos]
 tag: [macos, setup, zsh]
+published: true
 typora-root-url: ../
 ---
 
@@ -50,3 +51,5 @@ ZSH_THEME를 변경하면 Command에 아이콘이 깨진듯하게 보입니다. 
 ![iTerm2 Theme Setting](/images/2024-01-03-macos-setup2/iTerm2 Theme Setting.png)
 
 이후 같은 곳을 선택 후 설치한 Theme를 선택해줍니다.
+
+### 마치면서
