@@ -3,13 +3,14 @@ layout: single
 title: "MacOS Setup - NVM 설정"
 categories: [macos]
 tag: [macos, setup, node, nvm]
+order: 3
 published: true
 typora-root-url: ../
 ---
 
 ### NVM 설명
 
-NVM이란, Node Version Manager의 약자로 Node버전을 관리해줍니다.
+NVM이란, `Node Version Manager`의 약자로 Node버전을 관리해줍니다.
 
 설치는 [[MacOS - Homebrew Setup & App Store]] 에서 Brewfile을 통해서 진행하시면 됩니다.
 
@@ -51,3 +52,7 @@ nvm use default
 ```
 
 default로 설정된 node버전을 이용하겠다 설정하면 기본적 설정은 완료 됩니다.
+
+### 마치면서
+
+개인과 회사 또는 커뮤니티에서의 개발시 환경이 다를 수 있습니다. Node 버전을 변경하며 여러 곳에서 멋진 개발하세요.

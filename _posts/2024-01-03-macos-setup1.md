@@ -3,6 +3,7 @@ layout: single
 title: "MacOS Setup - Homebrew 설치 및 설정 & App Store"
 categories: [macos]
 tag: [macos, brew, setup]
+order: 1
 published: true
 typora-root-url: ../
 ---
