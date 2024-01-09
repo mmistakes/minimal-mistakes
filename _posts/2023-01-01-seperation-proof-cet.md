@@ -1,5 +1,5 @@
 ---
-title: "Notes on Lemma 4.1 from ''Computational Quantum Entanglement paper''"
+title: "Notes on (Part 1 of) Lemma 4.1 from ''Computational Quantum Entanglement paper''"
 excerpt: "Wrappng my head around the proof"
 categories: [quantum computing, computational quantum entanglement]
 tags: [proving things]
@@ -8,8 +8,33 @@ classes: wide
 
 Below are my notes on the proof of Lemma 4.1 from the paper [Computational Quantum Entanglement](https://arxiv.org/abs/2310.02783). My approach is to take the proof apart and try to understand each step. I will try to explain the concepts in a way that is understandable for me. Each part will be taken as a $\textit{claim}$ and I will try to convince myself why it is true.
 
-## Proof overview
+Here I will focus only on proving bounds on part regarding (computational) entanglement distillation.
 
+## What are we trying to prove?
+
+> For any small enough $\varepsilon > 0$ and non-decreasing $n(\lambda)$ such that $n(\lambda) \rightarrow \infty$ as $\lambda \rightarrow \infty$, 
+there exists a family $\\{\rho_{\lambda}^{AB}\\}$ of bipartite pure states on $2n(\lambda)$ qubits such that for all $\lambda$, 
+$E_{D}^{0}(\rho_{\lambda}^{AB}) = E(\rho_{\lambda}^{A}) = n(\lambda)$, but for any valid lower bound $m$ on 
+$\hat{E_{D}}^{0}(\rho_{\lambda})$, we have that $m \leq_{\infty} 0$.
+
+### What does it mean?
+
+There exist a family of states $\\{\rho_{\lambda}^{AB}\\}$ that has high (namely $n(\lambda)$) distillable entanglement , but small (namely 0) _computational_ distillable entanglement.
+
+## Intuitive proof overview
+
+To distill entanglement we need to create at least single EPR pair. 
+The idea is to create a family of pure states (of which uniform mixture is the totally mixed state) that is way more numerous than number of efficient LOCC maps from those states to one EPR pair.
+If the family has so many states that _almost all_ (at least half of them) of them would be distilled by one (family parametrized by $\lambda$ of) LOCC map.
+Assume that this _efficient_ (critical part of assumption) LOCC map actually exist. Then, this particular LOCC map by being linear should also distill with non-zero fidelity from uniform mixture of the family - from this we have non-zero distillable entanglement. But we know that totally mixed state has
+entanglement entropy (via entanglement of formation) equal to 0. Entanglement entropy is an upper bound for distillable entanglement, hence we arrive at contradiction.
+
+### What is the post:
+
+- Claims 1, 2 describe why we can even think about constructing such family of states
+- Claim 3 shows that this family of state might be very populated.
+- Claims 4, 4.1, 4.2, 4.3, 4.4 show properties of such family of states.
+- Claims 5.1, 5.2 are the "actual" proofs.
 
 ## Claim 1: For $n$-qubits unitaries $U$ and $V$, and $\lvert \phi^n \rangle$ the tensor product of $n$ EPR pairs, the states $(I \otimes U)\lvert \phi^n \rangle$ and $(I \otimes V)\lvert \phi^n \rangle$ are both maximally entangled.
 
@@ -127,16 +152,16 @@ $$
 = \frac{1}{2^n} 2 \text{Tr}(I) - \frac{1}{2^n}\text{Tr}(U^HV + V^HU) \\
 = 2 - \frac{1}{2^n}\text{Tr}(U^HV + V^HU) \\
 = 2 - \frac{1}{2^n}(\text{Tr}(U^HV) + \text{Tr}(V^HU)) \\
-= \frac{1}{2^n}\text{Tr}(U^HV) + \text{Tr}(U^HV)^* \\
-=  2\frac{1}{2^n}\text{Re}(\text{Tr}(U^HV))
+= 2 - \frac{1}{2^n}\text{Tr}(U^HV) + \text{Tr}(U^HV)^* \\
+= 2-  2\frac{1}{2^n}\text{Re}(\text{Tr}(U^HV))
 $$
 
 Now, let us try to simplify to convince ourselves about the claim.
 
 $$
 \text{Re}( \langle \phi^n \rvert (I \otimes U^H)(I \otimes V)\rvert \phi^n \rangle) = 1 - \frac{1}{2}\frac{1}{2^n}\lVert U - V \rVert^2_F \\
-\text{Re}( \langle \phi^n \rvert (I \otimes U^H)(I \otimes V)\rvert \phi^n \rangle) = 1 - \frac{1}{2}2\frac{1}{2^n}\text{Re}(\text{Tr}(U^HV)) \\ 
-\text{Re}( \langle \phi^n \rvert (I \otimes U^H)(I \otimes V)\rvert \phi^n \rangle) = 1 - \frac{1}{2^n}\text{Re}(\text{Tr}(U^HV))
+\text{Re}( \langle \phi^n \rvert (I \otimes U^H)(I \otimes V)\rvert \phi^n \rangle) = 1 - \frac{1}{2}(2 - 2\frac{1}{2^n}\text{Re}(\text{Tr}(U^HV))) \\ 
+\text{Re}( \langle \phi^n \rvert (I \otimes U^H)(I \otimes V)\rvert \phi^n \rangle) = 1 - 1 +  \frac{1}{2^n}\text{Re}(\text{Tr}(U^HV)) = \frac{1}{2^n}\text{Re}(\text{Tr}(U^HV))
 $$
 
 Switch gears to trace distance:
@@ -189,23 +214,46 @@ $$
 Okay, as we have fidelity formula for pure states
 
 $$
-\langle \phi^n \rvert (I \otimes U^H)(I \otimes \sigma_X(a)\sigma_Z(b))(I \otimes U)\lvert \phi^n \rangle
+\langle \phi^n \rvert (I \otimes U^H)(I \otimes \sigma_X(a)\sigma_Z(b))(I \otimes U)\lvert \phi^n \rangle = \\
+\langle \phi^n \rvert (I \otimes U^H\sigma_X(a)\sigma_Z(b)U)\lvert \phi^n \rangle = \\
+\frac{1}{\sqrt{2}^n}\langle \tilde{\phi} \rvert (I \otimes U^H\sigma_X(a)\sigma_Z(b)U) \frac{1}{\sqrt{2}^n} \lvert \tilde{\phi} \rangle = \\
+\frac{1}{2^n}\langle \tilde{\phi} \rvert (I \otimes U^H\sigma_X(a)\sigma_Z(b)U) \lvert \tilde{\phi} \rangle = \\
+\frac{1}{2^n}\text{Tr}(U^H\sigma_X(a)\sigma_Z(b)U) = \\
+\frac{1}{2^n}\text{Tr}(\sigma_X(a)\sigma_Z(b))
 $$
 
-This claim is relatively intuitive if you know what $\sigma_X(a)\sigma_Z(b)$ will do. What this operation will do is generate an orthogonal state to $(I \otimes U)\lvert \phi^n \rangle$, and orthogonal states have $0$ fidelity. $0 \leq 1 - \eta$, They are also orthogonal with each other.
+Of course we are _not_ in case when $a = b = 0$ -- we would be measuring fidelity between particular state and itself. What we need here is following fact:
+$\sigma_X(a), \sigma_Z(b), \sigma_X(a)\sigma_Z(b)$ all have trace equal to $0$, hence the fidelity is 0, which is less that $1 - \eta$.
 
 ### Claim 4.3: Let $\lvert \psi_1 \rangle, \lvert \psi_2 \rangle \in S_\lambda$. $(I \otimes \sigma_X(a)\sigma_Z(b)) \lvert \psi_1 \rangle$ and $(I \otimes \sigma_X(c)\sigma_Z(d)) \lvert \psi_2 \rangle$ has fidelity at most $1 - \eta$
 
-Now, we want to check if added orthogonal states coming from two different unitaries will still be far apart from each other. For me, it is not obvious that the fidelity will be "preserved" (or at least _not_ increased). Good that those are all pure states, we also now that fidelity between $\lvert \psi_1 \rangle, \lvert \psi_2 \rangle$ is at most $1 - \eta$. So, let us inner product that!
+Now, we want to check if added orthogonal states coming from two different unitaries will still be far apart from each other. For me, it is not obvious that the fidelity will be "preserved" (or at least _not_ increased). Good that those are all pure states, we also now that fidelity between $\lvert \psi_1 \rangle, \lvert \psi_2 \rangle$ is at most $1 - \eta$. We can write that down in a following way:
 
 $$
-\langle \psi_1 \rvert (I \otimes \sigma_Z(b)^H\sigma_X(a)^H)(I \otimes \sigma_X(c)\sigma_Z(d)) \lvert \psi_2 \rangle \\
-= \langle \psi_1 \rvert (I \otimes \sigma_Z(b)^H\sigma_X(a)^H\sigma_X(c)\sigma_Z(d)) \lvert \psi_2 \rangle
+\lvert \psi_1 \rangle = (I \otimes U) \lvert \phi^n \rangle =  (I \otimes U)\frac{1}{\sqrt{2}^n}\lvert \tilde{\phi} \rangle  \\
+\lvert \psi_2 \rangle = (I \otimes V) \lvert \phi^n \rangle = (I \otimes V)\frac{1}{\sqrt{2}^n}\lvert \tilde{\phi} \rangle  \\
+\langle \psi_1 \lvert \psi_2 \rangle \leq 1 - \eta \\
+\frac{1}{\sqrt{2}^n}\langle \tilde{\phi} \rvert (I \otimes U^H) (I \otimes V)\frac{1}{\sqrt{2}^n}\lvert \tilde{\phi} \rangle \leq 1 - \eta \\
+\frac{1}{2^n}\langle \tilde{\phi} \rvert (I \otimes U^HV)\lvert \tilde{\phi} \rangle \leq 1 - \eta \\
+\frac{1}{2^n}\text{Tr}(U^HV) \leq 1 - \eta \\
+\text{Tr}(U^HV) \leq 2^n(1 - \eta)
 $$
 
-It seems that we need to investigate all the combinations of $a, b, c, d$. Fortunately, we can simplify it because to consider _individual_  bit flips as it will directly scale to higher dimensions.
+That's what we know. With some easy simplifications we are interested in showing that:
 
-#### $a = c, b = d $
+$$
+\frac{1}{2^n}\text{Tr}(U^H\sigma_Z(b)^H\sigma_X(a)^H\sigma_X(c)\sigma_Z(d)V) \leq \frac{1}{2^n}\text{Tr}(U^HV) \\ 
+\text{Tr}(U^H\sigma_Z(b)^H\sigma_X(a)^H\sigma_X(c)\sigma_Z(d)V) \leq \text{Tr}(U^HV) \leq 2^n(1 - \eta)
+$$
+
+Let us first consider the case $n = 1, a = b = 1, c = d = 0$, we end up with:
+
+$$
+\text{Tr}(U^H\sigma_Z(b)^H\sigma_X(a)^HV) \\
+\text{Tr}(U^H\sigma_Z\sigma_XV) \text{ simplified}
+$$
+
+Now - simplifying, but wlog - let us recall that _if_ we have unitary $U$ already in set $S_\lambda$, then we also have: $\sigma_XU, \sigma_ZU, \sigma_X\sigma_ZU$. That means that $V$ must have desired fidelity with all of those matrices, by conjugate transpose we have the "simplified" equation above for any quantum one time padding of $V$.
 
 Here operations will "cancel out":
 
@@ -216,57 +264,88 @@ $$
 = \langle \psi_1 \rvert \psi_2 \rangle \leq 1 - \eta
 $$
 
-#### $a = c, b \neq d$
-
-First, non-trivial case, let us see what happens:
-
-$$
-\langle \psi_1 \rvert (I \otimes \sigma_Z(b)^H\sigma_X(a)^H\sigma_X(c)\sigma_Z(d)) \lvert \psi_2 \rangle \\
-= \langle \psi_1 \rvert (I \otimes \sigma_Z(b)^H\sigma_X(a)^H\sigma_X(a)\sigma_Z(d)) \lvert \psi_2 \rangle \\
-= \langle \psi_1 \rvert (I \otimes \sigma_Z(b)\sigma_Z(d)) \lvert \psi_2 \rangle
-$$
-
-Now, that means that one of the $b, d$ parameters are $0$, so one of the gates can be discarded. Let us say $d = 0$, we end up with:
-
-$$
-\langle \psi_1 \rvert (I \otimes \sigma_Z(b)) \lvert \psi_2 \rangle
-$$
-
-Fortunately, we can start with very simple example - of single EPR pair as it will scale _directly_ to n copies.
-
-$$ 
-\lvert \psi_1 \rangle = a_1 \lvert 00 \rangle + a_2 \lvert 01 \rangle + a_3 \lvert 10 \rangle + a_4 \lvert 11 \rangle \\
-\lvert \psi_2 \rangle = b_1 \lvert 00 \rangle + b_2 \lvert 01 \rangle + b_3 \lvert 10 \rangle + b_4 \lvert 11 \rangle \\
-$$
-
-The Z gate flips the phase of the \lvert 1 \rangle state but leaves \lvert 0 \rangle unchanged:
-
-$$
-(I \otimes \sigma_Z) \lvert \psi_2 \rangle = \lvert \psi_2 \rangle =  b_1 \lvert 00 \rangle - b_2 \lvert 01 \rangle + b_3 \lvert 10 \rangle - b_4 \lvert 11 \rangle
-$$
-
-The inner product $\langle \psi_1 \rvert (I \otimes \sigma_Z) \lvert \psi_2 \rangle$ expands to:
-
-$$
-(a_1^* \langle 00 \rvert + a_2^* \langle 01 \rvert + a_3^* \langle 10 \rvert + a_4^* \langle 11 \rvert)(b_1 \lvert 00 \rangle - b_2 \lvert 01 \rangle + b_3 \lvert 10 \rangle - b_4 \lvert 11 \rangle = \\
-a_1^* b_1 - a_2^* b_2 + a_3^* b_3 - a_4^* b_4
-$$
-
-This means that our fidelity is:
-$$
-|a_1^* b_1 - a_2^* b_2 + a_3^* b_3 - a_4^* b_4|^2
-$$
-
-And with that we are _sure_ that it will not be _greater_ than original fidelity.
-
-#### $a \neq c, b = d$
-
-TODO:
-
-
-#### $a \neq c, b \neq d$
-
-As we are combining previous cases we are still _not_ increasing fidelity.
-
 ### Claim 4.4: For any $\lvert \psi \rangle \in S_\lambda, E(\lvert \psi \rangle \langle \psi \lvert) = n(\lambda)$
+
+First, we need to help oursevles with definition of $E$. $E$ means entanglement entropy. In the Paper of Interest it lies under Definition 2.7. And it is defined as:
+
+$$
+E(\rho) = \max \{ H(A)_\rho, H(B)_\rho \}
+$$
+
+where $H(A)_\rho$ denotes the von Neumann entropy of the reduced density matrix $\rho_A$. For the case of a pure state $H(A) = H(B)$. Then of course we need von Neumann entropy. Fortunately, we are constantly in the realm of pure states, and we can leverage fact describe below ([source](https://en.wikipedia.org/wiki/Entropy_of_entanglement#Von_Neumann_entanglement_entropy)).
+
+That means that we can "trace out" system B. System B is only one that is being modified, hence we are still in realm of maximal entropy.
+
+### Claim 4.5: Uniform mixture over all states in $S_\lambda$ is the maximally mixed state.
+
+This comes directly from quantum one time pad. For more practical information please see [this notes](https://ocw.tudelft.nl/wp-content/uploads/LN_Week1.pdf)
+
+### Claim 4.6: Uniform mixture over all $\lvert \psi \rangle \in S_\lambda$ is the totally mixed state.
+
+By construction of $S_\lambda$ we are effectively building an $\eta$-net. For a geometric intuition think about a unit circle. 
+Then put a first unit vector (it should lie on a radius). Recall that inner product between any vector can be intuited as angle between those two vectors.
+Then for a particular angle -- $\alpha$ -- (fidelity) how many vectors you can "pack" into that circle so that every 
+pair of vectors have at least $\alpha$ angle between them. Then try to imagine how it would work in a sphere. 
+
+## "Claim" 5.1: $s$ grows faster than any polynomial $\rightarrow$ lemma is proven for distillable entanglement
+
+Now we get to the first, easier case of lemma. Just let us be clear on what we want to show -- there exists family of bipartite pure states of $2n(\lambda)$ qubits that 
+_distillable entanglement_ equal to $n(\lambda)$, **but** it has computational quantum entanglement bounded by 0. 
+
+So, what is $s$? $s$ is defined as a function that for each state returns the smallest size of an LOCC map that distills _one_ EPR pair from particular state. 
+Moreover, if we pass "size parameter" $\lambda$ it will return maximal size for particular family of states. **It is defined on $S_\lambda$ from Claim 4**.
+
+With this claim we assume that $s$ grows faster than any polynomial -- so the size of LOCC grows faster than any polynomial -- for $S_\lambda$. 
+That obviously means that $S_\lambda$ is _the_ family for which at least one EPR by means of polynomially bounded LOCC, hence computational distillable entanglement is $0$.
+By Claim 4.4 the (non-computational) distillable entanglement is $n(\lambda)$. We are where we wanted!
+
+## "Claim" 5.2: $s$ is polynomially bounded than any polynomial $\rightarrow$ lemma is proven for distillable entanglement
+
+Now for the harder case. 
+
+First statement that we need to deal with is -- The number of LOCC maps from $2n(\lambda)$ to 2 qubits of size at most $s(\lambda)$ is at most
+$2^{\text{poly}(s(\lambda))}$. Why? Because any such map can be described using a number 
+of bits that is polynomially bounded. Why?
+
+First, recall that $s$ that represented size of LOCC maps is polynomially bounded. Size of LOCC map means how many gates we need to realise that map.
+So if we take the "biggest" map (or rather the fastest growing), we can create a (non bit, but $n$-ary, where $n$ is number of gates we have at disposal)
+string that for each position will tell us which gate has been used. As the number of gates is fixed (even if we consider applying gates to different qubits, 
+it will always be fixed) we can translate each position to a binary string, then with concatenating we have a string of size at most $2^{\text{poly}(s(\lambda))}$.
+
+Now, we can take our $S_\lambda$ that has $(\frac{1}{\eta})^{\Omega(2^{2n(\lambda)})}$ states. Important observation is that there are more states than there are LOCC maps.
+As we can see, number of LOCC grows exponentially already, but in case of states it is the exponent that grows exponentially -- we omit degraded cases in general where fidelity $< \frac{1}{2}$.
+
+By pigeonhole principle that means that -- if we grow $\lambda$ to big enough values -- that there will be polynomial LOCC mapp that distills "almost all" states in
+$S_\lambda$ with fidelity at least $1 - \epsilon$ (not $\eta$!) with one EPR pair.
+
+Then we have following:
+
+> Now let $\rho^\lambda$ be the uniform mixture over all $\psi \in S_\lambda$. Then provided $\eta$ is small enough with respect to $\epsilon$ it still 
+> follows that $\hat{\Gamma}^\lambda(\rho^\lambda)$ has fidelity at least $1 - 2\epsilon$ with one EPR pair
+
+And this is something that we need to explain. 
+When we decrease $\eta$ we increase number of states as well as "locally" states are more similar to each other. If we _increase_ $\epsilon$ we are okay with
+map $$\hat{\Gamma}^\lambda$ to provide states "further" away from single EPR pair. 
+
+This part remains a bit of mystery to me. I know that fidelity is concave, which we can leverage. We also know that LOCC are linear mappings (as all quantum operations are)
+
+First, let us split $\rho^\lambda$ into two parts: $\rho^\lambda_{\epsilon-}$ -- uniform mixture of states that have fidelity at least $1 - \epsilon$ and $\rho^\lambda_{\epsilon+}$ -- states that have fidelity less than $1 - \epsilon$.
+From "almost all" condition we know that $\rho^\lambda_{\epsilon-}$ would be a mixture of _no less_ elements than $\rho^\lambda_{\epsilon+}$. So for lower bound we can assign weight $\frac{1}{2}$ to each of mixtures.
+Now, for the _questionable_ element:
+
+$$
+F(\hat{\Gamma}^\lambda(\rho^\lambda)), \lvert \psi \rangle) = F(\hat{\Gamma}^\lambda(\rho^\lambda_{\epsilon-} + \rho^\lambda_{\epsilon+}), \lvert \psi \rangle) \geq \frac{1}{2}(F(\hat{\Gamma}^\lambda(\rho^\lambda_{\epsilon-}, \lvert \psi \rangle) + F(\hat{\Gamma}^\lambda(\rho^\lambda_{\epsilon+}, \lvert \psi \rangle))
+$$
+
+We know that $F(\hat{\Gamma}^\lambda(\rho^\lambda_{\epsilon-}) \geq 1 - \epsilon$. We can always assume $F(\hat{\Gamma}^\lambda(\rho^\lambda_{\epsilon+}) < 1 - \epsilon$. Finishing calculations we end up with $\frac{1}{2} - \epsilon$, which is different (but linearly similar) to what we have in paper and this is enough to finish the proof.
+
+What is crucial is that for $\epsilon < \frac{1}{2}$, we have non-zero fidelity between uniform mixture and one EPR pair. 
+
+Know for the entanglement of _totally mixed state_. Von Neumann entropy can be leveraged as measurement of entanglement entropy, but only for pure states. For mixed states we can leverage [entanglement of formation](https://en.wikipedia.org/wiki/Entanglement_of_formation).
+
+We have our totally mixed state $\frac{1}{d}I_d$. We can decompose it to a set of pure product states (think [computational basis states](https://www.quantum-inspire.com/kbase/qubit-basis-states/)), each of those has $0$ entanglement, so min-sum among those would still be 0.
+
+Now, we arrived at contradiction (for small enough $\epsilon$), so $s$ cannot be polynomially bounded, so $S_\lambda$ is the family of states from the claim.
+
+
 
