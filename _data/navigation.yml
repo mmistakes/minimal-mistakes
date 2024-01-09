@@ -6,3 +6,5 @@ main:
      url: "/impressum/"
    - title: "team"
      url: "/team/"
+   - title: "blog"
+     url: "/blog/"
