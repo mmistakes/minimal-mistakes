@@ -8,5 +8,7 @@ sidebar:
   nav: sidebar-category
 ---
 
-{% assign posts = site.categories.nextjs %}
+{% if site.categories.nextjs %}
+{% assign posts = site.categories.nextjs | sort: 'order' %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+{% endif %}
