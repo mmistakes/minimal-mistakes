@@ -27,7 +27,7 @@ funders_gallery:
 
 ## In Brief
 
-The Finnish Quantum-Computing Infrastructure (FiQCI) was established in 2020, when it became part of the Finnish Research Infrastructure (FIRI) roadmap of significant national research infrastructures within the Finnish research infrastructure ecosystem, maintained by the Academy of Finland.
+The Finnish Quantum-Computing Infrastructure (FiQCI) was established in 2020, when it became part of the Finnish Research Infrastructure (FIRI) roadmap of significant national research infrastructures within the Finnish research infrastructure ecosystem, maintained by the Research Council of Finland.
 
 The mission of FiQCI is to provide state-of-the-art quantum-computing services such as computing time and training to the Finnish RDI communities. This includes providing a hybrid high-performance computing and quantum computing (HPC+QC) platform for developing, testing, and exploiting quantum-accelerated computational workflows. Through FiQCI, Finnish researchers have access to one of the most powerful hybrid HPC+nQC resources in the world, available for quantum accelerated research and development. The infrastructure also aims to offer possibilities to carry out experiments in quantum physics.
 
@@ -45,7 +45,7 @@ Helmi, the first Finnish quantum computer, co-developed by VTT and IQM Quantum C
 
 ### Kvasi quantum computer simulator
 
-Kvasi, the Atos Quantum Learning Machine, is a quantum computing simulator with which you can learn to use and develop new quantum algorithms. Kvasi provides a platform for developing and simulating quantum algorithms in both ideal and realistic, noisy conditions. Kvasi is capable of simulating algorithms for quantum computers of 30+ qubits. For more information, see [https://research.csc.fi/-/kvasi](https://research.csc.fi/-/kvasi)
+Kvasi, the Atos Quantum Learning Machine or Qaptiva is a quantum computing simulator with which you can learn to use and develop new quantum algorithms. Kvasi provides a platform for developing and simulating quantum algorithms in both ideal and realistic, noisy conditions. Kvasi is capable of simulating algorithms for quantum computers of 30+ qubits. For more information, see [https://research.csc.fi/-/kvasi](https://research.csc.fi/-/kvasi)
 
 ### Other resources
 
