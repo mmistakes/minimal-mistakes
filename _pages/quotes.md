@@ -237,13 +237,15 @@ _Riches seem to come to the poor in spirit, the poor in interest and joy. To put
 
 -- J Steinbeck, "East of Eden"
 
-
 ## On being knowledgeable
 
 _The medical profession is unconsciously irritated by lay knowledge._
 
 -- J Steinbeck, "East of Eden"
 
+_A man who is certain he is right is almost sure to be wrong._
+
+-- [Attributed to M Faraday](https://quoteinvestigator.com/2022/09/22/certain-right/), from a speech he gave in 1819.
 
 ## Learning
 
