@@ -16,8 +16,8 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
+title                    : "yongjunOS"
+title_separator          : "HI! i'm yongjun"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "yongjunOS"
 description              : "An amazing website."
