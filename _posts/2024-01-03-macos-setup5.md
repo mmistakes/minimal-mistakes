@@ -103,9 +103,3 @@ VSCode로 개발하는 분이 아니라면 별도 설정하지 않아도됩니�
 ![Figma for VS Code](/images/2024-01-03-macos-setup5/Figma for VS Code.png)
 
 - 요즘 UI/UX 기획자가 Figma를 통하여 기획을 하는 경우가 있습니다.  이때 Figma에서 기획내용을 빠르고,  그리고 실시간으로 확인할 수 있게 하는 Extension 입니다.
-
-
-
-### 마치면서
-
-VSCode는 가볍고 Extension에 의해 다양한 언어를 개발할 수 있게 해줍니다.  하지만 과도한 Extension의 사용 등은 장점인 가벼움을 해칠 수 있습니다.  자신만의 설정을 찾아가 보세요.
