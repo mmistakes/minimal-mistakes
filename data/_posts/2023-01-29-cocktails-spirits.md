@@ -3,8 +3,7 @@ title: Cocktails, spirits & data
 tags:
   - drink
   - cocktails
-  - literature
-  - james bond
+  - alcohol
 categories: data
 excerpt: Looking at the IBA cocktails, in data.
 ---
