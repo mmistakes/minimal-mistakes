@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "MacOS Setup - Homebrew 설치 및 설정 & App Store"
+title: "MacOS 재설치 - Homebrew 설치 및 설정 & App Store"
 categories: [macos]
-tag: [macos, brew, setup]
+tag: [mac, macos, m1, m2, m3, setup, 맥, 재설치, 초기화, brew, app store]
 order: 1
 published: true
 typora-root-url: ../
@@ -72,7 +72,3 @@ brew bundle
 - Wiregaurd - 개발시 별도 생성된 VPN에 접속할 때 사용합니다. (선택)
 
 - Xcode - IOS 개발을 할 때 사용합니다. (필수)
-
-### 마치면서
-
-개발시 MAC에 여러가지를 많이 해보았지만, 역시 욕심 내지 않고 필요한 것들로 개발에 집중하는 것이 좋더라구요. 방문하신 여러분 모두 MAC을 다시 설정시에 내용이 많이 도움이 되었으면 좋겠습니다.

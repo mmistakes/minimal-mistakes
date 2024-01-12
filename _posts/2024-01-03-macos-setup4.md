@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "MacOS Setup - Git 초기 설정"
+title: "MacOS 재설치 - Git 초기 설정"
 categories: [macos]
-tag: [macos, setup, git, github, multi]
+tag: [mac, macos, m1, m2, m3, setup, 맥, 재설치, 초기화, git, github]
 order: 4
 published: true
 typora-root-url: ../
@@ -121,7 +121,3 @@ git config --global commit.template ~/.gitmessage.txt
 ```
 
 위의 명령어를 작성하면 다음부터 작성하는 commit의 내용이 위와 같이 변경됩니다. 개발한 내용을 더 풍성하게 작성하여 다른 개발자에게 전달 할 수 있게 합니다.
-
-### 마치면서
-
-git을 이용하여 처리하는 일은 생활이 되어야합니다. 나중에는 타인의 `git conflict`도 처리할 수 있는 분들이 되시기 바랍니다.

@@ -2,7 +2,7 @@
 layout: single
 title: "MacOS Setup - VSCode 환경설정 및 유용한 Extension"
 categories: [macos]
-tag: [macos, setup, vscode, extension]
+tag: [mac, macos, m1, m2, m3, setup, 맥, 재설치, 초기화, vscode, extension]
 order: 5
 published: true
 typora-root-url: ../
