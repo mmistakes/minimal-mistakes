@@ -56,7 +56,7 @@ Enjoy (with some good wine and a great pasta dish of course)!
 
 ---
 
-*Oh, I have newsletter (see link in navigation above), if you want to get things like this and more in your inbox you can subscribe from here, entering your email. It's free.*
+*Oh, I have a newsletter (see link in navigation above), if you want to get things like this and more in your inbox you can subscribe from here, entering your email. It's free.*
 
 <iframe
 scrolling="no"

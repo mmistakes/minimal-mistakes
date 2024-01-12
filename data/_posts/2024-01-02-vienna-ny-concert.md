@@ -38,7 +38,7 @@ About some of the other ones, I personally didn't know their names. Interestingl
 
 ---
 
-*Oh, I have newsletter (see link in navigation above), powered by Buttondown, if you want to get things like this and more in your inbox you can subscribe from here, entering your email. It's free.*
+*Oh, I have a newsletter (see link in navigation above), powered by Buttondown, if you want to get things like this and more in your inbox you can subscribe from here, entering your email. It's free.*
 
 <iframe
 scrolling="no"
