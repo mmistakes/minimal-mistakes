@@ -3,7 +3,7 @@ layout: single
 title: "Terraform - 테라폼 RDS 서비스로 Database 구성과 사용"
 categories: [terraform]
 tag: [terraform]
-author_profile: false
+published: false
 typora-root-url: ../
 ---
 

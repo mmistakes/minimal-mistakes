@@ -4,7 +4,7 @@ title: "Terraform - 테라폼 기본설정"
 categories: [terraform]
 tag: [setup, terraform, basic]
 order: 1
-author_profile: false
+published: false
 typora-root-url: ../
 ---
 
