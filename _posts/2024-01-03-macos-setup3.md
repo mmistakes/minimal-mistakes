@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "MacOS Setup - NVM 설정"
+title: "MacOS 재설치 - NVM으로 Node 버전관리하기"
 categories: [macos]
-tag: [macos, setup, node, nvm]
+tag: [mac, macos, m1, m2, m3, setup, 맥, 재설치, 초기화, node, nvm, 버전관리]
 order: 3
 published: true
 typora-root-url: ../
@@ -52,7 +52,3 @@ nvm use default
 ```
 
 default로 설정된 node버전을 이용하겠다 설정하면 기본적 설정은 완료 됩니다.
-
-### 마치면서
-
-개인과 회사 또는 커뮤니티에서의 개발시 환경이 다를 수 있습니다. Node 버전을 변경하며 여러 곳에서 멋진 개발하세요.
