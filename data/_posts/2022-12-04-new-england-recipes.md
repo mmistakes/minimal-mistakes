@@ -199,7 +199,7 @@ The Food Timeline definitely deserves a place on the list of data resources I ke
 
 ---
 
-*Oh, I have newsletter (see link in navigation above), if you want to get things like this and more in your inbox you can subscribe from here, entering your email. It's free.*
+*Oh, I have a newsletter (see link in navigation above), if you want to get things like this and more in your inbox you can subscribe from here, entering your email. It's free.*
 
 <iframe
 scrolling="no"
