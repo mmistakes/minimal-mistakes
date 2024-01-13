@@ -38,11 +38,12 @@ site because of some style changes. I would recommend using Jekyll to serve the 
 If you prefer you could use docker to create a container which will build and serve your project.
 
 ```bash
+export JEKYLL_VERSION=4.2
 docker run --rm \
---volume="$PWD:/srv/jekyll" \
--p 4000:4000 \
--it jekyll/jekyll:4.2.0 \
-jekyll serve --watch --force_polling --drafts --unpublished --incremental
+  --volume="$PWD:/srv/jekyll:Z" \
+  -p 4000:4000 \
+  -it jekyll/jekyll:$JEKYLL_VERSION \
+  jekyll serve --watch --force_polling --drafts --future --unpublished --incremental
 ```
 
 Your site will then be available at [http://0.0.0.0:4000](http://0.0.0.0:4000).
@@ -57,7 +58,7 @@ the changes into the master branch.
 So, run the following command:
 
 ```bash
-docker-compose up
+docker compose up
 ```
 
 As I said this will create two containers. To find out the external URL you can use fro your
@@ -69,6 +70,21 @@ local Jekyll site you have two options:
 or
 
 - you can go to http://localhost:4040/
+
+### Bundle update
+
+From time to time your Gem bundles will get out of sync. Messages like
+`Bundler 2.3.13 is running, but your lockfile was generated with 2.2.2.` or
+`ruby_dep-1.5.0 requires ruby version >= 2.2.5, ~> 2.2, which is incompatible with the current version, ruby 3.1.1p18`
+may just mean you need to update your gems
+
+```shell
+export JEKYLL_VERSION=4.2.2
+docker run --rm \
+  --volume="$PWD:/srv/jekyll:Z" \
+  -it jekyll/jekyll:$JEKYLL_VERSION \
+  bundle update
+```
 
 ## Resumé to PDF
 
