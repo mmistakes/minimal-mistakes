@@ -16,7 +16,7 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 categories:
-  - title: "Develop"
+  - title: "Develop" 
     children:
       - title: "Java"
         url: /Develop/java/

@@ -1,9 +1,9 @@
 ---
-title: "Web"
+title: "Markdown"
 layout: category
 permalink: /Develop/markdown/
 author_profile: true
-taxonomy: markdown
+taxonomy: Markdown
 sidebar:
   nav: "categories"
 ---
