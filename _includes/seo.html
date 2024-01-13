@@ -6,8 +6,11 @@
 
 {% assign title_separator = site.title_separator | default: '-' | replace: '|', '&#124;' %}
 
+{%- assign author = page.author | default: page.authors[0] | default: site.author -%}
+{%- assign author = site.data.authors[author] | default: author -%}
+
 {%- if page.title -%}
-  {%- assign seo_title = page.title | append: " " | append: title_separator | append: " " | append: site.title -%}
+  {%- assign seo_title = page.title | append: " " | append: title_separator | append: " " | append: author.name -%}
 {%- endif -%}
 
 {%- if seo_title -%}
@@ -24,9 +27,6 @@
 {%- if seo_description -%}
   {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip -%}
 {%- endif -%}
-
-{%- assign author = page.author | default: page.authors[0] | default: site.author -%}
-{%- assign author = site.data.authors[author] | default: author -%}
 
 {%- if author.twitter -%}
   {%- assign author_twitter = author.twitter | replace: "@", "" -%}
@@ -151,8 +151,5 @@
 {% endif %}
 {% if site.naver_site_verification %}
   <meta name="naver-site-verification" content="{{ site.naver_site_verification }}">
-{% endif %}
-{% if site.baidu_site_verification %}
-  <meta name="baidu-site-verification" content="{{ site.baidu_site_verification }}">
 {% endif %}
 <!-- end _includes/seo.html -->

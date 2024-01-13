@@ -5,15 +5,16 @@
 .archive {
   margin-top: 1em;
   margin-bottom: 2em;
+  padding-left: 1.5em;
 
   @include breakpoint($large) {
     float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
+    width: calc(100% - #{$left-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
+    width: calc(100% - #{$left-sidebar-width});
     padding-right: $right-sidebar-width;
   }
 }
@@ -28,13 +29,15 @@
 
   a[rel="permalink"] {
     position: static;
+    text-decoration: none;
   }
 }
 
 .archive__subtitle {
-  margin: 1.414em 0 0.5em;
+  margin: 1em 0 0.5em;
   padding-bottom: 0.5em;
-  font-size: $type-size-5;
+  font-family: $menufont;
+  font-size: $type-size-4;
   color: $muted-text-color;
   border-bottom: 1px solid $border-color;
 
@@ -44,8 +47,11 @@
 }
 
 .archive__item-title {
+  margin-top: 1.3em;
   margin-bottom: 0.25em;
-  font-family: $sans-serif-narrow;
+  font-family: $sans-serif;
+  font-size: ($h-size-4 + $h-size-3) / 2;
+  font-weight: 500;
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -64,6 +70,10 @@
   }
 }
 
+.entries-list {
+  padding-right: 1em;
+}
+
 /* remove border*/
 .page__content {
   .archive__item-title {
@@ -74,7 +84,8 @@
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-6;
+  font-size: 0.85em;
+  font-weight: 400;
 
   & + p {
     text-indent: 0;
@@ -89,9 +100,11 @@
   position: relative;
   border-radius: $border-radius;
   overflow: hidden;
+  text-align: center;
 
   img {
-    width: 100%;
+    /* 2022.01.28 set min-width */
+    width: 80%;
   }
 }
 
@@ -140,11 +153,11 @@
     /* extend grid elements to the right */
 
     @include breakpoint($large) {
-      margin-right: -1 * $right-sidebar-width-narrow;
+      margin-right: -1 * $left-sidebar-width-narrow;
     }
 
     @include breakpoint($x-large) {
-      margin-right: -1 * $right-sidebar-width;
+      margin-right: -1 * $left-sidebar-width;
     }
   }
 }
@@ -256,7 +269,7 @@
   @include breakpoint($small) {
     float: left;
     margin-bottom: 0;
-    width: span(4 of 12);
+    width: span(12 of 12);
 
     &:nth-child(3n + 1) {
       clear: both;
@@ -451,6 +464,14 @@
     @include breakpoint($x-large) {
       padding-right: 0;
     }
+  }
+
+  .archive__item-title {
+    margin-top: 0.5em;
+    margin-bottom: 1.2em;
+    text-align: center;
+    font-size: ($h-size-2 + $h-size-3) / 2;
+    font-weight: 600;
   }
 }
 

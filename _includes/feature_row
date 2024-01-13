@@ -9,7 +9,7 @@
   {% for f in feature_row %}
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">
-        {% if f.image_path %}
+        <!-- {% if f.image_path %}
           <div class="archive__item-teaser">
             <img src="{{ f.image_path | relative_url }}"
                  alt="{% if f.alt %}{{ f.alt }}{% endif %}">
@@ -17,9 +17,10 @@
               <span class="archive__item-caption">{{ f.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
             {% endif %}
           </div>
-        {% endif %}
+        {% endif %} -->
 
-        <div class="archive__item-body">
+        <div class="archive__item-body" style="margin-bottom: 4em;">
+          <a href="{{ f.url | relative_url }}" style="text-decoration: none;">
           {% if f.title %}
             <h2 class="archive__item-title">{{ f.title }}</h2>
           {% endif %}
@@ -30,9 +31,20 @@
             </div>
           {% endif %}
 
-          {% if f.url %}
+          <!-- {% if f.url %}
             <p><a href="{{ f.url | relative_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+          {% endif %} -->
+
+          {% if f.image_path %}
+          <div class="archive__item-teaser">
+            <img src="{{ f.image_path | relative_url }}"
+                 alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+            {% if f.image_caption %}
+              <span class="archive__item-caption">{{ f.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+            {% endif %}
+          </div>
           {% endif %}
+          </a>
         </div>
       </div>
     </div>

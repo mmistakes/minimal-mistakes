@@ -2,16 +2,16 @@
    jQuery plugin settings and other scripts
    ========================================================================== */
 
-$(function() {
+$(document).ready(function() {
   // FitVids init
   $("#main").fitVids();
 
   // Sticky sidebar
   var stickySideBar = function() {
     var show =
-      $(".author__urls-wrapper").find("button").length === 0
+      $(".author__urls-wrapper button").length === 0
         ? $(window).width() > 1024 // width should match $large Sass variable
-        : !$(".author__urls-wrapper").find("button").is(":visible");
+        : !$(".author__urls-wrapper button").is(":visible");
     if (show) {
       // fix
       $(".sidebar").addClass("sticky");
@@ -28,9 +28,9 @@ $(function() {
   });
 
   // Follow menu drop down
-  $(".author__urls-wrapper").find("button").on("click", function() {
+  $(".author__urls-wrapper button").on("click", function() {
     $(".author__urls").toggleClass("is--visible");
-    $(".author__urls-wrapper").find("button").toggleClass("open");
+    $(".author__urls-wrapper button").toggleClass("open");
   });
 
   // Close search screen with Esc key
@@ -49,7 +49,7 @@ $(function() {
     $(".initial-content").toggleClass("is--hidden");
     // set focus on input
     setTimeout(function() {
-      $(".search-content").find("input").focus();
+      $(".search-content input").focus();
     }, 400);
   });
 
@@ -84,7 +84,7 @@ $(function() {
   // add lightbox class to all image links
   $(
     "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']"
-  ).has("> img").addClass("image-popup");
+  ).addClass("image-popup");
 
   // Magnific-Popup options
   $(".image-popup").magnificPopup({

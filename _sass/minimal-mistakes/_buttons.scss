@@ -30,7 +30,8 @@
 
   /* button colors */
   $buttoncolors:
-  (primary, $primary-color),
+  /* 2022.01.31 projects tab button color change */
+  (primary, #bdb7b475),
   (inverse, #fff),
   (light-outline, transparent),
   (success, $success-color),
@@ -56,7 +57,7 @@
       }
 
       &:hover {
-        @include yiq-contrasted(mix(#000, $color, 20%));
+        @include yiq-contrasted(mix(#FFF, $color, 10%));
       }
     }
   }

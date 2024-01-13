@@ -9,11 +9,13 @@ html {
 }
 
 body {
-  margin: 0;
+  // for fixed masterhead
+  margin-top: 5em;
   padding: 0;
-  color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  /* 2022.01.19 change font weight & skew */
+  line-height: 1.8;
+	font-weight: 400;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -27,14 +29,13 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 2em 0 0.5em;
-  line-height: 1.2;
+  margin-top: 1em;
+  line-height: 1.5;
   font-family: $header-font-family;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 h1 {
-  margin-top: 0;
   font-size: $h-size-1;
 }
 
@@ -61,10 +62,6 @@ h6 {
 small,
 .small {
   font-size: $type-size-6;
-}
-
-p {
-  margin-bottom: 1.3em;
 }
 
 u,
@@ -104,13 +101,25 @@ abbr[data-original-title] {
   border-bottom: 1px dotted $text-color;
 }
 
+/* mark */
+mark {
+  background-color: $mark-highlight-color;
+  color: rgb(27, 26, 26);
+  padding: 0.2em 0.25em 0.2em 0.25em;
+  border-radius: 0.3em;
+}
+
+strong {
+  font-weight: 600;
+}
+
 /* blockquotes */
 
 blockquote {
-  margin: 2em 1em 2em 0;
-  padding-left: 1em;
-  padding-right: 1em;
-  font-style: italic;
+  margin: 1.5em 1em 1.5em 0em;
+  padding: 0.7em 1em 0.7em 1.5em;
+  background-color: $block-quote-background-color;
+
   border-left: 0.25em solid $primary-color;
 
   cite {
@@ -121,15 +130,25 @@ blockquote {
       padding-right: 5px;
     }
   }
+
+  hr {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+  }
+
+  :first-child {
+    margin-top: 0px;
+  }
+
+  :last-child {
+    margin-bottom: 0px;
+  }
 }
 
 /* links */
 
 a {
-  
-  text-decoration: none;  
-
-
+  line-height: 1.5;
   &:focus {
     @extend %tab-focus;
   }
@@ -164,25 +183,65 @@ pre {
   overflow-x: auto; /* add scrollbars to wide code blocks*/
 }
 
+p > code,
+a > code,
+li > code,
+figcaption > code,
+td > code {
+  font-size: 0.85em;
+  padding: 0.15em 0.05em 0.15em 0.05em;
+  margin-right: 0.1em;
+  font-family: $monospace;
+  font-weight: 500;
+  background-color: $code-background-color-dark;
+  color: $text-color;
+  border-radius: 2px;
+  
+  &:before,
+  &:after {
+    letter-spacing: -0.2em;
+    content: "\00a0"; /* non-breaking space*/
+  }
+}
+
 /* horizontal rule */
 
 hr {
   display: block;
-  margin: 1em 0;
+  margin: 3em 0em 3em 0em;
   border: 0;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid mix($text-color, $background-color, 10%);
+
 }
 
 /* lists */
 
 ul li,
 ol li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
+
+  p {
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
 }
 
 li ul,
 li ol {
-  margin-top: 0.5em;
+  margin-bottom: 0.3em;
+
+  p {
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+ul ul {
+  padding-inline-start: 20px;
 }
 
 /*
@@ -199,6 +258,7 @@ figure {
   -webkit-box-align: start;
   align-items: flex-start;
   flex-wrap: wrap;
+  /* 2022.01.21 lifelog image gap (not changed) */
   margin: 2em 0;
 
   img,
@@ -250,8 +310,9 @@ figure {
 figcaption {
   margin-bottom: 0.5em;
   color: $muted-text-color;
-  font-family: $caption-font-family;
-  font-size: $type-size-6;
+  font-family: $menufont;
+  font-size: $type-size-5;
+
 
   a {
     -webkit-transition: $global-transition;

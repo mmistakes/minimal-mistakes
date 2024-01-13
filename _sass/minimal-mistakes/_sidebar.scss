@@ -8,27 +8,22 @@
 
 .sidebar {
   @include clearfix();
-  // @include breakpoint(max-width $large) {
-  //   /* fix z-index order of follow links */
-  //   position: relative;
-  //   z-index: 10;
-  //   -webkit-transform: translate3d(0, 0, 0);
-  //   transform: translate3d(0, 0, 0);
-  // }
+
+  @include breakpoint(max-width $large) {
+    /* fix z-index order of follow links */
+    position: relative;
+    z-index: 10;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
   @include breakpoint($large) {
     float: left;
-    width: calc(#{$right-sidebar-width-narrow} - 1em);
-    opacity: 0.75;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
-
-    &:hover {
-      opacity: 1;
-    }
+    width: calc(#{$left-sidebar-width-narrow} - 1em);
 
     &.sticky {
       overflow-y: auto;
+      top: 3.5em;
       /* calculate height of nav list
          viewport height - nav height - masthead x-padding
       */
@@ -37,12 +32,19 @@
   }
 
   @include breakpoint($x-large) {
-    width: calc(#{$right-sidebar-width} - 1em);
+    width: calc(#{$left-sidebar-width} - 1em);
+
   }
 
   > * {
-    margin-top: 1em;
+    /* sidebar left top & right margin */
+    // margin-top:1.2em;
+    /* 2022.01.25 avatar img margin top decrease */
+    // margin-top: 2.5em;
+    margin-top: 0.8em;
     margin-bottom: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   h2,
@@ -56,9 +58,10 @@
 
   p,
   li {
-    font-family: $sans-serif;
     font-size: $type-size-6;
     line-height: 1.5;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
   }
 
   img {
@@ -80,22 +83,15 @@
     right: 0;
     width: $right-sidebar-width-narrow;
     margin-right: -1 * $right-sidebar-width-narrow;
-    padding-left: 1em;
+    padding-left: 5em;
     z-index: 10;
 
     &.sticky {
       @include clearfix();
       position: -webkit-sticky;
       position: sticky;
-      top: 2em;
+      top: 7em;
       float: right;
-
-      .toc {
-        .toc__menu {
-          overflow-y: auto;
-          max-height: calc(100vh - 7em);
-        }
-      }
     }
   }
 
@@ -124,8 +120,6 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 36px;
-  height: 36px;
 
   @include breakpoint($large) {
     display: block;
@@ -134,15 +128,19 @@
   }
 
   img {
-    max-width: 110px;
-    border-radius: 50%;
+    max-width: 80px;
+    align-items: center;
+    background-attachment: fixed;
+    margin-top: 25px;
+    margin-bottom: 10px;
 
     @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
+      padding: 0px;
+      border: 0px solid $border-color;
     }
   }
 }
+
 
 .author__content {
   display: table-cell;
@@ -150,11 +148,13 @@
   padding-left: 15px;
   padding-right: 25px;
   line-height: 1;
+  /* 2022.01.23 margin at the bottom of the author name */
+  margin-bottom: 5px;
 
   @include breakpoint($large) {
     display: block;
     width: 100%;
-    padding-left: 0;
+    padding-left: 0px;
     padding-right: 0;
   }
 
@@ -173,26 +173,37 @@
   }
 }
 .sidebar .author__name {
-  font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-family: $menufont;
+  /* 2022.01.23 font size & weight change*/
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
 .author__bio {
   margin: 0;
-
+  font-size: 1.4em;
+  font-family: $menufont;
   @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 }
 
 .author__urls-wrapper {
   position: relative;
+  margin: 0.5em 0 0 0.5em;
+  border-left: 0px;
   display: table-cell;
   vertical-align: middle;
+  font-size: $type-size-5;
+  font-weight: 500;
   font-family: $sans-serif;
   z-index: 20;
   cursor: pointer;
+
+  &.sticky {
+    border-left: 2px solid rgba(199, 198, 198, 0.7);
+  }
 
   li:last-child {
     a {
@@ -201,6 +212,7 @@
   }
 
   .author__urls {
+    
     span.label {
       padding-left: 5px;
     }
@@ -238,6 +250,7 @@
   }
 }
 
+
 .author__urls {
   display: none;
   position: absolute;
@@ -249,6 +262,8 @@
   border-radius: $border-radius;
   background: $background-color;
   box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
+  /* 2022.01.22 change font */
+  font-family: $menufont;
   cursor: default;
 
   &.is--visible {
@@ -317,10 +332,6 @@
     color: inherit;
     font-size: $type-size-5;
     text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }
 
