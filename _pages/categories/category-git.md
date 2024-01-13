@@ -1,9 +1,9 @@
 ---
-title: "Web"
+title: "Gitgub"
 layout: category
-permalink: /Develop/web/
+permalink: /Develop/github/
 author_profile: true
-taxonomy: Web
+taxonomy: Github
 sidebar:
   nav: "categories"
 ---

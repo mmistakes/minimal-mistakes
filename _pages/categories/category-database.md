@@ -1,7 +1,7 @@
 ---
 title: "Database"
 layout: category
-permalink: /categories/database/
+permalink: /Develop/database/
 author_profile: true
 taxonomy: Database
 sidebar:

@@ -1,9 +1,9 @@
 ---
-title: "Web"
+title: "Spring"
 layout: category
-permalink: /Develop/web/
+permalink: /Develop/spring/
 author_profile: true
-taxonomy: Web
+taxonomy: Spring
 sidebar:
   nav: "categories"
 ---

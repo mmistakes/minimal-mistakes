@@ -1,9 +1,9 @@
 ---
 title: "Web"
 layout: category
-permalink: /Develop/web/
+permalink: /Develop/markdown/
 author_profile: true
-taxonomy: Web
+taxonomy: markdown
 sidebar:
   nav: "categories"
 ---

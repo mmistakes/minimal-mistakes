@@ -1,6 +1,26 @@
 ---
+title: "[Github] 원격저장소 URL 변경"
+excerpt: "로컬에서 깃허브 원격 저장소 url 변경하는법을 알아보자.  "
+
+categories:
+  - Github
+tags:
+  - [git]
+
+permalink: /git/git3/
+
+toc: true
+toc_sticky: true
+
+date: 2023-12-07
+last_modified_at: 2023-12-07
+---
+
+
+
+---
 layout: single
-title:  "[Github] 원격저장소 URL 변경"
+title:  
 categories: [git]
 tag: [github, git] 
 author_profile: false

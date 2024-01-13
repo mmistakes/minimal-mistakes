@@ -1,9 +1,9 @@
 ---
-title: "Web"
+title: "Algorithm"
 layout: category
-permalink: /Develop/web/
+permalink: /Develop/algorithm/
 author_profile: true
-taxonomy: Web
+taxonomy: algorithm
 sidebar:
   nav: "categories"
 ---

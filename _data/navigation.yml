@@ -16,25 +16,32 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 categories:
-  - title: "Title1"
+  - title: "Develop"
     children:
       - title: "Java"
-        url: /categories/java/
+        url: /Develop/java/
       - title: "Database"
-        url: /categories/database/
+        url: /Develop/database/
+      - title: "Github"
+        url: /Develop/github/  
       - title: "Web"
-        url: /categories/web/
-      - title: "Categories4"
-        url: /categories/categories4/
+        url: /Develop/web/  
+      - title: "Algorithm"
+        url: /Develop/algorithm/
+      - title: "Markdown"
+        url: /Develop/markdown/
+      - title: "Spring"
+        url: /Develop/spring/  
+    
 
-  - title: "Title2"
+  - title: ""
     children:
-      - title: "Categories5"
-        url: /categories/categories5/
+      - title: "FestivalLink"
+        url: /Project/festivallink/
       - title: "Categories6"
         url: /categories/categories6/
 
-  - title: "Title3"
+  - title: ""
     children:
       - title: "Categories7"
         url: /categories/categories7/
