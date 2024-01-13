@@ -1,9 +1,9 @@
 ---
-title: "Web"
+title: "Database"
 layout: category
-permalink: /categories/web/
+permalink: /categories/database/
 author_profile: true
-taxonomy: Web
+taxonomy: Database
 sidebar:
   nav: "categories"
 ---
