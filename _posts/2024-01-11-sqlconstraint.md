@@ -15,6 +15,8 @@ toc_sticky: true
 date: 2024-01-13
 last_modified_at: 2024-01-13
 ---
+ref -우재남, 『이것이 SQL Server다』, 한빛미디어(2020)
+{: .notice--info}
 
 ## 📌제약 조건 CONSTRAINT
 * **제약조건(Constraint)은 데이터의 무결성을** 지키기 위해 제한하는 조건이다. 데이터 무결성 = > 데이터에 결함이없음을뜻함.

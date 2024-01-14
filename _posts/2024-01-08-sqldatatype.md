@@ -15,6 +15,8 @@ toc_sticky: true
 date: 2024-01-08
 last_modified_at: 2024-01-08
 ---
+ref -우재남, 『이것이 SQL Server다』, 한빛미디어(2020)
+{: .notice--info}
 
 ## 📌MySQL데이터 타입
 
