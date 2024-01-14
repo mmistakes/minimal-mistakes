@@ -292,9 +292,11 @@ mid : 1
 
 알고리즘의 시간복잡도를 이해하기 쉽게 설명하기 위해 <b>Big-O 표기법</b>을 사용한다. 
 
-간단하게 해서 입력의 크기가 $n$ 일 때, $O(logn)$ 는 입력 크기의 로그에 비례하는 절차가 소요된다는 뜻이다. 
+간단하게 해서 입력의 크기가 $n$ 일 때, $O(n)$ 은 입력 크기에 비례하는 절차가 소요된다는 뜻이다. 
 
 ### Constant time algorithm
+
+<br>
 
 ```python
 arr = ['pasta', 'ice cream', 'pizza', 'waffle']
@@ -339,7 +341,7 @@ def print_first(arr):
 ```
 그러면 print문의 개수를 증가시키면 어떻게 될까? 4번의 print문을 수행하니까 시간복잡도는 $O(4)$ 라고 생각을 하게된다.
 
-그러나 여전히 $O(1)$ 이다 Big-O 는 함수의 디테일에 관심이 없다. 이 함수가 input size에 따라 어떻게 작동하는지만 생각한다. 
+그러나 여전히 $O(1)$ 이다. <b>Big-O 는 함수의 디테일에 관심이 없다.</b> 이 함수가 input size에 따라 어떻게 작동하는지만 생각한다. 
 
 print_first() 함수를 보면 input size 가 엄청나게 커져도 상관없이 미리 정해진 숫자에 따라 작동한다. 위 코드에서 input size는 중요하지 않다. 
 
@@ -457,7 +459,7 @@ log와 지수의 관계를 생각해보자. log와 지수는 정반대이다.
 
 ----
 
- Reference
+Reference
 - 시간복잡도 그래프 : <a href = 'https://www.theknowledgeacademy.com/blog/time-complexity/'>What is Time Complexity</a>
 - 로그와 지수 : <a href = 'https://helpingwithmath.com/logarithms'>logarithms</a>
 - 알고리즘 & 데이터 구조 : <a href= 'https://www.youtube.com/playlist?list=PL7jH19IHhOLMdHvl3KBfFI70r9P0lkJwL'> 노마드 코더 Nomad Coders</a>
