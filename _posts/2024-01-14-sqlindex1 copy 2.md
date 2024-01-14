@@ -7,7 +7,7 @@ categories:
 tags:
   - [index]
 
-permalink: /database/sql7/
+permalink: /database/sql8/
 
 toc: true
 toc_sticky: true
