@@ -22,11 +22,11 @@ locale: "ko-KR" #"en-US"
 title: "Minwoo's Blog " # 상단 헤더에 보이는 블로그 명
 title_separator: "&#124;"
 subtitle: # site tagline that appears below site title in masthead
-name: "minwoo" # 블로그 닉네임 설정
+name: "Minwoo" # 블로그 닉네임 설정
 description: "this is my blog!" # 블로그 설명
 url: "https://github-minwoo-jeon.github.io" # 블로그 URL
 baseurl: # the subpath of your site, e.g. "/blog"
-repository: "github-account/github-account.github.io" # GitHub Repo 이름
+repository: "minwoo-jeon/comments"  ##"github-account/github-account.github.io" # GitHub Repo 이름
 teaser: #
 
 # logo                     : # 블로그명 앞에 로고 추가하고 싶을 경우 사용

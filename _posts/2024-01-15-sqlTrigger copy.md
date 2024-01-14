@@ -17,7 +17,7 @@ last_modified_at: 2024-01-14
 ---
 
 ref -우재남, 『이것이 SQL Server다』, 한빛미디어(2020) , 
-{: .notice--warning}
+{: .notice--info}
 
 ## 📌트리거(trigger)
 

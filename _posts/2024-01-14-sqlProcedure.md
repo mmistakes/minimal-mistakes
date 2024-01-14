@@ -5,7 +5,7 @@ excerpt: "스토어드 프로시저에 대한 개념과 사용 방법 알아보�
 categories:
   - Database
 tags:
-  - [index]
+  - [index,mysql]
 
 permalink: /database/sql8/
 
