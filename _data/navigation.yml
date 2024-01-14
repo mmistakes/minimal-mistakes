@@ -7,6 +7,9 @@ main:
   - title: "GitHub"
     url: https://github.com/minwoo-jeon
 
+  - title: "Search"  
+    url: /search/
+
   # - title: "Projects"
   #   url: /projects/
 
