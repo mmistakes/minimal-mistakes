@@ -296,6 +296,8 @@ mid : 1
 
 ### Constant time algorithm
 
+<br>
+
 ```python
 arr = ['pasta', 'ice cream', 'pizza', 'waffle']
 
@@ -339,7 +341,7 @@ def print_first(arr):
 ```
 그러면 print문의 개수를 증가시키면 어떻게 될까? 4번의 print문을 수행하니까 시간복잡도는 $O(4)$ 라고 생각을 하게된다.
 
-그러나 여전히 $O(1)$ 이다 Big-O 는 함수의 디테일에 관심이 없다. 이 함수가 input size에 따라 어떻게 작동하는지만 생각한다. 
+그러나 여전히 $O(1)$ 이다. <b>Big-O 는 함수의 디테일에 관심이 없다.</b> 이 함수가 input size에 따라 어떻게 작동하는지만 생각한다. 
 
 print_first() 함수를 보면 input size 가 엄청나게 커져도 상관없이 미리 정해진 숫자에 따라 작동한다. 위 코드에서 input size는 중요하지 않다. 
 
