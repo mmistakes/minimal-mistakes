@@ -5,7 +5,6 @@ layout: single
 comments: false
 ---
 
-주니어 백엔드 개발자 전민우
 
 <div>
     <img src="/assets/images/min.png" alt="about_me" width="70%" min-width="700px" itemprop="image">
@@ -26,6 +25,11 @@ comments: false
           <a href="minwoo867412@naver.com">
             <meta itemprop="email" content="minwoo867412@naver.com" />
             <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">  minwoo867412@naver.com</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/minwoo8674/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">  https://www.instagram.com/minwoo8674/</span>
           </a>
         </li>
        
