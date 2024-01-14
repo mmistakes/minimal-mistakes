@@ -14,7 +14,7 @@ sidebar:
 
 <div style="display: flex; justify-content: center;">
   <img src="{{site.url}}\images\2024-01-13-time-complexity\time_over.png" alt="Alt text" style="width: 30%; margin: 0 35px;">
-  <img src="{{site.url}}\images\2024-01-13-time-complexity\stress.gif" alt="Alt text" style="width: 40%; margin: 0 5px;">
+  <img src="{{site.url}}\images\2024-01-13-time-complexity\crazy.gif" alt="Alt text" style="width: 40%; margin: 0 5px;">
 </div>
 
 <br>
