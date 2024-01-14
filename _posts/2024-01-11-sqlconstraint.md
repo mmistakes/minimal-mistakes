@@ -16,13 +16,13 @@ date: 2024-01-13
 last_modified_at: 2024-01-13
 ---
 
-## 제약 조건 CONSTRAINT
+## 📌제약 조건 CONSTRAINT
 * **제약조건(Constraint)은 데이터의 무결성을** 지키기 위해 제한하는 조건이다. 데이터 무결성 = > 데이터에 결함이없음을뜻함.
 아아디,이메일등등 제약조건을 줘서 중복되는 결함을 없애는 것을 바로 데이터의 무결성이라고 한다.
 
 ---
 
-### 기본키 PRIMARY KEY 제약조건 
+### ✅기본키 PRIMARY KEY  
 
 ```sql
 create table member(
@@ -40,7 +40,7 @@ height tinyint unsigned null
 
 ---
 
-### 외래키 FOREIGN KEY 제약조건
+### ✅외래키 FOREIGN KEY 
 
 
 ```sql
@@ -71,7 +71,7 @@ alter table buy              --- ALTER TALBE 에서 설정하는 외래키(이�
 
 ---
 
-### ON UPDATE CASCADE 
+### ✅ON UPDATE CASCADE 
 
 * 회원 테이블의 BLK가 물품을 2건 구매한 상태에서 회원 아이디를 PINK로 변경할 경우 어떻게 될까?
 
@@ -115,7 +115,7 @@ alter table buy
 
 ---
 
- ### 고유키 UNIQUE 제약조건
+ ### ✅고유키 UNIQUE 
 
 * 고유키 제약조건은 중복되지 않는 유일한 값을 입력해야한다. 기본키랑 비슷하지만 차이점은  고유키는 NULL을 허용함 대신 중복은 허용불가.
 * 고유키는 여러 개를 설정해두 된다.
@@ -135,7 +135,7 @@ insert into member values('APN','에이핑크', 164,'ping@gmail.com'); -- 에러
 ```
 ---
 
-### 체크 CHECK 제약조건
+### ✅체크 CHECK 
 * 체크 제약 조건은 입력되는 데이터를 점검하는 기능을한다. 
 
 ```sql
@@ -165,7 +165,7 @@ insert into member values('OMY','오마이걸',167,'010'); -- 에러: 체크 조
 
 ---
 
-### 기본값 default 
+### ✅기본값 default 
 
 ```sql
 -- 기본값 정의 (default)

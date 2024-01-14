@@ -16,7 +16,7 @@ date: 2024-01-08
 last_modified_at: 2024-01-08
 ---
 
-## MySQL데이터 타입
+## 📌MySQL데이터 타입
 
 ```sql
 create table hongong4(
