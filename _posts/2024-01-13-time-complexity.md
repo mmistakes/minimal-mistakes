@@ -292,7 +292,7 @@ mid : 1
 
 알고리즘의 시간복잡도를 이해하기 쉽게 설명하기 위해 <b>Big-O 표기법</b>을 사용한다. 
 
-간단하게 해서 입력의 크기가 $n$ 일 때, $O(logn)$ 는 입력 크기의 로그에 비례하는 절차가 소요된다는 뜻이다. 
+간단하게 해서 입력의 크기가 $n$ 일 때, $O(n)$ 은 입력 크기에 비례하는 절차가 소요된다는 뜻이다. 
 
 ### Constant time algorithm
 
@@ -457,7 +457,7 @@ log와 지수의 관계를 생각해보자. log와 지수는 정반대이다.
 
 ----
 
- Reference
+Reference
 - 시간복잡도 그래프 : <a href = 'https://www.theknowledgeacademy.com/blog/time-complexity/'>What is Time Complexity</a>
 - 로그와 지수 : <a href = 'https://helpingwithmath.com/logarithms'>logarithms</a>
 - 알고리즘 & 데이터 구조 : <a href= 'https://www.youtube.com/playlist?list=PL7jH19IHhOLMdHvl3KBfFI70r9P0lkJwL'> 노마드 코더 Nomad Coders</a>
