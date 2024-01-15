@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Search"
+    url: /search/
   - title: "Category"
     url: /categories/
   - title : "Tag"
@@ -30,6 +32,7 @@ main:
       url: /opencv/OpenCV%EA%B3%B5%EB%B6%80%EB%82%B4%EC%97%AD-%EB%AA%A9%EB%A1%9D/
     - title : 안드로이드 공부
       url: /%EB%AA%A9%EB%A1%9D%20%EB%AA%A8%EC%9D%8C/%EA%B0%9C%EB%B0%9C-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%ED%95%99%EC%8A%B5%EA%B8%B0%EB%A1%9D/
+    
  # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
@@ -50,3 +53,11 @@ sidebar-sample:
         url: /child-page-a3/
       - title: "Child Page A4"
         url: /child-page-a4/
+
+docs:
+ - title: "대목차"
+    children :
+      - title : "Category"
+        url: :/categories/
+      - title : "Tag"
+        url: :/Tag/
