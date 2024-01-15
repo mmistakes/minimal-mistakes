@@ -4,7 +4,7 @@ categories: [Open Mic Session, Open Mic]
 excerpt: "Short description of the session topic that is displayed below the article header on the landing page."
 ---
 
-First paragraph dewscribes who, what anf when. It shall contain something like: On Friday 13th May speaker [Michal Med](https://kbss.felk.cvut.cz/web/team#michal-med) held an Open Mic session with the topic \"Jobs to be Done\". Video and presentation included.
+First paragraph describes who, what and when. It shall contain something like: On Friday 13th May speaker [Michal Med](https://kbss.felk.cvut.cz/web/team#michal-med) held an Open Mic session with the topic \"Jobs to be Done\". Video and presentation included.
 
 Then include video using following code:
 

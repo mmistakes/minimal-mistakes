@@ -9,7 +9,7 @@ On Friday 15th December speaker [Michal Med](https://kbss.felk.cvut.cz/web/team#
 
 {% include figure image_path="assets/images/openmics/2023-12-15-widoco-and-co.png" alt="Widoco & co" %}{: .post-image }
 
-At the Knowlegde-based and Software Systems Group, we often design and create ontologies and RDF data. The main problem with graph data is usually visualization and documentation -- data are basically well described for machine reading, but humans may have problems with interpretation of interlinked graphs determined by persistent IRIs and all attributes in the form of triples.
+At the Knowledge-based and Software Systems Group, we often design and create ontologies and RDF data. The main problem with graph data is usually visualization and documentation -- data are basically well described for machine reading, but humans may have problems with interpretation of interlinked graphs determined by persistent IRIs and all attributes in the form of triples.
 
 There are few tools determined for automated generating of documentation based on the ontology content. Currently we are using Widoco [1] - the WIzard for DOCumenting Ontologies, but as we encountered some problems, we researched what alternatives are available for the documentation generation. Basically, there is only one relevant option for the usecase we are looking for, which is Python library and command-line interface for inspecting and visualizing RDF - Ontospy [2].
 
