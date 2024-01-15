@@ -21,7 +21,7 @@ main:
     - title : 개발 환경 세팅
       url : /%EB%AA%A9%EB%A1%9D%20%EB%AA%A8%EC%9D%8C/%EA%B8%B0%EC%88%A0-%EA%B4%80%EB%A0%A8-%EB%AA%A9%EB%A1%9D/
     - title : 개발 취미 내역
-      url : /%EB%AA%A9%EB%A1%9D%20%EB%AA%A8%EC%9D%8C/%EC%B7%A8%EB%AF%B8-%EA%B0%9C%EB%B0%9C%EB%AA%A8%EC%9D%8C/    
+      url : /%EB%AA%A9github/workspace/./_config.yml .%EB%A1%9D%20%EB%AA%A8%EC%9D%8C/%EC%B7%A8%EB%AF%B8-%EA%B0%9C%EB%B0%9C%EB%AA%A8%EC%9D%8C/    
   - title: "공부내역"
     sublinks:
     - title : python
@@ -54,10 +54,5 @@ sidebar-sample:
       - title: "Child Page A4"
         url: /child-page-a4/
 
-docs:
- - title: "대목차"
-    children :
-      - title : "Category"
-        url   :  /categories/
-      - title : "Tag"
-        url   : /Tag/
+
+
