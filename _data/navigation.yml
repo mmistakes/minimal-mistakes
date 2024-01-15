@@ -58,6 +58,6 @@ docs:
  - title: "대목차"
     children :
       - title : "Category"
-        url: :/categories/
+        url   :  /categories/
       - title : "Tag"
-        url: :/Tag/
+        url   : /Tag/
