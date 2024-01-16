@@ -32,7 +32,7 @@ The project, [ClimateVis](https://www.climatevis.com/), gives us a measurable co
 
 ## The data card
 
-<figure class="align-center responsive" style="width: 700px">
+<figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}warming-earth.jpg" alt="A hand-drawn graph of the global temperature anomaly from 1981 onwards, showing that the Earth is warming.">
   <figcaption>The Earth is warming: this is the global temperature anomaly (difference in T with respect to the mean 1951-1980). Data from NASA. In writing, some of the most important global political agreements on climate policy.</figcaption>
 </figure>
