@@ -27,17 +27,35 @@ interface Validatable<T> {
 }
 ```
 
-The method `validate` returns the validated data in case all the. Since we don't want to manage the case the data is not valid through exceptions, we'll introduce the `Either` type from the Arrow Kt library (if you need an insight on how to use it, please refer to [Functional Error Handling in Kotlin, Part 2: Result and Either](https://blog.rockthejvm.com/functional-error-handling-in-kotlin-part-2/)):
+The method `validate` returns the validated data in case all the. Since we don't want to manage the case the data is not valid through exceptions (see [Functional Error Handling in Kotlin, Part 1: Absent values, Nullables, Options](https://blog.rockthejvm.com/functional-error-handling-in-kotlin/#2-why-exception-handling-is-not-functional) for further details), we'll introduce the `Either` type from the Arrow Kt library (if you need an insight on how to use it, please refer to [Functional Error Handling in Kotlin, Part 2: Result and Either](https://blog.rockthejvm.com/functional-error-handling-in-kotlin-part-2/)):
 
 ```kotlin
 interface ValidationError
 
 interface Validatable<T> {
-    fun validate(): Either<ValidationError, T>
+    fun validate(): EitherNel<ValidationError, T>
 }
 ```
 
-We introduced the `ValidationError` interface to represent the possible validation errors.
+We introduced the `ValidationError` interface to represent the possible validation errors. Moreover, we don't want to block our validation process to the first error we'll find in case of complex types. So, we need a data structure that can represent a list of possible errors. For this reason, we didn't use the `Either` type, but the `EitherNel` type, which is a type alias for `Either<NonEmptyList<E>, A>` in the Arrow Kt library
+
+```
+// Arrow Kt library
+public typealias EitherNel<E, A> = Either<NonEmptyList<E>, A>
+```
+
+The `NonEmptyList` type is a data structure contained in the Arrow library that represents a list of elements that is guaranteed to be non-empty. 
+
+Now, we need an type to validate. We'll use the information needed to create a new portfolio, that is, the user id and the amount of money to be invested:
+
+```kotlin
+data class CreatePortfolioDTO(val userId: String, val amount: Double)
+```
+
+Let's try solving the problem using traditional object-oriented approaches. We need to make our DTO implement the `Validatable` interface, with the needed validation rules:
+
+TODO
+
 
 However, traditional object-oriented approaches sometimes fall short in providing flexible and reusable validation mechanisms. This brings us to the exploration of an alternative approach using Type Classes in Kotlin.
 
