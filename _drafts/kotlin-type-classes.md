@@ -17,7 +17,29 @@ TODO
 
 ## 2. The Problem
 
-In software development, especially in systems dealing with data transactions like user portfolios, data validation is crucial. Ensuring that data conforms to expected formats and rules is vital for maintaining the integrity of the system. However, traditional object-oriented approaches sometimes fall short in providing flexible and reusable validation mechanisms. This brings us to the exploration of an alternative approach using Type Classes in Kotlin.
+In software development, especially in systems dealing with data transactions like user portfolios, data validation is crucial. Ensuring that data conforms to expected formats and rules is vital for maintaining the integrity of the system.
+
+To achieve this, we need to define a component that defines the behavior of validating data. Let's call this component as `Validatable`:
+
+```kotlin
+interface Validatable<T> {
+    fun validate(): T
+}
+```
+
+The method `validate` returns the validated data in case all the. Since we don't want to manage the case the data is not valid through exceptions, we'll introduce the `Either` type from the Arrow Kt library (if you need an insight on how to use it, please refer to [Functional Error Handling in Kotlin, Part 2: Result and Either](https://blog.rockthejvm.com/functional-error-handling-in-kotlin-part-2/)):
+
+```kotlin
+interface ValidationError
+
+interface Validatable<T> {
+    fun validate(): Either<ValidationError, T>
+}
+```
+
+We introduced the `ValidationError` interface to represent the possible validation errors.
+
+However, traditional object-oriented approaches sometimes fall short in providing flexible and reusable validation mechanisms. This brings us to the exploration of an alternative approach using Type Classes in Kotlin.
 
 ## 3. How Object-Oriented Languages Solve the Problem
 
