@@ -51,9 +51,9 @@ ref -Java의 정석(남궁성)
 
 자바에서는 실행시 발생할수 있는 오류(Exception과 Error)를 클래스로 정의하였다.
 
-![image description](./assets/images/exception.png.)<br>
+![image description](/assets/images/exception.png.)<br>
 
-![image description](/assets/images/exception2.png.)<br>
+![image description](/assets./images/exception2.png.)<br>
 
 예외 클래스들은  두 그룹으로 나눠진다. 
 * Exception 클래스와 그자손들 (RuntimeException과 자손들 제외)
