@@ -24,7 +24,7 @@ ref -Java의 정석(남궁성)
 ### ✅프로그램 오류란?
 프로그램이 실행 중 어떤 원인에 의해서 오작동을 하거나 비정상적으로 종류되는것을 프로그램 오류 또는 에러라고 한다. 
 
-프로그램 오류 3가지로 나눈다
+자바 프로그램 오류 3가지로 나눈다
 
 ```
 컴파일 에러 : 컴파일 시에 발생하는 에러
@@ -279,10 +279,199 @@ Exception 인스턴스를 생성할떄 생성자에 String을 넣어주면, 이 
 
 * 메서드에 예외를 선언하려면, 메서드의 선언부에 키워드 **thorws**를 사용해서 메서드 내에서 발생할수 있는 예외를 적는다. 그 예외가 여러 개인 경우  쉼표(,)로 구분한다.
 
+```java
+  package exception;
+
+import java.io.*;
+
+public class ExceptionTest6 {
+    public static void main(String[] args) {
+        try{
+            File f =  createFile("test2.txt");
+            System.out.println(f.getName()+"파일이 성공적으로 생성되었습니다");
+        }catch (Exception e){
+            System.out.println(e.getMessage()+"다시 인력해 주시기 바랍니다");
+        }
+    } //main 메서드의 끝
+
+    static File createFile(String fileName) throws  Exception //떠넘긴다고 선언함 {
+        if (fileName==null || fileName.equals(""))
+            throw new   Exception("파일 이름이 유효하지 않습니다.");  //예외발생 예외객체생성
+        File f = new File(fileName);  // File 클래스의 객채 생성
+        //File 객체의 createNewFile 메서드를 이용해서 실제 파일을 생성한다.
+        f.createNewFile();
+        return f; // 생성된 객체의 잠초를 반혼한다
+        } //createFile 메서드 끝
+    }// 클래스의 끝
+
+/*출력
+ - > test2.txt파일이 성공적으로 생성되었습니다
+
+-> 파일 이름이 유효하지 않습니다.다시 인력해 주시기 바랍니다
+
+/*
+
 ```
-void method() throws Exception1, Exception2, .. 
-    //메서드의 내용
+ 
+ * 빈문자열 예외처리 과정
+1. 해당 예시에서 createFile 생성자값에 "" 빈문자열이 들어오면 그 빈문자 값을 createFile 메서드에 값을넘김.
+2. if 조건에서 넘어온 매개변수 값이 빈문자열임으로 조건식 true 
+3. 예외발생함으로 예외 객체를 생성함.
+4. createFile 메서드 보니깐 throws 되있는거 보니깐 예외를 메인한테 떠넘김 -> 호출한 main한태 예외 해결 하라고 던짐.
+5. 메인 가서 catch블럭에 Exception e 모든예외를 처리할수있는 블럭 찾아서 해결함.
+6. 파일 이름이 유효하지 않습니다.다시 인력해 주시기 바랍니다 출력 결과나옴.
+
+---
+
+### ✅finally 블럭
+
+* finally 블럭은 예외의 발생 여부와 관계없이 반드시 실행되어야하는 코드를 넣는다.
+* 선택적으로 사용할수있으며, try-catch-fianlly 순으로 구성된다.
+* 예외가 발생한 경우에는 try-catch-finally 의 순서로 실행되고, 예외 미발생시 try-finally의 순서대로 실행함.
+* try또는 catch블럭에서 return 문을 만나도 finally 블락은 수행이된다
+
+```java
+  package exception;
+
+  public class ExceptionTest11 {
+      public static void main(String[] args) {
+          try {
+              startInstall();
+              copyFile();
+              deleteFile();
+          }catch (Exception e){
+              e.printStackTrace();
+          }finally {
+              deleteFile();
+          }
+      }
+
+      static void startInstall(){
+          // 설치중
+      }
+      static void copyFile() {
+          //커피중
+      }
+      static void deleteFile() {
+          //삭제중
+      }
+  }
+
+```
+
+---
+
+### ✅사용자정의 예외 만들기
+
+* 우리가 직접 예외 클래스를 정의할수있다.
+* 만드는 방법은 상속을 통해만든다. 조상 Exception과 RuntimeExceptin중에 선택한다.
+
+```java
+class myException extends Exception{
+    private final int ERR_CODE; //에러 코드 값을 저장하기 위한 필드를 추가함.
+
+    myException(String msg, int errCode){ //생성자
+        super(msg)
+        ERR_CODE = errCode //생성자를 통해 초기화한다.
+    }
+
+    MyException(String msg){ //생성자
+        this(msg,100);  //ERR_CODE를 100 (기본값으로) 초기화한다.
+    }
+
+    public int getErrCode{ //에러 코드를 얻을 수 있는 메서드도 추가했다.
+        return ERR_CODE; //이 메서드는 주로 getMessage()와 함꼐 사용될 것이다.
+    }
+
 }
 
 ```
 
+* Exception 클래스는 생성 시에 String 값을 받아서 메시지로 지정할수 있다.
+* 사용자 정의 예외 클래스도 메시지를 저장 할 수 있으려면 위에 코드와 같이 String을 매개변수로 받는 생성자를 추가해주어야한다,
+
+
+
+---
+
+### ✅예외 되던지기(exception re-throwing)
+* 예외를 처리한 후에 다시 예외를 발생시키는것이다.
+* 호출한 메서드와 호출된 메서드 양쪽 모두에서 예외처리하는것,
+* 즉 예외를 양쪽에서 둘다 처리하는경우를 예외 되던지기라고 한다. 가끔씩 분할해서 에외를 처리해야하는경우에 사용함.
+
+
+```java
+public static void main(String[] args){
+    try{
+        method1();
+    }catch(Exception e){
+        System.out.println("main 메서드에서 예외가 처리되었습니다")
+    
+    }
+    
+}
+
+static void method1() throws Exception{
+    try{
+        thorw new Exception();  //예외발생
+    }catch(Exception e){
+        System.out.println("method1()에서 예외가 처리되었습니다.");
+        throw e; //다시 예외를 발생시킨다.
+    }
+}
+
+
+/*출력
+method1()에서 예외가 처리되었습니다.
+
+main 메서드에서 예외가 처리되었습니다.
+*/
+
+```
+
+1. 메인 블럭에서 method1()호출함.
+2. method1() 에서 예외발생 객체생성
+3. catch블럭 찾아서 method1()에서 예외 처리가되서 sout문 출력함
+4. 다시 예외를 발생시키고 호출한 메인으로 예외를 던진다
+5. 던진 에외를 main이 받고 처리한다.
+
+---
+
+### ✅연결된 예외(chained exception)
+* 한 예외가 다른 예외를 발생시킬수 있다.
+* 예외 A가 예외B를 발생시키면,A는 B의 원인 예외(cause exception)
+
+```
+Throwable initCause(Trowable cause) 지정한 예외를 원인 예외로 등록
+Throwable getCause() 원인 예외를 반환
+```
+
+```java
+public class Trowable implements Serializable{
+    
+    private Throwable cause = this; //객체 자신을 원인 예외로 등록
+}
+    public synchronized Throwable initCause(Trowable cause){  //매개변수로 넘어온 cause에 다른 예외 a가들어옴
+        this.cause = cause //cause 를 원인 예외로 등록
+        return this;
+    }
+
+```
+
+```java
+try{
+    startInstall()_ // spaceExceptin 발생
+    copyFile();
+}catch(SpaceExceptin e){
+    InstallException ie = new InstallException("설치중 예외발생"); //예와생성
+    ie.initCause(e) //InstallException의 원인 예외를 spaceExcpetion으로 지정
+    throw ie; //installExcepton을 발생시킨다
+}Catch(MemoryException me){
+   ,,,, 
+}
+
+```
+
+
+* 연결된 예외를 왜사용하는지?
+ 1. 여러 예외를 하나로 묶어서 다루기 위해서
