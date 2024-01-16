@@ -51,9 +51,9 @@ ref -Java의 정석(남궁성)
 
 자바에서는 실행시 발생할수 있는 오류(Exception과 Error)를 클래스로 정의하였다.
 
-![image description](/assets/images/exception.png.)<br>
+![image description](/assets/images/exception.png)<br>
 
-![image description](/assets./images/exception2.png.)<br>
+![image description](/assets/images/exception2.png)<br>
 
 예외 클래스들은  두 그룹으로 나눠진다. 
 * Exception 클래스와 그자손들 (RuntimeException과 자손들 제외)
@@ -177,7 +177,7 @@ public class ExceptionTest4 {
 5. 참조변수를 통해 ArithmeticException printStackTrace,getMessage 객체에 메서드들을 통해서 예외 정보를 알수있다.
 ```
 
-![image description](/assets/images/exceptionErro.png.)<br>
+![image description](/assets/images/exceptionErro.png)<br>
 
 ```
 printStackTrace() 호출결과 =>java.lang.ArithmeticException: / by zero
@@ -248,7 +248,7 @@ Exception 인스턴스를 생성할떄 생성자에 String을 넣어주면, 이 
 * Excepiton 클래스와 그자손)들이 발생한 가능성이 있는 문장들에 대해서는 예외 처리 해주지않으면 컴파일 조자 안됌.
 
 
-![image description](/assets/images/exception3.png.)<br>
+![image description](/assets/images/exception3.png)<br>
 <center> 컴파일 조차 안되게 빨간색으로뜸 </center>
 
 ---
