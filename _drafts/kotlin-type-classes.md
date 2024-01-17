@@ -85,7 +85,50 @@ If we can't use subtyping, what other solutions do we have? Well, if we are func
 
 Fortunately, functional programming comes with a solution for this problem: type classes. Type classes offer a solution by allowing us to define a set of behaviors (like validation rules) that can be applied to various types without altering the types themselves. This is particularly useful in a language like Kotlin, which supports both object-oriented and functional programming paradigms. 
 
-Type classes offer a solution by allowing us to define a set of behaviors (like validation rules) that can be applied to various types without altering the types themselves.
+Type classes offer a solution by allowing us to define a set of behaviors (like validation rules) that can be applied to various types without altering the types themselves. Let's see how.
+
+First, we need to refactor a bit the `Validatable<T>` interface. We'll proceed step by step, so the following version of the interface is not the final form:
+
+```kotlin
+interface Validator<T> {
+    fun validate(toValidate: T): EitherNel<ValidationError, T>
+}
+
+interface ValidationError
+```
+
+The main difference with the previous version is that the `validate` method now takes a parameter of type `T` that represents the object to validate. Now, we can implement the validation rules as follows for the `CreatePortfolioDTO` type:
+
+```kotlin
+val createPortfolioDTOValidator =
+    object : Validator<CreatePortfolioDTO> {
+        override fun validate(toValidate: CreatePortfolioDTO): EitherNel<ValidationError, CreatePortfolioDTO> {
+            // validation logic here
+        }
+    }
+```
+
+At first sight, we decouple the DTO from the code that validates it. 
+
+The `process` function, aka the function that uses the validation, can be rewritten as follows using the new `Validator<T>` interface:
+
+```kotlin
+fun <T> process(
+    toValidate: T,
+    validator: Validator<T>,
+) = either {
+    val validated: T = validator.validate(toValidate).bind()
+    // Do something with the validated object
+}
+```
+
+The `process` function now takes two parameters: the object to validate and the validator to use. As we can see, we can still take advantage of polymorphism, but we don't need to bind the validation logic to the type to validate. This kind of polymorphism is called _ad-hoc polymorphism_, and the `Validator<T>` interface is called a _type class_.
+
+So, a type class is parametric type containing a set of behaviors that can be applied to various types without altering the types themselves. In our case, the `Validator<T>` interface defines the behavior of validating a type `T`.
+
+Type classes don't suffer from the cons we saw in the object-oriented approach. In fact, we can define a type class for a type we don't own, and we can define multiple type classes for the same type. Moreover, we can achieve a better separation of concerns since the validation logic is decoupled from the type to validate.
+
+However, also type classes have their cons. First, they are less intuitive than the object-oriented approach. The problem is bigger if a developer has no experience with functional programming. Second, we have a problem of discoverability. In fact, we need to know that a type class exists for a type we want to validate. 
 
 ### Example: Validating a DTO
 
