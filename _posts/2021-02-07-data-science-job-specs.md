@@ -9,7 +9,6 @@ tags:
   - meta
   - data science
   - hiring
-  - job spec
   - writing
 excerpt: And how to avoid them
 ---

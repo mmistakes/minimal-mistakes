@@ -3,9 +3,8 @@ title: A journey through Renoir's colours, in data
 tags:
   - data
   - colour
-  - paintings
+  - painting
   - art
-  - renoir
   - k-means
   - colour segmentation
 gallery:

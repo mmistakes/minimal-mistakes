@@ -2,8 +2,7 @@
 title: Rome - The Babington's Tea Rooms
 tags:
   - rome
-  - tea
-  - places
+  - drink
 excerpt: Not your usual roman place, the Babington's tea rooms in Rome
 ---
 

@@ -4,7 +4,6 @@ tags:
   - linguistics
   - data
   - language
-  - modelling
   - nlp
 categories: data
 excerpt: "Studying the Heaps' law in different languages from NLTK Corpora"

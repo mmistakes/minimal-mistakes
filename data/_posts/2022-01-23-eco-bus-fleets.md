@@ -4,8 +4,6 @@ tags:
   - data
   - climate change
   - public transport
-  - transport
-  - emissions
 categories: data
 excerpt: Looking at data about the share of low-emission buses in fleets from specific cities
 ---

@@ -1,7 +1,7 @@
 ---
 title: Rallying into D3
 tags:
-  - data viz
+  - dataviz
   - d3
   - javascript
 categories: tech

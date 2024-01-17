@@ -4,7 +4,6 @@ tags:
   - data
   - music
   - classical music
-  - classical era
 categories: data
 excerpt: Exploring the favourite keys used by composers of the Classical era, in data.
 ---

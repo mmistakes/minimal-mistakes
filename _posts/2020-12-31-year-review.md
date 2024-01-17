@@ -3,7 +3,6 @@ title: 2020, the year in review
 tags:
   - life
   - review
-  - year
 excerpt: A classic of the year-end, reviewing what's done
 ---
 

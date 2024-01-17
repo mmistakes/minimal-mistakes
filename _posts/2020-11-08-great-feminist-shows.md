@@ -7,8 +7,7 @@ tags:
   - shows
   - netflix
   - series
-  - watching
-  - amazon-prime
+  - amazon prime
 excerpt: Talking about some shows I loved, with a feminist kick
 ---
 

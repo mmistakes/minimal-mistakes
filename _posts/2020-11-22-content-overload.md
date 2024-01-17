@@ -3,7 +3,6 @@ title: Content overload and new projects
 tags:
   - internet
   - life
-  - content
   - creativity
 excerpt: Framing projects and digesting content
 ---

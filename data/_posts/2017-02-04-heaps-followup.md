@@ -4,7 +4,6 @@ tags:
   - linguistics
   - data
   - language
-  - modelling
   - nlp
 categories: data
 excerpt: "The Heaps' law in different languages from Wikipedia text data"

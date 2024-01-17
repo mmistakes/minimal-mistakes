@@ -2,8 +2,8 @@
 title: The New Year's concert in Vienna
 tags:
   - music
-  - Vienna
-  - New Year
+  - vienna
+  - new year
   - concert
   - christmas
 categories: data

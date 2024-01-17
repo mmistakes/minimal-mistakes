@@ -3,7 +3,7 @@ title: "Some Matplotlib idiosyncrasies"
 tags:
   - python
   - matplotlib
-  - data viz
+  - dataviz
   - coding
 categories: tech
 excerpt: Some basics on how to use matplotlib for plotting data
