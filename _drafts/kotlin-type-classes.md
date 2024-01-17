@@ -64,17 +64,28 @@ data class CreatePortfolioDTO(val userId: String, val amount: Double) : Validata
 
 We'll focus on the validation logic in next sections.
 
-As we can see, the using direct subtyping to implement validation rules force us to change the code of the type we want to validate. At the beginning, this might not be a problem, but we don't always want to change the code of type to validate, and sometimes we simply can't. In fact, the code could be auto-generate by an external tool, or it could be part of a library we don't own. A good example can be DTOs generated from a protocol buffer, an avro, or a Swagger (OpenAPI) definition.
+As we can see, the using direct subtyping to implement validation rules force us to change the code of the type we want to validate. At the beginning, this might not be a problem, and it's a straightforward solution indeed. We're using polymorphism to solve the problem, and this is a good thing. For example, if we have an external function that uses the validation, we can write it once for all the types that implement the `Validatable<T>` interface:
 
-However, traditional object-oriented approaches sometimes fall short in providing flexible and reusable validation mechanisms. This brings us to the exploration of an alternative approach using Type Classes in Kotlin.
+```kotlin
+fun <T : Validatable<T>> process(validatable: T) = either {
+    val validated: T = validatable.validate().bind()
+    // Do something with the validated object
+}
+```
 
-## 3. How Object-Oriented Languages Solve the Problem
+However, we don't always want to change the code of type to validate using subtyping, and sometimes we simply can't.
 
-Object-oriented languages typically handle validation through inheritance and polymorphism. This approach, while powerful, can sometimes lead to rigid class hierarchies and can lack the expressiveness needed for more complex validation scenarios. For instance, extending classes or implementing interfaces for each validation rule can quickly become unwieldy.
+In fact, putting the type to validate and the validation process in the same place can decrease the maintainability to the former. For example, the object oriented approach can break the [Single Responsibility Principle](http://blog.rcard.in/solid/srp/programming/2017/12/31/srp-done-right.html). Indeed, it's not always the case that the behavior (aka, the methods) exposed by the type to validate is used by the same clients than the validation process.
+
+Moreover, the code could be auto-generate by an external tool, or it could be part of a library we don't own. A good example are DTOs generated from a protocol buffer, an avro, or a Swagger (OpenAPI) definition.
 
 ## 4. Type Classes: A Solution for Functional Languages
 
-Type classes offer a solution by allowing us to define a set of behaviors (like validation rules) that can be applied to various types without altering the types themselves. This is particularly useful in a language like Kotlin, which supports both object-oriented and functional programming paradigms.
+If we can't use subtyping, what other solutions do we have? Well, if we are functional programming geeks, we know that this paradigm doesn't have subtyping. However, we don't want to lose the possibility to write polymorphic code, such the one of the `process` function above. 
+
+Fortunately, functional programming comes with a solution for this problem: type classes. Type classes offer a solution by allowing us to define a set of behaviors (like validation rules) that can be applied to various types without altering the types themselves. This is particularly useful in a language like Kotlin, which supports both object-oriented and functional programming paradigms. 
+
+Type classes offer a solution by allowing us to define a set of behaviors (like validation rules) that can be applied to various types without altering the types themselves.
 
 ### Example: Validating a DTO
 
