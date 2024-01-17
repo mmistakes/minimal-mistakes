@@ -10,28 +10,32 @@
 
 ## Preprints
 
+- Dewaelle, H., Verguts, T., & Lesage, E. (2024). Validation of the Dutch version of the Creatures of Habit Scale (COHS): a self-report measure of the tendency for habitual behavior in daily life. [PsyArxiv.](https://osf.io/preprints/psyarxiv/zwbpu)
+
 - Verbeke, P., & Verguts, T. (2023). Reinforcement learning and meta-decision making. [PsyArxiv.](https://osf.io/preprints/psyarxiv/uvfhe)
   
 - Chen, H., Hauspie, C., Ergo, K., Calderon, C. B., & Verguts, T. (2023). Prediction error as the basis of the testing effect: Empirical and Modelling Evidence. [PsyArxiv.](https://osf.io/preprints/psyarxiv/ar5yd/)
 
 - Le Denmat, P, Verguts, T., & Desender, K. (2023). A low-dimensional approximation of optimal confidence. [BioArxiv.](https://www.biorxiv.org/content/10.1101/2023.03.15.532729v1)
 
-- Verbeke, P., & Verguts, T. (2023). Humans adaptively select different computational strategies in different learning environments. [BioArxiv.](https://www.biorxiv.org/content/10.1101/2023.01.27.525944v1)
-
 - Simoens, J., Verguts, T., & Braem, S. (2023). Meta-learning environment-specific learning rates. [PsyArxiv.](https://psyarxiv.com/ypd45)
 
 - Turkakin, E., Verguts, T., Desender, K., & Lesage, E. (2023). Should I Sample or Should I Go? An approximately optimal model for deciding when to stop sampling information. [PsyArxiv.](https://psyarxiv.com/tfe94/)
-
-- Van Marcke, H., Le Denmat, P., Verguts, T., & Desender, K. (2022). Manipulating prior beliefs causally induces under- and overconfidence. [BioRxiv.](https://doi.org/10.1101/2022.03.01.482511)
 
 - Lesage, E., & Verguts, T. (2022). Contextual overtraining accelerates habit formation in new stimuli.  [PsyArXiv.](https://doi.org/10.31234/osf.io/7m6bh)
 
 ## Recent publications
 
+in press:
+- Verbeke, P., & Verguts, T. (in press). Humans adaptively select different computational strategies in different learning environments. Psychological Review. [BioArxiv version.](https://www.biorxiv.org/content/10.1101/2023.01.27.525944v1)
+
+- Van Marcke, H., Le Denmat, P., Verguts, T., & Desender, K. (in press). Manipulating prior beliefs causally induces under- and overconfidence. Psychological Science. [BioRxiv version.](https://doi.org/10.1101/2022.03.01.482511)
+
+
 2023:
 - Huo, H., et al. (2023). The neural substrats of how model-based learning affects risk-taking: functional coupling between right cerebellum and left caudate. [Brain & Cognition.](https://www.sciencedirect.com/science/article/pii/S0278262623001471?dgcid=coauthor)
 
-- Xu, S., Simoens, J., Verguts, T., & Braem, S. (2022). Learning where to be flexible: Using environmental cues to regulate cognitive control. Journal of Experimental Psychology: General. [PsyArxiv version.](https://doi.org/10.31234/osf.io/y5h78) 
+- Xu, S., Simoens, J., Verguts, T., & Braem, S. (2023). Learning where to be flexible: Using environmental cues to regulate cognitive control. Journal of Experimental Psychology: General. [PsyArxiv version.](https://doi.org/10.31234/osf.io/y5h78) 
 
 - Beeckmans, M., Huycke, P., Verguts, T., & Verbeke, P. (2023). How much data do we need to estimate computational models of decision making? The COMPASS toolbox. [Behavior Research Methods](https://link.springer.com/article/10.3758/s13428-023-02165-7) [PsyArxiv version.](https://psyarxiv.com/dexyk/) 
 
