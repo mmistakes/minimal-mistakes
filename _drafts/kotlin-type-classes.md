@@ -52,10 +52,19 @@ Now, we need an type to validate. We'll use the information needed to create a n
 data class CreatePortfolioDTO(val userId: String, val amount: Double)
 ```
 
-Let's try solving the problem using traditional object-oriented approaches. We need to make our DTO implement the `Validatable` interface, with the needed validation rules:
+Let's try solving the problem using traditional object-oriented approaches. In the object-oriented approach, each class that needs validation would implement the `Validatable<T>` interface. This might look something like this for the `CreatePortfolioDTO` class:
 
-TODO
+```kotlin
+data class CreatePortfolioDTO(val userId: String, val amount: Double) : Validatable<CreatePortfolioDTO> {
+    override fun validate(): EitherNel<ValidationError, CreatePortfolioDTO> {
+        // validation logic here
+    }
+}
+```
 
+We'll focus on the validation logic in next sections.
+
+As we can see, the using direct subtyping to implement validation rules force us to change the code of the type we want to validate. At the beginning, this might not be a problem, but we don't always want to change the code of type to validate, and sometimes we simply can't. In fact, the code could be auto-generate by an external tool, or it could be part of a library we don't own. A good example can be DTOs generated from a protocol buffer, an avro, or a Swagger (OpenAPI) definition.
 
 However, traditional object-oriented approaches sometimes fall short in providing flexible and reusable validation mechanisms. This brings us to the exploration of an alternative approach using Type Classes in Kotlin.
 
