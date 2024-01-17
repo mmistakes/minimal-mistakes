@@ -15,7 +15,7 @@ These vaccine candidates are of different types, and a lot of them use methods w
 
 All the info here refers to date 30th April 2020 (date of the last WHO report as of the time of writing this).
 
-<figure class="align-center" style="width: 600px">
+<figure class="responsive" style="width: 600px">
   <img src="{{ site.url }}{{site.posts_images_path}}covid19-vaccine-types.jpg">
   <figcaption>A data card: types of COVID-19 vaccine candidates as of the 30th of April, 2020 (source: WHO vaccine landscape report).</figcaption>
 </figure>

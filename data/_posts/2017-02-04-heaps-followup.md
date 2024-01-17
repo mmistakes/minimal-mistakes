@@ -64,7 +64,7 @@ What we consider types here is just the different words, as in the previous post
 
 The next figure is the number of types versus the number of tokens for all these corpora. It is very interesting to see how Polish grows always faster than the rest (as we found in the previous post on the NLTK Polish corpus); Latins seems to be even faster; Dutch and Italian go hand in hand.
 
-<figure class="align-center">
+<figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}heaps-wiki-linear.svg" alt="">
   <figcaption>Types vs. tokens in linear scale: I love how Dutch and Italian seem to follow each other.</figcaption>
 </figure>
@@ -79,7 +79,7 @@ Fitting the logarithms of the power law (the Heaps' law) after throwing out the 
 * $$0.56$$ for Spanish
 * $$0.60$$ for Dutch
 
-<figure class="align-center">
+<figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}heaps-log-wiki-cut.svg" alt="">
   <figcaption>The logarithms of data with their fitting lines: dots are used to indicate the data and solid curves are the fits (one colour, one language).</figcaption>
 </figure>
@@ -106,7 +106,7 @@ With the stemmed versions of the corpora, the exponents we get from the fit are
 
 The following (and last) figure displays the curves for the stemmed versions alongside those for their non-stemmed counterparts.
 
-<figure class="align-center">
+<figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}heaps-wiki-linear-stemmed.svg" alt="">
   <figcaption>Again, one colour, one language, the dashed line is the original, non stemmed version. Clearly the areas below the stemmed versions are smaller than those below the non-stemmed ones.</figcaption>
 </figure>

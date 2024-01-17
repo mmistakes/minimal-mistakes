@@ -18,7 +18,7 @@ This will be assuming you have familiarity with what Deep Learning and object de
 
 Object detection in Deep Learning is the task of teaching the machine to tell you what's in an image and where it is.
 
-<figure class="align-center" style="width: 400px">
+<figure class="responsive" style="width: 400px">
   <img src="{{ site.url }}{{site.posts_images_path}}yolo-predictions.png">
   <figcaption>Detecting objects and where they are.</figcaption>
 </figure>
@@ -52,7 +52,7 @@ You'd typically leverage transfer learning by making use of a pre-trained networ
 
 One tool that you can use for annotation is [labelImg](https://github.com/tzutalin/labelImg). It's quite neat, and comes about in many of the blog posts of people that have done the same thing. It basically gives you a clean UI: you point it to a directory of images and then can tag each one, drawing bounding boxes around objects.
 
-<figure class="align-center" style="width: 500px">
+<figure class="responsive" style="width: 500px">
   <img src="{{ site.url }}{{site.posts_images_path}}labelimg.jpg">
   <figcaption>Say you want to detect dog faces and watermelons, this is labelImg on annotating.</figcaption>
 </figure>

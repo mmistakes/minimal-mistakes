@@ -56,7 +56,7 @@ Montmartre. Renoir lived here for a while in a house that is now a [small museum
 
 ## The data card
 
-<figure class="align-center" style="width: 600px">
+<figure class="responsive" style="width: 600px">
   <img src="{{ site.url }}{{site.posts_images_path}}renoir-colours.jpg">
   <figcaption>My data card on Renoir's art. Each bar, in chronological order bottom to top, represents a painting in its colour composition, where each colour is traced in its occupation (in percentage). On the right-hand side, some of the most famous paintings are highlighted. Colour palette of the segmentation in the legend at the bottom.</figcaption>
 </figure>
@@ -146,7 +146,7 @@ Hence I worked with a total of 124 works of art.
 
 Colour segmentation is the procedure whereby each pixel in an image is assigned to a membership class chosen from a set of options. Because assigning colour membership to pixels can be a quite arbitrary choice vitiated by a certain level of subjectivity, methods have been developed that use fuzzy logic to perform the task. These methods differ in the specifics of the mathematical function they use for mapping pixels to colour classes, and in the colour palette (set of classes) pixels are mapped to. As specified in the above, I chose the [Chamorro-Martínez](https://www.sciencedirect.com/science/article/abs/pii/S0165011406004209) method because of its palette.
 
-<figure class="align-center" style="width: 500px">
+<figure class="responsive" style="width: 500px">
   <img src="{{ site.url }}{{site.posts_images_path}}renoir_chamorro_martinez.jpg">
   <figcaption>Result from colour segmentation with the Chamorro-Martínez algorithm for "Yvonne et Christine Lerolle au piano" (left) and "Bal du Moulin de la Galette" (right).</figcaption>
 </figure>
@@ -159,7 +159,7 @@ I have applied this procedure to all the images I had and calculated the percent
 
 My first attempt to extract the main colours from the images had been running a [k-means clustering](https://en.wikipedia.org/wiki/K-means_clustering). The k-means algorithm is a type of unsupervised machine learning technique that aims, given a set of data points, at isolating *k* (a number chosen at the start) clusters of them such that each point is assigned to the nearest one and the centroid of a cluster represents an average of its member points. It is a way to find patches of points characterised by similar properties and is often employed in image processing to determine a chosen number of dominant colours.
 
-<figure class="align-center" style="width:500px">
+<figure class="responsive" style="width:500px">
   <img src="{{ site.url }}{{site.posts_images_path}}renoir_1860s_paintings_kmeans.png">
   <figcaption>k-means run on each of the 16 paintings from the 1860 decade, with k=10. Centroid colours are displayed in order of prevalence.</figcaption>
 </figure>

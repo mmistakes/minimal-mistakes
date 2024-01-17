@@ -11,7 +11,7 @@ excerpt: Looking at the volume of stories about climate change in the media to a
 
 This post accompanies this data card I've been doing for a series about climate change:
 
-<figure class="align-center" style="width: 600px">
+<figure class="responsive" style="width: 600px">
   <img src="{{ site.url }}{{site.posts_images_path}}nyt-climate-change.jpg">
   <figcaption>The NYT, stories on climate change, a data card.</figcaption>
 </figure>

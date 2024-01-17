@@ -11,7 +11,7 @@ In retrospective, we should have bought it a year ago, or maybe more, we've been
 
 Anyway, I'm not here to talk about the flat per se, but the process of going from "hey, shall we start looking for a flat to buy?" to "woah, we made it!", with the many human and bureaucratic hurdles along the way. It can be a long, exhausting and in many regards still backwards process. I won't name names, I just want to reflect on the unnecessary stress that the whole procedure may bring and where to improve.
 
-<figure class="align-center" style="width: 500px">
+<figure class="responsive" style="width: 500px">
   <img src="{{ site.url }}{{site.posts_images_path}}flat.jpg">
   <figcaption>Office space at our new flat, in the making.</figcaption>
 </figure>

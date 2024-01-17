@@ -28,7 +28,7 @@ Also, was 5 months within which we both had long holidays so March was off (in t
 
 Looking at Strava now, looking at the progression of the bars, they plot the monthly distance run:
 
-<figure class="align-center" style="width: 500px">
+<figure class="responsive" style="width: 500px">
   <img src="{{ site.url }}{{site.posts_images_path}}running-distances-bars.jpg">
   <figcaption>A screenshot for my Strava with the monthly distance run for the first months of 2019 (I didn't cut off the y axis, it's that I can't make it show just this desired period so had to cherry pick within the plot).</figcaption>
 </figure>

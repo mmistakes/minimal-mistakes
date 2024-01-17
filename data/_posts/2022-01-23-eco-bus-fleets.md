@@ -10,7 +10,7 @@ excerpt: Looking at data about the share of low-emission buses in fleets from sp
 
 This post illustrates some little work I did to dig out data about the share of low-emission buses in public transport fleets in various cities in Europe. Every place is at a different stage in their transition to a more sustainable form of transportation, commitments are made and it is important to measure progress against them - this just explores the situation as of now.
 
-<figure class="align-center" style="width: 650px">
+<figure class="responsive" style="width: 650px">
   <img src="{{ site.url }}{{site.posts_images_path}}eco-bus-fleets.jpg">
   <figcaption>Low-emission share of bus fleets as of now, various cities, plus infromation about bus presence and general sizes. All data is from CityTransitData except for Milan, where it comes from the most recent audit by the city's public transport provider (links below).</figcaption>
 </figure>

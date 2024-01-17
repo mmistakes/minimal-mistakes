@@ -57,14 +57,14 @@ The library was erected in 1848 and has been [a first in many things in the USA]
 
 For the third item, why not choosing a recipe from the book itself. I’ve gone to a random page and here it is, the recipe of the "delicate cake”. It is a great example of the colloquial style I was talking about earlier - it doesn’t even tell you how you should prepare your egg whites for instance, so I’m pretty sure if I attempted this it wouldn’t end up delicate at all.
 
-<figure class="align-center" style="width: 600px">
+<figure class="responsive" style="width: 600px">
   <img src="{{ site.url }}{{site.posts_images_path}}ne-recipe.jpg">
   <figcaption>"Delicate Cake", from "Our New England Family Recipes", 1910.</figcaption>
 </figure>
 
 ## The data card
 
-<figure class="align-center" style="width: 650px" >
+<figure class="responsive" style="width: 650px" >
   <img class="img-responsive" src="{{ site.url }}{{site.posts_images_path}}ne-recipes.jpg" alt="A data visualization with a heatmap of the most common ingredients and count of recipes shared in 'Our New England Family Recipes', 1910.">
   <figcaption>My data card on the most common ingredients and the recipes shared by couples of them in "Our New England Family Recipes" (1910).</figcaption>
 </figure>
@@ -107,7 +107,7 @@ If we naively look at which are the most frequent words in the whole text, we ge
 
 In any case, using NLTK's list of [English stopwords](https://www.nltk.org/search.html?q=stopwords&check_keywords=yes&area=default) to remove them from the whole text and then compute word frequencies (in terms of counts of occurrences) we obtain the following figure (for the 30 most common ones).
 
-<figure class="align-center" style="width: 800px">
+<figure class="responsive" style="width: 800px">
   <img class="img-responsive" src="{{ site.url }}{{site.posts_images_path}}ne-recipes-most-common-words.jpeg" alt="Bar plot of word frequency in 'Our New England Family Recipes', 1910">
   <figcaption>Frequency of the 30 most common words in the text, excluding stopwords.
 </figcaption>

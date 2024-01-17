@@ -23,7 +23,7 @@ Note: Richard Strauss has nothing to do with them, he was German and one of the 
 Music from the Strauss was overall considered "popular": they composed a lot of *polkas*, *quadrilles*, *galops*, *waltzes* etc - folk dance tunes from Central Europe, from Poland to Bohemia and beyond. The NY concert is a big celebration of these musical forms, however we may now perceive the concert as quite "aristocratic". The show always ends with three encores: a fast polka, the "Blue Danube" ("An der schönen blauen Donau" in the original) and the "Radetzky March". 
 
 
-<figure class="align-center" style="width: 600px">
+<figure class="responsive" style="width: 600px">
   <img src="{{ site.url }}{{site.posts_images_path}}vienna-ny-concert.jpg" alt="Drawing of rectangles of various size showing the counts of musical pieces by composers used in the last 5 years' of Vienna New Year's Concerts.">
   <figcaption>Count of pieces played per composer in the last 5 years (2020-2024) of the Vienna New Year's Concert at the Musikverein. Pieces are counted as executions, not unique ones.</figcaption>
 </figure>
