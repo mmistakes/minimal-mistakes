@@ -57,7 +57,7 @@ The library was erected in 1848 and has been [a first in many things in the USA]
 
 For the third item, why not choosing a recipe from the book itself. I’ve gone to a random page and here it is, the recipe of the "delicate cake”. It is a great example of the colloquial style I was talking about earlier - it doesn’t even tell you how you should prepare your egg whites for instance, so I’m pretty sure if I attempted this it wouldn’t end up delicate at all.
 
-<figure class="responsive" style="width: 600px">
+<figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}ne-recipe.jpg">
   <figcaption>"Delicate Cake", from "Our New England Family Recipes", 1910.</figcaption>
 </figure>

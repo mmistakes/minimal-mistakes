@@ -57,7 +57,7 @@ Each of the composers is assigned a colour and their mode keys are displayed on 
 
 The bars indicate the productive years of each composer and on the right there are indications for the three main sections into which the Classical era can be split (early, middle/late and transition to the Romantic).
 
-<figure class="responsive" style="width: 600px">
+<figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}music-classical-era-keys.jpg">
   <figcaption>My data card on the most commonly used keys by some prominent Classical era composers, lustrum by lustrum.</figcaption>
 </figure>

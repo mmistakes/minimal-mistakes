@@ -7,7 +7,7 @@ categories: data
 excerpt: A lipidic data journey.
 ---
 
-<figure class="responsive" style="width: 600px">
+<figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}fats-oils.jpg" alt="A hand-drawn bar+line plot showing the fat content and the smoke point of several cooking fats and oils.">
   <figcaption>The nutritional content (per 100g) of 16 cooking oils/fats, the graph displays saturated, monounsaturated and polyunsaturated fats, along with their smoke point (on the right y-axis). All except for butter are nearly 100% fats. Data: USDA (nutritional content), “Culinary Nutrition - the Science and Practice of Healthy Cooking“ J B Marcus, Elsevier 2013, (smoke points).</figcaption>
 </figure>
@@ -73,7 +73,7 @@ Plus, it lets you search for recipes in your collection by name, tags, keywords 
 
 ### A cookery book
 
-<figure class="responsive" style="width: 400px">
+<figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}cookery-book.jpeg" alt="Easy Culinary Science, book by J Gavin, a picture on a yellow background.">
 </figure>
 

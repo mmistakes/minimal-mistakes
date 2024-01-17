@@ -18,7 +18,7 @@ This will be assuming you have familiarity with what Deep Learning and object de
 
 Object detection in Deep Learning is the task of teaching the machine to tell you what's in an image and where it is.
 
-<figure class="responsive" style="width: 400px">
+<figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}yolo-predictions.png">
   <figcaption>Detecting objects and where they are.</figcaption>
 </figure>
