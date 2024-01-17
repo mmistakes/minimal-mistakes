@@ -15,7 +15,7 @@ As of the 30th of April 2020, there's 102 candidates for a COVID-19 vaccine, cou
 
 The data shown in the card is taken from these regular reports the WHO releases (linked in the references below) about what is known on this vaccine research; specifically, the reports from the 11th, 20th and 30th of April have been used. Note how the number of candidates has increased in a matter of 20 days and also how quickly some have switched to a clinical stage. For context, the pre-clinical stage in vaccine development is the one carried out in the lab and/or on animals while the clinical stage is when testing on humans is carried out, for both effectiveness and safety. Normally, the clinical stage is composed of two phases, one with a small set of people and a subsequent larger one.
 
-<figure class="align-center" style="width: 600px">
+<figure class="responsive" style="width: 600px">
   <img src="{{ site.url }}{{site.posts_images_path}}covid19-vaccine-run.jpg">
   <figcaption>A data card: three time snapshots of the vaccine candidates in pre-clinical and clinical stages (WHO information).</figcaption>
 </figure>

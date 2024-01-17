@@ -16,7 +16,7 @@ Nevertheless, at a sudden point during my studies I came to realize that physics
 Human knowledge is full of open problems and people have started to understand the inspiring value of transversal thinking.
 Mankind has seen the emergence of various disciplines, each with its specific tools and areas of interest, but the different fields of expertise we identify have separated from a unique root, philosophy. In ancient times, people began to ask themselves questions about natural phenomena because they needed to fulfill their human desire for knowledge. As time went by, more and more questions were raised and more and more structured answers were required. Knowledge started to split up in many disciplines in order to gain a deep insight into specific topics and develop particular methods of investigation. Now it is facing a renewed melting-pot of ideas, so that results acquired with a detailed study of a discipline are revealing themselves to be useful if applied elsewhere.
 
-<figure class="align-center">
+<figure class="responsive">
   <img src="{{ site.url }}{{ site.posts_images_path }}margherita.jpg" alt="">
   <figcaption></figcaption>
 </figure>

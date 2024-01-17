@@ -5,8 +5,7 @@ tags:
   - plants
   - taxonomy
   - data preparation
-  - data gathering
-  - sheets
+  - spreadsheets
   - spreadsheets
   - csv
 categories: data

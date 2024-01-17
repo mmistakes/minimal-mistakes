@@ -24,7 +24,7 @@ At this very the moment, there's 804 members of the meetup group (signed up on t
 
 In Europe, the largest PyData group is London, which is also the european Data Science hub. If you consider the UK alone and fetch those groups which are comparable both in terms of size of the city and number of overall members, you have Edinburgh, Bristol, Cardiff and Manchester. The data is available about signups in time, so you can calculate a growth rate in time for those groups (see figure).
 
-<figure class="align-center" style="width: 800px">
+<figure class="responsive" style="width: 800px">
   <img src="{{ site.url }}{{site.posts_images_path}}pydata-cummembers.jpg">
   <figcaption>Cumulative counts of members with fits for the comparable UK PyData groups. Data as of November 2018.</figcaption>
 </figure>
@@ -33,7 +33,7 @@ The plot shows the cumulative monthly numbers of members for these groups in tim
 
 Another, possibly more interesting thing you may ask yourself is what's *retention*. The more time went by, the more familiar faces we've been seeing around at the events, so it was clear some people kept coming by. Which is great, what better proof something is appreciated than when people come back organically? The events are monthly so to measure retention what you can try doing is seeing how many people show up at how many events. This is what the figure below displays.
 
-<figure class="align-center" style="width: 800px">
+<figure class="responsive" style="width: 800px">
   <img src="{{ site.url }}{{site.posts_images_path}}pydata-retention.jpg">
   <figcaption>A measure of retention for PyData Edinburgh: number of members who attended x (on horizontal axis) number of events.</figcaption>
 </figure>

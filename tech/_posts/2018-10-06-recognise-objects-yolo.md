@@ -18,7 +18,7 @@ This is a quite fancy area of neural networks today, and there is a variety of a
 
 YOLO, "You Look Only Once", is a neural network capable of detecting what is in an image and where stuff is, in one pass. It gives the bounding boxes around the detected objects, and it can detect multiple objects at a time, see this sample image (low resolution, sorry).
 
-<figure class="align-center" style="width: 400px">
+<figure class="responsive" style="width: 400px">
   <img src="{{ site.url }}{{site.posts_images_path}}yolo-predictions.png">
   <figcaption>YOLO telling you to eat your fruit.</figcaption>
 </figure>

@@ -1,13 +1,12 @@
 ---
 title: Entrepreneurship, social impact, and Olivetti
 tags:
-  - Olivetti
   - entrepreneurship
   - social impact
   - innovation
   - technology
-  - progress
   - history
+  - italys
 excerpt: Reflecting on the history of technology company Olivetti and what it can still mean today.
 ---
 

@@ -29,7 +29,7 @@ Look at the Main Building tower of the University (of Glasgow). This picture of 
 
 We both know the "right light" is not something you can take for granted at yours, but hey, when it's there, it's just fantastic.
 
-<figure class="align-center">
+<figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}kelvingrove-museum.jpg" alt="">
   <figcaption>The Kelvingrove Museum, under a beautiful light</figcaption>
 </figure>
@@ -38,7 +38,7 @@ And when the sun starts to set after a good day, it's just magic at the Kelvingr
 
 The affogato at your [Avenue Coffee](http://avenue.coffee) is just great. I loved it every time, to the point that it's been the only thing I've ever had in that place. You know I stick with the stuff I like.
 
-<figure class="align-center">
+<figure class="responsive">
   <img src="{{ site.url }}{{ site.posts_images_path }}avenue-coffee.jpg" alt="">
   <figcaption>Avenue Coffee goodness</figcaption>
 </figure>
@@ -79,7 +79,7 @@ You're always ready for a laugh and when strolling around you it's not rare to s
 
 If there is not much to explore in you from the superficial point of view (I'm talking about the see-and-go, superficial tourism), there is lots to do and fall in love with when someone gets to know you a little deeper.
 
-<figure class="align-center">
+<figure class="responsive">
   <img src="{{ site.url }}{{ site.posts_images_path }}glasgow-snow.jpg" alt="">
   <figcaption>The Botanic Gardens in deep winter</figcaption>
 </figure>

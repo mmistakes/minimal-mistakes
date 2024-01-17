@@ -8,7 +8,7 @@ tags:
 excerpt: My first week of work in the industry after transitioning from academia
 ---
 
-<figure class="align-center">
+<figure class="responsive">
   <img src="{{ site.url }}/assets/avatars/me-antea.jpg" alt="">
   <figcaption>Me at work.. I don’t always look so curly. The image is a drawing by my dear friend <a href="http://ekanes.deviantart.com/">Antea Curcuruto</a>.</figcaption>
 </figure>

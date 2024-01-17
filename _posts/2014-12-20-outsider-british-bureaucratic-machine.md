@@ -29,7 +29,7 @@ Basically relying on the city council is your only reasonable hope if you are in
 By the way, banks are open 9.15–17 which is covered entirely by my working schedule so given that to open an account you need an appointment, Saturday was my only choice.
 So, I started making contact with the city council. I sent them an email. The automated answer: we will get back to you in 20 days. Fair enough, I had time. Too bad 30 days elapsed and no answer was received (I was expecting a letter which said how much I have to pay and all the details). I called and they had apparently forgotten, or, put more simply, ignored my mail. As an apology, I was told I’d receive my letter within 7 days, my name was added to my partner’s account and everything would be fine. 1... 2... 3... 7... 10... 10 days has passed and no letter in my pigeonhole. I called again.
 
-<figure class="align-center">
+<figure class="responsive">
   <img src="{{ site.url }}{{ site.posts_images_path }}rose.jpg" alt="">
   <figcaption>A rose about to collapse</figcaption>
 </figure>

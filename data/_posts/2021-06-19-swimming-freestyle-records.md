@@ -23,7 +23,7 @@ Note a few things, to contextualise some of this data (information taken again f
 * The flip-turn was only developed in the '50s;
 * The years 2008-2009 were the era of polyurethane and full-body suits: Speedo developed a new kind of [swimsuit](https://en.wikipedia.org/wiki/LZR_Racer) - I'm not sure exactly when - that was full-body length and polyurethane-based, that majorly aided performance, other manufacturers followed so those two years saw very many records destroyed. In early 2010, the polyurethane swimsuits have been [banned](https://en.wikipedia.org/wiki/High-technology_swimwear_fabric) from use in competitions, alongside anything at full-body length. Note that these years encompassed two major events: the 2008 Beijing Olympics and the 2009 World Championships (nicknamed "the plastic games" due to the extensive use of those particular suits).
 
-<figure class="align-center" style="width: 600px">
+<figure class="responsive" style="width: 600px">
   <img src="{{ site.url }}{{site.posts_images_path}}freestyle-swimming-records.jpg">
   <figcaption>120 years of freestyle swimming: world records for men and women. Data: Wikipedia.</figcaption>
 </figure>

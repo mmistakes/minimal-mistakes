@@ -31,7 +31,7 @@ The card dates back from a couple of years ago, so the data on Wikipedia might h
 
 ## The data card
 
-<figure class="align-center" style="width: 550px">
+<figure class="responsive" style="width: 550px">
   <img src="{{ site.url }}{{site.posts_images_path}}italy-pasta.jpg" alt="A hand-drawn map of Italy divided into its three main areas (north, center, south) and the count of pasta shapes for each group, by format (long, short, filled).">
   <figcaption>Count of pasta shapes for each format (long, short, filled) per each of the macro-areas Italy is divided in (North, Centre, South). The South really kicks ass in short formats.</figcaption>
 </figure>

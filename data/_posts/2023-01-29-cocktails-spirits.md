@@ -26,7 +26,7 @@ Have you also been marked forever by the “Pink Elephants on Parade“ from Dum
 
 The idea of [“seeing pink elephants”](https://en.wikipedia.org/wiki/Seeing_pink_elephants#History_of_the_euphemism) when drunk (when experiencing what is called “delirium tremens”) seems to be quite old, and most likely the Disney film contributed to its popularity.
 
-<figure class="align-center" style="width: 400px">
+<figure class="responsive" style="width: 400px">
   <img src="{{ site.url }}{{site.posts_images_path}}delirium-bruxelles.jpeg" alt="Delirium bar in Bruxelles, Belgium, with its distinctive pink elephant logo">
   <figcaption>Delirium bar in Bruxelles.</figcaption>
 </figure>
@@ -45,7 +45,7 @@ Let’s remind ourselves that, whatever we may think of this proposal, [there is
 
 I’ve pulled the list of 77 cocktails approved by the [International Bartenders Association (IBA)](https://iba-world.com/) and had a look at the spirits that compose them. After a few manual steps of listing all the spirits and summing up the quantities in which they appear in the cocktails, I’ve produced a visualisation that shows the amount of alcohol in total across all the cocktails and the share of each spirit. Note that I’ve done this card in summer 2020 so the data may be slightly out of date now (the list of cocktails may have changed).
 
-<figure class="align-center" style="width: 600px">
+<figure class="responsive" style="width: 600px">
   <img src="{{ site.url }}{{site.posts_images_path}}iba-cocktails.jpg" alt="A data visualization of the International Bartenders' Acssociation cocktails, drawn as a tall glass and showing each liquor used in the cocktails with its percentage as filling the glass.">
   <figcaption>In the card, I show liquors used in the cocktails listed by the International Bartenders Association (77 cocktails), with the total amount of alcohol across all of them and the proportion of each liquor across the cocktails. Gin is the most popular spirit!</figcaption>
 </figure>

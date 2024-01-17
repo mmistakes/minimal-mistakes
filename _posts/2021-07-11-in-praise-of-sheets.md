@@ -2,7 +2,6 @@
 title: In praise of spreadsheets
 tags:
   - spreadsheets
-  - sheets
   - sql
 excerpt: Spreadsheets don't enjoy much of a good reputation in the data science circles. But I'd argue they're a great tool and deserve more respect.
 ---

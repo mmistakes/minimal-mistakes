@@ -18,7 +18,7 @@ I got curious as to whether we’re producing more and more Christmas movies eve
 
 What is a '“Christmas” movie, you ask? Let’s not open this Pandora vase just now, Christmas’s gone so we have one other year to ponder and debate.
 
-<figure class="align-center" style="width: 600px">
+<figure class="responsive" style="width: 600px">
   <img src="{{ site.url }}{{site.posts_images_path}}xmas-tweet.png" alt="A tweet by account 'history Hit' saying 'What even technically constitutes a Christmas film?'">
   <figcaption>A tweet (screenshot of).</figcaption>
 </figure>
@@ -49,7 +49,7 @@ My attention has been picked by this [“Letters from Father Christmas“](https
 
 Italian food is very regional, and there’s a special type of sweet that you’d find in the region I come from in Italy, Campania. It is called “roccocò” and it is a doughnut-shaped sweet made with almonds and a bunch of spices. In the homemade version it can be very very hard to the point that you have to watch for your teeth!
 
-<figure class="align-center" style="width: 300px">
+<figure class="responsive" style="width: 300px">
   <img src="{{ site.url }}{{site.posts_images_path}}roccocò.jpg" alt="Image of the Italian Christmas sweets called 'roccocò'.">
   <figcaption>Roccocò, photo by Rollopack via Wikimedia Commons, CC BY-SA 4.0</figcaption>
 </figure>
@@ -58,7 +58,7 @@ There are several recipes, I found [this one](https://ricette.giallozafferano.it
 
 ## The data card
 
-<figure class="align-center" style="width: 700px">
+<figure class="responsive" style="width: 700px">
   <img src="{{ site.url }}{{site.posts_images_path}}xmas-movies.jpg" alt="Hand-drawn dataviz showing the number of Christmas movies released each year 2010-2022: they grow in time.">
   <figcaption>The number of Christmas movies in time since 2010, with the best movie for each year, data from The Movie Database.</figcaption>
 </figure>
@@ -87,7 +87,7 @@ I end up with a total of 1121 movies.
 
 Movies with a “christmas“ keyword aren’t necessarily released in December, or even November, because Christmas may relate to some of the content. I have however checked that the vast majority of the movies I downloaded are released around Christmastime, and I’ve decided it won’t matter if I include some that aren’t.
 
-<figure class="align-center" style="width: 600px">
+<figure class="responsive" style="width: 600px">
   <img src="{{ site.url }}{{site.posts_images_path}}xmas-movies-trend.jpg" alt="Plot showing the count of movies with 'christmas' tag from The Movie Database monthly 2013-2020, it shows they are mostly released during the last part of the year.">
   <figcaption>The movies with “christmas” tag on TMDB are mostly released at the end of the year. The plot shows 2013-2020 only for graphical limitations. You can see that peaks increase in size, an indication of the general growth in releases.</figcaption>
 </figure>
@@ -96,7 +96,7 @@ Amongst “christmas“ movies released before November, we have [“Dear Santa�
 
 If you look at the genre of these movies, they’re mostly TV movies (not really a genre, more of a classification), comedies and romances.
 
-<figure class="align-center" style="width: 600px">
+<figure class="responsive" style="width: 600px">
   <img src="{{ site.url }}{{site.posts_images_path}}xmas-movies-genres.jpg" alt="Plot showing the count of movies with 'christmas' tag from The Movie Database by genre, it shows that TV Movie, romance and comedy are the most popular genres.">
 </figure>
 
