@@ -43,7 +43,7 @@ Mendoza's prose is funny, the story is complex and full of twists, the main char
 
 ## The data card
 
-<figure class="responsive" style="width: 600px">
+<figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}romance-langs.jpg" alt="Hand-drawn heatmap of linguistic distances between couples of Romance languages.">
   <figcaption>Distances between couples of Romance languages, you can see how the Eastern Europe languages are farther away than the Western ones. Highlighted with one line are the nearest couples, with two lines the farthest couples.</figcaption>
 </figure>

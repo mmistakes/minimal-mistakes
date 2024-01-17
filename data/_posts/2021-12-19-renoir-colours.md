@@ -56,7 +56,7 @@ Montmartre. Renoir lived here for a while in a house that is now a [small museum
 
 ## The data card
 
-<figure class="responsive" style="width: 600px">
+<figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}renoir-colours.jpg">
   <figcaption>My data card on Renoir's art. Each bar, in chronological order bottom to top, represents a painting in its colour composition, where each colour is traced in its occupation (in percentage). On the right-hand side, some of the most famous paintings are highlighted. Colour palette of the segmentation in the legend at the bottom.</figcaption>
 </figure>

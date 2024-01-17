@@ -11,7 +11,7 @@ categories: data
 excerpt: Building the landscape of viral families and species in a data viz
 ---
 
-<figure class="responsive" style="width: 600px">
+<figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}viral-species.jpg">
   <figcaption>Drawing the data on viral families and species. Red indicates species that are known to infect humans, and some exemplar viruses are drawn for their shape.</figcaption>
 </figure>

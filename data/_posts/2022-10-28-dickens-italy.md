@@ -45,7 +45,7 @@ For a movie, I feel like recommending ["È stata la mano di Dio/The hand of God"
 In my data card, I have decided to give representation to all the cities and towns Dickens passed through or stayed in in his travels - they are identified as dots on the map. Then, I drew a little green circle around the places he clearly liked and a little red circle around the places he clearly didn't like; some of the most important cities have both colours because the sentiment was positive and negative in about equal measure.
 Note that the map is that of modern Italy, the borders didn't look like that at the time and of course the country wasn't even the one we know today but rather a collection of states: this [video](https://www.youtube.com/watch?v=ShIBZ5phm1A&ab_channel=KheyPard) gives a quick timeline of the history of the peninsula, but there exist a bunch of other ones. On the map, I have written down names of cities/towns in the Italian version rather than the original text.
 
-<figure class="responsive" style="width: 600px">
+<figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}dickens-pictures-from-italy.jpg">
   <figcaption>My data card on Dicken's travels in Italy (modern map) narrated in "Pictures from Italy". In green circles, the places he loved; in red circles, the places he really didn't like - some places have both sentiments. There's also some little stats on the adjectives used in the text.</figcaption>
 </figure>

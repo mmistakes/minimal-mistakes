@@ -22,7 +22,7 @@ _This post has had a good ride. I wrote it first in 2016 but the version here ha
 
 **Gradient descent** is a general mathematical optimisation method used to find a (local) minimum of a differentiable function. The idea is to follow the direction of the gradient (in 1-dimension, the derivative) as the most economical way to “descend” to a minimum.
 
-<figure class="responsive" style="width: 600px">
+<figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}function_minima.jpg" alt="Illustration of a 1D function with local and global minima/maxima.">
   <figcaption>Illustration of a 1-dimensional function with local and global minima/maxima. The gradient descent method allows a minimum to be reached in steps, following the direction of the gradient (see green part) - the minimum reached is not guaranteed to be global.</figcaption>
 </figure>
@@ -43,7 +43,7 @@ $$E[\bar w] = \sum_i^n (y_i - \bar w \cdot \bar x_i)^2 \ .$$
 
 If, for the sake of simplicity, we think about this in 1 dimension,
 
-<figure class="responsive" style="width: 600px">
+<figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}points_fitting_line.jpg" alt="Illustration of linear regression in 1D: points and fitting line on a graph, with residuals highlighted.">
   <figcaption>Illustration of a 1-dimensional linear regression: observed data points (n) and fitting line, with residuals highlighted.</figcaption>
 </figure>
