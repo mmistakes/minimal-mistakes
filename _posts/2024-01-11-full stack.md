@@ -1,8 +1,8 @@
 ---
 layout: single
 title:  "디자인전공자의 풀스텍과정 도전"
-categories: 풀스텍 
-tag: 비전공자, 코딩공부
+categories: coding
+tag: full-stack
 --- 
 
 
