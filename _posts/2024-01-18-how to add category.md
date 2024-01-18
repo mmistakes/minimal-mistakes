@@ -7,7 +7,9 @@ category: github
 
 
 
-![SC_1](../images/2024-01-18-how to add category/SC_1-5591144.png)
+![screenshot-1](../images/2024-01-18-how to add category/screenshot-1.png)
 
-![SC_1](../images/2024-01-18-how to add category/SC_2.png)
+
+
+![screenshot-2](../images/2024-01-18-how to add category/screenshot-2.png)
 
