@@ -1,7 +1,6 @@
 ---
 title: A journey through Renoir's colours, in data
 tags:
-  - data
   - colour
   - painting
   - art

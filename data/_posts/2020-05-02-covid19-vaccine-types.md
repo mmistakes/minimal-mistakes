@@ -2,9 +2,9 @@
 title: The various types of vaccines under work for COVID-19
 tags:
   - covid-19
-  - data
   - science
   - research
+  - biology
 categories: data
 excerpt: Several of the candidates under work for a COVID-19 vaccine use methods and technologies which are novel and not used yet in existing vaccines.
 ---

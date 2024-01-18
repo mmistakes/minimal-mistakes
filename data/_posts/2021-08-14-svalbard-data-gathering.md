@@ -1,7 +1,6 @@
 ---
 title: The Svalbard seed vault, a data preparation example
 tags:
-  - data
   - plants
   - taxonomy
   - data preparation

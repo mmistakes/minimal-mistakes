@@ -1,7 +1,6 @@
 ---
 title: "My PhD thesis, some analytics"
 tags:
-  - data
   - linguistics
   - language
   - phd

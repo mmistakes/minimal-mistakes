@@ -1,7 +1,6 @@
 ---
 title: "I messaggi di fine anno dei presidenti della Repubblica: alcune parole specifiche"
 tags:
-  - data
   - italian
   - language
   - nlp

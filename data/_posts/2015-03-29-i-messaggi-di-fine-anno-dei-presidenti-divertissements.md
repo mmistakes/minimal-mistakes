@@ -1,7 +1,6 @@
 ---
 title: "I messaggi di fine anno dei presidenti della Repubblica: divertissements sui testi"
 tags:
-  - data
   - language
   - nlp
   - italian
