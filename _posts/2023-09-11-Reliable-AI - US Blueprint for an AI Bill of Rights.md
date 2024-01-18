@@ -4,6 +4,8 @@ categories:
   - AI Regulation
 tags:
   - AI
+  - 미국
+  - US
   - Reliable AI
   - AI policy
   - Blueprint for an AI Bill
