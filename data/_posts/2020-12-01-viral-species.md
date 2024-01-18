@@ -1,7 +1,6 @@
 ---
 title: Viral families and viral species, a data card
 tags:
-  - data
   - science
   - research
   - virus
@@ -11,39 +10,81 @@ categories: data
 excerpt: Building the landscape of viral families and species in a data viz
 ---
 
+_This post has been slightly edited in time, so that the text is longer than the original version. The data in the card still refers to November 2020 though._
+
+---
+
+Viruses are biological marvels: so tiny, so sly. They are typically an [order of magnitude smaller than bacteria](https://bio.libretexts.org/Bookshelves/Microbiology/Microbiology_(Kaiser)/Unit_4%3A_Eukaryotic_Microorganisms_and_Viruses/10%3A_Viruses/10.02%3A_Size_and_Shapes_of_Viruses) and they’re the [most common organisms on the planet](https://www.sciencefocus.com/the-human-body/the-human-virome-the-trillions-of-viruses-inside-your-body-keeping-you-alive). I’ve been looking at how they cluster up in families and how many there are.
+
+## The data card
+
+_I did this card in November 2020 using the latest taxonomy available then (see the data section below), so it excludes the infamous SARS-CoV-2. However, it contains SARS-CoV, the Coronavirus responsible for the outbreak of 2003, which had a higher fatality rate but was way less contagious than it "successor"._
+
 <figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}viral-species.jpg">
   <figcaption>Drawing the data on viral families and species. Red indicates species that are known to infect humans, and some exemplar viruses are drawn for their shape.</figcaption>
 </figure>
 
-For my newest data card, I've been exploring the theme of viruses. Clearly not an alien topic these days with the COVID pandemic, but I've been wanting to learn more on these things, and I thought the composition of viral families would deserve a viz.
+The viz is a donut chart, showing the **count of viral species per family**. It uses the ICTV viral taxonomy (see below on details about this choice).
 
-I'm also reading [Spillover](https://www.goodreads.com/book/show/17573681-spillover) by D Quammen, which I'm sure must have had a good surge in sales these days. It's good, and very educational. I initially thought it would be a scipop presentation of what's a spillover, but in fact it works more as a narration of chronological events, but this is may be matter for another post. Back to our card here.
+On the bottom left, you see how the taxonomy works: we go **from species up to realms**; I’ve chosen to display families as it was the sweet spot where you’d have enough variety for a good visualisation but not too much that it would make any chart unreadable. Families are sorted by the count of species within - note that with 168 families I couldn’t write the names of each on the chart. Colour indicates the type of nucleic acid (the **Retroviridae** family, to which HIV belongs, which uses reverse transcriptase is in green) and a red sign marks whether the family is known to infect humans. I’ve sketched some of the most "famous" viruses as examples: you see there’s **Filoviruses** (Ebolavirus belongs here) which as the name suggests look like strings, the spikey shapes of **Coronaviruses**, **Orthomyxoviridae** (Influenza is one of them), and so on.
 
-## Gathering the data
+So, what do we learn?
 
-I've started by looking for information on the groups of viruses known today - I obviously needed data (counts). And a taxonomy. I've discovered there are at least two ways in which viruses get classified, the ICTV (International Committee on Taxonomy of Viruses) one and the Baltimore (from the name of its creator) one. The ICTV builds and maintains a full taxonomy, the Baltimore divides viruses in groups depending on their characteristics (such as their nucleic acid).
+That there’s a lot of viruses!
+The most populated families are DNA-based and they do not infect humans:
 
-I had initially figured I'd visualise the Baltimore classification but then I thought that the ICTV one was more apt to be shown in a viz - the data is more segmented and (to my understanding) there is less ambiguity. I found the data on the [ICTV website](https://talk.ictvonline.org/taxonomy/), and you can easily download it. The taxonomic structure is shown at the bottom of the card. There are (this data is up-to-date as of July 2019, so it excludes the most recent coronavirus, SARS-CoV-2) 6590 species grouped into 168 families. Obviously these are the known ones.
+* **Siphoviridae** and **Myoviridae**, which infect bacteria and archaea - these have amazing shapes, see [here](https://www.google.com/search?q=myoviridae+and+siphoviridae&tbm=isch)
+* **Geminiviridae**, which infect plants
+* **Autographiviridae**, which infect bacteria
 
-## Drawing the data
+**Rhabdoviridae** is the first family (by count of species) known to infect humans, it includes rabies.
 
-I've decided to consider the level of family in the taxonomy, and to count species. The choice has been motivated by the fact this was the sweet spot between a good variety appearing with 168 different families and the avoidance of too much noise which would have been the case at a more fine-grained level. Plus, families have names that are kinda recognisable by the general public (which includes me, I'm not a biologist).
+*😅 This is the type of data card which took me a good chunk of time, but I’ve learned a lot and it was good fun.*
 
-Then, I thought a donut chart would do, given the number of data points and their distribution: the 168 families go from 783 member species in the most populated one to a bushy tail with very low counts of species.
+## The data
 
-I've decided to then use colour to distinguish what to me was the most immediate characteristic of viruses - whether they're DNA or RNA ones; the choice of blue and orange was dictated by the need to choose two widely separated ones, plus it's a coupling I find pleasing to the eye.
-The other kind of important information I wanted to display is whether a viral family was known to affect humans or not - I've decided to use a simple red tick, internal to the donut, to represent this.
-For both these info, I used this [page](https://viralzone.expasy.org/656) on ViralZone. For those viruses not infecting humans, which are clearly not there and are the vast majority, I've had to retrieve what's their nucleic acid via a combination of Wikipedia and (when not there) general googling. This was by far the step that took the longest, especially because there are some ambiguities/different separations across sources (I think one example was autographiviridae, which took me reading a few places to finally get to know they are DNA ones).
+### Gathering it
 
-I did not write the names of all families along the circle, simply because of lack of physical space in the tail.
+I needed counts of viruses based on some biological classification, so I’ve started by looking for a taxonomy of all viruses known (I’m no biologist). I’ve discovered there are at least two ways in which viruses get taxonomically classified: the one produced and maintained by the [ICTV](https://en.wikipedia.org/wiki/International_Committee_on_Taxonomy_of_Viruses) (International Committee on Taxonomy of Viruses) and the [Baltimore classification](https://en.wikipedia.org/wiki/Baltimore_classification), named after his creator, biologist David Baltimore. The first is organised on a variety of features and updated regularly, the second divides viruses based on on their main characteristics (such as their nucleic acid).
 
-To make it all more appealing, I've drawn a few representatives of better-known families, for their different shapes. You see there's filoviruses (Ebolavirus belongs here) which as the name suggests look like strings, the spikey shapes of coronaviruses, and so on. I guess another one we can all picture is HIV-1. Interestingly, and I don't know if this is just me, when I think of viruses the first shape that comes to mind is the one similar to Myoviridae at the top: a geometric-looking head with little menacing legs.
+I had initially figured I’d visualise the Baltimore classification but then I thought that the ICTV one was more apt to be shown in a viz - the data is more segmented and (to my understanding) there is less ambiguity. I found the data easily available on the ICTV [website](https://ictv.global/taxonomy). This [paper](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001922) on PLOS Biology is for those of you who want to really know more about viral classification (PLOS is open-access).
 
-## What I learned
+I’ve used the 2019 review (the latest one available when I did this card), so it excludes SARS-CoV-2. In this review there are 6590 species grouped into 168 families. Note that data can update quite dramatically, it looks like in 2020 alone [the ICTV added more than 1000 species to its taxonomy](https://media.nature.com/original/magazine-assets/d41586-021-01749-7/d41586-021-01749-7.pdf).
 
-Well, this will likely be trivial to any biologist, but I've learned that the four most populated families do not infect humans, and are DNA types - some are plant viruses, some are bacteriophages.
+I used this [page](https://viralzone.expasy.org/656) on ViralZone (a resource created and maintained by the Swiss Institute of Bioinformatics) to cross-check whether a family is known to infect humans and in that case, the nucleic acid classification. For the viruses not infecting humans - the vast majority - I’ve had to retrieve their nucleic acid categorisation via a combination of Wikipedia and (when not there) general googling. This was by far the step that took the longest, especially because there are some ambiguities across sources.
 
-I've also learned how varied shapes can be, and how the distribution of family counts looks like. As always, doing a card like this takes a good chunk of time, from gathering the data and framing the question, thinking on how to visualise it and then finally executing the drawing. It was good fun and as I said I do this mostly to learn things myself, then I'm happy to share.
+### Some notes on drawing this data
 
-Any feedback you may have (on the content, or the design), please reach out!
+I thought a donut chart would do for this type of data, given the number of data points and their distribution: the 168 families go from 783 member species in the most populated one to a bushy tail with very low counts of species.
+
+The choice of blue and orange for the nucleic acid was dictated by the need to choose two visibly separated hues, plus it is a coupling I find pleasing to the eye. For the additional info I was keen to add (family infects human or not), a red mark was a simple choice as it made it quite evident. To make it all more appealing, I’ve drawn a few representatives of better-known families, for their different shapes.
+
+## Bring-along items
+
+I just have a book to recommend on this topic, and it is an actually quite well-known one so chances are you may have already read it. For those of you who still haven’t, [**Spillover**](https://www.goodreads.com/book/show/17573681-spillover) by D Quammen is a great read. **It came out in 2012** and no doubt it must have had a good surge in sales during the COVID-19 pandemic. Before reading it I thought it would be a scipop presentation of what’s a spillover (the ecological process whereby a pathogen jumps from a host species to a nnew one), but in fact it works more as a narration of chronological events.
+
+[Quammen](https://en.wikipedia.org/wiki/David_Quammen) is a writer who produced several books on scientific topics, lately focusing on pathogens and their ecology. In "Spillover" (ominously sub-titled "Animal infections and the next human pandemic"), he analyses several occurrences of the phenomenon via interviews with protagonists and accounts from the field. I guess it became so popular during the latest pandemic exactly because he talks about how the world we are building, with all the issues due to climate change, loss of biodiversity, unsustainable market demands is creating situations where spillovers can become more likely.
+
+He writes very well, and the material is well researched so it’s really an excellent use of time. On my list I got now his latest book, "Breathless: The Scientific Race to Defeat a Deadly Virus", where he focussed on the race to get a vaccine against SARS-COV-2.
+
+## References
+
+* G Kaiser, Microbiology, section ["Size and shapes of viruses"](https://bio.libretexts.org/Bookshelves/Microbiology/Microbiology_(Kaiser)/Unit_4%3A_Eukaryotic_Microorganisms_and_Viruses/10%3A_Viruses/10.02%3A_Size_and_Shapes_of_Viruses) on Biology LibreTexts
+* T Oliver, [The human virome: The trillions of viruses inside your body keeping you alive](https://www.sciencefocus.com/the-human-body/the-human-virome-the-trillions-of-viruses-inside-your-body-keeping-you-alive), BBC Science Focus, 2021
+* H Zhou, [A Review of SARS-CoV2: Compared With SARS-CoV and MERS-CoV](https://www.frontiersin.org/articles/10.3389/fmed.2021.628370/full), **Front. Med.** 8, 2021
+* P Simmonds et al, [Four principles to establish a universal virus taxonomy](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001922), **PLoS Biol** 21(2), 2023
+* A Dance, [The incredible diversity of viruses](https://media.nature.com/original/magazine-assets/d41586-021-01749-7/d41586-021-01749-7.pdf), **Nature** 595, 7865, 2021
+* [Viruses infecting humans](https://viralzone.expasy.org/656), on ViralZone
+* A useful [animation](https://learn.genetics.utah.edu/content/cells/scale/) about the relative size of organisms, from the Genetic Science Learning Center at the University of Utah
+* My "quick 'n dirty" Jupyter [notebook](https://github.com/martinapugliese/doodling-data-cards/blob/master/nature/virus/virus.ipynb) where I derived the counts from the ICTV data
+
+---
+
+*Oh, I have a newsletter (see link in navigation above), powered by Buttondown, if you want to get things like this and more in your inbox you can subscribe from here, entering your email. It's free.*
+
+<iframe
+scrolling="no"
+style="width:100%!important;height:220px;border:1px #ccc solid !important"
+src="https://buttondown.email/martinapugliese?as_embed=true"
+></iframe><br /><br />
