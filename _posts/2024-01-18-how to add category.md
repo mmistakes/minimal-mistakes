@@ -36,7 +36,7 @@ jekyll-archives:
 
 **특히 jekyll-archives를 들여쓰기 하지않도록 주의한다. 이거때문에 반영이 안되서 찾고 해결한다고 하루걸렸던건 비밀,,,**
 
-![SC_1](../images/2024-01-18-카테고리 추가하는법/SC_1.png)
+![SC_1](../images/2024-01-18-how to add category/SC_1.png)
 
 
 
@@ -48,7 +48,9 @@ jekyll-archives:
 
 **그리고 pages 폴더를 새로 생성하고 아래와 같은  category-archive.md파일을 만들어 주고 내용은 아래와 같이 입력한다**
 
-![SC_2](../images/2024-01-18-카테고리 추가하는법/SC_2.png)
+![SC_2](../images/2024-01-18-how to add category/SC_2.png)
+
+
 
 
 
