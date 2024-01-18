@@ -9,7 +9,7 @@ category: github
 
 먼저 config.yml 260번라인밑으로 아래와 같이 주석을 해제하면서 동일하게 만들어준다
 
-![screenshot_1](../images/2024-01-18-how to add category/screenshot_1.png)
+![screenshot_1.png](../images/2024-01-18-how to add category/screenshot_1.png)
 
 ```html
 jekyll-archives:
@@ -30,7 +30,7 @@ jekyll-archives:
 
 그리고 pages 폴더를 새로 생성하고 아래와 같은 category-archive.md파일을 만들어 주고 내용은 아래와 같이 입력한다
 
-![screenshot_2](../images/2024-01-18-how to add category/screenshot_2.png)
+![screenshot_2.png](../images/2024-01-18-how to add category/screenshot_2.png)
 
 
 
