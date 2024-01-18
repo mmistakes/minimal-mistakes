@@ -19,13 +19,48 @@ TODO
 
 In software development, especially in systems dealing with data transactions like user portfolios, data validation is crucial. Ensuring that data conforms to expected formats and rules is vital for maintaining the integrity of the system.
 
-To achieve this, we need to define a component that defines the behavior of validating data. Let's call this component as `Validatable`:
+So, first, let's define the data we want to validate. In our case, we want to validate the data contained in some DTOs (Data Transfer Object). The first DTO represents the creation of a new portfolio:
+
+```kotlin
+data class CreatePortfolioDTO(val userId: String, val amount: Double)
+```
+
+The second DTO represents the purchase or the selling process of a stock for a given portfolio:
+
+```kotlin
+data class ChangePortfolioDTO(val stock: String, val quantity: Int)
+```
+
+If the `quantity` is positive, then the DTO represents a purchase. Otherwise, it represents a selling.
+
+Now, we need a function that uses the above data and validates it. Let's call this function `process`:
+
+```kotlin
+fun process(createPortfolioDto: CreatePortfolioDTO) {
+    val createPortfolioDto: CreatePortfolioDTO = /* Validate the dto */
+    // Do something with the validated object
+}
+
+fun process(changePortfolioDto: ChangePortfolioDTO) {
+    val changePortfolioDto: ChangePortfolioDTO = /* Validate the dto */
+    // Do something with the validated object
+}
+```
+
+Clearly, the above code is not optimal, nor maintainable. The two `process` functions share the same pattern:
+
+1. Validate the input dto
+2. Do something with the validated object
+
+We'd like to abstract over this so we can write the function once instead of once for every type. To achieve this, we need to define an abstract component that defines the behavior of validating data. Let's call this component as `Validatable`:
 
 ```kotlin
 interface Validatable<T> {
     fun validate(): T
 }
 ```
+
+Abstracting the behavior in abstract types (or interfaces) and implementing it in concrete types, letting client function to stay generic and reusable is a common pattern in any modern high-level programming language. In fact, this pattern is called _polymorphism_.
 
 The method `validate` returns the validated data in case all the. Since we don't want to manage the case the data is not valid through exceptions (see [Functional Error Handling in Kotlin, Part 1: Absent values, Nullables, Options](https://blog.rockthejvm.com/functional-error-handling-in-kotlin/#2-why-exception-handling-is-not-functional) for further details), we'll introduce the `Either` type from the Arrow Kt library (if you need an insight on how to use it, please refer to [Functional Error Handling in Kotlin, Part 2: Result and Either](https://blog.rockthejvm.com/functional-error-handling-in-kotlin-part-2/)):
 
@@ -44,13 +79,7 @@ We introduced the `ValidationError` interface to represent the possible validati
 public typealias EitherNel<E, A> = Either<NonEmptyList<E>, A>
 ```
 
-The `NonEmptyList` type is a data structure contained in the Arrow library that represents a list of elements that is guaranteed to be non-empty. 
-
-Now, we need an type to validate. We'll use the information needed to create a new portfolio, that is, the user id and the amount of money to be invested:
-
-```kotlin
-data class CreatePortfolioDTO(val userId: String, val amount: Double)
-```
+The `NonEmptyList` type is a data structure contained in the Arrow library that represents a list of elements that is guaranteed to be non-empty.
 
 Let's try solving the problem using traditional object-oriented approaches. In the object-oriented approach, each class that needs validation would implement the `Validatable<T>` interface. This might look something like this for the `CreatePortfolioDTO` class:
 
