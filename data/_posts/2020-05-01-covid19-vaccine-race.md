@@ -2,9 +2,9 @@
 title: Running for a COVID-19 vaccine - research at turbo speed
 tags:
   - covid-19
-  - data
   - science
   - research
+  - biology
 categories: data
 excerpt: Looking at the volume of candidate vaccines against COVID-19 and their progress in pre-clinical and clinical phases, in time
 ---

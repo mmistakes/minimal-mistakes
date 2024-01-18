@@ -2,7 +2,6 @@
 title: How much has the media reported about climate change?
 tags:
   - climate change
-  - data
   - time series
   - media
 categories: data

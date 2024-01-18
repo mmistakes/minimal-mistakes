@@ -1,7 +1,6 @@
 ---
 title: The world records in freestyle swimming, in data
 tags:
-  - data
   - sport
   - viz
   - record

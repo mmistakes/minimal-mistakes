@@ -1,7 +1,6 @@
 ---
 title: The most frequently used keys in Classical era music
 tags:
-  - data
   - music
   - classical music
 categories: data

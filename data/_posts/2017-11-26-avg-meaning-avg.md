@@ -3,7 +3,6 @@ title: The average meaning of average
 header:
   image: /assets/posts_images/numbers.jpg
 tags:
-  - data
   - statistics
 categories: data
 excerpt: How the word average is used in regular talk and how to interpret and calculate it best

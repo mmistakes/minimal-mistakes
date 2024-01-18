@@ -1,7 +1,7 @@
 ---
 title: Stories around the frequency of tags on Stack Overflow
 tags:
-  - data
+  - stack overflow
 categories: data
 excerpt: We analysed how the frequency of tags on Stack Overflow behaves, what are the relevant distributions, whether the age of a tag has an effect and what part do the synonyms play.
 ---

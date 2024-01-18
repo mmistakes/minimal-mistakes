@@ -1,7 +1,6 @@
 ---
 title: Dickens' "Pictures from Italy", a Victorian travelogue
 tags:
-  - data
   - literature
   - dickens
   - italy

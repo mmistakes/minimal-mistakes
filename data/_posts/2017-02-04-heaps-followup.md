@@ -2,7 +2,6 @@
 title: "The growth of vocabulary in different languages, reloaded"
 tags:
   - linguistics
-  - data
   - language
   - nlp
 categories: data

@@ -1,7 +1,6 @@
 ---
 title: Low-emission bus fleets in cities, a data card
 tags:
-  - data
   - climate change
   - public transport
 categories: data
