@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "2. Fachkonferenz NaWi",
-    "title": "2. Fachkonferenz NaWi",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=bDgxY2VsMDhtMGVuczRldTM1OHRwbTltNjAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-01-17T14:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-01-17T15:30:00+01:00"
-    },
-    "created": "2023-10-17T18:42:57.000Z",
-    "updated": "2023-10-17T18:42:57.509Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug 4b - Philharmonie",
     "title": "Ausflug 4b - Philharmonie",
     "excerpt": null,
@@ -35,20 +18,20 @@
   },
   {
     "image_path": null,
-    "alt": "Ausflug A3 - Philharmonie ",
-    "title": "Ausflug A3 - Philharmonie ",
+    "alt": "6b - Ausflug ins Abgeordnetenhaus",
+    "title": "6b - Ausflug ins Abgeordnetenhaus",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M20xN2NiaGM3b25nZG5tZGJrNGNsbG45amQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=MzMyaGx0aXN1YW1jcmdkZDg2NjJhNDNsa3MgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2024-01-18T08:00:00+01:00"
+      "date_time": "2024-01-19T08:30:00+01:00"
     },
     "end": {
       "date": null,
-      "date_time": "2024-01-18T13:30:00+01:00"
+      "date_time": "2024-01-19T14:30:00+01:00"
     },
-    "created": "2024-01-16T11:54:44.000Z",
-    "updated": "2024-01-16T11:54:44.876Z"
+    "created": "2024-01-17T10:58:40.000Z",
+    "updated": "2024-01-17T11:54:33.642Z"
   },
   {
     "image_path": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-01-16T11:55:21.000Z",
     "updated": "2024-01-16T11:55:21.627Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A8 - Eislaufbahn Glockenturm",
+    "title": "Ausflug A8 - Eislaufbahn Glockenturm",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N3E0cXFnZGppOHNuYnRsZ3AyMnVrZ2F1MGUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-01-24T08:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-01-24T12:45:00+01:00"
+    },
+    "created": "2024-01-16T11:55:33.000Z",
+    "updated": "2024-01-16T11:55:33.523Z"
   }
 ]
