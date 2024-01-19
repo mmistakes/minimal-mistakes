@@ -3,8 +3,6 @@ title: Cater, empower, and support collaboration in product design
 toc: true
 ---
 
-*Disclaimer: this was not written by artificial intelligence (e.g., an LLM). I did use it, however, to check my syntax and small errors to improve readability. I prefer to avoid it as much as possible to stay more authentic and credible.*
-
 Design is not reserved for designers alone; it's a collaborative process that teams do together. Moreover, tasteful design isn't limited to your latest "unique" app in Figma that leverages OpenAI's GPT-4 (large language model). It manifests itself every day, such as crafting emails, facilitating meetings, and writing blog posts!
 
 bld.ai teams have built hundreds of products and many of them contain real-time collaborative elements. Common mistakes made by our designers are to assume that users will be beginners forever and to define roles/permissions, which inadvertently constrain users.
@@ -34,3 +32,5 @@ For example, in product management software, I'd like to see ticket reassignment
 ---
 
 I hope these three principles will help you craft products that foster trust and accelerate team collaboration. Good luck, fellow designers!
+
+*Disclaimer: this was not written by artificial intelligence (e.g., an LLM). I did use it, however, to check my syntax and small errors to improve readability. I prefer to avoid it as much as possible to stay more authentic and credible.*

@@ -3,8 +3,6 @@ title: On Selling
 toc: true
 ---
 
-*Disclaimer: this was not written by artificial intelligence (e.g., an LLM). I did use it, however, to check my syntax and small errors to improve readability. I prefer to avoid it as much as possible to stay more authentic and credible.*
-
 I find it surprising when people seek my guidance on how to sell because selling isn't what I consider part of my identity. I see myself as an individual contributor who enjoys hands-on problem-solving and tinkering. This inclination makes me more chaotic and creative, traits that differ from the arguably more predictable nature required in sales.
 
 I thrive in ambiguity and uncertainty and I love to operate like an unsupervised learning agent. Still, I do get satisfaction when I create something that mirrors the world and affects it in a positive way (e.g., education, science, ESG, space exploration, etc.). Those who see me in my everyday life will know that I commit time everyday to exercising and staying fit, homeschooling my kids with heavy emphasis on engineering, creativity, and experimenting. That I'm a clown who likes joking around and keeping a white belt mindset. And that I'm a father figure to my family first and foremost. I feel like that’s what I’m good at.
@@ -85,3 +83,4 @@ Perhaps part of the reason why I'm good at selling is that when I do,  I do it f
 
 I hope that this was somehow insightful to you. I welcome new ideas and approaches to selling.
 
+*Disclaimer: this was not written by artificial intelligence (e.g., an LLM). I did use it, however, to check my syntax and small errors to improve readability. I prefer to avoid it as much as possible to stay more authentic and credible.*
