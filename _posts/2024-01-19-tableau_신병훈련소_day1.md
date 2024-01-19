@@ -1,6 +1,6 @@
 ---
 published: true
-title: "[Tableau] 신병훈련소 day1"
+title: "[Tableau] 신병훈련소 DAY 1"
 
 categories: Tableau
 tag: [tableau]
@@ -14,7 +14,7 @@ sidebar:
 
 date: 2024-01-19
 ---
-Tableau 신병훈련소 22기 1일차
+Tableau 신병훈련소 22기 DAY 1
 
 # 데이터
 
