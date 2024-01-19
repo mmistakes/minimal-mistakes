@@ -39,6 +39,11 @@
   }
 }
 
+.masthead.sticky {
+  background-color: $background-color;
+  top: 0em;
+}
+
 .site-logo img {
   max-height: 2rem;
 }

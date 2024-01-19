@@ -18,7 +18,7 @@
 
   @include breakpoint($large) {
     float: left;
-    width: calc(#{$right-sidebar-width-narrow} - 1em);
+    width: calc(#{$left-sidebar-width-narrow} - 1em);
     opacity: 0.75;
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
@@ -30,14 +30,15 @@
     &.sticky {
       overflow-y: auto;
       /* calculate height of nav list
-         viewport height - nav height - masthead x-padding
+         viewport height - nav height - masthead y-padding
       */
-      max-height: calc(100vh - #{$nav-height} - 2em);
+      max-height: calc(100vh - #{$nav-height});
+      top: calc(#{$masthead-sticky} * 2 * #{$nav-height});
     }
   }
 
   @include breakpoint($x-large) {
-    width: calc(#{$right-sidebar-width} - 1em);
+    width: calc(#{$left-sidebar-width} - 1em);
   }
 
   > * {
@@ -87,7 +88,7 @@
       @include clearfix();
       position: -webkit-sticky;
       position: sticky;
-      top: 2em;
+      top: calc((1 + #{$masthead-sticky} ) * 2 * #{$nav-height});
       float: right;
 
       .toc {

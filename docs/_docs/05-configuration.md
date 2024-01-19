@@ -250,6 +250,31 @@ By default your site title is used in the masthead. You can override this text b
 masthead_title: "My Custom Title"
 ```
 
+### Site masthead navigator
+
+By default a site navigator is used in the masthead. You can hide it by adding the following to your `_config.yml`:
+
+```yaml
+masthead:
+  hide_navigator: true
+```
+
+An option to stick the navigator top bar to the window top edge by adding the following to your `_config.yml`:
+
+```yaml
+masthead:
+  sticky: true
+```
+
+### Left sidebar navigation
+
+An option to stick the left sidebar navigator to the window top edge by adding the following to your `_config.yml`:
+
+```yaml
+sidebar:
+  sticky: true
+```
+
 ### Breadcrumb navigation (beta)
 
 Enable breadcrumb links to help visitors better navigate deep sites. Because of the fragile method of implementing them they don't always produce accurate links reliably. For best results:
@@ -329,6 +354,27 @@ For example,
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
+```
+
+### Page content width
+
+To customise the width of inner content of the pages set the `page_content_width:` setting of `_config.yml`.
+You can use any `max-with` css value, theme default is `$max-width` that is `$x-large: 1280px` in `_variables.scss`
+
+For example you can set it to the 90 percent of the window,
+
+```yaml
+page_content_width: 90%
+```
+
+### Add a copy to clipboard button to code blocks
+
+Option to add a copy button to Code blocks to be able to instantly set the clipboard content to text of the Code block.
+
+For example,
+
+```yaml
+enable_copy_code_button: yes
 ```
 
 ### Comments

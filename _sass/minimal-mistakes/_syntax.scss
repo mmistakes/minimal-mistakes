@@ -52,6 +52,31 @@ figure.highlight {
   }
 }
 
+.highlight-header {
+  margin: 0;
+  padding: 0em 1em 0.1em 1em; // top right bottom left
+  border: 0;
+  text-align: right;
+  font-size: 1em;
+  font-weight: lighter;
+  background-color: $base01;
+}
+
+.highlight .btn {
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+  }
+
+  margin: 0;
+  padding: 0;
+  outline: none;
+  color: $link-color;
+  background-color: transparent;
+}
+
 .highlight pre {
   width: 100%;
 }
