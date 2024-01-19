@@ -47,12 +47,37 @@ fun process(changePortfolioDto: ChangePortfolioDTO) {
 }
 ```
 
+We'll focus on the validation logic in next sections.
+
 Clearly, the above code is not optimal, nor maintainable. The two `process` functions share the same pattern:
 
 1. Validate the input dto
 2. Do something with the validated object
 
-We'd like to abstract over this so we can write the function once instead of once for every type. To achieve this, we need to define an abstract component that defines the behavior of validating data. Let's call this component as `Validatable`:
+We'd like to abstract over this so we can write the function once instead of once for every type. To achieve this, the first step is defining a common type to let both of the DTOs inherit from it. Let's call this type `Validatable`:
+
+```kotlin
+sealed interface Validatable {
+    data class CreatePortfolioDTO(val userId: String, val amount: Double) : Validatable
+    data class ChangePortfolioDTO(val stock: String, val quantity: Int) : Validatable
+}
+```
+
+In this way, the two `process` function can be merged into a single one:
+
+```kotlin
+fun process(validatable: Validatable) = {
+    when (validatable) {
+        is Validatable.CreatePortfolioDTO -> /* Validate the dto */
+        is Validatable.ChangePortfolioDTO -> /* Validate the dto */
+    }
+    // Do something with the validated object
+}
+```
+
+Here, we took advantage of the sealed classes and smart casts features of Kotlin. However, the above code is still far to be optimal. As Robert C. Martin taught us, the current `process` function violates the Open-Closed principle. If we want to add a new DTO and validate it, we need to change the existing implementation of the `process` function. This is not good, since such code tends to be rigid to changes, fragile and error-prone.
+
+Fortunately, we can abstract the validation process in a dedicated function. Let's change the `Validatable` a bit:
 
 ```kotlin
 interface Validatable<T> {
@@ -90,8 +115,6 @@ data class CreatePortfolioDTO(val userId: String, val amount: Double) : Validata
     }
 }
 ```
-
-We'll focus on the validation logic in next sections.
 
 As we can see, the using direct subtyping to implement validation rules force us to change the code of the type we want to validate. At the beginning, this might not be a problem, and it's a straightforward solution indeed. We're using polymorphism to solve the problem, and this is a good thing. For example, if we have an external function that uses the validation, we can write it once for all the types that implement the `Validatable<T>` interface:
 
