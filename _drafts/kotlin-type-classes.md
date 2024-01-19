@@ -85,6 +85,8 @@ interface Validatable<T> {
 }
 ```
 
+We introduced a type parameter just to let the clients to work with the concrete DTO type, and not with an abstract interface.
+
 Abstracting the behavior in abstract types (or interfaces) and implementing it in concrete types, letting client function to stay generic and reusable is a common pattern in any modern high-level programming language. In fact, this pattern is called _polymorphism_.
 
 The method `validate` returns the validated data in case all the. Since we don't want to manage the case the data is not valid through exceptions (see [Functional Error Handling in Kotlin, Part 1: Absent values, Nullables, Options](https://blog.rockthejvm.com/functional-error-handling-in-kotlin/#2-why-exception-handling-is-not-functional) for further details), we'll introduce the `Either` type from the Arrow Kt library (if you need an insight on how to use it, please refer to [Functional Error Handling in Kotlin, Part 2: Result and Either](https://blog.rockthejvm.com/functional-error-handling-in-kotlin-part-2/)):
@@ -149,7 +151,7 @@ interface Validator<T> {
 interface ValidationError
 ```
 
-The main difference with the previous version is that the `validate` method now takes a parameter of type `T` that represents the object to validate. Now, we can implement the validation rules as follows for the `CreatePortfolioDTO` type:
+The main difference with the previous version (a part for the name) is that the `validate` method now takes a parameter of type `T` that represents the object to validate. Now, we can implement the validation rules as follows for the `CreatePortfolioDTO` type:
 
 ```kotlin
 val createPortfolioDTOValidator =
@@ -160,7 +162,7 @@ val createPortfolioDTOValidator =
     }
 ```
 
-At first sight, we decouple the DTO from the code that validates it. 
+At first sight, we decoupled the DTO from the code that validates it. 
 
 The `process` function, aka the function that uses the validation, can be rewritten as follows using the new `Validator<T>` interface:
 
@@ -180,28 +182,100 @@ So, a type class is parametric type containing a set of behaviors that can be ap
 
 Type classes don't suffer from the cons we saw in the object-oriented approach. In fact, we can define a type class for a type we don't own, and we can define multiple type classes for the same type. Moreover, we can achieve a better separation of concerns since the validation logic is decoupled from the type to validate.
 
-However, also type classes have their cons. First, they are less intuitive than the object-oriented approach. The problem is bigger if a developer has no experience with functional programming. Second, we have a problem of discoverability. In fact, we need to know that a type class exists for a type we want to validate. 
+However, also type classes have their cons. First, they are less intuitive than the object-oriented approach. The problem is bigger if a developer has no experience with functional programming. Second, we have a problem of discoverability. In fact, we need to know that a type class exists for a type we want to validate.
 
-### Example: Validating a DTO
+We still miss a feature of the object-oriented solution: The `validate` method is not a method of the DTO.This is not a big problem, but it's not as elegant as the object-oriented solution. Fortunately, we have can improve our solution in this direction taking advantage of Kotlin extension functions. Let's do it.
 
-Consider the `CreatePortfolioDTO` class in Kotlin:
-
-```kotlin
-data class CreatePortfolioDTO(val userId: String, val amount: Double)
-```
-
-This DTO needs validation for `userId` and `amount`. Using type classes, we can define generic validation rules that are decoupled from the data type.
-
-### Implementing Type Classes in Kotlin with Context Receivers
-
-Kotlin's Context Receivers feature provides a way to implement type classes elegantly. Here's an example implementation using your provided code:
+It's time to change the `Validator<T>` interface again:
 
 ```kotlin
-// [Your provided code snippet here]
+interface ValidatorScope<T> {
+    fun T.validate(): EitherNel<ValidationError, T>
+}
 ```
 
-This implementation defines a series of validation rules (`Required`, `Positive`, `NonZero`) and applies them to the `CreatePortfolioDTO` fields. The beauty of this approach lies in its reusability and the ability to compose validations.
+A little of changes here. Let's analyze them one by one. First, the `validate` function is not an extension method of the generic type `T`. We can call the `validate` function as if it was a method of `T` now. For the sake of completeness, the type `T` is called the receiver of the function, and can be accessed using the `this` reference inside the function scope.
 
-## 5. Conclusion
+Then, we changed (again!!!) the name of the interface, calling it `ValidatorScope<T>`. We can find the `Scope` name used quite often in Kotlin libraries. In fact, the name refers to a Kotlin-specific pattern, called dispatcher receiver. In this way, we limit the visibility of the `validate`extension function, which allows us to call it only inside the scope. We say that the `validate` function is a context-dependent construct.
+
+```kotlin
+interface ValidatorScope<T> {                        // <- dispatcher receiver
+    fun T.validate(): EitherNel<ValidationError, T>  // <- extension function receiver
+    // 'this' type in 'validate' function is ValidatorScope<T> & T
+}
+```
+
+We can also access the dispatcher receiver in the function body as `this`. In fact, Kotlin can represent the `this` reference as a union type of the dispatcher receiver and the receiver of the extension function.
+
+For those of view that follows RockTheJvm blog, it's not a surprise. We already introduced scopes in [Kotlin Context Receivers: A Comprehensive Guide ](https://blog.rockthejvm.com/kotlin-context-receivers/#2-dispatchers-and-receivers).
+
+The last changes require us to change also the implementation of the validator for the `CreatePortfolioDTO` type:
+
+```kotlin
+val createPortfolioDTOValidatorScope = 
+    object : ValidatorScope<CreatePortfolioDTO> { 
+        override fun CreatePortfolioDTO.validate(): EitherNel<ValidationError, CreatePortfolioDTO> =
+            // validation logic here
+}
+```
+
+Also, the `process` function must be changed to. We need to use to call the `validate` function inside a `ValidatorScope`. The first solution is to make the `process` function an extension function of the `ValidatorScope<T>` interface:
+
+```kotlin
+fun <T> ValidatorScope<T>.process(toValidate: T) =
+    either {
+        val validated: T = toValidate.validate().bind()
+        // Do something with the validated object
+    }
+```
+
+Again, we used the receiver feature of the Kotlin language to access the `ValidatorScope<T>`. It's responsibility of the caller of the `process` function to provide the right `ValidatorScope<T>` instance. For example, we can call the `process` function as follows:
+
+```kotlin
+fun main() {
+    with (createPortfolioDTOValidatorScope) {
+        process(CreatePortfolioDTO("userId", 100.0))
+    }
+}
+```
+
+The `with` function is a Kotlin standard library function and it's part of the so-called scope functions. It takes a receiver and a lambda as parameters. The lambda is executed in the context of the receiver:
+
+```kotlin
+// Kotlin starndard library
+public inline fun <T, R> with(receiver: T, block: T.() -> R): R {
+    // Omissis
+    return receiver.block()
+}
+```
+
+Usually, the with function is preferred in such situations.
+
+The same pattern is used for [Kotlin coroutines](https://blog.rockthejvm.com/kotlin-coroutines-101/), where all the coroutine builders, i.e. `launch`, `async`, are extensions of the `CoroutineScope`, which acts as dispatcher receiver.
+
+One open point about the implementation of type classes in Kotlin is that we still don't have any automatic discover process for them. Other languages supporting type classes, such as Scala and Haskell, implement some form of automatic discovery. Scala, for example, has implicit resolution. 
+
+Last but not least, we can also use Kotlin [context receivers](https://blog.rockthejvm.com/kotlin-context-receivers/#2-dispatchers-and-receivers) to declare that a function needs a specific context to be executed. So, we can change the `process` function as follows:
+
+```kotlin
+context(ValidatorScope<T>)
+fun <T> process(toValidate: T) =
+    either {
+        val validated: T = toValidate.validate().bind()
+        // Do something with the validated object
+    }
+```
+
+To sum up, context receivers are a way to add a context or a scope to a function without passing this context as an argument.
+
+What's next? Well, we didn't talk about the validation logic yet. We'll do it in the next section.
+
+## 5. Expanding the Validation Framework
+
+In the previous section, we introduced the `ValidatorScope<T>` interface. We also saw how to use it to validate a DTO. However, we didn't talk about the validation logic yet. Let's do it now. We can use the type classes approach once again to solve the problem.
+
+
+
+## 6. Conclusion
 
 Type classes in Kotlin offer a powerful tool for solving common problems in a more flexible and composable manner than traditional object-oriented approaches. By leveraging Kotlin's functional programming features, we can write cleaner, more maintainable code that scales well with complexity.
