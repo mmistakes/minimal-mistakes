@@ -274,7 +274,41 @@ What's next? Well, we didn't talk about the validation logic yet. We'll do it in
 
 In the previous section, we introduced the `ValidatorScope<T>` interface. We also saw how to use it to validate a DTO. However, we didn't talk about the validation logic yet. Let's do it now. We can use the type classes approach once again to solve the problem.
 
+First, we need to define the validation rules. We'll start with the `CreatePortfolioDTO` type. We want to validate the `userId` and the `amount` fields. The `userId` field must be a non-empty string, while the `amount` field must be a positive number. Let's define the validation rules as follows:
 
+```kotlin
+interface NonEmpty<T> {
+    fun T.nonEmpty(): Boolean
+}
+
+interface Positive<T : Number> {
+    fun T.positive(): Boolean
+}
+```
+
+As we can see, the validation rules are generic. In this way, we can apply them to multiple types, exploiting ad-hoc polymorphisms once again. For the `CreatePortfolioDTO` we need the following implementations:
+
+```kotlin
+val nonEmptyString = object : Required<String> {
+    override fun String.nonEmpty(): Boolean = this.isNotBlank()
+}
+
+val positiveDouble = object : Positive<Double> {
+    override fun Double.positive(): Boolean = this > 0.0
+}
+```
+
+Nothing will stop us to have multiple implementations of the same validation rule for the same type. For example, we can have the following implementation for the `List<String>` and `Int` types:
+
+```kotlin
+val nonEmptyList = object : NonEmpty<List<String>> {
+    override fun List<String>.nonEmpty(): Boolean = this.isNotEmpty()
+}
+
+val positiveInt = object : Positive<Int> {
+    override fun Int.positive(): Boolean = this > 0
+}
+```
 
 ## 6. Conclusion
 
