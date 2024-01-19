@@ -3,6 +3,7 @@ layout: single
 title:  "디자인전공자의 풀스텍과정 도전"
 categories: coding
 tag: full-stack
+toc: true
 ---
 
 
@@ -11,7 +12,7 @@ tag: full-stack
 
 ## 1. 과목로드맵
 
-<img src="https://github.com/mmistakes/minimal-mistakes/assets/156207656/e7224465-1911-44c8-b3ff-940247f258c4" alt="IMG_3434"  />
+![IMG_3434](https://github.com/mmistakes/minimal-mistakes/assets/156207656/6918aac8-205f-4bf0-9dd8-49a57b55be1f)
 
 ## 2. 정규교과
 
@@ -30,3 +31,8 @@ tag: full-stack
 *Q2. 풀스텍수업과정을 선택하게된 이유?*
 
 원래 진로는 전공이 디자인이였기 때문에 시각적인 디자인을 다루는 퍼블리셔를 희망했었지만 수업상담때 퍼블리셔의 제한적인 직무(단순 코드만 수정해서 이미지변경) 및 연봉인상,진급문제때문에 대부분의 퍼블리셔들이 프론트 그다음에는 백엔드로 넘어가는 경향을 알게되어서 장기적으로 봤을때 개발쪽의 수업을 듣는것이 나중에 커리어 향상에도 도움이 될것 같아서 풀스텍수업을 선택하게 되었습니다.
+
+*Q3. 풀스텍과정 수강생들은 대부분 어떤 직무에서 일을하고 있는지?*
+
+대부분의 다수는 백엔드 그리고 몇몇은 프론트에서 일을 하고 있다고 알고있습니다 
+
