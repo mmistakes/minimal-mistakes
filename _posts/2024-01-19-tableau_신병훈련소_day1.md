@@ -66,7 +66,6 @@ Tableau 신병훈련소 22기 1일차
 
 <br>
 
-![Alt text](<스크린샷 2024-01-19 161027.png>)
 
 ![image](https://github.com/leejongseok1/algorithm/assets/79849878/cbc81aeb-46a9-4497-b593-07b7e34ad6fe)
 
