@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug 4b - Philharmonie",
-    "title": "Ausflug 4b - Philharmonie",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NTZ1MWQwMm1rc2poOTJhcHA2dWM0bGpiZ3QgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-01-18T07:25:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-01-18T12:30:00+01:00"
-    },
-    "created": "2024-01-16T11:54:35.000Z",
-    "updated": "2024-01-16T11:54:35.644Z"
-  },
-  {
-    "image_path": null,
     "alt": "6b - Ausflug ins Abgeordnetenhaus",
     "title": "6b - Ausflug ins Abgeordnetenhaus",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-01-16T11:55:33.000Z",
     "updated": "2024-01-16T11:55:33.523Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug zur Eislaufbahn ",
+    "title": "A5 - Ausflug zur Eislaufbahn ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWdpa2oxamNvdmY3dWhqcTZjNWwwODBoNG4gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-01-31T08:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-01-31T12:30:00+01:00"
+    },
+    "created": "2024-01-17T11:56:31.000Z",
+    "updated": "2024-01-17T11:58:18.050Z"
   }
 ]
