@@ -94,7 +94,7 @@ Most contracts, however, are signed between pre-existing organizations, so learn
 
 ## Milestones and Updates
 
-The contract we signed was broken up into a few workstreams (testing, new features, and community support/integration), which structure the grant into three periods punctuated by three milestones. 
+The contract we signed was broken up into a few workstreams (testing, new features, and community support/integration), which structure the contract into three phases punctuated by three milestones.
 
 We'll be posting grant reports [here](https://socialweb.coop/blog/) on the coop project's own website, as each of the milestones of the project are reached and outputs thereof open-sourced. In the meantime, stay tuned to the #ActivityPub channel on the Fediverse for developer chatter and the mailing list of the W3C Community Group for standards topics.
 
