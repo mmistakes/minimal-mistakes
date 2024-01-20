@@ -121,4 +121,4 @@ category: github
 
 아래와 같이 우측 상단에 카테고리가 변경된걸 확인할수 있다
 
-<img width="1350" alt="image" src="https://github.com/mmistakes/minimal-mistakes/assets/156207656/98f72ede-0adb-40b1-b8e9-577add156b45">
+<img width="1350" alt="image" src="https://github.com/mmistakes/minimal-mistakes/assets/156207656/98f72ede-0adb-40b1-b8e9-577add156b45"
