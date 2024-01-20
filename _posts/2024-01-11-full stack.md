@@ -4,6 +4,7 @@ title:  "디자인전공자의 풀스텍과정 도전"
 categories: 풀스텍과정
 tag: full-stack
 toc: true
+author_profile: false
 ---
 
 
