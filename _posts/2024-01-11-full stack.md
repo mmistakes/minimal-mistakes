@@ -5,6 +5,8 @@ categories: 풀스텍과정
 tag: full-stack
 toc: true
 author_profile: false
+sidebar:
+    nav: "docs"
 ---
 
 
