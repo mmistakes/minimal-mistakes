@@ -18,9 +18,12 @@ date: 2024-01-07
 
 <br>
 
-markdown에 이미지 삽입했을 때 로컬에서는 잘 보이지만
+*markdown에 이미지 삽입했을 때 로컬에서는 잘 보이지만*
 
-블로그에서 안보이는 문제 해결해야 함.
+*블로그에서 안보이는 문제 해결해야 함.*
+
+**[(LINK) - 구내식당 이용인원 예측.ipynb](https://github.com/leejongseok1/data_analysis/blob/main/%EA%B5%AC%EB%82%B4%EC%8B%9D%EB%8B%B9_%EC%9D%B4%EC%9A%A9%EC%9D%B8%EC%9B%90_%EC%98%88%EC%B8%A1/%EA%B5%AC%EB%82%B4%EC%8B%9D%EB%8B%B9_%EC%9D%B4%EC%9A%A9%EC%9D%B8%EC%9B%90_%EC%98%88%EC%B8%A1.ipynb)**
+
 
 <br>
 <br>
