@@ -8,7 +8,7 @@ main:
 
 docs:
   - title: "MENU"
-    chlidern:
+    chlideren:
       - title: "Category"   
         url: /categories/
       - title: "Tag"
