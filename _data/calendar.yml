@@ -1,25 +1,8 @@
 [
   {
     "image_path": null,
-    "alt": "6b - Ausflug ins Abgeordnetenhaus",
-    "title": "6b - Ausflug ins Abgeordnetenhaus",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MzMyaGx0aXN1YW1jcmdkZDg2NjJhNDNsa3MgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-01-19T08:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-01-19T14:30:00+01:00"
-    },
-    "created": "2024-01-17T10:58:40.000Z",
-    "updated": "2024-01-17T11:54:33.642Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Auflug Wiko - Gartenarbeitsschule",
-    "title": "Auflug Wiko - Gartenarbeitsschule",
+    "alt": "Ausflug Wiko - Gartenarbeitsschule",
+    "title": "Ausflug Wiko - Gartenarbeitsschule",
     "excerpt": null,
     "url": "https://www.google.com/calendar/event?eid=MWNmOTJvYmRyM3JoZjF1ZHBmMXRsbGN0M3MgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
@@ -31,7 +14,7 @@
       "date_time": "2024-01-22T12:00:00+01:00"
     },
     "created": "2024-01-16T11:55:02.000Z",
-    "updated": "2024-01-16T11:55:02.636Z"
+    "updated": "2024-01-19T07:59:42.001Z"
   },
   {
     "image_path": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-01-17T11:56:31.000Z",
     "updated": "2024-01-17T11:58:18.050Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug zur Bibliothek ",
+    "title": "A5 - Ausflug zur Bibliothek ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2V2dGNxbXFuanZwYW1wbDlmZGhwMmFwdHQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-02-21T07:50:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-02-21T11:30:00+01:00"
+    },
+    "created": "2024-01-17T12:03:54.000Z",
+    "updated": "2024-01-17T12:03:54.035Z"
   }
 ]
