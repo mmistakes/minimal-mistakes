@@ -12,3 +12,5 @@ end
 
 gem "webrick", groups: [:development, :test]
 
+# Fix for jekyll 3.0.0
+gem "json"
