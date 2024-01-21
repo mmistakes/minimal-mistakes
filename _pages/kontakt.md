@@ -45,7 +45,7 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 * E-Mail: {% include email email='sekretariat@brandwerder.de' %}
 * Telefon: (030) 3670952 - 0
 * Telefax: (030) 3670952 - 10
-* Öffnungszeiten: Mo - Fr 7:30 - 14:00
+* Öffnungszeiten: Mo - Do 7:30 - 14:40, Fr 7:30 - 12:30
 
 ## Hort (eFöB)
 
@@ -57,20 +57,25 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 
 ## Lehrkräfte
 
+
 |   | Dienst E-Mail |
 |---|---|
+| Frau Adam | {% include email email='m.adam@brandwerder.de' %} |
 | Frau Aust | {% include email email='t.aust@brandwerder.de' %} |
 | Frau Baerwald-Diedrich | {% include email email='m.baerwald@brandwerder.de' %} |
 | Frau Bartel | {% include email email='y.bartel@brandwerder.de' %} |
-| Herr Beyaztepe | {% include email email='z.beyaztepe@brandwerder.de' %} |
+| Frau Bezijan | {% include email email='t.bezijan@brandwerder.de' %} |
 | Frau Bingöl | {% include email email='e.bingöl@brandwerder.de' %} |
 | Frau Blum | {% include email email='c.blum@brandwerder.de' %} |
 | Frau Coester | {% include email email='a.coester@brandwerder.de' %} |
+| Frau Colo | {% include email email='e.colo@brandwerder.de' %} |
 | Frau Dauns | {% include email email='b.dauns@brandwerder.de' %} |
 | Frau Dietrich | {% include email email='z.dietrich@brandwerder.de' %} |
 | Frau Esch | {% include email email='t.esch@brandwerder.de' %} |
 | Frau Gade | {% include email email='m.gade@brandwerder.de' %} |
 | Frau Henkel | {% include email email='a.henkel@brandwerder.de' %} |
+| Frau Hornig | {% include email email='s.hornig@brandwerder.de' %} |
+| Frau Jonischkeit | {% include email email='l.jonischkeit@brandwerder.de' %} |
 | Frau Kiki | {% include email email='a.kiki@brandwerder.de' %} |
 | Frau Kilinc | {% include email email='i.kilinc@brandwerder.de' %} |
 | Frau Kottwitz | {% include email email='m.kottwitz@brandwerder.de' %} |
@@ -79,11 +84,12 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 | Frau Lehmann | {% include email email='s.lehmann@brandwerder.de' %} |
 | Herr Löloff | {% include email email='n.loeloff@brandwerder.de' %} |
 | Frau Marschner | {% include email email='m.marschner@brandwerder.de' %} |
-| Frau Örs | {% include email email='b.oers@brandwerder.de' %} |
 | Herr Orth | {% include email email='m.orth@brandwerder.de' %} |
+| Frau Rehm | {% include email email='s.rehm@brandwerder.de' %} |
 | Frau Stahn | {% include email email='m.stahn@brandwerder.de' %} |
-| Herr Weichert | {% include email email='L.weichert@brandwerder.de' %} |
-| Frau Wendt | {% include email email='n.wendt@brandwerder.de' %} |
+| Frau Stieler | {% include email email='a.stieler@brandwerder.de' %} |
+| Frau Vitek | {% include email email='m.vitek@brandwerder.de' %} |
+| Herr Weichert | {% include email email='l.weichert@brandwerder.de' %} |
 | Herr Wieting | {% include email email='m.wieting@brandwerder.de' %} |
 
 

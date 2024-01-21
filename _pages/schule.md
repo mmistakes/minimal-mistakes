@@ -4,7 +4,7 @@ title: "Unsere Schule"
 permalink: /schule/
 author_profile: false
 excerpt: "Über uns, Kooperationen, Veranstaltungen, JÜL-Konzept, Unterrichtszeiten und Kollegium"
-modified: 2022-09-09T10:55:00+01:00
+modified: 2024-01-21T10:55:00+01:00
 header:
   overlay_color: "#fff"
   overlay_image: /assets/images/mm-home-page-feature.jpg
@@ -20,7 +20,7 @@ Unsere Kontaktseite finden Sie [hier](/kontakt/).
 
 <!-- {% include outdated.md %} -->
 
-Wir sind eine zweizügige, verlässliche Halbtagsgrundschule in Spandau/Staaken,
+Wir sind eine dreizügige, verlässliche Halbtagsgrundschule in Spandau/Staaken,
 die in diesem Schuljahr von rund 400 Kindern besucht wird.
 
 Wir setzen Schwerpunkte im selbstständigen und sozialen Lernen. Die
