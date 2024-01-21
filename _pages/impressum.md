@@ -19,14 +19,19 @@ Telefon: (030) 3670952 - 0 \\
 Telefax: (030) 3670952 - 10 \\
 E-Mail: {% include email email='s.lehmann@brandwerder.de' %}
 
-## Schulträger (Diensteanbieter im Sinne des RStV/TMG)
+## Schulträger (Diensteanbieter im Sinne des TDG/Schul- und Rechtsträger)
 
-*Bezirksamt Spandau von Berlin, vertreten durch die Abteilung Bildung, Kultur und Sport* \\
-*Carl-Schurz-Str. 8,* \\
-*13597 Berlin-Spandau*
+Berlin, vertreten durch: \\
+*Bezirksamt Spandau von Berlin* \\
+*Abteilung Personal, Finanzen, Schule und Sport* \\
+*Schul- und Sportamt* \\
+*13578 Berlin*
 
-Telefon: (030) 3303-2230 \\
-Telefax: (030) 3303-3958
+(Dienstgebäude: Streitstraße 9, 13587 Berlin)
+
+E-Mail: schulamt@ba-spandau.berlin.de \\
+Telefon: (030) 90279 2232 \\
+Fax: (030) 90279 3441
 
 ## Verantwortlicher
 
