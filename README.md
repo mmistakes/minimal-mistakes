@@ -6,7 +6,4 @@ minimal mistakesのforkで作成
 
 ## 配信する内容は？
 
-* 主に子供のためのゲーム
-* ゲーム開発に関連する内容
-
-メインはPhaser＋TypeScriptベースのゲーム開発とゲームの公開
+Dart、Flutter、Flame、それと、Game
