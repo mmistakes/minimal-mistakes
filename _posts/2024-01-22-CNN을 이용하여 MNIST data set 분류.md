@@ -1,6 +1,6 @@
 ---
 layout: single
-title: CNN(convolution neural network)
+title: CNN을 이용해 MNIST 분류
 category: deeplearning
 tag: [CNN , deeplearning , coding , Python , Pytorch]
 toc: true
