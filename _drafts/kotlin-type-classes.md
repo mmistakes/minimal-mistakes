@@ -347,33 +347,7 @@ fun <T : Number> T.nonZero(fieldName: String): EitherNel<ZeroFieldError, T> =
     }
 ```
 
-The above validation functions requires a validation rules type class to be available as an extension function on the type `T`. So, in this version of the solution we need to use context receivers, since we can't have more than one receiver for a function. However, we can do better than this. In fact, Since the two function need a validation rule type class as context, why can't we move them directly inside the validation rules type classes? Let's do it:
-
-```kotlin
-interface Required<T> {
-    fun T.required(): Boolean
-
-    fun T.required(fieldName: String): EitherNel<MissingFieldError, T> =
-        if (required()) {
-            this.right()
-        } else {
-            MissingFieldError(fieldName).left().toEitherNel()
-        }
-}
-
-interface Positive<T : Number> {
-    fun T.positive(): Boolean
-
-    fun T.positive(fieldName: String): EitherNel<NegativeFieldError, T> =
-        if (positive()) {
-            this.right()
-        } else {
-            NegativeFieldError(fieldName).left().toEitherNel()
-        }
-} 
-```
-
-The approach above lets us to completely rid off the context receiver in function definition.
+The above validation functions requires a validation rules type class to be available as an extension function on the type `T`. So, in this version of the solution we need to use context receivers, since we can't have more than one receiver for a function.
 
 The last step is to use our freshly new validation rules to implement the validation logic of our DTO validator. Before proceed with the implementation, we need to slightly change the definition of the original `ValidationError` adding a list to accumulate errors oven fields:
 
@@ -398,6 +372,48 @@ val createPortfolioDTOValidator =
             }
     }
 ```
+
+Here is where we start exploiting the full power of the Arrow library. The `zipOrAccumulate` function takes a variable number of `EitherNel<E, A>` instances and zips them returns in a single `EitherNel` instance. The function is overloaded in the Arrow library to be applicable to a variable number of inputs. The `zipOrAccumulate` function version with the largest number of input variables is defined as follows:
+
+```kotlin
+// Arrow Kt library
+public inline fun <E, A, B, C, D, EE, F, G, H, I, J, Z> zipOrAccumulate(
+      a: EitherNel<E, A>,
+      b: EitherNel<E, B>,
+      c: EitherNel<E, C>,
+      d: EitherNel<E, D>,
+      e: EitherNel<E, EE>,
+      f: EitherNel<E, F>,
+      g: EitherNel<E, G>,
+      h: EitherNel<E, H>,
+      i: EitherNel<E, I>,
+      j: EitherNel<E, J>,
+      transform: (A, B, C, D, EE, F, G, H, I, J) -> Z,
+    ): EitherNel<E, Z> {
+      // Omissis...
+      return if (a is Right && b is Right && c is Right && d is Right && e is Right && f is Right && g is Right && h is Right && i is Right && j is Right) {
+        Right(transform(a.value, b.value, c.value, d.value, e.value, f.value, g.value, h.value, i.value, j.value))
+      } else {
+        val list = buildList {
+          if (a is Left) addAll(a.value)
+          if (b is Left) addAll(b.value)
+          if (c is Left) addAll(c.value)
+          if (d is Left) addAll(d.value)
+          if (e is Left) addAll(e.value)
+          if (f is Left) addAll(f.value)
+          if (g is Left) addAll(g.value)
+          if (h is Left) addAll(h.value)
+          if (i is Left) addAll(i.value)
+          if (j is Left) addAll(j.value)
+        }
+        Left(NonEmptyList(list[0], list.drop(1)))
+      }
+    }
+```
+
+TODO
+
+If all the input `EitherNel` instances are `Right` instances, then the `zipOrAccumulate` function executes a given function passing to it all the  a `Right` instance containing a tuple with the values of the `Either` instances. Otherwise, it returns a `Left` instance containing a list of the `Left` instances.
 
 ## 6. Conclusion
 
