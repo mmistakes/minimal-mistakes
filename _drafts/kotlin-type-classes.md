@@ -11,9 +11,21 @@ toc_label: "In this article"
 
 _By [Riccardo Cardin](https://github.com/rcardin)_
 
+
+
 ## 1. Setting the Stage
 
-TODO
+We’ll use version 1.9.22 of Kotlin and version 1.2.1 of the Arrow library. We'll also use Kotlin's context receivers. Context receivers are still an experimental feature. Hence, they’re not enabled by default. We need to modify the Gradle configuration. Add the `kotlinOptions` block within the `tasks.withType<KotlinCompile>` block in your `build.gradle.kts` file:
+
+```kotlin
+tasks.withType<KotlinCompile>().configureEach {
+    kotlinOptions {
+        freeCompilerArgs = freeCompilerArgs + "-Xcontext-receivers"
+    }
+}
+```
+
+As usual, we’ll put a copy of the configuration file we use at the end of the article.
 
 ## 2. The Problem
 
@@ -469,6 +481,47 @@ val rangeInteger = object : InRange<Int> {
 
 Et voilà!
 
-## 6. Conclusion
+## 6. Conclusions
 
 In conclusion, this article has explored the concept of type classes in Kotlin, demonstrating their utility in abstracting validation logic for different data types. We've seen how type classes can provide a solution for ad-hoc polymorphism, allowing us to define a set of behaviors that can be applied to various types without altering the types themselves. This is particularly useful in languages like Kotlin, which supports both object-oriented and functional programming paradigms. We've also delved into the use of Kotlin's context receivers and extension functions to enhance the elegance and intuitiveness of our code. Furthermore, we've seen how the Arrow library can be leveraged to handle validation errors in a functional way, avoiding exceptions and enhancing code maintainability.  However, it's important to note that while type classes offer many advantages, they also come with their own set of challenges, such as discoverability and the need for a certain level of familiarity with functional programming concepts. Overall, type classes represent a powerful tool in a developer's toolkit, offering a flexible and maintainable approach to handling common programming tasks such as data validation.
+
+## 7. Appendix: Gradle Configuration
+
+As promised, here is the Gradle configuration we used to compile the code in this article. Please, remember to set up your project using the `gradle init` command.
+
+```kotlin
+plugins {
+    id("org.jetbrains.kotlin.jvm") version "1.9.22"
+    application
+}
+
+repositories { .
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.9.1")
+    implementation("io.arrow-kt:arrow-core:1.2.1")
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(19))
+    }
+}
+
+application {
+    mainClass.set("in.rcard.type.classes.AppKt")
+}
+
+tasks.named<Test>("test") {
+    useJUnitPlatform()
+}
+
+tasks.withType<KotlinCompile>().configureEach {
+    kotlinOptions {
+        freeCompilerArgs = freeCompilerArgs + "-Xcontext-receivers"
+    }
+}
+```
