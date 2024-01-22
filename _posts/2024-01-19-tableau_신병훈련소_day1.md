@@ -16,7 +16,11 @@ date: 2024-01-19
 ---
 Tableau 신병훈련소 22기 DAY 1
 
-# 데이터
+----
+
+# 📝 과제
+
+## 데이터
 
 "스타벅스 메뉴 데이터"와 "매장 정보 데이터"를 이용해 시각적 분석을 한다.
 
@@ -26,7 +30,7 @@ Tableau 신병훈련소 22기 DAY 1
 
 <br>
 
-# 1. 카테고리 별 평균 칼로리 & 평균 카페인
+## 1. 카테고리 별 평균 칼로리 & 평균 카페인
 
 ![1  카테고리별 평균 칼로리 카페인](https://github.com/leejongseok1/algorithm/assets/79849878/3f3dd824-edcc-494b-938c-e55594a8abb6)
 
@@ -35,7 +39,7 @@ Tableau 신병훈련소 22기 DAY 1
 
 <br>
 
-# 2. 메뉴명 별 칼로리 & 카페인
+## 2. 메뉴명 별 칼로리 & 카페인
 
 ![2  메뉴별 칼로리 카페인](https://github.com/leejongseok1/algorithm/assets/79849878/0fb452e0-c80b-48fe-a4ba-77e1a79b3383)
 
@@ -50,7 +54,7 @@ Tableau 신병훈련소 22기 DAY 1
 
 <br>
 
-# 3. 카테고리와 메뉴명을 한 번에 살펴보기
+## 3. 카테고리와 메뉴명을 한 번에 살펴보기
 
 ![3  카테고리와 메뉴명을 한 번에 살펴보기](https://github.com/leejongseok1/algorithm/assets/79849878/e4c19875-da72-4c82-adba-c7753ff00fb8)
 
@@ -74,7 +78,7 @@ Tableau 신병훈련소 22기 DAY 1
 
 <br>
 
-# 4. 당분 함유량과 칼로리의 상관관계
+## 4. 당분 함유량과 칼로리의 상관관계
 
 ![4  당분 함유량과 칼로리의 상관관계](https://github.com/leejongseok1/algorithm/assets/79849878/ae0dd52f-3eb3-4335-a2b8-c4f201f5f19e)
 
@@ -91,7 +95,7 @@ Tableau 신병훈련소 22기 DAY 1
 
 <br>
 
-# 5. 시군구 별 매장 분포 현황
+## 5. 시군구 별 매장 분포 현황
 
 ![5  시군구 별 스타벅스 매장 수](https://github.com/leejongseok1/algorithm/assets/79849878/53aee77a-1fc9-4328-b6a0-1cd87f554a81)
 
@@ -103,22 +107,20 @@ Tableau 신병훈련소 22기 DAY 1
 
 <br>
 
-# 6. 대시보드 만들기
+## 6. 대시보드 만들기
 
 ![image](https://github.com/leejongseok1/algorithm/assets/79849878/89a94a20-bbb3-4a42-ae1c-4b5f32bba30c)
 
 <br>
 <br>
 
-# [추가 도전 과제]
-
-## 1. 메뉴별 칼로리와 카페인의 상관관계
+## [추가 도전 과제] 1. 메뉴별 칼로리와 카페인의 상관관계
 
 ![image](https://github.com/leejongseok1/algorithm/assets/79849878/74781a94-6855-4547-9946-70c89ad6427a)
 
 <br>
 
-## 2. 서울시 실제 매장 위치 표현
+## [추가 도전 과제] 2. 서울시 실제 매장 위치 표현
 
 ![image](https://github.com/leejongseok1/algorithm/assets/79849878/7e6e6732-06aa-4d6c-87b7-f794ac1efe9e)
 
