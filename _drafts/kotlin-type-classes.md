@@ -411,10 +411,64 @@ public inline fun <E, A, B, C, D, EE, F, G, H, I, J, Z> zipOrAccumulate(
     }
 ```
 
-TODO
+Many different versions of the function differ in the number of input parameters. The above is the one with the maximum number of parameters. The function takes a list of functions that return a value of type `EitherNel<E, A>`, `EitherNel<E, B>`, `EitherNel<E, C>`, `EitherNel<E, D>`, `EitherNel<E, EE>`, `EitherNel<E, F>`, `EitherNel<E, G>`, `EitherNel<E, H>`, `EitherNel<E, I>`, `EitherNel<E, J>`and a function that takes all the previous values and returns a value of type `EitherNel<E, Z>`. The function returns the value of type `EitherNel<E, Z>`; if any error occurs, it raises the list of errors. So, remember: The maximum number of single input parameters is 10. If we need more, we must apply the function recursively multiple times.
 
-If all the input `EitherNel` instances are `Right` instances, then the `zipOrAccumulate` function executes a given function passing to it all the  a `Right` instance containing a tuple with the values of the `Either` instances. Otherwise, it returns a `Left` instance containing a list of the `Left` instances.
+In case of the execution of `zipOrAccumulate` will return an `Left<NonEmptyList<InvalidFieldError>>`, we simply map it into a `Left<NonEmptyList<ValidationError>>` containing the whole previous non-empty list.
+
+Now that we defined the validator for the `CreatePortfolioDTO`, it's time to use it in the `process` function to close the circle. We can do it as follows:
+
+```kotlin
+with(createPortfolioDTOValidator) {
+    process(CreatePortfolioDTO("userId", 100.0))
+}
+```
+
+So, if we need to use the `process` function for a different type, it's sufficient to define a new validator for that type. For example, we can define the following validator for the `ChangePortfolioDTO` type:
+
+```kotlin
+val changePortfolioDTOValidator =
+    object : ValidatorScope<ChangePortfolioDTO> {
+        override fun ChangePortfolioDTO.validate(): Either<ValidationError, ChangePortfolioDTO> =
+            validation {
+                with(requiredString) {
+                    with(nonZeroInteger) {
+                        zipOrAccumulate(
+                            stock.required("stock"),
+                            quantity.nonZero("quantity"),
+                            ::ChangePortfolioDTO,
+                        ).mapLeft(::ValidationError)
+                    }
+                }
+            }
+    }
+```
+
+The invocation of the `process` function changes accordingly as follow:
+
+```kotlin
+with(changePortfolioDTOValidator) {
+    process(ChangePortfolioDTO("stock", 100))
+}
+```
+
+If we want to extend our framework with new types of validation rules, we can just define new type classes and new implementations for them. For example, we can add a policy to check if a number is within a given range:
+
+```kotlin
+interface InRange<T : Number> {
+    fun T.inRange(min: T, max: T): Boolean
+}
+```
+
+Then, we can implement it for the `Int`:
+
+```kotlin
+val rangeInteger = object : InRange<Int> {
+    override fun Int.inRange(min: Int, max: Int): Boolean = this in min..max
+}
+```
+
+Et voilà!
 
 ## 6. Conclusion
 
-Type classes in Kotlin offer a powerful tool for solving common problems in a more flexible and composable manner than traditional object-oriented approaches. By leveraging Kotlin's functional programming features, we can write cleaner, more maintainable code that scales well with complexity.
+In conclusion, this article has explored the concept of type classes in Kotlin, demonstrating their utility in abstracting validation logic for different data types. We've seen how type classes can provide a solution for ad-hoc polymorphism, allowing us to define a set of behaviors that can be applied to various types without altering the types themselves. This is particularly useful in languages like Kotlin, which supports both object-oriented and functional programming paradigms. We've also delved into the use of Kotlin's context receivers and extension functions to enhance the elegance and intuitiveness of our code. Furthermore, we've seen how the Arrow library can be leveraged to handle validation errors in a functional way, avoiding exceptions and enhancing code maintainability.  However, it's important to note that while type classes offer many advantages, they also come with their own set of challenges, such as discoverability and the need for a certain level of familiarity with functional programming concepts. Overall, type classes represent a powerful tool in a developer's toolkit, offering a flexible and maintainable approach to handling common programming tasks such as data validation.
