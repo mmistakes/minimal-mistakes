@@ -27,6 +27,14 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+masthead                 :
+  hide_navigator         : # true, false (default) to be able to hide the navigator item of the top bar
+  sticky:                : # true, false (default) to be able to stick the navigator top bar to the the top
+page_content_width       : # Any max-with css value, theme default is $max-width that is $x-large: 1280px in _variables.scss, hint, use percentage e.g. 90%
+sidebar                  :
+  sticky:                : # true, false (default) to be able to stick the navigator left sidebar to the the top
+enable_copy_code_button  : # true, false (default)
+
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:

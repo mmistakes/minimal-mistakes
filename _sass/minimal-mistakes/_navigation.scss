@@ -29,11 +29,11 @@
 
     @include breakpoint($large) {
       float: right;
-      width: calc(100% - #{$right-sidebar-width-narrow});
+      width: calc(100% - #{$left-sidebar-width-narrow});
     }
 
     @include breakpoint($x-large) {
-      width: calc(100% - #{$right-sidebar-width});
+      width: calc(100% - #{$left-sidebar-width});
     }
   }
 
