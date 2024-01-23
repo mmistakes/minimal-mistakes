@@ -1,10 +1,12 @@
+{% if page.mermaid == true %}
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js"></script>
 <script>
     $(document).ready(function () {
         mermaid.initialize({
-            startOnLoad: true,
+            startOnLoad:true,
             theme: "default",
         });
         window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
     });
 </script>
+{% endif %}
