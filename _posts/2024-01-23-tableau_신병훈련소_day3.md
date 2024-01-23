@@ -12,7 +12,7 @@ sidebar:
     nav: "docs"
     nav: "counts"
 
-date: 2024-01-22
+date: 2024-01-23
 ---
 Tableau 신병훈련소 22기 DAY 3
 
@@ -150,3 +150,18 @@ Tableau 신병훈련소 22기 DAY 3
 
 ## 1. 매개 변수를 사용하여 측정값 변경하기1 & 마크 색상 표현하기
 
+![1  매개변수를 사용하여 측정값 변경하기1   마크 색상 표현하기](https://github.com/leejongseok1/algorithm/assets/79849878/46b6b615-e865-4b02-8b12-8afccd5df91f)
+
+<br>
+
+## 2. 매개 변수를 사용하여 측정값 변경하기2
+
+![2  매개변수를 사용하여 측정값 변경하기2](https://github.com/leejongseok1/algorithm/assets/79849878/e3b62bc1-fc44-4ece-adf8-de789c128563)
+
+<br>
+
+## 3. 대시보드 동작 적용하기
+
+**(하이라이트 적용)**
+
+![3  대시보드 동작 적용하기](https://github.com/leejongseok1/algorithm/assets/79849878/33acd0e2-1eb6-4fff-a130-cc2a1bfdbd1b)
