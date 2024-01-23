@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug Wiko - Gartenarbeitsschule",
-    "title": "Ausflug Wiko - Gartenarbeitsschule",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MWNmOTJvYmRyM3JoZjF1ZHBmMXRsbGN0M3MgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-01-22T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-01-22T12:00:00+01:00"
-    },
-    "created": "2024-01-16T11:55:02.000Z",
-    "updated": "2024-01-19T07:59:42.001Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug 4b - Eislaufbahn Glockenturm",
     "title": "Ausflug 4b - Eislaufbahn Glockenturm",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-01-17T12:03:54.000Z",
     "updated": "2024-01-17T12:03:54.035Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A3 - Ausflug zur Eislaufbahn Glockenturm",
+    "title": "A3 - Ausflug zur Eislaufbahn Glockenturm",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MXI2N292aWxxYzhodXNrYmZoZTVlbXFuNzggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-02-22T08:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-02-22T13:00:00+01:00"
+    },
+    "created": "2024-01-17T12:01:49.000Z",
+    "updated": "2024-01-17T12:01:49.110Z"
   }
 ]
