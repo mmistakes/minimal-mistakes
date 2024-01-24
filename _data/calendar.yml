@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug 4b - Eislaufbahn Glockenturm",
-    "title": "Ausflug 4b - Eislaufbahn Glockenturm",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MnMzam9qMm9kdGR2cnJqOHRoYmY0YW04NnAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-01-23T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-01-23T13:00:00+01:00"
-    },
-    "created": "2024-01-16T11:55:09.000Z",
-    "updated": "2024-01-16T11:55:09.188Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug 5c  - Grüne Woche ",
     "title": "Ausflug 5c  - Grüne Woche ",
     "excerpt": null,
@@ -86,8 +69,8 @@
   },
   {
     "image_path": null,
-    "alt": "A5 - Ausflug zur Bibliothek ",
-    "title": "A5 - Ausflug zur Bibliothek ",
+    "alt": "Ausflug A5 - Bibliothek Spandau ",
+    "title": "Ausflug A5 - Bibliothek Spandau ",
     "excerpt": null,
     "url": "https://www.google.com/calendar/event?eid=M2V2dGNxbXFuanZwYW1wbDlmZGhwMmFwdHQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
@@ -99,6 +82,23 @@
       "date_time": "2024-02-21T11:30:00+01:00"
     },
     "created": "2024-01-17T12:03:54.000Z",
-    "updated": "2024-01-17T12:03:54.035Z"
+    "updated": "2024-01-23T08:28:44.405Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A6 - GRIPS Theater ",
+    "title": "Ausflug A6 - GRIPS Theater ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Mmc1Njg1bzZxZnRwbWw4MHFuOGk4bmo0dXIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-02-21T09:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-02-21T13:30:00+01:00"
+    },
+    "created": "2024-01-23T08:31:28.000Z",
+    "updated": "2024-01-23T08:31:28.112Z"
   }
 ]
