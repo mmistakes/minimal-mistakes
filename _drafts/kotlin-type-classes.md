@@ -1,5 +1,5 @@
 ---
-title: "Type Classes in Kotlin: A Concrete Example of Context Receivers Use"
+title: "Type Classes in Kotlin: A Practical Guide
 date: 2024-01-30
 header:
     image: "/images/blog cover.jpg"
