@@ -560,31 +560,11 @@ The first thing we need is an HTML page to render. The relevant page itself need
 		<meta charset="UTF-8">
 		<title>Rock the JVM Demo App</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- icon -->
 		<link rel="icon" href="./static/img/icon.png"  type="image/png">
 		<link rel="apple-touch-icon" href="./static/img/icon.png" />
-		<!-- Facebook -->
-		<meta property="og:title" content="Rock the JVM Demo App" />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://jobs.rockthejvm.com/" />
-		<meta property="og:image" content="./static/img/social-banner.png" />
-		<!-- Twitter -->
-		<meta name="twitter:title" content="Rock the JVM Demo App">
-		<meta name="twitter:description" content="A demo app with the Typelevel stack">
-		<meta name="twitter:image" content="./static/img/social-banner.png">
-		<meta name="twitter:card" content="summary_large_image">
-		<!-- =========================================== START : BOOTSTRAP CDN  ============================================== -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> 
-		<!-- ============================================== END : BOOTSTRAP CDN  ============================================ -->
-		<!-- ======================================= START : FONT AWESOME CDN ===================================== -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<!-- ======================================= END : FONT AWESOME CDN ===================================== -->
-		<!-- ======================================= START : github markdown ===================================== -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-light.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<!-- ======================================= END : github markdown ===================================== -->
 		<link rel="stylesheet" href="./css/style.css">
-
 	</head>
 	<body>
 		<div id="app"></div>
