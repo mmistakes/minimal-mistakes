@@ -9,10 +9,6 @@ toc: true
 toc_label: "In this article"
 ---
 
->This demo is the start of the production-grade application we write in the giant [Typelevel Rite of Passage](https://rockthejvm.com/p/typelevel-rite-of-passage) course. It is currently the biggest course on the site, and teaches you how to write production software using the Typelevel stack, how to make sound architectural decisions, how to do proper testing, how to write app features, payment systems, email services and everything that you'd normally expect from a proper web application, and also how to deploy it to your domain.
->
-> If you're interested, check out the course [here](https://rockthejvm.com/p/typelevel-rite-of-passage).
-
 ## 1. Introduction
 
 The Typelevel stack is one of the most powerful sets of libraries in the Scala ecosystem. They allow you to write powerful applications with pure functional programming - as of this writing, the Typelevel ecosystem is one of the biggest selling points of Scala.
@@ -30,6 +26,9 @@ This is on the backend. On the frontend: although not an official Typelevel libr
 
 Together we will build the minimal start of a full-stack application, entirely written in Scala. The use-case is a fictitious "job board" - we will define a server that is able to insert and retrieve data from the database, then surface that data on the frontend.
 
+>This demo is the start of the production-grade application we write in the giant [Typelevel Rite of Passage](https://rockthejvm.com/p/typelevel-rite-of-passage) course. It is currently the biggest course on the site, and teaches you how to write production software using the Typelevel stack, how to make sound architectural decisions, how to do proper testing, how to write app features, payment systems, email services and everything that you'd normally expect from a proper web application, and also how to deploy it to your domain.
+>
+> If you're interested, check out the course [here](https://rockthejvm.com/p/typelevel-rite-of-passage).
 
 
 ## 2. Setup
