@@ -106,7 +106,7 @@ analytics:
 author:
   name: "Kürşat Yurt"
   avatar: "assets/images/profile.jpg"
-  bio: "CSE Master Student @ TUM <br />Programming, CFD, HPC"
+  bio: "Phd Candidate @ TUM <br />Programming, CFD, HPC"
   location: "Munich, Germany"
   #email: "kursatyurt@gmail.com"
   links:
@@ -116,9 +116,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kursatyurt"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/kursatyurt"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/kursatyurt"
 
 # Site Footer
 footer:
@@ -129,9 +129,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kursatyurt"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/kursatyurt"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/kursatyurt"
 
 # Reading Files
 include:
