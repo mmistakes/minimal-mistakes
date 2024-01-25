@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug 5c  - Grüne Woche ",
-    "title": "Ausflug 5c  - Grüne Woche ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NG5hMzAzNjc1anI0bHJram1lOG9hcWFocGogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-01-24T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-01-24T14:00:00+01:00"
-    },
-    "created": "2024-01-16T11:55:21.000Z",
-    "updated": "2024-01-16T11:55:21.627Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug A8 - Eislaufbahn Glockenturm",
-    "title": "Ausflug A8 - Eislaufbahn Glockenturm",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N3E0cXFnZGppOHNuYnRsZ3AyMnVrZ2F1MGUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-01-24T08:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-01-24T12:45:00+01:00"
-    },
-    "created": "2024-01-16T11:55:33.000Z",
-    "updated": "2024-01-16T11:55:33.523Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A1 - Gartenarbeitsschule",
     "title": "Ausflug A1 - Gartenarbeitsschule",
     "excerpt": null,
@@ -52,8 +18,8 @@
   },
   {
     "image_path": null,
-    "alt": "A5 - Ausflug zur Eislaufbahn ",
-    "title": "A5 - Ausflug zur Eislaufbahn ",
+    "alt": "Ausflug A5 - Eislaufbahn ",
+    "title": "Ausflug A5 - Eislaufbahn ",
     "excerpt": null,
     "url": "https://www.google.com/calendar/event?eid=NWdpa2oxamNvdmY3dWhqcTZjNWwwODBoNG4gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
@@ -65,7 +31,7 @@
       "date_time": "2024-01-31T12:30:00+01:00"
     },
     "created": "2024-01-17T11:56:31.000Z",
-    "updated": "2024-01-17T11:58:18.050Z"
+    "updated": "2024-01-24T10:46:29.868Z"
   },
   {
     "image_path": null,
@@ -100,5 +66,39 @@
     },
     "created": "2024-01-23T08:31:28.000Z",
     "updated": "2024-01-23T08:31:28.112Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A3 - Eislaufbahn Glockenturm",
+    "title": "Ausflug A3 - Eislaufbahn Glockenturm",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MXI2N292aWxxYzhodXNrYmZoZTVlbXFuNzggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-02-22T08:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-02-22T13:00:00+01:00"
+    },
+    "created": "2024-01-17T12:01:49.000Z",
+    "updated": "2024-01-23T08:30:06.182Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A9 - GAS Hakenfelde",
+    "title": "Ausflug A9 - GAS Hakenfelde",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWVlYTZkZGNoMGxwOGcwMXR0Z2tpMG1zZW0gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-02-22T10:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-02-22T13:30:00+01:00"
+    },
+    "created": "2024-01-23T08:37:33.000Z",
+    "updated": "2024-01-23T08:37:33.292Z"
   }
 ]
