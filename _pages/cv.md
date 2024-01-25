@@ -6,19 +6,23 @@ title: "CV"
 permalink: /CV/
 author_profile: true
 ---
-
 # Education
 
-- M.S. in Computational Science & Engineering , Technical University of Munich, Munich, Germany ,2023 (expected)
+- M.S. in Computational Science & Engineering , Technical University of Munich, Munich, Germany ,2023
 - B.S. in Aerospace Engineering, Middle East Technical University, Ankara, Turkey, 2020
 
 # Work Experience
 
+- **Research Associate (Wissenschaftlicher Mitarbeiter)**
+
+  - Technical University of Munich
+  - Institute for Rotorcraft and Vertical Flight
+
 - **Research Assistant (Hilfswissenschaftler)**
 
   - Technical University of Munich
-  - Helicopter Technology Chair
-    - Delevopment and verification of FSI code using Python and PreCICE library
+  - Institute for Rotorcraft and Vertical Flight
+    - Development and verification of FSI code using Python and PreCICE library
 
 - **CO-OP Internship**
 
@@ -44,57 +48,12 @@ author_profile: true
 # Skills
 
 - Programming Languages
-
-  - **Favourites**
-    - C++
-    - Fortran
-    - Python
-  - Others
-    - MATLAB
-    - Julia
+  - C++
+  - Fortran
+  - Python
 
 - Parallel Programming
 
   - MPI
   - OpenMP
-
-- Other Software Related Skills
-
-  - Git
-  - Github/Gitlab
-  - Cmake
-
-- Scientific Visualization
-
-  - ParaView
-  - TecPlot
-  - gnuplot
-  - Visit
-
-- Computational Fluid Dynamics Tools
-
-  - **Favorite**
-    - OpenFOAM
-  - Other known/previously worked
-    - ANSYS Fluent
-    - TAU DLR
-
-- Mechanical Analysis Tools
-  - Previously worked with
-    - MSC Patran/Nastran
-    - ANSYS Mechanical
-
-# Interest Areas
-
-- Work Related
-
-  - Computationa Fluid Mechanics
-  - Multiphysics solvers
-    - Fluid Structure Interaction (FSI)
-    - Conjugate Heat Transfer (CHT)
-  - Turbulence and its modelling
-  - High Performance Computing
-
-- Others
-  - Photography
-  - Vector Graphics
+  - Kokkos
