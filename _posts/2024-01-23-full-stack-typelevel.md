@@ -390,7 +390,7 @@ At this point, we have the core module done. We can, of course, create multiple 
 
 It's now time to move one level up and expose an external API that a third party (or in our case, the frontend) can access.
 
-## 4. The Server Module
+## 4. Backend - Server Module
 
 We will build the server module with Http4s. For every vertical in the app (in this case, the "jobs" vertical) it is a good idea to expose an HTTP API for whatever functionality you would like to make available to the frontend. In this case, we would like to be able to list all jobs and create a job, all from the HTTP API, so we'll need to expose some frontend endpoints.
 
@@ -473,7 +473,7 @@ val routes: HttpRoutes[F] = Router(
 
 And with that, we have our HTTP API.
 
-## 5. The Backend
+## 5. Backend - Putting it All Together
 
 We now need to combine the two "layers" of our backend into one comprehensive application. We need the following:
 - a Postgres `Transactor` to build the `Jobs` module
