@@ -1,6 +1,8 @@
 ---
 layout: single
 title: "Introduction Of Blog"
+categories: coding
+tag: [python, blog, jekyll]
 ---
 # 1. 해당 블로그의 목적
 
