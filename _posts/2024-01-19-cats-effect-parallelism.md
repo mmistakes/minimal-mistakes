@@ -121,9 +121,54 @@ and then test our server by curling it:
 `curl localhost:9000`
 
 To illustrate all that:
-- ![alt ""](../images/github-contributors-aggregator/quickstart.png)
+![alt ""](../images/github-contributors-aggregator/quickstart.png)
 
-Great! Now it's time to define some domain models. It turns out that GitHub API responses support JSON format, it means that we'll need to define custom JSON serializers.
+Great! Now it's time to define some domain models. It turns out that GitHub API responses support JSON format, it means that we'll need to define custom JSON deserializers for our domain models.
+
+Since we're working on "GitHub Organization Contributors Aggregator" we'd probably need to think in terms of following nouns:
+- Organization
+- Project
+- Contributor
+- ...
+
+Also, it's important to keep in mind what is returned by each REST API request so that our deserializers do not fail unexpectedly.
+
+Let's start by Organization. Organization is a group of developers that develops multiple open source projects, however the only thing we're interested is the amount of public repositories it owns.
+
+Turns out that if we send a basic request to ```"https://api.github.com/orgs/$orgName"``` we will get a JSON response back, in which we could find the amount of public repositories.
+
+For example, let's pick an organization - `typelevel` and test it:
+![alt ""](../images/github-contributors-aggregator/typelevel-curl.png)
+
+Nice, so we have our first interesting domain object - Amount of public repositories, lets model that, shall we? :)
+
+Since it's just a number we could use `Int` or `Long` but Scala 3 supports `opaque types`, so it's better to use that.
+
+Let's create a `domain` object in `Main.scala` and put everything there with the intention of being compact and fitting everything in one picture.
+
+```scala
+object domain {
+
+  opaque type PublicRepos = Int
+
+  object PublicRepos {
+    val Empty: PublicRepos = PublicRepos.apply(0)
+    def apply(value: Int): PublicRepos = value
+  }
+}
+```
+
+We've defined `opaque type` which essentially is an `Int`. It has an `apply` constructor and `Empty` value. `apply` defines the method in the companion object. It allows you to create instances of `PublicRepos` by calling `PublicRepos` as if it was a function, passing an integer value as an argument, this way we could avoid additional wrapping cost over simple integers.
+
+`Empty` value can be used in case the key is absent in JSON, or in case it has a negative value. The latter one is less likely to happen, but the more time I spent working as a software developer, the less trust I have in programmers, so let's choose the safer road and insure ourselves with a sensible fallback - 0.
+
+
+
+
+
+
+
+
 
 
 
