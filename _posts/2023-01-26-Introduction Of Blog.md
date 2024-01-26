@@ -2,23 +2,25 @@
 layout: single
 title: "Introduction Of Blog"
 ---
-# From 未生 SWE To 完生 SWE
-
 # 1. 해당 블로그의 목적
 
 - 未生 SW Engineer가 完生 SW Engineer로 가는 길을 요약하고 정리하기 위함.
 - SWE로서 앞으로 얻게 되는 모든 지식과 여정을 기록하기 위함.
-
+****
 # 2. 해당 블로그의 제작법
 
 - Youtube 강의 link : [Youtube 강의 link](https://www.youtube.com/watch?v=ACzFIAOsfpM)
 - 지킬 링크 : [지킬link](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 - 글 작성은 Notion으로 하고, Markdown export 후에 약간의 수정을 한 후 블로그 업로드
+    - 블로그 변화(local에서 띄운 서버)를 빠르게 확인하기 위한 powershell 명령어 및 주소 : http://127.0.0.1:4000/
+    ```
+    bundle exec jekyll serve
+    ```
     - Markdown 상단 설정 값 수정하기
         
         Github io에서 블로그 글을 업로드 할 때 Markdown 안에 필수로 작성 해주어야 하는 설정 값이 있다. 맨 위에 **—** 사이에 설정값을 입력하면 됨. 이 부분은 Notion에서 Export시에 같이 나오지 않기 때문에 따로 작성 해야함.
         
-        ![Untitled](../images/2023-11-06-test/Untitled%202.png)
+        ![Untitled](../images/2024-01-26/Untitled.png)
         
     - 이미지 경로 수정하기
         
@@ -39,11 +41,11 @@ title: "Introduction Of Blog"
         
         노션의 코드 블럭을 추가해서 작성한 후 md 파일을 만들면 md 파일에서는 코드 블럭이 설정되지 않은 상태로 Export가 된다. 
         
-        ![Untitled](From%20%E6%9C%AA%E7%94%9F%20SWE%20To%20%E5%AE%8C%E7%94%9F%20SWE%200ee6571f245847f4a4654e90347653ad/Untitled%201.png)
+        ![Untitled](../images/2024-01-26/Untitled%201.png)
         
         이런 형식으로 나온 코드를 아래와 같이 코드 블럭으로 감싸주는 작업을 해주어야 한다.
         
-        ![Untitled](From%20%E6%9C%AA%E7%94%9F%20SWE%20To%20%E5%AE%8C%E7%94%9F%20SWE%200ee6571f245847f4a4654e90347653ad/Untitled%202.png)
+        ![Untitled](../images/2024-01-26/Untitled%202.png)
         
     - 링크 Create Bookmark 체크하기
         

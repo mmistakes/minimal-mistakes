@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "IT Convergent Blog"
+title                    : "From 未生 SWE To 完生 SWE"
 title_separator          : "|"
-subtitle                 : "Always be a better person"
+subtitle                 : "Always be a better SW Engineer"
 name                     : "Jun"
-description              : "IT Convergent engineer with a self-helping and humble attitude."
+description              : "Self-helping and humble attitude to be a better SW Engineer"
 url                      : "https://JunByeon.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -32,7 +32,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : "JunByeon"
+    shortname            : "From 未生 SWE To 完生 SWE"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -106,8 +106,8 @@ analytics:
 author:
   name             : "Jun"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "IT Convergent engineer with a self-helping and humble attitude."
-  location         : "ko-KR"
+  bio              : "Always be a better SW Engineer"
+  location         : "South Korea"
   email            : "forestwoodleaves@gmail.com"
   links:
     - label: "Email"
