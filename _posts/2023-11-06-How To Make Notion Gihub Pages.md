@@ -1,19 +1,18 @@
 ---
 layout: single
-title: "기술 블로그 만들기"
+title: "해당 블로그의 목적"
 ---
-# 기술 블로그 만들기
+# 해당 블로그의 목적
 
-# 1. 목적
-
-- 내가 나중에 보기 위한 지식 정리/일한 티 내기/공부한 티 내기(출처만 명시하자)
+## 1. 목적
+소프트웨어 
 - 플랫폼 선정 : 깃허브 pages(이유 : 개발자가 아니면 불가능하므로 개발자라는 티를 낼 수 있음)
 
 GitHub Pages
 
 장점 : 커스텀 자유도 높다 & hosting 비용이 없다 & Jupiter Notebook도 손쉽게 업로드 가능하다 & AdSense도 붙여서 돈벌이로도 활용가능하다
 
-# 2. Manual
+## 2. Manual
 
 [Youtube 강의 link](https://www.youtube.com/watch?v=ACzFIAOsfpM)
 
