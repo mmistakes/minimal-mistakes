@@ -15,11 +15,14 @@ main:
   - title: 📚 Excursus
     url: /categories/#excursus/
 
+  - title: 🔥 Meta Data
+    url: /categories/#meta/
+
+  - title: ✉️ Newsletter
+    url: "https://buttondown.email/martinapugliese"
+
   - title: ✨ Awesome Material
     url: /material/
 
   - title: Quotes
     url: /quotes/
-
-  - title: ✉️ Newsletter
-    url: "https://buttondown.email/martinapugliese"
