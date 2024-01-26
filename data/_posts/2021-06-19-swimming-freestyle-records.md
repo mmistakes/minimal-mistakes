@@ -2,8 +2,7 @@
 title: The world records in freestyle swimming, in data
 tags:
   - sport
-  - viz
-  - record
+  - swimming
 categories: data
 excerpt: The world records in freestyle swimming, for men and women, a data card.
 ---
