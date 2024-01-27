@@ -17,27 +17,19 @@ The WebSocket protocol enables persistent two-way communication between a client
 
 The specification for this protocol is outlined in [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455). WebSockets are used in applications such as Instant Messaging, Gaming, Simultaneous editing, and stock tickers to mention but a few.
 
-In this article, we'll be creating a chat application using Http4s' implementation of webSockets.
+In this article, we'll be creating a chat application using Http4s' implementation of WebSockets.
 
 ## 2. Setting Up
 
-### 2.1. Updating build.sbt
+### 2.1. Updating `build.sbt`
 
-We'll set up our project using the Http4s `giter8` quick start template by running the following code:
-
-```bash
-sbt -sbt-version 1.1.1 new http4s/http4s.g8
-```
-
-Inorder to follow along add the following code to the `build.sbt`:
+In order to follow along add the following code to the `build.sbt`:
 
 ```scala
 val Http4sVersion = "0.23.23"
 val CirceVersion = "0.14.6"
-val MunitVersion = "0.7.29"
 val LogbackVersion = "1.4.11"
-val MunitCatsEffectVersion = "1.0.7"
-val CatsParseVersion = "0.3.9"
+val CatsParseVersion = "0.3.10"
 
 lazy val root = (project in file("."))
   .settings(
@@ -46,21 +38,18 @@ lazy val root = (project in file("."))
     version := "0.0.1-SNAPSHOT",
     scalaVersion := "3.3.0",
     libraryDependencies ++= Seq(
-      "org.http4s"      %% "http4s-ember-server" % Http4sVersion,
-      "org.http4s"      %% "http4s-ember-client" % Http4sVersion,
-      "org.http4s"      %% "http4s-circe"        % Http4sVersion,
-      "io.circe"        %% "circe-generic"       % CirceVersion,
-      "org.http4s"      %% "http4s-dsl"          % Http4sVersion,
-      "org.typelevel"   %% "cats-parse"          % CatsParseVersion,
-      "org.scalameta"   %% "munit"               % MunitVersion           % Test,
-      "org.typelevel"   %% "munit-cats-effect-3" % MunitCatsEffectVersion % Test,
-      "ch.qos.logback"  %  "logback-classic"     % LogbackVersion,
+      "org.http4s" %% "http4s-ember-server" % Http4sVersion,
+      "org.http4s" %% "http4s-circe" % Http4sVersion,
+      "io.circe" %% "circe-generic" % CirceVersion,
+      "org.http4s" %% "http4s-dsl" % Http4sVersion,
+      "org.typelevel" %% "cats-parse" % CatsParseVersion,
+      "ch.qos.logback" % "logback-classic" % LogbackVersion,
     )
   )
+
 ```
 
-### 2.2. Serving the chat page.
-
+### 2.2. Serving the Chat Page
 To demonstrate WebSockets, we'll be using Http4s for the WebSocket server and Javascript for the client implementation. Let's start by creating an HTML page that will be served to access the application.
 
 First, create a `resources` folder under main, then under resources add a `chat.html` file with the following code:
@@ -102,10 +91,8 @@ import org.http4s.StaticFile
 import fs2.io.file.Files
 import cats.MonadThrow
 
-object Routes{
-  def service[F[_]: Files: MonadThrow]: HttpApp[F] = {
-    val dsl = new Http4sDsl[F] {}
-    import dsl.*
+class Routes[F[_]: Files: MonadThrow] extends Http4sDsl[F] {
+  def service: HttpApp[F] = {
     HttpRoutes.of[F] { case request @ GET -> Root / "chat.html" =>
       StaticFile
         .fromPath(
@@ -118,13 +105,13 @@ object Routes{
 }
 ```
 
-In the `Routes` object, we define a `service()` function, when called, returns an `HttpApp[F]`. Additionally, we define an `Http4sDsl[F]` instance, import everything then call `HttpRoutes.of[F] {}` where we create our first route as `/chat.html`.
+Here we have a `Routes` class that extends `Http4sDsl[F]`, it contains define a `service()` function, when called, returns an `HttpApp[F]`, additionally, we create our first route as `/chat.html`.
 
-Afterwards, we use the `StaticFile.fromPath()` method to which we pass an fs2 `Path` with the relative path to `chat.html` and a `Some(request)` as arguments then call `getOrElseF(NotFound())` that sends a 404 error code incase the file isn't found.
+Within the `HttpRoutes.of[F]{}` method, we use the `StaticFile.fromPath()` method to which we pass an fs2 `Path` with the relative path to `chat.html` and a `Some(request)` as arguments then call `getOrElseF(NotFound())` that sends a 404 error code incase the file isn't found.
 
-For this to work we need to add `Files` and `MonadThrow` as implicit arguments.
+For this to work we need to add `Files` and `MonadThrow` as implicit arguments to `Routes`.
 
-Thirdly, we need an application server, create a `Server.scala` file in the following path, `src/main/scala/rockthejvm/websockets/Server.scala` and add the following code:
+Next, we need an application server, create a `Server.scala` file in the following path, `src/main/scala/rockthejvm/websockets/Server.scala` and add the following code:
 
 ```scala
 package rockthejvm.websockets
@@ -135,23 +122,24 @@ import cats.effect.kernel.Async
 import cats.syntax.all.*
 import fs2.io.net.Network
 import fs2.io.file.Files
-import Routes.service
 
-object Server:
-  def server[F[_]: Async: Files: Network]: F[Unit] =
+object Server {
+  def server[F[_]: Async: Files: Network]: F[Unit] = {
     val host = host"0.0.0.0"
     val port = port"8080"
     EmberServerBuilder
       .default[F]
       .withHost(host)
       .withPort(port)
-      .withHttpApp(service)
+      .withHttpApp(new Routes().service)
       .build
       .useForever
       .void
+  }
+}
 ```
 
-In the body of the `server()` function, we use the `EmberServerBuilder`, pass it a host value, port value and In addition, we pass `service` to `withHttpApp()` then call `build()` which gives us a `Resource[F, Server]`.  
+In the body of the `server()` function, we use the `EmberServerBuilder`, pass it a host value, port value and In addition, we pass an instance of `Routes()` while subsequently calling the `service()` function to `withHttpApp()` then `build()` giving us a `Resource[F, Server]`.  
 
 The `useForever`, and `void` methods allocate the resource to a non terminating action, and discards everything returning F[Unit] respectively.
 
@@ -164,17 +152,18 @@ import cats.effect.IOApp
 import cats.effect.IO
 import Server.server
 
-object Program extends IOApp.Simple:
+object Program extends IOApp.Simple {
   override def run: IO[Unit] = server[IO]
+}
 ```
 
 Above, we define the `run()` function by calling `server[IO]`. Finally, we can run our application by calling `sbt run` in the terminal. When we navigate to `localhost:8080/chat.html` in our browser we should get the following page:
 
 ![Chatbox](../images/websockets/01.png)
 
-## 3. Websocket Introduction
+## 3. WebSocket Introduction
 
-In this section, we'll learn some important information needed to understand to code that follows. WebSockets send and receive data in a data structure called a WebSocket Frame that can be divided into two types, namely, **Data frames** and **Control frames**.
+In this section, we'll learn some important information needed to understand the code that follows. WebSockets send and receive data in a data structure called a WebSocket Frame that can be divided into two types, namely, **Data frames** and **Control frames**.
 
 ### 3.1. Data Frames
 
@@ -192,11 +181,11 @@ There are three types of control frames, which include, **Close**, **Ping**, and
 
 A Close frame is sent when the WebSocket is closed or disconnected and may contain a body with the reason for closing. 
 
-The reason may or may not be human readable but can be used for debugging purposes moreover the application must not send any more data frames after sending a Close frame.
+The reason may or may not be human readable but can be used for debugging purposes. Moreover, the application must not send any more data frames after sending a Close frame.
 
 A Ping frame may contain application data and when received, the endpoint must respond with a Pong frame containing the same application data that was sent. Ping frames can serve as a means to verify that the endpoint is still responsive creating a heartbeat of the WebSocket.
 
-## 4. Websocket Implementation
+## 4. WebSocket Implementation
 
 To implement the WebSocket in Http4s, we'll need to add another route in `Routes.scala` as follows:
 
@@ -206,12 +195,10 @@ import fs2.Stream
 import org.http4s.websocket.WebSocketFrame
 import fs2.Pipe
 
-object Routes{
-  def service[F[_]: Files: MonadThrow](
+class Routes[F[_]: Files: MonadThrow] extends Http4sDsl[F] {
+  def service (
     wsb: WebSocketBuilder2[F]
   ): HttpApp[F] = {
-    val dsl = new Http4sDsl[F] {}
-    import dsl.*
     HttpRoutes.of[F] {
       ...
       case GET -> Root / "ws" =>
@@ -227,9 +214,9 @@ object Routes{
 
 Http4s provides `WebSocketBuilder2` for WebSocket creation, above, we pass this as an argument in the `service()` function. The `wsb.build()` method takes two arguments, `receive` of type `Pipe[F, WebSocketFrame, Unit]`, and send of type `Stream[F, WebSocketFrame]`.
 
-The `receive` `Pipe`, receives a `Stream` of Websocket frames from the client and transforms that to a `Stream` of `Unit` while `send` is a `Stream` WebSocket Frames that's pushed to the client.
+The `receive` `Pipe`, receives a `Stream` of WebSocket frames from the client and transforms that to a `Stream` of `Unit` while `send` is a `Stream` WebSocket Frames that's pushed to the client.
 
-To act like a chat application we'll need to send the Websocket frames that are received back to the client. For this to work, we use a `Queue` from Cats Effect:
+To act like a chat application we'll need to send the WebSocket frames that are received back to the client. For this to work, we use a `Queue` from Cats Effect:
 
 ```scala
 ...
@@ -237,24 +224,25 @@ import cats.effect.kernel.Concurrent
 import cats.effect.std.Queue
 import cats.syntax.all.*
 
-object Routes{
-  def service[F[_]: Files: MonadThrow: Concurrent](
+class Routes[F[_]: Files: Concurrent] extends Http4sDsl[F] {
+  def service (
     wsb: WebSocketBuilder2[F]
   ): HttpApp[F] = {
-    val dsl = new Http4sDsl[F] {}
-    import dsl.*
     HttpRoutes.of[F] {
       ...
       case GET -> Root / "ws" =>
-        val wrappedQueue: F[Queue[F, WebSocketFrame]] =
+        val wrappedQueue: F[Queue[F, WebSocketFrame]] = {
           Queue.unbounded[F, WebSocketFrame]
+        }
 
         wrappedQueue.flatMap { actualQueue =>
-          val send: Stream[F, WebSocketFrame] =
+          val send: Stream[F, WebSocketFrame] = {
             Stream.fromQueueUnterminated(actualQueue)
+          }
 
-          val receive: Pipe[F, WebSocketFrame, Unit] =
+          val receive: Pipe[F, WebSocketFrame, Unit] = {
             _.foreach(actualQueue.offer)
+          }
 
           wsb.build(send, receive)
         }
@@ -267,23 +255,24 @@ Here we create `wrappedQueue` of type `F[Queue[F, WebSocketFrame]]` that's unbou
 
 As a result, the receive handle can offer each `WebSocketFrame` received from the client to `Queue` while the `send` handle retrieves from the `Queue` by calling `Stream.fromQueueUnterminated(actualQueue)`. 
 
-We'll need to bind `Concurrent` to `F[_]` for the `Queue` to work as well as import `cats.syntax.all.*` to `flatMap` on it.
+We'll need to bind `F` to `Concurrent` for the `Queue` to work as well as import `cats.syntax.all.*` to `flatMap` on it.
 
 Now that one of our routes is a WebSocket, we'll need to update `Server.scala` as follows:
 
 ```diff
-  def server[F[_]: Async: Files: Network]: F[Unit] =
+  def server[F[_]: Async: Files: Network]: F[Unit] = {
     val host = host"0.0.0.0"
     val port = port"8080"
     EmberServerBuilder
       .default[F]
       .withHost(host)
       .withPort(port)
--     .withHttpApp(service)
-+     .withHttpWebSocketApp(wsb => service(wsb))
+-     .withHttpApp(new Routes().service)
++     .withHttpWebSocketApp(wsb => new Routes().service(wsb))
       .build
       .useForever
       .void
+  }
 ```
 
 Here, we now use the `withHttpWebSocketApp()` function that takes as an argument a function of type `WebSocketBuilder2[F] => HttpApp[F]`.
@@ -360,29 +349,29 @@ If we run our application at this point and try to send messages, they will be r
 ## 5. Chat Application
 In this section, we build a chat application using http4s WebSocket implementation, the code in the following sections is inspired by [work](https://github.com/MartinSnyder/http4s-chatserver) done by [Martin Snyder](https://github.com/MartinSnyder). 
 
-### 5.1 Topic for message pipeline
+### 5.1 Topic for Message Pipeline
 
 If we open two pages in our browser and navigate to `chat.html`, when we try to send messages in one, they won't appear in the other, in other words, each user is chatting with his/herself.
 
 To fix this issue we'll need a `Topic` which is a concurrency primitive from Fs2 used to implement a publish-subscribe patterns:
 
 ```scala
-object Routes {
-  def service[F[_]: Files: MonadThrow: Concurrent](
+class Routes[F[_]: Files: Concurrent] extends Http4sDsl[F] {
+  def service (
       wsb: WebSocketBuilder2[F],
       q: Queue[F, WebSocketFrame],
       t: Topic[F, WebSocketFrame]
   ): HttpApp[F] = {
-    val dsl = new Http4sDsl[F] {}
-    import dsl.*
     HttpRoutes.of[F] {
       ...
       case GET -> Root / "ws" =>
-        val send: Stream[F, WebSocketFrame] =
+        val send: Stream[F, WebSocketFrame] = {
           t.subscribe(maxQueued = 1000)
+        }
 
-        val receive: Pipe[F, WebSocketFrame, Unit] =
+        val receive: Pipe[F, WebSocketFrame, Unit] = {
           _.foreach(q.offer)
+        }
 
         wsb.build(send, receive)
     }
@@ -405,18 +394,19 @@ We'll also need to update `Server.scala` and pass Topic and Queue as parameters:
     def server[F[_]: Async: Files: Network](
       q: Queue[F, WebSocketFrame],
       t: Topic[F, WebSocketFrame]
-    ): F[Unit] =
+    ): F[Unit] = {
       val host = host"0.0.0.0"
       val port = port"8080"
       EmberServerBuilder
         .default[F]
         .withHost(host)
         .withPort(port)
--       .withHttpWebSocketApp(wsb => service(wsb))
-+       .withHttpWebSocketApp(wsb => service(wsb, q, t))
+-       .withHttpWebSocketApp(wsb => new Routes().service(wsb))
++       .withHttpWebSocketApp(wsb => new Routes().service(wsb, q, t))
         .build
         .useForever
         .void
+    }
   }
 ```
 
@@ -429,15 +419,16 @@ import cats.effect.std.Queue
 import fs2.Stream
 
 object Program extends IOApp.Simple{
-  def program: IO[Unit] =
-    for
+  def program: IO[Unit] = {
+    for {
       q <- Queue.unbounded[IO, WebSocketFrame]
       t <- Topic[IO, WebSocketFrame]
       s <- Stream(
         Stream.fromQueueUnterminated(q).through(t.publish),
         Stream.eval(server[IO](q, t))
       ).parJoinUnbounded.compile.drain
-    yield s
+    } yield s
+  }
 
   override def run: IO[Unit] = program
 }
@@ -458,8 +449,8 @@ The fix for this is to create a heartbeat for our application, we do this by sen
 import scala.concurrent.duration.*
 
 object Program extends IOApp.Simple{
-  def program: IO[Unit] =
-    for
+  def program: IO[Unit] = {
+    for {
       q <- Queue.unbounded[IO, WebSocketFrame]
       t <- Topic[IO, WebSocketFrame]
       s <- Stream(
@@ -470,7 +461,8 @@ object Program extends IOApp.Simple{
           .through(t.publish),
         Stream.eval(server[IO](q, t))
       ).parJoinUnbounded.compile.drain
-    yield s
+    } yield s
+  }
 
   override def run: IO[Unit] = program
 }
@@ -478,7 +470,7 @@ object Program extends IOApp.Simple{
 
 Here we add a `Stream` that publishes a `WebSocketFrame.Ping()` to our `Topic` every 30 seconds. This is enough to keep our WebSocket connection alive.
 
-## 6. Advanced Chat Application features
+## 6. Advanced Chat Application Features
 In this section, we modify our application and add a lot of extra features such as user names, rooms, and metrics. 
 
 To properly follow along with the code example, checkout the code on [GitHub](https://github.com/hkateu/WebsocketChatApp) since this section contains large code snippets.
@@ -499,32 +491,37 @@ def validateItem[F](
     value: String,
     userORRoom: F,
     name: String
-): Validated[String, F] =
+): Validated[String, F] = {
   Validated.cond(
     (value.length >= 2 && value.length <= 10),
     userORRoom,
     s"$name must be between 2 and 10 characters"
   )
+}
 
 case class User(name: String)
 object User {
-  def apply(name: String): Validated[String, User] =
+  def apply(name: String): Validated[String, User] = {
     validateItem(name, new User(name), "User name")
+  }
 }
 
 case class Room(room: String)
 object Room{
-  def apply(room: String): Validated[String, Room] =
+  def apply(room: String): Validated[String, Room] = {
     validateItem(room, new Room(room), "Room")
+  }
 }
 
 case class ChatState(
     userRooms: Map[User, Room],
     roomMembers: Map[Room, Set[User]]
 )
-object ChatState:
-  def apply(userRooms: Map[User, Room], roomMembers: Map[Room, Set[User]]) =
+object ChatState {
+  def apply(userRooms: Map[User, Room], roomMembers: Map[Room, Set[User]]) = {
     new ChatState(userRooms, roomMembers)
+  }
+}
 ```
 
 Here we create a `User` and `Room` case classes both of which take a value of type `String` and within each companion object, we call `validateItem()` in the `apply()` method to validate their inputs. 
@@ -547,10 +544,8 @@ sealed trait OutputMessage
 
 case class Register(
     user: Option[User],
-    msg: String = """
-        |Register your username with the following command:
-        |/name <username>
-        """.stripMargin
+    msg: String = """|Register your username with the following command:
+                     |/name <username>""".stripMargin
 ) extends OutputMessage
 
 case class ParsingError(user: Option[User], msg: String) extends OutputMessage
@@ -567,9 +562,10 @@ case class SuccessfulRegistration(
 ) extends OutputMessage
 object SuccessfulRegistration {
   def apply(user: User) = {
-    user match
+    user match {
       case User(name) =>
         new SuccessfulRegistration(user, s"$name entered the chat")
+    }
   }
 }
 ```
@@ -607,7 +603,6 @@ Next, we'll need to process commands sent through the WebSocket, create a file c
 package rockthejvm.websockets
 
 import cats.Monad
-
 import cats.data.Validated.Valid
 import cats.data.Validated.Invalid
 import cats.syntax.all.*
@@ -624,14 +619,16 @@ trait Command[F[_]] {
 }
 
 object Command {
-  def make[F[_]: Monad](chatState: Ref[F, ChatState]): Command[F] =
+  def make[F[_]: Monad](chatState: Ref[F, ChatState]): Command[F] = {
     new Command[F] {
-      override def register(name: String): F[OutputMessage] =
-        User(user) match
+      override def register(name: String): F[OutputMessage] = {
+        User(name) match {
           case Valid(u) =>
             SuccessfulRegistration(u).pure[F]
           case Invalid(e) =>
             ParsingError(None, e.toString).pure[F]
+        }
+      }
       override def isUsernameInUse(name: String): F[Boolean] = ???
       override def enterRoom(user: User, room: Room): F[Seq[OutputMessage]] = ???
       override def chat(user: User, text: String): F[Seq[OutputMessage]] = ???
@@ -640,6 +637,7 @@ object Command {
       override def listMembers(user: User): F[Seq[OutputMessage]] = ???
       override def disconnect(userRef: Ref[F, Option[User]]): F[Seq[OutputMessage]] = ???
     }
+  }
 }
 ```
 
@@ -647,29 +645,31 @@ Here we create a `Command` trait with multiple methods, key among which is `regi
 
 In the body of the `register()` function we pass `name` to `User` and pattern match against it. If the result is of type `Valid`, we return `SuccessfulRegistration` otherwise we return `ParsingError`.
 
-In both cases, we lift the value into a `F` using the `pure[F]` method which works because we bound `Monad` to `F[_]` in the function definition of `make()`:
+In both cases, we lift the value into a `F` using the `pure[F]` method which works because we bound `F` to `Monad` in the function definition of `make()`:
 
 ```scala
 object Command {
-  def make[F[_]: Monad](chatState: Ref[F, ChatState]): Command[F] =
+  def make[F[_]: Monad](chatState: Ref[F, ChatState]): Command[F] = {
     new Command[F] {
       ...
-      override def isUsernameInUse(name: String): F[Boolean] = 
-        chatState.get.map{cs => 
+      override def isUsernameInUse(name: String): F[Boolean] = {
+        chatState.get.map { cs =>
           cs.userRooms.keySet.exists(_.name == name)
         }
+      }
       ...
     }
+  }
 }
 ```
 The `isUsernameInUse()` function checks if the user name provided is already in use. Here we access `chatState` and call `cs.userRooms.keySet` to get a `Set` of all users in the application, we then call `exists(_.name == name)` to check if the user exists or not returning a `F[Boolean]`:
 
 ```scala
 object Command {
-  def make[F[_]: Monad](chatState: Ref[F, ChatState]): Command[F] =
+  def make[F[_]: Monad](chatState: Ref[F, ChatState]): Command[F] = {
     new Command[F] {
       ...
-      override def help(user: User): F[Seq[OutputMessage]] =
+      override def help(user: User): F[Seq[OutputMessage]] = {
         val text = """Commands:
             | /help             - Show this text
             | /room             - Change to default/entry room
@@ -678,18 +678,20 @@ object Command {
             | /members          - List members in current room
         """.stripMargin
         Seq(SendToUser(user, text)).pure[F]
+      }
       ...
     }
+  }
 }
 ```
 The `help()` function takes a `User` and returns a `Seq(SendToUser(user, text)).pure[F]` of type `F[Seq[OutputMessage]]`, here the user receives a String showing all the available commands in our application and what they do:
 
 ```scala
 object Command {
-  def make[F[_]: Monad](chatState: Ref[F, ChatState]): Command[F] =
+  def make[F[_]: Monad](chatState: Ref[F, ChatState]): Command[F] = {
     new Command[F] {
       ...
-      override def listRooms(user: User): F[Seq[OutputMessage]] =
+      override def listRooms(user: User): F[Seq[OutputMessage]] = {
         chatState.get.map { cs =>
           val roomList =
             cs.roomMembers.keys
@@ -699,21 +701,23 @@ object Command {
               .mkString("Rooms:\n\t", "\n\t", "")
           Seq(SendToUser(user, roomList))
         }
+      }
       ...
     }
+  }
 }
 ```
 The `listRooms()` function lists all the rooms in the application. Here we access `cs` the `ChatState` and call `cs.roomMembers.keys.map(_.room)` to list all the rooms as strings which are sorted and formatted and finally passed to `Seq(SendToUser(user, roomList))`:
 
 ```scala
 object Command {
-  def make[F[_]: Monad](chatState: Ref[F, ChatState]): Command[F] =
+  def make[F[_]: Monad](chatState: Ref[F, ChatState]): Command[F] = {
     new Command[F] {
       ...
-      override def listMembers(user: User): F[Seq[OutputMessage]] =
+      override def listMembers(user: User): F[Seq[OutputMessage]] = {
         chatState.get.map { cs =>
           val memberList =
-            cs.userRooms.get(user) match
+            cs.userRooms.get(user) match {
               case Some(room) =>
                 cs.roomMembers
                   .getOrElse(room, Set())
@@ -722,10 +726,13 @@ object Command {
                   .sorted
                   .mkString("Room Members:\n\t", "\n\t", "")
               case None => "You are not currently in a room"
+            }
           Seq(SendToUser(user, memberList))
         }
+      }
       ...
     }
+  }
 }
 ```
 The `listMembers()` function lists all the members in the room where the user is currently located. Here we access `cs`, the `ChatState` then call `cs.userRooms.get(user)` that returns an `Option[Room]` that we pattern match on.
@@ -738,36 +745,41 @@ In case we receive a `None`, we inform the user that he or she is not currently 
 import cats.Applicative
 
 object Command {
-  def make[F[_]: Monad](chatState: Ref[F, ChatState]): Command[F] =
+  def make[F[_]: Monad](chatState: Ref[F, ChatState]): Command[F] = {
     new Command[F] {
       ...
-      override def chat(user: User, text: String): F[Seq[OutputMessage]] =
-        for
+      override def chat(user: User, text: String): F[Seq[OutputMessage]] = {
+        for {
           cs <- chatState.get
-          output <- cs.userRooms.get(user) match
+          output <- cs.userRooms.get(user) match {
             case Some(room) =>
               broadcastMessage(cs, room, ChatMsg(user, user, text))
             case None =>
               Seq(SendToUser(user, "You are not currently in a room")).pure[F]
-        yield output
+          }
+        } yield output
+      }
       ...
     }
+  }
 
   private def broadcastMessage[F[_]: Applicative](
       cs: ChatState,
       room: Room,
       om: OutputMessage
-  ): F[Seq[OutputMessage]] =
+  ): F[Seq[OutputMessage]] = {
     cs.roomMembers
       .getOrElse(room, Set.empty[User])
-      .map(u =>
-        om match
+      .map { u =>
+        om match {
           case SendToUser(user, msg)  => SendToUser(u, msg)
           case ChatMsg(from, to, msg) => ChatMsg(from, u, msg)
           case _                      => DiscardMessage
-      )
+        }
+      }
       .toSeq
       .pure[F]
+  }
 }
 ```
 The `chat()` function is used to process normal chat messages sent by the user, it takes a `User` and `text` of type `String` as parameters. 
@@ -782,12 +794,12 @@ We do the same thing for `SendToUser` messages and finally return `DiscardMessag
 
 ```scala
 object Command {
-  def make[F[_]: Monad](chatState: Ref[F, ChatState]): Command[F] =
+  def make[F[_]: Monad](chatState: Ref[F, ChatState]): Command[F] = {
     new Command[F] {
       ...
-      override def enterRoom(user: User, room: Room): F[Seq[OutputMessage]] =
+      override def enterRoom(user: User, room: Room): F[Seq[OutputMessage]] = {
         chatState.get.flatMap { cs =>
-          cs.userRooms.get(user) match
+          cs.userRooms.get(user) match {
             case Some(r) =>
               if (r == room) {
                 Seq(
@@ -803,9 +815,12 @@ object Command {
               }
             case None =>
               addToRoom(chatState, user, room)
+          }
         }
+      }
       ...
     }
+  }
 }
 ```
 The `enterRoom()` function adds a user to a room but also removes the user from their current room if they belong to one. It takes a `User` and `Room` as parameters and returns a `F[Seq[OutputMessage]]`.
@@ -832,13 +847,13 @@ object Command {
           cs.roomMembers + (room -> updatedMemberList)
         )
       }
-      .flatMap(
+      .flatMap {
         broadcastMessage(
           _,
           room,
           SendToUser(user, s"${user.name} has joined the ${room.room} room")
         )
-      )
+      }
   }
 }
 ```
@@ -860,13 +875,13 @@ object Command {
   private def removeFromCurrentRoom[F[_]: Monad](
       stateRef: Ref[F, ChatState],
       user: User
-  ): F[Seq[OutputMessage]] =
+  ): F[Seq[OutputMessage]] = {
     stateRef.get.flatMap { cs =>
       cs.userRooms.get(user) match
         case Some(room) =>
           val updateMembers = cs.roomMembers.getOrElse(room, Set()) - user
           stateRef
-            .update(ccs =>
+            .update { ccs =>
               ChatState(
                 ccs.userRooms - user,
                 if (updateMembers.isEmpty) {
@@ -875,7 +890,7 @@ object Command {
                   ccs.roomMembers + (room -> updateMembers)
                 }
               )
-            )
+            }
             .flatMap(_ =>
               broadcastMessage(
                 cs,
@@ -886,6 +901,7 @@ object Command {
         case None =>
           Seq.empty[OutputMessage].pure[F]
     }
+  }
 }
 ```
 The `removeFromCurrentRoom()` function takes a  `Ref[F, ChatState]` and `User` as parameters, here we first access `cs` the `ChatState` to check if the user belongs to a room by calling `cs.userRooms.get(user)`.
@@ -909,18 +925,20 @@ First, we call `ccs.userRooms - user` to remove the user from `userRooms`, then 
 
 ```scala
 object Command {
-  def make[F[_]: Monad](chatState: Ref[F, ChatState]): Command[F] =
+  def make[F[_]: Monad](chatState: Ref[F, ChatState]): Command[F] = {
     new Command[F] {
       ...
       override def disconnect(
           userRef: Ref[F, Option[User]]
-      ): F[Seq[OutputMessage]] =
+      ): F[Seq[OutputMessage]] = {
         userRef.get.flatMap {
           case Some(user) => removeFromCurrentRoom(chatState, user)
           case None       => Seq.empty[OutputMessage].pure[F]
         }
+      }
       ...
     }
+  }
 }
 ```
 Finally the `disconnect()` function removes the user from the current room in case the WebSocket connection is broken or cut to reflect an up-to-date `ChatState`.
@@ -946,28 +964,29 @@ trait InputMessage[F[_]] {
 }
 
 object InputMessage {
-  def make[F[_]: Applicative: FlatMap](
+  def make[F[_]: Monad](
       command: Command[F]
-  ): InputMessage[F] =
+  ): InputMessage[F] = {
     new InputMessage[F] {
       override def parse(
           userRef: Ref[F, Option[User]],
           text: String
       ): F[OutputMessage] = ???
     }
+  }
 }
 ```
 
 We start by creating an `InputMessage` trait with `defaultRoom`, a function that returns `Validated[String, Room]` and a `parse()` function that takes a `Ref[F, Option[User]]` and a `String` and returns an `F[Seq[OutputMessage]]`. 
 
-Similar to `Command` we create a `make()` where we provide the implementations for `InputMessage`. We make sure to bind `Monad` to `F[_]` for the following implementation of `parse()`.
+Similar to `Command` we create a `make()` where we provide the implementations for `InputMessage`. We make sure to bind `F` to `Monad` for the following implementation of `parse()`.
 
 ```scala
 ...
 override def parse(
     userRef: Ref[F, Option[User]],
     text: String
-): F[OutputMessage] =
+): F[OutputMessage] = {
   text.trim match
     case "" => DiscardMessage.pure[F]
     case txt @ _ =>
@@ -978,6 +997,7 @@ override def parse(
         ???
            }
       }
+}
 ...
 ```
 
@@ -996,17 +1016,19 @@ case class TextCommand(left: String, right: Option[String])
 
 object InputMessage {
   ...
-  private def commandParser: Parser[TextCommand] =
+  private def commandParser: Parser[TextCommand] = {
     val leftSide = (char('/').string ~ alpha.rep.string).string
     val rightSide: Parser[(Unit, String)] = sp ~ alpha.rep.string
     ((leftSide ~ rightSide.?) <* wsp.rep.?).map((left, right) =>
       TextCommand(left, right.map((_, s) => s))
     )
+  }
 
   private def parseToTextCommand(
       value: String
-  ): Either[Parser.Error, TextCommand] =
+  ): Either[Parser.Error, TextCommand] = {
     commandParser.parseAll(value)
+  }
 }
 ```
 
@@ -1052,7 +1074,7 @@ object InputMessage {
       cmd: Command[F],
       userRef: Ref[F, Option[User]],
       room: Room
-  ): F[Seq[OutputMessage]] =
+  ): F[Seq[OutputMessage]] = {
     if (text.charAt(0) == '/') {
       parseToTextCommand(text).fold(
         _ =>
@@ -1062,41 +1084,12 @@ object InputMessage {
               "Characters after '/' must be between A-Z or a-z"
             )
           ).pure[F],
-        v =>
-          v match
-            case TextCommand("/name", Some(n)) =>
-              cmd.isUsernameInUse(n).flatMap { b =>
-                if (b) {
-                  Seq(ParsingError(None, "User name already in use")).pure[F]
-                } else {
-                  cmd.register(n).flatMap {
-                    case SuccessfulRegistration(u, _) =>
-                      userRef
-                        .update { _ =>
-                          Some(u)
-                        }
-                        .flatMap { _ =>
-                          cmd.enterRoom(u, room).map { om =>
-                            Seq(
-                              SendToUser(
-                                u,
-                                "/help shows all available commands"
-                              )
-                            ) ++ om
-                          }
-                        }
-                    case parsingerror @ ParsingError(_, _) =>
-                      Seq(parsingerror).pure[F]
-                    case _ => Seq.empty[OutputMessage].pure[F]
-                  }
-                }
-              }
-            case _ =>
-              Seq(UnsupportedCommand(None)).pure[F]
+        v => ???
       )
     } else {
       Seq(Register(None)).pure[F]
     }
+  }
 }
 ```
 
@@ -1104,15 +1097,57 @@ The `processText4UnReg()` function processes texts for unregistered users, it ta
 
 First, we check if `text` is a command or normal text by calling `text.charAt(0)` to check if it starts with `/`. In case it's a normal text we return `Seq(Register(None)).pure[F]` otherwise we call `parseToTextCommand(text)` and fold on it.
 
-If we fail to parse the text command, we return a `Seq` of `ParsingError` that provides an error for the user, otherwise, we pattern match on the resulting `TextCommand`. 
+If we fail to parse the text command, we return a `Seq` of `ParsingError` that provides an error for the user, otherwise, we pattern match on the resulting `TextCommand` as follows:
 
-In the case of `TextCommand("/name", Some(n))`, we check if the user name is already used by calling `cmd.isUsernameInUse(n)` and if the resulting boolean is true, we return a `ParsingError` informing the user that the user name is in use. 
+```scala
+parseToTextCommand(text).fold(
+  _ => 
+    ...,
+  v => 
+    v match {
+      case TextCommand("/name", Some(n)) =>
+        cmd.isUsernameInUse(n).flatMap { b =>
+          if (b) {
+            Seq(ParsingError(None, "User name already in use")).pure[F]
+          } else {
+            ???
+          }
+        }
+      case _ =>
+        Seq(UnsupportedCommand(None)).pure[F]
+    }
+)
+```
 
-Otherwise, we call `cmd.register(n)` passing it the user name, this returns `F[OutputMessage]` that we `flatMap` and pattern match on, in case of `SuccessfulRegistration`, we update `userRef` with the new user name, then `flatMap` and call `cmd.enterRoom()` which adds the new user to a room.
+In the case of `TextCommand("/name", Some(n))`, we check if the user name is already used by calling `cmd.isUsernameInUse(n)` and if the resulting boolean is true, we return a `ParsingError` informing the user that the user name is in use. If the user passed any other command we return `Seq(UnsupportedCommand(None)).pure[F]`:
 
-In registration results in a `ParsingError` we return `Seq(parsingerror).pure[F]` and `Seq.empty[OutputMessage].pure[F]` in case of anything else. 
+```scala
+if(b) {
+  ...
+} else {
+  cmd.register(n).flatMap {
+    case SuccessfulRegistration(u, _) =>
+      for {
+        _ <- userRef.update(_ => Some(u))
+        om <- cmd.enterRoom(u, room)
+      } yield {
+        Seq(
+          SendToUser(
+            u,
+            "/help shows all available commands"
+          )
+        ) ++ om
+      }
+    case parsingerror @ ParsingError(_, _) =>
+      Seq(parsingerror).pure[F]
+    case _ => Seq.empty[OutputMessage].pure[F]
+  }
+}
+```
 
-If the user passed any other command we return `Seq(UnsupportedCommand(None)).pure[F]`:
+If the user name isn't in use, we call `cmd.register(n)` passing it the user name, this returns `F[OutputMessage]` that we `flatMap` and pattern match on, in case of `SuccessfulRegistration`, we update `userRef` with the new user name, then `flatMap` and call `cmd.enterRoom()` which adds the new user to a room.
+
+Lastly we telling the user about the `/help` command, adding this output message to that from the `cmd.enterRoom(u, room)` operation. Finally if registration results in a `ParsingError` we return `Seq(parsingerror).pure[F]` and `Seq.empty[OutputMessage].pure[F]` in case of anything else:
 
 ```scala
 ...
@@ -1137,15 +1172,16 @@ object InputMessage {
             )
           ).pure[F],
         v =>
-          v match
+          v match {
             case TextCommand("/name", Some(n)) =>
               Seq(ParsingError(Some(user), "You can't register again")).pure[F]
             case TextCommand("/room", Some(r)) =>
-              Room(r) match
+              Room(r) match {
                 case Valid(room) =>
                   cmd.enterRoom(user, room)
                 case Invalid(e) =>
                   Seq(ParsingError(Some(user), e)).pure[F]
+              }
             case TextCommand("/help", None) =>
               cmd.help(user)
             case TextCommand("/rooms", None) =>
@@ -1153,6 +1189,7 @@ object InputMessage {
             case TextCommand("/members", None) =>
               cmd.listMembers(user)
             case _ => Seq(UnsupportedCommand(Some(user))).pure[F]
+          }
       )
     } else {
       cmd.chat(user, text)
@@ -1179,23 +1216,28 @@ object InputMessage {
       command: Command[F]
   ): InputMessage[F] = {
     new InputMessage[F] {
-      override def defaultRoom: Validated[String, Room] =
+      override def defaultRoom: Validated[String, Room] = {
         Room("Default")
+      }
+
       override def parse(
           userRef: Ref[F, Option[User]],
           text: String
-      ): F[Seq[OutputMessage]] =
-        text.trim match
+      ): F[Seq[OutputMessage]] = {
+        text.trim match {
           case "" => Seq(DiscardMessage).pure[F]
           case txt @ _ =>
             userRef.get.flatMap { u =>
               u.fold {
-                defaultRoom match
+                defaultRoom match {
                   case Valid(r) =>
                     processText4UnReg(txt, command, userRef, r)
                   case Invalid(e) => Seq(ParsingError(u, e)).pure[F]
+                }
               } { user => procesText4Reg(user, txt, command) }
             }
+        }
+      }
     }
   }
   ...
@@ -1209,17 +1251,16 @@ In this section, we define all the necessary routes for the chat application. We
 ```scala
 ...
 import cats.effect.kernel.Ref
+import cats.effect.Temporal
 
-object Routes {
-  def service[F[_]: Files: MonadThrow: Concurrent: Temporal](
+class Routes[F[_]: Files: Temporal] extends Http4sDsl[F] {
+  def service (
       wsb: WebSocketBuilder2[F],
       q: Queue[F, OutputMessage],
       t: Topic[F, OutputMessage],
       im: InputMessage[F],
       cmd: Command[F]
   ): HttpApp[F] = {
-    val dsl = new Http4sDsl[F] {}
-    import dsl.*
     HttpRoutes.of[F] {
       ...
       case GET -> Root / "ws" =>
@@ -1247,27 +1288,29 @@ Finally we call `wsb.build()` with custom `send()` and `recieve()` functions. We
 ```scala
 ...
 import scala.concurrent.duration.*
-import cats.effect.Temporal
 
-object Routes {
+class Routes[F[_]: Files: Temporal] extends Http4sDsl[F] {
   ...
-  private def handleWebSocketStream[F[_]](
+  private def handleWebSocketStream (
       wsf: Stream[F, WebSocketFrame],
       im: InputMessage[F],
       cmd: Command[F],
       uRef: Ref[F, Option[User]]
-  ): Stream[F, OutputMessage] =
-    for
+  ): Stream[F, OutputMessage] = {
+    for {
       sf <- wsf
-      om <- Stream.evalSeq(sf match
-        case WebSocketFrame.Text(text, _) =>
-          im.parse(uRef, text)
-        case WebSocketFrame.Close(_) =>
-          cmd.disconnect(uRef)
+      om <- Stream.evalSeq(
+        sf match {
+          case WebSocketFrame.Text(text, _) =>
+            im.parse(uRef, text)
+          case WebSocketFrame.Close(_) =>
+            cmd.disconnect(uRef)
+        }
       )
-    yield om
+    } yield om
+  }
 
-  private def receive[F[_]: Temporal](
+  private def receive (
       cmd: Command[F],
       im: InputMessage[F],
       uRef: Ref[F, Option[User]],
@@ -1283,7 +1326,7 @@ object Routes {
             uQueue.offer(m)
         }
       }
-      .concurrently{
+      .concurrently {
         Stream
           .awakeEvery(30.seconds)
           .map(_ => KeepAlive)
@@ -1303,33 +1346,36 @@ While for cases of type `WebSocketFrame.Close(_)`, we call `cmd.disconnect(uRef)
 
 In the `receive()` function, we call `evalMap` on `handleWebSocketStream()` and offer the `OutputMessage` to either `q` or `uQueue` for cases of registered and unregistered users respectively. 
 
-This all results in a `Stream[F, Unit]` that we run concurrently with another stream that offers a `KeepAlive` message to `uQueue` acting as a heartbeat unregistered users:
+This all results in a `Stream[F, Unit]` that we run concurrently with another stream that offers a `KeepAlive` message to `uQueue` acting as a heartbeat unregistered users, we also make sure to bind `F` to `Temporal` since we are dealing with duration:
 
 ```scala
-import cats.Monad
 import io.circe.generic.auto.*
 import io.circe.syntax.*
 
-object Routes {
+class Routes[F[_]: Files: Temporal] extends Http4sDsl[F] {
   ...
-  private def filterMsg[F[_]: Monad](
+  private def filterMsg (
       msg: OutputMessage,
       userRef: Ref[F, Option[User]]
-  ): F[Boolean] =
-    msg match
+  ): F[Boolean] = {
+    msg match {
       case DiscardMessage => false.pure[F]
       case sendtouser @ SendToUser(_, _) =>
         userRef.get.map { _.fold(false)(u => sendtouser.forUser(u)) }
       case chatmsg @ ChatMsg(_, _, _) =>
         userRef.get.map { _.fold(false)(u => chatmsg.forUser(u)) }
       case _ => true.pure[F]
+    }
+  }
 
-  private def processMsg(msg: OutputMessage): WebSocketFrame =
-    msg match
+  private def processMsg(msg: OutputMessage): WebSocketFrame = {
+    msg match {
       case KeepAlive => WebSocketFrame.Ping()
       case msg @ _   => WebSocketFrame.Text(msg.asJson.noSpaces)
+    }
+  }
 
-  private def send[F[_]: Concurrent: Applicative](
+  private def send (
       t: Topic[F, OutputMessage],
       uQueue: Queue[F, OutputMessage],
       uRef: Ref[F, Option[User]]
@@ -1374,8 +1420,8 @@ It's possible to observe our application if we also pass `Ref[F, ChatState]` to 
 import org.http4s.MediaType
 import org.http4s.headers.`Content-Type`
 
-object Routes {
-  def service[F[_]: Files: MonadThrow: Concurrent: Temporal](
+class Routes[F[_]: Files: Temporal] extends Http4sDsl[F] {
+  def service (
       wsb: WebSocketBuilder2[F],
       q: Queue[F, OutputMessage],
       t: Topic[F, OutputMessage],
@@ -1383,34 +1429,35 @@ object Routes {
       cmd: Command[F],
       cs: Ref[F, ChatState]
   ): HttpApp[F] = {
-    val dsl = new Http4sDsl[F] {}
-    import dsl.*
     HttpRoutes.of[F] {
       ...
       case GET -> Root / "metrics" =>
-        def currentState: F[String] = cs.get.map { cState =>
-          s"""
-              |<!Doctype html>
-              |<title>Chat Server State</title>
-              |<body>
-              |<pre>Users: ${cState.userRooms.keys.size}</pre>
-              |<pre>Rooms: ${cState.roomMembers.keys.size}</pre>
-              |<pre>Overview: 
-              |${cState.roomMembers.keys.toList
-                  .map(room =>
-                    cState.roomMembers
-                      .getOrElse(room, Set())
-                      .map(_.name)
-                      .toList
-                      .sorted
-                      .mkString(s"${room.room} Room Members:\n\t", "\n\t", "")
-                  )
-                  .mkString("Rooms:\n\t", "\n\t", "")}
-              |</pre>
-              |</body>
-              |</html>
-          """.stripMargin
+        def currentState: F[String] = {
+          cs.get.map { cState =>
+            s"""
+                |<!Doctype html>
+                |<title>Chat Server State</title>
+                |<body>
+                |<pre>Users: ${cState.userRooms.keys.size}</pre>
+                |<pre>Rooms: ${cState.roomMembers.keys.size}</pre>
+                |<pre>Overview: 
+                |${cState.roomMembers.keys.toList
+                .map(room =>
+                  cState.roomMembers
+                    .getOrElse(room, Set())
+                    .map(_.name)
+                    .toList
+                    .sorted
+                    .mkString(s"${room.room} Room Members:\n\t", "\n\t", "")
+                )
+                .mkString("Rooms:\n\t", "\n\t", "")}
+                |</pre>
+                |</body>
+                |</html>
+            """.stripMargin
+          }
         }
+
         currentState.flatMap { currState =>
           Ok(currState, `Content-Type`(MediaType.text.html))
         }
@@ -1434,21 +1481,22 @@ object Server{
     im: InputMessage[F],
     cmd: Command[F],
     cs: Ref[F, ChatState]
-  ): F[Unit] =
+  ): F[Unit] = {
     val host = host"0.0.0.0"
     val port = port"8080"
     EmberServerBuilder
       .default[F]
       .withHost(host)
       .withPort(port)
-      .withHttpWebSocketApp(wsb => service(wsb, q, t, im, cmd, cs))
+      .withHttpWebSocketApp(wsb => new Routes().service(wsb, q, t, im, cmd, cs))
       .build
       .useForever
       .void
+  }
 }
 ```
 
-The `server()` function is not only updated to use `OutputMessage` but we also pass `InputMessage[F]`, `Command[F]`, and `Ref[F, ChatState]` as parameters that feed into the `service()` function:
+The `server()` function is not only updated to use `OutputMessage` but we also pass `InputMessage[F]`, `Command[F]`, and `Ref[F, ChatState]` as parameters that feed into the `service()` method:
 
 ```scala
 package rockthejvm.websockets
@@ -1463,8 +1511,8 @@ import scala.concurrent.duration.*
 import Server.server
 
 object Program extends IOApp.Simple{
-  def program: IO[Unit] =
-    for
+  def program: IO[Unit] = {
+    for {
       q <- Queue.unbounded[IO, OutputMessage]
       t <- Topic[IO, OutputMessage]
       cs <- Ref.of[IO, ChatState](ChatState(Map.empty, Map.empty))
@@ -1478,7 +1526,8 @@ object Program extends IOApp.Simple{
           .through(t.publish),
         Stream.eval(server[IO](q, t, im, cmd, cs))
       ).parJoinUnbounded.compile.drain
-    yield s
+    } yield s
+  }
 
   override def run: IO[Unit] = program
 }
