@@ -1,6 +1,6 @@
 ---
 title: "Functional Parallelism to the max"
-date: 2023-01-19
+date: 2024-01-26
 header:
     image: "/images/blog cover.jpg"
 tags: [scala,http4s,cats,fp,parallelism,fibers,github-api,cats-effect]
@@ -76,7 +76,7 @@ Some of the interesting questions can be:
 ## 5. Quickstart
 
 Let's just create a `Main.scala` and run a basic HTTP server with health check endpoint to ensure that everything is fine.
-
+ 
 ```scala
 package com.rockthejvm
 
@@ -123,7 +123,11 @@ and then test our server by curling it:
 To illustrate all that:
 ![alt ""](../images/github-contributors-aggregator/quickstart.png)
 
-Great! Now it's time to define some domain models. It turns out that GitHub API responses support JSON format, it means that we'll need to define custom JSON deserializers for our domain models.
+Great! Now it's time to move on to some domain modeling.
+
+## 6. Domain Modeling
+
+It turns out that GitHub API responses support JSON format, it means that we'll need to define custom JSON deserializers for our domain models.
 
 Since we're working on "GitHub Organization Contributors Aggregator" we'd probably need to think in terms of following nouns:
 - Organization
@@ -155,12 +159,168 @@ object domain {
     val Empty: PublicRepos = PublicRepos.apply(0)
     def apply(value: Int): PublicRepos = value
   }
+
+  extension (repos: PublicRepos) 
+    def value: Int = repos
 }
 ```
 
 We've defined `opaque type` which essentially is an `Int`. It has an `apply` constructor and `Empty` value. `apply` defines the method in the companion object. It allows you to create instances of `PublicRepos` by calling `PublicRepos` as if it was a function, passing an integer value as an argument, this way we could avoid additional wrapping cost over simple integers.
 
 `Empty` value can be used in case the key is absent in JSON, or in case it has a negative value. The latter one is less likely to happen, but the more time I spent working as a software developer, the less trust I have in programmers, so let's choose the safer road and insure ourselves with a sensible fallback - 0.
+
+With the `value` extension method, we can easily retrieve the underlying Int value for `PublicRepos`.
+
+As for the deserializer for `PublicRepos` - it will be really simple. We would just want to read `"public_repos"` key from JSON, so we'd define that in `domain` object in the following way:
+```scala
+object domain {
+  
+  import play.api.libs.json.*
+  import play.api.libs.*
+  import Reads.{IntReads, StringReads}
+
+  /**
+   * some PublicRepos definitions 
+   * ..
+   * ..
+   */
+
+  given ReadsPublicRepos: Reads[PublicRepos] = (__ \ "public_repos").read[Int].map(PublicRepos.apply)
+}
+```
+
+Let's break down step by step what is going on here:
+- `given ReadsPublicRepos`: This declares an implicit value named `ReadsPublicRepos` of type `Reads[PublicRepos]`. In Scala 3, `given` keyword is used to define implicit values.
+- `Reads[PublicRepos]`: This indicates that the implicit value is an instance of the `Reads` type class for the `PublicRepos` type. The `Reads` type class is typically used in Play JSON to define how to read JSON values into Scala types.
+- `(__ \ "public_repos")`: This is a Play JSON combinator that specifies the path to the `"public_repos"` field in a JSON structure. It is part of the Play JSON DSL and is used to create a reads for the specified field.
+- `.read[Int]`: This part of the code specifies that the value at the path `"public_repos"` in the JSON structure should be read as an Int. It's defining how to extract an Int value from the JSON.
+- `.map(PublicRepos.apply)`: This maps the `Int` value obtained from reading the `"public_repos"` field to a `PublicRepos` instance using the `PublicRepos.apply` method. It essentially converts the extracted Int value into a `PublicRepos` instance.
+
+So, when you have JSON data representing a structure with a `"public_repos"` field, you can use this implicit `Reads` instance (`ReadsPublicRepos`) to convert that JSON into a `PublicRepos` instance.
+
+As soon as we have `PublicRepos` we could also define something like a placeholder for the repository name, maybe - `RepoName`.
+
+`RepoName` is as trivial as `PublicRepos`, however, obviously it's not a number:
+```scala
+object domain {
+
+  import play.api.libs.json.*
+  import play.api.libs.*
+  import Reads.{IntReads, StringReads}
+
+  /**
+   * code
+   * ..
+   * code
+   */
+
+  opaque type RepoName = String
+  
+  object RepoName {
+    def apply(value: String): RepoName = value
+  }
+  
+  extension (repoName: RepoName) 
+    def value: String = repoName
+  
+  given ReadsRepo: Reads[RepoName] = (__ \ "name").read[String].map(RepoName.apply)
+}
+```
+
+We basically used the same mechanism as we used for `PublicRepos`:
+- defined `opaque type`
+- created `apply` constructor for it
+- added `extension` method
+- defined `Reads`
+
+Splendid!
+
+What about `Contributor` though? How would we want to represent each contributor? I guess it's important to have at least:
+- `username` (text)
+- `contributions` (number)
+
+But, before modeling our contributor, it's worth checking what GitHub API returns when we request for contributors.
+
+For that, again, we can pick some organization and open source project owned by that organization and ping some endpoints.
+
+e.g, let's pick `typelevel` (`$orgName`) and `cats` (`$repoName`).
+
+Paginated API endpoint looks like: `https://api.github.com/repos/$orgName/$repoName/contributors?per_page=100&page=$page`
+
+Please, notice that the response is a JSON array. Important fields for us should be first and last of each - `"login"` and "`contributions`":
+
+![alt ""](../images/github-contributors-aggregator/contributors-example.png)
+
+So, our `Contributor` model could look like this:
+
+```scala
+objecet domain {
+  
+  import play.api.libs.json.*
+  import play.api.libs.*
+  import Reads.{IntReads, StringReads}
+  import cats.syntax.all.*
+
+  /**
+   * old definitions
+   */
+
+  final case class Contributor(login: String, contributions: Long)
+  
+  given ReadsContributor: Reads[Contributor] = json =>
+    (
+      (json \ "login").asOpt[String],
+      (json \ "contributions").asOpt[Long],
+    ).tupled.fold(JsError("parse failure"))((lo, co) => JsSuccess(Contributor(lo, co)))
+
+  given WritesContributor: Writes[Contributor] = Json.writes[Contributor]
+}
+```
+
+The `case class` definition needs no explanation, you may be thinking... why do we have `Writes` at all?
+
+Good question! `Writes[Contributor]` is necessary because our HTTP server should also return this data to the client (more on that later).
+
+This `Reads[Contributor]` can be a bit of tricky, so let's explain what is going on there:
+
+- `json => ...` is an anonymous function taking a JSON value as input.
+- `(json \ "login").asOpt[String]` extracts the value associated with the key `"login"` from the JSON object as an optional `String`.
+- `(json \ "contributions").asOpt[Long]` extracts the value associated with the key `"contributions"` as an optional `Long`.
+- `(lo, co) => JsSuccess(Contributor(lo, co))` is a function that takes the extracted values and constructs a `Contributor` instance.
+- `.tupled` extension method is coming from `import cats.syntax.all.*` and is used to convert the tuple `(Option[String], Option[Long])` into an `Option[(String, Long)]`.
+- `fold` method is used to handle the case where either of the options is `None`. If any of them is `None`, it returns a `JsError("parse failure")`; otherwise, it returns a `JsSuccess` with the constructed `Contributor` instance.
+
+Great!
+
+Before we move on defining business logic, we should define one more domain object - `Contributions`. It may be a bit unclear why, let me explain.
+
+We are building an HTTP server which is going to respond us JSON object, and you're free to choose the format, however I'd go with something like this:
+
+```scala
+objecet domain {
+  
+  import play.api.libs.json.*
+  import play.api.libs.*
+  import Reads.{IntReads, StringReads}
+  import cats.syntax.all.*
+
+  /**
+   * old definitions
+   */
+
+  final case class Contributions(count: Long, contributors: Vector[Contributor])
+
+  given WritesContributions: Writes[Contributions] = Json.writes[Contributions]
+}
+```
+
+In that case class definition the `count` will be just the amount of contributors for an organization whereas `contributors` will be a `Vector` of `Contributor`-s, sorted by `Contributor#contributions` field.
+
+With that, we can finish the domain modeling and switch to the meaty part - business logic.
+
+## 7.Business logic
+
+
 
 
 
