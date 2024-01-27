@@ -2,13 +2,13 @@
 layout: single
 title: "Introduction Of Blog"
 categories: coding
-tag: [python, blog, jekyll]
+tag: [출사표]
 ---
 # 1. 해당 블로그의 목적
 
 - 未生 SW Engineer가 完生 SW Engineer로 가는 길을 요약하고 정리하기 위함.
 - SWE로서 앞으로 얻게 되는 모든 지식과 여정을 기록하기 위함.
-****
+
 # 2. 해당 블로그의 제작법
 
 - Youtube 강의 link : [Youtube 강의 link](https://www.youtube.com/watch?v=ACzFIAOsfpM)
