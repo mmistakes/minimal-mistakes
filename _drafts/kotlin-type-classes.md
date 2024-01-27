@@ -15,7 +15,7 @@ In this article, we delve into the concept of type classes in Kotlin, a powerful
 
 ## 1. Setting the Stage
 
-We’ll use version 1.9.22 of Kotlin and version 1.2.1 of the Arrow library. We'll also use Kotlin's context receivers. Context receivers are still an experimental feature. Hence, they’re not enabled by default. We need to modify the Gradle configuration. Add the `kotlinOptions` block within the `tasks.withType<KotlinCompile>` block in your `build.gradle.kts` file:
+We’ll use version 1.9.22 of Kotlin and version 1.2.1 of the Arrow library. We'll also use [Kotlin's context receivers](https://blog.rockthejvm.com/kotlin-context-receivers/). Context receivers are still an experimental feature. Hence, they’re not enabled by default. We need to modify the Gradle configuration. Add the `kotlinOptions` block within the `tasks.withType<KotlinCompile>` block in your `build.gradle.kts` file:
 
 ```kotlin
 tasks.withType<KotlinCompile>().configureEach {
@@ -29,7 +29,7 @@ As usual, we’ll put a copy of the configuration file we use at the end of the 
 
 ## 2. The Problem
 
-Data validation is crucial in software development, especially in data transactions like user portfolios. Ensuring data conforms to expected formats and rules is vital for maintaining the system's integrity.
+In this article, we'll simulate a system for validating user portfolios in a fintech startup, with minimal features. Data validation is crucial in software development, especially in data transactions like user portfolios. Ensuring data conforms to expected formats and rules is vital for maintaining the system's integrity.
 
 So, first, let's define the data we want to validate. In our case, we want to validate the data contained in some DTOs (Data Transfer Objects). The first DTO represents the creation of a new portfolio:
 
@@ -66,7 +66,7 @@ The above code could be more optimal and maintainable. The two `process` functio
 1. Validate the input DTO
 2. Do something with the validated object
 
-We want to abstract over this to write the function once instead of once for every type. The first step to achieve this is defining a common type to let both DTOs inherit from it. Let's call this type `Validatable`:
+Currently, it seems we'd need to write a new `process` function for every action type. We can abstract the `process concept so that we'd only need to write it once. The first step to achieve this is defining a common type to let both DTOs inherit from it. Let's call this type `Validatable`:
 
 ```kotlin
 sealed interface Validatable {
@@ -87,7 +87,7 @@ fun process(validatable: Validatable) = {
 }
 ```
 
-We took advantage of Kotlin's sealed classes and smart cast features here. However, the above code still needs to be optimized. As Robert C. Martin taught us, the current `process` function violates the Open-Closed principle. If we want to add and validate a new DTO, we need to change the existing implementation of the `process` function, which is not good since such code tends to be rigid to changes, fragile, and error-prone.
+We took advantage of Kotlin's sealed classes and smart cast features here. However, the above code still needs to be optimized. The current `process` function violates the _Open-Closed_principle. This principle states that adding new cases to a feature should not change the existing code but only add a new one. It applies to our situation because, with the current version of the `process` function, we need to change the `when` expression every time we add a new DTO to validate, which is not good since such code tends to be rigid to changes, fragile, and error-prone.
 
 Fortunately, we can abstract the validation process in a dedicated function. Let's change the `Validatable` a bit:
 
@@ -101,7 +101,7 @@ We introduced a type parameter to let the clients work with the concrete DTO typ
 
 **Abstracting the behavior in abstract types (or interfaces) and implementing it for concrete kinds**, letting client function stay generic and reusable, is a typical pattern in any modern high-level programming language. This pattern **is called _polymorphism_**.
 
-The method `validate` returns the validated data in case all the. Since we don't want to manage the case the data is not valid through exceptions (see [Functional Error Handling in Kotlin, Part 1: Absent values, Nullables, Options](https://blog.rockthejvm.com/functional-error-handling-in-kotlin/#2-why-exception-handling-is-not-functional) for further details), we'll introduce the `Either` type from the Arrow Kt library (if you need an insight on how to use it, please refer to [Functional Error Handling in Kotlin, Part 2: Result and Either](https://blog.rockthejvm.com/functional-error-handling-in-kotlin-part-2/)):
+The method `validate` returns the validated data in case all the validation processes passed. Since we don't want to manage the case the data is not valid through exceptions (see [Functional Error Handling in Kotlin, Part 1: Absent values, Nullables, Options](https://blog.rockthejvm.com/functional-error-handling-in-kotlin/#2-why-exception-handling-is-not-functional) for further details), we'll introduce the `Either` type from the Arrow Kt library (if you need an insight on how to use it, please refer to [Functional Error Handling in Kotlin, Part 2: Result and Either](https://blog.rockthejvm.com/functional-error-handling-in-kotlin-part-2/)):
 
 ```kotlin
 interface ValidationError
