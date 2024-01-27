@@ -297,7 +297,7 @@ Before we move on defining business logic, we should define one more domain obje
 We are building an HTTP server which is going to respond us JSON object, and you're free to choose the format, however I'd go with something like this:
 
 ```scala
-objecet domain {
+object domain {
   
   import play.api.libs.json.*
   import play.api.libs.*
@@ -320,6 +320,24 @@ With that, we can finish the domain modeling and switch to the meaty part - busi
 
 ## 7.Business logic
 
+Our goal is to make contributors aggregation fast. We've seen that there are more than a few API requests we need to make, some of them are paginated, some of them are not. Also, it's important to define the order of execution and the general flow of the program.
+
+After a few iterations and refinements I came up with something like this:
+- send request to our HTTP server with organization name
+- use organization name to find out how many public repos are available for organization name (let's say 10)
+- use this number (10) to issue N amount of parallel requests so that our server starts retrieving contributors for each project in parallel
+  - since there is no way to know how many contributors are available for a project we will need to send requests iteratively until they are exhausted, meaning that at some point the JSON response will contain less than 100 contributors, assuming that we expect to retrieve 100 contributors per page.
+  
+First of all, we will need to define a basic route which will let us accept organization name as a query parameter, so let's add a new case for our `routes` definition: 
+
+```scala
+def routes: HttpRoutes[IO] = {
+  HttpRoutes.of[IO] { 
+    case GET -> Root => Ok("hi :)")
+    case GET -> Root / "org" / orgName => Ok(orgName)
+  }
+}
+```
 
 
 
