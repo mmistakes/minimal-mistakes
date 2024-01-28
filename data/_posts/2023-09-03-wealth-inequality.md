@@ -1,7 +1,9 @@
 ---
 title: Wealth and inequality
 tags:
-  - literature
+  - wealth
+  - geography
+  - society
 categories: data
 excerpt: A journey from country to country, in data.
 ---
