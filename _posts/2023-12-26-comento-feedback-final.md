@@ -4,7 +4,7 @@ title: '코멘토 SQL 입문부터 활용까지 마지막 피드백과 회고 '
 categories: 코멘토
 tag: [코멘토]
 author_profile: false
-published: true
+published: false
 sidebar:
     nav: "counts"
 ---
