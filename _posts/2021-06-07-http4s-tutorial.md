@@ -804,7 +804,7 @@ object Http4sTutorial extends IOApp {
 
 ```
 
-Once the server is up and running, we can try our freshly new APIs with any HTTP client, such as `cURL` or something similar. Hence, the call `curl 'http://localhost:8080/api/movies?director=Zack%20Snyder&year=2020' | json_pp` will produce the following response, as expected:
+Once the server is up and running, we can try our freshly new APIs with any HTTP client, such as `cURL` or something similar. Hence, the call `curl 'http://localhost:8080/api/movies?director=Zack%20Snyder&year=2021' | json_pp` will produce the following response, as expected:
 
 ```json
 [
