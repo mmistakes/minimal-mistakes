@@ -107,7 +107,7 @@ author:
   name             : "June"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "June's 공부노트"
-  location         : "South Korea"
+  location         : #"South Korea"
   email            :
   links:
     - label: "Email"
@@ -230,6 +230,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -238,6 +239,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 
 # Archives
@@ -285,11 +287,15 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
-      share: true
-      related: true
+      share: #true
+      related: #true
       show_date: true
+      toc: true
+      toc_sticky: true
+      toc_label: 목차
+      search: true
 
 date_format: "%Y-%m-%d"
