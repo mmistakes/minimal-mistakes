@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "MacOS 재설치 - Homebrew 설치 및 설정 & App Store"
+title: "Homebrew 설치 및 설정 & App Store"
 categories: [macos]
 tag: [mac, macos, m1, m2, m3, setup, 맥, 재설치, 초기화, brew, app store]
 order: 1
@@ -24,35 +24,19 @@ vi Brewfile
 
 ```bash
 # Brewfile
-tap "hashicorp/tap"
 tap "homebrew/bundle"
 
 brew "cask"
 brew "ruby"
 brew "cocoapods"
 brew "git"
-brew "neovim"
-brew "nvm"
-brew "go"
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
-brew "awscli"
-brew "hashicorp/tap/terraform"
 
-cask "slack"
-cask "1password"
-cask "typora"
-cask "obsidian"
 cask "iterm2"
 cask "google-chrome"
-cask "postman"
-cask "flutter"
 cask "docker"
-cask "visual-studio-code"
-cask "android-studio"
-cask "notion"
-cask "temurin"
 ```
 
 위의 내용을 모두 작성 후 저장합니다. ( 위의 내용은 사용자에 따라 수정합니다. )

@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "MacOS 재설치 - Git 초기 설정"
-categories: [macos]
+title: "Git 초기 설정"
+categories: [macos, git]
 tag: [mac, macos, m1, m2, m3, setup, 맥, 재설치, 초기화, git, github]
 order: 4
 published: true
@@ -61,56 +61,95 @@ git config --global core.editor "code --wait --disable-extensions"
 # <header>
 
 # - 필수 입력
+
 # - 형식: <type>(<scope>): <short summary>
 
 # <type>
+
 # - 필수 입력
+
 # - feat : 새로운 기능을 추가
+
 # - fix : 버그를 수정
+
 # - chore : 실제 기능과 무관한 빌드, 패키지관련 수정 (ex .gitignore 파일 수정)
+
 # - docs : 문서(주석) 추가/수정
+
 # - test : 테스트 코드 추가/수정
+
 # - refact : 기능의 변경 없이, 코드를 리팩토링
+
 # - style : UI 추가/수정
 
 # <scope>
+
 # - 선택 사항
+
 # - 변경사항에 영향받는 npm 패키지 이름
 
 # <short summary>
+
 # - 필수 입력
+
 # - 제목은 50자 이내
+
 # - 변경사항이 "무엇"인지 명확히 작성
+
 # - 끝에 마침표 금지
 
 # <body>
+
 # - 선택 사항
+
 # - 최소 20자 필수 입력(<type>docs 제외)
+
 # - 현재 시제, 명령문으로 작성
+
 # - 변경 사항의 동기(왜)를 설명
+
 # - 변경 효과를 설명하기 위해 이전 동작과 현재 동작의 비교를 포함할 수 있음
 
 # <footer>
+
 # - Breaking Changes, deprecations 또는 이 커밋이 close하거나 연관된 깃헙 이슈, 지라 티켓, 풀리퀘스트 포함
+
 # - 예시
+
 # - 1. Breaking Changes
+
 # BREAKING CHANGE: <breaking change 요약>
+
 # <빈 줄>
+
 # <breaking change 설명 + migration 지시>
+
 # <빈 줄>
+
 # <빈 줄>
 
 # Fixes #<issue number>
+
 # - 2. deprecations
+
 # DEPRECATED: <deprecated 된 것>
+
 # <빈 줄>
+
 # <deprecation 설명 + 추천 update 경로>
+
 # <빈 줄>
+
 # <빈 줄>
+
 # Closes #<pr 번호>
+
 # Fixes : 이슈 수정중 (미완료)
+
 # Resolves : 이슈를 해결한 경우
+
 # Ref : 참고할 이슈가 있는 경우
+
 # Related to: 해당 커밋과 관련된 이슈번호 (미완료)
 ```
 

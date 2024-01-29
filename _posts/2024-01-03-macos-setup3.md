@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "MacOS 재설치 - NVM으로 Node 버전관리하기"
+title: "NVM으로 Node 버전관리하기"
 categories: [macos]
 tag: [mac, macos, m1, m2, m3, setup, 맥, 재설치, 초기화, node, nvm, 버전관리]
 order: 3
