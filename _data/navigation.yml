@@ -1,5 +1,7 @@
 main:
 - title: Data
+  url: /docs/RBCrationale
+- title: Data
   sublinks:
     - url: /docs/RBCrationale
     - title: "BHRC"
