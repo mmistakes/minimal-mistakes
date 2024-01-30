@@ -6,9 +6,11 @@ layout: single
 permalink: /docs/phenotypes
 
 ---
-| Participant | Pheno 1 | Pheno 2 |  
-| ------------- | ---------- | ------- |
-| Participant | Pheno 1 | Pheno 2 |  
+·  	Describe rationale for focus on CBCL
+·  	Harmonization with Goassesess
+·  	Different models explored
+·  	Suggestion of main model
+·  	Figure from Mauricio
 
 
-### Insert dashboard for participants selected via certain parameters
+
