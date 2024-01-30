@@ -23,7 +23,7 @@ main:
     - title: "Image Acquisition"
       url: /docs/image_acquistion
     - title: "Image Curation"
-      url: /docs/image_processing
+      url: /docs/image_curation
     - title: "Image Processing"
       url: /docs/image_processing
     - title: "Structural Image Quality"
@@ -39,7 +39,7 @@ main:
     - title: "Contribute"
       url: /docs/contribute
     - title: "Get support"
-      url: /docs/getsupport
+      url: /docs/get_support
 - title: <em style="color:blue;"> Get Data </em>
   url: /docs/get_data
 
