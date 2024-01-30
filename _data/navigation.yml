@@ -1,7 +1,6 @@
 main:
-- title: Why RBC?
-  url: /docs/RBCrationale
 - title: Datasets
+  url: /docs/RBCrationale
   sublinks:
     - title: "BHRC"
       url: /docs/BHRC
@@ -17,30 +16,30 @@ main:
       url: /docs/PACCT
     - title: "PNC"
       url: /docs/PNC
-- title:  Sample
-  sublinks:
-    - title: "Sample Construction"
-      url: /docs/sample_construction
-    - title: "Psychiatric Phenotypes"
-      url: /docs/phenotypes
-    - title: "Sample Characteristics"
-      url: /docs/sample_characteristics
+- title:  Mental Health
+  url: /docs/phenotypes
 - title: Imaging
   sublinks: 
-    - title: "Neuroimaging"
-      url: /docs/neuroimaging
+    - title: "Image Acquisition"
+      url: /docs/image_acquistion
+    - title: "Image Curation"
+      url: /docs/image_processing
     - title: "Image Processing"
       url: /docs/image_processing
-    - title: "Image Quality Assurance"
+    - title: "Structural Image Quality"
+      url: /docs/image_QA  
+    - title: "Functional Image Quality"
       url: /docs/image_QA  
 - title: Community and Impact
   sublinks: 
-    - title: "Contributors"
+    - title: "RBC Team"
       url: /docs/contributors
     - title: "Publications"
       url: /docs/publications
     - title: "Contribute"
       url: /docs/contribute
-- title: <em style="color:green;"> Get Data </em>
+    - title: "Get support"
+      url: /docs/getsupport
+- title: <em style="color:blue;"> Get Data </em>
   url: /docs/get_data
 
