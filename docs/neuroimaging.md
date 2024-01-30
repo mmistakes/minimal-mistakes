@@ -1,8 +1,8 @@
 ---
-title: "Neuroimaging"
-excerpt: "Neuroimaging"
+title: "Image Acquisition"
+excerpt: "Image Acquisition"
 sitemap: false
 layout: single
-permalink: /docs/neuroimaging
+permalink: /docs/image_acquisition
 
 ---
