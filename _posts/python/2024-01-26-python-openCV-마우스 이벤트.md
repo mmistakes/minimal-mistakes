@@ -1,5 +1,5 @@
 ---
-title: "python OpenCV 마우스 이벤트
+title: "python OpenCV 마우스 이벤트"
 categories:
   - python
 
