@@ -29,9 +29,9 @@ main:
     - title: "Image Processing"
       url: /docs/image_processing
     - title: "Structural Image Quality"
-      url: /docs/image_QA  
+      url: /docs/image_structural_QA  
     - title: "Functional Image Quality"
-      url: /docs/image_QA  
+      url: /docs/image_functional_QA  
 - title: Community and Impact
   sublinks: 
     - title: "RBC Team"
