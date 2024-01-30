@@ -6,7 +6,9 @@ layout: single
 permalink: /docs/image_processing
 
 ---
-### - DataLad + FAIRly BIG
-### - Curation with CuBIDS
-### - Structural image processing with freesurfer
-### - Functional image processing with C-PAC 
+- 	Describe preprocessing
+--   CPAC
+--   Datalad
+-  	Descrbie config, link to it
+-  	Describe major outputs
+-  	Nathalia figure
