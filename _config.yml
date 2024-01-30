@@ -18,9 +18,9 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "ko-KR"
 title                    : "From 未生 SWE To 完生 SWE"
 title_separator          : "|"
-subtitle                 : "Always be a better SW Engineer"
+subtitle                 : "Always be a better Software Engineer"
 name                     : "Jun"
-description              : "Self-helping and humble attitude to be a better SW Engineer"
+description              : "An Engineer who always seeking for problems and solving it"
 url                      : "https://JunByeon.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -105,8 +105,8 @@ analytics:
 # Site Author
 author:
   name             : "Jun"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Always be a better SW Engineer"
+  avatar           : "../images/imagelogo.jpg"
+  bio              : "An Engineer who always seeking for problems and solving it"
   location         : "South Korea"
   email            : "forestwoodleaves@gmail.com"
   links:
@@ -213,6 +213,8 @@ plugins:
   - jekyll-readme-index
   - jekyll-titles-from-headings
   - jekyll-relative-links
+  - jekyll-redirect-from
+
 
 
 # mimic GitHub Pages with --safe
@@ -222,6 +224,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 
 # Archives
@@ -275,5 +278,9 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: true
+      toc_sticky: true
+      toc_label: Table Of Contents
+
 
 date_format : "%Y-%m-%d"
