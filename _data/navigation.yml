@@ -1,9 +1,8 @@
 main:
 - title: Data
-  url: /docs/RBCrationale
-- title: Data
   sublinks:
-    - url: /docs/RBCrationale
+    - title: "Data"
+      url: /docs/RBC
     - title: "BHRC"
       url: /docs/BHRC
     - title: "dCCNP"
