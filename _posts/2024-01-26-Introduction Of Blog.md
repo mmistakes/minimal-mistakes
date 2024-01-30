@@ -22,7 +22,7 @@ toc: true
         
         Github io에서 블로그 글을 업로드 할 때 Markdown 안에 필수로 작성 해주어야 하는 설정 값이 있다. 맨 위에 **—** 사이에 설정값을 입력하면 됨. 이 부분은 Notion에서 Export시에 같이 나오지 않기 때문에 따로 작성 해야함.
         
-        ![Untitled](/images/2024-01-26/Untitled.png)
+        ![Untitled](../images/2024-01-26/Untitled.png)
         
     - 이미지 경로 수정하기
         
@@ -43,11 +43,11 @@ toc: true
         
         노션의 코드 블럭을 추가해서 작성한 후 md 파일을 만들면 md 파일에서는 코드 블럭이 설정되지 않은 상태로 Export가 된다. 
         
-        ![Untitled](/images/2024-01-26/Untitled%201.png)
+        ![Untitled](../images/2024-01-26/Untitled%201.png)
         
         이런 형식으로 나온 코드를 아래와 같이 코드 블럭으로 감싸주는 작업을 해주어야 한다.
         
-        ![Untitled](/images/2024-01-26/Untitled%202.png)
+        ![Untitled](../images/2024-01-26/Untitled%202.png)
         
     - 링크 Create Bookmark 체크하기
         
