@@ -1,7 +1,7 @@
 main:
 - title: Data
   sublinks:
-    - title: "Data"
+    - title: "Overview"
       url: /docs/RBC
     - title: "BHRC"
       url: /docs/BHRC
