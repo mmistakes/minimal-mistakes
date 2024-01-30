@@ -6,3 +6,5 @@ layout: single
 permalink: /docs/get_support
 
 ---
+- Neurostars
+- Github
