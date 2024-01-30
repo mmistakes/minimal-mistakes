@@ -4,7 +4,28 @@ title: "Introduction Of Blog"
 categories: coding
 tag: [출사표]
 toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+search: true
 ---
+**[공지사항]** [지킬블로그 신규 업데이트 안내드립니다.](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
+{: .notice--danger}
+
+<div class="notice--danger">
+<h4>공지사항입니다.</h4>
+<ul>
+    <li>공지사항 순서 1</li>
+    <li>공지사항 순서 2</li>
+    <li>공지사항 순서 3</li>
+</ul>
+</div>
+
+[버튼입니다](https://google.com){: .btn .btn--danger}
+
+{% include video id="q0P3TSoVNDM" provider="youtube" %}
+
+
 # 1. 해당 블로그의 목적
 - 未生 SW Engineer가 完生 SW Engineer로 가는 길을 요약하고 정리하기 위함.
 - SWE로서 앞으로 얻게 되는 모든 지식과 여정을 기록하기 위함.
