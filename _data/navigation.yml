@@ -40,6 +40,6 @@ main:
       url: /docs/contribute
     - title: "Get support"
       url: /docs/get_support
-- title: <em style="color:blue;"> Get Data </em>
+- title: <em style="font-style:normal; font-weight:bold; color:#3F8AAC;"> Get Data </em>
   url: /docs/get_data
 
