@@ -1,7 +1,7 @@
 main:
 - title: Data
-  url: /docs/RBCrationale
   sublinks:
+    - url: /docs/RBCrationale
     - title: "BHRC"
       url: /docs/BHRC
     - title: "dCCNP"
