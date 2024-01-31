@@ -103,7 +103,7 @@ analytics:
 
 # Site Author
 author:
-  name: "Your Name"
+  name: "Henry Chung"
   avatar: "/images/logo.png"
   bio: "Henry's blog"
   location: "Canada"
@@ -111,7 +111,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:tongsik98@email.com"
+      url: "mailto:tongsik98@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/HenryChung98"
