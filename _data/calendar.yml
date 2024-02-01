@@ -1,57 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug 4a - Eislaufbahn ",
-    "title": "Ausflug 4a - Eislaufbahn ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NHBpaTlhM2hhOGNvMDMxbmxoNGI2YmU0cXQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-01-31T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-01-31T13:00:00+01:00"
-    },
-    "created": "2024-01-25T10:51:56.000Z",
-    "updated": "2024-01-25T10:51:56.750Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug A5 - Eislaufbahn ",
-    "title": "Ausflug A5 - Eislaufbahn ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWdpa2oxamNvdmY3dWhqcTZjNWwwODBoNG4gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-01-31T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-01-31T12:30:00+01:00"
-    },
-    "created": "2024-01-17T11:56:31.000Z",
-    "updated": "2024-01-24T10:46:29.868Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug A8 - Eislaufbahn Glockenturm",
-    "title": "Ausflug A8 - Eislaufbahn Glockenturm",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M292MGN1OHJhbWNyZDQzMnVyOHNpYmE0YWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-01-31T08:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-01-31T12:45:00+01:00"
-    },
-    "created": "2024-01-26T06:44:13.000Z",
-    "updated": "2024-01-26T06:44:13.899Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A5 - Bibliothek Spandau ",
     "title": "Ausflug A5 - Bibliothek Spandau ",
     "excerpt": null,
@@ -100,5 +49,56 @@
     },
     "created": "2024-01-17T12:01:49.000Z",
     "updated": "2024-01-23T08:30:06.182Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A9 - Gartenarbeitsschule Hakenfelde",
+    "title": "Ausflug A9 - Gartenarbeitsschule Hakenfelde",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWVlYTZkZGNoMGxwOGcwMXR0Z2tpMG1zZW0gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-02-22T10:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-02-22T13:30:00+01:00"
+    },
+    "created": "2024-01-23T08:37:33.000Z",
+    "updated": "2024-01-31T12:18:08.724Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A3 - Bibliothek Obstallee",
+    "title": "Ausflug A3 - Bibliothek Obstallee",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MDIxNmo3cmRycWE3YW5yb2YzaG52NzljNzAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-03-01T07:45:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-03-01T12:30:00+01:00"
+    },
+    "created": "2024-01-30T07:01:49.000Z",
+    "updated": "2024-01-30T07:01:49.537Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A9 - Schlittschuhbahn Glockenturm",
+    "title": "Ausflug A9 - Schlittschuhbahn Glockenturm",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MDRyMGRydHNtdmZwaGFqN2U0a2xtcTlicHYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-03-01T08:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-03-01T13:00:00+01:00"
+    },
+    "created": "2024-01-31T12:14:47.000Z",
+    "updated": "2024-01-31T12:14:47.720Z"
   }
 ]
