@@ -148,7 +148,7 @@ Tactically, however, it is 2024 and there is a distinctly wintery chill in the a
 
 ## Acknowledgements
 
-*The authors would like to thank, in no particular order, Charles Neville, Sam Wilson, and Annett Rolikova for reviewing this before it was published, and you for reading this far.*
+*The authors would like to thank, in no particular order, `@chaals`, `@SamWilsn`, and Annett Rolikova for reviewing this before it was published, and you for reading this far.*
 
 [^1]: See [A.L. Russell's 2006 article][russell 2006] in IEEE Annals of Computing Hstiroy for a detailed history of the phrase.
 
