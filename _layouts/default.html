@@ -13,6 +13,15 @@
     {% include head.html %}
     {% include head/custom.html %}
     <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl | prepend: site.url }}" />
+    <script src="/assets/js/anchor.min.js"></script>
+    <script src="/assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(function() {
+        anchors.options.visible = 'always'; 
+        anchors.add('.page__content > h1, h2, h3, h4, h5, h6');
+      });
+    </script>
+
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
