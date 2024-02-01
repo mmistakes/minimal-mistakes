@@ -2,6 +2,15 @@
 
 The information on here isn't updated as often as it should be, but hey, we've got learning to proof. Email bumblefudge@ with any important questions or inquiries.
 
+## Edits or contributions
+
+PRs are, shockingly, accepted by people unaffiliated with LP, at least in theory. If you are adding or editing or co-authoring a blog post, for example, it might help to preview your work locally by cloning, then installing `bundler`, then running
+
+```
+bundler install
+bundle exec jekyll serve
+```
+
 ## Made using Minimal Mistakes + Jekyll; see links before for details
 [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
