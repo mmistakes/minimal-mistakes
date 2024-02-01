@@ -58,7 +58,7 @@ Helmi is accessible through the LUMI environment daily between 13:00 EET and 08:
 <tbody>
   <tr>
     <td class="tg-tbqi">LUMI-Helmi</td>
-    <td class="tg-49rs">🔴</td>
+    <td class="tg-49rs">🟢</td>
   </tr>
 </tbody>
 </table>
