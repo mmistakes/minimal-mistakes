@@ -20,7 +20,7 @@ permalink: /publications/
 
 * Luca Soldaini, Rodney Kinney, Akshita Bhagia, Dustin Schwenk, David Atkinson, Russell Authur, Ben Bogin, Khyathi Chandu, Jennifer Dumas, Yanai Elazar, Valentin Hofmann, Ananya Harsh Jha, Sachin Kumar, Li Lucy, Xinxi Lyu, Nathan Lambert, Ian Magnusson, **Jacob Morrison**, Niklas Muennighoff, Aakanksha Naik, Crystal Nam, Matthew E. Peters, Abhilasha Ravichander, Kyle Richardson, Zejiang Shen, Emma Strubell, Nishant Subramani, Oyvind Tafjord, Evan Pete Walsh, Hannaneh Hajishirzi, Noah A. Smith, Luke Zettlemoyer, Iz Beltagy, Dirk Groeneveld, Jesse Dodge, Kyle Lo                
 <span style="color:navy">Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research</span>              
-**arXiv preprint**{: .btn .btn--info .btn--small}   
+**arXiv preprint**
 [Paper](https://allenai.org/olmo/dolma-paper.pdf){: .btn .btn--info .btn--small}
 
 ### 2022
