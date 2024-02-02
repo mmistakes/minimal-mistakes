@@ -1,5 +1,5 @@
 ---
-title: "Upcoming Open Mic -React component 'state', props, state, ref and variables"
+title: "Upcoming Open Mic - React component 'state'"
 categories: [Open Mic Announcement, Open Mic]
 ---
 
