@@ -15,7 +15,7 @@ author_profile: false
      RBC: An open resource for studies of the developing brain and mental health
 </b>
 </font>
-<img src=/assets/brain.png" 
+<img src="/assets/brain.png" 
    width="20" 
    height="25" />
  </p>
