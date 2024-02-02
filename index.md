@@ -20,24 +20,23 @@ author_profile: false
    height="20" />
  </p>
 
-
-
- 
+<br> 
 Major mental illnesses are increasingly understood as disorders of brain development. Progress requires defining both typical brain development in healthy kids and variation associated with diverse symptoms of mental illness.  To accelerate this effort, RBC aggregates several of the largest studies of brain development in youth as publicly available data resource for the scientific community.
+<br>
 
 
- <p style="display:inline-block;">
+<p style="display:inline-block;">
 <b>
      A harmonized data resource
 </b>
 <img src="/assets/harmony.png" 
    width="40" 
    height="20" />
- </p>
+</p>
  
-   
+<br>   
 Combining data across different studies is a challenge. Investigators are usually faced with different psychiatric assessments, multiple scanners, and discrepant processing pipelines.  RBC overcomes these obstacles by harmonizing mental health symptoms in a framework that capture major axes of psychiatric symptoms. Similarly, imaging data is carefully curated, undergoes the same quality assurance protocol, and is processed using the same pipeline.  This allows scientists to skip such time-consuming steps and make discoveries faster.
- 
+<br>
 
  <p style="display:inline-block;">
  <b>
@@ -48,9 +47,9 @@ Combining data across different studies is a challenge. Investigators are usuall
    height="20" />
  </p>
  
-   
+<br>
 Every element of RBC is open and reproducible – including image curation, image processing, and all analyses.  Each step is tracked using DataLad, which provides version control for data just like Git provides version control for code.  RBC thus combines open data and open code to maximize reproducibility and enhance confidence.
-
+<br>
 </p> 
 
 
