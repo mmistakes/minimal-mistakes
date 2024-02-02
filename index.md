@@ -12,10 +12,9 @@ author_profile: false
 ---
 
  <p style="display:inline-block;">
-<font size="+4"> <b>
+ <b>
      RBC: An open resource for studies of the developing brain and mental health
 </b>
-</font>
 <img src="/assets/brain.png" 
    width="40" 
    height="20" />
@@ -28,10 +27,9 @@ Major mental illnesses are increasingly understood as disorders of brain develop
 
 
  <p style="display:inline-block;">
-<font size="+4"> <b>
+<b>
      A harmonized data resource
 </b>
-</font>
 <img src="/assets/harmony.png" 
    width="40" 
    height="20" />
@@ -42,10 +40,9 @@ Combining data across different studies is a challenge. Investigators are usuall
  
 
  <p style="display:inline-block;">
-<font size="+4"> <b>
+ <b>
      Reproducible and open science
 </b>
-</font>
 <img src="/assets/repro.png" 
    width="40" 
    height="20" />
