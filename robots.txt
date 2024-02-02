@@ -1,0 +1,6 @@
+---
+layout: none
+---
+
+User-agent: GPTBot
+Disallow: /

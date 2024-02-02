@@ -210,6 +210,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-archives
+  - jekyll-seo-tag
 
 # mimic GitHub Pages with --safe
 whitelist:
