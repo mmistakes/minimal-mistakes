@@ -3,7 +3,7 @@ title: "Image Curation"
 excerpt: "Image Curation"
 sitemap: false
 layout: single
-permalink: /docs/image_curatoin
+permalink: /docs/image_curation
 
 ---
 
