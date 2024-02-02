@@ -9,10 +9,10 @@ author_profile: false
 
 <p style="text-align:center;">
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  
+---
+
  <p style="display:inline-block;">
-<font size="+15"> <b>
+<font size="+10"> <b>
      RBC: An open resource for studies of the developing brain and mental health
 </b>
 </font>
@@ -28,7 +28,7 @@ Major mental illnesses are increasingly understood as disorders of brain develop
 
 
  <p style="display:inline-block;">
-<font size="+15"> <b>
+<font size="+10"> <b>
      A harmonized data resource
 </b>
 </font>
@@ -42,7 +42,7 @@ Combining data across different studies is a challenge. Investigators are usuall
  
 
  <p style="display:inline-block;">
-<font size="+15"> <b>
+<font size="+10"> <b>
      Reproducible and open science
 </b>
 </font>
