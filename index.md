@@ -12,7 +12,7 @@ author_profile: false
   
  <p style="display:inline-block;">
 <font size="+20">
-     <b> RBC: An open resource for studies of the developing brain and mental health</b>
+     RBC: An open resource for studies of the developing brain and mental health
 </font>
 <img src="https://github.com/ReproBrainChart/ReproBrainChart.github.io/blob/master/assets/RBC%20Primary%20Thumbnail.png" 
    width="20" 
