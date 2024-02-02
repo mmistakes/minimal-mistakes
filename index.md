@@ -23,7 +23,7 @@ author_profile: false
 <br> 
 Major mental illnesses are increasingly understood as disorders of brain development. Progress requires defining both typical brain development in healthy kids and variation associated with diverse symptoms of mental illness.  To accelerate this effort, RBC aggregates several of the largest studies of brain development in youth as publicly available data resource for the scientific community.
 <br>
-
+<br>
 
 <p style="display:inline-block;">
 <b>
@@ -37,7 +37,7 @@ Major mental illnesses are increasingly understood as disorders of brain develop
 <br>   
 Combining data across different studies is a challenge. Investigators are usually faced with different psychiatric assessments, multiple scanners, and discrepant processing pipelines.  RBC overcomes these obstacles by harmonizing mental health symptoms in a framework that capture major axes of psychiatric symptoms. Similarly, imaging data is carefully curated, undergoes the same quality assurance protocol, and is processed using the same pipeline.  This allows scientists to skip such time-consuming steps and make discoveries faster.
 <br>
-
+<br>
  <p style="display:inline-block;">
  <b>
      Reproducible and open science
