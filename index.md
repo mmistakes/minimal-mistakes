@@ -20,7 +20,6 @@ author_profile: false
    height="20" />
  </p>
 
-<br> 
 Major mental illnesses are increasingly understood as disorders of brain development. Progress requires defining both typical brain development in healthy kids and variation associated with diverse symptoms of mental illness.  To accelerate this effort, RBC aggregates several of the largest studies of brain development in youth as publicly available data resource for the scientific community.
 <br>
 <br>
