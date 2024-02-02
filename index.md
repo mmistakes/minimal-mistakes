@@ -14,7 +14,7 @@ author_profile: false
 <img src="https://github.com/ReproBrainChart/ReproBrainChart.github.io/blob/master/assets/RBC%20Primary%20Thumbnail.png" 
    width="40" 
    height="50" />
- <h6> RBC: An open resource for studies of the developing brain and mental health</h6>
+ <b> RBC: An open resource for studies of the developing brain and mental health</b>
  </p>
 
 
