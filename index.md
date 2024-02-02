@@ -3,7 +3,7 @@ layout: home
 title: "Reproducible Brain Charts"
 author_profile: false
 ---
-<img src="https://github.com/ReproBrainChart/ReproBrainChart.github.io/blob/master/assets/RBC%20Primary%20Logo.png" 
+<img src="/assets/RBC%20Primary%20Logo.png" 
      width="700" 
      height="300" />
 
