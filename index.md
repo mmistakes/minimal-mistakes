@@ -15,7 +15,7 @@ author_profile: false
      RBC: An open resource for studies of the developing brain and mental health
 </b>
 </font>
-<img src="https://github.com/ReproBrainChart/ReproBrainChart.github.io/blob/master/assets/RBC%20Primary%20Thumbnail.png" 
+<img src=/assets/RBC%20Primary%20Thumbnail.png" 
    width="20" 
    height="25" />
  </p>
@@ -24,19 +24,32 @@ author_profile: false
 
  
 Major mental illnesses are increasingly understood as disorders of brain development. Progress requires defining both typical brain development in healthy kids and variation associated with diverse symptoms of mental illness.  To accelerate this effort, RBC aggregates several of the largest studies of brain development in youth as publicly available data resource for the scientific community.
+
+
+ <p style="display:inline-block;">
+<font size="+20"> <b>
+     A harmonized data resource
+</b>
+</font>
+<img src="/assets/harmony.png" 
+   width="20" 
+   height="25" />
+ </p>
  
-### A harmonized data resource
- <img src="https://github.com/ReproBrainChart/ReproBrainChart.github.io/blob/master/assets/harmony.png" 
-   width="40" 
-   height="50" />
    
 Combining data across different studies is a challenge. Investigators are usually faced with different psychiatric assessments, multiple scanners, and discrepant processing pipelines.  RBC overcomes these obstacles by harmonizing mental health symptoms in a framework that capture major axes of psychiatric symptoms. Similarly, imaging data is carefully curated, undergoes the same quality assurance protocol, and is processed using the same pipeline.  This allows scientists to skip such time-consuming steps and make discoveries faster.
  
+
+ <p style="display:inline-block;">
+<font size="+20"> <b>
+     Reproducible and open science
+</b>
+</font>
+<img src="/assets/repro.png" 
+   width="20" 
+   height="25" />
+ </p>
  
-### Reproducible and open science 
- <img src="https://github.com/ReproBrainChart/ReproBrainChart.github.io/blob/master/assets/repro.png" 
-   width="40" 
-   height="50" />
    
 Every element of RBC is open and reproducible – including image curation, image processing, and all analyses.  Each step is tracked using DataLad, which provides version control for data just like Git provides version control for code.  RBC thus combines open data and open code to maximize reproducibility and enhance confidence.
 
