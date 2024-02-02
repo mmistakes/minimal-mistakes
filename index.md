@@ -16,8 +16,8 @@ author_profile: false
 </b>
 </font>
 <img src="/assets/brain.png" 
-   width="20" 
-   height="25" />
+   width="100" 
+   height="150" />
  </p>
 
 
@@ -32,8 +32,8 @@ Major mental illnesses are increasingly understood as disorders of brain develop
 </b>
 </font>
 <img src="/assets/harmony.png" 
-   width="20" 
-   height="25" />
+   width="100" 
+   height="150" />
  </p>
  
    
@@ -46,8 +46,8 @@ Combining data across different studies is a challenge. Investigators are usuall
 </b>
 </font>
 <img src="/assets/repro.png" 
-   width="20" 
-   height="25" />
+   width="100" 
+   height="150" />
  </p>
  
    
