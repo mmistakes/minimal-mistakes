@@ -11,11 +11,13 @@ author_profile: false
 
   
  <p style="display:inline-block;">
+ <h4> RBC: An open resource for studies of the developing brain and mental health</h4>
  <img src="https://github.com/ReproBrainChart/ReproBrainChart.github.io/blob/master/assets/RBC%20Primary%20Thumbnail.png" 
    width="40" 
    height="50" />
-  RBC: An open resource for studies of the developing brain and mental health 
-  </p>
+ </p>
+
+
 
  
 Major mental illnesses are increasingly understood as disorders of brain development. Progress requires defining both typical brain development in healthy kids and variation associated with diverse symptoms of mental illness.  To accelerate this effort, RBC aggregates several of the largest studies of brain development in youth as publicly available data resource for the scientific community.
