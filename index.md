@@ -4,8 +4,8 @@ title: "Reproducible Brain Charts"
 author_profile: false
 ---
 <img src="https://github.com/ReproBrainChart/ReproBrainChart.github.io/blob/master/assets/RBC%20Primary%20Logo.png" 
-     width="5000" 
-     height="500" />
+     width="700" 
+     height="300" />
 
 <p style="text-align:center;">
 
