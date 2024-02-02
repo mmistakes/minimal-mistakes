@@ -22,7 +22,7 @@ main:
 - title: Imaging
   sublinks: 
     - title: "Image Acquisition"
-      url: /docs/image_acquistion
+      url: /docs/image_acquisition
     - title: "Image Curation"
       url: /docs/image_curation
     - title: "Image Processing"
