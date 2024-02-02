@@ -6,5 +6,7 @@ layout: single
 permalink: /docs/image_acquisition
 
 ---
-Brief description / text
--	Table 2 from paper
+
+For each study and site, imaging parameters differed. Find below a table that summarises all the necessary imaging parameters for each site: 
+
+-	Table 2 from paper (once finalized)
