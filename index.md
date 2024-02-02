@@ -9,7 +9,7 @@ author_profile: false
 
 <p style="text-align:center;">
 
----
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   
  <p style="display:inline-block;">
 <font size="+15"> <b>
@@ -17,8 +17,8 @@ author_profile: false
 </b>
 </font>
 <img src="/assets/brain.png" 
-   width="75" 
-   height="50" />
+   width="50" 
+   height="25" />
  </p>
 
 
@@ -33,8 +33,8 @@ Major mental illnesses are increasingly understood as disorders of brain develop
 </b>
 </font>
 <img src="/assets/harmony.png" 
-   width="75" 
-   height="50" />
+   width="50" 
+   height="25" />
  </p>
  
    
@@ -47,8 +47,8 @@ Combining data across different studies is a challenge. Investigators are usuall
 </b>
 </font>
 <img src="/assets/repro.png" 
-   width="75" 
-   height="50" />
+   width="50" 
+   height="25" />
  </p>
  
    
