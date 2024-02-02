@@ -12,9 +12,9 @@ author_profile: false
   
  <p style="display:inline-block;">
 <img src="https://github.com/ReproBrainChart/ReproBrainChart.github.io/blob/master/assets/RBC%20Primary%20Thumbnail.png" 
- <h6> RBC: An open resource for studies of the developing brain and mental health</h6>
    width="40" 
    height="50" />
+ <h6> RBC: An open resource for studies of the developing brain and mental health</h6>
  </p>
 
 
