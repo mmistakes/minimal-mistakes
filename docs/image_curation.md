@@ -1,9 +1,9 @@
 ---
-title: "Neuroimaging"
-excerpt: "Neuroimaging"
+title: "Image Curation"
+excerpt: "Image Curation"
 sitemap: false
 layout: single
-permalink: /docs/neuroimaging
+permalink: /docs/image_curatoin
 
 ---
 
