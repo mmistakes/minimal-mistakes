@@ -4,7 +4,7 @@
 
 # #Github, #Markdown
 
-Github 페이지(블로그)를 만들고 나니 글 포스팅을 하려면 마크다운을 이용해서 해야한다는 것을 깨달았다. 마크다운 데이터로는 크게 Typora(타이포라)와 Stackedit(스택에디트) 두 개가 있는데, 타이포라는 유료인 점이 걸렸고, 스택에디트는 뭔가 LaTeX의 overleaf처럼 온라인으로 편집한다는 점이 마음에 들어 고르게 되었다.
+Github 페이지(깃허브 블로그)를 만들고 나니 글 포스팅을 하려면 마크다운을 이용해서 해야한다는 것을 깨달았다. 마크다운 데이터로는 크게 Typora(타이포라)와 Stackedit(스택에디트) 두 개가 있는데, 타이포라는 유료인 점이 걸렸고, 스택에디트는 뭔가 LaTeX의 overleaf처럼 온라인으로 편집한다는 점이 마음에 들어 고르게 되었다.
 
 StackEdit을 처음 열고 google계정으로 로그인을 하면, Main workspace가 구글로 되어있다. 나는 Github repository를 연동하고 바로바로 글을 써서 올리고 싶기 때문에 깃허브를 연동하기로 했는데, 연동을 시도하면 자꾸 밑의 이미지와 같은 창이 뜨면서 진행이 되지 않는다.
 
@@ -63,6 +63,6 @@ window.XMLHttpRequest =  class MyXMLHttpRequest extends window.XMLHttpRequest {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk0NjE3MTcsMTY5MzM3NzUxMSwtMTc5MT
-E5OTg5LC0zMDE3ODI1NV19
+eyJoaXN0b3J5IjpbMTkwMjA2NDE4OCw0OTQ2MTcxNywxNjkzMz
+c3NTExLC0xNzkxMTk5ODksLTMwMTc4MjU1XX0=
 -->
