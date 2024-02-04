@@ -59,10 +59,12 @@ lazy val root = (project in file("."))
 - last two libraries will be used for managing project configuration and logging respectively
 
 ## 3. Prerequisites
-Before doing anything, please generate GitHub token and put it in `src/main/resources/application.conf`, like this:
+Before doing anything, please generate personal GitHub access token and put it in `src/main/resources/application.conf`, like this:
 ![alt ""](../images/github-contributors-aggregator/application.png)
 
 It is necessary to use GitHub token because we'll be using GitHub API for which the requests must be authorized. Also, GitHub token will ensure that GitHub API rate limiter will allow us to issue many requests at once.
+
+Please, have a look at the [GitHub docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) to do it.
 
 ## 4. Planning
 What are we going to do and how exactly? To answer this questions we must investigate existing GitHub API so that we know what kind of data is exposed and how.
@@ -254,7 +256,7 @@ Please, notice that the response is a JSON array. Important fields for us should
 So, our `Contributor` model could look like this:
 
 ```scala
-objecet domain {
+object domain {
   
   import play.api.libs.json.*
   import play.api.libs.*
@@ -271,13 +273,13 @@ objecet domain {
     (
       (json \ "login").asOpt[String],
       (json \ "contributions").asOpt[Long],
-    ).tupled.fold(JsError("parse failure"))((lo, co) => JsSuccess(Contributor(lo, co)))
+    ).tupled.fold(JsError("parse failure, could not construct Contributor"))((lo, co) => JsSuccess(Contributor(lo, co)))
 
   given WritesContributor: Writes[Contributor] = Json.writes[Contributor]
 }
 ```
 
-The `case class` definition needs no explanation, you may be thinking... why do we have `Writes` at all?
+The `case class` definition needs no explanation, but... you may be thinking... why do we have `Writes` at all?
 
 Good question! `Writes[Contributor]` is necessary because our HTTP server should also return this data to the client (more on that later).
 
@@ -289,6 +291,8 @@ This `Reads[Contributor]` can be a bit of tricky, so let's explain what is going
 - `(lo, co) => JsSuccess(Contributor(lo, co))` is a function that takes the extracted values and constructs a `Contributor` instance.
 - `.tupled` extension method is coming from `import cats.syntax.all.*` and is used to convert the tuple `(Option[String], Option[Long])` into an `Option[(String, Long)]`.
 - `fold` method is used to handle the case where either of the options is `None`. If any of them is `None`, it returns a `JsError("parse failure")`; otherwise, it returns a `JsSuccess` with the constructed `Contributor` instance.
+
+We could have also used default values for each field and create an empty `Contributor` such as `Contributor(login="", contributions=0)`, you're free to choose.
 
 Great!
 
@@ -313,12 +317,13 @@ object domain {
   given WritesContributions: Writes[Contributions] = Json.writes[Contributions]
 }
 ```
+This is where the previous definition of `Writes[Contributor]` becomes useful, it is internally (implicitly) used by `Writes[Contributions]`.
 
 In that case class definition the `count` will be just the amount of contributors for an organization whereas `contributors` will be a `Vector` of `Contributor`-s, sorted by `Contributor#contributions` field.
 
 With that, we can finish the domain modeling and switch to the meaty part - business logic.
 
-## 7.Business logic
+## 7. Business logic
 
 Our goal is to make contributors aggregation fast. We've seen that there are more than a few API requests we need to make, some of them are paginated, some of them are not. Also, it's important to define the order of execution and the general flow of the program.
 
@@ -338,6 +343,81 @@ def routes: HttpRoutes[IO] = {
   }
 }
 ```
+
+Let's quickly test the new route and then proceed with the important stuff.
+
+![alt ""](../images/github-contributors-aggregator/test_basic_route.png)
+
+Great!
+
+Here's a list of things we need to prepare before writing the main logic:
+- handling GitHub Token (configuration, loading, attaching to request headers)
+- mechanism to create proper GitHub REST API URL-s (parameterization, pagination)
+- general approach for issuing a single HTTP request (deserialization, error handling)
+
+As soon as we have those components, we can start composing our main piece of logic.
+
+Since this is a small project, it is not required to overwhelm ourselves with the approaches that quickly can turn into the rabbit hole of overengineering practices.
+
+I suggest that we create a simple private methods in `Main.scala` which will be just called multiple times inside `routes` definition.
+
+### 7.1 Handling Github Token
+
+Github token is just a string which must be attached to request headers so that Github REST API rate limiter doesn't prohibit us issuing huge amount of requests. 
+
+Let's be simple and model that as a single field case class:
+
+```scala
+object Main extends IOApp.Simple {
+
+  final case class Token(token: String) derives ConfigReader {
+    override def toString: String = token
+  }
+
+  /**
+   * other code
+   */
+}
+```
+
+We've defined a case class named `Token` which derives from `ConfigReader` suggesting that it may be used in some configuration reading context.
+
+The derives clause is part of the new Scala 3 feature called "derivation," which allows automatic generation of type class instances for case classes and other data types. In this case, it generates a `ConfigReader` instance for our `Token` class, allowing us to read instances of `Token` from some configuration source.
+
+In general, there are a few options for managing such things:
+- configuration
+  - easy to set up
+- env variable 
+  - easy to set up
+- key chains or secret management systems
+  - not so easy and requires some time to set up, definitely an overkill for a small project such as ours
+- hardcoding
+  - very good for prototyping and development but extremely unsafe, as soon as you publish your token, GitHub will immediately expire it so that nobody can abuse it on your behalf
+
+Since I've already showed you `ConfigReader` and `pureconfig` dependency in our `build.sbt` it's fairly easy to guess which option we're using in this project, just a personal preference.
+
+In terms of loading, it will just required one simple line of code in our `run` definition in:
+
+```scala
+object Main extends IOApp.Simple {
+
+  /**
+   * Token and logger definitions
+   */
+    
+  override val run: IO[Unit] =
+    (for {
+      _ <- info"starting server".toResource
+      token <- IO.delay(ConfigSource.default.loadOrThrow[Token]).toResource
+      // .. other code
+    } yield ()).useForever
+```
+
+Time to move on the next step.
+
+### 7.2 Building GitHub REST API URL-s
+
+
 
 
 
