@@ -417,6 +417,111 @@ Time to move on the next step.
 
 ### 7.2 Building GitHub REST API URL-s
 
+There's only a handful of URL-s we need to build for each organization:
+- URL for loading the amount of public repositories (`PublicRepos`) for some organization
+- URL for loading the names of public repositories (`Vector[RepoName]`) for some organization
+- URL for loading paginated contributors (`Vector[Contributor]`) for `X` repository owned by `Y` organization
+
+Let's create such functions step by step in `Main.scala`:
+
+```scala
+def publicRepos(orgName: String) = s"https://api.github.com/orgs/$orgName"
+```
+
+It's apparent that `orgName` will be injected in the base URL, giving us `PublicRepos` URL.
+
+```scala
+def repos(orgName: String, page: Int): String =
+  s"https://api.github.com/orgs/$orgName/repos?per_page=100&page=$page"
+```
+
+Here, `orgName` and `page` will be injected in respective places, giving us URL which upon requesting data returns the collection of repositories, from which we'll read `RepoName` and turn that into `Vector[RepoName]` in the end.
+
+```scala
+def contributorsUrl(repoName: String, orgName: String, page: Int): String =
+    s"https://api.github.com/repos/$orgName/$repoName/contributors?per_page=100&page=$page"
+```
+
+`repoName`, `orgName`, `page` will be injected in placeholders, yielding us URL which returns the list of paginated contributors. After processing the responses, our app will turn this data into `Vector[Contributor]`.
+
+### 7.3 HTTP request fetch functionality
+
+In order to implement a generic `HTTP GET` we will need to have a few other things in place. 
+
+Please keep in mind, that we're working with `http4s` server and client, which means that eventually we'll need to create things such as:
+- `http4s.org.Request[IO]`
+- `http4s.org.Uri`
+- `org.http4s.client.Client[IO]`
+- ...
+
+Let's define a function which will build `Uri` or `IO[Uri]` from the unsafe string.
+
+```scala
+import org.http4s.Uri
+
+def uri(url: String): IO[Uri] = IO.fromEither(Uri.fromString(url))
+```
+
+`Uri.fromString(url)` gives us `Either[IO, Uri]` and with the help of `IO#Either` constructor - `IO.fromEither` we're able to convert that into `IO[Uri]`.
+
+Before defining the `HTTP GET` we need one more thing - function which creates the `Request[IO]`:
+
+```scala
+import org.http4s.Header.Raw
+import org.typelevel.ci.CIString
+import org.http4s.{Method, Request, Uri}
+
+def req(uri: Uri)(using token: Token) = Request[IO](Method.GET, uri)
+    .putHeaders(Raw(CIString("Authorization"), s"Bearer ${token.token}"))
+```
+
+Here's the breakdown of the code:
+
+- `def req(uri: Uri)(using token: Token)` declares a function named `req` that takes a `Uri` and an `implicit Token` parameter.
+- `Request[IO](Method.GET, uri)` creates an HTTP request with the `GET` method and the provided URI using the `http4s` library.
+- `.putHeaders(...)` adds headers to the request.
+- `Raw(CIString("Authorization"), s"Bearer ${token.token}")` constructs the `"Authorization"` header with the value `"Bearer ${token.token}"`.
+
+So, in essence this function creates a request with an `Authorization` header, where the token is taken from the implicit `Token` parameter which we've defined earlier.
+
+Sometimes, working with JSON can make our code a bit clumsy, so I suggest we add a nice syntax for de/serialization:
+
+```scala
+object syntax {
+    extension (self: String) 
+      def into[A](using r: Reads[A]): A = Json.parse(self).as[A]
+    
+    extension [A](self: A) 
+      def toJson(using w: Writes[A]): String = Json.prettyPrint(w.writes(self))
+  }
+```
+
+This will enable us to do things such as:
+```scala
+case class Data(x: Int, y: Int)
+
+given DataFormat: Format[Data] = Json.format[Data]
+
+val data = Data(x = 1, y = 2)
+
+val dataJsonString = data.toJson // "{"x":1,"y":2}"
+val dataFromJsonString = dataJsonString.into[Data] // Data(x = 1, y = 2)
+```
+
+Now we can define a general `HTTP GET` functionality which will be used later multiple times:
+```scala
+def fetch[A: Reads](uri: Uri, client: Client[IO], default: => A)(using token: Token): IO[A] =
+    client
+      .expect[String](req(uri)) // issue HTTP GET request
+      .map(_.into[A]) // map string body into A using Reads[A]
+      .onError(IO.println) // log any error
+      .handleError(_ => default) // in case something went wrong, return the default value for A
+```
+
+
+
+
+
 
 
 
