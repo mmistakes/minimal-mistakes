@@ -321,9 +321,9 @@ This is where the previous definition of `Writes[Contributor]` becomes useful, i
 
 In that case class definition the `count` will be just the amount of contributors for an organization whereas `contributors` will be a `Vector` of `Contributor`-s, sorted by `Contributor#contributions` field.
 
-With that, we can finish the domain modeling and switch to the meaty part - business logic.
+With that, we can finish the domain modeling and switch to the next part - building blocks for business logic.
 
-## 7. Business logic
+## 7. Building blocks for business logic
 
 Our goal is to make contributors aggregation fast. We've seen that there are more than a few API requests we need to make, some of them are paginated, some of them are not. Also, it's important to define the order of execution and the general flow of the program.
 
@@ -512,12 +512,34 @@ Now we can define a general `HTTP GET` functionality which will be used later mu
 ```scala
 def fetch[A: Reads](uri: Uri, client: Client[IO], default: => A)(using token: Token): IO[A] =
     client
-      .expect[String](req(uri)) // issue HTTP GET request
-      .map(_.into[A]) // map string body into A using Reads[A]
-      .onError(IO.println) // log any error
-      .handleError(_ => default) // in case something went wrong, return the default value for A
+        .expect[String](req(uri)) // issue request
+        .onError(IO.println) // log the error if something breaks
+        .redeem(_ => default, _.into[A]) // fold as A (default if error, parse from JSON to A if success)
 ```
+This function is designed for fetching data from an HTTP endpoint, parsing the response as JSON into a type `A`, and handling errors gracefully by providing a default value. The use of type classes like `Reads` indicates that are using type class-based decoding for type `A`.
 
+Explanation:
+- `client.expect[String](req(uri))` sends an HTTP request using the `req` function from our previous example and expects the response as a `String` (it is assumed that the response body is expected to be a JSON string).
+- `.onError(IO.println)` logs the error if an exception occurs during the HTTP request. The `IO.println` function is used to print the error to the console.
+- `.redeem(_ => default, _.into[A])` is a way of handling the result of the HTTP request. It's a combination of `handleError` and `map`. If the HTTP request succeeds, it applies the `_.into[A]` function to parse the JSON response into an instance of type `A`. If an error occurs, it falls back to the `default` value.
+
+With that, we can move on to the most important part of our project - business logic.
+
+## 8. Business logic
+
+We have defined the domain and several building blocks for actually implementing the business logic, however, before writing the code we need to define the flow / plan and then execute it.
+
+After a few revisions and refinement this is the plan I came up with:
+- choose the organization (e.g `typelevel`)
+- send HTTP request to our app on `host:port/org/typelevel`
+- fetch public repositories information for `typelevel` from a GitHub API endpoint.
+- calculate the number of pages based on the number of public repositories (100 repositories per page) that is owned by `typelevel`
+- use the computed number and fetch information about repositories to accumulate the list of repository names. (use parallelism)
+- for each repository, start fetching contributors in parallel and accumulate their contributions sequentially.
+- group and sum contributions by contributor login (username, since it's unique).
+- create a `Vector[Contributor]` instances sorted by contributions.
+- generate a JSON response containing information about contributors and contributions.
+- spit back the HTTP response with the JSON content.
 
 
 
