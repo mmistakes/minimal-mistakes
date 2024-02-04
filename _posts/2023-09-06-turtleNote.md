@@ -54,4 +54,4 @@ for n in range(20):
     circle(50)
 ```
 
-[More information](https://docs.python.org/3/library/turtle.html)
+[More info](https://docs.python.org/3/library/turtle.html)

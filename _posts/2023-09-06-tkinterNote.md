@@ -45,3 +45,5 @@ self.myWindow.geometry("300x300+100+100") # width x height + left + top
 
 myGui = MyGUI() # calling constructor(default)
 ```
+
+[more info](https://docs.python.org/3/library/tkinter.html)
