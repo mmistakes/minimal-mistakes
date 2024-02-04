@@ -532,14 +532,18 @@ We have defined the domain and several building blocks for actually implementing
 After a few revisions and refinement this is the plan I came up with:
 - choose the organization (e.g `typelevel`)
 - send HTTP request to our app on `host:port/org/typelevel`
-- fetch public repositories information for `typelevel` from a GitHub API endpoint.
+- fetch public repositories information for `typelevel` from a GitHub API endpoint
 - calculate the number of pages based on the number of public repositories (100 repositories per page) that is owned by `typelevel`
-- use the computed number and fetch information about repositories to accumulate the list of repository names. (use parallelism)
-- for each repository, start fetching contributors in parallel and accumulate their contributions sequentially.
-- group and sum contributions by contributor login (username, since it's unique).
-- create a `Vector[Contributor]` instances sorted by contributions.
-- generate a JSON response containing information about contributors and contributions.
-- spit back the HTTP response with the JSON content.
+  - this number will let us issue N amount of parallel requests in the next step
+- use the computed number and fetch information about repositories to accumulate the list of repository names
+  - we will end up here with smth like `Vector("cats", "cats-effect", ... ,"fs2")`
+- for each repository, start fetching contributors in parallel and accumulate their contributions sequentially
+  - So, if we have 3 repositories we will create 3 separate fibers and start accumulating paginated contributors sequentially until they are exhausted. It means that fiber A may take 500 millis, fiber B - 600 millis, fiber C - 300 millis. So, in total, we will have all results in 600 millis since it's based on fork-join algorithm.
+  - Unfortunately there is no clear way of parallelising fetching the contributors for repository because we don't know in advance how many contributors are there. However, if you feel brave you can play with different ideas and also try parallelising that, e.g you can use `fibonacci` approach and issue N amount of request on each iteration until they are exhausted, more on that later. 
+- group and sum contributions by contributor login
+- create a `Vector[Contributor]` instances sorted by contributions
+- generate a JSON response containing information about contributors and contributions
+- spit back the HTTP response with the JSON content
 
 
 
