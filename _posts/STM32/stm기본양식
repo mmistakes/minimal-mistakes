@@ -1,0 +1,48 @@
+---
+title: "[STM32] 2024-01-09-STM32 5일차 ADC_DAC
+  "
+date: 2024-002-05
+last_modified_at: 2024-02-05
+categories:
+  - STM32
+tags:
+  - STM32
+
+
+published: true
+toc: true
+toc_sticky: true
+---
+
+# 개념정리
+-------------------
+# ADC
+
+
+
+----
+# 개발 환경 세팅
+
+## 세부설정
+
+
+## DMA 설정
+
+
+
+
+
+
+
+
+# 소스코드
+
+
+
+
+# 출처
+1. 참고 영상강의 자료
+https://www.youtube.com/watch?v=_7Ll95FITn4&list=PLUaCOzp6U-RqMo-QEJQOkVOl1Us8BNgXk&index=4&ab_channel=ChrisWonyeobPark
+
+
+
