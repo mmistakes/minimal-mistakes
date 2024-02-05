@@ -66,7 +66,7 @@ The above code could be more optimal and maintainable. The two `process` functio
 1. Validate the input DTO
 2. Do something with the validated object
 
-Currently, it seems we'd need to write a new `process` function for every action type. We can abstract the `process concept so that we'd only need to write it once. The first step to achieve this is defining a common type to let both DTOs inherit from it. Let's call this type `Validatable`:
+Currently, it seems we'd need to write a new `process` function for every action type. We can abstract the `process` concept so that we'd only need to write it once. The first step to achieve this is defining a common type to let both DTOs inherit from it. Let's call this type `Validatable`:
 
 ```kotlin
 sealed interface Validatable {
@@ -285,6 +285,10 @@ We introduced the `ValidatorScope<T>` interface in the previous section. We also
 First, we need to define the validation rules. We'll start with the `CreatePortfolioDTO` type. We want to validate the `userId` and the `amount` fields. The `userId` field must be a non-empty string, while the `amount` field must be a positive number. Let's define the validation rules as follows:
 
 ```kotlin
+interface Required<T> {
+    fun T.required(): Boolean
+}
+
 interface NonEmpty<T> {
     fun T.nonEmpty(): Boolean
 }
@@ -331,6 +335,10 @@ sealed interface InvalidFieldError {
 
     data class NegativeFieldError(override val field: String) : InvalidFieldError {
         override fun toString(): String = "Field '$field' must be positive"
+    }
+
+    data class ZeroFieldError(override val field: String) : InvalidFieldError {
+        override fun toString(): String = "Field '$field' must be non zero"
     }
 }
 ```
