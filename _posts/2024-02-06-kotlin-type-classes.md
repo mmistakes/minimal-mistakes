@@ -1,6 +1,6 @@
 ---
-title: "Type Classes in Kotlin: A Practical Guide
-date: 2024-02-05
+title: "Type Classes in Kotlin: A Practical Guide"
+date: 2024-02-06
 header:
     image: "/images/blog cover.jpg"
 tags: [kotlin]
