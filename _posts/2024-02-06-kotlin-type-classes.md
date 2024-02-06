@@ -4,7 +4,7 @@ date: 2024-02-06
 header:
     image: "/images/blog cover.jpg"
 tags: [kotlin]
-excerpt: ""
+excerpt: "Type classes are a powerful design pattern to organize your code better and make it easier to read, understand and change."
 toc: true
 toc_label: "In this article"
 ---
