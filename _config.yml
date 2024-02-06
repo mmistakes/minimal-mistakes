@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "dirt" #"default", "air", "aqua", "contrast", "dark",
 locale                   : "en-US"
 title                    : "DebugML"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "A research blog run by Brachio Lab and friends" # site tagline that appears below site title in masthead
 name                     : "Eric Wong"
 description              : "We study why models make mistakes and how to fix them."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
