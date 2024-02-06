@@ -4,7 +4,7 @@ date: 2024-02-06
 header:
     image: "/images/blog cover.jpg"
 tags: [kotlin]
-excerpt: "Learn type classes in Kotlin - a powerful "design pattern" to organize your code better and make it easier to read, understand and change."
+excerpt: "Learn type classes in Kotlin - a powerful 'design pattern' to organize your code better and make it easier to read, understand and change."
 toc: true
 toc_label: "In this article"
 ---
