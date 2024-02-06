@@ -1,5 +1,5 @@
 ---
-title: "Functional Parallelism to the max"
+title: "Functional Parallel Programming"
 date: 2024-01-26
 header:
     image: "/images/blog cover.jpg"
@@ -488,12 +488,12 @@ Sometimes, working with JSON can make our code a bit clumsy, so I suggest we add
 
 ```scala
 object syntax {
-    extension (self: String) 
-      def into[A](using r: Reads[A]): A = Json.parse(self).as[A]
+  extension (self: String) 
+    def into[A](using r: Reads[A]): A = Json.parse(self).as[A]
     
-    extension [A](self: A) 
-      def toJson(using w: Writes[A]): String = Json.prettyPrint(w.writes(self))
-  }
+  extension [A](self: A) 
+    def toJson(using w: Writes[A]): String = Json.prettyPrint(w.writes(self))
+}
 ```
 
 This will enable us to do things such as:
@@ -513,15 +513,17 @@ Now we can define a general `HTTP GET` functionality which will be used later mu
 def fetch[A: Reads](uri: Uri, client: Client[IO], default: => A)(using token: Token): IO[A] =
     client
         .expect[String](req(uri)) // issue request
-        .onError(IO.println) // log the error if something breaks
-        .redeem(_ => default, _.into[A]) // fold as A (default if error, parse from JSON to A if success)
+        .map(_.into[A]) // transform the JSON into A using Reads[A]
+        .onError(IO.println) // print out any errors
+        .handleError(_ => default) // if IO computation fails, return the default value of A
 ```
 This function is designed for fetching data from an HTTP endpoint, parsing the response as JSON into a type `A`, and handling errors gracefully by providing a default value. The use of type classes like `Reads` indicates that are using type class-based decoding for type `A`.
 
 Explanation:
 - `client.expect[String](req(uri))` sends an HTTP request using the `req` function from our previous example and expects the response as a `String` (it is assumed that the response body is expected to be a JSON string).
+- `.map(_.into[A])` transforms the JSON body into the concrete instance of `A` using `Reads[A]`
 - `.onError(IO.println)` logs the error if an exception occurs during the HTTP request. The `IO.println` function is used to print the error to the console.
-- `.redeem(_ => default, _.into[A])` is a way of handling the result of the HTTP request. It's a combination of `handleError` and `map`. If the HTTP request succeeds, it applies the `_.into[A]` function to parse the JSON response into an instance of type `A`. If an error occurs, it falls back to the `default` value.
+- `.handleError(_ => default)` If an error occurs in IO computation, it falls back to the `default` value for `A`.
 
 With that, we can move on to the most important part of our project - business logic.
 
@@ -545,7 +547,190 @@ After a few revisions and refinement this is the plan I came up with:
 - generate a JSON response containing information about contributors and contributions
 - spit back the HTTP response with the JSON content
 
+Let's begin!
 
+### 8.1 Accept organization name and define the # of parallel requests
+
+```scala
+object Main extends IOApp.Simple {
+
+  override val run: IO[Unit] =
+    (for {
+      _      <- info"starting server".toResource
+      token  <- IO.delay(ConfigSource.default.loadOrThrow[Token]).toResource
+      client <- EmberClientBuilder.default[IO].build
+      _      <- EmberServerBuilder
+              .default[IO]
+              .withHost(host"localhost")
+              .withPort(port"9000")
+              .withHttpApp(routes(client, token).orNotFound)
+              .build
+    } yield ()).useForever
+  
+
+  def routes(client: Client[IO], token: Token): HttpRoutes[IO] = {
+
+    given tk: Token = token
+
+    HttpRoutes.of[IO] {
+      case GET -> Root => Ok("hi :)")
+      case GET -> Root / "org" / orgName =>
+        for {
+          publicReposUri <- uri(publicRepos(orgName))
+          publicRepos <- fetch[PublicRepos](publicReposUri, client, PublicRepos.Empty)
+          pages = (1 to (publicRepos.value / 100) + 1).toVector // # of parallel requests that we can make later, e.g Vector(1, 2, 3) - 3 pages, so that we can have Vector of repository names
+          response <- Ok(s"# of public repos: $publicRepos, # of parallel requests: ${pages.size}")
+        } yield response
+    }
+  }
+}
+```
+
+As you can see, we updated `routes` definition so that it finds out how many public repositories are available per organization.
+
+The steps are:
+- define a `publicReposUri`
+- issue HTTP request to `publicReposUri`
+  - deserialize JSON response to `PublicRepos` which is an amount of public repositories
+- send response 200 OK with computed result
+
+Below you can see how could we test this functionality:
+
+![alt ""](../images/github-contributors-aggregator/test_publicrepos.png)
+
+### 8.2 Fetching all repository names
+
+At this point we've already calculated the `pages` which holds the number of pages based on the number of public repositories (100 repositories per page) that is owned by some organization.
+
+Since we have this value available, we can issue N amount of paginated requests and get back the `Vector[RepoName]`, let me demonstrate this to you:
+
+```scala
+// other imports  
+import cats.syntax.all.*
+import cats.instances.all.*
+// other imports
+  
+object Main extends IOApp.Simple { 
+  
+  // other definitions
+
+  def routes(client: Client[IO], token: Token): HttpRoutes[IO] = {
+
+    given tk: Token = token
+
+    HttpRoutes.of[IO] {
+      case GET -> Root => Ok("hi :)")
+      case GET -> Root / "org" / orgName =>
+        for {
+          publicReposUri <- uri(publicRepos(orgName))
+          publicRepos <- fetch[PublicRepos](publicReposUri, client, PublicRepos.Empty)
+          pages = (1 to (publicRepos.value / 100) + 1).toVector
+          // let's calculate the vector of repository names
+          repositories <- pages.parUnorderedFlatTraverse { page =>
+            uri(repos(orgName, page)).flatMap(fetch[Vector[RepoName]](_, client, Vector.empty[RepoName]))
+          }
+          response <- Ok(repositories.toString)
+        } yield response
+    }
+  }
+}
+```
+
+Let me explain how we calculated `repositories` step by step:
+- The `parUnorderedFlatTraverse` function is used to perform parallel and unordered traversing of the `pages` vector. For each page, it fetches the repositories using the `uri(repos(orgName, page))` to construct the `URI` and `fetch[Vector[RepoName]](_, client, Vector.empty[RepoName])` to fetch the repository names from the GitHub API. The result is a `Vector[Vector[RepoName]]` representing repositories for each page.
+- The `parUnorderedFlatTraverse` combines the vectors from different pages into a single `Vector[RepoName]` by flattening and concatenating them in a parallel and unordered manner.
+- The resulting `Vector[RepoName]` is assigned to the repositories value.
+- Finally, the route responds with an HTTP Ok `Ok(repositories.toString)` containing the string representation of the vector of repository names.
+
+Let's manually test the output for different organizations:
+
+![alt ""](../images/github-contributors-aggregator/test_reponames.png)
+
+### 8.3 Start fetching contributors for each project in parallel and exhaust each iteratively
+
+Since we have all the repositories, now we can start fetching the contributors of each project in parallel. We must notice that the results for this one are also paginated, however, we don't know exactly how many contributors are out there for each project, it means that we're limited in parallelism here and we have to iteratively fetch "next contributors list" until it returns the less than 100 results, indicating that it's the last one.
+
+```scala
+// other imports  
+import cats.syntax.all.*
+import cats.instances.all.*
+// other imports
+  
+object Main extends IOApp.Simple { 
+  
+  // other definitions
+  def routes(client: Client[IO], token: Token): HttpRoutes[IO] = {
+    given tk: Token = token
+
+    HttpRoutes.of[IO] {
+
+      case GET -> Root => Ok("hi :)")
+
+      case GET -> Root / "org" / orgName =>
+        for {
+          publicReposUri <- uri(publicRepos(orgName))
+          publicRepos <- fetch[PublicRepos](publicReposUri, client, PublicRepos.Empty)
+          pages = (1 to (publicRepos.value / 100) + 1).toVector
+          repositories <- pages.parUnorderedFlatTraverse { page =>
+            uri(repos(orgName, page))
+                    .flatMap(fetch[Vector[RepoName]](_, client, Vector.empty[RepoName]))
+          }
+          contributors <- repositories
+                  .parUnorderedFlatTraverse { repoName =>
+                    def getContributors(
+                      page: Int,
+                      contributors: Vector[Contributor],
+                      isEmpty: Boolean = false,
+                    ): IO[Vector[Contributor]] =
+                      if ((page > 1 && contributors.size % 100 != 0) || isEmpty) IO.pure(contributors)
+                      else {
+                        uri(contributorsUrl(repoName.value, orgName, page))
+                                .flatMap { contributorUri =>
+                                  for {
+                                    newContributors <- fetch[Vector[Contributor]](contributorUri, client, Vector.empty)
+                                    next <- getContributors(
+                                      page = page + 1,
+                                      contributors = contributors ++ newContributors,
+                                      isEmpty = newContributors.isEmpty,
+                                    )
+                                  } yield next
+                                }
+                      }
+
+                    getContributors(page = 1, contributors = Vector.empty)
+                  }
+                  .map {
+                    _.groupMapReduce(_.login)(_.contributions)(_ + _).toVector
+                            .map(Contributor(_, _))
+                            .sortWith(_.contributions > _.contributions)
+                  }
+          response <- Ok(Contributions(contributors.size, contributors).toJson)
+        } yield response
+    }
+  }
+}
+```
+
+In the code snippet above, `contributors` and `response` are two important components of the HTTP route handling logic. Let's break down their meanings:
+
+`contributors`:
+
+- `contributors` is a value that represents a collection of contributors to GitHub repositories belonging to a specific organization.
+- It is computed using parallel and unordered traversal (`parUnorderedFlatTraverse`) over the repositories vector.
+- For each repository (`repoName`), it fetches the contributors from the GitHub API in a paginated manner.
+- The `contributors` are accumulated into a `Vector[Contributor]`, and the final result is a collection of contributors from all repositories.
+- The contributors are grouped by their `login` names and `contributions` using `groupMapReduce`.
+- The resulting grouped `contributors` are then transformed into a `Vector[Contributor]` and sorted based on the contributions in descending order.
+
+`response`:
+
+- `response` is the final HTTP response that the route will return.
+- It is constructed using the `Ok` constructor and contains the result of the entire computation.
+- The result is an instance of the `Contributions` case class, which wraps information about the total number of contributors and the sorted vector of contributors.
+- The `contributors` are sorted based on their contributions in descending order.
+-The final result is serialized to JSON using the toJson method and included in the HTTP response body.
+
+- In summary, `"contributors"` represents the processed and aggregated data about GitHub contributors, and `"response"` is the HTTP response containing this information in a serialized form. The route is designed to fetch information about public repositories, their contributors, and then provide a sorted list of contributors along with some summary statistics in the HTTP response.
 
 
 
