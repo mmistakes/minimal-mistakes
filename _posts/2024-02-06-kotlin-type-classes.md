@@ -13,6 +13,10 @@ _By [Riccardo Cardin](https://github.com/rcardin)_
 
 In this article, we delve into the concept of type classes in Kotlin, a powerful tool that allows developers to abstract logic for different data types. We'll take data validation as an example to show how type classes can be used to write generic and reusable code. Our implementation will be based on the [Arrow Kt](https://arrow-kt.io/) library, which will exploit Kotlin's context receivers. So, without further ado, let's get the party started.
 
+Video version by Daniel:
+
+{% include video id="Qhfiq_1eWM8" provider="youtube" %}
+
 ## 1. Setting the Stage
 
 We’ll use version 1.9.22 of Kotlin and version 1.2.1 of the Arrow library. We'll also use [Kotlin's context receivers](https://blog.rockthejvm.com/kotlin-context-receivers/). Context receivers are still an experimental feature. Hence, they’re not enabled by default. We need to modify the Gradle configuration. Add the `kotlinOptions` block within the `tasks.withType<KotlinCompile>` block in your `build.gradle.kts` file:

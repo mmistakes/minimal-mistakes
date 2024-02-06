@@ -9,6 +9,8 @@ toc: true
 toc_label: "In this article"
 ---
 
+{% include video id="6NHEGejBQ0w" provider="youtube" %}
+
 ## 1. Introduction
 
 The Typelevel stack is one of the most powerful sets of libraries in the Scala ecosystem. They allow you to write powerful applications with pure functional programming - as of this writing, the Typelevel ecosystem is one of the biggest selling points of Scala.
@@ -29,7 +31,6 @@ Together we will build the minimal start of a full-stack application, entirely w
 >This demo is the start of the production-grade application we write in the giant [Typelevel Rite of Passage](https://rockthejvm.com/p/typelevel-rite-of-passage) course. It is currently the biggest course on the site, and teaches you how to write production software using the Typelevel stack, how to make sound architectural decisions, how to do proper testing, how to write app features, payment systems, email services and everything that you'd normally expect from a proper web application, and also how to deploy it to your domain.
 >
 > If you're interested, check out the course [here](https://rockthejvm.com/p/typelevel-rite-of-passage).
-
 
 ## 2. Setup
 
