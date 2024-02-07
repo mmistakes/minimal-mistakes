@@ -10,6 +10,7 @@ Each dataset was processed using [CPAC](https://fcp-indi.github.io/docs/nightly/
 
 Major outputs include: 
 - Functional timeseries after cleaning
+- Functional connectivity matrices
 - ALFF (or amplitude of low frequency fluctuation)
 - ReHo (or regional homogeneity)
 - QC metrics
