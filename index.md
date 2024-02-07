@@ -12,12 +12,12 @@ author_profile: false
 ---
 
  <p style="display:inline-block;">
+<img src="/assets/brain.png" 
+   width="80" 
+   height="40" />
  <b>
      RBC: An open resource for studies of the developing brain and mental health
 </b>
-<img src="/assets/brain.png" 
-   width="40" 
-   height="20" />
  </p>
 
 Major mental illnesses are increasingly understood as disorders of brain development. Progress requires defining both typical brain development in healthy kids and variation associated with diverse symptoms of mental illness.  To accelerate this effort, RBC aggregates several of the largest studies of brain development in youth as publicly available data resource for the scientific community.
@@ -25,12 +25,12 @@ Major mental illnesses are increasingly understood as disorders of brain develop
 <br>
 
 <p style="display:inline-block;">
+<img src="/assets/harmony.png" 
+   width="80" 
+   height="40" />
 <b>
      A harmonized data resource
 </b>
-<img src="/assets/harmony.png" 
-   width="40" 
-   height="20" />
 </p>
  
 <br>
@@ -38,12 +38,12 @@ Combining data across different studies is a challenge. Investigators are usuall
 <br>
 <br>
  <p style="display:inline-block;">
+<img src="/assets/repro.png" 
+   width="80" 
+   height="40" />
  <b>
      Reproducible and open science
 </b>
-<img src="/assets/repro.png" 
-   width="40" 
-   height="20" />
  </p>
  
 <br>
