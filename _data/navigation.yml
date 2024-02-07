@@ -17,7 +17,7 @@ main:
       url: /docs/PACCT
     - title: "PNC"
       url: /docs/PNC
-- title:  Mental Health
+- title:  Psychiatric Phenotyping
   url: /docs/phenotypes
 - title: Imaging
   sublinks: 
