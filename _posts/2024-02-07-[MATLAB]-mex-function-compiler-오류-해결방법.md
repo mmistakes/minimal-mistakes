@@ -20,13 +20,15 @@ init.c라고 있는 c언어 파일을 mex로 build하려고 했는데 이렇게 
 
 보니까 mex function의 디폴트 compiler는 Xcode인데 이거에 대한 문제가 좀 있나보다. 구글링을 했는데 비슷한 문제가 예전부터 있어왔던 것으로 보인다. ~~악명높은 Xcode~~ 심지어 여기서는 Xcode is installed라는데 나는 Xcode를 깐 적이 없다.
 
+
+
 해결방법을 찾으려고 열심히 구글링을 했는데 잘 나오지 않아서 헤매던 도중 귀인을 발견했다. [귀인 출처](https://gist.github.com/martinandersen/1fea529ec04885c63477ccb944394494)
 
 
 ```bash
 defaults write com.apple.dt.Xcode IDEXcodeVersionForAgreedToGMLicense 15.2
 ```
-현재 최신 Xcode 버전이 15.2여서 숫자는 위와 같은데, 가지고 있는 Xcode버젼이 다르다면 다른 숫자를 입력하면 된다. 위와 같은 코드를 터미널 
+현재 최신 Xcode 버전이 15.2여서 숫자는 위와 같은데, 가지고 있는 Xcode버젼이 다르다면 다른 숫자를 입력하면 된다. 위와 같은 코드를 터미널에서 실행시켜주면 더이상 뭐같은 Xcode에서 compile을 하지 않아도 된다. vscode로 하면 되는데, 그거에 대한 코드는 따로 입력하지 않아도 되는 것 같다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNDYyOTc1M119
+eyJoaXN0b3J5IjpbMTU5NzMwMzIxNl19
 -->
