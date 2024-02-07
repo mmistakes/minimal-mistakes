@@ -1,6 +1,6 @@
 ---
-title: "Why RBC?"
-excerpt: "Why RBC?"
+title: "RBC"
+excerpt: "RBC"
 sitemap: false
 layout: single
 permalink: /docs/RBC
