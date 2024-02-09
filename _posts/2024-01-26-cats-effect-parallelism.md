@@ -1,5 +1,5 @@
 ---
-title: "Functional Parallel Programming"
+title: "Functional Parallel Programming in the wild"
 date: 2024-01-26
 header:
     image: "/images/blog cover.jpg"
@@ -9,15 +9,19 @@ excerpt: "Speeding up the parallel processing power with the help of Scala & cat
 
 _by [Anzori (Nika) Ghurtchumelia](https://github.com/ghurtchu)_
 
+![alt "Project skeleton"](../images/github-contributors-aggregator/marcus_aurelius.png)
+
 ## 1. Introduction
 
 🚀 Welcome to a journey where functional programming meets the social media hub for developers - GitHub! 🌐.
+
 If you've ever wondered how to turbocharge your software projects with parallelism, you're in for a treat. 
+
 Today, we're diving into the world of Scala and Cats-Effect fibers by solving a practical problem.
 
 Picture this: GitHub as the bustling city for developers, with repositories as towering skyscrapers and code collaborations. Now, what if I told you there's a way to navigate this huge metropolis within seconds? Enter functional programming, the superhero caped in composability and scalability 😊.
 
-In the vast landscape of open-source collaboration, aggregating the valuable contributions of an organization's contributors can be a challenge. In this blog, we embark on a journey to streamline and enhance this process using the power of parallelism. Join me as we unravel an efficient solution to aggregate contributors concurrently. Let's dive into the world of parallelism and witness how we can transform the task of "contributors aggregation" into a "piece of cake".
+In the vast landscape of open-source collaboration, aggregating an organization's contributions can be a challenge. In this blog, we unravel an efficient solution to aggregate contributors concurrently. We will witness how Scala's support for parallel programming can transform the task of "contributors aggregation" into a "piece of cake".
 
 Simply put, we're creating an HTTP server to compile and organize contributors from a specific GitHub organization, like Google or Typelevel. The response will be sorted based on the quantity of each developer's contributions.
 
@@ -31,7 +35,7 @@ The initial project skeleton looks like the following:
 - `json` folder contains the JSON outputs for each organization
 - `src/main/scala/com/rockthejvm/Main.scala` is a single file 150 LOC solution
 - `src/main/resources/application.conf` defines the project configuration (in this case only a GitHub token for authorizing GitHub requests)
-- `.scalafmt.conf` is used to format the code (UX is important, even for backend devs 😉)
+- `.scalafmt.conf` is used to format the code (UI/UX is important, even for backend devs 😉)
 - `build.sbt` is responsible for building the project and generating `app.jar` which we can run with `java` or `scala`
 
 Let's have a look at the libraries listed in `build.sbt`:
@@ -732,12 +736,47 @@ In the code snippet above, `contributors` and `response` are two important compo
 
 - In summary, `"contributors"` represents the processed and aggregated data about GitHub contributors, and `"response"` is the HTTP response containing this information in a serialized form. The route is designed to fetch information about public repositories, their contributors, and then provide a sorted list of contributors along with some summary statistics in the HTTP response.
 
+Amazing! We should test it now, shan't we?
 
+Assuming that server is running, we can just ping it with `typelevel` and save the JSON output in `typelevel.json`.
 
+That way we can also see how many seconds it takes to do this operation:
 
+![alt ""](../images/github-contributors-aggregator/typelevel_output.png)
 
+You can see that it takes only 4 seconds to aggregate the contributors for `typelevel` - powered by functional parallel programming.
 
+Let's also have a quick look at the first 30 lines of `typelevel.json`:
 
+![alt ""](../images/github-contributors-aggregator/typelevel_head.png)
+
+## 9. Summary
+
+We have built together the GitHub organization contributors aggregator. Here's a summary of what we've accomplished, the tools and libraries used, and how we did it:
+
+**What We Built:**
+We built an HTTP server that accepts organization name and aggregates GitHub organization contributors in a matter of seconds. Our program is using minimal but sufficient domain modeling with `play-json` power do work with data. Additionally, it's heavily backed up by the powerful extension method - `parUnorderedFlatTraverse` from `cats` which ensures that each HTTP request is performed in a separate fiber (hence, the power of `cats.effect.IO`).
+
+**Tools and Libraries Used:**
+- `Scala 3`: the code is written in the Scala programming language.
+- `sbt`: build tool which helped us to `compile`, `build` and `run` our project
+- `cats/cats-effect`: we used the Cats Effect library for managing asynchronous and effectful operations using the IO monad.
+- `http4s`: the http4s library is used for building HTTP clients and servers, handling HTTP requests and responses, and defining routes.
+- `pureconfig`: used for loading application configuration from a configuration file.
+- `ember`: used for building the HTTP client and server.
+- `play-json`: awesome JSON library for Scala
+- `log4cats`: used for logging messages within the application.
+
+**How We Did It:**
+- `Exploration`: We explored GitHub REST API a bit and planned the execution step by step
+- `Domain modeling`: We modeled domain objects with the help of Scala 3 opaque types
+- `Functional Programming`: The code is designed using functional programming principles, leveraging the Cats Effect library for handling side effects and IO operations.
+- `Parallel Programming`: We used the powerful extension method - `parUnorderedFlatTraverse` which traverses the collection and runs an effect in a separate fiber for each object.
+- `Configurability`: Application configuration is loaded from a configuration file using `PureConfig`, allowing us to configure GitHub personal access token.
+
+If you want to see the whole project you can view _[Source code](https://github.com/Ghurtchu/COUNTributions)_
+
+Thank you for your time and patience! Hope you learned something new today 😊
 
 
 
