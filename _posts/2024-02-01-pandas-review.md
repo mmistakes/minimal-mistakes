@@ -2,7 +2,7 @@
 layout: single
 title: '판다스 복습'
 author_profile: false
-published: true
+published: false
 sidebar:
     nav: "counts"
 ---
