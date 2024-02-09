@@ -5,6 +5,7 @@ categories: 회고
 tag: [회고]
 toc: true 
 author_profile: false
+published: false
 use_math: false
 sidebar:
     nav: "counts"
