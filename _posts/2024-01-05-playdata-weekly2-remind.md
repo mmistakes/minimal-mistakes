@@ -4,7 +4,7 @@ title: '플레이데이터 2주차 회고 '
 categories: playdata
 tag: [회고]
 author_profile: false
-published: true
+published: false
 sidebar:
     nav: "counts"
 ---
