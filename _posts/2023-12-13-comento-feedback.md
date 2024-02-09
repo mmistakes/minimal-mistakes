@@ -5,7 +5,7 @@ categories: 코멘토
 tag: [코멘토]
 toc: true 
 author_profile: false
-published: true
+published: false
 sidebar:
     nav: "counts"
 
