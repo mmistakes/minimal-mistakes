@@ -24,3 +24,6 @@ docs:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+# 버튼 추가하기 https://mmistakes.github.io/minimal-mistakes/docs/utility-classes/#buttons 
+# 유튜브 추가하기 {% include video id="XsxDH4HcOWA" provider="youtube" %}
