@@ -26,8 +26,10 @@ init.c라고 있는 c언어 파일을 mex로 build하려고 했는데 이렇게 
 ```bash
 defaults write com.apple.dt.Xcode IDEXcodeVersionForAgreedToGMLicense 15.2
 ```
-현재 최신 Xcode 버전이 15.2여서 숫자는 위와 같은데, 가지고 있는 Xcode버젼이 다르다면 다른 숫자를 입력하면 된다. 위와 같은 코드를 터미널에서 실행시켜주면 더이상 뭐같은 Xcode에서 compile을 하지 않아도 된다. vscode로 하면 되는데, 그거에 대한 코드는 따로 입력하지 않아도 되는 것 같다.
+현재 최신 Xcode 버전이 15.2여서 숫자는 위와 같은데, 가지고 있는 Xcode버젼이 다르다면 다른 숫자를 입력하면 된다. 이 코드를 입력을 해주면 더이상 에러메시지가 뜨지 않고 해결이 잘 된다.
+
+**Note (02.11.2024)**: 열심히 검색하면서 공부한 결과, 맥에서 mex function을 컴파일 하는 것은 Xcode로만 가능하기 때문에 mex를 만들고싶으면 ㅁ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MjM3MTQyOCwtNzYwNjM4NDYzLDE1OT
-czMDMyMTZdfQ==
+eyJoaXN0b3J5IjpbLTQzMDIwNTcxMywxNDgyMzcxNDI4LC03Nj
+A2Mzg0NjMsMTU5NzMwMzIxNl19
 -->
