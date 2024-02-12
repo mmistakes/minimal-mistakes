@@ -2,6 +2,8 @@
 layout: single
 title: '데이터 직무 톺아보기'
 author_profile: false
+categories: 데이터엔지니어
+tag: [Data engineer]
 published: true
 sidebar:
     nav: "counts"
