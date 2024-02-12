@@ -1,6 +1,5 @@
 ---
-title: "[STM32] 2024-01-09-STM32  ETH + LwIP (UDP Echo Server)
-  "
+title: "[STM32] 2024-01-09-STM32  ETH + LwIP (UDP Echo Server)"
 date: 2024-02-12
 last_modified_at: 2024-02-12
 categories:
