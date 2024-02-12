@@ -1,8 +1,7 @@
 ---
 layout: single
 title: '자료구조와 알고리즘을 배워야하는 이유'
-categories:  시간복잡도
-tag: [자료구조와 알고리즘]
+tag: [algorithms, data structure]
 author_profile: false
 published: true
 use_math: true
