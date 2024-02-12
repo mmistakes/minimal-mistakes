@@ -7,6 +7,8 @@ sidebar:
     nav: "counts"
 ---
 
+기존 윈도우 환경이 아닌 맥 OS 환경에서 블로그 업로드 중  Page build deployment 오류가 발생했다. 
+
 
 ##  Page build deployment 오류 
 
@@ -15,8 +17,8 @@ sidebar:
 </div>
 
 
-### 문제 상황 
-맥북 환경에서 블로그를 작성 후 build with Jekyll 과정에서 오류 발생 
+## 문제 상황 
+맥북에서 블로그를 작성 후 build with Jekyll 과정에서 오류 발생 
 
 - 이전 build with Jekyll
 <div style="display: flex; justify-content: center;">
