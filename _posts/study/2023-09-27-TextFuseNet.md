@@ -177,8 +177,7 @@ date: 2023-09-27
 
   <div align="center">
   <img src="../../assets/images/2023-09-27-TextFuseNet/Table2.jpg" alt="Table_2" style="zoom:80%;"/> 
-  </div><br><br>
-  <div align="center">
+  <br><br>
   <img src="../../assets/images/2023-09-27-TextFuseNet/Fig4.jpg" alt="Figure_4" style="zoom:80%;"/> 
   </div>
 
