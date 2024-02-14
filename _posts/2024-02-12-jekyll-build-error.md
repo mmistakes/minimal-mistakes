@@ -38,7 +38,7 @@ sidebar:
 - jekyll v3.9.3 -> v3.9.4 
 
 ## 해결 방법 
-구글링 중 동일한 에러에 해결에 관한 페이지를 발견했다. 
+구글링 중 동일한 에러에 관한 페이지를 발견했다. 
 <a href = 'https://peterica.tistory.com/551'> undefined method excerpt_seperator 빌드 오류 해결 </a>
 
 위 글을 참고하여 Build 방법을 Github Action 으로 변경하여 문제를 해결했다. 
