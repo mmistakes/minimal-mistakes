@@ -4,7 +4,6 @@ excerpt: "Psychiatric Phenotyping"
 sitemap: false
 layout: single
 permalink: /docs/phenotypes
-
 ---
 ## Measures in the RBC
 The RBC integrates baseline data from six cohorts. However, as it is common in the field, different measures are used. Four cohorts (HBN, NKI-RS, BHRCS and dCCNP) use the latest version of the Child and Behavioral Checklist (CBCL), PACCT uses a previous version of this instrument, and the PNC uses the GOASSESS questionnaire. The CBCL is a 120-item parent-report assessment of emotional and behavioral symptoms over the past 6 months, answered on a 3-point scale (0 = not true, 1 = somewhat/sometimes true, and 2 = very true/often). The GOASSESS is a structured screening questionnaire applied by trained interviewers to the caregivers that contains 112 unconditioned screening items based on 14 DSM-IV diagnosis, scored as 0 (absent) or 1 (ever present).
