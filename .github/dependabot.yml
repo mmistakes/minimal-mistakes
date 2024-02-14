@@ -1,0 +1,13 @@
+# .github/dependabot.yml
+version: 2
+updates:
+  - package-ecosystem: "github-actions" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    labels: ["maintenance", "ignore-for-release"]
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "bundler"
+    directory: "/"
+    labels: ["maintenance", "ignore-for-release"]
+    schedule:
+      interval: "daily"
