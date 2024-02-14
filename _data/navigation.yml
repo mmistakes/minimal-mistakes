@@ -40,17 +40,17 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 
-sidebar-sample:
-  - title: "Parent Page A"
-    children:
-      - title: "Child Page A1"
-        url: /child-page-a1/
-      - title: "Child Page A2"
-        url: /child-page-a2/
-      - title: "Child Page A3"
-        url: /child-page-a3/
-      - title: "Child Page A4"
-        url: /child-page-a4/
+#sidebar-sample:
+  #- title: "Parent Page A"
+  #  children:
+  #    - title: "Child Page A1"
+ #       url: /child-page-a1/
+ #     - title: "Child Page A2"
+ #       url: /child-page-a2/
+ #     - title: "Child Page A3"
+ #       url: /child-page-a3/
+#      - title: "Child Page A4"
+#        url: /child-page-a4/
 
 
 
