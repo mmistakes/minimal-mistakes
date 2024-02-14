@@ -20,8 +20,6 @@ main:
       url : /%EB%AA%A9%EB%A1%9D%20%EB%AA%A8%EC%9D%8C/%ED%85%9C%ED%94%84%EB%A6%BF_%ED%85%9C%ED%94%8C%EB%A6%BF%EB%AA%A8%EC%9D%8C/
     - title : 개발 환경 세팅
       url : /%EB%AA%A9%EB%A1%9D%20%EB%AA%A8%EC%9D%8C/%EA%B8%B0%EC%88%A0-%EA%B4%80%EB%A0%A8-%EB%AA%A9%EB%A1%9D/
-    - title : 개발 취미 내역
-      url : /%EB%AA%A9%EB%A1%9D%20%EB%AA%A8%EC%9D%8C/%EC%B7%A8%EB%AF%B8-%EA%B0%9C%EB%B0%9C%EB%AA%A8%EC%9D%8C/
   - title: "공부내역"
     sublinks:
     - title : python
