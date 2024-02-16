@@ -34,7 +34,7 @@ intro:
 Helmi is accessible through the LUMI environment daily between 13:00 EET and 08:00 EET.
 {: .notice--info}
 
-Helmi has been unavailable since 14.02. due to maintenance
+Helmi has been unavailable since 14.02. due to maintenance. Cool-down has started on 16.02. and calibration will start soon. 
 {: .notice--danger}
 
 
